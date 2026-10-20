@@ -5,10 +5,10 @@
 ## Topics
 
 ### Constants
-- [var collectionIndexRangeErr: Int](collectionindexrangeerr.md)
-- [var collectionItemLockedErr: Int](collectionitemlockederr.md)
-- [var collectionItemNotFoundErr: Int](collectionitemnotfounderr.md)
-- [var collectionVersionErr: Int](collectionversionerr.md)
+- [var collectionIndexRangeErr: Int](../../collectionindexrangeerr.md)
+- [var collectionItemLockedErr: Int](../../collectionitemlockederr.md)
+- [var collectionItemNotFoundErr: Int](../../collectionitemnotfounderr.md)
+- [var collectionVersionErr: Int](../../collectionversionerr.md)
 
 
 ---

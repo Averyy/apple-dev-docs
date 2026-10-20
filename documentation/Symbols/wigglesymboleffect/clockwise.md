@@ -1,7 +1,8 @@
 # clockwise
 
 **Framework**: Symbols  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a copy of the effect requesting an animation that rotates back and forth, starting by rotating clockwise.
 

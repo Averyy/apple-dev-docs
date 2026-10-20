@@ -1,7 +1,8 @@
 # PermissionFlow
 
 **Framework**: PermissionKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Specifies which permission flow to present.
 
@@ -21,20 +22,20 @@ enum PermissionFlow
 ## Topics
 
 ### Enumeration Cases
-- [PermissionFlow.acknowledgmentAlert](permissionflow/acknowledgmentalert.md)
+- [PermissionFlow.acknowledgmentAlert](./permissionflow/acknowledgmentalert.md)
   Presents the “Ask to Approve / Approve in Person / Cancel” acknowledgment alert first, then routes the user into the chosen path.
-- [PermissionFlow.approveInPerson](permissionflow/approveinperson.md)
+- [PermissionFlow.approveInPerson](./permissionflow/approveinperson.md)
   Goes directly to the Approve-in-Person flow, prompting the user for the Screen Time passcode.
-- [PermissionFlow.askToApprove](permissionflow/asktoapprove.md)
+- [PermissionFlow.askToApprove](./permissionflow/asktoapprove.md)
   Goes directly to the Messages compose sheet for the “Ask to Approve” flow.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

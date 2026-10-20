@@ -1,7 +1,8 @@
 # date
 
 **Framework**: WorkoutKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Date components that determine when the workout should begin.
 
@@ -20,9 +21,10 @@ var date: DateComponents { get set }
 
 ## See Also
 
-- [var plan: WorkoutPlan](scheduledworkoutplan/plan.md)
+### Accessing plan data
+- [var plan: WorkoutPlan](./plan.md)
   The target workout plan to schedule.
-- [var complete: Bool](scheduledworkoutplan/complete.md)
+- [var complete: Bool](./complete.md)
   A Boolean value that indicates whether the workout is complete.
 
 

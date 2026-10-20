@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The x and y position to use as the center of the effect.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ The x and y position to use as the center of the effect.
 var center: CGPoint { get set }
 ```
 
+```objc
+@property (nonatomic) CGPoint center;
+```
+
 ## See Also
 
-- [var angle: Float](cikaleidoscope/angle.md)
+### Instance Properties
+- [var angle: Float](./angle.md)
   The angle of the reflection.
-- [var count: Int](cikaleidoscope/count.md)
+- [var count: Int](./count.md)
   The number of reflections in the pattern.
-- [var inputImage: CIImage?](cikaleidoscope/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
 
 

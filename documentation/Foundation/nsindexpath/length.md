@@ -1,7 +1,8 @@
 # length
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of nodes in the index path.
 
@@ -18,6 +19,10 @@ The number of nodes in the index path.
 
 ```swift
 var length: Int { get }
+```
+
+```objc
+@property (readonly) NSUInteger length;
 ```
 
 

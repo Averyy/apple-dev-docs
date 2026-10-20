@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct so_np_extensions {
     ...
 };
@@ -17,8 +17,8 @@ struct so_np_extensions {
 ## Topics
 
 ### Instance Properties
-- [npx_flags](so_np_extensions/1499346-npx_flags.md)
-- [npx_mask](so_np_extensions/1499122-npx_mask.md)
+- [npx_flags](./so_np_extensions/api-1499346-npx_flags.md)
+- [npx_mask](./so_np_extensions/api-1499122-npx_mask.md)
 
 
 ---

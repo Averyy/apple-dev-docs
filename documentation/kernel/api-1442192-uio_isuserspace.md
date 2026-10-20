@@ -1,14 +1,15 @@
 # uio_isuserspace
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 int uio_isuserspace(uio_t a_uio);
 ```
 

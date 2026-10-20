@@ -1,7 +1,8 @@
 # paymentAuthorizationViewController(_:didSelectShippingContact:handler:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the user selected a shipping address, and asks for an updated payment request.
 
@@ -15,12 +16,20 @@ Tells the delegate that the user selected a shipping address, and asks for an up
 ## Declaration
 
 ```swift
+optional func paymentAuthorizationViewController(_ controller: PKPaymentAuthorizationViewController, didSelectShippingContact contact: PKContact, handler completion: @escaping @Sendable (PKPaymentRequestShippingContactUpdate) -> Void)
+```
+
+```swift
 optional func paymentAuthorizationViewController(_ controller: PKPaymentAuthorizationViewController, didSelectShippingContact contact: PKContact) async -> PKPaymentRequestShippingContactUpdate
+```
+
+```objc
+- (void) paymentAuthorizationViewController:(PKPaymentAuthorizationViewController *) controller didSelectShippingContact:(PKContact *) contact handler:(void (^)(PKPaymentRequestShippingContactUpdate *update)) completion;
 ```
 
 #### Discussion
 
-Use this method to update the available shipping methods by creating a new array of valid [`PKShippingMethod`](pkshippingmethod.md) objects for the specified address. You also create an array of [`PKPaymentSummaryItem`](pkpaymentsummaryitem.md) objects that represent the updated cost if the user selected a valid shipping method. For more information on updating these values, see the [`PKPaymentRequest`](pkpaymentrequest.md) class’s [`shippingMethods`](pkpaymentrequest/shippingmethods.md) and [`paymentSummaryItems`](pkpaymentrequest/paymentsummaryitems.md) properties.
+Use this method to update the available shipping methods by creating a new array of valid [`PKShippingMethod`](../pkshippingmethod.md) objects for the specified address. You also create an array of [`PKPaymentSummaryItem`](../pkpaymentsummaryitem.md) objects that represent the updated cost if the user selected a valid shipping method. For more information on updating these values, see the [`PKPaymentRequest`](../pkpaymentrequest.md) class’s [`shippingMethods`](../pkpaymentrequest/shippingmethods.md) and [`paymentSummaryItems`](../pkpaymentrequest/paymentsummaryitems.md) properties.
 
 ## Parameters
 
@@ -30,11 +39,12 @@ Use this method to update the available shipping methods by creating a new array
 
 ## See Also
 
-- [func paymentAuthorizationViewController(PKPaymentAuthorizationViewController, didSelectShippingContact: PKContact, completion: (PKPaymentAuthorizationStatus, [PKShippingMethod], [PKPaymentSummaryItem]) -> Void)](pkpaymentauthorizationviewcontrollerdelegate/paymentauthorizationviewcontroller(_:didselectshippingcontact:completion:).md)
+### Handling shipping information
+- [func paymentAuthorizationViewController(PKPaymentAuthorizationViewController, didSelectShippingContact: PKContact, completion: (PKPaymentAuthorizationStatus, [PKShippingMethod], [PKPaymentSummaryItem]) -> Void)](./paymentauthorizationviewcontroller%28_,didselectshippingcontact,completion%29.md)
   Tells the delegate that the user selected a shipping address, and asks for an updated payment request.
-- [func paymentAuthorizationViewController(PKPaymentAuthorizationViewController, didSelect: PKShippingMethod, handler: (PKPaymentRequestShippingMethodUpdate) -> Void)](pkpaymentauthorizationviewcontrollerdelegate/paymentauthorizationviewcontroller(_:didselect:handler:)-5r0i7.md)
+- [func paymentAuthorizationViewController(PKPaymentAuthorizationViewController, didSelect: PKShippingMethod, handler: (PKPaymentRequestShippingMethodUpdate) -> Void)](./paymentauthorizationviewcontroller%28_,didselect,handler%29-5r0i7.md)
   Tells the delegate that the user selected a shipping method, and asks for an updated payment request.
-- [func paymentAuthorizationViewController(PKPaymentAuthorizationViewController, didSelect: PKShippingMethod, completion: (PKPaymentAuthorizationStatus, [PKPaymentSummaryItem]) -> Void)](pkpaymentauthorizationviewcontrollerdelegate/paymentauthorizationviewcontroller(_:didselect:completion:)-9otrj.md)
+- [func paymentAuthorizationViewController(PKPaymentAuthorizationViewController, didSelect: PKShippingMethod, completion: (PKPaymentAuthorizationStatus, [PKPaymentSummaryItem]) -> Void)](./paymentauthorizationviewcontroller%28_,didselect,completion%29-9otrj.md)
   Tells the delegate that the user selected a shipping method, and asks for an updated payment request.
 
 

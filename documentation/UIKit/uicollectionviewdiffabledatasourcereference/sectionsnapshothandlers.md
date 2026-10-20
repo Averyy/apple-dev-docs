@@ -1,7 +1,8 @@
 # sectionSnapshotHandlers
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The diffable data source’s handlers for expanding and collapsing items.
 
@@ -19,11 +20,15 @@ The diffable data source’s handlers for expanding and collapsing items.
 var sectionSnapshotHandlers: __UICollectionViewDiffableDataSourceSectionSnapshotHandlers { get set }
 ```
 
+```objc
+@property (nonatomic, copy) UICollectionViewDiffableDataSourceSectionSnapshotHandlers<id> * sectionSnapshotHandlers;
+```
+
 #### Discussion
 
 Provide section snapshot handlers to support the expanding or collapsing of items in your collection view.
 
-Use the [`snapshotForExpandingParentItemHandler`](uicollectionviewdiffabledatasourcesectionsnapshothandlers/snapshotforexpandingparentitemhandler.md) handler to customize the snapshot that returns when a particular parent item is expanded.
+Use the [`snapshotForExpandingParentItemHandler`](../uicollectionviewdiffabledatasourcesectionsnapshothandlers/snapshotforexpandingparentitemhandler.md) handler to customize the snapshot that returns when a particular parent item is expanded.
 
 **Swift**:
 

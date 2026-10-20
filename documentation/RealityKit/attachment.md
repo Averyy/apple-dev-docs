@@ -1,7 +1,8 @@
 # Attachment
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An attachment content you can use to gather an identifier and view.
 
@@ -18,36 +19,37 @@ An attachment content you can use to gather an identifier and view.
 ## Topics
 
 ### Initializers
-- [init(id: AnyHashable, () -> Content)](attachment/init(id:_:).md)
+- [init(id: AnyHashable, () -> Content)](./attachment/init%28id,_%29.md)
   Creates an new attachment from an identifier and a closure.
 ### Instance Properties
-- [var content: Content](attachment/content.md)
+- [var content: Content](./attachment/content.md)
   The view associated with this attachment.
-- [var id: AnyHashable](attachment/id.md)
+- [var id: AnyHashable](./attachment/id.md)
   The identifier of this attachment.
 
 ## Relationships
 
 ### Conforms To
-- [AttachmentContent](attachmentcontent.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttachmentContent](./attachmentcontent.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct RealityViewAttachmentBuilderContent](realityviewattachmentbuildercontent.md)
+### SwiftUI view attachments
+- [struct RealityViewAttachmentBuilderContent](./realityviewattachmentbuildercontent.md)
   A view that gathers the attachment content for your current reality view.
-- [struct RealityViewAttachments](realityviewattachments.md)
+- [struct RealityViewAttachments](./realityviewattachments.md)
   The attachments that belong to a RealityView.
-- [class ViewAttachmentEntity](viewattachmententity.md)
+- [class ViewAttachmentEntity](./viewattachmententity.md)
   An entity that has a view attachment.
-- [struct ViewAttachmentComponent](viewattachmentcomponent.md)
-  A component containing additional information about a view attachment entity provided  via the [`entity(for:)`](realityviewattachments/entity(for:).md) function.
-- [struct PresentationComponent](presentationcomponent.md)
+- [struct ViewAttachmentComponent](./viewattachmentcomponent.md)
+  A component containing additional information about a view attachment entity provided  via the [`entity(for:)`](./realityviewattachments/entity%28for%29.md) function.
+- [struct PresentationComponent](./presentationcomponent.md)
   A component that presents a SwiftUI modal presentation from a RealityKit entity.
-- [struct TextComponent](textcomponent.md)
+- [struct TextComponent](./textcomponent.md)
   A component that draws 2D text at an entity’s location.
 
 

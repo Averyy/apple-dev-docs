@@ -1,12 +1,13 @@
 # title
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The menu item’s title.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ The menu item’s title.
 var title: String { get set }
 ```
 
+```objc
+@property (copy) NSString * title;
+```
+
 ## See Also
 
-- [var attributedTitle: NSAttributedString?](nsmenuitem/attributedtitle.md)
+### Managing the title
+- [var attributedTitle: NSAttributedString?](./attributedtitle.md)
   A custom string for a menu item.
 
 

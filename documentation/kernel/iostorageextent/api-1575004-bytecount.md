@@ -1,7 +1,8 @@
 # byteCount
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Size of the operation.
 
@@ -10,13 +11,14 @@ Size of the operation.
 
 ## Declaration
 
-```swift
+```c
 UInt64 byteCount;
 ```
 
 ## See Also
 
-- [byteStart](iostorageextent/1575000-bytestart.md)
+### Fields
+- [byteStart](./api-1575000-bytestart.md)
   Starting byte offset for the operation.
 
 

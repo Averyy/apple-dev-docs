@@ -1,17 +1,18 @@
 # Typesetter Options
 
-**Framework**: Core Text
+**Framework**: Core Text  
+**Role**: API Collection
 
 Control aspects of the typesetter’s text processing.
 
 ## Topics
 
 ### Constants
-- [let kCTTypesetterOptionForcedEmbeddingLevel: CFString](kcttypesetteroptionforcedembeddinglevel.md)
+- [let kCTTypesetterOptionForcedEmbeddingLevel: CFString](./kcttypesetteroptionforcedembeddinglevel.md)
   A key that specifies the embedding level of the typesetter’s text.
-- [let kCTTypesetterOptionAllowUnboundedLayout: CFString](kcttypesetteroptionallowunboundedlayout.md)
+- [let kCTTypesetterOptionAllowUnboundedLayout: CFString](./kcttypesetteroptionallowunboundedlayout.md)
   A key that specifies whether the text system lays out text that requires unreasonable effort.
-- [let kCTTypesetterOptionDisableBidiProcessing: CFString](kcttypesetteroptiondisablebidiprocessing.md)
+- [let kCTTypesetterOptionDisableBidiProcessing: CFString](./kcttypesetteroptiondisablebidiprocessing.md)
 
 
 ---

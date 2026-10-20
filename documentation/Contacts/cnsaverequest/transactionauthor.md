@@ -1,7 +1,8 @@
 # transactionAuthor
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that identifies the author of the transaction.
 
@@ -18,13 +19,18 @@ A string that identifies the author of the transaction.
 var transactionAuthor: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * transactionAuthor;
+```
+
 #### Discussion
 
-Specify a string to identify a transaction author when you save changes. Then, when you configure a [`CNChangeHistoryFetchRequest`](cnchangehistoryfetchrequest.md), provide the same string in [`excludedTransactionAuthors`](cnchangehistoryfetchrequest/excludedtransactionauthors.md) to prevent fetching changes that the author already knows about.
+Specify a string to identify a transaction author when you save changes. Then, when you configure a [`CNChangeHistoryFetchRequest`](../cnchangehistoryfetchrequest.md), provide the same string in [`excludedTransactionAuthors`](../cnchangehistoryfetchrequest/excludedtransactionauthors.md) to prevent fetching changes that the author already knows about.
 
 ## See Also
 
-- [var shouldRefetchContacts: Bool](cnsaverequest/shouldrefetchcontacts.md)
+### Configuring the save request
+- [var shouldRefetchContacts: Bool](./shouldrefetchcontacts.md)
   A Boolean value that indicates whether to refetch the added and updated contacts after the save request executes.
 
 

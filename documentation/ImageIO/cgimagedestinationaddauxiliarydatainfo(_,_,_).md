@@ -1,7 +1,8 @@
 # CGImageDestinationAddAuxiliaryDataInfo(_:_:_:)
 
 **Framework**: Image I/O  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the auxiliary data, such as mattes and depth information, that accompany the image.
 
@@ -20,6 +21,10 @@ Sets the auxiliary data, such as mattes and depth information, that accompany th
 func CGImageDestinationAddAuxiliaryDataInfo(_ idst: CGImageDestination, _ auxiliaryImageDataType: CFString, _ auxiliaryDataInfoDictionary: CFDictionary)
 ```
 
+```c
+extern void CGImageDestinationAddAuxiliaryDataInfo(CGImageDestinationRef idst, CFStringRef auxiliaryImageDataType, CFDictionaryRef auxiliaryDataInfoDictionary);
+```
+
 #### Discussion
 
 Call this method after you add an image to the image destination. This method adds the specified depth or matte information to the most recently added image.
@@ -27,12 +32,13 @@ Call this method after you add an image to the image destination. This method ad
 ## Parameters
 
 - `idst`: The image destination to modify.
-- `auxiliaryImageDataType`: The type of auxiliary information you want to add. For a list of possible values, see [`Auxiliary Data Types`](individual-image-properties#Auxiliary-Data-Types.md).
-- `auxiliaryDataInfoDictionary`: A dictionary that contains the [`kCGImageAuxiliaryDataInfoData`](kcgimageauxiliarydatainfodata.md), [`kCGImageAuxiliaryDataInfoDataDescription`](kcgimageauxiliarydatainfodatadescription.md), and [`kCGImageAuxiliaryDataInfoMetadata`](kcgimageauxiliarydatainfometadata.md) keys. Use those keys to describe the depth or matte information.
+- `auxiliaryImageDataType`: The type of auxiliary information you want to add. For a list of possible values, see [Auxiliary Data Types](./individual-image-properties.md#Auxiliary-Data-Types).
+- `auxiliaryDataInfoDictionary`: A dictionary that contains the [`kCGImageAuxiliaryDataInfoData`](./kcgimageauxiliarydatainfodata.md), [`kCGImageAuxiliaryDataInfoDataDescription`](./kcgimageauxiliarydatainfodatadescription.md), and [`kCGImageAuxiliaryDataInfoMetadata`](./kcgimageauxiliarydatainfometadata.md) keys. Use those keys to describe the depth or matte information.
 
 ## See Also
 
-- [func CGImageDestinationSetProperties(CGImageDestination, CFDictionary?)](cgimagedestinationsetproperties(_:_:).md)
+### Adding Metadata to the Image
+- [func CGImageDestinationSetProperties(CGImageDestination, CFDictionary?)](./cgimagedestinationsetproperties%28_,_%29.md)
   Applies one or more properties to all images in an image destination.
 
 

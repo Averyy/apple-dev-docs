@@ -1,21 +1,22 @@
 # NominationUpdateRequest.Data.Relationships.InAppEvents
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object NominationUpdateRequest.Data.Relationships.InAppEvents
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object NominationUpdateRequest.Data.Relationships.InAppEvents.Data](nominationupdaterequest/data-data.dictionary/relationships-data.dictionary/inappevents-data.dictionary/data-data.dictionary.md)
+- [object NominationUpdateRequest.Data.Relationships.InAppEvents.Data](./inappevents-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

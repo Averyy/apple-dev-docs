@@ -1,7 +1,8 @@
 # NSToolbarItemGroup.Role.tabs
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -15,10 +16,15 @@
 case tabs
 ```
 
+```c
+NSToolbarItemGroupRoleTabs
+```
+
 ## See Also
 
-- [NSToolbarItemGroup.Role.automatic](nstoolbaritemgroup/role-swift.enum/automatic.md)
-- [NSToolbarItemGroup.Role.valueSelection](nstoolbaritemgroup/role-swift.enum/valueselection.md)
+### Getting role values
+- [NSToolbarItemGroup.Role.automatic](./automatic.md)
+- [NSToolbarItemGroup.Role.valueSelection](./valueselection.md)
 
 
 ---

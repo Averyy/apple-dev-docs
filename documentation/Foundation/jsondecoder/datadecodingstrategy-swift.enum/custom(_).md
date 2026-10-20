@@ -1,7 +1,8 @@
 # JSONDecoder.DataDecodingStrategy.custom(_:)
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The strategy that decodes data using a user-defined function.
 

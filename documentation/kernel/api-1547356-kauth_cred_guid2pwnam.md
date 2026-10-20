@@ -1,14 +1,15 @@
 # kauth_cred_guid2pwnam
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 int kauth_cred_guid2pwnam(guid_t *guidp, char *pwnam);
 ```
 

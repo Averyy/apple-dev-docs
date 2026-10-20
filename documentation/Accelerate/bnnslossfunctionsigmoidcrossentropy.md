@@ -1,7 +1,8 @@
 # BNNSLossFunctionSigmoidCrossEntropy
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Sigmoid activation on input logits, and independent computation of cross-entropy loss for each class.
 
@@ -20,9 +21,13 @@ Sigmoid activation on input logits, and independent computation of cross-entropy
 var BNNSLossFunctionSigmoidCrossEntropy: BNNSLossFunction { get }
 ```
 
+```c
+BNNSLossFunctionSigmoidCrossEntropy
+```
+
 #### Discussion
 
-[`BNNSLossFunctionSigmoidCrossEntropy`](bnnslossfunctionsigmoidcrossentropy.md) performs sigmoid on input logits and computes cross entropy loss for each class independently.
+[`BNNSLossFunctionSigmoidCrossEntropy`](./bnnslossfunctionsigmoidcrossentropy.md) performs sigmoid on input logits and computes cross entropy loss for each class independently.
 
 You can smooth labels can according to smoothing factor.
 
@@ -30,26 +35,27 @@ You can scale the loss with either a scalar value or weight matrix, and reduce t
 
 ## See Also
 
-- [init(UInt32)](bnnslossfunction/init(_:).md)
-- [init(rawValue: UInt32)](bnnslossfunction/init(rawvalue:).md)
-- [var rawValue: UInt32](bnnslossfunction/rawvalue.md)
-- [var BNNSLossFunctionCategoricalCrossEntropy: BNNSLossFunction](bnnslossfunctioncategoricalcrossentropy.md)
+### Loss Functions
+- [init(UInt32)](./bnnslossfunction/init%28_%29.md)
+- [init(rawValue: UInt32)](./bnnslossfunction/init%28rawvalue%29.md)
+- [var rawValue: UInt32](./bnnslossfunction/rawvalue.md)
+- [var BNNSLossFunctionCategoricalCrossEntropy: BNNSLossFunction](./bnnslossfunctioncategoricalcrossentropy.md)
   Performs categorical cross entropy computation between input prediction and labels.
-- [var BNNSLossFunctionCosineDistance: BNNSLossFunction](bnnslossfunctioncosinedistance.md)
+- [var BNNSLossFunctionCosineDistance: BNNSLossFunction](./bnnslossfunctioncosinedistance.md)
   Performs cosine distance loss computation between input predictions and labels.
-- [var BNNSLossFunctionHinge: BNNSLossFunction](bnnslossfunctionhinge.md)
+- [var BNNSLossFunctionHinge: BNNSLossFunction](./bnnslossfunctionhinge.md)
   Performs Hinge loss computation between labels and unbounded zero-centered binary predictions.
-- [var BNNSLossFunctionHuber: BNNSLossFunction](bnnslossfunctionhuber.md)
+- [var BNNSLossFunctionHuber: BNNSLossFunction](./bnnslossfunctionhuber.md)
   Huber loss computation between input logits and one-hot encoded labels.
-- [var BNNSLossFunctionLog: BNNSLossFunction](bnnslossfunctionlog.md)
+- [var BNNSLossFunctionLog: BNNSLossFunction](./bnnslossfunctionlog.md)
   Log loss computation between labels and predictions.
-- [var BNNSLossFunctionMeanAbsoluteError: BNNSLossFunction](bnnslossfunctionmeanabsoluteerror.md)
+- [var BNNSLossFunctionMeanAbsoluteError: BNNSLossFunction](./bnnslossfunctionmeanabsoluteerror.md)
   Mean absolute error (MAE) computation between input prediction and labels.
-- [var BNNSLossFunctionMeanSquareError: BNNSLossFunction](bnnslossfunctionmeansquareerror.md)
+- [var BNNSLossFunctionMeanSquareError: BNNSLossFunction](./bnnslossfunctionmeansquareerror.md)
   Mean square error (MSE) computation between input logits and one-hot encoded labels.
-- [var BNNSLossFunctionSoftmaxCrossEntropy: BNNSLossFunction](bnnslossfunctionsoftmaxcrossentropy.md)
+- [var BNNSLossFunctionSoftmaxCrossEntropy: BNNSLossFunction](./bnnslossfunctionsoftmaxcrossentropy.md)
   Softmax activation on input logits, and computation of cross-entropy loss with one-hot encoded labels.
-- [var BNNSLossFunctionYolo: BNNSLossFunction](bnnslossfunctionyolo.md)
+- [var BNNSLossFunctionYolo: BNNSLossFunction](./bnnslossfunctionyolo.md)
   You Only Look Once (YOLO) loss computation between prediction and ground truth labels.
 
 

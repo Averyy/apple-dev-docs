@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: Safari Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the content blocker is enabled.
 
@@ -18,9 +19,13 @@ A Boolean value that indicates whether the content blocker is enabled.
 var isEnabled: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isEnabled) BOOL enabled;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the content blocker is enabled; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the content blocker is enabled; otherwise [`false`](../../Swift/false.md).
 
 
 ---

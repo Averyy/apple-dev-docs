@@ -1,7 +1,8 @@
 # channels
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of channel objects that describe the port’s input or output channels.
 
@@ -19,25 +20,30 @@ An array of channel objects that describe the port’s input or output channels.
 var channels: [AVAudioSessionChannelDescription]? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSArray<AVAudioSessionChannelDescription *> * channels;
+```
+
 #### Discussion
 
 The contents of this array may change if the audio session’s input or output channel count changes.
 
 ## See Also
 
-- [var portName: String](avaudiosessionportdescription/portname.md)
+### Getting the port attributes
+- [var portName: String](./portname.md)
   A descriptive name for the port.
-- [var portType: AVAudioSession.Port](avaudiosessionportdescription/porttype.md)
+- [var portType: AVAudioSession.Port](./porttype.md)
   The type of the port.
-- [AVAudioSession.Port](avaudiosession/port.md)
+- [AVAudioSession.Port](../avaudiosession/port.md)
   A structure that defines the available input and output port types.
-- [class AVAudioSessionChannelDescription](avaudiosessionchanneldescription.md)
+- [class AVAudioSessionChannelDescription](../avaudiosessionchanneldescription.md)
   A class that describes a hardware channel on the current device.
-- [var uid: String](avaudiosessionportdescription/uid.md)
+- [var uid: String](./uid.md)
   A system-assigned unique identifier (UID) for the port.
-- [var hasHardwareVoiceCallProcessing: Bool](avaudiosessionportdescription/hashardwarevoicecallprocessing.md)
+- [var hasHardwareVoiceCallProcessing: Bool](./hashardwarevoicecallprocessing.md)
   A Boolean value that indicates whether the associated hardware port has built-in processing for two-way voice communication.
-- [var isSpatialAudioEnabled: Bool](avaudiosessionportdescription/isspatialaudioenabled.md)
+- [var isSpatialAudioEnabled: Bool](./isspatialaudioenabled.md)
   A Boolean value that indicates whether the port supports spatial audio playback.
 
 

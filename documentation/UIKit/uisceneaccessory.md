@@ -1,7 +1,8 @@
 # UISceneAccessory
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A type which can be used to register for a specific type of scene accessory presentation.
 
@@ -17,9 +18,13 @@ A type which can be used to register for a specific type of scene accessory pres
 class UISceneAccessory
 ```
 
+```objc
+@interface UISceneAccessory : NSObject
+```
+
 ## Mentions
 
-- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
+- [Presenting content on a connected display](./presenting-content-on-a-connected-display.md)
 
 #### Overview
 
@@ -30,34 +35,35 @@ Use an instance of this type along with `UIViewController.registerSceneAccessory
 ## Topics
 
 ### Creating a camera capture accessory
-- [class func cameraCapture(sceneConfiguration: UISceneConfiguration) -> Self](uisceneaccessory/cameracapture(sceneconfiguration:).md)
+- [class func cameraCapture(sceneConfiguration: UISceneConfiguration) -> Self](./uisceneaccessory/cameracapture%28sceneconfiguration%29.md)
   Creates a scene accessory for presenting content during camera capture.
-- [class func cameraCapture(sceneConfiguration: UISceneConfiguration, userInfo: Any) -> Self](uisceneaccessory/cameracapture(sceneconfiguration:userinfo:).md)
+- [class func cameraCapture(sceneConfiguration: UISceneConfiguration, userInfo: Any) -> Self](./uisceneaccessory/cameracapture%28sceneconfiguration,userinfo%29.md)
   Creates a scene accessory for presenting content during camera capture, passing additional context to the scene delegate.
 ### Type Methods
-- [class func externalNonInteractive(sceneConfiguration: UISceneConfiguration) -> Self](uisceneaccessory/externalnoninteractive(sceneconfiguration:).md)
+- [class func externalNonInteractive(sceneConfiguration: UISceneConfiguration) -> Self](./uisceneaccessory/externalnoninteractive%28sceneconfiguration%29.md)
   Creates a new scene accessory configuration for presenting non-interactive content on an external display.
-- [class func externalNonInteractive(sceneConfiguration: UISceneConfiguration, userInfo: Any) -> Self](uisceneaccessory/externalnoninteractive(sceneconfiguration:userinfo:).md)
+- [class func externalNonInteractive(sceneConfiguration: UISceneConfiguration, userInfo: Any) -> Self](./uisceneaccessory/externalnoninteractive%28sceneconfiguration,userinfo%29.md)
   Creates a new scene accessory configuration for presenting non-interactive content on an external display.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
+### Scene accessories
+- [Presenting content on a connected display](./presenting-content-on-a-connected-display.md)
   Fill connected displays with additional content from your app.
-- [class UISceneAccessoryRegistration](uisceneaccessoryregistration.md)
+- [class UISceneAccessoryRegistration](./uisceneaccessoryregistration.md)
   A type which represents the registration for a given scene accessory.
 
 

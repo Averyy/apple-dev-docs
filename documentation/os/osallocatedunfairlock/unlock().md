@@ -1,7 +1,8 @@
 # unlock()
 
 **Framework**: os  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Ends the lock.
 
@@ -11,7 +12,7 @@ Ends the lock.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,11 +21,14 @@ Ends the lock.
 func unlock()
 ```
 
+Available when `State` is `()`.
+
 ## See Also
 
-- [func lock()](osallocatedunfairlock/lock.md)
+### Using locks
+- [func lock()](./lock%28%29.md)
   Acquires a lock.
-- [func lockIfAvailable() -> Bool](osallocatedunfairlock/lockifavailable.md)
+- [func lockIfAvailable() -> Bool](./lockifavailable%28%29.md)
   Attempts to acquire a lock.
 
 

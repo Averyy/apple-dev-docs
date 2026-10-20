@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A value that’s added to each output pixel.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ A value that’s added to each output pixel.
 var bias: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float bias;
+```
+
 ## See Also
 
-- [var inputImage: CIImage?](ciconvolution/inputimage.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var weights: CIVector](ciconvolution/weights.md)
+- [var weights: CIVector](./weights.md)
   The convolution kernel.
 
 

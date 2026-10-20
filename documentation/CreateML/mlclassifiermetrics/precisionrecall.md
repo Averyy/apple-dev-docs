@@ -1,16 +1,17 @@
 # precisionRecall
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A data table listing the precision and recall percentages for each class.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 10.14+
-- tvOS 16.0+
+- iOS 15.0+ - Deprecated in 17.0
+- iPadOS 15.0+ - Deprecated in 17.0
+- Mac Catalyst 15.0+ - Deprecated in 17.0
+- macOS 10.14+ - Deprecated in 14.0
+- tvOS 16.0+ - Deprecated in 17.0
 - visionOS 1.0+
 
 ## Declaration
@@ -21,7 +22,7 @@ var precisionRecall: MLDataTable { get }
 
 ## Mentions
 
-- [Improving Your Model’s Accuracy](improving-your-model-s-accuracy.md)
+- [Improving Your Model’s Accuracy](../improving-your-model-s-accuracy.md)
 
 #### Discussion
 
@@ -31,25 +32,26 @@ Precision describes how effective the model was at applying a label only when ap
 
 Recall describes how effective the model was at finding all the relevant examples of a category (few false negatives).
 
-![None](/images/com.apple.createml/MLClassifierMetrics-precisionRecall-1@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.createml/MLClassifierMetrics-precisionRecall-1@2x.png)
 
 The figure below shows how each example contributes to the precision and recall percentages for the category “Elephant”.
 
-![A table of actual and predicted labels for the Elephant category.](/images/com.apple.createml/MLClassifierMetrics-precisionRecall-2@2x.png)
+![A table of actual and predicted labels for the Elephant category.](https://developer.apple.com/tutorials/images/com.apple.createml/MLClassifierMetrics-precisionRecall-2@2x.png)
 
-“Elephant” appears as the true or correct label only once, but it’s predicted twice. This second prediction is an error in precision. Precision and recall can give you a much better idea of how your model is making mistakes than [`classificationError`](mlclassifiermetrics/classificationerror.md).
+“Elephant” appears as the true or correct label only once, but it’s predicted twice. This second prediction is an error in precision. Precision and recall can give you a much better idea of how your model is making mistakes than [`classificationError`](./classificationerror.md).
 
-To determine what other categories “Elephant” examples may have been labeled with, see the [`confusion`](mlclassifiermetrics/confusion.md) property.
+To determine what other categories “Elephant” examples may have been labeled with, see the [`confusion`](./confusion.md) property.
 
 ## See Also
 
-- [var classificationError: Double](mlclassifiermetrics/classificationerror.md)
+### Understanding the model
+- [var classificationError: Double](./classificationerror.md)
   The fraction of incorrectly labeled examples.
-- [var confusion: MLDataTable](mlclassifiermetrics/confusion.md)
+- [var confusion: MLDataTable](./confusion.md)
   A table comparing the actual and predicted labels for each classification category.
-- [var confusionDataFrame: DataFrame](mlclassifiermetrics/confusiondataframe.md)
+- [var confusionDataFrame: DataFrame](./confusiondataframe.md)
   A data frame comparing the actual and predicted labels for each class.
-- [var precisionRecallDataFrame: DataFrame](mlclassifiermetrics/precisionrecalldataframe.md)
+- [var precisionRecallDataFrame: DataFrame](./precisionrecalldataframe.md)
   A data frame listing the precision and recall percentages for each class.
 
 

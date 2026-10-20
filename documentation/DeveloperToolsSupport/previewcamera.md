@@ -1,7 +1,8 @@
 # PreviewCamera
 
 **Framework**: DeveloperToolsSupport  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A camera that defines a viewpoint in a preview.
 
@@ -16,7 +17,7 @@ struct PreviewCamera
 
 #### Overview
 
-Use one or more preview cameras with one of the preview macros that takes a `cameras` input — like [`Preview(_:traits:body:cameras:)`](https://developer.apple.com/documentation/swiftui/preview(_:traits:body:cameras:)) — to create custom viewpoints for the preview. The canvas offers custom cameras in its camera picker along with a set of standard cameras. The preview uses the first custom camera that you specify as the default viewpoint when the preview appears.
+Use one or more preview cameras with one of the preview macros that takes a `cameras` input — like [`Preview(_:traits:body:cameras:)`](../SwiftUI/preview%28_,traits,body,cameras%29.md) — to create custom viewpoints for the preview. The canvas offers custom cameras in its camera picker along with a set of standard cameras. The preview uses the first custom camera that you specify as the default viewpoint when the preview appears.
 
 For example, you can create custom cameras from the top, leading, and front viewpoints:
 
@@ -33,20 +34,21 @@ For example, you can create custom cameras from the top, leading, and front view
 ## Topics
 
 ### Creating a preview camera
-- [init(from: UnitPoint3D, zoom: Double, name: String?)](previewcamera/init(from:zoom:name:).md)
+- [init(from: UnitPoint3D, zoom: Double, name: String?)](./previewcamera/init%28from,zoom,name%29.md)
   Creates a camera that looks toward the preview center from a specified unit point.
-- [init(lookingAt: Point3D, from: Point3D, name: String?)](previewcamera/init(lookingat:from:name:).md)
+- [init(lookingAt: Point3D, from: Point3D, name: String?)](./previewcamera/init%28lookingat,from,name%29.md)
   Creates a camera that looks towards a specified point in the preview from a different specified point.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct PreviewCameraBuilder](previewcamerabuilder.md)
+### Preview camera management
+- [struct PreviewCameraBuilder](./previewcamerabuilder.md)
   A builder type that composes a collection of cameras for previewing a view in a 3D scene.
 
 

@@ -1,7 +1,8 @@
 # SSCenteredRectInRect(_:_:)
 
 **Framework**: Screen Saver  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a rectangle.
 
@@ -12,6 +13,10 @@ Returns a rectangle.
 
 ```swift
 func SSCenteredRectInRect(_ innerRect: NSRect, _ outerRect: NSRect) -> NSRect
+```
+
+```c
+static NSRect SSCenteredRectInRect(NSRect innerRect, NSRect outerRect);
 ```
 
 #### Return Value
@@ -25,11 +30,12 @@ A rectangle that’s the same size as `innerRect`, but is centered inside `outer
 
 ## See Also
 
-- [func SSRandomIntBetween(Int32, Int32) -> Int32](ssrandomintbetween(_:_:).md)
+### Utilities
+- [func SSRandomIntBetween(Int32, Int32) -> Int32](./ssrandomintbetween%28_,_%29.md)
   Returns a random integer value.
-- [func SSRandomFloatBetween(CGFloat, CGFloat) -> CGFloat](ssrandomfloatbetween(_:_:).md)
+- [func SSRandomFloatBetween(CGFloat, CGFloat) -> CGFloat](./ssrandomfloatbetween%28_,_%29.md)
   Returns a random float value.
-- [func SSRandomPointForSizeWithinRect(NSSize, NSRect) -> NSPoint](ssrandompointforsizewithinrect(_:_:).md)
+- [func SSRandomPointForSizeWithinRect(NSSize, NSRect) -> NSPoint](./ssrandompointforsizewithinrect%28_,_%29.md)
   Returns a random point.
 
 

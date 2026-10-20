@@ -1,6 +1,7 @@
 # Creating a Multivariant Playlist
 
-**Framework**: HTTP Live Streaming
+**Framework**: HTTP Live Streaming  
+**Role**: Article
 
 Offer multiple playlist files to provide different encodings of the same content.
 
@@ -8,11 +9,11 @@ Offer multiple playlist files to provide different encodings of the same content
 
 The Multivariant Playlist describes all of the available variants for your content. Each variant is a version of the stream at a particular bit rate and is contained in a separate playlist. The client switches to the most appropriate variant based on the measured network bit rate. The client’s player is tuned to minimize stalling of playback, to give the user the best possible streaming experience.
 
-![Flow diagram showing an index file splitting into multiple alternate files. Each alternate file creates the appropriate MP4 file.](/images/com.apple.HTTP-Live-Streaming/creating-a-multivariant-playlist-1@2x.png)
+![Flow diagram showing an index file splitting into multiple alternate files. Each alternate file creates the appropriate MP4 file.](https://developer.apple.com/tutorials/images/com.apple.HTTP-Live-Streaming/creating-a-multivariant-playlist-1@2x.png)
 
 A Multivariant Playlist isn’t re-read. Once the client has read the playlist, it assumes the set of variations isn’t changing. The stream ends as soon as the client sees the `EXT-X-ENDLIST` tag on one of the individual variant playlists.
 
-##### Define Variants
+##### Define variants
 
 The following example shows a Multivariant Playlist that defines five different variants.
 
@@ -49,11 +50,12 @@ The `EXT-X-STREAM-INF` tag has the following parameters:
 
 ## See Also
 
-- [Video on Demand playlist construction](video-on-demand-playlist-construction.md)
+### Basic playlists
+- [Video on Demand playlist construction](./video-on-demand-playlist-construction.md)
   Understand the basic composition for a Video on Demand playlist.
-- [Live Playlist (sliding window) construction](live-playlist-sliding-window-construction.md)
+- [Live Playlist (sliding window) construction](./live-playlist-sliding-window-construction.md)
   Understand the basic composition for a live session playlist.
-- [Event playlist construction](event-playlist-construction.md)
+- [Event playlist construction](./event-playlist-construction.md)
   Learn about the basic composition of an event session playlist.
 
 

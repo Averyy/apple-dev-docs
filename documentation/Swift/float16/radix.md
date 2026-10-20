@@ -1,7 +1,8 @@
 # radix
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The radix, or base of exponentiation, for a floating-point type.
 

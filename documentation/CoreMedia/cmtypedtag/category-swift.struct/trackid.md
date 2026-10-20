@@ -1,7 +1,8 @@
 # trackID
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A category used for tagging a track ID.
 
@@ -20,25 +21,28 @@ A category used for tagging a track ID.
 static var trackID: CMTypedTag<CMPersistentTrackID>.Category { get }
 ```
 
+Available when `TypedValue` conforms to `Sendable`.
+
 ## See Also
 
-- [static var channelID: CMTypedTag<Int64>.Category](cmtypedtag/category-swift.struct/channelid.md)
+### Creating Typed Categories
+- [static var channelID: CMTypedTag<Int64>.Category](./channelid.md)
   A category used for tagging a channel ID.
-- [static var mediaSubType: CMTypedTag<CMFormatDescription.MediaSubType>.Category](cmtypedtag/category-swift.struct/mediasubtype.md)
+- [static var mediaSubType: CMTypedTag<CMFormatDescription.MediaSubType>.Category](./mediasubtype.md)
   A category used for tagging media subtype metadata.
-- [static var mediaType: CMTypedTag<CMFormatDescription.MediaType>.Category](cmtypedtag/category-swift.struct/mediatype.md)
+- [static var mediaType: CMTypedTag<CMFormatDescription.MediaType>.Category](./mediatype.md)
   A category used for tagging media type metadata.
-- [static var packingType: CMTypedTag<CMPackingType>.Category](cmtypedtag/category-swift.struct/packingtype.md)
+- [static var packingType: CMTypedTag<CMPackingType>.Category](./packingtype.md)
   A category used for tagging frame-packing information.
-- [static var pixelFormat: CMTypedTag<OSType>.Category](cmtypedtag/category-swift.struct/pixelformat.md)
+- [static var pixelFormat: CMTypedTag<OSType>.Category](./pixelformat.md)
   A category used for tagging pixel format information.
-- [static var projectionType: CMTypedTag<CMProjectionType>.Category](cmtypedtag/category-swift.struct/projectiontype.md)
+- [static var projectionType: CMTypedTag<CMProjectionType>.Category](./projectiontype.md)
   A category used for tagging projection surface information.
-- [static var stereoView: CMTypedTag<CMStereoViewComponents>.Category](cmtypedtag/category-swift.struct/stereoview.md)
+- [static var stereoView: CMTypedTag<CMStereoViewComponents>.Category](./stereoview.md)
   A category used for tagging eye information for 3D video.
-- [static var stereoViewInterpretation: CMTypedTag<CMStereoViewInterpretationOptions>.Category](cmtypedtag/category-swift.struct/stereoviewinterpretation.md)
+- [static var stereoViewInterpretation: CMTypedTag<CMStereoViewInterpretationOptions>.Category](./stereoviewinterpretation.md)
   A category used for tagging how to interpret stereo view metadata.
-- [static var videoLayerID: CMTypedTag<Int64>.Category](cmtypedtag/category-swift.struct/videolayerid.md)
+- [static var videoLayerID: CMTypedTag<Int64>.Category](./videolayerid.md)
   A category used for tagging a video layer ID.
 
 

@@ -1,17 +1,22 @@
 # smartInsert(beforeStringFor:replacing:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns any whitespace that needs to be added before the string to preserve proper spacing and punctuation when the string replaces the characters in the specified range.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func smartInsert(beforeStringFor pasteString: String, replacing charRangeToReplace: NSRange) -> String?
+```
+
+```objc
+- (NSString *) smartInsertBeforeStringForString:(NSString *) pasteString replacingRange:(NSRange) charRangeToReplace;
 ```
 
 #### Return Value
@@ -20,7 +25,7 @@ Any whitespace that needs to be added before `aString` to preserve proper spacin
 
 #### Discussion
 
-Don’t invoke this method directly. Instead, use [`smartInsert(for:replacing:before:after:)`](nstextview/smartinsert(for:replacing:before:after:).md), which calls this method as part of its implementation.
+Don’t invoke this method directly. Instead, use [`smartInsert(for:replacing:before:after:)`](./smartinsert%28for,replacing,before,after%29.md), which calls this method as part of its implementation.
 
 ## Parameters
 
@@ -29,35 +34,36 @@ Don’t invoke this method directly. Instead, use [`smartInsert(for:replacing:be
 
 ## See Also
 
-- [func updateFontPanel()](nstextview/updatefontpanel.md)
+### Customizing subclass behaviors
+- [func updateFontPanel()](./updatefontpanel%28%29.md)
   Updates the Font panel to contain the font attributes of the selection.
-- [func updateRuler()](nstextview/updateruler.md)
+- [func updateRuler()](./updateruler%28%29.md)
   Updates the ruler view in the receiver’s enclosing scroll view to reflect the selection’s paragraph and marker attributes.
-- [var acceptableDragTypes: [NSPasteboard.PasteboardType]](nstextview/acceptabledragtypes.md)
+- [var acceptableDragTypes: [NSPasteboard.PasteboardType]](./acceptabledragtypes.md)
   The data types that the receiver accepts as the destination view of a dragging operation.
-- [func updateDragTypeRegistration()](nstextview/updatedragtyperegistration.md)
+- [func updateDragTypeRegistration()](./updatedragtyperegistration%28%29.md)
   Updates the acceptable drag types of all text views associated with the receiver’s layout manager.
-- [func selectionRange(forProposedRange: NSRange, granularity: NSSelectionGranularity) -> NSRange](nstextview/selectionrange(forproposedrange:granularity:).md)
+- [func selectionRange(forProposedRange: NSRange, granularity: NSSelectionGranularity) -> NSRange](./selectionrange%28forproposedrange,granularity%29.md)
   Returns an adjusted selected range based on the selection granularity.
-- [var rangeForUserCharacterAttributeChange: NSRange](nstextview/rangeforusercharacterattributechange.md)
+- [var rangeForUserCharacterAttributeChange: NSRange](./rangeforusercharacterattributechange.md)
   The range of characters affected by an action method that changes character (not paragraph) attributes.
-- [var rangesForUserCharacterAttributeChange: [NSValue]?](nstextview/rangesforusercharacterattributechange.md)
+- [var rangesForUserCharacterAttributeChange: [NSValue]?](./rangesforusercharacterattributechange.md)
   An array containing the ranges of characters affected by an action method that changes character (not paragraph) attributes.
-- [var rangeForUserParagraphAttributeChange: NSRange](nstextview/rangeforuserparagraphattributechange.md)
+- [var rangeForUserParagraphAttributeChange: NSRange](./rangeforuserparagraphattributechange.md)
   The range of characters affected by an action method that changes paragraph (not character) attributes.
-- [var rangesForUserParagraphAttributeChange: [NSValue]?](nstextview/rangesforuserparagraphattributechange.md)
+- [var rangesForUserParagraphAttributeChange: [NSValue]?](./rangesforuserparagraphattributechange.md)
   An array containing the ranges of characters affected by a method that changes paragraph (not character) attributes.
-- [var rangeForUserTextChange: NSRange](nstextview/rangeforusertextchange.md)
+- [var rangeForUserTextChange: NSRange](./rangeforusertextchange.md)
   The range of characters affected by a method that changes characters (as opposed to attributes).
-- [var rangesForUserTextChange: [NSValue]?](nstextview/rangesforusertextchange.md)
+- [var rangesForUserTextChange: [NSValue]?](./rangesforusertextchange.md)
   An array containing the ranges of characters affected by a method that changes characters (as opposed to attributes).
-- [func shouldChangeText(in: NSRange, replacementString: String?) -> Bool](nstextview/shouldchangetext(in:replacementstring:).md)
+- [func shouldChangeText(in: NSRange, replacementString: String?) -> Bool](./shouldchangetext%28in,replacementstring%29.md)
   Initiates a series of delegate messages (and general notifications) to determine whether modifications can be made to the characters and attributes of the receiver’s text.
-- [func shouldChangeText(inRanges: [NSValue], replacementStrings: [String]?) -> Bool](nstextview/shouldchangetext(inranges:replacementstrings:).md)
+- [func shouldChangeText(inRanges: [NSValue], replacementStrings: [String]?) -> Bool](./shouldchangetext%28inranges,replacementstrings%29.md)
   Initiates a series of delegate messages (and general notifications) to determine whether modifications can be made to the characters and attributes of the receiver’s text.
-- [func didChangeText()](nstextview/didchangetext.md)
+- [func didChangeText()](./didchangetext%28%29.md)
   Sends out necessary notifications when a text change completes.
-- [var smartInsertDeleteEnabled: Bool](nstextview/smartinsertdeleteenabled.md)
+- [var smartInsertDeleteEnabled: Bool](./smartinsertdeleteenabled.md)
   A Boolean value that controls whether the receiver inserts or deletes space around selected words so as to preserve proper spacing and punctuation.
 
 

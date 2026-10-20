@@ -1,7 +1,8 @@
 # init(languageCode:script:languageRegion:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a locale components instance with the specified language code, script, and region identifier.
 
@@ -28,9 +29,10 @@ init(languageCode: Locale.LanguageCode? = nil, script: Locale.Script? = nil, lan
 
 ## See Also
 
-- [init(identifier: String)](locale/components/init(identifier:).md)
+### Creating a locale components instance
+- [init(identifier: String)](./init%28identifier%29.md)
   Creates a locale components instance with the specified identifier.
-- [init(locale: Locale)](locale/components/init(locale:).md)
+- [init(locale: Locale)](./init%28locale%29.md)
   Creates a language components instance from an existing locale.
 
 

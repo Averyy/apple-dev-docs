@@ -1,7 +1,8 @@
 # setStartTime(_:forItemWithStoreID:)
 
 **Framework**: Media Player  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the time the designated store item is to start playing.
 
@@ -18,14 +19,19 @@ Sets the time the designated store item is to start playing.
 func setStartTime(_ startTime: TimeInterval, forItemWithStoreID storeID: String)
 ```
 
+```objc
+- (void) setStartTime:(NSTimeInterval) startTime forItemWithStoreID:(NSString *) storeID;
+```
+
 ## Parameters
 
-- `startTime`: The [`TimeInterval`](https://developer.apple.com/documentation/foundation/timeinterval) describing when the store item starts playing.
+- `startTime`: The [`TimeInterval`](../../Foundation/timeinterval.md) describing when the store item starts playing.
 - `storeID`: The store identifier associated with the item in the queue that has a changed start time.
 
 ## See Also
 
-- [func setEndTime(TimeInterval, forItemWithStoreID: String)](mpmusicplayerstorequeuedescriptor/setendtime(_:foritemwithstoreid:).md)
+### Setting start and end times
+- [func setEndTime(TimeInterval, forItemWithStoreID: String)](./setendtime%28_,foritemwithstoreid%29.md)
   Sets the time the designated store item is to stop playing.
 
 

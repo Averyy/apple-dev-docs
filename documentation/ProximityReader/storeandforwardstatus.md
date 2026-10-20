@@ -1,7 +1,8 @@
 # StoreAndForwardStatus
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes the Store and Forward session status.
 
@@ -20,33 +21,34 @@ struct StoreAndForwardStatus
 
 A session’s `StoreAndForwardStatus` tells you when the Store and Forward session expires and how many successful reads the framework performed using a Store and Forward session.
 
-Call [`status()`](storeandforwardpaymentcardreadersession/status().md) to get the current Store and Forward status for your device.
+Call [`status()`](./storeandforwardpaymentcardreadersession/status%28%29.md) to get the current Store and Forward status for your device.
 
 ## Topics
 
 ### Getting the status
-- [let expiration: Date](storeandforwardstatus/expiration.md)
+- [let expiration: Date](./storeandforwardstatus/expiration.md)
   The date when the Store and Forward session expires.
-- [let readCount: Int](storeandforwardstatus/readcount.md)
+- [let readCount: Int](./storeandforwardstatus/readcount.md)
   The number of successful reads the framework performed using a Store and Forward session.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct StoreAndForwardBatch](storeandforwardbatch.md)
+### Store and Forward mode
+- [struct StoreAndForwardBatch](./storeandforwardbatch.md)
   A structure that stores the data to send to the payment service provider to process.
-- [struct StoreAndForwardBatchDeletionToken](storeandforwardbatchdeletiontoken.md)
+- [struct StoreAndForwardBatchDeletionToken](./storeandforwardbatchdeletiontoken.md)
   A secure token that you use to delete a Store and Forward batch.
-- [class StoreAndForwardPaymentCardReaderSession](storeandforwardpaymentcardreadersession.md)
+- [class StoreAndForwardPaymentCardReaderSession](./storeandforwardpaymentcardreadersession.md)
   The object you use to start reading a contactless payment or loyalty card in Store and Forward mode.
-- [struct PaymentCardReaderStore](paymentcardreaderstore.md)
+- [struct PaymentCardReaderStore](./paymentcardreaderstore.md)
   A structure that manages the store that contains all the Store and Forward reads.
 
 

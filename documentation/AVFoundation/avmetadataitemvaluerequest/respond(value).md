@@ -1,7 +1,8 @@
 # respond(value:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the metadata item’s value.
 
@@ -20,6 +21,10 @@ Returns the metadata item’s value.
 func respond(value: any NSCopying & NSObjectProtocol)
 ```
 
+```objc
+- (void) respondWithValue:(id<NSCopying,NSObject>) value;
+```
+
 #### Discussion
 
 You call this method to return the metadata item’s value.
@@ -30,9 +35,10 @@ You call this method to return the metadata item’s value.
 
 ## See Also
 
-- [func respond(error: any Error)](avmetadataitemvaluerequest/respond(error:).md)
+### Handling the response
+- [func respond(error: any Error)](./respond%28error%29.md)
   Returns an error when the system fails to load the value.
-- [var metadataItem: AVMetadataItem?](avmetadataitemvaluerequest/metadataitem.md)
+- [var metadataItem: AVMetadataItem?](./metadataitem.md)
   The metadata item to request a value for.
 
 

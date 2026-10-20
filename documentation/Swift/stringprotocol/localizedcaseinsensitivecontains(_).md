@@ -1,7 +1,8 @@
 # localizedCaseInsensitiveContains(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the given string is non-empty and contained within this string by case-insensitive, non-literal search, taking into account the current locale.
 

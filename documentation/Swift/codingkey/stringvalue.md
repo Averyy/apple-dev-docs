@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The string to use in a named collection (e.g. a string-keyed dictionary).

@@ -1,15 +1,16 @@
 # kAUNBandEQParam_Bandwidth
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,13 +18,18 @@
 var kAUNBandEQParam_Bandwidth: AudioUnitParameterID { get }
 ```
 
+```c
+kAUNBandEQParam_Bandwidth
+```
+
 ## See Also
 
-- [var kAUNBandEQParam_BypassBand: AudioUnitParameterID](kaunbandeqparam_bypassband.md)
-- [var kAUNBandEQParam_FilterType: AudioUnitParameterID](kaunbandeqparam_filtertype.md)
-- [var kAUNBandEQParam_Frequency: AudioUnitParameterID](kaunbandeqparam_frequency.md)
-- [var kAUNBandEQParam_Gain: AudioUnitParameterID](kaunbandeqparam_gain.md)
-- [var kAUNBandEQParam_GlobalGain: AudioUnitParameterID](kaunbandeqparam_globalgain.md)
+### Constants
+- [var kAUNBandEQParam_BypassBand: AudioUnitParameterID](./kaunbandeqparam_bypassband.md)
+- [var kAUNBandEQParam_FilterType: AudioUnitParameterID](./kaunbandeqparam_filtertype.md)
+- [var kAUNBandEQParam_Frequency: AudioUnitParameterID](./kaunbandeqparam_frequency.md)
+- [var kAUNBandEQParam_Gain: AudioUnitParameterID](./kaunbandeqparam_gain.md)
+- [var kAUNBandEQParam_GlobalGain: AudioUnitParameterID](./kaunbandeqparam_globalgain.md)
 
 
 ---

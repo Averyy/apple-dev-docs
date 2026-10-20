@@ -1,7 +1,8 @@
 # HMCharacteristicValueLockMechanismLastKnownAction
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the last known action of the locking mechanism.
 
@@ -19,43 +20,47 @@ Possible values for the last known action of the locking mechanism.
 enum HMCharacteristicValueLockMechanismLastKnownAction
 ```
 
+```c
+enum HMCharacteristicValueLockMechanismLastKnownAction : NSInteger;
+```
+
 ## Topics
 
 ### Lock Mechanism Actions
-- [HMCharacteristicValueLockMechanismLastKnownAction.securedRemotely](hmcharacteristicvaluelockmechanismlastknownaction/securedremotely.md)
+- [HMCharacteristicValueLockMechanismLastKnownAction.securedRemotely](./hmcharacteristicvaluelockmechanismlastknownaction/securedremotely.md)
   The last known action was for the lock to be secured remotely.
-- [HMCharacteristicValueLockMechanismLastKnownAction.securedUsingPhysicalMovement](hmcharacteristicvaluelockmechanismlastknownaction/securedusingphysicalmovement.md)
+- [HMCharacteristicValueLockMechanismLastKnownAction.securedUsingPhysicalMovement](./hmcharacteristicvaluelockmechanismlastknownaction/securedusingphysicalmovement.md)
   The last known action was for the lock to be secured using physical movement.
-- [HMCharacteristicValueLockMechanismLastKnownAction.securedUsingPhysicalMovementExterior](hmcharacteristicvaluelockmechanismlastknownaction/securedusingphysicalmovementexterior.md)
+- [HMCharacteristicValueLockMechanismLastKnownAction.securedUsingPhysicalMovementExterior](./hmcharacteristicvaluelockmechanismlastknownaction/securedusingphysicalmovementexterior.md)
   The last known action was for the lock to be secured using physical movement on the exterior of the door.
-- [HMCharacteristicValueLockMechanismLastKnownAction.securedUsingPhysicalMovementInterior](hmcharacteristicvaluelockmechanismlastknownaction/securedusingphysicalmovementinterior.md)
+- [HMCharacteristicValueLockMechanismLastKnownAction.securedUsingPhysicalMovementInterior](./hmcharacteristicvaluelockmechanismlastknownaction/securedusingphysicalmovementinterior.md)
   The last known action was for the lock to be secured using physical movement on the interior of the door.
-- [HMCharacteristicValueLockMechanismLastKnownAction.securedWithAutomaticSecureTimeout](hmcharacteristicvaluelockmechanismlastknownaction/securedwithautomaticsecuretimeout.md)
+- [HMCharacteristicValueLockMechanismLastKnownAction.securedWithAutomaticSecureTimeout](./hmcharacteristicvaluelockmechanismlastknownaction/securedwithautomaticsecuretimeout.md)
   The last known action was for the lock to be secured automatically after a timeout period expired.
-- [HMCharacteristicValueLockMechanismLastKnownAction.securedWithKeypad](hmcharacteristicvaluelockmechanismlastknownaction/securedwithkeypad.md)
+- [HMCharacteristicValueLockMechanismLastKnownAction.securedWithKeypad](./hmcharacteristicvaluelockmechanismlastknownaction/securedwithkeypad.md)
   The last known action was for the lock to be secured using a keypad.
-- [HMCharacteristicValueLockMechanismLastKnownAction.unsecuredRemotely](hmcharacteristicvaluelockmechanismlastknownaction/unsecuredremotely.md)
+- [HMCharacteristicValueLockMechanismLastKnownAction.unsecuredRemotely](./hmcharacteristicvaluelockmechanismlastknownaction/unsecuredremotely.md)
   The last known action was for the lock to be unsecured remotely.
-- [HMCharacteristicValueLockMechanismLastKnownAction.unsecuredUsingPhysicalMovement](hmcharacteristicvaluelockmechanismlastknownaction/unsecuredusingphysicalmovement.md)
+- [HMCharacteristicValueLockMechanismLastKnownAction.unsecuredUsingPhysicalMovement](./hmcharacteristicvaluelockmechanismlastknownaction/unsecuredusingphysicalmovement.md)
   The last known action was for the lock to be unsecured using physical movement.
-- [HMCharacteristicValueLockMechanismLastKnownAction.unsecuredUsingPhysicalMovementExterior](hmcharacteristicvaluelockmechanismlastknownaction/unsecuredusingphysicalmovementexterior.md)
+- [HMCharacteristicValueLockMechanismLastKnownAction.unsecuredUsingPhysicalMovementExterior](./hmcharacteristicvaluelockmechanismlastknownaction/unsecuredusingphysicalmovementexterior.md)
   The last known action was for the lock to be unsecured using physical movement on the exterior of the door.
-- [HMCharacteristicValueLockMechanismLastKnownAction.unsecuredUsingPhysicalMovementInterior](hmcharacteristicvaluelockmechanismlastknownaction/unsecuredusingphysicalmovementinterior.md)
+- [HMCharacteristicValueLockMechanismLastKnownAction.unsecuredUsingPhysicalMovementInterior](./hmcharacteristicvaluelockmechanismlastknownaction/unsecuredusingphysicalmovementinterior.md)
   The last known action was for the lock to be unsecured using physical movement on the interior of the door.
-- [HMCharacteristicValueLockMechanismLastKnownAction.unsecuredWithKeypad](hmcharacteristicvaluelockmechanismlastknownaction/unsecuredwithkeypad.md)
+- [HMCharacteristicValueLockMechanismLastKnownAction.unsecuredWithKeypad](./hmcharacteristicvaluelockmechanismlastknownaction/unsecuredwithkeypad.md)
   The last known action was for the lock to be unsecured using a keypad.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluelockmechanismlastknownaction/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluelockmechanismlastknownaction/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

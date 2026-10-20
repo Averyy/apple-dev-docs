@@ -1,7 +1,8 @@
 # apply(input:output:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies a single- or double-precision single-channel or multichannel biquad IIR filter, overwriting the supplied output vector.
 
@@ -11,7 +12,7 @@ Applies a single- or double-precision single-channel or multichannel biquad IIR 
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ mutating func apply<U, V>(input: U, output: inout V) where T == U.Element, U : A
 
 ## See Also
 
-- [func apply<U>(input: U) -> [T]](vdsp/biquad/apply(input:).md)
+### Instance methods
+- [func apply<U>(input: U) -> [T]](./apply%28input%29.md)
   Applies a single- or double-precision single-channel or multichannel biquad IIR filter, returning the filtered signal.
 
 

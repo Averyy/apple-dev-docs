@@ -1,7 +1,8 @@
 # description
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mirror that reflects the filled column.
 
@@ -20,11 +21,14 @@ A mirror that reflects the filled column.
 var description: String { get }
 ```
 
+Available when `Base` conforms to `OptionalColumnProtocol`.
+
 ## See Also
 
-- [var debugDescription: String](filledcolumn/debugdescription.md)
+### Describing a Column
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the filled column suitable for debugging.
-- [func description(options: FormattingOptions) -> String](filledcolumn/description(options:).md)
+- [func description(options: FormattingOptions) -> String](./description%28options%29.md)
   Generates a string description of the filled column.
 
 

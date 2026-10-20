@@ -1,7 +1,8 @@
 # Morphology.GrammaticalNumber
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A representation of grammatical number, used for inflecting strings.
 
@@ -23,45 +24,46 @@ enum GrammaticalNumber
 ## Topics
 
 ### Determining Grammatical Number
-- [Morphology.GrammaticalNumber.zero](morphology/grammaticalnumber/zero.md)
+- [Morphology.GrammaticalNumber.zero](./grammaticalnumber/zero.md)
   Zero persons or things, as used for a gramnatical number.
-- [Morphology.GrammaticalNumber.singular](morphology/grammaticalnumber/singular.md)
+- [Morphology.GrammaticalNumber.singular](./grammaticalnumber/singular.md)
   A single person or thing, as used for a grammatical number.
-- [Morphology.GrammaticalNumber.plural](morphology/grammaticalnumber/plural.md)
+- [Morphology.GrammaticalNumber.plural](./grammaticalnumber/plural.md)
   Multiple persons or things, as used for a grammatical number.
-- [Morphology.GrammaticalNumber.pluralTwo](morphology/grammaticalnumber/pluraltwo.md)
+- [Morphology.GrammaticalNumber.pluralTwo](./grammaticalnumber/pluraltwo.md)
   Two persons or things, as used for a grammatical number.
-- [Morphology.GrammaticalNumber.pluralFew](morphology/grammaticalnumber/pluralfew.md)
+- [Morphology.GrammaticalNumber.pluralFew](./grammaticalnumber/pluralfew.md)
   A small number of persons or things, as used for a grammatical number.
-- [Morphology.GrammaticalNumber.pluralMany](morphology/grammaticalnumber/pluralmany.md)
+- [Morphology.GrammaticalNumber.pluralMany](./grammaticalnumber/pluralmany.md)
   A large number of persons or things, as used for a grammatical number.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isUnspecified: Bool](morphology/isunspecified.md)
+### Accessing Grammatical Properties
+- [var isUnspecified: Bool](./isunspecified.md)
   A Boolean value that indicates whether this instance specifies no particular grammar.
-- [var grammaticalGender: Morphology.GrammaticalGender?](morphology/grammaticalgender-swift.property.md)
+- [var grammaticalGender: Morphology.GrammaticalGender?](./grammaticalgender-swift.property.md)
   The grammatical gender used for inflecting strings with this morphology.
-- [Morphology.GrammaticalGender](morphology/grammaticalgender-swift.enum.md)
+- [Morphology.GrammaticalGender](./grammaticalgender-swift.enum.md)
   A representation of grammatical gender, used for inflecting strings.
-- [var number: Morphology.GrammaticalNumber?](morphology/number.md)
+- [var number: Morphology.GrammaticalNumber?](./number.md)
   The grammatical number used for inflecting strings with this morphology.
-- [var partOfSpeech: Morphology.PartOfSpeech?](morphology/partofspeech-swift.property.md)
+- [var partOfSpeech: Morphology.PartOfSpeech?](./partofspeech-swift.property.md)
   The grammatical part of speech used for inflecting strings with this morphology.
-- [Morphology.PartOfSpeech](morphology/partofspeech-swift.enum.md)
+- [Morphology.PartOfSpeech](./partofspeech-swift.enum.md)
   A representation of grammatical parts of speech, used for inflecting strings.
 
 

@@ -1,7 +1,8 @@
 # playerViewControllerShouldDismiss(_:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate object whether the player view controller dismisses itself upon request.
 
@@ -12,6 +13,10 @@ Asks the delegate object whether the player view controller dismisses itself upo
 
 ```swift
 optional func playerViewControllerShouldDismiss(_ playerViewController: AVPlayerViewController) -> Bool
+```
+
+```objc
+- (BOOL) playerViewControllerShouldDismiss:(AVPlayerViewController *) playerViewController;
 ```
 
 #### Return Value
@@ -28,9 +33,10 @@ If allowed, the player view controller dismisses itself with animation. If youâ€
 
 ## See Also
 
-- [func playerViewControllerWillBeginDismissalTransition(AVPlayerViewController)](avplayerviewcontrollerdelegate/playerviewcontrollerwillbegindismissaltransition(_:).md)
+### Dismissing the player view controller
+- [func playerViewControllerWillBeginDismissalTransition(AVPlayerViewController)](./playerviewcontrollerwillbegindismissaltransition%28_%29.md)
   Tells the delegate when the player view controller is about to start its dismissal transition.
-- [func playerViewControllerDidEndDismissalTransition(AVPlayerViewController)](avplayerviewcontrollerdelegate/playerviewcontrollerdidenddismissaltransition(_:).md)
+- [func playerViewControllerDidEndDismissalTransition(AVPlayerViewController)](./playerviewcontrollerdidenddismissaltransition%28_%29.md)
   Tells the delegate when the player view controller ends its dismissal transition.
 
 

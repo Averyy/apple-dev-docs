@@ -1,7 +1,8 @@
 # DCError
 
 **Framework**: DeviceCheck  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that indicates when DeviceCheck encounters an error.
 
@@ -23,37 +24,38 @@ struct DCError
 ## Topics
 
 ### Errors
-- [static var featureUnsupported: DCError.Code](dcerror-swift.struct/featureunsupported.md)
+- [static var featureUnsupported: DCError.Code](./dcerror-swift.struct/featureunsupported.md)
   DeviceCheck is not available on this device.
-- [static var invalidInput: DCError.Code](dcerror-swift.struct/invalidinput.md)
+- [static var invalidInput: DCError.Code](./dcerror-swift.struct/invalidinput.md)
   An error code that indicates when your app provides data that isn’t formatted correctly.
-- [static var invalidKey: DCError.Code](dcerror-swift.struct/invalidkey.md)
+- [static var invalidKey: DCError.Code](./dcerror-swift.struct/invalidkey.md)
   An error caused by a failed attempt to use the App Attest key.
-- [static var serverUnavailable: DCError.Code](dcerror-swift.struct/serverunavailable.md)
+- [static var serverUnavailable: DCError.Code](./dcerror-swift.struct/serverunavailable.md)
   An error that indicates a failed attempt to contact the App Attest service during an attestation.
-- [static var unknownSystemFailure: DCError.Code](dcerror-swift.struct/unknownsystemfailure.md)
+- [static var unknownSystemFailure: DCError.Code](./dcerror-swift.struct/unknownsystemfailure.md)
   A failure has occurred, such as the failure to generate a token.
-- [DCError.Code](dcerror-swift.struct/code.md)
+- [DCError.Code](./dcerror-swift.struct/code.md)
   DeviceCheck error codes.
 ### Error information
-- [static var errorDomain: String](dcerror-swift.struct/errordomain.md)
+- [static var errorDomain: String](./dcerror-swift.struct/errordomain.md)
   The error domain for errors associated with DeviceCheck APIs.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [DCError.Code](dcerror-swift.struct/code.md)
+### Errors
+- [DCError.Code](./dcerror-swift.struct/code.md)
   DeviceCheck error codes.
-- [let DCErrorDomain: String](dcerrordomain.md)
+- [let DCErrorDomain: String](./dcerrordomain.md)
   The error domain for errors associated with DeviceCheck APIs.
 
 

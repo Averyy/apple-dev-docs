@@ -1,7 +1,8 @@
 # texture
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Generates texture data.
 
@@ -12,7 +13,7 @@ Generates texture data.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

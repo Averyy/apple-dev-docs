@@ -1,20 +1,27 @@
 # groupTableViewBackground
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system color to use for the background of a grouped table.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- tvOS 13.0+
+- iOS 2.0+ - Deprecated in 13.0
+- iPadOS 2.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- tvOS 13.0+ - Deprecated in 13.0
+
+> **Deprecated**: Use [`systemGroupedBackground`](./systemgroupedbackground.md) instead.
 
 ## Declaration
 
 ```swift
 class var groupTableViewBackground: UIColor { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) UIColor * groupTableViewBackgroundColor;
 ```
 
 #### Return Value

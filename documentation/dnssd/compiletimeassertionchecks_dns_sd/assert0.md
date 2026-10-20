@@ -1,7 +1,8 @@
 # assert0
 
 **Framework**: dnssd  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var assert0: CChar
+```
+
+```c
+char assert0[1];
 ```
 
 

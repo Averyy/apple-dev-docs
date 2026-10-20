@@ -1,7 +1,8 @@
 # items
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of items for the section.
 
@@ -16,11 +17,16 @@ The list of items for the section.
 var items: [any CPListTemplateItem] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<id<CPListTemplateItem>> * items;
+```
+
 ## See Also
 
-- [func index(of: any CPListTemplateItem) -> Int](cplistsection/index(of:).md)
+### Getting Items
+- [func index(of: any CPListTemplateItem) -> Int](./index%28of%29.md)
   Returns the index of the specified item.
-- [func item(at: Int) -> any CPListTemplateItem](cplistsection/item(at:).md)
+- [func item(at: Int) -> any CPListTemplateItem](./item%28at%29.md)
   Returns the item at the specified index.
 
 

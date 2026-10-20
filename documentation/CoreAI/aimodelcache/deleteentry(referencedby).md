@@ -1,7 +1,8 @@
 # deleteEntry(referencedBy:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Deletes a cache entry referenced by bookmark data.
 
@@ -22,7 +23,7 @@ static func deleteEntry(referencedBy bookmark: Data) throws
 
 Use this method to delete a cache entry referenced by bookmark data previously obtained from `AIModel.bookmarkData`. Because bookmark data encodes both the specific cache instance and the entry within it, this method is static and requires no cache instance to call.
 
-> **Note**: If no [`AIModel`](aimodel.md) instance currently references the entry, deletion happens immediately. Otherwise, an error is thrown. Deletion can only occur for an entry when the last [`AIModel`](aimodel.md) releases it.
+> **Note**: If no [`AIModel`](../aimodel.md) instance currently references the entry, deletion happens immediately. Otherwise, an error is thrown. Deletion can only occur for an entry when the last [`AIModel`](../aimodel.md) releases it.
 
 ## Parameters
 
@@ -30,11 +31,12 @@ Use this method to delete a cache entry referenced by bookmark data previously o
 
 ## See Also
 
-- [func deleteEntry(for: URL, options: SpecializationOptions) throws](aimodelcache/deleteentry(for:options:).md)
+### Deleting cache entries
+- [func deleteEntry(for: URL, options: SpecializationOptions) throws](./deleteentry%28for,options%29.md)
   Deletes the cache entry for a specific model and specialization options combination.
-- [func deleteEntries(for: URL) throws](aimodelcache/deleteentries(for:).md)
+- [func deleteEntries(for: URL) throws](./deleteentries%28for%29.md)
   Deletes all cache entries for a specific model, regardless of specialization options.
-- [func deleteAll() throws](aimodelcache/deleteall.md)
+- [func deleteAll() throws](./deleteall%28%29.md)
   Deletes all entries in the cache.
 
 

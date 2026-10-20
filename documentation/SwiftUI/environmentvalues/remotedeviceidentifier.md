@@ -1,7 +1,8 @@
 # remoteDeviceIdentifier
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An opaque object that identifies the device on which the scene (from which this value is accessed from) is being presented on.
 

@@ -1,7 +1,8 @@
 # sound
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Play the sound associated with the notification.
 
@@ -20,19 +21,24 @@ Play the sound associated with the notification.
 static var sound: UNNotificationPresentationOptions { get }
 ```
 
+```c
+UNNotificationPresentationOptionSound
+```
+
 ## Mentions
 
-- [Handling notifications and notification-related actions](handling-notifications-and-notification-related-actions.md)
+- [Handling notifications and notification-related actions](../handling-notifications-and-notification-related-actions.md)
 
 ## See Also
 
-- [static var badge: UNNotificationPresentationOptions](unnotificationpresentationoptions/badge.md)
+### Constants
+- [static var badge: UNNotificationPresentationOptions](./badge.md)
   Apply the notification’s badge value to the app’s icon.
-- [static var banner: UNNotificationPresentationOptions](unnotificationpresentationoptions/banner.md)
+- [static var banner: UNNotificationPresentationOptions](./banner.md)
   Present the notification as a banner.
-- [static var list: UNNotificationPresentationOptions](unnotificationpresentationoptions/list.md)
+- [static var list: UNNotificationPresentationOptions](./list.md)
   Show the notification in Notification Center.
-- [static var alert: UNNotificationPresentationOptions](unnotificationpresentationoptions/alert.md)
+- [static var alert: UNNotificationPresentationOptions](./alert.md)
   Display the alert using the content provided by the notification.
 
 

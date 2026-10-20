@@ -2,6 +2,7 @@
 
 **Framework**: SwiftData  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The textual description of the migration’s version or purpose.

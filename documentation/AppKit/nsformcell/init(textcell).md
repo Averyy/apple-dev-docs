@@ -1,17 +1,22 @@
 # init(textCell:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an `NSFormCell` object initialized with the specified title string.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init(textCell string: String?)
+```
+
+```objc
+- (instancetype) initTextCell:(NSString *) string;
 ```
 
 #### Return Value
@@ -28,7 +33,8 @@ The contents of the cell’s editable text entry field are set to the empty stri
 
 ## See Also
 
-- [Form Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Form/Form.html#//apple_ref/doc/uid/10000021i)
+### Related Documentation
+- [Form Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Form/Form.html#//apple_ref/doc/uid/10000021i)
 
 
 ---

@@ -1,7 +1,8 @@
 # Product.PurchaseResult
 
 **Framework**: StoreKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The result of a purchase.
 
@@ -22,11 +23,11 @@ enum PurchaseResult
 
 ## Mentions
 
-- [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
+- [Supporting monthly subscriptions with a 12-month commitment](../supporting-monthly-subscriptions-with-a-12-month-commitment.md)
 
 #### Overview
 
-The value of the purchase result represents the state of the purchase. When successful, the associated value contains a [`VerificationResult`](verificationresult.md) of the transaction. The following example illustrates calling [`purchase(options:)`](product/purchase(options:).md) on a [`Product`](product.md) value, checking the purchase status, and inspecting information about a successful transaction.
+The value of the purchase result represents the state of the purchase. When successful, the associated value contains a [`VerificationResult`](../verificationresult.md) of the transaction. The following example illustrates calling [`purchase(options:)`](./purchase%28options%29.md) on a [`Product`](../product.md) value, checking the purchase status, and inspecting information about a successful transaction.
 
 ```swift
 let result = try await product.purchase()
@@ -61,24 +62,25 @@ case .userCancelled:
 ## Topics
 
 ### Getting the Purchase Results
-- [case success(VerificationResult<Transaction>)](product/purchaseresult/success(_:).md)
+- [case success(VerificationResult<Transaction>)](./purchaseresult/success%28_%29.md)
   The purchase succeeded and results in a transaction.
-- [Product.PurchaseResult.userCancelled](product/purchaseresult/usercancelled.md)
+- [Product.PurchaseResult.userCancelled](./purchaseresult/usercancelled.md)
   The user canceled the purchase.
-- [Product.PurchaseResult.pending](product/purchaseresult/pending.md)
+- [Product.PurchaseResult.pending](./purchaseresult/pending.md)
   The purchase is pending, and requires action from the customer.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct PurchaseAction](purchaseaction.md)
+### Purchase requests and results
+- [struct PurchaseAction](../purchaseaction.md)
   An action that starts an Apple In-App Purchase.
-- [func purchase(options: Set<Product.PurchaseOption>) async throws -> Product.PurchaseResult](product/purchase(options:).md)
+- [func purchase(options: Set<Product.PurchaseOption>) async throws -> Product.PurchaseResult](./purchase%28options%29.md)
   Initiates a purchase for the product with the App Store and displays the confirmation sheet.
 
 

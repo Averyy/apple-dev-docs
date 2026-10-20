@@ -1,7 +1,8 @@
 # WebKitMediaKeyMessageEvent
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,15 +10,15 @@
 
 ## Declaration
 
-```swift
+```
 interface WebKitMediaKeyMessageEvent
 ```
 
 ## Topics
 
 ### Instance Properties
-- [destinationURL](webkitmediakeymessageevent/2871466-destinationurl.md)
-- [message](webkitmediakeymessageevent/2871069-message.md)
+- [destinationURL](./webkitmediakeymessageevent/api-2871466-destinationurl.md)
+- [message](./webkitmediakeymessageevent/api-2871069-message.md)
 
 ## Relationships
 

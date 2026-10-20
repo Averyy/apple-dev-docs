@@ -1,14 +1,15 @@
 # IdentityDocumentProviderRegistrationStore.RegistrationError.invalidRequest
 
 **Framework**: IdentityDocumentServices  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the request isn’t valid.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 

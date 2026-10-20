@@ -1,7 +1,8 @@
 # label(_:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Assigns a label to an attachment.
 
@@ -21,7 +22,7 @@ func label(_ label: String) -> Attachment<Content>
 
 ## Mentions
 
-- [Analyzing images with multimodal prompting](analyzing-images-with-multimodal-prompting.md)
+- [Analyzing images with multimodal prompting](../analyzing-images-with-multimodal-prompting.md)
 
 #### Discussion
 

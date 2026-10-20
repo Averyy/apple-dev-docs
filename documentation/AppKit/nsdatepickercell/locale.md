@@ -1,12 +1,13 @@
 # locale
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The locale used to display dates.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The locale used to display dates.
 var locale: Locale? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSLocale * locale;
+```
+
 ## See Also
 
-- [var dateValue: Date](nsdatepickercell/datevalue.md)
+### Object Values
+- [var dateValue: Date](./datevalue.md)
   The date currently specified in the picker.
-- [var timeInterval: TimeInterval](nsdatepickercell/timeinterval.md)
+- [var timeInterval: TimeInterval](./timeinterval.md)
   The time interval that represents the date range.
-- [var calendar: Calendar?](nsdatepickercell/calendar.md)
+- [var calendar: Calendar?](./calendar.md)
   The calendar used by the date picker.
-- [var timeZone: TimeZone?](nsdatepickercell/timezone.md)
+- [var timeZone: TimeZone?](./timezone.md)
   The time zone used to display time-related values.
 
 

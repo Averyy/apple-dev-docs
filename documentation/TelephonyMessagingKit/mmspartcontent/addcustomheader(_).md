@@ -1,7 +1,8 @@
 # addCustomHeader(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A helper function to add custom headers.
 
@@ -16,9 +17,10 @@ mutating func addCustomHeader(_ header: MMSPartContent.MMSCustomHeader)
 
 ## See Also
 
-- [var customHeaders: [MMSPartContent.MMSCustomHeader]](mmspartcontent/customheaders.md)
+### Working with custom headers
+- [var customHeaders: [MMSPartContent.MMSCustomHeader]](./customheaders.md)
   A dictionary of custom headers to send in the MMS message.
-- [MMSPartContent.MMSCustomHeader](mmspartcontent/mmscustomheader.md)
+- [MMSPartContent.MMSCustomHeader](./mmscustomheader.md)
   A structure that defines a custom header as a key-value pair.
 
 

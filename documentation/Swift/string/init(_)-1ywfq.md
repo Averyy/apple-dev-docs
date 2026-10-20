@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance from the description of a given `LosslessStringConvertible` instance.
 
@@ -22,15 +23,16 @@ init<T>(_ value: T) where T : LosslessStringConvertible
 
 ## See Also
 
-- [init<Subject>(describing: Subject)](string/init(describing:)-588wb.md)
+### Converting Other Types to Strings
+- [init<Subject>(describing: Subject)](./init%28describing%29-588wb.md)
   Creates a string representing the given value.
-- [init<Subject>(describing: Subject)](string/init(describing:)-hsqw.md)
+- [init<Subject>(describing: Subject)](./init%28describing%29-hsqw.md)
   Creates a string representing the given value.
-- [init<Subject>(describing: Subject)](string/init(describing:)-6ttci.md)
+- [init<Subject>(describing: Subject)](./init%28describing%29-6ttci.md)
   Creates a string representing the given value.
-- [init<Subject>(describing: Subject)](string/init(describing:)-67ncf.md)
+- [init<Subject>(describing: Subject)](./init%28describing%29-67ncf.md)
   Creates a string representing the given value.
-- [init<Subject>(reflecting: Subject)](string/init(reflecting:).md)
+- [init<Subject>(reflecting: Subject)](./init%28reflecting%29.md)
   Creates a string with a detailed representation of the given value, suitable for debugging.
 
 

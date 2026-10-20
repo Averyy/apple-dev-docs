@@ -1,7 +1,8 @@
 # anchoringStrategy
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The experience’s anchoring strategy.
 

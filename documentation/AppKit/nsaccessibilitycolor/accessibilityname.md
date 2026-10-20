@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Returns a localized description of the color for use in accessibility attributes.
@@ -14,6 +15,10 @@ Returns a localized description of the color for use in accessibility attributes
 
 ```swift
 var accessibilityName: String { get }
+```
+
+```objc
+@property (readonly) NSString * accessibilityName;
 ```
 
 

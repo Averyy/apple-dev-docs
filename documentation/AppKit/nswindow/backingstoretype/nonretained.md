@@ -1,17 +1,22 @@
 # NSWindow.BackingStoreType.nonretained
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The window draws directly to the screen without using any buffer.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.13 (renamed: NSWindow.BackingStoreType.buffered)
 
 ## Declaration
 
 ```swift
 case nonretained
+```
+
+```c
+NSBackingStoreNonretained
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ You should not use this mode. It exists primarily for use in the original Classi
 
 ## See Also
 
-- [NSWindow.BackingStoreType.buffered](nswindow/backingstoretype/buffered.md)
+### Constants
+- [NSWindow.BackingStoreType.buffered](./buffered.md)
   The window renders all drawing into a display buffer and then flushes it to the screen.
-- [NSWindow.BackingStoreType.retained](nswindow/backingstoretype/retained.md)
+- [NSWindow.BackingStoreType.retained](./retained.md)
   The window uses a buffer, but draws directly to the screen where possible and to the buffer for obscured portions.
 
 

@@ -1,14 +1,15 @@
 # n_io_ranges
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 unsigned int n_io_ranges;
 ```
 

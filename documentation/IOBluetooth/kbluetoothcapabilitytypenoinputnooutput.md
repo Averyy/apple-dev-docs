@@ -1,10 +1,11 @@
 # kBluetoothCapabilityTypeNoInputNoOutput
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kBluetoothCapabilityTypeNoInputNoOutput: BluetoothIOCapabilities { get }
 ```
 
+```c
+kBluetoothCapabilityTypeNoInputNoOutput
+```
+
 ## See Also
 
-- [var kBluetoothCapabilityTypeDisplayOnly: BluetoothIOCapabilities](kbluetoothcapabilitytypedisplayonly.md)
-- [var kBluetoothCapabilityTypeDisplayYesNo: BluetoothIOCapabilities](kbluetoothcapabilitytypedisplayyesno.md)
-- [var kBluetoothCapabilityTypeKeyboardOnly: BluetoothIOCapabilities](kbluetoothcapabilitytypekeyboardonly.md)
+### Constants
+- [var kBluetoothCapabilityTypeDisplayOnly: BluetoothIOCapabilities](./kbluetoothcapabilitytypedisplayonly.md)
+- [var kBluetoothCapabilityTypeDisplayYesNo: BluetoothIOCapabilities](./kbluetoothcapabilitytypedisplayyesno.md)
+- [var kBluetoothCapabilityTypeKeyboardOnly: BluetoothIOCapabilities](./kbluetoothcapabilitytypekeyboardonly.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # HMCharacteristicValueInputDeviceType.playback
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A playback control input device.
 
@@ -19,19 +20,24 @@ A playback control input device.
 case playback
 ```
 
+```c
+HMCharacteristicValueInputDeviceTypePlayback
+```
+
 ## See Also
 
-- [HMCharacteristicValueInputDeviceType.audioSystem](hmcharacteristicvalueinputdevicetype/audiosystem.md)
+### Input devices
+- [HMCharacteristicValueInputDeviceType.audioSystem](./audiosystem.md)
   An audio system input device.
-- [HMCharacteristicValueInputDeviceType.none](hmcharacteristicvalueinputdevicetype/none.md)
+- [HMCharacteristicValueInputDeviceType.none](./none.md)
   No input device.
-- [HMCharacteristicValueInputDeviceType.other](hmcharacteristicvalueinputdevicetype/other.md)
+- [HMCharacteristicValueInputDeviceType.other](./other.md)
   An input device that doesn’t fit classifications.
-- [HMCharacteristicValueInputDeviceType.recording](hmcharacteristicvalueinputdevicetype/recording.md)
+- [HMCharacteristicValueInputDeviceType.recording](./recording.md)
   A recording input device.
-- [HMCharacteristicValueInputDeviceType.tuner](hmcharacteristicvalueinputdevicetype/tuner.md)
+- [HMCharacteristicValueInputDeviceType.tuner](./tuner.md)
   A tuner input device.
-- [HMCharacteristicValueInputDeviceType.tv](hmcharacteristicvalueinputdevicetype/tv.md)
+- [HMCharacteristicValueInputDeviceType.tv](./tv.md)
   A television input device.
 
 

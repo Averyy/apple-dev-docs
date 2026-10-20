@@ -1,7 +1,8 @@
 # ssidData
 
 **Framework**: Core WLAN  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The service set identifier (SSID) for the network profile, returned as data.
 
@@ -14,15 +15,20 @@ The service set identifier (SSID) for the network profile, returned as data.
 var ssidData: Data? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSData * ssidData;
+```
+
 #### Discussion
 
 The SSID is 1-32 octets.
 
 ## See Also
 
-- [var security: CWSecurity](cwnetworkprofile/security.md)
+### Instance Properties
+- [var security: CWSecurity](./security.md)
   The security mode for the network profile.
-- [var ssid: String?](cwnetworkprofile/ssid.md)
+- [var ssid: String?](./ssid.md)
   The service set identifier (SSID) for the network profile, encoded as a string.
 
 

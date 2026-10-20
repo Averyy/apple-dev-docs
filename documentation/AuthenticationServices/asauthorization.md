@@ -1,7 +1,8 @@
 # ASAuthorization
 
 **Framework**: Authentication Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The encapsulation of a successful authorization by a controller.
 
@@ -20,41 +21,46 @@ The encapsulation of a successful authorization by a controller.
 class ASAuthorization
 ```
 
+```objc
+@interface ASAuthorization : NSObject
+```
+
 ## Topics
 
 ### Getting the Provider
-- [var provider: any ASAuthorizationProvider](asauthorization/provider.md)
+- [var provider: any ASAuthorizationProvider](./asauthorization/provider.md)
   The provider that created the request that resulted in the successful authorization.
 ### Getting the Credential
-- [var credential: any ASAuthorizationCredential](asauthorization/credential.md)
+- [var credential: any ASAuthorizationCredential](./asauthorization/credential.md)
   Information provided about a user after successful authentication.
-- [protocol ASAuthorizationCredential](asauthorizationcredential.md)
+- [protocol ASAuthorizationCredential](./asauthorizationcredential.md)
   An interface that all credentials share.
 ### Characterizing an Authorization
-- [ASAuthorization.Scope](asauthorization/scope.md)
+- [ASAuthorization.Scope](./asauthorization/scope.md)
   The kinds of contact information that can be requested from the user.
-- [ASAuthorization.OpenIDOperation](asauthorization/openidoperation.md)
+- [ASAuthorization.OpenIDOperation](./asauthorization/openidoperation.md)
   The kinds of operations that you can perform with OpenID authentication.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func authorizationController(ASAuthorizationController, didCompleteWithCustomMethod: ASAuthorizationCustomMethod)](asauthorizationcontrollerdelegate/authorizationcontroller(_:didcompletewithcustommethod:).md)
+### Handling Successful Authorization
+- [func authorizationController(ASAuthorizationController, didCompleteWithCustomMethod: ASAuthorizationCustomMethod)](./asauthorizationcontrollerdelegate/authorizationcontroller%28_,didcompletewithcustommethod%29.md)
   Informs the delegate when authorization completes, and specifies the custom method the user selected.
-- [func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization: ASAuthorization)](asauthorizationcontrollerdelegate/authorizationcontroller(controller:didcompletewithauthorization:).md)
+- [func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization: ASAuthorization)](./asauthorizationcontrollerdelegate/authorizationcontroller%28controller,didcompletewithauthorization%29.md)
   Tells the delegate when authorization completes successfully.
 
 

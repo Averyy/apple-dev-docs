@@ -1,6 +1,7 @@
 # kMDQueryProgressNotification
 
-**Framework**: Core Services
+**Framework**: Core Services  
+**Role**: API Collection
 
 Indicates that a query’s results list has change during the initial result-gathering phase of a query.
 
@@ -15,14 +16,15 @@ This notification is only sent to the application’s notification center.
 ## Topics
 
 ### Constants
-- [let kMDQueryProgressNotification: CFString!](kmdqueryprogressnotification.md)
+- [let kMDQueryProgressNotification: CFString!](../../kmdqueryprogressnotification.md)
   Notification posted to indicate that a change has occurred to the query’s results list during the initial result-gathering phase of execution.
 
 ## See Also
 
-- [kMDQueryDidFinishNotification](file_metadata/mdquery/kmdquerydidfinishnotification.md)
+### Notifications
+- [kMDQueryDidFinishNotification](./kmdquerydidfinishnotification.md)
   Indicates that a query has finished with the initial result-gathering phase.
-- [kMDQueryDidUpdateNotification](file_metadata/mdquery/kmdquerydidupdatenotification.md)
+- [kMDQueryDidUpdateNotification](./kmdquerydidupdatenotification.md)
   Indicates that a query’s results list has change during the live-update phase of a query.
 
 

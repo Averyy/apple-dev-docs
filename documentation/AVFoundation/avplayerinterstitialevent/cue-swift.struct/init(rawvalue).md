@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an interstitial event cue from its raw string value.
 

@@ -1,7 +1,8 @@
 # HIDDeviceError.noPower
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device isn’t powered.
 

@@ -1,7 +1,8 @@
 # NSAccessibilityCustomRotor.SearchDirection.next
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The next search item.
 
@@ -14,9 +15,14 @@ The next search item.
 case next
 ```
 
+```c
+NSAccessibilityCustomRotorSearchDirectionNext
+```
+
 ## See Also
 
-- [NSAccessibilityCustomRotor.SearchDirection.previous](nsaccessibilitycustomrotor/searchdirection/previous.md)
+### Constants
+- [NSAccessibilityCustomRotor.SearchDirection.previous](./previous.md)
   The previous search item.
 
 

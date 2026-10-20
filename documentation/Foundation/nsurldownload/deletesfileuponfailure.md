@@ -1,7 +1,8 @@
 # deletesFileUponFailure
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns whether the receiver deletes partially downloaded files when a download stops prematurely.
 
@@ -14,17 +15,22 @@ Returns whether the receiver deletes partially downloaded files when a download 
 var deletesFileUponFailure: Bool { get set }
 ```
 
+```objc
+@property BOOL deletesFileUponFailure;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if partially downloaded files should be deleted when a download stops prematurely, [`false`](https://developer.apple.com/documentation/swift/false) otherwise. The default is [`true`](https://developer.apple.com/documentation/swift/true).
+[`true`](../../Swift/true.md) if partially downloaded files should be deleted when a download stops prematurely, [`false`](../../Swift/false.md) otherwise. The default is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [class func canResumeDownloadDecoded(withEncodingMIMEType: String) -> Bool](nsurldownload/canresumedownloaddecoded(withencodingmimetype:).md)
+### Resuming partial downloads
+- [class func canResumeDownloadDecoded(withEncodingMIMEType: String) -> Bool](./canresumedownloaddecoded%28withencodingmimetype%29.md)
   Returns whether a URL download object can resume a download that was decoded with the specified MIME type.
-- [init(resumeData: Data, delegate: (any NSURLDownloadDelegate)?, path: String)](nsurldownload/init(resumedata:delegate:path:).md)
+- [init(resumeData: Data, delegate: (any NSURLDownloadDelegate)?, path: String)](./init%28resumedata,delegate,path%29.md)
   Returns an initialized NSURLDownload object that will resume downloading the specified data to the specified file and begins the download.
-- [var resumeData: Data?](nsurldownload/resumedata.md)
+- [var resumeData: Data?](./resumedata.md)
   Returns the resume data for a download that is not yet complete.
 
 

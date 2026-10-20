@@ -1,25 +1,27 @@
 # OSStringPtr
 
 **Framework**: DriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef OSString * OSStringPtr;
 ```
 
 ## See Also
 
-- [getCStringNoCopy](osstring/getcstringnocopy.md)
+### Getting a C String
+- [getCStringNoCopy](./osstring/getcstringnocopy.md)
   Returns a pointer to the OSString object’s internal data buffer.
-- [OSStringGetStringPtr](osstringgetstringptr.md)
+- [OSStringGetStringPtr](./osstringgetstringptr.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The view to which the current spring-loaded interaction view style is applied.
@@ -18,13 +19,18 @@ The view to which the current spring-loaded interaction view style is applied.
 var targetView: UIView? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIView * targetView;
+```
+
 ## See Also
 
-- [var state: UISpringLoadedInteractionEffectState](uispringloadedinteractioncontext/state.md)
+### Managing state
+- [var state: UISpringLoadedInteractionEffectState](./state.md)
   The current view style for the spring-loaded interaction.
-- [var targetItem: Any?](uispringloadedinteractioncontext/targetitem.md)
+- [var targetItem: Any?](./targetitem.md)
   The specific subview, or associated model object, of the target view to use for the spring-loaded interaction.
-- [enum UISpringLoadedInteractionEffectState](uispringloadedinteractioneffectstate.md)
+- [enum UISpringLoadedInteractionEffectState](../uispringloadedinteractioneffectstate.md)
   The spring-loaded interaction states that determine the style of the interaction view.
 
 

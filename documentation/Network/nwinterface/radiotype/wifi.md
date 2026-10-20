@@ -1,7 +1,8 @@
 # NWInterface.RadioType.WiFi
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 15.0+
@@ -21,20 +22,20 @@ enum WiFi
 ## Topics
 
 ### Enumeration Cases
-- [NWInterface.RadioType.WiFi.a](nwinterface/radiotype/wifi/a.md)
-- [NWInterface.RadioType.WiFi.ac](nwinterface/radiotype/wifi/ac.md)
-- [NWInterface.RadioType.WiFi.ax](nwinterface/radiotype/wifi/ax.md)
-- [NWInterface.RadioType.WiFi.b](nwinterface/radiotype/wifi/b.md)
-- [NWInterface.RadioType.WiFi.g](nwinterface/radiotype/wifi/g.md)
-- [NWInterface.RadioType.WiFi.n](nwinterface/radiotype/wifi/n.md)
+- [NWInterface.RadioType.WiFi.a](./wifi/a.md)
+- [NWInterface.RadioType.WiFi.ac](./wifi/ac.md)
+- [NWInterface.RadioType.WiFi.ax](./wifi/ax.md)
+- [NWInterface.RadioType.WiFi.b](./wifi/b.md)
+- [NWInterface.RadioType.WiFi.g](./wifi/g.md)
+- [NWInterface.RadioType.WiFi.n](./wifi/n.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

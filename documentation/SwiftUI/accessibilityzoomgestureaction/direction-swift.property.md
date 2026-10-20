@@ -1,7 +1,8 @@
 # direction
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The zoom gesture’s direction.
 
@@ -22,7 +23,8 @@ let direction: AccessibilityZoomGestureAction.Direction
 
 ## See Also
 
-- [AccessibilityZoomGestureAction.Direction](accessibilityzoomgestureaction/direction-swift.enum.md)
+### Getting the action’s direction
+- [AccessibilityZoomGestureAction.Direction](./direction-swift.enum.md)
   A direction that matches the movement of a zoom gesture performed by an assistive technology, such as a swipe up and down in Voiceover’s zoom rotor.
 
 

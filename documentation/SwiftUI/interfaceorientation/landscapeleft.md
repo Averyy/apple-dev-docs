@@ -1,7 +1,8 @@
 # landscapeLeft
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The device is in landscape mode, with the top of the device on the left.
 
@@ -22,11 +23,12 @@ static let landscapeLeft: InterfaceOrientation
 
 ## See Also
 
-- [static let portrait: InterfaceOrientation](interfaceorientation/portrait.md)
+### Getting an orientation
+- [static let portrait: InterfaceOrientation](./portrait.md)
   The device is in portrait mode, with the top of the device on top.
-- [static let portraitUpsideDown: InterfaceOrientation](interfaceorientation/portraitupsidedown.md)
+- [static let portraitUpsideDown: InterfaceOrientation](./portraitupsidedown.md)
   The device is in portrait mode, but is upside down.
-- [static let landscapeRight: InterfaceOrientation](interfaceorientation/landscaperight.md)
+- [static let landscapeRight: InterfaceOrientation](./landscaperight.md)
   The device is in landscape mode, with the top of the device on the right.
 
 

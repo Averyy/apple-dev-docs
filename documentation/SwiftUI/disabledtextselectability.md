@@ -1,7 +1,8 @@
 # DisabledTextSelectability
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A selectability type that disables text selection by the person using your app.
 
@@ -20,16 +21,17 @@ struct DisabledTextSelectability
 
 #### Overview
 
-Don’t use this type directly. Instead, use [`disabled`](textselectability/disabled.md).
+Don’t use this type directly. Instead, use [`disabled`](./textselectability/disabled.md).
 
 ## Relationships
 
 ### Conforms To
-- [TextSelectability](textselectability.md)
+- [TextSelectability](./textselectability.md)
 
 ## See Also
 
-- [struct EnabledTextSelectability](enabledtextselectability.md)
+### Supporting types
+- [struct EnabledTextSelectability](./enabledtextselectability.md)
   A selectability type that enables text selection by the person using your app.
 
 

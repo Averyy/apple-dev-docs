@@ -1,7 +1,8 @@
 # descriptionText
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A short, localized, human-readable string that describes the intent using sentence case and followed by a period.
 
@@ -11,7 +12,7 @@ A short, localized, human-readable string that describes the intent using senten
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

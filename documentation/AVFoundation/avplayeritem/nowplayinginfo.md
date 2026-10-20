@@ -1,7 +1,8 @@
 # nowPlayingInfo
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current now playing information for the player item.
 
@@ -16,6 +17,10 @@ The current now playing information for the player item.
 
 ```swift
 var nowPlayingInfo: [String : Any]? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSDictionary<NSString *,id> * nowPlayingInfo;
 ```
 
 #### Discussion

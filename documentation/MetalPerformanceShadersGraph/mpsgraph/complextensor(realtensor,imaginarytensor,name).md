@@ -1,7 +1,8 @@
 # complexTensor(realTensor:imaginaryTensor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a complex tensor from the two input tensors.
 
@@ -17,6 +18,10 @@ Returns a complex tensor from the two input tensors.
 
 ```swift
 func complexTensor(realTensor: MPSGraphTensor, imaginaryTensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) complexTensorWithRealTensor:(MPSGraphTensor *) realTensor imaginaryTensor:(MPSGraphTensor *) imaginaryTensor name:(NSString *) name;
 ```
 
 #### Return Value

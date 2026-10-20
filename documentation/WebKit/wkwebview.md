@@ -1,7 +1,8 @@
 # WKWebView
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that displays interactive web content, such as for an in-app browser.
 
@@ -19,21 +20,33 @@ An object that displays interactive web content, such as for an in-app browser.
 class WKWebView
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```objc
+@interface WKWebView : UIView
+```
+
+*macOS*
+
+```objc
+@interface WKWebView : NSView
+```
+
 ## Mentions
 
-- [Replacing UIWebView in your app](replacing-uiwebview-in-your-app.md)
+- [Replacing UIWebView in your app](./replacing-uiwebview-in-your-app.md)
 
 #### Overview
 
-A [`WKWebView`](wkwebview.md) object is a platform-native view that you use to incorporate web content seamlessly into your app’s UI. A web view supports a full web-browsing experience, and presents HTML, CSS, and JavaScript content alongside your app’s native views. Use it when web technologies satisfy your app’s layout and styling requirements more readily than native views. For example, you might use it when your app’s content changes frequently.
+A [`WKWebView`](./wkwebview.md) object is a platform-native view that you use to incorporate web content seamlessly into your app’s UI. A web view supports a full web-browsing experience, and presents HTML, CSS, and JavaScript content alongside your app’s native views. Use it when web technologies satisfy your app’s layout and styling requirements more readily than native views. For example, you might use it when your app’s content changes frequently.
 
 A web view offers control over the navigation and user experience through delegate objects. Use the navigation delegate to react when the user clicks links in your web content, or interacts with the content in a way that affects navigation. For example, you might prevent the user from navigating to new content unless specific conditions are met. Use the UI delegate to present native UI elements, such as alerts or contextual menus, in response to interactions with your web content.
 
-> **Note**:  [`WKWebView`](wkwebview.md) replaces the [`UIWebView`](https://developer.apple.com/documentation/uikit/uiwebview) class in iOS 8 and later, and it replaces the [`WebView`](webview-swift.class.md) class in macOS 10.10 and later.
+> **Note**:  [`WKWebView`](./wkwebview.md) replaces the [`UIWebView`](../UIKit/uiwebview.md) class in iOS 8 and later, and it replaces the [`WebView`](./webview-swift.class.md) class in macOS 10.10 and later.
 
-Embed a [`WKWebView`](wkwebview.md) object programmatically into your view hierarchy, or add it using Interface Builder. Interface Builder supports many customizations, such as configuring data detectors, media playback, and interaction behaviors. For more extensive customizations, create your web view programmatically using a [`WKWebViewConfiguration`](wkwebviewconfiguration.md) object. For example, use a web view configuration object to specify handlers for custom URL schemes, manage cookies, and customize preferences for your web content.
+Embed a [`WKWebView`](./wkwebview.md) object programmatically into your view hierarchy, or add it using Interface Builder. Interface Builder supports many customizations, such as configuring data detectors, media playback, and interaction behaviors. For more extensive customizations, create your web view programmatically using a [`WKWebViewConfiguration`](./wkwebviewconfiguration.md) object. For example, use a web view configuration object to specify handlers for custom URL schemes, manage cookies, and customize preferences for your web content.
 
-Before your web view appears onscreen, load content from a web server using a [`URLRequest`](https://developer.apple.com/documentation/foundation/urlrequest) structure or load content directly from a local file or HTML string. The web view automatically loads embedded resources such as images or videos as part of the initial load request. It then renders your content and displays the results inside the view’s bounds rectangle. The following code example shows a view controller that replaces its default view with a custom [`WKWebView`](wkwebview.md) object.
+Before your web view appears onscreen, load content from a web server using a [`URLRequest`](../Foundation/urlrequest.md) structure or load content directly from a local file or HTML string. The web view automatically loads embedded resources such as images or videos as part of the initial load request. It then renders your content and displays the results inside the view’s bounds rectangle. The following code example shows a view controller that replaces its default view with a custom [`WKWebView`](./wkwebview.md) object.
 
 ```swift
 import UIKit
@@ -60,275 +73,276 @@ class ViewController: UIViewController, WKUIDelegate {
 }
 ```
 
-A web view automatically converts telephone numbers that appear in web content to Phone links. When the user taps a Phone link, the Phone app launches and dials the number. Use the [`WKWebViewConfiguration`](wkwebviewconfiguration.md) object to change the default data detector behavior.
+A web view automatically converts telephone numbers that appear in web content to Phone links. When the user taps a Phone link, the Phone app launches and dials the number. Use the [`WKWebViewConfiguration`](./wkwebviewconfiguration.md) object to change the default data detector behavior.
 
-You can also use [`setMagnification(_:centeredAt:)`](wkwebview/setmagnification(_:centeredat:).md) to programmatically set the scale of web content the first time it appears in a web view. Thereafter, the user can change the scale using gestures.
+You can also use [`setMagnification(_:centeredAt:)`](./wkwebview/setmagnification%28_,centeredat%29.md) to programmatically set the scale of web content the first time it appears in a web view. Thereafter, the user can change the scale using gestures.
 
-##### Manage the Navigation Through Your Web Content
+##### Manage the navigation through your web content
 
-[`WKWebView`](wkwebview.md) provides a complete browsing experience, including the ability to navigate between different webpages using links, forward and back buttons, and more. When the user clicks a link in your content, the web view acts like a browser and displays the content at that link. To disallow navigation, or to customize your web view’s navigation behavior, provide your web view with a navigation delegate — an object that conforms to the [`WKNavigationDelegate`](wknavigationdelegate.md) protocol. Use your navigation delegate to modify the web view’s navigation behavior, or to track the loading progress of new content.
+[`WKWebView`](./wkwebview.md) provides a complete browsing experience, including the ability to navigate between different webpages using links, forward and back buttons, and more. When the user clicks a link in your content, the web view acts like a browser and displays the content at that link. To disallow navigation, or to customize your web view’s navigation behavior, provide your web view with a navigation delegate — an object that conforms to the [`WKNavigationDelegate`](./wknavigationdelegate.md) protocol. Use your navigation delegate to modify the web view’s navigation behavior, or to track the loading progress of new content.
 
-You can also use the methods of [`WKWebView`](wkwebview.md) to navigate programmatically through your content, or to trigger navigation from other parts of your app’s interface. For example, if your UI includes forward and back buttons, connect those buttons to the [`goBack(_:)`](wkwebview/goback(_:).md) and [`goForward(_:)`](wkwebview/goforward(_:).md) methods of your web view to trigger the corresponding web navigation. Use the [`canGoBack`](wkwebview/cangoback.md) and [`canGoForward`](wkwebview/cangoforward.md) properties to determine when to enable or disable your buttons.
+You can also use the methods of [`WKWebView`](./wkwebview.md) to navigate programmatically through your content, or to trigger navigation from other parts of your app’s interface. For example, if your UI includes forward and back buttons, connect those buttons to the [`goBack(_:)`](./wkwebview/goback%28_%29.md) and [`goForward(_:)`](./wkwebview/goforward%28_%29.md) methods of your web view to trigger the corresponding web navigation. Use the [`canGoBack`](./wkwebview/cangoback.md) and [`canGoForward`](./wkwebview/cangoforward.md) properties to determine when to enable or disable your buttons.
 
-##### Provide Sharing Options
+##### Provide sharing options
 
-People may want to share the contents of your web view with an app or other people. Use a [`UIActivityViewController`](https://developer.apple.com/documentation/uikit/uiactivityviewcontroller) to present a share sheet offering all the ways people can share the web content.
+People may want to share the contents of your web view with an app or other people. Use a [`UIActivityViewController`](../UIKit/uiactivityviewcontroller.md) to present a share sheet offering all the ways people can share the web content.
 
-If your app has the [`com.apple.developer.web-browser`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.web-browser) entitlement, the iOS share sheet can offer Add to Home Screen for an `http` or `https` webpage, creating a convenient link to a web app or bookmark. To allow someone to add the current webpage to the Home Screen, include the [`WKWebView`](wkwebview.md) instance in the `activityItems` array when you call [`init(activityItems:applicationActivities:)`](https://developer.apple.com/documentation/uikit/uiactivityviewcontroller/init(activityitems:applicationactivities:)) to create the [`UIActivityViewController`](https://developer.apple.com/documentation/uikit/uiactivityviewcontroller). For more information about building a browser app, see [`Preparing your app to be the default web browser`](https://developer.apple.com/documentation/xcode/preparing-your-app-to-be-the-default-browser).
+If your app has the [`com.apple.developer.web-browser`](../BundleResources/entitlements/com.apple.developer.web-browser.md) entitlement, the iOS share sheet can offer Add to Home Screen for an `http` or `https` webpage, creating a convenient link to a web app or bookmark. To allow someone to add the current webpage to the Home Screen, include the [`WKWebView`](./wkwebview.md) instance in the `activityItems` array when you call [`init(activityItems:applicationActivities:)`](../UIKit/uiactivityviewcontroller/init%28activityitems,applicationactivities%29.md) to create the [`UIActivityViewController`](../UIKit/uiactivityviewcontroller.md). For more information about building a browser app, see [Preparing your app to be the default web browser](../Xcode/preparing-your-app-to-be-the-default-browser.md).
 
 ## Topics
 
 ### Creating a web view
-- [init(frame: CGRect, configuration: WKWebViewConfiguration)](wkwebview/init(frame:configuration:).md)
+- [init(frame: CGRect, configuration: WKWebViewConfiguration)](./wkwebview/init%28frame,configuration%29.md)
   Creates a web view and initializes it with the specified frame and configuration data.
-- [init?(coder: NSCoder)](wkwebview/init(coder:).md)
+- [init?(coder: NSCoder)](./wkwebview/init%28coder%29.md)
   Returns an object initialized from data in the specified coder object.
-- [var configuration: WKWebViewConfiguration](wkwebview/configuration.md)
+- [var configuration: WKWebViewConfiguration](./wkwebview/configuration.md)
   The object that contains the configuration details for the web view.
 ### Determining whether WebKit can load content
-- [class func handlesURLScheme(String) -> Bool](wkwebview/handlesurlscheme(_:).md)
+- [class func handlesURLScheme(String) -> Bool](./wkwebview/handlesurlscheme%28_%29.md)
   Returns a Boolean value that indicates whether WebKit natively supports resources with the specified URL scheme.
 ### Displaying native user interface elements
-- [var uiDelegate: (any WKUIDelegate)?](wkwebview/uidelegate.md)
+- [var uiDelegate: (any WKUIDelegate)?](./wkwebview/uidelegate.md)
   The object you use to integrate custom user interface elements, such as contextual menus or panels, into web view interactions.
-- [protocol WKUIDelegate](wkuidelegate.md)
+- [protocol WKUIDelegate](./wkuidelegate.md)
   The methods for presenting native user interface elements on behalf of a webpage.
 ### Managing navigation between webpages
-- [var navigationDelegate: (any WKNavigationDelegate)?](wkwebview/navigationdelegate.md)
+- [var navigationDelegate: (any WKNavigationDelegate)?](./wkwebview/navigationdelegate.md)
   The object you use to manage navigation behavior for the web view.
-- [protocol WKNavigationDelegate](wknavigationdelegate.md)
+- [protocol WKNavigationDelegate](./wknavigationdelegate.md)
   Methods for accepting or rejecting navigation changes, and for tracking the progress of navigation requests.
 ### Loading web content
-- [func load(Data, mimeType: String, characterEncodingName: String, baseURL: URL) -> WKNavigation?](wkwebview/load(_:mimetype:characterencodingname:baseurl:).md)
+- [func load(Data, mimeType: String, characterEncodingName: String, baseURL: URL) -> WKNavigation?](./wkwebview/load%28_,mimetype,characterencodingname,baseurl%29.md)
   Loads the content of the specified data object and navigates to it.
-- [func load(URLRequest) -> WKNavigation?](wkwebview/load(_:)-5siv6.md)
-- [func load(URL) -> WKNavigation?](wkwebview/load(_:)-4xx8m.md)
-- [func loadHTMLString(String, baseURL: URL?) -> WKNavigation?](wkwebview/loadhtmlstring(_:baseurl:).md)
+- [func load(URLRequest) -> WKNavigation?](./wkwebview/load%28_%29-5siv6.md)
+- [func load(URL) -> WKNavigation?](./wkwebview/load%28_%29-4xx8m.md)
+- [func loadHTMLString(String, baseURL: URL?) -> WKNavigation?](./wkwebview/loadhtmlstring%28_,baseurl%29.md)
   Loads the contents of the specified HTML string and navigates to it.
-- [func loadFileRequest(URLRequest, allowingReadAccessTo: URL) -> WKNavigation](wkwebview/loadfilerequest(_:allowingreadaccessto:).md)
+- [func loadFileRequest(URLRequest, allowingReadAccessTo: URL) -> WKNavigation](./wkwebview/loadfilerequest%28_,allowingreadaccessto%29.md)
   Loads the web content from the file the URL request object specifies and navigates to that content.
-- [func loadFileURL(URL, allowingReadAccessTo: URL) -> WKNavigation?](wkwebview/loadfileurl(_:allowingreadaccessto:).md)
+- [func loadFileURL(URL, allowingReadAccessTo: URL) -> WKNavigation?](./wkwebview/loadfileurl%28_,allowingreadaccessto%29.md)
   Loads the web content from the specified file and navigates to it.
-- [func loadSimulatedRequest(URLRequest, response: URLResponse, responseData: Data) -> WKNavigation](wkwebview/loadsimulatedrequest(_:response:responsedata:).md)
+- [func loadSimulatedRequest(URLRequest, response: URLResponse, responseData: Data) -> WKNavigation](./wkwebview/loadsimulatedrequest%28_,response,responsedata%29.md)
   Loads the web content from the data you provide as if the data were the response to the request.
-- [func loadSimulatedRequest(URLRequest, responseHTML: String) -> WKNavigation](wkwebview/loadsimulatedrequest(_:responsehtml:).md)
+- [func loadSimulatedRequest(URLRequest, responseHTML: String) -> WKNavigation](./wkwebview/loadsimulatedrequest%28_,responsehtml%29.md)
   Loads the web content from the HTML you provide as if the HTML were the response to the request.
-- [var isLoading: Bool](wkwebview/isloading.md)
+- [var isLoading: Bool](./wkwebview/isloading.md)
   A Boolean value that indicates whether the view is currently loading content.
-- [var estimatedProgress: Double](wkwebview/estimatedprogress.md)
+- [var estimatedProgress: Double](./wkwebview/estimatedprogress.md)
   An estimate of what fraction of the current navigation has been loaded.
 ### Managing the loading process
-- [func reload() -> WKNavigation?](wkwebview/reload.md)
+- [func reload() -> WKNavigation?](./wkwebview/reload%28%29.md)
   Reloads the current webpage.
-- [func reload(Any?)](wkwebview/reload(_:).md)
+- [func reload(Any?)](./wkwebview/reload%28_%29.md)
   Reloads the current webpage.
-- [func reloadFromOrigin() -> WKNavigation?](wkwebview/reloadfromorigin.md)
+- [func reloadFromOrigin() -> WKNavigation?](./wkwebview/reloadfromorigin%28%29.md)
   Reloads the current webpage, and performs end-to-end revalidation of the content using cache-validating conditionals, if possible.
-- [func reloadFromOrigin(Any?)](wkwebview/reloadfromorigin(_:).md)
+- [func reloadFromOrigin(Any?)](./wkwebview/reloadfromorigin%28_%29.md)
   Reloads the current webpage, and performs end-to-end revalidation of the content using cache-validating conditionals, if possible.
-- [func stopLoading()](wkwebview/stoploading.md)
+- [func stopLoading()](./wkwebview/stoploading%28%29.md)
   Stops loading all resources on the current page.
-- [func stopLoading(Any?)](wkwebview/stoploading(_:).md)
+- [func stopLoading(Any?)](./wkwebview/stoploading%28_%29.md)
   Stops loading all resources on the current page.
 ### Managing downloads
-- [func startDownload(using: URLRequest, completionHandler: (WKDownload) -> Void)](wkwebview/startdownload(using:completionhandler:).md)
+- [func startDownload(using: URLRequest, completionHandler: (WKDownload) -> Void)](./wkwebview/startdownload%28using,completionhandler%29.md)
   Starts to download the resource at the URL in the request.
-- [func resumeDownload(fromResumeData: Data, completionHandler: (WKDownload) -> Void)](wkwebview/resumedownload(fromresumedata:completionhandler:).md)
+- [func resumeDownload(fromResumeData: Data, completionHandler: (WKDownload) -> Void)](./wkwebview/resumedownload%28fromresumedata,completionhandler%29.md)
   Resumes a failed or canceled download.
 ### Making web content inspectable
-- [var isInspectable: Bool](wkwebview/isinspectable.md)
+- [var isInspectable: Bool](./wkwebview/isinspectable.md)
   A Boolean value that indicates whether you can inspect the view with Safari Web Inspector.
 ### Inspecting the view information
-- [var scrollView: UIScrollView](wkwebview/scrollview.md)
+- [var scrollView: UIScrollView](./wkwebview/scrollview.md)
   The scroll view associated with the web view.
-- [var title: String?](wkwebview/title.md)
+- [var title: String?](./wkwebview/title.md)
   The page title.
-- [var url: URL?](wkwebview/url.md)
+- [var url: URL?](./wkwebview/url.md)
   The URL for the current webpage.
-- [var mediaType: String?](wkwebview/mediatype.md)
+- [var mediaType: String?](./wkwebview/mediatype.md)
   The media type for the contents of the web view.
-- [var customUserAgent: String?](wkwebview/customuseragent.md)
+- [var customUserAgent: String?](./wkwebview/customuseragent.md)
   The custom user agent string.
-- [var serverTrust: SecTrust?](wkwebview/servertrust.md)
+- [var serverTrust: SecTrust?](./wkwebview/servertrust.md)
   The trust management object you use to evaluate trust for the current webpage.
-- [var hasOnlySecureContent: Bool](wkwebview/hasonlysecurecontent.md)
+- [var hasOnlySecureContent: Bool](./wkwebview/hasonlysecurecontent.md)
   A Boolean value that indicates whether the web view loaded all resources on the page through securely encrypted connections.
-- [var themeColor: UIColor?](wkwebview/themecolor.md)
+- [var themeColor: UIColor?](./wkwebview/themecolor.md)
   The theme color that the system gets from the first valid meta tag in the webpage.
-- [var underPageBackgroundColor: UIColor!](wkwebview/underpagebackgroundcolor.md)
+- [var underPageBackgroundColor: UIColor!](./wkwebview/underpagebackgroundcolor.md)
   The color the web view displays behind the active page, visible when the user scrolls beyond the bounds of the page.
-- [var refreshController: NSRefreshController?](wkwebview/refreshcontroller.md)
+- [var refreshController: NSRefreshController?](./wkwebview/refreshcontroller.md)
 ### Scaling content
-- [var pageZoom: CGFloat](wkwebview/pagezoom.md)
+- [var pageZoom: CGFloat](./wkwebview/pagezoom.md)
   The scale factor by which the web view scales content relative to its bounds.
-- [var allowsMagnification: Bool](wkwebview/allowsmagnification.md)
+- [var allowsMagnification: Bool](./wkwebview/allowsmagnification.md)
   A Boolean value that indicates whether magnify gestures change the web view’s magnification.
-- [var magnification: CGFloat](wkwebview/magnification.md)
+- [var magnification: CGFloat](./wkwebview/magnification.md)
   The factor by which the page content is currently scaled.
-- [func setMagnification(CGFloat, centeredAt: CGPoint)](wkwebview/setmagnification(_:centeredat:).md)
+- [func setMagnification(CGFloat, centeredAt: CGPoint)](./wkwebview/setmagnification%28_,centeredat%29.md)
   Scales the page content and centers the result on the specified point.
 ### Interacting with media
-- [func pauseAllMediaPlayback(completionHandler: (() -> Void)?)](wkwebview/pauseallmediaplayback(completionhandler:).md)
+- [func pauseAllMediaPlayback(completionHandler: (() -> Void)?)](./wkwebview/pauseallmediaplayback%28completionhandler%29.md)
   Pauses playback of all media in the web view.
-- [func requestMediaPlaybackState(completionHandler: (WKMediaPlaybackState) -> Void)](wkwebview/requestmediaplaybackstate(completionhandler:).md)
+- [func requestMediaPlaybackState(completionHandler: (WKMediaPlaybackState) -> Void)](./wkwebview/requestmediaplaybackstate%28completionhandler%29.md)
   Requests the playback status of media in the web view.
-- [func setAllMediaPlaybackSuspended(Bool, completionHandler: (() -> Void)?)](wkwebview/setallmediaplaybacksuspended(_:completionhandler:).md)
+- [func setAllMediaPlaybackSuspended(Bool, completionHandler: (() -> Void)?)](./wkwebview/setallmediaplaybacksuspended%28_,completionhandler%29.md)
   Changes whether the webpage is suspending playback of all media in the page.
-- [func closeAllMediaPresentations(completionHandler: (() -> Void)?)](wkwebview/closeallmediapresentations(completionhandler:).md)
+- [func closeAllMediaPresentations(completionHandler: (() -> Void)?)](./wkwebview/closeallmediapresentations%28completionhandler%29.md)
   Closes all media the web view is presenting, including picture-in-picture video and fullscreen video.
-- [enum WKMediaPlaybackState](wkmediaplaybackstate.md)
+- [enum WKMediaPlaybackState](./wkmediaplaybackstate.md)
   An enumeration that describes whether an audio or video presentation is playing, paused, or suspended.
 ### Managing the microphone and camera
-- [var cameraCaptureState: WKMediaCaptureState](wkwebview/cameracapturestate.md)
+- [var cameraCaptureState: WKMediaCaptureState](./wkwebview/cameracapturestate.md)
   An enumeration case that indicates whether the webpage is using the camera to capture images or video.
-- [var microphoneCaptureState: WKMediaCaptureState](wkwebview/microphonecapturestate.md)
+- [var microphoneCaptureState: WKMediaCaptureState](./wkwebview/microphonecapturestate.md)
   An enumeration case that indicates whether the webpage is using the microphone to capture audio.
-- [func setCameraCaptureState(WKMediaCaptureState, completionHandler: (() -> Void)?)](wkwebview/setcameracapturestate(_:completionhandler:).md)
+- [func setCameraCaptureState(WKMediaCaptureState, completionHandler: (() -> Void)?)](./wkwebview/setcameracapturestate%28_,completionhandler%29.md)
   Changes whether the webpage is using the camera to capture images or video.
-- [func setMicrophoneCaptureState(WKMediaCaptureState, completionHandler: (() -> Void)?)](wkwebview/setmicrophonecapturestate(_:completionhandler:).md)
+- [func setMicrophoneCaptureState(WKMediaCaptureState, completionHandler: (() -> Void)?)](./wkwebview/setmicrophonecapturestate%28_,completionhandler%29.md)
   Changes whether the webpage is using the microphone to capture audio.
-- [enum WKMediaCaptureState](wkmediacapturestate.md)
+- [enum WKMediaCaptureState](./wkmediacapturestate.md)
   An enumeration that describes whether a media device, like a camera or microphone, is currently capturing audio or video.
 ### Presenting immersive environments
-- [var immersiveEnvironmentDelegate: (any WKImmersiveEnvironmentDelegate)?](wkwebview/immersiveenvironmentdelegate.md)
-- [func dismissImmersiveEnvironment(completionHandler: () -> Void)](wkwebview/dismissimmersiveenvironment(completionhandler:).md)
+- [var immersiveEnvironmentDelegate: (any WKImmersiveEnvironmentDelegate)?](./wkwebview/immersiveenvironmentdelegate.md)
+- [func dismissImmersiveEnvironment(completionHandler: () -> Void)](./wkwebview/dismissimmersiveenvironment%28completionhandler%29.md)
 ### Searching the current page’s content
-- [func find(String, configuration: WKFindConfiguration, completionHandler: (WKFindResult) -> Void)](wkwebview/find(_:configuration:completionhandler:).md)
+- [func find(String, configuration: WKFindConfiguration, completionHandler: (WKFindResult) -> Void)](./wkwebview/find%28_,configuration,completionhandler%29.md)
   Searches for the specified string in the web view’s content.
-- [func find(String, configuration: WKFindConfiguration) async throws -> WKFindResult](wkwebview/find(_:configuration:).md)
+- [func find(String, configuration: WKFindConfiguration) async throws -> WKFindResult](./wkwebview/find%28_,configuration%29.md)
   Searches for the specified string in the web view’s content.
-- [class WKFindConfiguration](wkfindconfiguration.md)
+- [class WKFindConfiguration](./wkfindconfiguration.md)
   The configuration parameters to use when searching the contents of the web view.
-- [class WKFindResult](wkfindresult.md)
+- [class WKFindResult](./wkfindresult.md)
   An object that contains the results of searching the web view’s contents.
 ### Navigating between webpages
-- [var allowsBackForwardNavigationGestures: Bool](wkwebview/allowsbackforwardnavigationgestures.md)
+- [var allowsBackForwardNavigationGestures: Bool](./wkwebview/allowsbackforwardnavigationgestures.md)
   A Boolean value that indicates whether horizontal swipe gestures trigger backward and forward page navigation.
-- [var backForwardList: WKBackForwardList](wkwebview/backforwardlist.md)
+- [var backForwardList: WKBackForwardList](./wkwebview/backforwardlist.md)
   The web view’s back-forward list.
-- [func goBack(Any?)](wkwebview/goback(_:).md)
+- [func goBack(Any?)](./wkwebview/goback%28_%29.md)
   Navigates to the back item in the back-forward list.
-- [func goBack() -> WKNavigation?](wkwebview/goback.md)
+- [func goBack() -> WKNavigation?](./wkwebview/goback%28%29.md)
   Navigates to the back item in the back-forward list.
-- [func goForward(Any?)](wkwebview/goforward(_:).md)
+- [func goForward(Any?)](./wkwebview/goforward%28_%29.md)
   Navigates to the forward item in the back-forward list.
-- [func goForward() -> WKNavigation?](wkwebview/goforward.md)
+- [func goForward() -> WKNavigation?](./wkwebview/goforward%28%29.md)
   Navigates to the forward item in the back-forward list.
-- [func go(to: WKBackForwardListItem) -> WKNavigation?](wkwebview/go(to:).md)
+- [func go(to: WKBackForwardListItem) -> WKNavigation?](./wkwebview/go%28to%29.md)
   Navigates to an item from the back-forward list and sets it as the current item.
-- [var canGoBack: Bool](wkwebview/cangoback.md)
+- [var canGoBack: Bool](./wkwebview/cangoback.md)
   A Boolean value that indicates whether there is a valid back item in the back-forward list.
-- [var canGoForward: Bool](wkwebview/cangoforward.md)
+- [var canGoForward: Bool](./wkwebview/cangoforward.md)
   A Boolean value that indicates whether there is a valid forward item in the back-forward list.
-- [var allowsLinkPreview: Bool](wkwebview/allowslinkpreview.md)
+- [var allowsLinkPreview: Bool](./wkwebview/allowslinkpreview.md)
   A Boolean value that determines whether pressing a link displays a preview of the destination for the link.
-- [var interactionState: Any?](wkwebview/interactionstate.md)
+- [var interactionState: Any?](./wkwebview/interactionstate.md)
   An object you use to capture the current state of interaction in a web view so that you can restore that state later to another web view.
 ### Executing JavaScript
-- [func evaluateJavaScript(String, completionHandler: ((Any?, (any Error)?) -> Void)?)](wkwebview/evaluatejavascript(_:completionhandler:).md)
+- [func evaluateJavaScript(String, completionHandler: ((Any?, (any Error)?) -> Void)?)](./wkwebview/evaluatejavascript%28_,completionhandler%29.md)
   Evaluates the specified JavaScript string.
-- [func evaluateJavaScript(String, in: WKFrameInfo?, in: WKContentWorld, completionHandler: ((Result<Any, any Error>) -> Void)?)](wkwebview/evaluatejavascript(_:in:in:completionhandler:).md)
+- [func evaluateJavaScript(String, in: WKFrameInfo?, in: WKContentWorld, completionHandler: ((Result<Any, any Error>) -> Void)?)](./wkwebview/evaluatejavascript%28_,in,in,completionhandler%29.md)
   Evaluates a JavaScript string in the context of the specified frame and content world.
-- [func evaluateJavaScript(String, in: WKFrameInfo?, contentWorld: WKContentWorld) async throws -> Any?](wkwebview/evaluatejavascript(_:in:contentworld:).md)
+- [func evaluateJavaScript(String, in: WKFrameInfo?, contentWorld: WKContentWorld) async throws -> Any?](./wkwebview/evaluatejavascript%28_,in,contentworld%29.md)
   Evaluates a JavaScript string in the context of the specified frame and content world.
-- [func callAsyncJavaScript(String, arguments: [String : Any], in: WKFrameInfo?, in: WKContentWorld, completionHandler: ((Result<Any, any Error>) -> Void)?)](wkwebview/callasyncjavascript(_:arguments:in:in:completionhandler:).md)
+- [func callAsyncJavaScript(String, arguments: [String : Any], in: WKFrameInfo?, in: WKContentWorld, completionHandler: ((Result<Any, any Error>) -> Void)?)](./wkwebview/callasyncjavascript%28_,arguments,in,in,completionhandler%29.md)
   Executes the specified string as an asynchronous JavaScript function.
-- [func callAsyncJavaScript(String, arguments: [String : Any], in: WKFrameInfo?, contentWorld: WKContentWorld) async throws -> Any?](wkwebview/callasyncjavascript(_:arguments:in:contentworld:).md)
+- [func callAsyncJavaScript(String, arguments: [String : Any], in: WKFrameInfo?, contentWorld: WKContentWorld) async throws -> Any?](./wkwebview/callasyncjavascript%28_,arguments,in,contentworld%29.md)
   Executes the specified string as an asynchronous JavaScript function.
 ### Capturing the web view’s content
-- [func takeSnapshot(with: WKSnapshotConfiguration?, completionHandler: (UIImage?, (any Error)?) -> Void)](wkwebview/takesnapshot(with:completionhandler:).md)
+- [func takeSnapshot(with: WKSnapshotConfiguration?, completionHandler: (UIImage?, (any Error)?) -> Void)](./wkwebview/takesnapshot%28with,completionhandler%29.md)
   Generates a platform-native image from the web view’s contents asynchronously.
-- [func createPDF(configuration: WKPDFConfiguration, completionHandler: (Result<Data, any Error>) -> Void)](wkwebview/createpdf(configuration:completionhandler:).md)
+- [func createPDF(configuration: WKPDFConfiguration, completionHandler: (Result<Data, any Error>) -> Void)](./wkwebview/createpdf%28configuration,completionhandler%29.md)
   Generates PDF data from the web view’s contents asynchronously.
-- [func pdf(configuration: WKPDFConfiguration) async throws -> Data](wkwebview/pdf(configuration:).md)
+- [func pdf(configuration: WKPDFConfiguration) async throws -> Data](./wkwebview/pdf%28configuration%29.md)
   Generates PDF data from the web view’s contents asynchronously.
-- [func createWebArchiveData(completionHandler: (Result<Data, any Error>) -> Void)](wkwebview/createwebarchivedata(completionhandler:).md)
+- [func createWebArchiveData(completionHandler: (Result<Data, any Error>) -> Void)](./wkwebview/createwebarchivedata%28completionhandler%29.md)
   Creates a web archive of the web view’s current contents asynchronously.
-- [func printOperation(with: NSPrintInfo) -> NSPrintOperation](wkwebview/printoperation(with:).md)
+- [func printOperation(with: NSPrintInfo) -> NSPrintOperation](./wkwebview/printoperation%28with%29.md)
   Returns the print operation object to use when printing the contents of the web view.
-- [class WKSnapshotConfiguration](wksnapshotconfiguration.md)
+- [class WKSnapshotConfiguration](./wksnapshotconfiguration.md)
   The configuration data to use when generating an image from a web view’s contents.
-- [class WKPDFConfiguration](wkpdfconfiguration.md)
+- [class WKPDFConfiguration](./wkpdfconfiguration.md)
   The configuration data to use when generating a PDF representation of a web view’s contents.
 ### Supporting Find and Replace
-- [var isFindInteractionEnabled: Bool](wkwebview/isfindinteractionenabled.md)
-- [var findInteraction: UIFindInteraction?](wkwebview/findinteraction.md)
+- [var isFindInteractionEnabled: Bool](./wkwebview/isfindinteractionenabled.md)
+- [var findInteraction: UIFindInteraction?](./wkwebview/findinteraction.md)
 ### Handling full-screen transitions
-- [var fullscreenState: WKWebView.FullscreenState](wkwebview/fullscreenstate-swift.property.md)
-- [WKWebView.FullscreenState](wkwebview/fullscreenstate-swift.enum.md)
+- [var fullscreenState: WKWebView.FullscreenState](./wkwebview/fullscreenstate-swift.property.md)
+- [WKWebView.FullscreenState](./wkwebview/fullscreenstate-swift.enum.md)
 ### Configuring viewport insets
-- [func setMinimumViewportInset(UIEdgeInsets, maximumViewportInset: UIEdgeInsets)](wkwebview/setminimumviewportinset(_:maximumviewportinset:).md)
-- [var minimumViewportInset: UIEdgeInsets](wkwebview/minimumviewportinset.md)
-- [var maximumViewportInset: UIEdgeInsets](wkwebview/maximumviewportinset.md)
-- [var obscuredContentInsets: UIEdgeInsets](wkwebview/obscuredcontentinsets.md)
+- [func setMinimumViewportInset(UIEdgeInsets, maximumViewportInset: UIEdgeInsets)](./wkwebview/setminimumviewportinset%28_,maximumviewportinset%29.md)
+- [var minimumViewportInset: UIEdgeInsets](./wkwebview/minimumviewportinset.md)
+- [var maximumViewportInset: UIEdgeInsets](./wkwebview/maximumviewportinset.md)
+- [var obscuredContentInsets: UIEdgeInsets](./wkwebview/obscuredcontentinsets.md)
 ### Saving and restoring data
-- [func fetchData(of: WKWebViewDataType, completionHandler: (Data?, (any Error)?) -> Void)](wkwebview/fetchdata(of:completionhandler:).md)
-- [func restoreData(Data, completionHandler: ((any Error)?) -> Void)](wkwebview/restoredata(_:completionhandler:).md)
-- [struct WKWebViewDataType](wkwebviewdatatype.md)
+- [func fetchData(of: WKWebViewDataType, completionHandler: (Data?, (any Error)?) -> Void)](./wkwebview/fetchdata%28of,completionhandler%29.md)
+- [func restoreData(Data, completionHandler: ((any Error)?) -> Void)](./wkwebview/restoredata%28_,completionhandler%29.md)
+- [struct WKWebViewDataType](./wkwebviewdatatype.md)
 ### Supporting Writing Tools
-- [var isWritingToolsActive: Bool](wkwebview/iswritingtoolsactive.md)
-- [var conversationContext: UIConversationContext](wkwebview/conversationcontext.md)
+- [var isWritingToolsActive: Bool](./wkwebview/iswritingtoolsactive.md)
+- [var conversationContext: UIConversationContext](./wkwebview/conversationcontext.md)
 ### Supporting Screen Time
-- [var isBlockedByScreenTime: Bool](wkwebview/isblockedbyscreentime.md)
+- [var isBlockedByScreenTime: Bool](./wkwebview/isblockedbyscreentime.md)
 ### Deprecated
-- [Deprecated symbols](wkwebview-deprecated-symbols.md)
+- [Deprecated symbols](./wkwebview-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 
 ## Relationships
 
 ### Inherits From
-- [NSView](../appkit/nsview.md)
-- [UIView](../uikit/uiview.md)
+- [NSView](../AppKit/nsview.md)
+- [UIView](../UIKit/uiview.md)
 ### Conforms To
-- [CALayerDelegate](../quartzcore/calayerdelegate.md)
-- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
-- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
-- [NSAnimatablePropertyContainer](../appkit/nsanimatablepropertycontainer.md)
-- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSDraggingDestination](../appkit/nsdraggingdestination.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
-- [NSTextFinderClient](../appkit/nstextfinderclient.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
-- [NSUserInterfaceValidations](../appkit/nsuserinterfacevalidations.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIAccessibilityIdentification](../uikit/uiaccessibilityidentification.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UIAppearance](../uikit/uiappearance.md)
-- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
-- [UICoordinateSpace](../uikit/uicoordinatespace.md)
-- [UIDynamicItem](../uikit/uidynamicitem.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIFocusItem](../uikit/uifocusitem.md)
-- [UIFocusItemContainer](../uikit/uifocusitemcontainer.md)
-- [UILargeContentViewerItem](../uikit/uilargecontentvieweritem.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIPopoverPresentationControllerSourceItem](../uikit/uipopoverpresentationcontrollersourceitem.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](../uikit/uitraitenvironment.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CALayerDelegate](../QuartzCore/calayerdelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/cmbodyidentifiable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](../AppKit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../AppKit/nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](../AppKit/nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](../AppKit/nsappearancecustomization.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSDraggingDestination](../AppKit/nsdraggingdestination.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
+- [NSTextFinderClient](../AppKit/nstextfinderclient.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../AppKit/nsuserinterfaceitemidentification.md)
+- [NSUserInterfaceValidations](../AppKit/nsuserinterfacevalidations.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIAccessibilityIdentification](../UIKit/uiaccessibilityidentification.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearance](../UIKit/uiappearance.md)
+- [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
+- [UICoordinateSpace](../UIKit/uicoordinatespace.md)
+- [UIDynamicItem](../UIKit/uidynamicitem.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIFocusItem](../UIKit/uifocusitem.md)
+- [UIFocusItemContainer](../UIKit/uifocusitemcontainer.md)
+- [UILargeContentViewerItem](../UIKit/uilargecontentvieweritem.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIPopoverPresentationControllerSourceItem](../UIKit/uipopoverpresentationcontrollersourceitem.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UITraitChangeObservable](../UIKit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../UIKit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [Replacing UIWebView in your app](replacing-uiwebview-in-your-app.md)
+### Web views
+- [Replacing UIWebView in your app](./replacing-uiwebview-in-your-app.md)
   Find a suitable alternative to handle your app’s web content.
-- [Viewing Desktop or Mobile Web Content Using a Web View](viewing-desktop-or-mobile-web-content-using-a-web-view.md)
+- [Viewing Desktop or Mobile Web Content Using a Web View](./viewing-desktop-or-mobile-web-content-using-a-web-view.md)
   Implement a simple iPad web browser that can view either the desktop or mobile version of a website.
-- [protocol WKUIDelegate](wkuidelegate.md)
+- [protocol WKUIDelegate](./wkuidelegate.md)
   The methods for presenting native user interface elements on behalf of a webpage.
 
 

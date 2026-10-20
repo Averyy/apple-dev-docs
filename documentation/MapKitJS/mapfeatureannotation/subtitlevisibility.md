@@ -1,7 +1,8 @@
 # subtitleVisibility
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that determines the subtitle’s visibility.
 
@@ -10,7 +11,7 @@ A value that determines the subtitle’s visibility.
 
 ## Declaration
 
-```swift
+```
 get subtitleVisibility(): FeatureVisibility;
 ```
 

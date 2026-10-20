@@ -1,7 +1,8 @@
 # entities
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of RealityKit entities that this renderer renders within the scene.
 

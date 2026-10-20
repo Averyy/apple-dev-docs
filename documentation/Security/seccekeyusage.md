@@ -1,7 +1,8 @@
 # SecCEKeyUsage
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias SecCEKeyUsage = UInt16
+```
+
+```c
+typedef uint16_t SecCEKeyUsage;
 ```
 
 

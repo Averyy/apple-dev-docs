@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Core Telephony  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string representation of the application category.
 

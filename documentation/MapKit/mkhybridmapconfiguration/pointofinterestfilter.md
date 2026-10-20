@@ -1,7 +1,8 @@
 # pointOfInterestFilter
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The filter the framework uses to determine the points of interest to show on the map.
 
@@ -20,9 +21,14 @@ The filter the framework uses to determine the points of interest to show on the
 var pointOfInterestFilter: MKPointOfInterestFilter? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) MKPointOfInterestFilter * pointOfInterestFilter;
+```
+
 ## See Also
 
-- [var showsTraffic: Bool](mkhybridmapconfiguration/showstraffic.md)
+### Controlling what the map displays
+- [var showsTraffic: Bool](./showstraffic.md)
   A Boolean value that indicates whether the maps shows traffic conditions.
 
 

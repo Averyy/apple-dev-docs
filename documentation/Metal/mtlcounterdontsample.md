@@ -1,17 +1,18 @@
 # MTLCounterDontSample
 
 **Framework**: Metal  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A sentinel value that instructs an encoder to skip sampling a counter as the GPU runs the encoder’s pass.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,13 @@ A sentinel value that instructs an encoder to skip sampling a counter as the GPU
 var MTLCounterDontSample: Int { get }
 ```
 
+```c
+#define MTLCounterDontSample
+```
+
 ## Mentions
 
-- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](./sampling-gpu-data-into-counter-sample-buffers.md)
 
 #### Discussion
 
@@ -29,21 +34,22 @@ You can skip sampling at specific stages by assigning this sentinel value to the
 
 | Types | Properties |
 | --- | --- |
-| [`MTLRenderPassSampleBufferAttachmentDescriptor`](mtlrenderpasssamplebufferattachmentdescriptor.md) | [`startOfVertexSampleIndex`](mtlrenderpasssamplebufferattachmentdescriptor/startofvertexsampleindex.md) ![None](/images/com.apple.metal/spacer.png) [`endOfVertexSampleIndex`](mtlrenderpasssamplebufferattachmentdescriptor/endofvertexsampleindex.md) ![None](/images/com.apple.metal/spacer.png) [`startOfFragmentSampleIndex`](mtlrenderpasssamplebufferattachmentdescriptor/startoffragmentsampleindex.md) ![None](/images/com.apple.metal/spacer.png) [`endOfFragmentSampleIndex`](mtlrenderpasssamplebufferattachmentdescriptor/endoffragmentsampleindex.md) |
-| [`MTLComputePassSampleBufferAttachmentDescriptor`](mtlcomputepasssamplebufferattachmentdescriptor.md) | [`startOfEncoderSampleIndex`](mtlcomputepasssamplebufferattachmentdescriptor/startofencodersampleindex.md) ![None](/images/com.apple.metal/spacer.png) [`endOfEncoderSampleIndex`](mtlcomputepasssamplebufferattachmentdescriptor/endofencodersampleindex.md) |
-| [`MTLBlitPassSampleBufferAttachmentDescriptor`](mtlblitpasssamplebufferattachmentdescriptor.md) | [`startOfEncoderSampleIndex`](mtlblitpasssamplebufferattachmentdescriptor/startofencodersampleindex.md) ![None](/images/com.apple.metal/spacer.png) [`endOfEncoderSampleIndex`](mtlblitpasssamplebufferattachmentdescriptor/endofencodersampleindex.md) |
-| [`MTLResourceStatePassSampleBufferAttachmentDescriptor`](mtlresourcestatepasssamplebufferattachmentdescriptor.md) | [`startOfEncoderSampleIndex`](mtlresourcestatepasssamplebufferattachmentdescriptor/startofencodersampleindex.md) ![None](/images/com.apple.metal/spacer.png) [`endOfEncoderSampleIndex`](mtlresourcestatepasssamplebufferattachmentdescriptor/endofencodersampleindex.md) |
-| [`MTLAccelerationStructurePassSampleBufferAttachmentDescriptor`](mtlaccelerationstructurepasssamplebufferattachmentdescriptor.md) | [`startOfEncoderSampleIndex`](mtlaccelerationstructurepasssamplebufferattachmentdescriptor/startofencodersampleindex.md) ![None](/images/com.apple.metal/spacer.png) [`endOfEncoderSampleIndex`](mtlaccelerationstructurepasssamplebufferattachmentdescriptor/endofencodersampleindex.md) |
+| [`MTLRenderPassSampleBufferAttachmentDescriptor`](./mtlrenderpasssamplebufferattachmentdescriptor.md) | [`startOfVertexSampleIndex`](./mtlrenderpasssamplebufferattachmentdescriptor/startofvertexsampleindex.md) ![](https://developer.apple.com/tutorials/images/com.apple.metal/spacer.png) [`endOfVertexSampleIndex`](./mtlrenderpasssamplebufferattachmentdescriptor/endofvertexsampleindex.md) ![](https://developer.apple.com/tutorials/images/com.apple.metal/spacer.png) [`startOfFragmentSampleIndex`](./mtlrenderpasssamplebufferattachmentdescriptor/startoffragmentsampleindex.md) ![](https://developer.apple.com/tutorials/images/com.apple.metal/spacer.png) [`endOfFragmentSampleIndex`](./mtlrenderpasssamplebufferattachmentdescriptor/endoffragmentsampleindex.md) |
+| [`MTLComputePassSampleBufferAttachmentDescriptor`](./mtlcomputepasssamplebufferattachmentdescriptor.md) | [`startOfEncoderSampleIndex`](./mtlcomputepasssamplebufferattachmentdescriptor/startofencodersampleindex.md) ![](https://developer.apple.com/tutorials/images/com.apple.metal/spacer.png) [`endOfEncoderSampleIndex`](./mtlcomputepasssamplebufferattachmentdescriptor/endofencodersampleindex.md) |
+| [`MTLBlitPassSampleBufferAttachmentDescriptor`](./mtlblitpasssamplebufferattachmentdescriptor.md) | [`startOfEncoderSampleIndex`](./mtlblitpasssamplebufferattachmentdescriptor/startofencodersampleindex.md) ![](https://developer.apple.com/tutorials/images/com.apple.metal/spacer.png) [`endOfEncoderSampleIndex`](./mtlblitpasssamplebufferattachmentdescriptor/endofencodersampleindex.md) |
+| [`MTLResourceStatePassSampleBufferAttachmentDescriptor`](./mtlresourcestatepasssamplebufferattachmentdescriptor.md) | [`startOfEncoderSampleIndex`](./mtlresourcestatepasssamplebufferattachmentdescriptor/startofencodersampleindex.md) ![](https://developer.apple.com/tutorials/images/com.apple.metal/spacer.png) [`endOfEncoderSampleIndex`](./mtlresourcestatepasssamplebufferattachmentdescriptor/endofencodersampleindex.md) |
+| [`MTLAccelerationStructurePassSampleBufferAttachmentDescriptor`](./mtlaccelerationstructurepasssamplebufferattachmentdescriptor.md) | [`startOfEncoderSampleIndex`](./mtlaccelerationstructurepasssamplebufferattachmentdescriptor/startofencodersampleindex.md) ![](https://developer.apple.com/tutorials/images/com.apple.metal/spacer.png) [`endOfEncoderSampleIndex`](./mtlaccelerationstructurepasssamplebufferattachmentdescriptor/endofencodersampleindex.md) |
 
 ## See Also
 
-- [Creating a counter sample buffer to store a GPU’s counter data during a pass](creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)
+### Counter sample buffers
+- [Creating a counter sample buffer to store a GPU’s counter data during a pass](./creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)
   Make a buffer that provides a place for a GPU to save its runtime performance metrics as it runs a pass.
-- [class MTLCounterSampleBufferDescriptor](mtlcountersamplebufferdescriptor.md)
+- [class MTLCounterSampleBufferDescriptor](./mtlcountersamplebufferdescriptor.md)
   A group of properties that configures the counter sample buffers you create with it.
-- [protocol MTLCounterSampleBuffer](mtlcountersamplebuffer.md)
+- [protocol MTLCounterSampleBuffer](./mtlcountersamplebuffer.md)
   A specialized memory buffer that stores a GPU’s counter set data.
-- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](./sampling-gpu-data-into-counter-sample-buffers.md)
   Retrieve a GPU’s counter data at a time the GPU supports.
 
 

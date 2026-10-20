@@ -1,7 +1,8 @@
 # ParametricImmersiveAssetInfo.Error.ErrorType.isAlreadyConverted
 
 **Framework**: Immersive Media Support  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the asset was previously converted to parametric immersive format.
 

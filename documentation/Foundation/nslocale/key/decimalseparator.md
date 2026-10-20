@@ -1,7 +1,8 @@
 # decimalSeparator
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The decimal separator associated with the locale.
 
@@ -20,41 +21,46 @@ The decimal separator associated with the locale.
 static let decimalSeparator: NSLocale.Key
 ```
 
+```c
+extern NSLocaleKey const NSLocaleDecimalSeparator;
+```
+
 #### Discussion
 
 The corresponding value is an `NSString` object; for example, `"."` or `","`.
 
 ## See Also
 
-- [static let identifier: NSLocale.Key](nslocale/key/identifier.md)
+### Keys
+- [static let identifier: NSLocale.Key](./identifier.md)
   The locale identifier.
-- [static let countryCode: NSLocale.Key](nslocale/key/countrycode.md)
+- [static let countryCode: NSLocale.Key](./countrycode.md)
   The locale country or region code.
-- [static let languageCode: NSLocale.Key](nslocale/key/languagecode.md)
+- [static let languageCode: NSLocale.Key](./languagecode.md)
   The locale language code.
-- [static let scriptCode: NSLocale.Key](nslocale/key/scriptcode.md)
+- [static let scriptCode: NSLocale.Key](./scriptcode.md)
   The locale script code.
-- [static let variantCode: NSLocale.Key](nslocale/key/variantcode.md)
+- [static let variantCode: NSLocale.Key](./variantcode.md)
   The locale variant code.
-- [static let exemplarCharacterSet: NSLocale.Key](nslocale/key/exemplarcharacterset.md)
+- [static let exemplarCharacterSet: NSLocale.Key](./exemplarcharacterset.md)
   The exemplar character set for the locale.
-- [static let calendar: NSLocale.Key](nslocale/key/calendar.md)
+- [static let calendar: NSLocale.Key](./calendar.md)
   The calendar associated with the locale.
-- [static let collationIdentifier: NSLocale.Key](nslocale/key/collationidentifier.md)
+- [static let collationIdentifier: NSLocale.Key](./collationidentifier.md)
   The collation associated with the locale.
-- [static let collatorIdentifier: NSLocale.Key](nslocale/key/collatoridentifier.md)
+- [static let collatorIdentifier: NSLocale.Key](./collatoridentifier.md)
   The collation identifier for the locale.
-- [static let usesMetricSystem: NSLocale.Key](nslocale/key/usesmetricsystem.md)
+- [static let usesMetricSystem: NSLocale.Key](./usesmetricsystem.md)
   A flag that indicates whether the locale uses the metric system.
-- [static let measurementSystem: NSLocale.Key](nslocale/key/measurementsystem.md)
+- [static let measurementSystem: NSLocale.Key](./measurementsystem.md)
   The measurement system associated with the locale.
-- [static let groupingSeparator: NSLocale.Key](nslocale/key/groupingseparator.md)
+- [static let groupingSeparator: NSLocale.Key](./groupingseparator.md)
   The numeric grouping separator associated with the locale.
-- [static let currencySymbol: NSLocale.Key](nslocale/key/currencysymbol.md)
+- [static let currencySymbol: NSLocale.Key](./currencysymbol.md)
   The currency symbol associated with the locale.
-- [static let currencyCode: NSLocale.Key](nslocale/key/currencycode.md)
+- [static let currencyCode: NSLocale.Key](./currencycode.md)
   The currency code associated with the locale.
-- [static let quotationEndDelimiterKey: NSLocale.Key](nslocale/key/quotationenddelimiterkey.md)
+- [static let quotationEndDelimiterKey: NSLocale.Key](./quotationenddelimiterkey.md)
   The end quotation symbol associated with the locale.
 
 

@@ -1,7 +1,8 @@
 # utterance
 
 **Framework**: XCUIAutomation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 What VoiceOver spoke for this element, e.g. @“Add Favorites, button”.
 
@@ -19,6 +20,10 @@ What VoiceOver spoke for this element, e.g. @“Add Favorites, button”.
 
 ```swift
 var utterance: String { get }
+```
+
+```objc
+@property (copy, readonly) NSString * utterance;
 ```
 
 

@@ -1,7 +1,8 @@
 # GameCenterLeaderboardSetLocalizationV2
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represents a Game Center leaderboard set localization v2 resource.
 
@@ -10,7 +11,7 @@ The data structure that represents a Game Center leaderboard set localization v2
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardSetLocalizationV2
 ```
 
@@ -25,8 +26,8 @@ object GameCenterLeaderboardSetLocalizationV2
 ## Topics
 
 ### Dictionaries
-- [object GameCenterLeaderboardSetLocalizationV2.Attributes](gamecenterleaderboardsetlocalizationv2/attributes-data.dictionary.md)
-- [object GameCenterLeaderboardSetLocalizationV2.Relationships](gamecenterleaderboardsetlocalizationv2/relationships-data.dictionary.md)
+- [object GameCenterLeaderboardSetLocalizationV2.Attributes](./gamecenterleaderboardsetlocalizationv2/attributes-data.dictionary.md)
+- [object GameCenterLeaderboardSetLocalizationV2.Relationships](./gamecenterleaderboardsetlocalizationv2/relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.
 
 ## Properties
@@ -35,29 +36,30 @@ object GameCenterLeaderboardSetLocalizationV2
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
 - `relationships` (GameCenterLeaderboardSetLocalizationV2.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterLeaderboardSetLocalizations`
 
 ## See Also
 
-- [object GameCenterLeaderboardSetLocalizationV2CreateRequest](gamecenterleaderboardsetlocalizationv2createrequest.md)
+### Objects
+- [object GameCenterLeaderboardSetLocalizationV2CreateRequest](./gamecenterleaderboardsetlocalizationv2createrequest.md)
   The request body you use to create a Game Center leaderboard set localization v2.
-- [object GameCenterLeaderboardSetLocalizationV2Response](gamecenterleaderboardsetlocalizationv2response.md)
+- [object GameCenterLeaderboardSetLocalizationV2Response](./gamecenterleaderboardsetlocalizationv2response.md)
   A response that contains a single Game Center leaderboard set localization v2 resource.
-- [object GameCenterLeaderboardSetLocalizationV2UpdateRequest](gamecenterleaderboardsetlocalizationv2updaterequest.md)
+- [object GameCenterLeaderboardSetLocalizationV2UpdateRequest](./gamecenterleaderboardsetlocalizationv2updaterequest.md)
   The request body you use to update a Game Center leaderboard set localization v2.
-- [object GameCenterLeaderboardSetLocalizationsV2Response](gamecenterleaderboardsetlocalizationsv2response.md)
+- [object GameCenterLeaderboardSetLocalizationsV2Response](./gamecenterleaderboardsetlocalizationsv2response.md)
   A response that contains a single Game Center leaderboard set localization v2 resource.
-- [object GameCenterLeaderboardSetLocalizationV2ImageLinkageResponse](gamecenterleaderboardsetlocalizationv2imagelinkageresponse.md)
+- [object GameCenterLeaderboardSetLocalizationV2ImageLinkageResponse](./gamecenterleaderboardsetlocalizationv2imagelinkageresponse.md)
   A response that contains a single Game Center leaderboard set localization v2 image linkage resource.
-- [object GameCenterLeaderboardSetLocalization](gamecenterleaderboardsetlocalization.md)
+- [object GameCenterLeaderboardSetLocalization](./gamecenterleaderboardsetlocalization.md)
   The data structure that represent a leaderboard set localization.
-- [object GameCenterLeaderboardSetLocalizationCreateRequest](gamecenterleaderboardsetlocalizationcreaterequest.md)
+- [object GameCenterLeaderboardSetLocalizationCreateRequest](./gamecenterleaderboardsetlocalizationcreaterequest.md)
   The request body you use to create a leaderboard set localization.
-- [object GameCenterLeaderboardSetLocalizationResponse](gamecenterleaderboardsetlocalizationresponse.md)
+- [object GameCenterLeaderboardSetLocalizationResponse](./gamecenterleaderboardsetlocalizationresponse.md)
   The response body for endpoints that create, read, or modify a single Game Center leaderboard set localization.
-- [object GameCenterLeaderboardSetLocalizationUpdateRequest](gamecenterleaderboardsetlocalizationupdaterequest.md)
+- [object GameCenterLeaderboardSetLocalizationUpdateRequest](./gamecenterleaderboardsetlocalizationupdaterequest.md)
   The request body you use to update a leaderboard localization.
-- [object GameCenterLeaderboardSetLocalizationsResponse](gamecenterleaderboardsetlocalizationsresponse.md)
+- [object GameCenterLeaderboardSetLocalizationsResponse](./gamecenterleaderboardsetlocalizationsresponse.md)
   The response body for endpoints that list Game Center leaderboard set localizations.
 
 

@@ -1,7 +1,8 @@
 # colorPickerViewControllerDidFinish(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the delegate that the user dismissed the color picker.
 
@@ -17,6 +18,10 @@ Informs the delegate that the user dismissed the color picker.
 optional func colorPickerViewControllerDidFinish(_ viewController: UIColorPickerViewController)
 ```
 
+```objc
+- (void) colorPickerViewControllerDidFinish:(UIColorPickerViewController *) viewController;
+```
+
 #### Discussion
 
 The system calls this method when the user dismisses the color picker.
@@ -29,9 +34,10 @@ You can implement this method to show additional animations alongside the dismis
 
 ## See Also
 
-- [func colorPickerViewController(UIColorPickerViewController, didSelect: UIColor, continuously: Bool)](uicolorpickerviewcontrollerdelegate/colorpickerviewcontroller(_:didselect:continuously:).md)
+### Handling color picker activity
+- [func colorPickerViewController(UIColorPickerViewController, didSelect: UIColor, continuously: Bool)](./colorpickerviewcontroller%28_,didselect,continuously%29.md)
   Informs the delegate when a user selects a color, indicating whether the update is part of a continuous user interaction.
-- [func colorPickerViewControllerDidSelectColor(UIColorPickerViewController)](uicolorpickerviewcontrollerdelegate/colorpickerviewcontrollerdidselectcolor(_:).md)
+- [func colorPickerViewControllerDidSelectColor(UIColorPickerViewController)](./colorpickerviewcontrollerdidselectcolor%28_%29.md)
   Informs the delegate when the user selects a color.
 
 

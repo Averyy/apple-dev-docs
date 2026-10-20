@@ -1,7 +1,8 @@
 # isMuted(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to check if the tab is currently muted.
 
@@ -18,6 +19,10 @@ Called to check if the tab is currently muted.
 optional func isMuted(for context: WKWebExtensionContext) -> Bool
 ```
 
+```objc
+- (BOOL) isMutedForWebExtensionContext:(WKWebExtensionContext *) context;
+```
+
 #### Discussion
 
 Defaults to `NO` if not implemented.
@@ -28,7 +33,8 @@ Defaults to `NO` if not implemented.
 
 ## See Also
 
-- [func setMuted(Bool, for: WKWebExtensionContext, completionHandler: ((any Error)?) -> Void)](wkwebextensiontab/setmuted(_:for:completionhandler:).md)
+### Related Documentation
+- [func setMuted(Bool, for: WKWebExtensionContext, completionHandler: ((any Error)?) -> Void)](./setmuted%28_,for,completionhandler%29.md)
   Called to set the mute state of the tab.
 
 

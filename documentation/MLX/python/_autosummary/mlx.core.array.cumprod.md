@@ -6,34 +6,5 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.cumprod
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.array.cumprod.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.array.cumprod
-
- Table of contents 
-
-## Contents
-
-# mlx.core.array.cumprod
-
-**array.cumprod(*self*, *axis: int | None = None*, ***, *reverse: bool = False*, *inclusive: bool = True*, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
-: See [cumprod()](mlx.core.cumprod.html#mlx.core.cumprod).
-
-** Contents
+**array.cumprod(*self*, *axis: int | None = None*, ***, *reverse: bool = False*, *inclusive: bool = True*, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.md#mlx.core.array)**
+: See [cumprod()](mlx.core.cumprod.md#mlx.core.cumprod).

@@ -1,7 +1,8 @@
 # reportCall(with:updated:)
 
 **Framework**: CallKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reports to the provider that an active call updated its information.
 
@@ -18,6 +19,10 @@ Reports to the provider that an active call updated its information.
 func reportCall(with UUID: UUID, updated update: CXCallUpdate)
 ```
 
+```objc
+- (void) reportCallWithUUID:(NSUUID *) UUID updated:(CXCallUpdate *) update;
+```
+
 ## Parameters
 
 - `UUID`: The unique identifier of the call.
@@ -25,17 +30,18 @@ func reportCall(with UUID: UUID, updated update: CXCallUpdate)
 
 ## See Also
 
-- [func reportNewIncomingCall(with: UUID, update: CXCallUpdate, completion: ((any Error)?) -> Void)](cxprovider/reportnewincomingcall(with:update:completion:).md)
+### Reporting Calls
+- [func reportNewIncomingCall(with: UUID, update: CXCallUpdate, completion: ((any Error)?) -> Void)](./reportnewincomingcall%28with,update,completion%29.md)
   Reports a new incoming call with the specified unique identifier to the provider.
-- [class func reportNewIncomingVoIPPushPayload([AnyHashable : Any], completion: (((any Error)?) -> Void)?)](cxprovider/reportnewincomingvoippushpayload(_:completion:).md)
+- [class func reportNewIncomingVoIPPushPayload([AnyHashable : Any], completion: (((any Error)?) -> Void)?)](./reportnewincomingvoippushpayload%28_,completion%29.md)
   Reports a new incoming call after your notification service extension decrypts a VoIP call request.
-- [com.apple.developer.usernotifications.filtering](../bundleresources/entitlements/com.apple.developer.usernotifications.filtering.md)
+- [com.apple.developer.usernotifications.filtering](../../BundleResources/entitlements/com.apple.developer.usernotifications.filtering.md)
   Enable receiving notifications without displaying the notification to the user.
-- [func reportOutgoingCall(with: UUID, startedConnectingAt: Date?)](cxprovider/reportoutgoingcall(with:startedconnectingat:).md)
+- [func reportOutgoingCall(with: UUID, startedConnectingAt: Date?)](./reportoutgoingcall%28with,startedconnectingat%29.md)
   Reports to the provider that an outgoing call with the specified unique identifier started connecting at a particular time.
-- [func reportOutgoingCall(with: UUID, connectedAt: Date?)](cxprovider/reportoutgoingcall(with:connectedat:).md)
+- [func reportOutgoingCall(with: UUID, connectedAt: Date?)](./reportoutgoingcall%28with,connectedat%29.md)
   Reports to the provider that an outgoing call with the specified unique identifier finished connecting at a particular time.
-- [func reportCall(with: UUID, endedAt: Date?, reason: CXCallEndedReason)](cxprovider/reportcall(with:endedat:reason:).md)
+- [func reportCall(with: UUID, endedAt: Date?, reason: CXCallEndedReason)](./reportcall%28with,endedat,reason%29.md)
   Reports to the provider that a call with the specified identifier ended at a given date for a particular reason.
 
 

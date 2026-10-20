@@ -1,14 +1,15 @@
 # Matter Functions
 
-**Framework**: Matter
+**Framework**: Matter  
+**Role**: API Collection
 
 ## Topics
 
 ### Functions
-- [func MTRAttributeNameForID(MTRClusterIDType, MTRAttributeIDType) -> String!](mtrattributenameforid(_:_:).md)
-- [func MTRClusterNameForID(MTRClusterIDType) -> String!](mtrclusternameforid(_:).md)
-- [func MTRDeviceControllerStorageClasses() -> Set<AnyHashable>](mtrdevicecontrollerstorageclasses().md)
-- [func MTRSetMessageReliabilityParameters(NSNumber?, NSNumber?, NSNumber?, NSNumber?)](mtrsetmessagereliabilityparameters(_:_:_:_:).md)
+- [func MTRAttributeNameForID(MTRClusterIDType, MTRAttributeIDType) -> String!](./mtrattributenameforid%28_,_%29.md)
+- [func MTRClusterNameForID(MTRClusterIDType) -> String!](./mtrclusternameforid%28_%29.md)
+- [func MTRDeviceControllerStorageClasses() -> Set<AnyHashable>](./mtrdevicecontrollerstorageclasses%28%29.md)
+- [func MTRSetMessageReliabilityParameters(NSNumber?, NSNumber?, NSNumber?, NSNumber?)](./mtrsetmessagereliabilityparameters%28_,_,_,_%29.md)
 
 
 ---

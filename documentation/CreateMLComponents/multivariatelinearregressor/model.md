@@ -1,7 +1,8 @@
 # MultivariateLinearRegressor.Model
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A trained multivariate linear regressor model.
 
@@ -20,6 +21,8 @@ A trained multivariate linear regressor model.
 struct Model
 ```
 
+Available when `Scalar` conforms to `MLShapedArrayScalar` and `BinaryFloatingPoint`.
+
 #### Overview
 
 > **Note**: Only `Float` and `Double` are currently supported as the Scalar type.
@@ -27,49 +30,50 @@ struct Model
 ## Topics
 
 ### Creating a regressor model
-- [init(weight: MLShapedArray<Scalar>, bias: MLShapedArray<Scalar>?)](multivariatelinearregressor/model/init(weight:bias:).md)
+- [init(weight: MLShapedArray<Scalar>, bias: MLShapedArray<Scalar>?)](./model/init%28weight,bias%29.md)
   Creates a multivariate linear regressor.
 ### Getting the properties
-- [var inputSize: Int](multivariatelinearregressor/model/inputsize.md)
+- [var inputSize: Int](./model/inputsize.md)
   The input size.
-- [var outputSize: Int](multivariatelinearregressor/model/outputsize.md)
+- [var outputSize: Int](./model/outputsize.md)
   The output size.
-- [var weight: MLShapedArray<Scalar>](multivariatelinearregressor/model/weight.md)
+- [var weight: MLShapedArray<Scalar>](./model/weight.md)
   The linear coefficients.
-- [var bias: MLShapedArray<Scalar>?](multivariatelinearregressor/model/bias.md)
+- [var bias: MLShapedArray<Scalar>?](./model/bias.md)
   The bias coefficients.
 ### Performing the regression
-- [func applied(to: MLShapedArray<Scalar>, eventHandler: EventHandler?) async throws -> MLShapedArray<Scalar>](multivariatelinearregressor/model/applied(to:eventhandler:).md)
+- [func applied(to: MLShapedArray<Scalar>, eventHandler: EventHandler?) async throws -> MLShapedArray<Scalar>](./model/applied%28to,eventhandler%29.md)
   Performs a prediction on a shaped array.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Transformer](transformer.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [Transformer](../transformer.md)
 
 ## See Also
 
-- [protocol Regressor](regressor.md)
+### Regressors
+- [protocol Regressor](../regressor.md)
   A transformer that predicts a float value.
-- [struct LinearRegressor](linearregressor.md)
+- [struct LinearRegressor](../linearregressor.md)
   A linear regressor.
-- [struct LinearRegressorModel](linearregressormodel.md)
+- [struct LinearRegressorModel](../linearregressormodel.md)
   A trained linear regressor model.
-- [struct MultivariateLinearRegressor](multivariatelinearregressor.md)
+- [struct MultivariateLinearRegressor](../multivariatelinearregressor.md)
   A multivariate linear regressor.
-- [struct MultivariateLinearRegressorConfiguration](multivariatelinearregressorconfiguration.md)
+- [struct MultivariateLinearRegressorConfiguration](../multivariatelinearregressorconfiguration.md)
   A linear regressor configuration.
-- [struct FullyConnectedNetworkRegressor](fullyconnectednetworkregressor.md)
+- [struct FullyConnectedNetworkRegressor](../fullyconnectednetworkregressor.md)
   A regressor that uses a fully connected network.
-- [struct FullyConnectedNetworkRegressorModel](fullyconnectednetworkregressormodel.md)
+- [struct FullyConnectedNetworkRegressorModel](../fullyconnectednetworkregressormodel.md)
   A regressor model that uses a fully connected network.
-- [struct BoostedTreeRegressor](boostedtreeregressor.md)
+- [struct BoostedTreeRegressor](../boostedtreeregressor.md)
   A gradient boosted decision tree regressor.
-- [struct TreeRegressorModel](treeregressormodel.md)
+- [struct TreeRegressorModel](../treeregressormodel.md)
   A trained tree regressor model.
-- [enum OptimizationStrategy](optimizationstrategy.md)
+- [enum OptimizationStrategy](../optimizationstrategy.md)
   A linear optimization strategy.
 
 

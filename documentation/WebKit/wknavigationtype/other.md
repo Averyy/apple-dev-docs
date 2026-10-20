@@ -1,7 +1,8 @@
 # WKNavigationType.other
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A navigation request that originates for some other reason.
 
@@ -18,17 +19,22 @@ A navigation request that originates for some other reason.
 case other
 ```
 
+```c
+WKNavigationTypeOther
+```
+
 ## See Also
 
-- [WKNavigationType.linkActivated](wknavigationtype/linkactivated.md)
+### Getting the Navigation Types
+- [WKNavigationType.linkActivated](./linkactivated.md)
   A link activation.
-- [WKNavigationType.formSubmitted](wknavigationtype/formsubmitted.md)
+- [WKNavigationType.formSubmitted](./formsubmitted.md)
   A request to submit a form.
-- [WKNavigationType.backForward](wknavigationtype/backforward.md)
+- [WKNavigationType.backForward](./backforward.md)
   A request for the frame’s next or previous item.
-- [WKNavigationType.reload](wknavigationtype/reload.md)
+- [WKNavigationType.reload](./reload.md)
   A request to reload the webpage.
-- [WKNavigationType.formResubmitted](wknavigationtype/formresubmitted.md)
+- [WKNavigationType.formResubmitted](./formresubmitted.md)
   A request to resubmit a form.
 
 

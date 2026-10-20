@@ -1,7 +1,8 @@
 # objc_copyImageHeaders(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the Mach headers of all the images loaded into the current process that contain Objective-C or Swift code.
 
@@ -16,8 +17,20 @@ Returns the Mach headers of all the images loaded into the current process that 
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```swift
+func objc_copyImageHeaders(_ outCount: UnsafeMutablePointer<UInt32>?) -> UnsafeMutablePointer<OpaquePointer>
+```
+
+*Mac Catalyst, macOS*
+
 ```swift
 func objc_copyImageHeaders(_ outCount: UnsafeMutablePointer<UInt32>?) -> UnsafeMutablePointer<UnsafePointer<mach_header>>
+```
+
+```c
+extern const struct mach_header **objc_copyImageHeaders(unsigned int *outCount);
 ```
 
 #### Return Value

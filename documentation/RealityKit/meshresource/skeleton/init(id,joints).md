@@ -1,7 +1,8 @@
 # init(id:joints:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a skeleton from an array of joints.
 

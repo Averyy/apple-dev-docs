@@ -1,9 +1,10 @@
 # fError
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
-The error code. See [`AEBuildErrorCode`](aebuilderrorcode.md) for alist of errors. 
+The error code. See [`AEBuildErrorCode`](../aebuilderrorcode.md) for alist of errors. 
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,6 +14,10 @@ The error code. See [`AEBuildErrorCode`](aebuilderrorcode.md) for alist of error
 
 ```swift
 var fError: AEBuildErrorCode
+```
+
+```c
+AEBuildErrorCode fError;
 ```
 
 

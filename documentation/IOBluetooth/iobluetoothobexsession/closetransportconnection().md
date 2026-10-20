@@ -1,17 +1,22 @@
 # closeTransportConnection()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 An OBEXSession override. When this is called by the session baseclass, we will close the transport connection if it is opened. In our case, it will be the RFCOMM channel that needs closing.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func closeTransportConnection() -> OBEXError
+```
+
+```objc
+- (OBEXError) closeTransportConnection;
 ```
 
 #### Return Value

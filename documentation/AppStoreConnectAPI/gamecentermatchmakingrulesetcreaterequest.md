@@ -1,7 +1,8 @@
 # GameCenterMatchmakingRuleSetCreateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a rule set.
 
@@ -10,14 +11,14 @@ The request body you use to create a rule set.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingRuleSetCreateRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterMatchmakingRuleSetCreateRequest.Data](gamecentermatchmakingrulesetcreaterequest/data-data.dictionary.md)
+- [object GameCenterMatchmakingRuleSetCreateRequest.Data](./gamecentermatchmakingrulesetcreaterequest/data-data.dictionary.md)
   The data structure of the request body you use to create a rule set.
 
 ## Properties
@@ -26,19 +27,20 @@ object GameCenterMatchmakingRuleSetCreateRequest
 
 ## See Also
 
-- [object GameCenterMatchmakingRuleSetUpdateRequest](gamecentermatchmakingrulesetupdaterequest.md)
+### Objects
+- [object GameCenterMatchmakingRuleSetUpdateRequest](./gamecentermatchmakingrulesetupdaterequest.md)
   The request body you use to modify a rule set.
-- [object GameCenterMatchmakingRuleSetResponse](gamecentermatchmakingrulesetresponse.md)
+- [object GameCenterMatchmakingRuleSetResponse](./gamecentermatchmakingrulesetresponse.md)
   The response body for endpoints that create, modify, or get a single rule.
-- [object GameCenterMatchmakingRuleSetsResponse](gamecentermatchmakingrulesetsresponse.md)
+- [object GameCenterMatchmakingRuleSetsResponse](./gamecentermatchmakingrulesetsresponse.md)
   The response body for endpoints that get multiple rule sets.
-- [object GameCenterMatchmakingRulesResponse](gamecentermatchmakingrulesresponse.md)
+- [object GameCenterMatchmakingRulesResponse](./gamecentermatchmakingrulesresponse.md)
   The response body for endpoints that get multiple rules.
-- [object GameCenterMatchmakingRuleSet](gamecentermatchmakingruleset.md)
+- [object GameCenterMatchmakingRuleSet](./gamecentermatchmakingruleset.md)
   A named collection of matchmaking rules and queues that defines the logic for matching players in a Game Center game.
-- [object GameCenterMatchmakingRuleSetMatchmakingQueuesLinkagesResponse](gamecentermatchmakingrulesetmatchmakingqueueslinkagesresponse.md)
-- [object GameCenterMatchmakingRuleSetRulesLinkagesResponse](gamecentermatchmakingrulesetruleslinkagesresponse.md)
-- [object GameCenterMatchmakingRuleSetTeamsLinkagesResponse](gamecentermatchmakingrulesetteamslinkagesresponse.md)
+- [object GameCenterMatchmakingRuleSetMatchmakingQueuesLinkagesResponse](./gamecentermatchmakingrulesetmatchmakingqueueslinkagesresponse.md)
+- [object GameCenterMatchmakingRuleSetRulesLinkagesResponse](./gamecentermatchmakingrulesetruleslinkagesresponse.md)
+- [object GameCenterMatchmakingRuleSetTeamsLinkagesResponse](./gamecentermatchmakingrulesetteamslinkagesresponse.md)
 
 
 ---

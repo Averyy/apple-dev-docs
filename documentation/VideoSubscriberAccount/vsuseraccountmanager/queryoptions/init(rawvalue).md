@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Video Subscriber Account  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a query option from an integer value you provide.
 

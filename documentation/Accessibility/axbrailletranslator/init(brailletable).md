@@ -1,7 +1,8 @@
 # init(brailleTable:)
 
 **Framework**: Accessibility  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 init(brailleTable: AXBrailleTable)
+```
+
+```objc
+- (instancetype) initWithBrailleTable:(AXBrailleTable *) brailleTable;
 ```
 
 

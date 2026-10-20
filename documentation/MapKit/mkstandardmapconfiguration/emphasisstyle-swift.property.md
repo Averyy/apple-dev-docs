@@ -1,7 +1,8 @@
 # emphasisStyle
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value that indicates how the framework emphasizes map features.
 
@@ -20,13 +21,18 @@ The value that indicates how the framework emphasizes map features.
 var emphasisStyle: MKStandardMapConfiguration.EmphasisStyle { get set }
 ```
 
+```objc
+@property (nonatomic) MKStandardMapEmphasisStyle emphasisStyle;
+```
+
 ## See Also
 
-- [MKStandardMapConfiguration.EmphasisStyle](mkstandardmapconfiguration/emphasisstyle-swift.enum.md)
+### Customizing the map display
+- [MKStandardMapConfiguration.EmphasisStyle](./emphasisstyle-swift.enum.md)
   Values that control how the framework emphasizes map features.
-- [var pointOfInterestFilter: MKPointOfInterestFilter?](mkstandardmapconfiguration/pointofinterestfilter.md)
+- [var pointOfInterestFilter: MKPointOfInterestFilter?](./pointofinterestfilter.md)
   The filter used to determine the points of interest shown on the map.
-- [var showsTraffic: Bool](mkstandardmapconfiguration/showstraffic.md)
+- [var showsTraffic: Bool](./showstraffic.md)
   A Boolean value that controls whether the map displays traffic conditions.
 
 

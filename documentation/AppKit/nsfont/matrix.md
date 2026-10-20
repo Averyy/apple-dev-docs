@@ -1,17 +1,22 @@
 # matrix
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transformation matrix associated with the font.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var matrix: UnsafePointer<CGFloat> { get }
+```
+
+```objc
+@property (readonly) const CGFloat * matrix;
 ```
 
 #### Discussion
@@ -20,11 +25,13 @@ This property contains a standard six-element transformation matrix as used in t
 
 ## See Also
 
-- [init?(descriptor: NSFontDescriptor, size: CGFloat)](nsfont/init(descriptor:size:).md)
+### Related Documentation
+- [init?(descriptor: NSFontDescriptor, size: CGFloat)](./init%28descriptor,size%29.md)
   Returns a font object for the specified font descriptor and font size.
-- [var textTransform: AffineTransform](nsfont/texttransform.md)
+### Getting the Font Matrices
+- [var textTransform: AffineTransform](./texttransform.md)
   The current transformation matrix of the font.
-- [class var identityMatrix: UnsafePointer<CGFloat>](nsfont/identitymatrix.md)
+- [class var identityMatrix: UnsafePointer<CGFloat>](./identitymatrix.md)
   The identify matrix for the font.
 
 

@@ -1,7 +1,8 @@
 # assumingMemoryBound(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a typed buffer to the memory referenced by this buffer slice, assuming that the memory is already bound to the specified type.
 
@@ -19,6 +20,8 @@ Returns a typed buffer to the memory referenced by this buffer slice, assuming t
 ```swift
 func assumingMemoryBound<T>(to type: T.Type) -> UnsafeBufferPointer<T> where T : ~Copyable
 ```
+
+Available when `Base` is `UnsafeRawBufferPointer`.
 
 #### Return Value
 

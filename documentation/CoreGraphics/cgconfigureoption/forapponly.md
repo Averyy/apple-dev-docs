@@ -1,13 +1,14 @@
 # forAppOnly
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Changes persist for the lifetime of the current application. After the application terminates, the display configuration settings revert to the current login session.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,11 +16,16 @@ Changes persist for the lifetime of the current application. After the applicati
 static var forAppOnly: CGConfigureOption { get }
 ```
 
+```c
+kCGConfigureForAppOnly
+```
+
 ## See Also
 
-- [static var forSession: CGConfigureOption](cgconfigureoption/forsession.md)
+### Type Properties
+- [static var forSession: CGConfigureOption](./forsession.md)
   Changes persist for the lifetime of the current login session. After the current session terminates, the displays revert to the last saved permanent configuration.
-- [static var permanently: CGConfigureOption](cgconfigureoption/permanently.md)
+- [static var permanently: CGConfigureOption](./permanently.md)
 
 
 ---

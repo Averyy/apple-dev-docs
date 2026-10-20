@@ -1,7 +1,8 @@
 # matchProtocol
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The protocol that the rule matches.
 
@@ -14,21 +15,26 @@ The protocol that the rule matches.
 var matchProtocol: NENetworkRule.Protocol { get }
 ```
 
+```objc
+@property (readonly) NENetworkRuleProtocol matchProtocol;
+```
+
 ## See Also
 
-- [var matchRemoteEndpoint: NWHostEndpoint?](nenetworkrule/matchremoteendpoint.md)
+### Matching network traffic characteristics
+- [var matchRemoteEndpoint: NWHostEndpoint?](./matchremoteendpoint.md)
   The remote endpoint that the rule matches.
-- [var matchRemotePrefix: Int](nenetworkrule/matchremoteprefix.md)
+- [var matchRemotePrefix: Int](./matchremoteprefix.md)
   A number that specifies the remote sub-network that the rule matches.
-- [var matchLocalNetwork: NWHostEndpoint?](nenetworkrule/matchlocalnetwork.md)
+- [var matchLocalNetwork: NWHostEndpoint?](./matchlocalnetwork.md)
   The local network that the rule matches.
-- [var matchLocalPrefix: Int](nenetworkrule/matchlocalprefix.md)
+- [var matchLocalPrefix: Int](./matchlocalprefix.md)
   A number that specifies the local sub-network that the rule matches.
-- [NENetworkRule.Protocol](nenetworkrule/protocol.md)
+- [NENetworkRule.Protocol](./protocol.md)
   A type to represent network protocols used by routing rules.
-- [var matchDirection: NETrafficDirection](nenetworkrule/matchdirection.md)
+- [var matchDirection: NETrafficDirection](./matchdirection.md)
   The direction of network traffic that the rule matches.
-- [enum NETrafficDirection](netrafficdirection.md)
+- [enum NETrafficDirection](../netrafficdirection.md)
   A type to represent the direction of network traffic.
 
 

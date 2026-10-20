@@ -1,7 +1,8 @@
 # Calendar.RecurrenceRule.End
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 When a recurring event stops recurring.
 
@@ -23,31 +24,31 @@ struct End
 ## Topics
 
 ### Instance Properties
-- [var date: Date?](calendar/recurrencerule/end-swift.struct/date.md)
+- [var date: Date?](./end-swift.struct/date.md)
   The latest date when the event may occur This value is set when the struct was initialized with `.afterDate()`
-- [var occurrences: Int?](calendar/recurrencerule/end-swift.struct/occurrences.md)
+- [var occurrences: Int?](./end-swift.struct/occurrences.md)
   At most many times the event may occur This value is set when the struct was initialized with `.afterOccurrences()`
 ### Type Properties
-- [static var never: Calendar.RecurrenceRule.End](calendar/recurrencerule/end-swift.struct/never.md)
+- [static var never: Calendar.RecurrenceRule.End](./end-swift.struct/never.md)
   The event repeats indefinitely
 ### Type Methods
-- [static func afterDate(Date) -> Calendar.RecurrenceRule.End](calendar/recurrencerule/end-swift.struct/afterdate(_:).md)
+- [static func afterDate(Date) -> Calendar.RecurrenceRule.End](./end-swift.struct/afterdate%28_%29.md)
   The event stops repeating after a given date
-- [static func afterOccurrences(Int) -> Calendar.RecurrenceRule.End](calendar/recurrencerule/end-swift.struct/afteroccurrences(_:).md)
+- [static func afterOccurrences(Int) -> Calendar.RecurrenceRule.End](./end-swift.struct/afteroccurrences%28_%29.md)
   The event stops repeating after a given number of times
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

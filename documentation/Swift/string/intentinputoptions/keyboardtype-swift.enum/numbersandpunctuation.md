@@ -1,7 +1,8 @@
 # String.IntentInputOptions.KeyboardType.numbersAndPunctuation
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A keyboard that displays numbers and punctuation.
 

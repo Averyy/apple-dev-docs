@@ -1,7 +1,8 @@
 # UISceneSession.Role
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that indicate the possible roles for a scene.
 
@@ -18,49 +19,54 @@ Constants that indicate the possible roles for a scene.
 struct Role
 ```
 
+```c
+typedef NSString * UISceneSessionRole;
+```
+
 ## Mentions
 
-- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
+- [Presenting content on a connected display](../presenting-content-on-a-connected-display.md)
 
 ## Topics
 
 ### Determining scene roles
-- [static let windowApplication: UISceneSession.Role](uiscenesession/role-swift.struct/windowapplication.md)
+- [static let windowApplication: UISceneSession.Role](./role-swift.struct/windowapplication.md)
   A scene that displays interactive windows on the device’s built-in display or an externally connected display.
-- [static let windowAssistiveAccessApplication: UISceneSession.Role](uiscenesession/role-swift.struct/windowassistiveaccessapplication.md)
-- [static let windowCameraCaptureAccessory: UISceneSession.Role](uiscenesession/role-swift.struct/windowcameracaptureaccessory.md)
+- [static let windowAssistiveAccessApplication: UISceneSession.Role](./role-swift.struct/windowassistiveaccessapplication.md)
+- [static let windowCameraCaptureAccessory: UISceneSession.Role](./role-swift.struct/windowcameracaptureaccessory.md)
   A session role for scenes that present content during camera capture.
-- [static let windowExternalDisplayNonInteractive: UISceneSession.Role](uiscenesession/role-swift.struct/windowexternaldisplaynoninteractive.md)
+- [static let windowExternalDisplayNonInteractive: UISceneSession.Role](./role-swift.struct/windowexternaldisplaynoninteractive.md)
   A scene that displays noninteractive windows on an externally connected display.
-- [static let carTemplateApplication: UISceneSession.Role](uiscenesession/role-swift.struct/cartemplateapplication.md)
+- [static let carTemplateApplication: UISceneSession.Role](./role-swift.struct/cartemplateapplication.md)
   A scene that displays interactive content on a CarPlay-enabled vehicle screen.
-- [static let CPTemplateApplicationDashboardSceneSessionRoleApplication: UISceneSession.Role](uiscenesession/role-swift.struct/cptemplateapplicationdashboardscenesessionroleapplication.md)
+- [static let CPTemplateApplicationDashboardSceneSessionRoleApplication: UISceneSession.Role](./role-swift.struct/cptemplateapplicationdashboardscenesessionroleapplication.md)
   A scene that displays navigation content on the CarPlay Dashboard.
-- [static let CPTemplateApplicationInstrumentClusterSceneSessionRoleApplication: UISceneSession.Role](uiscenesession/role-swift.struct/cptemplateapplicationinstrumentclusterscenesessionroleapplication.md)
+- [static let CPTemplateApplicationInstrumentClusterSceneSessionRoleApplication: UISceneSession.Role](./role-swift.struct/cptemplateapplicationinstrumentclusterscenesessionroleapplication.md)
   A scene that displays navigation content on the CarPlay Instruments Cluster.
-- [static let windowExternalDisplay: UISceneSession.Role](uiscenesession/role-swift.struct/windowexternaldisplay.md)
+- [static let windowExternalDisplay: UISceneSession.Role](./role-swift.struct/windowexternaldisplay.md)
   A scene that displays noninteractive windows on an externally connected display.
 ### Creating scene roles
-- [init(rawValue: String)](uiscenesession/role-swift.struct/init(rawvalue:).md)
+- [init(rawValue: String)](./role-swift.struct/init%28rawvalue%29.md)
   Creates a scene role with the specified raw value.
 ### Type Properties
-- [static let immersiveSpaceApplication: UISceneSession.Role](uiscenesession/role-swift.struct/immersivespaceapplication.md)
-- [static let windowApplicationVolumetric: UISceneSession.Role](uiscenesession/role-swift.struct/windowapplicationvolumetric.md)
+- [static let immersiveSpaceApplication: UISceneSession.Role](./role-swift.struct/immersivespaceapplication.md)
+- [static let windowApplicationVolumetric: UISceneSession.Role](./role-swift.struct/windowapplicationvolumetric.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var name: String?](uisceneconfiguration/name.md)
+### Getting the configuration attributes
+- [var name: String?](../uisceneconfiguration/name.md)
   The app-specific name assigned to the scene configuration.
-- [var role: UISceneSession.Role](uisceneconfiguration/role.md)
+- [var role: UISceneSession.Role](../uisceneconfiguration/role.md)
   The role assigned to the scene configuration.
 
 

@@ -1,7 +1,8 @@
 # wantsFullScreenLiveView
 
 **Framework**: Playground Support  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 **Availability**:
 - Xcode 10.1+

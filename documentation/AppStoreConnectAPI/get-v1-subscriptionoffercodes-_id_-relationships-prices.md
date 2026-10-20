@@ -1,7 +1,8 @@
 # List price IDs for a subscription offer code
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get a list of price resource IDs for a specific subscription offer code.
 
@@ -14,17 +15,33 @@ Get a list of price resource IDs for a specific subscription offer code.
 
 ## Parameters
 
-- `limit` (integer)
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Query Parameters
+
+- `limit` (integer): **Maximum**: `200`
+
+## Responses
+
+- `200` OK (`SubscriptionOfferCodePricesLinkagesResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create a subscription offer](post-v1-subscriptionoffercodes.md)
+### Creating and Managing Subscription Offers
+- [Create a subscription offer](./post-v1-subscriptionoffercodes.md)
   Create a subscription offer that provides offer codes for an auto-renewable subscription.
-- [Read subscription offer code information](get-v1-subscriptionoffercodes-_id_.md)
+- [Read subscription offer code information](./get-v1-subscriptionoffercodes-_id_.md)
   Get details about a specific subscription offer that has offer codes for an auto-renewable subscription.
-- [Deactivate a subscription offer with offer codes](patch-v1-subscriptionoffercodes-_id_.md)
+- [Deactivate a subscription offer with offer codes](./patch-v1-subscriptionoffercodes-_id_.md)
   Deactivate a subscription offer that has offer codes for an auto-renewable subscription.
-- [List all subscription offer code prices](get-v1-subscriptionoffercodes-_id_-prices.md)
+- [List all subscription offer code prices](./get-v1-subscriptionoffercodes-_id_-prices.md)
   Get a list of price tiers for a subscription offer code.
 
 

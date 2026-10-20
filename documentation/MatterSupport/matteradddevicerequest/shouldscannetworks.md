@@ -1,7 +1,8 @@
 # shouldScanNetworks
 
 **Framework**: MatterSupport  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A flag that indicates whether to receive network scan results.
 
@@ -10,7 +11,7 @@ A flag that indicates whether to receive network scan results.
 - iPadOS 16.4+
 - Mac Catalyst 16.4+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,7 +25,8 @@ The app receives the network scan results, or an empty list if no scan occurred.
 
 ## See Also
 
-- [func perform() async throws](matteradddevicerequest/perform.md)
+### Performing the request
+- [func perform() async throws](./perform%28%29.md)
   Launch the user interface to set up a Matter device in the ecosystem.
 
 

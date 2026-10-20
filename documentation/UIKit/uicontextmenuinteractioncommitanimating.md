@@ -1,7 +1,8 @@
 # UIContextMenuInteractionCommitAnimating
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Methods adopted by system-supplied animator objects when committing preview-related animations.
 
@@ -18,27 +19,32 @@ Methods adopted by system-supplied animator objects when committing preview-rela
 protocol UIContextMenuInteractionCommitAnimating : UIContextMenuInteractionAnimating
 ```
 
+```objc
+@protocol UIContextMenuInteractionCommitAnimating <UIContextMenuInteractionAnimating>
+```
+
 #### Overview
 
-When the user taps in a preview interface to dismiss it, UIKit creates an object that adopts this protocol and passes it to your [`UIContextMenuInteractionDelegate`](uicontextmenuinteractiondelegate.md) method. Use the object to add any custom animations that you want to run alongside the dismissal animations.
+When the user taps in a preview interface to dismiss it, UIKit creates an object that adopts this protocol and passes it to your [`UIContextMenuInteractionDelegate`](./uicontextmenuinteractiondelegate.md) method. Use the object to add any custom animations that you want to run alongside the dismissal animations.
 
 ## Topics
 
 ### Specifying the Commit Style
-- [var preferredCommitStyle: UIContextMenuInteractionCommitStyle](uicontextmenuinteractioncommitanimating/preferredcommitstyle.md)
+- [var preferredCommitStyle: UIContextMenuInteractionCommitStyle](./uicontextmenuinteractioncommitanimating/preferredcommitstyle.md)
   The preferred animation style triggered when the user taps the preview.
-- [enum UIContextMenuInteractionCommitStyle](uicontextmenuinteractioncommitstyle.md)
+- [enum UIContextMenuInteractionCommitStyle](./uicontextmenuinteractioncommitstyle.md)
   Constants that control the interaction commit style.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [UIContextMenuInteractionAnimating](uicontextmenuinteractionanimating.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [UIContextMenuInteractionAnimating](./uicontextmenuinteractionanimating.md)
 
 ## See Also
 
-- [func contextMenuInteraction(UIContextMenuInteraction, willPerformPreviewActionForMenuWith: UIContextMenuConfiguration, animator: any UIContextMenuInteractionCommitAnimating)](uicontextmenuinteractiondelegate/contextmenuinteraction(_:willperformpreviewactionformenuwith:animator:).md)
+### Responding to the menu’s appearance
+- [func contextMenuInteraction(UIContextMenuInteraction, willPerformPreviewActionForMenuWith: UIContextMenuConfiguration, animator: any UIContextMenuInteractionCommitAnimating)](./uicontextmenuinteractiondelegate/contextmenuinteraction%28_,willperformpreviewactionformenuwith,animator%29.md)
   Informs the delegate when a preview action begins.
 
 

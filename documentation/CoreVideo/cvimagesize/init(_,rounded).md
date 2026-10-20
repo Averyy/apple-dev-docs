@@ -1,9 +1,10 @@
 # init(_:rounded:)
 
 **Framework**: Core Video  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Convert `CGSize` to [`CVImageSize`](cvimagesize.md) using the given rounding rule.
+Convert `CGSize` to [`CVImageSize`](../cvimagesize.md) using the given rounding rule.
 
 **Availability**:
 - iOS 26.0+

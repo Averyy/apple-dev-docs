@@ -1,7 +1,8 @@
 # formattedString
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entire transcription of utterances, formatted into a single, user-displayable string.
 
@@ -16,6 +17,10 @@ The entire transcription of utterances, formatted into a single, user-displayabl
 
 ```swift
 var formattedString: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * formattedString;
 ```
 
 

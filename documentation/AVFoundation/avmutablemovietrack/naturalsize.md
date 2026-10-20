@@ -1,7 +1,8 @@
 # naturalSize
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dimensions used to display the visual media data for the track.
 
@@ -19,17 +20,22 @@ The dimensions used to display the visual media data for the track.
 var naturalSize: CGSize { get set }
 ```
 
+```objc
+@property (nonatomic) CGSize naturalSize;
+```
+
 ## See Also
 
-- [var preferredTransform: CGAffineTransform](avmutablemovietrack/preferredtransform.md)
+### Accessing visual characteristics
+- [var preferredTransform: CGAffineTransform](./preferredtransform.md)
   The transform performed on the visual media data of the track for display purposes.
-- [var layer: Int](avmutablemovietrack/layer.md)
+- [var layer: Int](./layer.md)
   The layer level for the visual media of the track.
-- [var cleanApertureDimensions: CGSize](avmutablemovietrack/cleanaperturedimensions.md)
+- [var cleanApertureDimensions: CGSize](./cleanaperturedimensions.md)
   The clean aperture dimension of the track.
-- [var productionApertureDimensions: CGSize](avmutablemovietrack/productionaperturedimensions.md)
+- [var productionApertureDimensions: CGSize](./productionaperturedimensions.md)
   The production aperture dimensions of the track.
-- [var encodedPixelsDimensions: CGSize](avmutablemovietrack/encodedpixelsdimensions.md)
+- [var encodedPixelsDimensions: CGSize](./encodedpixelsdimensions.md)
   The encoded pixels dimensions of the track.
 
 

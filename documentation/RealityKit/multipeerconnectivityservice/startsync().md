@@ -1,7 +1,8 @@
 # startSync()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins multipeer synchronization.
 
@@ -19,11 +20,12 @@ func startSync()
 
 #### Discussion
 
-Call this method to restart multipeer syncing with connected peers after calling [`stopSync()`](multipeerconnectivityservice/stopsync().md). You don’t need to call this method to begin syncing. RealityKit calls this method automatically when you assign a [`MultipeerConnectivityService`](multipeerconnectivityservice.md) to a [`Scene`](scene.md).
+Call this method to restart multipeer syncing with connected peers after calling [`stopSync()`](./stopsync%28%29.md). You don’t need to call this method to begin syncing. RealityKit calls this method automatically when you assign a [`MultipeerConnectivityService`](../multipeerconnectivityservice.md) to a [`Scene`](../scene.md).
 
 ## See Also
 
-- [func stopSync()](multipeerconnectivityservice/stopsync.md)
+### Pausing and resuming
+- [func stopSync()](./stopsync%28%29.md)
   Stops multipeer synchronization.
 
 

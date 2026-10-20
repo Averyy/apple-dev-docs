@@ -1,7 +1,8 @@
 # calendarFormat
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.1+
@@ -16,6 +17,10 @@
 
 ```swift
 static var calendarFormat: MTRTimeFormatLocalizationFeature { get }
+```
+
+```c
+MTRTimeFormatLocalizationFeatureCalendarFormat
 ```
 
 

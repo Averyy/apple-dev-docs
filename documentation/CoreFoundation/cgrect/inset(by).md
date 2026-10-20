@@ -1,14 +1,15 @@
 # inset(by:)
 
 **Framework**: Core Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 - watchOS 2.0+
 
 ## Declaration

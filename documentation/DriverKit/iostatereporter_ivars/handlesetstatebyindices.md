@@ -1,17 +1,18 @@
 # handleSetStateByIndices
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn handleSetStateByIndices(int channel_index, int new_state_index, uint64_t last_intransition, uint64_t prev_state_residency);
 ```
 
@@ -29,10 +30,18 @@ Locking: Caller must ensure that the reporter (data) lock is held.
 
 ## Parameters
 
-- `channel_index`: - 0.., available from getChannelIndex()
-- `new_state_index`: - New state for the channel
-- `last_intransition`: - to remove: time of most recent entry
-- `prev_state_residency`: - to remove: time spent in previous state
+- `channel_index`:
+
+  - 0.., available from getChannelIndex()
+- `new_state_index`:
+
+  - New state for the channel
+- `last_intransition`:
+
+  - to remove: time of most recent entry
+- `prev_state_residency`:
+
+  - to remove: time spent in previous state
 
 
 ---

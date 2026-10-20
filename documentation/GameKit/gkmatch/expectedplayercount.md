@@ -1,7 +1,8 @@
 # expectedPlayerCount
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The remaining number of players invited but not yet connected to the match.
 
@@ -19,9 +20,13 @@ The remaining number of players invited but not yet connected to the match.
 var expectedPlayerCount: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger expectedPlayerCount;
+```
+
 ## Mentions
 
-- [Exchanging data between players in real-time games](exchanging-data-between-players-in-real-time-games.md)
+- [Exchanging data between players in real-time games](../exchanging-data-between-players-in-real-time-games.md)
 
 #### Discussion
 
@@ -29,7 +34,8 @@ GameKit decrements the value of this property when a player connects to the matc
 
 ## See Also
 
-- [var players: [GKPlayer]](gkmatch/players.md)
+### Working with other players
+- [var players: [GKPlayer]](./players.md)
   The players that join the match.
 
 

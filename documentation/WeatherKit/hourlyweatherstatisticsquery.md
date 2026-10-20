@@ -1,7 +1,8 @@
 # HourlyWeatherStatisticsQuery
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that encapsulates a generic hourly weather statistics dataset request.
 
@@ -26,21 +27,21 @@ Use the properties of this structure to create an hourly weather statistics quer
 
 Here’s how to get hourly weather statistics for New York City:
 
-```None
+```
 let (hourlyTemperatureStatistics) = try await service.hourlyStatistics(for: newYork, spanning: timeInterval, including: .temperature)
 ```
 
 ## Topics
 
 ### Type Properties
-- [static var temperature: HourlyWeatherStatisticsQuery<HourTemperatureStatistics>](hourlyweatherstatisticsquery/temperature.md)
+- [static var temperature: HourlyWeatherStatisticsQuery<HourTemperatureStatistics>](./hourlyweatherstatisticsquery/temperature.md)
   The hourly temperature statistics query.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

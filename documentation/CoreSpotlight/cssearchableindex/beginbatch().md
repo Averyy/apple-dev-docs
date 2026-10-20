@@ -1,7 +1,8 @@
 # beginBatch()
 
 **Framework**: Core Spotlight  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins a batch of updates to an index.
 
@@ -18,17 +19,22 @@ Begins a batch of updates to an index.
 func beginBatch()
 ```
 
+```objc
+- (void) beginIndexBatch;
+```
+
 #### Discussion
 
-Don’t call this method again before [`endBatch(withClientState:completionHandler:)`](cssearchableindex/endbatch(withclientstate:completionhandler:).md) has returned. (You can call it again before the completion handler passed to [`endBatch(withClientState:completionHandler:)`](cssearchableindex/endbatch(withclientstate:completionhandler:).md) has been called.)
+Don’t call this method again before [`endBatch(withClientState:completionHandler:)`](./endbatch%28withclientstate,completionhandler%29.md) has returned. (You can call it again before the completion handler passed to [`endBatch(withClientState:completionHandler:)`](./endbatch%28withclientstate,completionhandler%29.md) has been called.)
 
 ## See Also
 
-- [func endBatch(withClientState: Data, completionHandler: (((any Error)?) -> Void)?)](cssearchableindex/endbatch(withclientstate:completionhandler:).md)
+### Batching index updates
+- [func endBatch(withClientState: Data, completionHandler: (((any Error)?) -> Void)?)](./endbatch%28withclientstate,completionhandler%29.md)
   Ends a batch of index updates and stores the specified state information.
-- [func endIndexBatch(expectedClientState: Data?, newClientState: Data, completionHandler: (((any Error)?) -> Void)?)](cssearchableindex/endindexbatch(expectedclientstate:newclientstate:completionhandler:).md)
+- [func endIndexBatch(expectedClientState: Data?, newClientState: Data, completionHandler: (((any Error)?) -> Void)?)](./endindexbatch%28expectedclientstate,newclientstate,completionhandler%29.md)
   Ends a batch of index updates and stores the specified state information.
-- [func fetchLastClientState(completionHandler: (Data?, (any Error)?) -> Void)](cssearchableindex/fetchlastclientstate(completionhandler:).md)
+- [func fetchLastClientState(completionHandler: (Data?, (any Error)?) -> Void)](./fetchlastclientstate%28completionhandler%29.md)
   Fetches the app’s most recent client state information asynchronously.
 
 

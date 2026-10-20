@@ -1,7 +1,8 @@
 # PortalComponent.ClippingPlane
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A representation of a portal as an infinite plane.
 
@@ -21,17 +22,17 @@ struct ClippingPlane
 
 #### Overview
 
-Use this type with [`init(target:clippingPlane:)`](portalcomponent/init(target:clippingplane:).md) to initialize a portal component with the clipping feature in an enabled state.
+Use this type with [`init(target:clippingPlane:)`](./init%28target,clippingplane%29.md) to initialize a portal component with the clipping feature in an enabled state.
 
 ## Topics
 
 ### Initializers
-- [init(position: SIMD3<Float>, normal: SIMD3<Float>)](portalcomponent/clippingplane-swift.struct/init(position:normal:).md)
+- [init(position: SIMD3<Float>, normal: SIMD3<Float>)](./clippingplane-swift.struct/init%28position,normal%29.md)
   Creates a clipping plane at a position and normal direction.
 ### Instance Properties
-- [var normal: SIMD3<Float>](portalcomponent/clippingplane-swift.struct/normal.md)
+- [var normal: SIMD3<Float>](./clippingplane-swift.struct/normal.md)
   The normal of the clipping plane.
-- [var position: SIMD3<Float>](portalcomponent/clippingplane-swift.struct/position.md)
+- [var position: SIMD3<Float>](./clippingplane-swift.struct/position.md)
   The position of the clipping plane.
 
 

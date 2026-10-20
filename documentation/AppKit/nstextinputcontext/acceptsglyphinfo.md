@@ -1,7 +1,8 @@
 # acceptsGlyphInfo
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the client handles `NSGlyphInfoAttributeName` or not.
 
@@ -14,13 +15,18 @@ A Boolean value that indicates whether the client handles `NSGlyphInfoAttributeN
 var acceptsGlyphInfo: Bool { get set }
 ```
 
+```objc
+@property BOOL acceptsGlyphInfo;
+```
+
 #### Discussion
 
 The default value is determined by examining the return value from sending a `validAttributesForMarkedText` message to the client at initialization.
 
 ## See Also
 
-- [var allowedInputSourceLocales: [String]?](nstextinputcontext/allowedinputsourcelocales.md)
+### Configuring the Input Context
+- [var allowedInputSourceLocales: [String]?](./allowedinputsourcelocales.md)
   The set of keyboard input source locales allowed when this input context is active.
 
 

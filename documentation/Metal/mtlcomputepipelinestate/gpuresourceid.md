@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An unique identifier that represents the pipeline state, which you can add to an argument buffer.
@@ -20,15 +21,20 @@ An unique identifier that represents the pipeline state, which you can add to an
 var gpuResourceID: MTLResourceID { get }
 ```
 
+```objc
+@property (readonly) MTLResourceID gpuResourceID;
+```
+
 ## Mentions
 
-- [Improving CPU performance by using argument buffers](improving-cpu-performance-by-using-argument-buffers.md)
+- [Improving CPU performance by using argument buffers](../improving-cpu-performance-by-using-argument-buffers.md)
 
 ## See Also
 
-- [var device: any MTLDevice](mtlcomputepipelinestate/device.md)
+### Identifying a pipeline state
+- [var device: any MTLDevice](./device.md)
   The device instance that created the pipeline state.
-- [var label: String?](mtlcomputepipelinestate/label.md)
+- [var label: String?](./label.md)
   A string that helps you identify the compute pipeline state during debugging.
 
 

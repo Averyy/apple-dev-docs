@@ -1,7 +1,8 @@
 # CSSM_FEE_CURVE_TYPE_MONTGOMERY
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_FEE_CURVE_TYPE_MONTGOMERY: Int { get }
+```
+
+```c
+CSSM_FEE_CURVE_TYPE_MONTGOMERY
 ```
 
 

@@ -1,7 +1,8 @@
 # getSamplePositions()
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the programmable sample positions set for a render pass.
 
@@ -11,7 +12,7 @@ Returns the programmable sample positions set for a render pass.
 - Mac Catalyst 11.0+
 - macOS 10.13+
 - tvOS 11.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,9 +26,10 @@ An array of programmable sample positions.
 
 ## See Also
 
-- [func MTLSamplePositionMake(Float, Float) -> MTLSamplePosition](mtlsamplepositionmake(_:_:).md)
+### Using programmable sample positions
+- [func MTLSamplePositionMake(Float, Float) -> MTLSamplePosition](../mtlsamplepositionmake%28_,_%29.md)
   Returns a new sample position on a subpixel grid.
-- [func setSamplePositions([MTLSamplePosition])](mtlrenderpassdescriptor/setsamplepositions(_:).md)
+- [func setSamplePositions([MTLSamplePosition])](./setsamplepositions%28_%29.md)
   Sets the programmable sample positions for a render pass.
 
 

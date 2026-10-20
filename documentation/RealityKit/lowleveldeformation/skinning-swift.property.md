@@ -1,7 +1,8 @@
 # skinning
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The skinning data accessors for this deformation.
 
@@ -19,8 +20,9 @@ final var skinning: LowLevelDeformation.Skinning { get }
 
 ## See Also
 
-- [LowLevelDeformation.Skinning](lowleveldeformation/skinning-swift.struct.md)
-  An accessor for the skinning buffers of a [`LowLevelDeformation`](lowleveldeformation.md).
+### Configuring deformation stages
+- [LowLevelDeformation.Skinning](./skinning-swift.struct.md)
+  An accessor for the skinning buffers of a [`LowLevelDeformation`](../lowleveldeformation.md).
 
 
 ---

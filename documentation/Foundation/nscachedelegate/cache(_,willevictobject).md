@@ -1,7 +1,8 @@
 # cache(_:willEvictObject:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when an object is about to be evicted or removed from the cache.
 
@@ -18,6 +19,10 @@ Called when an object is about to be evicted or removed from the cache.
 
 ```swift
 optional func cache(_ cache: NSCache<AnyObject, AnyObject>, willEvictObject obj: Any)
+```
+
+```objc
+- (void) cache:(NSCache *) cache willEvictObject:(id) obj;
 ```
 
 #### Discussion

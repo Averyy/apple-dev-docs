@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Metadata pertinent to this attachment.
 

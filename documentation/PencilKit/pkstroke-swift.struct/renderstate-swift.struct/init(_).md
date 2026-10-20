@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a `RenderState` from its Objective-C counterpart `PKStrokeRenderStateReference`.
 

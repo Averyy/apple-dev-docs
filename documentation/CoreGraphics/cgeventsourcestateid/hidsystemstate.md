@@ -1,13 +1,14 @@
 # CGEventSourceStateID.hidSystemState
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that an event source should use the event state table that reflects the combined state of all hardware event sources posting from the HID system.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,11 +16,16 @@ Specifies that an event source should use the event state table that reflects th
 case hidSystemState
 ```
 
+```c
+kCGEventSourceStateHIDSystemState
+```
+
 ## See Also
 
-- [CGEventSourceStateID.privateState](cgeventsourcestateid/privatestate.md)
+### Constants
+- [CGEventSourceStateID.privateState](./privatestate.md)
   Specifies that an event source should use a private event state table.
-- [CGEventSourceStateID.combinedSessionState](cgeventsourcestateid/combinedsessionstate.md)
+- [CGEventSourceStateID.combinedSessionState](./combinedsessionstate.md)
   Specifies that an event source should use the event state table that reflects the combined state of all event sources posting to the current user login session.
 
 

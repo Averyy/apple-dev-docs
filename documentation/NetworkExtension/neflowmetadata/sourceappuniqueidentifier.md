@@ -1,7 +1,8 @@
 # sourceAppUniqueIdentifier
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A data instance that contains a unique hash value for the source application.
 
@@ -18,6 +19,10 @@ A data instance that contains a unique hash value for the source application.
 var sourceAppUniqueIdentifier: Data { get }
 ```
 
+```objc
+@property (readonly) NSData * sourceAppUniqueIdentifier;
+```
+
 #### Discussion
 
 The property contains the Code Directory Hash for the application.
@@ -26,9 +31,10 @@ The property contains the Code Directory Hash for the application.
 
 ## See Also
 
-- [var sourceAppSigningIdentifier: String](neflowmetadata/sourceappsigningidentifier.md)
+### Getting source app information
+- [var sourceAppSigningIdentifier: String](./sourceappsigningidentifier.md)
   A string that contains the signing identifier of the source application.
-- [var sourceAppAuditToken: Data?](neflowmetadata/sourceappaudittoken.md)
+- [var sourceAppAuditToken: Data?](./sourceappaudittoken.md)
   The audit token of the source application of the flow.
 
 

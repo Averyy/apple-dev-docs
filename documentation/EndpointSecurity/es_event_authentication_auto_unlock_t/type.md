@@ -1,16 +1,21 @@
 # type
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var type: es_auto_unlock_type_t
+```
+
+```c
+es_auto_unlock_type_t type;
 ```
 
 

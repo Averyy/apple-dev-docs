@@ -1,7 +1,8 @@
 # init(_:_:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a `Switch` statement that branches based on union value parameter cases.
 
@@ -19,6 +20,8 @@ Creates a `Switch` statement that branches based on union value parameter cases.
 ```swift
 init(_ keyPath: KeyPath<Intent, IntentParameter<Value>>, @ParameterSummaryCaseBuilder<Intent, Value.ValueType.Cases> _ builder: () -> CaseCondition) where Value : Sendable, Value.ValueType : AppUnionValue
 ```
+
+Available when `Intent` conforms to `AppIntent`, `Value` conforms to `_IntentValue`, and `CaseCondition` conforms to `_ParameterSummarySwitchCase`.
 
 ## Parameters
 

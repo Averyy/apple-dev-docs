@@ -1,7 +1,8 @@
 # smoothness
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A smoothing factor that applies to the force, reducing randomness.
 

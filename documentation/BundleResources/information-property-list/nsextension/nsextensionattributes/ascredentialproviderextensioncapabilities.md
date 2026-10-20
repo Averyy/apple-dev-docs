@@ -1,7 +1,8 @@
 # ASCredentialProviderExtensionCapabilities
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 The credential types supported by a credential provider extension, and whether it presents a user interface.
 
@@ -11,26 +12,27 @@ The credential types supported by a credential provider extension, and whether i
 - Mac Catalyst 17.0+
 - macOS 14.0+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `ASCredentialProviderExtensionCapabilities`
+- **Type**: dictionary
 
 ## Topics
 
 ### Providing credentials
-- [ProvidesPasskeys](information-property-list/nsextension/nsextensionattributes/ascredentialproviderextensioncapabilities/providespasskeys.md)
+- [ProvidesPasskeys](./ascredentialproviderextensioncapabilities/providespasskeys.md)
   A Boolean value that indicates whether your credential provider extension provides passkeys.
-- [SupportsConditionalPasskeyRegistration](information-property-list/supportsconditionalpasskeyregistration.md)
+- [SupportsConditionalPasskeyRegistration](../../supportsconditionalpasskeyregistration.md)
   Indicates that the credential provider supports automatic passkey upgrades.
-- [ProvidesPasswords](information-property-list/nsextension/nsextensionattributes/ascredentialproviderextensioncapabilities/providespasswords.md)
+- [ProvidesPasswords](./ascredentialproviderextensioncapabilities/providespasswords.md)
   A Boolean value that indicates whether your credential provider extension provides passwords.
-- [ProvidesOneTimeCodes](information-property-list/providesonetimecodes.md)
+- [ProvidesOneTimeCodes](../../providesonetimecodes.md)
   Allows this credential provider to show up in one-time-code text fields, to allowing filling time-based verification codes.
 ### Providing text to AutoFill
-- [ProvidesTextToInsert](information-property-list/providestexttoinsert.md)
+- [ProvidesTextToInsert](../../providestexttoinsert.md)
   Allows this credential provider to show up in the system AutoFill context menu, so that it can fill text in any text field.
 ### Configuring credential providers
-- [ShowsConfigurationUI](information-property-list/nsextension/nsextensionattributes/ascredentialproviderextensioncapabilities/showsconfigurationui.md)
+- [ShowsConfigurationUI](./ascredentialproviderextensioncapabilities/showsconfigurationui.md)
   A Boolean value that indicates whether your extension presents a user interface when someone enables it in Passwords settings.
 
 

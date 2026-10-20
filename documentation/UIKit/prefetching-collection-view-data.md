@@ -1,6 +1,8 @@
 # Prefetching collection view data
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Sample Code  
+**Download**: [PrefetchingCollectionViewData.zip](https://docs-assets.developer.apple.com/published/c211f0af552e/PrefetchingCollectionViewData.zip)
 
 Load data for collection view cells before they display.
 
@@ -12,23 +14,23 @@ Load data for collection view cells before they display.
 
 #### Overview
 
-A collection view displays an ordered collection of cells in customizable layouts. The [`UICollectionViewDataSourcePrefetching`](uicollectionviewdatasourceprefetching.md) protocol helps provide a smoother user experience by prefetching the data necessary for upcoming collection view cells. When you enable prefetching, the collection view requests the data before it needs to display the cell. When it’s time to display the cell, the data is already locally cached.
+A collection view displays an ordered collection of cells in customizable layouts. The [`UICollectionViewDataSourcePrefetching`](./uicollectionviewdatasourceprefetching.md) protocol helps provide a smoother user experience by prefetching the data necessary for upcoming collection view cells. When you enable prefetching, the collection view requests the data before it needs to display the cell. When it’s time to display the cell, the data is already locally cached.
 
 The image below shows cells outside the bounds of the collection view that have been prefetched:
 
-![An image that shows a collection view implementation. The collection view has a white background, and two columns of cells that each have a red background. A callout that says Displayed UICollectionView highlights the first three rows of cells. Below that, another callout that says Prefetched collection view cells highlights the last full row of cells and a partial row of cells.](/images/com.apple.uikit/prefetching-screenshot.png)
+![An image that shows a collection view implementation. The collection view has a white background, and two columns of cells that each have a red background. A callout that says Displayed UICollectionView highlights the first three rows of cells. Below that, another callout that says Prefetched collection view cells highlights the last full row of cells and a partial row of cells.](https://developer.apple.com/tutorials/images/com.apple.uikit/prefetching-screenshot.png)
 
 > **Note**: The storyboard in this project contains a collection view controller with a collection view that has Clips To Bounds disabled. With this configuration, you can visualize the cells before they display.
 
-##### Enable Prefetching
+##### Enable prefetching
 
-The root view controller uses an instance of the `CustomDataSource` class to provide data to its [`UICollectionView`](uicollectionview.md) instance. The `CustomDataSource` class implements the `UICollectionViewDataSourcePrefetching` protocol to begin fetching the data required to populate cells.
+The root view controller uses an instance of the `CustomDataSource` class to provide data to its [`UICollectionView`](./uicollectionview.md) instance. The `CustomDataSource` class implements the `UICollectionViewDataSourcePrefetching` protocol to begin fetching the data required to populate cells.
 
 ```swift
 class CustomDataSource: NSObject, UICollectionViewDataSource, UICollectionViewDataSourcePrefetching {
 ```
 
-In addition to assigning the `CustomDataSource` instance to the collection view’s [`dataSource`](uicollectionview/datasource.md) property, the sample code project also assigns it to the [`prefetchDataSource`](uicollectionview/prefetchdatasource.md) property.
+In addition to assigning the `CustomDataSource` instance to the collection view’s [`dataSource`](./uicollectionview/datasource.md) property, the sample code project also assigns it to the [`prefetchDataSource`](./uicollectionview/prefetchdatasource.md) property.
 
 ```swift
 // Set the collection view's data source.
@@ -38,11 +40,11 @@ collectionView.dataSource = dataSource
 collectionView.prefetchDataSource = dataSource
 ```
 
-##### Load Data Asynchronously
+##### Load data asynchronously
 
 Prefetching data is a tool to use when loading data is a slow or expensive process — for example, when fetching data over the network. In these circumstances, it’s best to perform data loading asynchronously. In this sample, the `AsyncFetcher` class fetches data asynchronously, simulating a network request.
 
-First, the sample implements the [`UICollectionViewDataSourcePrefetching`](uicollectionviewdatasourceprefetching.md) prefetch method, invoking the appropriate method on the asynchronous fetcher.
+First, the sample implements the [`UICollectionViewDataSourcePrefetching`](./uicollectionviewdatasourceprefetching.md) prefetch method, invoking the appropriate method on the asynchronous fetcher.
 
 ```swift
 func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
@@ -54,7 +56,7 @@ func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPat
 }
 ```
 
-> **Note**: Developers can create their own version of `AsyncFetcher` to fit their requirements. The implementation in this sample makes heavy use of [`Operation`](https://developer.apple.com/documentation/foundation/operation) and [`OperationQueue`](https://developer.apple.com/documentation/foundation/operationqueue), leveraging their ability to handle thread safety and cancellation. Developers might consider a similar approach.
+> **Note**: Developers can create their own version of `AsyncFetcher` to fit their requirements. The implementation in this sample makes heavy use of [`Operation`](../Foundation/operation.md) and [`OperationQueue`](../Foundation/operationqueue.md), leveraging their ability to handle thread safety and cancellation. Developers might consider a similar approach.
 
 When prefetching is complete, the sample adds the cell’s data to the `AsyncFetcher`‘s cache, so it’s ready to use when the cell displays. The cell’s background color changes from white to red when data is available for that cell.
 
@@ -72,7 +74,7 @@ func configure(with data: DisplayData?) {
 }
 ```
 
-##### Populate Cells for Display
+##### Populate cells for display
 
 Before populating a cell, the `CustomDataSource` checks for any prefetched data that it can use. If none is available, the `CustomDataSource` makes a fetch request and the cell updates in the fetch request’s completion handler.
 
@@ -113,9 +115,9 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
 }
 ```
 
-##### Cancel Unnecessary Fetches
+##### Cancel unnecessary fetches
 
-The sample implements the [`collectionView(_:cancelPrefetchingForItemsAt:)`](uicollectionviewdatasourceprefetching/collectionview(_:cancelprefetchingforitemsat:).md) delegate method to cancel any in-progress data fetches that are no longer required.
+The sample implements the [`collectionView(_:cancelPrefetchingForItemsAt:)`](./uicollectionviewdatasourceprefetching/collectionview%28_,cancelprefetchingforitemsat%29.md) delegate method to cancel any in-progress data fetches that are no longer required.
 
 ```swift
 func collectionView(_ collectionView: UICollectionView, cancelPrefetchingForItemsAt indexPaths: [IndexPath]) {
@@ -129,9 +131,10 @@ func collectionView(_ collectionView: UICollectionView, cancelPrefetchingForItem
 
 ## See Also
 
-- [func collectionView(UICollectionView, prefetchItemsAt: [IndexPath])](uicollectionviewdatasourceprefetching/collectionview(_:prefetchitemsat:).md)
+### Managing data prefetching
+- [func collectionView(UICollectionView, prefetchItemsAt: [IndexPath])](./uicollectionviewdatasourceprefetching/collectionview%28_,prefetchitemsat%29.md)
   Tells your prefetch data source object to begin preparing data for the cells at the supplied index paths.
-- [func collectionView(UICollectionView, cancelPrefetchingForItemsAt: [IndexPath])](uicollectionviewdatasourceprefetching/collectionview(_:cancelprefetchingforitemsat:).md)
+- [func collectionView(UICollectionView, cancelPrefetchingForItemsAt: [IndexPath])](./uicollectionviewdatasourceprefetching/collectionview%28_,cancelprefetchingforitemsat%29.md)
   Cancels a previously triggered data prefetch request.
 
 

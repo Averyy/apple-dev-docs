@@ -1,7 +1,8 @@
 # sphericalHarmonicsLevel
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of levels of generated spherical harmonics information.
 
@@ -19,15 +20,20 @@ The number of levels of generated spherical harmonics information.
 var sphericalHarmonicsLevel: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger sphericalHarmonicsLevel;
+```
+
 #### Discussion
 
-Each level of spherical harmonics contains more coefficients, and thus affects the layout of the data containing those coefficients. For details, see the [`sphericalHarmonicsCoefficients`](mdlphotometriclight/sphericalharmonicscoefficients.md) property.
+Each level of spherical harmonics contains more coefficients, and thus affects the layout of the data containing those coefficients. For details, see the [`sphericalHarmonicsCoefficients`](./sphericalharmonicscoefficients.md) property.
 
 ## See Also
 
-- [func generateSphericalHarmonics(fromLight: Int)](mdlphotometriclight/generatesphericalharmonics(fromlight:).md)
+### Interpreting the Light Web as Spherical Harmonics
+- [func generateSphericalHarmonics(fromLight: Int)](./generatesphericalharmonics%28fromlight%29.md)
   Generates spherical harmonics information based on the light’s photometry data.
-- [var sphericalHarmonicsCoefficients: Data?](mdlphotometriclight/sphericalharmonicscoefficients.md)
+- [var sphericalHarmonicsCoefficients: Data?](./sphericalharmonicscoefficients.md)
   Data containing spherical harmonics coefficients that describe the light’s intensity in all directions.
 
 

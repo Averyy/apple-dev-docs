@@ -1,17 +1,18 @@
 # EKAlarmProximity.none
 
 **Framework**: EventKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The alarm has no proximity trigger.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ The alarm has no proximity trigger.
 case none
 ```
 
+```c
+EKAlarmProximityNone
+```
+
 ## See Also
 
-- [EKAlarmProximity.enter](ekalarmproximity/enter.md)
+### Constants
+- [EKAlarmProximity.enter](./enter.md)
   The alarm is set to fire when entering a region.
-- [EKAlarmProximity.leave](ekalarmproximity/leave.md)
+- [EKAlarmProximity.leave](./leave.md)
   The alarm is set to fire when leaving a region.
 
 

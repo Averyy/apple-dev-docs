@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The pixel format of the input UI texture for the frame interpolator.
@@ -17,6 +18,10 @@ The pixel format of the input UI texture for the frame interpolator.
 
 ```swift
 var uiTextureFormat: MTLPixelFormat { get }
+```
+
+```objc
+@property (nonatomic, readonly) MTLPixelFormat uiTextureFormat;
 ```
 
 

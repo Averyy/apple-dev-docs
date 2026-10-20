@@ -1,7 +1,8 @@
 # Duration.TimeFormatStyle.Attributed
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A format style that formats durations as attributed strings.
 
@@ -23,7 +24,7 @@ struct Attributed
 
 #### Overview
 
-Apply the [`Duration.TimeFormatStyle.Attributed`](duration/timeformatstyle/attributed-swift.struct.md) property to a configured [`Duration.TimeFormatStyle`](duration/timeformatstyle.md) to produce an instance of this style. You can then format a duration with this style to create a formatted [`AttributedString`](https://developer.apple.com/documentation/foundation/attributedstring). The formatted attributed string contains instances of [`AttributeScopes.FoundationAttributes.DateFieldAttribute`](https://developer.apple.com/documentation/foundation/attributescopes/foundationattributes/datefieldattribute) for runs with formatted durations.
+Apply the [`Duration.TimeFormatStyle.Attributed`](./attributed-swift.struct.md) property to a configured [`Duration.TimeFormatStyle`](../timeformatstyle.md) to produce an instance of this style. You can then format a duration with this style to create a formatted [`AttributedString`](../../../Foundation/attributedstring.md). The formatted attributed string contains instances of [`AttributeScopes.FoundationAttributes.DateFieldAttribute`](../../../Foundation/attributescopes/foundationattributes/datefieldattribute.md) for runs with formatted durations.
 
 The following example formats a duration as an attributed string:
 
@@ -47,35 +48,36 @@ The resulting `attributedDuration`, representing the string `1:10:32` contains t
 ## Topics
 
 ### Formatting a duration
-- [func format(Duration) -> AttributedString](duration/timeformatstyle/attributed-swift.struct/format(_:).md)
+- [func format(Duration) -> AttributedString](./attributed-swift.struct/format%28_%29.md)
   Creates a locale-aware attributed string representation from a duration value.
 ### Working with locales
-- [func locale(Locale) -> Duration.TimeFormatStyle.Attributed](duration/timeformatstyle/attributed-swift.struct/locale(_:).md)
+- [func locale(Locale) -> Duration.TimeFormatStyle.Attributed](./attributed-swift.struct/locale%28_%29.md)
   Modifies the format style to use the specified locale.
 ### Instance Methods
-- [func grouping(NumberFormatStyleConfiguration.Grouping) -> Duration.TimeFormatStyle.Attributed](duration/timeformatstyle/attributed-swift.struct/grouping(_:).md)
+- [func grouping(NumberFormatStyleConfiguration.Grouping) -> Duration.TimeFormatStyle.Attributed](./attributed-swift.struct/grouping%28_%29.md)
   Returns a modified style that applies the given `grouping` rule to the highest field in the pattern.
 ### Subscripts
-- [subscript<T>(dynamicMember _: WritableKeyPath<Duration.TimeFormatStyle, T>) -> T](duration/timeformatstyle/attributed-swift.struct/subscript(dynamicmember:)-32lo0.md)
-- [subscript<T>(dynamicMember _: KeyPath<Duration.TimeFormatStyle, T>) -> T](duration/timeformatstyle/attributed-swift.struct/subscript(dynamicmember:)-8cksi.md)
+- [subscript<T>(dynamicMember _: WritableKeyPath<Duration.TimeFormatStyle, T>) -> T](./attributed-swift.struct/subscript%28dynamicmember%29-32lo0.md)
+- [subscript<T>(dynamicMember _: KeyPath<Duration.TimeFormatStyle, T>) -> T](./attributed-swift.struct/subscript%28dynamicmember%29-8cksi.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
-- [Decodable](decodable.md)
-- [DiscreteFormatStyle](../foundation/discreteformatstyle.md)
-- [Encodable](encodable.md)
-- [Equatable](equatable.md)
-- [Escapable](escapable.md)
-- [FormatStyle](../foundation/formatstyle.md)
-- [Hashable](hashable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Copyable](../../copyable.md)
+- [Decodable](../../decodable.md)
+- [DiscreteFormatStyle](../../../Foundation/discreteformatstyle.md)
+- [Encodable](../../encodable.md)
+- [Equatable](../../equatable.md)
+- [Escapable](../../escapable.md)
+- [FormatStyle](../../../Foundation/formatstyle.md)
+- [Hashable](../../hashable.md)
+- [Sendable](../../sendable.md)
+- [SendableMetatype](../../sendablemetatype.md)
 
 ## See Also
 
-- [var attributed: Duration.TimeFormatStyle.Attributed](duration/timeformatstyle/attributed-swift.property.md)
+### Formatting a duration as an attributed string
+- [var attributed: Duration.TimeFormatStyle.Attributed](./attributed-swift.property.md)
   A property that formats the duration as an attributed string.
 
 

@@ -1,7 +1,8 @@
 # AppIntentTimelineProvider
 
 **Framework**: WidgetKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that advises WidgetKit when to update a user-configurable widget’s display.
 
@@ -21,13 +22,13 @@ protocol AppIntentTimelineProvider
 
 ## Mentions
 
-- [Increasing the visibility of widgets in Smart Stacks](widget-suggestions-in-smart-stacks.md)
-- [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
-- [Making a configurable widget](making-a-configurable-widget.md)
+- [Increasing the visibility of widgets in Smart Stacks](./widget-suggestions-in-smart-stacks.md)
+- [Migrating ClockKit complications to WidgetKit](./converting-a-clockkit-app.md)
+- [Making a configurable widget](./making-a-configurable-widget.md)
 
 #### Overview
 
-An App Intent timeline provider performs the same function as [`TimelineProvider`](timelineprovider.md), but it also incorporates user-configured details into timeline entries.
+An App Intent timeline provider performs the same function as [`TimelineProvider`](./timelineprovider.md), but it also incorporates user-configured details into timeline entries.
 
 For example, in a widget that displays the health status of a game character the user has chosen, the provider receives a custom intent specifying the character to display. In your app code, you then define a custom App Intent. The intent can include the character’s details such as its name, avatar, strategic alliances, and so on.
 
@@ -49,7 +50,7 @@ struct CharacterConfiguration: WidgetConfigurationIntent {
 }
 ```
 
-Because users can add multiple instances of a particular widget, your provider needs a way to differentiate which instance WidgetKit is asking about. When WidgetKit calls [`snapshot(for:in:)`](appintenttimelineprovider/snapshot(for:in:).md) or [`timeline(for:in:)`](appintenttimelineprovider/timeline(for:in:).md), it passes an instance of your configuration intent, configured with the user-selected details. The game widget provider accesses the properties of the intent and includes them in the [`TimelineEntry`](timelineentry.md). WidgetKit then invokes the widget configuration’s content closure, passing the timeline entry to allow the views to access the user-configured properties. For example, the provider might implement a `TimelineEntry` with properties corresponding to those in the custom intent:
+Because users can add multiple instances of a particular widget, your provider needs a way to differentiate which instance WidgetKit is asking about. When WidgetKit calls [`snapshot(for:in:)`](./appintenttimelineprovider/snapshot%28for,in%29.md) or [`timeline(for:in:)`](./appintenttimelineprovider/timeline%28for,in%29.md), it passes an instance of your configuration intent, configured with the user-selected details. The game widget provider accesses the properties of the intent and includes them in the [`TimelineEntry`](./timelineentry.md). WidgetKit then invokes the widget configuration’s content closure, passing the timeline entry to allow the views to access the user-configured properties. For example, the provider might implement a `TimelineEntry` with properties corresponding to those in the custom intent:
 
 ```swift
 struct CharacterDetailEntry: TimelineEntry {
@@ -80,38 +81,39 @@ struct CharacterDetailProvider: AppIntentTimelineProvider {
 ## Topics
 
 ### Generating timelines
-- [func placeholder(in: Self.Context) -> Self.Entry](appintenttimelineprovider/placeholder(in:).md)
+- [func placeholder(in: Self.Context) -> Self.Entry](./appintenttimelineprovider/placeholder%28in%29.md)
   Provides a timeline entry representing a placeholder version of the widget.
-- [func recommendations() -> [AppIntentRecommendation<Self.Intent>]](appintenttimelineprovider/recommendations.md)
+- [func recommendations() -> [AppIntentRecommendation<Self.Intent>]](./appintenttimelineprovider/recommendations%28%29.md)
   Returns a set of intent recommendations you use to offer pre-configured widgets on platforms that don’t offer a dedicated user interface for customizing widget intents.
-- [func relevance() async -> WidgetRelevance<Self.Intent>](appintenttimelineprovider/relevance.md)
+- [func relevance() async -> WidgetRelevance<Self.Intent>](./appintenttimelineprovider/relevance%28%29.md)
   Provides an object containing attributes that describe when a specific widget is relevant.
-- [func snapshot(for: Self.Intent, in: Self.Context) async -> Self.Entry](appintenttimelineprovider/snapshot(for:in:).md)
+- [func snapshot(for: Self.Intent, in: Self.Context) async -> Self.Entry](./appintenttimelineprovider/snapshot%28for,in%29.md)
   Provides a timeline entry representing the current time and state of a widget.
-- [func timeline(for: Self.Intent, in: Self.Context) async -> Timeline<Self.Entry>](appintenttimelineprovider/timeline(for:in:).md)
+- [func timeline(for: Self.Intent, in: Self.Context) async -> Timeline<Self.Entry>](./appintenttimelineprovider/timeline%28for,in%29.md)
   Provides an array of timeline entries for the current time and, optionally, any future times to update a widget.
-- [AppIntentTimelineProvider.Context](appintenttimelineprovider/context.md)
+- [AppIntentTimelineProvider.Context](./appintenttimelineprovider/context.md)
   An object that contains details about how a widget is rendered, including its size and whether it appears in the widget gallery.
-- [associatedtype Entry : TimelineEntry](appintenttimelineprovider/entry.md)
+- [associatedtype Entry : TimelineEntry](./appintenttimelineprovider/entry.md)
   A type that specifies the date to display a widget, and, optionally, indicates the current relevance of the widget’s content.
-- [associatedtype Intent : WidgetConfigurationIntent](appintenttimelineprovider/intent.md)
+- [associatedtype Intent : WidgetConfigurationIntent](./appintenttimelineprovider/intent.md)
   The intent that contains user-customized values.
 
 ## See Also
 
-- [Keeping a widget up to date](keeping-a-widget-up-to-date.md)
+### Timeline updates
+- [Keeping a widget up to date](./keeping-a-widget-up-to-date.md)
   Plan your widget’s timeline to show timely, relevant information using dynamic views, and update the timeline when things change.
-- [protocol TimelineProvider](timelineprovider.md)
+- [protocol TimelineProvider](./timelineprovider.md)
   A type that advises WidgetKit when to update a widget’s display.
-- [protocol IntentTimelineProvider](intenttimelineprovider.md)
+- [protocol IntentTimelineProvider](./intenttimelineprovider.md)
   A type that advises WidgetKit when to update a user-configurable widget’s display.
-- [struct TimelineProviderContext](timelineprovidercontext.md)
+- [struct TimelineProviderContext](./timelineprovidercontext.md)
   An object that contains details about how a widget is rendered, including its size and whether it appears in the widget gallery.
-- [protocol TimelineEntry](timelineentry.md)
+- [protocol TimelineEntry](./timelineentry.md)
   A type that specifies the date to display a widget, and, optionally, indicates the current relevance of the widget’s content.
-- [struct Timeline](timeline.md)
+- [struct Timeline](./timeline.md)
   An object that specifies a date for WidgetKit to update a widget’s view.
-- [class WidgetCenter](widgetcenter.md)
+- [class WidgetCenter](./widgetcenter.md)
   An object that contains a list of user-configured widgets and is used for reloading widget timelines.
 
 

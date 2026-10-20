@@ -2,6 +2,7 @@
 
 **Framework**: ImageCaptureCore  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the client when objects are added to the device.
@@ -19,9 +20,14 @@ Tells the client when objects are added to the device.
 func cameraDevice(_ camera: ICCameraDevice, didAdd items: [ICCameraItem])
 ```
 
+```objc
+- (void) cameraDevice:(ICCameraDevice *) camera didAddItems:(NSArray<ICCameraItem *> *) items;
+```
+
 ## See Also
 
-- [func cameraDevice(ICCameraDevice, didAdd: ICCameraItem)](iccameradevicedelegate/cameradevice(_:didadd:)-9pnzo.md)
+### Adding Objects
+- [func cameraDevice(ICCameraDevice, didAdd: ICCameraItem)](./cameradevice%28_,didadd%29-9pnzo.md)
   Tells the client when an object is added to the device.
 
 

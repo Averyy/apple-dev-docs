@@ -1,7 +1,8 @@
 # CLSScoreItem
 
 **Framework**: ClassKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Activity information that signifies a score out of a possible maximum.
 
@@ -18,6 +19,10 @@ Activity information that signifies a score out of a possible maximum.
 class CLSScoreItem
 ```
 
+```objc
+@interface CLSScoreItem : CLSActivityItem
+```
+
 #### Overview
 
 Use an activity item of this type to indicate the relative success in completing a task, like the number of correctly answered questions on a quiz.
@@ -25,37 +30,38 @@ Use an activity item of this type to indicate the relative success in completing
 ## Topics
 
 ### Creating Score Activity Items
-- [init(identifier: String, title: String, score: Double, maxScore: Double)](clsscoreitem/init(identifier:title:score:maxscore:).md)
+- [init(identifier: String, title: String, score: Double, maxScore: Double)](./clsscoreitem/init%28identifier,title,score,maxscore%29.md)
   Initializes an activity item that holds a score value.
 ### Managing the Score
-- [var score: Double](clsscoreitem/score.md)
+- [var score: Double](./clsscoreitem/score.md)
   The score earned by a user in completing the task.
-- [var maxScore: Double](clsscoreitem/maxscore.md)
+- [var maxScore: Double](./clsscoreitem/maxscore.md)
   The maximum possible score that the user can earn on a given task.
 
 ## Relationships
 
 ### Inherits From
-- [CLSActivityItem](clsactivityitem.md)
+- [CLSActivityItem](./clsactivityitem.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Recording additional metrics about a completed task](recording-additional-metrics-about-a-completed-task.md)
+### Activity items
+- [Recording additional metrics about a completed task](./recording-additional-metrics-about-a-completed-task.md)
   Add an activity item to an activity to record additional information about a student’s attempt to complete a task.
-- [class CLSBinaryItem](clsbinaryitem.md)
+- [class CLSBinaryItem](./clsbinaryitem.md)
   Activity information that is true or false, pass or fail, yes or no.
-- [class CLSQuantityItem](clsquantityitem.md)
+- [class CLSQuantityItem](./clsquantityitem.md)
   Activity information that signifies a quantity.
-- [class CLSActivityItem](clsactivityitem.md)
+- [class CLSActivityItem](./clsactivityitem.md)
   An abstract base class for gathering information about an activity.
 
 

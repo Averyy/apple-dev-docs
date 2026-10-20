@@ -1,7 +1,8 @@
 # removeAllGroups(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func removeAllGroups(completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func removeAllGroups() async throws
+```
+
+```objc
+- (void) removeAllGroupsWithCompletion:(MTRStatusCompletion) completion;
 ```
 
 

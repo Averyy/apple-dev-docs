@@ -1,7 +1,8 @@
 # overflow
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Value too large to be stored in data type.
 
@@ -22,7 +23,7 @@ static var overflow: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -32,9 +33,10 @@ The corresponding C error is `EOVERFLOW`.
 
 ## See Also
 
-- [static var outOfDomain: Errno](errno/outofdomain.md)
+### Math Errors
+- [static var outOfDomain: Errno](./outofdomain.md)
   Numerical argument out of domain.
-- [static var outOfRange: Errno](errno/outofrange.md)
+- [static var outOfRange: Errno](./outofrange.md)
   Numerical result out of range.
 
 

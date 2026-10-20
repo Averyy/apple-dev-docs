@@ -1,7 +1,8 @@
 # fileSystemRepresentation
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A C string containing the URL’s file system path. (read-only)
 
@@ -20,45 +21,50 @@ A C string containing the URL’s file system path. (read-only)
 var fileSystemRepresentation: UnsafePointer<CChar> { get }
 ```
 
+```objc
+@property (readonly) const char * fileSystemRepresentation;
+```
+
 #### Discussion
 
 This returns a null-terminated C string in file system representation.
 
-This string is automatically freed in the same way that a returned object would be released. The caller must either copy the string or use [`getFileSystemRepresentation(_:maxLength:)`](nsurl/getfilesystemrepresentation(_:maxlength:).md) if it needs to store the representation outside of the autorelease context in which the value was obtained.
+This string is automatically freed in the same way that a returned object would be released. The caller must either copy the string or use [`getFileSystemRepresentation(_:maxLength:)`](./getfilesystemrepresentation%28_,maxlength%29.md) if it needs to store the representation outside of the autorelease context in which the value was obtained.
 
 The file system representation format is described in File Encodings and Fonts.
 
 ## See Also
 
-- [var absoluteString: String?](nsurl/absolutestring.md)
+### Accessing the Parts of the URL
+- [var absoluteString: String?](./absolutestring.md)
   The URL string for the receiver as an absolute URL. (read-only)
-- [var absoluteURL: URL?](nsurl/absoluteurl.md)
+- [var absoluteURL: URL?](./absoluteurl.md)
   An absolute URL that refers to the same resource as the receiver. (read-only)
-- [var baseURL: URL?](nsurl/baseurl.md)
+- [var baseURL: URL?](./baseurl.md)
   The base URL. (read-only)
-- [var fragment: String?](nsurl/fragment.md)
+- [var fragment: String?](./fragment.md)
   The fragment identifier, conforming to RFC 1808. (read-only)
-- [var host: String?](nsurl/host.md)
+- [var host: String?](./host.md)
   The host, conforming to RFC 1808. (read-only)
-- [var lastPathComponent: String?](nsurl/lastpathcomponent.md)
+- [var lastPathComponent: String?](./lastpathcomponent.md)
   The last path component. (read-only)
-- [var parameterString: String?](nsurl/parameterstring.md)
+- [var parameterString: String?](./parameterstring.md)
   The parameter string conforming to RFC 1808. (read-only)
-- [var password: String?](nsurl/password.md)
+- [var password: String?](./password.md)
   The password conforming to RFC 1808. (read-only)
-- [var path: String?](nsurl/path.md)
+- [var path: String?](./path.md)
   The path, conforming to RFC 1808. (read-only)
-- [var pathComponents: [String]?](nsurl/pathcomponents.md)
+- [var pathComponents: [String]?](./pathcomponents.md)
   An array containing the  path components. (read-only)
-- [var pathExtension: String?](nsurl/pathextension.md)
+- [var pathExtension: String?](./pathextension.md)
   The path extension. (read-only)
-- [var port: NSNumber?](nsurl/port.md)
+- [var port: NSNumber?](./port.md)
   The port, conforming to RFC 1808.
-- [var query: String?](nsurl/query.md)
+- [var query: String?](./query.md)
   The query string, conforming to RFC 1808.
-- [var relativePath: String?](nsurl/relativepath.md)
+- [var relativePath: String?](./relativepath.md)
   The relative path, conforming to RFC 1808. (read-only)
-- [var relativeString: String](nsurl/relativestring.md)
+- [var relativeString: String](./relativestring.md)
   A string representation of the relative portion of the URL. (read-only)
 
 

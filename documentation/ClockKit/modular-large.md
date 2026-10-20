@@ -1,6 +1,7 @@
 # Modular large
 
-**Framework**: ClockKit
+**Framework**: ClockKit  
+**Role**: API Collection
 
 Display multiple rows of content in the large, central complication on the Modular watch face.
 
@@ -8,44 +9,45 @@ Display multiple rows of content in the large, central complication on the Modul
 
 Modular large templates offer a large canvas for displaying up to three rows of content on the Modular watch face.
 
-![Examples of the modular small templates. From left to right they are columns, large body, table, and standard body.](/images/com.apple.clockkit/media-2878967@2x.png)
+![Examples of the modular small templates. From left to right they are columns, large body, table, and standard body.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-2878967@2x.png)
 
 ## Topics
 
 ### Body templates
-- [class CLKComplicationTemplateModularLargeStandardBody](clkcomplicationtemplatemodularlargestandardbody.md)
+- [class CLKComplicationTemplateModularLargeStandardBody](./clkcomplicationtemplatemodularlargestandardbody.md)
   A template for displaying a header row and two lines of text.
-- [class CLKComplicationTemplateModularLargeTallBody](clkcomplicationtemplatemodularlargetallbody.md)
+- [class CLKComplicationTemplateModularLargeTallBody](./clkcomplicationtemplatemodularlargetallbody.md)
   A template for displaying a header row and row of tall body text.
 ### Table templates
-- [class CLKComplicationTemplateModularLargeColumns](clkcomplicationtemplatemodularlargecolumns.md)
+- [class CLKComplicationTemplateModularLargeColumns](./clkcomplicationtemplatemodularlargecolumns.md)
   A template for displaying multiple columns of data.
-- [class CLKComplicationTemplateModularLargeTable](clkcomplicationtemplatemodularlargetable.md)
+- [class CLKComplicationTemplateModularLargeTable](./clkcomplicationtemplatemodularlargetable.md)
   A template for displaying a header row and columns.
 
 ## See Also
 
-- [SwiftUI templates](swiftui-templates.md)
+### Templates
+- [SwiftUI templates](./swiftui-templates.md)
   Design complication templates using SwiftUI views.
-- [enum ComplicationRenderingMode](complicationrenderingmode.md)
+- [enum ComplicationRenderingMode](./complicationrenderingmode.md)
   The complication’s appearance, as specified by the watch face.
-- [Data providers](data-providers.md)
+- [Data providers](./data-providers.md)
   Feed data to a complication template.
-- [Circular small](circular-small.md)
+- [Circular small](./circular-small.md)
   Display small, circular content in the corners of the Color watch face.
-- [Extra large](extra-large.md)
+- [Extra large](./extra-large.md)
   Display content on the X-Large watch face.
-- [Modular small](modular-small.md)
+- [Modular small](./modular-small.md)
   Display content in the smaller spaces of the Modular watch face.
-- [Utilitarian](utilitarian.md)
+- [Utilitarian](./utilitarian.md)
   Use the utilitarian templates to display content on a variety of watch faces, including the Utility, Chronograph, Simple, and character watch faces.
-- [Graphic](graphic.md)
+- [Graphic](./graphic.md)
   Display visually rich content on watch faces.
-- [class CLKComplicationTemplate](clkcomplicationtemplate.md)
+- [class CLKComplicationTemplate](./clkcomplicationtemplate.md)
   An abstract class that defines the base behavior for all templates.
-- [enum CLKComplicationFamily](clkcomplicationfamily.md)
+- [enum CLKComplicationFamily](./clkcomplicationfamily.md)
   Constants indicating the template groups.
-- [CLKComplicationSupportedFamilies](../bundleresources/information-property-list/clkcomplicationsupportedfamilies.md)
+- [CLKComplicationSupportedFamilies](../BundleResources/information-property-list/clkcomplicationsupportedfamilies.md)
   The complication families for which the app can provide data.
 
 

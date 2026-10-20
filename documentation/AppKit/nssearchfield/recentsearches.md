@@ -1,17 +1,22 @@
 # recentSearches
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of recent search strings for the control.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var recentSearches: [String] { get set }
+```
+
+```objc
+@property (copy) NSArray<NSString *> * recentSearches;
 ```
 
 #### Discussion
@@ -20,11 +25,12 @@ An array of `NSString` objects, each of which contains a search string either di
 
 ## See Also
 
-- [var maximumRecents: Int](nssearchfield/maximumrecents.md)
+### Managing Recent Searches
+- [var maximumRecents: Int](./maximumrecents.md)
   The maximum number of search strings that can appear in the search menu.
-- [var recentsAutosaveName: NSSearchField.RecentsAutosaveName?](nssearchfield/recentsautosavename-swift.property.md)
+- [var recentsAutosaveName: NSSearchField.RecentsAutosaveName?](./recentsautosavename-swift.property.md)
   The name under which the search field automatically archives the list of recent search strings.
-- [NSSearchField.RecentsAutosaveName](nssearchfield/recentsautosavename-swift.typealias.md)
+- [NSSearchField.RecentsAutosaveName](./recentsautosavename-swift.typealias.md)
   The string that stores the name under which a search field automatically archives a list of recent search strings.
 
 

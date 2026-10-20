@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An array that describes the input attributes to the function.
@@ -20,9 +21,14 @@ An array that describes the input attributes to the function.
 var stageInputAttributes: [MTLAttribute]? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSArray<MTLAttribute *> * stageInputAttributes;
+```
+
 ## See Also
 
-- [var vertexAttributes: [MTLVertexAttribute]?](mtlfunction/vertexattributes.md)
+### Retrieving function attributes
+- [var vertexAttributes: [MTLVertexAttribute]?](./vertexattributes.md)
   An array that describes the vertex input attributes to a vertex function.
 
 

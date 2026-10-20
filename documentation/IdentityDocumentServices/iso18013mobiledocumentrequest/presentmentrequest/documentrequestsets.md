@@ -1,14 +1,15 @@
 # documentRequestSets
 
 **Framework**: IdentityDocumentServices  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of the document request sets that you can use to complete this presentment request.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 26.0+
 
 ## Declaration

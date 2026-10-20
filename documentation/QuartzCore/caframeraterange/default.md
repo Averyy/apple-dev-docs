@@ -1,7 +1,8 @@
 # default
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 15.0+
@@ -17,9 +18,13 @@
 static let `default`: CAFrameRateRange
 ```
 
+```c
+extern const CAFrameRateRange CAFrameRateRangeDefault;
+```
+
 ## Mentions
 
-- [Optimizing iPhone and iPad apps to support ProMotion displays](optimizing-iphone-and-ipad-apps-to-support-promotion-displays.md)
+- [Optimizing iPhone and iPad apps to support ProMotion displays](../optimizing-iphone-and-ipad-apps-to-support-promotion-displays.md)
 
 
 ---

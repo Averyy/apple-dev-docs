@@ -1,7 +1,8 @@
 # format
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The format of the recorded audio.
 
@@ -20,11 +21,16 @@ The format of the recorded audio.
 var format: AVAudioFormat { get }
 ```
 
+```objc
+@property (readonly) AVAudioFormat * format;
+```
+
 ## See Also
 
-- [var url: URL](avaudiorecorder/url.md)
+### Inspecting the audio data
+- [var url: URL](./url.md)
   The URL to which the recorder writes its data.
-- [var settings: [String : Any]](avaudiorecorder/settings.md)
+- [var settings: [String : Any]](./settings.md)
   The settings that describe the format of the recorded audio.
 
 

@@ -1,7 +1,8 @@
 # origin
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The origin point of a rectangle.
 
@@ -10,14 +11,15 @@ The origin point of a rectangle.
 
 ## Declaration
 
-```swift
+```
 get origin(): MapPoint;
 set origin(value: MapPointData);
 ```
 
 ## See Also
 
-- [size](maprect/size.md)
+### Defining a map rectangle
+- [size](./size.md)
   The width and height of a rectangle, starting from the origin point.
 
 

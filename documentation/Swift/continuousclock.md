@@ -1,7 +1,8 @@
 # ContinuousClock
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A clock that measures time that always increments and does not stop incrementing while the system is asleep.
 
@@ -29,32 +30,33 @@ This clock is suitable for high resolution measurements of execution.
 ## Topics
 
 ### Structures
-- [ContinuousClock.Instant](continuousclock/instant.md)
+- [ContinuousClock.Instant](./continuousclock/instant.md)
   A continuous point in time used for `ContinuousClock`.
 ### Initializers
-- [init()](continuousclock/init.md)
+- [init()](./continuousclock/init%28%29.md)
 ### Instance Properties
-- [var systemEpoch: ContinuousClock.Instant](continuousclock/systemepoch.md)
+- [var systemEpoch: ContinuousClock.Instant](./continuousclock/systemepoch.md)
 ### Type Properties
-- [static var now: ContinuousClock.Instant](continuousclock/now-swift.type.property.md)
+- [static var now: ContinuousClock.Instant](./continuousclock/now-swift.type.property.md)
   The current continuous instant.
 ### Default Implementations
-- [Clock Implementations](continuousclock/clock-implementations.md)
+- [Clock Implementations](./continuousclock/clock-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Clock](clock.md)
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Clock](./clock.md)
+- [Copyable](./copyable.md)
+- [Escapable](./escapable.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [protocol Clock](clock.md)
+### Clocks
+- [protocol Clock](./clock.md)
   A mechanism in which to measure time, and delay work until a given point in time.
-- [struct SuspendingClock](suspendingclock.md)
+- [struct SuspendingClock](./suspendingclock.md)
   A clock that measures time that always increments but stops incrementing while the system is asleep.
 
 

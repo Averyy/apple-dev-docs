@@ -1,7 +1,8 @@
 # kMDItemContentModificationDate
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The date and time that the contents of the file were last modified. A CFDate.
 
@@ -12,6 +13,10 @@ The date and time that the contents of the file were last modified. A CFDate.
 
 ```swift
 let kMDItemContentModificationDate: CFString!
+```
+
+```c
+const CFStringRef kMDItemContentModificationDate;
 ```
 
 #### Discussion

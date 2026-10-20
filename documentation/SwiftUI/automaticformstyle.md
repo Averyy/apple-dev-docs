@@ -1,7 +1,8 @@
 # AutomaticFormStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The default form style.
 
@@ -23,7 +24,7 @@ struct AutomaticFormStyle
 
 #### Overview
 
-Use the [`automatic`](formstyle/automatic.md) static variable to create this style:
+Use the [`automatic`](./formstyle/automatic.md) static variable to create this style:
 
 ```swift
 Form {
@@ -35,19 +36,20 @@ Form {
 ## Topics
 
 ### Creating the form style
-- [init()](automaticformstyle/init.md)
+- [init()](./automaticformstyle/init%28%29.md)
   Creates a default form style.
 
 ## Relationships
 
 ### Conforms To
-- [FormStyle](formstyle.md)
+- [FormStyle](./formstyle.md)
 
 ## See Also
 
-- [struct ColumnsFormStyle](columnsformstyle.md)
+### Supporting types
+- [struct ColumnsFormStyle](./columnsformstyle.md)
   A non-scrolling form style with a trailing aligned column of labels next to a leading aligned column of values.
-- [struct GroupedFormStyle](groupedformstyle.md)
+- [struct GroupedFormStyle](./groupedformstyle.md)
   A form style with grouped rows.
 
 

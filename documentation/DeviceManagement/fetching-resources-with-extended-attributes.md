@@ -1,6 +1,7 @@
 # Fetching resources with extended attributes
 
-**Framework**: Device Management
+**Framework**: Device Management  
+**Role**: Article
 
 Specify additional attributes for the API to include in a response.
 
@@ -29,7 +30,8 @@ Available extended attributes include:
 
 ## See Also
 
-- [Fetching storefront objects](fetching-storefront-objects.md)
+### Fetching information
+- [Fetching storefront objects](./fetching-storefront-objects.md)
   Pick a region-specific geographic location to retrieve catalog information from.
 
 

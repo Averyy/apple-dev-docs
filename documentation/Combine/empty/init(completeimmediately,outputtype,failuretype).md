@@ -1,7 +1,8 @@
 # init(completeImmediately:outputType:failureType:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty publisher with the given completion behavior and output and failure types.
 
@@ -32,7 +33,8 @@ Use this initializer to connect the empty publisher to subscribers or other publ
 
 ## See Also
 
-- [init(completeImmediately: Bool)](empty/init(completeimmediately:).md)
+### Creating an empty publisher
+- [init(completeImmediately: Bool)](./init%28completeimmediately%29.md)
   Creates an empty publisher.
 
 

@@ -1,13 +1,16 @@
 # depth
 
 **Framework**: GLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- macOS 10.8+
-- tvOS 9.0+
+- iOS 5.0+ - Deprecated in 12.0
+- iPadOS 5.0+ - Deprecated in 12.0
+- macOS 10.8+ - Deprecated in 10.14
+- tvOS 9.0+ - Deprecated in 12.0
+
+> **Deprecated**: OpenGLES API deprecated. (Define GLES_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -15,10 +18,15 @@
 var depth: GLuint { get }
 ```
 
+```objc
+@property (readonly) GLuint depth;
+```
+
 ## See Also
 
-- [var arrayLength: GLuint](glktextureinfo/arraylength-swift.property.md)
-- [var mimapLevelCount: GLuint](glktextureinfo/mimaplevelcount-swift.property.md)
+### Instance Properties
+- [var arrayLength: GLuint](./arraylength-swift.property.md)
+- [var mimapLevelCount: GLuint](./mimaplevelcount-swift.property.md)
 
 
 ---

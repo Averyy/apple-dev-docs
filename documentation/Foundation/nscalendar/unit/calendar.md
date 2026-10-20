@@ -1,7 +1,8 @@
 # calendar
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Identifier for the calendar of a date components object.
 
@@ -20,13 +21,18 @@ Identifier for the calendar of a date components object.
 static var calendar: NSCalendar.Unit { get }
 ```
 
+```c
+NSCalendarUnitCalendar
+```
+
 #### Discussion
 
-The corresponding value is an [`NSCalendar`](nscalendar.md).
+The corresponding value is an [`NSCalendar`](../../nscalendar.md).
 
 ## See Also
 
-- [static var timeZone: NSCalendar.Unit](nscalendar/unit/timezone.md)
+### Specifying Calendars and Time Zones
+- [static var timeZone: NSCalendar.Unit](./timezone.md)
   Identifier for the time zone of a date components object.
 
 

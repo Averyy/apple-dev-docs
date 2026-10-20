@@ -1,6 +1,8 @@
 # Supporting multiple windows on iPad
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Sample Code  
+**Download**: [SupportingMultipleWindowsOnIPad.zip](https://docs-assets.developer.apple.com/published/70ff427f711f/SupportingMultipleWindowsOnIPad.zip)
 
 Support side-by-side instances of your app’s interface and create new windows.
 
@@ -12,27 +14,27 @@ Support side-by-side instances of your app’s interface and create new windows.
 
 #### Overview
 
-This sample shows how to create multiple windows that give users the ability to create separate parts of your application with similar or varying content. Windows are managed by a scene or [`UISceneSession`](uiscenesession.md) class. Your application uses [`UISceneDelegate`](uiscenedelegate.md) and [`UISceneConfiguration`](uisceneconfiguration.md) to manage the life cycle of a window. Scenes have their own dedicated lifecycle that are managed separate from [`UIApplication`](uiapplication.md).
+This sample shows how to create multiple windows that give users the ability to create separate parts of your application with similar or varying content. Windows are managed by a scene or [`UISceneSession`](./uiscenesession.md) class. Your application uses [`UISceneDelegate`](./uiscenedelegate.md) and [`UISceneConfiguration`](./uisceneconfiguration.md) to manage the life cycle of a window. Scenes have their own dedicated lifecycle that are managed separate from [`UIApplication`](./uiapplication.md).
 
-When you adopt a multi-window architecture, the [`UIApplicationDelegate`](uiapplicationdelegate.md) class that manages your application manages newly created scenes. Then, `UISceneDelegate` replaces the code in the delegate functions of `UIApplicationDelegate`.
+When you adopt a multi-window architecture, the [`UIApplicationDelegate`](./uiapplicationdelegate.md) class that manages your application manages newly created scenes. Then, `UISceneDelegate` replaces the code in the delegate functions of `UIApplicationDelegate`.
 
-UIKit provides a subclass of `UISceneDelegate` called [`UIWindowSceneDelegate`](uiwindowscenedelegate.md) designed specifically to help manage your windows. When adopting the multi-window architecture in an existing application running on iOS 12 or earlier, you move more responsibility from `UIApplicationDelegate` to `UIWindowSceneDelegate`.
+UIKit provides a subclass of `UISceneDelegate` called [`UIWindowSceneDelegate`](./uiwindowscenedelegate.md) designed specifically to help manage your windows. When adopting the multi-window architecture in an existing application running on iOS 12 or earlier, you move more responsibility from `UIApplicationDelegate` to `UIWindowSceneDelegate`.
 
-For more information on multiple windows in an iPadOS app, refer to [`Human Interface Guidelines for iOS`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/multiple-windows/).
+For more information on multiple windows in an iPadOS app, refer to [Human Interface Guidelines for iOS](https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/multiple-windows/).
 
-> **Note**: This sample code project was discussed and demonstrated at WWDC 2019 session 212: [`Introducing Multiple Windows on iPad`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/212).
+> **Note**: This sample code project was discussed and demonstrated at WWDC 2019 session 212: [Introducing Multiple Windows on iPad](https://developer.apple.com/videos/play/wwdc2019/212).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 In Xcode, select your development team on the iOS target’s Signing & Capabilities tab.
 
-##### Add Multiple Scene Support
+##### Add multiple scene support
 
-To support multiple windows, the app’s `Info.plist` requires a manifest or [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest), which contains information about the app’s scene-based life-cycle support. The presence of this key indicates that the app supports scenes and doesn’t use an app delegate object to manage transitions to and from the foreground or background. Include the key [`UIApplicationSupportsMultipleScenes`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uiapplicationsupportsmultiplescenes), with its Boolean value set to `true`, which indicates that the app supports two or more scenes simultaneously.
+To support multiple windows, the app’s `Info.plist` requires a manifest or [`UIApplicationSceneManifest`](../BundleResources/information-property-list/uiapplicationscenemanifest.md), which contains information about the app’s scene-based life-cycle support. The presence of this key indicates that the app supports scenes and doesn’t use an app delegate object to manage transitions to and from the foreground or background. Include the key [`UIApplicationSupportsMultipleScenes`](../BundleResources/information-property-list/uiapplicationscenemanifest/uiapplicationsupportsmultiplescenes.md), with its Boolean value set to `true`, which indicates that the app supports two or more scenes simultaneously.
 
-##### Add a Scene Delegate
+##### Add a scene delegate
 
-This sample provides a `UIWindowScene` subclass called `SceneDelegate` to manage the app’s primary window scene. The [`scene(_:willConnectTo:options:)`](uiscenedelegate/scene(_:willconnectto:options:).md) delegate function sets up the window and content.
+This sample provides a `UIWindowScene` subclass called `SceneDelegate` to manage the app’s primary window scene. The [`scene(_:willConnectTo:options:)`](./uiscenedelegate/scene%28_,willconnectto,options%29.md) delegate function sets up the window and content.
 
 ```swift
 func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -53,11 +55,11 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
 }
 ```
 
-By using the [`UISceneConfigurations`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations) key in the `Info.plist` scene manifest, the sample’s window for this scene is automatically configured and its root view controller is loaded from the storyboard.
+By using the [`UISceneConfigurations`](../BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations.md) key in the `Info.plist` scene manifest, the sample’s window for this scene is automatically configured and its root view controller is loaded from the storyboard.
 
-##### Restore a Scene
+##### Restore a scene
 
-When it’s time to restore a scene, iOS calls your delegate `scene(_:willConnectTo:options:)`. The sample app restores the scene to its previous state through the use of [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity).
+When it’s time to restore a scene, iOS calls your delegate `scene(_:willConnectTo:options:)`. The sample app restores the scene to its previous state through the use of [`NSUserActivity`](../Foundation/nsuseractivity.md).
 
 ```swift
 func configure(window: UIWindow?, with activity: NSUserActivity) -> Bool {
@@ -80,9 +82,9 @@ func configure(window: UIWindow?, with activity: NSUserActivity) -> Bool {
 }
 ```
 
-##### Create Multiple Windows From Drag and Drop
+##### Create multiple windows from drag and drop
 
-This sample creates a separate window when the user drags an image from the collection view to the left or right side of the iPad screen. The sample creates a new window by implementing the `UICollectionViewDragDelegate` function [`collectionView(_:itemsForBeginning:at:)`](uicollectionviewdragdelegate/collectionview(_:itemsforbeginning:at:).md) and providing a [`UIDragItem`](uidragitem.md) with an associated [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider). Then, the sample passes the photo data to the new window scene with a registered `NSUserActivity`.
+This sample creates a separate window when the user drags an image from the collection view to the left or right side of the iPad screen. The sample creates a new window by implementing the `UICollectionViewDragDelegate` function [`collectionView(_:itemsForBeginning:at:)`](./uicollectionviewdragdelegate/collectionview%28_,itemsforbeginning,at%29.md) and providing a [`UIDragItem`](./uidragitem.md) with an associated [`NSItemProvider`](../Foundation/nsitemprovider.md). Then, the sample passes the photo data to the new window scene with a registered `NSUserActivity`.
 
 ```swift
 func collectionView(_ collectionView: UICollectionView, itemsForBeginning session: UIDragSession, at indexPath: IndexPath) -> [UIDragItem] {
@@ -101,7 +103,7 @@ func collectionView(_ collectionView: UICollectionView, itemsForBeginning sessio
 }
 ```
 
-The `NSUserActivity` [`activityType`](https://developer.apple.com/documentation/foundation/nsuseractivity/activitytype) must be included in the app’s `Info.plist` under the [`NSUserActivityTypes`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsuseractivitytypes) array. Without it, a separate window isn’t created as the photo is dragged to the edge of the device.
+The `NSUserActivity` [`activityType`](../Foundation/nsuseractivity/activitytype.md) must be included in the app’s `Info.plist` under the [`NSUserActivityTypes`](../BundleResources/information-property-list/nsuseractivitytypes.md) array. Without it, a separate window isn’t created as the photo is dragged to the edge of the device.
 
 ```swift
     <key>NSUserActivityTypes</key>
@@ -110,7 +112,7 @@ The `NSUserActivity` [`activityType`](https://developer.apple.com/documentation/
     </array>
 ```
 
-##### Create Multiple Windows Programmatically
+##### Create multiple windows programmatically
 
 This sample also creates a separate window scene programmatically, by responding to a user action:
 
@@ -146,7 +148,7 @@ class func openInspectorSceneSessionForPhoto(_ photo: Photo, requestingScene: UI
 }
 ```
 
-Through the use of a unique `NSUserActivity` [`activityType`](https://developer.apple.com/documentation/foundation/nsuseractivity/activitytype), the app can distinguish which new scene to create in [`application(_:configurationForConnecting:options:)`](uiapplicationdelegate/application(_:configurationforconnecting:options:).md):
+Through the use of a unique `NSUserActivity` [`activityType`](../Foundation/nsuseractivity/activitytype.md), the app can distinguish which new scene to create in [`application(_:configurationForConnecting:options:)`](./uiapplicationdelegate/application%28_,configurationforconnecting,options%29.md):
 
 ```swift
 func application(_ application: UIApplication,
@@ -168,7 +170,8 @@ func application(_ application: UIApplication,
 
 ## See Also
 
-- [Scenes](scenes.md)
+### Scene Management
+- [Scenes](./scenes.md)
   Manage multiple instances of your app’s UI simultaneously, and direct resources to the appropriate instance of your UI.
 
 

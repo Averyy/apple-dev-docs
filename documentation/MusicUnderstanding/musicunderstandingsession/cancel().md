@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: Music Understanding  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels any ongoing analysis.
 

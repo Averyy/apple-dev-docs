@@ -1,7 +1,8 @@
 # thumbTintColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color used to tint the appearance of the thumb.
 
@@ -17,9 +18,14 @@ The color used to tint the appearance of the thumb.
 var thumbTintColor: UIColor? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIColor * thumbTintColor;
+```
+
 ## See Also
 
-- [var onTintColor: UIColor?](uiswitch/ontintcolor.md)
+### Customizing the appearance of the switch
+- [var onTintColor: UIColor?](./ontintcolor.md)
   The color used to tint the appearance of the switch when it’s in the on position.
 
 

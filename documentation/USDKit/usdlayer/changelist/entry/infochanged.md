@@ -1,7 +1,8 @@
 # infoChanged
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Info field changes, keyed by field name. Each `InfoChange` contains the old and new values.
 

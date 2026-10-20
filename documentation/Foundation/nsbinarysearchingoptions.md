@@ -1,9 +1,10 @@
 # NSBinarySearchingOptions
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-Options for searches and insertions using [`index(of:inSortedRange:options:usingComparator:)`](nsarray/index(of:insortedrange:options:usingcomparator:).md).
+Options for searches and insertions using [`index(of:inSortedRange:options:usingComparator:)`](./nsarray/index%28of,insortedrange,options,usingcomparator%29.md).
 
 **Availability**:
 - iOS 2.0+
@@ -20,29 +21,33 @@ Options for searches and insertions using [`index(of:inSortedRange:options:using
 struct NSBinarySearchingOptions
 ```
 
+```c
+enum NSBinarySearchingOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [static var firstEqual: NSBinarySearchingOptions](nsbinarysearchingoptions/firstequal.md)
+- [static var firstEqual: NSBinarySearchingOptions](./nsbinarysearchingoptions/firstequal.md)
   Specifies that the search should return the first object in the range that is equal to the given object.
-- [static var lastEqual: NSBinarySearchingOptions](nsbinarysearchingoptions/lastequal.md)
+- [static var lastEqual: NSBinarySearchingOptions](./nsbinarysearchingoptions/lastequal.md)
   Specifies that the search should return the last object in the range that is equal to the given object.
-- [static var insertionIndex: NSBinarySearchingOptions](nsbinarysearchingoptions/insertionindex.md)
+- [static var insertionIndex: NSBinarySearchingOptions](./nsbinarysearchingoptions/insertionindex.md)
   Returns the index at which you should insert the object in order to maintain a sorted array.
 ### Initializers
-- [init(rawValue: UInt)](nsbinarysearchingoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./nsbinarysearchingoptions/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

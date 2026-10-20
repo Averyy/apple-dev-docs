@@ -1,7 +1,8 @@
 # isEqual(to:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether this data object is the same as another.
 
@@ -20,9 +21,13 @@ Returns a Boolean value indicating whether this data object is the same as anoth
 func isEqual(to other: Data) -> Bool
 ```
 
+```objc
+- (BOOL) isEqualToData:(NSData *) other;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the contents of `otherData` are equal to the contents of the receiver, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the contents of `otherData` are equal to the contents of the receiver, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -34,7 +39,8 @@ Two data objects are equal if they hold the same number of bytes, and if the byt
 
 ## See Also
 
-- [var length: Int](nsdata/length.md)
+### Testing Data
+- [var length: Int](./length.md)
   The number of bytes contained by the data object.
 
 

@@ -1,23 +1,30 @@
 # localizedDescription
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the product.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 13.1+
-- macOS 10.7+
-- tvOS ?+
-- visionOS 1.0+
-- watchOS 6.2+
+- iOS 3.0+ - Deprecated in 18.0
+- iPadOS 3.0+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.7+ - Deprecated in 15.0
+- tvOS - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 6.2+ - Deprecated in 11.0
+
+> **Deprecated**: Use Product.description.
 
 ## Declaration
 
 ```swift
 var localizedDescription: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * localizedDescription;
 ```
 
 #### Discussion
@@ -26,15 +33,17 @@ The description’s language is determined by the storefront that the user’s d
 
 ## See Also
 
-- [class SKStorefront](skstorefront.md)
+### Related Documentation
+- [class SKStorefront](../skstorefront.md)
   An object containing the location and unique identifier of an Apple App Store storefront.
-- [var localizedTitle: String](skproduct/localizedtitle.md)
+### Getting Product Attributes
+- [var localizedTitle: String](./localizedtitle.md)
   The name of the product.
-- [var contentVersion: String](skproduct/contentversion.md)
+- [var contentVersion: String](./contentversion.md)
   A string that identifies the version of the content.
-- [var isFamilyShareable: Bool](skproduct/isfamilyshareable.md)
+- [var isFamilyShareable: Bool](./isfamilyshareable.md)
   A Boolean value that indicates whether the product is available for Family Sharing in App Store Connect.
-- [var contentLengths: [NSNumber]](skproduct/contentlengths.md)
+- [var contentLengths: [NSNumber]](./contentlengths.md)
   The total size of the content, in bytes.
 
 

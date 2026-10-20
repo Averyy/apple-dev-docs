@@ -1,7 +1,8 @@
 # MigrationDefaultSupportedOptions
 
 **Framework**: AppMigrationKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options supported by default for migration requests.
 
@@ -22,22 +23,23 @@ There are currently no default supported options for migration requests.
 ## Topics
 
 ### Accessing all options
-- [static let allCases: [MigrationDefaultSupportedOptions]](migrationdefaultsupportedoptions/allcases.md)
+- [static let allCases: [MigrationDefaultSupportedOptions]](./migrationdefaultsupportedoptions/allcases.md)
   A collection of all values of this type.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [typealias MigrationRequest](migrationrequest.md)
+### Declaring default options
+- [typealias MigrationRequest](./migrationrequest.md)
   A migration request that uses the default supported options.
 
 

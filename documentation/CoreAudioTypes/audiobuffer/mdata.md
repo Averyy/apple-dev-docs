@@ -1,7 +1,8 @@
 # mData
 
 **Framework**: Core Audio Types  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A pointer to a buffer of audio data.
 
@@ -20,11 +21,16 @@ A pointer to a buffer of audio data.
 var mData: UnsafeMutableRawPointer?
 ```
 
+```c
+void * mData;
+```
+
 ## See Also
 
-- [var mNumberChannels: UInt32](audiobuffer/mnumberchannels.md)
+### Accessing the Audio
+- [var mNumberChannels: UInt32](./mnumberchannels.md)
   The number of interleaved channels in the buffer.
-- [var mDataByteSize: UInt32](audiobuffer/mdatabytesize.md)
+- [var mDataByteSize: UInt32](./mdatabytesize.md)
   The number of bytes in the buffer.
 
 

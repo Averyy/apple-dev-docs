@@ -1,7 +1,8 @@
 # callUUID
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for the call associated with the action.
 
@@ -16,6 +17,10 @@ The unique identifier for the call associated with the action.
 
 ```swift
 var callUUID: UUID { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSUUID * callUUID;
 ```
 
 

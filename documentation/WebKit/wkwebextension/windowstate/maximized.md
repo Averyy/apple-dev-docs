@@ -1,7 +1,8 @@
 # WKWebExtension.WindowState.maximized
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a window is maximized.
 
@@ -16,6 +17,10 @@ Indicates a window is maximized.
 
 ```swift
 case maximized
+```
+
+```c
+WKWebExtensionWindowStateMaximized
 ```
 
 

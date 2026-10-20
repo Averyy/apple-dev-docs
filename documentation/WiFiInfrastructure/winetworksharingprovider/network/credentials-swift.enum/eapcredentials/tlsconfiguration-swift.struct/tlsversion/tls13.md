@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration.TLSVersion.tls13
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 TLS 1.3.
 
@@ -18,11 +19,12 @@ case tls13
 
 ## See Also
 
-- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration.TLSVersion.tls10](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/tlsconfiguration-swift.struct/tlsversion/tls10.md)
+### TLS versions
+- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration.TLSVersion.tls10](./tls10.md)
   TLS 1.0.
-- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration.TLSVersion.tls11](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/tlsconfiguration-swift.struct/tlsversion/tls11.md)
+- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration.TLSVersion.tls11](./tls11.md)
   TLS 1.1.
-- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration.TLSVersion.tls12](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/tlsconfiguration-swift.struct/tlsversion/tls12.md)
+- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration.TLSVersion.tls12](./tls12.md)
   TLS 1.2.
 
 

@@ -1,7 +1,8 @@
 # removingPercentEncoding
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a new string created by replacing all percent-encoded sequences with the matching UTF-8 characters.
 

@@ -1,7 +1,8 @@
 # ILClassificationAction.none
 
 **Framework**: SMS and Call Reporting  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No action is required.
 
@@ -17,17 +18,22 @@ No action is required.
 case none
 ```
 
+```c
+ILClassificationActionNone
+```
+
 #### Discussion
 
 The extension just dismisses the [`ILClassificationUIExtensionViewController`](https://developer.apple.com/documentation/identitylookupui/ilclassificationuiextensionviewcontroller).
 
 ## See Also
 
-- [ILClassificationAction.reportJunk](ilclassificationaction/reportjunk.md)
+### Classifications
+- [ILClassificationAction.reportJunk](./reportjunk.md)
   The system should report the communication as junk.
-- [ILClassificationAction.reportJunkAndBlockSender](ilclassificationaction/reportjunkandblocksender.md)
+- [ILClassificationAction.reportJunkAndBlockSender](./reportjunkandblocksender.md)
   The system should report the communication as junk and add the number to the system’s block list.
-- [ILClassificationAction.reportNotJunk](ilclassificationaction/reportnotjunk.md)
+- [ILClassificationAction.reportNotJunk](./reportnotjunk.md)
   The system should report that the communication is not junk.
 
 

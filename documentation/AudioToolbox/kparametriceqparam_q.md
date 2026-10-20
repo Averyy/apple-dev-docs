@@ -1,15 +1,16 @@
 # kParametricEQParam_Q
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,10 +18,15 @@
 var kParametricEQParam_Q: AudioUnitParameterID { get }
 ```
 
+```c
+kParametricEQParam_Q
+```
+
 ## See Also
 
-- [var kParametricEQParam_CenterFreq: AudioUnitParameterID](kparametriceqparam_centerfreq.md)
-- [var kParametricEQParam_Gain: AudioUnitParameterID](kparametriceqparam_gain.md)
+### Constants
+- [var kParametricEQParam_CenterFreq: AudioUnitParameterID](./kparametriceqparam_centerfreq.md)
+- [var kParametricEQParam_Gain: AudioUnitParameterID](./kparametriceqparam_gain.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # buildBlock(_:)
 
 **Framework**: Accessory Transport Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Builds an accessory message from one or more payload components.
 

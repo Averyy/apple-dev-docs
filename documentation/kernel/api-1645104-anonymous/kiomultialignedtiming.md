@@ -1,14 +1,15 @@
 # kIOMultiAlignedTiming
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 kIOMultiAlignedTiming = 0x00000040
 ```
 

@@ -1,7 +1,8 @@
 # collectionView(_:targetContentOffsetForProposedContentOffset:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gives the delegate an opportunity to customize the content offset for layout changes and animated updates.
 
@@ -18,6 +19,10 @@ Gives the delegate an opportunity to customize the content offset for layout cha
 optional func collectionView(_ collectionView: UICollectionView, targetContentOffsetForProposedContentOffset proposedContentOffset: CGPoint) -> CGPoint
 ```
 
+```objc
+- (CGPoint) collectionView:(UICollectionView *) collectionView targetContentOffsetForProposedContentOffset:(CGPoint) proposedContentOffset;
+```
+
 #### Return Value
 
 The content offset that you want to use instead. If you do not implement this method, the collection view uses the value in the `proposedContentOffset` parameter.
@@ -26,7 +31,7 @@ The content offset that you want to use instead. If you do not implement this me
 
 During layout updates, or when transitioning between layouts, the collection view calls this method to give you the opportunity to change the proposed content offset to use at the end of the animation. You might return a new value if the layout or animations might cause items to be positioned in a way that is not optimal for your design.
 
-This method is called after the layout object’s [`targetContentOffset(forProposedContentOffset:)`](uicollectionviewlayout/targetcontentoffset(forproposedcontentoffset:).md) method. Implement this method in situations where you do not want to subclass your layout object to modify the content offset.
+This method is called after the layout object’s [`targetContentOffset(forProposedContentOffset:)`](../uicollectionviewlayout/targetcontentoffset%28forproposedcontentoffset%29.md) method. Implement this method in situations where you do not want to subclass your layout object to modify the content offset.
 
 ## Parameters
 
@@ -35,9 +40,10 @@ This method is called after the layout object’s [`targetContentOffset(forPropo
 
 ## See Also
 
-- [func collectionView(UICollectionView, transitionLayoutForOldLayout: UICollectionViewLayout, newLayout: UICollectionViewLayout) -> UICollectionViewTransitionLayout](uicollectionviewdelegate/collectionview(_:transitionlayoutforoldlayout:newlayout:).md)
+### Handling layout changes
+- [func collectionView(UICollectionView, transitionLayoutForOldLayout: UICollectionViewLayout, newLayout: UICollectionViewLayout) -> UICollectionViewTransitionLayout](./collectionview%28_,transitionlayoutforoldlayout,newlayout%29.md)
   Asks for the custom transition layout to use when moving between the specified layouts.
-- [func collectionView(UICollectionView, targetIndexPathForMoveOfItemFromOriginalIndexPath: IndexPath, atCurrentIndexPath: IndexPath, toProposedIndexPath: IndexPath) -> IndexPath](uicollectionviewdelegate/collectionview(_:targetindexpathformoveofitemfromoriginalindexpath:atcurrentindexpath:toproposedindexpath:).md)
+- [func collectionView(UICollectionView, targetIndexPathForMoveOfItemFromOriginalIndexPath: IndexPath, atCurrentIndexPath: IndexPath, toProposedIndexPath: IndexPath) -> IndexPath](./collectionview%28_,targetindexpathformoveofitemfromoriginalindexpath,atcurrentindexpath,toproposedindexpath%29.md)
   Asks the delegate for the index path to use when moving an item.
 
 

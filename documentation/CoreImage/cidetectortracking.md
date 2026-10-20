@@ -1,7 +1,8 @@
 # CIDetectorTracking
 
 **Framework**: Core Image  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key used to enable or disable face tracking for the detector. Use this option when you want to track faces across frames in a video.
 
@@ -10,7 +11,7 @@ A key used to enable or disable face tracking for the detector. Use this option 
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
 - macOS 10.8+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,15 +20,20 @@ A key used to enable or disable face tracking for the detector. Use this option 
 let CIDetectorTracking: String
 ```
 
+```c
+extern NSString * const CIDetectorTracking;
+```
+
 ## See Also
 
-- [let CIDetectorAccuracy: String](cidetectoraccuracy.md)
+### Constants
+- [let CIDetectorAccuracy: String](./cidetectoraccuracy.md)
   A key used to specify the desired accuracy for the detector.
-- [let CIDetectorMinFeatureSize: String](cidetectorminfeaturesize.md)
+- [let CIDetectorMinFeatureSize: String](./cidetectorminfeaturesize.md)
   A key used to specify the minimum size that the detector will recognize as a feature.
-- [let CIDetectorNumberOfAngles: String](cidetectornumberofangles.md)
+- [let CIDetectorNumberOfAngles: String](./cidetectornumberofangles.md)
   The number of perspectives to use for detecting a face in video input.
-- [let CIDetectorMaxFeatureCount: String](cidetectormaxfeaturecount.md)
+- [let CIDetectorMaxFeatureCount: String](./cidetectormaxfeaturecount.md)
   The key to the configuration dictionary whose value represents the maximum number of features the detector should return.
 
 

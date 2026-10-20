@@ -1,7 +1,8 @@
 # ExecuteDistributedTargetError.ErrorCode.other
 
 **Framework**: Distributed  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A general issue during the execution of the distributed call target occurred.
 
@@ -11,7 +12,7 @@ A general issue during the execution of the distributed call target occurred.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

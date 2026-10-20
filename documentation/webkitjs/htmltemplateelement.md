@@ -1,7 +1,8 @@
 # HTMLTemplateElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLTemplateElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [content](htmltemplateelement/1631143-content.md)
+- [content](./htmltemplateelement/api-1631143-content.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

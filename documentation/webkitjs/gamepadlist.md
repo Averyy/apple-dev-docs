@@ -1,7 +1,8 @@
 # GamepadList
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,16 +10,16 @@
 
 ## Declaration
 
-```swift
+```
 interface GamepadList
 ```
 
 ## Topics
 
 ### Instance Properties
-- [length](gamepadlist/1631964-length.md)
+- [length](./gamepadlist/api-1631964-length.md)
 ### Instance Methods
-- [item](gamepadlist/1632374-item.md)
+- [item](./gamepadlist/api-1632374-item.md)
 
 
 ---

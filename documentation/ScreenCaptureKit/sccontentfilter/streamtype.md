@@ -1,13 +1,16 @@
 # streamType
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the streaming content.
 
 **Availability**:
-- Mac Catalyst 18.2+
-- macOS 14.0+
+- Mac Catalyst 18.2+ - Deprecated in 18.2
+- macOS 14.0+ - Deprecated in 14.2
+
+> **Deprecated**: Use style instead
 
 ## Declaration
 
@@ -15,19 +18,24 @@ The type of the streaming content.
 var streamType: SCStreamType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) SCStreamType streamType;
+```
+
 #### Discussion
 
-> **Note**:  Use the [`style`](sccontentfilter/style.md) property instead, which provides additional information about the content.
+> **Note**:  Use the [`style`](./style.md) property instead, which provides additional information about the content.
 
 ## See Also
 
-- [var contentRect: CGRect](sccontentfilter/contentrect.md)
+### Filter properties
+- [var contentRect: CGRect](./contentrect.md)
   The size and location of the content to filter, in screen points.
-- [var pointPixelScale: Float](sccontentfilter/pointpixelscale.md)
+- [var pointPixelScale: Float](./pointpixelscale.md)
   The scaling factor used to translate screen points into pixels.
-- [enum SCStreamType](scstreamtype.md)
+- [enum SCStreamType](../scstreamtype.md)
   The display type of the presented stream.
-- [var style: SCShareableContentStyle](sccontentfilter/style.md)
+- [var style: SCShareableContentStyle](./style.md)
   The display style of the sharable content.
 
 

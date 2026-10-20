@@ -1,7 +1,8 @@
 # FunctionStatus
 
 **Framework**: CarKey  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A value that the vehicle can return to indicate the status of a particular vehicle feature.
 
@@ -20,31 +21,32 @@ struct FunctionStatus
 
 #### Overview
 
-A [`FunctionStatus`](functionstatus.md) type wraps the custom code that the vehicle returns. You define the status codes and their meanings for your vehicle’s features. For example, you might define status codes to represent the locked, unlocked, and unknown states of your vehicle’s door-locking system.
+A [`FunctionStatus`](./functionstatus.md) type wraps the custom code that the vehicle returns. You define the status codes and their meanings for your vehicle’s features. For example, you might define status codes to represent the locked, unlocked, and unknown states of your vehicle’s door-locking system.
 
 ## Topics
 
 ### Creating a Function Status Type
-- [init(rawValue: Int)](functionstatus/init(rawvalue:).md)
+- [init(rawValue: Int)](./functionstatus/init%28rawvalue%29.md)
   Creates and returns a new function status with the specified value.
-- [init(Int)](functionstatus/init(_:).md)
+- [init(Int)](./functionstatus/init%28_%29.md)
   Creates and returns a new function status with the specified value.
 ### Getting the Value
-- [let rawValue: Int](functionstatus/rawvalue.md)
+- [let rawValue: Int](./functionstatus/rawvalue.md)
   The raw value that corresponds to the feature-specific status.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
 
 ## See Also
 
-- [var supportedFunctions: [FunctionIdentifier]](vehiclereport/supportedfunctions.md)
+### Getting the Vehicle’s Supported Functions
+- [var supportedFunctions: [FunctionIdentifier]](./vehiclereport/supportedfunctions.md)
   An array of function identifiers that indicates the features the vehicle supports, populated only after the first BLE connection with the vehicle.
-- [func status(for: FunctionIdentifier) throws -> FunctionStatus?](vehiclereport/status(for:).md)
+- [func status(for: FunctionIdentifier) throws -> FunctionStatus?](./vehiclereport/status%28for%29.md)
   Returns the current status of the specified vehicle function.
 
 

@@ -1,7 +1,8 @@
 # width
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of the docking region, in meters.
 

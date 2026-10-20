@@ -1,7 +1,8 @@
 # GCPhysicalInputSourceDirection
 
 **Framework**: Game Controller  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The directions that a physical input source involves.
 
@@ -19,36 +20,41 @@ The directions that a physical input source involves.
 struct GCPhysicalInputSourceDirection
 ```
 
+```c
+enum GCPhysicalInputSourceDirection : NSUInteger;
+```
+
 ## Topics
 
 ### Directions
-- [static var up: GCPhysicalInputSourceDirection](gcphysicalinputsourcedirection/up.md)
+- [static var up: GCPhysicalInputSourceDirection](./gcphysicalinputsourcedirection/up.md)
   The physical input source contains a value for the up direction.
-- [static var right: GCPhysicalInputSourceDirection](gcphysicalinputsourcedirection/right.md)
+- [static var right: GCPhysicalInputSourceDirection](./gcphysicalinputsourcedirection/right.md)
   The physical input source supports the right direction.
-- [static var down: GCPhysicalInputSourceDirection](gcphysicalinputsourcedirection/down.md)
+- [static var down: GCPhysicalInputSourceDirection](./gcphysicalinputsourcedirection/down.md)
   The physical input source supports the down direction.
-- [static var left: GCPhysicalInputSourceDirection](gcphysicalinputsourcedirection/left.md)
+- [static var left: GCPhysicalInputSourceDirection](./gcphysicalinputsourcedirection/left.md)
   The physical input source supports the left direction.
 ### Creating the supported directions
-- [init(rawValue: UInt)](gcphysicalinputsourcedirection/init(rawvalue:).md)
+- [init(rawValue: UInt)](./gcphysicalinputsourcedirection/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [var direction: GCPhysicalInputSourceDirection](gcphysicalinputsource/direction.md)
+### Getting directions
+- [var direction: GCPhysicalInputSourceDirection](./gcphysicalinputsource/direction.md)
   The directional input, if any, that a physical input source involves.
 
 

@@ -1,14 +1,15 @@
 # systemTraitsAffectingImageLookup
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -18,12 +19,13 @@ static var systemTraitsAffectingImageLookup: [UITrait] { get }
 
 ## Mentions
 
-- [Adapting your app when traits change](adapting-your-app-when-traits-change.md)
+- [Adapting your app when traits change](../adapting-your-app-when-traits-change.md)
 
 ## See Also
 
-- [static var systemTraitsAffectingColorAppearance: [UITrait]](uitraitcollection/systemtraitsaffectingcolorappearance-64z7q.md)
-- [static var systemTraitsAffectingVerticalBarEdge: [UITrait]](uitraitcollection/systemtraitsaffectingverticalbaredge-475st.md)
+### Getting related traits
+- [static var systemTraitsAffectingColorAppearance: [UITrait]](./systemtraitsaffectingcolorappearance-64z7q.md)
+- [static var systemTraitsAffectingVerticalBarEdge: [UITrait]](./systemtraitsaffectingverticalbaredge-475st.md)
   The system traits that affect the value of `verticalBarEdge`.
 
 

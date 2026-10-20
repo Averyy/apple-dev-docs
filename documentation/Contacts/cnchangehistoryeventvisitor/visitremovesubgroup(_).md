@@ -1,7 +1,8 @@
 # visitRemoveSubgroup(_:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the user removed a subgroup from a group.
 
@@ -19,6 +20,10 @@ Tells the delegate that the user removed a subgroup from a group.
 optional func visitRemoveSubgroup(_ event: CNChangeHistoryRemoveSubgroupFromGroupEvent)
 ```
 
+```objc
+- (void) visitRemoveSubgroupFromGroupEvent:(CNChangeHistoryRemoveSubgroupFromGroupEvent *) event;
+```
+
 #### Discussion
 
 Inspect the group and subgroup in the event that the system provides and update your app’s cached data accordingly.
@@ -29,7 +34,8 @@ Inspect the group and subgroup in the event that the system provides and update 
 
 ## See Also
 
-- [func visitAddSubgroup(CNChangeHistoryAddSubgroupToGroupEvent)](cnchangehistoryeventvisitor/visitaddsubgroup(_:).md)
+### Updating subgroups
+- [func visitAddSubgroup(CNChangeHistoryAddSubgroupToGroupEvent)](./visitaddsubgroup%28_%29.md)
   Tells the delegate that the user added a subgroup to a group.
 
 

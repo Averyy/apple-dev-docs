@@ -1,7 +1,8 @@
 # scalingBehavior
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scaling behavior describing how an object scales due to gestures performed by the user.
 

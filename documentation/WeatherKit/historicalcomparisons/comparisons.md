@@ -1,7 +1,8 @@
 # comparisons
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of comparisons between current readings and historical averages, ordered by significance of deviation.
 

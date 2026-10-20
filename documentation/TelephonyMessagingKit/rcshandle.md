@@ -1,7 +1,8 @@
 # RCSHandle
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that represents an RCS destination or sender.
 
@@ -16,62 +17,63 @@ enum RCSHandle
 
 ## Mentions
 
-- [Creating a carrier messaging app](creating-a-carrier-messaging-app.md)
+- [Creating a carrier messaging app](./creating-a-carrier-messaging-app.md)
 
 ## Topics
 
 ### Creating a handle
-- [static func phoneNumber(String) -> RCSHandle?](rcshandle/phonenumber(_:).md)
+- [static func phoneNumber(String) -> RCSHandle?](./rcshandle/phonenumber%28_%29.md)
   Initializes a URI handle instance with the given phone number.
 ### Accessing handle values
-- [case uri(RCSHandle.URI)](rcshandle/uri(_:).md)
+- [case uri(RCSHandle.URI)](./rcshandle/uri%28_%29.md)
   A handle that represents a single recipient or sender, as identified by a URI.
-- [RCSHandle.URI](rcshandle/uri.md)
+- [RCSHandle.URI](./rcshandle/uri.md)
   A structure that represents an RCS URI handle.
-- [case group(RCSHandle.Group)](rcshandle/group(_:).md)
+- [case group(RCSHandle.Group)](./rcshandle/group%28_%29.md)
   A handle that represents a group.
-- [RCSHandle.Group](rcshandle/group.md)
+- [RCSHandle.Group](./rcshandle/group.md)
   A structure that represents an RCS group handle.
 ### Describing an RCS handle
-- [var description: String](rcshandle/description.md)
+- [var description: String](./rcshandle/description.md)
   A textual representation of this instance.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func sendMessage(RCSMessage.Text, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](rcsservice/sendmessage(_:to:using:messageid:)-70q7h.md)
+### Sending messages
+- [func sendMessage(RCSMessage.Text, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](./rcsservice/sendmessage%28_,to,using,messageid%29-70q7h.md)
   Sends a text message to a specified destination.
-- [RCSMessage.Text](rcsmessage/text.md)
+- [RCSMessage.Text](./rcsmessage/text.md)
   A structure that represents text content in an RCS message.
-- [func sendMessage(RCSMessage.FileTransfer, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](rcsservice/sendmessage(_:to:using:messageid:)-63zct.md)
+- [func sendMessage(RCSMessage.FileTransfer, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](./rcsservice/sendmessage%28_,to,using,messageid%29-63zct.md)
   Sends a file transfer message to a specified destination.
-- [RCSMessage.FileTransfer](rcsmessage/filetransfer.md)
+- [RCSMessage.FileTransfer](./rcsmessage/filetransfer.md)
   A structure that represents file transfer content in an RCS message.
-- [func sendMessage(RCSMessage.ComposingIndicator, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](rcsservice/sendmessage(_:to:using:messageid:)-9i178.md)
+- [func sendMessage(RCSMessage.ComposingIndicator, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](./rcsservice/sendmessage%28_,to,using,messageid%29-9i178.md)
   Sends a composing indicator message to a specified destination.
-- [RCSMessage.ComposingIndicator](rcsmessage/composingindicator.md)
+- [RCSMessage.ComposingIndicator](./rcsmessage/composingindicator.md)
   A structure that represents RFC 3994 composing indicator content in an RCS message.
-- [func sendMessage(RCSMessage.GeolocationPush, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](rcsservice/sendmessage(_:to:using:messageid:)-y1z.md)
+- [func sendMessage(RCSMessage.GeolocationPush, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](./rcsservice/sendmessage%28_,to,using,messageid%29-y1z.md)
   Sends a geolocation push message to a specified destination.
-- [RCSMessage.GeolocationPush](rcsmessage/geolocationpush.md)
+- [RCSMessage.GeolocationPush](./rcsmessage/geolocationpush.md)
   A structure that represents geolocation push content in an RCS message.
-- [func sendMessage(RCSMessage.DispositionNotification, to: RCSHandle.URI, using: CellularServiceID, messageID: RCSMessageID, group: RCSHandle.Group?) async throws](rcsservice/sendmessage(_:to:using:messageid:group:).md)
+- [func sendMessage(RCSMessage.DispositionNotification, to: RCSHandle.URI, using: CellularServiceID, messageID: RCSMessageID, group: RCSHandle.Group?) async throws](./rcsservice/sendmessage%28_,to,using,messageid,group%29.md)
   Sends the disposition for an incoming message.
-- [RCSMessage.DispositionNotification](rcsmessage/dispositionnotification.md)
+- [RCSMessage.DispositionNotification](./rcsmessage/dispositionnotification.md)
   A structure that represents disposition notification content in an RCS message, such as whether delivery succeeded or failed.
-- [struct CellularServiceID](cellularserviceid.md)
+- [struct CellularServiceID](./cellularserviceid.md)
   An opaque identifier that represents the cellular service for which to provide operations.
-- [struct RCSMessageID](rcsmessageid.md)
+- [struct RCSMessageID](./rcsmessageid.md)
   A structure that represents an RCS message identifier.
 
 

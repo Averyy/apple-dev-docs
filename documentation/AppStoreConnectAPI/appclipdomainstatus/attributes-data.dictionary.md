@@ -1,7 +1,8 @@
 # AppClipDomainStatus.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes that describe the App Clip Domain Status resource.
 
@@ -10,14 +11,14 @@ The attributes that describe the App Clip Domain Status resource.
 
 ## Declaration
 
-```swift
+```
 object AppClipDomainStatus.Attributes
 ```
 
 ## Topics
 
 ### Objects
-- [object AppClipDomainStatus.Attributes.Domains](appclipdomainstatus/attributes-data.dictionary/domains-data.dictionary.md)
+- [object AppClipDomainStatus.Attributes.Domains](./attributes-data.dictionary/domains-data.dictionary.md)
   Domains you associated with your App Clip.
 
 ## Properties

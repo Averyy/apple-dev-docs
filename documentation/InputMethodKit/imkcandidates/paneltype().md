@@ -1,7 +1,8 @@
 # panelType()
 
 **Framework**: InputMethodKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the style of the candidates window.
 
@@ -14,17 +15,22 @@ Returns the style of the candidates window.
 func panelType() -> IMKCandidatePanelType
 ```
 
+```objc
+- (IMKCandidatePanelType) panelType;
+```
+
 #### Return Value
 
-A [`IMKCandidatePanelType`](imkcandidatepaneltype.md) constant that represents the style of the candidates window.
+A [`IMKCandidatePanelType`](../imkcandidatepaneltype.md) constant that represents the style of the candidates window.
 
 ## See Also
 
-- [func setPanelType(IMKCandidatePanelType)](imkcandidates/setpaneltype(_:).md)
+### Managing Window Type and Text Attributes
+- [func setPanelType(IMKCandidatePanelType)](./setpaneltype%28_%29.md)
   Sets the style of the candidates window.
-- [func setAttributes([AnyHashable : Any]!)](imkcandidates/setattributes(_:).md)
+- [func setAttributes([AnyHashable : Any]!)](./setattributes%28_%29.md)
   Sets the style attributes for the candidates window.
-- [func attributes() -> [AnyHashable : Any]!](imkcandidates/attributes.md)
+- [func attributes() -> [AnyHashable : Any]!](./attributes%28%29.md)
   Returns a dictionary of the style attributes used for the candidates window..
 
 

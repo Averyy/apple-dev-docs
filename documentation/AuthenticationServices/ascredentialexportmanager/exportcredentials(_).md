@@ -1,7 +1,8 @@
 # exportCredentials(_:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports the provided credential data.
 
@@ -20,7 +21,7 @@ func exportCredentials(_ credentialData: ASExportedCredentialData) async throws
 
 #### Discussion
 
-After you call the [`requestExport(for:)`](ascredentialexportmanager/requestexport(for:).md) method and collect the credentials to export, pack the credentials into an [`ASExportedCredentialData`](asexportedcredentialdata.md) object and call this method.
+After you call the [`requestExport(for:)`](./requestexport%28for%29.md) method and collect the credentials to export, pack the credentials into an [`ASExportedCredentialData`](../asexportedcredentialdata.md) object and call this method.
 
 ## Parameters
 
@@ -28,11 +29,12 @@ After you call the [`requestExport(for:)`](ascredentialexportmanager/requestexpo
 
 ## See Also
 
-- [func requestExport(for: String?) async throws -> ASCredentialExportManager.ExportOptions](ascredentialexportmanager/requestexport(for:).md)
+### Exporting credentials
+- [func requestExport(for: String?) async throws -> ASCredentialExportManager.ExportOptions](./requestexport%28for%29.md)
   Begins the export process.
-- [ASCredentialExportManager.ExportOptions](ascredentialexportmanager/exportoptions.md)
+- [ASCredentialExportManager.ExportOptions](./exportoptions.md)
   Options that configure the behavior of a credential export operation.
-- [struct ASExportedCredentialData](asexportedcredentialdata.md)
+- [struct ASExportedCredentialData](../asexportedcredentialdata.md)
   A container for credential data that your app provides to an exporter or receives from an importer.
 
 

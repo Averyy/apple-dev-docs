@@ -1,7 +1,8 @@
 # NEPacketTunnelFlow
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object you use to read and write packets to and from the tunnel’s virtual interface.
 
@@ -19,6 +20,10 @@ An object you use to read and write packets to and from the tunnel’s virtual i
 class NEPacketTunnelFlow
 ```
 
+```objc
+@interface NEPacketTunnelFlow : NSObject
+```
+
 #### Overview
 
 Use the `NEPacketTunnelFlow` class to implement a custom-IP tunneling protocol for your packet tunnel. For example, use the APIs in this class to read packets from the virtual interface, so you can then encapsulate these packets and send them to a packet-tunnel server. Likewise, read packets from your packet-tunnel server and use these APIs to write the packets back to the tunnel’s virtual interface.
@@ -26,32 +31,33 @@ Use the `NEPacketTunnelFlow` class to implement a custom-IP tunneling protocol f
 ## Topics
 
 ### Handling IP packets
-- [func readPacketObjects(completionHandler: ([NEPacket]) -> Void)](nepackettunnelflow/readpacketobjects(completionhandler:).md)
+- [func readPacketObjects(completionHandler: ([NEPacket]) -> Void)](./nepackettunnelflow/readpacketobjects%28completionhandler%29.md)
   Read multiple IP packets from the TUN interface.
-- [func writePacketObjects([NEPacket]) -> Bool](nepackettunnelflow/writepacketobjects(_:).md)
+- [func writePacketObjects([NEPacket]) -> Bool](./nepackettunnelflow/writepacketobjects%28_%29.md)
   Write multiple IP packets to the TUN interface.
-- [func readPackets(completionHandler: ([Data], [NSNumber]) -> Void)](nepackettunnelflow/readpackets(completionhandler:).md)
+- [func readPackets(completionHandler: ([Data], [NSNumber]) -> Void)](./nepackettunnelflow/readpackets%28completionhandler%29.md)
   Reads IP packets from the TUN interface.
-- [func writePackets([Data], withProtocols: [NSNumber]) -> Bool](nepackettunnelflow/writepackets(_:withprotocols:).md)
+- [func writePackets([Data], withProtocols: [NSNumber]) -> Bool](./nepackettunnelflow/writepackets%28_,withprotocols%29.md)
   Writes IP packets to the TUN interface.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NEPacket](nepacket.md)
+### Packet handling
+- [class NEPacket](./nepacket.md)
   A network packet and its associated properties.
-- [In-Provider Networking](in-provider-networking.md)
+- [In-Provider Networking](./in-provider-networking.md)
   Network APIs for use by all types of NetworkExtension providers and by hotspot helpers.
 
 

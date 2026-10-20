@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/dev/extensions.html
 
 # Custom Extensions in MLX
 
-**
-
-- [.rst](../_sources/dev/extensions.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# Custom Extensions in MLX
-
- Table of contents 
-
-## Contents
-
-# Custom Extensions in MLX
-
 You can extend MLX with custom operations on the CPU or GPU. This guide
 explains how to do that with a simple example.
 
@@ -72,7 +45,7 @@ more detail.
 ### Operations
 
 Operations are the front-end functions that operate on arrays. They are defined
-in the C++ API ([Operations](../cpp/ops.html#cpp-ops)), and the Python API ([Operations](../python/ops.html#ops)) binds them.
+in the C++ API ([Operations](../cpp/ops.md#cpp-ops)), and the Python API ([Operations](../python/ops.md#ops)) binds them.
 
 We would like an operation `axpby()` that takes in two arrays, `x` and
 `y`, and two scalars, `alpha` and `beta`. This is how to define it in
@@ -592,7 +565,7 @@ the Python package
 ### Binding to Python
 
 We use [nanobind](https://nanobind.readthedocs.io/en/latest/) to build a Python API for the C++ library. Since bindings for
-components such as [mlx.core.array](../python/_autosummary/mlx.core.array.html#mlx.core.array), [mlx.core.stream](../python/_autosummary/mlx.core.stream.html#mlx.core.stream), etc. are
+components such as [mlx.core.array](../python/_autosummary/mlx.core.array.md#mlx.core.array), [mlx.core.stream](../python/_autosummary/mlx.core.stream.md#mlx.core.stream), etc. are
 already provided, adding our `axpby()` is simple.
 
 ```
@@ -910,7 +883,7 @@ The results are `Simple axpby: 1.559 ms | Custom axpby: 0.774 ms`. We see
 modest improvements right away!
 
 This operation is now good to be used to build other operations, in
-[mlx.nn.Module](../python/nn/module.html#mlx.nn.Module) calls, and also as a part of graph transformations like
+[mlx.nn.Module](../python/nn/module.md#mlx.nn.Module) calls, and also as a part of graph transformations like
 `grad()`.
 
 ## Scripts
@@ -918,5 +891,3 @@ This operation is now good to be used to build other operations, in
 Download the code
 
 The full example code is available in [mlx](https://github.com/ml-explore/mlx/tree/main/examples/cmake_extension/).
-
-** Contents

@@ -1,7 +1,8 @@
 # setSystemTrackingEnabled(_:)
 
 **Framework**: DockKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enable and disable system tracking for camera-enabled apps.
 
@@ -19,7 +20,7 @@ func setSystemTrackingEnabled(_ isEnabled: Bool) async throws
 
 ## Mentions
 
-- [Modify rotation and positioning programmatically](modify-rotation-and-positioning-behavior-programmatically.md)
+- [Modify rotation and positioning programmatically](../modify-rotation-and-positioning-behavior-programmatically.md)
 
 #### Discussion
 
@@ -27,11 +28,12 @@ DockKit enables system tracking by default, and any camera stream automatically 
 
 Always set this value to `false` before performing your own custom tracking.
 
-> **Note**: [`DockKitError.notSupported`](dockkiterror/notsupported.md) if called on macOS.
+> **Throws**: [`DockKitError.notSupported`](../dockkiterror/notsupported.md) if called on macOS.
 
 ## See Also
 
-- [var isSystemTrackingEnabled: Bool](dockaccessorymanager/issystemtrackingenabled.md)
+### Changing tracking behavior
+- [var isSystemTrackingEnabled: Bool](./issystemtrackingenabled.md)
   An indication of whether system tracking is enabled.
 
 

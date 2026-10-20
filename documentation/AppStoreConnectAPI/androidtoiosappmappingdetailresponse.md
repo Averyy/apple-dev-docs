@@ -1,7 +1,8 @@
 # AndroidToIosAppMappingDetailResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response that contains a single Android to iOS app mapping detail response resource.
 
@@ -10,7 +11,7 @@ A response that contains a single Android to iOS app mapping detail response res
 
 ## Declaration
 
-```swift
+```
 object AndroidToIosAppMappingDetailResponse
 ```
 
@@ -21,15 +22,16 @@ object AndroidToIosAppMappingDetailResponse
 
 ## See Also
 
-- [object AndroidToIosAppMappingDetail](androidtoiosappmappingdetail.md)
+### Managing Mapping Requests and Responses
+- [object AndroidToIosAppMappingDetail](./androidtoiosappmappingdetail.md)
   The data structure that represents an Android to iOS app mapping detail resource.
-- [object AndroidToIosAppMappingDetailCreateRequest](androidtoiosappmappingdetailcreaterequest.md)
+- [object AndroidToIosAppMappingDetailCreateRequest](./androidtoiosappmappingdetailcreaterequest.md)
   The request body you use to create an Android to iOS app mapping detail.
-- [object AndroidToIosAppMappingDetailUpdateRequest](androidtoiosappmappingdetailupdaterequest.md)
+- [object AndroidToIosAppMappingDetailUpdateRequest](./androidtoiosappmappingdetailupdaterequest.md)
   The request body you use to update an Android to iOS app mapping detail update request.
-- [object AndroidToIosAppMappingDetailsResponse](androidtoiosappmappingdetailsresponse.md)
+- [object AndroidToIosAppMappingDetailsResponse](./androidtoiosappmappingdetailsresponse.md)
   A response that contains a list of Android to iOS app mapping details response resources.
-- [object AppAndroidToIosAppMappingDetailsLinkagesResponse](appandroidtoiosappmappingdetailslinkagesresponse.md)
+- [object AppAndroidToIosAppMappingDetailsLinkagesResponse](./appandroidtoiosappmappingdetailslinkagesresponse.md)
   A response that contains a list of IDs of related resources.
 
 

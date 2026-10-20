@@ -1,7 +1,8 @@
 # dependencies
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of package dependencies.
 
@@ -13,7 +14,8 @@ final var dependencies: [Package.Dependency]
 
 ## See Also
 
-- [Package.Dependency](package/dependency.md)
+### Declaring Package Dependencies
+- [Package.Dependency](./dependency.md)
   A package dependency of a Swift package.
 
 

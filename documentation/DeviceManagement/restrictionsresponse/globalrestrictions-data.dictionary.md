@@ -1,7 +1,8 @@
 # RestrictionsResponse.GlobalRestrictions
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that contains the global restrictions in effect.
 
@@ -15,20 +16,20 @@ A dictionary that contains the global restrictions in effect.
 
 ## Declaration
 
-```swift
+```
 object RestrictionsResponse.GlobalRestrictions
 ```
 
 ## Topics
 
 ### Objects
-- [object RestrictionsResponse.GlobalRestrictions.Intersection](restrictionsresponse/globalrestrictions-data.dictionary/intersection-data.dictionary.md)
+- [object RestrictionsResponse.GlobalRestrictions.Intersection](./globalrestrictions-data.dictionary/intersection-data.dictionary.md)
   A dictionary that contains intersected restrictions.
-- [object RestrictionsResponse.GlobalRestrictions.RestrictedBool](restrictionsresponse/globalrestrictions-data.dictionary/restrictedbool-data.dictionary.md)
+- [object RestrictionsResponse.GlobalRestrictions.RestrictedBool](./globalrestrictions-data.dictionary/restrictedbool-data.dictionary.md)
   A dictionary that contains Boolean restrictions.
-- [object RestrictionsResponse.GlobalRestrictions.RestrictedValue](restrictionsresponse/globalrestrictions-data.dictionary/restrictedvalue-data.dictionary.md)
+- [object RestrictionsResponse.GlobalRestrictions.RestrictedValue](./globalrestrictions-data.dictionary/restrictedvalue-data.dictionary.md)
   A dictionary that contains numeric restrictions.
-- [object RestrictionsResponse.GlobalRestrictions.Union](restrictionsresponse/globalrestrictions-data.dictionary/union-data.dictionary.md)
+- [object RestrictionsResponse.GlobalRestrictions.Union](./globalrestrictions-data.dictionary/union-data.dictionary.md)
   A dictionary that contains unioned restrictions.
 
 ## Properties
@@ -40,9 +41,10 @@ object RestrictionsResponse.GlobalRestrictions
 
 ## See Also
 
-- [object RestrictionsResponse.ErrorChainItem](restrictionsresponse/errorchainitem.md)
+### Objects
+- [object RestrictionsResponse.ErrorChainItem](./errorchainitem.md)
   A dictionary that describes an error chain item.
-- [object RestrictionsResponse.ProfileRestrictions](restrictionsresponse/profilerestrictions-data.dictionary.md)
+- [object RestrictionsResponse.ProfileRestrictions](./profilerestrictions-data.dictionary.md)
   A dictionary that contains restrictions from each profile.
 
 

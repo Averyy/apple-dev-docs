@@ -1,7 +1,8 @@
 # resetDeformation(entity:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Resets the deformation of the cloth body to its initial pose and motion.
 
@@ -22,11 +23,12 @@ static func resetDeformation(entity: Entity)
 
 ## See Also
 
-- [var motionTypes: PerClothVertexData<ClothBodyComponent.ParticleMotionType>](clothbodycomponent/motiontypes.md)
+### Controlling cloth motion
+- [var motionTypes: PerClothVertexData<ClothBodyComponent.ParticleMotionType>](./motiontypes.md)
   Motion types for each particle in the body.
-- [ClothBodyComponent.ParticleMotionType](clothbodycomponent/particlemotiontype.md)
+- [ClothBodyComponent.ParticleMotionType](./particlemotiontype.md)
   Defines whether a particle is moved by the simulation or by the entity transform.
-- [var mass: Float](clothbodycomponent/mass.md)
+- [var mass: Float](./mass.md)
   Mass of the body as a whole, in Kg.
 
 

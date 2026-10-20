@@ -1,6 +1,7 @@
 # Evaluating an app’s video color using light-measurement Instruments
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: Article
 
 Measure front-of-screen luminance by using test pattern files with a spectroradiometer or colorimeter.
 
@@ -8,11 +9,11 @@ Measure front-of-screen luminance by using test pattern files with a spectroradi
 
 Evaluate the color characteristics of your AVFoundation-based app or workflow using test pattern files. Output these files to a spectroradiometer or colorimeter to measure the front-of-screen (FoS) luminance, and compare your measurements against the expected values.
 
-##### Measure Fos Luminance
+##### Measure FoS luminance
 
-Use the test files from the `SDR_BT709_HDTV` folder (see “Color Test Patterns” on the [`AVFoundation Developer Page`](https://developer.apple.comhttps://developer.apple.com/av-foundation/)) with a measuring instrument such as a spectroradiometer or colorimeter to measure the FoS luminance. Take your measurements after aligning the instrument to the center of the display in a dark room to prevent stray light or glare from influencing the measurements. You may see some variation in the readings depending on your instrument’s tolerances and its calibration.
+Use the test files from the `SDR_BT709_HDTV` folder (see “Color Test Patterns” on the [AVFoundation Developer Page](https://developer.apple.com/av-foundation/)) with a measuring instrument such as a spectroradiometer or colorimeter to measure the FoS luminance. Take your measurements after aligning the instrument to the center of the display in a dark room to prevent stray light or glare from influencing the measurements. You may see some variation in the readings depending on your instrument’s tolerances and its calibration.
 
-Use the luminance ramp test pattern files in the folder `SDR_BT709_HDTV` to measure the FoS luminance. Open the test pattern movie files in your app or the QuickTime Player app, then measure and compare the results against those shown below. If you encounter conflicting results, see [`Ensure accurate color application of your app’s video`](evaluating-an-app-s-video-color#Ensure-accurate-color-application-of-your-apps-video.md) to make certain your app takes advantage of the color-management capabilities of macOS.
+Use the luminance ramp test pattern files in the folder `SDR_BT709_HDTV` to measure the FoS luminance. Open the test pattern movie files in your app or the QuickTime Player app, then measure and compare the results against those shown below. If you encounter conflicting results, see [Ensure accurate color application of your app’s video](./evaluating-an-app-s-video-color.md#Ensure-accurate-color-application-of-your-apps-video) to make certain your app takes advantage of the color-management capabilities of macOS.
 
 The following list summarizes the FoS luminance expectations (output in nits) on macOS platforms for video files tagged as BT.709 (NCLC = 1-1-1).
 
@@ -34,7 +35,7 @@ Reference white nits is the peak SDR luminance capability of HDR Video (P3 - ST 
 
 - **Pro Display XDR BT.1886 reference modes**: HDTV Video (BT.709 – BT.1886), NTSC Video (BT.601 SMPTE-C), and PAL & SECAM Video (BT.601 – EBU):
 
-(where a and b are derived as per [`Recommendation ITU-R BT.1886`](https://developer.apple.comhttps://www.itu.int/dms_pubrec/itu-r/rec/bt/R-REC-BT.1886-0-201103-I!!PDF-E.pdf))
+(where a and b are derived as per [Recommendation ITU-R BT.1886](https://www.itu.int/dms_pubrec/itu-r/rec/bt/R-REC-BT.1886-0-201103-I!!PDF-E.pdf))
 
 a = (Lw ^ (1/gamma) - Lb ^ (1/gamma))^(gamma)
 
@@ -52,9 +53,10 @@ Reference white nits (SDR maximum luminance) and system gamma boost (≥ 1.0) ar
 
 ## See Also
 
-- [Evaluating video using QuickTime test pattern files](evaluating-video-using-quicktime-test-pattern-files.md)
+### Video evaluation
+- [Evaluating video using QuickTime test pattern files](./evaluating-video-using-quicktime-test-pattern-files.md)
   Check color reproduction of your app or workflow by using test pattern files.
-- [Evaluating an app’s video color using video test equipment](evaluating-an-app-s-video-color-using-video-test-equipment.md)
+- [Evaluating an app’s video color using video test equipment](./evaluating-an-app-s-video-color-using-video-test-equipment.md)
   Output test pattern files to a vectorscope or waveform analyzer to review the video signals.
 
 

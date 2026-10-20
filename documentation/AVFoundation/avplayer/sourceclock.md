@@ -1,7 +1,8 @@
 # sourceClock
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A clock the player uses for item time bases.
 
@@ -21,6 +22,10 @@ nonisolated
 var sourceClock: CMClock? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) CMClockRef sourceClock;
+```
+
 #### Discussion
 
 The default value is `nil`. Setting an explicit source clock is useful to synchronize video-only movies with audio that plays through a different audio device.
@@ -29,13 +34,14 @@ The default value is `nil`. Setting an explicit source clock is useful to synchr
 
 ## See Also
 
-- [func setRate(Float, time: CMTime, atHostTime: CMTime)](avplayer/setrate(_:time:athosttime:).md)
+### Synchronizing multiple players
+- [func setRate(Float, time: CMTime, atHostTime: CMTime)](./setrate%28_,time,athosttime%29.md)
   Synchronizes the playback rate and time of the current item with an external source.
-- [func preroll(atRate: Float, completionHandler: ((Bool) -> Void)?)](avplayer/preroll(atrate:completionhandler:).md)
+- [func preroll(atRate: Float, completionHandler: ((Bool) -> Void)?)](./preroll%28atrate,completionhandler%29.md)
   Begins loading media data to prime the media pipelines for playback.
-- [func cancelPendingPrerolls()](avplayer/cancelpendingprerolls.md)
+- [func cancelPendingPrerolls()](./cancelpendingprerolls%28%29.md)
   Cancels any pending preroll requests and invokes the corresponding completion handlers, if present.
-- [var masterClock: CMClock?](avplayer/masterclock.md)
+- [var masterClock: CMClock?](./masterclock.md)
   The host clock for item time bases.
 
 

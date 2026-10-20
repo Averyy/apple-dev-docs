@@ -1,7 +1,8 @@
 # count
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of elements in the collection.
 

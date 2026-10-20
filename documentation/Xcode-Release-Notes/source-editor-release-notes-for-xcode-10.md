@@ -1,6 +1,7 @@
 # Source Editor Release Notes for Xcode 10
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your programming workflow to use new features, and test your workflow against changes.
 
@@ -63,11 +64,12 @@ To turn on the code folding ribbon, open preferences under Text Editing > Editin
 
 ## See Also
 
-- [Build System Release Notes for Xcode 10](build-system-release-notes-for-xcode-10.md)
+### Release Notes
+- [Build System Release Notes for Xcode 10](./build-system-release-notes-for-xcode-10.md)
   Update your apps to use new features, and test your apps against changes.
-- [Interface Builder Release Notes for Xcode 10](interface-builder-release-notes-for-xcode-10.md)
+- [Interface Builder Release Notes for Xcode 10](./interface-builder-release-notes-for-xcode-10.md)
   Update your apps to use new features, and test your apps against changes.
-- [Swift 4.2 Release Notes for Xcode 10](swift-4_2-release-notes-for-xcode-10.md)
+- [Swift 4.2 Release Notes for Xcode 10](./swift-4_2-release-notes-for-xcode-10.md)
   Update your code to use new language features and test your apps against changes.
 
 

@@ -1,17 +1,22 @@
 # OBEXSessionEventTypes
 
 **Framework**: IOBluetooth  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Type identifiers for OBEX sessions.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 struct OBEXSessionEventTypes
+```
+
+```c
+enum OBEXSessionEventTypes : unsigned int;
 ```
 
 #### Overview
@@ -21,51 +26,52 @@ When a new session event occurs, your selector (or C callback) will be given an 
 ## Topics
 
 ### Constants
-- [var kOBEXSessionEventTypeAbortCommandReceived: OBEXSessionEventTypes](kobexsessioneventtypeabortcommandreceived.md)
-- [var kOBEXSessionEventTypeAbortCommandResponseReceived: OBEXSessionEventTypes](kobexsessioneventtypeabortcommandresponsereceived.md)
-- [var kOBEXSessionEventTypeConnectCommandReceived: OBEXSessionEventTypes](kobexsessioneventtypeconnectcommandreceived.md)
-- [var kOBEXSessionEventTypeConnectCommandResponseReceived: OBEXSessionEventTypes](kobexsessioneventtypeconnectcommandresponsereceived.md)
-- [var kOBEXSessionEventTypeDisconnectCommandReceived: OBEXSessionEventTypes](kobexsessioneventtypedisconnectcommandreceived.md)
-- [var kOBEXSessionEventTypeDisconnectCommandResponseReceived: OBEXSessionEventTypes](kobexsessioneventtypedisconnectcommandresponsereceived.md)
-- [var kOBEXSessionEventTypeError: OBEXSessionEventTypes](kobexsessioneventtypeerror.md)
-- [var kOBEXSessionEventTypeGetCommandReceived: OBEXSessionEventTypes](kobexsessioneventtypegetcommandreceived.md)
-- [var kOBEXSessionEventTypeGetCommandResponseReceived: OBEXSessionEventTypes](kobexsessioneventtypegetcommandresponsereceived.md)
-- [var kOBEXSessionEventTypePutCommandReceived: OBEXSessionEventTypes](kobexsessioneventtypeputcommandreceived.md)
-- [var kOBEXSessionEventTypePutCommandResponseReceived: OBEXSessionEventTypes](kobexsessioneventtypeputcommandresponsereceived.md)
-- [var kOBEXSessionEventTypeSetPathCommandReceived: OBEXSessionEventTypes](kobexsessioneventtypesetpathcommandreceived.md)
-- [var kOBEXSessionEventTypeSetPathCommandResponseReceived: OBEXSessionEventTypes](kobexsessioneventtypesetpathcommandresponsereceived.md)
+- [var kOBEXSessionEventTypeAbortCommandReceived: OBEXSessionEventTypes](./kobexsessioneventtypeabortcommandreceived.md)
+- [var kOBEXSessionEventTypeAbortCommandResponseReceived: OBEXSessionEventTypes](./kobexsessioneventtypeabortcommandresponsereceived.md)
+- [var kOBEXSessionEventTypeConnectCommandReceived: OBEXSessionEventTypes](./kobexsessioneventtypeconnectcommandreceived.md)
+- [var kOBEXSessionEventTypeConnectCommandResponseReceived: OBEXSessionEventTypes](./kobexsessioneventtypeconnectcommandresponsereceived.md)
+- [var kOBEXSessionEventTypeDisconnectCommandReceived: OBEXSessionEventTypes](./kobexsessioneventtypedisconnectcommandreceived.md)
+- [var kOBEXSessionEventTypeDisconnectCommandResponseReceived: OBEXSessionEventTypes](./kobexsessioneventtypedisconnectcommandresponsereceived.md)
+- [var kOBEXSessionEventTypeError: OBEXSessionEventTypes](./kobexsessioneventtypeerror.md)
+- [var kOBEXSessionEventTypeGetCommandReceived: OBEXSessionEventTypes](./kobexsessioneventtypegetcommandreceived.md)
+- [var kOBEXSessionEventTypeGetCommandResponseReceived: OBEXSessionEventTypes](./kobexsessioneventtypegetcommandresponsereceived.md)
+- [var kOBEXSessionEventTypePutCommandReceived: OBEXSessionEventTypes](./kobexsessioneventtypeputcommandreceived.md)
+- [var kOBEXSessionEventTypePutCommandResponseReceived: OBEXSessionEventTypes](./kobexsessioneventtypeputcommandresponsereceived.md)
+- [var kOBEXSessionEventTypeSetPathCommandReceived: OBEXSessionEventTypes](./kobexsessioneventtypesetpathcommandreceived.md)
+- [var kOBEXSessionEventTypeSetPathCommandResponseReceived: OBEXSessionEventTypes](./kobexsessioneventtypesetpathcommandresponsereceived.md)
 ### Initializers
-- [init(UInt32)](obexsessioneventtypes/init(_:).md)
-- [init(rawValue: UInt32)](obexsessioneventtypes/init(rawvalue:).md)
+- [init(UInt32)](./obexsessioneventtypes/init%28_%29.md)
+- [init(rawValue: UInt32)](./obexsessioneventtypes/init%28rawvalue%29.md)
 ### Instance Properties
-- [var rawValue: UInt32](obexsessioneventtypes/rawvalue.md)
+- [var rawValue: UInt32](./obexsessioneventtypes/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [typealias BluetoothAFHMode](bluetoothafhmode.md)
-- [typealias BluetoothAirMode](bluetoothairmode.md)
-- [typealias BluetoothAllowRoleSwitch](bluetoothallowroleswitch.md)
-- [typealias BluetoothAuthenticationRequirements](bluetoothauthenticationrequirements.md)
-- [struct BluetoothAuthenticationRequirementsValues](bluetoothauthenticationrequirementsvalues.md)
-- [typealias BluetoothClassOfDevice](bluetoothclassofdevice.md)
-- [typealias BluetoothClockOffset](bluetoothclockoffset.md)
-- [struct BluetoothCompanyIdentifers](bluetoothcompanyidentifers.md)
-- [typealias BluetoothConnectionHandle](bluetoothconnectionhandle.md)
-- [typealias BluetoothDeviceClassMajor](bluetoothdeviceclassmajor.md)
-- [typealias BluetoothDeviceClassMinor](bluetoothdeviceclassminor.md)
-- [typealias BluetoothDeviceName](bluetoothdevicename.md)
-- [typealias BluetoothEncryptionEnable](bluetoothencryptionenable.md)
-- [struct BluetoothFeatureBits](bluetoothfeaturebits.md)
-- [typealias BluetoothHCIACLDataByteCount](bluetoothhciacldatabytecount.md)
+### Data Types
+- [typealias BluetoothAFHMode](./bluetoothafhmode.md)
+- [typealias BluetoothAirMode](./bluetoothairmode.md)
+- [typealias BluetoothAllowRoleSwitch](./bluetoothallowroleswitch.md)
+- [typealias BluetoothAuthenticationRequirements](./bluetoothauthenticationrequirements.md)
+- [struct BluetoothAuthenticationRequirementsValues](./bluetoothauthenticationrequirementsvalues.md)
+- [typealias BluetoothClassOfDevice](./bluetoothclassofdevice.md)
+- [typealias BluetoothClockOffset](./bluetoothclockoffset.md)
+- [struct BluetoothCompanyIdentifers](./bluetoothcompanyidentifers.md)
+- [typealias BluetoothConnectionHandle](./bluetoothconnectionhandle.md)
+- [typealias BluetoothDeviceClassMajor](./bluetoothdeviceclassmajor.md)
+- [typealias BluetoothDeviceClassMinor](./bluetoothdeviceclassminor.md)
+- [typealias BluetoothDeviceName](./bluetoothdevicename.md)
+- [typealias BluetoothEncryptionEnable](./bluetoothencryptionenable.md)
+- [struct BluetoothFeatureBits](./bluetoothfeaturebits.md)
+- [typealias BluetoothHCIACLDataByteCount](./bluetoothhciacldatabytecount.md)
 
 
 ---

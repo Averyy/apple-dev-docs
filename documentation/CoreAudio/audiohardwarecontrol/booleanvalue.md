@@ -1,12 +1,13 @@
 # booleanValue
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Bool that represents the value of the boolean control.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

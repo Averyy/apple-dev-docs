@@ -1,12 +1,13 @@
 # editedColumn
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the column being edited.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ The index of the column being edited.
 var editedColumn: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger editedColumn;
+```
+
 #### Return Value
 
-If sent during [`editColumn(_:row:with:select:)`](nstableview/editcolumn(_:row:with:select:).md), the index in the [`tableColumns`](nstableview/tablecolumns.md) array of the column being edited; otherwise `–1`.
+If sent during [`editColumn(_:row:with:select:)`](./editcolumn%28_,row,with,select%29.md), the index in the [`tableColumns`](./tablecolumns.md) array of the column being edited; otherwise `–1`.
 
 #### Discussion
 
@@ -24,9 +29,10 @@ This property does not apply to view-based table views. In a view-based table vi
 
 ## See Also
 
-- [func editColumn(Int, row: Int, with: NSEvent?, select: Bool)](nstableview/editcolumn(_:row:with:select:).md)
+### Editing Cells
+- [func editColumn(Int, row: Int, with: NSEvent?, select: Bool)](./editcolumn%28_,row,with,select%29.md)
   Edits the cell at the specified column and row using the specified event and selection behavior.
-- [var editedRow: Int](nstableview/editedrow.md)
+- [var editedRow: Int](./editedrow.md)
   The index of the row being edited.
 
 

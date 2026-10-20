@@ -1,7 +1,8 @@
 # isPreferredResolutionSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Whether the external display supports configuration to your preferred resolution.
 
@@ -18,15 +19,20 @@ Whether the external display supports configuration to your preferred resolution
 class var isPreferredResolutionSupported: Bool { get }
 ```
 
+```objc
+@property (class, readonly, getter=isPreferredResolutionSupported) BOOL supportsPreferredResolution;
+```
+
 #### Discussion
 
-If `true`, you may instantiate a configurator with a configuration specifying [`preferredResolution`](avcaptureexternaldisplayconfiguration/preferredresolution.md) set to `true`.
+If `true`, you may instantiate a configurator with a configuration specifying [`preferredResolution`](../avcaptureexternaldisplayconfiguration/preferredresolution.md) set to `true`.
 
 ## See Also
 
-- [class var isMatchingFrameRateSupported: Bool](avcaptureexternaldisplayconfigurator/ismatchingframeratesupported.md)
+### Determining configuration support
+- [class var isMatchingFrameRateSupported: Bool](./ismatchingframeratesupported.md)
   Whether the external display supports matching frame rate to a capture device.
-- [class var isBypassingColorSpaceConversionSupported: Bool](avcaptureexternaldisplayconfigurator/isbypassingcolorspaceconversionsupported.md)
+- [class var isBypassingColorSpaceConversionSupported: Bool](./isbypassingcolorspaceconversionsupported.md)
   Whether the external display supports bypassing color space conversion.
 
 

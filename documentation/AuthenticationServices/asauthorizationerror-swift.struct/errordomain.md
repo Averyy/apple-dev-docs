@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,7 +21,8 @@ static var errorDomain: String { get }
 
 ## See Also
 
-- [let ASAuthorizationErrorDomain: String](asauthorizationerrordomain.md)
+### Error Domain
+- [let ASAuthorizationErrorDomain: String](../asauthorizationerrordomain.md)
   The domain of authorization errors.
 
 

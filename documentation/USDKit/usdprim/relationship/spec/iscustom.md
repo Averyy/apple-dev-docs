@@ -1,7 +1,8 @@
 # isCustom
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether this relationship was authored as `custom`.
 

@@ -1,7 +1,8 @@
 # session(_:didUpdate:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the session has adjusted the properties of one or more anchors.
 
@@ -15,14 +16,18 @@ Tells the delegate that the session has adjusted the properties of one or more a
 optional func session(_ session: ARSession, didUpdate anchors: [ARAnchor])
 ```
 
+```objc
+- (void) session:(ARSession *) session didUpdateAnchors:(NSArray<__kindof ARAnchor *> *) anchors;
+```
+
 #### Discussion
 
 Depending on the session configuration, ARKit may automatically update the properties of anchors in a session.
 
 If you display an AR experience using SceneKit or SpriteKit, you can implement one of the following methods instead to track not only the anchors in the session but also any corresponding SceneKit or SpriteKit content:
 
-- [`ARSCNView`](arscnview.md): [`renderer(_:willUpdate:for:)`](arscnviewdelegate/renderer(_:willupdate:for:).md) or [`renderer(_:didUpdate:for:)`](arscnviewdelegate/renderer(_:didupdate:for:).md)
-- [`ARSKView`](arskview.md): [`view(_:willUpdate:for:)`](arskviewdelegate/view(_:willupdate:for:).md) or [`view(_:didUpdate:for:)`](arskviewdelegate/view(_:didupdate:for:).md)
+- [`ARSCNView`](../arscnview.md): [`renderer(_:willUpdate:for:)`](../arscnviewdelegate/renderer%28_,willupdate,for%29.md) or [`renderer(_:didUpdate:for:)`](../arscnviewdelegate/renderer%28_,didupdate,for%29.md)
+- [`ARSKView`](../arskview.md): [`view(_:willUpdate:for:)`](../arskviewdelegate/view%28_,willupdate,for%29.md) or [`view(_:didUpdate:for:)`](../arskviewdelegate/view%28_,didupdate,for%29.md)
 
 ## Parameters
 
@@ -31,9 +36,10 @@ If you display an AR experience using SceneKit or SpriteKit, you can implement o
 
 ## See Also
 
-- [func session(ARSession, didAdd: [ARAnchor])](arsessiondelegate/session(_:didadd:).md)
+### Handling Content Updates
+- [func session(ARSession, didAdd: [ARAnchor])](./session%28_,didadd%29.md)
   Tells the delegate that one or more anchors have been added to the session.
-- [func session(ARSession, didRemove: [ARAnchor])](arsessiondelegate/session(_:didremove:).md)
+- [func session(ARSession, didRemove: [ARAnchor])](./session%28_,didremove%29.md)
   Tells the delegate that one or more anchors have been removed from the session.
 
 

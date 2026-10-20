@@ -1,7 +1,8 @@
 # event
 
 **Framework**: os  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A signpost that marks an event in your code.
 
@@ -11,7 +12,7 @@ A signpost that marks an event in your code.
 - Mac Catalyst 12.0+
 - macOS 10.14+
 - tvOS 12.0+
-- visionOS ?+
+- visionOS
 - watchOS 5.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ static let event: OSSignpostType
 
 ## See Also
 
-- [static let begin: OSSignpostType](ossignposttype/begin.md)
+### Specifying Signpost Types
+- [static let begin: OSSignpostType](./begin.md)
   A signpost that marks the start of a time interval of interest in your code.
-- [static let end: OSSignpostType](ossignposttype/end.md)
+- [static let end: OSSignpostType](./end.md)
   A signpost that marks the end of a time interval of interest in your code.
 
 

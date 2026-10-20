@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the accessibility content for a text range.
@@ -9,7 +10,7 @@ Returns the accessibility content for a text range.
 **Availability**:
 - iOS 18.2+
 - iPadOS 18.2+
-- macOS ?+
+- macOS
 - tvOS 18.2+
 - visionOS 2.2+
 - watchOS 11.2+
@@ -18,6 +19,10 @@ Returns the accessibility content for a text range.
 
 ```swift
 func accessibilityContent(for range: BEAccessibilityTextMarker.Range) -> String?
+```
+
+```objc
+- (NSString *) accessibilityContentForTextMarkerRange:(BEAccessibilityTextMarkerRange *) range;
 ```
 
 #### Return Value

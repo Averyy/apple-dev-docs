@@ -1,14 +1,15 @@
 # gssd_byte_buffer
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 typedef uint8_t *gssd_byte_buffer;
 ```
 

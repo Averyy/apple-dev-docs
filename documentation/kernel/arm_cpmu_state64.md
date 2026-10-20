@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct arm_cpmu_state64 {
     ...
 };
@@ -17,7 +17,7 @@ struct arm_cpmu_state64 {
 ## Topics
 
 ### Instance Properties
-- [ctrs](arm_cpmu_state64/3609504-ctrs.md)
+- [ctrs](./arm_cpmu_state64/api-3609504-ctrs.md)
 
 
 ---

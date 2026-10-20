@@ -1,7 +1,8 @@
 # discNumber
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The disc number of the track.
 

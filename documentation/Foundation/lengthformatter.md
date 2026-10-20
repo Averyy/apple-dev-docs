@@ -1,7 +1,8 @@
 # LengthFormatter
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A formatter that provides localized descriptions of linear distances, such as length and height measurements.
 
@@ -20,52 +21,57 @@ A formatter that provides localized descriptions of linear distances, such as le
 class LengthFormatter
 ```
 
+```objc
+@interface NSLengthFormatter : NSFormatter
+```
+
 #### Overview
 
-> **Note**:  As of iOS 10, macOS 10.12, tvOS 10, and watchOS 3, Foundation provides the [`MeasurementFormatter`](measurementformatter.md) class, which can be used to represent quantities of [`UnitLength`](unitlength.md) to provide equivalent functionality to [`LengthFormatter`](lengthformatter.md). You are encouraged to transition to these new Foundation Units and Measurements APIs whenever possible.
+> **Note**:  As of iOS 10, macOS 10.12, tvOS 10, and watchOS 3, Foundation provides the [`MeasurementFormatter`](./measurementformatter.md) class, which can be used to represent quantities of [`UnitLength`](./unitlength.md) to provide equivalent functionality to [`LengthFormatter`](./lengthformatter.md). You are encouraged to transition to these new Foundation Units and Measurements APIs whenever possible.
 
 ## Topics
 
 ### Formatting Length Strings
-- [var isForPersonHeightUse: Bool](lengthformatter/isforpersonheightuse.md)
+- [var isForPersonHeightUse: Bool](./lengthformatter/isforpersonheightuse.md)
   A Boolean value that indicates whether the resulting string represents a person’s height.
-- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](lengthformatter/getobjectvalue(_:for:errordescription:).md)
+- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](./lengthformatter/getobjectvalue%28_,for,errordescription%29.md)
   This method is not supported for the `NSLengthFormatter` class.
-- [var numberFormatter: NumberFormatter!](lengthformatter/numberformatter.md)
+- [var numberFormatter: NumberFormatter!](./lengthformatter/numberformatter.md)
   The number formatter used to format the numbers in length strings.
-- [func string(fromMeters: Double) -> String](lengthformatter/string(frommeters:).md)
+- [func string(fromMeters: Double) -> String](./lengthformatter/string%28frommeters%29.md)
   Returns a length string for the provided value.
-- [func string(fromValue: Double, unit: LengthFormatter.Unit) -> String](lengthformatter/string(fromvalue:unit:).md)
+- [func string(fromValue: Double, unit: LengthFormatter.Unit) -> String](./lengthformatter/string%28fromvalue,unit%29.md)
   Returns a properly formatted length string for the given value and unit.
-- [func unitString(fromMeters: Double, usedUnit: UnsafeMutablePointer<LengthFormatter.Unit>?) -> String](lengthformatter/unitstring(frommeters:usedunit:).md)
+- [func unitString(fromMeters: Double, usedUnit: UnsafeMutablePointer<LengthFormatter.Unit>?) -> String](./lengthformatter/unitstring%28frommeters,usedunit%29.md)
   Returns the unit string for the provided value.
-- [func unitString(fromValue: Double, unit: LengthFormatter.Unit) -> String](lengthformatter/unitstring(fromvalue:unit:).md)
+- [func unitString(fromValue: Double, unit: LengthFormatter.Unit) -> String](./lengthformatter/unitstring%28fromvalue,unit%29.md)
   Returns the unit string based on the provided value and unit.
-- [var unitStyle: Formatter.UnitStyle](lengthformatter/unitstyle.md)
+- [var unitStyle: Formatter.UnitStyle](./lengthformatter/unitstyle.md)
   The unit style used by this formatter.
 ### Constants
-- [LengthFormatter.Unit](lengthformatter/unit.md)
+- [LengthFormatter.Unit](./lengthformatter/unit.md)
   The units supported by the `NSLengthFormatter` class.
 
 ## Relationships
 
 ### Inherits From
-- [Formatter](formatter.md)
+- [Formatter](./formatter.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MassFormatter](massformatter.md)
+### Deprecated
+- [class MassFormatter](./massformatter.md)
   A formatter that provides localized descriptions of mass and weight values.
-- [class EnergyFormatter](energyformatter.md)
+- [class EnergyFormatter](./energyformatter.md)
   A formatter that provides localized descriptions of energy values.
 
 

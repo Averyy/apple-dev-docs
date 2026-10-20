@@ -1,7 +1,8 @@
 # asPartiallyGenerated()
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the partially generated representation of the current instance.
 
@@ -21,7 +22,8 @@ func asPartiallyGenerated() -> Self.PartiallyGenerated
 
 ## See Also
 
-- [associatedtype PartiallyGenerated : ConvertibleFromGeneratedContent = Self](generable/partiallygenerated.md)
+### Converting to partially generated
+- [associatedtype PartiallyGenerated : ConvertibleFromGeneratedContent = Self](./partiallygenerated.md)
   A representation of partially generated content
 
 

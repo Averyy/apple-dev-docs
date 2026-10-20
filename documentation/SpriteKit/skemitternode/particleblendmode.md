@@ -1,18 +1,19 @@
 # particleBlendMode
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The blending mode used to blend particles into the framebuffer.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,19 +21,24 @@ The blending mode used to blend particles into the framebuffer.
 var particleBlendMode: SKBlendMode { get set }
 ```
 
+```objc
+@property (nonatomic) SKBlendMode particleBlendMode;
+```
+
 #### Discussion
 
-The default value is [`SKBlendMode.alpha`](skblendmode/alpha.md).
+The default value is [`SKBlendMode.alpha`](../skblendmode/alpha.md).
 
 ## See Also
 
-- [var particleAlphaSequence: SKKeyframeSequence?](skemitternode/particlealphasequence.md)
+### Blending Particles with the Framebuffer
+- [var particleAlphaSequence: SKKeyframeSequence?](./particlealphasequence.md)
   The sequence used to specify the alpha value of a particle over its lifetime.
-- [var particleAlpha: CGFloat](skemitternode/particlealpha.md)
+- [var particleAlpha: CGFloat](./particlealpha.md)
   The average starting alpha value for a particle.
-- [var particleAlphaRange: CGFloat](skemitternode/particlealpharange.md)
+- [var particleAlphaRange: CGFloat](./particlealpharange.md)
   The range of allowed random values for a particle’s starting alpha value.
-- [var particleAlphaSpeed: CGFloat](skemitternode/particlealphaspeed.md)
+- [var particleAlphaSpeed: CGFloat](./particlealphaspeed.md)
   The rate at which the alpha value of a particle changes per second.
 
 

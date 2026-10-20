@@ -1,7 +1,8 @@
 # leadingSymbol
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The symbol appears before the instructions for the maneuver.
 
@@ -16,13 +17,18 @@ The symbol appears before the instructions for the maneuver.
 static var leadingSymbol: CPManeuverDisplayStyle { get }
 ```
 
+```c
+CPManeuverDisplayStyleLeadingSymbol
+```
+
 ## See Also
 
-- [static var trailingSymbol: CPManeuverDisplayStyle](cpmaneuverdisplaystyle/trailingsymbol.md)
+### Display Styles
+- [static var trailingSymbol: CPManeuverDisplayStyle](./trailingsymbol.md)
   The symbol appears after the instructions for the maneuver.
-- [static var instructionOnly: CPManeuverDisplayStyle](cpmaneuverdisplaystyle/instructiononly.md)
+- [static var instructionOnly: CPManeuverDisplayStyle](./instructiononly.md)
   Only the instructions appear for the maneuver.
-- [static var symbolOnly: CPManeuverDisplayStyle](cpmaneuverdisplaystyle/symbolonly.md)
+- [static var symbolOnly: CPManeuverDisplayStyle](./symbolonly.md)
   Only the symbol appears for the maneuver.
 
 

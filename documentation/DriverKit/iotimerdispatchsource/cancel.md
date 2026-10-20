@@ -1,25 +1,26 @@
 # Cancel
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels all callbacks from the event source.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t Cancel(IODispatchSourceCancelHandler handler);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](kioreturnsuccess.md) on success, or another value if an error occurs. See [`Error Codes`](error-codes.md).
+[`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../error-codes.md).
 
 #### Discussion
 
@@ -31,7 +32,8 @@ After cancellation, the source can only be freed. It cannot be reactivated.
 
 ## See Also
 
-- [SetEnableWithCompletion](iotimerdispatchsource/setenablewithcompletion.md)
+### Starting and Stopping the Timer Source
+- [SetEnableWithCompletion](./setenablewithcompletion.md)
   Enables or disables the timer.
 
 

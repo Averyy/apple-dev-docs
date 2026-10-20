@@ -1,17 +1,24 @@
 # init(offScreenWith:colorSpace:composition:)
 
 **Framework**: Quartz  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an offscreen renderer of a given size with the provided color space and composition object.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 init!(offScreenWith size: NSSize, colorSpace: CGColorSpace!, composition: QCComposition!)
+```
+
+```objc
+- (id) initOffScreenWithSize:(NSSize) size colorSpace:(CGColorSpaceRef) colorSpace composition:(QCComposition *) composition;
 ```
 
 #### Return Value
@@ -25,16 +32,17 @@ This method creates an internal OpenGL context and pixel buffer. Because offscre
 ## Parameters
 
 - `size`: The size of the offscreen renderer.
-- `colorSpace`: A Quartz color space object. This must be an RGB color space. Pass `NULL` to use the default RGB color space. For more information on Quartz color spaces, see [`Quartz 2D Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066).
-- `composition`: A [`QCComposition`](qccomposition.md) object.
+- `colorSpace`: A Quartz color space object. This must be an RGB color space. Pass `NULL` to use the default RGB color space. For more information on Quartz color spaces, see [Quartz 2D Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066).
+- `composition`: A [`QCComposition`](../qccomposition.md) object.
 
 ## See Also
 
-- [init!(composition: QCComposition!, colorSpace: CGColorSpace!)](qcrenderer/init(composition:colorspace:).md)
+### Creating and Initializing a Renderer
+- [init!(composition: QCComposition!, colorSpace: CGColorSpace!)](./init%28composition,colorspace%29.md)
   Creates a  renderer object  with a composition object and a color space.
-- [init!(openGLContext: NSOpenGLContext!, pixelFormat: NSOpenGLPixelFormat!, file: String!)](qcrenderer/init(openglcontext:pixelformat:file:).md)
+- [init!(openGLContext: NSOpenGLContext!, pixelFormat: NSOpenGLPixelFormat!, file: String!)](./init%28openglcontext,pixelformat,file%29.md)
   Creates a  renderer object with an `NSOpenGLContext` object and a composition file.
-- [init!(cglContext: CGLContextObj!, pixelFormat: CGLPixelFormatObj!, colorSpace: CGColorSpace!, composition: QCComposition!)](qcrenderer/init(cglcontext:pixelformat:colorspace:composition:)-7at42.md)
+- [init!(cglContext: CGLContextObj!, pixelFormat: CGLPixelFormatObj!, colorSpace: CGColorSpace!, composition: QCComposition!)](./init%28cglcontext,pixelformat,colorspace,composition%29-7at42.md)
   Creates a  renderer object  with a `CGLContextObj` object, a pixel format, a color space, and a composition object.
 
 

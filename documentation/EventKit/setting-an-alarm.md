@@ -1,6 +1,7 @@
 # Setting an alarm
 
-**Framework**: EventKit
+**Framework**: EventKit  
+**Role**: Article
 
 Alert users of events and reminders with an alarm.
 
@@ -10,21 +11,21 @@ An easy way to alert users of their upcoming events is to give them the option o
 
 Alarms can be time-based, firing at a specified time, or location-based, firing when crossing a geofence (for more information about geofences, see “`Configure Geofences`”). Alarms can be applied to both calendar events and reminders.
 
-> **Note**:  An alarm is not intended to serve as a [`UILocalNotification`](https://developer.apple.com/documentation/uikit/uilocalnotification). An alarm requires you to create an event or reminder that is visible in the user’s Calendar or Reminders app. A [`UILocalNotification`](https://developer.apple.com/documentation/uikit/uilocalnotification) is better suited for general purposes that don’t involve the Calendar database.
+> **Note**:  An alarm is not intended to serve as a [`UILocalNotification`](../UIKit/uilocalnotification.md). An alarm requires you to create an event or reminder that is visible in the user’s Calendar or Reminders app. A [`UILocalNotification`](../UIKit/uilocalnotification.md) is better suited for general purposes that don’t involve the Calendar database.
 
 ##### Add and Remove Alarms
 
-Add an alarm to an event with the [`addAlarm(_:)`](ekcalendaritem/addalarm(_:).md) method.
+Add an alarm to an event with the [`addAlarm(_:)`](./ekcalendaritem/addalarm%28_%29.md) method.
 
 Alarms can be created with an absolute date or with an offset relative to the start date of the event. Alarms created with a relative offset must occur before or at the start date of the event.
 
 In OS X, you can trigger an action alongside the alarm. For example, you can set properties such as:
 
-- [`emailAddress`](ekalarm/emailaddress.md) to send an email.
-- [`soundName`](ekalarm/soundname.md) to play a sound.
-- [`url`](ekalarm/url.md) to open a URL.
+- [`emailAddress`](./ekalarm/emailaddress.md) to send an email.
+- [`soundName`](./ekalarm/soundname.md) to play a sound.
+- [`url`](./ekalarm/url.md) to open a URL.
 
-Remove an alarm from an event with the [`removeAlarm(_:)`](ekcalendaritem/removealarm(_:).md) method.
+Remove an alarm from an event with the [`removeAlarm(_:)`](./ekcalendaritem/removealarm%28_%29.md) method.
 
 ##### Configure Geofences
 
@@ -34,13 +35,14 @@ While geofence-enabled alarms can be applied to events, they are more practical 
 
 > **Note**:  Geofences are supported on both macOS and iOS, but they are more effective on mobile devices.
 
-Configure a geofence for an event by creating an alarm and setting its structured location and proximity. Call the [`init(title:)`](ekstructuredlocation/init(title:).md) method to create a structured location. To set longitude and latitude coordinates, pass a [`CLLocation`](https://developer.apple.com/documentation/corelocation/cllocation) to the [`geoLocation`](ekstructuredlocation/geolocation.md) property of the structured location returned. A value of `0` for the radius property will use the system’s default radius; to choose a radius of your own, specify a value in meters.
+Configure a geofence for an event by creating an alarm and setting its structured location and proximity. Call the [`init(title:)`](./ekstructuredlocation/init%28title%29.md) method to create a structured location. To set longitude and latitude coordinates, pass a [`CLLocation`](../CoreLocation/cllocation.md) to the [`geoLocation`](./ekstructuredlocation/geolocation.md) property of the structured location returned. A value of `0` for the radius property will use the system’s default radius; to choose a radius of your own, specify a value in meters.
 
 ## See Also
 
-- [class EKAlarm](ekalarm.md)
+### Alarms
+- [class EKAlarm](./ekalarm.md)
   A class that represents an alarm.
-- [class EKStructuredLocation](ekstructuredlocation.md)
+- [class EKStructuredLocation](./ekstructuredlocation.md)
   `A` class that specifies a geofence to activate the alarm of a calendar item.
 
 

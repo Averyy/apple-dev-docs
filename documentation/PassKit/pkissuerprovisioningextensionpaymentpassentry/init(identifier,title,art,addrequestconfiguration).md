@@ -1,7 +1,8 @@
 # init(identifier:title:art:addRequestConfiguration:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new entry for a payment pass that a user adds to Wallet.
 
@@ -9,7 +10,7 @@ Creates a new entry for a payment pass that a user adds to Wallet.
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,12 +19,16 @@ Creates a new entry for a payment pass that a user adds to Wallet.
 init?(identifier: String, title: String, art: CGImage, addRequestConfiguration configuration: PKAddPaymentPassRequestConfiguration)
 ```
 
+```objc
+- (instancetype) initWithIdentifier:(NSString *) identifier title:(NSString *) title art:(CGImageRef) art addRequestConfiguration:(PKAddPaymentPassRequestConfiguration *) configuration;
+```
+
 ## Parameters
 
 - `identifier`: The value that you use to identify the card.
 - `title`: The name for the pass the system displays to the user when they add or select the card.
 - `art`: The image that the system displays to the user when they add or select the card.
-- `configuration`: The configuration that an [`PKAddSecureElementPassViewController`](pkaddsecureelementpassviewcontroller.md) uses to create a secure pass.
+- `configuration`: The configuration that an [`PKAddSecureElementPassViewController`](../pkaddsecureelementpassviewcontroller.md) uses to create a secure pass.
 
 
 ---

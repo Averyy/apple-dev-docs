@@ -1,7 +1,8 @@
 # interaction
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The kind for hit-testing and accessibility.
 
@@ -26,15 +27,16 @@ Setting a content shape with this kind causes the view to hit-test using the spe
 
 ## See Also
 
-- [static let dragPreview: ContentShapeKinds](contentshapekinds/dragpreview.md)
+### Getting shape kinds
+- [static let dragPreview: ContentShapeKinds](./dragpreview.md)
   The kind for drag and drop previews.
-- [static let contextMenuPreview: ContentShapeKinds](contentshapekinds/contextmenupreview.md)
+- [static let contextMenuPreview: ContentShapeKinds](./contextmenupreview.md)
   The kind for context menu previews.
-- [static let focusEffect: ContentShapeKinds](contentshapekinds/focuseffect.md)
+- [static let focusEffect: ContentShapeKinds](./focuseffect.md)
   The kind for the focus effect.
-- [static let hoverEffect: ContentShapeKinds](contentshapekinds/hovereffect.md)
+- [static let hoverEffect: ContentShapeKinds](./hovereffect.md)
   The kind for hover effects.
-- [static let accessibility: ContentShapeKinds](contentshapekinds/accessibility.md)
+- [static let accessibility: ContentShapeKinds](./accessibility.md)
   The kind for accessibility visuals and sorting.
 
 

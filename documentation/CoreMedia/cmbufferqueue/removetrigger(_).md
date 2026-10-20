@@ -1,7 +1,8 @@
 # removeTrigger(_:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a trigger from the queue.
 
@@ -22,13 +23,14 @@ func removeTrigger(_ triggerToken: CMBufferQueue.TriggerToken) throws
 
 ## See Also
 
-- [func installTrigger(condition: CMBufferQueue.TriggerCondition, CMBufferQueueTriggerHandler?) throws -> CMBufferQueue.TriggerToken](cmbufferqueue/installtrigger(condition:_:).md)
+### Managing Triggers
+- [func installTrigger(condition: CMBufferQueue.TriggerCondition, CMBufferQueueTriggerHandler?) throws -> CMBufferQueue.TriggerToken](./installtrigger%28condition,_%29.md)
   Installs a trigger on the queue.
-- [func testTrigger(CMBufferQueue.TriggerToken) -> Bool](cmbufferqueue/testtrigger(_:).md)
+- [func testTrigger(CMBufferQueue.TriggerToken) -> Bool](./testtrigger%28_%29.md)
   Tests a trigger condition.
-- [CMBufferQueue.TriggerToken](cmbufferqueue/triggertoken.md)
+- [CMBufferQueue.TriggerToken](./triggertoken.md)
   A type alias for a trigger token.
-- [CMBufferQueue.TriggerCondition](cmbufferqueue/triggercondition.md)
+- [CMBufferQueue.TriggerCondition](./triggercondition.md)
   An enumeration of trigger conditions.
 
 

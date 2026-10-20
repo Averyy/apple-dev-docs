@@ -1,7 +1,8 @@
 # kSecPolicyMacAppStoreReceipt
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Policy for use in evaluating Mac App Store receipts.
 
@@ -18,6 +19,10 @@ Policy for use in evaluating Mac App Store receipts.
 
 ```swift
 let kSecPolicyMacAppStoreReceipt: CFString
+```
+
+```c
+extern CFStringRef const kSecPolicyMacAppStoreReceipt;
 ```
 
 

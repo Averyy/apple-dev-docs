@@ -1,16 +1,17 @@
 # UIViewImplicitlyAnimating
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface for modifying an animation while it’s running.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,31 +20,35 @@ An interface for modifying an animation while it’s running.
 protocol UIViewImplicitlyAnimating : UIViewAnimating
 ```
 
+```objc
+@protocol UIViewImplicitlyAnimating <UIViewAnimating>
+```
+
 #### Overview
 
-Animator objects used in interruptible view controller transitions adopt the [`UIViewImplicitlyAnimating`](uiviewimplicitlyanimating.md) protocol to modify in-flight transition animations. This protocol also conforms to the [`UIViewAnimating`](uiviewanimating.md) protocol, which specifies methods for starting and stopping animations and for updating their state.
+Animator objects used in interruptible view controller transitions adopt the [`UIViewImplicitlyAnimating`](./uiviewimplicitlyanimating.md) protocol to modify in-flight transition animations. This protocol also conforms to the [`UIViewAnimating`](./uiviewanimating.md) protocol, which specifies methods for starting and stopping animations and for updating their state.
 
-The [`UIViewPropertyAnimator`](uiviewpropertyanimator.md) class adopts this protocol and implements all of its methods. You can adopt this protocol in your own classes to implement custom animator objects. When adopting this protocol, it’s recommended that you implement all of the methods.
+The [`UIViewPropertyAnimator`](./uiviewpropertyanimator.md) class adopts this protocol and implements all of its methods. You can adopt this protocol in your own classes to implement custom animator objects. When adopting this protocol, it’s recommended that you implement all of the methods.
 
 ## Topics
 
 ### Modifying animations
-- [func addAnimations(() -> Void)](uiviewimplicitlyanimating/addanimations(_:).md)
+- [func addAnimations(() -> Void)](./uiviewimplicitlyanimating/addanimations%28_%29.md)
   Adds the specified animation block to the animator.
-- [func addAnimations(() -> Void, delayFactor: CGFloat)](uiviewimplicitlyanimating/addanimations(_:delayfactor:).md)
+- [func addAnimations(() -> Void, delayFactor: CGFloat)](./uiviewimplicitlyanimating/addanimations%28_,delayfactor%29.md)
   Adds the specified animation block to the animator with a delay.
-- [func addCompletion((UIViewAnimatingPosition) -> Void)](uiviewimplicitlyanimating/addcompletion(_:).md)
+- [func addCompletion((UIViewAnimatingPosition) -> Void)](./uiviewimplicitlyanimating/addcompletion%28_%29.md)
   Adds the specified completion block to the animator.
-- [func continueAnimation(withTimingParameters: (any UITimingCurveProvider)?, durationFactor: CGFloat)](uiviewimplicitlyanimating/continueanimation(withtimingparameters:durationfactor:).md)
+- [func continueAnimation(withTimingParameters: (any UITimingCurveProvider)?, durationFactor: CGFloat)](./uiviewimplicitlyanimating/continueanimation%28withtimingparameters,durationfactor%29.md)
   Adjusts the final timing and duration of a paused animation.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [UIViewAnimating](uiviewanimating.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [UIViewAnimating](./uiviewanimating.md)
 ### Conforming Types
-- [UIViewPropertyAnimator](uiviewpropertyanimator.md)
+- [UIViewPropertyAnimator](./uiviewpropertyanimator.md)
 
 
 ---

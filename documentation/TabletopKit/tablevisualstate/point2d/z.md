@@ -1,7 +1,8 @@
 # z
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - visionOS 2.0+
@@ -14,8 +15,9 @@ var z: Double
 
 ## See Also
 
-- [var x: Double](tablevisualstate/point2d/x.md)
-- [static let zero: TableVisualState.Point2D](tablevisualstate/point2d/zero.md)
+### Getting 2D point properties
+- [var x: Double](./x.md)
+- [static let zero: TableVisualState.Point2D](./zero.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # typeForArgument(withName:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the type of the command argument identified by the specified key.
 
@@ -15,6 +16,10 @@ Returns the type of the command argument identified by the specified key.
 func typeForArgument(withName argumentName: String) -> String?
 ```
 
+```objc
+- (NSString *) typeForArgumentWithName:(NSString *) argumentName;
+```
+
 #### Return Value
 
 The type of the specified command argument. Returns `nil` if there is no such argument.
@@ -25,11 +30,12 @@ The type of the specified command argument. Returns `nil` if there is no such ar
 
 ## See Also
 
-- [func appleEventCodeForArgument(withName: String) -> FourCharCode](nsscriptcommanddescription/appleeventcodeforargument(withname:).md)
+### Getting Command Argument Information
+- [func appleEventCodeForArgument(withName: String) -> FourCharCode](./appleeventcodeforargument%28withname%29.md)
   Returns the Apple event code for the specified command argument of the receiver.
-- [var argumentNames: [String]](nsscriptcommanddescription/argumentnames.md)
+- [var argumentNames: [String]](./argumentnames.md)
   Returns the names (or keys) for all arguments of the receiver’s command.
-- [func isOptionalArgument(withName: String) -> Bool](nsscriptcommanddescription/isoptionalargument(withname:).md)
+- [func isOptionalArgument(withName: String) -> Bool](./isoptionalargument%28withname%29.md)
   Returns a Boolean value that indicates whether the command argument identified by the specified argument key is an optional argument.
 
 

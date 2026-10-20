@@ -1,7 +1,8 @@
 # WAError.serviceAlreadySubscribing(_:)
 
 **Framework**: Wi-Fi Aware  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that occurs if a new subscriber or `Network/NetworkBrowser` can’t be created.
 
@@ -22,11 +23,12 @@ This error occurs if a subscriber is already active on the service.
 
 ## See Also
 
-- [WAError.ServiceAlreadySubscribingDetails](waerror/servicealreadysubscribingdetails.md)
+### Checking for service already in use
+- [WAError.ServiceAlreadySubscribingDetails](./servicealreadysubscribingdetails.md)
   The optional details describing the service that’s subscribing.
-- [case serviceAlreadyPublishing(WAError.ServiceAlreadyPublishingDetails)](waerror/servicealreadypublishing(_:).md)
+- [case serviceAlreadyPublishing(WAError.ServiceAlreadyPublishingDetails)](./servicealreadypublishing%28_%29.md)
   An error that occurs if a new publisher or `Network/NetworkListener` can’t be created.
-- [WAError.ServiceAlreadyPublishingDetails](waerror/servicealreadypublishingdetails.md)
+- [WAError.ServiceAlreadyPublishingDetails](./servicealreadypublishingdetails.md)
   The optional details describing the service that’s publishing.
 
 

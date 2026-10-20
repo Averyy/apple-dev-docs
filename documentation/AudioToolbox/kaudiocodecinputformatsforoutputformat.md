@@ -1,15 +1,16 @@
 # kAudioCodecInputFormatsForOutputFormat
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,21 +18,26 @@
 var kAudioCodecInputFormatsForOutputFormat: AudioCodecPropertyID { get }
 ```
 
+```c
+kAudioCodecInputFormatsForOutputFormat
+```
+
 ## See Also
 
-- [var kAudioCodecBitRateFormat: AudioCodecPropertyID](kaudiocodecbitrateformat.md)
-- [var kAudioCodecDoesSampleRateConversion: AudioCodecPropertyID](kaudiocodecdoessamplerateconversion.md)
-- [var kAudioCodecExtendFrequencies: AudioCodecPropertyID](kaudiocodecextendfrequencies.md)
-- [var kAudioCodecOutputFormatsForInputFormat: AudioCodecPropertyID](kaudiocodecoutputformatsforinputformat.md)
-- [var kAudioCodecOutputPrecedence: AudioCodecPropertyID](kaudiocodecoutputprecedence.md)
-- [var kAudioCodecPropertyAvailableBitRates: AudioCodecPropertyID](kaudiocodecpropertyavailablebitrates.md)
-- [var kAudioCodecPropertyAvailableInputChannelLayouts: AudioCodecPropertyID](kaudiocodecpropertyavailableinputchannellayouts.md)
-- [var kAudioCodecPropertyAvailableOutputChannelLayouts: AudioCodecPropertyID](kaudiocodecpropertyavailableoutputchannellayouts.md)
-- [var kAudioCodecPropertyInputChannelLayout: AudioCodecPropertyID](kaudiocodecpropertyinputchannellayout.md)
-- [var kAudioCodecPropertyOutputChannelLayout: AudioCodecPropertyID](kaudiocodecpropertyoutputchannellayout.md)
-- [var kAudioCodecPropertyRequiresPacketDescription: AudioCodecPropertyID](kaudiocodecpropertyrequirespacketdescription.md)
-- [var kAudioCodecPropertyZeroFramesPadded: AudioCodecPropertyID](kaudiocodecpropertyzeroframespadded.md)
-- [var kAudioCodecUseRecommendedSampleRate: AudioCodecPropertyID](kaudiocodecuserecommendedsamplerate.md)
+### Constants
+- [var kAudioCodecBitRateFormat: AudioCodecPropertyID](./kaudiocodecbitrateformat.md)
+- [var kAudioCodecDoesSampleRateConversion: AudioCodecPropertyID](./kaudiocodecdoessamplerateconversion.md)
+- [var kAudioCodecExtendFrequencies: AudioCodecPropertyID](./kaudiocodecextendfrequencies.md)
+- [var kAudioCodecOutputFormatsForInputFormat: AudioCodecPropertyID](./kaudiocodecoutputformatsforinputformat.md)
+- [var kAudioCodecOutputPrecedence: AudioCodecPropertyID](./kaudiocodecoutputprecedence.md)
+- [var kAudioCodecPropertyAvailableBitRates: AudioCodecPropertyID](./kaudiocodecpropertyavailablebitrates.md)
+- [var kAudioCodecPropertyAvailableInputChannelLayouts: AudioCodecPropertyID](./kaudiocodecpropertyavailableinputchannellayouts.md)
+- [var kAudioCodecPropertyAvailableOutputChannelLayouts: AudioCodecPropertyID](./kaudiocodecpropertyavailableoutputchannellayouts.md)
+- [var kAudioCodecPropertyInputChannelLayout: AudioCodecPropertyID](./kaudiocodecpropertyinputchannellayout.md)
+- [var kAudioCodecPropertyOutputChannelLayout: AudioCodecPropertyID](./kaudiocodecpropertyoutputchannellayout.md)
+- [var kAudioCodecPropertyRequiresPacketDescription: AudioCodecPropertyID](./kaudiocodecpropertyrequirespacketdescription.md)
+- [var kAudioCodecPropertyZeroFramesPadded: AudioCodecPropertyID](./kaudiocodecpropertyzeroframespadded.md)
+- [var kAudioCodecUseRecommendedSampleRate: AudioCodecPropertyID](./kaudiocodecuserecommendedsamplerate.md)
 
 
 ---

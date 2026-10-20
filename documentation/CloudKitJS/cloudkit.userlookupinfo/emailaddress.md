@@ -1,7 +1,8 @@
 # emailAddress
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user’s email address.
 
@@ -10,7 +11,7 @@ The user’s email address.
 
 ## Declaration
 
-```swift
+```
 attribute String emailAddress;
 ```
 

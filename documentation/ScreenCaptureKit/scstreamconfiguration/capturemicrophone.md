@@ -1,7 +1,8 @@
 # captureMicrophone
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 18.2+
@@ -11,6 +12,10 @@
 
 ```swift
 var captureMicrophone: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL captureMicrophone;
 ```
 
 

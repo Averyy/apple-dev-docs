@@ -1,7 +1,8 @@
 # baseBackgroundColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A color for the paste button’s background.
 
@@ -17,13 +18,18 @@ A color for the paste button’s background.
 var baseBackgroundColor: UIColor? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIColor * baseBackgroundColor;
+```
+
 #### Discussion
 
-This color fills the shape you choose for [`cornerStyle`](uipastecontrol/configuration-swift.class/cornerstyle.md) (Swift) or [`cornerStyle`](uipastecontrolconfiguration/cornerstyle.md) (Objective-C).
+This color fills the shape you choose for [`cornerStyle`](./cornerstyle.md) (Swift) or [`cornerStyle`](../../uipastecontrolconfiguration/cornerstyle.md) (Objective-C).
 
 ## See Also
 
-- [var baseForegroundColor: UIColor?](uipastecontrol/configuration-swift.class/baseforegroundcolor.md)
+### Coloring the button
+- [var baseForegroundColor: UIColor?](./baseforegroundcolor.md)
   A color for the paste button’s icon and text.
 
 

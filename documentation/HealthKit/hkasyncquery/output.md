@@ -2,6 +2,7 @@
 
 **Framework**: HealthKit  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 **Availability**:
@@ -9,7 +10,7 @@
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -20,7 +21,8 @@ associatedtype Output
 
 ## See Also
 
-- [func result(for: HKHealthStore) async throws -> Self.Output](hkasyncquery/result(for:).md)
+### Running Queries
+- [func result(for: HKHealthStore) async throws -> Self.Output](./result%28for%29.md)
   Runs a one-shot query and asynchronously returns a snapshot of the current matching results.
 
 

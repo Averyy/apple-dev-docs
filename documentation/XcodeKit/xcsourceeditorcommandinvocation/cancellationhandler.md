@@ -1,7 +1,8 @@
 # cancellationHandler
 
 **Framework**: XcodeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A handler to be invoked by Xcode to indicate that the invocation has been canceled by the user.
 
@@ -12,6 +13,10 @@ A handler to be invoked by Xcode to indicate that the invocation has been cancel
 
 ```swift
 var cancellationHandler: () -> Void { get set }
+```
+
+```objc
+@property (copy) void (^cancellationHandler)();
 ```
 
 #### Discussion

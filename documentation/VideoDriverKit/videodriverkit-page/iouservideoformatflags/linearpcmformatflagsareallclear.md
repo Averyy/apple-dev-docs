@@ -1,7 +1,8 @@
 # LinearPCMFormatFlagsAreAllClear
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Synonym for `FormatFlagsAreAllClear`.
 
@@ -10,13 +11,14 @@ Synonym for `FormatFlagsAreAllClear`.
 
 ## Declaration
 
-```swift
+```c
 LinearPCMFormatFlagsAreAllClear
 ```
 
 ## See Also
 
-- [FormatFlagsAreAllClear](videodriverkit/iouservideoformatflags/formatflagsareallclear.md)
+### Special purpose flags
+- [FormatFlagsAreAllClear](./formatflagsareallclear.md)
   Set if all the flags would be clear.
 
 

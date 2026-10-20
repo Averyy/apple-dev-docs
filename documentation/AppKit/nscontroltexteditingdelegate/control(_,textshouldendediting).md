@@ -1,12 +1,13 @@
 # control(_:textShouldEndEditing:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked when the insertion point tries to leave a cell of the control that has been edited.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,13 @@ Invoked when the insertion point tries to leave a cell of the control that has b
 optional func control(_ control: NSControl, textShouldEndEditing fieldEditor: NSText) -> Bool
 ```
 
+```objc
+- (BOOL) control:(NSControl *) control textShouldEndEditing:(NSText *) fieldEditor;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the insertion point should be allowed to end the editing session; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the insertion point should be allowed to end the editing session; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -30,7 +35,8 @@ This message is sent only by controls that allow editing of text (such as a text
 
 ## See Also
 
-- [func control(NSControl, textShouldBeginEditing: NSText) -> Bool](nscontroltexteditingdelegate/control(_:textshouldbeginediting:).md)
+### Responding to Text Editing
+- [func control(NSControl, textShouldBeginEditing: NSText) -> Bool](./control%28_,textshouldbeginediting%29.md)
   Invoked when the user tries to enter a character in a cell of a control that allows editing of text (such as a text field or form field).
 
 

@@ -1,7 +1,8 @@
 # init(nonretainedObject:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a value object containing the specified object.
 
@@ -20,19 +21,23 @@ Creates a value object containing the specified object.
 init(nonretainedObject anObject: Any?)
 ```
 
+```objc
++ (NSValue *) valueWithNonretainedObject:(id) anObject;
+```
+
 #### Return Value
 
 A new value object that contains `anObject`.
 
 #### Discussion
 
-This method is equivalent to invoking [`init(_:withObjCType:)`](nsvalue/init(_:withobjctype:).md) in this manner:
+This method is equivalent to invoking [`init(_:withObjCType:)`](./init%28_,withobjctype%29.md) in this manner:
 
 ```objc
 NSValue *theValue = [NSValue value:&anObject withObjCType:@encode(void *)];
 ```
 
-This method is useful if you want to add an object to a [`Collection`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Collection.html#//apple_ref/doc/uid/TP40008195-CH10) but don’t want the collection to create a strong reference to it.
+This method is useful if you want to add an object to a [Collection](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Collection.html#//apple_ref/doc/uid/TP40008195-CH10) but don’t want the collection to create a strong reference to it.
 
 ## Parameters
 
@@ -40,11 +45,12 @@ This method is useful if you want to add an object to a [`Collection`](https://d
 
 ## See Also
 
-- [init(pointer: UnsafeRawPointer?)](nsvalue/init(pointer:).md)
+### Working with Pointer and Object Values
+- [init(pointer: UnsafeRawPointer?)](./init%28pointer%29.md)
   Creates a value object containing the specified pointer.
-- [var pointerValue: UnsafeMutableRawPointer?](nsvalue/pointervalue.md)
+- [var pointerValue: UnsafeMutableRawPointer?](./pointervalue.md)
   Returns the value as an untyped pointer.
-- [var nonretainedObjectValue: Any?](nsvalue/nonretainedobjectvalue.md)
+- [var nonretainedObjectValue: Any?](./nonretainedobjectvalue.md)
   The value as a non-retained pointer to an object.
 
 

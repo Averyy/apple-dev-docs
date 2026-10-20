@@ -1,7 +1,8 @@
 # AnyCategoricalSummary
 
 **Framework**: TabularData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased categorical summary.
 
@@ -33,38 +34,39 @@ Categorical summary includes 5 statistics:
 ## Topics
 
 ### Getting Statistical Information
-- [var noneCount: Int](anycategoricalsummary/nonecount.md)
+- [var noneCount: Int](./anycategoricalsummary/nonecount.md)
   The number of missing elements in the column.
-- [var someCount: Int](anycategoricalsummary/somecount.md)
+- [var someCount: Int](./anycategoricalsummary/somecount.md)
   The number of non-missing elements in the column.
-- [var totalCount: Int](anycategoricalsummary/totalcount.md)
+- [var totalCount: Int](./anycategoricalsummary/totalcount.md)
   The total number of elements in the column.
-- [var uniqueCount: Int](anycategoricalsummary/uniquecount.md)
+- [var uniqueCount: Int](./anycategoricalsummary/uniquecount.md)
   The number of unique elements.
 ### Getting Mode Information
-- [var mode: [Any]](anycategoricalsummary/mode.md)
+- [var mode: [Any]](./anycategoricalsummary/mode.md)
   The most common values in a column.
-- [var modeType: any Any.Type](anycategoricalsummary/modetype.md)
-  The underlying type of [`mode`](anycategoricalsummary/mode.md).
+- [var modeType: any Any.Type](./anycategoricalsummary/modetype.md)
+  The underlying type of [`mode`](./anycategoricalsummary/mode.md).
 ### Operators
-- [static func == (AnyCategoricalSummary, AnyCategoricalSummary) -> Bool](anycategoricalsummary/==(_:_:).md)
+- [static func == (AnyCategoricalSummary, AnyCategoricalSummary) -> Bool](./anycategoricalsummary/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether the categorical summaries are equal.
 ### Initializers
-- [init(CategoricalSummary<AnyHashable>)](anycategoricalsummary/init(_:)-7p9bv.md)
+- [init(CategoricalSummary<AnyHashable>)](./anycategoricalsummary/init%28_%29-7p9bv.md)
   Creates a type-erased categorical summary from a typed categorical summary.
-- [init<T>(CategoricalSummary<T>)](anycategoricalsummary/init(_:)-8innt.md)
+- [init<T>(CategoricalSummary<T>)](./anycategoricalsummary/init%28_%29-8innt.md)
   Creates a type-erased categorical summary from a typed categorical summary.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [struct NumericSummary](numericsummary.md)
+### Statistical Summaries
+- [struct NumericSummary](./numericsummary.md)
   A summary of a numerical column.
-- [struct CategoricalSummary](categoricalsummary.md)
+- [struct CategoricalSummary](./categoricalsummary.md)
   A categorical summary of a collection’s elements.
 
 

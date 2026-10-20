@@ -1,7 +1,8 @@
 # code
 
 **Framework**: AVSystemRouting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The code that identifies the type of routing error.
 

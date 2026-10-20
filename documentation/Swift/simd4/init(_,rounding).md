@@ -1,7 +1,8 @@
 # init(_:rounding:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new vector from the given vector, rounding the given vector’s of elements using the specified rounding rule.
 
@@ -19,6 +20,8 @@ Creates a new vector from the given vector, rounding the given vector’s of ele
 ```swift
 init<Other>(_ other: SIMD4<Other>, rounding rule: FloatingPointRoundingRule = .towardZero) where Other : BinaryFloatingPoint, Other : SIMDScalar
 ```
+
+Available when `Scalar` conforms to `FixedWidthInteger` and `SIMDScalar`.
 
 ## Parameters
 

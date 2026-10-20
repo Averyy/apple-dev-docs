@@ -1,13 +1,14 @@
 # group::elementMaximumInGroup
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the maximum number of elements that can exist in the group.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -23,7 +24,7 @@ The maximum number of elements allocated for this group
 
 Use this function to determine the fixed capacity of particles per group, which is useful for normalizing element indices or managing group resources.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/group__elementMaximumInGroup.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/group__elementMaximumInGroup.svg)
 
 
 ---

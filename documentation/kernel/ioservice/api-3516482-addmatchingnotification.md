@@ -1,14 +1,15 @@
 # addMatchingNotification
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.15.2+
 
 ## Declaration
 
-```swift
+```c
 static IONotifier * addMatchingNotification(const OSSymbol *type, OSDictionary *matching, SInt32 priority, IOServiceMatchingNotificationHandlerBlock handler);
 ```
 

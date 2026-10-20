@@ -1,7 +1,8 @@
 # MPSImageStatisticsMinAndMax
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A kernel that computes the minimum and maximum pixel values for a given region of an image.
 
@@ -19,6 +20,10 @@ A kernel that computes the minimum and maximum pixel values for a given region o
 class MPSImageStatisticsMinAndMax
 ```
 
+```objc
+@interface MPSImageStatisticsMinAndMax : MPSUnaryImageKernel
+```
+
 #### Overview
 
 The minimum and maximum values are written to the destination image at the following pixel locations:
@@ -29,31 +34,32 @@ The minimum and maximum values are written to the destination image at the follo
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagestatisticsminandmax/init(coder:device:).md)
-- [init(device: any MTLDevice)](mpsimagestatisticsminandmax/init(device:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpsimagestatisticsminandmax/init%28coder,device%29.md)
+- [init(device: any MTLDevice)](./mpsimagestatisticsminandmax/init%28device%29.md)
 ### Instance Properties
-- [var clipRectSource: MTLRegion](mpsimagestatisticsminandmax/cliprectsource.md)
+- [var clipRectSource: MTLRegion](./mpsimagestatisticsminandmax/cliprectsource.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSUnaryImageKernel](mpsunaryimagekernel.md)
+- [MPSUnaryImageKernel](./mpsunaryimagekernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSImageStatisticsMean](mpsimagestatisticsmean.md)
+### Image Statistics Filters
+- [class MPSImageStatisticsMean](./mpsimagestatisticsmean.md)
   A kernel that computes the mean for a given region of an image.
-- [class MPSImageStatisticsMeanAndVariance](mpsimagestatisticsmeanandvariance.md)
+- [class MPSImageStatisticsMeanAndVariance](./mpsimagestatisticsmeanandvariance.md)
   A kernel that computes the mean and variance for a given region of an image.
 
 

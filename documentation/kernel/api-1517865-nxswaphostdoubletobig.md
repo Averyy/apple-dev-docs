@@ -1,24 +1,26 @@
 # NXSwapHostDoubleToBig
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 NXSwappedDouble NXSwapHostDoubleToBig(double x);
 ```
 
 ## See Also
 
-- [NXSwapHostFloatToBig](1517912-nxswaphostfloattobig.md)
-- [NXSwapHostIntToBig](1517873-nxswaphostinttobig.md)
-- [NXSwapHostLongLongToBig](1517900-nxswaphostlonglongtobig.md)
-- [NXSwapHostLongToBig](1517889-nxswaphostlongtobig.md)
-- [NXSwapHostShortToBig](1517913-nxswaphostshorttobig.md)
+### Host to Big Endian
+- [NXSwapHostFloatToBig](./api-1517912-nxswaphostfloattobig.md)
+- [NXSwapHostIntToBig](./api-1517873-nxswaphostinttobig.md)
+- [NXSwapHostLongLongToBig](./api-1517900-nxswaphostlonglongtobig.md)
+- [NXSwapHostLongToBig](./api-1517889-nxswaphostlongtobig.md)
+- [NXSwapHostShortToBig](./api-1517913-nxswaphostshorttobig.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # compression
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The compression to apply to environment textures.
 
@@ -21,9 +22,10 @@ var compression: EnvironmentResource.Compression
 
 ## See Also
 
-- [var samplingQuality: EnvironmentResource.CreateOptions.SamplingQuality](environmentresource/createoptions/samplingquality-swift.property.md)
+### Accessing the option properties
+- [var samplingQuality: EnvironmentResource.CreateOptions.SamplingQuality](./samplingquality-swift.property.md)
   The skybox sampling quality for lighting textures.
-- [var specularCubeDimension: Int?](environmentresource/createoptions/specularcubedimension.md)
+- [var specularCubeDimension: Int?](./specularcubedimension.md)
   The dimension of the computed specular cubemap for material reflections.
 
 

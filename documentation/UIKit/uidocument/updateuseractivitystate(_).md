@@ -1,7 +1,8 @@
 # updateUserActivityState(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the state of the given user activity.
 
@@ -17,9 +18,13 @@ Updates the state of the given user activity.
 func updateUserActivityState(_ userActivity: NSUserActivity)
 ```
 
+```objc
+- (void) updateUserActivityState:(NSUserActivity *) userActivity;
+```
+
 #### Discussion
 
-The default implementation of this method puts the document’s [`fileURL`](uidocument/fileurl.md) into the [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object’s [`userInfo`](https://developer.apple.com/documentation/foundation/nsuseractivity/userinfo) dictionary with the [`userActivityURLKey`](uidocument/useractivityurlkey.md). [`UIDocument`](uidocument.md) automatically sets the [`needsSave`](https://developer.apple.com/documentation/foundation/nsuseractivity/needssave) property of the [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object to [`true`](https://developer.apple.com/documentation/swift/true) when the [`fileURL`](uidocument/fileurl.md) changes.
+The default implementation of this method puts the document’s [`fileURL`](./fileurl.md) into the [`NSUserActivity`](../../Foundation/nsuseractivity.md) object’s [`userInfo`](../../Foundation/nsuseractivity/userinfo.md) dictionary with the [`userActivityURLKey`](./useractivityurlkey.md). [`UIDocument`](../uidocument.md) automatically sets the [`needsSave`](../../Foundation/nsuseractivity/needssave.md) property of the [`NSUserActivity`](../../Foundation/nsuseractivity.md) object to [`true`](../../Swift/true.md) when the [`fileURL`](./fileurl.md) changes.
 
 ## Parameters
 
@@ -27,9 +32,10 @@ The default implementation of this method puts the document’s [`fileURL`](uido
 
 ## See Also
 
-- [var userActivity: NSUserActivity?](uidocument/useractivity.md)
+### Supporting user activities
+- [var userActivity: NSUserActivity?](./useractivity.md)
   An object encapsulating a user activity supported by this document.
-- [func restoreUserActivityState(NSUserActivity)](uidocument/restoreuseractivitystate(_:).md)
+- [func restoreUserActivityState(NSUserActivity)](./restoreuseractivitystate%28_%29.md)
   Restores the state needed to continue the given user activity.
 
 

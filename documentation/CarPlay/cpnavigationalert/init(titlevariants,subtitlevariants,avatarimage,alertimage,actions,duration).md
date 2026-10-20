@@ -1,7 +1,8 @@
 # init(titleVariants:subtitleVariants:avatarImage:alertImage:actions:duration:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+

@@ -1,7 +1,8 @@
 # interpolatedColor(atLocation:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the color of the rendered gradient at the specified relative location.
 
@@ -12,6 +13,10 @@ Returns the color of the rendered gradient at the specified relative location.
 
 ```swift
 func interpolatedColor(atLocation location: CGFloat) -> NSColor
+```
+
+```objc
+- (NSColor *) interpolatedColorAtLocation:(CGFloat) location;
 ```
 
 #### Discussion
@@ -26,11 +31,12 @@ The start color of the gradient is always located at 0.0 and the end color is al
 
 ## See Also
 
-- [var colorSpace: NSColorSpace](nsgradient/colorspace.md)
+### Getting Gradient Properties
+- [var colorSpace: NSColorSpace](./colorspace.md)
   The color space of the colors associated with the gradient.
-- [var numberOfColorStops: Int](nsgradient/numberofcolorstops.md)
+- [var numberOfColorStops: Int](./numberofcolorstops.md)
   The number of color stops associated with the gradient.
-- [func getColor(AutoreleasingUnsafeMutablePointer<NSColor>?, location: UnsafeMutablePointer<CGFloat>?, at: Int)](nsgradient/getcolor(_:location:at:).md)
+- [func getColor(AutoreleasingUnsafeMutablePointer<NSColor>?, location: UnsafeMutablePointer<CGFloat>?, at: Int)](./getcolor%28_,location,at%29.md)
   Returns information about the color stop at the specified index in the receiver’s color array.
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a textual context.
 
@@ -21,7 +22,8 @@ init(_ rawValue: String)
 
 ## See Also
 
-- [init(rawValue: String)](uiaccessibilitytextualcontext/init(rawvalue:).md)
+### Initializers
+- [init(rawValue: String)](./init%28rawvalue%29.md)
   Creates a textual context with the specified raw value.
 
 

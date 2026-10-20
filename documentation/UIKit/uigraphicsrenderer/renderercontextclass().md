@@ -1,7 +1,8 @@
 # rendererContextClass()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Specifies the drawing context class used by this graphics renderer.
 
@@ -18,21 +19,26 @@ Specifies the drawing context class used by this graphics renderer.
 class func rendererContextClass() -> AnyClass
 ```
 
+```objc
++ (Class) rendererContextClass;
+```
+
 #### Return Value
 
-A subclass of [`UIGraphicsRendererContext`](uigraphicsrenderercontext.md) suitable for the current renderer.
+A subclass of [`UIGraphicsRendererContext`](../uigraphicsrenderercontext.md) suitable for the current renderer.
 
 #### Discussion
 
-Each subclass of `UIGraphicsRenderer` can define its own subclass of [`UIGraphicsRendererContext`](uigraphicsrenderercontext.md). The graphics renderer calls this method whenever it needs to create a new graphics renderer context.
+Each subclass of `UIGraphicsRenderer` can define its own subclass of [`UIGraphicsRendererContext`](../uigraphicsrenderercontext.md). The graphics renderer calls this method whenever it needs to create a new graphics renderer context.
 
 Override this method to specify the context class that the graphics renderer should use.
 
 ## See Also
 
-- [class func context(with: UIGraphicsRendererFormat) -> CGContext?](uigraphicsrenderer/context(with:).md)
+### Managing graphics contexts
+- [class func context(with: UIGraphicsRendererFormat) -> CGContext?](./context%28with%29.md)
   Creates a Core Graphics context configured according to the supplied format object.
-- [class func prepare(CGContext, with: UIGraphicsRendererContext)](uigraphicsrenderer/prepare(_:with:).md)
+- [class func prepare(CGContext, with: UIGraphicsRendererContext)](./prepare%28_,with%29.md)
   Applies the configuration specified in the renderer context to the Core Graphics context.
 
 

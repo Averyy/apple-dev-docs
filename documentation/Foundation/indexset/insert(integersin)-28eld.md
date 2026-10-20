@@ -1,7 +1,8 @@
 # insert(integersIn:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Insert a range of integers into the `IndexSet`.
 
@@ -22,9 +23,10 @@ mutating func insert(integersIn range: Range<IndexSet.Element>)
 
 ## See Also
 
-- [func insert(IndexSet.Element) -> (inserted: Bool, memberAfterInsert: IndexSet.Element)](indexset/insert(_:).md)
+### Inserting Elements
+- [func insert(IndexSet.Element) -> (inserted: Bool, memberAfterInsert: IndexSet.Element)](./insert%28_%29.md)
   Insert an integer into the `IndexSet`.
-- [func update(with: IndexSet.Element) -> IndexSet.Element?](indexset/update(with:).md)
+- [func update(with: IndexSet.Element) -> IndexSet.Element?](./update%28with%29.md)
   Insert an integer into the `IndexSet`.
 
 

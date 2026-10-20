@@ -1,7 +1,8 @@
 # RelationshipResponse
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response for a direct resource relationship fetch.
 
@@ -10,14 +11,14 @@ The response for a direct resource relationship fetch.
 
 ## Declaration
 
-```swift
+```
 object RelationshipResponse
 ```
 
 ## Topics
 
 ### Related Objects
-- [object RelationshipResponse.Meta](relationshipresponse/meta-data.dictionary.md)
+- [object RelationshipResponse.Meta](./relationshipresponse/meta-data.dictionary.md)
   Contextual data about the relationship.
 
 ## Properties

@@ -1,14 +1,15 @@
 # cpu_type
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 cpu_type_t cpu_type;
 ```
 

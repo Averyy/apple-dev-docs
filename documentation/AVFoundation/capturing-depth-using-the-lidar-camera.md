@@ -1,6 +1,8 @@
 # Capturing depth using the LiDAR camera
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: Sample Code  
+**Download**: [CapturingDepthUsingTheLiDARCamera.zip](https://docs-assets.developer.apple.com/published/fc8364208145/CapturingDepthUsingTheLiDARCamera.zip)
 
 Access the LiDAR camera on supporting devices to capture precise depth data.
 
@@ -16,7 +18,7 @@ AVFoundation introduced depth data capture for photos and video in iOS 11. The d
 
 This sample code project shows how to capture and render depth data from the LiDAR camera. It starts in streaming mode, which demonstrates how to capture synchronized video and depth data. When you tap the Camera button in the upper-left corner of the screen, the app switches to photo mode, which illustrates how to capture photos with depth data. In both modes, the app provides several Metal-based visualizations of the depth and image data.
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 Run this sample code on a device that provides a LiDAR camera, such as:
 
@@ -24,9 +26,9 @@ Run this sample code on a device that provides a LiDAR camera, such as:
 - iPad Pro 11-inch (3rd generation) or later
 - iPad Pro 12.9-inch (5th generation) or later
 
-##### Configure the Lidar Camera
+##### Configure the LiDAR camera
 
-The sample app’s `CameraController` class provides the code that configures and manages the capture session, and handles the delivery of new video and depth data. It begins its configuration by retrieving the LiDAR camera. It calls the capture device’s [`default(_:for:position:)`](avcapturedevice/default(_:for:position:).md) class method, passing it the new [`builtInLiDARDepthCamera`](avcapturedevice/devicetype-swift.struct/builtinlidardepthcamera.md) device type available in iOS 15.4 and later.
+The sample app’s `CameraController` class provides the code that configures and manages the capture session, and handles the delivery of new video and depth data. It begins its configuration by retrieving the LiDAR camera. It calls the capture device’s [`default(_:for:position:)`](./avcapturedevice/default%28_,for,position%29.md) class method, passing it the new [`builtInLiDARDepthCamera`](./avcapturedevice/devicetype-swift.struct/builtinlidardepthcamera.md) device type available in iOS 15.4 and later.
 
 ```swift
 // Look up the LiDAR camera.
@@ -66,9 +68,9 @@ device.activeDepthDataFormat = depthFormat
 device.unlockForConfiguration()
 ```
 
-##### Configure the Capture Outputs
+##### Configure the capture outputs
 
-The app operates in streaming or photo mode. To enable streaming output, it creates an instance of [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md) and [`AVCaptureDepthDataOutput`](avcapturedepthdataoutput.md) to capture video sample buffers and depth data, respectively. It configures them as follows:
+The app operates in streaming or photo mode. To enable streaming output, it creates an instance of [`AVCaptureVideoDataOutput`](./avcapturevideodataoutput.md) and [`AVCaptureDepthDataOutput`](./avcapturedepthdataoutput.md) to capture video sample buffers and depth data, respectively. It configures them as follows:
 
 ```swift
 // Create an object to output video sample buffers.
@@ -85,9 +87,9 @@ outputVideoSync = AVCaptureDataOutputSynchronizer(dataOutputs: [depthDataOutput,
 outputVideoSync.setDelegate(self, queue: videoQueue)
 ```
 
-Because the video and depth data stream from separate output objects, the sample uses an [`AVCaptureDataOutputSynchronizer`](avcapturedataoutputsynchronizer.md) to synchronize the delivery from both outputs to a single callback. The `CameraController` class adopts the synchronizer’s [`AVCaptureDataOutputSynchronizerDelegate`](avcapturedataoutputsynchronizerdelegate.md) protocol and responds to the delivery of new video and depth data.
+Because the video and depth data stream from separate output objects, the sample uses an [`AVCaptureDataOutputSynchronizer`](./avcapturedataoutputsynchronizer.md) to synchronize the delivery from both outputs to a single callback. The `CameraController` class adopts the synchronizer’s [`AVCaptureDataOutputSynchronizerDelegate`](./avcapturedataoutputsynchronizerdelegate.md) protocol and responds to the delivery of new video and depth data.
 
-To handle photo capture, the app also creates an instance of [`AVCapturePhotoOutput`](avcapturephotooutput.md). It optimizes the output for high-quality capture and adds the output to the capture session.
+To handle photo capture, the app also creates an instance of [`AVCapturePhotoOutput`](./avcapturephotooutput.md). It optimizes the output for high-quality capture and adds the output to the capture session.
 
 ```swift
 // Create an object to output photos.
@@ -101,9 +103,9 @@ photoOutput.isDepthDataDeliveryEnabled = true
 
 After it adds the output to the session, it enables the delivery of depth data, which configures the capture pipeline appropriately. It can only enable depth delivery after adding the output to the capture session because the output needs to determine whether the pipeline configuration can deliver it.
 
-##### Capture Synchronized Video and Depth
+##### Capture synchronized video and depth
 
-After configuring the capture session’s inputs and outputs as required, the app is ready to start capturing data. The app starts in streaming mode, which uses the video data and depth data outputs and an `AVCaptureDataOutputSynchronizer` to synchronize the delivery of their data. The app adopts the synchronizer’s delegate protocol and implements its [`dataOutputSynchronizer(_:didOutput:)`](avcapturedataoutputsynchronizerdelegate/dataoutputsynchronizer(_:didoutput:).md) method to handle the delivery, as the following example shows:
+After configuring the capture session’s inputs and outputs as required, the app is ready to start capturing data. The app starts in streaming mode, which uses the video data and depth data outputs and an `AVCaptureDataOutputSynchronizer` to synchronize the delivery of their data. The app adopts the synchronizer’s delegate protocol and implements its [`dataOutputSynchronizer(_:didOutput:)`](./avcapturedataoutputsynchronizerdelegate/dataoutputsynchronizer%28_,didoutput%29.md) method to handle the delivery, as the following example shows:
 
 ```swift
 func dataOutputSynchronizer(_ synchronizer: AVCaptureDataOutputSynchronizer,
@@ -126,9 +128,9 @@ func dataOutputSynchronizer(_ synchronizer: AVCaptureDataOutputSynchronizer,
 }
 ```
 
-The app retrieves the container objects that store the synchronized data from the [`AVCaptureSynchronizedDataCollection`](avcapturesynchronizeddatacollection.md). It then unwraps the underlying video pixel buffer and depth data, and packages them for the app’s Metal views to display.
+The app retrieves the container objects that store the synchronized data from the [`AVCaptureSynchronizedDataCollection`](./avcapturesynchronizeddatacollection.md). It then unwraps the underlying video pixel buffer and depth data, and packages them for the app’s Metal views to display.
 
-##### Capture Photos and Depth
+##### Capture photos and depth
 
 When you tap the app’s Camera button in the upper-left corner of the user interface, the app switches to photo mode. When this occurs, the app calls its `capturePhoto()` method, which creates a photo settings object, requests depth delivery on it, and initiates a photo capture.
 
@@ -149,7 +151,7 @@ func capturePhoto() {
 }
 ```
 
-When the framework finishes the photo capture, it calls the photo output’s delegate method and passes it the [`AVCapturePhoto`](avcapturephoto.md) object that contains the image and depth data. The sample retrieves the data from the photo, stops the stream until the user returns to streaming mode, and, similarly to the video case, packages the captured data for delivery to the app’s user interface layer.
+When the framework finishes the photo capture, it calls the photo output’s delegate method and passes it the [`AVCapturePhoto`](./avcapturephoto.md) object that contains the image and depth data. The sample retrieves the data from the photo, stops the stream until the user returns to streaming mode, and, similarly to the video case, packages the captured data for delivery to the app’s user interface layer.
 
 ```swift
 func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
@@ -178,21 +180,22 @@ func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo:
 
 ## See Also
 
-- [Capturing photos with depth](capturing-photos-with-depth.md)
+### Depth data capture
+- [Capturing photos with depth](./capturing-photos-with-depth.md)
   Get a depth map with a photo to create effects like the system camera’s Portrait mode (on compatible devices).
-- [Creating auxiliary depth data manually](creating-auxiliary-depth-data-manually.md)
+- [Creating auxiliary depth data manually](./creating-auxiliary-depth-data-manually.md)
   Generate a depth image and attach it to your own image.
-- [AVCamFilter: Applying filters to a capture stream](avcamfilter-applying-filters-to-a-capture-stream.md)
+- [AVCamFilter: Applying filters to a capture stream](./avcamfilter-applying-filters-to-a-capture-stream.md)
   Render a capture stream with rose-colored filtering and depth effects.
-- [Streaming depth data from the TrueDepth camera](streaming-depth-data-from-the-truedepth-camera.md)
+- [Streaming depth data from the TrueDepth camera](./streaming-depth-data-from-the-truedepth-camera.md)
   Visualize depth data in 2D and 3D from the TrueDepth camera.
-- [Enhancing live video by leveraging TrueDepth camera data](enhancing-live-video-by-leveraging-truedepth-camera-data.md)
+- [Enhancing live video by leveraging TrueDepth camera data](./enhancing-live-video-by-leveraging-truedepth-camera-data.md)
   Apply your own background to a live capture feed streamed from the front-facing TrueDepth camera.
-- [class AVCaptureDepthDataOutput](avcapturedepthdataoutput.md)
+- [class AVCaptureDepthDataOutput](./avcapturedepthdataoutput.md)
   A capture output that records scene depth information on compatible camera devices.
-- [class AVDepthData](avdepthdata.md)
+- [class AVDepthData](./avdepthdata.md)
   A container for per-pixel distance or disparity information captured by compatible camera devices.
-- [class AVCameraCalibrationData](avcameracalibrationdata.md)
+- [class AVCameraCalibrationData](./avcameracalibrationdata.md)
   Information about the camera characteristics used to capture images and depth data.
 
 

@@ -1,7 +1,8 @@
 # workoutSession(_:didDisconnectFromRemoteDeviceWithError:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the mirrored workout session disconnected from the primary session.
 
@@ -9,7 +10,7 @@ Tells the delegate that the mirrored workout session disconnected from the prima
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 10.0+
 
@@ -17,6 +18,10 @@ Tells the delegate that the mirrored workout session disconnected from the prima
 
 ```swift
 optional func workoutSession(_ workoutSession: HKWorkoutSession, didDisconnectFromRemoteDeviceWithError error: (any Error)?)
+```
+
+```objc
+- (void) workoutSession:(HKWorkoutSession *) workoutSession didDisconnectFromRemoteDeviceWithError:(NSError *) error;
 ```
 
 #### Discussion
@@ -42,7 +47,7 @@ nonisolated func workoutSession(_ workoutSession: HKWorkoutSession, didDisconnec
 }
 ```
 
-If the primary workout session is still running, it automatically tries to reconnect. If successful, the companion iOS device calls the [`workoutSessionMirroringStartHandler`](hkhealthstore/workoutsessionmirroringstarthandler.md) block again, passing in a new, valid [`HKWorkoutSession`](hkworkoutsession.md) instance.
+If the primary workout session is still running, it automatically tries to reconnect. If successful, the companion iOS device calls the [`workoutSessionMirroringStartHandler`](../hkhealthstore/workoutsessionmirroringstarthandler.md) block again, passing in a new, valid [`HKWorkoutSession`](../hkworkoutsession.md) instance.
 
 ## Parameters
 
@@ -51,7 +56,8 @@ If the primary workout session is still running, it automatically tries to recon
 
 ## See Also
 
-- [func workoutSession(HKWorkoutSession, didReceiveDataFromRemoteWorkoutSession: [Data])](hkworkoutsessiondelegate/workoutsession(_:didreceivedatafromremoteworkoutsession:).md)
+### Working with mirrored sessions
+- [func workoutSession(HKWorkoutSession, didReceiveDataFromRemoteWorkoutSession: [Data])](./workoutsession%28_,didreceivedatafromremoteworkoutsession%29.md)
   Passes data from the remote workout session to the session delegate.
 
 

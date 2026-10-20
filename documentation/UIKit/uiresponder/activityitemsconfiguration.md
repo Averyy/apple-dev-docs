@@ -1,7 +1,8 @@
 # activityItemsConfiguration
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -13,6 +14,10 @@
 
 ```swift
 var activityItemsConfiguration: (any UIActivityItemsConfigurationReading)? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) id<UIActivityItemsConfigurationReading> activityItemsConfiguration;
 ```
 
 

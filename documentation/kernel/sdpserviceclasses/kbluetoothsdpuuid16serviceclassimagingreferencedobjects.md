@@ -1,14 +1,15 @@
 # kBluetoothSDPUUID16ServiceClassImagingReferencedObjects
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPUUID16ServiceClassImagingReferencedObjects = 0x111D
 ```
 

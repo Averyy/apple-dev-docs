@@ -1,7 +1,8 @@
 # init(serviceAccount:)
 
 **Framework**: Media Setup  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new session.
 
@@ -17,13 +18,18 @@ Creates a new session.
 init(serviceAccount: MSServiceAccount)
 ```
 
+```objc
+- (instancetype) initWithServiceAccount:(MSServiceAccount *) serviceAccount;
+```
+
 ## Parameters
 
 - `serviceAccount`: The streaming media service account to set up on a HomePod.
 
 ## See Also
 
-- [var account: MSServiceAccount](mssetupsession/account.md)
+### Preparing the Configuration View
+- [var account: MSServiceAccount](./account.md)
   The streaming media service account for the session to configure.
 
 

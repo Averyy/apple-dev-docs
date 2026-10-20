@@ -1,7 +1,8 @@
 # SecKeyIsAlgorithmSupported(_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean indicating whether a key is suitable for an operation using a certain algorithm.
 
@@ -20,10 +21,14 @@ Returns a Boolean indicating whether a key is suitable for an operation using a 
 func SecKeyIsAlgorithmSupported(_ key: SecKey, _ operation: SecKeyOperationType, _ algorithm: SecKeyAlgorithm) -> Bool
 ```
 
+```c
+Boolean SecKeyIsAlgorithmSupported(SecKeyRef key, SecKeyOperationType operation, SecKeyAlgorithm algorithm);
+```
+
 ## Mentions
 
-- [Signing and Verifying](signing-and-verifying.md)
-- [Using Keys for Encryption](using-keys-for-encryption.md)
+- [Signing and Verifying](./signing-and-verifying.md)
+- [Using Keys for Encryption](./using-keys-for-encryption.md)
 
 #### Return Value
 
@@ -32,8 +37,8 @@ A Boolean indicating whether the key can be used for the given operation and alg
 ## Parameters
 
 - `key`: The key whose suitability you want to test.
-- `operation`: The operation that you want to perform with the key. Use one of the values from [`SecKeyOperationType`](seckeyoperationtype.md).
-- `algorithm`: The algorithm that you want to perform with the key. Use one of the values from [`SecKeyAlgorithm`](seckeyalgorithm.md).
+- `operation`: The operation that you want to perform with the key. Use one of the values from [`SecKeyOperationType`](./seckeyoperationtype.md).
+- `algorithm`: The algorithm that you want to perform with the key. Use one of the values from [`SecKeyAlgorithm`](./seckeyalgorithm.md).
 
 
 ---

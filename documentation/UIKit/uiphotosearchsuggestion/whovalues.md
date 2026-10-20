@@ -1,7 +1,8 @@
 # whoValues
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 People mentioned in the text that can be used to filter photos.
 
@@ -14,6 +15,10 @@ People mentioned in the text that can be used to filter photos.
 
 ```swift
 var whoValues: [String] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<NSString *> * whoValues;
 ```
 
 #### Discussion

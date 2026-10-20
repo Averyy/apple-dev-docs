@@ -6,44 +6,15 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.co
 
 # mlx.core.conj
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.conj.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.conj
-
- Table of contents 
-
-## Contents
-
-# mlx.core.conj
-
-**conj(*a: array*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**conj(*a: array*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
 : Return the elementwise complex conjugate of the input.
 Alias for mx.conjugate.
 
 Parameters:
-**a** ([array](mlx.core.array.html#mlx.core.array)) – Input array
+**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array
 
 Returns:
 The output array.
 
 Return type:
-[array](mlx.core.array.html#mlx.core.array)
-
-** Contents
+[array](mlx.core.array.md#mlx.core.array)

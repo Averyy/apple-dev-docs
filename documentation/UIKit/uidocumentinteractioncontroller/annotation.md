@@ -1,7 +1,8 @@
 # annotation
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Custom property list information for the target file.
 
@@ -17,19 +18,24 @@ Custom property list information for the target file.
 var annotation: Any? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) id annotation;
+```
+
 #### Discussion
 
-Use this property to pass information about the document type to the app responsible for opening it. Although the type of this object should be one used to contain property list information—namely, [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary), [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray), [`NSData`](https://developer.apple.com/documentation/foundation/nsdata), [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber), or [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate)—the root object must be an [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary).
+Use this property to pass information about the document type to the app responsible for opening it. Although the type of this object should be one used to contain property list information—namely, [`NSDictionary`](../../Foundation/nsdictionary.md), [`NSArray`](../../Foundation/nsarray.md), [`NSData`](../../Foundation/nsdata.md), [`NSString`](../../Foundation/nsstring.md), [`NSNumber`](../../Foundation/nsnumber.md), or [`NSDate`](../../Foundation/nsdate.md)—the root object must be an [`NSDictionary`](../../Foundation/nsdictionary.md).
 
 ## See Also
 
-- [var url: URL?](uidocumentinteractioncontroller/url.md)
+### Accessing the target document’s attributes
+- [var url: URL?](./url.md)
   The URL identifying the target file on the local filesystem.
-- [var uti: String?](uidocumentinteractioncontroller/uti.md)
+- [var uti: String?](./uti.md)
   The type of the target file.
-- [var name: String?](uidocumentinteractioncontroller/name.md)
+- [var name: String?](./name.md)
   The name of the target file.
-- [var icons: [UIImage]](uidocumentinteractioncontroller/icons.md)
+- [var icons: [UIImage]](./icons.md)
   The images associated with the target file.
 
 

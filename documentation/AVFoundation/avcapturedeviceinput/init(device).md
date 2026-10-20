@@ -1,7 +1,8 @@
 # init(device:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an input for the specified capture device.
 
@@ -17,6 +18,10 @@ Creates an input for the specified capture device.
 
 ```swift
 init(device: AVCaptureDevice) throws
+```
+
+```objc
+- (instancetype) initWithDevice:(AVCaptureDevice *) device error:(NSError **) outError;
 ```
 
 ## Parameters

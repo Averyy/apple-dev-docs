@@ -1,7 +1,8 @@
 # never
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A grouping behvaior that never groups digits.
 
@@ -22,7 +23,8 @@ static var never: NumberFormatStyleConfiguration.Grouping { get }
 
 ## See Also
 
-- [static var automatic: NumberFormatStyleConfiguration.Grouping](numberformatstyleconfiguration/grouping/automatic.md)
+### Grouping configurations
+- [static var automatic: NumberFormatStyleConfiguration.Grouping](./automatic.md)
   A grouping behvaior that automatically applies locale-appropriate grouping.
 
 

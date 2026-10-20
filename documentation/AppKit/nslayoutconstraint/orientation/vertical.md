@@ -1,12 +1,13 @@
 # NSLayoutConstraint.Orientation.vertical
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The constraint orientation applied to laying out the vertical relationship between objects.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ The constraint orientation applied to laying out the vertical relationship betwe
 case vertical
 ```
 
+```c
+NSLayoutConstraintOrientationVertical
+```
+
 ## See Also
 
-- [NSLayoutConstraint.Orientation.horizontal](nslayoutconstraint/orientation/horizontal.md)
+### Constants
+- [NSLayoutConstraint.Orientation.horizontal](./horizontal.md)
   The constraint orientation applied to laying out the horizontal relationship between objects.
 
 

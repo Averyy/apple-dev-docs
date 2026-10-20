@@ -1,7 +1,8 @@
 # kDefaultCMMSignature
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Signature for the default CMM supplied with the ColorSync Manager.
 

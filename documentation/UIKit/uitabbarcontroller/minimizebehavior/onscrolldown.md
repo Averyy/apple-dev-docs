@@ -1,7 +1,8 @@
 # UITabBarController.MinimizeBehavior.onScrollDown
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The tab bar minimizes when scrolling down, and expands when scrolling back up.
 
@@ -14,6 +15,10 @@ The tab bar minimizes when scrolling down, and expands when scrolling back up.
 
 ```swift
 case onScrollDown
+```
+
+```c
+UITabBarMinimizeBehaviorOnScrollDown
 ```
 
 

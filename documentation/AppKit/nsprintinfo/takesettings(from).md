@@ -1,7 +1,8 @@
 # takeSettings(from:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the print info with all the settings and attributes in the specified PDF info object.
 
@@ -14,21 +15,26 @@ Updates the print info with all the settings and attributes in the specified PDF
 func takeSettings(from inPDFInfo: NSPDFInfo)
 ```
 
+```objc
+- (void) takeSettingsFromPDFInfo:(NSPDFInfo *) inPDFInfo;
+```
+
 ## See Also
 
-- [var printSettings: NSMutableDictionary](nsprintinfo/printsettings.md)
+### Accessing Core Printing Information
+- [var printSettings: NSMutableDictionary](./printsettings.md)
   A mutable dictionary containing the print settings from Core Printing.
-- [NSPrintInfo.SettingKey](nsprintinfo/settingkey.md)
+- [NSPrintInfo.SettingKey](./settingkey.md)
   The type you use to specify a print info setting key.
-- [func pmPrintSession() -> UnsafeMutableRawPointer](nsprintinfo/pmprintsession.md)
+- [func pmPrintSession() -> UnsafeMutableRawPointer](./pmprintsession%28%29.md)
   Returns a Core Printing object configured with the print info’s session information.
-- [func pmPageFormat() -> UnsafeMutableRawPointer](nsprintinfo/pmpageformat.md)
+- [func pmPageFormat() -> UnsafeMutableRawPointer](./pmpageformat%28%29.md)
   Returns a Core Printing object configured with the print info’s page format information.
-- [func pmPrintSettings() -> UnsafeMutableRawPointer](nsprintinfo/pmprintsettings.md)
+- [func pmPrintSettings() -> UnsafeMutableRawPointer](./pmprintsettings%28%29.md)
   Returns a Core Printing object configured with the print info’s print settings information
-- [func updateFromPMPageFormat()](nsprintinfo/updatefrompmpageformat.md)
+- [func updateFromPMPageFormat()](./updatefrompmpageformat%28%29.md)
   Synchronizes the print info’s page format information with information from its associated page format object.
-- [func updateFromPMPrintSettings()](nsprintinfo/updatefrompmprintsettings.md)
+- [func updateFromPMPrintSettings()](./updatefrompmprintsettings%28%29.md)
   Synchronizes the print info’s print settings information with information from its associated print settings object.
 
 

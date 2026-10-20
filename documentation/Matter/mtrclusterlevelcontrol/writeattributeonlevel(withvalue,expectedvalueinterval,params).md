@@ -1,7 +1,8 @@
 # writeAttributeOnLevel(withValue:expectedValueInterval:params:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 func writeAttributeOnLevel(withValue dataValueDictionary: [String : Any], expectedValueInterval expectedValueIntervalMs: NSNumber, params: MTRWriteParams?)
+```
+
+```objc
+- (void) writeAttributeOnLevelWithValue:(NSDictionary<NSString *,id> *) dataValueDictionary expectedValueInterval:(NSNumber *) expectedValueIntervalMs params:(MTRWriteParams *) params;
 ```
 
 

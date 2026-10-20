@@ -1,7 +1,8 @@
 # code
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.4+
@@ -20,7 +21,8 @@ let code: Int64
 
 ## See Also
 
-- [let message: String](invalidrequesterror/message.md)
+### Instance Properties
+- [let message: String](./message.md)
 
 
 ---

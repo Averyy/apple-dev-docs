@@ -1,7 +1,8 @@
 # code
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The error code.
 
@@ -20,17 +21,23 @@ The error code.
 var code: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger code;
+```
+
 #### Discussion
 
 Note that errors are domain-specific.
 
 ## See Also
 
-- [var localizedDescription: String](nserror/localizeddescription.md)
+### Related Documentation
+- [var localizedDescription: String](./localizeddescription.md)
   A string containing the localized description of the error.
-- [var domain: String](nserror/domain.md)
+### Getting Error Properties
+- [var domain: String](./domain.md)
   A string containing the error domain.
-- [var userInfo: [String : Any]](nserror/userinfo.md)
+- [var userInfo: [String : Any]](./userinfo.md)
   The user info dictionary.
 
 

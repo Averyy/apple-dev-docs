@@ -1,7 +1,8 @@
 # CloudKitAPITokenAuth
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Your CloudKit API token.
 
@@ -10,7 +11,7 @@ Your CloudKit API token.
 
 ## Declaration
 
-```swift
+```
 attribute string? CloudKitAPITokenAuth;
 ```
 

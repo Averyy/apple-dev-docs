@@ -1,7 +1,8 @@
 # EstimatorEncodingError.invalidState(debugDescription:)
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates that an estimator cannot perform encoding from its current state.
 

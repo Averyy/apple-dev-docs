@@ -1,7 +1,8 @@
 # height
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height of the portal mesh, in meters, along the entity’s local Y axis.
 

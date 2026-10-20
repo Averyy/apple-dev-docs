@@ -1,12 +1,15 @@
 # SecKeychainGetUserInteractionAllowed(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Indicates whether keychain services functions that normally display a user interaction are allowed to do so.
 
 **Availability**:
-- macOS 10.2+
+- macOS 10.2+ - Deprecated in 10.10
+
+> **Deprecated**: SecKeychain is deprecated
 
 ## Declaration
 
@@ -14,13 +17,17 @@ Indicates whether keychain services functions that normally display a user inter
 func SecKeychainGetUserInteractionAllowed(_ state: UnsafeMutablePointer<DarwinBoolean>) -> OSStatus
 ```
 
+```c
+OSStatus SecKeychainGetUserInteractionAllowed(Boolean *state);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 ## Parameters
 
-- `state`: On return, a Boolean value indicating whether user interaction is permitted. If [`true`](https://developer.apple.com/documentation/swift/true), user interaction is allowed, and keychain services functions that display a user interface can do so as appropriate.
+- `state`: On return, a Boolean value indicating whether user interaction is permitted. If [`true`](../Swift/true.md), user interaction is allowed, and keychain services functions that display a user interface can do so as appropriate.
 
 
 ---

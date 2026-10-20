@@ -1,6 +1,7 @@
 # Calendar date and time values
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 QuickTime movies store date and time information in Macintosh date format.
 

@@ -1,20 +1,21 @@
 # Running Intel Binaries in Linux VMs
 
-**Framework**: Virtualization
+**Framework**: Virtualization  
+**Role**: Article
 
 Run x86_64 Linux binaries under ARM Linux on Apple silicon.
 
 #### Overview
 
-In macOS 13 and later on Mac computers with Apple silicon chips, the Virtualization framework supports apps using Intel binary translation in ARM Linux virtual machines (VMs). Until macOS 26, this capability was part of Rosetta, which allows apps built for Intel-based Mac computers to run seamlessly on Apple silicon. macOS 27 directly integrates support for Intel binary translation, without needing to install Rosetta. If your app has a minimum deployment target of macOS 27, continue with [`Create the Directory Share`](running-intel-binaries-in-linux-vms#Create-the-Directory-Share.md).
+In macOS 13 and later on Mac computers with Apple silicon chips, the Virtualization framework supports apps using Intel binary translation in ARM Linux virtual machines (VMs). Until macOS 26, this capability was part of Rosetta, which allows apps built for Intel-based Mac computers to run seamlessly on Apple silicon. macOS 27 directly integrates support for Intel binary translation, without needing to install Rosetta. If your app has a minimum deployment target of macOS 27, continue with [Create the Directory Share](./running-intel-binaries-in-linux-vms.md#Create-the-Directory-Share).
 
 > **Note**:  The Virtualization framework doesn’t support the bootstrapping or installation of Intel Linux distributions on Mac computers with Apple silicon. Instead, it provides support for Intel apps that run in an ARM Linux distribution.
 
-##### Test for Rosetta on Macos 26 and Earlier
+##### Test for Rosetta on macOS 26 and earlier
 
-> **Note**:  Starting in macOS 27, support for Intel binary translation for Linux apps is included in macOS. Testing for [`availability`](vzlinuxrosettadirectoryshare/availability.md) starting in macOS 27 always returns [`VZLinuxRosettaAvailability.installed`](vzlinuxrosettaavailability/installed.md)  and [`installRosetta(completionHandler:)`](vzlinuxrosettadirectoryshare/installrosetta(completionhandler:).md) always returns immediately.
+> **Note**:  Starting in macOS 27, support for Intel binary translation for Linux apps is included in macOS. Testing for [`availability`](./vzlinuxrosettadirectoryshare/availability.md) starting in macOS 27 always returns [`VZLinuxRosettaAvailability.installed`](./vzlinuxrosettaavailability/installed.md)  and [`installRosetta(completionHandler:)`](./vzlinuxrosettadirectoryshare/installrosetta%28completionhandler%29.md) always returns immediately.
 
-Before trying to install, run, or activate Rosetta, your app should check to ensure that the capability is available in the version of macOS running on the host computer. The [`availability`](vzlinuxrosettadirectoryshare/availability.md) class method returns a value from the [`VZLinuxRosettaAvailability`](vzlinuxrosettaavailability.md) enumeration that describes whether the current host supports Rosetta or if the capability is already installed on the host Mac. The example below shows the process for checking for Rosetta availability:
+Before trying to install, run, or activate Rosetta, your app should check to ensure that the capability is available in the version of macOS running on the host computer. The [`availability`](./vzlinuxrosettadirectoryshare/availability.md) class method returns a value from the [`VZLinuxRosettaAvailability`](./vzlinuxrosettaavailability.md) enumeration that describes whether the current host supports Rosetta or if the capability is already installed on the host Mac. The example below shows the process for checking for Rosetta availability:
 
 **Swift**:
 
@@ -57,7 +58,7 @@ switch (supportForIntelApps) {
 }
 ```
 
-##### Install Rosetta on Macos 26 and Earlier
+##### Install Rosetta on macOS 26 and earlier
 
 In macOS 26 and earlier, you need to install Rosetta to allow apps built for Intel-based Mac computers to run on Apple silicon. Installing Rosetta is a one-time process per computer that requires someone to grant permission for the system to install Rosetta. If someone has already installed Rosetta, the system activates it for use under the Virtualization framework; if Rosetta isn’t installed, the framework downloads the installer from the network and performs the installation. The installer interactively prompts a person for authorization, and your app needs to handle any of the possible error conditions that could occur during the authorization, download, and installation process. The example below shows how to start the installation:
 
@@ -110,7 +111,7 @@ do {
 
 ##### Create the Directory Share
 
-With Intel binary translation support enabled, your app needs to configure an appropriate directory share in the Linux guest to enable translation capabilities. The shared directory must have a tag that uniquely identifies the share and that you validate using [`validateTag(_:)`](vzvirtiofilesystemdeviceconfiguration/validatetag(_:).md) to ensure it conforms to the length and format for file system tags:
+With Intel binary translation support enabled, your app needs to configure an appropriate directory share in the Linux guest to enable translation capabilities. The shared directory must have a tag that uniquely identifies the share and that you validate using [`validateTag(_:)`](./vzvirtiofilesystemdeviceconfiguration/validatetag%28_%29.md) to ensure it conforms to the length and format for file system tags:
 
 **Swift**:
 
@@ -151,7 +152,7 @@ if (rosettaDirectoryShare) {
 }
 ```
 
-##### Mount the Shared Directory and Register Rosetta
+##### Mount the shared directory and register Rosetta
 
 In order to use Intel binary translation in the Linux guest, a person must mount the Rosetta share in the guest VM and install Rosetta as the application the system uses to run x86_64 binaries using the following process:
 
@@ -177,17 +178,17 @@ The example below lists the commands, with the exception of the `update-binfmts`
     --credentials yes --preserve yes --fix-binary yes
 ```
 
-##### Ensure Shared Libraries Are Available for Dynamically Linked Apps
+##### Ensure Shared Libraries are Available for Dynamically Linked Apps
 
 Rosetta can run statically linked x86_64 binaries without additional configuration. Binaries that are dynamically linked and that depend on shared libraries require the installation of the shared libraries, or library hierarchies, in the Linux guest in paths that are accessible to both the user account and to Rosetta.
 
-##### Configure Rosettas Ahead of Time Aot Caching Options
+##### Configure Rosetta’s ahead of time (AOT) caching options
 
 In macOS 14 and later, Rosetta supports options that allow you control the ahead of time (AOT) cache characteristics; this can improve the performance of some X86 workloads.
 
 There are two modes of operation for AOT caching: The first is communication using a Unix Domain Socket where the Virtualization framework shares a file that represents the socket between the Rosetta daemon and Rosetta runtime through a symlink or bind-mount. The second is communication through an abstract socket where the framework defines a shared name rather than a shared file. 
 
-You enable these options after you create the Rosetta directory share by setting one of the [`VZLinuxRosettaDirectoryShare.CachingOptions`](vzlinuxrosettadirectoryshare/cachingoptions-swift.enum.md) using [`setCachingOptions(_:)`](vzlinuxrosettadirectoryshare/setcachingoptions(_:).md). This example shows how to configure Rosetta’s caching options in a new virtual machine configuration using a Unix Domain Socket though a shared, named file:
+You enable these options after you create the Rosetta directory share by setting one of the [`VZLinuxRosettaDirectoryShare.CachingOptions`](./vzlinuxrosettadirectoryshare/cachingoptions-swift.enum.md) using [`setCachingOptions(_:)`](./vzlinuxrosettadirectoryshare/setcachingoptions%28_%29.md). This example shows how to configure Rosetta’s caching options in a new virtual machine configuration using a Unix Domain Socket though a shared, named file:
 
 **Swift**:
 
@@ -276,21 +277,22 @@ The following example shows how to configure Rosetta’s caching options in a ne
 
 ## See Also
 
-- [Running macOS in a virtual machine on Apple silicon](running-macos-in-a-virtual-machine-on-apple-silicon.md)
+### Virtual machine setup
+- [Running macOS in a virtual machine on Apple silicon](./running-macos-in-a-virtual-machine-on-apple-silicon.md)
   Install and run macOS in a virtual machine using the Virtualization framework.
-- [Running Linux in a Virtual Machine](running-linux-in-a-virtual-machine.md)
+- [Running Linux in a Virtual Machine](./running-linux-in-a-virtual-machine.md)
   Run a Linux operating system on your Mac using the Virtualization framework.
-- [Running GUI Linux in a virtual machine on a Mac](running-gui-linux-in-a-virtual-machine-on-a-mac.md)
+- [Running GUI Linux in a virtual machine on a Mac](./running-gui-linux-in-a-virtual-machine-on-a-mac.md)
   Install and run GUI Linux in a virtual machine using the Virtualization framework.
-- [Installing macOS on a Virtual Machine](installing-macos-on-a-virtual-machine.md)
+- [Installing macOS on a Virtual Machine](./installing-macos-on-a-virtual-machine.md)
   Download a macOS restore image and install it in a new VM.
-- [Creating and Running a Linux Virtual Machine](creating-and-running-a-linux-virtual-machine.md)
+- [Creating and Running a Linux Virtual Machine](./creating-and-running-a-linux-virtual-machine.md)
   Design and run custom Linux guests on Apple silicon or Intel-based Mac Computers.
-- [Virtualize macOS on a Mac](virtualize-macos-on-a-mac.md)
+- [Virtualize macOS on a Mac](./virtualize-macos-on-a-mac.md)
   Configure and run macOS guests on Apple silicon.
-- [Virtualize Linux on a Mac](virtualize-linux-on-a-mac.md)
+- [Virtualize Linux on a Mac](./virtualize-linux-on-a-mac.md)
   Configure and run Linux guests on Apple silicon and Intel-based Mac computers.
-- [Accelerating the performance of Rosetta](accelerating-the-performance-of-rosetta.md)
+- [Accelerating the performance of Rosetta](./accelerating-the-performance-of-rosetta.md)
   Improve Rosetta performance by adding support for the total store ordering (TSO) memory model to your Linux kernel.
 
 

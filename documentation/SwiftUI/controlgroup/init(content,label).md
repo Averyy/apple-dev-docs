@@ -1,7 +1,8 @@
 # init(content:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new control group with the specified content and a label.
 
@@ -20,6 +21,8 @@ nonisolated
 init<C, L>(@ContentBuilder content: () -> C, @ContentBuilder label: () -> L) where Content == LabeledControlGroupContent<C, L>, C : View, L : View
 ```
 
+Available when `Content` conforms to `View`.
+
 ## Parameters
 
 - `content`: The content to display.
@@ -27,9 +30,10 @@ init<C, L>(@ContentBuilder content: () -> C, @ContentBuilder label: () -> L) whe
 
 ## See Also
 
-- [init(content: () -> Content)](controlgroup/init(content:).md)
+### Creating a control group
+- [init(content: () -> Content)](./init%28content%29.md)
   Creates a new ControlGroup with the specified children
-- [init(_:content:)](controlgroup/init(_:content:).md)
+- [init(_:content:)](./init%28_,content%29.md)
   Creates a new control group with the specified content that generates its label from a string.
 
 

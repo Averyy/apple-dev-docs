@@ -1,7 +1,8 @@
 # AddressSpace
 
 **Framework**: Compute Graph  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A GPU memory address space.
 
@@ -12,7 +13,7 @@ A GPU memory address space.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -27,25 +28,26 @@ Used to indicate where variables and buffers reside.
 ## Topics
 
 ### Enumeration Cases
-- [AddressSpace.constant](addressspace/constant.md)
-- [AddressSpace.device](addressspace/device.md)
-- [AddressSpace.thread](addressspace/thread.md)
-- [AddressSpace.threadgroup](addressspace/threadgroup.md)
+- [AddressSpace.constant](./addressspace/constant.md)
+- [AddressSpace.device](./addressspace/device.md)
+- [AddressSpace.thread](./addressspace/thread.md)
+- [AddressSpace.threadgroup](./addressspace/threadgroup.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [ComputeNodeGraph.SamplerSettings](computenodegraph/samplersettings.md)
-- [ComputeNodeGraph.SwizzleChannels](computenodegraph/swizzlechannels.md)
+### Graph resources
+- [ComputeNodeGraph.SamplerSettings](./computenodegraph/samplersettings.md)
+- [ComputeNodeGraph.SwizzleChannels](./computenodegraph/swizzlechannels.md)
 
 
 ---

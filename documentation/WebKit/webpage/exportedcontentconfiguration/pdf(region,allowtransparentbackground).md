@@ -1,7 +1,8 @@
 # pdf(region:allowTransparentBackground:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A configuration of a webpage for a representation as PDF data.
 
@@ -29,9 +30,10 @@ The PDF configuration of this page that will be used when producing its represen
 
 ## See Also
 
-- [WebPage.ExportedContentConfiguration.Region](webpage/exportedcontentconfiguration/region.md)
+### Configurable types
+- [WebPage.ExportedContentConfiguration.Region](./region.md)
   Represents a specific semantic region of a webpage.
-- [static func image(region: WebPage.ExportedContentConfiguration.Region, allowTransparentBackground: Bool, snapshotWidth: CGFloat?, afterScreenUpdates: Bool) -> WebPage.ExportedContentConfiguration](webpage/exportedcontentconfiguration/image(region:allowtransparentbackground:snapshotwidth:afterscreenupdates:).md)
+- [static func image(region: WebPage.ExportedContentConfiguration.Region, allowTransparentBackground: Bool, snapshotWidth: CGFloat?, afterScreenUpdates: Bool) -> WebPage.ExportedContentConfiguration](./image%28region,allowtransparentbackground,snapshotwidth,afterscreenupdates%29.md)
   A configuration of a webpage for a representation as image data.
 
 

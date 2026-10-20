@@ -1,7 +1,8 @@
 # position(at:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the position of the vertex at the given index.
 
@@ -26,9 +27,10 @@ The position of the specified vertex.
 
 ## See Also
 
-- [func withPositions<Result>((Span<SIMD3<Float>>) -> Result) -> Result](clothposeresource/withpositions(_:).md)
+### Accessing pose positions
+- [func withPositions<Result>((Span<SIMD3<Float>>) -> Result) -> Result](./withpositions%28_%29.md)
   Provides access to the positions of all the vertices within a callback.
-- [var vertexCount: Int](clothposeresource/vertexcount.md)
+- [var vertexCount: Int](./vertexcount.md)
   The number of vertices in the pose resource.
 
 

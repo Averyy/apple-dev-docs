@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an initialized audio player node.
 
@@ -18,6 +19,10 @@ Creates an initialized audio player node.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

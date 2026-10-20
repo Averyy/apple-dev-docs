@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: ARKit
+**Framework**: ARKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (HandSkeleton.Joint, HandSkeleton.Joint) -> Bool](handskeleton/joint/==(_:_:).md)
+- [static func == (HandSkeleton.Joint, HandSkeleton.Joint) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two hand skeleton joints are equal.
 
 

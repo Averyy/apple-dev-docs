@@ -1,7 +1,8 @@
 # init(excluded:parameters:)
 
 **Framework**: Network Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new query options configuration with default values.
 

@@ -1,7 +1,8 @@
 # ignoresSiblingOrder
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,9 +18,14 @@
 var ignoresSiblingOrder: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL ignoresSiblingOrder;
+```
+
 ## See Also
 
-- [var shouldCullNonVisibleNodes: Bool](skrenderer/shouldcullnonvisiblenodes.md)
+### Configuring Performance Related Toggles
+- [var shouldCullNonVisibleNodes: Bool](./shouldcullnonvisiblenodes.md)
 
 
 ---

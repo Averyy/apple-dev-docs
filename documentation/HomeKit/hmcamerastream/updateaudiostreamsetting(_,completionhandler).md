@@ -1,7 +1,8 @@
 # updateAudioStreamSetting(_:completionHandler:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates an audio stream’s settings.
 
@@ -16,20 +17,31 @@ Updates an audio stream’s settings.
 ## Declaration
 
 ```swift
+func updateAudioStreamSetting(_ audioStreamSetting: HMCameraAudioStreamSetting, completionHandler completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func updateAudioStreamSetting(_ audioStreamSetting: HMCameraAudioStreamSetting) async throws
+```
+
+```objc
+- (void) updateAudioStreamSetting:(HMCameraAudioStreamSetting) audioStreamSetting completionHandler:(void (^)(NSError *error)) completion;
 ```
 
 ## Parameters
 
 - `audioStreamSetting`: The new audio stream configuration.
-- `completion`: The block executed after processing the request. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
+- `completion`: The block executed after processing the request.
+
+  - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 
-- [var audioStreamSetting: HMCameraAudioStreamSetting](hmcamerastream/audiostreamsetting.md)
+### Configuring the audio stream
+- [var audioStreamSetting: HMCameraAudioStreamSetting](./audiostreamsetting.md)
   The stream’s current audio setting.
-- [func setAudioStreamSetting(HMCameraAudioStreamSetting)](hmcamerastream/setaudiostreamsetting(_:).md)
-- [enum HMCameraAudioStreamSetting](hmcameraaudiostreamsetting.md)
+- [func setAudioStreamSetting(HMCameraAudioStreamSetting)](./setaudiostreamsetting%28_%29.md)
+- [enum HMCameraAudioStreamSetting](../hmcameraaudiostreamsetting.md)
   The options associated with a camera’s audio stream.
 
 

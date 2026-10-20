@@ -1,7 +1,8 @@
 # state
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of state properties used to efficiently manage sync engine operation.
 
@@ -11,7 +12,7 @@ A collection of state properties used to efficiently manage sync engine operatio
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,13 +23,14 @@ final var state: CKSyncEngine.State { get }
 
 #### Discussion
 
-> **Note**: [`CKSyncEngine.State`](cksyncengine-5sie5/state-swift.class.md)
+> **See Also**: [`CKSyncEngine.State`](./state-swift.class.md)
 
 ## See Also
 
-- [var database: CKDatabase](cksyncengine-5sie5/database.md)
+### Accessing the engine’s attributes
+- [var database: CKDatabase](./database.md)
   The associated database.
-- [CKSyncEngine.State](cksyncengine-5sie5/state-swift.class.md)
+- [CKSyncEngine.State](./state-swift.class.md)
   An object that manages the sync engine’s state.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 **Availability**:
@@ -18,6 +19,11 @@
 ```swift
 static var runBoundaries: AttributedString.AttributeRunBoundaries? { get }
 ```
+
+## Default Implementations
+
+### AttributedStringKey Implementations
+- [static var runBoundaries: AttributedString.AttributeRunBoundaries?](./runboundaries-17wte.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # Tiled Image
 
 **Framework**: ShaderGraph  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: ShaderGraph Node
 
 Samples data from an image with provisions for offsetting and tiling in UV space.
 
@@ -15,7 +16,126 @@ Samples data from an image with provisions for offsetting and tiling in UV space
 
 #### Parameter Types
 
-#### Parameter Descriptions
+**Tiled Image (float)**:
+
+| Input | Type |
+| --- | --- |
+| `File` | AssetPath |
+| `Default` | Float |
+| `Texture Coordinates` | Vector2f |
+| `UV Tiling` | Vector2f |
+| `UV Offset` | Vector2f |
+| `Real World Image Size` | Vector2f |
+| `Real World Tile Size` | Vector2f |
+| `Filter Type` | String |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Float |
+
+**Tiled Image (vector4f)**:
+
+| Input | Type |
+| --- | --- |
+| `File` | AssetPath |
+| `Default` | Vector4f |
+| `Texture Coordinates` | Vector2f |
+| `UV Tiling` | Vector2f |
+| `UV Offset` | Vector2f |
+| `Real World Image Size` | Vector2f |
+| `Real World Tile Size` | Vector2f |
+| `Filter Type` | String |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector4f |
+
+**Tiled Image (color4f)**:
+
+| Input | Type |
+| --- | --- |
+| `File` | AssetPath |
+| `Default` | Color4 |
+| `Texture Coordinates` | Vector2f |
+| `UV Tiling` | Vector2f |
+| `UV Offset` | Vector2f |
+| `Real World Image Size` | Vector2f |
+| `Real World Tile Size` | Vector2f |
+| `Filter Type` | String |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color4 |
+
+**Tiled Image (vector3f)**:
+
+| Input | Type |
+| --- | --- |
+| `File` | AssetPath |
+| `Default` | Vector3f |
+| `Texture Coordinates` | Vector2f |
+| `UV Tiling` | Vector2f |
+| `UV Offset` | Vector2f |
+| `Real World Image Size` | Vector2f |
+| `Real World Tile Size` | Vector2f |
+| `Filter Type` | String |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector3f |
+
+**Tiled Image (vector2f)**:
+
+| Input | Type |
+| --- | --- |
+| `File` | AssetPath |
+| `Default` | Vector2f |
+| `Texture Coordinates` | Vector2f |
+| `UV Tiling` | Vector2f |
+| `UV Offset` | Vector2f |
+| `Real World Image Size` | Vector2f |
+| `Real World Tile Size` | Vector2f |
+| `Filter Type` | String |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector2f |
+
+**Tiled Image (color3f)**:
+
+| Input | Type |
+| --- | --- |
+| `File` | AssetPath |
+| `Default` | Color3 |
+| `Texture Coordinates` | Vector2f |
+| `UV Tiling` | Vector2f |
+| `UV Offset` | Vector2f |
+| `Real World Image Size` | Vector2f |
+| `Real World Tile Size` | Vector2f |
+| `Filter Type` | String |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color3 |
+
+**Tiled Image (half)**:
+
+| Input | Type |
+| --- | --- |
+| `File` | AssetPath |
+| `Default` | Half |
+| `Texture Coordinates` | Vector2f |
+| `UV Tiling` | Vector2f |
+| `UV Offset` | Vector2f |
+| `Real World Image Size` | Vector2f |
+| `Real World Tile Size` | Vector2f |
+| `Filter Type` | String |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Half |
+
+#### Parameter descriptions
 
 - **`File`**: The image file to use for the texture.
 - **`Default`**: A default value to use if the ​file​ reference fails to resolve.
@@ -36,19 +156,20 @@ The `UV Tiling` parameter repeats the given file input to produce an image. The 
 
 Below is an example of a simple node graph that uses the Tiled Image node:
 
-![nil](/images/ShaderGraph-Docs/TiledImage1.png)
+![nil](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/TiledImage1.png)
 
 If the `UV Tiling` parameter is `(2,2)`, the pattern repeats twice horizontally and twice vertically:
 
-![nil](/images/ShaderGraph-Docs/TiledImage2.png)
+![nil](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/TiledImage2.png)
 
 ## See Also
 
-- [Image](2d-texture/image.md)
+### Nodes
+- [Image](./image.md)
   A texture referencing a 2D image file.
-- [UV Texture](2d-texture/uv-texture.md)
+- [UV Texture](./uv-texture.md)
   A MaterialX version of USD UV Texture reader.
-- [Transform 2D](2d-texture/transform-2d.md)
+- [Transform 2D](./transform-2d.md)
   A node that applies an affine transformation to a 2d input.
 
 

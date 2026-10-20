@@ -1,7 +1,8 @@
 # BNNSDataLayoutGetRank(_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 17.4+
@@ -18,6 +19,10 @@
 func BNNSDataLayoutGetRank(_ layout: BNNSDataLayout) -> Int
 ```
 
+```c
+size_t BNNSDataLayoutGetRank(BNNSDataLayout layout);
+```
+
 #### Return Value
 
 The number of dimensions represented by `layout`, or `SIZE_T_MAX` if unable to determine
@@ -28,15 +33,16 @@ Determine the rank of the given layout
 
 ## See Also
 
-- [struct BNNSLayerData](bnnslayerdata.md)
+### N-dimensional array descriptor essentials
+- [struct BNNSLayerData](./bnnslayerdata.md)
   A structure containing common layer parameters.
-- [BNNS.Shape](bnns/shape.md)
+- [BNNS.Shape](./bnns/shape.md)
   Constants that describe the size and data layout of an n-dimensional array descriptor.
-- [struct BNNSDataLayout](bnnsdatalayout.md)
+- [struct BNNSDataLayout](./bnnsdatalayout.md)
   Constants that describe the data type of an n-dimensional array.
-- [struct BNNSDataType](bnnsdatatype.md)
+- [struct BNNSDataType](./bnnsdatatype.md)
   BNNS Data Types.
-- [struct BNNSNDArrayDescriptor](bnnsndarraydescriptor.md)
+- [struct BNNSNDArrayDescriptor](./bnnsndarraydescriptor.md)
   A structure that describes the shape, stride, data type, and, optionally, the memory location of an n-dimensional array.
 
 

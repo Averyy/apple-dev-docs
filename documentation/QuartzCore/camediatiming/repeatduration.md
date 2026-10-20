@@ -2,6 +2,7 @@
 
 **Framework**: Core Animation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Determines how many seconds the animation will repeat for.
@@ -20,13 +21,18 @@ Determines how many seconds the animation will repeat for.
 var repeatDuration: CFTimeInterval { get set }
 ```
 
+```objc
+@property CFTimeInterval repeatDuration;
+```
+
 #### Discussion
 
-Defaults to 0. If the `repeatDuration` is 0, it is ignored. If both [`repeatDuration`](camediatiming/repeatduration.md) and [`repeatCount`](camediatiming/repeatcount.md) are specified the behavior is undefined.
+Defaults to 0. If the `repeatDuration` is 0, it is ignored. If both [`repeatDuration`](./repeatduration.md) and [`repeatCount`](./repeatcount.md) are specified the behavior is undefined.
 
 ## See Also
 
-- [var repeatCount: Float](camediatiming/repeatcount.md)
+### Repeating Animations
+- [var repeatCount: Float](./repeatcount.md)
   Determines the number of times the animation will repeat.
 
 

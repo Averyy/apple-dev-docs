@@ -1,7 +1,8 @@
 # LeftTotal
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 matrix encoded 4 channels
 
@@ -10,20 +11,21 @@ matrix encoded 4 channels
 
 ## Declaration
 
-```swift
+```c
 LeftTotal
 ```
 
 ## See Also
 
-- [Left](videodriverkit/iouservideochannellabel/left.md)
-- [LeftCenter](videodriverkit/iouservideochannellabel/leftcenter.md)
-- [LeftTopFront](videodriverkit/iouservideochannellabel/lefttopfront.md)
-- [VerticalHeightLeft](videodriverkit/iouservideochannellabel/verticalheightleft.md)
+### Left channels
+- [Left](./left.md)
+- [LeftCenter](./leftcenter.md)
+- [LeftTopFront](./lefttopfront.md)
+- [VerticalHeightLeft](./verticalheightleft.md)
   WAVE: “Top Front Left”
-- [LeftTopMiddle](videodriverkit/iouservideochannellabel/lefttopmiddle.md)
-- [LeftTopRear](videodriverkit/iouservideochannellabel/lefttoprear.md)
-- [LeftWide](videodriverkit/iouservideochannellabel/leftwide.md)
+- [LeftTopMiddle](./lefttopmiddle.md)
+- [LeftTopRear](./lefttoprear.md)
+- [LeftWide](./leftwide.md)
 
 
 ---

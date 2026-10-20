@@ -1,7 +1,8 @@
 # subitems
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of the items contained in the group.
 
@@ -18,9 +19,14 @@ An array of the items contained in the group.
 var subitems: [NSCollectionLayoutItem] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSCollectionLayoutItem *> * subitems;
+```
+
 ## See Also
 
-- [var supplementaryItems: [NSCollectionLayoutSupplementaryItem]](nscollectionlayoutgroup/supplementaryitems.md)
+### Getting the group’s items
+- [var supplementaryItems: [NSCollectionLayoutSupplementaryItem]](./supplementaryitems.md)
   An array of the supplementary items that are anchored to the group.
 
 

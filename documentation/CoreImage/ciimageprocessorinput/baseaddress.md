@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The base address of CPU memory that your Core Image Processor Kernel can read pixels from.
@@ -20,17 +21,22 @@ The base address of CPU memory that your Core Image Processor Kernel can read pi
 var baseAddress: UnsafeRawPointer { get }
 ```
 
+```objc
+@property (nonatomic, readonly) const void * baseAddress;
+```
+
 #### Discussion
 
-> ⚠️ **Warning**: This memory must not be modified by the [`CIImageProcessorKernel`](ciimageprocessorkernel.md).
+> ⚠️ **Warning**: This memory must not be modified by the [`CIImageProcessorKernel`](../ciimageprocessorkernel.md).
 
 ## See Also
 
-- [var metalTexture: (any MTLTexture)?](ciimageprocessorinput/metaltexture.md)
+### Accessing Input Image Data
+- [var metalTexture: (any MTLTexture)?](./metaltexture.md)
   A MTLTexture object that can be bound for input using Metal.
-- [var pixelBuffer: CVPixelBuffer?](ciimageprocessorinput/pixelbuffer.md)
+- [var pixelBuffer: CVPixelBuffer?](./pixelbuffer.md)
   An input pixel buffer object that your Core Image Processor Kernel can read from.
-- [var surface: IOSurfaceRef](ciimageprocessorinput/surface.md)
+- [var surface: IOSurfaceRef](./surface.md)
   An input surface object that your Core Image Processor Kernel can read from.
 
 

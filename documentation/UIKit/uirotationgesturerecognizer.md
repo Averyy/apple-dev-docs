@@ -1,7 +1,8 @@
 # UIRotationGestureRecognizer
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A continuous gesture recognizer that interprets rotation gestures involving two touches.
 
@@ -18,13 +19,17 @@ A continuous gesture recognizer that interprets rotation gestures involving two 
 class UIRotationGestureRecognizer
 ```
 
+```objc
+@interface UIRotationGestureRecognizer : UIGestureRecognizer
+```
+
 ## Mentions
 
-- [Handling rotation gestures](handling-rotation-gestures.md)
+- [Handling rotation gestures](./handling-rotation-gestures.md)
 
 #### Overview
 
-[`UIRotationGestureRecognizer`](uirotationgesturerecognizer.md) is a concrete subclass of [`UIGestureRecognizer`](uigesturerecognizer.md).
+[`UIRotationGestureRecognizer`](./uirotationgesturerecognizer.md) is a concrete subclass of [`UIGestureRecognizer`](./uigesturerecognizer.md).
 
 The user must press two fingers on a view while rotating it. When the user moves the fingers opposite each other in a circular motion, the underlying view rotates in a corresponding direction and speed.
 
@@ -33,48 +38,49 @@ Rotation is a continuous gesture. It begins when the user moves the two fingers 
 ## Topics
 
 ### Interpreting the gesture
-- [var rotation: CGFloat](uirotationgesturerecognizer/rotation.md)
+- [var rotation: CGFloat](./uirotationgesturerecognizer/rotation.md)
   The rotation of the gesture in radians.
-- [var velocity: CGFloat](uirotationgesturerecognizer/velocity.md)
+- [var velocity: CGFloat](./uirotationgesturerecognizer/velocity.md)
   The velocity of the rotation gesture in radians per second.
 
 ## Relationships
 
 ### Inherits From
-- [UIGestureRecognizer](uigesturerecognizer.md)
+- [UIGestureRecognizer](./uigesturerecognizer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Handling UIKit gestures](handling-uikit-gestures.md)
+### Standard gestures
+- [Handling UIKit gestures](./handling-uikit-gestures.md)
   Use gesture recognizers to simplify touch handling and create a consistent user experience.
-- [Coordinating multiple gesture recognizers](coordinating-multiple-gesture-recognizers.md)
+- [Coordinating multiple gesture recognizers](./coordinating-multiple-gesture-recognizers.md)
   Discover how to use multiple gesture recognizers on the same view.
-- [Adopting hover support for Apple Pencil](adopting-hover-support-for-apple-pencil.md)
+- [Adopting hover support for Apple Pencil](./adopting-hover-support-for-apple-pencil.md)
   Enhance user feedback for your iPadOS app with a hover preview for Apple Pencil input.
-- [Supporting gesture interaction in your apps](supporting-gesture-interaction-in-your-apps.md)
+- [Supporting gesture interaction in your apps](./supporting-gesture-interaction-in-your-apps.md)
   Enrich your app’s user experience by supporting standard and custom gesture interaction.
-- [class UIHoverGestureRecognizer](uihovergesturerecognizer.md)
+- [class UIHoverGestureRecognizer](./uihovergesturerecognizer.md)
   A continuous gesture recognizer that interprets pointer movement over a view.
-- [class UILongPressGestureRecognizer](uilongpressgesturerecognizer.md)
+- [class UILongPressGestureRecognizer](./uilongpressgesturerecognizer.md)
   A continuous gesture recognizer that interprets long-press gestures.
-- [class UIPanGestureRecognizer](uipangesturerecognizer.md)
+- [class UIPanGestureRecognizer](./uipangesturerecognizer.md)
   A continuous gesture recognizer that interprets panning gestures.
-- [class UIPinchGestureRecognizer](uipinchgesturerecognizer.md)
+- [class UIPinchGestureRecognizer](./uipinchgesturerecognizer.md)
   A continuous gesture recognizer that interprets pinching gestures involving two touches.
-- [class UIScreenEdgePanGestureRecognizer](uiscreenedgepangesturerecognizer.md)
+- [class UIScreenEdgePanGestureRecognizer](./uiscreenedgepangesturerecognizer.md)
   A continuous gesture recognizer that interprets panning gestures that start near an edge of the screen.
-- [class UISwipeGestureRecognizer](uiswipegesturerecognizer.md)
+- [class UISwipeGestureRecognizer](./uiswipegesturerecognizer.md)
   A discrete gesture recognizer that interprets swiping gestures in one or more directions.
-- [class UITapGestureRecognizer](uitapgesturerecognizer.md)
+- [class UITapGestureRecognizer](./uitapgesturerecognizer.md)
   A discrete gesture recognizer that interprets single or multiple taps.
 
 

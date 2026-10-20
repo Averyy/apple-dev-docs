@@ -1,7 +1,8 @@
 # MTLDispatchType.serial
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Sets a command encoder to dispatch encoded commands serially during your pass.
 
@@ -19,9 +20,14 @@ Sets a command encoder to dispatch encoded commands serially during your pass.
 case serial
 ```
 
+```c
+MTLDispatchTypeSerial
+```
+
 ## See Also
 
-- [MTLDispatchType.concurrent](mtldispatchtype/concurrent.md)
+### Execution dispatch types
+- [MTLDispatchType.concurrent](./concurrent.md)
   Sets a command encoder to dispatch encoded commands concurrently during your pass.
 
 

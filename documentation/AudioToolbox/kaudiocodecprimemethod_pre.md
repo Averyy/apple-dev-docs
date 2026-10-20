@@ -1,15 +1,16 @@
 # kAudioCodecPrimeMethod_Pre
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,10 +18,15 @@
 var kAudioCodecPrimeMethod_Pre: UInt32 { get }
 ```
 
+```c
+kAudioCodecPrimeMethod_Pre
+```
+
 ## See Also
 
-- [var kAudioCodecPrimeMethod_None: UInt32](kaudiocodecprimemethod_none.md)
-- [var kAudioCodecPrimeMethod_Normal: UInt32](kaudiocodecprimemethod_normal.md)
+### Constants
+- [var kAudioCodecPrimeMethod_None: UInt32](./kaudiocodecprimemethod_none.md)
+- [var kAudioCodecPrimeMethod_Normal: UInt32](./kaudiocodecprimemethod_normal.md)
 
 
 ---

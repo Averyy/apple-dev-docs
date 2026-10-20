@@ -1,7 +1,8 @@
 # instanceAtPoint(_:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an instance at the point you specify.
 
@@ -22,11 +23,12 @@ func instanceAtPoint(_ point: NormalizedPoint) -> IndexSet
 
 ## See Also
 
-- [let allInstances: IndexSet](instancemaskobservation/allinstances.md)
+### Getting instances
+- [let allInstances: IndexSet](./allinstances.md)
   The collection that contains all instances, excluding the background.
-- [let allInstancesMask: PixelBufferObservation](instancemaskobservation/allinstancesmask.md)
+- [let allInstancesMask: PixelBufferObservation](./allinstancesmask.md)
   The resulting mask that represents all instances.
-- [struct PixelBufferObservation](pixelbufferobservation.md)
+- [struct PixelBufferObservation](../pixelbufferobservation.md)
   An object that represents an image that an image-analysis request produces.
 
 

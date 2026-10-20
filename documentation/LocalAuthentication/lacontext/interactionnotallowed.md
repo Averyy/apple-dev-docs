@@ -1,7 +1,8 @@
 # interactionNotAllowed
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether authentication can be interactive.
 
@@ -19,11 +20,16 @@ A Boolean value indicating whether authentication can be interactive.
 var interactionNotAllowed: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL interactionNotAllowed;
+```
+
 ## See Also
 
-- [func evaluateAccessControl(SecAccessControl, operation: LAAccessControlOperation, localizedReason: String, reply: (Bool, (any Error)?) -> Void)](lacontext/evaluateaccesscontrol(_:operation:localizedreason:reply:).md)
+### Evaluating access controls
+- [func evaluateAccessControl(SecAccessControl, operation: LAAccessControlOperation, localizedReason: String, reply: (Bool, (any Error)?) -> Void)](./evaluateaccesscontrol%28_,operation,localizedreason,reply%29.md)
   Evaluates an access control for a given operation.
-- [enum LAAccessControlOperation](laaccesscontroloperation.md)
+- [enum LAAccessControlOperation](../laaccesscontroloperation.md)
   Operations to be evaluated for access control.
 
 

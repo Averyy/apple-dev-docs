@@ -1,14 +1,15 @@
 # StandardUSB30::kLinkStateU3RxDetectDelay
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 StandardUSB30::kLinkStateU3RxDetectDelay = kIOUSB30LinkStateU3RxDetectDelay
 ```
 

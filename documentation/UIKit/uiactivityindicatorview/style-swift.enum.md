@@ -1,16 +1,17 @@
 # UIActivityIndicatorView.Style
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The visual style of the progress indicator.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,36 +19,40 @@ The visual style of the progress indicator.
 enum Style
 ```
 
+```c
+enum UIActivityIndicatorViewStyle : NSInteger;
+```
+
 #### Overview
 
-You set the value of the [`style`](uiactivityindicatorview/style-swift.property.md) property with these constants.
+You set the value of the [`style`](./style-swift.property.md) property with these constants.
 
 ## Topics
 
 ### Constants
-- [UIActivityIndicatorView.Style.large](uiactivityindicatorview/style-swift.enum/large.md)
+- [UIActivityIndicatorView.Style.large](./style-swift.enum/large.md)
   The large style of indicator.
-- [UIActivityIndicatorView.Style.medium](uiactivityindicatorview/style-swift.enum/medium.md)
+- [UIActivityIndicatorView.Style.medium](./style-swift.enum/medium.md)
   The default activity indicator style.
 ### Deprecated
-- [UIActivityIndicatorView.Style.whiteLarge](uiactivityindicatorview/style-swift.enum/whitelarge.md)
+- [UIActivityIndicatorView.Style.whiteLarge](./style-swift.enum/whitelarge.md)
   The large white style of indicator.
-- [UIActivityIndicatorView.Style.white](uiactivityindicatorview/style-swift.enum/white.md)
+- [UIActivityIndicatorView.Style.white](./style-swift.enum/white.md)
   The standard white style of indicator.
-- [UIActivityIndicatorView.Style.gray](uiactivityindicatorview/style-swift.enum/gray.md)
+- [UIActivityIndicatorView.Style.gray](./style-swift.enum/gray.md)
   The standard gray style of indicator.
 ### Initializers
-- [init?(rawValue: Int)](uiactivityindicatorview/style-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./style-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

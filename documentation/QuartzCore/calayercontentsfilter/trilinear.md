@@ -1,7 +1,8 @@
 # trilinear
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Trilinear minification filter. Enables mipmap generation. Some renderers may ignore this, or impose additional restrictions, such as source images requiring power-of-two dimensions.
 
@@ -19,11 +20,16 @@ Trilinear minification filter. Enables mipmap generation. Some renderers may ign
 static let trilinear: CALayerContentsFilter
 ```
 
+```c
+extern CALayerContentsFilter const kCAFilterTrilinear;
+```
+
 ## See Also
 
-- [static let linear: CALayerContentsFilter](calayercontentsfilter/linear.md)
+### Constants
+- [static let linear: CALayerContentsFilter](./linear.md)
   Linear interpolation filter.
-- [static let nearest: CALayerContentsFilter](calayercontentsfilter/nearest.md)
+- [static let nearest: CALayerContentsFilter](./nearest.md)
   Nearest neighbor interpolation filter.
 
 

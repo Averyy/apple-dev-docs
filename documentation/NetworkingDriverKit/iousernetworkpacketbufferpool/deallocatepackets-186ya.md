@@ -1,16 +1,17 @@
 # DeallocatePackets
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Disposes of any resources associated with the specified packets and makes them available for reuse.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t DeallocatePackets(IOUserNetworkPacket **packets, uint32_t packetsCount);
 ```
 
@@ -29,7 +30,8 @@ After you move one or more packets to the appropriate completion queue, call thi
 
 ## See Also
 
-- [DeallocatePacket](iousernetworkpacketbufferpool/deallocatepacket-3i02n.md)
+### Deallocating Packets
+- [DeallocatePacket](./deallocatepacket-3i02n.md)
   Disposes of any resources associated with the packet and makes the packet available for reuse.
 
 

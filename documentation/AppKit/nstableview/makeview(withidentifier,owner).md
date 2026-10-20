@@ -1,7 +1,8 @@
 # makeView(withIdentifier:owner:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new or existing view with the specified identifier.
 
@@ -14,6 +15,10 @@ Returns a new or existing view with the specified identifier.
 func makeView(withIdentifier identifier: NSUserInterfaceItemIdentifier, owner: Any?) -> NSView?
 ```
 
+```objc
+- (NSView *) makeViewWithIdentifier:(NSUserInterfaceItemIdentifier) identifier owner:(id) owner;
+```
+
 #### Return Value
 
 A view for the row.
@@ -24,7 +29,7 @@ Typically, `identifier` is associated with a cell view that’s contained in a t
 
 This method may also return a reused view with the same `identifier` that is no longer available on screen. If a view with the specified identifier can’t be instantiated from the nib file or found in the reuse queue, this method returns `nil`.
 
-This method is usually called by the delegate in [`tableView(_:viewFor:row:)`](nstableviewdelegate/tableview(_:viewfor:row:).md), but it can also be overridden to provide custom views for the `identifier`. Note that [`awakeFromNib()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/awakefromnib()) is called each time this method is called, which means that `awakeFromNib` is also called on `owner`, even though the owner is already awake.
+This method is usually called by the delegate in [`tableView(_:viewFor:row:)`](../nstableviewdelegate/tableview%28_,viewfor,row%29.md), but it can also be overridden to provide custom views for the `identifier`. Note that [`awakeFromNib()`](../../ObjectiveC/nsobject-swift.class/awakefromnib%28%29.md) is called each time this method is called, which means that `awakeFromNib` is also called on `owner`, even though the owner is already awake.
 
 ## Parameters
 
@@ -33,17 +38,19 @@ This method is usually called by the delegate in [`tableView(_:viewFor:row:)`](n
 
 ## See Also
 
-- [Drag and Drop](drag-and-drop.md)
+### Related Documentation
+- [Drag and Drop](../drag-and-drop.md)
   Support the direct manipulation of your app’s content using drag and drop.
-- [Table View](table-view.md)
+- [Table View](../table-view.md)
   Display custom data in rows and columns.
-- [class NSNib](nsnib.md)
+- [class NSNib](../nsnib.md)
   An object wrapper, or container, for an Interface Builder nib file.
-- [func rowView(atRow: Int, makeIfNecessary: Bool) -> NSTableRowView?](nstableview/rowview(atrow:makeifnecessary:).md)
+### Creating Views to Display
+- [func rowView(atRow: Int, makeIfNecessary: Bool) -> NSTableRowView?](./rowview%28atrow,makeifnecessary%29.md)
   Returns a row view at the specified index, creating one if necessary.
-- [func view(atColumn: Int, row: Int, makeIfNecessary: Bool) -> NSView?](nstableview/view(atcolumn:row:makeifnecessary:).md)
+- [func view(atColumn: Int, row: Int, makeIfNecessary: Bool) -> NSView?](./view%28atcolumn,row,makeifnecessary%29.md)
   Returns a view at the specified row and column indexes, creating one if necessary.
-- [struct NSUserInterfaceItemIdentifier](nsuserinterfaceitemidentifier.md)
+- [struct NSUserInterfaceItemIdentifier](../nsuserinterfaceitemidentifier.md)
 
 
 ---

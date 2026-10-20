@@ -1,7 +1,8 @@
 # ComputeNodeGraph.Assembly.Location.unbound
 
 **Framework**: Compute Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Attribute which is a default value and should be considered “not bound”
 
@@ -12,7 +13,7 @@ Attribute which is a default value and should be considered “not bound”
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

@@ -1,18 +1,19 @@
 # CFIndex
 
 **Framework**: Core Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Priority values used for kAXPriorityKey
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ Priority values used for kAXPriorityKey
 typealias CFIndex = Int
 ```
 
+```c
+typedef long CFIndex;
+```
+
 ## See Also
 
-- [typealias CFOptionFlags](cfoptionflags.md)
+### Data Types
+- [typealias CFOptionFlags](./cfoptionflags.md)
   A bitfield used for passing special allocation and other requests into Core Foundation functions.
-- [struct CFRange](cfrange.md)
+- [struct CFRange](./cfrange.md)
   A structure representing a range of sequential items in a container, such as characters in a buffer or elements in a collection.
 
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kBluetoothLESecurityManagerBonding](1639940-anonymous/kbluetoothlesecuritymanagerbonding.md)
-- [kBluetoothLESecurityManagerNoBonding](1639940-anonymous/kbluetoothlesecuritymanagernobonding.md)
-- [kBluetoothLESecurityManagerReservedEnd](1639940-anonymous/kbluetoothlesecuritymanagerreservedend.md)
-- [kBluetoothLESecurityManagerReservedStart](1639940-anonymous/kbluetoothlesecuritymanagerreservedstart.md)
+- [kBluetoothLESecurityManagerBonding](./api-1639940-anonymous/kbluetoothlesecuritymanagerbonding.md)
+- [kBluetoothLESecurityManagerNoBonding](./api-1639940-anonymous/kbluetoothlesecuritymanagernobonding.md)
+- [kBluetoothLESecurityManagerReservedEnd](./api-1639940-anonymous/kbluetoothlesecuritymanagerreservedend.md)
+- [kBluetoothLESecurityManagerReservedStart](./api-1639940-anonymous/kbluetoothlesecuritymanagerreservedstart.md)
 
 
 ---

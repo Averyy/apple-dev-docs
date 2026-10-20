@@ -1,7 +1,8 @@
 # HMError.Code.cannotRemoveNonBridgeAccessory
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An attempt to remove a bridged accessory.
 
@@ -19,15 +20,20 @@ An attempt to remove a bridged accessory.
 case cannotRemoveNonBridgeAccessory
 ```
 
+```c
+HMErrorCodeCannotRemoveNonBridgeAccessory
+```
+
 #### Discussion
 
 You can only remove standalone or bridge accessories.
 
 ## See Also
 
-- [HMError.Code.bridgedAccessoryNotReachable](hmerror/code/bridgedaccessorynotreachable.md)
+### Bridge errors
+- [HMError.Code.bridgedAccessoryNotReachable](./bridgedaccessorynotreachable.md)
   An error indicating the bridged accessory cannot be reached.
-- [HMError.Code.cannotUnblockNonBridgeAccessory](hmerror/code/cannotunblocknonbridgeaccessory.md)
+- [HMError.Code.cannotUnblockNonBridgeAccessory](./cannotunblocknonbridgeaccessory.md)
   An error indicating a non-bridge accessory cannot be unblocked.
 
 

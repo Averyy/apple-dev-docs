@@ -1,7 +1,8 @@
 # User.Relationships.VisibleApps
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the resources.
 
@@ -10,14 +11,14 @@ The data and links that describe the relationship between the resources.
 
 ## Declaration
 
-```swift
+```
 object User.Relationships.VisibleApps
 ```
 
 ## Topics
 
 ### Objects
-- [object User.Relationships.VisibleApps.Data](user/relationships-data.dictionary/visibleapps-data.dictionary/data-data.dictionary.md)
+- [object User.Relationships.VisibleApps.Data](./visibleapps-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties

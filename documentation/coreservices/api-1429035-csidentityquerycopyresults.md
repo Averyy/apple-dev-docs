@@ -1,7 +1,8 @@
 # CSIdentityQueryCopyResults(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -11,6 +12,10 @@
 
 ```swift
 func CSIdentityQueryCopyResults(_ query: CSIdentityQuery!) -> Unmanaged<CFArray>!
+```
+
+```c
+CFArrayRef CSIdentityQueryCopyResults(CSIdentityQueryRef query);
 ```
 
 

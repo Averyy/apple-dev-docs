@@ -1,7 +1,8 @@
 # init(url:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an `NSBundle` object that corresponds to the specified file URL.
 
@@ -15,6 +16,10 @@ Returns an `NSBundle` object that corresponds to the specified file URL.
 
 ```swift
 convenience init?(url: URL)
+```
+
+```objc
++ (instancetype) bundleWithURL:(NSURL *) url;
 ```
 
 #### Return Value
@@ -31,11 +36,12 @@ This method allocates and initializes the returned object if there is no existin
 
 ## See Also
 
-- [init(for: AnyClass)](bundle/init(for:).md)
+### Creating and initializing a bundle
+- [init(for: AnyClass)](./init%28for%29.md)
   Returns the `NSBundle` object with which the specified class is associated.
-- [init?(identifier: String)](bundle/init(identifier:).md)
+- [init?(identifier: String)](./init%28identifier%29.md)
   Returns the `NSBundle` instance that has the specified bundle identifier.
-- [init?(path: String)](bundle/init(path:).md)
+- [init?(path: String)](./init%28path%29.md)
   Returns an `NSBundle` object initialized to correspond to the specified directory.
 
 

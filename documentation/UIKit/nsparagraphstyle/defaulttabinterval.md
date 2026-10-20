@@ -1,7 +1,8 @@
 # defaultTabInterval
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The documentwide default tab interval.
 
@@ -19,15 +20,20 @@ The documentwide default tab interval.
 var defaultTabInterval: CGFloat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGFloat defaultTabInterval;
+```
+
 #### Discussion
 
-This property represents the default tab interval in points. Tabs after the last specified in [`tabStops`](nsparagraphstyle/tabstops.md) are placed at integer multiples of this distance (if positive). Default value is 0.0.
+This property represents the default tab interval in points. Tabs after the last specified in [`tabStops`](./tabstops.md) are placed at integer multiples of this distance (if positive). Default value is 0.0.
 
 ## See Also
 
-- [var tabStops: [NSTextTab]](nsparagraphstyle/tabstops.md)
+### Accessing tab information
+- [var tabStops: [NSTextTab]](./tabstops.md)
   The text tab objects that represent the paragraph’s tab stops.
-- [NSParagraphStyle.TextTabType](../appkit/nsparagraphstyle/texttabtype.md)
+- [NSParagraphStyle.TextTabType](../../AppKit/nsparagraphstyle/texttabtype.md)
   Constants that specify the type of tab stop.
 
 

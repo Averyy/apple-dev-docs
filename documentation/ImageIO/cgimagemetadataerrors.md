@@ -1,7 +1,8 @@
 # CGImageMetadataErrors
 
 **Framework**: Image I/O  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants for errors that occur when getting or setting metadata information.
 
@@ -20,43 +21,48 @@ Constants for errors that occur when getting or setting metadata information.
 enum CGImageMetadataErrors
 ```
 
+```c
+enum CGImageMetadataErrors : int32_t;
+```
+
 ## Topics
 
 ### Error Codes
-- [CGImageMetadataErrors.unknown](cgimagemetadataerrors/unknown.md)
+- [CGImageMetadataErrors.unknown](./cgimagemetadataerrors/unknown.md)
   An error that indicates an unknown condition occurred.
-- [CGImageMetadataErrors.unsupportedFormat](cgimagemetadataerrors/unsupportedformat.md)
+- [CGImageMetadataErrors.unsupportedFormat](./cgimagemetadataerrors/unsupportedformat.md)
   An error that indicates the metadata was in an unsupported format.
-- [CGImageMetadataErrors.badArgument](cgimagemetadataerrors/badargument.md)
+- [CGImageMetadataErrors.badArgument](./cgimagemetadataerrors/badargument.md)
   An error that indicates a parameter was malformed or contained invalid data.
-- [CGImageMetadataErrors.conflictingArguments](cgimagemetadataerrors/conflictingarguments.md)
+- [CGImageMetadataErrors.conflictingArguments](./cgimagemetadataerrors/conflictingarguments.md)
   An error that indicates an attempt to save conflicting metadata values.
-- [CGImageMetadataErrors.prefixConflict](cgimagemetadataerrors/prefixconflict.md)
+- [CGImageMetadataErrors.prefixConflict](./cgimagemetadataerrors/prefixconflict.md)
   An error that indicates an attempt to register a namespace with a prefix that is different than the namespace’s existing prefix.
 ### Initializers
-- [init?(rawValue: Int32)](cgimagemetadataerrors/init(rawvalue:).md)
+- [init?(rawValue: Int32)](./cgimagemetadataerrors/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CGImageMetadata](cgimagemetadata.md)
+### XMP Metadata
+- [class CGImageMetadata](./cgimagemetadata.md)
   An immutable object that contains the XMP metadata associated with an image.
-- [class CGMutableImageMetadata](cgmutableimagemetadata.md)
+- [class CGMutableImageMetadata](./cgmutableimagemetadata.md)
   An opaque type for adding or modifying image metadata.
-- [class CGImageMetadataTag](cgimagemetadatatag.md)
+- [class CGImageMetadataTag](./cgimagemetadatatag.md)
   An immutable type that contains information about a single piece of image metadata.
-- [XMP Namespaces and Prefixes](xmp-namespaces-and-prefixes.md)
+- [XMP Namespaces and Prefixes](./xmp-namespaces-and-prefixes.md)
   Discover the public namespaces and prefixes that exist in XMP metadata tags.
-- [let kCFErrorDomainCGImageMetadata: CFString](kcferrordomaincgimagemetadata.md)
+- [let kCFErrorDomainCGImageMetadata: CFString](./kcferrordomaincgimagemetadata.md)
   The domain for metadata-related errors that originate in the Image I/O framework.
 
 

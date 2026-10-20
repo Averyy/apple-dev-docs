@@ -1,7 +1,8 @@
 # CapturedRoom.USDExportOptions
 
 **Framework**: RoomPlan  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that determine the underlying data format of a scan export.
 
@@ -18,7 +19,7 @@ struct USDExportOptions
 
 #### Overview
 
-The `exportOptions` parameter of the captured room ([`CapturedRoom`](capturedroom.md)) and captured structure ([`CapturedStructure`](capturedstructure.md)) functions `export(to:metadataURL:modelProvider:exportOptions:)` are of this type.
+The `exportOptions` parameter of the captured room ([`CapturedRoom`](../capturedroom.md)) and captured structure ([`CapturedStructure`](../capturedstructure.md)) functions `export(to:metadataURL:modelProvider:exportOptions:)` are of this type.
 
 The following table lists the features that each export option supports in the output result.
 
@@ -35,34 +36,35 @@ The following table lists the features that each export option supports in the o
 ## Topics
 
 ### Choosing an export option
-- [static let parametric: CapturedRoom.USDExportOptions](capturedroom/usdexportoptions/parametric.md)
+- [static let parametric: CapturedRoom.USDExportOptions](./usdexportoptions/parametric.md)
   An export option that formats the output file as a collection of size-dependent primitives.
-- [static let mesh: CapturedRoom.USDExportOptions](capturedroom/usdexportoptions/mesh.md)
+- [static let mesh: CapturedRoom.USDExportOptions](./usdexportoptions/mesh.md)
   An export option that formats the output file as a collection of size-independant triangles that connect to form a mesh.
-- [static let model: CapturedRoom.USDExportOptions](capturedroom/usdexportoptions/model.md)
+- [static let model: CapturedRoom.USDExportOptions](./usdexportoptions/model.md)
   An export option that formats the output file as a collection of 3D models.
 ### Creating an export option
-- [init(rawValue: Int32)](capturedroom/usdexportoptions/init(rawvalue:).md)
+- [init(rawValue: Int32)](./usdexportoptions/init%28rawvalue%29.md)
   Creates an export option with the specified raw value.
-- [let rawValue: Int32](capturedroom/usdexportoptions/rawvalue.md)
+- [let rawValue: Int32](./usdexportoptions/rawvalue.md)
   A raw value for the export option.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [Providing custom models for captured rooms and structure exports](providing-custom-models-for-captured-rooms-and-structure-exports.md)
+### 3D Asset Output
+- [Providing custom models for captured rooms and structure exports](../providing-custom-models-for-captured-rooms-and-structure-exports.md)
   Enhance the look of an exported 3D model by substituting object bounding boxes with detailed 3D renditions.
-- [class RoomBuilder](roombuilder.md)
+- [class RoomBuilder](../roombuilder.md)
   An object that generates a 3D asset from room-capture data.
-- [class StructureBuilder](structurebuilder.md)
+- [class StructureBuilder](../structurebuilder.md)
   An object that combines multiple scan sessions into a single captured result.
 
 

@@ -1,7 +1,8 @@
 # upgradedToBundle
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The transaction was revoked because the customer switched to a subscription bundle.
 

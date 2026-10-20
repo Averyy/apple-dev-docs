@@ -1,7 +1,8 @@
 # formStereoRamp(withInitialValue:multiplyingBy:_:increment:results:_:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Populates two single-precision vectors that contain stereo monotonically incrementing or decrementing values multiplied by two source vectors.
 
@@ -11,7 +12,7 @@ Populates two single-precision vectors that contain stereo monotonically increme
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -40,9 +41,9 @@ let multiplierTwo: [Double] = (0 ..< n).map {
 
 The following figure illustrates the values of `multiplierOne`, as a solid line, and `multiplierTwo`, as a dashed line:
 
-![A graphic shows two sine waves. The first sine wave appears as a solid line and the second sine wave appears as a dashed line. The first sine wave has a higher freqency and a higher amplitude than the second sine wave. ](/images/com.apple.accelerate/media-3732281@2x.png)
+![A graphic shows two sine waves. The first sine wave appears as a solid line and the second sine wave appears as a dashed line. The first sine wave has a higher freqency and a higher amplitude than the second sine wave. ](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3732281@2x.png)
 
-Pass `multiplierOne` and `multiplierTwo` as the `multiplyingBy` parameter of [`formStereoRamp(withInitialValue:multiplyingBy:_:increment:results:_:)`](vdsp/formstereoramp(withinitialvalue:multiplyingby:_:increment:results:_:)-9be28.md):
+Pass `multiplierOne` and `multiplierTwo` as the `multiplyingBy` parameter of [`formStereoRamp(withInitialValue:multiplyingBy:_:increment:results:_:)`](./formstereoramp%28withinitialvalue,multiplyingby,_,increment,results,_%29-9be28.md):
 
 ```swift
 var start: Double = 0
@@ -61,7 +62,7 @@ vDSP.formStereoRamp(withInitialValue: &start,
 
 On return, the output vectors, `results.firstOutput` and `results.secondOutput`, contain ramped-sine waves. The figure below shows the first output as a solid line and the second output as a dashed line:
 
-![A graphic shows two sine waves. The first sine wave appears as a solid line and the second sine wave appears as a dashed line. The first sine wave and has a higher freqency and a higher amplitude than the second sine wave.  Both sine waves are tapered, that is, they begin on the left with a very low amplitude and their amplitudes ramp up towards the right of the image.](/images/com.apple.accelerate/media-3732280@2x.png)
+![A graphic shows two sine waves. The first sine wave appears as a solid line and the second sine wave appears as a dashed line. The first sine wave and has a higher freqency and a higher amplitude than the second sine wave.  Both sine waves are tapered, that is, they begin on the left with a very low amplitude and their amplitudes ramp up towards the right of the image.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3732280@2x.png)
 
 ## Parameters
 
@@ -74,35 +75,36 @@ On return, the output vectors, `results.firstOutput` and `results.secondOutput`,
 
 ## See Also
 
-- [static func absolute<U>(U) -> [Double]](vdsp/absolute(_:)-9c3ge.md)
+### Type Methods
+- [static func absolute<U>(U) -> [Double]](./absolute%28_%29-9c3ge.md)
   Returns the absolute value of each element in the supplied double-precision vector.
-- [static func absolute<U>(U) -> [Float]](vdsp/absolute(_:)-5ehc1.md)
+- [static func absolute<U>(U) -> [Float]](./absolute%28_%29-5ehc1.md)
   Returns the absolute value of each element in the supplied single-precision vector.
-- [static func absolute<V>(DSPSplitComplex, result: inout V)](vdsp/absolute(_:result:)-9x5jn.md)
+- [static func absolute<V>(DSPSplitComplex, result: inout V)](./absolute%28_,result%29-9x5jn.md)
   Calculates the absolute value of each element in the supplied single-precision complex vector.
-- [static func absolute<V>(DSPDoubleSplitComplex, result: inout V)](vdsp/absolute(_:result:)-1wu9x.md)
+- [static func absolute<V>(DSPDoubleSplitComplex, result: inout V)](./absolute%28_,result%29-1wu9x.md)
   Calculates the absolute value of each element in the supplied double-precision complex vector.
-- [static func absolute<U, V>(U, result: inout V)](vdsp/absolute(_:result:)-657bd.md)
+- [static func absolute<U, V>(U, result: inout V)](./absolute%28_,result%29-657bd.md)
   Calculates the absolute value of each element in the supplied double-precision vector.
-- [static func absolute<U, V>(U, result: inout V)](vdsp/absolute(_:result:)-4pigo.md)
+- [static func absolute<U, V>(U, result: inout V)](./absolute%28_,result%29-4pigo.md)
   Calculates the absolute value of each element in the supplied single-precision vector.
-- [static func add<U>(Double, U) -> [Double]](vdsp/add(_:_:)-9mv1a.md)
+- [static func add<U>(Double, U) -> [Double]](./add%28_,_%29-9mv1a.md)
   Returns the double-precision element-wise sum of a vector and a scalar value.
-- [static func add<T, U>(T, U) -> [Double]](vdsp/add(_:_:)-2ftxc.md)
+- [static func add<T, U>(T, U) -> [Double]](./add%28_,_%29-2ftxc.md)
   Returns the double-precision element-wise sum of two vectors.
-- [static func add<U>(Float, U) -> [Float]](vdsp/add(_:_:)-53nh9.md)
+- [static func add<U>(Float, U) -> [Float]](./add%28_,_%29-53nh9.md)
   Returns the single-precision element-wise sum of a vector and a scalar value.
-- [static func add<T, U>(T, U) -> [Float]](vdsp/add(_:_:)-7swvf.md)
+- [static func add<T, U>(T, U) -> [Float]](./add%28_,_%29-7swvf.md)
   Returns the single-precision element-wise sum of two vectors.
-- [static func add<U, V>(Double, U, result: inout V)](vdsp/add(_:_:result:)-2531u.md)
+- [static func add<U, V>(Double, U, result: inout V)](./add%28_,_,result%29-2531u.md)
   Calculates the single-precision element-wise sum of a vector and a scalar value.
-- [static func add<U, V>(Float, U, result: inout V)](vdsp/add(_:_:result:)-2w0o9.md)
+- [static func add<U, V>(Float, U, result: inout V)](./add%28_,_,result%29-2w0o9.md)
   Calculates the single-precision element-wise sum of a vector and a scalar value.
-- [static func add<T, U, V>(T, U, result: inout V)](vdsp/add(_:_:result:)-338hl.md)
+- [static func add<T, U, V>(T, U, result: inout V)](./add%28_,_,result%29-338hl.md)
   Calculates the double-precision element-wise sum of two vectors.
-- [static func add<T, U, V>(T, U, result: inout V)](vdsp/add(_:_:result:)-3vzwi.md)
+- [static func add<T, U, V>(T, U, result: inout V)](./add%28_,_,result%29-3vzwi.md)
   Calculates the single-precision element-wise sum of two vectors.
-- [static func add(DSPSplitComplex, to: DSPSplitComplex, count: Int, result: inout DSPSplitComplex)](vdsp/add(_:to:count:result:)-g1dk.md)
+- [static func add(DSPSplitComplex, to: DSPSplitComplex, count: Int, result: inout DSPSplitComplex)](./add%28_,to,count,result%29-g1dk.md)
   Calculates the single-precision element-wise sum of the supplied complex vectors.
 
 

@@ -1,7 +1,8 @@
 # writingToolsBehavior
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -12,8 +13,28 @@
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+var writingToolsBehavior: UIWritingToolsBehavior { get set }
+```
+
+*macOS*
+
 ```swift
 var writingToolsBehavior: NSWritingToolsBehavior { get set }
+```
+
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```objc
+@property (nonatomic) UIWritingToolsBehavior writingToolsBehavior;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic) NSWritingToolsBehavior writingToolsBehavior;
 ```
 
 

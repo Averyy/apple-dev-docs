@@ -1,7 +1,8 @@
 # kSecCodeInfoCdHashes
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is an array containing the unique binary identifier for every digest algorithm supported in the signature.
 
@@ -15,9 +16,13 @@ A key whose value is an array containing the unique binary identifier for every 
 let kSecCodeInfoCdHashes: CFString
 ```
 
+```c
+extern CFStringRef const kSecCodeInfoCdHashes;
+```
+
 #### Discussion
 
-The corresponding [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) contains the values of the [`kSecCodeInfoUnique`](kseccodeinfounique.md) binary identifier for every digest algorithm supported in the signature in the same order as in the [`kSecCodeInfoDigestAlgorithms`](kseccodeinfodigestalgorithms.md) array. The [`kSecCodeInfoUnique`](kseccodeinfounique.md) value contained in this array corresponds to the [`kSecCodeInfoDigestAlgorithm`](kseccodeinfodigestalgorithm.md) value.
+The corresponding [`CFArray`](../CoreFoundation/cfarray.md) contains the values of the [`kSecCodeInfoUnique`](./kseccodeinfounique.md) binary identifier for every digest algorithm supported in the signature in the same order as in the [`kSecCodeInfoDigestAlgorithms`](./kseccodeinfodigestalgorithms.md) array. The [`kSecCodeInfoUnique`](./kseccodeinfounique.md) value contained in this array corresponds to the [`kSecCodeInfoDigestAlgorithm`](./kseccodeinfodigestalgorithm.md) value.
 
 
 ---

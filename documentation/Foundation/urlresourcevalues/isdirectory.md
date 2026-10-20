@@ -1,7 +1,8 @@
 # isDirectory
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the resource is a directory.
 
@@ -22,7 +23,8 @@ var isDirectory: Bool? { get }
 
 ## See Also
 
-- [var directoryEntryCount: Int?](urlresourcevalues/directoryentrycount.md)
+### Directory values
+- [var directoryEntryCount: Int?](./directoryentrycount.md)
   The count of file system objects in the directory.
 
 

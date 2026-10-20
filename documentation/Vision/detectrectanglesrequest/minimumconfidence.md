@@ -1,7 +1,8 @@
 # minimumConfidence
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum acceptable confidence level for detected rectangles.
 
@@ -26,15 +27,16 @@ Vision won’t return rectangles with a confidence score lower than the specifie
 
 ## See Also
 
-- [var maximumAspectRatio: Float](detectrectanglesrequest/maximumaspectratio.md)
+### Configuring a request
+- [var maximumAspectRatio: Float](./maximumaspectratio.md)
   The largest aspect ratio the rectangle request detects.
-- [var maximumObservations: Int](detectrectanglesrequest/maximumobservations.md)
+- [var maximumObservations: Int](./maximumobservations.md)
   The maximum number of rectangles the request returns.
-- [var minimumAspectRatio: Float](detectrectanglesrequest/minimumaspectratio.md)
+- [var minimumAspectRatio: Float](./minimumaspectratio.md)
   The smallest aspect ratio the rectangle request detects.
-- [var minimumSize: Float](detectrectanglesrequest/minimumsize.md)
+- [var minimumSize: Float](./minimumsize.md)
   The minimum size of the rectangle detected as a proportion of the smallest dimension.
-- [var quadratureToleranceDegrees: Float](detectrectanglesrequest/quadraturetolerancedegrees.md)
+- [var quadratureToleranceDegrees: Float](./quadraturetolerancedegrees.md)
   The maximum number of degrees a rectangle corner angle deviates from 90°.
 
 

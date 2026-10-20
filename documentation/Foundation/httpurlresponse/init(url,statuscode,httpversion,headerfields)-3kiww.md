@@ -1,7 +1,8 @@
 # init(URL:statusCode:HTTPVersion:headerFields:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 5.0+

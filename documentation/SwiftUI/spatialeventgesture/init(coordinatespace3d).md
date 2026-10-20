@@ -1,7 +1,8 @@
 # init(coordinateSpace3D:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the gesture with a desired coordinate space 3D.
 
@@ -17,7 +18,8 @@ init(coordinateSpace3D: some CoordinateSpace3D)
 
 ## See Also
 
-- [init(coordinateSpace: any CoordinateSpaceProtocol)](spatialeventgesture/init(coordinatespace:).md)
+### Creating a spatial event gesture
+- [init(coordinateSpace: any CoordinateSpaceProtocol)](./init%28coordinatespace%29.md)
   Creates the gesture with a desired coordinate space.
 
 

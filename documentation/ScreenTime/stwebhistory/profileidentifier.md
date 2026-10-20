@@ -1,7 +1,8 @@
 # STWebHistory.ProfileIdentifier
 
 **Framework**: Screen Time  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An identifier representing a web history profile.
 
@@ -17,6 +18,10 @@ An identifier representing a web history profile.
 struct ProfileIdentifier
 ```
 
+```c
+typedef NSString * STWebHistoryProfileIdentifier;
+```
+
 #### Overview
 
 Profiles allow you to keep your web history separate for topics like work, personal, or school.
@@ -24,17 +29,17 @@ Profiles allow you to keep your web history separate for topics like work, perso
 ## Topics
 
 ### Initializers
-- [init(String)](stwebhistory/profileidentifier/init(_:).md)
-- [init(rawValue: String)](stwebhistory/profileidentifier/init(rawvalue:).md)
+- [init(String)](./profileidentifier/init%28_%29.md)
+- [init(rawValue: String)](./profileidentifier/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

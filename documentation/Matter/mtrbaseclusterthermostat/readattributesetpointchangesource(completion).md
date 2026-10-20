@@ -1,7 +1,8 @@
 # readAttributeSetpointChangeSource(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeSetpointChangeSource(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeSetpointChangeSource() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeSetpointChangeSourceWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

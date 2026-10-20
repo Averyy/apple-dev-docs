@@ -1,7 +1,8 @@
 # mediaType
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The media type of the port.
 
@@ -18,17 +19,22 @@ The media type of the port.
 var mediaType: AVMediaType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVMediaType mediaType;
+```
+
 ## See Also
 
-- [var isEnabled: Bool](avcaptureinput/port/isenabled.md)
+### Inspecting an input port
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that indicates whether the port is in an enabled state.
-- [var formatDescription: CMFormatDescription?](avcaptureinput/port/formatdescription.md)
+- [var formatDescription: CMFormatDescription?](./formatdescription.md)
   A description of the port format.
-- [var sourceDeviceType: AVCaptureDevice.DeviceType?](avcaptureinput/port/sourcedevicetype.md)
+- [var sourceDeviceType: AVCaptureDevice.DeviceType?](./sourcedevicetype.md)
   The device type of the source camera that provides data to the port.
-- [var sourceDevicePosition: AVCaptureDevice.Position](avcaptureinput/port/sourcedeviceposition.md)
+- [var sourceDevicePosition: AVCaptureDevice.Position](./sourcedeviceposition.md)
   The position of the source device providing input through this port.
-- [var clock: CMClock?](avcaptureinput/port/clock.md)
+- [var clock: CMClock?](./clock.md)
   An object that represents the capture device’s clock.
 
 

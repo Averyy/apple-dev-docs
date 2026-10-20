@@ -1,7 +1,8 @@
 # SportingEvent.CastAndCrew
 
 **Framework**: Apple TV Feed  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Information about a cast or crew member, including translations of their name.
 
@@ -10,14 +11,14 @@ Information about a cast or crew member, including translations of their name.
 
 ## Declaration
 
-```swift
+```
 object SportingEvent.CastAndCrew
 ```
 
 ## Topics
 
 ### Related objects
-- [object SportingEvent.CastAndCrew.Name](sportingevent/castandcrew-data.dictionary/name-data.dictionary.md)
+- [object SportingEvent.CastAndCrew.Name](./castandcrew-data.dictionary/name-data.dictionary.md)
   A mapping of locale to localized names for the cast or crew member.
 
 ## Properties
@@ -29,33 +30,34 @@ object SportingEvent.CastAndCrew
 
 ## See Also
 
-- [object SportingEvent.Artworks](sportingevent/artworks-data.dictionary.md)
+### Related objects
+- [object SportingEvent.Artworks](./artworks-data.dictionary.md)
   A mapping of locale to localized artwork.
-- [object SportingEvent.Competitor](sportingevent/competitor.md)
+- [object SportingEvent.Competitor](./competitor.md)
   Information about a competitor.
-- [object SportingEvent.Description](sportingevent/description-data.dictionary.md)
+- [object SportingEvent.Description](./description-data.dictionary.md)
   A mapping of locale to localized descriptions of the sporting event.
-- [object SportingEvent.ExternalContentId](sportingevent/externalcontentid.md)
+- [object SportingEvent.ExternalContentId](./externalcontentid.md)
   Information about an external content ID.
-- [object SportingEvent.LeagueAbbreviation](sportingevent/leagueabbreviation-data.dictionary.md)
+- [object SportingEvent.LeagueAbbreviation](./leagueabbreviation-data.dictionary.md)
   A mapping of locale to localized abbreviations for the league of the sporting event.
-- [object SportingEvent.LeagueName](sportingevent/leaguename-data.dictionary.md)
+- [object SportingEvent.LeagueName](./leaguename-data.dictionary.md)
   A mapping of locale to localized names for the league of the sporting event.
-- [object SportingEvent.Name](sportingevent/name-data.dictionary.md)
+- [object SportingEvent.Name](./name-data.dictionary.md)
   A mapping of locale to localized names for the sporting event.
-- [object SportingEvent.Prices](sportingevent/prices-data.dictionary.md)
+- [object SportingEvent.Prices](./prices-data.dictionary.md)
   A mapping of storefront to pricing information and availability.
-- [object SportingEvent.Rating](sportingevent/rating-data.dictionary.md)
+- [object SportingEvent.Rating](./rating-data.dictionary.md)
   Information about a content rating.
-- [object SportingEvent.ShortName](sportingevent/shortname-data.dictionary.md)
+- [object SportingEvent.ShortName](./shortname-data.dictionary.md)
   A mapping of locale to localized short versions of the sporting event name.
-- [object SportingEvent.SportName](sportingevent/sportname-data.dictionary.md)
+- [object SportingEvent.SportName](./sportname-data.dictionary.md)
   A mapping of locale to localized names for the sport of the event.
-- [object SportingEvent.Url](sportingevent/url-data.dictionary.md)
+- [object SportingEvent.Url](./url-data.dictionary.md)
   A mapping of locale to localized URLs for the content.
-- [object SportingEvent.VenueAddress](sportingevent/venueaddress-data.dictionary.md)
+- [object SportingEvent.VenueAddress](./venueaddress-data.dictionary.md)
   A mapping of locale to localized addresses for the event venue.
-- [object SportingEvent.VenueName](sportingevent/venuename-data.dictionary.md)
+- [object SportingEvent.VenueName](./venuename-data.dictionary.md)
   A mapping of locale to localized names for the event venue.
 
 

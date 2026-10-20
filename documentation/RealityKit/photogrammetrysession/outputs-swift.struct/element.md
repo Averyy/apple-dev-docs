@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Outputs.Element
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of element used for Photogrammetry Session updates.
 

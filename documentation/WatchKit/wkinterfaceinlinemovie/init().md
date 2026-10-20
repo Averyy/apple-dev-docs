@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: WatchKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an inline movie object for use in SwiftUI.
 
@@ -14,9 +15,13 @@ Creates an inline movie object for use in SwiftUI.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Discussion
 
-Use this initializer to create an instance that you can wrap in a [`WKInterfaceObjectRepresentable`](https://developer.apple.com/documentation/swiftui/wkinterfaceobjectrepresentable) view. If you aren’t using SwiftUI, create the control by dragging it from the Object library to your storyboard instead.
+Use this initializer to create an instance that you can wrap in a [`WKInterfaceObjectRepresentable`](../../SwiftUI/wkinterfaceobjectrepresentable.md) view. If you aren’t using SwiftUI, create the control by dragging it from the Object library to your storyboard instead.
 
 
 ---

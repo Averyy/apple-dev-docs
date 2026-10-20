@@ -1,7 +1,8 @@
 # init(coreMLPackageAtURL:compilationDescriptor:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+

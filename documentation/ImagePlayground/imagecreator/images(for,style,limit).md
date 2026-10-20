@@ -1,16 +1,17 @@
 # images(for:style:limit:)
 
 **Framework**: Image Playground  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts the creation of images based on the description and style information you provide.
 
 **Availability**:
-- iOS 18.4+
-- iPadOS 18.4+
-- Mac Catalyst 18.4+
-- macOS 15.4+
-- visionOS 2.4+
+- iOS 18.4+ - Deprecated in 27.0
+- iPadOS 18.4+ - Deprecated in 27.0
+- Mac Catalyst 18.4+ - Deprecated in 27.0
+- macOS 15.4+ - Deprecated in 27.0
+- visionOS 2.4+ - Deprecated in 27.0
 
 ## Declaration
 
@@ -24,7 +25,7 @@ An asynchronous stream you use to receive the images.
 
 #### Discussion
 
-Call this method to start the image generation process with the specified parameters. The method executes asynchronously and returns the images on the provided [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence) object. The following example configures an image creator, starts the creation of the images, and processes the generated images as they arrive.
+Call this method to start the image generation process with the specified parameters. The method executes asynchronously and returns the images on the provided [`AsyncSequence`](../../Swift/asyncsequence.md) object. The following example configures an image creator, starts the creation of the images, and processes the generated images as they arrive.
 
 ```swift
 do {
@@ -56,11 +57,12 @@ catch ImageCreator.Error.notSupported {
 
 ## See Also
 
-- [let availableStyles: [ImagePlaygroundStyle]](imagecreator/availablestyles.md)
+### Generating images
+- [let availableStyles: [ImagePlaygroundStyle]](./availablestyles.md)
   The set of styles you can apply to the images you create.
-- [ImageCreator.CreatedImage](imagecreator/createdimage.md)
+- [ImageCreator.CreatedImage](./createdimage.md)
   A structure that stores a programmatically generated image.
-- [ImageCreator.Error](imagecreator/error.md)
+- [ImageCreator.Error](./error.md)
   Errors that can occur during the image generation process.
 
 

@@ -1,7 +1,8 @@
 # standard
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared defaults object for the current app.
 
@@ -20,6 +21,10 @@ The shared defaults object for the current app.
 class var standard: UserDefaults { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSUserDefaults * standardUserDefaults;
+```
+
 #### Return Value
 
 The shared defaults object for the app.
@@ -28,13 +33,14 @@ The shared defaults object for the app.
 
 Each app maintains a single, shared defaults object for you to use in your code. The first time your app retrieves the value of this property, it creates the shared object and caches the result. Subsequent retrieval attempts return the cached object.
 
-The shared object retrieves settings from all of the standard domains. If you add a domain using the [`addSuite(named:)`](userdefaults/addsuite(named:).md) method, the object retrieves values from that domain in addition to the standard ones. Custom domains remain in the search list until you remove them or the app exits. When you write settings using the shared object, it writes them to the current app’s settings.
+The shared object retrieves settings from all of the standard domains. If you add a domain using the [`addSuite(named:)`](./addsuite%28named%29.md) method, the object retrieves values from that domain in addition to the standard ones. Custom domains remain in the search list until you remove them or the app exits. When you write settings using the shared object, it writes them to the current app’s settings.
 
 ## See Also
 
-- [convenience init()](userdefaults/init.md)
+### Creating a user defaults object
+- [convenience init()](./init%28%29.md)
   Creates a new defaults object and initializes it with the app’s current settings.
-- [init?(suiteName: String?)](userdefaults/init(suitename:).md)
+- [init?(suiteName: String?)](./init%28suitename%29.md)
   Creates a new defaults object and initializes it with the settings from the specified database.
 
 

@@ -1,7 +1,8 @@
 # tabs
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates the existing tabs that should be moved to the window.
 
@@ -18,13 +19,18 @@ Indicates the existing tabs that should be moved to the window.
 var tabs: [any WKWebExtensionTab] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<id<WKWebExtensionTab>> * tabs;
+```
+
 #### Discussion
 
-If [`tabs`](wkwebextension/windowconfiguration/tabs.md) and [`tabURLs`](wkwebextension/windowconfiguration/taburls.md) are both empty, the app’s default start page should appear in a tab.
+If [`tabs`](./tabs.md) and [`tabURLs`](./taburls.md) are both empty, the app’s default start page should appear in a tab.
 
 ## See Also
 
-- [var tabURLs: [URL]](wkwebextension/windowconfiguration/taburls.md)
+### Related Documentation
+- [var tabURLs: [URL]](./taburls.md)
   Indicates the URLs that the window should initially load as tabs.
 
 

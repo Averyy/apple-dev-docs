@@ -1,7 +1,8 @@
 # addOrthTanBasis(forTextureCoordinateAttributeNamed:normalAttributeNamed:tangentAttributeNamed:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func addOrthTanBasis(forTextureCoordinateAttributeNamed textureCoordinateAttributeName: String, normalAttributeNamed normalAttributeName: String, tangentAttributeNamed tangentAttributeName: String)
+```
+
+```objc
+- (void) addOrthTanBasisForTextureCoordinateAttributeNamed:(NSString *) textureCoordinateAttributeName normalAttributeNamed:(NSString *) normalAttributeName tangentAttributeNamed:(NSString *) tangentAttributeName;
 ```
 
 

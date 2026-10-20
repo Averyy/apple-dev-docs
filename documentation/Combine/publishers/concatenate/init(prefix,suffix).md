@@ -1,7 +1,8 @@
 # init(prefix:suffix:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that emits all of one publisher’s elements before those from another publisher.
 

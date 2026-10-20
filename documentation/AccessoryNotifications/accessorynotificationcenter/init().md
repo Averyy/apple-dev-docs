@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Accessory Notifications  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an accessory notifications center object.
 

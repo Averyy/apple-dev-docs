@@ -1,7 +1,8 @@
 # sender
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object, an image view or bar button item, that received the symbol effect.
 
@@ -10,7 +11,7 @@ The object, an image view or bar button item, that received the symbol effect.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ weak var sender: AnyObject? { get }
 
 ## See Also
 
-- [var effect: any SymbolEffect](uisymboleffectcompletioncontext-swift.struct/effect.md)
+### Determining completion status
+- [var effect: any SymbolEffect](./effect.md)
   The symbol effect that completed.
-- [var isFinished: Bool](uisymboleffectcompletioncontext-swift.struct/isfinished.md)
+- [var isFinished: Bool](./isfinished.md)
   A Boolean value that indicates whether the symbol effect finished completely.
 
 

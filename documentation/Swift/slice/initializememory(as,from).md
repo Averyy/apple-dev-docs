@@ -1,7 +1,8 @@
 # initializeMemory(as:from:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes the buffer’s memory with the given elements, binding the initialized memory to the elements’ type.
 
@@ -19,6 +20,8 @@ Initializes the buffer’s memory with the given elements, binding the initializ
 ```swift
 func initializeMemory<S>(as type: S.Element.Type, from source: S) -> (unwritten: S.Iterator, initialized: UnsafeMutableBufferPointer<S.Element>) where S : Sequence
 ```
+
+Available when `Base` is `UnsafeMutableRawBufferPointer`.
 
 #### Return Value
 

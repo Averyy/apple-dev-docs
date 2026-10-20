@@ -1,7 +1,8 @@
 # MTLType
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A description of a data type.
 
@@ -19,43 +20,48 @@ A description of a data type.
 class MTLType
 ```
 
+```objc
+@interface MTLType : NSObject
+```
+
 ## Topics
 
 ### Identifying the data type
-- [var dataType: MTLDataType](mtltype/datatype.md)
+- [var dataType: MTLDataType](./mtltype/datatype.md)
   The data type of the function argument.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MTLArrayType](mtlarraytype.md)
-- [MTLPointerType](mtlpointertype.md)
-- [MTLStructType](mtlstructtype.md)
-- [MTLTensorReferenceType](mtltensorreferencetype.md)
-- [MTLTextureReferenceType](mtltexturereferencetype.md)
+- [MTLArrayType](./mtlarraytype.md)
+- [MTLPointerType](./mtlpointertype.md)
+- [MTLStructType](./mtlstructtype.md)
+- [MTLTensorReferenceType](./mtltensorreferencetype.md)
+- [MTLTextureReferenceType](./mtltexturereferencetype.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [enum MTLDataType](mtldatatype.md)
+### Shader types
+- [enum MTLDataType](./mtldatatype.md)
   The parameter type options for GPU functions, such as shaders and compute kernels.
-- [class MTLArrayType](mtlarraytype.md)
+- [class MTLArrayType](./mtlarraytype.md)
   A description of an array.
-- [class MTLStructType](mtlstructtype.md)
+- [class MTLStructType](./mtlstructtype.md)
   A description of a structure.
-- [class MTLStructMember](mtlstructmember.md)
+- [class MTLStructMember](./mtlstructmember.md)
   An instance that provides information about a field in a structure.
-- [class MTLPointerType](mtlpointertype.md)
+- [class MTLPointerType](./mtlpointertype.md)
   A description of a pointer.
-- [class MTLTextureReferenceType](mtltexturereferencetype.md)
+- [class MTLTextureReferenceType](./mtltexturereferencetype.md)
   A description of a texture.
 
 

@@ -1,7 +1,8 @@
 # Schema.Version
 
 **Framework**: SwiftData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -22,34 +23,34 @@ struct Version
 ## Topics
 
 ### Operators
-- [static func == (Schema.Version, Schema.Version) -> Bool](schema/version-swift.struct/==(_:_:).md)
+- [static func == (Schema.Version, Schema.Version) -> Bool](./version-swift.struct/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are equal.
-- [static func < (Schema.Version, Schema.Version) -> Bool](schema/version-swift.struct/_(_:_:).md)
+- [static func < (Schema.Version, Schema.Version) -> Bool](./version-swift.struct/op%28_,_%29.md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
 ### Initializers
-- [init(Int, Int, Int)](schema/version-swift.struct/init(_:_:_:).md)
+- [init(Int, Int, Int)](./version-swift.struct/init%28_,_,_%29.md)
   Initializes a version struct with the provided components of a semantic version.
 ### Instance Properties
-- [var description: String](schema/version-swift.struct/description.md)
+- [var description: String](./version-swift.struct/description.md)
   A textual description of the version object.
-- [let major: Int](schema/version-swift.struct/major.md)
+- [let major: Int](./version-swift.struct/major.md)
   The major version according to the semantic versioning standard.
-- [let minor: Int](schema/version-swift.struct/minor.md)
+- [let minor: Int](./version-swift.struct/minor.md)
   The minor version according to the semantic versioning standard.
-- [let patch: Int](schema/version-swift.struct/patch.md)
+- [let patch: Int](./version-swift.struct/patch.md)
   The patch version according to the semantic versioning standard.
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](../swift/comparable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Comparable](../../Swift/comparable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

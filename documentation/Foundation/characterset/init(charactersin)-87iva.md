@@ -1,7 +1,8 @@
 # init(charactersIn:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize with a closed range of integers.
 

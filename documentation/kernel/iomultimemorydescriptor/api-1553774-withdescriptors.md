@@ -1,14 +1,15 @@
 # withDescriptors
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 static OSPtr<IOMultiMemoryDescriptor> withDescriptors(IOMemoryDescriptor **descriptors, UInt32 withCount, IODirection withDirection, bool asReference);
 ```
 

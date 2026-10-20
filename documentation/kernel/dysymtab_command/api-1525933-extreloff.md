@@ -1,7 +1,8 @@
 # extreloff
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An integer indicating the byte offset from the start of the file to the external relocation table data.
 
@@ -10,7 +11,7 @@ An integer indicating the byte offset from the start of the file to the external
 
 ## Declaration
 
-```swift
+```c
 uint32_t extreloff;
 ```
 

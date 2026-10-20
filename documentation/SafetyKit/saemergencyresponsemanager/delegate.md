@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: SafetyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that receives voice call status updates and requested emergency response actions.
 
@@ -18,11 +19,16 @@ The object that receives voice call status updates and requested emergency respo
 weak var delegate: (any SAEmergencyResponseDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, readwrite) id<SAEmergencyResponseDelegate> delegate;
+```
+
 ## See Also
 
-- [SAEmergencyResponseManager.VoiceCallStatus](saemergencyresponsemanager/voicecallstatus.md)
+### Placing a voice call
+- [SAEmergencyResponseManager.VoiceCallStatus](./voicecallstatus.md)
   An enumeration that defines the status of a requested voice call.
-- [func dialVoiceCall(toPhoneNumber: String, completionHandler: (Bool, (any Error)?) -> Void)](saemergencyresponsemanager/dialvoicecall(tophonenumber:completionhandler:).md)
+- [func dialVoiceCall(toPhoneNumber: String, completionHandler: (Bool, (any Error)?) -> Void)](./dialvoicecall%28tophonenumber,completionhandler%29.md)
   Request the system to dial a voice call on behalf of someone involved in a crash.
 
 

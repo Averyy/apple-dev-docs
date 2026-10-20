@@ -1,7 +1,8 @@
 # DefaultStringInterpolation.StringLiteralType
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type that should be used for literal segments.
 

@@ -1,7 +1,8 @@
 # kAXSelectedTextAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The currently selected text within this accessibility object. This attribute is required for all accessibility objects that represent editable text elements. 
 
@@ -12,6 +13,10 @@ The currently selected text within this accessibility object. This attribute is 
 
 ```swift
 var kAXSelectedTextAttribute: String { get }
+```
+
+```c
+#define kAXSelectedTextAttribute
 ```
 
 

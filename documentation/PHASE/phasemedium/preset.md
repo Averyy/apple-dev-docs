@@ -1,22 +1,27 @@
 # PHASEMedium.Preset
 
 **Framework**: PHASE  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Predetermined qualities of an environment that affect how sound transmits.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 enum Preset
+```
+
+```c
+enum PHASEMediumPreset : NSInteger;
 ```
 
 #### Overview
@@ -26,24 +31,25 @@ Currently, this enumeration refers only to sound traveling through air.
 ## Topics
 
 ### Medium Types
-- [PHASEMedium.Preset.air](phasemedium/preset/air.md)
+- [PHASEMedium.Preset.air](./preset/air.md)
   A medium that simulates sound traveling through air.
 ### Initializers
-- [init?(rawValue: Int)](phasemedium/preset/init(rawvalue:).md)
+- [init?(rawValue: Int)](./preset/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(engine: PHASEEngine, preset: PHASEMedium.Preset)](phasemedium/init(engine:preset:).md)
+### Creating a Medium
+- [init(engine: PHASEEngine, preset: PHASEMedium.Preset)](./init%28engine,preset%29.md)
   Creates a medium.
 
 

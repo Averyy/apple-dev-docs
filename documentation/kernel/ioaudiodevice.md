@@ -1,7 +1,8 @@
 # IOAudioDevice
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 Abstract base class for a single piece of audio hardware. The IOAudioDevice provides the central coordination point for an audio driver.
 
@@ -10,7 +11,7 @@ Abstract base class for a single piece of audio hardware. The IOAudioDevice prov
 
 ## Declaration
 
-```swift
+```cpp
 class IOAudioDevice : IOService
 ```
 
@@ -37,154 +38,154 @@ If the driver is to work properly after sleep/wake, it must implement performPow
 ## Topics
 
 ### Miscellaneous
-- [activateAudioEngine(IOAudioEngine *)](ioaudiodevice/1811648-activateaudioengine.md)
+- [activateAudioEngine(IOAudioEngine *)](./ioaudiodevice/api-1811648-activateaudioengine.md)
   This simply calls activateAudioEngine(IOAudioEngine *audioEngine, bool shouldStartAudioEngine) with a value of true for shouldStartAudioEngine.
-- [activateAudioEngine(IOAudioEngine *, bool)](ioaudiodevice/1811655-activateaudioengine.md)
+- [activateAudioEngine(IOAudioEngine *, bool)](./ioaudiodevice/api-1811655-activateaudioengine.md)
   This is called to add a new IOAudioEngine object to the IOAudioDevice.
-- [addTimerEvent](ioaudiodevice/1811662-addtimerevent.md)
+- [addTimerEvent](./ioaudiodevice/api-1811662-addtimerevent.md)
   Adds a TimerEvent callback for the given target called at least as often as specified in interval.
-- [attachAudioPort](ioaudiodevice/1811666-attachaudioport.md)
+- [attachAudioPort](./ioaudiodevice/api-1811666-attachaudioport.md)
   Adds the port to the IOAudioDevice's list of ports and attaches the port to its parent and attaches the child to the port.
-- [audioEngineStarting](ioaudiodevice/1811673-audioenginestarting.md)
+- [audioEngineStarting](./ioaudiodevice/api-1811673-audioenginestarting.md)
   Called by IOAudioEngine when it is starting up
-- [audioEngineStopped](ioaudiodevice/1811679-audioenginestopped.md)
+- [audioEngineStopped](./ioaudiodevice/api-1811679-audioenginestopped.md)
   Called by IOAudioEngine when it has stopped
-- [completePowerStateChange](ioaudiodevice/1811685-completepowerstatechange.md)
+- [completePowerStateChange](./ioaudiodevice/api-1811685-completepowerstatechange.md)
   Called when a power state change is complete
-- [completePowerStateChangeAction](ioaudiodevice/1811692-completepowerstatechangeaction.md)
+- [completePowerStateChangeAction](./ioaudiodevice/api-1811692-completepowerstatechangeaction.md)
   IOCommandGate Action which calls protectedCompletePowerStateChange() while holding the IOCommandGate.
-- [deactivateAllAudioEngines](ioaudiodevice/1811697-deactivateallaudioengines.md)
+- [deactivateAllAudioEngines](./ioaudiodevice/api-1811697-deactivateallaudioengines.md)
   Deactivates all of the audio engines in the device.
-- [detachAllAudioPorts](ioaudiodevice/1811704-detachallaudioports.md)
+- [detachAllAudioPorts](./ioaudiodevice/api-1811704-detachallaudioports.md)
   Deactivates all of the ports in the device.
-- [dispatchTimerEvents](ioaudiodevice/1811710-dispatchtimerevents.md)
+- [dispatchTimerEvents](./ioaudiodevice/api-1811710-dispatchtimerevents.md)
   Called by timerFired() to cause the timer event callbacks to be called.
-- [flushAudioControls](ioaudiodevice/1811716-flushaudiocontrols.md)
+- [flushAudioControls](./ioaudiodevice/api-1811716-flushaudiocontrols.md)
   Forces each IOAudioControl in the driver to have its value flushed out to the hardware. That will cause either the IOAudioControl's ValueChangeHandler to be called.
-- [free](ioaudiodevice/1811723-free.md)
+- [free](./ioaudiodevice/api-1811723-free.md)
   Frees resources used by the IOAudioDevice instance
-- [getCommandGate](ioaudiodevice/1811730-getcommandgate.md)
+- [getCommandGate](./ioaudiodevice/api-1811730-getcommandgate.md)
   Returns the IOCommandGate for this IOAudioDevice
-- [getPendingPowerState](ioaudiodevice/1811740-getpendingpowerstate.md)
+- [getPendingPowerState](./ioaudiodevice/api-1811740-getpendingpowerstate.md)
   Returns the pending power state if a state change is in progress. Otherwise it returns the current power state change.
-- [getPowerState](ioaudiodevice/1811749-getpowerstate.md)
+- [getPowerState](./ioaudiodevice/api-1811749-getpowerstate.md)
   Returns the current power state (the old power state if a change is in progress).
-- [getWorkLoop](ioaudiodevice/1811757-getworkloop.md)
+- [getWorkLoop](./ioaudiodevice/api-1811757-getworkloop.md)
   Returns the IOWorkLoop for the driver
-- [init](ioaudiodevice/1811765-init.md)
+- [init](./ioaudiodevice/api-1811765-init.md)
   Initialize a newly created instance of IOAudioDevice.
-- [initHardware](ioaudiodevice/1811773-inithardware.md)
+- [initHardware](./ioaudiodevice/api-1811773-inithardware.md)
   This function is called by start() to provide a convenient place for the subclass to perform its initialization.
-- [initiatePowerStateChange](ioaudiodevice/1811782-initiatepowerstatechange.md)
+- [initiatePowerStateChange](./ioaudiodevice/api-1811782-initiatepowerstatechange.md)
   Called internally to execute a power state change
-- [performPowerStateChange](ioaudiodevice/1811791-performpowerstatechange.md)
+- [performPowerStateChange](./ioaudiodevice/api-1811791-performpowerstatechange.md)
   This function is called by the IOAudioDevice when a power state change is needed.
-- [protectedCompletePowerStateChange](ioaudiodevice/1811798-protectedcompletepowerstatechang.md)
+- [protectedCompletePowerStateChange](./ioaudiodevice/api-1811798-protectedcompletepowerstatechang.md)
   Called on the IOWorkLoop when a power state change is complete.
-- [protectedSetPowerState](ioaudiodevice/1811807-protectedsetpowerstate.md)
+- [protectedSetPowerState](./ioaudiodevice/api-1811807-protectedsetpowerstate.md)
   Called by setPowerStateAction() to deal with a power state change from the IOService power management facility.
-- [removeAllTimerEvents](ioaudiodevice/1811813-removealltimerevents.md)
+- [removeAllTimerEvents](./ioaudiodevice/api-1811813-removealltimerevents.md)
   Removes all timer events and stops the timer
-- [removeTimerEvent](ioaudiodevice/1811823-removetimerevent.md)
+- [removeTimerEvent](./ioaudiodevice/api-1811823-removetimerevent.md)
   Removes the timer event for the given target.
-- [setConfigurationApplicationBundle](ioaudiodevice/1811829-setconfigurationapplicationbundl.md)
+- [setConfigurationApplicationBundle](./ioaudiodevice/api-1811829-setconfigurationapplicationbundl.md)
   This function is to be called if an external configuration application is available to set which application to launch.
-- [setDeviceCanBeDefault](ioaudiodevice/1811833-setdevicecanbedefault.md)
+- [setDeviceCanBeDefault](./ioaudiodevice/api-1811833-setdevicecanbedefault.md)
   This function is to be called to tell CoreAudio if this device shouldn't be a default device.
-- [setDeviceName](ioaudiodevice/1811841-setdevicename.md)
+- [setDeviceName](./ioaudiodevice/api-1811841-setdevicename.md)
   Sets the name of the device
-- [setDeviceShortName](ioaudiodevice/1811844-setdeviceshortname.md)
+- [setDeviceShortName](./ioaudiodevice/api-1811844-setdeviceshortname.md)
   Sets the short name of the device
-- [setFamilyManagePower](ioaudiodevice/1811848-setfamilymanagepower.md)
+- [setFamilyManagePower](./ioaudiodevice/api-1811848-setfamilymanagepower.md)
   Called set whether or not the family should manage the device power throught the IOService power management APIs.
-- [setIdleAudioSleepTime](ioaudiodevice/1811852-setidleaudiosleeptime.md)
+- [setIdleAudioSleepTime](./ioaudiodevice/api-1811852-setidleaudiosleeptime.md)
   This function is to be called by a driver that doesn't want to be told about the audio going idle immediately, but at some point in the future.
-- [setManufacturerName](ioaudiodevice/1811862-setmanufacturername.md)
+- [setManufacturerName](./ioaudiodevice/api-1811862-setmanufacturername.md)
   Sets the manufacturer name of the device
-- [setPowerState](ioaudiodevice/1811867-setpowerstate.md)
+- [setPowerState](./ioaudiodevice/api-1811867-setpowerstate.md)
   Called by the power management system in IOService when the power state of this service needs to change.
-- [setPowerStateAction](ioaudiodevice/1811878-setpowerstateaction.md)
+- [setPowerStateAction](./ioaudiodevice/api-1811878-setpowerstateaction.md)
   IOCommandGate Action which calls protectedSetPowerState() while holding the IOCommandGate
-- [start](ioaudiodevice/1811891-start.md)
+- [start](./ioaudiodevice/api-1811891-start.md)
   This function is called automatically by the system to tell the driver to start vending services to the rest of the system.
-- [stop](ioaudiodevice/1811898-stop.md)
+- [stop](./ioaudiodevice/api-1811898-stop.md)
   This is responsible for stopping the device after the system is done with it (or if the device is removed from the system).
-- [timerFired](ioaudiodevice/1811908-timerfired.md)
+- [timerFired](./ioaudiodevice/api-1811908-timerfired.md)
   Internal static function called when the timer fires.
-- [waitForPendingPowerStateChange](ioaudiodevice/1811913-waitforpendingpowerstatechange.md)
+- [waitForPendingPowerStateChange](./ioaudiodevice/api-1811913-waitforpendingpowerstatechange.md)
   Called internally to wait until a pending power state change is complete.
 ### Callbacks
-- [TimerEvent](ioaudiodevice/timerevent.md)
+- [TimerEvent](./ioaudiodevice/timerevent.md)
   Generic timer event callback for IOAudioDevice timer targets
 ### Constants
-- [gIOAudioPlane](ioaudiodevice/gioaudioplane.md)
+- [gIOAudioPlane](./ioaudiodevice/gioaudioplane.md)
 ### Instance Variables
-- [workLoop](ioaudiodevice/workloop.md)
-- [timerEventSource](ioaudiodevice/timereventsource.md)
-- [timerEvents](ioaudiodevice/timerevents.md)
+- [workLoop](./ioaudiodevice/workloop.md)
+- [timerEventSource](./ioaudiodevice/timereventsource.md)
+- [timerEvents](./ioaudiodevice/timerevents.md)
   The set of timer events in use by the device.
-- [pendingPowerState](ioaudiodevice/pendingpowerstate.md)
-- [numRunningAudioEngines](ioaudiodevice/numrunningaudioengines.md)
-- [minimumInterval](ioaudiodevice/minimuminterval.md)
-- [familyManagePower](ioaudiodevice/familymanagepower.md)
-- [duringStartup](ioaudiodevice/duringstartup.md)
-- [currentPowerState](ioaudiodevice/currentpowerstate.md)
-- [commandGate](ioaudiodevice/commandgate.md)
-- [audioPorts](ioaudiodevice/audioports.md)
-- [audioEngines](ioaudiodevice/audioengines.md)
-- [asyncPowerStateChangeInProgress](ioaudiodevice/asyncpowerstatechangeinprogress.md)
+- [pendingPowerState](./ioaudiodevice/pendingpowerstate.md)
+- [numRunningAudioEngines](./ioaudiodevice/numrunningaudioengines.md)
+- [minimumInterval](./ioaudiodevice/minimuminterval.md)
+- [familyManagePower](./ioaudiodevice/familymanagepower.md)
+- [duringStartup](./ioaudiodevice/duringstartup.md)
+- [currentPowerState](./ioaudiodevice/currentpowerstate.md)
+- [commandGate](./ioaudiodevice/commandgate.md)
+- [audioPorts](./ioaudiodevice/audioports.md)
+- [audioEngines](./ioaudiodevice/audioengines.md)
+- [asyncPowerStateChangeInProgress](./ioaudiodevice/asyncpowerstatechangeinprogress.md)
 ### Instance Methods
-- [- activateAudioEngine](ioaudiodevice/1557038-activateaudioengine.md)
-- [- activateAudioEngine](ioaudiodevice/3516521-activateaudioengine.md)
-- [- addTimerEvent](ioaudiodevice/1557039-addtimerevent.md)
-- [- attachAudioPort](ioaudiodevice/1557022-attachaudioport.md)
-- [- audioEngineStarting](ioaudiodevice/1557054-audioenginestarting.md)
-- [- audioEngineStopped](ioaudiodevice/1557033-audioenginestopped.md)
-- [- completePowerStateChange](ioaudiodevice/1557032-completepowerstatechange.md)
-- [- deactivateAllAudioEngines](ioaudiodevice/1557057-deactivateallaudioengines.md)
-- [- detachAllAudioPorts](ioaudiodevice/1557020-detachallaudioports.md)
-- [- dispatchTimerEvents](ioaudiodevice/1557025-dispatchtimerevents.md)
-- [- flushAudioControls](ioaudiodevice/1557024-flushaudiocontrols.md)
-- [- free](ioaudiodevice/1557026-free.md)
-- [- getCommandGate](ioaudiodevice/1557056-getcommandgate.md)
-- [- getMetaClass](ioaudiodevice/1557042-getmetaclass.md)
-- [- getPendingPowerState](ioaudiodevice/1557015-getpendingpowerstate.md)
-- [- getPowerState](ioaudiodevice/1557055-getpowerstate.md)
-- [- getWorkLoop](ioaudiodevice/1557016-getworkloop.md)
-- [- init](ioaudiodevice/1557036-init.md)
-- [- initHardware](ioaudiodevice/1557012-inithardware.md)
-- [- initiatePowerStateChange](ioaudiodevice/1557053-initiatepowerstatechange.md)
-- [- performPowerStateChange](ioaudiodevice/1557035-performpowerstatechange.md)
-- [- protectedCompletePowerStateChange](ioaudiodevice/1557045-protectedcompletepowerstatechang.md)
-- [- protectedSetPowerState](ioaudiodevice/1557029-protectedsetpowerstate.md)
-- [- removeAllTimerEvents](ioaudiodevice/1557021-removealltimerevents.md)
-- [- removeTimerEvent](ioaudiodevice/1557047-removetimerevent.md)
-- [- scheduleIdleAudioSleep](ioaudiodevice/1557059-scheduleidleaudiosleep.md)
-- [- setAggressiveness](ioaudiodevice/1557048-setaggressiveness.md)
-- [- setConfigurationApplicationBundle](ioaudiodevice/1557037-setconfigurationapplicationbundl.md)
-- [- setDeviceCanBeDefault](ioaudiodevice/1557030-setdevicecanbedefault.md)
-- [- setDeviceModelName](ioaudiodevice/1557034-setdevicemodelname.md)
-- [- setDeviceName](ioaudiodevice/1557041-setdevicename.md)
-- [- setDeviceShortName](ioaudiodevice/1557028-setdeviceshortname.md)
-- [- setDeviceTransportType](ioaudiodevice/1557051-setdevicetransporttype.md)
-- [- setFamilyManagePower](ioaudiodevice/1557050-setfamilymanagepower.md)
-- [- setIdleAudioSleepTime](ioaudiodevice/1557044-setidleaudiosleeptime.md)
-- [- setManufacturerName](ioaudiodevice/1557019-setmanufacturername.md)
-- [- setPowerState](ioaudiodevice/1557040-setpowerstate.md)
-- [- start](ioaudiodevice/1557018-start.md)
-- [- stop](ioaudiodevice/1557013-stop.md)
-- [- waitForPendingPowerStateChange](ioaudiodevice/1557043-waitforpendingpowerstatechange.md)
-- [- willTerminate](ioaudiodevice/1557049-willterminate.md)
+- [- activateAudioEngine](./ioaudiodevice/api-1557038-activateaudioengine.md)
+- [- activateAudioEngine](./ioaudiodevice/api-3516521-activateaudioengine.md)
+- [- addTimerEvent](./ioaudiodevice/api-1557039-addtimerevent.md)
+- [- attachAudioPort](./ioaudiodevice/api-1557022-attachaudioport.md)
+- [- audioEngineStarting](./ioaudiodevice/api-1557054-audioenginestarting.md)
+- [- audioEngineStopped](./ioaudiodevice/api-1557033-audioenginestopped.md)
+- [- completePowerStateChange](./ioaudiodevice/api-1557032-completepowerstatechange.md)
+- [- deactivateAllAudioEngines](./ioaudiodevice/api-1557057-deactivateallaudioengines.md)
+- [- detachAllAudioPorts](./ioaudiodevice/api-1557020-detachallaudioports.md)
+- [- dispatchTimerEvents](./ioaudiodevice/api-1557025-dispatchtimerevents.md)
+- [- flushAudioControls](./ioaudiodevice/api-1557024-flushaudiocontrols.md)
+- [- free](./ioaudiodevice/api-1557026-free.md)
+- [- getCommandGate](./ioaudiodevice/api-1557056-getcommandgate.md)
+- [- getMetaClass](./ioaudiodevice/api-1557042-getmetaclass.md)
+- [- getPendingPowerState](./ioaudiodevice/api-1557015-getpendingpowerstate.md)
+- [- getPowerState](./ioaudiodevice/api-1557055-getpowerstate.md)
+- [- getWorkLoop](./ioaudiodevice/api-1557016-getworkloop.md)
+- [- init](./ioaudiodevice/api-1557036-init.md)
+- [- initHardware](./ioaudiodevice/api-1557012-inithardware.md)
+- [- initiatePowerStateChange](./ioaudiodevice/api-1557053-initiatepowerstatechange.md)
+- [- performPowerStateChange](./ioaudiodevice/api-1557035-performpowerstatechange.md)
+- [- protectedCompletePowerStateChange](./ioaudiodevice/api-1557045-protectedcompletepowerstatechang.md)
+- [- protectedSetPowerState](./ioaudiodevice/api-1557029-protectedsetpowerstate.md)
+- [- removeAllTimerEvents](./ioaudiodevice/api-1557021-removealltimerevents.md)
+- [- removeTimerEvent](./ioaudiodevice/api-1557047-removetimerevent.md)
+- [- scheduleIdleAudioSleep](./ioaudiodevice/api-1557059-scheduleidleaudiosleep.md)
+- [- setAggressiveness](./ioaudiodevice/api-1557048-setaggressiveness.md)
+- [- setConfigurationApplicationBundle](./ioaudiodevice/api-1557037-setconfigurationapplicationbundl.md)
+- [- setDeviceCanBeDefault](./ioaudiodevice/api-1557030-setdevicecanbedefault.md)
+- [- setDeviceModelName](./ioaudiodevice/api-1557034-setdevicemodelname.md)
+- [- setDeviceName](./ioaudiodevice/api-1557041-setdevicename.md)
+- [- setDeviceShortName](./ioaudiodevice/api-1557028-setdeviceshortname.md)
+- [- setDeviceTransportType](./ioaudiodevice/api-1557051-setdevicetransporttype.md)
+- [- setFamilyManagePower](./ioaudiodevice/api-1557050-setfamilymanagepower.md)
+- [- setIdleAudioSleepTime](./ioaudiodevice/api-1557044-setidleaudiosleeptime.md)
+- [- setManufacturerName](./ioaudiodevice/api-1557019-setmanufacturername.md)
+- [- setPowerState](./ioaudiodevice/api-1557040-setpowerstate.md)
+- [- start](./ioaudiodevice/api-1557018-start.md)
+- [- stop](./ioaudiodevice/api-1557013-stop.md)
+- [- waitForPendingPowerStateChange](./ioaudiodevice/api-1557043-waitforpendingpowerstatechange.md)
+- [- willTerminate](./ioaudiodevice/api-1557049-willterminate.md)
 ### Type Methods
-- [+ completePowerStateChangeAction](ioaudiodevice/1557052-completepowerstatechangeaction.md)
-- [+ idleAudioSleepHandlerTimer](ioaudiodevice/1557058-idleaudiosleephandlertimer.md)
-- [+ setPowerStateAction](ioaudiodevice/1557023-setpowerstateaction.md)
-- [+ timerFired](ioaudiodevice/1557046-timerfired.md)
+- [+ completePowerStateChangeAction](./ioaudiodevice/api-1557052-completepowerstatechangeaction.md)
+- [+ idleAudioSleepHandlerTimer](./ioaudiodevice/api-1557058-idleaudiosleephandlertimer.md)
+- [+ setPowerStateAction](./ioaudiodevice/api-1557023-setpowerstateaction.md)
+- [+ timerFired](./ioaudiodevice/api-1557046-timerfired.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOService](ioservice.md)
+- [IOService](./ioservice.md)
 
 
 ---

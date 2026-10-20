@@ -1,7 +1,8 @@
 # UICollectionViewDragDelegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface for initiating drags from a collection view.
 
@@ -18,61 +19,66 @@ The interface for initiating drags from a collection view.
 protocol UICollectionViewDragDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol UICollectionViewDragDelegate <NSObject>
+```
+
 ## Mentions
 
-- [Supporting Drag and Drop in Collection Views](supporting-drag-and-drop-in-collection-views.md)
+- [Supporting Drag and Drop in Collection Views](./supporting-drag-and-drop-in-collection-views.md)
 
 #### Overview
 
-Implement this protocol in the object that you use to initiate drags from your collection view. The only required method of this protocol is the [`collectionView(_:itemsForBeginning:at:)`](uicollectionviewdragdelegate/collectionview(_:itemsforbeginning:at:).md) method, but you can implement other methods as needed to customize the drag behavior of your collection view.
+Implement this protocol in the object that you use to initiate drags from your collection view. The only required method of this protocol is the [`collectionView(_:itemsForBeginning:at:)`](./uicollectionviewdragdelegate/collectionview%28_,itemsforbeginning,at%29.md) method, but you can implement other methods as needed to customize the drag behavior of your collection view.
 
-Assign your custom delegate object to the [`dragDelegate`](uicollectionview/dragdelegate.md) property of your collection view.
+Assign your custom delegate object to the [`dragDelegate`](./uicollectionview/dragdelegate.md) property of your collection view.
 
 ## Topics
 
 ### Providing the items to drag
-- [func collectionView(UICollectionView, itemsForBeginning: any UIDragSession, at: IndexPath) -> [UIDragItem]](uicollectionviewdragdelegate/collectionview(_:itemsforbeginning:at:).md)
+- [func collectionView(UICollectionView, itemsForBeginning: any UIDragSession, at: IndexPath) -> [UIDragItem]](./uicollectionviewdragdelegate/collectionview%28_,itemsforbeginning,at%29.md)
   Provides the initial set of items (if any) to drag.
-- [func collectionView(UICollectionView, itemsForAddingTo: any UIDragSession, at: IndexPath, point: CGPoint) -> [UIDragItem]](uicollectionviewdragdelegate/collectionview(_:itemsforaddingto:at:point:).md)
+- [func collectionView(UICollectionView, itemsForAddingTo: any UIDragSession, at: IndexPath, point: CGPoint) -> [UIDragItem]](./uicollectionviewdragdelegate/collectionview%28_,itemsforaddingto,at,point%29.md)
   Adds the specified items to an existing drag session.
 ### Tracking the drag session
-- [func collectionView(UICollectionView, dragSessionWillBegin: any UIDragSession)](uicollectionviewdragdelegate/collectionview(_:dragsessionwillbegin:).md)
+- [func collectionView(UICollectionView, dragSessionWillBegin: any UIDragSession)](./uicollectionviewdragdelegate/collectionview%28_,dragsessionwillbegin%29.md)
   Notifies you that a drag session is about to begin for the collection view.
-- [func collectionView(UICollectionView, dragSessionDidEnd: any UIDragSession)](uicollectionviewdragdelegate/collectionview(_:dragsessiondidend:).md)
+- [func collectionView(UICollectionView, dragSessionDidEnd: any UIDragSession)](./uicollectionviewdragdelegate/collectionview%28_,dragsessiondidend%29.md)
   Notifies you that a drag session ended for the collection view.
 ### Providing a custom preview
-- [func collectionView(UICollectionView, dragPreviewParametersForItemAt: IndexPath) -> UIDragPreviewParameters?](uicollectionviewdragdelegate/collectionview(_:dragpreviewparametersforitemat:).md)
+- [func collectionView(UICollectionView, dragPreviewParametersForItemAt: IndexPath) -> UIDragPreviewParameters?](./uicollectionviewdragdelegate/collectionview%28_,dragpreviewparametersforitemat%29.md)
   Returns custom information about how to display the item at the specified location during the drag.
 ### Controlling the drag session
-- [func collectionView(UICollectionView, dragSessionAllowsMoveOperation: any UIDragSession) -> Bool](uicollectionviewdragdelegate/collectionview(_:dragsessionallowsmoveoperation:).md)
+- [func collectionView(UICollectionView, dragSessionAllowsMoveOperation: any UIDragSession) -> Bool](./uicollectionviewdragdelegate/collectionview%28_,dragsessionallowsmoveoperation%29.md)
   Returns a Boolean value that determines whether a move operation is allowed for a drag session.
-- [func collectionView(UICollectionView, dragSessionIsRestrictedToDraggingApplication: any UIDragSession) -> Bool](uicollectionviewdragdelegate/collectionview(_:dragsessionisrestrictedtodraggingapplication:).md)
+- [func collectionView(UICollectionView, dragSessionIsRestrictedToDraggingApplication: any UIDragSession) -> Bool](./uicollectionviewdragdelegate/collectionview%28_,dragsessionisrestrictedtodraggingapplication%29.md)
   Returns a Boolean value that determines whether the source app and destination app must be the same for a drag session.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Supporting Drag and Drop in Collection Views](supporting-drag-and-drop-in-collection-views.md)
+### Drag and drop
+- [Supporting Drag and Drop in Collection Views](./supporting-drag-and-drop-in-collection-views.md)
   Initiate drags and handle drops from a collection view.
-- [protocol UICollectionViewDropDelegate](uicollectionviewdropdelegate.md)
+- [protocol UICollectionViewDropDelegate](./uicollectionviewdropdelegate.md)
   The interface for handling drops in a collection view.
-- [protocol UICollectionViewDropCoordinator](uicollectionviewdropcoordinator.md)
+- [protocol UICollectionViewDropCoordinator](./uicollectionviewdropcoordinator.md)
   An interface for coordinating your custom drop-related actions with the collection view.
-- [class UICollectionViewDropPlaceholder](uicollectionviewdropplaceholder.md)
+- [class UICollectionViewDropPlaceholder](./uicollectionviewdropplaceholder.md)
   A placeholder for an item dropped on a collection view.
-- [class UICollectionViewDropProposal](uicollectionviewdropproposal.md)
+- [class UICollectionViewDropProposal](./uicollectionviewdropproposal.md)
   Your proposed solution for handling a drop in a collection view.
-- [protocol UICollectionViewDropItem](uicollectionviewdropitem.md)
+- [protocol UICollectionViewDropItem](./uicollectionviewdropitem.md)
   The data associated with an item being dropped into the collection view.
-- [protocol UICollectionViewDropPlaceholderContext](uicollectionviewdropplaceholdercontext.md)
+- [protocol UICollectionViewDropPlaceholderContext](./uicollectionviewdropplaceholdercontext.md)
   An object that contains information about a placeholder in the collection view.
-- [protocol UIDataSourceTranslating](uidatasourcetranslating.md)
+- [protocol UIDataSourceTranslating](./uidatasourcetranslating.md)
   An advanced interface for managing a data source object.
-- [class UICollectionViewPlaceholder](uicollectionviewplaceholder.md)
+- [class UICollectionViewPlaceholder](./uicollectionviewplaceholder.md)
   A placeholder for an item dragged or dropped on a collection view.
 
 

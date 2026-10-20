@@ -1,7 +1,8 @@
 # format
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The format used to create the graphics renderer.
 
@@ -18,13 +19,18 @@ The format used to create the graphics renderer.
 var format: UIGraphicsRendererFormat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIGraphicsRendererFormat * format;
+```
+
 #### Discussion
 
-The property returns a copy of the [`UIGraphicsRendererFormat`](uigraphicsrendererformat.md) instance used to create the graphics renderer.
+The property returns a copy of the [`UIGraphicsRendererFormat`](../uigraphicsrendererformat.md) instance used to create the graphics renderer.
 
 ## See Also
 
-- [var allowsImageOutput: Bool](uigraphicsrenderer/allowsimageoutput.md)
+### Configuring the renderer
+- [var allowsImageOutput: Bool](./allowsimageoutput.md)
   A Boolean value specifying whether the renderer can create output images.
 
 

@@ -1,7 +1,8 @@
 # nativeAudioFormat
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred audio format for optimal speech recognition.
 
@@ -16,6 +17,10 @@ The preferred audio format for optimal speech recognition.
 
 ```swift
 var nativeAudioFormat: AVAudioFormat { get }
+```
+
+```objc
+@property (nonatomic, readonly) AVAudioFormat * nativeAudioFormat;
 ```
 
 #### Discussion

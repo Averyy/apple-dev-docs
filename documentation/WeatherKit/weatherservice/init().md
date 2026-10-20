@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: WeatherKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a weather service object.
 

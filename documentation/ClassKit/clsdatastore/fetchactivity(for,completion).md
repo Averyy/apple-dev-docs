@@ -1,7 +1,8 @@
 # fetchActivity(for:completion:)
 
 **Framework**: ClassKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches an activity for a given document so you can record progress on the associated task.
 
@@ -15,16 +16,28 @@ Fetches an activity for a given document so you can record progress on the assoc
 ## Declaration
 
 ```swift
+func fetchActivity(for url: URL, completion: @escaping @Sendable (CLSActivity?, (any Error)?) -> Void)
+```
+
+```swift
 func fetchActivity(for url: URL) async throws -> CLSActivity
+```
+
+```objc
+- (void) fetchActivityForURL:(NSURL *) url completion:(void (^)(CLSActivity *activity, NSError *error)) completion;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func fetchActivity(for url: URL) async throws -> CLSActivity
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func fetchActivity(for url: URL) async throws -> CLSActivity
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
-Use this method to get a [`CLSActivity`](clsactivity.md) instance for a task that’s associated with a particular document, as specified by its file URL. If the activity doesn’t exist, ClassKit creates one for you. You can use the activity instance provided in the completion handler to start recording progress:
+Use this method to get a [`CLSActivity`](../clsactivity.md) instance for a task that’s associated with a particular document, as specified by its file URL. If the activity doesn’t exist, ClassKit creates one for you. You can use the activity instance provided in the completion handler to start recording progress:
 
 ```swift
 CLSDataStore.shared.fetchActivity(for: url) { currentActivity, error in
@@ -65,26 +78,27 @@ CLSDataStore.shared.fetchActivity(for: url) { currentActivity, error in
 }
 ```
 
-As the example above shows, always call the [`stop()`](clsactivity/stop().md) method last, after setting progress or adding activity items.
+As the example above shows, always call the [`stop()`](../clsactivity/stop%28%29.md) method last, after setting progress or adding activity items.
 
-To determine the file permissions of a document attached to an assignment in the Schoolwork app, open the file with [`UIApplication.OpenURLOptionsKey`](https://developer.apple.com/documentation/uikit/uiapplication/openurloptionskey) set to true. You then check the URL resource key [`ubiquitousSharedItemCurrentUserPermissionsKey`](https://developer.apple.com/documentation/foundation/urlresourcekey/ubiquitousshareditemcurrentuserpermissionskey). The resource key value, [`URLUbiquitousSharedItemPermissions`](https://developer.apple.com/documentation/foundation/urlubiquitousshareditempermissions), indicates whether the file has read and write or read-only permissions.
+To determine the file permissions of a document attached to an assignment in the Schoolwork app, open the file with [`UIApplication.OpenURLOptionsKey`](../../UIKit/uiapplication/openurloptionskey.md) set to true. You then check the URL resource key [`ubiquitousSharedItemCurrentUserPermissionsKey`](../../Foundation/urlresourcekey/ubiquitousshareditemcurrentuserpermissionskey.md). The resource key value, [`URLUbiquitousSharedItemPermissions`](../../Foundation/urlubiquitousshareditempermissions.md), indicates whether the file has read and write or read-only permissions.
 
 Use these permissions to determine whether your UI needs to be editable or view only.
 
 ## Parameters
 
-- `url`: The file URL of the document for which you want to fetch a [`CLSActivity`](clsactivity.md) instance. A teacher must have previously attached the document to an assignment in the Schoolwork app.
+- `url`: The file URL of the document for which you want to fetch a [`CLSActivity`](../clsactivity.md) instance. A teacher must have previously attached the document to an assignment in the Schoolwork app.
 - `completion`: A handler that the method calls to return an activity if possible, and an optional error that describes the reason for a failure.
 
 ## See Also
 
-- [var mainAppContext: CLSContext](clsdatastore/mainappcontext.md)
+### Accessing specific contexts and activities
+- [var mainAppContext: CLSContext](./mainappcontext.md)
   The app’s top-level context.
-- [var activeContext: CLSContext?](clsdatastore/activecontext.md)
+- [var activeContext: CLSContext?](./activecontext.md)
   The currently active context.
-- [var runningActivity: CLSActivity?](clsdatastore/runningactivity.md)
+- [var runningActivity: CLSActivity?](./runningactivity.md)
   The currently running activity within the currently active context.
-- [func completeAllAssignedActivities(matching: [String])](clsdatastore/completeallassignedactivities(matching:).md)
+- [func completeAllAssignedActivities(matching: [String])](./completeallassignedactivities%28matching%29.md)
   Marks all of the assigned and active activities for the given context path as complete.
 
 

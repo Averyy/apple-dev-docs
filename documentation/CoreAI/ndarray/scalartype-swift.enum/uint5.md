@@ -1,7 +1,8 @@
 # NDArray.ScalarType.uint5
 
 **Framework**: Core AI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A 5-bit unsigned integer.
 
@@ -24,17 +25,18 @@ Five-bit unsigned integers can represent values in the range [0, 31]. This type 
 
 ## See Also
 
-- [NDArray.ScalarType.uint1](ndarray/scalartype-swift.enum/uint1.md)
+### Defining sub-byte unsigned integer types
+- [NDArray.ScalarType.uint1](./uint1.md)
   A 1-bit unsigned integer.
-- [NDArray.ScalarType.uint2](ndarray/scalartype-swift.enum/uint2.md)
+- [NDArray.ScalarType.uint2](./uint2.md)
   A 2-bit unsigned integer.
-- [NDArray.ScalarType.uint3](ndarray/scalartype-swift.enum/uint3.md)
+- [NDArray.ScalarType.uint3](./uint3.md)
   A 3-bit unsigned integer.
-- [NDArray.ScalarType.uint4](ndarray/scalartype-swift.enum/uint4.md)
+- [NDArray.ScalarType.uint4](./uint4.md)
   A 4-bit unsigned integer.
-- [NDArray.ScalarType.uint6](ndarray/scalartype-swift.enum/uint6.md)
+- [NDArray.ScalarType.uint6](./uint6.md)
   A 6-bit unsigned integer.
-- [NDArray.ScalarType.uint7](ndarray/scalartype-swift.enum/uint7.md)
+- [NDArray.ScalarType.uint7](./uint7.md)
   A 7-bit unsigned integer.
 
 

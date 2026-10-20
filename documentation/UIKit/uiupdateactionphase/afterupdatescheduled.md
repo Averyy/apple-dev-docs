@@ -1,7 +1,8 @@
 # afterUpdateScheduled
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A phase that runs after the scheduling of a UI update.
 
@@ -18,33 +19,38 @@ A phase that runs after the scheduling of a UI update.
 class var afterUpdateScheduled: UIUpdateActionPhase { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) UIUpdateActionPhase * afterUpdateScheduled;
+```
+
 #### Discussion
 
 This phase runs after timing information for the UI update is available. Use this phase to perform tasks that rely on UI update timing information, but don’t need user input events, such as time-driven animations or noninteractive simulations.
 
 ## See Also
 
-- [class var beforeEventDispatch: UIUpdateActionPhase](uiupdateactionphase/beforeeventdispatch.md)
+### Phases
+- [class var beforeEventDispatch: UIUpdateActionPhase](./beforeeventdispatch.md)
   A phase that runs before standard event handlers.
-- [class var afterEventDispatch: UIUpdateActionPhase](uiupdateactionphase/aftereventdispatch.md)
+- [class var afterEventDispatch: UIUpdateActionPhase](./aftereventdispatch.md)
   A phase that runs after standard event handlers.
-- [class var beforeCADisplayLinkDispatch: UIUpdateActionPhase](uiupdateactionphase/beforecadisplaylinkdispatch.md)
+- [class var beforeCADisplayLinkDispatch: UIUpdateActionPhase](./beforecadisplaylinkdispatch.md)
   A phase that runs before Core Animation display link callbacks.
-- [class var afterCADisplayLinkDispatch: UIUpdateActionPhase](uiupdateactionphase/aftercadisplaylinkdispatch.md)
+- [class var afterCADisplayLinkDispatch: UIUpdateActionPhase](./aftercadisplaylinkdispatch.md)
   A phase that runs after Core Animation display link callbacks.
-- [class var beforeCATransactionCommit: UIUpdateActionPhase](uiupdateactionphase/beforecatransactioncommit.md)
+- [class var beforeCATransactionCommit: UIUpdateActionPhase](./beforecatransactioncommit.md)
   A phase that runs before a Core Animation transaction commit.
-- [class var afterCATransactionCommit: UIUpdateActionPhase](uiupdateactionphase/aftercatransactioncommit.md)
+- [class var afterCATransactionCommit: UIUpdateActionPhase](./aftercatransactioncommit.md)
   A phase that runs after a Core Animation transaction commit.
-- [class var beforeLowLatencyEventDispatch: UIUpdateActionPhase](uiupdateactionphase/beforelowlatencyeventdispatch.md)
+- [class var beforeLowLatencyEventDispatch: UIUpdateActionPhase](./beforelowlatencyeventdispatch.md)
   A phase that runs before low-latency event handlers.
-- [class var afterLowLatencyEventDispatch: UIUpdateActionPhase](uiupdateactionphase/afterlowlatencyeventdispatch.md)
+- [class var afterLowLatencyEventDispatch: UIUpdateActionPhase](./afterlowlatencyeventdispatch.md)
   A phase that runs after low-latency event handlers.
-- [class var beforeLowLatencyCATransactionCommit: UIUpdateActionPhase](uiupdateactionphase/beforelowlatencycatransactioncommit.md)
+- [class var beforeLowLatencyCATransactionCommit: UIUpdateActionPhase](./beforelowlatencycatransactioncommit.md)
   A phase that runs before a Core Animation transaction commit for a low-latency event.
-- [class var afterLowLatencyCATransactionCommit: UIUpdateActionPhase](uiupdateactionphase/afterlowlatencycatransactioncommit.md)
+- [class var afterLowLatencyCATransactionCommit: UIUpdateActionPhase](./afterlowlatencycatransactioncommit.md)
   A phase that runs after a Core Animation transaction commit for a low-latency event.
-- [class var afterUpdateComplete: UIUpdateActionPhase](uiupdateactionphase/afterupdatecomplete.md)
+- [class var afterUpdateComplete: UIUpdateActionPhase](./afterupdatecomplete.md)
   A phase that runs at the end of a UI update.
 
 

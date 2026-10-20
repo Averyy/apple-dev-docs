@@ -1,7 +1,8 @@
 # HKAudiogramSensitivityPointClampingRange
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Defines the range within which an ear’s sensitivity point may have been clamped, if any.
 
@@ -19,6 +20,10 @@ Defines the range within which an ear’s sensitivity point may have been clampe
 class HKAudiogramSensitivityPointClampingRange
 ```
 
+```objc
+@interface HKAudiogramSensitivityPointClampingRange : NSObject
+```
+
 #### Overview
 
 At times, it may be required to indicate that a sensitivity point has been clamped to a range. These reasons include but are not limited to user safety, hardware limitations, or algorithm features.
@@ -26,45 +31,46 @@ At times, it may be required to indicate that a sensitivity point has been clamp
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](hkaudiogramsensitivitypointclampingrange/init(coder:).md)
-- [convenience init(lowerBound: NSNumber?, upperBound: NSNumber?) throws](hkaudiogramsensitivitypointclampingrange/init(lowerbound:upperbound:).md)
+- [init?(coder: NSCoder)](./hkaudiogramsensitivitypointclampingrange/init%28coder%29.md)
+- [convenience init(lowerBound: NSNumber?, upperBound: NSNumber?) throws](./hkaudiogramsensitivitypointclampingrange/init%28lowerbound,upperbound%29.md)
 ### Instance Properties
-- [var lowerBound: HKQuantity?](hkaudiogramsensitivitypointclampingrange/lowerbound.md)
-- [var upperBound: HKQuantity?](hkaudiogramsensitivitypointclampingrange/upperbound.md)
+- [var lowerBound: HKQuantity?](./hkaudiogramsensitivitypointclampingrange/lowerbound.md)
+- [var upperBound: HKQuantity?](./hkaudiogramsensitivitypointclampingrange/upperbound.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HKAudiogramSensitivityTest](hkaudiogramsensitivitytest.md)
-- [class HKBiologicalSexObject](hkbiologicalsexobject.md)
-  This class acts as a wrapper for the [`HKBiologicalSex`](hkbiologicalsex.md) enumeration.
-- [class HKBloodTypeObject](hkbloodtypeobject.md)
-  This class acts as a wrapper for the [`HKBloodType`](hkbloodtype.md) enumeration.
-- [class HKFitzpatrickSkinTypeObject](hkfitzpatrickskintypeobject.md)
-  This class acts as a wrapper for the [`HKFitzpatrickSkinType`](hkfitzpatrickskintype.md) enumeration.
-- [class HKGAD7Assessment](hkgad7assessment.md)
-- [class HKPHQ9Assessment](hkphq9assessment.md)
-- [class HKScoredAssessment](hkscoredassessment.md)
-- [class HKScoredAssessmentType](hkscoredassessmenttype.md)
-- [class HKStateOfMind](hkstateofmind.md)
-- [class HKStateOfMindType](hkstateofmindtype.md)
-- [class HKWheelchairUseObject](hkwheelchairuseobject.md)
+### Classes
+- [class HKAudiogramSensitivityTest](./hkaudiogramsensitivitytest.md)
+- [class HKBiologicalSexObject](./hkbiologicalsexobject.md)
+  This class acts as a wrapper for the [`HKBiologicalSex`](./hkbiologicalsex.md) enumeration.
+- [class HKBloodTypeObject](./hkbloodtypeobject.md)
+  This class acts as a wrapper for the [`HKBloodType`](./hkbloodtype.md) enumeration.
+- [class HKFitzpatrickSkinTypeObject](./hkfitzpatrickskintypeobject.md)
+  This class acts as a wrapper for the [`HKFitzpatrickSkinType`](./hkfitzpatrickskintype.md) enumeration.
+- [class HKGAD7Assessment](./hkgad7assessment.md)
+- [class HKPHQ9Assessment](./hkphq9assessment.md)
+- [class HKScoredAssessment](./hkscoredassessment.md)
+- [class HKScoredAssessmentType](./hkscoredassessmenttype.md)
+- [class HKStateOfMind](./hkstateofmind.md)
+- [class HKStateOfMindType](./hkstateofmindtype.md)
+- [class HKWheelchairUseObject](./hkwheelchairuseobject.md)
   This class acts as a wrapper for the wheelchair use enumeration.
 
 

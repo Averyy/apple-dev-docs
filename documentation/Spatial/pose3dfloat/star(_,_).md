@@ -1,7 +1,8 @@
 # *(_:_:)
 
 **Framework**: Spatial  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a new pose that’s constructed by concatenating two existing  poses.
 

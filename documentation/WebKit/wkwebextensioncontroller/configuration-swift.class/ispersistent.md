@@ -1,7 +1,8 @@
 # isPersistent
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating if this context will write data to the the file system.
 
@@ -16,6 +17,10 @@ A Boolean value indicating if this context will write data to the the file syste
 
 ```swift
 var isPersistent: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isPersistent) BOOL persistent;
 ```
 
 

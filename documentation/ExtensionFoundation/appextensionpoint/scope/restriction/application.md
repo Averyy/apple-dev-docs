@@ -1,7 +1,8 @@
 # AppExtensionPoint.Scope.Restriction.application
 
 **Framework**: ExtensionFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that requires an app extension to reside inside the same app to which it’s binding.
 
@@ -22,7 +23,8 @@ case application
 
 ## See Also
 
-- [AppExtensionPoint.Scope.Restriction.none](appextensionpoint/scope/restriction/none.md)
+### Getting the restriction types
+- [AppExtensionPoint.Scope.Restriction.none](./none.md)
   A value that allows app extensions in any app to bind to the host app.
 
 

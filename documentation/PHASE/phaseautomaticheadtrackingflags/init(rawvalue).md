@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+

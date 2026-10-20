@@ -11,8 +11,8 @@ Certain routines require a device ID or profile ID. In some cases, a "default ID
 ## Topics
 
 ### Constants
-- [var cmDefaultDeviceID: Int](cmdefaultdeviceid.md)
-- [var cmDefaultProfileID: Int](cmdefaultprofileid.md)
+- [var cmDefaultDeviceID: Int](../cmdefaultdeviceid.md)
+- [var cmDefaultProfileID: Int](../cmdefaultprofileid.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # group
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The category this definition belongs to, or `nil` if uncategorized.
 

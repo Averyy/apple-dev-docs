@@ -1,7 +1,8 @@
 # WAError.subscriberTimeout(_:)
 
 **Framework**: Wi-Fi Aware  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that occurs due to subscriber timeout.
 
@@ -18,15 +19,16 @@ case subscriberTimeout(WAError.SubscriberTimeoutDetails)
 
 ## See Also
 
-- [case connectionIdleTimeout(WAError.ConnectionIdleTimeoutDetails)](waerror/connectionidletimeout(_:).md)
+### Checking for timeouts
+- [case connectionIdleTimeout(WAError.ConnectionIdleTimeoutDetails)](./connectionidletimeout%28_%29.md)
   An error that occurs due to an idle or unused connection.
-- [case publisherTimeout(WAError.PublisherTimeoutDetails)](waerror/publishertimeout(_:).md)
+- [case publisherTimeout(WAError.PublisherTimeoutDetails)](./publishertimeout%28_%29.md)
   An error that occurs due to publisher timeout.
-- [WAError.ConnectionIdleTimeoutDetails](waerror/connectionidletimeoutdetails.md)
+- [WAError.ConnectionIdleTimeoutDetails](./connectionidletimeoutdetails.md)
   The optional details describing the missing resources.
-- [WAError.PublisherTimeoutDetails](waerror/publishertimeoutdetails.md)
+- [WAError.PublisherTimeoutDetails](./publishertimeoutdetails.md)
   The optional details describing the timed out publisher.
-- [WAError.SubscriberTimeoutDetails](waerror/subscribertimeoutdetails.md)
+- [WAError.SubscriberTimeoutDetails](./subscribertimeoutdetails.md)
   The optional details describing the timed out subscriber.
 
 

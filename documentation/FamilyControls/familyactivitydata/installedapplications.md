@@ -1,7 +1,8 @@
 # installedApplications
 
 **Framework**: Family Controls  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Applications someone installs on a device.
 
@@ -19,15 +20,16 @@ var installedApplications: [Application] { get async throws }
 
 Each application contains both a `bundleIdentifier` and a `token`.
 
-> ❗ **Important**:  Authorize your app with [`AuthorizationCenter`](authorizationcenter.md) and ensure data access is available before accessing this variable. Otherwise, it always throws an error.
+> ❗ **Important**:  Authorize your app with [`AuthorizationCenter`](../authorizationcenter.md) and ensure data access is available before accessing this variable. Otherwise, it always throws an error.
 
 ## See Also
 
-- [static let shared: FamilyActivityData](familyactivitydata/shared.md)
+### Accessing activity data
+- [static let shared: FamilyActivityData](./shared.md)
   A shared instance for accessing a person’s family activity data.
-- [var activityCategories: Set<ActivityCategory>](familyactivitydata/activitycategories.md)
+- [var activityCategories: Set<ActivityCategory>](./activitycategories.md)
   The set of all possible activity categories.
-- [var visitedWebDomains: [WebDomain]](familyactivitydata/visitedwebdomains.md)
+- [var visitedWebDomains: [WebDomain]](./visitedwebdomains.md)
   Web domains someone visits on their device.
 
 

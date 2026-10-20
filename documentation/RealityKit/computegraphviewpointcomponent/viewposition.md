@@ -1,7 +1,8 @@
 # viewPosition
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the observer, in world space.
 

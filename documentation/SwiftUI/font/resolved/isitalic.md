@@ -1,7 +1,8 @@
 # isItalic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns `true` if the resolved font is italic.
 

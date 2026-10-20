@@ -1,7 +1,8 @@
 # hasInjectedContent
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the extension has script or stylesheet content that can be injected into webpages.
 
@@ -18,11 +19,15 @@ A Boolean value indicating whether the extension has script or stylesheet conten
 var hasInjectedContent: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasInjectedContent;
+```
+
 #### Discussion
 
 If this property is `YES`, the extension has content that can be injected by matching against the extension’s requested match patterns.
 
-> **Note**: Once the extension is loaded, use the [`hasInjectedContent`](wkwebextension/hasinjectedcontent.md) property on an extension context, as the injectable content can change after the extension is loaded.
+> **Note**: Once the extension is loaded, use the [`hasInjectedContent`](./hasinjectedcontent.md) property on an extension context, as the injectable content can change after the extension is loaded.
 
 
 ---

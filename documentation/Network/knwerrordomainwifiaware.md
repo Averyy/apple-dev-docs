@@ -1,7 +1,8 @@
 # kNWErrorDomainWiFiAware
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 let kNWErrorDomainWiFiAware: CFString
+```
+
+```c
+extern CFStringRef const kNWErrorDomainWiFiAware;
 ```
 
 #### Discussion

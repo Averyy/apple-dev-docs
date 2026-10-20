@@ -1,7 +1,8 @@
 # GameCenterLeaderboardSetCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,16 +11,16 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardSetCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterLeaderboardSetCreateRequest.Data.Relationships.GameCenterLeaderboards](gamecenterleaderboardsetcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterleaderboards-data.dictionary.md)
-- [object GameCenterLeaderboardSetCreateRequest.Data.Relationships.GameCenterDetail](gamecenterleaderboardsetcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)
-- [object GameCenterLeaderboardSetCreateRequest.Data.Relationships.GameCenterGroup](gamecenterleaderboardsetcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecentergroup-data.dictionary.md)
+- [object GameCenterLeaderboardSetCreateRequest.Data.Relationships.GameCenterLeaderboards](./relationships-data.dictionary/gamecenterleaderboards-data.dictionary.md)
+- [object GameCenterLeaderboardSetCreateRequest.Data.Relationships.GameCenterDetail](./relationships-data.dictionary/gamecenterdetail-data.dictionary.md)
+- [object GameCenterLeaderboardSetCreateRequest.Data.Relationships.GameCenterGroup](./relationships-data.dictionary/gamecentergroup-data.dictionary.md)
 
 ## Properties
 
@@ -29,7 +30,8 @@ object GameCenterLeaderboardSetCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object GameCenterLeaderboardSetCreateRequest.Data.Attributes](gamecenterleaderboardsetcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object GameCenterLeaderboardSetCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a leaderboard resource.
 
 

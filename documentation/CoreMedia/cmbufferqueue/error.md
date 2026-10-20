@@ -1,7 +1,8 @@
 # CMBufferQueue.Error
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 13.0+
@@ -21,28 +22,29 @@ struct Error
 ## Topics
 
 ### Type Properties
-- [static let allocationFailed: NSError](cmbufferqueue/error/allocationfailed.md)
-- [static let badTriggerDuration: NSError](cmbufferqueue/error/badtriggerduration.md)
-- [static let cannotModifyQueueFromTriggerCallback: NSError](cmbufferqueue/error/cannotmodifyqueuefromtriggercallback.md)
-- [static let enqueueAfterEndOfData: NSError](cmbufferqueue/error/enqueueafterendofdata.md)
-- [static let invalidBuffer: NSError](cmbufferqueue/error/invalidbuffer.md)
-- [static let invalidCMBufferCallbacksStruct: NSError](cmbufferqueue/error/invalidcmbuffercallbacksstruct.md)
-- [static let invalidTriggerCondition: NSError](cmbufferqueue/error/invalidtriggercondition.md)
-- [static let invalidTriggerToken: NSError](cmbufferqueue/error/invalidtriggertoken.md)
-- [static let queueIsFull: NSError](cmbufferqueue/error/queueisfull.md)
-- [static let requiredParameterMissing: NSError](cmbufferqueue/error/requiredparametermissing.md)
+- [static let allocationFailed: NSError](./error/allocationfailed.md)
+- [static let badTriggerDuration: NSError](./error/badtriggerduration.md)
+- [static let cannotModifyQueueFromTriggerCallback: NSError](./error/cannotmodifyqueuefromtriggercallback.md)
+- [static let enqueueAfterEndOfData: NSError](./error/enqueueafterendofdata.md)
+- [static let invalidBuffer: NSError](./error/invalidbuffer.md)
+- [static let invalidCMBufferCallbacksStruct: NSError](./error/invalidcmbuffercallbacksstruct.md)
+- [static let invalidTriggerCondition: NSError](./error/invalidtriggercondition.md)
+- [static let invalidTriggerToken: NSError](./error/invalidtriggertoken.md)
+- [static let queueIsFull: NSError](./error/queueisfull.md)
+- [static let requiredParameterMissing: NSError](./error/requiredparametermissing.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [CMBufferQueue.Buffers](cmbufferqueue/buffers-swift.struct.md)
+### Data Types
+- [CMBufferQueue.Buffers](./buffers-swift.struct.md)
   A sequence of `CMBuffer`s.
-- [CMBufferQueue.Handlers](cmbufferqueue/handlers.md)
+- [CMBufferQueue.Handlers](./handlers.md)
 
 
 ---

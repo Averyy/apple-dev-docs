@@ -1,7 +1,8 @@
 # InAppPurchaseAvailability.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseAvailability.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object InAppPurchaseAvailability.Relationships.AvailableTerritories](inapppurchaseavailability/relationships-data.dictionary/availableterritories-data.dictionary.md)
+- [object InAppPurchaseAvailability.Relationships.AvailableTerritories](./relationships-data.dictionary/availableterritories-data.dictionary.md)
 
 ## Properties
 
@@ -25,7 +26,8 @@ object InAppPurchaseAvailability.Relationships
 
 ## See Also
 
-- [object InAppPurchaseAvailability.Attributes](inapppurchaseavailability/attributes-data.dictionary.md)
+### Objects
+- [object InAppPurchaseAvailability.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an In-App Purchase availability resource.
 
 

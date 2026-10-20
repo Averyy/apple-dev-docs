@@ -1,7 +1,8 @@
 # kCGImagePropertyTIFFMake
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The name of the manufacturer of the camera or input device.
 
@@ -20,23 +21,28 @@ The name of the manufacturer of the camera or input device.
 let kCGImagePropertyTIFFMake: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyTIFFMake;
+```
+
 ## See Also
 
-- [let kCGImagePropertyTIFFDocumentName: CFString](kcgimagepropertytiffdocumentname.md)
+### Descriptive Information
+- [let kCGImagePropertyTIFFDocumentName: CFString](./kcgimagepropertytiffdocumentname.md)
   The document name.
-- [let kCGImagePropertyTIFFImageDescription: CFString](kcgimagepropertytiffimagedescription.md)
+- [let kCGImagePropertyTIFFImageDescription: CFString](./kcgimagepropertytiffimagedescription.md)
   The image description.
-- [let kCGImagePropertyTIFFArtist: CFString](kcgimagepropertytiffartist.md)
+- [let kCGImagePropertyTIFFArtist: CFString](./kcgimagepropertytiffartist.md)
   The artist who created the image.
-- [let kCGImagePropertyTIFFCopyright: CFString](kcgimagepropertytiffcopyright.md)
+- [let kCGImagePropertyTIFFCopyright: CFString](./kcgimagepropertytiffcopyright.md)
   Copyright information.
-- [let kCGImagePropertyTIFFDateTime: CFString](kcgimagepropertytiffdatetime.md)
+- [let kCGImagePropertyTIFFDateTime: CFString](./kcgimagepropertytiffdatetime.md)
   The date and time that the image was created.
-- [let kCGImagePropertyTIFFModel: CFString](kcgimagepropertytiffmodel.md)
+- [let kCGImagePropertyTIFFModel: CFString](./kcgimagepropertytiffmodel.md)
   The camera or input device model.
-- [let kCGImagePropertyTIFFSoftware: CFString](kcgimagepropertytiffsoftware.md)
+- [let kCGImagePropertyTIFFSoftware: CFString](./kcgimagepropertytiffsoftware.md)
   The name and version of the software used for image creation.
-- [let kCGImagePropertyTIFFHostComputer: CFString](kcgimagepropertytiffhostcomputer.md)
+- [let kCGImagePropertyTIFFHostComputer: CFString](./kcgimagepropertytiffhostcomputer.md)
   The computer or operating system used when the image was created.
 
 

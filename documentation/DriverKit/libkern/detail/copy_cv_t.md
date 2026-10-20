@@ -1,17 +1,18 @@
 # copy_cv_t
 
 **Framework**: DriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 typedef copy_cv<type-parameter-0-0, type-parameter-0-1>::type copy_cv_t;
 ```
 

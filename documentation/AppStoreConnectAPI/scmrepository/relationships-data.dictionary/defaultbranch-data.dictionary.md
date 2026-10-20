@@ -1,7 +1,8 @@
 # ScmRepository.Relationships.DefaultBranch
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the Repositories resource and the Git References resource that represents the default branch.
 
@@ -10,14 +11,14 @@ The data and links that describe the relationship between the Repositories resou
 
 ## Declaration
 
-```swift
+```
 object ScmRepository.Relationships.DefaultBranch
 ```
 
 ## Topics
 
 ### Objects
-- [object ScmRepository.Relationships.DefaultBranch.Data](scmrepository/relationships-data.dictionary/defaultbranch-data.dictionary/data-data.dictionary.md)
+- [object ScmRepository.Relationships.DefaultBranch.Data](./defaultbranch-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Git References resource that represents the repository’s default branch.
 
 ## Properties
@@ -26,7 +27,8 @@ object ScmRepository.Relationships.DefaultBranch
 
 ## See Also
 
-- [object ScmRepository.Relationships.ScmProvider](scmrepository/relationships-data.dictionary/scmprovider-data.dictionary.md)
+### Objects
+- [object ScmRepository.Relationships.ScmProvider](./scmprovider-data.dictionary.md)
   The data and links that describe the relationship between the Repositories and the Source Code Management Provider resources.
 
 

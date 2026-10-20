@@ -1,7 +1,8 @@
 # stat(relativeTo:flags:retryOnInterrupt:)
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a `Stat` struct for the file referenced by this `FilePath` using the given `Flags`, including a `FileDescriptor` to resolve a relative path.
 

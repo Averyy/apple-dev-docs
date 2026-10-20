@@ -1,35 +1,37 @@
 # setChannelState
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 IOReturn setChannelState(uint64_t channel_id, uint64_t new_state_id);
 ```
 
 ## See Also
 
-- [getStateInTransitions](iostatereporter/getstateintransitions.md)
-- [getStateLastChannelUpdateTime](iostatereporter/getstatelastchannelupdatetime.md)
-- [getStateLastTransitionTime](iostatereporter/getstatelasttransitiontime.md)
-- [getStateResidencyTime](iostatereporter/getstateresidencytime.md)
-- [incrementChannelState](iostatereporter/incrementchannelstate.md)
-- [initWith](iostatereporter/initwith.md)
-- [overrideChannelState](iostatereporter/overridechannelstate.md)
-- [setChannelState](iostatereporter/setchannelstate-7n3or.md)
-- [setState](iostatereporter/setstate-96bfi.md)
-- [setState](iostatereporter/setstate-1puxp.md)
-- [setStateByIndices](iostatereporter/setstatebyindices-6dmm5.md)
-- [setStateByIndices](iostatereporter/setstatebyindices-13fxh.md)
-- [setStateID](iostatereporter/setstateid.md)
+### Instance Methods
+- [getStateInTransitions](./getstateintransitions.md)
+- [getStateLastChannelUpdateTime](./getstatelastchannelupdatetime.md)
+- [getStateLastTransitionTime](./getstatelasttransitiontime.md)
+- [getStateResidencyTime](./getstateresidencytime.md)
+- [incrementChannelState](./incrementchannelstate.md)
+- [initWith](./initwith.md)
+- [overrideChannelState](./overridechannelstate.md)
+- [setChannelState](./setchannelstate-7n3or.md)
+- [setState](./setstate-96bfi.md)
+- [setState](./setstate-1puxp.md)
+- [setStateByIndices](./setstatebyindices-6dmm5.md)
+- [setStateByIndices](./setstatebyindices-13fxh.md)
+- [setStateID](./setstateid.md)
 
 
 ---

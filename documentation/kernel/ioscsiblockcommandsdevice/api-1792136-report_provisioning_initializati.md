@@ -1,14 +1,15 @@
 # REPORT_PROVISIONING_INITIALIZATION_PATTERN
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 bool REPORT_PROVISIONING_INITIALIZATION_PATTERN(SCSITaskIdentifier request, IOMemoryDescriptor *dataBuffer, SCSICmdField4Byte ALLOCATION_LENGTH, SCSICmdField1Byte CONTROL);
 ```
 

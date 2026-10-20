@@ -1,7 +1,8 @@
 # isKeyRepeating
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the person holds a key down to repeat its key event.
 
@@ -17,17 +18,22 @@ A Boolean value that indicates whether the person holds a key down to repeat its
 var isKeyRepeating: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isKeyRepeating) BOOL keyRepeating;
+```
+
 ## Mentions
 
-- [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
+- [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
 ## See Also
 
-- [var state: BEKeyEntry.KeyPressState](bekeyentry/state.md)
+### Getting information about the keypress
+- [var state: BEKeyEntry.KeyPressState](./state.md)
   A value that indicates if the key is pressed.
-- [BEKeyEntry.KeyPressState](bekeyentry/keypressstate.md)
+- [BEKeyEntry.KeyPressState](./keypressstate.md)
   Key-press states for a keyboard event.
-- [var timestamp: TimeInterval](bekeyentry/timestamp.md)
+- [var timestamp: TimeInterval](./timestamp.md)
   The time that the key event occurs.
 
 

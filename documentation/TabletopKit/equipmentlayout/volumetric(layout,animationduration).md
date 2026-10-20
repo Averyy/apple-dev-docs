@@ -1,7 +1,8 @@
 # volumetric(layout:animationDuration:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Use the volumetric layout to provide 3d poses for the immediate children directly.
 
@@ -14,6 +15,8 @@ Use the volumetric layout to provide 3d poses for the immediate children directl
 static func volumetric(layout: [EquipmentPose3D], animationDuration: Double? = nil) -> Self
 ```
 
+Available when `Self` is `DefaultEquipmentLayout`.
+
 ## Parameters
 
 - `layout`: An array of id and 3d pose for each child.
@@ -21,9 +24,10 @@ static func volumetric(layout: [EquipmentPose3D], animationDuration: Double? = n
 
 ## See Also
 
-- [static func planarOverlapping(layout: [EquipmentPose2D], animationDuration: Double?) -> Self](equipmentlayout/planaroverlapping(layout:animationduration:).md)
+### Laying out equipment
+- [static func planarOverlapping(layout: [EquipmentPose2D], animationDuration: Double?) -> Self](./planaroverlapping%28layout,animationduration%29.md)
   Use the overlapping layout to provide 2d poses for the immediate children and let TabletopKit determine their height and pitch/roll.
-- [static func planarStacked(layout: [EquipmentPose2D], animationDuration: Double?) -> Self](equipmentlayout/planarstacked(layout:animationduration:).md)
+- [static func planarStacked(layout: [EquipmentPose2D], animationDuration: Double?) -> Self](./planarstacked%28layout,animationduration%29.md)
   Use the stacked layout to provide 2d poses for the immediate children and let TabletopKit determine their height.
 
 

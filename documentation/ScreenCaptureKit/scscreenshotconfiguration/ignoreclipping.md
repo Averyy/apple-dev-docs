@@ -1,7 +1,8 @@
 # ignoreClipping
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that specifies whether to ignore framing on windows when using content filters.
 
@@ -15,9 +16,13 @@ A Boolean value that specifies whether to ignore framing on windows when using c
 var ignoreClipping: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL ignoreClipping;
+```
+
 #### Discussion
 
-Use [`SCContentFilter`](sccontentfilter.md) in conjunction with this property to ignore window framing on specified apps and windows. Setting this value to `true` ignores shadows.
+Use [`SCContentFilter`](../sccontentfilter.md) in conjunction with this property to ignore window framing on specified apps and windows. Setting this value to `true` ignores shadows.
 
 
 ---

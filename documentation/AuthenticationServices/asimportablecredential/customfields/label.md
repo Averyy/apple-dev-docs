@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Optional: A descriptive title for this section of custom fields.
 

@@ -1,7 +1,8 @@
 # SpotLightComponent.Shadow.ShadowClippingPlane
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An object that specifies the mode of a shadow clipping plane.
 
@@ -22,23 +23,24 @@ enum ShadowClippingPlane
 ## Topics
 
 ### Clipping plane options
-- [SpotLightComponent.Shadow.ShadowClippingPlane.automatic](spotlightcomponent/shadow/shadowclippingplane/automatic.md)
+- [SpotLightComponent.Shadow.ShadowClippingPlane.automatic](./shadowclippingplane/automatic.md)
   The spotlight component automatically sets the position of the shadow clipping plane.
-- [SpotLightComponent.Shadow.ShadowClippingPlane.fixed(_:)](spotlightcomponent/shadow/shadowclippingplane/fixed(_:).md)
+- [SpotLightComponent.Shadow.ShadowClippingPlane.fixed(_:)](./shadowclippingplane/fixed%28_%29.md)
   The shadow clipping plane’s position doesn’t change.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../../Swift/equatable.md)
 
 ## See Also
 
-- [struct SpotLightComponent](spotlightcomponent.md)
+### Spotlights and their shadows
+- [struct SpotLightComponent](../../spotlightcomponent.md)
   A component that defines a spotlight source.
-- [SpotLightComponent.Shadow](spotlightcomponent/shadow.md)
+- [SpotLightComponent.Shadow](../shadow.md)
   A spotlight component that adds shadows to entities that it illuminates.
-- [SpotLightComponent.Shadow.ShadowMapCullMode](spotlightcomponent/shadow/shadowmapcullmode.md)
+- [SpotLightComponent.Shadow.ShadowMapCullMode](./shadowmapcullmode.md)
 
 
 ---

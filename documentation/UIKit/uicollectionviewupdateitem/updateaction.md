@@ -1,7 +1,8 @@
 # updateAction
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The action being performed on the item.
 
@@ -9,7 +10,7 @@ The action being performed on the item.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ The action being performed on the item.
 var updateAction: UICollectionViewUpdateItem.Action { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UICollectionUpdateAction updateAction;
+```
+
 #### Discussion
 
-For a list of relevant action types, see [`UICollectionViewUpdateItem.Action`](uicollectionviewupdateitem/action.md).
+For a list of relevant action types, see [`UICollectionViewUpdateItem.Action`](./action.md).
 
 ## See Also
 
-- [var indexPathBeforeUpdate: IndexPath?](uicollectionviewupdateitem/indexpathbeforeupdate.md)
+### Accessing the item changes
+- [var indexPathBeforeUpdate: IndexPath?](./indexpathbeforeupdate.md)
   The index path of the item before the update.
-- [var indexPathAfterUpdate: IndexPath?](uicollectionviewupdateitem/indexpathafterupdate.md)
+- [var indexPathAfterUpdate: IndexPath?](./indexpathafterupdate.md)
   The index path of the item after the update.
-- [UICollectionViewUpdateItem.Action](uicollectionviewupdateitem/action.md)
+- [UICollectionViewUpdateItem.Action](./action.md)
   Constants indicating the type of action being performed on an item.
 
 

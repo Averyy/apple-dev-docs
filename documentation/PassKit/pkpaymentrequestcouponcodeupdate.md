@@ -1,7 +1,8 @@
 # PKPaymentRequestCouponCodeUpdate
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that updates the payment request after the coupon code changes.
 
@@ -18,9 +19,13 @@ An object that updates the payment request after the coupon code changes.
 class PKPaymentRequestCouponCodeUpdate
 ```
 
+```objc
+@interface PKPaymentRequestCouponCodeUpdate : PKPaymentRequestUpdate
+```
+
 #### Overview
 
-This is the handler for [`paymentAuthorizationController(_:didChangeCouponCode:handler:)`](pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontroller(_:didchangecouponcode:handler:).md) and [`paymentAuthorizationViewController(_:didChangeCouponCode:handler:)`](pkpaymentauthorizationviewcontrollerdelegate/paymentauthorizationviewcontroller(_:didchangecouponcode:handler:).md).
+This is the handler for [`paymentAuthorizationController(_:didChangeCouponCode:handler:)`](./pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontroller%28_,didchangecouponcode,handler%29.md) and [`paymentAuthorizationViewController(_:didChangeCouponCode:handler:)`](./pkpaymentauthorizationviewcontrollerdelegate/paymentauthorizationviewcontroller%28_,didchangecouponcode,handler%29.md).
 
 Use this object to update the summary items to reflect the change in the coupon code.
 
@@ -29,35 +34,36 @@ Use this object to update the summary items to reflect the change in the coupon 
 ## Topics
 
 ### Creating a payment coupon update object
-- [init(errors: [any Error]?, paymentSummaryItems: [PKPaymentSummaryItem], shippingMethods: [PKShippingMethod])](pkpaymentrequestcouponcodeupdate/init(errors:paymentsummaryitems:shippingmethods:).md)
+- [init(errors: [any Error]?, paymentSummaryItems: [PKPaymentSummaryItem], shippingMethods: [PKShippingMethod])](./pkpaymentrequestcouponcodeupdate/init%28errors,paymentsummaryitems,shippingmethods%29.md)
   Creates a payment coupon update with your specified payment summary items, errors, and shipping methods.
 ### Reading errors
-- [var errors: [any Error]!](pkpaymentrequestcouponcodeupdate/errors.md)
+- [var errors: [any Error]!](./pkpaymentrequestcouponcodeupdate/errors.md)
   An array of errors for the coupon code that the user must resolve.
 
 ## Relationships
 
 ### Inherits From
-- [PKPaymentRequestUpdate](pkpaymentrequestupdate.md)
+- [PKPaymentRequestUpdate](./pkpaymentrequestupdate.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PKPaymentRequestMerchantSessionUpdate](pkpaymentrequestmerchantsessionupdate.md)
+### Payment sheet updates
+- [class PKPaymentRequestMerchantSessionUpdate](./pkpaymentrequestmerchantsessionupdate.md)
   An object that updates a payment request with a merchant validation.
-- [class PKPaymentRequestPaymentMethodUpdate](pkpaymentrequestpaymentmethodupdate.md)
+- [class PKPaymentRequestPaymentMethodUpdate](./pkpaymentrequestpaymentmethodupdate.md)
   An object that updates the payment request after the payment method changes.
-- [class PKPaymentRequestShippingContactUpdate](pkpaymentrequestshippingcontactupdate.md)
+- [class PKPaymentRequestShippingContactUpdate](./pkpaymentrequestshippingcontactupdate.md)
   An object that updates the payment request after the shipping contact information changes.
-- [class PKPaymentRequestShippingMethodUpdate](pkpaymentrequestshippingmethodupdate.md)
+- [class PKPaymentRequestShippingMethodUpdate](./pkpaymentrequestshippingmethodupdate.md)
   An object that updates the payment request after the shipping method changed.
-- [class PKPaymentRequestUpdate](pkpaymentrequestupdate.md)
+- [class PKPaymentRequestUpdate](./pkpaymentrequestupdate.md)
   The base class for updating the payment request after the user makes changes on the payment sheet.
 
 

@@ -1,7 +1,8 @@
 # completionDate
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date on which the reminder was completed.
 
@@ -19,25 +20,30 @@ The date on which the reminder was completed.
 var completionDate: Date? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSDate * completionDate;
+```
+
 ## Mentions
 
-- [Creating events and reminders](creating-events-and-reminders.md)
+- [Creating events and reminders](../creating-events-and-reminders.md)
 
 #### Discussion
 
-Setting this property to a date will set [`isCompleted`](ekreminder/iscompleted.md) to [`true`](https://developer.apple.com/documentation/swift/true); setting this property to `nil` will set `completed` to [`false`](https://developer.apple.com/documentation/swift/false).
+Setting this property to a date will set [`isCompleted`](./iscompleted.md) to [`true`](../../Swift/true.md); setting this property to `nil` will set `completed` to [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [enum EKReminderPriority](ekreminderpriority.md)
+### Accessing Reminder Properties
+- [enum EKReminderPriority](../ekreminderpriority.md)
   The priority of the reminder.
-- [var priority: Int](ekreminder/priority.md)
+- [var priority: Int](./priority.md)
   The reminder’s priority.
-- [var startDateComponents: DateComponents?](ekreminder/startdatecomponents.md)
+- [var startDateComponents: DateComponents?](./startdatecomponents.md)
   The start date of the task.
-- [var dueDateComponents: DateComponents?](ekreminder/duedatecomponents.md)
+- [var dueDateComponents: DateComponents?](./duedatecomponents.md)
   The date by which the reminder should be completed.
-- [var isCompleted: Bool](ekreminder/iscompleted.md)
+- [var isCompleted: Bool](./iscompleted.md)
   A Boolean value determining whether or not the reminder is marked completed.
 
 

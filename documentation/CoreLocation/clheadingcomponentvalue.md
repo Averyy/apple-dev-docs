@@ -1,7 +1,8 @@
 # CLHeadingComponentValue
 
 **Framework**: Core Location  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type used to report magnetic differences reported by the onboard hardware.
 
@@ -20,13 +21,18 @@ A type used to report magnetic differences reported by the onboard hardware.
 typealias CLHeadingComponentValue = Double
 ```
 
+```c
+typedef double CLHeadingComponentValue;
+```
+
 ## See Also
 
-- [var x: CLHeadingComponentValue](clheading/x.md)
+### Getting the raw heading data
+- [var x: CLHeadingComponentValue](./clheading/x.md)
   The geomagnetic data (measured in microteslas) for the x-axis.
-- [var y: CLHeadingComponentValue](clheading/y.md)
+- [var y: CLHeadingComponentValue](./clheading/y.md)
   The geomagnetic data (measured in microteslas) for the y-axis.
-- [var z: CLHeadingComponentValue](clheading/z.md)
+- [var z: CLHeadingComponentValue](./clheading/z.md)
   The geomagnetic data (measured in microteslas) for the z-axis.
 
 

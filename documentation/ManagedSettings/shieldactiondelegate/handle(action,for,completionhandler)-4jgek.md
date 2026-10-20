@@ -1,7 +1,8 @@
 # handle(action:for:completionHandler:)
 
 **Framework**: Managed Settings  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows the extension to respond to a user action when the system displays a shield over an application.
 
@@ -24,9 +25,10 @@ func handle(action: ShieldAction, for application: ApplicationToken, completionH
 
 ## See Also
 
-- [func handle(action: ShieldAction, for: ActivityCategoryToken, completionHandler: (ShieldActionResponse) -> Void)](shieldactiondelegate/handle(action:for:completionhandler:)-9hcqc.md)
+### Responding to someone’s action
+- [func handle(action: ShieldAction, for: ActivityCategoryToken, completionHandler: (ShieldActionResponse) -> Void)](./handle%28action,for,completionhandler%29-9hcqc.md)
   Allows the extension to respond to a user action when the system displays a shield over an application or website because of its category.
-- [func handle(action: ShieldAction, for: WebDomainToken, completionHandler: (ShieldActionResponse) -> Void)](shieldactiondelegate/handle(action:for:completionhandler:)-4tqna.md)
+- [func handle(action: ShieldAction, for: WebDomainToken, completionHandler: (ShieldActionResponse) -> Void)](./handle%28action,for,completionhandler%29-4tqna.md)
   Allows the extension to respond to a user action when the system displays a shield over a website.
 
 

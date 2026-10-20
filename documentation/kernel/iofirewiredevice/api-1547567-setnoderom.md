@@ -1,14 +1,15 @@
 # setNodeROM
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual void setNodeROM(UInt32 generation, UInt16 localNodeID, const IOFWNodeScan *info);
 ```
 

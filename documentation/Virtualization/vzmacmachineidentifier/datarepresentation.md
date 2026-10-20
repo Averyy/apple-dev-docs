@@ -1,7 +1,8 @@
 # dataRepresentation
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the opaque data representation of the machine identifier.
 
@@ -14,9 +15,13 @@ Returns the opaque data representation of the machine identifier.
 var dataRepresentation: Data { get }
 ```
 
+```objc
+@property (copy, readonly) NSData * dataRepresentation;
+```
+
 #### Discussion
 
-You can use this to recreate the same machine identifier with [`init(dataRepresentation:)`](vzmacmachineidentifier/init(datarepresentation:).md).
+You can use this to recreate the same machine identifier with [`init(dataRepresentation:)`](./init%28datarepresentation%29.md).
 
 
 ---

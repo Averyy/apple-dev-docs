@@ -1,7 +1,8 @@
 # NFCReaderUsageDescription
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A message that tells people why the app is requesting access to the device’s NFC hardware.
 
@@ -9,9 +10,10 @@ A message that tells people why the app is requesting access to the device’s N
 - iOS 11.0+
 - iPadOS 11.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NFCReaderUsageDescription` (Privacy - NFC Scan Usage Description)
+- **Type**: string
 
 #### Discussion
 

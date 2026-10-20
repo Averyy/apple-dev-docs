@@ -1,7 +1,8 @@
 # GameCenterAchievementVersionV2Response
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response that contains a single Game Center achievement version v2 resource.
 
@@ -10,7 +11,7 @@ A response that contains a single Game Center achievement version v2 resource.
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementVersionV2Response
 ```
 
@@ -23,20 +24,21 @@ object GameCenterAchievementVersionV2Response
 ## Properties
 
 - `data` (GameCenterAchievementVersionV2) *(required)*
-- `included` ([*])
+- `included` ([*]): **Allowed Types**: `GameCenterAchievementLocalizationV2`, `GameCenterAchievementV2`
 - `links` (DocumentLinks) *(required)*
 
 ## See Also
 
-- [object GameCenterAchievementVersionV2](gamecenterachievementversionv2.md)
+### Objects
+- [object GameCenterAchievementVersionV2](./gamecenterachievementversionv2.md)
   The data structure that represents a Game Center achievement version v2 resource.
-- [object GameCenterAchievementVersionV2CreateRequest](gamecenterachievementversionv2createrequest.md)
+- [object GameCenterAchievementVersionV2CreateRequest](./gamecenterachievementversionv2createrequest.md)
   The request body you use to create a Game Center achievement version v2.
-- [object GameCenterAchievementVersionsV2Response](gamecenterachievementversionsv2response.md)
+- [object GameCenterAchievementVersionsV2Response](./gamecenterachievementversionsv2response.md)
   A response that contains a single Game Center achievement version v2 resource.
-- [object GameCenterAchievementVersionV2InlineCreate](gamecenterachievementversionv2inlinecreate.md)
+- [object GameCenterAchievementVersionV2InlineCreate](./gamecenterachievementversionv2inlinecreate.md)
   The data structure that represents a Game Center achievement version v2 inline create resource.
-- [object GameCenterAchievementVersionV2LocalizationsLinkagesResponse](gamecenterachievementversionv2localizationslinkagesresponse.md)
+- [object GameCenterAchievementVersionV2LocalizationsLinkagesResponse](./gamecenterachievementversionv2localizationslinkagesresponse.md)
   A response that contains a list of Game Center achievement version v2 localization linkage resources.
 
 

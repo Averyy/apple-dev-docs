@@ -1,7 +1,8 @@
 # HoverEffectComponent.GroupID
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A struct for grouping hover effects together.
 
@@ -25,15 +26,15 @@ Use this struct to group hover effects together and activate them at the same ti
 ## Topics
 
 ### Initializers
-- [init()](hovereffectcomponent/groupid/init.md)
+- [init()](./groupid/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

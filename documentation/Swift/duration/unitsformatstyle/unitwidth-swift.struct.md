@@ -1,7 +1,8 @@
 # Duration.UnitsFormatStyle.UnitWidth
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The width of a unit to use in formatting a duration.
 
@@ -22,33 +23,34 @@ struct UnitWidth
 
 #### Overview
 
-Use the provided unit widths with the `width` parameter of the [`Duration.UnitsFormatStyle`](duration/unitsformatstyle.md) initializers to customize the display of units in a formatted string.
+Use the provided unit widths with the `width` parameter of the [`Duration.UnitsFormatStyle`](../unitsformatstyle.md) initializers to customize the display of units in a formatted string.
 
 ## Topics
 
 ### Duration unit widths
-- [static var abbreviated: Duration.UnitsFormatStyle.UnitWidth](duration/unitsformatstyle/unitwidth-swift.struct/abbreviated.md)
+- [static var abbreviated: Duration.UnitsFormatStyle.UnitWidth](./unitwidth-swift.struct/abbreviated.md)
   An abbreviated unit name.
-- [static var condensedAbbreviated: Duration.UnitsFormatStyle.UnitWidth](duration/unitsformatstyle/unitwidth-swift.struct/condensedabbreviated.md)
+- [static var condensedAbbreviated: Duration.UnitsFormatStyle.UnitWidth](./unitwidth-swift.struct/condensedabbreviated.md)
   An abbreviated unit name, with condensed space between the value and name.
-- [static var narrow: Duration.UnitsFormatStyle.UnitWidth](duration/unitsformatstyle/unitwidth-swift.struct/narrow.md)
+- [static var narrow: Duration.UnitsFormatStyle.UnitWidth](./unitwidth-swift.struct/narrow.md)
   The shortest possible unit name.
-- [static var wide: Duration.UnitsFormatStyle.UnitWidth](duration/unitsformatstyle/unitwidth-swift.struct/wide.md)
+- [static var wide: Duration.UnitsFormatStyle.UnitWidth](./unitwidth-swift.struct/wide.md)
   The full unit name.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](decodable.md)
-- [Encodable](encodable.md)
-- [Equatable](equatable.md)
-- [Hashable](hashable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Decodable](../../decodable.md)
+- [Encodable](../../encodable.md)
+- [Equatable](../../equatable.md)
+- [Hashable](../../hashable.md)
+- [Sendable](../../sendable.md)
+- [SendableMetatype](../../sendablemetatype.md)
 
 ## See Also
 
-- [var unitWidth: Duration.UnitsFormatStyle.UnitWidth](duration/unitsformatstyle/unitwidth-swift.property.md)
+### Working with unit widths
+- [var unitWidth: Duration.UnitsFormatStyle.UnitWidth](./unitwidth-swift.property.md)
   The width of the unit and the spacing between the value and the unit.
 
 

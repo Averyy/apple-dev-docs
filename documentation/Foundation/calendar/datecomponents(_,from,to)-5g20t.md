@@ -1,7 +1,8 @@
 # dateComponents(_:from:to:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the difference between two dates specified as `DateComponents`.
 
@@ -36,17 +37,18 @@ For components which are not specified in each `DateComponents`, but required to
 
 ## See Also
 
-- [func date(Date, matchesComponents: DateComponents) -> Bool](calendar/date(_:matchescomponents:).md)
+### Extracting Components
+- [func date(Date, matchesComponents: DateComponents) -> Bool](./date%28_,matchescomponents%29.md)
   Determines if the date has all of the specified date components.
-- [func component(Calendar.Component, from: Date) -> Int](calendar/component(_:from:).md)
+- [func component(Calendar.Component, from: Date) -> Int](./component%28_,from%29.md)
   Returns the value for one component of a date.
-- [func dateComponents(Set<Calendar.Component>, from: Date) -> DateComponents](calendar/datecomponents(_:from:).md)
+- [func dateComponents(Set<Calendar.Component>, from: Date) -> DateComponents](./datecomponents%28_,from%29.md)
   Returns all the date components of a date, using the calendar time zone.
-- [func dateComponents(Set<Calendar.Component>, from: Date, to: Date) -> DateComponents](calendar/datecomponents(_:from:to:)-2kcg.md)
+- [func dateComponents(Set<Calendar.Component>, from: Date, to: Date) -> DateComponents](./datecomponents%28_,from,to%29-2kcg.md)
   Returns the difference between two dates.
-- [func dateComponents(in: TimeZone, from: Date) -> DateComponents](calendar/datecomponents(in:from:).md)
+- [func dateComponents(in: TimeZone, from: Date) -> DateComponents](./datecomponents%28in,from%29.md)
   Returns all the date components of a date, as if in a given time zone (instead of the `Calendar` time zone).
-- [Calendar.Component](calendar/component.md)
+- [Calendar.Component](./component.md)
   An enumeration for the various components of a calendar date.
 
 

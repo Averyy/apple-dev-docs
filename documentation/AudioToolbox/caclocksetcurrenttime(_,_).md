@@ -1,7 +1,8 @@
 # CAClockSetCurrentTime(_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
@@ -12,13 +13,18 @@
 func CAClockSetCurrentTime(_ inCAClock: CAClockRef, _ inTime: UnsafePointer<CAClockTime>) -> OSStatus
 ```
 
+```c
+extern OSStatus CAClockSetCurrentTime(CAClockRef inCAClock, const CAClockTime *inTime);
+```
+
 ## See Also
 
-- [func CAClockGetCurrentTime(CAClockRef, CAClockTimeFormat, UnsafeMutablePointer<CAClockTime>) -> OSStatus](caclockgetcurrenttime(_:_:_:).md)
-- [func CAClockGetStartTime(CAClockRef, CAClockTimeFormat, UnsafeMutablePointer<CAClockTime>) -> OSStatus](caclockgetstarttime(_:_:_:).md)
-- [struct CAClockTime](caclocktime.md)
-- [enum CAClockTimeFormat](caclocktimeformat.md)
-- [typealias CAClockSamples](caclocksamples.md)
+### Accessing the Current Time
+- [func CAClockGetCurrentTime(CAClockRef, CAClockTimeFormat, UnsafeMutablePointer<CAClockTime>) -> OSStatus](./caclockgetcurrenttime%28_,_,_%29.md)
+- [func CAClockGetStartTime(CAClockRef, CAClockTimeFormat, UnsafeMutablePointer<CAClockTime>) -> OSStatus](./caclockgetstarttime%28_,_,_%29.md)
+- [struct CAClockTime](./caclocktime.md)
+- [enum CAClockTimeFormat](./caclocktimeformat.md)
+- [typealias CAClockSamples](./caclocksamples.md)
 
 
 ---

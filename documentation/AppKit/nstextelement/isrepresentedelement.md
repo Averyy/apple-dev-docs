@@ -1,7 +1,8 @@
 # isRepresentedElement
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this element is in the text layout.
 
@@ -14,11 +15,16 @@ A Boolean value that indicates whether this element is in the text layout.
 var isRepresentedElement: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL isRepresentedElement;
+```
+
 ## See Also
 
-- [var parent: NSTextElement?](nstextelement/parent.md)
+### Accessing text elements
+- [var parent: NSTextElement?](./parent.md)
   A value that represents the parent element if this text element is a child of an enclosing element.
-- [var childElements: [NSTextElement]](nstextelement/childelements.md)
+- [var childElements: [NSTextElement]](./childelements.md)
   An array of zero or more child text elements.
 
 

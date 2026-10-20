@@ -2,6 +2,7 @@
 
 **Framework**: Paravirtualized Graphics  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The queue that the framework uses when dispatching messages to any of the display’s registered handlers.
@@ -16,13 +17,18 @@ The queue that the framework uses when dispatching messages to any of the displa
 var queue: dispatch_queue_t? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) dispatch_queue_t queue;
+```
+
 ## See Also
 
-- [var cursorShowHandler: PGDisplayCursorShowHandler?](pgdisplay/cursorshowhandler.md)
+### Inspecting the Display Handlers
+- [var cursorShowHandler: PGDisplayCursorShowHandler?](./cursorshowhandler.md)
   A handler that the framework calls to change the cursor’s visibility.
-- [var modeChangeHandler: PGDisplayModeChangeHandler?](pgdisplay/modechangehandler.md)
+- [var modeChangeHandler: PGDisplayModeChangeHandler?](./modechangehandler.md)
   A handler that the framework calls to change the virtual display’s graphics mode.
-- [var newFrameEventHandler: PGDisplayNewFrameEventHandler?](pgdisplay/newframeeventhandler.md)
+- [var newFrameEventHandler: PGDisplayNewFrameEventHandler?](./newframeeventhandler.md)
   A handler that the framework calls when the guest environment has a new frame to display.
 
 

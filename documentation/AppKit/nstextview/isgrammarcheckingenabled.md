@@ -1,7 +1,8 @@
 # isGrammarCheckingEnabled
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Enables and disables grammar checking.
 
@@ -14,21 +15,26 @@ Enables and disables grammar checking.
 var isGrammarCheckingEnabled: Bool { get set }
 ```
 
+```objc
+@property (getter=isGrammarCheckingEnabled) BOOL grammarCheckingEnabled;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), grammar checking is enabled; if [`false`](https://developer.apple.com/documentation/swift/false), it is disabled.
+If [`true`](../../Swift/true.md), grammar checking is enabled; if [`false`](../../Swift/false.md), it is disabled.
 
 ## See Also
 
-- [var isContinuousSpellCheckingEnabled: Bool](nstextview/iscontinuousspellcheckingenabled.md)
+### Working with the spelling checker
+- [var isContinuousSpellCheckingEnabled: Bool](./iscontinuousspellcheckingenabled.md)
   A Boolean value that indicates whether the receiver has continuous spell checking enabled.
-- [var spellCheckerDocumentTag: Int](nstextview/spellcheckerdocumenttag.md)
+- [var spellCheckerDocumentTag: Int](./spellcheckerdocumenttag.md)
   A tag identifying the text view’s text as a document for the spell checker server.
-- [func toggleContinuousSpellChecking(Any?)](nstextview/togglecontinuousspellchecking(_:).md)
+- [func toggleContinuousSpellChecking(Any?)](./togglecontinuousspellchecking%28_%29.md)
   Toggles whether continuous spell checking is enabled for the receiver.
-- [func toggleGrammarChecking(Any?)](nstextview/togglegrammarchecking(_:).md)
+- [func toggleGrammarChecking(Any?)](./togglegrammarchecking%28_%29.md)
   Changes the state of grammar checking from enabled to disabled and vice versa.
-- [func setSpellingState(Int, range: NSRange)](nstextview/setspellingstate(_:range:).md)
+- [func setSpellingState(Int, range: NSRange)](./setspellingstate%28_,range%29.md)
   Sets the spelling state, which controls the display of the spelling and grammar indicators on the given text range.
 
 

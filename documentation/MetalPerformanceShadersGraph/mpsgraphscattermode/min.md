@@ -1,7 +1,8 @@
 # MPSGraphScatterMode.min
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Minimum
 
@@ -17,6 +18,10 @@ Minimum
 
 ```swift
 case min
+```
+
+```c
+MPSGraphScatterModeMin
 ```
 
 

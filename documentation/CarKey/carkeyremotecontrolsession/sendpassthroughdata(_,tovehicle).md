@@ -1,7 +1,8 @@
 # sendPassthroughData(_:toVehicle:)
 
 **Framework**: CarKey  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends the specified custom data to the vehicle.
 
@@ -22,12 +23,12 @@ func sendPassthroughData(_ passthroughData: Data, toVehicle vehicleID: String) t
 
 Use this method to send data that is custom to your specific vehicle. This method passes the data unmodified directly to the vehicle, and it is up to you to format the data exactly how the vehicle needs it.
 
-If the vehicle sends a custom response, the system delivers it to the [`remoteControlSession(_:didReceivePassthroughData:fromVehicle:)`](carkeyremotecontrolsessiondelegate/remotecontrolsession(_:didreceivepassthroughdata:fromvehicle:).md) method of your session’s delegate object.
+If the vehicle sends a custom response, the system delivers it to the [`remoteControlSession(_:didReceivePassthroughData:fromVehicle:)`](../carkeyremotecontrolsessiondelegate/remotecontrolsession%28_,didreceivepassthroughdata,fromvehicle%29.md) method of your session’s delegate object.
 
 ## Parameters
 
 - `passthroughData`: The custom data to send to the vehicle. Make sure the size of your data object doesn’t exceed 65 kilobytes.
-- `vehicleID`: The target vehicle for the request. Choose the vehicle from one of the session’s vehicle reports. Specify the string in the [`identifier`](vehiclereport/identifier.md) property of the corresponding report.
+- `vehicleID`: The target vehicle for the request. Choose the vehicle from one of the session’s vehicle reports. Specify the string in the [`identifier`](../vehiclereport/identifier.md) property of the corresponding report.
 
 
 ---

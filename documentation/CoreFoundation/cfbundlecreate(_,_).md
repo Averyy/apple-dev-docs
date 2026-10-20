@@ -1,18 +1,19 @@
 # CFBundleCreate(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a CFBundle object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Creates a CFBundle object.
 func CFBundleCreate(_ allocator: CFAllocator!, _ bundleURL: CFURL!) -> CFBundle!
 ```
 
+```c
+extern CFBundleRefCFBundleCreate(CFAllocatorRef allocator, CFURLRef bundleURL);
+```
+
 #### Return Value
 
-A CFBundle object created from the bundle at `bundleURL`. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A CFBundle object created from the bundle at `bundleURL`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 #### Discussion
 
@@ -34,18 +39,19 @@ Once a bundle has been created, it is cached; the bundle cache is flushed only p
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](./kcfallocatordefault.md) to use the current default allocator.
 - `bundleURL`: The location of the bundle for which to create a CFBundle object.
 
 ## See Also
 
-- [func CFBundleCreateBundlesFromDirectory(CFAllocator!, CFURL!, CFString!) -> CFArray!](cfbundlecreatebundlesfromdirectory(_:_:_:).md)
+### Creating and Accessing Bundles
+- [func CFBundleCreateBundlesFromDirectory(CFAllocator!, CFURL!, CFString!) -> CFArray!](./cfbundlecreatebundlesfromdirectory%28_,_,_%29.md)
   Searches a directory and constructs an array of CFBundle objects from all valid bundles in the specified directory.
-- [func CFBundleGetAllBundles() -> CFArray!](cfbundlegetallbundles().md)
+- [func CFBundleGetAllBundles() -> CFArray!](./cfbundlegetallbundles%28%29.md)
   Returns an array containing all of the bundles currently open in the application.
-- [func CFBundleGetBundleWithIdentifier(CFString!) -> CFBundle!](cfbundlegetbundlewithidentifier(_:).md)
+- [func CFBundleGetBundleWithIdentifier(CFString!) -> CFBundle!](./cfbundlegetbundlewithidentifier%28_%29.md)
   Locate a bundle given its program-defined identifier.
-- [func CFBundleGetMainBundle() -> CFBundle!](cfbundlegetmainbundle().md)
+- [func CFBundleGetMainBundle() -> CFBundle!](./cfbundlegetmainbundle%28%29.md)
   Returns an application’s main bundle.
 
 

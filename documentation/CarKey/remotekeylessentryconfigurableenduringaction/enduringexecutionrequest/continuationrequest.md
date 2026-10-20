@@ -1,7 +1,8 @@
 # RemoteKeylessEntryConfigurableEnduringAction.EnduringExecutionRequest.ContinuationRequest
 
 **Framework**: CarKey  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Continuation Request
 
@@ -21,10 +22,10 @@ struct ContinuationRequest
 ## Topics
 
 ### Instance Properties
-- [let data: Data?](remotekeylessentryconfigurableenduringaction/enduringexecutionrequest/continuationrequest/data.md)
+- [let data: Data?](./continuationrequest/data.md)
   Optional data sent from the vehicle along with this continuation request. Max 64 bytes
 ### Instance Methods
-- [func confirm(Data?) throws](remotekeylessentryconfigurableenduringaction/enduringexecutionrequest/continuationrequest/confirm(_:).md)
+- [func confirm(Data?) throws](./continuationrequest/confirm%28_%29.md)
   Method for your app to acknowledge receipt of this continuation request and commit to continue execution of this enduring action with optional arbitrary data to send to the vehicle. There is a maximum length of 64 bytes for the data to be sent.
 
 

@@ -28,7 +28,7 @@ Four interface modules ship with the SDK:
 
 Use the LP64 modules with code that relies on Fortran’s default 4-byte integer. Use the ILP64 modules when you need 8-byte integers — for example, problems whose leading dimensions or array indices don’t fit in a 32-bit signed integer. The LP64 modules bind to the `$NEWLAPACK` symbol suffix; the ILP64 modules bind to the `$NEWLAPACK$ILP64` suffix.
 
-#### Adopt a Wrapper Module in Your Source
+#### Adopt a wrapper module in your source
 
 Add a `use` statement for the module that matches the API and integer width you need, then call the routine directly. The example below calls `dgemm` from the ILP64 BLAS wrapper:
 
@@ -45,7 +45,7 @@ call dgemm('N', 'N', m, n, k, alpha, a, lda, b, ldb, beta, c, ldc)
 
 LAPACK routines that take a callback, such as the `SELECT` argument to `SGEES`, `DGEES`, `CGEES`, or `ZGEES`, expect a `type(c_funptr)` value. Use `c_funloc` from `iso_c_binding` to obtain a function pointer from a Fortran procedure.
 
-#### Compile and Link Against Accelerate
+#### Compile and link against Accelerate
 
 > **Note**:  The `gfortran` compiler doesn’t ship with Xcode. Install a Fortran 90 (or later) compiler before you build.
 
@@ -73,9 +73,9 @@ The `xcrun -sdk macosx --show-sdk-path` invocation expands to the active macOS S
 ## Topics
 
 ### Related libraries
-- [BLAS](blas-library.md)
+- [BLAS](./blas-library.md)
   Perform common linear algebra operations with Apple’s implementation of the Basic Linear Algebra Subprograms (BLAS).
-- [LAPACK/BLAS Functions](lapack-functions.md)
+- [LAPACK/BLAS Functions](./lapack-functions.md)
   An updated BLAS interface supporting ILP64 is available.
 
 

@@ -1,7 +1,8 @@
 # ForceEffectComponent.SimulationState.resume
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The simulation will resume, if paused.
 

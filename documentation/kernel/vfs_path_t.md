@@ -1,14 +1,15 @@
 # vfs_path_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 typedef char vfs_path_t[4096];
 ```
 

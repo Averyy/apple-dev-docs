@@ -1,7 +1,8 @@
 # kCGImagePropertyTIFFPhotometricInterpretation
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The color space of the image data.
 
@@ -20,11 +21,16 @@ The color space of the image data.
 let kCGImagePropertyTIFFPhotometricInterpretation: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyTIFFPhotometricInterpretation;
+```
+
 ## See Also
 
-- [let kCGImagePropertyTIFFCompression: CFString](kcgimagepropertytiffcompression.md)
+### Image Quality
+- [let kCGImagePropertyTIFFCompression: CFString](./kcgimagepropertytiffcompression.md)
   The compression scheme used on the image data.
-- [let kCGImagePropertyTIFFTransferFunction: CFString](kcgimagepropertytifftransferfunction.md)
+- [let kCGImagePropertyTIFFTransferFunction: CFString](./kcgimagepropertytifftransferfunction.md)
   The transfer function, in tabular format, used to map pixel components from a nonlinear form into a linear form.
 
 

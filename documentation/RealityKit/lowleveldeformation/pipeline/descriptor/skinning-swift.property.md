@@ -1,7 +1,8 @@
 # skinning
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Skinning parameters, or `nil` to omit skinning.
 
@@ -19,7 +20,8 @@ var skinning: LowLevelDeformation.Pipeline.Descriptor.Skinning?
 
 ## See Also
 
-- [LowLevelDeformation.Pipeline.Descriptor.Skinning](lowleveldeformation/pipeline/descriptor/skinning-swift.struct.md)
+### Configuring skinning
+- [LowLevelDeformation.Pipeline.Descriptor.Skinning](./skinning-swift.struct.md)
   The skinning stage configuration for a deformation pipeline.
 
 

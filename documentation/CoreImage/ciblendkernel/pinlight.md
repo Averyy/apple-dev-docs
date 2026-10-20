@@ -1,17 +1,18 @@
 # pinLight
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A blend kernel that conditionally replaces background image samples with source image samples depending on the brightness of the source image samples.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,41 +20,46 @@ A blend kernel that conditionally replaces background image samples with source 
 class var pinLight: CIBlendKernel { get }
 ```
 
+```objc
+@property (class, strong, readonly) CIBlendKernel * pinLight;
+```
+
 #### Discussion
 
-![The result of using the pin light blend kernel (background image is top left, foreground image is bottom left)](/images/com.apple.coreimage/media-2926877@2x.png)
+![The result of using the pin light blend kernel (background image is top left, foreground image is bottom left)](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2926877@2x.png)
 
 ## See Also
 
-- [class var clear: CIBlendKernel](ciblendkernel/clear.md)
+### Builtin Blend Kernels
+- [class var clear: CIBlendKernel](./clear.md)
   A blend kernel that returns a clear color.
-- [class var color: CIBlendKernel](ciblendkernel/color.md)
+- [class var color: CIBlendKernel](./color.md)
   A blend kernel that uses the luminance values of the background with the hue and saturation values of the foreground image.
-- [class var colorBurn: CIBlendKernel](ciblendkernel/colorburn.md)
+- [class var colorBurn: CIBlendKernel](./colorburn.md)
   A blend kernel that darkens the background image samples to reflect the foreground image samples.
-- [class var colorDodge: CIBlendKernel](ciblendkernel/colordodge.md)
+- [class var colorDodge: CIBlendKernel](./colordodge.md)
   A blend kernel that brightens the background image samples to reflect the foreground image samples.
-- [class var componentAdd: CIBlendKernel](ciblendkernel/componentadd.md)
+- [class var componentAdd: CIBlendKernel](./componentadd.md)
   A blend kernel that adds color components to achieve a brightening effect.
-- [class var componentMax: CIBlendKernel](ciblendkernel/componentmax.md)
+- [class var componentMax: CIBlendKernel](./componentmax.md)
   A blend kernel that creates an image using the maximum values of two input images.
-- [class var componentMin: CIBlendKernel](ciblendkernel/componentmin.md)
+- [class var componentMin: CIBlendKernel](./componentmin.md)
   A blend kernel that creates an image using the minimum values of two input images.
-- [class var componentMultiply: CIBlendKernel](ciblendkernel/componentmultiply.md)
+- [class var componentMultiply: CIBlendKernel](./componentmultiply.md)
   A blend kernel that multiplies the color components of its input images.
-- [class var darken: CIBlendKernel](ciblendkernel/darken.md)
+- [class var darken: CIBlendKernel](./darken.md)
   A blend kernel that creates an image using the darker values of two input images.
-- [class var darkerColor: CIBlendKernel](ciblendkernel/darkercolor.md)
+- [class var darkerColor: CIBlendKernel](./darkercolor.md)
   A blend kernel that creates an image using the darker color of two input images.
-- [class var destination: CIBlendKernel](ciblendkernel/destination.md)
+- [class var destination: CIBlendKernel](./destination.md)
   A blend kernel that returns the background input image.
-- [class var destinationAtop: CIBlendKernel](ciblendkernel/destinationatop.md)
+- [class var destinationAtop: CIBlendKernel](./destinationatop.md)
   A blend kernel that places the background over the foreground and crops based on the visibility of the foreground.
-- [class var destinationIn: CIBlendKernel](ciblendkernel/destinationin.md)
+- [class var destinationIn: CIBlendKernel](./destinationin.md)
   A blend kernel that places the background over the foreground and crops based on the visibility of both.
-- [class var destinationOut: CIBlendKernel](ciblendkernel/destinationout.md)
+- [class var destinationOut: CIBlendKernel](./destinationout.md)
   A blend kernel that uses the background image to define what to take out of the foreground image.
-- [class var destinationOver: CIBlendKernel](ciblendkernel/destinationover.md)
+- [class var destinationOver: CIBlendKernel](./destinationover.md)
   A blend kernel that places the background image over the input foreground image.
 
 

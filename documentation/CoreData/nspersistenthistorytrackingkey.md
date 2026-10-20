@@ -1,7 +1,8 @@
 # NSPersistentHistoryTrackingKey
 
 **Framework**: Core Data  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key you use to enable persistent history tracking.
 
@@ -20,9 +21,13 @@ The key you use to enable persistent history tracking.
 let NSPersistentHistoryTrackingKey: String
 ```
 
+```c
+extern NSString * const NSPersistentHistoryTrackingKey;
+```
+
 ## Mentions
 
-- [Consuming relevant store changes](consuming-relevant-store-changes.md)
+- [Consuming relevant store changes](./consuming-relevant-store-changes.md)
 
 #### Discussion
 
@@ -30,7 +35,8 @@ Persistent history tracking is off by default.
 
 ## See Also
 
-- [func currentPersistentHistoryToken(fromStores: [Any]?) -> NSPersistentHistoryToken?](nspersistentstorecoordinator/currentpersistenthistorytoken(fromstores:).md)
+### Maintaining a record of changes
+- [func currentPersistentHistoryToken(fromStores: [Any]?) -> NSPersistentHistoryToken?](./nspersistentstorecoordinator/currentpersistenthistorytoken%28fromstores%29.md)
   Returns a single persistent history token representing all of the specified stores.
 
 

@@ -1,7 +1,8 @@
 # init(virtualMachine:)
 
 **Framework**: JavaScriptCore  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new JavaScript context associated with a specific virtual machine.
 
@@ -19,13 +20,17 @@ Creates a new JavaScript context associated with a specific virtual machine.
 init!(virtualMachine: JSVirtualMachine!)
 ```
 
+```objc
+- (instancetype) initWithVirtualMachine:(JSVirtualMachine *) virtualMachine;
+```
+
 #### Return Value
 
 A new JavaScript context.
 
 #### Discussion
 
-By default, each context has an independent virtual machine (a [`JSVirtualMachine`](jsvirtualmachine.md) object). You cannot pass JavaScript values between contexts in different virtual machines. Use this initializer to create a context that shares its virtual machine with other JavaScript contexts to allow passing [`JSValue`](jsvalue.md) objects between those contexts.
+By default, each context has an independent virtual machine (a [`JSVirtualMachine`](../jsvirtualmachine.md) object). You cannot pass JavaScript values between contexts in different virtual machines. Use this initializer to create a context that shares its virtual machine with other JavaScript contexts to allow passing [`JSValue`](../jsvalue.md) objects between those contexts.
 
 ## Parameters
 
@@ -33,7 +38,8 @@ By default, each context has an independent virtual machine (a [`JSVirtualMachin
 
 ## See Also
 
-- [init!()](jscontext/init.md)
+### Creating JavaScript contexts
+- [init!()](./init%28%29.md)
   Initializes a new JavaScript context.
 
 

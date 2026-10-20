@@ -1,7 +1,8 @@
 # stateOfMind(_:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 18.0+
@@ -16,6 +17,8 @@
 ```swift
 static func stateOfMind(_ predicate: NSPredicate? = nil) -> HKSamplePredicate<HKStateOfMind>
 ```
+
+Available when `Sample` inherits `HKSample`.
 
 
 ---

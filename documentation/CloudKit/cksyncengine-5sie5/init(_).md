@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sync engine with the specified configuration.
 
@@ -11,7 +12,7 @@ Creates a sync engine with the specified configuration.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,11 +23,12 @@ init(_ configuration: CKSyncEngine.Configuration)
 
 ## Parameters
 
-- `configuration`: The attributes of the new sync engine, such as the associated database and the object to use as the engine’s delegate. For more information, see [`CKSyncEngine.Configuration`](cksyncengine-5sie5/configuration.md).
+- `configuration`: The attributes of the new sync engine, such as the associated database and the object to use as the engine’s delegate. For more information, see [`CKSyncEngine.Configuration`](./configuration.md).
 
 ## See Also
 
-- [CKSyncEngine.Configuration](cksyncengine-5sie5/configuration.md)
+### Creating a sync engine
+- [CKSyncEngine.Configuration](./configuration.md)
   A type that configures the attributes and behavior of a sync engine.
 
 

@@ -1,7 +1,8 @@
 # kMTAudioProcessingTapFlag_EndOfStream
 
 **Framework**: Media Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Signifies that the source audio is past the end of stream.
 
@@ -19,13 +20,18 @@ Signifies that the source audio is past the end of stream.
 var kMTAudioProcessingTapFlag_EndOfStream: MTAudioProcessingTapFlags { get }
 ```
 
+```c
+kMTAudioProcessingTapFlag_EndOfStream
+```
+
 #### Discussion
 
 This happens when the audio queue is being stopped asynchronously and has finished playing all of its data. Returned from GetSourceAudio and should be propagated on return from the process callback.
 
 ## See Also
 
-- [var kMTAudioProcessingTapFlag_StartOfStream: MTAudioProcessingTapFlags](kmtaudioprocessingtapflag_startofstream.md)
+### Flags
+- [var kMTAudioProcessingTapFlag_StartOfStream: MTAudioProcessingTapFlags](./kmtaudioprocessingtapflag_startofstream.md)
   Signifies that the source audio is the beginning of a continuous stream.
 
 

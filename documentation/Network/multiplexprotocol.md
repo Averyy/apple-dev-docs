@@ -1,7 +1,8 @@
 # MultiplexProtocol
 
 **Framework**: Network  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Types that conform to MultiplexProtocol are allowed to be the top protocol in a network protocol stack for multiplexing network connection objects.
 
@@ -27,9 +28,9 @@ Generally network protocols conforming to this type will not directly expose sen
 ## Relationships
 
 ### Inherits From
-- [NetworkProtocolOptions](networkprotocoloptions.md)
+- [NetworkProtocolOptions](./networkprotocoloptions.md)
 ### Conforming Types
-- [QUIC](quic.md)
+- [QUIC](./quic.md)
 
 
 ---

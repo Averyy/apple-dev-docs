@@ -1,7 +1,8 @@
 # AssetPackManager.DownloadStatusUpdate
 
 **Framework**: Background Assets  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Statuses of an asset-pack download.
 
@@ -21,35 +22,36 @@ enum DownloadStatusUpdate
 
 #### Overview
 
-An asset pack is available locally only after a [`AssetPackManager.DownloadStatusUpdate.finished(_:)`](assetpackmanager/downloadstatusupdate/finished(_:).md) status update is posted.
+An asset pack is available locally only after a [`AssetPackManager.DownloadStatusUpdate.finished(_:)`](./downloadstatusupdate/finished%28_%29.md) status update is posted.
 
 ## Topics
 
 ### Tracking downloads
-- [AssetPackManager.DownloadStatusUpdate.began(_:)](assetpackmanager/downloadstatusupdate/began(_:).md)
+- [AssetPackManager.DownloadStatusUpdate.began(_:)](./downloadstatusupdate/began%28_%29.md)
   A status update that indicates that the download began or resumed after being paused.
-- [AssetPackManager.DownloadStatusUpdate.downloading(_:_:)](assetpackmanager/downloadstatusupdate/downloading(_:_:).md)
+- [AssetPackManager.DownloadStatusUpdate.downloading(_:_:)](./downloadstatusupdate/downloading%28_,_%29.md)
   A status update that indicates that the download is in progress.
-- [AssetPackManager.DownloadStatusUpdate.paused(_:)](assetpackmanager/downloadstatusupdate/paused(_:).md)
+- [AssetPackManager.DownloadStatusUpdate.paused(_:)](./downloadstatusupdate/paused%28_%29.md)
   A status update that indicates that the download paused.
-- [AssetPackManager.DownloadStatusUpdate.finished(_:)](assetpackmanager/downloadstatusupdate/finished(_:).md)
+- [AssetPackManager.DownloadStatusUpdate.finished(_:)](./downloadstatusupdate/finished%28_%29.md)
   A status update that indicates that the download completed and that the asset pack is available locally.
-- [AssetPackManager.DownloadStatusUpdate.failed(_:_:)](assetpackmanager/downloadstatusupdate/failed(_:_:).md)
+- [AssetPackManager.DownloadStatusUpdate.failed(_:_:)](./downloadstatusupdate/failed%28_,_%29.md)
   A status update that indicates that the download failed.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let statusUpdates: some Sendable & AsyncSequence<AssetPackManager.DownloadStatusUpdate, Never>](assetpackmanager/statusupdates.md)
+### Tracking downloads
+- [let statusUpdates: some Sendable & AsyncSequence<AssetPackManager.DownloadStatusUpdate, Never>](./statusupdates.md)
   An asynchronous sequence of download-status updates for all asset packs.
 - [func statusUpdates(forAssetPackWithID: String) -> some Sendable & AsyncSequence<AssetPackManager.DownloadStatusUpdate, Never>
-](assetpackmanager/statusupdates(forassetpackwithid:).md)
+](./statusupdates%28forassetpackwithid%29.md)
   Returns an asynchronous sequence of download-status updates for the asset pack with the specified ID.
 
 

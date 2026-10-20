@@ -1,7 +1,8 @@
 # height
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height of the region, in meters. This is [-height/2, height/2] from the center.
 

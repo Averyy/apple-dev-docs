@@ -1,7 +1,8 @@
 # loadMatchData(completionHandler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches your game-specific data that you store in Game Center when ending a turn, saving a turn, or leaving a match.
 
@@ -17,35 +18,48 @@ Fetches your game-specific data that you store in Game Center when ending a turn
 ## Declaration
 
 ```swift
+func loadMatchData(completionHandler: (@Sendable (Data?, (any Error)?) -> Void)? = nil)
+```
+
+```swift
 func loadMatchData() async throws -> Data?
+```
+
+```objc
+- (void) loadMatchDataWithCompletionHandler:(void (^)(NSData *matchData, NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-The [`matchData`](gkturnbasedmatch/matchdata.md) property is `nil` until you fetch the data from Game Center using this method.
+The [`matchData`](./matchdata.md) property is `nil` until you fetch the data from Game Center using this method.
 
 ## Parameters
 
-- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameters: - ***matchData***: The match data you pass to `GKTurnBasedMatch` methods that GameKit stores in Game Center, or `nil` if an error occurs.
-- ***error***: Describes an error if it occurs, or `nil` if the operation completes.
+- `completionHandler`: The block that GameKit calls when it completes the request.
+
+  The block receives the following parameters:
+
+  - ***matchData***: The match data you pass to `GKTurnBasedMatch` methods that GameKit stores in Game Center, or `nil` if an error occurs.
+  - ***error***: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 
-- [var matchID: String](gkturnbasedmatch/matchid.md)
+### Retrieving Match Details
+- [var matchID: String](./matchid.md)
   A unique identifier for the turn-based match.
-- [var creationDate: Date](gkturnbasedmatch/creationdate.md)
+- [var creationDate: Date](./creationdate.md)
   The date that Game Center created the match.
-- [var participants: [GKTurnBasedParticipant]](gkturnbasedmatch/participants.md)
+- [var participants: [GKTurnBasedParticipant]](./participants.md)
   The players that participate in a turn-based match.
-- [var currentParticipant: GKTurnBasedParticipant?](gkturnbasedmatch/currentparticipant.md)
+- [var currentParticipant: GKTurnBasedParticipant?](./currentparticipant.md)
   The participant whose turn it is.
-- [var status: GKTurnBasedMatch.Status](gkturnbasedmatch/status-swift.property.md)
+- [var status: GKTurnBasedMatch.Status](./status-swift.property.md)
   The state of the match, such as whether the match is open or has ended.
-- [GKTurnBasedMatch.Status](gkturnbasedmatch/status-swift.enum.md)
+- [GKTurnBasedMatch.Status](./status-swift.enum.md)
   The states of a match from when it’s created to when it ends.
-- [var matchData: Data?](gkturnbasedmatch/matchdata.md)
+- [var matchData: Data?](./matchdata.md)
   The game-specific data that you store in Game Center and pass between participants through a match object.
-- [var matchDataMaximumSize: Int](gkturnbasedmatch/matchdatamaximumsize.md)
+- [var matchDataMaximumSize: Int](./matchdatamaximumsize.md)
   The maximum size of the match data.
 
 

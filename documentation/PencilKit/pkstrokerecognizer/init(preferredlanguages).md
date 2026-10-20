@@ -1,7 +1,8 @@
 # init(preferredLanguages:)
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a recognizer with the specified preferred languages.
 

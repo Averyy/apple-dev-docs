@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels an asynchronous load of a request.
 
@@ -20,13 +21,18 @@ Cancels an asynchronous load of a request.
 func cancel()
 ```
 
+```objc
+- (void) cancel;
+```
+
 #### Discussion
 
 After this method is called, the connection makes no further delegate method calls. If you want to reattempt the connection, you should create a new connection object.
 
 ## See Also
 
-- [init?(request: URLRequest, delegate: Any?)](nsurlconnection/init(request:delegate:).md)
+### Related Documentation
+- [init?(request: URLRequest, delegate: Any?)](./init%28request,delegate%29.md)
   Returns an initialized URL connection and begins to load the data for the URL request.
 
 

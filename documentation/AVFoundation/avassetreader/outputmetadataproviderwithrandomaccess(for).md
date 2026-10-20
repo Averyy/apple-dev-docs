@@ -1,7 +1,8 @@
 # outputMetadataProviderWithRandomAccess(for:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attaches the output to the reader and returns a tuple with an output provider for timed metadata groups buffers, and an associated random access controller.
 
@@ -29,15 +30,16 @@ A tuple with an output provider for reading timed metadata groups, and an associ
 
 ## See Also
 
-- [func outputProvider(for: AVAssetReaderOutput) -> sending AVAssetReaderOutput.Provider<CMReadySampleBuffer<CMSampleBuffer.DynamicContent>>](avassetreader/outputprovider(for:).md)
+### Accessing output providers
+- [func outputProvider(for: AVAssetReaderOutput) -> sending AVAssetReaderOutput.Provider<CMReadySampleBuffer<CMSampleBuffer.DynamicContent>>](./outputprovider%28for%29.md)
   Attaches the output to the reader and returns an output provider for reading sample buffers.
-- [func outputProviderWithRandomAccess(for: AVAssetReaderOutput) -> sending (AVAssetReaderOutput.Provider<CMReadySampleBuffer<CMSampleBuffer.DynamicContent>>, AVAssetReaderOutput.RandomAccessController)](avassetreader/outputproviderwithrandomaccess(for:).md)
+- [func outputProviderWithRandomAccess(for: AVAssetReaderOutput) -> sending (AVAssetReaderOutput.Provider<CMReadySampleBuffer<CMSampleBuffer.DynamicContent>>, AVAssetReaderOutput.RandomAccessController)](./outputproviderwithrandomaccess%28for%29.md)
   Attaches the output to the reader and returns a tuple with an output provider for reading sample buffers, and an associated random access controller.
-- [func outputCaptionProvider(for: AVAssetReaderTrackOutput, validationDelegate: (any AVAssetReaderCaptionValidationHandling)?) -> sending AVAssetReaderOutput.Provider<AVCaptionGroup>](avassetreader/outputcaptionprovider(for:validationdelegate:).md)
+- [func outputCaptionProvider(for: AVAssetReaderTrackOutput, validationDelegate: (any AVAssetReaderCaptionValidationHandling)?) -> sending AVAssetReaderOutput.Provider<AVCaptionGroup>](./outputcaptionprovider%28for,validationdelegate%29.md)
   Attaches the output to the reader and returns an output provider for reading caption groups.
-- [func outputCaptionProviderWithRandomAccess(for: AVAssetReaderTrackOutput, validationDelegate: (any AVAssetReaderCaptionValidationHandling)?) -> sending (AVAssetReaderOutput.Provider<AVCaptionGroup>, AVAssetReaderOutput.RandomAccessController)](avassetreader/outputcaptionproviderwithrandomaccess(for:validationdelegate:).md)
+- [func outputCaptionProviderWithRandomAccess(for: AVAssetReaderTrackOutput, validationDelegate: (any AVAssetReaderCaptionValidationHandling)?) -> sending (AVAssetReaderOutput.Provider<AVCaptionGroup>, AVAssetReaderOutput.RandomAccessController)](./outputcaptionproviderwithrandomaccess%28for,validationdelegate%29.md)
   Attaches the output to the reader and returns a tuple with an output provider for reading caption groups, and an associated random access controller.
-- [func outputMetadataProvider(for: AVAssetReaderTrackOutput) -> sending AVAssetReaderOutput.Provider<AVTimedMetadataGroup>](avassetreader/outputmetadataprovider(for:).md)
+- [func outputMetadataProvider(for: AVAssetReaderTrackOutput) -> sending AVAssetReaderOutput.Provider<AVTimedMetadataGroup>](./outputmetadataprovider%28for%29.md)
   Attaches the output to the reader and returns an output provider for reading timed metadata groups.
 
 

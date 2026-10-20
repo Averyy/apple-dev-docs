@@ -1,7 +1,8 @@
 # CiWorkflow.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes that describe a Workflows resource.
 
@@ -10,22 +11,22 @@ The attributes that describe a Workflows resource.
 
 ## Declaration
 
-```swift
+```
 object CiWorkflow.Attributes
 ```
 
 ## Topics
 
 ### Objects
-- [object CiBranchStartCondition](cibranchstartcondition.md)
+- [object CiBranchStartCondition](../cibranchstartcondition.md)
   Settings for a start condition that starts a build if a branch changes.
-- [object CiTagStartCondition](citagstartcondition.md)
+- [object CiTagStartCondition](../citagstartcondition.md)
   Settings for a start condition that starts a build if a Git tag changes.
-- [object CiPullRequestStartCondition](cipullrequeststartcondition.md)
+- [object CiPullRequestStartCondition](../cipullrequeststartcondition.md)
   Settings for a start condition that starts a build if a pull request changes.
-- [object CiScheduledStartCondition](cischeduledstartcondition.md)
+- [object CiScheduledStartCondition](../cischeduledstartcondition.md)
   Settings for a start condition that starts a build based on a schedule.
-- [object CiFilesAndFoldersRule](cifilesandfoldersrule.md)
+- [object CiFilesAndFoldersRule](../cifilesandfoldersrule.md)
   Settings Xcode Cloud uses to determine whether a change should start a new build or not.
 
 ## Properties
@@ -48,7 +49,8 @@ object CiWorkflow.Attributes
 
 ## See Also
 
-- [object CiWorkflow.Relationships](ciworkflow/relationships-data.dictionary.md)
+### Objects
+- [object CiWorkflow.Relationships](./relationships-data.dictionary.md)
   The relationships of the Workflows resource you included in the request and those on which you can operate.
 
 

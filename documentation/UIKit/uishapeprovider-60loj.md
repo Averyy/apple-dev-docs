@@ -1,7 +1,8 @@
 # UIShapeProvider
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface for a type that provides a custom shape by resolving it dynamically based on a context.
 
@@ -20,28 +21,29 @@ protocol UIShapeProvider : Equatable
 ## Topics
 
 ### Resolving a custom shape
-- [func resolve(in: Self.Context) -> Self.Resolved](uishapeprovider-60loj/resolve(in:).md)
+- [func resolve(in: Self.Context) -> Self.Resolved](./uishapeprovider-60loj/resolve%28in%29.md)
   Resolves the shape in the provided context.
 ### Supporting types
-- [UIShapeProvider.Context](uishapeprovider-60loj/context.md)
+- [UIShapeProvider.Context](./uishapeprovider-60loj/context.md)
   The context for resolving a dynamic shape.
-- [UIShapeProvider.Resolved](uishapeprovider-60loj/resolved.md)
+- [UIShapeProvider.Resolved](./uishapeprovider-60loj/resolved.md)
   A shape that has completely resolved based on a context.
 
 ## Relationships
 
 ### Inherits From
-- [Equatable](../swift/equatable.md)
+- [Equatable](../Swift/equatable.md)
 ### Conforming Types
-- [UIShape](uishape-swift.struct.md)
+- [UIShape](./uishape-swift.struct.md)
 
 ## See Also
 
-- [init(some UIShapeProvider)](uishape-swift.struct/init(_:).md)
+### Creating a dynamic hover shape
+- [init(some UIShapeProvider)](./uishape-swift.struct/init%28_%29.md)
   Creates a dynamic shape that resolves using the provided resolver closure and resolution context.
-- [UIShape.ResolutionContext](uishape-swift.struct/resolutioncontext.md)
+- [UIShape.ResolutionContext](./uishape-swift.struct/resolutioncontext.md)
   The context for resolving a dynamic shape.
-- [UIShape.Resolved](uishape-swift.struct/resolved.md)
+- [UIShape.Resolved](./uishape-swift.struct/resolved.md)
   A shape that has completely resolved based on a context.
 
 

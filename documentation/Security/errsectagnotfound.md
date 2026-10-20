@@ -1,7 +1,8 @@
 # errSecTagNotFound
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The specified tag is not found.
 
@@ -18,6 +19,10 @@ The specified tag is not found.
 
 ```swift
 var errSecTagNotFound: OSStatus { get }
+```
+
+```c
+errSecTagNotFound
 ```
 
 

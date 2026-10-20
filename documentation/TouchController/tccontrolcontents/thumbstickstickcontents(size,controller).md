@@ -1,7 +1,8 @@
 # thumbstickStickContents(size:controller:)
 
 **Framework**: Touch Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The thumbstick stick contents for the specified size.
 
@@ -16,6 +17,10 @@ The thumbstick stick contents for the specified size.
 class func thumbstickStickContents(size: CGSize, controller: TCTouchController) -> TCControlContents
 ```
 
+```objc
++ (TCControlContents *) thumbstickStickContentsOfSize:(CGSize) size controller:(TCTouchController *) controller;
+```
+
 #### Return Value
 
 The `TCControlContents` for the thumbstick stick.
@@ -27,7 +32,8 @@ The `TCControlContents` for the thumbstick stick.
 
 ## See Also
 
-- [class func thumbstickStickBackgroundContents(size: CGSize, controller: TCTouchController) -> TCControlContents](tccontrolcontents/thumbstickstickbackgroundcontents(size:controller:).md)
+### Accessing thumbstick contents
+- [class func thumbstickStickBackgroundContents(size: CGSize, controller: TCTouchController) -> TCControlContents](./thumbstickstickbackgroundcontents%28size,controller%29.md)
   The thumbstick background contents for the specified size.
 
 

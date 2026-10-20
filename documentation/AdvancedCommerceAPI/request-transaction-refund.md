@@ -1,7 +1,8 @@
 # Request Transaction Refund
 
 **Framework**: Advanced Commerce API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Request a refund for a one-time charge or subscription transaction.
 
@@ -10,15 +11,15 @@ Request a refund for a one-time charge or subscription transaction.
 
 ## Mentions
 
-- [Authorizing API requests from your server](authorizing-server-calls.md)
-- [Advanced Commerce API changelog](changelog.md)
-- [Identifying rate limits for Advanced Commerce APIs](ratelimits.md)
+- [Authorizing API requests from your server](./authorizing-server-calls.md)
+- [Advanced Commerce API changelog](./changelog.md)
+- [Identifying rate limits for Advanced Commerce APIs](./ratelimits.md)
 
 #### Discussion
 
-> **Note**: To use the `Request Transaction Refund` endpoint, your membership Account Holder must sign the Advanced Commerce API Addendum, and you must meet certain eligibility requirements. For more information, see [`Advanced Commerce API`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/advanced-commerce-api/). If the most recent version of this agreement isn’t yet accepted, you can’t call this endpoint, and it returns an error.
+> **Note**: To use the `Request Transaction Refund` endpoint, your membership Account Holder must sign the Advanced Commerce API Addendum, and you must meet certain eligibility requirements. For more information, see [Advanced Commerce API](https://developer.apple.com/in-app-purchase/advanced-commerce-api/). If the most recent version of this agreement isn’t yet accepted, you can’t call this endpoint, and it returns an error.
 
-Refer to the Advanced Commerce API Addendum to learn the use cases for the [`Cancel a Subscription`](cancel-a-subscription.md), [`Revoke Subscription`](revoke-subscription.md), and `Request Transaction Refund` APIs.
+Refer to the Advanced Commerce API Addendum to learn the use cases for the [`Cancel a Subscription`](./cancel-a-subscription.md), [`Revoke Subscription`](./revoke-subscription.md), and `Request Transaction Refund` APIs.
 
 ## Endpoint
 
@@ -26,19 +27,35 @@ Refer to the Advanced Commerce API Addendum to learn the use cases for the [`Can
 
 ## Parameters
 
+### Path Parameters
+
 - `transactionId` (string) *(required)*: The transaction identifier for which you request a refund.
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `RequestRefundRequest`
+
 The request body.
+
+## Responses
+
+- `200` OK (`RequestRefundResponse`, `application/json`): Request succeeded.
+- `400` Bad Request (`(RepeatedRequestReferenceIdError | NullRequestInfoError | InvalidAppAccountTokenError | NullRequestReferenceIDError | InvalidRequestReferenceIDError | InvalidConsistencyTokenError | InvalidStorefrontError | MismatchedStorefrontError | OperationNotAllowedError | MalformedPayloadError | SimulateRefundDeclineOnlyInSandboxError | RefundAmountWithoutCustomError | NullRefundRiskingError | InvalidRefundTypeError | InvalidRefundReasonError | NegativeRefundAmountError | NullRefundAmountError | NullRefundReasonError | NullRefundTypeError | RemovalAllNotAllowedError | PendingRefundError | ProratedOnlyLatestTransactionError | PartialSimulateRefundDeclineError)`, `application/json`)
+- `401` Unauthorized: The JSON Web Token (JWT) in the authorization header is invalid. For more information, see [Authorizing API requests from your server](./authorizing-server-calls.md).
+- `403` Forbidden (`(SubscriptionDoesNotExistError | SubscriptionNotEligibleError | ProductNotOwnedError | InsufficientFundsError | AlreadyRefundedError | TransactionNotRefundableError)`, `application/json`)
+- `404` Not Found (`TransactionIdNotFoundError`, `application/json`)
+- `429` (`RateLimitExceededError`, `application/json`): The request exceeded the rate limit. For more information, see [Identifying rate limits for Advanced Commerce APIs](./ratelimits.md).
+- `500` Internal Server Error (`(GeneralInternalError | GeneralInternalRetryableError)`, `application/json`): Server error. Try again later.
 
 ## See Also
 
-- [object RequestRefundRequest](requestrefundrequest.md)
+### Refund request from the server
+- [object RequestRefundRequest](./requestrefundrequest.md)
   The request body for requesting a refund for a transaction.
-- [object RequestRefundResponse](requestrefundresponse.md)
+- [object RequestRefundResponse](./requestrefundresponse.md)
   The response body for a transaction refund request.
-- [object RequestRefundItem](requestrefunditem.md)
+- [object RequestRefundItem](./requestrefunditem.md)
   Information about the refund request for an item, such as its SKU, the refund amount, reason, and type.
 
 

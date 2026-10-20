@@ -1,15 +1,20 @@
 # deviceInquiryDeviceFound(_:device:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional func deviceInquiryDeviceFound(_ sender: IOBluetoothDeviceInquiry!, device: IOBluetoothDevice!)
+```
+
+```objc
+- (void) deviceInquiryDeviceFound:(IOBluetoothDeviceInquiry *) sender device:(IOBluetoothDevice *) device;
 ```
 
 #### Discussion

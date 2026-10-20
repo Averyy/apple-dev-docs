@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ndrv_demux_desc {
     ...
 };
@@ -17,9 +17,9 @@ struct ndrv_demux_desc {
 ## Topics
 
 ### Instance Properties
-- [data](ndrv_demux_desc/3753803-data.md)
-- [length](ndrv_demux_desc/3753804-length.md)
-- [type](ndrv_demux_desc/3753805-type.md)
+- [data](./ndrv_demux_desc/api-3753803-data.md)
+- [length](./ndrv_demux_desc/api-3753804-length.md)
+- [type](./ndrv_demux_desc/api-3753805-type.md)
 
 
 ---

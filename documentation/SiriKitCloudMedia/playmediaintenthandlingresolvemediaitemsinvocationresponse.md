@@ -1,7 +1,8 @@
 # PlayMediaIntentHandlingResolveMediaItemsInvocationResponse
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Your service’s response to a request to resolve media items in a play media intent.
 
@@ -10,14 +11,14 @@ Your service’s response to a request to resolve media items in a play media in
 
 ## Declaration
 
-```swift
+```
 object PlayMediaIntentHandlingResolveMediaItemsInvocationResponse
 ```
 
 ## Topics
 
 ### Specifying the Result
-- [object PlayMediaIntentHandlingResolveMediaItemsInvocationResponse.Result](playmediaintenthandlingresolvemediaitemsinvocationresponse/result-data.dictionary.md)
+- [object PlayMediaIntentHandlingResolveMediaItemsInvocationResponse.Result](./playmediaintenthandlingresolvemediaitemsinvocationresponse/result-data.dictionary.md)
   The results of resolving the media items in an intent to play media.
 
 ## Properties
@@ -25,16 +26,19 @@ object PlayMediaIntentHandlingResolveMediaItemsInvocationResponse
 - `result` (PlayMediaIntentHandlingResolveMediaItemsInvocationResponse.Result) *(required)*: The results of processing the intent.
 - `method` (string) *(required)*: The action your service takes to process this intent.
 
+  **Allowed Values**: `PlayMediaIntentHandling.resolveMediaItems`
+
 ## Relationships
 
 ### Inherits From
-- [InvocationResponse](invocationresponse.md)
+- [InvocationResponse](./invocationresponse.md)
 
 ## See Also
 
-- [object PlayMediaMediaItemResolutionResult](playmediamediaitemresolutionresult.md)
+### Resolving a Media Item
+- [object PlayMediaMediaItemResolutionResult](./playmediamediaitemresolutionresult.md)
   A media item that matches a play media intent, or information about why your service can’t provide a media item.
-- [type PlayMediaMediaItemUnsupportedReason](playmediamediaitemunsupportedreason.md)
+- [type PlayMediaMediaItemUnsupportedReason](./playmediamediaitemunsupportedreason.md)
   Reasons the media service can’t play the media item.
 
 

@@ -1,7 +1,8 @@
 # automaticallyUpdateForSelection
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the style automatically updates when the button is in a selected state.
 
@@ -10,7 +11,7 @@ A Boolean value that determines whether the style automatically updates when the
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,7 @@ var automaticallyUpdateForSelection: Bool { get set }
 
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true) for the [`plain()`](uibutton/configuration-swift.struct/plain().md), [`gray()`](uibutton/configuration-swift.struct/gray().md), and [`tinted()`](uibutton/configuration-swift.struct/tinted().md) configurations. Set this value to [`false`](https://developer.apple.com/documentation/swift/false) to customize the selection behavior.
+The default value is [`true`](../../../Swift/true.md) for the [`plain()`](./plain%28%29.md), [`gray()`](./gray%28%29.md), and [`tinted()`](./tinted%28%29.md) configurations. Set this value to [`false`](../../../Swift/false.md) to customize the selection behavior.
 
 
 ---

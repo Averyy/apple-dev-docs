@@ -1,14 +1,15 @@
 # GetReport_Impl
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+ - Deprecated in 10.15.1
 
 ## Declaration
 
-```swift
+```c
 kern_return_t GetReport_Impl(IOMemoryDescriptor *report, IOHIDReportType reportType, uint32_t reportID, IOOptionBits options);
 ```
 

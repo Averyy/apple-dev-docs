@@ -1,13 +1,14 @@
 # reserved
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An unused field reserved for future use.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,18 @@ An unused field reserved for future use.
 var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)
 ```
 
+```c
+uint8_t reserved[64];
+```
+
 ## See Also
 
-- [var address: user_addr_t](es_event_mprotect_t/address.md)
+### Inspecting Event Properties
+- [var address: user_addr_t](./address.md)
   The starting memory address to protect.
-- [var size: user_size_t](es_event_mprotect_t/size.md)
+- [var size: user_size_t](./size.md)
   The length of the address range to protect.
-- [var protection: Int32](es_event_mprotect_t/protection.md)
+- [var protection: Int32](./protection.md)
   The protection to apply to the memory-mapped range.
 
 

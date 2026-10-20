@@ -1,7 +1,8 @@
 # level
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The guidance for the model to use during a session.
 
@@ -20,11 +21,12 @@ let level: SpotlightSearchTool.GuidanceLevel
 
 #### Discussion
 
-Use this property to specify custom guidance for how to search your app’s content. The default value of this property is [`SpotlightSearchTool.GuidanceLevel.complete`](spotlightsearchtool/guidancelevel/complete.md), which uses all available search techniques and search all content types.
+Use this property to specify custom guidance for how to search your app’s content. The default value of this property is [`SpotlightSearchTool.GuidanceLevel.complete`](../guidancelevel/complete.md), which uses all available search techniques and search all content types.
 
 ## See Also
 
-- [let format: SpotlightSearchTool.FormatLevel](spotlightsearchtool/guide/format.md)
+### Getting the guidance
+- [let format: SpotlightSearchTool.FormatLevel](./format.md)
   The representation format for tool responses returned to the model.
 
 

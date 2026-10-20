@@ -1,7 +1,8 @@
 # readAttributePowerAdjustmentCapability(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributePowerAdjustmentCapability(completion: @escaping @Sendable (MTRDeviceEnergyManagementClusterPowerAdjustCapabilityStruct?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributePowerAdjustmentCapability() async throws -> MTRDeviceEnergyManagementClusterPowerAdjustCapabilityStruct
+```
+
+```objc
+- (void) readAttributePowerAdjustmentCapabilityWithCompletion:(void (^)(MTRDeviceEnergyManagementClusterPowerAdjustCapabilityStruct *value, NSError *error)) completion;
 ```
 
 

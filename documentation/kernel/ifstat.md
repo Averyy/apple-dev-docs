@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ifstat {
     ...
 };
@@ -17,8 +17,8 @@ struct ifstat {
 ## Topics
 
 ### Instance Properties
-- [ascii](ifstat/1564075-ascii.md)
-- [ifs_name](ifstat/1564073-ifs_name.md)
+- [ascii](./ifstat/api-1564075-ascii.md)
+- [ifs_name](./ifstat/api-1564073-ifs_name.md)
 
 
 ---

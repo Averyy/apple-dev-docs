@@ -1,7 +1,8 @@
 # PlayToneAction.Tone
 
 **Framework**: LiveCommunicationKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that describe keypad tones.
 
@@ -21,29 +22,30 @@ enum Tone
 ## Topics
 
 ### Keypad tones
-- [PlayToneAction.Tone.hardPause](playtoneaction/tone-swift.enum/hardpause.md)
+- [PlayToneAction.Tone.hardPause](./tone-swift.enum/hardpause.md)
   A person entered a hard pause.
-- [PlayToneAction.Tone.single](playtoneaction/tone-swift.enum/single.md)
+- [PlayToneAction.Tone.single](./tone-swift.enum/single.md)
   A person entered a digit.
-- [PlayToneAction.Tone.softPause](playtoneaction/tone-swift.enum/softpause.md)
+- [PlayToneAction.Tone.softPause](./tone-swift.enum/softpause.md)
   A person entered a soft pause.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let digits: String](playtoneaction/digits.md)
+### Accessing action attributes
+- [let digits: String](./digits.md)
   The digits tapped by the user into the keypad or included in the dial string.
-- [let tone: PlayToneAction.Tone](playtoneaction/tone-swift.property.md)
+- [let tone: PlayToneAction.Tone](./tone-swift.property.md)
   The keypad tone to play.
 
 

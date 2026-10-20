@@ -1,7 +1,8 @@
 # animation(forKey:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the animation object with the specified identifier.
 
@@ -19,6 +20,10 @@ Returns the animation object with the specified identifier.
 func animation(forKey key: String) -> CAAnimation?
 ```
 
+```objc
+- (CAAnimation *) animationForKey:(NSString *) key;
+```
+
 #### Return Value
 
 The animation object matching the identifier, or `nil` if no such animation exists.
@@ -29,17 +34,18 @@ Use this method to retrieve only animation objects already associated with a lay
 
 ## Parameters
 
-- `key`: A string that specifies the identifier of the animation. This string corresponds to the identifier string you passed to the [`add(_:forKey:)`](calayer/add(_:forkey:).md) method.
+- `key`: A string that specifies the identifier of the animation. This string corresponds to the identifier string you passed to the [`add(_:forKey:)`](./add%28_,forkey%29.md) method.
 
 ## See Also
 
-- [func add(CAAnimation, forKey: String?)](calayer/add(_:forkey:).md)
+### Layer animations
+- [func add(CAAnimation, forKey: String?)](./add%28_,forkey%29.md)
   Add the specified animation object to the layer’s render tree.
-- [func removeAllAnimations()](calayer/removeallanimations.md)
+- [func removeAllAnimations()](./removeallanimations%28%29.md)
   Remove all animations attached to the layer.
-- [func removeAnimation(forKey: String)](calayer/removeanimation(forkey:).md)
+- [func removeAnimation(forKey: String)](./removeanimation%28forkey%29.md)
   Remove the animation object with the specified key.
-- [func animationKeys() -> [String]?](calayer/animationkeys.md)
+- [func animationKeys() -> [String]?](./animationkeys%28%29.md)
   Returns an array of strings that identify the animations currently attached to the layer.
 
 

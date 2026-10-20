@@ -1,7 +1,8 @@
 # logicalOr(_:ordering:)
 
 **Framework**: Synchronization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Perform an atomic logical OR operation and return the old and new value, applying the specified memory ordering.
 
@@ -20,6 +21,8 @@ Perform an atomic logical OR operation and return the old and new value, applyin
 @discardableResult
 func logicalOr(_ operand: Bool, ordering: AtomicUpdateOrdering) -> (oldValue: Bool, newValue: Bool)
 ```
+
+Available when `Value` is `Bool`.
 
 #### Return Value
 

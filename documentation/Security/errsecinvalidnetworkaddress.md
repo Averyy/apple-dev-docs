@@ -1,7 +1,8 @@
 # errSecInvalidNetworkAddress
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid network address was detected.
 
@@ -18,6 +19,10 @@ An invalid network address was detected.
 
 ```swift
 var errSecInvalidNetworkAddress: OSStatus { get }
+```
+
+```c
+errSecInvalidNetworkAddress
 ```
 
 

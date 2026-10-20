@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Converts a typed `UnsafeMutablePointer` to an opaque C pointer.
 

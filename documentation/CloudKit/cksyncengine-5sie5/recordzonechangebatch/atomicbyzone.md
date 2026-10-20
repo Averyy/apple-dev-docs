@@ -1,7 +1,8 @@
 # atomicByZone
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether CloudKit modifies records atomically by record zone.
 
@@ -11,7 +12,7 @@ A Boolean value that determines whether CloudKit modifies records atomically by 
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,9 +23,9 @@ var atomicByZone: Bool
 
 #### Discussion
 
-When [`true`](https://developer.apple.com/documentation/swift/true), CloudKit processes record changes atomically by record zone, and if any individual change fails, all other changes in that record’s record zone fail and return an error of type [`CKError.Code.batchRequestFailed`](ckerror/code/batchrequestfailed.md).
+When [`true`](../../../Swift/true.md), CloudKit processes record changes atomically by record zone, and if any individual change fails, all other changes in that record’s record zone fail and return an error of type [`CKError.Code.batchRequestFailed`](../../ckerror/code/batchrequestfailed.md).
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../../Swift/false.md).
 
 
 ---

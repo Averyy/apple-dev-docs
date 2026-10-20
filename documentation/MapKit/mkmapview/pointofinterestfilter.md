@@ -1,17 +1,20 @@
 # pointOfInterestFilter
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The filter to use for determining the points of interest that appear on the map.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.2
+- tvOS 13.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use one of the map configurations that support an [`MKPointOfInterestFilter`](../mkpointofinterestfilter.md), such as  [`MKStandardMapConfiguration`](../mkstandardmapconfiguration.md) or [`MKHybridMapConfiguration`](../mkhybridmapconfiguration.md) instead.
 
 ## Declaration
 
@@ -20,25 +23,30 @@ The filter to use for determining the points of interest that appear on the map.
 var pointOfInterestFilter: MKPointOfInterestFilter? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) MKPointOfInterestFilter * pointOfInterestFilter;
+```
+
 ## See Also
 
-- [func setCamera(MKMapCamera, animated: Bool)](mkmapview/setcamera(_:animated:).md)
+### Configuring the map display
+- [func setCamera(MKMapCamera, animated: Bool)](./setcamera%28_,animated%29.md)
   Changes the camera to use for determining the map’s viewing parameters, and optionally animates the change.
-- [var camera: MKMapCamera](mkmapview/camera.md)
+- [var camera: MKMapCamera](./camera.md)
   The camera to use for determining the appearance of the map.
-- [var showsCompass: Bool](mkmapview/showscompass.md)
+- [var showsCompass: Bool](./showscompass.md)
   A Boolean value that indicates whether the map displays a compass control.
-- [var showsPitchControl: Bool](mkmapview/showspitchcontrol.md)
+- [var showsPitchControl: Bool](./showspitchcontrol.md)
   A Boolean value that indicates whether the map displays the pitch control.
-- [var showsScale: Bool](mkmapview/showsscale.md)
+- [var showsScale: Bool](./showsscale.md)
   A Boolean value that indicates whether the map shows scale information.
-- [var showsZoomControls: Bool](mkmapview/showszoomcontrols.md)
+- [var showsZoomControls: Bool](./showszoomcontrols.md)
   A Boolean value that indicates whether the map displays zoom controls.
-- [var showsBuildings: Bool](mkmapview/showsbuildings.md)
+- [var showsBuildings: Bool](./showsbuildings.md)
   A Boolean value that indicates whether the map displays extruded building information on supported map types.
-- [var showsPointsOfInterest: Bool](mkmapview/showspointsofinterest.md)
+- [var showsPointsOfInterest: Bool](./showspointsofinterest.md)
   A Boolean value that indicates whether the map displays point-of-interest information.
-- [var showsTraffic: Bool](mkmapview/showstraffic.md)
+- [var showsTraffic: Bool](./showstraffic.md)
   A Boolean value that indicates whether the map displays traffic information.
 
 

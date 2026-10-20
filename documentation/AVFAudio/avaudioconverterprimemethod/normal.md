@@ -1,18 +1,19 @@
 # AVAudioConverterPrimeMethod.normal
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to prime with trailing (zero latency) frames where the converter assumes the leading frames are silence.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ An option to prime with trailing (zero latency) frames where the converter assum
 case normal
 ```
 
+```c
+AVAudioConverterPrimeMethod_Normal
+```
+
 ## See Also
 
-- [AVAudioConverterPrimeMethod.pre](avaudioconverterprimemethod/pre.md)
+### Choosing a priming method
+- [AVAudioConverterPrimeMethod.pre](./pre.md)
   An option to prime with leading and trailing input frames.
-- [AVAudioConverterPrimeMethod.none](avaudioconverterprimemethod/none.md)
+- [AVAudioConverterPrimeMethod.none](./none.md)
   An option to prime the converter assumes leading and trailing frames are silence.
 
 

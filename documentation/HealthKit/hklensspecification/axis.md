@@ -1,7 +1,8 @@
 # axis
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Part of the correction for astigmatism that measures the orientation fo the correction.
 
@@ -20,17 +21,22 @@ Part of the correction for astigmatism that measures the orientation fo the corr
 var axis: HKQuantity? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) HKQuantity * axis;
+```
+
 #### Discussion
 
-This quantity measures the orientation of the correction in [`degreeAngle()`](hkunit/degreeangle().md) units.
+This quantity measures the orientation of the correction in [`degreeAngle()`](../hkunit/degreeangle%28%29.md) units.
 
 ## See Also
 
-- [var sphere: HKQuantity](hklensspecification/sphere.md)
+### Accessing lens specification data
+- [var sphere: HKQuantity](./sphere.md)
   The correction for farsightedness.
-- [var cylinder: HKQuantity?](hklensspecification/cylinder.md)
+- [var cylinder: HKQuantity?](./cylinder.md)
   Part of the correction for astigmatism that measures the strength of the correction.
-- [var addPower: HKQuantity?](hklensspecification/addpower.md)
+- [var addPower: HKQuantity?](./addpower.md)
   The correction for nearsightedness.
 
 

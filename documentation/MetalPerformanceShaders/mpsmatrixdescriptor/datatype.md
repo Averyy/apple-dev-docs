@@ -1,7 +1,8 @@
 # dataType
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the values in the matrix.
 
@@ -19,18 +20,23 @@ The type of the values in the matrix.
 var dataType: MPSDataType { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MPSDataType dataType;
+```
+
 ## See Also
 
-- [var rows: Int](mpsmatrixdescriptor/rows.md)
+### Properties
+- [var rows: Int](./rows.md)
   The number of rows in the matrix.
-- [var columns: Int](mpsmatrixdescriptor/columns.md)
+- [var columns: Int](./columns.md)
   The number of columns in the matrix.
-- [enum MPSDataType](mpsdatatype.md)
+- [enum MPSDataType](../mpsdatatype.md)
   A value to specify a type of data.
-- [var rowBytes: Int](mpsmatrixdescriptor/rowbytes.md)
+- [var rowBytes: Int](./rowbytes.md)
   The stride, in bytes, between corresponding elements of consecutive rows in the matrix.
-- [var matrices: Int](mpsmatrixdescriptor/matrices.md)
-- [var matrixBytes: Int](mpsmatrixdescriptor/matrixbytes.md)
+- [var matrices: Int](./matrices.md)
+- [var matrixBytes: Int](./matrixbytes.md)
 
 
 ---

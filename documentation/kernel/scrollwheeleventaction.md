@@ -1,14 +1,15 @@
 # ScrollWheelEventAction
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef void (*ScrollWheelEventAction)(OSObject *target, short deltaAxis1, short deltaAxis2, short deltaAxis3, AbsoluteTime ts);
 ```
 

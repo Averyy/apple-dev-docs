@@ -1,7 +1,8 @@
 # init(originator:action:url:)
 
 **Framework**: Group Activities  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new event with the specified participant and action details.
 

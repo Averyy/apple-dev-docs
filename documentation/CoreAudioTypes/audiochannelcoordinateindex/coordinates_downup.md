@@ -1,7 +1,8 @@
 # AudioChannelCoordinateIndex.coordinates_DownUp
 
 **Framework**: Core Audio Types  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 For rectangular coordinates, negative is below ground level, `0` is ground level, and positive is above ground level. The units are specified by the `mChannelFlags` field.
 
@@ -20,17 +21,22 @@ For rectangular coordinates, negative is below ground level, `0` is ground level
 case coordinates_DownUp
 ```
 
+```c
+kAudioChannelCoordinates_DownUp
+```
+
 ## See Also
 
-- [AudioChannelCoordinateIndex.coordinates_BackFront](audiochannelcoordinateindex/coordinates_backfront.md)
+### Coordinates
+- [AudioChannelCoordinateIndex.coordinates_BackFront](./coordinates_backfront.md)
   For rectangular coordinates, negative is back and positive is front. The units are specified by the `mChannelFlags` field.
-- [AudioChannelCoordinateIndex.coordinates_LeftRight](audiochannelcoordinateindex/coordinates_leftright.md)
+- [AudioChannelCoordinateIndex.coordinates_LeftRight](./coordinates_leftright.md)
   For rectangular coordinates, negative is left and positive is right. The units are specified by the `mChannelFlags` field of the `AudioChannelDescription` structure.
-- [static var coordinates_Azimuth: AudioChannelCoordinateIndex](audiochannelcoordinateindex/coordinates_azimuth.md)
+- [static var coordinates_Azimuth: AudioChannelCoordinateIndex](./coordinates_azimuth.md)
   For spherical coordinates, `0` is front center, positive is right, negative is left, and measurements are in degrees.
-- [static var coordinates_Distance: AudioChannelCoordinateIndex](audiochannelcoordinateindex/coordinates_distance.md)
+- [static var coordinates_Distance: AudioChannelCoordinateIndex](./coordinates_distance.md)
   For spherical coordinates, distance is radially from the center. The units are specified by the `mChannelFlags` field of the `AudioChannelDescription` structure.
-- [static var coordinates_Elevation: AudioChannelCoordinateIndex](audiochannelcoordinateindex/coordinates_elevation.md)
+- [static var coordinates_Elevation: AudioChannelCoordinateIndex](./coordinates_elevation.md)
   For spherical coordinates, `+90` is zenith, `0` is horizontal, `-90` is nadir, and measurements are in degrees.
 
 

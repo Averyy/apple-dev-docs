@@ -1,7 +1,8 @@
 # CVPixelBufferPoolCreate(_:_:_:_:)
 
 **Framework**: Core Video  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a pixel buffer pool using the allocator and attributes that you specify.
 
@@ -20,26 +21,31 @@ Creates a pixel buffer pool using the allocator and attributes that you specify.
 func CVPixelBufferPoolCreate(_ allocator: CFAllocator?, _ poolAttributes: CFDictionary?, _ pixelBufferAttributes: CFDictionary?, _ poolOut: UnsafeMutablePointer<CVPixelBufferPool?>) -> CVReturn
 ```
 
+```c
+extern CVReturn CVPixelBufferPoolCreate(CFAllocatorRef allocator, CFDictionaryRef poolAttributes, CFDictionaryRef pixelBufferAttributes, CVPixelBufferPoolRef*poolOut);
+```
+
 #### Return Value
 
-A Core Video result code. See [`Result Codes`](result-codes.md) for possible values.
+A Core Video result code. See [Result Codes](./result-codes.md) for possible values.
 
 #### Discussion
 
-Use [`CVPixelBufferPoolRelease`](cvpixelbufferpoolrelease.md) to release ownership of the `poolOut` object when you’re done with it.
+Use [`CVPixelBufferPoolRelease`](./cvpixelbufferpoolrelease.md) to release ownership of the `poolOut` object when you’re done with it.
 
 ## Parameters
 
-- `allocator`: The allocator to use for creating the buffer pool. Pass [`kCFAllocatorDefault`](https://developer.apple.com/documentation/corefoundation/kcfallocatordefault) to use the default allocator. See [`Predefined Allocators`](https://developer.apple.com/documentation/corefoundation/predefined-allocators) for additional values you can use.
+- `allocator`: The allocator to use for creating the buffer pool. Pass [`kCFAllocatorDefault`](../CoreFoundation/kcfallocatordefault.md) to use the default allocator. See [Predefined Allocators](../CoreFoundation/predefined-allocators.md) for additional values you can use.
 - `poolAttributes`: A Core Foundation dictionary that contains the attributes for the pixel buffer pool. See the Constants topic group below for possible values.
-- `pixelBufferAttributes`: An optional dictionary that contains the attributes to use to create new pixel buffers within the pool. See [`Pixel Buffer Attribute Keys`](pixel-buffer-attribute-keys.md) for possible values.
+- `pixelBufferAttributes`: An optional dictionary that contains the attributes to use to create new pixel buffers within the pool. See [Pixel Buffer Attribute Keys](./pixel-buffer-attribute-keys.md) for possible values.
 - `poolOut`: On output, the newly created pixel buffer pool.
 
 ## See Also
 
-- [func CVPixelBufferPoolCreatePixelBuffer(CFAllocator?, CVPixelBufferPool, UnsafeMutablePointer<CVPixelBuffer?>) -> CVReturn](cvpixelbufferpoolcreatepixelbuffer(_:_:_:).md)
+### Creating pools
+- [func CVPixelBufferPoolCreatePixelBuffer(CFAllocator?, CVPixelBufferPool, UnsafeMutablePointer<CVPixelBuffer?>) -> CVReturn](./cvpixelbufferpoolcreatepixelbuffer%28_,_,_%29.md)
   Creates a pixel buffer from a pixel buffer pool, using the allocator that you specify.
-- [func CVPixelBufferPoolCreatePixelBufferWithAuxAttributes(CFAllocator?, CVPixelBufferPool, CFDictionary?, UnsafeMutablePointer<CVPixelBuffer?>) -> CVReturn](cvpixelbufferpoolcreatepixelbufferwithauxattributes(_:_:_:_:).md)
+- [func CVPixelBufferPoolCreatePixelBufferWithAuxAttributes(CFAllocator?, CVPixelBufferPool, CFDictionary?, UnsafeMutablePointer<CVPixelBuffer?>) -> CVReturn](./cvpixelbufferpoolcreatepixelbufferwithauxattributes%28_,_,_,_%29.md)
   Creates a new pixel buffer with auxiliary attributes from the pool.
 
 

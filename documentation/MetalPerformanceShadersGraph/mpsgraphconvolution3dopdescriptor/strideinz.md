@@ -1,7 +1,8 @@
 # strideInZ
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scale that maps`z`-coordinate of destination to `z`-coordinate of source.
 
@@ -17,6 +18,10 @@ The scale that maps`z`-coordinate of destination to `z`-coordinate of source.
 
 ```swift
 var strideInZ: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger strideInZ;
 ```
 
 #### Discussion

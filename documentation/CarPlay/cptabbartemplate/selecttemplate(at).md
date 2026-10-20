@@ -1,7 +1,8 @@
 # selectTemplate(at:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.0+
@@ -14,9 +15,14 @@
 func selectTemplate(at index: Int)
 ```
 
+```objc
+- (void) selectTemplateAtIndex:(NSInteger) index;
+```
+
 ## See Also
 
-- [func select(CPTemplate)](cptabbartemplate/select(_:).md)
+### Instance Methods
+- [func select(CPTemplate)](./select%28_%29.md)
 
 
 ---

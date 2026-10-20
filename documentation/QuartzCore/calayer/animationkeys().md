@@ -1,7 +1,8 @@
 # animationKeys()
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of strings that identify the animations currently attached to the layer.
 
@@ -19,9 +20,13 @@ Returns an array of strings that identify the animations currently attached to t
 func animationKeys() -> [String]?
 ```
 
+```objc
+- (NSArray<NSString *> *) animationKeys;
+```
+
 #### Return Value
 
-An array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects identifying the current animations.
+An array of [`NSString`](../../Foundation/nsstring.md) objects identifying the current animations.
 
 #### Discussion
 
@@ -29,13 +34,14 @@ The order of the array matches the order in which animations will be applied to 
 
 ## See Also
 
-- [func add(CAAnimation, forKey: String?)](calayer/add(_:forkey:).md)
+### Layer animations
+- [func add(CAAnimation, forKey: String?)](./add%28_,forkey%29.md)
   Add the specified animation object to the layer’s render tree.
-- [func animation(forKey: String) -> CAAnimation?](calayer/animation(forkey:).md)
+- [func animation(forKey: String) -> CAAnimation?](./animation%28forkey%29.md)
   Returns the animation object with the specified identifier.
-- [func removeAllAnimations()](calayer/removeallanimations.md)
+- [func removeAllAnimations()](./removeallanimations%28%29.md)
   Remove all animations attached to the layer.
-- [func removeAnimation(forKey: String)](calayer/removeanimation(forkey:).md)
+- [func removeAnimation(forKey: String)](./removeanimation%28forkey%29.md)
   Remove the animation object with the specified key.
 
 

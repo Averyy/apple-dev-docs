@@ -1,7 +1,8 @@
 # WKInterfaceDeviceBatteryState.unplugged
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device is not connected to a charger and is running on battery power.
 
@@ -14,13 +15,18 @@ The device is not connected to a charger and is running on battery power.
 case unplugged
 ```
 
+```c
+WKInterfaceDeviceBatteryStateUnplugged
+```
+
 ## See Also
 
-- [WKInterfaceDeviceBatteryState.charging](wkinterfacedevicebatterystate/charging.md)
+### Battery States
+- [WKInterfaceDeviceBatteryState.charging](./charging.md)
   The device is connected to a charger, but its battery charge is under 100%.
-- [WKInterfaceDeviceBatteryState.full](wkinterfacedevicebatterystate/full.md)
+- [WKInterfaceDeviceBatteryState.full](./full.md)
   The device is connected to a charger, and its battery is charged to 100%.
-- [WKInterfaceDeviceBatteryState.unknown](wkinterfacedevicebatterystate/unknown.md)
+- [WKInterfaceDeviceBatteryState.unknown](./unknown.md)
   An unknown battery-charging state.
 
 

@@ -1,7 +1,8 @@
 # hpkeAuthPublicKey
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var hpkeAuthPublicKey: SecKey? { get set }
+```
+
+```objc
+@property (nonatomic, nullable) SecKeyRef hpkeAuthPublicKey;
 ```
 
 #### Discussion

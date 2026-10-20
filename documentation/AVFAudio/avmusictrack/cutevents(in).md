@@ -1,7 +1,8 @@
 # cutEvents(in:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Splices all events in the beat range from the music track.
 
@@ -19,6 +20,10 @@ Splices all events in the beat range from the music track.
 func cutEvents(in range: AVBeatRange)
 ```
 
+```objc
+- (void) cutEventsInRange:(AVBeatRange) range;
+```
+
 #### Discussion
 
 All events past the end of the range you specify shift backward by the duration of the range.
@@ -29,9 +34,10 @@ All events past the end of the range you specify shift backward by the duration 
 
 ## See Also
 
-- [func copyEvents(in: AVBeatRange, from: AVMusicTrack, insertAt: AVMusicTimeStamp)](avmusictrack/copyevents(in:from:insertat:).md)
+### Cutting and copying events
+- [func copyEvents(in: AVBeatRange, from: AVMusicTrack, insertAt: AVMusicTimeStamp)](./copyevents%28in,from,insertat%29.md)
   Copies the events from the source track and splices them into the current music track.
-- [func copyAndMergeEvents(in: AVBeatRange, from: AVMusicTrack, mergeAt: AVMusicTimeStamp)](avmusictrack/copyandmergeevents(in:from:mergeat:).md)
+- [func copyAndMergeEvents(in: AVBeatRange, from: AVMusicTrack, mergeAt: AVMusicTimeStamp)](./copyandmergeevents%28in,from,mergeat%29.md)
   Copies the events from the source track and merges them into the current music track.
 
 

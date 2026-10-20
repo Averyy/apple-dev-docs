@@ -1,16 +1,19 @@
 # BudgetOrderInfoResponse
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A container for the budget order response body.
 
 **Availability**:
-- Search Ads 2.0+
+- Search Ads 2.0+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 ## Declaration
 
-```swift
+```
 object BudgetOrderInfoResponse
 ```
 
@@ -22,19 +25,20 @@ object BudgetOrderInfoResponse
 
 ## See Also
 
-- [object BudgetOrder](budgetorder.md)
+### Budget Order Request and Response Objects
+- [object BudgetOrder](./budgetorder.md)
   The response to requests for budget order details.
-- [object BudgetOrderInfo](budgetorderinfo.md)
+- [object BudgetOrderInfo](./budgetorderinfo.md)
   The parent object response to a request for budget order details.
-- [object BudgetOrderCreate](budgetordercreate.md)
+- [object BudgetOrderCreate](./budgetordercreate.md)
   The parent object response to a request to create a budget order.
-- [object BudgetOrderUpdate](budgetorderupdate.md)
+- [object BudgetOrderUpdate](./budgetorderupdate.md)
   The parent object response to a request to update a budget order.
-- [object BudgetOrderInfoListResponse](budgetorderinfolistresponse.md)
+- [object BudgetOrderInfoListResponse](./budgetorderinfolistresponse.md)
   The response details to budget order requests.
-- [object LOCInvoiceDetails](locinvoicedetails.md)
+- [object LOCInvoiceDetails](./locinvoicedetails.md)
   The response to a request to fetch details for `LOC` invoicing details.
-- [object Money](money.md)
+- [object Money](./money.md)
   The response to requests for budget amounts in campaigns.
 
 

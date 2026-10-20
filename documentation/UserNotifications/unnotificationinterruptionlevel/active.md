@@ -1,7 +1,8 @@
 # UNNotificationInterruptionLevel.active
 
 **Framework**: User Notifications  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system presents the notification immediately, lights up the screen, and can play a sound.
 
@@ -20,17 +21,22 @@ The system presents the notification immediately, lights up the screen, and can 
 case active
 ```
 
+```c
+UNNotificationInterruptionLevelActive
+```
+
 #### Discussion
 
 This is the default interruption level. Active notifications won’t break through system notification controls.
 
 ## See Also
 
-- [UNNotificationInterruptionLevel.critical](unnotificationinterruptionlevel/critical.md)
+### Enumeration Cases
+- [UNNotificationInterruptionLevel.critical](./critical.md)
   The system presents the notification immediately, lights up the screen, and bypasses the mute switch to play a sound.
-- [UNNotificationInterruptionLevel.passive](unnotificationinterruptionlevel/passive.md)
+- [UNNotificationInterruptionLevel.passive](./passive.md)
   The system adds the notification to the notification list without lighting up the screen or playing a sound.
-- [UNNotificationInterruptionLevel.timeSensitive](unnotificationinterruptionlevel/timesensitive.md)
+- [UNNotificationInterruptionLevel.timeSensitive](./timesensitive.md)
   The system presents the notification immediately, lights up the screen, can play a sound, and breaks through system notification controls.
 
 

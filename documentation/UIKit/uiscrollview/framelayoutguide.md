@@ -1,7 +1,8 @@
 # frameLayoutGuide
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout guide based on the untransformed frame rectangle of the scroll view.
 
@@ -18,13 +19,18 @@ The layout guide based on the untransformed frame rectangle of the scroll view.
 var frameLayoutGuide: UILayoutGuide { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) UILayoutGuide * frameLayoutGuide;
+```
+
 #### Discussion
 
 Use this layout guide when you want to create Auto Layout constraints that explicitly involve the frame rectangle of the scroll view itself, as opposed to its content rectangle.
 
 ## See Also
 
-- [var contentLayoutGuide: UILayoutGuide](uiscrollview/contentlayoutguide.md)
+### Getting the layout guides
+- [var contentLayoutGuide: UILayoutGuide](./contentlayoutguide.md)
   The layout guide based on the untranslated content rectangle of the scroll view.
 
 

@@ -1,7 +1,8 @@
 # kCGImagePropertyDNGPreviewColorSpace
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The color space associated with the rendered preview.
 
@@ -20,17 +21,22 @@ The color space associated with the rendered preview.
 let kCGImagePropertyDNGPreviewColorSpace: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyDNGPreviewColorSpace;
+```
+
 ## See Also
 
-- [let kCGImagePropertyDNGPreviewApplicationName: CFString](kcgimagepropertydngpreviewapplicationname.md)
+### Preview
+- [let kCGImagePropertyDNGPreviewApplicationName: CFString](./kcgimagepropertydngpreviewapplicationname.md)
   The name of the app that created the preview stored in the IFD.
-- [let kCGImagePropertyDNGPreviewApplicationVersion: CFString](kcgimagepropertydngpreviewapplicationversion.md)
+- [let kCGImagePropertyDNGPreviewApplicationVersion: CFString](./kcgimagepropertydngpreviewapplicationversion.md)
   The version number of the app that created the preview stored in the IFD.
-- [let kCGImagePropertyDNGPreviewSettingsName: CFString](kcgimagepropertydngpreviewsettingsname.md)
+- [let kCGImagePropertyDNGPreviewSettingsName: CFString](./kcgimagepropertydngpreviewsettingsname.md)
   The name of the conversion settings for the preview.
-- [let kCGImagePropertyDNGPreviewSettingsDigest: CFString](kcgimagepropertydngpreviewsettingsdigest.md)
+- [let kCGImagePropertyDNGPreviewSettingsDigest: CFString](./kcgimagepropertydngpreviewsettingsdigest.md)
   A unique ID of the conversion settings used to render the preview.
-- [let kCGImagePropertyDNGPreviewDateTime: CFString](kcgimagepropertydngpreviewdatetime.md)
+- [let kCGImagePropertyDNGPreviewDateTime: CFString](./kcgimagepropertydngpreviewdatetime.md)
   The date and time for the render of the preview.
 
 

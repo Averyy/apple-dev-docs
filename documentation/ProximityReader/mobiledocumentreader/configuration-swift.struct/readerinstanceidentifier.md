@@ -1,7 +1,8 @@
 # readerInstanceIdentifier
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for the mobile document reader instance.
 
@@ -18,7 +19,7 @@ let readerInstanceIdentifier: String
 
 ## Mentions
 
-- [Generating reader tokens for the Verifier API](generating-reader-tokens-for-the-verifier-api.md)
+- [Generating reader tokens for the Verifier API](../../generating-reader-tokens-for-the-verifier-api.md)
 
 #### Discussion
 

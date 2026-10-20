@@ -1,7 +1,8 @@
 # errSecRestrictedAPI
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var errSecRestrictedAPI: OSStatus { get }
+```
+
+```c
+errSecRestrictedAPI
 ```
 
 

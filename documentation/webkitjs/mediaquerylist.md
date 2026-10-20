@@ -1,7 +1,8 @@
 # MediaQueryList
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,18 +10,18 @@
 
 ## Declaration
 
-```swift
+```
 interface MediaQueryList
 ```
 
 ## Topics
 
 ### Instance Properties
-- [matches](mediaquerylist/1634190-matches.md)
-- [media](mediaquerylist/1632083-media.md)
+- [matches](./mediaquerylist/api-1634190-matches.md)
+- [media](./mediaquerylist/api-1632083-media.md)
 ### Instance Methods
-- [addListener](mediaquerylist/1633756-addlistener.md)
-- [removeListener](mediaquerylist/1633072-removelistener.md)
+- [addListener](./mediaquerylist/api-1633756-addlistener.md)
+- [removeListener](./mediaquerylist/api-1633072-removelistener.md)
 
 
 ---

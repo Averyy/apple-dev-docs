@@ -1,12 +1,13 @@
 # animationShouldStart(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent to the delegate just after an animation is started.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,17 @@ nonisolated
 optional func animationShouldStart(_ animation: NSAnimation) -> Bool
 ```
 
+```objc
+- (BOOL) animationShouldStart:(NSAnimation *) animation;
+```
+
 #### Return Value
 
-[`false`](https://developer.apple.com/documentation/swift/false) to cancel the animation, [`true`](https://developer.apple.com/documentation/swift/true) to have the animation proceed.
+[`false`](../../Swift/false.md) to cancel the animation, [`true`](../../Swift/true.md) to have the animation proceed.
 
 #### Discussion
 
-The delegate is sent this message just after `animation` receives a [`start()`](nsanimation/start().md) message. The delegate can use this method to prepare objects and resources for the effect.
+The delegate is sent this message just after `animation` receives a [`start()`](../nsanimation/start%28%29.md) message. The delegate can use this method to prepare objects and resources for the effect.
 
 ## Parameters
 
@@ -29,11 +34,12 @@ The delegate is sent this message just after `animation` receives a [`start()`](
 
 ## See Also
 
-- [func animationDidEnd(NSAnimation)](nsanimationdelegate/animationdidend(_:).md)
+### Controlling and Monitoring an Animation
+- [func animationDidEnd(NSAnimation)](./animationdidend%28_%29.md)
   Sent to the delegate when the specified animation completes its run.
-- [func animationDidStop(NSAnimation)](nsanimationdelegate/animationdidstop(_:).md)
+- [func animationDidStop(NSAnimation)](./animationdidstop%28_%29.md)
   Sent to the delegate when the specified animation is stopped before it completes its run.
-- [func animation(NSAnimation, valueForProgress: NSAnimation.Progress) -> Float](nsanimationdelegate/animation(_:valueforprogress:).md)
+- [func animation(NSAnimation, valueForProgress: NSAnimation.Progress) -> Float](./animation%28_,valueforprogress%29.md)
   Requests a custom curve value for the current progress value.
 
 

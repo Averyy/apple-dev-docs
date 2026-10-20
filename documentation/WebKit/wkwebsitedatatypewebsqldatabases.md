@@ -1,7 +1,8 @@
 # WKWebsiteDataTypeWebSQLDatabases
 
 **Framework**: WebKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 WebSQL databases.
 
@@ -18,9 +19,14 @@ WebSQL databases.
 let WKWebsiteDataTypeWebSQLDatabases: String
 ```
 
+```c
+extern NSString * const WKWebsiteDataTypeWebSQLDatabases;
+```
+
 ## See Also
 
-- [let WKWebsiteDataTypeIndexedDBDatabases: String](wkwebsitedatatypeindexeddbdatabases.md)
+### Database types
+- [let WKWebsiteDataTypeIndexedDBDatabases: String](./wkwebsitedatatypeindexeddbdatabases.md)
   IndexedDB databases.
 
 

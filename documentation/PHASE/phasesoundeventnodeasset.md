@@ -1,7 +1,8 @@
 # PHASESoundEventNodeAsset
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A template object for sounds that can play in reaction to environmental state.
 
@@ -19,41 +20,46 @@ A template object for sounds that can play in reaction to environmental state.
 class PHASESoundEventNodeAsset
 ```
 
+```objc
+@interface PHASESoundEventNodeAsset : PHASEAsset
+```
+
 #### Overview
 
-This object refers by name to a collection of sound event nodes that connect to form a tree, or hierarchy. To retrieve an instance of this class, add a sound-event node definition to the asset registry using [`registerSoundEventAsset(rootNode:identifier:)`](phaseassetregistry/registersoundeventasset(rootnode:identifier:).md). Choose the `rootNode` argument from the subclasses in [`Sound Event Nodes`](sound-event-nodes.md) based on the playback features your app requires.
+This object refers by name to a collection of sound event nodes that connect to form a tree, or hierarchy. To retrieve an instance of this class, add a sound-event node definition to the asset registry using [`registerSoundEventAsset(rootNode:identifier:)`](./phaseassetregistry/registersoundeventasset%28rootnode,identifier%29.md). Choose the `rootNode` argument from the subclasses in [Sound Event Nodes](./sound-event-nodes.md) based on the playback features your app requires.
 
 To play a single audio asset, register a `rootNode` with only one audio-providing node. Alternatively, to create a sound event that can change its audio based on your app’s current state, register a `rootNode` that contains children. By adding multiple nodes that play varying audio as children to a control node, PHASE plays the right audio for the moment based on control logic that you define.
 
-To create a playable sound event from this class, pass [`identifier`](phaseasset/identifier.md) to the `assetIdentifier` parameter of the sound event intializer, [`init(engine:assetIdentifier:)`](phasesoundevent/init(engine:assetidentifier:).md). Then, invoke the sound event by calling [`start(completion:)`](phasesoundevent/start(completion:).md).
+To create a playable sound event from this class, pass [`identifier`](./phaseasset/identifier.md) to the `assetIdentifier` parameter of the sound event intializer, [`init(engine:assetIdentifier:)`](./phasesoundevent/init%28engine,assetidentifier%29.md). Then, invoke the sound event by calling [`start(completion:)`](./phasesoundevent/start%28completion%29.md).
 
 As an opaque derived object, this class adds no properties to its base class.
 
 ## Relationships
 
 ### Inherits From
-- [PHASEAsset](phaseasset.md)
+- [PHASEAsset](./phaseasset.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASESoundAsset](phasesoundasset.md)
+### Audio Selection and Playback
+- [class PHASESoundAsset](./phasesoundasset.md)
   A sound resource stored in the asset registry.
-- [class PHASESoundEvent](phasesoundevent.md)
+- [class PHASESoundEvent](./phasesoundevent.md)
   An object that determines which audio to play.
-- [PHASESoundEvent.RenderingState](phasesoundevent/renderingstate-swift.enum.md)
+- [PHASESoundEvent.RenderingState](./phasesoundevent/renderingstate-swift.enum.md)
   The playback status of audio.
-- [class PHASESoundEventNodeDefinition](phasesoundeventnodedefinition.md)
+- [class PHASESoundEventNodeDefinition](./phasesoundeventnodedefinition.md)
   A base class for sound event nodes that connect to form a node hierarchy.
-- [class PHASEAsset](phaseasset.md)
+- [class PHASEAsset](./phaseasset.md)
   A base class that adds a name to framework assets.
-- [Sound Event Nodes](sound-event-nodes.md)
+- [Sound Event Nodes](./sound-event-nodes.md)
   Objects that connect to form a hierarchical tree of audio actions.
 
 

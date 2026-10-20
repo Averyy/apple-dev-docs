@@ -1,7 +1,8 @@
 # buffer
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying buffer containing media data.
 
@@ -22,7 +23,8 @@ let buffer: CMTaggedBuffer.Buffer
 
 ## See Also
 
-- [let tags: [CMTag]](cmtaggedbuffer/tags.md)
+### Inspecting Data
+- [let tags: [CMTag]](./tags.md)
   The tags for this buffer.
 
 

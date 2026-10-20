@@ -1,7 +1,8 @@
 # minimumHumidity
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum amount of water vapor in the air for the day.
 

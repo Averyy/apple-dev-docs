@@ -1,7 +1,8 @@
 # name
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized, user-visible name for this sports team.
 
@@ -14,6 +15,10 @@ A localized, user-visible name for this sports team.
 
 ```swift
 var name: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * name;
 ```
 
 

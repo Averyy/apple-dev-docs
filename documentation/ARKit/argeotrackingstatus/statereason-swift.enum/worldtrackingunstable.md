@@ -1,7 +1,8 @@
 # ARGeoTrackingStatus.StateReason.worldTrackingUnstable
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The position or motion of the device makes geotracking unstable.
 
@@ -15,41 +16,46 @@ The position or motion of the device makes geotracking unstable.
 case worldTrackingUnstable
 ```
 
+```c
+ARGeoTrackingStateReasonWorldTrackingUnstable
+```
+
 #### Discussion
 
-This reason indicates that ARKit’s local-space tracking is functioning at a limited capacity. To retrieve more information about the cause, an app needs to refer to the camera’s [`trackingState`](arcamera/trackingstate-6i3pt.md). For the possible causes of this state, see [`ARTrackingState`](artrackingstate.md) and [`ARTrackingStateReason`](artrackingstatereason.md).
+This reason indicates that ARKit’s local-space tracking is functioning at a limited capacity. To retrieve more information about the cause, an app needs to refer to the camera’s [`trackingState`](../../arcamera/trackingstate-6i3pt.md). For the possible causes of this state, see [`ARTrackingState`](../../artrackingstate.md) and [`ARTrackingStateReason`](../../artrackingstatereason.md).
 
 ## See Also
 
-- [ARGeoTrackingStatus.StateReason.none](argeotrackingstatus/statereason-swift.enum/none.md)
+### Status Reasons
+- [ARGeoTrackingStatus.StateReason.none](./none.md)
   No issues reported.
-- [ARGeoTrackingStatus.StateReason.notAvailableAtLocation](argeotrackingstatus/statereason-swift.enum/notavailableatlocation.md)
+- [ARGeoTrackingStatus.StateReason.notAvailableAtLocation](./notavailableatlocation.md)
   The location doesn’t provide geotracking.
-- [ARGeoTrackingStatus.StateReason.needLocationPermissions](argeotrackingstatus/statereason-swift.enum/needlocationpermissions.md)
+- [ARGeoTrackingStatus.StateReason.needLocationPermissions](./needlocationpermissions.md)
   The location requires user permission for geotracking.
-- [ARGeoTrackingStatus.StateReason.devicePointedTooLow](argeotrackingstatus/statereason-swift.enum/devicepointedtoolow.md)
+- [ARGeoTrackingStatus.StateReason.devicePointedTooLow](./devicepointedtoolow.md)
   The position of the device is too low for geotracking.
-- [ARGeoTrackingStatus.StateReason.waitingForLocation](argeotrackingstatus/statereason-swift.enum/waitingforlocation.md)
+- [ARGeoTrackingStatus.StateReason.waitingForLocation](./waitingforlocation.md)
   A state in which the framework performs a check for the user’s GPS position.
-- [ARGeoTrackingStatus.StateReason.waitingForAvailabilityCheck](argeotrackingstatus/statereason-swift.enum/waitingforavailabilitycheck.md)
+- [ARGeoTrackingStatus.StateReason.waitingForAvailabilityCheck](./waitingforavailabilitycheck.md)
   A state in which the framework performs a check for geotracking availability at the user’s location.
-- [ARGeoTrackingStatus.StateReason.geoDataNotLoaded](argeotrackingstatus/statereason-swift.enum/geodatanotloaded.md)
+- [ARGeoTrackingStatus.StateReason.geoDataNotLoaded](./geodatanotloaded.md)
   A state in which the framework downloads localization imagery.
-- [ARGeoTrackingStatus.StateReason.visualLocalizationFailed](argeotrackingstatus/statereason-swift.enum/visuallocalizationfailed.md)
+- [ARGeoTrackingStatus.StateReason.visualLocalizationFailed](./visuallocalizationfailed.md)
   Localization imagery failed to match the view from the device’s camera.
-- [ARGeoTrackingStatus.StateReason.none](argeotrackingstatus/statereason-swift.enum/none.md)
+- [ARGeoTrackingStatus.StateReason.none](./none.md)
   No issues reported.
-- [ARGeoTrackingStatus.StateReason.notAvailableAtLocation](argeotrackingstatus/statereason-swift.enum/notavailableatlocation.md)
+- [ARGeoTrackingStatus.StateReason.notAvailableAtLocation](./notavailableatlocation.md)
   The location doesn’t provide geotracking.
-- [ARGeoTrackingStatus.StateReason.needLocationPermissions](argeotrackingstatus/statereason-swift.enum/needlocationpermissions.md)
+- [ARGeoTrackingStatus.StateReason.needLocationPermissions](./needlocationpermissions.md)
   The location requires user permission for geotracking.
-- [ARGeoTrackingStatus.StateReason.devicePointedTooLow](argeotrackingstatus/statereason-swift.enum/devicepointedtoolow.md)
+- [ARGeoTrackingStatus.StateReason.devicePointedTooLow](./devicepointedtoolow.md)
   The position of the device is too low for geotracking.
-- [ARGeoTrackingStatus.StateReason.waitingForLocation](argeotrackingstatus/statereason-swift.enum/waitingforlocation.md)
+- [ARGeoTrackingStatus.StateReason.waitingForLocation](./waitingforlocation.md)
   A state in which the framework performs a check for the user’s GPS position.
-- [ARGeoTrackingStatus.StateReason.waitingForAvailabilityCheck](argeotrackingstatus/statereason-swift.enum/waitingforavailabilitycheck.md)
+- [ARGeoTrackingStatus.StateReason.waitingForAvailabilityCheck](./waitingforavailabilitycheck.md)
   A state in which the framework performs a check for geotracking availability at the user’s location.
-- [ARGeoTrackingStatus.StateReason.geoDataNotLoaded](argeotrackingstatus/statereason-swift.enum/geodatanotloaded.md)
+- [ARGeoTrackingStatus.StateReason.geoDataNotLoaded](./geodatanotloaded.md)
   A state in which the framework downloads localization imagery.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The minimum input content scale this scaler supports.
@@ -17,6 +18,10 @@ The minimum input content scale this scaler supports.
 
 ```swift
 var inputContentMinScale: Float { get }
+```
+
+```objc
+@property (nonatomic, readonly) float inputContentMinScale;
 ```
 
 

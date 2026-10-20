@@ -1,7 +1,8 @@
 # gss_krb5_ccache_name(_:_:_:)
 
 **Framework**: GSS  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the internal Kerberos 5 credential cache name.
 
@@ -18,21 +19,26 @@ Sets the internal Kerberos 5 credential cache name.
 func gss_krb5_ccache_name(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ name: UnsafePointer<CChar>?, _ out_name: UnsafeMutablePointer<UnsafePointer<CChar>?>?) -> OM_uint32
 ```
 
+```c
+OM_uint32 gss_krb5_ccache_name(OM_uint32 *minor_status, const char *name, const char **out_name);
+```
+
 ## See Also
 
-- [func gss_krb5_export_lucid_sec_context(UnsafeMutablePointer<OM_uint32>, UnsafeMutablePointer<gss_ctx_id_t?>, OM_uint32, UnsafeMutablePointer<UnsafeMutableRawPointer>?) -> OM_uint32](gss_krb5_export_lucid_sec_context(_:_:_:_:).md)
+### Identity and Settings
+- [func gss_krb5_export_lucid_sec_context(UnsafeMutablePointer<OM_uint32>, UnsafeMutablePointer<gss_ctx_id_t?>, OM_uint32, UnsafeMutablePointer<UnsafeMutableRawPointer>?) -> OM_uint32](./gss_krb5_export_lucid_sec_context%28_,_,_,_%29.md)
   Returns a non-opaque version of the internal context information.
-- [func gsskrb5_extract_authz_data_from_sec_context(UnsafeMutablePointer<OM_uint32>, gss_ctx_id_t, Int32, gss_buffer_t) -> OM_uint32](gsskrb5_extract_authz_data_from_sec_context(_:_:_:_:).md)
+- [func gsskrb5_extract_authz_data_from_sec_context(UnsafeMutablePointer<OM_uint32>, gss_ctx_id_t, Int32, gss_buffer_t) -> OM_uint32](./gsskrb5_extract_authz_data_from_sec_context%28_,_,_,_%29.md)
   Extracts Kerberos authorization data stored within the context.
-- [func gss_krb5_free_lucid_sec_context(UnsafeMutablePointer<OM_uint32>, UnsafeMutableRawPointer) -> OM_uint32](gss_krb5_free_lucid_sec_context(_:_:).md)
+- [func gss_krb5_free_lucid_sec_context(UnsafeMutablePointer<OM_uint32>, UnsafeMutableRawPointer) -> OM_uint32](./gss_krb5_free_lucid_sec_context%28_,_%29.md)
   Frees allocated storage associated with an exported context.
-- [func gss_krb5_set_allowable_enctypes(UnsafeMutablePointer<OM_uint32>, gss_cred_id_t, OM_uint32, UnsafeMutablePointer<Int32>) -> OM_uint32](gss_krb5_set_allowable_enctypes(_:_:_:_:).md)
+- [func gss_krb5_set_allowable_enctypes(UnsafeMutablePointer<OM_uint32>, gss_cred_id_t, OM_uint32, UnsafeMutablePointer<Int32>) -> OM_uint32](./gss_krb5_set_allowable_enctypes%28_,_,_,_%29.md)
   Limits the keys that can be exported to the specified types.
-- [func gsskrb5_register_acceptor_identity(UnsafePointer<CChar>) -> OM_uint32](gsskrb5_register_acceptor_identity(_:).md)
+- [func gsskrb5_register_acceptor_identity(UnsafePointer<CChar>) -> OM_uint32](./gsskrb5_register_acceptor_identity%28_%29.md)
   Sets the Kerberos 5 file-based key that the acceptor will use.
-- [func krb5_gss_register_acceptor_identity(UnsafePointer<CChar>) -> OM_uint32](krb5_gss_register_acceptor_identity(_:).md)
+- [func krb5_gss_register_acceptor_identity(UnsafePointer<CChar>) -> OM_uint32](./krb5_gss_register_acceptor_identity%28_%29.md)
   Sets the Kerberos 5 file-based key that the acceptor will use.
-- [func gss_krb5_copy_ccache(UnsafeMutablePointer<OM_uint32>, gss_cred_id_t, OpaquePointer) -> OM_uint32](gss_krb5_copy_ccache(_:_:_:).md)
+- [func gss_krb5_copy_ccache(UnsafeMutablePointer<OM_uint32>, gss_cred_id_t, OpaquePointer) -> OM_uint32](./gss_krb5_copy_ccache%28_,_,_%29.md)
   Copies Kerberos 5 credentials into the passed cache.
 
 

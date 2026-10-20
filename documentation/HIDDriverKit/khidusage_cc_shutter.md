@@ -1,22 +1,24 @@
 # kHIDUsage_CC_Shutter
 
 **Framework**: HIDDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_CC_Shutter
 ```
 
 ## See Also
 
-- [kHIDUsage_CC_Autofocus](khidusage_cc_autofocus.md)
-- [kHIDUsage_CC_Undefined](khidusage_cc_undefined.md)
+### Getting the Usages
+- [kHIDUsage_CC_Autofocus](./khidusage_cc_autofocus.md)
+- [kHIDUsage_CC_Undefined](./khidusage_cc_undefined.md)
 
 
 ---

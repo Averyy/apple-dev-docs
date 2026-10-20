@@ -1,7 +1,8 @@
 # dominantLanguage
 
 **Framework**: Natural Language  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dominant language of the string set for the linguistic tagger.
 
@@ -20,9 +21,13 @@ The dominant language of the string set for the linguistic tagger.
 var dominantLanguage: NLLanguage? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NLLanguage dominantLanguage;
+```
+
 #### Discussion
 
-If you want to know the dominant language of a string that you’re analyzing with a linguistic tagger (for example, identifying part of speech for each word), specify the [`language`](nltagscheme/language.md) tag scheme in the initializer. After you set the [`string`](nltagger/string.md) property of the linguistic tagger, the dominant language can be determined with the [`dominantLanguage`](nltagger/dominantlanguage.md) property, as shown in this example:
+If you want to know the dominant language of a string that you’re analyzing with a linguistic tagger (for example, identifying part of speech for each word), specify the [`language`](../nltagscheme/language.md) tag scheme in the initializer. After you set the [`string`](./string.md) property of the linguistic tagger, the dominant language can be determined with the [`dominantLanguage`](./dominantlanguage.md) property, as shown in this example:
 
 ```swift
 let text = "Die Kleinen haben friedlich zusammen gespielt."
@@ -31,13 +36,14 @@ tagger.string = text
 tagger.dominantLanguage // NLLanguage.german
 ```
 
-In the example, [`german`](nllanguage/german.md) is the dominant language, indicating that the text is in German.
+In the example, [`german`](../nllanguage/german.md) is the dominant language, indicating that the text is in German.
 
 ## See Also
 
-- [func setLanguage(NLLanguage, range: Range<String.Index>)](nltagger/setlanguage(_:range:).md)
+### Determining the dominant language and orthography
+- [func setLanguage(NLLanguage, range: Range<String.Index>)](./setlanguage%28_,range%29.md)
   Sets the language for a range of text within the tagger’s string.
-- [func setOrthography(NSOrthography, range: Range<String.Index>)](nltagger/setorthography(_:range:).md)
+- [func setOrthography(NSOrthography, range: Range<String.Index>)](./setorthography%28_,range%29.md)
   Sets the orthography for the specified range.
 
 

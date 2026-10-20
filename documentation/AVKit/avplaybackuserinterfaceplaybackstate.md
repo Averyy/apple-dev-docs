@@ -1,7 +1,8 @@
 # AVPlaybackUserInterfacePlaybackState
 
 **Framework**: AVKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Describes possible transport states of the playback source.
 
@@ -16,33 +17,38 @@ Describes possible transport states of the playback source.
 enum AVPlaybackUserInterfacePlaybackState
 ```
 
+```c
+enum AVPlaybackUserInterfacePlaybackState : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [AVPlaybackUserInterfacePlaybackState.normal](avplaybackuserinterfaceplaybackstate/normal.md)
+- [AVPlaybackUserInterfacePlaybackState.normal](./avplaybackuserinterfaceplaybackstate/normal.md)
   Indicates the source is in a normal state.
-- [AVPlaybackUserInterfacePlaybackState.scanning](avplaybackuserinterfaceplaybackstate/scanning.md)
+- [AVPlaybackUserInterfacePlaybackState.scanning](./avplaybackuserinterfaceplaybackstate/scanning.md)
   Indicates the source is scanning forward or backward at an accelerated rate.
-- [AVPlaybackUserInterfacePlaybackState.scrubbing](avplaybackuserinterfaceplaybackstate/scrubbing.md)
+- [AVPlaybackUserInterfacePlaybackState.scrubbing](./avplaybackuserinterfaceplaybackstate/scrubbing.md)
   Indicates the source is being scrubbed by user interaction with the timeline.
 ### Initializers
-- [init?(rawValue: Int)](avplaybackuserinterfaceplaybackstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avplaybackuserinterfaceplaybackstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol AVPlaybackUserInterfacePlaybackControllable](avplaybackuserinterfaceplaybackcontrollable-9he54.md)
+### Playback control
+- [protocol AVPlaybackUserInterfacePlaybackControllable](./avplaybackuserinterfaceplaybackcontrollable-9he54.md)
   Provides playback control and state management for media content.
-- [struct AVPlaybackUserInterfaceSeekCapabilities](avplaybackuserinterfaceseekcapabilities.md)
+- [struct AVPlaybackUserInterfaceSeekCapabilities](./avplaybackuserinterfaceseekcapabilities.md)
   Describes navigation capabilities of the media source.
 
 

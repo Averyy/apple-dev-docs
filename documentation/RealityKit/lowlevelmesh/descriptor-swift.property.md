@@ -1,7 +1,8 @@
 # descriptor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The definition of the structure of this low-level mesh.
 
@@ -22,11 +23,12 @@ final let descriptor: LowLevelMesh.Descriptor
 
 ## See Also
 
-- [var parts: LowLevelMesh.PartsCollection](lowlevelmesh/parts.md)
+### Describing a low-level mesh
+- [var parts: LowLevelMesh.PartsCollection](./parts.md)
   A mutable collection of parts.
-- [var indexCapacity: Int](lowlevelmesh/indexcapacity.md)
+- [var indexCapacity: Int](./indexcapacity.md)
   The capacity of the index buffer, measured in indices.
-- [var vertexCapacity: Int](lowlevelmesh/vertexcapacity.md)
+- [var vertexCapacity: Int](./vertexcapacity.md)
   The capacity of the vertex buffer, measured in vertices.
 
 

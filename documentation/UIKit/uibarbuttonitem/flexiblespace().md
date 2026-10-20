@@ -1,7 +1,8 @@
 # flexibleSpace()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new flexible-width space item.
 
@@ -18,15 +19,20 @@ Creates a new flexible-width space item.
 class func flexibleSpace() -> Self
 ```
 
+```objc
++ (instancetype) flexibleSpaceItem;
+```
+
 #### Return Value
 
-A flexible-width space [`UIBarButtonItem`](uibarbuttonitem.md).
+A flexible-width space [`UIBarButtonItem`](../uibarbuttonitem.md).
 
 ## See Also
 
-- [class func fixedSpace(CGFloat) -> Self](uibarbuttonitem/fixedspace(_:).md)
+### Creating space items
+- [class func fixedSpace(CGFloat) -> Self](./fixedspace%28_%29.md)
   Creates a new fixed-width space item.
-- [class func fixedSpace() -> Self](uibarbuttonitem/fixedspace.md)
+- [class func fixedSpace() -> Self](./fixedspace%28%29.md)
   Creates a new fixed space item of zero width.
 
 

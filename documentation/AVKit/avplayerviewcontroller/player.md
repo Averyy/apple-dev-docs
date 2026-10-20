@@ -1,7 +1,8 @@
 # player
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The player object that provides the media content for the view controller to display.
 
@@ -16,6 +17,10 @@ The player object that provides the media content for the view controller to dis
 
 ```swift
 var player: AVPlayer? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) AVPlayer * player;
 ```
 
 

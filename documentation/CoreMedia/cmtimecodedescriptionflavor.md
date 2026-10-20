@@ -1,7 +1,8 @@
 # CMTimeCodeDescriptionFlavor
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Types that represent time code format descriptions.
 
@@ -20,42 +21,47 @@ Types that represent time code format descriptions.
 struct CMTimeCodeDescriptionFlavor
 ```
 
+```c
+typedef CFStringRef CMTimeCodeDescriptionFlavor;
+```
+
 ## Topics
 
 ### Creating a Timecode Description Flavor
-- [init(CFString)](cmtimecodedescriptionflavor/init(_:).md)
+- [init(CFString)](./cmtimecodedescriptionflavor/init%28_%29.md)
   Creates a time code description flavor.
-- [init(rawValue: CFString)](cmtimecodedescriptionflavor/init(rawvalue:).md)
+- [init(rawValue: CFString)](./cmtimecodedescriptionflavor/init%28rawvalue%29.md)
   Creates a time code description flavor.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func CMTimeCodeFormatDescriptionCreate(allocator: CFAllocator?, timeCodeFormatType: CMTimeCodeFormatType, frameDuration: CMTime, frameQuanta: UInt32, flags: UInt32, extensions: CFDictionary?, formatDescriptionOut: UnsafeMutablePointer<CMTimeCodeFormatDescription?>) -> OSStatus](cmtimecodeformatdescriptioncreate(allocator:timecodeformattype:frameduration:framequanta:flags:extensions:formatdescriptionout:).md)
+### Working with Time Code Descriptions
+- [func CMTimeCodeFormatDescriptionCreate(allocator: CFAllocator?, timeCodeFormatType: CMTimeCodeFormatType, frameDuration: CMTime, frameQuanta: UInt32, flags: UInt32, extensions: CFDictionary?, formatDescriptionOut: UnsafeMutablePointer<CMTimeCodeFormatDescription?>) -> OSStatus](./cmtimecodeformatdescriptioncreate%28allocator,timecodeformattype,frameduration,framequanta,flags,extensions,formatdescriptionout%29.md)
   Creates a format description for time code media.
-- [func CMTimeCodeFormatDescriptionGetFrameDuration(CMTimeCodeFormatDescription) -> CMTime](cmtimecodeformatdescriptiongetframeduration(_:).md)
+- [func CMTimeCodeFormatDescriptionGetFrameDuration(CMTimeCodeFormatDescription) -> CMTime](./cmtimecodeformatdescriptiongetframeduration%28_%29.md)
   Returns the duration of each frame.
-- [func CMTimeCodeFormatDescriptionGetFrameQuanta(CMTimeCodeFormatDescription) -> UInt32](cmtimecodeformatdescriptiongetframequanta(_:).md)
+- [func CMTimeCodeFormatDescriptionGetFrameQuanta(CMTimeCodeFormatDescription) -> UInt32](./cmtimecodeformatdescriptiongetframequanta%28_%29.md)
   Returns the frames per second for a time code, or frames per tick in counter mode.
-- [func CMTimeCodeFormatDescriptionGetTimeCodeFlags(CMTimeCodeFormatDescription) -> UInt32](cmtimecodeformatdescriptiongettimecodeflags(_:).md)
+- [func CMTimeCodeFormatDescriptionGetTimeCodeFlags(CMTimeCodeFormatDescription) -> UInt32](./cmtimecodeformatdescriptiongettimecodeflags%28_%29.md)
   Returns time code flags.
-- [func CMTimeCodeFormatDescriptionCopyAsBigEndianTimeCodeDescriptionBlockBuffer(allocator: CFAllocator?, timeCodeFormatDescription: CMTimeCodeFormatDescription, flavor: CMTimeCodeDescriptionFlavor?, blockBufferOut: UnsafeMutablePointer<CMBlockBuffer?>) -> OSStatus](cmtimecodeformatdescriptioncopyasbigendiantimecodedescriptionblockbuffer(allocator:timecodeformatdescription:flavor:blockbufferout:).md)
+- [func CMTimeCodeFormatDescriptionCopyAsBigEndianTimeCodeDescriptionBlockBuffer(allocator: CFAllocator?, timeCodeFormatDescription: CMTimeCodeFormatDescription, flavor: CMTimeCodeDescriptionFlavor?, blockBufferOut: UnsafeMutablePointer<CMBlockBuffer?>) -> OSStatus](./cmtimecodeformatdescriptioncopyasbigendiantimecodedescriptionblockbuffer%28allocator,timecodeformatdescription,flavor,blockbufferout%29.md)
   Copies the contents of a time code format description to a buffer in big-endian byte order.
-- [func CMTimeCodeFormatDescriptionCreateFromBigEndianTimeCodeDescriptionBlockBuffer(allocator: CFAllocator?, bigEndianTimeCodeDescriptionBlockBuffer: CMBlockBuffer, flavor: CMTimeCodeDescriptionFlavor?, formatDescriptionOut: UnsafeMutablePointer<CMTimeCodeFormatDescription?>) -> OSStatus](cmtimecodeformatdescriptioncreatefrombigendiantimecodedescriptionblockbuffer(allocator:bigendiantimecodedescriptionblockbuffer:flavor:formatdescriptionout:).md)
+- [func CMTimeCodeFormatDescriptionCreateFromBigEndianTimeCodeDescriptionBlockBuffer(allocator: CFAllocator?, bigEndianTimeCodeDescriptionBlockBuffer: CMBlockBuffer, flavor: CMTimeCodeDescriptionFlavor?, formatDescriptionOut: UnsafeMutablePointer<CMTimeCodeFormatDescription?>) -> OSStatus](./cmtimecodeformatdescriptioncreatefrombigendiantimecodedescriptionblockbuffer%28allocator,bigendiantimecodedescriptionblockbuffer,flavor,formatdescriptionout%29.md)
   Creates a time code format description from a big-endian time code description data structure in a buffer.
-- [func CMTimeCodeFormatDescriptionCreateFromBigEndianTimeCodeDescriptionData(allocator: CFAllocator?, bigEndianTimeCodeDescriptionData: UnsafePointer<UInt8>, size: Int, flavor: CMTimeCodeDescriptionFlavor?, formatDescriptionOut: UnsafeMutablePointer<CMTimeCodeFormatDescription?>) -> OSStatus](cmtimecodeformatdescriptioncreatefrombigendiantimecodedescriptiondata(allocator:bigendiantimecodedescriptiondata:size:flavor:formatdescriptionout:).md)
+- [func CMTimeCodeFormatDescriptionCreateFromBigEndianTimeCodeDescriptionData(allocator: CFAllocator?, bigEndianTimeCodeDescriptionData: UnsafePointer<UInt8>, size: Int, flavor: CMTimeCodeDescriptionFlavor?, formatDescriptionOut: UnsafeMutablePointer<CMTimeCodeFormatDescription?>) -> OSStatus](./cmtimecodeformatdescriptioncreatefrombigendiantimecodedescriptiondata%28allocator,bigendiantimecodedescriptiondata,size,flavor,formatdescriptionout%29.md)
   Creates a time code format description from a big-endian time code description structure.
-- [func CMSwapBigEndianTimeCodeDescriptionToHost(UnsafeMutablePointer<UInt8>, Int) -> OSStatus](cmswapbigendiantimecodedescriptiontohost(_:_:).md)
+- [func CMSwapBigEndianTimeCodeDescriptionToHost(UnsafeMutablePointer<UInt8>, Int) -> OSStatus](./cmswapbigendiantimecodedescriptiontohost%28_,_%29.md)
   Converts a time code description data structure from big-endian to host-endian, in place.
-- [func CMSwapHostEndianTimeCodeDescriptionToBig(UnsafeMutablePointer<UInt8>, Int) -> OSStatus](cmswaphostendiantimecodedescriptiontobig(_:_:).md)
+- [func CMSwapHostEndianTimeCodeDescriptionToBig(UnsafeMutablePointer<UInt8>, Int) -> OSStatus](./cmswaphostendiantimecodedescriptiontobig%28_,_%29.md)
   Converts a time code description data structure from host-endian to big-endian, in place.
 
 

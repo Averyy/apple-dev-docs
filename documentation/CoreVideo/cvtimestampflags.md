@@ -1,7 +1,8 @@
 # CVTimeStampFlags
 
 **Framework**: Core Video  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 4.0+
@@ -18,47 +19,52 @@
 struct CVTimeStampFlags
 ```
 
+```c
+enum CVTimeStampFlags : uint64_t;
+```
+
 ## Topics
 
 ### Constants
-- [static var bottomField: CVTimeStampFlags](cvtimestampflags/bottomfield.md)
+- [static var bottomField: CVTimeStampFlags](./cvtimestampflags/bottomfield.md)
   The timestamp represents the bottom lines of an interlaced image.
-- [static var hostTimeValid: CVTimeStampFlags](cvtimestampflags/hosttimevalid.md)
+- [static var hostTimeValid: CVTimeStampFlags](./cvtimestampflags/hosttimevalid.md)
   The value in the host time field is valid.
-- [static var isInterlaced: CVTimeStampFlags](cvtimestampflags/isinterlaced.md)
+- [static var isInterlaced: CVTimeStampFlags](./cvtimestampflags/isinterlaced.md)
   A convenience constant indicating that the timestamp is for an interlaced image.
-- [static var rateScalarValid: CVTimeStampFlags](cvtimestampflags/ratescalarvalid.md)
+- [static var rateScalarValid: CVTimeStampFlags](./cvtimestampflags/ratescalarvalid.md)
   The value in the rate scalar field is valid.
-- [static var smpteTimeValid: CVTimeStampFlags](cvtimestampflags/smptetimevalid.md)
+- [static var smpteTimeValid: CVTimeStampFlags](./cvtimestampflags/smptetimevalid.md)
   The value in the SMPTE time field is valid.
-- [static var topField: CVTimeStampFlags](cvtimestampflags/topfield.md)
+- [static var topField: CVTimeStampFlags](./cvtimestampflags/topfield.md)
   The timestamp represents the top lines of an interlaced image.
-- [static var videoHostTimeValid: CVTimeStampFlags](cvtimestampflags/videohosttimevalid.md)
+- [static var videoHostTimeValid: CVTimeStampFlags](./cvtimestampflags/videohosttimevalid.md)
   A convenience constant indicating that both the video time and host time fields are valid.
-- [static var videoRefreshPeriodValid: CVTimeStampFlags](cvtimestampflags/videorefreshperiodvalid.md)
+- [static var videoRefreshPeriodValid: CVTimeStampFlags](./cvtimestampflags/videorefreshperiodvalid.md)
   The value in the video refresh period field is valid.
-- [static var videoTimeValid: CVTimeStampFlags](cvtimestampflags/videotimevalid.md)
+- [static var videoTimeValid: CVTimeStampFlags](./cvtimestampflags/videotimevalid.md)
   The value in the video time field is valid.
 ### Initializers
-- [init(rawValue: UInt64)](cvtimestampflags/init(rawvalue:).md)
+- [init(rawValue: UInt64)](./cvtimestampflags/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [enum CVSMPTETimeType](cvsmptetimetype.md)
-- [struct CVSMPTETimeFlags](cvsmptetimeflags.md)
-- [struct CVTimeFlags](cvtimeflags.md)
+### Enumerations
+- [enum CVSMPTETimeType](./cvsmptetimetype.md)
+- [struct CVSMPTETimeFlags](./cvsmptetimeflags.md)
+- [struct CVTimeFlags](./cvtimeflags.md)
 
 
 ---

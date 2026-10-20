@@ -1,14 +1,15 @@
 # kGUARD_EXC_IMMOVABLE_NON_FATAL
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 kGUARD_EXC_IMMOVABLE_NON_FATAL = 1u << 22
 ```
 

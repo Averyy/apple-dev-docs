@@ -1,17 +1,20 @@
 # region
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The geographic region associated with the placemark.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- watchOS 2.0+
+- iOS 5.0+ - Deprecated in 27.2
+- iPadOS 5.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.8+ - Deprecated in 27.2
+- tvOS 9.0+ - Deprecated in 27.0
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use either GeoToolbox.PlaceDescriptor or MapKit
 
 ## Declaration
 
@@ -20,9 +23,14 @@ The geographic region associated with the placemark.
 var region: CLRegion? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) CLRegion * region;
+```
+
 ## See Also
 
-- [var location: CLLocation?](clplacemark/location.md)
+### Getting the placemark’s location
+- [var location: CLLocation?](./location.md)
   The location object containing latitude and longitude information.
 
 

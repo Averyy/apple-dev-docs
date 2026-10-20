@@ -1,7 +1,8 @@
 # startDate
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var startDate: Date { get }
+```
+
+```objc
+@property (readonly) NSDate * startDate;
 ```
 
 

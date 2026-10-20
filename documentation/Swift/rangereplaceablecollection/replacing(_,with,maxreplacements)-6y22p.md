@@ -1,7 +1,8 @@
 # replacing(_:with:maxReplacements:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new collection in which all occurrences of a target sequence are replaced by another collection.
 
@@ -19,6 +20,8 @@ Returns a new collection in which all occurrences of a target sequence are repla
 ```swift
 func replacing<C, Replacement>(_ other: C, with replacement: Replacement, maxReplacements: Int = .max) -> Self where C : Collection, Replacement : Collection, Self.Element == C.Element, C.Element == Replacement.Element
 ```
+
+Available when `Element` conforms to `Equatable`.
 
 #### Return Value
 

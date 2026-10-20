@@ -1,7 +1,8 @@
 # enabledStateReportingDomains
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 StateReporting domains enabled for metrics aggregation
 
@@ -44,9 +45,10 @@ for await report in manager.metricReports {
 
 ## See Also
 
-- [convenience init()](metricmanager/init.md)
+### Initialization
+- [convenience init()](./init%28%29.md)
   Creates a new `MetricManager` instance without state reporting domains.
-- [init(enabledStateReportingDomains: Set<StateReportingDomain>)](metricmanager/init(enabledstatereportingdomains:).md)
+- [init(enabledStateReportingDomains: Set<StateReportingDomain>)](./init%28enabledstatereportingdomains%29.md)
   Creates a new `MetricManager` instance with state reporting domains enabled for metrics aggregation.
 
 

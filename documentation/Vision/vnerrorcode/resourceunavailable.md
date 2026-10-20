@@ -1,7 +1,8 @@
 # VNErrorCode.resourceUnavailable
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -17,37 +18,42 @@
 case resourceUnavailable
 ```
 
+```c
+VNErrorResourceUnavailable
+```
+
 ## See Also
 
-- [VNErrorCode.turiCoreErrorCode](vnerrorcode/turicoreerrorcode.md)
+### Error Codes
+- [VNErrorCode.turiCoreErrorCode](./turicoreerrorcode.md)
   An error occurred during Create ML training due to an invalid transformation or image.
-- [VNErrorCode.OK](vnerrorcode/ok.md)
+- [VNErrorCode.OK](./ok.md)
   The operation finished without error.
-- [VNErrorCode.dataUnavailable](vnerrorcode/dataunavailable.md)
+- [VNErrorCode.dataUnavailable](./dataunavailable.md)
   The data isn’t available.
-- [VNErrorCode.internalError](vnerrorcode/internalerror.md)
+- [VNErrorCode.internalError](./internalerror.md)
   An internal error occurred within the framework.
-- [VNErrorCode.invalidArgument](vnerrorcode/invalidargument.md)
+- [VNErrorCode.invalidArgument](./invalidargument.md)
   An app passed an invalid parameter to a request.
-- [VNErrorCode.invalidFormat](vnerrorcode/invalidformat.md)
+- [VNErrorCode.invalidFormat](./invalidformat.md)
   The format of the image is invalid.
-- [VNErrorCode.invalidImage](vnerrorcode/invalidimage.md)
+- [VNErrorCode.invalidImage](./invalidimage.md)
   The image is invalid.
-- [VNErrorCode.invalidModel](vnerrorcode/invalidmodel.md)
+- [VNErrorCode.invalidModel](./invalidmodel.md)
   The Core ML model is incompatible with the request.
-- [VNErrorCode.invalidOperation](vnerrorcode/invalidoperation.md)
+- [VNErrorCode.invalidOperation](./invalidoperation.md)
   An app requested an unsupported operation.
-- [VNErrorCode.invalidOption](vnerrorcode/invalidoption.md)
+- [VNErrorCode.invalidOption](./invalidoption.md)
   An app specified an invalid option on a request.
-- [VNErrorCode.ioError](vnerrorcode/ioerror.md)
+- [VNErrorCode.ioError](./ioerror.md)
   An I/O error for an image, image sequence, or Core ML model.
-- [VNErrorCode.missingOption](vnerrorcode/missingoption.md)
+- [VNErrorCode.missingOption](./missingoption.md)
   A request is missing a required option.
-- [VNErrorCode.notImplemented](vnerrorcode/notimplemented.md)
+- [VNErrorCode.notImplemented](./notimplemented.md)
   The method isn’t implemented in the underlying model.
-- [VNErrorCode.operationFailed](vnerrorcode/operationfailed.md)
+- [VNErrorCode.operationFailed](./operationfailed.md)
   The requested operation failed.
-- [VNErrorCode.outOfBoundsError](vnerrorcode/outofboundserror.md)
+- [VNErrorCode.outOfBoundsError](./outofboundserror.md)
   An app attempted to access data that’s out-of-bounds.
 
 

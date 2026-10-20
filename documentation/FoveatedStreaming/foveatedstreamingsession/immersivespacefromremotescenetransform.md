@@ -1,12 +1,13 @@
 # immersiveSpaceFromRemoteSceneTransform
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A transform matrix which maps from the streamed scene’s coordinate space origin to the origin of the app’s immersive space.
 
 **Availability**:
-- visionOS 26.4+
+- visionOS 26.4+ - Deprecated in 27.0 (renamed: immersiveSpaceFromRemoteSpaceTransform)
 
 ## Declaration
 

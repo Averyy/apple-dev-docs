@@ -1,7 +1,8 @@
 # calendar
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Calendar events, meetings, and scheduled items.
 
@@ -20,9 +21,10 @@ static var calendar: SpotlightSearchTool.ContentDomain { get }
 
 ## See Also
 
-- [static func calendar(SpotlightSearchTool.ContentDomain.Calendar) -> SpotlightSearchTool.ContentDomain](spotlightsearchtool/contentdomain/calendar(_:).md)
+### Getting the calendar domain
+- [static func calendar(SpotlightSearchTool.ContentDomain.Calendar) -> SpotlightSearchTool.ContentDomain](./calendar%28_%29.md)
   Calendar events, meetings, and scheduled items with custom attribute mapping.
-- [SpotlightSearchTool.ContentDomain.Calendar](spotlightsearchtool/contentdomain/calendar-swift.struct.md)
+- [SpotlightSearchTool.ContentDomain.Calendar](./calendar-swift.struct.md)
   Attribute mapping for the calendar domain.
 
 

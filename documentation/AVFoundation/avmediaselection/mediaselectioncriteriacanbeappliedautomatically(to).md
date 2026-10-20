@@ -1,7 +1,8 @@
 # mediaSelectionCriteriaCanBeAppliedAutomatically(to:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether the specified media selection group is subject to automatic media selection.
 
@@ -20,13 +21,17 @@ Indicates whether the specified media selection group is subject to automatic me
 func mediaSelectionCriteriaCanBeAppliedAutomatically(to mediaSelectionGroup: AVMediaSelectionGroup) -> Bool
 ```
 
+```objc
+- (BOOL) mediaSelectionCriteriaCanBeAppliedAutomaticallyToMediaSelectionGroup:(AVMediaSelectionGroup *) mediaSelectionGroup;
+```
+
 #### Return Value
 
 A Boolean value indicating whether the group is subject to automatic media selection.
 
 #### Discussion
 
-The automatic application of media selection criteria is suspended in any group in which a specific selection has been made by calling [`select(_:in:)`](avplayeritem/select(_:in:).md) on the current [`AVPlayerItem`](avplayeritem.md).
+The automatic application of media selection criteria is suspended in any group in which a specific selection has been made by calling [`select(_:in:)`](../avplayeritem/select%28_,in%29.md) on the current [`AVPlayerItem`](../avplayeritem.md).
 
 ## Parameters
 
@@ -34,7 +39,8 @@ The automatic application of media selection criteria is suspended in any group 
 
 ## See Also
 
-- [func selectedMediaOption(in: AVMediaSelectionGroup) -> AVMediaSelectionOption?](avmediaselection/selectedmediaoption(in:).md)
+### Inspecting the media selection
+- [func selectedMediaOption(in: AVMediaSelectionGroup) -> AVMediaSelectionOption?](./selectedmediaoption%28in%29.md)
   Returns the media selection option that’s currently selected in the specified group.
 
 

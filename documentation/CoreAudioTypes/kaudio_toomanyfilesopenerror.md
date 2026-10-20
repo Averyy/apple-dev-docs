@@ -1,7 +1,8 @@
 # kAudio_TooManyFilesOpenError
 
 **Framework**: Core Audio Types  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 7.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var kAudio_TooManyFilesOpenError: OSStatus { get }
+```
+
+```c
+kAudio_TooManyFilesOpenError
 ```
 
 

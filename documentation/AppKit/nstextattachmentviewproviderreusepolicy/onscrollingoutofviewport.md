@@ -1,10 +1,11 @@
 # onScrollingOutOfViewport
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 static var onScrollingOutOfViewport: NSTextAttachmentViewProviderReusePolicy { get }
 ```
 
+```c
+NSTextAttachmentViewProviderReusePolicyOnScrollingOutOfViewport
+```
+
 ## See Also
 
-- [static var onEditingInlineParagraphs: NSTextAttachmentViewProviderReusePolicy](nstextattachmentviewproviderreusepolicy/oneditinginlineparagraphs.md)
+### Specifying reuse policy options
+- [static var onEditingInlineParagraphs: NSTextAttachmentViewProviderReusePolicy](./oneditinginlineparagraphs.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # GlobalPreferences
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload to configure global preferences.
 
@@ -10,7 +11,7 @@ The payload to configure global preferences.
 
 ## Declaration
 
-```swift
+```
 object GlobalPreferences
 ```
 
@@ -18,7 +19,7 @@ object GlobalPreferences
 
 Specify `.GlobalPreferences` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `.GlobalPreferences` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -75,9 +76,12 @@ Specify `.GlobalPreferences` as the payload type.
 - `com.apple.autologout.AutoLogOutDelay` (number): The `autologout` delay, in seconds. A value of `0` means `autologout` is off. In some cases, this delay may be restricted to values between 5 minutes and 24 hours.
 - `MultipleSessionEnabled` (boolean): If `false`, disables fast user switching.
 
+  **Default**: `true`
+
 ## See Also
 
-- [object UserPreferences](userpreferences.md)
+### Preferences
+- [object UserPreferences](./userpreferences.md)
   The payload that configures iCloud password preferences.
 
 

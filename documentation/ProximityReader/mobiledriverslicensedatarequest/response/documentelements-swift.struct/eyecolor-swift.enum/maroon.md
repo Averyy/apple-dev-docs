@@ -1,7 +1,8 @@
 # MobileDriversLicenseDataRequest.Response.DocumentElements.EyeColor.maroon
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An eye color of maroon.
 

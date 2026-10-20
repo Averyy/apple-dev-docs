@@ -1,7 +1,8 @@
 # writeValue(_:for:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes the value of a characteristic descriptor.
 
@@ -20,13 +21,17 @@ Writes the value of a characteristic descriptor.
 func writeValue(_ data: Data, for descriptor: CBDescriptor)
 ```
 
+```objc
+- (void) writeValue:(NSData *) data forDescriptor:(CBDescriptor *) descriptor;
+```
+
 #### Discussion
 
-When you call this method to write the value of a characteristic descriptor, the peripheral calls the [`peripheral(_:didWriteValueFor:error:)`](cbperipheraldelegate/peripheral(_:didwritevaluefor:error:)-1ybl3.md) method of its delegate object.
+When you call this method to write the value of a characteristic descriptor, the peripheral calls the [`peripheral(_:didWriteValueFor:error:)`](../cbperipheraldelegate/peripheral%28_,didwritevaluefor,error%29-1ybl3.md) method of its delegate object.
 
 This method copies the `data` passed into the data parameter, and you can dispose of it after the method returns.
 
-You can’t use this method to write the value of a client configuration descriptor (represented by the [`CBUUIDClientCharacteristicConfigurationString`](cbuuidclientcharacteristicconfigurationstring.md) constant), which describes the configuration of notification or indications for a characteristic’s value. If you want to manage notifications or indications for a characteristic’s value, you must use the [`setNotifyValue(_:for:)`](cbperipheral/setnotifyvalue(_:for:).md) method instead.
+You can’t use this method to write the value of a client configuration descriptor (represented by the [`CBUUIDClientCharacteristicConfigurationString`](../cbuuidclientcharacteristicconfigurationstring.md) constant), which describes the configuration of notification or indications for a characteristic’s value. If you want to manage notifications or indications for a characteristic’s value, you must use the [`setNotifyValue(_:for:)`](./setnotifyvalue%28_,for%29.md) method instead.
 
 ## Parameters
 
@@ -35,11 +40,12 @@ You can’t use this method to write the value of a client configuration descrip
 
 ## See Also
 
-- [func writeValue(Data, for: CBCharacteristic, type: CBCharacteristicWriteType)](cbperipheral/writevalue(_:for:type:).md)
+### Writing Characteristic and Descriptor Values
+- [func writeValue(Data, for: CBCharacteristic, type: CBCharacteristicWriteType)](./writevalue%28_,for,type%29.md)
   Writes the value of a characteristic.
-- [func maximumWriteValueLength(for: CBCharacteristicWriteType) -> Int](cbperipheral/maximumwritevaluelength(for:).md)
+- [func maximumWriteValueLength(for: CBCharacteristicWriteType) -> Int](./maximumwritevaluelength%28for%29.md)
   The maximum amount of data, in bytes, you can send to a characteristic in a single write type.
-- [enum CBCharacteristicWriteType](cbcharacteristicwritetype.md)
+- [enum CBCharacteristicWriteType](../cbcharacteristicwritetype.md)
   Values representing the possible write types to a characteristic’s value.
 
 

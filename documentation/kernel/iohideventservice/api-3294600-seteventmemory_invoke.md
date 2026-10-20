@@ -1,14 +1,15 @@
 # SetEventMemory_Invoke
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.15+ - Deprecated in 10.15.1
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t SetEventMemory_Invoke(const IORPC rpc, OSMetaClassBase *target, SetEventMemory_Handler func);
 ```
 

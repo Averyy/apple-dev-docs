@@ -2,6 +2,7 @@
 
 **Framework**: TipKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 A builder that makes the body of the tip view based on a style configuration.

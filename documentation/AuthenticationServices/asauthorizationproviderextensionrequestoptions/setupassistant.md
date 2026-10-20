@@ -1,7 +1,8 @@
 # setupAssistant
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 26.0+
@@ -10,6 +11,10 @@
 
 ```swift
 static var setupAssistant: ASAuthorizationProviderExtensionRequestOptions { get }
+```
+
+```c
+ASAuthorizationProviderExtensionRequestOptionsSetupAssistant
 ```
 
 

@@ -1,13 +1,14 @@
 # AsyncShareablePassConfiguration
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,32 +20,33 @@
 ## Topics
 
 ### Creating the configuration
-- [init(metadata: [PKShareablePassMetadata], action: PKAddShareablePassConfigurationPrimaryAction, content: (AsyncShareablePassConfiguration<Content>.Result) -> Content)](asyncshareablepassconfiguration/init(metadata:action:content:).md)
-- [AsyncShareablePassConfiguration.Result](asyncshareablepassconfiguration/result.md)
+- [init(metadata: [PKShareablePassMetadata], action: PKAddShareablePassConfigurationPrimaryAction, content: (AsyncShareablePassConfiguration<Content>.Result) -> Content)](./asyncshareablepassconfiguration/init%28metadata,action,content%29.md)
+- [AsyncShareablePassConfiguration.Result](./asyncshareablepassconfiguration/result.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [class PKSecureElementPass](pksecureelementpass.md)
+### General purpose passes
+- [class PKSecureElementPass](./pksecureelementpass.md)
   A pass with a credential that the device stores in a certified payment information chip.
-- [class PKAddSecureElementPassConfiguration](pkaddsecureelementpassconfiguration.md)
+- [class PKAddSecureElementPassConfiguration](./pkaddsecureelementpassconfiguration.md)
   An object that describes the configuration of a secure element payment pass.
-- [class PKAddSecureElementPassViewController](pkaddsecureelementpassviewcontroller.md)
+- [class PKAddSecureElementPassViewController](./pkaddsecureelementpassviewcontroller.md)
   A view controller that manages the addition of secure element payment passes.
-- [class PKPass](pkpass.md)
+- [class PKPass](./pkpass.md)
   An object that represents a single pass.
-- [class PKAddPassesViewController](pkaddpassesviewcontroller.md)
+- [class PKAddPassesViewController](./pkaddpassesviewcontroller.md)
   Lets your app show a pass and prompt the user to add that pass to the pass library.
-- [class PKShareSecureElementPassViewController](pksharesecureelementpassviewcontroller.md)
-- [protocol PKShareSecureElementPassViewControllerDelegate](pksharesecureelementpassviewcontrollerdelegate.md)
-- [PKShareablePassMetadata.Preview](pkshareablepassmetadata/preview-swift.class.md)
-- [enum PKShareSecureElementPassResult](pksharesecureelementpassresult.md)
+- [class PKShareSecureElementPassViewController](./pksharesecureelementpassviewcontroller.md)
+- [protocol PKShareSecureElementPassViewControllerDelegate](./pksharesecureelementpassviewcontrollerdelegate.md)
+- [PKShareablePassMetadata.Preview](./pkshareablepassmetadata/preview-swift.class.md)
+- [enum PKShareSecureElementPassResult](./pksharesecureelementpassresult.md)
 
 
 ---

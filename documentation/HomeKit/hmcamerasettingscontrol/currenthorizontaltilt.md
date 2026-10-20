@@ -1,7 +1,8 @@
 # currentHorizontalTilt
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Characteristic corresponding to the camera’s current horizontal tilt setting.
 
@@ -19,23 +20,28 @@ Characteristic corresponding to the camera’s current horizontal tilt setting.
 var currentHorizontalTilt: HMCharacteristic? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) HMCharacteristic * currentHorizontalTilt;
+```
+
 ## See Also
 
-- [var targetHorizontalTilt: HMCharacteristic?](hmcamerasettingscontrol/targethorizontaltilt.md)
+### Controlling camera characteristics
+- [var targetHorizontalTilt: HMCharacteristic?](./targethorizontaltilt.md)
   Characteristic corresponding to adjusting the camera’s horizontal tilt setting.
-- [var currentVerticalTilt: HMCharacteristic?](hmcamerasettingscontrol/currentverticaltilt.md)
+- [var currentVerticalTilt: HMCharacteristic?](./currentverticaltilt.md)
   Characteristic corresponding to the camera’s current vertical tilt setting.
-- [var targetVerticalTilt: HMCharacteristic?](hmcamerasettingscontrol/targetverticaltilt.md)
+- [var targetVerticalTilt: HMCharacteristic?](./targetverticaltilt.md)
   Characteristic corresponding to adjusting the camera’s vertical tilt setting.
-- [var opticalZoom: HMCharacteristic?](hmcamerasettingscontrol/opticalzoom.md)
+- [var opticalZoom: HMCharacteristic?](./opticalzoom.md)
   Characteristic corresponding to the camera’s optical zoom setting.
-- [var digitalZoom: HMCharacteristic?](hmcamerasettingscontrol/digitalzoom.md)
+- [var digitalZoom: HMCharacteristic?](./digitalzoom.md)
   Characteristic corresponding to the camera’s digital zoom setting.
-- [var imageMirroring: HMCharacteristic?](hmcamerasettingscontrol/imagemirroring.md)
+- [var imageMirroring: HMCharacteristic?](./imagemirroring.md)
   Characteristic corresponding to the camera’s image mirroring setting.
-- [var imageRotation: HMCharacteristic?](hmcamerasettingscontrol/imagerotation.md)
+- [var imageRotation: HMCharacteristic?](./imagerotation.md)
   Characteristic corresponding to the camera’s image rotation setting.
-- [var nightVision: HMCharacteristic?](hmcamerasettingscontrol/nightvision.md)
+- [var nightVision: HMCharacteristic?](./nightvision.md)
   Characteristic corresponding to the camera’s night vision setting.
 
 

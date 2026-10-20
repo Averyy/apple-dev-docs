@@ -1,7 +1,8 @@
 # orientationDemand
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The settings of the orientational demand.
 

@@ -1,14 +1,15 @@
 # kIOAudioChannelLabel_Ambisonic_Z
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOAudioChannelLabel_Ambisonic_Z = 203
 ```
 

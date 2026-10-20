@@ -1,7 +1,8 @@
 # grouped(by:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a grouping of rows that the method selects by choosing unique values in a column.
 
@@ -26,9 +27,10 @@ func grouped(by columnName: String) -> any RowGroupingProtocol
 
 ## See Also
 
-- [struct RowGrouping](rowgrouping.md)
+### Grouping Rows
+- [struct RowGrouping](../rowgrouping.md)
   A collection of row selections that have the same value in a column.
-- [protocol RowGroupingProtocol](rowgroupingprotocol.md)
+- [protocol RowGroupingProtocol](../rowgroupingprotocol.md)
   A type that represents a collection of row selections that have the same value in a column.
 
 

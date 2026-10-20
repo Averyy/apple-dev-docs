@@ -1,7 +1,8 @@
 # isContinuous
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the data series is continuous.
 
@@ -20,11 +21,16 @@ A Boolean value that determines whether the data series is continuous.
 var isContinuous: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL isContinuous;
+```
+
 ## See Also
 
-- [var dataPoints: [AXDataPoint]](axdataseriesdescriptor/datapoints.md)
+### Configuring the data points
+- [var dataPoints: [AXDataPoint]](./datapoints.md)
   The data points that the series contains.
-- [class AXDataPoint](axdatapoint.md)
+- [class AXDataPoint](../axdatapoint.md)
   An object that represents a single data point in a chart.
 
 

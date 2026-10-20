@@ -1,14 +1,15 @@
 # ASErrorDomain
 
 **Framework**: AccessorySetupKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 NSError domain for AccessorySetupKit errors.
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -16,11 +17,16 @@ NSError domain for AccessorySetupKit errors.
 let ASErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const ASErrorDomain;
+```
+
 ## See Also
 
-- [struct ASError](aserror.md)
+### Errors
+- [struct ASError](./aserror.md)
   An error encountered during accessory discovery.
-- [ASError.Code](aserror/code.md)
+- [ASError.Code](./aserror/code.md)
   Codes that describe errors encountered during accessory discovery.
 
 

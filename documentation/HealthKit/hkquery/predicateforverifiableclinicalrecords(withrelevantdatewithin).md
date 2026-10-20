@@ -1,7 +1,8 @@
 # predicateForVerifiableClinicalRecords(withRelevantDateWithin:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a predicate that finds verifiable health records with a relevant date within the specified range.
 
@@ -19,9 +20,13 @@ Returns a predicate that finds verifiable health records with a relevant date wi
 class func predicateForVerifiableClinicalRecords(withRelevantDateWithin dateInterval: DateInterval) -> NSPredicate
 ```
 
+```objc
++ (NSPredicate *) predicateForVerifiableClinicalRecordsWithRelevantDateWithinDateInterval:(NSDateInterval *) dateInterval;
+```
+
 #### Discussion
 
-The resulting predicate matches [`HKVerifiableClinicalRecord`](hkverifiableclinicalrecord.md) instances that have a [`relevantDate`](hkverifiableclinicalrecord/relevantdate.md) property within the specified date interval.
+The resulting predicate matches [`HKVerifiableClinicalRecord`](../hkverifiableclinicalrecord.md) instances that have a [`relevantDate`](../hkverifiableclinicalrecord/relevantdate.md) property within the specified date interval.
 
 ## Parameters
 
@@ -29,9 +34,10 @@ The resulting predicate matches [`HKVerifiableClinicalRecord`](hkverifiableclini
 
 ## See Also
 
-- [class func predicateForClinicalRecords(from: HKSource, fhirResourceType: HKFHIRResourceType, identifier: String) -> NSPredicate](hkquery/predicateforclinicalrecords(from:fhirresourcetype:identifier:).md)
+### Creating clinical record predicates
+- [class func predicateForClinicalRecords(from: HKSource, fhirResourceType: HKFHIRResourceType, identifier: String) -> NSPredicate](./predicateforclinicalrecords%28from,fhirresourcetype,identifier%29.md)
   Returns a predicate for a specific FHIR resource.
-- [class func predicateForClinicalRecords(withFHIRResourceType: HKFHIRResourceType) -> NSPredicate](hkquery/predicateforclinicalrecords(withfhirresourcetype:).md)
+- [class func predicateForClinicalRecords(withFHIRResourceType: HKFHIRResourceType) -> NSPredicate](./predicateforclinicalrecords%28withfhirresourcetype%29.md)
   Returns a predicate for a specific FHIR type.
 
 

@@ -1,7 +1,8 @@
 # startSend(_:metadata:handler:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Send partial text on a connection.
 
@@ -19,6 +20,8 @@ Send partial text on a connection.
 ```swift
 func startSend(_ content: String, @ProtocolMetadataBuilder metadata builder: () -> [NWProtocolMetadata] = {[]}, handler: ((String, Bool) async throws -> Void) async throws -> Void) async throws
 ```
+
+Available when `ApplicationProtocol` is `WebSocket`.
 
 #### Discussion
 

@@ -1,13 +1,14 @@
 # Deprecated Symbols
 
-**Framework**: CarPlay
+**Framework**: CarPlay  
+**Role**: API Collection
 
 Symbols that the CarPlay framework no longer supports.
 
 ## Topics
 
 ### Application Life Cycle
-- [protocol CPApplicationDelegate](cpapplicationdelegate.md)
+- [protocol CPApplicationDelegate](./cpapplicationdelegate.md)
   The interface for handling CarPlay life-cycle events.
 
 

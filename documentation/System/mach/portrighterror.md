@@ -1,7 +1,8 @@
 # Mach.PortRightError
 
 **Framework**: System  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible errors that can be thrown by Mach.Port operations.
 
@@ -23,17 +24,17 @@ enum PortRightError
 ## Topics
 
 ### Enumeration Cases
-- [Mach.PortRightError.deadName](mach/portrighterror/deadname.md)
+- [Mach.PortRightError.deadName](./portrighterror/deadname.md)
   Returned when an operation cannot be completed, because the Mach port right has become a dead name. This is caused by deallocation of the receive right on the other end.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

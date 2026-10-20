@@ -1,7 +1,8 @@
 # VideoPlayerEvents.VideoSizeDidChange
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -20,17 +21,17 @@ struct VideoSizeDidChange
 ## Topics
 
 ### Instance Properties
-- [let screenMeshSize: SIMD2<Float>](videoplayerevents/videosizedidchange/screenmeshsize.md)
+- [let screenMeshSize: SIMD2<Float>](./videosizedidchange/screenmeshsize.md)
   video screen mesh size in meters
-- [let videoDimension: SIMD2<Float>](videoplayerevents/videosizedidchange/videodimension.md)
+- [let videoDimension: SIMD2<Float>](./videosizedidchange/videodimension.md)
   Video resolution
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

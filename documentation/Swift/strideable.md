@@ -1,7 +1,8 @@
 # Strideable
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type representing continuous, one-dimensional values that can be offset and measured.
 
@@ -99,64 +100,65 @@ for date in stride(from: startDate, to: endDate, by: 7) {
 ## Topics
 
 ### Getting an Offset Value
-- [func advanced(by: Self.Stride) -> Self](strideable/advanced(by:).md)
+- [func advanced(by: Self.Stride) -> Self](./strideable/advanced%28by%29.md)
   Returns a value that is offset the specified distance from this value.
-- [static func + (Self, Self.Stride) -> Self](strideable/+(_:_:)-8m1px.md)
-- [static func + (Self.Stride, Self) -> Self](strideable/+(_:_:)-94mlm.md)
-- [static func - (Self, Self.Stride) -> Self](strideable/-(_:_:)-1kjns.md)
-- [static func - (Self, Self) -> Self.Stride](strideable/-(_:_:)-2mot7.md)
+- [static func + (Self, Self.Stride) -> Self](./strideable/plus%28_,_%29-8m1px.md)
+- [static func + (Self.Stride, Self) -> Self](./strideable/plus%28_,_%29-94mlm.md)
+- [static func - (Self, Self.Stride) -> Self](./strideable/minus%28_,_%29-1kjns.md)
+- [static func - (Self, Self) -> Self.Stride](./strideable/minus%28_,_%29-2mot7.md)
 ### Comparing Values
-- [func distance(to: Self) -> Self.Stride](strideable/distance(to:).md)
+- [func distance(to: Self) -> Self.Stride](./strideable/distance%28to%29.md)
   Returns the distance from this value to the given value, expressed as a stride.
 ### Operators
-- [static func += (inout Self, Self.Stride)](strideable/+=(_:_:).md)
-- [static func -= (inout Self, Self.Stride)](strideable/-=(_:_:).md)
+- [static func += (inout Self, Self.Stride)](./strideable/pluseq%28_,_%29.md)
+- [static func -= (inout Self, Self.Stride)](./strideable/minuseq%28_,_%29.md)
 ### Associated Types
-- [associatedtype Stride : Comparable, SignedNumeric](strideable/stride.md)
+- [associatedtype Stride : Comparable, SignedNumeric](./strideable/stride.md)
   A type that represents the distance between two values.
 
 ## Relationships
 
 ### Inherits From
-- [Comparable](comparable.md)
-- [Equatable](equatable.md)
+- [Comparable](./comparable.md)
+- [Equatable](./equatable.md)
 ### Inherited By
-- [BinaryFloatingPoint](binaryfloatingpoint.md)
-- [BinaryInteger](binaryinteger.md)
-- [FixedWidthInteger](fixedwidthinteger.md)
-- [FloatingPoint](floatingpoint.md)
-- [SignedInteger](signedinteger.md)
-- [UnsignedInteger](unsignedinteger.md)
+- [BinaryFloatingPoint](./binaryfloatingpoint.md)
+- [BinaryInteger](./binaryinteger.md)
+- [FixedWidthInteger](./fixedwidthinteger.md)
+- [FloatingPoint](./floatingpoint.md)
+- [SignedInteger](./signedinteger.md)
+- [UnsignedInteger](./unsignedinteger.md)
 ### Conforming Types
-- [AutoreleasingUnsafeMutablePointer](autoreleasingunsafemutablepointer.md)
-- [Double](double.md)
-- [Float](float.md)
-- [Float16](float16.md)
-- [Float80](float80.md)
-- [Int](int.md)
-- [Int128](int128.md)
-- [Int16](int16.md)
-- [Int32](int32.md)
-- [Int64](int64.md)
-- [Int8](int8.md)
-- [UInt](uint.md)
-- [UInt128](uint128.md)
-- [UInt16](uint16.md)
-- [UInt32](uint32.md)
-- [UInt64](uint64.md)
-- [UInt8](uint8.md)
-- [UnsafeMutablePointer](unsafemutablepointer.md)
-- [UnsafeMutableRawPointer](unsafemutablerawpointer.md)
-- [UnsafePointer](unsafepointer.md)
-- [UnsafeRawPointer](unsaferawpointer.md)
+- [AutoreleasingUnsafeMutablePointer](./autoreleasingunsafemutablepointer.md)
+- [Double](./double.md)
+- [Float](./float.md)
+- [Float16](./float16.md)
+- [Float80](./float80.md)
+- [Int](./int.md)
+- [Int128](./int128.md)
+- [Int16](./int16.md)
+- [Int32](./int32.md)
+- [Int64](./int64.md)
+- [Int8](./int8.md)
+- [UInt](./uint.md)
+- [UInt128](./uint128.md)
+- [UInt16](./uint16.md)
+- [UInt32](./uint32.md)
+- [UInt64](./uint64.md)
+- [UInt8](./uint8.md)
+- [UnsafeMutablePointer](./unsafemutablepointer.md)
+- [UnsafeMutableRawPointer](./unsafemutablerawpointer.md)
+- [UnsafePointer](./unsafepointer.md)
+- [UnsafeRawPointer](./unsaferawpointer.md)
 
 ## See Also
 
-- [protocol AdditiveArithmetic](additivearithmetic.md)
+### Basic Arithmetic
+- [protocol AdditiveArithmetic](./additivearithmetic.md)
   A type with values that support addition and subtraction.
-- [protocol Numeric](numeric.md)
+- [protocol Numeric](./numeric.md)
   A type with values that support multiplication.
-- [protocol SignedNumeric](signednumeric.md)
+- [protocol SignedNumeric](./signednumeric.md)
   A numeric type with a negation operation.
 
 

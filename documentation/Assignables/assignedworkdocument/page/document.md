@@ -1,7 +1,8 @@
 # AssignedWorkDocument.Page.Document
 
 **Framework**: Assignables  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The document type this element is for.
 
@@ -9,7 +10,7 @@ The document type this element is for.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,12 @@ typealias Document = AssignedWorkDocument
 
 ## See Also
 
-- [var assignableDocumentPageID: AssignableDocument.Page.ID](assignedworkdocument/page/assignabledocumentpageid.md)
-  The [`AssignableDocument`](assignabledocument.md)  page ID that this work page ID corresponds to.
-- [AssignedWorkDocument.Page.ID](assignedworkdocument/page/id-swift.struct.md)
+### Inspecting the properties
+- [var assignableDocumentPageID: AssignableDocument.Page.ID](./assignabledocumentpageid.md)
+  The [`AssignableDocument`](../../assignabledocument.md)  page ID that this work page ID corresponds to.
+- [AssignedWorkDocument.Page.ID](./id-swift.struct.md)
   A type representing the stable identity of this page.
-- [var id: AssignedWorkDocument.Page.ID](assignedworkdocument/page/id-swift.property.md)
+- [var id: AssignedWorkDocument.Page.ID](./id-swift.property.md)
   The stable identity of this page.
 
 

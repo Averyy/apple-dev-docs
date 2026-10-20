@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct tchars {
     ...
 };
@@ -17,12 +17,12 @@ struct tchars {
 ## Topics
 
 ### Instance Properties
-- [t_brkc](tchars/1557837-t_brkc.md)
-- [t_eofc](tchars/1557842-t_eofc.md)
-- [t_intrc](tchars/1557896-t_intrc.md)
-- [t_quitc](tchars/1557878-t_quitc.md)
-- [t_startc](tchars/1557883-t_startc.md)
-- [t_stopc](tchars/1557909-t_stopc.md)
+- [t_brkc](./tchars/api-1557837-t_brkc.md)
+- [t_eofc](./tchars/api-1557842-t_eofc.md)
+- [t_intrc](./tchars/api-1557896-t_intrc.md)
+- [t_quitc](./tchars/api-1557878-t_quitc.md)
+- [t_startc](./tchars/api-1557883-t_startc.md)
+- [t_stopc](./tchars/api-1557909-t_stopc.md)
 
 
 ---

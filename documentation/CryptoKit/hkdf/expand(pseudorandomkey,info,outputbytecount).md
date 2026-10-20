@@ -1,7 +1,8 @@
 # expand(pseudoRandomKey:info:outputByteCount:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Expands cryptographically strong key material into a derived symmetric key.
 

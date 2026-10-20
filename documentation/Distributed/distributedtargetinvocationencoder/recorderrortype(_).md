@@ -2,6 +2,7 @@
 
 **Framework**: Distributed  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Record the error type of the distributed method. This method will not be invoked if the target is not throwing.
@@ -12,7 +13,7 @@ Record the error type of the distributed method. This method will not be invoked
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

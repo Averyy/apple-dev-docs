@@ -1,7 +1,8 @@
 # capabilities
 
 **Framework**: LiveCommunicationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Functionality that the conversation supports after the system applies the update.
 
@@ -20,11 +21,12 @@ var capabilities: Conversation.Capabilities?
 
 ## See Also
 
-- [var activeRemoteMembers: Set<Handle>?](conversation/update/activeremotemembers.md)
+### Attributes
+- [var activeRemoteMembers: Set<Handle>?](./activeremotemembers.md)
   All active remote participants.
-- [var localMember: Handle?](conversation/update/localmember.md)
+- [var localMember: Handle?](./localmember.md)
   The local participant in the conversation.
-- [var members: Set<Handle>?](conversation/update/members.md)
+- [var members: Set<Handle>?](./members.md)
   All participants of the conversation, including invited, but inactive remote participants.
 
 

@@ -1,7 +1,8 @@
 # init(source:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly allocated script instance from the passed source.
 
@@ -13,6 +14,10 @@ Initializes a newly allocated script instance from the passed source.
 
 ```swift
 init?(source: String)
+```
+
+```objc
+- (instancetype) initWithSource:(NSString *) source;
 ```
 
 #### Return Value
@@ -29,7 +34,8 @@ This method is a designated initializer for `NSAppleScript`.
 
 ## See Also
 
-- [init?(contentsOf: URL, error: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)](nsapplescript/init(contentsof:error:).md)
+### Initializing a Script
+- [init?(contentsOf: URL, error: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)](./init%28contentsof,error%29.md)
   Initializes a newly allocated script instance from the source identified by the passed URL.
 
 

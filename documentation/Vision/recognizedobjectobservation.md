@@ -1,7 +1,8 @@
 # RecognizedObjectObservation
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An observation with an array of classification labels that classify the recognized object.
 
@@ -27,30 +28,30 @@ The confidence of the classifications sum up to `1.0`. Multiply the classificati
 ## Topics
 
 ### Creating an observation
-- [init(VNRecognizedObjectObservation)](recognizedobjectobservation/init(_:).md)
+- [init(VNRecognizedObjectObservation)](./recognizedobjectobservation/init%28_%29.md)
   Creates a recognized object observation.
 ### Inspecting an observation
-- [enum RequestDescriptor](requestdescriptor.md)
+- [enum RequestDescriptor](./requestdescriptor.md)
   A type that describes the request and revision combination.
-- [let labels: [ClassificationObservation]](recognizedobjectobservation/labels.md)
+- [let labels: [ClassificationObservation]](./recognizedobjectobservation/labels.md)
   The classification of the recognized object.
-- [struct ClassificationObservation](classificationobservation.md)
+- [struct ClassificationObservation](./classificationobservation.md)
   An object that represents classification information that an image-analysis request produces.
 
 ## Relationships
 
 ### Conforms To
-- [BoundingBoxProviding](boundingboxproviding.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisionObservation](visionobservation.md)
+- [BoundingBoxProviding](./boundingboxproviding.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisionObservation](./visionobservation.md)
 
 
 ---

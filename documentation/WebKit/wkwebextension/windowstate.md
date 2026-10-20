@@ -1,9 +1,10 @@
 # WKWebExtension.WindowState
 
 **Framework**: WebKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Constants used by [`WKWebExtensionWindow`](wkwebextensionwindow.md) to indicate possible states of a window.
+Constants used by [`WKWebExtensionWindow`](../wkwebextensionwindow.md) to indicate possible states of a window.
 
 **Availability**:
 - iOS 18.4+
@@ -18,34 +19,39 @@ Constants used by [`WKWebExtensionWindow`](wkwebextensionwindow.md) to indicate 
 enum WindowState
 ```
 
+```c
+enum WKWebExtensionWindowState : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [WKWebExtension.WindowState.fullscreen](wkwebextension/windowstate/fullscreen.md)
+- [WKWebExtension.WindowState.fullscreen](./windowstate/fullscreen.md)
   Indicates a window is in full-screen mode.
-- [WKWebExtension.WindowState.maximized](wkwebextension/windowstate/maximized.md)
+- [WKWebExtension.WindowState.maximized](./windowstate/maximized.md)
   Indicates a window is maximized.
-- [WKWebExtension.WindowState.minimized](wkwebextension/windowstate/minimized.md)
+- [WKWebExtension.WindowState.minimized](./windowstate/minimized.md)
   Indicates a window is minimized.
-- [WKWebExtension.WindowState.normal](wkwebextension/windowstate/normal.md)
+- [WKWebExtension.WindowState.normal](./windowstate/normal.md)
   Indicates a window is in its normal state.
 ### Initializers
-- [init?(rawValue: Int)](wkwebextension/windowstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./windowstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [WKWebExtension.WindowType](wkwebextension/windowtype.md)
-  Constants used by [`WKWebExtensionWindow`](wkwebextensionwindow.md) to indicate the type of a window.
+### Enumerations
+- [WKWebExtension.WindowType](./windowtype.md)
+  Constants used by [`WKWebExtensionWindow`](../wkwebextensionwindow.md) to indicate the type of a window.
 
 
 ---

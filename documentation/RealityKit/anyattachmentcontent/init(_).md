@@ -1,9 +1,10 @@
 # init(_:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Creates an instance that type-erases [`AttachmentContent`](attachmentcontent.md).
+Creates an instance that type-erases [`AttachmentContent`](../attachmentcontent.md).
 
 **Availability**:
 - visionOS 2.0+

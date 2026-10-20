@@ -1,7 +1,8 @@
 # layer
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view’s Core Animation layer to use for rendering.
 
@@ -9,7 +10,7 @@ The view’s Core Animation layer to use for rendering.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,33 +19,38 @@ The view’s Core Animation layer to use for rendering.
 var layer: CALayer { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) CALayer * layer;
+```
+
 #### Discussion
 
-This property is never `nil`. The value of the [`layerClass`](uiview/layerclass.md) property determines the actual class of the layer object. The view is the layer’s delegate.
+This property is never `nil`. The value of the [`layerClass`](./layerclass.md) property determines the actual class of the layer object. The view is the layer’s delegate.
 
-> ⚠️ **Warning**:  Because the view is the layer’s delegate, never make the view the delegate of another [`CALayer`](https://developer.apple.com/documentation/quartzcore/calayer) object. Additionally, never change the delegate of this layer object.
+> ⚠️ **Warning**:  Because the view is the layer’s delegate, never make the view the delegate of another [`CALayer`](../../QuartzCore/calayer.md) object. Additionally, never change the delegate of this layer object.
 
 ## See Also
 
-- [var backgroundColor: UIColor?](uiview/backgroundcolor.md)
+### Configuring a view’s visual appearance
+- [var backgroundColor: UIColor?](./backgroundcolor.md)
   The view’s background color.
-- [var isHidden: Bool](uiview/ishidden.md)
+- [var isHidden: Bool](./ishidden.md)
   A Boolean value that determines whether the view is hidden.
-- [var alpha: CGFloat](uiview/alpha.md)
+- [var alpha: CGFloat](./alpha.md)
   The view’s alpha value.
-- [var isOpaque: Bool](uiview/isopaque.md)
+- [var isOpaque: Bool](./isopaque.md)
   A Boolean value that determines whether the view is opaque.
-- [var tintColor: UIColor!](uiview/tintcolor.md)
+- [var tintColor: UIColor!](./tintcolor.md)
   The first nondefault tint color value in the view’s hierarchy, ascending from and starting with the view itself.
-- [var tintAdjustmentMode: UIView.TintAdjustmentMode](uiview/tintadjustmentmode-swift.property.md)
+- [var tintAdjustmentMode: UIView.TintAdjustmentMode](./tintadjustmentmode-swift.property.md)
   The first non-default tint adjustment mode value in the view’s hierarchy, ascending from and starting with the view itself.
-- [var clipsToBounds: Bool](uiview/clipstobounds.md)
+- [var clipsToBounds: Bool](./clipstobounds.md)
   A Boolean value that determines whether subviews are confined to the bounds of the view.
-- [var clearsContextBeforeDrawing: Bool](uiview/clearscontextbeforedrawing.md)
+- [var clearsContextBeforeDrawing: Bool](./clearscontextbeforedrawing.md)
   A Boolean value that determines whether the view’s bounds should be automatically cleared before drawing.
-- [var mask: UIView?](uiview/mask.md)
+- [var mask: UIView?](./mask.md)
   An optional view whose alpha channel is used to mask a view’s content.
-- [class var layerClass: AnyClass](uiview/layerclass.md)
+- [class var layerClass: AnyClass](./layerclass.md)
   Returns the class used to create the layer for instances of this class.
 
 

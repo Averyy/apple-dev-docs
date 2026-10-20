@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Core Audio Types  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of `AudioChannelDescription`s
 

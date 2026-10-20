@@ -1,7 +1,8 @@
 # textStorageObserver
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The observer for the text storage object.
 
@@ -14,9 +15,14 @@ The observer for the text storage object.
 weak var textStorageObserver: (any NSTextStorageObserving)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSTextStorageObserving> textStorageObserver;
+```
+
 ## See Also
 
-- [protocol NSTextStorageObserving](nstextstorageobserving.md)
+### Accessing the storage controller
+- [protocol NSTextStorageObserving](../nstextstorageobserving.md)
   Optional methods that delegates implement to handle editing and transaction processing.
 
 

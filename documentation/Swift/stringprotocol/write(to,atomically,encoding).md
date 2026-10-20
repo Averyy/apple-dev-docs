@@ -1,7 +1,8 @@
 # write(to:atomically:encoding:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes the contents of the `String` to the URL specified by url using the specified encoding.
 

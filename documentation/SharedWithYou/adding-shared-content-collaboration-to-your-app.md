@@ -1,18 +1,19 @@
 # Adding shared content collaboration to your app
 
-**Framework**: Shared with You
+**Framework**: Shared with You  
+**Role**: Article
 
 Manage shared content collaboration in your app using CloudKit and iCloud Drive.
 
 #### Overview
 
-Your app can create collaborations and share content in a Messages conversation by leveraging [`CloudKit`](https://developer.apple.com/documentation/cloudkit) and iCloud Drive to create and store content on the server. Collaborators add a document to conversations by sharing content using Messages. The system displays collaboration activity in Messages conversations and in active FaceTime calls.
+Your app can create collaborations and share content in a Messages conversation by leveraging [CloudKit](../CloudKit/CloudKit.md) and iCloud Drive to create and store content on the server. Collaborators add a document to conversations by sharing content using Messages. The system displays collaboration activity in Messages conversations and in active FaceTime calls.
 
-This collaboration process builds on existing technologies, like drag and drop and the system share sheet. If your app doesn’t use [`iCloud`](https://developer.apple.com/documentation/foundation/icloud) for shared content, the [`Shared with You`](SharedWithYou.md) framework provides an [`SWCollaborationMetadata`](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationmetadata) object wrapped in [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) to implement a custom collaboration infrastructure.
+This collaboration process builds on existing technologies, like drag and drop and the system share sheet. If your app doesn’t use [iCloud](../Foundation/icloud.md) for shared content, the [Shared with You](./SharedWithYou.md) framework provides an [`SWCollaborationMetadata`](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationmetadata) object wrapped in [`NSItemProvider`](../Foundation/nsitemprovider.md) to implement a custom collaboration infrastructure.
 
-##### Create a Collaboration Object
+##### Create a collaboration object
 
-If your app is sharing a file URL using iCloud Drive, that URL is your collaboration object. To manage a CloudKit collaboration, your app uses [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) to register a [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) container and create a collaboration object. The system transports your app’s data to other processes using the `CKShare` container.
+If your app is sharing a file URL using iCloud Drive, that URL is your collaboration object. To manage a CloudKit collaboration, your app uses [`NSItemProvider`](../Foundation/nsitemprovider.md) to register a [`CKShare`](../CloudKit/ckshare.md) container and create a collaboration object. The system transports your app’s data to other processes using the `CKShare` container.
 
 Your app gives an existing `CKShare` to the collaboration object or provides a preparation handler to create a `CKShare` when collaboration starts. In the example below, your app starts a new collaboration and creates the `CKShare` container.
 
@@ -35,11 +36,11 @@ let itemProvider = NSItemProvider()
 itemProvider.registerCKShare(share, container: container, allowedSharingOptions: CKAllowedSharingOptions.standard)
 ```
 
-##### Present Collaboration Controls
+##### Present collaboration controls
 
 A collaborator can modify the share options from the share sheet. To add the collaboration controls to the header of a share sheet, your app provides the collaboration object that it created or retrieved from the server.
 
-![iPhone with most of the screen dimmed. The center section is an undimmed collaboration panel with a Pages icon. To the right is a Photo Shoot title, and below that is a Collaborate pop-up button. Below that is a disclosure text button with the text, Everyone can make changes.](/images/com.apple.sharedwithyou/media-4085564@2x.png)
+![iPhone with most of the screen dimmed. The center section is an undimmed collaboration panel with a Pages icon. To the right is a Photo Shoot title, and below that is a Collaborate pop-up button. Below that is a disclosure text button with the text, Everyone can make changes.](https://developer.apple.com/tutorials/images/com.apple.sharedwithyou/media-4085564@2x.png)
 
 ```swift
 // Present a share sheet in iOS.
@@ -51,7 +52,7 @@ presentingViewController.present(activityViewController, animated: true)
 
 In macOS, a share popover offers similar options to the iOS share sheet.
 
-![A popover with a Pages icon. To the right is a Photo Shoot title, and below that is subtitle text, Pages Document - 729 KB. Below that is a horizontal row of four round Messages profile icons labeled Lauren Kerr, Camera Crew, Virgil Scott, and Kim Kilgo. Below that is a vertical list of four share icons for AirDrop, Mail, Messages, and Invite with Link. Below that is an Edit Actions menu item.](/images/com.apple.sharedwithyou/media-4085595@2x.png)
+![A popover with a Pages icon. To the right is a Photo Shoot title, and below that is subtitle text, Pages Document - 729 KB. Below that is a horizontal row of four round Messages profile icons labeled Lauren Kerr, Camera Crew, Virgil Scott, and Kim Kilgo. Below that is a vertical list of four share icons for AirDrop, Mail, Messages, and Invite with Link. Below that is an Edit Actions menu item.](https://developer.apple.com/tutorials/images/com.apple.sharedwithyou/media-4085595@2x.png)
 
 ```swift
 // Present a share popover in macOS.
@@ -61,11 +62,11 @@ let sharingServicePicker = NSSharingServicePicker(items: [collaborationObject])
 sharingServicePicker.show(relativeTo: view.bounds, of: view, preferredEdge: .minY)
 ```
 
-##### Provide a Title and Image for the Collaboration Header
+##### Provide a title and image for the collaboration header
 
 If your app provides a file as shared data, the system automatically populates a title and image for the collaboration header in the share sheet. Otherwise, if your app uses CloudKit data as shared content, or if you’d like to override the default title and image, you can provide a title and image for the collaboration header.
 
-In iOS, create a [`UIActivityItemsConfiguration`](https://developer.apple.com/documentation/uikit/uiactivityitemsconfiguration) with a title and image that your app passes to a [`UIActivityViewController`](https://developer.apple.com/documentation/uikit/uiactivityviewcontroller).
+In iOS, create a [`UIActivityItemsConfiguration`](../UIKit/uiactivityitemsconfiguration.md) with a title and image that your app passes to a [`UIActivityViewController`](../UIKit/uiactivityviewcontroller.md).
 
 ```swift
 // Provide CloudKit metadata in iOS.
@@ -84,7 +85,7 @@ configuration.perItemMetadataProvider = { (_, key) in
 let activityViewController = UIActivityViewController(activityItemsConfiguration: configuration)
 ```
 
-In macOS, create an [`NSPreviewRepresentingActivityItem`](https://developer.apple.com/documentation/appkit/nspreviewrepresentingactivityitem) with a title, image, and icon that your app passes to an [`NSSharingServicePicker`](https://developer.apple.com/documentation/appkit/nssharingservicepicker). The image represents the shared content, and the icon represents the source of the shared content.
+In macOS, create an [`NSPreviewRepresentingActivityItem`](../AppKit/nspreviewrepresentingactivityitem.md) with a title, image, and icon that your app passes to an [`NSSharingServicePicker`](../AppKit/nssharingservicepicker.md). The image represents the shared content, and the icon represents the source of the shared content.
 
 ```swift
 // Provide CloudKit metadata in macOS.
@@ -98,11 +99,11 @@ let previewRepresentingItem = NSPreviewRepresentingActivityItem(item: collaborat
 let picker = NSSharingServicePicker(items: [previewRepresentingItem])
 ```
 
-##### Create a Swiftui Transferable Object for Collaboration Through Sharelink
+##### Create a SwiftUI transferable object for collaboration through ShareLink
 
-In SwiftUI, use [`ShareLink`](https://developer.apple.com/documentation/swiftui/sharelink) to support collaboration mode in the share sheet. The object your app shares must adopt [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable), a protocol for sharing and data transfer.
+In SwiftUI, use [`ShareLink`](../SwiftUI/sharelink.md) to support collaboration mode in the share sheet. The object your app shares must adopt [`Transferable`](../CoreTransferable/transferable.md), a protocol for sharing and data transfer.
 
-In the example below, a structure provides a [`CKShareTransferRepresentation`](https://developer.apple.com/documentation/cloudkit/cksharetransferrepresentation) by either returning an existing [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) or creating a new one.
+In the example below, a structure provides a [`CKShareTransferRepresentation`](../CloudKit/cksharetransferrepresentation.md) by either returning an existing [`CKShare`](../CloudKit/ckshare.md) or creating a new one.
 
 ```swift
 // Create a SwiftUI Transferable object.
@@ -127,7 +128,7 @@ struct Note: Transferable {
 
 If your app is sharing a file URL using iCloud Drive, that URL is the `Transferable` object shared through `ShareLink`.
 
-Once your app creates a `Transferable` object, pass it to `ShareLink`. When your app shares a URL or string, the system automatically creates a preview. Optionally, your app can include a [`SharePreview`](https://developer.apple.com/documentation/swiftui/sharepreview) object, which the system uses to display the title and image for the preview.
+Once your app creates a `Transferable` object, pass it to `ShareLink`. When your app shares a URL or string, the system automatically creates a preview. Optionally, your app can include a [`SharePreview`](../SwiftUI/sharepreview.md) object, which the system uses to display the title and image for the preview.
 
 ```swift
 // Adopt a SwiftUI ShareLink.
@@ -142,13 +143,13 @@ struct ContentView: View {
 }
 ```
 
-##### Initialize the Collaboration View
+##### Initialize the collaboration view
 
-A collaborator accesses the [`SWCollaborationView`](swcollaborationview.md) using an icon in the navigation bar. This icon shows the app that manages the shared content and the number of collaborators associated with the collaboration.
+A collaborator accesses the [`SWCollaborationView`](./swcollaborationview.md) using an icon in the navigation bar. This icon shows the app that manages the shared content and the number of collaborators associated with the collaboration.
 
-![An icon with the number 2 is above a popover that points to it. The top of the popover has an icon with three faces. To the right is a Photo Shoot title, below that is a subtitle With Greg, Kim & Virgil as the text. Below that are three round buttons for message, audio, and video. Below that are Current Participants Greg Crane and Virgil Scott. Below that is a Participant Cursors checkbox. Below that is a Manage Shared File menu item.](/images/com.apple.sharedwithyou/media-4085597@2x.png)
+![An icon with the number 2 is above a popover that points to it. The top of the popover has an icon with three faces. To the right is a Photo Shoot title, below that is a subtitle With Greg, Kim & Virgil as the text. Below that are three round buttons for message, audio, and video. Below that are Current Participants Greg Crane and Virgil Scott. Below that is a Participant Cursors checkbox. Below that is a Manage Shared File menu item.](https://developer.apple.com/tutorials/images/com.apple.sharedwithyou/media-4085597@2x.png)
 
-The system handles the layout and formatting of the collaboration view. Your app is responsible for providing the `itemProvider(_:)` and the [`activeParticipantCount`](swcollaborationview/activeparticipantcount.md). The [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) contains the [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) for CloudKit-based apps, the file URL for iCloud Drive-based apps, or the `/SharedWithYouCore/SWCollaborationMetadata/Representation` for custom collaboration infrastructures.
+The system handles the layout and formatting of the collaboration view. Your app is responsible for providing the `itemProvider(_:)` and the [`activeParticipantCount`](./swcollaborationview/activeparticipantcount.md). The [`NSItemProvider`](../Foundation/nsitemprovider.md) contains the [`CKShare`](../CloudKit/ckshare.md) for CloudKit-based apps, the file URL for iCloud Drive-based apps, or the `/SharedWithYouCore/SWCollaborationMetadata/Representation` for custom collaboration infrastructures.
 
 ```swift
 // Initialize the collaboration view.
@@ -164,7 +165,7 @@ To add a completely customized view on the collaboration view, your app creates 
 collaborationView.contentView = MyView(model: myModel)
 ```
 
-For CloudKit and iCloud Drive adopters, the collaboration view includes a manage button. The button brings up the manage user interface, where collaborators can add and remove participants or change the share settings. Your app can also assign a custom title to the [`manageButtonTitle`](swcollaborationview/managebuttontitle.md). The title defaults to “Manage Share” if your app doesn’t customize it.
+For CloudKit and iCloud Drive adopters, the collaboration view includes a manage button. The button brings up the manage user interface, where collaborators can add and remove participants or change the share settings. Your app can also assign a custom title to the [`manageButtonTitle`](./swcollaborationview/managebuttontitle.md). The title defaults to “Manage Share” if your app doesn’t customize it.
 
 ```swift
 collaborationView.manageButtonTitle = "Custom Manage Button"
@@ -172,17 +173,17 @@ collaborationView.manageButtonTitle = "Custom Manage Button"
 
 If your app uses a custom collaboration infrastructure, you must provide your own manage button.
 
-##### Observe When a Server Saves a Share
+##### Observe when a server saves a share
 
-Since your app needs to manage active content sharing, it’s critical to know when a share starts or stops. If your app uses CloudKit or iCloud Drive, Shared with You provides a [`CKSystemSharingUIObserver`](https://developer.apple.com/documentation/cloudkit/cksystemsharinguiobserver) protocol that your app uses to observe and handle updates to collaborations.
+Since your app needs to manage active content sharing, it’s critical to know when a share starts or stops. If your app uses CloudKit or iCloud Drive, Shared with You provides a [`CKSystemSharingUIObserver`](../CloudKit/cksystemsharinguiobserver.md) protocol that your app uses to observe and handle updates to collaborations.
 
-First, your app passes a [`CKContainer`](https://developer.apple.com/documentation/cloudkit/ckcontainer) to `CKSystemSharingUIObserver` to create an observer.
+First, your app passes a [`CKContainer`](../CloudKit/ckcontainer.md) to `CKSystemSharingUIObserver` to create an observer.
 
 ```swift
 let observer = CKSystemSharingUIObserver(container: container)
 ```
 
-Then use the [`systemSharingUIDidSaveShareBlock`](https://developer.apple.com/documentation/cloudkit/cksystemsharinguiobserver/systemsharinguididsaveshareblock-39zlv) in that observer to capture and react to the result of the server-side save of the share.
+Then use the [`systemSharingUIDidSaveShareBlock`](../CloudKit/cksystemsharinguiobserver/systemsharinguididsaveshareblock-39zlv.md) in that observer to capture and react to the result of the server-side save of the share.
 
 ```swift
 observer.systemSharingUIDidSaveShareBlock = { _, result in
@@ -195,7 +196,7 @@ observer.systemSharingUIDidSaveShareBlock = { _, result in
 }
 ```
 
-Use the [`systemSharingUIDidStopSharingBlock`](https://developer.apple.com/documentation/cloudkit/cksystemsharinguiobserver/systemsharinguididstopsharingblock-4g5bn) in that same observer to handle when a share stops.
+Use the [`systemSharingUIDidStopSharingBlock`](../CloudKit/cksystemsharinguiobserver/systemsharinguididstopsharingblock-4g5bn.md) in that same observer to handle when a share stops.
 
 ```swift
 observer.systemSharingUIDidStopSharingBlock = { _, result in
@@ -208,13 +209,13 @@ observer.systemSharingUIDidStopSharingBlock = { _, result in
 }
 ```
 
-##### Post Notices for Shared Content Collaboration
+##### Post notices for shared content collaboration
 
 Your app can post notices to summarize updates to a collaboration. These notices appear at the top of the related Messages thread. These updates include changes to the shared content, new mentions, server-side changes, and updates to the collaborators.
 
-To post a notice, retrieve the [`SWCollaborationHighlight`](swcollaborationhighlight.md) and use it to create an [`SWHighlightEvent`](swhighlightevent.md) that matches the type of update.
+To post a notice, retrieve the [`SWCollaborationHighlight`](./swcollaborationhighlight.md) and use it to create an [`SWHighlightEvent`](./swhighlightevent.md) that matches the type of update.
 
-Use [`SWHighlightChangeEvent`](swhighlightchangeevent.md) to post a notice about content updates or comments. Use [`SWHighlightCenter`](swhighlightcenter.md) to retrieve a collaboration highlight with the URL of the [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) your app used to initiate the collaboration.
+Use [`SWHighlightChangeEvent`](./swhighlightchangeevent.md) to post a notice about content updates or comments. Use [`SWHighlightCenter`](./swhighlightcenter.md) to retrieve a collaboration highlight with the URL of the [`CKShare`](../CloudKit/ckshare.md) your app used to initiate the collaboration.
 
 ```swift
 // Retrieve the collaboration highlight from the highlight center.
@@ -224,7 +225,7 @@ let highlightCenter: SWHighlightCenter = self.highlightCenter
 let highlight = try highlightCenter.collaborationHighlight(forURL: ckShareURL, error: &error)
 ```
 
-Next, create an `SWHighlightChangeEvent` instance. The initializer takes an [`SWHighlight`](swhighlight.md) object and an [`SWHighlightChangeEventTrigger`](swhighlightchangeeventtrigger.md) value. In this case, the app sets the trigger type to [`SWHighlightChangeEventTrigger.edit`](swhighlightchangeeventtrigger/edit.md). Lastly, post the notice for that event to the highlight center.
+Next, create an `SWHighlightChangeEvent` instance. The initializer takes an [`SWHighlight`](./swhighlight.md) object and an [`SWHighlightChangeEventTrigger`](./swhighlightchangeeventtrigger.md) value. In this case, the app sets the trigger type to [`SWHighlightChangeEventTrigger.edit`](./swhighlightchangeeventtrigger/edit.md). Lastly, post the notice for that event to the highlight center.
 
 ```swift
 // Post a change event notice.
@@ -234,9 +235,9 @@ let editEvent = SWHighlightChangeEvent(highlight: highlight, trigger: .edit)
 highlightCenter.postNotice(for: editEvent)
 ```
 
-##### Post a Persistence Event Notice
+##### Post a persistence event notice
 
-Use the [`SWHighlightPersistenceEvent`](swhighlightpersistenceevent.md) to post a notice when your app moves, renames, or deletes content on the server. In the example below, the [`SWHighlightPersistenceEventTrigger.renamed`](swhighlightpersistenceeventtrigger/renamed.md) trigger type signifies the document name has changed.
+Use the [`SWHighlightPersistenceEvent`](./swhighlightpersistenceevent.md) to post a notice when your app moves, renames, or deletes content on the server. In the example below, the [`SWHighlightPersistenceEventTrigger.renamed`](./swhighlightpersistenceeventtrigger/renamed.md) trigger type signifies the document name has changed.
 
 ```swift
 // Post a persistence event notice that shows your app renamed a document.
@@ -246,11 +247,11 @@ let renamedEvent = SWHighlightPersistenceEvent(highlight: highlight, trigger: .r
 highlightCenter.postNotice(for: renamedEvent)
 ```
 
-##### Post a Membership Event Notice
+##### Post a membership event notice
 
 When your app alters the membership for a collaboration and triggers a membership event, the system posts an update to the collaborators.
 
-After your app retrieves the highlight, create the membership event by passing in the retrieved highlight. Use either [`SWHighlightMembershipEventTrigger.addedCollaborator`](swhighlightmembershipeventtrigger/addedcollaborator.md) or [`SWHighlightMembershipEventTrigger.removedCollaborator`](swhighlightmembershipeventtrigger/removedcollaborator.md) as the trigger for the [`SWHighlightMembershipEvent`](swhighlightmembershipevent.md).
+After your app retrieves the highlight, create the membership event by passing in the retrieved highlight. Use either [`SWHighlightMembershipEventTrigger.addedCollaborator`](./swhighlightmembershipeventtrigger/addedcollaborator.md) or [`SWHighlightMembershipEventTrigger.removedCollaborator`](./swhighlightmembershipeventtrigger/removedcollaborator.md) as the trigger for the [`SWHighlightMembershipEvent`](./swhighlightmembershipevent.md).
 
 ```swift
 // Post a membership event notice that shows your app added a collaborator.
@@ -262,15 +263,16 @@ highlightCenter.postNotice(for: membershipEvent)
 
 If the membership of a Messages group changes, Shared with You keeps collaborators on your shared documents in sync. For CloudKit and iCloud Drive, your app doesn’t have to do anything.
 
-![Two iPhones side by side both showing Messages conversations. The left iPhone has a notification with a profile icon and two lines of text to the right that say, Add Lauren to your 3 shared documents. To the right of the text is an oval Add button and a cancel x button. The right iPhone has a notification with a profile icon and two lines of text to the right that say Remove Chris from your 3 shared documents. To the right of the text is an oval “Remove” button and a cancel x button.](/images/com.apple.sharedwithyou/media-4085670@2x.png)
+![Two iPhones side by side both showing Messages conversations. The left iPhone has a notification with a profile icon and two lines of text to the right that say, Add Lauren to your 3 shared documents. To the right of the text is an oval Add button and a cancel x button. The right iPhone has a notification with a profile icon and two lines of text to the right that say Remove Chris from your 3 shared documents. To the right of the text is an oval “Remove” button and a cancel x button.](https://developer.apple.com/tutorials/images/com.apple.sharedwithyou/media-4085670@2x.png)
 
 When a person adds someone new to a Messages conversation for a collaboration, the system prompts the document owner in Messages to add them to the share. When a person removes someone from a Messages conversation, the system prompts the document owner in Messages to remove them from the share.
 
 ## See Also
 
-- [Adding custom collaboration to your app](adding-custom-collaboration-to-your-app.md)
+### Collaboration
+- [Adding custom collaboration to your app](./adding-custom-collaboration-to-your-app.md)
   Integrate your custom collaboration app with Messages.
-- [Collaboration views](collaboration-views.md)
+- [Collaboration views](./collaboration-views.md)
   Create and customize a collaboration view to manage the shared content actions.
 
 

@@ -1,12 +1,15 @@
 # stratifiedSplit(proportions:seed:featureColumns:labelColumn:recordingFileColumn:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a data table by splitting the data source into strata.
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 14.0
+
+> **Deprecated**: Use DataFrame.stratifiedSplit(on:by:).
 
 ## Declaration
 
@@ -16,7 +19,7 @@ func stratifiedSplit(proportions: [Double], seed: Int = timestampSeed(), feature
 
 #### Return Value
 
-A new [`MLDataTable`](mldatatable.md) instance.
+A new [`MLDataTable`](../../mldatatable.md) instance.
 
 ## Parameters
 
@@ -28,7 +31,8 @@ A new [`MLDataTable`](mldatatable.md) instance.
 
 ## See Also
 
-- [func labeledSensorData(featureColumns: [String], labelColumn: String?, recordingFileColumn: String?) throws -> MLDataTable](mlactivityclassifier/datasource/labeledsensordata(featurecolumns:labelcolumn:recordingfilecolumn:).md)
+### Generating data tables from a data source
+- [func labeledSensorData(featureColumns: [String], labelColumn: String?, recordingFileColumn: String?) throws -> MLDataTable](./labeledsensordata%28featurecolumns,labelcolumn,recordingfilecolumn%29.md)
   Generates a data table from the contents of the data source.
 
 

@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum exclave_ipcstackentry_flags : uint64_t {
     ...
 };
@@ -17,8 +17,8 @@ enum exclave_ipcstackentry_flags : uint64_t {
 ## Topics
 
 ### Constants
-- [kExclaveIpcStackEntryHaveInvocationID](exclave_ipcstackentry_flags/kexclaveipcstackentryhaveinvocationid.md)
-- [kExclaveIpcStackEntryHaveStack](exclave_ipcstackentry_flags/kexclaveipcstackentryhavestack.md)
+- [kExclaveIpcStackEntryHaveInvocationID](./exclave_ipcstackentry_flags/kexclaveipcstackentryhaveinvocationid.md)
+- [kExclaveIpcStackEntryHaveStack](./exclave_ipcstackentry_flags/kexclaveipcstackentryhavestack.md)
 
 
 ---

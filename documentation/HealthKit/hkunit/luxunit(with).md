@@ -1,7 +1,8 @@
 # luxUnit(with:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a HealthKit unit for measuring illuminance, using lux units with the provided prefix.
 
@@ -19,9 +20,13 @@ Returns a HealthKit unit for measuring illuminance, using lux units with the pro
 class func luxUnit(with prefix: HKMetricPrefix) -> Self
 ```
 
+```objc
++ (instancetype) luxUnitWithMetricPrefix:(HKMetricPrefix) prefix;
+```
+
 ## Parameters
 
-- `prefix`: A valid metric prefix value. For the complete list of prefix values, see [`HKMetricPrefix`](hkmetricprefix.md).
+- `prefix`: A valid metric prefix value. For the complete list of prefix values, see [`HKMetricPrefix`](../hkmetricprefix.md).
 
 
 ---

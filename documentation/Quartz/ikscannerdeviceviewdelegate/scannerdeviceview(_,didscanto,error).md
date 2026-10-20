@@ -1,7 +1,8 @@
 # scannerDeviceView(_:didScanTo:error:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.10+
@@ -10,6 +11,10 @@
 
 ```swift
 optional func scannerDeviceView(_ scannerDeviceView: IKScannerDeviceView!, didScanTo url: URL!, error: (any Error)!)
+```
+
+```objc
+- (void) scannerDeviceView:(IKScannerDeviceView *) scannerDeviceView didScanToURL:(NSURL *) url error:(NSError *) error;
 ```
 
 

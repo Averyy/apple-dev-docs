@@ -1,7 +1,8 @@
 # invalidKey
 
 **Framework**: DeviceCheck  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error caused by a failed attempt to use the App Attest key.
 
@@ -24,21 +25,22 @@ static var invalidKey: DCError.Code { get }
 
 You receive this error if something goes wrong with generating, retrieving, or using an App Attest cryptographic key, when:
 
-- You call [`attestKey(_:clientDataHash:completionHandler:)`](dcappattestservice/attestkey(_:clientdatahash:completionhandler:).md) for a key that’s already been attested.
-- You call [`generateAssertion(_:clientDataHash:completionHandler:)`](dcappattestservice/generateassertion(_:clientdatahash:completionhandler:).md) with an unattested key.
+- You call [`attestKey(_:clientDataHash:completionHandler:)`](../dcappattestservice/attestkey%28_,clientdatahash,completionhandler%29.md) for a key that’s already been attested.
+- You call [`generateAssertion(_:clientDataHash:completionHandler:)`](../dcappattestservice/generateassertion%28_,clientdatahash,completionhandler%29.md) with an unattested key.
 - The App Attest service rejects the key.
 
 ## See Also
 
-- [static var featureUnsupported: DCError.Code](dcerror-swift.struct/featureunsupported.md)
+### Errors
+- [static var featureUnsupported: DCError.Code](./featureunsupported.md)
   DeviceCheck is not available on this device.
-- [static var invalidInput: DCError.Code](dcerror-swift.struct/invalidinput.md)
+- [static var invalidInput: DCError.Code](./invalidinput.md)
   An error code that indicates when your app provides data that isn’t formatted correctly.
-- [static var serverUnavailable: DCError.Code](dcerror-swift.struct/serverunavailable.md)
+- [static var serverUnavailable: DCError.Code](./serverunavailable.md)
   An error that indicates a failed attempt to contact the App Attest service during an attestation.
-- [static var unknownSystemFailure: DCError.Code](dcerror-swift.struct/unknownsystemfailure.md)
+- [static var unknownSystemFailure: DCError.Code](./unknownsystemfailure.md)
   A failure has occurred, such as the failure to generate a token.
-- [DCError.Code](dcerror-swift.struct/code.md)
+- [DCError.Code](./code.md)
   DeviceCheck error codes.
 
 

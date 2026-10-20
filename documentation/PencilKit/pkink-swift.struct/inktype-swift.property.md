@@ -1,7 +1,8 @@
 # inkType
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The line presentation to use for this Ink.
 
@@ -20,9 +21,10 @@ var inkType: PKInk.InkType { get set }
 
 ## See Also
 
-- [var color: UIColor](pkink-swift.struct/color-cg6f.md)
+### Getting the ink attributes
+- [var color: UIColor](./color-cg6f.md)
   The color of this ink.
-- [var color: NSColor](pkink-swift.struct/color-6lmjp.md)
+- [var color: NSColor](./color-6lmjp.md)
   The color of this ink.
 
 

@@ -1,17 +1,22 @@
 # row(forItem:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the row associated with a given item.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func row(forItem item: Any?) -> Int
+```
+
+```objc
+- (NSInteger) rowForItem:(id) item;
 ```
 
 #### Return Value
@@ -24,7 +29,8 @@ The row associated with `item`, or `–1` if `item` is `nil` or cannot be found.
 
 ## See Also
 
-- [func item(atRow: Int) -> Any?](nsoutlineview/item(atrow:).md)
+### Converting Between Items and Rows
+- [func item(atRow: Int) -> Any?](./item%28atrow%29.md)
   Returns the item associated with a given row.
 
 

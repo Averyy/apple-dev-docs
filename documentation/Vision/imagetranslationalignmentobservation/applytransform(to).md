@@ -1,7 +1,8 @@
 # applyTransform(to:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the transform to an image.
 

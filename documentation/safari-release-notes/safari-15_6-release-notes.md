@@ -1,6 +1,7 @@
 # Safari 15.6 Release Notes
 
-**Framework**: Safari Release Notes
+**Framework**: Safari Release Notes  
+**Role**: Article
 
 Released July 20, 2022 — Version 15.6 (17613.3.9)
 
@@ -8,7 +9,7 @@ Released July 20, 2022 — Version 15.6 (17613.3.9)
 
 Safari 15.6 ships with the iOS & iPadOS 15.6 and macOS 12.5.
 
-##### Css
+##### CSS
 
 ###### New Features
 
@@ -34,7 +35,7 @@ Safari 15.6 ships with the iOS & iPadOS 15.6 and macOS 12.5.
 
 - Fixed automatically updating page layout when new fonts are installed.
 
-##### Html
+##### HTML
 
 ###### Resolved Issues
 
@@ -60,7 +61,7 @@ Safari 15.6 ships with the iOS & iPadOS 15.6 and macOS 12.5.
 - Fixed disappearing multi-column content inside a fixed position container when scrolling.
 - Fixed images displayed in Reader not appearing in a print job or PDF export.
 
-##### Webauthn
+##### WebAuthn
 
 ###### Resolved Issues
 
@@ -72,7 +73,7 @@ Safari 15.6 ships with the iOS & iPadOS 15.6 and macOS 12.5.
 
 - Fixed computing implicit keyframes when either a 0 percent or 100 percent keyframe (or both) define only a timing function.
 
-##### Web Api
+##### Web API
 
 ###### Resolved Issues
 
@@ -86,13 +87,14 @@ Safari 15.6 ships with the iOS & iPadOS 15.6 and macOS 12.5.
 
 ## See Also
 
-- [Safari 15.5 Release Notes](safari-15_5-release-notes.md)
+### Version 15
+- [Safari 15.5 Release Notes](./safari-15_5-release-notes.md)
   Released May 16, 2022 — Version 15.5 (17613.2.7)
-- [Safari 15.4 Release Notes](safari-15_4-release-notes.md)
+- [Safari 15.4 Release Notes](./safari-15_4-release-notes.md)
   Released March 14, 2022 — Version 15.4 (17613.1.17)
-- [Safari 15.2 Release Notes](safari-15_2-release-notes.md)
+- [Safari 15.2 Release Notes](./safari-15_2-release-notes.md)
   Released December 13, 2021 — Version 15.2 (17612.3.6)
-- [Safari 15 Release Notes](safari-15-release-notes.md)
+- [Safari 15 Release Notes](./safari-15-release-notes.md)
   Released September 20, 2021 — Version 15 (17612.1.27)
 
 

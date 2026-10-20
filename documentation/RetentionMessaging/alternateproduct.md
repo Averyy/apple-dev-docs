@@ -1,7 +1,8 @@
 # alternateProduct
 
 **Framework**: Retention Messaging API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A switch-plan message and product ID you provide in a real-time response to your Get Retention Message endpoint.
 
@@ -10,22 +11,22 @@ A switch-plan message and product ID you provide in a real-time response to your
 
 ## Declaration
 
-```swift
+```
 object alternateProduct
 ```
 
 ## Mentions
 
-- [Retention Messaging API changelog](retention-messaging-changelog.md)
-- [Setting up retention messages](setting-up-retention-messages.md)
+- [Retention Messaging API changelog](./retention-messaging-changelog.md)
+- [Setting up retention messages](./setting-up-retention-messages.md)
 
 #### Discussion
 
-In your [`RealtimeResponseBody`](realtimeresponsebody.md) real-time response, you can choose from mutually exclusive options. Include `alternateProduct` in your response to provide a switch-plan retention message.
+In your [`RealtimeResponseBody`](./realtimeresponsebody.md) real-time response, you can choose from mutually exclusive options. Include `alternateProduct` in your response to provide a switch-plan retention message.
 
-Use the product identifier in [`DecodedRealtimeRequestBody`](decodedrealtimerequestbody.md) to determine the customer’s current subscription. Choose an alternative subscription from the same subscription group.
+Use the product identifier in [`DecodedRealtimeRequestBody`](./decodedrealtimerequestbody.md) to determine the customer’s current subscription. Choose an alternative subscription from the same subscription group.
 
-The message identifier needs to refer to a message that doesn’t include an image and that has a [`messageState`](messagestate.md) of `APPROVED`; otherwise, the retention message fails. For more information about setting up messages, see [`Upload Message`](upload-message.md).
+The message identifier needs to refer to a message that doesn’t include an image and that has a [`messageState`](./messagestate.md) of `APPROVED`; otherwise, the retention message fails. For more information about setting up messages, see [`Upload Message`](./upload-message.md).
 
 ## Properties
 
@@ -35,11 +36,12 @@ The message identifier needs to refer to a message that doesn’t include an ima
 
 ## See Also
 
-- [object message](message.md)
+### Real-time response body
+- [object message](./message.md)
   A message identifier you provide in a real-time response to your Get Retention Message endpoint.
-- [object promotionalOffer](promotionaloffer.md)
+- [object promotionalOffer](./promotionaloffer.md)
   A promotional offer and message you provide in a real-time response to your Get Retention Message endpoint.
-- [object advancedCommerceInfo](advancedcommerceinfo.md)
+- [object advancedCommerceInfo](./advancedcommerceinfo.md)
   A response object you provide to present an offer or switch-plan recommendation message.
 
 

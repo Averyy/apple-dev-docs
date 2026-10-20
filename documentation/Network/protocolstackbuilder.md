@@ -1,7 +1,8 @@
 # ProtocolStackBuilder
 
 **Framework**: Network  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A resultBuilder for specifying and configuring protocol stacks in a declarative way
 
@@ -24,7 +25,7 @@ struct ProtocolStackBuilder<ApplicationProtocol, each P> where ApplicationProtoc
 ## Topics
 
 ### Type Methods
-- [static func buildBlock(ApplicationProtocol, repeat each P) -> (ApplicationProtocol, repeat each P)](protocolstackbuilder/buildblock(_:_:).md)
+- [static func buildBlock(ApplicationProtocol, repeat each P) -> (ApplicationProtocol, repeat each P)](./protocolstackbuilder/buildblock%28_,_%29.md)
 
 
 ---

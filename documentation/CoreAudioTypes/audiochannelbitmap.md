@@ -1,7 +1,8 @@
 # AudioChannelBitmap
 
 **Framework**: Core Audio Types  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The supported channel bitmaps to use when defining channel layouts.
 
@@ -20,97 +21,102 @@ The supported channel bitmaps to use when defining channel layouts.
 struct AudioChannelBitmap
 ```
 
+```c
+enum AudioChannelBitmap : UInt32;
+```
+
 ## Topics
 
 ### Left
-- [static var bit_Left: AudioChannelBitmap](audiochannelbitmap/bit_left.md)
+- [static var bit_Left: AudioChannelBitmap](./audiochannelbitmap/bit_left.md)
   The left channel.
-- [static var bit_LeftCenter: AudioChannelBitmap](audiochannelbitmap/bit_leftcenter.md)
+- [static var bit_LeftCenter: AudioChannelBitmap](./audiochannelbitmap/bit_leftcenter.md)
   The left center channel.
-- [static var bit_LeftSurround: AudioChannelBitmap](audiochannelbitmap/bit_leftsurround.md)
+- [static var bit_LeftSurround: AudioChannelBitmap](./audiochannelbitmap/bit_leftsurround.md)
   The left surround channel.
-- [static var bit_LeftSurroundDirect: AudioChannelBitmap](audiochannelbitmap/bit_leftsurrounddirect.md)
+- [static var bit_LeftSurroundDirect: AudioChannelBitmap](./audiochannelbitmap/bit_leftsurrounddirect.md)
   The left surround direct channel.
-- [static var bit_LeftTopFront: AudioChannelBitmap](audiochannelbitmap/bit_lefttopfront.md)
+- [static var bit_LeftTopFront: AudioChannelBitmap](./audiochannelbitmap/bit_lefttopfront.md)
   The left-top front channel.
-- [static var bit_LeftTopMiddle: AudioChannelBitmap](audiochannelbitmap/bit_lefttopmiddle.md)
+- [static var bit_LeftTopMiddle: AudioChannelBitmap](./audiochannelbitmap/bit_lefttopmiddle.md)
   The left-top middle channel.
-- [static var bit_LeftTopRear: AudioChannelBitmap](audiochannelbitmap/bit_lefttoprear.md)
+- [static var bit_LeftTopRear: AudioChannelBitmap](./audiochannelbitmap/bit_lefttoprear.md)
   The left-top rear channel.
-- [static var bit_TopBackLeft: AudioChannelBitmap](audiochannelbitmap/bit_topbackleft.md)
+- [static var bit_TopBackLeft: AudioChannelBitmap](./audiochannelbitmap/bit_topbackleft.md)
   The top-back left channel.
-- [static var bit_VerticalHeightLeft: AudioChannelBitmap](audiochannelbitmap/bit_verticalheightleft.md)
+- [static var bit_VerticalHeightLeft: AudioChannelBitmap](./audiochannelbitmap/bit_verticalheightleft.md)
   The vertical height left channel.
 ### Center
-- [static var bit_Center: AudioChannelBitmap](audiochannelbitmap/bit_center.md)
+- [static var bit_Center: AudioChannelBitmap](./audiochannelbitmap/bit_center.md)
   The center channel.
-- [static var bit_CenterSurround: AudioChannelBitmap](audiochannelbitmap/bit_centersurround.md)
+- [static var bit_CenterSurround: AudioChannelBitmap](./audiochannelbitmap/bit_centersurround.md)
   The center surround channel.
-- [static var bit_CenterTopFront: AudioChannelBitmap](audiochannelbitmap/bit_centertopfront.md)
+- [static var bit_CenterTopFront: AudioChannelBitmap](./audiochannelbitmap/bit_centertopfront.md)
   The top-front center channel.
-- [static var bit_CenterTopMiddle: AudioChannelBitmap](audiochannelbitmap/bit_centertopmiddle.md)
+- [static var bit_CenterTopMiddle: AudioChannelBitmap](./audiochannelbitmap/bit_centertopmiddle.md)
   The top-middle center channel.
-- [static var bit_CenterTopRear: AudioChannelBitmap](audiochannelbitmap/bit_centertoprear.md)
+- [static var bit_CenterTopRear: AudioChannelBitmap](./audiochannelbitmap/bit_centertoprear.md)
   The top-right center channel.
-- [static var bit_TopBackCenter: AudioChannelBitmap](audiochannelbitmap/bit_topbackcenter.md)
+- [static var bit_TopBackCenter: AudioChannelBitmap](./audiochannelbitmap/bit_topbackcenter.md)
   The top-back center channel.
-- [static var bit_TopCenterSurround: AudioChannelBitmap](audiochannelbitmap/bit_topcentersurround.md)
+- [static var bit_TopCenterSurround: AudioChannelBitmap](./audiochannelbitmap/bit_topcentersurround.md)
   The top center surround channel.
-- [static var bit_VerticalHeightCenter: AudioChannelBitmap](audiochannelbitmap/bit_verticalheightcenter.md)
+- [static var bit_VerticalHeightCenter: AudioChannelBitmap](./audiochannelbitmap/bit_verticalheightcenter.md)
   The vertical height center channel.
 ### Right
-- [static var bit_Right: AudioChannelBitmap](audiochannelbitmap/bit_right.md)
+- [static var bit_Right: AudioChannelBitmap](./audiochannelbitmap/bit_right.md)
   The right channel.
-- [static var bit_RightCenter: AudioChannelBitmap](audiochannelbitmap/bit_rightcenter.md)
+- [static var bit_RightCenter: AudioChannelBitmap](./audiochannelbitmap/bit_rightcenter.md)
   The right center channel.
-- [static var bit_RightSurround: AudioChannelBitmap](audiochannelbitmap/bit_rightsurround.md)
+- [static var bit_RightSurround: AudioChannelBitmap](./audiochannelbitmap/bit_rightsurround.md)
   The rIght surround channel.
-- [static var bit_RightSurroundDirect: AudioChannelBitmap](audiochannelbitmap/bit_rightsurrounddirect.md)
+- [static var bit_RightSurroundDirect: AudioChannelBitmap](./audiochannelbitmap/bit_rightsurrounddirect.md)
   The right surround direct channel.
-- [static var bit_RightTopFront: AudioChannelBitmap](audiochannelbitmap/bit_righttopfront.md)
+- [static var bit_RightTopFront: AudioChannelBitmap](./audiochannelbitmap/bit_righttopfront.md)
   The top-front front channel.
-- [static var bit_RightTopMiddle: AudioChannelBitmap](audiochannelbitmap/bit_righttopmiddle.md)
+- [static var bit_RightTopMiddle: AudioChannelBitmap](./audiochannelbitmap/bit_righttopmiddle.md)
   The top-middle right channel.
-- [static var bit_RightTopRear: AudioChannelBitmap](audiochannelbitmap/bit_righttoprear.md)
+- [static var bit_RightTopRear: AudioChannelBitmap](./audiochannelbitmap/bit_righttoprear.md)
   The top-rear right channel.
-- [static var bit_TopBackRight: AudioChannelBitmap](audiochannelbitmap/bit_topbackright.md)
+- [static var bit_TopBackRight: AudioChannelBitmap](./audiochannelbitmap/bit_topbackright.md)
   The top-back right channel.
-- [static var bit_VerticalHeightRight: AudioChannelBitmap](audiochannelbitmap/bit_verticalheightright.md)
+- [static var bit_VerticalHeightRight: AudioChannelBitmap](./audiochannelbitmap/bit_verticalheightright.md)
   The vertical height right channel.
 ### Low-Frequency Effects
-- [static var bit_LFEScreen: AudioChannelBitmap](audiochannelbitmap/bit_lfescreen.md)
+- [static var bit_LFEScreen: AudioChannelBitmap](./audiochannelbitmap/bit_lfescreen.md)
   The Low Frequency Effects (LFE) screen channel.
 ### Initializers
-- [init(rawValue: UInt32)](audiochannelbitmap/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./audiochannelbitmap/init%28rawvalue%29.md)
   Creates an audio channel bitmap.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [var mChannelBitmap: AudioChannelBitmap](audiochannellayout/mchannelbitmap.md)
+### Accessing the Data
+- [var mChannelBitmap: AudioChannelBitmap](./audiochannellayout/mchannelbitmap.md)
   If `mChannelLayoutTag` is set to `kAudioChannelLayoutTag_UseChannelBitmap`, this field is the channel-use bitmap.
-- [var mChannelDescriptions: AudioChannelDescription](audiochannellayout/mchanneldescriptions.md)
+- [var mChannelDescriptions: AudioChannelDescription](./audiochannellayout/mchanneldescriptions.md)
   A variable length array of `mNumberChannelDescription` elements that describes a layout. If the `mChannelLayoutTag` field is set to `kAudioChannelLayoutTag_UseChannelDescriptions`, use this field to describe the layout.
-- [var mChannelLayoutTag: AudioChannelLayoutTag](audiochannellayout/mchannellayouttag.md)
-  The `AudioChannelLayoutTag` value that indicates the layout. See [`Audio Channel Layout Tags`](audio-channel-layout-tags.md) for possible values.
-- [typealias AudioChannelLayoutTag](audiochannellayouttag.md)
+- [var mChannelLayoutTag: AudioChannelLayoutTag](./audiochannellayout/mchannellayouttag.md)
+  The `AudioChannelLayoutTag` value that indicates the layout. See [Audio Channel Layout Tags](./audio-channel-layout-tags.md) for possible values.
+- [typealias AudioChannelLayoutTag](./audiochannellayouttag.md)
   Identifies a previously-defined channel layout.
-- [Audio Channel Layout Tags](audio-channel-layout-tags.md)
+- [Audio Channel Layout Tags](./audio-channel-layout-tags.md)
   The identifiers that represent audio channel layouts.
-- [var mNumberChannelDescriptions: UInt32](audiochannellayout/mnumberchanneldescriptions.md)
+- [var mNumberChannelDescriptions: UInt32](./audiochannellayout/mnumberchanneldescriptions.md)
   The number of items in the `mChannelDescriptions` array.
-- [func AudioChannelLayoutTag_GetNumberOfChannels(AudioChannelLayoutTag) -> UInt32](audiochannellayouttag_getnumberofchannels(_:).md)
+- [func AudioChannelLayoutTag_GetNumberOfChannels(AudioChannelLayoutTag) -> UInt32](./audiochannellayouttag_getnumberofchannels%28_%29.md)
   Retrieves the number of channels from an audio channel layout tag.
 
 

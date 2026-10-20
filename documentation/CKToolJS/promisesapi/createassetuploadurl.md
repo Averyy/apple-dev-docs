@@ -1,7 +1,8 @@
 # createAssetUploadUrl
 
 **Framework**: CKTool JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new URL for uploading assets.
 
@@ -10,7 +11,7 @@ Creates a new URL for uploading assets.
 
 ## Declaration
 
-```swift
+```
 CancellablePromise createAssetUploadUrl(
 	CreateAssetUploadUrlParams params
 );

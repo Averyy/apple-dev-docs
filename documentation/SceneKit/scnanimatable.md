@@ -1,18 +1,19 @@
 # SCNAnimatable
 
 **Framework**: SceneKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The common interface for attaching animations to nodes, geometries, materials, and other SceneKit objects.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,13 +21,17 @@ The common interface for attaching animations to nodes, geometries, materials, a
 protocol SCNAnimatable : NSObjectProtocol
 ```
 
+```objc
+@protocol SCNAnimatable <NSObject>
+```
+
 ## Mentions
 
-- [Animating SceneKit Content](animating-scenekit-content.md)
+- [Animating SceneKit Content](./animating-scenekit-content.md)
 
 #### Overview
 
-SceneKit uses the same architecture as the Core Animation framework, allowing you to animate property changes implicitly or explicitly. For implicit animation, use the [`SCNTransaction`](scntransaction.md) class to quickly create simple animations with very little code. For more complex animations, explicitly create [`CAAnimation`](https://developer.apple.com/documentation/quartzcore/caanimation) objects, and use the methods in the [`SCNAnimatable`](scnanimatable.md) protocol to attach them to the SceneKit objects you want to animate. You also use the methods in this protocol to control any animations already attached to a SceneKit object.
+SceneKit uses the same architecture as the Core Animation framework, allowing you to animate property changes implicitly or explicitly. For implicit animation, use the [`SCNTransaction`](./scntransaction.md) class to quickly create simple animations with very little code. For more complex animations, explicitly create [`CAAnimation`](../QuartzCore/caanimation.md) objects, and use the methods in the [`SCNAnimatable`](./scnanimatable.md) protocol to attach them to the SceneKit objects you want to animate. You also use the methods in this protocol to control any animations already attached to a SceneKit object.
 
 For example, making a node spin continuously for as long as it appears in the scene graph requires explicitly creating an animation that repeats. The following code creates such an animation and attaches it to a node:
 
@@ -42,80 +47,81 @@ rotationAnimation.repeatCount = FLT_MAX; // Repeat the animation forever.
 ## Topics
 
 ### Managing Animations
-- [func addAnimation(any SCNAnimationProtocol, forKey: String?)](scnanimatable/addanimation(_:forkey:).md)
+- [func addAnimation(any SCNAnimationProtocol, forKey: String?)](./scnanimatable/addanimation%28_,forkey%29.md)
   Adds an animation object for the specified key.
-- [func animation(forKey: String) -> CAAnimation?](scnanimatable/animation(forkey:).md)
+- [func animation(forKey: String) -> CAAnimation?](./scnanimatable/animation%28forkey%29.md)
   Returns the animation with the specified key.
-- [var animationKeys: [String]](scnanimatable/animationkeys.md)
+- [var animationKeys: [String]](./scnanimatable/animationkeys.md)
   An array containing the keys of all animations currently attached to the object.
-- [func removeAllAnimations()](scnanimatable/removeallanimations.md)
+- [func removeAllAnimations()](./scnanimatable/removeallanimations%28%29.md)
   Removes all the animations currently attached to the object.
-- [func removeAnimation(forKey: String)](scnanimatable/removeanimation(forkey:).md)
+- [func removeAnimation(forKey: String)](./scnanimatable/removeanimation%28forkey%29.md)
   Removes the animation attached to the object with the specified key.
-- [func removeAnimation(forKey: String, fadeOutDuration: CGFloat)](scnanimatable/removeanimation(forkey:fadeoutduration:).md)
+- [func removeAnimation(forKey: String, fadeOutDuration: CGFloat)](./scnanimatable/removeanimation%28forkey,fadeoutduration%29.md)
   Removes the animation attached to the object with the specified key, smoothly transitioning out of the animation’s effect.
 ### Pausing and Resuming Animations
-- [func pauseAnimation(forKey: String)](scnanimatable/pauseanimation(forkey:).md)
+- [func pauseAnimation(forKey: String)](./scnanimatable/pauseanimation%28forkey%29.md)
   Pauses the animation attached to the object with the specified key.
-- [func resumeAnimation(forKey: String)](scnanimatable/resumeanimation(forkey:).md)
+- [func resumeAnimation(forKey: String)](./scnanimatable/resumeanimation%28forkey%29.md)
   Resumes a previously paused animation attached to the object with the specified key.
-- [func isAnimationPaused(forKey: String) -> Bool](scnanimatable/isanimationpaused(forkey:).md)
+- [func isAnimationPaused(forKey: String) -> Bool](./scnanimatable/isanimationpaused%28forkey%29.md)
   Returns a Boolean value indicating whether the animation attached to the object with the specified key is paused.
 ### Instance Methods
-- [func addAnimationPlayer(SCNAnimationPlayer, forKey: String?)](scnanimatable/addanimationplayer(_:forkey:).md)
-- [func animationPlayer(forKey: String) -> SCNAnimationPlayer?](scnanimatable/animationplayer(forkey:).md)
-- [func removeAllAnimations(withBlendOutDuration: CGFloat)](scnanimatable/removeallanimations(withblendoutduration:).md)
-- [func removeAnimation(forKey: String, blendOutDuration: CGFloat)](scnanimatable/removeanimation(forkey:blendoutduration:).md)
-- [func setAnimationSpeed(CGFloat, forKey: String)](scnanimatable/setanimationspeed(_:forkey:).md)
+- [func addAnimationPlayer(SCNAnimationPlayer, forKey: String?)](./scnanimatable/addanimationplayer%28_,forkey%29.md)
+- [func animationPlayer(forKey: String) -> SCNAnimationPlayer?](./scnanimatable/animationplayer%28forkey%29.md)
+- [func removeAllAnimations(withBlendOutDuration: CGFloat)](./scnanimatable/removeallanimations%28withblendoutduration%29.md)
+- [func removeAnimation(forKey: String, blendOutDuration: CGFloat)](./scnanimatable/removeanimation%28forkey,blendoutduration%29.md)
+- [func setAnimationSpeed(CGFloat, forKey: String)](./scnanimatable/setanimationspeed%28_,forkey%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [SCNAccelerationConstraint](scnaccelerationconstraint.md)
-- [SCNAnimationPlayer](scnanimationplayer.md)
-- [SCNAvoidOccluderConstraint](scnavoidoccluderconstraint.md)
-- [SCNBillboardConstraint](scnbillboardconstraint.md)
-- [SCNBox](scnbox.md)
-- [SCNCamera](scncamera.md)
-- [SCNCapsule](scncapsule.md)
-- [SCNCone](scncone.md)
-- [SCNConstraint](scnconstraint.md)
-- [SCNCylinder](scncylinder.md)
-- [SCNDistanceConstraint](scndistanceconstraint.md)
-- [SCNFloor](scnfloor.md)
-- [SCNGeometry](scngeometry.md)
-- [SCNIKConstraint](scnikconstraint.md)
-- [SCNLight](scnlight.md)
-- [SCNLookAtConstraint](scnlookatconstraint.md)
-- [SCNMaterial](scnmaterial.md)
-- [SCNMaterialProperty](scnmaterialproperty.md)
-- [SCNMorpher](scnmorpher.md)
-- [SCNNode](scnnode.md)
-- [SCNParticleSystem](scnparticlesystem.md)
-- [SCNPlane](scnplane.md)
-- [SCNPyramid](scnpyramid.md)
-- [SCNReferenceNode](scnreferencenode.md)
-- [SCNReplicatorConstraint](scnreplicatorconstraint.md)
-- [SCNShape](scnshape.md)
-- [SCNSliderConstraint](scnsliderconstraint.md)
-- [SCNSphere](scnsphere.md)
-- [SCNTechnique](scntechnique.md)
-- [SCNText](scntext.md)
-- [SCNTorus](scntorus.md)
-- [SCNTransformConstraint](scntransformconstraint.md)
-- [SCNTube](scntube.md)
+- [SCNAccelerationConstraint](./scnaccelerationconstraint.md)
+- [SCNAnimationPlayer](./scnanimationplayer.md)
+- [SCNAvoidOccluderConstraint](./scnavoidoccluderconstraint.md)
+- [SCNBillboardConstraint](./scnbillboardconstraint.md)
+- [SCNBox](./scnbox.md)
+- [SCNCamera](./scncamera.md)
+- [SCNCapsule](./scncapsule.md)
+- [SCNCone](./scncone.md)
+- [SCNConstraint](./scnconstraint.md)
+- [SCNCylinder](./scncylinder.md)
+- [SCNDistanceConstraint](./scndistanceconstraint.md)
+- [SCNFloor](./scnfloor.md)
+- [SCNGeometry](./scngeometry.md)
+- [SCNIKConstraint](./scnikconstraint.md)
+- [SCNLight](./scnlight.md)
+- [SCNLookAtConstraint](./scnlookatconstraint.md)
+- [SCNMaterial](./scnmaterial.md)
+- [SCNMaterialProperty](./scnmaterialproperty.md)
+- [SCNMorpher](./scnmorpher.md)
+- [SCNNode](./scnnode.md)
+- [SCNParticleSystem](./scnparticlesystem.md)
+- [SCNPlane](./scnplane.md)
+- [SCNPyramid](./scnpyramid.md)
+- [SCNReferenceNode](./scnreferencenode.md)
+- [SCNReplicatorConstraint](./scnreplicatorconstraint.md)
+- [SCNShape](./scnshape.md)
+- [SCNSliderConstraint](./scnsliderconstraint.md)
+- [SCNSphere](./scnsphere.md)
+- [SCNTechnique](./scntechnique.md)
+- [SCNText](./scntext.md)
+- [SCNTorus](./scntorus.md)
+- [SCNTransformConstraint](./scntransformconstraint.md)
+- [SCNTube](./scntube.md)
 
 ## See Also
 
-- [class SCNAnimationEvent](scnanimationevent.md)
+### Explicit Animation
+- [class SCNAnimationEvent](./scnanimationevent.md)
   A container for a closure, a block in Objective-C, to be executed at a specific time during playback of an animation.
-- [class SCNAnimation](scnanimation-swift.class.md)
-- [class SCNAnimationPlayer](scnanimationplayer.md)
-- [class SCNTimingFunction](scntimingfunction.md)
-- [protocol SCNAnimationProtocol](scnanimationprotocol.md)
-- [class SCNAnimation](scnanimation-swift.class.md)
+- [class SCNAnimation](./scnanimation-swift.class.md)
+- [class SCNAnimationPlayer](./scnanimationplayer.md)
+- [class SCNTimingFunction](./scntimingfunction.md)
+- [protocol SCNAnimationProtocol](./scnanimationprotocol.md)
+- [class SCNAnimation](./scnanimation-swift.class.md)
 
 
 ---

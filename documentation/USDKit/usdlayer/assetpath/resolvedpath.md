@@ -1,7 +1,8 @@
 # resolvedPath
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The resolved location after asset resolution, or `nil` if resolution did not run or failed.
 

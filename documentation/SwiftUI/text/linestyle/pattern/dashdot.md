@@ -1,7 +1,8 @@
 # dashDot
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 15.0+
@@ -20,13 +21,14 @@ static let dashDot: Text.LineStyle.Pattern
 
 ## See Also
 
-- [static let solid: Text.LineStyle.Pattern](text/linestyle/pattern/solid.md)
+### Getting line style patterns
+- [static let solid: Text.LineStyle.Pattern](./solid.md)
   Draw a solid line.
-- [static let dot: Text.LineStyle.Pattern](text/linestyle/pattern/dot.md)
+- [static let dot: Text.LineStyle.Pattern](./dot.md)
   Draw a line of dots.
-- [static let dash: Text.LineStyle.Pattern](text/linestyle/pattern/dash.md)
+- [static let dash: Text.LineStyle.Pattern](./dash.md)
   Draw a line of dashes.
-- [static let dashDotDot: Text.LineStyle.Pattern](text/linestyle/pattern/dashdotdot.md)
+- [static let dashDotDot: Text.LineStyle.Pattern](./dashdotdot.md)
   Draw a line of alternating dashes and two dots.
 
 

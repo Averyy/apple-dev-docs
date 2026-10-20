@@ -1,7 +1,8 @@
 # setCopyOperationAt(_:sourceMatrix:destinationMatrix:offsets:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func setCopyOperationAt(_ index: Int, sourceMatrix: MPSMatrix, destinationMatrix: MPSMatrix, offsets: MPSMatrixCopyOffsets)
+```
+
+```objc
+- (void) setCopyOperationAtIndex:(NSUInteger) index sourceMatrix:(MPSMatrix *) sourceMatrix destinationMatrix:(MPSMatrix *) destinationMatrix offsets:(MPSMatrixCopyOffsets) offsets;
 ```
 
 

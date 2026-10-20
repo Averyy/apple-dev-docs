@@ -1,7 +1,8 @@
 # init(_:onCompletion:)
 
 **Framework**: Journaling Suggestions  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a suggestions picker with button text defined by the given localized string key.
 
@@ -15,9 +16,11 @@ Creates a suggestions picker with button text defined by the given localized str
 @preconcurrency init(_ title: LocalizedStringKey, onCompletion: @escaping (JournalingSuggestion) async -> Void)
 ```
 
+Available when `Label` is `Text`.
+
 #### Discussion
 
-This initializer creates a text view similar to the results of calling [`init(_:tableName:bundle:comment:)`](https://developer.apple.com/documentation/swiftui/text/init(_:tablename:bundle:comment:)). See [`Text`](https://developer.apple.com/documentation/swiftui/text) for more information about localizing strings.
+This initializer creates a text view similar to the results of calling [`init(_:tableName:bundle:comment:)`](../../SwiftUI/text/init%28_,tablename,bundle,comment%29.md). See [`Text`](../../SwiftUI/text.md) for more information about localizing strings.
 
 ## Parameters
 
@@ -26,9 +29,10 @@ This initializer creates a text view similar to the results of calling [`init(_:
 
 ## See Also
 
-- [init(label: () -> Label, onCompletion: (JournalingSuggestion) async -> Void)](journalingsuggestionspicker/init(label:oncompletion:).md)
+### Creating a suggestions picker
+- [init(label: () -> Label, onCompletion: (JournalingSuggestion) async -> Void)](./init%28label,oncompletion%29.md)
   Creates a suggestions picker within the given view.
-- [init<S>(S, onCompletion: (JournalingSuggestion) async -> Void)](journalingsuggestionspicker/init(_:oncompletion:)-4e82p.md)
+- [init<S>(S, onCompletion: (JournalingSuggestion) async -> Void)](./init%28_,oncompletion%29-4e82p.md)
   Creates a suggestions picker with button text defined by the given string.
 
 

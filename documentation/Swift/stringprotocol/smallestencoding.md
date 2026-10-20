@@ -1,7 +1,8 @@
 # smallestEncoding
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The smallest encoding to which the string can be converted without loss of information.
 

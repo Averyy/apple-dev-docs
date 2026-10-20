@@ -1,7 +1,8 @@
 # tolerance
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An extension of the distance limit, as a percentage-based error tolerance.
 

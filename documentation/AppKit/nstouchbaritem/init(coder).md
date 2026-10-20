@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a new item from a storyboard or nib file.
 
@@ -17,11 +18,16 @@ Initializes and returns a new item from a storyboard or nib file.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init(identifier: NSTouchBarItem.Identifier)](nstouchbaritem/init(identifier:).md)
+### Creating a bar item
+- [init(identifier: NSTouchBarItem.Identifier)](./init%28identifier%29.md)
   Creates a new item with the specified identifier.
-- [NSTouchBarItem.Identifier](nstouchbaritem/identifier-swift.struct.md)
+- [NSTouchBarItem.Identifier](./identifier-swift.struct.md)
   An identifier for an item in the Touch Bar.
 
 

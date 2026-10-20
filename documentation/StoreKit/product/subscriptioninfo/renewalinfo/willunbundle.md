@@ -1,7 +1,8 @@
 # willUnbundle
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the subscription will leave the bundle at the next renewal and renew as a standalone product.
 

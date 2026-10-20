@@ -1,7 +1,8 @@
 # addAppKey(_:)
 
 **Framework**: App License Delivery SDK  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Add an AppKey to be associated with this license
 

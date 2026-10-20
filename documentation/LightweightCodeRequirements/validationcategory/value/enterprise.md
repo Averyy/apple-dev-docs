@@ -1,7 +1,8 @@
 # enterprise
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the code is signed by an Apple issued distribution certificate and allowed to run via Provisioning profile.
 

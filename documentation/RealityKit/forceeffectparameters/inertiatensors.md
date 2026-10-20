@@ -1,7 +1,8 @@
 # inertiaTensors
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The inertia tensor based on the current rigid body’s orientation, or nil if inertia tensor information was not requested.
 

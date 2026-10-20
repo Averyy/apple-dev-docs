@@ -1,7 +1,8 @@
 # timeZoneDataVersion
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the time zone data version.
 
@@ -22,11 +23,12 @@ static var timeZoneDataVersion: String { get }
 
 ## See Also
 
-- [var identifier: String](timezone/identifier.md)
+### Getting Time Zone Information
+- [var identifier: String](./identifier.md)
   The geopolitical region identifier that identifies the time zone.
-- [func abbreviation(for: Date) -> String?](timezone/abbreviation(for:).md)
+- [func abbreviation(for: Date) -> String?](./abbreviation%28for%29.md)
   Returns the abbreviation for the time zone at a given date.
-- [func secondsFromGMT(for: Date) -> Int](timezone/secondsfromgmt(for:).md)
+- [func secondsFromGMT(for: Date) -> Int](./secondsfromgmt%28for%29.md)
   The current difference in seconds between the time zone and Greenwich Mean Time.
 
 

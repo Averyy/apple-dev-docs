@@ -1,23 +1,28 @@
 # sparse_norm
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The norm specifier.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 struct sparse_norm
+```
+
+```c
+typedef enum { ... } sparse_norm;
 ```
 
 #### Overview
@@ -27,42 +32,43 @@ struct sparse_norm
 ## Topics
 
 ### Constants
-- [var SPARSE_NORM_ONE: sparse_norm](sparse_norm_one.md)
+- [var SPARSE_NORM_ONE: sparse_norm](./sparse_norm_one.md)
   Norm One
-- [var SPARSE_NORM_TWO: sparse_norm](sparse_norm_two.md)
+- [var SPARSE_NORM_TWO: sparse_norm](./sparse_norm_two.md)
   Norm Two
-- [var SPARSE_NORM_INF: sparse_norm](sparse_norm_inf.md)
+- [var SPARSE_NORM_INF: sparse_norm](./sparse_norm_inf.md)
   Norm Inf
-- [var SPARSE_NORM_R1: sparse_norm](sparse_norm_r1.md)
+- [var SPARSE_NORM_R1: sparse_norm](./sparse_norm_r1.md)
   Norm R1
 ### Initializers
-- [init(UInt32)](sparse_norm/init(_:).md)
-- [init(rawValue: UInt32)](sparse_norm/init(rawvalue:).md)
+- [init(UInt32)](./sparse_norm/init%28_%29.md)
+- [init(rawValue: UInt32)](./sparse_norm/init%28rawvalue%29.md)
 ### Instance Properties
-- [var rawValue: UInt32](sparse_norm/rawvalue.md)
+- [var rawValue: UInt32](./sparse_norm/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [typealias sparse_matrix_double](sparse_matrix_double.md)
+### Supporting Types
+- [typealias sparse_matrix_double](./sparse_matrix_double.md)
   Sparse matrix opaque type for double.
-- [typealias sparse_matrix_float](sparse_matrix_float.md)
+- [typealias sparse_matrix_float](./sparse_matrix_float.md)
   Sparse matrix opaque type for float.
-- [struct sparse_status](sparse_status.md)
+- [struct sparse_status](./sparse_status.md)
   The type reflecting the status of an operations.
-- [typealias sparse_dimension](sparse_dimension.md)
+- [typealias sparse_dimension](./sparse_dimension.md)
   The dimension type.
-- [typealias sparse_index](sparse_index.md)
+- [typealias sparse_index](./sparse_index.md)
   The index type.
-- [typealias sparse_stride](sparse_stride.md)
+- [typealias sparse_stride](./sparse_stride.md)
   The stride type.
 
 

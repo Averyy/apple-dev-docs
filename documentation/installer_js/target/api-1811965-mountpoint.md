@@ -7,11 +7,13 @@ The installation volume’s mountpoint, as a String.
 
 ## See Also
 
-- [availableKilobytes](target/1811975-availablekilobytes.md)
+### Accessing Target Properties
+- [availableKilobytes](./api-1811975-availablekilobytes.md)
   Available space in the installation volume, in kilobytes.
-- [systemVersion](target/1811984-systemversion.md)
+- [systemVersion](./api-1811984-systemversion.md)
   The version of the host’s operating system, as a String.
-- [Installer JS](installer_js.md)
+### Related Documentation
+- [Installer JS](../installer_js.md)
   Manage and customize the installation and distribution experience.
 
 

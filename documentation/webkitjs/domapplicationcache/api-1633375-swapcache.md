@@ -1,7 +1,8 @@
 # swapCache
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Replaces the active cache with the latest version.
 
@@ -11,15 +12,16 @@ Replaces the active cache with the latest version.
 
 ## Declaration
 
-```swift
+```
 void swapCache();
 ```
 
 ## See Also
 
-- [add](domapplicationcache/1804703-add.md)
+### Updating the Cache
+- [add](./api-1804703-add.md)
   Forthcoming
-- [update](domapplicationcache/1632530-update.md)
+- [update](./api-1632530-update.md)
   Manually triggers the update process.
 
 

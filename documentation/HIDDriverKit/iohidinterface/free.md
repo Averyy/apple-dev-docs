@@ -1,15 +1,16 @@
 # free
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
@@ -19,7 +20,8 @@ Frees the IOHIDInterface object.
 
 ## See Also
 
-- [init](iohidinterface/init.md)
+### Running the Interface
+- [init](./init.md)
   Handles the basic initialization of the interface.
 
 

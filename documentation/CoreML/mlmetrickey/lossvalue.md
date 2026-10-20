@@ -1,7 +1,8 @@
 # lossValue
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key you use to access the current loss (a `float` value).
 
@@ -20,15 +21,20 @@ The key you use to access the current loss (a `float` value).
 class var lossValue: MLMetricKey { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) MLMetricKey * lossValue;
+```
+
 #### Discussion
 
-Use this key to fetch the loss value in the [`metrics`](mlupdatecontext/metrics.md) dictionary.
+Use this key to fetch the loss value in the [`metrics`](../mlupdatecontext/metrics.md) dictionary.
 
 ## See Also
 
-- [class var epochIndex: MLMetricKey](mlmetrickey/epochindex.md)
+### Getting the keys
+- [class var epochIndex: MLMetricKey](./epochindex.md)
   The key you use to access the epoch index (an `Int64` value).
-- [class var miniBatchIndex: MLMetricKey](mlmetrickey/minibatchindex.md)
+- [class var miniBatchIndex: MLMetricKey](./minibatchindex.md)
   The key you use to access the mini-batch index (an `Int64` value) within an epoch.
 
 

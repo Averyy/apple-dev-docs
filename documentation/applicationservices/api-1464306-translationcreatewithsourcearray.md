@@ -1,7 +1,8 @@
 # TranslationCreateWithSourceArray(_:_:_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.3+
@@ -10,6 +11,10 @@
 
 ```swift
 func TranslationCreateWithSourceArray(_ inSourceTypes: CFArray!, _ inTranslationFlags: TranslationFlags, _ outDestinationTypes: UnsafeMutablePointer<Unmanaged<CFArray>?>!, _ outTranslations: UnsafeMutablePointer<Unmanaged<CFDictionary>?>!) -> OSStatus
+```
+
+```c
+OSStatus TranslationCreateWithSourceArray(CFArrayRef inSourceTypes, TranslationFlags inTranslationFlags, CFArrayRef *outDestinationTypes, CFDictionaryRef *outTranslations);
 ```
 
 

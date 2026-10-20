@@ -1,7 +1,8 @@
 # registerUndo(withTarget:handler:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers the specified closure to implement a single undo operation that the target receives.
 
@@ -23,7 +24,7 @@ Registers the specified closure to implement a single undo operation that the ta
 
 #### Discussion
 
-Use [`registerUndo(withTarget:handler:)`](undomanager/registerundo(withtarget:handler:).md) to register a closure as an undo operation on the undo stack. The registered closure is then executed when `undo` is called and the undo operation occurs. The target needs to be a reference type so that its state can be undone or redone by the undo manager.
+Use [`registerUndo(withTarget:handler:)`](./registerundo%28withtarget,handler%29.md) to register a closure as an undo operation on the undo stack. The registered closure is then executed when `undo` is called and the undo operation occurs. The target needs to be a reference type so that its state can be undone or redone by the undo manager.
 
 The following example demonstrates how you can use this method to register an undo operation that adds an element back into a mutable array.
 
@@ -44,15 +45,21 @@ To avoid retain cycles with the target, operate on the closure parameter rather 
 
 ## Parameters
 
-- `target`: The target of the undo operation. The undo manager maintains an unowned reference to the `target` to prevent retain cycles.
-- `handler`: A closure to execute when an operation is undone. The closure takes a single argument, the target of the undo operation.
+- `target`: The target of the undo operation.
+
+  The undo manager maintains an unowned reference to the `target` to prevent retain cycles.
+- `handler`: A closure to execute when an operation is undone.
+
+  The closure takes a single argument, the target of the undo operation.
 
 ## See Also
 
-- [Introduction to Undo Architecture](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/UndoArchitecture/UndoArchitecture.html#//apple_ref/doc/uid/10000010)
-- [func registerUndo(withTarget: Any, selector: Selector, object: Any?)](undomanager/registerundo(withtarget:selector:object:).md)
+### Related Documentation
+- [Introduction to Undo Architecture](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/UndoArchitecture/UndoArchitecture.html#//apple_ref/doc/uid/10000010)
+### Registering undo operations
+- [func registerUndo(withTarget: Any, selector: Selector, object: Any?)](./registerundo%28withtarget,selector,object%29.md)
   Registers the selector of the specified target to implement a single undo operation that the target receives.
-- [func prepare(withInvocationTarget: Any) -> Any](undomanager/prepare(withinvocationtarget:).md)
+- [func prepare(withInvocationTarget: Any) -> Any](./prepare%28withinvocationtarget%29.md)
   Prepares the undo manager for invocation-based undo with the given target as the subject of the next undo operation.
 
 

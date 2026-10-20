@@ -1,23 +1,28 @@
 # CFPropertyListIsValid(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Determines if a property list is valid.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFPropertyListIsValid(_ plist: CFPropertyList!, _ format: CFPropertyListFormat) -> Bool
+```
+
+```c
+extern Boolean CFPropertyListIsValid(CFPropertyListRef plist, CFPropertyListFormat format);
 ```
 
 #### Return Value
@@ -31,7 +36,7 @@ The debugging library version of this function prints out some useful messages.
 ## Parameters
 
 - `plist`: The property list to validate.
-- `format`: A constant that specifies the allowable format of `plist`. See [`CFPropertyListFormat`](cfpropertylistformat.md) for possible values.
+- `format`: A constant that specifies the allowable format of `plist`. See [`CFPropertyListFormat`](./cfpropertylistformat.md) for possible values.
 
 
 ---

@@ -1,7 +1,8 @@
 # gravityAligned
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The volume will not tilt so as to remain aligned with gravity.
 

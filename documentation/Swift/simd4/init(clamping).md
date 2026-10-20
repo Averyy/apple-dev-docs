@@ -1,7 +1,8 @@
 # init(clamping:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new vector from the given vector, clamping the values of the given vector’s elements if necessary.
 
@@ -19,6 +20,8 @@ Creates a new vector from the given vector, clamping the values of the given vec
 ```swift
 init<Other>(clamping other: SIMD4<Other>) where Other : FixedWidthInteger, Other : SIMDScalar
 ```
+
+Available when `Scalar` conforms to `FixedWidthInteger` and `SIMDScalar`.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # CPRouteSource.sourceVehicle
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Route and destination(s) being used by the vehicle is from the vehicle’s system.
 
@@ -14,6 +15,10 @@ Route and destination(s) being used by the vehicle is from the vehicle’s syste
 
 ```swift
 case sourceVehicle
+```
+
+```c
+CPRouteSourceVehicle
 ```
 
 

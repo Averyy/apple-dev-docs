@@ -1,7 +1,8 @@
 # UISceneStoryboardFile
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The name of the storyboard file containing the scene’s initial user interface.
 
@@ -10,9 +11,10 @@ The name of the storyboard file containing the scene’s initial user interface.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `UISceneStoryboardFile` (Storyboard Name)
+- **Type**: string
 
 #### Discussion
 

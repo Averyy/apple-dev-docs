@@ -1,7 +1,8 @@
 # init(device:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a slider to control the exposure bias of the specified capture device.
 
@@ -18,9 +19,13 @@ Creates a slider to control the exposure bias of the specified capture device.
 init(device: AVCaptureDevice)
 ```
 
+```objc
+- (instancetype) initWithDevice:(AVCaptureDevice *) device;
+```
+
 #### Discussion
 
-You can only create an exposure bias slider with a device that support’s setting its [`exposureTargetBias`](avcapturedevice/exposuretargetbias.md) property value.
+You can only create an exposure bias slider with a device that support’s setting its [`exposureTargetBias`](../avcapturedevice/exposuretargetbias.md) property value.
 
 ## Parameters
 
@@ -28,7 +33,8 @@ You can only create an exposure bias slider with a device that support’s setti
 
 ## See Also
 
-- [init(device: AVCaptureDevice, action: (Float) -> Void)](avcapturesystemexposurebiasslider/init(device:action:).md)
+### Creating an exposure bias slider
+- [init(device: AVCaptureDevice, action: (Float) -> Void)](./init%28device,action%29.md)
   Creates a slider to control the exposure bias of the specified capture device with an action to respond to exposure bias changes.
 
 

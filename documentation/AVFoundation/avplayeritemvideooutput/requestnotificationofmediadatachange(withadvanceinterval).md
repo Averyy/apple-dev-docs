@@ -1,7 +1,8 @@
 # requestNotificationOfMediaDataChange(withAdvanceInterval:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the receiver that the video out put client is entering a quiescent state.
 
@@ -19,9 +20,13 @@ Tells the receiver that the video out put client is entering a quiescent state.
 func requestNotificationOfMediaDataChange(withAdvanceInterval interval: TimeInterval)
 ```
 
+```objc
+- (void) requestNotificationOfMediaDataChangeWithAdvanceInterval:(NSTimeInterval) interval;
+```
+
 #### Discussion
 
-Call this method before you suspend your use of a [`CVDisplayLink`](https://developer.apple.com/documentation/corevideo/cvdisplaylink) type or a [`CADisplayLink`](https://developer.apple.com/documentation/quartzcore/cadisplaylink) object. After the interval expires, the video output object notifies its delegate that it should resume the display link. If the interval value you specify is large, the delegate is notified as soon as possible rather than waiting.
+Call this method before you suspend your use of a [`CVDisplayLink`](../../CoreVideo/cvdisplaylink.md) type or a [`CADisplayLink`](../../QuartzCore/cadisplaylink.md) object. After the interval expires, the video output object notifies its delegate that it should resume the display link. If the interval value you specify is large, the delegate is notified as soon as possible rather than waiting.
 
 Do not call this method repeatedly to force the delegate to be notified for each sample.
 

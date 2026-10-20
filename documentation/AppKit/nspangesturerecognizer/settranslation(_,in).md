@@ -1,7 +1,8 @@
 # setTranslation(_:in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the current translation value of the gesture recognizer.
 
@@ -12,6 +13,10 @@ Changes the current translation value of the gesture recognizer.
 
 ```swift
 func setTranslation(_ translation: NSPoint, in view: NSView?)
+```
+
+```objc
+- (void) setTranslation:(NSPoint) translation inView:(NSView *) view;
 ```
 
 #### Discussion
@@ -25,9 +30,10 @@ This method changes the current translation value of the gesture recognizer. Cha
 
 ## See Also
 
-- [func translation(in: NSView?) -> NSPoint](nspangesturerecognizer/translation(in:).md)
+### Tracking the location and velocity of the gesture
+- [func translation(in: NSView?) -> NSPoint](./translation%28in%29.md)
   The distance traveled by the mouse during the gesture.
-- [func velocity(in: NSView?) -> NSPoint](nspangesturerecognizer/velocity(in:).md)
+- [func velocity(in: NSView?) -> NSPoint](./velocity%28in%29.md)
   The velocity of the pan, measured in points per second.
 
 

@@ -1,7 +1,8 @@
 # NSFileProviderNamespacePolicy.materializeLazily
 
 **Framework**: File Provider  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Enumerate this folder lazily (i.e upon access) if it is dataless. Keep populate new items below this folder eagerly if it’s already on disk.
 
@@ -16,6 +17,10 @@ Enumerate this folder lazily (i.e upon access) if it is dataless. Keep populate 
 
 ```swift
 case materializeLazily
+```
+
+```c
+NSFileProviderNamespacePolicyMaterializeLazily
 ```
 
 #### Discussion

@@ -1,18 +1,19 @@
 # AVPlayerIntegratedTimelineSnapshotsOutOfSyncReason
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that represent the reason for an out-of-sync state.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,31 +21,36 @@ Constants that represent the reason for an out-of-sync state.
 struct AVPlayerIntegratedTimelineSnapshotsOutOfSyncReason
 ```
 
+```c
+typedef NSString * AVPlayerIntegratedTimelineSnapshotsOutOfSyncReason;
+```
+
 ## Topics
 
 ### Getting the reasons
-- [static let segmentsChanged: AVPlayerIntegratedTimelineSnapshotsOutOfSyncReason](avplayerintegratedtimelinesnapshotsoutofsyncreason/segmentschanged.md)
+- [static let segmentsChanged: AVPlayerIntegratedTimelineSnapshotsOutOfSyncReason](./avplayerintegratedtimelinesnapshotsoutofsyncreason/segmentschanged.md)
   The snapshot is out of sync due to a change of segments.
-- [static let currentSegmentChanged: AVPlayerIntegratedTimelineSnapshotsOutOfSyncReason](avplayerintegratedtimelinesnapshotsoutofsyncreason/currentsegmentchanged.md)
+- [static let currentSegmentChanged: AVPlayerIntegratedTimelineSnapshotsOutOfSyncReason](./avplayerintegratedtimelinesnapshotsoutofsyncreason/currentsegmentchanged.md)
   The snapshot is out of sync due to a change of the current segment.
-- [static let loadedTimeRangesChanged: AVPlayerIntegratedTimelineSnapshotsOutOfSyncReason](avplayerintegratedtimelinesnapshotsoutofsyncreason/loadedtimerangeschanged.md)
+- [static let loadedTimeRangesChanged: AVPlayerIntegratedTimelineSnapshotsOutOfSyncReason](./avplayerintegratedtimelinesnapshotsoutofsyncreason/loadedtimerangeschanged.md)
   The snapshot is out of sync due to a change of the loaded time ranges.
 ### Creating a reason
-- [init(rawValue: String)](avplayerintegratedtimelinesnapshotsoutofsyncreason/init(rawvalue:).md)
+- [init(rawValue: String)](./avplayerintegratedtimelinesnapshotsoutofsyncreason/init%28rawvalue%29.md)
   Creates a new out-of-sync reason from the value you specify.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class let snapshotsOutOfSyncReasonKey: String](avplayeritemintegratedtimeline/snapshotsoutofsyncreasonkey.md)
+### User-information keys
+- [class let snapshotsOutOfSyncReasonKey: String](./avplayeritemintegratedtimeline/snapshotsoutofsyncreasonkey.md)
   A key to retrieve the reason for an out-of-sync state notification.
 
 

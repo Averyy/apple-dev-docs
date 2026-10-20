@@ -1,23 +1,25 @@
 # kIORPCVersion190615Reply
 
 **Framework**: DriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIORPCVersion190615Reply
 ```
 
 ## See Also
 
-- [kIORPCVersion190615](kiorpcversion190615.md)
+### Getting the Version
+- [kIORPCVersion190615](./kiorpcversion190615.md)
 
 
 ---

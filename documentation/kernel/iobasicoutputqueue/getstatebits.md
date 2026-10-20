@@ -7,7 +7,7 @@ The bits in the value returned by getState().
 
 ## Declaration
 
-```swift
+```c
 enum {
    kStateRunning = 0x1,
    kStateOutputStalled = 0x2,
@@ -19,9 +19,9 @@ enum {
 ## Topics
 
 ### Constants
-- [kStateRunning](iobasicoutputqueue/getstatebits/kstaterunning.md)
-- [kStateStalled](iobasicoutputqueue/getstatebits/kstatestalled.md)
-- [kStateActive](iobasicoutputqueue/getstatebits/kstateactive.md)
+- [kStateRunning](./getstatebits/kstaterunning.md)
+- [kStateStalled](./getstatebits/kstatestalled.md)
+- [kStateActive](./getstatebits/kstateactive.md)
 
 
 ---

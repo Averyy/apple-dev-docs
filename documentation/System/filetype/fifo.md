@@ -1,7 +1,8 @@
 # fifo
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 FIFO (or named pipe)
 

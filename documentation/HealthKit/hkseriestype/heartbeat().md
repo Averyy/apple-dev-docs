@@ -1,7 +1,8 @@
 # heartbeat()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a series type object for heartbeat data.
 
@@ -19,9 +20,14 @@ Returns a series type object for heartbeat data.
 class func heartbeat() -> Self
 ```
 
+```objc
++ (instancetype) heartbeatSeriesType;
+```
+
 ## See Also
 
-- [class func workoutRoute() -> Self](hkseriestype/workoutroute.md)
+### Accessing Series Types
+- [class func workoutRoute() -> Self](./workoutroute%28%29.md)
   Returns a series type object for workout routes.
 
 

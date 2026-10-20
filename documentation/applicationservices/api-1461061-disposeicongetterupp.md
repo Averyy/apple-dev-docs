@@ -1,7 +1,8 @@
 # DisposeIconGetterUPP(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func DisposeIconGetterUPP(_ userUPP: IconGetterUPP!)
+```
+
+```c
+void DisposeIconGetterUPP(IconGetterUPP userUPP);
 ```
 
 

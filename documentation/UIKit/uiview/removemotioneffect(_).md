@@ -1,7 +1,8 @@
 # removeMotionEffect(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops applying a motion effect to the view.
 
@@ -9,7 +10,7 @@ Stops applying a motion effect to the view.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Stops applying a motion effect to the view.
 func removeMotionEffect(_ effect: UIMotionEffect)
 ```
 
+```objc
+- (void) removeMotionEffect:(UIMotionEffect *) effect;
+```
+
 #### Discussion
 
-Any affected presentation values animate to their post-removal values using the present [`UIView`](uiview.md) animation context.
+Any affected presentation values animate to their post-removal values using the present [`UIView`](../uiview.md) animation context.
 
 ## Parameters
 
@@ -28,9 +33,10 @@ Any affected presentation values animate to their post-removal values using the 
 
 ## See Also
 
-- [func addMotionEffect(UIMotionEffect)](uiview/addmotioneffect(_:).md)
+### Using motion effects
+- [func addMotionEffect(UIMotionEffect)](./addmotioneffect%28_%29.md)
   Begins applying a motion effect to the view.
-- [var motionEffects: [UIMotionEffect]](uiview/motioneffects.md)
+- [var motionEffects: [UIMotionEffect]](./motioneffects.md)
   The array of motion effects for the view.
 
 

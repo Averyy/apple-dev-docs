@@ -1,6 +1,8 @@
 # Simulating dice rolls as a component for your game
 
-**Framework**: TabletopKit
+**Framework**: TabletopKit  
+**Role**: Sample Code  
+**Download**: [SimulatingDiceRollsAsAComponentForYourGame.zip](https://docs-assets.developer.apple.com/published/ccb6c5365874/SimulatingDiceRollsAsAComponentForYourGame.zip)
 
 Create a physically realistic dice game by adding interactive rolling and scoring.
 
@@ -19,15 +21,15 @@ This sample code app showcases physics-driven dice simulation with realistic tos
 - Produce outcomes for all of the dice thrown for a particular roll.
 - Convert between the logical face of a die and the corresponding resting orientation.
 
-![A circular table with seven dice tossed on it, which include a tetrahedron (4-sided),](/images/com.apple.tabletopkit/simulating-dice-rolls-as-a-component-for-your-game-custom-dice-model-hero@2x.png)
+![A circular table with seven dice tossed on it, which include a tetrahedron (4-sided),](https://developer.apple.com/tutorials/images/com.apple.tabletopkit/simulating-dice-rolls-as-a-component-for-your-game-custom-dice-model-hero@2x.png)
 
 The app provides a tabletop gaming experience in a volumetric window that allows a player to toss an individual die or a group of dice. After tossing an individual or group of dice, the sample shows the total score.
 
-#### Create a Die with Face Mapping
+#### Create a die with face mapping
 
 Before creating the representation of dice with `TabletopKit`, the sample app includes corresponding `USDZ` files for each of the dice in the `RealityKit` content bundle, including a custom 8-sided die, shown here:
 
-![A screenshot of Xcode with the project navigator open. The RealityKitContent](/images/com.apple.tabletopkit/simulating-dice-rolls-as-a-component-for-your-game-custom-dice-model@2x.png)
+![A screenshot of Xcode with the project navigator open. The RealityKitContent](https://developer.apple.com/tutorials/images/com.apple.tabletopkit/simulating-dice-rolls-as-a-component-for-your-game-custom-dice-model@2x.png)
 
 The face mapping system allows you to assign custom values to each face of a die. The sample includes standard sequential mappings for most dice, but also demonstrates custom scoring with a custom 8-sided die:
 
@@ -44,7 +46,7 @@ let customOctahedronFaceMap: FaceMap<TossableRepresentation.OctahedronFace> = [
 ]
 ```
 
-The sample creates different types of dice by using [`TossableRepresentation`](tossablerepresentation.md). Each die type uses a specific geometric representation — like an octahedron with eight sides — and face mapping that determines the score value of each face on the die:
+The sample creates different types of dice by using [`TossableRepresentation`](./tossablerepresentation.md). Each die type uses a specific geometric representation — like an octahedron with eight sides — and face mapping that determines the score value of each face on the die:
 
 ```swift
 func customOctahedronDie(index: Int, height: Float = 0.02) -> Die {
@@ -55,7 +57,7 @@ func customOctahedronDie(index: Int, height: Float = 0.02) -> Die {
 }
 ```
 
-Each die implements the [`EntityEquipment`](entityequipment.md) protocol and includes methods for calculating scores, determining resting orientations, and finding the highest-scoring face. The `Die` class encapsulates the 3D model entity, tossable representation, and the face mapping for the die. After a toss ends, the sample calls `calculateScore(for:)` to get the score for the die state:
+Each die implements the [`EntityEquipment`](./entityequipment.md) protocol and includes methods for calculating scores, determining resting orientations, and finding the highest-scoring face. The `Die` class encapsulates the 3D model entity, tossable representation, and the face mapping for the die. After a toss ends, the sample calls `calculateScore(for:)` to get the score for the die state:
 
 ```swift
 func calculateScore(for state: RawValueState) -> Int {
@@ -70,7 +72,7 @@ func calculateScore(for state: RawValueState) -> Int {
 }
 ```
 
-#### Configure the Game
+#### Configure the game
 
 The game configuration involves setting up the tabletop environment and adding seven dice to the table. The `Game` class manages the overall game state and coordinates between TabletopKit and the UI:
 
@@ -91,9 +93,9 @@ tabletopGame.claimAnySeat()
 
 The app uses a volumetric window style with a 2 x 2 x 2 meter default size to provide adequate space for dice interaction. The `RoundTabletop` provides the surface for dice physics simulation. The game automatically positions the table within the volumetric space, ensuring that the table surface aligns with the bottom of the volume and the closest edge stays against the front boundary so it remains close to the player interacting with the dice. When the player tosses the dice at the boundary, they bounce off of the volume bounds and back onto the table surface.
 
-#### Handle the Dice Interaction
+#### Handle the dice interaction
 
-The sample app manages dice interaction through the `DiceInteraction` class, which implements [`TabletopInteraction.Delegate`](tabletopinteraction/delegate.md). The interaction system supports both single die tossing and group tossing, where multiple dice move together and get tossed simultaneously. The sample uses a hexagonal positioning pattern to ensure dice don’t overlap during group interactions.
+The sample app manages dice interaction through the `DiceInteraction` class, which implements [`TabletopInteraction.Delegate`](./tabletopinteraction/delegate.md). The interaction system supports both single die tossing and group tossing, where multiple dice move together and get tossed simultaneously. The sample uses a hexagonal positioning pattern to ensure dice don’t overlap during group interactions.
 
 The `controlledDie` is a single die that the player interacts with in the sample app. When the interaction begins with a die, and the “Toss all” option is in a selected state, the system sets up additional dice for tossing them as a group with the controlled die:
 
@@ -133,14 +135,14 @@ case .ended:
     }
 ```
 
-#### Process the Dice Toss and Score
+#### Process the dice toss and score
 
 The sample includes toggle controls for testing different scenarios:
 
 - **Max score toss**: Forces all dice to land on their highest-scoring faces.
 - **Toss all**: Enables group tossing of all dice simultaneously.
 
-The physics simulation provides realistic dice behavior including rotation, bouncing, and the dice settling into their final positions. The toss outcome processing occurs in the [`onTossStart(interaction:outcomes:)`](tabletopinteraction/delegate/ontossstart(interaction:outcomes:).md) method, where the sample processes the physics simulation and final die states. When determining the outcome, the sample uses `predeterminedOutcome` to get the highest score for the toss. If the player didn’t select the option for the highest score, the sample calls the function [`face(for:)`](tossablerepresentation/face(for:).md) to get the die face for the [`TabletopInteraction.TossOutcome`](tabletopinteraction/tossoutcome.md):
+The physics simulation provides realistic dice behavior including rotation, bouncing, and the dice settling into their final positions. The toss outcome processing occurs in the [`onTossStart(interaction:outcomes:)`](./tabletopinteraction/delegate/ontossstart%28interaction,outcomes%29.md) method, where the sample processes the physics simulation and final die states. When determining the outcome, the sample uses `predeterminedOutcome` to get the highest score for the toss. If the player didn’t select the option for the highest score, the sample calls the function [`face(for:)`](./tossablerepresentation/face%28for%29.md) to get the die face for the [`TabletopInteraction.TossOutcome`](./tabletopinteraction/tossoutcome.md):
 
 ```swift
 func onTossStart(interaction: TabletopInteraction,
@@ -191,17 +193,18 @@ func updateLastRollScore(for tossedDice: [Die]) {
 
 ## See Also
 
-- [class TabletopInteraction](tabletopinteraction.md)
+### Interactions
+- [class TabletopInteraction](./tabletopinteraction.md)
   A protocol for objects that manage the entire flow of players interacting with equipment.
-- [struct TossableRepresentation](tossablerepresentation.md)
+- [struct TossableRepresentation](./tossablerepresentation.md)
   An object that represents geometric shapes that the player can throw during gameplay, such as dice.
-- [struct TableSnapshot](tablesnapshot.md)
+- [struct TableSnapshot](./tablesnapshot.md)
   A snapshot of the current state of the table.
-- [struct TableVisualState](tablevisualstate.md)
+- [struct TableVisualState](./tablevisualstate.md)
   A structure that represents the appearance of an object on the table.
-- [struct TableCursor](tablecursor.md)
+- [struct TableCursor](./tablecursor.md)
   A cursor conveys information about one equipment that is currently being controlled by an interaction.
-- [struct TableCursorIdentifier](tablecursoridentifier.md)
+- [struct TableCursorIdentifier](./tablecursoridentifier.md)
   A unique identifier for cursors.
 
 

@@ -1,24 +1,26 @@
 # floor
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 double floor(double);
 ```
 
 ## See Also
 
-- [ceil](1557272-ceil.md)
-- [ceilf](1557263-ceilf.md)
-- [ceill](1557207-ceill.md)
-- [floorf](1557176-floorf.md)
-- [floorl](1557330-floorl.md)
+### Ceiling and Floor
+- [ceil](./api-1557272-ceil.md)
+- [ceilf](./api-1557263-ceilf.md)
+- [ceill](./api-1557207-ceill.md)
+- [floorf](./api-1557176-floorf.md)
+- [floorl](./api-1557330-floorl.md)
 
 
 ---

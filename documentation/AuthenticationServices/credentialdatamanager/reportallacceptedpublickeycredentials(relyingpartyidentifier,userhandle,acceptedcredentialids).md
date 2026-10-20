@@ -1,7 +1,8 @@
 # reportAllAcceptedPublicKeyCredentials(relyingPartyIdentifier:userHandle:acceptedCredentialIDs:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Report a snapshot of all the credentialIDs that will be accepted for a `userHandle`. Credentials not present in the `acceptedCredentialIDs` may be removed or hidden by a password manager. Relying party may choose to perform this periodically, e.g. on every sign in. This information is shared with all password managers enabled in the system.
 
@@ -21,7 +22,7 @@ func reportAllAcceptedPublicKeyCredentials(relyingPartyIdentifier: String, userH
 
 #### Discussion
 
-> **Note**: `ASAuthorizationError` if the system failed to accept the update.
+> **Throws**: `ASAuthorizationError` if the system failed to accept the update.
 
 ## Parameters
 

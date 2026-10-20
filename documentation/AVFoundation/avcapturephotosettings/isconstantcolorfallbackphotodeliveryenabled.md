@@ -1,7 +1,8 @@
 # isConstantColorFallbackPhotoDeliveryEnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to deliver a fallback photo when taking a constant color capture.
 
@@ -18,13 +19,18 @@ A Boolean value that indicates whether to deliver a fallback photo when taking a
 var isConstantColorFallbackPhotoDeliveryEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isConstantColorFallbackPhotoDeliveryEnabled) BOOL constantColorFallbackPhotoDeliveryEnabled;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). Set the value to [`true`](https://developer.apple.com/documentation/swift/true) to receive a fallback photo that you can use if the main constant color photo’s confidence level doesn’t meet your requirement.
+The default value is [`false`](../../Swift/false.md). Set the value to [`true`](../../Swift/true.md) to receive a fallback photo that you can use if the main constant color photo’s confidence level doesn’t meet your requirement.
 
 ## See Also
 
-- [var isConstantColorEnabled: Bool](avcapturephotosettings/isconstantcolorenabled.md)
+### Configuring constant color
+- [var isConstantColorEnabled: Bool](./isconstantcolorenabled.md)
   A Boolean value that indicates whether to capture the photo with constant color.
 
 

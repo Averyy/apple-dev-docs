@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a demand instance from a decoder.
 
@@ -22,11 +23,12 @@ init(from decoder: any Decoder) throws
 
 ## Parameters
 
-- `decoder`: The decoder of a previously-encoded [`Subscribers.Demand`](subscribers/demand.md) instance.
+- `decoder`: The decoder of a previously-encoded [`Subscribers.Demand`](../demand.md) instance.
 
 ## See Also
 
-- [func encode(to: any Encoder) throws](subscribers/demand/encode(to:).md)
+### Encoding and decoding
+- [func encode(to: any Encoder) throws](./encode%28to%29.md)
   Encodes the demand to the provide encoder.
 
 

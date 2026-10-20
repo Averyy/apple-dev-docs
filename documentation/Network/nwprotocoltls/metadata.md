@@ -1,7 +1,8 @@
 # NWProtocolTLS.Metadata
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A handle you can use to inspect a connection’s TLS state.
 
@@ -23,16 +24,16 @@ class Metadata
 ## Topics
 
 ### Inspecting TLS State
-- [var securityProtocolMetadata: sec_protocol_metadata_t](nwprotocoltls/metadata/securityprotocolmetadata.md)
+- [var securityProtocolMetadata: sec_protocol_metadata_t](./metadata/securityprotocolmetadata.md)
   The result of the TLS handshake.
 
 ## Relationships
 
 ### Inherits From
-- [NWProtocolMetadata](nwprotocolmetadata.md)
+- [NWProtocolMetadata](../nwprotocolmetadata.md)
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

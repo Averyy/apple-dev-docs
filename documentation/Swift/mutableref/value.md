@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Dereferences the mutable reference allowing for in-place reads and writes to the underlying value.
 

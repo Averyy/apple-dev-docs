@@ -1,7 +1,8 @@
 # withUnsafeMutablePointers(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Call `body` with `UnsafeMutablePointer`s to the stored `Header` and raw `Element` storage.
 

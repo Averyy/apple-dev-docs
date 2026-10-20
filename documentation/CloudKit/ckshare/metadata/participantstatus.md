@@ -1,7 +1,8 @@
 # participantStatus
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The share’s participation status for the user who retrieves the metadata.
 
@@ -20,11 +21,16 @@ The share’s participation status for the user who retrieves the metadata.
 var participantStatus: CKShare.ParticipantAcceptanceStatus { get }
 ```
 
+```objc
+@property (assign, readonly) CKShareParticipantAcceptanceStatus participantStatus;
+```
+
 ## See Also
 
-- [var participantRole: CKShare.ParticipantRole](ckshare/metadata/participantrole.md)
+### Accessing the Participant’s Capabilities
+- [var participantRole: CKShare.ParticipantRole](./participantrole.md)
   The share’s participant role for the user who retrieves the metadata.
-- [var participantPermission: CKShare.ParticipantPermission](ckshare/metadata/participantpermission.md)
+- [var participantPermission: CKShare.ParticipantPermission](./participantpermission.md)
   The share’s permissions for the user who retrieves the metadata.
 
 

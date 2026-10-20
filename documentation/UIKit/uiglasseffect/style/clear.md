@@ -1,7 +1,8 @@
 # UIGlassEffect.Style.clear
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Clear glass effect style.
 
@@ -15,6 +16,10 @@ Clear glass effect style.
 
 ```swift
 case clear
+```
+
+```c
+UIGlassEffectStyleClear
 ```
 
 

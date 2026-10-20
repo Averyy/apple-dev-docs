@@ -1,7 +1,8 @@
 # CNCinematicError.Code.cancelled
 
 **Framework**: Cinematic  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.0+
@@ -14,6 +15,10 @@
 
 ```swift
 case cancelled
+```
+
+```c
+CNCinematicErrorCodeCancelled
 ```
 
 

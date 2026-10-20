@@ -8,24 +8,24 @@ Specify profile class enumerations.
 
 The ColorSync Manager supports seven classes, or types, of profiles. 
 
-A profile creator specifies the profile class in the profile header’s `profileClass` field. For a description of the profile header, see [`CM2Header`](cm2header.md). This enumeration defines the profile class signatures. 
+A profile creator specifies the profile class in the profile header’s `profileClass` field. For a description of the profile header, see [`CM2Header`](../cm2header.md). This enumeration defines the profile class signatures. 
 
 ## Topics
 
 ### Constants
-- [var cmInputClass: Int](cminputclass.md)
+- [var cmInputClass: Int](../cminputclass.md)
   An input device profile defined for a scanner.
-- [var cmDisplayClass: Int](cmdisplayclass.md)
+- [var cmDisplayClass: Int](../cmdisplayclass.md)
   A display device profile defined for a monitor. 
-- [var cmOutputClass: Int](cmoutputclass.md)
+- [var cmOutputClass: Int](../cmoutputclass.md)
   An output device profile defined for a printer. 
-- [var cmLinkClass: Int](cmlinkclass.md)
+- [var cmLinkClass: Int](../cmlinkclass.md)
   A device link profile.
-- [var cmAbstractClass: Int](cmabstractclass.md)
+- [var cmAbstractClass: Int](../cmabstractclass.md)
   An abstract profile. 
-- [var cmColorSpaceClass: Int](cmcolorspaceclass.md)
+- [var cmColorSpaceClass: Int](../cmcolorspaceclass.md)
   A color space profile.
-- [var cmNamedColorClass: Int](cmnamedcolorclass.md)
+- [var cmNamedColorClass: Int](../cmnamedcolorclass.md)
   A named color space profile.
 
 

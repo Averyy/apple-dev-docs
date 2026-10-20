@@ -1,7 +1,8 @@
 # options
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the comparison predicate options.
 
@@ -14,23 +15,28 @@ Returns the comparison predicate options.
 var options: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger options;
+```
+
 #### Return Value
 
-The comparison predicate options for the receiver. See [`NSComparisonPredicate.Options`](https://developer.apple.com/documentation/foundation/nscomparisonpredicate/options-swift.struct) for possible values. Returns `0` if this does not apply (for example, for a compound template initialized with [`init(compoundTypes:)`](nspredicateeditorrowtemplate/init(compoundtypes:).md)).
+The comparison predicate options for the receiver. See [`NSComparisonPredicate.Options`](../../Foundation/nscomparisonpredicate/options-swift.struct.md) for possible values. Returns `0` if this does not apply (for example, for a compound template initialized with [`init(compoundTypes:)`](./init%28compoundtypes%29.md)).
 
 ## See Also
 
-- [var leftExpressions: [NSExpression]?](nspredicateeditorrowtemplate/leftexpressions.md)
+### Information About a Row Template
+- [var leftExpressions: [NSExpression]?](./leftexpressions.md)
   Returns the left hand expressions for the receiver.
-- [var rightExpressions: [NSExpression]?](nspredicateeditorrowtemplate/rightexpressions.md)
+- [var rightExpressions: [NSExpression]?](./rightexpressions.md)
   Returns the right hand expressions for the receiver.
-- [var compoundTypes: [NSNumber]?](nspredicateeditorrowtemplate/compoundtypes.md)
+- [var compoundTypes: [NSNumber]?](./compoundtypes.md)
   Returns the compound predicate types.
-- [var modifier: NSComparisonPredicate.Modifier](nspredicateeditorrowtemplate/modifier.md)
+- [var modifier: NSComparisonPredicate.Modifier](./modifier.md)
   Returns the comparison predicate modifier for the receiver.
-- [var operators: [NSNumber]?](nspredicateeditorrowtemplate/operators.md)
+- [var operators: [NSNumber]?](./operators.md)
   Returns the array of comparison predicate operators.
-- [var rightExpressionAttributeType: NSAttributeType](nspredicateeditorrowtemplate/rightexpressionattributetype.md)
+- [var rightExpressionAttributeType: NSAttributeType](./rightexpressionattributetype.md)
   Returns the attribute type of the receiver’s right expression.
 
 

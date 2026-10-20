@@ -1,7 +1,8 @@
 # allowedComputeUnitKinds
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of compute units the specialized model can use.
 
@@ -24,7 +25,8 @@ The model may use all or any subset of the kinds in this set during inference.
 
 ## See Also
 
-- [var preferredComputeUnitKind: ComputeUnitKind?](specializationoptions/preferredcomputeunitkind.md)
+### Configuring compute units
+- [var preferredComputeUnitKind: ComputeUnitKind?](./preferredcomputeunitkind.md)
   The preferred compute unit kind, if one was specified.
 
 

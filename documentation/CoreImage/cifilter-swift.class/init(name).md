@@ -1,17 +1,18 @@
 # init(name:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Creates a [`CIFilter`](cifilter-swift.class.md) object for a specific kind of filter.
+Creates a [`CIFilter`](../cifilter-swift.class.md) object for a specific kind of filter.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,13 +20,17 @@ Creates a [`CIFilter`](cifilter-swift.class.md) object for a specific kind of fi
 init?(name: String)
 ```
 
+```objc
++ (CIFilter *) filterWithName:(NSString *) name;
+```
+
 #### Return Value
 
-A [`CIFilter`](cifilter-swift.class.md) object whose input values are undefined.
+A [`CIFilter`](../cifilter-swift.class.md) object whose input values are undefined.
 
 #### Discussion
 
-In macOS, after creating a filter with this method you must call [`setDefaults()`](cifilter-swift.class/setdefaults().md) or set parameters individually by calling [`setValue(_:forKey:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/setvalue(_:forkey:)). In iOS, the filter’s parameters are automatically set to default values.
+In macOS, after creating a filter with this method you must call [`setDefaults()`](./setdefaults%28%29.md) or set parameters individually by calling [`setValue(_:forKey:)`](../../ObjectiveC/nsobject-swift.class/setvalue%28_,forkey%29.md). In iOS, the filter’s parameters are automatically set to default values.
 
 ## Parameters
 
@@ -33,11 +38,13 @@ In macOS, after creating a filter with this method you must call [`setDefaults()
 
 ## See Also
 
-- [Image Unit Tutorial](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/ImageUnitTutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004531)
-- [Core Image Filter Reference](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/uid/TP40004346)
-- [Core Image Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_intro/ci_intro.html#//apple_ref/doc/uid/TP30001185)
-- [init?(name: String, withInputParameters: [String : Any]?)](cifilter-swift.class/init(name:withinputparameters:).md)
-  Creates a [`CIFilter`](cifilter-swift.class.md) object for a specific kind of filter and initializes the input values.
+### Related Documentation
+- [Image Unit Tutorial](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/ImageUnitTutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004531)
+- [Core Image Filter Reference](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/uid/TP40004346)
+- [Core Image Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_intro/ci_intro.html#//apple_ref/doc/uid/TP30001185)
+### Creating a filter
+- [init?(name: String, withInputParameters: [String : Any]?)](./init%28name,withinputparameters%29.md)
+  Creates a [`CIFilter`](../cifilter-swift.class.md) object for a specific kind of filter and initializes the input values.
 
 
 ---

@@ -1,7 +1,8 @@
 # linkedModelFileName
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key you use to access the linked model’s filename.
 
@@ -20,15 +21,20 @@ The key you use to access the linked model’s filename.
 class var linkedModelFileName: MLParameterKey { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) MLParameterKey * linkedModelFileName;
+```
+
 #### Discussion
 
-The value type for the [`linkedModelFileName`](mlparameterkey/linkedmodelfilename.md) key is a [`String`](https://developer.apple.com/documentation/swift/string).
+The value type for the [`linkedModelFileName`](./linkedmodelfilename.md) key is a [`String`](../../Swift/string.md).
 
 ## See Also
 
-- [class var numberOfNeighbors: MLParameterKey](mlparameterkey/numberofneighbors.md)
+### Accessing model parameters
+- [class var numberOfNeighbors: MLParameterKey](./numberofneighbors.md)
   The key you use to access the number of neighbors that adjusts the affinity of a k-nearest-neighbor model.
-- [class var linkedModelSearchPath: MLParameterKey](mlparameterkey/linkedmodelsearchpath.md)
+- [class var linkedModelSearchPath: MLParameterKey](./linkedmodelsearchpath.md)
   The key you use to access the linked model’s search path.
 
 

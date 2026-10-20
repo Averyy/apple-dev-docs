@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the capability is enabled.
 
@@ -20,9 +21,14 @@ A Boolean value that indicates whether the capability is enabled.
 var isEnabled: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isEnabled) BOOL enabled;
+```
+
 ## See Also
 
-- [var isSupported: Bool](avaudiosessioncapability/issupported.md)
+### Inspecting a capability
+- [var isSupported: Bool](./issupported.md)
   A Boolean value that indicates whether the capability is supported.
 
 

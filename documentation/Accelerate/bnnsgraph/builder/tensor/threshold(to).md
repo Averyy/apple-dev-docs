@@ -1,7 +1,8 @@
 # threshold(to:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an element-wise round operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds an element-wise round operation to the current graph.
 ```swift
 func threshold(to lowerBound: Float) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 ## Parameters
 

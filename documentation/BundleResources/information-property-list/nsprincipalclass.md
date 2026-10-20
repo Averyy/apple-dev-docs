@@ -1,32 +1,35 @@
 # NSPrincipalClass
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The name of the bundle’s main executable class.
 
 **Availability**:
 - macOS 10.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSPrincipalClass` (Principal class)
+- **Type**: string
 
 #### Discussion
 
-The system uses the class identified by this key to set the [`principalClass`](https://developer.apple.com/documentation/foundation/bundle/principalclass) property of a bundle when it’s loaded.
+The system uses the class identified by this key to set the [`principalClass`](../../Foundation/bundle/principalclass.md) property of a bundle when it’s loaded.
 
-Xcode sets the default value of this key to [`NSApplication`](https://developer.apple.com/documentation/appkit/nsapplication) for macOS apps, and to [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication) for iOS and tvOS apps. For other types of bundles, you must set this key in [`The Info.plist File`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Carbon/Conceptual/ProvidingUserAssitAppleHelp/authoring_help/authoring_help_book.html#//apple_ref/doc/uid/TP30000903-CH206-SW22).
+Xcode sets the default value of this key to [`NSApplication`](../../AppKit/nsapplication.md) for macOS apps, and to [`UIApplication`](../../UIKit/uiapplication.md) for iOS and tvOS apps. For other types of bundles, you must set this key in [The Info.plist File](https://developer.apple.com/library/archive/documentation/Carbon/Conceptual/ProvidingUserAssitAppleHelp/authoring_help/authoring_help_book.html#//apple_ref/doc/uid/TP30000903-CH206-SW22).
 
 ## See Also
 
-- [CLKComplicationPrincipalClass](information-property-list/clkcomplicationprincipalclass.md)
+### Launch
+- [CLKComplicationPrincipalClass](./clkcomplicationprincipalclass.md)
   The name of the class that implements the complication data source protocol.
-- [CFBundleExecutable](information-property-list/cfbundleexecutable.md)
+- [CFBundleExecutable](./cfbundleexecutable.md)
   The name of the bundle’s executable file.
-- [LSEnvironment](information-property-list/lsenvironment.md)
+- [LSEnvironment](./lsenvironment.md)
   Environment variables to set before launching the app.
-- [UIApplicationShortcutItems](information-property-list/uiapplicationshortcutitems.md)
+- [UIApplicationShortcutItems](./uiapplicationshortcutitems.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # standard
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An object set to the most permissive sharing options.
 
@@ -18,9 +19,13 @@ An object set to the most permissive sharing options.
 class var standard: CKAllowedSharingOptions { get }
 ```
 
+```objc
+@property (class, nonatomic, strong, readonly) CKAllowedSharingOptions * standardOptions;
+```
+
 #### Discussion
 
-The `standardOptions` has [`allowedParticipantPermissionOptions`](ckallowedsharingoptions/allowedparticipantpermissionoptions.md) set to [`any`](cksharingparticipantpermissionoption/any.md) and [`allowedParticipantAccessOptions`](ckallowedsharingoptions/allowedparticipantaccessoptions.md) set to [`any`](cksharingparticipantaccessoption/any.md).
+The `standardOptions` has [`allowedParticipantPermissionOptions`](./allowedparticipantpermissionoptions.md) set to [`any`](../cksharingparticipantpermissionoption/any.md) and [`allowedParticipantAccessOptions`](./allowedparticipantaccessoptions.md) set to [`any`](../cksharingparticipantaccessoption/any.md).
 
 
 ---

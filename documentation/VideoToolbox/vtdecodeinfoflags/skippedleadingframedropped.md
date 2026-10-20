@@ -1,7 +1,8 @@
 # skippedLeadingFrameDropped
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag that indicates whether the decode process skips leading frames after dropping a synchronization frame.
 
@@ -19,19 +20,24 @@ A flag that indicates whether the decode process skips leading frames after drop
 static var skippedLeadingFrameDropped: VTDecodeInfoFlags { get }
 ```
 
+```c
+kVTDecodeInfo_SkippedLeadingFrameDropped
+```
+
 #### Discussion
 
 This condition occurs when you performs a seek to a sync frame, and due to frame reordering, there are leading frames following the sync frame that the system can’t decode due to missing references. Dropping these frames has no impact on playback because the nondecodeable frames won’t render.
 
-If the system sets this flag, it sets the [`frameDropped`](vtdecodeinfoflags/framedropped.md) flag as well.
+If the system sets this flag, it sets the [`frameDropped`](./framedropped.md) flag as well.
 
 ## See Also
 
-- [static var asynchronous: VTDecodeInfoFlags](vtdecodeinfoflags/asynchronous.md)
+### Flag values
+- [static var asynchronous: VTDecodeInfoFlags](./asynchronous.md)
   A flag that indicates the decode operation ran asynchronously.
-- [static var frameDropped: VTDecodeInfoFlags](vtdecodeinfoflags/framedropped.md)
+- [static var frameDropped: VTDecodeInfoFlags](./framedropped.md)
   A flag that indicates the decode operation dropped a frame.
-- [static var imageBufferModifiable: VTDecodeInfoFlags](vtdecodeinfoflags/imagebuffermodifiable.md)
+- [static var imageBufferModifiable: VTDecodeInfoFlags](./imagebuffermodifiable.md)
   A flag that indicates the image buffer is safe to modify.
 
 

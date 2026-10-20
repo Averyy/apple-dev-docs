@@ -1,7 +1,8 @@
 # update(_:with:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates an impute transformer with a new sequence of examples.
 
@@ -19,6 +20,8 @@ Updates an impute transformer with a new sequence of examples.
 ```swift
 func update(_ transformer: inout ImputeTransformer<Element>, with input: some Sequence<Optional<Element>>, eventHandler: EventHandler? = nil) throws
 ```
+
+Available when `Element` conforms to `BinaryFloatingPoint`, `Decodable`, and `Encodable`.
 
 #### Discussion
 

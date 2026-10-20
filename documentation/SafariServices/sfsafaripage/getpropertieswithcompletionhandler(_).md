@@ -1,7 +1,8 @@
 # getPropertiesWithCompletionHandler(_:)
 
 **Framework**: Safari Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the properties of the webpage.
 
@@ -11,16 +12,28 @@ Retrieves the properties of the webpage.
 ## Declaration
 
 ```swift
+func getPropertiesWithCompletionHandler(_ completionHandler: @escaping @Sendable (SFSafariPageProperties?) -> Void)
+```
+
+```swift
 func properties() async -> SFSafariPageProperties?
+```
+
+```objc
+- (void) getPagePropertiesWithCompletionHandler:(void (^)(SFSafariPageProperties *properties)) completionHandler;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func properties() async -> SFSafariPageProperties?
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func properties() async -> SFSafariPageProperties?
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
-If the extension cannot access the page—for example, the extension has web access permissions set to `None` in the Info.plist—the properties object passed to the completion handler is `nil`. See [`SFSafariPageProperties`](sfsafaripageproperties.md).
+If the extension cannot access the page—for example, the extension has web access permissions set to `None` in the Info.plist—the properties object passed to the completion handler is `nil`. See [`SFSafariPageProperties`](../sfsafaripageproperties.md).
 
 ## Parameters
 

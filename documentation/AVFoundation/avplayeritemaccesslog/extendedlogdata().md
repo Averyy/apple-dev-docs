@@ -1,7 +1,8 @@
 # extendedLogData()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a serialized representation of the access log in the Extended Log File Format.
 
@@ -20,13 +21,17 @@ Returns a serialized representation of the access log in the Extended Log File F
 func extendedLogData() -> Data?
 ```
 
+```objc
+- (NSData *) extendedLogData;
+```
+
 #### Return Value
 
 A serialized representation of the access log in the Extended Log File Format.
 
 #### Discussion
 
-This method converts the web server access log into a textual format that conforms to the W3C Extended Log File Format for web server log files. For more information, see [`http://www.w3.org/pub/WWW/TR/WD-logfile.html`](https://developer.apple.comhttp://www.w3.org/pub/WWW/TR/WD-logfile.html).
+This method converts the web server access log into a textual format that conforms to the W3C Extended Log File Format for web server log files. For more information, see [http://www.w3.org/pub/WWW/TR/WD-logfile.html](http://www.w3.org/pub/WWW/TR/WD-logfile.html).
 
 You can generate a string suitable for console output using:
 
@@ -36,9 +41,10 @@ You can generate a string suitable for console output using:
 
 ## See Also
 
-- [var events: [AVPlayerItemAccessLogEvent]](avplayeritemaccesslog/events.md)
+### Accessing log data
+- [var events: [AVPlayerItemAccessLogEvent]](./events.md)
   A chronologically ordered array of player item access log events.
-- [var extendedLogDataStringEncoding: UInt](avplayeritemaccesslog/extendedlogdatastringencoding.md)
+- [var extendedLogDataStringEncoding: UInt](./extendedlogdatastringencoding.md)
   The string encoding of the extended log data.
 
 

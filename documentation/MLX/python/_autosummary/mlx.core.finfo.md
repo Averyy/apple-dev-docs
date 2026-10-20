@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fi
 
 # mlx.core.finfo
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.finfo.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.finfo
-
- Table of contents 
-
-## Contents
-
-# mlx.core.finfo
-
 **class finfo(**args*, ***kwargs*)**
 : Get information on floating-point types.
 
@@ -48,7 +21,7 @@ Attributes
 The number of bits occupied by the type.
 
 `dtype`
-The [Dtype](mlx.core.Dtype.html#mlx.core.Dtype).
+The [Dtype](mlx.core.Dtype.md#mlx.core.Dtype).
 
 `eps`
 The difference between 1.0 and the next smallest representable number larger than 1.0.
@@ -61,5 +34,3 @@ The smallest representable number.
 
 `smallest_normal`
 The smallest positive normal number.
-
-** Contents

@@ -1,7 +1,8 @@
 # desiredKeys
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of strings containing record field names that limits the amount of data returned in this operation.
 
@@ -10,7 +11,7 @@ An array of strings containing record field names that limits the amount of data
 
 ## Declaration
 
-```swift
+```
 readonly attribute String[] desiredKeys;
 ```
 
@@ -20,13 +21,14 @@ The default is `null`, which fetches all record fields.
 
 ## See Also
 
-- [zoneID](cloudkit.queryresponse/zoneid.md)
-  A [`CloudKit.ZoneID`](cloudkit.zoneid.md) dictionary that identifies a record zone in the database.
-- [resultsLimit](cloudkit.queryresponse/resultslimit.md)
+### Accessing Request Properties
+- [zoneID](./zoneid.md)
+  A [`CloudKit.ZoneID`](../cloudkit.zoneid.md) dictionary that identifies a record zone in the database.
+- [resultsLimit](./resultslimit.md)
   The maximum number of records to fetch.
-- [continuationMarker](cloudkit.queryresponse/continuationmarker.md)
+- [continuationMarker](./continuationmarker.md)
   Marks the location of the last batch of results.
-- [zoneWide](cloudkit.queryresponse/zonewide.md)
+- [zoneWide](./zonewide.md)
   A Boolean value that determines whether all zones should be searched.
 
 

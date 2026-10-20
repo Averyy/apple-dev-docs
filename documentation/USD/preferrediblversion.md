@@ -1,6 +1,7 @@
 # preferredIblVersion
 
-**Framework**: USD
+**Framework**: USD  
+**Role**: Article
 
 Metadata that determines the lighting environment of virtual content.
 
@@ -10,9 +11,9 @@ This metadata selects one of two predefined options for the scene’s image-base
 
 A value of `1` indicates the classic lighting environment, and a value of `2` indicates the new lighting environment.
 
-![An image of two 3D assets side by side. On the left, a 3D asset of a biplane toy features shine, refections, and a callout that reads Preferred IBL version = 1. On the right, a 3D asset of the same biplane toy features even more shine and refections, and its callout reads Preferred IBL version = 2.](/images/com.apple.usd/media-4107512.png)
+![An image of two 3D assets side by side. On the left, a 3D asset of a biplane toy features shine, refections, and a callout that reads Preferred IBL version = 1. On the right, a 3D asset of the same biplane toy features even more shine and refections, and its callout reads Preferred IBL version = 2.](https://developer.apple.com/tutorials/images/com.apple.usd/media-4107512.png)
 
-If you omit the [`preferredIblVersion`](preferrediblversion.md) metadata or give it a value of `0`, the system checks the asset’s creation timestamp. A timestamp of July 1, 2022, or later results in the new lighting environment; otherwise, the scene features classic lighting for backward compatibility. The system checks the timestamp of the `.usd` asset within the `.usdz` archive, not the archive’s file creation date.
+If you omit the [preferredIblVersion](./preferrediblversion.md) metadata or give it a value of `0`, the system checks the asset’s creation timestamp. A timestamp of July 1, 2022, or later results in the new lighting environment; otherwise, the scene features classic lighting for backward compatibility. The system checks the timestamp of the `.usd` asset within the `.usdz` archive, not the archive’s file creation date.
 
 ##### Declaration
 
@@ -20,7 +21,7 @@ If you omit the [`preferredIblVersion`](preferrediblversion.md) metadata or give
 int preferredIblVersion = 0
 ```
 
-##### Select the Scenes Image Based Lighting
+##### Select the scene’s image-based lighting
 
 The following `.usda` definition chooses the new lighting environment:
 
@@ -37,13 +38,14 @@ The following `.usda` definition chooses the new lighting environment:
 
 ```
 
-> 💡 **Tip**: RealityKit doesn’t observe the [`preferredIblVersion`](preferrediblversion.md) metadata, but you configure the same lighting environment manually. See [`Specifying a lighting environment in AR Quick Look`](https://developer.apple.com/documentation/arkit/specifying-a-lighting-environment-in-ar-quick-look) for more information about matching AR Quick Look’s lighting environment in RealityKit apps.
+> 💡 **Tip**: RealityKit doesn’t observe the [preferredIblVersion](./preferrediblversion.md) metadata, but you configure the same lighting environment manually. See [Specifying a lighting environment in AR Quick Look](../ARKit/specifying-a-lighting-environment-in-ar-quick-look.md) for more information about matching AR Quick Look’s lighting environment in RealityKit apps.
 
 ## See Also
 
-- [Specifying a lighting environment in AR Quick Look](../arkit/specifying-a-lighting-environment-in-ar-quick-look.md)
+### Scenes and lighting
+- [Specifying a lighting environment in AR Quick Look](../ARKit/specifying-a-lighting-environment-in-ar-quick-look.md)
   Add metadata to your USDZ file to specify its lighting characteristics.
-- [sceneLibrary](scenelibrary.md)
+- [sceneLibrary](./scenelibrary.md)
   Metadata that partitions an asset into scene-based units.
 
 

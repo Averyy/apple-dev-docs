@@ -1,14 +1,15 @@
 # ExpressibleByUnicodeScalarLiteral Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(unicodeScalarLiteral: String)](substring/init(unicodescalarliteral:).md)
+- [init(unicodeScalarLiteral: String)](./init%28unicodescalarliteral%29.md)
   Creates an instance initialized to the given value.
 ### Type Aliases
-- [Substring.UnicodeScalarLiteralType](substring/unicodescalarliteraltype.md)
+- [Substring.UnicodeScalarLiteralType](./unicodescalarliteraltype.md)
   A type that represents a Unicode scalar literal.
 
 

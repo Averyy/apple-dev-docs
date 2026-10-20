@@ -1,7 +1,8 @@
 # videoSettings
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current video output settings for the broadcast video output.
 
@@ -16,6 +17,10 @@ The current video output settings for the broadcast video output.
 
 ```swift
 var videoSettings: [String : Any]? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSDictionary<NSString *,id> * videoSettings;
 ```
 
 #### Discussion
@@ -35,13 +40,14 @@ This property will return `nil` when no broadcast video destination is connected
 
 ## See Also
 
-- [var maxBufferedFrameCount: Int](avcapturebroadcastvideooutput/maxbufferedframecount.md)
+### Managing Video Output
+- [var maxBufferedFrameCount: Int](./maxbufferedframecount.md)
   This represents the maximum count of buffered frames. By default the value is 0, which means late frames are immediately dropped to maintain minimal latency.
-- [class var maxSupportedBufferedFrameCount: Int](avcapturebroadcastvideooutput/maxsupportedbufferedframecount.md)
+- [class var maxSupportedBufferedFrameCount: Int](./maxsupportedbufferedframecount.md)
   The maximum value supported for maxBufferedFrameCount.
-- [func resetFrameBuffer()](avcapturebroadcastvideooutput/resetframebuffer.md)
+- [func resetFrameBuffer()](./resetframebuffer%28%29.md)
   Tells the broadcast video output to reset the frame buffer and drop all currently buffered frames.
-- [var droppedFrameReplacementPolicy: AVCaptureBroadcastVideoOutput.DroppedFrameReplacementPolicy](avcapturebroadcastvideooutput/droppedframereplacementpolicy-swift.property.md)
+- [var droppedFrameReplacementPolicy: AVCaptureBroadcastVideoOutput.DroppedFrameReplacementPolicy](./droppedframereplacementpolicy-swift.property.md)
   The strategy used to replace dropped video frames.
 
 

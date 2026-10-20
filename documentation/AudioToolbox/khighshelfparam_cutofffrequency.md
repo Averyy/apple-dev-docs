@@ -1,15 +1,16 @@
 # kHighShelfParam_CutOffFrequency
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,9 +18,14 @@
 var kHighShelfParam_CutOffFrequency: AudioUnitParameterID { get }
 ```
 
+```c
+kHighShelfParam_CutOffFrequency
+```
+
 ## See Also
 
-- [var kHighShelfParam_Gain: AudioUnitParameterID](khighshelfparam_gain.md)
+### Constants
+- [var kHighShelfParam_Gain: AudioUnitParameterID](./khighshelfparam_gain.md)
 
 
 ---

@@ -1,18 +1,19 @@
 # MIDIObjectType.externalSource
 
 **Framework**: Core MIDI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An external source.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,25 +21,30 @@ An external source.
 case externalSource
 ```
 
+```c
+kMIDIObjectType_ExternalSource
+```
+
 ## See Also
 
-- [MIDIObjectType.other](midiobjecttype/other.md)
+### Object Types
+- [MIDIObjectType.other](./other.md)
   A MIDI object with an undefined type.
-- [MIDIObjectType.device](midiobjecttype/device.md)
+- [MIDIObjectType.device](./device.md)
   A MIDI device.
-- [MIDIObjectType.entity](midiobjecttype/entity.md)
+- [MIDIObjectType.entity](./entity.md)
   A MIDI entity.
-- [MIDIObjectType.source](midiobjecttype/source.md)
+- [MIDIObjectType.source](./source.md)
   A MIDI source.
-- [MIDIObjectType.destination](midiobjecttype/destination.md)
+- [MIDIObjectType.destination](./destination.md)
   A MIDI destination.
-- [MIDIObjectType.externalDevice](midiobjecttype/externaldevice.md)
+- [MIDIObjectType.externalDevice](./externaldevice.md)
   An external device.
-- [MIDIObjectType.externalEntity](midiobjecttype/externalentity.md)
+- [MIDIObjectType.externalEntity](./externalentity.md)
   An external entity.
-- [MIDIObjectType.externalDestination](midiobjecttype/externaldestination.md)
+- [MIDIObjectType.externalDestination](./externaldestination.md)
   An external destination.
-- [var kMIDIObjectType_ExternalMask: MIDIObjectType](kmidiobjecttype_externalmask.md)
+- [var kMIDIObjectType_ExternalMask: MIDIObjectType](../kmidiobjecttype_externalmask.md)
   A bit mask indicating that a device is external.
 
 

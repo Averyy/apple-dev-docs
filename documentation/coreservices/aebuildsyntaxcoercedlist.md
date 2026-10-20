@@ -1,7 +1,8 @@
 # aeBuildSyntaxCoercedList
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Cannot coerce a list.
 

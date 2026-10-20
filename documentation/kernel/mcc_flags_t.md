@@ -1,14 +1,15 @@
 # mcc_flags_t
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum mcc_flags_t : uint32_t {
     ...
 } mcc_flags_t;
@@ -17,9 +18,9 @@ typedef enum mcc_flags_t : uint32_t {
 ## Topics
 
 ### Constants
-- [MCC_IS_MULTI_BIT](mcc_flags_t/mcc_is_multi_bit.md)
-- [MCC_IS_SINGLE_BIT](mcc_flags_t/mcc_is_single_bit.md)
-- [MCC_NONE](mcc_flags_t/mcc_none.md)
+- [MCC_IS_MULTI_BIT](./mcc_flags_t/mcc_is_multi_bit.md)
+- [MCC_IS_SINGLE_BIT](./mcc_flags_t/mcc_is_single_bit.md)
+- [MCC_NONE](./mcc_flags_t/mcc_none.md)
 
 
 ---

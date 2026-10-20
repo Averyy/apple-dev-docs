@@ -1,7 +1,8 @@
 # QLThumbnailMinimumSize
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The minimum size, in points, along one dimension of thumbnails for a Quick Look app’s generator.
 
@@ -11,25 +12,29 @@ The minimum size, in points, along one dimension of thumbnails for a Quick Look 
 - macOS 10.0+
 - visionOS 1.0+
 
+## Details
+
+- **Name**: `QLThumbnailMinimumSize` (Quick Look thumbnail minimum size)
+- **Type**: number
 
 
-**Type**: number
 
 **Default**: `17.0`
 
 #### Discussion
 
-If you set this key, Quick Look uses the [`GenerateThumbnailForURL`](https://developer.apple.com/documentation/quicklook/qlgeneratorinterfacestruct/generatethumbnailforurl) property for thumbnail sizes greater than this value. If your app’s generator is fast, you can omit this key so that the thumbnail appears in standard lists.
+If you set this key, Quick Look uses the [`GenerateThumbnailForURL`](../../QuickLook/qlgeneratorinterfacestruct/generatethumbnailforurl.md) property for thumbnail sizes greater than this value. If your app’s generator is fast, you can omit this key so that the thumbnail appears in standard lists.
 
 ## See Also
 
-- [QLNeedsToBeRunInMainThread](information-property-list/qlneedstoberuninmainthread.md)
+### QuickLook
+- [QLNeedsToBeRunInMainThread](./qlneedstoberuninmainthread.md)
   A Boolean value indicating whether a Quick Look app’s generator can be run in threads other than the main thread.
-- [QLPreviewHeight](information-property-list/qlpreviewheight.md)
+- [QLPreviewHeight](./qlpreviewheight.md)
   A hint at the height, in points, of a Quick Look app’s previews.
-- [QLPreviewWidth](information-property-list/qlpreviewwidth.md)
+- [QLPreviewWidth](./qlpreviewwidth.md)
   A hint at the width, in points, of a Quick Look app’s previews.
-- [QLSupportsConcurrentRequests](information-property-list/qlsupportsconcurrentrequests.md)
+- [QLSupportsConcurrentRequests](./qlsupportsconcurrentrequests.md)
   A Boolean value indicating whether a Quick Look app’s  generator can handle concurrent thumbnail and preview requests.
 
 

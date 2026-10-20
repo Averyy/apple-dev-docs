@@ -1,7 +1,8 @@
 # sign()
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the sign of the tensor’s elements.
 
@@ -26,13 +27,14 @@ This operation returns `1.0` if the correspnding element is greater than `0`, `-
 
 ## See Also
 
-- [func expandingShape(at:)](mltensor/expandingshape(at:).md)
+### Accessing the extended tensor, sign and reciprocal
+- [func expandingShape(at:)](./expandingshape%28at%29.md)
   Returns a shape-expanded tensor with a dimension of 1 inserted at the specified shape indices.
-- [func bandPart(lowerBandCount: Int, upperBandCount: Int) -> MLTensor](mltensor/bandpart(lowerbandcount:upperbandcount:).md)
+- [func bandPart(lowerBandCount: Int, upperBandCount: Int) -> MLTensor](./bandpart%28lowerbandcount,upperbandcount%29.md)
   Returns a new tensor with the same shape where everything outside a central band in each innermost matrix is set to zero.
-- [func tiled(multiples: [Int]) -> MLTensor](mltensor/tiled(multiples:).md)
+- [func tiled(multiples: [Int]) -> MLTensor](./tiled%28multiples%29.md)
   Returns a tensor by replicating its elements multiple times.
-- [func reciprocal() -> MLTensor](mltensor/reciprocal.md)
+- [func reciprocal() -> MLTensor](./reciprocal%28%29.md)
   Computes the reciprocal of the tensor’s elements.
 
 

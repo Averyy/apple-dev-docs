@@ -1,7 +1,8 @@
 # readAttributePaths(_:eventPaths:params:queue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.0+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributePaths(_ attributePaths: [MTRAttributeRequestPath]?, eventPaths: [MTREventRequestPath]?, params: MTRReadParams?, queue: dispatch_queue_t, completion: @escaping @Sendable ([[String : Any]]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributePaths(_ attributePaths: [MTRAttributeRequestPath]?, eventPaths: [MTREventRequestPath]?, params: MTRReadParams?, queue: dispatch_queue_t) async throws -> [[String : Any]]
+```
+
+```objc
+- (void) readAttributePaths:(NSArray<MTRAttributeRequestPath *> *) attributePaths eventPaths:(NSArray<MTREventRequestPath *> *) eventPaths params:(MTRReadParams *) params queue:(dispatch_queue_t) queue completion:(MTRDeviceResponseHandler) completion;
 ```
 
 

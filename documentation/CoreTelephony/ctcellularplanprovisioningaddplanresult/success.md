@@ -1,7 +1,8 @@
 # CTCellularPlanProvisioningAddPlanResult.success
 
 **Framework**: Core Telephony  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The requested eSIM provisioning succeeded.
 
@@ -17,13 +18,18 @@ The requested eSIM provisioning succeeded.
 case success
 ```
 
+```c
+CTCellularPlanProvisioningAddPlanResultSuccess
+```
+
 ## See Also
 
-- [CTCellularPlanProvisioningAddPlanResult.fail](ctcellularplanprovisioningaddplanresult/fail.md)
+### Results
+- [CTCellularPlanProvisioningAddPlanResult.fail](./fail.md)
   The requested eSIM provisioning failed.
-- [CTCellularPlanProvisioningAddPlanResult.unknown](ctcellularplanprovisioningaddplanresult/unknown.md)
+- [CTCellularPlanProvisioningAddPlanResult.unknown](./unknown.md)
   The result of the requested eSIM provisioning is unknown.
-- [CTCellularPlanProvisioningAddPlanResult.cancel](ctcellularplanprovisioningaddplanresult/cancel.md)
+- [CTCellularPlanProvisioningAddPlanResult.cancel](./cancel.md)
 
 
 ---

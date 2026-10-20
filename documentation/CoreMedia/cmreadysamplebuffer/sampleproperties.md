@@ -1,7 +1,8 @@
 # sampleProperties
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Information about the samples in the sample buffer.
 
@@ -19,6 +20,8 @@ Information about the samples in the sample buffer.
 ```swift
 var sampleProperties: CMSampleBuffer.SamplePropertiesCollection { get set }
 ```
+
+Available when `Content` conforms to `CMSampleBuffer.MultiSampleContent`.
 
 
 ---

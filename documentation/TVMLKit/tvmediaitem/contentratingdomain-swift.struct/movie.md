@@ -1,12 +1,15 @@
 # movie
 
 **Framework**: TVMLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The media item’s rating uses the movie domain.
 
 **Availability**:
-- tvOS 12.0+
+- tvOS 12.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,11 +17,16 @@ The media item’s rating uses the movie domain.
 static let movie: TVMediaItem.ContentRatingDomain
 ```
 
+```c
+extern TVMediaItemContentRatingDomain const TVMediaItemContentRatingDomainMovie;
+```
+
 ## See Also
 
-- [static let music: TVMediaItem.ContentRatingDomain](tvmediaitem/contentratingdomain-swift.struct/music.md)
+### Rating Domains
+- [static let music: TVMediaItem.ContentRatingDomain](./music.md)
   The media item’s rating uses the music domain.
-- [static let tvShow: TVMediaItem.ContentRatingDomain](tvmediaitem/contentratingdomain-swift.struct/tvshow.md)
+- [static let tvShow: TVMediaItem.ContentRatingDomain](./tvshow.md)
   The media item’s rating uses the TV show domain.
 
 

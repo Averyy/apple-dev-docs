@@ -1,7 +1,8 @@
 # image(from:scale:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an image object that contains the specified portion of the drawing.
 
@@ -29,7 +30,8 @@ This method creates a new image and renders content from the canvas into that im
 
 ## See Also
 
-- [func image(from: CGRect, scale: CGFloat) -> UIImage](pkdrawing-swift.struct/image(from:scale:)-220d0.md)
+### Generating an image
+- [func image(from: CGRect, scale: CGFloat) -> UIImage](./image%28from,scale%29-220d0.md)
   Returns an image object that contains the specified portion of the drawing.
 
 

@@ -1,7 +1,8 @@
 # color
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color of the light source.
 
@@ -19,15 +20,20 @@ The color of the light source.
 var color: CGColor? { get set }
 ```
 
+```objc
+@property (nonatomic, nullable) CGColorRef color;
+```
+
 #### Discussion
 
-The default color corresponds to a color temperature of 6500 K, as described by the [`setColorByTemperature(_:)`](mdlphysicallyplausiblelight/setcolorbytemperature(_:).md) method.
+The default color corresponds to a color temperature of 6500 K, as described by the [`setColorByTemperature(_:)`](./setcolorbytemperature%28_%29.md) method.
 
 ## See Also
 
-- [var lumens: Float](mdlphysicallyplausiblelight/lumens.md)
+### Managing Light Color and Intensity
+- [var lumens: Float](./lumens.md)
   The total visible intensity of the light source, in lumens.
-- [func setColorByTemperature(Float)](mdlphysicallyplausiblelight/setcolorbytemperature(_:).md)
+- [func setColorByTemperature(Float)](./setcolorbytemperature%28_%29.md)
   Sets the light’s color based on a black-body temperature.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The composition of content that comprise the toolbar content.
@@ -24,7 +25,8 @@ The composition of content that comprise the toolbar content.
 
 ## See Also
 
-- [associatedtype Body : ToolbarContent](toolbarcontent/body-swift.associatedtype.md)
+### Implementing toolbar content
+- [associatedtype Body : ToolbarContent](./body-swift.associatedtype.md)
   The type of content representing the body of this toolbar content.
 
 

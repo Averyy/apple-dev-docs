@@ -1,7 +1,8 @@
 # PDFBorderStyle.solid
 
 **Framework**: PDFKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Solid border.
 
@@ -19,15 +20,20 @@ Solid border.
 case solid
 ```
 
+```c
+kPDFBorderStyleSolid
+```
+
 ## See Also
 
-- [PDFBorderStyle.dashed](pdfborderstyle/dashed.md)
+### Constants
+- [PDFBorderStyle.dashed](./dashed.md)
   Dashed border.
-- [PDFBorderStyle.beveled](pdfborderstyle/beveled.md)
+- [PDFBorderStyle.beveled](./beveled.md)
   Beveled border.
-- [PDFBorderStyle.inset](pdfborderstyle/inset.md)
+- [PDFBorderStyle.inset](./inset.md)
   Inset border.
-- [PDFBorderStyle.underline](pdfborderstyle/underline.md)
+- [PDFBorderStyle.underline](./underline.md)
   Underline border.
 
 

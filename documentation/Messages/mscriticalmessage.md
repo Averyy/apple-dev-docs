@@ -1,7 +1,8 @@
 # MSCriticalMessage
 
 **Framework**: Messages  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A message for critical communications.
 
@@ -22,27 +23,28 @@ Create and send time-sensitive messages that require immediate attention. Critic
 ## Topics
 
 ### Creating a message
-- [init(messageText: String)](mscriticalmessage/init(messagetext:).md)
+- [init(messageText: String)](./mscriticalmessage/init%28messagetext%29.md)
   Initializer
 ### Accessing message content
-- [var messageText: String](mscriticalmessage/messagetext.md)
+- [var messageText: String](./mscriticalmessage/messagetext.md)
   The text of the critical message.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Sending SMS messages from an app](critical-messaging-api.md)
+### Critical messages
+- [Sending SMS messages from an app](./critical-messaging-api.md)
   Send critical messages from inside your app using the Critical Messaging API.
-- [class MSCriticalSMSMessenger](mscriticalsmsmessenger.md)
+- [class MSCriticalSMSMessenger](./mscriticalsmsmessenger.md)
   The user interface for the Critical Messaging API.
-- [struct MSRecipient](msrecipient.md)
+- [struct MSRecipient](./msrecipient.md)
   A structure that describes the recipient of a critical message.
-- [enum MSCriticalMessagingAuthorizationStatus](mscriticalmessagingauthorizationstatus.md)
+- [enum MSCriticalMessagingAuthorizationStatus](./mscriticalmessagingauthorizationstatus.md)
   Values that describe the authorization status for the Critical Messaging API.
 
 

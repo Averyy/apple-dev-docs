@@ -1,7 +1,8 @@
 # format
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The format of the audio in the buffer.
 
@@ -18,6 +19,10 @@ The format of the audio in the buffer.
 
 ```swift
 var format: AVAudioFormat { get }
+```
+
+```objc
+@property (nonatomic, readonly) AVAudioFormat * format;
 ```
 
 

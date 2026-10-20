@@ -1,7 +1,8 @@
 # providePlaceholder(at:completionHandler:)
 
 **Framework**: File Provider  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Triggers the creation of a placeholder for the given URL.
 
@@ -14,28 +15,42 @@ Triggers the creation of a placeholder for the given URL.
 ## Declaration
 
 ```swift
+func providePlaceholder(at url: URL, completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func providePlaceholder(at url: URL) async throws
+```
+
+```objc
+- (void) providePlaceholderAtURL:(NSURL *) url completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func providePlaceholder(at url: URL) async throws
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func providePlaceholder(at url: URL) async throws
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 The system calls this method when it needs a placeholder for a document that’s returned by the File Provider extension, but is not stored locally. Override `providePlaceholder(at:completionHandler:)` to create a placeholder for the given URL. This task can be broken into three steps: looking up the document’s file provider item, writing the placeholder, and calling the completion handler.
 
-> ❗ **Important**:  Both the [`providePlaceholder(at:completionHandler:)`](nsfileproviderextension/provideplaceholder(at:completionhandler:).md) and [`startProvidingItem(at:completionHandler:)`](nsfileproviderextension/startprovidingitem(at:completionhandler:).md) methods can be triggered as other processes attempt to access documents provided by the File Provider extension. These methods may be called in response to user interaction with the document browser, or due to a coordinated read or coordinated write of the document’s URL. Exactly which methods are triggered, and their sequence, depends on the type of coordinated access. For example, a coordinated read using the `NSFileCoordinatorReadingImmediatelyAvailableMetadataOnly` option triggers only the creation of a placeholder. As a result, your extension should not create dependencies between these methods. They may be called in any order.
+> ❗ **Important**:  Both the [`providePlaceholder(at:completionHandler:)`](./provideplaceholder%28at,completionhandler%29.md) and [`startProvidingItem(at:completionHandler:)`](./startprovidingitem%28at,completionhandler%29.md) methods can be triggered as other processes attempt to access documents provided by the File Provider extension. These methods may be called in response to user interaction with the document browser, or due to a coordinated read or coordinated write of the document’s URL.
+>
+> Exactly which methods are triggered, and their sequence, depends on the type of coordinated access. For example, a coordinated read using the `NSFileCoordinatorReadingImmediatelyAvailableMetadataOnly` option triggers only the creation of a placeholder. As a result, your extension should not create dependencies between these methods. They may be called in any order.
 
-##### Look Up the Documents File Provider Item
+##### Look Up the Document’s File Provider Item
 
-1. Get the document’s persistent identifier by calling [`persistentIdentifierForItem(at:)`](nsfileproviderextension/persistentidentifierforitem(at:).md), and pass in the value of the `url` parameter.
-2. Call [`item(for:)`](nsfileproviderextension/item(for:).md), and pass in the persistent identifier. This method returns the file provider item for the document.
+1. Get the document’s persistent identifier by calling [`persistentIdentifierForItem(at:)`](./persistentidentifierforitem%28at%29.md), and pass in the value of the `url` parameter.
+2. Call [`item(for:)`](./item%28for%29.md), and pass in the persistent identifier. This method returns the file provider item for the document.
 
 ##### Write the Placeholder
 
-1. Get the placeholder URL by calling [`placeholderURL(for:)`](nsfileprovidermanager/placeholderurl(for:).md), and pass in the value of the url parameter.
-2. Call [`writePlaceholder(at:withMetadata:)`](nsfileprovidermanager/writeplaceholder(at:withmetadata:).md), and pass in the placeholder URL and the file provider item.
+1. Get the placeholder URL by calling [`placeholderURL(for:)`](../nsfileprovidermanager/placeholderurl%28for%29.md), and pass in the value of the url parameter.
+2. Call [`writePlaceholder(at:withMetadata:)`](../nsfileprovidermanager/writeplaceholder%28at,withmetadata%29.md), and pass in the placeholder URL and the file provider item.
 
 ##### Call the Completion Handler
 
@@ -69,15 +84,20 @@ override func providePlaceholder(at url: URL, completionHandler: @escaping (Erro
 ## Parameters
 
 - `url`: The URL of a shared document.
-- `completionHandler`: A block that the system calls after the placeholder is created. The completion handler takes the following parameter: - **error**: If the placeholder was successfully written to disk, this value is `nil`. Otherwise, it holds an `NSError` object describing the error.
+- `completionHandler`: A block that the system calls after the placeholder is created.
+
+  The completion handler takes the following parameter:
+
+  - **error**: If the placeholder was successfully written to disk, this value is `nil`. Otherwise, it holds an `NSError` object describing the error.
 
 ## See Also
 
-- [func itemChanged(at: URL)](nsfileproviderextension/itemchanged(at:).md)
+### Managing shared files
+- [func itemChanged(at: URL)](./itemchanged%28at%29.md)
   Tells the File Provider extension that a document has changed.
-- [func startProvidingItem(at: URL, completionHandler: ((any Error)?) -> Void)](nsfileproviderextension/startprovidingitem(at:completionhandler:).md)
+- [func startProvidingItem(at: URL, completionHandler: ((any Error)?) -> Void)](./startprovidingitem%28at,completionhandler%29.md)
   Provides an actual file on disk for a placeholder.
-- [func stopProvidingItem(at: URL)](nsfileproviderextension/stopprovidingitem(at:).md)
+- [func stopProvidingItem(at: URL)](./stopprovidingitem%28at%29.md)
   Tells the File Provider extension that a given document is no longer being accessed.
 
 

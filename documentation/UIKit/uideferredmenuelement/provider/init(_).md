@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -14,6 +15,10 @@
 
 ```swift
 convenience init(_ elementProvider: @escaping (@escaping ([UIMenuElement]) -> Void) -> Void)
+```
+
+```objc
++ (instancetype) providerWithElementProvider:(void (^)(void (^completion)(NSArray<UIMenuElement *> *elements))) elementProvider;
 ```
 
 #### Discussion

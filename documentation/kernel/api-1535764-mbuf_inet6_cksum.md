@@ -1,18 +1,19 @@
 # mbuf_inet6_cksum
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 errno_t mbuf_inet6_cksum(mbuf_t mbuf, int protocol, u_int32_t offset, u_int32_t length, u_int16_t *csum);
 ```
 
-#### Return_value
+#### Return Value
 
 0 upon success otherwise the errno error.
 

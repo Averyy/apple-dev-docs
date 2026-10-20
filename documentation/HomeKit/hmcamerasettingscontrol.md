@@ -1,7 +1,8 @@
 # HMCameraSettingsControl
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents the ability to control a camera’s settings.
 
@@ -19,47 +20,52 @@ An object that represents the ability to control a camera’s settings.
 class HMCameraSettingsControl
 ```
 
+```objc
+@interface HMCameraSettingsControl : HMCameraControl
+```
+
 ## Topics
 
 ### Controlling camera characteristics
-- [var currentHorizontalTilt: HMCharacteristic?](hmcamerasettingscontrol/currenthorizontaltilt.md)
+- [var currentHorizontalTilt: HMCharacteristic?](./hmcamerasettingscontrol/currenthorizontaltilt.md)
   Characteristic corresponding to the camera’s current horizontal tilt setting.
-- [var targetHorizontalTilt: HMCharacteristic?](hmcamerasettingscontrol/targethorizontaltilt.md)
+- [var targetHorizontalTilt: HMCharacteristic?](./hmcamerasettingscontrol/targethorizontaltilt.md)
   Characteristic corresponding to adjusting the camera’s horizontal tilt setting.
-- [var currentVerticalTilt: HMCharacteristic?](hmcamerasettingscontrol/currentverticaltilt.md)
+- [var currentVerticalTilt: HMCharacteristic?](./hmcamerasettingscontrol/currentverticaltilt.md)
   Characteristic corresponding to the camera’s current vertical tilt setting.
-- [var targetVerticalTilt: HMCharacteristic?](hmcamerasettingscontrol/targetverticaltilt.md)
+- [var targetVerticalTilt: HMCharacteristic?](./hmcamerasettingscontrol/targetverticaltilt.md)
   Characteristic corresponding to adjusting the camera’s vertical tilt setting.
-- [var opticalZoom: HMCharacteristic?](hmcamerasettingscontrol/opticalzoom.md)
+- [var opticalZoom: HMCharacteristic?](./hmcamerasettingscontrol/opticalzoom.md)
   Characteristic corresponding to the camera’s optical zoom setting.
-- [var digitalZoom: HMCharacteristic?](hmcamerasettingscontrol/digitalzoom.md)
+- [var digitalZoom: HMCharacteristic?](./hmcamerasettingscontrol/digitalzoom.md)
   Characteristic corresponding to the camera’s digital zoom setting.
-- [var imageMirroring: HMCharacteristic?](hmcamerasettingscontrol/imagemirroring.md)
+- [var imageMirroring: HMCharacteristic?](./hmcamerasettingscontrol/imagemirroring.md)
   Characteristic corresponding to the camera’s image mirroring setting.
-- [var imageRotation: HMCharacteristic?](hmcamerasettingscontrol/imagerotation.md)
+- [var imageRotation: HMCharacteristic?](./hmcamerasettingscontrol/imagerotation.md)
   Characteristic corresponding to the camera’s image rotation setting.
-- [var nightVision: HMCharacteristic?](hmcamerasettingscontrol/nightvision.md)
+- [var nightVision: HMCharacteristic?](./hmcamerasettingscontrol/nightvision.md)
   Characteristic corresponding to the camera’s night vision setting.
 
 ## Relationships
 
 ### Inherits From
-- [HMCameraControl](hmcameracontrol.md)
+- [HMCameraControl](./hmcameracontrol.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var settingsControl: HMCameraSettingsControl?](hmcameraprofile/settingscontrol.md)
+### Controlling camera settings
+- [var settingsControl: HMCameraSettingsControl?](./hmcameraprofile/settingscontrol.md)
   Controls the settings on the camera.
-- [class HMCameraControl](hmcameracontrol.md)
+- [class HMCameraControl](./hmcameracontrol.md)
   An abstract class that represents a camera control.
 
 

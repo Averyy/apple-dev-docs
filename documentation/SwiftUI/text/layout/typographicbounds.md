@@ -1,7 +1,8 @@
 # Text.Layout.TypographicBounds
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The typographic bounds of an element in a text layout.
 
@@ -24,30 +25,30 @@ struct TypographicBounds
 ## Topics
 
 ### Initializers
-- [init()](text/layout/typographicbounds/init.md)
+- [init()](./typographicbounds/init%28%29.md)
   Initializes to an empty bounds with zero origin.
 ### Instance Properties
-- [var ascent: CGFloat](text/layout/typographicbounds/ascent.md)
+- [var ascent: CGFloat](./typographicbounds/ascent.md)
   The ascent of the element.
-- [var descent: CGFloat](text/layout/typographicbounds/descent.md)
+- [var descent: CGFloat](./typographicbounds/descent.md)
   The descent of the element.
-- [var leading: CGFloat](text/layout/typographicbounds/leading.md)
+- [var leading: CGFloat](./typographicbounds/leading.md)
   The leading of the element.
-- [var origin: CGPoint](text/layout/typographicbounds/origin.md)
+- [var origin: CGPoint](./typographicbounds/origin.md)
   The position of the left edge of the element’s baseline, relative to the text view.
-- [var rect: CGRect](text/layout/typographicbounds/rect.md)
+- [var rect: CGRect](./typographicbounds/rect.md)
   Returns a rectangle encapsulating the bounds.
-- [var width: CGFloat](text/layout/typographicbounds/width.md)
+- [var width: CGFloat](./typographicbounds/width.md)
   The width of the element.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # kMDItemEditors
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 let kMDItemEditors: CFString!
+```
+
+```c
+const CFStringRef kMDItemEditors;
 ```
 
 

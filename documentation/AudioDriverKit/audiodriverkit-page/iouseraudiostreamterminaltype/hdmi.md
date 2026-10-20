@@ -1,14 +1,15 @@
 # HDMI
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 21.0+
 
 ## Declaration
 
-```swift
+```c
 HDMI
 ```
 

@@ -1,7 +1,8 @@
 # init(serviceIdentifier:passwordFieldPasswordRules:confirmPasswordFieldPasswordRules:passwordRulesFromQuirks:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.2+
@@ -13,6 +14,10 @@
 
 ```swift
 init(serviceIdentifier: ASCredentialServiceIdentifier, passwordFieldPasswordRules: String?, confirmPasswordFieldPasswordRules: String?, passwordRulesFromQuirks: String?)
+```
+
+```objc
+- (instancetype) initWithServiceIdentifier:(ASCredentialServiceIdentifier *) serviceIdentifier passwordFieldPasswordRules:(NSString *) passwordFieldPasswordRules confirmPasswordFieldPasswordRules:(NSString *) confirmPasswordFieldPasswordRules passwordRulesFromQuirks:(NSString *) passwordRulesFromQuirks;
 ```
 
 

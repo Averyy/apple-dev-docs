@@ -1,7 +1,8 @@
 # setSelectedAttributes(_:isMultiple:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the initial display state of the font panel with the attributes of the selected text.
 
@@ -16,6 +17,10 @@ Configures the initial display state of the font panel with the attributes of th
 
 ```swift
 func setSelectedAttributes(_ attributes: [NSAttributedString.Key : Any], isMultiple flag: Bool)
+```
+
+```objc
+- (void) setSelectedAttributes:(NSDictionary<NSString *,id> *) attributes isMultiple:(BOOL) flag;
 ```
 
 

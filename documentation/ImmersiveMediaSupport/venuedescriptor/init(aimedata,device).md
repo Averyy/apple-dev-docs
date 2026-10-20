@@ -1,7 +1,8 @@
 # init(aimeData:device:)
 
 **Framework**: Immersive Media Support  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a venue descriptor instance from memory.
 

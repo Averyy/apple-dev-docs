@@ -1,14 +1,15 @@
 # ip_free_map
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 vm_map_t ip_free_map;
 ```
 

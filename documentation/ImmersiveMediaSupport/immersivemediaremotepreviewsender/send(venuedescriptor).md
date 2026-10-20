@@ -1,7 +1,8 @@
 # send(venueDescriptor:)
 
 **Framework**: Immersive Media Support  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a venue descriptor to all connected receivers.
 
@@ -18,7 +19,7 @@ func send(venueDescriptor: VenueDescriptor) async throws
 
 - venueDescriptor: The `venueDescriptor` to send to all clients.
 
-> **Note**: This function throws if anything fails while sending the venue descriptor.
+> **Throws**: This function throws if anything fails while sending the venue descriptor.
 
 
 ---

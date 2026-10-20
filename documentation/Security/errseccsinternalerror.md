@@ -1,7 +1,8 @@
 # errSecCSInternalError
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Internal error in Code Signing Services subsystem.
 
@@ -13,6 +14,10 @@ Internal error in Code Signing Services subsystem.
 
 ```swift
 var errSecCSInternalError: OSStatus { get }
+```
+
+```c
+errSecCSInternalError
 ```
 
 

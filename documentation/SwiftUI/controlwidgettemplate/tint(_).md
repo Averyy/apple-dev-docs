@@ -1,7 +1,8 @@
 # tint(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the tint color within this control template.
 
@@ -21,7 +22,7 @@ Sets the tint color within this control template.
 
 #### Discussion
 
-Controls don’t respect the [`tint(_:)`](view/tint(_:).md) modifier when applied to control labels, nor do controls support arbitrary tint shape styles. Instead, define a tint color for your control by applying this modifier to its template:
+Controls don’t respect the [`tint(_:)`](../view/tint%28_%29.md) modifier when applied to control labels, nor do controls support arbitrary tint shape styles. Instead, define a tint color for your control by applying this modifier to its template:
 
 ```swift
 struct GarageDoorOpener: ControlWidget {
@@ -41,7 +42,7 @@ struct GarageDoorOpener: ControlWidget {
 
 ## Parameters
 
-- `tint`: The tint [`Color`](color.md) to apply.
+- `tint`: The tint [`Color`](../color.md) to apply.
 
 
 ---

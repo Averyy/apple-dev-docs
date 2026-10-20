@@ -1,7 +1,8 @@
 # init(_:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance that uniquely identifies and creates slider ticks across updates based on the identity of the underlying data.
 
@@ -20,9 +21,16 @@ nonisolated
 init<V>(_ data: Data, @SliderTickBuilder<V> content: @escaping (Data.Element) -> Content) where ID == V.ID, V : Identifiable, V == Data.Element, Data.Element == Content.Value
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+init<V>(_ data: Range<Int>, @SliderTickBuilder<V> content: @escaping (Range<Int>.Element) -> Content) where Data == Range<Int>, V == Content.Value
+```
+
 ## Parameters
 
-- `data`: The identified data that the [`ForEach`](foreach.md) instance uses to create slider ticks dynamically.
+- `data`: The identified data that the [`ForEach`](../foreach.md) instance uses to create slider ticks dynamically.
 - `content`: The builder that creates ticks dynamically for each element.
 
 

@@ -1,7 +1,8 @@
 # reverse
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Causes the enumeration to occur in reverse.
 
@@ -20,9 +21,14 @@ Causes the enumeration to occur in reverse.
 static var reverse: NSAttributedString.EnumerationOptions { get }
 ```
 
+```c
+NSAttributedStringEnumerationReverse
+```
+
 ## See Also
 
-- [static var longestEffectiveRangeNotRequired: NSAttributedString.EnumerationOptions](nsattributedstring/enumerationoptions/longesteffectiverangenotrequired.md)
+### Getting the enumeration options
+- [static var longestEffectiveRangeNotRequired: NSAttributedString.EnumerationOptions](./longesteffectiverangenotrequired.md)
   If `NSAttributedStringEnumerationLongestEffectiveRangeNotRequired` option is supplied, then the longest effective range computation is not performed; the blocks may be invoked with consecutive attribute runs that have the same value.
 
 

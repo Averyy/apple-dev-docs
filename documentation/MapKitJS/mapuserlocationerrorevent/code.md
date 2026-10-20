@@ -1,7 +1,8 @@
 # code
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The code indicating why location acquisition failed.
 
@@ -10,7 +11,7 @@ The code indicating why location acquisition failed.
 
 ## Declaration
 
-```swift
+```
 readonly code: number;
 ```
 

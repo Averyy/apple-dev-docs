@@ -1,7 +1,8 @@
 # makeProcessTap(description:)
 
 **Framework**: Core Audio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new tap using the provided description.
 

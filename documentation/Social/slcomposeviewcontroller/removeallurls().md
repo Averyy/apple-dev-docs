@@ -1,7 +1,8 @@
 # removeAllURLs()
 
 **Framework**: Social  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all URLs from the post.
 
@@ -16,23 +17,28 @@ Removes all URLs from the post.
 func removeAllURLs() -> Bool
 ```
 
+```objc
+- (BOOL) removeAllURLs;
+```
+
 #### Return Value
 
 Returns a Boolean value that indicates whether the URLs were successfully removed.
 
 #### Discussion
 
-If the view controller has already been presented to the user when [`removeAllURLs()`](slcomposeviewcontroller/removeallurls().md) is called, the method returns [`false`](https://developer.apple.com/documentation/swift/false) and the URLS are not removed.
+If the view controller has already been presented to the user when [`removeAllURLs()`](./removeallurls%28%29.md) is called, the method returns [`false`](../../Swift/false.md) and the URLS are not removed.
 
 ## See Also
 
-- [func setInitialText(String!) -> Bool](slcomposeviewcontroller/setinitialtext(_:).md)
+### Specifying the Contents of the Post
+- [func setInitialText(String!) -> Bool](./setinitialtext%28_%29.md)
   Sets the initial text to be posted.
-- [func add(UIImage!) -> Bool](slcomposeviewcontroller/add(_:)-1z68a.md)
+- [func add(UIImage!) -> Bool](./add%28_%29-1z68a.md)
   Adds an image to the post.
-- [func add(URL!) -> Bool](slcomposeviewcontroller/add(_:)-3mn1w.md)
+- [func add(URL!) -> Bool](./add%28_%29-3mn1w.md)
   Adds a URL to the post.
-- [func removeAllImages() -> Bool](slcomposeviewcontroller/removeallimages.md)
+- [func removeAllImages() -> Bool](./removeallimages%28%29.md)
   Removes all images from the post.
 
 

@@ -1,7 +1,8 @@
 # SubscriptionOfferViewStyleConfiguration.Icon
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -18,9 +19,9 @@
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [View](../../SwiftUI/view.md)
 
 
 ---

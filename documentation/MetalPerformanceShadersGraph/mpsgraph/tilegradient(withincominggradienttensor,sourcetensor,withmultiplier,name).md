@@ -1,7 +1,8 @@
 # tileGradient(withIncomingGradientTensor:sourceTensor:withMultiplier:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a tile gradient operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a tile gradient operation and returns the result tensor.
 
 ```swift
 func tileGradient(withIncomingGradientTensor incomingGradientTensor: MPSGraphTensor, sourceTensor: MPSGraphTensor, withMultiplier multiplier: [NSNumber], name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) tileGradientWithIncomingGradientTensor:(MPSGraphTensor *) incomingGradientTensor sourceTensor:(MPSGraphTensor *) sourceTensor withMultiplier:(MPSShape *) multiplier name:(NSString *) name;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # point(named:on:positionWeight:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a constraint with only a positional demand.
 

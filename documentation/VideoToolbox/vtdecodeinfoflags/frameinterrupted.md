@@ -1,7 +1,8 @@
 # frameInterrupted
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 6.0+
@@ -15,6 +16,10 @@
 
 ```swift
 static var frameInterrupted: VTDecodeInfoFlags { get }
+```
+
+```c
+kVTDecodeInfo_FrameInterrupted
 ```
 
 

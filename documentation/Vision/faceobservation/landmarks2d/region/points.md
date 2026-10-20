@@ -1,7 +1,8 @@
 # points
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -20,10 +21,11 @@ let points: [NormalizedPoint]
 
 ## See Also
 
-- [let originatingRequestDescriptor: RequestDescriptor?](faceobservation/landmarks2d/region/originatingrequestdescriptor.md)
-- [let pointsClassification: FaceObservation.Landmarks2D.Region.PointsClassification](faceobservation/landmarks2d/region/pointsclassification-swift.property.md)
-- [FaceObservation.Landmarks2D.Region.PointsClassification](faceobservation/landmarks2d/region/pointsclassification-swift.enum.md)
-- [let precisionEstimatesPerPoint: [Float]?](faceobservation/landmarks2d/region/precisionestimatesperpoint.md)
+### Inspecting a region
+- [let originatingRequestDescriptor: RequestDescriptor?](./originatingrequestdescriptor.md)
+- [let pointsClassification: FaceObservation.Landmarks2D.Region.PointsClassification](./pointsclassification-swift.property.md)
+- [FaceObservation.Landmarks2D.Region.PointsClassification](./pointsclassification-swift.enum.md)
+- [let precisionEstimatesPerPoint: [Float]?](./precisionestimatesperpoint.md)
 
 
 ---

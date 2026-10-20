@@ -1,7 +1,8 @@
 # activeCamera
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The camera to be used for rendering.
 

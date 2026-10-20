@@ -1,7 +1,8 @@
 # errSecInvalidAttributeBase
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A base attribute is not valid.
 
@@ -18,6 +19,10 @@ A base attribute is not valid.
 
 ```swift
 var errSecInvalidAttributeBase: OSStatus { get }
+```
+
+```c
+errSecInvalidAttributeBase
 ```
 
 

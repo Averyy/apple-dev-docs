@@ -1,12 +1,13 @@
 # AVAudioSession.SoundStageSize
 
 **Framework**: AVFAudio  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the perceived size of sounds the audio session plays.
 
 **Availability**:
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -14,42 +15,47 @@ Constants that specify the perceived size of sounds the audio session plays.
 enum SoundStageSize
 ```
 
+```c
+enum AVAudioSessionSoundStageSize : NSInteger;
+```
+
 ## Topics
 
 ### Creating a sound stage size
-- [init?(rawValue: Int)](avaudiosession/soundstagesize/init(rawvalue:).md)
+- [init?(rawValue: Int)](./soundstagesize/init%28rawvalue%29.md)
 ### Choosing a sound stage size
-- [AVAudioSession.SoundStageSize.automatic](avaudiosession/soundstagesize/automatic.md)
+- [AVAudioSession.SoundStageSize.automatic](./soundstagesize/automatic.md)
   The system sets the sound stage size.
-- [AVAudioSession.SoundStageSize.small](avaudiosession/soundstagesize/small.md)
+- [AVAudioSession.SoundStageSize.small](./soundstagesize/small.md)
   A small sound stage.
-- [AVAudioSession.SoundStageSize.medium](avaudiosession/soundstagesize/medium.md)
+- [AVAudioSession.SoundStageSize.medium](./soundstagesize/medium.md)
   A medium sound stage.
-- [AVAudioSession.SoundStageSize.large](avaudiosession/soundstagesize/large.md)
+- [AVAudioSession.SoundStageSize.large](./soundstagesize/large.md)
   A large sound stage.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var intendedSpatialExperience: any AVAudioSessionSpatialExperience](avaudiosession/intendedspatialexperience-1bpnq.md)
+### Configuring the spatial experience
+- [var intendedSpatialExperience: any AVAudioSessionSpatialExperience](./intendedspatialexperience-1bpnq.md)
   The spatial audio experience your app intends to provide the user.
-- [func setIntendedSpatialExperience(any AVAudioSessionSpatialExperience) throws](avaudiosession/setintendedspatialexperience(_:).md)
+- [func setIntendedSpatialExperience(any AVAudioSessionSpatialExperience) throws](./setintendedspatialexperience%28_%29.md)
   Sets the spatial audio experience your app intends to provide the user.
-- [protocol AVAudioSessionSpatialExperience](avaudiosessionspatialexperience-swift.protocol.md)
-- [AVAudioSession.AnchoringStrategy](avaudiosession/anchoringstrategy.md)
+- [protocol AVAudioSessionSpatialExperience](../avaudiosessionspatialexperience-swift.protocol.md)
+- [AVAudioSession.AnchoringStrategy](./anchoringstrategy.md)
   Constants that specify how to set the origin of audio in a head-tracked spatial experience.
-- [var isNowPlayingCandidate: Bool](avaudiosession/isnowplayingcandidate.md)
+- [var isNowPlayingCandidate: Bool](./isnowplayingcandidate.md)
   A Boolean value that indicates whether the audio session is a candidate to be the Now Playing session.
-- [func setIsNowPlayingCandidate(Bool) throws](avaudiosession/setisnowplayingcandidate(_:).md)
+- [func setIsNowPlayingCandidate(Bool) throws](./setisnowplayingcandidate%28_%29.md)
   Sets a Boolean value that indicates whether the audio session is a candidate to be the Now Playing session.
 
 

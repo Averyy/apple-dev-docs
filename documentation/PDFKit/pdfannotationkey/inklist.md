@@ -1,7 +1,8 @@
 # inklist
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An array of arrays that represents stroked paths.
 
@@ -17,6 +18,10 @@ An array of arrays that represents stroked paths.
 
 ```swift
 static let inklist: PDFAnnotationKey
+```
+
+```c
+extern PDFAnnotationKey PDFAnnotationKeyInklist;
 ```
 
 

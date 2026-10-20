@@ -1,7 +1,8 @@
 # submitScore(_:context:player:leaderboardIDs:completionHandler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Submits a score to multiple leaderboards.
 
@@ -17,13 +18,21 @@ Submits a score to multiple leaderboards.
 ## Declaration
 
 ```swift
+class func submitScore(_ score: Int, context: Int, player: GKPlayer, leaderboardIDs: [String], completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 class func submitScore(_ score: Int, context: Int, player: GKPlayer, leaderboardIDs: [String]) async throws
+```
+
+```objc
++ (void) submitScore:(NSInteger) score context:(NSUInteger) context player:(GKPlayer *) player leaderboardIDs:(NSArray<NSString *> *) leaderboardIDs completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 ## Mentions
 
-- [Creating recurring leaderboards](creating-recurring-leaderboards.md)
-- [Encourage progress and competition with leaderboards](encourage-progress-and-competition-with-leaderboards.md)
+- [Creating recurring leaderboards](../creating-recurring-leaderboards.md)
+- [Encourage progress and competition with leaderboards](../encourage-progress-and-competition-with-leaderboards.md)
 
 ## Parameters
 
@@ -31,11 +40,16 @@ class func submitScore(_ score: Int, context: Int, player: GKPlayer, leaderboard
 - `context`: An integer value that your game uses.
 - `player`: The player who earns the score.
 - `leaderboardIDs`: The IDs that Game Center uses for the leaderboards to submit the score to.
-- `completionHandler`: A block that GameKit calls when this method adds the score. The block receives the following parameters: - **error**: Describes an error if it occurs, or `nil` if the operation completes.
+- `completionHandler`: A block that GameKit calls when this method adds the score.
+
+  The block receives the following parameters:
+
+  - **error**: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 
-- [func submitScore(Int, context: Int, player: GKPlayer, completionHandler: ((any Error)?) -> Void)](gkleaderboard/submitscore(_:context:player:completionhandler:).md)
+### Submitting Scores
+- [func submitScore(Int, context: Int, player: GKPlayer, completionHandler: ((any Error)?) -> Void)](./submitscore%28_,context,player,completionhandler%29.md)
   Submits a score to the leaderboard.
 
 

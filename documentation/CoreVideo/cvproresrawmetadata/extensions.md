@@ -1,7 +1,8 @@
 # extensions
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 ProRes RAW metadata extensions. This Data contains a big-endian UInt32 representing the size of the item in bytes followed by a 4-character code (‘psim’) followed by a variable-length pascal string identifying the metadata (like a key string) followed by the metadata payload.
 

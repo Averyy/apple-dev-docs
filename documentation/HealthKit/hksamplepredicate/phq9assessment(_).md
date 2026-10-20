@@ -1,7 +1,8 @@
 # phq9Assessment(_:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 18.0+
@@ -16,6 +17,8 @@
 ```swift
 static func phq9Assessment(_ predicate: NSPredicate? = nil) -> HKSamplePredicate<HKPHQ9Assessment>
 ```
+
+Available when `Sample` inherits `HKSample`.
 
 
 ---

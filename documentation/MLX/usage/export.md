@@ -6,39 +6,12 @@ url: https://ml-explore.github.io/mlx/build/html/usage/export.html
 
 # Exporting Functions
 
-**
-
-- [.rst](../_sources/usage/export.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# Exporting Functions
-
- Table of contents 
-
-## Contents
-
-# Exporting Functions
-
 MLX has an API to export and import functions to and from a file. This lets you
 run computations written in one MLX front-end (e.g. Python) in another MLX
 front-end (e.g. C++).
 
 This guide walks through the basics of the MLX export API with some examples.
-To see the full list of functions check-out the [API documentation](../python/export.html#export).
+To see the full list of functions check-out the [API documentation](../python/export.md#export).
 
 ## Basics of Exporting
 
@@ -83,7 +56,7 @@ example inputs we exported the function with.
 Also notice that even though the original `fun` returns a single output
 array, the imported function always returns a tuple of one or more arrays.
 
-The inputs to [export_function()](../python/_autosummary/mlx.core.export_function.html#mlx.core.export_function) and to an imported function can be
+The inputs to [export_function()](../python/_autosummary/mlx.core.export_function.md#mlx.core.export_function) and to an imported function can be
 specified as variable positional arguments or as a tuple of arrays:
 
 ```
@@ -163,7 +136,7 @@ print(json.loads(metadata)["description"])
 
 ## Exporting Modules
 
-An [mlx.nn.Module](../python/nn/module.html#mlx.nn.Module) can be exported with or without the parameters included
+An [mlx.nn.Module](../python/nn/module.md#mlx.nn.Module) can be exported with or without the parameters included
 in the exported function. Here’s an example:
 
 ```
@@ -176,7 +149,7 @@ def call(x):
 mx.export_function("model.mlxfn", call, mx.zeros(4))
 ```
 
-In the above example, the [mlx.nn.Linear](../python/nn/_autosummary/mlx.nn.Linear.html#mlx.nn.Linear) module is exported. Its
+In the above example, the [mlx.nn.Linear](../python/nn/_autosummary/mlx.nn.Linear.md#mlx.nn.Linear) module is exported. Its
 parameters are also saved to the `model.mlxfn` file.
 
 Note
@@ -187,7 +160,7 @@ the computation that produces enclosed inputs.
 
 If the above example was missing `mx.eval(model.parameters()`, the
 exported function would include the random initialization of the
-[mlx.nn.Module](../python/nn/module.html#mlx.nn.Module) parameters.
+[mlx.nn.Module](../python/nn/module.md#mlx.nn.Module) parameters.
 
 If you only want to export the `Module.__call__` function without the
 parameters, pass them as inputs to the `call` wrapper:
@@ -208,7 +181,7 @@ mx.export_function("model.mlxfn", call, (mx.zeros(4),), params)
 ## Exporting with a Callback
 
 To inspect the exported graph, you can pass a callback instead of a file path
-to [export_function()](../python/_autosummary/mlx.core.export_function.html#mlx.core.export_function).
+to [export_function()](../python/_autosummary/mlx.core.export_function.md#mlx.core.export_function).
 
 ```
 def fun(x):
@@ -233,8 +206,8 @@ Each type has additional fields in the `args` dictionary.
 
 ## Shapeless Exports
 
-Just like [compile()](../python/_autosummary/mlx.core.compile.html#mlx.core.compile), functions can also be exported for dynamically shaped
-inputs. Pass `shapeless=True` to [export_function()](../python/_autosummary/mlx.core.export_function.html#mlx.core.export_function) or [exporter()](../python/_autosummary/mlx.core.exporter.html#mlx.core.exporter)
+Just like [compile()](../python/_autosummary/mlx.core.compile.md#mlx.core.compile), functions can also be exported for dynamically shaped
+inputs. Pass `shapeless=True` to [export_function()](../python/_autosummary/mlx.core.export_function.md#mlx.core.export_function) or [exporter()](../python/_autosummary/mlx.core.exporter.md#mlx.core.exporter)
 to export a function which can be used for inputs with variable shapes:
 
 ```
@@ -252,7 +225,7 @@ With `shapeless=False` (which is the default), the second call to
 `imported_abs` would raise an exception with a shape mismatch.
 
 Shapeless exporting works the same as shapeless compilation and should be
-used carefully. See the [documentation on shapeless compilation](compile.html#shapeless-compile) for more information.
+used carefully. See the [documentation on shapeless compilation](compile.md#shapeless-compile) for more information.
 
 ## Exporting Multiple Traces
 
@@ -260,10 +233,10 @@ In some cases, functions build different computation graphs for different
 input arguments. A simple way to manage this is to export to a new file with
 each set of inputs. This is a fine option in many cases. But it can be
 suboptimal if the exported functions have a large amount of duplicate constant
-data (for example the parameters of a [mlx.nn.Module](../python/nn/module.html#mlx.nn.Module)).
+data (for example the parameters of a [mlx.nn.Module](../python/nn/module.md#mlx.nn.Module)).
 
 The export API in MLX lets you export multiple traces of the same function to
-a single file by creating an exporting context manager with [exporter()](../python/_autosummary/mlx.core.exporter.html#mlx.core.exporter):
+a single file by creating an exporting context manager with [exporter()](../python/_autosummary/mlx.core.exporter.md#mlx.core.exporter):
 
 ```
 def fun(x, y=None):
@@ -292,7 +265,7 @@ saved once.
 
 ## Transformations with Imported Functions
 
-Function transformations like [grad()](../python/_autosummary/mlx.core.grad.html#mlx.core.grad), [vmap()](../python/_autosummary/mlx.core.vmap.html#mlx.core.vmap), and [compile()](../python/_autosummary/mlx.core.compile.html#mlx.core.compile) work
+Function transformations like [grad()](../python/_autosummary/mlx.core.grad.md#mlx.core.grad), [vmap()](../python/_autosummary/mlx.core.vmap.md#mlx.core.vmap), and [compile()](../python/_autosummary/mlx.core.compile.md#mlx.core.compile) work
 on imported functions just like regular Python functions:
 
 ```
@@ -318,7 +291,7 @@ print(compiled_fun(x)[0])
 ## Importing Functions in C++
 
 Importing and running functions in C++ is basically the same as importing and
-running them in Python. First, follow the [instructions](../dev/mlx_in_cpp.html#mlx-in-cpp) to
+running them in Python. First, follow the [instructions](../dev/mlx_in_cpp.md#mlx-in-cpp) to
 setup a simple C++ project that uses MLX as a library.
 
 Next, export a simple function from Python:
@@ -354,5 +327,3 @@ Here are a few more complete examples exporting more complex functions from
 Python and importing and running them in C++:
 
 - [Inference and training a multi-layer perceptron](https://github.com/ml-explore/mlx/tree/main/examples/export)
-
-** Contents

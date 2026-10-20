@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that specifies whether the filter applies the color palette in a perceptual color space.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ A Boolean value that specifies whether the filter applies the color palette in a
 var perceptual: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) bool perceptual;
+```
+
 ## See Also
 
-- [var inputImage: CIImage?](cipalettecentroid/inputimage.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var paletteImage: CIImage?](cipalettecentroid/paletteimage.md)
+- [var paletteImage: CIImage?](./paletteimage.md)
   The input color palette, obtained by using a k-means clustering filter.
 
 

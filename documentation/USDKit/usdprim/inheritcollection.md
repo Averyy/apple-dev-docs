@@ -1,7 +1,8 @@
 # USDPrim.InheritCollection
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Manages inherit composition arcs on a prim.
 
@@ -26,18 +27,18 @@ Inheritance allows a prim to inherit opinions from another prim within the same 
 ## Topics
 
 ### Instance Properties
-- [var inheritedPaths: [USDLayer.Path]](usdprim/inheritcollection/inheritedpaths.md)
+- [var inheritedPaths: [USDLayer.Path]](./inheritcollection/inheritedpaths.md)
   All paths this prim inherits from, including paths inherited transitively through inherited classes.
-- [var prim: USDPrim](usdprim/inheritcollection/prim.md)
+- [var prim: USDPrim](./inheritcollection/prim.md)
   The prim that owns these inherit arcs.
 ### Instance Methods
-- [func add(USDLayer.Path, position: USDPrim.ListPosition) throws](usdprim/inheritcollection/add(_:position:).md)
+- [func add(USDLayer.Path, position: USDPrim.ListPosition) throws](./inheritcollection/add%28_,position%29.md)
   Adds an inherit arc to the prim.
-- [func clear() throws](usdprim/inheritcollection/clear.md)
+- [func clear() throws](./inheritcollection/clear%28%29.md)
   Removes all inherit arcs from the prim.
-- [func remove(USDLayer.Path) throws](usdprim/inheritcollection/remove(_:).md)
+- [func remove(USDLayer.Path) throws](./inheritcollection/remove%28_%29.md)
   Removes a specific inherit arc from the prim.
-- [func set([USDLayer.Path]) throws](usdprim/inheritcollection/set(_:).md)
+- [func set([USDLayer.Path]) throws](./inheritcollection/set%28_%29.md)
   Replaces all inherit arcs with the specified list.
 
 

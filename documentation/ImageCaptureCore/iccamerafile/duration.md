@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration, in seconds, of an audio or video file.
 
@@ -18,11 +19,16 @@ The duration, in seconds, of an audio or video file.
 var duration: Double { get }
 ```
 
+```objc
+@property (nonatomic, readonly) double duration;
+```
+
 ## See Also
 
-- [var highFramerate: Bool](iccamerafile/highframerate.md)
+### Inspecting Video Properties
+- [var highFramerate: Bool](./highframerate.md)
   A Boolean value that indicates whether the file is a slow motion or high-frame-rate video file.
-- [var timeLapse: Bool](iccamerafile/timelapse.md)
+- [var timeLapse: Bool](./timelapse.md)
   A Boolean value that indicates whether the file is a time-lapse video file.
 
 

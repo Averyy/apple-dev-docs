@@ -1,7 +1,8 @@
 # fileContent
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content of the file attachment message.
 
@@ -20,13 +21,14 @@ When possible, supply downloaded file content when reporting a message as spam.
 
 ## See Also
 
-- [var message: RCSMessage](rcsservice/reportspamrequest/message.md)
+### Accessing request properties
+- [var message: RCSMessage](./message.md)
   The message to report as spam.
-- [var category: RCSService.ReportSpamRequest.Category?](rcsservice/reportspamrequest/category-swift.property.md)
+- [var category: RCSService.ReportSpamRequest.Category?](./category-swift.property.md)
   An optional category to classify the spam type of the message.
-- [RCSService.ReportSpamRequest.Category](rcsservice/reportspamrequest/category-swift.enum.md)
+- [RCSService.ReportSpamRequest.Category](./category-swift.enum.md)
   An enumeration of spam types, for use while reporting an RCS message as spam.
-- [var reason: String?](rcsservice/reportspamrequest/reason.md)
+- [var reason: String?](./reason.md)
   An optional reason to report the message as spam.
 
 

@@ -1,7 +1,8 @@
 # FlattenSequence.Index
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A position in a FlattenCollection
 
@@ -21,21 +22,23 @@ A position in a FlattenCollection
 struct Index
 ```
 
+Available when `Base` conforms to `Collection` and `Base.Element` conforms to `Collection`.
+
 ## Topics
 
 ### Default Implementations
-- [Comparable Implementations](flattensequence/index/comparable-implementations.md)
-- [Equatable Implementations](flattensequence/index/equatable-implementations.md)
-- [Hashable Implementations](flattensequence/index/hashable-implementations.md)
+- [Comparable Implementations](./index/comparable-implementations.md)
+- [Equatable Implementations](./index/equatable-implementations.md)
+- [Hashable Implementations](./index/hashable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](comparable.md)
-- [Equatable](equatable.md)
-- [Hashable](hashable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Comparable](../comparable.md)
+- [Equatable](../equatable.md)
+- [Hashable](../hashable.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 
 ---

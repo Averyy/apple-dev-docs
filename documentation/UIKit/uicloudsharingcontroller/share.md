@@ -1,7 +1,8 @@
 # share
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A reference to the CloudKit share record used by the CloudKit sharing controller.
 
@@ -17,9 +18,13 @@ A reference to the CloudKit share record used by the CloudKit sharing controller
 var share: CKShare? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) CKShare * share;
+```
+
 #### Discussion
 
-This property provides a reference to the [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) record used by [`UICloudSharingController`](uicloudsharingcontroller.md). The property is `nil` if the controller doesn’t have a share record. This can happen when the controller is initialized with the [`init(preparationHandler:)`](uicloudsharingcontroller/init(preparationhandler:).md) method and the preparation handler hasn’t yet been called.
+This property provides a reference to the [`CKShare`](../../CloudKit/ckshare.md) record used by [`UICloudSharingController`](../uicloudsharingcontroller.md). The property is `nil` if the controller doesn’t have a share record. This can happen when the controller is initialized with the [`init(preparationHandler:)`](./init%28preparationhandler%29.md) method and the preparation handler hasn’t yet been called.
 
 
 ---

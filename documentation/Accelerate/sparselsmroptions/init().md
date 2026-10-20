@@ -1,18 +1,19 @@
 # init()
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new LSMR options structure.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,7 +23,8 @@ init()
 
 ## See Also
 
-- [init(reportError: ((UnsafePointer<CChar>) -> Void)?, lambda: Double, nvec: Int32, convergenceTest: SparseLSMRConvergenceTest_t, atol: Double, rtol: Double, btol: Double, conditionLimit: Double, maxIterations: Int32, reportStatus: ((UnsafePointer<CChar>) -> Void)?)](sparselsmroptions/init(reporterror:lambda:nvec:convergencetest:atol:rtol:btol:conditionlimit:maxiterations:reportstatus:).md)
+### Initializers
+- [init(reportError: ((UnsafePointer<CChar>) -> Void)?, lambda: Double, nvec: Int32, convergenceTest: SparseLSMRConvergenceTest_t, atol: Double, rtol: Double, btol: Double, conditionLimit: Double, maxIterations: Int32, reportStatus: ((UnsafePointer<CChar>) -> Void)?)](./init%28reporterror,lambda,nvec,convergencetest,atol,rtol,btol,conditionlimit,maxiterations,reportstatus%29.md)
   Returns a new LSMR options structure using the specified parameters.
 
 

@@ -1,7 +1,8 @@
 # importData(with:from:offset:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func importData(with cmdBuf: any MTLCommandBuffer, from images: [MPSImage], offset: MPSImageCoordinate)
+```
+
+```objc
+- (void) importDataWithCommandBuffer:(id<MTLCommandBuffer>) cmdBuf fromImages:(MPSImageBatch *) images offset:(MPSImageCoordinate) offset;
 ```
 
 

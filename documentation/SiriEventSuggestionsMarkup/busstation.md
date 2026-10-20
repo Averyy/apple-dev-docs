@@ -1,7 +1,8 @@
 # BusStation
 
 **Framework**: Siri Event Suggestions Markup  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The name and location of a bus station.
 
@@ -10,19 +11,20 @@ The name and location of a bus station.
 
 ## Declaration
 
-```swift
+```
 object BusStation
 ```
 
 ## Properties
 
-- `@type` (string) *(required)*
+- `@type` (string) *(required)*: **Allowed Values**: `BusStation`
 - `address` (PostalAddress) *(required)*: The location of the bus station.
 - `name` (string) *(required)*: The name of the bus station.
 
 ## See Also
 
-- [object BusTrip](bustrip.md)
+### Defining a Bus Reservation
+- [object BusTrip](./bustrip.md)
   Location and scheduling information for a bus trip.
 
 

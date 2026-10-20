@@ -1,16 +1,19 @@
 # adjustsImageWhenHighlighted
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the image changes when the button is highlighted.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- tvOS 2.0+
-- visionOS 1.0+
+- iOS 2.0+ - Deprecated in 15.0
+- iPadOS 2.0+ - Deprecated in 15.0
+- Mac Catalyst 13.1+ - Deprecated in 15.0
+- tvOS 2.0+ - Deprecated in 15.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use [`configurationUpdateHandler`](./configurationupdatehandler-swift.property.md) instead.
 
 ## Declaration
 
@@ -18,15 +21,20 @@ A Boolean value that determines whether the image changes when the button is hig
 var adjustsImageWhenHighlighted: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL adjustsImageWhenHighlighted;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the image is drawn lighter when the button is highlighted. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+If [`true`](../../Swift/true.md), the image is drawn lighter when the button is highlighted. The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var adjustsImageWhenDisabled: Bool](uibutton/adjustsimagewhendisabled.md)
+### Deprecated button presentation
+- [var adjustsImageWhenDisabled: Bool](./adjustsimagewhendisabled.md)
   A Boolean value that determines whether the image changes when the button is disabled.
-- [var showsTouchWhenHighlighted: Bool](uibutton/showstouchwhenhighlighted.md)
+- [var showsTouchWhenHighlighted: Bool](./showstouchwhenhighlighted.md)
   A Boolean value that determines whether tapping the button causes it to glow.
 
 

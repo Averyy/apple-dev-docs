@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The x and y position to use as the center of the sunbeam pattern.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,19 +21,24 @@ The x and y position to use as the center of the sunbeam pattern.
 var center: CGPoint { get set }
 ```
 
+```objc
+@property (nonatomic) CGPoint center;
+```
+
 ## See Also
 
-- [var color: CIColor](cisunbeamsgenerator/color.md)
+### Instance Properties
+- [var color: CIColor](./color.md)
   The color of the sun.
-- [var maxStriationRadius: Float](cisunbeamsgenerator/maxstriationradius.md)
+- [var maxStriationRadius: Float](./maxstriationradius.md)
   The radius of the sunbeams.
-- [var striationContrast: Float](cisunbeamsgenerator/striationcontrast.md)
+- [var striationContrast: Float](./striationcontrast.md)
   The contrast of the sunbeams.
-- [var striationStrength: Float](cisunbeamsgenerator/striationstrength.md)
+- [var striationStrength: Float](./striationstrength.md)
   The intensity of the sunbeams.
-- [var sunRadius: Float](cisunbeamsgenerator/sunradius.md)
+- [var sunRadius: Float](./sunradius.md)
   The radius of the sun.
-- [var time: Float](cisunbeamsgenerator/time.md)
+- [var time: Float](./time.md)
   The duration of the effect.
 
 

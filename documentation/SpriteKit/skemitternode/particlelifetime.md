@@ -1,23 +1,28 @@
 # particleLifetime
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The average lifetime of a particle, in seconds.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var particleLifetime: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic) CGFloat particleLifetime;
 ```
 
 #### Discussion
@@ -26,7 +31,8 @@ The default value is `0.0`.
 
 ## See Also
 
-- [var particleLifetimeRange: CGFloat](skemitternode/particlelifetimerange.md)
+### Controlling Particle Lifetime
+- [var particleLifetimeRange: CGFloat](./particlelifetimerange.md)
   The range of allowed random values for a particle’s lifetime.
 
 

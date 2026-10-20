@@ -1,7 +1,8 @@
 # videoRect
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current size and position of the video image that displays within the layer’s bounds.
 
@@ -19,17 +20,22 @@ The current size and position of the video image that displays within the layer�
 var videoRect: CGRect { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGRect videoRect;
+```
+
 #### Discussion
 
-The size and position of a rectangle depends on the aspect ratio of the media (16:9 or 4:3), the layer’s [`bounds`](https://developer.apple.com/documentation/quartzcore/calayer/bounds), and the value of its [`videoGravity`](avplayerlayer/videogravity.md) property.
+The size and position of a rectangle depends on the aspect ratio of the media (16:9 or 4:3), the layer’s [`bounds`](../../QuartzCore/calayer/bounds.md), and the value of its [`videoGravity`](./videogravity.md) property.
 
 This property is key-value observable.
 
 ## See Also
 
-- [var videoGravity: AVLayerVideoGravity](avplayerlayer/videogravity.md)
+### Configuring the presentation
+- [var videoGravity: AVLayerVideoGravity](./videogravity.md)
   A value that specifies how the layer displays the player’s visual content within the layer’s bounds.
-- [struct AVLayerVideoGravity](avlayervideogravity.md)
+- [struct AVLayerVideoGravity](../avlayervideogravity.md)
   A structure that defines how a layer displays a player’s visual content within the layer’s bounds.
 
 

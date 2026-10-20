@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.Network.Credentials.password(_:)
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A password is available for the Wi-Fi network, with the associated value containing the password.
 

@@ -1,7 +1,8 @@
 # allAssetIDsByEntityID
 
 **Framework**: Media Intelligence  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An async sequence of all asset identifiers, grouped by entity.
 
@@ -21,17 +22,18 @@ final var allAssetIDsByEntityID: some AsyncSequence<(entityID: FaceGroupAnalyzer
 
 ## See Also
 
-- [var allFaces: some AsyncSequence<FaceGroupAnalyzer.Face, any Error>](facegroupanalyzer/allfaces.md)
+### Retrieving faces and entities
+- [var allFaces: some AsyncSequence<FaceGroupAnalyzer.Face, any Error>](./allfaces.md)
   An async sequence of all faces in the analyzer.
-- [var allFacesByEntityID: some AsyncSequence<(entityID: FaceGroupAnalyzer.Entity.ID, faces: Array<FaceGroupAnalyzer.Face>), any Error>](facegroupanalyzer/allfacesbyentityid.md)
+- [var allFacesByEntityID: some AsyncSequence<(entityID: FaceGroupAnalyzer.Entity.ID, faces: Array<FaceGroupAnalyzer.Face>), any Error>](./allfacesbyentityid.md)
   An async sequence of all faces, grouped by entity.
-- [var allEntities: some AsyncSequence<FaceGroupAnalyzer.Entity, any Error>](facegroupanalyzer/allentities.md)
+- [var allEntities: some AsyncSequence<FaceGroupAnalyzer.Entity, any Error>](./allentities.md)
   An async sequence of all entities in the analyzer.
-- [var allAssetIDs: some AsyncSequence<MediaIntelligenceImageAsset.ID, any Error>](facegroupanalyzer/allassetids.md)
+- [var allAssetIDs: some AsyncSequence<MediaIntelligenceImageAsset.ID, any Error>](./allassetids.md)
   An async sequence of all asset identifiers in the analyzer.
-- [FaceGroupAnalyzer.Face](facegroupanalyzer/face.md)
+- [FaceGroupAnalyzer.Face](./face.md)
   A face detected in an image asset.
-- [FaceGroupAnalyzer.Entity](facegroupanalyzer/entity.md)
+- [FaceGroupAnalyzer.Entity](./entity.md)
   A cluster of faces that belong to the same person.
 
 

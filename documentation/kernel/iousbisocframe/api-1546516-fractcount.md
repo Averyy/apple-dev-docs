@@ -1,7 +1,8 @@
 # frActCount
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The frame active count.
 
@@ -10,15 +11,16 @@ The frame active count.
 
 ## Declaration
 
-```swift
+```c
 UInt16 frActCount;
 ```
 
 ## See Also
 
-- [frReqCount](iousbisocframe/1546063-frreqcount.md)
+### Getting the Properties
+- [frReqCount](./api-1546063-frreqcount.md)
   The frame request count.
-- [frStatus](iousbisocframe/1546477-frstatus.md)
+- [frStatus](./api-1546477-frstatus.md)
   The frame status.
 
 

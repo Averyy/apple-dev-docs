@@ -1,7 +1,8 @@
 # checksForInternalCollisions
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the joint checks and reports collisions between the two entity instances.
 
@@ -21,7 +22,7 @@ let checksForInternalCollisions: Bool
 
 #### Discussion
 
-The entities that [`PhysicsFixedJoint`](physicsfixedjoint.md) references are not checked or reported, so this property only returns `false`.
+The entities that [`PhysicsFixedJoint`](../physicsfixedjoint.md) references are not checked or reported, so this property only returns `false`.
 
 
 ---

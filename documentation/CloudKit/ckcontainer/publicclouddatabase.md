@@ -1,23 +1,28 @@
 # publicCloudDatabase
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app’s public database.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var publicCloudDatabase: CKDatabase { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) CKDatabase * publicCloudDatabase;
 ```
 
 #### Discussion
@@ -28,11 +33,12 @@ Data in the public database counts toward your app’s iCloud storage quota.
 
 ## See Also
 
-- [var privateCloudDatabase: CKDatabase](ckcontainer/privateclouddatabase.md)
+### Getting the Public and Private Databases
+- [var privateCloudDatabase: CKDatabase](./privateclouddatabase.md)
   The user’s private database.
-- [var sharedCloudDatabase: CKDatabase](ckcontainer/sharedclouddatabase.md)
+- [var sharedCloudDatabase: CKDatabase](./sharedclouddatabase.md)
   The database that contains shared data.
-- [func database(with: CKDatabase.Scope) -> CKDatabase](ckcontainer/database(with:).md)
+- [func database(with: CKDatabase.Scope) -> CKDatabase](./database%28with%29.md)
   Returns the database with the specified scope.
 
 

@@ -1,7 +1,8 @@
 # ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve.ComponentMix.maxRGB
 
 **Framework**: ColorSync  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Use the maximum of the red, green, and blue components.
 

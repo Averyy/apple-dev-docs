@@ -1,7 +1,8 @@
 # errSecOpWr
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The file is already open with write permission.
 
@@ -18,6 +19,10 @@ The file is already open with write permission.
 
 ```swift
 var errSecOpWr: OSStatus { get }
+```
+
+```c
+errSecOpWr
 ```
 
 

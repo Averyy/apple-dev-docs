@@ -1,7 +1,8 @@
 # address
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The mobile national ID card holder’s address on record with the issuer.
 

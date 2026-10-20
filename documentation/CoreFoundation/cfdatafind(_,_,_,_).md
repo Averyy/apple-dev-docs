@@ -1,7 +1,8 @@
 # CFDataFind(_:_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Finds and returns the range within a data object of the first occurrence of the given data, within a given range, subject to any given options.
 
@@ -20,24 +21,29 @@ Finds and returns the range within a data object of the first occurrence of the 
 func CFDataFind(_ theData: CFData!, _ dataToFind: CFData!, _ searchRange: CFRange, _ compareOptions: CFDataSearchFlags) -> CFRange
 ```
 
+```c
+extern CFRange CFDataFind(CFDataRef theData, CFDataRef dataToFind, CFRange searchRange, CFDataSearchFlags compareOptions);
+```
+
 #### Return Value
 
-The range representing the location and length of `dataToFind` within `searchRange`, modulo the options in `compareOptions`. The range returned is relative to the start of the searched data, not the passed-in search range. Returns [`kCFNotFound`](kcfnotfound.md) if `dataToFind` is not found.
+The range representing the location and length of `dataToFind` within `searchRange`, modulo the options in `compareOptions`. The range returned is relative to the start of the searched data, not the passed-in search range. Returns [`kCFNotFound`](./kcfnotfound.md) if `dataToFind` is not found.
 
 ## Parameters
 
 - `theData`: The data object within which to search.
 - `dataToFind`: The data to find. Must not be `NULL`.
 - `searchRange`: The range within `theData` to be searched.
-- `compareOptions`: A bit mask specifying search options. The [`CFDataSearchFlags`](cfdatasearchflags.md) options can be specified singly or combined with the C bitwise `OR` operator
+- `compareOptions`: A bit mask specifying search options. The [`CFDataSearchFlags`](./cfdatasearchflags.md) options can be specified singly or combined with the C bitwise `OR` operator
 
 ## See Also
 
-- [func CFDataGetBytePtr(CFData!) -> UnsafePointer<UInt8>!](cfdatagetbyteptr(_:).md)
+### Examining a CFData Object
+- [func CFDataGetBytePtr(CFData!) -> UnsafePointer<UInt8>!](./cfdatagetbyteptr%28_%29.md)
   Returns a read-only pointer to the bytes of a CFData object.
-- [func CFDataGetBytes(CFData!, CFRange, UnsafeMutablePointer<UInt8>!)](cfdatagetbytes(_:_:_:).md)
+- [func CFDataGetBytes(CFData!, CFRange, UnsafeMutablePointer<UInt8>!)](./cfdatagetbytes%28_,_,_%29.md)
   Copies the byte contents of a CFData object to an external buffer.
-- [func CFDataGetLength(CFData!) -> CFIndex](cfdatagetlength(_:).md)
+- [func CFDataGetLength(CFData!) -> CFIndex](./cfdatagetlength%28_%29.md)
   Returns the number of bytes contained by a CFData object.
 
 

@@ -1,7 +1,8 @@
 # compassDirection
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The general indicator of wind direction.
 
@@ -26,13 +27,14 @@ This structure refers to the direction the wind is coming from; for instance, a 
 
 ## See Also
 
-- [Wind.CompassDirection](wind/compassdirection-swift.enum.md)
+### Getting the properties
+- [Wind.CompassDirection](./compassdirection-swift.enum.md)
   A compass composed of cardinal and intercardinal directions.
-- [var direction: Measurement<UnitAngle>](wind/direction.md)
+- [var direction: Measurement<UnitAngle>](./direction.md)
   The direction the wind is coming from in degrees.
-- [var gust: Measurement<UnitSpeed>?](wind/gust.md)
+- [var gust: Measurement<UnitSpeed>?](./gust.md)
   A sudden increase in wind speed due to friction, wind shear, or by heating.
-- [var speed: Measurement<UnitSpeed>](wind/speed.md)
+- [var speed: Measurement<UnitSpeed>](./speed.md)
   Sustained wind speed.
 
 

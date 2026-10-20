@@ -1,7 +1,8 @@
 # contextTitle
 
 **Framework**: TV Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized string describing why the item is shown in the top shelf.
 
@@ -14,15 +15,20 @@ A localized string describing why the item is shown in the top shelf.
 var contextTitle: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * contextTitle;
+```
+
 ## See Also
 
-- [var summary: String?](tvtopshelfcarouselitem/summary.md)
+### Specifying the Item Details
+- [var summary: String?](./summary.md)
   A descriptive summary of a movie or show.
-- [var genre: String?](tvtopshelfcarouselitem/genre.md)
+- [var genre: String?](./genre.md)
   The genre assigned to the movie or show.
-- [var duration: TimeInterval](tvtopshelfcarouselitem/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The length of the movie or show, in seconds.
-- [var creationDate: Date?](tvtopshelfcarouselitem/creationdate.md)
+- [var creationDate: Date?](./creationdate.md)
   The original release date of the content.
 
 

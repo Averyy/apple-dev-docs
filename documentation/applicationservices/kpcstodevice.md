@@ -1,7 +1,8 @@
 # kPCSToDevice
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Device Independent to Device Dependent 
 

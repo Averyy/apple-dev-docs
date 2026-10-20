@@ -1,7 +1,8 @@
 # layer
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layer represented by this layer hierarchy.
 
@@ -15,9 +16,13 @@ The layer represented by this layer hierarchy.
 var layer: CALayer? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) CALayer * layer;
+```
+
 #### Discussion
 
-Set this property to the root layer of the hierarchy that you host in a [`LayerHierarchyHostingView`](layerhierarchyhostingview.md) in the browser app.
+Set this property to the root layer of the hierarchy that you host in a [`LayerHierarchyHostingView`](../layerhierarchyhostingview.md) in the browser app.
 
 
 ---

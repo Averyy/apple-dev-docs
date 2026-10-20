@@ -1,7 +1,8 @@
 # userInteractionRequired
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 User interaction is required.
 
@@ -20,13 +21,14 @@ static var userInteractionRequired: ASExtensionError.Code { get }
 
 ## See Also
 
-- [static var credentialIdentityNotFound: ASExtensionError.Code](asextensionerror/credentialidentitynotfound.md)
+### Error codes
+- [static var credentialIdentityNotFound: ASExtensionError.Code](./credentialidentitynotfound.md)
   The credential identity was not found.
-- [static var failed: ASExtensionError.Code](asextensionerror/failed.md)
+- [static var failed: ASExtensionError.Code](./failed.md)
   The operation failed.
-- [static var userCanceled: ASExtensionError.Code](asextensionerror/usercanceled.md)
+- [static var userCanceled: ASExtensionError.Code](./usercanceled.md)
   The user canceled the operation.
-- [ASExtensionError.Code](asextensionerror/code.md)
+- [ASExtensionError.Code](./code.md)
   The codes for a credential provider extension error.
 
 

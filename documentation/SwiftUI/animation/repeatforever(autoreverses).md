@@ -1,7 +1,8 @@
 # repeatForever(autoreverses:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Repeats the animation for the lifespan of the view containing the animation.
 
@@ -51,17 +52,20 @@ struct ContentView: View {
 }
 ```
 
+[Video: A video that shows a gear that continuously rotates clockwise.](https://developer.apple.com/tutorials/videos/com.apple.SwiftUI/animation-17-repeat-forever.mp4)
+
 ## Parameters
 
 - `autoreverses`: A Boolean value that indicates whether the animation sequence plays in reverse after playing forward.
 
 ## See Also
 
-- [func delay(TimeInterval) -> Animation](animation/delay(_:).md)
+### Configuring an animation
+- [func delay(TimeInterval) -> Animation](./delay%28_%29.md)
   Delays the start of the animation by the specified number of seconds.
-- [func repeatCount(Int, autoreverses: Bool) -> Animation](animation/repeatcount(_:autoreverses:).md)
+- [func repeatCount(Int, autoreverses: Bool) -> Animation](./repeatcount%28_,autoreverses%29.md)
   Repeats the animation for a specific number of times.
-- [func speed(Double) -> Animation](animation/speed(_:).md)
+- [func speed(Double) -> Animation](./speed%28_%29.md)
   Changes the duration of an animation by adjusting its speed.
 
 

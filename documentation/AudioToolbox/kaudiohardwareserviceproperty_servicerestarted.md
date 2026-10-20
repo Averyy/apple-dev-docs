@@ -1,12 +1,13 @@
 # kAudioHardwareServiceProperty_ServiceRestarted
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Used, with a HAL audio object property listener callback, as a flag that indicates a hardware service restart. The property’s `Float32` value has no meaning. When the hardware service restarts, any associated application state, such as cached data or property listener callbacks, must be re-established.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,10 +15,15 @@ Used, with a HAL audio object property listener callback, as a flag that indicat
 var kAudioHardwareServiceProperty_ServiceRestarted: AudioObjectPropertySelector { get }
 ```
 
+```c
+kAudioHardwareServiceProperty_ServiceRestarted
+```
+
 ## See Also
 
-- [var kAudioHardwareServiceDeviceProperty_VirtualMainBalance: AudioObjectPropertySelector](kaudiohardwareservicedeviceproperty_virtualmainbalance.md)
-- [var kAudioHardwareServiceDeviceProperty_VirtualMainVolume: AudioObjectPropertySelector](kaudiohardwareservicedeviceproperty_virtualmainvolume.md)
+### Constants
+- [var kAudioHardwareServiceDeviceProperty_VirtualMainBalance: AudioObjectPropertySelector](./kaudiohardwareservicedeviceproperty_virtualmainbalance.md)
+- [var kAudioHardwareServiceDeviceProperty_VirtualMainVolume: AudioObjectPropertySelector](./kaudiohardwareservicedeviceproperty_virtualmainvolume.md)
 
 
 ---

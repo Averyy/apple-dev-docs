@@ -1,7 +1,8 @@
 # com.apple.developer.automatic-assessment-configuration
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether an app may create an assessment session.
 
@@ -10,25 +11,27 @@ A Boolean value that indicates whether an app may create an assessment session.
 - iPadOS 13.4+
 - macOS 10.15.4+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `com.apple.developer.automatic-assessment-configuration`
+- **Type**: boolean
 
 #### Discussion
 
-Use an [`AEAssessmentSession`](https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentsession) instance to put a device into a state that prevents users from accessing certain system features during high-stakes assessment activities, such as administering an exam. Your app needs the [`com.apple.developer.automatic-assessment-configuration`](entitlements/com.apple.developer.automatic-assessment-configuration.md) entitlement to create an assessment session.
+Use an [`AEAssessmentSession`](../../AutomaticAssessmentConfiguration/aeassessmentsession.md) instance to put a device into a state that prevents users from accessing certain system features during high-stakes assessment activities, such as administering an exam. Your app needs the [`com.apple.developer.automatic-assessment-configuration`](./com.apple.developer.automatic-assessment-configuration.md) entitlement to create an assessment session.
 
 To add the entitlement to your app, set the entitlement’s type to Boolean in the Xcode property list editor, and the corresponding value to `YES`.
 
-![A screenshot of Xcode with a project’s entitlements file in the property list editor, showing the com.apple.developer.automatic-assessment-configuration entitlement.](/images/com.apple.bundleresources/media-3540004@2x.png)
+![A screenshot of Xcode with a project’s entitlements file in the property list editor, showing the com.apple.developer.automatic-assessment-configuration entitlement.](https://developer.apple.com/tutorials/images/com.apple.bundleresources/media-3540004@2x.png)
 
-Before your app can use this entitlement, you must first get permission to use it. Request permission by filling in the [`Automatic Assessment Configuration Entitlement Request`](https://developer.apple.comhttps://developer.apple.com/contact/request/automatic-assessment-configuration/) form.
+Before your app can use this entitlement, you must first get permission to use it. Request permission by filling in the [Automatic Assessment Configuration Entitlement Request](https://developer.apple.com/contact/request/automatic-assessment-configuration/) form.
 
-> ❗ **Important**:  If your app has a deployment target earlier than macOS 11, to use the [`com.apple.developer.automatic-assessment-configuration`](entitlements/com.apple.developer.automatic-assessment-configuration.md) entitlement, your app also needs the `com.apple.security.temporary-exception.mach-lookup.global-name` entitlement. Add this to your app’s entitlements file with a corresponding value that’s an array of strings containing the string `com.apple.assessmentagent`.
+> ❗ **Important**:  If your app has a deployment target earlier than macOS 11, to use the [`com.apple.developer.automatic-assessment-configuration`](./com.apple.developer.automatic-assessment-configuration.md) entitlement, your app also needs the `com.apple.security.temporary-exception.mach-lookup.global-name` entitlement. Add this to your app’s entitlements file with a corresponding value that’s an array of strings containing the string `com.apple.assessmentagent`.
 
 ## See Also
 
-- [ClassKit Environment Entitlement](entitlements/com.apple.developer.classkit-environment.md)
+### Education
+- [ClassKit Environment Entitlement](./com.apple.developer.classkit-environment.md)
   The ClassKit development or production environment for an education app that works with the Schoolwork app.
 
 

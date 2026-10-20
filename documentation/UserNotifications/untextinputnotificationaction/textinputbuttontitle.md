@@ -1,7 +1,8 @@
 # textInputButtonTitle
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized title of the text input button that the system displays to the user.
 
@@ -19,9 +20,22 @@ The localized title of the text input button that the system displays to the use
 var textInputButtonTitle: String { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSString * textInputButtonTitle;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSString * textInputButtonTitle;
+```
+
 ## See Also
 
-- [var textInputPlaceholder: String](untextinputnotificationaction/textinputplaceholder.md)
+### Getting Information
+- [var textInputPlaceholder: String](./textinputplaceholder.md)
   The placeholder text that the system localizes and displays in the text input field.
 
 

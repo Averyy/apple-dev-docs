@@ -1,7 +1,8 @@
 # objectiveCValue(for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an object for a specified URL value.
 
@@ -26,17 +27,18 @@ The object for the specified URL.
 
 ## Parameters
 
-- `value`: A URL to produce an [`NSObject`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class) from.
+- `value`: A URL to produce an [`NSObject`](../../../../ObjectiveC/nsobject-swift.class.md) from.
 
 ## See Also
 
-- [static var name: String](attributescopes/foundationattributes/linkattribute/name.md)
+### Accessing the Attribute Name and Value
+- [static var name: String](./name.md)
   The name of the link attribute.
-- [static func value(for: NSObject) throws -> URL](attributescopes/foundationattributes/linkattribute/value(for:).md)
+- [static func value(for: NSObject) throws -> URL](./value%28for%29.md)
   Returns the URL value of the specified object.
-- [AttributeScopes.FoundationAttributes.LinkAttribute.Value](attributescopes/foundationattributes/linkattribute/value.md)
+- [AttributeScopes.FoundationAttributes.LinkAttribute.Value](./value.md)
   The type of the link attribute’s value.
-- [AttributeScopes.FoundationAttributes.LinkAttribute.ObjectiveCValue](attributescopes/foundationattributes/linkattribute/objectivecvalue.md)
+- [AttributeScopes.FoundationAttributes.LinkAttribute.ObjectiveCValue](./objectivecvalue.md)
   The type of the link attribute’s value when calling it from Objective-C.
 
 

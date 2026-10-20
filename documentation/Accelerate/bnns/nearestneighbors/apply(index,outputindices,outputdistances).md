@@ -1,7 +1,8 @@
 # apply(index:outputIndices:outputDistances:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calculates the sorted indices and Euclidean distances of the k-nearest neighbors to a specified sample data point.
 
@@ -11,7 +12,7 @@ Calculates the sorted indices and Euclidean distances of the k-nearest neighbors
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

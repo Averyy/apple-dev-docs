@@ -1,6 +1,7 @@
 # Generating code
 
-**Framework**: Core Data
+**Framework**: Core Data  
+**Role**: Article
 
 Automatically or manually generate managed object subclasses from entities.
 
@@ -8,7 +9,7 @@ Automatically or manually generate managed object subclasses from entities.
 
 After you define your entities, their attributes, and relationships as described in Configuring a Core Data Model, specify the classes that you’ll use to create instances of your entities. Core Data optionally generates two files to support your class: a class file and a properties file.
 
-The class file declares the class as a subclass of [`NSManagedObject`](nsmanagedobject.md):
+The class file declares the class as a subclass of [`NSManagedObject`](./nsmanagedobject.md):
 
 ```swift
 //
@@ -81,7 +82,7 @@ To select a code generation option:
 1. Select an entity from the Entities list.
 2. In the Data Model inspector, below Class, the Codegen pop-up menu offers three options: Manual/None, Class Definition, and Category/Extension.
 
-![A screenshot of the Data Model inspector showing the attributes of the Quake entity and the possible Codegen options.](/images/com.apple.coredata/media-3839162@2x.png)
+![A screenshot of the Data Model inspector showing the attributes of the Quake entity and the possible Codegen options.](https://developer.apple.com/tutorials/images/com.apple.coredata/media-3839162@2x.png)
 
 The sections that follow describe circumstances for choosing each option.
 
@@ -107,7 +108,7 @@ To generate the class file initially, do the following:
 
 You can now see and edit the class file in your project source list.
 
-![A screenshot showing the file that Xcode generates in the Project navigator.](/images/com.apple.coredata/media-3839163@2x.png)
+![A screenshot showing the file that Xcode generates in the Project navigator.](https://developer.apple.com/tutorials/images/com.apple.coredata/media-3839163@2x.png)
 
 ###### Manage Both Files Manually
 
@@ -122,17 +123,18 @@ To generate the class and properties files initially:
 
 You can now see and edit both the class and properties files in your project source list.
 
-![A screenshot showing the two files that Xcode generates in the Project navigator.](/images/com.apple.coredata/media-3839164@2x.png)
+![A screenshot showing the two files that Xcode generates in the Project navigator.](https://developer.apple.com/tutorials/images/com.apple.coredata/media-3839164@2x.png)
 
 > **Note**:  To regenerate class and properties files at any time, choose Editor > Create NSManagedObject Subclass. Be aware that the new files overwrite any existing files at the target location.
 
 ## See Also
 
-- [Configuring Entities](configuring-entities.md)
+### Configuring a Core Data Model
+- [Configuring Entities](./configuring-entities.md)
   Model your app’s objects.
-- [Configuring Attributes](configuring-attributes.md)
+- [Configuring Attributes](./configuring-attributes.md)
   Describe the properties that compose an entity.
-- [Configuring Relationships](configuring-relationships.md)
+- [Configuring Relationships](./configuring-relationships.md)
   Specify how entities relate and how change propagates between them.
 
 

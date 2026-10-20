@@ -1,7 +1,8 @@
 # SpatialAudioExperiences.AnchoringStrategy.front
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Anchor to the front of the user’s space.
 

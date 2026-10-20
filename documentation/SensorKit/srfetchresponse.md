@@ -1,7 +1,8 @@
 # SRFetchResponse
 
 **Framework**: SensorKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A generic container that holds sensor data samples retrieved from SensorKit data streams.
 
@@ -42,18 +43,18 @@ for try await response in reader.fetch(request) {
 ## Topics
 
 ### Instance Properties
-- [var sample: Result<Sample, any Error>](srfetchresponse/sample.md)
+- [var sample: Result<Sample, any Error>](./srfetchresponse/sample.md)
   Retrieves the sensor-specific data sample contained in this response.
-- [var sourceDevice: SRSourceDevice?](srfetchresponse/sourcedevice.md)
+- [var sourceDevice: SRSourceDevice?](./srfetchresponse/sourcedevice.md)
   The source of the sample data.
-- [var timestamp: SRAbsoluteTime](srfetchresponse/timestamp.md)
+- [var timestamp: SRAbsoluteTime](./srfetchresponse/timestamp.md)
   Retrieves the timestamp when the sensor sample was written to the data store.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

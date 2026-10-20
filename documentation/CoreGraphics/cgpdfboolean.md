@@ -1,18 +1,19 @@
 # CGPDFBoolean
 
 **Framework**: Core Graphics  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A PDF Boolean value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ A PDF Boolean value.
 typealias CGPDFBoolean = UInt8
 ```
 
+```c
+typedef unsigned char CGPDFBoolean;
+```
+
 ## See Also
 
-- [struct CGPDFObjectRef](cgpdfobjectref.md)
+### Data Types
+- [struct CGPDFObjectRef](./cgpdfobjectref.md)
   A type that contains information about a PDF object.
-- [typealias CGPDFInteger](cgpdfinteger.md)
+- [typealias CGPDFInteger](./cgpdfinteger.md)
   A PDF integer value.
-- [typealias CGPDFReal](cgpdfreal.md)
+- [typealias CGPDFReal](./cgpdfreal.md)
   A PDF real value.
 
 

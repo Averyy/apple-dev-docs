@@ -1,7 +1,8 @@
 # alternateDescription
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for accessing an alternative presentation attribute.
 
@@ -22,7 +23,8 @@ let alternateDescription: AttributeScopes.FoundationAttributes.AlternateDescript
 
 ## See Also
 
-- [AttributeScopes.FoundationAttributes.AlternateDescriptionAttribute](attributescopes/foundationattributes/alternatedescriptionattribute.md)
+### Using alternative description attributes
+- [AttributeScopes.FoundationAttributes.AlternateDescriptionAttribute](./alternatedescriptionattribute.md)
   A type for using an alternative description as an attribute.
 
 

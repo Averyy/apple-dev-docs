@@ -1,7 +1,8 @@
 # scrubber(_:didChangeVisibleRange:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the range of items currently visible in the scrubber has changed.
 
@@ -13,6 +14,10 @@ Tells the delegate that the range of items currently visible in the scrubber has
 ```swift
 @MainActor
 optional func scrubber(_ scrubber: NSScrubber, didChangeVisibleRange visibleRange: NSRange)
+```
+
+```objc
+- (void) scrubber:(NSScrubber *) scrubber didChangeVisibleRange:(NSRange) visibleRange;
 ```
 
 ## Parameters

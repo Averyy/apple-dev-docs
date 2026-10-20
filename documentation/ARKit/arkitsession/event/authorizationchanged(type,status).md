@@ -1,7 +1,8 @@
 # ARKitSession.Event.authorizationChanged(type:status:)
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An event that represents a change in authorization status for a specific authorization type.
 

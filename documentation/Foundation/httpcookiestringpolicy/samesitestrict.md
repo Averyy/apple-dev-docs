@@ -1,7 +1,8 @@
 # sameSiteStrict
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A policy that prohibits a cross-site request from including the cookie.
 
@@ -20,9 +21,14 @@ A policy that prohibits a cross-site request from including the cookie.
 static let sameSiteStrict: HTTPCookieStringPolicy
 ```
 
+```c
+extern NSHTTPCookieStringPolicy const NSHTTPCookieSameSiteStrict;
+```
+
 ## See Also
 
-- [static let sameSiteLax: HTTPCookieStringPolicy](httpcookiestringpolicy/samesitelax.md)
+### Policies
+- [static let sameSiteLax: HTTPCookieStringPolicy](./samesitelax.md)
   A policy that allows certain cross-site requests to include the cookie.
 
 

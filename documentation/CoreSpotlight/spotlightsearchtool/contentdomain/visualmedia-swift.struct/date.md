@@ -1,9 +1,10 @@
 # date
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-Attributes queried for the capture date. Default: [`contentCreationDate`](searchableitemattribute/contentcreationdate.md)
+Attributes queried for the capture date. Default: [`contentCreationDate`](../../../searchableitemattribute/contentcreationdate.md)
 
 **Availability**:
 - iOS 27.0+
@@ -20,12 +21,13 @@ var date: [SearchableItemAttribute]?
 
 ## See Also
 
-- [var description: [SearchableItemAttribute]?](spotlightsearchtool/contentdomain/visualmedia-swift.struct/description.md)
+### Getting the domain attributes
+- [var description: [SearchableItemAttribute]?](./description.md)
   Attributes queried for visual content description.
-- [var location: [SearchableItemAttribute]?](spotlightsearchtool/contentdomain/visualmedia-swift.struct/location.md)
-  Attributes queried for the location. Default: [`city`](searchableitemattribute/city.md)
-- [var people: [SearchableItemAttribute]?](spotlightsearchtool/contentdomain/visualmedia-swift.struct/people.md)
-  Attributes queried for people appearing in images/video. Default: [`identifier`](searchableitemattribute/identifier.md)
+- [var location: [SearchableItemAttribute]?](./location.md)
+  Attributes queried for the location. Default: [`city`](../../../searchableitemattribute/city.md)
+- [var people: [SearchableItemAttribute]?](./people.md)
+  Attributes queried for people appearing in images/video. Default: [`identifier`](../../../searchableitemattribute/identifier.md)
 
 
 ---

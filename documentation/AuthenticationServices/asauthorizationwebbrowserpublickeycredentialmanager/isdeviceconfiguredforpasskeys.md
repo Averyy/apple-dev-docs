@@ -1,7 +1,8 @@
 # isDeviceConfiguredForPasskeys
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.2+
@@ -13,6 +14,10 @@
 
 ```swift
 class var isDeviceConfiguredForPasskeys: Bool { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) BOOL isDeviceConfiguredForPasskeys;
 ```
 
 

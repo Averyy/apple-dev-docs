@@ -9,15 +9,16 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short FINISHED_STATE;
 ```
 
 ## See Also
 
-- [PLAYING_STATE](audiobuffersourcenode/1630500-playing_state.md)
-- [SCHEDULED_STATE](audiobuffersourcenode/1630395-scheduled_state.md)
-- [UNSCHEDULED_STATE](audiobuffersourcenode/1633329-unscheduled_state.md)
+### Miscellaneous
+- [PLAYING_STATE](./api-1630500-playing_state.md)
+- [SCHEDULED_STATE](./api-1630395-scheduled_state.md)
+- [UNSCHEDULED_STATE](./api-1633329-unscheduled_state.md)
 
 
 ---

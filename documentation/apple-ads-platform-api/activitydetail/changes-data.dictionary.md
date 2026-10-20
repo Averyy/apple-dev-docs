@@ -1,7 +1,8 @@
 # ActivityDetail.Changes
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A single field change entry, capturing the field name and its before and after values.
 
@@ -10,7 +11,7 @@ A single field change entry, capturing the field name and its before and after v
 
 ## Declaration
 
-```swift
+```
 object ActivityDetail.Changes
 ```
 
@@ -28,7 +29,7 @@ Each entry in the `changes` array describes a single field that changed during t
 }
 ```
 
-The `changes` field is the array field on the parent [`ActivityDetail`](activitydetail.md) object: `ChangeDetails` holds a `details` array of `ActivityDetail` objects, and each `ActivityDetail` groups the field-level changes that share a common activity context in this `changes` array.
+The `changes` field is the array field on the parent [`ActivityDetail`](../activitydetail.md) object: `ChangeDetails` holds a `details` array of `ActivityDetail` objects, and each `ActivityDetail` groups the field-level changes that share a common activity context in this `changes` array.
 
 ## Properties
 

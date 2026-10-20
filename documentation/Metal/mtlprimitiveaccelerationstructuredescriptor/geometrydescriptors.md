@@ -1,7 +1,8 @@
 # geometryDescriptors
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array that contains the individual pieces of geometry that compose the acceleration structure.
 
@@ -19,15 +20,20 @@ An array that contains the individual pieces of geometry that compose the accele
 var geometryDescriptors: [MTLAccelerationStructureGeometryDescriptor]? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) NSArray<MTLAccelerationStructureGeometryDescriptor *> * geometryDescriptors;
+```
+
 #### Discussion
 
-The value of the [`motionKeyframeCount`](mtlprimitiveaccelerationstructuredescriptor/motionkeyframecount.md) property determines what kinds of geometry descriptors you can assign to this property and how you need to configure them.
+The value of the [`motionKeyframeCount`](./motionkeyframecount.md) property determines what kinds of geometry descriptors you can assign to this property and how you need to configure them.
 
-If the value of [`motionKeyframeCount`](mtlprimitiveaccelerationstructuredescriptor/motionkeyframecount.md) is greater than 1, then the geometry descriptors need to be either [`MTLAccelerationStructureMotionBoundingBoxGeometryDescriptor`](mtlaccelerationstructuremotionboundingboxgeometrydescriptor.md) or [`MTLAccelerationStructureMotionTriangleGeometryDescriptor`](mtlaccelerationstructuremotiontrianglegeometrydescriptor.md) objects. Further, you need to provide exactly that many keyframes of data when creating those geometry descriptors. If [`motionKeyframeCount`](mtlprimitiveaccelerationstructuredescriptor/motionkeyframecount.md)  is 1, use [`MTLAccelerationStructureBoundingBoxGeometryDescriptor`](mtlaccelerationstructureboundingboxgeometrydescriptor.md) or [`MTLAccelerationStructureTriangleGeometryDescriptor`](mtlaccelerationstructuretrianglegeometrydescriptor.md) objects instead.
+If the value of [`motionKeyframeCount`](./motionkeyframecount.md) is greater than 1, then the geometry descriptors need to be either [`MTLAccelerationStructureMotionBoundingBoxGeometryDescriptor`](../mtlaccelerationstructuremotionboundingboxgeometrydescriptor.md) or [`MTLAccelerationStructureMotionTriangleGeometryDescriptor`](../mtlaccelerationstructuremotiontrianglegeometrydescriptor.md) objects. Further, you need to provide exactly that many keyframes of data when creating those geometry descriptors. If [`motionKeyframeCount`](./motionkeyframecount.md)  is 1, use [`MTLAccelerationStructureBoundingBoxGeometryDescriptor`](../mtlaccelerationstructureboundingboxgeometrydescriptor.md) or [`MTLAccelerationStructureTriangleGeometryDescriptor`](../mtlaccelerationstructuretrianglegeometrydescriptor.md) objects instead.
 
 ## See Also
 
-- [var motionKeyframeCount: Int](mtlprimitiveaccelerationstructuredescriptor/motionkeyframecount.md)
+### Related Documentation
+- [var motionKeyframeCount: Int](./motionkeyframecount.md)
   The number of keyframes in the geometry data.
 
 

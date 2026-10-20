@@ -1,7 +1,8 @@
 # RCSService.Business.Feature.fileTransfer
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 File Transfer feature.
 

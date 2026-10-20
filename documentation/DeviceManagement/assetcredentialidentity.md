@@ -1,7 +1,8 @@
 # AssetCredentialIdentity
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A reference to a PKCS #12 password-protected identity.
 
@@ -16,7 +17,7 @@ A reference to a PKCS #12 password-protected identity.
 
 ## Declaration
 
-```swift
+```
 object AssetCredentialIdentity
 ```
 
@@ -24,7 +25,7 @@ object AssetCredentialIdentity
 
 Specify `com.apple.asset.credential.identity` as the declaration type.
 
-##### Asset Example
+##### Asset example
 
 ```json
 {
@@ -43,32 +44,39 @@ Specify `com.apple.asset.credential.identity` as the declaration type.
 ## Topics
 
 ### Objects
-- [object AssetCredentialIdentityAuthenticationObject](assetcredentialidentityauthenticationobject.md)
+- [object AssetCredentialIdentityAuthenticationObject](./assetcredentialidentityauthenticationobject.md)
   The server authentication details. If this key is absent, the default authentication type is MDM.
-- [object AssetCredentialIdentityReferenceObject](assetcredentialidentityreferenceobject.md)
+- [object AssetCredentialIdentityReferenceObject](./assetcredentialidentityreferenceobject.md)
   The external reference. Ensure that the asset data:
 
 ## Properties
 
-- `Accessible` (string): The keychain accessibility that determines when the keychain item is available for use, which has these allowed values: - `Default`: The most restrictive accessibility that still satisfies all uses of the asset by configurations that reference it.
-- `AfterFirstUnlock`: The keychain item is only available after the first unlock of the device.
+- `Accessible` (string): The keychain accessibility that determines when the keychain item is available for use, which has these allowed values:
+
+  - `Default`: The most restrictive accessibility that still satisfies all uses of the asset by configurations that reference it.
+  - `AfterFirstUnlock`: The keychain item is only available after the first unlock of the device.
+
+  **Default**: `Default`; **Allowed Values**: `Default`, `AfterFirstUnlock`
 - `Authentication` (AssetCredentialIdentityAuthenticationObject): The server authentication details. If this key is absent, the default authentication type is MDM.
-- `Reference` (AssetCredentialIdentityReferenceObject) *(required)*: The external reference. Ensure that the asset data: - Is a JSON document that represents the `com.apple.credential.identity` credential type
-- Uses a media type of `application/json`, and if it includes a `ContentType` sub-key, that sub-key media type is also `application/json`
+- `Reference` (AssetCredentialIdentityReferenceObject) *(required)*: The external reference. Ensure that the asset data:
+
+  - Is a JSON document that represents the `com.apple.credential.identity` credential type
+  - Uses a media type of `application/json`, and if it includes a `ContentType` sub-key, that sub-key media type is also `application/json`
 
 ## See Also
 
-- [object AssetCredentialACME](assetcredentialacme.md)
+### Assets
+- [object AssetCredentialACME](./assetcredentialacme.md)
   A reference to an ACME identity.
-- [object AssetCredentialCertificate](assetcredentialcertificate.md)
+- [object AssetCredentialCertificate](./assetcredentialcertificate.md)
   A reference to one PKCS #1 or PEM encoded certificate.
-- [object AssetCredentialSCEP](assetcredentialscep.md)
+- [object AssetCredentialSCEP](./assetcredentialscep.md)
   A reference to a SCEP identity.
-- [object AssetCredentialUserNameAndPassword](assetcredentialusernameandpassword.md)
+- [object AssetCredentialUserNameAndPassword](./assetcredentialusernameandpassword.md)
   A reference to data that describes a credential that represents a user name and password.
-- [object AssetData](assetdata.md)
+- [object AssetData](./assetdata.md)
   A reference to arbitrary data with a specific media type.
-- [object AssetUserIdentity](assetuseridentity.md)
+- [object AssetUserIdentity](./assetuseridentity.md)
   The user-identity data.
 
 

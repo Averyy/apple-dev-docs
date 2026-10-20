@@ -1,7 +1,8 @@
 # DiskImage.BlockSize
 
 **Framework**: DiskImageKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that represent the block size of a disk image.
 
@@ -17,28 +18,29 @@ enum BlockSize
 ## Topics
 
 ### Enumeration Cases
-- [DiskImage.BlockSize.bytes4096](diskimage/blocksize-swift.enum/bytes4096.md)
+- [DiskImage.BlockSize.bytes4096](./blocksize-swift.enum/bytes4096.md)
   A value that represents a 4096 byte block size.
-- [DiskImage.BlockSize.bytes512](diskimage/blocksize-swift.enum/bytes512.md)
+- [DiskImage.BlockSize.bytes512](./blocksize-swift.enum/bytes512.md)
   A value that represents a 512 byte block size.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [DiskImage.Format](diskimage/format-swift.enum.md)
+### Values that describe block sizes and image formats
+- [DiskImage.Format](./format-swift.enum.md)
   Values that describe the disk image formats DiskImageKit supports.
-- [DiskImage.LayerType](diskimage/layertype-swift.struct.md)
+- [DiskImage.LayerType](./layertype-swift.struct.md)
   An enumeration that defines the type of a layer in a stacked disk image.
 
 

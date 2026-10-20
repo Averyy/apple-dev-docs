@@ -1,7 +1,8 @@
 # makeAdvancedPlayer(with:)
 
 **Framework**: Core Haptics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an advanced haptic pattern player from a haptic pattern.
 
@@ -19,6 +20,10 @@ Creates an advanced haptic pattern player from a haptic pattern.
 func makeAdvancedPlayer(with pattern: CHHapticPattern) throws -> any CHHapticAdvancedPatternPlayer
 ```
 
+```objc
+- (id<CHHapticAdvancedPatternPlayer>) createAdvancedPlayerWithPattern:(CHHapticPattern *) pattern error:(NSError **) outError;
+```
+
 #### Return Value
 
 A new advanced pattern player instance.
@@ -29,7 +34,8 @@ A new advanced pattern player instance.
 
 ## See Also
 
-- [func makePlayer(with: CHHapticPattern) throws -> any CHHapticPatternPlayer](chhapticengine/makeplayer(with:).md)
+### Creating Haptic Pattern Players
+- [func makePlayer(with: CHHapticPattern) throws -> any CHHapticPatternPlayer](./makeplayer%28with%29.md)
   Creates a standard haptic pattern player from a haptic pattern.
 
 

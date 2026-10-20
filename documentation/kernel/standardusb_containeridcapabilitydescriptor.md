@@ -1,14 +1,15 @@
 # StandardUSB::ContainerIDCapabilityDescriptor
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 typedef struct StandardUSB::ContainerIDCapabilityDescriptor {
     ...
 } StandardUSB::ContainerIDCapabilityDescriptor;
@@ -17,8 +18,8 @@ typedef struct StandardUSB::ContainerIDCapabilityDescriptor {
 ## Topics
 
 ### Instance Properties
-- [bReserved](standardusb_containeridcapabilitydescriptor/3794053-breserved.md)
-- [containerID](standardusb_containeridcapabilitydescriptor/3794054-containerid.md)
+- [bReserved](./standardusb_containeridcapabilitydescriptor/api-3794053-breserved.md)
+- [containerID](./standardusb_containeridcapabilitydescriptor/api-3794054-containerid.md)
 
 
 ---

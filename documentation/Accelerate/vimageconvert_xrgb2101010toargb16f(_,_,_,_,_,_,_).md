@@ -1,7 +1,8 @@
 # vImageConvert_XRGB2101010ToARGB16F(_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Converts an XRGB2101010 32-bit, 4-channel interleaved buffer to a floating-point 16-bit-per-channel, 4-channel interleaved buffer with permutation.
 
@@ -20,9 +21,13 @@ Converts an XRGB2101010 32-bit, 4-channel interleaved buffer to a floating-point
 func vImageConvert_XRGB2101010ToARGB16F(_ src: UnsafePointer<vImage_Buffer>, _ alpha: Pixel_F, _ dest: UnsafePointer<vImage_Buffer>, _ RGB101010RangeMin: Int32, _ RGB101010RangeMax: Int32, _ permuteMap: UnsafePointer<UInt8>!, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageConvert_XRGB2101010ToARGB16F(const vImage_Buffer *src, Pixel_F alpha, const vImage_Buffer *dest, int32_t RGB101010RangeMin, int32_t RGB101010RangeMax, const uint8_t permuteMap[4], vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
@@ -37,23 +42,24 @@ The `RGB101010RangeMin` and `RGB101010RangeMax` parameters allow you to specify 
 
 - `src`: The source vImage buffer.
 - `alpha`: The constant destination alpha value.
-- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](./vimage_buffer/height.md), [`width`](./vimage_buffer/width.md), and [`rowBytes`](./vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
 - `RGB101010RangeMin`: The minimum pixel value for the source image range.
 - `RGB101010RangeMax`: The maximum pixel value for the source image range.
 - `permuteMap`: An array of four 8-bit integers with the values `0`, `1`, `2`, and 3, in some order. Each value specifies the channel from the source image that the function copies to the destination channel at the corresponding index.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 ## See Also
 
-- [func vImageConvert_ARGB2101010ToARGB16F(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, Int32, Int32, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](vimageconvert_argb2101010toargb16f(_:_:_:_:_:_:).md)
+### Converting from XRGB2101010 32-bit buffers
+- [func vImageConvert_ARGB2101010ToARGB16F(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, Int32, Int32, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](./vimageconvert_argb2101010toargb16f%28_,_,_,_,_,_%29.md)
   Converts an ARGB2101010 32-bit, 4-channel interleaved buffer to a floating-point 16-bit-per-channel, 4-channel interleaved buffer with permutation.
-- [func vImageConvert_ARGB2101010ToARGB16Q12(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, Int32, Int32, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](vimageconvert_argb2101010toargb16q12(_:_:_:_:_:_:).md)
+- [func vImageConvert_ARGB2101010ToARGB16Q12(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, Int32, Int32, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](./vimageconvert_argb2101010toargb16q12%28_,_,_,_,_,_%29.md)
   Converts an ARGB2101010 32-bit, 4-channel interleaved buffer to a fixed-point 16-bit-per-channel, 4-channel interleaved buffer with permutation.
-- [func vImageConvert_XRGB2101010ToARGB16Q12(UnsafePointer<vImage_Buffer>, Pixel_16Q12, UnsafePointer<vImage_Buffer>, Int32, Int32, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](vimageconvert_xrgb2101010toargb16q12(_:_:_:_:_:_:_:).md)
+- [func vImageConvert_XRGB2101010ToARGB16Q12(UnsafePointer<vImage_Buffer>, Pixel_16Q12, UnsafePointer<vImage_Buffer>, Int32, Int32, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](./vimageconvert_xrgb2101010toargb16q12%28_,_,_,_,_,_,_%29.md)
   Converts an XRGB2101010 32-bit, 4-channel interleaved buffer to a fixed-point 16-bit-per-channel, 4-channel interleaved buffer with permutation.
-- [func vImageConvert_ARGB2101010ToARGBFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, Int32, Int32, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](vimageconvert_argb2101010toargbffff(_:_:_:_:_:_:).md)
+- [func vImageConvert_ARGB2101010ToARGBFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, Int32, Int32, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](./vimageconvert_argb2101010toargbffff%28_,_,_,_,_,_%29.md)
   Converts an ARGB2101010 32-bit, 4-channel interleaved buffer to a floating-point 32-bit-per-channel, 4-channel interleaved buffer with permutation.
-- [func vImageConvert_XRGB2101010ToARGBFFFF(UnsafePointer<vImage_Buffer>, Pixel_F, UnsafePointer<vImage_Buffer>, Int32, Int32, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](vimageconvert_xrgb2101010toargbffff(_:_:_:_:_:_:_:).md)
+- [func vImageConvert_XRGB2101010ToARGBFFFF(UnsafePointer<vImage_Buffer>, Pixel_F, UnsafePointer<vImage_Buffer>, Int32, Int32, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](./vimageconvert_xrgb2101010toargbffff%28_,_,_,_,_,_,_%29.md)
   Converts an XRGB2101010 32-bit, 4-channel interleaved buffer to a floating-point 32-bit-per-channel, 4-channel interleaved buffer with permutation.
 
 

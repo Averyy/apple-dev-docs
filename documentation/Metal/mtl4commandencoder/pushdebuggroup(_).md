@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Pushes a string onto this encoder’s stack of debug groups.
@@ -18,6 +19,10 @@ Pushes a string onto this encoder’s stack of debug groups.
 
 ```swift
 func pushDebugGroup(_ string: String)
+```
+
+```objc
+- (void) pushDebugGroup:(NSString *) string;
 ```
 
 ## Parameters

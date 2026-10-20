@@ -1,7 +1,8 @@
 # zones
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that contains the workout zones, ordered from lowest to highest threshold.
 
@@ -25,7 +26,8 @@ Each zone in this array represents a contiguous range within the configuration.
 
 ## See Also
 
-- [var quantityType: HKQuantityType](hkworkoutzoneconfiguration/quantitytype.md)
+### Accessing configuration properties
+- [var quantityType: HKQuantityType](./quantitytype.md)
   A property that specifies the quantity type to which the zones apply.
 
 

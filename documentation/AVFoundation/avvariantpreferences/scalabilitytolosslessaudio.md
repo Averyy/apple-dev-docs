@@ -1,7 +1,8 @@
 # scalabilityToLosslessAudio
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A preference that indicates the player item supports variant playlists that contain losslessly encoded audio when sufficient bandwidth is available.
 
@@ -18,6 +19,10 @@ A preference that indicates the player item supports variant playlists that cont
 
 ```swift
 static var scalabilityToLosslessAudio: AVVariantPreferences { get }
+```
+
+```c
+AVVariantPreferenceScalabilityToLosslessAudio
 ```
 
 

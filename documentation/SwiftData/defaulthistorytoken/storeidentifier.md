@@ -1,7 +1,8 @@
 # storeIdentifier
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The on-disk identifier of the data store this token covers (SD-0028).
 

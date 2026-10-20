@@ -1,12 +1,13 @@
 # textDidBeginEditingNotification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Sent when a control with editable cells begins an edit session.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,23 +15,28 @@ Sent when a control with editable cells begins an edit session.
 class let textDidBeginEditingNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName NSControlTextDidBeginEditingNotification;
+```
+
 #### Discussion
 
-The field editor of the edited cell originally sends an [`didBeginEditingNotification`](nstext/didbegineditingnotification.md) to the control, which passes it on in this form to its delegate. The notification object is the `NSControl` object posting the notification. The `userInfo` dictionary contains the following information:
+The field editor of the edited cell originally sends an [`didBeginEditingNotification`](../nstext/didbegineditingnotification.md) to the control, which passes it on in this form to its delegate. The notification object is the `NSControl` object posting the notification. The `userInfo` dictionary contains the following information:
 
 | Key | Value |
 | --- | --- |
 | `“NSFieldEditor”` | The edited cell’s field editor |
 
-See the [`controlTextDidEndEditing:`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/controltextdidendediting:) method for details. The system posts this notification on the main actor.
+See the [`controlTextDidEndEditing:`](../../ObjectiveC/nsobject-swift.class/controltextdidendediting_.md) method for details. The system posts this notification on the main actor.
 
-To observe this notification using Swift concurrency, use [`NSControl.TextDidBeginEditingMessage`](nscontrol/textdidbegineditingmessage.md).
+To observe this notification using Swift concurrency, use [`NSControl.TextDidBeginEditingMessage`](./textdidbegineditingmessage.md).
 
 ## See Also
 
-- [class let textDidChangeNotification: NSNotification.Name](nscontrol/textdidchangenotification.md)
+### Control-Editing Notifications
+- [class let textDidChangeNotification: NSNotification.Name](./textdidchangenotification.md)
   Sent when the text in the receiving control changes.
-- [class let textDidEndEditingNotification: NSNotification.Name](nscontrol/textdidendeditingnotification.md)
+- [class let textDidEndEditingNotification: NSNotification.Name](./textdidendeditingnotification.md)
   Sent when a control with editable cells ends an editing session.
 
 

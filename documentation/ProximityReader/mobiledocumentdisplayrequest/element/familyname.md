@@ -1,7 +1,8 @@
 # familyName
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The mobile document holder’s family name or last name.
 

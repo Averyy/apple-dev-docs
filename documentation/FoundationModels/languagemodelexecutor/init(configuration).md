@@ -2,6 +2,7 @@
 
 **Framework**: Foundation Models  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates an executor from a configuration.
@@ -22,7 +23,8 @@ init(configuration: Self.Configuration) throws
 
 ## See Also
 
-- [associatedtype Configuration : Hashable, Sendable](languagemodelexecutor/configuration.md)
+### Creating an executor
+- [associatedtype Configuration : Hashable, Sendable](./configuration.md)
 
 
 ---

@@ -1,17 +1,18 @@
 # PKAddIdentityDocumentType.photoID
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A pass to use for personal identification.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ A pass to use for personal identification.
 case photoID
 ```
 
+```c
+PKAddIdentityDocumentTypePhotoID
+```
+
 ## See Also
 
-- [PKAddIdentityDocumentType.idCard](pkaddidentitydocumenttype/idcard.md)
+### Types of identity documents
+- [PKAddIdentityDocumentType.idCard](./idcard.md)
   A generic pass that represents a person’s identification.
-- [PKAddIdentityDocumentType.mDL](pkaddidentitydocumenttype/mdl.md)
+- [PKAddIdentityDocumentType.mDL](./mdl.md)
   A pass that represents a driver’s license or government-issued identification.
 
 

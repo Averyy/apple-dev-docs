@@ -1,7 +1,8 @@
 # PHASESoundAsset
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A sound resource stored in the asset registry.
 
@@ -19,46 +20,51 @@ A sound resource stored in the asset registry.
 class PHASESoundAsset
 ```
 
+```objc
+@interface PHASESoundAsset : PHASEAsset
+```
+
 #### Overview
 
-This class wraps source audio data that an app intends to play. The framework requires a mixer to play a sound asset, and sound event nodes like [`PHASESamplerNodeDefinition`](phasesamplernodedefinition.md) combine the asset with a mixer. To provide a sound asset to a sound-event node, refer to the asset by the `identifier` you pass into the [`registerSoundAsset(url:identifier:assetType:channelLayout:normalizationMode:)`](phaseassetregistry/registersoundasset(url:identifier:assettype:channellayout:normalizationmode:).md) function.
+This class wraps source audio data that an app intends to play. The framework requires a mixer to play a sound asset, and sound event nodes like [`PHASESamplerNodeDefinition`](./phasesamplernodedefinition.md) combine the asset with a mixer. To provide a sound asset to a sound-event node, refer to the asset by the `identifier` you pass into the [`registerSoundAsset(url:identifier:assetType:channelLayout:normalizationMode:)`](./phaseassetregistry/registersoundasset%28url,identifier,assettype,channellayout,normalizationmode%29.md) function.
 
 ## Topics
 
 ### Accessing Sound Data
-- [var data: Data?](phasesoundasset/data.md)
+- [var data: Data?](./phasesoundasset/data.md)
   A storage buffer for the sound asset.
-- [var url: URL?](phasesoundasset/url.md)
+- [var url: URL?](./phasesoundasset/url.md)
   The URL of the sound asset.
 ### Classifying an Asset
-- [var type: PHASEAsset.AssetType](phasesoundasset/type.md)
+- [var type: PHASEAsset.AssetType](./phasesoundasset/type.md)
   The type of sound asset.
 
 ## Relationships
 
 ### Inherits From
-- [PHASEAsset](phaseasset.md)
+- [PHASEAsset](./phaseasset.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASESoundEvent](phasesoundevent.md)
+### Audio Selection and Playback
+- [class PHASESoundEvent](./phasesoundevent.md)
   An object that determines which audio to play.
-- [PHASESoundEvent.RenderingState](phasesoundevent/renderingstate-swift.enum.md)
+- [PHASESoundEvent.RenderingState](./phasesoundevent/renderingstate-swift.enum.md)
   The playback status of audio.
-- [class PHASESoundEventNodeDefinition](phasesoundeventnodedefinition.md)
+- [class PHASESoundEventNodeDefinition](./phasesoundeventnodedefinition.md)
   A base class for sound event nodes that connect to form a node hierarchy.
-- [class PHASESoundEventNodeAsset](phasesoundeventnodeasset.md)
+- [class PHASESoundEventNodeAsset](./phasesoundeventnodeasset.md)
   A template object for sounds that can play in reaction to environmental state.
-- [class PHASEAsset](phaseasset.md)
+- [class PHASEAsset](./phaseasset.md)
   A base class that adds a name to framework assets.
-- [Sound Event Nodes](sound-event-nodes.md)
+- [Sound Event Nodes](./sound-event-nodes.md)
   Objects that connect to form a hierarchical tree of audio actions.
 
 

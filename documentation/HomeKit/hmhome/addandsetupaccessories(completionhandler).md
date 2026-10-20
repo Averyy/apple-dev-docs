@@ -1,24 +1,35 @@
 # addAndSetupAccessories(completionHandler:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finds and adds nearby accessories to the home.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 10.0+
+- iOS 10.0+ - Deprecated in 15.4
+- iPadOS 10.0+ - Deprecated in 15.4
+- Mac Catalyst 10.0+ - Deprecated in 15.4
+
+> **Deprecated**: Use -[HMAccessorySetupManager performAccessorySetupUsingRequest:completionHandler:] instead
 
 ## Declaration
+
+```swift
+func addAndSetupAccessories(completionHandler completion: @escaping @Sendable ((any Error)?) -> Void)
+```
 
 ```swift
 func addAndSetUpAccessories() async throws
 ```
 
+```objc
+- (void) addAndSetupAccessoriesWithCompletionHandler:(void (^)(NSError *error)) completion;
+```
+
 ## Mentions
 
-- [Testing your app with the HomeKit Accessory Simulator](testing-your-app-with-the-homekit-accessory-simulator.md)
+- [Testing your app with the HomeKit Accessory Simulator](../testing-your-app-with-the-homekit-accessory-simulator.md)
 
 #### Discussion
 
@@ -26,25 +37,28 @@ This method launches an interactive process that first asks the user to provide 
 
 ## Parameters
 
-- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
+- `completion`: The block executed after the request is processed.
+
+  - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 
-- [var accessories: [HMAccessory]](hmhome/accessories.md)
+### Managing accessories
+- [var accessories: [HMAccessory]](./accessories.md)
   The collection of accessories that are part of the home.
-- [func addAndSetupAccessories(with: HMAccessorySetupPayload, completionHandler: ([HMAccessory]?, (any Error)?) -> Void)](hmhome/addandsetupaccessories(with:completionhandler:).md)
+- [func addAndSetupAccessories(with: HMAccessorySetupPayload, completionHandler: ([HMAccessory]?, (any Error)?) -> Void)](./addandsetupaccessories%28with,completionhandler%29.md)
   Finds and adds nearby accessories to the home using a HomeKit code provided by your app.
-- [func addAccessory(HMAccessory, completionHandler: ((any Error)?) -> Void)](hmhome/addaccessory(_:completionhandler:).md)
+- [func addAccessory(HMAccessory, completionHandler: ((any Error)?) -> Void)](./addaccessory%28_,completionhandler%29.md)
   Adds a new accessory to the home.
-- [func assignAccessory(HMAccessory, to: HMRoom, completionHandler: ((any Error)?) -> Void)](hmhome/assignaccessory(_:to:completionhandler:).md)
+- [func assignAccessory(HMAccessory, to: HMRoom, completionHandler: ((any Error)?) -> Void)](./assignaccessory%28_,to,completionhandler%29.md)
   Assigns an accessory to a different room.
-- [func removeAccessory(HMAccessory, completionHandler: ((any Error)?) -> Void)](hmhome/removeaccessory(_:completionhandler:).md)
+- [func removeAccessory(HMAccessory, completionHandler: ((any Error)?) -> Void)](./removeaccessory%28_,completionhandler%29.md)
   Removes an accessory from the home.
-- [var supportsAddingNetworkRouter: Bool](hmhome/supportsaddingnetworkrouter.md)
+- [var supportsAddingNetworkRouter: Bool](./supportsaddingnetworkrouter.md)
   A Boolean that indicates whether a home supports all of the requirements for adding a network router.
-- [func unblockAccessory(HMAccessory, completionHandler: ((any Error)?) -> Void)](hmhome/unblockaccessory(_:completionhandler:).md)
+- [func unblockAccessory(HMAccessory, completionHandler: ((any Error)?) -> Void)](./unblockaccessory%28_,completionhandler%29.md)
   Unblocks a blocked accessory.
-- [class HMAccessory](hmaccessory.md)
+- [class HMAccessory](../hmaccessory.md)
   A home automation accessory, like a garage door opener or a thermostat.
 
 

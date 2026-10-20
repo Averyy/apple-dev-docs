@@ -1,7 +1,8 @@
 # NSAccessibilityPriorityLevel
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A data type for notification priority levels.
 
@@ -14,39 +15,44 @@ A data type for notification priority levels.
 enum NSAccessibilityPriorityLevel
 ```
 
+```c
+enum NSAccessibilityPriorityLevel : NSInteger;
+```
+
 #### Overview
 
-Use these priority levels as values for the [`priority`](nsaccessibility-swift.struct/notificationuserinfokey/priority.md) key.
+Use these priority levels as values for the [`priority`](./nsaccessibility-swift.struct/notificationuserinfokey/priority.md) key.
 
 ## Topics
 
 ### Priority Levels
-- [NSAccessibilityPriorityLevel.high](nsaccessibilityprioritylevel/high.md)
+- [NSAccessibilityPriorityLevel.high](./nsaccessibilityprioritylevel/high.md)
   The notification is a high priority.
-- [NSAccessibilityPriorityLevel.medium](nsaccessibilityprioritylevel/medium.md)
+- [NSAccessibilityPriorityLevel.medium](./nsaccessibilityprioritylevel/medium.md)
   The notification is a medium priority.
-- [NSAccessibilityPriorityLevel.low](nsaccessibilityprioritylevel/low.md)
+- [NSAccessibilityPriorityLevel.low](./nsaccessibilityprioritylevel/low.md)
   The notification is a low priority.
 ### Initializers
-- [init?(rawValue: Int)](nsaccessibilityprioritylevel/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nsaccessibilityprioritylevel/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static let announcement: NSAccessibility.NotificationUserInfoKey](nsaccessibility-swift.struct/notificationuserinfokey/announcement.md)
+### Constants
+- [static let announcement: NSAccessibility.NotificationUserInfoKey](./nsaccessibility-swift.struct/notificationuserinfokey/announcement.md)
   The announcement as a localized string.
-- [static let uiElements: NSAccessibility.NotificationUserInfoKey](nsaccessibility-swift.struct/notificationuserinfokey/uielements.md)
+- [static let uiElements: NSAccessibility.NotificationUserInfoKey](./nsaccessibility-swift.struct/notificationuserinfokey/uielements.md)
   An array of elements for the notification.
-- [static let priority: NSAccessibility.NotificationUserInfoKey](nsaccessibility-swift.struct/notificationuserinfokey/priority.md)
+- [static let priority: NSAccessibility.NotificationUserInfoKey](./nsaccessibility-swift.struct/notificationuserinfokey/priority.md)
   A priority level that can help an assistive app determine how to handle the corresponding notification.
 
 

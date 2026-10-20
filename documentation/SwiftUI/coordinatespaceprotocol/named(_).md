@@ -1,7 +1,8 @@
 # named(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a named coordinate space using the given value.
 
@@ -20,6 +21,8 @@ Creates a named coordinate space using the given value.
 static func named(_ name: some Hashable) -> NamedCoordinateSpace
 ```
 
+Available when `Self` is `NamedCoordinateSpace`.
+
 #### Return Value
 
 A named coordinate space identified by the given value.
@@ -34,15 +37,16 @@ Use the `coordinateSpace(_:)` modifier to assign a name to the local coordinate 
 
 ## See Also
 
-- [static var immersiveSpace: NamedCoordinateSpace](coordinatespaceprotocol/immersivespace.md)
-  The named coordinate space that represents the currently opened [`ImmersiveSpace`](immersivespace.md) scene. If no immersive space is currently opened, this CoordinateSpace provides the same behavior as the `.global` coordinate space.
-- [static var global: GlobalCoordinateSpace](coordinatespaceprotocol/global.md)
+### Getting built-in coordinate spaces
+- [static var immersiveSpace: NamedCoordinateSpace](./immersivespace.md)
+  The named coordinate space that represents the currently opened [`ImmersiveSpace`](../immersivespace.md) scene. If no immersive space is currently opened, this CoordinateSpace provides the same behavior as the `.global` coordinate space.
+- [static var global: GlobalCoordinateSpace](./global.md)
   The global coordinate space at the root of the view hierarchy.
-- [static var local: LocalCoordinateSpace](coordinatespaceprotocol/local.md)
+- [static var local: LocalCoordinateSpace](./local.md)
   The local coordinate space of the current view.
-- [static var scrollView: NamedCoordinateSpace](coordinatespaceprotocol/scrollview.md)
+- [static var scrollView: NamedCoordinateSpace](./scrollview.md)
   The named coordinate space that is added by the system for the innermost containing scroll view.
-- [static func scrollView(axis: Axis) -> Self](coordinatespaceprotocol/scrollview(axis:).md)
+- [static func scrollView(axis: Axis) -> Self](./scrollview%28axis%29.md)
   The named coordinate space that is added by the system for the innermost containing scroll view that allows scrolling along the provided axis.
 
 

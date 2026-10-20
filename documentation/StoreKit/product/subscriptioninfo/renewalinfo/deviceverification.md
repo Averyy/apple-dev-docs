@@ -1,7 +1,8 @@
 # deviceVerification
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The device verification value to use to verify whether the renewal information belongs to the device.
 
@@ -22,13 +23,14 @@ let deviceVerification: Data
 
 #### Discussion
 
-For more information, see [`deviceVerificationID`](appstore/deviceverificationid.md).
+For more information, see [`deviceVerificationID`](../../../appstore/deviceverificationid.md).
 
 ## See Also
 
-- [let deviceVerificationNonce: UUID](product/subscriptioninfo/renewalinfo/deviceverificationnonce.md)
+### Verifying subscription renewal information
+- [let deviceVerificationNonce: UUID](./deviceverificationnonce.md)
   The UUID to use to compute the device verification value.
-- [let signedDate: Date](product/subscriptioninfo/renewalinfo/signeddate.md)
+- [let signedDate: Date](./signeddate.md)
   The date that the App Store signed the JWS renewal information.
 
 

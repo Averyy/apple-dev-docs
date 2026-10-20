@@ -1,7 +1,8 @@
 # init(sign:exponentBitPattern:significandBitPattern:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance from the specified sign and bit patterns.
 
@@ -16,7 +17,7 @@ init(sign: FloatingPointSign, exponentBitPattern: UInt, significandBitPattern: U
 
 #### Discussion
 
-The values passed as `exponentBitPattern` and `significandBitPattern` are interpreted in the binary interchange format defined by the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
+The values passed as `exponentBitPattern` and `significandBitPattern` are interpreted in the binary interchange format defined by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 
 ## Parameters
 

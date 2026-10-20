@@ -1,7 +1,8 @@
 # CGPDFContentStreamCreateWithStream(_:_:_:)
 
 **Framework**: Core Graphics  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a PDF content stream object from an existing PDF content stream object.
 
@@ -10,7 +11,7 @@ Creates a PDF content stream object from an existing PDF content stream object.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Creates a PDF content stream object from an existing PDF content stream object.
 func CGPDFContentStreamCreateWithStream(_ stream: CGPDFStreamRef, _ streamResources: CGPDFDictionaryRef, _ parent: CGPDFContentStreamRef) -> CGPDFContentStreamRef
 ```
 
+```c
+extern CGPDFContentStreamRefCGPDFContentStreamCreateWithStream(CGPDFStreamRef stream, CGPDFDictionaryRef streamResources, CGPDFContentStreamRef parent);
+```
+
 #### Return Value
 
-A PDF content stream object created from the `stream` parameter. In Objective-C, you’re responsible for releasing this object by calling the [`CGPDFContentStreamRelease(_:)`](cgpdfcontentstreamrelease(_:).md) function.
+A PDF content stream object created from the `stream` parameter. In Objective-C, you’re responsible for releasing this object by calling the [`CGPDFContentStreamRelease(_:)`](./cgpdfcontentstreamrelease%28_%29.md) function.
 
 #### Discussion
 
@@ -36,7 +41,8 @@ You can use this function to get access to the contents of a form, pattern, Type
 
 ## See Also
 
-- [func CGPDFContentStreamCreateWithPage(CGPDFPage) -> CGPDFContentStreamRef](cgpdfcontentstreamcreatewithpage(_:).md)
+### Creating a PDF Content Stream Object
+- [func CGPDFContentStreamCreateWithPage(CGPDFPage) -> CGPDFContentStreamRef](./cgpdfcontentstreamcreatewithpage%28_%29.md)
   Creates a content stream object from a PDF page object.
 
 

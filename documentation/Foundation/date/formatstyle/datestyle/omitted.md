@@ -1,7 +1,8 @@
 # omitted
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A date style with no date-related components represented.
 
@@ -26,13 +27,14 @@ If both the date style and time style are set to `omitted`, the date is represen
 
 ## See Also
 
-- [static let abbreviated: Date.FormatStyle.DateStyle](date/formatstyle/datestyle/abbreviated.md)
+### Modifying a Date Style
+- [static let abbreviated: Date.FormatStyle.DateStyle](./abbreviated.md)
   A date style with some components abbreviated for space-constrained applications.
-- [static let complete: Date.FormatStyle.DateStyle](date/formatstyle/datestyle/complete.md)
+- [static let complete: Date.FormatStyle.DateStyle](./complete.md)
   A date style with all components represented.
-- [static let long: Date.FormatStyle.DateStyle](date/formatstyle/datestyle/long.md)
+- [static let long: Date.FormatStyle.DateStyle](./long.md)
   A lengthened date style with the full month, day of month, and year components represented.
-- [static let numeric: Date.FormatStyle.DateStyle](date/formatstyle/datestyle/numeric.md)
+- [static let numeric: Date.FormatStyle.DateStyle](./numeric.md)
   A date style with the month, day of month, and year components represented as numeric values.
 
 

@@ -1,7 +1,8 @@
 # blockedApplications
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A description of the setting that controls which apps a user can launch on their device.
 
@@ -18,11 +19,12 @@ static let blockedApplications: SettingMetadata<Set<Application>>
 
 #### Discussion
 
-Use `blockedApplications` to access the metadata for [`blockedApplications`](applicationsettings/blockedapplications-swift.property.md). The default value is an empty set.
+Use `blockedApplications` to access the metadata for [`blockedApplications`](./blockedapplications-swift.property.md). The default value is an empty set.
 
 ## See Also
 
-- [var blockedApplications: Set<Application>?](applicationsettings/blockedapplications-swift.property.md)
+### Blocking applications
+- [var blockedApplications: Set<Application>?](./blockedapplications-swift.property.md)
   A set of applications for the system to block.
 
 

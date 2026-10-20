@@ -1,24 +1,27 @@
 # MEComposeSession
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 **Availability**:
 - macOS 12.0+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `MEComposeSession`
+- **Type**: dictionary
 
 ## Topics
 
 ### Property List Keys
-- [MEComposeIcon](information-property-list/nsextension/nsextensionattributes/mecomposesession/mecomposeicon.md)
-- [MEComposeIconToolTip](information-property-list/nsextension/nsextensionattributes/mecomposesession/mecomposeicontooltip.md)
+- [MEComposeIcon](./mecomposesession/mecomposeicon.md)
+- [MEComposeIconToolTip](./mecomposesession/mecomposeicontooltip.md)
 
 ## See Also
 
-- [MEExtensionCapabilities](information-property-list/nsextension/nsextensionattributes/meextensioncapabilities.md)
+### Mail
+- [MEExtensionCapabilities](./meextensioncapabilities.md)
 
 
 ---

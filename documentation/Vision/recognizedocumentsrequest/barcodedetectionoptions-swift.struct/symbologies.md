@@ -1,7 +1,8 @@
 # symbologies
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The barcode symbologies that the request detects in an image.
 
@@ -21,13 +22,14 @@ var symbologies: [BarcodeSymbology]
 
 #### Discussion
 
-By default, a request scans for all symbologies. Specify a subset of symbologies to limit the request’s detection range. To see the specific codes recognized refer to [`supportedBarcodeSymbologies`](recognizedocumentsrequest/supportedbarcodesymbologies.md).
+By default, a request scans for all symbologies. Specify a subset of symbologies to limit the request’s detection range. To see the specific codes recognized refer to [`supportedBarcodeSymbologies`](../supportedbarcodesymbologies.md).
 
 ## See Also
 
-- [var coalesceCompositeSymbologies: Bool](recognizedocumentsrequest/barcodedetectionoptions-swift.struct/coalescecompositesymbologies.md)
+### Getting the symbology
+- [var coalesceCompositeSymbologies: Bool](./coalescecompositesymbologies.md)
   A Boolean value that indicates whether the request combines multiple codes.
-- [var enabled: Bool](recognizedocumentsrequest/barcodedetectionoptions-swift.struct/enabled.md)
+- [var enabled: Bool](./enabled.md)
   Boolean value that indicates whether to detect barcodes in the document.
 
 

@@ -1,7 +1,8 @@
 # isExpanded(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether the item with the specified identifier is in an expanded state.
 
@@ -10,7 +11,7 @@ Indicates whether the item with the specified identifier is in an expanded state
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,9 +25,10 @@ This expansion state persists along with the section snapshot.
 
 ## See Also
 
-- [func expand([ItemIdentifierType])](nsdiffabledatasourcesectionsnapshot-swift.struct/expand(_:).md)
+### Expanding and collapsing items
+- [func expand([ItemIdentifierType])](./expand%28_%29.md)
   Expands the specified items in the section snapshot.
-- [func collapse([ItemIdentifierType])](nsdiffabledatasourcesectionsnapshot-swift.struct/collapse(_:).md)
+- [func collapse([ItemIdentifierType])](./collapse%28_%29.md)
   Collapses the specified items in the section snapshot.
 
 

@@ -1,7 +1,8 @@
 # unarchiver(_:didDecode:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the delegate that a given object has been decoded.
 
@@ -20,13 +21,17 @@ Informs the delegate that a given object has been decoded.
 optional func unarchiver(_ unarchiver: NSKeyedUnarchiver, didDecode object: consuming Any?) -> Any?
 ```
 
+```objc
+- (id) unarchiver:(NSKeyedUnarchiver *) unarchiver didDecodeObject:(id) object;
+```
+
 #### Return Value
 
 The object to use in place of `object`. The delegate can either return `object` or return a different object to replace the decoded one. In apps using ARC, the delegate should only return `nil` if `object` itself is `nil`. In apps not using ARC, the delegate can return `nil` to indicate that the decoded value is unchanged—that is, `object` will be decoded.
 
 #### Discussion
 
-This method is called after `object` has been sent [`init(coder:)`](nscoding/init(coder:).md) and [`awakeAfter(using:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/awakeafter(using:)).
+This method is called after `object` has been sent [`init(coder:)`](../nscoding/init%28coder%29.md) and [`awakeAfter(using:)`](../../ObjectiveC/nsobject-swift.class/awakeafter%28using%29.md).
 
 The delegate may use this method to keep track of the decoded objects.
 
@@ -37,9 +42,10 @@ The delegate may use this method to keep track of the decoded objects.
 
 ## See Also
 
-- [func unarchiver(NSKeyedUnarchiver, cannotDecodeObjectOfClassName: String, originalClasses: [String]) -> AnyClass?](nskeyedunarchiverdelegate/unarchiver(_:cannotdecodeobjectofclassname:originalclasses:).md)
+### Decoding Objects
+- [func unarchiver(NSKeyedUnarchiver, cannotDecodeObjectOfClassName: String, originalClasses: [String]) -> AnyClass?](./unarchiver%28_,cannotdecodeobjectofclassname,originalclasses%29.md)
   Informs the delegate that the class with a given name is not available during decoding.
-- [func unarchiver(NSKeyedUnarchiver, willReplace: Any, with: Any)](nskeyedunarchiverdelegate/unarchiver(_:willreplace:with:).md)
+- [func unarchiver(NSKeyedUnarchiver, willReplace: Any, with: Any)](./unarchiver%28_,willreplace,with%29.md)
   Informs the delegate that one object is being substituted for another.
 
 

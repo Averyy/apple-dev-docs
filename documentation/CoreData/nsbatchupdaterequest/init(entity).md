@@ -1,7 +1,8 @@
 # init(entity:)
 
 **Framework**: Core Data  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a batch-update request for a managed entity.
 
@@ -10,7 +11,7 @@ Creates a batch-update request for a managed entity.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,18 @@ Creates a batch-update request for a managed entity.
 init(entity: NSEntityDescription)
 ```
 
+```objc
+- (instancetype) initWithEntity:(NSEntityDescription *) entity;
+```
+
 ## Parameters
 
 - `entity`: The managed entity to update data for.
 
 ## See Also
 
-- [init(entityName: String)](nsbatchupdaterequest/init(entityname:).md)
+### Creating a Request
+- [init(entityName: String)](./init%28entityname%29.md)
   Creates a batch-update request for a named managed entity.
 
 

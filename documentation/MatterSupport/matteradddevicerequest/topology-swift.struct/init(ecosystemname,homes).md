@@ -1,7 +1,8 @@
 # init(ecosystemName:homes:)
 
 **Framework**: MatterSupport  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the topology.
 
@@ -10,7 +11,7 @@ Creates the topology.
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,7 +26,8 @@ init(ecosystemName: String, homes: [MatterAddDeviceRequest.Home])
 
 ## See Also
 
-- [init(from: any Decoder) throws](matteradddevicerequest/init(from:).md)
+### Creating the topology
+- [init(from: any Decoder) throws](../init%28from%29.md)
   Create the request from a decoder.
 
 

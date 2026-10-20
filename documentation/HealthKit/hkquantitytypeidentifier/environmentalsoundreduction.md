@@ -1,7 +1,8 @@
 # environmentalSoundReduction
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A quantity sample type that measures the difference in sound intensity when wearing headphones that lower environmental sound levels.
 
@@ -19,15 +20,20 @@ A quantity sample type that measures the difference in sound intensity when wear
 static let environmentalSoundReduction: HKQuantityTypeIdentifier
 ```
 
+```c
+extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierEnvironmentalSoundReduction;
+```
+
 #### Discussion
 
-These samples use sound pressure units (described in [`HKUnit`](hkunit.md)). They measure discrete values of the equivalent continuous sound pressure level, described in [`HKQuantityAggregationStyle.discreteEquivalentContinuousLevel`](hkquantityaggregationstyle/discreteequivalentcontinuouslevel.md). Environmental sound reduction values are automatically collected when wearing supported headphones.
+These samples use sound pressure units (described in [`HKUnit`](../hkunit.md)). They measure discrete values of the equivalent continuous sound pressure level, described in [`HKQuantityAggregationStyle.discreteEquivalentContinuousLevel`](../hkquantityaggregationstyle/discreteequivalentcontinuouslevel.md). Environmental sound reduction values are automatically collected when wearing supported headphones.
 
 ## See Also
 
-- [static let environmentalAudioExposure: HKQuantityTypeIdentifier](hkquantitytypeidentifier/environmentalaudioexposure.md)
+### Hearing
+- [static let environmentalAudioExposure: HKQuantityTypeIdentifier](./environmentalaudioexposure.md)
   A quantity sample type that measures audio exposure to sounds in the environment.
-- [static let headphoneAudioExposure: HKQuantityTypeIdentifier](hkquantitytypeidentifier/headphoneaudioexposure.md)
+- [static let headphoneAudioExposure: HKQuantityTypeIdentifier](./headphoneaudioexposure.md)
   A quantity sample type that measures audio exposure from headphones.
 
 

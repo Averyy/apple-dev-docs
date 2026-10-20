@@ -1,7 +1,8 @@
 # vasData
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A data object containing the VAS data.
 
@@ -14,6 +15,10 @@ A data object containing the VAS data.
 
 ```swift
 var vasData: Data { get }
+```
+
+```objc
+@property (nonatomic, retain, readonly) NSData * vasData;
 ```
 
 

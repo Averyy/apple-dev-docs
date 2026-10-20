@@ -2,6 +2,7 @@
 
 **Framework**: Compositor Services  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates and returns a type that contains the rendering options for Compositor Services to use when configuring a layer.
@@ -19,7 +20,7 @@ Creates and returns a type that contains the rendering options for Compositor Se
 
 ## Mentions
 
-- [Drawing fully immersive content using Metal](drawing-fully-immersive-content-using-metal.md)
+- [Drawing fully immersive content using Metal](../drawing-fully-immersive-content-using-metal.md)
 
 #### Discussion
 

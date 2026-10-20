@@ -1,7 +1,8 @@
 # PreviewModifier.Content
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type-erased content of a preview.
 

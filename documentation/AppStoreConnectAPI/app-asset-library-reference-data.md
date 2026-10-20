@@ -1,6 +1,7 @@
 # App Asset Library reference data
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: API Collection
 
 Discover the valid asset specifications, placement groups, and limits for placements.
 
@@ -16,16 +17,16 @@ Query the reference data to learn what’s valid for a placement type before you
 ## Topics
 
 ### Getting reference data
-- [List app asset library ref data](get-v1-appassetlibraryrefdata.md)
+- [List app asset library ref data](./get-v1-appassetlibraryrefdata.md)
   List app asset library reference data.
-- [Read an app asset library ref data](get-v1-appassetlibraryrefdata-_id_.md)
+- [Read an app asset library ref data](./get-v1-appassetlibraryrefdata-_id_.md)
   Get information about an app asset library reference data resource.
 ### Objects and types
-- [object AppAssetLibraryRefDatum](appassetlibraryrefdatum.md)
+- [object AppAssetLibraryRefDatum](./appassetlibraryrefdatum.md)
   Reference data that describes the valid asset specifications, placement groups, and limits for the asset library.
-- [object AppAssetLibraryRefDataResponse](appassetlibraryrefdataresponse.md)
+- [object AppAssetLibraryRefDataResponse](./appassetlibraryrefdataresponse.md)
   The response body for endpoints that list app asset library reference data.
-- [object AppAssetLibraryRefDatumResponse](appassetlibraryrefdatumresponse.md)
+- [object AppAssetLibraryRefDatumResponse](./appassetlibraryrefdatumresponse.md)
   The response body for endpoints that read an app asset library reference data resource.
 
 

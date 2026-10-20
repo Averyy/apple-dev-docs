@@ -1,7 +1,8 @@
 # setVariantSelection(for:to:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the variant selection for the given variant set.
 

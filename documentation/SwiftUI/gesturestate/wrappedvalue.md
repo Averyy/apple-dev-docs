@@ -1,7 +1,8 @@
 # wrappedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The wrapped value referenced by the gesture state property.
 
@@ -22,7 +23,8 @@ var wrappedValue: Value { get }
 
 ## See Also
 
-- [var projectedValue: GestureState<Value>](gesturestate/projectedvalue.md)
+### Getting the state
+- [var projectedValue: GestureState<Value>](./projectedvalue.md)
   A binding to the gesture state property.
 
 

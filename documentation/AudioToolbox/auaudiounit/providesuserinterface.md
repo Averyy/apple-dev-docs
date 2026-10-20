@@ -1,7 +1,8 @@
 # providesUserInterface
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the audio unit provides a user interface, normally in the form of a view controller.
 
@@ -19,10 +20,23 @@ A Boolean that indicates whether the audio unit provides a user interface, norma
 var providesUserInterface: Bool { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, readonly) BOOL providesUserInterface;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) BOOL providesUserInterface;
+```
+
 ## See Also
 
-- [func supportedViewConfigurations([AUAudioUnitViewConfiguration]) -> IndexSet](auaudiounit/supportedviewconfigurations(_:).md)
-- [func select(AUAudioUnitViewConfiguration)](auaudiounit/select(_:).md)
+### Configuring the User Interface
+- [func supportedViewConfigurations([AUAudioUnitViewConfiguration]) -> IndexSet](./supportedviewconfigurations%28_%29.md)
+- [func select(AUAudioUnitViewConfiguration)](./select%28_%29.md)
 
 
 ---

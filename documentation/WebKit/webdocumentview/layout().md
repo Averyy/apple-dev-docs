@@ -2,17 +2,22 @@
 
 **Framework**: WebKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Invoked when the receiver should change its layout immediately.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 func layout()
+```
+
+```objc
+- (void) layout;
 ```
 
 #### Discussion
@@ -21,7 +26,8 @@ This message is sent to the view as a hint to perform any calculations and updat
 
 ## See Also
 
-- [func setNeedsLayout(Bool)](webdocumentview/setneedslayout(_:).md)
+### Controlling the layout
+- [func setNeedsLayout(Bool)](./setneedslayout%28_%29.md)
   Sets whether or not the receiver should change its layout.
 
 

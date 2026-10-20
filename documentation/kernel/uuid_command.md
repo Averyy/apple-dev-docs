@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct uuid_command {
     ...
 };
@@ -17,9 +17,9 @@ struct uuid_command {
 ## Topics
 
 ### Instance Properties
-- [cmd](uuid_command/1525852-cmd.md)
-- [cmdsize](uuid_command/1525839-cmdsize.md)
-- [uuid](uuid_command/1525638-uuid.md)
+- [cmd](./uuid_command/api-1525852-cmd.md)
+- [cmdsize](./uuid_command/api-1525839-cmdsize.md)
+- [uuid](./uuid_command/api-1525638-uuid.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # bluetoothAdvertisementData
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Bluetooth advertisement data from the discovered accessory.
 
@@ -15,9 +16,14 @@ The Bluetooth advertisement data from the discovered accessory.
 var bluetoothAdvertisementData: [AnyHashable : Any]? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSDictionary * bluetoothAdvertisementData;
+```
+
 ## See Also
 
-- [var bluetoothRSSI: Int?](asdiscoveredaccessory/bluetoothrssi-5a2gp.md)
+### Working with accessory properties
+- [var bluetoothRSSI: Int?](./bluetoothrssi-5a2gp.md)
   The Bluetooth RSSI (Received Signal Strength Indicator) value from the discovered accessory.
 
 

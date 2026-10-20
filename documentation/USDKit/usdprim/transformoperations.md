@@ -1,7 +1,8 @@
 # transformOperations
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transform operations on this prim, in evaluation order.
 

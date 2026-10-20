@@ -1,7 +1,8 @@
 # AuditQuery.Options
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A flat key-value map of additional query controls.
 
@@ -10,7 +11,7 @@ A flat key-value map of additional query controls.
 
 ## Declaration
 
-```swift
+```
 object AuditQuery.Options
 ```
 
@@ -23,8 +24,14 @@ All keys and values in `options` are strings: pass `needTotals` as `"true"` or `
 ## Properties
 
 - `needTotals` (string): Skip the COUNT query when set to `false`, so `pagination.totalCount` returns `0` instead of the full result count. Accepted values: `true`, `false`. Default: `true`.
+
+  **Default**: `true`; **Allowed Values**: `true`, `false`
 - `timeZone` (string): Controls how the API interprets `eventTime` filter values. `UTC` treats values as UTC. `ORTZ` interprets values in the org’s configured timezone and converts them to UTC server-side. Accepted values: `UTC`, `ORTZ`.
+
+  **Allowed Values**: `UTC`, `ORTZ`
 - `metadata` (string): Controls entity metadata included in change detail responses. `none` returns no metadata, `latest` joins current entity metadata, `snapshot` uses metadata captured at the time of the event. Accepted values: `none`, `latest`, `snapshot`. Default: `none`.
+
+  **Default**: `none`; **Allowed Values**: `none`, `latest`, `snapshot`
 - `Any Key` (string): The API accepts any key other than `needTotals`, `timeZone`, or `metadata` as an arbitrary string value, but it has no effect on query behavior.
 
 

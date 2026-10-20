@@ -1,7 +1,8 @@
 # ManagedAppConfigurationDecodingErrorCode
 
 **Framework**: ManagedApp  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A code for an error that occurs during configuration decoding.
 
@@ -19,52 +20,53 @@ struct ManagedAppConfigurationDecodingErrorCode
 
 ## Mentions
 
-- [Specifying and decoding a configuration](specifying-and-decoding-a-configuration.md)
+- [Specifying and decoding a configuration](./specifying-and-decoding-a-configuration.md)
 
 #### Overview
 
-The system reserves some codes for its use only. Reserved codes are equal to or greater than `firstReserved`. Codes less than the `firstReserved` value are app-specific. For more information, see [`code`](managedappconfigurationdecodingerror/code.md).
+The system reserves some codes for its use only. Reserved codes are equal to or greater than `firstReserved`. Codes less than the `firstReserved` value are app-specific. For more information, see [`code`](./managedappconfigurationdecodingerror/code.md).
 
 ## Topics
 
 ### Initializing an error
-- [init?(rawValue: Int)](managedappconfigurationdecodingerrorcode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./managedappconfigurationdecodingerrorcode/init%28rawvalue%29.md)
   Initializes a configuration decoding error code.
 ### Identifying an error
-- [let rawValue: Int](managedappconfigurationdecodingerrorcode/rawvalue.md)
+- [let rawValue: Int](./managedappconfigurationdecodingerrorcode/rawvalue.md)
   The error code’s value in its underlying type.
 ### Type Properties
-- [static let dataCorrupted: Int](managedappconfigurationdecodingerrorcode/datacorrupted.md)
+- [static let dataCorrupted: Int](./managedappconfigurationdecodingerrorcode/datacorrupted.md)
   An error code that indicates the decoder encountered corrupt data.
-- [static let firstReserved: Int](managedappconfigurationdecodingerrorcode/firstreserved.md)
+- [static let firstReserved: Int](./managedappconfigurationdecodingerrorcode/firstreserved.md)
   An error code for the start of the range of reserved error codes.
-- [static let generic: Int](managedappconfigurationdecodingerrorcode/generic.md)
+- [static let generic: Int](./managedappconfigurationdecodingerrorcode/generic.md)
   A reserved error that indicates the decoder threw an unknown custom error.
-- [static let keyNotFound: Int](managedappconfigurationdecodingerrorcode/keynotfound.md)
+- [static let keyNotFound: Int](./managedappconfigurationdecodingerrorcode/keynotfound.md)
   An error code that indicates the decoder encountered an unknown coding key.
-- [static let timeout: Int](managedappconfigurationdecodingerrorcode/timeout.md)
+- [static let timeout: Int](./managedappconfigurationdecodingerrorcode/timeout.md)
   An error code that indicates the decoder timed out.
-- [static let typeMismatch: Int](managedappconfigurationdecodingerrorcode/typemismatch.md)
+- [static let typeMismatch: Int](./managedappconfigurationdecodingerrorcode/typemismatch.md)
   An error code that indicates the decoder encountered a type mismatch.
-- [static let valueNotFound: Int](managedappconfigurationdecodingerrorcode/valuenotfound.md)
+- [static let valueNotFound: Int](./managedappconfigurationdecodingerrorcode/valuenotfound.md)
   An error code that indicates a coding key yields no value.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum ManagedAppError](managedapperror.md)
+### Errors
+- [enum ManagedAppError](./managedapperror.md)
   Errors that functions in the ManagedApp framework can throw.
-- [protocol ManagedAppConfigurationDecodingError](managedappconfigurationdecodingerror.md)
+- [protocol ManagedAppConfigurationDecodingError](./managedappconfigurationdecodingerror.md)
   A protocol for an error that describes an issue with decoding the configuration.
 
 

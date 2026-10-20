@@ -1,7 +1,8 @@
 # fast
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A fast deceleration rate for a scroll view.
 
@@ -9,7 +10,7 @@ A fast deceleration rate for a scroll view.
 - iOS 3.0+
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,14 @@ A fast deceleration rate for a scroll view.
 static let fast: UIScrollView.DecelerationRate
 ```
 
+```c
+extern const UIScrollViewDecelerationRate UIScrollViewDecelerationRateFast;
+```
+
 ## See Also
 
-- [static let normal: UIScrollView.DecelerationRate](uiscrollview/decelerationrate-swift.struct/normal.md)
+### Deceleration rates
+- [static let normal: UIScrollView.DecelerationRate](./normal.md)
   The default deceleration rate for a scroll view.
 
 

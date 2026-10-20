@@ -1,7 +1,8 @@
 # name(style:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a format style to use the given name style for formatting a name from its components.
 
@@ -20,13 +21,15 @@ Returns a format style to use the given name style for formatting a name from it
 static func name(style: PersonNameComponents.FormatStyle.Style) -> Self
 ```
 
+Available when `Self` is `PersonNameComponents.FormatStyle`.
+
 #### Return Value
 
 A name format style.
 
 #### Discussion
 
-Use the dot-notation form of this type method when the call point allows the use of [`PersonNameComponents.FormatStyle`](personnamecomponents/formatstyle.md). You typically do this when calling the [`formatted(_:)`](personnamecomponents/formatted(_:).md) method of [`PersonNameComponents`](personnamecomponents.md).
+Use the dot-notation form of this type method when the call point allows the use of [`PersonNameComponents.FormatStyle`](../personnamecomponents/formatstyle.md). You typically do this when calling the [`formatted(_:)`](../personnamecomponents/formatted%28_%29.md) method of [`PersonNameComponents`](../personnamecomponents.md).
 
 The following example shows the effect of creating and using different person name format styles.
 
@@ -45,7 +48,7 @@ let abbreviatedFormattedName = name.formatted(.name(style: .abbreviated)) // "TC
 
 ## Parameters
 
-- `style`: A name-formatting style, such as [`PersonNameComponents.FormatStyle.Style.long`](personnamecomponents/formatstyle/style-swift.enum/long.md) or [`PersonNameComponents.FormatStyle.Style.abbreviated`](personnamecomponents/formatstyle/style-swift.enum/abbreviated.md).
+- `style`: A name-formatting style, such as [`PersonNameComponents.FormatStyle.Style.long`](../personnamecomponents/formatstyle/style-swift.enum/long.md) or [`PersonNameComponents.FormatStyle.Style.abbreviated`](../personnamecomponents/formatstyle/style-swift.enum/abbreviated.md).
 
 
 ---

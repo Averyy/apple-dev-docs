@@ -1,7 +1,8 @@
 # preferredParticipantForNonMixableAudioRoutes
 
 **Framework**: AVRouting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The participant that has priority to play audio when it’s not possible to play multiple audio sources concurrently.
 
@@ -15,6 +16,10 @@ The participant that has priority to play audio when it’s not possible to play
 
 ```swift
 weak var preferredParticipantForNonMixableAudioRoutes: (any AVRoutingPlaybackParticipant)? { get set }
+```
+
+```objc
+@property (nonatomic, weak, nullable) id<AVRoutingPlaybackParticipant> preferredParticipantForNonMixableAudioRoutes;
 ```
 
 #### Discussion

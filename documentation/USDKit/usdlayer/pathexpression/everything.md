@@ -1,7 +1,8 @@
 # everything
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An expression that matches all paths in the scene hierarchy.
 

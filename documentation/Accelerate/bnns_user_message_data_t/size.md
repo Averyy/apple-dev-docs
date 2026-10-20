@@ -1,7 +1,8 @@
 # size
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the additional logging data.
 
@@ -18,6 +19,10 @@ The size of the additional logging data.
 
 ```swift
 var size: Int
+```
+
+```c
+size_t size;
 ```
 
 

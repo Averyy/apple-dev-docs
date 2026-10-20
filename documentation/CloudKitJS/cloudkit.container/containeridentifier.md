@@ -1,7 +1,8 @@
 # containerIdentifier
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string that identifies the app’s container.
 
@@ -10,15 +11,16 @@ The string that identifies the app’s container.
 
 ## Declaration
 
-```swift
+```
 readonly attribute String containerIdentifier;
 ```
 
 ## See Also
 
-- [environment](cloudkit.container/environment.md)
+### Getting the Identifier and Environment
+- [environment](./environment.md)
   The container environment, either development or production.
-- [apnsEnvironment](cloudkit.container/apnsenvironment.md)
+- [apnsEnvironment](./apnsenvironment.md)
   The Apple Push Notification service (APNs) environment associated with this container.
 
 

@@ -1,7 +1,8 @@
 # shareCurrentLocation
 
 **Framework**: CoreLocationUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A button title with the text *Share Current Location*.
 
@@ -19,13 +20,14 @@ static let shareCurrentLocation: LocationButton.Title
 
 ## See Also
 
-- [static let currentLocation: LocationButton.Title](locationbutton/title/currentlocation.md)
+### Customizing title styles
+- [static let currentLocation: LocationButton.Title](./currentlocation.md)
   A button title with the text *Current Location*.
-- [static let sendCurrentLocation: LocationButton.Title](locationbutton/title/sendcurrentlocation.md)
+- [static let sendCurrentLocation: LocationButton.Title](./sendcurrentlocation.md)
   A button title with the text *Send Current Location*.
-- [static let sendMyCurrentLocation: LocationButton.Title](locationbutton/title/sendmycurrentlocation.md)
+- [static let sendMyCurrentLocation: LocationButton.Title](./sendmycurrentlocation.md)
   A button title with the text *Send My Current Location*.
-- [static let shareMyCurrentLocation: LocationButton.Title](locationbutton/title/sharemycurrentlocation.md)
+- [static let shareMyCurrentLocation: LocationButton.Title](./sharemycurrentlocation.md)
   A button title with the text *Share My Current Location*.
 
 

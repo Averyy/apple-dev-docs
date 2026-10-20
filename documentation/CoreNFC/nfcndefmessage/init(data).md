@@ -1,7 +1,8 @@
 # init(data:)
 
 **Framework**: Core NFC  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an NDEF message from raw data representing the message.
 
@@ -16,6 +17,10 @@ Creates an NDEF message from raw data representing the message.
 convenience init?(data: Data)
 ```
 
+```objc
++ (instancetype) ndefMessageWithData:(NSData *) data;
+```
+
 #### Return Value
 
 An NDEF message, or `nil` when the raw data is invalid.
@@ -26,7 +31,8 @@ An NDEF message, or `nil` when the raw data is invalid.
 
 ## See Also
 
-- [init(records: [NFCNDEFPayload])](nfcndefmessage/init(records:).md)
+### Creating an NDEF Message
+- [init(records: [NFCNDEFPayload])](./init%28records%29.md)
   Creates an NDEF message with the specified records.
 
 

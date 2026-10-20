@@ -1,7 +1,8 @@
 # CadenceRangeAlert
 
 **Framework**: WorkoutKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An alert for a range of cadence values.
 
@@ -21,32 +22,33 @@ struct CadenceRangeAlert
 ## Topics
 
 ### Creating new cadence range alerts
-- [init(target: ClosedRange<Measurement<UnitFrequency>>)](cadencerangealert/init(target:).md)
+- [init(target: ClosedRange<Measurement<UnitFrequency>>)](./cadencerangealert/init%28target%29.md)
   Creates a cadence alert for a closed range of measurements.
 ### Accessing the alert data
-- [var target: ClosedRange<Measurement<UnitFrequency>>](cadencerangealert/target.md)
+- [var target: ClosedRange<Measurement<UnitFrequency>>](./cadencerangealert/target.md)
   The target range.
-- [var targetQuantityLowerBound: HKQuantity](cadencerangealert/targetquantitylowerbound.md)
+- [var targetQuantityLowerBound: HKQuantity](./cadencerangealert/targetquantitylowerbound.md)
   The target’s lower bound.
-- [var targetQuantityUpperBound: HKQuantity](cadencerangealert/targetquantityupperbound.md)
+- [var targetQuantityUpperBound: HKQuantity](./cadencerangealert/targetquantityupperbound.md)
   The target’s upper bound.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [WorkoutAlert](workoutalert.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [WorkoutAlert](./workoutalert.md)
 
 ## See Also
 
-- [static func cadence(ClosedRange<Double>, unit: UnitFrequency) -> Self](workoutalert/cadence(_:unit:)-y8da.md)
+### Creating cadence alerts
+- [static func cadence(ClosedRange<Double>, unit: UnitFrequency) -> Self](./workoutalert/cadence%28_,unit%29-y8da.md)
   Creates a new alert for a range of cadence values.
-- [static func cadence(Double, unit: UnitFrequency) -> Self](workoutalert/cadence(_:unit:)-3fnpg.md)
+- [static func cadence(Double, unit: UnitFrequency) -> Self](./workoutalert/cadence%28_,unit%29-3fnpg.md)
   Creates an alert for the specified cadence threshold.
-- [struct CadenceThresholdAlert](cadencethresholdalert.md)
+- [struct CadenceThresholdAlert](./cadencethresholdalert.md)
   An alert for a cadence threshold.
 
 

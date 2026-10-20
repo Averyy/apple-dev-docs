@@ -2,6 +2,7 @@
 
 **Framework**: OSLog  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The payload’s category.
@@ -21,17 +22,22 @@ The payload’s category.
 var category: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * category;
+```
+
 #### Discussion
 
 The category is derived from the `os_log_t` handle used.
 
 ## See Also
 
-- [var components: [OSLogMessageComponent]](oslogentrywithpayload/components.md)
+### Elements of a Payload
+- [var components: [OSLogMessageComponent]](./components.md)
   The payload’s components.
-- [var formatString: String](oslogentrywithpayload/formatstring.md)
+- [var formatString: String](./formatstring.md)
   The payload’s format string.
-- [var subsystem: String](oslogentrywithpayload/subsystem.md)
+- [var subsystem: String](./subsystem.md)
   The payload’s subsystem.
 
 

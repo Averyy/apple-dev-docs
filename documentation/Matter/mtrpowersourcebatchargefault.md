@@ -1,7 +1,8 @@
 # MTRPowerSourceBatChargeFault
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,34 +19,38 @@
 enum MTRPowerSourceBatChargeFault
 ```
 
+```c
+enum MTRPowerSourceBatChargeFault : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRPowerSourceBatChargeFault.ambientTooCold](mtrpowersourcebatchargefault/ambienttoocold.md)
-- [MTRPowerSourceBatChargeFault.ambientTooHot](mtrpowersourcebatchargefault/ambienttoohot.md)
-- [MTRPowerSourceBatChargeFault.batteryAbsent](mtrpowersourcebatchargefault/batteryabsent.md)
-- [MTRPowerSourceBatChargeFault.batteryOverVoltage](mtrpowersourcebatchargefault/batteryovervoltage.md)
-- [MTRPowerSourceBatChargeFault.batteryTooCold](mtrpowersourcebatchargefault/batterytoocold.md)
-- [MTRPowerSourceBatChargeFault.batteryTooHot](mtrpowersourcebatchargefault/batterytoohot.md)
-- [MTRPowerSourceBatChargeFault.batteryUnderVoltage](mtrpowersourcebatchargefault/batteryundervoltage.md)
-- [MTRPowerSourceBatChargeFault.chargerOverVoltage](mtrpowersourcebatchargefault/chargerovervoltage.md)
-- [MTRPowerSourceBatChargeFault.chargerUnderVoltage](mtrpowersourcebatchargefault/chargerundervoltage.md)
-- [MTRPowerSourceBatChargeFault.safetyTimeout](mtrpowersourcebatchargefault/safetytimeout.md)
-- [MTRPowerSourceBatChargeFault.unspecified](mtrpowersourcebatchargefault/unspecified.md)
+- [MTRPowerSourceBatChargeFault.ambientTooCold](./mtrpowersourcebatchargefault/ambienttoocold.md)
+- [MTRPowerSourceBatChargeFault.ambientTooHot](./mtrpowersourcebatchargefault/ambienttoohot.md)
+- [MTRPowerSourceBatChargeFault.batteryAbsent](./mtrpowersourcebatchargefault/batteryabsent.md)
+- [MTRPowerSourceBatChargeFault.batteryOverVoltage](./mtrpowersourcebatchargefault/batteryovervoltage.md)
+- [MTRPowerSourceBatChargeFault.batteryTooCold](./mtrpowersourcebatchargefault/batterytoocold.md)
+- [MTRPowerSourceBatChargeFault.batteryTooHot](./mtrpowersourcebatchargefault/batterytoohot.md)
+- [MTRPowerSourceBatChargeFault.batteryUnderVoltage](./mtrpowersourcebatchargefault/batteryundervoltage.md)
+- [MTRPowerSourceBatChargeFault.chargerOverVoltage](./mtrpowersourcebatchargefault/chargerovervoltage.md)
+- [MTRPowerSourceBatChargeFault.chargerUnderVoltage](./mtrpowersourcebatchargefault/chargerundervoltage.md)
+- [MTRPowerSourceBatChargeFault.safetyTimeout](./mtrpowersourcebatchargefault/safetytimeout.md)
+- [MTRPowerSourceBatChargeFault.unspecified](./mtrpowersourcebatchargefault/unspecified.md)
 ### Type Properties
-- [static var unspecfied: MTRPowerSourceBatChargeFault](mtrpowersourcebatchargefault/unspecfied.md)
+- [static var unspecfied: MTRPowerSourceBatChargeFault](./mtrpowersourcebatchargefault/unspecfied.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrpowersourcebatchargefault/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrpowersourcebatchargefault/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

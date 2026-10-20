@@ -1,7 +1,8 @@
 # NSLayoutGuide
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A rectangular area that can interact with Auto Layout.
 
@@ -14,20 +15,24 @@ A rectangular area that can interact with Auto Layout.
 class NSLayoutGuide
 ```
 
+```objc
+@interface NSLayoutGuide : NSObject
+```
+
 #### Overview
 
 Use layout guides to replace the placeholder views you may have created to represent inter-view spaces or encapsulation in your user interface. Traditionally, there were a number of Auto Layout techniques that required placeholder views. A placeholder view is an empty view that does not have any visual elements of its own and serves only to define a rectangular region in the view hierarchy. For example, if you wanted to use constraints to define the size or location of an empty space between views, you needed to use a placeholder view to represent that space. If you wanted to center a group of objects, you needed a placeholder view to contain those objects. Similarly, placeholder views could be used to contain and encapsulate part of your user interface. Placeholder views let you break up a large, complex user interface into self-contained, modular chunks. When used properly, they could greatly simplify your Auto Layout constraint logic.
 
 There are a number of costs associated with adding placeholder views to your view hierarchy. First, there is the cost of creating and maintaining the view itself. Second, the placeholder view is a full member of the view hierarchy, which means that it adds overhead to every task the hierarchy performs. Worst of all, the invisible placeholder view can intercept messages that are intended for other views, causing problems that are very difficult to find.
 
-The [`NSLayoutGuide`](nslayoutguide.md) class is designed to perform all the tasks previously performed by placeholder views, but to do it in a safer, more efficient manner. Layout guides are not views. They do not use as much memory, and they do not participate in the view hierarchy. Instead, they simply define a rectangular region in their owning view’s coordinate system that can interact with Auto Layout.
+The [`NSLayoutGuide`](./nslayoutguide.md) class is designed to perform all the tasks previously performed by placeholder views, but to do it in a safer, more efficient manner. Layout guides are not views. They do not use as much memory, and they do not participate in the view hierarchy. Instead, they simply define a rectangular region in their owning view’s coordinate system that can interact with Auto Layout.
 
 ##### Creating Layout Guides
 
 To create a layout guide, perform the following steps:
 
 1. Instantiate a new layout guide.
-2. Add the layout guide to a view by calling the view’s [`addLayoutGuide(_:)`](nsview/addlayoutguide(_:).md) method .
+2. Add the layout guide to a view by calling the view’s [`addLayoutGuide(_:)`](./nsview/addlayoutguide%28_%29.md) method .
 3. Define the position and size of the layout guide using Auto Layout.
 
 You can use these guides to define the space between elements in your layout. The following example shows how to use layout guides to define an equal spacing between a series of views.
@@ -111,57 +116,58 @@ NSLayoutGuide *container = [[NSLayoutGuide alloc] init];
 ## Topics
 
 ### Working With Layout Guides
-- [var identifier: NSUserInterfaceItemIdentifier](nslayoutguide/identifier.md)
+- [var identifier: NSUserInterfaceItemIdentifier](./nslayoutguide/identifier.md)
   A string used to identify the layout guide.
-- [var frame: NSRect](nslayoutguide/frame.md)
+- [var frame: NSRect](./nslayoutguide/frame.md)
   The layout guide’s frame in its owning view’s coordinate system.
-- [var owningView: NSView?](nslayoutguide/owningview.md)
+- [var owningView: NSView?](./nslayoutguide/owningview.md)
   The view that owns this layout guide.
 ### Creating Constraints Using Layout Anchors
-- [var bottomAnchor: NSLayoutYAxisAnchor](nslayoutguide/bottomanchor.md)
+- [var bottomAnchor: NSLayoutYAxisAnchor](./nslayoutguide/bottomanchor.md)
   A layout anchor representing the bottom edge of the layout guide’s frame.
-- [var centerXAnchor: NSLayoutXAxisAnchor](nslayoutguide/centerxanchor.md)
+- [var centerXAnchor: NSLayoutXAxisAnchor](./nslayoutguide/centerxanchor.md)
   A layout anchor representing the horizontal center of the layout guide’s frame.
-- [var centerYAnchor: NSLayoutYAxisAnchor](nslayoutguide/centeryanchor.md)
+- [var centerYAnchor: NSLayoutYAxisAnchor](./nslayoutguide/centeryanchor.md)
   A layout anchor representing the vertical center of the layout guide’s frame.
-- [var heightAnchor: NSLayoutDimension](nslayoutguide/heightanchor.md)
+- [var heightAnchor: NSLayoutDimension](./nslayoutguide/heightanchor.md)
   A layout anchor representing the height of the layout guide’s frame.
-- [var leadingAnchor: NSLayoutXAxisAnchor](nslayoutguide/leadinganchor.md)
+- [var leadingAnchor: NSLayoutXAxisAnchor](./nslayoutguide/leadinganchor.md)
   A layout anchor representing the leading edge of the layout guide’s frame.
-- [var leftAnchor: NSLayoutXAxisAnchor](nslayoutguide/leftanchor.md)
+- [var leftAnchor: NSLayoutXAxisAnchor](./nslayoutguide/leftanchor.md)
   A layout anchor representing the left edge of the layout guide’s frame.
-- [var rightAnchor: NSLayoutXAxisAnchor](nslayoutguide/rightanchor.md)
+- [var rightAnchor: NSLayoutXAxisAnchor](./nslayoutguide/rightanchor.md)
   A layout anchor representing the right edge of the layout guide’s frame.
-- [var topAnchor: NSLayoutYAxisAnchor](nslayoutguide/topanchor.md)
+- [var topAnchor: NSLayoutYAxisAnchor](./nslayoutguide/topanchor.md)
   A layout anchor representing the top edge of the layout guide’s frame.
-- [var trailingAnchor: NSLayoutXAxisAnchor](nslayoutguide/trailinganchor.md)
+- [var trailingAnchor: NSLayoutXAxisAnchor](./nslayoutguide/trailinganchor.md)
   A layout anchor representing the trailing edge of the layout guide’s frame.
-- [var widthAnchor: NSLayoutDimension](nslayoutguide/widthanchor.md)
+- [var widthAnchor: NSLayoutDimension](./nslayoutguide/widthanchor.md)
   A layout anchor representing the width of the layout guide’s frame.
 ### Instance Properties
-- [var hasAmbiguousLayout: Bool](nslayoutguide/hasambiguouslayout.md)
+- [var hasAmbiguousLayout: Bool](./nslayoutguide/hasambiguouslayout.md)
 ### Instance Methods
-- [func constraintsAffectingLayout(for: NSLayoutConstraint.Orientation) -> [NSLayoutConstraint]](nslayoutguide/constraintsaffectinglayout(for:).md)
+- [func constraintsAffectingLayout(for: NSLayoutConstraint.Orientation) -> [NSLayoutConstraint]](./nslayoutguide/constraintsaffectinglayout%28for%29.md)
 ### Initializers
-- [init?(coder: NSCoder)](nslayoutguide/init(coder:).md)
+- [init?(coder: NSCoder)](./nslayoutguide/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSUserInterfaceItemIdentification](./nsuserinterfaceitemidentification.md)
 
 ## See Also
 
-- [class NSLayoutDimension](nslayoutdimension.md)
+### Layout Guides
+- [class NSLayoutDimension](./nslayoutdimension.md)
   A factory class for creating size-based layout constraint objects using a fluent API.
 
 

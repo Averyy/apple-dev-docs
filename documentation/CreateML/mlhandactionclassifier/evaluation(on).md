@@ -1,7 +1,8 @@
 # evaluation(on:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates metrics describing the hand action classifier’s performance on labeled videos.
 
@@ -20,13 +21,14 @@ func evaluation(on annotatedVideos: MLHandActionClassifier.DataSource) throws ->
 
 ## Parameters
 
-- `annotatedVideos`: An [`MLHandActionClassifier.DataSource`](mlhandactionclassifier/datasource.md) instance.
+- `annotatedVideos`: An [`MLHandActionClassifier.DataSource`](./datasource.md) instance.
 
 ## See Also
 
-- [var trainingMetrics: MLClassifierMetrics](mlhandactionclassifier/trainingmetrics.md)
+### Evaluating a hand action classifier
+- [var trainingMetrics: MLClassifierMetrics](./trainingmetrics.md)
   Measurements of the hand action classifier’s performance on the training dataset.
-- [var validationMetrics: MLClassifierMetrics](mlhandactionclassifier/validationmetrics.md)
+- [var validationMetrics: MLClassifierMetrics](./validationmetrics.md)
   Measurements of the hand action classifier’s performance on the validation dataset.
 
 

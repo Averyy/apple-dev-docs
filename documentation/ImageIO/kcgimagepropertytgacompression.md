@@ -1,7 +1,8 @@
 # kCGImagePropertyTGACompression
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 14.0+
@@ -18,9 +19,14 @@
 let kCGImagePropertyTGACompression: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyTGACompression;
+```
+
 ## See Also
 
-- [enum CGImagePropertyTGACompression](cgimagepropertytgacompression.md)
+### Compression
+- [enum CGImagePropertyTGACompression](./cgimagepropertytgacompression.md)
 
 
 ---

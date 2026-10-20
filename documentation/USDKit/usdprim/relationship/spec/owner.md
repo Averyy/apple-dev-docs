@@ -1,7 +1,8 @@
 # owner
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The spec that contains this relationship.
 

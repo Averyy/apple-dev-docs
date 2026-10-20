@@ -1,7 +1,8 @@
 # resultsLimit
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of records to fetch from the record zone.
 
@@ -20,17 +21,22 @@ The maximum number of records to fetch from the record zone.
 var resultsLimit: Int { get set }
 ```
 
+```objc
+@property (assign) NSUInteger resultsLimit;
+```
+
 #### Discussion
 
 Use this property to limit the number of results in situations where you expect a large number of records. The default value is 0, which causes the server to return an appropriate number of records using dynamic conditions.
 
-When the number of records that CloudKit returns exceeds this limit, the operation sets the `moreComing` property to [`true`](https://developer.apple.com/documentation/swift/true) when executing the [`recordZoneFetchResultBlock`](ckfetchrecordzonechangesoperation/recordzonefetchresultblock.md) handler.
+When the number of records that CloudKit returns exceeds this limit, the operation sets the `moreComing` property to [`true`](../../../Swift/true.md) when executing the [`recordZoneFetchResultBlock`](../recordzonefetchresultblock.md) handler.
 
 ## See Also
 
-- [var previousServerChangeToken: CKServerChangeToken?](ckfetchrecordzonechangesoperation/zoneconfiguration/previousserverchangetoken.md)
+### Accessing a Zone Change Configuration
+- [var previousServerChangeToken: CKServerChangeToken?](./previousserverchangetoken.md)
   The token that identifies the starting point for retrieving changes.
-- [var desiredKeys: [CKRecord.FieldKey]?](ckfetchrecordzonechangesoperation/zoneconfiguration/desiredkeys.md)
+- [var desiredKeys: [CKRecord.FieldKey]?](./desiredkeys.md)
   The fields to fetch for the requested records.
 
 

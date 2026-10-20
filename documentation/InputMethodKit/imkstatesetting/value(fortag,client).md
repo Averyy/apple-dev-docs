@@ -2,6 +2,7 @@
 
 **Framework**: InputMethodKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a value object whose key is the provided tag.
@@ -15,6 +16,10 @@ Returns a value object whose key is the provided tag.
 func value(forTag tag: Int, client sender: Any!) -> Any!
 ```
 
+```objc
+- (id) valueForTag:(long) tag client:(id) sender;
+```
+
 #### Return Value
 
 The value object.
@@ -26,7 +31,8 @@ The value object.
 
 ## See Also
 
-- [func setValue(Any!, forTag: Int, client: Any!)](imkstatesetting/setvalue(_:fortag:client:).md)
+### Getting and Setting Values
+- [func setValue(Any!, forTag: Int, client: Any!)](./setvalue%28_,fortag,client%29.md)
   Set the value for the provided key.
 
 

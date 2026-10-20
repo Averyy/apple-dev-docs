@@ -1,7 +1,8 @@
 # fireDate
 
 **Framework**: AlarmKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date the countdown starts.
 
@@ -22,13 +23,14 @@ The alarm transitions to the `alerting` state.
 
 ## See Also
 
-- [init(totalCountdownDuration: TimeInterval, previouslyElapsedDuration: TimeInterval, startDate: Date, fireDate: Date)](alarmpresentationstate/mode-swift.enum/countdown/init(totalcountdownduration:previouslyelapsedduration:startdate:firedate:).md)
+### Creating a countdown
+- [init(totalCountdownDuration: TimeInterval, previouslyElapsedDuration: TimeInterval, startDate: Date, fireDate: Date)](./init%28totalcountdownduration,previouslyelapsedduration,startdate,firedate%29.md)
   Creates an instance of a countdown.
-- [var previouslyElapsedDuration: TimeInterval](alarmpresentationstate/mode-swift.enum/countdown/previouslyelapsedduration.md)
+- [var previouslyElapsedDuration: TimeInterval](./previouslyelapsedduration.md)
   The amount of time that elapsed before the most recent resumption of the countdown.
-- [var startDate: Date](alarmpresentationstate/mode-swift.enum/countdown/startdate.md)
+- [var startDate: Date](./startdate.md)
   The date at which the countdown was mostly recently resumed.
-- [var totalCountdownDuration: TimeInterval](alarmpresentationstate/mode-swift.enum/countdown/totalcountdownduration.md)
+- [var totalCountdownDuration: TimeInterval](./totalcountdownduration.md)
   The total duration of the countdown.
 
 

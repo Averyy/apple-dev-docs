@@ -1,7 +1,8 @@
 # kSecACLAuthorizationGenKey
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Generate a key.
 
@@ -12,6 +13,10 @@ Generate a key.
 
 ```swift
 let kSecACLAuthorizationGenKey: CFString
+```
+
+```c
+extern CFStringRef const kSecACLAuthorizationGenKey;
 ```
 
 

@@ -1,6 +1,7 @@
 # DNS settings
 
-**Framework**: Network Extension
+**Framework**: Network Extension  
+**Role**: API Collection
 
 Create and manage a system-wide DNS configuration that uses built-in encrypted DNS protocols.
 
@@ -11,19 +12,20 @@ With the DNS Settings feature in macOS and iOS, your app can create and manage a
 ## Topics
 
 ### Essentials
-- [Network Extensions Entitlement](../bundleresources/entitlements/com.apple.developer.networking.networkextension.md)
+- [Network Extensions Entitlement](../BundleResources/entitlements/com.apple.developer.networking.networkextension.md)
   The APIs an app can use to customize networking features.
 ### DNS configuration
-- [class NEDNSSettingsManager](nednssettingsmanager.md)
+- [class NEDNSSettingsManager](./nednssettingsmanager.md)
   An object you use to create and manage a DNS settings configuration.
-- [class NEDNSOverHTTPSSettings](nednsoverhttpssettings.md)
+- [class NEDNSOverHTTPSSettings](./nednsoverhttpssettings.md)
   The DNS resolver settings for a DNS-over-HTTPS server.
-- [class NEDNSOverTLSSettings](nednsovertlssettings.md)
+- [class NEDNSOverTLSSettings](./nednsovertlssettings.md)
   The DNS resolver settings for a DNS-over-TLS server.
 
 ## See Also
 
-- [DNS proxy provider](dns-proxy-provider.md)
+### DNS configurations
+- [DNS proxy provider](./dns-proxy-provider.md)
   Create an on-device DNS proxy using a custom protocol.
 
 

@@ -1,7 +1,8 @@
 # NSFileProviderServiceSource
 
 **Framework**: File Provider  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A service that provides a custom communication channel between the host app and the File Provider extension.
 
@@ -18,24 +19,29 @@ A service that provides a custom communication channel between the host app and 
 protocol NSFileProviderServiceSource
 ```
 
+```objc
+@protocol NSFileProviderServiceSource
+```
+
 #### Overview
 
-To implement a File Provider service, the [`NSFileProviderExtension`](nsfileproviderextension.md) subclass must override the [`supportedServiceSources(for:)`](nsfileproviderextension/supportedservicesources(for:).md) method and return the supported services.
+To implement a File Provider service, the [`NSFileProviderExtension`](./nsfileproviderextension.md) subclass must override the [`supportedServiceSources(for:)`](./nsfileproviderextension/supportedservicesources%28for%29.md) method and return the supported services.
 
-For more information about creating services, see   [`NSFileProviderService`](https://developer.apple.com/documentation/foundation/nsfileproviderservice).
+For more information about creating services, see   [`NSFileProviderService`](../Foundation/nsfileproviderservice.md).
 
 ## Topics
 
 ### Accessing the Service
-- [var serviceName: NSFileProviderServiceName](nsfileproviderservicesource/servicename.md)
+- [var serviceName: NSFileProviderServiceName](./nsfileproviderservicesource/servicename.md)
   A name that uniquely identifies the service (reverse domain name notation is recommended).
-- [func makeListenerEndpoint() throws -> NSXPCListenerEndpoint](nsfileproviderservicesource/makelistenerendpoint.md)
+- [func makeListenerEndpoint() throws -> NSXPCListenerEndpoint](./nsfileproviderservicesource/makelistenerendpoint%28%29.md)
   Returns an endpoint object that lets the host app communicate with the File Provider extension.
-- [var isRestricted: Bool](nsfileproviderservicesource/isrestricted.md)
+- [var isRestricted: Bool](./nsfileproviderservicesource/isrestricted.md)
 
 ## See Also
 
-- [func supportedServiceSources(for: NSFileProviderItemIdentifier) throws -> [any NSFileProviderServiceSource]](nsfileproviderextension/supportedservicesources(for:).md)
+### Working with services
+- [func supportedServiceSources(for: NSFileProviderItemIdentifier) throws -> [any NSFileProviderServiceSource]](./nsfileproviderextension/supportedservicesources%28for%29.md)
   Return an array of service sources that let the host app perform actions associated with the specified item.
 
 

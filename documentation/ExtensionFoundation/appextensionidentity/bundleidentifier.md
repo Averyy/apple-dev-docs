@@ -1,7 +1,8 @@
 # bundleIdentifier
 
 **Framework**: ExtensionFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bundle identifier of the app extension.
 
@@ -26,9 +27,10 @@ During development, an app extension creator assigns a value to this string that
 
 ## See Also
 
-- [var extensionPointIdentifier: String](appextensionidentity/extensionpointidentifier.md)
+### Identifying the process
+- [var extensionPointIdentifier: String](./extensionpointidentifier.md)
   The extension point of your host app that the app extension supports.
-- [var localizedName: String](appextensionidentity/localizedname.md)
+- [var localizedName: String](./localizedname.md)
   The localized, human-readable name of the app extension.
 
 

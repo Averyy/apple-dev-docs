@@ -1,7 +1,8 @@
 # unknown
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error that occurs when there is an unknown problem.
 
@@ -20,11 +21,12 @@ static var unknown: CXErrorCodeNotificationServiceExtensionError.Code { get }
 
 ## See Also
 
-- [static var invalidClientProcess: CXErrorCodeNotificationServiceExtensionError.Code](cxerrorcodenotificationserviceextensionerror-swift.struct/invalidclientprocess.md)
+### Understanding Error Codes
+- [static var invalidClientProcess: CXErrorCodeNotificationServiceExtensionError.Code](./invalidclientprocess.md)
   An error indicating that an invalid client process reported the incoming call.
-- [static var missingNotificationFilteringEntitlement: CXErrorCodeNotificationServiceExtensionError.Code](cxerrorcodenotificationserviceextensionerror-swift.struct/missingnotificationfilteringentitlement.md)
+- [static var missingNotificationFilteringEntitlement: CXErrorCodeNotificationServiceExtensionError.Code](./missingnotificationfilteringentitlement.md)
   An error indicating that the notification service extension is missing the required filtering entitlement.
-- [CXErrorCodeNotificationServiceExtensionError.Code](cxerrorcodenotificationserviceextensionerror-swift.struct/code.md)
+- [CXErrorCodeNotificationServiceExtensionError.Code](./code.md)
   Constants for errors returned when reporting new, incoming VoIP calls.
 
 

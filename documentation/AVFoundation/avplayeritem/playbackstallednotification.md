@@ -1,7 +1,8 @@
 # playbackStalledNotification
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification the system posts when a player item media doesn’t arrive in time to continue playback.
 
@@ -20,6 +21,10 @@ A notification the system posts when a player item media doesn’t arrive in tim
 class let playbackStalledNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const AVPlayerItemPlaybackStalledNotification;
+```
+
 #### Discussion
 
 The notification’s object is the player item whose playback is unable to continue due to network delays. Streaming-media playback continues after the player item retrieves a sufficient amount of data. File-based playback doesn’t continue.
@@ -28,19 +33,20 @@ The notification’s object is the player item whose playback is unable to conti
 
 ## See Also
 
-- [class let didPlayToEndTimeNotification: NSNotification.Name](avplayeritem/didplaytoendtimenotification.md)
+### Observing notifications
+- [class let didPlayToEndTimeNotification: NSNotification.Name](./didplaytoendtimenotification.md)
   A notification the system posts when a player item plays to its end time.
-- [class let failedToPlayToEndTimeNotification: NSNotification.Name](avplayeritem/failedtoplaytoendtimenotification.md)
+- [class let failedToPlayToEndTimeNotification: NSNotification.Name](./failedtoplaytoendtimenotification.md)
   A notification that the system posts when a player item fails to play to its end time.
-- [class let timeJumpedNotification: NSNotification.Name](avplayeritem/timejumpednotification.md)
+- [class let timeJumpedNotification: NSNotification.Name](./timejumpednotification.md)
   A notification the system posts when a player item’s time changes discontinuously.
-- [class let mediaSelectionDidChangeNotification: NSNotification.Name](avplayeritem/mediaselectiondidchangenotification.md)
+- [class let mediaSelectionDidChangeNotification: NSNotification.Name](./mediaselectiondidchangenotification.md)
   A notification the player item posts when its media selection changes.
-- [class let recommendedTimeOffsetFromLiveDidChangeNotification: NSNotification.Name](avplayeritem/recommendedtimeoffsetfromlivedidchangenotification.md)
+- [class let recommendedTimeOffsetFromLiveDidChangeNotification: NSNotification.Name](./recommendedtimeoffsetfromlivedidchangenotification.md)
   A notification the player item posts when its offset from the live time changes.
-- [class let newAccessLogEntryNotification: NSNotification.Name](avplayeritem/newaccesslogentrynotification.md)
+- [class let newAccessLogEntryNotification: NSNotification.Name](./newaccesslogentrynotification.md)
   A notification the system posts when a player item adds a new entry to its access log.
-- [class let newErrorLogEntryNotification: NSNotification.Name](avplayeritem/newerrorlogentrynotification.md)
+- [class let newErrorLogEntryNotification: NSNotification.Name](./newerrorlogentrynotification.md)
   A notification the system posts when a player item adds a new entry to its error log.
 
 

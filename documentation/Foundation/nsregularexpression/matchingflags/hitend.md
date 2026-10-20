@@ -1,7 +1,8 @@
 # hitEnd
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Set when the current match operation reached the end of the search range.
 
@@ -20,15 +21,20 @@ Set when the current match operation reached the end of the search range.
 static var hitEnd: NSRegularExpression.MatchingFlags { get }
 ```
 
+```c
+NSMatchingHitEnd
+```
+
 ## See Also
 
-- [static var progress: NSRegularExpression.MatchingFlags](nsregularexpression/matchingflags/progress.md)
+### Constants
+- [static var progress: NSRegularExpression.MatchingFlags](./progress.md)
   Set when the Block is called to report progress during a long-running match operation.
-- [static var completed: NSRegularExpression.MatchingFlags](nsregularexpression/matchingflags/completed.md)
+- [static var completed: NSRegularExpression.MatchingFlags](./completed.md)
   Set when the Block is called after matching has completed.
-- [static var requiredEnd: NSRegularExpression.MatchingFlags](nsregularexpression/matchingflags/requiredend.md)
+- [static var requiredEnd: NSRegularExpression.MatchingFlags](./requiredend.md)
   Set when the current match depended on the location of the end of the search range.
-- [static var internalError: NSRegularExpression.MatchingFlags](nsregularexpression/matchingflags/internalerror.md)
+- [static var internalError: NSRegularExpression.MatchingFlags](./internalerror.md)
   Set when matching failed due to an internal error.
 
 

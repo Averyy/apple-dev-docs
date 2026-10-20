@@ -1,7 +1,8 @@
 # ComputeNodeGraph.Node
 
 **Framework**: Compute Graph  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -10,7 +11,7 @@
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -21,36 +22,36 @@ struct Node
 ## Topics
 
 ### Initializers
-- [init(definition: ComputeNodeGraph.NodeDefinition, label: String?)](computenodegraph/node/init(definition:label:).md)
+- [init(definition: ComputeNodeGraph.NodeDefinition, label: String?)](./node/init%28definition,label%29.md)
 ### Instance Properties
-- [var definition: ComputeNodeGraph.NodeDefinition](computenodegraph/node/definition.md)
-- [var kind: ComputeNodeGraph.Node.Kind](computenodegraph/node/kind-swift.property.md)
+- [var definition: ComputeNodeGraph.NodeDefinition](./node/definition.md)
+- [var kind: ComputeNodeGraph.Node.Kind](./node/kind-swift.property.md)
   Type of the node
-- [var label: String?](computenodegraph/node/label.md)
+- [var label: String?](./node/label.md)
   Optional user-provided label for the node
-- [var metadata: ComputeNodeGraph.Metadata?](computenodegraph/node/metadata.md)
+- [var metadata: ComputeNodeGraph.Metadata?](./node/metadata.md)
   Node metadata – data which is not needed during compilation but might be useful at edit time.
-- [var uniforms: [Data?]](computenodegraph/node/uniforms.md)
+- [var uniforms: [Data?]](./node/uniforms.md)
   Uniform values for the node.
 ### Instance Methods
-- [func input<V>(at: Int) -> V?](computenodegraph/node/input(at:).md)
-- [func input<V>(named: String) -> V?](computenodegraph/node/input(named:).md)
-- [func inputData(named: String) -> Data?](computenodegraph/node/inputdata(named:).md)
-- [func setInput(String, String) -> Bool](computenodegraph/node/setinput(_:_:)-2ittk.md)
-- [func setInput(String, Data) -> Bool](computenodegraph/node/setinput(_:_:)-35srn.md)
-- [func setInput(String, Bool) -> Bool](computenodegraph/node/setinput(_:_:)-3yk57.md)
-- [func setInput<V>(String, V) -> Bool](computenodegraph/node/setinput(_:_:)-9n5yb.md)
-- [func setInput<V>(at: Int, V)](computenodegraph/node/setinput(at:_:)-95j9n.md)
-- [func setInput(at: Int, Data?)](computenodegraph/node/setinput(at:_:)-9xg3z.md)
+- [func input<V>(at: Int) -> V?](./node/input%28at%29.md)
+- [func input<V>(named: String) -> V?](./node/input%28named%29.md)
+- [func inputData(named: String) -> Data?](./node/inputdata%28named%29.md)
+- [func setInput(String, String) -> Bool](./node/setinput%28_,_%29-2ittk.md)
+- [func setInput(String, Data) -> Bool](./node/setinput%28_,_%29-35srn.md)
+- [func setInput(String, Bool) -> Bool](./node/setinput%28_,_%29-3yk57.md)
+- [func setInput<V>(String, V) -> Bool](./node/setinput%28_,_%29-9n5yb.md)
+- [func setInput<V>(at: Int, V)](./node/setinput%28at,_%29-95j9n.md)
+- [func setInput(at: Int, Data?)](./node/setinput%28at,_%29-9xg3z.md)
 ### Enumerations
-- [ComputeNodeGraph.Node.Kind](computenodegraph/node/kind-swift.enum.md)
+- [ComputeNodeGraph.Node.Kind](./node/kind-swift.enum.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

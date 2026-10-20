@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Force Feedback  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -15,7 +16,8 @@ init()
 
 ## See Also
 
-- [init(dwMagnitude: DWORD, lOffset: LONG, dwPhase: DWORD, dwPeriod: DWORD)](ffperiodic/init(dwmagnitude:loffset:dwphase:dwperiod:).md)
+### Initializers
+- [init(dwMagnitude: DWORD, lOffset: LONG, dwPhase: DWORD, dwPeriod: DWORD)](./init%28dwmagnitude,loffset,dwphase,dwperiod%29.md)
 
 
 ---

@@ -1,12 +1,15 @@
 # NSScroller.Arrow.decrementArrow
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The up or left scroll button.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: Scroller arrows are not used anymore.
 
 ## Declaration
 
@@ -14,9 +17,14 @@ The up or left scroll button.
 case decrementArrow
 ```
 
+```c
+NSScrollerDecrementArrow
+```
+
 ## See Also
 
-- [NSScroller.Arrow.incrementArrow](nsscroller/arrow/incrementarrow.md)
+### Constants
+- [NSScroller.Arrow.incrementArrow](./incrementarrow.md)
   The down or right scroll button.
 
 

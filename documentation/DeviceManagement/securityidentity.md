@@ -1,7 +1,8 @@
 # SecurityIdentity
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The declaration to configure an identity.
 
@@ -16,7 +17,7 @@ The declaration to configure an identity.
 
 ## Declaration
 
-```swift
+```
 object SecurityIdentity
 ```
 
@@ -24,7 +25,7 @@ object SecurityIdentity
 
 Specify `com.apple.configuration.security.identity` as the declaration type.
 
-##### Configuration Availability
+##### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -36,7 +37,7 @@ Specify `com.apple.configuration.security.identity` as the declaration type.
 | Allowed in user scope | macOS, Shared iPad |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration Example
+##### Configuration example
 
 This configuration installs a certificate identity on the device.
 
@@ -53,41 +54,50 @@ This configuration installs a certificate identity on the device.
 
 ## Properties
 
-- `AllowAllAppsAccess` (boolean): If `true`, apps can access the private key. Available: macOS 14+
+- `AllowAllAppsAccess` (boolean): If `true`, apps can access the private key.
+
+  Available: macOS 14+
+
+  **Default**: `false`
 - `CredentialAssetReference` (string) *(required)*: The identifier of an asset declaration that contains the identity to install.
-- `KeyIsExtractable` (boolean): If `true`, the private key is extractable in the keychain. Available: macOS 14+
+- `KeyIsExtractable` (boolean): If `true`, the private key is extractable in the keychain.
+
+  Available: macOS 14+
+
+  **Default**: `true`
 
 ## See Also
 
-- [object AccessibilitySettings](accessibilitysettings.md)
+### Configurations
+- [object AccessibilitySettings](./accessibilitysettings.md)
   The declaration to configure accessibility settings.
-- [object AccountCalDAV](accountcaldav.md)
+- [object AccountCalDAV](./accountcaldav.md)
   The declaration to configure a Calendar account.
-- [object AccountCardDAV](accountcarddav.md)
+- [object AccountCardDAV](./accountcarddav.md)
   The declaration to configure a Contacts account.
-- [object AccountExchange](accountexchange.md)
+- [object AccountExchange](./accountexchange.md)
   The declaration to configure an Exchange account.
-- [object AccountGoogle](accountgoogle.md)
+- [object AccountGoogle](./accountgoogle.md)
   The declaration to configure a Google account.
-- [object AccountLDAP](accountldap.md)
+- [object AccountLDAP](./accountldap.md)
   The declaration to configure a Lightweight Directory Access Protocol (LDAP) account.
-- [object AccountMail](accountmail.md)
+- [object AccountMail](./accountmail.md)
   The declaration to configure a Mail account.
-- [object AccountSettings](accountsettings.md)
+- [object AccountSettings](./accountsettings.md)
   The declaration to configure account settings.
-- [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
+- [object AccountSubscribedCalendar](./accountsubscribedcalendar.md)
   The declaration to configure a subscribed calendar.
-- [object AppManaged](appmanaged.md)
+- [object AppManaged](./appmanaged.md)
   The declaration to configure a managed app.
-- [object AppSettings](appsettings.md)
+- [object AppSettings](./appsettings.md)
   The declaration to configure app settings.
-- [object AudioAccessorySettings](audioaccessorysettings.md)
+- [object AudioAccessorySettings](./audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCaching](./contentcaching.md)
   The declaration to configure the Content Caching service.
-- [object DiskManagementSettings](diskmanagementsettings.md)
+- [object DiskManagementSettings](./diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
-- [object ExtensibleSSO](extensiblesso.md)
+- [object ExtensibleSSO](./extensiblesso.md)
   The declaration to configure Extensible Single Sign-On.
 
 

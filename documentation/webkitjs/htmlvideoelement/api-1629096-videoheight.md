@@ -1,7 +1,8 @@
 # videoHeight
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The native height of the video in CSS pixels. (read-only)
 
@@ -11,7 +12,7 @@ The native height of the video in CSS pixels. (read-only)
 
 ## Declaration
 
-```swift
+```
 readonly attribute unsigned long videoHeight;
 ```
 
@@ -21,7 +22,8 @@ If no video data is available, this property is `0`.
 
 ## See Also
 
-- [videoWidth](htmlvideoelement/1631691-videowidth.md)
+### Getting State
+- [videoWidth](./api-1631691-videowidth.md)
   The native width of the video in CSS pixels. (read-only)
 
 

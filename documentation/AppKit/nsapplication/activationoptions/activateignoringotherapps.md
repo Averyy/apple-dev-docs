@@ -1,12 +1,15 @@
 # activateIgnoringOtherApps
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The application is activated regardless of the currently active app.
 
 **Availability**:
-- macOS 10.6+
+- macOS 10.6+ - Deprecated in 14.0
+
+> **Deprecated**: Use NSApplication method [`activate()`](../activate%28%29.md) instead.
 
 ## Declaration
 
@@ -14,15 +17,20 @@ The application is activated regardless of the currently active app.
 static var activateIgnoringOtherApps: NSApplication.ActivationOptions { get }
 ```
 
+```c
+NSApplicationActivateIgnoringOtherApps
+```
+
 #### Discussion
 
-By default, activation deactivates the calling app (assuming it was active), and then the new app is activated only if there’s no currently active application. This prevents the new app from stealing focus from the user, if the app is slow to activate and the user has switched to a different app in the interim. However, if you specify [`activateIgnoringOtherApps`](nsapplication/activationoptions/activateignoringotherapps.md), the application is activated regardless of the currently active app, potentially stealing focus from the user.
+By default, activation deactivates the calling app (assuming it was active), and then the new app is activated only if there’s no currently active application. This prevents the new app from stealing focus from the user, if the app is slow to activate and the user has switched to a different app in the interim. However, if you specify [`activateIgnoringOtherApps`](./activateignoringotherapps.md), the application is activated regardless of the currently active app, potentially stealing focus from the user.
 
 > ❗ **Important**:  You should **rarely pass this flag** because stealing key focus produces a poor user experience.
 
 ## See Also
 
-- [static var activateAllWindows: NSApplication.ActivationOptions](nsapplication/activationoptions/activateallwindows.md)
+### Options
+- [static var activateAllWindows: NSApplication.ActivationOptions](./activateallwindows.md)
   By default, activation brings only the main and key windows forward.  If you specify NSApplicationActivateAllWindows, all of the application’s windows are brought forward.
 
 

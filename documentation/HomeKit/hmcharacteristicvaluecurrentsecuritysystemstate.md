@@ -1,7 +1,8 @@
 # HMCharacteristicValueCurrentSecuritySystemState
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the current security system state.
 
@@ -19,31 +20,35 @@ Possible values for the current security system state.
 enum HMCharacteristicValueCurrentSecuritySystemState
 ```
 
+```c
+enum HMCharacteristicValueCurrentSecuritySystemState : NSInteger;
+```
+
 ## Topics
 
 ### Security System States
-- [HMCharacteristicValueCurrentSecuritySystemState.stayArm](hmcharacteristicvaluecurrentsecuritysystemstate/stayarm.md)
+- [HMCharacteristicValueCurrentSecuritySystemState.stayArm](./hmcharacteristicvaluecurrentsecuritysystemstate/stayarm.md)
   The home is occupied and residents are active.
-- [HMCharacteristicValueCurrentSecuritySystemState.awayArm](hmcharacteristicvaluecurrentsecuritysystemstate/awayarm.md)
+- [HMCharacteristicValueCurrentSecuritySystemState.awayArm](./hmcharacteristicvaluecurrentsecuritysystemstate/awayarm.md)
   The home is unoccupied.
-- [HMCharacteristicValueCurrentSecuritySystemState.nightArm](hmcharacteristicvaluecurrentsecuritysystemstate/nightarm.md)
+- [HMCharacteristicValueCurrentSecuritySystemState.nightArm](./hmcharacteristicvaluecurrentsecuritysystemstate/nightarm.md)
   The home is occupied and residents are sleeping.
-- [HMCharacteristicValueCurrentSecuritySystemState.disarmed](hmcharacteristicvaluecurrentsecuritysystemstate/disarmed.md)
+- [HMCharacteristicValueCurrentSecuritySystemState.disarmed](./hmcharacteristicvaluecurrentsecuritysystemstate/disarmed.md)
   The security system is disarmed.
-- [HMCharacteristicValueCurrentSecuritySystemState.triggered](hmcharacteristicvaluecurrentsecuritysystemstate/triggered.md)
+- [HMCharacteristicValueCurrentSecuritySystemState.triggered](./hmcharacteristicvaluecurrentsecuritysystemstate/triggered.md)
   the security system is triggered.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluecurrentsecuritysystemstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluecurrentsecuritysystemstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

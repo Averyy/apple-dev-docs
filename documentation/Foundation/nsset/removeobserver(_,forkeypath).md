@@ -1,7 +1,8 @@
 # removeObserver(_:forKeyPath:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Raises an exception.
 
@@ -20,6 +21,10 @@ Raises an exception.
 func removeObserver(_ observer: NSObject, forKeyPath keyPath: String)
 ```
 
+```objc
+- (void) removeObserver:(NSObject *) observer forKeyPath:(NSString *) keyPath;
+```
+
 #### Discussion
 
 `NSSet` objects are not observable, so this method raises an exception when invoked on an `NSSet` object. Instead of observing a set, observe the unordered to-many relationship for which the set is the collection of related objects.
@@ -31,9 +36,10 @@ func removeObserver(_ observer: NSObject, forKeyPath keyPath: String)
 
 ## See Also
 
-- [func addObserver(NSObject, forKeyPath: String, options: NSKeyValueObservingOptions, context: UnsafeMutableRawPointer?)](nsset/addobserver(_:forkeypath:options:context:).md)
+### Key-Value Observing
+- [func addObserver(NSObject, forKeyPath: String, options: NSKeyValueObservingOptions, context: UnsafeMutableRawPointer?)](./addobserver%28_,forkeypath,options,context%29.md)
   Raises an exception.
-- [func removeObserver(NSObject, forKeyPath: String, context: UnsafeMutableRawPointer?)](nsset/removeobserver(_:forkeypath:context:).md)
+- [func removeObserver(NSObject, forKeyPath: String, context: UnsafeMutableRawPointer?)](./removeobserver%28_,forkeypath,context%29.md)
   Raises an exception.
 
 

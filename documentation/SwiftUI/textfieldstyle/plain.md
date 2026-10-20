@@ -1,7 +1,8 @@
 # plain
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A text field style with no decoration.
 
@@ -21,12 +22,15 @@ A text field style with no decoration.
 static var plain: PlainTextFieldStyle { get }
 ```
 
+Available when `Self` is `PlainTextFieldStyle`.
+
 ## See Also
 
-- [static var automatic: DefaultTextFieldStyle](textfieldstyle/automatic.md)
+### Getting built-in text field styles
+- [static var automatic: DefaultTextFieldStyle](./automatic.md)
   The default text field style, based on the text field’s context.
-- [static var bordered: BorderedTextFieldStyle](textfieldstyle/bordered.md)
-  A text field style with a system-defined border whose shape is determined by the [`textInputBorderShape(_:)`](view/textinputbordershape(_:).md) modifier.
+- [static var bordered: BorderedTextFieldStyle](./bordered.md)
+  A text field style with a system-defined border whose shape is determined by the [`textInputBorderShape(_:)`](../view/textinputbordershape%28_%29.md) modifier.
 
 
 ---

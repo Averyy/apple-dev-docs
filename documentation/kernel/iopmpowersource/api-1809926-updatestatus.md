@@ -7,7 +7,7 @@ Must be called by physical battery controller when battery state has changed sig
 
 ## Declaration
 
-```swift
+```cpp
 virtual void updateStatus(
  void);
 ```
@@ -18,9 +18,10 @@ The system will not poll this object for battery updates. Rather \ the battery's
 
 ## See Also
 
-- [powerSource](iopmpowersource/1809904-powersource.md)
+### Miscellaneous
+- [powerSource](./api-1809904-powersource.md)
   Creates a new IOPMPowerSource nub. Must be attached to IORegistry, and registered by provider.
-- [setPSProperty](iopmpowersource/1809917-setpsproperty.md)
+- [setPSProperty](./api-1809917-setpsproperty.md)
 
 
 ---

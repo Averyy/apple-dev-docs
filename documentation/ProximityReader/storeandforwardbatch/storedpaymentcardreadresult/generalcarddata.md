@@ -1,7 +1,8 @@
 # generalCardData
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Base64-encoded string that contains general cardholder and terminal data in tag-length-value (TLV) format.
 

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a default set of QUIC options, without specifying a set of supported Application-Layer Protocol Negotiation values.
 
@@ -22,29 +23,30 @@ init()
 
 ## See Also
 
-- [convenience init(alpn: [String])](nwprotocolquic/options/init(alpn:).md)
+### Customizing Connection Options
+- [convenience init(alpn: [String])](./init%28alpn%29.md)
   Initializes a default set of QUIC options along with a set of supported Application-Layer Protocol Negotiation values.
-- [var alpn: [String]](nwprotocolquic/options/alpn.md)
+- [var alpn: [String]](./alpn.md)
   A set of supported Application-Layer Protocol Negotiation values.
-- [var idleTimeout: Int](nwprotocolquic/options/idletimeout.md)
+- [var idleTimeout: Int](./idletimeout.md)
   The idle timeout for the QUIC connection, in milliseconds.
-- [var initialMaxData: Int](nwprotocolquic/options/initialmaxdata.md)
+- [var initialMaxData: Int](./initialmaxdata.md)
   A QUIC connection’s initial maximum data transport parameter.
-- [var initialMaxStreamDataBidirectionalLocal: Int](nwprotocolquic/options/initialmaxstreamdatabidirectionallocal.md)
+- [var initialMaxStreamDataBidirectionalLocal: Int](./initialmaxstreamdatabidirectionallocal.md)
   A QUIC connection’s initial maximum stream data limit for locally-initiated bidirectional streams.
-- [var initialMaxStreamDataBidirectionalRemote: Int](nwprotocolquic/options/initialmaxstreamdatabidirectionalremote.md)
+- [var initialMaxStreamDataBidirectionalRemote: Int](./initialmaxstreamdatabidirectionalremote.md)
   A QUIC connection’s initial maximum stream data limit for remote-initiated bidirectional streams.
-- [var initialMaxStreamDataUnidirectional: Int](nwprotocolquic/options/initialmaxstreamdataunidirectional.md)
+- [var initialMaxStreamDataUnidirectional: Int](./initialmaxstreamdataunidirectional.md)
   A QUIC connection’s initial maximum stream data limit for unidirectional streams.
-- [var initialMaxStreamsBidirectional: Int](nwprotocolquic/options/initialmaxstreamsbidirectional.md)
+- [var initialMaxStreamsBidirectional: Int](./initialmaxstreamsbidirectional.md)
   A QUIC connection’s initial maximum number of bidirectional streams.
-- [var initialMaxStreamsUnidirectional: Int](nwprotocolquic/options/initialmaxstreamsunidirectional.md)
+- [var initialMaxStreamsUnidirectional: Int](./initialmaxstreamsunidirectional.md)
   A QUIC connection’s initial maximum number of unidirectional streams.
-- [var maxDatagramFrameSize: Int](nwprotocolquic/options/maxdatagramframesize.md)
+- [var maxDatagramFrameSize: Int](./maxdatagramframesize.md)
   A QUIC connection’s maximum DATAGRAM frame size.
-- [var maxUDPPayloadSize: Int](nwprotocolquic/options/maxudppayloadsize.md)
+- [var maxUDPPayloadSize: Int](./maxudppayloadsize.md)
   The maximum length of a QUIC packet that can be received on a connection, in bytes.
-- [var securityProtocolOptions: sec_protocol_options_t](nwprotocolquic/options/securityprotocoloptions.md)
+- [var securityProtocolOptions: sec_protocol_options_t](./securityprotocoloptions.md)
   The handshake security options QUIC uses.
 
 

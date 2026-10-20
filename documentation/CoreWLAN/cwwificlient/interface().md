@@ -1,7 +1,8 @@
 # interface()
 
 **Framework**: Core WLAN  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the default Wi-Fi interface.
 
@@ -14,17 +15,22 @@ Returns the default Wi-Fi interface.
 func interface() -> CWInterface?
 ```
 
+```objc
+- (CWInterface *) interface;
+```
+
 #### Return Value
 
-The [`CWInterface`](cwinterface.md) object that represents the default Wi-Fi interface.
+The [`CWInterface`](../cwinterface.md) object that represents the default Wi-Fi interface.
 
 ## See Also
 
-- [func interface(withName: String?) -> CWInterface?](cwwificlient/interface(withname:).md)
+### Getting Interfaces
+- [func interface(withName: String?) -> CWInterface?](./interface%28withname%29.md)
   Returns the Wi-Fi interface with the given name.
-- [func interfaces() -> [CWInterface]?](cwwificlient/interfaces.md)
+- [func interfaces() -> [CWInterface]?](./interfaces%28%29.md)
   Returns all available Wi-Fi interfaces.
-- [class func interfaceNames() -> [String]?](cwwificlient/interfacenames-swift.type.method.md)
+- [class func interfaceNames() -> [String]?](./interfacenames%28%29-swift.type.method.md)
   Returns the list of the names of available Wi-Fi interfaces.
 
 

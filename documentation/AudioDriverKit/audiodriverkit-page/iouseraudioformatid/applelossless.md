@@ -1,7 +1,8 @@
 # AppleLossless
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The Apple Lossless format.
 
@@ -10,7 +11,7 @@ The Apple Lossless format.
 
 ## Declaration
 
-```swift
+```c
 AppleLossless
 ```
 

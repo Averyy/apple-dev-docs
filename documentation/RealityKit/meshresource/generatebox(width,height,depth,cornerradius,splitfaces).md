@@ -1,7 +1,8 @@
 # generateBox(width:height:depth:cornerRadius:splitFaces:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a box mesh from a width, height, depth and a corner radius, with the ability to assign different materials to each face.
 
@@ -11,7 +12,7 @@ Creates a box mesh from a width, height, depth and a corner radius, with the abi
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -47,11 +48,12 @@ When `splitFaces` is `true`, the box contains six submeshes, one per face, allow
 
 ## See Also
 
-- [static func generateBox(size: Float, cornerRadius: Float) -> MeshResource](meshresource/generatebox(size:cornerradius:)-8em0v.md)
+### Creating a box
+- [static func generateBox(size: Float, cornerRadius: Float) -> MeshResource](./generatebox%28size,cornerradius%29-8em0v.md)
   Creates a box mesh from a length for the box’s width, height, and depth, and a radius for the corners.
-- [static func generateBox(size: SIMD3<Float>, cornerRadius: Float) -> MeshResource](meshresource/generatebox(size:cornerradius:)-2ovma.md)
+- [static func generateBox(size: SIMD3<Float>, cornerRadius: Float) -> MeshResource](./generatebox%28size,cornerradius%29-2ovma.md)
   Creates a box mesh from a vector of three scalar values that represent width, height, and depth, respectively, and a radius for the corners.
-- [static func generateBox(size: SIMD3<Float>, majorCornerRadius: Float, minorCornerRadius: Float) -> MeshResource](meshresource/generatebox(size:majorcornerradius:minorcornerradius:).md)
+- [static func generateBox(size: SIMD3<Float>, majorCornerRadius: Float, minorCornerRadius: Float) -> MeshResource](./generatebox%28size,majorcornerradius,minorcornerradius%29.md)
   Creates a box mesh from a vector of three scalar values that represent width, height, and depth, respectively, and radii for the corners.
 
 

@@ -1,7 +1,8 @@
 # GaussianSplatResource.ProjectionMode.tangential
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Projects splats using a tangential approximation, which can reduce artifacts.
 

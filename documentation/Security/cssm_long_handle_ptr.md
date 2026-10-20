@@ -1,7 +1,8 @@
 # CSSM_LONG_HANDLE_PTR
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias CSSM_LONG_HANDLE_PTR = UnsafeMutablePointer<uint64>
+```
+
+```c
+typedef uint64 * CSSM_LONG_HANDLE_PTR;
 ```
 
 

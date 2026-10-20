@@ -1,7 +1,8 @@
 # init(previousServerChangeToken:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an operation for fetching database changes.
 
@@ -20,11 +21,15 @@ Creates an operation for fetching database changes.
 convenience init(previousServerChangeToken: CKServerChangeToken?)
 ```
 
+```objc
+- (instancetype) initWithPreviousServerChangeToken:(CKServerChangeToken *) previousServerChangeToken;
+```
+
 #### Discussion
 
-After creating the operation, assign a handler to the [`fetchDatabaseChangesCompletionBlock`](ckfetchdatabasechangesoperation/fetchdatabasechangescompletionblock.md) property so that you can process the operation’s results.
+After creating the operation, assign a handler to the [`fetchDatabaseChangesCompletionBlock`](./fetchdatabasechangescompletionblock.md) property so that you can process the operation’s results.
 
-If this is your first fetch, or if you want to refetch all zones, pass `nil` for the change token. If you provide a change token from a previous [`CKFetchDatabaseChangesOperation`](ckfetchdatabasechangesoperation.md), CloudKit returns only the zones with changes since that token. The per-database [`CKServerChangeToken`](ckserverchangetoken.md) isn’t the same as the per-record zone [`CKServerChangeToken`](ckserverchangetoken.md) from [`CKFetchRecordZoneChangesOperation`](ckfetchrecordzonechangesoperation.md).
+If this is your first fetch, or if you want to refetch all zones, pass `nil` for the change token. If you provide a change token from a previous [`CKFetchDatabaseChangesOperation`](../ckfetchdatabasechangesoperation.md), CloudKit returns only the zones with changes since that token. The per-database [`CKServerChangeToken`](../ckserverchangetoken.md) isn’t the same as the per-record zone [`CKServerChangeToken`](../ckserverchangetoken.md) from [`CKFetchRecordZoneChangesOperation`](../ckfetchrecordzonechangesoperation.md).
 
 ## Parameters
 
@@ -32,7 +37,8 @@ If this is your first fetch, or if you want to refetch all zones, pass `nil` for
 
 ## See Also
 
-- [init()](ckfetchdatabasechangesoperation/init.md)
+### Creating an Operation
+- [init()](./init%28%29.md)
   Creates an empty fetch database changes operation.
 
 

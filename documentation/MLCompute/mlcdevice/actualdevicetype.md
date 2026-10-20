@@ -1,16 +1,17 @@
 # actualDeviceType
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The active device.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
+- iOS 15.0+ - Deprecated in 17.4
+- iPadOS 15.0+ - Deprecated in 17.4
+- Mac Catalyst 15.0+ - Deprecated in 17.4
+- macOS 12.0+ - Deprecated in 14.3
+- tvOS 15.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,11 +19,16 @@ The active device.
 var actualDeviceType: MLCDeviceType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MLCDeviceType actualDeviceType;
+```
+
 ## See Also
 
-- [var type: MLCDeviceType](mlcdevice/type.md)
+### Inspecting Devices
+- [var type: MLCDeviceType](./type.md)
   The type you specify when creating the device.
-- [var gpuDevices: [any MTLDevice]](mlcdevice/gpudevices.md)
+- [var gpuDevices: [any MTLDevice]](./gpudevices.md)
   An array that contains the specific Metal devices you use to execute neural networks.
 
 

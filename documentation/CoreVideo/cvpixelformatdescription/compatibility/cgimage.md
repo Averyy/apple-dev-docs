@@ -1,7 +1,8 @@
 # cgImage
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The pixel format is compatible with a Core Graphics image.
 

@@ -1,7 +1,8 @@
 # lines
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A non-blocking sequence of newline-separated `Strings` created by decoding the elements of `self` as UTF8.
 
@@ -20,17 +21,20 @@ A non-blocking sequence of newline-separated `Strings` created by decoding the e
 var lines: AsyncLineSequence<Self> { get }
 ```
 
+Available when `Element` is `UInt8`.
+
 ## See Also
 
-- [var characters: AsyncCharacterSequence<Self>](asyncsequence/characters.md)
+### Adapting Textual Sequences
+- [var characters: AsyncCharacterSequence<Self>](./characters.md)
   A non-blocking sequence of `Characters` created by decoding the elements of `self` as UTF8.
-- [struct AsyncCharacterSequence](../foundation/asynccharactersequence.md)
+- [struct AsyncCharacterSequence](../../Foundation/asynccharactersequence.md)
   An asynchronous sequence of characters.
-- [var unicodeScalars: AsyncUnicodeScalarSequence<Self>](asyncsequence/unicodescalars.md)
+- [var unicodeScalars: AsyncUnicodeScalarSequence<Self>](./unicodescalars.md)
   A non-blocking sequence of `UnicodeScalars` created by decoding the elements of `self` as UTF8.
-- [struct AsyncUnicodeScalarSequence](../foundation/asyncunicodescalarsequence.md)
+- [struct AsyncUnicodeScalarSequence](../../Foundation/asyncunicodescalarsequence.md)
   An asychronous sequence of Unicode scalar values.
-- [struct AsyncLineSequence](../foundation/asynclinesequence.md)
+- [struct AsyncLineSequence](../../Foundation/asynclinesequence.md)
   An asynchronous sequence of lines of text.
 
 

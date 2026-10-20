@@ -1,7 +1,8 @@
 # UITabBarController.Sidebar.Animating
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 18.0+
@@ -16,29 +17,34 @@
 protocol Animating : NSObjectProtocol
 ```
 
+```objc
+@protocol UITabBarControllerSidebarAnimating <NSObject>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func addAnimations(() -> Void)](uitabbarcontroller/sidebar-swift.class/animating/addanimations(_:).md)
-- [func addCompletion(() -> Void)](uitabbarcontroller/sidebar-swift.class/animating/addcompletion(_:).md)
+- [func addAnimations(() -> Void)](./animating/addanimations%28_%29.md)
+- [func addCompletion(() -> Void)](./animating/addcompletion%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var mode: UITabBarController.Mode](uitabbarcontroller/mode-swift.property.md)
+### Supporting the sidebar
+- [var mode: UITabBarController.Mode](../mode-swift.property.md)
   The display mode for a tab bar.
-- [UITabBarController.Mode](uitabbarcontroller/mode-swift.enum.md)
+- [UITabBarController.Mode](../mode-swift.enum.md)
   A tab bar’s display mode.
-- [var sidebar: UITabBarController.Sidebar](uitabbarcontroller/sidebar-swift.property.md)
+- [var sidebar: UITabBarController.Sidebar](../sidebar-swift.property.md)
   A tab bar’s corresponding sidebar.
-- [UITabBarController.Sidebar](uitabbarcontroller/sidebar-swift.class.md)
+- [UITabBarController.Sidebar](../sidebar-swift.class.md)
   An object for managing and configuring the sidebar.
-- [class UITabSidebarItem](uitabsidebaritem.md)
-- [UITabSidebarItem.Request](uitabsidebaritem/request.md)
+- [class UITabSidebarItem](../../uitabsidebaritem.md)
+- [UITabSidebarItem.Request](../../uitabsidebaritem/request.md)
 
 
 ---

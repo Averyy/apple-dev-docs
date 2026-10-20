@@ -1,7 +1,8 @@
 # conjugate(tensor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the complex conjugate of the input tensor elements.
 
@@ -17,6 +18,10 @@ Returns the complex conjugate of the input tensor elements.
 
 ```swift
 func conjugate(tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) conjugateWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

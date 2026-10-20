@@ -1,12 +1,15 @@
 # SecTransformMetaAttributeType.stream
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The attribute expects stream operation.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 13.0
+
+> **Deprecated**: SecTransform is no longer supported
 
 ## Declaration
 
@@ -14,9 +17,13 @@ The attribute expects stream operation.
 case stream
 ```
 
+```c
+kSecTransformMetaAttributeStream
+```
+
 #### Discussion
 
-Specifies if the attribute should expect a series of values ending with a `NULL` to specify the end of the data stream. This metadata has a default value of [`true`](https://developer.apple.com/documentation/swift/true) for the input and output attributes, but is [`false`](https://developer.apple.com/documentation/swift/false) for all other attributes.
+Specifies if the attribute should expect a series of values ending with a `NULL` to specify the end of the data stream. This metadata has a default value of [`true`](../../Swift/true.md) for the input and output attributes, but is [`false`](../../Swift/false.md) for all other attributes.
 
 
 ---

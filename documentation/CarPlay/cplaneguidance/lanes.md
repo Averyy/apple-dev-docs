@@ -1,7 +1,8 @@
 # lanes
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of lane objects, each describing a single lane.
 
@@ -16,9 +17,14 @@ An array of lane objects, each describing a single lane.
 var lanes: [CPLane] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<CPLane *> * lanes;
+```
+
 ## See Also
 
-- [var instructionVariants: [String]](cplaneguidance/instructionvariants.md)
+### Properties
+- [var instructionVariants: [String]](./instructionvariants.md)
   An array of strings that represent the instruction for this lane guidance, arranged from most- to least-preferred.
 
 

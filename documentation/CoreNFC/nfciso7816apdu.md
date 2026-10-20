@@ -1,7 +1,8 @@
 # NFCISO7816APDU
 
 **Framework**: Core NFC  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object representing an ISO 7816 application protocol data unit (APDU).
 
@@ -16,50 +17,55 @@ An object representing an ISO 7816 application protocol data unit (APDU).
 class NFCISO7816APDU
 ```
 
+```objc
+@interface NFCISO7816APDU : NSObject
+```
+
 ## Topics
 
 ### Creating an APDU Object
-- [init(instructionClass: UInt8, instructionCode: UInt8, p1Parameter: UInt8, p2Parameter: UInt8, data: Data, expectedResponseLength: Int)](nfciso7816apdu/init(instructionclass:instructioncode:p1parameter:p2parameter:data:expectedresponselength:).md)
+- [init(instructionClass: UInt8, instructionCode: UInt8, p1Parameter: UInt8, p2Parameter: UInt8, data: Data, expectedResponseLength: Int)](./nfciso7816apdu/init%28instructionclass,instructioncode,p1parameter,p2parameter,data,expectedresponselength%29.md)
   Creates an APDU object with the instruction class and code, parameter bytes, and expected response length.
-- [init?(data: Data)](nfciso7816apdu/init(data:).md)
+- [init?(data: Data)](./nfciso7816apdu/init%28data%29.md)
   Creates an APDU object with the data buffer containing the full APDU.
 ### Getting the Instruction Bytes
-- [var instructionClass: UInt8](nfciso7816apdu/instructionclass.md)
+- [var instructionClass: UInt8](./nfciso7816apdu/instructionclass.md)
   The value of the instruction class (CLA) byte.
-- [var instructionCode: UInt8](nfciso7816apdu/instructioncode.md)
+- [var instructionCode: UInt8](./nfciso7816apdu/instructioncode.md)
   The value of the instruction code (INS) byte.
 ### Get the Parameter Bytes
-- [var p1Parameter: UInt8](nfciso7816apdu/p1parameter.md)
+- [var p1Parameter: UInt8](./nfciso7816apdu/p1parameter.md)
   The value of the P1 parameter byte.
-- [var p2Parameter: UInt8](nfciso7816apdu/p2parameter.md)
+- [var p2Parameter: UInt8](./nfciso7816apdu/p2parameter.md)
   The value of the P2 parameter byte.
 ### Getting the APDU Data
-- [var data: Data?](nfciso7816apdu/data.md)
+- [var data: Data?](./nfciso7816apdu/data.md)
   The data to transmit.
 ### Getting the Expected Response Length
-- [var expectedResponseLength: Int](nfciso7816apdu/expectedresponselength.md)
+- [var expectedResponseLength: Int](./nfciso7816apdu/expectedresponselength.md)
   The expected response data length (Le) in bytes.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func sendCommand(apdu: NFCISO7816APDU, resultHandler: (Result<NFCISO7816ResponseAPDU, any Error>) -> Void)](nfciso7816tag/sendcommand(apdu:resulthandler:).md)
+### Sending a Command
+- [func sendCommand(apdu: NFCISO7816APDU, resultHandler: (Result<NFCISO7816ResponseAPDU, any Error>) -> Void)](./nfciso7816tag/sendcommand%28apdu,resulthandler%29.md)
   Sends an application protocol data unit (APDU) to the tag and receives a response APDU.
-- [func sendCommand(apdu: NFCISO7816APDU, completionHandler: (Data, UInt8, UInt8, (any Error)?) -> Void)](nfciso7816tag/sendcommand(apdu:completionhandler:).md)
+- [func sendCommand(apdu: NFCISO7816APDU, completionHandler: (Data, UInt8, UInt8, (any Error)?) -> Void)](./nfciso7816tag/sendcommand%28apdu,completionhandler%29.md)
   Sends an application protocol data unit (APDU) to the tag and receives a response APDU.
-- [struct NFCISO7816ResponseAPDU](nfciso7816responseapdu.md)
+- [struct NFCISO7816ResponseAPDU](./nfciso7816responseapdu.md)
   An object containing the response from the tag.
 
 

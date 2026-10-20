@@ -2,6 +2,7 @@
 
 **Framework**: Core Haptics  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether to silences all haptic and audio output from the player.
@@ -18,6 +19,10 @@ A Boolean value that indicates whether to silences all haptic and audio output f
 
 ```swift
 var isMuted: Bool { get set }
+```
+
+```objc
+@property (readwrite) BOOL isMuted;
 ```
 
 

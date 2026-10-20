@@ -1,7 +1,8 @@
 # Unicode.GeneralCategory.modifierLetter
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A modifier letter.
 
@@ -22,7 +23,7 @@ case modifierLetter
 
 #### Discussion
 
-This value corresponds to the category `Modifier_Letter` (abbreviated `Lm`) in the [`Unicode Standard`](https://developer.apple.comhttps://unicode.org/reports/tr44/#General_Category_Values).
+This value corresponds to the category `Modifier_Letter` (abbreviated `Lm`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 
 
 ---

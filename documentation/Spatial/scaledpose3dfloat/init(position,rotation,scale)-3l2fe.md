@@ -1,7 +1,8 @@
 # init(position:rotation:scale:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a pose from single-precision simd primitives that describe the position, rotation, and scale.
 

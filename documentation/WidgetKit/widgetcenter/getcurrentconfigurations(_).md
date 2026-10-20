@@ -1,7 +1,8 @@
 # getCurrentConfigurations(_:)
 
 **Framework**: WidgetKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves information about user-configured widgets.
 
@@ -22,7 +23,7 @@ func getCurrentConfigurations(_ completion: @escaping @Sendable (Result<[WidgetI
 
 ## Mentions
 
-- [Making a configurable widget](making-a-configurable-widget.md)
+- [Making a configurable widget](../making-a-configurable-widget.md)
 
 ## Parameters
 
@@ -30,9 +31,10 @@ func getCurrentConfigurations(_ completion: @escaping @Sendable (Result<[WidgetI
 
 ## See Also
 
-- [static let shared: WidgetCenter](widgetcenter/shared.md)
+### Getting Widget Information
+- [static let shared: WidgetCenter](./shared.md)
   The shared widget center.
-- [WidgetCenter.UserInfoKey](widgetcenter/userinfokey.md)
+- [WidgetCenter.UserInfoKey](./userinfokey.md)
   An object that defines keys for accessing information in a user info dictionary.
 
 

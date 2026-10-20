@@ -1,14 +1,15 @@
 # mach_vm_address_ut
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 typedef mach_vm_address_t mach_vm_address_ut;
 ```
 

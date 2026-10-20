@@ -1,7 +1,8 @@
 # Delete a Rule
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Delete a matchmaking rule in a rule set.
 
@@ -14,13 +15,25 @@ Delete a matchmaking rule in a rule set.
 
 ## Parameters
 
+### Path Parameters
+
 - `id` (string) *(required)*: A unique identifier for the rule.
+
+## Responses
+
+- `204` No Content
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create a Rule](post-v1-gamecentermatchmakingrules.md)
+### Creating, modifying, and deleting rules
+- [Create a Rule](./post-v1-gamecentermatchmakingrules.md)
   Add a matchmaking rule to a rule set.
-- [Modify a Rule](patch-v1-gamecentermatchmakingrules-_id_.md)
+- [Modify a Rule](./patch-v1-gamecentermatchmakingrules-_id_.md)
   Update a specific matchmaking rule in a rule set.
 
 

@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A human-readable description of the anchor capability.
 

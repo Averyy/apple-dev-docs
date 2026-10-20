@@ -1,7 +1,8 @@
 # isUserAuthenticationEnabled
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current system user authentication enablement status.
 

@@ -1,14 +1,15 @@
 # fpu_ymmh1
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 struct xmm_reg fpu_ymmh1;
 ```
 

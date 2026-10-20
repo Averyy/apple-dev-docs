@@ -1,14 +1,15 @@
 # tDeviceRequestType
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 typedef enum tDeviceRequestType : unsigned int {
     ...
 } tDeviceRequestType;
@@ -17,9 +18,9 @@ typedef enum tDeviceRequestType : unsigned int {
 ## Topics
 
 ### Constants
-- [kRequestTypeClass](tdevicerequesttype/krequesttypeclass.md)
-- [kRequestTypeStandard](tdevicerequesttype/krequesttypestandard.md)
-- [kRequestTypeVendor](tdevicerequesttype/krequesttypevendor.md)
+- [kRequestTypeClass](./tdevicerequesttype/krequesttypeclass.md)
+- [kRequestTypeStandard](./tdevicerequesttype/krequesttypestandard.md)
+- [kRequestTypeVendor](./tdevicerequesttype/krequesttypevendor.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(name:defaultLocalization:platforms:pkgConfig:providers:products:traits:dependencies:targets:swiftLanguageModes:cLanguageStandard:cxxLanguageStandard:)
 
 **Framework**: PackageDescription  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a Swift package with configuration options you provide.
 
@@ -31,15 +32,16 @@ init(name: String, defaultLocalization: LanguageTag? = nil, platforms: [Supporte
 
 ## See Also
 
-- [init(name: String, defaultLocalization: LanguageTag?, platforms: [SupportedPlatform]?, pkgConfig: String?, providers: [SystemPackageProvider]?, products: [Product], dependencies: [Package.Dependency], targets: [Target], swiftLanguageModes: [SwiftLanguageMode]?, cLanguageStandard: CLanguageStandard?, cxxLanguageStandard: CXXLanguageStandard?)](package/init(name:defaultlocalization:platforms:pkgconfig:providers:products:dependencies:targets:swiftlanguagemodes:clanguagestandard:cxxlanguagestandard:).md)
+### Creating a Package
+- [init(name: String, defaultLocalization: LanguageTag?, platforms: [SupportedPlatform]?, pkgConfig: String?, providers: [SystemPackageProvider]?, products: [Product], dependencies: [Package.Dependency], targets: [Target], swiftLanguageModes: [SwiftLanguageMode]?, cLanguageStandard: CLanguageStandard?, cxxLanguageStandard: CXXLanguageStandard?)](./init%28name,defaultlocalization,platforms,pkgconfig,providers,products,dependencies,targets,swiftlanguagemodes,clanguagestandard,cxxlanguagestandard%29.md)
   Initializes a Swift package with configuration options you provide.
-- [init(name: String, defaultLocalization: LanguageTag?, platforms: [SupportedPlatform]?, pkgConfig: String?, providers: [SystemPackageProvider]?, products: [Product], dependencies: [Package.Dependency], targets: [Target], swiftLanguageVersions: [SwiftVersion]?, cLanguageStandard: CLanguageStandard?, cxxLanguageStandard: CXXLanguageStandard?)](package/init(name:defaultlocalization:platforms:pkgconfig:providers:products:dependencies:targets:swiftlanguageversions:clanguagestandard:cxxlanguagestandard:).md)
+- [init(name: String, defaultLocalization: LanguageTag?, platforms: [SupportedPlatform]?, pkgConfig: String?, providers: [SystemPackageProvider]?, products: [Product], dependencies: [Package.Dependency], targets: [Target], swiftLanguageVersions: [SwiftVersion]?, cLanguageStandard: CLanguageStandard?, cxxLanguageStandard: CXXLanguageStandard?)](./init%28name,defaultlocalization,platforms,pkgconfig,providers,products,dependencies,targets,swiftlanguageversions,clanguagestandard,cxxlanguagestandard%29.md)
   Initializes a Swift package with configuration options you provide.
-- [init(name: String, platforms: [SupportedPlatform]?, pkgConfig: String?, providers: [SystemPackageProvider]?, products: [Product], dependencies: [Package.Dependency], targets: [Target], swiftLanguageVersions: [SwiftVersion]?, cLanguageStandard: CLanguageStandard?, cxxLanguageStandard: CXXLanguageStandard?)](package/init(name:platforms:pkgconfig:providers:products:dependencies:targets:swiftlanguageversions:clanguagestandard:cxxlanguagestandard:).md)
+- [init(name: String, platforms: [SupportedPlatform]?, pkgConfig: String?, providers: [SystemPackageProvider]?, products: [Product], dependencies: [Package.Dependency], targets: [Target], swiftLanguageVersions: [SwiftVersion]?, cLanguageStandard: CLanguageStandard?, cxxLanguageStandard: CXXLanguageStandard?)](./init%28name,platforms,pkgconfig,providers,products,dependencies,targets,swiftlanguageversions,clanguagestandard,cxxlanguagestandard%29.md)
   Initializes a Swift package with configuration options you provide.
-- [init(name: String, pkgConfig: String?, providers: [SystemPackageProvider]?, products: [Product], dependencies: [Package.Dependency], targets: [Target], swiftLanguageVersions: [Int]?, cLanguageStandard: CLanguageStandard?, cxxLanguageStandard: CXXLanguageStandard?)](package/init(name:pkgconfig:providers:products:dependencies:targets:swiftlanguageversions:clanguagestandard:cxxlanguagestandard:)-7ld3y.md)
+- [init(name: String, pkgConfig: String?, providers: [SystemPackageProvider]?, products: [Product], dependencies: [Package.Dependency], targets: [Target], swiftLanguageVersions: [Int]?, cLanguageStandard: CLanguageStandard?, cxxLanguageStandard: CXXLanguageStandard?)](./init%28name,pkgconfig,providers,products,dependencies,targets,swiftlanguageversions,clanguagestandard,cxxlanguagestandard%29-7ld3y.md)
   Initializes a Swift package with configuration options you provide.
-- [init(name: String, pkgConfig: String?, providers: [SystemPackageProvider]?, products: [Product], dependencies: [Package.Dependency], targets: [Target], swiftLanguageVersions: [SwiftVersion]?, cLanguageStandard: CLanguageStandard?, cxxLanguageStandard: CXXLanguageStandard?)](package/init(name:pkgconfig:providers:products:dependencies:targets:swiftlanguageversions:clanguagestandard:cxxlanguagestandard:)-767rj.md)
+- [init(name: String, pkgConfig: String?, providers: [SystemPackageProvider]?, products: [Product], dependencies: [Package.Dependency], targets: [Target], swiftLanguageVersions: [SwiftVersion]?, cLanguageStandard: CLanguageStandard?, cxxLanguageStandard: CXXLanguageStandard?)](./init%28name,pkgconfig,providers,products,dependencies,targets,swiftlanguageversions,clanguagestandard,cxxlanguagestandard%29-767rj.md)
   Initializes a Swift package with configuration options you provide.
 
 

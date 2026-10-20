@@ -1,7 +1,8 @@
 # removeAllAnchors()
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all known world anchors from world tracking.
 
@@ -16,7 +17,7 @@ final func removeAllAnchors() async throws
 
 #### Discussion
 
-> **Note**: `WorldTrackingProvider.Error`
+> **Throws**: `WorldTrackingProvider.Error`
 
 
 ---

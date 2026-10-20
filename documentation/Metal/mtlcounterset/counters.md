@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An array of the counter instances a GPU device supports.
@@ -20,17 +21,21 @@ An array of the counter instances a GPU device supports.
 var counters: [any MTLCounter] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<id<MTLCounter>> * counters;
+```
+
 ## Mentions
 
-- [Confirming which counters and counter sets a GPU supports](confirming-which-counters-and-counter-sets-a-gpu-supports.md)
+- [Confirming which counters and counter sets a GPU supports](../confirming-which-counters-and-counter-sets-a-gpu-supports.md)
 
 #### Discussion
 
-Check whether a GPU device supports a specific counter by comparing its common name (see [`MTLCommonCounter`](mtlcommoncounter.md)) with each element in the property’s array.
+Check whether a GPU device supports a specific counter by comparing its common name (see [`MTLCommonCounter`](../mtlcommoncounter.md)) with each element in the property’s array.
 
 > ❗ **Important**:  Some GPUs may only support some of the counters within a counter set.
 
-For more information, see [`Confirming which counters and counter sets a GPU supports`](confirming-which-counters-and-counter-sets-a-gpu-supports.md).
+For more information, see [Confirming which counters and counter sets a GPU supports](../confirming-which-counters-and-counter-sets-a-gpu-supports.md).
 
 
 ---

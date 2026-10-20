@@ -1,7 +1,8 @@
 # JWSRenewalInfo
 
 **Framework**: Advanced Commerce API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 Subscription renewal information signed by the App Store, in JSON Web Signature (JWS) format.
 
@@ -10,17 +11,18 @@ Subscription renewal information signed by the App Store, in JSON Web Signature 
 
 ## Declaration
 
-```swift
+```
 string JWSRenewalInfo
 ```
 
 ##### Description
 
-This `JWSRenewalInfo` object is identical to the one used in the App Store Server API and by App Store Server Notifications. For details, see [`JWSRenewalInfo`](https://developer.apple.com/documentation/appstoreserverapi/jwsrenewalinfo).
+This `JWSRenewalInfo` object is identical to the one used in the App Store Server API and by App Store Server Notifications. For details, see [`JWSRenewalInfo`](../AppStoreServerAPI/jwsrenewalinfo.md).
 
 ## See Also
 
-- [type JWSTransaction](jwstransaction.md)
+### Signed transaction information
+- [type JWSTransaction](./jwstransaction.md)
   Transaction information signed by the App Store, in JSON Web Signature (JWS) Compact Serialization format.
 
 

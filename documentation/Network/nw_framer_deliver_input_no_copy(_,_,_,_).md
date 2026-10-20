@@ -1,7 +1,8 @@
 # nw_framer_deliver_input_no_copy(_:_:_:_:)
 
 **Framework**: Network  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Delivers an inbound message containing a specific number of next received bytes.
 
@@ -20,19 +21,24 @@ Delivers an inbound message containing a specific number of next received bytes.
 func nw_framer_deliver_input_no_copy(_ framer: nw_framer_t, _ input_length: Int, _ message: nw_framer_message_t, _ is_complete: Bool) -> Bool
 ```
 
+```c
+bool nw_framer_deliver_input_no_copy(nw_framer_t framer, size_t input_length, nw_framer_message_t message, bool is_complete);
+```
+
 ## See Also
 
-- [func nw_framer_set_input_handler(nw_framer_t, nw_framer_input_handler_t)](nw_framer_set_input_handler(_:_:).md)
+### Handling Input Data
+- [func nw_framer_set_input_handler(nw_framer_t, nw_framer_input_handler_t)](./nw_framer_set_input_handler%28_,_%29.md)
   Sets a block to handle new inbound data.
-- [typealias nw_framer_input_handler_t](nw_framer_input_handler_t.md)
+- [typealias nw_framer_input_handler_t](./nw_framer_input_handler_t.md)
   A handler that notifies your protocol that new inbound data is available to parse.
-- [func nw_framer_parse_input(nw_framer_t, Int, Int, UnsafeMutablePointer<UInt8>?, (UnsafeMutablePointer<UInt8>?, Int, Bool) -> Int) -> Bool](nw_framer_parse_input(_:_:_:_:_:).md)
+- [func nw_framer_parse_input(nw_framer_t, Int, Int, UnsafeMutablePointer<UInt8>?, (UnsafeMutablePointer<UInt8>?, Int, Bool) -> Int) -> Bool](./nw_framer_parse_input%28_,_,_,_,_%29.md)
   Examines the content of input data while inside your input handler block.
-- [typealias nw_framer_parse_completion_t](nw_framer_parse_completion_t.md)
+- [typealias nw_framer_parse_completion_t](./nw_framer_parse_completion_t.md)
   A handler that examines a range of data being sent or received.
-- [func nw_framer_deliver_input(nw_framer_t, UnsafePointer<UInt8>, Int, nw_framer_message_t, Bool)](nw_framer_deliver_input(_:_:_:_:_:).md)
+- [func nw_framer_deliver_input(nw_framer_t, UnsafePointer<UInt8>, Int, nw_framer_message_t, Bool)](./nw_framer_deliver_input%28_,_,_,_,_%29.md)
   Delivers an inbound message containing arbitrary data from your protocol to the application.
-- [func nw_framer_pass_through_input(nw_framer_t)](nw_framer_pass_through_input(_:).md)
+- [func nw_framer_pass_through_input(nw_framer_t)](./nw_framer_pass_through_input%28_%29.md)
   Indicates that your protocol no longer needs to handle input data.
 
 

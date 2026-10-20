@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance from a decoder.
 
@@ -10,7 +11,7 @@ Creates a new instance from a decoder.
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
 - macOS 10.15.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -28,7 +29,8 @@ Throws an error if reading from `decoder` fails, or if the data is corrupted or 
 
 ## See Also
 
-- [func encode(to: any Encoder) throws](networkcompatibilitytoken/encode(to:).md)
+### Serializing tokens
+- [func encode(to: any Encoder) throws](./encode%28to%29.md)
   Writes the token’s data into an encoder.
 
 

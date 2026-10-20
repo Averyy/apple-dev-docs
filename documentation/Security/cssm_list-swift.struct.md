@@ -1,7 +1,8 @@
 # cssm_list
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,20 +14,24 @@
 struct cssm_list
 ```
 
+```c
+struct cssm_list;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cssm_list-swift.struct/init.md)
-- [init(ListType: CSSM_LIST_TYPE, Head: CSSM_LIST_ELEMENT_PTR!, Tail: CSSM_LIST_ELEMENT_PTR!)](cssm_list-swift.struct/init(listtype:head:tail:).md)
+- [init()](./cssm_list-swift.struct/init%28%29.md)
+- [init(ListType: CSSM_LIST_TYPE, Head: CSSM_LIST_ELEMENT_PTR!, Tail: CSSM_LIST_ELEMENT_PTR!)](./cssm_list-swift.struct/init%28listtype,head,tail%29.md)
 ### Instance Properties
-- [var Head: CSSM_LIST_ELEMENT_PTR!](cssm_list-swift.struct/head.md)
-- [var ListType: CSSM_LIST_TYPE](cssm_list-swift.struct/listtype.md)
-- [var Tail: CSSM_LIST_ELEMENT_PTR!](cssm_list-swift.struct/tail.md)
+- [var Head: CSSM_LIST_ELEMENT_PTR!](./cssm_list-swift.struct/head.md)
+- [var ListType: CSSM_LIST_TYPE](./cssm_list-swift.struct/listtype.md)
+- [var Tail: CSSM_LIST_ELEMENT_PTR!](./cssm_list-swift.struct/tail.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 
 ---

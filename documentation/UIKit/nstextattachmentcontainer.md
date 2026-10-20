@@ -1,7 +1,8 @@
 # NSTextAttachmentContainer
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods that defines the interface to text attachment objects from a layout manager.
 
@@ -18,31 +19,36 @@ A set of methods that defines the interface to text attachment objects from a la
 protocol NSTextAttachmentContainer : NSObjectProtocol
 ```
 
+```objc
+@protocol NSTextAttachmentContainer <NSObject>
+```
+
 ## Topics
 
 ### Getting the bounds
-- [func attachmentBounds(for: NSTextContainer?, proposedLineFragment: CGRect, glyphPosition: CGPoint, characterIndex: Int) -> CGRect](nstextattachmentcontainer/attachmentbounds(for:proposedlinefragment:glyphposition:characterindex:).md)
+- [func attachmentBounds(for: NSTextContainer?, proposedLineFragment: CGRect, glyphPosition: CGPoint, characterIndex: Int) -> CGRect](./nstextattachmentcontainer/attachmentbounds%28for,proposedlinefragment,glyphposition,characterindex%29.md)
   Returns the layout bounds of the text attachment to the layout manager.
 ### Getting the image
-- [func image(forBounds: CGRect, textContainer: NSTextContainer?, characterIndex: Int) -> UIImage?](nstextattachmentcontainer/image(forbounds:textcontainer:characterindex:).md)
+- [func image(forBounds: CGRect, textContainer: NSTextContainer?, characterIndex: Int) -> UIImage?](./nstextattachmentcontainer/image%28forbounds,textcontainer,characterindex%29.md)
   Returns the image object that the layout manager renders in the specified image bounds rectangle inside the text container.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [NSTextAttachment](nstextattachment.md)
+- [NSTextAttachment](./nstextattachment.md)
 
 ## See Also
 
-- [class NSTextAttachment](nstextattachment.md)
+### Attachments
+- [class NSTextAttachment](./nstextattachment.md)
   The values for the attachment characteristics of attributed strings and related objects.
-- [class NSTextAttachmentViewProvider](nstextattachmentviewprovider.md)
+- [class NSTextAttachmentViewProvider](./nstextattachmentviewprovider.md)
   A container object that associates a text attachment at a particular document location with a view object.
-- [class NSAdaptiveImageGlyph](nsadaptiveimageglyph.md)
+- [class NSAdaptiveImageGlyph](./nsadaptiveimageglyph.md)
   A data object for an emoji-like image that can appear in attributed text.
-- [protocol NSTextAttachmentLayout](nstextattachmentlayout.md)
+- [protocol NSTextAttachmentLayout](./nstextattachmentlayout.md)
   A set of methods that defines the interface to attachment objects from a text layout manager.
 
 

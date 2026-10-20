@@ -1,7 +1,8 @@
 # previewPanel(_:handle:)
 
 **Framework**: Quick Look UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles an event that the preview panel receives, but doesn’t handle.
 
@@ -14,9 +15,13 @@ Handles an event that the preview panel receives, but doesn’t handle.
 optional func previewPanel(_ panel: QLPreviewPanel!, handle event: NSEvent!) -> Bool
 ```
 
+```objc
+- (BOOL) previewPanel:(QLPreviewPanel *) panel handleEvent:(NSEvent *) event;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver handled the event; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the receiver handled the event; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -29,9 +34,10 @@ The preview panel invokes this optional method when it receives an event it does
 
 ## See Also
 
-- [func previewPanel(QLPreviewPanel!, sourceFrameOnScreenFor: (any QLPreviewItem)!) -> NSRect](qlpreviewpaneldelegate/previewpanel(_:sourceframeonscreenfor:).md)
+### Optional Methods
+- [func previewPanel(QLPreviewPanel!, sourceFrameOnScreenFor: (any QLPreviewItem)!) -> NSRect](./previewpanel%28_,sourceframeonscreenfor%29.md)
   Returns the screen rectangle for a given preview item.
-- [func previewPanel(QLPreviewPanel!, transitionImageFor: (any QLPreviewItem)!, contentRect: UnsafeMutablePointer<NSRect>!) -> Any!](qlpreviewpaneldelegate/previewpanel(_:transitionimagefor:contentrect:).md)
+- [func previewPanel(QLPreviewPanel!, transitionImageFor: (any QLPreviewItem)!, contentRect: UnsafeMutablePointer<NSRect>!) -> Any!](./previewpanel%28_,transitionimagefor,contentrect%29.md)
   Returns the image to use for the transition zoom effect for a given item.
 
 

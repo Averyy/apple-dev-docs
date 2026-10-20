@@ -1,19 +1,20 @@
 # DispatchSync
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Schedule a block for synchronous execution on the current queue.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 void DispatchSync(IODispatchBlock block);
 ```
 
@@ -27,7 +28,8 @@ This method schedules the block for execution on the queue and waits for it to c
 
 ## See Also
 
-- [DispatchSync_f](iodispatchqueue/dispatchsync_f.md)
+### Executing a Task Synchronously
+- [DispatchSync_f](./dispatchsync_f.md)
   Schedule a C-style function for synchronous execution on the current queue.
 
 

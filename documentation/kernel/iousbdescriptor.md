@@ -1,7 +1,8 @@
 # IOUSBDescriptor
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 The base descriptor type.
 
@@ -10,7 +11,7 @@ The base descriptor type.
 
 ## Declaration
 
-```swift
+```c
 typedef IOUSBDescriptorHeader IOUSBDescriptor;
 ```
 
@@ -20,13 +21,14 @@ Use this type to represent generic descriptor definitions. For more information 
 
 ## See Also
 
-- [IOUSBDescriptorHeader](iousbdescriptorheader.md)
+### Descriptor Fundamentals
+- [IOUSBDescriptorHeader](./iousbdescriptorheader.md)
   The base descriptor header.
-- [tIOUSBDescriptorType](tiousbdescriptortype.md)
+- [tIOUSBDescriptorType](./tiousbdescriptortype.md)
   Constants describing the types of descriptors available for a USB device.
-- [tIOUSBDescriptorSize](tiousbdescriptorsize.md)
+- [tIOUSBDescriptorSize](./tiousbdescriptorsize.md)
   Constants for the number of bytes in descriptor structures.
-- [IOUSBDescriptorHeaderPtr](iousbdescriptorheaderptr.md)
+- [IOUSBDescriptorHeaderPtr](./iousbdescriptorheaderptr.md)
   A pointer to a USB descriptor header.
 
 

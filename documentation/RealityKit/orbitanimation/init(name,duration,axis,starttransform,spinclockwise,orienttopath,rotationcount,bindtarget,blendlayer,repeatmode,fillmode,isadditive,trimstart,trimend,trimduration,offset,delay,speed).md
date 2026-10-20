@@ -1,7 +1,8 @@
 # init(name:duration:axis:startTransform:spinClockwise:orientToPath:rotationCount:bindTarget:blendLayer:repeatMode:fillMode:isAdditive:trimStart:trimEnd:trimDuration:offset:delay:speed:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an animation that revolves an entity around its origin.
 
@@ -11,7 +12,7 @@ Creates an animation that revolves an entity around its origin.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

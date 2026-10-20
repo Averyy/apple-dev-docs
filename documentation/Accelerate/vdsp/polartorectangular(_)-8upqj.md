@@ -1,7 +1,8 @@
 # polarToRectangular(_:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns single-precision rectangular coordinates converted from polar coordinates.
 
@@ -11,7 +12,7 @@ Returns single-precision rectangular coordinates converted from polar coordinate
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ static func polarToRectangular<U>(_ polarCoordinates: U) -> [Float] where U : Ac
 
 #### Discussion
 
-The function calls the underlying [`vDSP_rect`](vdsp_rect.md) function to convert the input angle-radius pairs to Cartesian x-y pairs.
+The function calls the underlying [`vDSP_rect`](../vdsp_rect.md) function to convert the input angle-radius pairs to Cartesian x-y pairs.
 
 The following code shows how to convert an angle-radius pair (with the angle specified in degress) to its rectangular equivalent:
 
@@ -48,11 +49,12 @@ The following code shows how to convert an angle-radius pair (with the angle spe
 
 ## See Also
 
-- [static func polarToRectangular<U>(U) -> [Double]](vdsp/polartorectangular(_:)-jgv8.md)
+### Converting polar coordinates to rectangular coordinates
+- [static func polarToRectangular<U>(U) -> [Double]](./polartorectangular%28_%29-jgv8.md)
   Returns double-precision rectangular coordinates converted from polar coordinates.
-- [static func convert<U, V>(polarCoordinates: U, toRectangularCoordinates: inout V)](vdsp/convert(polarcoordinates:torectangularcoordinates:)-3vpjf.md)
+- [static func convert<U, V>(polarCoordinates: U, toRectangularCoordinates: inout V)](./convert%28polarcoordinates,torectangularcoordinates%29-3vpjf.md)
   Converts single-precision polar coordinates to rectangular coordinates.
-- [static func convert<U, V>(polarCoordinates: U, toRectangularCoordinates: inout V)](vdsp/convert(polarcoordinates:torectangularcoordinates:)-22zz0.md)
+- [static func convert<U, V>(polarCoordinates: U, toRectangularCoordinates: inout V)](./convert%28polarcoordinates,torectangularcoordinates%29-22zz0.md)
   Converts double-precision polar coordinates to rectangular coordinates.
 
 

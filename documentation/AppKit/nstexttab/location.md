@@ -1,7 +1,8 @@
 # location
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text tab’s ruler location relative to the back margin.
 
@@ -12,6 +13,10 @@ The text tab’s ruler location relative to the back margin.
 
 ```swift
 var location: CGFloat { get }
+```
+
+```objc
+@property (readonly) CGFloat location;
 ```
 
 

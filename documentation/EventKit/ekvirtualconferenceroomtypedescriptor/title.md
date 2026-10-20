@@ -1,7 +1,8 @@
 # title
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user-visible name of a room where virtual conferences take place, such as Personal Room or Team Room.
 
@@ -19,11 +20,16 @@ The user-visible name of a room where virtual conferences take place, such as Pe
 var title: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * title;
+```
+
 ## See Also
 
-- [var identifier: EKVirtualConferenceRoomTypeIdentifier](ekvirtualconferenceroomtypedescriptor/identifier.md)
+### Configuring Room Type Descriptors
+- [var identifier: EKVirtualConferenceRoomTypeIdentifier](./identifier.md)
   A unique string you choose that identifies the room.
-- [typealias EKVirtualConferenceRoomTypeIdentifier](ekvirtualconferenceroomtypeidentifier.md)
+- [typealias EKVirtualConferenceRoomTypeIdentifier](../ekvirtualconferenceroomtypeidentifier.md)
   The type for a room type identifier.
 
 

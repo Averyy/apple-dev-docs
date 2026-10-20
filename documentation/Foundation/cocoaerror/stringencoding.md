@@ -1,7 +1,8 @@
 # stringEncoding
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string encoding associated with this error, if any.
 

@@ -1,7 +1,8 @@
 # AAUSBAccessoryListener
 
 **Framework**: Accessory Access  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A class that conforms to the framework’s USB accessory listener protocol can listen to the accessory events.
 
@@ -14,24 +15,28 @@ A class that conforms to the framework’s USB accessory listener protocol can l
 protocol AAUSBAccessoryListener : NSObjectProtocol, Sendable
 ```
 
+```objc
+@protocol AAUSBAccessoryListener <NSObject>
+```
+
 #### Discussion
 
-This protocol provides methods that notify your app when a USB accessory connects to or disconnects from the system.  The framework invokes the methods for a listener on the internal serial queue of [`AAUSBAccessoryManager`](aausbaccessorymanager.md).
+This protocol provides methods that notify your app when a USB accessory connects to or disconnects from the system.  The framework invokes the methods for a listener on the internal serial queue of [`AAUSBAccessoryManager`](./aausbaccessorymanager.md).
 
 ## Topics
 
 ### Protocol methods
-- [func usbAccessoryDidConnect(AAUSBAccessory)](aausbaccessorylistener/usbaccessorydidconnect(_:).md)
+- [func usbAccessoryDidConnect(AAUSBAccessory)](./aausbaccessorylistener/usbaccessorydidconnect%28_%29.md)
   The method the framework invokes when a USB accessory connects to the system.
-- [func usbAccessoryDidDisconnect(AAUSBAccessory)](aausbaccessorylistener/usbaccessorydiddisconnect(_:).md)
+- [func usbAccessoryDidDisconnect(AAUSBAccessory)](./aausbaccessorylistener/usbaccessorydiddisconnect%28_%29.md)
   The method the framework invokes when a USB accessory disconnects from the system.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # preferredFramesPerSecond
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rate at which the view redraws its contents.
 
@@ -19,6 +20,10 @@ The rate at which the view redraws its contents.
 var preferredFramesPerSecond: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSInteger preferredFramesPerSecond;
+```
+
 #### Discussion
 
 When your application sets its preferred frame rate, the view chooses a frame rate as close to that as possible based on the capabilities of the screen the view is displayed on. To provide a consistent frame rate, the actual frame rate chosen is usually a factor of the maximum refresh rate of the screen. For example, if the maximum refresh rate of the screen is `60` frames per second, that’s also the highest frame rate the view sets as the actual frame rate. However, if you ask for a lower frame rate, the view might choose `30`, `20`, or `15` frames per second, or another factor, as the actual frame rate.
@@ -27,13 +32,14 @@ Your application should choose a frame rate that it can consistently maintain. T
 
 ## See Also
 
-- [var isPaused: Bool](mtkview/ispaused.md)
+### Configuring Drawing Behavior
+- [var isPaused: Bool](./ispaused.md)
   A Boolean value that indicates whether the draw loop is paused.
-- [var enableSetNeedsDisplay: Bool](mtkview/enablesetneedsdisplay.md)
-  A Boolean value that indicates whether the view responds to [`setNeedsDisplay()`](https://developer.apple.com/documentation/uikit/uiview/setneedsdisplay()).
-- [func draw()](mtkview/draw.md)
+- [var enableSetNeedsDisplay: Bool](./enablesetneedsdisplay.md)
+  A Boolean value that indicates whether the view responds to [`setNeedsDisplay()`](../../UIKit/uiview/setneedsdisplay%28%29.md).
+- [func draw()](./draw%28%29.md)
   Redraws the view’s contents immediately.
-- [var presentsWithTransaction: Bool](mtkview/presentswithtransaction.md)
+- [var presentsWithTransaction: Bool](./presentswithtransaction.md)
   A Boolean value that determines whether the view presents its content using a Core Animation transaction.
 
 

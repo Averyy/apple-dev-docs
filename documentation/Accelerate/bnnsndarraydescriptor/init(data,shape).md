@@ -1,7 +1,8 @@
 # init(data:shape:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new n-dimensional array descriptor that references the same data as the specified pointer.
 
@@ -11,7 +12,7 @@ Returns a new n-dimensional array descriptor that references the same data as th
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -27,13 +28,14 @@ init?<T>(data: UnsafeMutableBufferPointer<T>, shape: BNNS.Shape) where T : BNNSS
 
 ## See Also
 
-- [init(flags: BNNSNDArrayFlags, layout: BNNSDataLayout, size: (Int, Int, Int, Int, Int, Int, Int, Int), stride: (Int, Int, Int, Int, Int, Int, Int, Int), data: UnsafeMutableRawPointer?, data_type: BNNSDataType, table_data: UnsafeMutableRawPointer?, table_data_type: BNNSDataType, data_scale: Float, data_bias: Float)](bnnsndarraydescriptor/init(flags:layout:size:stride:data:data_type:table_data:table_data_type:data_scale:data_bias:).md)
+### Creating an Array Descriptor
+- [init(flags: BNNSNDArrayFlags, layout: BNNSDataLayout, size: (Int, Int, Int, Int, Int, Int, Int, Int), stride: (Int, Int, Int, Int, Int, Int, Int, Int), data: UnsafeMutableRawPointer?, data_type: BNNSDataType, table_data: UnsafeMutableRawPointer?, table_data_type: BNNSDataType, data_scale: Float, data_bias: Float)](./init%28flags,layout,size,stride,data,data_type,table_data,table_data_type,data_scale,data_bias%29.md)
   Returns a new n-dimensional array descriptor with the specified parameters.
-- [init?(data: UnsafeMutableRawBufferPointer, scalarType: any BNNSScalar.Type, shape: BNNS.Shape)](bnnsndarraydescriptor/init(data:scalartype:shape:).md)
+- [init?(data: UnsafeMutableRawBufferPointer, scalarType: any BNNSScalar.Type, shape: BNNS.Shape)](./init%28data,scalartype,shape%29.md)
   Returns a new n-dimensional array descriptor that references the same data as the specified raw pointer.
-- [init(dataType: BNNSDataType, shape: BNNS.Shape)](bnnsndarraydescriptor/init(datatype:shape:).md)
+- [init(dataType: BNNSDataType, shape: BNNS.Shape)](./init%28datatype,shape%29.md)
   Returns a new n-dimensional array descriptor from the specified data type and shape.
-- [init()](bnnsndarraydescriptor/init.md)
+- [init()](./init%28%29.md)
   Returns a new n-dimensional array descriptor.
 
 

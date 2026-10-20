@@ -1,7 +1,8 @@
 # appendBytes
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Appends a buffer of bytes to the OSData object's internal data buffer.
 
@@ -11,11 +12,19 @@ Appends a buffer of bytes to the OSData object's internal data buffer.
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+bool appendBytes(const OSData *aDataObj);
+```
+
+*macOS*
+
+```cpp
 virtual bool appendBytes(const OSData *aDataObj);
 ```
 
-#### Return_value
+#### Return Value
 
 true on success or false on failure, due to allocation failure.
 
@@ -25,7 +34,8 @@ true on success or false on failure, due to allocation failure.
 
 ## See Also
 
-- [- appendBytes](../driverkit/osdata/appendbytes-lbqa.md)
+### Appending Data to the Object
+- [- appendBytes](../../DriverKit/osdata/appendbytes-lbqa.md)
   Appends a buffer of bytes to the OSData object's internal data buffer.
 
 

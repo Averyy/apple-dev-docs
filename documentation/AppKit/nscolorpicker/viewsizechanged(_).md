@@ -1,18 +1,23 @@
 # viewSizeChanged(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Overriden to respond to a size change.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @MainActor
 func viewSizeChanged(_ sender: Any?)
+```
+
+```objc
+- (void) viewSizeChanged:(id) sender;
 ```
 
 

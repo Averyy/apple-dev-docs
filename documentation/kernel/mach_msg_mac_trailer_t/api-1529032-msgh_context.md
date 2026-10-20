@@ -1,14 +1,15 @@
 # msgh_context
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 mach_port_context_t msgh_context;
 ```
 

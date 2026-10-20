@@ -1,7 +1,8 @@
 # buttonX
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The second face button element.
 
@@ -19,15 +20,20 @@ The second face button element.
 var buttonX: GCControllerButtonInput { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) GCControllerButtonInput * buttonX;
+```
+
 #### Discussion
 
 This button is digital.
 
 ## See Also
 
-- [var buttonMenu: GCControllerButtonInput](gcmicrogamepad/buttonmenu.md)
+### Getting face button inputs
+- [var buttonMenu: GCControllerButtonInput](./buttonmenu.md)
   The menu face button that players use to enter the main menu and pause the game.
-- [var buttonA: GCControllerButtonInput](gcmicrogamepad/buttona.md)
+- [var buttonA: GCControllerButtonInput](./buttona.md)
   The button that the user activates by pressing harder on the touchpad.
 
 

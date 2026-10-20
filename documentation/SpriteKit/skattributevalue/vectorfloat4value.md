@@ -1,7 +1,8 @@
 # vectorFloat4Value
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s value as a vector of four floating point numbers.
 
@@ -20,17 +21,22 @@ The receiver’s value as a vector of four floating point numbers.
 var vectorFloat4Value: vector_float4 { get set }
 ```
 
+```objc
+@property (nonatomic) vector_float4 vectorFloat4Value;
+```
+
 #### Discussion
 
 If the receiver’s original value is a floating-point number of a vector with a count less than four, the empty items in the vector are set to 0.
 
 ## See Also
 
-- [var floatValue: Float](skattributevalue/floatvalue.md)
+### Instance Properties
+- [var floatValue: Float](./floatvalue.md)
   The receiver’s floating point value.
-- [var vectorFloat2Value: vector_float2](skattributevalue/vectorfloat2value.md)
+- [var vectorFloat2Value: vector_float2](./vectorfloat2value.md)
   The receiver’s value as a vector of two floating-point numbers.
-- [var vectorFloat3Value: vector_float3](skattributevalue/vectorfloat3value.md)
+- [var vectorFloat3Value: vector_float3](./vectorfloat3value.md)
   The receiver’s value as a vector of three floating point numbers.
 
 

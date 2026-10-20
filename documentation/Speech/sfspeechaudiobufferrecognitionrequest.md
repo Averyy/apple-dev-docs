@@ -1,7 +1,8 @@
 # SFSpeechAudioBufferRecognitionRequest
 
 **Framework**: Speech  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A request to recognize speech from captured audio content, such as audio from the device’s microphone.
 
@@ -18,44 +19,49 @@ A request to recognize speech from captured audio content, such as audio from th
 class SFSpeechAudioBufferRecognitionRequest
 ```
 
+```objc
+@interface SFSpeechAudioBufferRecognitionRequest : SFSpeechRecognitionRequest
+```
+
 #### Overview
 
-Use an [`SFSpeechAudioBufferRecognitionRequest`](sfspeechaudiobufferrecognitionrequest.md) object to perform speech recognition on live audio, or on a set of existing audio buffers. For example, use this request object to route audio from a device’s microphone to the speech recognizer.
+Use an [`SFSpeechAudioBufferRecognitionRequest`](./sfspeechaudiobufferrecognitionrequest.md) object to perform speech recognition on live audio, or on a set of existing audio buffers. For example, use this request object to route audio from a device’s microphone to the speech recognizer.
 
-The request object contains no audio initially. As you capture audio, call [`append(_:)`](sfspeechaudiobufferrecognitionrequest/append(_:).md) or [`appendAudioSampleBuffer(_:)`](sfspeechaudiobufferrecognitionrequest/appendaudiosamplebuffer(_:).md) to add audio samples to the request object. The speech recognizer continuously analyzes the audio you appended, stopping only when you call the [`endAudio()`](sfspeechaudiobufferrecognitionrequest/endaudio().md) method. You must call [`endAudio()`](sfspeechaudiobufferrecognitionrequest/endaudio().md) explicitly to stop the speech recognition process.
+The request object contains no audio initially. As you capture audio, call [`append(_:)`](./sfspeechaudiobufferrecognitionrequest/append%28_%29.md) or [`appendAudioSampleBuffer(_:)`](./sfspeechaudiobufferrecognitionrequest/appendaudiosamplebuffer%28_%29.md) to add audio samples to the request object. The speech recognizer continuously analyzes the audio you appended, stopping only when you call the [`endAudio()`](./sfspeechaudiobufferrecognitionrequest/endaudio%28%29.md) method. You must call [`endAudio()`](./sfspeechaudiobufferrecognitionrequest/endaudio%28%29.md) explicitly to stop the speech recognition process.
 
-For a complete example of how to use audio buffers with speech recognition, see [`SpeakToMe: Using Speech Recognition with AVAudioEngine`](https://developer.apple.comhttps://developer.apple.com/library/archive/samplecode/SpeakToMe/Introduction/Intro.html#//apple_ref/doc/uid/TP40017110).
+For a complete example of how to use audio buffers with speech recognition, see [SpeakToMe: Using Speech Recognition with AVAudioEngine](https://developer.apple.com/library/archive/samplecode/SpeakToMe/Introduction/Intro.html#//apple_ref/doc/uid/TP40017110).
 
 ## Topics
 
 ### Appending Audio Buffers
-- [func append(AVAudioPCMBuffer)](sfspeechaudiobufferrecognitionrequest/append(_:).md)
+- [func append(AVAudioPCMBuffer)](./sfspeechaudiobufferrecognitionrequest/append%28_%29.md)
   Appends audio in the PCM format to the end of the recognition request.
-- [func appendAudioSampleBuffer(CMSampleBuffer)](sfspeechaudiobufferrecognitionrequest/appendaudiosamplebuffer(_:).md)
+- [func appendAudioSampleBuffer(CMSampleBuffer)](./sfspeechaudiobufferrecognitionrequest/appendaudiosamplebuffer%28_%29.md)
   Appends audio to the end of the recognition request.
-- [func endAudio()](sfspeechaudiobufferrecognitionrequest/endaudio.md)
+- [func endAudio()](./sfspeechaudiobufferrecognitionrequest/endaudio%28%29.md)
   Marks the end of audio input for the recognition request.
 ### Getting the Audio Format
-- [var nativeAudioFormat: AVAudioFormat](sfspeechaudiobufferrecognitionrequest/nativeaudioformat.md)
+- [var nativeAudioFormat: AVAudioFormat](./sfspeechaudiobufferrecognitionrequest/nativeaudioformat.md)
   The preferred audio format for optimal speech recognition.
 
 ## Relationships
 
 ### Inherits From
-- [SFSpeechRecognitionRequest](sfspeechrecognitionrequest.md)
+- [SFSpeechRecognitionRequest](./sfspeechrecognitionrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class SFSpeechURLRecognitionRequest](sfspeechurlrecognitionrequest.md)
+### Audio sources
+- [class SFSpeechURLRecognitionRequest](./sfspeechurlrecognitionrequest.md)
   A request to recognize speech in a recorded audio file.
-- [class SFSpeechRecognitionRequest](sfspeechrecognitionrequest.md)
+- [class SFSpeechRecognitionRequest](./sfspeechrecognitionrequest.md)
   An abstract class that represents a request to recognize speech from an audio source.
 
 

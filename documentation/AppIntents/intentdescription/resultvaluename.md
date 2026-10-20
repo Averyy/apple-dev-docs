@@ -1,7 +1,8 @@
 # resultValueName
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A name for the result of this intent, which will be displayed in the Shortcuts editor, such as when the output is used as a variable.
 
@@ -11,7 +12,7 @@ A name for the result of this intent, which will be displayed in the Shortcuts e
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

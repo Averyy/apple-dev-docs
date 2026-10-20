@@ -1,7 +1,8 @@
 # speechSynthesisOutputMetadataBlock
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A block that subclasses use to send marker information to the host.
 
@@ -19,6 +20,10 @@ A block that subclasses use to send marker information to the host.
 var speechSynthesisOutputMetadataBlock: AVSpeechSynthesisProviderOutputBlock? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) AVSpeechSynthesisProviderOutputBlock speechSynthesisOutputMetadataBlock;
+```
+
 #### Discussion
 
 A host sets this block to retrieve metadata for a request.
@@ -29,7 +34,8 @@ There may be cases where a subclass doesn’t have marker data until it complete
 
 ## See Also
 
-- [typealias AVSpeechSynthesisProviderOutputBlock](avspeechsynthesisprovideroutputblock.md)
+### Supplying metadata
+- [typealias AVSpeechSynthesisProviderOutputBlock](../avspeechsynthesisprovideroutputblock.md)
   A type that represents the method for sending marker information to the host.
 
 

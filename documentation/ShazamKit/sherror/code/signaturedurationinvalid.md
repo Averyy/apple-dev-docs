@@ -1,7 +1,8 @@
 # SHError.Code.signatureDurationInvalid
 
 **Framework**: ShazamKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The error code to indicate that the length of the generated signature is too long or too short to make a match in the catalog.
 
@@ -20,13 +21,18 @@ The error code to indicate that the length of the generated signature is too lon
 case signatureDurationInvalid
 ```
 
+```c
+SHErrorCodeSignatureDurationInvalid
+```
+
 #### Discussion
 
-This error occurs when the length of the generated signature is less than [`minimumQuerySignatureDuration`](shcatalog/minimumquerysignatureduration.md) or greater than [`maximumQuerySignatureDuration`](shcatalog/maximumquerysignatureduration.md) for the session [`catalog`](shsession/catalog.md).
+This error occurs when the length of the generated signature is less than [`minimumQuerySignatureDuration`](../../shcatalog/minimumquerysignatureduration.md) or greater than [`maximumQuerySignatureDuration`](../../shcatalog/maximumquerysignatureduration.md) for the session [`catalog`](../../shsession/catalog.md).
 
 ## See Also
 
-- [SHError.Code.signatureInvalid](sherror/code/signatureinvalid.md)
+### Signature errors
+- [SHError.Code.signatureInvalid](./signatureinvalid.md)
   The error code to indicate that the system is unable to generate a signature from the audio.
 
 

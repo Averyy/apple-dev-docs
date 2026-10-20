@@ -1,7 +1,8 @@
 # AuthorizationString
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A zero-terminated string in UTF-8 encoding.
 
@@ -15,9 +16,13 @@ A zero-terminated string in UTF-8 encoding.
 typealias AuthorizationString = UnsafePointer<CChar>
 ```
 
+```c
+typedef const char * AuthorizationString;
+```
+
 #### Discussion
 
-Use this in a call to the [`AuthorizationCopyInfo(_:_:_:)`](authorizationcopyinfo(_:_:_:).md) function for the `tag` parameter.
+Use this in a call to the [`AuthorizationCopyInfo(_:_:_:)`](./authorizationcopyinfo%28_,_,_%29.md) function for the `tag` parameter.
 
 
 ---

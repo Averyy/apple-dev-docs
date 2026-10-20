@@ -1,7 +1,8 @@
 # MDLJointAnimation
 
 **Framework**: Model I/O  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 11.0+
@@ -17,10 +18,14 @@
 protocol MDLJointAnimation
 ```
 
+```objc
+@protocol MDLJointAnimation
+```
+
 ## Relationships
 
 ### Conforming Types
-- [MDLPackedJointAnimation](mdlpackedjointanimation.md)
+- [MDLPackedJointAnimation](./mdlpackedjointanimation.md)
 
 
 ---

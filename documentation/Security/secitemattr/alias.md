@@ -1,7 +1,8 @@
 # SecItemAttr.alias
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates an alias.
 
@@ -13,6 +14,10 @@ Indicates an alias.
 
 ```swift
 case alias
+```
+
+```c
+kSecAlias
 ```
 
 

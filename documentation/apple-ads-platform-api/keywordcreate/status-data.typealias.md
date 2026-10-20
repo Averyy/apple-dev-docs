@@ -1,7 +1,8 @@
 # KeywordCreate.Status
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 Whether this keyword is active and eligible to serve at creation.
 
@@ -10,9 +11,14 @@ Whether this keyword is active and eligible to serve at creation.
 
 ## Declaration
 
-```swift
+```
 string KeywordCreate.Status
 ```
+
+## Possible Values
+
+- `ENABLED`: Keyword is active and eligible to serve.
+- `PAUSED`: Keyword is paused and will not serve.
 
 #### Discussion
 
@@ -26,7 +32,7 @@ Include `status` in the create request to determine whether the new keyword begi
 }
 ```
 
-See [`KeywordStatus`](keywordstatus.md) for additional context.
+See [`KeywordStatus`](../keywordstatus.md) for additional context.
 
 
 ---

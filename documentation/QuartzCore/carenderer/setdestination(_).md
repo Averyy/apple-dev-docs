@@ -1,7 +1,8 @@
 # setDestination(_:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 2.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func setDestination(_ tex: any MTLTexture)
+```
+
+```objc
+- (void) setDestination:(id<MTLTexture>) tex;
 ```
 
 

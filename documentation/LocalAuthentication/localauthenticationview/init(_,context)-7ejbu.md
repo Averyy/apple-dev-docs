@@ -1,7 +1,8 @@
 # init(_:context:)
 
 **Framework**: Local Authentication  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new view and pairs it with the specified authentication context.
 

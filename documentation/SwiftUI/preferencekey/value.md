@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of value produced by this preference.
@@ -23,7 +24,8 @@ associatedtype Value
 
 ## See Also
 
-- [static var defaultValue: Self.Value](preferencekey/defaultvalue.md)
+### Getting the default value
+- [static var defaultValue: Self.Value](./defaultvalue.md)
   The default value of the preference.
 
 

@@ -1,7 +1,8 @@
 # AdAttributionKitError.conversionTagNotSupported
 
 **Framework**: AdAttributionKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The postback update failed due to an unsupported use of conversion tag
 

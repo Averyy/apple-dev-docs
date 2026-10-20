@@ -1,7 +1,8 @@
 # insert(_:position:)
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts playable music items into the playback queue.
 

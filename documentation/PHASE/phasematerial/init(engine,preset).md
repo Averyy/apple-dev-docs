@@ -1,7 +1,8 @@
 # init(engine:preset:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a material with the given preset.
 
@@ -17,6 +18,10 @@ Creates a material with the given preset.
 
 ```swift
 init(engine: PHASEEngine, preset: PHASEMaterialPreset)
+```
+
+```objc
+- (instancetype) initWithEngine:(PHASEEngine *) engine preset:(PHASEMaterialPreset) preset;
 ```
 
 ## Parameters

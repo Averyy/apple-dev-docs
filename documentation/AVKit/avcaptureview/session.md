@@ -1,7 +1,8 @@
 # session
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view’s associated capture session.
 
@@ -14,13 +15,18 @@ The view’s associated capture session.
 var session: AVCaptureSession? { get }
 ```
 
+```objc
+@property (readonly, nullable) AVCaptureSession * session;
+```
+
 #### Discussion
 
-This property’s default value is a capture session configured for movie file recordings of audio and video data. Use the [`setSession(_:showVideoPreview:showAudioPreview:)`](avcaptureview/setsession(_:showvideopreview:showaudiopreview:).md) method to provide a custom capture session. Modifying the capture session changes its visual representation in the view.
+This property’s default value is a capture session configured for movie file recordings of audio and video data. Use the [`setSession(_:showVideoPreview:showAudioPreview:)`](./setsession%28_,showvideopreview,showaudiopreview%29.md) method to provide a custom capture session. Modifying the capture session changes its visual representation in the view.
 
 ## See Also
 
-- [func setSession(AVCaptureSession?, showVideoPreview: Bool, showAudioPreview: Bool)](avcaptureview/setsession(_:showvideopreview:showaudiopreview:).md)
+### Configuring the capture session
+- [func setSession(AVCaptureSession?, showVideoPreview: Bool, showAudioPreview: Bool)](./setsession%28_,showvideopreview,showaudiopreview%29.md)
   Sets the view’s capture session.
 
 

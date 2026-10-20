@@ -7,7 +7,7 @@ Input callback function to be implemented by a subclass.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void inputSyncCallback(
  UInt32token );
 ```
@@ -22,7 +22,8 @@ The inputSyncCallback() method is called as a result of a fast trap from user sp
 
 ## See Also
 
-- [inputCallback](iostream/1809754-inputcallback.md)
+### Managing notifications
+- [inputCallback](./api-1809754-inputcallback.md)
   Input callback function to be implemented by a subclass;
 
 

@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether a string has no characters.
 
@@ -22,7 +23,8 @@ var isEmpty: Bool { get }
 
 ## See Also
 
-- [var count: Int](string/count.md)
+### Inspecting a String
+- [var count: Int](./count.md)
   The number of characters in a string.
 
 

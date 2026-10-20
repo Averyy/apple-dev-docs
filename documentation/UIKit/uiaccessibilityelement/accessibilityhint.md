@@ -1,7 +1,8 @@
 # accessibilityHint
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that briefly describes the result of performing an action on the accessibility element.
 
@@ -9,7 +10,7 @@ A string that briefly describes the result of performing an action on the access
 - iOS 3.0+
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ A string that briefly describes the result of performing an action on the access
 var accessibilityHint: String? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSString * accessibilityHint;
+```
+
 ## Mentions
 
-- [Supporting VoiceOver in your app](supporting-voiceover-in-your-app.md)
+- [Supporting VoiceOver in your app](../supporting-voiceover-in-your-app.md)
 
 #### Discussion
 
@@ -30,15 +35,16 @@ By default, standard UIKit controls and views have system-provided hints. If you
 
 ## See Also
 
-- [var accessibilityLabel: String?](uiaccessibilityelement/accessibilitylabel.md)
+### Accessing the attributes of an accessibility element
+- [var accessibilityLabel: String?](./accessibilitylabel.md)
   A string that succinctly identifies the accessibility element.
-- [var accessibilityValue: String?](uiaccessibilityelement/accessibilityvalue.md)
+- [var accessibilityValue: String?](./accessibilityvalue.md)
   A string that represents the current value of the accessibility element.
-- [var accessibilityFrame: CGRect](uiaccessibilityelement/accessibilityframe.md)
+- [var accessibilityFrame: CGRect](./accessibilityframe.md)
   The frame of the accessibility element, in screen coordinates.
-- [var accessibilityFrameInContainerSpace: CGRect](uiaccessibilityelement/accessibilityframeincontainerspace.md)
+- [var accessibilityFrameInContainerSpace: CGRect](./accessibilityframeincontainerspace.md)
   The frame of the accessibility element, in the coordinate space of its container view.
-- [var accessibilityTraits: UIAccessibilityTraits](uiaccessibilityelement/accessibilitytraits.md)
+- [var accessibilityTraits: UIAccessibilityTraits](./accessibilitytraits.md)
   The combination of traits that best characterize the accessibility element.
 
 

@@ -1,7 +1,8 @@
 # convert(to:from:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs a basic conversion between audio formats that doesn’t involve converting codecs or sample rates.
 
@@ -20,9 +21,13 @@ Performs a basic conversion between audio formats that doesn’t involve convert
 func convert(to outputBuffer: AVAudioPCMBuffer, from inputBuffer: AVAudioPCMBuffer) throws
 ```
 
+```objc
+- (BOOL) convertToBuffer:(AVAudioPCMBuffer *) outputBuffer fromBuffer:(const AVAudioPCMBuffer *) inputBuffer error:(NSError **) outError;
+```
+
 #### Discussion
 
-The output buffer’s [`frameCapacity`](avaudiopcmbuffer/framecapacity.md) value needs to be at least at large as the [`frameLength`](avaudiopcmbuffer/framelength.md) value of the `inputBuffer`.
+The output buffer’s [`frameCapacity`](../avaudiopcmbuffer/framecapacity.md) value needs to be at least at large as the [`frameLength`](../avaudiopcmbuffer/framelength.md) value of the `inputBuffer`.
 
 ## Parameters
 
@@ -31,13 +36,14 @@ The output buffer’s [`frameCapacity`](avaudiopcmbuffer/framecapacity.md) value
 
 ## See Also
 
-- [func convert(to: AVAudioBuffer, error: NSErrorPointer, withInputFrom: (AVAudioPacketCount, UnsafeMutablePointer<AVAudioConverterInputStatus>) -> AVAudioBuffer?) -> AVAudioConverterOutputStatus](avaudioconverter/convert(to:error:withinputfrom:).md)
+### Converting audio formats
+- [func convert(to: AVAudioBuffer, error: NSErrorPointer, withInputFrom: (AVAudioPacketCount, UnsafeMutablePointer<AVAudioConverterInputStatus>) -> AVAudioBuffer?) -> AVAudioConverterOutputStatus](./convert%28to,error,withinputfrom%29.md)
   Performs a conversion between audio formats, if the system supports it.
-- [typealias AVAudioConverterInputBlock](avaudioconverterinputblock.md)
+- [typealias AVAudioConverterInputBlock](../avaudioconverterinputblock.md)
   A block to get input data for conversion, as necessary.
-- [enum AVAudioConverterInputStatus](avaudioconverterinputstatus.md)
+- [enum AVAudioConverterInputStatus](../avaudioconverterinputstatus.md)
   An option that indicates the status of an audio converter input block.
-- [enum AVAudioConverterOutputStatus](avaudioconverteroutputstatus.md)
+- [enum AVAudioConverterOutputStatus](../avaudioconverteroutputstatus.md)
   An option that indicates the return status of an audio converter method.
 
 

@@ -1,7 +1,8 @@
 # right
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates the right eye is the hero eye.
 

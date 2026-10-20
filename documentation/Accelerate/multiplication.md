@@ -1,14 +1,16 @@
 # Multiplication
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 Multiply vectors that contain real or complex values.
 
 ## See Also
 
-- [Transposition](transposition-vdsp.md)
+### Matrix operations
+- [Transposition](./transposition-vdsp.md)
   Tranpose vectors that contain real values.
-- [Matrix and submatrix copying functions](matrix-and-submatrix-copying-functions.md)
+- [Matrix and submatrix copying functions](./matrix-and-submatrix-copying-functions.md)
   Copy the contents of a submatrix to another submatrix.
 
 

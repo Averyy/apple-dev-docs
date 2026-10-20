@@ -1,25 +1,26 @@
 # IONamedValue
 
 **Framework**: DriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef struct { ... } IONamedValue;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [name](ionamedvalue/name.md)
-- [value](ionamedvalue/value.md)
+- [name](./ionamedvalue/name.md)
+- [value](./ionamedvalue/value.md)
 
 
 ---

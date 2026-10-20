@@ -1,7 +1,8 @@
 # SnapshotData.SnapshotReason.prelaunch
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system needs a snapshot for the dock, but the app has not been launched yet.
 
@@ -16,13 +17,14 @@ case prelaunch
 
 ## See Also
 
-- [SnapshotData.SnapshotReason.appBackgrounded](snapshotdata/snapshotreason/appbackgrounded.md)
+### Getting the snapshot reasons
+- [SnapshotData.SnapshotReason.appBackgrounded](./appbackgrounded.md)
   The app transitioned from the foreground to the background.
-- [SnapshotData.SnapshotReason.appScheduled](snapshotdata/snapshotreason/appscheduled.md)
+- [SnapshotData.SnapshotReason.appScheduled](./appscheduled.md)
   The app scheduled this snapshot.
-- [SnapshotData.SnapshotReason.complicationUpdate](snapshotdata/snapshotreason/complicationupdate.md)
+- [SnapshotData.SnapshotReason.complicationUpdate](./complicationupdate.md)
   The app updated the complication timeline.
-- [SnapshotData.SnapshotReason.returnToDefaultState](snapshotdata/snapshotreason/returntodefaultstate.md)
+- [SnapshotData.SnapshotReason.returnToDefaultState](./returntodefaultstate.md)
   It has been more than an hour since the user’s last interaction with the app; the app’s snapshot should return to its default state.
 
 

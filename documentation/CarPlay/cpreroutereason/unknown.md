@@ -1,7 +1,8 @@
 # CPRerouteReason.unknown
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The reason for rerouting is unknown or not specified.
 
@@ -14,6 +15,10 @@ The reason for rerouting is unknown or not specified.
 
 ```swift
 case unknown
+```
+
+```c
+CPRerouteReasonUnknown
 ```
 
 

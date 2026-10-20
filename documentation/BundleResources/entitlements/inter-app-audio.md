@@ -1,17 +1,21 @@
 # Inter-App Audio Entitlement
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether the app may exchange audio with other Inter-App Audio-enabled apps.
 
 **Availability**:
-- iOS 2.2+
-- iPadOS 2.2+
+- iOS 2.2+ - Deprecated in 13.0
+- iPadOS 2.2+ - Deprecated in 13.0
 
+> **Deprecated**: Inter-App Audio is deprecated in iOS 13 and is unavailable when running iPad apps in macOS.
 
+## Details
 
-**Type**: boolean
+- **Name**: `inter-app-audio` (Inter-App Audio)
+- **Type**: boolean
 
 #### Discussion
 
@@ -21,9 +25,10 @@ To add this entitlement to your app, enable the Inter-App Audio capability in Xc
 
 ## See Also
 
-- [Maps Entitlement](entitlements/com.apple.developer.maps.md)
+### Deprecated entitlements
+- [Maps Entitlement](./com.apple.developer.maps.md)
   A Boolean value that indicates whether the app may provide directions beyond what Maps supports, such as subway routes, hiking trails, and bike paths.
-- [All files entitlement](entitlements/com.apple.security.files.all.md)
+- [All files entitlement](./com.apple.security.files.all.md)
   A Boolean value that indicates whether the app may have access to all files.
 
 

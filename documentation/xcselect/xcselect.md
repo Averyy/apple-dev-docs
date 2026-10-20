@@ -1,7 +1,8 @@
 # xcselect
 
 **Framework**: xcselect  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Access the path of the macOS SDK available on the host system.
 
@@ -11,7 +12,7 @@ Access the path of the macOS SDK available on the host system.
 
 #### Overview
 
-The system provides [`xcselect_host_sdk_path`](xcselect_host_sdk_path.md), a function to locate the path to a macOS SDK version for building executables, libraries, and other content that runs on the local Mac. If you don’t use Xcode build tools, you can use this function to get the macOS SDK version you need.
+The system provides [`xcselect_host_sdk_path`](./xcselect_host_sdk_path.md), a function to locate the path to a macOS SDK version for building executables, libraries, and other content that runs on the local Mac. If you don’t use Xcode build tools, you can use this function to get the macOS SDK version you need.
 
 > **Note**: The `xcselect` framework is not available in Swift.
 

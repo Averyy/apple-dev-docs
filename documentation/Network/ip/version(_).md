@@ -1,7 +1,8 @@
 # version(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+

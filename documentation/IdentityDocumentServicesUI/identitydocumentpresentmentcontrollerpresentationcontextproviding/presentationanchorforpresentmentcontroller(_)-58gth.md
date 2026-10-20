@@ -2,6 +2,7 @@
 
 **Framework**: IdentityDocumentServicesUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Indicates the presentation anchor within which the system presents the controller’s UI to the presentment controller.

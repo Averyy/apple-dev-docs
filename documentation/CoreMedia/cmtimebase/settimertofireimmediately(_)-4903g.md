@@ -1,7 +1,8 @@
 # setTimerToFireImmediately(_:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the timer dispatch source to fire immediately once, overriding any previous calls.
 
@@ -22,11 +23,12 @@ func setTimerToFireImmediately<T>(_ timer: T) throws where T : DispatchSourceTim
 
 ## See Also
 
-- [func setTimerNextFireTime(Timer, fireTime: CMTime) throws](cmtimebase/settimernextfiretime(_:firetime:)-13hjt.md)
+### Setting Timers
+- [func setTimerNextFireTime(Timer, fireTime: CMTime) throws](./settimernextfiretime%28_,firetime%29-13hjt.md)
   Sets the time on the timebase’s timeline at which the timer should fire next.
-- [func setTimerNextFireTime<T>(T, fireTime: CMTime) throws](cmtimebase/settimernextfiretime(_:firetime:)-2yvaa.md)
+- [func setTimerNextFireTime<T>(T, fireTime: CMTime) throws](./settimernextfiretime%28_,firetime%29-2yvaa.md)
   Sets the time on the timebase’s timeline at which the timer dispatch source should fire next.
-- [func setTimerToFireImmediately(Timer) throws](cmtimebase/settimertofireimmediately(_:)-9t3wi.md)
+- [func setTimerToFireImmediately(Timer) throws](./settimertofireimmediately%28_%29-9t3wi.md)
   Sets the timer to fire immediately once, overriding any previous calls.
 
 

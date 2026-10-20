@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels the current speech recognition task.
 
@@ -18,6 +19,10 @@ Cancels the current speech recognition task.
 func cancel()
 ```
 
+```objc
+- (void) cancel;
+```
+
 #### Discussion
 
 You can cancel recognition tasks for both prerecorded and live audio input. For example, you might cancel a task in response to a user action or because the recording was interrupted.
@@ -26,7 +31,8 @@ When canceling a task, be sure to release any resources associated with the task
 
 ## See Also
 
-- [var isCancelled: Bool](sfspeechrecognitiontask/iscancelled.md)
+### Canceling a speech recognition task
+- [var isCancelled: Bool](./iscancelled.md)
   A Boolean value that indicates whether the speech recognition task was canceled.
 
 

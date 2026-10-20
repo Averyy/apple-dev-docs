@@ -1,7 +1,8 @@
 # kvImageMDTableHint_Float
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A table for transforming floating-point data.
 
@@ -10,7 +11,7 @@ A table for transforming floating-point data.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,18 @@ A table for transforming floating-point data.
 var kvImageMDTableHint_Float: vImageMDTableUsageHint { get }
 ```
 
+```c
+kvImageMDTableHint_Float
+```
+
 ## Mentions
 
-- [Applying color transforms to images with a multidimensional lookup table](applying-color-transforms-to-images-with-a-multidimensional-lookup-table.md)
+- [Applying color transforms to images with a multidimensional lookup table](./applying-color-transforms-to-images-with-a-multidimensional-lookup-table.md)
 
 ## See Also
 
-- [var kvImageMDTableHint_16Q12: vImageMDTableUsageHint](kvimagemdtablehint_16q12.md)
+### Usage hint constants
+- [var kvImageMDTableHint_16Q12: vImageMDTableUsageHint](./kvimagemdtablehint_16q12.md)
   A table for transforming 16Q12 data.
 
 

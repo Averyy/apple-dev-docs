@@ -1,7 +1,8 @@
 # PCI
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The transport type ID for audio devices connected with the PCI bus.
 
@@ -10,29 +11,30 @@ The transport type ID for audio devices connected with the PCI bus.
 
 ## Declaration
 
-```swift
+```c
 PCI
 ```
 
 ## See Also
 
-- [USB](audiodriverkit/iouseraudiotransporttype/usb.md)
+### Protocol-based Transport Types
+- [USB](./usb.md)
   The transport type ID for audio devices connected with USB.
-- [FireWire](audiodriverkit/iouseraudiotransporttype/firewire.md)
+- [FireWire](./firewire.md)
   The transport type ID for audio devices connected with FireWire.
-- [Bluetooth](audiodriverkit/iouseraudiotransporttype/bluetooth.md)
+- [Bluetooth](./bluetooth.md)
   The transport type ID for audio devices connected with Bluetooth.
-- [BluetoothLE](audiodriverkit/iouseraudiotransporttype/bluetoothle.md)
+- [BluetoothLE](./bluetoothle.md)
   The transport type ID for audio devices connected with Bluetooth Low Energy.
-- [HDMI](audiodriverkit/iouseraudiotransporttype/hdmi.md)
+- [HDMI](./hdmi.md)
   The transport type ID for audio devices connected with HDMI.
-- [DisplayPort](audiodriverkit/iouseraudiotransporttype/displayport.md)
+- [DisplayPort](./displayport.md)
   The transport type ID for audio devices connected with DisplayPort.
-- [AirPlay](audiodriverkit/iouseraudiotransporttype/airplay.md)
+- [AirPlay](./airplay.md)
   The transport type ID for audio devices connected with AirPlay.
-- [AVB](audiodriverkit/iouseraudiotransporttype/avb.md)
+- [AVB](./avb.md)
   The transport type ID for audio devices connected with Audio Video Bridging (AVB).
-- [Thunderbolt](audiodriverkit/iouseraudiotransporttype/thunderbolt.md)
+- [Thunderbolt](./thunderbolt.md)
   The transport type ID for audio devices connected with Thunderbolt.
 
 

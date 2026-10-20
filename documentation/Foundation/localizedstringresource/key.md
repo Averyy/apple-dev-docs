@@ -1,7 +1,8 @@
 # key
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key to use to look up a localized string.
 
@@ -22,15 +23,16 @@ let key: String
 
 ## See Also
 
-- [let defaultValue: String.LocalizationValue](localizedstringresource/defaultvalue.md)
+### Accessing resource properties
+- [let defaultValue: String.LocalizationValue](./defaultvalue.md)
   The resource’s default value.
-- [let table: String?](localizedstringresource/table.md)
+- [let table: String?](./table.md)
   The name of the table containing the key-value pairs.
-- [var bundle: LocalizedStringResource.BundleDescription](localizedstringresource/bundle.md)
+- [var bundle: LocalizedStringResource.BundleDescription](./bundle.md)
   The bundle containing the table’s strings file.
-- [LocalizedStringResource.BundleDescription](localizedstringresource/bundledescription.md)
+- [LocalizedStringResource.BundleDescription](./bundledescription.md)
   The location of a bundle to use for looking up localized strings, such as the main bundle, or a bundle at a specific file URL.
-- [var locale: Locale](localizedstringresource/locale.md)
+- [var locale: Locale](./locale.md)
   The locale to use to look up the localized string from the string resource.
 
 

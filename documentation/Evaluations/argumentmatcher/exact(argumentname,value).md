@@ -1,7 +1,8 @@
 # ArgumentMatcher.exact(argumentName:value:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates that the argument must be present with this exact key and value.
 
@@ -22,7 +23,7 @@ case exact(argumentName: String, value: ArgumentValue)
 
 ## Mentions
 
-- [Evaluating tool-calling behavior](evaluating-tool-calling-behavior.md)
+- [Evaluating tool-calling behavior](../evaluating-tool-calling-behavior.md)
 
 ## Parameters
 
@@ -31,7 +32,8 @@ case exact(argumentName: String, value: ArgumentValue)
 
 ## See Also
 
-- [ArgumentMatcher.keyOnly(argumentName:)](argumentmatcher/keyonly(argumentname:).md)
+### Exact matching
+- [ArgumentMatcher.keyOnly(argumentName:)](./keyonly%28argumentname%29.md)
   A value that indicates that the argument must be present with this key and no specific value.
 
 

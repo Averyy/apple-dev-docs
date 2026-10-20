@@ -1,7 +1,8 @@
 # setNeedsUpdateConfiguration()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the cell to update its configuration for its current state.
 
@@ -18,21 +19,26 @@ Informs the cell to update its configuration for its current state.
 func setNeedsUpdateConfiguration()
 ```
 
+```objc
+- (void) setNeedsUpdateConfiguration;
+```
+
 #### Discussion
 
-You call this method when you need the cell to update its configuration according to the current configuration state. The system calls this method automatically when the cell’s [`configurationState`](uitableviewcell/configurationstate-4xwj0.md) changes, as well as in other circumstances that may require an update. The system might combine multiple requests into a single update.
+You call this method when you need the cell to update its configuration according to the current configuration state. The system calls this method automatically when the cell’s [`configurationState`](./configurationstate-4xwj0.md) changes, as well as in other circumstances that may require an update. The system might combine multiple requests into a single update.
 
 If you add custom states to the cell’s configuration state, make sure to call this method every time those custom states change.
 
 ## See Also
 
-- [var configurationState: UICellConfigurationState](uitableviewcell/configurationstate-4xwj0.md)
+### Managing the state
+- [var configurationState: UICellConfigurationState](./configurationstate-4xwj0.md)
   The current configuration state of the cell.
-- [func updateConfiguration(using: UICellConfigurationState)](uitableviewcell/updateconfiguration(using:).md)
+- [func updateConfiguration(using: UICellConfigurationState)](./updateconfiguration%28using%29.md)
   Updates the cell’s configuration using the current state.
-- [var configurationUpdateHandler: UITableViewCell.ConfigurationUpdateHandler?](uitableviewcell/configurationupdatehandler-974.md)
+- [var configurationUpdateHandler: UITableViewCell.ConfigurationUpdateHandler?](./configurationupdatehandler-974.md)
   A block for handling updates to the cell’s configuration using the current state.
-- [UITableViewCell.ConfigurationUpdateHandler](uitableviewcell/configurationupdatehandler-swift.typealias.md)
+- [UITableViewCell.ConfigurationUpdateHandler](./configurationupdatehandler-swift.typealias.md)
   The type of block for handling updates to the cell’s configuration using the current state.
 
 

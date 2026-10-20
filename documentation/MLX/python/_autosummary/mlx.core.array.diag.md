@@ -6,34 +6,5 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.diag
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.array.diag.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.array.diag
-
- Table of contents 
-
-## Contents
-
-# mlx.core.array.diag
-
-**array.diag(*self*, *k: int = 0*, ***, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**array.diag(*self*, *k: int = 0*, ***, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.md#mlx.core.array)**
 : Extract a diagonal or construct a diagonal matrix.
-
-** Contents

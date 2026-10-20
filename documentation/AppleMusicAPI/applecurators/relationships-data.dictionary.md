@@ -1,7 +1,8 @@
 # AppleCurators.Relationships
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships for an Apple curator resource.
 
@@ -10,23 +11,26 @@ The relationships for an Apple curator resource.
 
 ## Declaration
 
-```swift
+```
 object AppleCurators.Relationships
 ```
 
 ## Topics
 
 ### Related Objects
-- [object AppleCurators.Relationships.AppleCuratorsPlaylistsRelationship](applecurators/relationships-data.dictionary/applecuratorsplaylistsrelationship.md)
+- [object AppleCurators.Relationships.AppleCuratorsPlaylistsRelationship](./relationships-data.dictionary/applecuratorsplaylistsrelationship.md)
   A relationship from the Apple curator to its playlists.
 
 ## Properties
 
-- `playlists` (AppleCurators.Relationships.AppleCuratorsPlaylistsRelationship): The playlists associated with this curator. By default, `playlists` includes identifiers only. Fetch limits: 10 default, 10 maximum.
+- `playlists` (AppleCurators.Relationships.AppleCuratorsPlaylistsRelationship): The playlists associated with this curator. By default, `playlists` includes identifiers only.
+
+  Fetch limits: 10 default, 10 maximum.
 
 ## See Also
 
-- [object AppleCurators.Attributes](applecurators/attributes-data.dictionary.md)
+### Related Objects
+- [object AppleCurators.Attributes](./attributes-data.dictionary.md)
   The attributes for an Apple curator resource.
 
 

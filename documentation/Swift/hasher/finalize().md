@@ -1,7 +1,8 @@
 # finalize()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finalizes the hasher state and returns the hash value.
 

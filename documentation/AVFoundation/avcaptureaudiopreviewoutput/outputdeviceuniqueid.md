@@ -1,7 +1,8 @@
 # outputDeviceUniqueID
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of the Core Audio output device to use for audio preview.
 
@@ -14,13 +15,18 @@ The unique identifier of the Core Audio output device to use for audio preview.
 var outputDeviceUniqueID: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * outputDeviceUniqueID;
+```
+
 #### Discussion
 
 Set the value to the unique identifier of the audio output device, or `nil` to use default system output.
 
 ## See Also
 
-- [var volume: Float](avcaptureaudiopreviewoutput/volume.md)
+### Configuring the output
+- [var volume: Float](./volume.md)
   The output volume of the audio preview.
 
 

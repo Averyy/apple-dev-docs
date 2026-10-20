@@ -1,7 +1,8 @@
 # toneMapMode
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var toneMapMode: CALayer.ToneMapMode { get set }
+```
+
+```objc
+@property (copy) CAToneMapMode toneMapMode;
 ```
 
 

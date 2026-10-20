@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 queue_chain_t queueChain;
 ```
 
@@ -15,9 +15,10 @@ queue header for use by IOATAController.
 
 ## See Also
 
-- [syncer](ioatabuscommand/syncer.md)
-- [state](ioatabuscommand/state.md)
-- [reserved](ioatabuscommand/reserved.md)
+### Instance Variables
+- [syncer](./syncer.md)
+- [state](./state.md)
+- [reserved](./reserved.md)
 
 
 ---

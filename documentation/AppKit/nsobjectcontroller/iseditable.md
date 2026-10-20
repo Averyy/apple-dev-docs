@@ -1,12 +1,13 @@
 # isEditable
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the receiver allows adding and removing objects.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ A Boolean that indicates whether the receiver allows adding and removing objects
 var isEditable: Bool { get set }
 ```
 
+```objc
+@property (getter=isEditable) BOOL editable;
+```
+
 #### Discussion
 
-The default is [`true`](https://developer.apple.com/documentation/swift/true).
+The default is [`true`](../../Swift/true.md).
 
 
 ---

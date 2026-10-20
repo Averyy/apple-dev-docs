@@ -1,7 +1,8 @@
 # kSPCProcCmd_INQUIRY
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSPCProcCmd_INQUIRY = 0x12
 ```
 

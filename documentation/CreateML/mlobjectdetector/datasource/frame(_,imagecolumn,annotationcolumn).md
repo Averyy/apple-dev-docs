@@ -1,7 +1,8 @@
 # MLObjectDetector.DataSource.frame(_:imageColumn:annotationColumn:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Data specified by a `DataFrame` containing a column for image file paths and a column with annotations.
 

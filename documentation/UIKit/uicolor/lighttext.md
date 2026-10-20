@@ -1,20 +1,25 @@
 # lightText
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The nonadaptable system color for text on a dark background.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
 ```swift
 class var lightText: UIColor { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) UIColor * lightTextColor;
 ```
 
 #### Return Value
@@ -27,7 +32,8 @@ This color doesn’t adapt to changes in the underlying trait environment.
 
 ## See Also
 
-- [class var darkText: UIColor](uicolor/darktext.md)
+### Nonadaptable colors
+- [class var darkText: UIColor](./darktext.md)
   The nonadaptable system color for text on a light background.
 
 

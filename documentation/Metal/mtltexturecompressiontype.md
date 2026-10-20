@@ -1,7 +1,8 @@
 # MTLTextureCompressionType
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 15.0+
@@ -17,39 +18,44 @@
 enum MTLTextureCompressionType
 ```
 
+```c
+enum MTLTextureCompressionType : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTLTextureCompressionType.lossless](mtltexturecompressiontype/lossless.md)
-- [MTLTextureCompressionType.lossy](mtltexturecompressiontype/lossy.md)
+- [MTLTextureCompressionType.lossless](./mtltexturecompressiontype/lossless.md)
+- [MTLTextureCompressionType.lossy](./mtltexturecompressiontype/lossy.md)
 ### Initializers
-- [init?(rawValue: Int)](mtltexturecompressiontype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mtltexturecompressiontype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Understanding color-renderable pixel format sizes](understanding-color-renderable-pixel-format-sizes.md)
+### Texture basics
+- [Understanding color-renderable pixel format sizes](./understanding-color-renderable-pixel-format-sizes.md)
   Know the size limits of color render targets in Apple GPUs based on the target’s pixel format.
-- [Optimizing texture data](optimizing-texture-data.md)
+- [Optimizing texture data](./optimizing-texture-data.md)
   Optimize a texture’s data to improve GPU or CPU access.
-- [protocol MTLTexture](mtltexture.md)
+- [protocol MTLTexture](./mtltexture.md)
   A resource that holds formatted image data.
-- [class MTLTextureDescriptor](mtltexturedescriptor.md)
+- [class MTLTextureDescriptor](./mtltexturedescriptor.md)
   An instance that you use to configure new Metal texture instances.
-- [class MTKTextureLoader](../metalkit/mtktextureloader.md)
+- [class MTKTextureLoader](../MetalKit/mtktextureloader.md)
   An object that creates textures from existing data in common image formats.
-- [class MTLSharedTextureHandle](mtlsharedtexturehandle.md)
+- [class MTLSharedTextureHandle](./mtlsharedtexturehandle.md)
   A texture handle that can be shared across process address space boundaries.
-- [enum MTLPixelFormat](mtlpixelformat.md)
+- [enum MTLPixelFormat](./mtlpixelformat.md)
   The data formats that describe the organization and characteristics of individual pixels in a texture.
 
 

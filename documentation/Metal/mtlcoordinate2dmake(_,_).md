@@ -1,22 +1,27 @@
 # MTLCoordinate2DMake(_:_:)
 
 **Framework**: Metal  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a new 2D point with the specified coordinates.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 func MTLCoordinate2DMake(_ x: Float, _ y: Float) -> MTLCoordinate2D
+```
+
+```c
+static MTLCoordinate2D MTLCoordinate2DMake(float x, float y);
 ```
 
 ## Parameters
@@ -26,19 +31,20 @@ func MTLCoordinate2DMake(_ x: Float, _ y: Float) -> MTLCoordinate2D
 
 ## See Also
 
-- [Rendering at different rasterization rates](rendering-at-different-rasterization-rates.md)
+### Rasterization settings
+- [Rendering at different rasterization rates](./rendering-at-different-rasterization-rates.md)
   Configure a rasterization rate map to vary rasterization rates depending on the amount of detail needed.
-- [Creating a rasterization rate map](creating-a-rasterization-rate-map.md)
+- [Creating a rasterization rate map](./creating-a-rasterization-rate-map.md)
   Define the rasterization rates for each part of your render target.
-- [Rendering with a rasterization rate map](rendering-with-a-rasterization-rate-map.md)
+- [Rendering with a rasterization rate map](./rendering-with-a-rasterization-rate-map.md)
   Create offscreen textures to hold intermediate rasterized data.
-- [Scaling variable rasterization rate content](scaling-variable-rasterization-rate-content.md)
+- [Scaling variable rasterization rate content](./scaling-variable-rasterization-rate-content.md)
   Use the rate map data to scale the content to fill your destination texture.
-- [class MTLRasterizationRateMapDescriptor](mtlrasterizationratemapdescriptor.md)
+- [class MTLRasterizationRateMapDescriptor](./mtlrasterizationratemapdescriptor.md)
   An object that you use to configure new rasterization rate maps.
-- [protocol MTLRasterizationRateMap](mtlrasterizationratemap.md)
+- [protocol MTLRasterizationRateMap](./mtlrasterizationratemap.md)
   A compiled read-only instance that determines how to apply variable rasterization rates when rendering.
-- [typealias MTLCoordinate2D](mtlcoordinate2d.md)
+- [typealias MTLCoordinate2D](./mtlcoordinate2d.md)
   A coordinate in the viewport.
 
 

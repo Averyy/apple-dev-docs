@@ -1,7 +1,8 @@
 # language
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The language to use when displaying the lookup results.
 
@@ -10,23 +11,24 @@ The language to use when displaying the lookup results.
 
 ## Declaration
 
-```swift
+```
 language?: string;
 ```
 
 #### Discussion
 
-Tell the geocoder to return results in this language. For example, setting the option `{ language: 'fr-CA' }` tells the server to send results localized to Canadian French. If you set it, this option overrides the language you provide in the [`Geocoder`](geocoder.md) constructor.
+Tell the geocoder to return results in this language. For example, setting the option `{ language: 'fr-CA' }` tells the server to send results localized to Canadian French. If you set it, this option overrides the language you provide in the [`Geocoder`](../geocoder.md) constructor.
 
 ## See Also
 
-- [coordinate](geocoderlookupoptions/coordinate.md)
+### Options
+- [coordinate](./coordinate.md)
   Coordinates for constraining the lookup results.
-- [limitToCountries](geocoderlookupoptions/limittocountries.md)
+- [limitToCountries](./limittocountries.md)
   A list of countries for constraining the lookup results.
-- [region](geocoderlookupoptions/region.md)
+- [region](./region.md)
   A region for constraining lookup results.
-- [signal](geocoderlookupoptions/signal.md)
+- [signal](./signal.md)
   A signal object allowing you to cancel the request.
 
 

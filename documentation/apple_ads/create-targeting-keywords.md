@@ -1,12 +1,15 @@
 # Create Targeting Keywords
 
 **Framework**: Apple Ads  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Creates targeting keywords in ad groups.
 
 **Availability**:
-- Search Ads 5.0+
+- Search Ads 5.0+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 #### Overview
 
@@ -16,7 +19,7 @@ Creates targeting keywords in ad groups.
 - 401: An unauthenticated call fails to get the requested response.
 - 403: Insufficient rights to the resource.
 - 404: The API can’t locate the resource.
-- 429: The API calls exceed rate-limit thresholds. See the Rate Limits subsection of [`Calling the Apple Ads API`](calling-the-apple-search-ads-api.md).
+- 429: The API calls exceed rate-limit thresholds. See the Rate Limits subsection of [Calling the Apple Ads API](./calling-the-apple-search-ads-api.md).
 - 500: The Apple Ads server is temporarily down or unreachable. The request may be valid, but you need to retry it later.
 
 #### Discussion
@@ -27,7 +30,7 @@ To create targeting keywords, use the associated `campaignId` and `adgroupId` in
 
 > **Note**:  The limit is 5000 targeting keywords per campaign and per ad group.
 
-##### Payload Example Create Ad Group Targeting Keywords
+##### Payload example: Create ad group targeting keywords
 
 **Request**:
 
@@ -88,7 +91,7 @@ POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adg
 ]
 ```
 
-##### Payload Example Create Ad Group Targeting Keywords in a Maximize Conversions Campaign
+##### Payload example: Create ad group targeting keywords in a Maximize Conversions campaign
 
 - `bidAmount` must be omitted, `null`, or `0`.
 - Keywords cannot be created in automated ad groups.
@@ -150,26 +153,42 @@ POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adg
 
 ## Parameters
 
+### Path Parameters
+
 - `adgroupId` (int64) *(required)*: The unique identifier for the ad group.
 - `campaignId` (int64) *(required)*: The unique identifier for the campaign.
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `[Keyword]`
+
 The request body that includes keyword targeting details.
+
+## Responses
+
+- `200` OK (`KeywordListResponse`, `application/json`): If the call succeeds, the API returns a list of [`Keyword`](./keyword.md) objects in the response payload with an HTTP status code of `200` `(OK)`. If unsuccessful, the HTTP status code indicates the error with details in the error message.
+- `400` Bad Request (`ApiErrorResponse`, `application/json`)
+- `401` Unauthorized (`ApiErrorResponse`, `application/json`)
+- `403` Forbidden (`ApiErrorResponse`, `application/json`)
+- `404` Not Found (`ApiErrorResponse`, `application/json`)
+- `429` (`ApiErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ApiErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Find Targeting Keywords in a Campaign](find-targeting-keywords-in-a-campaign.md)
+### Ad Group Targeting Keywords Endpoints
+- [Find Targeting Keywords in a Campaign](./find-targeting-keywords-in-a-campaign.md)
   Fetches targeting keywords in a campaign’s ad groups.
-- [Get a Targeting Keyword in an Ad Group](get-a-targeting-keyword-in-an-ad-group.md)
+- [Get a Targeting Keyword in an Ad Group](./get-a-targeting-keyword-in-an-ad-group.md)
   Fetches a specific targeting keyword in an ad group.
-- [Get All Targeting Keywords in an Ad Group](get-all-targeting-keywords-in-an-ad-group.md)
+- [Get All Targeting Keywords in an Ad Group](./get-all-targeting-keywords-in-an-ad-group.md)
   Fetches all targeting keywords in ad groups.
-- [Update Targeting Keywords](update-targeting-keywords.md)
+- [Update Targeting Keywords](./update-targeting-keywords.md)
   Updates targeting keywords in ad groups.
-- [Delete Targeting Keywords](delete-targeting-keywords.md)
+- [Delete Targeting Keywords](./delete-targeting-keywords.md)
   Deletes targeting keywords from ad groups.
-- [Delete a Targeting Keyword](delete-a-targeting-keyword.md)
+- [Delete a Targeting Keyword](./delete-a-targeting-keyword.md)
   Deletes a targeting keyword in an ad group.
 
 

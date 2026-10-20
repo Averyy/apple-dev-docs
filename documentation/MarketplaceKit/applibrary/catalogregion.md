@@ -1,7 +1,8 @@
 # catalogRegion
 
 **Framework**: MarketplaceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A country code for the device’s current region.
 
@@ -18,7 +19,7 @@ final var catalogRegion: String? { get async }
 
 ## Mentions
 
-- [Participating in alternative distribution for specific regions](participating-in-alternative-distribution-for-specific-regions.md)
+- [Participating in alternative distribution for specific regions](../participating-in-alternative-distribution-for-specific-regions.md)
 
 #### Discussion
 

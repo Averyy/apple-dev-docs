@@ -1,26 +1,29 @@
 # AppScreenshotSetCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships to other resources that you can set with this request.
 
 **Availability**:
-- App Store Connect API 1.2+
+- App Store Connect API 1.2+ - Deprecated in 4.5
+
+> **Deprecated**: This object is deprecated. Use [`AppAssetLibraryPlacementCreateRequest`](../../appassetlibraryplacementcreaterequest.md) instead.
 
 ## Declaration
 
-```swift
+```
 object AppScreenshotSetCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppScreenshotSetCreateRequest.Data.Relationships.AppStoreVersionLocalization](appscreenshotsetcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionlocalization-data.dictionary.md)
+- [object AppScreenshotSetCreateRequest.Data.Relationships.AppStoreVersionLocalization](./relationships-data.dictionary/appstoreversionlocalization-data.dictionary.md)
   The relationships to other resources that you can set with this request.
-- [object AppScreenshotSetCreateRequest.Data.Relationships.AppCustomProductPageLocalization](appscreenshotsetcreaterequest/data-data.dictionary/relationships-data.dictionary/appcustomproductpagelocalization-data.dictionary.md)
-- [object AppScreenshotSetCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatmentLocalization](appscreenshotsetcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionexperimenttreatmentlocalization-data.dictionary.md)
+- [object AppScreenshotSetCreateRequest.Data.Relationships.AppCustomProductPageLocalization](./relationships-data.dictionary/appcustomproductpagelocalization-data.dictionary.md)
+- [object AppScreenshotSetCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatmentLocalization](./relationships-data.dictionary/appstoreversionexperimenttreatmentlocalization-data.dictionary.md)
 
 ## Properties
 
@@ -30,7 +33,8 @@ object AppScreenshotSetCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object AppScreenshotSetCreateRequest.Data.Attributes](appscreenshotsetcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object AppScreenshotSetCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   Attributes that you set that describe the new resource.
 
 

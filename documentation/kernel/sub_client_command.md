@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct sub_client_command {
     ...
 };
@@ -17,9 +17,9 @@ struct sub_client_command {
 ## Topics
 
 ### Instance Properties
-- [client](sub_client_command/1525829-client.md)
-- [cmd](sub_client_command/1525657-cmd.md)
-- [cmdsize](sub_client_command/1525830-cmdsize.md)
+- [client](./sub_client_command/api-1525829-client.md)
+- [cmd](./sub_client_command/api-1525657-cmd.md)
+- [cmdsize](./sub_client_command/api-1525830-cmdsize.md)
 
 
 ---

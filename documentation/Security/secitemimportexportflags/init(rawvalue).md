@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Security  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an item import/export flag structure.
 

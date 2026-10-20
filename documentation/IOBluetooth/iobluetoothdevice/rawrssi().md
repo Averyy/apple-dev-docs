@@ -1,7 +1,8 @@
 # rawRSSI()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Get the raw RSSI device (if connected).
 
@@ -12,6 +13,10 @@ Get the raw RSSI device (if connected).
 
 ```swift
 func rawRSSI() -> BluetoothHCIRSSIValue
+```
+
+```objc
+- (BluetoothHCIRSSIValue) rawRSSI;
 ```
 
 #### Return Value

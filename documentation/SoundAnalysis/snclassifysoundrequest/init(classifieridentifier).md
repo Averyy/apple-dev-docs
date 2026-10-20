@@ -1,7 +1,8 @@
 # init(classifierIdentifier:)
 
 **Framework**: Sound Analysis  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a request that uses the framework’s built-in sound classification model.
 
@@ -20,19 +21,24 @@ Creates a request that uses the framework’s built-in sound classification mode
 init(classifierIdentifier: SNClassifierIdentifier) throws
 ```
 
+```objc
+- (instancetype) initWithClassifierIdentifier:(SNClassifierIdentifier) classifierIdentifier error:(NSError **) error;
+```
+
 ## Mentions
 
-- [Classifying Sounds in an Audio File](classifying-sounds-in-an-audio-file.md)
+- [Classifying Sounds in an Audio File](../classifying-sounds-in-an-audio-file.md)
 
 ## Parameters
 
-- `classifierIdentifier`: A sound classifier version identifier, such as [`version1`](snclassifieridentifier/version1.md).
+- `classifierIdentifier`: A sound classifier version identifier, such as [`version1`](../snclassifieridentifier/version1.md).
 
 ## See Also
 
-- [init(mlModel: MLModel) throws](snclassifysoundrequest/init(mlmodel:)-6rmee.md)
+### Creating a Request
+- [init(mlModel: MLModel) throws](./init%28mlmodel%29-6rmee.md)
   Creates a request that uses a custom sound classification model.
-- [struct SNClassifierIdentifier](snclassifieridentifier.md)
+- [struct SNClassifierIdentifier](../snclassifieridentifier.md)
   An identifier that represents the versions of the framework’s sound classifier.
 
 

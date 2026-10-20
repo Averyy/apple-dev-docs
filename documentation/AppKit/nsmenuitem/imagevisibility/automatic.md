@@ -1,7 +1,8 @@
 # NSMenuItem.ImageVisibility.automatic
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 AppKit should choose whether the item’s image is visible, considering the system configuration.
 
@@ -14,11 +15,16 @@ AppKit should choose whether the item’s image is visible, considering the syst
 case automatic
 ```
 
+```c
+NSMenuItemImageVisibilityAutomatic
+```
+
 ## See Also
 
-- [NSMenuItem.ImageVisibility.hidden](nsmenuitem/imagevisibility/hidden.md)
+### Getting visibility values
+- [NSMenuItem.ImageVisibility.hidden](./hidden.md)
   The item image should not be visible.
-- [NSMenuItem.ImageVisibility.visible](nsmenuitem/imagevisibility/visible.md)
+- [NSMenuItem.ImageVisibility.visible](./visible.md)
   The item image should always be visible. Note that in some cases, AppKit may still hide the image, overriding this preference.
 
 

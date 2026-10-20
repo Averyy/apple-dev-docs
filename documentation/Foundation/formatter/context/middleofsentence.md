@@ -1,7 +1,8 @@
 # Formatter.Context.middleOfSentence
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The formatting context for the middle of a sentence.
 
@@ -20,21 +21,26 @@ The formatting context for the middle of a sentence.
 case middleOfSentence
 ```
 
+```c
+NSFormattingContextMiddleOfSentence
+```
+
 #### Discussion
 
 Use this context for dates or date symbols appearing at the middle of a sentence.
 
 ## See Also
 
-- [Formatter.Context.unknown](formatter/context/unknown.md)
+### Constants
+- [Formatter.Context.unknown](./unknown.md)
   An unknown formatting context.
-- [Formatter.Context.dynamic](formatter/context/dynamic.md)
+- [Formatter.Context.dynamic](./dynamic.md)
   A formatting context determined automatically at runtime.
-- [Formatter.Context.standalone](formatter/context/standalone.md)
+- [Formatter.Context.standalone](./standalone.md)
   The formatting context for stand-alone usage.
-- [Formatter.Context.listItem](formatter/context/listitem.md)
+- [Formatter.Context.listItem](./listitem.md)
   The formatting context for a list or menu item.
-- [Formatter.Context.beginningOfSentence](formatter/context/beginningofsentence.md)
+- [Formatter.Context.beginningOfSentence](./beginningofsentence.md)
   The formatting context for the beginning of a sentence.
 
 

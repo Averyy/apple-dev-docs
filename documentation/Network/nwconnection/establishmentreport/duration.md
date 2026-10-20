@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total duration of the successful connection establishment attempt, from the preparing state to the ready state.
 
@@ -22,9 +23,10 @@ let duration: TimeInterval
 
 ## See Also
 
-- [let previousAttemptCount: Int](nwconnection/establishmentreport/previousattemptcount.md)
+### Inspecting Connection Attempts
+- [let previousAttemptCount: Int](./previousattemptcount.md)
   The number of attempts made before the successful attempt, when the connection moved from the preparing state back to the waiting state.
-- [let attemptStartedAfterInterval: TimeInterval](nwconnection/establishmentreport/attemptstartedafterinterval.md)
+- [let attemptStartedAfterInterval: TimeInterval](./attemptstartedafterinterval.md)
   The time between the call to start and the beginning of the successful connection attempt.
 
 

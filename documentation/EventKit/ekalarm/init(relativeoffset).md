@@ -1,7 +1,8 @@
 # init(relativeOffset:)
 
 **Framework**: EventKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns an alarm with a relative offset.
 
@@ -19,6 +20,10 @@ Creates and returns an alarm with a relative offset.
 init(relativeOffset offset: TimeInterval)
 ```
 
+```objc
++ (EKAlarm *) alarmWithRelativeOffset:(NSTimeInterval) offset;
+```
+
 #### Return Value
 
 The created alarm.
@@ -33,7 +38,8 @@ Negative offset values fire before the start of the event, while positive values
 
 ## See Also
 
-- [init(absoluteDate: Date)](ekalarm/init(absolutedate:).md)
+### Creating an Alarm
+- [init(absoluteDate: Date)](./init%28absolutedate%29.md)
   Creates and returns an alarm with an absolute date.
 
 

@@ -1,14 +1,15 @@
 # ppnum_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 typedef uint32_t ppnum_t;
 ```
 

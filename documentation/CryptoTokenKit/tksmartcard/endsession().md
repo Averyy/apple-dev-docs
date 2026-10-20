@@ -1,7 +1,8 @@
 # endSession()
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Completes any pending transmissions and ends the session to the Smart Card.
 
@@ -20,15 +21,20 @@ Completes any pending transmissions and ends the session to the Smart Card.
 func endSession()
 ```
 
+```objc
+- (void) endSession;
+```
+
 #### Discussion
 
-Calls to this method should balance calls to [`beginSession(reply:)`](tksmartcard/beginsession(reply:).md).
+Calls to this method should balance calls to [`beginSession(reply:)`](./beginsession%28reply%29.md).
 
 ## See Also
 
-- [func beginSession(reply: (Bool, (any Error)?) -> Void)](tksmartcard/beginsession(reply:).md)
+### Communicating with the Smart Card
+- [func beginSession(reply: (Bool, (any Error)?) -> Void)](./beginsession%28reply%29.md)
   Begins a session with the Smart Card.
-- [func transmit(Data, reply: (Data?, (any Error)?) -> Void)](tksmartcard/transmit(_:reply:).md)
+- [func transmit(Data, reply: (Data?, (any Error)?) -> Void)](./transmit%28_,reply%29.md)
   Transmits data in Application Protocol Data Unit (APDU) format to the Smart Card.
 
 

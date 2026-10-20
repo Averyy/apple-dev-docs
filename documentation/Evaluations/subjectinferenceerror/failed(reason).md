@@ -1,7 +1,8 @@
 # SubjectInferenceError.failed(reason:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The subject method threw an error.
 

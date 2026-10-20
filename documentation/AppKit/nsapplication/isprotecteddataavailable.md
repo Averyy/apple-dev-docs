@@ -1,7 +1,8 @@
 # isProtectedDataAvailable
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
@@ -12,13 +13,18 @@
 var isProtectedDataAvailable: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isProtectedDataAvailable) BOOL protectedDataAvailable;
+```
+
 ## See Also
 
-- [func extendStateRestoration()](nsapplication/extendstaterestoration.md)
+### Restoring App Windows at Launch
+- [func extendStateRestoration()](./extendstaterestoration%28%29.md)
   Allows an app to extend its state restoration period.
-- [func completeStateRestoration()](nsapplication/completestaterestoration.md)
+- [func completeStateRestoration()](./completestaterestoration%28%29.md)
   Completes the extended state restoration.
-- [func restoreWindow(withIdentifier: NSUserInterfaceItemIdentifier, state: NSCoder, completionHandler: (NSWindow?, (any Error)?) -> Void) -> Bool](nsapplication/restorewindow(withidentifier:state:completionhandler:).md)
+- [func restoreWindow(withIdentifier: NSUserInterfaceItemIdentifier, state: NSCoder, completionHandler: (NSWindow?, (any Error)?) -> Void) -> Bool](./restorewindow%28withidentifier,state,completionhandler%29.md)
   Invoked to request that a window be restored.
 
 

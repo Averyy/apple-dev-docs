@@ -1,7 +1,8 @@
 # additionalViews
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag indicating that the video content contains additional views beyond the left or right eye.
 
@@ -20,9 +21,14 @@ A flag indicating that the video content contains additional views beyond the le
 static var additionalViews: CMStereoViewInterpretationOptions { get }
 ```
 
+```c
+kCMStereoViewInterpretation_AdditionalViews
+```
+
 ## See Also
 
-- [static var stereoOrderReversed: CMStereoViewInterpretationOptions](cmstereoviewinterpretationoptions/stereoorderreversed.md)
+### Stereo View Options
+- [static var stereoOrderReversed: CMStereoViewInterpretationOptions](./stereoorderreversed.md)
   Changes the default ordering of eye data, switching it from left-to-right to right-to-left.
 
 

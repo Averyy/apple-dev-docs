@@ -1,7 +1,8 @@
 # attributedName
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An attributed version of the data series name.
 
@@ -21,13 +22,18 @@ An attributed version of the data series name.
 var attributedName: NSAttributedString { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSAttributedString * attributedName;
+```
+
 #### Discussion
 
-If you set the value of this property, the system uses this value instead of [`name`](axdataseriesdescriptor/name.md).
+If you set the value of this property, the system uses this value instead of [`name`](./name.md).
 
 ## See Also
 
-- [var name: String?](axdataseriesdescriptor/name.md)
+### Naming the series
+- [var name: String?](./name.md)
   The name of the data series.
 
 

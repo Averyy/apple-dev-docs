@@ -1,7 +1,8 @@
 # parentURL
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL of the web page that’s responsible for the flow’s creation.
 
@@ -17,15 +18,20 @@ A URL of the web page that’s responsible for the flow’s creation.
 var parentURL: URL? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSURL * parentURL;
+```
+
 #### Discussion
 
 This property will be non-nil only if the flow is loading a resource into a frame. In that case, this property will be set to the URL of the web page containing the frame.
 
 ## See Also
 
-- [var request: URLRequest?](nefilterbrowserflow/request.md)
+### Getting browser flow properties
+- [var request: URLRequest?](./request.md)
   An HTTP request of the flow.
-- [var response: URLResponse?](nefilterbrowserflow/response.md)
+- [var response: URLResponse?](./response.md)
   An HTTP response of the flow.
 
 

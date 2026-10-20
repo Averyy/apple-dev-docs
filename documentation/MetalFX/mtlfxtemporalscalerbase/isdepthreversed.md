@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether the depth texture uses zero to represent the farthest distance.
@@ -18,6 +19,10 @@ A Boolean value that indicates whether the depth texture uses zero to represent 
 
 ```swift
 var isDepthReversed: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite, getter=isDepthReversed) BOOL depthReversed;
 ```
 
 

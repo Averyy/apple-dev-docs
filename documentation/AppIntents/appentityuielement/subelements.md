@@ -1,7 +1,8 @@
 # subelements
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of UI elements that represent subelements in the view hierarchy.
 

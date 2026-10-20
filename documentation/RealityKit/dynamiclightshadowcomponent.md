@@ -1,7 +1,8 @@
 # DynamicLightShadowComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that controls an entity’s shadow from dynamic (virtual) lights.
 
@@ -21,7 +22,7 @@ struct DynamicLightShadowComponent
 
 #### Overview
 
-Use `DynamicLightShadowComponent` to control whether an entity casts shadows from dynamic (virtual) lights. Dynamic lights cast shadows on other virtual objects, but not on physical objects. You can add a dynamic light shadow component to any entity that has a [`ModelComponent`](modelcomponent.md) in its component set by adding a dynamic light shadow component to the entity’s [`components`](entity/components.md) property.
+Use `DynamicLightShadowComponent` to control whether an entity casts shadows from dynamic (virtual) lights. Dynamic lights cast shadows on other virtual objects, but not on physical objects. You can add a dynamic light shadow component to any entity that has a [`ModelComponent`](./modelcomponent.md) in its component set by adding a dynamic light shadow component to the entity’s [`components`](./entity/components.md) property.
 
 ```swift
 if let model = try? await ModelEntity(named: "tv_retro") {
@@ -37,20 +38,21 @@ You need to add the dynamic lights shadow component to each entity you want to a
 ## Topics
 
 ### Initializers
-- [init(castsShadow: Bool)](dynamiclightshadowcomponent/init(castsshadow:).md)
+- [init(castsShadow: Bool)](./dynamiclightshadowcomponent/init%28castsshadow%29.md)
   Creates a dynamic light shadow component.
 ### Instance Properties
-- [var castsShadow: Bool](dynamiclightshadowcomponent/castsshadow.md)
+- [var castsShadow: Bool](./dynamiclightshadowcomponent/castsshadow.md)
   A Boolean value that indicates whether an entity casts a shadow.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
+- [Component](./component.md)
 
 ## See Also
 
-- [struct GroundingShadowComponent](groundingshadowcomponent.md)
+### General shadows
+- [struct GroundingShadowComponent](./groundingshadowcomponent.md)
   A component that controls an entity’s grounding shadow.
 
 

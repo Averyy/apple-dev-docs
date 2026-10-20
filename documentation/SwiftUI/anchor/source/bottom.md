@@ -1,7 +1,8 @@
 # bottom
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -18,10 +19,13 @@
 static var bottom: Anchor<CGPoint>.Source { get }
 ```
 
+Available when `Value` is `CGPoint`.
+
 ## See Also
 
-- [static var bottomTrailing: Anchor<CGPoint>.Source](anchor/source/bottomtrailing.md)
-- [static var bottomLeading: Anchor<CGPoint>.Source](anchor/source/bottomleading.md)
+### Getting bottom anchor sources
+- [static var bottomTrailing: Anchor<CGPoint>.Source](./bottomtrailing.md)
+- [static var bottomLeading: Anchor<CGPoint>.Source](./bottomleading.md)
 
 
 ---

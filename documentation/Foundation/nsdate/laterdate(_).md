@@ -1,7 +1,8 @@
 # laterDate(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the later of the receiver and another given date.
 
@@ -20,9 +21,13 @@ Returns the later of the receiver and another given date.
 func laterDate(_ anotherDate: Date) -> Date
 ```
 
+```objc
+- (NSDate *) laterDate:(NSDate *) anotherDate;
+```
+
 #### Return Value
 
-The later of the receiver and `anotherDate`, determined using [`timeIntervalSince(_:)`](nsdate/timeintervalsince(_:).md). If the receiver and `anotherDate` represent the same date, returns the receiver.
+The later of the receiver and `anotherDate`, determined using [`timeIntervalSince(_:)`](./timeintervalsince%28_%29.md). If the receiver and `anotherDate` represent the same date, returns the receiver.
 
 ## Parameters
 
@@ -30,13 +35,15 @@ The later of the receiver and `anotherDate`, determined using [`timeIntervalSinc
 
 ## See Also
 
-- [func isEqual(Any?) -> Bool](../objectivec/nsobjectprotocol/isequal(_:).md)
+### Related Documentation
+- [func isEqual(Any?) -> Bool](../../ObjectiveC/nsobjectprotocol/isequal%28_%29.md)
   Returns a Boolean value that indicates whether the receiver and a given object are equal.
-- [func isEqual(to: Date) -> Bool](nsdate/isequal(to:).md)
+### Comparing Dates
+- [func isEqual(to: Date) -> Bool](./isequal%28to%29.md)
   Returns a Boolean value that indicates whether a given object is a date that is exactly equal the receiver.
-- [func earlierDate(Date) -> Date](nsdate/earlierdate(_:).md)
+- [func earlierDate(Date) -> Date](./earlierdate%28_%29.md)
   Returns the earlier of the receiver and another given date.
-- [func compare(Date) -> ComparisonResult](nsdate/compare(_:).md)
+- [func compare(Date) -> ComparisonResult](./compare%28_%29.md)
   Indicates the temporal ordering of the receiver and another given date.
 
 

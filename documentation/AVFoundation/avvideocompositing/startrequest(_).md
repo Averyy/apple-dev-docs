@@ -2,6 +2,7 @@
 
 **Framework**: AVFoundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Directs a custom video compositor object to create a new pixel buffer composed asynchronously from a collection of sources.
@@ -20,25 +21,30 @@ Directs a custom video compositor object to create a new pixel buffer composed a
 func startRequest(_ asyncVideoCompositionRequest: AVAsynchronousVideoCompositionRequest)
 ```
 
+```objc
+- (void) startVideoCompositionRequest:(AVAsynchronousVideoCompositionRequest *) asyncVideoCompositionRequest;
+```
+
 #### Discussion
 
-The custom compositor is expected to invoke, either subsequently or immediately,  the `asyncVideoCompositionRequest` object’s [`finish(withComposedVideoFrame:)`](avasynchronousvideocompositionrequest/finish(withcomposedvideoframe:).md) or [`finish(with:)`](avasynchronousvideocompositionrequest/finish(with:).md) methods.
+The custom compositor is expected to invoke, either subsequently or immediately,  the `asyncVideoCompositionRequest` object’s [`finish(withComposedVideoFrame:)`](../avasynchronousvideocompositionrequest/finish%28withcomposedvideoframe%29.md) or [`finish(with:)`](../avasynchronousvideocompositionrequest/finish%28with%29.md) methods.
 
 If you intend to finish rendering the frame after  handling of this message returns, you must retain `asyncVideoCompositionRequest` until after composition is finished.
 
 Note that if the custom compositor’s implementation of this method returns without finishing the composition immediately, it may be invoked again with another composition request before the prior request is finished; in such cases the custom compositor should be prepared to manage multiple composition requests.
 
-If the rendered frame is exactly the same as one of the source frames, with no letterboxing, pillboxing or cropping needed, then the appropriate source pixel buffer may be returned, after [`CFRetain`](https://developer.apple.com/documentation/corefoundation/cfretain) has been called on it).
+If the rendered frame is exactly the same as one of the source frames, with no letterboxing, pillboxing or cropping needed, then the appropriate source pixel buffer may be returned, after [`CFRetain`](../../CoreFoundation/cfretain.md) has been called on it).
 
 ## Parameters
 
-- `asyncVideoCompositionRequest`: An instance of [`AVAsynchronousVideoCompositionRequest`](avasynchronousvideocompositionrequest.md) that provides context for the requested composition.
+- `asyncVideoCompositionRequest`: An instance of [`AVAsynchronousVideoCompositionRequest`](../avasynchronousvideocompositionrequest.md) that provides context for the requested composition.
 
 ## See Also
 
-- [class AVAsynchronousVideoCompositionRequest](avasynchronousvideocompositionrequest.md)
+### Rendering the composition
+- [class AVAsynchronousVideoCompositionRequest](../avasynchronousvideocompositionrequest.md)
   An object that contains information a video compositor needs to render an output pixel buffer.
-- [func cancelAllPendingVideoCompositionRequests()](avvideocompositing/cancelallpendingvideocompositionrequests.md)
+- [func cancelAllPendingVideoCompositionRequests()](./cancelallpendingvideocompositionrequests%28%29.md)
   Directs a custom video compositor object to cancel or finish all pending video composition requests.
 
 

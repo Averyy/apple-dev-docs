@@ -1,7 +1,8 @@
 # exportingCondition(_:)
 
 **Framework**: Core Transferable  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prevents the system from exporting an item if it does not meet the supplied condition.
 

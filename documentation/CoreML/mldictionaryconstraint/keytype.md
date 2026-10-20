@@ -1,7 +1,8 @@
 # keyType
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key type for the dictionary.
 
@@ -18,6 +19,10 @@ The key type for the dictionary.
 
 ```swift
 var keyType: MLFeatureType { get }
+```
+
+```objc
+@property (nonatomic, readonly) MLFeatureType keyType;
 ```
 
 

@@ -1,7 +1,8 @@
 # NSSortDescriptor
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An immutable description of how to order a collection of objects according to a property common to all the objects.
 
@@ -20,83 +21,88 @@ An immutable description of how to order a collection of objects according to a 
 class NSSortDescriptor
 ```
 
+```objc
+@interface NSSortDescriptor : NSObject
+```
+
 #### Overview
 
-You construct instances of [`NSSortDescriptor`](nssortdescriptor.md) by specifying the key path of the property to compare and the order of the sort (ascending or descending). Optionally, you can also specify a selector to use to perform the comparison, which allows you to specify other comparison selectors, such as [`localizedStandardCompare(_:)`](nsstring/localizedstandardcompare(_:).md) and [`localizedCaseInsensitiveCompare(_:)`](nsstring/localizedcaseinsensitivecompare(_:).md). Sorting raises an exception if the objects don’t respond to the sort descriptor’s comparison selector.
+You construct instances of [`NSSortDescriptor`](./nssortdescriptor.md) by specifying the key path of the property to compare and the order of the sort (ascending or descending). Optionally, you can also specify a selector to use to perform the comparison, which allows you to specify other comparison selectors, such as [`localizedStandardCompare(_:)`](./nsstring/localizedstandardcompare%28_%29.md) and [`localizedCaseInsensitiveCompare(_:)`](./nsstring/localizedcaseinsensitivecompare%28_%29.md). Sorting raises an exception if the objects don’t respond to the sort descriptor’s comparison selector.
 
 You can use sort descriptors for the following:
 
-- Sorting an array (an instance of [`NSArray`](nsarray.md) or [`NSMutableArray`](nsmutablearray.md) — see [`sortedArray(using:)`](nsarray/sortedarray(using:)-82wi1.md) and [`sort(using:)`](nsmutablearray/sort(using:)-4eh07.md))
-- Comparing two objects directly (see [`compare(_:to:)`](nssortdescriptor/compare(_:to:).md))
-- Specifying the order of objects that return from a Core Data fetch request (see [`sortDescriptors`](https://developer.apple.com/documentation/coredata/nsfetchrequest/sortdescriptors))
+- Sorting an array (an instance of [`NSArray`](./nsarray.md) or [`NSMutableArray`](./nsmutablearray.md) — see [`sortedArray(using:)`](./nsarray/sortedarray%28using%29-82wi1.md) and [`sort(using:)`](./nsmutablearray/sort%28using%29-4eh07.md))
+- Comparing two objects directly (see [`compare(_:to:)`](./nssortdescriptor/compare%28_,to%29.md))
+- Specifying the order of objects that return from a Core Data fetch request (see [`sortDescriptors`](../CoreData/nsfetchrequest/sortdescriptors.md))
 
 ## Topics
 
 ### Creating a Sort Descriptor
-- [init(key: String?, ascending: Bool)](nssortdescriptor/init(key:ascending:).md)
+- [init(key: String?, ascending: Bool)](./nssortdescriptor/init%28key,ascending%29.md)
   Creates a sort descriptor with a specified string key path and sort order.
-- [init(key: String?, ascending: Bool, selector: Selector?)](nssortdescriptor/init(key:ascending:selector:).md)
+- [init(key: String?, ascending: Bool, selector: Selector?)](./nssortdescriptor/init%28key,ascending,selector%29.md)
   Creates a sort descriptor with a specified string key path, ordering, and comparison selector.
-- [convenience init<Root, Value>(keyPath: KeyPath<Root, Value>, ascending: Bool)](nssortdescriptor/init(keypath:ascending:).md)
+- [convenience init<Root, Value>(keyPath: KeyPath<Root, Value>, ascending: Bool)](./nssortdescriptor/init%28keypath,ascending%29.md)
   Creates a sort descriptor with a specified key path and ordering.
-- [init(key: String?, ascending: Bool, comparator: Comparator)](nssortdescriptor/init(key:ascending:comparator:).md)
+- [init(key: String?, ascending: Bool, comparator: Comparator)](./nssortdescriptor/init%28key,ascending,comparator%29.md)
   Creates a sort descriptor with a specified string key path and ordering, and a comparator block.
-- [convenience init<Root, Value>(keyPath: KeyPath<Root, Value>, ascending: Bool, comparator: Comparator)](nssortdescriptor/init(keypath:ascending:comparator:).md)
+- [convenience init<Root, Value>(keyPath: KeyPath<Root, Value>, ascending: Bool, comparator: Comparator)](./nssortdescriptor/init%28keypath,ascending,comparator%29.md)
   Creates a sort descriptor with a specified key path and ordering, and a comparator block.
-- [init?(coder: NSCoder)](nssortdescriptor/init(coder:).md)
+- [init?(coder: NSCoder)](./nssortdescriptor/init%28coder%29.md)
   Creates a sort descriptor by decoding from the coder you specify.
-- [convenience init<Compared>(SortDescriptor<Compared>)](nssortdescriptor/init(_:)-7qf91.md)
+- [convenience init<Compared>(SortDescriptor<Compared>)](./nssortdescriptor/init%28_%29-7qf91.md)
   Creates a sort descriptor using a sort descriptor you specify.
 ### Getting Information About a Sort Descriptor
-- [var ascending: Bool](nssortdescriptor/ascending.md)
+- [var ascending: Bool](./nssortdescriptor/ascending.md)
   A Boolean value that indicates whether the receiver specifies sorting in ascending order.
-- [var key: String?](nssortdescriptor/key.md)
+- [var key: String?](./nssortdescriptor/key.md)
   The key that specifies the property to compare during sorting.
-- [var keyPath: AnyKeyPath?](nssortdescriptor/keypath.md)
+- [var keyPath: AnyKeyPath?](./nssortdescriptor/keypath.md)
   The key path that specifies the property to compare during sorting.
-- [var selector: Selector?](nssortdescriptor/selector.md)
+- [var selector: Selector?](./nssortdescriptor/selector.md)
   The selector for comparing objects.
-- [var comparator: Comparator](nssortdescriptor/comparator.md)
+- [var comparator: Comparator](./nssortdescriptor/comparator.md)
   The comparator for the sort descriptor.
 ### Using Sort Descriptors
-- [func compare(Any, to: Any) -> ComparisonResult](nssortdescriptor/compare(_:to:).md)
+- [func compare(Any, to: Any) -> ComparisonResult](./nssortdescriptor/compare%28_,to%29.md)
   Returns a comparison result value that indicates the sort order of two objects.
-- [var reversedSortDescriptor: Any](nssortdescriptor/reversedsortdescriptor.md)
+- [var reversedSortDescriptor: Any](./nssortdescriptor/reversedsortdescriptor.md)
   Returns a sort descriptor that reverses the sort order.
-- [func allowEvaluation()](nssortdescriptor/allowevaluation.md)
+- [func allowEvaluation()](./nssortdescriptor/allowevaluation%28%29.md)
   Forces a securely decoded sort descriptor to allow evaluation.
 ### Initializers
-- [convenience init<Compared>(SortDescriptor<Compared>)](nssortdescriptor/init(_:)-527yl.md)
+- [convenience init<Compared>(SortDescriptor<Compared>)](./nssortdescriptor/init%28_%29-527yl.md)
   Creates an `NSSortDescriptor` representing the same sort as the given `SortDescriptor`.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
 
 ## See Also
 
-- [enum ComparisonResult](comparisonresult.md)
+### Sorting
+- [enum ComparisonResult](./comparisonresult.md)
   Constants that indicate sort order.
-- [struct SortDescriptor](sortdescriptor.md)
+- [struct SortDescriptor](./sortdescriptor.md)
   A serializable description of how to sort numerics and strings.
-- [protocol SortComparator](sortcomparator.md)
+- [protocol SortComparator](./sortcomparator.md)
   A comparison algorithm for a specified type.
-- [struct ComparableComparator](comparablecomparator.md)
+- [struct ComparableComparator](./comparablecomparator.md)
   A comparator that compares types according to their conformance to the comparable protocol.
-- [struct KeyPathComparator](keypathcomparator.md)
+- [struct KeyPathComparator](./keypathcomparator.md)
   A comparator that uses another sort comparator to provide the comparison of values at a key path.
-- [enum SortOrder](sortorder.md)
+- [enum SortOrder](./sortorder.md)
   The orderings that you can perform sorts with.
 
 

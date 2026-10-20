@@ -1,7 +1,8 @@
 # lineBreakMode
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines the line-break mode for multiple lines.
 
@@ -20,15 +21,20 @@ Determines the line-break mode for multiple lines.
 var lineBreakMode: NSLineBreakMode { get set }
 ```
 
+```objc
+@property (nonatomic) NSLineBreakMode lineBreakMode;
+```
+
 #### Discussion
 
 The default value is NSLineBreakByTruncatingTail.
 
 ## See Also
 
-- [var preferredMaxLayoutWidth: CGFloat](sklabelnode/preferredmaxlayoutwidth.md)
+### Defining a Label’s Line-Breaking Behavior
+- [var preferredMaxLayoutWidth: CGFloat](./preferredmaxlayoutwidth.md)
   The width, in screen points, after which line-break mode should be applied.
-- [var numberOfLines: Int](sklabelnode/numberoflines.md)
+- [var numberOfLines: Int](./numberoflines.md)
   Determines the number of lines to draw.
 
 

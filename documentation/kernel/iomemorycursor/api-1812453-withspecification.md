@@ -7,7 +7,7 @@ Creates and initializes an IOMemoryCursor in one operation.
 
 ## Declaration
 
-```swift
+```c
 static IOMemoryCursor * withSpecification(
  SegmentFunction outSegFunc, 
  IOPhysicalLength maxSegmentSize = 0, 
@@ -15,7 +15,7 @@ static IOMemoryCursor * withSpecification(
  IOPhysicalLength alignment = 1);
 ```
 
-#### Return_value
+#### Return Value
 
 Returns a new memory cursor if successfully created and initialized, 0 otherwise.
 
@@ -32,9 +32,10 @@ Factory function to create and initialize an IOMemoryCursor in one operation. Fo
 
 ## See Also
 
-- [genPhysicalSegments](iomemorycursor/1812441-genphysicalsegments.md)
+### Miscellaneous
+- [genPhysicalSegments](./api-1812441-genphysicalsegments.md)
   Generates a physical scatter/gather list given a memory descriptor.
-- [initWithSpecification](iomemorycursor/1812445-initwithspecification.md)
+- [initWithSpecification](./api-1812445-initwithspecification.md)
   Primary initializer for the IOMemoryCursor class.
 
 

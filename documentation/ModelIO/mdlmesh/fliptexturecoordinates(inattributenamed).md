@@ -1,7 +1,8 @@
 # flipTextureCoordinates(inAttributeNamed:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func flipTextureCoordinates(inAttributeNamed textureCoordinateAttributeName: String)
+```
+
+```objc
+- (void) flipTextureCoordinatesInAttributeNamed:(NSString *) textureCoordinateAttributeName;
 ```
 
 

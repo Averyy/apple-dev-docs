@@ -1,7 +1,8 @@
 # MTLBufferBinding
 
 **Framework**: Metal  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 16.0+
@@ -17,39 +18,44 @@
 protocol MTLBufferBinding : MTLBinding
 ```
 
+```objc
+@protocol MTLBufferBinding <MTLBinding>
+```
+
 ## Topics
 
 ### Instance Properties
-- [var bufferAlignment: Int](mtlbufferbinding/bufferalignment.md)
-- [var bufferDataSize: Int](mtlbufferbinding/bufferdatasize.md)
-- [var bufferDataType: MTLDataType](mtlbufferbinding/bufferdatatype.md)
-- [var bufferPointerType: MTLPointerType?](mtlbufferbinding/bufferpointertype.md)
-- [var bufferStructType: MTLStructType?](mtlbufferbinding/bufferstructtype.md)
+- [var bufferAlignment: Int](./mtlbufferbinding/bufferalignment.md)
+- [var bufferDataSize: Int](./mtlbufferbinding/bufferdatasize.md)
+- [var bufferDataType: MTLDataType](./mtlbufferbinding/bufferdatatype.md)
+- [var bufferPointerType: MTLPointerType?](./mtlbufferbinding/bufferpointertype.md)
+- [var bufferStructType: MTLStructType?](./mtlbufferbinding/bufferstructtype.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTLBinding](mtlbinding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [MTLBinding](./mtlbinding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class MTLComputePipelineReflection](mtlcomputepipelinereflection.md)
+### Introspection data
+- [class MTLComputePipelineReflection](./mtlcomputepipelinereflection.md)
   Information about the arguments of a compute function.
-- [typealias MTLAutoreleasedComputePipelineReflection](mtlautoreleasedcomputepipelinereflection.md)
+- [typealias MTLAutoreleasedComputePipelineReflection](./mtlautoreleasedcomputepipelinereflection.md)
   A convenience type alias for an autoreleased compute pipeline reflection object.
-- [class MTLRenderPipelineReflection](mtlrenderpipelinereflection.md)
+- [class MTLRenderPipelineReflection](./mtlrenderpipelinereflection.md)
   Information about the arguments of a graphics function.
-- [typealias MTLAutoreleasedRenderPipelineReflection](mtlautoreleasedrenderpipelinereflection.md)
+- [typealias MTLAutoreleasedRenderPipelineReflection](./mtlautoreleasedrenderpipelinereflection.md)
   A convenience type alias for an autoreleased pipeline reflection instance.
-- [enum MTLBindingType](mtlbindingtype.md)
-- [protocol MTLBinding](mtlbinding.md)
-- [enum MTLBindingAccess](mtlbindingaccess.md)
-- [protocol MTLTextureBinding](mtltexturebinding.md)
-- [protocol MTLThreadgroupBinding](mtlthreadgroupbinding.md)
-- [protocol MTLObjectPayloadBinding](mtlobjectpayloadbinding.md)
+- [enum MTLBindingType](./mtlbindingtype.md)
+- [protocol MTLBinding](./mtlbinding.md)
+- [enum MTLBindingAccess](./mtlbindingaccess.md)
+- [protocol MTLTextureBinding](./mtltexturebinding.md)
+- [protocol MTLThreadgroupBinding](./mtlthreadgroupbinding.md)
+- [protocol MTLObjectPayloadBinding](./mtlobjectpayloadbinding.md)
 
 
 ---

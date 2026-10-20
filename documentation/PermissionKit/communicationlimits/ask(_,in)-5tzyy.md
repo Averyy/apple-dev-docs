@@ -1,12 +1,15 @@
 # ask(_:in:)
 
 **Framework**: PermissionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the system to request that the user send the communication permission question to the user’s parent/s and/or guardian/s. Throws an error if the system was unable to request the user to send the question.
 
 **Availability**:
 - macOS 26.0+
+
+> **Deprecated**: Use AskCenter.ask(_:in:) instead.
 
 ## Declaration
 
@@ -21,9 +24,10 @@ final func ask(_ question: PermissionQuestion<CommunicationTopic>, in window: NS
 
 ## See Also
 
-- [var updates: some AsyncSequence<PermissionResponse<CommunicationTopic>, Never>](communicationlimits/updates.md)
+### Deprecated APIs
+- [var updates: some AsyncSequence<PermissionResponse<CommunicationTopic>, Never>](./updates.md)
   Registers the communication topic with the system, so your app can be launched on-demand in the background to receive permission updates.
-- [func ask(PermissionQuestion<CommunicationTopic>, in: UIViewController) async throws](communicationlimits/ask(_:in:)-5ou06.md)
+- [func ask(PermissionQuestion<CommunicationTopic>, in: UIViewController) async throws](./ask%28_,in%29-5ou06.md)
   Requests that a child send the communication permission question to their parent or guardian.
 
 

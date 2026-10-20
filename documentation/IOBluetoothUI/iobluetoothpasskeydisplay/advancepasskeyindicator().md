@@ -1,7 +1,8 @@
 # advancePasskeyIndicator()
 
 **Framework**: IOBluetooth UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.2+
@@ -12,11 +13,16 @@
 func advancePasskeyIndicator()
 ```
 
+```objc
+- (void) advancePasskeyIndicator;
+```
+
 ## See Also
 
-- [func resetPasskeyIndicator()](iobluetoothpasskeydisplay/resetpasskeyindicator.md)
-- [func retreatPasskeyIndicator()](iobluetoothpasskeydisplay/retreatpasskeyindicator.md)
-- [func setPasskey(String!, for: IOBluetoothDevice!, usingSSP: Bool)](iobluetoothpasskeydisplay/setpasskey(_:for:usingssp:).md)
+### Instance Methods
+- [func resetPasskeyIndicator()](./resetpasskeyindicator%28%29.md)
+- [func retreatPasskeyIndicator()](./retreatpasskeyindicator%28%29.md)
+- [func setPasskey(String!, for: IOBluetoothDevice!, usingSSP: Bool)](./setpasskey%28_,for,usingssp%29.md)
 
 
 ---

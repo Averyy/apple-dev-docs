@@ -1,9 +1,10 @@
 # ZStackContent3D
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-A type that adds spacing to a [`ZStack`](zstack.md).
+A type that adds spacing to a [`ZStack`](./zstack.md).
 
 **Availability**:
 - visionOS 2.0+
@@ -22,17 +23,17 @@ You don’t create this type directly. SwiftUI creates it for you when you use t
 ## Topics
 
 ### Initializers
-- [init(spacing: CGFloat?, content: Content)](zstackcontent3d/init(spacing:content:).md)
+- [init(spacing: CGFloat?, content: Content)](./zstackcontent3d/init%28spacing,content%29.md)
 ### Instance Properties
-- [var content: Content](zstackcontent3d/content.md)
-- [var spacing: CGFloat?](zstackcontent3d/spacing.md)
+- [var content: Content](./zstackcontent3d/content.md)
+- [var spacing: CGFloat?](./zstackcontent3d/spacing.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [View](view.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [View](./view.md)
 
 
 ---

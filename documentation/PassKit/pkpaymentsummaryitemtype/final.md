@@ -1,7 +1,8 @@
 # PKPaymentSummaryItemType.final
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A summary item that represents a known, final cost.
 
@@ -19,9 +20,14 @@ A summary item that represents a known, final cost.
 case final
 ```
 
+```c
+PKPaymentSummaryItemTypeFinal
+```
+
 ## See Also
 
-- [PKPaymentSummaryItemType.pending](pkpaymentsummaryitemtype/pending.md)
+### Payment summary item types
+- [PKPaymentSummaryItemType.pending](./pending.md)
   A summary item that represents an estimated or unknown cost.
 
 

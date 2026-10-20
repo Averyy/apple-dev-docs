@@ -1,7 +1,8 @@
 # didChangeRelationshipTargets
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether a relationship’s target list changed.
 

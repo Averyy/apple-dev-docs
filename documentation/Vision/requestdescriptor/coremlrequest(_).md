@@ -1,7 +1,8 @@
 # RequestDescriptor.coreMLRequest(_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A descriptor that describes a Core ML request.
 

@@ -1,7 +1,8 @@
 # direction
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The direction of the ray.
 
@@ -20,9 +21,14 @@ The direction of the ray.
 var direction: Vector3D
 ```
 
+```c
+SPVector3D direction;
+```
+
 ## See Also
 
-- [var origin: Point3D](ray3d/origin.md)
+### Inspecting a 3D ray’s properties
+- [var origin: Point3D](./origin.md)
   The origin of the ray.
 
 

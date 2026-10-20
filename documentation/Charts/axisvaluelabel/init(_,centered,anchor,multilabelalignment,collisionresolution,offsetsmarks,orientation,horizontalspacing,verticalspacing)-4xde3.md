@@ -1,7 +1,8 @@
 # init(_:centered:anchor:multiLabelAlignment:collisionResolution:offsetsMarks:orientation:horizontalSpacing:verticalSpacing:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Constructs an axis value label with the given properties to display the given string.
 

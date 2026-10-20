@@ -7,13 +7,13 @@ Creates the shared input and output queues, without regard to whether the stream
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn createQueues(
  IOItemCount queueLength = 0,
  IOOptionBits options = 0 );
 ```
 
-#### Return_value
+#### Return Value
 
 Returns kIOReturnSuccess if the queues were successfully created.
 
@@ -24,12 +24,13 @@ Returns kIOReturnSuccess if the queues were successfully created.
 
 ## See Also
 
-- [destroyQueues](iostream/1809709-destroyqueues.md)
+### Managing shared queues
+- [destroyQueues](./api-1809709-destroyqueues.md)
   Releases the shared input and output queues.
-- [getInputQueue](iostream/1809718-getinputqueue.md)
-- [getInputQueueMemoryDescriptor](iostream/1809727-getinputqueuememorydescriptor.md)
-- [getOutputQueue](iostream/1809738-getoutputqueue.md)
-- [getOutputQueueMemoryDescriptor](iostream/1809744-getoutputqueuememorydescriptor.md)
+- [getInputQueue](./api-1809718-getinputqueue.md)
+- [getInputQueueMemoryDescriptor](./api-1809727-getinputqueuememorydescriptor.md)
+- [getOutputQueue](./api-1809738-getoutputqueue.md)
+- [getOutputQueueMemoryDescriptor](./api-1809744-getoutputqueuememorydescriptor.md)
 
 
 ---

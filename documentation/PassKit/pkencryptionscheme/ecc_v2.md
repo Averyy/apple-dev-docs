@@ -1,7 +1,8 @@
 # ECC_V2
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The elliptic curve cryptography (ECC) scheme.
 
@@ -9,7 +10,7 @@ The elliptic curve cryptography (ECC) scheme.
 - iOS 9.0+
 - iPadOS 9.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,9 +20,14 @@ The elliptic curve cryptography (ECC) scheme.
 static let ECC_V2: PKEncryptionScheme
 ```
 
+```c
+extern PKEncryptionScheme const PKEncryptionSchemeECC_V2;
+```
+
 ## See Also
 
-- [static let RSA_V2: PKEncryptionScheme](pkencryptionscheme/rsa_v2.md)
+### Encryption schemes
+- [static let RSA_V2: PKEncryptionScheme](./rsa_v2.md)
   The RSA v2 scheme.
 
 

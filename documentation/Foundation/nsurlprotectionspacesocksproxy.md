@@ -1,7 +1,8 @@
 # NSURLProtectionSpaceSOCKSProxy
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The proxy type for SOCKS proxies.
 
@@ -20,13 +21,18 @@ The proxy type for SOCKS proxies.
 let NSURLProtectionSpaceSOCKSProxy: String
 ```
 
+```c
+extern NSString * const NSURLProtectionSpaceSOCKSProxy;
+```
+
 ## See Also
 
-- [let NSURLProtectionSpaceHTTPProxy: String](nsurlprotectionspacehttpproxy.md)
+### Proxy types
+- [let NSURLProtectionSpaceHTTPProxy: String](./nsurlprotectionspacehttpproxy.md)
   The proxy type for HTTP proxies.
-- [let NSURLProtectionSpaceHTTPSProxy: String](nsurlprotectionspacehttpsproxy.md)
+- [let NSURLProtectionSpaceHTTPSProxy: String](./nsurlprotectionspacehttpsproxy.md)
   The proxy type for HTTPS proxies.
-- [let NSURLProtectionSpaceFTPProxy: String](nsurlprotectionspaceftpproxy.md)
+- [let NSURLProtectionSpaceFTPProxy: String](./nsurlprotectionspaceftpproxy.md)
   The proxy type for FTP proxies.
 
 

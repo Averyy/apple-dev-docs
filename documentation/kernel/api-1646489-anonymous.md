@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kSCSIDataTransfer_FromInitiatorToTarget](1646489-anonymous/kscsidatatransfer_frominitiatortotarget.md)
-- [kSCSIDataTransfer_FromTargetToInitiator](1646489-anonymous/kscsidatatransfer_fromtargettoinitiator.md)
-- [kSCSIDataTransfer_NoDataTransfer](1646489-anonymous/kscsidatatransfer_nodatatransfer.md)
+- [kSCSIDataTransfer_FromInitiatorToTarget](./api-1646489-anonymous/kscsidatatransfer_frominitiatortotarget.md)
+- [kSCSIDataTransfer_FromTargetToInitiator](./api-1646489-anonymous/kscsidatatransfer_fromtargettoinitiator.md)
+- [kSCSIDataTransfer_NoDataTransfer](./api-1646489-anonymous/kscsidatatransfer_nodatatransfer.md)
 
 
 ---

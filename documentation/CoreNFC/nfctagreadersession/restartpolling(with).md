@@ -1,7 +1,8 @@
 # restartPolling(with:)
 
 **Framework**: Core NFC  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.4+
@@ -12,6 +13,10 @@
 
 ```swift
 func restartPolling(with configuration: NFCTagReaderSessionConfiguration)
+```
+
+```objc
+- (void) restartPollingWithConfiguration:(NFCTagReaderSessionConfiguration *) configuration;
 ```
 
 #### Discussion

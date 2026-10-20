@@ -1,9 +1,10 @@
 # init(_:)
 
 **Framework**: Core Video  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Convert Attributes to CreationAttributes. This init will fail if [`pixelFormatType`](cvpixelbuffercreationattributes/pixelformattype.md) or [`size`](cvpixelbuffercreationattributes/size.md) properties are absent.
+Convert Attributes to CreationAttributes. This init will fail if [`pixelFormatType`](./pixelformattype.md) or [`size`](./size.md) properties are absent.
 
 **Availability**:
 - iOS 26.0+

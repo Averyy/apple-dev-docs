@@ -1,7 +1,8 @@
 # UIPrintError.Code.jobFailed
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An internal error occurred with the print job.
 
@@ -17,13 +18,18 @@ An internal error occurred with the print job.
 case jobFailed
 ```
 
+```c
+UIPrintJobFailedError
+```
+
 ## See Also
 
-- [UIPrintError.Code.notAvailable](uiprinterror/code/notavailable.md)
+### Error codes
+- [UIPrintError.Code.notAvailable](./notavailable.md)
   The device doesn’t support printing.
-- [UIPrintError.Code.noContent](uiprinterror/code/nocontent.md)
+- [UIPrintError.Code.noContent](./nocontent.md)
   UIKit hasn’t assigned a print formatter, page renderer, or printing item to print.
-- [UIPrintError.Code.unknownImageFormat](uiprinterror/code/unknownimageformat.md)
+- [UIPrintError.Code.unknownImageFormat](./unknownimageformat.md)
   An image is in a format that UIKit doesn’t recognize for printing.
 
 

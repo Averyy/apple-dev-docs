@@ -2,13 +2,14 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -16,6 +17,11 @@
 @MainActor
 func indirectScribbleInteraction(_ interaction: any UIInteraction, requestElementsIn rect: CGRect) async -> [Self.ElementIdentifier]
 ```
+
+## Default Implementations
+
+### UIIndirectScribbleInteractionDelegate Implementations
+- [func indirectScribbleInteraction(any UIInteraction, requestElementsIn: CGRect) async -> [Self.ElementIdentifier]](./indirectscribbleinteraction%28_,requestelementsin%29-8cdw5.md)
 
 
 ---

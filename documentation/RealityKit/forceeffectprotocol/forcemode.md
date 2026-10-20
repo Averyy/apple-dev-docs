@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The mode that controls how the physics system interprets the outputs from a user’s custom force computation.

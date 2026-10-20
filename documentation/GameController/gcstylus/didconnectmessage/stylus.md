@@ -1,7 +1,8 @@
 # stylus
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stylus object that connected to the device.
 

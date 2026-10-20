@@ -1,7 +1,8 @@
 # IKRig.Constraint.IKPositionDemand.Mode.poleVector
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode which pulls the joint in the direction of the set position target.
 

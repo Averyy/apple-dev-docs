@@ -1,7 +1,8 @@
 # init(horizontal:vertical:depth:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a custom alignment value with the specified horizontal, vertical and depth alignment guides.
 

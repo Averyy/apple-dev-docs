@@ -1,7 +1,8 @@
 # setDefaults()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets all input values for a filter to default values.
 
@@ -10,13 +11,17 @@ Sets all input values for a filter to default values.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func setDefaults()
+```
+
+```objc
+- (void) setDefaults;
 ```
 
 #### Discussion

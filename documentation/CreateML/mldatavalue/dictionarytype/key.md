@@ -1,7 +1,8 @@
 # MLDataValue.DictionaryType.Key
 
 **Framework**: Create ML  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 15.0+
@@ -19,9 +20,10 @@ typealias Key = MLDataValue
 
 ## See Also
 
-- [init([MLDataValue : MLDataValue])](mldatavalue/dictionarytype/init(_:).md)
-- [init<S>(uniqueKeysWithValues: S)](mldatavalue/dictionarytype/init(uniquekeyswithvalues:).md)
-- [MLDataValue.DictionaryType.Value](mldatavalue/dictionarytype/value.md)
+### Creating a dictionary type
+- [init([MLDataValue : MLDataValue])](./init%28_%29.md)
+- [init<S>(uniqueKeysWithValues: S)](./init%28uniquekeyswithvalues%29.md)
+- [MLDataValue.DictionaryType.Value](./value.md)
 
 
 ---

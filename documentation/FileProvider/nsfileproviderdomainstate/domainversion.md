@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An opaque object that uniquely identifies the domain’s version.
@@ -19,9 +20,14 @@ An opaque object that uniquely identifies the domain’s version.
 var domainVersion: NSFileProviderDomainVersion { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSFileProviderDomainVersion * domainVersion;
+```
+
 ## See Also
 
-- [var userInfo: [AnyHashable : Any]](nsfileproviderdomainstate/userinfo.md)
+### Accessing State Data
+- [var userInfo: [AnyHashable : Any]](./userinfo.md)
   Global state information about the current domain version.
 
 

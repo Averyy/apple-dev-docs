@@ -1,12 +1,13 @@
 # runToolbarCustomizationPalette(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents the toolbar customization user interface.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Presents the toolbar customization user interface.
 func runToolbarCustomizationPalette(_ sender: Any?)
 ```
 
+```objc
+- (void) runToolbarCustomizationPalette:(id) sender;
+```
+
 #### Discussion
 
-See the [`NSToolbar`](nstoolbar.md) class description for additional information.
+See the [`NSToolbar`](../nstoolbar.md) class description for additional information.
 
 ## Parameters
 
@@ -24,9 +29,10 @@ See the [`NSToolbar`](nstoolbar.md) class description for additional information
 
 ## See Also
 
-- [var toolbar: NSToolbar?](nswindow/toolbar.md)
+### Managing Toolbars
+- [var toolbar: NSToolbar?](./toolbar.md)
   The window’s toolbar.
-- [func toggleToolbarShown(Any?)](nswindow/toggletoolbarshown(_:).md)
+- [func toggleToolbarShown(Any?)](./toggletoolbarshown%28_%29.md)
   Toggles the visibility of the window’s toolbar.
 
 

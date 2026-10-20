@@ -1,7 +1,8 @@
 # none
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mode that does not apply post processing effects.
 

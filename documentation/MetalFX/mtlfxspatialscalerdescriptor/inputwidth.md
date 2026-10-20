@@ -1,7 +1,8 @@
 # inputWidth
 
 **Framework**: MetalFX  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of the input color texture for the spatial scaler you create with this descriptor.
 
@@ -19,13 +20,18 @@ The width of the input color texture for the spatial scaler you create with this
 var inputWidth: Int { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSUInteger inputWidth;
+```
+
 ## See Also
 
-- [var inputHeight: Int](mtlfxspatialscalerdescriptor/inputheight.md)
+### Configuring a spatial scaler’s input
+- [var inputHeight: Int](./inputheight.md)
   The height of the input color texture for the spatial scaler you create with this descriptor.
-- [var colorTextureFormat: MTLPixelFormat](mtlfxspatialscalerdescriptor/colortextureformat.md)
+- [var colorTextureFormat: MTLPixelFormat](./colortextureformat.md)
   The pixel format of the input color texture for the spatial scaler you create with this descriptor.
-- [var colorProcessingMode: MTLFXSpatialScalerColorProcessingMode](mtlfxspatialscalerdescriptor/colorprocessingmode.md)
+- [var colorProcessingMode: MTLFXSpatialScalerColorProcessingMode](./colorprocessingmode.md)
   The color space of the input color texture for the spatial scaler you create with this descriptor.
 
 

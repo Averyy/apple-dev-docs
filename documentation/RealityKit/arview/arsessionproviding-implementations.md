@@ -1,11 +1,12 @@
 # ARSessionProviding Implementations
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var session: ARSession](arview/session.md)
+- [var session: ARSession](./session.md)
   The AR session that supports the view’s rendering.
 
 

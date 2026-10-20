@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: File Provider  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the options from the raw value.
 

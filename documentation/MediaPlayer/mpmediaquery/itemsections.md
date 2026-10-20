@@ -1,7 +1,8 @@
 # itemSections
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array representing the section grouping of the query’s specified media items.
 
@@ -17,23 +18,28 @@ An array representing the section grouping of the query’s specified media item
 var itemSections: [MPMediaQuerySection]? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSArray<MPMediaQuerySection *> * itemSections;
+```
+
 #### Discussion
 
-This property consists of an array of [`MPMediaQuerySection`](mpmediaquerysection.md) instances. The value of this property may be `nil` if there’s no appropriate section grouping of the media items.
+This property consists of an array of [`MPMediaQuerySection`](../mpmediaquerysection.md) instances. The value of this property may be `nil` if there’s no appropriate section grouping of the media items.
 
 ## See Also
 
-- [var filterPredicates: Set<MPMediaPredicate>?](mpmediaquery/filterpredicates.md)
+### Configuring media queries
+- [var filterPredicates: Set<MPMediaPredicate>?](./filterpredicates.md)
   The media property predicates of the media query.
-- [func addFilterPredicate(MPMediaPredicate)](mpmediaquery/addfilterpredicate(_:).md)
+- [func addFilterPredicate(MPMediaPredicate)](./addfilterpredicate%28_%29.md)
   Adds a media property predicate to a query.
-- [func removeFilterPredicate(MPMediaPredicate)](mpmediaquery/removefilterpredicate(_:).md)
+- [func removeFilterPredicate(MPMediaPredicate)](./removefilterpredicate%28_%29.md)
   Removes a filter predicate from a query.
-- [var groupingType: MPMediaGrouping](mpmediaquery/groupingtype.md)
+- [var groupingType: MPMediaGrouping](./groupingtype.md)
   The grouping for collections retrieved with the media query.
-- [var collectionSections: [MPMediaQuerySection]?](mpmediaquery/collectionsections.md)
+- [var collectionSections: [MPMediaQuerySection]?](./collectionsections.md)
   An array representing the section grouping of the query’s specified media item collections.
-- [enum MPMediaGrouping](mpmediagrouping.md)
+- [enum MPMediaGrouping](../mpmediagrouping.md)
   Keys used to configure a media query.
 
 

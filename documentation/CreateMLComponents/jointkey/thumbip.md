@@ -1,7 +1,8 @@
 # thumbIP
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key associated with thumb interphalangeal (IP) joint in a hand pose.
 
@@ -21,11 +22,12 @@ static let thumbIP: JointKey
 
 ## See Also
 
-- [static let thumbCMC: JointKey](jointkey/thumbcmc.md)
+### Getting thumb properties
+- [static let thumbCMC: JointKey](./thumbcmc.md)
   A key associated with thumb carpometacarpal (CMC) joint in a hand pose.
-- [static let thumbMP: JointKey](jointkey/thumbmp.md)
+- [static let thumbMP: JointKey](./thumbmp.md)
   A key associated with thumb metacarpophalangeal (MP) joint in a hand pose.
-- [static let thumbTip: JointKey](jointkey/thumbtip.md)
+- [static let thumbTip: JointKey](./thumbtip.md)
   A key associated with thumb tip joint in a hand pose.
 
 

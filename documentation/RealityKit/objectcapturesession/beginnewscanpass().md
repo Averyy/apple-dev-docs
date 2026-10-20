@@ -1,9 +1,10 @@
 # beginNewScanPass()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Resets the state of the capture dial such that the user will need to perform another complete scan pass to fill it and generate a new event in the published property [`userCompletedScanPass`](objectcapturesession/usercompletedscanpass.md).
+Resets the state of the capture dial such that the user will need to perform another complete scan pass to fill it and generate a new event in the published property [`userCompletedScanPass`](./usercompletedscanpass.md).
 
 **Availability**:
 - iOS 17.0+
@@ -22,7 +23,7 @@ This is intended to be used once the user has completed one scan pass and anothe
 
 This call will throw if the session is not in `.capturing` state (or `.paused` from `.capturing` state).
 
-Note: If the object is flipped and a new scan pass is required, [`beginNewScanPassAfterFlip()`](objectcapturesession/beginnewscanpassafterflip().md) should be called.
+Note: If the object is flipped and a new scan pass is required, [`beginNewScanPassAfterFlip()`](./beginnewscanpassafterflip%28%29.md) should be called.
 
 Calling this function is only valid in object-centric scanning.
 

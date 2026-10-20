@@ -1,7 +1,8 @@
 # init(groups:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration object with provided component groups.
 
@@ -15,6 +16,10 @@ Creates a configuration object with provided component groups.
 
 ```swift
 convenience init(groups: [UITextFormattingViewController.ComponentGroup])
+```
+
+```objc
+- (instancetype) initWithGroups:(NSArray<UITextFormattingViewControllerComponentGroup *> *) groups;
 ```
 
 ## Parameters

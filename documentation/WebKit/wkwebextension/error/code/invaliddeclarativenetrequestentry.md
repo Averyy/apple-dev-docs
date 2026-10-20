@@ -1,7 +1,8 @@
 # WKWebExtension.Error.Code.invalidDeclarativeNetRequestEntry
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that an invalid declarative net request entry was encountered.
 
@@ -16,6 +17,10 @@ Indicates that an invalid declarative net request entry was encountered.
 
 ```swift
 case invalidDeclarativeNetRequestEntry
+```
+
+```c
+WKWebExtensionErrorInvalidDeclarativeNetRequestEntry
 ```
 
 

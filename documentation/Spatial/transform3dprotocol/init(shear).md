@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Returns a new shear transform

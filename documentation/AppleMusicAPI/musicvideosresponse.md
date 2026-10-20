@@ -1,7 +1,8 @@
 # MusicVideosResponse
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response to a music videos request.
 
@@ -10,21 +11,22 @@ The response to a music videos request.
 
 ## Declaration
 
-```swift
+```
 object MusicVideosResponse
 ```
 
 ## Properties
 
-- `data` ([MusicVideos]) *(required)*: The [`MusicVideos`](musicvideos.md) included in the response for the request.
+- `data` ([MusicVideos]) *(required)*: The [`MusicVideos`](./musicvideos.md) included in the response for the request.
 
 ## See Also
 
-- [object MusicVideos](musicvideos.md)
+### Handling the Response
+- [object MusicVideos](./musicvideos.md)
   A resource object that represents a music video.
-- [object LibraryMusicVideos](librarymusicvideos.md)
+- [object LibraryMusicVideos](./librarymusicvideos.md)
   A resource object that represents a library music video.
-- [object LibraryMusicVideosResponse](librarymusicvideosresponse.md)
+- [object LibraryMusicVideosResponse](./librarymusicvideosresponse.md)
   The response to a library music videos request.
 
 

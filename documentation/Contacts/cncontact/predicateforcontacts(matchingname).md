@@ -1,7 +1,8 @@
 # predicateForContacts(matchingName:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a predicate to find the contacts matching the specified name.
 
@@ -19,9 +20,13 @@ Returns a predicate to find the contacts matching the specified name.
 class func predicateForContacts(matchingName name: String) -> NSPredicate
 ```
 
+```objc
++ (NSPredicate *) predicateForContactsMatchingName:(NSString *) name;
+```
+
 #### Return Value
 
-A predicate that you can use to fetch contacts from [`CNContactStore`](cncontactstore.md).
+A predicate that you can use to fetch contacts from [`CNContactStore`](../cncontactstore.md).
 
 #### Discussion
 
@@ -33,15 +38,16 @@ The name can contain any number of words.
 
 ## See Also
 
-- [class func predicateForContacts(withIdentifiers: [String]) -> NSPredicate](cncontact/predicateforcontacts(withidentifiers:).md)
+### Getting Search Predicates
+- [class func predicateForContacts(withIdentifiers: [String]) -> NSPredicate](./predicateforcontacts%28withidentifiers%29.md)
   Returns a predicate to find the contacts matching the specified identifiers.
-- [class func predicateForContactsInGroup(withIdentifier: String) -> NSPredicate](cncontact/predicateforcontactsingroup(withidentifier:).md)
+- [class func predicateForContactsInGroup(withIdentifier: String) -> NSPredicate](./predicateforcontactsingroup%28withidentifier%29.md)
   Returns a predicate to find the contacts that are members in the specified group.
-- [class func predicateForContactsInContainer(withIdentifier: String) -> NSPredicate](cncontact/predicateforcontactsincontainer(withidentifier:).md)
+- [class func predicateForContactsInContainer(withIdentifier: String) -> NSPredicate](./predicateforcontactsincontainer%28withidentifier%29.md)
   Returns a predicate to find the contacts in the specified container.
-- [class func predicateForContacts(matching: CNPhoneNumber) -> NSPredicate](cncontact/predicateforcontacts(matching:).md)
+- [class func predicateForContacts(matching: CNPhoneNumber) -> NSPredicate](./predicateforcontacts%28matching%29.md)
   Returns a predicate to find the contacts whose phone number matches the specified value.
-- [class func predicateForContacts(matchingEmailAddress: String) -> NSPredicate](cncontact/predicateforcontacts(matchingemailaddress:).md)
+- [class func predicateForContacts(matchingEmailAddress: String) -> NSPredicate](./predicateforcontacts%28matchingemailaddress%29.md)
   Returns a predicate to find the contacts whose email address matches the specified value.
 
 

@@ -1,7 +1,8 @@
 # decryptionStream(readingFrom:encryptionContext:flags:threadCount:)
 
 **Framework**: Apple Archive  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a decryption sequential input stream.
 
@@ -11,7 +12,7 @@ Creates a decryption sequential input stream.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -33,7 +34,8 @@ A new archive byte stream.
 
 ## See Also
 
-- [static func randomAccessDecryptionStream(readingFrom: ArchiveByteStream, encryptionContext: ArchiveEncryptionContext, allocationLimit: Int, flags: ArchiveFlags, threadCount: Int) -> ArchiveByteStream?](archivebytestream/randomaccessdecryptionstream(readingfrom:encryptioncontext:allocationlimit:flags:threadcount:).md)
+### Decrypting Data
+- [static func randomAccessDecryptionStream(readingFrom: ArchiveByteStream, encryptionContext: ArchiveEncryptionContext, allocationLimit: Int, flags: ArchiveFlags, threadCount: Int) -> ArchiveByteStream?](./randomaccessdecryptionstream%28readingfrom,encryptioncontext,allocationlimit,flags,threadcount%29.md)
   Creates a decryption random access input stream.
 
 

@@ -1,7 +1,8 @@
 # language
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The natural language of the element’s content, used when it differs from the document’s language.
 

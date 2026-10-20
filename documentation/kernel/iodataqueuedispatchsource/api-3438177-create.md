@@ -1,7 +1,8 @@
 # Create
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 Creates a dispatch source that you use as a shared-memory data queue.
 
@@ -11,25 +12,26 @@ Creates a dispatch source that you use as a shared-memory data queue.
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t Create(uint64_t queueByteCount, IODispatchQueue *queue, IODataQueueDispatchSource **source);
 ```
 
-#### Return_value
+#### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes). 
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md). 
 
 ## Parameters
 
 - `queueByteCount`: The size of the queue in bytes.
-- `queue`: The dispatch queue to use for executing tasks. Note that the [`DataAvailable`](https://developer.apple.com/documentation/driverkit/iodataqueuedispatchsource/dataavailable) and [`DataServiced`](https://developer.apple.com/documentation/driverkit/iodataqueuedispatchsource/dataserviced) handlers execute on the queue set for the target method of the associated [`OSAction`](https://developer.apple.com/documentation/driverkit/osaction) object, not this queue.
+- `queue`: The dispatch queue to use for executing tasks. Note that the [`DataAvailable`](../../DriverKit/iodataqueuedispatchsource/dataavailable.md) and [`DataServiced`](../../DriverKit/iodataqueuedispatchsource/dataserviced.md) handlers execute on the queue set for the target method of the associated [`OSAction`](../../DriverKit/osaction.md) object, not this queue.
 - `source`: A variable for storing the resulting dispatch source object. On success, the returned object has a retain count of 1, and you must release it when finished. 
 
 ## See Also
 
-- [- init](iodataqueuedispatchsource/3438187-init.md)
+### Configuring the Dispatch Source
+- [- init](./api-3438187-init.md)
   Handles the basic initialization of the dispatch source.
-- [- free](iodataqueuedispatchsource/3438186-free.md)
+- [- free](./api-3438186-free.md)
   Performs any final cleanup for the data-queue dispatch source.
 
 

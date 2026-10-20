@@ -1,7 +1,8 @@
 # init(range:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a character set containing characters with Unicode values in a given range.
 
@@ -18,6 +19,10 @@ Returns a character set containing characters with Unicode values in a given ran
 
 ```swift
 init(range aRange: NSRange)
+```
+
+```objc
++ (NSCharacterSet *) characterSetWithRange:(NSRange) aRange;
 ```
 
 #### Return Value
@@ -43,10 +48,11 @@ lcEnglishLetters = [NSCharacterSet characterSetWithRange:lcEnglishRange];
 
 ## See Also
 
-- [init(coder: NSCoder)](nscharacterset/init(coder:).md)
-- [init(charactersIn: String)](nscharacterset/init(charactersin:).md)
+### Creating a Custom Character Set
+- [init(coder: NSCoder)](./init%28coder%29.md)
+- [init(charactersIn: String)](./init%28charactersin%29.md)
   Returns a character set containing the characters in a given string.
-- [NSOpenStepUnicodeReservedBase](1560803-nsopenstepunicodereservedbase.md)
+- [NSOpenStepUnicodeReservedBase](../api-1560803-nsopenstepunicodereservedbase.md)
   Specifies lower bound for a Unicode character range reserved for Apple’s corporate use.
 
 

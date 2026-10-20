@@ -1,23 +1,25 @@
 # CreateWithMemoryDescriptors
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 **Availability**:
 - DriverKit 20.0+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t CreateWithMemoryDescriptors(uint64_t memoryDescriptorCreateOptions, uint32_t withDescriptorsCount, IOMemoryDescriptor * const withDescriptors[32], IOMemoryDescriptor **memory);
 ```
 
 ## See Also
 
-- [CreateSubMemoryDescriptor](iomemorydescriptor/createsubmemorydescriptor.md)
+### Type Methods
+- [CreateSubMemoryDescriptor](./createsubmemorydescriptor.md)
 
 
 ---

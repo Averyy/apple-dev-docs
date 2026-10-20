@@ -1,7 +1,8 @@
 # SearchToolbarBehavior
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The behavior of a search field in a toolbar.
 
@@ -22,35 +23,36 @@ struct SearchToolbarBehavior
 
 #### Overview
 
-Use this type in combination with the [`searchToolbarBehavior(_:)`](view/searchtoolbarbehavior(_:).md) modifier.
+Use this type in combination with the [`searchToolbarBehavior(_:)`](./view/searchtoolbarbehavior%28_%29.md) modifier.
 
 ## Topics
 
 ### Type Properties
-- [static var automatic: SearchToolbarBehavior](searchtoolbarbehavior/automatic.md)
+- [static var automatic: SearchToolbarBehavior](./searchtoolbarbehavior/automatic.md)
   The automatic behavior.
-- [static var minimize: SearchToolbarBehavior](searchtoolbarbehavior/minimize.md)
+- [static var minimize: SearchToolbarBehavior](./searchtoolbarbehavior/minimize.md)
   A search toolbar behavior that prefers rendering a search field as a button-like control.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func toolbar<Content>(id: String, content: () -> Content) -> some View](view/toolbar(id:content:).md)
+### Populating a customizable toolbar
+- [func toolbar<Content>(id: String, content: () -> Content) -> some View](./view/toolbar%28id,content%29.md)
   Populates the toolbar or navigation bar with the specified items, allowing for user customization.
-- [func toolbarItemHidden(Bool) -> some View](view/toolbaritemhidden(_:).md)
+- [func toolbarItemHidden(Bool) -> some View](./view/toolbaritemhidden%28_%29.md)
   Hides an individual view within a control group toolbar item.
-- [protocol CustomizableToolbarContent](customizabletoolbarcontent.md)
+- [protocol CustomizableToolbarContent](./customizabletoolbarcontent.md)
   Conforming types represent items that can be placed in various locations in a customizable toolbar.
-- [struct ToolbarCustomizationBehavior](toolbarcustomizationbehavior.md)
+- [struct ToolbarCustomizationBehavior](./toolbarcustomizationbehavior.md)
   The customization behavior of customizable toolbar content.
-- [struct ToolbarCustomizationOptions](toolbarcustomizationoptions.md)
+- [struct ToolbarCustomizationOptions](./toolbarcustomizationoptions.md)
   Options that influence the default customization behavior of customizable toolbar content.
 
 

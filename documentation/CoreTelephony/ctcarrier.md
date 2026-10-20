@@ -1,14 +1,17 @@
 # CTCarrier
 
 **Framework**: Core Telephony  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Information about the user’s cellular service provider, such as its unique identifier and whether it allows VoIP calls on its network.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 13.1+
+- iOS 4.0+ - Deprecated in 16.0
+- iPadOS 4.0+ - Deprecated in 16.0
+- Mac Catalyst 13.1+ - Deprecated in 16.0
+
+> **Deprecated**: Deprecated with no replacement
 
 ## Declaration
 
@@ -16,37 +19,42 @@ Information about the user’s cellular service provider, such as its unique ide
 class CTCarrier
 ```
 
+```objc
+@interface CTCarrier : NSObject
+```
+
 ## Topics
 
 ### Getting Information About the Cellular Service Provider
-- [var allowsVOIP: Bool](ctcarrier/allowsvoip.md)
+- [var allowsVOIP: Bool](./ctcarrier/allowsvoip.md)
   Indicates if the carrier allows making VoIP calls on its network.
-- [var carrierName: String?](ctcarrier/carriername.md)
+- [var carrierName: String?](./ctcarrier/carriername.md)
   The name of the user’s home cellular service provider.
-- [var isoCountryCode: String?](ctcarrier/isocountrycode.md)
+- [var isoCountryCode: String?](./ctcarrier/isocountrycode.md)
   The ISO country code for the user’s cellular service provider.
-- [var mobileCountryCode: String?](ctcarrier/mobilecountrycode.md)
+- [var mobileCountryCode: String?](./ctcarrier/mobilecountrycode.md)
   The mobile country code (MCC) for the user’s cellular service provider.
-- [var mobileNetworkCode: String?](ctcarrier/mobilenetworkcode.md)
+- [var mobileNetworkCode: String?](./ctcarrier/mobilenetworkcode.md)
   The mobile network code for the user’s cellular service provider.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CTCall](ctcall.md)
+### Deprecated
+- [class CTCall](./ctcall.md)
   An object used to identify a cellular call and determine its state.
-- [class CTCallCenter](ctcallcenter.md)
+- [class CTCallCenter](./ctcallcenter.md)
   An object that provides a list of current cellular calls, and provides the ability to respond to state changes for calls.
 
 

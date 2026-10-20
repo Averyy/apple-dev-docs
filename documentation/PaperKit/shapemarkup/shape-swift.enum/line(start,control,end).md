@@ -1,7 +1,8 @@
 # line(start:control:end:)
 
 **Framework**: PaperKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A quadratic Bézier curve line.
 

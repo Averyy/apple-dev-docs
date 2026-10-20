@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIONetworkDataBufferTypeExternal](1644202-anonymous/kionetworkdatabuffertypeexternal.md)
-- [kIONetworkDataBufferTypeInternal](1644202-anonymous/kionetworkdatabuffertypeinternal.md)
-- [kIONetworkDataBufferTypeNone](1644202-anonymous/kionetworkdatabuffertypenone.md)
+- [kIONetworkDataBufferTypeExternal](./api-1644202-anonymous/kionetworkdatabuffertypeexternal.md)
+- [kIONetworkDataBufferTypeInternal](./api-1644202-anonymous/kionetworkdatabuffertypeinternal.md)
+- [kIONetworkDataBufferTypeNone](./api-1644202-anonymous/kionetworkdatabuffertypenone.md)
 
 
 ---

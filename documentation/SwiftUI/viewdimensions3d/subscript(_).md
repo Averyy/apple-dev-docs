@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: SwiftUI  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Gets the value of the given depth guide.
 
@@ -14,6 +15,16 @@ Gets the value of the given depth guide.
 subscript(guide: DepthAlignment) -> CGFloat { get }
 ```
 
+**Other overloads**:
+
+```swift
+subscript(guide: HorizontalAlignment) -> CGFloat { get }
+```
+
+```swift
+subscript(guide: VerticalAlignment) -> CGFloat { get }
+```
+
 #### Overview
 
 Find the offset of a particular guide in the corresponding view by using that guide as an index to read from the context:
@@ -24,7 +35,7 @@ Find the offset of a particular guide in the corresponding view by using that gu
 }
 ```
 
-For information about using subscripts in Swift to access member elements of a collection, list, or, sequence, see [`Subscripts`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Subscripts.html) in *The Swift Programming Language*.
+For information about using subscripts in Swift to access member elements of a collection, list, or, sequence, see [Subscripts](https://docs.swift.org/swift-book/LanguageGuide/Subscripts.html) in *The Swift Programming Language*.
 
 
 ---

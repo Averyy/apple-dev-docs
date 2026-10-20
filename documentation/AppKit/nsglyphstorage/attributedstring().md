@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the text storage object from which the `NSGlyphGenerator` object procures characters for glyph generation.
@@ -15,13 +16,18 @@ Returns the text storage object from which the `NSGlyphGenerator` object procure
 func attributedString() -> NSAttributedString
 ```
 
+```objc
+- (NSAttributedString *) attributedString;
+```
+
 #### Return Value
 
 The receiver’s text storage object.
 
 ## See Also
 
-- [class NSGlyphGenerator](nsglyphgenerator.md)
+### Related Documentation
+- [class NSGlyphGenerator](../nsglyphgenerator.md)
   An object that performs the initial, nominal glyph generation phase in the layout process.
 
 

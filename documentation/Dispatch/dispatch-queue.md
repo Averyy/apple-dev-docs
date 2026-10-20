@@ -1,6 +1,7 @@
 # Dispatch Queue
 
-**Framework**: Dispatch
+**Framework**: Dispatch  
+**Role**: API Collection
 
 An object that manages the execution of tasks serially or concurrently on your app’s main thread or on a background thread.
 
@@ -12,7 +13,7 @@ You schedule work items synchronously or asynchronously. When you schedule a wor
 
 > ❗ **Important**:  Attempting to synchronously execute a work item on the main queue results in deadlock.
 
-Dispatch queues provide minimal support for autoreleased objects by default. System APIs may return autoreleased objects to your code. For example, [`NSError`](https://developer.apple.com/documentation/foundation/nserror) objects are often autoreleased. If you see memory pressure increase because of autoreleased objects created in your blocks, consider adding autorelease pools to those blocks to relieve the pressure. You can also configure the default autorelease behavior of any custom dispatch queues using the [`dispatch_queue_attr_make_with_autorelease_frequency`](dispatch_queue_attr_make_with_autorelease_frequency.md) function at creation time.
+Dispatch queues provide minimal support for autoreleased objects by default. System APIs may return autoreleased objects to your code. For example, [`NSError`](../Foundation/nserror.md) objects are often autoreleased. If you see memory pressure increase because of autoreleased objects created in your blocks, consider adding autorelease pools to those blocks to relieve the pressure. You can also configure the default autorelease behavior of any custom dispatch queues using the [`dispatch_queue_attr_make_with_autorelease_frequency`](./dispatch_queue_attr_make_with_autorelease_frequency.md) function at creation time.
 
 ##### Avoiding Excessive Thread Creation
 
@@ -23,44 +24,45 @@ Another way that apps consume too many threads is by creating too many private c
 ## Topics
 
 ### Creating a Dispatch Queue
-- [typealias dispatch_queue_t](dispatch_queue_t.md)
+- [typealias dispatch_queue_t](./dispatch_queue_t.md)
   A lightweight object to which your application submits blocks for subsequent execution.
-- [typealias dispatch_queue_main_t](dispatch_queue_main_t.md)
+- [typealias dispatch_queue_main_t](./dispatch_queue_main_t.md)
   A dispatch queue that is bound to the app’s main thread and executes tasks serially on that thread.
-- [typealias dispatch_queue_global_t](dispatch_queue_global_t.md)
+- [typealias dispatch_queue_global_t](./dispatch_queue_global_t.md)
   A dispatch queue that executes tasks concurrently using threads from the global thread pool.
-- [typealias dispatch_queue_serial_t](dispatch_queue_serial_t.md)
+- [typealias dispatch_queue_serial_t](./dispatch_queue_serial_t.md)
   A dispatch queue that executes tasks serially in first-in, first-out (FIFO) order.
-- [typealias dispatch_queue_concurrent_t](dispatch_queue_concurrent_t.md)
+- [typealias dispatch_queue_concurrent_t](./dispatch_queue_concurrent_t.md)
   A dispatch queue that executes tasks concurrently and in any order, respecting any barriers that may be in place.
 ### Configuring Queue Execution Parameters
-- [typealias dispatch_queue_attr_t](dispatch_queue_attr_t.md)
+- [typealias dispatch_queue_attr_t](./dispatch_queue_attr_t.md)
   Attributes describing the behaviors of a dispatch queue.
 ### Executing Tasks Synchronously
-- [func sync(execute: () -> Void)](dispatchqueue/sync(execute:)-3segw.md)
+- [func sync(execute: () -> Void)](./dispatchqueue/sync%28execute%29-3segw.md)
   Submits a block object for execution and returns after that block finishes executing.
-- [func asyncAndWait(execute: () -> Void)](dispatchqueue/asyncandwait(execute:)-1udeu.md)
+- [func asyncAndWait(execute: () -> Void)](./dispatchqueue/asyncandwait%28execute%29-1udeu.md)
   Submits a work item for execution and returns only after it finishes executing.
 ### Managing Queue Attributes
-- [func setTarget(queue: dispatch_queue_t?)](dispatchobject/settarget(queue:).md)
+- [func setTarget(queue: dispatch_queue_t?)](./dispatchobject/settarget%28queue%29.md)
   Specifies the dispatch queue on which to perform work associated with the current object.
 ### Managing the Main Dispatch Queue
-- [func dispatchMain() -> Never](dispatchmain().md)
+- [func dispatchMain() -> Never](./dispatchmain%28%29.md)
   Executes blocks submitted to the main queue.
 
 ## See Also
 
-- [class DispatchQueue](dispatchqueue.md)
+### Queues and Tasks
+- [class DispatchQueue](./dispatchqueue.md)
   An object that manages the execution of tasks serially or concurrently on your app’s main thread or on a background thread.
-- [class DispatchWorkItem](dispatchworkitem.md)
+- [class DispatchWorkItem](./dispatchworkitem.md)
   The work you want to perform, encapsulated in a way that lets you attach a completion handle or execution dependencies.
-- [class DispatchGroup](dispatchgroup.md)
+- [class DispatchGroup](./dispatchgroup.md)
   A group of tasks that you monitor as a single unit.
-- [Dispatch Work Item](dispatch-work-item.md)
+- [Dispatch Work Item](./dispatch-work-item.md)
   The work you want to perform, encapsulated in a way that lets you attach a completion handle or execution dependencies.
-- [Dispatch Group](dispatch-group.md)
+- [Dispatch Group](./dispatch-group.md)
   A group of tasks that you monitor as a single unit.
-- [Workloop](workloop.md)
+- [Workloop](./workloop.md)
   A dispatch object that prioritizes the execution of tasks based on their quality-of-service (QoS) level.
 
 

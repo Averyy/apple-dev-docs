@@ -1,7 +1,8 @@
 # matchingPolicy
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 What to do when a recurrence is not a valid date
 

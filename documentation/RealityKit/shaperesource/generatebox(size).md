@@ -1,7 +1,8 @@
 # generateBox(size:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a box shape with the specified extent.
 
@@ -11,7 +12,7 @@ Creates a box shape with the specified extent.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -34,7 +35,8 @@ The new box centered at the local origin and aligned with the local axes.
 
 ## See Also
 
-- [static func generateBox(width: Float, height: Float, depth: Float) -> ShapeResource](shaperesource/generatebox(width:height:depth:).md)
+### Generating boxes
+- [static func generateBox(width: Float, height: Float, depth: Float) -> ShapeResource](./generatebox%28width,height,depth%29.md)
   Creates a box shape with the specified dimensions.
 
 

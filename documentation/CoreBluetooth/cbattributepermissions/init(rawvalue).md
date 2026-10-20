@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Bluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a permissions instance from the provided raw value.
 

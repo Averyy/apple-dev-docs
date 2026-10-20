@@ -1,7 +1,8 @@
 # didSeekInBuffer
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var didSeekInBuffer: Bool { get }
+```
+
+```objc
+@property (readonly) BOOL didSeekInBuffer;
 ```
 
 

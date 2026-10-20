@@ -1,14 +1,15 @@
 # kMaxWaitForValidSelfID
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 const UInt32 kMaxWaitForValidSelfID;
 ```
 

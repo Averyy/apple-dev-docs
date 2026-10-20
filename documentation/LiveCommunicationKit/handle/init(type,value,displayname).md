@@ -1,7 +1,8 @@
 # init(type:value:displayName:)
 
 **Framework**: LiveCommunicationKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new handle that identifies a participant in a conversation.
 

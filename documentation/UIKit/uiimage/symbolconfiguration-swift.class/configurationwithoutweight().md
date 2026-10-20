@@ -1,7 +1,8 @@
 # configurationWithoutWeight()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a copy of the current symbol configuration object without weight information.
 
@@ -19,21 +20,26 @@ Returns a copy of the current symbol configuration object without weight informa
 func configurationWithoutWeight() -> Self
 ```
 
+```objc
+- (instancetype) configurationWithoutWeight;
+```
+
 #### Return Value
 
 A new symbol configuration object without the specified information.
 
 #### Discussion
 
-This method sets the weight value in the new object to [`UIImage.SymbolWeight.unspecified`](uiimage/symbolweight/unspecified.md).
+This method sets the weight value in the new object to [`UIImage.SymbolWeight.unspecified`](../symbolweight/unspecified.md).
 
 ## See Also
 
-- [func configurationWithoutPointSizeAndWeight() -> Self](uiimage/symbolconfiguration-swift.class/configurationwithoutpointsizeandweight.md)
+### Removing configuration attributes
+- [func configurationWithoutPointSizeAndWeight() -> Self](./configurationwithoutpointsizeandweight%28%29.md)
   Returns a copy of the current symbol configuration object without point-size and weight information.
-- [func configurationWithoutScale() -> Self](uiimage/symbolconfiguration-swift.class/configurationwithoutscale.md)
+- [func configurationWithoutScale() -> Self](./configurationwithoutscale%28%29.md)
   Returns a copy of the current symbol configuration object without scale information.
-- [func configurationWithoutTextStyle() -> Self](uiimage/symbolconfiguration-swift.class/configurationwithouttextstyle.md)
+- [func configurationWithoutTextStyle() -> Self](./configurationwithouttextstyle%28%29.md)
   Returns a copy of the current symbol configuration object without font text style information.
 
 

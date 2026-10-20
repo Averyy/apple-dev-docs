@@ -1,17 +1,24 @@
 # kSecLineLength64
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A line length of 64 bytes.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 13.0
+
+> **Deprecated**: SecTransform is no longer supported
 
 ## Declaration
 
 ```swift
 let kSecLineLength64: CFString
+```
+
+```c
+extern CFStringRef const kSecLineLength64;
 ```
 
 

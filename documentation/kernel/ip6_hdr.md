@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ip6_hdr {
     ...
 };
@@ -17,9 +17,9 @@ struct ip6_hdr {
 ## Topics
 
 ### Instance Properties
-- [ip6_ctlun](ip6_hdr/3754498-ip6_ctlun.md)
-- [ip6_dst](ip6_hdr/3754499-ip6_dst.md)
-- [ip6_src](ip6_hdr/3754500-ip6_src.md)
+- [ip6_ctlun](./ip6_hdr/api-3754498-ip6_ctlun.md)
+- [ip6_dst](./ip6_hdr/api-3754499-ip6_dst.md)
+- [ip6_src](./ip6_hdr/api-3754500-ip6_src.md)
 
 
 ---

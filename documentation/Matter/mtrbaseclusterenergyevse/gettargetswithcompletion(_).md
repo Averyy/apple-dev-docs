@@ -1,7 +1,8 @@
 # getTargetsWithCompletion(_:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func getTargetsWithCompletion(_ completion: @escaping @Sendable (MTREnergyEVSEClusterGetTargetsResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func targets() async throws -> MTREnergyEVSEClusterGetTargetsResponseParams
+```
+
+```objc
+- (void) getTargetsWithCompletion:(void (^)(MTREnergyEVSEClusterGetTargetsResponseParams *data, NSError *error)) completion;
 ```
 
 

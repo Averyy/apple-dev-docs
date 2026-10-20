@@ -1,7 +1,8 @@
 # NSPrefPaneHelpMenuTitleKey
 
 **Framework**: Preference Panes  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The title of a help menu item in a preference pane.
 
@@ -15,11 +16,16 @@ The title of a help menu item in a preference pane.
 let NSPrefPaneHelpMenuTitleKey: String
 ```
 
+```c
+extern NSString * const NSPrefPaneHelpMenuTitleKey;
+```
+
 ## See Also
 
-- [let NSPrefPaneHelpMenuInfoPListKey: String](nsprefpanehelpmenuinfoplistkey.md)
+### Help Menu Keys
+- [let NSPrefPaneHelpMenuInfoPListKey: String](./nsprefpanehelpmenuinfoplistkey.md)
   The global help menu items associated with a preference pane.
-- [let NSPrefPaneHelpMenuAnchorKey: String](nsprefpanehelpmenuanchorkey.md)
+- [let NSPrefPaneHelpMenuAnchorKey: String](./nsprefpanehelpmenuanchorkey.md)
   The help book anchor to display.
 
 

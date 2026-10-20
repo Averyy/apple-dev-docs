@@ -1,7 +1,8 @@
 # setOutputEnabled(_:enabled:)
 
 **Framework**: Compute Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enables or disables execution of the provided output stage, without disabling the system it represents.
 
@@ -12,7 +13,7 @@ Enables or disables execution of the provided output stage, without disabling th
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

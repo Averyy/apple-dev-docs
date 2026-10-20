@@ -1,7 +1,8 @@
 # RealityViewLayoutOption
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that specify the frame sizing and content alignment option for `RealityView`.
 
@@ -21,11 +22,11 @@ struct RealityViewLayoutOption
 
 ## Mentions
 
-- [Controlling the layout behavior of a reality view](controlling-the-layout-behavior-of-a-realityview.md)
+- [Controlling the layout behavior of a reality view](./controlling-the-layout-behavior-of-a-realityview.md)
 
 #### Overview
 
-Pass in a `RealityViewLayoutOption` when using the [`realityViewLayoutBehavior(_:)`](https://developer.apple.com/documentation/swiftui/view/realityviewlayoutbehavior(_:)) modifier:
+Pass in a `RealityViewLayoutOption` when using the [`realityViewLayoutBehavior(_:)`](../SwiftUI/view/realityviewlayoutbehavior%28_%29.md) modifier:
 
 ```swift
 struct ModelWrapperView: View {
@@ -45,35 +46,36 @@ struct ModelWrapperView: View {
 ## Topics
 
 ### Type Properties
-- [static let centered: RealityViewLayoutOption](realityviewlayoutoption/centered.md)
+- [static let centered: RealityViewLayoutOption](./realityviewlayoutoption/centered.md)
   The option that centers the visual content within a flexible frame.
-- [static let fixedSize: RealityViewLayoutOption](realityviewlayoutoption/fixedsize.md)
+- [static let fixedSize: RealityViewLayoutOption](./realityviewlayoutoption/fixedsize.md)
   The option that fixes the size of the frame to equal the size of the visual content and centers the content within the new frame size.
-- [static let flexible: RealityViewLayoutOption](realityviewlayoutoption/flexible.md)
+- [static let flexible: RealityViewLayoutOption](./realityviewlayoutoption/flexible.md)
   The option that applies the default layout behavior of `RealityView`, where the content is not centered and the frame is flexible (takes up as much space as the SwiftUI layout provides).
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [Controlling the layout behavior of a reality view](controlling-the-layout-behavior-of-a-realityview.md)
+### SwiftUI scene presentation
+- [Controlling the layout behavior of a reality view](./controlling-the-layout-behavior-of-a-realityview.md)
   Choose a strategy for sizing frames and centering 3D content.
-- [struct RealityView](realityview.md)
+- [struct RealityView](./realityview.md)
   A view that contains RealityKit content.
-- [struct RealityViewContent](realityviewcontent.md)
+- [struct RealityViewContent](./realityviewcontent.md)
   The content of a visionOS reality view.
-- [struct RealityViewCameraContent](realityviewcameracontent.md)
+- [struct RealityViewCameraContent](./realityviewcameracontent.md)
   The content of a reality view that is displayed through a camera.
-- [protocol RealityViewContentProtocol](realityviewcontentprotocol.md)
+- [protocol RealityViewContentProtocol](./realityviewcontentprotocol.md)
   A protocol representing the content of a reality view.
-- [struct RealityViewDefaultPlaceholder](realityviewdefaultplaceholder.md)
+- [struct RealityViewDefaultPlaceholder](./realityviewdefaultplaceholder.md)
   A view that represents the default placeholder for a RealityView.
-- [struct RealityViewEntityCollection](realityviewentitycollection.md)
+- [struct RealityViewEntityCollection](./realityviewentitycollection.md)
   A collection of entities in a RealityView.
-- [protocol EntityCollection](entitycollection.md)
+- [protocol EntityCollection](./entitycollection.md)
   An ordered, mutable collection of entities.
 
 

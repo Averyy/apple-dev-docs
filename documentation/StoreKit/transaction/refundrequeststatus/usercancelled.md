@@ -1,7 +1,8 @@
 # Transaction.RefundRequestStatus.userCancelled
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user canceled submission of their refund request.
 
@@ -22,7 +23,8 @@ case userCancelled
 
 ## See Also
 
-- [Transaction.RefundRequestStatus.success](transaction/refundrequeststatus/success.md)
+### Getting Refund Request Status
+- [Transaction.RefundRequestStatus.success](./success.md)
   The App Store has received the refund request.
 
 

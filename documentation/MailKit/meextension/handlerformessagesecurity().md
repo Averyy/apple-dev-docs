@@ -1,7 +1,8 @@
 # handlerForMessageSecurity()
 
 **Framework**: MailKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an object that applies security measures such as encryption and digital signatures to messages.
 
@@ -12,6 +13,10 @@ Returns an object that applies security measures such as encryption and digital 
 
 ```swift
 optional func handlerForMessageSecurity() -> any MEMessageSecurityHandler
+```
+
+```objc
+- (id<MEMessageSecurityHandler>) handlerForMessageSecurity;
 ```
 
 #### Return Value

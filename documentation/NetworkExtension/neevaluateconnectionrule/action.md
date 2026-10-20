@@ -1,7 +1,8 @@
 # action
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The action to take if the properties of the network connection being established match the rule.
 
@@ -19,9 +20,14 @@ The action to take if the properties of the network connection being established
 var action: NEEvaluateConnectionRuleAction { get }
 ```
 
+```objc
+@property (readonly) NEEvaluateConnectionRuleAction action;
+```
+
 ## See Also
 
-- [enum NEEvaluateConnectionRuleAction](neevaluateconnectionruleaction.md)
+### Accessing the Rule Action
+- [enum NEEvaluateConnectionRuleAction](../neevaluateconnectionruleaction.md)
 
 
 ---

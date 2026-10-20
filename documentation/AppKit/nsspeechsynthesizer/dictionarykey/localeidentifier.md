@@ -1,7 +1,8 @@
 # localeIdentifier
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The canonical locale identifier string describing the dictionary’s locale.
 
@@ -14,21 +15,26 @@ The canonical locale identifier string describing the dictionary’s locale.
 static let localeIdentifier: NSSpeechSynthesizer.DictionaryKey
 ```
 
+```c
+extern NSSpeechDictionaryKey const NSSpeechDictionaryLocaleIdentifier;
+```
+
 #### Discussion
 
-A locale is generally composed of three pieces of ordered information: a language code, a region code, and a variant code. For more information, see [`NSLocale`](https://developer.apple.com/documentation/foundation/nslocale).
+A locale is generally composed of three pieces of ordered information: a language code, a region code, and a variant code. For more information, see [`NSLocale`](../../../Foundation/nslocale.md).
 
 ## See Also
 
-- [static let abbreviations: NSSpeechSynthesizer.DictionaryKey](nsspeechsynthesizer/dictionarykey/abbreviations.md)
+### Type Properties
+- [static let abbreviations: NSSpeechSynthesizer.DictionaryKey](./abbreviations.md)
   An array of dictionary objects containing the keys `NSSpeechDictionaryEntrySpelling` and `NSSpeechDictionaryEntryPhonemes`.
-- [static let entryPhonemes: NSSpeechSynthesizer.DictionaryKey](nsspeechsynthesizer/dictionarykey/entryphonemes.md)
+- [static let entryPhonemes: NSSpeechSynthesizer.DictionaryKey](./entryphonemes.md)
   The phonemic representation of an entry. An `NSString`.
-- [static let entrySpelling: NSSpeechSynthesizer.DictionaryKey](nsspeechsynthesizer/dictionarykey/entryspelling.md)
+- [static let entrySpelling: NSSpeechSynthesizer.DictionaryKey](./entryspelling.md)
   The spelling of an entry. An `NSString`.
-- [static let modificationDate: NSSpeechSynthesizer.DictionaryKey](nsspeechsynthesizer/dictionarykey/modificationdate.md)
+- [static let modificationDate: NSSpeechSynthesizer.DictionaryKey](./modificationdate.md)
   A string representation of the dictionary’s last modification date in the international format (YYYY-MM-DD HH:MM:SS ±HHMM). If the same word appears across multiple dictionaries, the one from the dictionary with the most recent date will be used.
-- [static let pronunciations: NSSpeechSynthesizer.DictionaryKey](nsspeechsynthesizer/dictionarykey/pronunciations.md)
+- [static let pronunciations: NSSpeechSynthesizer.DictionaryKey](./pronunciations.md)
   An array of dictionary objects containing the keys `NSSpeechDictionaryEntrySpelling` and `NSSpeechDictionaryEntryPhonemes`.
 
 

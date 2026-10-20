@@ -1,7 +1,8 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -18,18 +19,18 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kINQUIRY_Page83_AssociationDevice](1643284-anonymous/kinquiry_page83_associationdevice.md)
-- [kINQUIRY_Page83_AssociationLogicalUnit](1643284-anonymous/kinquiry_page83_associationlogicalunit.md)
-- [kINQUIRY_Page83_AssociationMask](1643284-anonymous/kinquiry_page83_associationmask.md)
-- [kINQUIRY_Page83_AssociationShift](1643284-anonymous/kinquiry_page83_associationshift.md)
-- [kINQUIRY_Page83_AssociationTargetDevice](1643284-anonymous/kinquiry_page83_associationtargetdevice.md)
-- [kINQUIRY_Page83_AssociationTargetPort](1643284-anonymous/kinquiry_page83_associationtargetport.md)
-- [kINQUIRY_Page83_AssociationDevice](../driverkit/kinquiry_page83_associationdevice.md)
-- [kINQUIRY_Page83_AssociationLogicalUnit](../driverkit/kinquiry_page83_associationlogicalunit.md)
-- [kINQUIRY_Page83_AssociationMask](../driverkit/kinquiry_page83_associationmask.md)
-- [kINQUIRY_Page83_AssociationShift](../driverkit/kinquiry_page83_associationshift.md)
-- [kINQUIRY_Page83_AssociationTargetDevice](../driverkit/kinquiry_page83_associationtargetdevice.md)
-- [kINQUIRY_Page83_AssociationTargetPort](../driverkit/kinquiry_page83_associationtargetport.md)
+- [kINQUIRY_Page83_AssociationDevice](./api-1643284-anonymous/kinquiry_page83_associationdevice.md)
+- [kINQUIRY_Page83_AssociationLogicalUnit](./api-1643284-anonymous/kinquiry_page83_associationlogicalunit.md)
+- [kINQUIRY_Page83_AssociationMask](./api-1643284-anonymous/kinquiry_page83_associationmask.md)
+- [kINQUIRY_Page83_AssociationShift](./api-1643284-anonymous/kinquiry_page83_associationshift.md)
+- [kINQUIRY_Page83_AssociationTargetDevice](./api-1643284-anonymous/kinquiry_page83_associationtargetdevice.md)
+- [kINQUIRY_Page83_AssociationTargetPort](./api-1643284-anonymous/kinquiry_page83_associationtargetport.md)
+- [kINQUIRY_Page83_AssociationDevice](../DriverKit/kinquiry_page83_associationdevice.md)
+- [kINQUIRY_Page83_AssociationLogicalUnit](../DriverKit/kinquiry_page83_associationlogicalunit.md)
+- [kINQUIRY_Page83_AssociationMask](../DriverKit/kinquiry_page83_associationmask.md)
+- [kINQUIRY_Page83_AssociationShift](../DriverKit/kinquiry_page83_associationshift.md)
+- [kINQUIRY_Page83_AssociationTargetDevice](../DriverKit/kinquiry_page83_associationtargetdevice.md)
+- [kINQUIRY_Page83_AssociationTargetPort](../DriverKit/kinquiry_page83_associationtargetport.md)
 
 
 ---

@@ -1,20 +1,25 @@
 # MTLFloatingPointConversionRoundingMode
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 enum MTLFloatingPointConversionRoundingMode
+```
+
+```c
+enum MTLFloatingPointConversionRoundingMode : NSInteger;
 ```
 
 #### Overview
@@ -28,20 +33,20 @@ Round-toward-zero.
 ## Topics
 
 ### Enumeration Cases
-- [MTLFloatingPointConversionRoundingMode.toNearestEven](mtlfloatingpointconversionroundingmode/tonearesteven.md)
-- [MTLFloatingPointConversionRoundingMode.towardZero](mtlfloatingpointconversionroundingmode/towardzero.md)
+- [MTLFloatingPointConversionRoundingMode.toNearestEven](./mtlfloatingpointconversionroundingmode/tonearesteven.md)
+- [MTLFloatingPointConversionRoundingMode.towardZero](./mtlfloatingpointconversionroundingmode/towardzero.md)
 ### Initializers
-- [init?(rawValue: Int)](mtlfloatingpointconversionroundingmode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mtlfloatingpointconversionroundingmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

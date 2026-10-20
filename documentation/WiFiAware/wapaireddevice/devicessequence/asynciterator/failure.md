@@ -1,7 +1,8 @@
 # WAPairedDevice.DevicesSequence.AsyncIterator.Failure
 
 **Framework**: Wi-Fi Aware  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of error that the sequence can produce.
 

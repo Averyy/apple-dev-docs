@@ -1,7 +1,8 @@
 # pixelBufferAttributes
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Creation attributes for the pixel buffers created by this pool.
 

@@ -1,7 +1,8 @@
 # ASDeliveredVerificationCodesManager.VerificationError.Code.appIsNotEnabledCredentialProvider
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This error signals that the app is not actively enabled as a credential provider.
 

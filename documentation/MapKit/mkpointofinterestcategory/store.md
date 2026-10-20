@@ -1,7 +1,8 @@
 # store
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The point of interest category for stores.
 
@@ -20,31 +21,36 @@ The point of interest category for stores.
 static let store: MKPointOfInterestCategory
 ```
 
+```c
+extern MKPointOfInterestCategory const MKPointOfInterestCategoryStore;
+```
+
 ## See Also
 
-- [static let animalService: MKPointOfInterestCategory](mkpointofinterestcategory/animalservice.md)
+### Personal services
+- [static let animalService: MKPointOfInterestCategory](./animalservice.md)
   The point of interest category for animal services.
-- [static let atm: MKPointOfInterestCategory](mkpointofinterestcategory/atm.md)
+- [static let atm: MKPointOfInterestCategory](./atm.md)
   The point of interest category for ATM machines.
-- [static let automotiveRepair: MKPointOfInterestCategory](mkpointofinterestcategory/automotiverepair.md)
+- [static let automotiveRepair: MKPointOfInterestCategory](./automotiverepair.md)
   The point of interest category for automotive repair services.
-- [static let bank: MKPointOfInterestCategory](mkpointofinterestcategory/bank.md)
+- [static let bank: MKPointOfInterestCategory](./bank.md)
   The point of interest category for banks.
-- [static let beauty: MKPointOfInterestCategory](mkpointofinterestcategory/beauty.md)
+- [static let beauty: MKPointOfInterestCategory](./beauty.md)
   The point of interest category for beauty services.
-- [static let evCharger: MKPointOfInterestCategory](mkpointofinterestcategory/evcharger.md)
+- [static let evCharger: MKPointOfInterestCategory](./evcharger.md)
   The point of interest category for EV chargers.
-- [static let fitnessCenter: MKPointOfInterestCategory](mkpointofinterestcategory/fitnesscenter.md)
+- [static let fitnessCenter: MKPointOfInterestCategory](./fitnesscenter.md)
   The point of interest category for fitness centers.
-- [static let laundry: MKPointOfInterestCategory](mkpointofinterestcategory/laundry.md)
+- [static let laundry: MKPointOfInterestCategory](./laundry.md)
   The point of interest category for laundries.
-- [static let mailbox: MKPointOfInterestCategory](mkpointofinterestcategory/mailbox.md)
+- [static let mailbox: MKPointOfInterestCategory](./mailbox.md)
   The point of interest category for mailboxes.
-- [static let postOffice: MKPointOfInterestCategory](mkpointofinterestcategory/postoffice.md)
+- [static let postOffice: MKPointOfInterestCategory](./postoffice.md)
   The point of interest category for post offices.
-- [static let restroom: MKPointOfInterestCategory](mkpointofinterestcategory/restroom.md)
+- [static let restroom: MKPointOfInterestCategory](./restroom.md)
   The point of interest category for restrooms.
-- [static let spa: MKPointOfInterestCategory](mkpointofinterestcategory/spa.md)
+- [static let spa: MKPointOfInterestCategory](./spa.md)
   The point of interest category for spa services.
 
 

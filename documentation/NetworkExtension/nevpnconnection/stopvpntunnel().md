@@ -1,7 +1,8 @@
 # stopVPNTunnel()
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Start the process of disconnecting the VPN.
 
@@ -19,18 +20,23 @@ Start the process of disconnecting the VPN.
 func stopVPNTunnel()
 ```
 
+```objc
+- (void) stopVPNTunnel;
+```
+
 #### Discussion
 
-This method returns immediately after starting the process of disconnecting the VPN. In order to be notified when the VPN is fully disconnected, register to observe the [`NEVPNStatusDidChangeNotification`](nevpnstatusdidchangenotification.md) notification on the [`NEVPNConnection`](nevpnconnection.md) object and examine the status property when the notification is received.
+This method returns immediately after starting the process of disconnecting the VPN. In order to be notified when the VPN is fully disconnected, register to observe the [`NEVPNStatusDidChangeNotification`](../nevpnstatusdidchangenotification.md) notification on the [`NEVPNConnection`](../nevpnconnection.md) object and examine the status property when the notification is received.
 
 ## See Also
 
-- [func startVPNTunnel() throws](nevpnconnection/startvpntunnel.md)
+### Controlling the VPN connection
+- [func startVPNTunnel() throws](./startvpntunnel%28%29.md)
   Start the process of connecting the VPN.
-- [func startVPNTunnel(options: [String : NSObject]?) throws](nevpnconnection/startvpntunnel(options:).md)
+- [func startVPNTunnel(options: [String : NSObject]?) throws](./startvpntunnel%28options%29.md)
   Start the process of connecting the VPN.
-- [let NEVPNConnectionStartOptionUsername: String](nevpnconnectionstartoptionusername.md)
-- [let NEVPNConnectionStartOptionPassword: String](nevpnconnectionstartoptionpassword.md)
+- [let NEVPNConnectionStartOptionUsername: String](../nevpnconnectionstartoptionusername.md)
+- [let NEVPNConnectionStartOptionPassword: String](../nevpnconnectionstartoptionpassword.md)
 
 
 ---

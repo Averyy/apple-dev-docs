@@ -1,7 +1,8 @@
 # measurementUnit
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 var measurementUnit: ICScannerMeasurementUnit { get set }
+```
+
+```objc
+@property (readwrite) ICScannerMeasurementUnit measurementUnit;
 ```
 
 

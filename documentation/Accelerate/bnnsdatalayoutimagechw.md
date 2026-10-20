@@ -1,7 +1,8 @@
 # BNNSDataLayoutImageCHW
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that represents a 3D image stack.
 
@@ -20,6 +21,10 @@ A constant that represents a 3D image stack.
 var BNNSDataLayoutImageCHW: BNNSDataLayout { get }
 ```
 
+```c
+BNNSDataLayoutImageCHW
+```
+
 #### Discussion
 
 The value `(x, y, channel)` is at index `x * stride[0] + y * stride[1] + channel * stride[2]`.
@@ -30,13 +35,14 @@ The value `(x, y, channel)` is at index `x * stride[0] + y * stride[1] + channel
 
 ## See Also
 
-- [var BNNSDataLayout3DFirstMajor: BNNSDataLayout](bnnsdatalayout3dfirstmajor.md)
+### 3D Data Layouts
+- [var BNNSDataLayout3DFirstMajor: BNNSDataLayout](./bnnsdatalayout3dfirstmajor.md)
   A constant that represents a 3D first-major tensor.
-- [var BNNSDataLayout3DLastMajor: BNNSDataLayout](bnnsdatalayout3dlastmajor.md)
+- [var BNNSDataLayout3DLastMajor: BNNSDataLayout](./bnnsdatalayout3dlastmajor.md)
   A constant that represents a 3D last-major tensor.
-- [var BNNSDataLayoutSNE: BNNSDataLayout](bnnsdatalayoutsne.md)
+- [var BNNSDataLayoutSNE: BNNSDataLayout](./bnnsdatalayoutsne.md)
   A constant that represents a 3D tensor with the size elements embedding dimension, batch size, and sequence length.
-- [var BNNSDataLayoutNSE: BNNSDataLayout](bnnsdatalayoutnse.md)
+- [var BNNSDataLayoutNSE: BNNSDataLayout](./bnnsdatalayoutnse.md)
   A constant that represents a 3D tensor with the size elements embedding dimension, sequence length, and batch size.
 
 

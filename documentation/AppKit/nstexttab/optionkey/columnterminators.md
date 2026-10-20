@@ -1,7 +1,8 @@
 # columnTerminators
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The value is an `NSCharacterSet` object.
 
@@ -12,6 +13,10 @@ The value is an `NSCharacterSet` object.
 
 ```swift
 static let columnTerminators: NSTextTab.OptionKey
+```
+
+```c
+extern NSTextTabOptionKey NSTabColumnTerminatorsAttributeName;
 ```
 
 #### Discussion

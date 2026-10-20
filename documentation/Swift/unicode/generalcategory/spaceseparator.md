@@ -1,7 +1,8 @@
 # Unicode.GeneralCategory.spaceSeparator
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A space character of non-zero width.
 
@@ -22,7 +23,7 @@ case spaceSeparator
 
 #### Discussion
 
-This value corresponds to the category `Space_Separator` (abbreviated `Zs`) in the [`Unicode Standard`](https://developer.apple.comhttps://unicode.org/reports/tr44/#General_Category_Values).
+This value corresponds to the category `Space_Separator` (abbreviated `Zs`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 
 
 ---

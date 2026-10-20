@@ -1,7 +1,8 @@
 # textToButtonPadding
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The padding between the text and buttons.
 
@@ -10,7 +11,7 @@ The padding between the text and buttons.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

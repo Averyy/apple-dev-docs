@@ -1,7 +1,8 @@
 # cnnNeuronPReLUDescriptor(with:noCopy:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 class func cnnNeuronPReLUDescriptor(with data: Data, noCopy: Bool) -> MPSNNNeuronDescriptor
+```
+
+```objc
++ (MPSNNNeuronDescriptor *) cnnNeuronPReLUDescriptorWithData:(NSData *) data noCopy:(bool) noCopy;
 ```
 
 

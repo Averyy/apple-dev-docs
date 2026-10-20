@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A time value that represents the numerator of a rational time.
 
@@ -20,13 +21,18 @@ A time value that represents the numerator of a rational time.
 var value: CMTimeValue
 ```
 
+```c
+CMTimeValue value;
+```
+
 ## See Also
 
-- [var timescale: CMTimeScale](cmtime/timescale.md)
+### Accessing Time Values
+- [var timescale: CMTimeScale](./timescale.md)
   A timescale that represents the denominator of a rational time.
-- [var flags: CMTimeFlags](cmtime/flags.md)
+- [var flags: CMTimeFlags](./flags.md)
   The flags associated with a time.
-- [var epoch: CMTimeEpoch](cmtime/epoch.md)
+- [var epoch: CMTimeEpoch](./epoch.md)
   The epoch of the time.
 
 

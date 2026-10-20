@@ -1,12 +1,13 @@
 # target
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The target of the animation.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,22 @@ The target of the animation.
 static let target: NSViewAnimation.Key
 ```
 
+```c
+extern NSViewAnimationKey NSViewAnimationTargetKey;
+```
+
 #### Discussion
 
-The target can be either an [`NSView`](nsview.md) object or an [`NSWindow`](nswindow.md) object. This property is required.
+The target can be either an [`NSView`](../../nsview.md) object or an [`NSWindow`](../../nswindow.md) object. This property is required.
 
 ## See Also
 
-- [static let effect: NSViewAnimation.Key](nsviewanimation/key/effect.md)
+### Keys
+- [static let effect: NSViewAnimation.Key](./effect.md)
   An effect to apply to the animation.
-- [static let endFrame: NSViewAnimation.Key](nsviewanimation/key/endframe.md)
+- [static let endFrame: NSViewAnimation.Key](./endframe.md)
   The size and location of the window or view at the end of the animation.
-- [static let startFrame: NSViewAnimation.Key](nsviewanimation/key/startframe.md)
+- [static let startFrame: NSViewAnimation.Key](./startframe.md)
   The size and location of the window or view at the start of the animation.
 
 

@@ -1,7 +1,8 @@
 # objectFunctionDescriptor
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Assigns a function descriptor representing the function this pipeline executes for each *object* in the object shader stage.
 
@@ -18,6 +19,10 @@ Assigns a function descriptor representing the function this pipeline executes f
 ```swift
 @NSCopying
 var objectFunctionDescriptor: MTL4FunctionDescriptor? { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite, nullable) MTL4FunctionDescriptor * objectFunctionDescriptor;
 ```
 
 

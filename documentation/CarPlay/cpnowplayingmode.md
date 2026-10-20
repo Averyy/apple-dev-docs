@@ -1,7 +1,8 @@
 # CPNowPlayingMode
 
 **Framework**: CarPlay  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.4+
@@ -15,30 +16,34 @@
 class CPNowPlayingMode
 ```
 
+```objc
+@interface CPNowPlayingMode : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](cpnowplayingmode/init(coder:).md)
+- [init?(coder: NSCoder)](./cpnowplayingmode/init%28coder%29.md)
 ### Type Properties
-- [class var `default`: CPNowPlayingMode](cpnowplayingmode/default.md)
+- [class var `default`: CPNowPlayingMode](./cpnowplayingmode/default.md)
   The default now playing mode. While this mode is active, your app will display now playing metadata as donated to the shared system now playing info center.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [CPNowPlayingModeSports](cpnowplayingmodesports.md)
+- [CPNowPlayingModeSports](./cpnowplayingmodesports.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # VZGuestProvisioningOptions
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The base class for guest provisioning options.
 
@@ -14,36 +15,41 @@ The base class for guest provisioning options.
 class VZGuestProvisioningOptions
 ```
 
+```objc
+@interface VZGuestProvisioningOptions : NSObject
+```
+
 #### Overview
 
-Don’t instantiate `VZGuestProvisioningOptions` directly; instead, use one of its subclasses, such as [`VZMacGuestProvisioningOptions`](vzmacguestprovisioningoptions.md).
+Don’t instantiate `VZGuestProvisioningOptions` directly; instead, use one of its subclasses, such as [`VZMacGuestProvisioningOptions`](./vzmacguestprovisioningoptions.md).
 
 ## Topics
 
 ### Instance Methods
-- [func validate() throws](vzguestprovisioningoptions/validate.md)
+- [func validate() throws](./vzguestprovisioningoptions/validate%28%29.md)
   Validates the provisioning options.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [VZMacGuestProvisioningOptions](vzmacguestprovisioningoptions.md)
+- [VZMacGuestProvisioningOptions](./vzmacguestprovisioningoptions.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZMacGuestProvisioningOptions](vzmacguestprovisioningoptions.md)
+### Provisioning options
+- [class VZMacGuestProvisioningOptions](./vzmacguestprovisioningoptions.md)
   The configuration for guest setup during macOS virtual machine startup.
-- [class VZGuestMemoryMapping](vzguestmemorymapping.md)
+- [class VZGuestMemoryMapping](./vzguestmemorymapping.md)
   An object that represents a chunk of the guest operating system’s dynamic random access memory (DRAM).
 
 

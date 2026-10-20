@@ -1,7 +1,8 @@
 # applicationTokens
 
 **Framework**: Family Controls  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Tokens that represent applications selected by the user.
 
@@ -17,7 +18,8 @@ var applicationTokens: Set<ApplicationToken>
 
 ## See Also
 
-- [var applications: Set<Application>](familyactivityselection/applications.md)
+### Accessing selected applications
+- [var applications: Set<Application>](./applications.md)
   A set of application instances selected by the user.
 
 

@@ -1,12 +1,13 @@
 # path(toColumn:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a string representing the path from the first column up to, but not including, the column at the given index.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Returns a string representing the path from the first column up to, but not incl
 func path(toColumn column: Int) -> String
 ```
 
+```objc
+- (NSString *) pathToColumn:(NSInteger) column;
+```
+
 #### Return Value
 
-The path of the current selection up to, but not including, the specified column. The components of this path are separated with the string returned by [`pathSeparator`](nsbrowser/pathseparator.md).
+The path of the current selection up to, but not including, the specified column. The components of this path are separated with the string returned by [`pathSeparator`](./pathseparator.md).
 
 ## Parameters
 
@@ -24,11 +29,12 @@ The path of the current selection up to, but not including, the specified column
 
 ## See Also
 
-- [func path() -> String](nsbrowser/path.md)
+### Managing the Path
+- [func path() -> String](./path%28%29.md)
   Returns a string representing the browser’s current path.
-- [func setPath(String) -> Bool](nsbrowser/setpath(_:).md)
+- [func setPath(String) -> Bool](./setpath%28_%29.md)
   Sets the path to be displayed by the browser.
-- [var pathSeparator: String](nsbrowser/pathseparator.md)
+- [var pathSeparator: String](./pathseparator.md)
   The path separator.
 
 

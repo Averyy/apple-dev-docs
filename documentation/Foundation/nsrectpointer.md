@@ -1,7 +1,8 @@
 # NSRectPointer
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Type indicating a parameter is a pointer to an `NSRect` structure.
 
@@ -15,12 +16,17 @@ Type indicating a parameter is a pointer to an `NSRect` structure.
 typealias NSRectPointer = UnsafeMutablePointer<NSRect>
 ```
 
+```c
+typedef NSRect * NSRectPointer;
+```
+
 ## See Also
 
-- [enum NSRectEdge](nsrectedge.md)
-- [struct AlignmentOptions](alignmentoptions.md)
+### Related Types
+- [enum NSRectEdge](./nsrectedge.md)
+- [struct AlignmentOptions](./alignmentoptions.md)
   Values representing alignment operations.
-- [typealias NSRectArray](nsrectarray.md)
+- [typealias NSRectArray](./nsrectarray.md)
   Type indicating a parameter is array of `NSRect` structures.
 
 

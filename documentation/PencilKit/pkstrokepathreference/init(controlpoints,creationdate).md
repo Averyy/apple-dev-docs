@@ -1,7 +1,8 @@
 # init(controlPoints:creationDate:)
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a stroke path with the cubic B-spline control points and a date that you specify.
 
@@ -16,6 +17,10 @@ Creates a stroke path with the cubic B-spline control points and a date that you
 
 ```swift
 init(controlPoints: [PKStrokePoint], creationDate: Date)
+```
+
+```objc
+- (instancetype) initWithControlPoints:(NSArray<PKStrokePoint *> *) controlPoints creationDate:(NSDate *) creationDate;
 ```
 
 ## Parameters

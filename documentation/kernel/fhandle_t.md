@@ -1,14 +1,15 @@
 # fhandle_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct fhandle {
     ...
 } fhandle_t;
@@ -17,8 +18,8 @@ typedef struct fhandle {
 ## Topics
 
 ### Instance Properties
-- [fh_data](fhandle_t/3755432-fh_data.md)
-- [fh_len](fhandle_t/3755433-fh_len.md)
+- [fh_data](./fhandle_t/api-3755432-fh_data.md)
+- [fh_len](./fhandle_t/api-3755433-fh_len.md)
 
 
 ---

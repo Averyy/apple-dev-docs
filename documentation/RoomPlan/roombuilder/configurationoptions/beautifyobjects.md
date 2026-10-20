@@ -1,7 +1,8 @@
 # beautifyObjects
 
 **Framework**: RoomPlan  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that instructs the captured room to enhance its look.
 

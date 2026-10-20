@@ -1,7 +1,8 @@
 # ExtensibleSingleSignOn.PlatformSSO.AdditionalHTTPHeaders
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 A dictionary with keys and values that are strings. The keys are HTTP header names, and the values are HTTP header values. The device adds these headers to nonce, pre-authentication, login, key and key exchange requests for Platform SSO. The device limits the number of headers to 20, the length of the header name to 128 characters, and the length of the header value to 2048 characters.
 
@@ -10,7 +11,7 @@ A dictionary with keys and values that are strings. The keys are HTTP header nam
 
 ## Declaration
 
-```swift
+```
 object ExtensibleSingleSignOn.PlatformSSO.AdditionalHTTPHeaders
 ```
 
@@ -20,9 +21,10 @@ object ExtensibleSingleSignOn.PlatformSSO.AdditionalHTTPHeaders
 
 ## See Also
 
-- [object ExtensibleSingleSignOn.PlatformSSO.AuthorizationGroups](extensiblesinglesignon/platformsso-data.dictionary/authorizationgroups-data.dictionary.md)
+### Objects
+- [object ExtensibleSingleSignOn.PlatformSSO.AuthorizationGroups](./authorizationgroups-data.dictionary.md)
   The pairing of Authorization Rights to group names.
-- [object ExtensibleSingleSignOn.PlatformSSO.TokenToUserMapping](extensiblesinglesignon/platformsso-data.dictionary/tokentousermapping-data.dictionary.md)
+- [object ExtensibleSingleSignOn.PlatformSSO.TokenToUserMapping](./tokentousermapping-data.dictionary.md)
   The attribute mapping to use when creating users, or for authorization.
 
 

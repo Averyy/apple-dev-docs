@@ -1,7 +1,8 @@
 # connecting(to:from:datapath:)
 
 **Framework**: Wi-Fi Aware  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Publishes the provided service over Wi-Fi, enabling connections from the specified paired devices.
 
@@ -24,9 +25,9 @@ A new `Action` configuring this operation.
 
 When publishing, the `NetworkListener` provides a `NetworkConnection` object for each paired device that connects.
 
-You can set the data path parameters, including the [`WAPerformanceMode`](waperformancemode.md), in the optional “`datapath:`” parameter, or by using [`WAParameters`](waparameters.md) that are written into the [`NWParameters`](https://developer.apple.com/documentation/network/nwparameters) for the `NetworkListener`.
+You can set the data path parameters, including the [`WAPerformanceMode`](../../waperformancemode.md), in the optional “`datapath:`” parameter, or by using [`WAParameters`](../../waparameters.md) that are written into the [`NWParameters`](../../../Network/nwparameters.md) for the `NetworkListener`.
 
-> ❗ **Important**: Each service must have the same [`WAPerformanceMode`](waperformancemode.md) on both the `NetworkBrowser` (subscriber) and `NetworkListener` (publisher) sides of the connection, or the resulting performance behavior is undefined. If not specified, the performance mode defaults to [`WAPerformanceMode.bulk`](waperformancemode/bulk.md) on both sides.
+> ❗ **Important**: Each service must have the same [`WAPerformanceMode`](../../waperformancemode.md) on both the `NetworkBrowser` (subscriber) and `NetworkListener` (publisher) sides of the connection, or the resulting performance behavior is undefined. If not specified, the performance mode defaults to [`WAPerformanceMode.bulk`](../../waperformancemode/bulk.md) on both sides.
 
 ## Parameters
 

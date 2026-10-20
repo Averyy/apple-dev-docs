@@ -1,7 +1,8 @@
 # andHideOthers
 
 **Framework**: Core Services  
-**Kind**: structdata
+**Kind**: structdata  
+**Role**: Type Property
 
 Requests that other applications be hidden as soon as the opened application completes its launch sequence.
 

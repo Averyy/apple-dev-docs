@@ -1,14 +1,15 @@
 # initWithBestSelection
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 IOReturn initWithBestSelection(const UInt16 *identifyData, IOATABusInfo *busInfo);
 ```
 

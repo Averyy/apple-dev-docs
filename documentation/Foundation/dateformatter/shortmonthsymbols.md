@@ -1,7 +1,8 @@
 # shortMonthSymbols
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of short month symbols for the receiver.
 
@@ -20,17 +21,22 @@ The array of short month symbols for the receiver.
 var shortMonthSymbols: [String]! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) NSArray<NSString *> * shortMonthSymbols;
+```
+
 ## See Also
 
-- [var monthSymbols: [String]!](dateformatter/monthsymbols.md)
+### Managing Month Symbols
+- [var monthSymbols: [String]!](./monthsymbols.md)
   The month symbols for the receiver.
-- [var veryShortMonthSymbols: [String]!](dateformatter/veryshortmonthsymbols.md)
+- [var veryShortMonthSymbols: [String]!](./veryshortmonthsymbols.md)
   The very short month symbols for the receiver.
-- [var standaloneMonthSymbols: [String]!](dateformatter/standalonemonthsymbols.md)
+- [var standaloneMonthSymbols: [String]!](./standalonemonthsymbols.md)
   The standalone month symbols for the receiver.
-- [var shortStandaloneMonthSymbols: [String]!](dateformatter/shortstandalonemonthsymbols.md)
+- [var shortStandaloneMonthSymbols: [String]!](./shortstandalonemonthsymbols.md)
   The short standalone month symbols for the receiver.
-- [var veryShortStandaloneMonthSymbols: [String]!](dateformatter/veryshortstandalonemonthsymbols.md)
+- [var veryShortStandaloneMonthSymbols: [String]!](./veryshortstandalonemonthsymbols.md)
   The very short month symbols for the receiver.
 
 

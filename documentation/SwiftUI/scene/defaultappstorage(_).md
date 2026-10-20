@@ -1,7 +1,8 @@
 # defaultAppStorage(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The default store used by `AppStorage` contained within the scene and its view content.
 

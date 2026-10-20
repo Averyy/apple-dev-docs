@@ -1,7 +1,8 @@
 # WKErrorDomain
 
 **Framework**: WebKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 String that identifies the WebKit error domain.
 
@@ -18,14 +19,19 @@ String that identifies the WebKit error domain.
 let WKErrorDomain: String
 ```
 
+```c
+extern NSString * const WKErrorDomain;
+```
+
 ## See Also
 
-- [let WKWebsiteDataTypeFetchCache: String](wkwebsitedatatypefetchcache.md)
-- [let WKWebsiteDataTypeFileSystem: String](wkwebsitedatatypefilesystem.md)
-- [let WKWebsiteDataTypeHashSalt: String](wkwebsitedatatypehashsalt.md)
-- [let WKWebsiteDataTypeMediaKeys: String](wkwebsitedatatypemediakeys.md)
-- [let WKWebsiteDataTypeSearchFieldRecentSearches: String](wkwebsitedatatypesearchfieldrecentsearches.md)
-- [let WKWebsiteDataTypeServiceWorkerRegistrations: String](wkwebsitedatatypeserviceworkerregistrations.md)
+### Constants
+- [let WKWebsiteDataTypeFetchCache: String](./wkwebsitedatatypefetchcache.md)
+- [let WKWebsiteDataTypeFileSystem: String](./wkwebsitedatatypefilesystem.md)
+- [let WKWebsiteDataTypeHashSalt: String](./wkwebsitedatatypehashsalt.md)
+- [let WKWebsiteDataTypeMediaKeys: String](./wkwebsitedatatypemediakeys.md)
+- [let WKWebsiteDataTypeSearchFieldRecentSearches: String](./wkwebsitedatatypesearchfieldrecentsearches.md)
+- [let WKWebsiteDataTypeServiceWorkerRegistrations: String](./wkwebsitedatatypeserviceworkerregistrations.md)
 
 
 ---

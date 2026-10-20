@@ -1,7 +1,8 @@
 # signal()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Signals the condition, waking up one thread waiting on it.
 
@@ -20,6 +21,10 @@ Signals the condition, waking up one thread waiting on it.
 func signal()
 ```
 
+```objc
+- (void) signal;
+```
+
 #### Discussion
 
 You use this method to wake up one thread that is waiting on the condition. You may call this method multiple times to wake up multiple threads. If no threads are waiting on the condition, this method does nothing.
@@ -28,7 +33,8 @@ To avoid race conditions, you should invoke this method only while the receiver 
 
 ## See Also
 
-- [func broadcast()](nscondition/broadcast.md)
+### Signaling Waiting Threads
+- [func broadcast()](./broadcast%28%29.md)
   Signals the condition, waking up all threads waiting on it.
 
 

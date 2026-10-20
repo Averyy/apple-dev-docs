@@ -1,13 +1,16 @@
 # center
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The center point of the region.
 
 **Availability**:
-- macOS 10.7+
-- watchOS 2.0+
+- macOS 10.7+ - Deprecated in 10.10
+- watchOS 2.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use [`center`](../clcircularregion/center.md) in [`CLCircularRegion`](../clcircularregion.md) instead.
 
 ## Declaration
 
@@ -15,17 +18,22 @@ The center point of the region.
 var center: CLLocationCoordinate2D { get }
 ```
 
+```objc
+@property (atomic, readonly) CLLocationCoordinate2D center;
+```
+
 #### Discussion
 
-In iOS, use a [`CLCircularRegion`](clcircularregion.md) object to manage geographic regions.
+In iOS, use a [`CLCircularRegion`](../clcircularregion.md) object to manage geographic regions.
 
 ## See Also
 
-- [init(circularRegionWithCenter: CLLocationCoordinate2D, radius: CLLocationDistance, identifier: String)](clregion/init(circularregionwithcenter:radius:identifier:).md)
+### Deprecated
+- [init(circularRegionWithCenter: CLLocationCoordinate2D, radius: CLLocationDistance, identifier: String)](./init%28circularregionwithcenter,radius,identifier%29.md)
   Initializes and returns a region object defining a circular area.
-- [func contains(CLLocationCoordinate2D) -> Bool](clregion/contains(_:).md)
+- [func contains(CLLocationCoordinate2D) -> Bool](./contains%28_%29.md)
   Returns a Boolean value indicating whether the region contains the specified coordinate.
-- [var radius: CLLocationDistance](clregion/radius.md)
+- [var radius: CLLocationDistance](./radius.md)
   The radius (measured in meters) that defines the region’s outer boundary.
 
 

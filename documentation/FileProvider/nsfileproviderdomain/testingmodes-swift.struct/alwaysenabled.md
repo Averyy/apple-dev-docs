@@ -1,7 +1,8 @@
 # alwaysEnabled
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A testing mode that automatically enables the domain.
 
@@ -18,13 +19,18 @@ A testing mode that automatically enables the domain.
 static var alwaysEnabled: NSFileProviderDomain.TestingModes { get }
 ```
 
+```c
+NSFileProviderDomainTestingModeAlwaysEnabled
+```
+
 #### Discussion
 
 By default, the user must manually enable a domain in System Preferences > Extensions before the File Provider extension can access it. This testing mode bypasses that workflow and automatically enables the domain.
 
 ## See Also
 
-- [static var interactive: NSFileProviderDomain.TestingModes](nsfileproviderdomain/testingmodes-swift.struct/interactive.md)
+### Accessing Modes
+- [static var interactive: NSFileProviderDomain.TestingModes](./interactive.md)
   A testing mode where the extension can deterministically test asynchronous operations.
 
 

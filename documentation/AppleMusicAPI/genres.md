@@ -1,7 +1,8 @@
 # Genres
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A resource object that represents a music genre.
 
@@ -10,26 +11,29 @@ A resource object that represents a music genre.
 
 ## Declaration
 
-```swift
+```
 object Genres
 ```
 
 ## Topics
 
 ### Related Objects
-- [object Genres.Attributes](genres/attributes-data.dictionary.md)
+- [object Genres.Attributes](./genres/attributes-data.dictionary.md)
   The attributes for a genre resource.
 
 ## Properties
 
 - `id` (string) *(required)*: The identifier for the genre.
 - `type` (string) *(required)*: This value must always be `genres`.
+
+  **Allowed Values**: `genres`
 - `href` (string) *(required)*: The relative location for the genre resource.
 - `attributes` (Genres.Attributes): The attributes for the genre.
 
 ## See Also
 
-- [object GenresResponse](genresresponse.md)
+### Handling the Response
+- [object GenresResponse](./genresresponse.md)
   The response to a genres request.
 
 

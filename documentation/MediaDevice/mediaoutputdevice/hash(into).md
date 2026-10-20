@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: Media Device  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hashes the essential components of the device by feeding them into the given hasher.
 

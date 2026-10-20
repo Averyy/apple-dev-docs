@@ -1,14 +1,15 @@
 # TASK_INSPECT_BASIC_COUNTS
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 TASK_INSPECT_BASIC_COUNTS = 1
 ```
 

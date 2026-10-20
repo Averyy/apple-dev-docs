@@ -1,7 +1,8 @@
 # FSContainerIdentifier
 
 **Framework**: FSKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A type that identifies a container.
 
@@ -14,6 +15,10 @@ A type that identifies a container.
 class FSContainerIdentifier
 ```
 
+```objc
+@interface FSContainerIdentifier : FSEntityIdentifier
+```
+
 #### Overview
 
 The identifier is either a UUID or a UUID with additional differentiating bytes. Some network protocols evaluate access based on a user ID when connecting. In this situation, when a file server receives multiple client connections with different user IDs, the server provides different file hierarchies to each. For such systems, represent the container identifier as the UUID associated with the server, followed by four or eight bytes to differentiate connections.
@@ -23,30 +28,31 @@ The identifier is either a UUID or a UUID with additional differentiating bytes.
 ## Topics
 
 ### Accessing identifier properties
-- [var volumeIdentifier: FSVolume.Identifier](fscontaineridentifier/volumeidentifier.md)
+- [var volumeIdentifier: FSVolume.Identifier](./fscontaineridentifier/volumeidentifier.md)
   The volume identifier associated with the container.
 
 ## Relationships
 
 ### Inherits From
-- [FSEntityIdentifier](fsentityidentifier.md)
+- [FSEntityIdentifier](./fsentityidentifier.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class FSContainerStatus](fscontainerstatus.md)
+### Containers
+- [class FSContainerStatus](./fscontainerstatus.md)
   A type that represents a container’s status.
 
 

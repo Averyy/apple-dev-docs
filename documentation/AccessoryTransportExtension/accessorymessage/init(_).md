@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Accessory Transport Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an accessory message using a result builder closure.
 
@@ -20,7 +21,8 @@ init(@AccessoryMessage.Builder _ builder: () -> AccessoryMessage)
 
 ## See Also
 
-- [AccessoryMessage.Builder](accessorymessage/builder.md)
+### Creating messages
+- [AccessoryMessage.Builder](./builder.md)
   A builder that constructs accessory messages declaratively.
 
 

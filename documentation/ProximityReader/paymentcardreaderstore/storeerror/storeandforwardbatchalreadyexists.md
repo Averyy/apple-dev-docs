@@ -1,7 +1,8 @@
 # PaymentCardReaderStore.StoreError.storeAndForwardBatchAlreadyExists
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates that a previous batch exists in the store and needs to be resolved or reset prior the current fetch batch request.
 

@@ -1,7 +1,8 @@
 # StructuredValue.bool(_:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A Boolean value.
 
@@ -22,13 +23,14 @@ case bool(Bool)
 
 ## See Also
 
-- [StructuredValue.string(_:)](structuredvalue/string(_:).md)
+### Primitive values
+- [StructuredValue.string(_:)](./string%28_%29.md)
   A string value.
-- [StructuredValue.int(_:)](structuredvalue/int(_:).md)
+- [StructuredValue.int(_:)](./int%28_%29.md)
   An integer value.
-- [StructuredValue.double(_:)](structuredvalue/double(_:).md)
+- [StructuredValue.double(_:)](./double%28_%29.md)
   A double-precision floating-point value.
-- [StructuredValue.null](structuredvalue/null.md)
+- [StructuredValue.null](./null.md)
   A null value.
 
 

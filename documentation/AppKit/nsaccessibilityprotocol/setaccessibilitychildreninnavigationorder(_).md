@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets the array of child accessibility elements in order for linear navigation.
@@ -17,27 +18,28 @@ func setAccessibilityChildrenInNavigationOrder(_ accessibilityChildrenInNavigati
 
 ## See Also
 
-- [func accessibilityChildren() -> [Any]?](nsaccessibilityprotocol/accessibilitychildren.md)
+### Determining relationships
+- [func accessibilityChildren() -> [Any]?](./accessibilitychildren%28%29.md)
   Returns the child accessibility elements in the accessibility hierarchy.
-- [func setAccessibilityChildren([Any]?)](nsaccessibilityprotocol/setaccessibilitychildren(_:).md)
+- [func setAccessibilityChildren([Any]?)](./setaccessibilitychildren%28_%29.md)
   Sets the child accessibility elements in the accessibility hierarchy.
-- [func accessibilityChildrenInNavigationOrder() -> [any NSAccessibilityElementProtocol]?](nsaccessibilityprotocol/accessibilitychildreninnavigationorder.md)
+- [func accessibilityChildrenInNavigationOrder() -> [any NSAccessibilityElementProtocol]?](./accessibilitychildreninnavigationorder%28%29.md)
   Returns the array of child accessibility elements in order for linear navigation.
-- [func accessibilityParent() -> Any?](nsaccessibilityprotocol/accessibilityparent.md)
+- [func accessibilityParent() -> Any?](./accessibilityparent%28%29.md)
   Returns the accessibility element’s parent in the accessibility hierarchy.
-- [func setAccessibilityParent(Any?)](nsaccessibilityprotocol/setaccessibilityparent(_:).md)
+- [func setAccessibilityParent(Any?)](./setaccessibilityparent%28_%29.md)
   Sets the accessibility element’s parent in the accessibility hierarchy.
-- [func accessibilitySelectedChildren() -> [Any]?](nsaccessibilityprotocol/accessibilityselectedchildren.md)
+- [func accessibilitySelectedChildren() -> [Any]?](./accessibilityselectedchildren%28%29.md)
   Returns the accessibility element’s currently selected children.
-- [func setAccessibilitySelectedChildren([Any]?)](nsaccessibilityprotocol/setaccessibilityselectedchildren(_:).md)
+- [func setAccessibilitySelectedChildren([Any]?)](./setaccessibilityselectedchildren%28_%29.md)
   Sets the accessibility element’s currently selected children.
-- [func accessibilityTopLevelUIElement() -> Any?](nsaccessibilityprotocol/accessibilitytopleveluielement.md)
+- [func accessibilityTopLevelUIElement() -> Any?](./accessibilitytopleveluielement%28%29.md)
   Returns the top-level element that contains the accessibility element.
-- [func setAccessibilityTopLevelUIElement(Any?)](nsaccessibilityprotocol/setaccessibilitytopleveluielement(_:).md)
+- [func setAccessibilityTopLevelUIElement(Any?)](./setaccessibilitytopleveluielement%28_%29.md)
   Sets the top-level element that contains the accessibility element.
-- [func accessibilityVisibleChildren() -> [Any]?](nsaccessibilityprotocol/accessibilityvisiblechildren.md)
+- [func accessibilityVisibleChildren() -> [Any]?](./accessibilityvisiblechildren%28%29.md)
   Returns the accessibility element’s visible child accessibility elements.
-- [func setAccessibilityVisibleChildren([Any]?)](nsaccessibilityprotocol/setaccessibilityvisiblechildren(_:).md)
+- [func setAccessibilityVisibleChildren([Any]?)](./setaccessibilityvisiblechildren%28_%29.md)
   Sets the accessibility element’s visible child accessibility elements.
 
 

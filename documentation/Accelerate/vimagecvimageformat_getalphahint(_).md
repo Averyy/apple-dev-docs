@@ -1,7 +1,8 @@
 # vImageCVImageFormat_GetAlphaHint(_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the alpha hint of a Core Video image format.
 
@@ -20,13 +21,17 @@ Returns the alpha hint of a Core Video image format.
 func vImageCVImageFormat_GetAlphaHint(_ format: vImageConstCVImageFormat) -> Int32
 ```
 
+```c
+int vImageCVImageFormat_GetAlphaHint(vImageConstCVImageFormatRef format);
+```
+
 #### Return Value
 
 Zero if the alpha hint isn’t opaque, or if the hint isn’t set. Nonzero if the alpha hint is fully opaque, even if the encoded values for alpha in the image aren’t `1.0`.
 
 #### Discussion
 
-The functions that create Core Video image formats, such as [`vImageCVImageFormat_CreateWithCVPixelBuffer(_:)`](vimagecvimageformat_createwithcvpixelbuffer(_:).md), return a [`vImageCVImageFormat`](vimagecvimageformat.md). The following code shows how you create a [`vImageConstCVImageFormat`](vimageconstcvimageformat.md) representation of a [`vImageCVImageFormat`](vimagecvimageformat.md) instance to pass to [`vImageCVImageFormat_GetAlphaHint(_:)`](vimagecvimageformat_getalphahint(_:).md):
+The functions that create Core Video image formats, such as [`vImageCVImageFormat_CreateWithCVPixelBuffer(_:)`](./vimagecvimageformat_createwithcvpixelbuffer%28_%29.md), return a [`vImageCVImageFormat`](./vimagecvimageformat.md). The following code shows how you create a [`vImageConstCVImageFormat`](./vimageconstcvimageformat.md) representation of a [`vImageCVImageFormat`](./vimagecvimageformat.md) instance to pass to [`vImageCVImageFormat_GetAlphaHint(_:)`](./vimagecvimageformat_getalphahint%28_%29.md):
 
 **Swift**:
 
@@ -53,9 +58,11 @@ int alphaHint = vImageCVImageFormat_GetAlphaHint(constFormat);
 
 ## See Also
 
-- [var alphaIsOpaqueHint: Bool](vimagecvimageformat/alphaisopaquehint.md)
+### Related Documentation
+- [var alphaIsOpaqueHint: Bool](./vimagecvimageformat/alphaisopaquehint.md)
   The alpha hint of the Core Video image format.
-- [func vImageCVImageFormat_SetAlphaHint(vImageCVImageFormat, Int32) -> vImage_Error](vimagecvimageformat_setalphahint(_:_:).md)
+### Querying and setting the alpha hint
+- [func vImageCVImageFormat_SetAlphaHint(vImageCVImageFormat, Int32) -> vImage_Error](./vimagecvimageformat_setalphahint%28_,_%29.md)
   Sets the alpha hint of a Core Video image format.
 
 

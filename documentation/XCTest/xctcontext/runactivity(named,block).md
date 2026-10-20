@@ -1,7 +1,8 @@
 # runActivity(named:block:)
 
 **Framework**: XCTest  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and runs an activity with the provided block of code.
 
@@ -14,13 +15,13 @@ Creates and runs an activity with the provided block of code.
 
 #### Return Value
 
-A [`Result`](https://developer.apple.com/documentation/swift/result) object that indicates whether the block of code runs successfully or encounters an error.
+A [`Result`](../../Swift/result.md) object that indicates whether the block of code runs successfully or encounters an error.
 
 #### Discussion
 
-Run a block of code as a named substep in a test. For more information, see [`Grouping Tests into Substeps with Activities`](grouping-tests-into-substeps-with-activities.md).
+Run a block of code as a named substep in a test. For more information, see [Grouping Tests into Substeps with Activities](../grouping-tests-into-substeps-with-activities.md).
 
-To save screenshots or other test-result data for later investigation, call the [`add(_:)`](xctactivity/add(_:).md) method on the instance of [`XCTActivity`](xctactivity.md) that the test system passes to your block. For more information, see [`Adding Attachments to Tests, Activities, and Issues`](adding-attachments-to-tests-activities-and-issues.md).
+To save screenshots or other test-result data for later investigation, call the [`add(_:)`](../xctactivity/add%28_%29.md) method on the instance of [`XCTActivity`](../xctactivity.md) that the test system passes to your block. For more information, see [Adding Attachments to Tests, Activities, and Issues](../adding-attachments-to-tests-activities-and-issues.md).
 
 ## Parameters
 
@@ -29,9 +30,10 @@ To save screenshots or other test-result data for later investigation, call the 
 
 ## See Also
 
-- [Grouping Tests into Substeps with Activities](grouping-tests-into-substeps-with-activities.md)
+### Related Documentation
+- [Grouping Tests into Substeps with Activities](../grouping-tests-into-substeps-with-activities.md)
   Simplify test reports by creating activities that organize substeps within complex test methods.
-- [Adding Attachments to Tests, Activities, and Issues](adding-attachments-to-tests-activities-and-issues.md)
+- [Adding Attachments to Tests, Activities, and Issues](../adding-attachments-to-tests-activities-and-issues.md)
   Use attachments to store a test’s output data for later analysis.
 
 

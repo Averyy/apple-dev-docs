@@ -1,23 +1,24 @@
 # getReport
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets a report from the HID device.
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kern_return_t getReport(IOMemoryDescriptor *report, IOHIDReportType reportType, IOOptionBits options, uint32_t completionTimeout, uint32_t *bytesTransferred);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -31,21 +32,22 @@ The report read from the HID device.
 
 ## See Also
 
-- [newReportDescriptor](iouserusbhosthiddevice/newreportdescriptor.md)
+### Managing Device Reports
+- [newReportDescriptor](./newreportdescriptor.md)
   Returns the data in the HID device’s report descriptor.
-- [getReport](iouserusbhosthiddevice/getreport-6stqs.md)
+- [getReport](./getreport-6stqs.md)
   Gets a report from the HID device.
-- [setReport](iouserusbhosthiddevice/setreport.md)
+- [setReport](./setreport.md)
   Sends a report to the HID device.
-- [initInputReport](iouserusbhosthiddevice/initinputreport.md)
+- [initInputReport](./initinputreport.md)
   Starts reading the input report from the device.
-- [CompleteInputReport](iouserusbhosthiddevice/completeinputreport.md)
+- [CompleteInputReport](./completeinputreport.md)
   Processes the results of an asynchronous request for an input report.
-- [scheduleInputReportRetry](iouserusbhosthiddevice/scheduleinputreportretry.md)
+- [scheduleInputReportRetry](./scheduleinputreportretry.md)
   Retries a previous request for an input report.
-- [cancelInputReportRetry](iouserusbhosthiddevice/cancelinputreportretry.md)
+- [cancelInputReportRetry](./cancelinputreportretry.md)
   Cancels a retry attempt for an input report request.
-- [TimerOccurred](iouserusbhosthiddevice/timeroccurred.md)
+- [TimerOccurred](./timeroccurred.md)
   Handles timeout-related actions when retrying input report requests.
 
 

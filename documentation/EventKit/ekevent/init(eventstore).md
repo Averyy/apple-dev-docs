@@ -1,7 +1,8 @@
 # init(eventStore:)
 
 **Framework**: EventKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a new event belonging to a specified event store.
 
@@ -19,9 +20,13 @@ Creates and returns a new event belonging to a specified event store.
 init(eventStore: EKEventStore)
 ```
 
+```objc
++ (EKEvent *) eventWithEventStore:(EKEventStore *) eventStore;
+```
+
 ## Mentions
 
-- [Creating events and reminders](creating-events-and-reminders.md)
+- [Creating events and reminders](../creating-events-and-reminders.md)
 
 #### Return Value
 
@@ -33,7 +38,8 @@ The created event.
 
 ## See Also
 
-- [Calendar and Reminders Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/EventKitProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009765)
+### Related Documentation
+- [Calendar and Reminders Programming Guide](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/EventKitProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009765)
 
 
 ---

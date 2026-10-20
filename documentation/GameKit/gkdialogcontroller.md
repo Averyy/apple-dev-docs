@@ -1,7 +1,8 @@
 # GKDialogController
 
 **Framework**: GameKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides the ability to present the dashboard in macOS games.
 
@@ -14,13 +15,17 @@ An object that provides the ability to present the dashboard in macOS games.
 class GKDialogController
 ```
 
+```objc
+@interface GKDialogController : NSResponder
+```
+
 #### Overview
 
 For macOS games, use a `GKDialogController` object to present the dashboard from which players can browse and manage their Game Center data.
 
-Initialize a new [`GKGameCenterViewController`](gkgamecenterviewcontroller.md) object, as you would for an iOS game, specifying the state and setting its delegate. Then get the singleton dialog controller using the [`shared()`](gkdialogcontroller/shared().md) class method, or initialize a new `GKDialogController` object.
+Initialize a new [`GKGameCenterViewController`](./gkgamecenterviewcontroller.md) object, as you would for an iOS game, specifying the state and setting its delegate. Then get the singleton dialog controller using the [`shared()`](./gkdialogcontroller/shared%28%29.md) class method, or initialize a new `GKDialogController` object.
 
-To present the dashboard, set the [`parentWindow`](gkdialogcontroller/parentwindow.md) property to the window that should display the dashboard and then call the [`present(_:)`](gkdialogcontroller/present(_:).md) method, passing the `GKGameCenterViewController` object.
+To present the dashboard, set the [`parentWindow`](./gkdialogcontroller/parentwindow.md) property to the window that should display the dashboard and then call the [`present(_:)`](./gkdialogcontroller/present%28_%29.md) method, passing the `GKGameCenterViewController` object.
 
 ```swift
 func presentAchievement() {
@@ -33,7 +38,7 @@ func presentAchievement() {
 }
 ```
 
-When the player closes the dashboard, GameKit calls the [`gameCenterViewControllerDidFinish(_:)`](gkgamecentercontrollerdelegate/gamecenterviewcontrollerdidfinish(_:).md) delegate method. Implement this method to dismiss the shared dialog controller using the [`dismiss(_:)`](gkdialogcontroller/dismiss(_:).md) method.
+When the player closes the dashboard, GameKit calls the [`gameCenterViewControllerDidFinish(_:)`](./gkgamecentercontrollerdelegate/gamecenterviewcontrollerdidfinish%28_%29.md) delegate method. Implement this method to dismiss the shared dialog controller using the [`dismiss(_:)`](./gkdialogcontroller/dismiss%28_%29.md) method.
 
 ```swift
 func gameCenterViewControllerDidFinish(_ gameCenterViewController: GKGameCenterViewController) {
@@ -46,44 +51,45 @@ func gameCenterViewControllerDidFinish(_ gameCenterViewController: GKGameCenterV
 ## Topics
 
 ### Accessing the Shared Dialog Controller
-- [class func shared() -> GKDialogController](gkdialogcontroller/shared.md)
+- [class func shared() -> GKDialogController](./gkdialogcontroller/shared%28%29.md)
   Retrieves the shared instance of the dialog controller.
 ### Setting the Presentation Window
-- [var parentWindow: NSWindow?](gkdialogcontroller/parentwindow.md)
+- [var parentWindow: NSWindow?](./gkdialogcontroller/parentwindow.md)
   The window that displays the dashboard.
 ### Presenting and Dismissing the Dialog
-- [func present(any NSViewController & GKViewController) -> Bool](gkdialogcontroller/present(_:).md)
+- [func present(any NSViewController & GKViewController) -> Bool](./gkdialogcontroller/present%28_%29.md)
   Presents the dashboard in the window.
-- [func dismiss(Any)](gkdialogcontroller/dismiss(_:).md)
+- [func dismiss(Any)](./gkdialogcontroller/dismiss%28_%29.md)
   Dismisses the dashboard.
 
 ## Relationships
 
 ### Inherits From
-- [NSResponder](../appkit/nsresponder.md)
+- [NSResponder](../AppKit/nsresponder.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Adding an access point to your game](adding-an-access-point-to-your-game.md)
+### Game Center interfaces
+- [Adding an access point to your game](./adding-an-access-point-to-your-game.md)
   Provide your users a convenient connection to the Game Center dashboard.
-- [Displaying the Game Center dashboard](displaying-the-game-center-dashboard.md)
+- [Displaying the Game Center dashboard](./displaying-the-game-center-dashboard.md)
   Provide an interface for players to navigate to their Game Center data from your game.
-- [class GKAccessPoint](gkaccesspoint.md)
+- [class GKAccessPoint](./gkaccesspoint.md)
   An object that allows players to view and manage their Game Center information from within your game.
-- [protocol GKViewController](gkviewcontroller.md)
+- [protocol GKViewController](./gkviewcontroller.md)
   The abstract base protocol adopted by GameKit view controller classes.
 
 

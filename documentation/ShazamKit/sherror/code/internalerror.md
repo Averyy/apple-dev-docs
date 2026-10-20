@@ -1,7 +1,8 @@
 # SHError.Code.internalError
 
 **Framework**: ShazamKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The error code to indicate a generic framework error.
 
@@ -18,6 +19,10 @@ The error code to indicate a generic framework error.
 
 ```swift
 case internalError
+```
+
+```c
+SHErrorCodeInternalError
 ```
 
 

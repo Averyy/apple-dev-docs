@@ -1,7 +1,8 @@
 # NSTextAlternatives.SelectedAlternativeStringMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,16 +16,16 @@ struct SelectedAlternativeStringMessage
 ## Topics
 
 ### Initializers
-- [init(textAlternatives: NSTextAlternatives, alternativeString: String)](nstextalternatives/selectedalternativestringmessage/init(textalternatives:alternativestring:).md)
+- [init(textAlternatives: NSTextAlternatives, alternativeString: String)](./selectedalternativestringmessage/init%28textalternatives,alternativestring%29.md)
 ### Instance Properties
-- [var alternativeString: String](nstextalternatives/selectedalternativestringmessage/alternativestring.md)
-- [var textAlternatives: NSTextAlternatives](nstextalternatives/selectedalternativestringmessage/textalternatives.md)
+- [var alternativeString: String](./selectedalternativestringmessage/alternativestring.md)
+- [var textAlternatives: NSTextAlternatives](./selectedalternativestringmessage/textalternatives.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

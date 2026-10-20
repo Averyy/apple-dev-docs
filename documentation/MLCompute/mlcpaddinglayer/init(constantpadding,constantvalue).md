@@ -1,16 +1,19 @@
 # init(constantPadding:constantValue:)
 
 **Framework**: ML Compute  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a padding layer with the constant padding sizes and constant value you specify.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.0
+- iPadOS 14.0+ - Deprecated in 17.0
+- Mac Catalyst 14.0+ - Deprecated in 17.0
+- macOS 11.0+ - Deprecated in 14.0
+- tvOS 14.0+ - Deprecated in 17.0
+
+> **Deprecated**: Use Metal Performance Shaders Graph or BNNS instead.
 
 ## Declaration
 
@@ -25,11 +28,12 @@ convenience init(constantPadding: [Int], constantValue: Float)
 
 ## See Also
 
-- [convenience init(reflectionPadding: [Int])](mlcpaddinglayer/init(reflectionpadding:).md)
+### Creating Padding Layers
+- [convenience init(reflectionPadding: [Int])](./init%28reflectionpadding%29.md)
   Creates a padding layer with the reflection padding sizes you specify.
-- [convenience init(symmetricPadding: [Int])](mlcpaddinglayer/init(symmetricpadding:).md)
+- [convenience init(symmetricPadding: [Int])](./init%28symmetricpadding%29.md)
   Creates a padding layer with the symmetric padding sizes you specify.
-- [convenience init(zeroPadding: [Int])](mlcpaddinglayer/init(zeropadding:).md)
+- [convenience init(zeroPadding: [Int])](./init%28zeropadding%29.md)
   Creates a padding layer with the zero padding sizes you specify.
 
 

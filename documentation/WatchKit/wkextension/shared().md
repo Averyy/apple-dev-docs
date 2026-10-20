@@ -1,17 +1,22 @@
 # shared()
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the shared WatchKit extension object.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 9.2 (renamed: WKApplication)
 
 ## Declaration
 
 ```swift
 class func shared() -> WKExtension
+```
+
+```objc
++ (WKExtension *) sharedExtension;
 ```
 
 #### Return Value

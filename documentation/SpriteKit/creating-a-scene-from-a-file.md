@@ -1,18 +1,19 @@
 # Creating a Scene from a File
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Load a scene that you configure in Xcode’s scene editor.
 
 #### Overview
 
-The most common way to load an [`SKScene`](skscene.md) is through an `.sks` file configured in Xcode’s scene editor. Making your base changes in the editor is faster than writing equivalent initalization code, and it  avoids repeating code if you create a scene in multiple places.
+The most common way to load an [`SKScene`](./skscene.md) is through an `.sks` file configured in Xcode’s scene editor. Making your base changes in the editor is faster than writing equivalent initalization code, and it  avoids repeating code if you create a scene in multiple places.
 
 ##### Create a New Scene File
 
 First, add a new scene file to your project through Xcode’s File menu > New… > File > (choose your platform tab) > SpriteKit Scene.
 
-![Sceenshot showing the New File dialog in Xcode. Pick your target platform tab, then choose SpriteKit Scene.](/images/com.apple.spritekit/media-3020351@2x.png)
+![Sceenshot showing the New File dialog in Xcode. Pick your target platform tab, then choose SpriteKit Scene.](https://developer.apple.com/tutorials/images/com.apple.spritekit/media-3020351@2x.png)
 
 ##### Configure the Scene Using the Editor
 
@@ -23,11 +24,11 @@ You configure your scene in the scene editor by clicking on the `.sks` file in X
 3. Choose the Attributes inspector.
 4. Define a color under Scene.
 
-![Screenshot showing setting the scene background color in Xcode’s SpriteKit scene editor. You select the .sks file in Xcode’s file navigator pane, then choose the Attributes inspector tab within the Utilities pane. ](/images/com.apple.spritekit/media-3020360@2x.png)
+![Screenshot showing setting the scene background color in Xcode’s SpriteKit scene editor. You select the .sks file in Xcode’s file navigator pane, then choose the Attributes inspector tab within the Utilities pane. ](https://developer.apple.com/tutorials/images/com.apple.spritekit/media-3020360@2x.png)
 
 ##### Load the Scene in Code
 
-Load the newly configured scene file in code using [`init(fileNamed:)`](sknode/init(filenamed:).md).
+Load the newly configured scene file in code using [`init(fileNamed:)`](./sknode/init%28filenamed%29.md).
 
 ```swift
 let scene = SKScene(fileNamed: "MyScene")
@@ -36,7 +37,7 @@ let scene = SKScene(fileNamed: "MyScene")
 skView.presentScene(scene)
 ```
 
-> **Note**:  The `.sks` file extension is left out of the `String` name argument to [`init(fileNamed:)`](sknode/init(filenamed:).md).
+> **Note**:  The `.sks` file extension is left out of the `String` name argument to [`init(fileNamed:)`](./sknode/init%28filenamed%29.md).
 
 
 ---

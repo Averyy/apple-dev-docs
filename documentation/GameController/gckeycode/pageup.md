@@ -1,7 +1,8 @@
 # pageUp
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The keyboard code for the Page Up key.
 
@@ -19,31 +20,36 @@ The keyboard code for the Page Up key.
 static let pageUp: GCKeyCode
 ```
 
+```c
+extern const GCKeyCode GCKeyCodePageUp;
+```
+
 ## See Also
 
-- [static let printScreen: GCKeyCode](gckeycode/printscreen.md)
+### Directional and Similar Keys
+- [static let printScreen: GCKeyCode](./printscreen.md)
   The keyboard code for the Print Screen key.
-- [static let scrollLock: GCKeyCode](gckeycode/scrolllock.md)
+- [static let scrollLock: GCKeyCode](./scrolllock.md)
   The keyboard code for the Scroll Lock key.
-- [static let pause: GCKeyCode](gckeycode/pause.md)
+- [static let pause: GCKeyCode](./pause.md)
   The keyboard code for the Pause key.
-- [static let insert: GCKeyCode](gckeycode/insert.md)
+- [static let insert: GCKeyCode](./insert.md)
   The keyboard code for the Insert key.
-- [static let home: GCKeyCode](gckeycode/home.md)
+- [static let home: GCKeyCode](./home.md)
   The keyboard code for the Home key.
-- [static let deleteForward: GCKeyCode](gckeycode/deleteforward.md)
+- [static let deleteForward: GCKeyCode](./deleteforward.md)
   The keyboard code for the Delete-Forward key.
-- [static let end: GCKeyCode](gckeycode/end.md)
+- [static let end: GCKeyCode](./end.md)
   The keyboard code for the End key.
-- [static let pageDown: GCKeyCode](gckeycode/pagedown.md)
+- [static let pageDown: GCKeyCode](./pagedown.md)
   The keyboard code for the Page Down key.
-- [static let rightArrow: GCKeyCode](gckeycode/rightarrow.md)
+- [static let rightArrow: GCKeyCode](./rightarrow.md)
   The keyboard code for the Right Arrow key.
-- [static let leftArrow: GCKeyCode](gckeycode/leftarrow.md)
+- [static let leftArrow: GCKeyCode](./leftarrow.md)
   The keyboard code for the Left Arrow key.
-- [static let downArrow: GCKeyCode](gckeycode/downarrow.md)
+- [static let downArrow: GCKeyCode](./downarrow.md)
   The keyboard code for the Down Arrow key.
-- [static let upArrow: GCKeyCode](gckeycode/uparrow.md)
+- [static let upArrow: GCKeyCode](./uparrow.md)
   The keyboard code for the Up Arrow key.
 
 

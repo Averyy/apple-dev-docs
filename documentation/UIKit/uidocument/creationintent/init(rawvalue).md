@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new document creation intent using the provided string.
 
@@ -19,7 +20,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](uidocument/creationintent/init(_:).md)
+### Creating new intents
+- [init(String)](./init%28_%29.md)
   Create a new document creation intent using the provided string.
 
 

@@ -1,7 +1,8 @@
 # PKPayment
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Represents the result of authorizing a payment request and contains payment information, encrypted in the payment token.
 
@@ -19,51 +20,56 @@ Represents the result of authorizing a payment request and contains payment info
 class PKPayment
 ```
 
+```objc
+@interface PKPayment : NSObject
+```
+
 ## Topics
 
 ### Working with the payment token
-- [var token: PKPaymentToken](pkpayment/token.md)
+- [var token: PKPaymentToken](./pkpayment/token.md)
   The encrypted payment information.
-- [class PKPaymentToken](pkpaymenttoken.md)
+- [class PKPaymentToken](./pkpaymenttoken.md)
   Contains the user’s payment credentials.
 ### Working with billing and shipping information
-- [var billingContact: PKContact?](pkpayment/billingcontact.md)
+- [var billingContact: PKContact?](./pkpayment/billingcontact.md)
   The user-selected billing address for this transaction.
-- [var shippingContact: PKContact?](pkpayment/shippingcontact.md)
+- [var shippingContact: PKContact?](./pkpayment/shippingcontact.md)
   The user-selected shipping address for this transaction.
-- [var shippingMethod: PKShippingMethod?](pkpayment/shippingmethod.md)
+- [var shippingMethod: PKShippingMethod?](./pkpayment/shippingmethod.md)
   The user-selected shipping method for this transaction.
-- [class PKContact](pkcontact.md)
+- [class PKContact](./pkcontact.md)
   An object that encapsulates contact information needed for billing and shipping.
-- [class PKShippingMethod](pkshippingmethod.md)
+- [class PKShippingMethod](./pkshippingmethod.md)
   An object that defines a shipping method for delivering physical goods.
 ### Deprecated
-- [var billingAddress: ABRecord?](pkpayment/billingaddress.md)
+- [var billingAddress: ABRecord?](./pkpayment/billingaddress.md)
   The user-selected billing address for this transaction.
-- [var shippingAddress: ABRecord?](pkpayment/shippingaddress.md)
+- [var shippingAddress: ABRecord?](./pkpayment/shippingaddress.md)
   The user-selected shipping address for this transaction.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PKPaymentAuthorizationResult](pkpaymentauthorizationresult.md)
+### Payment sheet interactions and authorization
+- [class PKPaymentAuthorizationResult](./pkpaymentauthorizationresult.md)
   An object that reports the status code and errors for a payment authorization request.
-- [class PKPaymentOrderDetails](pkpaymentorderdetails.md)
+- [class PKPaymentOrderDetails](./pkpaymentorderdetails.md)
   Optional metadata with payment order details for the placed order.
-- [class PKPaymentAuthorizationController](pkpaymentauthorizationcontroller.md)
+- [class PKPaymentAuthorizationController](./pkpaymentauthorizationcontroller.md)
   An object that presents a sheet that prompts the user to authorize a payment request.
-- [class PKPaymentAuthorizationViewController](pkpaymentauthorizationviewcontroller.md)
+- [class PKPaymentAuthorizationViewController](./pkpaymentauthorizationviewcontroller.md)
   An object that presents a sheet that prompts the user to authorize a payment request.
 
 

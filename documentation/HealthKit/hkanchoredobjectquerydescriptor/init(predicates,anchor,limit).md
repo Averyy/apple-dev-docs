@@ -1,7 +1,8 @@
 # init(predicates:anchor:limit:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an anchored object query descriptor.
 
@@ -10,7 +11,7 @@ Creates an anchored object query descriptor.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration

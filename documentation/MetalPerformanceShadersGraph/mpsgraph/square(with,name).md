@@ -1,7 +1,8 @@
 # square(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the square operation to the input tensor elements.
 
@@ -17,6 +18,10 @@ Applies the square operation to the input tensor elements.
 
 ```swift
 func square(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) squareWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

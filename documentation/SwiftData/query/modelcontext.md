@@ -1,7 +1,8 @@
 # modelContext
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Current model context `Query` interacts with.
 
@@ -39,7 +40,8 @@ Only access this property within of a view’s `body` property, otherwise its va
 
 ## See Also
 
-- [var fetchError: (any Error)?](query/fetcherror.md)
+### Getting query configuration
+- [var fetchError: (any Error)?](./fetcherror.md)
   An error encountered during the most recent attempt to fetch data.
 
 

@@ -1,7 +1,8 @@
 # formatNumber
 
 **Framework**: TVMLKit JS  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Formats the specified number into the given format.
 
@@ -10,7 +11,7 @@ Formats the specified number into the given format.
 
 ## Declaration
 
-```swift
+```
 String formatNumber(
     in int number, 
     in String styleValue, 
@@ -19,7 +20,7 @@ String formatNumber(
 );
 ```
 
-#### Return_value
+#### Return Value
 
 A string containing the formatted number.
 
@@ -36,9 +37,10 @@ This function changes an integer into a string, based on the formatting styles s
 
 ## See Also
 
-- [formatDate](1627445-formatdate.md)
+### Formatting Information
+- [formatDate](./api-1627445-formatdate.md)
   Formats the given date into the given format.
-- [formatDuration](1627346-formatduration.md)
+- [formatDuration](./api-1627346-formatduration.md)
   Formats the given duration into the standard tvOS format.
 
 

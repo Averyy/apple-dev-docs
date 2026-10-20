@@ -1,14 +1,15 @@
 # IteratorProtocol Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func next() -> UInt8?](unsaferawbufferpointer/iterator/next.md)
+- [func next() -> UInt8?](./next%28%29.md)
   Advances to the next byte and returns it, or `nil` if no next byte exists.
 ### Type Aliases
-- [UnsafeRawBufferPointer.Iterator.Element](unsaferawbufferpointer/iterator/element.md)
+- [UnsafeRawBufferPointer.Iterator.Element](./element.md)
   The type of element traversed by the iterator.
 
 

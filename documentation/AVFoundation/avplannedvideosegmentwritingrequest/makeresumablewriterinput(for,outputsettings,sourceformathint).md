@@ -1,7 +1,8 @@
 # makeResumableWriterInput(for:outputSettings:sourceFormatHint:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Helper function that returns a minimally configured AVAssetWriterInput object for writing the current segment.
 
@@ -33,7 +34,7 @@ Client cannot call this method more than once on a writing request object. For t
 
 The writing request retains the writer input but does not mutate it after this method is returned.
 
-> **Note**: An error if the input cannot be created or if settings differ from previous segment.
+> **Throws**: An error if the input cannot be created or if settings differ from previous segment.
 
 ## Parameters
 

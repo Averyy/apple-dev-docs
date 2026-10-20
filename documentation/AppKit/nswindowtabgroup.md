@@ -1,7 +1,8 @@
 # NSWindowTabGroup
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A group of windows that display together as a single tabbed window.
 
@@ -14,55 +15,61 @@ A group of windows that display together as a single tabbed window.
 class NSWindowTabGroup
 ```
 
+```objc
+@interface NSWindowTabGroup : NSObject
+```
+
 #### Overview
 
-AppKit automatically creates instances of [`NSWindowTabGroup`](nswindowtabgroup.md) to reflect the tabbing state of your windows. You can access a window’s current tab group using the [`tabGroup`](nswindow/tabgroup.md) property.
+AppKit automatically creates instances of [`NSWindowTabGroup`](./nswindowtabgroup.md) to reflect the tabbing state of your windows. You can access a window’s current tab group using the [`tabGroup`](./nswindow/tabgroup.md) property.
 
 ## Topics
 
 ### Checking the Group Identifier
-- [var identifier: NSWindow.TabbingIdentifier](nswindowtabgroup/identifier.md)
+- [var identifier: NSWindow.TabbingIdentifier](./nswindowtabgroup/identifier.md)
   The unique identifier for a tabbed window group.
 ### Configuring the Tab User Interface
-- [var isOverviewVisible: Bool](nswindowtabgroup/isoverviewvisible.md)
+- [var isOverviewVisible: Bool](./nswindowtabgroup/isoverviewvisible.md)
   A Boolean value indicating if the tab overview is currently displayed.
-- [var isTabBarVisible: Bool](nswindowtabgroup/istabbarvisible.md)
+- [var isTabBarVisible: Bool](./nswindowtabgroup/istabbarvisible.md)
   A Boolean value indicating whether the tabbed window group currently displays a tab bar.
 ### Managing Tabbed Windows
-- [var windows: [NSWindow]](nswindowtabgroup/windows.md)
+- [var windows: [NSWindow]](./nswindowtabgroup/windows.md)
   A collection of the windows that are currently grouped together by this window tab group.
-- [var selectedWindow: NSWindow?](nswindowtabgroup/selectedwindow.md)
+- [var selectedWindow: NSWindow?](./nswindowtabgroup/selectedwindow.md)
   The selected, or frontmost, window in the tab group.
-- [func addWindow(NSWindow)](nswindowtabgroup/addwindow(_:).md)
+- [func addWindow(NSWindow)](./nswindowtabgroup/addwindow%28_%29.md)
   Adds a window to the tab group.
-- [func insertWindow(NSWindow, at: Int)](nswindowtabgroup/insertwindow(_:at:).md)
+- [func insertWindow(NSWindow, at: Int)](./nswindowtabgroup/insertwindow%28_,at%29.md)
   Inserts a window at a specific location within the tab group.
-- [func removeWindow(NSWindow)](nswindowtabgroup/removewindow(_:).md)
+- [func removeWindow(NSWindow)](./nswindowtabgroup/removewindow%28_%29.md)
   Removes a window from the tab group.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var tabGroup: NSWindowTabGroup?](nswindow/tabgroup.md)
+### Related Documentation
+- [var tabGroup: NSWindowTabGroup?](./nswindow/tabgroup.md)
   A group of windows that display together as a tab group.
-- [class NSWindow](nswindow.md)
+### Windows
+- [class NSWindow](./nswindow.md)
   A window that an app displays on the screen.
-- [class NSPanel](nspanel.md)
+- [class NSPanel](./nspanel.md)
   A special kind of window that typically performs a function that is auxiliary to the main window.
-- [protocol NSWindowDelegate](nswindowdelegate.md)
+- [protocol NSWindowDelegate](./nswindowdelegate.md)
   A set of optional methods that a window’s delegate can implement to respond to events, such as window resizing, moving, exposing, and minimizing.
-- [class NSWindowTab](nswindowtab.md)
+- [class NSWindowTab](./nswindowtab.md)
   A tab associated with a window that is part of a tabbing group.
 
 

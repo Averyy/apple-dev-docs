@@ -1,12 +1,13 @@
 # init(date:relativeTo:style:units:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a text provider that shows the difference in time between the provided dates.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
 
 ## Declaration
 
@@ -14,20 +15,25 @@ Creates a text provider that shows the difference in time between the provided d
 convenience init(date: Date, relativeTo relativeToDate: Date?, style: CLKRelativeDateStyle, units calendarUnits: NSCalendar.Unit)
 ```
 
+```objc
++ (instancetype) textProviderWithDate:(NSDate *) date relativeToDate:(NSDate *) relativeToDate style:(CLKRelativeDateStyle) style units:(NSCalendarUnit) calendarUnits;
+```
+
 #### Discussion
 
-This initializer creates a text provider that produces a fixed, relative date. If you want a text provider that automatically updates as time passes, use [`init(date:style:units:)`](clkrelativedatetextprovider/init(date:style:units:).md) instead.
+This initializer creates a text provider that produces a fixed, relative date. If you want a text provider that automatically updates as time passes, use [`init(date:style:units:)`](./init%28date,style,units%29.md) instead.
 
 ## Parameters
 
 - `date`: The starting date, used to calculate the relative date string.
 - `relativeToDate`: The end date, used to calculate the relative date string.
-- `style`: The style to use when formatting the relative date value. For a list of possible values, see [`CLKRelativeDateStyle`](clkrelativedatestyle.md).
-- `calendarUnits`: The units to include in the resulting date string. For a list of supported calendar units, see [`Date Format Options`](clkrelativedatetextprovider#Date-Format-Options.md).
+- `style`: The style to use when formatting the relative date value. For a list of possible values, see [`CLKRelativeDateStyle`](../clkrelativedatestyle.md).
+- `calendarUnits`: The units to include in the resulting date string. For a list of supported calendar units, see [Date Format Options](../clkrelativedatetextprovider.md#Date-Format-Options).
 
 ## See Also
 
-- [convenience init(date: Date, style: CLKRelativeDateStyle, units: NSCalendar.Unit)](clkrelativedatetextprovider/init(date:style:units:).md)
+### Creating a Text Provider
+- [convenience init(date: Date, style: CLKRelativeDateStyle, units: NSCalendar.Unit)](./init%28date,style,units%29.md)
   Creates a text provider that shows the difference between the current time and the specified date.
 
 

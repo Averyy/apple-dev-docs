@@ -1,7 +1,8 @@
 # kIOUSBDeviceRequestTypeValueClass
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The class type value.
 
@@ -10,7 +11,7 @@ The class type value.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBDeviceRequestTypeValueClass = 1
 ```
 

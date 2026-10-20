@@ -1,14 +1,15 @@
 # lifo_data
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 vm_purgeable_stat_t lifo_data[8];
 ```
 

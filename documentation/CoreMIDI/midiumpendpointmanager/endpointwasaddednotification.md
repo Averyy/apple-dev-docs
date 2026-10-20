@@ -1,7 +1,8 @@
 # endpointWasAddedNotification
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.0+
@@ -16,12 +17,17 @@
 class let endpointWasAddedNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const MIDIUMPEndpointWasAddedNotification;
+```
+
 ## See Also
 
-- [MIDIUMPEndpointManager.DictionaryKey](midiumpendpointmanager/dictionarykey.md)
-- [class let endpointWasRemovedNotification: NSNotification.Name](midiumpendpointmanager/endpointwasremovednotification.md)
-- [class let endpointWasUpdatedNotification: NSNotification.Name](midiumpendpointmanager/endpointwasupdatednotification.md)
-- [class let functionBlockWasUpdatedNotification: NSNotification.Name](midiumpendpointmanager/functionblockwasupdatednotification.md)
+### Constants
+- [MIDIUMPEndpointManager.DictionaryKey](./dictionarykey.md)
+- [class let endpointWasRemovedNotification: NSNotification.Name](./endpointwasremovednotification.md)
+- [class let endpointWasUpdatedNotification: NSNotification.Name](./endpointwasupdatednotification.md)
+- [class let functionBlockWasUpdatedNotification: NSNotification.Name](./functionblockwasupdatednotification.md)
 
 
 ---

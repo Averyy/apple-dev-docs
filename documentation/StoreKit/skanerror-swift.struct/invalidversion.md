@@ -1,7 +1,8 @@
 # invalidVersion
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The SKAdNetwork version number is invalid.
 
@@ -19,32 +20,33 @@ static var invalidVersion: SKANError.Code { get }
 
 #### Discussion
 
-Ad networks provide an SKAdNetwork version number when preparing an ad impression, in [`SKStoreProductParameterAdNetworkVersion`](skstoreproductparameteradnetworkversion.md) or [`version`](skadimpression/version.md). Check that the version number is valid and that you follow the version-specific instructions to generate a signature. For more information about versions, see [`SKAdNetwork release notes`](skadnetwork-release-notes.md).
+Ad networks provide an SKAdNetwork version number when preparing an ad impression, in [`SKStoreProductParameterAdNetworkVersion`](../skstoreproductparameteradnetworkversion.md) or [`version`](../skadimpression/version.md). Check that the version number is valid and that you follow the version-specific instructions to generate a signature. For more information about versions, see [SKAdNetwork release notes](../skadnetwork-release-notes.md).
 
 ## See Also
 
-- [static var adNetworkIdMissing: SKANError.Code](skanerror-swift.struct/adnetworkidmissing.md)
+### Getting Error Codes
+- [static var adNetworkIdMissing: SKANError.Code](./adnetworkidmissing.md)
   The ad network identifier in the ad impression doesn’t match the value in the information property list.
-- [static var impressionMissingRequiredValue: SKANError.Code](skanerror-swift.struct/impressionmissingrequiredvalue.md)
+- [static var impressionMissingRequiredValue: SKANError.Code](./impressionmissingrequiredvalue.md)
   A required value is missing from a view-through ad impression.
-- [static var impressionNotFound: SKANError.Code](skanerror-swift.struct/impressionnotfound.md)
+- [static var impressionNotFound: SKANError.Code](./impressionnotfound.md)
   The system can’t find the ad impression.
-- [static var impressionTooShort: SKANError.Code](skanerror-swift.struct/impressiontooshort.md)
-- [static var invalidAdvertisedAppId: SKANError.Code](skanerror-swift.struct/invalidadvertisedappid.md)
+- [static var impressionTooShort: SKANError.Code](./impressiontooshort.md)
+- [static var invalidAdvertisedAppId: SKANError.Code](./invalidadvertisedappid.md)
   The App Store ID of the advertised app is invalid.
-- [static var invalidCampaignId: SKANError.Code](skanerror-swift.struct/invalidcampaignid.md)
+- [static var invalidCampaignId: SKANError.Code](./invalidcampaignid.md)
   The campaign identifier that you provided is invalid.
-- [static var invalidConversionValue: SKANError.Code](skanerror-swift.struct/invalidconversionvalue.md)
+- [static var invalidConversionValue: SKANError.Code](./invalidconversionvalue.md)
   The conversion value is invalid.
-- [static var invalidSourceAppId: SKANError.Code](skanerror-swift.struct/invalidsourceappid.md)
+- [static var invalidSourceAppId: SKANError.Code](./invalidsourceappid.md)
   The App Store ID of the app displaying the ad is invalid.
-- [static var mismatchedSourceAppId: SKANError.Code](skanerror-swift.struct/mismatchedsourceappid.md)
+- [static var mismatchedSourceAppId: SKANError.Code](./mismatchedsourceappid.md)
   The source app identifier in the ad impression doesn’t match the app identifier in the source app.
-- [static var unknown: SKANError.Code](skanerror-swift.struct/unknown.md)
+- [static var unknown: SKANError.Code](./unknown.md)
   An unknown error occurred.
-- [static var unsupported: SKANError.Code](skanerror-swift.struct/unsupported.md)
+- [static var unsupported: SKANError.Code](./unsupported.md)
   Your app attempted to use functionality that isn’t supported in the specified version.
-- [SKANError.Code](skanerror-swift.struct/code.md)
+- [SKANError.Code](./code.md)
   Constants that indicate the type of error for an ad network attribution operation.
 
 

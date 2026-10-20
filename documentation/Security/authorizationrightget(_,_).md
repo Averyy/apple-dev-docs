@@ -1,7 +1,8 @@
 # AuthorizationRightGet(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves a right definition as a dictionary.
 
@@ -20,9 +21,13 @@ Retrieves a right definition as a dictionary.
 func AuthorizationRightGet(_ rightName: UnsafePointer<CChar>, _ rightDefinition: UnsafeMutablePointer<CFDictionary?>?) -> OSStatus
 ```
 
+```c
+OSStatus AuthorizationRightGet(const char *rightName, CFDictionaryRef*rightDefinition);
+```
+
 #### Return Value
 
-A result code. See [`Authorization Services Result Codes`](authorization-services-result-codes.md).
+A result code. See [Authorization Services Result Codes](./authorization-services-result-codes.md).
 
 #### Discussion
 

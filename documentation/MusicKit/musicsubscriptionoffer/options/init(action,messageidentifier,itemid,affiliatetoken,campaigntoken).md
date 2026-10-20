@@ -1,7 +1,8 @@
 # init(action:messageIdentifier:itemID:affiliateToken:campaignToken:)
 
 **Framework**: MusicKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates options for a subscription offer sheet with specific values for common properties.
 

@@ -1,7 +1,8 @@
 # loadPreset(at:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads an audio unit using a specified preset.
 
@@ -17,6 +18,10 @@ Loads an audio unit using a specified preset.
 
 ```swift
 func loadPreset(at url: URL) throws
+```
+
+```objc
+- (BOOL) loadAudioUnitPresetAtURL:(NSURL *) url error:(NSError **) outError;
 ```
 
 ## Parameters

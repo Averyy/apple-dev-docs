@@ -1,7 +1,8 @@
 # usage
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Information about how many tokens were used by this response.
 

@@ -1,7 +1,8 @@
 # init(kind:extensionBundleIdentifier:intent:localizedDisplayName:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that describes a watchOS complication that uses app intents in your WidgetKit extension.
 

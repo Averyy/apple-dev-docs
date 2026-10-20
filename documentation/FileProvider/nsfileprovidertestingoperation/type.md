@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The operation’s type.
@@ -17,6 +18,10 @@ The operation’s type.
 
 ```swift
 var type: NSFileProviderTestingOperationType { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSFileProviderTestingOperationType type;
 ```
 
 

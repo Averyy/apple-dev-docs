@@ -1,7 +1,8 @@
 # outputBusses
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing the audio unit’s output connection points.
 
@@ -19,13 +20,26 @@ An array containing the audio unit’s output connection points.
 var outputBusses: AUAudioUnitBusArray { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, readonly) AUAudioUnitBusArray * outputBusses;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) AUAudioUnitBusArray * outputBusses;
+```
+
 #### Discussion
 
 Subclasses must override this property’s getter. The audio unit should return the same object every time it is asked for it, since hosts can install KVO observers on it.
 
 ## See Also
 
-- [var inputBusses: AUAudioUnitBusArray](auaudiounit/inputbusses.md)
+### Returning the Audio Busses
+- [var inputBusses: AUAudioUnitBusArray](./inputbusses.md)
   An array containing the audio unit’s input connection points.
 
 

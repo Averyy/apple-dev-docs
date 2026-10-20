@@ -1,7 +1,8 @@
 # startIndex
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the initial group in the row grouping.
 
@@ -20,13 +21,16 @@ The index of the initial group in the row grouping.
 var startIndex: Int { get }
 ```
 
+Available when `GroupingKey` conforms to `Hashable`.
+
 ## See Also
 
-- [var endIndex: Int](rowgrouping/endindex.md)
+### Retrieving an Index
+- [var endIndex: Int](./endindex.md)
   The index of the final group in the row grouping.
-- [func index(before: Int) -> Int](rowgrouping/index(before:).md)
+- [func index(before: Int) -> Int](./index%28before%29.md)
   Returns the index immediately before an element index.
-- [func index(after: Int) -> Int](rowgrouping/index(after:).md)
+- [func index(after: Int) -> Int](./index%28after%29.md)
   Returns the index immediately after an element index.
 
 

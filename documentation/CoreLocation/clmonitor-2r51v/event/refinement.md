@@ -1,7 +1,8 @@
 # refinement
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional instance of a condition that represents the most specific condition that this event can apply to.
 
@@ -19,11 +20,12 @@ let refinement: (any CLCondition)?
 
 ## See Also
 
-- [var date: Date](clmonitor-2r51v/event/date.md)
+### Event characteristics
+- [var date: Date](./date.md)
   A date indicating the time of the event.
-- [var identifier: String](clmonitor-2r51v/event/identifier.md)
+- [var identifier: String](./identifier.md)
   A string that identifies the event.
-- [var state: CLMonitor.Event.State](clmonitor-2r51v/event/state-swift.property.md)
+- [var state: CLMonitor.Event.State](./state-swift.property.md)
   The event’s state.
 
 

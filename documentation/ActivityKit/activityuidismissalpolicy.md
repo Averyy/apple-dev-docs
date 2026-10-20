@@ -1,7 +1,8 @@
 # ActivityUIDismissalPolicy
 
 **Framework**: ActivityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The structure that describes when the system should remove a Live Activity that ended.
 
@@ -18,25 +19,26 @@ struct ActivityUIDismissalPolicy
 ## Topics
 
 ### Dismissing a Live Activity
-- [static let `default`: ActivityUIDismissalPolicy](activityuidismissalpolicy/default.md)
+- [static let `default`: ActivityUIDismissalPolicy](./activityuidismissalpolicy/default.md)
   The system’s default dismissal policy for the Live Activity.
-- [static let immediate: ActivityUIDismissalPolicy](activityuidismissalpolicy/immediate.md)
+- [static let immediate: ActivityUIDismissalPolicy](./activityuidismissalpolicy/immediate.md)
   The system immediately removes the Live Activity that ended.
-- [static func after(Date) -> ActivityUIDismissalPolicy](activityuidismissalpolicy/after(_:).md)
+- [static func after(Date) -> ActivityUIDismissalPolicy](./activityuidismissalpolicy/after%28_%29.md)
   The system removes the Live Activity that ended at the specified time within a four-hour window.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func end(ActivityContent<Activity<Attributes>.ContentState>?, dismissalPolicy: ActivityUIDismissalPolicy) async](activity/end(_:dismissalpolicy:).md)
+### Ending a Live Activity
+- [func end(ActivityContent<Activity<Attributes>.ContentState>?, dismissalPolicy: ActivityUIDismissalPolicy) async](./activity/end%28_,dismissalpolicy%29.md)
   Ends an active Live Activity.
-- [func end(ActivityContent<Activity<Attributes>.ContentState>?, dismissalPolicy: ActivityUIDismissalPolicy, timestamp: Date) async](activity/end(_:dismissalpolicy:timestamp:).md)
+- [func end(ActivityContent<Activity<Attributes>.ContentState>?, dismissalPolicy: ActivityUIDismissalPolicy, timestamp: Date) async](./activity/end%28_,dismissalpolicy,timestamp%29.md)
   Ends an active Live Activity.
 
 

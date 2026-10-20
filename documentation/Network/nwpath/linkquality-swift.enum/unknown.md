@@ -1,7 +1,8 @@
 # NWPath.LinkQuality.unknown
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No link quality measurement is available
 

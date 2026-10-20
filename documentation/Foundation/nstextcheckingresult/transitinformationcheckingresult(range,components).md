@@ -1,7 +1,8 @@
 # transitInformationCheckingResult(range:components:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and returns a text checking result with the specified transit information.
 
@@ -20,14 +21,18 @@ Creates and returns a text checking result with the specified transit informatio
 class func transitInformationCheckingResult(range: NSRange, components: [NSTextCheckingKey : String]) -> NSTextCheckingResult
 ```
 
+```objc
++ (NSTextCheckingResult *) transitInformationCheckingResultWithRange:(NSRange) range components:(NSDictionary<NSString *,NSString *> *) components;
+```
+
 #### Return Value
 
-Returns an `NSTextCheckingResult` with the specified [`range`](nstextcheckingresult/range.md) and a [`resultType`](nstextcheckingresult/resulttype.md) of [`transitInformation`](nstextcheckingresult/checkingtype/transitinformation.md).
+Returns an `NSTextCheckingResult` with the specified [`range`](./range.md) and a [`resultType`](./resulttype.md) of [`transitInformation`](./checkingtype/transitinformation.md).
 
 ## Parameters
 
 - `range`: The range of the detected result.
-- `components`: A dictionary containing the transit components. The currently supported keys are [`airline`](nstextcheckingkey/airline.md) and [`flight`](nstextcheckingkey/flight.md).
+- `components`: A dictionary containing the transit components. The currently supported keys are [`airline`](../nstextcheckingkey/airline.md) and [`flight`](../nstextcheckingkey/flight.md).
 
 
 ---

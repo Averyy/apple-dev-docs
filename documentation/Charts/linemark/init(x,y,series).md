@@ -1,7 +1,8 @@
 # init(x:y:series:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a separate line for each unique value of series.
 
@@ -35,7 +36,7 @@ Chart(sunshineData) {
 }
 ```
 
-![Multi-series line chart with date on x-axis and hours of sunshine on y-axis. Two lines showing 12 points representing hours of sunshine in a month for  a city. Seattle: 1 74, 2 99, 3 154, 4 201, 5 247, 6 234, 7 304, 8 248, 9 197, 10 122, 11 77, 12 62 and Cupertino: 1 196, 2 204, 3 253, 4 288, 5 311, 6 342, 7 360, 8 331, 9 300, 10 246, 11 212, 12 199.](/images/com.apple.Charts/LineMarkSwift.LineMarkMultiSeriesLineChart@2x.png)
+![Multi-series line chart with date on x-axis and hours of sunshine on y-axis. Two lines showing 12 points representing hours of sunshine in a month for  a city. Seattle: 1 74, 2 99, 3 154, 4 201, 5 247, 6 234, 7 304, 8 248, 9 197, 10 122, 11 77, 12 62 and Cupertino: 1 196, 2 204, 3 253, 4 288, 5 311, 6 342, 7 360, 8 331, 9 300, 10 246, 11 212, 12 199.](https://developer.apple.com/tutorials/images/com.apple.Charts/LineMarkSwift.LineMarkMultiSeriesLineChart@2x.png)
 
 ## Parameters
 
@@ -45,7 +46,8 @@ Chart(sunshineData) {
 
 ## See Also
 
-- [init<X, Y>(x: PlottableValue<X>, y: PlottableValue<Y>)](linemark/init(x:y:).md)
+### Creating a line mark
+- [init<X, Y>(x: PlottableValue<X>, y: PlottableValue<Y>)](./init%28x,y%29.md)
   Creates a line mark.
 
 

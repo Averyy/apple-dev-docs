@@ -1,7 +1,8 @@
 # openControllerHomeButtonSettings(for:)
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Opens the Settings app to the screen in game controller settings where the user can change the controller shortcut action.
 
@@ -22,7 +23,7 @@ func openControllerHomeButtonSettings(for activity: GCControllerHomeButtonSettin
 
 This function returns immediately after attempting to open the Settings app.
 
-> **Note**: An error if the Settings app could not be opened.
+> **Throws**: An error if the Settings app could not be opened.
 
 
 ---

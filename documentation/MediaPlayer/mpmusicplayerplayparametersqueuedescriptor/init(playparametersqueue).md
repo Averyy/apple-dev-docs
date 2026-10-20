@@ -1,7 +1,8 @@
 # init(playParametersQueue:)
 
 **Framework**: Media Player  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new queue descriptor using the designated queue of play parameters.
 
@@ -18,6 +19,10 @@ Creates a new queue descriptor using the designated queue of play parameters.
 init(playParametersQueue: [MPMusicPlayerPlayParameters])
 ```
 
+```objc
+- (instancetype) initWithPlayParametersQueue:(NSArray<MPMusicPlayerPlayParameters *> *) playParametersQueue;
+```
+
 #### Return Value
 
 A new queue descriptor consisting of the items described by the play parameters.
@@ -28,7 +33,8 @@ A new queue descriptor consisting of the items described by the play parameters.
 
 ## See Also
 
-- [class MPMusicPlayerPlayParameters](mpmusicplayerplayparameters.md)
+### Creating a new play parameters queue descriptor
+- [class MPMusicPlayerPlayParameters](../mpmusicplayerplayparameters.md)
   The MusicKit parameters that describe items to play.
 
 

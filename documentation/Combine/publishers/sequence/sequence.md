@@ -1,7 +1,8 @@
 # sequence
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sequence of elements to publish.
 

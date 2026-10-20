@@ -1,7 +1,8 @@
 # currentTag
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The version tag currently checked out, if available.
 

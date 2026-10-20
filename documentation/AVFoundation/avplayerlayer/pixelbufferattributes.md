@@ -1,7 +1,8 @@
 # pixelBufferAttributes
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attributes of the visual output that displays in the player layer during playback.
 
@@ -19,15 +20,20 @@ The attributes of the visual output that displays in the player layer during pla
 var pixelBufferAttributes: [String : Any]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSDictionary<NSString *,id> * pixelBufferAttributes;
+```
+
 #### Discussion
 
 Use this property to customize the format of the pixel buffers that the player layer vends.
 
 ## See Also
 
-- [func displayedPixelBuffer() -> CVPixelBuffer?](avplayerlayer/displayedpixelbuffer.md)
+### Processing pixel buffers
+- [func displayedPixelBuffer() -> CVPixelBuffer?](./displayedpixelbuffer%28%29.md)
   Returns the pixel buffer that the player layer currently displays.
-- [func displayedReadOnlyPixelBuffer() -> CVReadOnlyPixelBuffer?](avplayerlayer/displayedreadonlypixelbuffer.md)
+- [func displayedReadOnlyPixelBuffer() -> CVReadOnlyPixelBuffer?](./displayedreadonlypixelbuffer%28%29.md)
   Returns the pixel buffer which is currently being displayed.
 
 

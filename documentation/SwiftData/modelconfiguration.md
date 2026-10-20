@@ -1,7 +1,8 @@
 # ModelConfiguration
 
 **Framework**: SwiftData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that describes the configuration of an app’s schema or specific group of models.
 
@@ -23,67 +24,68 @@ struct ModelConfiguration
 
 ## Mentions
 
-- [Syncing model data across a person’s devices](syncing-model-data-across-a-persons-devices.md)
-- [Preserving your app’s model data across launches](preserving-your-apps-model-data-across-launches.md)
+- [Syncing model data across a person’s devices](./syncing-model-data-across-a-persons-devices.md)
+- [Preserving your app’s model data across launches](./preserving-your-apps-model-data-across-launches.md)
 
 ## Topics
 
 ### Creating a model configuration
-- [init(isStoredInMemoryOnly: Bool)](modelconfiguration/init(isstoredinmemoryonly:).md)
+- [init(isStoredInMemoryOnly: Bool)](./modelconfiguration/init%28isstoredinmemoryonly%29.md)
   Creates a basic model configuration.
-- [init(for: any PersistentModel.Type..., isStoredInMemoryOnly: Bool)](modelconfiguration/init(for:isstoredinmemoryonly:).md)
+- [init(for: any PersistentModel.Type..., isStoredInMemoryOnly: Bool)](./modelconfiguration/init%28for,isstoredinmemoryonly%29.md)
   Creates a model configuration for the specified model types.
-- [init(String?, schema: Schema?, isStoredInMemoryOnly: Bool, allowsSave: Bool, groupContainer: ModelConfiguration.GroupContainer, cloudKitDatabase: ModelConfiguration.CloudKitDatabase)](modelconfiguration/init(_:schema:isstoredinmemoryonly:allowssave:groupcontainer:cloudkitdatabase:).md)
+- [init(String?, schema: Schema?, isStoredInMemoryOnly: Bool, allowsSave: Bool, groupContainer: ModelConfiguration.GroupContainer, cloudKitDatabase: ModelConfiguration.CloudKitDatabase)](./modelconfiguration/init%28_,schema,isstoredinmemoryonly,allowssave,groupcontainer,cloudkitdatabase%29.md)
   Creates a named model configuration for the specified schema.
-- [init(String?, schema: Schema?, url: URL, allowsSave: Bool, cloudKitDatabase: ModelConfiguration.CloudKitDatabase)](modelconfiguration/init(_:schema:url:allowssave:cloudkitdatabase:).md)
+- [init(String?, schema: Schema?, url: URL, allowsSave: Bool, cloudKitDatabase: ModelConfiguration.CloudKitDatabase)](./modelconfiguration/init%28_,schema,url,allowssave,cloudkitdatabase%29.md)
   Creates a named model configuration that specifies the on-disk location of the schema’s persistent storage.
 ### Accessing configuration details
-- [let url: URL](modelconfiguration/url.md)
+- [let url: URL](./modelconfiguration/url.md)
   The on-disk location of the schema’s persistent storage.
-- [let allowsSave: Bool](modelconfiguration/allowssave.md)
+- [let allowsSave: Bool](./modelconfiguration/allowssave.md)
   A Boolean value that determines whether the associated persistent storage is writable.
-- [let isStoredInMemoryOnly: Bool](modelconfiguration/isstoredinmemoryonly.md)
+- [let isStoredInMemoryOnly: Bool](./modelconfiguration/isstoredinmemoryonly.md)
   A Boolean value that determines whether the associated persistent storage is ephemeral and exists only in memory.
 ### Sharing and syncing the model store
-- [let cloudKitContainerIdentifier: String?](modelconfiguration/cloudkitcontaineridentifier.md)
+- [let cloudKitContainerIdentifier: String?](./modelconfiguration/cloudkitcontaineridentifier.md)
   The identifier of the configuration’s CloudKit database container.
-- [let cloudKitDatabase: ModelConfiguration.CloudKitDatabase](modelconfiguration/cloudkitdatabase-swift.property.md)
+- [let cloudKitDatabase: ModelConfiguration.CloudKitDatabase](./modelconfiguration/cloudkitdatabase-swift.property.md)
   The option to use when detecting the container of the preferred CloudKit database.
-- [ModelConfiguration.CloudKitDatabase](modelconfiguration/cloudkitdatabase-swift.struct.md)
+- [ModelConfiguration.CloudKitDatabase](./modelconfiguration/cloudkitdatabase-swift.struct.md)
   A type that describes the options for detecting a CloudKit database.
-- [let groupAppContainerIdentifier: String?](modelconfiguration/groupappcontaineridentifier.md)
+- [let groupAppContainerIdentifier: String?](./modelconfiguration/groupappcontaineridentifier.md)
   The identifier of the configuration’s app group container.
-- [let groupContainer: ModelConfiguration.GroupContainer](modelconfiguration/groupcontainer-swift.property.md)
+- [let groupContainer: ModelConfiguration.GroupContainer](./modelconfiguration/groupcontainer-swift.property.md)
   The option to use when detecting the preferred app group container.
-- [ModelConfiguration.GroupContainer](modelconfiguration/groupcontainer-swift.struct.md)
+- [ModelConfiguration.GroupContainer](./modelconfiguration/groupcontainer-swift.struct.md)
   A type that describes the options for detecting an app group container.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [DataStoreConfiguration](datastoreconfiguration.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [DataStoreConfiguration](./datastoreconfiguration.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(for: Schema, migrationPlan: (any SchemaMigrationPlan.Type)?, configurations: [ModelConfiguration]) throws](modelcontainer/init(for:migrationplan:configurations:)-1czix.md)
+### Creating a model container
+- [init(for: Schema, migrationPlan: (any SchemaMigrationPlan.Type)?, configurations: [ModelConfiguration]) throws](./modelcontainer/init%28for,migrationplan,configurations%29-1czix.md)
   Creates a model container using the specified schema, migration plan, and configurations.
-- [convenience init(for: any PersistentModel.Type..., migrationPlan: (any SchemaMigrationPlan.Type)?, configurations: ModelConfiguration...) throws](modelcontainer/init(for:migrationplan:configurations:)-8s4ts.md)
+- [convenience init(for: any PersistentModel.Type..., migrationPlan: (any SchemaMigrationPlan.Type)?, configurations: ModelConfiguration...) throws](./modelcontainer/init%28for,migrationplan,configurations%29-8s4ts.md)
   Creates a model container using the specified model types, migration plan, and zero or more configurations.
-- [convenience init(for: Schema, migrationPlan: (any SchemaMigrationPlan.Type)?, configurations: ModelConfiguration...) throws](modelcontainer/init(for:migrationplan:configurations:)-qof9.md)
+- [convenience init(for: Schema, migrationPlan: (any SchemaMigrationPlan.Type)?, configurations: ModelConfiguration...) throws](./modelcontainer/init%28for,migrationplan,configurations%29-qof9.md)
   Creates a model container using the specified schema, migration plan, and zero or more configurations.
-- [protocol PersistentModel](persistentmodel.md)
+- [protocol PersistentModel](./persistentmodel.md)
   An interface that enables SwiftData to manage a Swift class as a stored model.
-- [class Schema](schema.md)
+- [class Schema](./schema.md)
   An object that maps model classes to data in the model store, and helps with the migration of that data between releases.
-- [protocol SchemaMigrationPlan](schemamigrationplan.md)
+- [protocol SchemaMigrationPlan](./schemamigrationplan.md)
   An interface for describing the evolution of a schema and how to migrate between specific versions.
 
 

@@ -1,7 +1,8 @@
 # UserInvitationCreateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a User Invitation.
 
@@ -10,14 +11,14 @@ The request body you use to create a User Invitation.
 
 ## Declaration
 
-```swift
+```
 object UserInvitationCreateRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object UserInvitationCreateRequest.Data](userinvitationcreaterequest/data-data.dictionary.md)
+- [object UserInvitationCreateRequest.Data](./userinvitationcreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
 ## Properties
@@ -26,13 +27,14 @@ object UserInvitationCreateRequest
 
 ## See Also
 
-- [object UserInvitation](userinvitation.md)
+### Objects
+- [object UserInvitation](./userinvitation.md)
   A pending invitation for a person to join your App Store Connect team with a specified role and app access.
-- [object UserInvitationResponse](userinvitationresponse.md)
+- [object UserInvitationResponse](./userinvitationresponse.md)
   The response body for endpoints that read or modify a pending App Store Connect team invitation.
-- [object UserInvitationsResponse](userinvitationsresponse.md)
+- [object UserInvitationsResponse](./userinvitationsresponse.md)
   The response body for endpoints that list pending App Store Connect team invitations.
-- [object UserInvitationVisibleAppsLinkagesResponse](userinvitationvisibleappslinkagesresponse.md)
+- [object UserInvitationVisibleAppsLinkagesResponse](./userinvitationvisibleappslinkagesresponse.md)
 
 
 ---

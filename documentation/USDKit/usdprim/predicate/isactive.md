@@ -1,7 +1,8 @@
 # isActive
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 True if the prim and all of its ancestors are active.
 

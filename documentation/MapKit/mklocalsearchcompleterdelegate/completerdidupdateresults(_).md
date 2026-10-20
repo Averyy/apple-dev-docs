@@ -1,7 +1,8 @@
 # completerDidUpdateResults(_:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the method when the specified search completer updates its array of search completions.
 
@@ -20,9 +21,13 @@ Tells the method when the specified search completer updates its array of search
 optional func completerDidUpdateResults(_ completer: MKLocalSearchCompleter)
 ```
 
+```objc
+- (void) completerDidUpdateResults:(MKLocalSearchCompleter *) completer;
+```
+
 #### Discussion
 
-After receiving results from a query, the search completer updates its [`results`](mklocalsearchcompleter/results.md) property with the new [`MKLocalSearchCompletion`](mklocalsearchcompletion.md) objects and calls this method. Use this method to update your app’s interface based on the new search results. For example, you might update a table that you use to display search results to the user.
+After receiving results from a query, the search completer updates its [`results`](../mklocalsearchcompleter/results.md) property with the new [`MKLocalSearchCompletion`](../mklocalsearchcompletion.md) objects and calls this method. Use this method to update your app’s interface based on the new search results. For example, you might update a table that you use to display search results to the user.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ After receiving results from a query, the search completer updates its [`results
 
 ## See Also
 
-- [func completer(MKLocalSearchCompleter, didFailWithError: any Error)](mklocalsearchcompleterdelegate/completer(_:didfailwitherror:).md)
+### Getting the search results
+- [func completer(MKLocalSearchCompleter, didFailWithError: any Error)](./completer%28_,didfailwitherror%29.md)
   Tells the method when the specified search completer is unable to generate a list of search results.
 
 

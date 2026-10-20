@@ -1,7 +1,8 @@
 # longitude
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The longitude in degrees.
 
@@ -20,13 +21,18 @@ The longitude in degrees.
 var longitude: CLLocationDegrees
 ```
 
+```c
+CLLocationDegrees longitude;
+```
+
 #### Discussion
 
 Measurements are relative to the zero meridian, with positive values extending east of the meridian and negative values extending west of the meridian.
 
 ## See Also
 
-- [var latitude: CLLocationDegrees](cllocationcoordinate2d/latitude.md)
+### Getting the geographic coordinates
+- [var latitude: CLLocationDegrees](./latitude.md)
   The latitude in degrees.
 
 

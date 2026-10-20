@@ -1,7 +1,8 @@
 # results
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The results of the request to recognize animals.
 
@@ -17,6 +18,10 @@ The results of the request to recognize animals.
 
 ```swift
 var results: [VNRecognizedObjectObservation]? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) NSArray<VNRecognizedObjectObservation *> * results;
 ```
 
 

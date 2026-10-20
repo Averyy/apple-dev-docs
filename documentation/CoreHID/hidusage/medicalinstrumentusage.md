@@ -1,7 +1,8 @@
 # HIDUsage.MedicalInstrumentUsage
 
 **Framework**: Core HID  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 15.0+
@@ -15,48 +16,48 @@ enum MedicalInstrumentUsage
 ## Topics
 
 ### Enumeration Cases
-- [HIDUsage.MedicalInstrumentUsage.cine](hidusage/medicalinstrumentusage/cine.md)
-- [HIDUsage.MedicalInstrumentUsage.clipStore](hidusage/medicalinstrumentusage/clipstore.md)
-- [HIDUsage.MedicalInstrumentUsage.colorDopplerAdjust](hidusage/medicalinstrumentusage/colordoppleradjust.md)
-- [HIDUsage.MedicalInstrumentUsage.colorDopplerModeSelect](hidusage/medicalinstrumentusage/colordopplermodeselect.md)
-- [HIDUsage.MedicalInstrumentUsage.depth](hidusage/medicalinstrumentusage/depth.md)
-- [HIDUsage.MedicalInstrumentUsage.depthGainCompensation](hidusage/medicalinstrumentusage/depthgaincompensation.md)
-- [HIDUsage.MedicalInstrumentUsage.focus](hidusage/medicalinstrumentusage/focus.md)
-- [HIDUsage.MedicalInstrumentUsage.freezeOrThaw](hidusage/medicalinstrumentusage/freezeorthaw.md)
-- [HIDUsage.MedicalInstrumentUsage.medicalUltrasound](hidusage/medicalinstrumentusage/medicalultrasound.md)
-- [HIDUsage.MedicalInstrumentUsage.microphoneEnable](hidusage/medicalinstrumentusage/microphoneenable.md)
-- [HIDUsage.MedicalInstrumentUsage.motionModeAdjust](hidusage/medicalinstrumentusage/motionmodeadjust.md)
-- [HIDUsage.MedicalInstrumentUsage.motionModeSelect](hidusage/medicalinstrumentusage/motionmodeselect.md)
-- [HIDUsage.MedicalInstrumentUsage.next](hidusage/medicalinstrumentusage/next.md)
-- [HIDUsage.MedicalInstrumentUsage.print](hidusage/medicalinstrumentusage/print.md)
-- [HIDUsage.MedicalInstrumentUsage.save](hidusage/medicalinstrumentusage/save.md)
-- [HIDUsage.MedicalInstrumentUsage.softControlAdjust](hidusage/medicalinstrumentusage/softcontroladjust.md)
-- [HIDUsage.MedicalInstrumentUsage.softControlSelect](hidusage/medicalinstrumentusage/softcontrolselect.md)
-- [HIDUsage.MedicalInstrumentUsage.softStepPrimary](hidusage/medicalinstrumentusage/softstepprimary.md)
-- [HIDUsage.MedicalInstrumentUsage.softStepSecondary](hidusage/medicalinstrumentusage/softstepsecondary.md)
-- [HIDUsage.MedicalInstrumentUsage.spectralDopplerAdjust](hidusage/medicalinstrumentusage/spectraldoppleradjust.md)
-- [HIDUsage.MedicalInstrumentUsage.spectralDopplerModeSelect](hidusage/medicalinstrumentusage/spectraldopplermodeselect.md)
-- [HIDUsage.MedicalInstrumentUsage.transmitPower](hidusage/medicalinstrumentusage/transmitpower.md)
-- [HIDUsage.MedicalInstrumentUsage.twoDModeAdjust](hidusage/medicalinstrumentusage/twodmodeadjust.md)
-- [HIDUsage.MedicalInstrumentUsage.twoDModeSelect](hidusage/medicalinstrumentusage/twodmodeselect.md)
-- [HIDUsage.MedicalInstrumentUsage.update](hidusage/medicalinstrumentusage/update.md)
-- [HIDUsage.MedicalInstrumentUsage.vcrOrAcquisition](hidusage/medicalinstrumentusage/vcroracquisition.md)
-- [HIDUsage.MedicalInstrumentUsage.volume](hidusage/medicalinstrumentusage/volume.md)
-- [HIDUsage.MedicalInstrumentUsage.zoomAdjust](hidusage/medicalinstrumentusage/zoomadjust.md)
-- [HIDUsage.MedicalInstrumentUsage.zoomSelect](hidusage/medicalinstrumentusage/zoomselect.md)
+- [HIDUsage.MedicalInstrumentUsage.cine](./medicalinstrumentusage/cine.md)
+- [HIDUsage.MedicalInstrumentUsage.clipStore](./medicalinstrumentusage/clipstore.md)
+- [HIDUsage.MedicalInstrumentUsage.colorDopplerAdjust](./medicalinstrumentusage/colordoppleradjust.md)
+- [HIDUsage.MedicalInstrumentUsage.colorDopplerModeSelect](./medicalinstrumentusage/colordopplermodeselect.md)
+- [HIDUsage.MedicalInstrumentUsage.depth](./medicalinstrumentusage/depth.md)
+- [HIDUsage.MedicalInstrumentUsage.depthGainCompensation](./medicalinstrumentusage/depthgaincompensation.md)
+- [HIDUsage.MedicalInstrumentUsage.focus](./medicalinstrumentusage/focus.md)
+- [HIDUsage.MedicalInstrumentUsage.freezeOrThaw](./medicalinstrumentusage/freezeorthaw.md)
+- [HIDUsage.MedicalInstrumentUsage.medicalUltrasound](./medicalinstrumentusage/medicalultrasound.md)
+- [HIDUsage.MedicalInstrumentUsage.microphoneEnable](./medicalinstrumentusage/microphoneenable.md)
+- [HIDUsage.MedicalInstrumentUsage.motionModeAdjust](./medicalinstrumentusage/motionmodeadjust.md)
+- [HIDUsage.MedicalInstrumentUsage.motionModeSelect](./medicalinstrumentusage/motionmodeselect.md)
+- [HIDUsage.MedicalInstrumentUsage.next](./medicalinstrumentusage/next.md)
+- [HIDUsage.MedicalInstrumentUsage.print](./medicalinstrumentusage/print.md)
+- [HIDUsage.MedicalInstrumentUsage.save](./medicalinstrumentusage/save.md)
+- [HIDUsage.MedicalInstrumentUsage.softControlAdjust](./medicalinstrumentusage/softcontroladjust.md)
+- [HIDUsage.MedicalInstrumentUsage.softControlSelect](./medicalinstrumentusage/softcontrolselect.md)
+- [HIDUsage.MedicalInstrumentUsage.softStepPrimary](./medicalinstrumentusage/softstepprimary.md)
+- [HIDUsage.MedicalInstrumentUsage.softStepSecondary](./medicalinstrumentusage/softstepsecondary.md)
+- [HIDUsage.MedicalInstrumentUsage.spectralDopplerAdjust](./medicalinstrumentusage/spectraldoppleradjust.md)
+- [HIDUsage.MedicalInstrumentUsage.spectralDopplerModeSelect](./medicalinstrumentusage/spectraldopplermodeselect.md)
+- [HIDUsage.MedicalInstrumentUsage.transmitPower](./medicalinstrumentusage/transmitpower.md)
+- [HIDUsage.MedicalInstrumentUsage.twoDModeAdjust](./medicalinstrumentusage/twodmodeadjust.md)
+- [HIDUsage.MedicalInstrumentUsage.twoDModeSelect](./medicalinstrumentusage/twodmodeselect.md)
+- [HIDUsage.MedicalInstrumentUsage.update](./medicalinstrumentusage/update.md)
+- [HIDUsage.MedicalInstrumentUsage.vcrOrAcquisition](./medicalinstrumentusage/vcroracquisition.md)
+- [HIDUsage.MedicalInstrumentUsage.volume](./medicalinstrumentusage/volume.md)
+- [HIDUsage.MedicalInstrumentUsage.zoomAdjust](./medicalinstrumentusage/zoomadjust.md)
+- [HIDUsage.MedicalInstrumentUsage.zoomSelect](./medicalinstrumentusage/zoomselect.md)
 ### Type Properties
-- [static let page: UInt16](hidusage/medicalinstrumentusage/page.md)
+- [static let page: UInt16](./medicalinstrumentusage/page.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

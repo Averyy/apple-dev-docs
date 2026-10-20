@@ -1,7 +1,8 @@
 # HKClinicalType
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A type that identifies samples that contain clinical record data.
 
@@ -19,68 +20,74 @@ A type that identifies samples that contain clinical record data.
 class HKClinicalType
 ```
 
+```objc
+@interface HKClinicalType : HKSampleType
+```
+
 ## Topics
 
 ### Creating Clinical Types
-- [convenience init(HKClinicalTypeIdentifier)](hkclinicaltype/init(_:).md)
+- [convenience init(HKClinicalTypeIdentifier)](./hkclinicaltype/init%28_%29.md)
   Creates a clinical type using the provided identifier.
 
 ## Relationships
 
 ### Inherits From
-- [HKSampleType](hksampletype.md)
+- [HKSampleType](./hksampletype.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HKClinicalRecord](hkclinicalrecord.md)
+### Related Documentation
+- [class HKClinicalRecord](./hkclinicalrecord.md)
   A sample that stores a clinical record.
-- [static let allergyRecord: HKClinicalTypeIdentifier](hkclinicaltypeidentifier/allergyrecord.md)
+- [static let allergyRecord: HKClinicalTypeIdentifier](./hkclinicaltypeidentifier/allergyrecord.md)
   A type identifier for records of allergic or intolerant reactions.
-- [static let conditionRecord: HKClinicalTypeIdentifier](hkclinicaltypeidentifier/conditionrecord.md)
+- [static let conditionRecord: HKClinicalTypeIdentifier](./hkclinicaltypeidentifier/conditionrecord.md)
   A type identifier for records of a condition, problem, diagnosis, or other event.
-- [static let immunizationRecord: HKClinicalTypeIdentifier](hkclinicaltypeidentifier/immunizationrecord.md)
+- [static let immunizationRecord: HKClinicalTypeIdentifier](./hkclinicaltypeidentifier/immunizationrecord.md)
   A type identifier for records of the current or historical administration of vaccines.
-- [static let labResultRecord: HKClinicalTypeIdentifier](hkclinicaltypeidentifier/labresultrecord.md)
+- [static let labResultRecord: HKClinicalTypeIdentifier](./hkclinicaltypeidentifier/labresultrecord.md)
   A type identifier for records of lab results.
-- [static let medicationRecord: HKClinicalTypeIdentifier](hkclinicaltypeidentifier/medicationrecord.md)
+- [static let medicationRecord: HKClinicalTypeIdentifier](./hkclinicaltypeidentifier/medicationrecord.md)
   A type identifier for records of medication.
-- [static let procedureRecord: HKClinicalTypeIdentifier](hkclinicaltypeidentifier/procedurerecord.md)
+- [static let procedureRecord: HKClinicalTypeIdentifier](./hkclinicaltypeidentifier/procedurerecord.md)
   A type identifier for records of procedures.
-- [static let vitalSignRecord: HKClinicalTypeIdentifier](hkclinicaltypeidentifier/vitalsignrecord.md)
+- [static let vitalSignRecord: HKClinicalTypeIdentifier](./hkclinicaltypeidentifier/vitalsignrecord.md)
   A type identifier for records of vital signs.
-- [class HKCharacteristicType](hkcharacteristictype.md)
+### Object type subclasses
+- [class HKCharacteristicType](./hkcharacteristictype.md)
   A type that represents data that doesn’t typically change over time.
-- [class HKQuantityType](hkquantitytype.md)
+- [class HKQuantityType](./hkquantitytype.md)
   A type that identifies samples that store numerical values.
-- [class HKCategoryType](hkcategorytype.md)
+- [class HKCategoryType](./hkcategorytype.md)
   A type that identifies samples that contain a value from a small set of possible values.
-- [class HKCorrelationType](hkcorrelationtype.md)
+- [class HKCorrelationType](./hkcorrelationtype.md)
   A type that identifies samples that group multiple subsamples.
-- [class HKActivitySummaryType](hkactivitysummarytype.md)
+- [class HKActivitySummaryType](./hkactivitysummarytype.md)
   A type that identifies activity summary objects.
-- [class HKAudiogramSampleType](hkaudiogramsampletype.md)
+- [class HKAudiogramSampleType](./hkaudiogramsampletype.md)
   A type that identifies samples that contain audiogram data.
-- [class HKElectrocardiogramType](hkelectrocardiogramtype.md)
+- [class HKElectrocardiogramType](./hkelectrocardiogramtype.md)
   A type that identifies samples containing electrocardiogram data.
-- [class HKSeriesType](hkseriestype.md)
+- [class HKSeriesType](./hkseriestype.md)
   A type that indicates the data stored in a series sample.
-- [class HKWorkoutType](hkworkouttype.md)
+- [class HKWorkoutType](./hkworkouttype.md)
   A type that identifies samples that store information about a workout.
-- [class HKObjectType](hkobjecttype.md)
+- [class HKObjectType](./hkobjecttype.md)
   An abstract superclass with subclasses that identify a specific type of data for the HealthKit store.
-- [class HKSampleType](hksampletype.md)
+- [class HKSampleType](./hksampletype.md)
   An abstract superclass for all classes that identify a specific type of sample when working with the HealthKit store.
 
 

@@ -1,7 +1,8 @@
 # replace
 
 **Framework**: Symbols  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An animation that replaces the layers of one symbol-based image with those of another.
 
@@ -20,9 +21,12 @@ An animation that replaces the layers of one symbol-based image with those of an
 static var replace: ReplaceSymbolEffect { get }
 ```
 
+Available when `Self` is `ReplaceSymbolEffect`.
+
 ## See Also
 
-- [static var automatic: AutomaticSymbolEffect](symboleffect/automatic.md)
+### Symbol content transitions
+- [static var automatic: AutomaticSymbolEffect](./automatic.md)
   A transition that applies the default animation to a symbol-based image in a context-sensitive manner.
 
 

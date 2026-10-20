@@ -1,17 +1,22 @@
 # register(forDisconnectNotification:selector:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows a client to register for device disconnect notification.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func register(forDisconnectNotification observer: Any!, selector inSelector: Selector!) -> IOBluetoothUserNotification!
+```
+
+```objc
+- (IOBluetoothUserNotification *) registerForDisconnectNotification:(id) observer selector:(SEL) inSelector;
 ```
 
 #### Return Value

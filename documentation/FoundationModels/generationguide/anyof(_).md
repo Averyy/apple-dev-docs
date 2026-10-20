@@ -1,7 +1,8 @@
 # anyOf(_:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Enforces that the string be one of the provided values.
 
@@ -19,9 +20,12 @@ Enforces that the string be one of the provided values.
 static func anyOf(_ values: [String]) -> GenerationGuide<String>
 ```
 
+Available when `Value` is `String`.
+
 ## See Also
 
-- [static func constant(String) -> GenerationGuide<String>](generationguide/constant(_:).md)
+### Getting the constant
+- [static func constant(String) -> GenerationGuide<String>](./constant%28_%29.md)
   Enforces that the string be precisely the given value.
 
 

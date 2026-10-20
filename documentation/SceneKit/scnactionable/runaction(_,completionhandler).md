@@ -2,23 +2,32 @@
 
 **Framework**: SceneKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Adds an action to the list of actions executed by the node. SceneKit calls the specified block when the action completes.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
+func runAction(_ action: SCNAction, completionHandler block: (@Sendable () -> Void)? = nil)
+```
+
+```swift
 func runAction(_ action: SCNAction) async
+```
+
+```objc
+- (void) runAction:(SCNAction *) action completionHandler:(void (^)()) block;
 ```
 
 #### Discussion
@@ -34,11 +43,12 @@ SceneKit calls your block after the action’s duration is complete. For example
 
 ## See Also
 
-- [func runAction(SCNAction)](scnactionable/runaction(_:).md)
+### Running Actions
+- [func runAction(SCNAction)](./runaction%28_%29.md)
   Adds an action to the list of actions executed by the node.
-- [func runAction(SCNAction, forKey: String?)](scnactionable/runaction(_:forkey:).md)
+- [func runAction(SCNAction, forKey: String?)](./runaction%28_,forkey%29.md)
   Adds an identifiable action to the list of actions executed by the node.
-- [func runAction(SCNAction, forKey: String?, completionHandler: (() -> Void)?)](scnactionable/runaction(_:forkey:completionhandler:).md)
+- [func runAction(SCNAction, forKey: String?, completionHandler: (() -> Void)?)](./runaction%28_,forkey,completionhandler%29.md)
   Adds an identifiable action to the list of actions executed by the node. SceneKit calls the specified block when the action completes.
 
 

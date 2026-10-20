@@ -1,7 +1,8 @@
 # presentOnResume(_:)
 
 **Framework**: Foveated Streaming  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Opens the immersive space when the session resumes.
 

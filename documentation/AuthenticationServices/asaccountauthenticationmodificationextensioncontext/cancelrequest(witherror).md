@@ -1,7 +1,8 @@
 # cancelRequest(withError:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels a request with an error.
 
@@ -17,15 +18,19 @@ Cancels a request with an error.
 func cancelRequest(withError error: any Error)
 ```
 
+```objc
+- (void) cancelRequestWithError:(NSError *) error;
+```
+
 ## Mentions
 
-- [Upgrading Account Security With an Account Authentication Modification Extension](upgrading-account-security-with-an-account-authentication-modification-extension.md)
+- [Upgrading Account Security With an Account Authentication Modification Extension](../upgrading-account-security-with-an-account-authentication-modification-extension.md)
 
 #### Discussion
 
-If the user cancels the request, use the [`ASExtensionError.Code.userCanceled`](asextensionerror/code/usercanceled.md) error code in the `error`. If the request requires user interaction, use [`ASExtensionError.Code.userInteractionRequired`](asextensionerror/code/userinteractionrequired.md) instead.
+If the user cancels the request, use the [`ASExtensionError.Code.userCanceled`](../asextensionerror/code/usercanceled.md) error code in the `error`. If the request requires user interaction, use [`ASExtensionError.Code.userInteractionRequired`](../asextensionerror/code/userinteractionrequired.md) instead.
 
-To include additional information regarding the failure, use [`ASExtensionLocalizedFailureReasonErrorKey`](asextensionlocalizedfailurereasonerrorkey.md) to set a string value in the error’s `userInfo` dictionary. The system displays this string value to the user.
+To include additional information regarding the failure, use [`ASExtensionLocalizedFailureReasonErrorKey`](../asextensionlocalizedfailurereasonerrorkey.md) to set a string value in the error’s `userInfo` dictionary. The system displays this string value to the user.
 
 ## Parameters
 
@@ -33,13 +38,14 @@ To include additional information regarding the failure, use [`ASExtensionLocali
 
 ## See Also
 
-- [func completeUpgradeToSignInWithApple(userInfo: [AnyHashable : Any]?)](asaccountauthenticationmodificationextensioncontext/completeupgradetosigninwithapple(userinfo:).md)
+### Handling Requests
+- [func completeUpgradeToSignInWithApple(userInfo: [AnyHashable : Any]?)](./completeupgradetosigninwithapple%28userinfo%29.md)
   Completes the process of upgrading an account’s authentication credentials from using passwords to using Sign in with Apple.
-- [func completeChangePasswordRequest(updatedCredential: ASPasswordCredential, userInfo: [AnyHashable : Any]?)](asaccountauthenticationmodificationextensioncontext/completechangepasswordrequest(updatedcredential:userinfo:).md)
+- [func completeChangePasswordRequest(updatedCredential: ASPasswordCredential, userInfo: [AnyHashable : Any]?)](./completechangepasswordrequest%28updatedcredential,userinfo%29.md)
   Completes a request to update an account’s authentication credentials from using a weak password to using a strong password.
-- [func getSignInWithAppleUpgradeAuthorization(state: String?, nonce: String?, completionHandler: (ASAuthorizationAppleIDCredential?, (any Error)?) -> Void)](asaccountauthenticationmodificationextensioncontext/getsigninwithappleupgradeauthorization(state:nonce:completionhandler:).md)
+- [func getSignInWithAppleUpgradeAuthorization(state: String?, nonce: String?, completionHandler: (ASAuthorizationAppleIDCredential?, (any Error)?) -> Void)](./getsigninwithappleupgradeauthorization%28state,nonce,completionhandler%29.md)
   Retrieves the user’s current Sign in with Apple authorization credentials.
-- [let ASExtensionLocalizedFailureReasonErrorKey: String](asextensionlocalizedfailurereasonerrorkey.md)
+- [let ASExtensionLocalizedFailureReasonErrorKey: String](../asextensionlocalizedfailurereasonerrorkey.md)
   A key that specifies a string value to show to the user when a request fails.
 
 

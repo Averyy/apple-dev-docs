@@ -1,7 +1,8 @@
 # ETOOMANYREFS
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Too many references: can’t splice.
 

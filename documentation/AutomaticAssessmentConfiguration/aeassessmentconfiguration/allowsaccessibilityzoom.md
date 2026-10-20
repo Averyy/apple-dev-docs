@@ -1,7 +1,8 @@
 # allowsAccessibilityZoom
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to allow Zoom during an assessment.
 
@@ -15,9 +16,13 @@ A Boolean value that indicates whether to allow Zoom during an assessment.
 var allowsAccessibilityZoom: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL allowsAccessibilityZoom;
+```
+
 #### Discussion
 
-Users can enable Zoom in the Settings app (Accessibility > Zoom) to magnify the screen. An assessment session **does not** disable Zoom by default, but you can disable it by setting [`allowsAccessibilityZoom`](aeassessmentconfiguration/allowsaccessibilityzoom.md) to `NO` in the [`AEAssessmentConfiguration`](aeassessmentconfiguration.md) instance that you use to initialize a session.
+Users can enable Zoom in the Settings app (Accessibility > Zoom) to magnify the screen. An assessment session **does not** disable Zoom by default, but you can disable it by setting [`allowsAccessibilityZoom`](./allowsaccessibilityzoom.md) to `NO` in the [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance that you use to initialize a session.
 
 
 ---

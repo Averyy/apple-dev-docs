@@ -1,7 +1,8 @@
 # TipNSPopover
 
 **Framework**: TipKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A subclass of NSPopover that displays a popover tip in AppKit applications.
 
@@ -17,9 +18,9 @@ A subclass of NSPopover that displays a popover tip in AppKit applications.
 
 #### Overview
 
-Use this to create a tip you want to display and lay out as a [`NSPopover`](https://developer.apple.com/documentation/appkit/nspopover).
+Use this to create a tip you want to display and lay out as a [`NSPopover`](../AppKit/nspopover.md).
 
-Adding and removing TipNSView from your app is done by listening to a tip’s [`shouldDisplayUpdates`](tip/shoulddisplayupdates.md) or [`statusUpdates`](tip/statusupdates.md).
+Adding and removing TipNSView from your app is done by listening to a tip’s [`shouldDisplayUpdates`](./tip/shoulddisplayupdates.md) or [`statusUpdates`](./tip/statusupdates.md).
 
 ```swift
 import Cocoa
@@ -75,44 +76,45 @@ class CatTracksViewController: NSViewController {
 ## Topics
 
 ### Initializers
-- [init(any Tip, delegate: (any NSPopoverDelegate)?, actionHandler: (Tips.Action) -> Void)](tipnspopover/init(_:delegate:actionhandler:).md)
+- [init(any Tip, delegate: (any NSPopoverDelegate)?, actionHandler: (Tips.Action) -> Void)](./tipnspopover/init%28_,delegate,actionhandler%29.md)
   Initializes a popover with the specified tip.
 ### Instance Properties
-- [var backgroundColor: NSColor?](tipnspopover/backgroundcolor.md)
+- [var backgroundColor: NSColor?](./tipnspopover/backgroundcolor.md)
   The background color to use for the tip view.
-- [var backgroundStyle: any ShapeStyle](tipnspopover/backgroundstyle.md)
+- [var backgroundStyle: any ShapeStyle](./tipnspopover/backgroundstyle.md)
   The background style to use for the tip view.
-- [var cornerRadius: CGFloat](tipnspopover/cornerradius.md)
+- [var cornerRadius: CGFloat](./tipnspopover/cornerradius.md)
   Corner radius for the tip view.
-- [var imageSize: CGSize](tipnspopover/imagesize.md)
+- [var imageSize: CGSize](./tipnspopover/imagesize.md)
   Size of the image displayed in the tip view.
-- [var imageStyle: (any ShapeStyle)?](tipnspopover/imagestyle.md)
+- [var imageStyle: (any ShapeStyle)?](./tipnspopover/imagestyle.md)
   Foreground style for the tip’s image.
-- [var viewStyle: any TipViewStyle](tipnspopover/viewstyle.md)
+- [var viewStyle: any TipViewStyle](./tipnspopover/viewstyle.md)
   The given style for TipView within the view hierarchy
 
 ## Relationships
 
 ### Inherits From
-- [NSPopover](../appkit/nspopover.md)
+- [NSPopover](../AppKit/nspopover.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
-- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](../AppKit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../AppKit/nsaccessibilityprotocol.md)
+- [NSAppearanceCustomization](../AppKit/nsappearancecustomization.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
 
 ## See Also
 
-- [class TipNSView](tipnsview.md)
+### AppKit Views
+- [class TipNSView](./tipnsview.md)
   A user interface element that represents a tip in AppKit applications.
 
 

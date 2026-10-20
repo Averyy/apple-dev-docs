@@ -1,7 +1,8 @@
 # gpsDilutionOfPrecision
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -18,21 +19,22 @@ static let gpsDilutionOfPrecision: SearchableItemAttribute
 
 ## See Also
 
-- [static let altitude: SearchableItemAttribute](searchableitemattribute/altitude.md)
-- [static let city: SearchableItemAttribute](searchableitemattribute/city.md)
-- [static let country: SearchableItemAttribute](searchableitemattribute/country.md)
-- [static let gpsAreaInformation: SearchableItemAttribute](searchableitemattribute/gpsareainformation.md)
-- [static let gpsDateStamp: SearchableItemAttribute](searchableitemattribute/gpsdatestamp.md)
-- [static let gpsDestinationBearing: SearchableItemAttribute](searchableitemattribute/gpsdestinationbearing.md)
-- [static let gpsDestinationDistance: SearchableItemAttribute](searchableitemattribute/gpsdestinationdistance.md)
-- [static let gpsDestinationLatitude: SearchableItemAttribute](searchableitemattribute/gpsdestinationlatitude.md)
-- [static let gpsDestinationLongitude: SearchableItemAttribute](searchableitemattribute/gpsdestinationlongitude.md)
-- [static let gpsDifferential: SearchableItemAttribute](searchableitemattribute/gpsdifferential.md)
-- [static let gpsMapDatum: SearchableItemAttribute](searchableitemattribute/gpsmapdatum.md)
-- [static let gpsMeasureMode: SearchableItemAttribute](searchableitemattribute/gpsmeasuremode.md)
-- [static let gpsProcessingMethod: SearchableItemAttribute](searchableitemattribute/gpsprocessingmethod.md)
-- [static let gpsStatus: SearchableItemAttribute](searchableitemattribute/gpsstatus.md)
-- [static let gpsTrack: SearchableItemAttribute](searchableitemattribute/gpstrack.md)
+### Describing places
+- [static let altitude: SearchableItemAttribute](./altitude.md)
+- [static let city: SearchableItemAttribute](./city.md)
+- [static let country: SearchableItemAttribute](./country.md)
+- [static let gpsAreaInformation: SearchableItemAttribute](./gpsareainformation.md)
+- [static let gpsDateStamp: SearchableItemAttribute](./gpsdatestamp.md)
+- [static let gpsDestinationBearing: SearchableItemAttribute](./gpsdestinationbearing.md)
+- [static let gpsDestinationDistance: SearchableItemAttribute](./gpsdestinationdistance.md)
+- [static let gpsDestinationLatitude: SearchableItemAttribute](./gpsdestinationlatitude.md)
+- [static let gpsDestinationLongitude: SearchableItemAttribute](./gpsdestinationlongitude.md)
+- [static let gpsDifferential: SearchableItemAttribute](./gpsdifferential.md)
+- [static let gpsMapDatum: SearchableItemAttribute](./gpsmapdatum.md)
+- [static let gpsMeasureMode: SearchableItemAttribute](./gpsmeasuremode.md)
+- [static let gpsProcessingMethod: SearchableItemAttribute](./gpsprocessingmethod.md)
+- [static let gpsStatus: SearchableItemAttribute](./gpsstatus.md)
+- [static let gpsTrack: SearchableItemAttribute](./gpstrack.md)
 
 
 ---

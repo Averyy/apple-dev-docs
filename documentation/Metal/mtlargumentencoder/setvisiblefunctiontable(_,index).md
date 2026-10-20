@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a reference to a visible-function table into the argument buffer.
@@ -20,18 +21,23 @@ Encodes a reference to a visible-function table into the argument buffer.
 func setVisibleFunctionTable(_ visibleFunctionTable: (any MTLVisibleFunctionTable)?, index: Int)
 ```
 
+```objc
+- (void) setVisibleFunctionTable:(id<MTLVisibleFunctionTable>) visibleFunctionTable atIndex:(NSUInteger) index;
+```
+
 ## Parameters
 
 - `visibleFunctionTable`: A visible-function table the method encodes.
-- `index`: The index of a visible-function table within the argument buffer. The value corresponds to either the index ID of a declaration in Metal Shading Language (MSL) or the [`index`](mtlargumentdescriptor/index.md) property of an [`MTLArgumentDescriptor`](mtlargumentdescriptor.md) instance.
+- `index`: The index of a visible-function table within the argument buffer. The value corresponds to either the index ID of a declaration in Metal Shading Language (MSL) or the [`index`](../mtlargumentdescriptor/index.md) property of an [`MTLArgumentDescriptor`](../mtlargumentdescriptor.md) instance.
 
 ## See Also
 
-- [func setIntersectionFunctionTable((any MTLIntersectionFunctionTable)?, index: Int)](mtlargumentencoder/setintersectionfunctiontable(_:index:).md)
+### Encoding function tables
+- [func setIntersectionFunctionTable((any MTLIntersectionFunctionTable)?, index: Int)](./setintersectionfunctiontable%28_,index%29.md)
   Encodes a reference to a ray-tracing intersection-function table into the argument buffer.
-- [func setIntersectionFunctionTables([(any MTLIntersectionFunctionTable)?], range: Range<Int>)](mtlargumentencoder/setintersectionfunctiontables(_:range:).md)
+- [func setIntersectionFunctionTables([(any MTLIntersectionFunctionTable)?], range: Range<Int>)](./setintersectionfunctiontables%28_,range%29.md)
   Encodes references to an array of ray-tracing intersection-function tables into the argument buffer.
-- [func setVisibleFunctionTables([(any MTLVisibleFunctionTable)?], range: Range<Int>)](mtlargumentencoder/setvisiblefunctiontables(_:range:).md)
+- [func setVisibleFunctionTables([(any MTLVisibleFunctionTable)?], range: Range<Int>)](./setvisiblefunctiontables%28_,range%29.md)
   Encodes references to an array of ray-tracing intersection-function tables into the argument buffer.
 
 

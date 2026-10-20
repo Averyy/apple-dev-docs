@@ -1,7 +1,8 @@
 # taperedMerge(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the result of a tapered merge between two double-precision vectors.
 
@@ -11,7 +12,7 @@ Returns the result of a tapered merge between two double-precision vectors.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -44,7 +45,7 @@ let tapered = vDSP.taperedMerge(vectorA, vectorB)
 
 The following image shows the result of the tapered merge in `tapered`.
 
-![Graphic showing the tapered merge from a high-frequency sine wave to a low-frequency sine wave.](/images/com.apple.accelerate/media-3681539@2x.png)
+![Graphic showing the tapered merge from a high-frequency sine wave to a low-frequency sine wave.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3681539@2x.png)
 
 ## Parameters
 
@@ -53,11 +54,12 @@ The following image shows the result of the tapered merge in `tapered`.
 
 ## See Also
 
-- [static func taperedMerge<T, U>(T, U) -> [Float]](vdsp/taperedmerge(_:_:)-5dhoj.md)
+### Vector-to-vector merging functions
+- [static func taperedMerge<T, U>(T, U) -> [Float]](./taperedmerge%28_,_%29-5dhoj.md)
   Returns the result of a tapered merge between two single-precision vectors.
-- [static func taperedMerge<T, U, V>(T, U, result: inout V)](vdsp/taperedmerge(_:_:result:)-74fuy.md)
+- [static func taperedMerge<T, U, V>(T, U, result: inout V)](./taperedmerge%28_,_,result%29-74fuy.md)
   Computes the result of a tapered merge between two single-precision vectors.
-- [static func taperedMerge<T, U, V>(T, U, result: inout V)](vdsp/taperedmerge(_:_:result:)-9361o.md)
+- [static func taperedMerge<T, U, V>(T, U, result: inout V)](./taperedmerge%28_,_,result%29-9361o.md)
   Computes the result of a tapered merge between two double-precision vectors.
 
 

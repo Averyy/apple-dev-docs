@@ -1,7 +1,8 @@
 # AVReadOnlyAudioPCMBuffer
 
 **Framework**: AVFAudio  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A read-only, Sendable audio buffer for safe concurrent access.
 
@@ -23,50 +24,51 @@ struct AVReadOnlyAudioPCMBuffer
 ## Topics
 
 ### Creating a read-only buffer
-- [init(copying: AVAudioPCMBuffer)](avreadonlyaudiopcmbuffer/init(copying:).md)
+- [init(copying: AVAudioPCMBuffer)](./avreadonlyaudiopcmbuffer/init%28copying%29.md)
   Creates a read-only buffer by copying audio data from an existing PCM buffer.
-- [init(format: AVAudioFormat, frameCapacity: Int, initializingWith: (UnsafeMutablePointer<AudioBufferList>) throws -> Void) throws](avreadonlyaudiopcmbuffer/init(format:framecapacity:initializingwith:).md)
+- [init(format: AVAudioFormat, frameCapacity: Int, initializingWith: (UnsafeMutablePointer<AudioBufferList>) throws -> Void) throws](./avreadonlyaudiopcmbuffer/init%28format,framecapacity,initializingwith%29.md)
   Creates a read-only buffer by allocating and initializing audio data via closure.
-- [init(unsafeRetaining: sending AVAudioPCMBuffer)](avreadonlyaudiopcmbuffer/init(unsaferetaining:).md)
+- [init(unsafeRetaining: sending AVAudioPCMBuffer)](./avreadonlyaudiopcmbuffer/init%28unsaferetaining%29.md)
   Creates a read-only buffer by retaining the existing PCM buffer without copying.
 ### Getting buffer properties
-- [var format: AVAudioFormat](avreadonlyaudiopcmbuffer/format.md)
-- [var frameCapacity: Int](avreadonlyaudiopcmbuffer/framecapacity.md)
-- [var frameLength: Int](avreadonlyaudiopcmbuffer/framelength.md)
-- [var stride: Int](avreadonlyaudiopcmbuffer/stride.md)
+- [var format: AVAudioFormat](./avreadonlyaudiopcmbuffer/format.md)
+- [var frameCapacity: Int](./avreadonlyaudiopcmbuffer/framecapacity.md)
+- [var frameLength: Int](./avreadonlyaudiopcmbuffer/framelength.md)
+- [var stride: Int](./avreadonlyaudiopcmbuffer/stride.md)
 ### Accessing channel data
-- [func channelData(Int) -> AVReadOnlyAudioPCMBuffer.ChannelData](avreadonlyaudiopcmbuffer/channeldata(_:).md)
+- [func channelData(Int) -> AVReadOnlyAudioPCMBuffer.ChannelData](./avreadonlyaudiopcmbuffer/channeldata%28_%29.md)
   Returns read-only access to a specific channel’s data.
-- [func withUnsafeAudioBufferList<R>((UnsafePointer<AudioBufferList>) throws -> R) rethrows -> R](avreadonlyaudiopcmbuffer/withunsafeaudiobufferlist(_:).md)
+- [func withUnsafeAudioBufferList<R>((UnsafePointer<AudioBufferList>) throws -> R) rethrows -> R](./avreadonlyaudiopcmbuffer/withunsafeaudiobufferlist%28_%29.md)
   Provides scoped read-only access to the audio buffer list.
-- [AVReadOnlyAudioPCMBuffer.ChannelData](avreadonlyaudiopcmbuffer/channeldata.md)
+- [AVReadOnlyAudioPCMBuffer.ChannelData](./avreadonlyaudiopcmbuffer/channeldata.md)
   Represents read-only channel data.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVAudioFile](avaudiofile.md)
+### Audio data
+- [class AVAudioFile](./avaudiofile.md)
   An object that represents an audio file that the system can open for reading or writing.
-- [class AVAudioPCMBuffer](avaudiopcmbuffer.md)
+- [class AVAudioPCMBuffer](./avaudiopcmbuffer.md)
   An object that represents an audio buffer you use with PCM audio formats.
-- [class AVAudioCompressedBuffer](avaudiocompressedbuffer.md)
+- [class AVAudioCompressedBuffer](./avaudiocompressedbuffer.md)
   An object that represents an audio buffer that you use for compressed audio formats.
-- [class AVAudioBuffer](avaudiobuffer.md)
+- [class AVAudioBuffer](./avaudiobuffer.md)
   An object that represents a buffer of audio data with a format.
-- [class AVAudioFormat](avaudioformat.md)
+- [class AVAudioFormat](./avaudioformat.md)
   An object that describes the representation of an audio format.
-- [class AVAudioChannelLayout](avaudiochannellayout.md)
+- [class AVAudioChannelLayout](./avaudiochannellayout.md)
   An object that describes the roles of a set of audio channels.
-- [class AVAudioConverter](avaudioconverter.md)
+- [class AVAudioConverter](./avaudioconverter.md)
   An object that converts streams of audio between formats.
-- [class AVAudioTime](avaudiotime.md)
+- [class AVAudioTime](./avaudiotime.md)
   An object you use to represent a moment in time.
-- [Audio settings](audio-settings.md)
+- [Audio settings](./audio-settings.md)
   Configure audio processing settings using standard key and value constants.
 
 

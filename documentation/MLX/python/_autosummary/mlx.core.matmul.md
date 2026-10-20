@@ -6,34 +6,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ma
 
 # mlx.core.matmul
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.matmul.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.matmul
-
- Table of contents 
-
-## Contents
-
-# mlx.core.matmul
-
-**matmul(*a: array*, *b: array*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**matmul(*a: array*, *b: array*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
 : Matrix multiplication.
 Perform the (possibly batched) matrix multiplication of two arrays. This function supports
 broadcasting for arrays with more than two dimensions.
@@ -53,13 +26,11 @@ must be floating point or complex.
 
 Parameters:
 
-**a** ([array](mlx.core.array.html#mlx.core.array)) – Input array or scalar.
-**b** ([array](mlx.core.array.html#mlx.core.array)) – Input array or scalar.
+**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array or scalar.
+**b** ([array](mlx.core.array.md#mlx.core.array)) – Input array or scalar.
 
 Returns:
 The matrix product of `a` and `b`.
 
 Return type:
-[array](mlx.core.array.html#mlx.core.array)
-
-** Contents
+[array](mlx.core.array.md#mlx.core.array)

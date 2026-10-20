@@ -1,7 +1,8 @@
 # token(_:terminateSession:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate to terminate the specified token session.
 
@@ -20,6 +21,10 @@ Tells the delegate to terminate the specified token session.
 optional func token(_ token: TKToken, terminateSession session: TKTokenSession)
 ```
 
+```objc
+- (void) token:(TKToken *) token terminateSession:(TKTokenSession *) session;
+```
+
 ## Parameters
 
 - `token`: The token.
@@ -27,7 +32,8 @@ optional func token(_ token: TKToken, terminateSession session: TKTokenSession)
 
 ## See Also
 
-- [func createSession(TKToken) throws -> TKTokenSession](tktokendelegate/createsession(_:).md)
+### Delegate Methods
+- [func createSession(TKToken) throws -> TKTokenSession](./createsession%28_%29.md)
   Tells the delegate to create a session for the specified token.
 
 

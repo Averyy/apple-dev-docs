@@ -1,17 +1,22 @@
 # init(pasteboard:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns an image representation object using the contents of the specified pasteboard.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init?(pasteboard: NSPasteboard)
+```
+
+```objc
++ (NSImageRep *) imageRepWithPasteboard:(NSPasteboard *) pasteboard;
 ```
 
 #### Return Value
@@ -36,21 +41,23 @@ The `NSImageRep` subclass is initialized by creating an `NSData` object based on
 
 ## See Also
 
-- [class func imagePasteboardTypes() -> [NSPasteboard.PasteboardType]](nsimagerep/imagepasteboardtypes.md)
+### Related Documentation
+- [class func imagePasteboardTypes() -> [NSPasteboard.PasteboardType]](./imagepasteboardtypes%28%29.md)
   Returns the pasteboard types supported by the image representation class or one of its subclasses.
-- [class func imageReps(withContentsOfFile: String) -> [NSImageRep]?](nsimagerep/imagereps(withcontentsoffile:).md)
+### Creating Representations of Images
+- [class func imageReps(withContentsOfFile: String) -> [NSImageRep]?](./imagereps%28withcontentsoffile%29.md)
   Creates and returns an array of image representation objects initialized using the contents of the specified file.
-- [class func imageReps(with: NSPasteboard) -> [NSImageRep]?](nsimagerep/imagereps(with:).md)
+- [class func imageReps(with: NSPasteboard) -> [NSImageRep]?](./imagereps%28with%29.md)
   Creates and returns an array of image representation objects initialized using the contents of the pasteboard.
-- [class func imageReps(withContentsOf: URL) -> [NSImageRep]?](nsimagerep/imagereps(withcontentsof:).md)
+- [class func imageReps(withContentsOf: URL) -> [NSImageRep]?](./imagereps%28withcontentsof%29.md)
   Creates and returns an array of image representation objects initialized using the contents of the specified URL.
-- [init?(contentsOfFile: String)](nsimagerep/init(contentsoffile:).md)
+- [init?(contentsOfFile: String)](./init%28contentsoffile%29.md)
   Creates and returns an image representation object using the contents of the specified file.
-- [init?(contentsOf: URL)](nsimagerep/init(contentsof:).md)
+- [init?(contentsOf: URL)](./init%28contentsof%29.md)
   Creates and returns an image representation object using the data at the specified URL.
-- [init()](nsimagerep/init.md)
+- [init()](./init%28%29.md)
   Creates and returns an image representation object.
-- [init?(coder: NSCoder)](nsimagerep/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates and returns an image representation object from data in an unarchiver.
 
 

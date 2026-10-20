@@ -1,7 +1,8 @@
 # init(arrayLiteral:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an array from the given array literal.
 

@@ -1,7 +1,8 @@
 # byLayer
 
 **Framework**: Symbols  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An effect that replaces each layer separately.
 
@@ -22,7 +23,8 @@ var byLayer: ReplaceSymbolEffect { get }
 
 ## See Also
 
-- [var wholeSymbol: ReplaceSymbolEffect](replacesymboleffect/wholesymbol.md)
+### Determining effect scope
+- [var wholeSymbol: ReplaceSymbolEffect](./wholesymbol.md)
   An effect that replaces all layers simultaneously.
 
 

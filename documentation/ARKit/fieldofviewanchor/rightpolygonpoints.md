@@ -1,7 +1,8 @@
 # rightPolygonPoints
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Right eye polygon boundary points defining the preset field of view.
 

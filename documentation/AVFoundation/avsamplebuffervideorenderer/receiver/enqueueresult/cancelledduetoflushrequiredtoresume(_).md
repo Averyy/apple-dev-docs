@@ -1,7 +1,8 @@
 # AVSampleBufferVideoRenderer.Receiver.EnqueueResult.cancelledDueToFlushRequiredToResume(_:)
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The sample buffer was not enqueued because the Receiver requires a flush to continue enqueuing samples.
 
@@ -21,13 +22,14 @@ case cancelledDueToFlushRequiredToResume(any Error)
 
 ## See Also
 
-- [AVSampleBufferVideoRenderer.Receiver.EnqueueResult.enqueued](avsamplebuffervideorenderer/receiver/enqueueresult/enqueued.md)
+### Enqueue results
+- [AVSampleBufferVideoRenderer.Receiver.EnqueueResult.enqueued](./enqueued.md)
   The sample buffer was enqueued successfully.
-- [AVSampleBufferVideoRenderer.Receiver.EnqueueResult.enqueuedWithDecodeFailures(_:)](avsamplebuffervideorenderer/receiver/enqueueresult/enqueuedwithdecodefailures(_:).md)
+- [AVSampleBufferVideoRenderer.Receiver.EnqueueResult.enqueuedWithDecodeFailures(_:)](./enqueuedwithdecodefailures%28_%29.md)
   The sample buffer was enqueued successfully, but the receiver failed to decode one or more previously enqueued sample buffers.
-- [AVSampleBufferVideoRenderer.Receiver.EnqueueResult.cancelledDueToFlush](avsamplebuffervideorenderer/receiver/enqueueresult/cancelledduetoflush.md)
+- [AVSampleBufferVideoRenderer.Receiver.EnqueueResult.cancelledDueToFlush](./cancelledduetoflush.md)
   The sample buffer was not enqueued because the Receiver was flushed while the enqueue was suspended.
-- [AVSampleBufferVideoRenderer.Receiver.EnqueueResult.cancelledDueToError(_:)](avsamplebuffervideorenderer/receiver/enqueueresult/cancelledduetoerror(_:).md)
+- [AVSampleBufferVideoRenderer.Receiver.EnqueueResult.cancelledDueToError(_:)](./cancelledduetoerror%28_%29.md)
   The sample buffer was not enqueued because the Receiver failed.
 
 

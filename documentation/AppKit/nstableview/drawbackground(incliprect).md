@@ -1,17 +1,22 @@
 # drawBackground(inClipRect:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the background of the table view in the clip rect specified by the rectangle.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func drawBackground(inClipRect clipRect: NSRect)
+```
+
+```objc
+- (void) drawBackgroundInClipRect:(NSRect) clipRect;
 ```
 
 ## Parameters
@@ -20,11 +25,12 @@ func drawBackground(inClipRect clipRect: NSRect)
 
 ## See Also
 
-- [func drawRow(Int, clipRect: NSRect)](nstableview/drawrow(_:cliprect:).md)
+### Drawing
+- [func drawRow(Int, clipRect: NSRect)](./drawrow%28_,cliprect%29.md)
   Draws the cells for the row at `rowIndex` in the columns that intersect `clipRect`.
-- [func drawGrid(inClipRect: NSRect)](nstableview/drawgrid(incliprect:).md)
+- [func drawGrid(inClipRect: NSRect)](./drawgrid%28incliprect%29.md)
   Draws the grid lines within the supplied rectangle.
-- [func highlightSelection(inClipRect: NSRect)](nstableview/highlightselection(incliprect:).md)
+- [func highlightSelection(inClipRect: NSRect)](./highlightselection%28incliprect%29.md)
   Highlights the region of the table view in the specified rectangle.
 
 

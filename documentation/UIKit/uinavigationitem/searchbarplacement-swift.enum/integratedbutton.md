@@ -1,7 +1,8 @@
 # UINavigationItem.SearchBarPlacement.integratedButton
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Placement is the same as Integrated, except that the inactive search bar is always shown as a button even when space permits a search field.
 
@@ -14,6 +15,10 @@ Placement is the same as Integrated, except that the inactive search bar is alwa
 
 ```swift
 case integratedButton
+```
+
+```c
+UINavigationItemSearchBarPlacementIntegratedButton
 ```
 
 

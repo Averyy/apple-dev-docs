@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.4+

@@ -1,7 +1,8 @@
 # adaptedAsSupervised(annotationColumnID:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exposes this updatable tabular estimator as a supervised tabular estimator.
 

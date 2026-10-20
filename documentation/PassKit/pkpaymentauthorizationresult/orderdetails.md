@@ -1,7 +1,8 @@
 # orderDetails
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Optional metadata with order details for the placed order.
 
@@ -18,9 +19,14 @@ Optional metadata with order details for the placed order.
 var orderDetails: PKPaymentOrderDetails? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) PKPaymentOrderDetails * orderDetails;
+```
+
 ## See Also
 
-- [class PKPaymentOrderDetails](pkpaymentorderdetails.md)
+### Setting order details
+- [class PKPaymentOrderDetails](../pkpaymentorderdetails.md)
   Optional metadata with payment order details for the placed order.
 
 

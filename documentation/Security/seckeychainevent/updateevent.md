@@ -1,7 +1,8 @@
 # SecKeychainEvent.updateEvent
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a keychain item was updated.
 
@@ -13,6 +14,10 @@ Indicates a keychain item was updated.
 
 ```swift
 case updateEvent
+```
+
+```c
+kSecUpdateEvent
 ```
 
 

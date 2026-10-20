@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kTranslationDataTranslation: Int](ktranslationdatatranslation.md)
-- [var kTranslationFileTranslation: Int](ktranslationfiletranslation.md)
+- [var kTranslationDataTranslation: Int](../ktranslationdatatranslation.md)
+- [var kTranslationFileTranslation: Int](../ktranslationfiletranslation.md)
 
 
 ---

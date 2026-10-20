@@ -1,7 +1,8 @@
 # attributesByName
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attributes of the receiver in a dictionary.
 
@@ -10,7 +11,7 @@ The attributes of the receiver in a dictionary.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,19 +21,24 @@ The attributes of the receiver in a dictionary.
 var attributesByName: [String : NSAttributeDescription] { get }
 ```
 
+```objc
+@property (copy, readonly) NSDictionary<NSString *,NSAttributeDescription *> * attributesByName;
+```
+
 #### Discussion
 
-The keys in the dictionary are the attribute names and the values are instances of [`NSAttributeDescription`](nsattributedescription.md). .
+The keys in the dictionary are the attribute names and the values are instances of [`NSAttributeDescription`](../nsattributedescription.md). .
 
 ## See Also
 
-- [var propertiesByName: [String : NSPropertyDescription]](nsentitydescription/propertiesbyname.md)
+### Working with properties
+- [var propertiesByName: [String : NSPropertyDescription]](./propertiesbyname.md)
   A dictionary containing the properties of the receiver.
-- [var properties: [NSPropertyDescription]](nsentitydescription/properties.md)
+- [var properties: [NSPropertyDescription]](./properties.md)
   An array containing the properties of the receiver.
-- [var relationshipsByName: [String : NSRelationshipDescription]](nsentitydescription/relationshipsbyname.md)
+- [var relationshipsByName: [String : NSRelationshipDescription]](./relationshipsbyname.md)
   The relationships of the receiver in a dictionary.
-- [func relationships(forDestination: NSEntityDescription) -> [NSRelationshipDescription]](nsentitydescription/relationships(fordestination:).md)
+- [func relationships(forDestination: NSEntityDescription) -> [NSRelationshipDescription]](./relationships%28fordestination%29.md)
   Returns an array containing the relationships of the receiver where the entity description of the relationship is a given entity.
 
 

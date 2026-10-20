@@ -1,7 +1,8 @@
 # shoebox(size:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a box mesh with the vertices positioned such that the bottom surface is at y=0, with faces oriented inward.
 
@@ -33,9 +34,10 @@ let room = ReverbMeshResource.shoebox(size: [4, 3, 5])
 
 ## See Also
 
-- [static func box(size: SIMD3<Float>) -> Self](reverbmeshresource/box(size:).md)
+### Creating standard room shapes
+- [static func box(size: SIMD3<Float>) -> Self](./box%28size%29.md)
   Creates a box mesh with vertices positioned such that the origin is at the center, with faces oriented outward.
-- [static func plane(width: Float, depth: Float) -> Self](reverbmeshresource/plane(width:depth:).md)
+- [static func plane(width: Float, depth: Float) -> Self](./plane%28width,depth%29.md)
   Creates a new rectangle reverb mesh with the specified dimensions in the entity’s xz-plane.
 
 

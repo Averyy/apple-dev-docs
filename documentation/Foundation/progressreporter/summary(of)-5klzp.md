@@ -1,7 +1,8 @@
 # summary(of:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a summary for the specified string property across the progress subtree.
 

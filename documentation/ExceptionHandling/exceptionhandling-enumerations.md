@@ -5,15 +5,16 @@
 ## Topics
 
 ### Enumerations
-- [Logging and Handling Constants](logging-and-handling-constants.md)
-  Use one or more of the following constants in the parameter of [`setExceptionHandlingMask(_:)`](nsexceptionhandler/setexceptionhandlingmask(_:).md) to specify the types of exceptions that the exception handler should monitor and whether it should handle or log them.
-- [System Hang Constants](system-hang-constants.md)
-  Use one or more of the following constants in the parameter of [`setExceptionHangingMask(_:)`](nsexceptionhandler/setexceptionhangingmask(_:).md) to specify the types of exceptions that cause the exception to halt execution so a debugger can be attached.
+- [Logging and Handling Constants](./logging-and-handling-constants.md)
+  Use one or more of the following constants in the parameter of [`setExceptionHandlingMask(_:)`](./nsexceptionhandler/setexceptionhandlingmask%28_%29.md) to specify the types of exceptions that the exception handler should monitor and whether it should handle or log them.
+- [System Hang Constants](./system-hang-constants.md)
+  Use one or more of the following constants in the parameter of [`setExceptionHangingMask(_:)`](./nsexceptionhandler/setexceptionhangingmask%28_%29.md) to specify the types of exceptions that cause the exception to halt execution so a debugger can be attached.
 
 ## See Also
 
-- [ExceptionHandling Constants](exceptionhandling-constants.md)
-- [ExceptionHandling Functions](exceptionhandling-functions.md)
+### Reference
+- [ExceptionHandling Constants](./exceptionhandling-constants.md)
+- [ExceptionHandling Functions](./exceptionhandling-functions.md)
 
 
 ---

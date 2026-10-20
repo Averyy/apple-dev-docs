@@ -1,17 +1,18 @@
 # kSCSITaskState_DORMANT
 
 **Framework**: DriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kSCSITaskState_DORMANT
 ```
 
@@ -21,10 +22,11 @@ The task is dormant.
 
 ## See Also
 
-- [kSCSITaskState_NEW_TASK](scsitaskstate/kscsitaskstate_new_task.md)
-- [kSCSITaskState_ENABLED](scsitaskstate/kscsitaskstate_enabled.md)
-- [kSCSITaskState_BLOCKED](scsitaskstate/kscsitaskstate_blocked.md)
-- [kSCSITaskState_ENDED](scsitaskstate/kscsitaskstate_ended.md)
+### Constants
+- [kSCSITaskState_NEW_TASK](./kscsitaskstate_new_task.md)
+- [kSCSITaskState_ENABLED](./kscsitaskstate_enabled.md)
+- [kSCSITaskState_BLOCKED](./kscsitaskstate_blocked.md)
+- [kSCSITaskState_ENDED](./kscsitaskstate_ended.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # USDValue.Vec3d
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A 3-component double-precision vector.
 
@@ -23,43 +24,44 @@ struct Vec3d
 ## Topics
 
 ### Initializers
-- [init()](usdvalue/vec3d/init.md)
+- [init()](./vec3d/init%28%29.md)
   Creates a zero vector.
-- [init(SIMD3<Double>)](usdvalue/vec3d/init(_:).md)
+- [init(SIMD3<Double>)](./vec3d/init%28_%29.md)
   Creates a vector from a `SIMD3<Double>`.
-- [init(Double, Double, Double)](usdvalue/vec3d/init(_:_:_:).md)
+- [init(Double, Double, Double)](./vec3d/init%28_,_,_%29.md)
   Creates a vector with the given components.
 ### Instance Properties
-- [var simd: SIMD3<Double>](usdvalue/vec3d/simd.md)
+- [var simd: SIMD3<Double>](./vec3d/simd.md)
   The vector as a `SIMD3<Double>`.
-- [var x: Double](usdvalue/vec3d/x.md)
-- [var y: Double](usdvalue/vec3d/y.md)
-- [var z: Double](usdvalue/vec3d/z.md)
+- [var x: Double](./vec3d/x.md)
+- [var y: Double](./vec3d/y.md)
+- [var z: Double](./vec3d/z.md)
 ### Subscripts
-- [subscript(Int) -> Double](usdvalue/vec3d/subscript(_:).md)
+- [subscript(Int) -> Double](./vec3d/subscript%28_%29.md)
   Accesses the component at the specified index.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [USDPrim.Attribute.Value](usdprim/attribute/value.md)
-- [USDStage.Object.MetadataValue](usdstage/object/metadatavalue.md)
-- [USDValueProtocol](usdvalueprotocol.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [USDPrim.Attribute.Value](../usdprim/attribute/value.md)
+- [USDStage.Object.MetadataValue](../usdstage/object/metadatavalue.md)
+- [USDValueProtocol](../usdvalueprotocol.md)
 
 ## See Also
 
-- [var typeName: String](usdvalue/typename.md)
+### Inspecting the value
+- [var typeName: String](./typename.md)
   The name of the wrapped type.
-- [var isEmpty: Bool](usdvalue/isempty.md)
+- [var isEmpty: Bool](./isempty.md)
   Whether this value is empty.
 
 

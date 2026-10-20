@@ -1,7 +1,8 @@
 # vImageConvert_ARGB8888toARGB1555_dithered(_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Converts an 8-bit-per-channel, 4-channel interleaved buffer to an ARGB1555 4-channel interleaved buffer usng the specified dithering algorithm.
 
@@ -20,18 +21,22 @@ Converts an 8-bit-per-channel, 4-channel interleaved buffer to an ARGB1555 4-cha
 func vImageConvert_ARGB8888toARGB1555_dithered(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ tempBuffer: UnsafeMutableRawPointer!, _ dither: Int32, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageConvert_ARGB8888toARGB1555_dithered(const vImage_Buffer *src, const vImage_Buffer *dest, void *tempBuffer, int dither, const vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [`Data Types and Constants`](data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
 
 #### Discussion
 
 This function supports the following dithering algorithms:
 
-- **[`kvImageConvert_DitherOrdered`](kvimageconvert_ditherordered.md)**: Adds precomputed blue noise to the source image before it rounds the input values to the nearest representable value in the destination format. The vImage conversion functions support uniform and Gaussian noise by including [`kvImageConvert_OrderedUniformBlue`](kvimageconvert_ordereduniformblue.md) and [`kvImageConvert_OrderedGaussianBlue`](kvimageconvert_orderedgaussianblue.md), respectively.
-- **[`kvImageConvert_DitherOrderedReproducible`](kvimageconvert_ditherorderedreproducible.md)**: Returns the same result as [`kvImageConvert_DitherOrdered`](kvimageconvert_ditherordered.md), but uses the same offset into the blue noise for each call.
+- **[`kvImageConvert_DitherOrdered`](./kvimageconvert_ditherordered.md)**: Adds precomputed blue noise to the source image before it rounds the input values to the nearest representable value in the destination format. The vImage conversion functions support uniform and Gaussian noise by including [`kvImageConvert_OrderedUniformBlue`](./kvimageconvert_ordereduniformblue.md) and [`kvImageConvert_OrderedGaussianBlue`](./kvimageconvert_orderedgaussianblue.md), respectively.
+- **[`kvImageConvert_DitherOrderedReproducible`](./kvimageconvert_ditherorderedreproducible.md)**: Returns the same result as [`kvImageConvert_DitherOrdered`](./kvimageconvert_ditherordered.md), but uses the same offset into the blue noise for each call.
 
-##### Optimize Performance with Temporary Buffers
+##### Optimize performance with temporary buffers
 
 This function uses a multiple-pass algorithm that saves intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional storage.
 
@@ -48,24 +53,28 @@ You can use the same workspace memory for a group of images that are different s
 ## Parameters
 
 - `src`: The source vImage buffer.
-- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](./vimage_buffer/height.md), [`width`](./vimage_buffer/width.md), and [`rowBytes`](./vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
 - `tempBuffer`: A pointer to workspace memory the function uses as it operates on an image. Pass `nil` to instruct the function to allocate, use, and then free its own temporary buffer.
 - `dither`: The dithering algorithm.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md). To instruct the function to return the minimum size of the workspace memory, set the [`kvImageGetTempBufferSize`](kvimagegettempbuffersize.md) flag.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
+
+  To instruct the function to return the minimum size of the workspace memory, set the [`kvImageGetTempBufferSize`](./kvimagegettempbuffersize.md) flag.
 
 ## See Also
 
-- [Improving the quality of quantized images with dithering](improving-the-quality-of-quantized-images-with-dithering.md)
+### Related Documentation
+- [Improving the quality of quantized images with dithering](./improving-the-quality-of-quantized-images-with-dithering.md)
   Apply dithering to simulate colors that are unavailable in reduced bit depths.
-- [func vImageConvert_RGB888toRGB565_dithered(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, Int32, vImage_Flags) -> vImage_Error](vimageconvert_rgb888torgb565_dithered(_:_:_:_:_:).md)
+### Converting from 8-bit buffers
+- [func vImageConvert_RGB888toRGB565_dithered(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, Int32, vImage_Flags) -> vImage_Error](./vimageconvert_rgb888torgb565_dithered%28_,_,_,_,_%29.md)
   Converts an 8-bit-per-channel, 3-channel interleaved buffer to an RGB565 3-channel interleaved buffer using the specified dithering algorithm.
-- [func vImageConvert_ARGB8888toARGB1555(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimageconvert_argb8888toargb1555(_:_:_:).md)
+- [func vImageConvert_ARGB8888toARGB1555(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimageconvert_argb8888toargb1555%28_,_,_%29.md)
   Converts an 8-bit-per-channel, 4-channel interleaved buffer to an ARGB1555 4-channel interleaved buffer.
-- [func vImageConvert_RGBA8888toRGBA5551(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimageconvert_rgba8888torgba5551(_:_:_:).md)
+- [func vImageConvert_RGBA8888toRGBA5551(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimageconvert_rgba8888torgba5551%28_,_,_%29.md)
   Converts an 8-bit-per-channel, 4-channel interleaved buffer to an RGBA5551 4-channel interleaved buffer.
-- [func vImageConvert_RGBA8888toRGBA5551_dithered(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, Int32, vImage_Flags) -> vImage_Error](vimageconvert_rgba8888torgba5551_dithered(_:_:_:_:_:).md)
+- [func vImageConvert_RGBA8888toRGBA5551_dithered(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, Int32, vImage_Flags) -> vImage_Error](./vimageconvert_rgba8888torgba5551_dithered%28_,_,_,_,_%29.md)
   Converts an 8-bit-per-channel, 4-channel interleaved buffer to an RGBA5551 4-channel interleaved buffer usng the specified dithering algorithm.
-- [func vImageConvert_ARGB8888ToARGB16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<UInt8>, UInt8, UnsafePointer<UInt16>, vImage_Flags) -> vImage_Error](vimageconvert_argb8888toargb16u(_:_:_:_:_:_:).md)
+- [func vImageConvert_ARGB8888ToARGB16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<UInt8>, UInt8, UnsafePointer<UInt16>, vImage_Flags) -> vImage_Error](./vimageconvert_argb8888toargb16u%28_,_,_,_,_,_%29.md)
   Converts an 8-bit-per-channel, 4-channel interleaved buffer to an unsigned 16-bit-per-channel, 4-channel buffer with permutation.
 
 

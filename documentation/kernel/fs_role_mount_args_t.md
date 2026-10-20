@@ -1,14 +1,15 @@
 # fs_role_mount_args_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 typedef struct fs_role_mount_args {
     ...
 } fs_role_mount_args_t;
@@ -17,8 +18,8 @@ typedef struct fs_role_mount_args {
 ## Topics
 
 ### Instance Properties
-- [mount_role](fs_role_mount_args_t/3131673-mount_role.md)
-- [root_mp](fs_role_mount_args_t/3131674-root_mp.md)
+- [mount_role](./fs_role_mount_args_t/api-3131673-mount_role.md)
+- [root_mp](./fs_role_mount_args_t/api-3131674-root_mp.md)
 
 
 ---

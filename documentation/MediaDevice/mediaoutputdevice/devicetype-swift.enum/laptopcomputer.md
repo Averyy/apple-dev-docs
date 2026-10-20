@@ -1,7 +1,8 @@
 # MediaOutputDevice.DeviceType.laptopComputer
 
 **Framework**: Media Device  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A laptop computer.
 

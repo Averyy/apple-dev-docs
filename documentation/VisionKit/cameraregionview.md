@@ -1,7 +1,8 @@
 # CameraRegionView
 
 **Framework**: VisionKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 This view displays a stabilized region of interest within a person’s view and provides passthrough camera feed for that selected region.
 
@@ -17,7 +18,7 @@ This view displays a stabilized region of interest within a person’s view and 
 
 #### Overview
 
-`CameraRegionView` needs enterprise API access in order to be used. To use this view, you need to apply for the [`Camera Region access`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.arkit.camera-region.allow) entitlement. For more information, including how to apply for this entitlement, see [`Building spatial experiences for business apps with enterprise APIs for visionOS`](https://developer.apple.com/documentation/visionos/building-spatial-experiences-for-business-apps-with-enterprise-apis).
+`CameraRegionView` needs enterprise API access in order to be used. To use this view, you need to apply for the [`Camera Region access`](../BundleResources/entitlements/com.apple.developer.arkit.camera-region.allow.md) entitlement. For more information, including how to apply for this entitlement, see [Building spatial experiences for business apps with enterprise APIs for visionOS](../visionOS/building-spatial-experiences-for-business-apps-with-enterprise-apis.md).
 
 This is a standalone view used in a `WindowGroup` that a person can freely move and place in order to position the desired region of interest. Examples of possible regions of interest are documents, user manuals, gauges, and displays.
 
@@ -52,34 +53,35 @@ struct AppScene: Scene {
 ## Topics
 
 ### Creating a view
-- [init(isContrastAndVibrancyEnhancementEnabled: Bool, pixelBufferProcessor: ((Result<CameraRegionView.PixelBufferProcessingContext, any Error>) async -> CVReadOnlyPixelBuffer?)?)](cameraregionview/init(iscontrastandvibrancyenhancementenabled:pixelbufferprocessor:).md)
+- [init(isContrastAndVibrancyEnhancementEnabled: Bool, pixelBufferProcessor: ((Result<CameraRegionView.PixelBufferProcessingContext, any Error>) async -> CVReadOnlyPixelBuffer?)?)](./cameraregionview/init%28iscontrastandvibrancyenhancementenabled,pixelbufferprocessor%29.md)
   Creates a view that renders a spatial camera region and optionally applies contrast enhancement.
 ### Setting up frame processing in your view
-- [CameraRegionView.PixelBufferProcessingContext](cameraregionview/pixelbufferprocessingcontext.md)
+- [CameraRegionView.PixelBufferProcessingContext](./cameraregionview/pixelbufferprocessingcontext.md)
   A context which provides the pixel buffer for a passthrough frame.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [Enabling Live Text interactions with images](enabling-live-text-interactions-with-images.md)
+### Content recognition and interaction in images
+- [Enabling Live Text interactions with images](./enabling-live-text-interactions-with-images.md)
   Add a Live Text interface that enables users to perform actions with text and QR codes that appear in images.
-- [class ImageAnalyzer](imageanalyzer.md)
+- [class ImageAnalyzer](./imageanalyzer.md)
   An object that finds items in images that people can interact with, such as subjects, text, and QR codes.
-- [class ImageAnalysis](imageanalysis.md)
+- [class ImageAnalysis](./imageanalysis.md)
   An object that represents the results of analyzing an image, and provides the input for the Live Text interface object.
-- [class ImageAnalysisInteraction](imageanalysisinteraction.md)
+- [class ImageAnalysisInteraction](./imageanalysisinteraction.md)
   An interface that enables people to interact with recognized text, barcodes, and other objects in an image.
-- [protocol ImageAnalysisInteractionDelegate](imageanalysisinteractiondelegate.md)
+- [protocol ImageAnalysisInteractionDelegate](./imageanalysisinteractiondelegate.md)
   A delegate that handles image-analysis and user-interaction callbacks for an interaction object.
-- [class ImageAnalysisOverlayView](imageanalysisoverlayview.md)
+- [class ImageAnalysisOverlayView](./imageanalysisoverlayview.md)
   A view that enables people to interact with recognized text, barcodes, and other objects in an image.
-- [protocol ImageAnalysisOverlayViewDelegate](imageanalysisoverlayviewdelegate.md)
+- [protocol ImageAnalysisOverlayViewDelegate](./imageanalysisoverlayviewdelegate.md)
   A delegate that handles image-analysis and user-interaction callbacks for an overlay view.
 
 

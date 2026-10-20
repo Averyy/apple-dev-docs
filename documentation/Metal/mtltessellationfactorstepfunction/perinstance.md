@@ -1,7 +1,8 @@
 # MTLTessellationFactorStepFunction.perInstance
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A per-instance step function. For a given instance ID, the tessellation factor for a patch in a patch draw call is at the `offset + (instanceID * instanceStride)` location in the tessellation factor buffer.
 
@@ -19,13 +20,18 @@ A per-instance step function. For a given instance ID, the tessellation factor f
 case perInstance
 ```
 
+```c
+MTLTessellationFactorStepFunctionPerInstance
+```
+
 ## See Also
 
-- [MTLTessellationFactorStepFunction.constant](mtltessellationfactorstepfunction/constant.md)
+### Factor step functions
+- [MTLTessellationFactorStepFunction.constant](./constant.md)
   A constant step function. For all instances, the tessellation factor for all patches in a patch draw call is at the `offset` location in the tessellation factor buffer.
-- [MTLTessellationFactorStepFunction.perPatch](mtltessellationfactorstepfunction/perpatch.md)
+- [MTLTessellationFactorStepFunction.perPatch](./perpatch.md)
   A per-patch step function. For all instances, the tessellation factor for all patches in a patch draw call is at the `offset + (drawPatchIndex * tessellationFactorStride)` location in the tessellation factor buffer.
-- [MTLTessellationFactorStepFunction.perPatchAndPerInstance](mtltessellationfactorstepfunction/perpatchandperinstance.md)
+- [MTLTessellationFactorStepFunction.perPatchAndPerInstance](./perpatchandperinstance.md)
   A per-patch and per-instance step function. For a given instance ID, the tessellation factor for a patch in a patch draw call is at the `offset + (drawPatchIndex * tessellationFactorStride + instanceID * instanceStride)` location in the tessellation factor buffer.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: WebKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asks your handler to stop loading the data for the specified resource.
@@ -17,6 +18,10 @@ Asks your handler to stop loading the data for the specified resource.
 
 ```swift
 func webView(_ webView: WKWebView, stop urlSchemeTask: any WKURLSchemeTask)
+```
+
+```objc
+- (void) webView:(WKWebView *) webView stopURLSchemeTask:(id<WKURLSchemeTask>) urlSchemeTask;
 ```
 
 #### Discussion

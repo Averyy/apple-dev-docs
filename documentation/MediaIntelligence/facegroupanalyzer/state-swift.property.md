@@ -1,7 +1,8 @@
 # state
 
 **Framework**: Media Intelligence  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value describing the current processing state of the analyzer.
 
@@ -22,13 +23,14 @@ nonisolated
 
 ## Mentions
 
-- [Detecting and grouping faces in images](detecting-and-grouping-faces-in-images.md)
+- [Detecting and grouping faces in images](../detecting-and-grouping-faces-in-images.md)
 
 ## See Also
 
-- [FaceGroupAnalyzer.State](facegroupanalyzer/state-swift.enum.md)
+### Updating the gallery
+- [FaceGroupAnalyzer.State](./state-swift.enum.md)
   The current processing state of a face group analyzer.
-- [func update(subprogress: consuming Subprogress?) async throws](facegroupanalyzer/update(subprogress:).md)
+- [func update(subprogress: consuming Subprogress?) async throws](./update%28subprogress%29.md)
   Clusters faces into entities and updates their assignments.
 
 

@@ -1,7 +1,8 @@
 # IntentCancellationReason
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Reasons for the cancellation of an app intent’s operation.
 
@@ -22,27 +23,28 @@ struct IntentCancellationReason
 
 #### Overview
 
-This type contains the possible reasons for the cancellation of an app intent. You don’t create instances of this type yourself. Instead, you receive a value in the cancellation handler you pass to the [`withIntentCancellationHandler(operation:onCancel:isolation:)`](cancellableintent/withintentcancellationhandler(operation:oncancel:isolation:).md) method when running your app intent’s code. Use the reason to make decisions about how to respond to the cancellation.
+This type contains the possible reasons for the cancellation of an app intent. You don’t create instances of this type yourself. Instead, you receive a value in the cancellation handler you pass to the [`withIntentCancellationHandler(operation:onCancel:isolation:)`](./cancellableintent/withintentcancellationhandler%28operation,oncancel,isolation%29.md) method when running your app intent’s code. Use the reason to make decisions about how to respond to the cancellation.
 
 ## Topics
 
 ### Type Properties
-- [static var timeout: IntentCancellationReason](intentcancellationreason/timeout.md)
+- [static var timeout: IntentCancellationReason](./intentcancellationreason/timeout.md)
   An option that indicates the app intent exceeded the allowed time limit without reporting progress.
-- [static var userCancelled: IntentCancellationReason](intentcancellationreason/usercancelled.md)
+- [static var userCancelled: IntentCancellationReason](./intentcancellationreason/usercancelled.md)
   An option that indicates someone explicitly canceled the intent.
 
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func withIntentCancellationHandler<T>(operation: () async throws -> T, onCancel: (IntentCancellationReason) -> Void, isolation: isolated (any Actor)?) async rethrows -> T](cancellableintent/withintentcancellationhandler(operation:oncancel:isolation:).md)
+### Cancelling the intent
+- [func withIntentCancellationHandler<T>(operation: () async throws -> T, onCancel: (IntentCancellationReason) -> Void, isolation: isolated (any Actor)?) async rethrows -> T](./cancellableintent/withintentcancellationhandler%28operation,oncancel,isolation%29.md)
   Runs an operation with a cancellation handler that receives a cancellation reason.
 
 

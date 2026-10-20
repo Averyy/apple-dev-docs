@@ -1,7 +1,8 @@
 # cssm_version
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,20 +14,24 @@
 struct cssm_version
 ```
 
+```c
+struct cssm_version;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cssm_version-swift.struct/init.md)
-- [init(Major: uint32, Minor: uint32)](cssm_version-swift.struct/init(major:minor:).md)
+- [init()](./cssm_version-swift.struct/init%28%29.md)
+- [init(Major: uint32, Minor: uint32)](./cssm_version-swift.struct/init%28major,minor%29.md)
 ### Instance Properties
-- [var Major: uint32](cssm_version-swift.struct/major.md)
-- [var Minor: uint32](cssm_version-swift.struct/minor.md)
+- [var Major: uint32](./cssm_version-swift.struct/major.md)
+- [var Minor: uint32](./cssm_version-swift.struct/minor.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

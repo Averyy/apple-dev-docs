@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a console port configuration object.
 
@@ -12,6 +13,10 @@ Creates a console port configuration object.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # cameraTarget
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity which an orbit camera targets.
 

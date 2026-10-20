@@ -1,7 +1,8 @@
 # preferredRange
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred color range of the image renderer context.
 
@@ -18,6 +19,10 @@ The preferred color range of the image renderer context.
 var preferredRange: UIGraphicsImageRendererFormat.Range { get set }
 ```
 
+```objc
+@property (nonatomic) UIGraphicsImageRendererFormatRange preferredRange;
+```
+
 #### Discussion
 
 This property affects the pixel format of the image that the renderer produces.
@@ -26,13 +31,14 @@ Different pixel formats can store different color ranges. The system chooses the
 
 ## See Also
 
-- [var opaque: Bool](uigraphicsimagerendererformat/opaque.md)
+### Configuring the renderer attributes
+- [var opaque: Bool](./opaque.md)
   A Boolean value that indicates whether the underlying Core Graphics context has an alpha channel.
-- [var scale: CGFloat](uigraphicsimagerendererformat/scale.md)
+- [var scale: CGFloat](./scale.md)
   The display scale of the image renderer context.
-- [UIGraphicsImageRendererFormat.Range](uigraphicsimagerendererformat/range.md)
+- [UIGraphicsImageRendererFormat.Range](./range.md)
   Constants that specify the color range of the image renderer context.
-- [var prefersExtendedRange: Bool](uigraphicsimagerendererformat/prefersextendedrange.md)
+- [var prefersExtendedRange: Bool](./prefersextendedrange.md)
   A Boolean value that specifies whether the bitmap context uses extended color.
 
 

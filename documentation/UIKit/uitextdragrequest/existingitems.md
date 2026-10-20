@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The array of drag items present in a drag session.
@@ -18,9 +19,14 @@ The array of drag items present in a drag session.
 var existingItems: [UIDragItem] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<UIDragItem *> * existingItems;
+```
+
 ## See Also
 
-- [var suggestedItems: [UIDragItem]](uitextdragrequest/suggesteditems.md)
+### Getting the drag items
+- [var suggestedItems: [UIDragItem]](./suggesteditems.md)
   An array of drag items that the system provides when the text drag delegate doesn’t provide custom drag items.
 
 

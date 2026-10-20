@@ -1,7 +1,8 @@
 # binade
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The floating-point value with the same sign and exponent as this value, but with a significand of 1.0.
 

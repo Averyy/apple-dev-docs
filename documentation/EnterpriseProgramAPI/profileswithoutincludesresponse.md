@@ -1,11 +1,12 @@
 # ProfilesWithoutIncludesResponse
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object ProfilesWithoutIncludesResponse
 ```
 
@@ -17,13 +18,14 @@ object ProfilesWithoutIncludesResponse
 
 ## See Also
 
-- [object Profile](profile.md)
+### Objects
+- [object Profile](./profile.md)
   The data structure that represents a Profiles  resource.
-- [object ProfileCreateRequest](profilecreaterequest.md)
+- [object ProfileCreateRequest](./profilecreaterequest.md)
   The request body you use to create a Profile.
-- [object ProfileResponse](profileresponse.md)
+- [object ProfileResponse](./profileresponse.md)
   A response that contains a single Profiles resource.
-- [object ProfilesResponse](profilesresponse.md)
+- [object ProfilesResponse](./profilesresponse.md)
   A response that contains a list of Profiles resources.
 
 

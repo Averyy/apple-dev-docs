@@ -1,15 +1,20 @@
 # packetType
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var packetType: UInt16
+```
+
+```c
+uint16_t packetType;
 ```
 
 

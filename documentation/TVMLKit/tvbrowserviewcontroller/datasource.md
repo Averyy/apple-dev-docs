@@ -1,7 +1,8 @@
 # dataSource
 
 **Framework**: TVMLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that provides data to the full-screen browser.
 
@@ -14,9 +15,14 @@ The object that provides data to the full-screen browser.
 weak var dataSource: (any TVBrowserViewControllerDataSource)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak) id<TVBrowserViewControllerDataSource> dataSource;
+```
+
 ## See Also
 
-- [protocol TVBrowserViewControllerDataSource](tvbrowserviewcontrollerdatasource.md)
+### Providing the Browser’s Data
+- [protocol TVBrowserViewControllerDataSource](../tvbrowserviewcontrollerdatasource.md)
   Methods adopted by the object you use to represent the browser view.
 
 

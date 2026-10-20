@@ -1,14 +1,15 @@
 # ifmd_packet_stats
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 struct if_packet_stats ifmd_packet_stats;
 ```
 

@@ -1,7 +1,8 @@
 # AccessoryTrackingProvider.Error.Code.accessoryLoadingFailed
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Loading an accessory failed.
 

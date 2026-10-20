@@ -1,7 +1,8 @@
 # kSecAttrPersistantReference
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 11.0+
@@ -16,6 +17,10 @@
 
 ```swift
 let kSecAttrPersistantReference: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrPersistantReference;
 ```
 
 

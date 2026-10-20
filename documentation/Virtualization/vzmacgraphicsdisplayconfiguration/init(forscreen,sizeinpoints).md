@@ -1,7 +1,8 @@
 # init(forScreen:sizeInPoints:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 12.0+

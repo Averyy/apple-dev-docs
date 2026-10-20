@@ -1,7 +1,8 @@
 # SCSensitivityAnalysisPolicy
 
 **Framework**: Sensitive Content Analysis  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Configurations that represent the way the framework checks for sensitive content and how the app responds.
 
@@ -18,9 +19,13 @@ Configurations that represent the way the framework checks for sensitive content
 enum SCSensitivityAnalysisPolicy
 ```
 
+```c
+enum SCSensitivityAnalysisPolicy : NSInteger;
+```
+
 #### Overview
 
-This enumeration defines the possible values for the [`SCSensitivityAnalyzer`](scsensitivityanalyzer.md) property [`analysisPolicy`](scsensitivityanalyzer/analysispolicy.md). The values of the policy determine how your app manages sensitive content detection.
+This enumeration defines the possible values for the [`SCSensitivityAnalyzer`](./scsensitivityanalyzer.md) property [`analysisPolicy`](./scsensitivityanalyzer/analysispolicy.md). The values of the policy determine how your app manages sensitive content detection.
 
 ```swift
 // Check the current analysis policy. 
@@ -33,34 +38,35 @@ else if policy == .simpleInterventions {
 }
 ```
 
-For guidance about observing the active analysis policy, see [`Detecting sensitive content in media and providing intervention options`](detecting-nudity-in-media-and-providing-intervention-options.md).
+For guidance about observing the active analysis policy, see [Detecting sensitive content in media and providing intervention options](./detecting-nudity-in-media-and-providing-intervention-options.md).
 
 ## Topics
 
 ### Checking and intervention strategies
-- [SCSensitivityAnalysisPolicy.disabled](scsensitivityanalysispolicy/disabled.md)
+- [SCSensitivityAnalysisPolicy.disabled](./scsensitivityanalysispolicy/disabled.md)
   An indicator that the app lacks access to use the framework.
-- [SCSensitivityAnalysisPolicy.simpleInterventions](scsensitivityanalysispolicy/simpleinterventions.md)
+- [SCSensitivityAnalysisPolicy.simpleInterventions](./scsensitivityanalysispolicy/simpleinterventions.md)
   An indicator that user preference requests discrete detection of sensitive content.
-- [SCSensitivityAnalysisPolicy.descriptiveInterventions](scsensitivityanalysispolicy/descriptiveinterventions.md)
+- [SCSensitivityAnalysisPolicy.descriptiveInterventions](./scsensitivityanalysispolicy/descriptiveinterventions.md)
   An indicator that the person requests overt detection of sensitive content.
 ### Creating an analysis policy value
-- [init?(rawValue: Int)](scsensitivityanalysispolicy/init(rawvalue:).md)
+- [init?(rawValue: Int)](./scsensitivityanalysispolicy/init%28rawvalue%29.md)
   Creates an analysis policy value from the enumeration’s underlying type.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class SCSensitivityAnalyzer](scsensitivityanalyzer.md)
+### Image and video file analysis
+- [class SCSensitivityAnalyzer](./scsensitivityanalyzer.md)
   An object that analyzes media for sensitive content.
 
 

@@ -1,7 +1,8 @@
 # App.Relationships.AppStoreVersionExperimentsV2.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a related App Store version experiment resource.
 
@@ -10,14 +11,14 @@ The type and ID of a related App Store version experiment resource.
 
 ## Declaration
 
-```swift
+```
 object App.Relationships.AppStoreVersionExperimentsV2.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appStoreVersionExperiments`
 
 
 ---

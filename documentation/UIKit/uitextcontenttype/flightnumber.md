@@ -1,7 +1,8 @@
 # flightNumber
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A property that defines the content in a text input area as an airline flight number.
 
@@ -18,9 +19,14 @@ A property that defines the content in a text input area as an airline flight nu
 static let flightNumber: UITextContentType
 ```
 
+```c
+extern UITextContentType const UITextContentTypeFlightNumber;
+```
+
 ## See Also
 
-- [static let shipmentTrackingNumber: UITextContentType](uitextcontenttype/shipmenttrackingnumber.md)
+### Tracking events
+- [static let shipmentTrackingNumber: UITextContentType](./shipmenttrackingnumber.md)
   A property that defines the content in a text input area as a parcel tracking number.
 
 

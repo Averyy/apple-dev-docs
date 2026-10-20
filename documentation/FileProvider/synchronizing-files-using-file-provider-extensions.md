@@ -1,6 +1,8 @@
 # Synchronizing files using file provider extensions
 
-**Framework**: File Provider
+**Framework**: File Provider  
+**Role**: Sample Code  
+**Download**: [SynchronizingFilesUsingFileProviderExtensions.zip](https://docs-assets.developer.apple.com/published/612c24319d8c/SynchronizingFilesUsingFileProviderExtensions.zip)
 
 Make remote files available in macOS and iOS, and synchronize their states by using file provider extensions.
 
@@ -17,12 +19,12 @@ More and more people use cloud storage to store and share digital assets. Develo
 
 This sample code project implements file provider extensions that sync content between a file storage server and both macOS and iOS, so the files on the server are available on the local system and accessible through user interactions and system-provided APIs. It also demonstrates how to synchronize the states of the file provider items between the server and the systems, and how to enhance the user experience using decorations and custom actions. It includes a macOS app and an iOS app that implement a management interface for users to log in to the server and try out other features. The macOS app implements a simplified file storage server with HTTP-based communication to act as the backend of the file provider extensions.
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 To build the sample app, perform the following steps in Xcode:
 
-1. Set the developer team for all targets to let Xcode automatically manage the provisioning profile. See [`Assign a project to a team`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev23aab79b4) for details.
-2. Replace the App Group container identifier `group.com.example.apple-samplecode.FruitBasket` with one specific to your team for the entire project. The identifier points to an App Group container that the apps and extensions use to share data. It occurs in the entitlements for the `FruitBasket`, `Provider`, `Action`, and `FruitBasket-iOS` targets, and in `Defaults.swift` and `StandaloneServer.swift`. You can search `group.com.example.apple-samplecode.FruitBasket` in Xcode’s Find navigator and change all the occurrences (except the ones in this Readme file). See [`Configuring app groups`](https://developer.apple.com/documentation/xcode/configuring-app-groups) for more details.
+1. Set the developer team for all targets to let Xcode automatically manage the provisioning profile. See [Assign a project to a team](https://help.apple.com/xcode/mac/current/#/dev23aab79b4) for details.
+2. Replace the App Group container identifier `group.com.example.apple-samplecode.FruitBasket` with one specific to your team for the entire project. The identifier points to an App Group container that the apps and extensions use to share data. It occurs in the entitlements for the `FruitBasket`, `Provider`, `Action`, and `FruitBasket-iOS` targets, and in `Defaults.swift` and `StandaloneServer.swift`. You can search `group.com.example.apple-samplecode.FruitBasket` in Xcode’s Find navigator and change all the occurrences (except the ones in this Readme file). See [Configuring App Groups](../Xcode/configuring-app-groups.md) for more details.
 
 To try out the macOS app:
 
@@ -38,7 +40,7 @@ To try out the sample app in iOS:
 4. Tap the Add button (+) to add a domain. A new domain is in a disabled state by default.
 5. Launch the Files app, find the domain in the list of locations, and then tap to enable it.
 
-##### Understand the Targets of the Sample Project
+##### Understand the targets of the sample project
 
 This sample project consists of the following targets:
 
@@ -50,9 +52,9 @@ This sample project consists of the following targets:
 - `Server` creates a simplified file storage server that acts as the backend of the file provider extensions.
 - `Common` creates `common.framework`, which provides some utilities for the entire project.
 
-##### Manage File Provider Domains
+##### Manage file provider domains
 
-A file provider domain ([`NSFileProviderDomain`](nsfileproviderdomain.md)) represents a location on the sidebar of Finder (macOS) or Files (iOS). A file provider extension can have multiple domains to provide different item sets and apply per-domain account authentication. macOS and iOS create one extension instance for each domain, so all the domains work independently.
+A file provider domain ([NSFileProviderDomain](./nsfileproviderdomain.md)) represents a location on the sidebar of Finder (macOS) or Files (iOS). A file provider extension can have multiple domains to provide different item sets and apply per-domain account authentication. macOS and iOS create one extension instance for each domain, so all the domains work independently.
 
 A file provider extension by default doesn’t have a domain, and so doesn’t show up in the location list of Finder or Files before users add one. In the sample, users add a domain by tapping the Add button (+) in `FruitBasket-iOS.app` (or Add Domain in `FruitBasket.app`), which triggers the following code:
 
@@ -64,15 +66,15 @@ func addDomain(displayName: String, accountIdentifier: String) {
 }
 ```
 
-The domain name needs to be unique. Adding a domain with a name that conflicts with an existing domain triggers an [`NSFileWriteFileExistsError`](https://developer.apple.com/documentation/foundation/nsfilewritefileexistserror-swift.var) error.
+The domain name needs to be unique. Adding a domain with a name that conflicts with an existing domain triggers an [NSFileWriteFileExistsError](../Foundation/nsfilewritefileexistserror-swift.var.md) error.
 
-Users can delete a domain by selecting it and tapping the Remove Domain button, which eventually triggers [`remove(_:completionHandler:)`](nsfileprovidermanager/remove(_:completionhandler:).md) or [`remove(_:mode:completionHandler:)`](nsfileprovidermanager/remove(_:mode:completionhandler:).md). In iOS, deleting a domain deletes all the files. In macOS, apps can keep downloaded files or files that contain unsynchronized local changes by specifying a removal mode ([`NSFileProviderManager.DomainRemovalMode`](nsfileprovidermanager/domainremovalmode.md)).
+Users can delete a domain by selecting it and tapping the Remove Domain button, which eventually triggers [remove(_:completionHandler:)](./nsfileprovidermanager/remove%28_,completionhandler%29.md) or [remove(_:mode:completionHandler:)](./nsfileprovidermanager/remove%28_,mode,completionhandler%29.md). In iOS, deleting a domain deletes all the files. In macOS, apps can keep downloaded files or files that contain unsynchronized local changes by specifying a removal mode ([NSFileProviderManager.DomainRemovalMode](./nsfileprovidermanager/domainremovalmode.md)).
 
-##### Enumerate File Provider Items
+##### Enumerate file provider items
 
-After users add a domain, the system immediately asks the file provider extension for an enumerator (an object that implements [`NSFileProviderEnumerator`](nsfileproviderenumerator.md)) by calling [`enumerator(for:request:)`](nsfileproviderenumerating/enumerator(for:request:).md), and then triggers enumerations to request the items.
+After users add a domain, the system immediately asks the file provider extension for an enumerator (an object that implements [NSFileProviderEnumerator](./nsfileproviderenumerator.md)) by calling [enumerator(for:request:)](./nsfileproviderenumerating/enumerator%28for,request%29.md), and then triggers enumerations to request the items.
 
-File provider extensions need to implement `enumerator(for:request:)` to provide the enumerator the system requests based on the `containerItemIdentifier` parameter, which can be [`rootContainer`](nsfileprovideritemidentifier/rootcontainer.md), [`workingSet`](nsfileprovideritemidentifier/workingset.md), [`trashContainer`](nsfileprovideritemidentifier/trashcontainer.md), or a provider-supplied item identifier. All the enumerators need to support the initial enumeration by implementing [`enumerateItems(for:startingAt:)`](nsfileproviderenumerator/enumerateitems(for:startingat:).md), which reports the appropriate items based on the starting page (`startingAt`). Working set enumerators need to support change enumeration by implementing [`enumerateChanges(for:from:)`](nsfileproviderenumerator/enumeratechanges(for:from:).md), which reports the appropriate changes based on the sync anchor (`syncAnchor`). If the system queries the working set enumerator with a sync anchor that’s already aged out, the enumerator needs to report [`NSFileProviderError.Code.syncAnchorExpired`](nsfileprovidererror/code/syncanchorexpired.md) so the system restarts the sync operation from the beginning.
+File provider extensions need to implement `enumerator(for:request:)` to provide the enumerator the system requests based on the `containerItemIdentifier` parameter, which can be [.rootContainer](./nsfileprovideritemidentifier/rootcontainer.md), [.workingSet](./nsfileprovideritemidentifier/workingset.md), [.trashContainer](./nsfileprovideritemidentifier/trashcontainer.md), or a provider-supplied item identifier. All the enumerators need to support the initial enumeration by implementing [enumerateItems(for:startingAt:)](./nsfileproviderenumerator/enumerateitems%28for,startingat%29.md), which reports the appropriate items based on the starting page (`startingAt`). Working set enumerators need to support change enumeration by implementing [enumerateChanges(for:from:)](./nsfileproviderenumerator/enumeratechanges%28for,from%29.md), which reports the appropriate changes based on the sync anchor (`syncAnchor`). If the system queries the working set enumerator with a sync anchor that’s already aged out, the enumerator needs to report [NSFileProviderError.Code.syncAnchorExpired](./nsfileprovidererror/code/syncanchorexpired.md) so the system restarts the sync operation from the beginning.
 
 The system can request an enumerator and trigger an enumeration whenever necessary. For example, when a user browses a folder for the first time, the system requests an enumerator with the folder’s item identifier and triggers an enumeration for the folder. When getting a `PushKit` notification, it requests an enumerator with `.workingSet` (if there isn’t a cached one) and triggers a working set enumeration.
 
@@ -82,17 +84,17 @@ This sample implements the enumeration logic in the following class:
 class ItemEnumerator: NSObject, NSFileProviderEnumerator
 ```
 
-File provider extensions need to define a working set that contains the items of particular interest to the users. See [`Defining Your File Provider’s Content`](defining-your-file-provider-s-content.md) for more information. The system indexes the items the working set enumerator provides so they are searchable.
+File provider extensions need to define a working set that contains the items of particular interest to the users. See [Defining Your File Provider’s Content](./defining-your-file-provider-s-content.md) for more information. The system indexes the items the working set enumerator provides so they are searchable.
 
 In this sample, the working set is the same as the item set in the root container (which includes every item under the root container, recursively). The extensions don’t maintain a local copy of the working set. When the system requests items, the extensions make a JSON call to retrieve the relevant information from the server, and pass the result to the system. Real-world file provider extensions can define a working set smaller than the root container item set, and use a different enumerator for the working set enumeration, if desired.
 
-This sample doesn’t track the materialized items in the local system. Real-world file provider extensions can do that and report the items to the server so the server can maintain the materialized item set and avoid pushing the changes on items irrelevant to the devices. See [`Synchronizing the File Provider Extension`](synchronizing-the-file-provider-extension.md) for more details.
+This sample doesn’t track the materialized items in the local system. Real-world file provider extensions can do that and report the items to the server so the server can maintain the materialized item set and avoid pushing the changes on items irrelevant to the devices. See [Synchronizing the File Provider Extension](./synchronizing-the-file-provider-extension.md) for more details.
 
-##### Synchronize Files Between the Device and the Server
+##### Synchronize files between the device and the server
 
 The state of a file provider item can change on both the device side and the server side. When that happens, the file provider extension needs to synchronize the state.
 
-When a change happens on the device side, the system notifies the file provider extension by calling the [`NSFileProviderReplicatedExtension`](nsfileproviderreplicatedextension.md) methods with the changes, and the extension passes the changes to the server to synchronize the states. Because of the involvement of networking requests, all the methods are asynchronous, have a `completionHandler`, and return a [`Progress`](https://developer.apple.com/documentation/foundation/progress) object to the system for progress tracking or cancellation. The extension needs to call the completion handler to report the result back to the system. For more information about syncing files, see [`Sync files to the cloud with FileProvider on macOS`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10182/) and [`Bring desktop class sync to iOS with FileProvider`](https://developer.apple.comhttps://developer.apple.com/videos/play/tech-talks/10067).
+When a change happens on the device side, the system notifies the file provider extension by calling the [NSFileProviderReplicatedExtension](./nsfileproviderreplicatedextension.md) methods with the changes, and the extension passes the changes to the server to synchronize the states. Because of the involvement of networking requests, all the methods are asynchronous, have a `completionHandler`, and return a [Progress](../Foundation/progress.md) object to the system for progress tracking or cancellation. The extension needs to call the completion handler to report the result back to the system. For more information about syncing files, see [Sync files to the cloud with FileProvider on macOS](https://developer.apple.com/videos/play/wwdc2021/10182/) and [Bring desktop class sync to iOS with FileProvider](https://developer.apple.com/videos/play/tech-talks/10067).
 
 This sample implements all the `NSFileProviderReplicatedExtension` methods in `Extension.swift`. The following code example shows the method that the system calls to notify the file provider about the changes on an item’s content or metadata from the device:
 
@@ -115,7 +117,7 @@ public func fetchContents(for itemIdentifier: NSFileProviderItemIdentifier,
 
 This method similarly makes a JSON call to download the file content, and returns a `Progress` object with a `cancellationHandler` that calls the `completionHandler`.
 
-To work with the `POSIX` read operations that read only part of a file, the file provider extensions in this sample support partial download by implementing the following [`NSFileProviderPartialContentFetching`](nsfileproviderpartialcontentfetching.md) method:
+To work with the `POSIX` read operations that read only part of a file, the file provider extensions in this sample support partial download by implementing the following [NSFileProviderPartialContentFetching](./nsfileproviderpartialcontentfetching.md) method:
 
 ```swift
 public func fetchPartialContents(for itemIdentifier: NSFileProviderItemIdentifier,
@@ -132,19 +134,19 @@ public func fetchPartialContents(for itemIdentifier: NSFileProviderItemIdentifie
 
 When changes happen on the server side, there are two ways to notify the file provider extensions:
 
-- The server sends a [`PushKit`](https://developer.apple.com/documentation/pushkit) notification of `fileProvider` push type with the item identifier. (The only valid container in a push payload is “`NSFileProviderWorkingSetContainerItemIdentifier`”.) When receiving the notification, the local system (macOS or iOS) triggers an enumeration so the file provider extensions can fetch the changes from the server. See [`Using push notifications to signal changes`](using-push-notifications-to-signal-changes.md) and [`Sending push notifications using command-line tools`](https://developer.apple.com/documentation/usernotifications/sending-push-notifications-using-command-line-tools) for more information.
-- The app detects that there are pending server-side changes (by using remote push notifications or polling, for example), and triggers an enumeration by calling [`signalEnumerator(for:completionHandler:)`](nsfileprovidermanager/signalenumerator(for:completionhandler:).md). See [`Setting up a remote notification server`](https://developer.apple.com/documentation/usernotifications/setting-up-a-remote-notification-server) for more information.
+- The server sends a [PushKit](../PushKit/PushKit.md) notification of `fileProvider` push type with the item identifier. (The only valid container in a push payload is “`NSFileProviderWorkingSetContainerItemIdentifier`”.) When receiving the notification, the local system (macOS or iOS) triggers an enumeration so the file provider extensions can fetch the changes from the server. See [Using push notifications to signal changes](./using-push-notifications-to-signal-changes.md) and [Sending Push Notifications Using Command-Line Tools](../UserNotifications/sending-push-notifications-using-command-line-tools.md) for more information.
+- The app detects that there are pending server-side changes (by using remote push notifications or polling, for example), and triggers an enumeration by calling [signalEnumerator(for:completionHandler:)](./nsfileprovidermanager/signalenumerator%28for,completionhandler%29.md). See [Setting Up a Remote Notification Server](../UserNotifications/setting-up-a-remote-notification-server.md) for more information.
 
-In this sample, the server doesn’t implement the `PushKit` support (to reduce the complexity of the sample code configuration). It posts an `.itemsChanged` notification using [`DistributedNotificationCenter`](https://developer.apple.com/documentation/foundation/distributednotificationcenter) when changes happen. The macOS app, which runs on the same computer as the server, observes the notification, and triggers an enumeration when getting one. The iOS app provides the Signal domain button in the domain detail view for users to trigger an enumeration manually.
+In this sample, the server doesn’t implement the `PushKit` support (to reduce the complexity of the sample code configuration). It posts an `.itemsChanged` notification using [DistributedNotificationCenter](../Foundation/distributednotificationcenter.md) when changes happen. The macOS app, which runs on the same computer as the server, observes the notification, and triggers an enumeration when getting one. The iOS app provides the Signal domain button in the domain detail view for users to trigger an enumeration manually.
 
-##### Enhance File Providers with Decorations Custom Actions and File Provider Ui Extensions
+##### Enhance file providers with decorations, custom actions, and file provider UI extensions
 
 File provider extensions can provide decorations and custom actions for an item. Finder and Files display the decorations on the item, and present the custom actions as contextual menu items when users Control-click or long press the item.
 
 To provide decorations for a file provider item, the file provider extensions in this sample do the following:
 
 - Declare the item decorations using the `NSExtension` > `NSFileProviderDecorations` entry in the `Info.plist` file in the `Provider` target, which includes adding the `Identifier`, `Label`, `Category`, and `BadgeImageType` keys for each decoration.
-- Implement [`NSFileProviderItemDecorating`](nsfileprovideritemdecorating.md) in the file provider item class [`NSFileProviderItem`](nsfileprovideritem-swift.typealias.md) to return the decoration identifiers ([`NSFileProviderItemDecorationIdentifier`](nsfileprovideritemdecorationidentifier.md)) of the current item.
+- Implement [NSFileProviderItemDecorating](./nsfileprovideritemdecorating.md) in the file provider item class [NSFileProviderItem](./nsfileprovideritem-swift.typealias.md) to return the decoration identifiers ([NSFileProviderItemDecorationIdentifier](./nsfileprovideritemdecorationidentifier.md)) of the current item.
 
 The following code example returns the appropriate decorations based on the item state:
 
@@ -154,8 +156,8 @@ var decorations: [NSFileProviderItemDecorationIdentifier]?
 
 Similarly, the file provider extensions do the following to provide custom actions:
 
-- Declare the custom actions using the `NSExtension` > `NSExtensionFileProviderActions` entry in the `Info.plist` file in the `Provider` target, which includes adding the [`NSExtensionFileProviderActionIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionfileprovideractions/nsextensionfileprovideractionidentifier), [`NSExtensionFileProviderActionName`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionfileprovideractions/nsextensionfileprovideractionname), [`NSExtensionFileProviderActionActivationRule`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionfileprovideractions/nsextensionfileprovideractionactivationrule), and `Comment` keys for each action. See [`Adding Actions to the Context Menu`](https://developer.apple.com/documentation/fileproviderui/adding-actions-to-the-context-menu) for information about using `NSExtensionFileProviderActionActivationRule` to enable or disable a custom action based on the current context.
-- Implement [`NSFileProviderCustomAction`](nsfileprovidercustomaction.md) in the file provider extension class to perform the actions when users select the contextual menu items.
+- Declare the custom actions using the `NSExtension` > `NSExtensionFileProviderActions` entry in the `Info.plist` file in the `Provider` target, which includes adding the [NSExtensionFileProviderActionIdentifier](../BundleResources/information-property-list/nsextension/nsextensionfileprovideractions/nsextensionfileprovideractionidentifier.md), [NSExtensionFileProviderActionName](../BundleResources/information-property-list/nsextension/nsextensionfileprovideractions/nsextensionfileprovideractionname.md), [NSExtensionFileProviderActionActivationRule](../BundleResources/information-property-list/nsextension/nsextensionfileprovideractions/nsextensionfileprovideractionactivationrule.md), and `Comment` keys for each action. See [Adding Actions to the Context Menu](../FileProviderUI/adding-actions-to-the-context-menu.md) for information about using `NSExtensionFileProviderActionActivationRule` to enable or disable a custom action based on the current context.
+- Implement [NSFileProviderCustomAction](./nsfileprovidercustomaction.md) in the file provider extension class to perform the actions when users select the contextual menu items.
 
 The following code example performs the actions:
 
@@ -165,11 +167,11 @@ public func performAction(identifier actionIdentifier: NSFileProviderExtensionAc
                           completionHandler: @escaping (Error?) -> Void) -> Progress
 ```
 
-When performing an action, file provider extensions don’t present any additional UI elements. If necessary, apps can present the UI when users trigger a custom action by creating a file provider UI extension. See [`Adding Actions to the Context Menu`](https://developer.apple.com/documentation/fileproviderui/adding-actions-to-the-context-menu) for more details.
+When performing an action, file provider extensions don’t present any additional UI elements. If necessary, apps can present the UI when users trigger a custom action by creating a file provider UI extension. See [Adding Actions to the Context Menu](../FileProviderUI/adding-actions-to-the-context-menu.md) for more details.
 
 This sample implements a file provider UI extension to handle document conflicts and account authentication. For conflict handling, the file provider UI extension creates a custom action named *Other versions* (see the `NSExtension` > `NSExtensionFileProviderActions` entry in the `Info.plist` file in the `Action` target), and presents the conflict view controller (`ConflictViewController.swift`) when users trigger the action.
 
-The system automatically presents the principal view controller ([`NSExtensionPrincipalClass`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionprincipalclass)) of the file provider UI extension for the [`notAuthenticated`](nsfileprovidererror/notauthenticated.md) error. When that happens, the file provider UI extension in this sample presents the account authentication view controller (`AuthenticationViewController`), as the following code example shows:
+The system automatically presents the principal view controller ([NSExtensionPrincipalClass](../BundleResources/information-property-list/nsextension/nsextensionprincipalclass.md)) of the file provider UI extension for the [NSFileProviderError.Code.notAuthenticated](./nsfileprovidererror/notauthenticated.md) error. When that happens, the file provider UI extension in this sample presents the account authentication view controller (`AuthenticationViewController`), as the following code example shows:
 
 ```swift
 public override func prepare(forError error: Error) {
@@ -177,13 +179,13 @@ public override func prepare(forError error: Error) {
 }
 ```
 
-##### Handle Errors Elegantly
+##### Handle errors elegantly
 
-The File Provider framework defines the common errors in [`NSFileProviderError.Code`](nsfileprovidererror/code.md). If an error happens when running a method that the system calls, file provider extensions need to report that by passing the error to the completion handler.
+The File Provider framework defines the common errors in [FSFileProviderError.Code](./nsfileprovidererror/code.md). If an error happens when running a method that the system calls, file provider extensions need to report that by passing the error to the completion handler.
 
-Among the predefined errors, the following four are resolvable: [`notAuthenticated`](nsfileprovidererror/notauthenticated.md), [`NSFileProviderError.Code.serverUnreachable`](nsfileprovidererror/code/serverunreachable.md), [`NSFileProviderError.Code.insufficientQuota`](nsfileprovidererror/code/insufficientquota.md), [`NSFileProviderError.Code.cannotSynchronize`](nsfileprovidererror/code/cannotsynchronize.md).
+Among the predefined errors, the following four are resolvable: [.notAuthenticated](./nsfileprovidererror/notauthenticated.md), [.serverUnreachable](./nsfileprovidererror/code/serverunreachable.md), [.insufficientQuota](./nsfileprovidererror/code/insufficientquota.md), [.cannotSynchronize](./nsfileprovidererror/code/cannotsynchronize.md).
 
-When encountering a resolvable error, the system throttles the operation until something (most likely the app or extension) calls [`signalErrorResolved(_:completionHandler:)`](nsfileprovidermanager/signalerrorresolved(_:completionhandler:).md) to signal that the user or the server resolves the error. Any other error, including crashes of the extension process, is transient, and causes the system to retry the modification.
+When encountering a resolvable error, the system throttles the operation until something (most likely the app or extension) calls [signalErrorResolved(:completionHandler:)](./nsfileprovidermanager/signalerrorresolved%28_,completionhandler%29.md) to signal that the user or the server resolves the error. Any other error, including crashes of the extension process, is transient, and causes the system to retry the modification.
 
 The file provider UI extension in this sample calls the method with `.notAuthenticated` when the user resolves the authentication issue.
 
@@ -193,9 +195,10 @@ try await manager.signalErrorResolved(NSFileProviderError(.notAuthenticated))
 
 ## See Also
 
-- [Synchronizing the File Provider Extension](synchronizing-the-file-provider-extension.md)
+### Essentials
+- [Synchronizing the File Provider Extension](./synchronizing-the-file-provider-extension.md)
   Keep the local and remote copies of your File Provider extension’s content in sync.
-- [Setting the Finder Sidebar Icon](setting-the-finder-sidebar-icon.md)
+- [Setting the Finder Sidebar Icon](./setting-the-finder-sidebar-icon.md)
   Specify a standard or custom symbol as a sidebar icon.
 
 

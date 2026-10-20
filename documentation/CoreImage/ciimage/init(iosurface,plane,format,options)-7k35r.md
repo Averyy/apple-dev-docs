@@ -1,10 +1,11 @@
 # init(IOSurface:plane:format:options:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS 10.9+
+- macOS 10.9+ - Deprecated in 10.11
 
 ## Declaration
 

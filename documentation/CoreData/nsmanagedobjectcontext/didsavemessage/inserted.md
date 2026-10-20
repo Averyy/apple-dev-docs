@@ -1,7 +1,8 @@
 # inserted
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Managed objects that were inserted during this save.
 

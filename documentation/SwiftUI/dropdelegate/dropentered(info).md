@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate a validated drop has entered the modified view.
@@ -24,15 +25,22 @@ Tells the delegate a validated drop has entered the modified view.
 
 The default implementation does nothing.
 
+## Default Implementations
+
+### DropDelegate Implementations
+- [func dropEntered(info: DropInfo)](./dropentered%28info%29-2tqut.md)
+  Tells the delegate a validated drop has entered the modified view.
+
 ## See Also
 
-- [func dropExited(info: DropInfo)](dropdelegate/dropexited(info:).md)
+### Receiving drop information
+- [func dropExited(info: DropInfo)](./dropexited%28info%29.md)
   Tells the delegate a validated drop operation has exited the modified view.
-- [func dropUpdated(info: DropInfo) -> DropProposal?](dropdelegate/dropupdated(info:).md)
+- [func dropUpdated(info: DropInfo) -> DropProposal?](./dropupdated%28info%29.md)
   Tells the delegate that a validated drop moved inside the modified view.
-- [func validateDrop(info: DropInfo) -> Bool](dropdelegate/validatedrop(info:).md)
+- [func validateDrop(info: DropInfo) -> Bool](./validatedrop%28info%29.md)
   Tells the delegate that a drop containing items conforming to one of the expected types entered a view that accepts drops.
-- [func performDrop(info: DropInfo) -> Bool](dropdelegate/performdrop(info:).md)
+- [func performDrop(info: DropInfo) -> Bool](./performdrop%28info%29.md)
   Tells the delegate it can request the item provider data from the given information.
 
 

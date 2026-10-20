@@ -1,36 +1,38 @@
 # Copying, element swapping, and merging functions
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 Copy, swap, and merge the elements of two vectors.
 
 ## Topics
 
 ### Vector copying functions
-- [static func copy(DSPSplitComplex, to: inout DSPSplitComplex, count: Int)](vdsp/copy(_:to:count:)-96jr5.md)
+- [static func copy(DSPSplitComplex, to: inout DSPSplitComplex, count: Int)](./vdsp/copy%28_,to,count%29-96jr5.md)
   Copies a complex single-precision vector.
-- [static func copy(DSPDoubleSplitComplex, to: inout DSPDoubleSplitComplex, count: Int)](vdsp/copy(_:to:count:)-7zpro.md)
+- [static func copy(DSPDoubleSplitComplex, to: inout DSPDoubleSplitComplex, count: Int)](./vdsp/copy%28_,to,count%29-7zpro.md)
   Copies a complex double-precision vector.
 ### Vector-to-vector element swapping functions
-- [static func swapElements<T, U>(inout T, inout U)](vdsp/swapelements(_:_:)-96xn7.md)
+- [static func swapElements<T, U>(inout T, inout U)](./vdsp/swapelements%28_,_%29-96xn7.md)
   Swaps the elements of two single-precision vectors.
-- [static func swapElements<T, U>(inout T, inout U)](vdsp/swapelements(_:_:)-62wvt.md)
+- [static func swapElements<T, U>(inout T, inout U)](./vdsp/swapelements%28_,_%29-62wvt.md)
   Swaps the elements of two double-precision vectors.
 ### Vector-to-vector merging functions
-- [static func taperedMerge<T, U>(T, U) -> [Float]](vdsp/taperedmerge(_:_:)-5dhoj.md)
+- [static func taperedMerge<T, U>(T, U) -> [Float]](./vdsp/taperedmerge%28_,_%29-5dhoj.md)
   Returns the result of a tapered merge between two single-precision vectors.
-- [static func taperedMerge<T, U>(T, U) -> [Double]](vdsp/taperedmerge(_:_:)-9s9j5.md)
+- [static func taperedMerge<T, U>(T, U) -> [Double]](./vdsp/taperedmerge%28_,_%29-9s9j5.md)
   Returns the result of a tapered merge between two double-precision vectors.
-- [static func taperedMerge<T, U, V>(T, U, result: inout V)](vdsp/taperedmerge(_:_:result:)-74fuy.md)
+- [static func taperedMerge<T, U, V>(T, U, result: inout V)](./vdsp/taperedmerge%28_,_,result%29-74fuy.md)
   Computes the result of a tapered merge between two single-precision vectors.
-- [static func taperedMerge<T, U, V>(T, U, result: inout V)](vdsp/taperedmerge(_:_:result:)-9361o.md)
+- [static func taperedMerge<T, U, V>(T, U, result: inout V)](./vdsp/taperedmerge%28_,_,result%29-9361o.md)
   Computes the result of a tapered merge between two double-precision vectors.
 
 ## See Also
 
-- [Compression and gathering functions](compression-and-gathering-functions.md)
+### Vector operations
+- [Compression and gathering functions](./compression-and-gathering-functions.md)
   Compress vectors based on the nonzero elements in a gating vector, or gather vectors based on a separate vector that contains indices.
-- [Reversing and sorting functions](reversing-and-sorting-functions.md)
+- [Reversing and sorting functions](./reversing-and-sorting-functions.md)
   Perform in-place reverse and sort operations on a vector.
 
 

@@ -1,7 +1,8 @@
 # unapplyGameModelUpdate(_:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the internal state of the game model to remove the effect of the specified changes.
 
@@ -19,21 +20,26 @@ Updates the internal state of the game model to remove the effect of the specifi
 optional func unapplyGameModelUpdate(_ gameModelUpdate: any GKGameModelUpdate)
 ```
 
+```objc
+- (void) unapplyGameModelUpdate:(id<GKGameModelUpdate>) gameModelUpdate;
+```
+
 #### Discussion
 
-This method is an optional counterpart to the [`apply(_:)`](gkgamemodel/apply(_:).md) method. By default, a GameplayKit strategist explores possible moves by copying the current game model, then calling that method to test the effect of a move. Copying a game model (see the [`setGameModel(_:)`](gkgamemodel/setgamemodel(_:).md) method) repeatedly can increase the time it takes for a strategist to evaluate moves. If your move class (adopting the [`GKGameModelUpdate`](gkgamemodelupdate.md) protocol) can describe not only how to perform a move, but also how to take back a move—leaving the game model in the same state it was before the move—implement the [`unapplyGameModelUpdate(_:)`](gkgamemodel/unapplygamemodelupdate(_:).md) method to undo moves. If you implement this method, the strategist can evaluate multiple moves without copying the game model, possibly increasing performance.
+This method is an optional counterpart to the [`apply(_:)`](./apply%28_%29.md) method. By default, a GameplayKit strategist explores possible moves by copying the current game model, then calling that method to test the effect of a move. Copying a game model (see the [`setGameModel(_:)`](./setgamemodel%28_%29.md) method) repeatedly can increase the time it takes for a strategist to evaluate moves. If your move class (adopting the [`GKGameModelUpdate`](../gkgamemodelupdate.md) protocol) can describe not only how to perform a move, but also how to take back a move—leaving the game model in the same state it was before the move—implement the [`unapplyGameModelUpdate(_:)`](./unapplygamemodelupdate%28_%29.md) method to undo moves. If you implement this method, the strategist can evaluate multiple moves without copying the game model, possibly increasing performance.
 
 Some games naturally describe moves reversibly. For example, a Tic-Tac-Toe move class indicates which square to place a marker into, so unapplying that update would remove the marker from that square. To use this method in other games, however, you’ll need to design your move class carefully. For example, in a chess game, the move class would need to record both the original position and the destination position of a piece being moved, and either the move class or the game model class would need to track any pieces captured in that move so that they can be restored.
 
 ## Parameters
 
-- `gameModelUpdate`: An instance of your custom class that implements the [`GKGameModelUpdate`](gkgamemodelupdate.md) protocol, describing a move to be revoked in your game.
+- `gameModelUpdate`: An instance of your custom class that implements the [`GKGameModelUpdate`](../gkgamemodelupdate.md) protocol, describing a move to be revoked in your game.
 
 ## See Also
 
-- [func apply(any GKGameModelUpdate)](gkgamemodel/apply(_:).md)
+### Modifying a Game Model
+- [func apply(any GKGameModelUpdate)](./apply%28_%29.md)
   Updates the internal state of the game model to reflect the specified changes.
-- [func setGameModel(any GKGameModel)](gkgamemodel/setgamemodel(_:).md)
+- [func setGameModel(any GKGameModel)](./setgamemodel%28_%29.md)
   Sets the game model’s internal state to that of the specified game model.
 
 

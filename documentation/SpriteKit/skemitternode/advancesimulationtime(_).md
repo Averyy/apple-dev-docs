@@ -1,18 +1,19 @@
 # advanceSimulationTime(_:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Advances the emitter particle simulation.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,15 @@ Advances the emitter particle simulation.
 func advanceSimulationTime(_ sec: TimeInterval)
 ```
 
+```objc
+- (void) advanceSimulationTime:(NSTimeInterval) sec;
+```
+
 #### Discussion
 
 Once added to a scene, an emitter node automatically creates new particles in new animation frames. This method allows you to artificially advance a running emitter’s simulation, causing it to generate new particles and advance any existing particles. The most common use for this method is to prepopulate an emitter node with particles after it is first added to a scene.
 
-If an emitter is paused, either directly or by one of its parent nodes being paused, [`advanceSimulationTime(_:)`](skemitternode/advancesimulationtime(_:).md) has no effect. Listing 1 shows how to advance an emitter object while it is paused, by temporarily toggling its [`isPaused`](sknode/ispaused.md) property while advancing the simulation.
+If an emitter is paused, either directly or by one of its parent nodes being paused, [`advanceSimulationTime(_:)`](./advancesimulationtime%28_%29.md) has no effect. Listing 1 shows how to advance an emitter object while it is paused, by temporarily toggling its [`isPaused`](../sknode/ispaused.md) property while advancing the simulation.
 
 Listing 1. Temporarily unpausing an emitter to advance simulation time
 
@@ -40,7 +45,7 @@ if emitterPaused {
 }
 ```
 
-Note that the [`isPaused`](sknode/ispaused.md) property is inherited from a node’s parents, so even if the emitter hasn’t been explicitly paused but, for example, the scene has, this code will still work.
+Note that the [`isPaused`](../sknode/ispaused.md) property is inherited from a node’s parents, so even if the emitter hasn’t been explicitly paused but, for example, the scene has, this code will still work.
 
 ## Parameters
 
@@ -48,11 +53,12 @@ Note that the [`isPaused`](sknode/ispaused.md) property is inherited from a node
 
 ## See Also
 
-- [func resetSimulation()](skemitternode/resetsimulation.md)
+### Controlling When Particles Are Created
+- [func resetSimulation()](./resetsimulation%28%29.md)
   Removes all existing particles and restarts the simulation.
-- [var particleBirthRate: CGFloat](skemitternode/particlebirthrate.md)
+- [var particleBirthRate: CGFloat](./particlebirthrate.md)
   The rate at which new particles are created.
-- [var numParticlesToEmit: Int](skemitternode/numparticlestoemit.md)
+- [var numParticlesToEmit: Int](./numparticlestoemit.md)
   The number of particles the emitter should emit before stopping.
 
 

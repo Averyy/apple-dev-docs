@@ -1,7 +1,8 @@
 # canExchangeKeys(using:)
 
 **Framework**: Local Authentication  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks whether the algorithm you supply is valid for performing key exchanges.
 
@@ -18,6 +19,10 @@ Checks whether the algorithm you supply is valid for performing key exchanges.
 func canExchangeKeys(using algorithm: SecKeyAlgorithm) -> Bool
 ```
 
+```objc
+- (BOOL) canExchangeKeysUsingSecKeyAlgorithm:(SecKeyAlgorithm) algorithm;
+```
+
 #### Return Value
 
 A Boolean value that indicates whether the algorithm you supply is valid for performing key exchanges.
@@ -28,9 +33,10 @@ A Boolean value that indicates whether the algorithm you supply is valid for per
 
 ## See Also
 
-- [func canDecrypt(using: SecKeyAlgorithm) -> Bool](laprivatekey/candecrypt(using:).md)
+### Checking algorithm support
+- [func canDecrypt(using: SecKeyAlgorithm) -> Bool](./candecrypt%28using%29.md)
   Checks whether the algorithm you supply is valid for decrypting data with the key.
-- [func canSign(using: SecKeyAlgorithm) -> Bool](laprivatekey/cansign(using:).md)
+- [func canSign(using: SecKeyAlgorithm) -> Bool](./cansign%28using%29.md)
   Checks whether the algorithm you supply is valid for signing data with the key.
 
 

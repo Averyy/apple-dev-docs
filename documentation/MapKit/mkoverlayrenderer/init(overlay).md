@@ -1,7 +1,8 @@
 # init(overlay:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns the overlay renderer and associates it with the specified overlay object.
 
@@ -19,13 +20,17 @@ Creates and returns the overlay renderer and associates it with the specified ov
 init(overlay: any MKOverlay)
 ```
 
+```objc
+- (instancetype) initWithOverlay:(id<MKOverlay>) overlay;
+```
+
 #### Return Value
 
 An initialized overlay renderer object.
 
 #### Discussion
 
-Initially, the overlay renderer assumes that the overlay is fully opaque and that it has a content scale factor of 1.0. You can change these values as needed using the [`alpha`](mkoverlayrenderer/alpha.md) and [`contentScaleFactor`](mkoverlayrenderer/contentscalefactor.md) properties.
+Initially, the overlay renderer assumes that the overlay is fully opaque and that it has a content scale factor of 1.0. You can change these values as needed using the [`alpha`](./alpha.md) and [`contentScaleFactor`](./contentscalefactor.md) properties.
 
 ## Parameters
 

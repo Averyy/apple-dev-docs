@@ -1,7 +1,8 @@
 # northLatitude
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The north latitude of the bounding region.
 
@@ -10,17 +11,18 @@ The north latitude of the bounding region.
 
 ## Declaration
 
-```swift
+```
 northLatitude: number;
 ```
 
 ## See Also
 
-- [eastLongitude](boundingregion/eastlongitude.md)
+### Defining a bounding region
+- [eastLongitude](./eastlongitude.md)
   The east longitude of the bounding region.
-- [southLatitude](boundingregion/southlatitude.md)
+- [southLatitude](./southlatitude.md)
   The south latitude of the bounding region.
-- [westLongitude](boundingregion/westlongitude.md)
+- [westLongitude](./westlongitude.md)
   The west longitude of the bounding region.
 
 

@@ -1,11 +1,12 @@
 # kAudioHardwarePropertyDeviceForUID
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,10 +14,15 @@
 var kAudioHardwarePropertyDeviceForUID: AudioObjectPropertySelector { get }
 ```
 
+```c
+kAudioHardwarePropertyDeviceForUID
+```
+
 ## See Also
 
-- [var kAudioHardwarePropertyPlugInForBundleID: AudioObjectPropertySelector](kaudiohardwarepropertypluginforbundleid.md)
-- [var kAudioHardwarePropertyRunLoop: AudioObjectPropertySelector](kaudiohardwarepropertyrunloop.md)
+### Constants
+- [var kAudioHardwarePropertyPlugInForBundleID: AudioObjectPropertySelector](./kaudiohardwarepropertypluginforbundleid.md)
+- [var kAudioHardwarePropertyRunLoop: AudioObjectPropertySelector](./kaudiohardwarepropertyrunloop.md)
 
 
 ---

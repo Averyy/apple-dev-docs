@@ -1,7 +1,8 @@
 # activitySegments
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Access the activity divided into segments.
 
@@ -18,15 +19,16 @@ var activitySegments: DeviceActivityResults<DeviceActivityData.ActivitySegment> 
 
 #### Discussion
 
-The [`segmentInterval`](deviceactivitydata/segmentinterval.md) that your app requests via a [`DeviceActivityFilter`](deviceactivityfilter.md) determines the length of each activity segment.
+The [`segmentInterval`](./segmentinterval.md) that your app requests via a [`DeviceActivityFilter`](../deviceactivityfilter.md) determines the length of each activity segment.
 
 ## See Also
 
-- [var segmentInterval: DeviceActivityFilter.SegmentInterval](deviceactivitydata/segmentinterval.md)
+### Managing activity data
+- [var segmentInterval: DeviceActivityFilter.SegmentInterval](./segmentinterval.md)
   Access the segment interval of each activity segment.
-- [var lastUpdatedDate: Date](deviceactivitydata/lastupdateddate.md)
+- [var lastUpdatedDate: Date](./lastupdateddate.md)
   Access the date when the system last updated the data for this device.
-- [DeviceActivityData.ActivitySegment](deviceactivitydata/activitysegment.md)
+- [DeviceActivityData.ActivitySegment](./activitysegment.md)
   Activity data for a specific time interval.
 
 

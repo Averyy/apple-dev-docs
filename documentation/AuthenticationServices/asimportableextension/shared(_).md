@@ -1,7 +1,8 @@
 # ASImportableExtension.shared(_:)
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Shared extension.
 

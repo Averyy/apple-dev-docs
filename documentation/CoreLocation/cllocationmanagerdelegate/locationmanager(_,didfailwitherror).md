@@ -1,7 +1,8 @@
 # locationManager(_:didFailWithError:)
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the location manager was unable to retrieve a location value.
 
@@ -20,13 +21,17 @@ Tells the delegate that the location manager was unable to retrieve a location v
 optional func locationManager(_ manager: CLLocationManager, didFailWithError error: any Error)
 ```
 
+```objc
+- (void) locationManager:(CLLocationManager *) manager didFailWithError:(NSError *) error;
+```
+
 #### Discussion
 
 If you do not implement this method, Core Location throws an exception when attempting to use location services.
 
-The location manager calls this method when it encounters an error trying to get the location or heading data. If the location service is unable to retrieve a location right away, it reports a [`CLError.Code.locationUnknown`](clerror-swift.struct/code/locationunknown.md) error and keeps trying. In such a situation, you can simply ignore the error and wait for a new event. If a heading could not be determined because of strong interference from nearby magnetic fields, this method returns [`CLError.Code.headingFailure`](clerror-swift.struct/code/headingfailure.md).
+The location manager calls this method when it encounters an error trying to get the location or heading data. If the location service is unable to retrieve a location right away, it reports a [`CLError.Code.locationUnknown`](../clerror-swift.struct/code/locationunknown.md) error and keeps trying. In such a situation, you can simply ignore the error and wait for a new event. If a heading could not be determined because of strong interference from nearby magnetic fields, this method returns [`CLError.Code.headingFailure`](../clerror-swift.struct/code/headingfailure.md).
 
-If the user denies your app’s use of the location service, this method reports a [`CLError.Code.denied`](clerror-swift.struct/code/denied.md) error. Upon receiving such an error, you should stop the location service.
+If the user denies your app’s use of the location service, this method reports a [`CLError.Code.denied`](../clerror-swift.struct/code/denied.md) error. Upon receiving such an error, you should stop the location service.
 
 ## Parameters
 
@@ -35,7 +40,8 @@ If the user denies your app’s use of the location service, this method reports
 
 ## See Also
 
-- [func locationManager(CLLocationManager, monitoringDidFailFor: CLRegion?, withError: any Error)](cllocationmanagerdelegate/locationmanager(_:monitoringdidfailfor:witherror:).md)
+### Related documentation
+- [func locationManager(CLLocationManager, monitoringDidFailFor: CLRegion?, withError: any Error)](./locationmanager%28_,monitoringdidfailfor,witherror%29.md)
   Tells the delegate that a region monitoring error occurred.
 
 

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly allocated array.
 
@@ -20,6 +21,10 @@ Initializes a newly allocated array.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 An array.
@@ -32,13 +37,14 @@ This method is a designated initializer.
 
 ## See Also
 
-- [convenience init(array: [Any])](nsarray/init(array:)-o72h.md)
+### Initializing an Array
+- [convenience init(array: [Any])](./init%28array%29-o72h.md)
   Initializes a newly allocated array by placing in it the objects contained in a given array.
-- [convenience init(array: [Any], copyItems: Bool)](nsarray/init(array:copyitems:).md)
+- [convenience init(array: [Any], copyItems: Bool)](./init%28array,copyitems%29.md)
   Initializes a newly allocated array using `anArray` as the source of data objects for the array.
-- [convenience init?(contentsOfFile: String)](nsarray/init(contentsoffile:).md)
+- [convenience init?(contentsOfFile: String)](./init%28contentsoffile%29.md)
   Initializes a newly allocated array with the contents of the file specified by a given path.
-- [init(objects: UnsafePointer<AnyObject>?, count: Int)](nsarray/init(objects:count:)-5odxv.md)
+- [init(objects: UnsafePointer<AnyObject>?, count: Int)](./init%28objects,count%29-5odxv.md)
   Initializes a newly allocated array to include a given number of objects from a given C array.
 
 

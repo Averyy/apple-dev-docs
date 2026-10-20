@@ -1,14 +1,15 @@
 # DTSavedScopePtr
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct DTSavedScope {
     ...
 } DTSavedScopePtr;
@@ -17,10 +18,10 @@ typedef struct DTSavedScope {
 ## Topics
 
 ### Instance Properties
-- [entry](dtsavedscopeptr/2869597-entry.md)
-- [index](dtsavedscopeptr/2869585-index.md)
-- [nextScope](dtsavedscopeptr/2869589-nextscope.md)
-- [scope](dtsavedscopeptr/2869596-scope.md)
+- [entry](./dtsavedscopeptr/api-2869597-entry.md)
+- [index](./dtsavedscopeptr/api-2869585-index.md)
+- [nextScope](./dtsavedscopeptr/api-2869589-nextscope.md)
+- [scope](./dtsavedscopeptr/api-2869596-scope.md)
 
 
 ---

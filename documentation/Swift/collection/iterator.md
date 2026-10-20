@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A type that provides the collection’s iteration interface and encapsulates its iteration state.

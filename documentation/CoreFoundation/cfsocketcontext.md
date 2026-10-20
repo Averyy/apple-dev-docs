@@ -1,18 +1,19 @@
 # CFSocketContext
 
 **Framework**: Core Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains program-defined data and callbacks with which you can configure a CFSocket object’s behavior.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,33 +21,38 @@ A structure that contains program-defined data and callbacks with which you can 
 struct CFSocketContext
 ```
 
+```c
+typedef struct { ... } CFSocketContext;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cfsocketcontext/init.md)
-- [init(version: CFIndex, info: UnsafeMutableRawPointer!, retain: ((UnsafeRawPointer?) -> UnsafeRawPointer?)!, release: ((UnsafeRawPointer?) -> Void)!, copyDescription: ((UnsafeRawPointer?) -> Unmanaged<CFString>?)!)](cfsocketcontext/init(version:info:retain:release:copydescription:).md)
+- [init()](./cfsocketcontext/init%28%29.md)
+- [init(version: CFIndex, info: UnsafeMutableRawPointer!, retain: ((UnsafeRawPointer?) -> UnsafeRawPointer?)!, release: ((UnsafeRawPointer?) -> Void)!, copyDescription: ((UnsafeRawPointer?) -> Unmanaged<CFString>?)!)](./cfsocketcontext/init%28version,info,retain,release,copydescription%29.md)
 ### Instance Properties
-- [var copyDescription: ((UnsafeRawPointer?) -> Unmanaged<CFString>?)!](cfsocketcontext/copydescription.md)
+- [var copyDescription: ((UnsafeRawPointer?) -> Unmanaged<CFString>?)!](./cfsocketcontext/copydescription.md)
   A copy description callback for your program-defined `info` pointer. Can be `NULL`.
-- [var info: UnsafeMutableRawPointer!](cfsocketcontext/info.md)
+- [var info: UnsafeMutableRawPointer!](./cfsocketcontext/info.md)
   An arbitrary pointer to program-defined data, which can be associated with the CFSocket object at creation time. This pointer is passed to all the callbacks defined in the context.
-- [var release: ((UnsafeRawPointer?) -> Void)!](cfsocketcontext/release.md)
+- [var release: ((UnsafeRawPointer?) -> Void)!](./cfsocketcontext/release.md)
   A release callback for your program-defined `info` pointer. Can be `NULL`.
-- [var retain: ((UnsafeRawPointer?) -> UnsafeRawPointer?)!](cfsocketcontext/retain.md)
+- [var retain: ((UnsafeRawPointer?) -> UnsafeRawPointer?)!](./cfsocketcontext/retain.md)
   A retain callback for your program-defined `info` pointer. Can be `NULL`.
-- [var version: CFIndex](cfsocketcontext/version.md)
+- [var version: CFIndex](./cfsocketcontext/version.md)
   Version number of the structure. Must be `0`.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [typealias CFSocketNativeHandle](cfsocketnativehandle.md)
+### Data Types
+- [typealias CFSocketNativeHandle](./cfsocketnativehandle.md)
   Type for the platform-specific native socket handle.
-- [struct CFSocketSignature](cfsocketsignature.md)
+- [struct CFSocketSignature](./cfsocketsignature.md)
   A structure that fully specifies the communication protocol and connection address of a CFSocket object.
 
 

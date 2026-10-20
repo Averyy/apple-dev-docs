@@ -1,7 +1,8 @@
 # strictEndDate
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The sample’s end time must fall within the target time period.
 
@@ -19,13 +20,18 @@ The sample’s end time must fall within the target time period.
 static var strictEndDate: HKQueryOptions { get }
 ```
 
+```c
+HKQueryOptionStrictEndDate
+```
+
 #### Discussion
 
 The sample’s end time must be equal to or later than the target’s start time, and the sample’s end time must also be earlier than the target’s end time.
 
 ## See Also
 
-- [static var strictStartDate: HKQueryOptions](hkqueryoptions/strictstartdate.md)
+### Constants
+- [static var strictStartDate: HKQueryOptions](./strictstartdate.md)
   The sample’s start time must fall within the target time period.
 
 

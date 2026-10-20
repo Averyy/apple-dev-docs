@@ -1,7 +1,8 @@
 # operation
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reading or writing operation the input performs.
 
@@ -20,7 +21,8 @@ var operation: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput.Operati
 
 ## See Also
 
-- [ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput.Operation](asauthorizationpublickeycredentiallargeblobassertioninput-swift.struct/operation-swift.enum.md)
+### Inspecting the operation
+- [ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput.Operation](./operation-swift.enum.md)
   A type to represent the possible operations of a large binary object assertion input.
 
 

@@ -1,7 +1,8 @@
 # invocationOptions
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Options that define whether measurement is automatically or manually controlled.
 
@@ -11,11 +12,16 @@ Options that define whether measurement is automatically or manually controlled.
 var invocationOptions: XCTMeasureOptions.InvocationOptions { get set }
 ```
 
+```objc
+@property (nonatomic) XCTMeasurementInvocationOptions invocationOptions;
+```
+
 ## See Also
 
-- [XCTMeasureOptions.InvocationOptions](xctmeasureoptions/invocationoptions-swift.struct.md)
+### Using Option Details
+- [XCTMeasureOptions.InvocationOptions](./invocationoptions-swift.struct.md)
   Test measurement options that control how measurement starts and stops.
-- [var iterationCount: Int](xctmeasureoptions/iterationcount.md)
+- [var iterationCount: Int](./iterationcount.md)
   The number of times the performance test measures its block.
 
 

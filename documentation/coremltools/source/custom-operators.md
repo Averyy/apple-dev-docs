@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/custom-operators.htm
 
 # Custom Operators
 
-**
-
-- [.md](../_sources/source/custom-operators.md)
-- **
-
-.pdf
-
-**
-
-# Custom Operators
-
- Table of contents 
-
-## Contents
-
-# Custom Operators
-
 While converting a model to [Core ML](https://developer.apple.com/documentation/coreml), you may encounter an unsupported operation that can’t be represented by a [composite operator](composite-operators.md).
 
 In such cases you can create a *custom layer* in your model for the custom operator, and implement the [Swift](https://developer.apple.com/swift/) classes that define the operator’s computational behavior. For instructions, see [Creating and Integrating a Model with Custom Layers](https://developer.apple.com/documentation/coreml/core_ml_api/creating_and_integrating_a_model_with_custom_layers).
@@ -166,5 +149,3 @@ For a complete example of implementing a custom layer, see [this detailed exampl
 Custom Layer Support
 
 Custom layers are supported when the conversion is targeted at the “Neural Network” backend. They are not available when using the [ML Programs](convert-to-ml-program.md) backend.
-
-** Contents

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,11 +18,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kUSBAnyType](1643517-anonymous/kusbanytype.md)
-- [kUSBBulk](1643517-anonymous/kusbbulk.md)
-- [kUSBControl](1643517-anonymous/kusbcontrol.md)
-- [kUSBInterrupt](1643517-anonymous/kusbinterrupt.md)
-- [kUSBIsoc](1643517-anonymous/kusbisoc.md)
+- [kUSBAnyType](./api-1643517-anonymous/kusbanytype.md)
+- [kUSBBulk](./api-1643517-anonymous/kusbbulk.md)
+- [kUSBControl](./api-1643517-anonymous/kusbcontrol.md)
+- [kUSBInterrupt](./api-1643517-anonymous/kusbinterrupt.md)
+- [kUSBIsoc](./api-1643517-anonymous/kusbisoc.md)
 
 
 ---

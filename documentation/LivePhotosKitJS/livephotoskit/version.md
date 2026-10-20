@@ -10,13 +10,14 @@ The version of LivePhotosKit JS.
 
 ## Declaration
 
-```swift
+```
 const String VERSION;
 ```
 
 ## See Also
 
-- [LIVEPHOTOSKIT_LOADED](livephotoskit/livephotoskit_loaded.md)
+### Constants
+- [LIVEPHOTOSKIT_LOADED](./livephotoskit_loaded.md)
   An event that is fired when LivePhotosKit JS is loaded.
 
 

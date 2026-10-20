@@ -1,12 +1,13 @@
 # update()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the window.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ Updates the window.
 func update()
 ```
 
+```objc
+- (void) update;
+```
+
 #### Discussion
 
-The `NSWindow` implementation of this method does nothing more than post an [`didUpdateNotification`](nswindow/didupdatenotification.md) notification to the default notification center. A subclass can override this method to perform specialized operations, but it should send an update message to `super` just before returning. For example, the `NSMenu` class implements this method to disable and enable menu commands.
+The `NSWindow` implementation of this method does nothing more than post an [`didUpdateNotification`](./didupdatenotification.md) notification to the default notification center. A subclass can override this method to perform specialized operations, but it should send an update message to `super` just before returning. For example, the `NSMenu` class implements this method to disable and enable menu commands.
 
-An `NSWindow` object is automatically sent an `update` message on every pass through the event loop and before it’s displayed onscreen. You can manually cause an `update` message to be sent to all visible `NSWindow` objects through the `NSApplication` [`updateWindows()`](nsapplication/updatewindows().md) method.
+An `NSWindow` object is automatically sent an `update` message on every pass through the event loop and before it’s displayed onscreen. You can manually cause an `update` message to be sent to all visible `NSWindow` objects through the `NSApplication` [`updateWindows()`](../nsapplication/updatewindows%28%29.md) method.
 
 ## See Also
 
-- [func setWindowsNeedUpdate(Bool)](nsapplication/setwindowsneedupdate(_:).md)
+### Related Documentation
+- [func setWindowsNeedUpdate(Bool)](../nsapplication/setwindowsneedupdate%28_%29.md)
   Sets whether the receiver’s windows need updating when the receiver has finished processing the current event.
 
 

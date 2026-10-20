@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user info dictionary.
 
@@ -20,6 +21,10 @@ The user info dictionary.
 var userInfo: [String : Any] { get }
 ```
 
+```objc
+@property (copy, readonly) NSDictionary<NSString *,id> * userInfo;
+```
+
 #### Discussion
 
 If the user info dictionary has not been set, this property is `nil`.
@@ -28,11 +33,13 @@ On macOS 10.8 or later, if the user info dictionary has not been set, this prope
 
 ## See Also
 
-- [var localizedDescription: String](nserror/localizeddescription.md)
+### Related Documentation
+- [var localizedDescription: String](./localizeddescription.md)
   A string containing the localized description of the error.
-- [var code: Int](nserror/code.md)
+### Getting Error Properties
+- [var code: Int](./code.md)
   The error code.
-- [var domain: String](nserror/domain.md)
+- [var domain: String](./domain.md)
   A string containing the error domain.
 
 

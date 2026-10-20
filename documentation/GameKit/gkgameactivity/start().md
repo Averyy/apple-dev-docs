@@ -1,7 +1,8 @@
 # start()
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts the game activity if it’s not already started.
 
@@ -19,13 +20,18 @@ Starts the game activity if it’s not already started.
 func start()
 ```
 
+```objc
+- (void) start;
+```
+
 ## See Also
 
-- [func pause()](gkgameactivity/pause.md)
+### Updating the activity state
+- [func pause()](./pause%28%29.md)
   Pauses the game activity if it’s not already paused.
-- [func resume()](gkgameactivity/resume.md)
+- [func resume()](./resume%28%29.md)
   Resumes the game activity if it was paused.
-- [func end()](gkgameactivity/end.md)
+- [func end()](./end%28%29.md)
   Ends the game activity if it’s not already ended.
 
 

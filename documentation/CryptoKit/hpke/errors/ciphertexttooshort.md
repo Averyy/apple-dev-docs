@@ -1,7 +1,8 @@
 # HPKE.Errors.ciphertextTooShort
 
 **Framework**: Apple CryptoKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The ciphertext is too short.
 

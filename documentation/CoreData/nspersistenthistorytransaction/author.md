@@ -1,7 +1,8 @@
 # author
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A granular description of the context that made the persistent history change, if available.
 
@@ -20,31 +21,36 @@ A granular description of the context that made the persistent history change, i
 var author: String? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSString * author;
+```
+
 ## Mentions
 
-- [Consuming relevant store changes](consuming-relevant-store-changes.md)
+- [Consuming relevant store changes](../consuming-relevant-store-changes.md)
 
 #### Discussion
 
-This property has a value if the managed object context set a [`transactionAuthor`](nsmanagedobjectcontext/transactionauthor.md) before the save.
+This property has a value if the managed object context set a [`transactionAuthor`](../nsmanagedobjectcontext/transactionauthor.md) before the save.
 
 ## See Also
 
-- [var bundleID: String](nspersistenthistorytransaction/bundleid.md)
+### Inspecting Transaction Details
+- [var bundleID: String](./bundleid.md)
   The originating bundle’s identifier.
-- [var changes: [NSPersistentHistoryChange]?](nspersistenthistorytransaction/changes.md)
+- [var changes: [NSPersistentHistoryChange]?](./changes.md)
   The array of persistent history changes.
-- [var contextName: String?](nspersistenthistorytransaction/contextname.md)
+- [var contextName: String?](./contextname.md)
   The originating context’s name.
-- [var processID: String](nspersistenthistorytransaction/processid.md)
+- [var processID: String](./processid.md)
   The originating process’s identifier.
-- [var storeID: String](nspersistenthistorytransaction/storeid.md)
+- [var storeID: String](./storeid.md)
   The originating store’s identifier.
-- [var timestamp: Date](nspersistenthistorytransaction/timestamp.md)
+- [var timestamp: Date](./timestamp.md)
   The date of the persistent history change.
-- [var token: NSPersistentHistoryToken](nspersistenthistorytransaction/token.md)
+- [var token: NSPersistentHistoryToken](./token.md)
   The token that represents this transaction in the persistent history.
-- [var transactionNumber: Int64](nspersistenthistorytransaction/transactionnumber.md)
+- [var transactionNumber: Int64](./transactionnumber.md)
   The transaction’s numeric identifier.
 
 

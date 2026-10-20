@@ -1,7 +1,8 @@
 # lineStyle(for:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the line style for the given data value. Returns `nil` if the line style scale is unavailable, or the value is invalid.
 

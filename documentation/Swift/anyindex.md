@@ -1,7 +1,8 @@
 # AnyIndex
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A wrapper over an underlying index that hides the specific underlying type.
 
@@ -24,31 +25,32 @@ struct AnyIndex
 ## Topics
 
 ### Initializers
-- [init<BaseIndex>(BaseIndex)](anyindex/init(_:).md)
+- [init<BaseIndex>(BaseIndex)](./anyindex/init%28_%29.md)
   Creates a new index wrapping `base`.
 ### Default Implementations
-- [Comparable Implementations](anyindex/comparable-implementations.md)
-- [Equatable Implementations](anyindex/equatable-implementations.md)
+- [Comparable Implementations](./anyindex/comparable-implementations.md)
+- [Equatable Implementations](./anyindex/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](comparable.md)
-- [Equatable](equatable.md)
+- [Comparable](./comparable.md)
+- [Equatable](./equatable.md)
 
 ## See Also
 
-- [struct AnySequence](anysequence.md)
+### Type-Erasing Wrappers
+- [struct AnySequence](./anysequence.md)
   A type-erased sequence.
-- [struct AnyCollection](anycollection.md)
+- [struct AnyCollection](./anycollection.md)
   A type-erased wrapper over any collection with indices that support forward traversal.
-- [struct AnyBidirectionalCollection](anybidirectionalcollection.md)
+- [struct AnyBidirectionalCollection](./anybidirectionalcollection.md)
   A type-erased wrapper over any collection with indices that support bidirectional traversal.
-- [struct AnyRandomAccessCollection](anyrandomaccesscollection.md)
+- [struct AnyRandomAccessCollection](./anyrandomaccesscollection.md)
   A type-erased wrapper over any collection with indices that support random access traversal.
-- [struct AnyIterator](anyiterator.md)
+- [struct AnyIterator](./anyiterator.md)
   A type-erased iterator of `Element`.
-- [struct AnyHashable](anyhashable.md)
+- [struct AnyHashable](./anyhashable.md)
   A type-erased hashable value.
 
 

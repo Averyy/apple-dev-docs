@@ -1,7 +1,8 @@
 # TranslationProviderUIExtensionConfiguration
 
 **Framework**: TranslationUIProvider  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The type for a translation UI provider extension’s configuration object.
 
@@ -20,19 +21,20 @@ The type for a translation UI provider extension’s configuration object.
 ## Topics
 
 ### Creating a configuration
-- [init(any TranslationUIProviderExtension)](translationprovideruiextensionconfiguration/init(_:).md)
+- [init(any TranslationUIProviderExtension)](./translationprovideruiextensionconfiguration/init%28_%29.md)
   Creates a default configuration for the given extension.
 
 ## Relationships
 
 ### Conforms To
-- [AppExtensionConfiguration](../extensionfoundation/appextensionconfiguration.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppExtensionConfiguration](../ExtensionFoundation/appextensionconfiguration.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct TranslationUIProviderSelectedTextScene](translationuiproviderselectedtextscene.md)
+### Configuration and text selection
+- [struct TranslationUIProviderSelectedTextScene](./translationuiproviderselectedtextscene.md)
   The specific app extension scene that this extension provides.
 
 

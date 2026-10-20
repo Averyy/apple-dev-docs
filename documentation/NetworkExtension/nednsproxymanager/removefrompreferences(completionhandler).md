@@ -1,7 +1,8 @@
 # removeFromPreferences(completionHandler:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the DNS proxy configuration from the caller’s DNS proxy preferences.
 
@@ -15,28 +16,37 @@ Removes the DNS proxy configuration from the caller’s DNS proxy preferences.
 ## Declaration
 
 ```swift
+func removeFromPreferences(completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func removeFromPreferences() async throws
+```
+
+```objc
+- (void) removeFromPreferencesWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-If you use a device without an installed configuration profile during development, your app can create the DNS proxy configuration from scratch. You first call the [`loadFromPreferences(completionHandler:)`](nednsproxymanager/loadfrompreferences(completionhandler:).md) method to retrieve the empty configuration. You then make updates and call the [`saveToPreferences(completionHandler:)`](nednsproxymanager/savetopreferences(completionhandler:).md) method to store them. To remove the configuration, call the [`removeFromPreferences(completionHandler:)`](nednsproxymanager/removefrompreferences(completionhandler:).md) method. This allows you to restore the device to a clean, unconfigured state.
+If you use a device without an installed configuration profile during development, your app can create the DNS proxy configuration from scratch. You first call the [`loadFromPreferences(completionHandler:)`](./loadfrompreferences%28completionhandler%29.md) method to retrieve the empty configuration. You then make updates and call the [`saveToPreferences(completionHandler:)`](./savetopreferences%28completionhandler%29.md) method to store them. To remove the configuration, call the [`removeFromPreferences(completionHandler:)`](./removefrompreferences%28completionhandler%29.md) method. This allows you to restore the device to a clean, unconfigured state.
 
-In a production environment, however, a configuration profile placed in the system by an external process typically provides the baseline DNS proxy configuration. Your app can modify this configuration at runtime using the same load-modify-save steps, but cannot remove the configuration entirely. An attempt to remove the configuration when a configuration profile is present on the device results in a [`NEDNSProxyManagerError.configurationCannotBeRemoved`](nednsproxymanagererror/configurationcannotberemoved.md) error.
+In a production environment, however, a configuration profile placed in the system by an external process typically provides the baseline DNS proxy configuration. Your app can modify this configuration at runtime using the same load-modify-save steps, but cannot remove the configuration entirely. An attempt to remove the configuration when a configuration profile is present on the device results in a [`NEDNSProxyManagerError.configurationCannotBeRemoved`](../nednsproxymanagererror/configurationcannotberemoved.md) error.
 
 If the DNS proxy is enabled, it becomes disabled as a result of this call.
 
 ## Parameters
 
-- `completionHandler`: A block called when the remove operation completes. If the operation fails, an error instance passed to this block describes the problem. Otherwise, the error is `nil`. See [`NEDNSProxyManagerError`](nednsproxymanagererror.md) for the list of possible errors.
+- `completionHandler`: A block called when the remove operation completes. If the operation fails, an error instance passed to this block describes the problem. Otherwise, the error is `nil`. See [`NEDNSProxyManagerError`](../nednsproxymanagererror.md) for the list of possible errors.
 
 ## See Also
 
-- [class func shared() -> NEDNSProxyManager](nednsproxymanager/shared.md)
+### Managing the DNS proxy configuration
+- [class func shared() -> NEDNSProxyManager](./shared%28%29.md)
   Returns a singleton DNS proxy manager instance.
-- [func loadFromPreferences(completionHandler: ((any Error)?) -> Void)](nednsproxymanager/loadfrompreferences(completionhandler:).md)
+- [func loadFromPreferences(completionHandler: ((any Error)?) -> Void)](./loadfrompreferences%28completionhandler%29.md)
   Loads the current DNS proxy configuration from the caller’s DNS proxy preferences.
-- [func saveToPreferences(completionHandler: ((any Error)?) -> Void)](nednsproxymanager/savetopreferences(completionhandler:).md)
+- [func saveToPreferences(completionHandler: ((any Error)?) -> Void)](./savetopreferences%28completionhandler%29.md)
   Saves the DNS proxy configuration in the caller’s DNS proxy preferences.
 
 

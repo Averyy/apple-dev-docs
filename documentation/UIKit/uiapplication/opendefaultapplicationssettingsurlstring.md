@@ -1,7 +1,8 @@
 # openDefaultApplicationsSettingsURLString
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The URL string used to select a default app in the Settings app.
 
@@ -19,9 +20,13 @@ nonisolated
 class let openDefaultApplicationsSettingsURLString: String
 ```
 
+```c
+extern NSString * const UIApplicationOpenDefaultApplicationsSettingsURLString;
+```
+
 #### Discussion
 
-Create a URL from this value and pass it to the [`open(_:options:completionHandler:)`](uiapplication/open(_:options:completionhandler:).md) method to launch the Settings app and display your app’s custom settings, if it has any:
+Create a URL from this value and pass it to the [`open(_:options:completionHandler:)`](./open%28_,options,completionhandler%29.md) method to launch the Settings app and display your app’s custom settings, if it has any:
 
 **Swift**:
 
@@ -44,13 +49,14 @@ NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenDefaultApplicationsS
                          completionHandler:nil];
 ```
 
-For design guidance, see Human Interface Guidelines > [`Settings`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/).
+For design guidance, see Human Interface Guidelines > [Settings](https://developer.apple.com/design/human-interface-guidelines/).
 
 ## See Also
 
-- [class let openSettingsURLString: String](uiapplication/opensettingsurlstring.md)
+### Deep linking to custom settings
+- [class let openSettingsURLString: String](./opensettingsurlstring.md)
   The URL string you use to deep link to your app’s custom settings in the Settings app.
-- [static let openNotificationSettingsURLString: String](uiapplication/opennotificationsettingsurlstring.md)
+- [static let openNotificationSettingsURLString: String](./opennotificationsettingsurlstring.md)
   The URL string you use to deep link to your app’s notification settings in the Settings app.
 
 

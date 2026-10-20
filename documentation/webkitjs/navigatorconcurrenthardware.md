@@ -1,7 +1,8 @@
 # NavigatorConcurrentHardware
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface NavigatorConcurrentHardware
 ```
 
 ## Topics
 
 ### Instance Properties
-- [hardwareConcurrency](navigatorconcurrenthardware/2871194-hardwareconcurrency.md)
+- [hardwareConcurrency](./navigatorconcurrenthardware/api-2871194-hardwareconcurrency.md)
 
 
 ---

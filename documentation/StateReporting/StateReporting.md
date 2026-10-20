@@ -1,7 +1,8 @@
 # StateReporting
 
 **Framework**: StateReporting  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Communicate your app’s state to the system to improve diagnostic actionability.
 
@@ -16,29 +17,29 @@ Communicate your app’s state to the system to improve diagnostic actionability
 
 #### Overview
 
-StateReporting lets you define named domains and emit structured state transitions from your app. [`MetricKit`](https://developer.apple.com/documentation/metrickit) surfaces state context in both state-aggregated and interval-level metric entries. Instruments displays transitions in the Points of Interest instrument so you can cross-reference app state against other profiling data.
+StateReporting lets you define named domains and emit structured state transitions from your app. [MetricKit](../MetricKit/MetricKit.md) surfaces state context in both state-aggregated and interval-level metric entries. Instruments displays transitions in the Points of Interest instrument so you can cross-reference app state against other profiling data.
 
 Each domain holds up to one active state at a time, and you can combine states across domains. For example, your game can track its graphics configuration in one domain and its game mode in another, so you can compare performance across every state combination.
 
 ## Topics
 
 ### Essentials
-- [Getting started with StateReporting](getting-started-with-statereporting.md)
+- [Getting started with StateReporting](./getting-started-with-statereporting.md)
   Define reportable metadata types, obtain a state reporter for your domain, and report transitions at the right call sites in your app.
 ### Reporting
-- [class StateReporter](statereporter.md)
+- [class StateReporter](./statereporter.md)
   An object unique per domain that records state transitions and volatile metadata updates.
 ### Defining metadata
-- [protocol ReportableMetadata](reportablemetadata.md)
+- [protocol ReportableMetadata](./reportablemetadata.md)
   A protocol for types that can supply their metadata as a dictionary of reportable values.
-- [enum ReportableMetadataValue](reportablemetadatavalue.md)
+- [enum ReportableMetadataValue](./reportablemetadatavalue.md)
   A value in a reportable-metadata dictionary.
 ### Metadata type macros
-- [macro ReportableMetadata()](reportablemetadata().md)
+- [macro ReportableMetadata()](./reportablemetadata%28%29.md)
   Automatically generates `ReportableMetadata` conformance for a type.
-- [macro ReportableMetadataKey(String)](reportablemetadatakey(_:).md)
+- [macro ReportableMetadataKey(String)](./reportablemetadatakey%28_%29.md)
   Specifies a custom key name for a property in the generated `metadataDictionary`.
-- [macro ReportableMetadataIgnored()](reportablemetadataignored().md)
+- [macro ReportableMetadataIgnored()](./reportablemetadataignored%28%29.md)
   Excludes a property from the generated `metadataDictionary`.
 
 

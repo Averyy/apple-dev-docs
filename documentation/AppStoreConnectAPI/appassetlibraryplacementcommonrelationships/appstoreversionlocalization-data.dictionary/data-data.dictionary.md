@@ -1,7 +1,8 @@
 # AppAssetLibraryPlacementCommonRelationships.AppStoreVersionLocalization.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of an App Store version localization resource on which the placement appears.
 
@@ -10,13 +11,13 @@ The type and ID of an App Store version localization resource on which the place
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryPlacementCommonRelationships.AppStoreVersionLocalization.Data
 ```
 
 ## Properties
 
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appStoreVersionLocalizations`
 - `id` (string) *(required)*
 
 

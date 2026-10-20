@@ -1,7 +1,8 @@
 # IntegerFormatStyle.Attributed
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A format style that converts integers into attributed strings.
 
@@ -20,13 +21,15 @@ A format style that converts integers into attributed strings.
 struct Attributed
 ```
 
+Available when `Value` conforms to `BinaryInteger`.
+
 #### Overview
 
-Use the [`attributed`](integerformatstyle/attributed-swift.property.md) modifier on an [`IntegerFormatStyle`](integerformatstyle.md) to create a format style of this type.
+Use the [`attributed`](./attributed-swift.property.md) modifier on an [`IntegerFormatStyle`](../integerformatstyle.md) to create a format style of this type.
 
-The attributed strings that this format style creates contain attributes from the [`AttributeScopes.FoundationAttributes.NumberFormatAttributes`](attributescopes/foundationattributes/numberformatattributes.md) attribute scope. Use these attributes to determine which runs of the attributed string represent different parts of the formatted value.
+The attributed strings that this format style creates contain attributes from the [`AttributeScopes.FoundationAttributes.NumberFormatAttributes`](../attributescopes/foundationattributes/numberformatattributes.md) attribute scope. Use these attributes to determine which runs of the attributed string represent different parts of the formatted value.
 
-The following example finds runs of the attributed string that represent different parts of a formatted currency, and adds additional attributes like [`foregroundColor`](attributescopes/swiftuiattributes/foregroundcolor.md) and [`inlinePresentationIntent`](attributescopes/foundationattributes/inlinepresentationintent.md).
+The following example finds runs of the attributed string that represent different parts of a formatted currency, and adds additional attributes like [`foregroundColor`](../attributescopes/swiftuiattributes/foregroundcolor.md) and [`inlinePresentationIntent`](../attributescopes/foundationattributes/inlinepresentationintent.md).
 
 ```swift
 func attributedPrice(price: Decimal) -> AttributedString {
@@ -51,31 +54,32 @@ func attributedPrice(price: Decimal) -> AttributedString {
 
 User interface frameworks like SwiftUI can use these attributes when presenting the attributed string, as seen here:
 
-![The currency value $1,234.56, with the dollar sign and decimal separator in red, and the digits in bold.](/images/com.apple.foundation/media-4097935@2x.png)
+![The currency value $1,234.56, with the dollar sign and decimal separator in red, and the digits in bold.](https://developer.apple.com/tutorials/images/com.apple.foundation/media-4097935@2x.png)
 
 ## Topics
 
 ### Formatting an integer
-- [func format(Value) -> AttributedString](integerformatstyle/attributed-swift.struct/format(_:).md)
+- [func format(Value) -> AttributedString](./attributed-swift.struct/format%28_%29.md)
   Formats an integer, using this style.
 ### Modifying style locale
-- [func locale(Locale) -> IntegerFormatStyle<Value>.Attributed](integerformatstyle/attributed-swift.struct/locale(_:).md)
+- [func locale(Locale) -> IntegerFormatStyle<Value>.Attributed](./attributed-swift.struct/locale%28_%29.md)
   Modifies the format style to use the specified locale.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [FormatStyle](formatstyle.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [FormatStyle](../formatstyle.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var attributed: IntegerFormatStyle<Value>.Attributed](integerformatstyle/attributed-swift.property.md)
+### Creating attributed strings
+- [var attributed: IntegerFormatStyle<Value>.Attributed](./attributed-swift.property.md)
   An attributed format style based on the integer format style.
 
 

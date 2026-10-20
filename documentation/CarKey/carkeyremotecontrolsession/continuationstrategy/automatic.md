@@ -1,7 +1,8 @@
 # CarKeyRemoteControlSession.ContinuationStrategy.automatic
 
 **Framework**: CarKey  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Auto-confirm any incoming continuation requests until the requested action is stopped or completed with no intervention from the client.
 

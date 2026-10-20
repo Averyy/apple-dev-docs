@@ -1,7 +1,8 @@
 # ColorSyncMD5
 
 **Framework**: ColorSync  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An MD5 digest that uniquely identifies a profile, as defined by the ICC specification.
 
@@ -20,26 +21,31 @@ An MD5 digest that uniquely identifies a profile, as defined by the ICC specific
 struct ColorSyncMD5
 ```
 
+```c
+typedef struct { ... } ColorSyncMD5;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](colorsyncmd5/init.md)
-- [init(digest: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8))](colorsyncmd5/init(digest:).md)
+- [init()](./colorsyncmd5/init%28%29.md)
+- [init(digest: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8))](./colorsyncmd5/init%28digest%29.md)
 ### Instance Properties
-- [var digest: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)](colorsyncmd5/digest.md)
+- [var digest: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)](./colorsyncmd5/digest.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [func ColorSyncProfileGetMD5(ColorSyncProfile!) -> ColorSyncMD5](colorsyncprofilegetmd5(_:).md)
+### Computing profile digests
+- [func ColorSyncProfileGetMD5(ColorSyncProfile!) -> ColorSyncMD5](./colorsyncprofilegetmd5%28_%29.md)
   Returns the MD5 digest for a profile.
-- [var COLORSYNC_MD5_LENGTH: Int32](colorsync_md5_length.md)
-- [var kColorSyncProfileMD5Digest: Unmanaged<CFString>!](kcolorsyncprofilemd5digest.md)
+- [var COLORSYNC_MD5_LENGTH: Int32](./colorsync_md5_length.md)
+- [var kColorSyncProfileMD5Digest: Unmanaged<CFString>!](./kcolorsyncprofilemd5digest.md)
   A key for the profile’s MD5 digest.
 
 

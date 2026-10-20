@@ -1,7 +1,8 @@
 # AccessoryNotification.Action.ActionType.background
 
 **Framework**: Accessory Notifications  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An action type that handles background interactions with a notification.
 
@@ -20,9 +21,10 @@ The app that sends the notification might not be running on the accessory, but y
 
 ## See Also
 
-- [AccessoryNotification.Action.ActionType.dismiss](accessorynotification/action/actiontype/dismiss.md)
+### Determining the type of action
+- [AccessoryNotification.Action.ActionType.dismiss](./dismiss.md)
   An action type that dismisses a notification.
-- [AccessoryNotification.Action.ActionType.textInput(placeholder:)](accessorynotification/action/actiontype/textinput(placeholder:).md)
+- [AccessoryNotification.Action.ActionType.textInput(placeholder:)](./textinput%28placeholder%29.md)
   An action type that captures text provided by a person in response to a notification.
 
 

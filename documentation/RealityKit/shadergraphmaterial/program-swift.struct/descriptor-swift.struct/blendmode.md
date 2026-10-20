@@ -1,7 +1,8 @@
 # blendMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 How materials using this program blend with content behind them.
 
@@ -25,9 +26,10 @@ When `nil`, the material renders opaque.
 
 ## See Also
 
-- [var lightingModel: LightingModel](shadergraphmaterial/program-swift.struct/descriptor-swift.struct/lightingmodel.md)
+### Configuring rendering
+- [var lightingModel: LightingModel](./lightingmodel.md)
   The lighting model to use when rendering this material.
-- [var isColorDitheringEnabled: Bool](shadergraphmaterial/program-swift.struct/descriptor-swift.struct/iscolorditheringenabled.md)
+- [var isColorDitheringEnabled: Bool](./iscolorditheringenabled.md)
   Whether to dither color values before writing to the frame buffer.
 
 

@@ -1,7 +1,8 @@
 # newline
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The newline key.
 
@@ -16,19 +17,20 @@ static let newline: NSEvent.SpecialKey
 
 ## See Also
 
-- [static let backspace: NSEvent.SpecialKey](nsevent/specialkey-swift.struct/backspace.md)
+### Getting Common Control Keys
+- [static let backspace: NSEvent.SpecialKey](./backspace.md)
   The backspace key.
-- [static let carriageReturn: NSEvent.SpecialKey](nsevent/specialkey-swift.struct/carriagereturn.md)
+- [static let carriageReturn: NSEvent.SpecialKey](./carriagereturn.md)
   The carriage return key.
-- [static let enter: NSEvent.SpecialKey](nsevent/specialkey-swift.struct/enter.md)
+- [static let enter: NSEvent.SpecialKey](./enter.md)
   The enter key.
-- [static let delete: NSEvent.SpecialKey](nsevent/specialkey-swift.struct/delete.md)
+- [static let delete: NSEvent.SpecialKey](./delete.md)
   The delete key.
-- [static let deleteForward: NSEvent.SpecialKey](nsevent/specialkey-swift.struct/deleteforward.md)
+- [static let deleteForward: NSEvent.SpecialKey](./deleteforward.md)
   The delete forward key.
-- [static let backTab: NSEvent.SpecialKey](nsevent/specialkey-swift.struct/backtab.md)
+- [static let backTab: NSEvent.SpecialKey](./backtab.md)
   The back tab key.
-- [static let tab: NSEvent.SpecialKey](nsevent/specialkey-swift.struct/tab.md)
+- [static let tab: NSEvent.SpecialKey](./tab.md)
   The tab key.
 
 

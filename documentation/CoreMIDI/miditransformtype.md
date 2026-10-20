@@ -1,18 +1,19 @@
 # MIDITransformType
 
 **Framework**: Core MIDI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that specify the type of MIDI transformation.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,47 +21,52 @@ Values that specify the type of MIDI transformation.
 enum MIDITransformType
 ```
 
+```c
+enum MIDITransformType : UInt16;
+```
+
 ## Topics
 
 ### Transform Types
-- [MIDITransformType.none](miditransformtype/none.md)
+- [MIDITransformType.none](./miditransformtype/none.md)
   No transformation.
-- [MIDITransformType.filterOut](miditransformtype/filterout.md)
+- [MIDITransformType.filterOut](./miditransformtype/filterout.md)
   A transformation that filters out an event type.
-- [MIDITransformType.mapControl](miditransformtype/mapcontrol.md)
+- [MIDITransformType.mapControl](./miditransformtype/mapcontrol.md)
   A transformation that changes a specified control number to a supplied parameter value.
-- [MIDITransformType.add](miditransformtype/add.md)
+- [MIDITransformType.add](./miditransformtype/add.md)
   A transform that adds a parameter value.
-- [MIDITransformType.scale](miditransformtype/scale.md)
+- [MIDITransformType.scale](./miditransformtype/scale.md)
   A transform that multiplies by the specified parameter value.
-- [MIDITransformType.minValue](miditransformtype/minvalue.md)
+- [MIDITransformType.minValue](./miditransformtype/minvalue.md)
   A transform that sets the minimum value to the specified parameter value.
-- [MIDITransformType.maxValue](miditransformtype/maxvalue.md)
+- [MIDITransformType.maxValue](./miditransformtype/maxvalue.md)
   A transform that sets the maximum value to the specified parameter value.
-- [MIDITransformType.mapValue](miditransformtype/mapvalue.md)
+- [MIDITransformType.mapValue](./miditransformtype/mapvalue.md)
   A transform that maps one value to another.
 ### Initializers
-- [init?(rawValue: UInt16)](miditransformtype/init(rawvalue:).md)
+- [init?(rawValue: UInt16)](./miditransformtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct MIDIValueMap](midivaluemap.md)
+### Transforming Values
+- [struct MIDIValueMap](./midivaluemap.md)
   A custom lookup table to transform MIDI 7-bit values, as contained in note numbers, velocities, control values, and so on.
-- [struct MIDIControlTransform](midicontroltransform.md)
+- [struct MIDIControlTransform](./midicontroltransform.md)
   A structure that describes the transformation of MIDI control change events.
-- [struct MIDITransform](miditransform.md)
+- [struct MIDITransform](./miditransform.md)
   The transformation of a single type of MIDI event.
-- [enum MIDITransformControlType](miditransformcontroltype.md)
+- [enum MIDITransformControlType](./miditransformcontroltype.md)
   A set of values that indicate how to interpret control numbers.
 
 

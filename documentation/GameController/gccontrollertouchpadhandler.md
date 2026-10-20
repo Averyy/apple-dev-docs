@@ -1,7 +1,8 @@
 # GCControllerTouchpadHandler
 
 **Framework**: Game Controller  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The signature for the block that executes when the user interacts with the touchpad.
 
@@ -19,21 +20,26 @@ The signature for the block that executes when the user interacts with the touch
 typealias GCControllerTouchpadHandler = (GCControllerTouchpad, Float, Float, Float, Bool) -> Void
 ```
 
+```c
+typedef void (^)(GCControllerTouchpad *, float, float, float, _Bool) GCControllerTouchpadHandler;
+```
+
 ## Parameters
 
 - `touchpad`: The touchpad that the user interacts with.
 - `xValue`: A normalized value of the x-axis touch location ranging from `-1` to `1`.
 - `yValue`: A normalized value of the y-axis touch location ranging from `-1` to `1`.
 - `buttonValue`: A normalized number between `0.0` (minimum) and `1.0` (maximum) that represents the level of pressure the user applies to the touchpad button.
-- `buttonPressed`: A Boolean value that indicates whether the user is pressing the touchpad button. If [`true`](https://developer.apple.com/documentation/swift/true), the user is pressing the button; otherwise, the user isn’t.
+- `buttonPressed`: A Boolean value that indicates whether the user is pressing the touchpad button. If [`true`](../Swift/true.md), the user is pressing the button; otherwise, the user isn’t.
 
 ## See Also
 
-- [var touchDown: GCControllerTouchpadHandler?](gccontrollertouchpad/touchdown.md)
+### Getting change information
+- [var touchDown: GCControllerTouchpadHandler?](./gccontrollertouchpad/touchdown.md)
   The block that the element calls when the user begins touching the touchpad.
-- [var touchMoved: GCControllerTouchpadHandler?](gccontrollertouchpad/touchmoved.md)
+- [var touchMoved: GCControllerTouchpadHandler?](./gccontrollertouchpad/touchmoved.md)
   The block that the element calls when the user continues touching the touchpad, not when the user begins or ends touching the touchpad.
-- [var touchUp: GCControllerTouchpadHandler?](gccontrollertouchpad/touchup.md)
+- [var touchUp: GCControllerTouchpadHandler?](./gccontrollertouchpad/touchup.md)
   The block that the element calls when the user finishes touching the touchpad.
 
 

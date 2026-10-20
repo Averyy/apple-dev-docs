@@ -1,7 +1,8 @@
 # HMCharacteristicTypeCurrentLightLevel
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The current light level.
 
@@ -19,19 +20,24 @@ The current light level.
 let HMCharacteristicTypeCurrentLightLevel: String
 ```
 
+```c
+extern NSString * const HMCharacteristicTypeCurrentLightLevel;
+```
+
 #### Discussion
 
 The corresponding value is a number in units of lux.
 
 ## See Also
 
-- [let HMCharacteristicTypeHue: String](hmcharacteristictypehue.md)
+### Light
+- [let HMCharacteristicTypeHue: String](./hmcharacteristictypehue.md)
   The hue of the color used by a light.
-- [let HMCharacteristicTypeBrightness: String](hmcharacteristictypebrightness.md)
+- [let HMCharacteristicTypeBrightness: String](./hmcharacteristictypebrightness.md)
   The brightness of a light.
-- [let HMCharacteristicTypeSaturation: String](hmcharacteristictypesaturation.md)
+- [let HMCharacteristicTypeSaturation: String](./hmcharacteristictypesaturation.md)
   The saturation of the color used by a light.
-- [let HMCharacteristicTypeColorTemperature: String](hmcharacteristictypecolortemperature.md)
+- [let HMCharacteristicTypeColorTemperature: String](./hmcharacteristictypecolortemperature.md)
   The color temperature of a light.
 
 

@@ -1,7 +1,8 @@
 # CiTestStatus
 
 **Framework**: App Store Connect API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A string that represents test status information.
 
@@ -10,36 +11,45 @@ A string that represents test status information.
 
 ## Declaration
 
-```swift
+```
 string CiTestStatus
 ```
 
+## Possible Values
+
+- `SUCCESS`: The tests passed.
+- `FAILURE`: The tests failed.
+- `MIXED`: Some tests passed and some failed.
+- `SKIPPED`: Xcode Cloud skipped some tests.
+- `EXPECTED_FAILURE`: Tests failed that you marked as expected to fail with [XCTExpectFailure](../XCTest/xctexpectfailure.md).
+
 ## See Also
 
-- [object CiProduct](ciproduct.md)
+### Objects
+- [object CiProduct](./ciproduct.md)
   An app or framework registered in Xcode Cloud that has one or more workflows and build history.
-- [object CiProductResponse](ciproductresponse.md)
+- [object CiProductResponse](./ciproductresponse.md)
   The response body for endpoints that read a single Xcode Cloud product.
-- [object CiProductsResponse](ciproductsresponse.md)
+- [object CiProductsResponse](./ciproductsresponse.md)
   The response body for endpoints that list Xcode Cloud products.
-- [object CiProductAdditionalRepositoriesLinkagesResponse](ciproductadditionalrepositorieslinkagesresponse.md)
-- [object CiProductAppLinkageResponse](ciproductapplinkageresponse.md)
-- [object CiProductBuildRunsLinkagesResponse](ciproductbuildrunslinkagesresponse.md)
-- [object CiProductPrimaryRepositoriesLinkagesResponse](ciproductprimaryrepositorieslinkagesresponse.md)
-- [object CiProductWorkflowsLinkagesResponse](ciproductworkflowslinkagesresponse.md)
-- [object CiBranchStartCondition](cibranchstartcondition.md)
+- [object CiProductAdditionalRepositoriesLinkagesResponse](./ciproductadditionalrepositorieslinkagesresponse.md)
+- [object CiProductAppLinkageResponse](./ciproductapplinkageresponse.md)
+- [object CiProductBuildRunsLinkagesResponse](./ciproductbuildrunslinkagesresponse.md)
+- [object CiProductPrimaryRepositoriesLinkagesResponse](./ciproductprimaryrepositorieslinkagesresponse.md)
+- [object CiProductWorkflowsLinkagesResponse](./ciproductworkflowslinkagesresponse.md)
+- [object CiBranchStartCondition](./cibranchstartcondition.md)
   Settings for a start condition that starts a build if a branch changes.
-- [object CiFilesAndFoldersRule](cifilesandfoldersrule.md)
+- [object CiFilesAndFoldersRule](./cifilesandfoldersrule.md)
   Settings Xcode Cloud uses to determine whether a change should start a new build or not.
-- [object CiGitUser](cigituser.md)
+- [object CiGitUser](./cigituser.md)
   The Git identity (name and email) of the person who authored or committed the code change that triggered an Xcode Cloud build.
-- [object CiIssueCounts](ciissuecounts.md)
+- [object CiIssueCounts](./ciissuecounts.md)
   A summary of the warnings, errors, analyzer warnings, and test failures in an Xcode Cloud build run.
-- [object CiPullRequestStartCondition](cipullrequeststartcondition.md)
+- [object CiPullRequestStartCondition](./cipullrequeststartcondition.md)
   Settings for a start condition that starts a build if a pull request changes.
-- [object CiScheduledStartCondition](cischeduledstartcondition.md)
+- [object CiScheduledStartCondition](./cischeduledstartcondition.md)
   Settings for a start condition that starts a build based on a schedule.
-- [object CiTagStartCondition](citagstartcondition.md)
+- [object CiTagStartCondition](./citagstartcondition.md)
   Settings for a start condition that starts a build if a Git tag changes.
 
 

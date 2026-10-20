@@ -1,7 +1,8 @@
 # staticTravelTime
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The estimated travel time in seconds, excluding delays for traffic.
 
@@ -10,7 +11,7 @@ The estimated travel time in seconds, excluding delays for traffic.
 
 ## Declaration
 
-```swift
+```
 staticTravelTime: number | null;
 ```
 
@@ -20,13 +21,14 @@ This static travel time reflects the time it takes to arrive at the destination 
 
 ## See Also
 
-- [transportType](etaresult/transporttype.md)
+### Estimated Arrival Times
+- [transportType](./transporttype.md)
   The mode of transportation used to estimate the arrival time.
-- [destination](etaresult/destination.md)
+- [destination](./destination.md)
   The coordinates that represent the endpoint for estimated arrival time requests.
-- [distance](etaresult/distance.md)
+- [distance](./distance.md)
   The route distance in meters.
-- [expectedTravelTime](etaresult/expectedtraveltime.md)
+- [expectedTravelTime](./expectedtraveltime.md)
   The estimated travel time in seconds, including delays due to traffic.
 
 

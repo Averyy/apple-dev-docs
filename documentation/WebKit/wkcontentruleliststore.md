@@ -1,7 +1,8 @@
 # WKContentRuleListStore
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains the rules for how to load and filter content in the web view.
 
@@ -19,59 +20,64 @@ An object that contains the rules for how to load and filter content in the web 
 class WKContentRuleListStore
 ```
 
+```objc
+@interface WKContentRuleListStore : NSObject
+```
+
 #### Overview
 
-Use a [`WKContentRuleListStore`](wkcontentruleliststore.md) to compile and manage rules for filtering content in a web view. Rule lists act as content blockers inside your app. You use them to prevent the web view from loading specific content, either based on the original location of that content or other criteria you specify. For example, a corporate app might use rules to prevent the web view from loading content that originates from outside the corporate network.
+Use a [`WKContentRuleListStore`](./wkcontentruleliststore.md) to compile and manage rules for filtering content in a web view. Rule lists act as content blockers inside your app. You use them to prevent the web view from loading specific content, either based on the original location of that content or other criteria you specify. For example, a corporate app might use rules to prevent the web view from loading content that originates from outside the corporate network.
 
-Fetch the default [`WKContentRuleListStore`](wkcontentruleliststore.md) object or create a custom store object and use it to compile or access the available rules. Each store object stores its existing rules persistently in the file system and loads those rules at creation time. A store object doesn’t automatically apply any of its rules to a particular web view. To apply a rule to a web view, add it to the [`WKUserContentController`](wkusercontentcontroller.md) object of the web view’s configuration object.
+Fetch the default [`WKContentRuleListStore`](./wkcontentruleliststore.md) object or create a custom store object and use it to compile or access the available rules. Each store object stores its existing rules persistently in the file system and loads those rules at creation time. A store object doesn’t automatically apply any of its rules to a particular web view. To apply a rule to a web view, add it to the [`WKUserContentController`](./wkusercontentcontroller.md) object of the web view’s configuration object.
 
 ## Topics
 
 ### Creating a Content Rule List Store
-- [class func `default`() -> Self!](wkcontentruleliststore/default.md)
+- [class func `default`() -> Self!](./wkcontentruleliststore/default%28%29.md)
   Returns the default content rule list store.
-- [convenience init!(url: URL!)](wkcontentruleliststore/init(url:)-dile.md)
+- [convenience init!(url: URL!)](./wkcontentruleliststore/init%28url%29-dile.md)
   Creates a new content rule list store in the specified directory.
 ### Creating and Deleting Content Rule Lists
-- [func compileContentRuleList(forIdentifier: String!, encodedContentRuleList: String!, completionHandler: ((WKContentRuleList?, (any Error)?) -> Void)!)](wkcontentruleliststore/compilecontentrulelist(foridentifier:encodedcontentrulelist:completionhandler:).md)
+- [func compileContentRuleList(forIdentifier: String!, encodedContentRuleList: String!, completionHandler: ((WKContentRuleList?, (any Error)?) -> Void)!)](./wkcontentruleliststore/compilecontentrulelist%28foridentifier,encodedcontentrulelist,completionhandler%29.md)
   Compiles the specified JSON content into a new rule list and adds it to the current data store.
-- [func removeContentRuleList(forIdentifier: String!, completionHandler: (((any Error)?) -> Void)!)](wkcontentruleliststore/removecontentrulelist(foridentifier:completionhandler:).md)
+- [func removeContentRuleList(forIdentifier: String!, completionHandler: (((any Error)?) -> Void)!)](./wkcontentruleliststore/removecontentrulelist%28foridentifier,completionhandler%29.md)
   Removes a rule list from the current data store asynchronously.
 ### Accessing the Current Rule Lists
-- [func getAvailableContentRuleListIdentifiers((([String]?) -> Void)!)](wkcontentruleliststore/getavailablecontentrulelistidentifiers(_:).md)
+- [func getAvailableContentRuleListIdentifiers((([String]?) -> Void)!)](./wkcontentruleliststore/getavailablecontentrulelistidentifiers%28_%29.md)
   Fetches the identifiers for all rule lists in the store asynchronously.
-- [func lookUpContentRuleList(forIdentifier: String!, completionHandler: ((WKContentRuleList?, (any Error)?) -> Void)!)](wkcontentruleliststore/lookupcontentrulelist(foridentifier:completionhandler:).md)
+- [func lookUpContentRuleList(forIdentifier: String!, completionHandler: ((WKContentRuleList?, (any Error)?) -> Void)!)](./wkcontentruleliststore/lookupcontentrulelist%28foridentifier,completionhandler%29.md)
   Searches asynchronously for a specific rule list in the data store.
 ### Initializers
-- [convenience init!(URL: URL!)](wkcontentruleliststore/init(url:)-7emmv.md)
+- [convenience init!(URL: URL!)](./wkcontentruleliststore/init%28url%29-7emmv.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class WKUserContentController](wkusercontentcontroller.md)
+### Page content
+- [class WKUserContentController](./wkusercontentcontroller.md)
   An object for managing interactions between JavaScript code and your web view, and for filtering content in your web view.
-- [class WKContentWorld](wkcontentworld.md)
+- [class WKContentWorld](./wkcontentworld.md)
   An object that defines a scope of execution for JavaScript code, and which you use to prevent conflicts between different scripts.
-- [class WKFrameInfo](wkframeinfo.md)
+- [class WKFrameInfo](./wkframeinfo.md)
   An object that contains information about a frame on a webpage.
-- [class WKSecurityOrigin](wksecurityorigin.md)
+- [class WKSecurityOrigin](./wksecurityorigin.md)
   An object that identifies the origin of a particular resource.
-- [class WKUserScript](wkuserscript.md)
+- [class WKUserScript](./wkuserscript.md)
   A script that the web view injects into a webpage.
-- [WKContentWorld.Configuration](wkcontentworld/configuration.md)
-- [class WKJSHandle](wkjshandle.md)
+- [WKContentWorld.Configuration](./wkcontentworld/configuration.md)
+- [class WKJSHandle](./wkjshandle.md)
   A WKJSHandle object contains a reference to a JavaScript object.
 
 

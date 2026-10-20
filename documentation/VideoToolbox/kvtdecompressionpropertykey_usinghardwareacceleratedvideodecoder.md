@@ -1,7 +1,8 @@
 # kVTDecompressionPropertyKey_UsingHardwareAcceleratedVideoDecoder
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates if a hardware-accelerated video decoder is being used.
 
@@ -19,15 +20,20 @@ Indicates if a hardware-accelerated video decoder is being used.
 let kVTDecompressionPropertyKey_UsingHardwareAcceleratedVideoDecoder: CFString
 ```
 
+```c
+extern CFStringRef const kVTDecompressionPropertyKey_UsingHardwareAcceleratedVideoDecoder;
+```
+
 #### Discussion
 
-You can query this property using [`VTSessionCopyProperty(_:key:allocator:valueOut:)`](vtsessioncopyproperty(_:key:allocator:valueout:).md) after you have enabled hardware accelerated decode using [`kVTVideoDecoderSpecification_EnableHardwareAcceleratedVideoDecoder`](kvtvideodecoderspecification_enablehardwareacceleratedvideodecoder.md) to see if a hardware accelerated decoder was selected.
+You can query this property using [`VTSessionCopyProperty(_:key:allocator:valueOut:)`](./vtsessioncopyproperty%28_,key,allocator,valueout%29.md) after you have enabled hardware accelerated decode using [`kVTVideoDecoderSpecification_EnableHardwareAcceleratedVideoDecoder`](./kvtvideodecoderspecification_enablehardwareacceleratedvideodecoder.md) to see if a hardware accelerated decoder was selected.
 
 ## See Also
 
-- [let kVTVideoDecoderSpecification_EnableHardwareAcceleratedVideoDecoder: CFString](kvtvideodecoderspecification_enablehardwareacceleratedvideodecoder.md)
+### Hardware Acceleration
+- [let kVTVideoDecoderSpecification_EnableHardwareAcceleratedVideoDecoder: CFString](./kvtvideodecoderspecification_enablehardwareacceleratedvideodecoder.md)
   A Boolean value indicating whether VideoToolbox uses a hardware-accelerated video decoder, if available.
-- [let kVTVideoDecoderSpecification_RequireHardwareAcceleratedVideoDecoder: CFString](kvtvideodecoderspecification_requirehardwareacceleratedvideodecoder.md)
+- [let kVTVideoDecoderSpecification_RequireHardwareAcceleratedVideoDecoder: CFString](./kvtvideodecoderspecification_requirehardwareacceleratedvideodecoder.md)
   A Boolean value indicating whether to require hardware-accelerated decoding.
 
 

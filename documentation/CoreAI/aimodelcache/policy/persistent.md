@@ -1,7 +1,8 @@
 # persistent
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A policy that prevents automatic purging of specialized assets.
 
@@ -25,7 +26,8 @@ This policy ensures the system does not purge specialized assets until the next 
 
 ## See Also
 
-- [static let `default`: AIModelCache.Policy](aimodelcache/policy/default.md)
+### Using preset policies
+- [static let `default`: AIModelCache.Policy](./default.md)
   A policy that marks specialized assets as purgeable.
 
 

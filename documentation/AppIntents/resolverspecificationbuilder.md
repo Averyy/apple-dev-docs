@@ -1,7 +1,8 @@
 # ResolverSpecificationBuilder
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A result builder that declaratively specifies a set of resolvers.
 
@@ -11,7 +12,7 @@ A result builder that declaratively specifies a set of resolvers.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -24,35 +25,36 @@ enum ResolverSpecificationBuilder<Property> where Property : _IntentValue
 ## Topics
 
 ### Building the resolver specification
-- [static func buildBlock() -> some ResolverSpecification](resolverspecificationbuilder/buildblock.md)
-- [static func buildBlock<R0>(R0) -> some ResolverSpecification](resolverspecificationbuilder/buildblock(_:).md)
-- [static func buildBlock<R0, R1>(R0, R1) -> some ResolverSpecification](resolverspecificationbuilder/buildblock(_:_:).md)
-- [static func buildBlock<R0, R1, R2>(R0, R1, R2) -> some ResolverSpecification](resolverspecificationbuilder/buildblock(_:_:_:).md)
-- [static func buildBlock<R0, R1, R2, R3>(R0, R1, R2, R3) -> some ResolverSpecification](resolverspecificationbuilder/buildblock(_:_:_:_:).md)
-- [static func buildBlock<R0, R1, R2, R3, R4>(R0, R1, R2, R3, R4) -> some ResolverSpecification](resolverspecificationbuilder/buildblock(_:_:_:_:_:).md)
-- [static func buildBlock<R0, R1, R2, R3, R4, R5>(R0, R1, R2, R3, R4, R5) -> some ResolverSpecification](resolverspecificationbuilder/buildblock(_:_:_:_:_:_:).md)
-- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6>(R0, R1, R2, R3, R4, R5, R6) -> some ResolverSpecification](resolverspecificationbuilder/buildblock(_:_:_:_:_:_:_:).md)
-- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7>(R0, R1, R2, R3, R4, R5, R6, R7) -> some ResolverSpecification](resolverspecificationbuilder/buildblock(_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7, R8>(R0, R1, R2, R3, R4, R5, R6, R7, R8) -> some ResolverSpecification](resolverspecificationbuilder/buildblock(_:_:_:_:_:_:_:_:_:).md)
+- [static func buildBlock() -> some ResolverSpecification](./resolverspecificationbuilder/buildblock%28%29.md)
+- [static func buildBlock<R0>(R0) -> some ResolverSpecification](./resolverspecificationbuilder/buildblock%28_%29.md)
+- [static func buildBlock<R0, R1>(R0, R1) -> some ResolverSpecification](./resolverspecificationbuilder/buildblock%28_,_%29.md)
+- [static func buildBlock<R0, R1, R2>(R0, R1, R2) -> some ResolverSpecification](./resolverspecificationbuilder/buildblock%28_,_,_%29.md)
+- [static func buildBlock<R0, R1, R2, R3>(R0, R1, R2, R3) -> some ResolverSpecification](./resolverspecificationbuilder/buildblock%28_,_,_,_%29.md)
+- [static func buildBlock<R0, R1, R2, R3, R4>(R0, R1, R2, R3, R4) -> some ResolverSpecification](./resolverspecificationbuilder/buildblock%28_,_,_,_,_%29.md)
+- [static func buildBlock<R0, R1, R2, R3, R4, R5>(R0, R1, R2, R3, R4, R5) -> some ResolverSpecification](./resolverspecificationbuilder/buildblock%28_,_,_,_,_,_%29.md)
+- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6>(R0, R1, R2, R3, R4, R5, R6) -> some ResolverSpecification](./resolverspecificationbuilder/buildblock%28_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7>(R0, R1, R2, R3, R4, R5, R6, R7) -> some ResolverSpecification](./resolverspecificationbuilder/buildblock%28_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7, R8>(R0, R1, R2, R3, R4, R5, R6, R7, R8) -> some ResolverSpecification](./resolverspecificationbuilder/buildblock%28_,_,_,_,_,_,_,_,_%29.md)
 ### Structures
-- [ResolverSpecificationBuilder.Specification](resolverspecificationbuilder/specification.md)
+- [ResolverSpecificationBuilder.Specification](./resolverspecificationbuilder/specification.md)
 ### Type Methods
-- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7, R8, R9>(R0, R1, R2, R3, R4, R5, R6, R7, R8, R9) -> some ResolverSpecification](resolverspecificationbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10>(R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10) -> some ResolverSpecification](resolverspecificationbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11>(R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11) -> some ResolverSpecification](resolverspecificationbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12>(R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12) -> some ResolverSpecification](resolverspecificationbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13>(R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13) -> some ResolverSpecification](resolverspecificationbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14>(R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14) -> some ResolverSpecification](resolverspecificationbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
-- [static func buildExpression<ResolverType>(ResolverType) -> ResolverType](resolverspecificationbuilder/buildexpression(_:).md)
-- [static func buildPartialBlock<each Accumulated, R>(accumulated: ResolverSpecificationBuilder<Property>.Specification<Property, repeat each Accumulated>, next: R) -> ResolverSpecificationBuilder<Property>.Specification<Property, repeat each Accumulated, R>](resolverspecificationbuilder/buildpartialblock(accumulated:next:).md)
-- [static func buildPartialBlock<R>(first: R) -> ResolverSpecificationBuilder<Property>.Specification<Property, R>](resolverspecificationbuilder/buildpartialblock(first:).md)
+- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7, R8, R9>(R0, R1, R2, R3, R4, R5, R6, R7, R8, R9) -> some ResolverSpecification](./resolverspecificationbuilder/buildblock%28_,_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10>(R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10) -> some ResolverSpecification](./resolverspecificationbuilder/buildblock%28_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11>(R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11) -> some ResolverSpecification](./resolverspecificationbuilder/buildblock%28_,_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12>(R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12) -> some ResolverSpecification](./resolverspecificationbuilder/buildblock%28_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13>(R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13) -> some ResolverSpecification](./resolverspecificationbuilder/buildblock%28_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14>(R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14) -> some ResolverSpecification](./resolverspecificationbuilder/buildblock%28_,_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildExpression<ResolverType>(ResolverType) -> ResolverType](./resolverspecificationbuilder/buildexpression%28_%29.md)
+- [static func buildPartialBlock<each Accumulated, R>(accumulated: ResolverSpecificationBuilder<Property>.Specification<Property, repeat each Accumulated>, next: R) -> ResolverSpecificationBuilder<Property>.Specification<Property, repeat each Accumulated, R>](./resolverspecificationbuilder/buildpartialblock%28accumulated,next%29.md)
+- [static func buildPartialBlock<R>(first: R) -> ResolverSpecificationBuilder<Property>.Specification<Property, R>](./resolverspecificationbuilder/buildpartialblock%28first%29.md)
 
 ## See Also
 
-- [protocol ResolverSpecification](resolverspecification.md)
+### Managing the resolution process
+- [protocol ResolverSpecification](./resolverspecification.md)
   An internal type that a resolver uses to convert data values.
-- [struct EmptyResolverSpecification](emptyresolverspecification.md)
-- [struct StringSearchCriteriaFromStringResolverSpecificification](stringsearchcriteriafromstringresolverspecificification.md)
+- [struct EmptyResolverSpecification](./emptyresolverspecification.md)
+- [struct StringSearchCriteriaFromStringResolverSpecificification](./stringsearchcriteriafromstringresolverspecificification.md)
   An internal type that a resolver uses to convert data values.
 
 

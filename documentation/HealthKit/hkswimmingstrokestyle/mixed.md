@@ -1,7 +1,8 @@
 # HKSwimmingStrokeStyle.mixed
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user swam a mixture of strokes.
 
@@ -19,19 +20,24 @@ The user swam a mixture of strokes.
 case mixed
 ```
 
+```c
+HKSwimmingStrokeStyleMixed
+```
+
 ## See Also
 
-- [HKSwimmingStrokeStyle.backstroke](hkswimmingstrokestyle/backstroke.md)
+### Strokes
+- [HKSwimmingStrokeStyle.backstroke](./backstroke.md)
   The user swam the backstroke.
-- [HKSwimmingStrokeStyle.breaststroke](hkswimmingstrokestyle/breaststroke.md)
+- [HKSwimmingStrokeStyle.breaststroke](./breaststroke.md)
   The user swam the breaststroke.
-- [HKSwimmingStrokeStyle.butterfly](hkswimmingstrokestyle/butterfly.md)
+- [HKSwimmingStrokeStyle.butterfly](./butterfly.md)
   The user swam the butterfly stroke.
-- [HKSwimmingStrokeStyle.freestyle](hkswimmingstrokestyle/freestyle.md)
+- [HKSwimmingStrokeStyle.freestyle](./freestyle.md)
   The user swam the freestyle stroke.
-- [HKSwimmingStrokeStyle.kickboard](hkswimmingstrokestyle/kickboard.md)
+- [HKSwimmingStrokeStyle.kickboard](./kickboard.md)
   The user swam using a kickboard.
-- [HKSwimmingStrokeStyle.unknown](hkswimmingstrokestyle/unknown.md)
+- [HKSwimmingStrokeStyle.unknown](./unknown.md)
   The user’s stroke could not be determined.
 
 

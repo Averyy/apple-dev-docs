@@ -1,7 +1,8 @@
 # TextSelectionAffinity.automatic
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A selection affinity determined by the framework based on the current context.
 

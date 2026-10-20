@@ -1,7 +1,8 @@
 # visualBounds(recursive:relativeTo:excludeInactive:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes a bounding box for the entity in the specified space, optionally including child entities.
 
@@ -11,7 +12,7 @@ Computes a bounding box for the entity in the specified space, optionally includ
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,7 +23,7 @@ Computes a bounding box for the entity in the specified space, optionally includ
 
 ## Mentions
 
-- [Controlling the layout behavior of a reality view](controlling-the-layout-behavior-of-a-realityview.md)
+- [Controlling the layout behavior of a reality view](../controlling-the-layout-behavior-of-a-realityview.md)
 
 #### Return Value
 

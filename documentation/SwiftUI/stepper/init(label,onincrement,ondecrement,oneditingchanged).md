@@ -1,7 +1,8 @@
 # init(label:onIncrement:onDecrement:onEditingChanged:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a stepper instance that performs the closures you provide when the user increments or decrements the stepper.
 
@@ -24,7 +25,7 @@ nonisolated init(@ContentBuilder label: () -> Label, onIncrement: (() -> Void)?,
 
 Use this initializer to create a control with a custom title that executes closures you provide when the user clicks or taps the stepper’s increment or decrement buttons.
 
-The example below uses an array that holds a number of [`Color`](color.md) values, a local state variable, `value`, to set the control’s background color, and title label. When the user clicks or taps on the stepper’s increment or decrement buttons SwiftUI executes the relevant closure that updates `value`, wrapping the `value` to prevent overflow. SwiftUI then re-renders the view, updating the text and background color to match the current index:
+The example below uses an array that holds a number of [`Color`](../color.md) values, a local state variable, `value`, to set the control’s background color, and title label. When the user clicks or taps on the stepper’s increment or decrement buttons SwiftUI executes the relevant closure that updates `value`, wrapping the `value` to prevent overflow. SwiftUI then re-renders the view, updating the text and background color to match the current index:
 
 ```swift
 struct StepperView: View {
@@ -57,7 +58,7 @@ struct StepperView: View {
 
 }
 
-![A view displaying a stepper that uses a text view for stepper’s title](/images/com.apple.SwiftUI/SwiftUI-Stepper-increment-decrement-closures@2x.png)
+![A view displaying a stepper that uses a text view for stepper’s title](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-Stepper-increment-decrement-closures@2x.png)
 
 ## Parameters
 
@@ -68,7 +69,8 @@ struct StepperView: View {
 
 ## See Also
 
-- [init(_:onIncrement:onDecrement:onEditingChanged:)](stepper/init(_:onincrement:ondecrement:oneditingchanged:).md)
+### Creating a stepper with change behavior
+- [init(_:onIncrement:onDecrement:onEditingChanged:)](./init%28_,onincrement,ondecrement,oneditingchanged%29.md)
   Creates a stepper that uses a title key and executes the closures you provide when the user clicks or taps the stepper’s increment and decrement buttons.
 
 

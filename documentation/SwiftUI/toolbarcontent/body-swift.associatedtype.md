@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of content representing the body of this toolbar content.
@@ -23,7 +24,8 @@ associatedtype Body : ToolbarContent
 
 ## See Also
 
-- [var body: Self.Body](toolbarcontent/body-swift.property.md)
+### Implementing toolbar content
+- [var body: Self.Body](./body-swift.property.md)
   The composition of content that comprise the toolbar content.
 
 

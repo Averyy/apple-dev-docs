@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: op  
+**Role**: Operator  
 **Required**: Yes
 
 Returns the additive inverse of the specified value.
@@ -41,6 +42,12 @@ The resulting value must be representable in the same type as the argument. In p
 let z = -Int8.min
 // Overflow error
 ```
+
+## Default Implementations
+
+### SignedNumeric Implementations
+- [static func - (Self) -> Self](./minus%28_%29-2q7oc.md)
+  Returns the additive inverse of the specified value.
 
 
 ---

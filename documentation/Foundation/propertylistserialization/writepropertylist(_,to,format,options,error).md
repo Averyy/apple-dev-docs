@@ -1,7 +1,8 @@
 # writePropertyList(_:to:format:options:error:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Writes a property list to the specified stream.
 
@@ -20,6 +21,10 @@ Writes a property list to the specified stream.
 class func writePropertyList(_ plist: Any, to stream: OutputStream, format: PropertyListSerialization.PropertyListFormat, options opt: PropertyListSerialization.WriteOptions, error: NSErrorPointer) -> Int
 ```
 
+```objc
++ (NSInteger) writePropertyList:(id) plist toStream:(NSOutputStream *) stream format:(NSPropertyListFormat) format options:(NSPropertyListWriteOptions) opt error:(NSError **) error;
+```
+
 #### Return Value
 
 The number of bytes written to the stream. A return value of `0` indicates that an error occurred.
@@ -27,16 +32,17 @@ The number of bytes written to the stream. A return value of `0` indicates that 
 ## Parameters
 
 - `plist`: The property list that you want to write out.
-- `stream`: An [`OutputStream`](outputstream.md) instance that is open and ready to receive the property list data.
-- `format`: One of the property list formats defined in [`PropertyListSerialization.PropertyListFormat`](propertylistserialization/propertylistformat.md).
+- `stream`: An [`OutputStream`](../outputstream.md) instance that is open and ready to receive the property list data.
+- `format`: One of the property list formats defined in [`PropertyListSerialization.PropertyListFormat`](./propertylistformat.md).
 - `opt`: Currently unused. Set to `0`.
-- `error`: A pointer that the function may set to an [`NSError`](nserror.md) object when an error occurs to provide additional information about the error.
+- `error`: A pointer that the function may set to an [`NSError`](../nserror.md) object when an error occurs to provide additional information about the error.
 
 ## See Also
 
-- [class func data(fromPropertyList: Any, format: PropertyListSerialization.PropertyListFormat, options: PropertyListSerialization.WriteOptions) throws -> Data](propertylistserialization/data(frompropertylist:format:options:).md)
+### Serializing a Property List
+- [class func data(fromPropertyList: Any, format: PropertyListSerialization.PropertyListFormat, options: PropertyListSerialization.WriteOptions) throws -> Data](./data%28frompropertylist,format,options%29.md)
   Returns an `NSData` object containing a given property list in a specified format.
-- [PropertyListSerialization.WriteOptions](propertylistserialization/writeoptions.md)
+- [PropertyListSerialization.WriteOptions](./writeoptions.md)
 
 
 ---

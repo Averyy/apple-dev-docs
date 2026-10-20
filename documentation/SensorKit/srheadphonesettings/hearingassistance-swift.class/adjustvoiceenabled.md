@@ -1,7 +1,8 @@
 # adjustVoiceEnabled
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var adjustVoiceEnabled: SRHeadphoneSettings.SettingEnablement { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) SRHeadphoneSettingsSettingEnablement adjustVoiceEnabled;
 ```
 
 #### Discussion

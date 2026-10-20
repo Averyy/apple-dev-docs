@@ -1,7 +1,8 @@
 # schedule(in:forMode:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Schedules the receiver on a given run loop in a given mode.
 
@@ -20,6 +21,10 @@ Schedules the receiver on a given run loop in a given mode.
 func schedule(in aRunLoop: RunLoop, forMode mode: RunLoop.Mode)
 ```
 
+```objc
+- (void) scheduleInRunLoop:(NSRunLoop *) aRunLoop forMode:(NSRunLoopMode) mode;
+```
+
 #### Discussion
 
 Unless the client is polling the stream, it is responsible for ensuring that the stream is scheduled on at least one run loop and that at least one of the run loops on which the stream is scheduled is being run.
@@ -31,7 +36,8 @@ Unless the client is polling the stream, it is responsible for ensuring that the
 
 ## See Also
 
-- [func remove(from: RunLoop, forMode: RunLoop.Mode)](stream/remove(from:formode:).md)
+### Managing Run Loops
+- [func remove(from: RunLoop, forMode: RunLoop.Mode)](./remove%28from,formode%29.md)
   Removes the receiver from a given run loop running in a given mode.
 
 

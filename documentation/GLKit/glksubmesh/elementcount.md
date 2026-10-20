@@ -1,13 +1,16 @@
 # elementCount
 
 **Framework**: GLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- macOS 10.11+
-- tvOS 9.0+
+- iOS 9.0+ - Deprecated in 12.0
+- iPadOS 9.0+ - Deprecated in 12.0
+- macOS 10.11+ - Deprecated in 10.14
+- tvOS 9.0+ - Deprecated in 12.0
+
+> **Deprecated**: OpenGLES API deprecated. (Define GLES_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -15,13 +18,18 @@
 var elementCount: GLsizei { get }
 ```
 
+```objc
+@property (nonatomic, readonly) GLsizei elementCount;
+```
+
 ## See Also
 
-- [var elementBuffer: GLKMeshBuffer](glksubmesh/elementbuffer.md)
-- [var mesh: GLKMesh?](glksubmesh/mesh.md)
-- [var mode: GLenum](glksubmesh/mode.md)
-- [var name: String](glksubmesh/name.md)
-- [var type: GLenum](glksubmesh/type.md)
+### Instance Properties
+- [var elementBuffer: GLKMeshBuffer](./elementbuffer.md)
+- [var mesh: GLKMesh?](./mesh.md)
+- [var mode: GLenum](./mode.md)
+- [var name: String](./name.md)
+- [var type: GLenum](./type.md)
 
 
 ---

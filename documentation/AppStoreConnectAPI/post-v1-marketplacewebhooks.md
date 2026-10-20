@@ -1,18 +1,21 @@
 # Add a Marketplace Webhook Configuration
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Add a new endpoint URL and secret for alternative distribution package notifications.
 
 **Availability**:
-- App Store Connect API 3.3+
+- App Store Connect API 3.3+ - Deprecated in 4.0.1
+
+> **Deprecated**: This endpoint is deprecated.
 
 ## Mentions
 
-- [App Store Connect API 3.3 release notes](app-store-connect-api-3-3-release-notes.md)
-- [Configuring alternative marketplaces and alternative marketplace apps](configuring-alternative-marketplaces-and-alternative-marketplace-apps.md)
-- [Creating alternative distribution packages](creating-alternative-distribution-packages.md)
+- [App Store Connect API 3.3 release notes](./app-store-connect-api-3-3-release-notes.md)
+- [Configuring alternative marketplaces and alternative marketplace apps](./configuring-alternative-marketplaces-and-alternative-marketplace-apps.md)
+- [Creating alternative distribution packages](./creating-alternative-distribution-packages.md)
 
 #### Discussion
 
@@ -22,7 +25,7 @@ Each developer account has a single marketplace webhooks `endpointUrl`, so if yo
 
 **Request**:
 
-```None
+```
 POST https://api.appstoreconnect.apple.com/v1/marketplaceWebhooks
 {
   "data": {
@@ -67,13 +70,29 @@ POST https://api.appstoreconnect.apple.com/v1/marketplaceWebhooks
 
 `POST https://api.appstoreconnect.apple.com/v1/marketplaceWebhooks`
 
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `MarketplaceWebhookCreateRequest`
+
+## Responses
+
+- `201` Created (`MarketplaceWebhookResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `409` Conflict (`ErrorResponse`, `application/json`)
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
+
 ## See Also
 
-- [Read Marketplace Webhook Information](get-v1-marketplacewebhooks.md)
+### Managing Webhook Endpoint URLs
+- [Read Marketplace Webhook Information](./get-v1-marketplacewebhooks.md)
   Get the endpoint URL for alternative distribution package notifications.
-- [Modify a Marketplace Webhook Configuration](patch-v1-marketplacewebhooks-_id_.md)
+- [Modify a Marketplace Webhook Configuration](./patch-v1-marketplacewebhooks-_id_.md)
   Update the endpoint URL and secret for alternative distribution package notifications.
-- [Delete a Marketplace Webhook Configuration](delete-v1-marketplacewebhooks-_id_.md)
+- [Delete a Marketplace Webhook Configuration](./delete-v1-marketplacewebhooks-_id_.md)
   Delete a specific marketplace notifcation endpoint URL.
 
 

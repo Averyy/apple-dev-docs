@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the frame of the cell to draw at the specified position in a text container.
@@ -14,6 +15,10 @@ Returns the frame of the cell to draw at the specified position in a text contai
 ```swift
 nonisolated
 func cellFrame(for textContainer: NSTextContainer, proposedLineFragment lineFrag: NSRect, glyphPosition position: NSPoint, characterIndex charIndex: Int) -> NSRect
+```
+
+```objc
+- (NSRect) cellFrameForTextContainer:(NSTextContainer *) textContainer proposedLineFragment:(NSRect) lineFrag glyphPosition:(NSPoint) position characterIndex:(NSUInteger) charIndex;
 ```
 
 #### Discussion
@@ -29,9 +34,10 @@ The proposed line fragment is specified by `lineFrag`.
 
 ## See Also
 
-- [func cellSize() -> NSSize](nstextattachmentcellprotocol/cellsize.md)
+### Providing the cell metrics
+- [func cellSize() -> NSSize](./cellsize%28%29.md)
   Returns the size of the attachment’s icon.
-- [func cellBaselineOffset() -> NSPoint](nstextattachmentcellprotocol/cellbaselineoffset.md)
+- [func cellBaselineOffset() -> NSPoint](./cellbaselineoffset%28%29.md)
   Returns the text position where you draw the attachment cell’s image, relative to the current point established in the glyph layout.
 
 

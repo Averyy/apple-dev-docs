@@ -1,7 +1,8 @@
 # characteristics
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of characteristics discovered in this service.
 
@@ -20,13 +21,18 @@ A list of characteristics discovered in this service.
 var characteristics: [CBCharacteristic]? { get }
 ```
 
+```objc
+@property (retain, readonly, nullable) NSArray<CBCharacteristic *> * characteristics;
+```
+
 #### Discussion
 
-This array contains [`CBCharacteristic`](cbcharacteristic.md) objects that represent a service’s characteristics. Characteristics provide further details about a peripheral’s service. For example, a heart rate service may contain one characteristic that describes the intended body location of the device’s heart rate sensor, while another characteristic transmits heart rate measurement data.
+This array contains [`CBCharacteristic`](../cbcharacteristic.md) objects that represent a service’s characteristics. Characteristics provide further details about a peripheral’s service. For example, a heart rate service may contain one characteristic that describes the intended body location of the device’s heart rate sensor, while another characteristic transmits heart rate measurement data.
 
 ## See Also
 
-- [var includedServices: [CBService]?](cbservice/includedservices.md)
+### Accessing Service Data
+- [var includedServices: [CBService]?](./includedservices.md)
   A list of included services discovered in this service.
 
 

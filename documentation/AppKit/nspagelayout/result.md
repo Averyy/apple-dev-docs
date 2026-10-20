@@ -1,7 +1,8 @@
 # NSPageLayout.Result
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 14.0+
@@ -12,31 +13,36 @@
 enum Result
 ```
 
+```c
+enum NSPageLayoutResult : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSPageLayout.Result.cancelled](nspagelayout/result/cancelled.md)
-- [NSPageLayout.Result.changed](nspagelayout/result/changed.md)
-- [NSPageLayout.Result.cancelled](nspagelayout/result/cancelled.md)
-- [NSPageLayout.Result.changed](nspagelayout/result/changed.md)
+- [NSPageLayout.Result.cancelled](./result/cancelled.md)
+- [NSPageLayout.Result.changed](./result/changed.md)
+- [NSPageLayout.Result.cancelled](./result/cancelled.md)
+- [NSPageLayout.Result.changed](./result/changed.md)
 ### Initializers
-- [init?(rawValue: Int)](nspagelayout/result/init(rawvalue:).md)
+- [init?(rawValue: Int)](./result/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var printInfo: NSPrintInfo?](nspagelayout/printinfo.md)
+### Accessing the printing information
+- [var printInfo: NSPrintInfo?](./printinfo.md)
   The printing information object used when the page layout panel is run.
-- [class NSPrintInfo](nsprintinfo.md)
+- [class NSPrintInfo](../nsprintinfo.md)
   An object that stores information that’s used to generate printed output.
 
 

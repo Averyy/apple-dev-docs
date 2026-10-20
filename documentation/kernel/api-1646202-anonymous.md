@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,11 +18,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOVideoControlElementMaster](1646202-anonymous/kiovideocontrolelementmaster.md)
-- [kIOVideoControlScopeGlobal](1646202-anonymous/kiovideocontrolscopeglobal.md)
-- [kIOVideoControlScopeInput](1646202-anonymous/kiovideocontrolscopeinput.md)
-- [kIOVideoControlScopeOutput](1646202-anonymous/kiovideocontrolscopeoutput.md)
-- [kIOVideoControlScopePlayThrough](1646202-anonymous/kiovideocontrolscopeplaythrough.md)
+- [kIOVideoControlElementMaster](./api-1646202-anonymous/kiovideocontrolelementmaster.md)
+- [kIOVideoControlScopeGlobal](./api-1646202-anonymous/kiovideocontrolscopeglobal.md)
+- [kIOVideoControlScopeInput](./api-1646202-anonymous/kiovideocontrolscopeinput.md)
+- [kIOVideoControlScopeOutput](./api-1646202-anonymous/kiovideocontrolscopeoutput.md)
+- [kIOVideoControlScopePlayThrough](./api-1646202-anonymous/kiovideocontrolscopeplaythrough.md)
 
 
 ---

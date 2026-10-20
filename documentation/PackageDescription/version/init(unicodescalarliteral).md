@@ -1,7 +1,8 @@
 # init(unicodeScalarLiteral:)
 
 **Framework**: PackageDescription  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a version struct with the provided Unicode string.
 

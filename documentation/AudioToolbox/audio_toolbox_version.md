@@ -1,20 +1,25 @@
 # AUDIO_TOOLBOX_VERSION
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var AUDIO_TOOLBOX_VERSION: Int32 { get }
+```
+
+```c
+#define AUDIO_TOOLBOX_VERSION
 ```
 
 

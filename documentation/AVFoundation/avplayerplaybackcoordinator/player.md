@@ -1,7 +1,8 @@
 # player
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A player that participates in coordinated playback.
 
@@ -17,6 +18,10 @@ A player that participates in coordinated playback.
 
 ```swift
 weak var player: AVPlayer? { get }
+```
+
+```objc
+@property (nonatomic, weak, readonly) AVPlayer * player;
 ```
 
 

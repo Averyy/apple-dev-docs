@@ -1,7 +1,8 @@
 # title
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized title for the leaderboard.
 
@@ -20,19 +21,32 @@ The localized title for the leaderboard.
 var title: String? { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * title;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly, nullable) NSString * title;
+```
+
 ## Mentions
 
-- [Encourage progress and competition with leaderboards](encourage-progress-and-competition-with-leaderboards.md)
+- [Encourage progress and competition with leaderboards](../encourage-progress-and-competition-with-leaderboards.md)
 
 ## See Also
 
-- [var baseLeaderboardID: String](gkleaderboard/baseleaderboardid.md)
+### Accessing Identifier and Type Properties
+- [var baseLeaderboardID: String](./baseleaderboardid.md)
   The ID that Game Center uses to identify this leaderboard.
-- [var type: GKLeaderboard.LeaderboardType](gkleaderboard/type.md)
+- [var type: GKLeaderboard.LeaderboardType](./type.md)
   The type of leaderboard, classic or recurring.
-- [GKLeaderboard.LeaderboardType](gkleaderboard/leaderboardtype.md)
+- [GKLeaderboard.LeaderboardType](./leaderboardtype.md)
   Specifies whether a leaderboard is recurring.
-- [var groupIdentifier: String?](gkleaderboard/groupidentifier.md)
+- [var groupIdentifier: String?](./groupidentifier.md)
   The identifier for the group the leaderboard belongs to.
 
 

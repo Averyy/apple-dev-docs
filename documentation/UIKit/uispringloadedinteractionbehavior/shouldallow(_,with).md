@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a Boolean value that determines whether spring-loaded interaction should begin or should continue for the specified context.
@@ -18,9 +19,13 @@ Returns a Boolean value that determines whether spring-loaded interaction should
 func shouldAllow(_ interaction: UISpringLoadedInteraction, with context: any UISpringLoadedInteractionContext) -> Bool
 ```
 
+```objc
+- (BOOL) shouldAllowInteraction:(UISpringLoadedInteraction *) interaction withContext:(id<UISpringLoadedInteractionContext>) context;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the spring-loaded interaction should begin or continue; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the spring-loaded interaction should begin or continue; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 

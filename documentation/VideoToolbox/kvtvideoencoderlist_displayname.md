@@ -1,7 +1,8 @@
 # kVTVideoEncoderList_DisplayName
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The encoder’s display name key.
 
@@ -19,30 +20,35 @@ The encoder’s display name key.
 let kVTVideoEncoderList_DisplayName: CFString
 ```
 
+```c
+extern CFStringRef const kVTVideoEncoderList_DisplayName;
+```
+
 #### Discussion
 
-The associated value is a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) with the encoder’s display name.
+The associated value is a [`CFString`](../CoreFoundation/cfstring.md) with the encoder’s display name.
 
-This value will be the same as the value of [`kVTVideoEncoderList_CodecName`](kvtvideoencoderlist_codecname.md) if there is only one encoder for that format; otherwise, it will be the same as the value of [`kVTVideoEncoderList_EncoderName`](kvtvideoencoderlist_encodername.md).
+This value will be the same as the value of [`kVTVideoEncoderList_CodecName`](./kvtvideoencoderlist_codecname.md) if there is only one encoder for that format; otherwise, it will be the same as the value of [`kVTVideoEncoderList_EncoderName`](./kvtvideoencoderlist_encodername.md).
 
 ## See Also
 
-- [let kVTVideoEncoderList_EncoderID: CFString](kvtvideoencoderlist_encoderid.md)
+### Encoder Keys
+- [let kVTVideoEncoderList_EncoderID: CFString](./kvtvideoencoderlist_encoderid.md)
   A key that identifies the encoder ID.
-- [let kVTVideoEncoderList_EncoderName: CFString](kvtvideoencoderlist_encodername.md)
+- [let kVTVideoEncoderList_EncoderName: CFString](./kvtvideoencoderlist_encodername.md)
   A key for the encoder’s name.
-- [let kVTVideoEncoderList_CodecType: CFString](kvtvideoencoderlist_codectype.md)
+- [let kVTVideoEncoderList_CodecType: CFString](./kvtvideoencoderlist_codectype.md)
   The encoder’s codec type key.
-- [let kVTVideoEncoderList_CodecName: CFString](kvtvideoencoderlist_codecname.md)
+- [let kVTVideoEncoderList_CodecName: CFString](./kvtvideoencoderlist_codecname.md)
   The encoder’s codec name key.
-- [let kVTVideoEncoderList_GPURegistryID: CFString](kvtvideoencoderlist_gpuregistryid.md)
-- [let kVTVideoEncoderList_InstanceLimit: CFString](kvtvideoencoderlist_instancelimit.md)
-- [let kVTVideoEncoderList_IsHardwareAccelerated: CFString](kvtvideoencoderlist_ishardwareaccelerated.md)
-- [let kVTVideoEncoderList_PerformanceRating: CFString](kvtvideoencoderlist_performancerating.md)
-- [let kVTVideoEncoderList_QualityRating: CFString](kvtvideoencoderlist_qualityrating.md)
-- [let kVTVideoEncoderList_SupportedSelectionProperties: CFString](kvtvideoencoderlist_supportedselectionproperties.md)
-- [let kVTVideoEncoderList_SupportsFrameReordering: CFString](kvtvideoencoderlist_supportsframereordering.md)
-- [let kVTVideoEncoderListOption_IncludeStandardDefinitionDVEncoders: CFString](kvtvideoencoderlistoption_includestandarddefinitiondvencoders.md)
+- [let kVTVideoEncoderList_GPURegistryID: CFString](./kvtvideoencoderlist_gpuregistryid.md)
+- [let kVTVideoEncoderList_InstanceLimit: CFString](./kvtvideoencoderlist_instancelimit.md)
+- [let kVTVideoEncoderList_IsHardwareAccelerated: CFString](./kvtvideoencoderlist_ishardwareaccelerated.md)
+- [let kVTVideoEncoderList_PerformanceRating: CFString](./kvtvideoencoderlist_performancerating.md)
+- [let kVTVideoEncoderList_QualityRating: CFString](./kvtvideoencoderlist_qualityrating.md)
+- [let kVTVideoEncoderList_SupportedSelectionProperties: CFString](./kvtvideoencoderlist_supportedselectionproperties.md)
+- [let kVTVideoEncoderList_SupportsFrameReordering: CFString](./kvtvideoencoderlist_supportsframereordering.md)
+- [let kVTVideoEncoderListOption_IncludeStandardDefinitionDVEncoders: CFString](./kvtvideoencoderlistoption_includestandarddefinitiondvencoders.md)
 
 
 ---

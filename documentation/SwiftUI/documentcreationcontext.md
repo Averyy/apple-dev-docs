@@ -1,7 +1,8 @@
 # DocumentCreationContext
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Context about how a document was created.
 
@@ -20,7 +21,7 @@ struct DocumentCreationContext
 
 #### Overview
 
-SwiftUI passes this to the `makeDocument` closure of [`DocumentGroup`](documentgroup.md). Use [`creationSource`](documentcreationcontext/creationsource.md) to determine which [`NewDocumentButton`](newdocumentbutton.md) the person tapped and configure the document accordingly:
+SwiftUI passes this to the `makeDocument` closure of [`DocumentGroup`](./documentgroup.md). Use [`creationSource`](./documentcreationcontext/creationsource.md) to determine which [`NewDocumentButton`](./newdocumentbutton.md) the person tapped and configure the document accordingly:
 
 ```swift
 DocumentGroup { document in
@@ -37,29 +38,30 @@ DocumentGroup { document in
 ## Topics
 
 ### Accessing creation properties
-- [var creationSource: DocumentCreationSource?](documentcreationcontext/creationsource.md)
+- [var creationSource: DocumentCreationSource?](./documentcreationcontext/creationsource.md)
   The source associated with the button that created this document.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [protocol Document](document.md)
+### Storing document data in a reference type instance
+- [protocol Document](./document.md)
   A document that supports both reading and writing.
-- [protocol ReadableDocument](readabledocument.md)
+- [protocol ReadableDocument](./readabledocument.md)
   A document type that supports reading from file.
-- [protocol WritableDocument](writabledocument.md)
+- [protocol WritableDocument](./writabledocument.md)
   A document type that supports writing to file.
-- [class URLDocumentConfiguration](urldocumentconfiguration.md)
+- [class URLDocumentConfiguration](./urldocumentconfiguration.md)
   The configuration of an open document that stores its file URL, last modification date, and related metadata.
-- [protocol DocumentBaseBox](documentbasebox.md)
+- [protocol DocumentBaseBox](./documentbasebox.md)
   A Box that allows setting its Document base not requiring the caller to know the exact types of the box and its base.
 
 

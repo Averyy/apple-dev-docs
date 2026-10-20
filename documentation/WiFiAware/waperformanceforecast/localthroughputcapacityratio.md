@@ -1,7 +1,8 @@
 # localThroughputCapacityRatio
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The estimated normalized ratio of the local throughput capacity and the local throughput ceiling.
 

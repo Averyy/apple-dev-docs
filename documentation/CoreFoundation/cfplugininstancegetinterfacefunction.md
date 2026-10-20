@@ -1,18 +1,19 @@
 # CFPlugInInstanceGetInterfaceFunction
 
 **Framework**: Core Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Not recommended.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ Not recommended.
 typealias CFPlugInInstanceGetInterfaceFunction = (CFPlugInInstance?, CFString?, UnsafeMutablePointer<UnsafeMutableRawPointer?>?) -> DarwinBoolean
 ```
 
+```c
+typedef unsigned char (*)(struct __CFPlugInInstance *, const struct __CFString *, void **) CFPlugInInstanceGetInterfaceFunction;
+```
+
 ## See Also
 
-- [typealias CFPlugInInstanceDeallocateInstanceDataFunction](cfplugininstancedeallocateinstancedatafunction.md)
+### Callbacks
+- [typealias CFPlugInInstanceDeallocateInstanceDataFunction](./cfplugininstancedeallocateinstancedatafunction.md)
   Not recommended.
 
 

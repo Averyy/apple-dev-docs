@@ -1,7 +1,8 @@
 # AttributeScopes.FoundationAttributes.NumberFormatAttributes
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type for using a number format as an attribute.
 
@@ -23,23 +24,24 @@ struct NumberFormatAttributes
 ## Topics
 
 ### Instance Properties
-- [let numberPart: AttributeScopes.FoundationAttributes.NumberFormatAttributes.NumberPartAttribute](attributescopes/foundationattributes/numberformatattributes/numberpart.md)
-- [let numberSymbol: AttributeScopes.FoundationAttributes.NumberFormatAttributes.SymbolAttribute](attributescopes/foundationattributes/numberformatattributes/numbersymbol.md)
+- [let numberPart: AttributeScopes.FoundationAttributes.NumberFormatAttributes.NumberPartAttribute](./numberformatattributes/numberpart.md)
+- [let numberSymbol: AttributeScopes.FoundationAttributes.NumberFormatAttributes.SymbolAttribute](./numberformatattributes/numbersymbol.md)
 ### Enumerations
-- [AttributeScopes.FoundationAttributes.NumberFormatAttributes.NumberPartAttribute](attributescopes/foundationattributes/numberformatattributes/numberpartattribute.md)
-- [AttributeScopes.FoundationAttributes.NumberFormatAttributes.SymbolAttribute](attributescopes/foundationattributes/numberformatattributes/symbolattribute.md)
+- [AttributeScopes.FoundationAttributes.NumberFormatAttributes.NumberPartAttribute](./numberformatattributes/numberpartattribute.md)
+- [AttributeScopes.FoundationAttributes.NumberFormatAttributes.SymbolAttribute](./numberformatattributes/symbolattribute.md)
 
 ## Relationships
 
 ### Conforms To
-- [AttributeScope](attributescope.md)
-- [DecodingConfigurationProviding](decodingconfigurationproviding.md)
-- [EncodingConfigurationProviding](encodingconfigurationproviding.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributeScope](../../attributescope.md)
+- [DecodingConfigurationProviding](../../decodingconfigurationproviding.md)
+- [EncodingConfigurationProviding](../../encodingconfigurationproviding.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let numberFormat: AttributeScopes.FoundationAttributes.NumberFormatAttributes](attributescopes/foundationattributes/numberformat.md)
+### Using number formatting attributes
+- [let numberFormat: AttributeScopes.FoundationAttributes.NumberFormatAttributes](./numberformat.md)
   A property for accessing a number format attribute.
 
 

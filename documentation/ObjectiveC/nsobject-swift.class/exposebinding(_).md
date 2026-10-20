@@ -1,12 +1,13 @@
 # exposeBinding(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Exposes the specified `binding`, advertising its availability.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,15 @@ Exposes the specified `binding`, advertising its availability.
 class func exposeBinding(_ binding: NSBindingName)
 ```
 
+```objc
++ (void) exposeBinding:(NSBindingName) binding;
+```
+
 #### Discussion
 
 The bound property will be accessed using key-value-coding compliant methods. This method is typically invoked in the class’s `initialize` implementation.
 
-Bindings exposed using `exposeBinding` will be exposed automatically in [`exposedBindings`](nsobject-swift.class/exposedbindings.md) unless that method explicitly filters them out, for example in subclasses.
+Bindings exposed using `exposeBinding` will be exposed automatically in [`exposedBindings`](./exposedbindings.md) unless that method explicitly filters them out, for example in subclasses.
 
 ## Parameters
 
@@ -26,7 +31,8 @@ Bindings exposed using `exposeBinding` will be exposed automatically in [`expose
 
 ## See Also
 
-- [var exposedBindings: [NSBindingName]](nsobject-swift.class/exposedbindings.md)
+### Exposing bindings
+- [var exposedBindings: [NSBindingName]](./exposedbindings.md)
   Returns an array containing the bindings exposed by the receiver.
 
 

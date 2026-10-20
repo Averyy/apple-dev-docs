@@ -1,7 +1,8 @@
 # kSpeechSynthesizerInfoIdentifier
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The identifier of the speech synthesizer.
 
@@ -12,6 +13,10 @@ The identifier of the speech synthesizer.
 
 ```swift
 let kSpeechSynthesizerInfoIdentifier: CFString
+```
+
+```c
+const CFStringRef kSpeechSynthesizerInfoIdentifier;
 ```
 
 

@@ -1,21 +1,23 @@
 # sqrtf
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 float sqrtf(float);
 ```
 
 ## See Also
 
-- [sqrt](1557357-sqrt.md)
-- [sqrtl](1557199-sqrtl.md)
+### Square Root
+- [sqrt](./api-1557357-sqrt.md)
+- [sqrtl](./api-1557199-sqrtl.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # showDeviceCriteria
 
 **Framework**: MatterSupport  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A predicate that filters what devices appear in the picker.
 
@@ -10,7 +11,7 @@ A predicate that filters what devices appear in the picker.
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -26,7 +27,8 @@ Use `.allDevices` to display all devices. Use `.not(...)` to hide blocked device
 
 ## See Also
 
-- [MatterAddDeviceRequest.DeviceCriteria](matteradddevicerequest/devicecriteria.md)
+### Defining the device criteria
+- [MatterAddDeviceRequest.DeviceCriteria](./devicecriteria.md)
   A predicate to match against possible devices that may appear in the picker.
 
 

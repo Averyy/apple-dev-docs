@@ -1,7 +1,8 @@
 # AttributedString.Runs.AttributesSlice1
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 15.0+
@@ -22,11 +23,11 @@ struct AttributesSlice1<T> where T : AttributedStringKey, T.Value : Sendable
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../../../Swift/bidirectionalcollection.md)
+- [Collection](../../../Swift/collection.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
+- [Sequence](../../../Swift/sequence.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The visible size of the scrollable container.
@@ -19,11 +20,16 @@ The visible size of the scrollable container.
 var visibleSize: CGSize { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGSize visibleSize;
+```
+
 ## See Also
 
-- [var contentOffset: CGPoint](uifocusitemscrollablecontainer/contentoffset.md)
+### Retrieving the content size
+- [var contentOffset: CGPoint](./contentoffset.md)
   The current content offset for the scrollable container.
-- [var contentSize: CGSize](uifocusitemscrollablecontainer/contentsize.md)
+- [var contentSize: CGSize](./contentsize.md)
   The total size of the content contained by this container.
 
 

@@ -1,7 +1,8 @@
 # GKLeaderboard.LeaderboardType.classic
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A leaderboard that never expires, showing all-time rankings of all players.
 
@@ -20,9 +21,14 @@ A leaderboard that never expires, showing all-time rankings of all players.
 case classic
 ```
 
+```c
+GKLeaderboardTypeClassic
+```
+
 ## See Also
 
-- [GKLeaderboard.LeaderboardType.recurring](gkleaderboard/leaderboardtype/recurring.md)
+### Constants
+- [GKLeaderboard.LeaderboardType.recurring](./recurring.md)
   A leaderboard that recurs, allowing players a fresh start to compete and earn higher ranks in each ocurrence.
 
 

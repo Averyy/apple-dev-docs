@@ -1,7 +1,8 @@
 # saturation
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of saturation enhancement to apply during tone mapping.
 
@@ -19,21 +20,26 @@ The amount of saturation enhancement to apply during tone mapping.
 var saturation: Float { get set }
 ```
 
+```objc
+@property (nonatomic, assign) float saturation;
+```
+
 #### Discussion
 
 To render a sky texture, Model I/O first simulates the colors visible in the sky at different directions and then applies tone mapping to fit the resulting colors into the range of displayable values. As part of this process, Model I/O uses this property to scale the color saturation of the texture image.
 
 ## See Also
 
-- [var gamma: Float](mdlskycubetexture/gamma.md)
+### Working with Tone Mapping Parameters
+- [var gamma: Float](./gamma.md)
   The amount of gamma correction to apply during tone mapping.
-- [var exposure: Float](mdlskycubetexture/exposure.md)
+- [var exposure: Float](./exposure.md)
   The amount of exposure compensation to apply during tone mapping.
-- [var brightness: Float](mdlskycubetexture/brightness.md)
+- [var brightness: Float](./brightness.md)
   The amount of brightness enhancement to apply during tone mapping.
-- [var contrast: Float](mdlskycubetexture/contrast.md)
+- [var contrast: Float](./contrast.md)
   The amount of contrast enhancement to apply during tone mapping.
-- [var highDynamicRangeCompression: vector_float2](mdlskycubetexture/highdynamicrangecompression.md)
+- [var highDynamicRangeCompression: vector_float2](./highdynamicrangecompression.md)
   Two parameters that determine the brightness compression curve for colors in the texture image.
 
 

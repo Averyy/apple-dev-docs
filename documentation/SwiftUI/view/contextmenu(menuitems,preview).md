@@ -1,7 +1,8 @@
 # contextMenu(menuItems:preview:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a context menu with a custom preview to a view.
 
@@ -26,9 +27,9 @@ A view that can display a context menu with a preview.
 
 #### Discussion
 
-When you use this modifer to add a context menu to a view in your app’s user interface, the system displays the custom preview beside the menu. Compose the menu by returning controls like [`Button`](button.md), [`Toggle`](toggle.md), and [`Picker`](picker.md) from the `menuItems` closure. You can also use [`Menu`](menu.md) to define submenus or [`Section`](section.md) to group items.
+When you use this modifer to add a context menu to a view in your app’s user interface, the system displays the custom preview beside the menu. Compose the menu by returning controls like [`Button`](../button.md), [`Toggle`](../toggle.md), and [`Picker`](../picker.md) from the `menuItems` closure. You can also use [`Menu`](../menu.md) to define submenus or [`Section`](../section.md) to group items.
 
-Define the custom preview by returning a view from the `preview` closure. The system sizes the preview to match the size of its content. For example, you can add a two button context menu to a [`Text`](text.md) view, and use an [`Image`](image.md) as the preview:
+Define the custom preview by returning a view from the `preview` closure. The system sizes the preview to match the size of its content. For example, you can add a two button context menu to a [`Text`](../text.md) view, and use an [`Image`](../image.md) as the preview:
 
 ```swift
 Text("Turtle Rock")
@@ -51,13 +52,13 @@ Text("Turtle Rock")
 
 When someone activates the context menu with an action like touch and hold in iOS or iPadOS, the system displays the image and the menu:
 
-![A screenshot of a context menu with two buttons that are labeled](/images/com.apple.SwiftUI/View-contextMenu-2-iOS@2x.png)
+![A screenshot of a context menu with two buttons that are labeled](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-contextMenu-2-iOS@2x.png)
 
-To customize the lift preview, shown while the system transitions to show your custom `preview`, apply a [`contentShape(_:_:eoFill:)`](view/contentshape(_:_:eofill:).md) with a [`contextMenuPreview`](contentshapekinds/contextmenupreview.md) kind. For example, you can change the lift preview’s corner radius or use a nested view as the lift preview.
+To customize the lift preview, shown while the system transitions to show your custom `preview`, apply a [`contentShape(_:_:eoFill:)`](./contentshape%28_,_,eofill%29.md) with a [`contextMenuPreview`](../contentshapekinds/contextmenupreview.md) kind. For example, you can change the lift preview’s corner radius or use a nested view as the lift preview.
 
 > **Note**: This view modifier produces a context menu on macOS, but that platform doesn’t display the preview.
 
-If you don’t need a preview, use [`contextMenu(menuItems:)`](view/contextmenu(menuitems:).md) instead. If you want to add a context menu to a container that supports selection, like a [`List`](list.md) or a [`Table`](table.md), and you want to distinguish between menu activation on a selection and activation in an empty area of the container, use [`contextMenu(forSelectionType:menu:primaryAction:)`](view/contextmenu(forselectiontype:menu:primaryaction:).md).
+If you don’t need a preview, use [`contextMenu(menuItems:)`](./contextmenu%28menuitems%29.md) instead. If you want to add a context menu to a container that supports selection, like a [`List`](../list.md) or a [`Table`](../table.md), and you want to distinguish between menu activation on a selection and activation in an empty area of the container, use [`contextMenu(forSelectionType:menu:primaryAction:)`](./contextmenu%28forselectiontype,menu,primaryaction%29.md).
 
 ## Parameters
 
@@ -66,9 +67,10 @@ If you don’t need a preview, use [`contextMenu(menuItems:)`](view/contextmenu(
 
 ## See Also
 
-- [func contextMenu<MenuItems>(menuItems: () -> MenuItems) -> some View](view/contextmenu(menuitems:).md)
+### Creating context menus
+- [func contextMenu<MenuItems>(menuItems: () -> MenuItems) -> some View](./contextmenu%28menuitems%29.md)
   Adds a context menu to a view.
-- [func contextMenu<I, M>(forSelectionType: I.Type, menu: (Set<I>) -> M, primaryAction: ((Set<I>) -> Void)?) -> some View](view/contextmenu(forselectiontype:menu:primaryaction:).md)
+- [func contextMenu<I, M>(forSelectionType: I.Type, menu: (Set<I>) -> M, primaryAction: ((Set<I>) -> Void)?) -> some View](./contextmenu%28forselectiontype,menu,primaryaction%29.md)
   Adds an item-based context menu to a view.
 
 

@@ -1,7 +1,8 @@
 # MLBoostedTreeRegressor.ModelParameters.ValidationData
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values for specifying validation data.
 
@@ -22,19 +23,20 @@ enum ValidationData
 ## Topics
 
 ### Specifying validation data
-- [MLBoostedTreeRegressor.ModelParameters.ValidationData.split(strategy:)](mlboostedtreeregressor/modelparameters-swift.struct/validationdata-swift.enum/split(strategy:).md)
+- [MLBoostedTreeRegressor.ModelParameters.ValidationData.split(strategy:)](./validationdata-swift.enum/split%28strategy%29.md)
   Generate validation data by splitting the training dataset. This is the default.
-- [MLBoostedTreeRegressor.ModelParameters.ValidationData.table(_:)](mlboostedtreeregressor/modelparameters-swift.struct/validationdata-swift.enum/table(_:).md)
+- [MLBoostedTreeRegressor.ModelParameters.ValidationData.table(_:)](./validationdata-swift.enum/table%28_%29.md)
   Set validation data from the MLDataTable provided.
-- [MLBoostedTreeRegressor.ModelParameters.ValidationData.dataFrame(_:)](mlboostedtreeregressor/modelparameters-swift.struct/validationdata-swift.enum/dataframe(_:).md)
+- [MLBoostedTreeRegressor.ModelParameters.ValidationData.dataFrame(_:)](./validationdata-swift.enum/dataframe%28_%29.md)
   Set validation data from the DataFrame provided.
-- [MLBoostedTreeRegressor.ModelParameters.ValidationData.none](mlboostedtreeregressor/modelparameters-swift.struct/validationdata-swift.enum/none.md)
+- [MLBoostedTreeRegressor.ModelParameters.ValidationData.none](./validationdata-swift.enum/none.md)
   Do not set validation data.
 
 ## See Also
 
-- [init(validation: MLBoostedTreeRegressor.ModelParameters.ValidationData, maxDepth: Int, maxIterations: Int, minLossReduction: Double, minChildWeight: Double, randomSeed: Int, stepSize: Double, earlyStoppingRounds: Int?, rowSubsample: Double, columnSubsample: Double)](mlboostedtreeregressor/modelparameters-swift.struct/init(validation:maxdepth:maxiterations:minlossreduction:minchildweight:randomseed:stepsize:earlystoppingrounds:rowsubsample:columnsubsample:).md)
-- [init(validationData: MLDataTable?, maxDepth: Int, maxIterations: Int, minLossReduction: Double, minChildWeight: Double, randomSeed: Int, stepSize: Double, earlyStoppingRounds: Int?, rowSubsample: Double, columnSubsample: Double)](mlboostedtreeregressor/modelparameters-swift.struct/init(validationdata:maxdepth:maxiterations:minlossreduction:minchildweight:randomseed:stepsize:earlystoppingrounds:rowsubsample:columnsubsample:).md)
+### Creating parameters
+- [init(validation: MLBoostedTreeRegressor.ModelParameters.ValidationData, maxDepth: Int, maxIterations: Int, minLossReduction: Double, minChildWeight: Double, randomSeed: Int, stepSize: Double, earlyStoppingRounds: Int?, rowSubsample: Double, columnSubsample: Double)](./init%28validation,maxdepth,maxiterations,minlossreduction,minchildweight,randomseed,stepsize,earlystoppingrounds,rowsubsample,columnsubsample%29.md)
+- [init(validationData: MLDataTable?, maxDepth: Int, maxIterations: Int, minLossReduction: Double, minChildWeight: Double, randomSeed: Int, stepSize: Double, earlyStoppingRounds: Int?, rowSubsample: Double, columnSubsample: Double)](./init%28validationdata,maxdepth,maxiterations,minlossreduction,minchildweight,randomseed,stepsize,earlystoppingrounds,rowsubsample,columnsubsample%29.md)
   Creates a new set of parameters.
 
 

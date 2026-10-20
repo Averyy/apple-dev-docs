@@ -1,17 +1,18 @@
 # AudioFilePermissions
 
 **Framework**: Audio Toolbox  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Flags for use when opening an audio file.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,41 +20,46 @@ Flags for use when opening an audio file.
 enum AudioFilePermissions
 ```
 
+```c
+enum AudioFilePermissions : SInt8;
+```
+
 #### Overview
 
-Use these flags with the [`AudioFileOpenURL(_:_:_:_:)`](audiofileopenurl(_:_:_:_:).md) and [`AudioFileOpen`](audiofileopen.md) functions.
+Use these flags with the [`AudioFileOpenURL(_:_:_:_:)`](./audiofileopenurl%28_,_,_,_%29.md) and [`AudioFileOpen`](./audiofileopen.md) functions.
 
 ## Topics
 
 ### Constants
-- [AudioFilePermissions.readPermission](audiofilepermissions/readpermission.md)
+- [AudioFilePermissions.readPermission](./audiofilepermissions/readpermission.md)
   File is read-only.
-- [AudioFilePermissions.readWritePermission](audiofilepermissions/readwritepermission.md)
+- [AudioFilePermissions.readWritePermission](./audiofilepermissions/readwritepermission.md)
   File has read-write permission.
-- [AudioFilePermissions.writePermission](audiofilepermissions/writepermission.md)
+- [AudioFilePermissions.writePermission](./audiofilepermissions/writepermission.md)
   File is write-only.
 ### Initializers
-- [init?(rawValue: Int8)](audiofilepermissions/init(rawvalue:).md)
+- [init?(rawValue: Int8)](./audiofilepermissions/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AudioBytePacketTranslationFlags](audiobytepackettranslationflags.md)
-- [struct AudioFileFlags](audiofileflags.md)
-- [struct AudioFileRegionFlags](audiofileregionflags.md)
+### Enumerations
+- [struct AudioBytePacketTranslationFlags](./audiobytepackettranslationflags.md)
+- [struct AudioFileFlags](./audiofileflags.md)
+- [struct AudioFileRegionFlags](./audiofileregionflags.md)
   Flags that specify a playback direction for an audio file region structure.
-- [struct AudioFileStreamParseFlags](audiofilestreamparseflags.md)
-- [struct AudioFileStreamPropertyFlags](audiofilestreampropertyflags.md)
-- [struct AudioFileStreamSeekFlags](audiofilestreamseekflags.md)
+- [struct AudioFileStreamParseFlags](./audiofilestreamparseflags.md)
+- [struct AudioFileStreamPropertyFlags](./audiofilestreampropertyflags.md)
+- [struct AudioFileStreamSeekFlags](./audiofilestreamseekflags.md)
 
 
 ---

@@ -1,46 +1,48 @@
 # Color
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: API Collection
 
 Manage HDR and color space settings for a device.
 
 ## Topics
 
 ### Configuring HDR settings
-- [var automaticallyAdjustsVideoHDREnabled: Bool](avcapturedevice/automaticallyadjustsvideohdrenabled.md)
+- [var automaticallyAdjustsVideoHDREnabled: Bool](./avcapturedevice/automaticallyadjustsvideohdrenabled.md)
   A Boolean value that indicates whether the device automatically manages the state of high dynamic range (HDR) video streaming.
-- [var isVideoHDREnabled: Bool](avcapturedevice/isvideohdrenabled.md)
+- [var isVideoHDREnabled: Bool](./avcapturedevice/isvideohdrenabled.md)
   A Boolean value that indicates whether the device streams high dynamic range video buffers, also known as extended dynamic range (EDR).
 ### Enabling global tone mapping
-- [var isGlobalToneMappingEnabled: Bool](avcapturedevice/isglobaltonemappingenabled.md)
+- [var isGlobalToneMappingEnabled: Bool](./avcapturedevice/isglobaltonemappingenabled.md)
   A Boolean value that indicates whether the device should use global tone mapping.
 ### Configuring color space settings
-- [var activeColorSpace: AVCaptureColorSpace](avcapturedevice/activecolorspace.md)
+- [var activeColorSpace: AVCaptureColorSpace](./avcapturedevice/activecolorspace.md)
   The currently active color space for capture.
-- [enum AVCaptureColorSpace](avcapturecolorspace.md)
+- [enum AVCaptureColorSpace](./avcapturecolorspace.md)
   An enumeration of color spaces a device can support.
 
 ## See Also
 
-- [func lockForConfiguration() throws](avcapturedevice/lockforconfiguration.md)
+### Configuring camera hardware
+- [func lockForConfiguration() throws](./avcapturedevice/lockforconfiguration%28%29.md)
   Requests exclusive access to configure device hardware properties.
-- [func unlockForConfiguration()](avcapturedevice/unlockforconfiguration.md)
+- [func unlockForConfiguration()](./avcapturedevice/unlockforconfiguration%28%29.md)
   Releases exclusive control over device hardware properties.
-- [var isSubjectAreaChangeMonitoringEnabled: Bool](avcapturedevice/issubjectareachangemonitoringenabled.md)
+- [var isSubjectAreaChangeMonitoringEnabled: Bool](./avcapturedevice/issubjectareachangemonitoringenabled.md)
   A Boolean value that indicates whether the device monitors the subject area for changes.
-- [class let subjectAreaDidChangeNotification: NSNotification.Name](avcapturedevice/subjectareadidchangenotification.md)
+- [class let subjectAreaDidChangeNotification: NSNotification.Name](./avcapturedevice/subjectareadidchangenotification.md)
   A notification the system posts when a capture device detects a substantial change to the video subject area.
-- [Formats](capture-device-formats.md)
+- [Formats](./capture-device-formats.md)
   Configure capture formats and camera frame rates.
-- [Focus](capture-device-focus.md)
+- [Focus](./capture-device-focus.md)
   Configure the automatic focus behavior of a camera, or manually set its lens position.
-- [Exposure](capture-device-exposure.md)
+- [Exposure](./capture-device-exposure.md)
   Configure the automatic exposure behavior of a camera, or manually control its exposure settings.
-- [White balance](capture-device-white-balance.md)
+- [White balance](./capture-device-white-balance.md)
   Configure the automatic white balance behavior of a camera, or manually control white balance settings.
-- [Lighting](capture-device-lighting.md)
+- [Lighting](./capture-device-lighting.md)
   Configure the device flash, torch, and low light settings.
-- [Zoom](capture-device-zoom.md)
+- [Zoom](./capture-device-zoom.md)
   Configure device zooming behavior and inspect hardware capabilities.
 
 

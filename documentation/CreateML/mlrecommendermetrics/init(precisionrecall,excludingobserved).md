@@ -1,12 +1,13 @@
 # init(precisionRecall:excludingObserved:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates metrics for a recommender, given a data table with precision and recall metric columns, and whether the recommender omitted training data.
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 14.0
 
 ## Declaration
 
@@ -16,7 +17,7 @@ init(precisionRecall: MLDataTable, excludingObserved: Bool)
 
 #### Discussion
 
-Do not use this initializer. [`MLRecommender`](mlrecommender.md) generates metrics for you when you call its [`evaluation(on:userColumn:itemColumn:ratingColumn:cutoffs:excludingObserved:)`](mlrecommender/evaluation(on:usercolumn:itemcolumn:ratingcolumn:cutoffs:excludingobserved:).md) method.
+Do not use this initializer. [`MLRecommender`](../mlrecommender.md) generates metrics for you when you call its [`evaluation(on:userColumn:itemColumn:ratingColumn:cutoffs:excludingObserved:)`](../mlrecommender/evaluation%28on,usercolumn,itemcolumn,ratingcolumn,cutoffs,excludingobserved%29.md) method.
 
 
 ---

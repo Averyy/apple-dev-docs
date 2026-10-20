@@ -1,7 +1,8 @@
 # XCTSkipUnless(_:_:file:line:)
 
 **Framework**: XCTest  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Skips remaining tests in a test method unless the specified condition is met.
 
@@ -24,9 +25,10 @@ Call this method to skip any remaining code and assertions in the test method wh
 
 ## See Also
 
-- [func XCTSkipIf(@autoclosure () throws -> Bool, @autoclosure () -> String?, file: StaticString, line: UInt) throws](xctskipif(_:_:file:line:).md)
+### Methods for Skipping Tests
+- [func XCTSkipIf(@autoclosure () throws -> Bool, @autoclosure () -> String?, file: StaticString, line: UInt) throws](./xctskipif%28_,_,file,line%29.md)
   Skips remaining tests in a test method if the specified condition is met.
-- [struct XCTSkip](xctskip-swift.struct.md)
+- [struct XCTSkip](./xctskip-swift.struct.md)
   An error that causes the current test to cease executing and the test runner to mark the test as skipped when the test throws the error.
 
 

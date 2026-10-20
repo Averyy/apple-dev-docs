@@ -1,7 +1,8 @@
 # results(for:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initiates a long-running query that returns statistics and updates using an asynchronous sequence.
 
@@ -10,7 +11,7 @@ Initiates a long-running query that returns statistics and updates using an asyn
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -25,9 +26,10 @@ func results(for healthStore: HKHealthStore) -> HKStatisticsCollectionQueryDescr
 
 ## See Also
 
-- [func result(for: HKHealthStore) async throws -> HKStatisticsCollection](hkstatisticscollectionquerydescriptor/result(for:).md)
+### Running Queries
+- [func result(for: HKHealthStore) async throws -> HKStatisticsCollection](./result%28for%29.md)
   Runs a one-shot query and asynchronously returns statistics calculated from the current matching results.
-- [HKStatisticsCollectionQueryDescriptor.Results](hkstatisticscollectionquerydescriptor/results.md)
+- [HKStatisticsCollectionQueryDescriptor.Results](./results.md)
   An asynchronous sequence that emits updates from a statistics collection query.
 
 

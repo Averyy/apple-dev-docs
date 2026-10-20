@@ -1,7 +1,8 @@
 # SQLResultSetRowList
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,16 +10,16 @@
 
 ## Declaration
 
-```swift
+```
 interface SQLResultSetRowList
 ```
 
 ## Topics
 
 ### Instance Properties
-- [length](sqlresultsetrowlist/1633387-length.md)
+- [length](./sqlresultsetrowlist/api-1633387-length.md)
 ### Instance Methods
-- [item](sqlresultsetrowlist/1631519-item.md)
+- [item](./sqlresultsetrowlist/api-1631519-item.md)
 
 
 ---

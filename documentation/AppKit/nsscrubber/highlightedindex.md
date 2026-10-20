@@ -1,7 +1,8 @@
 # highlightedIndex
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the highlighted item in the scrubber.
 
@@ -14,15 +15,20 @@ The index of the highlighted item in the scrubber.
 var highlightedIndex: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger highlightedIndex;
+```
+
 #### Discussion
 
 If no item is highlighted, the value of this property is `-1`.
 
 ## See Also
 
-- [var numberOfItems: Int](nsscrubber/numberofitems.md)
+### Getting the state of the scrubber
+- [var numberOfItems: Int](./numberofitems.md)
   The number of items represented by the scrubber.
-- [var selectedIndex: Int](nsscrubber/selectedindex.md)
+- [var selectedIndex: Int](./selectedindex.md)
   The index of the selected item in the scrubber.
 
 

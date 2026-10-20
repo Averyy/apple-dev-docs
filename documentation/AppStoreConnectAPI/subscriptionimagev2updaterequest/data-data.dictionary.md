@@ -1,7 +1,8 @@
 # SubscriptionImageV2UpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a SubscriptionImageV2.
 
@@ -10,19 +11,19 @@ The request body you use to update a SubscriptionImageV2.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionImageV2UpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionImageV2UpdateRequest.Data.Attributes](subscriptionimagev2updaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object SubscriptionImageV2UpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a SubscriptionImageV2UpdateRequest resource.
 
 ## Properties
 
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptionImages`
 - `id` (string) *(required)*
 - `attributes` (SubscriptionImageV2UpdateRequest.Data.Attributes)
 

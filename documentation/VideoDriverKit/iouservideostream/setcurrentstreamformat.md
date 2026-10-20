@@ -1,7 +1,8 @@
 # SetCurrentStreamFormat
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the current stream format.
 
@@ -10,7 +11,7 @@ Sets the current stream format.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetCurrentStreamFormat(const IOUserVideoStreamBasicDescription *in_format);
 ```
 
@@ -24,23 +25,24 @@ Changing the format send sa notification to the host to update the object state 
 
 ## See Also
 
-- [GetCurrentStreamFormat](iouservideostream/getcurrentstreamformat.md)
+### Working with stream formats
+- [GetCurrentStreamFormat](./getcurrentstreamformat.md)
   Gets the current basic description of the stream.
-- [SetAvailableStreamFormats](iouservideostream/setavailablestreamformats.md)
+- [SetAvailableStreamFormats](./setavailablestreamformats.md)
   Sets the available descriptions for the stream.
-- [GetAvailableStreamFormats](iouservideostream/getavailablestreamformats.md)
+- [GetAvailableStreamFormats](./getavailablestreamformats.md)
   Gets the available basic descriptions for the stream.
-- [GetNumberAvailableStreamFormats](iouservideostream/getnumberavailablestreamformats.md)
+- [GetNumberAvailableStreamFormats](./getnumberavailablestreamformats.md)
   Gets the number of available description for the stream.
-- [IOUserVideoStreamBasicDescription](videodriverkit/iouservideostreambasicdescription.md)
+- [IOUserVideoStreamBasicDescription](../videodriverkit-page/iouservideostreambasicdescription.md)
   A structure that encapsulates all the information for describing the basic format properties of a stream of audio data.
-- [GetStreamDirection](iouservideostream/getstreamdirection.md)
+- [GetStreamDirection](./getstreamdirection.md)
   Gets the direction of the stream.
-- [IOUserVideoStreamDirection](videodriverkit/iouservideostreamdirection.md)
+- [IOUserVideoStreamDirection](../videodriverkit-page/iouservideostreamdirection.md)
   The direction of a video stream.
-- [SetStreamIsActive](iouservideostream/setstreamisactive.md)
+- [SetStreamIsActive](./setstreamisactive.md)
   Sets whether that the stream is active and doing IO.
-- [GetStreamIsActive](iouservideostream/getstreamisactive.md)
+- [GetStreamIsActive](./getstreamisactive.md)
   Gets the stream activity state.
 
 

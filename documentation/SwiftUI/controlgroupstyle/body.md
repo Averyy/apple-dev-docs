@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A view representing the body of a control group.
@@ -22,9 +23,10 @@ associatedtype Body : View
 
 ## See Also
 
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](controlgroupstyle/makebody(configuration:).md)
+### Creating custom control group styles
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./makebody%28configuration%29.md)
   Creates a view representing the body of a control group.
-- [ControlGroupStyle.Configuration](controlgroupstyle/configuration.md)
+- [ControlGroupStyle.Configuration](./configuration.md)
   The properties of a `ControlGroup` instance being created.
 
 

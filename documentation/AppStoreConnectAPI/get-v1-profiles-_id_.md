@@ -1,7 +1,8 @@
 # Read and download profile information
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get information for a specific provisioning profile and download its data.
 
@@ -14,17 +15,33 @@ Get information for a specific provisioning profile and download its data.
 
 ## Parameters
 
-- `fields[certificates]` ([string])
-- `fields[devices]` ([string])
-- `fields[profiles]` ([string])
-- `include` ([string])
-- `fields[bundleIds]` ([string])
-- `limit[devices]` (integer)
-- `limit[certificates]` (integer)
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Query Parameters
+
+- `fields[certificates]` ([string]): **Allowed Values**: `name`, `certificateType`, `displayName`, `serialNumber`, `platform`, `expirationDate`, `certificateContent`, `activated`, `passTypeId`
+- `fields[devices]` ([string]): **Allowed Values**: `name`, `platform`, `udid`, `deviceClass`, `status`, `model`, `addedDate`
+- `fields[profiles]` ([string]): **Allowed Values**: `name`, `platform`, `profileType`, `profileState`, `profileContent`, `uuid`, `createdDate`, `expirationDate`, `bundleId`, `devices`, `certificates`
+- `include` ([string]): **Allowed Values**: `bundleId`, `devices`, `certificates`
+- `fields[bundleIds]` ([string]): **Allowed Values**: `name`, `platform`, `identifier`, `seedId`, `profiles`, `bundleIdCapabilities`, `app`
+- `limit[devices]` (integer): **Maximum**: `50`
+- `limit[certificates]` (integer): **Maximum**: `50`
+
+## Responses
+
+- `200` OK (`ProfileResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List and download profiles](get-v1-profiles.md)
+### Getting Provisioning Profile Information
+- [List and download profiles](./get-v1-profiles.md)
   Find and list provisioning profiles and download their data.
 
 

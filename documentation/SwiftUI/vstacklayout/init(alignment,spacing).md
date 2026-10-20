@@ -1,7 +1,8 @@
 # init(alignment:spacing:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a vertical stack with the specified spacing and horizontal alignment.
 

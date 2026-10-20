@@ -1,7 +1,8 @@
 # content
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text to append to the entry’s current text segment.
 
@@ -21,9 +22,10 @@ var content: String
 
 ## See Also
 
-- [var tokenCount: Int](languagemodelexecutorgenerationchannel/textfragment/tokencount.md)
+### Handling the text fragment
+- [var tokenCount: Int](./tokencount.md)
   The number of tokens the text carries.
-- [var segmentID: String?](languagemodelexecutorgenerationchannel/textfragment/segmentid.md)
+- [var segmentID: String?](./segmentid.md)
   The identifier of the text segment to append to, or empty to append to the current segment.
 
 

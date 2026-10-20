@@ -1,7 +1,8 @@
 # securityOrigin
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame’s security origin.
 

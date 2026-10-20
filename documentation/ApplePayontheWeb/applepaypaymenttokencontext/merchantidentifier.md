@@ -1,7 +1,8 @@
 # merchantIdentifier
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Apply Pay merchant identifier.
 
@@ -11,7 +12,7 @@ The Apply Pay merchant identifier.
 
 ## Declaration
 
-```swift
+```
 required DOMString merchantIdentifier;
 ```
 
@@ -19,15 +20,16 @@ required DOMString merchantIdentifier;
 
 The merchant identifier you provide when you make an Apple Pay payment request. If you request a payment token for another merchant, use their merchant identifier, if available. Otherwise, use your own merchant identifier.
 
-For more information about merchant identifiers, see [`Configuring Your Environment`](configuring-your-environment.md).
+For more information about merchant identifiers, see [Configuring Your Environment](../configuring-your-environment.md).
 
 ## See Also
 
-- [merchantName](applepaypaymenttokencontext/merchantname.md)
+### Specifying the merchant
+- [merchantName](./merchantname.md)
   The merchant’s display name that the Apple Pay server associates with the payment token.
-- [merchantDomain](applepaypaymenttokencontext/merchantdomain.md)
+- [merchantDomain](./merchantdomain.md)
   The merchant’s top-level domain that the Apple Pay server associates with the payment token.
-- [externalIdentifier](applepaypaymenttokencontext/externalidentifier.md)
+- [externalIdentifier](./externalidentifier.md)
   An external identifier for the merchant.
 
 

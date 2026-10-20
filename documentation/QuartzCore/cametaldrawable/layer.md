@@ -2,6 +2,7 @@
 
 **Framework**: Core Animation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The layer that owns this drawable object.
@@ -18,6 +19,10 @@ The layer that owns this drawable object.
 
 ```swift
 var layer: CAMetalLayer { get }
+```
+
+```objc
+@property (readonly) CAMetalLayer * layer;
 ```
 
 #### Discussion

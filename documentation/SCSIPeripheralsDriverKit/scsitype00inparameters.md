@@ -1,7 +1,8 @@
 # SCSIType00InParameters
 
 **Framework**: SCSIPeripheralsDriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Parameters for responses from the external SCSI device.
 
@@ -10,28 +11,29 @@ Parameters for responses from the external SCSI device.
 
 ## Declaration
 
-```swift
+```c
 struct SCSIType00InParameters;
 ```
 
 #### Discussion
 
-This type contains all the fields from [`SCSIDeviceInParameters`](scsideviceinparameters.md), typed for use only with [`IOUserSCSIPeripheralDeviceType00`](iouserscsiperipheraldevicetype00.md) devices.
+This type contains all the fields from [`SCSIDeviceInParameters`](./scsideviceinparameters.md), typed for use only with [`IOUserSCSIPeripheralDeviceType00`](./iouserscsiperipheraldevicetype00.md) devices.
 
 ## Relationships
 
 ### Inherits From
-- [SCSIDeviceInParameters](scsideviceinparameters.md)
+- [SCSIDeviceInParameters](./scsideviceinparameters.md)
 
 ## See Also
 
-- [UserSendCDB](iouserscsiperipheraldevicetype00/usersendcdb.md)
+### Sending commands to the device
+- [UserSendCDB](./iouserscsiperipheraldevicetype00/usersendcdb.md)
   Sends a vendor-specific Command Descriptor Block (CDB) to the device.
-- [SCSIType00OutParameters](scsitype00outparameters.md)
+- [SCSIType00OutParameters](./scsitype00outparameters.md)
   Parameters for commands to send to the external SCSI device.
-- [SCSIType00OutVersion](scsitype00outversion.md)
+- [SCSIType00OutVersion](./scsitype00outversion.md)
   Constants that represent versions of the Type00 outbound interface.
-- [SCSIType00InVersion](scsitype00inversion.md)
+- [SCSIType00InVersion](./scsitype00inversion.md)
   Constants that represent versions of the Type00 inbound interface.
 
 

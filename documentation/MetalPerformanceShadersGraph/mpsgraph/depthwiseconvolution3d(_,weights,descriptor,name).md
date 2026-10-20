@@ -1,7 +1,8 @@
 # depthwiseConvolution3D(_:weights:descriptor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a 3D depthwise convolution operation and returns the result tensor.
 
@@ -19,13 +20,17 @@ Creates a 3D depthwise convolution operation and returns the result tensor.
 func depthwiseConvolution3D(_ source: MPSGraphTensor, weights: MPSGraphTensor, descriptor: MPSGraphDepthwiseConvolution3DOpDescriptor, name: String?) -> MPSGraphTensor
 ```
 
+```objc
+- (MPSGraphTensor *) depthwiseConvolution3DWithSourceTensor:(MPSGraphTensor *) source weightsTensor:(MPSGraphTensor *) weights descriptor:(MPSGraphDepthwiseConvolution3DOpDescriptor *) descriptor name:(NSString *) name;
+```
+
 #### Return Value
 
 A valid MPSGraphTensor object
 
 #### Discussion
 
-Works exactly like depthwise convolution2D, but in three dimensions. Supports different layouts with the [`channelDimensionIndex`](mpsgraphdepthwiseconvolution3dopdescriptor/channeldimensionindex.md) property. If your weights need a different layout add a permute operation on them before this operation.
+Works exactly like depthwise convolution2D, but in three dimensions. Supports different layouts with the [`channelDimensionIndex`](../mpsgraphdepthwiseconvolution3dopdescriptor/channeldimensionindex.md) property. If your weights need a different layout add a permute operation on them before this operation.
 
 ## Parameters
 

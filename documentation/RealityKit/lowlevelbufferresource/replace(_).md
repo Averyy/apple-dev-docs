@@ -1,7 +1,8 @@
 # replace(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the entire contents of the buffer resource synchronously on the CPU.
 
@@ -21,7 +22,7 @@ final func replace<R, E>(_ body: @_lifetime(0: copy 0) (inout MutableRawSpan) th
 
 You pass a closure that receives a mutable span representing the contents of the buffer resource. Upon entry the buffer resource’s contents are undefined; the closure is responsible for populating it with valid data. This span is valid only for the duration of the closure.
 
-> **Note**: Any error thrown by `body`.
+> **Throws**: Any error thrown by `body`.
 
 ## Parameters
 
@@ -29,7 +30,8 @@ You pass a closure that receives a mutable span representing the contents of the
 
 ## See Also
 
-- [func replace(commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](lowlevelbufferresource/replace(commandbuffer:).md)
+### Replacing buffer contents
+- [func replace(commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](./replace%28commandbuffer%29.md)
   Returns a Metal buffer you populate on the GPU with the new contents of the buffer resource.
 
 

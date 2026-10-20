@@ -1,7 +1,8 @@
 # CMProjectionType.rectangular
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Video content displays on a flat, rectangular 2D surface.
 
@@ -20,6 +21,10 @@ Video content displays on a flat, rectangular 2D surface.
 case rectangular
 ```
 
+```c
+kCMProjectionType_Rectangular
+```
+
 #### Discussion
 
 Rectangular projection is equivalent to displaying as a 2D texture in the world.
@@ -28,11 +33,12 @@ Rectangular projection is the default for 3D video when a channel or buffer has 
 
 ## See Also
 
-- [CMProjectionType.equirectangular](cmprojectiontype/equirectangular.md)
+### Projection Surfaces
+- [CMProjectionType.equirectangular](./equirectangular.md)
   Video content displays as a 360 degree equirectangular projection.
-- [CMProjectionType.halfEquirectangular](cmprojectiontype/halfequirectangular.md)
+- [CMProjectionType.halfEquirectangular](./halfequirectangular.md)
   Video content displays as a 180 degree equirectangular projection.
-- [CMProjectionType.fisheye](cmprojectiontype/fisheye.md)
+- [CMProjectionType.fisheye](./fisheye.md)
   Video content displays as a fisheye projection.
 
 

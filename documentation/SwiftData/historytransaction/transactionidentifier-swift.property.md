@@ -2,6 +2,7 @@
 
 **Framework**: SwiftData  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:

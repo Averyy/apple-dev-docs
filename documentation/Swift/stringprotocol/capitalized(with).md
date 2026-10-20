@@ -1,7 +1,8 @@
 # capitalized(with:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a capitalized representation of the string using the specified locale.
 

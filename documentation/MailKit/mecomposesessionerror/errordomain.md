@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: MailKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 12.0+

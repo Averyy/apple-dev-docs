@@ -1,7 +1,8 @@
 # VZVirtioDeviceSpecificConfiguration
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The device-specific configuration for a Virtio device
 
@@ -14,41 +15,46 @@ The device-specific configuration for a Virtio device
 class VZVirtioDeviceSpecificConfiguration
 ```
 
+```objc
+@interface VZVirtioDeviceSpecificConfiguration : NSObject
+```
+
 #### Overview
 
 This class represents a Virtio device’s device-specific configuration.
 
-For more details about device-specific configuration for different Virtio devices, see the [`Virtio specification`](https://developer.apple.comhttps://docs.oasis-open.org/virtio/virtio/v1.3/csd01/virtio-v1.3-csd01.html).
+For more details about device-specific configuration for different Virtio devices, see the [Virtio specification](https://docs.oasis-open.org/virtio/virtio/v1.3/csd01/virtio-v1.3-csd01.html).
 
-Serialize any device-specific configuration structure into an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object, and instantiate a [`VZVirtioDeviceSpecificConfiguration`](vzvirtiodevicespecificconfiguration.md) object with it, and set this object on the [`deviceSpecificConfiguration`](vzcustomvirtiodeviceconfiguration/devicespecificconfiguration.md) property.
+Serialize any device-specific configuration structure into an [`NSData`](../Foundation/nsdata.md) object, and instantiate a [`VZVirtioDeviceSpecificConfiguration`](./vzvirtiodevicespecificconfiguration.md) object with it, and set this object on the [`deviceSpecificConfiguration`](./vzcustomvirtiodeviceconfiguration/devicespecificconfiguration.md) property.
 
 ## Topics
 
 ### Initializers
-- [init(configurationData: Data)](vzvirtiodevicespecificconfiguration/init(configurationdata:).md)
+- [init(configurationData: Data)](./vzvirtiodevicespecificconfiguration/init%28configurationdata%29.md)
   Initializes a Virtio device specific configuration object with the configuration data you provide
 ### Instance Properties
-- [var configurationData: Data](vzvirtiodevicespecificconfiguration/configurationdata.md)
+- [var configurationData: Data](./vzvirtiodevicespecificconfiguration/configurationdata.md)
   The serialized device-specific configuration.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZCustomVirtioDevice](vzcustomvirtiodevice.md)
+### Creating and configuring Virtio drivers
+- [class VZCustomVirtioDevice](./vzcustomvirtiodevice.md)
   An interface that represents a custom Virtio device that you provide the implementation for.
-- [class VZCustomVirtioDeviceConfiguration](vzcustomvirtiodeviceconfiguration.md)
+- [class VZCustomVirtioDeviceConfiguration](./vzcustomvirtiodeviceconfiguration.md)
   An object that defines a custom Virtio Device configuration.
 
 

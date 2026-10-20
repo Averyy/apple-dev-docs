@@ -1,7 +1,8 @@
 # MTLTensorPlaneType.scales
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The auxiliary plane that stores scale factors for elements in the data plane.
 
@@ -17,6 +18,10 @@ The auxiliary plane that stores scale factors for elements in the data plane.
 
 ```swift
 case scales
+```
+
+```c
+MTLTensorPlaneTypeScales
 ```
 
 

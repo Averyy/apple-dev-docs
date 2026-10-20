@@ -1,7 +1,8 @@
 # isEqual(to:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether a feature value is equal to another.
 
@@ -18,6 +19,10 @@ Returns a Boolean value that indicates whether a feature value is equal to anoth
 
 ```swift
 func isEqual(to value: MLFeatureValue) -> Bool
+```
+
+```objc
+- (BOOL) isEqualToFeatureValue:(MLFeatureValue *) value;
 ```
 
 ## Parameters

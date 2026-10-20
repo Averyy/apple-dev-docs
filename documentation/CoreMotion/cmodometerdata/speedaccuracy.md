@@ -1,7 +1,8 @@
 # speedAccuracy
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The accuracy of the speed value.
 
@@ -19,15 +20,20 @@ The accuracy of the speed value.
 var speedAccuracy: CLLocationSpeedAccuracy { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CLLocationSpeedAccuracy speedAccuracy;
+```
+
 #### Discussion
 
-This property measures the accuracy of the [`speed`](cmodometerdata/speed.md) property. When this property contains `0` or a positive number, the value in the `speed` property is plus or minus the specified number of meters per second. When this property contains a negative number, the value in the `speed` property is invalid.
+This property measures the accuracy of the [`speed`](./speed.md) property. When this property contains `0` or a positive number, the value in the `speed` property is plus or minus the specified number of meters per second. When this property contains a negative number, the value in the `speed` property is invalid.
 
 ## See Also
 
-- [var verticalAccuracy: CLLocationAccuracy](cmodometerdata/verticalaccuracy.md)
+### Getting the location accuracy
+- [var verticalAccuracy: CLLocationAccuracy](./verticalaccuracy.md)
   The validity of the altitude values and their estimated uncertainty, measured in meters.
-- [var deltaDistanceAccuracy: CLLocationAccuracy](cmodometerdata/deltadistanceaccuracy.md)
+- [var deltaDistanceAccuracy: CLLocationAccuracy](./deltadistanceaccuracy.md)
   The accuracy of the change in distance value.
 
 

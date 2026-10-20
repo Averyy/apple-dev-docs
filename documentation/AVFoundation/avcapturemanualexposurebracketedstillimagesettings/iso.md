@@ -1,7 +1,8 @@
 # iso
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ISO for the still image.
 
@@ -17,9 +18,14 @@ The ISO for the still image.
 var iso: Float { get }
 ```
 
+```objc
+@property (readonly) float ISO;
+```
+
 ## See Also
 
-- [var exposureDuration: CMTime](avcapturemanualexposurebracketedstillimagesettings/exposureduration.md)
+### Getting manual exposure setting values
+- [var exposureDuration: CMTime](./exposureduration.md)
   The exposure duration for the still image.
 
 

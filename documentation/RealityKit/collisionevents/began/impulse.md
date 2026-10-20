@@ -1,7 +1,8 @@
 # impulse
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total impulse in this collision pair obtained by adding up all the individual impulses applied at each contact point.
 
@@ -11,7 +12,7 @@ The total impulse in this collision pair obtained by adding up all the individua
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ let impulse: Float
 
 ## See Also
 
-- [let position: SIMD3<Float>](collisionevents/began/position.md)
+### Characterizing the collision
+- [let position: SIMD3<Float>](./position.md)
   A position representing the estimated point of contact.
 
 

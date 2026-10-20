@@ -1,7 +1,8 @@
 # isTest
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this is a test target.
 
@@ -13,9 +14,10 @@ final var isTest: Bool { get }
 
 ## See Also
 
-- [let type: Target.TargetType](target/type.md)
+### Describing the Target Type
+- [let type: Target.TargetType](./type.md)
   The type of the target.
-- [Target.TargetType](target/targettype.md)
+- [Target.TargetType](./targettype.md)
   The different types of a target.
 
 

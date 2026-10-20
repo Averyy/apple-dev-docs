@@ -1,7 +1,8 @@
 # IOUSBConfigurationDescHeader
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 The header of a configuration descriptor.
 
@@ -10,32 +11,34 @@ The header of a configuration descriptor.
 
 ## Declaration
 
-```swift
+```c
 typedef struct IOUSBConfigurationDescHeader IOUSBConfigurationDescHeader;
 ```
 
 #### Discussion
 
-The header of a [`IOUSBConfigurationDescriptor`](https://developer.apple.com/documentation/iokit/iousbconfigurationdescriptor) that returns the total length of the descriptor.
+The header of a [`IOUSBConfigurationDescriptor`](../iokit/iousbconfigurationdescriptor.md) that returns the total length of the descriptor.
 
 ## Topics
 
 ### Getting the Properties
-- [bLength](iousbconfigurationdescheader/1546382-blength.md)
+- [bLength](./iousbconfigurationdescheader/api-1546382-blength.md)
   The size of the descriptor.
-- [bDescriptorType](iousbconfigurationdescheader/1546140-bdescriptortype.md)
+- [bDescriptorType](./iousbconfigurationdescheader/api-1546140-bdescriptortype.md)
   The type of the descriptor.
-- [wTotalLength](iousbconfigurationdescheader/1546394-wtotallength.md)
+- [wTotalLength](./iousbconfigurationdescheader/api-1546394-wtotallength.md)
   The total length of the descriptor, including the length of all related interface, endpoint, and vendor-specific descriptors.
 
 ## See Also
 
-- [IOUSBConfigurationDescriptor](iousbconfigurationdescriptor.md)
+### Configuration Descriptors
+- [IOUSBConfigurationDescriptor](./iousbconfigurationdescriptor.md)
   The structure for storing a USB configuration descriptor.
-- [IOUSBConfigurationDescriptorPtr](iousbconfigurationdescriptorptr.md)
+- [IOUSBConfigurationDescriptorPtr](./iousbconfigurationdescriptorptr.md)
   A pointer to a configuration descriptor.
-- [IOUSBConfigurationDescHeaderPtr](iousbconfigurationdescheaderptr.md)
+- [IOUSBConfigurationDescHeaderPtr](./iousbconfigurationdescheaderptr.md)
   A pointer to a configuration descriptor header.
+### Related Documentation
 - [IOUSBConfigurationDescHeader](../iokit/usb_h_user-space/iousbconfigurationdescheader.md)
 
 

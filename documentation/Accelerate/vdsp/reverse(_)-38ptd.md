@@ -1,7 +1,8 @@
 # reverse(_:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Reverses a vector of single-precision values in-place.
 
@@ -11,7 +12,7 @@ Reverses a vector of single-precision values in-place.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ static func reverse<V>(_ vector: inout V) where V : AccelerateMutableBuffer, V.E
 
 #### Discussion
 
-The single- and double-precision [`reverse(_:)`](vdsp/reverse(_:)-3aq38.md) functions reverse the elements of an array.
+The single- and double-precision [`reverse(_:)`](./reverse%28_%29-3aq38.md) functions reverse the elements of an array.
 
 The following code reverses the elements in the array `values`:
 
@@ -41,7 +42,8 @@ print(values)
 
 ## See Also
 
-- [static func reverse<V>(inout V)](vdsp/reverse(_:)-3aq38.md)
+### Vector reversing functions
+- [static func reverse<V>(inout V)](./reverse%28_%29-3aq38.md)
   Reverses a vector of double-precision values in-place.
 
 

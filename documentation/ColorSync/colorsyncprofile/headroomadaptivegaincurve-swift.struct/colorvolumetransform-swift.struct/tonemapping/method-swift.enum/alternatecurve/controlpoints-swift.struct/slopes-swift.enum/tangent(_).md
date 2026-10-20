@@ -1,7 +1,8 @@
 # ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve.ControlPoints.Slopes.tangent(_:)
 
 **Framework**: ColorSync  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Explicit tangent slopes expressed as tan(slope_angle), one per control point.
 
@@ -22,11 +23,11 @@ case tangent([Float])
 
 ## Mentions
 
-- [Authoring Headroom Adaptive Gain Curve metadata](authoring-headroom-adaptive-gain-curve-metadata.md)
+- [Authoring Headroom Adaptive Gain Curve metadata](../../../../../../../../authoring-headroom-adaptive-gain-curve-metadata.md)
 
 #### Discussion
 
-To have slopes computed automatically, use [`ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve.ControlPoints.Slopes.interpolate`](colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/slopes-swift.enum/interpolate.md).
+To have slopes computed automatically, use [`ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve.ControlPoints.Slopes.interpolate`](./interpolate.md).
 
 
 ---

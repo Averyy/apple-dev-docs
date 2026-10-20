@@ -1,7 +1,8 @@
 # withLockUnchecked(flags:_:)
 
 **Framework**: os  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -17,6 +18,8 @@
 ```swift
 func withLockUnchecked<R>(flags: OSAllocatedUnfairLockFlags, _ body: () throws -> R) rethrows -> R
 ```
+
+Available when `State` is `()`.
 
 
 ---

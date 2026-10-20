@@ -1,7 +1,8 @@
 # scheduleSnapshotRefresh(withPreferredDate:userInfo:scheduledCompletion:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Schedules a background task to refresh your app’s snapshot.
 
@@ -14,15 +15,19 @@ Schedules a background task to refresh your app’s snapshot.
 func scheduleSnapshotRefresh(withPreferredDate preferredFireDate: Date, userInfo: (any NSSecureCoding & NSObjectProtocol)?, scheduledCompletion: @escaping ((any Error)?) -> Void)
 ```
 
+```objc
+- (void) scheduleSnapshotRefreshWithPreferredDate:(NSDate *) preferredFireDate userInfo:(id<NSObject,NSSecureCoding>) userInfo scheduledCompletion:(void (^)(NSError *error)) scheduledCompletion;
+```
+
 ## Mentions
 
-- [Preparing to take your watchOS app’s snapshot](preparing-to-take-your-watchos-app-s-snapshot.md)
+- [Preparing to take your watchOS app’s snapshot](../preparing-to-take-your-watchos-app-s-snapshot.md)
 
 #### Discussion
 
-Call this method to update your app’s snapshot in the background. When the system triggers the task, it wakes your app in the background and calls your app delegate’s [`handle(_:)`](wkapplicationdelegate/handle(_:)-7kiwx.md) method. Use this task to transition to the interface controller you want to display in the snapshot, and to update that controller’s user interface.
+Call this method to update your app’s snapshot in the background. When the system triggers the task, it wakes your app in the background and calls your app delegate’s [`handle(_:)`](../wkapplicationdelegate/handle%28_%29-7kiwx.md) method. Use this task to transition to the interface controller you want to display in the snapshot, and to update that controller’s user interface.
 
-You can only schedule one background snapshot refresh task at a time. If you’ve already scheduled a background snapshot refresh task, scheduling a second task cancels the first. Additionally, the system budgets background snapshot refresh tasks. For more information, see [`WKSnapshotRefreshBackgroundTask`](wksnapshotrefreshbackgroundtask.md).
+You can only schedule one background snapshot refresh task at a time. If you’ve already scheduled a background snapshot refresh task, scheduling a second task cancels the first. Additionally, the system budgets background snapshot refresh tasks. For more information, see [`WKSnapshotRefreshBackgroundTask`](../wksnapshotrefreshbackgroundtask.md).
 
 The system automatically schedules background snapshot request tasks in the following situations:
 
@@ -36,9 +41,13 @@ These requests don’t cancel or replace any of your scheduled requests.
 
 ## Parameters
 
-- `preferredFireDate`: The time of the next background snapshot refresh task. The system makes every effort to wake your app in the background at some point after the scheduled time, but the system doesn’t guarantee a precise time. If you pass the current date and time, the system immediately invalidates your existing snapshot, marking the snapshot as stale in the Dock. The system also schedules the earliest possible background snapshot refresh task.
+- `preferredFireDate`: The time of the next background snapshot refresh task. The system makes every effort to wake your app in the background at some point after the scheduled time, but the system doesn’t guarantee a precise time.
+
+  If you pass the current date and time, the system immediately invalidates your existing snapshot, marking the snapshot as stale in the Dock. The system also schedules the earliest possible background snapshot refresh task.
 - `userInfo`: A dictionary of custom information associated with the background snapshot refresh task. Pass `nil` if you don’t need to associate any custom data with the task.
-- `scheduledCompletion`: A block that the system calls after the background refresh has completed. This block takes the following parameter: - **error**: If an error occurs, this parameter contains an object describing the error; otherwise, it’s `nil`.
+- `scheduledCompletion`: A block that the system calls after the background refresh has completed. This block takes the following parameter:
+
+  - **error**: If an error occurs, this parameter contains an object describing the error; otherwise, it’s `nil`.
 
 
 ---

@@ -1,7 +1,8 @@
 # rename(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes a title.
 
@@ -18,13 +19,18 @@ Changes a title.
 optional func rename(_ sender: Any?)
 ```
 
+```objc
+- (void) rename:(id) sender;
+```
+
 ## See Also
 
-- [func duplicate(Any?)](uiresponderstandardeditactions/duplicate(_:).md)
+### Handling data commands
+- [func duplicate(Any?)](./duplicate%28_%29.md)
   Duplicates data.
-- [func export(Any?)](uiresponderstandardeditactions/export(_:).md)
+- [func export(Any?)](./export%28_%29.md)
   Exports data in different file formats or to other apps.
-- [func move(Any?)](uiresponderstandardeditactions/move(_:).md)
+- [func move(Any?)](./move%28_%29.md)
   Prompts a person to specify a new location and moves data to that location.
 
 

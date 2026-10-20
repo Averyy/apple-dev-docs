@@ -1,15 +1,16 @@
 # UIKIT_HAS_UIFOUNDATION_SYMBOLS
 
 **Framework**: UIKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -17,12 +18,17 @@
 var UIKIT_HAS_UIFOUNDATION_SYMBOLS: Int32 { get }
 ```
 
+```c
+#define UIKIT_HAS_UIFOUNDATION_SYMBOLS
+```
+
 ## See Also
 
-- [macro Preview(String?, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> UIView)](preview(_:traits:body:)-c7kr.md)
-- [macro Preview(String?, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> UIViewController)](preview(_:traits:body:)-en9c.md)
-- [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> UIView)](preview(_:traits:arguments:body:)-6gm4c.md)
-- [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> UIViewController)](preview(_:traits:arguments:body:)-7cbjv.md)
+### Macros
+- [macro Preview(String?, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> UIView)](./preview%28_,traits,body%29-c7kr.md)
+- [macro Preview(String?, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> UIViewController)](./preview%28_,traits,body%29-en9c.md)
+- [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> UIView)](./preview%28_,traits,arguments,body%29-6gm4c.md)
+- [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> UIViewController)](./preview%28_,traits,arguments,body%29-7cbjv.md)
 
 
 ---

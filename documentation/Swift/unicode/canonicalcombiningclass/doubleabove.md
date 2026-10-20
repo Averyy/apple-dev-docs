@@ -1,7 +1,8 @@
 # doubleAbove
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Distinct marks extending above two bases.
 

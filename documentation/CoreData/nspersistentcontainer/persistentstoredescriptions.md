@@ -1,7 +1,8 @@
 # persistentStoreDescriptions
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptions of the container’s persistent stores.
 
@@ -20,15 +21,20 @@ The descriptions of the container’s persistent stores.
 var persistentStoreDescriptions: [NSPersistentStoreDescription] { get set }
 ```
 
+```objc
+@property (copy) NSArray<NSPersistentStoreDescription *> * persistentStoreDescriptions;
+```
+
 #### Discussion
 
-If you want to override the type (or types) of persistent store(s) used by the persistent container, you can set this property with an array of [`NSPersistentStoreDescription`](nspersistentstoredescription.md) objects.
+If you want to override the type (or types) of persistent store(s) used by the persistent container, you can set this property with an array of [`NSPersistentStoreDescription`](../nspersistentstoredescription.md) objects.
 
-If you will be configuring custom persistent store descriptions, you must set this property before calling [`loadPersistentStores(completionHandler:)`](nspersistentcontainer/loadpersistentstores(completionhandler:).md).
+If you will be configuring custom persistent store descriptions, you must set this property before calling [`loadPersistentStores(completionHandler:)`](./loadpersistentstores%28completionhandler%29.md).
 
 ## See Also
 
-- [func loadPersistentStores(completionHandler: (NSPersistentStoreDescription, (any Error)?) -> Void)](nspersistentcontainer/loadpersistentstores(completionhandler:).md)
+### Managing Persistent Stores
+- [func loadPersistentStores(completionHandler: (NSPersistentStoreDescription, (any Error)?) -> Void)](./loadpersistentstores%28completionhandler%29.md)
   Loads the persistent stores.
 
 

@@ -1,7 +1,8 @@
 # center
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Centers the presentation within the presenting view.
 
@@ -18,11 +19,12 @@ static let center: PresentationPlacement
 
 ## See Also
 
-- [static let automatic: PresentationPlacement](presentationplacement/automatic.md)
+### Specifying sheet placement
+- [static let automatic: PresentationPlacement](./automatic.md)
   The system determines the placement of the presentation.
-- [static let leading: PresentationPlacement](presentationplacement/leading.md)
+- [static let leading: PresentationPlacement](./leading.md)
   Places the presentation on the leading edge of the presenting view.
-- [static let trailing: PresentationPlacement](presentationplacement/trailing.md)
+- [static let trailing: PresentationPlacement](./trailing.md)
   Places the presentation on the trailing edge of the presenting view.
 
 

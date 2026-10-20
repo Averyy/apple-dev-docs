@@ -1,7 +1,8 @@
 # gatherAnnotatedFeatures(featureColumns:labelColumn:recordingFileColumn:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Processes the data source and returns a data frame that contains features, labels and file names.
 

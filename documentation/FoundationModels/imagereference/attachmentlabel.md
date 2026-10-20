@@ -1,7 +1,8 @@
 # attachmentLabel
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The label of the referenced image.
 

@@ -1,7 +1,8 @@
 # accessibilityCustomRotors
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 10.0+
@@ -15,6 +16,10 @@
 ```swift
 @MainActor
 var accessibilityCustomRotors: [UIAccessibilityCustomRotor]? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) NSArray<UIAccessibilityCustomRotor *> * accessibilityCustomRotors;
 ```
 
 

@@ -1,7 +1,8 @@
 # Unicode.GeneralCategory.otherPunctuation
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A punctuation mark of another type.
 
@@ -22,7 +23,7 @@ case otherPunctuation
 
 #### Discussion
 
-This value corresponds to the category `Other_Punctuation` (abbreviated `Po`) in the [`Unicode Standard`](https://developer.apple.comhttps://unicode.org/reports/tr44/#General_Category_Values).
+This value corresponds to the category `Other_Punctuation` (abbreviated `Po`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 
 
 ---

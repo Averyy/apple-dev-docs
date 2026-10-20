@@ -1,7 +1,8 @@
 # init(minimumInterval:paused:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a pausable schedule of dates updating at a frequency no more quickly than the provided interval.
 

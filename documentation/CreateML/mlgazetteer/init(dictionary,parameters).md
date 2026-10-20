@@ -1,7 +1,8 @@
 # init(dictionary:parameters:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a gazetteer from a dictionary of labels and terms.
 
@@ -21,11 +22,12 @@ init(dictionary: [String : [String]], parameters: MLGazetteer.ModelParameters = 
 
 ## See Also
 
-- [init(labeledData: MLDataTable, textColumn: String, labelColumn: String, parameters: MLGazetteer.ModelParameters) throws](mlgazetteer/init(labeleddata:textcolumn:labelcolumn:parameters:).md)
+### Creating a gazetteer
+- [init(labeledData: MLDataTable, textColumn: String, labelColumn: String, parameters: MLGazetteer.ModelParameters) throws](./init%28labeleddata,textcolumn,labelcolumn,parameters%29.md)
   Creates a gazetteer from a table of labels and terms.
-- [MLGazetteer.ModelParameters](mlgazetteer/modelparameters-swift.struct.md)
+- [MLGazetteer.ModelParameters](./modelparameters-swift.struct.md)
   The model configuration parameters.
-- [let modelParameters: MLGazetteer.ModelParameters](mlgazetteer/modelparameters-swift.property.md)
+- [let modelParameters: MLGazetteer.ModelParameters](./modelparameters-swift.property.md)
   The model configuration parameters.
 
 

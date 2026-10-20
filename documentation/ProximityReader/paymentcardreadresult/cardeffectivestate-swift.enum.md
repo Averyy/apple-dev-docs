@@ -1,7 +1,8 @@
 # PaymentCardReadResult.CardEffectiveState
 
 **Framework**: ProximityReader  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that describe the effective state of the card that was read.
 
@@ -19,22 +20,22 @@ enum CardEffectiveState
 ## Topics
 
 ### Enumeration Cases
-- [PaymentCardReadResult.CardEffectiveState.active](paymentcardreadresult/cardeffectivestate-swift.enum/active.md)
+- [PaymentCardReadResult.CardEffectiveState.active](./cardeffectivestate-swift.enum/active.md)
   The card is active.
-- [PaymentCardReadResult.CardEffectiveState.inactive](paymentcardreadresult/cardeffectivestate-swift.enum/inactive.md)
+- [PaymentCardReadResult.CardEffectiveState.inactive](./cardeffectivestate-swift.enum/inactive.md)
   The card is inactive.
-- [PaymentCardReadResult.CardEffectiveState.invalid](paymentcardreadresult/cardeffectivestate-swift.enum/invalid.md)
+- [PaymentCardReadResult.CardEffectiveState.invalid](./cardeffectivestate-swift.enum/invalid.md)
   The card effective state is invalid.
-- [PaymentCardReadResult.CardEffectiveState.unknown](paymentcardreadresult/cardeffectivestate-swift.enum/unknown.md)
+- [PaymentCardReadResult.CardEffectiveState.unknown](./cardeffectivestate-swift.enum/unknown.md)
   The card effective state is not available.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

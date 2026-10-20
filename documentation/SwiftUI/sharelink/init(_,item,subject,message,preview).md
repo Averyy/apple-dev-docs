@@ -1,7 +1,8 @@
 # init(_:item:subject:message:preview:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance, with a custom label, that presents the share interface.
 
@@ -20,6 +21,25 @@ Creates an instance, with a custom label, that presents the share interface.
 nonisolated init<I>(_ titleResource: LocalizedStringResource, item: I, subject: Text? = nil, message: Text? = nil, preview: SharePreview<PreviewImage, PreviewIcon>) where Data == CollectionOfOne<I>, I : Transferable
 ```
 
+Available when `Data` conforms to `RandomAccessCollection`, `PreviewImage` conforms to `Transferable`, `PreviewIcon` conforms to `Transferable`, `Label` is `DefaultShareLinkLabel`, and `Data.Element` conforms to `Transferable`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init<I>(_ title: Text, item: I, subject: Text? = nil, message: Text? = nil, preview: SharePreview<PreviewImage, PreviewIcon>) where Data == CollectionOfOne<I>, I : Transferable
+```
+
+```swift
+nonisolated
+init<I>(_ titleKey: LocalizedStringKey, item: I, subject: Text? = nil, message: Text? = nil, preview: SharePreview<PreviewImage, PreviewIcon>) where Data == CollectionOfOne<I>, I : Transferable
+```
+
+```swift
+nonisolated
+init<S, I>(_ title: S, item: I, subject: Text? = nil, message: Text? = nil, preview: SharePreview<PreviewImage, PreviewIcon>) where Data == CollectionOfOne<I>, S : StringProtocol, I : Transferable
+```
+
 ## Parameters
 
 - `titleResource`: A resource for the title of the share action.
@@ -30,9 +50,10 @@ nonisolated init<I>(_ titleResource: LocalizedStringResource, item: I, subject: 
 
 ## See Also
 
-- [init<I>(item: I, subject: Text?, message: Text?, preview: SharePreview<PreviewImage, PreviewIcon>)](sharelink/init(item:subject:message:preview:).md)
+### Sharing an item with a preview
+- [init<I>(item: I, subject: Text?, message: Text?, preview: SharePreview<PreviewImage, PreviewIcon>)](./init%28item,subject,message,preview%29.md)
   Creates an instance that presents the share interface.
-- [init<I>(item: I, subject: Text?, message: Text?, preview: SharePreview<PreviewImage, PreviewIcon>, label: () -> Label)](sharelink/init(item:subject:message:preview:label:).md)
+- [init<I>(item: I, subject: Text?, message: Text?, preview: SharePreview<PreviewImage, PreviewIcon>, label: () -> Label)](./init%28item,subject,message,preview,label%29.md)
   Creates an instance that presents the share interface.
 
 

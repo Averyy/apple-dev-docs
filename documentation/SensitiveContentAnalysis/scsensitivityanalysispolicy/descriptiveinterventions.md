@@ -1,7 +1,8 @@
 # SCSensitivityAnalysisPolicy.descriptiveInterventions
 
 **Framework**: Sensitive Content Analysis  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An indicator that the person requests overt detection of sensitive content.
 
@@ -18,13 +19,17 @@ An indicator that the person requests overt detection of sensitive content.
 case descriptiveInterventions
 ```
 
+```c
+SCSensitivityAnalysisPolicyDescriptiveInterventions
+```
+
 ## Mentions
 
-- [Detecting sensitive content in media and providing intervention options](detecting-nudity-in-media-and-providing-intervention-options.md)
+- [Detecting sensitive content in media and providing intervention options](../detecting-nudity-in-media-and-providing-intervention-options.md)
 
 #### Discussion
 
-If this value is [`analysisPolicy`](scsensitivityanalyzer/analysispolicy.md), it indicates that the person turned on both of the following:
+If this value is [`analysisPolicy`](../scsensitivityanalyzer/analysispolicy.md), it indicates that the person turned on both of the following:
 
 - Communication Safety parental control in Screen Time
 - Sensitive Content Warnings in your app’s settings
@@ -37,9 +42,10 @@ When your app detects sensitive content under this policy, your app needs to:
 
 ## See Also
 
-- [SCSensitivityAnalysisPolicy.disabled](scsensitivityanalysispolicy/disabled.md)
+### Checking and intervention strategies
+- [SCSensitivityAnalysisPolicy.disabled](./disabled.md)
   An indicator that the app lacks access to use the framework.
-- [SCSensitivityAnalysisPolicy.simpleInterventions](scsensitivityanalysispolicy/simpleinterventions.md)
+- [SCSensitivityAnalysisPolicy.simpleInterventions](./simpleinterventions.md)
   An indicator that user preference requests discrete detection of sensitive content.
 
 

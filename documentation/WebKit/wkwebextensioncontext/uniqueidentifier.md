@@ -1,7 +1,8 @@
 # uniqueIdentifier
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier used to distinguish the extension from other extensions and target it for messages.
 
@@ -16,6 +17,10 @@ A unique identifier used to distinguish the extension from other extensions and 
 
 ```swift
 var uniqueIdentifier: String { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSString * uniqueIdentifier;
 ```
 
 #### Discussion

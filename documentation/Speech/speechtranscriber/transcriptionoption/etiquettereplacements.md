@@ -1,7 +1,8 @@
 # SpeechTranscriber.TranscriptionOption.etiquetteReplacements
 
 **Framework**: Speech  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Replaces certain words and phrases with a redacted form.
 

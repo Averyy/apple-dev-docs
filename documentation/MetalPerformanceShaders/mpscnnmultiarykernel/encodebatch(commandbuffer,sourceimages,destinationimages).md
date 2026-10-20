@@ -1,7 +1,8 @@
 # encodeBatch(commandBuffer:sourceImages:destinationImages:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func encodeBatch(commandBuffer: any MTLCommandBuffer, sourceImages: [[MPSImage]], destinationImages: [MPSImage])
+```
+
+```objc
+- (void) encodeBatchToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer sourceImages:(NSArray<NSArray<MPSImage *> *> *) sourceImages destinationImages:(MPSImageBatch *) destinationImages;
 ```
 
 

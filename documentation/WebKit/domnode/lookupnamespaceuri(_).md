@@ -1,15 +1,20 @@
 # lookupNamespaceURI(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS 10.5+
+- macOS 10.5+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 func lookupNamespaceURI(_ prefix: String!) -> String!
+```
+
+```objc
+- (NSString *) lookupNamespaceURI:(NSString *) prefix;
 ```
 
 

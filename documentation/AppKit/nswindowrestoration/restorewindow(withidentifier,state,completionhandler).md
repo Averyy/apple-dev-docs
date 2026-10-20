@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 Asks the class to provide a new window for the specified identifier.
@@ -13,7 +14,16 @@ Asks the class to provide a new window for the specified identifier.
 
 ```swift
 @MainActor
+static func restoreWindow(withIdentifier identifier: NSUserInterfaceItemIdentifier, state: NSCoder, completionHandler: @escaping (NSWindow?, (any Error)?) -> Void)
+```
+
+```swift
+@MainActor
 static func restoreWindow(withIdentifier identifier: NSUserInterfaceItemIdentifier, state: NSCoder) async throws -> NSWindow
+```
+
+```objc
++ (void) restoreWindowWithIdentifier:(NSUserInterfaceItemIdentifier) identifier state:(NSCoder *) state completionHandler:(void (^)(NSWindow *, NSError *)) completionHandler;
 ```
 
 #### Discussion
@@ -28,8 +38,10 @@ If you plan to invoke `completionHandler` after this method returns, you must co
 
 - `identifier`: The unique interface item identifier string that was previously associated with the window. Use this string to determine which window to create.
 - `state`: A coder object containing the window state information. This coder object contains the combined restorable state of the window, which can include the state of the window, its delegate, window controller, and document object. You can use this state to determine which window to create.
-- `completionHandler`: A Block object to execute with the results of creating the window. You must execute this block at some point but may do so after the method returns if needed. This block takes the following parameters: - The window that was created or `nil` if the window could not be created.
-- An error object if the window was not recognized or could not be created for whatever reason; otherwise, specify `nil`.
+- `completionHandler`: A Block object to execute with the results of creating the window. You must execute this block at some point but may do so after the method returns if needed. This block takes the following parameters:
+
+  - The window that was created or `nil` if the window could not be created.
+  - An error object if the window was not recognized or could not be created for whatever reason; otherwise, specify `nil`.
 
 
 ---

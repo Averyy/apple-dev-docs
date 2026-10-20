@@ -1,7 +1,8 @@
 # defaultLocalization
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default localization for resources.
 
@@ -16,7 +17,8 @@ final var defaultLocalization: LanguageTag?
 
 ## See Also
 
-- [struct LanguageTag](languagetag.md)
+### Localizing Package Resources
+- [struct LanguageTag](../languagetag.md)
   A wrapper around an IETF language tag.
 
 

@@ -1,7 +1,8 @@
 # supportedRecognitionLanguages()
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the identifiers of the languages that the request supports.
 
@@ -19,21 +20,26 @@ Returns the identifiers of the languages that the request supports.
 func supportedRecognitionLanguages() throws -> [String]
 ```
 
+```objc
+- (NSArray<NSString *> *) supportedRecognitionLanguagesAndReturnError:(NSError **) error;
+```
+
 #### Return Value
 
 The language identifiers.
 
 ## See Also
 
-- [var automaticallyDetectsLanguage: Bool](vnrecognizetextrequest/automaticallydetectslanguage.md)
+### Specifying the Language
+- [var automaticallyDetectsLanguage: Bool](./automaticallydetectslanguage.md)
   A Boolean value that indicates whether to attempt detecting the language to use the appropriate model for recognition and language correction.
-- [var recognitionLanguages: [String]](vnrecognizetextrequest/recognitionlanguages.md)
+- [var recognitionLanguages: [String]](./recognitionlanguages.md)
   An array of languages to detect, in priority order.
-- [var usesLanguageCorrection: Bool](vnrecognizetextrequest/useslanguagecorrection.md)
+- [var usesLanguageCorrection: Bool](./useslanguagecorrection.md)
   A Boolean value that indicates whether the request applies language correction during the recognition process.
-- [var customWords: [String]](vnrecognizetextrequest/customwords.md)
+- [var customWords: [String]](./customwords.md)
   An array of strings to supplement the recognized languages at the word-recognition stage.
-- [class func supportedRecognitionLanguages(for: VNRequestTextRecognitionLevel, revision: Int) throws -> [String]](vnrecognizetextrequest/supportedrecognitionlanguages(for:revision:).md)
+- [class func supportedRecognitionLanguages(for: VNRequestTextRecognitionLevel, revision: Int) throws -> [String]](./supportedrecognitionlanguages%28for,revision%29.md)
   Requests a list of languages that the specified revision recognizes.
 
 

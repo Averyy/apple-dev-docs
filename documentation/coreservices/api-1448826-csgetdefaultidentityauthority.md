@@ -1,7 +1,8 @@
 # CSGetDefaultIdentityAuthority()
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func CSGetDefaultIdentityAuthority() -> Unmanaged<CSIdentityAuthority>!
+```
+
+```c
+CSIdentityAuthorityRef CSGetDefaultIdentityAuthority(void);
 ```
 
 

@@ -1,7 +1,8 @@
 # NetworkBrowser.RunResult
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.0+
@@ -21,8 +22,8 @@ enum RunResult<T>
 ## Topics
 
 ### Enumeration Cases
-- [NetworkBrowser.RunResult.continue](networkbrowser/runresult/continue.md)
-- [NetworkBrowser.RunResult.finish(_:)](networkbrowser/runresult/finish(_:).md)
+- [NetworkBrowser.RunResult.continue](./runresult/continue.md)
+- [NetworkBrowser.RunResult.finish(_:)](./runresult/finish%28_%29.md)
 
 
 ---

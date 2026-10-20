@@ -1,7 +1,8 @@
 # init(red:green:blue:)
 
 **Framework**: Game Controller  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color with the specified red, green, and blue values.
 
@@ -17,6 +18,10 @@ Creates a color with the specified red, green, and blue values.
 
 ```swift
 init(red: Float, green: Float, blue: Float)
+```
+
+```objc
+- (instancetype) initWithRed:(float) red green:(float) green blue:(float) blue;
 ```
 
 ## Parameters

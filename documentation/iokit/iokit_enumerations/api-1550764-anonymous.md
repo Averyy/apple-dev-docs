@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var kIOServiceInteractionAllowed: Int](kioserviceinteractionallowed.md)
+- [var kIOServiceInteractionAllowed: Int](../kioserviceinteractionallowed.md)
 
 
 ---

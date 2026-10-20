@@ -1,7 +1,8 @@
 # writeAttributeInt8s(withValue:expectedValueInterval:params:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 func writeAttributeInt8s(withValue dataValueDictionary: [String : Any], expectedValueInterval expectedValueIntervalMs: NSNumber, params: MTRWriteParams?)
+```
+
+```objc
+- (void) writeAttributeInt8sWithValue:(NSDictionary<NSString *,id> *) dataValueDictionary expectedValueInterval:(NSNumber *) expectedValueIntervalMs params:(MTRWriteParams *) params;
 ```
 
 

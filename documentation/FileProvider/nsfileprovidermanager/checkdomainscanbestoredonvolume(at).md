@@ -1,7 +1,8 @@
 # checkDomainsCanBeStoredOnVolume(at:)
 
 **Framework**: File Provider  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Checks whether the specified URL is eligible for storing a domain.
 
@@ -16,11 +17,12 @@ class func checkDomainsCanBeStoredOnVolume(at url: URL) throws -> NSFileProvider
 
 ## See Also
 
-- [func stateDirectoryURL() throws -> URL](nsfileprovidermanager/statedirectoryurl.md)
+### Working with external volumes
+- [func stateDirectoryURL() throws -> URL](./statedirectoryurl%28%29.md)
   Returns a URL for a directory for storing state information for the domain.
-- [NSFileProviderManager.EligibilityResult](nsfileprovidermanager/eligibilityresult.md)
+- [NSFileProviderManager.EligibilityResult](./eligibilityresult.md)
   Constants that specify whether a URL is eligible for storing a domain.
-- [protocol NSFileProviderExternalVolumeHandling](nsfileproviderexternalvolumehandling.md)
+- [protocol NSFileProviderExternalVolumeHandling](../nsfileproviderexternalvolumehandling.md)
   A protocol that defines the interface for handling external volumes.
 
 

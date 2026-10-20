@@ -1,7 +1,8 @@
 # maximumImmersionAmount
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum amount of immersion used for this instance of the style.
 

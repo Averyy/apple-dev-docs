@@ -1,7 +1,8 @@
 # LanguageModelSession.Profile
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A profile that contains dynamic instructions.
 
@@ -21,11 +22,11 @@ struct Profile
 
 ## Mentions
 
-- [Composing dynamic sessions with instructions and profiles](composing-dynamic-sessions-with-instructions-and-profiles.md)
+- [Composing dynamic sessions with instructions and profiles](../composing-dynamic-sessions-with-instructions-and-profiles.md)
 
 #### Overview
 
-A profile binds [`DynamicInstructions`](dynamicinstructions.md) to a set of session-level configuration values. The [`DynamicInstructions`](dynamicinstructions.md) describes the content and tools and a [`LanguageModelSession.DynamicProfile`](languagemodelsession/dynamicprofile.md) orchestrates transitions between session configurations.
+A profile binds [`DynamicInstructions`](../dynamicinstructions.md) to a set of session-level configuration values. The [`DynamicInstructions`](../dynamicinstructions.md) describes the content and tools and a [`LanguageModelSession.DynamicProfile`](./dynamicprofile.md) orchestrates transitions between session configurations.
 
 ```swift
 Profile {
@@ -37,7 +38,7 @@ Profile {
 .reasoningLevel(likesAstronomy ? .deep : .light)
 ```
 
-A [`LanguageModelSession.Profile`](languagemodelsession/profile.md) conforms to [`LanguageModelSession.DynamicProfile`](languagemodelsession/dynamicprofile.md) and includes all the same modifiers that you use to configure a unit of work to perform. Observe and react to key moments during a session by using life cycle modifiers. When a profile and a subprofile both register a callback, the framework calls both. The following shows observing [`onToolOutput(perform:)`](languagemodelsession/dynamicprofile/ontooloutput(perform:).md) to handle logging after a tool provides output:
+A [`LanguageModelSession.Profile`](./profile.md) conforms to [`LanguageModelSession.DynamicProfile`](./dynamicprofile.md) and includes all the same modifiers that you use to configure a unit of work to perform. Observe and react to key moments during a session by using life cycle modifiers. When a profile and a subprofile both register a callback, the framework calls both. The following shows observing [`onToolOutput(perform:)`](./dynamicprofile/ontooloutput%28perform%29.md) to handle logging after a tool provides output:
 
 ```swift
 Profile {
@@ -51,27 +52,28 @@ Profile {
 ## Topics
 
 ### Creating a profile
-- [init(() -> some DynamicInstructions)](languagemodelsession/profile/init(_:).md)
+- [init(() -> some DynamicInstructions)](./profile/init%28_%29.md)
   Creates a profile that contains dynamic instructions.
 
 ## Relationships
 
 ### Conforms To
-- [LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile.md)
+- [LanguageModelSession.DynamicProfile](./dynamicprofile.md)
 
 ## See Also
 
-- [Composing dynamic sessions with instructions and profiles](composing-dynamic-sessions-with-instructions-and-profiles.md)
+### Dynamic profiles
+- [Composing dynamic sessions with instructions and profiles](../composing-dynamic-sessions-with-instructions-and-profiles.md)
   Adapt sessions dynamically at runtime by loading instructions and tools based on the state of your app.
-- [Origami: Crafting a dynamic tutorial for Apple Intelligence](origami-crafting-a-dynamic-tutorial-for-apple-intelligence.md)
+- [Origami: Crafting a dynamic tutorial for Apple Intelligence](../origami-crafting-a-dynamic-tutorial-for-apple-intelligence.md)
   Build interactive experiences with Foundation Models and Private Cloud Compute using multimodal prompts.
-- [protocol DynamicInstructions](dynamicinstructions.md)
+- [protocol DynamicInstructions](../dynamicinstructions.md)
   A type that represents dynamic instructions.
-- [struct DynamicInstructionsForEach](dynamicinstructionsforeach.md)
+- [struct DynamicInstructionsForEach](../dynamicinstructionsforeach.md)
   Dynamic instructions that produce content for each element of a collection.
-- [LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile.md)
+- [LanguageModelSession.DynamicProfile](./dynamicprofile.md)
   A dynamic profile that contains one or more profiles.
-- [LanguageModelSession.DynamicProfileModifier](languagemodelsession/dynamicprofilemodifier.md)
+- [LanguageModelSession.DynamicProfileModifier](./dynamicprofilemodifier.md)
   A protocol for creating reusable wrappers around dynamic profile content.
 
 

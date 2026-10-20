@@ -1,7 +1,8 @@
 # legibleMenuController(_:didRequestCaptionPreviewForProfileID:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.4+
@@ -14,6 +15,10 @@
 
 ```swift
 optional func legibleMenuController(_ menuController: AVLegibleMediaOptionsMenuController, didRequestCaptionPreviewForProfileID profileID: String)
+```
+
+```objc
+- (void) legibleMenuController:(AVLegibleMediaOptionsMenuController *) menuController didRequestCaptionPreviewForProfileID:(NSString *) profileID;
 ```
 
 #### Discussion
@@ -29,8 +34,9 @@ The client should display a caption preview using the MACaptionAppearance profil
 
 ## See Also
 
-- [func legibleMenuController(AVLegibleMediaOptionsMenuController, didChange: AVLegibleMediaOptionsMenuState)](avlegiblemediaoptionsmenucontroller/delegate-swift.protocol/legiblemenucontroller(_:didchange:).md)
-- [func legibleMenuControllerDidRequestStoppingSubtitleCaptionPreview(AVLegibleMediaOptionsMenuController)](avlegiblemediaoptionsmenucontroller/delegate-swift.protocol/legiblemenucontrollerdidrequeststoppingsubtitlecaptionpreview(_:).md)
+### Responding to menu changes
+- [func legibleMenuController(AVLegibleMediaOptionsMenuController, didChange: AVLegibleMediaOptionsMenuState)](./legiblemenucontroller%28_,didchange%29.md)
+- [func legibleMenuControllerDidRequestStoppingSubtitleCaptionPreview(AVLegibleMediaOptionsMenuController)](./legiblemenucontrollerdidrequeststoppingsubtitlecaptionpreview%28_%29.md)
 
 
 ---

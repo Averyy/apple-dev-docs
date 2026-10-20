@@ -1,7 +1,8 @@
 # invalid
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Render value reserved as invalid.
 

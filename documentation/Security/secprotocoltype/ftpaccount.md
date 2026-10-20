@@ -1,7 +1,8 @@
 # SecProtocolType.ftpAccount
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a client side FTP account. The usage of this constant is deprecated as of macOS 10.3.
 
@@ -13,6 +14,10 @@ Indicates a client side FTP account. The usage of this constant is deprecated as
 
 ```swift
 case ftpAccount
+```
+
+```c
+kSecProtocolTypeFTPAccount
 ```
 
 

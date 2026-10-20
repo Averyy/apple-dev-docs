@@ -1,7 +1,8 @@
 # MTRResponseCommandNameForID(_:_:)
 
 **Framework**: Matter  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Resolve Matter response (server to client) command IDs into a descriptive string.
 
@@ -18,6 +19,10 @@ Resolve Matter response (server to client) command IDs into a descriptive string
 
 ```swift
 func MTRResponseCommandNameForID(_ clusterID: MTRClusterIDType, _ commandID: MTRCommandIDType) -> String!
+```
+
+```c
+extern NSString *MTRResponseCommandNameForID(MTRClusterIDType clusterID, MTRCommandIDType commandID);
 ```
 
 #### Discussion

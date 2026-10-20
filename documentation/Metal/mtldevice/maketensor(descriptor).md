@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a tensor with the specified descriptor.
@@ -20,13 +21,17 @@ Creates a tensor with the specified descriptor.
 func makeTensor(descriptor: MTLTensorDescriptor) throws -> any MTLTensor
 ```
 
+```objc
+- (id<MTLTensor>) newTensorWithDescriptor:(MTLTensorDescriptor *) descriptor error:(NSError **) error;
+```
+
 #### Return Value
 
 A tensor, or `nil` if validation fails.
 
 #### Discussion
 
-This method validates the constraints documented on [`MTLTensorDescriptor`](mtltensordescriptor.md).
+This method validates the constraints documented on [`MTLTensorDescriptor`](../mtltensordescriptor.md).
 
 ## Parameters
 

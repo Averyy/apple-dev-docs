@@ -1,16 +1,17 @@
 # UIAccessibility.GuidedAccessRestrictionState.allow
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The app should allow the user to perform the action controlled by the restriction.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,9 +19,14 @@ The app should allow the user to perform the action controlled by the restrictio
 case allow
 ```
 
+```c
+UIGuidedAccessRestrictionStateAllow
+```
+
 ## See Also
 
-- [UIAccessibility.GuidedAccessRestrictionState.deny](uiaccessibility/guidedaccessrestrictionstate/deny.md)
+### Constants
+- [UIAccessibility.GuidedAccessRestrictionState.deny](./deny.md)
   The app should deny the user from performing the action controlled by the restriction.
 
 

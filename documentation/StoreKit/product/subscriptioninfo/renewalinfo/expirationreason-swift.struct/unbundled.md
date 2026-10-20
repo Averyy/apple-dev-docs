@@ -1,7 +1,8 @@
 # unbundled
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The subscription expired because the customer left the Subscription Bundle.
 

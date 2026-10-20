@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Provides a set of possible recovery options to present to the user.

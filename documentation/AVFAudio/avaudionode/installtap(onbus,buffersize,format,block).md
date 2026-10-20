@@ -1,23 +1,28 @@
 # installTap(onBus:bufferSize:format:block:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Installs an audio tap on a bus you specify to record, monitor, and observe the output of the node.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 8.0+ - Deprecated in 27.0
+- iPadOS 8.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.10+ - Deprecated in 27.0
+- tvOS 9.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+- watchOS 2.0+ - Deprecated in 27.0
 
 ## Declaration
 
 ```swift
 func installTap(onBus bus: AVAudioNodeBus, bufferSize: AVAudioFrameCount, format: AVAudioFormat?, block tapBlock: @escaping AVAudioNodeTapBlock)
+```
+
+```objc
+- (void) installTapOnBus:(AVAudioNodeBus) bus bufferSize:(AVAudioFrameCount) bufferSize format:(AVAudioFormat *) format block:(AVAudioNodeTapBlock) tapBlock;
 ```
 
 #### Discussion
@@ -41,16 +46,19 @@ AVAudioFormat *format = [input outputFormatForBus: 0];
 
 - `bus`: The output bus to attach the tap to.
 - `bufferSize`: The size of the incoming buffers. The implementation may choose another size.
-- `format`: If non-`nil`, the framework applies this format to the output bus you specify. An error occurs when attaching to an output bus that’s already in a connected state. The tap and connection formats (if non-`nil`) on the bus need to be identical. Otherwise, the latter operation overrides the previous format. For `AVAudioOutputNode`, you must specify the tap format as `nil`.
+- `format`: If non-`nil`, the framework applies this format to the output bus you specify. An error occurs when attaching to an output bus that’s already in a connected state. The tap and connection formats (if non-`nil`) on the bus need to be identical. Otherwise, the latter operation overrides the previous format.
+
+  For `AVAudioOutputNode`, you must specify the tap format as `nil`.
 - `tapBlock`: A block the framework calls with audio buffers.
 
 ## See Also
 
-- [func installAudioTap(onBus: AVAudioNodeBus, bufferSize: AVAudioFrameCount, format: AVAudioFormat?, tapProvider: (AVReadOnlyAudioPCMBuffer, AVAudioTime) -> Void) throws](avaudionode/installaudiotap(onbus:buffersize:format:tapprovider:).md)
+### Managing audio taps
+- [func installAudioTap(onBus: AVAudioNodeBus, bufferSize: AVAudioFrameCount, format: AVAudioFormat?, tapProvider: (AVReadOnlyAudioPCMBuffer, AVAudioTime) -> Void) throws](./installaudiotap%28onbus,buffersize,format,tapprovider%29.md)
   Install a tap on a bus using a sendable block
-- [func removeTap(onBus: AVAudioNodeBus)](avaudionode/removetap(onbus:).md)
+- [func removeTap(onBus: AVAudioNodeBus)](./removetap%28onbus%29.md)
   Removes an audio tap on a bus you specify.
-- [typealias AVAudioNodeTapBlock](avaudionodetapblock.md)
+- [typealias AVAudioNodeTapBlock](../avaudionodetapblock.md)
   The block that receives copies of the output of an audio node.
 
 

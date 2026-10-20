@@ -1,7 +1,8 @@
 # CSSearchQueryString
 
 **Framework**: Core Spotlight  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Provides the key for the current query in the info dictionary of the user activity object.
 
@@ -18,9 +19,14 @@ Provides the key for the current query in the info dictionary of the user activi
 let CSSearchQueryString: String
 ```
 
+```c
+extern NSString * const CSSearchQueryString;
+```
+
 ## See Also
 
-- [let CSQueryContinuationActionType: String](csquerycontinuationactiontype.md)
+### Continuing an activity
+- [let CSQueryContinuationActionType: String](./csquerycontinuationactiontype.md)
   Indicates that the activity type to continue is a search or query.
 
 

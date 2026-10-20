@@ -1,7 +1,8 @@
 # stringValue
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying string value.
 

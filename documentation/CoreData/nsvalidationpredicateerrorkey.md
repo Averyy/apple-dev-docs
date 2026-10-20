@@ -1,7 +1,8 @@
 # NSValidationPredicateErrorKey
 
 **Framework**: Core Data  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error key for the predicate that failed to validate.
 
@@ -10,7 +11,7 @@ The error key for the predicate that failed to validate.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,23 +21,28 @@ The error key for the predicate that failed to validate.
 let NSValidationPredicateErrorKey: String
 ```
 
+```c
+extern NSString * const NSValidationPredicateErrorKey;
+```
+
 ## See Also
 
-- [func validateValue(AutoreleasingUnsafeMutablePointer<AnyObject?>, forKey: String) throws](nsmanagedobject/validatevalue(_:forkey:).md)
+### Managing Data Validation
+- [func validateValue(AutoreleasingUnsafeMutablePointer<AnyObject?>, forKey: String) throws](./nsmanagedobject/validatevalue%28_,forkey%29.md)
   Validates a property value for a given key.
-- [func validateForDelete() throws](nsmanagedobject/validatefordelete.md)
+- [func validateForDelete() throws](./nsmanagedobject/validatefordelete%28%29.md)
   Determines whether the managed object can be deleted in its current state.
-- [func validateForInsert() throws](nsmanagedobject/validateforinsert.md)
+- [func validateForInsert() throws](./nsmanagedobject/validateforinsert%28%29.md)
   Determines whether the managed object can be inserted in its current state.
-- [func validateForUpdate() throws](nsmanagedobject/validateforupdate.md)
+- [func validateForUpdate() throws](./nsmanagedobject/validateforupdate%28%29.md)
   Determines whether the managed object’s current state is valid.
-- [Validation error codes](1535452-validation-error-codes.md)
+- [Validation error codes](./api-1535452-validation-error-codes.md)
   Error codes relating to the validation of managed objects.
-- [let NSValidationKeyErrorKey: String](nsvalidationkeyerrorkey.md)
+- [let NSValidationKeyErrorKey: String](./nsvalidationkeyerrorkey.md)
   The error key for the attribute that failed to validate.
-- [let NSValidationObjectErrorKey: String](nsvalidationobjecterrorkey.md)
+- [let NSValidationObjectErrorKey: String](./nsvalidationobjecterrorkey.md)
   The error key for the object that failed to validate.
-- [let NSValidationValueErrorKey: String](nsvalidationvalueerrorkey.md)
+- [let NSValidationValueErrorKey: String](./nsvalidationvalueerrorkey.md)
   The error key for the value that failed to validate.
 
 

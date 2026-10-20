@@ -1,7 +1,8 @@
 # documentation
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A human-readable description authored on this object.
 

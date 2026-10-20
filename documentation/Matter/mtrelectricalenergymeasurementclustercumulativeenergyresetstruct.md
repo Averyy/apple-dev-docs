@@ -1,7 +1,8 @@
 # MTRElectricalEnergyMeasurementClusterCumulativeEnergyResetStruct
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 17.6+
@@ -18,26 +19,30 @@
 class MTRElectricalEnergyMeasurementClusterCumulativeEnergyResetStruct
 ```
 
+```objc
+@interface MTRElectricalEnergyMeasurementClusterCumulativeEnergyResetStruct : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var exportedResetSystime: NSNumber?](mtrelectricalenergymeasurementclustercumulativeenergyresetstruct/exportedresetsystime.md)
-- [var exportedResetTimestamp: NSNumber?](mtrelectricalenergymeasurementclustercumulativeenergyresetstruct/exportedresettimestamp.md)
-- [var importedResetSystime: NSNumber?](mtrelectricalenergymeasurementclustercumulativeenergyresetstruct/importedresetsystime.md)
-- [var importedResetTimestamp: NSNumber?](mtrelectricalenergymeasurementclustercumulativeenergyresetstruct/importedresettimestamp.md)
+- [var exportedResetSystime: NSNumber?](./mtrelectricalenergymeasurementclustercumulativeenergyresetstruct/exportedresetsystime.md)
+- [var exportedResetTimestamp: NSNumber?](./mtrelectricalenergymeasurementclustercumulativeenergyresetstruct/exportedresettimestamp.md)
+- [var importedResetSystime: NSNumber?](./mtrelectricalenergymeasurementclustercumulativeenergyresetstruct/importedresetsystime.md)
+- [var importedResetTimestamp: NSNumber?](./mtrelectricalenergymeasurementclustercumulativeenergyresetstruct/importedresettimestamp.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

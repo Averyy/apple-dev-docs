@@ -1,7 +1,8 @@
 # HMCharacteristicValueContactState
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the contact sensor state.
 
@@ -19,25 +20,29 @@ Possible values for the contact sensor state.
 enum HMCharacteristicValueContactState
 ```
 
+```c
+enum HMCharacteristicValueContactState : NSInteger;
+```
+
 ## Topics
 
 ### Contact Sensor State
-- [HMCharacteristicValueContactState.detected](hmcharacteristicvaluecontactstate/detected.md)
+- [HMCharacteristicValueContactState.detected](./hmcharacteristicvaluecontactstate/detected.md)
   Contact is detected.
-- [HMCharacteristicValueContactState.none](hmcharacteristicvaluecontactstate/none.md)
+- [HMCharacteristicValueContactState.none](./hmcharacteristicvaluecontactstate/none.md)
   Contact is not detected.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluecontactstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluecontactstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # ia_net
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 struct sockaddr_in6 ia_net;
 ```
 

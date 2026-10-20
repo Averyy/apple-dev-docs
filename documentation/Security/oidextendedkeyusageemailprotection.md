@@ -1,7 +1,8 @@
 # oidExtendedKeyUsageEmailProtection
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 let oidExtendedKeyUsageEmailProtection: DERItem
+```
+
+```c
+extern const DERItem oidExtendedKeyUsageEmailProtection;
 ```
 
 

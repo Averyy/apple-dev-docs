@@ -1,6 +1,7 @@
 # Xcode 15.3 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -16,19 +17,27 @@ Xcode 15.3 includes SDKs for iOS 17.4, iPadOS 17.4, tvOS 17.4, watchOS 10.4, mac
 
 ###### Known Issues
 
-- Some Macs recently received a macOS system update which disabled the simulator runtimes used by Xcode, including the simulators for iOS, tvOS, watchOS, and visionOS. If your Mac received this update, you will receive the following error message and will be unable to use the simulator: ```None
- The com.apple.CoreSimulator.SimRuntime.iOS-17-2 simulator runtime is not available.
- Domain: com.apple.CoreSimulator.SimError
- Code: 401
- Failure Reason: runtime profile not found using "System" match policy
- Recovery Suggestion: Download the com.apple.CoreSimulator.SimRuntime.iOS-17-2 simulator runtime from the Xcode 
-``` (127498625) **Workaround:** To resume using the simulator, please reboot your Mac.  After rebooting, check Xcode Preferences → Platforms to ensure that the simulator runtime you would like to use is still installed.  If it is missing, use the Get button to download it again.
+- Some Macs recently received a macOS system update which disabled the simulator runtimes used by Xcode, including the simulators for iOS, tvOS, watchOS, and visionOS. If your Mac received this update, you will receive the following error message and will be unable to use the simulator:
+
+  ```
+   The com.apple.CoreSimulator.SimRuntime.iOS-17-2 simulator runtime is not available.
+   Domain: com.apple.CoreSimulator.SimError
+   Code: 401
+   Failure Reason: runtime profile not found using "System" match policy
+   Recovery Suggestion: Download the com.apple.CoreSimulator.SimRuntime.iOS-17-2 simulator runtime from the Xcode 
+  ```
+
+  (127498625)
+
+  **Workaround:** To resume using the simulator, please reboot your Mac.  After rebooting, check Xcode Preferences → Platforms to ensure that the simulator runtime you would like to use is still installed.  If it is missing, use the Get button to download it again.
 
 ##### App Intents
 
 ###### Known Issues
 
-- AppIntents may fail to execute when the target’s minimum deployment target is iOS 15.0 or earlier  (123798206) (FB13664020) **Workaround:** Add the ENABLE_APPINTENTS_DEPLOYMENT_AWARE_PROCESSING=NO build flag to your target(s)
+- AppIntents may fail to execute when the target’s minimum deployment target is iOS 15.0 or earlier  (123798206) (FB13664020)
+
+  **Workaround:** Add the ENABLE_APPINTENTS_DEPLOYMENT_AWARE_PROCESSING=NO build flag to your target(s)
 
 ##### Apple Clang Compiler
 
@@ -54,34 +63,38 @@ Xcode 15.3 includes SDKs for iOS 17.4, iPadOS 17.4, tvOS 17.4, watchOS 10.4, mac
 
 ###### New Features
 
-- The following new features have been implemented: - P0645 - Text formatting (`std::format`)
-- P2286R8 - Formatting ranges
-- P1206R7 - `ranges::to`: A function to convert any range to a container
-- P2520R0 - `move_iterator<T*>` should be a random access iterator
-- P1328R1 - `constexpr type_info::operator==()`
-- P2693R1 - Formatting `thread::id`
-- P2505R5 - Monadic operations for `std::expected`
-- P2711R1 - Making multi-param constructors of views `explicit`
-- P2136R3 - `std::invoke_r`
-- P2494R2 - Relaxing range adaptors to allow for move only types
-- P2585R0 - Improving default container formatting
-- P0408R7 - Efficient access to `basic_stringbuf`’s buffer
-- P2474R2 - `std::ranges::views::repeat`
-- P0009R18 - `std::mdspan`
-- P2093R14 - Formatted output (`std::ostream` overload is not implemented yet)
-- Algorithms like `std::equal`, `std::ranges::equal`, `std::find`, and `std::ranges::find` are now lowered to `std::memcmp` in some cases, which can lead to massive performance improvements (up to 40x)
-- The performance of `dynamic_cast` on its hot path was greatly improved
-- The performance of `std::sort` and `std::ranges::sort` was improved by up to 50% for arithmetic types  (120908845)
+- The following new features have been implemented:
+
+  - P0645 - Text formatting (`std::format`)
+  - P2286R8 - Formatting ranges
+  - P1206R7 - `ranges::to`: A function to convert any range to a container
+  - P2520R0 - `move_iterator<T*>` should be a random access iterator
+  - P1328R1 - `constexpr type_info::operator==()`
+  - P2693R1 - Formatting `thread::id`
+  - P2505R5 - Monadic operations for `std::expected`
+  - P2711R1 - Making multi-param constructors of views `explicit`
+  - P2136R3 - `std::invoke_r`
+  - P2494R2 - Relaxing range adaptors to allow for move only types
+  - P2585R0 - Improving default container formatting
+  - P0408R7 - Efficient access to `basic_stringbuf`’s buffer
+  - P2474R2 - `std::ranges::views::repeat`
+  - P0009R18 - `std::mdspan`
+  - P2093R14 - Formatted output (`std::ostream` overload is not implemented yet)
+  - Algorithms like `std::equal`, `std::ranges::equal`, `std::find`, and `std::ranges::find` are now lowered to `std::memcmp` in some cases, which can lead to massive performance improvements (up to 40x)
+  - The performance of `dynamic_cast` on its hot path was greatly improved
+  - The performance of `std::sort` and `std::ranges::sort` was improved by up to 50% for arithmetic types  (120908845)
 
 ###### Deprecations
 
-- The following items have been deprecated or removed: - The `<experimental/coroutine>` header has been removed. Please use `<coroutine>` instead.
-- The `<experimental/algorithm>` and `<experimental/functional>` headers have been removed, since all the contents have been implemented in namespace `std`.
-- Several incidental transitive includes have been removed from libc++. If you get diagnostics for missing declarations after updating, please ensure that you have the appropriate includes in your source files.
-- The global variables `std::allocator_arg`, `std::defer_lock`, `std::try_to_lock`, `std::adopt_lock`, and `std::piecewise_construct` have been removed in C++03 mode. They were previously provided as an extension, however that made it impossible to implement them correctly (as inline variables) in C++17 mode, which led to bugs. We decided to remove the niche extension and fix the C++17 bugs instead.
-- The `std::strstreambuf`, `std::istrstream`, `std::ostrstream`, and `std::strstream` classes have been marked as deprecated, according to the C++98 Standard.  (120909028)
+- The following items have been deprecated or removed:
 
-##### Carplay Simulator
+  - The `<experimental/coroutine>` header has been removed. Please use `<coroutine>` instead.
+  - The `<experimental/algorithm>` and `<experimental/functional>` headers have been removed, since all the contents have been implemented in namespace `std`.
+  - Several incidental transitive includes have been removed from libc++. If you get diagnostics for missing declarations after updating, please ensure that you have the appropriate includes in your source files.
+  - The global variables `std::allocator_arg`, `std::defer_lock`, `std::try_to_lock`, `std::adopt_lock`, and `std::piecewise_construct` have been removed in C++03 mode. They were previously provided as an extension, however that made it impossible to implement them correctly (as inline variables) in C++17 mode, which led to bugs. We decided to remove the niche extension and fix the C++17 bugs instead.
+  - The `std::strstreambuf`, `std::istrstream`, `std::ostrstream`, and `std::strstream` classes have been marked as deprecated, according to the C++98 Standard.  (120909028)
+
+##### CarPlay Simulator
 
 ###### New Features
 
@@ -131,7 +144,9 @@ Xcode 15.3 includes SDKs for iOS 17.4, iPadOS 17.4, tvOS 17.4, watchOS 10.4, mac
 
 ###### Known Issues
 
-- The Metal Debugger will not work with connected devices in Xcode versions earlier than 15.3 when Xcode 15.3 or later is installed on the same system.  (121627817) **Workaround:** If Xcode 15.3 or later has been installed, use Xcode 15.3 or later when requiring the Metal Debugger to work with connected devices.
+- The Metal Debugger will not work with connected devices in Xcode versions earlier than 15.3 when Xcode 15.3 or later is installed on the same system.  (121627817)
+
+  **Workaround:** If Xcode 15.3 or later has been installed, use Xcode 15.3 or later when requiring the Metal Debugger to work with connected devices.
 
 ##### Previews
 
@@ -155,9 +170,11 @@ Xcode 15.3 includes SDKs for iOS 17.4, iPadOS 17.4, tvOS 17.4, watchOS 10.4, mac
 
 ###### Known Issues
 
-- Calling [`MobileDocumentReaderSession.requestDocument(_:)`](https://developer.apple.comhttps://developer.apple.com/documentation/proximityreader/mobiledocumentreadersession/requestdocument(_:)) or [`PaymentCardReaderSession.readPaymentCard(_:)`](https://developer.apple.comhttps://developer.apple.com/documentation/proximityreader/paymentcardreadersession/readpaymentcard(_:)-8jol5) from the iOS Simulator results in `unknown` or `readCancelled` errors being thrown.  (123651094) **Workaround:** Test your app on a physical iOS device or use Xcode 15.2 to debug your app on the iOS Simulator.
+- Calling [MobileDocumentReaderSession.requestDocument(_:)](../ProximityReader/mobiledocumentreadersession/requestdocument%28_%29.md) or [PaymentCardReaderSession.readPaymentCard(_:)](../ProximityReader/paymentcardreadersession/readpaymentcard%28_%29-8jol5.md) from the iOS Simulator results in `unknown` or `readCancelled` errors being thrown.  (123651094)
 
-##### Signing Distribution
+  **Workaround:** Test your app on a physical iOS device or use Xcode 15.2 to debug your app on the iOS Simulator.
+
+##### Signing & Distribution
 
 ###### Resolved Issues
 
@@ -168,46 +185,64 @@ Xcode 15.3 includes SDKs for iOS 17.4, iPadOS 17.4, tvOS 17.4, watchOS 10.4, mac
 
 ###### Known Issues
 
-- When attempting to boot a simulator device shortly after installing its runtime or updating to a new version of macOS, Gatekeeper scanning may temporarily prevent boot.  This can appear as an “Unable to boot the Simulator” or “-308” error.  (118038020) **Workaround:** Wait a few minutes before trying the operation again to allow Gatekeeper to complete its scan.
-- When attempting to boot a simulator device after an XProtect update is installed, Gatekeeper scanning may temporarily prevent boot.  This can appear as an “Unable to boot the Simulator” or “-308” error.  (124035288) **Workaround:** Wait a few minutes before trying the operation again to allow Gatekeeper to complete its scan.
+- When attempting to boot a simulator device shortly after installing its runtime or updating to a new version of macOS, Gatekeeper scanning may temporarily prevent boot.  This can appear as an “Unable to boot the Simulator” or “-308” error.  (118038020)
 
-##### Storekit
+  **Workaround:** Wait a few minutes before trying the operation again to allow Gatekeeper to complete its scan.
+- When attempting to boot a simulator device after an XProtect update is installed, Gatekeeper scanning may temporarily prevent boot.  This can appear as an “Unable to boot the Simulator” or “-308” error.  (124035288)
+
+  **Workaround:** Wait a few minutes before trying the operation again to allow Gatekeeper to complete its scan.
+
+##### StoreKit
 
 ###### New Features
 
-- You can enable and disable StoreKit dialogs in your app through the StoreKit Testing in Xcode configuration settings. This controls the same behavior as the StoreKitTest [`SKTestSession.disableDialogs`](https://developer.apple.comhttps://developer.apple.com/documentation/storekittest/sktestsession/3579480-disabledialogs) property and it is enabled by default.  (107622572)
+- You can enable and disable StoreKit dialogs in your app through the StoreKit Testing in Xcode configuration settings. This controls the same behavior as the StoreKitTest [SKTestSession.disableDialogs](../StoreKitTest/sktestsession/api-3579480-disabledialogs.md) property and it is enabled by default.  (107622572)
 
 ##### Swift
 
 ###### New Features
 
-- Under strict concurrency checking, every global or static variable must be either isolated to a global actor or be both immutable and of `Sendable` type. ```swift
-   var mutableGlobal = 1
-   // warning: var 'mutableGlobal' is not concurrency-safe because it is non-isolated global shared mutable state
-   // (unless it is top-level code which implicitly isolates to @MainActor)
- 
-   final class NonsendableType {
-     init() {}
-   }
- 
-   struct S {
-     static let immutableNonsendable = NonsendableType()
-     // warning: static property 'immutableNonsendable' is not concurrency-safe because it is not either conforming to 'Sendable' or isolated to a global actor
-   }
-``` The attribute `nonisolated(unsafe)` can be used to annotate a global variable (or any form of storage) to disable static checking of data isolation, but note that without correct implementation of a synchronization mechanism to achieve data isolation, dynamic run-time analysis from exclusivity enforcement or tools such as Thread Sanitizer could still identify failures. ```swift
-   nonisolated(unsafe) var global: String
-``` [`SE-0412`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0412-strict-concurrency-for-global-variables.md)  (121120491)
-- Default value expressions can now have the same isolation as the enclosing function or the corresponding stored property: ```swift
-   @MainActor
-   func requiresMainActor() -> Int { ... }
- 
-   class C {
+- Under strict concurrency checking, every global or static variable must be either isolated to a global actor or be both immutable and of `Sendable` type.
+
+  ```swift
+     var mutableGlobal = 1
+     // warning: var 'mutableGlobal' is not concurrency-safe because it is non-isolated global shared mutable state
+     // (unless it is top-level code which implicitly isolates to @MainActor)
+   
+     final class NonsendableType {
+       init() {}
+     }
+   
+     struct S {
+       static let immutableNonsendable = NonsendableType()
+       // warning: static property 'immutableNonsendable' is not concurrency-safe because it is not either conforming to 'Sendable' or isolated to a global actor
+     }
+  ```
+
+  The attribute `nonisolated(unsafe)` can be used to annotate a global variable (or any form of storage) to disable static checking of data isolation, but note that without correct implementation of a synchronization mechanism to achieve data isolation, dynamic run-time analysis from exclusivity enforcement or tools such as Thread Sanitizer could still identify failures.
+
+  ```swift
+     nonisolated(unsafe) var global: String
+  ```
+
+  [SE-0412](https://github.com/apple/swift-evolution/blob/main/proposals/0412-strict-concurrency-for-global-variables.md)  (121120491)
+- Default value expressions can now have the same isolation as the enclosing function or the corresponding stored property:
+
+  ```swift
      @MainActor
-     var x: Int = requiresMainActor()
-   }
- 
-   @MainActor func defaultArg(value: Int = requiresMainActor()) { ... }
-``` For isolated default values of stored properties, the implicit initialization only happens in the body of an `init` with the same isolation. This closes an important data-race safety hole where global-actor-isolated default values could inadvertently run synchronously from outside the actor. [`SE-0411`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0411-isolated-default-values.md)  (121121487)
+     func requiresMainActor() -> Int { ... }
+   
+     class C {
+       @MainActor
+       var x: Int = requiresMainActor()
+     }
+   
+     @MainActor func defaultArg(value: Int = requiresMainActor()) { ... }
+  ```
+
+  For isolated default values of stored properties, the implicit initialization only happens in the body of an `init` with the same isolation. This closes an important data-race safety hole where global-actor-isolated default values could inadvertently run synchronously from outside the actor.
+
+  [SE-0411](https://github.com/apple/swift-evolution/blob/main/proposals/0411-isolated-default-values.md)  (121121487)
 
 ###### Resolved Issues
 
@@ -250,7 +285,7 @@ Xcode 15.3 includes SDKs for iOS 17.4, iPadOS 17.4, tvOS 17.4, watchOS 10.4, mac
 
 - Fixed: Thread Performance Checker emits a new category of runtime issues called “Known Hangs” which shows developers where in their code hangs are known to affect users of their apps.  (102045928)
 
-##### Visionos
+##### visionOS
 
 ###### Resolved Issues
 
@@ -260,15 +295,16 @@ Xcode 15.3 includes SDKs for iOS 17.4, iPadOS 17.4, tvOS 17.4, watchOS 10.4, mac
 
 ## See Also
 
-- [Xcode 15.4 Release Notes](xcode-15_4-release-notes.md)
+### Xcode 15
+- [Xcode 15.4 Release Notes](./xcode-15_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 15.2 Release Notes](xcode-15_2-release-notes.md)
+- [Xcode 15.2 Release Notes](./xcode-15_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 15.1 Release Notes](xcode-15_1-release-notes.md)
+- [Xcode 15.1 Release Notes](./xcode-15_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 15.0.1 Release Notes](xcode-15_0_1-release-notes.md)
+- [Xcode 15.0.1 Release Notes](./xcode-15_0_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 15 Release Notes](xcode-15-release-notes.md)
+- [Xcode 15 Release Notes](./xcode-15-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

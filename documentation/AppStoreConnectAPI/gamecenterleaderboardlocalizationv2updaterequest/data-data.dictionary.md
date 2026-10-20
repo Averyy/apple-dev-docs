@@ -1,7 +1,8 @@
 # GameCenterLeaderboardLocalizationV2UpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represents a Game Center leaderboard localization update request resource.
 
@@ -10,7 +11,7 @@ The data structure that represents a Game Center leaderboard localization update
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardLocalizationV2UpdateRequest.Data
 ```
 
@@ -23,14 +24,14 @@ object GameCenterLeaderboardLocalizationV2UpdateRequest.Data
 ## Topics
 
 ### Dictionaries
-- [object GameCenterLeaderboardLocalizationV2UpdateRequest.Data.Attributes](gamecenterleaderboardlocalizationv2updaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object GameCenterLeaderboardLocalizationV2UpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   The request body you use to modify a Game Center leaderboard localization update request.
 
 ## Properties
 
 - `attributes` (GameCenterLeaderboardLocalizationV2UpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterLeaderboardLocalizations`
 
 
 ---

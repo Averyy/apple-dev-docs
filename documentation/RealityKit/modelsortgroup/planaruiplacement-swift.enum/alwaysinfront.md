@@ -1,7 +1,8 @@
 # ModelSortGroup.PlanarUIPlacement.alwaysInFront
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Instructs the renderer to draw a model’s mesh in front of a SwiftUI layer that’s coincident with the mesh.
 

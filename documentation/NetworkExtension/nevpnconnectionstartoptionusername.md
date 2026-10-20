@@ -1,7 +1,8 @@
 # NEVPNConnectionStartOptionUsername
 
 **Framework**: Network Extension  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 9.0+
@@ -17,14 +18,19 @@
 let NEVPNConnectionStartOptionUsername: String
 ```
 
+```c
+extern NSString * const NEVPNConnectionStartOptionUsername;
+```
+
 ## See Also
 
-- [func startVPNTunnel() throws](nevpnconnection/startvpntunnel.md)
+### Controlling the VPN connection
+- [func startVPNTunnel() throws](./nevpnconnection/startvpntunnel%28%29.md)
   Start the process of connecting the VPN.
-- [func startVPNTunnel(options: [String : NSObject]?) throws](nevpnconnection/startvpntunnel(options:).md)
+- [func startVPNTunnel(options: [String : NSObject]?) throws](./nevpnconnection/startvpntunnel%28options%29.md)
   Start the process of connecting the VPN.
-- [let NEVPNConnectionStartOptionPassword: String](nevpnconnectionstartoptionpassword.md)
-- [func stopVPNTunnel()](nevpnconnection/stopvpntunnel.md)
+- [let NEVPNConnectionStartOptionPassword: String](./nevpnconnectionstartoptionpassword.md)
+- [func stopVPNTunnel()](./nevpnconnection/stopvpntunnel%28%29.md)
   Start the process of disconnecting the VPN.
 
 

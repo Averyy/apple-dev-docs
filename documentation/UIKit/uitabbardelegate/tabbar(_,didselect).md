@@ -1,7 +1,8 @@
 # tabBar(_:didSelect:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent to the delegate when the user selects a tab bar item.
 
@@ -9,13 +10,17 @@ Sent to the delegate when the user selects a tab bar item.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 optional func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem)
+```
+
+```objc
+- (void) tabBar:(UITabBar *) tabBar didSelectItem:(UITabBarItem *) item;
 ```
 
 ## Parameters
@@ -25,13 +30,14 @@ optional func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem)
 
 ## See Also
 
-- [func tabBar(UITabBar, willBeginCustomizing: [UITabBarItem])](uitabbardelegate/tabbar(_:willbegincustomizing:).md)
+### Customizing tab bars
+- [func tabBar(UITabBar, willBeginCustomizing: [UITabBarItem])](./tabbar%28_,willbegincustomizing%29.md)
   Sent to the delegate before the customizing modal view is displayed.
-- [func tabBar(UITabBar, didBeginCustomizing: [UITabBarItem])](uitabbardelegate/tabbar(_:didbegincustomizing:).md)
+- [func tabBar(UITabBar, didBeginCustomizing: [UITabBarItem])](./tabbar%28_,didbegincustomizing%29.md)
   Sent to the delegate after the customizing modal view is displayed.
-- [func tabBar(UITabBar, willEndCustomizing: [UITabBarItem], changed: Bool)](uitabbardelegate/tabbar(_:willendcustomizing:changed:).md)
+- [func tabBar(UITabBar, willEndCustomizing: [UITabBarItem], changed: Bool)](./tabbar%28_,willendcustomizing,changed%29.md)
   Sent to the delegate before the customizing modal view is dismissed.
-- [func tabBar(UITabBar, didEndCustomizing: [UITabBarItem], changed: Bool)](uitabbardelegate/tabbar(_:didendcustomizing:changed:).md)
+- [func tabBar(UITabBar, didEndCustomizing: [UITabBarItem], changed: Bool)](./tabbar%28_,didendcustomizing,changed%29.md)
   Sent to the delegate after the customizing modal view is dismissed.
 
 

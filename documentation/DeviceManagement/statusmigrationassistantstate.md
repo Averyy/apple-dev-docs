@@ -1,7 +1,8 @@
 # StatusMigrationAssistantState
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A status item that shows the device’s current migration state.
 
@@ -10,13 +11,13 @@ A status item that shows the device’s current migration state.
 
 ## Declaration
 
-```swift
+```
 object StatusMigrationAssistantState
 ```
 
 #### Discussion
 
-##### Status Item Availability
+##### Status item availability
 
 |  |  |
 | --- | --- |
@@ -27,7 +28,7 @@ object StatusMigrationAssistantState
 | Allowed in system scope | macOS |
 | Allowed in user scope | N/A |
 
-##### Status Item Example
+##### Status item example
 
 ```json
 {
@@ -39,16 +40,21 @@ object StatusMigrationAssistantState
 
 ## Properties
 
-- `migration-assistant.state` (string) *(required)*: The current migration state of the system, which has the following possible values: - `none`: Migration hasn’t started yet or no migration has taken place.
-- `migrating`: Migration is in progress.
-- `completed`: Migration has completed successfully.
-- `failed`: Migration has failed.
-- `cancelled`: The user cancelled migration.
-- `unknown`: Migration status is unknown.
+- `migration-assistant.state` (string) *(required)*: The current migration state of the system, which has the following possible values:
+
+  - `none`: Migration hasn’t started yet or no migration has taken place.
+  - `migrating`: Migration is in progress.
+  - `completed`: Migration has completed successfully.
+  - `failed`: Migration has failed.
+  - `cancelled`: The user cancelled migration.
+  - `unknown`: Migration status is unknown.
+
+  **Allowed Values**: `waiting`, `migrating`, `completed`, `failed`, `cancelled`, `unknown`
 
 ## See Also
 
-- [object StatusMigrationAssistantReport](statusmigrationassistantreport.md)
+### Migration assisstant items
+- [object StatusMigrationAssistantReport](./statusmigrationassistantreport.md)
   The status item that reports the state of a completed migration.
 
 

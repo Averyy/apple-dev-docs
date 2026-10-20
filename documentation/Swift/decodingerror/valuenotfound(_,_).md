@@ -1,7 +1,8 @@
 # DecodingError.valueNotFound(_:_:)
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An indication that a non-optional value of the given type was expected, but a null value was found.
 

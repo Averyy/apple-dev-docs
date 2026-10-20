@@ -1,7 +1,8 @@
 # animatableData
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data to animate.
 

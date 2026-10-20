@@ -1,7 +1,8 @@
 # MTLVisibilityResultMode.counting
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The result records how many samples passed depth and stencil tests.
 
@@ -19,18 +20,23 @@ The result records how many samples passed depth and stencil tests.
 case counting
 ```
 
+```c
+MTLVisibilityResultModeCounting
+```
+
 #### Discussion
 
 The GPU writes a 64-bit integer to the visibility result buffer that is the number of samples that passed depth and stencil tests; this can be zero. Counting is not supported by all GPUs. Check the following documents to see whether a GPU family supports *counting occlusion* queries:
 
-- [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf)
-- [`Metal feature set tables (Numbers)`](https://developer.apple.comhttps://developer.apple.com/metal/metal-feature-set-tables.zip)
+- [Metal feature set tables (PDF)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf)
+- [Metal feature set tables (Numbers)](https://developer.apple.com/metal/metal-feature-set-tables.zip)
 
 ## See Also
 
-- [MTLVisibilityResultMode.disabled](mtlvisibilityresultmode/disabled.md)
+### Result modes
+- [MTLVisibilityResultMode.disabled](./disabled.md)
   The result doesn’t contain any data because visibility testing was disabled.
-- [MTLVisibilityResultMode.boolean](mtlvisibilityresultmode/boolean.md)
+- [MTLVisibilityResultMode.boolean](./boolean.md)
   The result records whether any samples passed depth and stencil tests.
 
 

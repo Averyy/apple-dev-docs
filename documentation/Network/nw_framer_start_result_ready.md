@@ -1,7 +1,8 @@
 # nw_framer_start_result_ready
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The protocol is immediately ready to send and receive data.
 
@@ -20,10 +21,15 @@ The protocol is immediately ready to send and receive data.
 var nw_framer_start_result_ready: nw_framer_start_result_t { get }
 ```
 
+```c
+nw_framer_start_result_ready
+```
+
 ## See Also
 
-- [var nw_framer_start_result_will_mark_ready: nw_framer_start_result_t](nw_framer_start_result_will_mark_ready.md)
-  The protocol will perform a handshake, preventing the overall connection from becoming ready until [`nw_framer_mark_ready(_:)`](nw_framer_mark_ready(_:).md) is called.
+### Start Results
+- [var nw_framer_start_result_will_mark_ready: nw_framer_start_result_t](./nw_framer_start_result_will_mark_ready.md)
+  The protocol will perform a handshake, preventing the overall connection from becoming ready until [`nw_framer_mark_ready(_:)`](./nw_framer_mark_ready%28_%29.md) is called.
 
 
 ---

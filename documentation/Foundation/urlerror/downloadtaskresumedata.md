@@ -1,7 +1,8 @@
 # downloadTaskResumeData
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An opaque data object used to resume a failed download task.
 
@@ -22,23 +23,24 @@ var downloadTaskResumeData: Data? { get }
 
 #### Discussion
 
-Pass this object to [`downloadTask(withResumeData:)`](urlsession/downloadtask(withresumedata:).md) or [`downloadTask(withResumeData:completionHandler:)`](urlsession/downloadtask(withresumedata:completionhandler:).md) to create a new download task that can attempt to resume the failed download.
+Pass this object to [`downloadTask(withResumeData:)`](../urlsession/downloadtask%28withresumedata%29.md) or [`downloadTask(withResumeData:completionHandler:)`](../urlsession/downloadtask%28withresumedata,completionhandler%29.md) to create a new download task that can attempt to resume the failed download.
 
 ## See Also
 
-- [var failingURL: URL?](urlerror/failingurl.md)
+### Error details
+- [var failingURL: URL?](./failingurl.md)
   The URL which caused a load to fail.
-- [var failureURLPeerTrust: SecTrust?](urlerror/failureurlpeertrust.md)
+- [var failureURLPeerTrust: SecTrust?](./failureurlpeertrust.md)
   The state of a failed SSL handshake.
-- [var failureURLString: String?](urlerror/failureurlstring.md)
+- [var failureURLString: String?](./failureurlstring.md)
   The string for the URL which caused a load to fail.
-- [var backgroundTaskCancelledReason: URLError.BackgroundTaskCancelledReason?](urlerror/backgroundtaskcancelledreason-swift.property.md)
+- [var backgroundTaskCancelledReason: URLError.BackgroundTaskCancelledReason?](./backgroundtaskcancelledreason-swift.property.md)
   The reason for canceling a background task.
-- [URLError.BackgroundTaskCancelledReason](urlerror/backgroundtaskcancelledreason-swift.enum.md)
+- [URLError.BackgroundTaskCancelledReason](./backgroundtaskcancelledreason-swift.enum.md)
   An enumeration of reasons used to explain the cancellation of a background task.
-- [var networkUnavailableReason: URLError.NetworkUnavailableReason?](urlerror/networkunavailablereason-swift.property.md)
+- [var networkUnavailableReason: URLError.NetworkUnavailableReason?](./networkunavailablereason-swift.property.md)
   The reason the network was unavailable for a task.
-- [URLError.NetworkUnavailableReason](urlerror/networkunavailablereason-swift.enum.md)
+- [URLError.NetworkUnavailableReason](./networkunavailablereason-swift.enum.md)
   An enumeration of reasons explaining why a task couldn’t satisfy networking constraints.
 
 

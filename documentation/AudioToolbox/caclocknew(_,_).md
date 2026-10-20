@@ -1,7 +1,8 @@
 # CAClockNew(_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
@@ -12,10 +13,15 @@
 func CAClockNew(_ inReservedFlags: UInt32, _ outCAClock: UnsafeMutablePointer<CAClockRef?>) -> OSStatus
 ```
 
+```c
+extern OSStatus CAClockNew(UInt32 inReservedFlags, CAClockRef*outCAClock);
+```
+
 ## See Also
 
-- [func CAClockDispose(CAClockRef) -> OSStatus](caclockdispose(_:).md)
-- [typealias CAClockRef](caclockref.md)
+### Creating a Clock
+- [func CAClockDispose(CAClockRef) -> OSStatus](./caclockdispose%28_%29.md)
+- [typealias CAClockRef](./caclockref.md)
 
 
 ---

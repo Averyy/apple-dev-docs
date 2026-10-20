@@ -1,18 +1,19 @@
 # enabled(if:_:sourceLocation:)
 
 **Framework**: Swift Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Constructs a condition trait that disables a test if it returns `false`.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 
@@ -22,13 +23,15 @@ Constructs a condition trait that disables a test if it returns `false`.
 static func enabled(if condition: @autoclosure @escaping @Sendable () throws -> Bool, _ comment: Comment? = nil, sourceLocation: SourceLocation = #_sourceLocation) -> Self
 ```
 
+Available when `Self` is `ConditionTrait`.
+
 ## Mentions
 
-- [Enabling and disabling tests](enablinganddisabling.md)
+- [Enabling and disabling tests](../enablinganddisabling.md)
 
 #### Return Value
 
-An instance of [`ConditionTrait`](conditiontrait.md) that evaluates the closure you provide.
+An instance of [`ConditionTrait`](../conditiontrait.md) that evaluates the closure you provide.
 
 ## Parameters
 
@@ -38,19 +41,20 @@ An instance of [`ConditionTrait`](conditiontrait.md) that evaluates the closure 
 
 ## See Also
 
-- [Enabling and disabling tests](enablinganddisabling.md)
+### Customizing runtime behaviors
+- [Enabling and disabling tests](../enablinganddisabling.md)
   Conditionally enable or disable individual tests before they run.
-- [Limiting the running time of tests](limitingexecutiontime.md)
+- [Limiting the running time of tests](../limitingexecutiontime.md)
   Set limits on how long a test can run for until it fails.
-- [static func enabled(Comment?, sourceLocation: SourceLocation, () async throws -> Bool) -> Self](trait/enabled(_:sourcelocation:_:).md)
+- [static func enabled(Comment?, sourceLocation: SourceLocation, () async throws -> Bool) -> Self](./enabled%28_,sourcelocation,_%29.md)
   Constructs a condition trait that disables a test if it returns `false`.
-- [static func disabled(Comment?, sourceLocation: SourceLocation) -> Self](trait/disabled(_:sourcelocation:).md)
+- [static func disabled(Comment?, sourceLocation: SourceLocation) -> Self](./disabled%28_,sourcelocation%29.md)
   Constructs a condition trait that disables a test unconditionally.
-- [static func disabled(if: @autoclosure () throws -> Bool, Comment?, sourceLocation: SourceLocation) -> Self](trait/disabled(if:_:sourcelocation:).md)
+- [static func disabled(if: @autoclosure () throws -> Bool, Comment?, sourceLocation: SourceLocation) -> Self](./disabled%28if,_,sourcelocation%29.md)
   Constructs a condition trait that disables a test if its value is true.
-- [static func disabled(Comment?, sourceLocation: SourceLocation, () async throws -> Bool) -> Self](trait/disabled(_:sourcelocation:_:).md)
+- [static func disabled(Comment?, sourceLocation: SourceLocation, () async throws -> Bool) -> Self](./disabled%28_,sourcelocation,_%29.md)
   Constructs a condition trait that disables a test if its value is true.
-- [static func timeLimit(TimeLimitTrait.Duration) -> Self](trait/timelimit(_:).md)
+- [static func timeLimit(TimeLimitTrait.Duration) -> Self](./timelimit%28_%29.md)
   Construct a time limit trait that causes a test to time out if it runs for too long.
 
 

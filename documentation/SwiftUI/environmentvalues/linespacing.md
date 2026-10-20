@@ -1,7 +1,8 @@
 # lineSpacing
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance in points between the bottom of one line fragment and the top of the next.
 
@@ -26,11 +27,12 @@ This value is always nonnegative.
 
 ## See Also
 
-- [func lineSpacing(CGFloat) -> some View](view/linespacing(_:).md)
+### Formatting multiline text
+- [func lineSpacing(CGFloat) -> some View](../view/linespacing%28_%29.md)
   Sets the amount of space between lines of text in this view.
-- [func multilineTextAlignment(TextAlignment) -> some View](view/multilinetextalignment(_:).md)
+- [func multilineTextAlignment(TextAlignment) -> some View](../view/multilinetextalignment%28_%29.md)
   Sets the alignment of a text view that contains multiple lines of text.
-- [var multilineTextAlignment: TextAlignment](environmentvalues/multilinetextalignment.md)
+- [var multilineTextAlignment: TextAlignment](./multilinetextalignment.md)
   An environment value that indicates how a text view aligns its lines when the content wraps or contains newlines.
 
 

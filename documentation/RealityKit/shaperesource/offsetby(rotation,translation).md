@@ -1,7 +1,8 @@
 # offsetBy(rotation:translation:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new shape resource by applying a rotation and a translation.
 
@@ -11,7 +12,7 @@ Creates a new shape resource by applying a rotation and a translation.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -31,9 +32,10 @@ The transformed resource.
 
 ## See Also
 
-- [func offsetBy(rotation: simd_quatf) -> ShapeResource](shaperesource/offsetby(rotation:).md)
+### Transforming a shape
+- [func offsetBy(rotation: simd_quatf) -> ShapeResource](./offsetby%28rotation%29.md)
   Creates a new shape resource by applying a rotation.
-- [func offsetBy(translation: SIMD3<Float>) -> ShapeResource](shaperesource/offsetby(translation:).md)
+- [func offsetBy(translation: SIMD3<Float>) -> ShapeResource](./offsetby%28translation%29.md)
   Creates a new shape resource by applying a translation.
 
 

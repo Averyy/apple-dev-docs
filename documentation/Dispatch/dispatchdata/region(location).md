@@ -1,16 +1,17 @@
 # region(location:)
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,8 +21,9 @@ func region(location: Int) -> (data: DispatchData, offset: Int)
 
 ## See Also
 
-- [subscript(DispatchData.Index) -> UInt8](dispatchdata/subscript(_:).md)
-- [DispatchData.Region](dispatchdata/region.md)
+### Accessing Buffer Data
+- [subscript(DispatchData.Index) -> UInt8](./subscript%28_%29.md)
+- [DispatchData.Region](./region.md)
 
 
 ---

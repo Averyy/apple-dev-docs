@@ -1,7 +1,8 @@
 # SVGAnimatedEnumeration
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,15 +10,15 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGAnimatedEnumeration
 ```
 
 ## Topics
 
 ### Instance Properties
-- [animVal](svganimatedenumeration/1628820-animval.md)
-- [baseVal](svganimatedenumeration/1631881-baseval.md)
+- [animVal](./svganimatedenumeration/api-1628820-animval.md)
+- [baseVal](./svganimatedenumeration/api-1631881-baseval.md)
 
 
 ---

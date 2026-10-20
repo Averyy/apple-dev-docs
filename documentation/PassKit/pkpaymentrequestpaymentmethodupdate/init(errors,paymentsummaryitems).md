@@ -1,7 +1,8 @@
 # init(errors:paymentSummaryItems:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a payment-method update with your specified payment summary items.
 
@@ -19,9 +20,13 @@ Creates a payment-method update with your specified payment summary items.
 init(errors: [any Error]?, paymentSummaryItems: [PKPaymentSummaryItem])
 ```
 
+```objc
+- (instancetype) initWithErrors:(NSArray<NSError *> *) errors paymentSummaryItems:(NSArray<PKPaymentSummaryItem *> *) paymentSummaryItems;
+```
+
 #### Discussion
 
-Use the `errors` array to specify any errors in the payment method that the user must resolve. For more information on creating user errors, see [`PKPaymentError`](pkpaymenterror.md).
+Use the `errors` array to specify any errors in the payment method that the user must resolve. For more information on creating user errors, see [`PKPaymentError`](../pkpaymenterror.md).
 
 ## Parameters
 

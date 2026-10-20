@@ -1,7 +1,8 @@
 # CSSM_ALGID_SHA1HMAC_LEGACY
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_ALGID_SHA1HMAC_LEGACY: UInt32 { get }
+```
+
+```c
+CSSM_ALGID_SHA1HMAC_LEGACY
 ```
 
 

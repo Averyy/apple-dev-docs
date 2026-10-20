@@ -1,12 +1,13 @@
 # NSMenuDelegate
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
-The optional methods implemented by delegates of [`NSMenu`](nsmenu.md) objects to manage menu display and handle some events.
+The optional methods implemented by delegates of [`NSMenu`](./nsmenu.md) objects to manage menu display and handle some events.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,42 +15,47 @@ The optional methods implemented by delegates of [`NSMenu`](nsmenu.md) objects t
 protocol NSMenuDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol NSMenuDelegate <NSObject>
+```
+
 ## Topics
 
 ### Handling Keyboard Equivalents
-- [func menuHasKeyEquivalent(NSMenu, for: NSEvent, target: AutoreleasingUnsafeMutablePointer<AnyObject?>, action: UnsafeMutablePointer<Selector?>) -> Bool](nsmenudelegate/menuhaskeyequivalent(_:for:target:action:).md)
+- [func menuHasKeyEquivalent(NSMenu, for: NSEvent, target: AutoreleasingUnsafeMutablePointer<AnyObject?>, action: UnsafeMutablePointer<Selector?>) -> Bool](./nsmenudelegate/menuhaskeyequivalent%28_,for,target,action%29.md)
   Invoked to allow the delegate to return the target and action for a key-down event.
 ### Updating Menu Layout
-- [func menu(NSMenu, update: NSMenuItem, at: Int, shouldCancel: Bool) -> Bool](nsmenudelegate/menu(_:update:at:shouldcancel:).md)
+- [func menu(NSMenu, update: NSMenuItem, at: Int, shouldCancel: Bool) -> Bool](./nsmenudelegate/menu%28_,update,at,shouldcancel%29.md)
   Invoked to let the delegate update a menu item before it is displayed.
-- [func confinementRect(for: NSMenu, on: NSScreen?) -> NSRect](nsmenudelegate/confinementrect(for:on:).md)
+- [func confinementRect(for: NSMenu, on: NSScreen?) -> NSRect](./nsmenudelegate/confinementrect%28for,on%29.md)
   Invoked to allow the delegate to specify a display location for the menu.
 ### Handling Highlighting
-- [func menu(NSMenu, willHighlight: NSMenuItem?)](nsmenudelegate/menu(_:willhighlight:).md)
+- [func menu(NSMenu, willHighlight: NSMenuItem?)](./nsmenudelegate/menu%28_,willhighlight%29.md)
   Invoked to indicate that a menu is about to highlight a given item.
 ### Handling Open and Close Events
-- [func menuWillOpen(NSMenu)](nsmenudelegate/menuwillopen(_:).md)
+- [func menuWillOpen(NSMenu)](./nsmenudelegate/menuwillopen%28_%29.md)
   Invoked when a menu is about to open.
-- [func menuDidClose(NSMenu)](nsmenudelegate/menudidclose(_:).md)
+- [func menuDidClose(NSMenu)](./nsmenudelegate/menudidclose%28_%29.md)
   Invoked after a menu closed.
 ### Handling Tracking
-- [func numberOfItems(in: NSMenu) -> Int](nsmenudelegate/numberofitems(in:).md)
+- [func numberOfItems(in: NSMenu) -> Int](./nsmenudelegate/numberofitems%28in%29.md)
   Invoked when a menu is about to be displayed at the start of a tracking session so the delegate can specify the number of items in the menu.
-- [func menuNeedsUpdate(NSMenu)](nsmenudelegate/menuneedsupdate(_:).md)
+- [func menuNeedsUpdate(NSMenu)](./nsmenudelegate/menuneedsupdate%28_%29.md)
   Invoked when a menu is about to be displayed at the start of a tracking session.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSMenu](nsmenu.md)
+### Menus
+- [class NSMenu](./nsmenu.md)
   An object that manages an app’s menus.
-- [class NSMenuItem](nsmenuitem.md)
+- [class NSMenuItem](./nsmenuitem.md)
   A command item in an app menu.
-- [class NSMenuItemBadge](nsmenuitembadge.md)
+- [class NSMenuItemBadge](./nsmenuitembadge.md)
   A control that provides additional quantitative information specific to a menu item, such as the number of available updates.
 
 

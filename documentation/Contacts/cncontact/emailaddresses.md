@@ -1,7 +1,8 @@
 # emailAddresses
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of labeled email addresses for the contact.
 
@@ -19,15 +20,28 @@ An array of labeled email addresses for the contact.
 var emailAddresses: [CNLabeledValue<NSString>] { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<CNLabeledValue<NSString *> *> * emailAddresses;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSArray<CNLabeledValue<NSString *> *> * emailAddresses;
+```
+
 #### Discussion
 
-This property is an array of [`CNLabeledValue`](cnlabeledvalue.md) objects, each of which has a label and an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) that contains the email address.
+This property is an array of [`CNLabeledValue`](../cnlabeledvalue.md) objects, each of which has a label and an [`NSString`](../../Foundation/nsstring.md) that contains the email address.
 
 ## See Also
 
-- [var postalAddresses: [CNLabeledValue<CNPostalAddress>]](cncontact/postaladdresses.md)
+### Getting Addresses
+- [var postalAddresses: [CNLabeledValue<CNPostalAddress>]](./postaladdresses.md)
   An array of labeled postal addresses for a contact.
-- [var urlAddresses: [CNLabeledValue<NSString>]](cncontact/urladdresses.md)
+- [var urlAddresses: [CNLabeledValue<NSString>]](./urladdresses.md)
   An array of labeled URL addresses for a contact.
 
 

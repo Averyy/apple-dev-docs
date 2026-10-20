@@ -1,7 +1,8 @@
 # group
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The group this aggregate belongs to, if any.
 

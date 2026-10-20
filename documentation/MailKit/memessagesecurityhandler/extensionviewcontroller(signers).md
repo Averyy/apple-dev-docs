@@ -2,6 +2,7 @@
 
 **Framework**: MailKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a view controller that displays details about a message’s digital signature.
@@ -13,6 +14,10 @@ Returns a view controller that displays details about a message’s digital sign
 
 ```swift
 func extensionViewController(signers messageSigners: [MEMessageSigner]) -> MEExtensionViewController?
+```
+
+```objc
+- (MEExtensionViewController *) extensionViewControllerForMessageSigners:(NSArray<MEMessageSigner *> *) messageSigners;
 ```
 
 #### Return Value

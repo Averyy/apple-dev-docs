@@ -1,17 +1,22 @@
 # modifierFlags
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An integer bit field that indicates the pressed modifier keys.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var modifierFlags: NSEvent.ModifierFlags { get }
+```
+
+```objc
+@property (readonly) NSEventModifierFlags modifierFlags;
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ You can examine individual flag settings using the C bitwise AND operator with t
 
 ## See Also
 
-- [NSEvent.ModifierFlags](nsevent/modifierflags-swift.struct.md)
+### Getting modifier flags
+- [NSEvent.ModifierFlags](./modifierflags-swift.struct.md)
   Flags that represent key states in an event object.
-- [class var modifierFlags: NSEvent.ModifierFlags](nsevent/modifierflags-swift.type.property.md)
+- [class var modifierFlags: NSEvent.ModifierFlags](./modifierflags-swift.type.property.md)
   The currently pressed modifier keys.
 
 

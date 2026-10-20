@@ -1,7 +1,8 @@
 # dataLayout
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The named layout of data in the source tensor.
 
@@ -17,6 +18,10 @@ The named layout of data in the source tensor.
 
 ```swift
 var dataLayout: MPSGraphTensorNamedDataLayout { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MPSGraphTensorNamedDataLayout dataLayout;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # init(upstream:output:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that replaces any errors in the stream with a provided element.
 

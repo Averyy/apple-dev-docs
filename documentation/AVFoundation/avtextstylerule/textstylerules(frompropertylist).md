@@ -1,7 +1,8 @@
 # textStyleRules(fromPropertyList:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an array of text style rule objects from the specified property-list object.
 
@@ -19,13 +20,17 @@ Creates an array of text style rule objects from the specified property-list obj
 class func textStyleRules(fromPropertyList plist: Any) -> [AVTextStyleRule]?
 ```
 
+```objc
++ (NSArray<AVTextStyleRule *> *) textStyleRulesFromPropertyList:(id) plist;
+```
+
 #### Return Value
 
 An array of `AVTextStyleRule` objects corresponding to the style information in the property-list object.
 
 #### Discussion
 
-Use this method to create new text style rule objects based on data you previously converted to a property-list format using the [`propertyList(for:)`](avtextstylerule/propertylist(for:).md) class method.
+Use this method to create new text style rule objects based on data you previously converted to a property-list format using the [`propertyList(for:)`](./propertylist%28for%29.md) class method.
 
 ## Parameters
 
@@ -33,9 +38,10 @@ Use this method to create new text style rule objects based on data you previous
 
 ## See Also
 
-- [convenience init?(textMarkupAttributes: [String : Any])](avtextstylerule/init(textmarkupattributes:).md)
+### Creating and initializing style rules
+- [convenience init?(textMarkupAttributes: [String : Any])](./init%28textmarkupattributes%29.md)
   Creates a text style rule object with the specified style attributes.
-- [init?(textMarkupAttributes: [String : Any], textSelector: String?)](avtextstylerule/init(textmarkupattributes:textselector:).md)
+- [init?(textMarkupAttributes: [String : Any], textSelector: String?)](./init%28textmarkupattributes,textselector%29.md)
   Creates a text style rule object with the specified style attributes and text range information.
 
 

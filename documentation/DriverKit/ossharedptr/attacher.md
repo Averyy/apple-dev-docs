@@ -1,28 +1,29 @@
 # attacher
 
 **Framework**: DriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 struct attacher;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [sp](ossharedptr/attacher/sp.md)
+- [sp](./attacher/sp.md)
 ### Instance Methods
-- [attacher](ossharedptr/attacher/attacher.md)
-- [operator OSSharedPtr<T> *](ossharedptr/attacher/operator_ossharedptr_t__*.md)
-- [operator type-parameter-0-0 **](ossharedptr/attacher/operator_type-parameter-0-0_**.md)
+- [attacher](./attacher/attacher.md)
+- [operator OSSharedPtr<T> *](./attacher/operator_ossharedptr_t__star.md)
+- [operator type-parameter-0-0 **](./attacher/operator_type-parameter-0-0_starstar.md)
 
 
 ---

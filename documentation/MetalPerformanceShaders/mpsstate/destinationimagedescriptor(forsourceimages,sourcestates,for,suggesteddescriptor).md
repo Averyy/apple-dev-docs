@@ -1,7 +1,8 @@
 # destinationImageDescriptor(forSourceImages:sourceStates:for:suggestedDescriptor:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func destinationImageDescriptor(forSourceImages sourceImages: [MPSImage], sourceStates: [MPSState]?, for kernel: MPSKernel, suggestedDescriptor inDescriptor: MPSImageDescriptor) -> MPSImageDescriptor
+```
+
+```objc
+- (MPSImageDescriptor *) destinationImageDescriptorForSourceImages:(NSArray<MPSImage *> *) sourceImages sourceStates:(NSArray<MPSState *> *) sourceStates forKernel:(MPSKernel *) kernel suggestedDescriptor:(MPSImageDescriptor *) inDescriptor;
 ```
 
 

@@ -1,7 +1,8 @@
 # CInterop.Char
 
 **Framework**: System  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The C `char` type
 

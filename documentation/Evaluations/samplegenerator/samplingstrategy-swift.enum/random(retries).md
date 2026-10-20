@@ -1,7 +1,8 @@
 # SampleGenerator.SamplingStrategy.random(retries:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A strategy that randomly picks a subset of samples each time a model repeats inference.
 
@@ -22,7 +23,7 @@ case random(retries: Int = 5)
 
 ## Mentions
 
-- [Generating synthetic datasets](generating-synthetic-evaluation-datasets.md)
+- [Generating synthetic datasets](../../generating-synthetic-evaluation-datasets.md)
 
 #### Discussion
 
@@ -34,7 +35,8 @@ When the model repeats an inference, this strategy retries up to `retries` times
 
 ## See Also
 
-- [SampleGenerator.SamplingStrategy.slidingWindow](samplegenerator/samplingstrategy-swift.enum/slidingwindow.md)
+### Strategies
+- [SampleGenerator.SamplingStrategy.slidingWindow](./slidingwindow.md)
   A strategy that slides a window through the examples, advancing it each batch.
 
 

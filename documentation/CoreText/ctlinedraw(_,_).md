@@ -1,7 +1,8 @@
 # CTLineDraw(_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Draws a complete line.
 
@@ -20,9 +21,13 @@ Draws a complete line.
 func CTLineDraw(_ line: CTLine, _ context: CGContext)
 ```
 
+```c
+extern void CTLineDraw(CTLineRef line, CGContextRef context);
+```
+
 #### Discussion
 
-This is a convenience function because the line could be drawn run-by-run by getting the glyph runs, getting the glyphs out of them, and calling a function such as [`CGContextShowGlyphsAtPositions`](https://developer.apple.com/documentation/coregraphics/cgcontextshowglyphsatpositions). This call can leave the graphics context in any state and does not flush the context after the draw operation.
+This is a convenience function because the line could be drawn run-by-run by getting the glyph runs, getting the glyphs out of them, and calling a function such as [`CGContextShowGlyphsAtPositions`](../CoreGraphics/cgcontextshowglyphsatpositions.md). This call can leave the graphics context in any state and does not flush the context after the draw operation.
 
 ## Parameters
 

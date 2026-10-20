@@ -1,7 +1,8 @@
 # contentTransition(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the view to use a given transition as its method of animating changes to the contents of its views.
 
@@ -23,11 +24,11 @@ nonisolated func contentTransition(_ transition: ContentTransition) -> some View
 
 #### Discussion
 
-This modifier allows you to perform a transition that animates a change within a single view. The provided [`ContentTransition`](contenttransition.md) can present an opacity animation for content changes, an interpolated animation of the content’s paths as they change, or perform no animation at all.
+This modifier allows you to perform a transition that animates a change within a single view. The provided [`ContentTransition`](../contenttransition.md) can present an opacity animation for content changes, an interpolated animation of the content’s paths as they change, or perform no animation at all.
 
-> 💡 **Tip**: The `contentTransition(_:)` modifier only has an effect within the context of an [`Animation`](animation.md).
+> 💡 **Tip**: The `contentTransition(_:)` modifier only has an effect within the context of an [`Animation`](../animation.md).
 
-In the following example, a [`Button`](button.md) changes the color and font size of a [`Text`](text.md) view. Since both of these properties apply to the paths of the text, the [`interpolate`](contenttransition/interpolate.md) transition can animate a gradual change to these properties through the entire transition. By contrast, the [`opacity`](contenttransition/opacity.md) transition would simply fade between the start and end states.
+In the following example, a [`Button`](../button.md) changes the color and font size of a [`Text`](../text.md) view. Since both of these properties apply to the paths of the text, the [`interpolate`](../contenttransition/interpolate.md) transition can animate a gradual change to these properties through the entire transition. By contrast, the [`opacity`](../contenttransition/opacity.md) transition would simply fade between the start and end states.
 
 ```swift
 private static let font1 = Font.system(size: 20)
@@ -57,11 +58,11 @@ This example uses an ease-in–ease-out animation with a five-second duration to
 
 | Time | Display |
 | --- | --- |
-| Start | ![The text Content transition in a small red font.](/images/com.apple.SwiftUI/ContentTransition-1@2x.png) |
-| Middle | ![The text Content transition in a medium brown font.](/images/com.apple.SwiftUI/ContentTransition-2@2x.png) |
-| End | ![The text Content transition in a large green font.](/images/com.apple.SwiftUI/ContentTransition-3@2x.png) |
+| Start | ![The text Content transition in a small red font.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ContentTransition-1@2x.png) |
+| Middle | ![The text Content transition in a medium brown font.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ContentTransition-2@2x.png) |
+| End | ![The text Content transition in a large green font.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ContentTransition-3@2x.png) |
 
-To control whether content transitions use GPU-accelerated rendering, set the value of the [`contentTransitionAddsDrawingGroup`](environmentvalues/contenttransitionaddsdrawinggroup.md) environment variable.
+To control whether content transitions use GPU-accelerated rendering, set the value of the [`contentTransitionAddsDrawingGroup`](../environmentvalues/contenttransitionaddsdrawinggroup.md) environment variable.
 
 ## Parameters
 
@@ -69,25 +70,26 @@ To control whether content transitions use GPU-accelerated rendering, set the va
 
 ## See Also
 
-- [func transition(_:)](view/transition(_:).md)
+### Defining transitions
+- [func transition(_:)](./transition%28_%29.md)
   Associates a transition with the view.
-- [protocol Transition](transition.md)
+- [protocol Transition](../transition.md)
   A description of view changes to apply when a view is added to and removed from the view hierarchy.
-- [struct TransitionProperties](transitionproperties.md)
+- [struct TransitionProperties](../transitionproperties.md)
   The properties a `Transition` can have.
-- [enum TransitionPhase](transitionphase.md)
+- [enum TransitionPhase](../transitionphase.md)
   An indication of which the current stage of a transition.
-- [struct AsymmetricTransition](asymmetrictransition.md)
+- [struct AsymmetricTransition](../asymmetrictransition.md)
   A composite `Transition` that uses a different transition for insertion versus removal.
-- [struct AnyTransition](anytransition.md)
+- [struct AnyTransition](../anytransition.md)
   A type-erased transition.
-- [var contentTransition: ContentTransition](environmentvalues/contenttransition.md)
+- [var contentTransition: ContentTransition](../environmentvalues/contenttransition.md)
   The current method of animating the contents of views.
-- [var contentTransitionAddsDrawingGroup: Bool](environmentvalues/contenttransitionaddsdrawinggroup.md)
+- [var contentTransitionAddsDrawingGroup: Bool](../environmentvalues/contenttransitionaddsdrawinggroup.md)
   A Boolean value that controls whether views that render content transitions use GPU-accelerated rendering.
-- [struct ContentTransition](contenttransition.md)
+- [struct ContentTransition](../contenttransition.md)
   A kind of transition that applies to the content within a single view, rather than to the insertion or removal of a view.
-- [struct PlaceholderContentView](placeholdercontentview.md)
+- [struct PlaceholderContentView](../placeholdercontentview.md)
   A placeholder used to construct an inline modifier, transition, or other helper type.
 
 

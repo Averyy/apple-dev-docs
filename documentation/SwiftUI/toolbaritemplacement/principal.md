@@ -1,7 +1,8 @@
 # principal
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A placement for the principal item section.
 
@@ -25,13 +26,14 @@ Principal actions are key units of functionality that receive prominent placemen
 
 In macOS and in Mac Catalyst apps, the system places the principal item in the center of the toolbar.
 
-In iOS, iPadOS, and tvOS, the system places the principal item in the center of the navigation bar. This item takes precedent over a title specified through [`navigationTitle(_:)`](view/navigationtitle(_:).md).
+In iOS, iPadOS, and tvOS, the system places the principal item in the center of the navigation bar. This item takes precedent over a title specified through [`navigationTitle(_:)`](../view/navigationtitle%28_%29.md).
 
 ## See Also
 
-- [static let automatic: ToolbarItemPlacement](toolbaritemplacement/automatic.md)
+### Getting semantic placement
+- [static let automatic: ToolbarItemPlacement](./automatic.md)
   A placement the system positions automatically.
-- [static let status: ToolbarItemPlacement](toolbaritemplacement/status.md)
+- [static let status: ToolbarItemPlacement](./status.md)
   A placement for items that represents a change in status.
 
 

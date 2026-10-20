@@ -1,7 +1,8 @@
 # init(functionName:fromMetalLibraryData:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a single kernel object using a Metal Shading Language (MSL) kernel function.
 
@@ -19,6 +20,10 @@ Creates a single kernel object using a Metal Shading Language (MSL) kernel funct
 convenience init(functionName name: String, fromMetalLibraryData data: Data) throws
 ```
 
+```objc
++ (instancetype) kernelWithFunctionName:(NSString *) name fromMetalLibraryData:(NSData *) data error:(NSError **) error;
+```
+
 #### Discussion
 
 - name: The name of the function in the Metal shading language.
@@ -32,17 +37,17 @@ MSL based kernels still support concatenation and tiling and can work in the sam
 
 ##### Specifying Compiler and Linker Options
 
-To use MSL as the shader language for a [`CIKernel`](cikernel.md), you must specify some options in Xcode under the *Build Settings* tab of your project’s target. The first option you need to specify is an `-fcikernel` flag in the Other Metal Compiler Flags option. The second is to add a user-defined setting with a key called `MTLLINKER_FLAGS` with a value of `-cikernel:`
+To use MSL as the shader language for a [`CIKernel`](../cikernel.md), you must specify some options in Xcode under the *Build Settings* tab of your project’s target. The first option you need to specify is an `-fcikernel` flag in the Other Metal Compiler Flags option. The second is to add a user-defined setting with a key called `MTLLINKER_FLAGS` with a value of `-cikernel:`
 
-![Metal compiler and linker flags](/images/com.apple.coreimage/media-2929842@2x.png)
+![Metal compiler and linker flags](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2929842@2x.png)
 
 ##### Creating a General Kernel in Swift
 
 The following code shows how you can create a general kernel based on a Metal function named `myKernel`.
 
-The first step is to create a `Data` object that represents the default Metal library. If you have built this in Xcode, it will be called `default.metallib` and can be loaded using the [`Bundle`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Bundle.html#//apple_ref/doc/uid/TP40008195-CH4) type’s `url` method.
+The first step is to create a `Data` object that represents the default Metal library. If you have built this in Xcode, it will be called `default.metallib` and can be loaded using the [Bundle](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Bundle.html#//apple_ref/doc/uid/TP40008195-CH4) type’s `url` method.
 
-Using the representation of the Metal library and the function name `myKernel`, you initialize a [`CIKernel`](cikernel.md).
+Using the representation of the Metal library and the function name `myKernel`, you initialize a [`CIKernel`](../cikernel.md).
 
 ```swift
 guard
@@ -76,11 +81,12 @@ The following table shows a summary of CIKL global functions and their equivalen
 
 ## See Also
 
-- [convenience init(functionName: String, fromMetalLibraryData: Data, outputPixelFormat: CIFormat) throws](cikernel/init(functionname:frommetallibrarydata:outputpixelformat:).md)
+### Creating a Kernel Using Metal Shading Language
+- [convenience init(functionName: String, fromMetalLibraryData: Data, outputPixelFormat: CIFormat) throws](./init%28functionname,frommetallibrarydata,outputpixelformat%29.md)
   Creates a single kernel object using a Metal Shading Language kernel function with optional pixel format.
-- [class func kernelNames(fromMetalLibraryData: Data) -> [String]](cikernel/kernelnames(frommetallibrarydata:).md)
+- [class func kernelNames(fromMetalLibraryData: Data) -> [String]](./kernelnames%28frommetallibrarydata%29.md)
   Return an array of strings containing the names of all of the kernels contained in the Metal library.
-- [class func kernels(withMetalString: String) throws -> [CIKernel]](cikernel/kernels(withmetalstring:).md)
+- [class func kernels(withMetalString: String) throws -> [CIKernel]](./kernels%28withmetalstring%29.md)
   Load kernels from a Metal language string.
 
 

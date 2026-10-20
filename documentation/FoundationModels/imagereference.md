@@ -1,7 +1,8 @@
 # ImageReference
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A reference to an image in a session’s transcript.
 
@@ -21,7 +22,7 @@ struct ImageReference
 
 ## Mentions
 
-- [Analyzing images with multimodal prompting](analyzing-images-with-multimodal-prompting.md)
+- [Analyzing images with multimodal prompting](./analyzing-images-with-multimodal-prompting.md)
 
 #### Overview
 
@@ -51,35 +52,36 @@ struct MyTool: Tool {
 ## Topics
 
 ### Getting the image label
-- [let attachmentLabel: String](imagereference/attachmentlabel.md)
+- [let attachmentLabel: String](./imagereference/attachmentlabel.md)
   The label of the referenced image.
 ### Accessing the referenced image
-- [func resolved(in: some Sequence<Transcript.Entry>) -> Transcript.ImageAttachment?](imagereference/resolved(in:).md)
+- [func resolved(in: some Sequence<Transcript.Entry>) -> Transcript.ImageAttachment?](./imagereference/resolved%28in%29.md)
   Returns the referenced image from the transcript.
 ### Default Implementations
-- [Generable Implementations](imagereference/generable-implementations.md)
+- [Generable Implementations](./imagereference/generable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [ConvertibleFromGeneratedContent](convertiblefromgeneratedcontent.md)
-- [ConvertibleToGeneratedContent](convertibletogeneratedcontent.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Generable](generable.md)
-- [InstructionsRepresentable](instructionsrepresentable.md)
-- [PromptRepresentable](promptrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ConvertibleFromGeneratedContent](./convertiblefromgeneratedcontent.md)
+- [ConvertibleToGeneratedContent](./convertibletogeneratedcontent.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Generable](./generable.md)
+- [InstructionsRepresentable](./instructionsrepresentable.md)
+- [PromptRepresentable](./promptrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Analyzing images with multimodal prompting](analyzing-images-with-multimodal-prompting.md)
+### Prompt attachments
+- [Analyzing images with multimodal prompting](./analyzing-images-with-multimodal-prompting.md)
   Analyze and extract information from images by combining them with descriptive text prompts.
-- [struct Attachment](attachment.md)
+- [struct Attachment](./attachment.md)
   An asset provided to the model.
-- [struct ImageAttachmentContent](imageattachmentcontent.md)
+- [struct ImageAttachmentContent](./imageattachmentcontent.md)
   A type that holds image data.
 
 

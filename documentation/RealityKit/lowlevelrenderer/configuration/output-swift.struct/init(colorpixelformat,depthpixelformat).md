@@ -1,7 +1,8 @@
 # init(colorPixelFormat:depthPixelFormat:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an output configuration with the given color and depth pixel formats.
 

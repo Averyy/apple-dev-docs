@@ -1,7 +1,8 @@
 # IOCreatePlugInInterfaceForService(_:_:_:_:_:)
 
 **Framework**: IOKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 func IOCreatePlugInInterfaceForService(_ service: io_service_t, _ pluginType: CFUUID!, _ interfaceType: CFUUID!, _ theInterface: UnsafeMutablePointer<UnsafeMutablePointer<UnsafeMutablePointer<IOCFPlugInInterface>?>?>!, _ theScore: UnsafeMutablePointer<Int32>!) -> kern_return_t
+```
+
+```c
+kern_return_t IOCreatePlugInInterfaceForService(io_service_t service, CFUUIDRef pluginType, CFUUIDRef interfaceType, IOCFPlugInInterface ***theInterface, SInt32 *theScore);
 ```
 
 

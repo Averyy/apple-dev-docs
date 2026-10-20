@@ -1,7 +1,8 @@
 # accessibilitySettings
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var accessibilitySettings: SRAcousticSettings.Accessibility { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) SRAcousticSettingsAccessibility * accessibilitySettings;
 ```
 
 #### Discussion

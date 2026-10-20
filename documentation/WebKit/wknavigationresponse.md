@@ -1,7 +1,8 @@
 # WKNavigationResponse
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains the response to a navigation request, and which you use to make navigation-related policy decisions.
 
@@ -19,49 +20,54 @@ An object that contains the response to a navigation request, and which you use 
 class WKNavigationResponse
 ```
 
+```objc
+@interface WKNavigationResponse : NSObject
+```
+
 #### Overview
 
-Use a [`WKNavigationResponse`](wknavigationresponse.md) object to make policy decisions about whether to allow navigation within your app’s web view. You don’t create [`WKNavigationResponse`](wknavigationresponse.md) objects directly. Instead, the web view creates them and delivers them to the appropriate delegate objects. Use the methods of your delegate to analyze the response and determine whether to allow the resulting navigation to occur.
+Use a [`WKNavigationResponse`](./wknavigationresponse.md) object to make policy decisions about whether to allow navigation within your app’s web view. You don’t create [`WKNavigationResponse`](./wknavigationresponse.md) objects directly. Instead, the web view creates them and delivers them to the appropriate delegate objects. Use the methods of your delegate to analyze the response and determine whether to allow the resulting navigation to occur.
 
 ## Topics
 
 ### Getting the Response Details
-- [var response: URLResponse](wknavigationresponse/response.md)
+- [var response: URLResponse](./wknavigationresponse/response.md)
   The frame’s response.
 ### Getting Additional Response Information
-- [var canShowMIMEType: Bool](wknavigationresponse/canshowmimetype.md)
+- [var canShowMIMEType: Bool](./wknavigationresponse/canshowmimetype.md)
   A Boolean value that indicates whether WebKit is capable of displaying the response’s MIME type natively.
-- [var isForMainFrame: Bool](wknavigationresponse/isformainframe.md)
+- [var isForMainFrame: Bool](./wknavigationresponse/isformainframe.md)
   A Boolean value that indicates whether the response targets the web view’s main frame.
 ### Instance Properties
-- [var mainFrameNavigation: WKNavigation?](wknavigationresponse/mainframenavigation.md)
+- [var mainFrameNavigation: WKNavigation?](./wknavigationresponse/mainframenavigation.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [protocol WKNavigationDelegate](wknavigationdelegate.md)
+### Navigation
+- [protocol WKNavigationDelegate](./wknavigationdelegate.md)
   Methods for accepting or rejecting navigation changes, and for tracking the progress of navigation requests.
-- [class WKBackForwardList](wkbackforwardlist.md)
+- [class WKBackForwardList](./wkbackforwardlist.md)
   An object that manages the list of previously loaded webpages, which the web view uses for forward and backward navigation.
-- [class WKBackForwardListItem](wkbackforwardlistitem.md)
+- [class WKBackForwardListItem](./wkbackforwardlistitem.md)
   A representation of a webpage that the web view previously visited.
-- [class WKNavigation](wknavigation.md)
+- [class WKNavigation](./wknavigation.md)
   An object that tracks the loading progress of a webpage.
-- [class WKNavigationAction](wknavigationaction.md)
+- [class WKNavigationAction](./wknavigationaction.md)
   An object that contains information about an action that causes navigation to occur.
-- [class WKFormInfo](wkforminfo.md)
+- [class WKFormInfo](./wkforminfo.md)
 
 
 ---

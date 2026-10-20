@@ -1,7 +1,8 @@
 # externalReference
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The port references a value outside of the graph, such as by filename
 
@@ -12,7 +13,7 @@ The port references a value outside of the graph, such as by filename
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

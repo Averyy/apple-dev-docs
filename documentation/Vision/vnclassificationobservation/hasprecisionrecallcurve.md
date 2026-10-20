@@ -1,7 +1,8 @@
 # hasPrecisionRecallCurve
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean variable indicating whether the observation contains precision and recall curves.
 
@@ -19,17 +20,22 @@ A Boolean variable indicating whether the observation contains precision and rec
 var hasPrecisionRecallCurve: Bool { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) BOOL hasPrecisionRecallCurve;
+```
+
 #### Discussion
 
 Precision refers to the percentage of your classification results that are relevant, while recall refers to the percentage of total relevant results correctly classified.
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), then you can call precision and recall-related methods in this observation. If this property is [`false`](https://developer.apple.com/documentation/swift/false), then the  precision and recall-related methods won’t return meaningful data.
+If this property is [`true`](../../Swift/true.md), then you can call precision and recall-related methods in this observation. If this property is [`false`](../../Swift/false.md), then the  precision and recall-related methods won’t return meaningful data.
 
 ## See Also
 
-- [func hasMinimumPrecision(Float, forRecall: Float) -> Bool](vnclassificationobservation/hasminimumprecision(_:forrecall:).md)
+### Measuring Confidence and Precision
+- [func hasMinimumPrecision(Float, forRecall: Float) -> Bool](./hasminimumprecision%28_,forrecall%29.md)
   Determines whether the observation for a specific recall has a minimum precision value.
-- [func hasMinimumRecall(Float, forPrecision: Float) -> Bool](vnclassificationobservation/hasminimumrecall(_:forprecision:).md)
+- [func hasMinimumRecall(Float, forPrecision: Float) -> Bool](./hasminimumrecall%28_,forprecision%29.md)
   Determines whether the observation for a specific precision has a minimum recall value.
 
 

@@ -1,7 +1,8 @@
 # SettingsCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to configure settings on a device.
 
@@ -16,14 +17,14 @@ The command to configure settings on a device.
 
 ## Declaration
 
-```swift
+```
 object SettingsCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object SettingsCommand.Command](settingscommand/command-data.dictionary.md)
+- [object SettingsCommand.Command](./settingscommand/command-data.dictionary.md)
   The command to configure settings on a device.
 
 ## Properties
@@ -33,7 +34,8 @@ object SettingsCommand
 
 ## See Also
 
-- [object SettingsResponse](settingsresponse.md)
+### Commands and responses
+- [object SettingsResponse](./settingsresponse.md)
   A response from the device after it processes the command to configure settings on a device.
 
 

@@ -1,7 +1,8 @@
 # items
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of media items that match the media query’s predicate.
 
@@ -17,13 +18,18 @@ An array of media items that match the media query’s predicate.
 var items: [MPMediaItem]? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSArray<MPMediaItem *> * items;
+```
+
 #### Discussion
 
 If no items match the predicate, this method returns an empty array. On error, returns `nil`.
 
 ## See Also
 
-- [var collections: [MPMediaItemCollection]?](mpmediaquery/collections.md)
+### Performing media queries
+- [var collections: [MPMediaItemCollection]?](./collections.md)
   An array of media item collections whose contained items match the query’s media property predicate.
 
 

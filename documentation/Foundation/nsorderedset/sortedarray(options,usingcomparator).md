@@ -1,7 +1,8 @@
 # sortedArray(options:usingComparator:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array that lists the receiving ordered set’s elements in ascending order, as determined by the comparison method specified by a given `NSComparator` block.
 
@@ -20,6 +21,10 @@ Returns an array that lists the receiving ordered set’s elements in ascending 
 func sortedArray(options opts: NSSortOptions = [], usingComparator cmptr: (Any, Any) -> ComparisonResult) -> [Any]
 ```
 
+```objc
+- (NSArray<id> *) sortedArrayWithOptions:(NSSortOptions) opts usingComparator:(NSComparator) cmptr;
+```
+
 #### Return Value
 
 An array that lists the receiving ordered set’s elements in ascending order, as determined by the comparison method specified `cmptr`.
@@ -31,9 +36,10 @@ An array that lists the receiving ordered set’s elements in ascending order, a
 
 ## See Also
 
-- [func sortedArray(using: [NSSortDescriptor]) -> [Any]](nsorderedset/sortedarray(using:).md)
+### Creating a Sorted Array
+- [func sortedArray(using: [NSSortDescriptor]) -> [Any]](./sortedarray%28using%29.md)
   Returns an array of the ordered set’s elements sorted as specified by a given array of sort descriptors.
-- [func sortedArray(comparator: (Any, Any) -> ComparisonResult) -> [Any]](nsorderedset/sortedarray(comparator:).md)
+- [func sortedArray(comparator: (Any, Any) -> ComparisonResult) -> [Any]](./sortedarray%28comparator%29.md)
   Returns an array that lists the receiving ordered set’s elements in ascending order, as determined by the comparison method specified by a given `NSComparator` block
 
 

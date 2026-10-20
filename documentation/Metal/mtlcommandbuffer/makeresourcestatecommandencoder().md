@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a resource state command encoder that uses default settings.
@@ -20,13 +21,18 @@ Creates a resource state command encoder that uses default settings.
 func makeResourceStateCommandEncoder() -> (any MTLResourceStateCommandEncoder)?
 ```
 
+```objc
+- (id<MTLResourceStateCommandEncoder>) resourceStateCommandEncoder;
+```
+
 #### Discussion
 
-Use an [`MTLResourceStateCommandEncoder`](mtlresourcestatecommandencoder.md) instance’s methods to create a pass that updates the state of one or more sparse textures.
+Use an [`MTLResourceStateCommandEncoder`](../mtlresourcestatecommandencoder.md) instance’s methods to create a pass that updates the state of one or more sparse textures.
 
 ## See Also
 
-- [func resourceStateCommandEncoder(with: MTLResourceStatePassDescriptor) -> (any MTLResourceStateCommandEncoder)?](mtlcommandbuffer/resourcestatecommandencoder(with:).md)
+### Creating resource state encoders
+- [func resourceStateCommandEncoder(with: MTLResourceStatePassDescriptor) -> (any MTLResourceStateCommandEncoder)?](./resourcestatecommandencoder%28with%29.md)
   Creates a resource state command encoder from a descriptor.
 
 

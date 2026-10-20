@@ -1,7 +1,8 @@
 # AppClipHeaderImageCreateRequest.Data.Relationships.AppClipDefaultExperienceLocalization.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of the Default App Clip Localizations resource that you’re relating with the App Clip Header Images resource you’re creating.
 
@@ -10,7 +11,7 @@ The type and ID of the Default App Clip Localizations resource that you’re rel
 
 ## Declaration
 
-```swift
+```
 object AppClipHeaderImageCreateRequest.Data.Relationships.AppClipDefaultExperienceLocalization.Data
 ```
 
@@ -18,6 +19,8 @@ object AppClipHeaderImageCreateRequest.Data.Relationships.AppClipDefaultExperien
 
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies a Default App Clip Experience Localizations resource.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `appClipDefaultExperienceLocalizations`
 
 
 ---

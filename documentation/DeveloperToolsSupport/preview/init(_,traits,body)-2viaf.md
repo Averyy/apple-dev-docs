@@ -1,7 +1,8 @@
 # init(_:traits:body:)
 
 **Framework**: DeveloperToolsSupport  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a preview of an NSViewController.
 
@@ -21,7 +22,8 @@ The `#Preview` macro expands into a declaration that calls this initializer. To 
 
 ## See Also
 
-- [init(String?, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> NSView)](preview/init(_:traits:body:)-158mk.md)
+### Creating an AppKit preview
+- [init(String?, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> NSView)](./init%28_,traits,body%29-158mk.md)
   Creates a preview of an NSView.
 
 

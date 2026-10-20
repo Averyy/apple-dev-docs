@@ -1,7 +1,8 @@
 # contentType
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content type of a file that the data detection system identifies when the pasteboard contains a file URL.
 
@@ -16,7 +17,8 @@ var contentType: UTType? { get }
 
 ## See Also
 
-- [var metadataTypes: Set<PartialKeyPath<NSPasteboard.DetectedMetadata>>](nspasteboard/detectedmetadata/metadatatypes.md)
+### Accessing metadata
+- [var metadataTypes: Set<PartialKeyPath<NSPasteboard.DetectedMetadata>>](./metadatatypes.md)
   A set of key paths that represent metadata types that the data detection system identifies.
 
 

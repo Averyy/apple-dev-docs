@@ -1,17 +1,18 @@
 # kSCSITaskStatus_TASK_SET_FULL
 
 **Framework**: DriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kSCSITaskStatus_TASK_SET_FULL
 ```
 
@@ -21,20 +22,21 @@ The task completed with a status of TASK_SET_FULL. The device server may need to
 
 ## See Also
 
-- [kSCSITaskStatus_GOOD](scsitaskstatus/kscsitaskstatus_good.md)
-- [kSCSITaskStatus_CHECK_CONDITION](scsitaskstatus/kscsitaskstatus_check_condition.md)
-- [kSCSITaskStatus_CONDITION_MET](scsitaskstatus/kscsitaskstatus_condition_met.md)
-- [kSCSITaskStatus_BUSY](scsitaskstatus/kscsitaskstatus_busy.md)
-- [kSCSITaskStatus_INTERMEDIATE](scsitaskstatus/kscsitaskstatus_intermediate.md)
-- [kSCSITaskStatus_INTERMEDIATE_CONDITION_MET](scsitaskstatus/kscsitaskstatus_intermediate_condition_met.md)
-- [kSCSITaskStatus_RESERVATION_CONFLICT](scsitaskstatus/kscsitaskstatus_reservation_conflict.md)
-- [kSCSITaskStatus_ACA_ACTIVE](scsitaskstatus/kscsitaskstatus_aca_active.md)
-- [kSCSITaskStatus_TaskTimeoutOccurred](scsitaskstatus/kscsitaskstatus_tasktimeoutoccurred.md)
-- [kSCSITaskStatus_ProtocolTimeoutOccurred](scsitaskstatus/kscsitaskstatus_protocoltimeoutoccurred.md)
-- [kSCSITaskStatus_DeviceNotResponding](scsitaskstatus/kscsitaskstatus_devicenotresponding.md)
-- [kSCSITaskStatus_DeviceNotPresent](scsitaskstatus/kscsitaskstatus_devicenotpresent.md)
-- [kSCSITaskStatus_DeliveryFailure](scsitaskstatus/kscsitaskstatus_deliveryfailure.md)
-- [kSCSITaskStatus_No_Status](scsitaskstatus/kscsitaskstatus_no_status.md)
+### Constants
+- [kSCSITaskStatus_GOOD](./kscsitaskstatus_good.md)
+- [kSCSITaskStatus_CHECK_CONDITION](./kscsitaskstatus_check_condition.md)
+- [kSCSITaskStatus_CONDITION_MET](./kscsitaskstatus_condition_met.md)
+- [kSCSITaskStatus_BUSY](./kscsitaskstatus_busy.md)
+- [kSCSITaskStatus_INTERMEDIATE](./kscsitaskstatus_intermediate.md)
+- [kSCSITaskStatus_INTERMEDIATE_CONDITION_MET](./kscsitaskstatus_intermediate_condition_met.md)
+- [kSCSITaskStatus_RESERVATION_CONFLICT](./kscsitaskstatus_reservation_conflict.md)
+- [kSCSITaskStatus_ACA_ACTIVE](./kscsitaskstatus_aca_active.md)
+- [kSCSITaskStatus_TaskTimeoutOccurred](./kscsitaskstatus_tasktimeoutoccurred.md)
+- [kSCSITaskStatus_ProtocolTimeoutOccurred](./kscsitaskstatus_protocoltimeoutoccurred.md)
+- [kSCSITaskStatus_DeviceNotResponding](./kscsitaskstatus_devicenotresponding.md)
+- [kSCSITaskStatus_DeviceNotPresent](./kscsitaskstatus_devicenotpresent.md)
+- [kSCSITaskStatus_DeliveryFailure](./kscsitaskstatus_deliveryfailure.md)
+- [kSCSITaskStatus_No_Status](./kscsitaskstatus_no_status.md)
 
 
 ---

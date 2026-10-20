@@ -1,15 +1,16 @@
 # init()
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,7 +20,8 @@ init()
 
 ## See Also
 
-- [init(x: Int, y: Int, width: Int, height: Int)](mtlscissorrect/init(x:y:width:height:).md)
+### Creating a scissor rectangle
+- [init(x: Int, y: Int, width: Int, height: Int)](./init%28x,y,width,height%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # allowsInlinePredictions
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether inline predictions are allowed.
 

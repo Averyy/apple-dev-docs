@@ -1,7 +1,8 @@
 # load(_:)
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Downloads the attachment data and asynchronously delivers it as the type you specify.
 
@@ -29,11 +30,12 @@ Use this function to retrieve the file or data another participant provides. The
 
 ## Parameters
 
-- `attachmentType`: The type you use to interpret the data. An app typically uploads and downloads a single type of data for an activity. For more information about defining your types, see [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable).
+- `attachmentType`: The type you use to interpret the data. An app typically uploads and downloads a single type of data for an activity. For more information about defining your types, see [`Transferable`](../../../CoreTransferable/transferable.md).
 
 ## See Also
 
-- [func loadMetadata<MetadataType>(of: MetadataType.Type) async throws -> MetadataType](groupsessionjournal/attachment/loadmetadata(of:).md)
+### Downloading the attachment data
+- [func loadMetadata<MetadataType>(of: MetadataType.Type) async throws -> MetadataType](./loadmetadata%28of%29.md)
   Downloads the metadata for the attachment asynchronously and delivers it as the type you specify.
 
 

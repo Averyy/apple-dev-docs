@@ -1,7 +1,8 @@
 # kCGImagePropertyExifISOSpeedRatings
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The ISO speed ratings.
 
@@ -20,37 +21,42 @@ The ISO speed ratings.
 let kCGImagePropertyExifISOSpeedRatings: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyExifISOSpeedRatings;
+```
+
 ## See Also
 
-- [let kCGImagePropertyExifDeviceSettingDescription: CFString](kcgimagepropertyexifdevicesettingdescription.md)
+### Camera Settings
+- [let kCGImagePropertyExifDeviceSettingDescription: CFString](./kcgimagepropertyexifdevicesettingdescription.md)
   For a particular camera mode, indicates the conditions for taking the picture.
-- [let kCGImagePropertyExifFNumber: CFString](kcgimagepropertyexiffnumber.md)
+- [let kCGImagePropertyExifFNumber: CFString](./kcgimagepropertyexiffnumber.md)
   The F-number.
-- [let kCGImagePropertyExifShutterSpeedValue: CFString](kcgimagepropertyexifshutterspeedvalue.md)
+- [let kCGImagePropertyExifShutterSpeedValue: CFString](./kcgimagepropertyexifshutterspeedvalue.md)
   The shutter speed value.
-- [let kCGImagePropertyExifApertureValue: CFString](kcgimagepropertyexifaperturevalue.md)
+- [let kCGImagePropertyExifApertureValue: CFString](./kcgimagepropertyexifaperturevalue.md)
   The aperture value.
-- [let kCGImagePropertyExifMaxApertureValue: CFString](kcgimagepropertyexifmaxaperturevalue.md)
+- [let kCGImagePropertyExifMaxApertureValue: CFString](./kcgimagepropertyexifmaxaperturevalue.md)
   The maximum aperture value.
-- [let kCGImagePropertyExifFocalLength: CFString](kcgimagepropertyexiffocallength.md)
+- [let kCGImagePropertyExifFocalLength: CFString](./kcgimagepropertyexiffocallength.md)
   The focal length.
-- [let kCGImagePropertyExifSpectralSensitivity: CFString](kcgimagepropertyexifspectralsensitivity.md)
+- [let kCGImagePropertyExifSpectralSensitivity: CFString](./kcgimagepropertyexifspectralsensitivity.md)
   The spectral sensitivity of each channel.
-- [let kCGImagePropertyExifSubjectDistance: CFString](kcgimagepropertyexifsubjectdistance.md)
+- [let kCGImagePropertyExifSubjectDistance: CFString](./kcgimagepropertyexifsubjectdistance.md)
   The distance to the subject, in meters.
-- [let kCGImagePropertyExifMeteringMode: CFString](kcgimagepropertyexifmeteringmode.md)
+- [let kCGImagePropertyExifMeteringMode: CFString](./kcgimagepropertyexifmeteringmode.md)
   The metering mode.
-- [let kCGImagePropertyExifSubjectArea: CFString](kcgimagepropertyexifsubjectarea.md)
+- [let kCGImagePropertyExifSubjectArea: CFString](./kcgimagepropertyexifsubjectarea.md)
   The subject area.
-- [let kCGImagePropertyExifSubjectLocation: CFString](kcgimagepropertyexifsubjectlocation.md)
+- [let kCGImagePropertyExifSubjectLocation: CFString](./kcgimagepropertyexifsubjectlocation.md)
   The location of the image’s primary subject.
-- [let kCGImagePropertyExifSensingMethod: CFString](kcgimagepropertyexifsensingmethod.md)
+- [let kCGImagePropertyExifSensingMethod: CFString](./kcgimagepropertyexifsensingmethod.md)
   The sensor type of the camera or input device.
-- [let kCGImagePropertyExifSceneType: CFString](kcgimagepropertyexifscenetype.md)
+- [let kCGImagePropertyExifSceneType: CFString](./kcgimagepropertyexifscenetype.md)
   The scene type.
-- [let kCGImagePropertyExifDigitalZoomRatio: CFString](kcgimagepropertyexifdigitalzoomratio.md)
+- [let kCGImagePropertyExifDigitalZoomRatio: CFString](./kcgimagepropertyexifdigitalzoomratio.md)
   The digital zoom ratio.
-- [let kCGImagePropertyExifFocalLenIn35mmFilm: CFString](kcgimagepropertyexiffocallenin35mmfilm.md)
+- [let kCGImagePropertyExifFocalLenIn35mmFilm: CFString](./kcgimagepropertyexiffocallenin35mmfilm.md)
   The equivalent focal length in 35 mm film.
 
 

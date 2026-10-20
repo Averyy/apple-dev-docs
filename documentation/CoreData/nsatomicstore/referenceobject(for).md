@@ -1,7 +1,8 @@
 # referenceObject(for:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the reference object for a given managed object ID.
 
@@ -10,7 +11,7 @@ Returns the reference object for a given managed object ID.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns the reference object for a given managed object ID.
 
 ```swift
 func referenceObject(for objectID: NSManagedObjectID) -> Any
+```
+
+```objc
+- (id) referenceObjectForObjectID:(NSManagedObjectID *) objectID;
 ```
 
 #### Return Value
@@ -34,9 +39,10 @@ Subclasses should invoke this method to extract the reference data from the obje
 
 ## See Also
 
-- [func cacheNodes() -> Set<NSAtomicStoreCacheNode>](nsatomicstore/cachenodes.md)
+### Utility Methods
+- [func cacheNodes() -> Set<NSAtomicStoreCacheNode>](./cachenodes%28%29.md)
   Returns the set of cache nodes registered with the receiver.
-- [func cacheNode(for: NSManagedObjectID) -> NSAtomicStoreCacheNode?](nsatomicstore/cachenode(for:).md)
+- [func cacheNode(for: NSManagedObjectID) -> NSAtomicStoreCacheNode?](./cachenode%28for%29.md)
   Returns the cache node for a given managed object ID.
 
 

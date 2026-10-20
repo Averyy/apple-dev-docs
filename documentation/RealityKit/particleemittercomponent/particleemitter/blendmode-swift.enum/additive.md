@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.ParticleEmitter.BlendMode.additive
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The source and destination colors are added together.
 

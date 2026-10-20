@@ -1,7 +1,8 @@
 # newTexture(URL:options:completionHandler:)
 
 **Framework**: MetalKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously loads image data and creates a new Metal texture from a given URL.
 
@@ -16,14 +17,26 @@ Asynchronously loads image data and creates a new Metal texture from a given URL
 ## Declaration
 
 ```swift
+func newTexture(URL: URL, options: [MTKTextureLoader.Option : Any]? = nil, completionHandler: @escaping @Sendable ((any MTLTexture)?, (any Error)?) -> Void)
+```
+
+```swift
 func newTexture(URL: URL, options: [MTKTextureLoader.Option : Any]? = nil) async throws -> any MTLTexture
+```
+
+```objc
+- (void) newTextureWithContentsOfURL:(NSURL *) URL options:(NSDictionary<NSString *,id> *) options completionHandler:(MTKTextureLoaderCallback) completionHandler;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func newTexture(URL: URL, options: [MTKTextureLoader.Option : Any]? = nil) async throws -> MTLTexture
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func newTexture(URL: URL, options: [MTKTextureLoader.Option : Any]? = nil) async throws -> MTLTexture
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 ## Parameters
 
@@ -33,11 +46,12 @@ func newTexture(URL: URL, options: [MTKTextureLoader.Option : Any]? = nil) async
 
 ## See Also
 
-- [func newTexture(URL: URL, options: [MTKTextureLoader.Option : Any]?) throws -> any MTLTexture](mtktextureloader/newtexture(url:options:).md)
+### Loading Textures from URLs
+- [func newTexture(URL: URL, options: [MTKTextureLoader.Option : Any]?) throws -> any MTLTexture](./newtexture%28url,options%29.md)
   Synchronously loads image data and creates a new Metal texture from a given URL.
-- [func newTextures(URLs: [URL], options: [MTKTextureLoader.Option : Any]?, error: NSErrorPointer) -> [any MTLTexture]](mtktextureloader/newtextures(urls:options:error:).md)
+- [func newTextures(URLs: [URL], options: [MTKTextureLoader.Option : Any]?, error: NSErrorPointer) -> [any MTLTexture]](./newtextures%28urls,options,error%29.md)
   Synchronously loads image data and creates new Metal textures from the specified list of URLs.
-- [func newTextures(URLs: [URL], options: [MTKTextureLoader.Option : Any]?, completionHandler: ([any MTLTexture], (any Error)?) -> Void)](mtktextureloader/newtextures(urls:options:completionhandler:).md)
+- [func newTextures(URLs: [URL], options: [MTKTextureLoader.Option : Any]?, completionHandler: ([any MTLTexture], (any Error)?) -> Void)](./newtextures%28urls,options,completionhandler%29.md)
   Asynchronously loads image data and creates new Metal textures from the specified list of URLs.
 
 

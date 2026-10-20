@@ -1,7 +1,8 @@
 # AddCustomProperty
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a custom property object to the video driver.
 
@@ -10,7 +11,7 @@ Adds a custom property object to the video driver.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t AddCustomProperty(IOUserVideoCustomProperty *in_custom_property);
 ```
 
@@ -24,9 +25,10 @@ kern_return_t AddCustomProperty(IOUserVideoCustomProperty *in_custom_property);
 
 ## See Also
 
-- [RemoveCustomProperty](iouservideodriver/removecustomproperty.md)
+### Working with custom properties
+- [RemoveCustomProperty](./removecustomproperty.md)
   Removes a custom property object from the video driver.
-- [IOUserVideoCustomProperty](iouservideocustomproperty.md)
+- [IOUserVideoCustomProperty](../iouservideocustomproperty.md)
   A custom property object that can be added to or associated with video objects.
 
 

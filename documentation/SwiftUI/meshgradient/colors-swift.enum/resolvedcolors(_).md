@@ -1,7 +1,8 @@
 # MeshGradient.Colors.resolvedColors(_:)
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+

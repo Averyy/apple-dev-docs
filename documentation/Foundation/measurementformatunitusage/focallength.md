@@ -1,7 +1,8 @@
 # focalLength
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Used to format the focal length of an optical system, such as that of camera lenses
 
@@ -19,6 +20,8 @@ Used to format the focal length of an optical system, such as that of camera len
 ```swift
 static var focalLength: MeasurementFormatUnitUsage<UnitLength> { get }
 ```
+
+Available when `UnitType` is `UnitLength`.
 
 
 ---

@@ -1,17 +1,18 @@
 # COREIMAGE_SUPPORTS_IOSURFACE
 
 **Framework**: Core Image  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Support for IOSurface enabled.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ Support for IOSurface enabled.
 var COREIMAGE_SUPPORTS_IOSURFACE: Int32 { get }
 ```
 
+```c
+#define COREIMAGE_SUPPORTS_IOSURFACE
+```
+
 ## See Also
 
-- [var COREIMAGE_SUPPORTS_OPENGLES: Int32](coreimage_supports_opengles.md)
+### Variables
+- [var COREIMAGE_SUPPORTS_OPENGLES: Int32](./coreimage_supports_opengles.md)
   Support for OpenGL ES enabled.
-- [var UNIFIED_CORE_IMAGE: Int32](unified_core_image.md)
+- [var UNIFIED_CORE_IMAGE: Int32](./unified_core_image.md)
 
 
 ---

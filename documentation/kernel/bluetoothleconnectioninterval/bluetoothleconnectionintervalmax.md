@@ -1,14 +1,15 @@
 # BluetoothLEConnectionIntervalMax
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.10.2+
 
 ## Declaration
 
-```swift
+```c
 BluetoothLEConnectionIntervalMax = 0x0C80
 ```
 

@@ -1,7 +1,8 @@
 # GameCenterChallengeCreateRequest.Data.Relationships.LeaderboardV2.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a related resource.
 
@@ -10,7 +11,7 @@ The type and ID of a related resource.
 
 ## Declaration
 
-```swift
+```
 object GameCenterChallengeCreateRequest.Data.Relationships.LeaderboardV2.Data
 ```
 
@@ -22,7 +23,7 @@ object GameCenterChallengeCreateRequest.Data.Relationships.LeaderboardV2.Data
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterLeaderboards`
 
 
 ---

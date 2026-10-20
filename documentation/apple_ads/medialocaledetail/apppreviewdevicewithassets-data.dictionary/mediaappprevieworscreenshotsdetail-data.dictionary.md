@@ -1,11 +1,12 @@
 # MediaLocaleDetail.AppPreviewDeviceWithAssets.MediaAppPreviewOrScreenshotsDetail
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object MediaLocaleDetail.AppPreviewDeviceWithAssets.MediaAppPreviewOrScreenshotsDetail
 ```
 

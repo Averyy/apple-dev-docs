@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the original image asset, if the attachment was created from a URL.
 
@@ -21,11 +22,12 @@ var url: URL? { get }
 
 ## See Also
 
-- [var cgImage: CGImage](transcript/imageattachment/cgimage.md)
+### Inspecting an image attachment
+- [var cgImage: CGImage](./cgimage.md)
   The image as a Core Graphics image.
-- [var ciImage: CIImage](transcript/imageattachment/ciimage.md)
+- [var ciImage: CIImage](./ciimage.md)
   The image as a Core Image image.
-- [var orientation: CGImagePropertyOrientation](transcript/imageattachment/orientation.md)
+- [var orientation: CGImagePropertyOrientation](./orientation.md)
   The display orientation of the image.
 
 

@@ -1,7 +1,8 @@
 # exposure
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 In F-stops
 
@@ -21,15 +22,16 @@ var exposure: Float
 
 ## See Also
 
-- [var toeStrength: Float](tonemappingcomponent/toestrength.md)
+### Configuring the tone curve
+- [var toeStrength: Float](./toestrength.md)
   As a ratio, clamped to [0.0, 1.0]
-- [var toeLength: Float](tonemappingcomponent/toelength.md)
+- [var toeLength: Float](./toelength.md)
   As a ratio, clamped to [0.0, 1.0], where 1.0 means 50% of white point
-- [var shoulderStrength: Float](tonemappingcomponent/shoulderstrength.md)
+- [var shoulderStrength: Float](./shoulderstrength.md)
   In Fstops, clamped to [0.0, 10.0]
-- [var shoulderLength: Float](tonemappingcomponent/shoulderlength.md)
+- [var shoulderLength: Float](./shoulderlength.md)
   As a ratio, clamped to [0.0, 1.0]
-- [var shoulderAngle: Float](tonemappingcomponent/shoulderangle.md)
+- [var shoulderAngle: Float](./shoulderangle.md)
   As a ratio, clamped to [0.0, 1.0]
 
 

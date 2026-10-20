@@ -1,7 +1,8 @@
 # setDictionary(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the contents of the receiving dictionary to entries in a given dictionary.
 
@@ -20,9 +21,13 @@ Sets the contents of the receiving dictionary to entries in a given dictionary.
 func setDictionary(_ otherDictionary: [AnyHashable : Any])
 ```
 
+```objc
+- (void) setDictionary:(NSDictionary<id,id> *) otherDictionary;
+```
+
 #### Discussion
 
-All entries are removed from the receiving dictionary (with [`removeAllObjects()`](nsmutabledictionary/removeallobjects().md)), then each entry from `otherDictionary` added into the receiving dictionary.
+All entries are removed from the receiving dictionary (with [`removeAllObjects()`](./removeallobjects%28%29.md)), then each entry from `otherDictionary` added into the receiving dictionary.
 
 ## Parameters
 
@@ -30,11 +35,12 @@ All entries are removed from the receiving dictionary (with [`removeAllObjects()
 
 ## See Also
 
-- [func setObject(Any, forKey: any NSCopying)](nsmutabledictionary/setobject(_:forkey:).md)
+### Adding Entries to a Mutable Dictionary
+- [func setObject(Any, forKey: any NSCopying)](./setobject%28_,forkey%29.md)
   Adds a given key-value pair to the dictionary.
-- [func setValue(Any?, forKey: String)](nsmutabledictionary/setvalue(_:forkey:).md)
+- [func setValue(Any?, forKey: String)](./setvalue%28_,forkey%29.md)
   Adds a given key-value pair to the dictionary.
-- [func addEntries(from: [AnyHashable : Any])](nsmutabledictionary/addentries(from:).md)
+- [func addEntries(from: [AnyHashable : Any])](./addentries%28from%29.md)
   Adds to the receiving dictionary the entries from another dictionary.
 
 

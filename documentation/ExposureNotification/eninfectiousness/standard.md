@@ -1,14 +1,17 @@
 # ENInfectiousness.standard
 
 **Framework**: Exposure Notification  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user is mildly infectious.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
@@ -16,11 +19,16 @@ The user is mildly infectious.
 case standard
 ```
 
+```c
+ENInfectiousnessStandard
+```
+
 ## See Also
 
-- [ENInfectiousness.high](eninfectiousness/high.md)
+### Enumeration Cases
+- [ENInfectiousness.high](./high.md)
   The user is highly infectious.
-- [ENInfectiousness.none](eninfectiousness/none.md)
+- [ENInfectiousness.none](./none.md)
   The user is not infectious.
 
 

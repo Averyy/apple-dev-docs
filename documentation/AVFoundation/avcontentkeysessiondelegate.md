@@ -1,7 +1,8 @@
 # AVContentKeySessionDelegate
 
 **Framework**: AVFoundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that handles content key requests.
 
@@ -20,58 +21,63 @@ A protocol that handles content key requests.
 protocol AVContentKeySessionDelegate : NSObjectProtocol, Sendable
 ```
 
+```objc
+@protocol AVContentKeySessionDelegate <NSObject>
+```
+
 ## Topics
 
 ### Providing new content key requests
-- [func contentKeySession(AVContentKeySession, didProvide: AVContentKeyRequest)](avcontentkeysessiondelegate/contentkeysession(_:didprovide:)-3coq5.md)
+- [func contentKeySession(AVContentKeySession, didProvide: AVContentKeyRequest)](./avcontentkeysessiondelegate/contentkeysession%28_,didprovide%29-3coq5.md)
   Provides the receiver with a new content key request object.
-- [func contentKeySession(AVContentKeySession, didProvideRenewingContentKeyRequest: AVContentKeyRequest)](avcontentkeysessiondelegate/contentkeysession(_:didproviderenewingcontentkeyrequest:).md)
+- [func contentKeySession(AVContentKeySession, didProvideRenewingContentKeyRequest: AVContentKeyRequest)](./avcontentkeysessiondelegate/contentkeysession%28_,didproviderenewingcontentkeyrequest%29.md)
   Provides the receiver with a new content key request object for the renewal of an existing content key.
-- [func contentKeySession(AVContentKeySession, didProvide: AVPersistableContentKeyRequest)](avcontentkeysessiondelegate/contentkeysession(_:didprovide:)-2wdgz.md)
+- [func contentKeySession(AVContentKeySession, didProvide: AVPersistableContentKeyRequest)](./avcontentkeysessiondelegate/contentkeysession%28_,didprovide%29-2wdgz.md)
   Provides the receiver with a new content key request object to process a persistable content key.
 ### Updating and retrying content key requests
-- [func contentKeySession(AVContentKeySession, didProvide: [AVContentKeyRequest], forInitializationData: Data?)](avcontentkeysessiondelegate/contentkeysession(_:didprovide:forinitializationdata:).md)
-- [func contentKeySession(AVContentKeySession, externalProtectionStatusDidChangeFor: AVContentKey)](avcontentkeysessiondelegate/contentkeysession(_:externalprotectionstatusdidchangefor:).md)
+- [func contentKeySession(AVContentKeySession, didProvide: [AVContentKeyRequest], forInitializationData: Data?)](./avcontentkeysessiondelegate/contentkeysession%28_,didprovide,forinitializationdata%29.md)
+- [func contentKeySession(AVContentKeySession, externalProtectionStatusDidChangeFor: AVContentKey)](./avcontentkeysessiondelegate/contentkeysession%28_,externalprotectionstatusdidchangefor%29.md)
   Tells the delegate when external protection state has changed.
-- [func contentKeySession(AVContentKeySession, didUpdatePersistableContentKey: Data, forContentKeyIdentifier: Any)](avcontentkeysessiondelegate/contentkeysession(_:didupdatepersistablecontentkey:forcontentkeyidentifier:).md)
+- [func contentKeySession(AVContentKeySession, didUpdatePersistableContentKey: Data, forContentKeyIdentifier: Any)](./avcontentkeysessiondelegate/contentkeysession%28_,didupdatepersistablecontentkey,forcontentkeyidentifier%29.md)
   Provides the receiver with an updated persistable content key for a specific key request.
-- [func contentKeySession(AVContentKeySession, shouldRetry: AVContentKeyRequest, reason: AVContentKeyRequest.RetryReason) -> Bool](avcontentkeysessiondelegate/contentkeysession(_:shouldretry:reason:).md)
+- [func contentKeySession(AVContentKeySession, shouldRetry: AVContentKeyRequest, reason: AVContentKeyRequest.RetryReason) -> Bool](./avcontentkeysessiondelegate/contentkeysession%28_,shouldretry,reason%29.md)
   Provides the receiver with a content key request object to retry.
-- [AVContentKeyRequest.RetryReason](avcontentkeyrequest/retryreason.md)
+- [AVContentKeyRequest.RetryReason](./avcontentkeyrequest/retryreason.md)
   The reason for asking the client to retry a content key request.
-- [func contentKeySessionContentProtectionSessionIdentifierDidChange(AVContentKeySession)](avcontentkeysessiondelegate/contentkeysessioncontentprotectionsessionidentifierdidchange(_:).md)
+- [func contentKeySessionContentProtectionSessionIdentifierDidChange(AVContentKeySession)](./avcontentkeysessiondelegate/contentkeysessioncontentprotectionsessionidentifierdidchange%28_%29.md)
   Tells the receiver the content protection session identifier changed.
-- [func contentKeySession(AVContentKeySession, contentKeyRequest: AVContentKeyRequest, didFailWithError: any Error)](avcontentkeysessiondelegate/contentkeysession(_:contentkeyrequest:didfailwitherror:).md)
+- [func contentKeySession(AVContentKeySession, contentKeyRequest: AVContentKeyRequest, didFailWithError: any Error)](./avcontentkeysessiondelegate/contentkeysession%28_,contentkeyrequest,didfailwitherror%29.md)
   Tells the receiver that the content key request failed.
-- [func contentKeySession(AVContentKeySession, contentKeyRequestDidSucceed: AVContentKeyRequest)](avcontentkeysessiondelegate/contentkeysession(_:contentkeyrequestdidsucceed:).md)
+- [func contentKeySession(AVContentKeySession, contentKeyRequestDidSucceed: AVContentKeyRequest)](./avcontentkeysessiondelegate/contentkeysession%28_,contentkeyrequestdidsucceed%29.md)
   Tells the content key session that the response to a content key requeset was successfully processed.
-- [func contentKeySessionDidGenerateExpiredSessionReport(AVContentKeySession)](avcontentkeysessiondelegate/contentkeysessiondidgenerateexpiredsessionreport(_:).md)
+- [func contentKeySessionDidGenerateExpiredSessionReport(AVContentKeySession)](./avcontentkeysessiondelegate/contentkeysessiondidgenerateexpiredsessionreport%28_%29.md)
   Notifies the sender that an expired session report has been generated.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVContentKeySession](avcontentkeysession.md)
+### FairPlay streaming
+- [class AVContentKeySession](./avcontentkeysession.md)
   An object that creates and tracks decryption keys for media data.
-- [class AVContentKey](avcontentkey.md)
+- [class AVContentKey](./avcontentkey.md)
   An object that represents the content key decryptor.
-- [class AVContentKeySpecifier](avcontentkeyspecifier.md)
+- [class AVContentKeySpecifier](./avcontentkeyspecifier.md)
   An object that uniquely identifies a content key.
-- [class AVContentKeyRequest](avcontentkeyrequest.md)
+- [class AVContentKeyRequest](./avcontentkeyrequest.md)
   An object that encapsulates information about a content decryption key request issued from a content key session object.
-- [class AVPersistableContentKeyRequest](avpersistablecontentkeyrequest.md)
+- [class AVPersistableContentKeyRequest](./avpersistablecontentkeyrequest.md)
   An object that encapsulates information about a persistable content decryption key request issued from a content key session.
-- [class AVContentKeyResponse](avcontentkeyresponse.md)
+- [class AVContentKeyResponse](./avcontentkeyresponse.md)
   An object that encapsulates information about a response to a content decryption key request.
-- [enum AVExternalContentProtectionStatus](avexternalcontentprotectionstatus.md)
+- [enum AVExternalContentProtectionStatus](./avexternalcontentprotectionstatus.md)
   Constants that specify whether sufficient protection exists to display the content.
-- [func AVSampleBufferAttachContentKey(CMSampleBuffer, AVContentKey, NSErrorPointer) -> Bool](avsamplebufferattachcontentkey(_:_:_:).md)
+- [func AVSampleBufferAttachContentKey(CMSampleBuffer, AVContentKey, NSErrorPointer) -> Bool](./avsamplebufferattachcontentkey%28_,_,_%29.md)
   Attaches a content key to a sample buffer for the purpose of content decryption.
 
 

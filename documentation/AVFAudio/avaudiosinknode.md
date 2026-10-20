@@ -1,7 +1,8 @@
 # AVAudioSinkNode
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that receives audio data.
 
@@ -20,9 +21,13 @@ An object that receives audio data.
 class AVAudioSinkNode
 ```
 
+```objc
+@interface AVAudioSinkNode : AVAudioNode
+```
+
 #### Overview
 
-You use an `AVAudioSinkNode` to receive audio data through [`AVAudioSinkNodeReceiverBlock`](avaudiosinknodereceiverblock.md). You only use it in the input chain.
+You use an `AVAudioSinkNode` to receive audio data through [`AVAudioSinkNodeReceiverBlock`](./avaudiosinknodereceiverblock.md). You only use it in the input chain.
 
 An audio sink node doesn’t support format conversion. When connecting, use the output format of the input for the format for the connection. The format should match the hardware input sample rate.
 
@@ -33,32 +38,33 @@ An audio sink node doesn’t support manual rendering mode, and doesn’t have a
 ## Topics
 
 ### Creating an audio sink node
-- [typealias AVAudioSinkNodeReceiverBlock](avaudiosinknodereceiverblock.md)
+- [typealias AVAudioSinkNodeReceiverBlock](./avaudiosinknodereceiverblock.md)
   A block that receives audio data from an audio sink node.
-- [init(receiverBlock: AVAudioSinkNodeReceiverBlock)](avaudiosinknode/init(receiverblock:).md)
+- [init(receiverBlock: AVAudioSinkNodeReceiverBlock)](./avaudiosinknode/init%28receiverblock%29.md)
   Creates an audio sink node with a block that receives audio data.
 
 ## Relationships
 
 ### Inherits From
-- [AVAudioNode](avaudionode.md)
+- [AVAudioNode](./avaudionode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Building a signal generator](building-a-signal-generator.md)
+### Custom and offline rendering
+- [Building a signal generator](./building-a-signal-generator.md)
   Generate audio signals using an audio source node and a custom render callback.
-- [Performing offline audio processing](performing-offline-audio-processing.md)
+- [Performing offline audio processing](./performing-offline-audio-processing.md)
   Add offline audio processing features to your app by enabling offline manual rendering mode.
-- [class AVAudioSourceNode](avaudiosourcenode.md)
+- [class AVAudioSourceNode](./avaudiosourcenode.md)
   An object that supplies audio data.
 
 

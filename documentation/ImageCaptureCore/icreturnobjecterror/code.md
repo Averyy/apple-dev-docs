@@ -1,14 +1,15 @@
 # ICReturnObjectError.Code
 
 **Framework**: ImageCaptureCore  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -16,40 +17,45 @@
 enum Code
 ```
 
+```c
+enum ICReturnObjectErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [ICReturnObjectError.Code.codeObjectCouldNotBeRead](icreturnobjecterror/code/codeobjectcouldnotberead.md)
+- [ICReturnObjectError.Code.codeObjectCouldNotBeRead](./code/codeobjectcouldnotberead.md)
   The object could not be read.
-- [ICReturnObjectError.Code.codeObjectDataEmpty](icreturnobjecterror/code/codeobjectdataempty.md)
+- [ICReturnObjectError.Code.codeObjectDataEmpty](./code/codeobjectdataempty.md)
   The object data is empty.
-- [ICReturnObjectError.Code.codeObjectDataOffsetInvalid](icreturnobjecterror/code/codeobjectdataoffsetinvalid.md)
+- [ICReturnObjectError.Code.codeObjectDataOffsetInvalid](./code/codeobjectdataoffsetinvalid.md)
   The object data offset is invalid.
-- [ICReturnObjectError.Code.codeObjectDataRequestTooLarge](icreturnobjecterror/code/codeobjectdatarequesttoolarge.md)
-- [ICReturnObjectError.Code.codeObjectDoesNotExist](icreturnobjecterror/code/codeobjectdoesnotexist.md)
+- [ICReturnObjectError.Code.codeObjectDataRequestTooLarge](./code/codeobjectdatarequesttoolarge.md)
+- [ICReturnObjectError.Code.codeObjectDoesNotExist](./code/codeobjectdoesnotexist.md)
   The object does not exist.
 ### Initializers
-- [init?(rawValue: Int)](icreturnobjecterror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static var codeObjectDoesNotExist: ICReturnObjectError.Code](icreturnobjecterror/codeobjectdoesnotexist.md)
+### Error Codes
+- [static var codeObjectDoesNotExist: ICReturnObjectError.Code](./codeobjectdoesnotexist.md)
   The object does not exist.
-- [static var codeObjectDataOffsetInvalid: ICReturnObjectError.Code](icreturnobjecterror/codeobjectdataoffsetinvalid.md)
+- [static var codeObjectDataOffsetInvalid: ICReturnObjectError.Code](./codeobjectdataoffsetinvalid.md)
   The object data offset is invalid.
-- [static var codeObjectCouldNotBeRead: ICReturnObjectError.Code](icreturnobjecterror/codeobjectcouldnotberead.md)
+- [static var codeObjectCouldNotBeRead: ICReturnObjectError.Code](./codeobjectcouldnotberead.md)
   The object could not be read.
-- [static var codeObjectDataEmpty: ICReturnObjectError.Code](icreturnobjecterror/codeobjectdataempty.md)
+- [static var codeObjectDataEmpty: ICReturnObjectError.Code](./codeobjectdataempty.md)
   The object data is empty.
 
 

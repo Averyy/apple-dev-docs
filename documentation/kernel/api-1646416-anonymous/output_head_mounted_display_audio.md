@@ -1,14 +1,15 @@
 # OUTPUT_HEAD_MOUNTED_DISPLAY_AUDIO
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 OUTPUT_HEAD_MOUNTED_DISPLAY_AUDIO = 0x0303
 ```
 

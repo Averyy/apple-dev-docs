@@ -1,7 +1,8 @@
 # SecItemAttr.labelItemAttr
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifies the label attribute.
 
@@ -13,6 +14,10 @@ Identifies the label attribute.
 
 ```swift
 case labelItemAttr
+```
+
+```c
+kSecLabelItemAttr
 ```
 
 #### Discussion

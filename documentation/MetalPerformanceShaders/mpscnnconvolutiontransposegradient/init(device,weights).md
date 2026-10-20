@@ -1,7 +1,8 @@
 # init(device:weights:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, weights: any MPSCNNConvolutionDataSource)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device weights:(id<MPSCNNConvolutionDataSource>) weights;
 ```
 
 

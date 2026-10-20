@@ -1,14 +1,15 @@
 # PE_boot_arg_uint64_eq
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 boolean_t PE_boot_arg_uint64_eq(const char *arg_string, uint64_t value);
 ```
 

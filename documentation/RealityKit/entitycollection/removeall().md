@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Removes all entities from this collection.
@@ -19,6 +20,12 @@ Removes all entities from this collection.
 ```swift
 mutating func removeAll()
 ```
+
+## Default Implementations
+
+### EntityCollection Implementations
+- [func removeAll()](./removeall%28%29-6xkp8.md)
+  Removes all entities from this collection.
 
 
 ---

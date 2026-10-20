@@ -1,7 +1,8 @@
 # shape
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The (simulation) shape of the collider.
 
@@ -24,7 +25,8 @@ The dynamic shape might differ from the static shape in the case of a mesh shape
 
 ## See Also
 
-- [var materialNames: [String]](clothcollidercomponent/materialnames.md)
+### Configuring the collider shape
+- [var materialNames: [String]](./materialnames.md)
   The names of the collider materials used by this collider.
 
 

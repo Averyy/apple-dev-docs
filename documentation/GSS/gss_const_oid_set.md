@@ -1,7 +1,8 @@
 # gss_const_OID_set
 
 **Framework**: GSS  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A pointer to an immutable descriptor manages an array of OID descriptors.
 
@@ -18,21 +19,26 @@ A pointer to an immutable descriptor manages an array of OID descriptors.
 typealias gss_const_OID_set = UnsafePointer<gss_OID_set_desc>
 ```
 
+```c
+typedef const gss_OID_set_desc * gss_const_OID_set;
+```
+
 ## See Also
 
-- [typealias gss_OID](gss_oid.md)
+### Object IDs
+- [typealias gss_OID](./gss_oid.md)
   A pointer to the OID descriptor that exchanges object identifiers with many GSS-API functions.
-- [typealias gss_OID_set](gss_oid_set.md)
+- [typealias gss_OID_set](./gss_oid_set.md)
   A pointer to a descriptor that manages an array of OID descriptors.
-- [typealias gss_OID_desc](gss_oid_desc.md)
+- [typealias gss_OID_desc](./gss_oid_desc.md)
   The OID descriptor that exchanges object identifiers with many GSS-API functions.
-- [typealias gss_const_OID](gss_const_oid.md)
+- [typealias gss_const_OID](./gss_const_oid.md)
   A pointer to an immutable OID descriptor exchanges object identifiers with many GSS-API functions.
-- [struct gss_OID_desc_struct](gss_oid_desc_struct.md)
+- [struct gss_OID_desc_struct](./gss_oid_desc_struct.md)
   The structure for an OID descriptor that exchanges object identifiers with many GSS-API functions.
-- [typealias gss_OID_set_desc](gss_oid_set_desc.md)
+- [typealias gss_OID_set_desc](./gss_oid_set_desc.md)
   The descriptor that manages an array of OID descriptors.
-- [struct gss_OID_set_desc_struct](gss_oid_set_desc_struct.md)
+- [struct gss_OID_set_desc_struct](./gss_oid_set_desc_struct.md)
   The structure for an OID set descriptor that manages an array of OID descriptors.
 
 

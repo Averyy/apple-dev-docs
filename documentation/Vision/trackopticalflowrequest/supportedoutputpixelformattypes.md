@@ -1,7 +1,8 @@
 # supportedOutputPixelFormatTypes
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection of supported pixel format types.
 
@@ -21,11 +22,12 @@ final var supportedOutputPixelFormatTypes: [OSType] { get }
 
 ## See Also
 
-- [var computationAccuracy: TrackOpticalFlowRequest.ComputationAccuracy](trackopticalflowrequest/computationaccuracy-swift.property.md)
+### Configuring a request
+- [var computationAccuracy: TrackOpticalFlowRequest.ComputationAccuracy](./computationaccuracy-swift.property.md)
   The level of accuracy to compute the optical flow.
-- [TrackOpticalFlowRequest.ComputationAccuracy](trackopticalflowrequest/computationaccuracy-swift.enum.md)
+- [TrackOpticalFlowRequest.ComputationAccuracy](./computationaccuracy-swift.enum.md)
   A type that describes the computational accuracy.
-- [var outputPixelFormatType: OSType](trackopticalflowrequest/outputpixelformattype.md)
+- [var outputPixelFormatType: OSType](./outputpixelformattype.md)
   The desired pixel format type of the observation.
 
 

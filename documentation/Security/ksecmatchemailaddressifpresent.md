@@ -1,7 +1,8 @@
 # kSecMatchEmailAddressIfPresent
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a string to match against a certificate or identity’s email address.
 
@@ -20,9 +21,13 @@ A key whose value is a string to match against a certificate or identity’s ema
 let kSecMatchEmailAddressIfPresent: CFString
 ```
 
+```c
+extern CFStringRef const kSecMatchEmailAddressIfPresent;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) and contains an RFC822 email address. If provided, returned certificates or identities are limited to those that either contain the address or do not contain any email address.
+The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md) and contains an RFC822 email address. If provided, returned certificates or identities are limited to those that either contain the address or do not contain any email address.
 
 
 ---

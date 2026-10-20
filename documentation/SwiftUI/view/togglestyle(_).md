@@ -1,7 +1,8 @@
 # toggleStyle(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the style for toggles in a view hierarchy.
 
@@ -27,7 +28,7 @@ A view that uses the specified toggle style for itself and its child views.
 
 #### Discussion
 
-Use this modifier on a [`Toggle`](toggle.md) instance to set a style that defines the control’s appearance and behavior. For example, you can choose the [`switch`](togglestyle/switch.md) style:
+Use this modifier on a [`Toggle`](../toggle.md) instance to set a style that defines the control’s appearance and behavior. For example, you can choose the [`switch`](../togglestyle/switch.md) style:
 
 ```swift
 Toggle("Vibrate on Ring", isOn: $vibrateOnRing)
@@ -38,12 +39,12 @@ Built-in styles typically have a similar appearance across platforms, tailored t
 
 | Platform | Appearance |
 | --- | --- |
-| iOS, iPadOS | ![A screenshot of the text Vibrate on Ring appearing to the left of a toggle switch that’s on. The toggle’s tint color is green. The toggle and its text appear in a rounded rectangle.](/images/com.apple.SwiftUI/View-toggleStyle-1-iOS@2x.png) |
-| macOS | ![A screenshot of the text Vibrate on Ring appearing to the left of a toggle switch that’s on. The toggle’s tint color is blue. The toggle and its text appear on a neutral background.](/images/com.apple.SwiftUI/View-toggleStyle-1-macOS@2x.png) |
+| iOS, iPadOS | ![A screenshot of the text Vibrate on Ring appearing to the left of a toggle switch that’s on. The toggle’s tint color is green. The toggle and its text appear in a rounded rectangle.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-toggleStyle-1-iOS@2x.png) |
+| macOS | ![A screenshot of the text Vibrate on Ring appearing to the left of a toggle switch that’s on. The toggle’s tint color is blue. The toggle and its text appear on a neutral background.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-toggleStyle-1-macOS@2x.png) |
 
-##### Styling Toggles in a Hierarchy
+##### Styling toggles in a hierarchy
 
-You can set a style for all toggle instances within a view hierarchy by applying the style modifier to a container view. For example, you can apply the [`button`](togglestyle/button.md) style to an [`HStack`](hstack.md):
+You can set a style for all toggle instances within a view hierarchy by applying the style modifier to a container view. For example, you can apply the [`button`](../togglestyle/button.md) style to an [`HStack`](../hstack.md):
 
 ```swift
 HStack {
@@ -61,12 +62,12 @@ The example above has the following appearance when `isFlagged` is `true` and `i
 
 | Platform | Appearance |
 | --- | --- |
-| iOS, iPadOS | ![A screenshot of two buttons arranged horizontally. The first has the image of a flag and is active with a blue tint. The second has an image of a speaker with a line through it and is inactive with a neutral tint.](/images/com.apple.SwiftUI/View-toggleStyle-2-iOS@2x.png) |
-| macOS | ![A screenshot of two buttons arranged horizontally. The first has the image of a flag and is active with a blue tint. The second has an image of a speaker with a line through it and is inactive with a neutral tint.](/images/com.apple.SwiftUI/View-toggleStyle-2-macOS@2x.png) |
+| iOS, iPadOS | ![A screenshot of two buttons arranged horizontally. The first has the image of a flag and is active with a blue tint. The second has an image of a speaker with a line through it and is inactive with a neutral tint.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-toggleStyle-2-iOS@2x.png) |
+| macOS | ![A screenshot of two buttons arranged horizontally. The first has the image of a flag and is active with a blue tint. The second has an image of a speaker with a line through it and is inactive with a neutral tint.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-toggleStyle-2-macOS@2x.png) |
 
-##### Automatic Styling
+##### Automatic styling
 
-If you don’t set a style, SwiftUI assumes a value of [`automatic`](togglestyle/automatic.md), which corresponds to a context-specific default. Specify the automatic style explicitly to override a container’s style and revert to the default:
+If you don’t set a style, SwiftUI assumes a value of [`automatic`](../togglestyle/automatic.md), which corresponds to a context-specific default. Specify the automatic style explicitly to override a container’s style and revert to the default:
 
 ```swift
 HStack {
@@ -86,28 +87,29 @@ HStack {
 .labelStyle(.iconOnly) // Omit the title from any labels.
 ```
 
-The style that SwiftUI uses as the default depends on both the platform and the context. In macOS, the default in most contexts is a [`checkbox`](togglestyle/checkbox.md), while in iOS, the default toggle style is a [`switch`](togglestyle/switch.md):
+The style that SwiftUI uses as the default depends on both the platform and the context. In macOS, the default in most contexts is a [`checkbox`](../togglestyle/checkbox.md), while in iOS, the default toggle style is a [`switch`](../togglestyle/switch.md):
 
 | Platform | Appearance |
 | --- | --- |
-| iOS, iPadOS | ![A screenshot of several horizontally arranged items: two buttons, a vertical divider line, the text Enhance sound, and a switch. The first button has two right facing arrows that cross over in the middle and is active with a blue tint. The second button has one right and one left facing arrow and is inactive with neutral tint. The switch is on and has a green tint.](/images/com.apple.SwiftUI/View-toggleStyle-3-iOS@2x.png) |
-| macOS | ![A screenshot of several horizontally arranged items: two buttons, a vertical divider line, a checkbox, and the text Enhance sound. The first button has two right facing arrows that cross over in the middle and is active with a blue tint. The second button has one right and one left facing arrow and is inactive with a neutral tint. The check box is checked and has a blue tint.](/images/com.apple.SwiftUI/View-toggleStyle-3-macOS@2x.png) |
+| iOS, iPadOS | ![A screenshot of several horizontally arranged items: two buttons, a vertical divider line, the text Enhance sound, and a switch. The first button has two right facing arrows that cross over in the middle and is active with a blue tint. The second button has one right and one left facing arrow and is inactive with neutral tint. The switch is on and has a green tint.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-toggleStyle-3-iOS@2x.png) |
+| macOS | ![A screenshot of several horizontally arranged items: two buttons, a vertical divider line, a checkbox, and the text Enhance sound. The first button has two right facing arrows that cross over in the middle and is active with a blue tint. The second button has one right and one left facing arrow and is inactive with a neutral tint. The check box is checked and has a blue tint.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-toggleStyle-3-macOS@2x.png) |
 
-> **Note**: Like toggle style does for toggles, the [`labelStyle(_:)`](view/labelstyle(_:).md) modifier sets the style for [`Label`](label.md) instances in the hierarchy. The example above demostrates the compact [`iconOnly`](labelstyle/icononly.md) style, which is useful for button toggles in space-constrained contexts. Always include a descriptive title for better accessibility.
+> **Note**: Like toggle style does for toggles, the [`labelStyle(_:)`](./labelstyle%28_%29.md) modifier sets the style for [`Label`](../label.md) instances in the hierarchy. The example above demostrates the compact [`iconOnly`](../labelstyle/icononly.md) style, which is useful for button toggles in space-constrained contexts. Always include a descriptive title for better accessibility.
 
-For more information about how SwiftUI chooses a default toggle style, see the [`automatic`](togglestyle/automatic.md) style.
+For more information about how SwiftUI chooses a default toggle style, see the [`automatic`](../togglestyle/automatic.md) style.
 
 ## Parameters
 
-- `style`: The toggle style to set. Use one of the built-in values, like [`switch`](togglestyle/switch.md) or [`button`](togglestyle/button.md), or a custom style that you define by creating a type that conforms to the [`ToggleStyle`](togglestyle.md) protocol.
+- `style`: The toggle style to set. Use one of the built-in values, like [`switch`](../togglestyle/switch.md) or [`button`](../togglestyle/button.md), or a custom style that you define by creating a type that conforms to the [`ToggleStyle`](../togglestyle.md) protocol.
 
 ## See Also
 
-- [struct Slider](slider.md)
+### Getting numeric inputs
+- [struct Slider](../slider.md)
   A control for selecting a value from a bounded linear range of values.
-- [struct Stepper](stepper.md)
+- [struct Stepper](../stepper.md)
   A control that performs increment and decrement actions.
-- [struct Toggle](toggle.md)
+- [struct Toggle](../toggle.md)
   A control that toggles between on and off states.
 
 

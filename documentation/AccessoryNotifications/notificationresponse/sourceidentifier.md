@@ -1,7 +1,8 @@
 # sourceIdentifier
 
 **Framework**: Accessory Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A bundle identifier for the app that sent the notification.
 
@@ -20,7 +21,8 @@ For example, if Messages sends the notification, this value is `com.apple.Mobile
 
 ## See Also
 
-- [var notificationIdentifier: String](notificationresponse/notificationidentifier.md)
+### Identifying the notification
+- [var notificationIdentifier: String](./notificationidentifier.md)
   An identifier for the notification.
 
 

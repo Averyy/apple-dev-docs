@@ -1,7 +1,8 @@
 # SetControlValue
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the current control value.
 
@@ -10,7 +11,7 @@ Sets the current control value.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetControlValue(bool in_control_value);
 ```
 
@@ -24,7 +25,8 @@ Changing the control value will send a notification to the host to update the ob
 
 ## See Also
 
-- [GetControlValue](iouservideobooleancontrol/getcontrolvalue.md)
+### Accessing the value
+- [GetControlValue](./getcontrolvalue.md)
   Gets the current value of the control.
 
 

@@ -1,28 +1,30 @@
 # OSDictionarySetUInt64Value
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 void OSDictionarySetUInt64Value(OSDictionaryPtr obj, const char *key, uint64_t value);
 ```
 
 ## See Also
 
-- [OSDictionaryGetValue](osdictionarygetvalue.md)
-- [OSDictionaryGetStringValue](osdictionarygetstringvalue.md)
-- [OSDictionaryGetUInt64Value](osdictionarygetuint64value.md)
-- [OSDictionarySetValue](osdictionarysetvalue.md)
-- [OSDictionarySetStringValue](osdictionarysetstringvalue.md)
-- [OSDictionaryPtr](osdictionaryptr.md)
+### Getting and Setting Values
+- [OSDictionaryGetValue](./osdictionarygetvalue.md)
+- [OSDictionaryGetStringValue](./osdictionarygetstringvalue.md)
+- [OSDictionaryGetUInt64Value](./osdictionarygetuint64value.md)
+- [OSDictionarySetValue](./osdictionarysetvalue.md)
+- [OSDictionarySetStringValue](./osdictionarysetstringvalue.md)
+- [OSDictionaryPtr](./osdictionaryptr.md)
 
 
 ---

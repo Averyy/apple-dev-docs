@@ -1,7 +1,8 @@
 # handshakeDuration
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration of the protocol handshake.
 
@@ -22,7 +23,8 @@ let handshakeDuration: TimeInterval
 
 ## See Also
 
-- [let handshakeRTT: TimeInterval](nwconnection/establishmentreport/handshake/handshakertt.md)
+### Measuring Performance
+- [let handshakeRTT: TimeInterval](./handshakertt.md)
   The round-trip time the protocol observed during its handshake.
 
 

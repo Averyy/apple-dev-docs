@@ -1,7 +1,8 @@
 # VTSessionCopySerializableProperties(_:allocator:dictionaryOut:)
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves the set of serializable property keys and their current values.
 
@@ -19,6 +20,10 @@ Retrieves the set of serializable property keys and their current values.
 func VTSessionCopySerializableProperties(_ session: VTSession, allocator: CFAllocator?, dictionaryOut: UnsafeMutablePointer<CFDictionary?>) -> OSStatus
 ```
 
+```c
+extern OSStatus VTSessionCopySerializableProperties(VTSessionRef session, CFAllocatorRef allocator, CFDictionaryRef*dictionaryOut);
+```
+
 #### Discussion
 
 The serializable properties are those which can be saved and applied to a different session. The caller must release the returned dictionary.
@@ -31,11 +36,12 @@ The serializable properties are those which can be saved and applied to a differ
 
 ## See Also
 
-- [func VTSessionCopyProperty(VTSession, key: CFString, allocator: CFAllocator?, valueOut: UnsafeMutableRawPointer?) -> OSStatus](vtsessioncopyproperty(_:key:allocator:valueout:).md)
+### Getting Properties
+- [func VTSessionCopyProperty(VTSession, key: CFString, allocator: CFAllocator?, valueOut: UnsafeMutableRawPointer?) -> OSStatus](./vtsessioncopyproperty%28_,key,allocator,valueout%29.md)
   Retrieves a property on a Video Toolbox session.
-- [func VTSessionCopySupportedPropertyDictionary(VTSession, supportedPropertyDictionaryOut: UnsafeMutablePointer<CFDictionary?>) -> OSStatus](vtsessioncopysupportedpropertydictionary(_:supportedpropertydictionaryout:).md)
+- [func VTSessionCopySupportedPropertyDictionary(VTSession, supportedPropertyDictionaryOut: UnsafeMutablePointer<CFDictionary?>) -> OSStatus](./vtsessioncopysupportedpropertydictionary%28_,supportedpropertydictionaryout%29.md)
   Retrieves a dictionary enumerating all the supported properties of a video toolbox session.
-- [Supported Property Dictionary Constants](supported-dictionary-constants.md)
+- [Supported Property Dictionary Constants](./supported-dictionary-constants.md)
   Property dictionary key and constant values.
 
 

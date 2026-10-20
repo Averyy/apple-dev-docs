@@ -1,7 +1,8 @@
 # masteringDisplayColorVolume
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Mastering display color volume of the image.
 

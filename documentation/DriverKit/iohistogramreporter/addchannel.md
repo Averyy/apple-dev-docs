@@ -1,25 +1,27 @@
 # addChannel
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 IOReturn addChannel(uint64_t channelID, const char *channelName);
 ```
 
 ## See Also
 
-- [initWith](iohistogramreporter/initwith.md)
-- [overrideBucketValues](iohistogramreporter/overridebucketvalues.md)
-- [tallyValue](iohistogramreporter/tallyvalue.md)
+### Instance Methods
+- [initWith](./initwith.md)
+- [overrideBucketValues](./overridebucketvalues.md)
+- [tallyValue](./tallyvalue.md)
 
 
 ---

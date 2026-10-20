@@ -1,7 +1,8 @@
 # error
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying error present when the metrics are invalid.
 
@@ -16,7 +17,8 @@ var error: (any Error)? { get }
 
 ## See Also
 
-- [var isValid: Bool](mlobjectdetectormetrics/isvalid.md)
+### Handling errors
+- [var isValid: Bool](./isvalid.md)
   A Boolean value indicating whether the object detector model was able to calculate metrics.
 
 

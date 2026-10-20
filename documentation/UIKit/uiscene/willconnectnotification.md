@@ -1,7 +1,8 @@
 # willConnectNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that indicates that UIKit added a scene to your app.
 
@@ -19,27 +20,32 @@ nonisolated
 class let willConnectNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UISceneWillConnectNotification;
+```
+
 ## Mentions
 
-- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
+- [Presenting content on a connected display](../presenting-content-on-a-connected-display.md)
 
 #### Discussion
 
-When the user or your app requests a new instance of your user interface, UIKit creates an appropriate [`UIScene`](uiscene.md) object and places it in the [`object`](https://developer.apple.com/documentation/foundation/nsnotification/object) property of the notification. Use this notification to respond to the addition of the new scene and to begin loading any data that the scene needs to display.
+When the user or your app requests a new instance of your user interface, UIKit creates an appropriate [`UIScene`](../uiscene.md) object and places it in the [`object`](../../Foundation/nsnotification/object.md) property of the notification. Use this notification to respond to the addition of the new scene and to begin loading any data that the scene needs to display.
 
-UIKit also calls the [`scene(_:willConnectTo:options:)`](uiscenedelegate/scene(_:willconnectto:options:).md) method of your scene delegate object.
+UIKit also calls the [`scene(_:willConnectTo:options:)`](../uiscenedelegate/scene%28_,willconnectto,options%29.md) method of your scene delegate object.
 
 ## See Also
 
-- [class let didDisconnectNotification: NSNotification.Name](uiscene/diddisconnectnotification.md)
+### Responding to life cycle notifications
+- [class let didDisconnectNotification: NSNotification.Name](./diddisconnectnotification.md)
   A notification that indicates that UIKit removed a scene from your app.
-- [class let willEnterForegroundNotification: NSNotification.Name](uiscene/willenterforegroundnotification.md)
+- [class let willEnterForegroundNotification: NSNotification.Name](./willenterforegroundnotification.md)
   A notification that indicates that a scene is about to begin running in the foreground and become visible to the user.
-- [class let didActivateNotification: NSNotification.Name](uiscene/didactivatenotification.md)
+- [class let didActivateNotification: NSNotification.Name](./didactivatenotification.md)
   A notification that indicates that the scene is now onscreen and responding to user events.
-- [class let willDeactivateNotification: NSNotification.Name](uiscene/willdeactivatenotification.md)
+- [class let willDeactivateNotification: NSNotification.Name](./willdeactivatenotification.md)
   A notification that indicates that the scene is about to resign the active state and stop responding to user events.
-- [class let didEnterBackgroundNotification: NSNotification.Name](uiscene/didenterbackgroundnotification.md)
+- [class let didEnterBackgroundNotification: NSNotification.Name](./didenterbackgroundnotification.md)
   A notification that indicates that the scene is running in the background and is no longer onscreen.
 
 

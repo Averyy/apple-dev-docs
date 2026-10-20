@@ -1,25 +1,27 @@
 # free
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
 ## See Also
 
-- [addLegendEntry](ioreportlegend/addlegendentry.md)
-- [addReporterLegend](ioreportlegend/addreporterlegend-c.method.md)
-- [getLegend](ioreportlegend/getlegend.md)
+### Instance Methods
+- [addLegendEntry](./addlegendentry.md)
+- [addReporterLegend](./addreporterlegend-c.method.md)
+- [getLegend](./getlegend.md)
 
 
 ---

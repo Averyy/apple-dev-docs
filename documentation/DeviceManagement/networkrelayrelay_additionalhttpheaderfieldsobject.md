@@ -1,7 +1,8 @@
 # NetworkRelayRelay_AdditionalHTTPHeaderFieldsObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A dictionary that contains custom HTTP header keys and values to add to each request. The dictionary key name represents the HTTP header field name to use, and the dictionary value is the string to use as the HTTP header field value.
 
@@ -14,7 +15,7 @@ A dictionary that contains custom HTTP header keys and values to add to each req
 
 ## Declaration
 
-```swift
+```
 object NetworkRelayRelay_AdditionalHTTPHeaderFieldsObject
 ```
 

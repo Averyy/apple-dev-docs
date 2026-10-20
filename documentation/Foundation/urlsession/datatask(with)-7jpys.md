@@ -1,7 +1,8 @@
 # dataTask(with:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a task that retrieves the contents of a URL based on the specified URL request object.
 
@@ -20,6 +21,10 @@ Creates a task that retrieves the contents of a URL based on the specified URL r
 func dataTask(with request: URLRequest) -> URLSessionDataTask
 ```
 
+```objc
+- (NSURLSessionDataTask *) dataTaskWithRequest:(NSURLRequest *) request;
+```
+
 #### Return Value
 
 The new session data task.
@@ -28,7 +33,7 @@ The new session data task.
 
 By creating a task based on a request object, you can tune various aspects of the task’s behavior, including the cache policy and timeout interval.
 
-After you create the task, you must start it by calling its [`resume()`](urlsessiontask/resume().md) method.
+After you create the task, you must start it by calling its [`resume()`](../urlsessiontask/resume%28%29.md) method.
 
 ## Parameters
 
@@ -36,15 +41,16 @@ After you create the task, you must start it by calling its [`resume()`](urlsess
 
 ## See Also
 
-- [func dataTask(with: URL) -> URLSessionDataTask](urlsession/datatask(with:)-10dy7.md)
+### Adding data tasks to a session
+- [func dataTask(with: URL) -> URLSessionDataTask](./datatask%28with%29-10dy7.md)
   Creates a task that retrieves the contents of the specified URL.
-- [func dataTask(with: URL, completionHandler: (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionDataTask](urlsession/datatask(with:completionhandler:)-52wk8.md)
+- [func dataTask(with: URL, completionHandler: (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionDataTask](./datatask%28with,completionhandler%29-52wk8.md)
   Creates a task that retrieves the contents of the specified URL, then calls a handler upon completion.
-- [func dataTask(with: URLRequest, completionHandler: (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionDataTask](urlsession/datatask(with:completionhandler:)-e6xv.md)
+- [func dataTask(with: URLRequest, completionHandler: (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionDataTask](./datatask%28with,completionhandler%29-e6xv.md)
   Creates a task that retrieves the contents of a URL based on the specified URL request object, and calls a handler upon completion.
-- [class URLSessionDataTask](urlsessiondatatask.md)
+- [class URLSessionDataTask](../urlsessiondatatask.md)
   A URL session task that returns downloaded data directly to the app in memory.
-- [protocol URLSessionDataDelegate](urlsessiondatadelegate.md)
+- [protocol URLSessionDataDelegate](../urlsessiondatadelegate.md)
   A protocol that defines methods that URL session instances call on their delegates to handle task-level events specific to data and upload tasks.
 
 

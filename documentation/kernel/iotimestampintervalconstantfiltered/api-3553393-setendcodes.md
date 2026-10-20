@@ -1,14 +1,15 @@
 # setEndCodes
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void setEndCodes(uintptr_t arg1, uintptr_t arg2, uintptr_t arg3, uintptr_t arg4);
 ```
 

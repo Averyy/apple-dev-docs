@@ -1,22 +1,27 @@
 # MPSCopyAllocator
 
 **Framework**: Metal Performance Shaders  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A block to make a copy of a source texture for filters that can only execute out of place.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 typealias MPSCopyAllocator = (MPSKernel, any MTLCommandBuffer, any MTLTexture) -> any MTLTexture
+```
+
+```c
+typedef id<MTLTexture> (^)(MPSKernel *, id<MTLCommandBuffer>, id<MTLTexture>) MPSCopyAllocator;
 ```
 
 #### Discussion
@@ -33,7 +38,7 @@ Allocating a new texture each time is slow (they take up to 1 ms each). You can 
 
 If there is any metadata associated with the source texture, such as colorspace information, resource label, CPU cache mode, purgeable state, etc., it may need to be similarly associated with the new texture to avoid losing your metadata.
 
-If the kernel’s [`clipRect`](mpsunaryimagekernel/cliprect.md) property doesn’t cover the entire image, you may need to copy pixels from the source texture to the new texture, or regions of the next texture will be uninitialized. You can make a command encoder to encode work on the command buffer here, if necessary. It will be scheduled to run immediately before the kernel work. You may call any of the [`enqueue()`](https://developer.apple.com/documentation/metal/mtlcommandbuffer/enqueue()), [`commit()`](https://developer.apple.com/documentation/metal/mtlcommandbuffer/commit()), [`waitUntilCompleted()`](https://developer.apple.com/documentation/metal/mtlcommandbuffer/waituntilcompleted()), or [`waitUntilScheduled()`](https://developer.apple.com/documentation/metal/mtlcommandbuffer/waituntilscheduled()) methods inside the copy allocator block. Make sure to call [`endEncoding()`](https://developer.apple.com/documentation/metal/mtlcommandencoder/endencoding()) on the command encoder so that the command buffer has no active encoder before returning.
+If the kernel’s [`clipRect`](./mpsunaryimagekernel/cliprect.md) property doesn’t cover the entire image, you may need to copy pixels from the source texture to the new texture, or regions of the next texture will be uninitialized. You can make a command encoder to encode work on the command buffer here, if necessary. It will be scheduled to run immediately before the kernel work. You may call any of the [`enqueue()`](../Metal/mtlcommandbuffer/enqueue%28%29.md), [`commit()`](../Metal/mtlcommandbuffer/commit%28%29.md), [`waitUntilCompleted()`](../Metal/mtlcommandbuffer/waituntilcompleted%28%29.md), or [`waitUntilScheduled()`](../Metal/mtlcommandbuffer/waituntilscheduled%28%29.md) methods inside the copy allocator block. Make sure to call [`endEncoding()`](../Metal/mtlcommandencoder/endencoding%28%29.md) on the command encoder so that the command buffer has no active encoder before returning.
 
 > **Note**:  The next command placed on the command buffer after the copy allocator returns is almost assuredly going to be encoded with a compute command encoder. Creating any other type of encoder in the copy allocator will probably cost an additional 0.5 ms of both CPU *and* GPU time (or more!) due to a double mode switch penalty.
 
@@ -76,12 +81,13 @@ MPSCopyAllocator myAllocator = ^id <MTLTexture>(MPSKernel * __nonnull filter, __
 
 ## See Also
 
-- [func encode(commandBuffer: any MTLCommandBuffer, inPlaceTexture: UnsafeMutablePointer<any MTLTexture>, fallbackCopyAllocator: MPSCopyAllocator?) -> Bool](mpsunaryimagekernel/encode(commandbuffer:inplacetexture:fallbackcopyallocator:).md)
+### Methods
+- [func encode(commandBuffer: any MTLCommandBuffer, inPlaceTexture: UnsafeMutablePointer<any MTLTexture>, fallbackCopyAllocator: MPSCopyAllocator?) -> Bool](./mpsunaryimagekernel/encode%28commandbuffer,inplacetexture,fallbackcopyallocator%29.md)
   This method attempts to apply a kernel in place on a texture.
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceImage: MPSImage, destinationImage: MPSImage)](mpsunaryimagekernel/encode(commandbuffer:sourceimage:destinationimage:).md)
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceTexture: any MTLTexture, destinationTexture: any MTLTexture)](mpsunaryimagekernel/encode(commandbuffer:sourcetexture:destinationtexture:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceImage: MPSImage, destinationImage: MPSImage)](./mpsunaryimagekernel/encode%28commandbuffer,sourceimage,destinationimage%29.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceTexture: any MTLTexture, destinationTexture: any MTLTexture)](./mpsunaryimagekernel/encode%28commandbuffer,sourcetexture,destinationtexture%29.md)
   Encodes a kernel into a command buffer, out of place.
-- [func sourceRegion(destinationSize: MTLSize) -> MPSRegion](mpsunaryimagekernel/sourceregion(destinationsize:).md)
+- [func sourceRegion(destinationSize: MTLSize) -> MPSRegion](./mpsunaryimagekernel/sourceregion%28destinationsize%29.md)
   Determines the region of the source texture that will be read for an encode operation.
 
 

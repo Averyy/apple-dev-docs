@@ -1,7 +1,8 @@
 # performAll(_:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Schedules a collection of framework requests to perform on the handler’s image.
 
@@ -26,9 +27,10 @@ final func performAll(_ requests: some Collection<any TargetedRequest>) -> some 
 
 ## See Also
 
-- [func perform<each T>(repeat each T) async throws -> (repeat (each T).Result)](targetedimagerequesthandler/perform(_:)-1i4di.md)
+### Performing the request
+- [func perform<each T>(repeat each T) async throws -> (repeat (each T).Result)](./perform%28_%29-1i4di.md)
   Performs one or more framework requests on the handler’s image.
-- [func perform<T>(T) async throws -> T.Result](targetedimagerequesthandler/perform(_:)-2r0k8.md)
+- [func perform<T>(T) async throws -> T.Result](./perform%28_%29-2r0k8.md)
   Performs a framework request on the handler’s image.
 
 

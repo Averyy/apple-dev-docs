@@ -1,7 +1,8 @@
 # launchApp(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func launchApp(completion: @escaping @Sendable (MTRApplicationLauncherClusterLauncherResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func launchApp() async throws -> MTRApplicationLauncherClusterLauncherResponseParams
+```
+
+```objc
+- (void) launchAppWithCompletion:(void (^)(MTRApplicationLauncherClusterLauncherResponseParams *data, NSError *error)) completion;
 ```
 
 

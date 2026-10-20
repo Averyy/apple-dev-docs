@@ -1,17 +1,19 @@
 # DarwinNotify Data Types
 
-**Framework**: Darwin Notify
+**Framework**: Darwin Notify  
+**Role**: API Collection
 
 ## Topics
 
 ### Data Types
-- [typealias notify_handler_t](notify_handler_t.md)
+- [typealias notify_handler_t](./notify_handler_t.md)
 
 ## See Also
 
-- [Darwin Notification API](darwin-notification-api.md)
-- [DarwinNotify Functions](darwinnotify-functions.md)
-- [DarwinNotify Macros](darwinnotify-macros.md)
+### Reference
+- [Darwin Notification API](./darwin-notification-api.md)
+- [DarwinNotify Functions](./darwinnotify-functions.md)
+- [DarwinNotify Macros](./darwinnotify-macros.md)
 
 
 ---

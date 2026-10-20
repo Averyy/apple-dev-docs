@@ -1,7 +1,8 @@
 # index(of:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finds the index of the specified item in the section snapshot.
 
@@ -10,7 +11,7 @@ Finds the index of the specified item in the section snapshot.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,14 @@ func index(of item: ItemIdentifierType) -> Int?
 
 ## See Also
 
-- [func level(of: ItemIdentifierType) -> Int](nsdiffabledatasourcesectionsnapshot-swift.struct/level(of:).md)
+### Getting item metrics
+- [func level(of: ItemIdentifierType) -> Int](./level%28of%29.md)
   Finds the hierarchical level of the specified item in the section snapshot.
-- [func parent(of: ItemIdentifierType) -> ItemIdentifierType?](nsdiffabledatasourcesectionsnapshot-swift.struct/parent(of:).md)
+- [func parent(of: ItemIdentifierType) -> ItemIdentifierType?](./parent%28of%29.md)
   Finds the parent item of the specified item in the section snapshot.
-- [func contains(ItemIdentifierType) -> Bool](nsdiffabledatasourcesectionsnapshot-swift.struct/contains(_:).md)
+- [func contains(ItemIdentifierType) -> Bool](./contains%28_%29.md)
   Indicates whether the section snapshot contains the specified item.
-- [func isVisible(ItemIdentifierType) -> Bool](nsdiffabledatasourcesectionsnapshot-swift.struct/isvisible(_:).md)
+- [func isVisible(ItemIdentifierType) -> Bool](./isvisible%28_%29.md)
   Indicates whether the specified item is currently visible onscreen.
 
 

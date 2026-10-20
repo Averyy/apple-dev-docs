@@ -1,7 +1,8 @@
 # start(queue:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Joins the group, registers to receive messages, and sets the queue on you handle group events.
 
@@ -22,11 +23,12 @@ final func start(queue: DispatchQueue)
 
 ## See Also
 
-- [init(with: any NWGroupDescriptor, using: NWParameters)](nwconnectiongroup/init(with:using:).md)
+### Establishing Group Connectivity
+- [init(with: any NWGroupDescriptor, using: NWParameters)](./init%28with,using%29.md)
   Initializes a new connection group with a group identifier.
-- [class NWMulticastGroup](nwmulticastgroup.md)
+- [class NWMulticastGroup](../nwmulticastgroup.md)
   A descriptor for a group you use to join an IP multicast group on a local network.
-- [protocol NWGroupDescriptor](nwgroupdescriptor.md)
+- [protocol NWGroupDescriptor](../nwgroupdescriptor.md)
   A protocol that defines a group of endpoints with which you can communicate, such as a multicast group.
 
 

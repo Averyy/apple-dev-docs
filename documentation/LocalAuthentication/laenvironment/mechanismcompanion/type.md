@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Type of the companion.
 
@@ -17,6 +18,10 @@ Type of the companion.
 
 ```swift
 var type: LACompanionType { get }
+```
+
+```objc
+@property (nonatomic, readonly) LACompanionType type;
 ```
 
 

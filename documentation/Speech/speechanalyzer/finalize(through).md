@@ -1,7 +1,8 @@
 # finalize(through:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finalizes the modules’ analyses.
 
@@ -21,19 +22,22 @@ final func finalize(through: CMTime?) async throws
 
 #### Discussion
 
-At the return of this method, input up to and including the given time will have been analyzed. Modules will have published the finalized results to their stream, but the application may not have consumed them from the results stream yet. [`volatileRange`](speechanalyzer/volatilerange.md) will post-date the given time.
+At the return of this method, input up to and including the given time will have been analyzed. Modules will have published the finalized results to their stream, but the application may not have consumed them from the results stream yet. [`volatileRange`](./volatilerange.md) will post-date the given time.
 
 If the given time has already been finalized (it pre-dates the volatile range), then this method does nothing.
 
-> **Note**: Various errors including `CancellationError` if analysis is finished early before the given input time
+> **Throws**: Various errors including `CancellationError` if analysis is finished early before the given input time
 
 ## Parameters
 
-- `through`:  Finalizes up to and including the given time-code. If the analyzer hasn’t already consumed that audio from the input sequence, the method waits until the analyzer consumes that audio before finalizing. If `nil`, finalizes up to and including the last audio the analyzer *has* consumed from the input sequence, and if the analyzer has not consumed any audio from the input sequence, this method does nothing.
+- `through`:  Finalizes up to and including the given time-code. If the analyzer hasn’t already consumed that audio from the input sequence, the method waits until the analyzer consumes that audio before finalizing.
+
+  If `nil`, finalizes up to and including the last audio the analyzer *has* consumed from the input sequence, and if the analyzer has not consumed any audio from the input sequence, this method does nothing.
 
 ## See Also
 
-- [func cancelAnalysis(before: CMTime)](speechanalyzer/cancelanalysis(before:).md)
+### Finalizing and cancelling results
+- [func cancelAnalysis(before: CMTime)](./cancelanalysis%28before%29.md)
   Stops analyzing audio predating the given time.
 
 

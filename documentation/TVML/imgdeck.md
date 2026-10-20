@@ -19,41 +19,42 @@ The `imgDeck` contains a set of `img` elements—images that are part of the rel
 </relatedContent>
 ```
 
-##### Subelements of Imgdeck
+##### Subelements of imgDeck
 
-- [`img`](img.md)
+- [img](./img.md)
 
-##### Elements That Use Imgdeck
+##### Elements that Use imgDeck
 
-- [`relatedContent`](relatedcontent.md)
+- [relatedContent](./relatedcontent.md)
 
 ## Topics
 
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [carousel](carousel.md)
+### Container Elements
+- [carousel](./carousel.md)
   Arranges images in a row.
-- [grid](grid.md)
+- [grid](./grid.md)
   Arranges elements in a grid pattern.
-- [infoTable](infotable.md)
+- [infoTable](./infotable.md)
   Displays contained element information in a vertical format, with each successive element directly below the previous element.
-- [organizer](organizer.md)
+- [organizer](./organizer.md)
   Creates a generic element with its contained elements arranged through TVML styles.
-- [row](row.md)
+- [row](./row.md)
   Displays elements horizontally.
-- [section](section.md)
+- [section](./section.md)
   Combines elements and acts as a single element.
-- [stack](stack.md)
+- [stack](./stack.md)
   Groups and lays out elements vertically.
-- [shelf](shelf.md)
+- [shelf](./shelf.md)
   Displays elements horizontally and adds the ability to scroll to offscreen elements.
 
 

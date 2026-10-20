@@ -1,7 +1,8 @@
 # replaceSubrange(_:copying:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the specified subrange of elements by copying the elements of the given span.
 
@@ -30,7 +31,7 @@ If you pass a zero-length range as the `subrange` parameter, this method inserts
 
 Likewise, if you pass a zero-length span as the `newElements` parameter, this method removes the elements in the given subrange without replacement. Calling the `removeSubrange(_:)` method instead is preferred in this case.
 
-> **Note**: O(*n* + *m*), where *n* is count of this array and *m* is the count of `newElements`.
+> **Complexity**: O(*n* + *m*), where *n* is count of this array and *m* is the count of `newElements`.
 
 ## Parameters
 

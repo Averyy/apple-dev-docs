@@ -1,7 +1,8 @@
 # prefix(while:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -20,13 +21,14 @@ func prefix(while predicate: (Output) -> Bool) -> Optional<Output>.Publisher
 
 ## See Also
 
-- [func dropFirst(Int) -> Optional<Output>.Publisher](just/dropfirst(_:).md)
-- [func drop(while: (Output) -> Bool) -> Optional<Output>.Publisher](just/drop(while:).md)
-- [func append(Output...) -> Publishers.Sequence<[Output], Just<Output>.Failure>](just/append(_:)-7eyqj.md)
-- [func append<S>(S) -> Publishers.Sequence<[Output], Just<Output>.Failure>](just/append(_:)-7sxlu.md)
-- [func prepend<S>(S) -> Publishers.Sequence<[Output], Just<Output>.Failure>](just/prepend(_:)-39e57.md)
-- [func prepend(Output...) -> Publishers.Sequence<[Output], Just<Output>.Failure>](just/prepend(_:)-7fg73.md)
-- [func prefix(Int) -> Optional<Output>.Publisher](just/prefix(_:).md)
+### Applying sequence operations to elements
+- [func dropFirst(Int) -> Optional<Output>.Publisher](./dropfirst%28_%29.md)
+- [func drop(while: (Output) -> Bool) -> Optional<Output>.Publisher](./drop%28while%29.md)
+- [func append(Output...) -> Publishers.Sequence<[Output], Just<Output>.Failure>](./append%28_%29-7eyqj.md)
+- [func append<S>(S) -> Publishers.Sequence<[Output], Just<Output>.Failure>](./append%28_%29-7sxlu.md)
+- [func prepend<S>(S) -> Publishers.Sequence<[Output], Just<Output>.Failure>](./prepend%28_%29-39e57.md)
+- [func prepend(Output...) -> Publishers.Sequence<[Output], Just<Output>.Failure>](./prepend%28_%29-7fg73.md)
+- [func prefix(Int) -> Optional<Output>.Publisher](./prefix%28_%29.md)
 
 
 ---

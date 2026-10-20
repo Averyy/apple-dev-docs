@@ -1,7 +1,8 @@
 # performSequentialBatchUpdates(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Combines multiple scrubber content updates into a single action.
 
@@ -12,6 +13,10 @@ Combines multiple scrubber content updates into a single action.
 
 ```swift
 func performSequentialBatchUpdates(_ updateBlock: () -> Void)
+```
+
+```objc
+- (void) performSequentialBatchUpdates:(void (^)()) updateBlock;
 ```
 
 ## Parameters

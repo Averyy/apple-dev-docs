@@ -1,7 +1,8 @@
 # functionDescriptors
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configures an array of function descriptors with references to functions that contribute to the stitching process.
 
@@ -17,6 +18,10 @@ Configures an array of function descriptors with references to functions that co
 
 ```swift
 var functionDescriptors: [MTL4FunctionDescriptor]? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSArray<MTL4FunctionDescriptor *> * functionDescriptors;
 ```
 
 

@@ -1,7 +1,8 @@
 # makeMeshInstance(meshPart:pipeline:geometryArguments:surfaceArguments:lightingArguments:transform:sortCategory:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a drawable mesh instance pairing a mesh part with a compiled pipeline state and optional per-draw argument tables.
 
@@ -19,13 +20,13 @@ final func makeMeshInstance(meshPart: LowLevelMeshPart, pipeline: LowLevelRender
 
 #### Return Value
 
-A newly created [`LowLevelMeshInstance`](lowlevelmeshinstance.md).
+A newly created [`LowLevelMeshInstance`](../lowlevelmeshinstance.md).
 
 #### Discussion
 
 Pass `nil` for any argument table stage not required by the material.
 
-> **Note**: An error if the pipeline or argument tables are incompatible with the render context.
+> **Throws**: An error if the pipeline or argument tables are incompatible with the render context.
 
 ## Parameters
 

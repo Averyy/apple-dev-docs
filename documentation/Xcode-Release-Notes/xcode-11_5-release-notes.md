@@ -1,6 +1,7 @@
 # Xcode 11.5 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -18,7 +19,9 @@ Xcode 11.5 is available in the Mac App Store and includes SDKs for iOS 13.5, iPa
 
 ###### Known Issues
 
-- watchOS and tvOS apps with asset catalogs built with Xcode 11.4 or later may experience slower image-loading performance on devices running on watchOS 6.1 or earlier, or when in Dark Mode on tvOS 13.3 or earlier. (62328605 **Workaround**: Add a symbol glyph to the app’s asset catalog.
+- watchOS and tvOS apps with asset catalogs built with Xcode 11.4 or later may experience slower image-loading performance on devices running on watchOS 6.1 or earlier, or when in Dark Mode on tvOS 13.3 or earlier. (62328605
+
+  **Workaround**: Add a symbol glyph to the app’s asset catalog.
 
 ###### Resolved Issues
 
@@ -28,7 +31,9 @@ Xcode 11.5 is available in the Mac App Store and includes SDKs for iOS 13.5, iPa
 
 ###### Resolved Issues
 
-- Symbol names are no longer printed in stack frames in the console by default, as this combination can result in deadlocks when running Thread Sanitizer on simulated devices. For schemes that don’t have the option to gather code coverage enabled, you can re-enable symbol names and source locations by adding a `TSAN_OPTIONS` environment variable with the value `symbolize=1` in the scheme editor. (61840387)
+- Symbol names are no longer printed in stack frames in the console by default, as this combination can result in deadlocks when running Thread Sanitizer on simulated devices.
+
+  For schemes that don’t have the option to gather code coverage enabled, you can re-enable symbol names and source locations by adding a `TSAN_OPTIONS` environment variable with the value `symbolize=1` in the scheme editor. (61840387)
 
 ##### Interface Builder
 
@@ -53,10 +58,14 @@ Xcode 11.5 is available in the Mac App Store and includes SDKs for iOS 13.5, iPa
 
 ###### Known Issues
 
-- In a Mac app or an app built with Mac Catalyst, Xcode sometimes does not require a provisioning profile or include the Game Center entitlement. As a result, your app may fail to communicate with Game Center services at runtime. (62903631) **Workaround**: Add the following entitlement to your app’s entitlements plist: ```text
-<key>com.apple.developer.game-center</key>
-<true/>
-```
+- In a Mac app or an app built with Mac Catalyst, Xcode sometimes does not require a provisioning profile or include the Game Center entitlement. As a result, your app may fail to communicate with Game Center services at runtime. (62903631)
+
+  **Workaround**: Add the following entitlement to your app’s entitlements plist:
+
+  ```text
+  <key>com.apple.developer.game-center</key>
+  <true/>
+  ```
 
 ###### Resolved Issues
 
@@ -78,25 +87,26 @@ Xcode 11.5 is available in the Mac App Store and includes SDKs for iOS 13.5, iPa
 
 ## See Also
 
-- [Xcode 11.7 Release Notes](xcode-11_7-release-notes.md)
+### Xcode 11
+- [Xcode 11.7 Release Notes](./xcode-11_7-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.6 Release Notes](xcode-11_6-release-notes.md)
+- [Xcode 11.6 Release Notes](./xcode-11_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.4.1 Release Notes](xcode-11_4_1-release-notes.md)
+- [Xcode 11.4.1 Release Notes](./xcode-11_4_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.4 Release Notes](xcode-11_4-release-notes.md)
+- [Xcode 11.4 Release Notes](./xcode-11_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.3.1 Release Notes](xcode-11_3_1-release-notes.md)
+- [Xcode 11.3.1 Release Notes](./xcode-11_3_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes
-- [Xcode 11.3 Release Notes](xcode-11_3-release-notes.md)
+- [Xcode 11.3 Release Notes](./xcode-11_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes
-- [Xcode 11.2.1 Release Notes](xcode-11_2_1-release-notes.md)
+- [Xcode 11.2.1 Release Notes](./xcode-11_2_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.2 Release Notes](xcode-11_2-release-notes.md)
+- [Xcode 11.2 Release Notes](./xcode-11_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.1 Release Notes](xcode-11_1-release-notes.md)
+- [Xcode 11.1 Release Notes](./xcode-11_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11 Release Notes](xcode-11-release-notes.md)
+- [Xcode 11 Release Notes](./xcode-11-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

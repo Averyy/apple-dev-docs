@@ -1,7 +1,8 @@
 # animationTimeInterval
 
 **Framework**: Screen Saver  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time interval between animation frames.
 
@@ -12,6 +13,10 @@ The time interval between animation frames.
 
 ```swift
 var animationTimeInterval: TimeInterval { get set }
+```
+
+```objc
+@property (atomic) NSTimeInterval animationTimeInterval;
 ```
 
 #### Discussion

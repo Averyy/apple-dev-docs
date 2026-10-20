@@ -1,7 +1,8 @@
 # MAXIMUM_WRITE_SAME_LENGTH
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 UInt64 MAXIMUM_WRITE_SAME_LENGTH;
 ```
 

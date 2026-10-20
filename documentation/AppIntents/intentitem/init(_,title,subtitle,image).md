@@ -1,7 +1,8 @@
 # init(_:title:subtitle:image:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an item with the specified value and visual attributes.
 
@@ -11,7 +12,7 @@ Creates an item with the specified value and visual attributes.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ init(_ value: Value, title: LocalizedStringResource, subtitle: LocalizedStringRe
 
 #### Discussion
 
-> **Note**: The system uses the provided values even when `value` conforms to the [`DisplayRepresentable`](displayrepresentable.md) protocol.
+> **Note**: The system uses the provided values even when `value` conforms to the [`DisplayRepresentable`](../displayrepresentable.md) protocol.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # InsightEvaluator.EvaluationError.payloadSecurityError
 
 **Framework**: Trust Insights  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Server returned payload contains security related error and should not be trusted. This may indicate that the payload has been tampered with.
 

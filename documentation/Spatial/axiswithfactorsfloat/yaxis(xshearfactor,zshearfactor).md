@@ -1,7 +1,8 @@
 # AxisWithFactorsFloat.yAxis(xShearFactor:zShearFactor:)
 
 **Framework**: Spatial  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The shear is on the *y* axis using the *x* and *z* shear factors.
 

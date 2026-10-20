@@ -1,17 +1,22 @@
 # notificationCenter
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The notification center for workspace notifications.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var notificationCenter: NotificationCenter { get }
+```
+
+```objc
+@property (strong, readonly) NSNotificationCenter * notificationCenter;
 ```
 
 #### Return Value

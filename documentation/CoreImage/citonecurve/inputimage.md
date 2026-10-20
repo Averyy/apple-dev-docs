@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The image to use as an input image.
@@ -11,7 +12,7 @@ The image to use as an input image.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,17 +21,22 @@ The image to use as an input image.
 var inputImage: CIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) CIImage * inputImage;
+```
+
 ## See Also
 
-- [var point0: CGPoint](citonecurve/point0.md)
+### Instance Properties
+- [var point0: CGPoint](./point0.md)
   A vector containing the position of the first point of the tone curve.
-- [var point1: CGPoint](citonecurve/point1.md)
+- [var point1: CGPoint](./point1.md)
   A vector containing the position of the second point of the tone curve.
-- [var point2: CGPoint](citonecurve/point2.md)
+- [var point2: CGPoint](./point2.md)
   A vector containing the position of the third point of the tone curve.
-- [var point3: CGPoint](citonecurve/point3.md)
+- [var point3: CGPoint](./point3.md)
   A vector containing the position of the fourth point of the tone curve.
-- [var point4: CGPoint](citonecurve/point4.md)
+- [var point4: CGPoint](./point4.md)
   A vector containing the position of the fifth point of the tone curve.
 
 

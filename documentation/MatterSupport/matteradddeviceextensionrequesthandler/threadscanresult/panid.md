@@ -1,7 +1,8 @@
 # panID
 
 **Framework**: MatterSupport  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Thread network PAN identifier.
 
@@ -10,7 +11,7 @@ The Thread network PAN identifier.
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,19 +21,20 @@ var panID: UInt16
 
 ## See Also
 
-- [var channel: UInt16](matteradddeviceextensionrequesthandler/threadscanresult/channel.md)
+### Getting result information
+- [var channel: UInt16](./channel.md)
   The Thread network radio channel.
-- [var extendedAddress: Data](matteradddeviceextensionrequesthandler/threadscanresult/extendedaddress.md)
+- [var extendedAddress: Data](./extendedaddress.md)
   The identifier of an active Thread network Border Agent.
-- [var extendedPANID: UInt64](matteradddeviceextensionrequesthandler/threadscanresult/extendedpanid.md)
+- [var extendedPANID: UInt64](./extendedpanid.md)
   The Thread network extended PAN identifier.
-- [var linkQualityIndicator: UInt8](matteradddeviceextensionrequesthandler/threadscanresult/linkqualityindicator.md)
+- [var linkQualityIndicator: UInt8](./linkqualityindicator.md)
   A receive quality indicator, as specified by Matter specification.
-- [var networkName: String](matteradddeviceextensionrequesthandler/threadscanresult/networkname.md)
+- [var networkName: String](./networkname.md)
   The Thread network name.
-- [var rssi: Int8](matteradddeviceextensionrequesthandler/threadscanresult/rssi.md)
+- [var rssi: Int8](./rssi.md)
   The observed RSSI of the network by the device.
-- [var version: UInt8](matteradddeviceextensionrequesthandler/threadscanresult/version.md)
+- [var version: UInt8](./version.md)
   The version field, as specified by the Matter specification.
 
 

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-10-20T13:39:31.866483",
+    "last_updated": "2026-10-20T17:50:58.884135",
     "total_files": 831,
     "source": "scrape_mlx_docs.py",
     "sources": {
@@ -14,6 +14,9 @@
       "mlx-swift-lm": "MLX-Swift/mlx-swift-lm",
       "mlx-swift-examples": "MLX-Swift/mlx-swift-examples",
       "ml-stable-diffusion": "ml-stable-diffusion"
+    },
+    "render": {
+      "version": 1
     }
   },
   "hashes": {

@@ -1,7 +1,8 @@
 # init(shape:style:fillStyle:background:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a FillShapeView.
 

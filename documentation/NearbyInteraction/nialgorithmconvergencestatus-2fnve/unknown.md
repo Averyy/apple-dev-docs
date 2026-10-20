@@ -1,7 +1,8 @@
 # NIAlgorithmConvergenceStatus.unknown
 
 **Framework**: Nearby Interaction  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An indication that the framework is unsure of the Camera Assistance status.
 
@@ -19,13 +20,14 @@ case unknown
 
 #### Discussion
 
-Look to a subsequent call to [`session(_:didUpdateAlgorithmConvergence:for:)`](nisessiondelegate/session(_:didupdatealgorithmconvergence:for:).md) and check for a more definitive algorithm-convergence status.
+Look to a subsequent call to [`session(_:didUpdateAlgorithmConvergence:for:)`](../nisessiondelegate/session%28_,didupdatealgorithmconvergence,for%29.md) and check for a more definitive algorithm-convergence status.
 
 ## See Also
 
-- [NIAlgorithmConvergenceStatus.converged](nialgorithmconvergencestatus-2fnve/converged.md)
+### Interpreting the convergence state
+- [NIAlgorithmConvergenceStatus.converged](./converged.md)
   A status that indicates the framework’s Camera Assistance feature is operational.
-- [case notConverged([NIAlgorithmConvergenceStatus.Reason])](nialgorithmconvergencestatus-2fnve/notconverged(_:).md)
+- [case notConverged([NIAlgorithmConvergenceStatus.Reason])](./notconverged%28_%29.md)
   A status that indicates the framework’s Camera Assistance feature requires action from the user.
 
 

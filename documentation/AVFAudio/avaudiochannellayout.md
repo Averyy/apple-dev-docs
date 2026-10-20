@@ -1,7 +1,8 @@
 # AVAudioChannelLayout
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes the roles of a set of audio channels.
 
@@ -20,66 +21,71 @@ An object that describes the roles of a set of audio channels.
 class AVAudioChannelLayout
 ```
 
+```objc
+@interface AVAudioChannelLayout : NSObject
+```
+
 #### Overview
 
-The `AVAudioChannelLayout` class is a thin wrapper for Core Audio’s [`AudioChannelLayout`](https://developer.apple.com/documentation/coreaudiotypes/audiochannellayout).
+The `AVAudioChannelLayout` class is a thin wrapper for Core Audio’s [`AudioChannelLayout`](../CoreAudioTypes/audiochannellayout.md).
 
 ## Topics
 
 ### Creating an audio channel layout
-- [init(layout: UnsafePointer<AudioChannelLayout>)](avaudiochannellayout/init(layout:).md)
+- [init(layout: UnsafePointer<AudioChannelLayout>)](./avaudiochannellayout/init%28layout%29.md)
   Creates an audio channel layout object from an existing one.
-- [convenience init?(layoutTag: AudioChannelLayoutTag)](avaudiochannellayout/init(layouttag:).md)
+- [convenience init?(layoutTag: AudioChannelLayoutTag)](./avaudiochannellayout/init%28layouttag%29.md)
   Creates an audio channel layout object from a layout tag.
 ### Getting audio channel layout properties
-- [typealias AVAudioChannelCount](avaudiochannelcount.md)
+- [typealias AVAudioChannelCount](./avaudiochannelcount.md)
   The number of audio channels.
-- [var channelCount: AVAudioChannelCount](avaudiochannellayout/channelcount.md)
+- [var channelCount: AVAudioChannelCount](./avaudiochannellayout/channelcount.md)
   The number of channels of audio data.
-- [var layout: UnsafePointer<AudioChannelLayout>](avaudiochannellayout/layout.md)
+- [var layout: UnsafePointer<AudioChannelLayout>](./avaudiochannellayout/layout.md)
   The underlying audio channel layout.
-- [var layoutTag: AudioChannelLayoutTag](avaudiochannellayout/layouttag.md)
+- [var layoutTag: AudioChannelLayoutTag](./avaudiochannellayout/layouttag.md)
   The audio channel’s underlying layout tag.
-- [func isEqual(Any) -> Bool](avaudiochannellayout/isequal(_:).md)
+- [func isEqual(Any) -> Bool](./avaudiochannellayout/isequal%28_%29.md)
   Indicates whether another audio channel layout is exactly equal to the current layout.
 ### Initializers
-- [init?(coder: NSCoder)](avaudiochannellayout/init(coder:).md)
+- [init?(coder: NSCoder)](./avaudiochannellayout/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVAudioFile](avaudiofile.md)
+### Audio data
+- [class AVAudioFile](./avaudiofile.md)
   An object that represents an audio file that the system can open for reading or writing.
-- [class AVAudioPCMBuffer](avaudiopcmbuffer.md)
+- [class AVAudioPCMBuffer](./avaudiopcmbuffer.md)
   An object that represents an audio buffer you use with PCM audio formats.
-- [class AVAudioCompressedBuffer](avaudiocompressedbuffer.md)
+- [class AVAudioCompressedBuffer](./avaudiocompressedbuffer.md)
   An object that represents an audio buffer that you use for compressed audio formats.
-- [struct AVReadOnlyAudioPCMBuffer](avreadonlyaudiopcmbuffer.md)
+- [struct AVReadOnlyAudioPCMBuffer](./avreadonlyaudiopcmbuffer.md)
   A read-only, Sendable audio buffer for safe concurrent access.
-- [class AVAudioBuffer](avaudiobuffer.md)
+- [class AVAudioBuffer](./avaudiobuffer.md)
   An object that represents a buffer of audio data with a format.
-- [class AVAudioFormat](avaudioformat.md)
+- [class AVAudioFormat](./avaudioformat.md)
   An object that describes the representation of an audio format.
-- [class AVAudioConverter](avaudioconverter.md)
+- [class AVAudioConverter](./avaudioconverter.md)
   An object that converts streams of audio between formats.
-- [class AVAudioTime](avaudiotime.md)
+- [class AVAudioTime](./avaudiotime.md)
   An object you use to represent a moment in time.
-- [Audio settings](audio-settings.md)
+- [Audio settings](./audio-settings.md)
   Configure audio processing settings using standard key and value constants.
 
 

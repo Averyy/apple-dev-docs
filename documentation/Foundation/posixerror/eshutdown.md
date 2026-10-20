@@ -1,7 +1,8 @@
 # ESHUTDOWN
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Can’t send after socket shutdown.
 

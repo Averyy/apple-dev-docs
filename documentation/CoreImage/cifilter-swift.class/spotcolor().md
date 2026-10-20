@@ -1,7 +1,8 @@
 # spotColor()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Replaces colors of an image with specifed colors.
 
@@ -19,6 +20,10 @@ Replaces colors of an image with specifed colors.
 class func spotColor() -> any CIFilter & CISpotColor
 ```
 
+```objc
++ (CIFilter<CISpotColor> *) spotColorFilter;
+```
+
 #### Return Value
 
 The modified image.
@@ -29,19 +34,19 @@ This method applies the spot color filter to an image. The effect replaces one o
 
 The spot color filter uses the following properties:
 
-- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`centerColor1`**: A [`CIColor`](cicolor.md) representing the median value of the first color to be replaced.
-- **`centerColor2`**: A [`CIColor`](cicolor.md) representing the median value of the second color to be replaced.
-- **`centerColor3`**: A [`CIColor`](cicolor.md) representing the median value of the third color to be replaced.
-- **`replacementColor1`**: A [`CIColor`](cicolor.md) to replace the first color.
-- **`replacementColor2`**: A [`CIColor`](cicolor.md) to replace the second color.
-- **`replacementColor3`**: A [`CIColor`](cicolor.md) to replace the third color.
+- **`inputImage`**: An image with the type [`CIImage`](../ciimage.md).
+- **`centerColor1`**: A [`CIColor`](../cicolor.md) representing the median value of the first color to be replaced.
+- **`centerColor2`**: A [`CIColor`](../cicolor.md) representing the median value of the second color to be replaced.
+- **`centerColor3`**: A [`CIColor`](../cicolor.md) representing the median value of the third color to be replaced.
+- **`replacementColor1`**: A [`CIColor`](../cicolor.md) to replace the first color.
+- **`replacementColor2`**: A [`CIColor`](../cicolor.md) to replace the second color.
+- **`replacementColor3`**: A [`CIColor`](../cicolor.md) to replace the third color.
 - **`closeness1`**: A `float` representing how closely the first center color must match before it’s replaced.
 - **`closeness2`**: A `float` representing how closely the second center color must match before it’s replaced.
 - **`closeness3`**: A `float` representing how closely the third center color must match before it’s replaced.
-- **`contrast1`**: A `float` representing the contrast of the first replacement color as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
-- **`contrast2`**: A `float` representing the contrast of the second replacement color as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
-- **`contrast3`**: A `float` representing the contrast of the third replacement color as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`contrast1`**: A `float` representing the contrast of the first replacement color as an [`NSNumber`](../../Foundation/nsnumber.md).
+- **`contrast2`**: A `float` representing the contrast of the second replacement color as an [`NSNumber`](../../Foundation/nsnumber.md).
+- **`contrast3`**: A `float` representing the contrast of the third replacement color as an [`NSNumber`](../../Foundation/nsnumber.md).
 
 The following code creates a filter that replaces the colors of the input image with the specified colors:
 
@@ -57,39 +62,40 @@ func spotColor(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left has no modifications to color. In the photo on the right, a spot color filter is applied, resulting in less color in the image with the center flower becoming brown and the foliage becoming a solid light green.](/images/com.apple.coreimage/media-3600008@2x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left has no modifications to color. In the photo on the right, a spot color filter is applied, resulting in less color in the image with the center flower becoming brown and the foliage becoming a solid light green.](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-3600008@2x.png)
 
 ## See Also
 
-- [class func blendWithAlphaMask() -> any CIFilter & CIBlendWithMask](cifilter-swift.class/blendwithalphamask.md)
+### Filters
+- [class func blendWithAlphaMask() -> any CIFilter & CIBlendWithMask](./blendwithalphamask%28%29.md)
   Blends two images by using an alpha mask image.
-- [class func blendWithBlueMask() -> any CIFilter & CIBlendWithMask](cifilter-swift.class/blendwithbluemask.md)
+- [class func blendWithBlueMask() -> any CIFilter & CIBlendWithMask](./blendwithbluemask%28%29.md)
   Blends two images by using a blue mask image.
-- [class func blendWithMask() -> any CIFilter & CIBlendWithMask](cifilter-swift.class/blendwithmask.md)
+- [class func blendWithMask() -> any CIFilter & CIBlendWithMask](./blendwithmask%28%29.md)
   Blends two images by using a mask image.
-- [class func blendWithRedMask() -> any CIFilter & CIBlendWithMask](cifilter-swift.class/blendwithredmask.md)
+- [class func blendWithRedMask() -> any CIFilter & CIBlendWithMask](./blendwithredmask%28%29.md)
   Blends two images by using a red mask image.
-- [class func bloom() -> any CIFilter & CIBloom](cifilter-swift.class/bloom.md)
+- [class func bloom() -> any CIFilter & CIBloom](./bloom%28%29.md)
   Adjusts an image’s colors by applying a blur effect.
-- [class func cannyEdgeDetector() -> any CIFilter & CICannyEdgeDetector](cifilter-swift.class/cannyedgedetector.md)
+- [class func cannyEdgeDetector() -> any CIFilter & CICannyEdgeDetector](./cannyedgedetector%28%29.md)
   Applies the Canny edge-detection algorithm to an image.
-- [class func comicEffect() -> any CIFilter & CIComicEffect](cifilter-swift.class/comiceffect.md)
+- [class func comicEffect() -> any CIFilter & CIComicEffect](./comiceffect%28%29.md)
   Creates an image with a comic book effect.
-- [class func coreMLModel() -> any CIFilter & CICoreMLModel](cifilter-swift.class/coremlmodel.md)
+- [class func coreMLModel() -> any CIFilter & CICoreMLModel](./coremlmodel%28%29.md)
   Filters an image with a Core ML model.
-- [class func crystallize() -> any CIFilter & CICrystallize](cifilter-swift.class/crystallize.md)
+- [class func crystallize() -> any CIFilter & CICrystallize](./crystallize%28%29.md)
   Creates an image made with a series of colorful polygons.
-- [class func depthOfField() -> any CIFilter & CIDepthOfField](cifilter-swift.class/depthoffield.md)
+- [class func depthOfField() -> any CIFilter & CIDepthOfField](./depthoffield%28%29.md)
   Simulates a depth of field effect.
-- [class func edges() -> any CIFilter & CIEdges](cifilter-swift.class/edges.md)
+- [class func edges() -> any CIFilter & CIEdges](./edges%28%29.md)
   Hilghlights edges of objects found within an image.
-- [class func edgeWork() -> any CIFilter & CIEdgeWork](cifilter-swift.class/edgework.md)
+- [class func edgeWork() -> any CIFilter & CIEdgeWork](./edgework%28%29.md)
   Produces a black-and-white image that looks similar to a woodblock print.
-- [class func gaborGradients() -> any CIFilter & CIGaborGradients](cifilter-swift.class/gaborgradients.md)
+- [class func gaborGradients() -> any CIFilter & CIGaborGradients](./gaborgradients%28%29.md)
   Highlights textures in an image.
-- [class func gloom() -> any CIFilter & CIGloom](cifilter-swift.class/gloom.md)
+- [class func gloom() -> any CIFilter & CIGloom](./gloom%28%29.md)
   Adjusts an image’s color by applying a gloom filter.
-- [class func heightFieldFromMask() -> any CIFilter & CIHeightFieldFromMask](cifilter-swift.class/heightfieldfrommask.md)
+- [class func heightFieldFromMask() -> any CIFilter & CIHeightFieldFromMask](./heightfieldfrommask%28%29.md)
   Creates a realistic shaded height-field image.
 
 

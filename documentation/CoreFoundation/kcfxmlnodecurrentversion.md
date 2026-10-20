@@ -1,17 +1,22 @@
 # kCFXMLNodeCurrentVersion
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The current version of CFXMLNode objects.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var kCFXMLNodeCurrentVersion: CFIndex { get }
+```
+
+```c
+kCFXMLNodeCurrentVersion
 ```
 
 

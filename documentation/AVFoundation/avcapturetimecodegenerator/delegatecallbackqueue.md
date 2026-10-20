@@ -1,7 +1,8 @@
 # delegateCallbackQueue
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dispatch queue on which delegate callbacks are invoked.
 
@@ -18,13 +19,18 @@ The dispatch queue on which delegate callbacks are invoked.
 var delegateCallbackQueue: dispatch_queue_t? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) dispatch_queue_t delegateCallbackQueue;
+```
+
 #### Discussion
 
-Provides the queue set in [`setDelegate(_:queue:)`](avcapturetimecodegenerator/setdelegate(_:queue:).md). If no delegate is assigned, this property is `nil`.
+Provides the queue set in [`setDelegate(_:queue:)`](./setdelegate%28_,queue%29.md). If no delegate is assigned, this property is `nil`.
 
 ## See Also
 
-- [var delegate: (any AVCaptureTimecodeGeneratorDelegate)?](avcapturetimecodegenerator/delegate.md)
+### Handling delegate callbacks
+- [var delegate: (any AVCaptureTimecodeGeneratorDelegate)?](./delegate.md)
   The delegate that receives timecode updates from the timecode generator.
 
 

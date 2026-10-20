@@ -1,14 +1,15 @@
 # flush_dcache
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 void flush_dcache(vm_offset_t, unsigned int, int);
 ```
 

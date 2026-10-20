@@ -1,14 +1,15 @@
 # kSCSITask_HEAD_OF_QUEUE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 kSCSITask_HEAD_OF_QUEUE = 2
 ```
 

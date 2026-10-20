@@ -1,7 +1,8 @@
 # sharingEnabled
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.0+

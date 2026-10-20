@@ -1,7 +1,8 @@
 # init(player:templateItem:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a player looper that continuously plays the full duration of a player item.
 
@@ -19,13 +20,17 @@ Creates a player looper that continuously plays the full duration of a player it
 convenience init(player: AVQueuePlayer, templateItem itemToLoop: AVPlayerItem)
 ```
 
+```objc
++ (instancetype) playerLooperWithPlayer:(AVQueuePlayer *) player templateItem:(AVPlayerItem *) itemToLoop;
+```
+
 #### Return Value
 
 An new instance of `AVPlayerLooper`.
 
 #### Discussion
 
-Creating an instance of this class using this method is equivalent to calling [`init(player:templateItem:timeRange:)`](avplayerlooper/init(player:templateitem:timerange:).md) and passing a value of [`invalid`](https://developer.apple.com/documentation/coremedia/cmtimerange/invalid) for the `timeRange` parameter.
+Creating an instance of this class using this method is equivalent to calling [`init(player:templateItem:timeRange:)`](./init%28player,templateitem,timerange%29.md) and passing a value of [`invalid`](../../CoreMedia/cmtimerange/invalid.md) for the `timeRange` parameter.
 
 ## Parameters
 
@@ -34,9 +39,10 @@ Creating an instance of this class using this method is equivalent to calling [`
 
 ## See Also
 
-- [init(player: AVQueuePlayer, templateItem: AVPlayerItem, timeRange: CMTimeRange, existingItemsOrdering: AVPlayerLooper.ItemOrdering)](avplayerlooper/init(player:templateitem:timerange:existingitemsordering:).md)
+### Creating a player looper
+- [init(player: AVQueuePlayer, templateItem: AVPlayerItem, timeRange: CMTimeRange, existingItemsOrdering: AVPlayerLooper.ItemOrdering)](./init%28player,templateitem,timerange,existingitemsordering%29.md)
   Creates a player looper that continuously plays the full duration of a player item while adhering to the specified ordering of existing items in the queue.
-- [convenience init(player: AVQueuePlayer, templateItem: AVPlayerItem, timeRange: CMTimeRange)](avplayerlooper/init(player:templateitem:timerange:).md)
+- [convenience init(player: AVQueuePlayer, templateItem: AVPlayerItem, timeRange: CMTimeRange)](./init%28player,templateitem,timerange%29.md)
   Creates a player looper that continuously plays the specified time range of a player item.
 
 

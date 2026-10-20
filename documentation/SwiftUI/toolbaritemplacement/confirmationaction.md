@@ -1,7 +1,8 @@
 # confirmationAction
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A placement for confirmation actions in a modal interface.
 
@@ -26,21 +27,22 @@ Use confirmation actions to receive user confirmation of a particular action. An
 
 In macOS and in Mac Catalyst apps, the system places `confirmationAction` items on the trailing edge in the trailing-most position of the sheet and gain the apps accent color as a background color.
 
-In iOS, iPadOS, and tvOS, the system places `confirmationAction` items in the same location as a [`primaryAction`](toolbaritemplacement/primaryaction.md) placement.
+In iOS, iPadOS, and tvOS, the system places `confirmationAction` items in the same location as a [`primaryAction`](./primaryaction.md) placement.
 
 In watchOS, the system places `confirmationAction` items in the trailing edge of the navigation bar.
 
 ## See Also
 
-- [static let primaryAction: ToolbarItemPlacement](toolbaritemplacement/primaryaction.md)
+### Getting placement for specific actions
+- [static let primaryAction: ToolbarItemPlacement](./primaryaction.md)
   A placement for the primary action.
-- [static let secondaryAction: ToolbarItemPlacement](toolbaritemplacement/secondaryaction.md)
+- [static let secondaryAction: ToolbarItemPlacement](./secondaryaction.md)
   A placement for secondary actions.
-- [static let cancellationAction: ToolbarItemPlacement](toolbaritemplacement/cancellationaction.md)
+- [static let cancellationAction: ToolbarItemPlacement](./cancellationaction.md)
   A placement for cancellation actions in a modal interface.
-- [static let destructiveAction: ToolbarItemPlacement](toolbaritemplacement/destructiveaction.md)
+- [static let destructiveAction: ToolbarItemPlacement](./destructiveaction.md)
   A placement for destructive actions in a modal interface.
-- [static let navigation: ToolbarItemPlacement](toolbaritemplacement/navigation.md)
+- [static let navigation: ToolbarItemPlacement](./navigation.md)
   A placement for navigation actions.
 
 

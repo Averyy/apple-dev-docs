@@ -1,7 +1,8 @@
 # kCVVersatileBayer_BayerPattern_BGGR
 
 **Framework**: Core Video  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 4.0+
@@ -18,11 +19,16 @@
 var kCVVersatileBayer_BayerPattern_BGGR: Int { get }
 ```
 
+```c
+kCVVersatileBayer_BayerPattern_BGGR
+```
+
 ## See Also
 
-- [var kCVVersatileBayer_BayerPattern_GBRG: Int](kcvversatilebayer_bayerpattern_gbrg.md)
-- [var kCVVersatileBayer_BayerPattern_GRBG: Int](kcvversatilebayer_bayerpattern_grbg.md)
-- [var kCVVersatileBayer_BayerPattern_RGGB: Int](kcvversatilebayer_bayerpattern_rggb.md)
+### Constants
+- [var kCVVersatileBayer_BayerPattern_GBRG: Int](./kcvversatilebayer_bayerpattern_gbrg.md)
+- [var kCVVersatileBayer_BayerPattern_GRBG: Int](./kcvversatilebayer_bayerpattern_grbg.md)
+- [var kCVVersatileBayer_BayerPattern_RGGB: Int](./kcvversatilebayer_bayerpattern_rggb.md)
 
 
 ---

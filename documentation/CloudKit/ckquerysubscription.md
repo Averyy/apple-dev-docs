@@ -1,7 +1,8 @@
 # CKQuerySubscription
 
 **Framework**: CloudKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A subscription that generates push notifications when CloudKit modifies records that match a predicate.
 
@@ -20,19 +21,23 @@ A subscription that generates push notifications when CloudKit modifies records 
 class CKQuerySubscription
 ```
 
+```objc
+@interface CKQuerySubscription : CKSubscription
+```
+
 #### Overview
 
 Subscriptions track the creation, modification, and deletion of records in a database, and are fundamental in keeping data on the user’s device up to date. A subscription applies only to the user that creates it. When a subscription registers a change, such as CloudKit saving a new record, it sends push notifications to the user’s devices to inform your app about the change. You can then fetch the changes and cache them on-device. When appropriate, the server excludes the device where the change originates.
 
-> **Note**: You don’t need to explicitly enable push notifications for your App ID to receive subscription notifications. Xcode automatically adds the entitlement when you enable the CloudKit capability. For more information, see [`Enabling CloudKit in Your App`](enabling-cloudkit-in-your-app.md). To use silent push notifications, add the Background Modes capability in your Xcode project and then select the “Background fetch” and “Remote notifications” options.
+> **Note**: You don’t need to explicitly enable push notifications for your App ID to receive subscription notifications. Xcode automatically adds the entitlement when you enable the CloudKit capability. For more information, see [Enabling CloudKit in Your App](./enabling-cloudkit-in-your-app.md). To use silent push notifications, add the Background Modes capability in your Xcode project and then select the “Background fetch” and “Remote notifications” options.
 
-Query subscriptions execute whenever a change occurs in a database that matches the predicate and options you specify. You scope a query subscription to an individual record type that you provide during initialization. You can set the subscription’s [`zoneID`](ckquerysubscription/zoneid.md) property to further specialize the subscription to a specific record zone in the database. This limits the scope of the subscription to only track changes in that record zone and reduces the number of notifications it generates. For more information about defining CloudKit-compatible predicates, see [`CKQuery`](ckquery.md).
+Query subscriptions execute whenever a change occurs in a database that matches the predicate and options you specify. You scope a query subscription to an individual record type that you provide during initialization. You can set the subscription’s [`zoneID`](./ckquerysubscription/zoneid.md) property to further specialize the subscription to a specific record zone in the database. This limits the scope of the subscription to only track changes in that record zone and reduces the number of notifications it generates. For more information about defining CloudKit-compatible predicates, see [`CKQuery`](./ckquery.md).
 
 > **Note**: Only public and private databases support query subscriptions. If you attempt to save a database subscription in the shared database, CloudKit returns an error.
 
-Create any subscriptions on your app’s first launch. After you initialize a subscription, save it to the server using [`CKModifySubscriptionsOperation`](ckmodifysubscriptionsoperation.md). When the operation completes, record that state on-device (in [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults), for example). You can then check that state on subsequent launches to prevent unnecessary trips to the server.
+Create any subscriptions on your app’s first launch. After you initialize a subscription, save it to the server using [`CKModifySubscriptionsOperation`](./ckmodifysubscriptionsoperation.md). When the operation completes, record that state on-device (in [`UserDefaults`](../Foundation/userdefaults.md), for example). You can then check that state on subsequent launches to prevent unnecessary trips to the server.
 
-To configure the notification the subscription generates, set the subscription’s [`notificationInfo`](cksubscription/notificationinfo-swift.property.md) property. Because the system coalesces notifications, don’t rely on them for specific changes. CloudKit can omit data to keep the payload size under the APNs size limit. Consider notifications an indication of remote changes and use [`CKQueryOperation`](ckqueryoperation.md) to fetch the changed records. Create the operation with an instance of [`CKQuery`](ckquery.md) that you configure with the same record type and predicate as the subscription. If you limit the subscription to a specific record zone, set the operation’s [`zoneID`](ckqueryoperation/zoneid.md) property to that record zone’s ID. Because [`CKQueryOperation`](ckqueryoperation.md) doesn’t employ server change tokens, dispose of any records you cache on-device and use the query’s results instead.
+To configure the notification the subscription generates, set the subscription’s [`notificationInfo`](./cksubscription/notificationinfo-swift.property.md) property. Because the system coalesces notifications, don’t rely on them for specific changes. CloudKit can omit data to keep the payload size under the APNs size limit. Consider notifications an indication of remote changes and use [`CKQueryOperation`](./ckqueryoperation.md) to fetch the changed records. Create the operation with an instance of [`CKQuery`](./ckquery.md) that you configure with the same record type and predicate as the subscription. If you limit the subscription to a specific record zone, set the operation’s [`zoneID`](./ckqueryoperation/zoneid.md) property to that record zone’s ID. Because [`CKQueryOperation`](./ckqueryoperation.md) doesn’t employ server change tokens, dispose of any records you cache on-device and use the query’s results instead.
 
 The example below shows how to create a query subscription in the user’s private database, configure the notifications it generates — in this case, silent push notifications — and then save that subscription to the server:
 
@@ -94,45 +99,46 @@ operation.qualityOfService = NSQualityOfServiceUtility;
 ## Topics
 
 ### Creating a Subscription
-- [convenience init(recordType: CKRecord.RecordType, predicate: NSPredicate, subscriptionID: CKSubscription.ID, options: CKQuerySubscription.Options)](ckquerysubscription/init(recordtype:predicate:subscriptionid:options:).md)
+- [convenience init(recordType: CKRecord.RecordType, predicate: NSPredicate, subscriptionID: CKSubscription.ID, options: CKQuerySubscription.Options)](./ckquerysubscription/init%28recordtype,predicate,subscriptionid,options%29.md)
   Creates a named query-based subscription that queries records of a specific type.
-- [init(coder: NSCoder)](ckquerysubscription/init(coder:).md)
+- [init(coder: NSCoder)](./ckquerysubscription/init%28coder%29.md)
   Creates a query-based subscription from a serialized instance.
 ### Accessing the Subscription Search Parameters
-- [var predicate: NSPredicate](ckquerysubscription/predicate.md)
+- [var predicate: NSPredicate](./ckquerysubscription/predicate.md)
   The matching criteria to apply to records.
-- [var querySubscriptionOptions: CKQuerySubscription.Options](ckquerysubscription/querysubscriptionoptions.md)
+- [var querySubscriptionOptions: CKQuerySubscription.Options](./ckquerysubscription/querysubscriptionoptions.md)
   Options that define the behavior of the subscription.
-- [CKQuerySubscription.Options](ckquerysubscription/options.md)
+- [CKQuerySubscription.Options](./ckquerysubscription/options.md)
   Configuration options for a query subscription.
 ### Accessing the Subscription Metadata
-- [var recordType: CKRecord.RecordType?](ckquerysubscription/recordtype-4qgdo.md)
+- [var recordType: CKRecord.RecordType?](./ckquerysubscription/recordtype-4qgdo.md)
   The type of record that the subscription queries.
-- [var zoneID: CKRecordZone.ID?](ckquerysubscription/zoneid.md)
+- [var zoneID: CKRecordZone.ID?](./ckquerysubscription/zoneid.md)
   The ID of the record zone that the subscription queries.
 ### Initializers
-- [convenience init(recordType: CKRecord.RecordType, predicate: NSPredicate, options: CKQuerySubscription.Options)](ckquerysubscription/init(recordtype:predicate:options:).md)
+- [convenience init(recordType: CKRecord.RecordType, predicate: NSPredicate, options: CKQuerySubscription.Options)](./ckquerysubscription/init%28recordtype,predicate,options%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [CKSubscription](cksubscription.md)
+- [CKSubscription](./cksubscription.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CKQueryNotification](ckquerynotification.md)
+### Predicate-Driven Changes
+- [class CKQueryNotification](./ckquerynotification.md)
   A notification that triggers when a record that matches the subscription’s predicate changes.
 
 

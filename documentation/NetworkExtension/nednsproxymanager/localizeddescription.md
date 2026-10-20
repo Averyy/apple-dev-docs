@@ -1,7 +1,8 @@
 # localizedDescription
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the DNS proxy.
 
@@ -18,11 +19,16 @@ A description of the DNS proxy.
 var localizedDescription: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * localizedDescription;
+```
+
 ## See Also
 
-- [var isEnabled: Bool](nednsproxymanager/isenabled.md)
+### Accessing DNS proxy configuration properties
+- [var isEnabled: Bool](./isenabled.md)
   The status of a DNS proxy.
-- [var providerProtocol: NEDNSProxyProviderProtocol?](nednsproxymanager/providerprotocol.md)
+- [var providerProtocol: NEDNSProxyProviderProtocol?](./providerprotocol.md)
   The provider-specific portion of the DNS proxy configuration.
 
 

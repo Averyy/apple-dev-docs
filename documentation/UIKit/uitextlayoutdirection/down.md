@@ -1,16 +1,17 @@
 # UITextLayoutDirection.down
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Layout of the text in a downward direction.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,13 +19,18 @@ Layout of the text in a downward direction.
 case down
 ```
 
+```c
+UITextLayoutDirectionDown
+```
+
 ## See Also
 
-- [UITextLayoutDirection.right](uitextlayoutdirection/right.md)
+### Constants
+- [UITextLayoutDirection.right](./right.md)
   Layout of the text to the right.
-- [UITextLayoutDirection.left](uitextlayoutdirection/left.md)
+- [UITextLayoutDirection.left](./left.md)
   Layout of the text to the left.
-- [UITextLayoutDirection.up](uitextlayoutdirection/up.md)
+- [UITextLayoutDirection.up](./up.md)
   Layout of the text in an upward direction.
 
 

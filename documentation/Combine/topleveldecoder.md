@@ -1,7 +1,8 @@
 # TopLevelDecoder
 
 **Framework**: Combine  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that defines methods for decoding.
 
@@ -23,15 +24,16 @@ protocol TopLevelDecoder
 ## Topics
 
 ### Declaring supporting types
-- [associatedtype Input](topleveldecoder/input.md)
+- [associatedtype Input](./topleveldecoder/input.md)
   The type this decoder accepts.
 ### Decoding
-- [func decode<T>(T.Type, from: Self.Input) throws -> T](topleveldecoder/decode(_:from:).md)
+- [func decode<T>(T.Type, from: Self.Input) throws -> T](./topleveldecoder/decode%28_,from%29.md)
   Decodes an instance of the indicated type.
 
 ## See Also
 
-- [protocol TopLevelEncoder](toplevelencoder.md)
+### Encoders and Decoders
+- [protocol TopLevelEncoder](./toplevelencoder.md)
   A type that defines methods for encoding.
 
 

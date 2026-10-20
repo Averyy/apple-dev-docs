@@ -1,7 +1,8 @@
 # revocationDate
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The revocation date of the app purchase.
 

@@ -1,7 +1,8 @@
 # wide
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A unit width that shows the full unit name.
 
@@ -26,9 +27,10 @@ For example, `37.20 Calories` or `37,20 litres`.
 
 ## See Also
 
-- [static var abbreviated: Measurement<UnitType>.FormatStyle.UnitWidth](measurement/formatstyle/unitwidth/abbreviated.md)
+### Unit widths
+- [static var abbreviated: Measurement<UnitType>.FormatStyle.UnitWidth](./abbreviated.md)
   An abbreviated unit width.
-- [static var narrow: Measurement<UnitType>.FormatStyle.UnitWidth](measurement/formatstyle/unitwidth/narrow.md)
+- [static var narrow: Measurement<UnitType>.FormatStyle.UnitWidth](./narrow.md)
   The shortest unit width.
 
 

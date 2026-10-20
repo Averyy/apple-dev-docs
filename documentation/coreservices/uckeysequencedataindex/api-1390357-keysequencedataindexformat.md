@@ -1,7 +1,8 @@
 # keySequenceDataIndexFormat
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An unsigned 16-bit integer identifying the format of the `UCKeySequenceDataIndex` structure. Set to `kUCKeySequenceDataIndexFormat`.
 
@@ -13,6 +14,10 @@ An unsigned 16-bit integer identifying the format of the `UCKeySequenceDataIndex
 
 ```swift
 var keySequenceDataIndexFormat: UInt16
+```
+
+```c
+UInt16 keySequenceDataIndexFormat;
 ```
 
 

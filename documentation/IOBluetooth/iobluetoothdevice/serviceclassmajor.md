@@ -1,17 +1,22 @@
 # serviceClassMajor
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Get the major service class of the device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var serviceClassMajor: BluetoothServiceClassMajor { get }
+```
+
+```objc
+@property (readonly) BluetoothServiceClassMajor serviceClassMajor;
 ```
 
 #### Discussion

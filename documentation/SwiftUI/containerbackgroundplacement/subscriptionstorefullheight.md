@@ -1,7 +1,8 @@
 # subscriptionStoreFullHeight
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A background placement that spans the full height of a subscription store view.
 
@@ -20,9 +21,10 @@ static var subscriptionStoreFullHeight: ContainerBackgroundPlacement { get }
 
 ## See Also
 
-- [static var subscriptionStore: ContainerBackgroundPlacement](containerbackgroundplacement/subscriptionstore.md)
+### Getting StoreKit placements
+- [static var subscriptionStore: ContainerBackgroundPlacement](./subscriptionstore.md)
   An automatic placement within a subscription store view, based on the view’s context.
-- [static var subscriptionStoreHeader: ContainerBackgroundPlacement](containerbackgroundplacement/subscriptionstoreheader.md)
+- [static var subscriptionStoreHeader: ContainerBackgroundPlacement](./subscriptionstoreheader.md)
   A background placement behind the marketing content of a subscription store view.
 
 

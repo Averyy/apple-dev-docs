@@ -1,7 +1,8 @@
 # init(contentsOfURL:)
 
 **Framework**: Automator  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 14.0+

@@ -1,7 +1,8 @@
 # Hint sample data format
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An atom that specifies the data format and location of the hint track sample data.
 
@@ -15,44 +16,45 @@ The sample description for hint tracks is defined in the following table.
 
 | Data field | Bytes |
 | --- | --- |
-| [`Size`](hint_track_sample_description/size.md) | 4 |
-| [`Data format`](hint_track_sample_description/data_format.md) | 4 |
-| [`Reserved`](hint_track_sample_description/reserved.md) | 6 |
-| [`Data reference index`](hint_track_sample_description/data_reference_index.md) | 2 |
-| [`Hint track version`](hint_track_sample_description/hint_track_version.md) | 2 |
-| [`Last compatible hint track version`](hint_track_sample_description/last_compatible_hint_track_version.md) | 2 |
-| [`Max packet size`](hint_track_sample_description/max_packet_size.md) | 4 |
-| [`Additional data table`](hint_track_sample_description/additional_data_table.md) | variable |
+| [`Size`](./hint_track_sample_description/size.md) | 4 |
+| [`Data format`](./hint_track_sample_description/data_format.md) | 4 |
+| [`Reserved`](./hint_track_sample_description/reserved.md) | 6 |
+| [`Data reference index`](./hint_track_sample_description/data_reference_index.md) | 2 |
+| [`Hint track version`](./hint_track_sample_description/hint_track_version.md) | 2 |
+| [`Last compatible hint track version`](./hint_track_sample_description/last_compatible_hint_track_version.md) | 2 |
+| [`Max packet size`](./hint_track_sample_description/max_packet_size.md) | 4 |
+| [`Additional data table`](./hint_track_sample_description/additional_data_table.md) | variable |
 
 ## Topics
 
 ### Data fields
-- [Size](hint_track_sample_description/size.md)
+- [Size](./hint_track_sample_description/size.md)
   A 32-bit integer specifying the size of this sample description in bytes.
-- [Data format](hint_track_sample_description/data_format.md)
+- [Data format](./hint_track_sample_description/data_format.md)
   A four-character code indicating the data format of the hint track samples.
-- [Reserved](hint_track_sample_description/reserved.md)
+- [Reserved](./hint_track_sample_description/reserved.md)
   Six bytes.
-- [Data reference index](hint_track_sample_description/data_reference_index.md)
+- [Data reference index](./hint_track_sample_description/data_reference_index.md)
   A field that indirectly specifies where to find the hint track sample data.
-- [Hint track version](hint_track_sample_description/hint_track_version.md)
+- [Hint track version](./hint_track_sample_description/hint_track_version.md)
   A 16-bit unsigned integer indicating the version of the hint track specification.
-- [Last compatible hint track version](hint_track_sample_description/last_compatible_hint_track_version.md)
+- [Last compatible hint track version](./hint_track_sample_description/last_compatible_hint_track_version.md)
   A 16-bit unsigned integer indicating the oldest hint track version with which this hint track is backward-compatible.
-- [Max packet size](hint_track_sample_description/max_packet_size.md)
+- [Max packet size](./hint_track_sample_description/max_packet_size.md)
   A 32-bit integer indicating the packet size limit, in bytes, used when creating this hint track.
-- [Additional data table](hint_track_sample_description/additional_data_table.md)
+- [Additional data table](./hint_track_sample_description/additional_data_table.md)
   A table of variable length containing additional information.
 
 ## See Also
 
-- [Hint media](hint_media.md)
+### Hint media
+- [Hint media](./hint_media.md)
   Provide information about data units to stream in hint tracks.
-- [Finding an original media track from a hint track](finding_an_original_media_track_from_a_hint_track.md)
+- [Finding an original media track from a hint track](./finding_an_original_media_track_from_a_hint_track.md)
   Use track reference atoms from hint tracks to locate the original media track.
-- [RTP hint tracks](rtp_hint_tracks.md)
+- [RTP hint tracks](./rtp_hint_tracks.md)
   Allow a streaming server to create RTP streams from a QuickTime movie.
-- [Packetization hint sample data](packetization_hint_sample_data.md)
+- [Packetization hint sample data](./packetization_hint_sample_data.md)
   An atom that describes the sample data for data using the Real-Time Transport Protocol (RTP).
 
 

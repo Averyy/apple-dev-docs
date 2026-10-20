@@ -1,7 +1,8 @@
 # GCControllerHomeButtonSettingCustomizationStatus.user
 
 **Framework**: Game Controller  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user has customized this setting at least once.
 
@@ -16,6 +17,10 @@ The user has customized this setting at least once.
 
 ```swift
 case user
+```
+
+```c
+GCControllerHomeButtonSettingCustomizationUser
 ```
 
 

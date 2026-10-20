@@ -1,7 +1,8 @@
 # font
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for accessing a font attribute.
 
@@ -21,11 +22,12 @@ let font: AttributeScopes.UIKitAttributes.FontAttribute
 
 ## See Also
 
-- [let kern: AttributeScopes.UIKitAttributes.KernAttribute](attributescopes/uikitattributes/kern.md)
+### Using Font and Layout Attributes
+- [let kern: AttributeScopes.UIKitAttributes.KernAttribute](./kern.md)
   A property for accessing a kerning attribute.
-- [let ligature: AttributeScopes.UIKitAttributes.LigatureAttribute](attributescopes/uikitattributes/ligature.md)
+- [let ligature: AttributeScopes.UIKitAttributes.LigatureAttribute](./ligature.md)
   A property for accessing a ligature attribute.
-- [let tracking: AttributeScopes.UIKitAttributes.TrackingAttribute](attributescopes/uikitattributes/tracking.md)
+- [let tracking: AttributeScopes.UIKitAttributes.TrackingAttribute](./tracking.md)
   A property for accessing a tracking attribute.
 
 

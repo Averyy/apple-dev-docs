@@ -1,7 +1,8 @@
 # init(continuation:function:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a checked continuation from an unsafe continuation.
 

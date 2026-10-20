@@ -1,7 +1,8 @@
 # UIMenuSystem.FindElementGroupConfiguration
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Represents a configuration for find elements, should they be present. You don’t create one of these directly. A configuration is provided as part of a `UIMainMenuSystemConfiguration`.
 
@@ -19,28 +20,33 @@ Represents a configuration for find elements, should they be present. You don’
 class FindElementGroupConfiguration
 ```
 
+```objc
+@interface UIMenuSystemFindElementGroupConfiguration : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var style: UIMenuSystem.FindElementGroupConfiguration.Style](uimenusystem/findelementgroupconfiguration/style-swift.property.md)
+- [var style: UIMenuSystem.FindElementGroupConfiguration.Style](./findelementgroupconfiguration/style-swift.property.md)
   Specifies a preference for the style of Find elements in the main menu.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
 
 ## See Also
 
-- [UIMenuSystem.FindElementGroupConfiguration.Style](uimenusystem/findelementgroupconfiguration/style-swift.enum.md)
+### Inspecting a configuration of find elements
+- [UIMenuSystem.FindElementGroupConfiguration.Style](./findelementgroupconfiguration/style-swift.enum.md)
   Represents a preference for the structure of Find elements in the main menu.
 
 

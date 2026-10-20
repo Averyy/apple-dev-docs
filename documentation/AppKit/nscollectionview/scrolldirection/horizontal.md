@@ -1,7 +1,8 @@
 # NSCollectionView.ScrollDirection.horizontal
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The layout scrolls content horizontally.
 
@@ -14,9 +15,14 @@ The layout scrolls content horizontally.
 case horizontal
 ```
 
+```c
+NSCollectionViewScrollDirectionHorizontal
+```
+
 ## See Also
 
-- [NSCollectionView.ScrollDirection.vertical](nscollectionview/scrolldirection/vertical.md)
+### Constants
+- [NSCollectionView.ScrollDirection.vertical](./vertical.md)
   The layout scrolls content vertically.
 
 

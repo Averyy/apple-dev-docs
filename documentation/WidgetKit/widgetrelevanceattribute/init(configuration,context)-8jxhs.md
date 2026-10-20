@@ -1,7 +1,8 @@
 # init(configuration:context:)
 
 **Framework**: WidgetKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new widget relevance for a specific configuration that is relevant in a specific context.
 
@@ -18,6 +19,8 @@ Creates a new widget relevance for a specific configuration that is relevant in 
 ```swift
 init(configuration: Configuration, context: RelevantContext)
 ```
+
+Available when `Configuration` conforms to `WidgetConfigurationIntent`.
 
 #### Discussion
 

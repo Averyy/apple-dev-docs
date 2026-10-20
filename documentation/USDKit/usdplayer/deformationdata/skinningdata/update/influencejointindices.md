@@ -1,7 +1,8 @@
 # influenceJointIndices
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Changed joint influence indices.
 

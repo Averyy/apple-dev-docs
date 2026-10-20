@@ -1,7 +1,8 @@
 # DeviceActivityFilter.Users
 
 **Framework**: Device Activity  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type your app uses to indicate which users to include in a device activity report.
 
@@ -19,16 +20,16 @@ struct Users
 ## Topics
 
 ### Type Properties
-- [static let all: DeviceActivityFilter.Users](deviceactivityfilter/users-swift.struct/all.md)
+- [static let all: DeviceActivityFilter.Users](./users-swift.struct/all.md)
   Filters data for all users that the current iCloud user has permission to report device activity.
-- [static let children: DeviceActivityFilter.Users](deviceactivityfilter/users-swift.struct/children.md)
+- [static let children: DeviceActivityFilter.Users](./users-swift.struct/children.md)
   Filters data for the children in the current user’s iCloud family.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

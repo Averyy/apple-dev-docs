@@ -1,15 +1,16 @@
 # UIPickerViewDataSource
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface for a picker view’s data source.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -18,26 +19,31 @@ The interface for a picker view’s data source.
 protocol UIPickerViewDataSource : NSObjectProtocol
 ```
 
+```objc
+@protocol UIPickerViewDataSource <NSObject>
+```
+
 #### Overview
 
-The data source of a [`UIPickerView`](uipickerview.md) object must adopt this protocol to mediate between the picker view object and your app’s data model for that picker view. The data source provides the picker view with the number of components, and the number of rows in each component, for displaying the picker view data. Both methods in this protocol are required.
+The data source of a [`UIPickerView`](./uipickerview.md) object must adopt this protocol to mediate between the picker view object and your app’s data model for that picker view. The data source provides the picker view with the number of components, and the number of rows in each component, for displaying the picker view data. Both methods in this protocol are required.
 
 ## Topics
 
 ### Providing counts for the picker view
-- [func numberOfComponents(in: UIPickerView) -> Int](uipickerviewdatasource/numberofcomponents(in:).md)
+- [func numberOfComponents(in: UIPickerView) -> Int](./uipickerviewdatasource/numberofcomponents%28in%29.md)
   Asks the data source for the number of components in the picker view.
-- [func pickerView(UIPickerView, numberOfRowsInComponent: Int) -> Int](uipickerviewdatasource/pickerview(_:numberofrowsincomponent:).md)
+- [func pickerView(UIPickerView, numberOfRowsInComponent: Int) -> Int](./uipickerviewdatasource/pickerview%28_,numberofrowsincomponent%29.md)
   Asks the data source for the number of rows for a specified component.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var dataSource: (any UIPickerViewDataSource)?](uipickerview/datasource.md)
+### Providing the picker data
+- [var dataSource: (any UIPickerViewDataSource)?](./uipickerview/datasource.md)
   The data source for the picker view.
 
 

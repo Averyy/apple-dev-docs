@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the view associated with this environment allows user interaction.
 
@@ -26,11 +27,12 @@ The default value is `true`.
 
 ## See Also
 
-- [func disabled(Bool) -> some View](view/disabled(_:).md)
+### Managing view interaction
+- [func disabled(Bool) -> some View](../view/disabled%28_%29.md)
   Adds a condition that controls whether someone can interact with this view.
-- [func interactionActivityTrackingTag(String) -> some View](view/interactionactivitytrackingtag(_:).md)
+- [func interactionActivityTrackingTag(String) -> some View](../view/interactionactivitytrackingtag%28_%29.md)
   Sets a tag that you use for tracking interactivity.
-- [func invalidatableContent(Bool) -> some View](view/invalidatablecontent(_:).md)
+- [func invalidatableContent(Bool) -> some View](../view/invalidatablecontent%28_%29.md)
   Mark the receiver as their content might be invalidated.
 
 

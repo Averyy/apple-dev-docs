@@ -1,7 +1,8 @@
 # WebPage.NavigationPreferences.ContentMode
 
 **Framework**: WebKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options to indicate how to render web view content.
 
@@ -25,38 +26,39 @@ Browsers often render webpages differently based on device type. For example, Sa
 ## Topics
 
 ### Enumeration Cases
-- [WebPage.NavigationPreferences.ContentMode.desktop](webpage/navigationpreferences/contentmode/desktop.md)
+- [WebPage.NavigationPreferences.ContentMode.desktop](./contentmode/desktop.md)
   The content mode that represents a desktop experience.
-- [WebPage.NavigationPreferences.ContentMode.mobile](webpage/navigationpreferences/contentmode/mobile.md)
+- [WebPage.NavigationPreferences.ContentMode.mobile](./contentmode/mobile.md)
   The content mode that represents a mobile experience.
-- [WebPage.NavigationPreferences.ContentMode.recommended](webpage/navigationpreferences/contentmode/recommended.md)
+- [WebPage.NavigationPreferences.ContentMode.recommended](./contentmode/recommended.md)
   The content mode that is appropriate for the current device.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol NavigationDeciding](webpage/navigationdeciding.md)
+### Managing navigation between webpages
+- [protocol NavigationDeciding](../navigationdeciding.md)
   Allows providing custom behavior to handle navigation changes and to coordinate these changes for the web page’s main page.
-- [WebPage.NavigationAction](webpage/navigationaction.md)
+- [WebPage.NavigationAction](../navigationaction.md)
   An object that contains information about an action that causes navigation to occur.
-- [WebPage.NavigationResponse](webpage/navigationresponse.md)
+- [WebPage.NavigationResponse](../navigationresponse.md)
   An object that contains the response to a navigation request, and which you use to make navigation-related policy decisions.
-- [WebPage.NavigationPreferences](webpage/navigationpreferences.md)
+- [WebPage.NavigationPreferences](../navigationpreferences.md)
   A type that specifies the behaviors to use when loading and rendering page content.
-- [WebPage.FrameInfo](webpage/frameinfo.md)
+- [WebPage.FrameInfo](../frameinfo.md)
   A type that contains information about a frame on a webpage.
-- [WebPage.NavigationPreferences.UpgradeToHTTPSPolicy](webpage/navigationpreferences/upgradetohttpspolicy.md)
+- [WebPage.NavigationPreferences.UpgradeToHTTPSPolicy](./upgradetohttpspolicy.md)
   Preference for loading a webpage with HTTPS, and how failures should be handled.
-- [WebPage.NavigationPreferences.SecurityRestrictionMode](webpage/navigationpreferences/securityrestrictionmode-swift.enum.md)
+- [WebPage.NavigationPreferences.SecurityRestrictionMode](./securityrestrictionmode-swift.enum.md)
   Security restriction modes for WebView content.
-- [WebPage.FormInfo](webpage/forminfo.md)
+- [WebPage.FormInfo](../forminfo.md)
   A type that contains information about a form submission from a webpage.
 
 

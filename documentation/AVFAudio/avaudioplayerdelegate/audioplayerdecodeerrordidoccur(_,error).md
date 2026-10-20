@@ -1,7 +1,8 @@
 # audioPlayerDecodeErrorDidOccur(_:error:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when an audio player encounters a decoding error during playback.
 
@@ -18,6 +19,10 @@ Tells the delegate when an audio player encounters a decoding error during playb
 
 ```swift
 optional func audioPlayerDecodeErrorDidOccur(_ player: AVAudioPlayer, error: (any Error)?)
+```
+
+```objc
+- (void) audioPlayerDecodeErrorDidOccur:(AVAudioPlayer *) player error:(NSError *) error;
 ```
 
 ## Parameters

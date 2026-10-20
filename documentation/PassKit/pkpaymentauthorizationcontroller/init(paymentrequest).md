@@ -1,7 +1,8 @@
 # init(paymentRequest:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a payment authorization controller.
 
@@ -19,6 +20,10 @@ Initializes and returns a payment authorization controller.
 init(paymentRequest request: PKPaymentRequest)
 ```
 
+```objc
+- (instancetype) initWithPaymentRequest:(PKPaymentRequest *) request;
+```
+
 #### Return Value
 
 The newly initialized view controller.
@@ -27,7 +32,7 @@ The newly initialized view controller.
 
 If the user can’t make payments on any of the payment request’s supported networks, initialization fails and this method returns `nil`.
 
-Present and dismiss the controller by calling its [`present(completion:)`](pkpaymentauthorizationcontroller/present(completion:).md) and [`dismiss(completion:)`](pkpaymentauthorizationcontroller/dismiss(completion:).md) methods.
+Present and dismiss the controller by calling its [`present(completion:)`](./present%28completion%29.md) and [`dismiss(completion:)`](./dismiss%28completion%29.md) methods.
 
 ## Parameters
 
@@ -35,7 +40,8 @@ Present and dismiss the controller by calling its [`present(completion:)`](pkpay
 
 ## See Also
 
-- [convenience init(disbursementRequest: PKDisbursementRequest)](pkpaymentauthorizationcontroller/init(disbursementrequest:).md)
+### Creating a payment authorization controller
+- [convenience init(disbursementRequest: PKDisbursementRequest)](./init%28disbursementrequest%29.md)
   Creates a new payment authorization controller with the disbursement request you provide.
 
 

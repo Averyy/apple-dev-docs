@@ -1,7 +1,8 @@
 # ScrollViewReader
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that provides programmatic scrolling, by working with a proxy to scroll to known child views.
 
@@ -23,9 +24,9 @@ nonisolated struct ScrollViewReader<Content> where Content : View
 
 #### Overview
 
-The scroll view reader’s content content builder receives a [`ScrollViewProxy`](scrollviewproxy.md) instance; you use the proxy’s [`scrollTo(_:anchor:)`](scrollviewproxy/scrollto(_:anchor:).md) to perform scrolling.
+The scroll view reader’s content content builder receives a [`ScrollViewProxy`](./scrollviewproxy.md) instance; you use the proxy’s [`scrollTo(_:anchor:)`](./scrollviewproxy/scrollto%28_,anchor%29.md) to perform scrolling.
 
-The following example creates a [`ScrollView`](scrollview.md) containing 100 views that together display a color gradient. It also contains two buttons, one each at the top and bottom. The top button tells the [`ScrollViewProxy`](scrollviewproxy.md) to scroll to the bottom button, and vice versa.
+The following example creates a [`ScrollView`](./scrollview.md) containing 100 views that together display a color gradient. It also contains two buttons, one each at the top and bottom. The top button tells the [`ScrollViewProxy`](./scrollviewproxy.md) to scroll to the bottom button, and vice versa.
 
 ```swift
 @Namespace var topID
@@ -63,29 +64,30 @@ func color(fraction: Double) -> Color {
 }
 ```
 
-![A scroll view, with a button labeled “Scroll to Bottom” at top.](/images/com.apple.SwiftUI/SwiftUI-ScrollViewReader-scroll-to-bottom-button@2x.png)
+![A scroll view, with a button labeled “Scroll to Bottom” at top.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-ScrollViewReader-scroll-to-bottom-button@2x.png)
 
-> ❗ **Important**: You may not use the [`ScrollViewProxy`](scrollviewproxy.md) during execution of the `content` content builder; doing so results in a runtime error. Instead, only actions created within `content` can call the proxy, such as gesture handlers or a view’s `onChange(of:perform:)` method.
+> ❗ **Important**: You may not use the [`ScrollViewProxy`](./scrollviewproxy.md) during execution of the `content` content builder; doing so results in a runtime error. Instead, only actions created within `content` can call the proxy, such as gesture handlers or a view’s `onChange(of:perform:)` method.
 
 ## Topics
 
 ### Creating a scroll view reader
-- [init(content: (ScrollViewProxy) -> Content)](scrollviewreader/init(content:).md)
+- [init(content: (ScrollViewProxy) -> Content)](./scrollviewreader/init%28content%29.md)
   Creates an instance that can perform programmatic scrolling of its child scroll views.
 ### Configuring a scroll view reader
-- [var content: (ScrollViewProxy) -> Content](scrollviewreader/content.md)
+- [var content: (ScrollViewProxy) -> Content](./scrollviewreader/content.md)
   The content builder that creates the reader’s content.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct ScrollView](scrollview.md)
+### Creating a scroll view
+- [struct ScrollView](./scrollview.md)
   A scrollable view.
-- [struct ScrollViewProxy](scrollviewproxy.md)
+- [struct ScrollViewProxy](./scrollviewproxy.md)
   A proxy value that supports programmatic scrolling of the scrollable views within a view hierarchy.
 
 

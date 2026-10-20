@@ -1,7 +1,8 @@
 # mapItem
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The map item to display.
 
@@ -16,6 +17,10 @@ The map item to display.
 
 ```swift
 var mapItem: MKMapItem? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) MKMapItem * mapItem;
 ```
 
 #### Discussion

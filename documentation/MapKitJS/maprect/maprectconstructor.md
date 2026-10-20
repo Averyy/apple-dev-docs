@@ -1,7 +1,8 @@
 # new MapRect(x, y, width, height)
 
 **Framework**: MapKit JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Constructor
 
 Creates an object that represents a rectangular region of the map projection.
 
@@ -10,7 +11,7 @@ Creates an object that represents a rectangular region of the map projection.
 
 ## Declaration
 
-```swift
+```
 constructor(x?: number, y?: number, width?: number, height?: number);
 ```
 
@@ -40,7 +41,8 @@ const height = mapRect.size.height; // 0.4
 
 ## See Also
 
-- [interface MapRectData](maprectdata.md)
+### Creating a map rectangle
+- [interface MapRectData](../maprectdata.md)
   A plain object representation of a rectangular region, in map units, of a two-dimensional map projection.
 
 

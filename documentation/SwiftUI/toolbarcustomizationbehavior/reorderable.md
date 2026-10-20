@@ -1,7 +1,8 @@
 # reorderable
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The reorderable customization behavior.
 
@@ -26,9 +27,10 @@ Items with this behavior start in the toolbar and can be moved within the toolba
 
 ## See Also
 
-- [static var `default`: ToolbarCustomizationBehavior](toolbarcustomizationbehavior/default.md)
+### Getting customization behaviors
+- [static var `default`: ToolbarCustomizationBehavior](./default.md)
   The default customization behavior.
-- [static var disabled: ToolbarCustomizationBehavior](toolbarcustomizationbehavior/disabled.md)
+- [static var disabled: ToolbarCustomizationBehavior](./disabled.md)
   The disabled customization behavior.
 
 

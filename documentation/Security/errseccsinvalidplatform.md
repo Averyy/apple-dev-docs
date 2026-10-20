@@ -1,7 +1,8 @@
 # errSecCSInvalidPlatform
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Invalid platform identifier or platform mismatch.
 
@@ -13,6 +14,10 @@ Invalid platform identifier or platform mismatch.
 
 ```swift
 var errSecCSInvalidPlatform: OSStatus { get }
+```
+
+```c
+errSecCSInvalidPlatform
 ```
 
 

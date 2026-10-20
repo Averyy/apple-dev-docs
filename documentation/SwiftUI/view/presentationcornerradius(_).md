@@ -1,7 +1,8 @@
 # presentationCornerRadius(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests that the presentation have a specific corner radius.
 
@@ -50,13 +51,14 @@ struct ContentView: View {
 
 ## See Also
 
-- [func presentationBackground<S>(S) -> some View](view/presentationbackground(_:).md)
+### Styling a sheet and its background
+- [func presentationBackground<S>(S) -> some View](./presentationbackground%28_%29.md)
   Sets the presentation background of the enclosing sheet using a shape style.
-- [func presentationBackground<V>(alignment: Alignment, content: () -> V) -> some View](view/presentationbackground(alignment:content:).md)
+- [func presentationBackground<V>(alignment: Alignment, content: () -> V) -> some View](./presentationbackground%28alignment,content%29.md)
   Sets the presentation background of the enclosing sheet to a custom view.
-- [func presentationBackgroundInteraction(PresentationBackgroundInteraction) -> some View](view/presentationbackgroundinteraction(_:).md)
+- [func presentationBackgroundInteraction(PresentationBackgroundInteraction) -> some View](./presentationbackgroundinteraction%28_%29.md)
   Controls whether people can interact with the view behind a presentation.
-- [struct PresentationBackgroundInteraction](presentationbackgroundinteraction.md)
+- [struct PresentationBackgroundInteraction](../presentationbackgroundinteraction.md)
   The kinds of interaction available to views behind a presentation.
 
 

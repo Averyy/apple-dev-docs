@@ -1,7 +1,8 @@
 # flags
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An integer value that specifies flags for the annotation.
 
@@ -19,29 +20,34 @@ An integer value that specifies flags for the annotation.
 static let flags: PDFAnnotationKey
 ```
 
+```c
+extern PDFAnnotationKey PDFAnnotationKeyFlags;
+```
+
 #### Discussion
 
-For a full description of annotation flags, see [`Table 165`](https://developer.apple.comhttps://www.adobe.com/content/dam/acom/en/devnet/acrobat/pdfs/PDF32000_2008.pdf#page=393) in the [`Adobe PDF 1.7 Specification`](https://developer.apple.comhttps://www.adobe.com/content/dam/acom/en/devnet/acrobat/pdfs/PDF32000_2008.pdf).
+For a full description of annotation flags, see [Table 165](https://www.adobe.com/content/dam/acom/en/devnet/acrobat/pdfs/PDF32000_2008.pdf#page=393) in the [Adobe PDF 1.7 Specification](https://www.adobe.com/content/dam/acom/en/devnet/acrobat/pdfs/PDF32000_2008.pdf).
 
 ## See Also
 
-- [static let contents: PDFAnnotationKey](pdfannotationkey/contents.md)
+### Configuring General Properties
+- [static let contents: PDFAnnotationKey](./contents.md)
   The text that the annotation displays or represents.
-- [static let date: PDFAnnotationKey](pdfannotationkey/date.md)
+- [static let date: PDFAnnotationKey](./date.md)
   The date, or string representation of a date, of the annotation’s most recent modification.
-- [static let name: PDFAnnotationKey](pdfannotationkey/name.md)
+- [static let name: PDFAnnotationKey](./name.md)
   A string that uniquely identifies the annotation among all annotations on the same page.
-- [static let page: PDFAnnotationKey](pdfannotationkey/page.md)
+- [static let page: PDFAnnotationKey](./page.md)
   A dictionary or PDF page object that includes the annotation.
-- [static let parent: PDFAnnotationKey](pdfannotationkey/parent.md)
+- [static let parent: PDFAnnotationKey](./parent.md)
   A dictionary or annotation object that a pop-up or widget belongs to.
-- [static let quadPoints: PDFAnnotationKey](pdfannotationkey/quadpoints.md)
+- [static let quadPoints: PDFAnnotationKey](./quadpoints.md)
   An array of floating point values that specifies a rectangular region of a page.
-- [static let rect: PDFAnnotationKey](pdfannotationkey/rect.md)
+- [static let rect: PDFAnnotationKey](./rect.md)
   The rectangle that the annotation occupies on the page, in page-space coordinates.
-- [static let subtype: PDFAnnotationKey](pdfannotationkey/subtype.md)
+- [static let subtype: PDFAnnotationKey](./subtype.md)
   The type of annotation that the entries in a dictionary describe.
-- [static let textLabel: PDFAnnotationKey](pdfannotationkey/textlabel.md)
+- [static let textLabel: PDFAnnotationKey](./textlabel.md)
   A string that represents the title of the annotation.
 
 

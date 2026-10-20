@@ -1,12 +1,15 @@
 # SSLGetDiffieHellmanParams(_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves the Diffie-Hellman parameters for a given context.
 
 **Availability**:
-- macOS 10.2+
+- macOS 10.2+ - Deprecated in 10.15
+
+> **Deprecated**: No longer supported. Use Network.framework.
 
 ## Declaration
 
@@ -14,13 +17,17 @@ Retrieves the Diffie-Hellman parameters for a given context.
 func SSLGetDiffieHellmanParams(_ context: SSLContext, _ dhParams: UnsafeMutablePointer<UnsafeRawPointer?>, _ dhParamsLen: UnsafeMutablePointer<Int>) -> OSStatus
 ```
 
+```c
+OSStatus SSLGetDiffieHellmanParams(SSLContextRef context, const void **dhParams, size_t *dhParamsLen);
+```
+
 #### Return Value
 
-A result code. See [`Secure Transport Result Codes`](secure-transport-result-codes.md).
+A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
 #### Discussion
 
-This function returns the parameter block specified in an earlier call to the [`SSLSetDiffieHellmanParams(_:_:_:)`](sslsetdiffiehellmanparams(_:_:_:).md) function. If that function was never called, the `dhParams` parameter returns `NULL` and the `dhParamsLen` parameter returns `0`.
+This function returns the parameter block specified in an earlier call to the [`SSLSetDiffieHellmanParams(_:_:_:)`](./sslsetdiffiehellmanparams%28_,_,_%29.md) function. If that function was never called, the `dhParams` parameter returns `NULL` and the `dhParamsLen` parameter returns `0`.
 
 ## Parameters
 

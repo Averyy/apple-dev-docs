@@ -1,7 +1,8 @@
 # UIVerticalBarEdge.unspecified
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system has no preferred edge for the vertical bar.
 
@@ -18,11 +19,16 @@ The system has no preferred edge for the vertical bar.
 case unspecified
 ```
 
+```c
+UIVerticalBarEdgeUnspecified
+```
+
 ## See Also
 
-- [UIVerticalBarEdge.leading](uiverticalbaredge/leading.md)
+### Getting the vertical bar edges
+- [UIVerticalBarEdge.leading](./leading.md)
   The vertical bar is on the leading edge.
-- [UIVerticalBarEdge.trailing](uiverticalbaredge/trailing.md)
+- [UIVerticalBarEdge.trailing](./trailing.md)
   The vertical bar is on the trailing edge.
 
 

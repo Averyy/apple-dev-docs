@@ -1,7 +1,8 @@
 # DataSourceControl
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A video selector control that identifies where the data for the element is coming from.
 
@@ -10,13 +11,14 @@ A video selector control that identifies where the data for the element is comin
 
 ## Declaration
 
-```swift
+```c
 DataSourceControl
 ```
 
 ## See Also
 
-- [DataDestinationControl](videodriverkit/iouservideoclassid/datadestinationcontrol.md)
+### Identifying data control types
+- [DataDestinationControl](./datadestinationcontrol.md)
   A video selector control that identifies where the data for the element is going.
 
 

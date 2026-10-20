@@ -1,29 +1,30 @@
 # kUSBHostConnectorType
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 typedef enum kUSBHostConnectorType kUSBHostConnectorType;
 ```
 
 ## Topics
 
 ### Constants
-- [kUSB3TypeMicroABConnector](kusbhostconnectortype/kusb3typemicroabconnector.md)
-- [kUSB3TypeMicroBConnector](kusbhostconnectortype/kusb3typemicrobconnector.md)
-- [kUSB3TypePowerBConnector](kusbhostconnectortype/kusb3typepowerbconnector.md)
-- [kUSB3TypeStdAConnector](kusbhostconnectortype/kusb3typestdaconnector.md)
-- [kUSB3TypeStdBConnector](kusbhostconnectortype/kusb3typestdbconnector.md)
-- [kUSBProprietaryConnector](kusbhostconnectortype/kusbproprietaryconnector.md)
-- [kUSBTypeAConnector](kusbhostconnectortype/kusbtypeaconnector.md)
-- [kUSBTypeExpressCard](kusbhostconnectortype/kusbtypeexpresscard.md)
-- [kUSBTypeMiniABConnector](kusbhostconnectortype/kusbtypeminiabconnector.md)
+- [kUSB3TypeMicroABConnector](./kusbhostconnectortype/kusb3typemicroabconnector.md)
+- [kUSB3TypeMicroBConnector](./kusbhostconnectortype/kusb3typemicrobconnector.md)
+- [kUSB3TypePowerBConnector](./kusbhostconnectortype/kusb3typepowerbconnector.md)
+- [kUSB3TypeStdAConnector](./kusbhostconnectortype/kusb3typestdaconnector.md)
+- [kUSB3TypeStdBConnector](./kusbhostconnectortype/kusb3typestdbconnector.md)
+- [kUSBProprietaryConnector](./kusbhostconnectortype/kusbproprietaryconnector.md)
+- [kUSBTypeAConnector](./kusbhostconnectortype/kusbtypeaconnector.md)
+- [kUSBTypeExpressCard](./kusbhostconnectortype/kusbtypeexpresscard.md)
+- [kUSBTypeMiniABConnector](./kusbhostconnectortype/kusbtypeminiabconnector.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # gIOTerminatedNotification
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 const OSSymbol *gIOTerminatedNotification;
 ```
 

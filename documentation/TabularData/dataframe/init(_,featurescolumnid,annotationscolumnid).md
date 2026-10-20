@@ -1,7 +1,8 @@
 # init(_:featuresColumnID:annotationsColumnID:)
 
 **Framework**: TabularData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a data frame from a sequence of annotated features.
 
@@ -22,8 +23,10 @@ init<S, Feature, Annotation>(_ sequence: S, featuresColumnID: ColumnID<Feature>,
 
 #### Discussion
 
-- Parameters - featuresColumnID: The features column ID in the data frame.
-- annotationsColumnID: The annotations column ID in the data frame.
+- Parameters
+
+  - featuresColumnID: The features column ID in the data frame.
+  - annotationsColumnID: The annotations column ID in the data frame.
 
 
 ---

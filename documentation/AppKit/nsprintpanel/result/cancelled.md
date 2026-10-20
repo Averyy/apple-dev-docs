@@ -1,7 +1,8 @@
 # NSPrintPanel.Result.cancelled
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 14.0+
@@ -12,9 +13,14 @@
 case cancelled
 ```
 
+```c
+NSPrintPanelResultCancelled
+```
+
 ## See Also
 
-- [NSPrintPanel.Result.printed](nsprintpanel/result/printed.md)
+### Constants
+- [NSPrintPanel.Result.printed](./printed.md)
 
 
 ---

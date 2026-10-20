@@ -1,7 +1,8 @@
 # LanguageAvailability
 
 **Framework**: Translation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A check for language support and status.
 
@@ -37,22 +38,22 @@ func translationIsSupported(from source: Locale.Language, to target: Locale.Lang
 ## Topics
 
 ### Creating a language availability
-- [init()](languageavailability/init.md)
+- [init()](./languageavailability/init%28%29.md)
   Creates an instance to check what languages are available.
-- [init(preferredStrategy: TranslationSession.Strategy)](languageavailability/init(preferredstrategy:).md)
+- [init(preferredStrategy: TranslationSession.Strategy)](./languageavailability/init%28preferredstrategy%29.md)
   Creates an instance for checking language availability with a preferred translation strategy.
 ### Configuring language availability
-- [var preferredStrategy: TranslationSession.Strategy](languageavailability/preferredstrategy.md)
+- [var preferredStrategy: TranslationSession.Strategy](./languageavailability/preferredstrategy.md)
   The preferred strategy of translation to check availability for.
 ### Getting supported languages
-- [var supportedLanguages: [Locale.Language]](languageavailability/supportedlanguages.md)
+- [var supportedLanguages: [Locale.Language]](./languageavailability/supportedlanguages.md)
   A list of translation languages the framework supports.
 ### Checking language availability
-- [func status(from: Locale.Language, to: Locale.Language?) async -> LanguageAvailability.Status](languageavailability/status(from:to:).md)
+- [func status(from: Locale.Language, to: Locale.Language?) async -> LanguageAvailability.Status](./languageavailability/status%28from,to%29.md)
   Checks for the installation of a specific language pairing and whether it’s ready for translation.
-- [func status(for: String, to: Locale.Language?) async throws -> LanguageAvailability.Status](languageavailability/status(for:to:).md)
+- [func status(for: String, to: Locale.Language?) async throws -> LanguageAvailability.Status](./languageavailability/status%28for,to%29.md)
   Checks to see if the framework supports the language pairing based off a string of sample text.
-- [LanguageAvailability.Status](languageavailability/status.md)
+- [LanguageAvailability.Status](./languageavailability/status.md)
   The availability status for a language or language pairing.
 
 

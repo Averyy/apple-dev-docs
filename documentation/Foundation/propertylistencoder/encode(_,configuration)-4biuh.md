@@ -1,7 +1,8 @@
 # encode(_:configuration:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.0+
@@ -20,11 +21,12 @@ func encode<T, C>(_ value: T, configuration: C.Type) throws -> Data where T : En
 
 ## See Also
 
-- [init()](propertylistencoder/init.md)
+### Encoding
+- [init()](./init%28%29.md)
   Creates a new, reusable property list encoder with the default formatting settings.
-- [func encode<Value>(Value) throws -> Data](propertylistencoder/encode(_:).md)
+- [func encode<Value>(Value) throws -> Data](./encode%28_%29.md)
   Returns a property list that represents an encoded version of the value you supply.
-- [func encode<T>(T, configuration: T.EncodingConfiguration) throws -> Data](propertylistencoder/encode(_:configuration:)-5ee8q.md)
+- [func encode<T>(T, configuration: T.EncodingConfiguration) throws -> Data](./encode%28_,configuration%29-5ee8q.md)
 
 
 ---

@@ -1,6 +1,7 @@
 # Memory management
 
-**Framework**: Hypervisor
+**Framework**: Hypervisor  
+**Role**: API Collection
 
 Map memory into the physical address space of the virtual machine.
 
@@ -10,25 +11,26 @@ Hypervisor virtualizes the memory seen by the guest as physical address space on
 
 The name for a physical address in the guest address space is an intermediate physical address or IPA in the host.
 
-It’s possible to map memory regions in the host process into the intermediate physical address (IPA) with [`hv_vm_map(_:_:_:_:)`](hv_vm_map(_:_:_:_:).md).
+It’s possible to map memory regions in the host process into the intermediate physical address (IPA) with [`hv_vm_map(_:_:_:_:)`](./hv_vm_map%28_,_,_,_%29.md).
 
-Modify the guest’s access permissions over the entire region or subregions with [`hv_vm_protect(_:_:_:)`](hv_vm_protect(_:_:_:).md).
+Modify the guest’s access permissions over the entire region or subregions with [`hv_vm_protect(_:_:_:)`](./hv_vm_protect%28_,_,_%29.md).
 
 ## Topics
 
 ### Intermediate physical memory
-- [func hv_vm_map(UnsafeMutableRawPointer, hv_ipa_t, Int, hv_memory_flags_t) -> hv_return_t](hv_vm_map(_:_:_:_:).md)
+- [func hv_vm_map(UnsafeMutableRawPointer, hv_ipa_t, Int, hv_memory_flags_t) -> hv_return_t](./hv_vm_map%28_,_,_,_%29.md)
   Maps a region in the virtual address space of the current process into the guest physical address space of the VM.
-- [func hv_vm_unmap(hv_ipa_t, Int) -> hv_return_t](hv_vm_unmap(_:_:).md)
+- [func hv_vm_unmap(hv_ipa_t, Int) -> hv_return_t](./hv_vm_unmap%28_,_%29.md)
   Unmaps a region in the guest physical address space of the VM.
-- [func hv_vm_protect(hv_ipa_t, Int, hv_memory_flags_t) -> hv_return_t](hv_vm_protect(_:_:_:).md)
+- [func hv_vm_protect(hv_ipa_t, Int, hv_memory_flags_t) -> hv_return_t](./hv_vm_protect%28_,_,_%29.md)
   Modifies the permissions of a region in the guest physical address space of the VM.
-- [typealias hv_ipa_t](hv_ipa_t.md)
+- [typealias hv_ipa_t](./hv_ipa_t.md)
   The type of an intermediate physical address, which is a guest physical address space of the VM.
 
 ## See Also
 
-- [vCPU Management](vcpu-management.md)
+### Resource management
+- [vCPU Management](./vcpu-management.md)
   Create and run virtual CPUs, and manage CPU-specific registers and features.
 
 

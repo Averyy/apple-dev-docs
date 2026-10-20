@@ -1,7 +1,8 @@
 # language
 
 **Framework**: Natural Language  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The language that the framework identified or used when processing the input string.
 
@@ -20,11 +21,16 @@ The language that the framework identified or used when processing the input str
 var language: NLLanguage { get }
 ```
 
+```objc
+@property (copy, readonly) NLLanguage language;
+```
+
 ## See Also
 
-- [var sequenceLength: Int](nlcontextualembeddingresult/sequencelength.md)
+### Inspecting the result
+- [var sequenceLength: Int](./sequencelength.md)
   The number of embedding vectors the request generates.
-- [var string: String](nlcontextualembeddingresult/string.md)
+- [var string: String](./string.md)
   A copy of the input string used to generate the embedding vectors.
 
 

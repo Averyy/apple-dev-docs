@@ -1,7 +1,8 @@
 # zIndex
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The z-index of the view within the arrangement.
 
@@ -20,9 +21,10 @@ var zIndex: Int { get }
 
 ## See Also
 
-- [var isHidden: Bool](uiarrangementviewcontroller/viewstate/ishidden.md)
+### Getting the state
+- [var isHidden: Bool](./ishidden.md)
   A Boolean value that indicates whether the view is hidden in the current arrangement.
-- [var splitAxis: UIAxis](uiarrangementviewcontroller/viewstate/splitaxis.md)
+- [var splitAxis: UIAxis](./splitaxis.md)
   The axis of the current split for the view within the arrangement if it exists.
 
 

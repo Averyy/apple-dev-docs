@@ -1,14 +1,15 @@
 # GetFrameNumber
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 kern_return_t GetFrameNumber(uint64_t *frameNumber, uint64_t *theTime, OSDispatchMethod supermethod);
 ```
 

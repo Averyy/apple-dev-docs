@@ -1,7 +1,8 @@
 # path
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The complete scene path to this property, relative to its stage.
 

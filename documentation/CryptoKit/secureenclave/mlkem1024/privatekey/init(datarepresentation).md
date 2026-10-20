@@ -1,7 +1,8 @@
 # init(dataRepresentation:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - tvOS 26.0+

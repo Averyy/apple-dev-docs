@@ -1,7 +1,8 @@
 # url
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL represented by the resource.
 
@@ -14,9 +15,14 @@ The URL represented by the resource.
 var url: URL { get }
 ```
 
+```objc
+@property (copy, readonly) NSURL * url;
+```
+
 ## See Also
 
-- [var isWritable: Bool](fspathurlresource/iswritable.md)
+### Accessing resource properties
+- [var isWritable: Bool](./iswritable.md)
   A Boolean value that indicates whether the file system supports writing to the contents of the path URL.
 
 

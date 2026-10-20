@@ -1,7 +1,8 @@
 # dataBuffer
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 var dataBuffer: Data? { get }
+```
+
+```objc
+@property (strong, readonly, nullable) NSData * dataBuffer;
 ```
 
 

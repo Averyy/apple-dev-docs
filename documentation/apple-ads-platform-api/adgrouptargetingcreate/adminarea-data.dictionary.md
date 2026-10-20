@@ -1,7 +1,8 @@
 # AdGroupTargetingCreate.AdminArea
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 State or province (administrative area) targeting.
 
@@ -10,13 +11,13 @@ State or province (administrative area) targeting.
 
 ## Declaration
 
-```swift
+```
 object AdGroupTargetingCreate.AdminArea
 ```
 
 #### Discussion
 
-Admin area IDs are returned by [`Search Geo Locations`](searches-for-a-list-of-geo-locations.md) or [`Query Geo Locations`](gets-a-list-of-geo-locations.md). Used with App Store and Apple Maps campaigns. Uses the [`TargetingDataCreate`](targetingdatacreate.md) `include`/`exclude` shape.
+Admin area IDs are returned by [`Search Geo Locations`](../searches-for-a-list-of-geo-locations.md) or [`Query Geo Locations`](../gets-a-list-of-geo-locations.md). Used with App Store and Apple Maps campaigns. Uses the [`TargetingDataCreate`](../targetingdatacreate.md) `include`/`exclude` shape.
 
 ```json
 "adminArea": {

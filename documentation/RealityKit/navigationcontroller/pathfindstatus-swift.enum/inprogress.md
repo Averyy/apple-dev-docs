@@ -1,7 +1,8 @@
 # NavigationController.PathfindStatus.inProgress
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The pathfind is still running and has not completed.
 
@@ -21,11 +22,12 @@ case inProgress
 
 ## See Also
 
-- [NavigationController.PathfindStatus.succeeded](navigationcontroller/pathfindstatus-swift.enum/succeeded.md)
+### Reading the pathfinding status
+- [NavigationController.PathfindStatus.succeeded](./succeeded.md)
   The pathfind succeeded in finding a path.
-- [NavigationController.PathfindStatus.failed](navigationcontroller/pathfindstatus-swift.enum/failed.md)
+- [NavigationController.PathfindStatus.failed](./failed.md)
   The pathfind failed to run or find a path.
-- [NavigationController.PathfindStatus.none](navigationcontroller/pathfindstatus-swift.enum/none.md)
+- [NavigationController.PathfindStatus.none](./none.md)
   No pathfind request was made or any existing ones were cancelled.
 
 

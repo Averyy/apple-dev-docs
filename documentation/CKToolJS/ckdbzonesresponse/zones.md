@@ -1,7 +1,8 @@
 # zones
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of fetched zones.
 
@@ -10,7 +11,7 @@ The array of fetched zones.
 
 ## Declaration
 
-```swift
+```
 attribute CKDBZone[] zones;
 ```
 

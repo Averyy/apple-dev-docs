@@ -1,14 +1,15 @@
 # ml_report_minor_badness
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 13.3+
 
 ## Declaration
 
-```swift
+```c
 void ml_report_minor_badness(uint32_t badness_id);
 ```
 

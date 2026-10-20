@@ -1,7 +1,8 @@
 # startBrowse(forCommissionables:queue:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func startBrowse(forCommissionables delegate: any MTRCommissionableBrowserDelegate, queue: dispatch_queue_t) -> Bool
+```
+
+```objc
+- (BOOL) startBrowseForCommissionables:(id<MTRCommissionableBrowserDelegate>) delegate queue:(dispatch_queue_t) queue;
 ```
 
 

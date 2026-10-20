@@ -1,21 +1,26 @@
 # UIScrollView.IndicatorStyle.default
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default style of scroll indicator, which is black with a white border.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case `default`
+```
+
+```c
+UIScrollViewIndicatorStyleDefault
 ```
 
 #### Discussion
@@ -24,9 +29,10 @@ This style is good against any content background.
 
 ## See Also
 
-- [UIScrollView.IndicatorStyle.black](uiscrollview/indicatorstyle-swift.enum/black.md)
+### Constants
+- [UIScrollView.IndicatorStyle.black](./black.md)
   A style of indicator which is black and smaller than the default style.
-- [UIScrollView.IndicatorStyle.white](uiscrollview/indicatorstyle-swift.enum/white.md)
+- [UIScrollView.IndicatorStyle.white](./white.md)
   A style of indicator is white and smaller than the default style.
 
 

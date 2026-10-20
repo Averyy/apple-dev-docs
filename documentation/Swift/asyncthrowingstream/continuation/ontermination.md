@@ -1,7 +1,8 @@
 # onTermination
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A callback to invoke when canceling iteration of an asynchronous stream.
 
@@ -26,11 +27,12 @@ If an `onTermination` callback is set, using task cancellation to terminate iter
 
 Canceling an active iteration invokes the `onTermination` callback first, and then resumes by yielding `nil` or throwing an error from the iterator. This means that you can perform needed cleanup in the cancellation handler. After reaching a terminal state, the `AsyncThrowingStream` disposes of the callback.
 
-> **Note**: Because the system might call the `onTermination` callback as part of task cancellation, it’s subject to the same considerations for avoiding deadlock as outlined in the documentation for [`withTaskCancellationHandler(operation:onCancel:)`](withtaskcancellationhandler(operation:oncancel:).md).
+> **Note**: Because the system might call the `onTermination` callback as part of task cancellation, it’s subject to the same considerations for avoiding deadlock as outlined in the documentation for [`withTaskCancellationHandler(operation:onCancel:)`](../../withtaskcancellationhandler%28operation,oncancel%29.md).
 
 ## See Also
 
-- [AsyncThrowingStream.Continuation.Termination](asyncthrowingstream/continuation/termination.md)
+### Handling Termination
+- [AsyncThrowingStream.Continuation.Termination](./termination.md)
   A type that indicates how the stream terminated.
 
 

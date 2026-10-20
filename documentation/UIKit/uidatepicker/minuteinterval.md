@@ -1,7 +1,8 @@
 # minuteInterval
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The interval at which the date picker should display minutes.
 
@@ -17,19 +18,24 @@ The interval at which the date picker should display minutes.
 var minuteInterval: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSInteger minuteInterval;
+```
+
 #### Discussion
 
 Use this property to set the interval displayed by the minutes wheel (for example, 15 minutes). The interval value must be evenly divided into 60; if it isn’t, the default value is used. The default and minimum values are 1; the maximum value is 30.
 
 ## See Also
 
-- [var maximumDate: Date?](uidatepicker/maximumdate.md)
+### Configuring temporal attributes
+- [var maximumDate: Date?](./maximumdate.md)
   The maximum date that a date picker can show.
-- [var minimumDate: Date?](uidatepicker/minimumdate.md)
+- [var minimumDate: Date?](./minimumdate.md)
   The minimum date that a date picker can show.
-- [var countDownDuration: TimeInterval](uidatepicker/countdownduration.md)
+- [var countDownDuration: TimeInterval](./countdownduration.md)
   The value displayed by the date picker when the mode property is set to show a countdown time.
-- [var roundsToMinuteInterval: Bool](uidatepicker/roundstominuteinterval.md)
+- [var roundsToMinuteInterval: Bool](./roundstominuteinterval.md)
   A Boolean value that determines whether the date rounds to a specific minute interval.
 
 

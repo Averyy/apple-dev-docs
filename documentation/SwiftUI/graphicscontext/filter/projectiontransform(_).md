@@ -1,7 +1,8 @@
 # projectionTransform(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a filter that transforms the rasterized form of subsequent graphics primitives.
 

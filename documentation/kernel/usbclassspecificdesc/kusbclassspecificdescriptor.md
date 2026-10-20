@@ -1,7 +1,8 @@
 # kUSBClassSpecificDescriptor
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The class-specific descriptor value.
 
@@ -10,7 +11,7 @@ The class-specific descriptor value.
 
 ## Declaration
 
-```swift
+```c
 kUSBClassSpecificDescriptor = 0x24
 ```
 

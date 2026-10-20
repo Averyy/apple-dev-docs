@@ -1,7 +1,8 @@
 # mada
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mada payment card.
 
@@ -19,39 +20,44 @@ A mada payment card.
 static let mada: PKPaymentNetwork
 ```
 
+```c
+extern PKPaymentNetwork const PKPaymentNetworkMada;
+```
+
 ## Mentions
 
-- [Complying with regional regulations](complying-with-regional-regulations.md)
+- [Complying with regional regulations](../complying-with-regional-regulations.md)
 
 ## See Also
 
-- [static let amex: PKPaymentNetwork](pkpaymentnetwork/amex.md)
+### Payment networks
+- [static let amex: PKPaymentNetwork](./amex.md)
   An American Express payment card.
-- [static let bancomat: PKPaymentNetwork](pkpaymentnetwork/bancomat.md)
+- [static let bancomat: PKPaymentNetwork](./bancomat.md)
   A Bancomat payment card.
-- [static let bancontact: PKPaymentNetwork](pkpaymentnetwork/bancontact.md)
+- [static let bancontact: PKPaymentNetwork](./bancontact.md)
   A Bancontact payment card.
-- [static let bankAxept: PKPaymentNetwork](pkpaymentnetwork/bankaxept.md)
-- [static let barcode: PKPaymentNetwork](pkpaymentnetwork/barcode.md)
+- [static let bankAxept: PKPaymentNetwork](./bankaxept.md)
+- [static let barcode: PKPaymentNetwork](./barcode.md)
   A QR code to use for payment.
-- [static let carteBancaire: PKPaymentNetwork](pkpaymentnetwork/cartebancaire.md)
-- [static let cartesBancaires: PKPaymentNetwork](pkpaymentnetwork/cartesbancaires.md)
+- [static let carteBancaire: PKPaymentNetwork](./cartebancaire.md)
+- [static let cartesBancaires: PKPaymentNetwork](./cartesbancaires.md)
   A Cartes Bancaires payment card.
-- [static let chinaUnionPay: PKPaymentNetwork](pkpaymentnetwork/chinaunionpay.md)
+- [static let chinaUnionPay: PKPaymentNetwork](./chinaunionpay.md)
   A China Union Pay payment card.
-- [static let dankort: PKPaymentNetwork](pkpaymentnetwork/dankort.md)
+- [static let dankort: PKPaymentNetwork](./dankort.md)
   The Dankort payment card.
-- [static let discover: PKPaymentNetwork](pkpaymentnetwork/discover.md)
+- [static let discover: PKPaymentNetwork](./discover.md)
   A Discover payment card.
-- [static let eftpos: PKPaymentNetwork](pkpaymentnetwork/eftpos.md)
+- [static let eftpos: PKPaymentNetwork](./eftpos.md)
   The electronic funds transfer at point of sale (EFTPOS) payment method.
-- [static let electron: PKPaymentNetwork](pkpaymentnetwork/electron.md)
+- [static let electron: PKPaymentNetwork](./electron.md)
   An Electron debit card.
-- [static let elo: PKPaymentNetwork](pkpaymentnetwork/elo.md)
+- [static let elo: PKPaymentNetwork](./elo.md)
   The Elo payment card.
-- [static let girocard: PKPaymentNetwork](pkpaymentnetwork/girocard.md)
+- [static let girocard: PKPaymentNetwork](./girocard.md)
   A Girocard payment method.
-- [static let idCredit: PKPaymentNetwork](pkpaymentnetwork/idcredit.md)
+- [static let idCredit: PKPaymentNetwork](./idcredit.md)
   An iD payment card.
 
 

@@ -1,7 +1,8 @@
 # EmptyCollection.Iterator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An iterator that never produces an element.
 
@@ -24,22 +25,22 @@ struct Iterator
 ## Topics
 
 ### Initializers
-- [init()](emptycollection/iterator/init.md)
+- [init()](./iterator/init%28%29.md)
   Creates an instance.
 ### Default Implementations
-- [IteratorProtocol Implementations](emptycollection/iterator/iteratorprotocol-implementations.md)
-- [Sequence Implementations](emptycollection/iterator/sequence-implementations.md)
+- [IteratorProtocol Implementations](./iterator/iteratorprotocol-implementations.md)
+- [Sequence Implementations](./iterator/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [IteratorProtocol](iteratorprotocol.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Sequence](sequence.md)
+- [BitwiseCopyable](../bitwisecopyable.md)
+- [Copyable](../copyable.md)
+- [Escapable](../escapable.md)
+- [IteratorProtocol](../iteratorprotocol.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
+- [Sequence](../sequence.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # MDLAnimatedQuaternion
 
 **Framework**: Model I/O  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 12.0+
@@ -17,31 +18,35 @@
 class MDLAnimatedQuaternion
 ```
 
+```objc
+@interface MDLAnimatedQuaternion : MDLAnimatedValue
+```
+
 ## Topics
 
 ### Instance Properties
-- [var doubleQuaternionArray: [simd_quatd]](mdlanimatedquaternion/doublequaternionarray.md)
-- [var floatQuaternionArray: [simd_quatf]](mdlanimatedquaternion/floatquaternionarray.md)
+- [var doubleQuaternionArray: [simd_quatd]](./mdlanimatedquaternion/doublequaternionarray.md)
+- [var floatQuaternionArray: [simd_quatf]](./mdlanimatedquaternion/floatquaternionarray.md)
 ### Instance Methods
-- [func doubleQuaternionValue(atTime: TimeInterval) -> simd_quatd](mdlanimatedquaternion/doublequaternionvalue(attime:).md)
-- [func floatQuaternionValue(atTime: TimeInterval) -> simd_quatf](mdlanimatedquaternion/floatquaternionvalue(attime:).md)
-- [func reset(doubleQuaternionArray: [simd_quatd], atTimes: [TimeInterval])](mdlanimatedquaternion/reset(doublequaternionarray:attimes:).md)
-- [func reset(floatQuaternionArray: [simd_quatf], atTimes: [TimeInterval])](mdlanimatedquaternion/reset(floatquaternionarray:attimes:).md)
-- [func setDoubleQuaternion(simd_quatd, atTime: TimeInterval)](mdlanimatedquaternion/setdoublequaternion(_:attime:).md)
-- [func setFloatQuaternion(simd_quatf, atTime: TimeInterval)](mdlanimatedquaternion/setfloatquaternion(_:attime:).md)
+- [func doubleQuaternionValue(atTime: TimeInterval) -> simd_quatd](./mdlanimatedquaternion/doublequaternionvalue%28attime%29.md)
+- [func floatQuaternionValue(atTime: TimeInterval) -> simd_quatf](./mdlanimatedquaternion/floatquaternionvalue%28attime%29.md)
+- [func reset(doubleQuaternionArray: [simd_quatd], atTimes: [TimeInterval])](./mdlanimatedquaternion/reset%28doublequaternionarray,attimes%29.md)
+- [func reset(floatQuaternionArray: [simd_quatf], atTimes: [TimeInterval])](./mdlanimatedquaternion/reset%28floatquaternionarray,attimes%29.md)
+- [func setDoubleQuaternion(simd_quatd, atTime: TimeInterval)](./mdlanimatedquaternion/setdoublequaternion%28_,attime%29.md)
+- [func setFloatQuaternion(simd_quatf, atTime: TimeInterval)](./mdlanimatedquaternion/setfloatquaternion%28_,attime%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MDLAnimatedValue](mdlanimatedvalue.md)
+- [MDLAnimatedValue](./mdlanimatedvalue.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

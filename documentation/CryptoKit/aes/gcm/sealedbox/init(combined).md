@@ -1,7 +1,8 @@
 # init(combined:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sealed box from the combined bytes of an authentication tag, nonce, and encrypted data.
 
@@ -26,7 +27,8 @@ init<D>(combined: D) throws where D : DataProtocol
 
 ## See Also
 
-- [init<C, T>(nonce: AES.GCM.Nonce, ciphertext: C, tag: T) throws](aes/gcm/sealedbox/init(nonce:ciphertext:tag:).md)
+### Creating the sealed box
+- [init<C, T>(nonce: AES.GCM.Nonce, ciphertext: C, tag: T) throws](./init%28nonce,ciphertext,tag%29.md)
   Creates a sealed box from the given tag, nonce, and ciphertext.
 
 

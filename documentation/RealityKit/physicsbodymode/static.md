@@ -1,7 +1,8 @@
 # PhysicsBodyMode.static
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The body never moves.
 
@@ -11,7 +12,7 @@ The body never moves.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ case `static`
 
 ## See Also
 
-- [PhysicsBodyMode.kinematic](physicsbodymode/kinematic.md)
+### Setting the physics body mode
+- [PhysicsBodyMode.kinematic](./kinematic.md)
   The user controls body movement.
-- [PhysicsBodyMode.dynamic](physicsbodymode/dynamic.md)
+- [PhysicsBodyMode.dynamic](./dynamic.md)
   Forces and collisions control body movement.
 
 

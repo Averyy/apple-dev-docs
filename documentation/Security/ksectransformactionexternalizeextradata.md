@@ -1,17 +1,24 @@
 # kSecTransformActionExternalizeExtraData
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An action that triggers after data is stored.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 13.0
+
+> **Deprecated**: SecTransform is no longer supported
 
 ## Declaration
 
 ```swift
 let kSecTransformActionExternalizeExtraData: CFString
+```
+
+```c
+extern CFStringRef const kSecTransformActionExternalizeExtraData;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # SHMatch
 
 **Framework**: ShazamKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents the catalog media items that match a query.
 
@@ -20,6 +21,10 @@ An object that represents the catalog media items that match a query.
 class SHMatch
 ```
 
+```objc
+@interface SHMatch : NSObject
+```
+
 #### Overview
 
 A single query signature may match more than one reference signature. In addition, one reference signature may map to many media items.
@@ -27,40 +32,41 @@ A single query signature may match more than one reference signature. In additio
 ## Topics
 
 ### Reading match information
-- [var mediaItems: [SHMatchedMediaItem]](shmatch/mediaitems.md)
+- [var mediaItems: [SHMatchedMediaItem]](./shmatch/mediaitems.md)
   An array of the media items in the catalog that match the query signature, in order of the quality of the match.
-- [var querySignature: SHSignature](shmatch/querysignature.md)
+- [var querySignature: SHSignature](./shmatch/querysignature.md)
   The query signature for the match.
 ### Initializers
-- [init?(coder: NSCoder)](shmatch/init(coder:).md)
+- [init?(coder: NSCoder)](./shmatch/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class SHSession](shsession.md)
+### Match audio
+- [class SHSession](./shsession.md)
   An object that matches a specific audio recording when a segment of that recording is part of captured sound in the Shazam catalog or your custom catalog.
-- [class SHManagedSession](shmanagedsession.md)
+- [class SHManagedSession](./shmanagedsession.md)
   An object that records and matches a recording with captured sound in the Shazam catalog or your custom catalog.
-- [protocol SHSessionDelegate](shsessiondelegate.md)
+- [protocol SHSessionDelegate](./shsessiondelegate.md)
   Methods that the session calls with the result of a match request.
-- [class SHMatchedMediaItem](shmatchedmediaitem.md)
+- [class SHMatchedMediaItem](./shmatchedmediaitem.md)
   An object that represents the metadata for a matched reference signature.
-- [class SHMediaItem](shmediaitem.md)
+- [class SHMediaItem](./shmediaitem.md)
   An object that represents the metadata for a reference signature.
 
 

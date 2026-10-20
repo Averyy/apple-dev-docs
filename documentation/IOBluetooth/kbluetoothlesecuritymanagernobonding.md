@@ -1,10 +1,11 @@
 # kBluetoothLESecurityManagerNoBonding
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kBluetoothLESecurityManagerNoBonding: Int { get }
 ```
 
+```c
+kBluetoothLESecurityManagerNoBonding
+```
+
 ## See Also
 
-- [var kBluetoothLESecurityManagerBonding: Int](kbluetoothlesecuritymanagerbonding.md)
-- [var kBluetoothLESecurityManagerReservedEnd: Int](kbluetoothlesecuritymanagerreservedend.md)
-- [var kBluetoothLESecurityManagerReservedStart: Int](kbluetoothlesecuritymanagerreservedstart.md)
+### Constants
+- [var kBluetoothLESecurityManagerBonding: Int](./kbluetoothlesecuritymanagerbonding.md)
+- [var kBluetoothLESecurityManagerReservedEnd: Int](./kbluetoothlesecuritymanagerreservedend.md)
+- [var kBluetoothLESecurityManagerReservedStart: Int](./kbluetoothlesecuritymanagerreservedstart.md)
 
 
 ---

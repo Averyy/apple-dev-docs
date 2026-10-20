@@ -1,7 +1,8 @@
 # PermissionFlow.approveInPerson
 
 **Framework**: PermissionKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Goes directly to the Approve-in-Person flow, prompting the user for the Screen Time passcode.
 

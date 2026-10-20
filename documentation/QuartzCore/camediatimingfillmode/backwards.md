@@ -1,7 +1,8 @@
 # backwards
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The receiver clamps values before zero to zero when the animation is completed.
 
@@ -19,13 +20,18 @@ The receiver clamps values before zero to zero when the animation is completed.
 static let backwards: CAMediaTimingFillMode
 ```
 
+```c
+extern CAMediaTimingFillMode const kCAFillModeBackwards;
+```
+
 ## See Also
 
-- [static let removed: CAMediaTimingFillMode](camediatimingfillmode/removed.md)
+### Constants
+- [static let removed: CAMediaTimingFillMode](./removed.md)
   The receiver is removed from the presentation when the animation is completed.
-- [static let forwards: CAMediaTimingFillMode](camediatimingfillmode/forwards.md)
+- [static let forwards: CAMediaTimingFillMode](./forwards.md)
   The receiver remains visible in its final state when the animation is completed.
-- [static let both: CAMediaTimingFillMode](camediatimingfillmode/both.md)
+- [static let both: CAMediaTimingFillMode](./both.md)
   The receiver clamps values at both ends of the object’s time space
 
 

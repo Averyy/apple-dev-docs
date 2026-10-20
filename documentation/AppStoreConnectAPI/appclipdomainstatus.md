@@ -1,7 +1,8 @@
 # AppClipDomainStatus
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The validation status of the associated domains configured for an App Clip, indicating whether each domain is reachable and correctly set up.
 
@@ -10,14 +11,14 @@ The validation status of the associated domains configured for an App Clip, indi
 
 ## Declaration
 
-```swift
+```
 object AppClipDomainStatus
 ```
 
 ## Topics
 
 ### Objects
-- [object AppClipDomainStatus.Attributes](appclipdomainstatus/attributes-data.dictionary.md)
+- [object AppClipDomainStatus.Attributes](./appclipdomainstatus/attributes-data.dictionary.md)
   The attributes that describe the App Clip Domain Status resource.
 
 ## Properties
@@ -27,19 +28,22 @@ object AppClipDomainStatus
 - `links` (ResourceLinks): Navigational links that include the self-link.
 - `type` (string) *(required)*: The resource type.
 
+  **Allowed Values**: `appClipDomainStatuses`
+
 ## See Also
 
-- [object BuildBundle](buildbundle.md)
+### Objects
+- [object BuildBundle](./buildbundle.md)
   A specific binary bundle within a build, such as an app extension, App Clip, or nested app target.
-- [type BuildBundleType](buildbundletype.md)
+- [type BuildBundleType](./buildbundletype.md)
   A string that represents the possible components of a build bundle.
-- [object BuildBundleFileSize](buildbundlefilesize.md)
+- [object BuildBundleFileSize](./buildbundlefilesize.md)
   The estimated and actual download and install sizes for a build bundle, broken down by device type.
-- [object AppClipDomainStatusResponse](appclipdomainstatusresponse.md)
+- [object AppClipDomainStatusResponse](./appclipdomainstatusresponse.md)
   A response containing the validation status of associated domains configured for an App Clip.
-- [object BetaAppClipInvocationsResponse](betaappclipinvocationsresponse.md)
+- [object BetaAppClipInvocationsResponse](./betaappclipinvocationsresponse.md)
   A response containing a list of TestFlight App Clip invocations for a beta build.
-- [object BuildBundleFileSizesResponse](buildbundlefilesizesresponse.md)
+- [object BuildBundleFileSizesResponse](./buildbundlefilesizesresponse.md)
   A response containing a list of download and install size estimates for a build’s bundles.
 
 

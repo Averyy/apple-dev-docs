@@ -7,13 +7,13 @@ Retrieve the number of resident and/or dirty pages encompassed by a memory descr
 
 ## Declaration
 
-```swift
+```c
 IOReturn getPageCounts(
  IOByteCount *residentPageCount, 
  IOByteCount *dirtyPageCount);
 ```
 
-#### Return_value
+#### Return Value
 
 An IOReturn code.
 
@@ -23,20 +23,25 @@ This method returns the number of resident and/or dirty pages encompassed by an 
 
 ## Parameters
 
-- `residentPageCount`: - If non-null, a pointer to a byte count that will return the number of resident pages encompassed by this IOMemoryDescriptor.
-- `dirtyPageCount`: - If non-null, a pointer to a byte count that will return the number of dirty pages encompassed by this IOMemoryDescriptor.
+- `residentPageCount`:
+
+  - If non-null, a pointer to a byte count that will return the number of resident pages encompassed by this IOMemoryDescriptor.
+- `dirtyPageCount`:
+
+  - If non-null, a pointer to a byte count that will return the number of dirty pages encompassed by this IOMemoryDescriptor.
 
 ## See Also
 
-- [- getPageCounts](iomemorydescriptor/1441992-getpagecounts.md)
+### Getting the Memory Pages
+- [- getPageCounts](./api-1441992-getpagecounts.md)
   Retrieve the number of resident and/or dirty pages encompassed by a memory descriptor.
-- [getPhysicalAddress](iomemorydescriptor/1812795-getphysicaladdress.md)
+- [getPhysicalAddress](./api-1812795-getphysicaladdress.md)
   Return the physical address of the first byte in the memory.
-- [- getPhysicalAddress](iomemorydescriptor/1441916-getphysicaladdress.md)
+- [- getPhysicalAddress](./api-1441916-getphysicaladdress.md)
   Return the physical address of the first byte in the memory.
-- [getPhysicalSegment](iomemorydescriptor/1812807-getphysicalsegment.md)
+- [getPhysicalSegment](./api-1812807-getphysicalsegment.md)
   Break a memory descriptor into its physically contiguous segments.
-- [- getPhysicalSegment](iomemorydescriptor/1442068-getphysicalsegment.md)
+- [- getPhysicalSegment](./api-1442068-getphysicalsegment.md)
   Break a memory descriptor into its physically contiguous segments.
 
 

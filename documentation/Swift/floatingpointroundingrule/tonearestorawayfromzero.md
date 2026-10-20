@@ -1,7 +1,8 @@
 # FloatingPointRoundingRule.toNearestOrAwayFromZero
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Round to the closest allowed value; if two values are equally close, the one with greater magnitude is chosen.
 
@@ -35,7 +36,7 @@ This rounding rule is also known as “schoolbook rounding.” The following exa
 // -6.0
 ```
 
-This rule is equivalent to the C `round` function and implements the `roundToIntegralTiesToAway` operation defined by the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
+This rule is equivalent to the C `round` function and implements the `roundToIntegralTiesToAway` operation defined by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 
 
 ---

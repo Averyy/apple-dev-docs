@@ -1,7 +1,8 @@
 # genre
 
 **Framework**: TV Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The genre assigned to the movie or show.
 
@@ -14,15 +15,20 @@ The genre assigned to the movie or show.
 var genre: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * genre;
+```
+
 ## See Also
 
-- [var contextTitle: String?](tvtopshelfcarouselitem/contexttitle.md)
+### Specifying the Item Details
+- [var contextTitle: String?](./contexttitle.md)
   A localized string describing why the item is shown in the top shelf.
-- [var summary: String?](tvtopshelfcarouselitem/summary.md)
+- [var summary: String?](./summary.md)
   A descriptive summary of a movie or show.
-- [var duration: TimeInterval](tvtopshelfcarouselitem/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The length of the movie or show, in seconds.
-- [var creationDate: Date?](tvtopshelfcarouselitem/creationdate.md)
+- [var creationDate: Date?](./creationdate.md)
   The original release date of the content.
 
 

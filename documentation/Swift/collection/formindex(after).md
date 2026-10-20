@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Replaces the given index with its successor.
@@ -24,6 +25,12 @@ func formIndex(after i: inout Self.Index)
 ## Parameters
 
 - `i`: A valid index of the collection. `i` must be less than `endIndex`.
+
+## Default Implementations
+
+### Collection Implementations
+- [func formIndex(after: inout Self.Index)](./formindex%28after%29-1qwjp.md)
+  Replaces the given index with its successor.
 
 
 ---

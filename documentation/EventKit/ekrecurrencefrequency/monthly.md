@@ -1,17 +1,18 @@
 # EKRecurrenceFrequency.monthly
 
 **Framework**: EventKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a monthly recurrence rule.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,13 +20,18 @@ Indicates a monthly recurrence rule.
 case monthly
 ```
 
+```c
+EKRecurrenceFrequencyMonthly
+```
+
 ## See Also
 
-- [EKRecurrenceFrequency.daily](ekrecurrencefrequency/daily.md)
+### Constants
+- [EKRecurrenceFrequency.daily](./daily.md)
   Indicates a daily recurrence rule.
-- [EKRecurrenceFrequency.weekly](ekrecurrencefrequency/weekly.md)
+- [EKRecurrenceFrequency.weekly](./weekly.md)
   Indicates a weekly recurrence rule.
-- [EKRecurrenceFrequency.yearly](ekrecurrencefrequency/yearly.md)
+- [EKRecurrenceFrequency.yearly](./yearly.md)
   Indicates a yearly recurrence rule.
 
 

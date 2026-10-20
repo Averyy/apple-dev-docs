@@ -2,6 +2,7 @@
 
 **Framework**: Now Playing  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a session configured with the specified attributes.
@@ -21,7 +22,7 @@ func session(_ attributes: Self.Attributes) async throws -> Self.Session
 
 ## Mentions
 
-- [Publishing remote media sessions](publishing-remote-media-sessions.md)
+- [Publishing remote media sessions](../publishing-remote-media-sessions.md)
 
 #### Return Value
 
@@ -29,7 +30,7 @@ A configured remote session.
 
 #### Discussion
 
-> **Note**: An error if a session can’t be created.
+> **Throws**: An error if a session can’t be created.
 
 ## Parameters
 

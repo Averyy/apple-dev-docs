@@ -1,9 +1,10 @@
 # NSBrowser.DropOperation
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-The type used to specify the drop type of a drag-and-drop operation. See [`browser(_:validateDrop:proposedRow:column:dropOperation:)`](nsbrowserdelegate/browser(_:validatedrop:proposedrow:column:dropoperation:).md) for more information.
+The type used to specify the drop type of a drag-and-drop operation. See [`browser(_:validateDrop:proposedRow:column:dropOperation:)`](../nsbrowserdelegate/browser%28_,validatedrop,proposedrow,column,dropoperation%29.md) for more information.
 
 **Availability**:
 - macOS 10.5+
@@ -14,29 +15,34 @@ The type used to specify the drop type of a drag-and-drop operation. See [`brows
 enum DropOperation
 ```
 
+```c
+enum NSBrowserDropOperation : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSBrowser.DropOperation.on](nsbrowser/dropoperation/on.md)
-- [NSBrowser.DropOperation.above](nsbrowser/dropoperation/above.md)
+- [NSBrowser.DropOperation.on](./dropoperation/on.md)
+- [NSBrowser.DropOperation.above](./dropoperation/above.md)
 ### Initializers
-- [init?(rawValue: UInt)](nsbrowser/dropoperation/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./dropoperation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSBrowser.ColumnResizingType](nsbrowser/columnresizingtype-swift.enum.md)
+### Constants
+- [NSBrowser.ColumnResizingType](./columnresizingtype-swift.enum.md)
   Types of browser column resizing.
-- [Application Kit Versions for NSBrowser Functionality](application-kit-versions-for-nsbrowser-functionality.md)
+- [Application Kit Versions for NSBrowser Functionality](../application-kit-versions-for-nsbrowser-functionality.md)
   The version of the AppKit.framework containing a specific bug fix or capability.
 
 

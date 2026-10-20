@@ -1,7 +1,8 @@
 # allElements
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The elements in the profile.
 
@@ -19,15 +20,20 @@ The elements in the profile.
 var allElements: Set<GCControllerElement> { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSSet<GCControllerElement *> * allElements;
+```
+
 ## See Also
 
-- [var allButtons: Set<GCControllerButtonInput>](gcphysicalinputprofile/allbuttons.md)
+### Getting elements by type
+- [var allButtons: Set<GCControllerButtonInput>](./allbuttons.md)
   The buttons in the profile.
-- [var allAxes: Set<GCControllerAxisInput>](gcphysicalinputprofile/allaxes.md)
+- [var allAxes: Set<GCControllerAxisInput>](./allaxes.md)
   The axes in the profile.
-- [var allDpads: Set<GCControllerDirectionPad>](gcphysicalinputprofile/alldpads.md)
+- [var allDpads: Set<GCControllerDirectionPad>](./alldpads.md)
   The directional pads in the profile.
-- [var allTouchpads: Set<GCControllerTouchpad>](gcphysicalinputprofile/alltouchpads.md)
+- [var allTouchpads: Set<GCControllerTouchpad>](./alltouchpads.md)
   The touchpads in the profile.
 
 

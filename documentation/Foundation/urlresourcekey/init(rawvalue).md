@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 2.0+
@@ -20,7 +21,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](urlresourcekey/init(_:).md)
+### Initializers
+- [init(String)](./init%28_%29.md)
 
 
 ---

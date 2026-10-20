@@ -1,7 +1,8 @@
 # services
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of a peripheral’s discovered services.
 
@@ -20,15 +21,20 @@ A list of a peripheral’s discovered services.
 var services: [CBService]? { get }
 ```
 
+```objc
+@property (retain, readonly, nullable) NSArray<CBService *> * services;
+```
+
 #### Discussion
 
-Returns an array of services (represented by [`CBService`](cbservice.md) objects) that successful call to the [`discoverServices(_:)`](cbperipheral/discoverservices(_:).md) method discovered. If you haven’t yet called the [`discoverServices(_:)`](cbperipheral/discoverservices(_:).md) method to discover the services of the peripheral, or if there was an error in doing so, the value of this property is `nil`.
+Returns an array of services (represented by [`CBService`](../cbservice.md) objects) that successful call to the [`discoverServices(_:)`](./discoverservices%28_%29.md) method discovered. If you haven’t yet called the [`discoverServices(_:)`](./discoverservices%28_%29.md) method to discover the services of the peripheral, or if there was an error in doing so, the value of this property is `nil`.
 
 ## See Also
 
-- [func discoverServices([CBUUID]?)](cbperipheral/discoverservices(_:).md)
+### Discovering Services
+- [func discoverServices([CBUUID]?)](./discoverservices%28_%29.md)
   Discovers the specified services of the peripheral.
-- [func discoverIncludedServices([CBUUID]?, for: CBService)](cbperipheral/discoverincludedservices(_:for:).md)
+- [func discoverIncludedServices([CBUUID]?, for: CBService)](./discoverincludedservices%28_,for%29.md)
   Discovers the specified included services of a previously-discovered service.
 
 

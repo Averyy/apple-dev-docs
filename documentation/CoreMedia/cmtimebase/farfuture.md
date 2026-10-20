@@ -1,7 +1,8 @@
 # farFuture
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A time far into the future that represents the year 2257.
 
@@ -22,7 +23,8 @@ static let farFuture: CFAbsoluteTime
 
 ## See Also
 
-- [static let veryLongTimeInterval: CFTimeInterval](cmtimebase/verylongtimeinterval.md)
+### Timebases
+- [static let veryLongTimeInterval: CFTimeInterval](./verylongtimeinterval.md)
   A time far into the future that represents 256 years.
 
 

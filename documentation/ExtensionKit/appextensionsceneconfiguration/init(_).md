@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: ExtensionKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a scene configuration from a closure.
 
@@ -27,7 +28,8 @@ Creates a scene configuration from a closure.
 
 ## See Also
 
-- [init<Content, Configuration>(@autoclosure () -> Content, configuration: Configuration?)](appextensionsceneconfiguration/init(_:configuration:).md)
+### Creating the configuration
+- [init<Content, Configuration>(@autoclosure () -> Content, configuration: Configuration?)](./init%28_,configuration%29.md)
   Creates a scene configuration object from a closure and extension configuration.
 
 

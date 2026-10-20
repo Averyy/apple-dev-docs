@@ -1,7 +1,8 @@
 # transfersHorizontalScrollingToParent
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the scroll view passes horizontal scroll events to a superview.
 
@@ -18,13 +19,18 @@ A Boolean value that determines whether the scroll view passes horizontal scroll
 var transfersHorizontalScrollingToParent: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL transfersHorizontalScrollingToParent;
+```
+
 #### Discussion
 
 The default value is `true`, in which case when the scroll view reaches either end of its horizontal scroll axis it transfers scroll events to a containing scroll view. To stop this behavior, set the property to `false`.
 
 ## See Also
 
-- [var transfersVerticalScrollingToParent: Bool](uiscrollview/transfersverticalscrollingtoparent.md)
+### Nesting scroll views
+- [var transfersVerticalScrollingToParent: Bool](./transfersverticalscrollingtoparent.md)
   A Boolean value that determines whether the scroll view passes vertical scroll events to a superview.
 
 

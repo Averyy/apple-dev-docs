@@ -1,7 +1,8 @@
 # allowedDestinations
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of equipment that are allowed to be proposed as potential parents of the one being controlled.
 

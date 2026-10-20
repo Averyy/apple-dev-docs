@@ -1,17 +1,18 @@
 # EKParticipantType.resource
 
 **Framework**: EventKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The participant is a resource.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,15 +20,20 @@ The participant is a resource.
 case resource
 ```
 
+```c
+EKParticipantTypeResource
+```
+
 ## See Also
 
-- [EKParticipantType.unknown](ekparticipanttype/unknown.md)
+### Constants
+- [EKParticipantType.unknown](./unknown.md)
   The participant’s type is unknown.
-- [EKParticipantType.person](ekparticipanttype/person.md)
+- [EKParticipantType.person](./person.md)
   The participant is a person.
-- [EKParticipantType.room](ekparticipanttype/room.md)
+- [EKParticipantType.room](./room.md)
   The participant is a room.
-- [EKParticipantType.group](ekparticipanttype/group.md)
+- [EKParticipantType.group](./group.md)
   The participant is a group.
 
 

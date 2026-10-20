@@ -1,18 +1,19 @@
 # concurrent
 
 **Framework**: Dispatch  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The queue schedules tasks concurrently.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -26,7 +27,8 @@ If this attribute is not present, the queue schedules tasks serially in first-in
 
 ## See Also
 
-- [static let initiallyInactive: DispatchQueue.Attributes](dispatchqueue/attributes/initiallyinactive.md)
+### Attributes
+- [static let initiallyInactive: DispatchQueue.Attributes](./initiallyinactive.md)
   The newly created queue is inactive.
 
 

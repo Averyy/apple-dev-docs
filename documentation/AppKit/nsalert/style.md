@@ -1,12 +1,13 @@
 # NSAlert.Style
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The set of alert styles to style alerts in your app.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,45 +15,50 @@ The set of alert styles to style alerts in your app.
 enum Style
 ```
 
+```c
+enum NSAlertStyle : NSUInteger;
+```
+
 #### Overview
 
-Currently, there’s no visual difference between informational and warning alerts. You should only use the critical (or “caution”) alert style if warranted. For design guidance on alert styles, see [`Human Interface Guidelines > Alerts`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/alerts#macOS). The default alert style is [`NSAlert.Style.warning`](nsalert/style/warning.md).
+Currently, there’s no visual difference between informational and warning alerts. You should only use the critical (or “caution”) alert style if warranted. For design guidance on alert styles, see [Human Interface Guidelines > Alerts](https://developer.apple.com/design/human-interface-guidelines/alerts#macOS). The default alert style is [`NSAlert.Style.warning`](./style/warning.md).
 
 ## Topics
 
 ### Enumeration Cases
-- [NSAlert.Style.critical](nsalert/style/critical.md)
+- [NSAlert.Style.critical](./style/critical.md)
   An alert style to inform someone about a critical event.
-- [NSAlert.Style.warning](nsalert/style/warning.md)
+- [NSAlert.Style.warning](./style/warning.md)
   An alert style to warn someone about a current or impending event.
-- [NSAlert.Style.informational](nsalert/style/informational.md)
+- [NSAlert.Style.informational](./style/informational.md)
   An alert style to inform someone about a current or impending event.
 ### Initializers
-- [init?(rawValue: UInt)](nsalert/style/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./style/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func layout()](nsalert/layout.md)
+### Configuring alerts
+- [func layout()](./layout%28%29.md)
   Specifies that the alert must do immediate layout instead of lazily just before display.
-- [var alertStyle: NSAlert.Style](nsalert/alertstyle.md)
+- [var alertStyle: NSAlert.Style](./alertstyle.md)
   Indicates the alert’s severity level.
-- [var accessoryView: NSView?](nsalert/accessoryview.md)
+- [var accessoryView: NSView?](./accessoryview.md)
   The alert’s accessory view.
-- [var showsHelp: Bool](nsalert/showshelp.md)
+- [var showsHelp: Bool](./showshelp.md)
   Specifies whether the alert has a help button.
-- [var helpAnchor: NSHelpManager.AnchorName?](nsalert/helpanchor.md)
+- [var helpAnchor: NSHelpManager.AnchorName?](./helpanchor.md)
   The alert’s HTML help anchor.
-- [var delegate: (any NSAlertDelegate)?](nsalert/delegate.md)
+- [var delegate: (any NSAlertDelegate)?](./delegate.md)
   The alert’s delegate.
 
 

@@ -1,7 +1,8 @@
 # VisionResult.detectHumanBodyPose3D(_:_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A result from performing a 3D detect human body pose request.
 
@@ -21,9 +22,10 @@ case detectHumanBodyPose3D(DetectHumanBodyPose3DRequest, [HumanBodyPose3DObserva
 
 ## See Also
 
-- [case detectHumanBodyPose(DetectHumanBodyPoseRequest, [HumanBodyPoseObservation])](visionresult/detecthumanbodypose(_:_:).md)
+### Getting the body and hand pose detection result
+- [case detectHumanBodyPose(DetectHumanBodyPoseRequest, [HumanBodyPoseObservation])](./detecthumanbodypose%28_,_%29.md)
   A result from performing a detect human body pose request.
-- [case detectHumanHandPose(DetectHumanHandPoseRequest, [HumanHandPoseObservation])](visionresult/detecthumanhandpose(_:_:).md)
+- [case detectHumanHandPose(DetectHumanHandPoseRequest, [HumanHandPoseObservation])](./detecthumanhandpose%28_,_%29.md)
   A result from performing a detect human hand pose request.
 
 

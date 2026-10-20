@@ -1,7 +1,8 @@
 # init(mesh:bias:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a mesh shape from the given mesh resource and inflation bias.
 

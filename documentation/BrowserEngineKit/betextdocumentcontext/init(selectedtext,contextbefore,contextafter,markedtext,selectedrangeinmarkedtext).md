@@ -1,7 +1,8 @@
 # init(selectedText:contextBefore:contextAfter:markedText:selectedRangeInMarkedText:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a document with plain text strings that represent the selection and its surrounding context.
 
@@ -17,6 +18,10 @@ Initializes a document with plain text strings that represent the selection and 
 init(selectedText: String?, contextBefore: String?, contextAfter: String?, markedText: String?, selectedRangeInMarkedText: NSRange)
 ```
 
+```objc
+- (instancetype) initWithSelectedText:(NSString *) selectedText contextBefore:(NSString *) contextBefore contextAfter:(NSString *) contextAfter markedText:(NSString *) markedText selectedRangeInMarkedText:(NSRange) selectedRangeInMarkedText;
+```
+
 ## Parameters
 
 - `selectedText`: The currently selected text, or `nil` for a caret selection. Pass an empty string, not `nil`, when the selection consists of nontext — in that case, a single call to delete backward doesn’t remove content from the `contextBefore` parameter. This value can be empty if the selection falls outside the context’s area, even if selected text exists elsewhere in the document.
@@ -27,7 +32,8 @@ init(selectedText: String?, contextBefore: String?, contextAfter: String?, marke
 
 ## See Also
 
-- [init(attributedSelectedText: NSAttributedString?, contextBefore: NSAttributedString?, contextAfter: NSAttributedString?, markedText: NSAttributedString?, selectedRangeInMarkedText: NSRange)](betextdocumentcontext/init(attributedselectedtext:contextbefore:contextafter:markedtext:selectedrangeinmarkedtext:).md)
+### Creating a text document context
+- [init(attributedSelectedText: NSAttributedString?, contextBefore: NSAttributedString?, contextAfter: NSAttributedString?, markedText: NSAttributedString?, selectedRangeInMarkedText: NSRange)](./init%28attributedselectedtext,contextbefore,contextafter,markedtext,selectedrangeinmarkedtext%29.md)
   Initializes a document with attributed strings that represent the selection and its surrounding context.
 
 

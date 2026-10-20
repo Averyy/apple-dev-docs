@@ -1,7 +1,8 @@
 # search
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The search role.
 

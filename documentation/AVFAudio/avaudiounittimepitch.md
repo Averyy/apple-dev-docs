@@ -1,7 +1,8 @@
 # AVAudioUnitTimePitch
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides a good-quality playback rate and pitch shifting independently of each other.
 
@@ -19,35 +20,40 @@ An object that provides a good-quality playback rate and pitch shifting independ
 class AVAudioUnitTimePitch
 ```
 
+```objc
+@interface AVAudioUnitTimePitch : AVAudioUnitTimeEffect
+```
+
 ## Topics
 
 ### Adjusting pitch and rate
-- [var overlap: Float](avaudiounittimepitch/overlap.md)
+- [var overlap: Float](./avaudiounittimepitch/overlap.md)
   The amount of overlap between segments of the input audio signal.
-- [var pitch: Float](avaudiounittimepitch/pitch.md)
+- [var pitch: Float](./avaudiounittimepitch/pitch.md)
   The amount to use to pitch shift the input signal.
-- [var rate: Float](avaudiounittimepitch/rate.md)
+- [var rate: Float](./avaudiounittimepitch/rate.md)
   The playback rate of the input signal.
 
 ## Relationships
 
 ### Inherits From
-- [AVAudioUnitTimeEffect](avaudiounittimeeffect.md)
+- [AVAudioUnitTimeEffect](./avaudiounittimeeffect.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVAudioUnitVarispeed](avaudiounitvarispeed.md)
+### Time effects
+- [class AVAudioUnitVarispeed](./avaudiounitvarispeed.md)
   An object that allows control of the playback rate.
-- [class AVAudioUnitTimeEffect](avaudiounittimeeffect.md)
+- [class AVAudioUnitTimeEffect](./avaudiounittimeeffect.md)
   An object that processes audio in nonreal time.
 
 

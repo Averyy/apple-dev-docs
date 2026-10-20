@@ -1,7 +1,8 @@
 # MediaPlaybackSnapshot.PlaybackState.interrupted
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Playback was interrupted by the system.
 

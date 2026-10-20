@@ -1,7 +1,8 @@
 # PUBLIC
 
 **Framework**: CloudKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The public database.
 
@@ -10,15 +11,16 @@ The public database.
 
 ## Declaration
 
-```swift
+```
 const String PUBLIC;
 ```
 
 ## See Also
 
-- [PRIVATE](cloudkit.databasescope/private.md)
+### Enumeration Cases
+- [PRIVATE](./private.md)
   The private database.
-- [SHARED](cloudkit.databasescope/shared.md)
+- [SHARED](./shared.md)
   The shared database.
 
 

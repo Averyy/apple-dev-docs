@@ -1,7 +1,8 @@
 # init(suiteName:commandName:dictionary:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a newly allocated instance of `NSScriptCommandDescription`.
 
@@ -15,13 +16,17 @@ Initializes and returns a newly allocated instance of `NSScriptCommandDescriptio
 init?(suiteName: String, commandName: String, dictionary commandDeclaration: [AnyHashable : Any]?)
 ```
 
+```objc
+- (instancetype) initWithSuiteName:(NSString *) suiteName commandName:(NSString *) commandName dictionary:(NSDictionary *) commandDeclaration;
+```
+
 #### Return Value
 
 The initialized command description instance. Returns `nil` if the event constant or class name for the command description is missing; also returns `nil` if the return type or argument values are of the wrong type.
 
 #### Discussion
 
-This method registers `self` with the application’s global instance of [`NSScriptSuiteRegistry`](nsscriptsuiteregistry.md) and also registers all command arguments with the registry.
+This method registers `self` with the application’s global instance of [`NSScriptSuiteRegistry`](../nsscriptsuiteregistry.md) and also registers all command arguments with the registry.
 
 ## Parameters
 
@@ -31,7 +36,8 @@ This method registers `self` with the application’s global instance of [`NSScr
 
 ## See Also
 
-- [Cocoa Scripting Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
+### Related Documentation
+- [Cocoa Scripting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
 
 
 ---

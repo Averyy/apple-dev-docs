@@ -1,7 +1,8 @@
 # ControlConfigurationIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface for configuring a Control Center module.
 
@@ -38,26 +39,27 @@ struct SelectFocusIntent: ControlConfigurationIntent {
 }
 ```
 
-When using this protocol, you don’t need to provide an implementation for [`perform()`](appintent/perform().md). You can, however, still implement `perform()` to use the same implementation for both control configuration and as an actionable intent.
+When using this protocol, you don’t need to provide an implementation for [`perform()`](./appintent/perform%28%29.md). You can, however, still implement `perform()` to use the same implementation for both control configuration and as an actionable intent.
 
 The example above provides a default value for the `focus` intent parameter. By providing a default value, you can use a non-optional value for the intent parameter. If you don’t provide a default value for the intent parameter, the parameter’s value must be optional, to allow the system to preview the control before someone configures it.
 
 ## Topics
 
 ### Associated Types
-- [associatedtype NeverResult](controlconfigurationintent/neverresult.md)
+- [associatedtype NeverResult](./controlconfigurationintent/neverresult.md)
 
 ## Relationships
 
 ### Inherits From
-- [AppIntent](appintent.md)
-- [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppIntent](./appintent.md)
+- [PersistentlyIdentifiable](./persistentlyidentifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Controls](../widgetkit/controls-collection.md)
+### Controls (WidgetKit)
+- [Controls](../WidgetKit/controls-collection.md)
   Offer controls that people place in Control Center, on the Lock Screen, and on the Action button to quickly perform an action from your app.
 
 

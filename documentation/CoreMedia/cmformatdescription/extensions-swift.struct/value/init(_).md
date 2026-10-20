@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+

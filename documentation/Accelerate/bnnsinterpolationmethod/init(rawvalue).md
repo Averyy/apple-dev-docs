@@ -1,16 +1,17 @@
 # init(rawValue:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,12 @@ init(rawValue: UInt32)
 
 ## See Also
 
-- [var rawValue: UInt32](bnnsinterpolationmethod/rawvalue.md)
-- [init(UInt32)](bnnsinterpolationmethod/init(_:).md)
-- [var BNNSInterpolationMethodLinear: BNNSInterpolationMethod](bnnsinterpolationmethodlinear.md)
+### Interpolation Methods
+- [var rawValue: UInt32](./rawvalue.md)
+- [init(UInt32)](./init%28_%29.md)
+- [var BNNSInterpolationMethodLinear: BNNSInterpolationMethod](../bnnsinterpolationmethodlinear.md)
   Interpolation that is linear or bilinear depending on the number of resized dimensions.
-- [var BNNSInterpolationMethodNearest: BNNSInterpolationMethod](bnnsinterpolationmethodnearest.md)
+- [var BNNSInterpolationMethodNearest: BNNSInterpolationMethod](../bnnsinterpolationmethodnearest.md)
   Nearest-neighbor interpolation.
 
 

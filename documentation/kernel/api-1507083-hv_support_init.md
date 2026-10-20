@@ -1,33 +1,35 @@
 # hv_support_init
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 void hv_support_init(void);
 ```
 
 ## See Also
 
-- [hv_ast_pending](3174992-hv_ast_pending.md)
-- [hv_get_support](1507081-hv_get_support.md)
-- [hv_get_task_target](1507096-hv_get_task_target.md)
-- [hv_get_thread_target](1507076-hv_get_thread_target.md)
-- [hv_get_volatile_state](1507077-hv_get_volatile_state.md)
-- [hv_release_callbacks](1507094-hv_release_callbacks.md)
-- [hv_release_traps](1507113-hv_release_traps.md)
-- [hv_set_callbacks](1507074-hv_set_callbacks.md)
-- [hv_set_task_target](1507070-hv_set_task_target.md)
-- [hv_set_thread_target](1507095-hv_set_thread_target.md)
-- [hv_set_traps](1507088-hv_set_traps.md)
-- [hv_suspend](1507114-hv_suspend.md)
-- [hv_task_trap](1507105-hv_task_trap.md)
-- [hv_thread_trap](1507079-hv_thread_trap.md)
+### hv
+- [hv_ast_pending](./api-3174992-hv_ast_pending.md)
+- [hv_get_support](./api-1507081-hv_get_support.md)
+- [hv_get_task_target](./api-1507096-hv_get_task_target.md)
+- [hv_get_thread_target](./api-1507076-hv_get_thread_target.md)
+- [hv_get_volatile_state](./api-1507077-hv_get_volatile_state.md)
+- [hv_release_callbacks](./api-1507094-hv_release_callbacks.md)
+- [hv_release_traps](./api-1507113-hv_release_traps.md)
+- [hv_set_callbacks](./api-1507074-hv_set_callbacks.md)
+- [hv_set_task_target](./api-1507070-hv_set_task_target.md)
+- [hv_set_thread_target](./api-1507095-hv_set_thread_target.md)
+- [hv_set_traps](./api-1507088-hv_set_traps.md)
+- [hv_suspend](./api-1507114-hv_suspend.md)
+- [hv_task_trap](./api-1507105-hv_task_trap.md)
+- [hv_thread_trap](./api-1507079-hv_thread_trap.md)
 
 
 ---

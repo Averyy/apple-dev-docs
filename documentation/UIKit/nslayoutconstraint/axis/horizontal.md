@@ -1,16 +1,17 @@
 # NSLayoutConstraint.Axis.horizontal
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The constraint applied when laying out the horizontal relationship between objects.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,9 +19,14 @@ The constraint applied when laying out the horizontal relationship between objec
 case horizontal
 ```
 
+```c
+UILayoutConstraintAxisHorizontal
+```
+
 ## See Also
 
-- [NSLayoutConstraint.Axis.vertical](nslayoutconstraint/axis/vertical.md)
+### Constants
+- [NSLayoutConstraint.Axis.vertical](./vertical.md)
   The constraint applied when laying out the vertical relationship between objects.
 
 

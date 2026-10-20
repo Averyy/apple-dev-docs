@@ -1,7 +1,8 @@
 # alertLocalizationKey
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A key to a localized alert-message.
 
@@ -10,7 +11,7 @@ A key to a localized alert-message.
 
 ## Declaration
 
-```swift
+```
 attribute String alertLocalizationKey;
 ```
 

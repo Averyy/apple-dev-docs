@@ -1,12 +1,13 @@
 # NSDrawer.State
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 These constants specify the possible states of a drawer.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,29 +15,33 @@ These constants specify the possible states of a drawer.
 enum State
 ```
 
+```c
+enum NSDrawerState : NSUInteger;
+```
+
 #### Overview
 
-These constants are returned by [`state`](nsdrawer/state-swift.property.md).
+These constants are returned by [`state`](./state-swift.property.md).
 
 ## Topics
 
 ### Constants
-- [NSDrawer.State.closedState](nsdrawer/state-swift.enum/closedstate.md)
-- [NSDrawer.State.openingState](nsdrawer/state-swift.enum/openingstate.md)
-- [NSDrawer.State.openState](nsdrawer/state-swift.enum/openstate.md)
-- [NSDrawer.State.closingState](nsdrawer/state-swift.enum/closingstate.md)
+- [NSDrawer.State.closedState](./state-swift.enum/closedstate.md)
+- [NSDrawer.State.openingState](./state-swift.enum/openingstate.md)
+- [NSDrawer.State.openState](./state-swift.enum/openstate.md)
+- [NSDrawer.State.closingState](./state-swift.enum/closingstate.md)
 ### Initializers
-- [init?(rawValue: UInt)](nsdrawer/state-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./state-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Writes a textual representation of this instance into the given output stream.

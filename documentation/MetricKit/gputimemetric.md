@@ -1,7 +1,8 @@
 # GPUTimeMetric
 
 **Framework**: MetricKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A metric that measures the total GPU time used by the app.
 
@@ -19,31 +20,32 @@ struct GPUTimeMetric
 
 #### Discussion
 
-This metric corresponds to the [`MetricResult.gpuTime(_:)`](metricresult/gputime(_:).md) case. It appears only in [`intervalEntries`](metricreport/intervalentries.md) and is not included in state entries.
+This metric corresponds to the [`MetricResult.gpuTime(_:)`](./metricresult/gputime%28_%29.md) case. It appears only in [`intervalEntries`](./metricreport/intervalentries.md) and is not included in state entries.
 
 ## Topics
 
 ### Measurements
-- [let value: Measurement<UnitDuration>](gputimemetric/value.md)
+- [let value: Measurement<UnitDuration>](./gputimemetric/value.md)
   The total amount of GPU time used by the app.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct MetalFrameRateMetric](metalframeratemetric.md)
+### GPU and display metrics
+- [struct MetalFrameRateMetric](./metalframeratemetric.md)
   A metric that measures Metal frame rate statistics for a specific `CAMetalLayer`.
-- [struct PixelLuminanceMetric](pixelluminancemetric.md)
+- [struct PixelLuminanceMetric](./pixelluminancemetric.md)
   A metric that measures the average luminosity of pixels on an OLED display.
-- [class AveragePixelLuminance](averagepixelluminance.md)
+- [class AveragePixelLuminance](./averagepixelluminance.md)
   A unit for average pixel luminance measurements.
 
 

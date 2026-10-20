@@ -1,7 +1,8 @@
 # EntityQueryProperties
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that provides the properties to include in a property-matched query.
 
@@ -11,7 +12,7 @@ A type that provides the properties to include in a property-matched query.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ struct EntityQueryProperties<Entity, ComparatorMappingType> where Entity : AppEn
 
 #### Overview
 
-Contains all the supported properties a user can query against an entity for a given query. Declare query properties with a block containing all applicable [`EntityQueryProperty`](entityqueryproperty.md) objects.
+Contains all the supported properties a user can query against an entity for a given query. Declare query properties with a block containing all applicable [`EntityQueryProperty`](./entityqueryproperty.md) objects.
 
 #### Example
 
@@ -41,19 +42,20 @@ var properties = QueryProperties {
 ## Topics
 
 ### Creating the query properties
-- [init(properties: () -> [EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>])](entityqueryproperties/init(properties:).md)
-- [enum EntityQueryPropertiesBuilder](entityquerypropertiesbuilder.md)
+- [init(properties: () -> [EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>])](./entityqueryproperties/init%28properties%29.md)
+- [enum EntityQueryPropertiesBuilder](./entityquerypropertiesbuilder.md)
   A result builder that allows you to declaratively describe the properties to include in a property-matched query.
 ### Getting the query properties
-- [subscript(Int) -> EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>](entityqueryproperties/subscript(_:).md)
+- [subscript(Int) -> EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>](./entityqueryproperties/subscript%28_%29.md)
 
 ## See Also
 
-- [protocol EntityPropertyQuery](entitypropertyquery.md)
+### Property-matched queries
+- [protocol EntityPropertyQuery](./entitypropertyquery.md)
   An interface for locating entities by matching values against one or more of their properties.
-- [class EntityQueryProperty](entityqueryproperty.md)
+- [class EntityQueryProperty](./entityqueryproperty.md)
   An object that provides the supported comparators you use to describe the different ways users can query against a property of an app entity.
-- [Property comparators](property-comparators.md)
+- [Property comparators](./property-comparators.md)
   Specify the type of comparison to perform during a property-matched query.
 
 

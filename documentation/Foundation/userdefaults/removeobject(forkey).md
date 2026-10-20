@@ -1,7 +1,8 @@
 # removeObject(forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the value for the specified key from the defaults database.
 
@@ -20,11 +21,15 @@ Removes the value for the specified key from the defaults database.
 func removeObject(forKey defaultName: String)
 ```
 
+```objc
+- (void) removeObjectForKey:(NSString *) defaultName;
+```
+
 #### Discussion
 
 This method removes the specified key and value from the app-specific settings. If your `UserDefaults` object writes to settings for an app group or other shared settings file, the method removes the key from that file instead. This method removes the key and value only from the target domain, and doesn’t impact values for the same key in other domains. For example, it doesn’t remove keys and values from the global domain.
 
-After you remove the key, the system generates a [`didChangeNotification`](userdefaults/didchangenotification.md) for registered observers.
+After you remove the key, the system generates a [`didChangeNotification`](./didchangenotification.md) for registered observers.
 
 ## Parameters
 

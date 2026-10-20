@@ -1,6 +1,8 @@
 # Creating an immersive ar experience with audio
 
-**Framework**: ARKit
+**Framework**: ARKit  
+**Role**: Sample Code  
+**Download**: [CreatingAnImmersiveArExperienceWithAudio.zip](https://docs-assets.developer.apple.com/published/99535cf854d7/CreatingAnImmersiveArExperienceWithAudio.zip)
 
 Use sound effects and environmental sound layers to create an engaging AR experience.
 
@@ -13,19 +15,19 @@ Use sound effects and environmental sound layers to create an engaging AR experi
 
 This sample app uses SceneKit’s node-based audio API to associate environmental sounds with a virtual object that’s placed in the real world. Because audio is 3D positional in SceneKit by default, volume is automatically mixed based on the user’s distance from a node.
 
-#### Getting Started
+#### Getting started
 
 - This sample code supports `Relocalization` and therefore, it requires ARKit 1.5 (iOS 11.3) or greater
 - ARKit is not available in the iOS Simulator
 - Building the sample requires Xcode 9.3 or later
 
-#### Run an Ar Session and Place Virtual Content
+#### Run an AR session and place virtual content
 
-Before you can use audio, you need to set up a session and place the object from which to play sound. For simplicity, this sample runs a world tracking configuration and places a virtual object on the first horizontal plane that it detects. For more detail about this kind of session setup, see [`Tracking and visualizing planes`](tracking-and-visualizing-planes.md). The object placement approach in this sample is similar to the one demonstrated in [`Placing objects and handling 3D interaction`](placing-objects-and-handling-3d-interaction.md)
+Before you can use audio, you need to set up a session and place the object from which to play sound. For simplicity, this sample runs a world tracking configuration and places a virtual object on the first horizontal plane that it detects. For more detail about this kind of session setup, see [Tracking and visualizing planes](./tracking-and-visualizing-planes.md). The object placement approach in this sample is similar to the one demonstrated in [Placing objects and handling 3D interaction](./placing-objects-and-handling-3d-interaction.md)
 
-#### Add 3d Audio to the Scene
+#### Add 3D audio to the scene
 
-To play audio from a given position in 3D space, create an [`SCNAudioSource`](https://developer.apple.com/documentation/scenekit/scnaudiosource) from an audio file. This sample loads the file from the bundle in `viewDidLoad`:
+To play audio from a given position in 3D space, create an [`SCNAudioSource`](../SceneKit/scnaudiosource.md) from an audio file. This sample loads the file from the bundle in `viewDidLoad`:
 
 ```swift
 // As an environmental sound layer, audio should play indefinitely
@@ -43,7 +45,7 @@ audioSource.loops = true
 audioSource.load()
 ```
 
-When you’re ready to play the sound, create an [`SCNAudioPlayer`](https://developer.apple.com/documentation/scenekit/scnaudioplayer), passing it the audio source:
+When you’re ready to play the sound, create an [`SCNAudioPlayer`](../SceneKit/scnaudioplayer.md), passing it the audio source:
 
 ```swift
 // Create a player from the source and add it to `objectNode`

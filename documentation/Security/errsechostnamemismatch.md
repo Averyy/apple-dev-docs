@@ -1,7 +1,8 @@
 # errSecHostNameMismatch
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A host name mismatch has occurred.
 
@@ -18,6 +19,10 @@ A host name mismatch has occurred.
 
 ```swift
 var errSecHostNameMismatch: OSStatus { get }
+```
+
+```c
+errSecHostNameMismatch
 ```
 
 

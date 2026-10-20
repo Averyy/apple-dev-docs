@@ -1,7 +1,8 @@
 # fallDetectionManager(_:didDetect:completionHandler:)
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates a fall detection event occurred.
 
@@ -11,7 +12,15 @@ Indicates a fall detection event occurred.
 ## Declaration
 
 ```swift
+optional func fallDetectionManager(_ fallDetectionManager: CMFallDetectionManager, didDetect event: CMFallDetectionEvent, completionHandler handler: @escaping @Sendable () -> Void)
+```
+
+```swift
 optional func fallDetectionManager(_ fallDetectionManager: CMFallDetectionManager, didDetect event: CMFallDetectionEvent) async
+```
+
+```objc
+- (void) fallDetectionManager:(CMFallDetectionManager *) fallDetectionManager didDetectEvent:(CMFallDetectionEvent *) event completionHandler:(void (^)()) handler;
 ```
 
 #### Discussion
@@ -20,7 +29,7 @@ If the user authorized fall detection, the system wakes or launches your app whe
 
 Additionally, each time the user launches your app, the system checks to see if a fall event has occurred during the recent past. If one has occurred, it calls this method.
 
-Note that your app may receive the same event multiple times, for example, if the app crashes and relaunches. Always check the event’s [`date`](cmfalldetectionevent/date.md) property to determine whether your app has already received the event. The system guarantees that different fall events have different `date` values.
+Note that your app may receive the same event multiple times, for example, if the app crashes and relaunches. Always check the event’s [`date`](../cmfalldetectionevent/date.md) property to determine whether your app has already received the event. The system guarantees that different fall events have different `date` values.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # leading
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Leading column alignment.
 
@@ -24,15 +25,16 @@ With a `layoutDirection` of `leftToRight`, this is equivalent to left; and with 
 
 ## See Also
 
-- [static var automatic: TableColumnAlignment](tablecolumnalignment/automatic.md)
+### Getting the alignment
+- [static var automatic: TableColumnAlignment](./automatic.md)
   The default column alignment.
-- [static var center: TableColumnAlignment](tablecolumnalignment/center.md)
+- [static var center: TableColumnAlignment](./center.md)
   Center column alignment.
-- [static var trailing: TableColumnAlignment](tablecolumnalignment/trailing.md)
+- [static var trailing: TableColumnAlignment](./trailing.md)
   Trailing column alignment.
-- [static var numeric: TableColumnAlignment](tablecolumnalignment/numeric.md)
+- [static var numeric: TableColumnAlignment](./numeric.md)
   Column alignment appropriate for numeric content.
-- [static func numeric(Locale.NumberingSystem) -> TableColumnAlignment](tablecolumnalignment/numeric(_:).md)
+- [static func numeric(Locale.NumberingSystem) -> TableColumnAlignment](./numeric%28_%29.md)
   Column alignment appropriate for numeric content.
 
 

@@ -1,7 +1,8 @@
 # SVGPolylineElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGPolylineElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [animatedPoints](svgpolylineelement/1630486-animatedpoints.md)
-- [points](svgpolylineelement/1629416-points.md)
+- [animatedPoints](./svgpolylineelement/api-1630486-animatedpoints.md)
+- [points](./svgpolylineelement/api-1629416-points.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGGraphicsElement](svggraphicselement.md)
+- [SVGGraphicsElement](./svggraphicselement.md)
 
 
 ---

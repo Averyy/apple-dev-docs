@@ -1,7 +1,8 @@
 # init(address:mask:)
 
 **Framework**: AVRouting  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an IP fragment.
 
@@ -15,6 +16,10 @@ Creates an IP fragment.
 
 ```swift
 init(address: Data, mask: Data)
+```
+
+```objc
+- (instancetype) initWithAddress:(NSData *) address mask:(NSData *) mask;
 ```
 
 ## Parameters

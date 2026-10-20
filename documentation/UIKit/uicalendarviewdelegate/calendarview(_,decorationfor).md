@@ -1,7 +1,8 @@
 # calendarView(_:decorationFor:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a calendar view decoration for the date represented by the date components you provide.
 
@@ -15,6 +16,10 @@ Creates a calendar view decoration for the date represented by the date componen
 
 ```swift
 optional func calendarView(_ calendarView: UICalendarView, decorationFor dateComponents: DateComponents) -> UICalendarView.Decoration?
+```
+
+```objc
+- (UICalendarViewDecoration *) calendarView:(UICalendarView *) calendarView decorationForDateComponents:(NSDateComponents *) dateComponents;
 ```
 
 #### Return Value

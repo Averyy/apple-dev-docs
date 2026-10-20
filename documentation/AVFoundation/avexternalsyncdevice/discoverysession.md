@@ -1,7 +1,8 @@
 # AVExternalSyncDevice.DiscoverySession
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A means of discovering and monitoring connection / disconnection of external sync devices to the host.
 
@@ -18,40 +19,45 @@ A means of discovering and monitoring connection / disconnection of external syn
 class DiscoverySession
 ```
 
+```objc
+@interface AVExternalSyncDeviceDiscoverySession : NSObject
+```
+
 #### Overview
 
-[`AVExternalSyncDevice.DiscoverySession`](avexternalsyncdevice/discoverysession.md) is a singleton that lists the external sync devices connected to the host. The client is expected to key-value observe the [`devices`](avexternalsyncdevice/discoverysession/devices.md) property for changes to the external sync devices list.
+[`AVExternalSyncDevice.DiscoverySession`](./discoverysession.md) is a singleton that lists the external sync devices connected to the host. The client is expected to key-value observe the [`devices`](./discoverysession/devices.md) property for changes to the external sync devices list.
 
 ## Topics
 
 ### Accessing the shared instance
-- [class var shared: AVExternalSyncDevice.DiscoverySession?](avexternalsyncdevice/discoverysession/shared.md)
+- [class var shared: AVExternalSyncDevice.DiscoverySession?](./discoverysession/shared.md)
   The singleton instance of the external sync source device discovery session.
-- [class var isSupported: Bool](avexternalsyncdevice/discoverysession/issupported.md)
+- [class var isSupported: Bool](./discoverysession/issupported.md)
   Whether external sync devices are supported by this device.
 ### Finding devices
-- [var devices: [AVExternalSyncDevice]](avexternalsyncdevice/discoverysession/devices.md)
+- [var devices: [AVExternalSyncDevice]](./discoverysession/devices.md)
   An array of external sync devices connected to this host.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVExternalSyncDevice](avexternalsyncdevice.md)
+### External synchronization
+- [class AVExternalSyncDevice](../avexternalsyncdevice.md)
   An external sync device connected to a host device that can be used to drive the timing of an internal component, such as a camera sensor.
-- [protocol AVExternalSyncDeviceDelegate](avexternalsyncdevicedelegate.md)
-  Defines an interface for delegates of [`AVCaptureDeviceInput`](avcapturedeviceinput.md) to respond to events that occur when connecting, calibrating, and disconnecting external sync devices.
-- [enum AVExternalSyncDeviceStatus](avexternalsyncdevicestatus.md)
+- [protocol AVExternalSyncDeviceDelegate](../avexternalsyncdevicedelegate.md)
+  Defines an interface for delegates of [`AVCaptureDeviceInput`](../avcapturedeviceinput.md) to respond to events that occur when connecting, calibrating, and disconnecting external sync devices.
+- [enum AVExternalSyncDeviceStatus](../avexternalsyncdevicestatus.md)
   Connection state of an external sync device
 
 

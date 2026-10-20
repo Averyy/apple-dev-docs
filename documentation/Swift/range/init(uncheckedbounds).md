@@ -1,7 +1,8 @@
 # init(uncheckedBounds:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance with the given bounds.
 
@@ -30,7 +31,8 @@ Because this initializer does not perform any checks, it should be used as an op
 
 ## See Also
 
-- [var hashValue: Int](range/hashvalue.md)
+### Infrequently Used Functionality
+- [var hashValue: Int](./hashvalue.md)
   The hash value.
 
 

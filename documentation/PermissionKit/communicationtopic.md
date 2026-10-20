@@ -1,7 +1,8 @@
 # CommunicationTopic
 
 **Framework**: PermissionKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A topic for requesting communication permission with specific people.
 
@@ -20,38 +21,39 @@ struct CommunicationTopic
 
 ## Mentions
 
-- [Creating a communication experience](creating-a-communication-experience.md)
+- [Creating a communication experience](./creating-a-communication-experience.md)
 
 ## Topics
 
 ### Working with supporting types
-- [CommunicationTopic.Action](communicationtopic/action.md)
+- [CommunicationTopic.Action](./communicationtopic/action.md)
   A communication action you can request permission for.
-- [CommunicationTopic.PersonInformation](communicationtopic/personinformation-swift.struct.md)
+- [CommunicationTopic.PersonInformation](./communicationtopic/personinformation-swift.struct.md)
   Information about a person the child wants to communicate with.
 ### Creating topics
-- [init(personInformation: [CommunicationTopic.PersonInformation])](communicationtopic/init(personinformation:).md)
+- [init(personInformation: [CommunicationTopic.PersonInformation])](./communicationtopic/init%28personinformation%29.md)
   Creates a communication topic with person information for general communication.
-- [init(personInformation: [CommunicationTopic.PersonInformation], actions: Set<CommunicationTopic.Action>)](communicationtopic/init(personinformation:actions:).md)
+- [init(personInformation: [CommunicationTopic.PersonInformation], actions: Set<CommunicationTopic.Action>)](./communicationtopic/init%28personinformation,actions%29.md)
   Creates a communication topic with person information and specific actions.
 ### Accessing properties
-- [var actions: Set<CommunicationTopic.Action>](communicationtopic/actions.md)
+- [var actions: Set<CommunicationTopic.Action>](./communicationtopic/actions.md)
   The communication actions the child wants to perform.
-- [var personInformation: [CommunicationTopic.PersonInformation]](communicationtopic/personinformation-swift.property.md)
+- [var personInformation: [CommunicationTopic.PersonInformation]](./communicationtopic/personinformation-swift.property.md)
   Information about the people the child wants to communicate with.
-- [static let id: String](communicationtopic/id.md)
+- [static let id: String](./communicationtopic/id.md)
   The topic’s unique identifier.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [QuestionTopic](questiontopic.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [QuestionTopic](./questiontopic.md)
 
 ## See Also
 
-- [struct SignificantAppUpdateTopic](significantappupdatetopic.md)
+### Permission topics
+- [struct SignificantAppUpdateTopic](./significantappupdatetopic.md)
   A topic for requesting permission for significant app updates.
 
 

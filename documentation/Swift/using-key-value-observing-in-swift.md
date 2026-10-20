@@ -1,14 +1,15 @@
 # Using Key-Value Observing in Swift
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Article
 
 Notify objects about changes to the properties of other objects.
 
 #### Overview
 
-Key-value observing is a Cocoa programming pattern you use to notify objects about changes to properties of other objects. It’s useful for communicating changes between logically separated parts of your app—such as between models and views. You can only use key-value observing with classes that inherit from [`NSObject`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class).
+Key-value observing is a Cocoa programming pattern you use to notify objects about changes to properties of other objects. It’s useful for communicating changes between logically separated parts of your app—such as between models and views. You can only use key-value observing with classes that inherit from [`NSObject`](../ObjectiveC/nsobject-swift.class.md).
 
-##### Annotate a Property for Key Value Observing
+##### Annotate a Property for Key-Value Observing
 
 Mark properties that you want to observe through key-value observing with both the `@objc` attribute and the `dynamic` modifier. The example below defines the `MyObjectToObserve` class with a property—`myDate`—that can be observed:
 
@@ -46,7 +47,7 @@ class MyObserver: NSObject {
 }
 ```
 
-You use the `oldValue` and `newValue` properties of the [`NSKeyValueObservedChange`](https://developer.apple.com/documentation/foundation/nskeyvalueobservedchange) instance to see what’s changed about the property you’re observing.
+You use the `oldValue` and `newValue` properties of the [`NSKeyValueObservedChange`](../Foundation/nskeyvalueobservedchange.md) instance to see what’s changed about the property you’re observing.
 
 If you don’t need to know *how* a property has changed, omit the `options` parameter. Omitting the `options` parameter forgoes storing the new and old property values, which causes the `oldValue` and `newValue` properties to be `nil`.
 
@@ -72,13 +73,14 @@ The example above responds to the property change by printing both the new and o
 
 ## See Also
 
-- [Using Delegates to Customize Object Behavior](using-delegates-to-customize-object-behavior.md)
+### Common Patterns
+- [Using Delegates to Customize Object Behavior](./using-delegates-to-customize-object-behavior.md)
   Respond to events on behalf of a delegator.
-- [Managing a Shared Resource Using a Singleton](managing-a-shared-resource-using-a-singleton.md)
+- [Managing a Shared Resource Using a Singleton](./managing-a-shared-resource-using-a-singleton.md)
   Provide access to a shared resource using a single, shared class instance.
-- [About Imported Cocoa Error Parameters](about-imported-cocoa-error-parameters.md)
+- [About Imported Cocoa Error Parameters](./about-imported-cocoa-error-parameters.md)
   Learn how Cocoa error parameters are converted to Swift throwing methods.
-- [Handling Cocoa Errors in Swift](handling-cocoa-errors-in-swift.md)
+- [Handling Cocoa Errors in Swift](./handling-cocoa-errors-in-swift.md)
   Throw and catch errors that use Cocoa’s error types.
 
 

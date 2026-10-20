@@ -1,7 +1,8 @@
 # audiovisualBackgroundPlaybackPolicy
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A policy that determines how playback of audiovisual media continues when the app transitions to the background.
 
@@ -21,9 +22,14 @@ nonisolated
 var audiovisualBackgroundPlaybackPolicy: AVPlayerAudiovisualBackgroundPlaybackPolicy { get set }
 ```
 
+```objc
+@property (nonatomic) AVPlayerAudiovisualBackgroundPlaybackPolicy audiovisualBackgroundPlaybackPolicy;
+```
+
 ## See Also
 
-- [enum AVPlayerAudiovisualBackgroundPlaybackPolicy](avplayeraudiovisualbackgroundplaybackpolicy.md)
+### Configuring background playback
+- [enum AVPlayerAudiovisualBackgroundPlaybackPolicy](../avplayeraudiovisualbackgroundplaybackpolicy.md)
   Policies that describe playback behavior when an app transitions to the background while playing video.
 
 

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Social  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a configuration item.
 
@@ -14,6 +15,10 @@ Returns a configuration item.
 
 ```swift
 init!()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # colorConversionOptionsReturnGrayscaleAsRGB
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 static var colorConversionOptionsReturnGrayscaleAsRGB: MPSFColorConversionOptions { get }
+```
+
+```c
+MPSFColorConversionOptionsReturnGrayscaleAsRGB
 ```
 
 

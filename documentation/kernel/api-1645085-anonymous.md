@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,11 +18,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIORangeSupportsCompositeSync](1645085-anonymous/kiorangesupportscompositesync.md)
-- [kIORangeSupportsSeparateSyncs](1645085-anonymous/kiorangesupportsseparatesyncs.md)
-- [kIORangeSupportsSyncOnGreen](1645085-anonymous/kiorangesupportssyncongreen.md)
-- [kIORangeSupportsVSyncSerration](1645085-anonymous/kiorangesupportsvsyncserration.md)
-- [kIORangeSupportsVRR](1645085-anonymous/kiorangesupportsvrr.md)
+- [kIORangeSupportsCompositeSync](./api-1645085-anonymous/kiorangesupportscompositesync.md)
+- [kIORangeSupportsSeparateSyncs](./api-1645085-anonymous/kiorangesupportsseparatesyncs.md)
+- [kIORangeSupportsSyncOnGreen](./api-1645085-anonymous/kiorangesupportssyncongreen.md)
+- [kIORangeSupportsVSyncSerration](./api-1645085-anonymous/kiorangesupportsvsyncserration.md)
+- [kIORangeSupportsVRR](./api-1645085-anonymous/kiorangesupportsvrr.md)
 
 
 ---

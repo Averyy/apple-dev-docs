@@ -1,7 +1,8 @@
 # entity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity the receiver is associated with
 
@@ -19,8 +20,9 @@ The entity the receiver is associated with
 
 ## See Also
 
-- [func canPrevent(UIGestureRecognizer) -> Bool](entityrotationgesturerecognizer/canprevent(_:).md)
-- [func touchesBegan(Set<UITouch>, with: UIEvent)](entityrotationgesturerecognizer/touchesbegan(_:with:).md)
+### Using the recognizer
+- [func canPrevent(UIGestureRecognizer) -> Bool](./canprevent%28_%29.md)
+- [func touchesBegan(Set<UITouch>, with: UIEvent)](./touchesbegan%28_,with%29.md)
   Sent to the gesture recognizer when one or more fingers touch down on the associated entity.
 
 

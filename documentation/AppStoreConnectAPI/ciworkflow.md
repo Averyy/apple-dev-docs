@@ -1,7 +1,8 @@
 # CiWorkflow
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An Xcode Cloud automation configuration specifying when to build, which actions to run, and how to distribute the output.
 
@@ -10,16 +11,16 @@ An Xcode Cloud automation configuration specifying when to build, which actions 
 
 ## Declaration
 
-```swift
+```
 object CiWorkflow
 ```
 
 ## Topics
 
 ### Objects
-- [object CiWorkflow.Attributes](ciworkflow/attributes-data.dictionary.md)
+- [object CiWorkflow.Attributes](./ciworkflow/attributes-data.dictionary.md)
   The attributes that describe a Workflows resource.
-- [object CiWorkflow.Relationships](ciworkflow/relationships-data.dictionary.md)
+- [object CiWorkflow.Relationships](./ciworkflow/relationships-data.dictionary.md)
   The relationships of the Workflows resource you included in the request and those on which you can operate.
 
 ## Properties
@@ -30,28 +31,31 @@ object CiWorkflow
 - `relationships` (CiWorkflow.Relationships): The navigational links to related data and included resource types and IDs.
 - `type` (string) *(required)*: The resource type.
 
+  **Allowed Values**: `ciWorkflows`
+
 ## See Also
 
-- [object CiAction](ciaction.md)
+### Objects and types
+- [object CiAction](./ciaction.md)
   A step within an Xcode Cloud workflow, such as building, running tests, analyzing, or deploying an app.
-- [object CiWorkflowCreateRequest](ciworkflowcreaterequest.md)
+- [object CiWorkflowCreateRequest](./ciworkflowcreaterequest.md)
   The request body you use to create a new Xcode Cloud workflow.
-- [object CiWorkflowUpdateRequest](ciworkflowupdaterequest.md)
+- [object CiWorkflowUpdateRequest](./ciworkflowupdaterequest.md)
   The request body you use to update an Xcode Cloud workflow.
-- [object CiWorkflowResponse](ciworkflowresponse.md)
+- [object CiWorkflowResponse](./ciworkflowresponse.md)
   The response body for endpoints that create, read, or modify an Xcode Cloud workflow.
-- [object CiWorkflowsResponse](ciworkflowsresponse.md)
+- [object CiWorkflowsResponse](./ciworkflowsresponse.md)
   The response body for endpoints that list Xcode Cloud workflows for a product.
-- [object CiBuildRunsResponse](cibuildrunsresponse.md)
+- [object CiBuildRunsResponse](./cibuildrunsresponse.md)
   The response body for endpoints that list build runs for an Xcode Cloud workflow.
-- [object CiManualBranchStartCondition](cimanualbranchstartcondition.md)
+- [object CiManualBranchStartCondition](./cimanualbranchstartcondition.md)
   A workflow start condition that triggers an Xcode Cloud build when a specified branch is manually selected.
-- [object CiManualPullRequestStartCondition](cimanualpullrequeststartcondition.md)
+- [object CiManualPullRequestStartCondition](./cimanualpullrequeststartcondition.md)
   A workflow start condition that triggers an Xcode Cloud build for a manually specified pull request.
-- [object CiManualTagStartCondition](cimanualtagstartcondition.md)
+- [object CiManualTagStartCondition](./cimanualtagstartcondition.md)
   A workflow start condition that triggers an Xcode Cloud build when a specified tag is manually selected.
-- [object CiWorkflowBuildRunsLinkagesResponse](ciworkflowbuildrunslinkagesresponse.md)
-- [object CiWorkflowRepositoryLinkageResponse](ciworkflowrepositorylinkageresponse.md)
+- [object CiWorkflowBuildRunsLinkagesResponse](./ciworkflowbuildrunslinkagesresponse.md)
+- [object CiWorkflowRepositoryLinkageResponse](./ciworkflowrepositorylinkageresponse.md)
 
 
 ---

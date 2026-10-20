@@ -1,7 +1,8 @@
 # privacy
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Displayed data should be obscured to protect private information.
 
@@ -22,7 +23,7 @@ static let privacy: RedactionReasons
 
 #### Discussion
 
-Views marked with [`privacySensitive(_:)`](view/privacysensitive(_:).md) will be automatically redacted using a standard styling. To apply a custom treatment the redaction reason can be read out of the environment.
+Views marked with [`privacySensitive(_:)`](../view/privacysensitive%28_%29.md) will be automatically redacted using a standard styling. To apply a custom treatment the redaction reason can be read out of the environment.
 
 ```swift
 struct BankingContentView: View {
@@ -40,9 +41,10 @@ struct BankingContentView: View {
 
 ## See Also
 
-- [static let invalidated: RedactionReasons](redactionreasons/invalidated.md)
+### Getting redaction reasons
+- [static let invalidated: RedactionReasons](./invalidated.md)
   Displayed data should appear as invalidated and pending a new update.
-- [static let placeholder: RedactionReasons](redactionreasons/placeholder.md)
+- [static let placeholder: RedactionReasons](./placeholder.md)
   Displayed data should appear as generic placeholders.
 
 

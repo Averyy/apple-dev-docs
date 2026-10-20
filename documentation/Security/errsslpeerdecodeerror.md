@@ -1,7 +1,8 @@
 # errSSLPeerDecodeError
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A decoding error occurred.
 
@@ -18,6 +19,10 @@ A decoding error occurred.
 
 ```swift
 var errSSLPeerDecodeError: OSStatus { get }
+```
+
+```c
+errSSLPeerDecodeError
 ```
 
 

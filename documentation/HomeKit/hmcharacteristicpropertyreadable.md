@@ -1,7 +1,8 @@
 # HMCharacteristicPropertyReadable
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The characteristic is readable.
 
@@ -19,11 +20,16 @@ The characteristic is readable.
 let HMCharacteristicPropertyReadable: String
 ```
 
+```c
+extern NSString * const HMCharacteristicPropertyReadable;
+```
+
 ## See Also
 
-- [let HMCharacteristicPropertyWritable: String](hmcharacteristicpropertywritable.md)
+### Properties of Characteristics
+- [let HMCharacteristicPropertyWritable: String](./hmcharacteristicpropertywritable.md)
   The characteristic is writable.
-- [let HMCharacteristicPropertyHidden: String](hmcharacteristicpropertyhidden.md)
+- [let HMCharacteristicPropertyHidden: String](./hmcharacteristicpropertyhidden.md)
   The characteristic should be hidden from the user.
 
 

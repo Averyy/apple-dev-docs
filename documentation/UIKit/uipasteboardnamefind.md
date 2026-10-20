@@ -1,19 +1,26 @@
 # UIPasteboardNameFind
 
 **Framework**: UIKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A name that identifies the Find pasteboard.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 13.1+
+- iOS 3.0+ - Deprecated in 10.0
+- iPadOS 3.0+ - Deprecated in 10.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: The Find pasteboard is no longer available.
 
 ## Declaration
 
 ```swift
 let UIPasteboardNameFind: String
+```
+
+```c
+extern NSString * const UIPasteboardNameFind;
 ```
 
 #### Discussion
@@ -24,7 +31,8 @@ The name identifying the Find pasteboard, which, prior to iOS 10, was used in se
 
 ## See Also
 
-- [static let general: UIPasteboard.Name](uipasteboard/name-swift.struct/general.md)
+### Constants
+- [static let general: UIPasteboard.Name](./uipasteboard/name-swift.struct/general.md)
   The name identifying the general pasteboard, which you use for general copy-cut-paste operations.
 
 

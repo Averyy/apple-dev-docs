@@ -2,6 +2,7 @@
 
 **Framework**: TabularData  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Generates a row grouping that applies a transformation closure to each group in the original.

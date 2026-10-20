@@ -1,7 +1,8 @@
 # dstu2
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Second Draft Standard for Trial Use (DSTU2) release.
 
@@ -18,11 +19,16 @@ The Second Draft Standard for Trial Use (DSTU2) release.
 static let dstu2: HKFHIRRelease
 ```
 
+```c
+extern HKFHIRRelease const HKFHIRReleaseDSTU2;
+```
+
 ## See Also
 
-- [static let r4: HKFHIRRelease](hkfhirrelease/r4.md)
+### Releases
+- [static let r4: HKFHIRRelease](./r4.md)
   The Release 4 (R4) release.
-- [static let unknown: HKFHIRRelease](hkfhirrelease/unknown.md)
+- [static let unknown: HKFHIRRelease](./unknown.md)
   An unknown release.
 
 

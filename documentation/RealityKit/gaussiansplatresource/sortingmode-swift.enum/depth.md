@@ -1,7 +1,8 @@
 # GaussianSplatResource.SortingMode.depth
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Sorts splats by their z-coordinate relative to the camera.
 

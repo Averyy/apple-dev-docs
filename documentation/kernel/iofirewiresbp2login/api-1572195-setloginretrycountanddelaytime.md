@@ -1,14 +1,15 @@
 # setLoginRetryCountAndDelayTime
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual void setLoginRetryCountAndDelayTime(UInt32 retryCount, UInt32 uSecs);
 ```
 

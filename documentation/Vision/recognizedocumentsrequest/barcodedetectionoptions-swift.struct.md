@@ -1,7 +1,8 @@
 # RecognizeDocumentsRequest.BarcodeDetectionOptions
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A configuration object for detecting barcodes in a document.
 
@@ -22,34 +23,35 @@ struct BarcodeDetectionOptions
 ## Topics
 
 ### Getting the symbology
-- [var coalesceCompositeSymbologies: Bool](recognizedocumentsrequest/barcodedetectionoptions-swift.struct/coalescecompositesymbologies.md)
+- [var coalesceCompositeSymbologies: Bool](./barcodedetectionoptions-swift.struct/coalescecompositesymbologies.md)
   A Boolean value that indicates whether the request combines multiple codes.
-- [var enabled: Bool](recognizedocumentsrequest/barcodedetectionoptions-swift.struct/enabled.md)
+- [var enabled: Bool](./barcodedetectionoptions-swift.struct/enabled.md)
   Boolean value that indicates whether to detect barcodes in the document.
-- [var symbologies: [BarcodeSymbology]](recognizedocumentsrequest/barcodedetectionoptions-swift.struct/symbologies.md)
+- [var symbologies: [BarcodeSymbology]](./barcodedetectionoptions-swift.struct/symbologies.md)
   The barcode symbologies that the request detects in an image.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [RecognizeDocumentsRequest.TextRecognitionOptions](recognizedocumentsrequest/textrecognitionoptions-swift.struct.md)
+### Configuring a request
+- [RecognizeDocumentsRequest.TextRecognitionOptions](./textrecognitionoptions-swift.struct.md)
   A configuration object for detected and recognized text within the document.
-- [var barcodeDetectionOptions: RecognizeDocumentsRequest.BarcodeDetectionOptions](recognizedocumentsrequest/barcodedetectionoptions-swift.property.md)
+- [var barcodeDetectionOptions: RecognizeDocumentsRequest.BarcodeDetectionOptions](./barcodedetectionoptions-swift.property.md)
   Configuration for detecting machine-readable codes in the document.
-- [var textRecognitionOptions: RecognizeDocumentsRequest.TextRecognitionOptions](recognizedocumentsrequest/textrecognitionoptions-swift.property.md)
+- [var textRecognitionOptions: RecognizeDocumentsRequest.TextRecognitionOptions](./textrecognitionoptions-swift.property.md)
   Configuration for recognizing text in the document.
-- [var supportedBarcodeSymbologies: [BarcodeSymbology]](recognizedocumentsrequest/supportedbarcodesymbologies.md)
+- [var supportedBarcodeSymbologies: [BarcodeSymbology]](./supportedbarcodesymbologies.md)
   The collection of revisions the request supports.
-- [var supportedRecognitionLanguages: [Locale.Language]](recognizedocumentsrequest/supportedrecognitionlanguages.md)
+- [var supportedRecognitionLanguages: [Locale.Language]](./supportedrecognitionlanguages.md)
   The identifiers of the languages that the request supports.
 
 

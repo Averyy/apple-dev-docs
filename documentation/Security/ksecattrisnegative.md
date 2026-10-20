@@ -1,7 +1,8 @@
 # kSecAttrIsNegative
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key with a value that’s a Boolean indicating whether the item has a valid password.
 
@@ -20,9 +21,13 @@ A key with a value that’s a Boolean indicating whether the item has a valid pa
 let kSecAttrIsNegative: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrIsNegative;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean) and indicates whether there is a valid password associated with this keychain item. This is useful if your application doesn’t want a password for some particular service to be stored in the keychain, but prefers that it always be entered by the user.
+The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md) and indicates whether there is a valid password associated with this keychain item. This is useful if your application doesn’t want a password for some particular service to be stored in the keychain, but prefers that it always be entered by the user.
 
 
 ---

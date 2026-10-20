@@ -1,7 +1,8 @@
 # content
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content view.
 
@@ -22,9 +23,10 @@ var content: Content
 
 ## See Also
 
-- [var publisher: PublisherType](subscriptionview/publisher.md)
+### Managing the subscription
+- [var publisher: PublisherType](./publisher.md)
   The `Publisher` that is being subscribed.
-- [var action: (PublisherType.Output) -> Void](subscriptionview/action.md)
+- [var action: (PublisherType.Output) -> Void](./action.md)
   The `Action` executed when `publisher` emits an event.
 
 

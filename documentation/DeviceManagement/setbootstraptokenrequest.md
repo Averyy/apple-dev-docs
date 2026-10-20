@@ -1,7 +1,8 @@
 # SetBootstrapTokenRequest
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The set bootstrap token request details.
 
@@ -14,15 +15,19 @@ The set bootstrap token request details.
 
 ## Declaration
 
-```swift
+```
 object SetBootstrapTokenRequest
 ```
 
 ## Properties
 
-- `AwaitingConfiguration` (boolean): If `true`, the device is awaiting a [`Device Configured`](device-configured-command.md) command before proceeding through Setup Assistant.
+- `AwaitingConfiguration` (boolean): If `true`, the device is awaiting a [`Device Configured`](./device-configured-command.md) command before proceeding through Setup Assistant.
+
+  **Default**: `false`
 - `BootstrapToken` (data): The device’s bootstrap token data. If this field is missing or zero length, the server needs to remove the bootstrap token for this device.
 - `MessageType` (string) *(required)*: The message type, which requires a value of `SetBootstrapToken`.
+
+  **Allowed Values**: `SetBootstrapToken`
 
 
 ---

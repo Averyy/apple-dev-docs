@@ -1,18 +1,19 @@
 # AVAssetReferenceRestrictions
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Restrictions to use when resolving references to external media data.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,40 +21,45 @@ Restrictions to use when resolving references to external media data.
 struct AVAssetReferenceRestrictions
 ```
 
+```c
+enum AVAssetReferenceRestrictions : NSUInteger;
+```
+
 ## Topics
 
 ### Reference restrictions
-- [static var forbidAll: AVAssetReferenceRestrictions](avassetreferencerestrictions/forbidall.md)
+- [static var forbidAll: AVAssetReferenceRestrictions](./avassetreferencerestrictions/forbidall.md)
   The asset can only reference media stored within its container file.
-- [static var forbidRemoteReferenceToLocal: AVAssetReferenceRestrictions](avassetreferencerestrictions/forbidremotereferencetolocal.md)
+- [static var forbidRemoteReferenceToLocal: AVAssetReferenceRestrictions](./avassetreferencerestrictions/forbidremotereferencetolocal.md)
   A remote asset shouldn’t follow references to local media.
-- [static var forbidLocalReferenceToRemote: AVAssetReferenceRestrictions](avassetreferencerestrictions/forbidlocalreferencetoremote.md)
+- [static var forbidLocalReferenceToRemote: AVAssetReferenceRestrictions](./avassetreferencerestrictions/forbidlocalreferencetoremote.md)
   A local asset shouldn’t follow references to remote media.
-- [static var forbidCrossSiteReference: AVAssetReferenceRestrictions](avassetreferencerestrictions/forbidcrosssitereference.md)
+- [static var forbidCrossSiteReference: AVAssetReferenceRestrictions](./avassetreferencerestrictions/forbidcrosssitereference.md)
   A remote asset shouldn’t follow references to remote media data stored at a different host.
-- [static var forbidLocalReferenceToLocal: AVAssetReferenceRestrictions](avassetreferencerestrictions/forbidlocalreferencetolocal.md)
+- [static var forbidLocalReferenceToLocal: AVAssetReferenceRestrictions](./avassetreferencerestrictions/forbidlocalreferencetolocal.md)
   A local asset shouldn’t follow references to local media data stored outside its container file.
-- [static var defaultPolicy: AVAssetReferenceRestrictions](avassetreferencerestrictions/defaultpolicy.md)
+- [static var defaultPolicy: AVAssetReferenceRestrictions](./avassetreferencerestrictions/defaultpolicy.md)
   The asset should use the default reference restrictions policy.
 ### Initializers
-- [init(rawValue: UInt)](avassetreferencerestrictions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./avassetreferencerestrictions/init%28rawvalue%29.md)
   Creates reference restrictions with an integer value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [var referenceRestrictions: AVAssetReferenceRestrictions](avasset/referencerestrictions.md)
+### Retrieving reference restrictions
+- [var referenceRestrictions: AVAssetReferenceRestrictions](./avasset/referencerestrictions.md)
   The restrictions that an asset places on how it resolves references to external media.
 
 

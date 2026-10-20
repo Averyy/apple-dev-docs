@@ -1,7 +1,8 @@
 # CVImageTransferFunction.smpte_ST_2084_PQ
 
 **Framework**: Core Video  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The transfer function for mapping HDR gamma to absolute light levels.
 

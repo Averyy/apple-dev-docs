@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a dynamic instructions instance that selects between two conditions.
 
@@ -25,7 +26,8 @@ init(_ branch: ConditionalDynamicInstructions<TrueContent, FalseContent>.Branch)
 
 ## See Also
 
-- [ConditionalDynamicInstructions.Branch](conditionaldynamicinstructions/branch.md)
+### Creating an instance
+- [ConditionalDynamicInstructions.Branch](./branch.md)
   An enumeration that represents a condition to evaluate.
 
 

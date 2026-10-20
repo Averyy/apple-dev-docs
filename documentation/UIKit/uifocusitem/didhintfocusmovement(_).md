@@ -1,7 +1,8 @@
 # didHintFocusMovement(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates to the currently focused item that focus movement might occur.
 
@@ -18,6 +19,10 @@ Indicates to the currently focused item that focus movement might occur.
 optional func didHintFocusMovement(_ hint: UIFocusMovementHint)
 ```
 
+```objc
+- (void) didHintFocusMovement:(UIFocusMovementHint *) hint;
+```
+
 #### Discussion
 
 The focus item is mutated by the focus engine whenever the user’s finger moves on the remote.
@@ -28,7 +33,8 @@ The focus item is mutated by the focus engine whenever the user’s finger moves
 
 ## See Also
 
-- [class UIFocusMovementHint](uifocusmovementhint.md)
+### Providing movement hints
+- [class UIFocusMovementHint](../uifocusmovementhint.md)
   Provides movement hint information for the focused item.
 
 

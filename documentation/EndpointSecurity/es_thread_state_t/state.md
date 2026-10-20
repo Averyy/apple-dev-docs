@@ -1,13 +1,14 @@
 # state
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The machine-specific thread state.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,17 +16,22 @@ The machine-specific thread state.
 var state: es_token_t
 ```
 
+```c
+es_token_t state;
+```
+
 #### Discussion
 
-This equivalent to [`thread_state_t`](https://developer.apple.com/documentation/kernel/thread_state_t) in Mach APIs.
+This equivalent to [`thread_state_t`](../../kernel/thread_state_t.md) in Mach APIs.
 
-> **Note**:  The [`size`](es_token_t/size.md) subfield of the [`state`](es_thread_state_t/state.md) field is in bytes, not [`natural_t`](https://developer.apple.com/documentation/kernel/natural_t) units.
+> **Note**:  The [`size`](../es_token_t/size.md) subfield of the [`state`](./state.md) field is in bytes, not [`natural_t`](../../kernel/natural_t.md) units.
 
 ## See Also
 
-- [var flavor: Int32](es_thread_state_t/flavor.md)
+### Inspecting Thread State
+- [var flavor: Int32](./flavor.md)
   An indication of the representation of the machine-specific thread state.
-- [struct es_token_t](es_token_t.md)
+- [struct es_token_t](../es_token_t.md)
   An arbitrary buffer of data with its size.
 
 

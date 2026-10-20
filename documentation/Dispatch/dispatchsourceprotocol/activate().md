@@ -1,7 +1,8 @@
 # activate()
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Activates the dispatch source.
 
@@ -11,7 +12,7 @@ Activates the dispatch source.
 - Mac Catalyst 10.0+
 - macOS 10.12+
 - tvOS 10.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ func activate()
 
 ## See Also
 
-- [func suspend()](dispatchsourceprotocol/suspend.md)
+### Activating, Suspending, and Resuming a Source
+- [func suspend()](./suspend%28%29.md)
   Suspends the dispatch source.
-- [func resume()](dispatchsourceprotocol/resume.md)
+- [func resume()](./resume%28%29.md)
   Resumes the dispatch source.
 
 

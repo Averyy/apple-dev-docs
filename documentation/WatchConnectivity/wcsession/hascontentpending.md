@@ -1,7 +1,8 @@
 # hasContentPending
 
 **Framework**: Watch Connectivity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the session has more content to deliver.
 
@@ -18,20 +19,25 @@ A Boolean value that indicates whether the session has more content to deliver.
 var hasContentPending: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasContentPending;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the session has received data in the background but has not yet delivered that data to the session’s delegate. The following methods send data in the background:
+[`true`](../../Swift/true.md) if the session has received data in the background but has not yet delivered that data to the session’s delegate. The following methods send data in the background:
 
-- [`updateApplicationContext(_:)`](wcsession/updateapplicationcontext(_:).md)
-- [`transferUserInfo(_:)`](wcsession/transferuserinfo(_:).md)
-- [`transferCurrentComplicationUserInfo(_:)`](wcsession/transfercurrentcomplicationuserinfo(_:).md)
-- [`transferFile(_:metadata:)`](wcsession/transferfile(_:metadata:).md)
+- [`updateApplicationContext(_:)`](./updateapplicationcontext%28_%29.md)
+- [`transferUserInfo(_:)`](./transferuserinfo%28_%29.md)
+- [`transferCurrentComplicationUserInfo(_:)`](./transfercurrentcomplicationuserinfo%28_%29.md)
+- [`transferFile(_:metadata:)`](./transferfile%28_,metadata%29.md)
 
 ## See Also
 
-- [func transferFile(URL, metadata: [String : Any]?) -> WCSessionFileTransfer](wcsession/transferfile(_:metadata:).md)
+### Transferring Files in the Background
+- [func transferFile(URL, metadata: [String : Any]?) -> WCSessionFileTransfer](./transferfile%28_,metadata%29.md)
   Sends the specified file and optional dictionary to the counterpart.
-- [var outstandingFileTransfers: [WCSessionFileTransfer]](wcsession/outstandingfiletransfers.md)
+- [var outstandingFileTransfers: [WCSessionFileTransfer]](./outstandingfiletransfers.md)
   An array of in-progress file transfers.
 
 

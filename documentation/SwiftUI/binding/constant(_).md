@@ -1,7 +1,8 @@
 # constant(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a binding with an immutable value.
 
@@ -22,7 +23,7 @@ static func constant(_ value: Value) -> Binding<Value>
 
 #### Discussion
 
-Use this method to create a binding to a value that cannot change. This can be useful when using a [`PreviewProvider`](previewprovider.md) to see how a view represents different values.
+Use this method to create a binding to a value that cannot change. This can be useful when using a [`PreviewProvider`](../previewprovider.md) to see how a view represents different values.
 
 ```swift
 // Example of binding to an immutable value.
@@ -35,11 +36,12 @@ PlayButton(isPlaying: Binding.constant(true))
 
 ## See Also
 
-- [init(_:)](binding/init(_:).md)
+### Creating a binding
+- [init(_:)](./init%28_%29.md)
   Creates a binding by projecting the base value to a hashable value.
-- [init(projectedValue: Binding<Value>)](binding/init(projectedvalue:).md)
+- [init(projectedValue: Binding<Value>)](./init%28projectedvalue%29.md)
   Creates a binding from the value of another binding.
-- [init(get:set:)](binding/init(get:set:).md)
+- [init(get:set:)](./init%28get,set%29.md)
   Creates a binding with closures that read and write the binding value.
 
 

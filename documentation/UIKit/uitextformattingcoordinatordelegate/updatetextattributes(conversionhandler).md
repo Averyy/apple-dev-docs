@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Applies the current font panel settings to the selected text.
@@ -17,6 +18,10 @@ Applies the current font panel settings to the selected text.
 
 ```swift
 func updateTextAttributes(conversionHandler: ([NSAttributedString.Key : Any]) -> [NSAttributedString.Key : Any])
+```
+
+```objc
+- (void) updateTextAttributesWithConversionHandler:(UITextAttributesConversionHandler) conversionHandler;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(entity:configurationSpecifications:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration combination from an entity and a configuration dictionary.
 

@@ -1,7 +1,8 @@
 # gracePeriodExpirationDate
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date the billing grace period expires for the auto-renewable subscription.
 
@@ -22,21 +23,22 @@ let gracePeriodExpirationDate: Date?
 
 ## Mentions
 
-- [Testing failing subscription renewals and Apple In-App Purchases](testing-failing-subscription-renewals-and-in-app-purchases.md)
+- [Testing failing subscription renewals and Apple In-App Purchases](../../../testing-failing-subscription-renewals-and-in-app-purchases.md)
 
 #### Discussion
 
 This value is `nil` if the subscription is not in a billing grace period.
 
-This date is present if you enable Billing Grace Period for your app and the subscription is in the billing grace period. Ensure that your app provides full service for the subscription throughout the grace period, which ends on the [`gracePeriodExpirationDate`](product/subscriptioninfo/renewalinfo/graceperiodexpirationdate.md).
+This date is present if you enable Billing Grace Period for your app and the subscription is in the billing grace period. Ensure that your app provides full service for the subscription throughout the grace period, which ends on the [`gracePeriodExpirationDate`](./graceperiodexpirationdate.md).
 
-A billing grace period occurs at the start of a billing retry state. Throughout the billing grace period, the value of [`isInBillingRetry`](product/subscriptioninfo/renewalinfo/isinbillingretry.md) is `true`, which indicates that Apple is attempting to automatically renew the subscription.
+A billing grace period occurs at the start of a billing retry state. Throughout the billing grace period, the value of [`isInBillingRetry`](./isinbillingretry.md) is `true`, which indicates that Apple is attempting to automatically renew the subscription.
 
-For information about supporting Billing Grace Period, see [`Enable Billing Grace Period for auto-renewable subscriptions`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev58bda3212) and [`Reducing Involuntary Subscriber Churn`](reducing-involuntary-subscriber-churn.md).
+For information about supporting Billing Grace Period, see [Enable Billing Grace Period for auto-renewable subscriptions](https://help.apple.com/app-store-connect/#/dev58bda3212) and [Reducing Involuntary Subscriber Churn](../../../reducing-involuntary-subscriber-churn.md).
 
 ## See Also
 
-- [let isInBillingRetry: Bool](product/subscriptioninfo/renewalinfo/isinbillingretry.md)
+### Getting billing status
+- [let isInBillingRetry: Bool](./isinbillingretry.md)
   A Boolean value that indicates whether an auto-renewable subscription is in the billing retry period.
 
 

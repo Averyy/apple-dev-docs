@@ -1,7 +1,8 @@
 # cornerRadius
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The radius for the rounded corners on the button, in points.
 
@@ -17,11 +18,16 @@ The radius for the rounded corners on the button, in points.
 var cornerRadius: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CGFloat cornerRadius;
+```
+
 ## See Also
 
-- [PKIdentityButton.Label](pkidentitybutton/label.md)
+### Configuring the appearance
+- [PKIdentityButton.Label](./label.md)
   A type that indicates the available labels for an identity button.
-- [PKIdentityButton.Style](pkidentitybutton/style.md)
+- [PKIdentityButton.Style](./style.md)
   A type that indicates the available appearances for an identity button.
 
 

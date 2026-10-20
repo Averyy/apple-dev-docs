@@ -1,7 +1,8 @@
 # lexicallyNormalized()
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a copy of `self` in lexical-normal form, that is `.` and `..` components have been collapsed lexically (i.e. without following symlinks). See `lexicallyNormalize`
 

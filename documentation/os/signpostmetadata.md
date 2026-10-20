@@ -1,7 +1,8 @@
 # SignpostMetadata
 
 **Framework**: os  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type that represents a message you attach to a signpost.
 
@@ -11,7 +12,7 @@ The type that represents a message you attach to a signpost.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -22,15 +23,16 @@ typealias SignpostMetadata = OSLogMessage
 
 ## See Also
 
-- [func beginInterval(StaticString, id: OSSignpostID) -> OSSignpostIntervalState](ossignposter/begininterval(_:id:).md)
+### Starting a Signposted Interval
+- [func beginInterval(StaticString, id: OSSignpostID) -> OSSignpostIntervalState](./ossignposter/begininterval%28_,id%29.md)
   Begins a signposted interval.
-- [func beginInterval(StaticString, id: OSSignpostID, SignpostMetadata) -> OSSignpostIntervalState](ossignposter/begininterval(_:id:_:).md)
+- [func beginInterval(StaticString, id: OSSignpostID, SignpostMetadata) -> OSSignpostIntervalState](./ossignposter/begininterval%28_,id,_%29.md)
   Begins a signposted interval and attaches the specified message.
-- [func beginAnimationInterval(StaticString, id: OSSignpostID) -> OSSignpostIntervalState](ossignposter/beginanimationinterval(_:id:).md)
+- [func beginAnimationInterval(StaticString, id: OSSignpostID) -> OSSignpostIntervalState](./ossignposter/beginanimationinterval%28_,id%29.md)
   Begins a signposted interval for measuring an animation.
-- [func beginAnimationInterval(StaticString, id: OSSignpostID, SignpostMetadata) -> OSSignpostIntervalState](ossignposter/beginanimationinterval(_:id:_:).md)
+- [func beginAnimationInterval(StaticString, id: OSSignpostID, SignpostMetadata) -> OSSignpostIntervalState](./ossignposter/beginanimationinterval%28_,id,_%29.md)
   Begins a signposted interval for measuring an animation, and attaches a message.
-- [class OSSignpostIntervalState](ossignpostintervalstate.md)
+- [class OSSignpostIntervalState](./ossignpostintervalstate.md)
   An object that tracks the state of a signposted interval.
 
 

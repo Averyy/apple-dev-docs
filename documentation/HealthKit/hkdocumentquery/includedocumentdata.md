@@ -1,7 +1,8 @@
 # includeDocumentData
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the sample includes the full document’s data.
 
@@ -19,15 +20,20 @@ A Boolean value that indicates whether the sample includes the full document’s
 var includeDocumentData: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL includeDocumentData;
+```
+
 #### Discussion
 
-This property contains the value passed to the [`init(documentType:predicate:limit:sortDescriptors:includeDocumentData:resultsHandler:)`](hkdocumentquery/init(documenttype:predicate:limit:sortdescriptors:includedocumentdata:resultshandler:).md) method’s `includeDocumentData` parameter.
+This property contains the value passed to the [`init(documentType:predicate:limit:sortDescriptors:includeDocumentData:resultsHandler:)`](./init%28documenttype,predicate,limit,sortdescriptors,includedocumentdata,resultshandler%29.md) method’s `includeDocumentData` parameter.
 
 ## See Also
 
-- [var limit: Int](hkdocumentquery/limit.md)
+### Accessing the Document Query’s Properties
+- [var limit: Int](./limit.md)
   The maximum number of documents the receiver will return upon completion.
-- [var sortDescriptors: [NSSortDescriptor]?](hkdocumentquery/sortdescriptors.md)
+- [var sortDescriptors: [NSSortDescriptor]?](./sortdescriptors.md)
   An array of sort descriptors that specify the order of the results returned by this query.
 
 

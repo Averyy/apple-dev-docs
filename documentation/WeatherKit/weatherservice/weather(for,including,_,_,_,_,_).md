@@ -1,7 +1,8 @@
 # weather(for:including:_:_:_:_:_:)
 
 **Framework**: WeatherKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the weather forecast for the requested location.
 
@@ -27,11 +28,11 @@ The requested weather data set.
 
 #### Discussion
 
-> **Note**: Weather data error `WeatherError`
+> **Throws**: Weather data error `WeatherError`
 
 This is a variadic API in which any combination of data sets can be requested and returned as a tuple. Here’s an example:
 
-```None
+```
 `let (current, minute, hourly, daily, alerts) = try await service.weather(for: newYork, including: .current, .minute, .hourly, .daily, .alerts)`
 ```
 
@@ -41,17 +42,18 @@ This is a variadic API in which any combination of data sets can be requested an
 
 ## See Also
 
-- [func weather(for: CLLocation) async throws -> Weather](weatherservice/weather(for:).md)
+### Obtaining forecasts
+- [func weather(for: CLLocation) async throws -> Weather](./weather%28for%29.md)
   Returns the weather forecast for the requested location.
-- [func weather<T1, T2>(for: CLLocation, including: WeatherQuery<T1>, WeatherQuery<T2>) async throws -> (T1, T2)](weatherservice/weather(for:including:_:).md)
+- [func weather<T1, T2>(for: CLLocation, including: WeatherQuery<T1>, WeatherQuery<T2>) async throws -> (T1, T2)](./weather%28for,including,_%29.md)
   Returns the weather forecast for the requested location.
-- [func weather<T1, T2, T3>(for: CLLocation, including: WeatherQuery<T1>, WeatherQuery<T2>, WeatherQuery<T3>) async throws -> (T1, T2, T3)](weatherservice/weather(for:including:_:_:).md)
+- [func weather<T1, T2, T3>(for: CLLocation, including: WeatherQuery<T1>, WeatherQuery<T2>, WeatherQuery<T3>) async throws -> (T1, T2, T3)](./weather%28for,including,_,_%29.md)
   Returns the weather forecast for the requested location.
-- [func weather<T1, T2, T3, T4>(for: CLLocation, including: WeatherQuery<T1>, WeatherQuery<T2>, WeatherQuery<T3>, WeatherQuery<T4>) async throws -> (T1, T2, T3, T4)](weatherservice/weather(for:including:_:_:_:).md)
+- [func weather<T1, T2, T3, T4>(for: CLLocation, including: WeatherQuery<T1>, WeatherQuery<T2>, WeatherQuery<T3>, WeatherQuery<T4>) async throws -> (T1, T2, T3, T4)](./weather%28for,including,_,_,_%29.md)
   Returns the weather forecast for the requested location.
-- [func weather<T1, T2, T3, T4, T5>(for: CLLocation, including: WeatherQuery<T1>, WeatherQuery<T2>, WeatherQuery<T3>, WeatherQuery<T4>, WeatherQuery<T5>) async throws -> (T1, T2, T3, T4, T5)](weatherservice/weather(for:including:_:_:_:_:).md)
+- [func weather<T1, T2, T3, T4, T5>(for: CLLocation, including: WeatherQuery<T1>, WeatherQuery<T2>, WeatherQuery<T3>, WeatherQuery<T4>, WeatherQuery<T5>) async throws -> (T1, T2, T3, T4, T5)](./weather%28for,including,_,_,_,_%29.md)
   Returns the weather forecast for the requested location.
-- [static let shared: WeatherService](weatherservice/shared.md)
+- [static let shared: WeatherService](./shared.md)
   A single, shared weather service object.
 
 

@@ -1,7 +1,8 @@
 # UCCompareText(_:_:_:_:_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Uses locale-specific collation information to compare Unicode strings.
 
@@ -14,7 +15,11 @@ Uses locale-specific collation information to compare Unicode strings.
 func UCCompareText(_ collatorRef: CollatorRef!, _ text1Ptr: UnsafePointer<UniChar>!, _ text1Length: Int, _ text2Ptr: UnsafePointer<UniChar>!, _ text2Length: Int, _ equivalent: UnsafeMutablePointer<DarwinBoolean>!, _ order: UnsafeMutablePointer<Int32>!) -> OSStatus
 ```
 
-#### Return_value
+```c
+OSStatus UCCompareText(CollatorRef collatorRef, const UniChar *text1Ptr, UniCharCount text1Length, const UniChar *text2Ptr, UniCharCount text2Length, Boolean *equivalent, SInt32 *order);
+```
+
+#### Return Value
 
 A result code.  The function can return `paramErr` (for example, if `collatorRef`, `text1Ptr`, or `text2Ptr` are `NULL`.
 
@@ -26,11 +31,11 @@ You can use the `UCCompareText` function to perform various types of string comp
 -  determine the relative ordering of two strings 
 -  check whether a given string is equivalent to any string in an ordered list 
 
-You can also call the `UCCompareText` function multiple times to compare different strings using the same collator object. If you wish to compare the same strings several times, as when sorting a list of strings, it may be more efficient for you to derive a collation key for each string and then compare the collation keys. For more on comparison using collation keys, see the functions  [`UCGetCollationKey(_:_:_:_:_:_:)`](1390468-ucgetcollationkey.md)  and  [`UCCompareCollationKeys(_:_:_:_:_:_:)`](1390378-uccomparecollationkeys.md). 
+You can also call the `UCCompareText` function multiple times to compare different strings using the same collator object. If you wish to compare the same strings several times, as when sorting a list of strings, it may be more efficient for you to derive a collation key for each string and then compare the collation keys. For more on comparison using collation keys, see the functions  [`UCGetCollationKey(_:_:_:_:_:_:)`](./api-1390468-ucgetcollationkey.md)  and  [`UCCompareCollationKeys(_:_:_:_:_:_:)`](./api-1390378-uccomparecollationkeys.md). 
 
 ## Parameters
 
-- `collatorRef`: A valid reference to a collator object; `NULL` is not allowed. You can use the function [`UCCreateCollator(_:_:_:_:)`](1390403-uccreatecollator.md) to obtain a collator reference. 
+- `collatorRef`: A valid reference to a collator object; `NULL` is not allowed. You can use the function [`UCCreateCollator(_:_:_:_:)`](./api-1390403-uccreatecollator.md) to obtain a collator reference. 
 - `text1Ptr`: A pointer to the first Unicode string (a `UniChar` array) to compare. 
 - `text1Length`: The total count of Unicode characters in the first string being compared. 
 - `text2Ptr`: A pointer to the second Unicode string to compare.
@@ -40,17 +45,18 @@ You can also call the `UCCompareText` function multiple times to compare differe
 
 ## See Also
 
-- [func UCCreateCollator(LocaleRef!, LocaleOperationVariant, UCCollateOptions, UnsafeMutablePointer<CollatorRef?>!) -> OSStatus](1390403-uccreatecollator.md)
+### Comparing Unicode Strings
+- [func UCCreateCollator(LocaleRef!, LocaleOperationVariant, UCCollateOptions, UnsafeMutablePointer<CollatorRef?>!) -> OSStatus](./api-1390403-uccreatecollator.md)
   Creates an object encapsulating locale and collation information, for the purpose of performing Unicode string comparison.
-- [func UCGetCollationKey(CollatorRef!, UnsafePointer<UniChar>!, Int, Int, UnsafeMutablePointer<Int>!, UnsafeMutablePointer<UCCollationValue>!) -> OSStatus](1390468-ucgetcollationkey.md)
+- [func UCGetCollationKey(CollatorRef!, UnsafePointer<UniChar>!, Int, Int, UnsafeMutablePointer<Int>!, UnsafeMutablePointer<UCCollationValue>!) -> OSStatus](./api-1390468-ucgetcollationkey.md)
   Uses locale-specific collation information to generate a collation key for a Unicode string.
-- [func UCCompareCollationKeys(UnsafePointer<UCCollationValue>!, Int, UnsafePointer<UCCollationValue>!, Int, UnsafeMutablePointer<DarwinBoolean>!, UnsafeMutablePointer<Int32>!) -> OSStatus](1390378-uccomparecollationkeys.md)
+- [func UCCompareCollationKeys(UnsafePointer<UCCollationValue>!, Int, UnsafePointer<UCCollationValue>!, Int, UnsafeMutablePointer<DarwinBoolean>!, UnsafeMutablePointer<Int32>!) -> OSStatus](./api-1390378-uccomparecollationkeys.md)
   Uses collation keys to compare Unicode strings.
-- [func UCDisposeCollator(UnsafeMutablePointer<CollatorRef?>!) -> OSStatus](1390435-ucdisposecollator.md)
+- [func UCDisposeCollator(UnsafeMutablePointer<CollatorRef?>!) -> OSStatus](./api-1390435-ucdisposecollator.md)
   Disposes a collator object.
-- [func UCCompareTextDefault(UCCollateOptions, UnsafePointer<UniChar>!, Int, UnsafePointer<UniChar>!, Int, UnsafeMutablePointer<DarwinBoolean>!, UnsafeMutablePointer<Int32>!) -> OSStatus](1390472-uccomparetextdefault.md)
+- [func UCCompareTextDefault(UCCollateOptions, UnsafePointer<UniChar>!, Int, UnsafePointer<UniChar>!, Int, UnsafeMutablePointer<DarwinBoolean>!, UnsafeMutablePointer<Int32>!) -> OSStatus](./api-1390472-uccomparetextdefault.md)
   Uses the default system locale to compare Unicode strings.
-- [func UCCompareTextNoLocale(UCCollateOptions, UnsafePointer<UniChar>!, Int, UnsafePointer<UniChar>!, Int, UnsafeMutablePointer<DarwinBoolean>!, UnsafeMutablePointer<Int32>!) -> OSStatus](1390513-uccomparetextnolocale.md)
+- [func UCCompareTextNoLocale(UCCollateOptions, UnsafePointer<UniChar>!, Int, UnsafePointer<UniChar>!, Int, UnsafeMutablePointer<DarwinBoolean>!, UnsafeMutablePointer<Int32>!) -> OSStatus](./api-1390513-uccomparetextnolocale.md)
   Uses a fixed, locale-insensitive order to compare Unicode strings.
 
 

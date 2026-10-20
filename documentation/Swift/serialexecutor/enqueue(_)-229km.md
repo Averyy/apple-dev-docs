@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -12,6 +13,8 @@
 - tvOS 13.0+
 - visionOS 1.0+
 - watchOS 6.0+
+
+> **Deprecated**: Implement 'enqueue(_: consuming ExecutorJob)' instead
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # withValue(_:operation:file:line:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Binds the task-local to the specific value for the duration of the synchronous operation.
 

@@ -1,7 +1,8 @@
 # new Padding(top, right, bottom)
 
 **Framework**: MapKit JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Constructor
 
 Creates a padding object and initializes it with the provided top, right, and bottom values.
 
@@ -10,7 +11,7 @@ Creates a padding object and initializes it with the provided top, right, and bo
 
 ## Declaration
 
-```swift
+```
 constructor(top: number, right: number, bottom: number);
 ```
 
@@ -26,15 +27,16 @@ The framework sets the left side padding value to `0`.
 
 ## See Also
 
-- [new Padding()](padding/paddingconstructor.md)
+### Creating padding
+- [new Padding()](./paddingconstructor.md)
   Creates a padding object with no inset margins.
-- [new Padding(paddings)](padding/paddingconstructor1.md)
+- [new Padding(paddings)](./paddingconstructor1.md)
   Creates a padding object and initializes its values with the provided object literal.
-- [new Padding(top)](padding/paddingconstructor2.md)
+- [new Padding(top)](./paddingconstructor2.md)
   Creates a padding object and initializes its top inset margin with the provided value.
-- [new Padding(top, right)](padding/paddingconstructor3.md)
+- [new Padding(top, right)](./paddingconstructor3.md)
   Creates a padding object and initializes it with the provided top and right side values.
-- [new Padding(top, right, bottom, left)](padding/paddingconstructor5.md)
+- [new Padding(top, right, bottom, left)](./paddingconstructor5.md)
   Creates a padding object and initializes it with the provided values.
 
 

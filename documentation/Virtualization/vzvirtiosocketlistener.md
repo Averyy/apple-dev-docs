@@ -1,7 +1,8 @@
 # VZVirtioSocketListener
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that listens for port-based connection requests from the guest operating system.
 
@@ -14,35 +15,40 @@ An object that listens for port-based connection requests from the guest operati
 class VZVirtioSocketListener
 ```
 
+```objc
+@interface VZVirtioSocketListener : NSObject
+```
+
 #### Overview
 
-Use a [`VZVirtioSocketListener`](vzvirtiosocketlistener.md) object to route connection requests to your associated delegate object. The socket listener object handles incoming connection requests from the guest operating system and directs them to the methods of its associated [`delegate`](vzvirtiosocketlistener/delegate.md) object. You may use the same listener object to monitor connections on multiple ports.
+Use a [`VZVirtioSocketListener`](./vzvirtiosocketlistener.md) object to route connection requests to your associated delegate object. The socket listener object handles incoming connection requests from the guest operating system and directs them to the methods of its associated [`delegate`](./vzvirtiosocketlistener/delegate.md) object. You may use the same listener object to monitor connections on multiple ports.
 
-After creating a [`VZVirtioSocketListener`](vzvirtiosocketlistener.md) object, assign a custom object to its [`delegate`](vzvirtiosocketlistener/delegate.md) property. The delegate must implement the [`VZVirtioSocketListenerDelegate`](vzvirtiosocketlistenerdelegate.md) protocol. To connect the listener to a port, call the [`setSocketListener(_:forPort:)`](vzvirtiosocketdevice/setsocketlistener(_:forport:).md) method of your virtual machine’s [`VZVirtioSocketDevice`](vzvirtiosocketdevice.md) object.
+After creating a [`VZVirtioSocketListener`](./vzvirtiosocketlistener.md) object, assign a custom object to its [`delegate`](./vzvirtiosocketlistener/delegate.md) property. The delegate must implement the [`VZVirtioSocketListenerDelegate`](./vzvirtiosocketlistenerdelegate.md) protocol. To connect the listener to a port, call the [`setSocketListener(_:forPort:)`](./vzvirtiosocketdevice/setsocketlistener%28_,forport%29.md) method of your virtual machine’s [`VZVirtioSocketDevice`](./vzvirtiosocketdevice.md) object.
 
 ## Topics
 
 ### Responding to new connections
-- [var delegate: (any VZVirtioSocketListenerDelegate)?](vzvirtiosocketlistener/delegate.md)
+- [var delegate: (any VZVirtioSocketListenerDelegate)?](./vzvirtiosocketlistener/delegate.md)
   The custom object you use to respond to port-based connection attempts.
-- [protocol VZVirtioSocketListenerDelegate](vzvirtiosocketlistenerdelegate.md)
+- [protocol VZVirtioSocketListenerDelegate](./vzvirtiosocketlistenerdelegate.md)
   An interface you use to manage connections between the guest operating system and host computer.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZVirtioSocketConnection](vzvirtiosocketconnection.md)
+### Connection management
+- [class VZVirtioSocketConnection](./vzvirtiosocketconnection.md)
   A port-based connection between the guest operating system and the host computer.
 
 

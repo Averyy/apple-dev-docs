@@ -1,7 +1,8 @@
 # PlaneAnchor.Alignment.horizontal
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The plane is in a horizontal oriention.
 
@@ -16,7 +17,8 @@ case horizontal
 
 ## See Also
 
-- [PlaneAnchor.Alignment.vertical](planeanchor/alignment-swift.enum/vertical.md)
+### Alignment Values
+- [PlaneAnchor.Alignment.vertical](./vertical.md)
   The plane is in a vertical orientation.
 
 

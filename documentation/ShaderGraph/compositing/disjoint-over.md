@@ -1,7 +1,8 @@
 # Disjoint Over
 
 **Framework**: ShaderGraph  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: ShaderGraph Node
 
 A merge operation that layers foreground over background color, but assumes no overlap in partially transparent areas covered by both.
 
@@ -15,7 +16,17 @@ A merge operation that layers foreground over background color, but assumes no o
 
 #### Parameter Types
 
-#### Parameter Descriptions
+| Input | Type |
+| --- | --- |
+| `Foreground` | Color4 |
+| `Background` | Color4 |
+| `Mix` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color4 |
+
+#### Parameter descriptions
 
 - **`Foreground`**: The `color4` foreground input. `F` represents the RGB component of this parameter. `f` represents the alpha component of this parameter.
 - **`Background`**: The `color4` background input. `B` represents the RGB component of this parameter. `b`represents the alpha component of this parameter.
@@ -25,43 +36,48 @@ A merge operation that layers foreground over background color, but assumes no o
 
 The Disjoint Over node performs one of two mixes based on the alpha channels of the foreground and background inputs. If `f+b<=1`, then the RGB component of the output is `F+B`. If `f+b>1`, then the RGB component of the output is `F+b(1-f)/b`. The alpha component of the output for this node is always the smaller value between `f+b` or 1. Below is a simple node graph that uses the Disjoint Over node to blend a tile and rock texture:
 
-![None](/images/ShaderGraph-Docs/DisjointOverGraph.png)
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/DisjointOverGraph.png)
 
 The graph remaps the alpha of the rock texture from a range of `0-1` to a range of `-1-2` in order to show more of the effect of both possible modes of the blend. Below are the two original images and their resulting blended texture applied to a cube:
 
-![None](/images/ShaderGraph-Docs/DisjointOverMaterial3.png)
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/DisjointOverMaterial1.png)
+
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/DisjointOverMaterial2.png)
+
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/DisjointOverMaterial3.png)
 
 ## See Also
 
-- [Premultiply](compositing/premultiply.md)
+### Nodes
+- [Premultiply](./premultiply.md)
   Multiplies the RGB channels of the input by the alpha channel.
-- [Unpremultiply](compositing/unpremultiply.md)
+- [Unpremultiply](./unpremultiply.md)
   Divides the RGB channels of the input by the alpha channel.
-- [Additive Mix](compositing/additive-mix.md)
+- [Additive Mix](./additive-mix.md)
   Adds foreground and background values.
-- [Subtractive Mix](compositing/subtractive-mix.md)
+- [Subtractive Mix](./subtractive-mix.md)
   Subtracts foreground from background values.
-- [Difference](compositing/difference.md)
+- [Difference](./difference.md)
   Outputs the distance between foreground and background values.
-- [Burn](compositing/burn.md)
+- [Burn](./burn.md)
   A blend operation that darkens the foreground layer using the background.
-- [Dodge](compositing/dodge.md)
+- [Dodge](./dodge.md)
   A blend operation that lightens the background layer depending on the foreground.
-- [Screen](compositing/screen.md)
+- [Screen](./screen.md)
   A blend operation that lightens areas that are darker than white.
-- [Overlay](compositing/overlay.md)
+- [Overlay](./overlay.md)
   A blend operation that multiplies dark areas and screens light areas.
-- [In](compositing/in.md)
+- [In](./in.md)
   Outputs areas of foreground that overlap with the alpha of background.
-- [Mask](compositing/mask.md)
+- [Mask](./mask.md)
   Outputs areas of background that overlap with the alpha of foreground.
-- [Matte](compositing/matte.md)
+- [Matte](./matte.md)
   A merge operation that layers premultiplied foreground over background.
-- [Out](compositing/out.md)
+- [Out](./out.md)
   Outputs areas of foreground that do not overlap with background.
-- [Over](compositing/over.md)
+- [Over](./over.md)
   A merge operation that layers foreground over background, using the alpha of the foreground.
-- [Inside](compositing/inside.md)
+- [Inside](./inside.md)
   Multiplies a mask to all channels of the input.
 
 

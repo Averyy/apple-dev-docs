@@ -2,17 +2,24 @@
 
 **Framework**: Quartz  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the destination CGL context to use for OpenGL rendering from within the execution method.
 
 **Availability**:
-- macOS 10.5+
+- macOS 10.5+ - Deprecated in 10.14
+
+> **Deprecated**: Quartz Composer OpenGL API deprecated. (Define QC_SILENCE_GL_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 func cglContextObj() -> CGLContextObj!
+```
+
+```objc
+- (CGLContextObj) CGLContextObj;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the collection is empty.
 
@@ -34,13 +35,14 @@ if horseName.isEmpty {
 // Prints "Hi ho, Silver!")
 ```
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## See Also
 
-- [var count: Int](array/count.md)
+### Inspecting an Array
+- [var count: Int](./count.md)
   The number of elements in the array.
-- [var capacity: Int](array/capacity.md)
+- [var capacity: Int](./capacity.md)
   The total number of elements that the array can contain without allocating new storage.
 
 

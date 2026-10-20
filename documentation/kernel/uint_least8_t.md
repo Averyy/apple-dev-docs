@@ -1,14 +1,15 @@
 # uint_least8_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef uint8_t uint_least8_t;
 ```
 

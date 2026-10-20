@@ -1,7 +1,8 @@
 # ACAccountStoreRemoveCompletionHandler
 
 **Framework**: Accounts  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Specifies a handler to call when an account is removed from the store.
 
@@ -17,16 +18,21 @@ Specifies a handler to call when an account is removed from the store.
 typealias ACAccountStoreRemoveCompletionHandler = (Bool, (any Error)?) -> Void
 ```
 
+```c
+typedef void (^)(_Bool, NSError *) ACAccountStoreRemoveCompletionHandler;
+```
+
 #### Discussion
 
 The completion handler parameters are:
 
-- **`success`**: A Boolean value indicating whether the operation was successful. [`true`](https://developer.apple.com/documentation/swift/true) if successful, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+- **`success`**: A Boolean value indicating whether the operation was successful. [`true`](../Swift/true.md) if successful, otherwise [`false`](../Swift/false.md).
 - **`error`**: An error, if one occurred.
 
 ## See Also
 
-- [func removeAccount(ACAccount!, withCompletionHandler: ((Bool, (any Error)?) -> Void)!)](acaccountstore/removeaccount(_:withcompletionhandler:).md)
+### Removing Accounts
+- [func removeAccount(ACAccount!, withCompletionHandler: ((Bool, (any Error)?) -> Void)!)](./acaccountstore/removeaccount%28_,withcompletionhandler%29.md)
   Removes an account from the account store.
 
 

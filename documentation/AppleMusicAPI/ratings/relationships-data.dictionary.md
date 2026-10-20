@@ -1,7 +1,8 @@
 # Ratings.Relationships
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships for a rating resource.
 
@@ -10,23 +11,26 @@ The relationships for a rating resource.
 
 ## Declaration
 
-```swift
+```
 object Ratings.Relationships
 ```
 
 ## Topics
 
 ### Related Objects
-- [object Ratings.Relationships.RatingsContentRelationship](ratings/relationships-data.dictionary/ratingscontentrelationship.md)
+- [object Ratings.Relationships.RatingsContentRelationship](./relationships-data.dictionary/ratingscontentrelationship.md)
   A relationship between the rating and the assocaited content.
 
 ## Properties
 
-- `content` (Ratings.Relationships.RatingsContentRelationship): The content associated with the rating. Fetch limits: None.
+- `content` (Ratings.Relationships.RatingsContentRelationship): The content associated with the rating.
+
+  Fetch limits: None.
 
 ## See Also
 
-- [object Ratings.Attributes](ratings/attributes-data.dictionary.md)
+### Related Objects
+- [object Ratings.Attributes](./attributes-data.dictionary.md)
   The attributes for a rating resource.
 
 

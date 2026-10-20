@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Telephony  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an authorization status.
 

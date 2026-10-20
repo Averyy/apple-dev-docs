@@ -1,7 +1,8 @@
 # preferredFrameRateRange
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A range of frequencies your app allows for frame updates, affecting how often the system invokes your delegate’s callback.
 
@@ -19,6 +20,10 @@ A range of frequencies your app allows for frame updates, affecting how often th
 var preferredFrameRateRange: CAFrameRateRange { get set }
 ```
 
+```objc
+@property (nonatomic) CAFrameRateRange preferredFrameRateRange;
+```
+
 #### Discussion
 
 The display link makes a best attempt to invoke your app’s callback within the frequency range you set to this property. However, the system also takes into account the device’s hardware capabilities and the other tasks your game or app is running.
@@ -29,15 +34,16 @@ The system can change the available range of frame rates because it factors in s
 
 The system typically provides a consistent frame rate by choosing one that’s a factor of the display’s maximum refresh rate. For example, a display link could invoke your callback 60 times per second for a display with a refresh rate of 60 hertz. However, the display link could invoke your callback less frequently, such as 30, 20, or 15 hertz, by setting a range with smaller values.
 
-> **Note**:  By default, this property’s values are equal to [`default`](caframeraterange/default.md), which is equivalent to the display’s maximum refresh rate, such as a [`UIScreen`](https://developer.apple.com/documentation/uikit/uiscreen) instance’s [`maximumFramesPerSecond`](https://developer.apple.com/documentation/uikit/uiscreen/maximumframespersecond) property.
+> **Note**:  By default, this property’s values are equal to [`default`](../caframeraterange/default.md), which is equivalent to the display’s maximum refresh rate, such as a [`UIScreen`](../../UIKit/uiscreen.md) instance’s [`maximumFramesPerSecond`](../../UIKit/uiscreen/maximumframespersecond.md) property.
 
-For more information, see [`Optimizing iPhone and iPad apps to support ProMotion displays`](optimizing-iphone-and-ipad-apps-to-support-promotion-displays.md).
+For more information, see [Optimizing iPhone and iPad apps to support ProMotion displays](../optimizing-iphone-and-ipad-apps-to-support-promotion-displays.md).
 
 ## See Also
 
-- [var preferredFrameLatency: Float](cametaldisplaylink/preferredframelatency.md)
+### Configuring a Display Link
+- [var preferredFrameLatency: Float](./preferredframelatency.md)
   The amount of time, in frames, your app requests to render a frame.
-- [var delegate: (any CAMetalDisplayLinkDelegate)?](cametaldisplaylink/delegate.md)
+- [var delegate: (any CAMetalDisplayLinkDelegate)?](./delegate.md)
   An instance of a type your app implements that responds to the system’s callbacks.
 
 

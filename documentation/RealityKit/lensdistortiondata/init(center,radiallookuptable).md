@@ -1,7 +1,8 @@
 # init(center:radialLookupTable:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new immutable data structure describing lens distortion estimation.
 

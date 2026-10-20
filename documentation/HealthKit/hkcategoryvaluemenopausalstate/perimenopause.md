@@ -1,7 +1,8 @@
 # HKCategoryValueMenopausalState.perimenopause
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates the person is in perimenopause at the sample date.
 
@@ -19,9 +20,13 @@ A value that indicates the person is in perimenopause at the sample date.
 case perimenopause
 ```
 
+```c
+HKCategoryValueMenopausalStatePerimenopause
+```
+
 ## Mentions
 
-- [Recording and querying menopausal state](recording-and-querying-menopausal-state.md)
+- [Recording and querying menopausal state](../recording-and-querying-menopausal-state.md)
 
 #### Discussion
 
@@ -29,9 +34,10 @@ Perimenopause is the transitional period before menopause, when hormonal changes
 
 ## See Also
 
-- [HKCategoryValueMenopausalState.menopause](hkcategoryvaluemenopausalstate/menopause.md)
+### Specifying a menopausal state value
+- [HKCategoryValueMenopausalState.menopause](./menopause.md)
   A value that indicates the person is in menopause at the sample date.
-- [HKCategoryValueMenopausalState.none](hkcategoryvaluemenopausalstate/none.md)
+- [HKCategoryValueMenopausalState.none](./none.md)
   A value that indicates no menopausal state applies at the sample date.
 
 

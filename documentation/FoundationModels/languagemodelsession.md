@@ -1,7 +1,8 @@
 # LanguageModelSession
 
 **Framework**: Foundation Models  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a session that interacts with a language model.
 
@@ -21,17 +22,17 @@ final class LanguageModelSession
 
 ## Mentions
 
-- [Composing dynamic sessions with instructions and profiles](composing-dynamic-sessions-with-instructions-and-profiles.md)
-- [Generating content and performing tasks with Foundation Models](generating-content-and-performing-tasks-with-foundation-models.md)
-- [Adding server-side intelligence with Private Cloud Compute](adding-server-side-intelligence-with-private-cloud-compute.md)
-- [Analyzing images with multimodal prompting](analyzing-images-with-multimodal-prompting.md)
-- [Categorizing and organizing data with content tags](categorizing-and-organizing-data-with-content-tags.md)
-- [Generating Swift data structures with guided generation](generating-swift-data-structures-with-guided-generation.md)
-- [Improving the safety of generative model output](improving-the-safety-of-generative-model-output.md)
-- [Managing the context window](managing-the-context-window.md)
-- [Prompting an on-device foundation model](prompting-an-on-device-foundation-model.md)
-- [Running a Core AI model in a Foundation Models session](running-a-core-ai-model-in-a-foundation-models-session.md)
-- [Supporting languages and locales with Foundation Models](supporting-languages-and-locales-with-foundation-models.md)
+- [Composing dynamic sessions with instructions and profiles](./composing-dynamic-sessions-with-instructions-and-profiles.md)
+- [Generating content and performing tasks with Foundation Models](./generating-content-and-performing-tasks-with-foundation-models.md)
+- [Adding server-side intelligence with Private Cloud Compute](./adding-server-side-intelligence-with-private-cloud-compute.md)
+- [Analyzing images with multimodal prompting](./analyzing-images-with-multimodal-prompting.md)
+- [Categorizing and organizing data with content tags](./categorizing-and-organizing-data-with-content-tags.md)
+- [Generating Swift data structures with guided generation](./generating-swift-data-structures-with-guided-generation.md)
+- [Improving the safety of generative model output](./improving-the-safety-of-generative-model-output.md)
+- [Managing the context window](./managing-the-context-window.md)
+- [Prompting an on-device foundation model](./prompting-an-on-device-foundation-model.md)
+- [Running a Core AI model in a Foundation Models session](./running-a-core-ai-model-in-a-foundation-models-session.md)
+- [Supporting languages and locales with Foundation Models](./supporting-languages-and-locales-with-foundation-models.md)
 
 #### Overview
 
@@ -47,159 +48,160 @@ let prompt = "Generate a motivational quote for my next workout."
 let response = try await session.respond(to: prompt)
 ```
 
-The framework records each call to the model in a [`Transcript`](transcript.md) that includes all prompts and responses. If your session exceeds the available context size, it throws [`LanguageModelError.contextSizeExceeded(_:)`](languagemodelerror/contextsizeexceeded(_:).md). For more information on managing the context window size, see [`Managing the context window`](managing-the-context-window.md).
+The framework records each call to the model in a [`Transcript`](./transcript.md) that includes all prompts and responses. If your session exceeds the available context size, it throws [`LanguageModelError.contextSizeExceeded(_:)`](./languagemodelerror/contextsizeexceeded%28_%29.md). For more information on managing the context window size, see [Managing the context window](./managing-the-context-window.md).
 
-Use Instruments to analyze token consumption while your app is running and to look for opportunities to improve performance, like with [`prewarm(promptPrefix:)`](languagemodelsession/prewarm(promptprefix:).md). For more information on Instruments, see [`Analyzing the runtime performance of your Foundation Models app`](analyzing-the-runtime-performance-of-your-foundation-models-app.md).
+Use Instruments to analyze token consumption while your app is running and to look for opportunities to improve performance, like with [`prewarm(promptPrefix:)`](./languagemodelsession/prewarm%28promptprefix%29.md). For more information on Instruments, see [Analyzing the runtime performance of your Foundation Models app](./analyzing-the-runtime-performance-of-your-foundation-models-app.md).
 
 ## Topics
 
 ### Creating a session
-- [convenience(model:tools:instructions:)](languagemodelsession/init(model:tools:instructions:).md)
+- [convenience(model:tools:instructions:)](./languagemodelsession/init%28model,tools,instructions%29.md)
   Creates a session in a blank slate state with an instructions builder.
-- [convenience(model:tools:transcript:)](languagemodelsession/init(model:tools:transcript:).md)
+- [convenience(model:tools:transcript:)](./languagemodelsession/init%28model,tools,transcript%29.md)
   Creates a session by rehydrating from a transcript.
 ### Creating a session with a dynamic profile
-- [convenience init(profile: sending some LanguageModelSession.DynamicProfile, history: some Collection<Transcript.Entry>)](languagemodelsession/init(profile:history:).md)
+- [convenience init(profile: sending some LanguageModelSession.DynamicProfile, history: some Collection<Transcript.Entry>)](./languagemodelsession/init%28profile,history%29.md)
   Creates a session with a profile.
-- [convenience init(model: some LanguageModel, dynamicInstructions: sending some DynamicInstructions, history: some Collection<Transcript.Entry>)](languagemodelsession/init(model:dynamicinstructions:history:).md)
+- [convenience init(model: some LanguageModel, dynamicInstructions: sending some DynamicInstructions, history: some Collection<Transcript.Entry>)](./languagemodelsession/init%28model,dynamicinstructions,history%29.md)
   Creates a session with dynamic instructions.
-- [LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile.md)
+- [LanguageModelSession.DynamicProfile](./languagemodelsession/dynamicprofile.md)
   A dynamic profile that contains one or more profiles.
-- [LanguageModelSession.DynamicProfileModifier](languagemodelsession/dynamicprofilemodifier.md)
+- [LanguageModelSession.DynamicProfileModifier](./languagemodelsession/dynamicprofilemodifier.md)
   A protocol for creating reusable wrappers around dynamic profile content.
-- [LanguageModelSession.ConditionalDynamicProfile](languagemodelsession/conditionaldynamicprofile.md)
+- [LanguageModelSession.ConditionalDynamicProfile](./languagemodelsession/conditionaldynamicprofile.md)
   A dynamic profile that resolves to one of two profiles, depending on a condition.
-- [LanguageModelSession.DynamicProfileBuilder](languagemodelsession/dynamicprofilebuilder.md)
+- [LanguageModelSession.DynamicProfileBuilder](./languagemodelsession/dynamicprofilebuilder.md)
   A type that represents a dynamic profile builder.
-- [LanguageModelSession.DynamicProfileModifierContent](languagemodelsession/dynamicprofilemodifiercontent.md)
+- [LanguageModelSession.DynamicProfileModifierContent](./languagemodelsession/dynamicprofilemodifiercontent.md)
   A type that represents the dynamic profile a modifier applies to.
-- [LanguageModelSession.ModifiedDynamicProfile](languagemodelsession/modifieddynamicprofile.md)
+- [LanguageModelSession.ModifiedDynamicProfile](./languagemodelsession/modifieddynamicprofile.md)
   A dynamic profile with a modifier applied to it.
-- [LanguageModelSession.AnyDynamicProfile](languagemodelsession/anydynamicprofile.md)
+- [LanguageModelSession.AnyDynamicProfile](./languagemodelsession/anydynamicprofile.md)
   A type-erased dynamic profile.
-- [LanguageModelSession.Profile](languagemodelsession/profile.md)
+- [LanguageModelSession.Profile](./languagemodelsession/profile.md)
   A profile that contains dynamic instructions.
 ### Preloading the model
-- [func prewarm(promptPrefix: Prompt?)](languagemodelsession/prewarm(promptprefix:).md)
+- [func prewarm(promptPrefix: Prompt?)](./languagemodelsession/prewarm%28promptprefix%29.md)
   Loads the resources required for this session into memory ahead of a request.
 ### Accessing session properties
-- [var properties: SessionPropertyValues](languagemodelsession/properties.md)
+- [var properties: SessionPropertyValues](./languagemodelsession/properties.md)
   The values of the session’s managed properties.
 ### Inspecting the accumulated usage
-- [var usage: LanguageModelSession.Usage](languagemodelsession/usage-swift.property.md)
+- [var usage: LanguageModelSession.Usage](./languagemodelsession/usage-swift.property.md)
   The total accumulated usage across all responses generated by this session.
-- [LanguageModelSession.Usage](languagemodelsession/usage-swift.struct.md)
+- [LanguageModelSession.Usage](./languagemodelsession/usage-swift.struct.md)
   Information about how many tokens were used by a response.
 ### Configuring the transcript error handling policy
-- [var transcriptErrorHandlingPolicy: TranscriptErrorHandlingPolicy?](languagemodelsession/transcripterrorhandlingpolicy.md)
+- [var transcriptErrorHandlingPolicy: TranscriptErrorHandlingPolicy?](./languagemodelsession/transcripterrorhandlingpolicy.md)
   The session’s policy for managing the transcript when errors occur.
-- [struct TranscriptErrorHandlingPolicy](transcripterrorhandlingpolicy.md)
+- [struct TranscriptErrorHandlingPolicy](./transcripterrorhandlingpolicy.md)
   Options for controlling how a language model session manages the transcript when errors occur.
 ### Generating a response
-- [var isResponding: Bool](languagemodelsession/isresponding.md)
+- [var isResponding: Bool](./languagemodelsession/isresponding.md)
   A Boolean value that indicates whether a response is being generated.
-- [func respond(options: GenerationOptions, prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<String>](languagemodelsession/respond(options:prompt:).md)
+- [func respond(options: GenerationOptions, prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<String>](./languagemodelsession/respond%28options,prompt%29.md)
   Produces a response to a prompt.
-- [func respond<Content>(generating: Content.Type, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<Content>](languagemodelsession/respond(generating:includeschemainprompt:options:prompt:).md)
+- [func respond<Content>(generating: Content.Type, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<Content>](./languagemodelsession/respond%28generating,includeschemainprompt,options,prompt%29.md)
   Produces a generable object as a response to a prompt.
-- [func respond(schema: GenerationSchema, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<GeneratedContent>](languagemodelsession/respond(schema:includeschemainprompt:options:prompt:).md)
+- [func respond(schema: GenerationSchema, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<GeneratedContent>](./languagemodelsession/respond%28schema,includeschemainprompt,options,prompt%29.md)
   Produces a generated content type as a response to a prompt and schema.
-- [func respond(to:options:)](languagemodelsession/respond(to:options:).md)
+- [func respond(to:options:)](./languagemodelsession/respond%28to,options%29.md)
   Produces a response to a prompt.
-- [func respond(to:generating:includeSchemaInPrompt:options:)](languagemodelsession/respond(to:generating:includeschemainprompt:options:).md)
+- [func respond(to:generating:includeSchemaInPrompt:options:)](./languagemodelsession/respond%28to,generating,includeschemainprompt,options%29.md)
   Produces a generable object as a response to a prompt.
-- [func respond(to:schema:includeSchemaInPrompt:options:)](languagemodelsession/respond(to:schema:includeschemainprompt:options:).md)
+- [func respond(to:schema:includeSchemaInPrompt:options:)](./languagemodelsession/respond%28to,schema,includeschemainprompt,options%29.md)
   Produces a generated content type as a response to a prompt and schema.
-- [LanguageModelSession.Response](languagemodelsession/response.md)
+- [LanguageModelSession.Response](./languagemodelsession/response.md)
   A structure that stores the output of a response call.
 ### Generating a response with metadata
-- [func respond(options: GenerationOptions, contextOptions: ContextOptions, metadata: [String : any ConvertibleToGeneratedContent], prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<String>](languagemodelsession/respond(options:contextoptions:metadata:prompt:).md)
+- [func respond(options: GenerationOptions, contextOptions: ContextOptions, metadata: [String : any ConvertibleToGeneratedContent], prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<String>](./languagemodelsession/respond%28options,contextoptions,metadata,prompt%29.md)
   Produces a response to a prompt.
-- [func respond<Content>(generating: Content.Type, options: GenerationOptions, contextOptions: ContextOptions, metadata: [String : any ConvertibleToGeneratedContent], prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<Content>](languagemodelsession/respond(generating:options:contextoptions:metadata:prompt:).md)
+- [func respond<Content>(generating: Content.Type, options: GenerationOptions, contextOptions: ContextOptions, metadata: [String : any ConvertibleToGeneratedContent], prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<Content>](./languagemodelsession/respond%28generating,options,contextoptions,metadata,prompt%29.md)
   Produces a generable object as a response to a prompt.
-- [func respond(schema: GenerationSchema, options: GenerationOptions, contextOptions: ContextOptions, metadata: [String : any ConvertibleToGeneratedContent], prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<GeneratedContent>](languagemodelsession/respond(schema:options:contextoptions:metadata:prompt:).md)
+- [func respond(schema: GenerationSchema, options: GenerationOptions, contextOptions: ContextOptions, metadata: [String : any ConvertibleToGeneratedContent], prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<GeneratedContent>](./languagemodelsession/respond%28schema,options,contextoptions,metadata,prompt%29.md)
   Produces a generated content type as a response to a prompt and schema.
-- [func respond(to:options:contextOptions:metadata:)](languagemodelsession/respond(to:options:contextoptions:metadata:).md)
+- [func respond(to:options:contextOptions:metadata:)](./languagemodelsession/respond%28to,options,contextoptions,metadata%29.md)
   Produces a response to a prompt.
-- [func respond(to:generating:options:contextOptions:metadata:)](languagemodelsession/respond(to:generating:options:contextoptions:metadata:).md)
+- [func respond(to:generating:options:contextOptions:metadata:)](./languagemodelsession/respond%28to,generating,options,contextoptions,metadata%29.md)
   Produces a generable object as a response to a prompt.
-- [func respond(to:schema:options:contextOptions:metadata:)](languagemodelsession/respond(to:schema:options:contextoptions:metadata:).md)
+- [func respond(to:schema:options:contextOptions:metadata:)](./languagemodelsession/respond%28to,schema,options,contextoptions,metadata%29.md)
   Produces a generated content type as a response to a prompt and schema.
 ### Streaming a response
-- [func streamResponse(options: GenerationOptions, prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<String>](languagemodelsession/streamresponse(options:prompt:).md)
+- [func streamResponse(options: GenerationOptions, prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<String>](./languagemodelsession/streamresponse%28options,prompt%29.md)
   Produces a response stream to a prompt.
-- [func streamResponse<Content>(generating: Content.Type, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<Content>](languagemodelsession/streamresponse(generating:includeschemainprompt:options:prompt:).md)
+- [func streamResponse<Content>(generating: Content.Type, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<Content>](./languagemodelsession/streamresponse%28generating,includeschemainprompt,options,prompt%29.md)
   Produces a response stream to a prompt.
-- [func streamResponse(schema: GenerationSchema, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<GeneratedContent>](languagemodelsession/streamresponse(schema:includeschemainprompt:options:prompt:).md)
+- [func streamResponse(schema: GenerationSchema, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<GeneratedContent>](./languagemodelsession/streamresponse%28schema,includeschemainprompt,options,prompt%29.md)
   Produces a response stream to a prompt and schema.
-- [func streamResponse(to:options:)](languagemodelsession/streamresponse(to:options:).md)
+- [func streamResponse(to:options:)](./languagemodelsession/streamresponse%28to,options%29.md)
   Produces a response stream to a prompt.
-- [func streamResponse(to:generating:includeSchemaInPrompt:options:)](languagemodelsession/streamresponse(to:generating:includeschemainprompt:options:).md)
+- [func streamResponse(to:generating:includeSchemaInPrompt:options:)](./languagemodelsession/streamresponse%28to,generating,includeschemainprompt,options%29.md)
   Produces a response stream to a prompt.
-- [func streamResponse(to:schema:includeSchemaInPrompt:options:)](languagemodelsession/streamresponse(to:schema:includeschemainprompt:options:).md)
+- [func streamResponse(to:schema:includeSchemaInPrompt:options:)](./languagemodelsession/streamresponse%28to,schema,includeschemainprompt,options%29.md)
   Produces a response stream to a prompt and schema.
-- [LanguageModelSession.ResponseStream](languagemodelsession/responsestream.md)
+- [LanguageModelSession.ResponseStream](./languagemodelsession/responsestream.md)
   An async sequence of snapshots of partially generated content.
 ### Streaming a response with metadata
-- [func streamResponse(options: GenerationOptions, contextOptions: ContextOptions, metadata: [String : any ConvertibleToGeneratedContent], prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<String>](languagemodelsession/streamresponse(options:contextoptions:metadata:prompt:).md)
+- [func streamResponse(options: GenerationOptions, contextOptions: ContextOptions, metadata: [String : any ConvertibleToGeneratedContent], prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<String>](./languagemodelsession/streamresponse%28options,contextoptions,metadata,prompt%29.md)
   Produces a response stream to a prompt.
-- [func streamResponse<Content>(generating: Content.Type, options: GenerationOptions, contextOptions: ContextOptions, metadata: [String : any ConvertibleToGeneratedContent], prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<Content>](languagemodelsession/streamresponse(generating:options:contextoptions:metadata:prompt:).md)
+- [func streamResponse<Content>(generating: Content.Type, options: GenerationOptions, contextOptions: ContextOptions, metadata: [String : any ConvertibleToGeneratedContent], prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<Content>](./languagemodelsession/streamresponse%28generating,options,contextoptions,metadata,prompt%29.md)
   Produces a response stream to a prompt.
-- [func streamResponse(schema: GenerationSchema, options: GenerationOptions, contextOptions: ContextOptions, metadata: [String : any ConvertibleToGeneratedContent], prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<GeneratedContent>](languagemodelsession/streamresponse(schema:options:contextoptions:metadata:prompt:).md)
+- [func streamResponse(schema: GenerationSchema, options: GenerationOptions, contextOptions: ContextOptions, metadata: [String : any ConvertibleToGeneratedContent], prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<GeneratedContent>](./languagemodelsession/streamresponse%28schema,options,contextoptions,metadata,prompt%29.md)
   Produces a response stream to a prompt and schema.
-- [func streamResponse(to:options:contextOptions:metadata:)](languagemodelsession/streamresponse(to:options:contextoptions:metadata:).md)
+- [func streamResponse(to:options:contextOptions:metadata:)](./languagemodelsession/streamresponse%28to,options,contextoptions,metadata%29.md)
   Produces a response stream to a prompt.
-- [func streamResponse(to:generating:options:contextOptions:metadata:)](languagemodelsession/streamresponse(to:generating:options:contextoptions:metadata:).md)
+- [func streamResponse(to:generating:options:contextOptions:metadata:)](./languagemodelsession/streamresponse%28to,generating,options,contextoptions,metadata%29.md)
   Produces a response stream to a prompt.
-- [func streamResponse(to:schema:options:contextOptions:metadata:)](languagemodelsession/streamresponse(to:schema:options:contextoptions:metadata:).md)
+- [func streamResponse(to:schema:options:contextOptions:metadata:)](./languagemodelsession/streamresponse%28to,schema,options,contextoptions,metadata%29.md)
   Produces a response stream to a prompt and schema.
 ### Accessing the transcript
-- [var transcript: Transcript](languagemodelsession/transcript.md)
+- [var transcript: Transcript](./languagemodelsession/transcript.md)
   A full history of interactions, including user inputs and model responses.
 ### Generating feedback
-- [func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, issues: [LanguageModelFeedback.Issue], desiredOutput: Transcript.Entry?) -> Data](languagemodelsession/logfeedbackattachment(sentiment:issues:desiredoutput:).md)
+- [func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, issues: [LanguageModelFeedback.Issue], desiredOutput: Transcript.Entry?) -> Data](./languagemodelsession/logfeedbackattachment%28sentiment,issues,desiredoutput%29.md)
   Logs and serializes a feedback attachment that can be submitted to Apple.
-- [func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, issues: [LanguageModelFeedback.Issue], desiredResponseContent: (any ConvertibleToGeneratedContent)?) -> Data](languagemodelsession/logfeedbackattachment(sentiment:issues:desiredresponsecontent:).md)
+- [func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, issues: [LanguageModelFeedback.Issue], desiredResponseContent: (any ConvertibleToGeneratedContent)?) -> Data](./languagemodelsession/logfeedbackattachment%28sentiment,issues,desiredresponsecontent%29.md)
   Logs and serializes a feedback attachment that includes the content you expected.
-- [func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, issues: [LanguageModelFeedback.Issue], desiredResponseText: String?) -> Data](languagemodelsession/logfeedbackattachment(sentiment:issues:desiredresponsetext:).md)
+- [func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, issues: [LanguageModelFeedback.Issue], desiredResponseText: String?) -> Data](./languagemodelsession/logfeedbackattachment%28sentiment,issues,desiredresponsetext%29.md)
   Logs and serializes a feedback attachment that includes the response text you expected.
-- [struct LanguageModelFeedback](languagemodelfeedback.md)
+- [struct LanguageModelFeedback](./languagemodelfeedback.md)
   Feedback appropriate for logging or attaching to Feedback Assistant.
 ### Session properties
-- [LanguageModelSession.SessionProperty](languagemodelsession/sessionproperty.md)
+- [LanguageModelSession.SessionProperty](./languagemodelsession/sessionproperty.md)
   A property wrapper that provides access to properties from within profiles, dynamic instructions, and tools.
 ### Errors
-- [LanguageModelSession.Error](languagemodelsession/error.md)
+- [LanguageModelSession.Error](./languagemodelsession/error.md)
   A failure caused by incorrect use of a language model session.
-- [LanguageModelSession.ToolCallError](languagemodelsession/toolcallerror.md)
+- [LanguageModelSession.ToolCallError](./languagemodelsession/toolcallerror.md)
   An error that occurs while a language model is calling a tool.
-- [LanguageModelSession.GenerationError](languagemodelsession/generationerror.md)
+- [LanguageModelSession.GenerationError](./languagemodelsession/generationerror.md)
   An error that may occur while generating a response.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Observable](../observation/observable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Observable](../Observation/observable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Prompting an on-device foundation model](prompting-an-on-device-foundation-model.md)
+### Sessions and prompts
+- [Prompting an on-device foundation model](./prompting-an-on-device-foundation-model.md)
   Tailor your prompts to get effective results from an on-device model.
-- [Managing the context window](managing-the-context-window.md)
+- [Managing the context window](./managing-the-context-window.md)
   Optimize your app’s token usage when prompting a model with the Foundation Models framework.
-- [Updating prompts for new model versions](updating-prompts-for-new-model-versions.md)
+- [Updating prompts for new model versions](./updating-prompts-for-new-model-versions.md)
   Manage the prompts your app uses by versioning them to make the most out of model improvements.
-- [struct Instructions](instructions.md)
+- [struct Instructions](./instructions.md)
   Details you provide that define the model’s intended behavior on prompts.
-- [struct Prompt](prompt.md)
+- [struct Prompt](./prompt.md)
   A prompt from a person to the model.
-- [struct GenerationOptions](generationoptions.md)
+- [struct GenerationOptions](./generationoptions.md)
   Options that control how the model generates its response to a prompt.
-- [struct ContextOptions](contextoptions.md)
+- [struct ContextOptions](./contextoptions.md)
   Options that configure details that should appear in the prompt.
 
 

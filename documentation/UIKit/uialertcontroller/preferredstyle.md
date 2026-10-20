@@ -1,7 +1,8 @@
 # preferredStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style of the alert controller.
 
@@ -9,7 +10,7 @@ The style of the alert controller.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ The style of the alert controller.
 var preferredStyle: UIAlertController.Style { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIAlertControllerStyle preferredStyle;
+```
+
 #### Discussion
 
-The value of this property is set to the value you specified in the [`init(title:message:preferredStyle:)`](uialertcontroller/init(title:message:preferredstyle:).md) method. This value determines how the alert is displayed onscreen.
+The value of this property is set to the value you specified in the [`init(title:message:preferredStyle:)`](./init%28title,message,preferredstyle%29.md) method. This value determines how the alert is displayed onscreen.
 
 ## See Also
 
-- [var title: String?](uialertcontroller/title.md)
+### Configuring the alert
+- [var title: String?](./title.md)
   The title of the alert.
-- [var message: String?](uialertcontroller/message.md)
+- [var message: String?](./message.md)
   Descriptive text that provides more details about the reason for the alert.
-- [UIAlertController.Style](uialertcontroller/style.md)
+- [UIAlertController.Style](./style.md)
   Constants indicating the type of alert to display.
 
 

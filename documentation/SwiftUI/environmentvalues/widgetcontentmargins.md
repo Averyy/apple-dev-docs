@@ -1,7 +1,8 @@
 # widgetContentMargins
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that identifies the content margins of a widget.
 
@@ -25,17 +26,18 @@ Returns the content margins for the current widget presentation context.
 
 #### Discussion
 
-The content margins of a widget depend on the context in which it appears. The system applies default content margins. However, if you disable automatic application of default content margins with [`contentMarginsDisabled()`](widgetconfiguration/contentmarginsdisabled().md), the system uses the `widgetContentMargins` property in combination with [`padding(_:)`](view/padding(_:).md) to selectively apply default content margins.
+The content margins of a widget depend on the context in which it appears. The system applies default content margins. However, if you disable automatic application of default content margins with [`contentMarginsDisabled()`](../widgetconfiguration/contentmarginsdisabled%28%29.md), the system uses the `widgetContentMargins` property in combination with [`padding(_:)`](../view/padding%28_%29.md) to selectively apply default content margins.
 
 ## See Also
 
-- [var showsWidgetContainerBackground: Bool](environmentvalues/showswidgetcontainerbackground.md)
+### Widgets
+- [var showsWidgetContainerBackground: Bool](./showswidgetcontainerbackground.md)
   An environment variable that indicates whether the background of a widget appears.
-- [var showsWidgetLabel: Bool](environmentvalues/showswidgetlabel.md)
+- [var showsWidgetLabel: Bool](./showswidgetlabel.md)
   A Boolean value that indicates whether an accessory family widget can display an accessory label.
-- [var widgetFamily: WidgetFamily](environmentvalues/widgetfamily.md)
+- [var widgetFamily: WidgetFamily](./widgetfamily.md)
   The template of the widget — small, medium, or large.
-- [var widgetRenderingMode: WidgetRenderingMode](environmentvalues/widgetrenderingmode.md)
+- [var widgetRenderingMode: WidgetRenderingMode](./widgetrenderingmode.md)
   The widget’s rendering mode, based on where the system is displaying it.
 
 

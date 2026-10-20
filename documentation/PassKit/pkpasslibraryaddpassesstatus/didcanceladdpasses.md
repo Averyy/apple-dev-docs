@@ -1,7 +1,8 @@
 # PKPassLibraryAddPassesStatus.didCancelAddPasses
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A status that occurs when the user cancels the addition of passes.
 
@@ -19,11 +20,16 @@ A status that occurs when the user cancels the addition of passes.
 case didCancelAddPasses
 ```
 
+```c
+PKPassLibraryDidCancelAddPasses
+```
+
 ## See Also
 
-- [PKPassLibraryAddPassesStatus.didAddPasses](pkpasslibraryaddpassesstatus/didaddpasses.md)
+### Constants
+- [PKPassLibraryAddPassesStatus.didAddPasses](./didaddpasses.md)
   A status that occurs when the user successfully adds one or more passes.
-- [PKPassLibraryAddPassesStatus.shouldReviewPasses](pkpasslibraryaddpassesstatus/shouldreviewpasses.md)
+- [PKPassLibraryAddPassesStatus.shouldReviewPasses](./shouldreviewpasses.md)
   A status that occurs when the app prompts the user to review the passes.
 
 

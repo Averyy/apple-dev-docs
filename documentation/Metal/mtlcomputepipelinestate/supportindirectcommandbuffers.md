@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether the compute pipeline supports indirect command buffers.
@@ -18,6 +19,10 @@ A Boolean value that indicates whether the compute pipeline supports indirect co
 
 ```swift
 var supportIndirectCommandBuffers: Bool { get }
+```
+
+```objc
+@property (readonly) BOOL supportIndirectCommandBuffers;
 ```
 
 

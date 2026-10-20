@@ -1,7 +1,8 @@
 # target
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame in which to display the new content.
 

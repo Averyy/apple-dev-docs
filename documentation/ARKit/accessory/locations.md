@@ -1,7 +1,8 @@
 # locations
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of locations on this accessory for which coordinate transforms are provided.
 

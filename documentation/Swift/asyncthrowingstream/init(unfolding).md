@@ -1,7 +1,8 @@
 # init(unfolding:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Constructs an asynchronous throwing stream from a given element-producing closure.
 

@@ -1,7 +1,8 @@
 # indexFileURL
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -18,15 +19,20 @@
 var indexFileURL: URL { get }
 ```
 
+```objc
+@property (readonly) NSURL * indexFileURL;
+```
+
 ## See Also
 
-- [var byteRange: NSRange](avmetrichlsmediasegmentrequestevent/byterange.md)
-- [var isMapSegment: Bool](avmetrichlsmediasegmentrequestevent/ismapsegment.md)
-- [var mediaResourceRequestEvent: AVMetricMediaResourceRequestEvent?](avmetrichlsmediasegmentrequestevent/mediaresourcerequestevent.md)
-- [var mediaType: AVMediaType](avmetrichlsmediasegmentrequestevent/mediatype.md)
-- [var segmentDuration: TimeInterval](avmetrichlsmediasegmentrequestevent/segmentduration.md)
+### Inspecting the event
+- [var byteRange: NSRange](./byterange.md)
+- [var isMapSegment: Bool](./ismapsegment.md)
+- [var mediaResourceRequestEvent: AVMetricMediaResourceRequestEvent?](./mediaresourcerequestevent.md)
+- [var mediaType: AVMediaType](./mediatype.md)
+- [var segmentDuration: TimeInterval](./segmentduration.md)
   Returns the duration of segment in seconds.
-- [var url: URL?](avmetrichlsmediasegmentrequestevent/url.md)
+- [var url: URL?](./url.md)
 
 
 ---

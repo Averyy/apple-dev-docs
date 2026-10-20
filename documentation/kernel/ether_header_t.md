@@ -1,14 +1,15 @@
 # ether_header_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 typedef struct ether_header {
     ...
 } ether_header_t;
@@ -17,9 +18,9 @@ typedef struct ether_header {
 ## Topics
 
 ### Instance Properties
-- [ether_dhost](ether_header_t/1518358-ether_dhost.md)
-- [ether_shost](ether_header_t/1518372-ether_shost.md)
-- [ether_type](ether_header_t/1518376-ether_type.md)
+- [ether_dhost](./ether_header_t/api-1518358-ether_dhost.md)
+- [ether_shost](./ether_header_t/api-1518372-ether_shost.md)
+- [ether_type](./ether_header_t/api-1518376-ether_type.md)
 
 
 ---

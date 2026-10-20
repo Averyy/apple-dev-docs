@@ -1,7 +1,8 @@
 # errorName
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.4+
@@ -16,7 +17,8 @@ var errorName: String { get }
 
 ## See Also
 
-- [var errorDescription: String](paymentcardreadersession/readerror/errordescription.md)
+### Describing the error
+- [var errorDescription: String](./errordescription.md)
   A description of the error in plain text.
 
 

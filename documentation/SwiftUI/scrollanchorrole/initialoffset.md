@@ -1,7 +1,8 @@
 # initialOffset
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The role that influences where a scroll view should be initially scrolled.
 

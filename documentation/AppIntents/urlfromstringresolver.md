@@ -1,7 +1,8 @@
 # URLFromStringResolver
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A resolver that converts a string into a URL.
 
@@ -11,7 +12,7 @@ A resolver that converts a string into a URL.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,11 +24,11 @@ struct URLFromStringResolver
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Resolver](resolver.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Resolver](./resolver.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

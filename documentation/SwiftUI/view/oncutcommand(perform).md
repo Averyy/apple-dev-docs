@@ -1,7 +1,8 @@
 # onCutCommand(perform:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an action to perform in response to the system’s Cut command.
 
@@ -21,15 +22,16 @@ A view that triggers `action` when a system Cut command occurs.
 
 ## Parameters
 
-- `payloadAction`: An action closure that should delete the selected data and return [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) items corresponding to that data, which should be written to the Clipboard. If `action` is `nil`, the Cut command is considered disabled.
+- `payloadAction`: An action closure that should delete the selected data and return [`NSItemProvider`](../../Foundation/nsitemprovider.md) items corresponding to that data, which should be written to the Clipboard. If `action` is `nil`, the Cut command is considered disabled.
 
 ## See Also
 
-- [func onCopyCommand(perform: (() -> [NSItemProvider])?) -> some View](view/oncopycommand(perform:).md)
+### Copying items using item providers
+- [func onCopyCommand(perform: (() -> [NSItemProvider])?) -> some View](./oncopycommand%28perform%29.md)
   Adds an action to perform in response to the system’s Copy command.
-- [func onPasteCommand(of:perform:)](view/onpastecommand(of:perform:).md)
+- [func onPasteCommand(of:perform:)](./onpastecommand%28of,perform%29.md)
   Adds an action to perform in response to the system’s Paste command.
-- [func onPasteCommand(of:validator:perform:)](view/onpastecommand(of:validator:perform:).md)
+- [func onPasteCommand(of:validator:perform:)](./onpastecommand%28of,validator,perform%29.md)
   Adds an action to perform in response to the system’s Paste command with items that you validate.
 
 

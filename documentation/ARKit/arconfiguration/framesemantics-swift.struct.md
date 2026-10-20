@@ -1,7 +1,8 @@
 # ARConfiguration.FrameSemantics
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Types of optional frame features you can enable in your app.
 
@@ -15,6 +16,10 @@ Types of optional frame features you can enable in your app.
 struct FrameSemantics
 ```
 
+```c
+enum ARFrameSemantics : NSUInteger;
+```
+
 #### Discussion
 
 A frame semantic represents 2D information that ARKit extracts from a frame.
@@ -22,39 +27,40 @@ A frame semantic represents 2D information that ARKit extracts from a frame.
 ## Topics
 
 ### Creating a Feature
-- [init(rawValue: UInt)](arconfiguration/framesemantics-swift.struct/init(rawvalue:).md)
+- [init(rawValue: UInt)](./framesemantics-swift.struct/init%28rawvalue%29.md)
   Creates a frame semantics feature.
 ### Tracking Bodies in 2D
-- [static var bodyDetection: ARConfiguration.FrameSemantics](arconfiguration/framesemantics-swift.struct/bodydetection.md)
+- [static var bodyDetection: ARConfiguration.FrameSemantics](./framesemantics-swift.struct/bodydetection.md)
   An option that indicates that 2D body detection is enabled.
 ### Occluding Virtual Content with People
-- [static var personSegmentation: ARConfiguration.FrameSemantics](arconfiguration/framesemantics-swift.struct/personsegmentation.md)
+- [static var personSegmentation: ARConfiguration.FrameSemantics](./framesemantics-swift.struct/personsegmentation.md)
   An option that indicates that people occlude your app’s virtual content.
-- [static var personSegmentationWithDepth: ARConfiguration.FrameSemantics](arconfiguration/framesemantics-swift.struct/personsegmentationwithdepth.md)
+- [static var personSegmentationWithDepth: ARConfiguration.FrameSemantics](./framesemantics-swift.struct/personsegmentationwithdepth.md)
   An option that indicates that people occlude your app’s virtual content depending on depth.
 ### Accessing Depth
-- [static var sceneDepth: ARConfiguration.FrameSemantics](arconfiguration/framesemantics-swift.struct/scenedepth.md)
+- [static var sceneDepth: ARConfiguration.FrameSemantics](./framesemantics-swift.struct/scenedepth.md)
   An option that provides the distance from the device to real-world objects viewed through the camera.
-- [static var smoothedSceneDepth: ARConfiguration.FrameSemantics](arconfiguration/framesemantics-swift.struct/smoothedscenedepth.md)
+- [static var smoothedSceneDepth: ARConfiguration.FrameSemantics](./framesemantics-swift.struct/smoothedscenedepth.md)
   An option that provides the distance from the device to real-world objects, averaged across several frames.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var frameSemantics: ARConfiguration.FrameSemantics](arconfiguration/framesemantics-swift.property.md)
+### Enabling frame features
+- [var frameSemantics: ARConfiguration.FrameSemantics](./framesemantics-swift.property.md)
   The set of active semantics on the frame.
-- [class func supportsFrameSemantics(ARConfiguration.FrameSemantics) -> Bool](arconfiguration/supportsframesemantics(_:).md)
+- [class func supportsFrameSemantics(ARConfiguration.FrameSemantics) -> Bool](./supportsframesemantics%28_%29.md)
   Checks whether a particular feature is supported.
 
 

@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for the action.
 
@@ -18,19 +19,24 @@ The unique identifier for the action.
 var identifier: UIAction.Identifier { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIActionIdentifier identifier;
+```
+
 ## See Also
 
-- [var title: String](uiaction/title.md)
+### Getting information about the action
+- [var title: String](./title.md)
   The action’s title.
-- [var image: UIImage?](uiaction/image.md)
+- [var image: UIImage?](./image.md)
   The action’s image.
-- [var discoverabilityTitle: String?](uiaction/discoverabilitytitle.md)
+- [var discoverabilityTitle: String?](./discoverabilitytitle.md)
   An elaborated title that explains the purpose of the action.
-- [var attributes: UIMenuElement.Attributes](uiaction/attributes.md)
+- [var attributes: UIMenuElement.Attributes](./attributes.md)
   The attributes indicating the style of the action.
-- [var state: UIMenuElement.State](uiaction/state.md)
+- [var state: UIMenuElement.State](./state.md)
   The state of the action.
-- [var sender: Any?](uiaction/sender.md)
+- [var sender: Any?](./sender.md)
   The object responsible for the action handler.
 
 

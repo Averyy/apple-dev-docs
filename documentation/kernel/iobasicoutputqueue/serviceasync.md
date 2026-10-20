@@ -7,7 +7,7 @@ The option bits recognized by service().
 
 ## Declaration
 
-```swift
+```c
 enum {
    kServiceAsync = 0x1
 };
@@ -16,7 +16,7 @@ enum {
 ## Topics
 
 ### Constants
-- [kServiceAsync](iobasicoutputqueue/serviceasync/kserviceasync.md)
+- [kServiceAsync](./serviceasync/kserviceasync.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # sec_release(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func sec_release(_ obj: UnsafeMutableRawPointer!)
+```
+
+```c
+void sec_release(void *obj);
 ```
 
 

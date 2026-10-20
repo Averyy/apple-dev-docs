@@ -1,7 +1,8 @@
 # init(retainedElements:nonRetainedElements:issuerIdentifiers:)
 
 **Framework**: ProximityReader  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a photo ID raw data request with issuer identifiers.
 

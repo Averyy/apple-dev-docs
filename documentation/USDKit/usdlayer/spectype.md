@@ -1,7 +1,8 @@
 # USDLayer.SpecType
 
 **Framework**: USDKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The kind of spec stored at a path in a layer.
 
@@ -22,52 +23,53 @@ enum SpecType
 ## Topics
 
 ### Enumeration Cases
-- [USDLayer.SpecType.attribute](usdlayer/spectype/attribute.md)
+- [USDLayer.SpecType.attribute](./spectype/attribute.md)
   An attribute spec.
-- [USDLayer.SpecType.connection](usdlayer/spectype/connection.md)
+- [USDLayer.SpecType.connection](./spectype/connection.md)
   An attribute connection spec.
-- [USDLayer.SpecType.prim](usdlayer/spectype/prim.md)
+- [USDLayer.SpecType.prim](./spectype/prim.md)
   A prim spec.
-- [USDLayer.SpecType.pseudoRoot](usdlayer/spectype/pseudoroot.md)
+- [USDLayer.SpecType.pseudoRoot](./spectype/pseudoroot.md)
   The implicit pseudo-root spec at `/`.
-- [USDLayer.SpecType.relationship](usdlayer/spectype/relationship.md)
+- [USDLayer.SpecType.relationship](./spectype/relationship.md)
   A relationship spec.
-- [USDLayer.SpecType.relationshipTarget](usdlayer/spectype/relationshiptarget.md)
+- [USDLayer.SpecType.relationshipTarget](./spectype/relationshiptarget.md)
   A relationship target spec.
-- [USDLayer.SpecType.variant](usdlayer/spectype/variant.md)
+- [USDLayer.SpecType.variant](./spectype/variant.md)
   A variant spec.
-- [USDLayer.SpecType.variantSet](usdlayer/spectype/variantset.md)
+- [USDLayer.SpecType.variantSet](./spectype/variantset.md)
   A variant set spec.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func prim(at: USDLayer.Path) -> USDPrim.Spec?](usdlayer/prim(at:).md)
+### Accessing scene description by path
+- [func prim(at: USDLayer.Path) -> USDPrim.Spec?](./prim%28at%29.md)
   Returns the prim spec authored at the given path, or `nil` if no prim spec exists there.
-- [func property(at: USDLayer.Path) -> USDPrim.Property.Spec?](usdlayer/property(at:).md)
+- [func property(at: USDLayer.Path) -> USDPrim.Property.Spec?](./property%28at%29.md)
   Returns the property spec at the given path.
-- [func attribute(at: USDLayer.Path) -> USDPrim.Attribute.Spec?](usdlayer/attribute(at:).md)
+- [func attribute(at: USDLayer.Path) -> USDPrim.Attribute.Spec?](./attribute%28at%29.md)
   Returns the attribute spec at the given path.
-- [func relationship(at: USDLayer.Path) -> USDPrim.Relationship.Spec?](usdlayer/relationship(at:).md)
+- [func relationship(at: USDLayer.Path) -> USDPrim.Relationship.Spec?](./relationship%28at%29.md)
   Returns the relationship spec at the given path.
-- [func spec(at: USDLayer.Path) -> USDLayer.Spec?](usdlayer/spec(at:).md)
+- [func spec(at: USDLayer.Path) -> USDLayer.Spec?](./spec%28at%29.md)
   Returns the spec at the given path, or `nil` if no spec is authored there.
-- [func specType(at: USDLayer.Path) -> USDLayer.SpecType?](usdlayer/spectype(at:).md)
+- [func specType(at: USDLayer.Path) -> USDLayer.SpecType?](./spectype%28at%29.md)
   Returns the kind of spec authored at the given path, or `nil` if nothing is authored there.
-- [func traverse(at: USDLayer.Path, (USDLayer.Path) -> Void)](usdlayer/traverse(at:_:).md)
+- [func traverse(at: USDLayer.Path, (USDLayer.Path) -> Void)](./traverse%28at,_%29.md)
   Walks the spec tree rooted at the given path, calling `body` for each spec’s path.
-- [USDLayer.Path](usdlayer/path.md)
+- [USDLayer.Path](./path.md)
   A path within a USD scene hierarchy.
-- [USDLayer.PathExpression](usdlayer/pathexpression.md)
+- [USDLayer.PathExpression](./pathexpression.md)
   A boolean expression over path patterns for selecting sets of prims.
-- [USDLayer.Spec](usdlayer/spec.md)
+- [USDLayer.Spec](./spec.md)
   A handle to a single spec stored in a layer.
 
 

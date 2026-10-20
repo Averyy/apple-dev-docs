@@ -1,7 +1,8 @@
 # selectionForEntireDocument
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a selection representing the textual content of the entire document.
 
@@ -19,13 +20,18 @@ Returns a selection representing the textual content of the entire document.
 var selectionForEntireDocument: PDFSelection? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) PDFSelection * selectionForEntireDocument;
+```
+
 ## See Also
 
-- [func selection(from: PDFPage, atCharacterIndex: Int, to: PDFPage, atCharacterIndex: Int) -> PDFSelection?](pdfdocument/selection(from:atcharacterindex:to:atcharacterindex:).md)
+### Working with Selections and Searches
+- [func selection(from: PDFPage, atCharacterIndex: Int, to: PDFPage, atCharacterIndex: Int) -> PDFSelection?](./selection%28from,atcharacterindex,to,atcharacterindex%29.md)
   Returns the specified selection based on starting and ending character indexes.
-- [func selection(from: PDFPage, at: CGPoint, to: PDFPage, at: CGPoint) -> PDFSelection?](pdfdocument/selection(from:at:to:at:).md)
+- [func selection(from: PDFPage, at: CGPoint, to: PDFPage, at: CGPoint) -> PDFSelection?](./selection%28from,at,to,at%29.md)
   Returns the specified selection based on starting and ending points.
-- [Search Operations](search-operations.md)
+- [Search Operations](../search-operations.md)
   Find and search in PDFs.
 
 

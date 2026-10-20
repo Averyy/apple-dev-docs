@@ -1,7 +1,8 @@
 # errSecCSBadBundleFormat
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The bundle format is unrecognized, invalid, or unsuitable.
 
@@ -13,6 +14,10 @@ The bundle format is unrecognized, invalid, or unsuitable.
 
 ```swift
 var errSecCSBadBundleFormat: OSStatus { get }
+```
+
+```c
+errSecCSBadBundleFormat
 ```
 
 

@@ -1,7 +1,8 @@
 # ApplePayError
 
 **Framework**: Apple Pay on the Web  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A customizable error type that you create to indicate problems with the address or contact information on an Apple Pay sheet.
 
@@ -11,19 +12,19 @@ A customizable error type that you create to indicate problems with the address 
 
 ## Declaration
 
-```swift
+```
 interface ApplePayError
 ```
 
 ## Mentions
 
-- [Apple Pay on the Web Version 3 Release Notes](apple-pay-on-the-web-version-3-release-notes.md)
-- [Choosing an API for Implementing Apple Pay on Your Website](choosing-an-api-for-implementing-apple-pay-on-your-website.md)
-- [Setting up the payment request API to accept Apple Pay](setting-up-the-payment-request-api-to-accept-apple-pay.md)
+- [Apple Pay on the Web Version 3 Release Notes](./apple-pay-on-the-web-version-3-release-notes.md)
+- [Choosing an API for Implementing Apple Pay on Your Website](./choosing-an-api-for-implementing-apple-pay-on-your-website.md)
+- [Setting up the payment request API to accept Apple Pay](./setting-up-the-payment-request-api-to-accept-apple-pay.md)
 
 #### Overview
 
-When you determine that there’s a problem with an address or contact information on the payment sheet, you can use [`ApplePayError`](applepayerror.md) to create a customized error message. Apple Pay highlights the area with an error and displays your message, making it easier for users to correct errors.
+When you determine that there’s a problem with an address or contact information on the payment sheet, you can use [`ApplePayError`](./applepayerror.md) to create a customized error message. Apple Pay highlights the area with an error and displays your message, making it easier for users to correct errors.
 
 Users must resolve any errors that you report on the Apple Pay sheet before they can finalize their transaction.
 
@@ -33,7 +34,7 @@ The details you provide in an Apple Pay error include:
 - **contactField** — The specific field on the payment sheet with the error.
 - **message** — Your custom error message to display on the payment sheet.
 
-For example, if you found an error in the postal code of the shipping address, create an [`ApplePayError`](applepayerror.md) with the custom message text `"ZIP Code is invalid"`, as follows:
+For example, if you found an error in the postal code of the shipping address, create an [`ApplePayError`](./applepayerror.md) with the custom message text `"ZIP Code is invalid"`, as follows:
 
 ```javascript
 new ApplePayError("shippingContactInvalid", "postalCode", "ZIP Code is invalid")
@@ -41,19 +42,19 @@ new ApplePayError("shippingContactInvalid", "postalCode", "ZIP Code is invalid")
 
 Apple Pay highlights the postal code field and displays the message text on the payment sheet.
 
-> **Note**:  [`ApplePayError`](applepayerror.md) requires Apple Pay API version 3 and later, and is only supported in Apple Pay JS API; it’s not available in the [`Payment Request API`](payment-request-api.md).
+> **Note**:  [`ApplePayError`](./applepayerror.md) requires Apple Pay API version 3 and later, and is only supported in Apple Pay JS API; it’s not available in the [Payment Request API](./payment-request-api.md).
 
 ## Topics
 
 ### Creating an Apple Pay Error
-- [ApplePayError](applepayerror/applepayerror.md)
+- [ApplePayError](./applepayerror/applepayerror.md)
   Creates an Apple Pay error object.
 ### Error Properties
-- [code](applepayerror/code.md)
+- [code](./applepayerror/code.md)
   The error code for this instance.
-- [contactField](applepayerror/contactfield.md)
+- [contactField](./applepayerror/contactfield.md)
   The field name that contains the error on the payment sheet.
-- [message](applepayerror/message.md)
+- [message](./applepayerror/message.md)
   A localized, user-facing string that describes the error.
 
 

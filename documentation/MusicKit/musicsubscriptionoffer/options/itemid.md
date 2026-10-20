@@ -1,7 +1,8 @@
 # itemID
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier for the music item the user is trying to access, which requires an active subscription.
 

@@ -1,7 +1,8 @@
 # UIScene.DidEnterBackgroundMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -19,15 +20,15 @@ struct DidEnterBackgroundMessage
 ## Topics
 
 ### Initializers
-- [init(scene: UIScene)](uiscene/didenterbackgroundmessage/init(scene:).md)
+- [init(scene: UIScene)](./didenterbackgroundmessage/init%28scene%29.md)
 ### Instance Properties
-- [var scene: UIScene](uiscene/didenterbackgroundmessage/scene.md)
+- [var scene: UIScene](./didenterbackgroundmessage/scene.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

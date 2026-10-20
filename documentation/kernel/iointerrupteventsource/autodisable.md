@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 bool autoDisable;
 ```
 
@@ -15,12 +15,13 @@ Do we need to automatically disable the interrupt source when we take an interru
 
 ## See Also
 
-- [reserved](iointerrupteventsource/reserved.md)
-- [provider](iointerrupteventsource/provider.md)
-- [producerCount](iointerrupteventsource/producercount.md)
-- [intIndex](iointerrupteventsource/intindex.md)
-- [explicitDisable](iointerrupteventsource/explicitdisable.md)
-- [consumerCount](iointerrupteventsource/consumercount.md)
+### Instance Variables
+- [reserved](./reserved.md)
+- [provider](./provider.md)
+- [producerCount](./producercount.md)
+- [intIndex](./intindex.md)
+- [explicitDisable](./explicitdisable.md)
+- [consumerCount](./consumercount.md)
 
 
 ---

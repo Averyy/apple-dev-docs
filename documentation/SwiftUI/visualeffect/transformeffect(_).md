@@ -1,7 +1,8 @@
 # transformEffect(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies an affine transformation to the view’s rendered output.
 
@@ -20,21 +21,28 @@ Applies an affine transformation to the view’s rendered output.
 func transformEffect(_ transform: CGAffineTransform) -> some VisualEffect
 ```
 
+**Other overloads**:
+
+```swift
+func transformEffect(_ transform: ProjectionTransform) -> some VisualEffect
+```
+
 #### Return Value
 
 An effect that applies an affine transformation to the view’s rendered output.
 
 #### Discussion
 
-Use `transformEffect(_:)` to rotate, scale, translate, or skew the output of the view according to the provided [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform).
+Use `transformEffect(_:)` to rotate, scale, translate, or skew the output of the view according to the provided [`CGAffineTransform`](../../CoreFoundation/cgaffinetransform.md).
 
 ## Parameters
 
-- `transform`: A [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) to apply to the view.
+- `transform`: A [`CGAffineTransform`](../../CoreFoundation/cgaffinetransform.md) to apply to the view.
 
 ## See Also
 
-- [func transform3DEffect(AffineTransform3D) -> some VisualEffect](visualeffect/transform3deffect(_:).md)
+### Applying a transform
+- [func transform3DEffect(AffineTransform3D) -> some VisualEffect](./transform3deffect%28_%29.md)
   Applies a 3D transformation to this view’s rendered output.
 
 

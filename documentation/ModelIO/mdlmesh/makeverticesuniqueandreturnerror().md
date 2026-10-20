@@ -1,7 +1,8 @@
 # makeVerticesUniqueAndReturnError()
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func makeVerticesUniqueAndReturnError() throws
+```
+
+```objc
+- (BOOL) makeVerticesUniqueAndReturnError:(NSError **) error;
 ```
 
 

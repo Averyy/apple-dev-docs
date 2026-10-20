@@ -1,7 +1,8 @@
 # errSecCSGuestInvalid
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The identity of guest code has been invalidated.
 
@@ -13,6 +14,10 @@ The identity of guest code has been invalidated.
 
 ```swift
 var errSecCSGuestInvalid: OSStatus { get }
+```
+
+```c
+errSecCSGuestInvalid
 ```
 
 

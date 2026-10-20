@@ -1,7 +1,8 @@
 # resignRole()
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resigns the local participant from their current spatial template role.
 
@@ -16,7 +17,8 @@ final func resignRole()
 
 ## See Also
 
-- [func assignRole(some SpatialTemplateRole)](systemcoordinator/assignrole(_:).md)
+### Assigning the local participant role
+- [func assignRole(some SpatialTemplateRole)](./assignrole%28_%29.md)
   Assigns the given spatial template role to the local participant.
 
 

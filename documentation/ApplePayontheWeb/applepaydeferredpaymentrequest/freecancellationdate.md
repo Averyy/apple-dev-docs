@@ -1,7 +1,8 @@
 # freeCancellationDate
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time zone at the destination location of the payment.
 
@@ -11,21 +12,22 @@ The time zone at the destination location of the payment.
 
 ## Declaration
 
-```swift
+```
 Date freeCancellationDate;
 ```
 
 #### Discussion
 
-If you set `freeCancellationDate`, you need to set [`freeCancellationDateTimeZone`](applepaydeferredpaymentrequest/freecancellationdatetimezone.md) as well.
+If you set `freeCancellationDate`, you need to set [`freeCancellationDateTimeZone`](./freecancellationdatetimezone.md) as well.
 
 ## See Also
 
-- [billingAgreement](applepaydeferredpaymentrequest/billingagreement.md)
+### Describing a deferred payment
+- [billingAgreement](./billingagreement.md)
   The localized billing agreement the framework displays to the user prior to payment authorization.
-- [paymentDescription](applepaydeferredpaymentrequest/paymentdescription.md)
+- [paymentDescription](./paymentdescription.md)
   A description of the deferred payment.
-- [freeCancellationDateTimeZone](applepaydeferredpaymentrequest/freecancellationdatetimezone.md)
+- [freeCancellationDateTimeZone](./freecancellationdatetimezone.md)
   The time zone at the destination location of the payment.
 
 

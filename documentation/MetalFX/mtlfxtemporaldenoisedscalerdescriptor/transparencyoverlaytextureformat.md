@@ -1,7 +1,8 @@
 # transparencyOverlayTextureFormat
 
 **Framework**: MetalFX  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel format of the input transparency overlay texture for the scaler you create with this descriptor.
 
@@ -16,6 +17,10 @@ The pixel format of the input transparency overlay texture for the scaler you cr
 
 ```swift
 var transparencyOverlayTextureFormat: MTLPixelFormat { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MTLPixelFormat transparencyOverlayTextureFormat;
 ```
 
 #### Discussion

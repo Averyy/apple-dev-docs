@@ -1,14 +1,15 @@
 # a_flags
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 vnode_verify_flags_t a_flags;
 ```
 

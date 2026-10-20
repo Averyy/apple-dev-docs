@@ -1,12 +1,13 @@
 # physical_address
 
 **Framework**: Hypervisor  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The intermediate physical address of the exception in the client.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ The intermediate physical address of the exception in the client.
 var physical_address: hv_ipa_t
 ```
 
+```c
+hv_ipa_t physical_address;
+```
+
 ## See Also
 
-- [var syndrome: hv_exception_syndrome_t](hv_vcpu_exit_exception_t/syndrome.md)
+### Instance Properties
+- [var syndrome: hv_exception_syndrome_t](./syndrome.md)
   The vCPU exception syndrome causing the exception.
-- [var virtual_address: hv_exception_address_t](hv_vcpu_exit_exception_t/virtual_address.md)
+- [var virtual_address: hv_exception_address_t](./virtual_address.md)
   The vCPU virtual address of the exception.
 
 

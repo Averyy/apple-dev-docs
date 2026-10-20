@@ -1,7 +1,8 @@
 # SCRecordingOutputConfiguration
 
 **Framework**: ScreenCaptureKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 27.0+
@@ -17,32 +18,37 @@
 class SCRecordingOutputConfiguration
 ```
 
+```objc
+@interface SCRecordingOutputConfiguration : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var availableOutputFileTypes: [AVFileType]](screcordingoutputconfiguration/availableoutputfiletypes.md)
-- [var availableVideoCodecTypes: [AVVideoCodecType]](screcordingoutputconfiguration/availablevideocodectypes.md)
-- [var mixesAudioWithMicrophone: Bool](screcordingoutputconfiguration/mixesaudiowithmicrophone.md)
-- [var outputFileType: AVFileType](screcordingoutputconfiguration/outputfiletype.md)
-- [var outputURL: URL](screcordingoutputconfiguration/outputurl.md)
-- [var videoCodecType: AVVideoCodecType](screcordingoutputconfiguration/videocodectype.md)
+- [var availableOutputFileTypes: [AVFileType]](./screcordingoutputconfiguration/availableoutputfiletypes.md)
+- [var availableVideoCodecTypes: [AVVideoCodecType]](./screcordingoutputconfiguration/availablevideocodectypes.md)
+- [var mixesAudioWithMicrophone: Bool](./screcordingoutputconfiguration/mixesaudiowithmicrophone.md)
+- [var outputFileType: AVFileType](./screcordingoutputconfiguration/outputfiletype.md)
+- [var outputURL: URL](./screcordingoutputconfiguration/outputurl.md)
+- [var videoCodecType: AVVideoCodecType](./screcordingoutputconfiguration/videocodectype.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [init(configuration: SCRecordingOutputConfiguration, delegate: any SCRecordingOutputDelegate)](screcordingoutput/init(configuration:delegate:).md)
-- [protocol SCRecordingOutputDelegate](screcordingoutputdelegate.md)
+### Creating a recording output
+- [init(configuration: SCRecordingOutputConfiguration, delegate: any SCRecordingOutputDelegate)](./screcordingoutput/init%28configuration,delegate%29.md)
+- [protocol SCRecordingOutputDelegate](./screcordingoutputdelegate.md)
 
 
 ---

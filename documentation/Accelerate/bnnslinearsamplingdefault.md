@@ -1,7 +1,8 @@
 # BNNSLinearSamplingDefault
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The default linear sampling mode.
 
@@ -20,6 +21,10 @@ The default linear sampling mode.
 var BNNSLinearSamplingDefault: BNNSLinearSamplingMode { get }
 ```
 
+```c
+BNNSLinearSamplingDefault
+```
+
 #### Discussion
 
 Given an input grid with a size of `Xin` and an output grid with a size `Xout`, this mode samples the grid using the following:
@@ -32,16 +37,17 @@ grid_point[i] = min(Xin-1, max(0, i*spacing)), for i=0,1,...,Xout-1
 
 ## See Also
 
-- [init(UInt32)](bnnslinearsamplingmode/init(_:).md)
-- [init(rawValue: UInt32)](bnnslinearsamplingmode/init(rawvalue:).md)
-- [var rawValue: UInt32](bnnslinearsamplingmode/rawvalue.md)
-- [var BNNSLinearSamplingAlignCorners: BNNSLinearSamplingMode](bnnslinearsamplingaligncorners.md)
+### Constants
+- [init(UInt32)](./bnnslinearsamplingmode/init%28_%29.md)
+- [init(rawValue: UInt32)](./bnnslinearsamplingmode/init%28rawvalue%29.md)
+- [var rawValue: UInt32](./bnnslinearsamplingmode/rawvalue.md)
+- [var BNNSLinearSamplingAlignCorners: BNNSLinearSamplingMode](./bnnslinearsamplingaligncorners.md)
   The align corners sampling mode.
-- [var BNNSLinearSamplingUnalignCorners: BNNSLinearSamplingMode](bnnslinearsamplingunaligncorners.md)
+- [var BNNSLinearSamplingUnalignCorners: BNNSLinearSamplingMode](./bnnslinearsamplingunaligncorners.md)
   The unalign corners sampling mode.
-- [var BNNSLinearSamplingStrictAlignCorners: BNNSLinearSamplingMode](bnnslinearsamplingstrictaligncorners.md)
+- [var BNNSLinearSamplingStrictAlignCorners: BNNSLinearSamplingMode](./bnnslinearsamplingstrictaligncorners.md)
   The strict align corners sampling mode.
-- [var BNNSLinearSamplingOffsetCorners: BNNSLinearSamplingMode](bnnslinearsamplingoffsetcorners.md)
+- [var BNNSLinearSamplingOffsetCorners: BNNSLinearSamplingMode](./bnnslinearsamplingoffsetcorners.md)
   The offset corners sampling mode.
 
 

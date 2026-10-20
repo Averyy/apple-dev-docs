@@ -1,7 +1,8 @@
 # kSCSIServiceAction_GET_LBA_STATUS
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSCSIServiceAction_GET_LBA_STATUS = 0x12
 ```
 

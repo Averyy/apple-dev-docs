@@ -1,7 +1,8 @@
 # pathStyle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s path style.
 
@@ -12,6 +13,10 @@ The receiver’s path style.
 
 ```swift
 var pathStyle: NSPathControl.Style { get set }
+```
+
+```objc
+@property NSPathStyle pathStyle;
 ```
 
 

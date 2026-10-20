@@ -1,7 +1,8 @@
 # SecKeyGetBlockSize(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets the block length associated with a cryptographic key.
 
@@ -20,9 +21,13 @@ Gets the block length associated with a cryptographic key.
 func SecKeyGetBlockSize(_ key: SecKey) -> Int
 ```
 
+```c
+size_t SecKeyGetBlockSize(SecKeyRef key);
+```
+
 ## Mentions
 
-- [Using Keys for Encryption](using-keys-for-encryption.md)
+- [Using Keys for Encryption](./using-keys-for-encryption.md)
 
 #### Return Value
 

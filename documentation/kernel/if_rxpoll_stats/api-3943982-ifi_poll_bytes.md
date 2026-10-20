@@ -1,14 +1,15 @@
 # ifi_poll_bytes
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 u_int64_t ifi_poll_bytes;
 ```
 

@@ -1,7 +1,8 @@
 # persistence
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rate at which successive octaves of the noise function decrease in amplitude.
 
@@ -19,6 +20,10 @@ The rate at which successive octaves of the noise function decrease in amplitude
 var persistence: Double { get set }
 ```
 
+```objc
+@property (nonatomic) double persistence;
+```
+
 #### Discussion
 
 Coherent noise is composed from several applications of a pseudorandom function. Each successive application, or *octave*, increases in frequency and decreases in amplitude relative to the previous octave. This combination of many octaves produces the fractal appearance that makes coherent noise resemble natural phenomena like clouds, stone, and water.
@@ -27,7 +32,8 @@ Persistence determines the change in amplitude between octaves. Smaller values r
 
 ## See Also
 
-- [init(frequency: Double, octaveCount: Int, persistence: Double, lacunarity: Double, seed: Int32)](gkbillownoisesource/init(frequency:octavecount:persistence:lacunarity:seed:).md)
+### Creating a Noise Source
+- [init(frequency: Double, octaveCount: Int, persistence: Double, lacunarity: Double, seed: Int32)](./init%28frequency,octavecount,persistence,lacunarity,seed%29.md)
   Creates a billow noise source with the specified parameters.
 
 

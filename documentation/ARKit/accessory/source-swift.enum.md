@@ -1,7 +1,8 @@
 # Accessory.Source
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Type of source an Accessory was loaded from.
 
@@ -17,16 +18,16 @@ enum Source
 ## Topics
 
 ### Enumeration Cases
-- [Accessory.Source.device(_:)](accessory/source-swift.enum/device(_:).md)
+- [Accessory.Source.device(_:)](./source-swift.enum/device%28_%29.md)
   Device this accessory was initialized with.
 ### Instance Properties
-- [var description: String](accessory/source-swift.enum/description.md)
+- [var description: String](./source-swift.enum/description.md)
   A textual representation of this Accessory.Source.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # errSecNotLoggedIn
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 You are not logged in.
 
@@ -18,6 +19,10 @@ You are not logged in.
 
 ```swift
 var errSecNotLoggedIn: OSStatus { get }
+```
+
+```c
+errSecNotLoggedIn
 ```
 
 

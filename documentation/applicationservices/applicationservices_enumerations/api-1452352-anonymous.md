@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kATSUStronglyHorizontal: Int](katsustronglyhorizontal.md)
-- [var kATSUStronglyVertical: Int](katsustronglyvertical.md)
+- [var kATSUStronglyHorizontal: Int](../katsustronglyhorizontal.md)
+- [var kATSUStronglyVertical: Int](../katsustronglyvertical.md)
 
 
 ---

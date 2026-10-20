@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The corresponding value of the raw type.
@@ -40,7 +41,8 @@ print(selectedSize == PaperSize(rawValue: selectedSize.rawValue)!)
 
 ## See Also
 
-- [associatedtype RawValue](rawrepresentable/rawvalue-swift.associatedtype.md)
+### Accessing the Raw Value
+- [associatedtype RawValue](./rawvalue-swift.associatedtype.md)
   The raw type that can be used to represent all values of the conforming type.
 
 

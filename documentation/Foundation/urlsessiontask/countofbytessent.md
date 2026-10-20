@@ -1,7 +1,8 @@
 # countOfBytesSent
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bytes that the task has sent to the server in the request body.
 
@@ -20,23 +21,28 @@ The number of bytes that the task has sent to the server in the request body.
 var countOfBytesSent: Int64 { get }
 ```
 
+```objc
+@property (readonly) int64_t countOfBytesSent;
+```
+
 #### Discussion
 
 This byte count includes *only* the length of the request body itself, not the request headers.
 
-To be notified when this value changes, implement the [`urlSession(_:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:)`](urlsessiontaskdelegate/urlsession(_:task:didsendbodydata:totalbytessent:totalbytesexpectedtosend:).md) delegate method.
+To be notified when this value changes, implement the [`urlSession(_:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:)`](../urlsessiontaskdelegate/urlsession%28_,task,didsendbodydata,totalbytessent,totalbytesexpectedtosend%29.md) delegate method.
 
 ## See Also
 
-- [var progress: Progress](urlsessiontask/progress.md)
+### Obtaining task progress
+- [var progress: Progress](./progress.md)
   A representation of the overall task progress.
-- [var countOfBytesExpectedToReceive: Int64](urlsessiontask/countofbytesexpectedtoreceive.md)
+- [var countOfBytesExpectedToReceive: Int64](./countofbytesexpectedtoreceive.md)
   The number of bytes that the task expects to receive in the response body.
-- [var countOfBytesReceived: Int64](urlsessiontask/countofbytesreceived.md)
+- [var countOfBytesReceived: Int64](./countofbytesreceived.md)
   The number of bytes that the task has received from the server in the response body.
-- [var countOfBytesExpectedToSend: Int64](urlsessiontask/countofbytesexpectedtosend.md)
+- [var countOfBytesExpectedToSend: Int64](./countofbytesexpectedtosend.md)
   The number of bytes that the task expects to send in the request body.
-- [let NSURLSessionTransferSizeUnknown: Int64](nsurlsessiontransfersizeunknown.md)
+- [let NSURLSessionTransferSizeUnknown: Int64](../nsurlsessiontransfersizeunknown.md)
   The total size of the transfer cannot be determined.
 
 

@@ -1,7 +1,8 @@
 # init(pixelBuffer:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a render destination based on a Core Video pixel buffer.
 
@@ -19,29 +20,34 @@ Creates a render destination based on a Core Video pixel buffer.
 init(pixelBuffer: CVPixelBuffer)
 ```
 
+```objc
+- (instancetype) initWithPixelBuffer:(CVPixelBufferRef) pixelBuffer;
+```
+
 #### Return Value
 
-A [`CIRenderDestination`](cirenderdestination.md) object for rendering to a [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer).
+A [`CIRenderDestination`](../cirenderdestination.md) object for rendering to a [`CVPixelBuffer`](../../CoreVideo/cvpixelbuffer.md).
 
 #### Discussion
 
-The destination’s [`colorSpace`](cirenderdestination/colorspace.md) property will default to a [`CGColorSpace`](https://developer.apple.com/documentation/coregraphics/cgcolorspace) created by querying the [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer) object’s attributes.
+The destination’s [`colorSpace`](./colorspace.md) property will default to a [`CGColorSpace`](../../CoreGraphics/cgcolorspace.md) created by querying the [`CVPixelBuffer`](../../CoreVideo/cvpixelbuffer.md) object’s attributes.
 
 ## Parameters
 
-- `pixelBuffer`: The [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer) render target.
+- `pixelBuffer`: The [`CVPixelBuffer`](../../CoreVideo/cvpixelbuffer.md) render target.
 
 ## See Also
 
-- [init(ioSurface: IOSurface)](cirenderdestination/init(iosurface:)-1hfcq.md)
+### Creating a Render Destination
+- [init(ioSurface: IOSurface)](./init%28iosurface%29-1hfcq.md)
   Creates a render destination based on an `IOSurface` object.
-- [init(mtlTexture: any MTLTexture, commandBuffer: (any MTLCommandBuffer)?)](cirenderdestination/init(mtltexture:commandbuffer:)-2iu5i.md)
+- [init(mtlTexture: any MTLTexture, commandBuffer: (any MTLCommandBuffer)?)](./init%28mtltexture,commandbuffer%29-2iu5i.md)
   Creates a render destination based on a Metal texture.
-- [init(width: Int, height: Int, pixelFormat: MTLPixelFormat, commandBuffer: (any MTLCommandBuffer)?, mtlTextureProvider: (() -> any MTLTexture)?)](cirenderdestination/init(width:height:pixelformat:commandbuffer:mtltextureprovider:).md)
+- [init(width: Int, height: Int, pixelFormat: MTLPixelFormat, commandBuffer: (any MTLCommandBuffer)?, mtlTextureProvider: (() -> any MTLTexture)?)](./init%28width,height,pixelformat,commandbuffer,mtltextureprovider%29.md)
   Creates a render destination based on a Metal texture with specified pixel format.
-- [init(glTexture: UInt32, target: UInt32, width: Int, height: Int)](cirenderdestination/init(gltexture:target:width:height:)-9ci8e.md)
+- [init(glTexture: UInt32, target: UInt32, width: Int, height: Int)](./init%28gltexture,target,width,height%29-9ci8e.md)
   Creates a render destination based on an OpenGL texture.
-- [init(bitmapData: UnsafeMutableRawPointer, width: Int, height: Int, bytesPerRow: Int, format: CIFormat)](cirenderdestination/init(bitmapdata:width:height:bytesperrow:format:).md)
+- [init(bitmapData: UnsafeMutableRawPointer, width: Int, height: Int, bytesPerRow: Int, format: CIFormat)](./init%28bitmapdata,width,height,bytesperrow,format%29.md)
   Creates a render destination based on a client-managed buffer.
 
 

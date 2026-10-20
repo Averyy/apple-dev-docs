@@ -1,7 +1,8 @@
 # isHiddenByDefault
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether an item is hidden by default.
 
@@ -18,15 +19,20 @@ A Boolean value that indicates whether an item is hidden by default.
 var isHiddenByDefault: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign, getter=isHiddenByDefault) BOOL hiddenByDefault;
+```
+
 ## See Also
 
-- [var isHidden: Bool](uitab/ishidden.md)
+### Managing customization
+- [var isHidden: Bool](./ishidden.md)
   A Boolean value that indicates whether an item is hidden in a sidebar.
-- [var allowsHiding: Bool](uitab/allowshiding.md)
+- [var allowsHiding: Bool](./allowshiding.md)
   A Boolean value that indicates whether people can hide a tab in a sidebar.
-- [var preferredPlacement: UITab.Placement](uitab/preferredplacement.md)
+- [var preferredPlacement: UITab.Placement](./preferredplacement.md)
   The preferred placement for a tab when displayed in contexts that allow different placement.
-- [UITab.Placement](uitab/placement.md)
+- [UITab.Placement](./placement.md)
   A tab’s placement when displayed in contexts that allow different placement.
 
 

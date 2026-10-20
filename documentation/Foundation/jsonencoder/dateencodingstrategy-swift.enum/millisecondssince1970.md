@@ -1,7 +1,8 @@
 # JSONEncoder.DateEncodingStrategy.millisecondsSince1970
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The strategy that encodes dates in terms of milliseconds since midnight UTC on January 1, 1970.
 
@@ -22,7 +23,8 @@ case millisecondsSince1970
 
 ## See Also
 
-- [JSONEncoder.DateEncodingStrategy.secondsSince1970](jsonencoder/dateencodingstrategy-swift.enum/secondssince1970.md)
+### Epoch Formats
+- [JSONEncoder.DateEncodingStrategy.secondsSince1970](./secondssince1970.md)
   The strategy that encodes dates in terms of seconds since midnight UTC on January 1, 1970.
 
 

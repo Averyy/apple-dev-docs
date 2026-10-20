@@ -1,7 +1,8 @@
 # showsLargeContentViewer
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to show the view in the large content viewer.
 
@@ -17,21 +18,26 @@ A Boolean value that indicates whether to show the view in the large content vie
 var showsLargeContentViewer: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) BOOL showsLargeContentViewer;
+```
+
 #### Discussion
 
-For this property to take effect, the view must have a [`UILargeContentViewerInteraction`](uilargecontentviewerinteraction.md).
+For this property to take effect, the view must have a [`UILargeContentViewerInteraction`](../uilargecontentviewerinteraction.md).
 
 ## See Also
 
-- [var accessibilityIgnoresInvertColors: Bool](uiview/accessibilityignoresinvertcolors.md)
+### Modifying the accessibility behavior
+- [var accessibilityIgnoresInvertColors: Bool](./accessibilityignoresinvertcolors.md)
   A Boolean value indicating whether the view ignores an accessibility request to invert its colors.
-- [var largeContentImage: UIImage?](uiview/largecontentimage.md)
+- [var largeContentImage: UIImage?](./largecontentimage.md)
   An image that represents the view in the large content viewer.
-- [var largeContentImageInsets: UIEdgeInsets](uiview/largecontentimageinsets.md)
+- [var largeContentImageInsets: UIEdgeInsets](./largecontentimageinsets.md)
   Insets to adjust the position of the view’s image so it appears centered in the large content viewer.
-- [var largeContentTitle: String?](uiview/largecontenttitle.md)
+- [var largeContentTitle: String?](./largecontenttitle.md)
   A string that describes the view in the large content viewer.
-- [var scalesLargeContentImage: Bool](uiview/scaleslargecontentimage.md)
+- [var scalesLargeContentImage: Bool](./scaleslargecontentimage.md)
   A Boolean value that indicates whether the large content viewer scales the item’s image to a larger size.
 
 

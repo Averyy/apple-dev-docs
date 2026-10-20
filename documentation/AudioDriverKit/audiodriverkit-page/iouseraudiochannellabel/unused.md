@@ -1,7 +1,8 @@
 # Unused
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 An unknown or otherwise unspecified channel use.
 
@@ -10,13 +11,14 @@ An unknown or otherwise unspecified channel use.
 
 ## Declaration
 
-```swift
+```c
 Unused
 ```
 
 ## See Also
 
-- [UseCoordinates](audiodriverkit/iouseraudiochannellabel/usecoordinates.md)
+### Special Values
+- [UseCoordinates](./usecoordinates.md)
   A channel that uses coodinates to describe its position.
 
 

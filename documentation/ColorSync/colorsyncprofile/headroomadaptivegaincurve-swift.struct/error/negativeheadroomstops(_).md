@@ -1,7 +1,8 @@
 # ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.negativeHeadroomStops(_:)
 
 **Framework**: ColorSync  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An alternate curve’s headroom is negative.
 

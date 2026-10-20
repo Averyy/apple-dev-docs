@@ -1,17 +1,22 @@
 # MTLFeatureSet.macOS_ReadWriteTextureTier2
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The read-write texture, tier 2 feature set for macOS.
 
 **Availability**:
-- macOS 10.12+
+- macOS 10.12+ - Deprecated in 13.0
 
 ## Declaration
 
 ```swift
 case macOS_ReadWriteTextureTier2
+```
+
+```c
+MTLFeatureSet_macOS_ReadWriteTextureTier2
 ```
 
 #### Discussion

@@ -1,9 +1,10 @@
 # typeAbsoluteOrdinal
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-Specifies a descriptor whose data consists of one of the constants `kAEFirst`, `kAEMiddle`, `kAELast`, `kAEAny`, or `kAEAll`, which are described in [`AEDisposeToken(_:)`](1446783-aedisposetoken.md). Used with `formAbsolutePosition`.
+Specifies a descriptor whose data consists of one of the constants `kAEFirst`, `kAEMiddle`, `kAELast`, `kAEAny`, or `kAEAll`, which are described in [`AEDisposeToken(_:)`](./api-1446783-aedisposetoken.md). Used with `formAbsolutePosition`.
 
 **Availability**:
 - Mac Catalyst 13.0+

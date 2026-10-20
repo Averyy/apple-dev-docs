@@ -1,7 +1,8 @@
 # upperBound
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range’s upper bound.
 
@@ -26,9 +27,10 @@ In an empty range, `upperBound` is equal to `lowerBound`. A `Range` instance doe
 
 ## See Also
 
-- [var isEmpty: Bool](range/isempty.md)
+### Inspecting a Range
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value indicating whether the range contains no elements.
-- [let lowerBound: Bound](range/lowerbound.md)
+- [let lowerBound: Bound](./lowerbound.md)
   The range’s lower bound.
 
 

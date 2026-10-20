@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancel the activity.
 

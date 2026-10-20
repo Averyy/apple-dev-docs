@@ -1,7 +1,8 @@
 # type
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of data contained in the originating Model I/O buffer.
 
@@ -19,13 +20,18 @@ The type of data contained in the originating Model I/O buffer.
 var type: MDLMeshBufferType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MDLMeshBufferType type;
+```
+
 #### Discussion
 
-A [`MDLMeshBuffer`](https://developer.apple.com/documentation/modelio/mdlmeshbuffer) object can contain Model I/O mesh vertex data or submesh index data.
+A [`MDLMeshBuffer`](../../ModelIO/mdlmeshbuffer.md) object can contain Model I/O mesh vertex data or submesh index data.
 
 ## See Also
 
-- [var allocator: MTKMeshBufferAllocator](mtkmeshbuffer/allocator.md)
+### Originating Objects
+- [var allocator: MTKMeshBufferAllocator](./allocator.md)
   The allocator object used to create this mesh buffer.
 
 

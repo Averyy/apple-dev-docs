@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier associated with this snapshot request.
 
@@ -16,9 +17,10 @@ let identifier: String?
 
 ## See Also
 
-- [let reason: SnapshotData.SnapshotReason](snapshotdata/reason.md)
+### Getting the data
+- [let reason: SnapshotData.SnapshotReason](./reason.md)
   The reason for a background snapshot task.
-- [SnapshotData.SnapshotReason](snapshotdata/snapshotreason.md)
+- [SnapshotData.SnapshotReason](./snapshotreason.md)
   The reason for a background snapshot task.
 
 

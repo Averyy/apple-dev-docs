@@ -1,7 +1,8 @@
 # NEHotspotHelperResult
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The result of handling a hotspot command.
 
@@ -17,39 +18,44 @@ The result of handling a hotspot command.
 enum NEHotspotHelperResult
 ```
 
+```c
+enum NEHotspotHelperResult : NSInteger;
+```
+
 ## Topics
 
 ### Results
-- [NEHotspotHelperResult.success](nehotspothelperresult/success.md)
+- [NEHotspotHelperResult.success](./nehotspothelperresult/success.md)
   The command was handled successfully.
-- [NEHotspotHelperResult.failure](nehotspothelperresult/failure.md)
+- [NEHotspotHelperResult.failure](./nehotspothelperresult/failure.md)
   The command failed to be handled.
-- [NEHotspotHelperResult.uiRequired](nehotspothelperresult/uirequired.md)
-  The operation requires user interaction. This result is only valid in response to a command with type [`NEHotspotHelperCommandType.authenticate`](nehotspothelpercommandtype/authenticate.md).
-- [NEHotspotHelperResult.commandNotRecognized](nehotspothelperresult/commandnotrecognized.md)
+- [NEHotspotHelperResult.uiRequired](./nehotspothelperresult/uirequired.md)
+  The operation requires user interaction. This result is only valid in response to a command with type [`NEHotspotHelperCommandType.authenticate`](./nehotspothelpercommandtype/authenticate.md).
+- [NEHotspotHelperResult.commandNotRecognized](./nehotspothelperresult/commandnotrecognized.md)
   The helper did not recognize the command type.
-- [NEHotspotHelperResult.authenticationRequired](nehotspothelperresult/authenticationrequired.md)
-  The network requires authentication again. This result is only valid in response to a command with type [`NEHotspotHelperCommandType.maintain`](nehotspothelpercommandtype/maintain.md).
-- [NEHotspotHelperResult.unsupportedNetwork](nehotspothelperresult/unsupportednetwork.md)
-  After attempting to authenticate, the Hotspot Helper app determined that it can’t perform the authentication. This result is only valid in response to commands of type [`NEHotspotHelperCommandType.authenticate`](nehotspothelpercommandtype/authenticate.md) and [`NEHotspotHelperCommandType.presentUI`](nehotspothelpercommandtype/presentui.md).
-- [NEHotspotHelperResult.temporaryFailure](nehotspothelperresult/temporaryfailure.md)
-  The Hotspot Helper app determined that it is temporarily unable to perform the authentication. This result is only valid in response to commands of type [`NEHotspotHelperCommandType.authenticate`](nehotspothelpercommandtype/authenticate.md) and [`NEHotspotHelperCommandType.presentUI`](nehotspothelpercommandtype/presentui.md).
+- [NEHotspotHelperResult.authenticationRequired](./nehotspothelperresult/authenticationrequired.md)
+  The network requires authentication again. This result is only valid in response to a command with type [`NEHotspotHelperCommandType.maintain`](./nehotspothelpercommandtype/maintain.md).
+- [NEHotspotHelperResult.unsupportedNetwork](./nehotspothelperresult/unsupportednetwork.md)
+  After attempting to authenticate, the Hotspot Helper app determined that it can’t perform the authentication. This result is only valid in response to commands of type [`NEHotspotHelperCommandType.authenticate`](./nehotspothelpercommandtype/authenticate.md) and [`NEHotspotHelperCommandType.presentUI`](./nehotspothelpercommandtype/presentui.md).
+- [NEHotspotHelperResult.temporaryFailure](./nehotspothelperresult/temporaryfailure.md)
+  The Hotspot Helper app determined that it is temporarily unable to perform the authentication. This result is only valid in response to commands of type [`NEHotspotHelperCommandType.authenticate`](./nehotspothelpercommandtype/authenticate.md) and [`NEHotspotHelperCommandType.presentUI`](./nehotspothelpercommandtype/presentui.md).
 ### Initializers
-- [init?(rawValue: Int)](nehotspothelperresult/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nehotspothelperresult/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func createResponse(NEHotspotHelperResult) -> NEHotspotHelperResponse](nehotspothelpercommand/createresponse(_:).md)
+### Response creation
+- [func createResponse(NEHotspotHelperResult) -> NEHotspotHelperResponse](./nehotspothelpercommand/createresponse%28_%29.md)
   Create a response to the command.
 
 

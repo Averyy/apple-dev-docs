@@ -1,12 +1,15 @@
 # init(rawValue:)
 
 **Framework**: Address Book  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
+- iOS 2.0+ - Deprecated in 9.0
+- iPadOS 2.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: use CNAuthorizationStatus
 
 ## Declaration
 

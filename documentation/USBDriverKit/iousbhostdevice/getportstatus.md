@@ -1,7 +1,8 @@
 # GetPortStatus
 
 **Framework**: USBDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the current port status of the device.
 
@@ -10,31 +11,32 @@ Returns the current port status of the device.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t GetPortStatus(uint32_t *portStatus);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 ## Parameters
 
-- `portStatus`: A pointer to a variable. On output, the variable contains the port status. For a list of possible values, see [`tIOUSBHostPortStatus`](tiousbhostportstatus.md).
+- `portStatus`: A pointer to a variable. On output, the variable contains the port status. For a list of possible values, see [`tIOUSBHostPortStatus`](../tiousbhostportstatus.md).
 
 ## See Also
 
-- [GetAddress](iousbhostdevice/getaddress.md)
+### Getting Device Information
+- [GetAddress](./getaddress.md)
   Returns the address of the device.
-- [GetSpeed](iousbhostdevice/getspeed.md)
+- [GetSpeed](./getspeed.md)
   Retrieves the device’s operational speed.
-- [GetFrameNumber](iousbhostdevice/getframenumber.md)
+- [GetFrameNumber](./getframenumber.md)
   Gets the current frame number of the USB controller.
-- [tIOUSBHostConnectionSpeed](tiousbhostconnectionspeed.md)
+- [tIOUSBHostConnectionSpeed](../tiousbhostconnectionspeed.md)
   Constants indicating the connection speed of the device.
-- [tIOUSBHostPortStatus](tiousbhostportstatus.md)
+- [tIOUSBHostPortStatus](../tiousbhostportstatus.md)
   Constants indicating the state of a port.
-- [tIOUSBHostPortType](tiousbhostporttype.md)
+- [tIOUSBHostPortType](../tiousbhostporttype.md)
   Constants indicating a port’s type.
 
 

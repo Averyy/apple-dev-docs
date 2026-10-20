@@ -1,7 +1,8 @@
 # items
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of dynamic items associated with the gravity behavior.
 
@@ -9,7 +10,7 @@ The set of dynamic items associated with the gravity behavior.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,16 @@ The set of dynamic items associated with the gravity behavior.
 var items: [any UIDynamicItem] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<id<UIDynamicItem>> * items;
+```
+
 ## See Also
 
-- [func addItem(any UIDynamicItem)](uigravitybehavior/additem(_:).md)
+### Managing a gravity behavior’s items
+- [func addItem(any UIDynamicItem)](./additem%28_%29.md)
   Associates the specified dynamic item with the gravity behavior.
-- [func removeItem(any UIDynamicItem)](uigravitybehavior/removeitem(_:).md)
+- [func removeItem(any UIDynamicItem)](./removeitem%28_%29.md)
   Removes the specified dynamic item from the gravity behavior.
 
 

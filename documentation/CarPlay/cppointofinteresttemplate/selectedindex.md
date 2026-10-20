@@ -1,7 +1,8 @@
 # selectedIndex
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current selection’s index.
 
@@ -16,15 +17,20 @@ The current selection’s index.
 var selectedIndex: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSUInteger selectedIndex;
+```
+
 #### Discussion
 
-The value of the property must be within the bounds of the [`pointsOfInterest`](cppointofinteresttemplate/pointsofinterest.md) array, or [`NSNotFound`](https://developer.apple.com/documentation/foundation/nsnotfound-4qp9h) to indicate no selection.
+The value of the property must be within the bounds of the [`pointsOfInterest`](./pointsofinterest.md) array, or [`NSNotFound`](../../Foundation/nsnotfound-4qp9h.md) to indicate no selection.
 
 ## See Also
 
-- [var pointsOfInterest: [CPPointOfInterest]](cppointofinteresttemplate/pointsofinterest.md)
+### Managing the Points of Interest
+- [var pointsOfInterest: [CPPointOfInterest]](./pointsofinterest.md)
   The points of interest the template displays on the map and in the scrollable picker.
-- [func setPointsOfInterest([CPPointOfInterest], selectedIndex: Int)](cppointofinteresttemplate/setpointsofinterest(_:selectedindex:).md)
+- [func setPointsOfInterest([CPPointOfInterest], selectedIndex: Int)](./setpointsofinterest%28_,selectedindex%29.md)
   Updates the points of interest and the current selection.
 
 

@@ -1,7 +1,8 @@
 # NSApplicationMain(_:_:)
 
 **Framework**: AppKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Called by the main function to create and run the application.
 
@@ -33,13 +34,14 @@ Creates the application, loads the main nib file from the application’s main b
 
 ## See Also
 
-- [class NSApplication](nsapplication.md)
+### Life Cycle
+- [class NSApplication](./nsapplication.md)
   An object that manages an app’s main event loop and resources used by all of that app’s objects.
-- [class NSRunningApplication](nsrunningapplication.md)
+- [class NSRunningApplication](./nsrunningapplication.md)
   An object that can manipulate and provide information for a single instance of an app.
-- [protocol NSApplicationDelegate](nsapplicationdelegate.md)
+- [protocol NSApplicationDelegate](./nsapplicationdelegate.md)
   A set of methods that manage your app’s life cycle and its interaction with common system services.
-- [Managing ongoing background processes in your Mac](managing-ongoing-background-processes-in-your-mac.md)
+- [Managing ongoing background processes in your Mac](./managing-ongoing-background-processes-in-your-mac.md)
   Configure your app to help people understand when background processes may continue after they close your app.
 
 

@@ -1,7 +1,8 @@
 # GroupMemberEntry
 
 **Framework**: App Store Server API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A customer that belongs to a group.
 
@@ -10,17 +11,17 @@ A customer that belongs to a group.
 
 ## Declaration
 
-```swift
+```
 object GroupMemberEntry
 ```
 
 ## Mentions
 
-- [App Store Server API changelog](app-store-server-api-changelog.md)
+- [App Store Server API changelog](./app-store-server-api-changelog.md)
 
 #### Discussion
 
-The [`Get Group Members`](get-group-members.md) endpoint returns a `GroupMemberEntry` for each member of a group.
+The [`Get Group Members`](./get-group-members.md) endpoint returns a `GroupMemberEntry` for each member of a group.
 
 ## Properties
 

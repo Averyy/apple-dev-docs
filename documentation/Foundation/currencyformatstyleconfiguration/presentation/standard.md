@@ -1,7 +1,8 @@
 # standard
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A presentation that shows a standard expression of the currency.
 
@@ -26,11 +27,12 @@ This presentation produces output like `US$ 123.00`.
 
 ## See Also
 
-- [static var fullName: CurrencyFormatStyleConfiguration.Presentation](currencyformatstyleconfiguration/presentation/fullname.md)
+### Specifying presentation
+- [static var fullName: CurrencyFormatStyleConfiguration.Presentation](./fullname.md)
   A presentation that shows the full name of the currency.
-- [static var isoCode: CurrencyFormatStyleConfiguration.Presentation](currencyformatstyleconfiguration/presentation/isocode.md)
+- [static var isoCode: CurrencyFormatStyleConfiguration.Presentation](./isocode.md)
   A presentation that shows the ISO code of the currency.
-- [static var narrow: CurrencyFormatStyleConfiguration.Presentation](currencyformatstyleconfiguration/presentation/narrow.md)
+- [static var narrow: CurrencyFormatStyleConfiguration.Presentation](./narrow.md)
   A presentation that shows a condensed expression of the currency.
 
 

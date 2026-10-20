@@ -1,7 +1,8 @@
 # DockKitError.frameRateTooHigh
 
 **Framework**: DockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The call rate for the method is too frequent.
 

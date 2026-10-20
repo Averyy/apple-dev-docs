@@ -1,7 +1,8 @@
 # version
 
 **Framework**: Accessory Transport Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cipher suite version.
 
@@ -16,9 +17,10 @@ let version: SecurityMessage.CipherSuite.Version
 
 ## See Also
 
-- [let cipherSuite: SecurityMessage.CipherSuite](securitymessage/ciphersuite-swift.property.md)
+### Determining encryption method
+- [let cipherSuite: SecurityMessage.CipherSuite](./ciphersuite-swift.property.md)
   The cipher suite used for key exchange.
-- [SecurityMessage.CipherSuite](securitymessage/ciphersuite-swift.enum.md)
+- [SecurityMessage.CipherSuite](./ciphersuite-swift.enum.md)
   A cryptographic cipher suite for key exchange.
 
 

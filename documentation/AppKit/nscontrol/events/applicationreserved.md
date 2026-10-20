@@ -1,7 +1,8 @@
 # applicationReserved
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A range of control-event values available for app use.
 
@@ -14,9 +15,14 @@ A range of control-event values available for app use.
 static var applicationReserved: NSControl.Events { get }
 ```
 
+```c
+NSControlEventApplicationReserved
+```
+
 ## See Also
 
-- [static var systemReserved: NSControl.Events](nscontrol/events/systemreserved.md)
+### Reserved ranges
+- [static var systemReserved: NSControl.Events](./systemreserved.md)
   A range of control-event values reserved for internal framework use.
 
 

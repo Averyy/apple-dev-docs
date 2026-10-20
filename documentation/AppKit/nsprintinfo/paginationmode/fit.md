@@ -1,10 +1,11 @@
 # NSPrintInfo.PaginationMode.fit
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 case fit
 ```
 
+```c
+NSPrintingPaginationModeFit
+```
+
 ## See Also
 
-- [NSPrintInfo.PaginationMode.automatic](nsprintinfo/paginationmode/automatic.md)
-- [NSPrintInfo.PaginationMode.clip](nsprintinfo/paginationmode/clip.md)
+### Constants
+- [NSPrintInfo.PaginationMode.automatic](./automatic.md)
+- [NSPrintInfo.PaginationMode.clip](./clip.md)
 
 
 ---

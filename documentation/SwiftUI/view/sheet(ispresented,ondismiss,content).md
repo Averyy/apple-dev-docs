@@ -1,7 +1,8 @@
 # sheet(isPresented:onDismiss:content:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a sheet when a binding to a Boolean value that you provide is true.
 
@@ -56,13 +57,13 @@ struct ShowLicenseAgreement: View {
 }
 ```
 
-![A screenshot of a full-screen modal sheet showing the mockup of a](/images/com.apple.SwiftUI/SwiftUI-View-SheetIsPresentingContent@2x.png)
+![A screenshot of a full-screen modal sheet showing the mockup of a](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-SheetIsPresentingContent@2x.png)
 
-In vertically compact environments, such as iPhone in landscape orientation, a sheet presentation automatically adapts to appear as a full-screen cover. Use the [`presentationCompactAdaptation(_:)`](view/presentationcompactadaptation(_:).md) or [`presentationCompactAdaptation(horizontal:vertical:)`](view/presentationcompactadaptation(horizontal:vertical:).md) modifier to override this behavior.
+In vertically compact environments, such as iPhone in landscape orientation, a sheet presentation automatically adapts to appear as a full-screen cover. Use the [`presentationCompactAdaptation(_:)`](./presentationcompactadaptation%28_%29.md) or [`presentationCompactAdaptation(horizontal:vertical:)`](./presentationcompactadaptation%28horizontal,vertical%29.md) modifier to override this behavior.
 
-##### Breakthrough Effect
+##### Breakthrough effect
 
-In visionOS, most system presentations appear with a breakthrough effect by default. To change how the enclosing presentation breaks through content occluding it, use [`presentationBreakthroughEffect(_:)`](view/presentationbreakthrougheffect(_:).md), like in the following example:
+In visionOS, most system presentations appear with a breakthrough effect by default. To change how the enclosing presentation breaks through content occluding it, use [`presentationBreakthroughEffect(_:)`](./presentationbreakthrougheffect%28_%29.md), like in the following example:
 
 ```swift
 .sheet(isPresented: $isShowingSheet,
@@ -92,17 +93,18 @@ In visionOS, most system presentations appear with a breakthrough effect by defa
 
 ## See Also
 
-- [func sheet<Item, Content>(item: Binding<Item?>, onDismiss: (() -> Void)?, content: (Item) -> Content) -> some View](view/sheet(item:ondismiss:content:).md)
+### Showing a sheet, cover, or popover
+- [func sheet<Item, Content>(item: Binding<Item?>, onDismiss: (() -> Void)?, content: (Item) -> Content) -> some View](./sheet%28item,ondismiss,content%29.md)
   Presents a sheet using the given item as a data source for the sheet’s content.
-- [func fullScreenCover<Content>(isPresented: Binding<Bool>, onDismiss: (() -> Void)?, content: () -> Content) -> some View](view/fullscreencover(ispresented:ondismiss:content:).md)
+- [func fullScreenCover<Content>(isPresented: Binding<Bool>, onDismiss: (() -> Void)?, content: () -> Content) -> some View](./fullscreencover%28ispresented,ondismiss,content%29.md)
   Presents a modal view that covers as much of the screen as possible when binding to a Boolean value you provide is true.
-- [func fullScreenCover<Item, Content>(item: Binding<Item?>, onDismiss: (() -> Void)?, content: (Item) -> Content) -> some View](view/fullscreencover(item:ondismiss:content:).md)
+- [func fullScreenCover<Item, Content>(item: Binding<Item?>, onDismiss: (() -> Void)?, content: (Item) -> Content) -> some View](./fullscreencover%28item,ondismiss,content%29.md)
   Presents a modal view that covers as much of the screen as possible using the binding you provide as a data source for the sheet’s content.
-- [func popover<Item, Content>(item: Binding<Item?>, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge?, content: (Item) -> Content) -> some View](view/popover(item:attachmentanchor:arrowedge:content:).md)
+- [func popover<Item, Content>(item: Binding<Item?>, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge?, content: (Item) -> Content) -> some View](./popover%28item,attachmentanchor,arrowedge,content%29.md)
   Presents a popover using the given item as a data source for the popover’s content.
-- [func popover<Content>(isPresented: Binding<Bool>, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge?, content: () -> Content) -> some View](view/popover(ispresented:attachmentanchor:arrowedge:content:).md)
+- [func popover<Content>(isPresented: Binding<Bool>, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge?, content: () -> Content) -> some View](./popover%28ispresented,attachmentanchor,arrowedge,content%29.md)
   Presents a popover when a given condition is true.
-- [enum PopoverAttachmentAnchor](popoverattachmentanchor.md)
+- [enum PopoverAttachmentAnchor](../popoverattachmentanchor.md)
   An attachment anchor for a popover.
 
 

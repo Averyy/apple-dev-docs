@@ -1,7 +1,8 @@
 # init(device:rows:columns:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -17,9 +18,14 @@
 init(device: any MTLDevice, rows: Int, columns: Int)
 ```
 
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device rows:(NSUInteger) rows columns:(NSUInteger) columns;
+```
+
 ## See Also
 
-- [init(device: any MTLDevice, transpose: Bool, rows: Int, columns: Int, alpha: Double, beta: Double)](mpsmatrixvectormultiplication/init(device:transpose:rows:columns:alpha:beta:).md)
+### Initializers
+- [init(device: any MTLDevice, transpose: Bool, rows: Int, columns: Int, alpha: Double, beta: Double)](./init%28device,transpose,rows,columns,alpha,beta%29.md)
 
 
 ---

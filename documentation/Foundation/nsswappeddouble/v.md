@@ -1,7 +1,8 @@
 # v
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var v: UInt64
+```
+
+```c
+unsigned long long v;
 ```
 
 

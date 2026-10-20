@@ -1,7 +1,8 @@
 # errSecMissingAttributeKeyType
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key type attribute is missing.
 
@@ -18,6 +19,10 @@ A key type attribute is missing.
 
 ```swift
 var errSecMissingAttributeKeyType: OSStatus { get }
+```
+
+```c
+errSecMissingAttributeKeyType
 ```
 
 

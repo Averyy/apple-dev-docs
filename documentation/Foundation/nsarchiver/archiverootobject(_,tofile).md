@@ -1,15 +1,18 @@
 # archiveRootObject(_:toFile:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a temporary instance of `NSArchiver` and archives an object graph by encoding it into a data object and writing the resulting data object to a specified file.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- macOS 10.0+
+- iOS 2.0+ - Deprecated in 11.0
+- iPadOS 2.0+ - Deprecated in 11.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.0+ - Deprecated in 10.13
+
+> **Deprecated**: Use NSKeyedArchiver instead
 
 ## Declaration
 
@@ -17,15 +20,19 @@ Creates a temporary instance of `NSArchiver` and archives an object graph by enc
 class func archiveRootObject(_ rootObject: Any, toFile path: String) -> Bool
 ```
 
+```objc
++ (BOOL) archiveRootObject:(id) rootObject toFile:(NSString *) path;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the archive was written successfully, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the archive was written successfully, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-This convenience method invokes [`archivedData(withRootObject:)`](nsarchiver/archiveddata(withrootobject:).md) to get the encoded data, and then sends that data object the message [`write(toFile:atomically:)`](nsdata/write(tofile:atomically:).md), using `path` for the first argument and [`true`](https://developer.apple.com/documentation/swift/true) for the second.
+This convenience method invokes [`archivedData(withRootObject:)`](./archiveddata%28withrootobject%29.md) to get the encoded data, and then sends that data object the message [`write(toFile:atomically:)`](../nsdata/write%28tofile,atomically%29.md), using `path` for the first argument and [`true`](../../Swift/true.md) for the second.
 
-The archived data should be retrieved from the archive by an [`NSUnarchiver`](nsunarchiver.md) object.
+The archived data should be retrieved from the archive by an [`NSUnarchiver`](../nsunarchiver.md) object.
 
 ## Parameters
 
@@ -34,13 +41,15 @@ The archived data should be retrieved from the archive by an [`NSUnarchiver`](ns
 
 ## See Also
 
-- [func write(toFile: String, atomically: Bool) -> Bool](nsdata/write(tofile:atomically:).md)
+### Related Documentation
+- [func write(toFile: String, atomically: Bool) -> Bool](../nsdata/write%28tofile,atomically%29.md)
   Writes the data object’s bytes to the file specified by a given path.
-- [class func archivedData(withRootObject: Any) -> Data](nsarchiver/archiveddata(withrootobject:).md)
+### Archiving data
+- [class func archivedData(withRootObject: Any) -> Data](./archiveddata%28withrootobject%29.md)
   Returns a data object containing the encoded form of the object graph whose root object is given.
-- [func encodeRootObject(Any)](nsarchiver/encoderootobject(_:).md)
+- [func encodeRootObject(Any)](./encoderootobject%28_%29.md)
   Archives a given object along with all the objects to which it is connected.
-- [func encodeConditionalObject(Any?)](nsarchiver/encodeconditionalobject(_:).md)
+- [func encodeConditionalObject(Any?)](./encodeconditionalobject%28_%29.md)
   Conditionally archives a given object.
 
 

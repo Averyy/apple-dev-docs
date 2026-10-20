@@ -2,6 +2,7 @@
 
 **Framework**: Accessibility  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An array of custom objects for creating accessible content.
@@ -19,6 +20,10 @@ An array of custom objects for creating accessible content.
 
 ```swift
 var accessibilityCustomContent: [AXCustomContent]! { get set }
+```
+
+```objc
+@property (nonatomic, copy, null_resettable) NSArray<AXCustomContent *> * accessibilityCustomContent;
 ```
 
 

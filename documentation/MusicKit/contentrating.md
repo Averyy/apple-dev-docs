@@ -1,7 +1,8 @@
 # ContentRating
 
 **Framework**: MusicKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The rating of the content that potentially plays while playing a resource.
 
@@ -27,24 +28,25 @@ A nil value means no rating is available for this resource.
 ## Topics
 
 ### Enumeration Cases
-- [ContentRating.clean](contentrating/clean.md)
-- [ContentRating.explicit](contentrating/explicit.md)
+- [ContentRating.clean](./contentrating/clean.md)
+- [ContentRating.explicit](./contentrating/explicit.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct EditorialNotes](editorialnotes.md)
+### Music Item Attributes
+- [struct EditorialNotes](./editorialnotes.md)
   An object that represents editorial notes.
-- [struct PreviewAsset](previewasset.md)
+- [struct PreviewAsset](./previewasset.md)
   An object that represents a preview for resources.
 
 

@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A tag identifying the notification.
 
@@ -22,9 +23,10 @@ var name: Notification.Name
 
 ## See Also
 
-- [var object: Any?](notification/object.md)
+### Getting Notification Information
+- [var object: Any?](./object.md)
   An object that the poster wishes to send to observers.
-- [var userInfo: [AnyHashable : Any]?](notification/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./userinfo.md)
   Storage for values or objects related to this notification.
 
 

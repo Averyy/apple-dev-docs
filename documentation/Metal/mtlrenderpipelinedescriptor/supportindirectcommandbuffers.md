@@ -1,7 +1,8 @@
 # supportIndirectCommandBuffers
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether you can encode commands into an indirect command buffer using the render pipeline.
 
@@ -17,6 +18,10 @@ A Boolean value that determines whether you can encode commands into an indirect
 
 ```swift
 var supportIndirectCommandBuffers: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL supportIndirectCommandBuffers;
 ```
 
 

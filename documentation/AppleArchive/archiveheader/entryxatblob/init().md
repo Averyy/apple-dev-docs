@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Apple Archive  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new empty extended attribute blob.
 
@@ -11,7 +12,7 @@ Creates a new empty extended attribute blob.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ required init()
 
 ## See Also
 
-- [init?(directory: FilePath, path: FilePath, flags: ArchiveFlags)](archiveheader/entryxatblob/init(directory:path:flags:).md)
+### Creating an Extended Attributes Blob
+- [init?(directory: FilePath, path: FilePath, flags: ArchiveFlags)](./init%28directory,path,flags%29.md)
   Creates a new extended attribute blob from the specified directory and path.
-- [init?(withAAEncodedData: UnsafeBufferPointer<UInt8>)](archiveheader/entryxatblob/init(withaaencodeddata:).md)
+- [init?(withAAEncodedData: UnsafeBufferPointer<UInt8>)](./init%28withaaencodeddata%29.md)
   Creates a new archive header from encoded data.
 
 

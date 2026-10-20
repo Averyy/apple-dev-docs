@@ -1,7 +1,8 @@
 # TCControlLayoutAnchorCoordinateSystem.absolute
 
 **Framework**: Touch Controller  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Anchors are positioned according to the absolute edges of the sceren.
 
@@ -16,9 +17,14 @@ Anchors are positioned according to the absolute edges of the sceren.
 case absolute
 ```
 
+```c
+TCControlLayoutAnchorCoordinateSystemAbsolute
+```
+
 ## See Also
 
-- [TCControlLayoutAnchorCoordinateSystem.relative](tccontrollayoutanchorcoordinatesystem/relative.md)
+### Anchors
+- [TCControlLayoutAnchorCoordinateSystem.relative](./relative.md)
   Anchors are positioned relative to the device’s screen size.
 
 

@@ -1,7 +1,8 @@
 # value
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of strings in date-time format.
 
@@ -10,7 +11,7 @@ An array of strings in date-time format.
 
 ## Declaration
 
-```swift
+```
 attribute Date[]? value;
 ```
 

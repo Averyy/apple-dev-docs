@@ -1,7 +1,8 @@
 # init(rawRepresentation:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Curve25519 public key for key agreement from a collection of bytes.
 

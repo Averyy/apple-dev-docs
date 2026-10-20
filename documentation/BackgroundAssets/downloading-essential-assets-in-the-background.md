@@ -1,6 +1,8 @@
 # Downloading essential assets in the background
 
-**Framework**: Background Assets
+**Framework**: Background Assets  
+**Role**: Sample Code  
+**Download**: [DownloadingEssentialAssetsInTheBackground.zip](https://docs-assets.developer.apple.com/published/a922b525ed1f/DownloadingEssentialAssetsInTheBackground.zip)
 
 Fetch the assets your app requires before its first launch using an app extension and the Background Assets framework.
 
@@ -15,35 +17,36 @@ Fetch the assets your app requires before its first launch using an app extensio
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC23 session 10108: [`What’s new in Background Assets`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10108/).
+> **Note**: This sample code project is associated with WWDC23 session 10108: [What’s new in Background Assets](https://developer.apple.com/wwdc23/10108/).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 Before you run the sample code project in Xcode:
 
 - Configure the WWDC Sessions and WWDC Sessions Background Assets Extension targets to use your Developer team for signing.
-- See [`Assign a project to a team`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev23aab79b4).
+- See [Assign a project to a team](https://help.apple.com/xcode/mac/current/#/dev23aab79b4).
 
 ## See Also
 
-- [Configuring an unmanaged Background Assets project](configuring-an-unmanaged-background-assets-project.md)
+### Unmanaged asset downloads
+- [Configuring an unmanaged Background Assets project](./configuring-an-unmanaged-background-assets-project.md)
   Manage and download individual assets yourself by configuring your app and extension targets.
-- [BAManifestURL](../bundleresources/information-property-list/bamanifesturl.md)
+- [BAManifestURL](../BundleResources/information-property-list/bamanifesturl.md)
   The location URL of the app’s manifest file that contains the names and sizes of assets.
-- [BAInitialDownloadRestrictions](../bundleresources/information-property-list/bainitialdownloadrestrictions.md)
+- [BAInitialDownloadRestrictions](../BundleResources/information-property-list/bainitialdownloadrestrictions.md)
   The restrictions that apply to the set of assets that download immediately after app installation.
-- [BAEssentialMaxInstallSize](../bundleresources/information-property-list/baessentialmaxinstallsize.md)
+- [BAEssentialMaxInstallSize](../BundleResources/information-property-list/baessentialmaxinstallsize.md)
   The combined, maximum size of the essential assets that the system downloads before it launches your app in bytes.
-- [BAMaxInstallSize](../bundleresources/information-property-list/bamaxinstallsize.md)
+- [BAMaxInstallSize](../BundleResources/information-property-list/bamaxinstallsize.md)
   The combined, maximum size, in bytes, of the non-essential assets that download immediately after app installation.
-- [class BADownloadManager](badownloadmanager.md)
+- [class BADownloadManager](./badownloadmanager.md)
   An object that manages the queue of scheduled asset downloads.
-- [protocol BADownloaderExtension](badownloaderextension-qwaw.md)
+- [protocol BADownloaderExtension](./badownloaderextension-qwaw.md)
   An interface for reacting to app life-cycle events and processing concluded asset downloads while your app isn’t running.
-- [protocol BADownloaderExtensionConfiguration](badownloaderextensionconfiguration.md)
-- [class BAURLDownload](baurldownload.md)
+- [protocol BADownloaderExtensionConfiguration](./badownloaderextensionconfiguration.md)
+- [class BAURLDownload](./baurldownload.md)
   An object that represents a remote asset to download.
-- [class BADownload](badownload.md)
+- [class BADownload](./badownload.md)
   An object that represents an in-progress or concluded asset download.
 
 

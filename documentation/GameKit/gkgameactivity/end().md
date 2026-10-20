@@ -1,7 +1,8 @@
 # end()
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Ends the game activity if it’s not already ended.
 
@@ -19,9 +20,13 @@ Ends the game activity if it’s not already ended.
 func end()
 ```
 
+```objc
+- (void) end;
+```
+
 ## Mentions
 
-- [Creating activities for your game](creating-activities-for-your-game.md)
+- [Creating activities for your game](../creating-activities-for-your-game.md)
 
 #### Discussion
 
@@ -29,11 +34,12 @@ This reports all associated achievements and submit scores to leaderboards.
 
 ## See Also
 
-- [func start()](gkgameactivity/start.md)
+### Updating the activity state
+- [func start()](./start%28%29.md)
   Starts the game activity if it’s not already started.
-- [func pause()](gkgameactivity/pause.md)
+- [func pause()](./pause%28%29.md)
   Pauses the game activity if it’s not already paused.
-- [func resume()](gkgameactivity/resume.md)
+- [func resume()](./resume%28%29.md)
   Resumes the game activity if it was paused.
 
 

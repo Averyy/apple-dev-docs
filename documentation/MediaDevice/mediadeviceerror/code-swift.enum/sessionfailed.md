@@ -1,7 +1,8 @@
 # MediaDeviceError.Code.sessionFailed
 
 **Framework**: Media Device  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session failed on the device.
 

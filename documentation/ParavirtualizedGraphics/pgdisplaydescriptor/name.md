@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The display’s name as seen in the guest operating environment.
 
@@ -15,6 +16,10 @@ The display’s name as seen in the guest operating environment.
 var name: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSString * name;
+```
+
 #### Discussion
 
 The default value is `Apple Virtual`. The framework truncates the name to 13 characters.
@@ -23,7 +28,8 @@ The device propagates the display name into the guest environment, so the name m
 
 ## See Also
 
-- [var sizeInMillimeters: NSSize](pgdisplaydescriptor/sizeinmillimeters.md)
+### Specifying the Display Properties
+- [var sizeInMillimeters: NSSize](./sizeinmillimeters.md)
   The size in millimeters of the virtual display.
 
 

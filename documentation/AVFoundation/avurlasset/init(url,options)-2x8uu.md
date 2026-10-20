@@ -1,7 +1,8 @@
 # init(url:options:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an asset that models the media resource at the specified URL.
 
@@ -20,6 +21,10 @@ Creates an asset that models the media resource at the specified URL.
 init(url URL: URL, options: [String : Any]? = nil)
 ```
 
+```objc
+- (instancetype) initWithURL:(NSURL *) URL options:(NSDictionary<NSString *,id> *) options;
+```
+
 #### Return Value
 
 An asset that models the media resource found at `URL`.
@@ -27,13 +32,16 @@ An asset that models the media resource found at `URL`.
 ## Parameters
 
 - `URL`: A URL that references the media for the asset to model.
-- `options`: A dictionary that contains options used to customize the initialization of the asset. For supported keys and values, see [`Initialization options`](initialization-options.md).
+- `options`: A dictionary that contains options used to customize the initialization of the asset.
+
+  For supported keys and values, see [Initialization options](../initialization-options.md).
 
 ## See Also
 
-- [convenience init(url: URL)](avurlasset/init(url:).md)
+### Creating an asset
+- [convenience init(url: URL)](./init%28url%29.md)
   Creates an asset that models the media at the specified URL.
-- [Initialization options](avurlasset-initialization-options.md)
+- [Initialization options](../avurlasset-initialization-options.md)
   Specify options to configure the initialization of a media asset.
 
 

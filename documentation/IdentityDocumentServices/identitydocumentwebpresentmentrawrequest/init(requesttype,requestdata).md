@@ -1,14 +1,15 @@
 # init(requestType:requestData:)
 
 **Framework**: IdentityDocumentServices  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a web presentment raw request.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 26.0+
 
 ## Declaration
@@ -24,9 +25,10 @@ init(requestType: IdentityDocumentWebPresentmentRawRequest.RequestType, requestD
 
 ## See Also
 
-- [var requestData: Data](identitydocumentwebpresentmentrawrequest/requestdata.md)
+### Creating an identity document web presentment raw request
+- [var requestData: Data](./requestdata.md)
   The request data blob for the web presentment raw request.
-- [var requestType: IdentityDocumentWebPresentmentRawRequest.RequestType](identitydocumentwebpresentmentrawrequest/requesttype-swift.property.md)
+- [var requestType: IdentityDocumentWebPresentmentRawRequest.RequestType](./requesttype-swift.property.md)
   The request type for the current request that the system uses to help the document provider deserialize the request.
 
 

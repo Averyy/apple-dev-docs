@@ -1,7 +1,8 @@
 # numberOfLoops
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of times the audio repeats playback.
 
@@ -20,21 +21,26 @@ The number of times the audio repeats playback.
 var numberOfLoops: Int { get set }
 ```
 
+```objc
+@property NSInteger numberOfLoops;
+```
+
 #### Discussion
 
-The default value of `0` results in the sound playing once. Set a positive integer value to specify the number of times to repeat the sound. For example, a value of `1` plays the sound twice: the original sound and one repetition. Set a negative integer value to loop the sound continuously until you call the [`stop()`](avaudioplayer/stop().md) method.
+The default value of `0` results in the sound playing once. Set a positive integer value to specify the number of times to repeat the sound. For example, a value of `1` plays the sound twice: the original sound and one repetition. Set a negative integer value to loop the sound continuously until you call the [`stop()`](./stop%28%29.md) method.
 
 ## See Also
 
-- [var volume: Float](avaudioplayer/volume.md)
+### Configuring playback settings
+- [var volume: Float](./volume.md)
   The audio player’s volume relative to other audio output.
-- [func setVolume(Float, fadeDuration: TimeInterval)](avaudioplayer/setvolume(_:fadeduration:).md)
+- [func setVolume(Float, fadeDuration: TimeInterval)](./setvolume%28_,fadeduration%29.md)
   Changes the audio player’s volume over a duration of time.
-- [var pan: Float](avaudioplayer/pan.md)
+- [var pan: Float](./pan.md)
   The audio player’s stereo pan position.
-- [var enableRate: Bool](avaudioplayer/enablerate.md)
+- [var enableRate: Bool](./enablerate.md)
   A Boolean value that indicates whether you can adjust the playback rate of the audio player.
-- [var rate: Float](avaudioplayer/rate.md)
+- [var rate: Float](./rate.md)
   The audio player’s playback rate.
 
 

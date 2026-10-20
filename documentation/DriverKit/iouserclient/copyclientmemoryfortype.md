@@ -1,19 +1,20 @@
 # CopyClientMemoryForType
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Return an IOMemoryDescriptor to be mapped into the client task.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t CopyClientMemoryForType(uint64_t type, uint64_t *options, IOMemoryDescriptor **memory);
 ```
 
@@ -33,7 +34,8 @@ IOConnectMapMemory()/UnmapMemory() will result in a call to this method to obtai
 
 ## See Also
 
-- [Copy Client Memory Options](3325603-copy_client_memory_options.md)
+### Mapping to the Client’s Memory Space
+- [Copy Client Memory Options](../api-3325603-copy_client_memory_options.md)
 
 
 ---

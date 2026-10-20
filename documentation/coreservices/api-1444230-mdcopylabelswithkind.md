@@ -1,7 +1,8 @@
 # MDCopyLabelsWithKind(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 func MDCopyLabelsWithKind(_ kind: CFString!) -> CFArray!
+```
+
+```c
+CFArrayRef MDCopyLabelsWithKind(CFStringRef kind);
 ```
 
 

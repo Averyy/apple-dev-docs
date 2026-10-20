@@ -1,7 +1,8 @@
 # MIDIFlushOutput(_:)
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Cancels all pending events that were previously scheduled to send.
 
@@ -18,23 +19,28 @@ Cancels all pending events that were previously scheduled to send.
 func MIDIFlushOutput(_ dest: MIDIEndpointRef) -> OSStatus
 ```
 
+```c
+extern OSStatus MIDIFlushOutput(MIDIEndpointRef dest);
+```
+
 #### Return Value
 
 An `OSStatus` result code.
 
 ## Parameters
 
-- `dest`: The destination with pending events to cancel. If [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0), the operation applies to all destinations.
+- `dest`: The destination with pending events to cancel. If [`nil`](../ObjectiveC/nil-227m0.md), the operation applies to all destinations.
 
 ## See Also
 
-- [struct MIDISysexSendRequest](midisysexsendrequest.md)
+### I/O management
+- [struct MIDISysexSendRequest](./midisysexsendrequest.md)
   A request to asynchronously send a single system-exclusive (SysEx) event to a destination.
-- [struct MIDISysexSendRequestUMP](midisysexsendrequestump.md)
+- [struct MIDISysexSendRequestUMP](./midisysexsendrequestump.md)
   A request to asynchronously send a single universal MIDI packet (UMP) system-exclusive (SysEx) event to a destination.
-- [func MIDIRestart() -> OSStatus](midirestart().md)
+- [func MIDIRestart() -> OSStatus](./midirestart%28%29.md)
   Stops and restarts MIDI I/O.
-- [struct MIDIIOErrorNotification](midiioerrornotification.md)
+- [struct MIDIIOErrorNotification](./midiioerrornotification.md)
   A general I/O error notification.
 
 

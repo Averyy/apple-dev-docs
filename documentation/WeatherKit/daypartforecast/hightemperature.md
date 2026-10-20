@@ -1,7 +1,8 @@
 # highTemperature
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The high temperature for the day part.
 

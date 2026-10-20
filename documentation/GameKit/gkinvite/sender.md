@@ -1,7 +1,8 @@
 # sender
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The player who sends the invitation.
 
@@ -19,15 +20,28 @@ The player who sends the invitation.
 var sender: GKPlayer { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, retain, readonly) GKPlayer * sender;
+```
+
+*macOS*
+
+```objc
+@property (atomic, retain, readonly) GKPlayer * sender;
+```
+
 ## See Also
 
-- [var playerAttributes: UInt32](gkinvite/playerattributes.md)
+### Getting Properties
+- [var playerAttributes: UInt32](./playerattributes.md)
   The player attributes for the match.
-- [var playerGroup: Int](gkinvite/playergroup.md)
+- [var playerGroup: Int](./playergroup.md)
   The player group for the match.
-- [var isHosted: Bool](gkinvite/ishosted.md)
+- [var isHosted: Bool](./ishosted.md)
   A Boolean value that indicates whether you host the game on your own servers.
-- [var inviter: String](gkinvite/inviter.md)
+- [var inviter: String](./inviter.md)
   The identifier for the player who sends the invitation.
 
 

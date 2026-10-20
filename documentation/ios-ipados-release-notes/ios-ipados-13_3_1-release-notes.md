@@ -1,36 +1,38 @@
 # iOS & iPadOS 13.3.1 Release Notes
 
-**Framework**: iOS & iPadOS Release Notes
+**Framework**: iOS & iPadOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 13.3.1 SDK provides support for developing apps for iPhone, iPad, and iPod touch devices running iOS & iPadOS 13.3.1. The SDK comes bundled with Xcode 11.3. For information on the compatibility requirements for Xcode 11.3, see [`Xcode 11.3 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-11_3-release-notes).
+The iOS & iPadOS 13.3.1 SDK provides support for developing apps for iPhone, iPad, and iPod touch devices running iOS & iPadOS 13.3.1. The SDK comes bundled with Xcode 11.3. For information on the compatibility requirements for Xcode 11.3, see [Xcode 11.3 Release Notes](../Xcode-Release-Notes/xcode-11_3-release-notes.md).
 
 ##### General
 
 ###### Known Issues
 
-- UI tests using the XCTest framework are currently unable to interact with embedded web views ([`UIWebView`](https://developer.apple.com/documentation/uikit/uiwebview), [`WKWebView`](https://developer.apple.com/documentation/webkit/wkwebview), [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) and [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession)) inside of apps. (58576627)
+- UI tests using the XCTest framework are currently unable to interact with embedded web views ([`UIWebView`](../UIKit/uiwebview.md), [`WKWebView`](../WebKit/wkwebview.md), [`SFSafariViewController`](../SafariServices/sfsafariviewcontroller.md) and [`ASWebAuthenticationSession`](../AuthenticationServices/aswebauthenticationsession.md)) inside of apps. (58576627)
 
 ## See Also
 
-- [iOS & iPadOS 13.7 Release Notes](ios-ipados-13_7-release-notes.md)
+### iOS & iPadOS 13
+- [iOS & iPadOS 13.7 Release Notes](./ios-ipados-13_7-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 13.6 Release Notes](ios-ipados-13_6-release-notes.md)
+- [iOS & iPadOS 13.6 Release Notes](./ios-ipados-13_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 13.5 Release Notes](ios-ipados-13_5-release-notes.md)
+- [iOS & iPadOS 13.5 Release Notes](./ios-ipados-13_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 13.4 Release Notes](ios-ipados-13_4-release-notes.md)
+- [iOS & iPadOS 13.4 Release Notes](./ios-ipados-13_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 13.3 Release Notes](ios-ipados-13_3-release-notes.md)
+- [iOS & iPadOS 13.3 Release Notes](./ios-ipados-13_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 13.2 Release Notes](ios-ipados-13_2-release-notes.md)
+- [iOS & iPadOS 13.2 Release Notes](./ios-ipados-13_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 13.1 Release Notes](ios-ipados-13_1-release-notes.md)
+- [iOS & iPadOS 13.1 Release Notes](./ios-ipados-13_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS 13 Release Notes](ios-13-release-notes.md)
+- [iOS 13 Release Notes](./ios-13-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

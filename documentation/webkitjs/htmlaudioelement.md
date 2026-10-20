@@ -1,9 +1,10 @@
 # HTMLAudioElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
-A class representing the HTML `audio` element that plays a sound or audio stream in a webpage. All of the methods and properties in this class are inherited from [`HTMLMediaElement`](htmlmediaelement.md).
+A class representing the HTML `audio` element that plays a sound or audio stream in a webpage. All of the methods and properties in this class are inherited from [`HTMLMediaElement`](./htmlmediaelement.md).
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -11,14 +12,14 @@ A class representing the HTML `audio` element that plays a sound or audio stream
 
 ## Declaration
 
-```swift
+```
 interface HTMLAudioElement
 ```
 
 ## Relationships
 
 ### Inherits From
-- [HTMLMediaElement](htmlmediaelement.md)
+- [HTMLMediaElement](./htmlmediaelement.md)
 
 
 ---

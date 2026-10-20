@@ -1,7 +1,8 @@
 # selectAreas(with:expectedValues:expectedValueInterval:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func selectAreas(with params: MTRServiceAreaClusterSelectAreasParams, expectedValues expectedDataValueDictionaries: [[String : Any]]?, expectedValueInterval expectedValueIntervalMs: NSNumber?, completion: @escaping @Sendable (MTRServiceAreaClusterSelectAreasResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func selectAreas(with params: MTRServiceAreaClusterSelectAreasParams, expectedValues expectedDataValueDictionaries: [[String : Any]]?, expectedValueInterval expectedValueIntervalMs: NSNumber?) async throws -> MTRServiceAreaClusterSelectAreasResponseParams
+```
+
+```objc
+- (void) selectAreasWithParams:(MTRServiceAreaClusterSelectAreasParams *) params expectedValues:(NSArray<NSDictionary<NSString *,id> *> *) expectedDataValueDictionaries expectedValueInterval:(NSNumber *) expectedValueIntervalMs completion:(void (^)(MTRServiceAreaClusterSelectAreasResponseParams *data, NSError *error)) completion;
 ```
 
 

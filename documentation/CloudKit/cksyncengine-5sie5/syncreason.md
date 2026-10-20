@@ -1,7 +1,8 @@
 # CKSyncEngine.SyncReason
 
 **Framework**: CloudKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Describes the reason for a sync operation.
 
@@ -11,7 +12,7 @@ Describes the reason for a sync operation.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,36 +24,37 @@ enum SyncReason
 ## Topics
 
 ### Sync reasons
-- [CKSyncEngine.SyncReason.scheduled](cksyncengine-5sie5/syncreason/scheduled.md)
+- [CKSyncEngine.SyncReason.scheduled](./syncreason/scheduled.md)
   The sync engine automatically scheduled this sync.
-- [CKSyncEngine.SyncReason.manual](cksyncengine-5sie5/syncreason/manual.md)
+- [CKSyncEngine.SyncReason.manual](./syncreason/manual.md)
   A manual sync operation.
 ### Debugging the reason
-- [var description: String](cksyncengine-5sie5/syncreason/description.md)
+- [var description: String](./syncreason/description.md)
   The textual description of the reason that’s suitable for logging.
 ### Default Implementations
-- [CustomStringConvertible Implementations](cksyncengine-5sie5/syncreason/customstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./syncreason/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let reason: CKSyncEngine.SyncReason](cksyncengine-5sie5/sendchangescontext/reason.md)
+### Accessing specific attributes
+- [let reason: CKSyncEngine.SyncReason](./sendchangescontext/reason.md)
   The reason for the send operation.
-- [enum CKSyncEngineSyncReason](cksyncenginesyncreason.md)
+- [enum CKSyncEngineSyncReason](../cksyncenginesyncreason.md)
   Describes the reason for a sync operation.
-- [let options: CKSyncEngine.SendChangesOptions](cksyncengine-5sie5/sendchangescontext/options.md)
+- [let options: CKSyncEngine.SendChangesOptions](./sendchangescontext/options.md)
   The options being used for this attempt to send changes.
-- [CKSyncEngine.SendChangesOptions](cksyncengine-5sie5/sendchangesoptions.md)
+- [CKSyncEngine.SendChangesOptions](./sendchangesoptions.md)
   A set of options to use when sending changes to the server.
 
 

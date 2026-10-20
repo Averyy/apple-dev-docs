@@ -1,7 +1,8 @@
 # init(url:scale:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Loads and displays an image from the specified URL.
 
@@ -29,7 +30,7 @@ Until the image loads, SwiftUI displays a default placeholder. When the load ope
 AsyncImage(url: URL(string: "https://example.com/icon.png"))
 ```
 
-If you want to customize the placeholder or apply image-specific modifiers — like [`resizable(capInsets:resizingMode:)`](image/resizable(capinsets:resizingmode:).md) — to the loaded image, use the [`init(url:scale:content:placeholder:)`](asyncimage/init(url:scale:content:placeholder:).md) initializer instead.
+If you want to customize the placeholder or apply image-specific modifiers — like [`resizable(capInsets:resizingMode:)`](../image/resizable%28capinsets,resizingmode%29.md) — to the loaded image, use the [`init(url:scale:content:placeholder:)`](./init%28url,scale,content,placeholder%29.md) initializer instead.
 
 ## Parameters
 
@@ -38,7 +39,8 @@ If you want to customize the placeholder or apply image-specific modifiers — l
 
 ## See Also
 
-- [init<I, P>(url: URL?, scale: CGFloat, content: (Image) -> I, placeholder: () -> P)](asyncimage/init(url:scale:content:placeholder:).md)
+### Loading an image
+- [init<I, P>(url: URL?, scale: CGFloat, content: (Image) -> I, placeholder: () -> P)](./init%28url,scale,content,placeholder%29.md)
   Loads and displays a modifiable image from the specified URL using a custom placeholder until the image loads.
 
 

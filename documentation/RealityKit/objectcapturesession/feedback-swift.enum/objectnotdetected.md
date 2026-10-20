@@ -1,7 +1,8 @@
 # ObjectCaptureSession.Feedback.objectNotDetected
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 If the detection of the object fails and a default manual box is presented instead, this element will be in the feedback to allow relevant information to be provided to the user for selecting a manual scanning volume and describing the operational envelope for the automatic object detection.
 

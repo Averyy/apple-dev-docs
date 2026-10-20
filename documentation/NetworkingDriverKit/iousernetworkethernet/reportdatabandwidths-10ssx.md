@@ -1,16 +1,17 @@
 # ReportDataBandwidths
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reports the input and output bandwidth between the device and your driver to the system.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t ReportDataBandwidths(uint64_t maxInputBandwidth, uint64_t maxOutputBandwidth, uint64_t effectiveInputBandwidth, uint64_t effectiveOutputBandwidth);
 ```
 
@@ -27,13 +28,14 @@ virtual kern_return_t ReportDataBandwidths(uint64_t maxInputBandwidth, uint64_t 
 
 ## See Also
 
-- [ReportLinkStatus](iousernetworkethernet/reportlinkstatus-5cxiq.md)
+### Reporting the Connection Status
+- [ReportLinkStatus](./reportlinkstatus-5cxiq.md)
   Reports the status of the link between the device and your driver to the system.
-- [ReportLinkQuality](iousernetworkethernet/reportlinkquality-4noh0.md)
+- [ReportLinkQuality](./reportlinkquality-4noh0.md)
   Reports the quality of the link between the device and your driver to the system.
-- [IOUserNetworkLinkStatus](iousernetworklinkstatus.md)
+- [IOUserNetworkLinkStatus](../iousernetworklinkstatus.md)
   A type for specifying the state of your device’s connection.
-- [IOUserNetworkLinkQuality](iousernetworklinkquality.md)
+- [IOUserNetworkLinkQuality](../iousernetworklinkquality.md)
   A type for specifying the quality of your device’s connection to the host.
 
 

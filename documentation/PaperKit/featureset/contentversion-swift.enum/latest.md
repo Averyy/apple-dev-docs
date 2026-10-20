@@ -1,7 +1,8 @@
 # latest
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The latest version of PaperKit, which supports all currently available features.
 
@@ -20,7 +21,8 @@ static var latest: FeatureSet.ContentVersion { get }
 
 ## See Also
 
-- [FeatureSet.ContentVersion.version1](featureset/contentversion-swift.enum/version1.md)
+### Choosing a version
+- [FeatureSet.ContentVersion.version1](./version1.md)
   The PaperKit version that supports markup.
 
 

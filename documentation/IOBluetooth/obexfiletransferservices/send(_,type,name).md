@@ -1,17 +1,22 @@
 # send(_:type:name:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Send data to a remote target
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func send(_ inData: Data!, type inType: String!, name inName: String!) -> OBEXError
+```
+
+```objc
+- (OBEXError) sendData:(NSData *) inData type:(NSString *) inType name:(NSString *) inName;
 ```
 
 #### Return Value

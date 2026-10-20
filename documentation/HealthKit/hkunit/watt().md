@@ -1,7 +1,8 @@
 # watt()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a HealthKit unit for measuring power in watts.
 
@@ -19,9 +20,14 @@ Returns a HealthKit unit for measuring power in watts.
 class func watt() -> Self
 ```
 
+```objc
++ (instancetype) wattUnit;
+```
+
 ## See Also
 
-- [class func wattUnit(with: HKMetricPrefix) -> Self](hkunit/wattunit(with:).md)
+### Constructing power units
+- [class func wattUnit(with: HKMetricPrefix) -> Self](./wattunit%28with%29.md)
   Returns a HealthKit unit for measuring power, using watt units with the provided prefix.
 
 

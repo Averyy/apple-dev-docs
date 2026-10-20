@@ -1,21 +1,26 @@
 # collectionViewContentSize
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width and height of the collection view’s contents.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var collectionViewContentSize: CGSize { get }
+```
+
+```objc
+@property (nonatomic, readonly) CGSize collectionViewContentSize;
 ```
 
 #### Return Value
@@ -26,11 +31,12 @@ The width and height of the collection view’s contents.
 
 Subclasses must override this property and use it to return the width and height of the collection view’s content. These values represent the width and height of all the content, not just the content that is currently visible. The collection view uses this information to configure its own content size for scrolling purposes.
 
-The default implementation of this method returns [`CGSizeZero`](https://developer.apple.com/documentation/coregraphics/cgsizezero).
+The default implementation of this method returns [`CGSizeZero`](../../CoreGraphics/cgsizezero.md).
 
 ## See Also
 
-- [var collectionView: UICollectionView?](uicollectionviewlayout/collectionview.md)
+### Getting the collection view information
+- [var collectionView: UICollectionView?](./collectionview.md)
   The collection view object currently using this layout object.
 
 

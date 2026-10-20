@@ -1,7 +1,8 @@
 # interactively
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Enable people to interactively dismiss the keyboard as part of the scroll operation.
 
@@ -25,11 +26,12 @@ The software keyboard’s position tracks the gesture that drives the scroll ope
 
 ## See Also
 
-- [static var automatic: ScrollDismissesKeyboardMode](scrolldismisseskeyboardmode/automatic.md)
+### Getting modes
+- [static var automatic: ScrollDismissesKeyboardMode](./automatic.md)
   Determine the mode automatically based on the surrounding context.
-- [static var immediately: ScrollDismissesKeyboardMode](scrolldismisseskeyboardmode/immediately.md)
+- [static var immediately: ScrollDismissesKeyboardMode](./immediately.md)
   Dismiss the keyboard as soon as scrolling starts.
-- [static var never: ScrollDismissesKeyboardMode](scrolldismisseskeyboardmode/never.md)
+- [static var never: ScrollDismissesKeyboardMode](./never.md)
   Never dismiss the keyboard automatically as a result of scrolling.
 
 

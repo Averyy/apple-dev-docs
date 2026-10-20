@@ -1,7 +1,8 @@
 # GKTurnBasedMatch.Outcome.none
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The participant doesn’t reach an outcome.
 
@@ -20,27 +21,32 @@ The participant doesn’t reach an outcome.
 case none
 ```
 
+```c
+GKTurnBasedMatchOutcomeNone
+```
+
 ## See Also
 
-- [GKTurnBasedMatch.Outcome.quit](gkturnbasedmatch/outcome/quit.md)
+### Outcomes
+- [GKTurnBasedMatch.Outcome.quit](./quit.md)
   The participant forfeits the match.
-- [GKTurnBasedMatch.Outcome.won](gkturnbasedmatch/outcome/won.md)
+- [GKTurnBasedMatch.Outcome.won](./won.md)
   The participant wins the match.
-- [GKTurnBasedMatch.Outcome.lost](gkturnbasedmatch/outcome/lost.md)
+- [GKTurnBasedMatch.Outcome.lost](./lost.md)
   The participant loses the match.
-- [GKTurnBasedMatch.Outcome.tied](gkturnbasedmatch/outcome/tied.md)
+- [GKTurnBasedMatch.Outcome.tied](./tied.md)
   The participant ties the match.
-- [GKTurnBasedMatch.Outcome.timeExpired](gkturnbasedmatch/outcome/timeexpired.md)
+- [GKTurnBasedMatch.Outcome.timeExpired](./timeexpired.md)
   The match ends because the time limit expires.
-- [GKTurnBasedMatch.Outcome.first](gkturnbasedmatch/outcome/first.md)
+- [GKTurnBasedMatch.Outcome.first](./first.md)
   The participant finishes in first place.
-- [GKTurnBasedMatch.Outcome.second](gkturnbasedmatch/outcome/second.md)
+- [GKTurnBasedMatch.Outcome.second](./second.md)
   The participant finishes in second place.
-- [GKTurnBasedMatch.Outcome.third](gkturnbasedmatch/outcome/third.md)
+- [GKTurnBasedMatch.Outcome.third](./third.md)
   The participant finishes in third place.
-- [GKTurnBasedMatch.Outcome.fourth](gkturnbasedmatch/outcome/fourth.md)
+- [GKTurnBasedMatch.Outcome.fourth](./fourth.md)
   The participant finishes in fourth place.
-- [GKTurnBasedMatch.Outcome.customRange](gkturnbasedmatch/outcome/customrange.md)
+- [GKTurnBasedMatch.Outcome.customRange](./customrange.md)
   The participant reaches a game-specific outcome.
 
 

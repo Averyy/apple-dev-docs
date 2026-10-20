@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.C
 
 # mlx.nn.Conv3d
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.Conv3d.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.Conv3d
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.Conv3d
-
 **class Conv3d(*in_channels: int*, *out_channels: int*, *kernel_size: int | tuple*, *stride: int | tuple = 1*, *padding: int | tuple = 0*, *dilation: int | tuple = 1*, *bias: bool = True*)**
 : Applies a 3-dimensional convolution over the multi-channel input image.
 The channels are expected to be last i.e. the input shape should be `NDHWC` where:
@@ -58,5 +31,3 @@ Default: `1`.
 output. Default: `True`
 
 Methods
-
-** Contents

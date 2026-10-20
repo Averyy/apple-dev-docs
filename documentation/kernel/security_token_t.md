@@ -1,14 +1,15 @@
 # security_token_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct security_token_t {
     ...
 } security_token_t;
@@ -17,7 +18,7 @@ typedef struct security_token_t {
 ## Topics
 
 ### Instance Properties
-- [val](security_token_t/1528986-val.md)
+- [val](./security_token_t/api-1528986-val.md)
 
 
 ---

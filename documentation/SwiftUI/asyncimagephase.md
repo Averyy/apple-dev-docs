@@ -1,7 +1,8 @@
 # AsyncImagePhase
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The current phase of the asynchronous image loading operation.
 
@@ -22,7 +23,7 @@ enum AsyncImagePhase
 
 #### Overview
 
-When you create an [`AsyncImage`](asyncimage.md) instance with the [`init(url:scale:transaction:content:)`](asyncimage/init(url:scale:transaction:content:).md) initializer, you define the appearance of the view using a `content` closure. SwiftUI calls the closure with a phase value at different points during the load operation to indicate the current state. Use the phase to decide what to draw. For example, you can draw the loaded image if it exists, a view that indicates an error, or a placeholder:
+When you create an [`AsyncImage`](./asyncimage.md) instance with the [`init(url:scale:transaction:content:)`](./asyncimage/init%28url,scale,transaction,content%29.md) initializer, you define the appearance of the view using a `content` closure. SwiftUI calls the closure with a phase value at different points during the load operation to indicate the current state. Use the phase to decide what to draw. For example, you can draw the loaded image if it exists, a view that indicates an error, or a placeholder:
 
 ```swift
 AsyncImage(url: URL(string: "https://example.com/icon.png")) { phase in
@@ -39,28 +40,29 @@ AsyncImage(url: URL(string: "https://example.com/icon.png")) { phase in
 ## Topics
 
 ### Getting load phases
-- [AsyncImagePhase.empty](asyncimagephase/empty.md)
+- [AsyncImagePhase.empty](./asyncimagephase/empty.md)
   No image is loaded.
-- [AsyncImagePhase.success(_:)](asyncimagephase/success(_:).md)
+- [AsyncImagePhase.success(_:)](./asyncimagephase/success%28_%29.md)
   An image successfully loaded.
-- [AsyncImagePhase.failure(_:)](asyncimagephase/failure(_:).md)
+- [AsyncImagePhase.failure(_:)](./asyncimagephase/failure%28_%29.md)
   An image failed to load with an error.
 ### Getting the image
-- [var image: Image?](asyncimagephase/image.md)
+- [var image: Image?](./asyncimagephase/image.md)
   The loaded image, if any.
 ### Getting the error
-- [var error: (any Error)?](asyncimagephase/error.md)
+- [var error: (any Error)?](./asyncimagephase/error.md)
   The error that occurred when attempting to load an image, if any.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AsyncImage](asyncimage.md)
+### Loading images asynchronously
+- [struct AsyncImage](./asyncimage.md)
   A view that asynchronously loads and displays an image.
 
 

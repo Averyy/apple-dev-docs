@@ -1,7 +1,8 @@
 # Cancel request
 
 **Framework**: Account Data Transfer  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Tells the server to stop processing an active request.
 
@@ -12,11 +13,11 @@ Tells the server to stop processing an active request.
 
 A cancellation request only succeeds if the request is currently in progress.
 
-##### Cancel a One Time Download
+##### Cancel a one-time download
 
 **Request**:
 
-```None
+```
 % curl -X POST \
   -H "Authorization: Bearer [ACCESS_TOKEN]" \
   -H "X-Apple-Transaction-Id: E3857B28-7FC4-41C8-AC54-08E121E26F59" \
@@ -27,18 +28,18 @@ A cancellation request only succeeds if the request is currently in progress.
 
 **Response**:
 
-```None
+```
 {
   "jobStatus": "cancelled",
   "status": "success"
 }
 ```
 
-##### Cancel a Recurring Download
+##### Cancel a recurring download
 
 **Request**:
 
-```None
+```
 % curl -X POST \
   -H "Authorization: Bearer [ACCESS_TOKEN]" \
   -H "X-Apple-Transaction-Id: E3857B28-7FC4-41C8-AC54-08E121E26F59" \
@@ -49,7 +50,7 @@ A cancellation request only succeeds if the request is currently in progress.
 
 **Response**:
 
-```None
+```
 {
   "jobStatus": "cancelled",
   "status": "success"
@@ -62,13 +63,25 @@ A cancellation request only succeeds if the request is currently in progress.
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `CancellationRequest`
+
 An object that identifies the request to cancel.
+
+## Responses
+
+- `200` OK (`CancellationResponse`, `application/json`)
+- `400` Bad Request
+- `401` Unauthorized
+- `403` Forbidden
+- `500` Internal Server Error
 
 ## See Also
 
-- [object CancellationRequest](cancellationrequest.md)
+### Cancellation
+- [object CancellationRequest](./cancellationrequest.md)
   An object that identifies a one-time request, or an individual instance of a recurring request, to cancel.
-- [object CancellationResponse](cancellationresponse.md)
+- [object CancellationResponse](./cancellationresponse.md)
   An object that describes the outcome of canceling a download request.
 
 

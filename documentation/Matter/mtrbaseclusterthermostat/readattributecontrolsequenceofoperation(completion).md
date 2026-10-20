@@ -1,7 +1,8 @@
 # readAttributeControlSequenceOfOperation(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeControlSequenceOfOperation(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeControlSequenceOfOperation() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeControlSequenceOfOperationWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

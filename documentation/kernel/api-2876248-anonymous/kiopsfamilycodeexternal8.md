@@ -1,14 +1,15 @@
 # kIOPSFamilyCodeExternal8
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 kIOPSFamilyCodeExternal8 = iokit_family_err(sub_iokit_pmu, 8)
 ```
 

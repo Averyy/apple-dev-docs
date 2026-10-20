@@ -1,7 +1,8 @@
 # cmAbortWriteAccess
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Cancel the current write attempt.
 

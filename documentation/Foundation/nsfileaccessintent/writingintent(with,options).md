@@ -1,7 +1,8 @@
 # writingIntent(with:options:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a file access intent object for writing to the given URL with the provided options.
 
@@ -20,24 +21,30 @@ Returns a file access intent object for writing to the given URL with the provid
 class func writingIntent(with url: URL, options: NSFileCoordinator.WritingOptions = []) -> Self
 ```
 
+```objc
++ (instancetype) writingIntentWithURL:(NSURL *) url options:(NSFileCoordinatorWritingOptions) options;
+```
+
 #### Return Value
 
 A newly instantiated and configured file access intent object.
 
 #### Discussion
 
-When calling a file coordinator’s [`coordinate(with:queue:byAccessor:)`](nsfilecoordinator/coordinate(with:queue:byaccessor:).md) method, you pass an array of file access intent objects. Each intent object represents a specific read or write operation on a single document or directory. Use `writingIntentWithURL:options:` to create an intent object suitable for writing.
+When calling a file coordinator’s [`coordinate(with:queue:byAccessor:)`](../nsfilecoordinator/coordinate%28with,queue,byaccessor%29.md) method, you pass an array of file access intent objects. Each intent object represents a specific read or write operation on a single document or directory. Use `writingIntentWithURL:options:` to create an intent object suitable for writing.
 
 ## Parameters
 
 - `url`: The URL of the document you intend to write to.
-- `options`: The coordinated writing options. For a list of valid values, see [`NSFileCoordinator.WritingOptions`](nsfilecoordinator/writingoptions.md) in the [`NSFileCoordinator`](nsfilecoordinator.md).
+- `options`: The coordinated writing options. For a list of valid values, see [`NSFileCoordinator.WritingOptions`](../nsfilecoordinator/writingoptions.md) in the [`NSFileCoordinator`](../nsfilecoordinator.md).
 
 ## See Also
 
-- [func coordinate(with: [NSFileAccessIntent], queue: OperationQueue, byAccessor: ((any Error)?) -> Void)](nsfilecoordinator/coordinate(with:queue:byaccessor:).md)
+### Related Documentation
+- [func coordinate(with: [NSFileAccessIntent], queue: OperationQueue, byAccessor: ((any Error)?) -> Void)](../nsfilecoordinator/coordinate%28with,queue,byaccessor%29.md)
   Performs a number of coordinated-read or -write operations asynchronously.
-- [class func readingIntent(with: URL, options: NSFileCoordinator.ReadingOptions) -> Self](nsfileaccessintent/readingintent(with:options:).md)
+### Creating a File Access Intent
+- [class func readingIntent(with: URL, options: NSFileCoordinator.ReadingOptions) -> Self](./readingintent%28with,options%29.md)
   Returns a file access intent object for reading the given URL with the provided options.
 
 

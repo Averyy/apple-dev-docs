@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Sensitive Content Analysis  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a content type from a raw string value.
 

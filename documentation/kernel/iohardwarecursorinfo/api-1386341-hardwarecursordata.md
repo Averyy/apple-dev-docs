@@ -1,7 +1,8 @@
 # hardwareCursorData
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Buffer to receive the converted cursor data.
 
@@ -10,7 +11,7 @@ Buffer to receive the converted cursor data.
 
 ## Declaration
 
-```swift
+```c
 UInt8 *hardwareCursorData;
 ```
 

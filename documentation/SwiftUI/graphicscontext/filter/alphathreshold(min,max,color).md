@@ -1,7 +1,8 @@
 # alphaThreshold(min:max:color:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a filter that replaces each pixel with alpha components within a range by a constant color, or transparency otherwise.
 
@@ -32,7 +33,8 @@ A filter that applies a threshold to alpha values.
 
 ## See Also
 
-- [static var luminanceToAlpha: GraphicsContext.Filter](graphicscontext/filter/luminancetoalpha.md)
+### Adjusting opacity
+- [static var luminanceToAlpha: GraphicsContext.Filter](./luminancetoalpha.md)
   Returns a filter that sets the opacity of each pixel based on its luminance.
 
 

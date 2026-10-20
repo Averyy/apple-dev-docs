@@ -1,14 +1,15 @@
 # ml_timer_evaluate
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void ml_timer_evaluate(void);
 ```
 

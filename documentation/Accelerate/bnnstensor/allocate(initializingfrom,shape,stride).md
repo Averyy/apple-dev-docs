@@ -1,7 +1,8 @@
 # allocate(initializingFrom:shape:stride:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a `BNNSTensor` populated with a **copy** of the values in `source`.
 

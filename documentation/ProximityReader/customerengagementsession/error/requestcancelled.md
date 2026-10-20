@@ -1,7 +1,8 @@
 # CustomerEngagementSession.Error.requestCancelled
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating the request is cancelled.
 

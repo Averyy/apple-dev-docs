@@ -1,7 +1,8 @@
 # MeshDeformerOptions.Cadence.onDemand
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Applies the custom deformer function only when you request it. You can explicitly request the deformer function to be called by setting new input. Like all other deformers, the deformer updates again if a previous deformer in the `MeshDeformationStack` updates.
 
@@ -21,7 +22,8 @@ case onDemand
 
 ## See Also
 
-- [MeshDeformerOptions.Cadence.everyFrame](meshdeformeroptions/cadence-swift.enum/everyframe.md)
+### Choosing an update cadence
+- [MeshDeformerOptions.Cadence.everyFrame](./everyframe.md)
   Applies the custom deformer function automatically, every frame.
 
 

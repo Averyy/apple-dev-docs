@@ -1,9 +1,10 @@
 # init(historyTokens:observedModels:authors:modelContainer:isolation:)
 
 **Framework**: SwiftData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Creates a history observer that reports changes through its observable [`eventCounter`](historyobserver/eventcounter.md) property.
+Creates a history observer that reports changes through its observable [`eventCounter`](./eventcounter.md) property.
 
 **Availability**:
 - iOS 27.0+
@@ -22,9 +23,9 @@ convenience init(historyTokens: [String : any HistoryToken]? = nil, observedMode
 
 #### Discussion
 
-Use this initializer when you want to observe history changes via SwiftUI’s observation system or by reading [`eventCounter`](historyobserver/eventcounter.md) directly.
+Use this initializer when you want to observe history changes via SwiftUI’s observation system or by reading [`eventCounter`](./eventcounter.md) directly.
 
-> **Note**: An error if the observer fails to fetch the initial history tokens.
+> **Throws**: An error if the observer fails to fetch the initial history tokens.
 
 ## Parameters
 

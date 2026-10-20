@@ -1,7 +1,8 @@
 # init(configurationType:)
 
 **Framework**: PaperKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a default shape for a category of shape.
 

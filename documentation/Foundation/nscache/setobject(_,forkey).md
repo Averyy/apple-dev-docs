@@ -1,7 +1,8 @@
 # setObject(_:forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value of the specified key in the cache.
 
@@ -20,6 +21,10 @@ Sets the value of the specified key in the cache.
 func setObject(_ obj: ObjectType, forKey key: KeyType)
 ```
 
+```objc
+- (void) setObject:(ObjectType) obj forKey:(KeyType) key;
+```
+
 #### Discussion
 
 Unlike an `NSMutableDictionary` object, a cache does not copy the key objects that are put into it.
@@ -31,11 +36,12 @@ Unlike an `NSMutableDictionary` object, a cache does not copy the key objects th
 
 ## See Also
 
-- [func setObject(ObjectType, forKey: KeyType, cost: Int)](nscache/setobject(_:forkey:cost:).md)
+### Adding and Removing Cached Values
+- [func setObject(ObjectType, forKey: KeyType, cost: Int)](./setobject%28_,forkey,cost%29.md)
   Sets the value of the specified key in the cache, and associates the key-value pair with the specified cost.
-- [func removeObject(forKey: KeyType)](nscache/removeobject(forkey:).md)
+- [func removeObject(forKey: KeyType)](./removeobject%28forkey%29.md)
   Removes the value of the specified key in the cache.
-- [func removeAllObjects()](nscache/removeallobjects.md)
+- [func removeAllObjects()](./removeallobjects%28%29.md)
   Empties the cache.
 
 

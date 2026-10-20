@@ -1,7 +1,8 @@
 # phone
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of enum schemas in the phone domain.
 
@@ -17,6 +18,8 @@ The collection of enum schemas in the phone domain.
 ```swift
 static var phone: some AppSchema.PhoneEnum { get }
 ```
+
+Available when `Self` is `AppSchema.Enum`.
 
 
 ---

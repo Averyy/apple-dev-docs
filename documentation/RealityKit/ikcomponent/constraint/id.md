@@ -1,7 +1,8 @@
 # id
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 ID of the constraint, that is unique within the solver instance.
 

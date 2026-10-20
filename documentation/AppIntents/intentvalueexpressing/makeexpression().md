@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates an intent value expression that represents this value.
@@ -28,6 +29,12 @@ An intent value expression representing this value.
 #### Discussion
 
 This method creates an expression that the system can evaluate later to produce an intent value container.
+
+## Default Implementations
+
+### IntentValueExpressing Implementations
+- [func makeExpression() -> IntentValueExpression](./makeexpression%28%29-7eu4s.md)
+  Creates an intent value expression that represents this value.
 
 
 ---

@@ -1,7 +1,8 @@
 # SnapshotData.SnapshotReason
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The reason for a background snapshot task.
 
@@ -17,30 +18,31 @@ enum SnapshotReason
 ## Topics
 
 ### Getting the snapshot reasons
-- [SnapshotData.SnapshotReason.appBackgrounded](snapshotdata/snapshotreason/appbackgrounded.md)
+- [SnapshotData.SnapshotReason.appBackgrounded](./snapshotreason/appbackgrounded.md)
   The app transitioned from the foreground to the background.
-- [SnapshotData.SnapshotReason.appScheduled](snapshotdata/snapshotreason/appscheduled.md)
+- [SnapshotData.SnapshotReason.appScheduled](./snapshotreason/appscheduled.md)
   The app scheduled this snapshot.
-- [SnapshotData.SnapshotReason.complicationUpdate](snapshotdata/snapshotreason/complicationupdate.md)
+- [SnapshotData.SnapshotReason.complicationUpdate](./snapshotreason/complicationupdate.md)
   The app updated the complication timeline.
-- [SnapshotData.SnapshotReason.prelaunch](snapshotdata/snapshotreason/prelaunch.md)
+- [SnapshotData.SnapshotReason.prelaunch](./snapshotreason/prelaunch.md)
   The system needs a snapshot for the dock, but the app has not been launched yet.
-- [SnapshotData.SnapshotReason.returnToDefaultState](snapshotdata/snapshotreason/returntodefaultstate.md)
+- [SnapshotData.SnapshotReason.returnToDefaultState](./snapshotreason/returntodefaultstate.md)
   It has been more than an hour since the user’s last interaction with the app; the app’s snapshot should return to its default state.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let identifier: String?](snapshotdata/identifier.md)
+### Getting the data
+- [let identifier: String?](./identifier.md)
   The identifier associated with this snapshot request.
-- [let reason: SnapshotData.SnapshotReason](snapshotdata/reason.md)
+- [let reason: SnapshotData.SnapshotReason](./reason.md)
   The reason for a background snapshot task.
 
 

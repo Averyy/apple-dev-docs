@@ -1,7 +1,8 @@
 # ARSCNDebugOptions
 
 **Framework**: ARKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Options for drawing overlay content to aid debugging of AR tracking in a SceneKit view.
 
@@ -15,9 +16,13 @@ Options for drawing overlay content to aid debugging of AR tracking in a SceneKi
 typealias ARSCNDebugOptions = SCNDebugOptions
 ```
 
+```c
+typedef SCNDebugOptions ARSCNDebugOptions;
+```
+
 #### Discussion
 
-To use these debugging overlays, add them to the option set in the view’s [`debugOptions`](https://developer.apple.com/documentation/scenekit/scnscenerenderer/debugoptions) property (inherited from the [`SCNView`](https://developer.apple.com/documentation/scenekit/scnview) class).
+To use these debugging overlays, add them to the option set in the view’s [`debugOptions`](../SceneKit/scnscenerenderer/debugoptions.md) property (inherited from the [`SCNView`](../SceneKit/scnview.md) class).
 
 
 ---

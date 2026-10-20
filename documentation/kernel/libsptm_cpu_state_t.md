@@ -1,14 +1,15 @@
 # libsptm_cpu_state_t
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 typedef enum libsptm_cpu_state_t : uint8_t {
     ...
 } libsptm_cpu_state_t;
@@ -17,8 +18,8 @@ typedef enum libsptm_cpu_state_t : uint8_t {
 ## Topics
 
 ### Constants
-- [CPUSTATE_PANIC_SPIN](libsptm_cpu_state_t/cpustate_panic_spin.md)
-- [CPUSTATE_SPTM_INTERRUPTED](libsptm_cpu_state_t/cpustate_sptm_interrupted.md)
+- [CPUSTATE_PANIC_SPIN](./libsptm_cpu_state_t/cpustate_panic_spin.md)
+- [CPUSTATE_SPTM_INTERRUPTED](./libsptm_cpu_state_t/cpustate_sptm_interrupted.md)
 
 
 ---

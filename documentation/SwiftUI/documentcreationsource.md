@@ -1,7 +1,8 @@
 # DocumentCreationSource
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Describes the source used to create a new document.
 
@@ -20,7 +21,7 @@ struct DocumentCreationSource
 
 #### Overview
 
-On iOS, you can declare custom creation sources and use them in [`NewDocumentButton`](newdocumentbutton.md).
+On iOS, you can declare custom creation sources and use them in [`NewDocumentButton`](./newdocumentbutton.md).
 
 ```swift
 extension DocumentCreationSource {
@@ -37,7 +38,7 @@ DocumentGroupLaunchScene("Documents") {
 }
 ```
 
-When a document is created, you can retrieve its source from [`URLDocumentConfiguration`](urldocumentconfiguration.md) or [`FileDocumentConfiguration`](filedocumentconfiguration.md):
+When a document is created, you can retrieve its source from [`URLDocumentConfiguration`](./urldocumentconfiguration.md) or [`FileDocumentConfiguration`](./filedocumentconfiguration.md):
 
 ```swift
 DocumentGroup(newDocument: { MyDocument() }) { configuration in
@@ -50,40 +51,41 @@ DocumentGroup(newDocument: { MyDocument() }) { configuration in
 ## Topics
 
 ### Creating a source
-- [init(id: String)](documentcreationsource/init(id:).md)
+- [init(id: String)](./documentcreationsource/init%28id%29.md)
   Creates a document creation source with the given identifier.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct DocumentGroupLaunchScene](documentgrouplaunchscene.md)
+### Configuring the document launch experience
+- [struct DocumentGroupLaunchScene](./documentgrouplaunchscene.md)
   A launch scene for document-based applications.
-- [func documentLaunchTitle(_:)](scene/documentlaunchtitle(_:).md)
+- [func documentLaunchTitle(_:)](./scene/documentlaunchtitle%28_%29.md)
   Sets the title displayed on the document launch card.
-- [func documentLaunchSubtitle(_:)](scene/documentlaunchsubtitle(_:).md)
+- [func documentLaunchSubtitle(_:)](./scene/documentlaunchsubtitle%28_%29.md)
   Sets the subtitle displayed beneath the title on the document launch card.
-- [struct DocumentLaunchView](documentlaunchview.md)
+- [struct DocumentLaunchView](./documentlaunchview.md)
   A view to present when launching document-related user experience.
-- [func documentLaunchTitle(_:)](view/documentlaunchtitle(_:).md)
+- [func documentLaunchTitle(_:)](./view/documentlaunchtitle%28_%29.md)
   Sets the title displayed on the document launch card.
-- [func documentLaunchSubtitle(_:)](view/documentlaunchsubtitle(_:).md)
+- [func documentLaunchSubtitle(_:)](./view/documentlaunchsubtitle%28_%29.md)
   Sets the subtitle displayed beneath the title on the document launch card.
-- [func documentBrowserContextMenu(([URL]?) -> some View) -> some View](view/documentbrowsercontextmenu(_:).md)
+- [func documentBrowserContextMenu(([URL]?) -> some View) -> some View](./view/documentbrowsercontextmenu%28_%29.md)
   Adds to a `DocumentLaunchView` actions that accept a list of selected files as their parameter.
-- [struct DocumentLaunchGeometryProxy](documentlaunchgeometryproxy.md)
+- [struct DocumentLaunchGeometryProxy](./documentlaunchgeometryproxy.md)
   A proxy for access to the frame of the scene and its title view.
-- [struct DefaultDocumentGroupLaunchActions](defaultdocumentgrouplaunchactions.md)
+- [struct DefaultDocumentGroupLaunchActions](./defaultdocumentgrouplaunchactions.md)
   The default actions for the document group launch scene and the document launch view.
-- [struct NewDocumentButton](newdocumentbutton.md)
+- [struct NewDocumentButton](./newdocumentbutton.md)
   A button that creates and opens new documents.
-- [struct DefaultNewDocumentButtonLabel](defaultnewdocumentbuttonlabel.md)
+- [struct DefaultNewDocumentButtonLabel](./defaultnewdocumentbuttonlabel.md)
   The default label used for a new document button.
 
 

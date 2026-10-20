@@ -1,7 +1,8 @@
 # NEOnDemandRuleAction.connect
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Start the VPN connection for every connection attempt.
 
@@ -19,13 +20,18 @@ Start the VPN connection for every connection attempt.
 case connect
 ```
 
+```c
+NEOnDemandRuleActionConnect
+```
+
 ## See Also
 
-- [NEOnDemandRuleAction.disconnect](neondemandruleaction/disconnect.md)
+### Rule Actions
+- [NEOnDemandRuleAction.disconnect](./disconnect.md)
   Do not start the VPN connection, and disconnect the VPN connection if it is not currently disconnected.
-- [NEOnDemandRuleAction.evaluateConnection](neondemandruleaction/evaluateconnection.md)
+- [NEOnDemandRuleAction.evaluateConnection](./evaluateconnection.md)
   Start the VPN after evaluating the destination host being accessed against the rule’s parameters.
-- [NEOnDemandRuleAction.ignore](neondemandruleaction/ignore.md)
+- [NEOnDemandRuleAction.ignore](./ignore.md)
   Do not start the VPN connection, but do not disconnect it if it is currently connected.
 
 

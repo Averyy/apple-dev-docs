@@ -1,7 +1,8 @@
 # background(content:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the background contents for the hosting configuration’s enclosing cell.
 
@@ -37,7 +38,8 @@ UIHostingConfiguration {
 
 ## See Also
 
-- [func background<S>(S) -> UIHostingConfiguration<Content, _UIHostingConfigurationBackgroundView<S>>](uihostingconfiguration/background(_:).md)
+### Setting the background
+- [func background<S>(S) -> UIHostingConfiguration<Content, _UIHostingConfigurationBackgroundView<S>>](./background%28_%29.md)
   Sets the background contents for the hosting configuration’s enclosing cell.
 
 

@@ -1,14 +1,15 @@
 # task_platform_idle_wakeups
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 uint64_t task_platform_idle_wakeups;
 ```
 

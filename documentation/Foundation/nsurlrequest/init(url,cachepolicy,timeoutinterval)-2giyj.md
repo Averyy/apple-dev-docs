@@ -1,7 +1,8 @@
 # init(url:cachePolicy:timeoutInterval:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a URL request with the specified URL, cache policy, and timeout values.
 
@@ -20,6 +21,10 @@ Creates a URL request with the specified URL, cache policy, and timeout values.
 init(url URL: URL, cachePolicy: NSURLRequest.CachePolicy, timeoutInterval: TimeInterval)
 ```
 
+```objc
+- (instancetype) initWithURL:(NSURL *) URL cachePolicy:(NSURLRequestCachePolicy) cachePolicy timeoutInterval:(NSTimeInterval) timeoutInterval;
+```
+
 #### Return Value
 
 The initialized URL request.
@@ -36,7 +41,8 @@ This is the designated initializer for `NSURLRequest`.
 
 ## See Also
 
-- [convenience init(url: URL)](nsurlrequest/init(url:)-7dmpd.md)
+### Creating requests
+- [convenience init(url: URL)](./init%28url%29-7dmpd.md)
   Creates a URL request for a specified URL.
 
 

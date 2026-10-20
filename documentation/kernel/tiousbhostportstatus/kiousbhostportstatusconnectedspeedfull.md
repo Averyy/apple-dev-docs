@@ -1,7 +1,8 @@
 # kIOUSBHostPortStatusConnectedSpeedFull
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The full connected speed.
 
@@ -10,7 +11,7 @@ The full connected speed.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBHostPortStatusConnectedSpeedFull = (kIOUSBHostConnectionSpeedFull << IOUSBHostFamilyBitRangePhase(8, 10))
 ```
 

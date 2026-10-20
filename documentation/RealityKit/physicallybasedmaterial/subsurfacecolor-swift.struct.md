@@ -1,7 +1,8 @@
 # PhysicallyBasedMaterial.SubsurfaceColor
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -20,27 +21,28 @@ struct SubsurfaceColor
 ## Topics
 
 ### Creating a subsurface color
-- [init(color: CGColor, texture: PhysicallyBasedMaterial.Texture?)](physicallybasedmaterial/subsurfacecolor-swift.struct/init(color:texture:).md)
+- [init(color: CGColor, texture: PhysicallyBasedMaterial.Texture?)](./subsurfacecolor-swift.struct/init%28color,texture%29.md)
 ### Accessing material keys
-- [static let colorKey: String](physicallybasedmaterial/subsurfacecolor-swift.struct/colorkey.md)
-- [static let textureKey: String](physicallybasedmaterial/subsurfacecolor-swift.struct/texturekey.md)
+- [static let colorKey: String](./subsurfacecolor-swift.struct/colorkey.md)
+- [static let textureKey: String](./subsurfacecolor-swift.struct/texturekey.md)
 ### Instance Properties
-- [var color: CGColor](physicallybasedmaterial/subsurfacecolor-swift.struct/color.md)
-- [var texture: PhysicallyBasedMaterial.Texture?](physicallybasedmaterial/subsurfacecolor-swift.struct/texture.md)
+- [var color: CGColor](./subsurfacecolor-swift.struct/color.md)
+- [var texture: PhysicallyBasedMaterial.Texture?](./subsurfacecolor-swift.struct/texture.md)
 ### Type Properties
-- [static let textureSemantic: TextureResource.Semantic](physicallybasedmaterial/subsurfacecolor-swift.struct/texturesemantic.md)
+- [static let textureSemantic: TextureResource.Semantic](./subsurfacecolor-swift.struct/texturesemantic.md)
 
 ## See Also
 
-- [var subsurfaceColor: PhysicallyBasedMaterial.SubsurfaceColor](physicallybasedmaterial/subsurfacecolor-swift.property.md)
-- [var subsurfaceWeight: PhysicallyBasedMaterial.SubsurfaceWeight](physicallybasedmaterial/subsurfaceweight-swift.property.md)
-- [PhysicallyBasedMaterial.SubsurfaceWeight](physicallybasedmaterial/subsurfaceweight-swift.struct.md)
-- [var subsurfaceRadius: PhysicallyBasedMaterial.SubsurfaceRadius](physicallybasedmaterial/subsurfaceradius-swift.property.md)
-- [PhysicallyBasedMaterial.SubsurfaceRadius](physicallybasedmaterial/subsurfaceradius-swift.struct.md)
-- [var subsurfaceRadiusScale: PhysicallyBasedMaterial.SubsurfaceRadiusScale](physicallybasedmaterial/subsurfaceradiusscale-swift.property.md)
-- [PhysicallyBasedMaterial.SubsurfaceRadiusScale](physicallybasedmaterial/subsurfaceradiusscale-swift.struct.md)
-- [var subsurfaceScatterAnisotropy: PhysicallyBasedMaterial.SubsurfaceScatterAnisotropy](physicallybasedmaterial/subsurfacescatteranisotropy-swift.property.md)
-- [PhysicallyBasedMaterial.SubsurfaceScatterAnisotropy](physicallybasedmaterial/subsurfacescatteranisotropy-swift.struct.md)
+### Configuring subsurface scattering
+- [var subsurfaceColor: PhysicallyBasedMaterial.SubsurfaceColor](./subsurfacecolor-swift.property.md)
+- [var subsurfaceWeight: PhysicallyBasedMaterial.SubsurfaceWeight](./subsurfaceweight-swift.property.md)
+- [PhysicallyBasedMaterial.SubsurfaceWeight](./subsurfaceweight-swift.struct.md)
+- [var subsurfaceRadius: PhysicallyBasedMaterial.SubsurfaceRadius](./subsurfaceradius-swift.property.md)
+- [PhysicallyBasedMaterial.SubsurfaceRadius](./subsurfaceradius-swift.struct.md)
+- [var subsurfaceRadiusScale: PhysicallyBasedMaterial.SubsurfaceRadiusScale](./subsurfaceradiusscale-swift.property.md)
+- [PhysicallyBasedMaterial.SubsurfaceRadiusScale](./subsurfaceradiusscale-swift.struct.md)
+- [var subsurfaceScatterAnisotropy: PhysicallyBasedMaterial.SubsurfaceScatterAnisotropy](./subsurfacescatteranisotropy-swift.property.md)
+- [PhysicallyBasedMaterial.SubsurfaceScatterAnisotropy](./subsurfacescatteranisotropy-swift.struct.md)
 
 
 ---

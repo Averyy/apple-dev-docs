@@ -1,7 +1,8 @@
 # unload(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Unloads the specified extension context.
 
@@ -18,13 +19,18 @@ Unloads the specified extension context.
 func unload(_ extensionContext: WKWebExtensionContext) throws
 ```
 
+```objc
+- (BOOL) unloadExtensionContext:(WKWebExtensionContext *) extensionContext error:(NSError **) error;
+```
+
 #### Discussion
 
 Causes the context to stop running.
 
 ## See Also
 
-- [func unload(WKWebExtensionContext) throws](wkwebextensioncontroller/unload(_:).md)
+### Related Documentation
+- [func unload(WKWebExtensionContext) throws](./unload%28_%29.md)
   Unloads the specified extension context.
 
 

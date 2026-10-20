@@ -1,7 +1,8 @@
 # lowBattery
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 True when accessory deems its charge to be too low to function properly
 

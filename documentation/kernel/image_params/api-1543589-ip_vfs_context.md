@@ -1,14 +1,15 @@
 # ip_vfs_context
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 struct vfs_context *ip_vfs_context;
 ```
 

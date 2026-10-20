@@ -1,7 +1,8 @@
 # maximum(_:_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the greater of the two given values.
 
@@ -39,7 +40,7 @@ Double.maximum(.nan, .nan)
 // nan
 ```
 
-The `maximum` method implements the `maxNum` operation defined by the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
+The `maximum` method implements the `maxNum` operation defined by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 
 ## Parameters
 

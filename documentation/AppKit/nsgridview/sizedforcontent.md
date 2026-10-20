@@ -1,7 +1,8 @@
 # sizedForContent
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default value for row and column sizes.
 
@@ -14,21 +15,26 @@ The default value for row and column sizes.
 class let sizedForContent: CGFloat
 ```
 
+```c
+extern const CGFloat NSGridViewSizeForContent;
+```
+
 #### Discussion
 
 This constant indicates that a row or column should automatically fit the content views.
 
 ## See Also
 
-- [var columnSpacing: CGFloat](nsgridview/columnspacing.md)
+### Managing Grid Spacing and Alignment
+- [var columnSpacing: CGFloat](./columnspacing.md)
   The column spacing for the grid view.
-- [var rowSpacing: CGFloat](nsgridview/rowspacing.md)
+- [var rowSpacing: CGFloat](./rowspacing.md)
   The row spacing for the grid view.
-- [var rowAlignment: NSGridRow.Alignment](nsgridview/rowalignment.md)
+- [var rowAlignment: NSGridRow.Alignment](./rowalignment.md)
   The row alignment for the grid view.
-- [var xPlacement: NSGridCell.Placement](nsgridview/xplacement.md)
+- [var xPlacement: NSGridCell.Placement](./xplacement.md)
   The placement of the cell within the grid column.
-- [var yPlacement: NSGridCell.Placement](nsgridview/yplacement.md)
+- [var yPlacement: NSGridCell.Placement](./yplacement.md)
   The placement of the cell within the grid row.
 
 

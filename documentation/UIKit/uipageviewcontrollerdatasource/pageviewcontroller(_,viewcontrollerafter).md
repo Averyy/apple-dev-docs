@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the view controller after the given view controller.
@@ -10,13 +11,17 @@ Returns the view controller after the given view controller.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?
+```
+
+```objc
+- (UIViewController *) pageViewController:(UIPageViewController *) pageViewController viewControllerAfterViewController:(UIViewController *) viewController;
 ```
 
 #### Return Value
@@ -30,7 +35,8 @@ The view controller after the given view controller, or `nil` to indicate that t
 
 ## See Also
 
-- [func pageViewController(UIPageViewController, viewControllerBefore: UIViewController) -> UIViewController?](uipageviewcontrollerdatasource/pageviewcontroller(_:viewcontrollerbefore:).md)
+### Providing View Controllers
+- [func pageViewController(UIPageViewController, viewControllerBefore: UIViewController) -> UIViewController?](./pageviewcontroller%28_,viewcontrollerbefore%29.md)
   Returns the view controller before the given view controller.
 
 

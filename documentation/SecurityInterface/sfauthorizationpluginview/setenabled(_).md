@@ -1,7 +1,8 @@
 # setEnabled(_:)
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enables or disables the controls in the authorization plug-in’s view.
 
@@ -14,9 +15,13 @@ Enables or disables the controls in the authorization plug-in’s view.
 func setEnabled(_ inEnabled: Bool)
 ```
 
+```objc
+- (void) setEnabled:(BOOL) inEnabled;
+```
+
 #### Discussion
 
-When the authorization plug-in calls this method, the subclass should call [`setEnabled(_:)`](sfauthorizationpluginview/setenabled(_:).md) on the controls that are in its view.
+When the authorization plug-in calls this method, the subclass should call [`setEnabled(_:)`](./setenabled%28_%29.md) on the controls that are in its view.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # setLength
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Sets the length of the data in the buffer.
 
@@ -10,7 +11,7 @@ Sets the length of the data in the buffer.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void setLength(vm_size_t length);
 ```
 
@@ -24,9 +25,10 @@ At creation time, the system sets the buffer’s length to its capacity. Use thi
 
 ## See Also
 
-- [- getCapacity](iobuffermemorydescriptor/1574844-getcapacity.md)
+### Configuring the Descriptor
+- [- getCapacity](./api-1574844-getcapacity.md)
   Returns the number of bytes the buffer is capable of holding. 
-- [- setDirection](iobuffermemorydescriptor/1574826-setdirection.md)
+- [- setDirection](./api-1574826-setdirection.md)
   Changes the direction associated with the buffer’s memory transfers.
 
 

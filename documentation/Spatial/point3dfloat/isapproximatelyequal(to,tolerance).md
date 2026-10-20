@@ -1,7 +1,8 @@
 # isApproximatelyEqual(to:tolerance:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether two points are equal within a specified tolerance.
 

@@ -1,7 +1,8 @@
 # CVImageTransferFunction.smpte_ST_428_1
 
 **Framework**: Core Video  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The transfer function for digital cinema distribution master.
 

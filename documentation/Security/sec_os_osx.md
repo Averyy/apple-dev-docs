@@ -1,7 +1,8 @@
 # SEC_OS_OSX
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var SEC_OS_OSX: Int32 { get }
+```
+
+```c
+#define SEC_OS_OSX
 ```
 
 

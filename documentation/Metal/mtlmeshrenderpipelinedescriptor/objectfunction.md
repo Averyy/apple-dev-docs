@@ -1,7 +1,8 @@
 # objectFunction
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var objectFunction: (any MTLFunction)? { get set }
+```
+
+```objc
+@property (nonatomic, strong, readwrite, nullable) id<MTLFunction> objectFunction;
 ```
 
 

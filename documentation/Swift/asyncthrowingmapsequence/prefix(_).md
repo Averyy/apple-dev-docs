@@ -1,7 +1,8 @@
 # prefix(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an asynchronous sequence, up to the specified maximum length, containing the initial elements of the base asynchronous sequence.
 

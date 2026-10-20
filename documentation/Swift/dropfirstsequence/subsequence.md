@@ -1,7 +1,8 @@
 # DropFirstSequence.SubSequence
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 8.0+
@@ -17,6 +18,8 @@
 ```swift
 typealias SubSequence = AnySequence<DropFirstSequence<Base>.Element>
 ```
+
+Available when `Base` conforms to `Sequence`.
 
 
 ---

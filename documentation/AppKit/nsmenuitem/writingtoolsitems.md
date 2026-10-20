@@ -1,7 +1,8 @@
 # writingToolsItems
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An array of standard menu items related to Writing Tools. Each call to this method returns an array of newly allocated instances of NSMenuItem.
 
@@ -12,6 +13,10 @@ An array of standard menu items related to Writing Tools. Each call to this meth
 
 ```swift
 class var writingToolsItems: [NSMenuItem] { get }
+```
+
+```objc
+@property (class, copy, readonly) NSArray<NSMenuItem *> * writingToolsItems;
 ```
 
 

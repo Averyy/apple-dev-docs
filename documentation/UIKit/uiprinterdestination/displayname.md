@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A human-readable string that displays the name of a printer.
 
@@ -17,15 +18,20 @@ A human-readable string that displays the name of a printer.
 var displayName: String? { get set }
 ```
 
+```objc
+@property (copy, readwrite, nullable) NSString * displayName;
+```
+
 #### Discussion
 
-This property contains a name that describes the printer’s manufacturer and model number to display in the app’s user interface. If `nil`, the [`txtRecord`](uiprinterdestination/txtrecord.md) property can produce the display name.
+This property contains a name that describes the printer’s manufacturer and model number to display in the app’s user interface. If `nil`, the [`txtRecord`](./txtrecord.md) property can produce the display name.
 
 ## See Also
 
-- [var txtRecord: Data?](uiprinterdestination/txtrecord.md)
+### Describing the printer
+- [var txtRecord: Data?](./txtrecord.md)
   A DNS TXT record to identify the printer.
-- [var url: URL](uiprinterdestination/url.md)
+- [var url: URL](./url.md)
   The address of the printer.
 
 

@@ -1,7 +1,8 @@
 # MPSGraphScatterMode.max
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Maximum
 
@@ -17,6 +18,10 @@ Maximum
 
 ```swift
 case max
+```
+
+```c
+MPSGraphScatterModeMax
 ```
 
 

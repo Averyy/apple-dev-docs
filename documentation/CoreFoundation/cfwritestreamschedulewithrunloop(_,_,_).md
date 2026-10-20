@@ -1,18 +1,19 @@
 # CFWriteStreamScheduleWithRunLoop(_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Schedules a stream into a run loop.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Schedules a stream into a run loop.
 func CFWriteStreamScheduleWithRunLoop(_ stream: CFWriteStream!, _ runLoop: CFRunLoop!, _ runLoopMode: CFRunLoopMode!)
 ```
 
+```c
+extern void CFWriteStreamScheduleWithRunLoop(CFWriteStreamRef stream, CFRunLoopRef runLoop, CFRunLoopMode runLoopMode);
+```
+
 #### Discussion
 
-After scheduling `stream` into a run loop, its client (set with [`CFWriteStreamSetClient(_:_:_:_:)`](cfwritestreamsetclient(_:_:_:_:).md)) is notified when various events happen with the stream, such as when it finishes opening, when it can accept new bytes, and when an error occurs. A stream can be scheduled into multiple run loops and run loop modes. Use [`CFWriteStreamUnscheduleFromRunLoop(_:_:_:)`](cfwritestreamunschedulefromrunloop(_:_:_:).md) to later remove `stream` from the run loop.
+After scheduling `stream` into a run loop, its client (set with [`CFWriteStreamSetClient(_:_:_:_:)`](./cfwritestreamsetclient%28_,_,_,_%29.md)) is notified when various events happen with the stream, such as when it finishes opening, when it can accept new bytes, and when an error occurs. A stream can be scheduled into multiple run loops and run loop modes. Use [`CFWriteStreamUnscheduleFromRunLoop(_:_:_:)`](./cfwritestreamunschedulefromrunloop%28_,_,_%29.md) to later remove `stream` from the run loop.
 
 ## Parameters
 
@@ -32,7 +37,8 @@ After scheduling `stream` into a run loop, its client (set with [`CFWriteStreamS
 
 ## See Also
 
-- [func CFWriteStreamUnscheduleFromRunLoop(CFWriteStream!, CFRunLoop!, CFRunLoopMode!)](cfwritestreamunschedulefromrunloop(_:_:_:).md)
+### Scheduling a Write Stream
+- [func CFWriteStreamUnscheduleFromRunLoop(CFWriteStream!, CFRunLoop!, CFRunLoopMode!)](./cfwritestreamunschedulefromrunloop%28_,_,_%29.md)
   Removes a stream from a particular run loop.
 
 

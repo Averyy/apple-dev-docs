@@ -1,7 +1,8 @@
 # AppStoreVersionCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships to other resources that you can set with this request.
 
@@ -10,20 +11,20 @@ The relationships to other resources that you can set with this request.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreVersionCreateRequest.Data.Relationships.App](appstoreversioncreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)
+- [object AppStoreVersionCreateRequest.Data.Relationships.App](./relationships-data.dictionary/app-data.dictionary.md)
   The relationships to other resources that you can set with this request.
-- [object AppStoreVersionCreateRequest.Data.Relationships.Build](appstoreversioncreaterequest/data-data.dictionary/relationships-data.dictionary/build-data.dictionary.md)
+- [object AppStoreVersionCreateRequest.Data.Relationships.Build](./relationships-data.dictionary/build-data.dictionary.md)
   The relationships to other resources that you can set with this request.
-- [object AppStoreVersionCreateRequest.Data.Relationships.AppStoreVersionLocalizations.Data](appstoreversioncreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionlocalizations-data.dictionary/data-data.dictionary.md)
+- [object AppStoreVersionCreateRequest.Data.Relationships.AppStoreVersionLocalizations.Data](./relationships-data.dictionary/appstoreversionlocalizations-data.dictionary/data-data.dictionary.md)
   The request body you use to create an App Store version.
-- [object AppStoreVersionCreateRequest.Data.Relationships.AppStoreVersionLocalizations](appstoreversioncreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionlocalizations-data.dictionary.md)
+- [object AppStoreVersionCreateRequest.Data.Relationships.AppStoreVersionLocalizations](./relationships-data.dictionary/appstoreversionlocalizations-data.dictionary.md)
 
 ## Properties
 
@@ -33,7 +34,8 @@ object AppStoreVersionCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object AppStoreVersionCreateRequest.Data.Attributes](appstoreversioncreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object AppStoreVersionCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   Attributes that you set that describe the new resource.
 
 

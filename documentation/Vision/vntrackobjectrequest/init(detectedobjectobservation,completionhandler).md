@@ -1,7 +1,8 @@
 # init(detectedObjectObservation:completionHandler:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new object tracking request with a detected object observation.
 
@@ -19,6 +20,10 @@ Creates a new object tracking request with a detected object observation.
 init(detectedObjectObservation observation: VNDetectedObjectObservation, completionHandler: VNRequestCompletionHandler? = nil)
 ```
 
+```objc
+- (instancetype) initWithDetectedObjectObservation:(VNDetectedObjectObservation *) observation completionHandler:(VNRequestCompletionHandler) completionHandler;
+```
+
 ## Parameters
 
 - `observation`: A detected object observation with bounding box information.
@@ -26,7 +31,8 @@ init(detectedObjectObservation observation: VNDetectedObjectObservation, complet
 
 ## See Also
 
-- [init(detectedObjectObservation: VNDetectedObjectObservation)](vntrackobjectrequest/init(detectedobjectobservation:).md)
+### Initializing an Object Tracking Request
+- [init(detectedObjectObservation: VNDetectedObjectObservation)](./init%28detectedobjectobservation%29.md)
   Creates a new object tracking request with a detected object observation.
 
 

@@ -1,7 +1,8 @@
 # itemMenuFormRepresentation
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The menu item to use for the toolbar item is in the overflow menu in a Mac app built with Mac Catalyst.
 
@@ -15,15 +16,20 @@ The menu item to use for the toolbar item is in the overflow menu in a Mac app b
 var itemMenuFormRepresentation: UIMenuElement? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) UIMenuElement * itemMenuFormRepresentation;
+```
+
 #### Discussion
 
 The toolbar provides an initial default menu form representation that uses the toolbar item’s label as the menu item’s title. You can customize this menu item by changing the title or adding a submenu. When the toolbar is in text only mode, this menu item provides the text for the toolbar item. If the menu item in this property has a submenu and is visbile, clicking the toolbar item displays that submenu. If the toolbar item isn’t visible because it’s in the overflow menu, the menu item and submenu appear there.
 
-For more information, see [`Integrating a Toolbar and Touch Bar into Your App`](integrating-a-toolbar-and-touch-bar-into-your-app.md).
+For more information, see [Integrating a Toolbar and Touch Bar into Your App](../integrating-a-toolbar-and-touch-bar-into-your-app.md).
 
 ## See Also
 
-- [var menuFormRepresentation: NSMenuItem?](nstoolbaritem/menuformrepresentation.md)
+### Configuring the item’s menu
+- [var menuFormRepresentation: NSMenuItem?](./menuformrepresentation.md)
   The menu item to use when the toolbar item is in the overflow menu.
 
 

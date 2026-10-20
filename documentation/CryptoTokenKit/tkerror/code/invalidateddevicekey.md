@@ -1,7 +1,8 @@
 # TKError.Code.invalidatedDeviceKey
 
 **Framework**: CryptoTokenKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -16,6 +17,10 @@
 
 ```swift
 case invalidatedDeviceKey
+```
+
+```c
+TKErrorCodeInvalidatedDeviceKey
 ```
 
 

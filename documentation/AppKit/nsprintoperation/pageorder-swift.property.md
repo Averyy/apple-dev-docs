@@ -1,12 +1,13 @@
 # pageOrder
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The print order for the pages of the operation.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,22 @@ The print order for the pages of the operation.
 var pageOrder: NSPrintOperation.PageOrder { get set }
 ```
 
+```objc
+@property NSPrintingPageOrder pageOrder;
+```
+
 ## Parameters
 
-- `order`: The print order. For a list of possible values, see [`NSPrintOperation.PageOrder`](nsprintoperation/pageorder-swift.enum.md).
+- `order`: The print order. For a list of possible values, see [`NSPrintOperation.PageOrder`](./pageorder-swift.enum.md).
 
 ## See Also
 
-- [var currentPage: Int](nsprintoperation/currentpage.md)
+### Managing Page Information
+- [var currentPage: Int](./currentpage.md)
   The current page number being printed.
-- [var pageRange: NSRange](nsprintoperation/pagerange.md)
+- [var pageRange: NSRange](./pagerange.md)
   The range of pages associated with the print operation.
-- [NSPrintOperation.PageOrder](nsprintoperation/pageorder-swift.enum.md)
+- [NSPrintOperation.PageOrder](./pageorder-swift.enum.md)
   Constants that specify the page order.
 
 

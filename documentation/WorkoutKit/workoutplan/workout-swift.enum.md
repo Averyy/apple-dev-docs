@@ -1,7 +1,8 @@
 # WorkoutPlan.Workout
 
 **Framework**: WorkoutKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The workout for the workout plan.
 
@@ -21,29 +22,30 @@ enum Workout
 ## Topics
 
 ### Setting the workout
-- [WorkoutPlan.Workout.custom(_:)](workoutplan/workout-swift.enum/custom(_:).md)
+- [WorkoutPlan.Workout.custom(_:)](./workout-swift.enum/custom%28_%29.md)
   A custom workout.
-- [WorkoutPlan.Workout.goal(_:)](workoutplan/workout-swift.enum/goal(_:).md)
+- [WorkoutPlan.Workout.goal(_:)](./workout-swift.enum/goal%28_%29.md)
   A single goal workout
-- [WorkoutPlan.Workout.pacer(_:)](workoutplan/workout-swift.enum/pacer(_:).md)
+- [WorkoutPlan.Workout.pacer(_:)](./workout-swift.enum/pacer%28_%29.md)
   A pacer workout.
-- [case swimBikeRun(SwimBikeRunWorkout)](workoutplan/workout-swift.enum/swimbikerun(_:).md)
+- [case swimBikeRun(SwimBikeRunWorkout)](./workout-swift.enum/swimbikerun%28_%29.md)
   A multisport workout.
 ### Accessing workout data
-- [var activity: HKWorkoutActivityType](workoutplan/workout-swift.enum/activity.md)
+- [var activity: HKWorkoutActivityType](./workout-swift.enum/activity.md)
   The workout activity type.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(WorkoutPlan.Workout, id: UUID)](workoutplan/init(_:id:).md)
+### Creating a workout plan
+- [init(WorkoutPlan.Workout, id: UUID)](./init%28_,id%29.md)
   Creates a new workout plan from the provided workout and ID.
 
 

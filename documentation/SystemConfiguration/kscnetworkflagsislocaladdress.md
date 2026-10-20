@@ -1,17 +1,18 @@
 # kSCNetworkFlagsIsLocalAddress
 
 **Framework**: System Configuration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The specified node name or address is one associated with a network interface on the current system.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,19 +20,24 @@ The specified node name or address is one associated with a network interface on
 var kSCNetworkFlagsIsLocalAddress: Int { get }
 ```
 
+```c
+kSCNetworkFlagsIsLocalAddress
+```
+
 ## See Also
 
-- [var kSCNetworkFlagsTransientConnection: Int](kscnetworkflagstransientconnection.md)
+### Constants
+- [var kSCNetworkFlagsTransientConnection: Int](./kscnetworkflagstransientconnection.md)
   The specified node name or address can be reached via a transient connection, such as PPP.
-- [var kSCNetworkFlagsReachable: Int](kscnetworkflagsreachable.md)
+- [var kSCNetworkFlagsReachable: Int](./kscnetworkflagsreachable.md)
   The specified node name or address can be reached using the current network configuration.
-- [var kSCNetworkFlagsConnectionRequired: Int](kscnetworkflagsconnectionrequired.md)
+- [var kSCNetworkFlagsConnectionRequired: Int](./kscnetworkflagsconnectionrequired.md)
   The specified node name or address can be reached using the current network configuration, but a connection must first be established.
-- [var kSCNetworkFlagsConnectionAutomatic: Int](kscnetworkflagsconnectionautomatic.md)
+- [var kSCNetworkFlagsConnectionAutomatic: Int](./kscnetworkflagsconnectionautomatic.md)
   The specified node name or address can be reached using the current network configuration, but a connection must first be established.
-- [var kSCNetworkFlagsInterventionRequired: Int](kscnetworkflagsinterventionrequired.md)
+- [var kSCNetworkFlagsInterventionRequired: Int](./kscnetworkflagsinterventionrequired.md)
   The specified node name or address can be reached using the current network configuration, but a connection must first be established.
-- [var kSCNetworkFlagsIsDirect: Int](kscnetworkflagsisdirect.md)
+- [var kSCNetworkFlagsIsDirect: Int](./kscnetworkflagsisdirect.md)
   Network traffic to the specified node name or address does not go through a gateway, but is routed directly to one of the interfaces in the system.
 
 

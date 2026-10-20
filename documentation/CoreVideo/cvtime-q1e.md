@@ -1,42 +1,45 @@
 # CVTime
 
-**Framework**: Core Video
+**Framework**: Core Video  
+**Role**: API Collection
 
 A structure used for storing Core Video time values.
 
 #### Overview
 
-Core video uses the [`CVTime`](cvtime.md) and [`CVTimeStamp`](cvtimestamp.md) structures for storing Core Video time values. You use them to interact with the Core Video display link.
+Core video uses the [`CVTime`](./cvtime.md) and [`CVTimeStamp`](./cvtimestamp.md) structures for storing Core Video time values. You use them to interact with the Core Video display link.
 
 ## Topics
 
 ### Inspecting the Host Clock
-- [func CVGetCurrentHostTime() -> UInt64](cvgetcurrenthosttime().md)
+- [func CVGetCurrentHostTime() -> UInt64](./cvgetcurrenthosttime%28%29.md)
   Returns the current system time.
-- [func CVGetHostClockFrequency() -> Double](cvgethostclockfrequency().md)
+- [func CVGetHostClockFrequency() -> Double](./cvgethostclockfrequency%28%29.md)
   Returns the frequency of updates to the system time.
-- [func CVGetHostClockMinimumTimeDelta() -> UInt32](cvgethostclockminimumtimedelta().md)
+- [func CVGetHostClockMinimumTimeDelta() -> UInt32](./cvgethostclockminimumtimedelta%28%29.md)
   Returns the smallest possible increment in the system time.
 ### Data Types
-- [struct CVTime](cvtime.md)
+- [struct CVTime](./cvtime.md)
   A structure for reporting Core Video time values.
-- [CVTimeStamp](cvtimestamp-api.md)
+- [CVTimeStamp](./cvtimestamp-api.md)
   A structure for representing a display timestamp.
-- [struct CVSMPTETime](cvsmptetime.md)
+- [struct CVSMPTETime](./cvsmptetime.md)
   A structure for holding an SMPTE time.
 ### Constants
-- [CVTime Values](cvtime-values.md)
+- [CVTime Values](./cvtime-values.md)
   Keys that represent Core Video time values.
 ### Enumerations
-- [enum CVSMPTETimeType](cvsmptetimetype.md)
-- [struct CVSMPTETimeFlags](cvsmptetimeflags.md)
-- [struct CVTimeFlags](cvtimeflags.md)
-- [struct CVTimeStampFlags](cvtimestampflags.md)
+- [enum CVSMPTETimeType](./cvsmptetimetype.md)
+- [struct CVSMPTETimeFlags](./cvsmptetimeflags.md)
+- [struct CVTimeFlags](./cvtimeflags.md)
+- [struct CVTimeStampFlags](./cvtimestampflags.md)
 
 ## See Also
 
-- [Core Video Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreVideo/CVProg_Intro/CVProg_Intro.html#//apple_ref/doc/uid/TP40001536)
-- [CVDisplayLink](cvdisplaylink-k0k.md)
+### Related Documentation
+- [Core Video Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreVideo/CVProg_Intro/CVProg_Intro.html#//apple_ref/doc/uid/TP40001536)
+### Time Management
+- [CVDisplayLink](./cvdisplaylink-k0k.md)
   A high-priority thread that notifies your app when a given display will need each frame.
 
 

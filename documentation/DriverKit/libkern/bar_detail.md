@@ -1,24 +1,25 @@
 # bar_detail
 
 **Framework**: DriverKit  
-**Kind**: namespace
+**Kind**: namespace  
+**Role**: Namespace
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 namespace bar_detail;
 ```
 
 ## Topics
 
 ### Type Aliases
-- [nullptr_t](libkern/bar_detail/nullptr_t.md)
+- [nullptr_t](./bar_detail/nullptr_t.md)
 
 
 ---

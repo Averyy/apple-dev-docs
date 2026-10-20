@@ -1,7 +1,8 @@
 # ssidPrefix
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string used to match networks against a known SSID prefix.
 
@@ -18,19 +19,24 @@ The string used to match networks against a known SSID prefix.
 var ssidPrefix: String { get }
 ```
 
+```objc
+@property (readonly) NSString * SSIDPrefix;
+```
+
 #### Discussion
 
-This property is only populated for configuration instances initialized with SSID prefix strings. The property is an empty string if the configuration instance has a full [`ssid`](nehotspotconfiguration/ssid.md).
+This property is only populated for configuration instances initialized with SSID prefix strings. The property is an empty string if the configuration instance has a full [`ssid`](./ssid.md).
 
 ## See Also
 
-- [var ssid: String](nehotspotconfiguration/ssid.md)
+### Accessing configuration properties
+- [var ssid: String](./ssid.md)
   The SSID of an open, WEP, WPA/WPA2 personal, or WPA/WPA2 enterprise Wi-Fi network.
-- [var lifeTimeInDays: NSNumber](nehotspotconfiguration/lifetimeindays.md)
+- [var lifeTimeInDays: NSNumber](./lifetimeindays.md)
   The number of days the network retains the associated configuration.
-- [var joinOnce: Bool](nehotspotconfiguration/joinonce.md)
+- [var joinOnce: Bool](./joinonce.md)
   Restricts the lifetime of a configuration to the operating status of the app that created it.
-- [var hidden: Bool](nehotspotconfiguration/hidden.md)
+- [var hidden: Bool](./hidden.md)
   A Boolean value that indicates the visibility of the SSID.
 
 

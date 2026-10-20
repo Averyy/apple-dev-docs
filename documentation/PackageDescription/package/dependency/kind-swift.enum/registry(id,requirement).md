@@ -1,7 +1,8 @@
 # Package.Dependency.Kind.registry(id:requirement:)
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A dependency based on a registry requirement.
 

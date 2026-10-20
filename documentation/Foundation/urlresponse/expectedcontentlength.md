@@ -1,7 +1,8 @@
 # expectedContentLength
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The expected length of the response’s content.
 
@@ -20,21 +21,26 @@ The expected length of the response’s content.
 var expectedContentLength: Int64 { get }
 ```
 
+```objc
+@property (readonly) long long expectedContentLength;
+```
+
 #### Discussion
 
-This property’s value is [`NSURLResponseUnknownLength`](nsurlresponseunknownlength.md) if the length can’t be determined.
+This property’s value is [`NSURLResponseUnknownLength`](../nsurlresponseunknownlength.md) if the length can’t be determined.
 
 Some protocol implementations report the content length as part of the response, but not all protocols guarantee to deliver that amount of data. Your app should be prepared to deal with more or less data.
 
 ## See Also
 
-- [var suggestedFilename: String?](urlresponse/suggestedfilename.md)
+### Getting the response properties
+- [var suggestedFilename: String?](./suggestedfilename.md)
   A suggested filename for the response data.
-- [var mimeType: String?](urlresponse/mimetype.md)
+- [var mimeType: String?](./mimetype.md)
   The MIME type of the response.
-- [var textEncodingName: String?](urlresponse/textencodingname.md)
+- [var textEncodingName: String?](./textencodingname.md)
   The name of the text encoding provided by the response’s originating source.
-- [var url: URL?](urlresponse/url.md)
+- [var url: URL?](./url.md)
   The URL for the response.
 
 

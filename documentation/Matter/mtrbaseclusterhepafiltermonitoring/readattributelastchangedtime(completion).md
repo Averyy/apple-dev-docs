@@ -1,7 +1,8 @@
 # readAttributeLastChangedTime(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeLastChangedTime(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeLastChangedTime() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeLastChangedTimeWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # UICollectionLayoutListConfiguration.Appearance.plain
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The plain list appearance.
 
@@ -10,7 +11,7 @@ The plain list appearance.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,14 @@ case plain
 
 ## See Also
 
-- [UICollectionLayoutListConfiguration.Appearance.grouped](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/grouped.md)
+### List appearances
+- [UICollectionLayoutListConfiguration.Appearance.grouped](./grouped.md)
   The grouped list appearance.
-- [UICollectionLayoutListConfiguration.Appearance.insetGrouped](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/insetgrouped.md)
+- [UICollectionLayoutListConfiguration.Appearance.insetGrouped](./insetgrouped.md)
   The inset grouped list appearance.
-- [UICollectionLayoutListConfiguration.Appearance.sidebar](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/sidebar.md)
+- [UICollectionLayoutListConfiguration.Appearance.sidebar](./sidebar.md)
   The sidebar list appearance.
-- [UICollectionLayoutListConfiguration.Appearance.sidebarPlain](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/sidebarplain.md)
+- [UICollectionLayoutListConfiguration.Appearance.sidebarPlain](./sidebarplain.md)
   The plain sidebar list appearance.
 
 

@@ -1,17 +1,22 @@
 # autosave(withDelegate:didAutosave:contextInfo:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Autosaves the document’s contents to an appropriate location in the file system.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func autosave(withDelegate delegate: Any?, didAutosave didAutosaveSelector: Selector?, contextInfo: UnsafeMutableRawPointer?)
+```
+
+```objc
+- (void) autosaveDocumentWithDelegate:(id) delegate didAutosaveSelector:(SEL) didAutosaveSelector contextInfo:(void *) contextInfo;
 ```
 
 #### Discussion
@@ -32,17 +37,19 @@ If an error occurs while autosaving, the method reports it to the user before se
 
 ## See Also
 
-- [var autosavedContentsFileURL: URL?](nsdocument/autosavedcontentsfileurl.md)
+### Related Documentation
+- [var autosavedContentsFileURL: URL?](./autosavedcontentsfileurl.md)
   The location of the most recently autosaved document contents.
-- [func checkAutosavingSafety() throws](nsdocument/checkautosavingsafety.md)
+### Autosaving the Document
+- [func checkAutosavingSafety() throws](./checkautosavingsafety%28%29.md)
   Returns a Boolean value that indicates whether it is safe to autosave document changes.
-- [var hasUnautosavedChanges: Bool](nsdocument/hasunautosavedchanges.md)
+- [var hasUnautosavedChanges: Bool](./hasunautosavedchanges.md)
   A Boolean value that indicates whether the document has changes that have not been autosaved.
-- [func scheduleAutosaving()](nsdocument/scheduleautosaving.md)
+- [func scheduleAutosaving()](./scheduleautosaving%28%29.md)
   Schedules periodic autosaving for the purpose of crash protection.
-- [func autosave(withImplicitCancellability: Bool, completionHandler: ((any Error)?) -> Void)](nsdocument/autosave(withimplicitcancellability:completionhandler:).md)
+- [func autosave(withImplicitCancellability: Bool, completionHandler: ((any Error)?) -> Void)](./autosave%28withimplicitcancellability,completionhandler%29.md)
   Autosaves the document’s contents to an appropriate file-system location, as needed.
-- [var backupFileURL: URL?](nsdocument/backupfileurl.md)
+- [var backupFileURL: URL?](./backupfileurl.md)
   The URL for the document’s backup file that was created during an autosave operation.
 
 

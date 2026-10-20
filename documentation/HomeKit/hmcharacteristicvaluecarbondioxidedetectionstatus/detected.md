@@ -1,7 +1,8 @@
 # HMCharacteristicValueCarbonDioxideDetectionStatus.detected
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Abnormally high levels of carbon dioxide are present.
 
@@ -19,9 +20,14 @@ Abnormally high levels of carbon dioxide are present.
 case detected
 ```
 
+```c
+HMCharacteristicValueCarbonDioxideDetectionStatusDetected
+```
+
 ## See Also
 
-- [HMCharacteristicValueCarbonDioxideDetectionStatus.notDetected](hmcharacteristicvaluecarbondioxidedetectionstatus/notdetected.md)
+### Carbon Dioxide Levels
+- [HMCharacteristicValueCarbonDioxideDetectionStatus.notDetected](./notdetected.md)
   Carbon dioxide levels are normal.
 
 

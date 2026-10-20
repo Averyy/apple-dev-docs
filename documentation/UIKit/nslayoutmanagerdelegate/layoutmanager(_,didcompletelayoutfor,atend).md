@@ -1,7 +1,8 @@
 # layoutManager(_:didCompleteLayoutFor:atEnd:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the delegate when the layout manager finishes laying out text in the specified text container.
 
@@ -18,6 +19,10 @@ Informs the delegate when the layout manager finishes laying out text in the spe
 optional func layoutManager(_ layoutManager: NSLayoutManager, didCompleteLayoutFor textContainer: NSTextContainer?, atEnd layoutFinishedFlag: Bool)
 ```
 
+```objc
+- (void) layoutManager:(NSLayoutManager *) layoutManager didCompleteLayoutForTextContainer:(NSTextContainer *) textContainer atEnd:(BOOL) layoutFinishedFlag;
+```
+
 #### Discussion
 
 This message is sent whenever a text container has been filled. This method can be useful for paginating.
@@ -26,11 +31,12 @@ This message is sent whenever a text container has been filled. This method can 
 
 - `layoutManager`: The layout manager doing the layout.
 - `textContainer`: The text container in which layout is complete. If `nil`, if there aren’t enough containers to hold all the text; the delegate can use this information as a cue to add another text container.
-- `layoutFinishedFlag`: If [`true`](https://developer.apple.com/documentation/swift/true), `aLayoutManager` is finished laying out its text—this also means that `aTextContainer` is the final text container used by the layout manager. Delegates can use this information to show an indicator or background or to enable or disable a button that forces immediate layout of text.
+- `layoutFinishedFlag`: If [`true`](../../Swift/true.md), `aLayoutManager` is finished laying out its text—this also means that `aTextContainer` is the final text container used by the layout manager. Delegates can use this information to show an indicator or background or to enable or disable a button that forces immediate layout of text.
 
 ## See Also
 
-- [func layoutManager(NSLayoutManager, textContainer: NSTextContainer, didChangeGeometryFrom: CGSize)](nslayoutmanagerdelegate/layoutmanager(_:textcontainer:didchangegeometryfrom:).md)
+### Responding to text container layout
+- [func layoutManager(NSLayoutManager, textContainer: NSTextContainer, didChangeGeometryFrom: CGSize)](./layoutmanager%28_,textcontainer,didchangegeometryfrom%29.md)
   Informs the delegate when the layout manager invalidates layout due to a change in the geometry of the specified text container.
 
 

@@ -1,7 +1,8 @@
 # MTLAccelerationStructurePassSampleBufferAttachmentDescriptorArray
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.0+
@@ -17,27 +18,32 @@
 class MTLAccelerationStructurePassSampleBufferAttachmentDescriptorArray
 ```
 
+```objc
+@interface MTLAccelerationStructurePassSampleBufferAttachmentDescriptorArray : NSObject
+```
+
 ## Topics
 
 ### Subscripts
-- [subscript(Int) -> MTLAccelerationStructurePassSampleBufferAttachmentDescriptor!](mtlaccelerationstructurepasssamplebufferattachmentdescriptorarray/subscript(_:).md)
+- [subscript(Int) -> MTLAccelerationStructurePassSampleBufferAttachmentDescriptor!](./mtlaccelerationstructurepasssamplebufferattachmentdescriptorarray/subscript%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTLAccelerationStructurePassDescriptor](mtlaccelerationstructurepassdescriptor.md)
-- [class MTLAccelerationStructurePassSampleBufferAttachmentDescriptor](mtlaccelerationstructurepasssamplebufferattachmentdescriptor.md)
+### Acceleration structures passes
+- [class MTLAccelerationStructurePassDescriptor](./mtlaccelerationstructurepassdescriptor.md)
+- [class MTLAccelerationStructurePassSampleBufferAttachmentDescriptor](./mtlaccelerationstructurepasssamplebufferattachmentdescriptor.md)
 
 
 ---

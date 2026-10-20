@@ -1,11 +1,12 @@
 # kAudioTapPropertyUID
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,10 +14,15 @@
 var kAudioTapPropertyUID: AudioObjectPropertySelector { get }
 ```
 
+```c
+kAudioTapPropertyUID
+```
+
 ## See Also
 
-- [var kAudioTapPropertyDescription: AudioObjectPropertySelector](kaudiotappropertydescription.md)
-- [var kAudioTapPropertyFormat: AudioObjectPropertySelector](kaudiotappropertyformat.md)
+### Constants
+- [var kAudioTapPropertyDescription: AudioObjectPropertySelector](./kaudiotappropertydescription.md)
+- [var kAudioTapPropertyFormat: AudioObjectPropertySelector](./kaudiotappropertyformat.md)
 
 
 ---

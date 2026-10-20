@@ -1,7 +1,8 @@
 # MTLCaptureDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A configuration for a Metal capture session.
 
@@ -19,36 +20,41 @@ A configuration for a Metal capture session.
 class MTLCaptureDescriptor
 ```
 
+```objc
+@interface MTLCaptureDescriptor : NSObject
+```
+
 ## Topics
 
 ### Setting capture parameters
-- [var captureObject: Any?](mtlcapturedescriptor/captureobject.md)
+- [var captureObject: Any?](./mtlcapturedescriptor/captureobject.md)
   The instance whose contents should be captured.
-- [var destination: MTLCaptureDestination](mtlcapturedescriptor/destination.md)
+- [var destination: MTLCaptureDestination](./mtlcapturedescriptor/destination.md)
   The destination for any captured command data.
-- [var outputURL: URL?](mtlcapturedescriptor/outputurl.md)
+- [var outputURL: URL?](./mtlcapturedescriptor/outputurl.md)
   A URL for a file to write the capture data into.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTLCaptureManager](mtlcapturemanager.md)
+### Frame capture
+- [class MTLCaptureManager](./mtlcapturemanager.md)
   An instance you use to capture Metal command data in your app.
-- [enum MTLCaptureDestination](mtlcapturedestination.md)
+- [enum MTLCaptureDestination](./mtlcapturedestination.md)
   The kinds of destinations for captured command data.
-- [protocol MTLCaptureScope](mtlcapturescope.md)
+- [protocol MTLCaptureScope](./mtlcapturescope.md)
   A type that can programmatically customize a GPU frame capture.
 
 

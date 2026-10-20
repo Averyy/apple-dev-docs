@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.Network.SecurityPolicy.wep
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Allows WEP encryption.
 

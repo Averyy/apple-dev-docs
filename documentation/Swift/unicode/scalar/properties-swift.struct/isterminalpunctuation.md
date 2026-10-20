@@ -1,7 +1,8 @@
 # isTerminalPunctuation
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scalar is a punctuation symbol that typically marks the end of a textual unit.
 
@@ -22,7 +23,7 @@ var isTerminalPunctuation: Bool { get }
 
 #### Discussion
 
-This property corresponds to the “Terminal_Punctuation” property in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Terminal_Punctuation” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

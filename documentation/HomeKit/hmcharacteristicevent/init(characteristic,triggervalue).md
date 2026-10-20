@@ -1,7 +1,8 @@
 # init(characteristic:triggerValue:)
 
 **Framework**: HomeKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new characteristic event which triggers when the specified characteristic reaches the specified value.
 
@@ -15,6 +16,10 @@ Creates a new characteristic event which triggers when the specified characteris
 
 ```swift
 init(characteristic: HMCharacteristic, triggerValue: TriggerValueType?)
+```
+
+```objc
+- (instancetype) initWithCharacteristic:(HMCharacteristic *) characteristic triggerValue:(TriggerValueType) triggerValue;
 ```
 
 #### Return Value

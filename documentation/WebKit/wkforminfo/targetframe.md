@@ -1,7 +1,8 @@
 # targetFrame
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var targetFrame: WKFrameInfo { get }
+```
+
+```objc
+@property (nonatomic, readonly) WKFrameInfo * targetFrame;
 ```
 
 #### Discussion

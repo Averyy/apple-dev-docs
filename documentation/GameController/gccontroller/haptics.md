@@ -1,7 +1,8 @@
 # haptics
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The controller’s haptics information.
 
@@ -19,15 +20,20 @@ The controller’s haptics information.
 var haptics: GCDeviceHaptics? { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly, nullable) GCDeviceHaptics * haptics;
+```
+
 #### Discussion
 
-Use this property to create [`CHHapticEngine`](https://developer.apple.com/documentation/corehaptics/chhapticengine) instances as necessary in your app. If the controller doesn’t provide haptics information, this property is `nil`.
+Use this property to create [`CHHapticEngine`](../../CoreHaptics/chhapticengine.md) instances as necessary in your app. If the controller doesn’t provide haptics information, this property is `nil`.
 
 ## See Also
 
-- [var battery: GCDeviceBattery?](gccontroller/battery.md)
+### Accessing battery, haptics, and light objects
+- [var battery: GCDeviceBattery?](./battery.md)
   The controller’s battery information.
-- [var light: GCDeviceLight?](gccontroller/light.md)
+- [var light: GCDeviceLight?](./light.md)
   The controller’s light settings.
 
 

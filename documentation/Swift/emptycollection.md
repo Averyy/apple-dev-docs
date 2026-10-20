@@ -1,7 +1,8 @@
 # EmptyCollection
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection whose element type is `Element` but that is always empty.
 
@@ -24,44 +25,45 @@ struct EmptyCollection<Element>
 ## Topics
 
 ### Initializers
-- [init()](emptycollection/init.md)
+- [init()](./emptycollection/init%28%29.md)
   Creates an instance.
 ### Default Implementations
-- [BidirectionalCollection Implementations](emptycollection/bidirectionalcollection-implementations.md)
-- [Collection Implementations](emptycollection/collection-implementations.md)
-- [Equatable Implementations](emptycollection/equatable-implementations.md)
-- [Hashable Implementations](emptycollection/hashable-implementations.md)
-- [MutableCollection Implementations](emptycollection/mutablecollection-implementations.md)
-- [RandomAccessCollection Implementations](emptycollection/randomaccesscollection-implementations.md)
-- [Sequence Implementations](emptycollection/sequence-implementations.md)
+- [BidirectionalCollection Implementations](./emptycollection/bidirectionalcollection-implementations.md)
+- [Collection Implementations](./emptycollection/collection-implementations.md)
+- [Equatable Implementations](./emptycollection/equatable-implementations.md)
+- [Hashable Implementations](./emptycollection/hashable-implementations.md)
+- [MutableCollection Implementations](./emptycollection/mutablecollection-implementations.md)
+- [RandomAccessCollection Implementations](./emptycollection/randomaccesscollection-implementations.md)
+- [Sequence Implementations](./emptycollection/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](bidirectionalcollection.md)
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Collection](collection.md)
-- [ContiguousBytes](../foundation/contiguousbytes.md)
-- [Copyable](copyable.md)
-- [DataProtocol](../foundation/dataprotocol.md)
-- [Equatable](equatable.md)
-- [Escapable](escapable.md)
-- [Hashable](hashable.md)
-- [MutableCollection](mutablecollection.md)
-- [RandomAccessCollection](randomaccesscollection.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Sequence](sequence.md)
+- [BidirectionalCollection](./bidirectionalcollection.md)
+- [BitwiseCopyable](./bitwisecopyable.md)
+- [Collection](./collection.md)
+- [ContiguousBytes](../Foundation/contiguousbytes.md)
+- [Copyable](./copyable.md)
+- [DataProtocol](../Foundation/dataprotocol.md)
+- [Equatable](./equatable.md)
+- [Escapable](./escapable.md)
+- [Hashable](./hashable.md)
+- [MutableCollection](./mutablecollection.md)
+- [RandomAccessCollection](./randomaccesscollection.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
+- [Sequence](./sequence.md)
 
 ## See Also
 
-- [func repeatElement<T>(T, count: Int) -> Repeated<T>](repeatelement(_:count:).md)
+### Special-Use Collections
+- [func repeatElement<T>(T, count: Int) -> Repeated<T>](./repeatelement%28_,count%29.md)
   Creates a collection containing the specified number of the given element.
-- [struct CollectionOfOne](collectionofone.md)
+- [struct CollectionOfOne](./collectionofone.md)
   A collection containing a single element.
-- [struct KeyValuePairs](keyvaluepairs.md)
+- [struct KeyValuePairs](./keyvaluepairs.md)
   A lightweight collection of key-value pairs.
-- [typealias DictionaryLiteral](dictionaryliteral.md)
+- [typealias DictionaryLiteral](./dictionaryliteral.md)
 
 
 ---

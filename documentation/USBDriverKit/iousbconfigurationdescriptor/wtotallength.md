@@ -1,7 +1,8 @@
 # wTotalLength
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total length of the descriptor, including the length of all related interface, endpoint, and vendor-specific descriptors.
 
@@ -10,25 +11,26 @@ The total length of the descriptor, including the length of all related interfac
 
 ## Declaration
 
-```swift
+```c
 uint16_t wTotalLength;
 ```
 
 ## See Also
 
-- [bLength](iousbconfigurationdescriptor/blength.md)
+### Getting the Descriptor Properties
+- [bLength](./blength.md)
   The size of the descriptor in bytes.
-- [bDescriptorType](iousbconfigurationdescriptor/bdescriptortype.md)
+- [bDescriptorType](./bdescriptortype.md)
   The type of the descriptor.
-- [bNumInterfaces](iousbconfigurationdescriptor/bnuminterfaces.md)
+- [bNumInterfaces](./bnuminterfaces.md)
   The number of interfaces this configuration supports.
-- [bConfigurationValue](iousbconfigurationdescriptor/bconfigurationvalue.md)
+- [bConfigurationValue](./bconfigurationvalue.md)
   The value to use when selecting this configuration.
-- [iConfiguration](iousbconfigurationdescriptor/iconfiguration.md)
+- [iConfiguration](./iconfiguration.md)
   The index of the string descriptor that describes this configuration.
-- [bmAttributes](iousbconfigurationdescriptor/bmattributes.md)
+- [bmAttributes](./bmattributes.md)
   A bitmask indicating the configuration’s characteristics.
-- [MaxPower](iousbconfigurationdescriptor/maxpower.md)
+- [MaxPower](./maxpower.md)
   The maximum power consumption of the USB device expressed in 2mA units.
 
 

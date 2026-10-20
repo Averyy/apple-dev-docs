@@ -1,7 +1,8 @@
 # Movie
 
 **Framework**: Apple TV Feed  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represents a movie resource.
 
@@ -10,32 +11,32 @@ The data structure that represents a movie resource.
 
 ## Declaration
 
-```swift
+```
 object Movie
 ```
 
 ## Topics
 
 ### Related objects
-- [object Movie.Artworks](movie/artworks-data.dictionary.md)
+- [object Movie.Artworks](./movie/artworks-data.dictionary.md)
   A mapping of locale to localized artwork.
-- [object Movie.CastAndCrew](movie/castandcrew-data.dictionary.md)
+- [object Movie.CastAndCrew](./movie/castandcrew-data.dictionary.md)
   Information about a cast or crew member, including translations of their name.
-- [object Movie.Description](movie/description-data.dictionary.md)
+- [object Movie.Description](./movie/description-data.dictionary.md)
   A mapping of locale to localized descriptions of the movie.
-- [object Movie.ExternalContentId](movie/externalcontentid.md)
+- [object Movie.ExternalContentId](./movie/externalcontentid.md)
   Information about an external content ID.
-- [object Movie.Genre](movie/genre.md)
+- [object Movie.Genre](./movie/genre.md)
   A genre name and its structure.
-- [object Movie.Name](movie/name-data.dictionary.md)
+- [object Movie.Name](./movie/name-data.dictionary.md)
   A mapping of locale to localized names for the movie.
-- [object Movie.OriginalReleaseDate](movie/originalreleasedate-data.dictionary.md)
+- [object Movie.OriginalReleaseDate](./movie/originalreleasedate-data.dictionary.md)
   A mapping of locale to localized release date.
-- [object Movie.Prices](movie/prices-data.dictionary.md)
+- [object Movie.Prices](./movie/prices-data.dictionary.md)
   A mapping of storefront to pricing information and availability.
-- [object Movie.Rating](movie/rating-data.dictionary.md)
+- [object Movie.Rating](./movie/rating-data.dictionary.md)
   Information about a content rating.
-- [object Movie.Url](movie/url-data.dictionary.md)
+- [object Movie.Url](./movie/url-data.dictionary.md)
   A mapping of locale to localized URLs for the content.
 
 ## Properties
@@ -57,13 +58,14 @@ object Movie
 
 ## See Also
 
-- [object TvEpisode](tvepisode.md)
+### Objects
+- [object TvEpisode](./tvepisode.md)
   The data structure that represents a TV episode resource.
-- [object TvSeason](tvseason.md)
+- [object TvSeason](./tvseason.md)
   The data structure that represents a TV season resource.
-- [object TvShow](tvshow.md)
+- [object TvShow](./tvshow.md)
   The data structure that represents a TV show resource.
-- [object SportingEvent](sportingevent.md)
+- [object SportingEvent](./sportingevent.md)
   The data structure that represents a sporting event resource.
 
 

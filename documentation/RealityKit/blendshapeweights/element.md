@@ -1,7 +1,8 @@
 # BlendShapeWeights.Element
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An individual weight in the collection.
 

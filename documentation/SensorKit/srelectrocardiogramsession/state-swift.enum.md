@@ -1,7 +1,8 @@
 # SRElectrocardiogramSession.State
 
 **Framework**: SensorKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The state of a session used to record a ECG sample.
 
@@ -16,37 +17,42 @@ The state of a session used to record a ECG sample.
 enum State
 ```
 
+```c
+enum SRElectrocardiogramSessionState : NSInteger;
+```
+
 ## Topics
 
 ### States
-- [SRElectrocardiogramSession.State.begin](srelectrocardiogramsession/state-swift.enum/begin.md)
+- [SRElectrocardiogramSession.State.begin](./state-swift.enum/begin.md)
   The session begins.
-- [SRElectrocardiogramSession.State.active](srelectrocardiogramsession/state-swift.enum/active.md)
+- [SRElectrocardiogramSession.State.active](./state-swift.enum/active.md)
   The session is ongoing.
-- [SRElectrocardiogramSession.State.end](srelectrocardiogramsession/state-swift.enum/end.md)
+- [SRElectrocardiogramSession.State.end](./state-swift.enum/end.md)
   The session ends.
 ### Initializers
-- [init?(rawValue: Int)](srelectrocardiogramsession/state-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./state-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var identifier: String](srelectrocardiogramsession/identifier.md)
+### Getting session information
+- [var identifier: String](./identifier.md)
   A unique identifier for the ECG session.
-- [var sessionGuidance: SRElectrocardiogramSession.SessionGuidance](srelectrocardiogramsession/sessionguidance-swift.property.md)
+- [var sessionGuidance: SRElectrocardiogramSession.SessionGuidance](./sessionguidance-swift.property.md)
   The type of session used to record the sample.
-- [SRElectrocardiogramSession.SessionGuidance](srelectrocardiogramsession/sessionguidance-swift.enum.md)
+- [SRElectrocardiogramSession.SessionGuidance](./sessionguidance-swift.enum.md)
   The type of session guidance used to record a ECG sample.
-- [var state: SRElectrocardiogramSession.State](srelectrocardiogramsession/state-swift.property.md)
+- [var state: SRElectrocardiogramSession.State](./state-swift.property.md)
   The state of the session used to record the sample.
 
 

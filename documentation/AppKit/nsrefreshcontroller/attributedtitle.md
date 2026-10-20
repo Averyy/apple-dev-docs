@@ -1,7 +1,8 @@
 # attributedTitle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The styled text to display in the refresh controller.
 
@@ -13,6 +14,10 @@ The styled text to display in the refresh controller.
 ```swift
 @NSCopying
 var attributedTitle: NSAttributedString? { get set }
+```
+
+```objc
+@property (copy, nullable) NSAttributedString * attributedTitle;
 ```
 
 #### Discussion

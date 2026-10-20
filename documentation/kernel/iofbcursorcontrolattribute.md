@@ -1,14 +1,15 @@
 # IOFBCursorControlAttribute
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 typedef struct IOFBCursorControlAttribute {
     ...
 } IOFBCursorControlAttribute;
@@ -17,19 +18,20 @@ typedef struct IOFBCursorControlAttribute {
 ## Topics
 
 ### Instance Properties
-- [callouts](iofbcursorcontrolattribute/1397510-callouts.md)
-- [inst](iofbcursorcontrolattribute/2967284-inst.md)
-- [ref](iofbcursorcontrolattribute/1397695-ref.md)
-- [reserved](iofbcursorcontrolattribute/1397645-reserved.md)
+- [callouts](./iofbcursorcontrolattribute/api-1397510-callouts.md)
+- [inst](./iofbcursorcontrolattribute/api-2967284-inst.md)
+- [ref](./iofbcursorcontrolattribute/api-1397695-ref.md)
+- [reserved](./iofbcursorcontrolattribute/api-1397645-reserved.md)
 
 ## See Also
 
-- [IONDRVFramebuffer](iondrvframebuffer.md)
-- [IOFramebuffer](ioframebuffer.md)
+### Devices
+- [IONDRVFramebuffer](./iondrvframebuffer.md)
+- [IOFramebuffer](./ioframebuffer.md)
   The base class for graphics devices to be made available as part of the desktop.
-- [IOGraphicsDevice](iographicsdevice.md)
-- [IOFBCursorControlCallouts](iofbcursorcontrolcallouts.md)
-- [IOTVector](iotvector.md)
+- [IOGraphicsDevice](./iographicsdevice.md)
+- [IOFBCursorControlCallouts](./iofbcursorcontrolcallouts.md)
+- [IOTVector](./iotvector.md)
 
 
 ---

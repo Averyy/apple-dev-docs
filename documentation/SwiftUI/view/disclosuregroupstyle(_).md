@@ -1,7 +1,8 @@
 # disclosureGroupStyle(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the style for disclosure groups within this view.
 
@@ -21,9 +22,10 @@ func disclosureGroupStyle<S>(_ style: S) -> some View where S : DisclosureGroupS
 
 ## See Also
 
-- [struct OutlineGroup](outlinegroup.md)
+### Disclosing information progressively
+- [struct OutlineGroup](../outlinegroup.md)
   A structure that computes views and disclosure groups on demand from an underlying collection of tree-structured, identified data.
-- [struct DisclosureGroup](disclosuregroup.md)
+- [struct DisclosureGroup](../disclosuregroup.md)
   A view that shows or hides another content view, based on the state of a disclosure control.
 
 

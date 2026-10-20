@@ -1,14 +1,15 @@
 # applyToChildren
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual void applyToChildren(IORegistryEntryApplierFunction applier, void *context, const IORegistryPlane *plane);
 ```
 

@@ -2,6 +2,7 @@
 
 **Framework**: Group Activities  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The location of the element in the shared coordinate space.
@@ -21,9 +22,10 @@ This property contains a position structure that represents the distances from t
 
 ## See Also
 
-- [var direction: SpatialTemplateElementDirection](spatialtemplateelement/direction.md)
+### Getting the element details
+- [var direction: SpatialTemplateElementDirection](./direction.md)
   The initial orientation of the element in the shared coordinate space.
-- [var role: (any SpatialTemplateRole)?](spatialtemplateelement/role.md)
+- [var role: (any SpatialTemplateRole)?](./role.md)
   An optional role you associate with this element.
 
 

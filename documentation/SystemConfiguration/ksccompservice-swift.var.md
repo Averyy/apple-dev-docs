@@ -1,7 +1,8 @@
 # kSCCompService
 
 **Framework**: System Configuration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The Component key `Service`.
 
@@ -14,21 +15,26 @@ The Component key `Service`.
 let kSCCompService: CFString
 ```
 
+```c
+extern CFStringRef const kSCCompService;
+```
+
 ## See Also
 
-- [let kSCCompNetwork: CFString](ksccompnetwork-swift.var.md)
+### Constants
+- [let kSCCompNetwork: CFString](./ksccompnetwork-swift.var.md)
   The Component key `Network`.
-- [let kSCCompGlobal: CFString](ksccompglobal-swift.var.md)
+- [let kSCCompGlobal: CFString](./ksccompglobal-swift.var.md)
   The Component key `Global`.
-- [let kSCCompHostNames: CFString](ksccomphostnames-swift.var.md)
+- [let kSCCompHostNames: CFString](./ksccomphostnames-swift.var.md)
   The Component key `HostNames`.
-- [let kSCCompInterface: CFString](ksccompinterface-swift.var.md)
+- [let kSCCompInterface: CFString](./ksccompinterface-swift.var.md)
   The Component key `Interface`.
-- [let kSCCompSystem: CFString](ksccompsystem-swift.var.md)
+- [let kSCCompSystem: CFString](./ksccompsystem-swift.var.md)
   The Component key `System`.
-- [let kSCCompUsers: CFString](ksccompusers-swift.var.md)
+- [let kSCCompUsers: CFString](./ksccompusers-swift.var.md)
   The Component key Users.
-- [let kSCCompAnyRegex: CFString](ksccompanyregex-swift.var.md)
+- [let kSCCompAnyRegex: CFString](./ksccompanyregex-swift.var.md)
   A regular expression pattern that matches any component.
 
 

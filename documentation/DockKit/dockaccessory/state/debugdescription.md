@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text description of the dock accessory state.
 
@@ -19,9 +20,10 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [DockAccessory.State.docked](dockaccessory/state/docked.md)
+### Getting properties
+- [DockAccessory.State.docked](./docked.md)
   The dock accessory doesn’t contain a device.
-- [DockAccessory.State.undocked](dockaccessory/state/undocked.md)
+- [DockAccessory.State.undocked](./undocked.md)
   The dock accessory contains a device.
 
 

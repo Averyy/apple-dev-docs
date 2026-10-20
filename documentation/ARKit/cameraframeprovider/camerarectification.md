@@ -1,7 +1,8 @@
 # CameraFrameProvider.CameraRectification
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Enumeration of possible camera rectification types.
 
@@ -17,22 +18,22 @@ enum CameraRectification
 ## Topics
 
 ### Enumeration Cases
-- [CameraFrameProvider.CameraRectification.mono](cameraframeprovider/camerarectification/mono.md)
+- [CameraFrameProvider.CameraRectification.mono](./camerarectification/mono.md)
   Mono camera rectification.
-- [CameraFrameProvider.CameraRectification.stereoCorrected](cameraframeprovider/camerarectification/stereocorrected.md)
+- [CameraFrameProvider.CameraRectification.stereoCorrected](./camerarectification/stereocorrected.md)
   Stereo corrected camera rectification.
 ### Instance Properties
-- [var description: String](cameraframeprovider/camerarectification/description.md)
+- [var description: String](./camerarectification/description.md)
   A textual representation of CameraFrameProvider.CameraRectification.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

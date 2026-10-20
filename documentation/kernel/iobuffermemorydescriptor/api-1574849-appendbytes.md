@@ -1,7 +1,8 @@
 # appendBytes
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Adds the specified data to the end of the memory buffer.
 
@@ -10,11 +11,11 @@ Adds the specified data to the end of the memory buffer.
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool appendBytes(const void *bytes, vm_size_t withLength);
 ```
 
-#### Return_value
+#### Return Value
 
 true if the bytes were appended successfully, or false if an error occurred.
 

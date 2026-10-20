@@ -1,16 +1,19 @@
 # AVAssetResourceLoadingRequestStreamingContentKeyRequestRequiresPersistentKey
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies whether the content key request requires a persistable key to be returned from the key vendor.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
-- macOS 10.14+
-- tvOS 9.0+
+- iOS 9.0+ - Deprecated in 18.0
+- iPadOS 9.0+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.14+ - Deprecated in 15.0
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Use -[AVPersistableContentKeyRequest persistableContentKeyFromKeyVendorResponse:options:error:] instead
 
 ## Declaration
 
@@ -18,21 +21,26 @@ Specifies whether the content key request requires a persistable key to be retur
 let AVAssetResourceLoadingRequestStreamingContentKeyRequestRequiresPersistentKey: String
 ```
 
+```c
+extern NSString * const AVAssetResourceLoadingRequestStreamingContentKeyRequestRequiresPersistentKey;
+```
+
 ## See Also
 
-- [var request: URLRequest](avassetresourceloadingrequest/request.md)
+### Accessing the request data
+- [var request: URLRequest](./avassetresourceloadingrequest/request.md)
   The URL request object for the resource.
-- [var requestor: AVAssetResourceLoadingRequestor](avassetresourceloadingrequest/requestor.md)
+- [var requestor: AVAssetResourceLoadingRequestor](./avassetresourceloadingrequest/requestor.md)
   The asset resource requestor that made the request.
-- [var contentInformationRequest: AVAssetResourceLoadingContentInformationRequest?](avassetresourceloadingrequest/contentinformationrequest.md)
+- [var contentInformationRequest: AVAssetResourceLoadingContentInformationRequest?](./avassetresourceloadingrequest/contentinformationrequest.md)
   The information for a requested resource.
-- [var dataRequest: AVAssetResourceLoadingDataRequest?](avassetresourceloadingrequest/datarequest.md)
+- [var dataRequest: AVAssetResourceLoadingDataRequest?](./avassetresourceloadingrequest/datarequest.md)
   The range of requested resource data.
-- [var redirect: URLRequest?](avassetresourceloadingrequest/redirect.md)
+- [var redirect: URLRequest?](./avassetresourceloadingrequest/redirect.md)
   An URL request instance if the loading request was redirected.
-- [func streamingContentKeyRequestData(forApp: Data, contentIdentifier: Data, options: [String : Any]?) throws -> Data](avassetresourceloadingrequest/streamingcontentkeyrequestdata(forapp:contentidentifier:options:).md)
+- [func streamingContentKeyRequestData(forApp: Data, contentIdentifier: Data, options: [String : Any]?) throws -> Data](./avassetresourceloadingrequest/streamingcontentkeyrequestdata%28forapp,contentidentifier,options%29.md)
   Obtains key request data for a specific combination of application and content.
-- [func persistentContentKey(fromKeyVendorResponse: Data, options: [String : Any]?) throws -> Data](avassetresourceloadingrequest/persistentcontentkey(fromkeyvendorresponse:options:).md)
+- [func persistentContentKey(fromKeyVendorResponse: Data, options: [String : Any]?) throws -> Data](./avassetresourceloadingrequest/persistentcontentkey%28fromkeyvendorresponse,options%29.md)
   Obtains a persistable content key from a context.
 
 

@@ -1,14 +1,15 @@
 # supportedIssuerKeyIdentifiers
 
 **Framework**: IdentityDocumentServices  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of X.509 authority key identifiers that correspond to the document signer certificate chain for the mobile document.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 

@@ -1,14 +1,15 @@
 # SFLT_PROG
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 SFLT_PROG = 0x02
 ```
 

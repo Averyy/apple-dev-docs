@@ -1,7 +1,8 @@
 # NSURLProtectionSpaceHTTPS
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The protocol type for HTTPS.
 
@@ -20,11 +21,16 @@ The protocol type for HTTPS.
 let NSURLProtectionSpaceHTTPS: String
 ```
 
+```c
+extern NSString * const NSURLProtectionSpaceHTTPS;
+```
+
 ## See Also
 
-- [let NSURLProtectionSpaceHTTP: String](nsurlprotectionspacehttp.md)
+### Protocol types
+- [let NSURLProtectionSpaceHTTP: String](./nsurlprotectionspacehttp.md)
   The protocol type for HTTP.
-- [let NSURLProtectionSpaceFTP: String](nsurlprotectionspaceftp.md)
+- [let NSURLProtectionSpaceFTP: String](./nsurlprotectionspaceftp.md)
   The protocol type for FTP.
 
 

@@ -1,7 +1,8 @@
 # kAXRangeForLineParameterizedAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Given a line number, the range of characters of the text associated with this accessibility object that contains the line number.
 
@@ -12,6 +13,10 @@ Given a line number, the range of characters of the text associated with this ac
 
 ```swift
 var kAXRangeForLineParameterizedAttribute: String { get }
+```
+
+```c
+#define kAXRangeForLineParameterizedAttribute
 ```
 
 

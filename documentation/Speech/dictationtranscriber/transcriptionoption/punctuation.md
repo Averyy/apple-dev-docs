@@ -1,7 +1,8 @@
 # DictationTranscriber.TranscriptionOption.punctuation
 
 **Framework**: Speech  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Automatically punctuates the transcription.
 
@@ -24,9 +25,10 @@ If omitted, only spoken punctuation is transcribed, as by the spoken phrase “h
 
 ## See Also
 
-- [DictationTranscriber.TranscriptionOption.emoji](dictationtranscriber/transcriptionoption/emoji.md)
+### Transcription options
+- [DictationTranscriber.TranscriptionOption.emoji](./emoji.md)
   Transcribes named emoji as emoji.
-- [DictationTranscriber.TranscriptionOption.etiquetteReplacements](dictationtranscriber/transcriptionoption/etiquettereplacements.md)
+- [DictationTranscriber.TranscriptionOption.etiquetteReplacements](./etiquettereplacements.md)
   Replaces certain words and phrases with a redacted form.
 
 

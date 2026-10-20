@@ -1,7 +1,8 @@
 # imageRendererFormat
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred image renderer format for the image.
 
@@ -18,11 +19,16 @@ The preferred image renderer format for the image.
 var imageRendererFormat: UIGraphicsImageRendererFormat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIGraphicsImageRendererFormat * imageRendererFormat;
+```
+
 ## See Also
 
-- [var renderingMode: UIImage.RenderingMode](uiimage/renderingmode-swift.property.md)
+### Getting rendering information
+- [var renderingMode: UIImage.RenderingMode](./renderingmode-swift.property.md)
   A setting that determines how the app renders an image.
-- [UIImage.RenderingMode](uiimage/renderingmode-swift.enum.md)
+- [UIImage.RenderingMode](./renderingmode-swift.enum.md)
   Constants that specify the possible rendering modes for an image.
 
 

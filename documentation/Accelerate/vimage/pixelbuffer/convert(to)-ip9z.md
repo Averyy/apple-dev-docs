@@ -1,7 +1,8 @@
 # convert(to:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts the contents of the floating-point 16-bit planar pixel buffer to unsigned 16-bit planar format.
 
@@ -11,7 +12,7 @@ Converts the contents of the floating-point 16-bit planar pixel buffer to unsign
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Converts the contents of the floating-point 16-bit planar pixel buffer to unsign
 ```swift
 func convert(to destination: vImage.PixelBuffer<vImage.Planar16U>)
 ```
+
+Available when `Format` is `vImage.Planar16F`.
 
 #### Discussion
 
@@ -30,15 +33,16 @@ This function converts the source values in the range `[0.0, 1.0]` to the destin
 
 ## See Also
 
-- [func convert(to: vImage.PixelBuffer<vImage.Planar16F>)](vimage/pixelbuffer/convert(to:)-1zk6k.md)
+### Conversion between 16-bit formats
+- [func convert(to: vImage.PixelBuffer<vImage.Planar16F>)](./convert%28to%29-1zk6k.md)
   Converts the contents of the unsigned 16-bit planar pixel buffer to floating-point 16-bit planar format.
-- [func convert(to: vImage.PixelBuffer<vImage.Interleaved16Ux2>)](vimage/pixelbuffer/convert(to:)-7dx2c.md)
+- [func convert(to: vImage.PixelBuffer<vImage.Interleaved16Ux2>)](./convert%28to%29-7dx2c.md)
   Converts the contents of the floating-point 16-bit-per-channel, 2-channel interleaved pixel buffer to unsigned 16-bit-per-channel format.
-- [func convert(to: vImage.PixelBuffer<vImage.Interleaved16Fx4>)](vimage/pixelbuffer/convert(to:)-7tdb1.md)
+- [func convert(to: vImage.PixelBuffer<vImage.Interleaved16Fx4>)](./convert%28to%29-7tdb1.md)
   Converts the contents of the unsigned 16-bit-per-channel, 4-channel interleaved pixel buffer to floating-point 16-bit-per-channel format.
-- [func convert(to: vImage.PixelBuffer<vImage.Interleaved16Ux4>)](vimage/pixelbuffer/convert(to:)-3lg9p.md)
+- [func convert(to: vImage.PixelBuffer<vImage.Interleaved16Ux4>)](./convert%28to%29-3lg9p.md)
   Converts the contents of the floating-point 16-bit-per-channel, 4-channel interleaved pixel buffer to unsigned 16-bit-per-channel format.
-- [func convert(to: vImage.PixelBuffer<vImage.Interleaved16Fx2>)](vimage/pixelbuffer/convert(to:)-8u16v.md)
+- [func convert(to: vImage.PixelBuffer<vImage.Interleaved16Fx2>)](./convert%28to%29-8u16v.md)
   Converts the contents of the unsigned 16-bit-per-channel, 2-channel interleaved pixel buffer to floating-point 16-bit-per-channel format.
 
 

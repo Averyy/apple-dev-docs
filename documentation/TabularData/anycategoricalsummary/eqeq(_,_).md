@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: TabularData  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value that indicates whether the categorical summaries are equal.
 

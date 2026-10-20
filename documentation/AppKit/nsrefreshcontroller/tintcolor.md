@@ -1,7 +1,8 @@
 # tintColor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tint color for the refresh controller.
 
@@ -12,6 +13,10 @@ The tint color for the refresh controller.
 
 ```swift
 var tintColor: NSColor? { get set }
+```
+
+```objc
+@property (strong, nullable) NSColor * tintColor;
 ```
 
 #### Discussion

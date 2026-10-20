@@ -1,7 +1,8 @@
 # WAError.ServiceNotDeclaredDetails
 
 **Framework**: Wi-Fi Aware  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The optional details that describe the app service wasn’t declared.
 
@@ -19,14 +20,15 @@ struct ServiceNotDeclaredDetails
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case serviceNotDeclared(WAError.ServiceNotDeclaredDetails)](waerror/servicenotdeclared(_:).md)
+### Checking for undeclared services
+- [case serviceNotDeclared(WAError.ServiceNotDeclaredDetails)](./servicenotdeclared%28_%29.md)
   An error that occurs if your app didn’t declare the necessary services.
 
 

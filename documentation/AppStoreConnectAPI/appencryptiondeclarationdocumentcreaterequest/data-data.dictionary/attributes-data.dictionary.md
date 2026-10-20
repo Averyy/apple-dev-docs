@@ -1,7 +1,8 @@
 # AppEncryptionDeclarationDocumentCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an app encryption declaration document create request resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an app encryption declaration document create request r
 
 ## Declaration
 
-```swift
+```
 object AppEncryptionDeclarationDocumentCreateRequest.Data.Attributes
 ```
 
@@ -21,7 +22,8 @@ object AppEncryptionDeclarationDocumentCreateRequest.Data.Attributes
 
 ## See Also
 
-- [object AppEncryptionDeclarationDocumentCreateRequest.Data.Relationships](appencryptiondeclarationdocumentcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object AppEncryptionDeclarationDocumentCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

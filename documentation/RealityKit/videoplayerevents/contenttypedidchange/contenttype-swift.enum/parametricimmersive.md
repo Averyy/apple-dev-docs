@@ -1,7 +1,8 @@
 # VideoPlayerEvents.ContentTypeDidChange.ContentType.parametricImmersive
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - visionOS 26.0+

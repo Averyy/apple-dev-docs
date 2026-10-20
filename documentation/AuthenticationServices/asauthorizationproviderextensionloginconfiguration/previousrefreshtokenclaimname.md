@@ -1,7 +1,8 @@
 # previousRefreshTokenClaimName
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The claim name for the previous single sign-on token value in the authentication request.
 
@@ -14,13 +15,18 @@ The claim name for the previous single sign-on token value in the authentication
 var previousRefreshTokenClaimName: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * previousRefreshTokenClaimName;
+```
+
 ## Mentions
 
-- [Creating and validating a login request](creating-and-validating-a-login-request.md)
+- [Creating and validating a login request](../creating-and-validating-a-login-request.md)
 
 ## See Also
 
-- [var includePreviousRefreshTokenInLoginRequest: Bool](asauthorizationproviderextensionloginconfiguration/includepreviousrefreshtokeninloginrequest.md)
+### Configuring the previous refresh token
+- [var includePreviousRefreshTokenInLoginRequest: Bool](./includepreviousrefreshtokeninloginrequest.md)
   A Boolean value that indicates whether to include the previous refresh token in the authentation request.
 
 

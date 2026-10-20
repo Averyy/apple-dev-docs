@@ -1,7 +1,8 @@
 # MEDecodeFrameStatus
 
 **Framework**: MediaExtension  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents a non-error status related to a frame decode operation.
 
@@ -14,32 +15,37 @@ A type that represents a non-error status related to a frame decode operation.
 struct MEDecodeFrameStatus
 ```
 
+```c
+enum MEDecodeFrameStatus : NSUInteger;
+```
+
 ## Topics
 
 ### Creating a status
-- [init(rawValue: UInt)](medecodeframestatus/init(rawvalue:).md)
+- [init(rawValue: UInt)](./medecodeframestatus/init%28rawvalue%29.md)
   Creates a new frame decode operation status with the raw value that you specify.
 ### Inspecting a status
-- [static var frameDropped: MEDecodeFrameStatus](medecodeframestatus/framedropped.md)
+- [static var frameDropped: MEDecodeFrameStatus](./medecodeframestatus/framedropped.md)
   A frame decode operation status that indicates the system dropped the output of the frame for a reason other than an error.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [func canAccept(CMFormatDescription) -> Bool](mevideodecoder/canaccept(_:).md)
+### Decoding frames
+- [func canAccept(CMFormatDescription) -> Bool](./mevideodecoder/canaccept%28_%29.md)
   Asks the extension whether the decoder can decode frames with the format description that you specify.
-- [func decodeFrame(from: CMSampleBuffer, options: MEDecodeFrameOptions, completionHandler: (CVImageBuffer?, MEDecodeFrameStatus, (any Error)?) -> Void)](mevideodecoder/decodeframe(from:options:completionhandler:).md)
+- [func decodeFrame(from: CMSampleBuffer, options: MEDecodeFrameOptions, completionHandler: (CVImageBuffer?, MEDecodeFrameStatus, (any Error)?) -> Void)](./mevideodecoder/decodeframe%28from,options,completionhandler%29.md)
   Requests the extension to decode a video frame.
 
 

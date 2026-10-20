@@ -1,7 +1,8 @@
 # init(vendorID:productID:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+
@@ -16,6 +17,10 @@
 
 ```swift
 init(vendorID: NSNumber, productID: NSNumber)
+```
+
+```objc
+- (instancetype) initWithVendorID:(NSNumber *) vendorID productID:(NSNumber *) productID;
 ```
 
 

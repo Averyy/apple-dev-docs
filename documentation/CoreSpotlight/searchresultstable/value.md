@@ -1,7 +1,8 @@
 # SearchResultsTable.Value
 
 **Framework**: Core Spotlight  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A cell value — typed so the host app can format, sort, or export correctly.
 
@@ -21,22 +22,23 @@ enum Value
 ## Topics
 
 ### Enumeration Cases
-- [SearchResultsTable.Value.boolean(_:)](searchresultstable/value/boolean(_:).md)
-- [SearchResultsTable.Value.date(_:)](searchresultstable/value/date(_:).md)
-- [SearchResultsTable.Value.double(_:)](searchresultstable/value/double(_:).md)
-- [SearchResultsTable.Value.integer(_:)](searchresultstable/value/integer(_:).md)
-- [SearchResultsTable.Value.none](searchresultstable/value/none.md)
-- [SearchResultsTable.Value.string(_:)](searchresultstable/value/string(_:).md)
+- [SearchResultsTable.Value.boolean(_:)](./value/boolean%28_%29.md)
+- [SearchResultsTable.Value.date(_:)](./value/date%28_%29.md)
+- [SearchResultsTable.Value.double(_:)](./value/double%28_%29.md)
+- [SearchResultsTable.Value.integer(_:)](./value/integer%28_%29.md)
+- [SearchResultsTable.Value.none](./value/none.md)
+- [SearchResultsTable.Value.string(_:)](./value/string%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [SearchResultsTable.ValueType](searchresultstable/valuetype.md)
+### Getting cell details
+- [SearchResultsTable.ValueType](./valuetype.md)
 
 
 ---

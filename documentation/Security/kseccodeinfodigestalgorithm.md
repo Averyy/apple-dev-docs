@@ -1,7 +1,8 @@
 # kSecCodeInfoDigestAlgorithm
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a number indicating the cryptographic hash function.
 
@@ -15,9 +16,13 @@ A key whose value is a number indicating the cryptographic hash function.
 let kSecCodeInfoDigestAlgorithm: CFString
 ```
 
+```c
+extern CFStringRef const kSecCodeInfoDigestAlgorithm;
+```
+
 #### Discussion
 
-The value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) indicating the kind of cryptographic hash function used within the signature to seal its pieces together. See [`SecCSDigestAlgorithm`](seccsdigestalgorithm.md) for possible value.
+The value is a [`CFNumber`](../CoreFoundation/cfnumber.md) indicating the kind of cryptographic hash function used within the signature to seal its pieces together. See [`SecCSDigestAlgorithm`](./seccsdigestalgorithm.md) for possible value.
 
 
 ---

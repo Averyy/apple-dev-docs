@@ -2,6 +2,7 @@
 
 **Framework**: Vision  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A polygon that defines the boundary of an area in the image.

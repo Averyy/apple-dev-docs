@@ -1,7 +1,8 @@
 # meshType
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the mesh is rigid or driven by a deformation resource.
 

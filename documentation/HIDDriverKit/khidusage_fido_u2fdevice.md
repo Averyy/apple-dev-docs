@@ -1,23 +1,25 @@
 # kHIDUsage_FIDO_U2FDevice
 
 **Framework**: HIDDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_FIDO_U2FDevice
 ```
 
 ## See Also
 
-- [kHIDUsage_FIDO_InputData](khidusage_fido_inputdata.md)
-- [kHIDUsage_FIDO_OutputData](khidusage_fido_outputdata.md)
-- [kHIDUsage_FIDO_Undefined](khidusage_fido_undefined.md)
+### Getting the Usages
+- [kHIDUsage_FIDO_InputData](./khidusage_fido_inputdata.md)
+- [kHIDUsage_FIDO_OutputData](./khidusage_fido_outputdata.md)
+- [kHIDUsage_FIDO_Undefined](./khidusage_fido_undefined.md)
 
 
 ---

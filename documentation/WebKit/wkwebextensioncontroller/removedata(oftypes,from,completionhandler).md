@@ -1,7 +1,8 @@
 # removeData(ofTypes:from:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes extension data of the given types for the given data records.
 
@@ -15,7 +16,15 @@ Removes extension data of the given types for the given data records.
 ## Declaration
 
 ```swift
+func removeData(ofTypes dataTypes: Set<WKWebExtension.DataType>, from dataRecords: [WKWebExtension.DataRecord], completionHandler: @escaping () -> Void)
+```
+
+```swift
 func removeData(ofTypes dataTypes: Set<WKWebExtension.DataType>, from dataRecords: [WKWebExtension.DataRecord]) async
+```
+
+```objc
+- (void) removeDataOfTypes:(NSSet<NSString *> *) dataTypes fromDataRecords:(NSArray<WKWebExtensionDataRecord *> *) dataRecords completionHandler:(void (^)()) completionHandler;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # default
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Apply the default style to the option’s button.
 

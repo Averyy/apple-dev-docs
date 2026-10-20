@@ -1,12 +1,13 @@
 # addColumn()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a column to the right of the last column.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,25 +15,30 @@ Adds a column to the right of the last column.
 func addColumn()
 ```
 
+```objc
+- (void) addColumn;
+```
+
 ## See Also
 
-- [var selectedColumn: Int](nsbrowser/selectedcolumn.md)
+### Managing Columns
+- [var selectedColumn: Int](./selectedcolumn.md)
   The index of the last column with a selected item.
-- [var lastColumn: Int](nsbrowser/lastcolumn.md)
+- [var lastColumn: Int](./lastcolumn.md)
   The index of the last column loaded.
-- [var firstVisibleColumn: Int](nsbrowser/firstvisiblecolumn.md)
+- [var firstVisibleColumn: Int](./firstvisiblecolumn.md)
   The index of the first visible column.
-- [var numberOfVisibleColumns: Int](nsbrowser/numberofvisiblecolumns.md)
+- [var numberOfVisibleColumns: Int](./numberofvisiblecolumns.md)
   The number of visible columns.
-- [var lastVisibleColumn: Int](nsbrowser/lastvisiblecolumn.md)
+- [var lastVisibleColumn: Int](./lastvisiblecolumn.md)
   The index of the last visible column.
-- [func validateVisibleColumns()](nsbrowser/validatevisiblecolumns.md)
+- [func validateVisibleColumns()](./validatevisiblecolumns%28%29.md)
   Validates the browser’s visible columns.
-- [var isLoaded: Bool](nsbrowser/isloaded.md)
+- [var isLoaded: Bool](./isloaded.md)
   A Boolean that indicates whether column 0 is loaded.
-- [func loadColumnZero()](nsbrowser/loadcolumnzero.md)
+- [func loadColumnZero()](./loadcolumnzero%28%29.md)
   Loads column 0; unloads previously loaded columns.
-- [func reloadColumn(Int)](nsbrowser/reloadcolumn(_:).md)
+- [func reloadColumn(Int)](./reloadcolumn%28_%29.md)
   Reloads the given column.
 
 

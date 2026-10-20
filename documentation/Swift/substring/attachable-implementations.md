@@ -1,11 +1,12 @@
 # Attachable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func withUnsafeBytes<R>(for: borrowing Attachment<Substring>, (UnsafeRawBufferPointer) throws -> R) throws -> R](substring/withunsafebytes(for:_:).md)
+- [func withUnsafeBytes<R>(for: borrowing Attachment<Substring>, (UnsafeRawBufferPointer) throws -> R) throws -> R](./withunsafebytes%28for,_%29.md)
 
 
 ---

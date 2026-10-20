@@ -1,7 +1,8 @@
 # jointID
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the constrained rig joint.
 

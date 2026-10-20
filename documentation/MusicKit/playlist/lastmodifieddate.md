@@ -1,7 +1,8 @@
 # lastModifiedDate
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The playlist’s most recent modification date.
 

@@ -1,7 +1,8 @@
 # codesignError
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 During a page fault, indicates that the page was rejected as a result of a signature check.
 

@@ -1,7 +1,8 @@
 # kSecTransformErrorNotInitializedCorrectly
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A required initialization is missing: It is most likely a missing required attribute.
 
@@ -9,7 +10,7 @@ A required initialization is missing: It is most likely a missing required attri
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.0+
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 13.0
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
@@ -18,6 +19,10 @@ A required initialization is missing: It is most likely a missing required attri
 
 ```swift
 var kSecTransformErrorNotInitializedCorrectly: CFIndex { get }
+```
+
+```c
+kSecTransformErrorNotInitializedCorrectly
 ```
 
 

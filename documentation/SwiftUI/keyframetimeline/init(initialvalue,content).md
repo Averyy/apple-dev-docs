@@ -1,7 +1,8 @@
 # init(initialValue:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance using the initial value and content that you provide.
 

@@ -1,12 +1,13 @@
 # NSBitmapImageRep.TIFFCompression.next
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 NeXT compressed. Supported for input only.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,26 @@ NeXT compressed. Supported for input only.
 case next
 ```
 
+```c
+NSTIFFCompressionNEXT
+```
+
 ## See Also
 
-- [NSBitmapImageRep.TIFFCompression.none](nsbitmapimagerep/tiffcompression/none.md)
+### Constants
+- [NSBitmapImageRep.TIFFCompression.none](./none.md)
   No compression.
-- [NSBitmapImageRep.TIFFCompression.ccittfax3](nsbitmapimagerep/tiffcompression/ccittfax3.md)
+- [NSBitmapImageRep.TIFFCompression.ccittfax3](./ccittfax3.md)
   CCITT Fax Group 3 compression.
-- [NSBitmapImageRep.TIFFCompression.ccittfax4](nsbitmapimagerep/tiffcompression/ccittfax4.md)
+- [NSBitmapImageRep.TIFFCompression.ccittfax4](./ccittfax4.md)
   CCITT Fax Group 4 compression.
-- [NSBitmapImageRep.TIFFCompression.lzw](nsbitmapimagerep/tiffcompression/lzw.md)
+- [NSBitmapImageRep.TIFFCompression.lzw](./lzw.md)
   LZW compression.
-- [NSBitmapImageRep.TIFFCompression.jpeg](nsbitmapimagerep/tiffcompression/jpeg.md)
+- [NSBitmapImageRep.TIFFCompression.jpeg](./jpeg.md)
   JPEG compression. No longer supported for input or output.
-- [NSBitmapImageRep.TIFFCompression.packBits](nsbitmapimagerep/tiffcompression/packbits.md)
+- [NSBitmapImageRep.TIFFCompression.packBits](./packbits.md)
   PackBits compression.
-- [NSBitmapImageRep.TIFFCompression.oldJPEG](nsbitmapimagerep/tiffcompression/oldjpeg.md)
+- [NSBitmapImageRep.TIFFCompression.oldJPEG](./oldjpeg.md)
   Old JPEG compression. No longer supported for input or output.
 
 

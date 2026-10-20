@@ -1,7 +1,8 @@
 # blending
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The blending mode derived from the ShaderGraph material.
 
@@ -19,7 +20,8 @@ var blending: LowLevelMaterialResource.ShaderGraphOutput.Blending { get }
 
 ## See Also
 
-- [LowLevelMaterialResource.ShaderGraphOutput.Blending](lowlevelmaterialresource/shadergraphoutput/blending-swift.enum.md)
+### Configuring blending
+- [LowLevelMaterialResource.ShaderGraphOutput.Blending](./blending-swift.enum.md)
   Indicates the blending mode of the ShaderGraph material.
 
 

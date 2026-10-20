@@ -1,7 +1,8 @@
 # UNNotificationAttachment
 
 **Framework**: User Notifications  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A media file associated with a notification.
 
@@ -19,9 +20,13 @@ A media file associated with a notification.
 class UNNotificationAttachment
 ```
 
+```objc
+@interface UNNotificationAttachment : NSObject
+```
+
 #### Overview
 
-Create a [`UNNotificationAttachment`](unnotificationattachment.md) object when you want to include audio, image, or video content together in an alert-based notification. When creating the [`UNNotificationAttachment`](unnotificationattachment.md) object, the file you specify must be on disk, and the file format must be one of the supported types.
+Create a [`UNNotificationAttachment`](./unnotificationattachment.md) object when you want to include audio, image, or video content together in an alert-based notification. When creating the [`UNNotificationAttachment`](./unnotificationattachment.md) object, the file you specify must be on disk, and the file format must be one of the supported types.
 
 You’re responsible for supplying attachments before the system displays your notification’s alert. For local notifications, add attachments when creating the notification’s content. For remote notifications, use a notification service app extension to download the attached files and then add them to the notification’s content before delivery.
 
@@ -35,68 +40,69 @@ Table 1. Supported attachment file types
 
 | Attachment | Supported file types | Maximum size |
 | --- | --- | --- |
-| Audio | `kUTTypeAudioInterchangeFileFormat` ![None](/images/com.apple.usernotifications/spacer.png) `kUTTypeWaveformAudio` ![None](/images/com.apple.usernotifications/spacer.png) `kUTTypeMP3` ![None](/images/com.apple.usernotifications/spacer.png) `kUTTypeMPEG4Audio` | 5 MB |
-| Image | `kUTTypeJPEG` ![None](/images/com.apple.usernotifications/spacer.png) `kUTTypeGIF` ![None](/images/com.apple.usernotifications/spacer.png) `kUTTypePNG` | 10 MB |
-| Movie | `kUTTypeMPEG` ![None](/images/com.apple.usernotifications/spacer.png) `kUTTypeMPEG2Video` ![None](/images/com.apple.usernotifications/spacer.png) `kUTTypeMPEG4` ![None](/images/com.apple.usernotifications/spacer.png) `kUTTypeAVIMovie` | 50 MB |
+| Audio | `kUTTypeAudioInterchangeFileFormat` ![](https://developer.apple.com/tutorials/images/com.apple.usernotifications/spacer.png) `kUTTypeWaveformAudio` ![](https://developer.apple.com/tutorials/images/com.apple.usernotifications/spacer.png) `kUTTypeMP3` ![](https://developer.apple.com/tutorials/images/com.apple.usernotifications/spacer.png) `kUTTypeMPEG4Audio` | 5 MB |
+| Image | `kUTTypeJPEG` ![](https://developer.apple.com/tutorials/images/com.apple.usernotifications/spacer.png) `kUTTypeGIF` ![](https://developer.apple.com/tutorials/images/com.apple.usernotifications/spacer.png) `kUTTypePNG` | 10 MB |
+| Movie | `kUTTypeMPEG` ![](https://developer.apple.com/tutorials/images/com.apple.usernotifications/spacer.png) `kUTTypeMPEG2Video` ![](https://developer.apple.com/tutorials/images/com.apple.usernotifications/spacer.png) `kUTTypeMPEG4` ![](https://developer.apple.com/tutorials/images/com.apple.usernotifications/spacer.png) `kUTTypeAVIMovie` | 50 MB |
 
-When creating an attachment, you can specify optional details about how to present the thumbnail image for the image or movie. Use the [`UNNotificationAttachmentOptionsThumbnailClippingRectKey`](unnotificationattachmentoptionsthumbnailclippingrectkey.md) option to use only the specified portion of an image as a thumbnail. For animated images and movies, use the [`UNNotificationAttachmentOptionsThumbnailTimeKey`](unnotificationattachmentoptionsthumbnailtimekey.md) option to select which frame to use for the thumbnail image.
+When creating an attachment, you can specify optional details about how to present the thumbnail image for the image or movie. Use the [`UNNotificationAttachmentOptionsThumbnailClippingRectKey`](./unnotificationattachmentoptionsthumbnailclippingrectkey.md) option to use only the specified portion of an image as a thumbnail. For animated images and movies, use the [`UNNotificationAttachmentOptionsThumbnailTimeKey`](./unnotificationattachmentoptionsthumbnailtimekey.md) option to select which frame to use for the thumbnail image.
 
-The system limits the amount of storage space allocated for attachments for each app. To delete attachments, use the methods of the [`UNUserNotificationCenter`](unusernotificationcenter.md) class to remove the notification requests that contain those attachments.
+The system limits the amount of storage space allocated for attachments for each app. To delete attachments, use the methods of the [`UNUserNotificationCenter`](./unusernotificationcenter.md) class to remove the notification requests that contain those attachments.
 
 ## Topics
 
 ### Creating an Attachment
-- [convenience init(identifier: String, url: URL, options: [AnyHashable : Any]?) throws](unnotificationattachment/init(identifier:url:options:)-83grx.md)
+- [convenience init(identifier: String, url: URL, options: [AnyHashable : Any]?) throws](./unnotificationattachment/init%28identifier,url,options%29-83grx.md)
   Creates an attachment object from the specified file and options.
-- [let UNNotificationAttachmentOptionsTypeHintKey: String](unnotificationattachmentoptionstypehintkey.md)
+- [let UNNotificationAttachmentOptionsTypeHintKey: String](./unnotificationattachmentoptionstypehintkey.md)
   A hint about an attachment’s file type.
-- [let UNNotificationAttachmentOptionsThumbnailHiddenKey: String](unnotificationattachmentoptionsthumbnailhiddenkey.md)
+- [let UNNotificationAttachmentOptionsThumbnailHiddenKey: String](./unnotificationattachmentoptionsthumbnailhiddenkey.md)
   A Boolean value indicating whether the system hides the attachment’s thumbnail.
-- [let UNNotificationAttachmentOptionsThumbnailClippingRectKey: String](unnotificationattachmentoptionsthumbnailclippingrectkey.md)
+- [let UNNotificationAttachmentOptionsThumbnailClippingRectKey: String](./unnotificationattachmentoptionsthumbnailclippingrectkey.md)
   The clipping rectangle for a thumbnail image.
-- [let UNNotificationAttachmentOptionsThumbnailTimeKey: String](unnotificationattachmentoptionsthumbnailtimekey.md)
+- [let UNNotificationAttachmentOptionsThumbnailTimeKey: String](./unnotificationattachmentoptionsthumbnailtimekey.md)
   The frame number of an animation to use as a thumbnail image.
 ### Getting the Attachment Contents
-- [var identifier: String](unnotificationattachment/identifier.md)
+- [var identifier: String](./unnotificationattachment/identifier.md)
   The unique identifier for the attachment.
-- [var url: URL](unnotificationattachment/url.md)
+- [var url: URL](./unnotificationattachment/url.md)
   The URL of the file for this attachment.
-- [var type: String](unnotificationattachment/type.md)
+- [var type: String](./unnotificationattachment/type.md)
   The UTI type of the attachment.
 ### Initializers
-- [init?(coder: NSCoder)](unnotificationattachment/init(coder:).md)
-- [convenience init(identifier: String, URL: URL, options: [AnyHashable : Any]?) throws](unnotificationattachment/init(identifier:url:options:)-7oony.md)
+- [init?(coder: NSCoder)](./unnotificationattachment/init%28coder%29.md)
+- [convenience init(identifier: String, URL: URL, options: [AnyHashable : Any]?) throws](./unnotificationattachment/init%28identifier,url,options%29-7oony.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Implementing communication notifications](implementing-communication-notifications.md)
+### Notification content
+- [Implementing communication notifications](./implementing-communication-notifications.md)
   Configure and display your app’s communication notifications by using intents.
-- [protocol UNNotificationContentProviding](unnotificationcontentproviding.md)
+- [protocol UNNotificationContentProviding](./unnotificationcontentproviding.md)
   A protocol the system uses to provide context relevant to user notifications.
-- [class UNNotificationActionIcon](unnotificationactionicon.md)
+- [class UNNotificationActionIcon](./unnotificationactionicon.md)
   An icon associated with an action.
-- [class UNMutableNotificationContent](unmutablenotificationcontent.md)
+- [class UNMutableNotificationContent](./unmutablenotificationcontent.md)
   The editable content for a notification.
-- [class UNNotificationContent](unnotificationcontent.md)
+- [class UNNotificationContent](./unnotificationcontent.md)
   The uneditable content of a notification.
-- [class UNNotificationSound](unnotificationsound.md)
+- [class UNNotificationSound](./unnotificationsound.md)
   The sound played upon delivery of a notification.
-- [struct UNNotificationSoundName](unnotificationsoundname.md)
+- [struct UNNotificationSoundName](./unnotificationsoundname.md)
   A string providing the name of a sound file.
 
 

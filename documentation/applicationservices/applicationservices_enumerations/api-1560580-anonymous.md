@@ -5,10 +5,10 @@
 ## Topics
 
 ### Constants
-- [var cmBradfordChromaticAdaptation: Int](cmbradfordchromaticadaptation.md)
-- [var cmLinearChromaticAdaptation: Int](cmlinearchromaticadaptation.md)
-- [var cmUseDefaultChromaticAdaptation: Int](cmusedefaultchromaticadaptation.md)
-- [var cmVonKriesChromaticAdaptation: Int](cmvonkrieschromaticadaptation.md)
+- [var cmBradfordChromaticAdaptation: Int](../cmbradfordchromaticadaptation.md)
+- [var cmLinearChromaticAdaptation: Int](../cmlinearchromaticadaptation.md)
+- [var cmUseDefaultChromaticAdaptation: Int](../cmusedefaultchromaticadaptation.md)
+- [var cmVonKriesChromaticAdaptation: Int](../cmvonkrieschromaticadaptation.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # CMClockGetAnchorTime(_:clockTimeOut:referenceClockTimeOut:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the current time from a clock and the matching time from the clock’s reference clock.
 
@@ -20,6 +21,10 @@ Returns the current time from a clock and the matching time from the clock’s r
 func CMClockGetAnchorTime(_ clock: CMClock, clockTimeOut: UnsafeMutablePointer<CMTime>, referenceClockTimeOut: UnsafeMutablePointer<CMTime>) -> OSStatus
 ```
 
+```c
+extern OSStatus CMClockGetAnchorTime(CMClockRef clock, CMTime *clockTimeOut, CMTime *referenceClockTimeOut);
+```
+
 #### Discussion
 
 To make practical use of this, you may need to know what the clock’s reference clock is.
@@ -32,11 +37,12 @@ To make practical use of this, you may need to know what the clock’s reference
 
 ## See Also
 
-- [func CMClockGetTime(CMClock) -> CMTime](cmclockgettime(_:).md)
+### Accessing and Converting Time
+- [func CMClockGetTime(CMClock) -> CMTime](./cmclockgettime%28_%29.md)
   Returns the current time from a clock.
-- [func CMClockConvertHostTimeToSystemUnits(CMTime) -> UInt64](cmclockconverthosttimetosystemunits(_:).md)
+- [func CMClockConvertHostTimeToSystemUnits(CMTime) -> UInt64](./cmclockconverthosttimetosystemunits%28_%29.md)
   Converts a host time from a core media time structure to the host time’s native units.
-- [func CMClockMakeHostTimeFromSystemUnits(UInt64) -> CMTime](cmclockmakehosttimefromsystemunits(_:).md)
+- [func CMClockMakeHostTimeFromSystemUnits(UInt64) -> CMTime](./cmclockmakehosttimefromsystemunits%28_%29.md)
   Converts a host time from native units to a core media time structure.
 
 

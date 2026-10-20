@@ -1,7 +1,8 @@
 # NSManagedObjectContext.WillSaveMessage
 
 **Framework**: Core Data  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Posted before a main queue context saves.
 
@@ -27,13 +28,13 @@ Only use this message type for contexts with `NSMainQueueConcurrencyType`.
 ## Topics
 
 ### Instance Properties
-- [let context: NSManagedObjectContext](nsmanagedobjectcontext/willsavemessage/context.md)
+- [let context: NSManagedObjectContext](./willsavemessage/context.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

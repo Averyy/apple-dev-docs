@@ -1,7 +1,8 @@
 # downloadAssets()
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Initiates a download of the mlmodel assets required for Style Transfer training. This will be performed automatically if needed at training time, but can be run independently prior to training.
 

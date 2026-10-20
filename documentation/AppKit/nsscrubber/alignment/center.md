@@ -1,7 +1,8 @@
 # NSScrubber.Alignment.center
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Center alignment of items within the scrubber.
 
@@ -14,13 +15,18 @@ Center alignment of items within the scrubber.
 case center
 ```
 
+```c
+NSScrubberAlignmentCenter
+```
+
 ## See Also
 
-- [NSScrubber.Alignment.leading](nsscrubber/alignment/leading.md)
+### Constants
+- [NSScrubber.Alignment.leading](./leading.md)
   Leading alignment of items within the scrubber.
-- [NSScrubber.Alignment.none](nsscrubber/alignment/none.md)
+- [NSScrubber.Alignment.none](./none.md)
   No preference for item alignment.
-- [NSScrubber.Alignment.trailing](nsscrubber/alignment/trailing.md)
+- [NSScrubber.Alignment.trailing](./trailing.md)
   Trailing alignment of items within the scrubber.
 
 

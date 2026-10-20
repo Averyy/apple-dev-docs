@@ -1,7 +1,8 @@
 # string
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL derived from the components object, in string form.
 
@@ -22,9 +23,10 @@ var string: String? { get }
 
 ## See Also
 
-- [var url: URL?](urlcomponents/url.md)
+### Getting the URL
+- [var url: URL?](./url.md)
   A URL created from the components.
-- [func url(relativeTo: URL?) -> URL?](urlcomponents/url(relativeto:).md)
+- [func url(relativeTo: URL?) -> URL?](./url%28relativeto%29.md)
   Returns a URL based on the component settings and relative to a given base URL.
 
 

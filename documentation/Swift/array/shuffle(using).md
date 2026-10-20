@@ -1,7 +1,8 @@
 # shuffle(using:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Shuffles the collection in place, using the given generator as a source for randomness.
 
@@ -20,6 +21,8 @@ Shuffles the collection in place, using the given generator as a source for rand
 mutating func shuffle<T>(using generator: inout T) where T : RandomNumberGenerator
 ```
 
+Available when `Self` conforms to `RandomAccessCollection`.
+
 #### Discussion
 
 You use this method to randomize the elements of a collection when you are using a custom random number generator. For example, you can use the `shuffle(using:)` method to randomly reorder the elements of an array.
@@ -30,7 +33,7 @@ names.shuffle(using: &myGenerator)
 // names == ["Sofía", "Alejandro", "Camila", "Luis", "Diego", "Luciana"]
 ```
 
-> **Note**: O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(*n*), where *n* is the length of the collection.
 
 > **Note**: The algorithm used to shuffle a collection may change in a future version of Swift. If you’re passing a generator that results in the same shuffled order each time you run your program, that sequence may change when your program is compiled using a different version of Swift.
 
@@ -40,27 +43,28 @@ names.shuffle(using: &myGenerator)
 
 ## See Also
 
-- [func sort()](array/sort.md)
+### Reordering an Array’s Elements
+- [func sort()](./sort%28%29.md)
   Sorts the collection in place.
-- [func sort(by: (Self.Element, Self.Element) throws -> Bool) rethrows](array/sort(by:).md)
+- [func sort(by: (Self.Element, Self.Element) throws -> Bool) rethrows](./sort%28by%29.md)
   Sorts the collection in place, using the given predicate as the comparison between elements.
-- [func sorted() -> [Self.Element]](array/sorted.md)
+- [func sorted() -> [Self.Element]](./sorted%28%29.md)
   Returns the elements of the sequence, sorted.
-- [func sorted(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> [Self.Element]](array/sorted(by:).md)
+- [func sorted(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> [Self.Element]](./sorted%28by%29.md)
   Returns the elements of the sequence, sorted using the given predicate as the comparison between elements.
-- [func reverse()](array/reverse.md)
+- [func reverse()](./reverse%28%29.md)
   Reverses the elements of the collection in place.
-- [func reversed() -> ReversedCollection<Self>](array/reversed.md)
+- [func reversed() -> ReversedCollection<Self>](./reversed%28%29.md)
   Returns a view presenting the elements of the collection in reverse order.
-- [func shuffle()](array/shuffle.md)
+- [func shuffle()](./shuffle%28%29.md)
   Shuffles the collection in place.
-- [func shuffled() -> [Self.Element]](array/shuffled.md)
+- [func shuffled() -> [Self.Element]](./shuffled%28%29.md)
   Returns the elements of the sequence, shuffled.
-- [func shuffled<T>(using: inout T) -> [Self.Element]](array/shuffled(using:).md)
+- [func shuffled<T>(using: inout T) -> [Self.Element]](./shuffled%28using%29.md)
   Returns the elements of the sequence, shuffled using the given generator as a source for randomness.
-- [func partition(by: (Self.Element) throws -> Bool) rethrows -> Self.Index](array/partition(by:)-90po8.md)
+- [func partition(by: (Self.Element) throws -> Bool) rethrows -> Self.Index](./partition%28by%29-90po8.md)
   Reorders the elements of the collection such that all the elements that match the given predicate are after all the elements that don’t match.
-- [func swapAt(Self.Index, Self.Index)](array/swapat(_:_:).md)
+- [func swapAt(Self.Index, Self.Index)](./swapat%28_,_%29.md)
   Exchanges the values at the specified indices of the collection.
 
 

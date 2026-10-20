@@ -1,7 +1,8 @@
 # masterOffset(segment:point:coordinate:)
 
 **Framework**: hvf  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The offset of a coordinate in the masterVector
 

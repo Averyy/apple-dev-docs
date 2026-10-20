@@ -1,7 +1,8 @@
 # toolTip
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tooltip for this window tab.
 
@@ -14,9 +15,13 @@ The tooltip for this window tab.
 var toolTip: String! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) NSString * toolTip;
+```
+
 #### Discussion
 
-By default, the window tab’s tooltip displays its [`title`](nswindowtab/title.md) string. Once customized, setting the [`toolTip`](nswindowtab/tooltip.md) property to [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) causes it to follow the [`title`](nswindowtab/title.md) property again.
+By default, the window tab’s tooltip displays its [`title`](./title.md) string. Once customized, setting the [`toolTip`](./tooltip.md) property to [`nil`](../../ObjectiveC/nil-227m0.md) causes it to follow the [`title`](./title.md) property again.
 
 
 ---

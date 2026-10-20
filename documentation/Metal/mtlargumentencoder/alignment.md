@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The alignment, in bytes, required for storing the encoded resources of an argument buffer.
@@ -18,6 +19,10 @@ The alignment, in bytes, required for storing the encoded resources of an argume
 
 ```swift
 var alignment: Int { get }
+```
+
+```objc
+@property (readonly) NSUInteger alignment;
 ```
 
 

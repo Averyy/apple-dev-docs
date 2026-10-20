@@ -1,7 +1,8 @@
 # MPSGraphGRUDescriptor
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The class that defines the parameters for a gated recurrent unit (GRU) operation.
 
@@ -19,83 +20,88 @@ The class that defines the parameters for a gated recurrent unit (GRU) operation
 class MPSGraphGRUDescriptor
 ```
 
+```objc
+@interface MPSGraphGRUDescriptor : MPSGraphObject
+```
+
 #### Overview
 
-Use this descriptor with the following [`MPSGraph`](mpsgraph.md) methods:
+Use this descriptor with the following [`MPSGraph`](./mpsgraph.md) methods:
 
-- [`GRU(_:recurrentWeight:inputWeight:bias:descriptor:name:)`](mpsgraph/gru(_:recurrentweight:inputweight:bias:descriptor:name:).md)
-- [`GRU(_:recurrentWeight:inputWeight:bias:initState:descriptor:name:)`](mpsgraph/gru(_:recurrentweight:inputweight:bias:initstate:descriptor:name:).md)
-- [`GRU(_:recurrentWeight:inputWeight:bias:initState:mask:secondaryBias:descriptor:name:)`](mpsgraph/gru(_:recurrentweight:inputweight:bias:initstate:mask:secondarybias:descriptor:name:).md)
-- [`GRUGradients(_:recurrentWeight:sourceGradient:zState:outputFwd:inputWeight:bias:descriptor:name:)`](mpsgraph/grugradients(_:recurrentweight:sourcegradient:zstate:outputfwd:inputweight:bias:descriptor:name:).md)
-- [`GRUGradients(_:recurrentWeight:sourceGradient:zState:outputFwd:inputWeight:bias:initState:descriptor:name:)`](mpsgraph/grugradients(_:recurrentweight:sourcegradient:zstate:outputfwd:inputweight:bias:initstate:descriptor:name:).md)
-- [`GRUGradients(_:recurrentWeight:sourceGradient:zState:outputFwd:stateGradient:inputWeight:bias:initState:mask:secondaryBias:descriptor:name:)`](mpsgraph/grugradients(_:recurrentweight:sourcegradient:zstate:outputfwd:stategradient:inputweight:bias:initstate:mask:secondarybias:descriptor:name:).md)
+- [`GRU(_:recurrentWeight:inputWeight:bias:descriptor:name:)`](./mpsgraph/gru%28_,recurrentweight,inputweight,bias,descriptor,name%29.md)
+- [`GRU(_:recurrentWeight:inputWeight:bias:initState:descriptor:name:)`](./mpsgraph/gru%28_,recurrentweight,inputweight,bias,initstate,descriptor,name%29.md)
+- [`GRU(_:recurrentWeight:inputWeight:bias:initState:mask:secondaryBias:descriptor:name:)`](./mpsgraph/gru%28_,recurrentweight,inputweight,bias,initstate,mask,secondarybias,descriptor,name%29.md)
+- [`GRUGradients(_:recurrentWeight:sourceGradient:zState:outputFwd:inputWeight:bias:descriptor:name:)`](./mpsgraph/grugradients%28_,recurrentweight,sourcegradient,zstate,outputfwd,inputweight,bias,descriptor,name%29.md)
+- [`GRUGradients(_:recurrentWeight:sourceGradient:zState:outputFwd:inputWeight:bias:initState:descriptor:name:)`](./mpsgraph/grugradients%28_,recurrentweight,sourcegradient,zstate,outputfwd,inputweight,bias,initstate,descriptor,name%29.md)
+- [`GRUGradients(_:recurrentWeight:sourceGradient:zState:outputFwd:stateGradient:inputWeight:bias:initState:mask:secondaryBias:descriptor:name:)`](./mpsgraph/grugradients%28_,recurrentweight,sourcegradient,zstate,outputfwd,stategradient,inputweight,bias,initstate,mask,secondarybias,descriptor,name%29.md)
 
 ## Topics
 
 ### Instance Properties
-- [var bidirectional: Bool](mpsgraphgrudescriptor/bidirectional.md)
+- [var bidirectional: Bool](./mpsgraphgrudescriptor/bidirectional.md)
   A parameter that defines a bidirectional GRU layer.
-- [var flipZ: Bool](mpsgraphgrudescriptor/flipz.md)
+- [var flipZ: Bool](./mpsgraphgrudescriptor/flipz.md)
   A parameter that chooses between two variants for the final output computation.
-- [var outputGateActivation: MPSGraphRNNActivation](mpsgraphgrudescriptor/outputgateactivation.md)
+- [var outputGateActivation: MPSGraphRNNActivation](./mpsgraphgrudescriptor/outputgateactivation.md)
   A parameter that defines the activation function to use with the output-gate of the GRU operation.
-- [var resetAfter: Bool](mpsgraphgrudescriptor/resetafter.md)
+- [var resetAfter: Bool](./mpsgraphgrudescriptor/resetafter.md)
   A parameter that chooses between two variants for the reset gate computation.
-- [var resetGateActivation: MPSGraphRNNActivation](mpsgraphgrudescriptor/resetgateactivation.md)
+- [var resetGateActivation: MPSGraphRNNActivation](./mpsgraphgrudescriptor/resetgateactivation.md)
   A parameter that defines the activation function to use with the reset-gate of the GRU operation.
-- [var resetGateFirst: Bool](mpsgraphgrudescriptor/resetgatefirst.md)
+- [var resetGateFirst: Bool](./mpsgraphgrudescriptor/resetgatefirst.md)
   A parameter that controls the internal order of the GRU gates.
-- [var reverse: Bool](mpsgraphgrudescriptor/reverse.md)
+- [var reverse: Bool](./mpsgraphgrudescriptor/reverse.md)
   A parameter that defines the time direction of the input sequence.
-- [var training: Bool](mpsgraphgrudescriptor/training.md)
+- [var training: Bool](./mpsgraphgrudescriptor/training.md)
   A parameter that enables the GRU layer to support training.
-- [var updateGateActivation: MPSGraphRNNActivation](mpsgraphgrudescriptor/updategateactivation.md)
+- [var updateGateActivation: MPSGraphRNNActivation](./mpsgraphgrudescriptor/updategateactivation.md)
   A parameter that defines the activation function to use with the update-gate of the GRU operation.
 
 ## Relationships
 
 ### Inherits From
-- [MPSGraphObject](mpsgraphobject.md)
+- [MPSGraphObject](./mpsgraphobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSGraph](mpsgraph.md)
+### Classes
+- [class MPSGraph](./mpsgraph.md)
   The optimized representation of a compute graph of operations and tensors.
-- [class MPSGraphCompilationDescriptor](mpsgraphcompilationdescriptor.md)
+- [class MPSGraphCompilationDescriptor](./mpsgraphcompilationdescriptor.md)
   A class that consists of all the levers for compiling graphs.
-- [class MPSGraphConvolution2DOpDescriptor](mpsgraphconvolution2dopdescriptor.md)
+- [class MPSGraphConvolution2DOpDescriptor](./mpsgraphconvolution2dopdescriptor.md)
   A class that describes the properties of a 2D-convolution operator.
-- [class MPSGraphConvolution3DOpDescriptor](mpsgraphconvolution3dopdescriptor.md)
+- [class MPSGraphConvolution3DOpDescriptor](./mpsgraphconvolution3dopdescriptor.md)
   A class that describes the properties of a 3D-convolution operator.
-- [class MPSGraphCreateSparseOpDescriptor](mpsgraphcreatesparseopdescriptor.md)
+- [class MPSGraphCreateSparseOpDescriptor](./mpsgraphcreatesparseopdescriptor.md)
   A class that describes the properties of a create sparse operation.
-- [class MPSGraphDepthwiseConvolution2DOpDescriptor](mpsgraphdepthwiseconvolution2dopdescriptor.md)
+- [class MPSGraphDepthwiseConvolution2DOpDescriptor](./mpsgraphdepthwiseconvolution2dopdescriptor.md)
   A class that defines the parameters for  a 2D-depthwise convolution operation.
-- [class MPSGraphDepthwiseConvolution3DOpDescriptor](mpsgraphdepthwiseconvolution3dopdescriptor.md)
+- [class MPSGraphDepthwiseConvolution3DOpDescriptor](./mpsgraphdepthwiseconvolution3dopdescriptor.md)
   The class that defines the parameters for a 3D-depthwise convolution operation.
-- [class MPSGraphDevice](mpsgraphdevice.md)
+- [class MPSGraphDevice](./mpsgraphdevice.md)
   A class that describes the compute device.
-- [class MPSGraphExecutable](mpsgraphexecutable.md)
+- [class MPSGraphExecutable](./mpsgraphexecutable.md)
   The compiled representation of a compute graph executable.
-- [class MPSGraphExecutableExecutionDescriptor](mpsgraphexecutableexecutiondescriptor.md)
+- [class MPSGraphExecutableExecutionDescriptor](./mpsgraphexecutableexecutiondescriptor.md)
   A class that consists of all the levers  to synchronize and schedule executable execution.
-- [class MPSGraphExecutableSerializationDescriptor](mpsgraphexecutableserializationdescriptor.md)
+- [class MPSGraphExecutableSerializationDescriptor](./mpsgraphexecutableserializationdescriptor.md)
   A class that consists of all the levers  to serialize an executable.
-- [class MPSGraphExecutionDescriptor](mpsgraphexecutiondescriptor.md)
+- [class MPSGraphExecutionDescriptor](./mpsgraphexecutiondescriptor.md)
   A class that consists of all the levers  to synchronize and schedule graph execution.
-- [class MPSGraphFFTDescriptor](mpsgraphfftdescriptor.md)
+- [class MPSGraphFFTDescriptor](./mpsgraphfftdescriptor.md)
   The class that defines the parameters for a fast Fourier transform (FFT) operation.
-- [class MPSGraphImToColOpDescriptor](mpsgraphimtocolopdescriptor.md)
+- [class MPSGraphImToColOpDescriptor](./mpsgraphimtocolopdescriptor.md)
   The class that defines the parameters for an image to column or column to image operation.
-- [class MPSGraphLSTMDescriptor](mpsgraphlstmdescriptor.md)
+- [class MPSGraphLSTMDescriptor](./mpsgraphlstmdescriptor.md)
   The class that defines the parameters for a long short-term memory (LSTM) operation.
 
 

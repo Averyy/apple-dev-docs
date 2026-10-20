@@ -1,7 +1,8 @@
 # clearAssetInfo(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes `key` from the asset info dictionary.
 

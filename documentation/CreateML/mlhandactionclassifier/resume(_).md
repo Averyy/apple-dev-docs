@@ -1,7 +1,8 @@
 # resume(_:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Begins or continues an asynchronous hand action classifier’s training session.
 
@@ -20,19 +21,20 @@ static func resume(_ session: MLTrainingSession<MLHandActionClassifier>) throws 
 
 #### Return Value
 
-An [`MLJob`](mljob.md) that represents the hand action training session.
+An [`MLJob`](../mljob.md) that represents the hand action training session.
 
 ## Parameters
 
-- `session`: An [`MLTrainingSession`](mltrainingsession.md) instance that represents the training session.
+- `session`: An [`MLTrainingSession`](../mltrainingsession.md) instance that represents the training session.
 
 ## See Also
 
-- [static func train(trainingData: MLHandActionClassifier.DataSource, parameters: MLHandActionClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLHandActionClassifier>](mlhandactionclassifier/train(trainingdata:parameters:sessionparameters:).md)
+### Training a hand action classifier asynchronously
+- [static func train(trainingData: MLHandActionClassifier.DataSource, parameters: MLHandActionClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLHandActionClassifier>](./train%28trainingdata,parameters,sessionparameters%29.md)
   Begins an asynchronous hand action classifier’s training session.
-- [static func makeTrainingSession(trainingData: MLHandActionClassifier.DataSource, parameters: MLHandActionClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLHandActionClassifier>](mlhandactionclassifier/maketrainingsession(trainingdata:parameters:sessionparameters:).md)
+- [static func makeTrainingSession(trainingData: MLHandActionClassifier.DataSource, parameters: MLHandActionClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLHandActionClassifier>](./maketrainingsession%28trainingdata,parameters,sessionparameters%29.md)
   Creates an asynchronous hand action classifier’s training session.
-- [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLHandActionClassifier>](mlhandactionclassifier/restoretrainingsession(sessionparameters:).md)
+- [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLHandActionClassifier>](./restoretrainingsession%28sessionparameters%29.md)
   Recreates an asynchronous hand action classifier’s training session by restoring its saved state from the file system.
 
 

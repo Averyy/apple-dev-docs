@@ -1,7 +1,8 @@
 # DateFormatter.Style.none
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 2.0+
@@ -18,6 +19,10 @@
 case none
 ```
 
+```c
+NSDateFormatterNoStyle
+```
+
 #### Discussion
 
 Specifies no style.
@@ -26,10 +31,11 @@ Equal to `kCFDateFormatterNoStyle`.
 
 ## See Also
 
-- [DateFormatter.Style.short](dateformatter/style/short.md)
-- [DateFormatter.Style.medium](dateformatter/style/medium.md)
-- [DateFormatter.Style.long](dateformatter/style/long.md)
-- [DateFormatter.Style.full](dateformatter/style/full.md)
+### Constants
+- [DateFormatter.Style.short](./short.md)
+- [DateFormatter.Style.medium](./medium.md)
+- [DateFormatter.Style.long](./long.md)
+- [DateFormatter.Style.full](./full.md)
 
 
 ---

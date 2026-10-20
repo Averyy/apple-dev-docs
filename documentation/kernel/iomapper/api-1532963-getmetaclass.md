@@ -1,20 +1,22 @@
 # getMetaClass
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual const OSMetaClass * getMetaClass(void);
 ```
 
 ## See Also
 
-- [- getPageSize](iomapper/1532979-getpagesize.md)
+### Getting Configuration Details
+- [- getPageSize](./api-1532979-getpagesize.md)
 
 
 ---

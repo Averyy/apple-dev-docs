@@ -1,7 +1,8 @@
 # ColorSyncProfileCopyHeader(_:)
 
 **Framework**: ColorSync  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Copies the header from a profile.
 
@@ -20,6 +21,10 @@ Copies the header from a profile.
 func ColorSyncProfileCopyHeader(_ prof: ColorSyncProfile!) -> Unmanaged<CFData>!
 ```
 
+```c
+extern CFDataRefColorSyncProfileCopyHeader(ColorSyncProfileRef prof);
+```
+
 #### Return Value
 
 The profile header (in host endianness), or `NULL` in case of failure.
@@ -30,11 +35,12 @@ The profile header (in host endianness), or `NULL` in case of failure.
 
 ## See Also
 
-- [func ColorSyncProfileCopyDescriptionString(ColorSyncProfile!) -> Unmanaged<CFString>?](colorsyncprofilecopydescriptionstring(_:).md)
+### Reading profile data
+- [func ColorSyncProfileCopyDescriptionString(ColorSyncProfile!) -> Unmanaged<CFString>?](./colorsyncprofilecopydescriptionstring%28_%29.md)
   Copies the localized description string of a profile.
-- [func ColorSyncProfileGetURL(ColorSyncProfile!, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Unmanaged<CFURL>!](colorsyncprofilegeturl(_:_:).md)
+- [func ColorSyncProfileGetURL(ColorSyncProfile!, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Unmanaged<CFURL>!](./colorsyncprofilegeturl%28_,_%29.md)
   Returns the URL of a profile.
-- [func ColorSyncProfileGetTypeID() -> CFTypeID](colorsyncprofilegettypeid().md)
+- [func ColorSyncProfileGetTypeID() -> CFTypeID](./colorsyncprofilegettypeid%28%29.md)
   Returns the unique identifier for the ColorSync profile opaque type.
 
 

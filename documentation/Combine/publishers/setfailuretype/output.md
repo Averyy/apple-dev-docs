@@ -1,7 +1,8 @@
 # Publishers.SetFailureType.Output
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of values published by this publisher.
 

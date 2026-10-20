@@ -1,7 +1,8 @@
 # isAccessRestrictedAppleDevice
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the device is an Apple device, passcode-locked, and connected to an untrusted host.
 
@@ -18,9 +19,14 @@ A Boolean value indicating whether the device is an Apple device, passcode-locke
 var isAccessRestrictedAppleDevice: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isAccessRestrictedAppleDevice) BOOL accessRestrictedAppleDevice;
+```
+
 ## See Also
 
-- [var iCloudPhotosEnabled: Bool](iccameradevice/icloudphotosenabled.md)
+### Detecting Apple Devices
+- [var iCloudPhotosEnabled: Bool](./icloudphotosenabled.md)
   A Boolean value indicating whether the iCloud Photo Library is enabled on the device.
 
 

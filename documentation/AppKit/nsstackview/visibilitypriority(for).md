@@ -1,7 +1,8 @@
 # visibilityPriority(for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the visibility priority for a specified view in the stack view.
 
@@ -12,6 +13,10 @@ Returns the visibility priority for a specified view in the stack view.
 
 ```swift
 func visibilityPriority(for view: NSView) -> NSStackView.VisibilityPriority
+```
+
+```objc
+- (NSStackViewVisibilityPriority) visibilityPriorityForView:(NSView *) view;
 ```
 
 #### Return Value
@@ -28,15 +33,16 @@ Visibility priority is the Auto Layout priority for a view to remain attached to
 
 ## See Also
 
-- [func customSpacing(after: NSView) -> CGFloat](nsstackview/customspacing(after:).md)
+### Configuring Views in a Stack View
+- [func customSpacing(after: NSView) -> CGFloat](./customspacing%28after%29.md)
   Returns the custom spacing, in points, between a specified view in the stack view and the view that follows it.
-- [func setCustomSpacing(CGFloat, after: NSView)](nsstackview/setcustomspacing(_:after:).md)
+- [func setCustomSpacing(CGFloat, after: NSView)](./setcustomspacing%28_,after%29.md)
   Specifies the custom spacing, in points, between a specified view and the view that follows it in the stack view.
-- [func setVisibilityPriority(NSStackView.VisibilityPriority, for: NSView)](nsstackview/setvisibilitypriority(_:for:).md)
+- [func setVisibilityPriority(NSStackView.VisibilityPriority, for: NSView)](./setvisibilitypriority%28_,for%29.md)
   Sets the Auto Layout priority for a view to remain attached to the stack view when Auto Layout reduces the stack view’s size.
-- [NSStackView.VisibilityPriority](nsstackview/visibilitypriority.md)
+- [NSStackView.VisibilityPriority](./visibilitypriority.md)
   The various Auto Layout priorities for a view in the stack view to remain attached.
-- [class let useDefaultSpacing: CGFloat](nsstackview/usedefaultspacing.md)
+- [class let useDefaultSpacing: CGFloat](./usedefaultspacing.md)
 
 
 ---

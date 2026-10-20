@@ -1,7 +1,8 @@
 # authenticate(withPassword:)
 
 **Framework**: Collaboration  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the given password is correct for the identity.
 
@@ -14,6 +15,10 @@ Returns a Boolean value indicating whether the given password is correct for the
 func authenticate(withPassword password: String) -> Bool
 ```
 
+```objc
+- (BOOL) authenticateWithPassword:(NSString *) password;
+```
+
 #### Return Value
 
 `TRUE` if the password is correct; otherwise, `FALSE`.
@@ -24,10 +29,12 @@ func authenticate(withPassword password: String) -> Bool
 
 ## See Also
 
-- [Identity Services Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Networking/Conceptual/IdentityServices_ProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004490)
-- [var certificate: SecCertificate?](cbuseridentity/certificate.md)
+### Related Documentation
+- [Identity Services Programming Guide](https://developer.apple.com/library/archive/documentation/Networking/Conceptual/IdentityServices_ProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004490)
+### Password Authentication
+- [var certificate: SecCertificate?](./certificate.md)
   Returns the public authentication certificate associated with a user identity.
-- [var isEnabled: Bool](cbuseridentity/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   Returns a Boolean value indicating whether the identity is allowed to authenticate.
 
 

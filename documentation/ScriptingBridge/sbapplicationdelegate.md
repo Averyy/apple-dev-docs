@@ -1,9 +1,10 @@
 # SBApplicationDelegate
 
 **Framework**: Scripting Bridge  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
-This informal protocol defines a delegation method for handling Apple event errors that are sent from a target application to an [`SBApplication`](sbapplication.md) object.
+This informal protocol defines a delegation method for handling Apple event errors that are sent from a target application to an [`SBApplication`](./sbapplication.md) object.
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -15,14 +16,18 @@ This informal protocol defines a delegation method for handling Apple event erro
 protocol SBApplicationDelegate
 ```
 
+```objc
+@protocol SBApplicationDelegate
+```
+
 #### Overview
 
-You must set a delegate for the [`SBApplication`](sbapplication.md) object using the [`delegate`](sbapplication/delegate.md) method. If you do not set a delegate and have the delegate handle the error in some way, [`SBApplication`](sbapplication.md) raises an exception.
+You must set a delegate for the [`SBApplication`](./sbapplication.md) object using the [`delegate`](./sbapplication/delegate.md) method. If you do not set a delegate and have the delegate handle the error in some way, [`SBApplication`](./sbapplication.md) raises an exception.
 
 ## Topics
 
 ### Handling Errors
-- [func eventDidFail(UnsafePointer<AppleEvent>, withError: any Error) -> Any?](sbapplicationdelegate/eventdidfail(_:witherror:).md)
+- [func eventDidFail(UnsafePointer<AppleEvent>, withError: any Error) -> Any?](./sbapplicationdelegate/eventdidfail%28_,witherror%29.md)
   Sent by an `SBApplication` object when a target application returns an error Apple event.
 
 

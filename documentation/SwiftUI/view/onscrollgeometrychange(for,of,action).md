@@ -1,7 +1,8 @@
 # onScrollGeometryChange(for:of:action:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an action to be performed when a value, created from a scroll geometry, changes.
 
@@ -25,7 +26,7 @@ func onScrollGeometryChange<T>(for type: T.Type, of transform: @escaping (Scroll
 
 The geometry of a scroll view changes frequently while scrolling. You should avoid updating large parts of your app whenever the scroll geometry changes. To aid in this, you provide two closures to this modifier:
 
-- transform: This converts a value of [`ScrollGeometry`](scrollgeometry.md) to a your own data type.
+- transform: This converts a value of [`ScrollGeometry`](../scrollgeometry.md) to a your own data type.
 - action: This provides the data type you created in `of` and is called whenever the data type changes.
 
 For example, you can use this modifier to know when the user scrolls a scroll view beyond the top of its content. In the following example, the data type you convert to is a `Bool` and the action is called whenever the `Bool` changes.
@@ -57,28 +58,31 @@ VStack {
 }
 ```
 
-For responding to non-scroll geometry changes, see the [`onGeometryChange(for:of:action:)`](view/ongeometrychange(for:of:action:).md) modifier.
+For responding to non-scroll geometry changes, see the [`onGeometryChange(for:of:action:)`](./ongeometrychange%28for,of,action%29.md) modifier.
 
 ## Parameters
 
-- `type`: The type of value transformed from a [`ScrollGeometry`](scrollgeometry.md).
-- `transform`: A closure that transforms a [`ScrollGeometry`](scrollgeometry.md) to your type.
-- `action`: A closure to run when the transformed data changes. - **oldValue**: The old value that failed the comparison check.
-- **newValue**: The new value that failed the comparison check.
+- `type`: The type of value transformed from a [`ScrollGeometry`](../scrollgeometry.md).
+- `transform`: A closure that transforms a [`ScrollGeometry`](../scrollgeometry.md) to your type.
+- `action`: A closure to run when the transformed data changes.
+
+  - **oldValue**: The old value that failed the comparison check.
+  - **newValue**: The new value that failed the comparison check.
 
 ## See Also
 
-- [func onScrollTargetVisibilityChange<ID>(idType: ID.Type, threshold: Double, ([ID]) -> Void) -> some View](view/onscrolltargetvisibilitychange(idtype:threshold:_:).md)
+### Responding to scroll view changes
+- [func onScrollTargetVisibilityChange<ID>(idType: ID.Type, threshold: Double, ([ID]) -> Void) -> some View](./onscrolltargetvisibilitychange%28idtype,threshold,_%29.md)
   Adds an action to be called with information about what views would be considered visible.
-- [func onScrollVisibilityChange(threshold: Double, (Bool) -> Void) -> some View](view/onscrollvisibilitychange(threshold:_:).md)
+- [func onScrollVisibilityChange(threshold: Double, (Bool) -> Void) -> some View](./onscrollvisibilitychange%28threshold,_%29.md)
   Adds an action to be called when the view crosses the threshold to be considered on/off screen.
-- [func onScrollPhaseChange(_:)](view/onscrollphasechange(_:).md)
+- [func onScrollPhaseChange(_:)](./onscrollphasechange%28_%29.md)
   Adds an action to perform when the scroll phase of the first scroll view in the hierarchy changes.
-- [struct ScrollGeometry](scrollgeometry.md)
+- [struct ScrollGeometry](../scrollgeometry.md)
   A type that defines the geometry of a scroll view.
-- [enum ScrollPhase](scrollphase.md)
+- [enum ScrollPhase](../scrollphase.md)
   A type that describes the state of a scroll gesture of a scrollable view like a scroll view.
-- [struct ScrollPhaseChangeContext](scrollphasechangecontext.md)
+- [struct ScrollPhaseChangeContext](../scrollphasechangecontext.md)
   A type that provides you with more content when the phase of a scroll view changes.
 
 

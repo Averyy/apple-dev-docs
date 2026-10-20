@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 Defines how the generated ‘Find’ Shortcuts action of this query type is displayed to the user.
@@ -12,7 +13,7 @@ Defines how the generated ‘Find’ Shortcuts action of this query type is disp
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -20,6 +21,12 @@ Defines how the generated ‘Find’ Shortcuts action of this query type is disp
 ```swift
 static var findIntentDescription: IntentDescription? { get }
 ```
+
+## Default Implementations
+
+### EnumerableEntityQuery Implementations
+- [static var findIntentDescription: IntentDescription?](./findintentdescription-5hspv.md)
+  Defines how the generated ‘Find’ Shortcuts action of this query type is displayed to the user.
 
 
 ---

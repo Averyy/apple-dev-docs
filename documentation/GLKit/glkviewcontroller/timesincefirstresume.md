@@ -1,14 +1,17 @@
 # timeSinceFirstResume
 
 **Framework**: GLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of time that has passed since first time the view controller resumed sending update events.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- tvOS 9.0+
+- iOS 5.0+ - Deprecated in 12.0
+- iPadOS 5.0+ - Deprecated in 12.0
+- tvOS 9.0+ - Deprecated in 12.0
+
+> **Deprecated**: OpenGLES API deprecated. (Define GLES_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -16,16 +19,21 @@ The amount of time that has passed since first time the view controller resumed 
 var timeSinceFirstResume: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval timeSinceFirstResume;
+```
+
 ## See Also
 
-- [var framesDisplayed: Int](glkviewcontroller/framesdisplayed.md)
+### Obtaining Information About View Updates
+- [var framesDisplayed: Int](./framesdisplayed.md)
   The number of frame updates that have been sent by the view controller since it was created.
-- [var timeSinceLastResume: TimeInterval](glkviewcontroller/timesincelastresume.md)
+- [var timeSinceLastResume: TimeInterval](./timesincelastresume.md)
   The amount of time that has passed since the last time the view controller resumed sending update events.
-- [var timeSinceLastUpdate: TimeInterval](glkviewcontroller/timesincelastupdate.md)
-  The amount of time that has passed since the last time the view controller called the delegate’s [`glkViewControllerUpdate(_:)`](glkviewcontrollerdelegate/glkviewcontrollerupdate(_:).md) method.
-- [var timeSinceLastDraw: TimeInterval](glkviewcontroller/timesincelastdraw.md)
-  The amount of time that has passed since the last time the view controller called the view’s [`display()`](glkview/display().md) method.
+- [var timeSinceLastUpdate: TimeInterval](./timesincelastupdate.md)
+  The amount of time that has passed since the last time the view controller called the delegate’s [`glkViewControllerUpdate(_:)`](../glkviewcontrollerdelegate/glkviewcontrollerupdate%28_%29.md) method.
+- [var timeSinceLastDraw: TimeInterval](./timesincelastdraw.md)
+  The amount of time that has passed since the last time the view controller called the view’s [`display()`](../glkview/display%28%29.md) method.
 
 
 ---

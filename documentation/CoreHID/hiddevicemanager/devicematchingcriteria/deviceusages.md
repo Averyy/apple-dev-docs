@@ -1,7 +1,8 @@
 # deviceUsages
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of usages supported by the device.
 
@@ -16,7 +17,7 @@ var deviceUsages: [HIDUsage]?
 
 #### Discussion
 
-For more details, see [`HIDUsage`](hidusage.md).
+For more details, see [`HIDUsage`](../../hidusage.md).
 
 
 ---

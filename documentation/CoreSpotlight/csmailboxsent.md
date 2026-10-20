@@ -1,7 +1,8 @@
 # CSMailboxSent
 
 **Framework**: Core Spotlight  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A sent mailbox.
 
@@ -18,17 +19,22 @@ A sent mailbox.
 let CSMailboxSent: String
 ```
 
+```c
+extern NSString * const CSMailboxSent;
+```
+
 ## See Also
 
-- [let CSMailboxInbox: String](csmailboxinbox.md)
+### Constants
+- [let CSMailboxInbox: String](./csmailboxinbox.md)
   An inbox.
-- [let CSMailboxDrafts: String](csmailboxdrafts.md)
+- [let CSMailboxDrafts: String](./csmailboxdrafts.md)
   A drafts mailbox.
-- [let CSMailboxJunk: String](csmailboxjunk.md)
+- [let CSMailboxJunk: String](./csmailboxjunk.md)
   A junk mailbox.
-- [let CSMailboxTrash: String](csmailboxtrash.md)
+- [let CSMailboxTrash: String](./csmailboxtrash.md)
   A trash mailbox.
-- [let CSMailboxArchive: String](csmailboxarchive.md)
+- [let CSMailboxArchive: String](./csmailboxarchive.md)
   An archive mailbox.
 
 

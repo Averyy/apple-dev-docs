@@ -1,7 +1,8 @@
 # DurationProtocol
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that defines a duration for a given `InstantProtocol` type.
 
@@ -23,26 +24,27 @@ protocol DurationProtocol : AdditiveArithmetic, Comparable, Sendable
 ## Topics
 
 ### Operators
-- [static func * (Self, Int) -> Self](durationprotocol/*(_:_:).md)
-- [static func *= (inout Self, Int)](durationprotocol/*=(_:_:).md)
-- [static func / (Self, Self) -> Double](durationprotocol/_(_:_:)-4x9r1.md)
-- [static func / (Self, Int) -> Self](durationprotocol/_(_:_:)-6l82o.md)
-- [static func /= (inout Self, Int)](durationprotocol/_=(_:_:).md)
+- [static func * (Self, Int) -> Self](./durationprotocol/star%28_,_%29.md)
+- [static func *= (inout Self, Int)](./durationprotocol/stareq%28_,_%29.md)
+- [static func / (Self, Self) -> Double](./durationprotocol/op%28_,_%29-4x9r1.md)
+- [static func / (Self, Int) -> Self](./durationprotocol/op%28_,_%29-6l82o.md)
+- [static func /= (inout Self, Int)](./durationprotocol/opeq%28_,_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [AdditiveArithmetic](additivearithmetic.md)
-- [Comparable](comparable.md)
-- [Equatable](equatable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [AdditiveArithmetic](./additivearithmetic.md)
+- [Comparable](./comparable.md)
+- [Equatable](./equatable.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 ### Conforming Types
-- [Duration](duration.md)
+- [Duration](./duration.md)
 
 ## See Also
 
-- [struct Duration](duration.md)
+### Durations
+- [struct Duration](./duration.md)
   A representation of high precision time.
 
 

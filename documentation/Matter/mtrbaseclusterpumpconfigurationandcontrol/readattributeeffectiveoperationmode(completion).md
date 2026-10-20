@@ -1,7 +1,8 @@
 # readAttributeEffectiveOperationMode(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeEffectiveOperationMode(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeEffectiveOperationMode() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeEffectiveOperationModeWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

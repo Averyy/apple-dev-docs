@@ -1,7 +1,8 @@
 # register(action:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Register a custom action of given type. Each type of custom action needs to be registered before it can be used.
 

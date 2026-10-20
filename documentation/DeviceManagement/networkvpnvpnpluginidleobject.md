@@ -1,7 +1,8 @@
 # NetworkVPNVPNPluginIdleObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Specifies details about how the system handles idle VPN connections.
 
@@ -15,30 +16,33 @@ Specifies details about how the system handles idle VPN connections.
 
 ## Declaration
 
-```swift
+```
 object NetworkVPNVPNPluginIdleObject
 ```
 
 ## Properties
 
 - `Disconnect` (boolean): If `true`, disconnects after an on-demand connection idles.
+
+  **Default**: `false`
 - `Timer` (integer): The length of time to wait, in seconds, before disconnecting an on-demand connection.
 
 ## See Also
 
-- [object NetworkVPNVPNPluginAuthenticationObject](networkvpnvpnpluginauthenticationobject.md)
+### Objects
+- [object NetworkVPNVPNPluginAuthenticationObject](./networkvpnvpnpluginauthenticationobject.md)
   Settings that control authentication.
-- [object NetworkVPNVPNPluginDNSObject](networkvpnvpnplugindnsobject.md)
+- [object NetworkVPNVPNPluginDNSObject](./networkvpnvpnplugindnsobject.md)
   A dictionary to use for all VPN types.
-- [object NetworkVPNVPNPluginNetworkRoutingObject](networkvpnvpnpluginnetworkroutingobject.md)
+- [object NetworkVPNVPNPluginNetworkRoutingObject](./networkvpnvpnpluginnetworkroutingobject.md)
   Specifies details about how the VPN routes different types of network traffic.
-- [object NetworkVPNVPNPluginOnDemandObject](networkvpnvpnpluginondemandobject.md)
+- [object NetworkVPNVPNPluginOnDemandObject](./networkvpnvpnpluginondemandobject.md)
   Specifies details about how the system controls on-demand VPN.
-- [object NetworkVPNVPNPluginProviderObject](networkvpnvpnpluginproviderobject.md)
+- [object NetworkVPNVPNPluginProviderObject](./networkvpnvpnpluginproviderobject.md)
   Specifies details about the provider.
-- [object NetworkVPNVPNPluginProxiesObject](networkvpnvpnpluginproxiesobject.md)
+- [object NetworkVPNVPNPluginProxiesObject](./networkvpnvpnpluginproxiesobject.md)
   The dictionary to use to configure `Proxies` for use with `VPN`.
-- [object NetworkVPNVPNPluginVendorConfigObject](networkvpnvpnpluginvendorconfigobject.md)
+- [object NetworkVPNVPNPluginVendorConfigObject](./networkvpnvpnpluginvendorconfigobject.md)
   The vendor-specific configuration dictionary, which the system reads only when `SubType` has a value.
 
 

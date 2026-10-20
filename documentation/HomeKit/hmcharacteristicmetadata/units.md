@@ -1,7 +1,8 @@
 # units
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The units of the characteristic value.
 
@@ -19,9 +20,13 @@ The units of the characteristic value.
 var units: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * units;
+```
+
 #### Discussion
 
-The [`units`](hmcharacteristicmetadata/units.md) property tells you how to use the corresponding characteristic’s [`value`](hmcharacteristic/value.md) in calculations or how to format it for presentation. For example, you can extend the [`HMCharacteristic`](hmcharacteristic.md) class with a computed property that returns the appropriate symbol to accompany the value in printed output:
+The [`units`](./units.md) property tells you how to use the corresponding characteristic’s [`value`](../hmcharacteristic/value.md) in calculations or how to format it for presentation. For example, you can extend the [`HMCharacteristic`](../hmcharacteristic.md) class with a computed property that returns the appropriate symbol to accompany the value in printed output:
 
 ```swift
 extension HMCharacteristic {
@@ -43,11 +48,12 @@ extension HMCharacteristic {
 }
 ```
 
-See [`Characteristic Units`](characteristic-units.md) for the complete list of possible units.
+See [Characteristic Units](../characteristic-units.md) for the complete list of possible units.
 
 ## See Also
 
-- [Characteristic Units](characteristic-units.md)
+### Specifying units
+- [Characteristic Units](../characteristic-units.md)
   Descriptions of the units of a characteristic.
 
 

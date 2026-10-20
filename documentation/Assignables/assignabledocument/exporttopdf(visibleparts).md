@@ -1,7 +1,8 @@
 # exportToPDF(visibleParts:)
 
 **Framework**: Assignables  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports the indicated parts of this document into a single `PDFDocument`.
 
@@ -9,7 +10,7 @@ Exports the indicated parts of this document into a single `PDFDocument`.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

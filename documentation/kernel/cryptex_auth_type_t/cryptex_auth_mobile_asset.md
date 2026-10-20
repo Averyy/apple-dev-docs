@@ -1,14 +1,15 @@
 # CRYPTEX_AUTH_MOBILE_ASSET
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 CRYPTEX_AUTH_MOBILE_ASSET
 ```
 

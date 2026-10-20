@@ -1,7 +1,8 @@
 # CLKWatchFaceLibrary.ErrorCode.faceNotAvailable
 
 **Framework**: ClockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The watch face is not available on this device.
 
@@ -17,19 +18,24 @@ The watch face is not available on this device.
 case faceNotAvailable
 ```
 
+```c
+CLKWatchFaceLibraryErrorCodeFaceNotAvailable
+```
+
 ## See Also
 
-- [CLKWatchFaceLibrary.ErrorCode.notFileURL](clkwatchfacelibrary/errorcode/notfileurl.md)
+### Errors
+- [CLKWatchFaceLibrary.ErrorCode.notFileURL](./notfileurl.md)
   No file was found at the specified URL.
-- [CLKWatchFaceLibrary.ErrorCode.invalidFile](clkwatchfacelibrary/errorcode/invalidfile.md)
+- [CLKWatchFaceLibrary.ErrorCode.invalidFile](./invalidfile.md)
   The specified file wasn’t a valid watch face file.
-- [CLKWatchFaceLibrary.ErrorCode.permissionDenied](clkwatchfacelibrary/errorcode/permissiondenied.md)
+- [CLKWatchFaceLibrary.ErrorCode.permissionDenied](./permissiondenied.md)
   The app does not have permission to read the specified file.
-- [CLKWatchFaceLibrary.ErrorCode.notFileURL](clkwatchfacelibrary/errorcode/notfileurl.md)
+- [CLKWatchFaceLibrary.ErrorCode.notFileURL](./notfileurl.md)
   No file was found at the specified URL.
-- [CLKWatchFaceLibrary.ErrorCode.invalidFile](clkwatchfacelibrary/errorcode/invalidfile.md)
+- [CLKWatchFaceLibrary.ErrorCode.invalidFile](./invalidfile.md)
   The specified file wasn’t a valid watch face file.
-- [CLKWatchFaceLibrary.ErrorCode.permissionDenied](clkwatchfacelibrary/errorcode/permissiondenied.md)
+- [CLKWatchFaceLibrary.ErrorCode.permissionDenied](./permissiondenied.md)
   The app does not have permission to read the specified file.
 
 

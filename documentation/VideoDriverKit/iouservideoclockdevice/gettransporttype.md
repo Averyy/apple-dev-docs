@@ -1,7 +1,8 @@
 # GetTransportType
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the transport type of the IOUserVideoClockDevice.
 
@@ -10,7 +11,7 @@ Gets the transport type of the IOUserVideoClockDevice.
 
 ## Declaration
 
-```swift
+```c
 IOUserVideoTransportType GetTransportType();
 ```
 
@@ -24,9 +25,10 @@ The object’s work queue synchronizes access to this value.
 
 ## See Also
 
-- [SetTransportType](iouservideoclockdevice/settransporttype.md)
+### Working with transport type
+- [SetTransportType](./settransporttype.md)
   Sets the transport type of the clock device.
-- [IOUserVideoTransportType](videodriverkit/iouservideotransporttype.md)
+- [IOUserVideoTransportType](../videodriverkit-page/iouservideotransporttype.md)
   The transport type of a video stream.
 
 

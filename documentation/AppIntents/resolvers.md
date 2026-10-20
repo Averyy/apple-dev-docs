@@ -1,6 +1,7 @@
 # Resolvers
 
-**Framework**: App Intents
+**Framework**: App Intents  
+**Role**: API Collection
 
 Resolve the parameters of your app intents, and extend the standard resolution types to include your app’s custom types.
 
@@ -13,52 +14,53 @@ The system provides resolvers to convert between integer, floating-point, Boolea
 ## Topics
 
 ### Integer resolution
-- [struct IntFromDoubleResolver](intfromdoubleresolver.md)
+- [struct IntFromDoubleResolver](./intfromdoubleresolver.md)
   A resolver that converts a double into an integer using the specified rounding rule and validates the result is within the parameter’s inclusive range.
-- [struct IntFromStringResolver](intfromstringresolver.md)
+- [struct IntFromStringResolver](./intfromstringresolver.md)
   A resolver that converts a string into an integer in the specified base and validates the result is within the parameter’s inclusive range.
-- [struct IntResolver](intresolver.md)
+- [struct IntResolver](./intresolver.md)
   A resolver that validates an integer is within the parameter’s inclusive range.
 ### Floating-point resolution
-- [struct DoubleFromIntResolver](doublefromintresolver.md)
-- [struct DoubleFromStringResolver](doublefromstringresolver.md)
+- [struct DoubleFromIntResolver](./doublefromintresolver.md)
+- [struct DoubleFromStringResolver](./doublefromstringresolver.md)
   A resolver that converts a string into a double and validates the result is within the parameter’s inclusive range.
-- [struct DoubleResolver](doubleresolver.md)
+- [struct DoubleResolver](./doubleresolver.md)
   A resolver that validates a double is within the parameter’s inclusive range.
 ### String resolution
-- [struct AttributedStringFromStringResolver](attributedstringfromstringresolver.md)
+- [struct AttributedStringFromStringResolver](./attributedstringfromstringresolver.md)
   A resolver that converts a string into an attributed string.
-- [struct StringFromDoubleResolver](stringfromdoubleresolver.md)
+- [struct StringFromDoubleResolver](./stringfromdoubleresolver.md)
   A resolver that converts a double into a string.
-- [struct StringFromIntResolver](stringfromintresolver.md)
+- [struct StringFromIntResolver](./stringfromintresolver.md)
   A resolver that converts one or more integers into one or more strings.
 ### Boolean resolution
-- [struct BoolFromStringResolver](boolfromstringresolver.md)
+- [struct BoolFromStringResolver](./boolfromstringresolver.md)
   A resolver that converts a string into a Boolean, optionally using a localized display name.
 ### URL resolution
-- [struct URLFromStringResolver](urlfromstringresolver.md)
+- [struct URLFromStringResolver](./urlfromstringresolver.md)
   A resolver that converts a string into a URL.
 ### Custom resolution
-- [protocol Resolver](resolver.md)
+- [protocol Resolver](./resolver.md)
   An interface to convert a value from one type to a different type.
 ### Range validation
-- [protocol RangeCheckingResolver](rangecheckingresolver.md)
+- [protocol RangeCheckingResolver](./rangecheckingresolver.md)
   An interface for validating that a value is within a parameter’s defined inclusive range.
-- [protocol RangeComparableProperty](rangecomparableproperty.md)
+- [protocol RangeComparableProperty](./rangecomparableproperty.md)
 
 ## See Also
 
-- [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
+### Parameters
+- [Adding parameters to an app intent](./adding-parameters-to-an-app-intent.md)
   Enable people to configure app intents with their custom input values.
-- [class IntentParameter](intentparameter.md)
+- [class IntentParameter](./intentparameter.md)
   A property wrapper that indicates the associated property is an input argument of the app intent.
-- [class IntentParameterDependency](intentparameterdependency.md)
+- [class IntentParameterDependency](./intentparameterdependency.md)
   A property wrapper that represents an app intent dependency you use to provide dynamic options.
-- [struct IntentParameterContext](intentparametercontext.md)
+- [struct IntentParameterContext](./intentparametercontext.md)
   A type that provides information about an associated parameter during value resolution.
-- [enum InputConnectionBehavior](inputconnectionbehavior.md)
+- [enum InputConnectionBehavior](./inputconnectionbehavior.md)
   Describes the input behaviors for connecting a parameter to the output of the previous App Intent.
-- [protocol DynamicOptionsProvider](dynamicoptionsprovider.md)
+- [protocol DynamicOptionsProvider](./dynamicoptionsprovider.md)
   An interface for providing a dynamic list of options for a parameter of your app intent.
 
 

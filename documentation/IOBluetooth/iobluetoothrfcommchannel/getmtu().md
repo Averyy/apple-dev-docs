@@ -1,17 +1,22 @@
 # getMTU()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the channel maximum transfer unit.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getMTU() -> BluetoothRFCOMMMTU
+```
+
+```objc
+- (BluetoothRFCOMMMTU) getMTU;
 ```
 
 #### Return Value

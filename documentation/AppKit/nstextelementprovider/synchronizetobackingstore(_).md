@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Synchronizes changes to the backing store.
@@ -12,7 +13,15 @@ Synchronizes changes to the backing store.
 ## Declaration
 
 ```swift
+func synchronizeToBackingStore(_ completionHandler: (@Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 func synchronizeToBackingStore() async throws
+```
+
+```objc
+- (void) synchronizeToBackingStore:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion

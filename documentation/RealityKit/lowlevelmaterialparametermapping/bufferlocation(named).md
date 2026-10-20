@@ -1,7 +1,8 @@
 # bufferLocation(named:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the argument table buffer slot index for the named buffer parameter, or `nil` if no parameter with that name exists.
 
@@ -27,11 +28,12 @@ The buffer slot index, or `nil` if no buffer parameter with that name exists.
 
 ## See Also
 
-- [func textureLocation(named: String) -> Int?](lowlevelmaterialparametermapping/texturelocation(named:).md)
+### Locating parameters
+- [func textureLocation(named: String) -> Int?](./texturelocation%28named%29.md)
   Returns the argument table texture slot index for the named texture parameter, or `nil` if no parameter with that name exists.
-- [func constantLocation(named: String) -> LowLevelMaterialParameterMapping.ConstantLocation?](lowlevelmaterialparametermapping/constantlocation(named:).md)
+- [func constantLocation(named: String) -> LowLevelMaterialParameterMapping.ConstantLocation?](./constantlocation%28named%29.md)
   Returns the resolved buffer and constant indices for the named constant parameter, or `nil` if no parameter with that name exists.
-- [LowLevelMaterialParameterMapping.ConstantLocation](lowlevelmaterialparametermapping/constantlocation.md)
+- [LowLevelMaterialParameterMapping.ConstantLocation](./constantlocation.md)
   The resolved buffer and constant slot indices for a named constant parameter.
 
 

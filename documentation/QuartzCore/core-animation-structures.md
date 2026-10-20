@@ -1,17 +1,19 @@
 # Core Animation Structures
 
-**Framework**: Core Animation
+**Framework**: Core Animation  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [struct CAFrameRateRange](caframeraterange.md)
+- [struct CAFrameRateRange](./caframeraterange.md)
 
 ## See Also
 
-- [Core Animation Constants](core-animation-constants.md)
-- [QuartzCore Functions](quartzcore-functions.md)
-- [Core Animation Data Types](core-animation-data-types.md)
+### Reference
+- [Core Animation Constants](./core-animation-constants.md)
+- [QuartzCore Functions](./quartzcore-functions.md)
+- [Core Animation Data Types](./core-animation-data-types.md)
 
 
 ---

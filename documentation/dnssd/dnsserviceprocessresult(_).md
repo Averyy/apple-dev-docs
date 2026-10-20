@@ -1,7 +1,8 @@
 # DNSServiceProcessResult(_:)
 
 **Framework**: dnssd  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Reads a reply from the daemon, calling the appropriate application callback.
 
@@ -20,13 +21,17 @@ Reads a reply from the daemon, calling the appropriate application callback.
 func DNSServiceProcessResult(_ sdRef: DNSServiceRef!) -> DNSServiceErrorType
 ```
 
+```c
+DNSServiceErrorType DNSServiceProcessResult(DNSServiceRef sdRef);
+```
+
 #### Return Value
 
-Returns [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md) on success, otherwise returns an error code indicating the specific failure that occurred.
+Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) on success, otherwise returns an error code indicating the specific failure that occurred.
 
 #### Discussion
 
-This call blocks until the daemon’s response is received. Use [`DNSServiceRefSockFD(_:)`](dnsservicerefsockfd(_:).md) in conjunction with a run loop or select() to determine the presence of a response from the server before calling this function to process the reply without blocking. Call this function at any point if it is acceptable to block until the daemon’s response arrives. Note that the client is responsible for ensuring that [`DNSServiceProcessResult(_:)`](dnsserviceprocessresult(_:).md) is called whenever there is a reply from the daemon - the daemon may terminate its connection with a client that does not process the daemon’s responses.
+This call blocks until the daemon’s response is received. Use [`DNSServiceRefSockFD(_:)`](./dnsservicerefsockfd%28_%29.md) in conjunction with a run loop or select() to determine the presence of a response from the server before calling this function to process the reply without blocking. Call this function at any point if it is acceptable to block until the daemon’s response arrives. Note that the client is responsible for ensuring that [`DNSServiceProcessResult(_:)`](./dnsserviceprocessresult%28_%29.md) is called whenever there is a reply from the daemon - the daemon may terminate its connection with a client that does not process the daemon’s responses.
 
 ## Parameters
 
@@ -34,9 +39,10 @@ This call blocks until the daemon’s response is received. Use [`DNSServiceRefS
 
 ## See Also
 
-- [func DNSServiceRefDeallocate(DNSServiceRef!)](dnsservicerefdeallocate(_:).md)
+### Unix Domain Socket access, DNSServiceRef deallocation, and data processing functions
+- [func DNSServiceRefDeallocate(DNSServiceRef!)](./dnsservicerefdeallocate%28_%29.md)
   Terminates a connection with the daemon and frees memory associated with the DNSServiceRef.
-- [func DNSServiceRefSockFD(DNSServiceRef!) -> dnssd_sock_t](dnsservicerefsockfd(_:).md)
+- [func DNSServiceRefSockFD(DNSServiceRef!) -> dnssd_sock_t](./dnsservicerefsockfd%28_%29.md)
   Accesses underlying Unix domain socket for an initialized DNSServiceRef.
 
 

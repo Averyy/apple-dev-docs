@@ -1,7 +1,8 @@
 # kColorSyncSigBToA1Tag
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The signature of the PCS-to-device transform tag for the media-relative colorimetric rendering intent.
 
@@ -20,17 +21,22 @@ The signature of the PCS-to-device transform tag for the media-relative colorime
 var kColorSyncSigBToA1Tag: Unmanaged<CFString>!
 ```
 
+```c
+extern CFStringRef kColorSyncSigBToA1Tag;
+```
+
 ## See Also
 
-- [var kColorSyncSigAToB0Tag: Unmanaged<CFString>!](kcolorsyncsigatob0tag.md)
+### Identifying transform tags
+- [var kColorSyncSigAToB0Tag: Unmanaged<CFString>!](./kcolorsyncsigatob0tag.md)
   The signature of the device-to-PCS transform tag for the perceptual rendering intent.
-- [var kColorSyncSigAToB1Tag: Unmanaged<CFString>!](kcolorsyncsigatob1tag.md)
+- [var kColorSyncSigAToB1Tag: Unmanaged<CFString>!](./kcolorsyncsigatob1tag.md)
   The signature of the device-to-PCS transform tag for the media-relative colorimetric rendering intent.
-- [var kColorSyncSigAToB2Tag: Unmanaged<CFString>!](kcolorsyncsigatob2tag.md)
+- [var kColorSyncSigAToB2Tag: Unmanaged<CFString>!](./kcolorsyncsigatob2tag.md)
   The signature of the device-to-PCS transform tag for the saturation rendering intent.
-- [var kColorSyncSigBToA0Tag: Unmanaged<CFString>!](kcolorsyncsigbtoa0tag.md)
+- [var kColorSyncSigBToA0Tag: Unmanaged<CFString>!](./kcolorsyncsigbtoa0tag.md)
   The signature of the PCS-to-device transform tag for the perceptual rendering intent.
-- [var kColorSyncSigBToA2Tag: Unmanaged<CFString>!](kcolorsyncsigbtoa2tag.md)
+- [var kColorSyncSigBToA2Tag: Unmanaged<CFString>!](./kcolorsyncsigbtoa2tag.md)
   The signature of the PCS-to-device transform tag for the saturation rendering intent.
 
 

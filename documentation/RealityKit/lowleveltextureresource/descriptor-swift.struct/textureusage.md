@@ -1,7 +1,8 @@
 # textureUsage
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The options that determine how the texture can be used.
 
@@ -23,7 +24,8 @@ Corresponds to `MTLTextureDescriptor.usage`.
 
 ## See Also
 
-- [var swizzle: MTLTextureSwizzleChannels](lowleveltextureresource/descriptor-swift.struct/swizzle.md)
+### Configuring texture usage
+- [var swizzle: MTLTextureSwizzleChannels](./swizzle.md)
   The channel swizzle pattern the GPU applies when sampling the texture.
 
 

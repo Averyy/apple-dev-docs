@@ -1,7 +1,8 @@
 # decibelAWeightedSoundPressureLevel()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a HealthKit unit for measuring the difference between the local pressure and the ambient atmospheric pressure caused by sound.
 
@@ -19,21 +20,27 @@ Returns a HealthKit unit for measuring the difference between the local pressure
 class func decibelAWeightedSoundPressureLevel() -> Self
 ```
 
+```objc
++ (instancetype) decibelAWeightedSoundPressureLevelUnit;
+```
+
 ## See Also
 
-- [class func decibelHearingLevel() -> Self](hkunit/decibelhearinglevel.md)
+### Related Documentation
+- [class func decibelHearingLevel() -> Self](./decibelhearinglevel%28%29.md)
   Returns a HealthKit unit for measuring the intensity of a sound.
-- [class func pascal() -> Self](hkunit/pascal.md)
+### Constructing pressure units
+- [class func pascal() -> Self](./pascal%28%29.md)
   Returns a HealthKit unit for measuring pressure in pascals.
-- [class func pascalUnit(with: HKMetricPrefix) -> Self](hkunit/pascalunit(with:).md)
+- [class func pascalUnit(with: HKMetricPrefix) -> Self](./pascalunit%28with%29.md)
   Returns a HealthKit unit for measuring pressure, using pascal units with the provided prefix.
-- [class func millimeterOfMercury() -> Self](hkunit/millimeterofmercury.md)
+- [class func millimeterOfMercury() -> Self](./millimeterofmercury%28%29.md)
   Returns a HealthKit unit for measuring pressure in millimeters of mercury.
-- [class func inchesOfMercury() -> Self](hkunit/inchesofmercury.md)
+- [class func inchesOfMercury() -> Self](./inchesofmercury%28%29.md)
   Returns a HealthKit unit for measuring pressure in inches of mercury.
-- [class func centimeterOfWater() -> Self](hkunit/centimeterofwater.md)
+- [class func centimeterOfWater() -> Self](./centimeterofwater%28%29.md)
   Returns a HealthKit unit for measuring pressure in centimeters of water.
-- [class func atmosphere() -> Self](hkunit/atmosphere.md)
+- [class func atmosphere() -> Self](./atmosphere%28%29.md)
   Returns a HealthKit unit for measuring pressure in atmospheres.
 
 

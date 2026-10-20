@@ -1,7 +1,8 @@
 # frameCount
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum size of each buffer in frames. The default value is `4096`.
 

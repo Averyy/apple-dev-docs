@@ -1,22 +1,24 @@
 # Apple Voice Processing Audio Unit Errors
 
-**Framework**: Audio Toolbox
+**Framework**: Audio Toolbox  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [var kAUVoiceIOErr_UnexpectedNumberOfInputChannels: OSStatus](kauvoiceioerr_unexpectednumberofinputchannels.md)
+- [var kAUVoiceIOErr_UnexpectedNumberOfInputChannels: OSStatus](./kauvoiceioerr_unexpectednumberofinputchannels.md)
   An error that indicates that the audio unit encountered an unexpected number of input channels during initialization.
 
 ## See Also
 
-- [Anonymous](3751765-anonymous.md)
-- [Anonymous](3950917-anonymous.md)
-- [Anonymous](4103713-anonymous.md)
-- [Anonymous](4304947-anonymous.md)
-- [Anonymous](4354006-anonymous.md)
-- [enum AUSpatialMixerPersonalizedHRTFMode](auspatialmixerpersonalizedhrtfmode.md)
-- [struct AudioConverterOptions](audioconverteroptions.md)
+### Enumerations
+- [Anonymous](./api-3751765-anonymous.md)
+- [Anonymous](./api-3950917-anonymous.md)
+- [Anonymous](./api-4103713-anonymous.md)
+- [Anonymous](./api-4304947-anonymous.md)
+- [Anonymous](./api-4354006-anonymous.md)
+- [enum AUSpatialMixerPersonalizedHRTFMode](./auspatialmixerpersonalizedhrtfmode.md)
+- [struct AudioConverterOptions](./audioconverteroptions.md)
 
 
 ---

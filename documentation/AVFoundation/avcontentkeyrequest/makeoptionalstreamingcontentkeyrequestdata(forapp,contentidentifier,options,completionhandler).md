@@ -1,7 +1,8 @@
 # makeOptionalStreamingContentKeyRequestData(forApp:contentIdentifier:options:completionHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Obtains an optional content key request data for a specific combination of application and content.
 
@@ -14,7 +15,15 @@ Obtains an optional content key request data for a specific combination of appli
 ## Declaration
 
 ```swift
+func makeOptionalStreamingContentKeyRequestData(forApp appIdentifier: Data, contentIdentifier: Data?, options: [String : Any]? = nil, completionHandler: @escaping @Sendable (Data?, (any Error)?) -> Void)
+```
+
+```swift
 func makeOptionalStreamingContentKeyRequestData(forApp appIdentifier: Data, contentIdentifier: Data?, options: [String : Any]? = nil) async throws -> Data
+```
+
+```objc
+- (void) makeOptionalStreamingContentKeyRequestDataForApp:(NSData *) appIdentifier contentIdentifier:(NSData *) contentIdentifier options:(NSDictionary<NSString *,id> *) options completionHandler:(void (^)(NSData *data, NSError *error)) completionHandler;
 ```
 
 #### Discussion

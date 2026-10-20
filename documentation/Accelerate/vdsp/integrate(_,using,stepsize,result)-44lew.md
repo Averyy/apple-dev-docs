@@ -1,7 +1,8 @@
 # integrate(_:using:stepSize:result:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Performs the integration of a single-precision using the specified rule.
 
@@ -11,7 +12,7 @@ Performs the integration of a single-precision using the specified rule.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,13 +23,14 @@ static func integrate<U, V>(_ vector: U, using rule: vDSP.IntegrationRule, stepS
 
 ## See Also
 
-- [static func integrate<U>(U, using: vDSP.IntegrationRule, stepSize: Double) -> [Double]](vdsp/integrate(_:using:stepsize:)-1bw3x.md)
+### Integration
+- [static func integrate<U>(U, using: vDSP.IntegrationRule, stepSize: Double) -> [Double]](./integrate%28_,using,stepsize%29-1bw3x.md)
   Returns the integration of a double-precision vector using the specified rule.
-- [static func integrate<U>(U, using: vDSP.IntegrationRule, stepSize: Float) -> [Float]](vdsp/integrate(_:using:stepsize:)-7wei4.md)
+- [static func integrate<U>(U, using: vDSP.IntegrationRule, stepSize: Float) -> [Float]](./integrate%28_,using,stepsize%29-7wei4.md)
   Returns the integration of a single-precision vector using the specified rule.
-- [static func integrate<U, V>(U, using: vDSP.IntegrationRule, stepSize: Double, result: inout V)](vdsp/integrate(_:using:stepsize:result:)-75jvf.md)
+- [static func integrate<U, V>(U, using: vDSP.IntegrationRule, stepSize: Double, result: inout V)](./integrate%28_,using,stepsize,result%29-75jvf.md)
   Performs the integration of a double-precision using the specified rule.
-- [vDSP.IntegrationRule](vdsp/integrationrule.md)
+- [vDSP.IntegrationRule](./integrationrule.md)
   Integration rules.
 
 

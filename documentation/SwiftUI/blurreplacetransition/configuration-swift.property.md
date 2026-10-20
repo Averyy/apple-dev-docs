@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transition configuration.
 
@@ -23,9 +24,10 @@ The transition configuration.
 
 ## See Also
 
-- [init(configuration: BlurReplaceTransition.Configuration)](blurreplacetransition/init(configuration:).md)
+### Creating the transition
+- [init(configuration: BlurReplaceTransition.Configuration)](./init%28configuration%29.md)
   Creates a new transition.
-- [BlurReplaceTransition.Configuration](blurreplacetransition/configuration-swift.struct.md)
+- [BlurReplaceTransition.Configuration](./configuration-swift.struct.md)
   Configuration properties for a transition.
 
 

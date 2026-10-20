@@ -1,7 +1,8 @@
 # willRemove(from:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked before the persistent store is removed from the persistent store coordinator.
 
@@ -10,7 +11,7 @@ Invoked before the persistent store is removed from the persistent store coordin
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Invoked before the persistent store is removed from the persistent store coordin
 
 ```swift
 func willRemove(from coordinator: NSPersistentStoreCoordinator?)
+```
+
+```objc
+- (void) willRemoveFromPersistentStoreCoordinator:(NSPersistentStoreCoordinator *) coordinator;
 ```
 
 #### Discussion
@@ -30,7 +35,8 @@ The default implementation does nothing. You can override this method in a subcl
 
 ## See Also
 
-- [func didAdd(to: NSPersistentStoreCoordinator)](nspersistentstore/didadd(to:).md)
+### Responding to the Store Life Cycle
+- [func didAdd(to: NSPersistentStoreCoordinator)](./didadd%28to%29.md)
   Invoked after the persistent store has been added to the persistent store coordinator.
 
 

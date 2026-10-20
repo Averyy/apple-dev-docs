@@ -1,7 +1,8 @@
 # SubscriptionOfferEligibility
 
 **Framework**: App Store Connect API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A string that represents the eligibility of a subscription offer.
 
@@ -10,21 +11,27 @@ A string that represents the eligibility of a subscription offer.
 
 ## Declaration
 
-```swift
+```
 string SubscriptionOfferEligibility
 ```
 
+## Possible Values
+
+- `STACK_WITH_INTRO_OFFERS`: A subscription offer that customers can combine with an introductory offer.
+- `REPLACE_INTRO_OFFERS`: A subscription offer that replaces an introductory offer.
+
 ## See Also
 
-- [object SubscriptionOfferCode.Attributes](subscriptionoffercode/attributes-data.dictionary.md)
+### Objects and types
+- [object SubscriptionOfferCode.Attributes](./subscriptionoffercode/attributes-data.dictionary.md)
   Attributes that describe a subscription offer code resource.
-- [type SubscriptionOfferDuration](subscriptionofferduration.md)
+- [type SubscriptionOfferDuration](./subscriptionofferduration.md)
   A length of time that can be assigned to a subscription.
-- [type SubscriptionCustomerEligibility](subscriptioncustomereligibility.md)
+- [type SubscriptionCustomerEligibility](./subscriptioncustomereligibility.md)
   A string that represents a customer’s eligibility for a subscription offer.
-- [type SubscriptionOfferMode](subscriptionoffermode.md)
+- [type SubscriptionOfferMode](./subscriptionoffermode.md)
   A string that indicates the payment mode of a subscription offer.
-- [object SubscriptionOfferCode.Relationships](subscriptionoffercode/relationships-data.dictionary.md)
+- [object SubscriptionOfferCode.Relationships](./subscriptionoffercode/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

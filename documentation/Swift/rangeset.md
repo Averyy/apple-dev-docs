@@ -1,7 +1,8 @@
 # RangeSet
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of values of any comparable type, represented by ranges.
 
@@ -38,89 +39,90 @@ numbers.moveSubranges(negativeSubranges, to: 0)
 ## Topics
 
 ### Structures
-- [RangeSet.Ranges](rangeset/ranges-swift.struct.md)
+- [RangeSet.Ranges](./rangeset/ranges-swift.struct.md)
   A collection of the ranges that make up a range set.
 ### Initializers
-- [init()](rangeset/init.md)
+- [init()](./rangeset/init%28%29.md)
   Creates an empty range set.
-- [init(Range<Bound>)](rangeset/init(_:)-230uy.md)
+- [init(Range<Bound>)](./rangeset/init%28_%29-230uy.md)
   Creates a range set containing the given range.
-- [init(IndexSet)](rangeset/init(_:)-42v9u.md)
-- [init(some Sequence<Range<Bound>>)](rangeset/init(_:)-9x0yj.md)
+- [init(IndexSet)](./rangeset/init%28_%29-42v9u.md)
+- [init(some Sequence<Range<Bound>>)](./rangeset/init%28_%29-9x0yj.md)
   Creates a range set containing the values in the given ranges.
-- [init<S, C>(S, within: C)](rangeset/init(_:within:).md)
+- [init<S, C>(S, within: C)](./rangeset/init%28_,within%29.md)
   Creates a new range set containing ranges that contain only the specified indices in the given collection.
 ### Instance Properties
-- [var isEmpty: Bool](rangeset/isempty.md)
+- [var isEmpty: Bool](./rangeset/isempty.md)
   A Boolean value indicating whether the range set is empty.
-- [var ranges: RangeSet<Bound>.Ranges](rangeset/ranges-swift.property.md)
+- [var ranges: RangeSet<Bound>.Ranges](./rangeset/ranges-swift.property.md)
   A collection of the ranges that make up the range set.
 ### Instance Methods
-- [func contains(Bound) -> Bool](rangeset/contains(_:).md)
+- [func contains(Bound) -> Bool](./rangeset/contains%28_%29.md)
   Returns a Boolean value indicating whether the given value is contained by the ranges in the range set.
-- [func formIntersection(RangeSet<Bound>)](rangeset/formintersection(_:).md)
+- [func formIntersection(RangeSet<Bound>)](./rangeset/formintersection%28_%29.md)
   Removes the contents of this range set that aren’t also in the given range set.
-- [func formSymmetricDifference(RangeSet<Bound>)](rangeset/formsymmetricdifference(_:).md)
+- [func formSymmetricDifference(RangeSet<Bound>)](./rangeset/formsymmetricdifference%28_%29.md)
   Removes the contents of this range set that are also in the given set and adds the contents of the given set that are not already in this range set.
-- [func formUnion(RangeSet<Bound>)](rangeset/formunion(_:).md)
+- [func formUnion(RangeSet<Bound>)](./rangeset/formunion%28_%29.md)
   Adds the contents of the given range set to this range set.
-- [func insert<C>(Bound, within: C) -> Bool](rangeset/insert(_:within:).md)
+- [func insert<C>(Bound, within: C) -> Bool](./rangeset/insert%28_,within%29.md)
   Inserts a range that contains only the specified index into the range set.
-- [func insert(contentsOf: Range<Bound>)](rangeset/insert(contentsof:).md)
+- [func insert(contentsOf: Range<Bound>)](./rangeset/insert%28contentsof%29.md)
   Inserts the given range into the range set.
-- [func intersection(RangeSet<Bound>) -> RangeSet<Bound>](rangeset/intersection(_:).md)
+- [func intersection(RangeSet<Bound>) -> RangeSet<Bound>](./rangeset/intersection%28_%29.md)
   Returns a new range set containing the contents of both this set and the given set.
-- [func isDisjoint(RangeSet<Bound>) -> Bool](rangeset/isdisjoint(_:).md)
+- [func isDisjoint(RangeSet<Bound>) -> Bool](./rangeset/isdisjoint%28_%29.md)
   Returns a Boolean value that indicates whether this range set set has no members in common with the given set.
-- [func isStrictSubset(of: RangeSet<Bound>) -> Bool](rangeset/isstrictsubset(of:).md)
+- [func isStrictSubset(of: RangeSet<Bound>) -> Bool](./rangeset/isstrictsubset%28of%29.md)
   Returns a Boolean value that indicates whether this range set is a strict subset of the given set.
-- [func isStrictSuperset(of: RangeSet<Bound>) -> Bool](rangeset/isstrictsuperset(of:).md)
+- [func isStrictSuperset(of: RangeSet<Bound>) -> Bool](./rangeset/isstrictsuperset%28of%29.md)
   Returns a Boolean value that indicates whether this range set is a strict superset of the given set.
-- [func isSubset(of: RangeSet<Bound>) -> Bool](rangeset/issubset(of:).md)
+- [func isSubset(of: RangeSet<Bound>) -> Bool](./rangeset/issubset%28of%29.md)
   Returns a Boolean value that indicates whether this range set is a subset of the given set.
-- [func isSuperset(of: RangeSet<Bound>) -> Bool](rangeset/issuperset(of:).md)
+- [func isSuperset(of: RangeSet<Bound>) -> Bool](./rangeset/issuperset%28of%29.md)
   Returns a Boolean value that indicates whether this range set is a superset of the given set.
-- [func isValid(within: DiscontiguousAttributedSubstring) -> Bool](rangeset/isvalid(within:)-38qb9.md)
+- [func isValid(within: DiscontiguousAttributedSubstring) -> Bool](./rangeset/isvalid%28within%29-38qb9.md)
   Indicates whether the range set is valid for use with the provided discontiguous attributed string.
-- [func isValid(within: some AttributedStringProtocol) -> Bool](rangeset/isvalid(within:)-6u17e.md)
+- [func isValid(within: some AttributedStringProtocol) -> Bool](./rangeset/isvalid%28within%29-6u17e.md)
   Indicates whether the range set is valid for use with the provided attributed string.
-- [func remove<C>(Bound, within: C)](rangeset/remove(_:within:).md)
+- [func remove<C>(Bound, within: C)](./rangeset/remove%28_,within%29.md)
   Removes the range that contains only the specified index from the range set.
-- [func remove(contentsOf: Range<Bound>)](rangeset/remove(contentsof:).md)
+- [func remove(contentsOf: Range<Bound>)](./rangeset/remove%28contentsof%29.md)
   Removes the given range from the range set.
-- [func subtract(RangeSet<Bound>)](rangeset/subtract(_:).md)
+- [func subtract(RangeSet<Bound>)](./rangeset/subtract%28_%29.md)
   Removes the contents of the given range set from this range set.
-- [func subtracting(RangeSet<Bound>) -> RangeSet<Bound>](rangeset/subtracting(_:).md)
+- [func subtracting(RangeSet<Bound>) -> RangeSet<Bound>](./rangeset/subtracting%28_%29.md)
   Returns a new set containing the contents of this range set that are not also in the given range set.
-- [func symmetricDifference(RangeSet<Bound>) -> RangeSet<Bound>](rangeset/symmetricdifference(_:).md)
+- [func symmetricDifference(RangeSet<Bound>) -> RangeSet<Bound>](./rangeset/symmetricdifference%28_%29.md)
   Returns a new range set representing the values in this range set or the given range set, but not both.
-- [func union(RangeSet<Bound>) -> RangeSet<Bound>](rangeset/union(_:).md)
+- [func union(RangeSet<Bound>) -> RangeSet<Bound>](./rangeset/union%28_%29.md)
   Returns a new range set containing the contents of both this set and the given set.
 ### Default Implementations
-- [CustomStringConvertible Implementations](rangeset/customstringconvertible-implementations.md)
-- [Equatable Implementations](rangeset/equatable-implementations.md)
-- [Hashable Implementations](rangeset/hashable-implementations.md)
+- [CustomStringConvertible Implementations](./rangeset/customstringconvertible-implementations.md)
+- [Equatable Implementations](./rangeset/equatable-implementations.md)
+- [Hashable Implementations](./rangeset/hashable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
-- [CustomStringConvertible](customstringconvertible.md)
-- [Equatable](equatable.md)
-- [Escapable](escapable.md)
-- [Hashable](hashable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Copyable](./copyable.md)
+- [CustomStringConvertible](./customstringconvertible.md)
+- [Equatable](./equatable.md)
+- [Escapable](./escapable.md)
+- [Hashable](./hashable.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [static func ..< (Self, Self) -> Range<Self>](comparable/'.._(_:_:).md)
+### Ranges
+- [static func ..< (Self, Self) -> Range<Self>](./comparable/dotdotop%28_,_%29.md)
   Returns a half-open range that contains its lower bound but not its upper bound.
-- [struct Range](range.md)
+- [struct Range](./range.md)
   A half-open interval from a lower bound up to, but not including, an upper bound.
-- [static func ... (Self, Self) -> ClosedRange<Self>](comparable/'...(_:_:).md)
+- [static func ... (Self, Self) -> ClosedRange<Self>](./comparable/dotdotdot%28_,_%29.md)
   Returns a closed range that contains both of its bounds.
-- [struct ClosedRange](closedrange.md)
+- [struct ClosedRange](./closedrange.md)
   An interval from a lower bound up to, and including, an upper bound.
 
 

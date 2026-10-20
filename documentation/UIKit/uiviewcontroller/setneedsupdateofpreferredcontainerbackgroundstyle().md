@@ -1,7 +1,8 @@
 # setNeedsUpdateOfPreferredContainerBackgroundStyle()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - visionOS 1.0+
@@ -12,11 +13,16 @@
 func setNeedsUpdateOfPreferredContainerBackgroundStyle()
 ```
 
+```objc
+- (void) setNeedsUpdateOfPreferredContainerBackgroundStyle;
+```
+
 ## See Also
 
-- [var preferredContainerBackgroundStyle: UIContainerBackgroundStyle](uiviewcontroller/preferredcontainerbackgroundstyle.md)
-- [var childViewControllerForPreferredContainerBackgroundStyle: UIViewController?](uiviewcontroller/childviewcontrollerforpreferredcontainerbackgroundstyle.md)
-- [enum UIContainerBackgroundStyle](uicontainerbackgroundstyle.md)
+### Adjusting the container background style
+- [var preferredContainerBackgroundStyle: UIContainerBackgroundStyle](./preferredcontainerbackgroundstyle.md)
+- [var childViewControllerForPreferredContainerBackgroundStyle: UIViewController?](./childviewcontrollerforpreferredcontainerbackgroundstyle.md)
+- [enum UIContainerBackgroundStyle](../uicontainerbackgroundstyle.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # thumbnail(of:for:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -13,15 +14,36 @@
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+func thumbnail(of size: CGSize, for box: PDFDisplayBox) -> UIImage
+```
+
+*macOS*
+
 ```swift
 func thumbnail(of size: NSSize, for box: PDFDisplayBox) -> NSImage
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+- (UIImage *) thumbnailOfSize:(CGSize) size forBox:(PDFDisplayBox) box;
+```
+
+*macOS*
+
+```objc
+- (NSImage *) thumbnailOfSize:(NSSize) size forBox:(PDFDisplayBox) box;
+```
+
 ## See Also
 
-- [func draw(with: PDFDisplayBox, to: CGContext)](pdfpage/draw(with:to:).md)
-- [func transform(CGContext, for: PDFDisplayBox)](pdfpage/transform(_:for:).md)
-- [func transform(for: PDFDisplayBox) -> CGAffineTransform](pdfpage/transform(for:).md)
+### Instance Methods
+- [func draw(with: PDFDisplayBox, to: CGContext)](./draw%28with,to%29.md)
+- [func transform(CGContext, for: PDFDisplayBox)](./transform%28_,for%29.md)
+- [func transform(for: PDFDisplayBox) -> CGAffineTransform](./transform%28for%29.md)
 
 
 ---

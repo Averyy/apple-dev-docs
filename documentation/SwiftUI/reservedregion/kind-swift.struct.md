@@ -1,7 +1,8 @@
 # ReservedRegion.Kind
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A kind of reserved region.
 
@@ -22,36 +23,37 @@ struct Kind
 
 #### Overview
 
-Pass a kind to [`reservedRegions(kind:options:layoutDirectionBehavior:)`](geometryproxy/reservedregions(kind:options:layoutdirectionbehavior:).md) to choose which regions you get: [`occlusion`](reservedregion/kind-swift.struct/occlusion.md) for areas that cover your content, and [`division`](reservedregion/kind-swift.struct/division.md) for areas that split it. Each [`ReservedRegion`](reservedregion.md) also reports its kind in its [`kind`](reservedregion/kind-swift.property.md) property.
+Pass a kind to [`reservedRegions(kind:options:layoutDirectionBehavior:)`](../geometryproxy/reservedregions%28kind,options,layoutdirectionbehavior%29.md) to choose which regions you get: [`occlusion`](./kind-swift.struct/occlusion.md) for areas that cover your content, and [`division`](./kind-swift.struct/division.md) for areas that split it. Each [`ReservedRegion`](../reservedregion.md) also reports its kind in its [`kind`](./kind-swift.property.md) property.
 
 ## Topics
 
 ### Getting reserved region kinds
-- [static var occlusion: ReservedRegion.Kind](reservedregion/kind-swift.struct/occlusion.md)
+- [static var occlusion: ReservedRegion.Kind](./kind-swift.struct/occlusion.md)
   A region that covers part of your view.
-- [static var division: ReservedRegion.Kind](reservedregion/kind-swift.struct/division.md)
+- [static var division: ReservedRegion.Kind](./kind-swift.struct/division.md)
   A region that splits your view into separate parts.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomReflectable](../../Swift/customreflectable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func reservedRegions(kind: ReservedRegion.Kind, options: ReservedRegion.QueryOptions, layoutDirectionBehavior: LayoutDirectionBehavior) -> [ReservedRegion]](geometryproxy/reservedregions(kind:options:layoutdirectionbehavior:).md)
+### Inspecting reserved regions
+- [func reservedRegions(kind: ReservedRegion.Kind, options: ReservedRegion.QueryOptions, layoutDirectionBehavior: LayoutDirectionBehavior) -> [ReservedRegion]](../geometryproxy/reservedregions%28kind,options,layoutdirectionbehavior%29.md)
   Returns an array of reserved regions that match the selection options you specify.
-- [struct ReservedRegion](reservedregion.md)
+- [struct ReservedRegion](../reservedregion.md)
   A region within a view’s coordinate space that another entity reserves.
-- [ReservedRegion.QueryOptions](reservedregion/queryoptions.md)
+- [ReservedRegion.QueryOptions](./queryoptions.md)
   Options for querying reserved regions.
 
 

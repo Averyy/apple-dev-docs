@@ -1,7 +1,8 @@
 # reset(toUnchecked:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reset this iterator to `codeUnitOffset`, skipping *all* safety checks.
 

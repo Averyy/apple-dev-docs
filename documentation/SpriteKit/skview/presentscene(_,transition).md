@@ -1,17 +1,18 @@
 # presentScene(_:transition:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Transitions from the current scene to a new scene.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,13 @@ Transitions from the current scene to a new scene.
 func presentScene(_ scene: SKScene, transition: SKTransition)
 ```
 
+```objc
+- (void) presentScene:(SKScene *) scene transition:(SKTransition *) transition;
+```
+
 #### Discussion
 
-If there is currently a scene presented by the view, the view’s [`scene`](skview/scene.md) property is updated immediately, the transition is executed to swap between the scenes. Otherwise, the new scene is presented immediately and the transition property is ignored.
+If there is currently a scene presented by the view, the view’s [`scene`](./scene.md) property is updated immediately, the transition is executed to swap between the scenes. Otherwise, the new scene is presented immediately and the transition property is ignored.
 
 ## Parameters
 
@@ -30,11 +35,12 @@ If there is currently a scene presented by the view, the view’s [`scene`](skvi
 
 ## See Also
 
-- [var scene: SKScene?](skview/scene.md)
+### Displaying a Scene
+- [var scene: SKScene?](./scene.md)
   The scene currently presented by this view.
-- [func presentScene(SKScene?)](skview/presentscene(_:).md)
+- [func presentScene(SKScene?)](./presentscene%28_%29.md)
   Presents a scene.
-- [class SKTransition](sktransition.md)
+- [class SKTransition](../sktransition.md)
   An object used to perform an animated transition to a new scene.
 
 

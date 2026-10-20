@@ -1,7 +1,8 @@
 # ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState.authorized
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Someone allows the browser app to use passkeys stored in the keychain, and managed by third-party credential manager apps.
 
@@ -17,9 +18,13 @@ Someone allows the browser app to use passkeys stored in the keychain, and manag
 case authorized
 ```
 
+```c
+ASAuthorizationWebBrowserPublicKeyCredentialManagerAuthorizationStateAuthorized
+```
+
 ## Mentions
 
-- [Authenticating people by using passkeys in browser apps](authenticating-people-by-using-passkeys-in-browser-apps.md)
+- [Authenticating people by using passkeys in browser apps](../../authenticating-people-by-using-passkeys-in-browser-apps.md)
 
 #### Discussion
 
@@ -27,9 +32,10 @@ The person can change their decision by navigating to Passkeys Access for Web Br
 
 ## See Also
 
-- [ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState.denied](asauthorizationwebbrowserpublickeycredentialmanager/authorizationstate/denied.md)
+### Passkey access states
+- [ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState.denied](./denied.md)
   Someone forbids the browser app to use passkeys stored in the keychain, and managed by third-party credential manager apps.
-- [ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState.notDetermined](asauthorizationwebbrowserpublickeycredentialmanager/authorizationstate/notdetermined.md)
+- [ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState.notDetermined](./notdetermined.md)
   The person has yet to choose whether to allow the browser app to access passkeys stored on the keychain, or managed by third-party credential managers.
 
 

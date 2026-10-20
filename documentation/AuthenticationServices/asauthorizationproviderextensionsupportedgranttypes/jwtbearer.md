@@ -1,7 +1,8 @@
 # jwtBearer
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 14.0+
@@ -12,15 +13,20 @@
 static var jwtBearer: ASAuthorizationProviderExtensionSupportedGrantTypes { get }
 ```
 
+```c
+ASAuthorizationProviderExtensionSupportedGrantTypesJWTBearer
+```
+
 ## Mentions
 
-- [Creating extensions that support Platform SSO](creating-extensions-that-support-platform-sso.md)
+- [Creating extensions that support Platform SSO](../creating-extensions-that-support-platform-sso.md)
 
 ## See Also
 
-- [static var password: ASAuthorizationProviderExtensionSupportedGrantTypes](asauthorizationproviderextensionsupportedgranttypes/password.md)
-- [static var saml1_1: ASAuthorizationProviderExtensionSupportedGrantTypes](asauthorizationproviderextensionsupportedgranttypes/saml1_1.md)
-- [static var saml2_0: ASAuthorizationProviderExtensionSupportedGrantTypes](asauthorizationproviderextensionsupportedgranttypes/saml2_0.md)
+### Type Properties
+- [static var password: ASAuthorizationProviderExtensionSupportedGrantTypes](./password.md)
+- [static var saml1_1: ASAuthorizationProviderExtensionSupportedGrantTypes](./saml1_1.md)
+- [static var saml2_0: ASAuthorizationProviderExtensionSupportedGrantTypes](./saml2_0.md)
 
 
 ---

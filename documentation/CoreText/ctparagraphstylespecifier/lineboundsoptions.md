@@ -1,18 +1,19 @@
 # CTParagraphStyleSpecifier.lineBoundsOptions
 
 **Framework**: Core Text  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Options that control the alignment of the line edges with the leading and trailing margins.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Options that control the alignment of the line edges with the leading and traili
 case lineBoundsOptions
 ```
 
+```c
+kCTParagraphStyleSpecifierLineBoundsOptions
+```
+
 #### Discussion
 
-Type: [`CTLineBoundsOptions`](ctlineboundsoptions.md). Default value `0` (that is, no options). Affects: [`CTTypesetter`](cttypesetter.md).
+Type: [`CTLineBoundsOptions`](../ctlineboundsoptions.md). Default value `0` (that is, no options). Affects: [`CTTypesetter`](../cttypesetter.md).
 
 
 ---

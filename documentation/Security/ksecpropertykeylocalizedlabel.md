@@ -1,7 +1,8 @@
 # kSecPropertyKeyLocalizedLabel
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is the localized label for a certificate property.
 
@@ -12,6 +13,10 @@ A key whose value is the localized label for a certificate property.
 
 ```swift
 let kSecPropertyKeyLocalizedLabel: CFString
+```
+
+```c
+extern CFStringRef const kSecPropertyKeyLocalizedLabel;
 ```
 
 

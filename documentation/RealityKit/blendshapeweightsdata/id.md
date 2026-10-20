@@ -1,7 +1,8 @@
 # id
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique id of the blend shape. This value is used when binding to the structure using an animation bind target.
 

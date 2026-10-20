@@ -1,7 +1,8 @@
 # previewRepresentableActivityItems
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.2+
@@ -12,10 +13,15 @@
 var previewRepresentableActivityItems: [any NSPreviewRepresentableActivityItem]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray<id<NSPreviewRepresentableActivityItem>> * previewRepresentableActivityItems;
+```
+
 ## See Also
 
-- [var observedPresentedItemUbiquityAttributes: Set<URLResourceKey>](nsdocument/observedpresenteditemubiquityattributes.md)
-- [var presentedItemURL: URL?](nsdocument/presenteditemurl.md)
+### Instance Properties
+- [var observedPresentedItemUbiquityAttributes: Set<URLResourceKey>](./observedpresenteditemubiquityattributes.md)
+- [var presentedItemURL: URL?](./presenteditemurl.md)
 
 
 ---

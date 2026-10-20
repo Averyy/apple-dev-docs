@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a nested container keyed by the given type and returns it.

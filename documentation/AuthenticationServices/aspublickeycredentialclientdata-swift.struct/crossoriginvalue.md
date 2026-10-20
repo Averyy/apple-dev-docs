@@ -1,7 +1,8 @@
 # ASPublicKeyCredentialClientData.CrossOriginValue
 
 **Framework**: Authentication Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.4+
@@ -18,16 +19,16 @@ enum CrossOriginValue
 ## Topics
 
 ### Enumeration Cases
-- [ASPublicKeyCredentialClientData.CrossOriginValue.crossOrigin](aspublickeycredentialclientdata-swift.struct/crossoriginvalue/crossorigin.md)
-- [ASPublicKeyCredentialClientData.CrossOriginValue.sameOriginWithAncestors](aspublickeycredentialclientdata-swift.struct/crossoriginvalue/sameoriginwithancestors.md)
+- [ASPublicKeyCredentialClientData.CrossOriginValue.crossOrigin](./crossoriginvalue/crossorigin.md)
+- [ASPublicKeyCredentialClientData.CrossOriginValue.sameOriginWithAncestors](./crossoriginvalue/sameoriginwithancestors.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

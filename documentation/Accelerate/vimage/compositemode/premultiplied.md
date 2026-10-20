@@ -1,7 +1,8 @@
 # vImage.CompositeMode.premultiplied
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Blends two premultiplied images to produce a premultiplied result.
 
@@ -11,7 +12,7 @@ Blends two premultiplied images to produce a premultiplied result.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,11 +23,12 @@ case premultiplied
 
 ## See Also
 
-- [vImage.CompositeMode.nonpremultiplied](vimage/compositemode/nonpremultiplied.md)
+### Enumeration Cases
+- [vImage.CompositeMode.nonpremultiplied](./nonpremultiplied.md)
   Composite two non-premultiplied images, to produce a non-premultiplied result.
-- [vImage.CompositeMode.nonpremultipliedToPremultiplied](vimage/compositemode/nonpremultipliedtopremultiplied.md)
+- [vImage.CompositeMode.nonpremultipliedToPremultiplied](./nonpremultipliedtopremultiplied.md)
   Blends a nonpremultiplied top image into a premultiplied bottom image and returns a premultiplied result.
-- [vImage.CompositeMode.premultipliedWithConstantAlpha(_:)](vimage/compositemode/premultipliedwithconstantalpha(_:).md)
+- [vImage.CompositeMode.premultipliedWithConstantAlpha(_:)](./premultipliedwithconstantalpha%28_%29.md)
   Performs premultiplied alpha compositing of two images, using a single alpha value for the entire image.
 
 

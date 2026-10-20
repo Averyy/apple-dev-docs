@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Replaces this value with its square root, rounded to a representable value.

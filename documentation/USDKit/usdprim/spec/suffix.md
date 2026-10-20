@@ -1,7 +1,8 @@
 # suffix
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The authored suffix, or `nil` if not authored.
 

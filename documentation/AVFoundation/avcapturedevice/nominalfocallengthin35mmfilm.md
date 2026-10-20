@@ -1,7 +1,8 @@
 # nominalFocalLengthIn35mmFilm
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The nominal 35mm equivalent focal length of the capture device’s lens.
 
@@ -16,9 +17,13 @@ The nominal 35mm equivalent focal length of the capture device’s lens.
 var nominalFocalLengthIn35mmFilm: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float nominalFocalLengthIn35mmFilm;
+```
+
 #### Discussion
 
-This value represents a nominal measurement of the device’s field of view, expressed as a 35mm equivalent focal length, measured diagonally. The value is similar to the `FocalLengthIn35mmFormat` EXIF entry (see [`kCGImagePropertyExifFocalLenIn35mmFilm`](https://developer.apple.com/documentation/imageio/kcgimagepropertyexiffocallenin35mmfilm)) for a photo captured using the device’s format where [`isHighestPhotoQualitySupported`](avcapturedevice/format/ishighestphotoqualitysupported.md) is `true` or when you’ve configured the session with the [`photo`](avcapturesession/preset/photo.md) preset.
+This value represents a nominal measurement of the device’s field of view, expressed as a 35mm equivalent focal length, measured diagonally. The value is similar to the `FocalLengthIn35mmFormat` EXIF entry (see [`kCGImagePropertyExifFocalLenIn35mmFilm`](../../ImageIO/kcgimagepropertyexiffocallenin35mmfilm.md)) for a photo captured using the device’s format where [`isHighestPhotoQualitySupported`](./format/ishighestphotoqualitysupported.md) is `true` or when you’ve configured the session with the [`photo`](../avcapturesession/preset/photo.md) preset.
 
 This property value is `0` for virtual devices and external cameras.
 

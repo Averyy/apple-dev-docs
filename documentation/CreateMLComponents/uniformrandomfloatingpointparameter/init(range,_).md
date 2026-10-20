@@ -1,7 +1,8 @@
 # init(range:_:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Random Parameter transformer.
 

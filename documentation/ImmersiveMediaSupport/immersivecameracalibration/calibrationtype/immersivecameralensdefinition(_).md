@@ -1,7 +1,8 @@
 # ImmersiveCameraCalibration.CalibrationType.immersiveCameraLensDefinition(_:)
 
 **Framework**: Immersive Media Support  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that represents a calibration type that uses coefficients to present each camera lens.
 

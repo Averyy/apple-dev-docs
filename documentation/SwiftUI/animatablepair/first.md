@@ -1,7 +1,8 @@
 # first
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The first value.
 
@@ -22,7 +23,8 @@ var first: First
 
 ## See Also
 
-- [var second: Second](animatablepair/second.md)
+### Getting the constituent animations
+- [var second: Second](./second.md)
   The second value.
 
 

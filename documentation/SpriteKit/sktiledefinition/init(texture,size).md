@@ -1,7 +1,8 @@
 # init(texture:size:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new tile definition of a specified size with a single texture.
 
@@ -18,6 +19,10 @@ Initializes a new tile definition of a specified size with a single texture.
 
 ```swift
 init(texture: SKTexture, size: CGSize)
+```
+
+```objc
+- (instancetype) initWithTexture:(SKTexture *) texture size:(CGSize) size;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # tailTime
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio unit’s tail time, in seconds.
 
@@ -19,6 +20,18 @@ The audio unit’s tail time, in seconds.
 var tailTime: TimeInterval { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, readonly) NSTimeInterval tailTime;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) NSTimeInterval tailTime;
+```
+
 #### Discussion
 
 This property reflects the time interval between when the input stream ends or otherwise transitions to silence, and when the output stream becomes silent. This should also reflect the duration of an effect (e.g. reverberation).
@@ -27,15 +40,16 @@ This version 3 property is bridged to the version 2 `kAudioUnitProperty_TailTime
 
 ## See Also
 
-- [var latency: TimeInterval](auaudiounit/latency.md)
+### Optimizing Performance
+- [var latency: TimeInterval](./latency.md)
   The audio unit’s processing latency, in seconds.
-- [var renderQuality: Int](auaudiounit/renderquality.md)
+- [var renderQuality: Int](./renderquality.md)
   Provides a trade-off between rendering quality and CPU load.
-- [var shouldBypassEffect: Bool](auaudiounit/shouldbypasseffect.md)
+- [var shouldBypassEffect: Bool](./shouldbypasseffect.md)
   Determines whether an effect should route input directly to output, without any processing.
-- [var canProcessInPlace: Bool](auaudiounit/canprocessinplace.md)
+- [var canProcessInPlace: Bool](./canprocessinplace.md)
   Determines whether an audio unit can process in place.
-- [var isRenderingOffline: Bool](auaudiounit/isrenderingoffline.md)
+- [var isRenderingOffline: Bool](./isrenderingoffline.md)
   Communicates to an audio unit that it is rendering offline.
 
 

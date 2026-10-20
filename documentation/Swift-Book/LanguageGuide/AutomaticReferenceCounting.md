@@ -317,7 +317,7 @@ Here's how the strong references look after creating and assigning these two ins
 The `john` variable now has a strong reference to the new `Person` instance,
 and the `unit4A` variable has a strong reference to the new `Apartment` instance:
 
-![](referenceCycle01)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/referenceCycle01@2x.png)
 
 You can now link the two instances together
 so that the person has an apartment, and the apartment has a tenant.
@@ -341,7 +341,7 @@ unit4A!.tenant = john
 
 Here's how the strong references look after you link the two instances together:
 
-![](referenceCycle02)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/referenceCycle02@2x.png)
 
 Unfortunately, linking these two instances creates
 a strong reference cycle between them.
@@ -374,7 +374,7 @@ from ever being deallocated, causing a memory leak in your app.
 Here's how the strong references look after you set
 the `john` and `unit4A` variables to `nil`:
 
-![](referenceCycle03)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/referenceCycle03@2x.png)
 
 The strong references between the `Person` instance
 and the `Apartment` instance remain and can't be broken.
@@ -521,7 +521,7 @@ unit4A!.tenant = john
 
 Here's how the references look now that you've linked the two instances together:
 
-![](weakReference01)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/weakReference01@2x.png)
 
 The `Person` instance still has a strong reference to the `Apartment` instance,
 but the `Apartment` instance now has a *weak* reference to the `Person` instance.
@@ -547,7 +547,7 @@ Because there are no more strong references to the `Person` instance,
 it's deallocated
 and the `tenant` property is set to `nil`:
 
-![](weakReference02)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/weakReference02@2x.png)
 
 The only remaining strong reference to the `Apartment` instance
 is from the `unit4A` variable.
@@ -571,7 +571,7 @@ unit4A = nil
 Because there are no more strong references to the `Apartment` instance,
 it too is deallocated:
 
-![](weakReference03)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/weakReference03@2x.png)
 
 > Note: In systems that use garbage collection,
 > weak pointers are sometimes used to implement a simple caching mechanism
@@ -732,7 +732,7 @@ john!.card = CreditCard(number: 1234_5678_9012_3456, customer: john!)
 
 Here's how the references look, now that you've linked the two instances:
 
-![](unownedReference01)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/unownedReference01@2x.png)
 
 The `Customer` instance now has a strong reference to the `CreditCard` instance,
 and the `CreditCard` instance has an unowned reference to the `Customer` instance.
@@ -741,7 +741,7 @@ Because of the unowned `customer` reference,
 when you break the strong reference held by the `john` variable,
 there are no more strong references to the `Customer` instance:
 
-![](unownedReference02)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/unownedReference02@2x.png)
 
 Because there are no more strong references to the `Customer` instance,
 it's deallocated.
@@ -899,7 +899,7 @@ stored in their `nextCourse` property,
 which maintains an unowned optional reference to
 the course a student should take after completing this one.
 
-![](unownedOptionalReference)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/unownedOptionalReference@2x.png)
 
 An unowned optional reference doesn't keep a strong hold
 on the instance of the class that it wraps,
@@ -1038,7 +1038,7 @@ and stores this instance in its `country` property.
 The initializer for `City` is called from within the initializer for `Country`.
 However, the initializer for `Country` can't pass `self` to the `City` initializer
 until a new `Country` instance is fully initialized,
-as described in [Two Phase Initialization](Initialization.md#Two-Phase-Initialization).
+as described in [Two-Phase Initialization](Initialization.md#Two-Phase-Initialization).
 
 To cope with this requirement,
 you declare the `capitalCity` property of `Country` as
@@ -1268,7 +1268,7 @@ creates a strong reference cycle between
 an `HTMLElement` instance and the closure used for its default `asHTML` value.
 Here's how the cycle looks:
 
-![](closureReferenceCycle01)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/closureReferenceCycle01@2x.png)
 
 The instance's `asHTML` property holds a strong reference to its closure.
 However, because the closure refers to `self` within its body
@@ -1484,7 +1484,7 @@ print(paragraph!.asHTML())
 
 Here's how the references look with the capture list in place:
 
-![](closureReferenceCycle02)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/closureReferenceCycle02@2x.png)
 
 This time, the capture of `self` by the closure is an unowned reference,
 and doesn't keep a strong hold on the `HTMLElement` instance it has captured.
@@ -1507,7 +1507,7 @@ paragraph = nil
 -->
 
 For more information about capture lists,
-see [Capture Lists](Expressions.md#Capture-Lists).
+see [Capture Lists](../ReferenceManual/Expressions.md#Capture-Lists).
 
 <!--
 This source file is part of the Swift.org open source project

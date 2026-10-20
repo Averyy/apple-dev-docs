@@ -1,7 +1,8 @@
 # copySendRight()
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Create another send right from a given send right.
 
@@ -19,6 +20,8 @@ Create another send right from a given send right.
 ```swift
 func copySendRight() throws -> Mach.Port<Mach.SendRight>
 ```
+
+Available when `RightType` is `Mach.SendRight`.
 
 #### Discussion
 

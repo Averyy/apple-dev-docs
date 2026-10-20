@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```
 const String BUILD_NUMBER;
 ```
 

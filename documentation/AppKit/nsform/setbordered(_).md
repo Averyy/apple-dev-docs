@@ -1,17 +1,24 @@
 # setBordered(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets whether the receiver’s entries should display a border around their editable text fields.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.10
+
+> **Deprecated**: Use NSTextField directly instead, and consider NSStackView for layout assistance
 
 ## Declaration
 
 ```swift
 func setBordered(_ flag: Bool)
+```
+
+```objc
+- (void) setBordered:(BOOL) flag;
 ```
 
 #### Discussion
@@ -20,31 +27,33 @@ The border is drawn as a thin line around the editable text field. An entry can 
 
 ## Parameters
 
-- `flag`: [`true`](https://developer.apple.com/documentation/swift/true) to display a border around all entries; otherwise, [`false`](https://developer.apple.com/documentation/swift/false) to show no border around all entries.
+- `flag`: [`true`](../../Swift/true.md) to display a border around all entries; otherwise, [`false`](../../Swift/false.md) to show no border around all entries.
 
 ## See Also
 
-- [var isBordered: Bool](nscell/isbordered.md)
+### Related Documentation
+- [var isBordered: Bool](../nscell/isbordered.md)
   A Boolean value indicating whether the cell draws itself outlined with a plain border.
-- [func setBezeled(Bool)](nsform/setbezeled(_:).md)
+### Changing the Appearance of All the Entries
+- [func setBezeled(Bool)](./setbezeled%28_%29.md)
   Sets whether the receiver’s entries should display a bezel around their editable text.
-- [func setEntryWidth(CGFloat)](nsform/setentrywidth(_:).md)
+- [func setEntryWidth(CGFloat)](./setentrywidth%28_%29.md)
   Sets the width of all the entries in the receiver.
-- [func setFrameSize(NSSize)](nsform/setframesize(_:).md)
+- [func setFrameSize(NSSize)](./setframesize%28_%29.md)
   Sets the size of the receiver’s frame size to the specified value.
-- [func setInterlineSpacing(CGFloat)](nsform/setinterlinespacing(_:).md)
+- [func setInterlineSpacing(CGFloat)](./setinterlinespacing%28_%29.md)
   Sets the spacing between entries
-- [func setTitleAlignment(NSTextAlignment)](nsform/settitlealignment(_:).md)
+- [func setTitleAlignment(NSTextAlignment)](./settitlealignment%28_%29.md)
   Sets the alignment for all of the entry titles.
-- [func setTitleBaseWritingDirection(NSWritingDirection)](nsform/settitlebasewritingdirection(_:).md)
+- [func setTitleBaseWritingDirection(NSWritingDirection)](./settitlebasewritingdirection%28_%29.md)
   Sets the writing direction for the title of every control embedded in the form.
-- [func setTextAlignment(NSTextAlignment)](nsform/settextalignment(_:).md)
+- [func setTextAlignment(NSTextAlignment)](./settextalignment%28_%29.md)
   Sets the alignment for all of the receiver’s editable text.
-- [func setTextBaseWritingDirection(NSWritingDirection)](nsform/settextbasewritingdirection(_:).md)
+- [func setTextBaseWritingDirection(NSWritingDirection)](./settextbasewritingdirection%28_%29.md)
   Sets the writing direction for the text content of every control embedded in the form.
-- [func setTitleFont(NSFont)](nsform/settitlefont(_:).md)
+- [func setTitleFont(NSFont)](./settitlefont%28_%29.md)
   Sets the font for all of the entry titles.
-- [func setTextFont(NSFont)](nsform/settextfont(_:).md)
+- [func setTextFont(NSFont)](./settextfont%28_%29.md)
   Sets the font for all of the receiver’s editable text fields
 
 

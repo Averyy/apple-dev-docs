@@ -1,7 +1,8 @@
 # segmentType
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of content within this segment, indicating whether it is primary program content or a specific category of auxiliary content.
 
@@ -14,6 +15,10 @@ The type of content within this segment, indicating whether it is primary progra
 
 ```swift
 var segmentType: AVPlaybackUserInterfaceTimelineSegmentType { get }
+```
+
+```objc
+@property (nonatomic, readonly) AVPlaybackUserInterfaceTimelineSegmentType segmentType;
 ```
 
 

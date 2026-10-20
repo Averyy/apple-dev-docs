@@ -1,7 +1,8 @@
 # mask(content:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Masks chart content using the alpha channel of the specified content.
 
@@ -27,7 +28,8 @@ Parameter content: The content whose alpha will be applied to this item.
 
 ## See Also
 
-- [func clipShape(some Shape, style: FillStyle) -> some ChartContent](chartcontent/clipshape(_:style:).md)
+### Masking and clipping
+- [func clipShape(some Shape, style: FillStyle) -> some ChartContent](./clipshape%28_,style%29.md)
   Sets a clip shape for the chart content.
 
 

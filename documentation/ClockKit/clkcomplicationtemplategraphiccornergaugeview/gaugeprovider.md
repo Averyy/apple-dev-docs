@@ -1,12 +1,15 @@
 # gaugeProvider
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The gauge to display in the complication.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -17,11 +20,12 @@ The gauge to display in the complication.
 
 ## See Also
 
-- [var label: Label](clkcomplicationtemplategraphiccornergaugeview/label.md)
+### Accessing the Content
+- [var label: Label](./label.md)
   The SwiftUI view displayed by the template.
-- [var leadingTextProvider: CLKTextProvider?](clkcomplicationtemplategraphiccornergaugeview/leadingtextprovider.md)
+- [var leadingTextProvider: CLKTextProvider?](./leadingtextprovider.md)
   The text provider for the gauge’s leading text.
-- [var trailingTextProvider: CLKTextProvider?](clkcomplicationtemplategraphiccornergaugeview/trailingtextprovider.md)
+- [var trailingTextProvider: CLKTextProvider?](./trailingtextprovider.md)
   The text provider for the gauge’s trailing text.
 
 

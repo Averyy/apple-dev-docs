@@ -1,7 +1,8 @@
 # raiseToPower(_:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces values in the noise field by exponentiating them with values from the specified noise object.
 
@@ -19,11 +20,15 @@ Replaces values in the noise field by exponentiating them with values from the s
 func raiseToPower(_ noise: GKNoise)
 ```
 
+```objc
+- (void) raiseToPowerWithNoise:(GKNoise *) noise;
+```
+
 #### Discussion
 
-Noise values are generally in the range [-1.0, 1.0], so exponentiating some points in a noise field can result in values outside the floating-point domain. Depending on the stylistic result you’re looking for, choose your base and exponent noises carefully or use other noise operations (such as the [`clamp(lowerBound:upperBound:)`](gknoise/clamp(lowerbound:upperbound:).md) and [`remapValues(toCurveWithControlPoints:)`](gknoise/remapvalues(tocurvewithcontrolpoints:).md) methods) to conform the exponent noise to a specific range before using this method.
+Noise values are generally in the range [-1.0, 1.0], so exponentiating some points in a noise field can result in values outside the floating-point domain. Depending on the stylistic result you’re looking for, choose your base and exponent noises carefully or use other noise operations (such as the [`clamp(lowerBound:upperBound:)`](./clamp%28lowerbound,upperbound%29.md) and [`remapValues(toCurveWithControlPoints:)`](./remapvalues%28tocurvewithcontrolpoints%29.md) methods) to conform the exponent noise to a specific range before using this method.
 
-![None](/images/com.apple.gameplaykit/media-2556399@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.gameplaykit/media-2556399@2x.png)
 
 ## Parameters
 
@@ -31,13 +36,14 @@ Noise values are generally in the range [-1.0, 1.0], so exponentiating some poin
 
 ## See Also
 
-- [func add(GKNoise)](gknoise/add(_:).md)
+### Applying Operations that Combine Noise
+- [func add(GKNoise)](./add%28_%29.md)
   Replaces values in the noise field by adding them to values from the specified noise object.
-- [func multiply(GKNoise)](gknoise/multiply(_:).md)
+- [func multiply(GKNoise)](./multiply%28_%29.md)
   Replaces values in the noise field by multiplying them with values from the specified noise object.
-- [func maximum(GKNoise)](gknoise/maximum(_:).md)
+- [func maximum(GKNoise)](./maximum%28_%29.md)
   Replaces values in the noise field by choosing the lesser of each value and a corresponding value in the specified noise object.
-- [func minimum(GKNoise)](gknoise/minimum(_:).md)
+- [func minimum(GKNoise)](./minimum%28_%29.md)
   Replaces values in the noise field by choosing the lesser of each value and a corresponding value in the specified noise object.
 
 

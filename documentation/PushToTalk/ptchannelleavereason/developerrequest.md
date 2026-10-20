@@ -1,7 +1,8 @@
 # PTChannelLeaveReason.developerRequest
 
 **Framework**: Push to Talk  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A leave reason that indicates the app calls the leave channel method.
 
@@ -16,13 +17,18 @@ A leave reason that indicates the app calls the leave channel method.
 case developerRequest
 ```
 
+```c
+PTChannelLeaveReasonDeveloperRequest
+```
+
 ## See Also
 
-- [PTChannelLeaveReason.userRequest](ptchannelleavereason/userrequest.md)
+### Leave reasons
+- [PTChannelLeaveReason.userRequest](./userrequest.md)
   A leave reason that indicates a user pressed the leave button in the user interface.
-- [PTChannelLeaveReason.systemPolicy](ptchannelleavereason/systempolicy.md)
+- [PTChannelLeaveReason.systemPolicy](./systempolicy.md)
   A leave reason that indicates a new device restriction is in effect.
-- [PTChannelLeaveReason.unknown](ptchannelleavereason/unknown.md)
+- [PTChannelLeaveReason.unknown](./unknown.md)
   A leave reason that indicates an unknown reason.
 
 

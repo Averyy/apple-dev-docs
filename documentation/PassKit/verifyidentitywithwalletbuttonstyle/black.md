@@ -1,7 +1,8 @@
 # black
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A button style that represents a black button with white lettering.
 
@@ -9,7 +10,7 @@ A button style that represents a black button with white lettering.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,7 +20,8 @@ static let black: VerifyIdentityWithWalletButtonStyle
 
 ## See Also
 
-- [static let blackOutline: VerifyIdentityWithWalletButtonStyle](verifyidentitywithwalletbuttonstyle/blackoutline.md)
+### Getting the standard styles
+- [static let blackOutline: VerifyIdentityWithWalletButtonStyle](./blackoutline.md)
   A button style that represents a black button with a light outline.
 
 

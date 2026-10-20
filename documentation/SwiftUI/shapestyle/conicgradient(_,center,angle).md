@@ -1,7 +1,8 @@
 # conicGradient(_:center:angle:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A conic gradient that completes a full turn, optionally starting from a given angle and anchored to a relative center point within the filled shape.
 
@@ -21,6 +22,15 @@ A conic gradient that completes a full turn, optionally starting from a given an
 static func conicGradient(_ gradient: AnyGradient, center: UnitPoint = .center, angle: Angle = .zero) -> some ShapeStyle
 ```
 
+Available when `Self` is `AngularGradient`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+static func conicGradient(_ gradient: Gradient, center: UnitPoint, angle: Angle = .zero) -> AngularGradient
+```
+
 #### Discussion
 
 For example, a conic gradient used as a background:
@@ -32,7 +42,7 @@ ContentView()
     .background(.conicGradient(gradient))
 ```
 
-For information about how to use shape styles, see [`ShapeStyle`](shapestyle.md).
+For information about how to use shape styles, see [`ShapeStyle`](../shapestyle.md).
 
 ## Parameters
 
@@ -42,9 +52,10 @@ For information about how to use shape styles, see [`ShapeStyle`](shapestyle.md)
 
 ## See Also
 
-- [static func conicGradient(colors: [Color], center: UnitPoint, angle: Angle) -> AngularGradient](shapestyle/conicgradient(colors:center:angle:).md)
+### Conic gradients
+- [static func conicGradient(colors: [Color], center: UnitPoint, angle: Angle) -> AngularGradient](./conicgradient%28colors,center,angle%29.md)
   A conic gradient defined by a collection of colors that completes a full turn.
-- [static func conicGradient(stops: [Gradient.Stop], center: UnitPoint, angle: Angle) -> AngularGradient](shapestyle/conicgradient(stops:center:angle:).md)
+- [static func conicGradient(stops: [Gradient.Stop], center: UnitPoint, angle: Angle) -> AngularGradient](./conicgradient%28stops,center,angle%29.md)
   A conic gradient defined by a collection of color stops that completes a full turn.
 
 

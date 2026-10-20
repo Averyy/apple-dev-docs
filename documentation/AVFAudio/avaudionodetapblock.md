@@ -1,23 +1,28 @@
 # AVAudioNodeTapBlock
 
 **Framework**: AVFAudio  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The block that receives copies of the output of an audio node.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 typealias AVAudioNodeTapBlock = (AVAudioPCMBuffer, AVAudioTime) -> Void
+```
+
+```c
+typedef void (^)(AVAudioPCMBuffer *, AVAudioTime *) AVAudioNodeTapBlock;
 ```
 
 #### Discussion
@@ -31,11 +36,12 @@ typealias AVAudioNodeTapBlock = (AVAudioPCMBuffer, AVAudioTime) -> Void
 
 ## See Also
 
-- [func installAudioTap(onBus: AVAudioNodeBus, bufferSize: AVAudioFrameCount, format: AVAudioFormat?, tapProvider: (AVReadOnlyAudioPCMBuffer, AVAudioTime) -> Void) throws](avaudionode/installaudiotap(onbus:buffersize:format:tapprovider:).md)
+### Managing audio taps
+- [func installAudioTap(onBus: AVAudioNodeBus, bufferSize: AVAudioFrameCount, format: AVAudioFormat?, tapProvider: (AVReadOnlyAudioPCMBuffer, AVAudioTime) -> Void) throws](./avaudionode/installaudiotap%28onbus,buffersize,format,tapprovider%29.md)
   Install a tap on a bus using a sendable block
-- [func installTap(onBus: AVAudioNodeBus, bufferSize: AVAudioFrameCount, format: AVAudioFormat?, block: AVAudioNodeTapBlock)](avaudionode/installtap(onbus:buffersize:format:block:).md)
+- [func installTap(onBus: AVAudioNodeBus, bufferSize: AVAudioFrameCount, format: AVAudioFormat?, block: AVAudioNodeTapBlock)](./avaudionode/installtap%28onbus,buffersize,format,block%29.md)
   Installs an audio tap on a bus you specify to record, monitor, and observe the output of the node.
-- [func removeTap(onBus: AVAudioNodeBus)](avaudionode/removetap(onbus:).md)
+- [func removeTap(onBus: AVAudioNodeBus)](./avaudionode/removetap%28onbus%29.md)
   Removes an audio tap on a bus you specify.
 
 

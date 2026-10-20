@@ -1,7 +1,8 @@
 # CMBlockBufferFillDataBytes(with:blockBuffer:offsetIntoDestination:dataLength:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Fills the destination buffer with the specified data byte.
 
@@ -20,6 +21,10 @@ Fills the destination buffer with the specified data byte.
 func CMBlockBufferFillDataBytes(with fillByte: CChar, blockBuffer destinationBuffer: CMBlockBuffer, offsetIntoDestination: Int, dataLength: Int) -> OSStatus
 ```
 
+```c
+extern OSStatus CMBlockBufferFillDataBytes(char fillByte, CMBlockBufferRef destinationBuffer, size_t offsetIntoDestination, size_t dataLength);
+```
+
 #### Return Value
 
 Returns `kCMBlockBufferNoErr` if successful.
@@ -33,17 +38,18 @@ Returns `kCMBlockBufferNoErr` if successful.
 
 ## See Also
 
-- [func CMBlockBufferAppendMemoryBlock(CMBlockBuffer, memoryBlock: UnsafeMutableRawPointer?, length: Int, blockAllocator: CFAllocator?, customBlockSource: UnsafePointer<CMBlockBufferCustomBlockSource>?, offsetToData: Int, dataLength: Int, flags: CMBlockBufferFlags) -> OSStatus](cmblockbufferappendmemoryblock(_:memoryblock:length:blockallocator:customblocksource:offsettodata:datalength:flags:).md)
+### Modifying a Block Buffer
+- [func CMBlockBufferAppendMemoryBlock(CMBlockBuffer, memoryBlock: UnsafeMutableRawPointer?, length: Int, blockAllocator: CFAllocator?, customBlockSource: UnsafePointer<CMBlockBufferCustomBlockSource>?, offsetToData: Int, dataLength: Int, flags: CMBlockBufferFlags) -> OSStatus](./cmblockbufferappendmemoryblock%28_,memoryblock,length,blockallocator,customblocksource,offsettodata,datalength,flags%29.md)
   Adds a memory block to an existing block buffer.
-- [func CMBlockBufferAppendBufferReference(CMBlockBuffer, targetBBuf: CMBlockBuffer, offsetToData: Int, dataLength: Int, flags: CMBlockBufferFlags) -> OSStatus](cmblockbufferappendbufferreference(_:targetbbuf:offsettodata:datalength:flags:).md)
+- [func CMBlockBufferAppendBufferReference(CMBlockBuffer, targetBBuf: CMBlockBuffer, offsetToData: Int, dataLength: Int, flags: CMBlockBufferFlags) -> OSStatus](./cmblockbufferappendbufferreference%28_,targetbbuf,offsettodata,datalength,flags%29.md)
   Adds a reference to an existing block buffer.
-- [func CMBlockBufferAssureBlockMemory(CMBlockBuffer) -> OSStatus](cmblockbufferassureblockmemory(_:).md)
+- [func CMBlockBufferAssureBlockMemory(CMBlockBuffer) -> OSStatus](./cmblockbufferassureblockmemory%28_%29.md)
   Assures that the system allocates memory for all memory blocks in a block buffer.
-- [func CMBlockBufferAccessDataBytes(CMBlockBuffer, atOffset: Int, length: Int, temporaryBlock: UnsafeMutableRawPointer, returnedPointerOut: UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>) -> OSStatus](cmblockbufferaccessdatabytes(_:atoffset:length:temporaryblock:returnedpointerout:).md)
+- [func CMBlockBufferAccessDataBytes(CMBlockBuffer, atOffset: Int, length: Int, temporaryBlock: UnsafeMutableRawPointer, returnedPointerOut: UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>) -> OSStatus](./cmblockbufferaccessdatabytes%28_,atoffset,length,temporaryblock,returnedpointerout%29.md)
   Accesses potentially noncontiguous data in a block buffer.
-- [func CMBlockBufferCopyDataBytes(CMBlockBuffer, atOffset: Int, dataLength: Int, destination: UnsafeMutableRawPointer) -> OSStatus](cmblockbuffercopydatabytes(_:atoffset:datalength:destination:).md)
+- [func CMBlockBufferCopyDataBytes(CMBlockBuffer, atOffset: Int, dataLength: Int, destination: UnsafeMutableRawPointer) -> OSStatus](./cmblockbuffercopydatabytes%28_,atoffset,datalength,destination%29.md)
   Copies bytes from a block buffer into a provided memory area.
-- [func CMBlockBufferReplaceDataBytes(with: UnsafeRawPointer, blockBuffer: CMBlockBuffer, offsetIntoDestination: Int, dataLength: Int) -> OSStatus](cmblockbufferreplacedatabytes(with:blockbuffer:offsetintodestination:datalength:).md)
+- [func CMBlockBufferReplaceDataBytes(with: UnsafeRawPointer, blockBuffer: CMBlockBuffer, offsetIntoDestination: Int, dataLength: Int) -> OSStatus](./cmblockbufferreplacedatabytes%28with,blockbuffer,offsetintodestination,datalength%29.md)
   Copies bytes from a given memory block into a block buffer replacing bytes in the underlying data blocks.
 
 

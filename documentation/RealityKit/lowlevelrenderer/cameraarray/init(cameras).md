@@ -1,7 +1,8 @@
 # init(cameras:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a camera array populated with the given cameras.
 

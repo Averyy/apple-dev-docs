@@ -1,14 +1,15 @@
 # NOT_LIST_CONTAINS_ALL
 
 **Framework**: CKTool JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - CKTool JS 1.2.15+
 
 ## Declaration
 
-```swift
+```
 const string NOT_LIST_CONTAINS_ALL;
 ```
 

@@ -1,7 +1,8 @@
 # presentationTime
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time at which the system displays the frame onscreen.
 

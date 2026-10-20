@@ -1,7 +1,8 @@
 # precipitationChance
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The probability of precipitation for the day part.
 

@@ -1,7 +1,8 @@
 # nameComponents
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Access the name of the person.
 
@@ -18,11 +19,12 @@ var nameComponents: PersonNameComponents?
 
 #### Discussion
 
-You can use this property to construct the person’s name for display. Use the components with an instance of [`PersonNameComponentsFormatter`](https://developer.apple.com/documentation/foundation/personnamecomponentsformatter) to create a string representation for the current locale.
+You can use this property to construct the person’s name for display. Use the components with an instance of [`PersonNameComponentsFormatter`](../../../Foundation/personnamecomponentsformatter.md) to create a string representation for the current locale.
 
 ## See Also
 
-- [var appleID: String?](deviceactivitydata/user-swift.struct/appleid.md)
+### Identifying the person
+- [var appleID: String?](./appleid.md)
   Access the Apple ID of the person.
 
 

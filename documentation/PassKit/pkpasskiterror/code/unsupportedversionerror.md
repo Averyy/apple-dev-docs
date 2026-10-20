@@ -1,7 +1,8 @@
 # PKPassKitError.Code.unsupportedVersionError
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Unsupported pass version.
 
@@ -19,15 +20,20 @@ Unsupported pass version.
 case unsupportedVersionError
 ```
 
+```c
+PKUnsupportedVersionError
+```
+
 ## See Also
 
-- [PKPassKitError.Code.unknownError](pkpasskiterror/code/unknownerror.md)
+### Error codes
+- [PKPassKitError.Code.unknownError](./unknownerror.md)
   Unknown error.
-- [PKPassKitError.Code.invalidDataError](pkpasskiterror/code/invaliddataerror.md)
+- [PKPassKitError.Code.invalidDataError](./invaliddataerror.md)
   Invalid pass data.
-- [PKPassKitError.Code.invalidSignature](pkpasskiterror/code/invalidsignature.md)
+- [PKPassKitError.Code.invalidSignature](./invalidsignature.md)
   Invalid pass signature.
-- [PKPassKitError.Code.notEntitledError](pkpasskiterror/code/notentitlederror.md)
+- [PKPassKitError.Code.notEntitledError](./notentitlederror.md)
   Error caused by absence of the required entitlements for the given operation.
 
 

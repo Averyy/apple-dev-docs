@@ -1,7 +1,8 @@
 # rounded(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A vector formed by rounding each lane of the source vector to an integral value according to the specified rounding `rule`.
 
@@ -19,6 +20,8 @@ A vector formed by rounding each lane of the source vector to an integral value 
 ```swift
 func rounded(_ rule: FloatingPointRoundingRule) -> Self
 ```
+
+Available when `Scalar` conforms to `FloatingPoint`.
 
 
 ---

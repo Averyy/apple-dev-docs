@@ -1,7 +1,8 @@
 # hard
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A scroll edge effect with a hard cutoff and dividing line.
 
@@ -16,6 +17,10 @@ A scroll edge effect with a hard cutoff and dividing line.
 
 ```swift
 class var hard: UIScrollEdgeEffect.Style { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) UIScrollEdgeEffectStyle * hardStyle;
 ```
 
 

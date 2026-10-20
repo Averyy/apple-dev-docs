@@ -1,6 +1,7 @@
 # tv-line-spacing
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Specifies the amount of space between lines of text.
 
@@ -22,25 +23,26 @@ Use the `tv-line-spacing` style to set the amount of space between lines of text
 </infoTable>
 ```
 
-##### Values for Tv Line Spacing
+##### Values for tv-line-spacing
 
 - **Float**: The amount of space, in points, between lines of text.
 
-##### Elements That Use Tv Line Spacing
+##### Elements that Use tv-line-spacing
 
-- [`grid`](grid.md)
-- [`info`](info.md)
-- [`infoTable`](infotable.md)
+- [grid](./grid.md)
+- [info](./info.md)
+- [infoTable](./infotable.md)
 
 ## See Also
 
-- [margin](margin.md)
+### Element Spacing
+- [margin](./margin.md)
   Specifies the spacing around an element.
-- [padding](padding.md)
+- [padding](./padding.md)
   Specifies the padding between the border and contents of an element.
-- [tv-focus-margin](tv-focus-margin.md)
+- [tv-focus-margin](./tv-focus-margin.md)
   Specifies the amount of space required for a custom cell element in focus.
-- [tv-interitem-spacing](tv-interitem-spacing.md)
+- [tv-interitem-spacing](./tv-interitem-spacing.md)
   Specifies the spacing between child elements.
 
 

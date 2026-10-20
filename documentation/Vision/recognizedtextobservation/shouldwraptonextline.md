@@ -1,7 +1,8 @@
 # shouldWrapToNextLine
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the text continues on the next line.
 
@@ -21,16 +22,17 @@ let shouldWrapToNextLine: Bool?
 
 ## See Also
 
-- [var boundingRegion: NormalizedRegion](recognizedtextobservation/boundingregion.md)
+### Inspecting an observation
+- [var boundingRegion: NormalizedRegion](./boundingregion.md)
   The bounding region of the text.
-- [let isTitle: Bool](recognizedtextobservation/istitle.md)
+- [let isTitle: Bool](./istitle.md)
   Whether this text is the title of the document.
-- [let recognitionLanguages: [Locale.Language]](recognizedtextobservation/recognitionlanguages.md)
+- [let recognitionLanguages: [Locale.Language]](./recognitionlanguages.md)
   The languages in which the recognized text was written.
-- [let textDirection: RecognizedTextObservation.Direction?](recognizedtextobservation/textdirection.md)
-- [RecognizedTextObservation.Direction](recognizedtextobservation/direction.md)
+- [let textDirection: RecognizedTextObservation.Direction?](./textdirection.md)
+- [RecognizedTextObservation.Direction](./direction.md)
   An enum representing which direction the text is read.
-- [var transcript: String](recognizedtextobservation/transcript.md)
+- [var transcript: String](./transcript.md)
   The top text candidate as a string.
 
 

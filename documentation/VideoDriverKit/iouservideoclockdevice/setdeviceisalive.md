@@ -1,7 +1,8 @@
 # SetDeviceIsAlive
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a Boolean value to indicate the device is alive.
 
@@ -10,7 +11,7 @@ Sets a Boolean value to indicate the device is alive.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetDeviceIsAlive(bool in_is_alive);
 ```
 
@@ -24,13 +25,14 @@ A true  value means the device is ready and available and false means the device
 
 ## See Also
 
-- [GetDeviceIsRunning](iouservideoclockdevice/getdeviceisrunning.md)
+### Working with clock device state
+- [GetDeviceIsRunning](./getdeviceisrunning.md)
   Gets bool value indicating if device is running.
-- [GetDeviceIsAlive](iouservideoclockdevice/getdeviceisalive.md)
+- [GetDeviceIsAlive](./getdeviceisalive.md)
   Gets a Boolean value indicating if the device is alive.
-- [SetIsHidden](iouservideoclockdevice/setishidden.md)
+- [SetIsHidden](./setishidden.md)
   Sets a Boolean value indicating if the device is hidden.
-- [GetIsHidden](iouservideoclockdevice/getishidden.md)
+- [GetIsHidden](./getishidden.md)
   Gets a Boolean value indicating if the device is hidden.
 
 

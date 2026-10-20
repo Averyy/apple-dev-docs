@@ -1,7 +1,8 @@
 # init(modelIdentifier:)
 
 **Framework**: Natural Language  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a contextual embedding from a model identifier.
 
@@ -20,6 +21,10 @@ Creates a contextual embedding from a model identifier.
 convenience init?(modelIdentifier: String)
 ```
 
+```objc
++ (instancetype) contextualEmbeddingWithModelIdentifier:(NSString *) modelIdentifier;
+```
+
 #### Discussion
 
 If you train a custom model with the contextual embedding as the feature layer, keep track of this identifier and use it when loading the custom model in your app.
@@ -30,9 +35,10 @@ If you train a custom model with the contextual embedding as the feature layer, 
 
 ## See Also
 
-- [init?(language: NLLanguage)](nlcontextualembedding/init(language:).md)
+### Creating a contextual embedding
+- [init?(language: NLLanguage)](./init%28language%29.md)
   Creates a contextual embedding from a language.
-- [init?(script: NLScript)](nlcontextualembedding/init(script:).md)
+- [init?(script: NLScript)](./init%28script%29.md)
   Creates a contextual embedding from a script.
 
 

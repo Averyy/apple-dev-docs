@@ -1,7 +1,8 @@
 # webExtensionController
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The web extension controller to associate with the webpage.
 

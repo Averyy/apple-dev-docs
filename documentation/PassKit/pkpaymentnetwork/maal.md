@@ -1,7 +1,8 @@
 # maal
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 static let maal: PKPaymentNetwork
+```
+
+```c
+extern PKPaymentNetwork const PKPaymentNetworkMaal;
 ```
 
 

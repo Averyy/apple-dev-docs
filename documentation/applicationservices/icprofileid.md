@@ -1,7 +1,8 @@
 # ICProfileID
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias ICProfileID = Int32
+```
+
+```c
+typedef SInt32 ICProfileID;
 ```
 
 

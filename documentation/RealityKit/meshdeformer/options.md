@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 provide options for the deformer, default implementation is provided
@@ -19,6 +20,12 @@ provide options for the deformer, default implementation is provided
 ```swift
 var options: MeshDeformerOptions { get }
 ```
+
+## Default Implementations
+
+### MeshDeformer Implementations
+- [var options: MeshDeformerOptions](./options-3uibo.md)
+  returns default `MeshDeformerOptions`
 
 
 ---

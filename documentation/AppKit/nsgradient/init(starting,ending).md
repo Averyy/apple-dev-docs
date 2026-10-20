@@ -1,7 +1,8 @@
 # init(starting:ending:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly allocated gradient object with two colors.
 
@@ -12,6 +13,10 @@ Initializes a newly allocated gradient object with two colors.
 
 ```swift
 convenience init?(starting startingColor: NSColor, ending endingColor: NSColor)
+```
+
+```objc
+- (instancetype) initWithStartingColor:(NSColor *) startingColor endingColor:(NSColor *) endingColor;
 ```
 
 #### Return Value
@@ -25,13 +30,14 @@ The initialized `NSGradient` object.
 
 ## See Also
 
-- [convenience init?(colors: [NSColor])](nsgradient/init(colors:).md)
+### Creating a Gradient
+- [convenience init?(colors: [NSColor])](./init%28colors%29.md)
   Initializes a newly allocated gradient object with an array of colors.
-- [convenience init?(colorsAndLocations: (NSColor, CGFloat)...)](nsgradient/init(colorsandlocations:).md)
+- [convenience init?(colorsAndLocations: (NSColor, CGFloat)...)](./init%28colorsandlocations%29.md)
   Initializes a newly allocated gradient object with a comma-separated list of arguments.
-- [init?(colors: [NSColor], atLocations: UnsafePointer<CGFloat>?, colorSpace: NSColorSpace)](nsgradient/init(colors:atlocations:colorspace:).md)
+- [init?(colors: [NSColor], atLocations: UnsafePointer<CGFloat>?, colorSpace: NSColorSpace)](./init%28colors,atlocations,colorspace%29.md)
   Initializes a newly allocated gradient object with the specified colors, color locations, and color space.
-- [init?(coder: NSCoder)](nsgradient/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a gradient from data in an unarchiver.
 
 

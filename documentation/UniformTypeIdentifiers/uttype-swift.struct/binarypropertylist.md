@@ -1,7 +1,8 @@
 # binaryPropertyList
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents a binary property list.
 
@@ -24,13 +25,14 @@ static var binaryPropertyList: UTType { get }
 
 The identifier for this type is `com.apple.binary-property-list`.
 
-This type conforms to [`UTTypePropertyList`](uttypepropertylist.md).
+This type conforms to [`UTTypePropertyList`](../uttypepropertylist.md).
 
 ## See Also
 
-- [static var propertyList: UTType](uttype-swift.struct/propertylist.md)
+### Property lists
+- [static var propertyList: UTType](./propertylist.md)
   A base type that represents a property list.
-- [static var xmlPropertyList: UTType](uttype-swift.struct/xmlpropertylist.md)
+- [static var xmlPropertyList: UTType](./xmlpropertylist.md)
   A type that represents an XML property list.
 
 

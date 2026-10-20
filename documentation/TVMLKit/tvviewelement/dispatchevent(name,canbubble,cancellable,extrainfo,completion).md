@@ -1,24 +1,39 @@
 # dispatchEvent(name:canBubble:cancellable:extraInfo:completion:)
 
 **Framework**: TVMLKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dispatches a custom-named event.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
+
+```swift
+func dispatchEvent(name eventName: String, canBubble: Bool, cancellable isCancellable: Bool, extraInfo: [String : Any]?, completion: (@Sendable (Bool, Bool) -> Void)? = nil)
+```
 
 ```swift
 func dispatchEvent(name eventName: String, canBubble: Bool, cancellable isCancellable: Bool, extraInfo: [String : Any]?) async -> (Bool, Bool)
 ```
 
+```objc
+- (void) dispatchEventWithName:(NSString *) eventName canBubble:(BOOL) canBubble cancellable:(BOOL) isCancellable extraInfo:(NSDictionary<NSString *,id> *) extraInfo completion:(void (^)(BOOL isDispatched, BOOL isCancelled)) completion;
+```
+
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func dispatchEvent(name eventName: String, canBubble: Bool, cancellable isCancellable: Bool, extraInfo: [String : Any]?) async -> (Bool, Bool)
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func dispatchEvent(name eventName: String, canBubble: Bool, cancellable isCancellable: Bool, extraInfo: [String : Any]?) async -> (Bool, Bool)
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 Use this method to dispatch custom-named events from views and view controllers to JavaScript.
 
@@ -32,9 +47,10 @@ Use this method to dispatch custom-named events from views and view controllers 
 
 ## See Also
 
-- [func dispatchEvent(type: TVElementEventType, canBubble: Bool, cancellable: Bool, extraInfo: [String : Any]?, completion: ((Bool, Bool) -> Void)?)](tvviewelement/dispatchevent(type:canbubble:cancellable:extrainfo:completion:).md)
+### Dispatching Events
+- [func dispatchEvent(type: TVElementEventType, canBubble: Bool, cancellable: Bool, extraInfo: [String : Any]?, completion: ((Bool, Bool) -> Void)?)](./dispatchevent%28type,canbubble,cancellable,extrainfo,completion%29.md)
   Dispatches an event of a specific type to the JavaScript file.
-- [enum TVElementEventType](tvelementeventtype.md)
+- [enum TVElementEventType](../tvelementeventtype.md)
   The type of event that has been dispatched.
 
 

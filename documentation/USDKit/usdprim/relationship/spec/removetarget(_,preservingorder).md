@@ -1,7 +1,8 @@
 # removeTarget(_:preservingOrder:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes an authored target path.
 

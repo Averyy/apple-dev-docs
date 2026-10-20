@@ -1,7 +1,8 @@
 # init(userHandle:relyingParty:signature:clientDataHash:authenticatorData:credentialID:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a passkey assertion credential object.
 
@@ -18,6 +19,10 @@ Initializes a passkey assertion credential object.
 init(userHandle: Data, relyingParty: String, signature: Data, clientDataHash: Data, authenticatorData: Data, credentialID: Data)
 ```
 
+```objc
+- (instancetype) initWithUserHandle:(NSData *) userHandle relyingParty:(NSString *) relyingParty signature:(NSData *) signature clientDataHash:(NSData *) clientDataHash authenticatorData:(NSData *) authenticatorData credentialID:(NSData *) credentialID;
+```
+
 ## Parameters
 
 - `userHandle`: The user handle of this passkey.
@@ -29,7 +34,8 @@ init(userHandle: Data, relyingParty: String, signature: Data, clientDataHash: Da
 
 ## See Also
 
-- [convenience init(userHandle: Data, relyingParty: String, signature: Data, clientDataHash: Data, authenticatorData: Data, credentialID: Data, extensionOutput: ASPasskeyAssertionCredentialExtensionOutput?)](aspasskeyassertioncredential/init(userhandle:relyingparty:signature:clientdatahash:authenticatordata:credentialid:extensionoutput:).md)
+### Creating a passkey assertion credential
+- [convenience init(userHandle: Data, relyingParty: String, signature: Data, clientDataHash: Data, authenticatorData: Data, credentialID: Data, extensionOutput: ASPasskeyAssertionCredentialExtensionOutput?)](./init%28userhandle,relyingparty,signature,clientdatahash,authenticatordata,credentialid,extensionoutput%29.md)
   Initializes a passkey assertion credential object, optionally specifying an extension output.
 
 

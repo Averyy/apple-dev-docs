@@ -1,7 +1,8 @@
 # Package
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The declaration to configure a package.
 
@@ -10,21 +11,21 @@ The declaration to configure a package.
 
 ## Declaration
 
-```swift
+```
 object Package
 ```
 
 ## Mentions
 
-- [Installing packages](installing-packages.md)
+- [Installing packages](./installing-packages.md)
 
 #### Discussion
 
 Specify `com.apple.configuration.package` as the declaration type.
 
-This declaration installs a package on a device. Packages can contain apps, fonts, documents, and other items. Apps that a package installs aren’t automatically managed; you can manage them using the [`AppManaged`](appmanaged.md) declaration.
+This declaration installs a package on a device. Packages can contain apps, fonts, documents, and other items. Apps that a package installs aren’t automatically managed; you can manage them using the [`AppManaged`](./appmanaged.md) declaration.
 
-##### Configuration Availability
+##### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -36,7 +37,7 @@ This declaration installs a package on a device. Packages can contain apps, font
 | Allowed in user scope | N/A |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration Example
+##### Configuration example
 
 This configuration installs a required package.
 
@@ -57,48 +58,51 @@ This configuration installs a required package.
 ## Topics
 
 ### Objects
-- [object PackageInstallBehaviorObject](packageinstallbehaviorobject.md)
+- [object PackageInstallBehaviorObject](./packageinstallbehaviorobject.md)
   A dictionary that describes how and when to install the package.
-- [object PackageUninstallBehaviorObject](packageuninstallbehaviorobject.md)
+- [object PackageUninstallBehaviorObject](./packageuninstallbehaviorobject.md)
   A dictionary that describes how to uninstall the package.
 
 ## Properties
 
 - `InstallBehavior` (PackageInstallBehaviorObject): A dictionary that describes how and when to install the package.
-- `ManifestURL` (string) *(required)*: The URL of the manifest document for the package that the device downloads. The manifest is returned as a [`ManifestURL`](manifesturl.md) property list. The `url` property of the manifest must point to the package (.pkg) file to install.
-- `UninstallBehavior` (PackageUninstallBehaviorObject): A dictionary that describes how to uninstall the package. Available: macOS 27+
+- `ManifestURL` (string) *(required)*: The URL of the manifest document for the package that the device downloads. The manifest is returned as a [`ManifestURL`](./manifesturl.md) property list. The `url` property of the manifest must point to the package (.pkg) file to install.
+- `UninstallBehavior` (PackageUninstallBehaviorObject): A dictionary that describes how to uninstall the package.
+
+  Available: macOS 27+
 
 ## See Also
 
-- [object AccessibilitySettings](accessibilitysettings.md)
+### Configurations
+- [object AccessibilitySettings](./accessibilitysettings.md)
   The declaration to configure accessibility settings.
-- [object AccountCalDAV](accountcaldav.md)
+- [object AccountCalDAV](./accountcaldav.md)
   The declaration to configure a Calendar account.
-- [object AccountCardDAV](accountcarddav.md)
+- [object AccountCardDAV](./accountcarddav.md)
   The declaration to configure a Contacts account.
-- [object AccountExchange](accountexchange.md)
+- [object AccountExchange](./accountexchange.md)
   The declaration to configure an Exchange account.
-- [object AccountGoogle](accountgoogle.md)
+- [object AccountGoogle](./accountgoogle.md)
   The declaration to configure a Google account.
-- [object AccountLDAP](accountldap.md)
+- [object AccountLDAP](./accountldap.md)
   The declaration to configure a Lightweight Directory Access Protocol (LDAP) account.
-- [object AccountMail](accountmail.md)
+- [object AccountMail](./accountmail.md)
   The declaration to configure a Mail account.
-- [object AccountSettings](accountsettings.md)
+- [object AccountSettings](./accountsettings.md)
   The declaration to configure account settings.
-- [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
+- [object AccountSubscribedCalendar](./accountsubscribedcalendar.md)
   The declaration to configure a subscribed calendar.
-- [object AppManaged](appmanaged.md)
+- [object AppManaged](./appmanaged.md)
   The declaration to configure a managed app.
-- [object AppSettings](appsettings.md)
+- [object AppSettings](./appsettings.md)
   The declaration to configure app settings.
-- [object AudioAccessorySettings](audioaccessorysettings.md)
+- [object AudioAccessorySettings](./audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCaching](./contentcaching.md)
   The declaration to configure the Content Caching service.
-- [object DiskManagementSettings](diskmanagementsettings.md)
+- [object DiskManagementSettings](./diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
-- [object ExtensibleSSO](extensiblesso.md)
+- [object ExtensibleSSO](./extensiblesso.md)
   The declaration to configure Extensible Single Sign-On.
 
 

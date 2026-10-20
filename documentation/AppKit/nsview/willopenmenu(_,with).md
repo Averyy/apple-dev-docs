@@ -1,7 +1,8 @@
 # willOpenMenu(_:with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called just before a contextual menu for a view is opened on screen.
 
@@ -12,6 +13,10 @@ Called just before a contextual menu for a view is opened on screen.
 
 ```swift
 func willOpenMenu(_ menu: NSMenu, with event: NSEvent)
+```
+
+```objc
+- (void) willOpenMenu:(NSMenu *) menu withEvent:(NSEvent *) event;
 ```
 
 #### Discussion
@@ -25,11 +30,12 @@ This method is called just before a contextual menu for a view is opened on scre
 
 ## See Also
 
-- [func menu(for: NSEvent) -> NSMenu?](nsview/menu(for:).md)
+### Managing Contextual Menus
+- [func menu(for: NSEvent) -> NSMenu?](./menu%28for%29.md)
   Overridden by subclasses to return a context-sensitive pop-up menu for a given mouse-down event.
-- [class var defaultMenu: NSMenu?](nsview/defaultmenu.md)
+- [class var defaultMenu: NSMenu?](./defaultmenu.md)
   Overridden by subclasses to return the default pop-up menu for instances of the receiving class.
-- [func didCloseMenu(NSMenu, with: NSEvent?)](nsview/didclosemenu(_:with:).md)
+- [func didCloseMenu(NSMenu, with: NSEvent?)](./didclosemenu%28_,with%29.md)
   Called after a contextual menu that was displayed from the receiving view has been closed.
 
 

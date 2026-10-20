@@ -1,7 +1,8 @@
 # localizedDescription
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string containing the localized description of the error.
 
@@ -20,23 +21,29 @@ A string containing the localized description of the error.
 var localizedDescription: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * localizedDescription;
+```
+
 #### Discussion
 
-The object in the user info dictionary for the key [`NSLocalizedDescriptionKey`](nslocalizeddescriptionkey.md). If the user info dictionary doesn’t contain a value for [`NSLocalizedDescriptionKey`](nslocalizeddescriptionkey.md), a default string is constructed from the domain and code.
+The object in the user info dictionary for the key [`NSLocalizedDescriptionKey`](../nslocalizeddescriptionkey.md). If the user info dictionary doesn’t contain a value for [`NSLocalizedDescriptionKey`](../nslocalizeddescriptionkey.md), a default string is constructed from the domain and code.
 
 ## See Also
 
-- [var domain: String](nserror/domain.md)
+### Related Documentation
+- [var domain: String](./domain.md)
   A string containing the error domain.
-- [var code: Int](nserror/code.md)
+- [var code: Int](./code.md)
   The error code.
-- [var userInfo: [String : Any]](nserror/userinfo.md)
+- [var userInfo: [String : Any]](./userinfo.md)
   The user info dictionary.
-- [var localizedRecoveryOptions: [String]?](nserror/localizedrecoveryoptions.md)
+### Getting a Localized Error Description
+- [var localizedRecoveryOptions: [String]?](./localizedrecoveryoptions.md)
   An array containing the localized titles of buttons appropriate for displaying in an alert panel.
-- [var localizedRecoverySuggestion: String?](nserror/localizedrecoverysuggestion.md)
+- [var localizedRecoverySuggestion: String?](./localizedrecoverysuggestion.md)
   A string containing the localized recovery suggestion for the error.
-- [var localizedFailureReason: String?](nserror/localizedfailurereason.md)
+- [var localizedFailureReason: String?](./localizedfailurereason.md)
   A string containing the localized explanation of the reason for the error.
 
 

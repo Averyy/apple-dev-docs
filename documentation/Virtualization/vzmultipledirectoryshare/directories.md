@@ -1,7 +1,8 @@
 # directories
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The directories on the host to expose to the guest.
 
@@ -14,13 +15,18 @@ The directories on the host to expose to the guest.
 var directories: [String : VZSharedDirectory] { get }
 ```
 
+```objc
+@property (copy, readonly) NSDictionary<NSString *,VZSharedDirectory *> * directories;
+```
+
 #### Discussion
 
 The dictionary string keys are the names for the directory. The keys must be valid names or the system raises an exception.
 
 ## See Also
 
-- [class func validateName(String) throws](vzmultipledirectoryshare/validatename(_:).md)
+### Related Documentation
+- [class func validateName(String) throws](./validatename%28_%29.md)
   Check if a name is a valid directory name.
 
 

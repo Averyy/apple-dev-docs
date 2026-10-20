@@ -1,7 +1,8 @@
 # DDDevicePickerViewController
 
 **Framework**: DeviceDiscoveryUI  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A UIKit view that displays other devices on the network, and creates an encrypted connection to a copy of your app running on that device.
 
@@ -17,9 +18,13 @@ A UIKit view that displays other devices on the network, and creates an encrypte
 class DDDevicePickerViewController
 ```
 
+```objc
+@interface DDDevicePickerViewController : UIViewController
+```
+
 ## Mentions
 
-- [Connecting a tvOS app to other devices over the local network](connecting-a-tvos-app-to-other-devices-over-the-local-network.md)
+- [Connecting a tvOS app to other devices over the local network](./connecting-a-tvos-app-to-other-devices-over-the-local-network.md)
 
 #### Overview
 
@@ -54,50 +59,51 @@ myDeviceConnectionManager.connectTo(endpoint: endpoint)
 ## Topics
 
 ### Creating device picker view controllers
-- [convenience init?(browseDescriptor: NWBrowser.Descriptor, parameters: NWParameters?)](dddevicepickerviewcontroller/init(browsedescriptor:parameters:).md)
+- [convenience init?(browseDescriptor: NWBrowser.Descriptor, parameters: NWParameters?)](./dddevicepickerviewcontroller/init%28browsedescriptor,parameters%29.md)
   Creates a view controller that displays the available devices on your local network.
-- [convenience init?(browseDescriptor: NWBrowser.Descriptor, parameters: NWParameters?, access: DDDevicePairingAccess)](dddevicepickerviewcontroller/init(browsedescriptor:parameters:access:).md)
+- [convenience init?(browseDescriptor: NWBrowser.Descriptor, parameters: NWParameters?, access: DDDevicePairingAccess)](./dddevicepickerviewcontroller/init%28browsedescriptor,parameters,access%29.md)
   Creates a view controller with the parameters and access level you specify that displays the available devices on network.
 ### Determining device support
-- [static func isSupported(NWBrowser.Descriptor, using: NWParameters?) -> Bool](dddevicepickerviewcontroller/issupported(_:using:).md)
+- [static func isSupported(NWBrowser.Descriptor, using: NWParameters?) -> Bool](./dddevicepickerviewcontroller/issupported%28_,using%29.md)
   Returns a Boolean value that indicates whether the current device supports device discovery.
 ### Accessing the selected endpoint
-- [var endpoint: NWEndpoint](dddevicepickerviewcontroller/endpoint.md)
+- [var endpoint: NWEndpoint](./dddevicepickerviewcontroller/endpoint.md)
   A network connection endpoint for the device that a person selected.
 
 ## Relationships
 
 ### Inherits From
-- [UIViewController](../uikit/uiviewcontroller.md)
+- [UIViewController](../UIKit/uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
-- [UIContentContainer](../uikit/uicontentcontainer.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UIStateRestoring](../uikit/uistaterestoring.md)
-- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](../uikit/uitraitenvironment.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSExtensionRequestHandling](../Foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
+- [UIContentContainer](../UIKit/uicontentcontainer.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UIStateRestoring](../UIKit/uistaterestoring.md)
+- [UITraitChangeObservable](../UIKit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../UIKit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [struct DevicePicker](devicepicker.md)
+### Pairing with nearby devices
+- [struct DevicePicker](./devicepicker.md)
   A SwiftUI view that displays other devices on the network, and creates an encrypted connection to a copy of your app running on that device.
-- [struct DevicePickerSupportedAction](devicepickersupportedaction.md)
+- [struct DevicePickerSupportedAction](./devicepickersupportedaction.md)
   An environment value that indicates whether the current device supports device discovery.
-- [Connecting a tvOS app to other devices over the local network](connecting-a-tvos-app-to-other-devices-over-the-local-network.md)
+- [Connecting a tvOS app to other devices over the local network](./connecting-a-tvos-app-to-other-devices-over-the-local-network.md)
   Display a view in your tvOS app that lists available iOS, iPadOS, and watchOS devices that the user can connect to over their local network.
 
 

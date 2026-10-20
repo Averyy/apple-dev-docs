@@ -1,13 +1,14 @@
 # action_type
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of action: authentication or notification.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,21 +16,26 @@ The type of action: authentication or notification.
 var action_type: es_action_type_t
 ```
 
+```c
+es_action_type_t action_type;
+```
+
 #### Discussion
 
-Use this value to determine how to access the [`action`](es_message_t/action.md) field, which is a `union` of different authentication and notification types.
+Use this value to determine how to access the [`action`](./action.md) field, which is a `union` of different authentication and notification types.
 
 ## See Also
 
-- [var action: es_message_t.__Unnamed_union_action](es_message_t/action.md)
+### Inspecting Message Properties
+- [var action: es_message_t.__Unnamed_union_action](./action.md)
   The action monitored by Endpoint Security.
-- [struct es_action_type_t](es_action_type_t.md)
+- [struct es_action_type_t](../es_action_type_t.md)
   The type of the message’s action.
-- [struct es_event_id_t](es_event_id_t.md)
+- [struct es_event_id_t](../es_event_id_t.md)
   An opaque identifier for events.
-- [struct es_result_t](es_result_t.md)
+- [struct es_result_t](../es_result_t.md)
   The result of the Endpoint Security subsystem authorization process.
-- [var version: UInt32](es_message_t/version.md)
+- [var version: UInt32](./version.md)
   The version of the Endpoint Security message.
 
 

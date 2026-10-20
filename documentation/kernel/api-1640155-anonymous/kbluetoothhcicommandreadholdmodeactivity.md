@@ -1,14 +1,15 @@
 # kBluetoothHCICommandReadHoldModeActivity
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCICommandReadHoldModeActivity = 0x002B
 ```
 

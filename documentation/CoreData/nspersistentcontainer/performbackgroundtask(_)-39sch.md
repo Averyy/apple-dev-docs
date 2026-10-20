@@ -1,7 +1,8 @@
 # performBackgroundTask(_:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes a closure on a private queue using an ephemeral managed object context.
 
@@ -20,13 +21,17 @@ Executes a closure on a private queue using an ephemeral managed object context.
 func performBackgroundTask(_ block: @escaping @Sendable (NSManagedObjectContext) -> Void)
 ```
 
+```objc
+- (void) performBackgroundTask:(void (^)(NSManagedObjectContext *)) block;
+```
+
 ## Mentions
 
-- [Using Core Data in the background](using-core-data-in-the-background.md)
+- [Using Core Data in the background](../using-core-data-in-the-background.md)
 
 #### Discussion
 
-Each time this method is invoked, the persistent container creates a new [`NSManagedObjectContext`](nsmanagedobjectcontext.md) with the [`concurrencyType`](nsmanagedobjectcontext/concurrencytype-swift.property.md) set to [`NSManagedObjectContextConcurrencyType.privateQueueConcurrencyType`](nsmanagedobjectcontextconcurrencytype/privatequeueconcurrencytype.md). The persistent container then executes the passed in block against that newly created context on the context’s private queue.
+Each time this method is invoked, the persistent container creates a new [`NSManagedObjectContext`](../nsmanagedobjectcontext.md) with the [`concurrencyType`](../nsmanagedobjectcontext/concurrencytype-swift.property.md) set to [`NSManagedObjectContextConcurrencyType.privateQueueConcurrencyType`](../nsmanagedobjectcontextconcurrencytype/privatequeueconcurrencytype.md). The persistent container then executes the passed in block against that newly created context on the context’s private queue.
 
 ## Parameters
 
@@ -34,7 +39,8 @@ Each time this method is invoked, the persistent container creates a new [`NSMan
 
 ## See Also
 
-- [func performBackgroundTask<T>((NSManagedObjectContext) throws -> T) async rethrows -> T](nspersistentcontainer/performbackgroundtask(_:)-25nok.md)
+### Performing Background Tasks
+- [func performBackgroundTask<T>((NSManagedObjectContext) throws -> T) async rethrows -> T](./performbackgroundtask%28_%29-25nok.md)
 
 
 ---

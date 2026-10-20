@@ -1,17 +1,18 @@
 # PHASESoundEvent.StartHandlerReason.terminated
 
 **Framework**: PHASE  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the framework terminated the sound event abruptly.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ Indicates the framework terminated the sound event abruptly.
 case terminated
 ```
 
+```c
+PHASESoundEventStartHandlerReasonTerminated
+```
+
 ## See Also
 
-- [PHASESoundEvent.StartHandlerReason.finishedPlaying](phasesoundevent/starthandlerreason/finishedplaying.md)
+### Reasons
+- [PHASESoundEvent.StartHandlerReason.finishedPlaying](./finishedplaying.md)
   Indicates the framework successfully started the sound event.
-- [PHASESoundEvent.StartHandlerReason.failure](phasesoundevent/starthandlerreason/failure.md)
+- [PHASESoundEvent.StartHandlerReason.failure](./failure.md)
   Indicates an error occurred while starting the sound event.
 
 

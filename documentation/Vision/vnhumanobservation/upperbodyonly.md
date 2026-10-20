@@ -1,7 +1,8 @@
 # upperBodyOnly
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the observation represents an upper-body or full-body rectangle.
 
@@ -17,6 +18,10 @@ A Boolean value that indicates whether the observation represents an upper-body 
 
 ```swift
 var upperBodyOnly: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL upperBodyOnly;
 ```
 
 

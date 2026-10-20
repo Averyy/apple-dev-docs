@@ -1,7 +1,8 @@
 # proResRawMetadata
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 ProRes RAW image metadata used for raw conversion.
 

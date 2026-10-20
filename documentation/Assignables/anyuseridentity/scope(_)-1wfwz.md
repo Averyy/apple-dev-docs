@@ -1,7 +1,8 @@
 # scope(_:)
 
 **Framework**: Assignables  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the user identity for document-related operations that occur within the closure passed in.
 
@@ -9,7 +10,7 @@ Sets the user identity for document-related operations that occur within the clo
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -28,7 +29,8 @@ The result of the closure.
 
 ## See Also
 
-- [func scope<R>(() async throws -> R) async rethrows -> R](anyuseridentity/scope(_:)-76dnq.md)
+### Setting the scope
+- [func scope<R>(() async throws -> R) async rethrows -> R](./scope%28_%29-76dnq.md)
   Sets the user identity for document-related operations that occur within the async closure passed in.
 
 

@@ -1,7 +1,8 @@
 # Metric.Value.scoring(_:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A numeric result.
 

@@ -1,9 +1,10 @@
 # color
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The base color for the tile map. The influence of the color over the tile map node’s textures is controlled by [`colorBlendFactor`](sktilemapnode/colorblendfactor.md).
+The base color for the tile map. The influence of the color over the tile map node’s textures is controlled by [`colorBlendFactor`](./colorblendfactor.md).
 
 **Availability**:
 - iOS 10.0+
@@ -16,14 +17,35 @@ The base color for the tile map. The influence of the color over the tile map no
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```swift
+var color: UIColor { get set }
+```
+
+*macOS*
+
 ```swift
 var color: NSColor { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, retain) UIColor * color;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic, retain) NSColor * color;
+```
+
 ## See Also
 
-- [var colorBlendFactor: CGFloat](sktilemapnode/colorblendfactor.md)
-  Controls the blending between the texture and the tile map object’s [`color`](sktilemapnode/color.md). Values are clamped between zero and one where zero has no color blending and one has the maximum color blending.
+### Tinting a Tile Map
+- [var colorBlendFactor: CGFloat](./colorblendfactor.md)
+  Controls the blending between the texture and the tile map object’s [`color`](./color.md). Values are clamped between zero and one where zero has no color blending and one has the maximum color blending.
 
 
 ---

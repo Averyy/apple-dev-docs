@@ -1,7 +1,8 @@
 # WINetworkSharingError.noAvailableNetworks
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the system found no sharable networks nearby.
 

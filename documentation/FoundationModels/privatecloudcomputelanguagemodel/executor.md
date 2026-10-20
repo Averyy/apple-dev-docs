@@ -1,7 +1,8 @@
 # PrivateCloudComputeLanguageModel.Executor
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An executor that responds to session requests using Private Cloud Compute.
 
@@ -22,17 +23,17 @@ struct Executor
 ## Topics
 
 ### Type Aliases
-- [PrivateCloudComputeLanguageModel.Executor.Model](privatecloudcomputelanguagemodel/executor/model.md)
+- [PrivateCloudComputeLanguageModel.Executor.Model](./executor/model.md)
   The model type this executor processes requests for.
 ### Default Implementations
-- [LanguageModelExecutor Implementations](privatecloudcomputelanguagemodel/executor/languagemodelexecutor-implementations.md)
+- [LanguageModelExecutor Implementations](./executor/languagemodelexecutor-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [LanguageModelExecutor](languagemodelexecutor.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [LanguageModelExecutor](../languagemodelexecutor.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

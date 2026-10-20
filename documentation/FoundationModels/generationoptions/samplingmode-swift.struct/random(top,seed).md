@@ -1,7 +1,8 @@
 # random(top:seed:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A sampling mode that considers a fixed number of high-probability tokens.
 
@@ -27,7 +28,7 @@ During the token-selection process, the vocabulary is sorted by probability a to
 
 > **Note**: Setting a random seed is not guaranteed to result in fully deterministic output. It is best effort.
 
-> **Note**: Sampling modes [`greedy`](generationoptions/samplingmode-swift.struct/greedy.md) and [`random(probabilityThreshold:seed:)`](generationoptions/samplingmode-swift.struct/random(probabilitythreshold:seed:).md)
+> **See Also**: Sampling modes [`greedy`](./greedy.md) and [`random(probabilityThreshold:seed:)`](./random%28probabilitythreshold,seed%29.md)
 
 ## Parameters
 
@@ -36,9 +37,10 @@ During the token-selection process, the vocabulary is sorted by probability a to
 
 ## See Also
 
-- [static var greedy: GenerationOptions.SamplingMode](generationoptions/samplingmode-swift.struct/greedy.md)
+### Sampling modes
+- [static var greedy: GenerationOptions.SamplingMode](./greedy.md)
   A sampling mode that always chooses the most likely token.
-- [static func random(probabilityThreshold: Double, seed: UInt64?) -> GenerationOptions.SamplingMode](generationoptions/samplingmode-swift.struct/random(probabilitythreshold:seed:).md)
+- [static func random(probabilityThreshold: Double, seed: UInt64?) -> GenerationOptions.SamplingMode](./random%28probabilitythreshold,seed%29.md)
   A mode that considers a variable number of high-probability tokens based on the specified threshold.
 
 

@@ -1,14 +1,15 @@
 # kHIDUsage_BCS_EAN_99_P5_128_Optional
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_BCS_EAN_99_P5_128_Optional = 0x98
 ```
 

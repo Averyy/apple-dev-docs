@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates a new floating-point value using the sign of one value and the magnitude of another.
@@ -39,6 +40,12 @@ This initializer implements the IEEE 754 `copysign` operation.
 
 - `signOf`: A value from which to use the sign. The result of the initializer has the same sign as `signOf`.
 - `magnitudeOf`: A value from which to use the magnitude. The result of the initializer has the same magnitude as `magnitudeOf`.
+
+## Default Implementations
+
+### FloatingPoint Implementations
+- [init(signOf: Self, magnitudeOf: Self)](./init%28signof,magnitudeof%29-9n676.md)
+  Creates a new floating-point value using the sign of one value and the magnitude of another.
 
 
 ---

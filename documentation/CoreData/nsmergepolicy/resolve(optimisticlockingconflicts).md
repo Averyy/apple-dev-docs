@@ -1,7 +1,8 @@
 # resolve(optimisticLockingConflicts:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resolves the conflicts in a given list.
 
@@ -20,11 +21,16 @@ Resolves the conflicts in a given list.
 func resolve(optimisticLockingConflicts list: [NSMergeConflict]) throws
 ```
 
+```objc
+- (BOOL) resolveOptimisticLockingVersionConflicts:(NSArray<NSMergeConflict *> *) list error:(NSError **) error;
+```
+
 ## See Also
 
-- [func resolve(mergeConflicts: [Any]) throws](nsmergepolicy/resolve(mergeconflicts:).md)
+### Resolving a Conflict
+- [func resolve(mergeConflicts: [Any]) throws](./resolve%28mergeconflicts%29.md)
   Resolves the conflicts in a given list.
-- [func resolve(constraintConflicts: [NSConstraintConflict]) throws](nsmergepolicy/resolve(constraintconflicts:).md)
+- [func resolve(constraintConflicts: [NSConstraintConflict]) throws](./resolve%28constraintconflicts%29.md)
   Resolves the conflicts in a given list.
 
 

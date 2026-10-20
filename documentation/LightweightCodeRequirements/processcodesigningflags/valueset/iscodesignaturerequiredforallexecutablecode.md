@@ -1,7 +1,8 @@
 # isCodeSignatureRequiredForAllExecutableCode
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Flag indicating that the process should not allow code to execute from memory if that memory is not associated with a code signature.
 

@@ -1,7 +1,8 @@
 # spatialAccessory
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The spatial object that disconnected from the device.
 

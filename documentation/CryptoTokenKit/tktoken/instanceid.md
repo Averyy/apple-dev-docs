@@ -1,7 +1,8 @@
 # TKToken.InstanceID
 
 **Framework**: CryptoTokenKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that represents the instance identifier of a token.
 
@@ -20,9 +21,14 @@ A type that represents the instance identifier of a token.
 typealias InstanceID = String
 ```
 
+```c
+typedef NSString * TKTokenInstanceID;
+```
+
 ## See Also
 
-- [init(tokenDriver: TKTokenDriver, instanceID: TKToken.InstanceID)](tktoken/init(tokendriver:instanceid:).md)
+### Creating Tokens
+- [init(tokenDriver: TKTokenDriver, instanceID: TKToken.InstanceID)](./init%28tokendriver,instanceid%29.md)
   Initializes a token with the driver you specify.
 
 

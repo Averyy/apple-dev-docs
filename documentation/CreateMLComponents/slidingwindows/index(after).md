@@ -1,7 +1,8 @@
 # index(after:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the position immediately after the given index.
 
@@ -30,9 +31,10 @@ The index value immediately after `i`.
 
 ## See Also
 
-- [func index(Int, offsetBy: Int) -> Int](slidingwindows/index(_:offsetby:).md)
+### Getting the index
+- [func index(Int, offsetBy: Int) -> Int](./index%28_,offsetby%29.md)
   Returns an index that is the specified distance from the given index.
-- [func index(before: Int) -> Int](slidingwindows/index(before:).md)
+- [func index(before: Int) -> Int](./index%28before%29.md)
   Returns the position immediately before the given index.
 
 

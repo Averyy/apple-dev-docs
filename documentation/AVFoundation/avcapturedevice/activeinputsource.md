@@ -1,7 +1,8 @@
 # activeInputSource
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently active input source of the device.
 
@@ -14,17 +15,22 @@ The currently active input source of the device.
 var activeInputSource: AVCaptureDevice.InputSource? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) AVCaptureDeviceInputSource * activeInputSource;
+```
+
 #### Discussion
 
-You must call [`lockForConfiguration()`](avcapturedevice/lockforconfiguration().md) before attempting to set a format. Setting a format that isn’t present in the [`inputSources`](avcapturedevice/inputsources.md) array results in an exception.
+You must call [`lockForConfiguration()`](./lockforconfiguration%28%29.md) before attempting to set a format. Setting a format that isn’t present in the [`inputSources`](./inputsources.md) array results in an exception.
 
 This property is key-value observable.
 
 ## See Also
 
-- [var inputSources: [AVCaptureDevice.InputSource]](avcapturedevice/inputsources.md)
+### Configuring input sources
+- [var inputSources: [AVCaptureDevice.InputSource]](./inputsources.md)
   An array of input sources that the device supports.
-- [AVCaptureDevice.InputSource](avcapturedevice/inputsource.md)
+- [AVCaptureDevice.InputSource](./inputsource.md)
   A distinct input source on a capture device.
 
 

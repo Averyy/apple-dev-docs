@@ -1,7 +1,8 @@
 # regularizationType
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var regularizationType: MPSNNRegularizationType { get }
+```
+
+```objc
+@property (nonatomic, readonly) MPSNNRegularizationType regularizationType;
 ```
 
 

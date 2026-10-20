@@ -1,7 +1,8 @@
 # result
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The result of a batch-update request, either the number of updated objects, the identifiers of the updated objects, or a status value.
 
@@ -10,7 +11,7 @@ The result of a batch-update request, either the number of updated objects, the 
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,11 +21,16 @@ The result of a batch-update request, either the number of updated objects, the 
 var result: Any? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) id result;
+```
+
 ## See Also
 
-- [var resultType: NSBatchUpdateRequestResultType](nsbatchupdateresult/resulttype.md)
+### Accessing Results
+- [var resultType: NSBatchUpdateRequestResultType](./resulttype.md)
   The type of result that Core Data returns from the request.
-- [enum NSBatchUpdateRequestResultType](nsbatchupdaterequestresulttype.md)
+- [enum NSBatchUpdateRequestResultType](../nsbatchupdaterequestresulttype.md)
   Result types for a batch-update request.
 
 

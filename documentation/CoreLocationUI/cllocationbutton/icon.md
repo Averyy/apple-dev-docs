@@ -1,7 +1,8 @@
 # icon
 
 **Framework**: CoreLocationUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style of the location arrow icon on the button.
 
@@ -14,6 +15,10 @@ The style of the location arrow icon on the button.
 
 ```swift
 var icon: CLLocationButtonIcon { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) CLLocationButtonIcon icon;
 ```
 
 

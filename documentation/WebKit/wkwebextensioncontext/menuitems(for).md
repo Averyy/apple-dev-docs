@@ -1,7 +1,8 @@
 # menuItems(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the menu items for a given tab.
 
@@ -14,8 +15,28 @@ Retrieves the menu items for a given tab.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+func menuItems(for tab: any WKWebExtensionTab) -> [UIMenuElement]
+```
+
+*macOS*
+
 ```swift
 func menuItems(for tab: any WKWebExtensionTab) -> [NSMenuItem]
+```
+
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```objc
+- (NSArray<UIMenuElement *> *) menuItemsForTab:(id<WKWebExtensionTab>) tab;
+```
+
+*macOS*
+
+```objc
+- (NSArray<NSMenuItem *> *) menuItemsForTab:(id<WKWebExtensionTab>) tab;
 ```
 
 #### Discussion

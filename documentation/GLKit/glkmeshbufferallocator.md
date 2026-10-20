@@ -1,13 +1,16 @@
 # GLKMeshBufferAllocator
 
 **Framework**: GLKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- macOS 10.11+
-- tvOS 9.0+
+- iOS 9.0+ - Deprecated in 12.0
+- iPadOS 9.0+ - Deprecated in 12.0
+- macOS 10.11+ - Deprecated in 10.14
+- tvOS 9.0+ - Deprecated in 12.0
+
+> **Deprecated**: OpenGLES API deprecated. (Define GLES_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -15,24 +18,29 @@
 class GLKMeshBufferAllocator
 ```
 
+```objc
+@interface GLKMeshBufferAllocator : NSObject
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MDLMeshBufferAllocator](../modelio/mdlmeshbufferallocator.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MDLMeshBufferAllocator](../ModelIO/mdlmeshbufferallocator.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class GLKMesh](glkmesh.md)
-- [class GLKMeshBuffer](glkmeshbuffer.md)
-- [class GLKSubmesh](glksubmesh.md)
+### Mesh Data Management
+- [class GLKMesh](./glkmesh.md)
+- [class GLKMeshBuffer](./glkmeshbuffer.md)
+- [class GLKSubmesh](./glksubmesh.md)
 
 
 ---

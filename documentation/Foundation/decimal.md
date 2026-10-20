@@ -1,7 +1,8 @@
 # Decimal
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure representing a base-10 number.
 
@@ -20,228 +21,233 @@ A structure representing a base-10 number.
 struct Decimal
 ```
 
+```c
+typedef struct { ... } NSDecimal;
+```
+
 ## Topics
 
 ### Creating an empty decimal
-- [init()](decimal/init.md)
+- [init()](./decimal/init%28%29.md)
   Creates a decimal initialized to `0`.
 ### Creating a decimal from components
-- [init(sign: FloatingPointSign, exponent: Int, significand: Decimal)](decimal/init(sign:exponent:significand:).md)
+- [init(sign: FloatingPointSign, exponent: Int, significand: Decimal)](./decimal/init%28sign,exponent,significand%29.md)
   Creates a decimal initialized with the given sign, exponent, and significand.
 ### Creating a decimal from a floating point number
-- [init(Double)](decimal/init(_:)-6wgru.md)
+- [init(Double)](./decimal/init%28_%29-6wgru.md)
   Creates and initializes a decimal with the provided floating point value.
-- [init(floatLiteral: Double)](decimal/init(floatliteral:).md)
+- [init(floatLiteral: Double)](./decimal/init%28floatliteral%29.md)
   Creates and initializes a decimal with the provided floating point value.
 ### Creating a decimal from an integer
-- [init?<T>(exactly: T)](decimal/init(exactly:).md)
+- [init?<T>(exactly: T)](./decimal/init%28exactly%29.md)
   Creates a new decimal value exactly representing the provided integer.
-- [init(Int)](decimal/init(_:)-2tcho.md)
+- [init(Int)](./decimal/init%28_%29-2tcho.md)
   Creates and initializes a decimal with the provided integer value.
-- [init(Int8)](decimal/init(_:)-4gk29.md)
+- [init(Int8)](./decimal/init%28_%29-4gk29.md)
   Creates and initializes a decimal with the provided integer value.
-- [init(Int16)](decimal/init(_:)-5aznh.md)
+- [init(Int16)](./decimal/init%28_%29-5aznh.md)
   Creates and initializes a decimal with the provided integer value.
-- [init(Int32)](decimal/init(_:)-7dmlc.md)
+- [init(Int32)](./decimal/init%28_%29-7dmlc.md)
   Creates and initializes a decimal with the provided integer value.
-- [init(Int64)](decimal/init(_:)-7a033.md)
+- [init(Int64)](./decimal/init%28_%29-7a033.md)
   Creates and initializes a decimal with the provided integer value.
-- [init(integerLiteral: Int)](decimal/init(integerliteral:).md)
+- [init(integerLiteral: Int)](./decimal/init%28integerliteral%29.md)
   Creates and initializes a decimal with the provided integer value.
 ### Creating a decimal from an unsigned integer
-- [init(UInt)](decimal/init(_:)-2lxxy.md)
+- [init(UInt)](./decimal/init%28_%29-2lxxy.md)
   Creates and initializes a decimal with the provided unsigned integer value.
-- [init(UInt8)](decimal/init(_:)-4gbgq.md)
+- [init(UInt8)](./decimal/init%28_%29-4gbgq.md)
   Creates and initializes a decimal with the provided unsigned integer value.
-- [init(UInt16)](decimal/init(_:)-9lio1.md)
+- [init(UInt16)](./decimal/init%28_%29-9lio1.md)
   Creates and initializes a decimal with the provided unsigned integer value.
-- [init(UInt32)](decimal/init(_:)-9okou.md)
+- [init(UInt32)](./decimal/init%28_%29-9okou.md)
   Creates and initializes a decimal with the provided unsigned integer value.
-- [init(UInt64)](decimal/init(_:)-43cx6.md)
+- [init(UInt64)](./decimal/init%28_%29-43cx6.md)
   Creates and initializes a decimal with the provided unsigned integer value.
 ### Creating a decimal from another decimal
-- [init(signOf: Decimal, magnitudeOf: Decimal)](decimal/init(signof:magnitudeof:).md)
+- [init(signOf: Decimal, magnitudeOf: Decimal)](./decimal/init%28signof,magnitudeof%29.md)
   Creates and initializes a decimal with the sign and magnitude of the given decimals.
-- [func NSDecimalCopy(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>)](nsdecimalcopy(_:_:).md)
+- [func NSDecimalCopy(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>)](./nsdecimalcopy%28_,_%29.md)
   Copies the value of a decimal number.
 ### Creating a decimal by parsing a string
-- [init(String, format: Decimal.FormatStyle, lenient: Bool) throws](decimal/init(_:format:lenient:)-6fk71.md)
+- [init(String, format: Decimal.FormatStyle, lenient: Bool) throws](./decimal/init%28_,format,lenient%29-6fk71.md)
   Creates and initializes a decimal by parsing a string according to the provided format style.
-- [init(String, format: Decimal.FormatStyle.Currency, lenient: Bool) throws](decimal/init(_:format:lenient:)-8t5o2.md)
+- [init(String, format: Decimal.FormatStyle.Currency, lenient: Bool) throws](./decimal/init%28_,format,lenient%29-8t5o2.md)
   Creates and initializes a decimal by parsing a string according to the provided currency format style.
-- [init(String, format: Decimal.FormatStyle.Percent, lenient: Bool) throws](decimal/init(_:format:lenient:)-3u6o6.md)
+- [init(String, format: Decimal.FormatStyle.Percent, lenient: Bool) throws](./decimal/init%28_,format,lenient%29-3u6o6.md)
   Creates and initializes a percentage decimal by parsing a string according to the provided format style.
-- [init?(string: String, locale: Locale?)](decimal/init(string:locale:).md)
+- [init?(string: String, locale: Locale?)](./decimal/init%28string,locale%29.md)
   Creates and initializes a decimal by parsing a string according to the provided locale’s conventions.
-- [init<S>(S.ParseInput, strategy: S) throws](decimal/init(_:strategy:).md)
+- [init<S>(S.ParseInput, strategy: S) throws](./decimal/init%28_,strategy%29.md)
   Creates and initializes a decimal by parsing an arbitrary type according to the provided parse strategy.
-- [Decimal.ParseStrategy](decimal/parsestrategy.md)
+- [Decimal.ParseStrategy](./decimal/parsestrategy.md)
   A parse strategy for creating decimal values from formatted strings.
 ### Performing arithmetic
-- [func pow(Decimal, Int) -> Decimal](pow(_:_:).md)
+- [func pow(Decimal, Int) -> Decimal](./pow%28_,_%29.md)
   Returns a decimal number raised to a given power.
 ### Performing arithmetic using references
-- [func NSDecimalCompact(UnsafeMutablePointer<Decimal>)](nsdecimalcompact(_:).md)
+- [func NSDecimalCompact(UnsafeMutablePointer<Decimal>)](./nsdecimalcompact%28_%29.md)
   Compacts the decimal structure for efficiency.
-- [func NSDecimalAdd(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>, UnsafePointer<Decimal>, NSDecimalNumber.RoundingMode) -> NSDecimalNumber.CalculationError](nsdecimaladd(_:_:_:_:).md)
+- [func NSDecimalAdd(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>, UnsafePointer<Decimal>, NSDecimalNumber.RoundingMode) -> NSDecimalNumber.CalculationError](./nsdecimaladd%28_,_,_,_%29.md)
   Adds two decimal values.
-- [func NSDecimalSubtract(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>, UnsafePointer<Decimal>, NSDecimalNumber.RoundingMode) -> NSDecimalNumber.CalculationError](nsdecimalsubtract(_:_:_:_:).md)
+- [func NSDecimalSubtract(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>, UnsafePointer<Decimal>, NSDecimalNumber.RoundingMode) -> NSDecimalNumber.CalculationError](./nsdecimalsubtract%28_,_,_,_%29.md)
   Subtracts one decimal value from another.
-- [func NSDecimalDivide(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>, UnsafePointer<Decimal>, NSDecimalNumber.RoundingMode) -> NSDecimalNumber.CalculationError](nsdecimaldivide(_:_:_:_:).md)
+- [func NSDecimalDivide(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>, UnsafePointer<Decimal>, NSDecimalNumber.RoundingMode) -> NSDecimalNumber.CalculationError](./nsdecimaldivide%28_,_,_,_%29.md)
   Divides one decimal value by another.
-- [func NSDecimalMultiply(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>, UnsafePointer<Decimal>, NSDecimalNumber.RoundingMode) -> NSDecimalNumber.CalculationError](nsdecimalmultiply(_:_:_:_:).md)
+- [func NSDecimalMultiply(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>, UnsafePointer<Decimal>, NSDecimalNumber.RoundingMode) -> NSDecimalNumber.CalculationError](./nsdecimalmultiply%28_,_,_,_%29.md)
   Multiplies two decimal numbers together.
-- [func NSDecimalMultiplyByPowerOf10(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>, Int16, NSDecimalNumber.RoundingMode) -> NSDecimalNumber.CalculationError](nsdecimalmultiplybypowerof10(_:_:_:_:).md)
+- [func NSDecimalMultiplyByPowerOf10(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>, Int16, NSDecimalNumber.RoundingMode) -> NSDecimalNumber.CalculationError](./nsdecimalmultiplybypowerof10%28_,_,_,_%29.md)
   Multiplies a decimal by the specified power of 10.
-- [func NSDecimalRound(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>, Int, NSDecimalNumber.RoundingMode)](nsdecimalround(_:_:_:_:).md)
+- [func NSDecimalRound(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>, Int, NSDecimalNumber.RoundingMode)](./nsdecimalround%28_,_,_,_%29.md)
   Rounds off the decimal value.
-- [func NSDecimalPower(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>, Int, NSDecimalNumber.RoundingMode) -> NSDecimalNumber.CalculationError](nsdecimalpower(_:_:_:_:).md)
+- [func NSDecimalPower(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>, Int, NSDecimalNumber.RoundingMode) -> NSDecimalNumber.CalculationError](./nsdecimalpower%28_,_,_,_%29.md)
   Raises the decimal value to the specified power.
-- [func NSDecimalNormalize(UnsafeMutablePointer<Decimal>, UnsafeMutablePointer<Decimal>, NSDecimalNumber.RoundingMode) -> NSDecimalNumber.CalculationError](nsdecimalnormalize(_:_:_:).md)
+- [func NSDecimalNormalize(UnsafeMutablePointer<Decimal>, UnsafeMutablePointer<Decimal>, NSDecimalNumber.RoundingMode) -> NSDecimalNumber.CalculationError](./nsdecimalnormalize%28_,_,_%29.md)
   Normalizes the internal format of two decimal numbers to simplify later operations.
-- [typealias RoundingMode](decimal/roundingmode.md)
+- [typealias RoundingMode](./decimal/roundingmode.md)
   An alias for an enumeration that specifies possible rounding modes.
-- [NSDecimalNumber.RoundingMode](nsdecimalnumber/roundingmode.md)
+- [NSDecimalNumber.RoundingMode](./nsdecimalnumber/roundingmode.md)
   These constants specify rounding behaviors.
-- [typealias CalculationError](decimal/calculationerror.md)
+- [typealias CalculationError](./decimal/calculationerror.md)
   An alias for a type that specifies possible calculation errors.
-- [NSDecimalNumber.CalculationError](nsdecimalnumber/calculationerror.md)
-  Calculation error constants used to describe an error in [`exceptionDuringOperation(_:error:leftOperand:rightOperand:)`](nsdecimalnumberbehaviors/exceptionduringoperation(_:error:leftoperand:rightoperand:).md).
+- [NSDecimalNumber.CalculationError](./nsdecimalnumber/calculationerror.md)
+  Calculation error constants used to describe an error in [`exceptionDuringOperation(_:error:leftOperand:rightOperand:)`](./nsdecimalnumberbehaviors/exceptionduringoperation%28_,error,leftoperand,rightoperand%29.md).
 ### Getting a decimal’s characteristics
-- [var sign: FloatingPointSign](decimal/sign.md)
+- [var sign: FloatingPointSign](./decimal/sign.md)
   The sign of the decimal.
-- [var exponent: Int](decimal/exponent.md)
+- [var exponent: Int](./decimal/exponent.md)
   The exponent of the decimal.
-- [var significand: Decimal](decimal/significand.md)
+- [var significand: Decimal](./decimal/significand.md)
   The significand of the decimal.
-- [var magnitude: Decimal](decimal/magnitude.md)
+- [var magnitude: Decimal](./decimal/magnitude.md)
   The magnitude of this decimal.
-- [var floatingPointClass: FloatingPointClassification](decimal/floatingpointclass.md)
+- [var floatingPointClass: FloatingPointClassification](./decimal/floatingpointclass.md)
   The IEEE 754 class of this type.
-- [var isCanonical: Bool](decimal/iscanonical.md)
+- [var isCanonical: Bool](./decimal/iscanonical.md)
   A Boolean value indicating whether the representation of this decimal is canonical.
-- [var isFinite: Bool](decimal/isfinite.md)
+- [var isFinite: Bool](./decimal/isfinite.md)
   A Boolean value indicating whether this decimal is zero, subnormal, or normal (not infinity or NaN).
-- [var isInfinite: Bool](decimal/isinfinite.md)
+- [var isInfinite: Bool](./decimal/isinfinite.md)
   A Boolean value indicating whether this decimal is infinity.
-- [var isNaN: Bool](decimal/isnan.md)
+- [var isNaN: Bool](./decimal/isnan.md)
   A Boolean value indicating whether this decimal is NaN.
-- [var isNormal: Bool](decimal/isnormal.md)
+- [var isNormal: Bool](./decimal/isnormal.md)
   A Boolean value indicating whether this decimal is normal (not zero, subnormal, infinity, or NaN).
-- [var isSignMinus: Bool](decimal/issignminus.md)
+- [var isSignMinus: Bool](./decimal/issignminus.md)
   A Boolean value indicating whether this decimal has a negative sign.
-- [var isSignaling: Bool](decimal/issignaling.md)
+- [var isSignaling: Bool](./decimal/issignaling.md)
   A Boolean value indicating whether this decimal is a signaling NaN.``
-- [var isSignalingNaN: Bool](decimal/issignalingnan.md)
+- [var isSignalingNaN: Bool](./decimal/issignalingnan.md)
   A Boolean value indicating whether this decimal is a signaling NaN.
-- [var isSubnormal: Bool](decimal/issubnormal.md)
+- [var isSubnormal: Bool](./decimal/issubnormal.md)
   A Boolean value indicating whether this decimal is subnormal.
-- [var isZero: Bool](decimal/iszero.md)
+- [var isZero: Bool](./decimal/iszero.md)
   A Boolean value indicating whether this value is zero.
-- [var nextDown: Decimal](decimal/nextdown.md)
+- [var nextDown: Decimal](./decimal/nextdown.md)
   The greatest representable value that is less than this decimal.
-- [var nextUp: Decimal](decimal/nextup.md)
+- [var nextUp: Decimal](./decimal/nextup.md)
   The least representable value that is greater than this decimal.
-- [var ulp: Decimal](decimal/ulp.md)
+- [var ulp: Decimal](./decimal/ulp.md)
   The unit in the last place of the decimal.
 ### Getting particular decimals
-- [static let greatestFiniteMagnitude: Decimal](decimal/greatestfinitemagnitude.md)
+- [static let greatestFiniteMagnitude: Decimal](./decimal/greatestfinitemagnitude.md)
   The decimal that contains the largest possible non-infinite magnitude for the underlying representation.
-- [static let leastFiniteMagnitude: Decimal](decimal/leastfinitemagnitude.md)
+- [static let leastFiniteMagnitude: Decimal](./decimal/leastfinitemagnitude.md)
   The decimal that contains the smallest possible non-infinite magnitude for the underlying representation.
-- [static let leastNonzeroMagnitude: Decimal](decimal/leastnonzeromagnitude.md)
+- [static let leastNonzeroMagnitude: Decimal](./decimal/leastnonzeromagnitude.md)
   The decimal value that represents the smallest possible non-zero value for the underlying representation.
-- [static let leastNormalMagnitude: Decimal](decimal/leastnormalmagnitude.md)
+- [static let leastNormalMagnitude: Decimal](./decimal/leastnormalmagnitude.md)
   The decimal value that represents the smallest possible normal magnitude for the underlying representation.
-- [static let pi: Decimal](decimal/pi.md)
+- [static let pi: Decimal](./decimal/pi.md)
   The mathematical constant pi.
-- [static var nan: Decimal](decimal/nan.md)
+- [static var nan: Decimal](./decimal/nan.md)
   The value that represents “not a number.”
-- [static var quietNaN: Decimal](decimal/quietnan.md)
+- [static var quietNaN: Decimal](./decimal/quietnan.md)
   A quiet representation of not-a-number.
-- [static var radix: Int](decimal/radix.md)
+- [static var radix: Int](./decimal/radix.md)
   The radix used by decimal numbers.
-- [var NSDecimalMaxSize: Int32](nsdecimalmaxsize.md)
-  The maximum size of [`Decimal`](decimal.md).
-- [var NSDecimalNoScale: Int32](nsdecimalnoscale.md)
+- [var NSDecimalMaxSize: Int32](./nsdecimalmaxsize.md)
+  The maximum size of [`Decimal`](./decimal.md).
+- [var NSDecimalNoScale: Int32](./nsdecimalnoscale.md)
   Specifies that the number of digits allowed after the decimal separator in a decimal number should not be limited.
 ### Formatting decimals
-- [func formatted() -> String](decimal/formatted.md)
+- [func formatted() -> String](./decimal/formatted%28%29.md)
   Formats the decimal using a default localized format style.
-- [func formatted<S>(S) -> S.FormatOutput](decimal/formatted(_:).md)
+- [func formatted<S>(S) -> S.FormatOutput](./decimal/formatted%28_%29.md)
   Formats the decimal using the provided format style.
-- [Decimal.FormatStyle](decimal/formatstyle.md)
+- [Decimal.FormatStyle](./decimal/formatstyle.md)
   A structure that converts between decimal values and their textual representations.
 ### Converting between decimals and strings
-- [func NSDecimalString(UnsafePointer<Decimal>, Any?) -> String](nsdecimalstring(_:_:).md)
+- [func NSDecimalString(UnsafePointer<Decimal>, Any?) -> String](./nsdecimalstring%28_,_%29.md)
   Returns a string representation of the decimal value appropriate for the specified locale.
 ### Comparing decimals
-- [func isEqual(to: Decimal) -> Bool](decimal/isequal(to:).md)
+- [func isEqual(to: Decimal) -> Bool](./decimal/isequal%28to%29.md)
   Indicates whether this decimal is equal to the specified one.
-- [func isLess(than: Decimal) -> Bool](decimal/isless(than:).md)
+- [func isLess(than: Decimal) -> Bool](./decimal/isless%28than%29.md)
   Indicates whether this decimal is less than the specified one.
-- [func isLessThanOrEqualTo(Decimal) -> Bool](decimal/islessthanorequalto(_:).md)
+- [func isLessThanOrEqualTo(Decimal) -> Bool](./decimal/islessthanorequalto%28_%29.md)
   Indicates whether this decimal is less than or equal to the specified one.
-- [func isTotallyOrdered(belowOrEqualTo: Decimal) -> Bool](decimal/istotallyordered(beloworequalto:).md)
+- [func isTotallyOrdered(belowOrEqualTo: Decimal) -> Bool](./decimal/istotallyordered%28beloworequalto%29.md)
   Returns a Boolean value indicating whether this instance should precede the given value in an ascending sort.
-- [func distance(to: Decimal) -> Decimal](decimal/distance(to:).md)
+- [func distance(to: Decimal) -> Decimal](./decimal/distance%28to%29.md)
   Returns the distance from this value to the specified value.
-- [func advanced(by: Decimal) -> Decimal](decimal/advanced(by:).md)
+- [func advanced(by: Decimal) -> Decimal](./decimal/advanced%28by%29.md)
   Returns a new value advanced by the given distance.
-- [func NSDecimalCompare(UnsafePointer<Decimal>, UnsafePointer<Decimal>) -> ComparisonResult](nsdecimalcompare(_:_:).md)
+- [func NSDecimalCompare(UnsafePointer<Decimal>, UnsafePointer<Decimal>) -> ComparisonResult](./nsdecimalcompare%28_,_%29.md)
   Compares two decimal values.
 ### Using reference types
-- [class NSDecimalNumber](nsdecimalnumber.md)
+- [class NSDecimalNumber](./nsdecimalnumber.md)
   An object for representing and performing arithmetic on base-10 numbers.
 ### Supporting Types
-- [Decimal.FormatStyle](decimal/formatstyle.md)
+- [Decimal.FormatStyle](./decimal/formatstyle.md)
   A structure that converts between decimal values and their textual representations.
 ### Operators
-- [static func / (Decimal, Decimal) -> Decimal](decimal/_(_:_:).md)
+- [static func / (Decimal, Decimal) -> Decimal](./decimal/op%28_,_%29.md)
   Divides one decimal number by another.
-- [static func /= (inout Decimal, Decimal)](decimal/_=(_:_:).md)
+- [static func /= (inout Decimal, Decimal)](./decimal/opeq%28_,_%29.md)
   Divides one decimal number by another, storing the result in the first number.
 ### Default Implementations
-- [AdditiveArithmetic Implementations](decimal/additivearithmetic-implementations.md)
-- [ExpressibleByFloatLiteral Implementations](decimal/expressiblebyfloatliteral-implementations.md)
-- [ExpressibleByIntegerLiteral Implementations](decimal/expressiblebyintegerliteral-implementations.md)
-- [Numeric Implementations](decimal/numeric-implementations.md)
-- [SignedNumeric Implementations](decimal/signednumeric-implementations.md)
-- [Strideable Implementations](decimal/strideable-implementations.md)
+- [AdditiveArithmetic Implementations](./decimal/additivearithmetic-implementations.md)
+- [ExpressibleByFloatLiteral Implementations](./decimal/expressiblebyfloatliteral-implementations.md)
+- [ExpressibleByIntegerLiteral Implementations](./decimal/expressiblebyintegerliteral-implementations.md)
+- [Numeric Implementations](./decimal/numeric-implementations.md)
+- [SignedNumeric Implementations](./decimal/signednumeric-implementations.md)
+- [Strideable Implementations](./decimal/strideable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AdditiveArithmetic](../swift/additivearithmetic.md)
-- [Comparable](../swift/comparable.md)
-- [ConvertibleFromGeneratedContent](../foundationmodels/convertiblefromgeneratedcontent.md)
-- [ConvertibleToGeneratedContent](../foundationmodels/convertibletogeneratedcontent.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByFloatLiteral](../swift/expressiblebyfloatliteral.md)
-- [ExpressibleByIntegerLiteral](../swift/expressiblebyintegerliteral.md)
-- [Generable](../foundationmodels/generable.md)
-- [Hashable](../swift/hashable.md)
-- [InstructionsRepresentable](../foundationmodels/instructionsrepresentable.md)
-- [Numeric](../swift/numeric.md)
-- [Plottable](../charts/plottable.md)
-- [PromptRepresentable](../foundationmodels/promptrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SignedNumeric](../swift/signednumeric.md)
-- [Strideable](../swift/strideable.md)
+- [AdditiveArithmetic](../Swift/additivearithmetic.md)
+- [Comparable](../Swift/comparable.md)
+- [ConvertibleFromGeneratedContent](../FoundationModels/convertiblefromgeneratedcontent.md)
+- [ConvertibleToGeneratedContent](../FoundationModels/convertibletogeneratedcontent.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [ExpressibleByFloatLiteral](../Swift/expressiblebyfloatliteral.md)
+- [ExpressibleByIntegerLiteral](../Swift/expressiblebyintegerliteral.md)
+- [Generable](../FoundationModels/generable.md)
+- [Hashable](../Swift/hashable.md)
+- [InstructionsRepresentable](../FoundationModels/instructionsrepresentable.md)
+- [Numeric](../Swift/numeric.md)
+- [Plottable](../Charts/plottable.md)
+- [PromptRepresentable](../FoundationModels/promptrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SignedNumeric](../Swift/signednumeric.md)
+- [Strideable](../Swift/strideable.md)
 
 ## See Also
 
-- [struct Int](../swift/int.md)
+### Numbers
+- [struct Int](../Swift/int.md)
   A signed integer value type.
-- [struct Double](../swift/double.md)
+- [struct Double](../Swift/double.md)
   A double-precision (64-bit), floating-point value type.
-- [class NumberFormatter](numberformatter.md)
+- [class NumberFormatter](./numberformatter.md)
   A formatter that converts between numeric values and their textual representations.
 
 

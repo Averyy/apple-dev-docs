@@ -1,7 +1,8 @@
 # text(languages:textContentType:)
 
 **Framework**: VisionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a data type for text and information the scanner finds in text.
 
@@ -18,7 +19,7 @@ static func text(languages: [String] = [], textContentType: DataScannerViewContr
 
 ## Mentions
 
-- [Scanning data with the camera](scanning-data-with-the-camera.md)
+- [Scanning data with the camera](../../scanning-data-with-the-camera.md)
 
 #### Return Value
 
@@ -26,9 +27,9 @@ A text data type.
 
 #### Discussion
 
-Use this method to create a custom text data type. For example, if you know the content contains languages other than a person’s preferred languages, pass identifiers for those languages as the `languages` parameter. If you only want to scan for telephone numbers, pass [`DataScannerViewController.TextContentType.telephoneNumber`](datascannerviewcontroller/textcontenttype/telephonenumber.md) as the `textContentType` parameter.
+Use this method to create a custom text data type. For example, if you know the content contains languages other than a person’s preferred languages, pass identifiers for those languages as the `languages` parameter. If you only want to scan for telephone numbers, pass [`DataScannerViewController.TextContentType.telephoneNumber`](../textcontenttype/telephonenumber.md) as the `textContentType` parameter.
 
-To get the data scanner supported languages, use the [`supportedTextRecognitionLanguages`](datascannerviewcontroller/supportedtextrecognitionlanguages.md) property.
+To get the data scanner supported languages, use the [`supportedTextRecognitionLanguages`](../supportedtextrecognitionlanguages.md) property.
 
 ## Parameters
 
@@ -37,7 +38,8 @@ To get the data scanner supported languages, use the [`supportedTextRecognitionL
 
 ## See Also
 
-- [DataScannerViewController.TextContentType](datascannerviewcontroller/textcontenttype.md)
+### Recognizing text
+- [DataScannerViewController.TextContentType](../textcontenttype.md)
   Types of text that a data scanner recognizes.
 
 

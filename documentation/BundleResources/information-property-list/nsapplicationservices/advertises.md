@@ -1,7 +1,8 @@
 # Advertises
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 An array of dictionaries, where each dictionary contains a unique identifier.
 
@@ -11,18 +12,20 @@ An array of dictionaries, where each dictionary contains a unique identifier.
 - visionOS 1.0+
 - watchOS 9.0+
 
+## Details
 
-
-**Type**: dictionary 
+- **Name**: `Advertises`
+- **Type**: array of dictionary 
 
 ## Topics
 
 ### Property List Keys
-- [NSApplicationServiceIdentifier](information-property-list/nsapplicationservices/advertises/nsapplicationserviceidentifier.md)
+- [NSApplicationServiceIdentifier](./advertises/nsapplicationserviceidentifier.md)
 
 ## See Also
 
-- [Browses](information-property-list/nsapplicationservices/browses.md)
+### Property List Keys
+- [Browses](./browses.md)
   An array of dictionaries, where each dictionary contains a unique identifier, a usage description string, and a list of supported OSs.
 
 

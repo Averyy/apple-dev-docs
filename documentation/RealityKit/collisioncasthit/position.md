@@ -1,7 +1,8 @@
 # position
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the hit.
 
@@ -11,7 +12,7 @@ The position of the hit.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,13 +22,14 @@ var position: SIMD3<Float> { get }
 
 #### Discussion
 
-The frame of reference for this point depends on the reference entity used in the call to either the [`raycast(origin:direction:length:query:mask:relativeTo:)`](scene/raycast(origin:direction:length:query:mask:relativeto:).md) method or the [`convexCast(convexShape:fromPosition:fromOrientation:toPosition:toOrientation:query:mask:relativeTo:)`](scene/convexcast(convexshape:fromposition:fromorientation:toposition:toorientation:query:mask:relativeto:).md) method that generated the hit.
+The frame of reference for this point depends on the reference entity used in the call to either the [`raycast(origin:direction:length:query:mask:relativeTo:)`](../scene/raycast%28origin,direction,length,query,mask,relativeto%29.md) method or the [`convexCast(convexShape:fromPosition:fromOrientation:toPosition:toOrientation:query:mask:relativeTo:)`](../scene/convexcast%28convexshape,fromposition,fromorientation,toposition,toorientation,query,mask,relativeto%29.md) method that generated the hit.
 
 ## See Also
 
-- [var normal: SIMD3<Float>](collisioncasthit/normal.md)
+### Characterizing the collision cast hit
+- [var normal: SIMD3<Float>](./normal.md)
   The normal of the hit.
-- [var distance: Float](collisioncasthit/distance.md)
+- [var distance: Float](./distance.md)
   The distance from the ray origin to the hit, or the convex shape travel distance.
 
 

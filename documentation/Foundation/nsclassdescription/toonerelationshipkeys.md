@@ -1,7 +1,8 @@
 # toOneRelationshipKeys
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Overridden by subclasses to return the keys for the to-one relationship properties of instances of the described class.
 
@@ -15,6 +16,10 @@ Overridden by subclasses to return the keys for the to-one relationship properti
 var toOneRelationshipKeys: [String] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSString *> * toOneRelationshipKeys;
+```
+
 #### Return Value
 
 An array of `NSString` objects containing the names of the to-one relationship properties of instances of the described class.
@@ -23,15 +28,17 @@ An array of `NSString` objects containing the names of the to-one relationship p
 
 To-one relationship properties are single objects.
 
-If you have an instance of the class the receiver describes, you can use the `NSObject` instance method [`toOneRelationshipKeys`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/toonerelationshipkeys) instead.
+If you have an instance of the class the receiver describes, you can use the `NSObject` instance method [`toOneRelationshipKeys`](../../ObjectiveC/nsobject-swift.class/toonerelationshipkeys.md) instead.
 
 ## See Also
 
-- [var attributeKeys: [String]](nsclassdescription/attributekeys.md)
+### Related Documentation
+- [var attributeKeys: [String]](./attributekeys.md)
   Overridden by subclasses to return the names of attributes of instances of the described class.
-- [func inverse(forRelationshipKey: String) -> String?](nsclassdescription/inverse(forrelationshipkey:).md)
+### Relationship keys
+- [func inverse(forRelationshipKey: String) -> String?](./inverse%28forrelationshipkey%29.md)
   Overridden by subclasses to return the name of the inverse relationship from a relationship specified by a given key.
-- [var toManyRelationshipKeys: [String]](nsclassdescription/tomanyrelationshipkeys.md)
+- [var toManyRelationshipKeys: [String]](./tomanyrelationshipkeys.md)
   Overridden by subclasses to return the keys for the to-many relationship properties of instances of the described class.
 
 

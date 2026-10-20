@@ -2,6 +2,7 @@
 
 **Framework**: FSKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -13,13 +14,18 @@
 var supportedVolumeCapabilities: FSVolume.SupportedCapabilities { get }
 ```
 
+```objc
+@property (nonatomic, readonly) FSVolumeSupportedCapabilities * supportedVolumeCapabilities;
+```
+
 ## See Also
 
-- [FSVolume.SupportedCapabilities](fsvolume/supportedcapabilities.md)
+### Inspecting required volume properties
+- [FSVolume.SupportedCapabilities](../supportedcapabilities.md)
   A type that represents capabilities supported by a volume, such as hard and symbolic links, journaling, and large file sizes.
-- [var volumeStatistics: FSStatFSResult](fsvolume/handler/volumestatistics.md)
+- [var volumeStatistics: FSStatFSResult](./volumestatistics.md)
   A property that provides up-to-date statistics of the volume.
-- [class FSStatFSResult](fsstatfsresult.md)
+- [class FSStatFSResult](../../fsstatfsresult.md)
   A type used to report a volume’s statistics.
 
 

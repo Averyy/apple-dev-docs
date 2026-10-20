@@ -1,7 +1,8 @@
 # disconnect()
 
 **Framework**: Touch Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Disconnects the touch controller from the app, preventing its controls from being drawn.
 
@@ -16,9 +17,14 @@ Disconnects the touch controller from the app, preventing its controls from bein
 func disconnect()
 ```
 
+```objc
+- (void) disconnect;
+```
+
 ## See Also
 
-- [func connect()](tctouchcontroller/connect.md)
+### Connecting and disconnecting a controller
+- [func connect()](./connect%28%29.md)
   Connects the touch controller to the app, allowing its controls to be drawn and an associated `GCController` to be created.
 
 

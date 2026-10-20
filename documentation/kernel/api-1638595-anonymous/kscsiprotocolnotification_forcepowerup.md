@@ -1,14 +1,15 @@
 # kSCSIProtocolNotification_ForcePowerUp
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kSCSIProtocolNotification_ForcePowerUp = 0x69000050
 ```
 

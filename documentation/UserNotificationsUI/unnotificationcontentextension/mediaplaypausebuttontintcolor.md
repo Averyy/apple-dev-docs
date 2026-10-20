@@ -1,7 +1,8 @@
 # mediaPlayPauseButtonTintColor
 
 **Framework**: User Notifications UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tint color for the media playback button.
 
@@ -14,26 +15,48 @@ The tint color for the media playback button.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+@NSCopying
+optional var mediaPlayPauseButtonTintColor: UIColor { get }
+```
+
+*macOS*
+
 ```swift
 @NSCopying
 optional var mediaPlayPauseButtonTintColor: NSColor { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) UIColor * mediaPlayPauseButtonTintColor;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSColor * mediaPlayPauseButtonTintColor;
+```
+
 #### Discussion
 
-If you implement the [`mediaPlayPauseButtonFrame`](unnotificationcontentextension/mediaplaypausebuttonframe.md) property, you can also implement this property and use it to specify the tint color to apply to the button. If you don’t implement this property, the system uses a default color for the tint color.
+If you implement the [`mediaPlayPauseButtonFrame`](./mediaplaypausebuttonframe.md) property, you can also implement this property and use it to specify the tint color to apply to the button. If you don’t implement this property, the system uses a default color for the tint color.
 
 ## See Also
 
-- [var mediaPlayPauseButtonType: UNNotificationContentExtensionMediaPlayPauseButtonType](unnotificationcontentextension/mediaplaypausebuttontype.md)
+### Supporting Media Playback
+- [var mediaPlayPauseButtonType: UNNotificationContentExtensionMediaPlayPauseButtonType](./mediaplaypausebuttontype.md)
   The type of media button type to display.
-- [enum UNNotificationContentExtensionMediaPlayPauseButtonType](unnotificationcontentextensionmediaplaypausebuttontype.md)
+- [enum UNNotificationContentExtensionMediaPlayPauseButtonType](../unnotificationcontentextensionmediaplaypausebuttontype.md)
   Constants indicating the type of media button to display.
-- [var mediaPlayPauseButtonFrame: CGRect](unnotificationcontentextension/mediaplaypausebuttonframe.md)
+- [var mediaPlayPauseButtonFrame: CGRect](./mediaplaypausebuttonframe.md)
   The frame rectangle to use for displaying a media playback button.
-- [func mediaPlay()](unnotificationcontentextension/mediaplay.md)
+- [func mediaPlay()](./mediaplay%28%29.md)
   Tells you to begin playback of your media content.
-- [func mediaPause()](unnotificationcontentextension/mediapause.md)
+- [func mediaPause()](./mediapause%28%29.md)
   Tells you to pause playback of your media content.
 
 

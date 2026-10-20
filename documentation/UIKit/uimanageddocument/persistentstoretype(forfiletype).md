@@ -1,7 +1,8 @@
 # persistentStoreType(forFileType:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the Core Data store type for a given document file type.
 
@@ -17,6 +18,10 @@ Returns the Core Data store type for a given document file type.
 func persistentStoreType(forFileType fileType: String) -> String
 ```
 
+```objc
+- (NSString *) persistentStoreTypeForFileType:(NSString *) fileType;
+```
+
 #### Return Value
 
 The persistent store type for `fileType`.
@@ -25,7 +30,7 @@ The persistent store type for `fileType`.
 
 Override this method to specify a persistent store type for a given document type.
 
-The default returns [`NSSQLiteStoreType`](https://developer.apple.com/documentation/coredata/nssqlitestoretype).
+The default returns [`NSSQLiteStoreType`](../../CoreData/nssqlitestoretype.md).
 
 ## Parameters
 
@@ -33,15 +38,16 @@ The default returns [`NSSQLiteStoreType`](https://developer.apple.com/documentat
 
 ## See Also
 
-- [func configurePersistentStoreCoordinator(for: URL, ofType: String, modelConfiguration: String?, storeOptions: [AnyHashable : Any]?) throws](uimanageddocument/configurepersistentstorecoordinator(for:oftype:modelconfiguration:storeoptions:).md)
+### Managing the Core Data stack
+- [func configurePersistentStoreCoordinator(for: URL, ofType: String, modelConfiguration: String?, storeOptions: [AnyHashable : Any]?) throws](./configurepersistentstorecoordinator%28for,oftype,modelconfiguration,storeoptions%29.md)
   Creates or loads the document’s persistent store.
-- [var managedObjectContext: NSManagedObjectContext](uimanageddocument/managedobjectcontext.md)
+- [var managedObjectContext: NSManagedObjectContext](./managedobjectcontext.md)
   The document’s managed object context.
-- [var managedObjectModel: NSManagedObjectModel](uimanageddocument/managedobjectmodel.md)
+- [var managedObjectModel: NSManagedObjectModel](./managedobjectmodel.md)
   The document’s managed object model.
-- [var persistentStoreOptions: [AnyHashable : Any]?](uimanageddocument/persistentstoreoptions.md)
+- [var persistentStoreOptions: [AnyHashable : Any]?](./persistentstoreoptions.md)
   Options used when creating the document’s persistent store.
-- [var modelConfiguration: String?](uimanageddocument/modelconfiguration.md)
+- [var modelConfiguration: String?](./modelconfiguration.md)
   A model configuration name to be passed when configuring the persistent store.
 
 

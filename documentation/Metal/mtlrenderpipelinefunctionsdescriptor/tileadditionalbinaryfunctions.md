@@ -1,7 +1,8 @@
 # tileAdditionalBinaryFunctions
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tile functions to add to the render pipeline.
 
@@ -19,11 +20,16 @@ The tile functions to add to the render pipeline.
 var tileAdditionalBinaryFunctions: [any MTLFunction]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<id<MTLFunction>> * tileAdditionalBinaryFunctions;
+```
+
 ## See Also
 
-- [var vertexAdditionalBinaryFunctions: [any MTLFunction]?](mtlrenderpipelinefunctionsdescriptor/vertexadditionalbinaryfunctions.md)
+### Configuring the descriptor’s functions
+- [var vertexAdditionalBinaryFunctions: [any MTLFunction]?](./vertexadditionalbinaryfunctions.md)
   The vertex functions to add to the render pipeline.
-- [var fragmentAdditionalBinaryFunctions: [any MTLFunction]?](mtlrenderpipelinefunctionsdescriptor/fragmentadditionalbinaryfunctions.md)
+- [var fragmentAdditionalBinaryFunctions: [any MTLFunction]?](./fragmentadditionalbinaryfunctions.md)
   The fragment functions to add to the render pipeline.
 
 

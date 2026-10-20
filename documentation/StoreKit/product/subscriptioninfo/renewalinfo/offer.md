@@ -1,7 +1,8 @@
 # offer
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A subscription offer that applies to the transaction at the next renewal period.
 
@@ -28,9 +29,10 @@ This value is `nil` if there’s no subscription offer.
 
 ## See Also
 
-- [Transaction.Offer](transaction/offer-swift.struct.md)
+### Getting offers
+- [Transaction.Offer](../../../transaction/offer-swift.struct.md)
   Discounts or promotions that apply to a transaction.
-- [let eligibleWinBackOfferIDs: [String]](product/subscriptioninfo/renewalinfo/eligiblewinbackofferids.md)
+- [let eligibleWinBackOfferIDs: [String]](./eligiblewinbackofferids.md)
   An array of strings that represent identifiers of win-back offers that the customer is eligible to redeem, sorted with the best offers first.
 
 

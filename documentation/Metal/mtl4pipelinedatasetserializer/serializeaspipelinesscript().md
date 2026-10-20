@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Serializes a serializer data set to a pipeline script as raw data.
@@ -18,6 +19,10 @@ Serializes a serializer data set to a pipeline script as raw data.
 
 ```swift
 func serializeAsPipelinesScript() throws -> Data
+```
+
+```objc
+- (NSData *) serializeAsPipelinesScriptWithError:(NSError **) error;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # Accessory.Chirality.unspecified
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Unspecified (non-handed accessory, not associated with a hand).
 

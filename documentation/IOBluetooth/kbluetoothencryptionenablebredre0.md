@@ -1,10 +1,11 @@
 # kBluetoothEncryptionEnableBREDRE0
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,12 +13,17 @@
 var kBluetoothEncryptionEnableBREDRE0: Int { get }
 ```
 
+```c
+kBluetoothEncryptionEnableBREDRE0
+```
+
 ## See Also
 
-- [var kBluetoothEncryptionEnableBREDRAESCCM: Int](kbluetoothencryptionenablebredraesccm.md)
-- [var kBluetoothEncryptionEnableLEAESCCM: Int](kbluetoothencryptionenableleaesccm.md)
-- [var kBluetoothEncryptionEnableOff: Int](kbluetoothencryptionenableoff.md)
-- [var kBluetoothEncryptionEnableOn: Int](kbluetoothencryptionenableon.md)
+### Constants
+- [var kBluetoothEncryptionEnableBREDRAESCCM: Int](./kbluetoothencryptionenablebredraesccm.md)
+- [var kBluetoothEncryptionEnableLEAESCCM: Int](./kbluetoothencryptionenableleaesccm.md)
+- [var kBluetoothEncryptionEnableOff: Int](./kbluetoothencryptionenableoff.md)
+- [var kBluetoothEncryptionEnableOn: Int](./kbluetoothencryptionenableon.md)
 
 
 ---

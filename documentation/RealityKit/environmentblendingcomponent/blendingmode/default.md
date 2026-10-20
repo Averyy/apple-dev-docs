@@ -1,7 +1,8 @@
 # default
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 No special blending is applied.
 

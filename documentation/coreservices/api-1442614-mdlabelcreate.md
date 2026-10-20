@@ -1,7 +1,8 @@
 # MDLabelCreate(_:_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 func MDLabelCreate(_ allocator: CFAllocator!, _ displayName: CFString!, _ kind: CFString!, _ domain: MDLabelDomain) -> MDLabel!
+```
+
+```c
+MDLabelRef MDLabelCreate(CFAllocatorRef allocator, CFStringRef displayName, CFStringRef kind, MDLabelDomain domain);
 ```
 
 

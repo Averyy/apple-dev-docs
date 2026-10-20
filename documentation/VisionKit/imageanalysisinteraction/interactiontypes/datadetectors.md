@@ -1,7 +1,8 @@
 # dataDetectors
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that enables interaction with text of certain formats, such as URLs, email addresses, and physical addresses.
 
@@ -23,15 +24,16 @@ People interact with *data detectors*, or UI that highlights each instance of th
 
 ## See Also
 
-- [static let automatic: ImageAnalysisInteraction.InteractionTypes](imageanalysisinteraction/interactiontypes/automatic.md)
+### Specifying types of interactions
+- [static let automatic: ImageAnalysisInteraction.InteractionTypes](./automatic.md)
   An option that enables interaction with any type of text, symbols, or subjects that the framework recognizes.
-- [static let textSelection: ImageAnalysisInteraction.InteractionTypes](imageanalysisinteraction/interactiontypes/textselection.md)
+- [static let textSelection: ImageAnalysisInteraction.InteractionTypes](./textselection.md)
   An option that enables text selection, copying, and translating.
-- [static let imageSubject: ImageAnalysisInteraction.InteractionTypes](imageanalysisinteraction/interactiontypes/imagesubject.md)
+- [static let imageSubject: ImageAnalysisInteraction.InteractionTypes](./imagesubject.md)
   An option that enables people to use a long-press gesture on a subject in an image to separate it from the background.
-- [static let visualLookUp: ImageAnalysisInteraction.InteractionTypes](imageanalysisinteraction/interactiontypes/visuallookup.md)
+- [static let visualLookUp: ImageAnalysisInteraction.InteractionTypes](./visuallookup.md)
   An option that presents a button for more information on any subjects the framework recognizes in the image.
-- [static let automaticTextOnly: ImageAnalysisInteraction.InteractionTypes](imageanalysisinteraction/interactiontypes/automatictextonly.md)
+- [static let automaticTextOnly: ImageAnalysisInteraction.InteractionTypes](./automatictextonly.md)
   An option that enables all interaction types except image subjects and Visual Look Up.
 
 

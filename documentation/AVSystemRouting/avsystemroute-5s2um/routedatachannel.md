@@ -1,7 +1,8 @@
 # routeDataChannel
 
 **Framework**: AVSystemRouting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A data channel for communicating with the extension outside of any media session.
 
@@ -18,11 +19,11 @@ final var routeDataChannel: AVSystemRoute.DataChannel { get }
 
 ## Mentions
 
-- [Routing and streaming media to remote devices](routing-and-streaming-media-to-remote-devices.md)
+- [Routing and streaming media to remote devices](../routing-and-streaming-media-to-remote-devices.md)
 
 #### Discussion
 
-Use this channel for control messages, state synchronization, and other bidirectional communication needs that are not tied to a specific [`AVSystemRouteSession`](avsystemroutesession-gp78.md).
+Use this channel for control messages, state synchronization, and other bidirectional communication needs that are not tied to a specific [`AVSystemRouteSession`](../avsystemroutesession-gp78.md).
 
 
 ---

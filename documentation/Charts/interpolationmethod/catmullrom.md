@@ -1,7 +1,8 @@
 # catmullRom
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Interpolate data points with Catmull-Rom spline.
 

@@ -1,7 +1,8 @@
 # compactLeading
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The compact leading presentation of a Live Activity in the Dynamic Island.
 
@@ -17,11 +18,12 @@ static let compactLeading: DynamicIslandMode
 
 ## See Also
 
-- [static let compactTrailing: DynamicIslandMode](dynamicislandmode/compacttrailing.md)
+### Dynamic Island presentations
+- [static let compactTrailing: DynamicIslandMode](./compacttrailing.md)
   The compact trailing presentation of a Live Activity in the Dynamic Island.
-- [static let expanded: DynamicIslandMode](dynamicislandmode/expanded.md)
+- [static let expanded: DynamicIslandMode](./expanded.md)
   The expanded presentation of a Live Activity in the Dynamic Island.
-- [static let minimal: DynamicIslandMode](dynamicislandmode/minimal.md)
+- [static let minimal: DynamicIslandMode](./minimal.md)
   The minimal presentation of a Live Activity in the Dynamic Island.
 
 

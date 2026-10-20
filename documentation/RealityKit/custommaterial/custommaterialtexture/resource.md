@@ -1,7 +1,8 @@
 # resource
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The texture resource you use to create a custom texture.
 

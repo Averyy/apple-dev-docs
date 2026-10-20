@@ -1,7 +1,8 @@
 # NDArray.ScalarType.int3
 
 **Framework**: Core AI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A 3-bit signed integer.
 
@@ -24,15 +25,16 @@ Three-bit signed integers can represent values in the range [-4, 3]. This type i
 
 ## See Also
 
-- [NDArray.ScalarType.int2](ndarray/scalartype-swift.enum/int2.md)
+### Defining sub-byte signed integer types
+- [NDArray.ScalarType.int2](./int2.md)
   A 2-bit signed integer.
-- [NDArray.ScalarType.int4](ndarray/scalartype-swift.enum/int4.md)
+- [NDArray.ScalarType.int4](./int4.md)
   A 4-bit signed integer.
-- [NDArray.ScalarType.int5](ndarray/scalartype-swift.enum/int5.md)
+- [NDArray.ScalarType.int5](./int5.md)
   A 5-bit signed integer.
-- [NDArray.ScalarType.int6](ndarray/scalartype-swift.enum/int6.md)
+- [NDArray.ScalarType.int6](./int6.md)
   A 6-bit signed integer.
-- [NDArray.ScalarType.int7](ndarray/scalartype-swift.enum/int7.md)
+- [NDArray.ScalarType.int7](./int7.md)
   A 7-bit signed integer.
 
 

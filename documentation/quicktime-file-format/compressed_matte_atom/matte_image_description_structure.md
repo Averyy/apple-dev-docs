@@ -1,25 +1,27 @@
 # Matte image description structure
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 An image description structure associated with this matte data.
 
 #### Overview
 
-The image description contains detailed information that governs how the matte data is used. See [`Video sample description`](video_sample_description.md) for more information about image descriptions.
+The image description contains detailed information that governs how the matte data is used. See [`Video sample description`](../video_sample_description.md) for more information about image descriptions.
 
 ## See Also
 
-- [Size](compressed_matte_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this compressed matte atom.
-- [Type](compressed_matte_atom/type.md)
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
-- [Version](compressed_matte_atom/version.md)
+- [Version](./version.md)
   A 1-byte specification of the version of this compressed matte atom.
-- [Flags](compressed_matte_atom/flags.md)
+- [Flags](./flags.md)
   Three bytes of space for flags.
-- [Matte data](compressed_matte_atom/matte_data.md)
+- [Matte data](./matte_data.md)
   The compressed matte data, which is of variable length.
 
 

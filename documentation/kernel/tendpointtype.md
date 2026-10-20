@@ -1,14 +1,15 @@
 # tEndpointType
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 typedef enum tEndpointType : unsigned int {
     ...
 } tEndpointType;
@@ -17,10 +18,10 @@ typedef enum tEndpointType : unsigned int {
 ## Topics
 
 ### Constants
-- [kEndpointTypeBulk](tendpointtype/kendpointtypebulk.md)
-- [kEndpointTypeControl](tendpointtype/kendpointtypecontrol.md)
-- [kEndpointTypeInterrupt](tendpointtype/kendpointtypeinterrupt.md)
-- [kEndpointTypeIsochronous](tendpointtype/kendpointtypeisochronous.md)
+- [kEndpointTypeBulk](./tendpointtype/kendpointtypebulk.md)
+- [kEndpointTypeControl](./tendpointtype/kendpointtypecontrol.md)
+- [kEndpointTypeInterrupt](./tendpointtype/kendpointtypeinterrupt.md)
+- [kEndpointTypeIsochronous](./tendpointtype/kendpointtypeisochronous.md)
 
 
 ---

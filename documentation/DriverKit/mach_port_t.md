@@ -1,23 +1,25 @@
 # mach_port_t
 
 **Framework**: DriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef natural_t mach_port_t;
 ```
 
 ## See Also
 
-- [mach_port_name_t](mach_port_name_t.md)
+### Mach Ports
+- [mach_port_name_t](./mach_port_name_t.md)
 
 
 ---

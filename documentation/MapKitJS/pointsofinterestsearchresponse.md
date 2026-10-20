@@ -1,7 +1,8 @@
 # PointsOfInterestSearchResponse
 
 **Framework**: MapKit JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Interface
 
 The result of a request used to fetch points of interest.
 
@@ -10,21 +11,22 @@ The result of a request used to fetch points of interest.
 
 ## Declaration
 
-```swift
+```
 interface PointsOfInterestSearchResponse
 ```
 
 ## Topics
 
 ### Inspecting fetched points of interest
-- [places](pointsofinterestsearchresponse/places.md)
+- [places](./pointsofinterestsearchresponse/places.md)
   The list of points of interest that match the request options.
 
 ## See Also
 
-- [search(options)](pointsofinterestsearch/search.md)
+### Fetching points of interest
+- [search(options)](./pointsofinterestsearch/search.md)
   Fetches points of interest.
-- [type PointsOfInterestSearchDelegate](pointsofinterestsearchdelegate.md)
+- [type PointsOfInterestSearchDelegate](./pointsofinterestsearchdelegate.md)
   An object or callback function that MapKit JS calls when fetching points of interest.
 
 

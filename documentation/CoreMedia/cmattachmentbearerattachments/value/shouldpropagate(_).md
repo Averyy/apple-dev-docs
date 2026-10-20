@@ -1,7 +1,8 @@
 # CMAttachmentBearerAttachments.Value.shouldPropagate(_:)
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A case that indicates to propagate a value.
 
@@ -22,7 +23,8 @@ case shouldPropagate(Any)
 
 ## See Also
 
-- [CMAttachmentBearerAttachments.Value.shouldNotPropagate(_:)](cmattachmentbearerattachments/value/shouldnotpropagate(_:).md)
+### Cases
+- [CMAttachmentBearerAttachments.Value.shouldNotPropagate(_:)](./shouldnotpropagate%28_%29.md)
   A case that indicates to not propagate a value.
 
 

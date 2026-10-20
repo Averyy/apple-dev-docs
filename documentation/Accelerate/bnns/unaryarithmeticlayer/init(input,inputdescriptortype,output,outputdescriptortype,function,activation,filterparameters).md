@@ -1,7 +1,8 @@
 # init(input:inputDescriptorType:output:outputDescriptorType:function:activation:filterParameters:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new unary arithmetic layer.
 
@@ -11,8 +12,10 @@ Returns a new unary arithmetic layer.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,7 +25,7 @@ convenience init?(input: BNNSNDArrayDescriptor, inputDescriptorType: BNNS.Descri
 
 #### Discussion
 
-> ❗ **Important**:  The input data type must be equal to the output data type. The input size must equal the output size or `1`. Arithmetic layers only support arrays with a data type of `float`, and a data layout of [`BNNS.DataLayout.vector`](bnns/datalayout/vector.md), [`BNNS.DataLayout.matrixRowMajor`](bnns/datalayout/matrixrowmajor.md), [`BNNS.DataLayout.matrixColumnMajor`](bnns/datalayout/matrixcolumnmajor.md), or [`BNNS.DataLayout.imageCHW`](bnns/datalayout/imagechw.md).
+> ❗ **Important**:  The input data type must be equal to the output data type. The input size must equal the output size or `1`. Arithmetic layers only support arrays with a data type of `float`, and a data layout of [`BNNS.DataLayout.vector`](../datalayout/vector.md), [`BNNS.DataLayout.matrixRowMajor`](../datalayout/matrixrowmajor.md), [`BNNS.DataLayout.matrixColumnMajor`](../datalayout/matrixcolumnmajor.md), or [`BNNS.DataLayout.imageCHW`](../datalayout/imagechw.md).
 
 ## Parameters
 

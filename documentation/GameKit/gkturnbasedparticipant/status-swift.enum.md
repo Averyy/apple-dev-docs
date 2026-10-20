@@ -1,7 +1,8 @@
 # GKTurnBasedParticipant.Status
 
 **Framework**: GameKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The state the participant is in during the match.
 
@@ -20,49 +21,54 @@ The state the participant is in during the match.
 enum Status
 ```
 
+```c
+enum GKTurnBasedParticipantStatus : NSInteger;
+```
+
 ## Mentions
 
-- [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
+- [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
 ## Topics
 
 ### Constants
-- [GKTurnBasedParticipant.Status.unknown](gkturnbasedparticipant/status-swift.enum/unknown.md)
+- [GKTurnBasedParticipant.Status.unknown](./status-swift.enum/unknown.md)
   The participant is in an unexpected state.
-- [GKTurnBasedParticipant.Status.invited](gkturnbasedparticipant/status-swift.enum/invited.md)
+- [GKTurnBasedParticipant.Status.invited](./status-swift.enum/invited.md)
   The participant is invited to the match, but hasn’t responded to the invitation.
-- [GKTurnBasedParticipant.Status.declined](gkturnbasedparticipant/status-swift.enum/declined.md)
+- [GKTurnBasedParticipant.Status.declined](./status-swift.enum/declined.md)
   The participant declines the invitation to join the match, automatically terminating the match.
-- [GKTurnBasedParticipant.Status.matching](gkturnbasedparticipant/status-swift.enum/matching.md)
+- [GKTurnBasedParticipant.Status.matching](./status-swift.enum/matching.md)
   The participant represents an unfilled position in the match that Game Center promises to fill when needed.
-- [GKTurnBasedParticipant.Status.active](gkturnbasedparticipant/status-swift.enum/active.md)
+- [GKTurnBasedParticipant.Status.active](./status-swift.enum/active.md)
   The participant joins the match and is an active player.
-- [GKTurnBasedParticipant.Status.done](gkturnbasedparticipant/status-swift.enum/done.md)
+- [GKTurnBasedParticipant.Status.done](./status-swift.enum/done.md)
   The participant leaves the match.
 ### Initializers
-- [init?(rawValue: Int)](gkturnbasedparticipant/status-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./status-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var lastTurnDate: Date?](gkturnbasedparticipant/lastturndate.md)
+### Retrieving Participant Details
+- [var lastTurnDate: Date?](./lastturndate.md)
   The date and time that this participant last took a turn in the game.
-- [var timeoutDate: Date?](gkturnbasedparticipant/timeoutdate.md)
+- [var timeoutDate: Date?](./timeoutdate.md)
   The date and time that the participant’s turn timed out.
-- [var player: GKPlayer?](gkturnbasedparticipant/player.md)
+- [var player: GKPlayer?](./player.md)
   The player object containing the participant details.
-- [var status: GKTurnBasedParticipant.Status](gkturnbasedparticipant/status-swift.property.md)
+- [var status: GKTurnBasedParticipant.Status](./status-swift.property.md)
   The status of the participant.
-- [var playerID: String?](gkturnbasedparticipant/playerid.md)
+- [var playerID: String?](./playerid.md)
   The player identifier for this participant.
 
 

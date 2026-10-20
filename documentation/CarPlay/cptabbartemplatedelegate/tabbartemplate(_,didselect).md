@@ -2,6 +2,7 @@
 
 **Framework**: CarPlay  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate when the tab bar selects the specified template.
@@ -17,9 +18,13 @@ Tells the delegate when the tab bar selects the specified template.
 func tabBarTemplate(_ tabBarTemplate: CPTabBarTemplate, didSelect selectedTemplate: CPTemplate)
 ```
 
+```objc
+- (void) tabBarTemplate:(CPTabBarTemplate *) tabBarTemplate didSelectTemplate:(CPTemplate *) selectedTemplate;
+```
+
 #### Discussion
 
-The tab bar template calls this method each time the user selects a tab. `tabBarTemplate` is the same template that the tab bar’s [`selectedTemplate`](cptabbartemplate/selectedtemplate.md) property returns.
+The tab bar template calls this method each time the user selects a tab. `tabBarTemplate` is the same template that the tab bar’s [`selectedTemplate`](../cptabbartemplate/selectedtemplate.md) property returns.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # HMCharacteristicValueChargingState.inProgress
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The battery is charging.
 
@@ -19,11 +20,16 @@ The battery is charging.
 case inProgress
 ```
 
+```c
+HMCharacteristicValueChargingStateInProgress
+```
+
 ## See Also
 
-- [HMCharacteristicValueChargingState.none](hmcharacteristicvaluechargingstate/none.md)
+### Charging States
+- [HMCharacteristicValueChargingState.none](./none.md)
   The battery isn’t charging.
-- [HMCharacteristicValueChargingState.notChargeable](hmcharacteristicvaluechargingstate/notchargeable.md)
+- [HMCharacteristicValueChargingState.notChargeable](./notchargeable.md)
   The battery can’t be charged.
 
 

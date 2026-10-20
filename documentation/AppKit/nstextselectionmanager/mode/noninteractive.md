@@ -1,7 +1,8 @@
 # NSTextSelectionManager.Mode.nonInteractive
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Text is neither selectable nor editable.
 
@@ -12,6 +13,10 @@ Text is neither selectable nor editable.
 
 ```swift
 case nonInteractive
+```
+
+```c
+NSTextSelectionModeNonInteractive
 ```
 
 

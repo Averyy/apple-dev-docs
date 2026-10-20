@@ -1,7 +1,8 @@
 # rasterizationRateMap
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Assigns an optional variable rasterization rate map that Metal uses in the render pass.
 
@@ -17,6 +18,10 @@ Assigns an optional variable rasterization rate map that Metal uses in the rende
 
 ```swift
 var rasterizationRateMap: (any MTLRasterizationRateMap)? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) id<MTLRasterizationRateMap> rasterizationRateMap;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # delimiter
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The character that separates data fields in a CSV file, typically a comma.
 

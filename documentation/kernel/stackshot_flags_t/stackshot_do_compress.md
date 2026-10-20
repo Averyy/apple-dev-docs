@@ -1,14 +1,15 @@
 # STACKSHOT_DO_COMPRESS
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 STACKSHOT_DO_COMPRESS
 ```
 

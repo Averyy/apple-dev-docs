@@ -1,7 +1,8 @@
 # MDLMaterialPropertyConnection
 
 **Framework**: Model I/O  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 10.0+
@@ -17,38 +18,43 @@
 class MDLMaterialPropertyConnection
 ```
 
+```objc
+@interface MDLMaterialPropertyConnection : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(output: MDLMaterialProperty, input: MDLMaterialProperty)](mdlmaterialpropertyconnection/init(output:input:).md)
+- [init(output: MDLMaterialProperty, input: MDLMaterialProperty)](./mdlmaterialpropertyconnection/init%28output,input%29.md)
 ### Instance Properties
-- [var input: MDLMaterialProperty?](mdlmaterialpropertyconnection/input.md)
-- [var output: MDLMaterialProperty?](mdlmaterialpropertyconnection/output.md)
+- [var input: MDLMaterialProperty?](./mdlmaterialpropertyconnection/input.md)
+- [var output: MDLMaterialProperty?](./mdlmaterialpropertyconnection/output.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MDLNamed](mdlnamed.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MDLNamed](./mdlnamed.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MDLMaterial](mdlmaterial.md)
+### Materials
+- [class MDLMaterial](./mdlmaterial.md)
   A collection of material properties that together describe the intended surface appearance for rendering a 3D object.
-- [class MDLMaterialProperty](mdlmaterialproperty.md)
+- [class MDLMaterialProperty](./mdlmaterialproperty.md)
   A definition for one specific aspect of the rendering parameters for a material.
-- [class MDLMaterialPropertyGraph](mdlmaterialpropertygraph.md)
-- [class MDLMaterialPropertyNode](mdlmaterialpropertynode.md)
-- [class MDLScatteringFunction](mdlscatteringfunction.md)
+- [class MDLMaterialPropertyGraph](./mdlmaterialpropertygraph.md)
+- [class MDLMaterialPropertyNode](./mdlmaterialpropertynode.md)
+- [class MDLScatteringFunction](./mdlscatteringfunction.md)
   A set of material properties that describes a basic shading model for materials, and the superclass for more complex shading models.
-- [class MDLPhysicallyPlausibleScatteringFunction](mdlphysicallyplausiblescatteringfunction.md)
+- [class MDLPhysicallyPlausibleScatteringFunction](./mdlphysicallyplausiblescatteringfunction.md)
   A set of material properties that describes a physically realistic shading model for materials.
 
 

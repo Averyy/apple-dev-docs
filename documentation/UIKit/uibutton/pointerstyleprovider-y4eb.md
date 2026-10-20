@@ -1,7 +1,8 @@
 # pointerStyleProvider
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A closure that returns the pointer style to use when the pointer hovers over the button.
 
@@ -9,7 +10,7 @@ A closure that returns the pointer style to use when the pointer hovers over the
 - iOS 13.4+
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,7 @@ A closure that returns the pointer style to use when the pointer hovers over the
 
 #### Discussion
 
-To change the appearance of the pointer when it hovers over the button, create a [`UIButton.PointerStyleProvider`](uibutton/pointerstyleprovider-swift.typealias.md) closure that returns a [`UIPointerStyle`](uipointerstyle.md) describing the pointer shape and content effect. Then assign the closure to [`pointerStyleProvider`](uibutton/pointerstyleprovider-y4eb.md). For example, the following code listing creates a pointer style that applies a lift effect to the button when the pointer hovers over it.
+To change the appearance of the pointer when it hovers over the button, create a [`UIButton.PointerStyleProvider`](./pointerstyleprovider-swift.typealias.md) closure that returns a [`UIPointerStyle`](../uipointerstyle.md) describing the pointer shape and content effect. Then assign the closure to [`pointerStyleProvider`](./pointerstyleprovider-y4eb.md). For example, the following code listing creates a pointer style that applies a lift effect to the button when the pointer hovers over it.
 
 ```swift
 threadColorButton.pointerStyleProvider = { button, proposedEffect, proposedShape -> UIPointerStyle? in
@@ -35,17 +36,18 @@ threadColorButton.pointerStyleProvider = { button, proposedEffect, proposedShape
 }
 ```
 
-For more information, see [`Enhancing your iPad app with pointer interactions`](enhancing-your-ipad-app-with-pointer-interactions.md).
+For more information, see [Enhancing your iPad app with pointer interactions](../enhancing-your-ipad-app-with-pointer-interactions.md).
 
 ## See Also
 
-- [var isPointerInteractionEnabled: Bool](uibutton/ispointerinteractionenabled.md)
+### Supporting pointer interactions
+- [var isPointerInteractionEnabled: Bool](./ispointerinteractionenabled.md)
   A Boolean that enables pointer interaction.
-- [var isHovered: Bool](uibutton/ishovered.md)
+- [var isHovered: Bool](./ishovered.md)
   A Boolean value that indicates whether a pointer effect is active.
-- [typealias PointerStyleProvider](uibutton/pointerstyleprovider-swift.typealias.md)
+- [typealias PointerStyleProvider](./pointerstyleprovider-swift.typealias.md)
   A type alias defining a closure that returns a pointer style to apply to a button.
-- [typealias UIButtonPointerStyleProvider](uibuttonpointerstyleprovider.md)
+- [typealias UIButtonPointerStyleProvider](../uibuttonpointerstyleprovider.md)
   A type alias defining a block that returns a pointer style to apply to a button.
 
 

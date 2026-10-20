@@ -1,7 +1,8 @@
 # readAttributeThreadMetrics(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeThreadMetrics(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeThreadMetrics() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeThreadMetricsWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # logSumExp(axes:keepDimensions:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a log-sum-exp reduction operation along the given axis operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a log-sum-exp reduction operation along the given axis operation to the cur
 ```swift
 func logSumExp(axes: [Int], keepDimensions: Bool) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 ## Parameters
 

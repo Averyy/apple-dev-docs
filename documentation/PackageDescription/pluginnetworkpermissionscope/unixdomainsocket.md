@@ -1,7 +1,8 @@
 # PluginNetworkPermissionScope.unixDomainSocket
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Allow connections to any UNIX domain socket.
 

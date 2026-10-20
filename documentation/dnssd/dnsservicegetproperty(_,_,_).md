@@ -1,7 +1,8 @@
 # DNSServiceGetProperty(_:_:_:)
 
 **Framework**: dnssd  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets the specified property of a service.
 
@@ -20,17 +21,21 @@ Gets the specified property of a service.
 func DNSServiceGetProperty(_ property: UnsafePointer<CChar>!, _ result: UnsafeMutableRawPointer!, _ size: UnsafeMutablePointer<UInt32>!) -> DNSServiceErrorType
 ```
 
+```c
+DNSServiceErrorType DNSServiceGetProperty(const char *property, void *result, uint32_t *size);
+```
+
 ## Mentions
 
-- [_DNS_SD_H](dns_sd_h.md)
+- [_DNS_SD_H](./dns_sd_h.md)
 
 #### Return Value
 
-Returns [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md) on success, or kDNSServiceErr_ServiceNotRunning if the daemon (or “system service” on Windows) is not running.
+Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) on success, or kDNSServiceErr_ServiceNotRunning if the daemon (or “system service” on Windows) is not running.
 
 ## Parameters
 
-- `property`: The requested property. Currently the only property defined is [`kDNSServiceProperty_DaemonVersion`](kdnsserviceproperty_daemonversion.md).
+- `property`: The requested property. Currently the only property defined is [`kDNSServiceProperty_DaemonVersion`](./kdnsserviceproperty_daemonversion.md).
 - `result`: Place to store result. For retrieving DaemonVersion, this should be the address of a uint32_t.
 - `size`: Pointer to uint32_t containing size of the result location. For retrieving DaemonVersion, this should be sizeof(uint32_t). On return the uint32_t is updated to the size of the data returned. For DaemonVersion, the returned size is always sizeof(uint32_t), but future properties could be defined which return variable-sized results.
 

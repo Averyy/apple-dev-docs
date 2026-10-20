@@ -1,7 +1,8 @@
 # kCMFormatDescriptionKey_PixelAspectRatioVerticalSpacing
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that identifies the vertical spacing of the pixel aspect ratio.
 
@@ -20,9 +21,14 @@ A key that identifies the vertical spacing of the pixel aspect ratio.
 let kCMFormatDescriptionKey_PixelAspectRatioVerticalSpacing: CFString
 ```
 
+```c
+extern CFStringRef const kCMFormatDescriptionKey_PixelAspectRatioVerticalSpacing;
+```
+
 ## See Also
 
-- [let kCMFormatDescriptionKey_PixelAspectRatioHorizontalSpacing: CFString](kcmformatdescriptionkey_pixelaspectratiohorizontalspacing-swift.var.md)
+### Constants
+- [let kCMFormatDescriptionKey_PixelAspectRatioHorizontalSpacing: CFString](./kcmformatdescriptionkey_pixelaspectratiohorizontalspacing-swift.var.md)
   A key that identifies the horizontal spacing of the pixel aspect ratio.
 
 

@@ -1,7 +1,8 @@
 # CNContactPropertyNotFetchedExceptionName
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Exception thrown when an accessed property was not fetched.
 
@@ -17,6 +18,10 @@ Exception thrown when an accessed property was not fetched.
 
 ```swift
 let CNContactPropertyNotFetchedExceptionName: String
+```
+
+```c
+extern NSString * const CNContactPropertyNotFetchedExceptionName;
 ```
 
 #### Discussion

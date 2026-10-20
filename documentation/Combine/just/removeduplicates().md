@@ -1,7 +1,8 @@
 # removeDuplicates()
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -18,14 +19,17 @@
 func removeDuplicates() -> Just<Output>
 ```
 
+Available when `Output` conforms to `Equatable`.
+
 ## See Also
 
-- [func filter((Output) -> Bool) -> Optional<Output>.Publisher](just/filter(_:).md)
-- [func compactMap<T>((Output) -> T?) -> Optional<T>.Publisher](just/compactmap(_:).md)
-- [func removeDuplicates(by: (Output, Output) -> Bool) -> Just<Output>](just/removeduplicates(by:).md)
-- [func tryRemoveDuplicates(by: (Output, Output) throws -> Bool) -> Result<Output, any Error>.Publisher](just/tryremoveduplicates(by:).md)
-- [func replaceEmpty(with: Output) -> Just<Output>](just/replaceempty(with:).md)
-- [func replaceError(with: Output) -> Just<Output>](just/replaceerror(with:).md)
+### Filtering elements
+- [func filter((Output) -> Bool) -> Optional<Output>.Publisher](./filter%28_%29.md)
+- [func compactMap<T>((Output) -> T?) -> Optional<T>.Publisher](./compactmap%28_%29.md)
+- [func removeDuplicates(by: (Output, Output) -> Bool) -> Just<Output>](./removeduplicates%28by%29.md)
+- [func tryRemoveDuplicates(by: (Output, Output) throws -> Bool) -> Result<Output, any Error>.Publisher](./tryremoveduplicates%28by%29.md)
+- [func replaceEmpty(with: Output) -> Just<Output>](./replaceempty%28with%29.md)
+- [func replaceError(with: Output) -> Just<Output>](./replaceerror%28with%29.md)
 
 
 ---

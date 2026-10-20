@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [bATAPIuseDMA](1644077-anonymous/batapiusedma.md)
-- [mATAPIuseDMA](1644077-anonymous/matapiusedma.md)
+- [bATAPIuseDMA](./api-1644077-anonymous/batapiusedma.md)
+- [mATAPIuseDMA](./api-1644077-anonymous/matapiusedma.md)
 
 
 ---

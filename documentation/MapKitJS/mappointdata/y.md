@@ -1,7 +1,8 @@
 # y
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The location of the map point along the map’s y-axis.
 
@@ -10,13 +11,14 @@ The location of the map point along the map’s y-axis.
 
 ## Declaration
 
-```swift
+```
 y: number;
 ```
 
 ## See Also
 
-- [x](mappointdata/x.md)
+### Map point properties
+- [x](./x.md)
   The location of the map point along the map’s x-axis.
 
 

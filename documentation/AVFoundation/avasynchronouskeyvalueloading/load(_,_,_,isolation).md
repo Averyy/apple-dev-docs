@@ -1,7 +1,8 @@
 # load(_:_:_:isolation:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads two or more properties asynchronously and returns the values.
 
@@ -27,7 +28,7 @@ The loaded properties in a tuple.
 
 #### Discussion
 
-See the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method for more information.
+See the [`load(_:isolation:)`](./load%28_,isolation%29.md) method for more information.
 
 ## Parameters
 
@@ -38,7 +39,8 @@ See the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).
 
 ## See Also
 
-- [func load<T>(AVAsyncProperty<Self, T>, isolation: isolated (any Actor)?) async throws -> T](avasynchronouskeyvalueloading/load(_:isolation:).md)
+### Loading property values
+- [func load<T>(AVAsyncProperty<Self, T>, isolation: isolated (any Actor)?) async throws -> T](./load%28_,isolation%29.md)
   Loads a property asynchronously and returns the value.
 
 

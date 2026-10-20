@@ -1,7 +1,8 @@
 # MTRLogType
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.0+
@@ -18,24 +19,28 @@
 enum MTRLogType
 ```
 
+```c
+enum MTRLogType : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRLogType.detail](mtrlogtype/detail.md)
-- [MTRLogType.error](mtrlogtype/error.md)
-- [MTRLogType.progress](mtrlogtype/progress.md)
+- [MTRLogType.detail](./mtrlogtype/detail.md)
+- [MTRLogType.error](./mtrlogtype/error.md)
+- [MTRLogType.progress](./mtrlogtype/progress.md)
 ### Initializers
-- [init?(rawValue: Int)](mtrlogtype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mtrlogtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

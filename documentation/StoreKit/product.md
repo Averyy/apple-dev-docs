@@ -1,7 +1,8 @@
 # Product
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about a product that you configure in App Store Connect.
 
@@ -22,131 +23,132 @@ struct Product
 
 ## Mentions
 
-- [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
-- [Supporting Family Sharing in your app](supporting-family-sharing-in-your-app.md)
-- [Supporting promoted Apple In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)
+- [Supporting monthly subscriptions with a 12-month commitment](./supporting-monthly-subscriptions-with-a-12-month-commitment.md)
+- [Supporting Family Sharing in your app](./supporting-family-sharing-in-your-app.md)
+- [Supporting promoted Apple In-App Purchases in your app](./supporting-promoted-in-app-purchases-in-your-app.md)
 
 #### Overview
 
 The `Product` type represents the Apple In-App Purchases that you configure in App Store Connect and make available for purchase within your app. Use `Product` to perform all product-related tasks in your app, from displaying Apple In-App Purchases and offers to making a purchase and getting transaction and subscription status information.
 
-To get a `Product` instance, call [`products(for:)`](product/products(for:).md) and provide one or more in-app purchase product identifiers. Use a `Product` instance to display Apple In-App Purchases and subscription offers in your store, as follows:
+To get a `Product` instance, call [`products(for:)`](./product/products%28for%29.md) and provide one or more in-app purchase product identifiers. Use a `Product` instance to display Apple In-App Purchases and subscription offers in your store, as follows:
 
-- Show the localized name, description, and pricing information using [`displayName`](product/displayname.md), [`description`](product/description.md), and [`displayPrice`](product/displayprice.md), respectively.
-- Determine whether a user is eligible for an introductory offer for the product using [`isEligibleForIntroOffer`](product/subscriptioninfo/iseligibleforintrooffer.md).
-- Display your subscription offers using the subscription information in [`subscription`](product/subscription.md).
+- Show the localized name, description, and pricing information using [`displayName`](./product/displayname.md), [`description`](./product/description.md), and [`displayPrice`](./product/displayprice.md), respectively.
+- Determine whether a user is eligible for an introductory offer for the product using [`isEligibleForIntroOffer`](./product/subscriptioninfo/iseligibleforintrooffer.md).
+- Display your subscription offers using the subscription information in [`subscription`](./product/subscription.md).
 
-When users initiate a purchase, call [`purchase(options:)`](product/purchase(options:).md) or [`purchase(confirmIn:options:)`](product/purchase(confirmin:options:)-3bivf.md) on the product instance. If your app uses SwiftUI, you can also use [`PurchaseAction`](purchaseaction.md). Set purchase options ([`Product.PurchaseOption`](product/purchaseoption.md)) to define an optional app account token, apply a promotional offer, or set a product quantity. Purchase options can also simulate an Ask to Buy scenario when you’re testing your app in the sandbox environment.
+When users initiate a purchase, call [`purchase(options:)`](./product/purchase%28options%29.md) or [`purchase(confirmIn:options:)`](./product/purchase%28confirmin,options%29-3bivf.md) on the product instance. If your app uses SwiftUI, you can also use [`PurchaseAction`](./purchaseaction.md). Set purchase options ([`Product.PurchaseOption`](./product/purchaseoption.md)) to define an optional app account token, apply a promotional offer, or set a product quantity. Purchase options can also simulate an Ask to Buy scenario when you’re testing your app in the sandbox environment.
 
-Use a `Product` instance to learn whether a user is entitled to a product by checking [`currentEntitlement`](product/currententitlement.md), which holds the transaction that entitles the user to the product. This transaction information, as well as the transaction in [`latestTransaction`](product/latesttransaction.md), are cryptographically signed by the App Store in JSON Web Signature (JWS) format.
+Use a `Product` instance to learn whether a user is entitled to a product by checking [`currentEntitlement`](./product/currententitlement.md), which holds the transaction that entitles the user to the product. This transaction information, as well as the transaction in [`latestTransaction`](./product/latesttransaction.md), are cryptographically signed by the App Store in JSON Web Signature (JWS) format.
 
-If the product is an auto-renewable subscription, use the [`status`](product/subscriptioninfo/status-swift.property.md) and [`renewalInfo`](product/subscriptioninfo/status-swift.struct/renewalinfo.md) in the [`subscription`](product/subscription.md) information to help manage subscriptions and inform business decisions, such as presenting subscription offers.
+If the product is an auto-renewable subscription, use the [`status`](./product/subscriptioninfo/status-swift.property.md) and [`renewalInfo`](./product/subscriptioninfo/status-swift.struct/renewalinfo.md) in the [`subscription`](./product/subscription.md) information to help manage subscriptions and inform business decisions, such as presenting subscription offers.
 
-For information about configuring Apple In-App Purchases in App Store Connect, see [`Overview for configuring Apple In-App Purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
+For information about configuring Apple In-App Purchases in App Store Connect, see [Overview for configuring Apple In-App Purchases](https://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
 
 ## Topics
 
 ### Requesting products from the App Store
-- [static func products<Identifiers>(for: Identifiers) async throws -> [Product]](product/products(for:).md)
+- [static func products<Identifiers>(for: Identifiers) async throws -> [Product]](./product/products%28for%29.md)
   Requests product data from the App Store.
 ### Displaying a product description and price
-- [let displayName: String](product/displayname.md)
+- [let displayName: String](./product/displayname.md)
   The localized display name of the product, if it exists.
-- [let description: String](product/description.md)
+- [let description: String](./product/description.md)
   The localized description of the product.
-- [let displayPrice: String](product/displayprice.md)
+- [let displayPrice: String](./product/displayprice.md)
   The localized string representation of the product price, suitable for display.
-- [let price: Decimal](product/price.md)
+- [let price: Decimal](./product/price.md)
   The decimal representation of the cost of the product, in local currency.
-- [var priceFormatStyle: Decimal.FormatStyle.Currency](product/priceformatstyle.md)
+- [var priceFormatStyle: Decimal.FormatStyle.Currency](./product/priceformatstyle.md)
   The format style for the numbers in the price of the product.
-- [var subscriptionPeriodFormatStyle: Date.ComponentsFormatStyle](product/subscriptionperiodformatstyle.md)
+- [var subscriptionPeriodFormatStyle: Date.ComponentsFormatStyle](./product/subscriptionperiodformatstyle.md)
   The format style for the date components related to a subscription’s duration.
-- [var subscriptionPeriodUnitFormatStyle: Product.SubscriptionPeriod.Unit.FormatStyle](product/subscriptionperiodunitformatstyle.md)
+- [var subscriptionPeriodUnitFormatStyle: Product.SubscriptionPeriod.Unit.FormatStyle](./product/subscriptionperiodunitformatstyle.md)
   The format style for subscription period units, such as week, month, or year.
 ### Purchasing a product
-- [func purchase(options: Set<Product.PurchaseOption>) async throws -> Product.PurchaseResult](product/purchase(options:).md)
+- [func purchase(options: Set<Product.PurchaseOption>) async throws -> Product.PurchaseResult](./product/purchase%28options%29.md)
   Initiates a purchase for the product with the App Store and displays the confirmation sheet.
-- [func purchase(confirmIn: some UIScene, options: Set<Product.PurchaseOption>) async throws -> Product.PurchaseResult](product/purchase(confirmin:options:)-6dj6y.md)
+- [func purchase(confirmIn: some UIScene, options: Set<Product.PurchaseOption>) async throws -> Product.PurchaseResult](./product/purchase%28confirmin,options%29-6dj6y.md)
   Initiates a purchase for the product with the App Store and displays the confirmation sheet.
-- [func purchase(confirmIn: UIViewController, options: Set<Product.PurchaseOption>) async throws -> Product.PurchaseResult](product/purchase(confirmin:options:)-3bivf.md)
+- [func purchase(confirmIn: UIViewController, options: Set<Product.PurchaseOption>) async throws -> Product.PurchaseResult](./product/purchase%28confirmin,options%29-3bivf.md)
   Processes a purchase for the product.
-- [func purchase(confirmIn: NSWindow, options: Set<Product.PurchaseOption>) async throws -> Product.PurchaseResult](product/purchase(confirmin:options:)-8eai6.md)
+- [func purchase(confirmIn: NSWindow, options: Set<Product.PurchaseOption>) async throws -> Product.PurchaseResult](./product/purchase%28confirmin,options%29-8eai6.md)
   Processes a purchase for the product.
-- [Product.PurchaseOption](product/purchaseoption.md)
+- [Product.PurchaseOption](./product/purchaseoption.md)
   Optional settings for a product purchase that add account information, purchase details, and offers, or that specify behaviors.
-- [Product.PurchaseResult](product/purchaseresult.md)
+- [Product.PurchaseResult](./product/purchaseresult.md)
   The result of a purchase.
-- [Product.PurchaseError](product/purchaseerror.md)
+- [Product.PurchaseError](./product/purchaseerror.md)
   Error information for product purchase errors.
 ### Receiving current entitlement information
-- [var currentEntitlements: Transaction.Transactions](product/currententitlements.md)
+- [var currentEntitlements: Transaction.Transactions](./product/currententitlements.md)
 ### Getting the latest transaction
-- [var latestTransaction: VerificationResult<Transaction>?](product/latesttransaction.md)
+- [var latestTransaction: VerificationResult<Transaction>?](./product/latesttransaction.md)
   The most recent transaction for the product.
 ### Getting subscription information
-- [let subscription: Product.SubscriptionInfo?](product/subscription.md)
+- [let subscription: Product.SubscriptionInfo?](./product/subscription.md)
   The subscription information for an auto-renewable subscripton.
-- [Product.SubscriptionInfo](product/subscriptioninfo.md)
+- [Product.SubscriptionInfo](./product/subscriptioninfo.md)
   Information about an auto-renewable subscription, such as its status, period, subscription group, and subscription offer details.
-- [Product.SubscriptionPeriod](product/subscriptionperiod.md)
+- [Product.SubscriptionPeriod](./product/subscriptionperiod.md)
   Values that represent the duration of time between subscription renewals.
-- [Product.SubscriptionOffer](product/subscriptionoffer.md)
+- [Product.SubscriptionOffer](./product/subscriptionoffer.md)
   Information about a subscription offer that you configure in App Store Connect.
-- [Product.SubscriptionInfo.Status](product/subscriptioninfo/status-swift.struct.md)
+- [Product.SubscriptionInfo.Status](./product/subscriptioninfo/status-swift.struct.md)
   The renewal status information for an auto-renewable subscription.
 ### Getting product identifiers and type
-- [let id: String](product/id.md)
+- [let id: String](./product/id.md)
   The unique product identifier.
-- [let type: Product.ProductType](product/type.md)
+- [let type: Product.ProductType](./product/type.md)
   The Apple In-App Purchase product type.
-- [Product.ProductType](product/producttype.md)
+- [Product.ProductType](./product/producttype.md)
   The types of Apple In-App Purchases.
 ### Getting Family Sharing status
-- [let isFamilyShareable: Bool](product/isfamilyshareable.md)
+- [let isFamilyShareable: Bool](./product/isfamilyshareable.md)
   A Boolean value that indicates whether the product is available for Family Sharing in App Store Connect.
 ### Managing promoted Apple In-App Purchases
-- [Product.PromotionInfo](product/promotioninfo.md)
+- [Product.PromotionInfo](./product/promotioninfo.md)
   Information about a promoted Apple In-App Purchase that customizes its order and visibility on the device.
 ### Loading products
-- [Product.CollectionTaskState](product/collectiontaskstate.md)
+- [Product.CollectionTaskState](./product/collectiontaskstate.md)
   The state of a task that loads a collection of products in the background.
-- [Product.TaskState](product/taskstate.md)
+- [Product.TaskState](./product/taskstate.md)
   The state of a task that loads a product in the background.
 ### Getting product info in JSON format
-- [var jsonRepresentation: Data](product/jsonrepresentation.md)
+- [var jsonRepresentation: Data](./product/jsonrepresentation.md)
   The JSON representation of the product information.
 ### Getting subscription relationship
-- [Product.SubscriptionRelationship](product/subscriptionrelationship.md)
+- [Product.SubscriptionRelationship](./product/subscriptionrelationship.md)
 ### Deprecated
-- [var currentEntitlement: VerificationResult<Transaction>?](product/currententitlement.md)
+- [var currentEntitlement: VerificationResult<Transaction>?](./product/currententitlement.md)
   The transaction that entitles the user to the product.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Implementing a store in your app using the StoreKit API](implementing-a-store-in-your-app-using-the-storekit-api.md)
+### Product and subscription information
+- [Implementing a store in your app using the StoreKit API](./implementing-a-store-in-your-app-using-the-storekit-api.md)
   Offer Apple In-App Purchases and manage entitlements using signed transactions and status information.
-- [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
+- [Supporting monthly subscriptions with a 12-month commitment](./supporting-monthly-subscriptions-with-a-12-month-commitment.md)
   Configure, merchandise, and grant access to a monthly subscription with a 12-month commitment.
-- [Managing the life cycle of monthly subscriptions with a 12-month commitment](managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment-.md)
+- [Managing the life cycle of monthly subscriptions with a 12-month commitment](./managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment.md)
   Handle renewals, cancellations, billing issues, refund requests, and price changes, and test subscriptions with a commitment plan.
-- [Product.SubscriptionInfo](product/subscriptioninfo.md)
+- [Product.SubscriptionInfo](./product/subscriptioninfo.md)
   Information about an auto-renewable subscription, such as its status, period, subscription group, and subscription offer details.
-- [typealias SubscriptionInfo](subscriptioninfo.md)
+- [typealias SubscriptionInfo](./subscriptioninfo.md)
   Information about an auto-renewable subscription.
-- [typealias SubscriptionStatus](subscriptionstatus.md)
+- [typealias SubscriptionStatus](./subscriptionstatus.md)
   Represents the renewal status information for an auto-renewable subscription.
 
 

@@ -1,7 +1,8 @@
 # nextUp
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The least representable value that compares greater than this value.
 

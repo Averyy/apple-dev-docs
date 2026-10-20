@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the File Provider extension that the user wants to suppress the user interaction.
@@ -15,6 +16,10 @@ Tells the File Provider extension that the user wants to suppress the user inter
 func setInteractionSuppressed(_ suppression: Bool, forIdentifier suppressionIdentifier: String)
 ```
 
+```objc
+- (void) setInteractionSuppressed:(BOOL) suppression forIdentifier:(NSString *) suppressionIdentifier;
+```
+
 ## Parameters
 
 - `suppression`: A Boolean value that indicates whether the user wants to suppress the specified user interaction.
@@ -22,7 +27,8 @@ func setInteractionSuppressed(_ suppression: Bool, forIdentifier suppressionIden
 
 ## See Also
 
-- [func isInteractionSuppressed(forIdentifier: String) -> Bool](nsfileprovideruserinteractionsuppressing/isinteractionsuppressed(foridentifier:).md)
+### Supressing Interactions
+- [func isInteractionSuppressed(forIdentifier: String) -> Bool](./isinteractionsuppressed%28foridentifier%29.md)
   Asks the File Provider extension if the user suppressed the specified interaction.
 
 

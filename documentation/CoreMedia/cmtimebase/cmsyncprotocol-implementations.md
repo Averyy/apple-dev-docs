@@ -1,11 +1,12 @@
 # CMSyncProtocol Implementations
 
-**Framework**: Core Media
+**Framework**: Core Media  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var time: CMTime](cmtimebase/time.md)
+- [var time: CMTime](./time.md)
   The current time.
 
 

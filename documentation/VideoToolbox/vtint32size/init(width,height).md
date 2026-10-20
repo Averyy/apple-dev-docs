@@ -1,7 +1,8 @@
 # init(width:height:)
 
 **Framework**: Video Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a size with a width and height.
 
@@ -26,7 +27,8 @@ init(width: Int32, height: Int32)
 
 ## See Also
 
-- [init()](vtint32size/init.md)
+### Creating a Size
+- [init()](./init%28%29.md)
   Creates a size with a width and height of zero.
 
 

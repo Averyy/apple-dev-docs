@@ -1,7 +1,8 @@
 # title
 
 **Framework**: BrowserKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized title for a visited page.
 
@@ -15,17 +16,22 @@ A localized title for a visited page.
 var title: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * title;
+```
+
 ## See Also
 
-- [var dateOfLastVisit: Date](bebrowserdatahistoryvisit/dateoflastvisit.md)
+### Accessing visit properties
+- [var dateOfLastVisit: Date](./dateoflastvisit.md)
   The date of the person’s last page visit.
-- [var httpGet: Bool](bebrowserdatahistoryvisit/httpget.md)
+- [var httpGet: Bool](./httpget.md)
   A Boolean value that indicates whether the visit is an HTTP GET request.
-- [var loadedSuccessfully: Bool](bebrowserdatahistoryvisit/loadedsuccessfully.md)
+- [var loadedSuccessfully: Bool](./loadedsuccessfully.md)
   A Boolean value that indicates whether the page loads without errors.
-- [var url: URL](bebrowserdatahistoryvisit/url.md)
+- [var url: URL](./url.md)
   A URL for the visited page.
-- [var visitCount: Int](bebrowserdatahistoryvisit/visitcount.md)
+- [var visitCount: Int](./visitcount.md)
   A count of how many visits the page received.
 
 

@@ -1,7 +1,8 @@
 # allMetadata
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Every metadata value on this object, including fallbacks.
 

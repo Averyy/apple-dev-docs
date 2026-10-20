@@ -1,7 +1,8 @@
 # subcontinent
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Category representing a sub-continent, regions contained directly by a continent.
 

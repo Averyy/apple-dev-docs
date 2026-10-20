@@ -1,7 +1,8 @@
 # distance
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The step distance, in meters.
 
@@ -10,7 +11,7 @@ The step distance, in meters.
 
 ## Declaration
 
-```swift
+```
 distance: number;
 ```
 
@@ -20,9 +21,10 @@ This property reflects the distance that the user covers while traveling along t
 
 ## See Also
 
-- [instructions](routestep/instructions.md)
+### Route step details
+- [instructions](./instructions.md)
   The written instructions for following the path that the step represents.
-- [transportType](routestep/transporttype.md)
+- [transportType](./transporttype.md)
   The transport type of the step.
 
 

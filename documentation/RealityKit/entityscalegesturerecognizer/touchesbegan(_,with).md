@@ -1,7 +1,8 @@
 # touchesBegan(_:with:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent to the gesture recognizer when one or more fingers touch down on the associated entity.
 
@@ -24,9 +25,10 @@ Sent to the gesture recognizer when one or more fingers touch down on the associ
 
 ## See Also
 
-- [var entity: (any HasCollision)?](entityscalegesturerecognizer/entity.md)
+### Using the recognizer
+- [var entity: (any HasCollision)?](./entity.md)
   The entity the receiver is associated with
-- [func canPrevent(UIGestureRecognizer) -> Bool](entityscalegesturerecognizer/canprevent(_:).md)
+- [func canPrevent(UIGestureRecognizer) -> Bool](./canprevent%28_%29.md)
 
 
 ---

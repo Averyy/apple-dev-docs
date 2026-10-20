@@ -1,7 +1,8 @@
 # backList
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of items that precede the current item.
 

@@ -1,7 +1,8 @@
 # bnns_graph_t
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The compiled graph object.
 
@@ -20,27 +21,32 @@ The compiled graph object.
 struct bnns_graph_t
 ```
 
+```c
+typedef struct { ... } bnns_graph_t;
+```
+
 ## Topics
 
 ### Initializing a graph
-- [init()](bnns_graph_t/init.md)
+- [init()](./bnns_graph_t/init%28%29.md)
   Creates an empty graph structure.
-- [init(data: UnsafeMutableRawPointer?, size: Int)](bnns_graph_t/init(data:size:).md)
+- [init(data: UnsafeMutableRawPointer?, size: Int)](./bnns_graph_t/init%28data,size%29.md)
   Creates a graph structure from the specified opaque graph object.
 ### Instance properties
-- [var data: UnsafeMutableRawPointer?](bnns_graph_t/data.md)
+- [var data: UnsafeMutableRawPointer?](./bnns_graph_t/data.md)
   A pointer to opaque graph object.
-- [var size: Int](bnns_graph_t/size.md)
+- [var size: Int](./bnns_graph_t/size.md)
   The size, in bytes, of the opaque graph object.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [func BNNSGraphCompileFromFile(UnsafePointer<CChar>, UnsafePointer<CChar>?, bnns_graph_compile_options_t) -> bnns_graph_t](bnnsgraphcompilefromfile(_:_:_:).md)
+### Compiling a graph object
+- [func BNNSGraphCompileFromFile(UnsafePointer<CChar>, UnsafePointer<CChar>?, bnns_graph_compile_options_t) -> bnns_graph_t](./bnnsgraphcompilefromfile%28_,_,_%29.md)
   Compiles a source mlmodelc file to a graph object.
 
 

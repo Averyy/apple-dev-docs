@@ -1,7 +1,8 @@
 # symbologies
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The barcode symbologies that the request detects in an image.
 
@@ -26,11 +27,12 @@ By default, a request scans for all symbologies. Specify a subset of symbologies
 
 ## See Also
 
-- [var supportedSymbologies: [BarcodeSymbology]](detectbarcodesrequest/supportedsymbologies.md)
+### Configuring a request
+- [var supportedSymbologies: [BarcodeSymbology]](./supportedsymbologies.md)
   The collection of barcode symbologies that the request can recognize.
-- [enum BarcodeSymbology](barcodesymbology.md)
+- [enum BarcodeSymbology](../barcodesymbology.md)
   The barcode symbologies that the framework detects.
-- [var coalescesCompositeSymbologies: Bool](detectbarcodesrequest/coalescescompositesymbologies.md)
+- [var coalescesCompositeSymbologies: Bool](./coalescescompositesymbologies.md)
   A Boolean value that indicates whether the request coalesces multiple codes into one.
 
 

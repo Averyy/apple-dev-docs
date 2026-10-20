@@ -1,7 +1,8 @@
 # isAliasFile
 
 **Framework**: Core Services  
-**Kind**: structdata
+**Kind**: structdata  
+**Role**: Type Property
 
 Item is an alias file (includes symbolic links).
 

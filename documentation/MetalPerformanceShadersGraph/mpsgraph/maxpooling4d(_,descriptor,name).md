@@ -1,7 +1,8 @@
 # maxPooling4D(_:descriptor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a 4D max-pooling operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a 4D max-pooling operation and returns the result tensor.
 
 ```swift
 func maxPooling4D(_ source: MPSGraphTensor, descriptor: MPSGraphPooling4DOpDescriptor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) maxPooling4DWithSourceTensor:(MPSGraphTensor *) source descriptor:(MPSGraphPooling4DOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
 #### Return Value

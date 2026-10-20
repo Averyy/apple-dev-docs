@@ -14,8 +14,8 @@ iOS continues to support dedicated Exposure Notifications apps, and a PHA can of
 
 To support Exposure Notifications Express, a PHA must deploy two different types of servers:
 
-- **Test verification server**: Validates positive diagnoses during key upload. For more information, see [`Setting Up an Exposure Notifications Express Test Verification Server`](setting-up-an-exposure-notifications-express-test-verification-server.md).
-- **Key server:** Handles key uploads and downloads. The same key server handles key upload and download for Exposure Notifications apps and Exposure Notifications Express. For more information, see [`Configuring a Key Server for Exposure Notifications Express`](configuring-a-key-server-for-exposure-notifications-express.md). For information on setting up a key server, see [`Setting Up a Key Server`](setting-up-a-key-server.md).
+- **Test verification server**: Validates positive diagnoses during key upload. For more information, see [Setting Up an Exposure Notifications Express Test Verification Server](./setting-up-an-exposure-notifications-express-test-verification-server.md).
+- **Key server:** Handles key uploads and downloads. The same key server handles key upload and download for Exposure Notifications apps and Exposure Notifications Express. For more information, see [Configuring a Key Server for Exposure Notifications Express](./configuring-a-key-server-for-exposure-notifications-express.md). For information on setting up a key server, see [Setting Up a Key Server](./setting-up-a-key-server.md).
 
 > **Note**:  Prior to the introduction of Exposure Notifications Express in iOS 13.7, the Exposure Notifications Key Server was referred to as the “Exposure Notifications Server” or the “EN Server”.
 
@@ -23,7 +23,7 @@ To support Exposure Notifications Express, a PHA must deploy two different types
 
 Exposure Notifications Express works by communicating with the test verification server and the key server at specific times in a defined process, as depicted in the figure below.
 
-![Diagram of the Exposure Notifications Express process with the actors in the steps listed in chronological order from left to right, including a PHA, a user, a test verification server, the user’s iPhone, and a key server. Underneath the icons depicting the actors is a chart of the steps the actors take with arrows indicating what direction information moves through the Exposure Notifications Express timeline.](/images/com.apple.exposurenotification/media-3680724@2x.png)
+![Diagram of the Exposure Notifications Express process with the actors in the steps listed in chronological order from left to right, including a PHA, a user, a test verification server, the user’s iPhone, and a key server. Underneath the icons depicting the actors is a chart of the steps the actors take with arrows indicating what direction information moves through the Exposure Notifications Express timeline.](https://developer.apple.com/tutorials/images/com.apple.exposurenotification/media-3680724@2x.png)
 
 Here are the steps involved with verifying and submitting a positive diagnosis with Exposure Notifications Express.
 
@@ -34,39 +34,40 @@ Here are the steps involved with verifying and submitting a positive diagnosis w
 5. The user enters the verification code or clicks the provided link to inform their iPhone of the positive diagnosis.
 6. The user’s iPhone contacts the test verification server to validate the verification code. If the code is valid, it receives back a long-term authentication token from the test verification server and stores it.
 7. If necessary, the user’s iPhone prompts the user for additional information.
-8. The user’s iPhone creates a hashed message authentication code (HMAC) calculated from the user’s exposure key data and sends it to the test verification server along with the user’s authentication token, receiving in return a certificate and additional per-key metadata. For more information on the HMAC calculation, see [`Public Health Authority Diagnosis Verification Protocol`](https://developer.apple.comhttps://github.com/google/exposure-notifications-server/blob/main/docs/design/verification_protocol.md).
+8. The user’s iPhone creates a hashed message authentication code (HMAC) calculated from the user’s exposure key data and sends it to the test verification server along with the user’s authentication token, receiving in return a certificate and additional per-key metadata. For more information on the HMAC calculation, see [Public Health Authority Diagnosis Verification Protocol](https://github.com/google/exposure-notifications-server/blob/main/docs/design/verification_protocol.md).
 9. The user’s iPhone validates the returned certificate and metadata and stores them.
 10. iPhone prompts the user for permission to submit their keys to the key server.
 11. If the user grants permission, their iPhone uploads their temporary exposure keys to the key server along with the authentication token, certificate, and metadata received from the test verification server.
 12. If the test verification server validates the uploaded keys, it adds them to its database and returns a revision token that can be used to upload a diagnosis change for the uploaded keys.
 
-The validated and uploaded keys are available for download by other devices to be used for on-device exposure detection. To look at a sample implementation of a key server that supports both Exposure Notifications Express as well as Exposure Notifications client apps, see [`Exposure Notifications Reference Key Server`](https://developer.apple.comhttps://github.com/google/exposure-notifications-server). To look at a sample implementation of a test verification server, see [`Exposure Notifications Verification System Reference Server`](https://developer.apple.comhttps://github.com/google/exposure-notifications-verification-server).
+The validated and uploaded keys are available for download by other devices to be used for on-device exposure detection. To look at a sample implementation of a key server that supports both Exposure Notifications Express as well as Exposure Notifications client apps, see [Exposure Notifications Reference Key Server](https://github.com/google/exposure-notifications-server). To look at a sample implementation of a test verification server, see [Exposure Notifications Verification System Reference Server](https://github.com/google/exposure-notifications-verification-server).
 
 ## Topics
 
 ### Server Configuration
-- [Setting Up an Exposure Notifications Express Test Verification Server](setting-up-an-exposure-notifications-express-test-verification-server.md)
+- [Setting Up an Exposure Notifications Express Test Verification Server](./setting-up-an-exposure-notifications-express-test-verification-server.md)
   Validate positive diagnoses for app-less exposure notifications.
-- [Configuring a Key Server for Exposure Notifications Express](configuring-a-key-server-for-exposure-notifications-express.md)
+- [Configuring a Key Server for Exposure Notifications Express](./configuring-a-key-server-for-exposure-notifications-express.md)
   Support exposure key upload and download for app-less exposure notifications.
 
 ## See Also
 
-- [Building an App to Notify Users of COVID-19 Exposure](building-an-app-to-notify-users-of-covid-19-exposure.md)
+### Essentials
+- [Building an App to Notify Users of COVID-19 Exposure](./building-an-app-to-notify-users-of-covid-19-exposure.md)
   Inform people when they may have been exposed to COVID-19.
-- [Setting Up a Key Server](setting-up-a-key-server.md)
+- [Setting Up a Key Server](./setting-up-a-key-server.md)
   Ensure that your server meets the requirements for supporting Exposure Notifications.
-- [class ENManager](enmanager.md)
+- [class ENManager](./enmanager.md)
   A class that manages exposure notifications.
-- [ENDeveloperRegion](../bundleresources/information-property-list/endeveloperregion.md)
+- [ENDeveloperRegion](../BundleResources/information-property-list/endeveloperregion.md)
   A string that specifies the region that the app supports.
-- [ENAPIVersion](../bundleresources/information-property-list/enapiversion.md)
+- [ENAPIVersion](../BundleResources/information-property-list/enapiversion.md)
   A number that specifies the version of the API to use.
-- [Changing Configuration Values Using the Server‑to‑Server API](changing-configuration-values-using-the-server-to-server-api.md)
+- [Changing Configuration Values Using the Server‑to‑Server API](./changing-configuration-values-using-the-server-to-server-api.md)
   Update Exposure Notifications configuration values from a Public Health Authority’s server.
-- [Testing Exposure Notifications Apps in iOS 13.7 and Later](testing-exposure-notifications-apps-in-ios-13-7-and-later.md)
+- [Testing Exposure Notifications Apps in iOS 13.7 and Later](./testing-exposure-notifications-apps-in-ios-13-7-and-later.md)
   Perform end-to-end validation of Exposure Notifications apps on a device by manually loading configuration files.
-- [Supporting Exposure Notifications in iOS 12.5](supporting-exposure-notifications-in-ios-12-5.md)
+- [Supporting Exposure Notifications in iOS 12.5](./supporting-exposure-notifications-in-ios-12-5.md)
   Prepare your Exposure Notifications app to run on a previous version of iOS.
 
 

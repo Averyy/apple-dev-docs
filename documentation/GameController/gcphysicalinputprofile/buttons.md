@@ -1,7 +1,8 @@
 # buttons
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The buttons in the profile as key-value pairs for lookup by name.
 
@@ -19,27 +20,32 @@ The buttons in the profile as key-value pairs for lookup by name.
 var buttons: [String : GCControllerButtonInput] { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSDictionary<NSString *,GCControllerButtonInput *> * buttons;
+```
+
 #### Discussion
 
-Use the [`GCInputXboxPaddleOne`](gcinputxboxpaddleone-offv.md) constant to get the P1 paddle button for an Xbox controller.
+Use the [`GCInputXboxPaddleOne`](../gcinputxboxpaddleone-offv.md) constant to get the P1 paddle button for an Xbox controller.
 
 ```swift
 button = physicalInputProfile.buttons[GCInputXboxPaddleOne]
 ```
 
-For more button names, see [`Extended gamepad input names`](extended-gamepad-input-names.md) and [`Xbox controller input names`](xbox-controller-input-names.md).
+For more button names, see [Extended gamepad input names](../extended-gamepad-input-names.md) and [Xbox controller input names](../xbox-controller-input-names.md).
 
 ## See Also
 
-- [var elements: [String : GCControllerElement]](gcphysicalinputprofile/elements.md)
+### Accessing elements by name or key
+- [var elements: [String : GCControllerElement]](./elements.md)
   The elements in the profile as key-value pairs for lookup by name.
-- [var axes: [String : GCControllerAxisInput]](gcphysicalinputprofile/axes.md)
+- [var axes: [String : GCControllerAxisInput]](./axes.md)
   The axes in the profile as key-value pairs for lookup by name.
-- [var dpads: [String : GCControllerDirectionPad]](gcphysicalinputprofile/dpads.md)
+- [var dpads: [String : GCControllerDirectionPad]](./dpads.md)
   The directional pads in the profile as key-value pairs for lookup by name.
-- [var touchpads: [String : GCControllerTouchpad]](gcphysicalinputprofile/touchpads.md)
+- [var touchpads: [String : GCControllerTouchpad]](./touchpads.md)
   The touchpads in the profile as key-value pairs for lookup by name.
-- [subscript(String) -> GCControllerElement?](gcphysicalinputprofile/subscript(_:).md)
+- [subscript(String) -> GCControllerElement?](./subscript%28_%29.md)
   Returns the element that the key specifies.
 
 

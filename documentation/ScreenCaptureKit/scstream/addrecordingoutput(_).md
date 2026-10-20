@@ -1,7 +1,8 @@
 # addRecordingOutput(_:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -17,10 +18,15 @@
 func addRecordingOutput(_ recordingOutput: SCRecordingOutput) throws
 ```
 
+```objc
+- (BOOL) addRecordingOutput:(SCRecordingOutput *) recordingOutput error:(NSError **) error;
+```
+
 ## See Also
 
-- [func removeRecordingOutput(SCRecordingOutput) throws](scstream/removerecordingoutput(_:).md)
-- [class SCRecordingOutput](screcordingoutput.md)
+### Adding and removing recording output
+- [func removeRecordingOutput(SCRecordingOutput) throws](./removerecordingoutput%28_%29.md)
+- [class SCRecordingOutput](../screcordingoutput.md)
 
 
 ---

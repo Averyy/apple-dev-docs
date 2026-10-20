@@ -1,9 +1,10 @@
 # NSSegmentedControl.Style
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-The following constants specify the visual style used to display the segmented control. They are used by [`segmentStyle`](nssegmentedcontrol/segmentstyle.md).
+The following constants specify the visual style used to display the segmented control. They are used by [`segmentStyle`](./segmentstyle.md).
 
 **Availability**:
 - macOS 10.5+
@@ -14,48 +15,53 @@ The following constants specify the visual style used to display the segmented c
 enum Style
 ```
 
+```c
+enum NSSegmentStyle : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSSegmentedControl.Style.automatic](nssegmentedcontrol/style/automatic.md)
+- [NSSegmentedControl.Style.automatic](./style/automatic.md)
   The appearance of the segmented control is automatically determined based on the type of window in which the control is displayed and the position within the window.
-- [NSSegmentedControl.Style.rounded](nssegmentedcontrol/style/rounded.md)
+- [NSSegmentedControl.Style.rounded](./style/rounded.md)
   The control is displayed using the rounded style.
-- [NSSegmentedControl.Style.texturedRounded](nssegmentedcontrol/style/texturedrounded.md)
-  The control is displayed using the textured rounded style. In macOS 10.7 and later, this style uses the artwork defined for [`NSSegmentedControl.Style.texturedSquare`](nssegmentedcontrol/style/texturedsquare.md), so you should specify [`NSSegmentedControl.Style.texturedSquare`](nssegmentedcontrol/style/texturedsquare.md) instead.
-- [NSSegmentedControl.Style.roundRect](nssegmentedcontrol/style/roundrect.md)
+- [NSSegmentedControl.Style.texturedRounded](./style/texturedrounded.md)
+  The control is displayed using the textured rounded style. In macOS 10.7 and later, this style uses the artwork defined for [`NSSegmentedControl.Style.texturedSquare`](./style/texturedsquare.md), so you should specify [`NSSegmentedControl.Style.texturedSquare`](./style/texturedsquare.md) instead.
+- [NSSegmentedControl.Style.roundRect](./style/roundrect.md)
   The control is displayed using the round rect style.
-- [NSSegmentedControl.Style.texturedSquare](nssegmentedcontrol/style/texturedsquare.md)
+- [NSSegmentedControl.Style.texturedSquare](./style/texturedsquare.md)
   The control is displayed using the textured square style.
-- [NSSegmentedControl.Style.capsule](nssegmentedcontrol/style/capsule.md)
-  The control is displayed using the capsule style. In macOS 10.7 and later, this style uses the artwork defined for [`NSSegmentedControl.Style.texturedSquare`](nssegmentedcontrol/style/texturedsquare.md), so you should specify [`NSSegmentedControl.Style.texturedSquare`](nssegmentedcontrol/style/texturedsquare.md) instead.
-- [NSSegmentedControl.Style.smallSquare](nssegmentedcontrol/style/smallsquare.md)
+- [NSSegmentedControl.Style.capsule](./style/capsule.md)
+  The control is displayed using the capsule style. In macOS 10.7 and later, this style uses the artwork defined for [`NSSegmentedControl.Style.texturedSquare`](./style/texturedsquare.md), so you should specify [`NSSegmentedControl.Style.texturedSquare`](./style/texturedsquare.md) instead.
+- [NSSegmentedControl.Style.smallSquare](./style/smallsquare.md)
   The control is displayed using the small square style.
-- [NSSegmentedControl.Style.separated](nssegmentedcontrol/style/separated.md)
+- [NSSegmentedControl.Style.separated](./style/separated.md)
   The segments in the control are displayed very close to each other but not touching. For example, Safari in macOS 10.10 and later uses this style for the previous and next page segmented control.
 ### Initializers
-- [init?(rawValue: Int)](nssegmentedcontrol/style/init(rawvalue:).md)
+- [init?(rawValue: Int)](./style/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var trackingMode: NSSegmentedControl.SwitchTracking](nssegmentedcontrol/trackingmode.md)
+### Specifying the segment behavior
+- [var trackingMode: NSSegmentedControl.SwitchTracking](./trackingmode.md)
   The type of tracking behavior the control exhibits.
-- [NSSegmentedControl.SwitchTracking](nssegmentedcontrol/switchtracking.md)
+- [NSSegmentedControl.SwitchTracking](./switchtracking.md)
   Constants that specify the type of tracking behavior a segmented control exhibits.
-- [var segmentStyle: NSSegmentedControl.Style](nssegmentedcontrol/segmentstyle.md)
+- [var segmentStyle: NSSegmentedControl.Style](./segmentstyle.md)
   The visual style used to display the control.
-- [var role: NSSegmentedControl.Role](nssegmentedcontrol/role-swift.property.md)
-- [NSSegmentedControl.Role](nssegmentedcontrol/role-swift.enum.md)
+- [var role: NSSegmentedControl.Role](./role-swift.property.md)
+- [NSSegmentedControl.Role](./role-swift.enum.md)
 
 
 ---

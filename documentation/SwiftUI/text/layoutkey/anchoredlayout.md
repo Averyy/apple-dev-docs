@@ -1,7 +1,8 @@
 # Text.LayoutKey.AnchoredLayout
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The layout of one text view, together with an anchor for the position of that view.
 
@@ -22,7 +23,7 @@ struct AnchoredLayout
 
 #### Overview
 
-[`Text.LayoutKey`](text/layoutkey.md) collects one of these values for every text view in the subtree you query. Read [`layout`](text/layoutkey/anchoredlayout/layout.md) to inspect the lines, runs, and glyphs the text produced, and resolve [`origin`](text/layoutkey/anchoredlayout/origin.md) in a [`GeometryProxy`](geometryproxy.md) to place something of your own next to the text:
+[`Text.LayoutKey`](../layoutkey.md) collects one of these values for every text view in the subtree you query. Read [`layout`](./anchoredlayout/layout.md) to inspect the lines, runs, and glyphs the text produced, and resolve [`origin`](./anchoredlayout/origin.md) in a [`GeometryProxy`](../../geometryproxy.md) to place something of your own next to the text:
 
 ```swift
 ZStack {
@@ -43,15 +44,15 @@ The anchor matters because a text view reports its layout in its own coordinate 
 ## Topics
 
 ### Instance Properties
-- [var layout: Text.Layout](text/layoutkey/anchoredlayout/layout.md)
+- [var layout: Text.Layout](./anchoredlayout/layout.md)
   The text layout value.
-- [var origin: Anchor<CGPoint>](text/layoutkey/anchoredlayout/origin.md)
+- [var origin: Anchor<CGPoint>](./anchoredlayout/origin.md)
   The origin of the text layout.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../../Swift/equatable.md)
 
 
 ---

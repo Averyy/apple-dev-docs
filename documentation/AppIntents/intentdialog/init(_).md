@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
 
@@ -11,7 +12,7 @@ The text you want the system to display, or speak, when requesting a value, aski
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -28,11 +29,12 @@ Parameters:
 
 ## See Also
 
-- [init(full: LocalizedStringResource, supporting: LocalizedStringResource)](intentdialog/init(full:supporting:).md)
+### Creating a dialog
+- [init(full: LocalizedStringResource, supporting: LocalizedStringResource)](./init%28full,supporting%29.md)
   The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
-- [init(full: LocalizedStringResource, systemImageName: String)](intentdialog/init(full:systemimagename:).md)
+- [init(full: LocalizedStringResource, systemImageName: String)](./init%28full,systemimagename%29.md)
   The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
-- [init(full: LocalizedStringResource, supporting: LocalizedStringResource, systemImageName: String)](intentdialog/init(full:supporting:systemimagename:).md)
+- [init(full: LocalizedStringResource, supporting: LocalizedStringResource, systemImageName: String)](./init%28full,supporting,systemimagename%29.md)
   The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
 
 

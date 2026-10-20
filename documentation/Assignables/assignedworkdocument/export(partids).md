@@ -1,7 +1,8 @@
 # export(partIDs:)
 
 **Framework**: Assignables  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Given a set of part identifiers, return a dictionary of part ID to data objects for the requested parts.
 
@@ -9,7 +10,9 @@ Given a set of part identifiers, return a dictionary of part ID to data objects 
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
+
+> **Deprecated**: Use exportParts(identifiedBy:)
 
 ## Declaration
 
@@ -27,7 +30,8 @@ A dictionary of part ID to URLs of the data for the requested parts.
 
 ## See Also
 
-- [func exportParts(identifiedBy: [AssignedWorkDocument.PartID]) async throws -> [AssignedWorkDocument.PartID : MergeablePartData]](assignedworkdocument/exportparts(identifiedby:).md)
+### Exporting the parts
+- [func exportParts(identifiedBy: [AssignedWorkDocument.PartID]) async throws -> [AssignedWorkDocument.PartID : MergeablePartData]](./exportparts%28identifiedby%29.md)
   Given a set of part identifiers, return a dictionary of part ID to part data.
 
 

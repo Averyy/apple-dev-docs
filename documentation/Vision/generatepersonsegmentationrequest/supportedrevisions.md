@@ -1,7 +1,8 @@
 # supportedRevisions
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of revisions the request supports.
 
@@ -22,9 +23,10 @@ static let supportedRevisions: [GeneratePersonSegmentationRequest.Revision]
 
 ## See Also
 
-- [let revision: GeneratePersonSegmentationRequest.Revision](generatepersonsegmentationrequest/revision-swift.property.md)
+### Getting the revision
+- [let revision: GeneratePersonSegmentationRequest.Revision](./revision-swift.property.md)
   The algorithm or implementation the request uses.
-- [GeneratePersonSegmentationRequest.Revision](generatepersonsegmentationrequest/revision-swift.enum.md)
+- [GeneratePersonSegmentationRequest.Revision](./revision-swift.enum.md)
   A type that describes the algorithm or implementation that the request performs.
 
 

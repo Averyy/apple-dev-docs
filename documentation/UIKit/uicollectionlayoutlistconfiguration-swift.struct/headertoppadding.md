@@ -1,7 +1,8 @@
 # headerTopPadding
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of padding above each section header.
 
@@ -10,7 +11,7 @@ The amount of padding above each section header.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,13 +25,14 @@ The default value is `nil`, which indicates automatic padding.
 
 ## See Also
 
-- [var headerMode: UICollectionLayoutListConfiguration.HeaderMode](uicollectionlayoutlistconfiguration-swift.struct/headermode-swift.property.md)
+### Configuring headers and footers
+- [var headerMode: UICollectionLayoutListConfiguration.HeaderMode](./headermode-swift.property.md)
   The type of header to use for the list.
-- [var footerMode: UICollectionLayoutListConfiguration.FooterMode](uicollectionlayoutlistconfiguration-swift.struct/footermode-swift.property.md)
+- [var footerMode: UICollectionLayoutListConfiguration.FooterMode](./footermode-swift.property.md)
   The type of footer to use for the list.
-- [UICollectionLayoutListConfiguration.HeaderMode](uicollectionlayoutlistconfiguration-swift.struct/headermode-swift.enum.md)
+- [UICollectionLayoutListConfiguration.HeaderMode](./headermode-swift.enum.md)
   Constants that describe the list’s header mode.
-- [UICollectionLayoutListConfiguration.FooterMode](uicollectionlayoutlistconfiguration-swift.struct/footermode-swift.enum.md)
+- [UICollectionLayoutListConfiguration.FooterMode](./footermode-swift.enum.md)
   Constants that describe the list’s footer mode.
 
 

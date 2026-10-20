@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Return the task’s name, if it was set during its creation.
 
@@ -19,6 +20,8 @@ Return the task’s name, if it was set during its creation.
 ```swift
 var name: String? { get }
 ```
+
+Available when `Success` conforms to `Sendable` and `Failure` conforms to `Error`.
 
 
 ---

@@ -1,7 +1,8 @@
 # PKPushType
 
 **Framework**: PushKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants reflecting the push types you want to support.
 
@@ -19,30 +20,35 @@ Constants reflecting the push types you want to support.
 struct PKPushType
 ```
 
+```c
+typedef NSString * PKPushType;
+```
+
 ## Topics
 
 ### Notification Types
-- [static let complication: PKPushType](pkpushtype/complication.md)
+- [static let complication: PKPushType](./pkpushtype/complication.md)
   A push type for watchOS complications.
-- [static let fileProvider: PKPushType](pkpushtype/fileprovider.md)
+- [static let fileProvider: PKPushType](./pkpushtype/fileprovider.md)
   A push type for file provider updates.
-- [static let voIP: PKPushType](pkpushtype/voip.md)
+- [static let voIP: PKPushType](./pkpushtype/voip.md)
   A push type for Voice-over-IP (VoIP) call invitations.
 ### Initializers
-- [init(rawValue: String)](pkpushtype/init(rawvalue:).md)
+- [init(rawValue: String)](./pkpushtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Responding to VoIP Notifications from PushKit](responding-to-voip-notifications-from-pushkit.md)
+### Push Types
+- [Responding to VoIP Notifications from PushKit](./responding-to-voip-notifications-from-pushkit.md)
   Receive incoming Voice-over-IP (VoIP) push notifications and use them to display the system call interface to the user.
 
 

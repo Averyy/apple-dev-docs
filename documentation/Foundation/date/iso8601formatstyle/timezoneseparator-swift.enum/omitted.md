@@ -1,7 +1,8 @@
 # Date.ISO8601FormatStyle.TimeZoneSeparator.omitted
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies no separator between the time and time zone in an ISO 8601 date format style.
 
@@ -26,7 +27,8 @@ The `rawValue` of `omitted` is an empty string (””).
 
 ## See Also
 
-- [Date.ISO8601FormatStyle.TimeZoneSeparator.colon](date/iso8601formatstyle/timezoneseparator-swift.enum/colon.md)
+### Specifying ISO 8601 Format Style Time Zone Separators
+- [Date.ISO8601FormatStyle.TimeZoneSeparator.colon](./colon.md)
   Specifies a colon character separating the time and time zone in an ISO 8601 date format style.
 
 

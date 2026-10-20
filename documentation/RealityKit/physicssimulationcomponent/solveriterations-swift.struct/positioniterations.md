@@ -1,7 +1,8 @@
 # positionIterations
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of position iterations the solver performs.
 

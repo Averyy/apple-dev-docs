@@ -1,7 +1,8 @@
 # scaleTransform
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var scaleTransform: UnsafePointer<MPSScaleTransform>? { get set }
+```
+
+```objc
+@property (nonatomic, readwrite, nullable) const MPSScaleTransform * scaleTransform;
 ```
 
 

@@ -1,26 +1,27 @@
 # Overriding the default USB video class extension
 
-**Framework**: Core Media I/O
+**Framework**: Core Media I/O  
+**Role**: Article
 
 Create a simple DriverKit extension to override the default driver-matching behavior for USB devices.
 
 #### Overview
 
-Starting in macOS 12.3, the operating system provides a class-compliant Core Media I/O (CMIO) extension that enables the use of USB cameras and other video capture devices. When you connect a USB camera, the system finds its default driver and connects it with the camera. To override the system’s default matching behavior so that you can load a custom CMIO extension instead, create a simple [`DriverKit`](https://developer.apple.com/documentation/driverkit) extension.
+Starting in macOS 12.3, the operating system provides a class-compliant Core Media I/O (CMIO) extension that enables the use of USB cameras and other video capture devices. When you connect a USB camera, the system finds its default driver and connects it with the camera. To override the system’s default matching behavior so that you can load a custom CMIO extension instead, create a simple [DriverKit](../DriverKit/DriverKit.md) extension.
 
-##### Create a Driverkit Extension
+##### Create a DriverKit extension
 
 In a standalone Xcode project, or as a target within an existing project, create a new DriverKit extension. In Xcode’s menu, select File > New and choose either the Project or Target menu items as appropriate. In the dialog that appears, select the DriverKit tab and the Driver template, and click the Next button.
 
-![An Xcode New Project dialog. At the top-left of the dialog is a label with the value Choose a template for your new project. Below the label shows a row of tabs, with the DriverKit tab selected. Below the tab bar shows the Driver template selected. Along the bottom of the dialog are three buttons. The left-most button has the title Cancel. The two right-most buttons have the titles Previous and Next, respectively. The Previous button is in a disabled state, and the Next button is in a highlighted state.](/images/com.apple.coremediaio/media-4029886@2x.png)
+![An Xcode New Project dialog. At the top-left of the dialog is a label with the value Choose a template for your new project. Below the label shows a row of tabs, with the DriverKit tab selected. Below the tab bar shows the Driver template selected. Along the bottom of the dialog are three buttons. The left-most button has the title Cancel. The two right-most buttons have the titles Previous and Next, respectively. The Previous button is in a disabled state, and the Next button is in a highlighted state.](https://developer.apple.com/tutorials/images/com.apple.coremediaio/media-4029886@2x.png)
 
 In the dialog that follows, give the driver an appropriate Product Name and click the Finish button to create it.
 
 The default IOKit interface generator (`.iig`) and C++ implementation files that the template creates provide the sufficient implementation for your driver. The driver is effectively codeless, but the system requires a minimal binary for entitlement purposes.
 
-##### Configure the Infoplist File
+##### Configure the Info.plist file
 
-Specify your matching parameters as one or more entries in the [`IOKitPersonalities`](https://developer.apple.com/documentation/bundleresources/information-property-list/iokitpersonalities) dictionary inside the DriverKit extension’s `Info.plist` file. The following example shows the standard configuration to provide within this file.
+Specify your matching parameters as one or more entries in the [`IOKitPersonalities`](../BundleResources/information-property-list/iokitpersonalities.md) dictionary inside the DriverKit extension’s `Info.plist` file. The following example shows the standard configuration to provide within this file.
 
 ```swift
 <key>IOKitPersonalities</key>
@@ -60,19 +61,20 @@ Specify your matching parameters as one or more entries in the [`IOKitPersonalit
 </dict>
 ```
 
-Set [`IOUserClass`](https://developer.apple.com/documentation/bundleresources/information-property-list/iouserclass) and [`IOUserServerName`](https://developer.apple.com/documentation/bundleresources/information-property-list/iouserservername) values as appropriate for your newly created extension. Set a high `IOProbeScore` value to give priority to your driver, and set the identifiers of the vendor and product to match. In the `IOProviderMergeProperties`, specify the identifier of your custom CMIO extension to load in place of the default driver.
+Set [`IOUserClass`](../BundleResources/information-property-list/iouserclass.md) and [`IOUserServerName`](../BundleResources/information-property-list/iouserservername.md) values as appropriate for your newly created extension. Set a high `IOProbeScore` value to give priority to your driver, and set the identifiers of the vendor and product to match. In the `IOProviderMergeProperties`, specify the identifier of your custom CMIO extension to load in place of the default driver.
 
-With the configuration of your DriverKit extension complete, refer to [`Installing System Extensions and Drivers`](https://developer.apple.com/documentation/systemextensions/installing-system-extensions-and-drivers) for information on how to package and install your extension.
+With the configuration of your DriverKit extension complete, refer to [Installing System Extensions and Drivers](../SystemExtensions/installing-system-extensions-and-drivers.md) for information on how to package and install your extension.
 
 ## See Also
 
-- [Creating a camera extension with Core Media I/O](creating-a-camera-extension-with-core-media-i-o.md)
+### Providers
+- [Creating a camera extension with Core Media I/O](./creating-a-camera-extension-with-core-media-i-o.md)
   Build high-performance camera drivers that are secure and simple to deploy.
-- [class CMIOExtensionProvider](cmioextensionprovider.md)
+- [class CMIOExtensionProvider](./cmioextensionprovider.md)
   An object that manages device connections for a provider.
-- [protocol CMIOExtensionProviderSource](cmioextensionprovidersource.md)
+- [protocol CMIOExtensionProviderSource](./cmioextensionprovidersource.md)
   A protocol for objects that act as provider sources.
-- [class CMIOExtensionProviderProperties](cmioextensionproviderproperties.md)
+- [class CMIOExtensionProviderProperties](./cmioextensionproviderproperties.md)
   An object that manages the properties of an extension provider.
 
 

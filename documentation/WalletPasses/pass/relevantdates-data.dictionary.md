@@ -1,7 +1,8 @@
 # Pass.RelevantDates
 
 **Framework**: Wallet Passes  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that represents a date interval that the system uses to show a relevant pass.
 
@@ -12,31 +13,36 @@ An object that represents a date interval that the system uses to show a relevan
 
 ## Declaration
 
-```swift
+```
 object Pass.RelevantDates
 ```
 
 ## Mentions
 
-- [Creating a poster event pass using semantic tags](creating-an-event-pass-using-semantic-tags.md)
+- [Creating a poster event pass using semantic tags](../creating-an-event-pass-using-semantic-tags.md)
 
 #### Discussion
 
-> **Note**:  The values need to be a complete dates that include hours and minutes, and may optionally include seconds. For information about the ISO 8601 timestamp format, see [`Time and Date Formats`](https://developer.apple.comhttp://www.w3.org/TR/NOTE-datetime) on the W3C website.
+> **Note**:  The values need to be a complete dates that include hours and minutes, and may optionally include seconds. For information about the ISO 8601 timestamp format, see [Time and Date Formats](http://www.w3.org/TR/NOTE-datetime) on the W3C website.
 
 ## Properties
 
-- `date` (ISO 8601 date as string): The date and time when the pass becomes relevant. Wallet automatically calculates a relevancy interval from this date.
-- `endDate` (ISO 8601 date as string): The date and time for the pass relevancy interval to end. Required when providing `startDate`.
+- `date` (ISO 8601 date as string): The date and time when the pass becomes relevant.
+
+  Wallet automatically calculates a relevancy interval from this date.
+- `endDate` (ISO 8601 date as string): The date and time for the pass relevancy interval to end.
+
+  Required when providing `startDate`.
 - `startDate` (ISO 8601 date as string): The date and time for the pass relevancy interval to begin.
 
 ## See Also
 
-- [Showing a Pass on the Lock Screen](showing-a-pass-on-the-lock-screen.md)
+### Adding relevance
+- [Showing a Pass on the Lock Screen](../showing-a-pass-on-the-lock-screen.md)
   Add information to your pass so the system can display it on the Lock Screen at a relevant time and place.
-- [object Pass.Locations](pass/locations-data.dictionary.md)
+- [object Pass.Locations](./locations-data.dictionary.md)
   An object that represents a location that the system uses to show a relevant pass.
-- [object Pass.Beacons](pass/beacons-data.dictionary.md)
+- [object Pass.Beacons](./beacons-data.dictionary.md)
   An object that represents the identifier of a Bluetooth Low Energy beacon the system uses to show a relevant pass.
 
 

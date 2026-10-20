@@ -1,7 +1,8 @@
 # recipients
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The players to invite to the match.
 
@@ -20,24 +21,29 @@ The players to invite to the match.
 var recipients: [GKPlayer]? { get set }
 ```
 
+```objc
+@property (retain, nullable) NSArray<GKPlayer *> * recipients;
+```
+
 ## Mentions
 
-- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
-- [Finding players using matchmaking rules](finding-players-using-matchmaking-rules.md)
-- [Finding players with similar skill levels](finding-players-with-similar-skill-levels.md)
-- [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
+- [Finding multiple players for a game](../finding-multiple-players-for-a-game.md)
+- [Finding players using matchmaking rules](../finding-players-using-matchmaking-rules.md)
+- [Finding players with similar skill levels](../finding-players-with-similar-skill-levels.md)
+- [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
 #### Discussion
 
-If this property is non-`nil`, GameKit invites the specified players. GameKit doesn’t use automatch to fill player slots, and ignores the [`maxPlayers`](gkmatchrequest/maxplayers.md) and [`minPlayers`](gkmatchrequest/minplayers.md) properties. The default value is `nil`.
+If this property is non-`nil`, GameKit invites the specified players. GameKit doesn’t use automatch to fill player slots, and ignores the [`maxPlayers`](./maxplayers.md) and [`minPlayers`](./minplayers.md) properties. The default value is `nil`.
 
 ## See Also
 
-- [var inviteMessage: String?](gkmatchrequest/invitemessage.md)
+### Inviting players
+- [var inviteMessage: String?](./invitemessage.md)
   The message sent to other players when the local player invites them to join a match.
-- [var recipientResponseHandler: ((GKPlayer, GKInviteRecipientResponse) -> Void)?](gkmatchrequest/recipientresponsehandler.md)
+- [var recipientResponseHandler: ((GKPlayer, GKInviteRecipientResponse) -> Void)?](./recipientresponsehandler.md)
   A method that handles when a player responds to an invitation to join a match.
-- [enum GKInviteRecipientResponse](gkinviterecipientresponse.md)
+- [enum GKInviteRecipientResponse](../gkinviterecipientresponse.md)
   A player’s response to an invitation to join a match.
 
 

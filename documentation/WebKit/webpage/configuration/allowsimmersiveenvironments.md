@@ -1,7 +1,8 @@
 # allowsImmersiveEnvironments
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether website immersive environments are allowed.
 
@@ -23,9 +24,10 @@ The default value is `false`.
 
 ## See Also
 
-- [WebPage.ImmersiveEnvironment](webpage/immersiveenvironment.md)
+### Immersive environments
+- [WebPage.ImmersiveEnvironment](../immersiveenvironment.md)
   An object representing a website-provided immersive environment that is ready for presentation.
-- [struct WebViewImmersiveEnvironmentView](webviewimmersiveenvironmentview.md)
+- [struct WebViewImmersiveEnvironmentView](../../webviewimmersiveenvironmentview.md)
   A SwiftUI view that renders a specific website-provided immersive environment.
 
 

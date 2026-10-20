@@ -1,7 +1,8 @@
 # operationOutsideApplication
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The drop operation for drops outside the source application.
 

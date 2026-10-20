@@ -1,7 +1,8 @@
 # areasOfInterest
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of common names of the area in which the place resides.
 
@@ -10,13 +11,13 @@ An array of common names of the area in which the place resides.
 
 ## Declaration
 
-```swift
+```
 areasOfInterest: string[] | null;
 ```
 
 #### Discussion
 
-For example, the autocompletion results for the [`areasOfInterest`](searchautocompleteresult/areasofinterest.md) for Golden Gate Park in San Francisco, CA include `["Lindley Meadow", "Golden Gate Park"]`.
+For example, the autocompletion results for the [`areasOfInterest`](./areasofinterest.md) for Golden Gate Park in San Francisco, CA include `["Lindley Meadow", "Golden Gate Park"]`.
 
 
 ---

@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct fs_snapshot_mount_args {
     ...
 };
@@ -17,8 +17,8 @@ struct fs_snapshot_mount_args {
 ## Topics
 
 ### Instance Properties
-- [sm_cnp](fs_snapshot_mount_args/1646272-sm_cnp.md)
-- [sm_mp](fs_snapshot_mount_args/1646280-sm_mp.md)
+- [sm_cnp](./fs_snapshot_mount_args/api-1646272-sm_cnp.md)
+- [sm_mp](./fs_snapshot_mount_args/api-1646280-sm_mp.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # setDelegate(_:queue:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the delegate and a dispatch queue on which the delegate is called.
 
@@ -20,6 +21,10 @@ Sets the delegate and a dispatch queue on which the delegate is called.
 func setDelegate(_ delegate: (any AVPlayerItemMetadataOutputPushDelegate)?, queue delegateQueue: dispatch_queue_t?)
 ```
 
+```objc
+- (void) setDelegate:(id<AVPlayerItemMetadataOutputPushDelegate>) delegate queue:(dispatch_queue_t) delegateQueue;
+```
+
 #### Discussion
 
 You specify the metadata delegate, and a dispatch queue on which it will be called, to be notified as new metadata is encountered in the source media.
@@ -28,18 +33,19 @@ You specify the metadata delegate, and a dispatch queue on which it will be call
 
 ## Parameters
 
-- `delegate`: An object conforming to [`AVPlayerItemMetadataOutputPushDelegate`](avplayeritemmetadataoutputpushdelegate.md) protocol.
+- `delegate`: An object conforming to [`AVPlayerItemMetadataOutputPushDelegate`](../avplayeritemmetadataoutputpushdelegate.md) protocol.
 - `delegateQueue`: A dispatch queue on which all delegate methods will be called.
 
 ## See Also
 
-- [var advanceIntervalForDelegateInvocation: TimeInterval](avplayeritemmetadataoutput/advanceintervalfordelegateinvocation.md)
+### Configuring the delegate
+- [var advanceIntervalForDelegateInvocation: TimeInterval](./advanceintervalfordelegateinvocation.md)
   The time interval, in seconds, the player item metadata output object messages its delegate earlier than normal.
-- [var delegate: (any AVPlayerItemMetadataOutputPushDelegate)?](avplayeritemmetadataoutput/delegate.md)
+- [var delegate: (any AVPlayerItemMetadataOutputPushDelegate)?](./delegate.md)
   The delegate object.
-- [protocol AVPlayerItemMetadataOutputPushDelegate](avplayeritemmetadataoutputpushdelegate.md)
+- [protocol AVPlayerItemMetadataOutputPushDelegate](../avplayeritemmetadataoutputpushdelegate.md)
   Methods you can implement to provide additional metadata.
-- [var delegateQueue: dispatch_queue_t?](avplayeritemmetadataoutput/delegatequeue.md)
+- [var delegateQueue: dispatch_queue_t?](./delegatequeue.md)
   The dispatch queue on which messages are sent to the delegate.
 
 

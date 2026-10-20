@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 volatile bool workToDo;
 ```
 
@@ -15,13 +15,14 @@ Used to to indicate that an interrupt has fired and needs to be processed.
 
 ## See Also
 
-- [workToDoLock](ioworkloop/worktodolock.md)
-- [workThread](ioworkloop/workthread.md)
-- [reserved](ioworkloop/reserved.md)
-- [loopRestart](ioworkloop/looprestart.md)
-- [gateLock](ioworkloop/gatelock.md)
-- [eventChain](ioworkloop/eventchain.md)
-- [controlG](ioworkloop/controlg.md)
+### Instance Variables
+- [workToDoLock](./worktodolock.md)
+- [workThread](./workthread.md)
+- [reserved](./reserved.md)
+- [loopRestart](./looprestart.md)
+- [gateLock](./gatelock.md)
+- [eventChain](./eventchain.md)
+- [controlG](./controlg.md)
 
 
 ---

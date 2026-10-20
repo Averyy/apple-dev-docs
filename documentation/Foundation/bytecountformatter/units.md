@@ -1,7 +1,8 @@
 # ByteCountFormatter.Units
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Specifies the units appropriate for the formatter to display. Specifying any units explicitly causes just those units to be used in showing the number.
 
@@ -20,47 +21,52 @@ Specifies the units appropriate for the formatter to display. Specifying any uni
 struct Units
 ```
 
+```c
+enum NSByteCountFormatterUnits : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [static var useBytes: ByteCountFormatter.Units](bytecountformatter/units/usebytes.md)
+- [static var useBytes: ByteCountFormatter.Units](./units/usebytes.md)
   Displays bytes in the formatter content.
-- [static var useKB: ByteCountFormatter.Units](bytecountformatter/units/usekb.md)
+- [static var useKB: ByteCountFormatter.Units](./units/usekb.md)
   Displays kilobytes in the formatter content.
-- [static var useMB: ByteCountFormatter.Units](bytecountformatter/units/usemb.md)
+- [static var useMB: ByteCountFormatter.Units](./units/usemb.md)
   Displays megabytes in the formatter content.
-- [static var useGB: ByteCountFormatter.Units](bytecountformatter/units/usegb.md)
+- [static var useGB: ByteCountFormatter.Units](./units/usegb.md)
   Displays gigabytes in the formatter content.
-- [static var useTB: ByteCountFormatter.Units](bytecountformatter/units/usetb.md)
+- [static var useTB: ByteCountFormatter.Units](./units/usetb.md)
   Displays terabytes in the formatter content.
-- [static var usePB: ByteCountFormatter.Units](bytecountformatter/units/usepb.md)
+- [static var usePB: ByteCountFormatter.Units](./units/usepb.md)
   Displays petabyte in the formatter content.
-- [static var useEB: ByteCountFormatter.Units](bytecountformatter/units/useeb.md)
+- [static var useEB: ByteCountFormatter.Units](./units/useeb.md)
   Displays exabytes in the formatter content.
-- [static var useZB: ByteCountFormatter.Units](bytecountformatter/units/usezb.md)
+- [static var useZB: ByteCountFormatter.Units](./units/usezb.md)
   Displays zettabytes in the formatter content.
-- [static var useYBOrHigher: ByteCountFormatter.Units](bytecountformatter/units/useyborhigher.md)
+- [static var useYBOrHigher: ByteCountFormatter.Units](./units/useyborhigher.md)
   Displays yottabytes in the formatter content.
-- [static var useAll: ByteCountFormatter.Units](bytecountformatter/units/useall.md)
+- [static var useAll: ByteCountFormatter.Units](./units/useall.md)
   Can use any unit in the formatter content.
 ### Initializers
-- [init(rawValue: UInt)](bytecountformatter/units/init(rawvalue:).md)
+- [init(rawValue: UInt)](./units/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [ByteCountFormatter.CountStyle](bytecountformatter/countstyle-swift.enum.md)
+### Constants
+- [ByteCountFormatter.CountStyle](./countstyle-swift.enum.md)
   Specifies display of file or storage byte counts. The display style is platform specific.
 
 

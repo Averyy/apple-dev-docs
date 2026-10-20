@@ -1,7 +1,8 @@
 # MTRDeviceControllerStorageClasses()
 
 **Framework**: Matter  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 func MTRDeviceControllerStorageClasses() -> Set<AnyHashable>
+```
+
+```c
+extern NSSet<Class> *MTRDeviceControllerStorageClasses();
 ```
 
 

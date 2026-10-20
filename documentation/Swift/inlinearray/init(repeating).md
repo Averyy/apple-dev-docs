@@ -1,7 +1,8 @@
 # init(repeating:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes every element in this array to a copy of the given value.
 

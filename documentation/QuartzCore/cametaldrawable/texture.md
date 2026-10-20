@@ -2,6 +2,7 @@
 
 **Framework**: Core Animation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Metal texture object that contains the drawable’s contents.
@@ -11,7 +12,7 @@ A Metal texture object that contains the drawable’s contents.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,9 +21,13 @@ A Metal texture object that contains the drawable’s contents.
 var texture: any MTLTexture { get }
 ```
 
+```objc
+@property (readonly) id<MTLTexture> texture;
+```
+
 #### Discussion
 
-Use this object to configure a [`MTLRenderPipelineColorAttachmentDescriptor`](https://developer.apple.com/documentation/metal/mtlrenderpipelinecolorattachmentdescriptor) object to render to the drawable object.
+Use this object to configure a [`MTLRenderPipelineColorAttachmentDescriptor`](../../Metal/mtlrenderpipelinecolorattachmentdescriptor.md) object to render to the drawable object.
 
 
 ---

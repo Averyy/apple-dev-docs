@@ -1,7 +1,8 @@
 # type
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the specified press.
 
@@ -18,17 +19,22 @@ The type of the specified press.
 var type: UIPress.PressType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIPressType type;
+```
+
 #### Discussion
 
-For a list of all possible types, see the [`UIPress.PressType`](uipress/presstype.md) enumeration.
+For a list of all possible types, see the [`UIPress.PressType`](./presstype.md) enumeration.
 
 ## See Also
 
-- [var key: UIKey?](uipress/key.md)
+### Getting press attributes
+- [var key: UIKey?](./key.md)
   The key pressed or released on a physical keyboard.
-- [var phase: UIPress.Phase](uipress/phase-swift.property.md)
+- [var phase: UIPress.Phase](./phase-swift.property.md)
   The current press phase of the object.
-- [var timestamp: TimeInterval](uipress/timestamp.md)
+- [var timestamp: TimeInterval](./timestamp.md)
   The time when the press occurred or when it was last mutated.
 
 

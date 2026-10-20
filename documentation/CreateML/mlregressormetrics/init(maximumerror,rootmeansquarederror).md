@@ -1,7 +1,8 @@
 # init(maximumError:rootMeanSquaredError:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates regressor metrics describing the quality of your model.
 
@@ -21,7 +22,7 @@ init(maximumError: Double, rootMeanSquaredError: Double)
 
 #### Discussion
 
-You typically don’t initialize metrics directly. Instead you get metrics about your model after training. For example, when you train an [`MLRegressor`](mlregressor.md), you can look at its [`trainingMetrics`](mlregressor/trainingmetrics.md) and [`validationMetrics`](mlregressor/validationmetrics.md) properties. Additionally, you can check the performance on a test set with the [`evaluation(on:)`](mlregressor/evaluation(on:)-7pirm.md) method.
+You typically don’t initialize metrics directly. Instead you get metrics about your model after training. For example, when you train an [`MLRegressor`](../mlregressor.md), you can look at its [`trainingMetrics`](../mlregressor/trainingmetrics.md) and [`validationMetrics`](../mlregressor/validationmetrics.md) properties. Additionally, you can check the performance on a test set with the [`evaluation(on:)`](../mlregressor/evaluation%28on%29-7pirm.md) method.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # BaseRosterCourse
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A base course’s properties and their values.
 
@@ -10,7 +11,7 @@ A base course’s properties and their values.
 
 ## Declaration
 
-```swift
+```
 object BaseRosterCourse
 ```
 
@@ -21,11 +22,12 @@ object BaseRosterCourse
 
 ## See Also
 
-- [object RosterCourse](rostercourse.md)
+### Course management
+- [object RosterCourse](./rostercourse.md)
   A course’s properties and their values.
-- [Get the List of Courses](fetch-course-roster.md)
+- [Get the List of Courses](./fetch-course-roster.md)
   Obtain a list of the courses the server manages.
-- [Sync the List of Courses](fetch-course-roster-sync.md)
+- [Sync the List of Courses](./fetch-course-roster-sync.md)
   Get updates about the list of courses the server manages.
 
 

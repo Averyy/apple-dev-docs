@@ -1,7 +1,8 @@
 # items
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The items for the personal recommendation.
 

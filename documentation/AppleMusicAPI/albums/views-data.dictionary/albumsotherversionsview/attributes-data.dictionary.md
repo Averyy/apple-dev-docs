@@ -1,7 +1,8 @@
 # Albums.Views.AlbumsOtherVersionsView.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes for the view.
 
@@ -10,7 +11,7 @@ The attributes for the view.
 
 ## Declaration
 
-```swift
+```
 object Albums.Views.AlbumsOtherVersionsView.Attributes
 ```
 

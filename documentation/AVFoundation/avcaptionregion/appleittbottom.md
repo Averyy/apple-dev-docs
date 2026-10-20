@@ -1,7 +1,8 @@
 # appleITTBottom
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The bottom region for iTT format captions.
 
@@ -17,19 +18,24 @@ The bottom region for iTT format captions.
 class var appleITTBottom: AVCaptionRegion { get }
 ```
 
+```objc
+@property (class, readonly) AVCaptionRegion * appleITTBottomRegion;
+```
+
 #### Discussion
 
 This region occupies the bottom 15% of the display area, and it uses a LRTB layout where a line progresses from left to right and the block extends from top to bottom. Lines are bottom justified.
 
 ## See Also
 
-- [class var appleITTTop: AVCaptionRegion](avcaptionregion/appleitttop.md)
+### Accessing defined regions
+- [class var appleITTTop: AVCaptionRegion](./appleitttop.md)
   The top region for iTT format captions.
-- [class var appleITTLeft: AVCaptionRegion](avcaptionregion/appleittleft.md)
+- [class var appleITTLeft: AVCaptionRegion](./appleittleft.md)
   The left region for iTT format captions.
-- [class var appleITTRight: AVCaptionRegion](avcaptionregion/appleittright.md)
+- [class var appleITTRight: AVCaptionRegion](./appleittright.md)
   The right region for iTT format captions.
-- [class var subRipTextBottom: AVCaptionRegion](avcaptionregion/subriptextbottom.md)
+- [class var subRipTextBottom: AVCaptionRegion](./subriptextbottom.md)
   The bottom caption region for SubRip Text (SRT) format captions.
 
 

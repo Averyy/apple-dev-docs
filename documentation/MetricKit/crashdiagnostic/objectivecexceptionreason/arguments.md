@@ -1,7 +1,8 @@
 # arguments
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Arguments passed to the format string.
 
@@ -20,9 +21,10 @@ let arguments: [String]
 
 ## See Also
 
-- [let composedMessage: String](crashdiagnostic/objectivecexceptionreason/composedmessage.md)
+### Exception description
+- [let composedMessage: String](./composedmessage.md)
   A human-readable message string summarizing the reason for the exception.
-- [let formatString: String](crashdiagnostic/objectivecexceptionreason/formatstring.md)
+- [let formatString: String](./formatstring.md)
   A string representing the exception message before arguments are substituted.
 
 

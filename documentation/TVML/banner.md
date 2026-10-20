@@ -18,55 +18,56 @@ The type of information displayed depends on the type of template used. Here’s
 </formTemplate>
 ```
 
-##### Subelements of Banner
+##### Subelements of banner
 
-- [`background`](background.md)
-- [`button`](button.md)
-- [`description`](description.md)
-- [`heroImg`](heroimg.md)
-- [`img`](img.md)
-- [`infoList`](infolist.md)
-- [`row`](row.md)
-- [`stack`](stack.md)
-- [`title`](title.md)
+- [background](./background.md)
+- [button](./button.md)
+- [description](./description.md)
+- [heroImg](./heroimg.md)
+- [img](./img.md)
+- [infoList](./infolist.md)
+- [row](./row.md)
+- [stack](./stack.md)
+- [title](./title.md)
 
-##### Elements That Use Banner
+##### Elements that Use banner
 
-- [`catalogTemplate`](catalogtemplate.md)
-- [`compilationTemplate`](compilationtemplate.md)
-- [`formTemplate`](formtemplate.md)
-- [`listTemplate`](listtemplate.md)
-- [`productBundleTemplate`](productbundletemplate.md)
-- [`productTemplate`](producttemplate.md)
-- [`showcaseTemplate`](showcasetemplate.md)
-- [`stackTemplate`](stacktemplate.md)
+- [catalogTemplate](./catalogtemplate.md)
+- [compilationTemplate](./compilationtemplate.md)
+- [formTemplate](./formtemplate.md)
+- [listTemplate](./listtemplate.md)
+- [productBundleTemplate](./productbundletemplate.md)
+- [productTemplate](./producttemplate.md)
+- [showcaseTemplate](./showcasetemplate.md)
+- [stackTemplate](./stacktemplate.md)
 
 ## Topics
 
 ### Valid TVML Styles
-- [height](element-shaping-height.md)
+- [height](./element-shaping-height.md)
   Specifies the height of an element.
-- [margin](margin.md)
+- [margin](./margin.md)
   Specifies the spacing around an element.
-- [padding](padding.md)
+- [padding](./padding.md)
   Specifies the padding between the border and contents of an element.
-- [tv-align](tv-align.md)
+- [tv-align](./tv-align.md)
   Aligns an element horizontally inside its parent.
-- [tv-position](tv-position.md)
+- [tv-position](./tv-position.md)
   Sets the position of an element inside of its parent element.
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [identityBanner](identitybanner.md)
+### Banner Elements
+- [identityBanner](./identitybanner.md)
   Displays information about an artist or performer.
-- [itemBanner](itembanner.md)
+- [itemBanner](./itembanner.md)
   Displays information associated with an element.
 
 

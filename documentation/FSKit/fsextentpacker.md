@@ -1,7 +1,8 @@
 # FSExtentPacker
 
 **Framework**: FSKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A type that directs the kernel to map space on disk to a specific file managed by this file system.
 
@@ -14,6 +15,10 @@ A type that directs the kernel to map space on disk to a specific file managed b
 class FSExtentPacker
 ```
 
+```objc
+@interface FSExtentPacker : NSObject
+```
+
 #### Overview
 
 *Extents* provide the kernel the logical-to-physical mapping of a given file. An extent describes a physical offset on disk, and a length and a logical offset within the file. Rather than working with extents directly, you use this type’s methods to provide or “pack” extent information, which FSKit then passes to the kernel.
@@ -21,38 +26,39 @@ class FSExtentPacker
 ## Topics
 
 ### Packing extents
-- [func packExtent(resource: FSBlockDeviceResource, type: FSExtentType, logicalOffset: off_t, physicalOffset: off_t, length: Int) -> Bool](fsextentpacker/packextent(resource:type:logicaloffset:physicaloffset:length:).md)
+- [func packExtent(resource: FSBlockDeviceResource, type: FSExtentType, logicalOffset: off_t, physicalOffset: off_t, length: Int) -> Bool](./fsextentpacker/packextent%28resource,type,logicaloffset,physicaloffset,length%29.md)
   Packs a single extent to send to the kernel.
-- [enum FSExtentType](fsextenttype.md)
+- [enum FSExtentType](./fsextenttype.md)
   An enumeration of types of extents.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [struct FSBlockmapFlags](fsblockmapflags.md)
+### Supporting types
+- [struct FSBlockmapFlags](./fsblockmapflags.md)
   Flags that describe the behavior of a blockmap operation.
-- [struct FSCompleteIOFlags](fscompleteioflags.md)
+- [struct FSCompleteIOFlags](./fscompleteioflags.md)
   Flags that describe the behavior of an I/O completion operation.
-- [class FSEntityIdentifier](fsentityidentifier.md)
+- [class FSEntityIdentifier](./fsentityidentifier.md)
   A base type that identifies containers and volumes.
-- [enum FSExtentType](fsextenttype.md)
+- [enum FSExtentType](./fsextenttype.md)
   An enumeration of types of extents.
-- [enum FSMatchResult](fsmatchresult.md)
+- [enum FSMatchResult](./fsmatchresult.md)
   A type that represents the recognition and usability of a probed resource.
-- [class FSMetadataRange](fsmetadatarange.md)
+- [class FSMetadataRange](./fsmetadatarange.md)
   A range that describes contiguous metadata segments on disk.
-- [class FSProbeResult](fsproberesult.md)
+- [class FSProbeResult](./fsproberesult.md)
   An object that represents the results of a specific probe.
 
 

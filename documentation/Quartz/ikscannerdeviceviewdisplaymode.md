@@ -1,9 +1,10 @@
 # IKScannerDeviceViewDisplayMode
 
 **Framework**: Quartz  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-These constants specify the display mode the scanner view will use. They are used by the [`mode`](ikscannerdeviceview/mode.md) property.
+These constants specify the display mode the scanner view will use. They are used by the [`mode`](./ikscannerdeviceview/mode.md) property.
 
 **Availability**:
 - macOS 10.4+
@@ -15,32 +16,37 @@ These constants specify the display mode the scanner view will use. They are use
 enum IKScannerDeviceViewDisplayMode
 ```
 
+```c
+enum IKScannerDeviceViewDisplayMode : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [IKScannerDeviceViewDisplayMode.simple](ikscannerdeviceviewdisplaymode/simple.md)
+- [IKScannerDeviceViewDisplayMode.simple](./ikscannerdeviceviewdisplaymode/simple.md)
   The view will display in simple mode.
-- [IKScannerDeviceViewDisplayMode.advanced](ikscannerdeviceviewdisplaymode/advanced.md)
+- [IKScannerDeviceViewDisplayMode.advanced](./ikscannerdeviceviewdisplaymode/advanced.md)
   The view will display in advanced mode.
 ### Enumeration Cases
-- [IKScannerDeviceViewDisplayMode.none](ikscannerdeviceviewdisplaymode/none.md)
+- [IKScannerDeviceViewDisplayMode.none](./ikscannerdeviceviewdisplaymode/none.md)
 ### Initializers
-- [init?(rawValue: Int)](ikscannerdeviceviewdisplaymode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./ikscannerdeviceviewdisplaymode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum IKScannerDeviceViewTransferMode](ikscannerdeviceviewtransfermode.md)
-  These constants determine how the scanner data is returned to the delegate. They are used by the [`transferMode`](ikscannerdeviceview/transfermode.md) property.
+### Constants
+- [enum IKScannerDeviceViewTransferMode](./ikscannerdeviceviewtransfermode.md)
+  These constants determine how the scanner data is returned to the delegate. They are used by the [`transferMode`](./ikscannerdeviceview/transfermode.md) property.
 
 
 ---

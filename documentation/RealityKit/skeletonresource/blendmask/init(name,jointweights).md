@@ -1,7 +1,8 @@
 # init(name:jointWeights:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a blend mask with the specified parameters.
 

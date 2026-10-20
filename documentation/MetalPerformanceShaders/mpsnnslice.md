@@ -1,7 +1,8 @@
 # MPSNNSlice
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A kernel that extracts a slice from an image.
 
@@ -19,26 +20,30 @@ A kernel that extracts a slice from an image.
 class MPSNNSlice
 ```
 
+```objc
+@interface MPSNNSlice : MPSCNNKernel
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnslice/init(coder:device:).md)
-- [init(device: any MTLDevice)](mpsnnslice/init(device:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpsnnslice/init%28coder,device%29.md)
+- [init(device: any MTLDevice)](./mpsnnslice/init%28device%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNKernel](mpscnnkernel.md)
+- [MPSCNNKernel](./mpscnnkernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

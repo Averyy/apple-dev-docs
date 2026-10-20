@@ -1,7 +1,8 @@
 # nextFrameTime()
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the time at which the next update should happen.
 
@@ -19,6 +20,10 @@ Returns the time at which the next update should happen.
 func nextFrameTime() -> CFTimeInterval
 ```
 
+```objc
+- (CFTimeInterval) nextFrameTime;
+```
+
 #### Return Value
 
 The time at which the next update should happen.
@@ -29,15 +34,16 @@ If infinite, no update needs to be scheduled yet. If `nextFrameTime` is the curr
 
 ## See Also
 
-- [func beginFrame(atTime: CFTimeInterval, timeStamp: UnsafeMutablePointer<CVTimeStamp>?)](carenderer/beginframe(attime:timestamp:).md)
+### Rendering a Frame
+- [func beginFrame(atTime: CFTimeInterval, timeStamp: UnsafeMutablePointer<CVTimeStamp>?)](./beginframe%28attime,timestamp%29.md)
   Begin rendering a frame at the specified time.
-- [func updateBounds() -> CGRect](carenderer/updatebounds.md)
+- [func updateBounds() -> CGRect](./updatebounds%28%29.md)
   Returns the bounds of the update region that contains all pixels that will be rendered by the current frame.
-- [func addUpdate(CGRect)](carenderer/addupdate(_:).md)
+- [func addUpdate(CGRect)](./addupdate%28_%29.md)
   Adds the rectangle to the update region of the current frame.
-- [func render()](carenderer/render.md)
+- [func render()](./render%28%29.md)
   Render the update region of the current frame to the target context.
-- [func endFrame()](carenderer/endframe.md)
+- [func endFrame()](./endframe%28%29.md)
   Release any data associated with the current frame.
 
 

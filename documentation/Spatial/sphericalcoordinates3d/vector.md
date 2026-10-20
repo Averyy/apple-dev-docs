@@ -1,7 +1,8 @@
 # vector
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A simd three-element vector that contains the radius, inclination, and azimuth values.
 
@@ -20,15 +21,20 @@ A simd three-element vector that contains the radius, inclination, and azimuth v
 var vector: simd_double3 { get set }
 ```
 
+```c
+simd_double3 vector;
+```
+
 ## See Also
 
-- [var azimuth: Angle2D](sphericalcoordinates3d/azimuth.md)
+### Inspecting a spherical coordinates structure’s properties
+- [var azimuth: Angle2D](./azimuth.md)
   The azimuthal angle, in radians.
-- [var inclination: Angle2D](sphericalcoordinates3d/inclination.md)
+- [var inclination: Angle2D](./inclination.md)
   The inclination angle, in radians.
-- [var radius: Double](sphericalcoordinates3d/radius.md)
+- [var radius: Double](./radius.md)
   The distance to the origin.
-- [var customMirror: Mirror](sphericalcoordinates3d/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   The custom mirror for this instance.
 
 

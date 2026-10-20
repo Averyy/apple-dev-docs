@@ -1,7 +1,8 @@
 # CameraFrame
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The representation of a camera frame.
 
@@ -17,34 +18,35 @@ struct CameraFrame
 ## Topics
 
 ### Getting camera frame information
-- [var primarySample: CameraFrame.Sample](cameraframe/primarysample.md)
+- [var primarySample: CameraFrame.Sample](./cameraframe/primarysample.md)
   Gets the primary frame sample for a camera frame.
-- [CameraFrame.Sample](cameraframe/sample.md)
+- [CameraFrame.Sample](./cameraframe/sample.md)
   Information that describes a sample from a camera frame.
-- [func sample(for: CameraFrameProvider.CameraPosition) -> CameraFrame.Sample?](cameraframe/sample(for:).md)
+- [func sample(for: CameraFrameProvider.CameraPosition) -> CameraFrame.Sample?](./cameraframe/sample%28for%29.md)
   Returns the camera frame sample for a given camera position.
-- [var description: String](cameraframe/description.md)
+- [var description: String](./cameraframe/description.md)
   A textual representation of this camera frame.
 ### Operators
-- [static func == (CameraFrame, CameraFrame) -> Bool](cameraframe/==(_:_:).md)
+- [static func == (CameraFrame, CameraFrame) -> Bool](./cameraframe/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two camera frames are equal.
 ### Instance Properties
-- [var samples: [CameraFrame.Sample]](cameraframe/samples.md)
+- [var samples: [CameraFrame.Sample]](./cameraframe/samples.md)
   All the camera frame samples on this frame.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CameraFrameProvider](cameraframeprovider.md)
+### Camera sampling
+- [class CameraFrameProvider](./cameraframeprovider.md)
   An object that provides camera streams.
-- [struct CameraVideoFormat](cameravideoformat.md)
+- [struct CameraVideoFormat](./cameravideoformat.md)
   A structure that represents a camera video format.
 
 

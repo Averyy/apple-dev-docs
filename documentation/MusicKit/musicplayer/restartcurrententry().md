@@ -1,7 +1,8 @@
 # restartCurrentEntry()
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Restarts playback at the beginning of the currently playing entry.
 

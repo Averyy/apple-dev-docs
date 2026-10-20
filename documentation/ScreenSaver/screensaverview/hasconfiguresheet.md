@@ -1,7 +1,8 @@
 # hasConfigureSheet
 
 **Framework**: Screen Saver  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the screen saver has an associated configuration sheet.
 
@@ -14,13 +15,18 @@ A Boolean value that indicates whether the screen saver has an associated config
 var hasConfigureSheet: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL hasConfigureSheet;
+```
+
 #### Discussion
 
-If you provide a configuration sheet in your bundle, override this method and return [`true`](https://developer.apple.com/documentation/swift/true).
+If you provide a configuration sheet in your bundle, override this method and return [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var configureSheet: NSWindow?](screensaverview/configuresheet.md)
+### Accessing the configuration sheet
+- [var configureSheet: NSWindow?](./configuresheet.md)
   The window that contains the controls to configure the screen saver.
 
 

@@ -1,7 +1,8 @@
 # LibraryTrackFilter
 
 **Framework**: MusicKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Track properties your app uses as a filter for a library request.
 
@@ -23,19 +24,19 @@ protocol LibraryTrackFilter
 ## Topics
 
 ### Instance Properties
-- [var albumTitle: String?](librarytrackfilter/albumtitle.md)
+- [var albumTitle: String?](./librarytrackfilter/albumtitle.md)
   The title of the album the track appears on.
-- [var albums: MusicItemCollection<Album>?](librarytrackfilter/albums.md)
+- [var albums: MusicItemCollection<Album>?](./librarytrackfilter/albums.md)
   The track’s associated albums.
-- [var artistName: String?](librarytrackfilter/artistname.md)
+- [var artistName: String?](./librarytrackfilter/artistname.md)
   The artist’s name.
-- [var artists: MusicItemCollection<Artist>?](librarytrackfilter/artists.md)
+- [var artists: MusicItemCollection<Artist>?](./librarytrackfilter/artists.md)
   The track’s associated artists.
-- [var genres: MusicItemCollection<Genre>?](librarytrackfilter/genres.md)
+- [var genres: MusicItemCollection<Genre>?](./librarytrackfilter/genres.md)
   The track’s associated genres.
-- [var id: MusicItemID](librarytrackfilter/id.md)
+- [var id: MusicItemID](./librarytrackfilter/id.md)
   The unique identifier for the track.
-- [var title: String](librarytrackfilter/title.md)
+- [var title: String](./librarytrackfilter/title.md)
   The title of the track.
 
 

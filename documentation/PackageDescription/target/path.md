@@ -1,7 +1,8 @@
 # path
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The path of the target, relative to the package root.
 
@@ -26,15 +27,16 @@ Don’t escape the package root; that is, values like `../Foo` or `/Foo` are inv
 
 ## See Also
 
-- [var exclude: [String]](target/exclude.md)
+### Configuring File Locations
+- [var exclude: [String]](./exclude.md)
   The paths to source and resource files that you don’t want to include in the target.
-- [var sources: [String]?](target/sources.md)
+- [var sources: [String]?](./sources.md)
   The source files in this target.
-- [var resources: [Resource]?](target/resources.md)
+- [var resources: [Resource]?](./resources.md)
   The explicit list of resource files in the target.
-- [struct Resource](resource.md)
+- [struct Resource](../resource.md)
   A resource to bundle with the Swift package.
-- [var publicHeadersPath: String?](target/publicheaderspath.md)
+- [var publicHeadersPath: String?](./publicheaderspath.md)
   The path to the directory that contains public headers of a C-family target.
 
 

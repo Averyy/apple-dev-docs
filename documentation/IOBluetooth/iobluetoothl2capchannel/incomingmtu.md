@@ -1,17 +1,22 @@
 # incomingMTU
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the current incoming MTU for the L2CAP channel.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var incomingMTU: BluetoothL2CAPMTU { get }
+```
+
+```objc
+@property (readonly) BluetoothL2CAPMTU incomingMTU;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # VTRAWProcessingSession.Parameter.IntegerParameter
 
 **Framework**: Video Toolbox  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 15.0+
@@ -15,24 +16,25 @@ struct IntegerParameter
 ## Topics
 
 ### Instance Properties
-- [var details: VTRAWProcessingSession.Parameter.Details](vtrawprocessingsession/parameter/integerparameter/details.md)
-- [var key: String](vtrawprocessingsession/parameter/integerparameter/key.md)
-- [var values: VTRAWProcessingSession.Parameter.Values<Int>](vtrawprocessingsession/parameter/integerparameter/values.md)
+- [var details: VTRAWProcessingSession.Parameter.Details](./integerparameter/details.md)
+- [var key: String](./integerparameter/key.md)
+- [var values: VTRAWProcessingSession.Parameter.Values<Int>](./integerparameter/values.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [VTRAWProcessingSession.Parameter.BooleanParameter](vtrawprocessingsession/parameter/booleanparameter.md)
-- [VTRAWProcessingSession.Parameter.Details](vtrawprocessingsession/parameter/details.md)
-- [VTRAWProcessingSession.Parameter.FloatParameter](vtrawprocessingsession/parameter/floatparameter.md)
-- [VTRAWProcessingSession.Parameter.ListParameter](vtrawprocessingsession/parameter/listparameter.md)
-- [VTRAWProcessingSession.Parameter.Values](vtrawprocessingsession/parameter/values.md)
+### Parameters
+- [VTRAWProcessingSession.Parameter.BooleanParameter](./booleanparameter.md)
+- [VTRAWProcessingSession.Parameter.Details](./details.md)
+- [VTRAWProcessingSession.Parameter.FloatParameter](./floatparameter.md)
+- [VTRAWProcessingSession.Parameter.ListParameter](./listparameter.md)
+- [VTRAWProcessingSession.Parameter.Values](./values.md)
 
 
 ---

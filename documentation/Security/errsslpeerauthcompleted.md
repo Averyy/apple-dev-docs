@@ -1,7 +1,8 @@
 # errSSLPeerAuthCompleted
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A non-fatal result indicating the peer certificate is valid, or was ignored if verification is disabled.
 
@@ -20,9 +21,13 @@ A non-fatal result indicating the peer certificate is valid, or was ignored if v
 var errSSLPeerAuthCompleted: OSStatus { get }
 ```
 
+```c
+errSSLPeerAuthCompleted
+```
+
 #### Discussion
 
-The peer’s certificate chain is valid, or was ignored if certificate verification was disabled via [`SSLSetEnableCertVerify`](sslsetenablecertverify.md). In response, you may decide to continue with the handshake (by calling [`SSLHandshake(_:)`](sslhandshake(_:).md) again) or just close the connection.
+The peer’s certificate chain is valid, or was ignored if certificate verification was disabled via [`SSLSetEnableCertVerify`](./sslsetenablecertverify.md). In response, you may decide to continue with the handshake (by calling [`SSLHandshake(_:)`](./sslhandshake%28_%29.md) again) or just close the connection.
 
 
 ---

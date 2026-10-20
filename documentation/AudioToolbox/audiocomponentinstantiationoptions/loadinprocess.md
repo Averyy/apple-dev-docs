@@ -1,7 +1,8 @@
 # loadInProcess
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 10.11+
@@ -12,13 +13,18 @@
 static var loadInProcess: AudioComponentInstantiationOptions { get }
 ```
 
+```c
+kAudioComponentInstantiation_LoadInProcess
+```
+
 ## Mentions
 
-- [Migrating Your Audio Unit Host to the AUv3 API](migrating-your-audio-unit-host-to-the-auv3-api.md)
+- [Migrating Your Audio Unit Host to the AUv3 API](../migrating-your-audio-unit-host-to-the-auv3-api.md)
 
 ## See Also
 
-- [static var loadOutOfProcess: AudioComponentInstantiationOptions](audiocomponentinstantiationoptions/loadoutofprocess.md)
+### Constants
+- [static var loadOutOfProcess: AudioComponentInstantiationOptions](./loadoutofprocess.md)
 
 
 ---

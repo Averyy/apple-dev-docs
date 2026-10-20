@@ -1,7 +1,8 @@
 # HumanBodyActionPeriodPredictor
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A human body action period predictor transformer that takes window of poses and produces a window of predictions.
 
@@ -22,42 +23,43 @@ struct HumanBodyActionPeriodPredictor
 ## Topics
 
 ### Creating a transformer
-- [init()](humanbodyactionperiodpredictor/init.md)
+- [init()](./humanbodyactionperiodpredictor/init%28%29.md)
   Creates a human body action period predictor transformer.
 ### Performing the transformation
-- [func applied(to: [Pose], eventHandler: EventHandler?) async throws -> [HumanBodyActionPeriodPredictor.Prediction]](humanbodyactionperiodpredictor/applied(to:eventhandler:).md)
+- [func applied(to: [Pose], eventHandler: EventHandler?) async throws -> [HumanBodyActionPeriodPredictor.Prediction]](./humanbodyactionperiodpredictor/applied%28to,eventhandler%29.md)
   Predicts human body action periods from an array of poses.
-- [HumanBodyActionPeriodPredictor.Prediction](humanbodyactionperiodpredictor/prediction.md)
+- [HumanBodyActionPeriodPredictor.Prediction](./humanbodyactionperiodpredictor/prediction.md)
   A human body action period prediction.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Transformer](transformer.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Transformer](./transformer.md)
 
 ## See Also
 
-- [Counting human body action repetitions in a live video feed](counting-human-body-action-repetitions-in-a-live-video-feed.md)
+### Pose components
+- [Counting human body action repetitions in a live video feed](./counting-human-body-action-repetitions-in-a-live-video-feed.md)
   Use Create ML Components to analyze a series of video frames and count a person’s repetitive or periodic body movements.
-- [struct Pose](pose.md)
+- [struct Pose](./pose.md)
   A pose that contains joint keypoints from a person, a hand, or a combination.
-- [struct JointKey](jointkey.md)
+- [struct JointKey](./jointkey.md)
   A key that uniquely identifies a joint.
-- [struct JointPoint](jointpoint.md)
+- [struct JointPoint](./jointpoint.md)
   A joint in a pose that contains a location and scoring information.
-- [struct PoseSelector](poseselector.md)
+- [struct PoseSelector](./poseselector.md)
   A transformer that selects one pose from an array of poses.
-- [enum PoseSelectionStrategy](poseselectionstrategy.md)
+- [enum PoseSelectionStrategy](./poseselectionstrategy.md)
   Pose selection strategy.
-- [struct JointsSelector](jointsselector.md)
+- [struct JointsSelector](./jointsselector.md)
   Joints selector from a pose.
-- [struct HumanBodyPoseExtractor](humanbodyposeextractor.md)
+- [struct HumanBodyPoseExtractor](./humanbodyposeextractor.md)
   The human body pose image feature extractor.
-- [struct HumanHandPoseExtractor](humanhandposeextractor.md)
+- [struct HumanHandPoseExtractor](./humanhandposeextractor.md)
   The human hand pose image feature extractor.
-- [struct HumanBodyActionCounter](humanbodyactioncounter.md)
+- [struct HumanBodyActionCounter](./humanbodyactioncounter.md)
   A human body action repetition counting transformer that takes window of human body poses and produces cumulative human body action repetition counts.
 
 

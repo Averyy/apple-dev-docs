@@ -1,7 +1,8 @@
 # kAXUnknownSortDirectionValue
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The sort order of this object is unknown.
 
@@ -12,6 +13,10 @@ The sort order of this object is unknown.
 
 ```swift
 var kAXUnknownSortDirectionValue: String { get }
+```
+
+```c
+#define kAXUnknownSortDirectionValue
 ```
 
 

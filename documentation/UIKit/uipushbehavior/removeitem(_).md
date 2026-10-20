@@ -1,7 +1,8 @@
 # removeItem(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a specific dynamic item from the behavior.
 
@@ -9,7 +10,7 @@ Removes a specific dynamic item from the behavior.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,19 +19,24 @@ Removes a specific dynamic item from the behavior.
 func removeItem(_ item: any UIDynamicItem)
 ```
 
+```objc
+- (void) removeItem:(id<UIDynamicItem>) item;
+```
+
 ## Parameters
 
 - `item`: The dynamic item that you want to remove.
 
 ## See Also
 
-- [var active: Bool](uipushbehavior/active.md)
+### Initializing and managing a push behavior
+- [var active: Bool](./active.md)
   The state of the push behavior’s force: either active or inactive.
-- [func addItem(any UIDynamicItem)](uipushbehavior/additem(_:).md)
+- [func addItem(any UIDynamicItem)](./additem%28_%29.md)
   Adds a dynamic item to the behavior’s dynamic item array.
-- [init(items: [any UIDynamicItem], mode: UIPushBehavior.Mode)](uipushbehavior/init(items:mode:).md)
+- [init(items: [any UIDynamicItem], mode: UIPushBehavior.Mode)](./init%28items,mode%29.md)
   Initializes a push behavior with an array of dynamic items.
-- [var items: [any UIDynamicItem]](uipushbehavior/items.md)
+- [var items: [any UIDynamicItem]](./items.md)
   Returns the set of dynamic items you’ve added to the push behavior.
 
 

@@ -1,7 +1,8 @@
 # errSSLWouldBlock
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Function is blocked; waiting for I/O. This is not fatal.
 
@@ -18,6 +19,10 @@ Function is blocked; waiting for I/O. This is not fatal.
 
 ```swift
 var errSSLWouldBlock: OSStatus { get }
+```
+
+```c
+errSSLWouldBlock
 ```
 
 

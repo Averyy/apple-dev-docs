@@ -1,7 +1,8 @@
 # init(coder:device:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Euclidean distance transform that uses a specified decoder for your data and runs on a specified device.
 
@@ -19,6 +20,10 @@ Creates a Euclidean distance transform that uses a specified decoder for your da
 init?(coder aDecoder: NSCoder, device: any MTLDevice)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) aDecoder device:(id<MTLDevice>) device;
+```
+
 #### Discussion
 
 Use this initializer to specify the location of your data; otherwise, the framework may guess incorrectly.
@@ -30,7 +35,8 @@ Use this initializer to specify the location of your data; otherwise, the framew
 
 ## See Also
 
-- [init(device: any MTLDevice)](mpsimageeuclideandistancetransform/init(device:).md)
+### Creating a Euclidean distance transform
+- [init(device: any MTLDevice)](./init%28device%29.md)
   Creates a Euclidean distance transform that runs on a specified device.
 
 

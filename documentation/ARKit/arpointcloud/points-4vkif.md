@@ -1,7 +1,8 @@
 # points
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of detected points.
 
@@ -18,7 +19,8 @@ var points: [simd_float3] { get }
 
 ## See Also
 
-- [var identifiers: [UInt64]](arpointcloud/identifiers-508tf.md)
+### Identifying Feature Points
+- [var identifiers: [UInt64]](./identifiers-508tf.md)
   A list of unique identifiers corresponding to detected feature points.
 
 

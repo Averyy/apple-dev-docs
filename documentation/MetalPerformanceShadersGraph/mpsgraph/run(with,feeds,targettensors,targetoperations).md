@@ -1,7 +1,8 @@
 # run(with:feeds:targetTensors:targetOperations:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs the graph for the given feeds and returns the target tensor values, ensuring all target operations also executed.
 
@@ -17,6 +18,10 @@ Runs the graph for the given feeds and returns the target tensor values, ensurin
 
 ```swift
 func run(with commandQueue: any MTLCommandQueue, feeds: [MPSGraphTensor : MPSGraphTensorData], targetTensors: [MPSGraphTensor], targetOperations: [MPSGraphOperation]?) -> [MPSGraphTensor : MPSGraphTensorData]
+```
+
+```objc
+- (MPSGraphTensorDataDictionary *) runWithMTLCommandQueue:(id<MTLCommandQueue>) commandQueue feeds:(MPSGraphTensorDataDictionary *) feeds targetTensors:(NSArray<MPSGraphTensor *> *) targetTensors targetOperations:(NSArray<MPSGraphOperation *> *) targetOperations;
 ```
 
 #### Return Value

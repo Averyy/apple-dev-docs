@@ -1,7 +1,8 @@
 # SVGAnimatedPreserveAspectRatio
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,15 +10,15 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGAnimatedPreserveAspectRatio
 ```
 
 ## Topics
 
 ### Instance Properties
-- [animVal](svganimatedpreserveaspectratio/1631234-animval.md)
-- [baseVal](svganimatedpreserveaspectratio/1632349-baseval.md)
+- [animVal](./svganimatedpreserveaspectratio/api-1631234-animval.md)
+- [baseVal](./svganimatedpreserveaspectratio/api-1632349-baseval.md)
 
 
 ---

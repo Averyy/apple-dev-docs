@@ -1,7 +1,8 @@
 # systemGray4
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A fourth-level shade of gray that adapts to the environment.
 
@@ -17,21 +18,26 @@ A fourth-level shade of gray that adapts to the environment.
 class var systemGray4: UIColor { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) UIColor * systemGray4Color;
+```
+
 #### Discussion
 
-This color adapts to the current environment. In light environments, this gray is slightly lighter than [`systemGray3`](uicolor/systemgray3.md). In dark environments, this gray is slightly darker than [`systemGray3`](uicolor/systemgray3.md).
+This color adapts to the current environment. In light environments, this gray is slightly lighter than [`systemGray3`](./systemgray3.md). In dark environments, this gray is slightly darker than [`systemGray3`](./systemgray3.md).
 
 ## See Also
 
-- [class var systemGray: UIColor](uicolor/systemgray.md)
+### Adaptable gray colors
+- [class var systemGray: UIColor](./systemgray.md)
   The standard base gray color that adapts to the environment.
-- [class var systemGray2: UIColor](uicolor/systemgray2.md)
+- [class var systemGray2: UIColor](./systemgray2.md)
   A second-level shade of gray that adapts to the environment.
-- [class var systemGray3: UIColor](uicolor/systemgray3.md)
+- [class var systemGray3: UIColor](./systemgray3.md)
   A third-level shade of gray that adapts to the environment.
-- [class var systemGray5: UIColor](uicolor/systemgray5.md)
+- [class var systemGray5: UIColor](./systemgray5.md)
   A fifth-level shade of gray that adapts to the environment.
-- [class var systemGray6: UIColor](uicolor/systemgray6.md)
+- [class var systemGray6: UIColor](./systemgray6.md)
   A sixth-level shade of gray that adapts to the environment.
 
 

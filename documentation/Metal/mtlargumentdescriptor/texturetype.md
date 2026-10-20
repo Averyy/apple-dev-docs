@@ -1,7 +1,8 @@
 # textureType
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The texture type of a texture argument.
 
@@ -19,21 +20,26 @@ The texture type of a texture argument.
 var textureType: MTLTextureType { get set }
 ```
 
+```objc
+@property (nonatomic) MTLTextureType textureType;
+```
+
 #### Discussion
 
 For a nontexture argument, this value is ignored.
 
 ## See Also
 
-- [var dataType: MTLDataType](mtlargumentdescriptor/datatype.md)
+### Setting the descriptor’s properties
+- [var dataType: MTLDataType](./datatype.md)
   The data type of the argument.
-- [var index: Int](mtlargumentdescriptor/index.md)
+- [var index: Int](./index.md)
   The index ID of the argument.
-- [var access: MTLBindingAccess](mtlargumentdescriptor/access.md)
+- [var access: MTLBindingAccess](./access.md)
   The access permissions of the argument.
-- [var arrayLength: Int](mtlargumentdescriptor/arraylength.md)
+- [var arrayLength: Int](./arraylength.md)
   The length of an array argument.
-- [var constantBlockAlignment: Int](mtlargumentdescriptor/constantblockalignment.md)
+- [var constantBlockAlignment: Int](./constantblockalignment.md)
   The alignment of the constant block.
 
 

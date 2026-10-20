@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct locklist {
     ...
 };
@@ -17,8 +17,8 @@ struct locklist {
 ## Topics
 
 ### Instance Properties
-- [tqh_first](locklist/3755426-tqh_first.md)
-- [tqh_last](locklist/3755427-tqh_last.md)
+- [tqh_first](./locklist/api-3755426-tqh_first.md)
+- [tqh_last](./locklist/api-3755427-tqh_last.md)
 
 
 ---

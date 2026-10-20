@@ -1,14 +1,15 @@
 # handlePowerEvent
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 static IOReturn handlePowerEvent(void *target, void *parameter, UInt32 messageType, IOService *provider, void *messageArgument, vm_size_t messageArgumentSize);
 ```
 

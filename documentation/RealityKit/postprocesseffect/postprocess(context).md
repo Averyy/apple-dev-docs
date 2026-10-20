@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 A method where you can implement postprocess effects.
@@ -24,9 +25,9 @@ mutating func postProcess(context: borrowing PostProcessEffectContext<any MTLCom
 
 RealityKit calls this method after rendering the main scene, but before it is drawn on the screen, ideal for performing screen-space effects or drawing overlays.
 
-When registering a post processing effect, the callback function needs to encode the modified frame buffer to the context’s [`targetColorTexture`](postprocesseffectcontext/targetcolortexture.md), or nothing renders.
+When registering a post processing effect, the callback function needs to encode the modified frame buffer to the context’s [`targetColorTexture`](../postprocesseffectcontext/targetcolortexture.md), or nothing renders.
 
-An empty implementation might look like this, which copies the [`sourceColorTexture`](postprocesseffectcontext/sourcecolortexture.md) directly to the [`targetColorTexture`](postprocesseffectcontext/targetcolortexture.md):
+An empty implementation might look like this, which copies the [`sourceColorTexture`](../postprocesseffectcontext/sourcecolortexture.md) directly to the [`targetColorTexture`](../postprocesseffectcontext/targetcolortexture.md):
 
 ```swift
 func postProcess(context: borrowing PostProcessEffectContext<MTLCommandBuffer>) {

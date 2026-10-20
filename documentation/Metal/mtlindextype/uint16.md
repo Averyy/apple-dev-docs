@@ -1,7 +1,8 @@
 # MTLIndexType.uint16
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A 16-bit unsigned integer used as a primitive index.
 
@@ -10,7 +11,7 @@ A 16-bit unsigned integer used as a primitive index.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,9 +20,14 @@ A 16-bit unsigned integer used as a primitive index.
 case uint16
 ```
 
+```c
+MTLIndexTypeUInt16
+```
+
 ## See Also
 
-- [MTLIndexType.uint32](mtlindextype/uint32.md)
+### Index types
+- [MTLIndexType.uint32](./uint32.md)
   A 32-bit unsigned integer used as a primitive index.
 
 

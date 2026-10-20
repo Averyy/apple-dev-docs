@@ -1,7 +1,8 @@
 # CompositeSubpart
 
 **Framework**: hvf  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A subpart in a Composite part
 
@@ -23,20 +24,20 @@ struct CompositeSubpart
 ## Topics
 
 ### Initializers
-- [init(partIndex: UInt32, treePartOffset: UInt16, treeAxisOffset: UInt16)](compositesubpart/init(partindex:treepartoffset:treeaxisoffset:).md)
+- [init(partIndex: UInt32, treePartOffset: UInt16, treeAxisOffset: UInt16)](./compositesubpart/init%28partindex,treepartoffset,treeaxisoffset%29.md)
 ### Instance Properties
-- [var partIndex: UInt32](compositesubpart/partindex.md)
+- [var partIndex: UInt32](./compositesubpart/partindex.md)
   The index of the part this subpart renders
-- [var treeAxisOffset: UInt16](compositesubpart/treeaxisoffset.md)
+- [var treeAxisOffset: UInt16](./compositesubpart/treeaxisoffset.md)
   The offset of the part’s axis value settings in the render context axis value tree (depth first)
-- [var treePartOffset: UInt16](compositesubpart/treepartoffset.md)
+- [var treePartOffset: UInt16](./compositesubpart/treepartoffset.md)
   The offset of the part’s data in the render context transform tree (depth first)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # scaleEffect(x:y:anchor:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scales the view’s rendered output by the given horizontal and vertical amounts, relative to an anchor point.
 
@@ -28,13 +29,14 @@ An effect that scales the view’s rendered output.
 
 - `x`: An amount that represents the horizontal amount to scale the view. The default value is `1.0`.
 - `y`: An amount that represents the vertical amount to scale the view. The default value is `1.0`.
-- `anchor`: The point with a default of [`center`](unitpoint/center.md) that defines the location within the view from which to apply the transformation.
+- `anchor`: The point with a default of [`center`](../unitpoint/center.md) that defines the location within the view from which to apply the transformation.
 
 ## See Also
 
-- [func scaleEffect(_:anchor:)](visualeffect/scaleeffect(_:anchor:).md)
+### Scaling
+- [func scaleEffect(_:anchor:)](./scaleeffect%28_,anchor%29.md)
   Scales this view uniformly by the specified factor, relative to an anchor point.
-- [func scaleEffect(x: CGFloat, y: CGFloat, z: CGFloat, anchor: UnitPoint3D) -> some VisualEffect](visualeffect/scaleeffect(x:y:z:anchor:).md)
+- [func scaleEffect(x: CGFloat, y: CGFloat, z: CGFloat, anchor: UnitPoint3D) -> some VisualEffect](./scaleeffect%28x,y,z,anchor%29.md)
   Scales this view by the specified horizontal, vertical, and depth factors, relative to an anchor point.
 
 

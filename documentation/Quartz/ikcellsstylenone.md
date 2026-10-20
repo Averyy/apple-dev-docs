@@ -1,7 +1,8 @@
 # IKCellsStyleNone
 
 **Framework**: Quartz  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 No style.
 
@@ -14,15 +15,20 @@ No style.
 var IKCellsStyleNone: Int { get }
 ```
 
+```c
+IKCellsStyleNone
+```
+
 ## See Also
 
-- [var IKCellsStyleShadowed: Int](ikcellsstyleshadowed.md)
+### Constants
+- [var IKCellsStyleShadowed: Int](./ikcellsstyleshadowed.md)
   Cells use shadows.
-- [var IKCellsStyleOutlined: Int](ikcellsstyleoutlined.md)
+- [var IKCellsStyleOutlined: Int](./ikcellsstyleoutlined.md)
   Cells are outlined.
-- [var IKCellsStyleTitled: Int](ikcellsstyletitled.md)
+- [var IKCellsStyleTitled: Int](./ikcellsstyletitled.md)
   Cells display a title.
-- [var IKCellsStyleSubtitled: Int](ikcellsstylesubtitled.md)
+- [var IKCellsStyleSubtitled: Int](./ikcellsstylesubtitled.md)
   Cells display a subtitle.
 
 

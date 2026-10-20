@@ -1,7 +1,8 @@
 # UITextFormattingViewController.ChangeValue.textList(_:)
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+

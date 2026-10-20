@@ -1,7 +1,8 @@
 # minLossReduction
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -19,12 +20,13 @@ var minLossReduction: Double
 
 ## See Also
 
-- [var maxDepth: Int](mldecisiontreeregressor/modelparameters-swift.struct/maxdepth.md)
-- [var minChildWeight: Double](mldecisiontreeregressor/modelparameters-swift.struct/minchildweight.md)
-- [var randomSeed: Int](mldecisiontreeregressor/modelparameters-swift.struct/randomseed.md)
-- [var validationData: MLDataTable?](mldecisiontreeregressor/modelparameters-swift.struct/validationdata-swift.property.md)
+### Accessing parameters
+- [var maxDepth: Int](./maxdepth.md)
+- [var minChildWeight: Double](./minchildweight.md)
+- [var randomSeed: Int](./randomseed.md)
+- [var validationData: MLDataTable?](./validationdata-swift.property.md)
   Validation data represented as a `MLDataTable`.
-- [var validation: MLDecisionTreeRegressor.ModelParameters.ValidationData](mldecisiontreeregressor/modelparameters-swift.struct/validation.md)
+- [var validation: MLDecisionTreeRegressor.ModelParameters.ValidationData](./validation.md)
   Validation data.
 
 

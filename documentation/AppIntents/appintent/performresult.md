@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 **Availability**:
@@ -10,7 +11,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -21,9 +22,10 @@ associatedtype PerformResult : IntentResult
 
 ## See Also
 
-- [func perform() async throws -> Self.PerformResult](appintent/perform.md)
+### Performing the action
+- [func perform() async throws -> Self.PerformResult](./perform%28%29.md)
   Performs the intent’s action and returns a result, after resolving any parameters.
-- [var systemContext: IntentSystemContext](appintent/systemcontext.md)
+- [var systemContext: IntentSystemContext](./systemcontext.md)
   Contextual information that the system provides while it performs the app intent.
 
 

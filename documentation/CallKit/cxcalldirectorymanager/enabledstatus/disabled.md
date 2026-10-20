@@ -1,7 +1,8 @@
 # CXCallDirectoryManager.EnabledStatus.disabled
 
 **Framework**: CallKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the extension is disabled.
 
@@ -17,11 +18,16 @@ Indicates that the extension is disabled.
 case disabled
 ```
 
+```c
+CXCallDirectoryEnabledStatusDisabled
+```
+
 ## See Also
 
-- [CXCallDirectoryManager.EnabledStatus.unknown](cxcalldirectorymanager/enabledstatus/unknown.md)
+### Constants
+- [CXCallDirectoryManager.EnabledStatus.unknown](./unknown.md)
   Indicates that the enabled status for the extension is unknown.
-- [CXCallDirectoryManager.EnabledStatus.enabled](cxcalldirectorymanager/enabledstatus/enabled.md)
+- [CXCallDirectoryManager.EnabledStatus.enabled](./enabled.md)
   Indicates that the extension is enabled.
 
 

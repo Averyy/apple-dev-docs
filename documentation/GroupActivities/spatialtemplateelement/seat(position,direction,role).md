@@ -1,7 +1,8 @@
 # seat(position:direction:role:)
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a seat element with the specified position, direction, and role information.
 
@@ -13,6 +14,8 @@ Creates a seat element with the specified position, direction, and role informat
 ```swift
 static func seat(position: SpatialTemplateElementPosition, direction: SpatialTemplateElementDirection = .lookingAt(.app), role: (any SpatialTemplateRole)? = nil) -> Self
 ```
+
+Available when `Self` is `SpatialTemplateSeatElement`.
 
 #### Return Value
 

@@ -1,7 +1,8 @@
 # logout(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func logout(completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func logout() async throws
+```
+
+```objc
+- (void) logoutWithCompletion:(MTRStatusCompletion) completion;
 ```
 
 

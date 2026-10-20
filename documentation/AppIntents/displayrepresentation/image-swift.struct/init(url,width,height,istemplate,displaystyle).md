@@ -1,7 +1,8 @@
 # init(url:width:height:isTemplate:displayStyle:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an image, of the specified size, from an image file in the local file system, specifying the display style.
 
@@ -11,7 +12,7 @@ Creates an image, of the specified size, from an image file in the local file sy
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

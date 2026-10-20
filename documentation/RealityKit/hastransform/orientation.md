@@ -1,7 +1,8 @@
 # orientation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rotation of the entity relative to its parent.
 
@@ -11,7 +12,7 @@ The rotation of the entity relative to its parent.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,19 +23,20 @@ The rotation of the entity relative to its parent.
 
 ## Mentions
 
-- [Automatically animating RealityKit entities](automatically-animating-realitykit-entities.md)
+- [Automatically animating RealityKit entities](../automatically-animating-realitykit-entities.md)
 
 #### Discussion
 
-This value is the entity’s rotation relative to its parent. To get the world-space orientation of the entity, use [`orientation(relativeTo:)`](hastransform/orientation(relativeto:).md), passing `nil` as the reference entity.
+This value is the entity’s rotation relative to its parent. To get the world-space orientation of the entity, use [`orientation(relativeTo:)`](./orientation%28relativeto%29.md), passing `nil` as the reference entity.
 
-This is the same as the [`rotation`](transform/rotation.md) value on the [`transform`](hastransform/transform.md).
+This is the same as the [`rotation`](../transform/rotation.md) value on the [`transform`](./transform.md).
 
 ## See Also
 
-- [func orientation(relativeTo: Entity?) -> simd_quatf](hastransform/orientation(relativeto:).md)
+### Rotating an entity
+- [func orientation(relativeTo: Entity?) -> simd_quatf](./orientation%28relativeto%29.md)
   Gets the orientation of an entity relative to the given entity.
-- [func setOrientation(simd_quatf, relativeTo: Entity?)](hastransform/setorientation(_:relativeto:).md)
+- [func setOrientation(simd_quatf, relativeTo: Entity?)](./setorientation%28_,relativeto%29.md)
   Sets the orientation of the entity relative to the given reference entity.
 
 

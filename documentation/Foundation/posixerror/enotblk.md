@@ -1,7 +1,8 @@
 # ENOTBLK
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Block device required.
 

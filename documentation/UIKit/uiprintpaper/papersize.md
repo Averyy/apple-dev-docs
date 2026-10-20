@@ -1,7 +1,8 @@
 # paperSize
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the sheet to use for printing.
 
@@ -17,13 +18,18 @@ The size of the sheet to use for printing.
 var paperSize: CGSize { get }
 ```
 
+```objc
+@property (readonly) CGSize paperSize;
+```
+
 #### Discussion
 
 The paper size is often associated with a standard designation, such as “Letter” and “A4”. For example, the paper size for a Letter sheet of paper is 612 points wide and 792 points high.
 
 ## See Also
 
-- [var printableRect: CGRect](uiprintpaper/printablerect.md)
+### Getting the paper size and the printing area
+- [var printableRect: CGRect](./printablerect.md)
   The rectangle that represents the portion of the paper that can be imaged upon.
 
 

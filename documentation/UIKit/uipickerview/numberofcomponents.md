@@ -1,7 +1,8 @@
 # numberOfComponents
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of components for the picker view.
 
@@ -17,15 +18,20 @@ The number of components for the picker view.
 var numberOfComponents: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger numberOfComponents;
+```
+
 #### Discussion
 
-A [`UIPickerView`](uipickerview.md) object fetches the value of this property from the data source and caches it. The default value is `0`.
+A [`UIPickerView`](../uipickerview.md) object fetches the value of this property from the data source and caches it. The default value is `0`.
 
 ## See Also
 
-- [func numberOfRows(inComponent: Int) -> Int](uipickerview/numberofrows(incomponent:).md)
+### Getting the dimensions of the picker view
+- [func numberOfRows(inComponent: Int) -> Int](./numberofrows%28incomponent%29.md)
   Returns the number of rows for a component.
-- [func rowSize(forComponent: Int) -> CGSize](uipickerview/rowsize(forcomponent:).md)
+- [func rowSize(forComponent: Int) -> CGSize](./rowsize%28forcomponent%29.md)
   Returns the size of a row for a component.
 
 

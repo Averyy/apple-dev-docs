@@ -1,7 +1,8 @@
 # earlyStoppingRounds
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Validation data must be specified for an early stop.
 
@@ -21,20 +22,21 @@ var earlyStoppingRounds: Int?
 
 ## See Also
 
-- [var validationData: MLDataTable?](mlboostedtreeclassifier/modelparameters-swift.struct/validationdata-swift.property.md)
+### Accessing parameters
+- [var validationData: MLDataTable?](./validationdata-swift.property.md)
   Validation data represented as a `MLDataTable`.
-- [var maxDepth: Int](mlboostedtreeclassifier/modelparameters-swift.struct/maxdepth.md)
-- [var maxIterations: Int](mlboostedtreeclassifier/modelparameters-swift.struct/maxiterations.md)
-- [var minLossReduction: Double](mlboostedtreeclassifier/modelparameters-swift.struct/minlossreduction.md)
-- [var minChildWeight: Double](mlboostedtreeclassifier/modelparameters-swift.struct/minchildweight.md)
-- [var randomSeed: Int](mlboostedtreeclassifier/modelparameters-swift.struct/randomseed.md)
-- [var stepSize: Double](mlboostedtreeclassifier/modelparameters-swift.struct/stepsize.md)
+- [var maxDepth: Int](./maxdepth.md)
+- [var maxIterations: Int](./maxiterations.md)
+- [var minLossReduction: Double](./minlossreduction.md)
+- [var minChildWeight: Double](./minchildweight.md)
+- [var randomSeed: Int](./randomseed.md)
+- [var stepSize: Double](./stepsize.md)
   Must be in the range (0, 1).
-- [var rowSubsample: Double](mlboostedtreeclassifier/modelparameters-swift.struct/rowsubsample.md)
+- [var rowSubsample: Double](./rowsubsample.md)
   Must be in the range (0, 1).
-- [var columnSubsample: Double](mlboostedtreeclassifier/modelparameters-swift.struct/columnsubsample.md)
+- [var columnSubsample: Double](./columnsubsample.md)
   Must be in the range (0, 1).
-- [var validation: MLBoostedTreeClassifier.ModelParameters.ValidationData](mlboostedtreeclassifier/modelparameters-swift.struct/validation.md)
+- [var validation: MLBoostedTreeClassifier.ModelParameters.ValidationData](./validation.md)
   Validation data.
 
 

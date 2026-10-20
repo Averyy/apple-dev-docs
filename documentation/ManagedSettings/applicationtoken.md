@@ -1,7 +1,8 @@
 # ApplicationToken
 
 **Framework**: Managed Settings  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A representation of an application.
 
@@ -18,11 +19,12 @@ typealias ApplicationToken = Token<Application>
 
 #### Discussion
 
-Use `ApplicationToken` to restrict and filter device applications without access to personal user data. [`FamilyActivitySelection`](https://developer.apple.com/documentation/familycontrols/familyactivityselection) provides tokens that devices within the same Family Sharing group can use to identify applications.
+Use `ApplicationToken` to restrict and filter device applications without access to personal user data. [`FamilyActivitySelection`](../FamilyControls/familyactivityselection.md) provides tokens that devices within the same Family Sharing group can use to identify applications.
 
 ## See Also
 
-- [struct Application](application.md)
+### Apps
+- [struct Application](./application.md)
   A representation of an application on the user’s device.
 
 

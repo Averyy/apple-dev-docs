@@ -1,7 +1,8 @@
 # sub_umbrella
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A data structure of type `lc_str`. Specifies the name of the umbrella framework of which this file is a member.
 
@@ -10,7 +11,7 @@ A data structure of type `lc_str`. Specifies the name of the umbrella framework 
 
 ## Declaration
 
-```swift
+```c
 union lc_str sub_umbrella;
 ```
 

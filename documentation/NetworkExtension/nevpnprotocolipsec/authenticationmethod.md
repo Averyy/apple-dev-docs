@@ -1,7 +1,8 @@
 # authenticationMethod
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The method used to authenticate the device with the IPSec server. For IKE version 2, when using extended authentication, this authentication method only affects how the client validates the authentication payload presented by the server.
 
@@ -19,21 +20,26 @@ The method used to authenticate the device with the IPSec server. For IKE versio
 var authenticationMethod: NEVPNIKEAuthenticationMethod { get set }
 ```
 
+```objc
+@property NEVPNIKEAuthenticationMethod authenticationMethod;
+```
+
 #### Discussion
 
-If this property is set to `NEVPNIKEAuthenticationMethodNone`, extended authentication will still be negotiated if [`useExtendedAuthentication`](nevpnprotocolipsec/useextendedauthentication.md) is set to [`true`](https://developer.apple.com/documentation/swift/true).
+If this property is set to `NEVPNIKEAuthenticationMethodNone`, extended authentication will still be negotiated if [`useExtendedAuthentication`](./useextendedauthentication.md) is set to [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [enum NEVPNIKEAuthenticationMethod](nevpnikeauthenticationmethod.md)
+### Accessing IPSec properties
+- [enum NEVPNIKEAuthenticationMethod](../nevpnikeauthenticationmethod.md)
   Internet Key Exchange (IKE) authentication methods used to authenticate with the IPSec server.
-- [var useExtendedAuthentication: Bool](nevpnprotocolipsec/useextendedauthentication.md)
+- [var useExtendedAuthentication: Bool](./useextendedauthentication.md)
   A flag indicating if extended authentication will be negotiated.
-- [var sharedSecretReference: Data?](nevpnprotocolipsec/sharedsecretreference.md)
+- [var sharedSecretReference: Data?](./sharedsecretreference.md)
   A persistent keychain reference to a keychain item containing the IKE shared secret.
-- [var localIdentifier: String?](nevpnprotocolipsec/localidentifier.md)
+- [var localIdentifier: String?](./localidentifier.md)
   A string identifying the iOS or macOS device for authentication purposes
-- [var remoteIdentifier: String?](nevpnprotocolipsec/remoteidentifier.md)
+- [var remoteIdentifier: String?](./remoteidentifier.md)
   A string identifying the IPSec server for authentication purposes
 
 

@@ -1,23 +1,28 @@
 # name
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the attribute.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var name: UnsafePointer<CChar>
+```
+
+```c
+const char * name;
 ```
 
 

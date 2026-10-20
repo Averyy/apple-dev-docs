@@ -1,7 +1,8 @@
 # nw_txt_record_applier_t
 
 **Framework**: Network  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A block that iterates over values and keys in a TXT record dictionary.
 
@@ -20,40 +21,45 @@ A block that iterates over values and keys in a TXT record dictionary.
 typealias nw_txt_record_applier_t = (UnsafePointer<CChar>, nw_txt_record_find_key_t, UnsafePointer<UInt8>, Int) -> Bool
 ```
 
+```c
+typedef _Bool (^)(const char *, nw_txt_record_find_key_t, const unsigned char *, unsigned long) nw_txt_record_applier_t;
+```
+
 #### Return Value
 
 Return true to continue iterating, or false to stop iterating.
 
 ## See Also
 
-- [typealias nw_advertise_descriptor_t](nw_advertise_descriptor_t.md)
+### Data Types
+- [typealias nw_advertise_descriptor_t](./nw_advertise_descriptor_t.md)
   A description used to advertise the Bonjour service that a listener provides.
-- [typealias nw_browse_descriptor_t](nw_browse_descriptor_t.md)
+- [typealias nw_browse_descriptor_t](./nw_browse_descriptor_t.md)
   A service description used to discover Bonjour services.
-- [typealias nw_browse_result_change_t](nw_browse_result_change_t.md)
+- [typealias nw_browse_result_change_t](./nw_browse_result_change_t.md)
   Flags describing ways in which discovered services can change between specific results.
-- [typealias nw_browse_result_enumerate_interface_t](nw_browse_result_enumerate_interface_t.md)
+- [typealias nw_browse_result_enumerate_interface_t](./nw_browse_result_enumerate_interface_t.md)
   A handler that enumerates the interfaces associated with a discovered service.
-- [typealias nw_browse_result_t](nw_browse_result_t.md)
+- [typealias nw_browse_result_t](./nw_browse_result_t.md)
   A discovered service and metadata about the service.
-- [typealias nw_browser_browse_results_changed_handler_t](nw_browser_browse_results_changed_handler_t.md)
+- [typealias nw_browser_browse_results_changed_handler_t](./nw_browser_browse_results_changed_handler_t.md)
   A handler that delivers updates about discovered services.
-- [typealias nw_browser_state_changed_handler_t](nw_browser_state_changed_handler_t.md)
+- [typealias nw_browser_state_changed_handler_t](./nw_browser_state_changed_handler_t.md)
   A handler that delivers browser state updates with associated errors.
-- [typealias nw_browser_t](nw_browser_t.md)
+- [typealias nw_browser_t](./nw_browser_t.md)
   An object you use to browse for available network services.
-- [typealias nw_connection_boolean_event_handler_t](nw_connection_boolean_event_handler_t.md)
+- [typealias nw_connection_boolean_event_handler_t](./nw_connection_boolean_event_handler_t.md)
   A handler that receives Boolean state updates from a connection, such as viability and better path state.
-- [typealias nw_connection_group_new_connection_handler_t](nw_connection_group_new_connection_handler_t.md)
-- [typealias nw_connection_group_receive_handler_t](nw_connection_group_receive_handler_t.md)
+- [typealias nw_connection_group_new_connection_handler_t](./nw_connection_group_new_connection_handler_t.md)
+- [typealias nw_connection_group_receive_handler_t](./nw_connection_group_receive_handler_t.md)
   A handler that receives inbound messages from members of the group.
-- [typealias nw_connection_group_send_completion_t](nw_connection_group_send_completion_t.md)
+- [typealias nw_connection_group_send_completion_t](./nw_connection_group_send_completion_t.md)
   A completion to notify you when data has been processed and sent.
-- [typealias nw_connection_group_state_changed_handler_t](nw_connection_group_state_changed_handler_t.md)
+- [typealias nw_connection_group_state_changed_handler_t](./nw_connection_group_state_changed_handler_t.md)
   A handler that receives connection group state updates.
-- [typealias nw_connection_group_t](nw_connection_group_t.md)
+- [typealias nw_connection_group_t](./nw_connection_group_t.md)
   An object you use to communicate with a group of endpoints, such as an IP multicast group on a local network.
-- [typealias nw_connection_path_event_handler_t](nw_connection_path_event_handler_t.md)
+- [typealias nw_connection_path_event_handler_t](./nw_connection_path_event_handler_t.md)
   A handler that delivers network path updates.
 
 

@@ -1,7 +1,8 @@
 # BinaryInteger
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An integer type with a binary representation.
 
@@ -28,7 +29,7 @@ The `BinaryInteger` protocol is the basis for all the integer types provided by 
 
 You can create new instances of a type that conforms to the `BinaryInteger` protocol from a floating-point number or another binary integer of any type. The `BinaryInteger` protocol provides initializers for four different kinds of conversion.
 
-#### Range Checked Conversion
+#### Range-Checked Conversion
 
 You use the default `init(_:)` initializer to create a new instance when you’re sure that the value passed is representable in the new type. For example, an instance of `Int16` can represent the value `500`, so the first conversion in the code sample below succeeds. That same value is too large to represent as an `Int8` instance, so the second conversion fails, triggering a runtime error.
 
@@ -151,117 +152,118 @@ if z > x {
 ## Topics
 
 ### Creating a Binary Integer
-- [init()](binaryinteger/init.md)
+- [init()](./binaryinteger/init%28%29.md)
   Creates a new value equal to zero.
 ### Converting Integers
-- [init<T>(T)](binaryinteger/init(_:)-8gmdl.md)
+- [init<T>(T)](./binaryinteger/init%28_%29-8gmdl.md)
   Creates a new instance from the given integer.
-- [init<T>(clamping: T)](binaryinteger/init(clamping:).md)
+- [init<T>(clamping: T)](./binaryinteger/init%28clamping%29.md)
   Creates a new instance with the representable value that’s closest to the given integer.
-- [init<T>(truncatingIfNeeded: T)](binaryinteger/init(truncatingifneeded:).md)
+- [init<T>(truncatingIfNeeded: T)](./binaryinteger/init%28truncatingifneeded%29.md)
   Creates a new instance from the bit pattern of the given instance by sign-extending or truncating to fit this type.
 ### Converting Floating-Point Values
-- [init<T>(T)](binaryinteger/init(_:)-2ln0u.md)
+- [init<T>(T)](./binaryinteger/init%28_%29-2ln0u.md)
   Creates an integer from the given floating-point value, rounding toward zero.
 ### Converting with No Loss of Precision
-- [init?<T>(exactly: T)](binaryinteger/init(exactly:).md)
+- [init?<T>(exactly: T)](./binaryinteger/init%28exactly%29.md)
   Creates an integer from the given floating-point value, if it can be represented exactly.
 ### Performing Calculations
-- [Binary Integer Operators](binary-integer-operators.md)
+- [Binary Integer Operators](./binary-integer-operators.md)
   Perform arithmetic and bitwise operations or compare values.
-- [func quotientAndRemainder(dividingBy: Self) -> (quotient: Self, remainder: Self)](binaryinteger/quotientandremainder(dividingby:).md)
+- [func quotientAndRemainder(dividingBy: Self) -> (quotient: Self, remainder: Self)](./binaryinteger/quotientandremainder%28dividingby%29.md)
   Returns the quotient and remainder of this value divided by the given value.
-- [func isMultiple(of: Self) -> Bool](binaryinteger/ismultiple(of:).md)
+- [func isMultiple(of: Self) -> Bool](./binaryinteger/ismultiple%28of%29.md)
   Returns `true` if this value is a multiple of the given value, and `false` otherwise.
 ### Finding the Sign and Magnitude
-- [func signum() -> Self](binaryinteger/signum.md)
+- [func signum() -> Self](./binaryinteger/signum%28%29.md)
   Returns `-1` if this value is negative and `1` if it’s positive; otherwise, `0`.
 ### Accessing Numeric Constants
-- [static var isSigned: Bool](binaryinteger/issigned.md)
+- [static var isSigned: Bool](./binaryinteger/issigned.md)
   A Boolean value indicating whether this type is a signed integer type.
 ### Working with Binary Representation
-- [var bitWidth: Int](binaryinteger/bitwidth.md)
+- [var bitWidth: Int](./binaryinteger/bitwidth.md)
   The number of bits in the current binary representation of this value.
-- [var trailingZeroBitCount: Int](binaryinteger/trailingzerobitcount.md)
+- [var trailingZeroBitCount: Int](./binaryinteger/trailingzerobitcount.md)
   The number of trailing zeros in this value’s binary representation.
-- [var words: Self.Words](binaryinteger/words-swift.property.md)
+- [var words: Self.Words](./binaryinteger/words-swift.property.md)
   A collection containing the words of this value’s binary representation, in order from the least significant to most significant.
-- [associatedtype Words : RandomAccessCollection](binaryinteger/words-swift.associatedtype.md)
+- [associatedtype Words : RandomAccessCollection](./binaryinteger/words-swift.associatedtype.md)
   A type that represents the words of a binary integer.
 ### Operators
-- [static func % (Self, Self) -> Self](binaryinteger/_(_:_:)-30ngi.md)
+- [static func % (Self, Self) -> Self](./binaryinteger/op%28_,_%29-30ngi.md)
   Returns the remainder of dividing the first value by the second.
-- [static func ^ (Self, Self) -> Self](binaryinteger/_(_:_:)-3qw5d.md)
+- [static func ^ (Self, Self) -> Self](./binaryinteger/op%28_,_%29-3qw5d.md)
   Returns the result of performing a bitwise XOR operation on the two given values.
-- [static func | (Self, Self) -> Self](binaryinteger/_(_:_:)-6qhsw.md)
+- [static func | (Self, Self) -> Self](./binaryinteger/op%28_,_%29-6qhsw.md)
   Returns the result of performing a bitwise OR operation on the two given values.
-- [static func ^= (inout Self, Self)](binaryinteger/_=(_:_:)-1fatv.md)
+- [static func ^= (inout Self, Self)](./binaryinteger/opeq%28_,_%29-1fatv.md)
   Stores the result of performing a bitwise XOR operation on the two given values in the left-hand-side variable.
-- [static func |= (inout Self, Self)](binaryinteger/_=(_:_:)-4vfmj.md)
+- [static func |= (inout Self, Self)](./binaryinteger/opeq%28_,_%29-4vfmj.md)
   Stores the result of performing a bitwise OR operation on the two given values in the left-hand-side variable.
-- [static func %= (inout Self, Self)](binaryinteger/_=(_:_:)-79wgi.md)
+- [static func %= (inout Self, Self)](./binaryinteger/opeq%28_,_%29-79wgi.md)
   Divides the first value by the second and stores the remainder in the left-hand-side variable.
-- [static func << <RHS>(Self, RHS) -> Self](binaryinteger/__(_:_:)-28lmu.md)
+- [static func << <RHS>(Self, RHS) -> Self](./binaryinteger/opop%28_,_%29-28lmu.md)
   Returns the result of shifting a value’s binary representation the specified number of digits to the left.
-- [static func >> <RHS>(Self, RHS) -> Self](binaryinteger/__(_:_:)-4vnij.md)
+- [static func >> <RHS>(Self, RHS) -> Self](./binaryinteger/opop%28_,_%29-4vnij.md)
   Returns the result of shifting a value’s binary representation the specified number of digits to the right.
-- [static func >>= <RHS>(inout Self, RHS)](binaryinteger/__=(_:_:)-5lhky.md)
+- [static func >>= <RHS>(inout Self, RHS)](./binaryinteger/opopeq%28_,_%29-5lhky.md)
   Stores the result of shifting a value’s binary representation the specified number of digits to the right in the left-hand-side variable.
-- [static func <<= <RHS>(inout Self, RHS)](binaryinteger/__=(_:_:)-9pzpp.md)
+- [static func <<= <RHS>(inout Self, RHS)](./binaryinteger/opopeq%28_,_%29-9pzpp.md)
   Stores the result of shifting a value’s binary representation the specified number of digits to the left in the left-hand-side variable.
 ### Initializers
-- [init(String, format: IntegerFormatStyle<Self>, lenient: Bool) throws](binaryinteger/init(_:format:lenient:)-2qv61.md)
-- [init(String, format: IntegerFormatStyle<Self>.Currency, lenient: Bool) throws](binaryinteger/init(_:format:lenient:)-50z9r.md)
-- [init(String, format: IntegerFormatStyle<Self>.Percent, lenient: Bool) throws](binaryinteger/init(_:format:lenient:)-86j1g.md)
-- [init<S>(S.ParseInput, strategy: S) throws](binaryinteger/init(_:strategy:)-207i8.md)
+- [init(String, format: IntegerFormatStyle<Self>, lenient: Bool) throws](./binaryinteger/init%28_,format,lenient%29-2qv61.md)
+- [init(String, format: IntegerFormatStyle<Self>.Currency, lenient: Bool) throws](./binaryinteger/init%28_,format,lenient%29-50z9r.md)
+- [init(String, format: IntegerFormatStyle<Self>.Percent, lenient: Bool) throws](./binaryinteger/init%28_,format,lenient%29-86j1g.md)
+- [init<S>(S.ParseInput, strategy: S) throws](./binaryinteger/init%28_,strategy%29-207i8.md)
   Initialize an instance by parsing `value` with the given `strategy`.
 ### Instance Methods
-- [func formatted() -> String](binaryinteger/formatted.md)
+- [func formatted() -> String](./binaryinteger/formatted%28%29.md)
   Format `self` using `IntegerFormatStyle()`
-- [func formatted<S>(S) -> S.FormatOutput](binaryinteger/formatted(_:)-4qd73.md)
+- [func formatted<S>(S) -> S.FormatOutput](./binaryinteger/formatted%28_%29-4qd73.md)
   Format `self` with the given format.
-- [func formatted<S>(S) -> S.FormatOutput](binaryinteger/formatted(_:)-73k3e.md)
+- [func formatted<S>(S) -> S.FormatOutput](./binaryinteger/formatted%28_%29-73k3e.md)
   Format `self` with the given format. `self` is first converted to `S.FormatInput` type, then format with the given format.
 ### Default Implementations
-- [BinaryInteger Implementations](binaryinteger/binaryinteger-implementations.md)
-- [Equatable Implementations](binaryinteger/equatable-implementations.md)
+- [BinaryInteger Implementations](./binaryinteger/binaryinteger-implementations.md)
+- [Equatable Implementations](./binaryinteger/equatable-implementations.md)
 
 ## Relationships
 
 ### Inherits From
-- [AdditiveArithmetic](additivearithmetic.md)
-- [Comparable](comparable.md)
-- [CustomStringConvertible](customstringconvertible.md)
-- [Equatable](equatable.md)
-- [ExpressibleByIntegerLiteral](expressiblebyintegerliteral.md)
-- [Hashable](hashable.md)
-- [Numeric](numeric.md)
-- [Strideable](strideable.md)
+- [AdditiveArithmetic](./additivearithmetic.md)
+- [Comparable](./comparable.md)
+- [CustomStringConvertible](./customstringconvertible.md)
+- [Equatable](./equatable.md)
+- [ExpressibleByIntegerLiteral](./expressiblebyintegerliteral.md)
+- [Hashable](./hashable.md)
+- [Numeric](./numeric.md)
+- [Strideable](./strideable.md)
 ### Inherited By
-- [FixedWidthInteger](fixedwidthinteger.md)
-- [SignedInteger](signedinteger.md)
-- [UnsignedInteger](unsignedinteger.md)
+- [FixedWidthInteger](./fixedwidthinteger.md)
+- [SignedInteger](./signedinteger.md)
+- [UnsignedInteger](./unsignedinteger.md)
 ### Conforming Types
-- [Int](int.md)
-- [Int128](int128.md)
-- [Int16](int16.md)
-- [Int32](int32.md)
-- [Int64](int64.md)
-- [Int8](int8.md)
-- [UInt](uint.md)
-- [UInt128](uint128.md)
-- [UInt16](uint16.md)
-- [UInt32](uint32.md)
-- [UInt64](uint64.md)
-- [UInt8](uint8.md)
+- [Int](./int.md)
+- [Int128](./int128.md)
+- [Int16](./int16.md)
+- [Int32](./int32.md)
+- [Int64](./int64.md)
+- [Int8](./int8.md)
+- [UInt](./uint.md)
+- [UInt128](./uint128.md)
+- [UInt16](./uint16.md)
+- [UInt32](./uint32.md)
+- [UInt64](./uint64.md)
+- [UInt8](./uint8.md)
 
 ## See Also
 
-- [protocol FixedWidthInteger](fixedwidthinteger.md)
+### Integer
+- [protocol FixedWidthInteger](./fixedwidthinteger.md)
   An integer type that uses a fixed size for every instance.
-- [protocol SignedInteger](signedinteger.md)
+- [protocol SignedInteger](./signedinteger.md)
   An integer type that can represent both positive and negative values.
-- [protocol UnsignedInteger](unsignedinteger.md)
+- [protocol UnsignedInteger](./unsignedinteger.md)
   An integer type that can represent only nonnegative values.
 
 

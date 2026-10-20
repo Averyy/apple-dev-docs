@@ -1,21 +1,26 @@
 # insertSubview(_:belowSubview:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts a view below another view in the view hierarchy.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 func insertSubview(_ view: UIView, belowSubview siblingSubview: UIView)
+```
+
+```objc
+- (void) insertSubview:(UIView *) view belowSubview:(UIView *) siblingSubview;
 ```
 
 #### Discussion
@@ -31,27 +36,28 @@ Views can have only one superview. If `view` already has a superview and that vi
 
 ## See Also
 
-- [var superview: UIView?](uiview/superview.md)
+### Managing the view hierarchy
+- [var superview: UIView?](./superview.md)
   The receiver’s superview, or `nil` if it has none.
-- [var subviews: [UIView]](uiview/subviews.md)
+- [var subviews: [UIView]](./subviews.md)
   The receiver’s immediate subviews.
-- [var window: UIWindow?](uiview/window.md)
+- [var window: UIWindow?](./window.md)
   The receiver’s window object, or `nil` if it has none.
-- [func addSubview(UIView)](uiview/addsubview(_:).md)
+- [func addSubview(UIView)](./addsubview%28_%29.md)
   Adds a view to the end of the receiver’s list of subviews.
-- [func bringSubviewToFront(UIView)](uiview/bringsubviewtofront(_:).md)
+- [func bringSubviewToFront(UIView)](./bringsubviewtofront%28_%29.md)
   Moves the specified subview so that it appears on top of its siblings.
-- [func sendSubviewToBack(UIView)](uiview/sendsubviewtoback(_:).md)
+- [func sendSubviewToBack(UIView)](./sendsubviewtoback%28_%29.md)
   Moves the specified subview so that it appears behind its siblings.
-- [func removeFromSuperview()](uiview/removefromsuperview.md)
+- [func removeFromSuperview()](./removefromsuperview%28%29.md)
   Unlinks the view from its superview and its window, and removes it from the responder chain.
-- [func insertSubview(UIView, at: Int)](uiview/insertsubview(_:at:).md)
+- [func insertSubview(UIView, at: Int)](./insertsubview%28_,at%29.md)
   Inserts a subview at the specified index.
-- [func insertSubview(UIView, aboveSubview: UIView)](uiview/insertsubview(_:abovesubview:).md)
+- [func insertSubview(UIView, aboveSubview: UIView)](./insertsubview%28_,abovesubview%29.md)
   Inserts a view above another view in the view hierarchy.
-- [func exchangeSubview(at: Int, withSubviewAt: Int)](uiview/exchangesubview(at:withsubviewat:).md)
+- [func exchangeSubview(at: Int, withSubviewAt: Int)](./exchangesubview%28at,withsubviewat%29.md)
   Exchanges the subviews at the specified indices.
-- [func isDescendant(of: UIView) -> Bool](uiview/isdescendant(of:).md)
+- [func isDescendant(of: UIView) -> Bool](./isdescendant%28of%29.md)
   Returns a Boolean value indicating whether the receiver is a subview of a given view or identical to that view.
 
 

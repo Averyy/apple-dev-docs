@@ -1,7 +1,8 @@
 # domain
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 A string containing the error domain.
 
@@ -10,21 +11,22 @@ A string containing the error domain.
 
 ## Declaration
 
-```swift
+```
 readonly attribute String domain;
 ```
 
 #### Discussion
 
-See [`Error Domains`](tverror/error_domains.md) for a list of domains.
+See [Error Domains](./error_domains.md) for a list of domains.
 
 ## See Also
 
-- [code](tverror/1627334-code.md)
+### Getting Error Properties
+- [code](./api-1627334-code.md)
   The error code.
-- [description](tverror/1627424-description.md)
+- [description](./api-1627424-description.md)
   A string containing the description of the error.
-- [userInfo](tverror/1627388-userinfo.md)
+- [userInfo](./api-1627388-userinfo.md)
   The user info dictionary.
 
 

@@ -1,7 +1,8 @@
 # runtime
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Apply runtime hardening policies as required by the hardened runtime version.
 
@@ -13,6 +14,10 @@ Apply runtime hardening policies as required by the hardened runtime version.
 
 ```swift
 static var runtime: SecCodeSignatureFlags { get }
+```
+
+```c
+kSecCodeSignatureRuntime
 ```
 
 

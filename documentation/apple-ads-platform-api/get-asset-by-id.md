@@ -1,7 +1,8 @@
 # Get Asset
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Retrieve a single asset by its UUID.
 
@@ -20,7 +21,7 @@ This endpoint still returns deleted assets, with `deleted: true`. Responses alwa
 
 Retrieves a single asset by its UUID.
 
-```None
+```
 GET https://api.ads.apple.com/v1/assets/770e8400-e29b-41d4-a716-446655440002
 ```
 
@@ -62,15 +63,31 @@ GET https://api.ads.apple.com/v1/assets/770e8400-e29b-41d4-a716-446655440002
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (uuid) *(required)*
+
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Responses
+
+- `200` OK (`AssetResponse`, `application/json`)
+- `400` Bad Request (`Error`, `application/json`)
+- `401` Unauthorized (`Error`, `application/json`)
+- `403` Forbidden (`Error`, `application/json`)
+- `404` Not Found (`AssetResponse`, `application/json`)
+- `429` Too Many Requests (`Error`, `application/json`)
+- `500` Internal Server Error (`Error`, `application/json`)
 
 ## See Also
 
-- [Upload Asset](upload-asset.md)
+- [Upload Asset](./upload-asset.md)
   Upload a binary image file to create a new asset.
-- [Query Assets](query-assets.md)
+- [Query Assets](./query-assets.md)
   Retrieve a paginated list of creative assets using filters and sorting.
-- [Delete Asset](delete-asset-by-id.md)
+- [Delete Asset](./delete-asset-by-id.md)
   Soft-delete an asset by its UUID.
 
 

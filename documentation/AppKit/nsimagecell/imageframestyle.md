@@ -1,12 +1,13 @@
 # imageFrameStyle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style of the frame that borders the image.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ The style of the frame that borders the image.
 var imageFrameStyle: NSImageView.FrameStyle { get set }
 ```
 
+```objc
+@property NSImageFrameStyle imageFrameStyle;
+```
+
 #### Discussion
 
-For a list of frame styles, see [`NSImageView.FrameStyle`](nsimageview/framestyle.md). The default value is `NSImageFrameNone`.
+For a list of frame styles, see [`NSImageView.FrameStyle`](../nsimageview/framestyle.md). The default value is `NSImageFrameNone`.
 
 
 ---

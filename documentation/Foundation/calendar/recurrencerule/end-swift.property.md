@@ -1,7 +1,8 @@
 # end
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 For how long the event repeats
 

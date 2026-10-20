@@ -1,7 +1,8 @@
 # CKCurrentUserDefaultName
 
 **Framework**: CloudKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that provides the current user’s default name.
 
@@ -20,25 +21,30 @@ A constant that provides the current user’s default name.
 let CKCurrentUserDefaultName: String
 ```
 
+```c
+extern NSString * const CKCurrentUserDefaultName;
+```
+
 ## See Also
 
-- [func discoverAllIdentities(completionHandler: ([CKUserIdentity]?, (any Error)?) -> Void)](ckcontainer/discoverallidentities(completionhandler:).md)
+### Discovering User Records
+- [func discoverAllIdentities(completionHandler: ([CKUserIdentity]?, (any Error)?) -> Void)](./ckcontainer/discoverallidentities%28completionhandler%29.md)
   Fetches all user identities that match entries in the user’s Contacts.
-- [func discoverUserIdentity(withEmailAddress: String, completionHandler: (CKUserIdentity?, (any Error)?) -> Void)](ckcontainer/discoveruseridentity(withemailaddress:completionhandler:).md)
+- [func discoverUserIdentity(withEmailAddress: String, completionHandler: (CKUserIdentity?, (any Error)?) -> Void)](./ckcontainer/discoveruseridentity%28withemailaddress,completionhandler%29.md)
   Fetches the user identity for the specified email address.
-- [func discoverUserIdentity(withPhoneNumber: String, completionHandler: (CKUserIdentity?, (any Error)?) -> Void)](ckcontainer/discoveruseridentity(withphonenumber:completionhandler:).md)
+- [func discoverUserIdentity(withPhoneNumber: String, completionHandler: (CKUserIdentity?, (any Error)?) -> Void)](./ckcontainer/discoveruseridentity%28withphonenumber,completionhandler%29.md)
   Fetches the user identity for the specified phone number.
-- [func discoverUserIdentity(withUserRecordID: CKRecord.ID, completionHandler: (CKUserIdentity?, (any Error)?) -> Void)](ckcontainer/discoveruseridentity(withuserrecordid:completionhandler:).md)
+- [func discoverUserIdentity(withUserRecordID: CKRecord.ID, completionHandler: (CKUserIdentity?, (any Error)?) -> Void)](./ckcontainer/discoveruseridentity%28withuserrecordid,completionhandler%29.md)
   Fetches the user identity for the specified user record ID.
-- [func fetchShareParticipant(withEmailAddress: String, completionHandler: (CKShare.Participant?, (any Error)?) -> Void)](ckcontainer/fetchshareparticipant(withemailaddress:completionhandler:).md)
+- [func fetchShareParticipant(withEmailAddress: String, completionHandler: (CKShare.Participant?, (any Error)?) -> Void)](./ckcontainer/fetchshareparticipant%28withemailaddress,completionhandler%29.md)
   Fetches the share participant with the specified email address.
-- [func fetchShareParticipant(withPhoneNumber: String, completionHandler: (CKShare.Participant?, (any Error)?) -> Void)](ckcontainer/fetchshareparticipant(withphonenumber:completionhandler:).md)
+- [func fetchShareParticipant(withPhoneNumber: String, completionHandler: (CKShare.Participant?, (any Error)?) -> Void)](./ckcontainer/fetchshareparticipant%28withphonenumber,completionhandler%29.md)
   Fetches the share participant with the specified phone number.
-- [func fetchShareParticipant(withUserRecordID: CKRecord.ID, completionHandler: (CKShare.Participant?, (any Error)?) -> Void)](ckcontainer/fetchshareparticipant(withuserrecordid:completionhandler:).md)
+- [func fetchShareParticipant(withUserRecordID: CKRecord.ID, completionHandler: (CKShare.Participant?, (any Error)?) -> Void)](./ckcontainer/fetchshareparticipant%28withuserrecordid,completionhandler%29.md)
   Fetches the share participant with the specified user record ID.
-- [func fetchUserRecordID(completionHandler: (CKRecord.ID?, (any Error)?) -> Void)](ckcontainer/fetchuserrecordid(completionhandler:).md)
+- [func fetchUserRecordID(completionHandler: (CKRecord.ID?, (any Error)?) -> Void)](./ckcontainer/fetchuserrecordid%28completionhandler%29.md)
   Fetches the user record ID of the current user.
-- [let CKOwnerDefaultName: String](ckownerdefaultname.md)
+- [let CKOwnerDefaultName: String](./ckownerdefaultname.md)
   A constant that provides the default owner’s name.
 
 

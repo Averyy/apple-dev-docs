@@ -1,9 +1,10 @@
 # evaluationTime
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-See [`evaluationTime`](animationstateprotocol/evaluationtime.md)
+See [`evaluationTime`](../animationstateprotocol/evaluationtime.md)
 
 **Availability**:
 - iOS 18.0+

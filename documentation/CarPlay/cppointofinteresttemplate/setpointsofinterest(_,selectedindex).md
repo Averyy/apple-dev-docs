@@ -1,7 +1,8 @@
 # setPointsOfInterest(_:selectedIndex:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the points of interest and the current selection.
 
@@ -16,6 +17,10 @@ Updates the points of interest and the current selection.
 func setPointsOfInterest(_ pointsOfInterest: [CPPointOfInterest], selectedIndex: Int)
 ```
 
+```objc
+- (void) setPointsOfInterest:(NSArray<CPPointOfInterest *> *) pointsOfInterest selectedIndex:(NSUInteger) selectedIndex;
+```
+
 #### Discussion
 
 `pointsOfInterest` can contain a maximum of twelve points of interest because that is the most the template displays.
@@ -23,13 +28,14 @@ func setPointsOfInterest(_ pointsOfInterest: [CPPointOfInterest], selectedIndex:
 ## Parameters
 
 - `pointsOfInterest`: An array that contains the points of interest the template displays.
-- `selectedIndex`: The selection’s index. This is the array’s index for the specific point of interest you want to select. Use [`NSNotFound`](https://developer.apple.com/documentation/foundation/nsnotfound-4qp9h) to indicate no initial selection.
+- `selectedIndex`: The selection’s index. This is the array’s index for the specific point of interest you want to select. Use [`NSNotFound`](../../Foundation/nsnotfound-4qp9h.md) to indicate no initial selection.
 
 ## See Also
 
-- [var pointsOfInterest: [CPPointOfInterest]](cppointofinteresttemplate/pointsofinterest.md)
+### Managing the Points of Interest
+- [var pointsOfInterest: [CPPointOfInterest]](./pointsofinterest.md)
   The points of interest the template displays on the map and in the scrollable picker.
-- [var selectedIndex: Int](cppointofinteresttemplate/selectedindex.md)
+- [var selectedIndex: Int](./selectedindex.md)
   The current selection’s index.
 
 

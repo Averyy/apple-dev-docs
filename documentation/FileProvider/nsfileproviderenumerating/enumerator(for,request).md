@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the file provider to return an enumerator for the provided directory.
@@ -19,9 +20,13 @@ Tells the file provider to return an enumerator for the provided directory.
 func enumerator(for containerItemIdentifier: NSFileProviderItemIdentifier, request: NSFileProviderRequest) throws -> any NSFileProviderEnumerator
 ```
 
+```objc
+- (id<NSFileProviderEnumerator>) enumeratorForContainerItemIdentifier:(NSFileProviderItemIdentifier) containerItemIdentifier request:(NSFileProviderRequest *) request error:(NSError **) error;
+```
+
 ## Mentions
 
-- [Synchronizing the File Provider Extension](synchronizing-the-file-provider-extension.md)
+- [Synchronizing the File Provider Extension](../synchronizing-the-file-provider-extension.md)
 
 #### Return Value
 
@@ -33,23 +38,23 @@ The system calls this method to request an enumerator for the specified item.
 
 Possible item identifiers include:
 
-- **[`rootContainer`](nsfileprovideritemidentifier/rootcontainer.md)**: The system passes this identifier when the user begins browsing your file provider’s content.
-- **A directory’s [`itemIdentifier`](nsfileprovideritemprotocol/itemidentifier.md)**: The system requests a new enumerator each time the user opens a new directory.
-- **[`workingSet`](nsfileprovideritemidentifier/workingset.md)**: The system can request an enumerator so that it can sync the working set in the background.
-- **A document’s [`itemIdentifier`](nsfileprovideritemprotocol/itemidentifier.md)**: The system subscribes to live updates by requesting an enumerator for a document.
-- **The [`trashContainer`](nsfileprovideritemidentifier/trashcontainer.md) directory.**: The system passes this identifier when the user browses the contents of the trash. If your File Provider extension doesn’t support moving items to the trash, your implementation should throw or return an error.
+- **[`rootContainer`](../nsfileprovideritemidentifier/rootcontainer.md)**: The system passes this identifier when the user begins browsing your file provider’s content.
+- **A directory’s [`itemIdentifier`](../nsfileprovideritemprotocol/itemidentifier.md)**: The system requests a new enumerator each time the user opens a new directory.
+- **[`workingSet`](../nsfileprovideritemidentifier/workingset.md)**: The system can request an enumerator so that it can sync the working set in the background.
+- **A document’s [`itemIdentifier`](../nsfileprovideritemprotocol/itemidentifier.md)**: The system subscribes to live updates by requesting an enumerator for a document.
+- **The [`trashContainer`](../nsfileprovideritemidentifier/trashcontainer.md) directory.**: The system passes this identifier when the user browses the contents of the trash. If your File Provider extension doesn’t support moving items to the trash, your implementation should throw or return an error.
 
-Your implementation should create and return an [`NSFileProviderEnumerator`](nsfileproviderenumerator.md) object that provides the requested content.
+Your implementation should create and return an [`NSFileProviderEnumerator`](../nsfileproviderenumerator.md) object that provides the requested content.
 
 ##### Handle Errors
 
 If you can’t return the requested enumerator, you must throw an error in Swift, or if you return nil in Objective-C, you must set the `error` out parameter.
 
-If the `containerItemIdentifier` parameter is [`trashContainer`](nsfileprovideritemidentifier/trashcontainer.md) and your extension doesn’t support trashing items, then it should fail with the [`NSFeatureUnsupportedError`](https://developer.apple.com/documentation/foundation/nsfeatureunsupportederror-swift.var) error code from the [`NSCocoaErrorDomain`](https://developer.apple.com/documentation/foundation/nscocoaerrordomain) domain. Additionally, make sure the items managed by your File Provider extension don’t have the [`allowsTrashing`](nsfileprovideritemcapabilities/allowstrashing.md) capability enabled.
+If the `containerItemIdentifier` parameter is [`trashContainer`](../nsfileprovideritemidentifier/trashcontainer.md) and your extension doesn’t support trashing items, then it should fail with the [`NSFeatureUnsupportedError`](../../Foundation/nsfeatureunsupportederror-swift.var.md) error code from the [`NSCocoaErrorDomain`](../../Foundation/nscocoaerrordomain.md) domain. Additionally, make sure the items managed by your File Provider extension don’t have the [`allowsTrashing`](../nsfileprovideritemcapabilities/allowstrashing.md) capability enabled.
 
-If the `containerItemIdentifier` parameter doesn’t exist in your remote storage, you should fail with an [`NSFileProviderError.Code.noSuchItem`](nsfileprovidererror/code/nosuchitem.md) error. The system then attempts to delete the item from disk.
+If the `containerItemIdentifier` parameter doesn’t exist in your remote storage, you should fail with an [`NSFileProviderError.Code.noSuchItem`](../nsfileprovidererror/code/nosuchitem.md) error. The system then attempts to delete the item from disk.
 
-If you pass [`NSFileProviderError.Code.notAuthenticated`](nsfileprovidererror/code/notauthenticated.md) or [`NSFileProviderError.Code.serverUnreachable`](nsfileprovidererror/code/serverunreachable.md) to the handler, the system presents an appropriate alert to the user, but doesn’t try to access the metadata until triggered again by the user.
+If you pass [`NSFileProviderError.Code.notAuthenticated`](../nsfileprovidererror/code/notauthenticated.md) or [`NSFileProviderError.Code.serverUnreachable`](../nsfileprovidererror/code/serverunreachable.md) to the handler, the system presents an appropriate alert to the user, but doesn’t try to access the metadata until triggered again by the user.
 
 The system considers any other errors to be transient, and automatically retries the method call.
 

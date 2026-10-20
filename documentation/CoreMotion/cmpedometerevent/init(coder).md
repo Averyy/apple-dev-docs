@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: Core Motion  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 10.0+

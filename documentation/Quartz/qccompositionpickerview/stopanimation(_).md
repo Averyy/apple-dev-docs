@@ -1,17 +1,24 @@
 # stopAnimation(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops animating the composition that is currently animating in the composition picker view.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 func stopAnimation(_ sender: Any!)
+```
+
+```objc
+- (void) stopAnimation:(id) sender;
 ```
 
 ## Parameters
@@ -20,13 +27,14 @@ func stopAnimation(_ sender: Any!)
 
 ## See Also
 
-- [func startAnimation(Any!)](qccompositionpickerview/startanimation(_:).md)
+### Managing Animation
+- [func startAnimation(Any!)](./startanimation%28_%29.md)
   Starts animating the composition in the composition picker view.
-- [func isAnimating() -> Bool](qccompositionpickerview/isanimating.md)
+- [func isAnimating() -> Bool](./isanimating%28%29.md)
   Returns whether or not the composition picker view is currently animating its composition.
-- [func setMaxAnimationFrameRate(Float)](qccompositionpickerview/setmaxanimationframerate(_:).md)
+- [func setMaxAnimationFrameRate(Float)](./setmaxanimationframerate%28_%29.md)
   Sets the maximum frame rate for animating compositions.
-- [func maxAnimationFrameRate() -> Float](qccompositionpickerview/maxanimationframerate.md)
+- [func maxAnimationFrameRate() -> Float](./maxanimationframerate%28%29.md)
   Retrieves the maximum frame rate for animating compositions.
 
 

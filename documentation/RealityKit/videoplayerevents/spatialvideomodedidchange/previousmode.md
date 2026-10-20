@@ -1,7 +1,8 @@
 # previousMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Previous media mode
 

@@ -1,7 +1,8 @@
 # callAsFunction(id:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Pushes a window that is associated with the specified identifier.
 
@@ -17,13 +18,13 @@ func callAsFunction(id: String)
 
 #### Discussion
 
-Don’t call this method directly. SwiftUI calls it when you call the [`pushWindow`](environmentvalues/pushwindow.md) action with an identifier:
+Don’t call this method directly. SwiftUI calls it when you call the [`pushWindow`](../environmentvalues/pushwindow.md) action with an identifier:
 
 ```swift
 pushWindow(id: "viewer")
 ```
 
-For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [`Methods with Special Names`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*.
+For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [Methods with Special Names](https://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*.
 
 ## Parameters
 

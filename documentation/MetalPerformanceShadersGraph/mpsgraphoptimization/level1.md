@@ -1,7 +1,8 @@
 # MPSGraphOptimization.level1
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Graph performs additional Optimizations, like using the placement pass to dispatch across different HW blocks like the NeuralEngine and CPU along with the GPU.
 
@@ -17,6 +18,10 @@ Graph performs additional Optimizations, like using the placement pass to dispat
 
 ```swift
 case level1
+```
+
+```c
+MPSGraphOptimizationLevel1
 ```
 
 

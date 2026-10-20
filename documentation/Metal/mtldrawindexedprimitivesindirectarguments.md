@@ -1,17 +1,18 @@
 # MTLDrawIndexedPrimitivesIndirectArguments
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The data layout required for drawing indexed primitives via indirect buffer calls.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,46 +20,51 @@ The data layout required for drawing indexed primitives via indirect buffer call
 struct MTLDrawIndexedPrimitivesIndirectArguments
 ```
 
+```c
+typedef struct { ... } MTLDrawIndexedPrimitivesIndirectArguments;
+```
+
 ## Mentions
 
-- [Specifying drawing and dispatch arguments indirectly](specifying-drawing-and-dispatch-arguments-indirectly.md)
+- [Specifying drawing and dispatch arguments indirectly](./specifying-drawing-and-dispatch-arguments-indirectly.md)
 
 #### Overview
 
-See also the [`drawIndexedPrimitives(type:indexType:indexBuffer:indexBufferOffset:indirectBuffer:indirectBufferOffset:)`](mtlrendercommandencoder/drawindexedprimitives(type:indextype:indexbuffer:indexbufferoffset:indirectbuffer:indirectbufferoffset:).md) method.
+See also the [`drawIndexedPrimitives(type:indexType:indexBuffer:indexBufferOffset:indirectBuffer:indirectBufferOffset:)`](./mtlrendercommandencoder/drawindexedprimitives%28type,indextype,indexbuffer,indexbufferoffset,indirectbuffer,indirectbufferoffset%29.md) method.
 
 ## Topics
 
 ### Initializers
-- [init()](mtldrawindexedprimitivesindirectarguments/init.md)
+- [init()](./mtldrawindexedprimitivesindirectarguments/init%28%29.md)
   Returns a new data layout for drawing indexed primitives via indirect buffer calls.
-- [init(indexCount: UInt32, instanceCount: UInt32, indexStart: UInt32, baseVertex: Int32, baseInstance: UInt32)](mtldrawindexedprimitivesindirectarguments/init(indexcount:instancecount:indexstart:basevertex:baseinstance:).md)
+- [init(indexCount: UInt32, instanceCount: UInt32, indexStart: UInt32, baseVertex: Int32, baseInstance: UInt32)](./mtldrawindexedprimitivesindirectarguments/init%28indexcount,instancecount,indexstart,basevertex,baseinstance%29.md)
   Returns a new data layout for drawing indexed primitives via indirect buffer calls, with specified parameters.
 ### Instance Properties
-- [var baseInstance: UInt32](mtldrawindexedprimitivesindirectarguments/baseinstance.md)
+- [var baseInstance: UInt32](./mtldrawindexedprimitivesindirectarguments/baseinstance.md)
   The first instance to draw.
-- [var baseVertex: Int32](mtldrawindexedprimitivesindirectarguments/basevertex.md)
+- [var baseVertex: Int32](./mtldrawindexedprimitivesindirectarguments/basevertex.md)
   The first vertex to draw.
-- [var indexCount: UInt32](mtldrawindexedprimitivesindirectarguments/indexcount.md)
+- [var indexCount: UInt32](./mtldrawindexedprimitivesindirectarguments/indexcount.md)
   For each instance, the number of indices to read from the index buffer.
-- [var indexStart: UInt32](mtldrawindexedprimitivesindirectarguments/indexstart.md)
+- [var indexStart: UInt32](./mtldrawindexedprimitivesindirectarguments/indexstart.md)
   The first index to draw.
-- [var instanceCount: UInt32](mtldrawindexedprimitivesindirectarguments/instancecount.md)
+- [var instanceCount: UInt32](./mtldrawindexedprimitivesindirectarguments/instancecount.md)
   The number of instances to draw.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [protocol MTLIndirectRenderCommand](mtlindirectrendercommand.md)
+### Render compute commands
+- [protocol MTLIndirectRenderCommand](./mtlindirectrendercommand.md)
   A render command in an indirect command buffer.
-- [struct MTLDrawPatchIndirectArguments](mtldrawpatchindirectarguments.md)
+- [struct MTLDrawPatchIndirectArguments](./mtldrawpatchindirectarguments.md)
   The data layout required for drawing patches via indirect buffer calls.
-- [struct MTLDrawPrimitivesIndirectArguments](mtldrawprimitivesindirectarguments.md)
+- [struct MTLDrawPrimitivesIndirectArguments](./mtldrawprimitivesindirectarguments.md)
   The data layout required for drawing primitives via indirect buffer calls.
 
 

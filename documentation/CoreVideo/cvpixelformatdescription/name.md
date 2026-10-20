@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The canonical name for the format. This should be the same as the codec name you’d use in QT.
 

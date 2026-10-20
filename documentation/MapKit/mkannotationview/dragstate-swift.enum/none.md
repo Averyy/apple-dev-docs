@@ -1,7 +1,8 @@
 # MKAnnotationView.DragState.none
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An annotation view that doesn’t have a drag operation.
 
@@ -18,19 +19,24 @@ An annotation view that doesn’t have a drag operation.
 case none
 ```
 
+```c
+MKAnnotationViewDragStateNone
+```
+
 #### Discussion
 
 The view isn’t involved in a drag operation. The annotation view is responsible for returning itself to this state when a drag ends or cancels.
 
 ## See Also
 
-- [MKAnnotationView.DragState.starting](mkannotationview/dragstate-swift.enum/starting.md)
+### Constants
+- [MKAnnotationView.DragState.starting](./starting.md)
   An annotation view begins dragging.
-- [MKAnnotationView.DragState.dragging](mkannotationview/dragstate-swift.enum/dragging.md)
+- [MKAnnotationView.DragState.dragging](./dragging.md)
   An annotation view is actively dragging.
-- [MKAnnotationView.DragState.canceling](mkannotationview/dragstate-swift.enum/canceling.md)
+- [MKAnnotationView.DragState.canceling](./canceling.md)
   An annotation view cancels drag operation.
-- [MKAnnotationView.DragState.ending](mkannotationview/dragstate-swift.enum/ending.md)
+- [MKAnnotationView.DragState.ending](./ending.md)
   An annotation view ends dragging.
 
 

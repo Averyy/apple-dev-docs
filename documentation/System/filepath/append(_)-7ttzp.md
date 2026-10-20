@@ -1,7 +1,8 @@
 # append(_:)
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Append the contents of `other`, ignoring any spurious leading separators.
 

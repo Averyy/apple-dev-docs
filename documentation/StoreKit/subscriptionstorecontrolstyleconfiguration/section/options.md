@@ -1,7 +1,8 @@
 # options
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subscription options to merchandise within a section.
 
@@ -24,9 +25,9 @@ var options: [SubscriptionStoreControlStyleConfiguration.Option]
 
 This property represents the main content of a section. The view your style creates needs to provide a control to subscribe to each option in the array.
 
-Use the properties of each [`SubscriptionStoreControlStyleConfiguration.Option`](subscriptionstorecontrolstyleconfiguration/option.md) value to declare your control style, and use the [`subscribe()`](subscriptionstorecontrolstyleconfiguration/option/subscribe().md) method in response to a subscribe interaction.
+Use the properties of each [`SubscriptionStoreControlStyleConfiguration.Option`](../option.md) value to declare your control style, and use the [`subscribe()`](../option/subscribe%28%29.md) method in response to a subscribe interaction.
 
-> 💡 **Tip**:  Use [`SubscriptionOptionSection`](subscriptionoptionsection.md) to configure the contents of a section when creating a [`SubscriptionStoreView`](subscriptionstoreview.md).
+> 💡 **Tip**:  Use [`SubscriptionOptionSection`](../../subscriptionoptionsection.md) to configure the contents of a section when creating a [`SubscriptionStoreView`](../../subscriptionstoreview.md).
 
 
 ---

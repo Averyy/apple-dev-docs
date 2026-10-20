@@ -1,7 +1,8 @@
 # lighting
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The lighting used in the environment of a particular scene.
 

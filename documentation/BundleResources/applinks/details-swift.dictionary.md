@@ -1,7 +1,8 @@
 # applinks.Details
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A list of apps and the universal links they handle for a domain.
 
@@ -53,7 +54,7 @@ This example code shows a universal links details object in an association file:
 ## Topics
 
 ### URL components
-- [object applinks.Details.Components](applinks/details-swift.dictionary/components-swift.dictionary.md)
+- [object applinks.Details.Components](./details-swift.dictionary/components-swift.dictionary.md)
   Patterns that define the universal links an app can open.
 
 ## Properties

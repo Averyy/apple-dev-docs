@@ -1,7 +1,8 @@
 # undoRedo
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Undo/Redo menu.
 
@@ -18,37 +19,42 @@ The Undo/Redo menu.
 static let undoRedo: UIMenu.Identifier
 ```
 
+```c
+extern UIMenuIdentifier const UIMenuUndoRedo;
+```
+
 ## See Also
 
-- [static let standardEdit: UIMenu.Identifier](uimenu/identifier-swift.struct/standardedit.md)
+### Edit menus
+- [static let standardEdit: UIMenu.Identifier](./standardedit.md)
   The standard Edit menu.
-- [static let find: UIMenu.Identifier](uimenu/identifier-swift.struct/find.md)
+- [static let find: UIMenu.Identifier](./find.md)
   The Find menu.
-- [static let findPanel: UIMenu.Identifier](uimenu/identifier-swift.struct/findpanel.md)
+- [static let findPanel: UIMenu.Identifier](./findpanel.md)
   Find panel menu (Find, Find and Replace, Find Next, Find Previous)
-- [static let replace: UIMenu.Identifier](uimenu/identifier-swift.struct/replace.md)
+- [static let replace: UIMenu.Identifier](./replace.md)
   The Replace menu.
-- [static let share: UIMenu.Identifier](uimenu/identifier-swift.struct/share.md)
+- [static let share: UIMenu.Identifier](./share.md)
   The Share menu.
-- [static let textStyle: UIMenu.Identifier](uimenu/identifier-swift.struct/textstyle.md)
+- [static let textStyle: UIMenu.Identifier](./textstyle.md)
   The Text Style menu.
-- [static let spelling: UIMenu.Identifier](uimenu/identifier-swift.struct/spelling.md)
+- [static let spelling: UIMenu.Identifier](./spelling.md)
   The Spelling menu.
-- [static let spellingPanel: UIMenu.Identifier](uimenu/identifier-swift.struct/spellingpanel.md)
+- [static let spellingPanel: UIMenu.Identifier](./spellingpanel.md)
   The Spelling Panel menu.
-- [static let spellingOptions: UIMenu.Identifier](uimenu/identifier-swift.struct/spellingoptions.md)
+- [static let spellingOptions: UIMenu.Identifier](./spellingoptions.md)
   The Spelling Options menu.
-- [static let substitutions: UIMenu.Identifier](uimenu/identifier-swift.struct/substitutions.md)
+- [static let substitutions: UIMenu.Identifier](./substitutions.md)
   The Substitutions menu.
-- [static let substitutionsPanel: UIMenu.Identifier](uimenu/identifier-swift.struct/substitutionspanel.md)
+- [static let substitutionsPanel: UIMenu.Identifier](./substitutionspanel.md)
   The Substitutions Panel menu.
-- [static let substitutionOptions: UIMenu.Identifier](uimenu/identifier-swift.struct/substitutionoptions.md)
+- [static let substitutionOptions: UIMenu.Identifier](./substitutionoptions.md)
   The Substitutions Options menu.
-- [static let transformations: UIMenu.Identifier](uimenu/identifier-swift.struct/transformations.md)
+- [static let transformations: UIMenu.Identifier](./transformations.md)
   The Transformations menu.
-- [static let speech: UIMenu.Identifier](uimenu/identifier-swift.struct/speech.md)
+- [static let speech: UIMenu.Identifier](./speech.md)
   The Speech menu.
-- [static let lookup: UIMenu.Identifier](uimenu/identifier-swift.struct/lookup.md)
+- [static let lookup: UIMenu.Identifier](./lookup.md)
   The Lookup menu.
 
 

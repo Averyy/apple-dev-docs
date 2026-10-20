@@ -2,6 +2,7 @@
 
 **Framework**: Playground Bluetooth  
 **Kind**: intfm  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that a peripheral has been discovered during scanning.
@@ -23,11 +24,18 @@ func centralManager(_ centralManager: PlaygroundBluetoothCentralManager, didDisc
 - `advertisementData`: A dictionary containing any advertisement data that the peripheral provides.
 - `rssi`: The current received signal strength indicator of the peripheral in decibels.
 
+## Default Implementations
+
+### PlaygroundBluetoothCentralManagerDelegate Implementations
+- [func centralManager(PlaygroundBluetoothCentralManager, didDiscover: CBPeripheral, withAdvertisementData: [String : Any]?, rssi: Double)](./api-3029479-centralmanager.md)
+  Tells the delegate that a peripheral has been discovered during scanning.
+
 ## See Also
 
-- [func centralManager(PlaygroundBluetoothCentralManager, willConnectTo: CBPeripheral)](playgroundbluetoothcentralmanagerdelegate/3029482-centralmanager.md)
+### Discovering Peripherals
+- [func centralManager(PlaygroundBluetoothCentralManager, willConnectTo: CBPeripheral)](./api-3029482-centralmanager.md)
   Tells the delegate that the central manager is about to attempt to establish a connection with a peripheral.
-- [func centralManager(PlaygroundBluetoothCentralManager, didConnectTo: CBPeripheral)](playgroundbluetoothcentralmanagerdelegate/3029474-centralmanager.md)
+- [func centralManager(PlaygroundBluetoothCentralManager, didConnectTo: CBPeripheral)](./api-3029474-centralmanager.md)
   Tells the delegate that the central manager established a connection with a peripheral.
 
 

@@ -1,7 +1,8 @@
 # encode(commandBuffer:leftMatrix:rightMatrix:resultMatrix:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes a matrix multiplication kernel to a command buffer.
 
@@ -19,13 +20,17 @@ Encodes a matrix multiplication kernel to a command buffer.
 func encode(commandBuffer: any MTLCommandBuffer, leftMatrix: MPSMatrix, rightMatrix: MPSMatrix, resultMatrix: MPSMatrix)
 ```
 
+```objc
+- (void) encodeToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer leftMatrix:(MPSMatrix *) leftMatrix rightMatrix:(MPSMatrix *) rightMatrix resultMatrix:(MPSMatrix *) resultMatrix;
+```
+
 #### Discussion
 
 The following constraints apply to the sizes of the matrices depending on the transposition operations and the sizes requested at initialization time, as well as the origins at the time this method is called:
 
-- The left input matrix must be large enough to hold an array of size `resultRows x interiorColumns` elements, beginning at the value of the [`leftMatrixOrigin`](mpsmatrixmultiplication/leftmatrixorigin.md) property.
-- The right input matrix must be large enough to hold an array of size `interiorColumns x resultColumns` elements, beginning at the value of the [`rightMatrixOrigin`](mpsmatrixmultiplication/rightmatrixorigin.md) property.
-- The result matrix must be large enough to hold an array of size `resultRows x resultColumns` elements, beginning at the value of the [`resultMatrixOrigin`](mpsmatrixmultiplication/resultmatrixorigin.md) property.
+- The left input matrix must be large enough to hold an array of size `resultRows x interiorColumns` elements, beginning at the value of the [`leftMatrixOrigin`](./leftmatrixorigin.md) property.
+- The right input matrix must be large enough to hold an array of size `interiorColumns x resultColumns` elements, beginning at the value of the [`rightMatrixOrigin`](./rightmatrixorigin.md) property.
+- The result matrix must be large enough to hold an array of size `resultRows x resultColumns` elements, beginning at the value of the [`resultMatrixOrigin`](./resultmatrixorigin.md) property.
 
 ## Parameters
 
@@ -36,7 +41,8 @@ The following constraints apply to the sizes of the matrices depending on the tr
 
 ## See Also
 
-- [init(device: any MTLDevice, transposeLeft: Bool, transposeRight: Bool, resultRows: Int, resultColumns: Int, interiorColumns: Int, alpha: Double, beta: Double)](mpsmatrixmultiplication/init(device:transposeleft:transposeright:resultrows:resultcolumns:interiorcolumns:alpha:beta:).md)
+### Methods
+- [init(device: any MTLDevice, transposeLeft: Bool, transposeRight: Bool, resultRows: Int, resultColumns: Int, interiorColumns: Int, alpha: Double, beta: Double)](./init%28device,transposeleft,transposeright,resultrows,resultcolumns,interiorcolumns,alpha,beta%29.md)
   Initializes a matrix multiplication kernel.
 
 

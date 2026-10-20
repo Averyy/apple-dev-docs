@@ -1,7 +1,8 @@
 # ENODATA
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 No message available on STREAM.
 

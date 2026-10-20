@@ -1,7 +1,8 @@
 # MTRThermostatACRefrigerantType
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.4+
@@ -18,25 +19,29 @@
 enum MTRThermostatACRefrigerantType
 ```
 
+```c
+enum MTRThermostatACRefrigerantType : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRThermostatACRefrigerantType.R22](mtrthermostatacrefrigeranttype/r22.md)
-- [MTRThermostatACRefrigerantType.r407c](mtrthermostatacrefrigeranttype/r407c.md)
-- [MTRThermostatACRefrigerantType.r410a](mtrthermostatacrefrigeranttype/r410a.md)
-- [MTRThermostatACRefrigerantType.unknown](mtrthermostatacrefrigeranttype/unknown.md)
+- [MTRThermostatACRefrigerantType.R22](./mtrthermostatacrefrigeranttype/r22.md)
+- [MTRThermostatACRefrigerantType.r407c](./mtrthermostatacrefrigeranttype/r407c.md)
+- [MTRThermostatACRefrigerantType.r410a](./mtrthermostatacrefrigeranttype/r410a.md)
+- [MTRThermostatACRefrigerantType.unknown](./mtrthermostatacrefrigeranttype/unknown.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrthermostatacrefrigeranttype/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrthermostatacrefrigeranttype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

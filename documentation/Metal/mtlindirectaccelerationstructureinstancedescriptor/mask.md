@@ -1,7 +1,8 @@
 # mask
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var mask: UInt32
+```
+
+```c
+uint32_t mask;
 ```
 
 

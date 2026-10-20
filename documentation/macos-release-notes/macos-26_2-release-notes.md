@@ -1,14 +1,15 @@
 # macOS Tahoe 26.2 Release Notes
 
-**Framework**: macOS Release Notes
+**Framework**: macOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 26.2 SDK provides support to develop apps for Mac computers running Tahoe 26.2. The SDK comes bundled with Xcode 26.2. For information on the compatibility requirements for Xcode 26.2, see [`Xcode 26.2 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_2-release-notes).
+The macOS 26.2 SDK provides support to develop apps for Mac computers running Tahoe 26.2. The SDK comes bundled with Xcode 26.2. For information on the compatibility requirements for Xcode 26.2, see [Xcode 26.2 Release Notes](../Xcode-Release-Notes/xcode-26_2-release-notes.md).
 
-##### Airdrop
+##### AirDrop
 
 ###### Resolved Issues
 
@@ -20,17 +21,17 @@ The macOS 26.2 SDK provides support to develop apps for Mac computers running Ta
 
 - Fixed: The Allocations instrument sometimes fails to report reference counting operations for native Swift types.  (163080666)
 
-##### Rdma Over Thunderbolt
+##### RDMA over Thunderbolt
 
 ###### New Features
 
 - Enables low-latency communication between Thunderbolt 5 hosts for use cases including distributed AI inference using MLX.  (164123391)
 
-##### Storekit
+##### StoreKit
 
 ###### New Features
 
-- [`AppStore.ageRatingCode`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/appstore/ageratingcode) API provides the current age rating code for your app. Use this property to fetch the age rating and compare it with the last known rating to check for changes.  (160960740)
+- [AppStore.ageRatingCode](../StoreKit/appstore/ageratingcode.md) API provides the current age rating code for your app. Use this property to fetch the age rating and compare it with the last known rating to check for changes.  (160960740)
 
 ###### Resolved Issues
 
@@ -51,17 +52,18 @@ The macOS 26.2 SDK provides support to develop apps for Mac computers running Ta
 
 ## See Also
 
-- [macOS Tahoe 26.6 Release Notes](macos-26_6-release-notes.md)
+### macOS 26
+- [macOS Tahoe 26.6 Release Notes](./macos-26_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Tahoe 26.5 Release Notes](macos-26_5-release-notes.md)
+- [macOS Tahoe 26.5 Release Notes](./macos-26_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Tahoe 26.4 Release Notes](macos-26_4-release-notes.md)
+- [macOS Tahoe 26.4 Release Notes](./macos-26_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Tahoe 26.3 Release Notes](macos-26_3-release-notes.md)
+- [macOS Tahoe 26.3 Release Notes](./macos-26_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Tahoe 26.1 Release Notes](macos-26_1-release-notes.md)
+- [macOS Tahoe 26.1 Release Notes](./macos-26_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Tahoe 26 Release Notes](macos-26-release-notes.md)
+- [macOS Tahoe 26 Release Notes](./macos-26-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

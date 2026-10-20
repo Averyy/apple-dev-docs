@@ -1,7 +1,8 @@
 # imagePickerControllerDidCancel(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the user canceled the pick operation.
 
@@ -17,9 +18,13 @@ Tells the delegate that the user canceled the pick operation.
 optional func imagePickerControllerDidCancel(_ picker: UIImagePickerController)
 ```
 
+```objc
+- (void) imagePickerControllerDidCancel:(UIImagePickerController *) picker;
+```
+
 #### Discussion
 
-Your delegate’s implementation of this method should dismiss the picker view by calling the [`dismiss(animated:completion:)`](uiviewcontroller/dismiss(animated:completion:).md) method of the parent view controller.
+Your delegate’s implementation of this method should dismiss the picker view by calling the [`dismiss(animated:completion:)`](../uiviewcontroller/dismiss%28animated,completion%29.md) method of the parent view controller.
 
 Implementation of this method is optional, but expected.
 
@@ -29,7 +34,8 @@ Implementation of this method is optional, but expected.
 
 ## See Also
 
-- [func imagePickerController(UIImagePickerController, didFinishPickingMediaWithInfo: [UIImagePickerController.InfoKey : Any])](uiimagepickercontrollerdelegate/imagepickercontroller(_:didfinishpickingmediawithinfo:).md)
+### Closing the picker
+- [func imagePickerController(UIImagePickerController, didFinishPickingMediaWithInfo: [UIImagePickerController.InfoKey : Any])](./imagepickercontroller%28_,didfinishpickingmediawithinfo%29.md)
   Tells the delegate that the user picked a still image or movie.
 
 

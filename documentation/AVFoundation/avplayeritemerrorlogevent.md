@@ -1,7 +1,8 @@
 # AVPlayerItemErrorLogEvent
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A single item in a player item’s error log.
 
@@ -20,58 +21,63 @@ A single item in a player item’s error log.
 class AVPlayerItemErrorLogEvent
 ```
 
+```objc
+@interface AVPlayerItemErrorLogEvent : NSObject
+```
+
 #### Overview
 
-This object provides properties for accessing the data fields of each log event. Each event is a single entry in an [`AVPlayerItem`](avplayeritem.md) object’s error log.
+This object provides properties for accessing the data fields of each log event. Each event is a single entry in an [`AVPlayerItem`](./avplayeritem.md) object’s error log.
 
-These properties aren’t observable. For more information about key-value observing, see [`Using Key-Value Observing in Swift`](https://developer.apple.com/documentation/swift/using-key-value-observing-in-swift).
+These properties aren’t observable. For more information about key-value observing, see [Using Key-Value Observing in Swift](../Swift/using-key-value-observing-in-swift.md).
 
 ## Topics
 
 ### Getting information about the event
-- [var date: Date?](avplayeritemerrorlogevent/date.md)
+- [var date: Date?](./avplayeritemerrorlogevent/date.md)
   The date and time when the error occurred.
-- [var uri: String?](avplayeritemerrorlogevent/uri.md)
+- [var uri: String?](./avplayeritemerrorlogevent/uri.md)
   The URI of the playback item that had an error.
-- [var serverAddress: String?](avplayeritemerrorlogevent/serveraddress.md)
+- [var serverAddress: String?](./avplayeritemerrorlogevent/serveraddress.md)
   The IP address of the server that was the source of the error.
-- [var playbackSessionID: String?](avplayeritemerrorlogevent/playbacksessionid.md)
+- [var playbackSessionID: String?](./avplayeritemerrorlogevent/playbacksessionid.md)
   A GUID that identifies the playback session that had an error.
-- [var errorStatusCode: Int](avplayeritemerrorlogevent/errorstatuscode.md)
+- [var errorStatusCode: Int](./avplayeritemerrorlogevent/errorstatuscode.md)
   A unique error code identifier.
-- [var errorDomain: String](avplayeritemerrorlogevent/errordomain.md)
+- [var errorDomain: String](./avplayeritemerrorlogevent/errordomain.md)
   The domain of the error.
-- [var errorComment: String?](avplayeritemerrorlogevent/errorcomment.md)
+- [var errorComment: String?](./avplayeritemerrorlogevent/errorcomment.md)
   A description of the error encountered.
-- [var allHTTPResponseHeaderFields: [String : String]?](avplayeritemerrorlogevent/allhttpresponseheaderfields.md)
+- [var allHTTPResponseHeaderFields: [String : String]?](./avplayeritemerrorlogevent/allhttpresponseheaderfields.md)
   The HTTP header fields the server returns.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func accessLog() -> AVPlayerItemAccessLog?](avplayeritem/accesslog.md)
+### Accessing logging information
+- [func accessLog() -> AVPlayerItemAccessLog?](./avplayeritem/accesslog%28%29.md)
   Returns an object that represents a snapshot of the network access log.
-- [class AVPlayerItemAccessLog](avplayeritemaccesslog.md)
+- [class AVPlayerItemAccessLog](./avplayeritemaccesslog.md)
   An object used to retrieve the access log associated with a player item.
-- [class AVPlayerItemAccessLogEvent](avplayeritemaccesslogevent.md)
+- [class AVPlayerItemAccessLogEvent](./avplayeritemaccesslogevent.md)
   A single entry in a player item’s access log.
-- [func errorLog() -> AVPlayerItemErrorLog?](avplayeritem/errorlog.md)
+- [func errorLog() -> AVPlayerItemErrorLog?](./avplayeritem/errorlog%28%29.md)
   Returns an object that represents a snapshot of the error log.
-- [class AVPlayerItemErrorLog](avplayeritemerrorlog.md)
+- [class AVPlayerItemErrorLog](./avplayeritemerrorlog.md)
   The error log associated with a player item.
 
 

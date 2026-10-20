@@ -1,7 +1,8 @@
 # read(into:startingAt:length:)
 
 **Framework**: FSKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Synchronously reads data from the resource into a buffer.
 
@@ -20,11 +21,11 @@ The actual number of bytes read.
 
 #### Discussion
 
-This is a synchronous version of [`read(into:startingAt:length:)`](fsblockdeviceresource/read(into:startingat:length:)-4ax6s.md).
+This is a synchronous version of [`read(into:startingAt:length:)`](./read%28into,startingat,length%29-4ax6s.md).
 
 In some cases, this method performs a partial read. In this case, the return value is shorter than the requested length.
 
-> **Note**: An error describing any read error. This value is `EFAULT` if `buffer` is `NULL`, or `errno` if reading from the resource failed.
+> **Throws**: An error describing any read error. This value is `EFAULT` if `buffer` is `NULL`, or `errno` if reading from the resource failed.
 
 ## Parameters
 
@@ -34,15 +35,16 @@ In some cases, this method performs a partial read. In this case, the return val
 
 ## See Also
 
-- [func read(into: UnsafeMutableRawBufferPointer, startingAt: off_t, length: Int) async throws -> Int](fsblockdeviceresource/read(into:startingat:length:)-5yozi.md)
+### Reading and writing data
+- [func read(into: UnsafeMutableRawBufferPointer, startingAt: off_t, length: Int) async throws -> Int](./read%28into,startingat,length%29-5yozi.md)
   Asychronously reads data from the resource into a buffer.
-- [func read(into: UnsafeMutableRawBufferPointer, startingAt: off_t, length: Int, completionHandler: (Int, (any Error)?) -> Void)](fsblockdeviceresource/read(into:startingat:length:completionhandler:).md)
+- [func read(into: UnsafeMutableRawBufferPointer, startingAt: off_t, length: Int, completionHandler: (Int, (any Error)?) -> Void)](./read%28into,startingat,length,completionhandler%29.md)
   Reads data from the resource into a buffer and executes a closure afterwards.
-- [func write(from: UnsafeRawBufferPointer, startingAt: off_t, length: Int) throws -> Int](fsblockdeviceresource/write(from:startingat:length:)-2fmgt.md)
+- [func write(from: UnsafeRawBufferPointer, startingAt: off_t, length: Int) throws -> Int](./write%28from,startingat,length%29-2fmgt.md)
   Synchronously writes data from from a buffer to the resource and executes a block afterwards.
-- [func write(from: UnsafeRawBufferPointer, startingAt: off_t, length: Int) async throws -> Int](fsblockdeviceresource/write(from:startingat:length:)-9oa1x.md)
+- [func write(from: UnsafeRawBufferPointer, startingAt: off_t, length: Int) async throws -> Int](./write%28from,startingat,length%29-9oa1x.md)
   Asynchronously writes data from from a buffer to the resource.
-- [func write(from: UnsafeRawBufferPointer, startingAt: off_t, length: Int, completionHandler: (Int, (any Error)?) -> Void)](fsblockdeviceresource/write(from:startingat:length:completionhandler:).md)
+- [func write(from: UnsafeRawBufferPointer, startingAt: off_t, length: Int, completionHandler: (Int, (any Error)?) -> Void)](./write%28from,startingat,length,completionhandler%29.md)
   Writes data from from a buffer to the resource and executes a closure afterwards.
 
 

@@ -1,7 +1,8 @@
 # providesAppNotificationSettings
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option indicating the system should display a button for in-app notification settings.
 
@@ -20,19 +21,24 @@ An option indicating the system should display a button for in-app notification 
 static var providesAppNotificationSettings: UNAuthorizationOptions { get }
 ```
 
+```c
+UNAuthorizationOptionProvidesAppNotificationSettings
+```
+
 ## See Also
 
-- [static var badge: UNAuthorizationOptions](unauthorizationoptions/badge.md)
+### Options
+- [static var badge: UNAuthorizationOptions](./badge.md)
   The ability to update the app’s badge.
-- [static var sound: UNAuthorizationOptions](unauthorizationoptions/sound.md)
+- [static var sound: UNAuthorizationOptions](./sound.md)
   The ability to play sounds.
-- [static var alert: UNAuthorizationOptions](unauthorizationoptions/alert.md)
+- [static var alert: UNAuthorizationOptions](./alert.md)
   The ability to display alerts.
-- [static var carPlay: UNAuthorizationOptions](unauthorizationoptions/carplay.md)
+- [static var carPlay: UNAuthorizationOptions](./carplay.md)
   The ability to display notifications in a CarPlay environment.
-- [static var criticalAlert: UNAuthorizationOptions](unauthorizationoptions/criticalalert.md)
+- [static var criticalAlert: UNAuthorizationOptions](./criticalalert.md)
   The ability to play sounds for critical alerts.
-- [static var provisional: UNAuthorizationOptions](unauthorizationoptions/provisional.md)
+- [static var provisional: UNAuthorizationOptions](./provisional.md)
   The ability to post noninterrupting notifications provisionally to the Notification Center.
 
 

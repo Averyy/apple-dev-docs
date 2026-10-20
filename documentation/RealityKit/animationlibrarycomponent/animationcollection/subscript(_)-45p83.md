@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: RealityKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses a single animation in the collection at an index.
 
@@ -19,6 +20,16 @@ Accesses a single animation in the collection at an index.
 subscript(position: AnimationLibraryComponent.AnimationCollection.Index) -> AnimationLibraryComponent.AnimationCollection.Element { get }
 ```
 
+**Other overloads**:
+
+```swift
+subscript(bounds: Range<AnimationLibraryComponent.AnimationCollection.Index>) -> AnimationLibraryComponent.AnimationCollection.SubSequence { get }
+```
+
+```swift
+subscript(key: String) -> AnimationResource? { get set }
+```
+
 #### Return Value
 
 The animation at the dictionary index.
@@ -29,13 +40,14 @@ The animation at the dictionary index.
 
 ## See Also
 
-- [subscript(String) -> AnimationResource?](animationlibrarycomponent/animationcollection/subscript(_:)-4sfyo.md)
+### Accessing animations
+- [subscript(String) -> AnimationResource?](./subscript%28_%29-4sfyo.md)
   Accesses a single animation in the collection with a key.
-- [subscript(Range<AnimationLibraryComponent.AnimationCollection.Index>) -> AnimationLibraryComponent.AnimationCollection.SubSequence](animationlibrarycomponent/animationcollection/subscript(_:)-2n5pw.md)
+- [subscript(Range<AnimationLibraryComponent.AnimationCollection.Index>) -> AnimationLibraryComponent.AnimationCollection.SubSequence](./subscript%28_%29-2n5pw.md)
   Accesses animations in the collection within an index range.
-- [AnimationLibraryComponent.AnimationCollection.SubSequence](animationlibrarycomponent/animationcollection/subsequence.md)
+- [AnimationLibraryComponent.AnimationCollection.SubSequence](./subsequence.md)
   A sequence that represents a contiguous subrange of animations in the collection.
-- [AnimationLibraryComponent.AnimationCollection.Element](animationlibrarycomponent/animationcollection/element.md)
+- [AnimationLibraryComponent.AnimationCollection.Element](./element.md)
   A key-value pair from the collection consisting of the name of an animation and the animation itself.
 
 

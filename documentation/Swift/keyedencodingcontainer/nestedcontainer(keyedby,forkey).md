@@ -1,7 +1,8 @@
 # nestedContainer(keyedBy:forKey:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stores a keyed encoding container for the given key and returns it.
 

@@ -1,22 +1,23 @@
 # Providing data to the view hierarchy with custom traits
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Article
 
 Share data that needs to flow hierarchically across multiple levels of your view hierarchy.
 
 #### Overview
 
-A custom trait is a type that conforms to [`UITraitDefinition`](uitraitdefinition-3572h.md). Use a custom trait to pass application data, such as a color theme that a person selects in your app, through the objects in your view hierarchy that adopt [`UITraitEnvironment`](uitraitenvironment.md). Represent data with a custom trait when you want to:
+A custom trait is a type that conforms to [`UITraitDefinition`](./uitraitdefinition-3572h.md). Use a custom trait to pass application data, such as a color theme that a person selects in your app, through the objects in your view hierarchy that adopt [`UITraitEnvironment`](./uitraitenvironment.md). Represent data with a custom trait when you want to:
 
 - Propagate data to many children, such as contained view controllers or subviews.
-- Pass data to distant components; for example, from a [`UIWindowScene`](uiwindowscene.md) subclass to a view inside a stack of view controllers.
+- Pass data to distant components; for example, from a [`UIWindowScene`](./uiwindowscene.md) subclass to a view inside a stack of view controllers.
 - Provide context about the environment, such as information about a containing view controller from the current view controller, without a dependency on the containing view controller.
 
 Avoid using custom traits for data that you can pass directly between view controllers and views.
 
-##### Create Set and Access a Custom Trait
+##### Create, set, and access a custom trait
 
-To create a custom trait, define a type that conforms to [`UITraitDefinition`](uitraitdefinition-3572h.md):
+To create a custom trait, define a type that conforms to [`UITraitDefinition`](./uitraitdefinition-3572h.md):
 
 ```swift
 struct ContainedInSettingsTrait: UITraitDefinition {
@@ -24,7 +25,7 @@ struct ContainedInSettingsTrait: UITraitDefinition {
 }
 ```
 
-[`defaultValue`](uitraitdefinition-64c15/defaultvalue.md) is the only required static property. The system infers the type for your custom trait from the type of the value you set for `defaultValue`. After you define your custom trait, set its value using your trait as the key in the `traitOverrides` property of an object in your view hierarchy:
+[`defaultValue`](./uitraitdefinition-64c15/defaultvalue.md) is the only required static property. The system infers the type for your custom trait from the type of the value you set for `defaultValue`. After you define your custom trait, set its value using your trait as the key in the `traitOverrides` property of an object in your view hierarchy:
 
 ```swift
 self.traitOverrides[ContainedInSettingsTrait.self] = true
@@ -38,9 +39,9 @@ Access the value of your trait using your trait as the key in a trait collection
 let value = traitCollection[ContainedInSettingsTrait.self]
 ```
 
-##### Simplify Custom Trait Access with Extensions
+##### Simplify custom trait access with extensions
 
-Add convenience properties to [`UITraitCollection`](uitraitcollection.md) and [`UIMutableTraits`](uimutabletraits-8l00o.md) to make your custom trait easier to access. First, extend [`UITraitCollection`](uitraitcollection.md) with a property to get the value of your custom trait from a trait collection:
+Add convenience properties to [`UITraitCollection`](./uitraitcollection.md) and [`UIMutableTraits`](./uimutabletraits-8l00o.md) to make your custom trait easier to access. First, extend [`UITraitCollection`](./uitraitcollection.md) with a property to get the value of your custom trait from a trait collection:
 
 ```swift
 extension UITraitCollection {
@@ -48,7 +49,7 @@ extension UITraitCollection {
 }
 ```
 
-Next, extend [`UIMutableTraits`](uimutabletraits-8l00o.md) to get and set the value of your custom trait:
+Next, extend [`UIMutableTraits`](./uimutabletraits-8l00o.md) to get and set the value of your custom trait:
 
 ```swift
 extension UIMutableTraits {
@@ -69,13 +70,13 @@ let traitCollection = UITraitCollection { mutableTraits in
 let value = traitCollection.isContainedInSettings
 ```
 
-##### Enhance Custom Trait Interactions
+##### Enhance custom trait interactions
 
-Set optional properties of [`UITraitDefinition`](uitraitdefinition-3572h.md) to give your trait additional system capabilities and improve debugging:
+Set optional properties of [`UITraitDefinition`](./uitraitdefinition-3572h.md) to give your trait additional system capabilities and improve debugging:
 
-- **[`affectsColorAppearance`](uitraitdefinition-3572h/affectscolorappearance.md)**: Set this to [`true`](https://developer.apple.com/documentation/swift/true) when you use your custom trait to implement custom dynamic colors.
-- **[`name`](uitraitdefinition-3572h/name.md)**: Set this to a string value to identify your custom trait in the debugger.
-- **[`identifier`](uitraitdefinition-3572h/identifier.md)**: Set this to a string value to uniquely identify your custom trait, which makes it eligible for additional features such as encoding. Use reverse DNS format to make your identifier globally unique in your app.
+- **[`affectsColorAppearance`](./uitraitdefinition-3572h/affectscolorappearance.md)**: Set this to [`true`](../Swift/true.md) when you use your custom trait to implement custom dynamic colors.
+- **[`name`](./uitraitdefinition-3572h/name.md)**: Set this to a string value to identify your custom trait in the debugger.
+- **[`identifier`](./uitraitdefinition-3572h/identifier.md)**: Set this to a string value to uniquely identify your custom trait, which makes it eligible for additional features such as encoding. Use reverse DNS format to make your identifier globally unique in your app.
 
 The following example demonstrates setting these optional properties:
 
@@ -94,13 +95,14 @@ struct MyAppThemeTrait: UITraitDefinition {
 
 ## See Also
 
-- [protocol UIMutableTraits](uimutabletraits-13ja5.md)
+### Custom traits
+- [protocol UIMutableTraits](./uimutabletraits-13ja5.md)
   A mutable container of traits.
-- [typealias UITrait](uitrait-9423.md)
+- [typealias UITrait](./uitrait-9423.md)
   A type representing a trait in a trait collection.
-- [protocol UITraitDefinition](uitraitdefinition-64c15.md)
+- [protocol UITraitDefinition](./uitraitdefinition-64c15.md)
   A type representing a trait in a trait collection.
-- [protocol UITraitBridgedEnvironmentKey](uitraitbridgedenvironmentkey.md)
+- [protocol UITraitBridgedEnvironmentKey](./uitraitbridgedenvironmentkey.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # direct
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An attestation kind of direct.
 
@@ -18,13 +19,18 @@ An attestation kind of direct.
 static let direct: ASAuthorizationPublicKeyCredentialAttestationKind
 ```
 
+```c
+extern ASAuthorizationPublicKeyCredentialAttestationKind const ASAuthorizationPublicKeyCredentialAttestationKindDirect;
+```
+
 ## See Also
 
-- [static let none: ASAuthorizationPublicKeyCredentialAttestationKind](asauthorizationpublickeycredentialattestationkind/none.md)
+### Getting attestation types
+- [static let none: ASAuthorizationPublicKeyCredentialAttestationKind](./none.md)
   An attestation kind of none.
-- [static let enterprise: ASAuthorizationPublicKeyCredentialAttestationKind](asauthorizationpublickeycredentialattestationkind/enterprise.md)
+- [static let enterprise: ASAuthorizationPublicKeyCredentialAttestationKind](./enterprise.md)
   An attestation kind of enterprise.
-- [static let indirect: ASAuthorizationPublicKeyCredentialAttestationKind](asauthorizationpublickeycredentialattestationkind/indirect.md)
+- [static let indirect: ASAuthorizationPublicKeyCredentialAttestationKind](./indirect.md)
   An attestation kind of indirect.
 
 

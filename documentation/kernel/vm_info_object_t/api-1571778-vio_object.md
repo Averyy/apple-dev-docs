@@ -1,14 +1,15 @@
 # vio_object
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 natural_t vio_object;
 ```
 

@@ -1,7 +1,8 @@
 # GCInputLeftThumbstickButton
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The name of the left thumbstick button element.
 
@@ -11,7 +12,7 @@ The name of the left thumbstick button element.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,13 +22,15 @@ var GCInputLeftThumbstickButton: String { get }
 
 ## See Also
 
-- [var leftThumbstickButton: GCControllerButtonInput?](gcextendedgamepad/leftthumbstickbutton.md)
+### Related Documentation
+- [var leftThumbstickButton: GCControllerButtonInput?](./gcextendedgamepad/leftthumbstickbutton.md)
   The button on the left thumbstick of the controller.
-- [var GCInputLeftThumbstick: String](gcinputleftthumbstick-3hlff.md)
+### Thumbstick names
+- [var GCInputLeftThumbstick: String](./gcinputleftthumbstick-3hlff.md)
   The name of the left thumbstick element.
-- [var GCInputRightThumbstick: String](gcinputrightthumbstick-8469p.md)
+- [var GCInputRightThumbstick: String](./gcinputrightthumbstick-8469p.md)
   The name of the right thumbstick element.
-- [var GCInputRightThumbstickButton: String](gcinputrightthumbstickbutton-4to77.md)
+- [var GCInputRightThumbstickButton: String](./gcinputrightthumbstickbutton-4to77.md)
   The name of the right thumbstick button element.
 
 

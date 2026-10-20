@@ -1,7 +1,8 @@
 # dietaryPhosphorus
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A quantity sample type that measures the amount of phosphorus consumed.
 
@@ -19,31 +20,37 @@ A quantity sample type that measures the amount of phosphorus consumed.
 static let dietaryPhosphorus: HKQuantityTypeIdentifier
 ```
 
+```c
+extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierDietaryPhosphorus;
+```
+
 #### Discussion
 
-These samples use mass units (described in [`HKUnit`](hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)).
+These samples use mass units (described in [`HKUnit`](../hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 
 ## See Also
 
-- [struct HKQuantityTypeIdentifier](hkquantitytypeidentifier.md)
+### Related Documentation
+- [struct HKQuantityTypeIdentifier](../hkquantitytypeidentifier.md)
   The identifiers that create quantity type objects.
-- [class HKQuantitySample](hkquantitysample.md)
+- [class HKQuantitySample](../hkquantitysample.md)
   A sample that represents a quantity, including the value and the units.
-- [class HKQuantity](hkquantity.md)
+- [class HKQuantity](../hkquantity.md)
   An object that stores a value for a given unit.
-- [static let dietaryCalcium: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietarycalcium.md)
+### Minerals
+- [static let dietaryCalcium: HKQuantityTypeIdentifier](./dietarycalcium.md)
   A quantity sample type that measures the amount of calcium consumed.
-- [static let dietaryChloride: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietarychloride.md)
+- [static let dietaryChloride: HKQuantityTypeIdentifier](./dietarychloride.md)
   A quantity sample type that measures the amount of chloride consumed.
-- [static let dietaryIron: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietaryiron.md)
+- [static let dietaryIron: HKQuantityTypeIdentifier](./dietaryiron.md)
   A quantity sample type that measures the amount of iron consumed.
-- [static let dietaryMagnesium: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietarymagnesium.md)
+- [static let dietaryMagnesium: HKQuantityTypeIdentifier](./dietarymagnesium.md)
   A quantity sample type that measures the amount of magnesium consumed.
-- [static let dietaryPotassium: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietarypotassium.md)
+- [static let dietaryPotassium: HKQuantityTypeIdentifier](./dietarypotassium.md)
   A quantity sample type that measures the amount of potassium consumed.
-- [static let dietarySodium: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietarysodium.md)
+- [static let dietarySodium: HKQuantityTypeIdentifier](./dietarysodium.md)
   A quantity sample type that measures the amount of sodium consumed.
-- [static let dietaryZinc: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietaryzinc.md)
+- [static let dietaryZinc: HKQuantityTypeIdentifier](./dietaryzinc.md)
   A quantity sample type that measures the amount of zinc consumed.
 
 

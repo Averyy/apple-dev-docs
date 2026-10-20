@@ -1,7 +1,8 @@
 # isEqual(to:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the attributed string is equal to the specified string.
 
@@ -20,13 +21,17 @@ Returns a Boolean value that indicates whether the attributed string is equal to
 func isEqual(to other: NSAttributedString) -> Bool
 ```
 
+```objc
+- (BOOL) isEqualToAttributedString:(NSAttributedString *) other;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the text and attributes in the current string and `otherString` are the same, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the text and attributes in the current string and `otherString` are the same, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-This method performs a character-by-character comparison of the string and its attributes. The character and its attributes must be the same in both strings for the method to return [`true`](https://developer.apple.com/documentation/swift/true). In attributed strings with many attributes, such a comparison is unlikely to yield an exact match [`true`](https://developer.apple.com/documentation/swift/true).
+This method performs a character-by-character comparison of the string and its attributes. The character and its attributes must be the same in both strings for the method to return [`true`](../../Swift/true.md). In attributed strings with many attributes, such a comparison is unlikely to yield an exact match [`true`](../../Swift/true.md).
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # HomeKit
 
 **Framework**: HomeKit  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Configure, control, and communicate with home automation accessories.
 
@@ -17,7 +18,7 @@ Configure, control, and communicate with home automation accessories.
 
 HomeKit enables your app to coordinate and control home automation accessories from multiple vendors to present a coherent, user-focused interface.
 
-![The diagram depicts a stylized phone emitting waves to indicate communication with a house pictured as a central icon. Four icons are arranged in a semi-circle to the right of the house icon, depicting connected accessories including a garage door, a thermometer, a sliding light switch, and a lamp.](/images/com.apple.homekit/media-3111422@2x.png)
+![The diagram depicts a stylized phone emitting waves to indicate communication with a house pictured as a central icon. Four icons are arranged in a semi-circle to the right of the house icon, depicting connected accessories including a garage door, a thermometer, a sliding light switch, and a lamp.](https://developer.apple.com/tutorials/images/com.apple.homekit/media-3111422@2x.png)
 
 Using HomeKit, your app can:
 
@@ -28,54 +29,54 @@ Using HomeKit, your app can:
 ## Topics
 
 ### Essentials
-- [Enabling HomeKit in your app](enabling-homekit-in-your-app.md)
+- [Enabling HomeKit in your app](./enabling-homekit-in-your-app.md)
   Declare your app’s intention to use HomeKit, and get permission from the user to access home automation accessories.
-- [HomeKit Entitlement](../bundleresources/entitlements/com.apple.developer.homekit.md)
+- [HomeKit Entitlement](../BundleResources/entitlements/com.apple.developer.homekit.md)
   A Boolean value that indicates whether users of the app may manage HomeKit-compatible accessories.
-- [NSHomeKitUsageDescription](../bundleresources/information-property-list/nshomekitusagedescription.md)
+- [NSHomeKitUsageDescription](../BundleResources/information-property-list/nshomekitusagedescription.md)
   A message that tells people why the app is requesting access to their HomeKit configuration data.
 ### Home Manager
-- [Configuring a home automation device](configuring-a-home-automation-device.md)
+- [Configuring a home automation device](./configuring-a-home-automation-device.md)
   Give users a familiar experience when they manage HomeKit accessories.
-- [Testing your app with the HomeKit Accessory Simulator](testing-your-app-with-the-homekit-accessory-simulator.md)
+- [Testing your app with the HomeKit Accessory Simulator](./testing-your-app-with-the-homekit-accessory-simulator.md)
   Install the HomeKit Accessory Simulator to help you debug your HomeKit-enabled app.
-- [class HMHomeManager](hmhomemanager.md)
+- [class HMHomeManager](./hmhomemanager.md)
   The manager for a collection of one or more of a user’s homes.
 ### Accessories
-- [class HMAccessorySetupManager](hmaccessorysetupmanager.md)
+- [class HMAccessorySetupManager](./hmaccessorysetupmanager.md)
   An object that setups up new accessories.
-- [class HMAccessorySetupResult](hmaccessorysetupresult.md)
+- [class HMAccessorySetupResult](./hmaccessorysetupresult.md)
   A result object describing information about a successful accessory setup request.
-- [class HMAccessorySetupRequest](hmaccessorysetuprequest.md)
+- [class HMAccessorySetupRequest](./hmaccessorysetuprequest.md)
   An object that describes how to add and setup up new accessories.
-- [Interacting with a home automation network](interacting-with-a-home-automation-network.md)
+- [Interacting with a home automation network](./interacting-with-a-home-automation-network.md)
   Find all the automation accessories in the primary home and control their state.
-- [class HMAccessory](hmaccessory.md)
+- [class HMAccessory](./hmaccessory.md)
   A home automation accessory, like a garage door opener or a thermostat.
-- [class HMService](hmservice.md)
+- [class HMService](./hmservice.md)
   A controllable feature of an accessory, like a light attached to a garage door opener.
-- [class HMCharacteristic](hmcharacteristic.md)
+- [class HMCharacteristic](./hmcharacteristic.md)
   A specific characteristic of a service, like the brightness of a dimmable light or its color temperature.
-- [class HMMediaSourceDisplayOrderProfile](hmmediasourcedisplayorderprofile.md)
+- [class HMMediaSourceDisplayOrderProfile](./hmmediasourcedisplayorderprofile.md)
   An interface from which to read and, if allowed by the accessory, update the ordering of input sources.
 ### Action Sets
-- [class HMActionSet](hmactionset.md)
+- [class HMActionSet](./hmactionset.md)
   A collection of actions that you trigger as a group.
-- [class HMTimerTrigger](hmtimertrigger.md)
+- [class HMTimerTrigger](./hmtimertrigger.md)
   A trigger to activate an action set based on a periodic timer.
-- [class HMEventTrigger](hmeventtrigger.md)
+- [class HMEventTrigger](./hmeventtrigger.md)
   A trigger to activate an action set based on a set of events and optional conditions.
 ### Errors
-- [struct HMError](hmerror.md)
+- [struct HMError](./hmerror.md)
   An error HomeKit returns.
-- [let HMErrorDomain: String](hmerrordomain.md)
+- [let HMErrorDomain: String](./hmerrordomain.md)
   A string that identifies the HomeKit error domain.
-- [HMError.Code](hmerror/code.md)
+- [HMError.Code](./hmerror/code.md)
   Possible error values that can be returned from HomeKit APIs.
-- [typealias HMErrorBlock](hmerrorblock.md)
+- [typealias HMErrorBlock](./hmerrorblock.md)
   A completion block that provides an error.
 ### Classes
-- [class HMAccessorySetupPayload](hmaccessorysetuppayload.md)
+- [class HMAccessorySetupPayload](./hmaccessorysetuppayload.md)
   A payload for authenticating a HomeKit accessory.
 
 

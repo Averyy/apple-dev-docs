@@ -1,7 +1,8 @@
 # kAXSelectedColumnsAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An array of the accessibility objects representing the currently selected columns in this browser view.
 
@@ -12,6 +13,10 @@ An array of the accessibility objects representing the currently selected column
 
 ```swift
 var kAXSelectedColumnsAttribute: String { get }
+```
+
+```c
+#define kAXSelectedColumnsAttribute
 ```
 
 

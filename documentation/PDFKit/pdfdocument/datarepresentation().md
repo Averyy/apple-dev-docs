@@ -1,7 +1,8 @@
 # dataRepresentation()
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a representation of the document as an `NSData` object.
 
@@ -19,13 +20,19 @@ Returns a representation of the document as an `NSData` object.
 func dataRepresentation() -> Data?
 ```
 
+```objc
+- (NSData *) dataRepresentation;
+```
+
 ## See Also
 
-- [func write(toFile: String) -> Bool](pdfdocument/write(tofile:).md)
+### Related Documentation
+- [func write(toFile: String) -> Bool](./write%28tofile%29.md)
   Writes the document to a file at the specified path.
-- [func write(to: URL) -> Bool](pdfdocument/write(to:).md)
+- [func write(to: URL) -> Bool](./write%28to%29.md)
   Writes the document to a location specified by the passed-in URL.
-- [func dataRepresentation(options: [AnyHashable : Any]) -> Data?](pdfdocument/datarepresentation(options:).md)
+### Creating Data Representations
+- [func dataRepresentation(options: [AnyHashable : Any]) -> Data?](./datarepresentation%28options%29.md)
   Returns a representation of the document as an `NSData` object with additional options applied, such as filters.
 
 

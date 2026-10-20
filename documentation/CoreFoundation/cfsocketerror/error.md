@@ -1,18 +1,19 @@
 # CFSocketError.error
 
 **Framework**: Core Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The socket operation failed.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ The socket operation failed.
 case error
 ```
 
+```c
+kCFSocketError
+```
+
 ## See Also
 
-- [CFSocketError.success](cfsocketerror/success.md)
+### Constants
+- [CFSocketError.success](./success.md)
   The socket operation succeeded.
-- [CFSocketError.timeout](cfsocketerror/timeout.md)
+- [CFSocketError.timeout](./timeout.md)
   The socket operation timed out.
 
 

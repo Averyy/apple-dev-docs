@@ -1,7 +1,8 @@
 # GKConnectionState
 
 **Framework**: GameKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible connection states for a player
 
@@ -20,33 +21,38 @@ Possible connection states for a player
 enum GKConnectionState
 ```
 
+```c
+enum GKConnectionState : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [GKConnectionState.connected](gkconnectionstate/connected.md)
+- [GKConnectionState.connected](./gkconnectionstate/connected.md)
   The player is connected to the game session.
-- [GKConnectionState.notConnected](gkconnectionstate/notconnected.md)
+- [GKConnectionState.notConnected](./gkconnectionstate/notconnected.md)
   The player is not connected to the game session.
 ### Initializers
-- [init?(rawValue: Int)](gkconnectionstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./gkconnectionstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func session(GKGameSession, didAdd: GKCloudPlayer)](gkgamesessioneventlistener/session(_:didadd:).md)
+### Changing Player Status
+- [func session(GKGameSession, didAdd: GKCloudPlayer)](./gkgamesessioneventlistener/session%28_,didadd%29.md)
   Tells the listener a new player has been added to a game session.
-- [func session(GKGameSession, didRemove: GKCloudPlayer)](gkgamesessioneventlistener/session(_:didremove:).md)
+- [func session(GKGameSession, didRemove: GKCloudPlayer)](./gkgamesessioneventlistener/session%28_,didremove%29.md)
   Tells the listener a player left a game session.
-- [func session(GKGameSession, player: GKCloudPlayer, didChange: GKConnectionState)](gkgamesessioneventlistener/session(_:player:didchange:).md)
+- [func session(GKGameSession, player: GKCloudPlayer, didChange: GKConnectionState)](./gkgamesessioneventlistener/session%28_,player,didchange%29.md)
   Tells the listener a player’s connection state has changed.
 
 

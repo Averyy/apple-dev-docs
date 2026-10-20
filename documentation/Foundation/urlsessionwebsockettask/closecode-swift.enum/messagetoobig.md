@@ -1,7 +1,8 @@
 # URLSessionWebSocketTask.CloseCode.messageTooBig
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A code that indicates an endpoint is terminating the connection because it received a message too big for it to process.
 
@@ -20,31 +21,36 @@ A code that indicates an endpoint is terminating the connection because it recei
 case messageTooBig
 ```
 
+```c
+NSURLSessionWebSocketCloseCodeMessageTooBig
+```
+
 ## See Also
 
-- [URLSessionWebSocketTask.CloseCode.abnormalClosure](urlsessionwebsockettask/closecode-swift.enum/abnormalclosure.md)
+### Close codes
+- [URLSessionWebSocketTask.CloseCode.abnormalClosure](./abnormalclosure.md)
   A reserved code that indicates the connection closed without a close control frame.
-- [URLSessionWebSocketTask.CloseCode.goingAway](urlsessionwebsockettask/closecode-swift.enum/goingaway.md)
+- [URLSessionWebSocketTask.CloseCode.goingAway](./goingaway.md)
   A code that indicates an endpoint is going away.
-- [URLSessionWebSocketTask.CloseCode.internalServerError](urlsessionwebsockettask/closecode-swift.enum/internalservererror.md)
+- [URLSessionWebSocketTask.CloseCode.internalServerError](./internalservererror.md)
   A code that indicates the server terminated the connection because it encountered an unexpected condition.
-- [URLSessionWebSocketTask.CloseCode.invalid](urlsessionwebsockettask/closecode-swift.enum/invalid.md)
+- [URLSessionWebSocketTask.CloseCode.invalid](./invalid.md)
   A code that indicates the connection is still open.
-- [URLSessionWebSocketTask.CloseCode.invalidFramePayloadData](urlsessionwebsockettask/closecode-swift.enum/invalidframepayloaddata.md)
+- [URLSessionWebSocketTask.CloseCode.invalidFramePayloadData](./invalidframepayloaddata.md)
   A code that indicates the server terminated the connection because it received data inconsistent with the message’s type.
-- [URLSessionWebSocketTask.CloseCode.mandatoryExtensionMissing](urlsessionwebsockettask/closecode-swift.enum/mandatoryextensionmissing.md)
+- [URLSessionWebSocketTask.CloseCode.mandatoryExtensionMissing](./mandatoryextensionmissing.md)
   A code that indicates the client terminated the connection because the server didn’t negotiate a required extension.
-- [URLSessionWebSocketTask.CloseCode.noStatusReceived](urlsessionwebsockettask/closecode-swift.enum/nostatusreceived.md)
+- [URLSessionWebSocketTask.CloseCode.noStatusReceived](./nostatusreceived.md)
   A reserved code that indicates an endpoint expected a status code and didn’t receive one.
-- [URLSessionWebSocketTask.CloseCode.normalClosure](urlsessionwebsockettask/closecode-swift.enum/normalclosure.md)
+- [URLSessionWebSocketTask.CloseCode.normalClosure](./normalclosure.md)
   A code that indicates normal connection closure.
-- [URLSessionWebSocketTask.CloseCode.policyViolation](urlsessionwebsockettask/closecode-swift.enum/policyviolation.md)
+- [URLSessionWebSocketTask.CloseCode.policyViolation](./policyviolation.md)
   A code that indicates an endpoint terminated the connection because it received a message that violates its policy.
-- [URLSessionWebSocketTask.CloseCode.protocolError](urlsessionwebsockettask/closecode-swift.enum/protocolerror.md)
+- [URLSessionWebSocketTask.CloseCode.protocolError](./protocolerror.md)
   A code that indicates an endpoint terminated the connection due to a protocol error.
-- [URLSessionWebSocketTask.CloseCode.tlsHandshakeFailure](urlsessionwebsockettask/closecode-swift.enum/tlshandshakefailure.md)
+- [URLSessionWebSocketTask.CloseCode.tlsHandshakeFailure](./tlshandshakefailure.md)
   A reserved code that indicates the connection closed due to the failure to perform a TLS handshake.
-- [URLSessionWebSocketTask.CloseCode.unsupportedData](urlsessionwebsockettask/closecode-swift.enum/unsupporteddata.md)
+- [URLSessionWebSocketTask.CloseCode.unsupportedData](./unsupporteddata.md)
   A code that indicates an endpoint terminated the connection after receiving a type of data it can’t accept.
 
 

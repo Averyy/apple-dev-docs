@@ -1,7 +1,8 @@
 # ColorSyncTransformConvert(_:_:_:_:_:_:_:_:_:_:_:_:)
 
 **Framework**: ColorSync  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Converts color data from a source layout to a destination layout using a color transform.
 
@@ -20,13 +21,17 @@ Converts color data from a source layout to a destination layout using a color t
 func ColorSyncTransformConvert(_ transform: ColorSyncTransform!, _ width: Int, _ height: Int, _ dst: UnsafeMutableRawPointer!, _ dstDepth: ColorSyncDataDepth, _ dstLayout: ColorSyncDataLayout, _ dstBytesPerRow: Int, _ src: UnsafeRawPointer!, _ srcDepth: ColorSyncDataDepth, _ srcLayout: ColorSyncDataLayout, _ srcBytesPerRow: Int, _ options: CFDictionary?) -> Bool
 ```
 
+```c
+extern bool ColorSyncTransformConvert(ColorSyncTransformRef transform, size_t width, size_t height, void *dst, ColorSyncDataDepth dstDepth, ColorSyncDataLayout dstLayout, size_t dstBytesPerRow, const void *src, ColorSyncDataDepth srcDepth, ColorSyncDataLayout srcLayout, size_t srcBytesPerRow, CFDictionaryRef options);
+```
+
 #### Return Value
 
 `true` if the conversion succeeds, or `false` otherwise.
 
 #### Discussion
 
-Use this function with care for performance reasons. Color conversions are computationally intensive and the recommended way to perform these is by using the vImage converter with a ColorSync code fragment. vImage employs vectorized code which is not only faster but also more battery efficient. Please visit the following link to see a sample application of vImage used in conjunction with ColorSync: [`https://developer.apple.com/library/prerelease/content/samplecode/convertImage/Listings/convertImage_main_c.html`](https://developer.apple.comhttps://developer.apple.com/library/prerelease/content/samplecode/convertImage/Listings/convertImage_main_c.html) More details regarding ColorSync code fragments are included below, as well.
+Use this function with care for performance reasons. Color conversions are computationally intensive and the recommended way to perform these is by using the vImage converter with a ColorSync code fragment. vImage employs vectorized code which is not only faster but also more battery efficient. Please visit the following link to see a sample application of vImage used in conjunction with ColorSync: [https://developer.apple.com/library/prerelease/content/samplecode/convertImage/Listings/convertImage_main_c.html](https://developer.apple.com/library/prerelease/content/samplecode/convertImage/Listings/convertImage_main_c.html) More details regarding ColorSync code fragments are included below, as well.
 
 ## Parameters
 
@@ -45,15 +50,16 @@ Use this function with care for performance reasons. Color conversions are compu
 
 ## See Also
 
-- [func ColorSyncTransformCreate(CFArray?, CFDictionary?) -> Unmanaged<ColorSyncTransform>?](colorsynctransformcreate(_:_:).md)
+### Creating and applying a transform
+- [func ColorSyncTransformCreate(CFArray?, CFDictionary?) -> Unmanaged<ColorSyncTransform>?](./colorsynctransformcreate%28_,_%29.md)
   Creates a color transform from a sequence of profiles.
-- [func ColorSyncTransformGetProfileSequence(ColorSyncTransform!) -> Unmanaged<CFArray>?](colorsynctransformgetprofilesequence(_:).md)
+- [func ColorSyncTransformGetProfileSequence(ColorSyncTransform!) -> Unmanaged<CFArray>?](./colorsynctransformgetprofilesequence%28_%29.md)
   Returns the profile sequence used to create a color transform.
-- [func ColorSyncTransformCopyProperty(ColorSyncTransform!, CFTypeRef!, CFDictionary?) -> Unmanaged<CFTypeRef>?](colorsynctransformcopyproperty(_:_:_:).md)
+- [func ColorSyncTransformCopyProperty(ColorSyncTransform!, CFTypeRef!, CFDictionary?) -> Unmanaged<CFTypeRef>?](./colorsynctransformcopyproperty%28_,_,_%29.md)
   Copies a property from a color transform.
-- [func ColorSyncTransformSetProperty(ColorSyncTransform!, CFTypeRef!, CFTypeRef?)](colorsynctransformsetproperty(_:_:_:).md)
+- [func ColorSyncTransformSetProperty(ColorSyncTransform!, CFTypeRef!, CFTypeRef?)](./colorsynctransformsetproperty%28_,_,_%29.md)
   Sets a property on a color transform.
-- [func ColorSyncTransformGetTypeID() -> CFTypeID](colorsynctransformgettypeid().md)
+- [func ColorSyncTransformGetTypeID() -> CFTypeID](./colorsynctransformgettypeid%28%29.md)
   Returns the type identifier for the `ColorSyncTransform` opaque type.
 
 

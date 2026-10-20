@@ -1,7 +1,8 @@
 # MLModelClassifierAdaptor
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transformer that uses a Core ML model as a classifier.
 
@@ -23,32 +24,33 @@ struct MLModelClassifierAdaptor<Scalar> where Scalar : MLShapedArrayScalar, Scal
 ## Topics
 
 ### Creating a transformer
-- [init(model: MLModel) throws](mlmodelclassifieradaptor/init(model:).md)
+- [init(model: MLModel) throws](./mlmodelclassifieradaptor/init%28model%29.md)
   Creates a MLModel classifier adaptor from a model.
-- [init(contentsOf: URL, configuration: MLModelConfiguration) throws](mlmodelclassifieradaptor/init(contentsof:configuration:).md)
+- [init(contentsOf: URL, configuration: MLModelConfiguration) throws](./mlmodelclassifieradaptor/init%28contentsof,configuration%29.md)
   Creates a model adaptor from a CoreML model URL.
 ### Getting the model
-- [let model: MLModel](mlmodelclassifieradaptor/model.md)
+- [let model: MLModel](./mlmodelclassifieradaptor/model.md)
   The CoreML model.
 ### Performing the transformation
-- [func applied(to: MLShapedArray<Scalar>, eventHandler: EventHandler?) async throws -> ClassificationDistribution<MLModelClassifierAdaptor<Scalar>.Label>](mlmodelclassifieradaptor/applied(to:eventhandler:).md)
+- [func applied(to: MLShapedArray<Scalar>, eventHandler: EventHandler?) async throws -> ClassificationDistribution<MLModelClassifierAdaptor<Scalar>.Label>](./mlmodelclassifieradaptor/applied%28to,eventhandler%29.md)
   Performs a prediction from a single input.
-- [MLModelClassifierAdaptor.Label](mlmodelclassifieradaptor/label.md)
+- [MLModelClassifierAdaptor.Label](./mlmodelclassifieradaptor/label.md)
   The classifier label type.
 
 ## Relationships
 
 ### Conforms To
-- [Classifier](classifier.md)
-- [Transformer](transformer.md)
+- [Classifier](./classifier.md)
+- [Transformer](./transformer.md)
 
 ## See Also
 
-- [struct MLModelTransformerAdaptor](mlmodeltransformeradaptor.md)
+### Core ML adaptors
+- [struct MLModelTransformerAdaptor](./mlmodeltransformeradaptor.md)
   A transformer that uses a Core ML model.
-- [struct MLModelRegressorAdaptor](mlmodelregressoradaptor.md)
+- [struct MLModelRegressorAdaptor](./mlmodelregressoradaptor.md)
   A transformer that uses a Core ML model as a regressor.
-- [struct ModelMetadata](modelmetadata.md)
+- [struct ModelMetadata](./modelmetadata.md)
   User info keys that specify useful information about a model.
 
 

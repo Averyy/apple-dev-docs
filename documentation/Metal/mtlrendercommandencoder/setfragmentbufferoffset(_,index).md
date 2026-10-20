@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Updates an entry in the fragment shader argument table with a new location within the entry’s current buffer.
@@ -11,7 +12,7 @@ Updates an entry in the fragment shader argument table with a new location withi
 - iPadOS 8.3+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,17 +21,21 @@ Updates an entry in the fragment shader argument table with a new location withi
 func setFragmentBufferOffset(_ offset: Int, index: Int)
 ```
 
+```objc
+- (void) setFragmentBufferOffset:(NSUInteger) offset atIndex:(NSUInteger) index;
+```
+
 #### Discussion
 
 The command this method encodes changes the offset for a fragment buffer that already has a previous assignment from one of your earlier commands.
 
 For more information, see:
 
-- [`setFragmentBuffer(_:offset:index:)`](mtlrendercommandencoder/setfragmentbuffer(_:offset:index:).md)
-- [`setFragmentBuffers(_:offsets:range:)`](mtlrendercommandencoder/setfragmentbuffers(_:offsets:range:).md) (Swift)
-- [`setFragmentBuffers:offsets:withRange:`](mtlrendercommandencoder/setfragmentbuffers:offsets:withrange:.md) (Objective-C)
+- [`setFragmentBuffer(_:offset:index:)`](./setfragmentbuffer%28_,offset,index%29.md)
+- [`setFragmentBuffers(_:offsets:range:)`](./setfragmentbuffers%28_,offsets,range%29.md) (Swift)
+- [`setFragmentBuffers:offsets:withRange:`](./setfragmentbuffers_offsets_withrange_.md) (Objective-C)
 
-The command can also adjust the offset for an entry that you previously set with the [`setFragmentBytes(_:length:index:)`](mtlrendercommandencoder/setfragmentbytes(_:length:index:).md) method.
+The command can also adjust the offset for an entry that you previously set with the [`setFragmentBytes(_:length:index:)`](./setfragmentbytes%28_,length,index%29.md) method.
 
 > 💡 **Tip**:  If you’re only updating an offset, this method is typically more efficient than rebinding a buffer or byte block with the methods above.
 
@@ -38,16 +43,19 @@ By default, the buffer at each index is `nil`.
 
 ## Parameters
 
-- `offset`: An integer that represents the location, in bytes, from the start of `buffer` where the fragment shader argument data begins. See the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) to check for offset alignment requirements for buffers in `device` and `constant` address space.
-- `index`: An integer that represents the entry in the fragment shader argument table for buffers that already stores a record of an [`MTLBuffer`](mtlbuffer.md).
+- `offset`: An integer that represents the location, in bytes, from the start of `buffer` where the fragment shader argument data begins.
+
+  See the [Metal feature set tables (PDF)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) to check for offset alignment requirements for buffers in `device` and `constant` address space.
+- `index`: An integer that represents the entry in the fragment shader argument table for buffers that already stores a record of an [`MTLBuffer`](../mtlbuffer.md).
 
 ## See Also
 
-- [func setFragmentBuffer((any MTLBuffer)?, offset: Int, index: Int)](mtlrendercommandencoder/setfragmentbuffer(_:offset:index:).md)
+### Assigning buffers
+- [func setFragmentBuffer((any MTLBuffer)?, offset: Int, index: Int)](./setfragmentbuffer%28_,offset,index%29.md)
   Assigns a buffer to an entry in the fragment shader argument table.
-- [func setFragmentBuffers([(any MTLBuffer)?], offsets: [Int], range: Range<Int>)](mtlrendercommandencoder/setfragmentbuffers(_:offsets:range:).md)
+- [func setFragmentBuffers([(any MTLBuffer)?], offsets: [Int], range: Range<Int>)](./setfragmentbuffers%28_,offsets,range%29.md)
   Assigns multiple buffers to a range of entries in the fragment shader argument table.
-- [func setFragmentBytes(UnsafeRawPointer, length: Int, index: Int)](mtlrendercommandencoder/setfragmentbytes(_:length:index:).md)
+- [func setFragmentBytes(UnsafeRawPointer, length: Int, index: Int)](./setfragmentbytes%28_,length,index%29.md)
   Creates a buffer from bytes and assigns it to an entry in the fragment shader argument table.
 
 

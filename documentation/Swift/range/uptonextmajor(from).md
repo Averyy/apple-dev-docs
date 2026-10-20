@@ -1,7 +1,8 @@
 # upToNextMajor(from:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a requirement for a version range, starting at the given minimum version and going up to the next major version. This is the recommended version requirement.
 
@@ -13,6 +14,8 @@ Returns a requirement for a version range, starting at the given minimum version
 ```swift
 static func upToNextMajor(from version: Version) -> Range<Bound> where Bound == Version
 ```
+
+Available when `Bound` conforms to `Comparable`.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # init(width:height:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 4.0+
@@ -20,7 +21,8 @@ init(width: Int32, height: Int32)
 
 ## See Also
 
-- [init()](cmvideodimensions/init.md)
+### Creating Video Dimensions
+- [init()](./init%28%29.md)
 
 
 ---

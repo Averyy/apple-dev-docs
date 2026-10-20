@@ -1,16 +1,17 @@
 # UIFont.TextStyle
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that describe the preferred styles for fonts.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 - watchOS 3.0+
 
 ## Declaration
@@ -19,70 +20,75 @@ Constants that describe the preferred styles for fonts.
 struct TextStyle
 ```
 
+```c
+typedef NSString * UIFontTextStyle;
+```
+
 #### Overview
 
-Pass these constants to the [`preferredFont(forTextStyle:)`](uifont/preferredfont(fortextstyle:).md) method of [`UIFont`](uifont.md) or the [`preferredFontDescriptor(withTextStyle:)`](uifontdescriptor/preferredfontdescriptor(withtextstyle:).md) method of [`UIFontDescriptor`](uifontdescriptor.md) to retrieve the corresponding font information.
+Pass these constants to the [`preferredFont(forTextStyle:)`](./preferredfont%28fortextstyle%29.md) method of [`UIFont`](../uifont.md) or the [`preferredFontDescriptor(withTextStyle:)`](../uifontdescriptor/preferredfontdescriptor%28withtextstyle%29.md) method of [`UIFontDescriptor`](../uifontdescriptor.md) to retrieve the corresponding font information.
 
 ## Topics
 
 ### Constants
-- [static let body: UIFont.TextStyle](uifont/textstyle/body.md)
+- [static let body: UIFont.TextStyle](./textstyle/body.md)
   The font for body text.
-- [static let callout: UIFont.TextStyle](uifont/textstyle/callout.md)
+- [static let callout: UIFont.TextStyle](./textstyle/callout.md)
   The font for callouts.
-- [static let caption1: UIFont.TextStyle](uifont/textstyle/caption1.md)
+- [static let caption1: UIFont.TextStyle](./textstyle/caption1.md)
   The font for standard captions.
-- [static let caption2: UIFont.TextStyle](uifont/textstyle/caption2.md)
+- [static let caption2: UIFont.TextStyle](./textstyle/caption2.md)
   The font for alternate captions.
-- [static let footnote: UIFont.TextStyle](uifont/textstyle/footnote.md)
+- [static let footnote: UIFont.TextStyle](./textstyle/footnote.md)
   The font for footnotes.
-- [static let headline: UIFont.TextStyle](uifont/textstyle/headline.md)
+- [static let headline: UIFont.TextStyle](./textstyle/headline.md)
   The font for headings.
-- [static let subheadline: UIFont.TextStyle](uifont/textstyle/subheadline.md)
+- [static let subheadline: UIFont.TextStyle](./textstyle/subheadline.md)
   The font for subheadings.
-- [static let largeTitle: UIFont.TextStyle](uifont/textstyle/largetitle.md)
+- [static let largeTitle: UIFont.TextStyle](./textstyle/largetitle.md)
   The font style for large titles.
-- [static let extraLargeTitle: UIFont.TextStyle](uifont/textstyle/extralargetitle.md)
+- [static let extraLargeTitle: UIFont.TextStyle](./textstyle/extralargetitle.md)
   The font style for extra large titles.
-- [static let extraLargeTitle2: UIFont.TextStyle](uifont/textstyle/extralargetitle2.md)
+- [static let extraLargeTitle2: UIFont.TextStyle](./textstyle/extralargetitle2.md)
   The font style for extra extra large titles.
-- [static let title1: UIFont.TextStyle](uifont/textstyle/title1.md)
+- [static let title1: UIFont.TextStyle](./textstyle/title1.md)
   The font for first-level hierarchical headings.
-- [static let title2: UIFont.TextStyle](uifont/textstyle/title2.md)
+- [static let title2: UIFont.TextStyle](./textstyle/title2.md)
   The font for second-level hierarchical headings.
-- [static let title3: UIFont.TextStyle](uifont/textstyle/title3.md)
+- [static let title3: UIFont.TextStyle](./textstyle/title3.md)
   The font for third-level hierarchical headings.
 ### Metrics
-- [var metrics: UIFontMetrics](uifont/textstyle/metrics.md)
+- [var metrics: UIFontMetrics](./textstyle/metrics.md)
   The corresponding font metrics object for the text style.
 ### Initializers
-- [init(rawValue: String)](uifont/textstyle/init(rawvalue:).md)
+- [init(rawValue: String)](./textstyle/init%28rawvalue%29.md)
   Creates a text style with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Scaling fonts automatically](scaling-fonts-automatically.md)
+### Creating Fonts
+- [Scaling fonts automatically](../scaling-fonts-automatically.md)
   Scale text in your interface automatically using Dynamic Type.
-- [Creating self-sizing table view cells](creating-self-sizing-table-view-cells.md)
+- [Creating self-sizing table view cells](../creating-self-sizing-table-view-cells.md)
   Create table view cells that support Dynamic Type and use system spacing constraints to adjust the spacing surrounding text labels.
-- [class func preferredFont(forTextStyle: UIFont.TextStyle) -> UIFont](uifont/preferredfont(fortextstyle:).md)
+- [class func preferredFont(forTextStyle: UIFont.TextStyle) -> UIFont](./preferredfont%28fortextstyle%29.md)
   Returns an instance of the system font for the specified text style with scaling for the user’s selected content size category.
-- [class func preferredFont(forTextStyle: UIFont.TextStyle, compatibleWith: UITraitCollection?) -> UIFont](uifont/preferredfont(fortextstyle:compatiblewith:).md)
+- [class func preferredFont(forTextStyle: UIFont.TextStyle, compatibleWith: UITraitCollection?) -> UIFont](./preferredfont%28fortextstyle,compatiblewith%29.md)
   Returns an instance of the system font for the appropriate text style and traits.
-- [init?(name: String, size: CGFloat)](uifont/init(name:size:).md)
+- [init?(name: String, size: CGFloat)](./init%28name,size%29.md)
   Creates and returns a font object for the specified font name and size.
-- [init(descriptor: UIFontDescriptor, size: CGFloat)](uifont/init(descriptor:size:).md)
+- [init(descriptor: UIFontDescriptor, size: CGFloat)](./init%28descriptor,size%29.md)
   Returns a font that matches the specified font descriptor.
-- [func withSize(CGFloat) -> UIFont](uifont/withsize(_:).md)
+- [func withSize(CGFloat) -> UIFont](./withsize%28_%29.md)
   Returns a font object that is the same as the font, but has the specified size.
 
 

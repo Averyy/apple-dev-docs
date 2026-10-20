@@ -1,7 +1,8 @@
 # applyMulti(setup:pInputs:pOutputs:count:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 13.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

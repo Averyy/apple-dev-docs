@@ -1,7 +1,8 @@
 # handle
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A reference to the layer hierarchy that you add to the hosting view.
 
@@ -15,9 +16,13 @@ A reference to the layer hierarchy that you add to the hosting view.
 var handle: LayerHierarchyHandle { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) BELayerHierarchyHandle * handle;
+```
+
 #### Discussion
 
-Get the handle in your extension process, then use XPC to send it to the browser app. In the browser app, add the handle to a [`LayerHierarchyHostingView`](layerhierarchyhostingview.md).
+Get the handle in your extension process, then use XPC to send it to the browser app. In the browser app, add the handle to a [`LayerHierarchyHostingView`](../layerhierarchyhostingview.md).
 
 
 ---

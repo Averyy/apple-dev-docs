@@ -1,7 +1,8 @@
 # temporaryResultStateBatch(commandBuffer:sourceImage:sourceStates:destinationImage:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 func temporaryResultStateBatch(commandBuffer: any MTLCommandBuffer, sourceImage: [MPSImage], sourceStates: [[MPSCNNConvolutionGradientState]]?, destinationImage: [MPSImage]) -> [MPSCNNConvolutionTransposeGradientState]?
+```
+
+```objc
+- (MPSCNNConvolutionTransposeGradientStateBatch *) temporaryResultStateBatchForCommandBuffer:(id<MTLCommandBuffer>) commandBuffer sourceImage:(MPSImageBatch *) sourceImage sourceStates:(NSArray<NSArray<MPSCNNConvolutionGradientState *> *> *) sourceStates destinationImage:(MPSImageBatch *) destinationImage;
 ```
 
 

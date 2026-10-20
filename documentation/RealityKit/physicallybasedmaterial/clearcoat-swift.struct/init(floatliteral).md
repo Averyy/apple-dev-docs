@@ -1,7 +1,8 @@
 # init(floatLiteral:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a clearcoat object using a single value.
 
@@ -11,7 +12,7 @@ Creates a clearcoat object using a single value.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -29,9 +30,10 @@ A clearcoat is a separate layer of transparent specular highlights used to simul
 
 ## See Also
 
-- [init(scale: Float, texture: PhysicallyBasedMaterial.Texture?)](physicallybasedmaterial/clearcoat-swift.struct/init(scale:texture:).md)
+### Creating a clearcoat object
+- [init(scale: Float, texture: PhysicallyBasedMaterial.Texture?)](./init%28scale,texture%29.md)
   Creates a clearcoat object using a single value or a texture.
-- [init(CustomMaterial.Clearcoat)](physicallybasedmaterial/clearcoat-swift.struct/init(_:).md)
+- [init(CustomMaterial.Clearcoat)](./init%28_%29.md)
   Creates a clearcoat object from a custom material’s clearcoat property.
 
 

@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The archiver’s delegate.
 
@@ -18,6 +19,10 @@ The archiver’s delegate.
 
 ```swift
 unowned(unsafe) var delegate: (any NSKeyedArchiverDelegate)? { get set }
+```
+
+```objc
+@property (assign, nullable) id<NSKeyedArchiverDelegate> delegate;
 ```
 
 

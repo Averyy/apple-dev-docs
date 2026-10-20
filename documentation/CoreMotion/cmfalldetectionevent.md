@@ -1,7 +1,8 @@
 # CMFallDetectionEvent
 
 **Framework**: Core Motion  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains data about a fall detection event.
 
@@ -14,36 +15,41 @@ An object that contains data about a fall detection event.
 class CMFallDetectionEvent
 ```
 
+```objc
+@interface CMFallDetectionEvent : NSObject
+```
+
 ## Topics
 
 ### Accessing Fall Data
-- [var resolution: CMFallDetectionEvent.UserResolution](cmfalldetectionevent/resolution.md)
+- [var resolution: CMFallDetectionEvent.UserResolution](./cmfalldetectionevent/resolution.md)
   The event’s resolution.
-- [CMFallDetectionEvent.UserResolution](cmfalldetectionevent/userresolution.md)
+- [CMFallDetectionEvent.UserResolution](./cmfalldetectionevent/userresolution.md)
   User resolutions for fall detection events.
 ### Getting the event date
-- [var date: Date](cmfalldetectionevent/date.md)
+- [var date: Date](./cmfalldetectionevent/date.md)
   The event’s time and date.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CMFallDetectionManager](cmfalldetectionmanager.md)
+### Fall detection
+- [class CMFallDetectionManager](./cmfalldetectionmanager.md)
   An object for managing fall detection events.
-- [protocol CMFallDetectionDelegate](cmfalldetectiondelegate.md)
+- [protocol CMFallDetectionDelegate](./cmfalldetectiondelegate.md)
   A delegate that receives information about fall detection events and authorization status changes.
-- [NSFallDetectionUsageDescription](../bundleresources/information-property-list/nsfalldetectionusagedescription.md)
+- [NSFallDetectionUsageDescription](../BundleResources/information-property-list/nsfalldetectionusagedescription.md)
   A message to the user that explains the app’s request for permission to access fall detection event data.
 
 

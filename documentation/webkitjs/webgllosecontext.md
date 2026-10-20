@@ -1,7 +1,8 @@
 # WebGLLoseContext
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,15 +10,15 @@
 
 ## Declaration
 
-```swift
+```
 interface WebGLLoseContext
 ```
 
 ## Topics
 
 ### Instance Methods
-- [loseContext](webgllosecontext/1629814-losecontext.md)
-- [restoreContext](webgllosecontext/1633987-restorecontext.md)
+- [loseContext](./webgllosecontext/api-1629814-losecontext.md)
+- [restoreContext](./webgllosecontext/api-1633987-restorecontext.md)
 
 
 ---

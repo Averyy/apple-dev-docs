@@ -2,6 +2,7 @@
 
 **Framework**: Model I/O  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A descriptive name for the object.
@@ -20,9 +21,13 @@ A descriptive name for the object.
 var name: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * name;
+```
+
 #### Discussion
 
-Many types of Model I/O objects support this property. For objects loaded from a file using the [`MDLAsset`](mdlasset.md) class, this property may reflect the name or label assigned by an artist using 3D authoring tools.
+Many types of Model I/O objects support this property. For objects loaded from a file using the [`MDLAsset`](../mdlasset.md) class, this property may reflect the name or label assigned by an artist using 3D authoring tools.
 
 
 ---

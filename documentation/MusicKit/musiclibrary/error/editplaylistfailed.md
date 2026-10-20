@@ -1,7 +1,8 @@
 # MusicLibrary.Error.editPlaylistFailed
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates a failure in the process of editing a playlist.
 

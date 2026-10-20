@@ -1,26 +1,28 @@
 # Books.Attributes.Offers.Download
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - VPP License Management 2.1+
 
 ## Declaration
 
-```swift
+```
 object Books.Attributes.Offers.Download
 ```
 
 ## Properties
 
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `anonymous`, `courseMaterial`, `podcastEpisode`
 - `url` (string) *(required)*
 
 ## See Also
 
-- [object Books.Attributes.Offers.Assets](books/attributes-data.dictionary/offers-data.dictionary/assets-data.dictionary.md)
-- [object Books.Attributes.Offers.Discounts](books/attributes-data.dictionary/offers-data.dictionary/discounts-data.dictionary.md)
+### Related Objects
+- [object Books.Attributes.Offers.Assets](./assets-data.dictionary.md)
+- [object Books.Attributes.Offers.Discounts](./discounts-data.dictionary.md)
 
 
 ---

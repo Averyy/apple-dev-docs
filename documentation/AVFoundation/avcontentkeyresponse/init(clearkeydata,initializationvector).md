@@ -1,7 +1,8 @@
 # init(clearKeyData:initializationVector:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new key response object for key data and initialization vector sent in the clear.
 
@@ -20,13 +21,17 @@ Creates a new key response object for key data and initialization vector sent in
 convenience init(clearKeyData keyData: Data, initializationVector: Data?)
 ```
 
+```objc
++ (instancetype) contentKeyResponseWithClearKeyData:(NSData *) keyData initializationVector:(NSData *) initializationVector;
+```
+
 #### Return Value
 
-Returns a new [`AVContentKeyResponse`](avcontentkeyresponse.md) object to decrypt content.
+Returns a new [`AVContentKeyResponse`](../avcontentkeyresponse.md) object to decrypt content.
 
 #### Discussion
 
-Use the results of this initializer when the content key session creates a key request using the [`clearKey`](avcontentkeysystem/clearkey.md) parameter. The results are then passed to the [`processContentKeyResponse(_:)`](avcontentkeyrequest/processcontentkeyresponse(_:).md) method to supply the decrypter with key data.
+Use the results of this initializer when the content key session creates a key request using the [`clearKey`](../avcontentkeysystem/clearkey.md) parameter. The results are then passed to the [`processContentKeyResponse(_:)`](../avcontentkeyrequest/processcontentkeyresponse%28_%29.md) method to supply the decrypter with key data.
 
 ## Parameters
 
@@ -35,9 +40,10 @@ Use the results of this initializer when the content key session creates a key r
 
 ## See Also
 
-- [convenience init(fairPlayStreamingKeyResponseData: Data)](avcontentkeyresponse/init(fairplaystreamingkeyresponsedata:).md)
+### Creating new content key responses
+- [convenience init(fairPlayStreamingKeyResponseData: Data)](./init%28fairplaystreamingkeyresponsedata%29.md)
   Creates a content key response with an encrypted key response data blob when FairPlay Streaming is the key delivery method.
-- [convenience init(authorizationTokenData: Data)](avcontentkeyresponse/init(authorizationtokendata:).md)
+- [convenience init(authorizationTokenData: Data)](./init%28authorizationtokendata%29.md)
   Creates a content key response with an authorization token.
 
 

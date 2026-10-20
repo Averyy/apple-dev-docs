@@ -1,7 +1,8 @@
 # schedule(_:at:)
 
 **Framework**: WorkoutKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Schedules the provided workout at the specified date.
 

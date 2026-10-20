@@ -2,17 +2,22 @@
 
 **Framework**: AppKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The view assigned by the text bar as the find bar view for the container.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var findBarView: NSView? { get set }
+```
+
+```objc
+@property (strong, nullable) NSView * findBarView;
 ```
 
 #### Discussion
@@ -23,9 +28,10 @@ The container may freely modify the view’s width, but should not modify its he
 
 ## See Also
 
-- [func contentView() -> NSView?](nstextfinderbarcontainer/contentview.md)
+### Find Bar View
+- [func contentView() -> NSView?](./contentview%28%29.md)
   A view hierarchy that contains all the views which display the contents being searched.
-- [var isFindBarVisible: Bool](nstextfinderbarcontainer/isfindbarvisible.md)
+- [var isFindBarVisible: Bool](./isfindbarvisible.md)
   Returns whether the container should display its find bar.
 
 

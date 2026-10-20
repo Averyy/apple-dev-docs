@@ -1,7 +1,8 @@
 # init(type:start:end:objects:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Instantiates and returns a new correlation instance.
 
@@ -17,6 +18,10 @@ Instantiates and returns a new correlation instance.
 
 ```swift
 convenience init(type correlationType: HKCorrelationType, start startDate: Date, end endDate: Date, objects: Set<HKSample>)
+```
+
+```objc
++ (instancetype) correlationWithType:(HKCorrelationType *) correlationType startDate:(NSDate *) startDate endDate:(NSDate *) endDate objects:(NSSet<HKSample *> *) objects;
 ```
 
 #### Return Value
@@ -124,28 +129,30 @@ HKCorrelation *bloodPressure =
 
 ## Parameters
 
-- `correlationType`: The type for this correlation. For a complete list of correlation type identifiers, see [`HKCorrelationTypeIdentifier`](hkcorrelationtypeidentifier.md).
-- `startDate`: The start date for the sample. This date must be equal to or earlier than the end date; otherwise, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception)).
-- `endDate`: The end date for the sample. This date must be equal to or later than the start date; otherwise, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception)).
-- `objects`: A set of [`HKSample`](hksample.md) objects. Specifically, this set contains the quantity and category samples to be grouped into this correlation.
+- `correlationType`: The type for this correlation. For a complete list of correlation type identifiers, see [`HKCorrelationTypeIdentifier`](../hkcorrelationtypeidentifier.md).
+- `startDate`: The start date for the sample. This date must be equal to or earlier than the end date; otherwise, this method throws an exception ([`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md)).
+- `endDate`: The end date for the sample. This date must be equal to or later than the start date; otherwise, this method throws an exception ([`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md)).
+- `objects`: A set of [`HKSample`](../hksample.md) objects. Specifically, this set contains the quantity and category samples to be grouped into this correlation.
 
 ## See Also
 
-- [var objects: Set<HKSample>](hkcorrelation/objects.md)
+### Related Documentation
+- [var objects: Set<HKSample>](./objects.md)
   The set of sample objects that make up the correlation.
-- [class func correlationType(forIdentifier: HKCorrelationTypeIdentifier) -> HKCorrelationType?](hkobjecttype/correlationtype(foridentifier:).md)
+- [class func correlationType(forIdentifier: HKCorrelationTypeIdentifier) -> HKCorrelationType?](../hkobjecttype/correlationtype%28foridentifier%29.md)
   Returns the shared correlation type for the provided identifier.
-- [var endDate: Date](hksample/enddate.md)
+- [var endDate: Date](../hksample/enddate.md)
   The sample’s end date.
-- [var correlationType: HKCorrelationType](hkcorrelation/correlationtype.md)
+- [var correlationType: HKCorrelationType](./correlationtype.md)
   The type for this correlation.
-- [var metadata: [String : Any]?](hkobject/metadata.md)
+- [var metadata: [String : Any]?](../hkobject/metadata.md)
   The metadata for this HealthKit object.
-- [var startDate: Date](hksample/startdate.md)
+- [var startDate: Date](../hksample/startdate.md)
   The sample’s start date.
-- [convenience init(type: HKCorrelationType, start: Date, end: Date, objects: Set<HKSample>, metadata: [String : Any]?)](hkcorrelation/init(type:start:end:objects:metadata:).md)
+### Creating Correlations
+- [convenience init(type: HKCorrelationType, start: Date, end: Date, objects: Set<HKSample>, metadata: [String : Any]?)](./init%28type,start,end,objects,metadata%29.md)
   Instantiates and returns a new correlation instance with the provided metadata.
-- [convenience init(type: HKCorrelationType, start: Date, end: Date, objects: Set<HKSample>, device: HKDevice?, metadata: [String : Any]?)](hkcorrelation/init(type:start:end:objects:device:metadata:).md)
+- [convenience init(type: HKCorrelationType, start: Date, end: Date, objects: Set<HKSample>, device: HKDevice?, metadata: [String : Any]?)](./init%28type,start,end,objects,device,metadata%29.md)
   Instantiates and returns a new correlation instance with the provided device and metadata.
 
 

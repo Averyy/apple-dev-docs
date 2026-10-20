@@ -1,7 +1,8 @@
 # intersects(_:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns `true` if the the ray intersects the specified rectangle.
 

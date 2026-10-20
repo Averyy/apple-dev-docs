@@ -1,7 +1,8 @@
 # Build.Relationships.BuildBundles.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a related Build Bundles resource.
 
@@ -10,7 +11,7 @@ The type and ID of a related Build Bundles resource.
 
 ## Declaration
 
-```swift
+```
 object Build.Relationships.BuildBundles.Data
 ```
 
@@ -18,6 +19,8 @@ object Build.Relationships.BuildBundles.Data
 
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Build Bundles resource.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `buildBundles`
 
 
 ---

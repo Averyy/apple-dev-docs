@@ -1,7 +1,8 @@
 # MLDSA87
 
 **Framework**: Apple CryptoKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The MLDSA87 Digital Signature Algorithm
 
@@ -23,16 +24,16 @@ enum MLDSA87
 ## Topics
 
 ### Keys
-- [MLDSA87.PrivateKey](mldsa87/privatekey.md)
+- [MLDSA87.PrivateKey](./mldsa87/privatekey.md)
   The private key for MLDSA87.
-- [MLDSA87.PublicKey](mldsa87/publickey.md)
+- [MLDSA87.PublicKey](./mldsa87/publickey.md)
   The public key for MLDSA87.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

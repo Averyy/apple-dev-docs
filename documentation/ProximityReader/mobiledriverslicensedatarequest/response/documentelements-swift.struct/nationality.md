@@ -1,7 +1,8 @@
 # nationality
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The nationality of the identity document holder on record with the issuer.
 

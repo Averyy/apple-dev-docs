@@ -1,7 +1,8 @@
 # includesAllActivity
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the event includes all applications, categories, and web domains.
 
@@ -18,13 +19,14 @@ var includesAllActivity: Bool { get }
 
 #### Discussion
 
-Use `includesAllActivity` to determine the content of the scheduled event. Evaluates to `true` if [`applications`](deviceactivityevent/applications.md), [`categories`](deviceactivityevent/categories.md), and [`webDomains`](deviceactivityevent/webdomains.md) are empty; otherwise `false`.
+Use `includesAllActivity` to determine the content of the scheduled event. Evaluates to `true` if [`applications`](./applications.md), [`categories`](./categories.md), and [`webDomains`](./webdomains.md) are empty; otherwise `false`.
 
 ## See Also
 
-- [init(applications: Set<ApplicationToken>, categories: Set<ActivityCategoryToken>, webDomains: Set<WebDomainToken>, threshold: DateComponents)](deviceactivityevent/init(applications:categories:webdomains:threshold:).md)
+### Creating an Event
+- [init(applications: Set<ApplicationToken>, categories: Set<ActivityCategoryToken>, webDomains: Set<WebDomainToken>, threshold: DateComponents)](./init%28applications,categories,webdomains,threshold%29.md)
   Creates a new event.
-- [DeviceActivityEvent.Name](deviceactivityevent/name.md)
+- [DeviceActivityEvent.Name](./name.md)
   The unique name of an event.
 
 

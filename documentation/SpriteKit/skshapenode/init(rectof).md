@@ -1,7 +1,8 @@
 # init(rectOf:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a shape node with a rectangular path centered on the node’s origin.
 
@@ -20,6 +21,10 @@ Creates a shape node with a rectangular path centered on the node’s origin.
 convenience init(rectOf size: CGSize)
 ```
 
+```objc
++ (instancetype) shapeNodeWithRectOfSize:(CGSize) size;
+```
+
 #### Return Value
 
 A new shape node.
@@ -30,11 +35,12 @@ A new shape node.
 
 ## See Also
 
-- [convenience init(rect: CGRect)](skshapenode/init(rect:).md)
+### Creating a Shape from a Rectangle
+- [convenience init(rect: CGRect)](./init%28rect%29.md)
   Creates a shape node with a rectangular path.
-- [convenience init(rect: CGRect, cornerRadius: CGFloat)](skshapenode/init(rect:cornerradius:).md)
+- [convenience init(rect: CGRect, cornerRadius: CGFloat)](./init%28rect,cornerradius%29.md)
   Creates a shape with a rectangular path that has rounded corners.
-- [convenience init(rectOf: CGSize, cornerRadius: CGFloat)](skshapenode/init(rectof:cornerradius:).md)
+- [convenience init(rectOf: CGSize, cornerRadius: CGFloat)](./init%28rectof,cornerradius%29.md)
   Creates a shape with a rectangular path that has rounded corners centered on the node’s position.
 
 

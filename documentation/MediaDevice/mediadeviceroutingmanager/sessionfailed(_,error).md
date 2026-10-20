@@ -1,7 +1,8 @@
 # sessionFailed(_:error:)
 
 **Framework**: Media Device  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reports an unrecoverable session error to the system so it can end the session and inform the user.
 

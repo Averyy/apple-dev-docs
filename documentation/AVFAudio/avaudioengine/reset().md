@@ -1,7 +1,8 @@
 # reset()
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resets all audio nodes in the audio engine.
 
@@ -20,25 +21,30 @@ Resets all audio nodes in the audio engine.
 func reset()
 ```
 
+```objc
+- (void) reset;
+```
+
 #### Discussion
 
 This methods resets all audio nodes in the audio engine. For example, use it to silence reverb and delay tails.
 
 ## See Also
 
-- [func prepare()](avaudioengine/prepare.md)
+### Playing audio
+- [func prepare()](./prepare%28%29.md)
   Prepares the audio engine for starting.
-- [func start() throws](avaudioengine/start.md)
+- [func start() throws](./start%28%29.md)
   Starts the audio engine.
-- [var isRunning: Bool](avaudioengine/isrunning.md)
+- [var isRunning: Bool](./isrunning.md)
   A Boolean value that indicates whether the audio engine is running.
-- [func pause()](avaudioengine/pause.md)
+- [func pause()](./pause%28%29.md)
   Pauses the audio engine.
-- [func stop()](avaudioengine/stop.md)
+- [func stop()](./stop%28%29.md)
   Stops the audio engine and releases any previously prepared resources.
-- [func withMusicSequence<R, E>((borrowing MusicSequence?) throws(E) -> R) throws(E) -> R](avaudioengine/withmusicsequence(_:).md)
+- [func withMusicSequence<R, E>((borrowing MusicSequence?) throws(E) -> R) throws(E) -> R](./withmusicsequence%28_%29.md)
   Provides scoped access to the AVAudioEngine’s MusicSequence
-- [var musicSequence: MusicSequence?](avaudioengine/musicsequence-1z47z.md)
+- [var musicSequence: MusicSequence?](./musicsequence-1z47z.md)
 
 
 ---

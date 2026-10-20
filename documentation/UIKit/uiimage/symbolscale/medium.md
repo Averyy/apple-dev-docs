@@ -1,7 +1,8 @@
 # UIImage.SymbolScale.medium
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The medium variant of the symbol image
 
@@ -19,15 +20,20 @@ The medium variant of the symbol image
 case medium
 ```
 
+```c
+UIImageSymbolScaleMedium
+```
+
 ## See Also
 
-- [UIImage.SymbolScale.default](uiimage/symbolscale/default.md)
+### Symbol image scales
+- [UIImage.SymbolScale.default](./default.md)
   The default scale variant that matches the system usage.
-- [UIImage.SymbolScale.unspecified](uiimage/symbolscale/unspecified.md)
+- [UIImage.SymbolScale.unspecified](./unspecified.md)
   An unspecified scale.
-- [UIImage.SymbolScale.small](uiimage/symbolscale/small.md)
+- [UIImage.SymbolScale.small](./small.md)
   The small variant of the symbol image.
-- [UIImage.SymbolScale.large](uiimage/symbolscale/large.md)
+- [UIImage.SymbolScale.large](./large.md)
   The large variant of the symbol image.
 
 

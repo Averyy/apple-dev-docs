@@ -1,14 +1,15 @@
 # kHIDUsage_Snsr_Data_Orientation_DistanceXAxis
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13.4+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Snsr_Data_Orientation_DistanceXAxis = 0x047A
 ```
 

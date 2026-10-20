@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct thsc_cpi {
     ...
 };
@@ -17,8 +17,8 @@ struct thsc_cpi {
 ## Topics
 
 ### Instance Properties
-- [tcpi_cycles](thsc_cpi/3917712-tcpi_cycles.md)
-- [tcpi_instructions](thsc_cpi/3917713-tcpi_instructions.md)
+- [tcpi_cycles](./thsc_cpi/api-3917712-tcpi_cycles.md)
+- [tcpi_instructions](./thsc_cpi/api-3917713-tcpi_instructions.md)
 
 
 ---

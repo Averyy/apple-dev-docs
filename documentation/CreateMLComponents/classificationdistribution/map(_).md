@@ -1,7 +1,8 @@
 # map(_:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new classification distribution by applying a transformation to every element.
 
@@ -26,7 +27,8 @@ func map<T>(_ transform: (Classification<Label>) throws -> Classification<T>) re
 
 ## See Also
 
-- [func topLabels(Int) -> [Label]](classificationdistribution/toplabels(_:).md)
+### Labeling and mapping
+- [func topLabels(Int) -> [Label]](./toplabels%28_%29.md)
   Computes the most likely labels in the classification set.
 
 

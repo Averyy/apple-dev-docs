@@ -1,7 +1,8 @@
 # look(at:from:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the camera’s position and orients the camera to face toward the specified point.
 
@@ -19,6 +20,10 @@ Sets the camera’s position and orients the camera to face toward the specified
 func look(at focusPosition: vector_float3, from cameraPosition: vector_float3)
 ```
 
+```objc
+- (void) lookAt:(vector_float3) focusPosition from:(vector_float3) cameraPosition;
+```
+
 #### Discussion
 
 When calculating the new camera position and orientation, this method assumes the camera points in the negative z-axis direction and that the positive y-axis represents the up direction for the camera’s view.
@@ -30,9 +35,10 @@ When calculating the new camera position and orientation, this method assumes th
 
 ## See Also
 
-- [func frameBoundingBox(MDLAxisAlignedBoundingBox, setNearAndFar: Bool)](mdlcamera/frameboundingbox(_:setnearandfar:).md)
+### Managing Camera Position and Orientation
+- [func frameBoundingBox(MDLAxisAlignedBoundingBox, setNearAndFar: Bool)](./frameboundingbox%28_,setnearandfar%29.md)
   Moves the camera such that the specified bounding box lies entirely within the camera’s field of view.
-- [func look(at: vector_float3)](mdlcamera/look(at:).md)
+- [func look(at: vector_float3)](./look%28at%29.md)
   Orients the camera to face toward the specified point.
 
 

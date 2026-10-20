@@ -7,11 +7,11 @@ Returns the IOKit objects of the specified name.
 
 ## Declaration
 
-```swift
+```
 matchingName(objectName, [servicePlane])
 ```
 
-#### Return_value
+#### Return Value
 
 An array of IOKit object dictionaries.
 
@@ -22,13 +22,14 @@ An array of IOKit object dictionaries.
 
 ## See Also
 
-- [fromPath](ioregistry/1812172-frompath.md)
+### Accessing the IOKit Registry
+- [fromPath](./api-1812172-frompath.md)
   Returns a dictionary with the properties of a given IOKit object.
-- [matchingClass](ioregistry/1812186-matchingclass.md)
+- [matchingClass](./api-1812186-matchingclass.md)
   Returns the IOKit objects of a given class.
-- [childrenOf](ioregistry/1812215-childrenof.md)
+- [childrenOf](./api-1812215-childrenof.md)
   Returns the children of the given IOKit object.
-- [parentsOf](ioregistry/1812225-parentsof.md)
+- [parentsOf](./api-1812225-parentsof.md)
   Returns the parents of the given IOKit object.
 
 

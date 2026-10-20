@@ -1,7 +1,8 @@
 # fairPlayStreaming
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A method of key delivery that uses FairPlay Streaming.
 
@@ -20,11 +21,16 @@ A method of key delivery that uses FairPlay Streaming.
 static let fairPlayStreaming: AVContentKeySystem
 ```
 
+```c
+extern AVContentKeySystem const AVContentKeySystemFairPlayStreaming;
+```
+
 ## See Also
 
-- [static let clearKey: AVContentKeySystem](avcontentkeysystem/clearkey.md)
+### Key-delivery methods
+- [static let clearKey: AVContentKeySystem](./clearkey.md)
   A method of key delivery that uses a clear key system.
-- [static let authorizationToken: AVContentKeySystem](avcontentkeysystem/authorizationtoken.md)
+- [static let authorizationToken: AVContentKeySystem](./authorizationtoken.md)
   A method of key delivery that uses a token to authorize playback.
 
 

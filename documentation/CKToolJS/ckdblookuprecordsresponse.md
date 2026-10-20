@@ -1,7 +1,8 @@
 # CKDBLookupRecordsResponse
 
 **Framework**: CKTool JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represents the results of a batch record lookup operation.
 
@@ -10,7 +11,7 @@ An object that represents the results of a batch record lookup operation.
 
 ## Declaration
 
-```swift
+```
 dictionary CKDBLookupRecordsResponse {
 	CKDBRecordResult[] recordResults;
 };
@@ -29,40 +30,41 @@ import type { CKDBLookupRecordsResponse } from "@apple/cktool.database";
 ## Topics
 
 ### Instance Properties
-- [recordResults](ckdblookuprecordsresponse/recordresults.md)
+- [recordResults](./ckdblookuprecordsresponse/recordresults.md)
   The array of `CKDBRecordResult` objects that represent a record.
 
 ## See Also
 
-- [CKDBAsset](ckdbasset.md)
+### Structures
+- [CKDBAsset](./ckdbasset.md)
   An object that represents an asset uploaded to CloudKit.
-- [CKDBAssetUploadUrlResponse](ckdbassetuploadurlresponse.md)
+- [CKDBAssetUploadUrlResponse](./ckdbassetuploadurlresponse.md)
   An object that represents the results of creating an asset upload URL.
-- [CKDBChangeMetadata](ckdbchangemetadata.md)
+- [CKDBChangeMetadata](./ckdbchangemetadata.md)
   An object that represents metadata about a record change via creation or modification.
-- [CKDBCreateAssetUploadUrlRequestBody](ckdbcreateassetuploadurlrequestbody.md)
+- [CKDBCreateAssetUploadUrlRequestBody](./ckdbcreateassetuploadurlrequestbody.md)
   An object that represents the request for creating an asset upload URL.
-- [CKDBCreateRecordRequestBody](ckdbcreaterecordrequestbody.md)
+- [CKDBCreateRecordRequestBody](./ckdbcreaterecordrequestbody.md)
   An object that represents the request to create a new record.
-- [CKDBCreateZoneRequestBody](ckdbcreatezonerequestbody.md)
+- [CKDBCreateZoneRequestBody](./ckdbcreatezonerequestbody.md)
   An object that represents the request to create a new zone.
-- [CKDBDeleteRecordsByQueryRequestBody](ckdbdeleterecordsbyqueryrequestbody.md)
+- [CKDBDeleteRecordsByQueryRequestBody](./ckdbdeleterecordsbyqueryrequestbody.md)
   An object that represents the request to delete multiple records that match a query.
-- [CKDBDeletedRecordResult](ckdbdeletedrecordresult.md)
+- [CKDBDeletedRecordResult](./ckdbdeletedrecordresult.md)
   An object that represents a deleted record result.
-- [CKDBErrorRecordResult](ckdberrorrecordresult.md)
+- [CKDBErrorRecordResult](./ckdberrorrecordresult.md)
   An object that represents a record lookup failure.
-- [CKDBExistingRecordResult](ckdbexistingrecordresult.md)
+- [CKDBExistingRecordResult](./ckdbexistingrecordresult.md)
   An object that represents a successful record result.
-- [CKDBForRecord](ckdbforrecord.md)
+- [CKDBForRecord](./ckdbforrecord.md)
   An object that represents a record that is being shared.
-- [CKDBLocation](ckdblocation.md)
+- [CKDBLocation](./ckdblocation.md)
   An object that represents a location field value.
-- [CKDBLookupRecordsRequestBody](ckdblookuprecordsrequestbody.md)
+- [CKDBLookupRecordsRequestBody](./ckdblookuprecordsrequestbody.md)
   An object that represents the request for looking up multiple records by record name.
-- [CKDBModifyRecordRequestBody](ckdbmodifyrecordrequestbody.md)
+- [CKDBModifyRecordRequestBody](./ckdbmodifyrecordrequestbody.md)
   An object that represents the request for updating an existing record.
-- [CKDBNullableReference](ckdbnullablereference.md)
+- [CKDBNullableReference](./ckdbnullablereference.md)
   An object that represents a reference to another record.
 
 

@@ -1,14 +1,15 @@
 # uio_offset
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 off_t uio_offset(uio_t a_uio);
 ```
 

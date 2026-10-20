@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/introductory-quickst
 
 # Getting Started
 
-**
-
-- [.md](../_sources/source/introductory-quickstart.md)
-- **
-
-.pdf
-
-**
-
-# Getting Started
-
- Table of contents 
-
-## Contents
-
-# Getting Started
-
 Core ML Tools can convert trained models from other frameworks into an in-memory representation of the Core ML model. This example demonstrates how to convert an [image classifier model](https://developer.apple.com/documentation/createml/creating_an_image_classifier_model) trained using [TensorFlow’s Keras API](https://www.tensorflow.org/api_docs/python/tf/keras) to the Core ML format.
 
 During the course of this example you will learn the following:
@@ -160,11 +143,11 @@ To verify the conversion programmatically, Core ML Tools provides the `predict()
 
 Note
 
-Core ML models can be [imported and executed with TVM](https://tvm.apache.org/docs/tutorials/frontend/from_coreml.md), which may provide a way to test Core ML models on non-macOS systems.
+Core ML models can be [imported and executed with TVM](https://tvm.apache.org/docs/tutorials/frontend/from_coreml.html), which may provide a way to test Core ML models on non-macOS systems.
 
 Compare predictions made by the converted model with predictions made by the source model:
 
-![Test image daisy.jpg](../_images/daisy.jpg)
+![Test image daisy.jpg](https://apple.github.io/coremltools/docs-guides/_images/daisy.jpg)
 
 An example test image (`daisy.jpg`). Right-click and choose **Save Image** to download.
 
@@ -186,7 +169,7 @@ You may find differences between predictions on macOS and your target platform (
 
 ## Save and Load the Model
 
-With the converted [ML program](convert-to-ml-program.md) model in memory, you can save the model into the [Core ML model package](convert-to-ml-program.html#save-ml-programs-as-model-packages) format by specifying `.mlpackage` with the `save()` method. You can then load the model into another session:
+With the converted [ML program](convert-to-ml-program.md) model in memory, you can save the model into the [Core ML model package](convert-to-ml-program.md#save-ml-programs-as-model-packages) format by specifying `.mlpackage` with the `save()` method. You can then load the model into another session:
 
 ```
 # Save model as a Core ML model package
@@ -220,6 +203,8 @@ model saved and loaded
 
 The code creates the newly converted model as a file in the same directory titled `MobileNetV2.mlpackage`. Double-click this file in the Mac Finder to launch Xcode and open the model information pane:
 
+![xcode-quickstart3-model-metadata3.png](https://apple.github.io/coremltools/docs-guides/_images/xcode-quickstart3-model-metadata3.png)
+
 The **General** tab shows the model metadata. The **Preview** tab appears for models that have added preview metadata as described in [Xcode Model Preview Types](xcode-model-preview-types.md).
 
 Tip
@@ -228,11 +213,16 @@ To use the model with an Xcode project, drag the model file to the Xcode Project
 
 Click the **Predictions** tab to see the model’s input and output.
 
+![xcode-quickstart6-model-predictions.png](https://apple.github.io/coremltools/docs-guides/_images/xcode-quickstart6-model-predictions.png)
+
 To preview the model’s output for a given input, follow these steps:
 
 1. Click the **Preview** tab.
 2. Drag an image into the image well on the left side of the model preview.
+![xcode-quickstart4-model-preview-drag](https://apple.github.io/coremltools/docs-guides/_images/xcode-quickstart4-model-preview-drag.png)
 3. The output appears in the preview pane under the image.
+
+![xcode-quickstart5-model-preview-daisy.png](https://apple.github.io/coremltools/docs-guides/_images/xcode-quickstart5-model-preview-daisy.png)
 
 For more information about using Xcode, see the [Xcode documentation](https://developer.apple.com/documentation/xcode).
 
@@ -275,5 +265,3 @@ loaded_model = ct.models.MLModel("MobileNetV2.mlmodel")
 ML Programs vs. Neural Networks
 
 To learn the differences between the newer ML Program model type and the neural network model type, see [Comparing ML Programs and Neural Networks](comparing-ml-programs-and-neural-networks.md).
-
-** Contents

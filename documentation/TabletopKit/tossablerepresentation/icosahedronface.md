@@ -1,7 +1,8 @@
 # TossableRepresentation.IcosahedronFace
 
 **Framework**: TabletopKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 One of the faces of an icosahedron
 
@@ -17,60 +18,61 @@ enum IcosahedronFace
 ## Topics
 
 ### Faces
-- [TossableRepresentation.IcosahedronFace.a](tossablerepresentation/icosahedronface/a.md)
-- [TossableRepresentation.IcosahedronFace.b](tossablerepresentation/icosahedronface/b.md)
-- [TossableRepresentation.IcosahedronFace.c](tossablerepresentation/icosahedronface/c.md)
-- [TossableRepresentation.IcosahedronFace.d](tossablerepresentation/icosahedronface/d.md)
-- [TossableRepresentation.IcosahedronFace.e](tossablerepresentation/icosahedronface/e.md)
-- [TossableRepresentation.IcosahedronFace.f](tossablerepresentation/icosahedronface/f.md)
-- [TossableRepresentation.IcosahedronFace.g](tossablerepresentation/icosahedronface/g.md)
-- [TossableRepresentation.IcosahedronFace.h](tossablerepresentation/icosahedronface/h.md)
-- [TossableRepresentation.IcosahedronFace.i](tossablerepresentation/icosahedronface/i.md)
-- [TossableRepresentation.IcosahedronFace.j](tossablerepresentation/icosahedronface/j.md)
-- [TossableRepresentation.IcosahedronFace.k](tossablerepresentation/icosahedronface/k.md)
-- [TossableRepresentation.IcosahedronFace.l](tossablerepresentation/icosahedronface/l.md)
-- [TossableRepresentation.IcosahedronFace.m](tossablerepresentation/icosahedronface/m.md)
-- [TossableRepresentation.IcosahedronFace.n](tossablerepresentation/icosahedronface/n.md)
-- [TossableRepresentation.IcosahedronFace.o](tossablerepresentation/icosahedronface/o.md)
-- [TossableRepresentation.IcosahedronFace.p](tossablerepresentation/icosahedronface/p.md)
-- [TossableRepresentation.IcosahedronFace.q](tossablerepresentation/icosahedronface/q.md)
-- [TossableRepresentation.IcosahedronFace.r](tossablerepresentation/icosahedronface/r.md)
-- [TossableRepresentation.IcosahedronFace.s](tossablerepresentation/icosahedronface/s.md)
-- [TossableRepresentation.IcosahedronFace.t](tossablerepresentation/icosahedronface/t.md)
+- [TossableRepresentation.IcosahedronFace.a](./icosahedronface/a.md)
+- [TossableRepresentation.IcosahedronFace.b](./icosahedronface/b.md)
+- [TossableRepresentation.IcosahedronFace.c](./icosahedronface/c.md)
+- [TossableRepresentation.IcosahedronFace.d](./icosahedronface/d.md)
+- [TossableRepresentation.IcosahedronFace.e](./icosahedronface/e.md)
+- [TossableRepresentation.IcosahedronFace.f](./icosahedronface/f.md)
+- [TossableRepresentation.IcosahedronFace.g](./icosahedronface/g.md)
+- [TossableRepresentation.IcosahedronFace.h](./icosahedronface/h.md)
+- [TossableRepresentation.IcosahedronFace.i](./icosahedronface/i.md)
+- [TossableRepresentation.IcosahedronFace.j](./icosahedronface/j.md)
+- [TossableRepresentation.IcosahedronFace.k](./icosahedronface/k.md)
+- [TossableRepresentation.IcosahedronFace.l](./icosahedronface/l.md)
+- [TossableRepresentation.IcosahedronFace.m](./icosahedronface/m.md)
+- [TossableRepresentation.IcosahedronFace.n](./icosahedronface/n.md)
+- [TossableRepresentation.IcosahedronFace.o](./icosahedronface/o.md)
+- [TossableRepresentation.IcosahedronFace.p](./icosahedronface/p.md)
+- [TossableRepresentation.IcosahedronFace.q](./icosahedronface/q.md)
+- [TossableRepresentation.IcosahedronFace.r](./icosahedronface/r.md)
+- [TossableRepresentation.IcosahedronFace.s](./icosahedronface/s.md)
+- [TossableRepresentation.IcosahedronFace.t](./icosahedronface/t.md)
 ### Creating a face
-- [init(restingOrientation: Rotation3D)](tossablerepresentation/icosahedronface/init(restingorientation:).md)
+- [init(restingOrientation: Rotation3D)](./icosahedronface/init%28restingorientation%29.md)
   Constructs the face in contact with the table when the equipment has the given resting orientation. If the resting orientation is an unexpected rotation, constructs the face corresponding to the closest expected orientation.
 ### Getting the resting orientation
-- [var restingOrientation: Rotation3D](tossablerepresentation/icosahedronface/restingorientation.md)
+- [var restingOrientation: Rotation3D](./icosahedronface/restingorientation.md)
   Provides the resting orientation for when this face is in contact with the table.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TossableRepresentation.TossableFace](tossablerepresentation/tossableface.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [TossableRepresentation.TossableFace](./tossableface.md)
 
 ## See Also
 
-- [func face(for: Rotation3D) -> any TossableRepresentation.TossableFace](tossablerepresentation/face(for:).md)
+### Getting the face
+- [func face(for: Rotation3D) -> any TossableRepresentation.TossableFace](./face%28for%29.md)
   For the shape corresponding to this tossable representation, constructs the face in contact with the table when the equipment has the given resting orientation.
-- [TossableRepresentation.TossableFace](tossablerepresentation/tossableface.md)
+- [TossableRepresentation.TossableFace](./tossableface.md)
   A protocol that represents a face of a tossable shape.
-- [TossableRepresentation.SphereFace](tossablerepresentation/sphereface.md)
+- [TossableRepresentation.SphereFace](./sphereface.md)
   An object that represents an infinitely small area on the surface of a sphere (effectively a point).
-- [TossableRepresentation.CubeFace](tossablerepresentation/cubeface.md)
+- [TossableRepresentation.CubeFace](./cubeface.md)
   One of the faces of a cube
-- [TossableRepresentation.DecahedronFace](tossablerepresentation/decahedronface.md)
+- [TossableRepresentation.DecahedronFace](./decahedronface.md)
   One of the faces of an decahedron
-- [TossableRepresentation.DodecahedronFace](tossablerepresentation/dodecahedronface.md)
+- [TossableRepresentation.DodecahedronFace](./dodecahedronface.md)
   One of the faces of an dodecahedron
-- [TossableRepresentation.OctahedronFace](tossablerepresentation/octahedronface.md)
+- [TossableRepresentation.OctahedronFace](./octahedronface.md)
   One of the faces of an octahedron
-- [TossableRepresentation.TetrahedronFace](tossablerepresentation/tetrahedronface.md)
+- [TossableRepresentation.TetrahedronFace](./tetrahedronface.md)
   One of the faces of a tetrahedron
 
 

@@ -1,7 +1,8 @@
 # MediaSessionError
 
 **Framework**: Now Playing  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Errors that can occur during local session operations.
 
@@ -23,29 +24,30 @@ enum MediaSessionError
 ## Topics
 
 ### Enumeration Cases
-- [MediaSessionError.internalFailure](mediasessionerror/internalfailure.md)
+- [MediaSessionError.internalFailure](./mediasessionerror/internalfailure.md)
   An internal system error occurred.
-- [MediaSessionError.invalidState](mediasessionerror/invalidstate.md)
+- [MediaSessionError.invalidState](./mediasessionerror/invalidstate.md)
   The operation is not supported in the current state.
-- [MediaSessionError.sessionInvalidated](mediasessionerror/sessioninvalidated.md)
+- [MediaSessionError.sessionInvalidated](./mediasessionerror/sessioninvalidated.md)
   The session is already invalidated.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Publishing media sessions](publishing-media-sessions.md)
+### Local sessions
+- [Publishing media sessions](./publishing-media-sessions.md)
   Show your app’s media on the Lock Screen and Control Center.
-- [protocol MediaSessionRepresentable](mediasessionrepresentable.md)
+- [protocol MediaSessionRepresentable](./mediasessionrepresentable.md)
   A protocol that provides content metadata, playback state, and commands for a Now Playing session.
-- [class MediaSession](mediasession.md)
+- [class MediaSession](./mediasession.md)
   A local Now Playing session that publishes metadata and commands to the system.
 
 

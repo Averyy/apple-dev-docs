@@ -1,7 +1,8 @@
 # followsGroup
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Follows the current phase of the match group.
 

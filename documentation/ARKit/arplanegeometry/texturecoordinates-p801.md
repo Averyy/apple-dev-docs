@@ -1,7 +1,8 @@
 # textureCoordinates
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of texture coordinate values for each point in the plane mesh.
 
@@ -18,15 +19,16 @@ var textureCoordinates: [vector_float2] { get }
 
 #### Discussion
 
-Each `float2` value in this array represents the UV texture coordinates for the vertex at the corresponding index in the [`vertices`](arplanegeometry/vertices-43kle.md) array.
+Each `float2` value in this array represents the UV texture coordinates for the vertex at the corresponding index in the [`vertices`](./vertices-43kle.md) array.
 
 ## See Also
 
-- [var vertices: [simd_float3]](arplanegeometry/vertices-43kle.md)
+### Accessing Mesh Data
+- [var vertices: [simd_float3]](./vertices-43kle.md)
   An array of vertex positions for each point in the plane mesh.
-- [var triangleCount: Int](arplanegeometry/trianglecount.md)
-  The number of triangles described by the [`triangleIndices`](arplanegeometry/triangleindices-1azi3.md) buffer.
-- [var triangleIndices: [Int16]](arplanegeometry/triangleindices-64epx.md)
+- [var triangleCount: Int](./trianglecount.md)
+  The number of triangles described by the [`triangleIndices`](./triangleindices-1azi3.md) buffer.
+- [var triangleIndices: [Int16]](./triangleindices-64epx.md)
   An array of indices describing the triangle mesh formed by the plane geometry’s vertex data.
 
 

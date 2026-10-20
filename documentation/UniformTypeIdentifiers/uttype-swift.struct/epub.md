@@ -1,7 +1,8 @@
 # epub
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents data in the electronic publication (EPUB) format.
 
@@ -24,15 +25,16 @@ static var epub: UTType { get }
 
 The identifier for this type is `org.idpf.epub-container`.
 
-This type conforms to [`UTTypeData`](uttypedata.md) and [`UTTypeCompositeContent`](uttypecompositecontent.md).
+This type conforms to [`UTTypeData`](../uttypedata.md) and [`UTTypeCompositeContent`](../uttypecompositecontent.md).
 
 ## See Also
 
-- [static var pdf: UTType](uttype-swift.struct/pdf.md)
+### Application files
+- [static var pdf: UTType](./pdf.md)
   A type that represents Adobe Portable Document Format (PDF) documents.
-- [static var rtfd: UTType](uttype-swift.struct/rtfd.md)
+- [static var rtfd: UTType](./rtfd.md)
   A type that represents Rich Text Format Directory documents.
-- [static var flatRTFD: UTType](uttype-swift.struct/flatrtfd.md)
+- [static var flatRTFD: UTType](./flatrtfd.md)
   A type that represents flattened Rich Text Format Directory documents.
 
 

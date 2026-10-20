@@ -1,7 +1,8 @@
 # isPresented
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the picker is currently visible.
 
@@ -16,11 +17,16 @@ A Boolean value that indicates whether the picker is currently visible.
 var isPresented: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isPresented) BOOL presented;
+```
+
 ## See Also
 
-- [func present()](avinputpickerinteraction/present.md)
+### Managing presentation
+- [func present()](./present%28%29.md)
   Presents the input picker.
-- [func dismiss()](avinputpickerinteraction/dismiss.md)
+- [func dismiss()](./dismiss%28%29.md)
   Dismisses the input picker.
 
 

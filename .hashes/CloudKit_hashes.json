@@ -4161,7 +4161,7 @@
       "hash": "eddd2f6a120ea2f508d72463e1afd2b5c84f16df2526b3757077b577f3d60598"
     },
     "https://developer.apple.com/documentation/cloudkit/cksyncengine-5sie5/event/didfetchrecordzonechanges/description": {
-      "etag": "\"18a9-65d55e6cd8435\"",
+      "etag": "\"18a9-65d55e6cd8435-df\"",
       "file_path": "documentation/CloudKit/cksyncengine-5sie5/event/didfetchrecordzonechanges/description.md",
       "hash": "2a71ad8ccf77f1805587102215d1ac5265ac1c6a8e8acf0c373cd8f877b46d65"
     },
@@ -9425,7 +9425,7 @@
       "hash": "eddd2f6a120ea2f508d72463e1afd2b5c84f16df2526b3757077b577f3d60598"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkit/cksyncengine-5sie5/event/didfetchrecordzonechanges/description.json": {
-      "etag": "\"18a9-65d55e6cd8435\"",
+      "etag": "\"18a9-65d55e6cd8435-df\"",
       "file_path": "documentation/CloudKit/cksyncengine-5sie5/event/didfetchrecordzonechanges/description.md",
       "hash": "2a71ad8ccf77f1805587102215d1ac5265ac1c6a8e8acf0c373cd8f877b46d65"
     },
@@ -10526,6 +10526,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 2105
   }
 }

@@ -1,7 +1,8 @@
 # HMCharacteristicValueVolumeControlType.absolute
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The volume sets to a specific level.
 
@@ -19,13 +20,18 @@ The volume sets to a specific level.
 case absolute
 ```
 
+```c
+HMCharacteristicValueVolumeControlTypeAbsolute
+```
+
 ## See Also
 
-- [HMCharacteristicValueVolumeControlType.none](hmcharacteristicvaluevolumecontroltype/none.md)
+### Volume types
+- [HMCharacteristicValueVolumeControlType.none](./none.md)
   The device doesn’t have volume control functionality.
-- [HMCharacteristicValueVolumeControlType.relative](hmcharacteristicvaluevolumecontroltype/relative.md)
+- [HMCharacteristicValueVolumeControlType.relative](./relative.md)
   The volume adjusts incrementally, without taking the current level into consideration.
-- [HMCharacteristicValueVolumeControlType.relativeWithCurrent](hmcharacteristicvaluevolumecontroltype/relativewithcurrent.md)
+- [HMCharacteristicValueVolumeControlType.relativeWithCurrent](./relativewithcurrent.md)
   The volume adjusts incrementally, relative to current level.
 
 

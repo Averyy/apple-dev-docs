@@ -1,7 +1,8 @@
 # EvaluationResultsError
 
 **Framework**: Evaluations  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Errors the framework throws when parsing evaluation results.
 
@@ -33,29 +34,30 @@ do {
 ## Topics
 
 ### Enumeration Cases
-- [EvaluationResultsError.emptyJSONFile](evaluationresultserror/emptyjsonfile.md)
+- [EvaluationResultsError.emptyJSONFile](./evaluationresultserror/emptyjsonfile.md)
   The JSON file exists but contains no data.
-- [EvaluationResultsError.fileNotFound(_:)](evaluationresultserror/filenotfound(_:).md)
+- [EvaluationResultsError.fileNotFound(_:)](./evaluationresultserror/filenotfound%28_%29.md)
   The specified file URL is not findable on disk.
-- [EvaluationResultsError.invalidJSONFormat](evaluationresultserror/invalidjsonformat.md)
+- [EvaluationResultsError.invalidJSONFormat](./evaluationresultserror/invalidjsonformat.md)
   The JSON data doesn’t match the expected evaluation result format.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum EvaluationError](evaluationerror.md)
+### Errors
+- [enum EvaluationError](./evaluationerror.md)
   Errors thrown during an evaluation run.
-- [enum EvaluatorError](evaluatorerror.md)
+- [enum EvaluatorError](./evaluatorerror.md)
   A value that describes why an evaluator failed while scoring a produced subject.
-- [enum SubjectInferenceError](subjectinferenceerror.md)
+- [enum SubjectInferenceError](./subjectinferenceerror.md)
   A value that describes a failure to produce a subject for a sample.
 
 

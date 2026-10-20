@@ -1,11 +1,12 @@
 # CustomDebugStringConvertible Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var debugDescription: String](opaquepointer/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A textual representation of the pointer, suitable for debugging.
 
 

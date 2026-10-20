@@ -1,7 +1,8 @@
 # CGImageSourceStatus.statusComplete
 
 **Framework**: Image I/O  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The operation is complete.
 
@@ -20,17 +21,22 @@ The operation is complete.
 case statusComplete
 ```
 
+```c
+kCGImageStatusComplete
+```
+
 ## See Also
 
-- [CGImageSourceStatus.statusUnexpectedEOF](cgimagesourcestatus/statusunexpectedeof.md)
+### Status Values
+- [CGImageSourceStatus.statusUnexpectedEOF](./statusunexpectedeof.md)
   The end of the file occurred unexpectedly.
-- [CGImageSourceStatus.statusInvalidData](cgimagesourcestatus/statusinvaliddata.md)
+- [CGImageSourceStatus.statusInvalidData](./statusinvaliddata.md)
   The data is not valid.
-- [CGImageSourceStatus.statusUnknownType](cgimagesourcestatus/statusunknowntype.md)
+- [CGImageSourceStatus.statusUnknownType](./statusunknowntype.md)
   The image is an unknown type.
-- [CGImageSourceStatus.statusReadingHeader](cgimagesourcestatus/statusreadingheader.md)
+- [CGImageSourceStatus.statusReadingHeader](./statusreadingheader.md)
   The image source is reading the header.
-- [CGImageSourceStatus.statusIncomplete](cgimagesourcestatus/statusincomplete.md)
+- [CGImageSourceStatus.statusIncomplete](./statusincomplete.md)
   The operation is not complete
 
 

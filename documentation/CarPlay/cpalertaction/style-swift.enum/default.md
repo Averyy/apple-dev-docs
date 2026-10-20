@@ -1,7 +1,8 @@
 # CPAlertAction.Style.default
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default display style for an action button.
 
@@ -16,11 +17,16 @@ The default display style for an action button.
 case `default`
 ```
 
+```c
+CPAlertActionStyleDefault
+```
+
 ## See Also
 
-- [CPAlertAction.Style.cancel](cpalertaction/style-swift.enum/cancel.md)
+### Styles
+- [CPAlertAction.Style.cancel](./cancel.md)
   The display style indicating that the action leaves data unchanged.
-- [CPAlertAction.Style.destructive](cpalertaction/style-swift.enum/destructive.md)
+- [CPAlertAction.Style.destructive](./destructive.md)
   The style indicating that the action changes or deletes data.
 
 

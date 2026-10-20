@@ -1,7 +1,8 @@
 # sectionIdentifier(forRow:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the identifier of the section containing the specified row in the snapshot.
 
@@ -14,6 +15,10 @@ Returns the identifier of the section containing the specified row in the snapsh
 func sectionIdentifier(forRow row: Int) -> SectionIdentifierType?
 ```
 
+```objc
+- (SectionIdentifierType) sectionIdentifierForRow:(NSInteger) row;
+```
+
 #### Return Value
 
 The section’s identifier, or `nil` if the method doesn’t find an item with the provided item identifier.
@@ -24,11 +29,12 @@ The section’s identifier, or `nil` if the method doesn’t find an item with t
 
 ## See Also
 
-- [func itemIdentifier(forRow: Int) -> ItemIdentifierType?](nstableviewdiffabledatasourcereference/itemidentifier(forrow:).md)
+### Identifying Items and Sections
+- [func itemIdentifier(forRow: Int) -> ItemIdentifierType?](./itemidentifier%28forrow%29.md)
   Returns an identifier for the item at the specified row in the table view.
-- [func row(forItemIdentifier: ItemIdentifierType) -> Int](nstableviewdiffabledatasourcereference/row(foritemidentifier:).md)
+- [func row(forItemIdentifier: ItemIdentifierType) -> Int](./row%28foritemidentifier%29.md)
   Returns a row for the item with the specified identifier in the table view.
-- [func row(forSectionIdentifier: SectionIdentifierType) -> Int](nstableviewdiffabledatasourcereference/row(forsectionidentifier:).md)
+- [func row(forSectionIdentifier: SectionIdentifierType) -> Int](./row%28forsectionidentifier%29.md)
   Returns a row for the section with the specified identifier in the table view.
 
 

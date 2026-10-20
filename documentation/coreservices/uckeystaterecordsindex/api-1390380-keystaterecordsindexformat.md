@@ -1,7 +1,8 @@
 # keyStateRecordsIndexFormat
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An unsigned 16-bit integer identifying the format of the `UCKeyStateRecordsIndex` structure. Set to `kUCKeyStateRecordsIndexFormat`.
 
@@ -13,6 +14,10 @@ An unsigned 16-bit integer identifying the format of the `UCKeyStateRecordsIndex
 
 ```swift
 var keyStateRecordsIndexFormat: UInt16
+```
+
+```c
+UInt16 keyStateRecordsIndexFormat;
 ```
 
 

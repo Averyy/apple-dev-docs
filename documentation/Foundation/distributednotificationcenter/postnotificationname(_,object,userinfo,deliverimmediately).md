@@ -1,7 +1,8 @@
 # postNotificationName(_:object:userInfo:deliverImmediately:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a notification with information and an immediate-delivery specifier, and posts it to the receiver.
 
@@ -15,6 +16,10 @@ Creates a notification with information and an immediate-delivery specifier, and
 func postNotificationName(_ name: NSNotification.Name, object: String?, userInfo: [AnyHashable : Any]? = nil, deliverImmediately: Bool)
 ```
 
+```objc
+- (void) postNotificationName:(NSNotificationName) name object:(NSString *) object userInfo:(NSDictionary *) userInfo deliverImmediately:(BOOL) deliverImmediately;
+```
+
 #### Discussion
 
 This is the preferred method for posting notifications.
@@ -25,20 +30,24 @@ The `notificationInfo` dictionary is serialized as a property list, so it can be
 
 - `name`: Name of the notification to post. Must not be `nil`.
 - `object`: Sender of the notification. May be `nil`.
-- `userInfo`: Dictionary containing additional information. May be `nil`. > ❗ **Important**:  Sandboxed apps can send notifications only if they do not contain a dictionary. If the sending application is in an App Sandbox, `userInfo` *must* be `nil`.
-- `deliverImmediately`: Specifies when to deliver the notification. When [`false`](https://developer.apple.com/documentation/swift/false), the receiver delivers notifications to their observers according to the suspended-notification behavior specified in the corresponding dispatch table entry. When [`true`](https://developer.apple.com/documentation/swift/true), the receiver delivers the notification immediately to its observers.
+- `userInfo`: Dictionary containing additional information. May be `nil`.
+
+  > ❗ **Important**:  Sandboxed apps can send notifications only if they do not contain a dictionary. If the sending application is in an App Sandbox, `userInfo` *must* be `nil`.
+- `deliverImmediately`: Specifies when to deliver the notification. When [`false`](../../Swift/false.md), the receiver delivers notifications to their observers according to the suspended-notification behavior specified in the corresponding dispatch table entry. When [`true`](../../Swift/true.md), the receiver delivers the notification immediately to its observers.
 
 ## See Also
 
-- [class func unarchiveObject(with: Data) -> Any?](nsunarchiver/unarchiveobject(with:).md)
+### Related Documentation
+- [class func unarchiveObject(with: Data) -> Any?](../nsunarchiver/unarchiveobject%28with%29.md)
   Decodes and returns the object archived in a given `NSData` object.
-- [func encodeRootObject(Any)](nsarchiver/encoderootobject(_:).md)
+- [func encodeRootObject(Any)](../nsarchiver/encoderootobject%28_%29.md)
   Archives a given object along with all the objects to which it is connected.
-- [func post(name: NSNotification.Name, object: String?)](distributednotificationcenter/post(name:object:).md)
+### Posting Notifications
+- [func post(name: NSNotification.Name, object: String?)](./post%28name,object%29.md)
   Creates a notification, and posts it to the receiver.
-- [func post(name: NSNotification.Name, object: String?, userInfo: [AnyHashable : Any]?)](distributednotificationcenter/post(name:object:userinfo:).md)
+- [func post(name: NSNotification.Name, object: String?, userInfo: [AnyHashable : Any]?)](./post%28name,object,userinfo%29.md)
   Creates a notification with information, and posts it to the receiver.
-- [func postNotificationName(NSNotification.Name, object: String?, userInfo: [AnyHashable : Any]?, options: DistributedNotificationCenter.Options)](distributednotificationcenter/postnotificationname(_:object:userinfo:options:).md)
+- [func postNotificationName(NSNotification.Name, object: String?, userInfo: [AnyHashable : Any]?, options: DistributedNotificationCenter.Options)](./postnotificationname%28_,object,userinfo,options%29.md)
   Creates a notification with information, and posts it to the receiver.
 
 

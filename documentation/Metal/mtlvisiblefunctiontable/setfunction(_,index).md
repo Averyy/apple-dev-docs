@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets a table entry to point to a callable function.
@@ -20,6 +21,10 @@ Sets a table entry to point to a callable function.
 func setFunction(_ function: (any MTLFunctionHandle)?, index: Int)
 ```
 
+```objc
+- (void) setFunction:(id<MTLFunctionHandle>) function atIndex:(NSUInteger) index;
+```
+
 ## Parameters
 
 - `function`: A function handle for the function to be called.
@@ -27,7 +32,8 @@ func setFunction(_ function: (any MTLFunctionHandle)?, index: Int)
 
 ## See Also
 
-- [func setFunctions([(any MTLFunctionHandle)?], range: Range<Int>)](mtlvisiblefunctiontable/setfunctions(_:range:).md)
+### Setting a table entry
+- [func setFunctions([(any MTLFunctionHandle)?], range: Range<Int>)](./setfunctions%28_,range%29.md)
   Sets a range of table entries to point to an array of callable functions.
 
 

@@ -1,7 +1,8 @@
 # transform
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An error-throwing closure that receives values from the upstream publisher and returns optional values.
 
@@ -26,7 +27,8 @@ If this closure throws an error, the publisher fails.
 
 ## See Also
 
-- [let upstream: Upstream](publishers/trycompactmap/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives elements.
 
 

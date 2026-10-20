@@ -1,21 +1,28 @@
 # recordPermission
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current recording permission status.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
-- watchOS 4.0+
+- iOS 8.0+ - Deprecated in 17.0
+- iPadOS 8.0+ - Deprecated in 17.0
+- Mac Catalyst 13.1+ - Deprecated in 17.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 4.0+ - Deprecated in 10.0
+
+> **Deprecated**: Use [`recordPermission`](../avaudioapplication/recordpermission-swift.property.md) on [`AVAudioApplication`](../avaudioapplication.md) instead.
 
 ## Declaration
 
 ```swift
 var recordPermission: AVAudioSession.RecordPermission { get }
+```
+
+```objc
+@property (readonly) AVAudioSessionRecordPermission recordPermission;
 ```
 
 #### Return Value
@@ -24,19 +31,20 @@ Returns one of three status values:
 
 #### Discussion
 
-- The user granted permission to record ([`AVAudioSession.RecordPermission.granted`](avaudiosession/recordpermission-swift.enum/granted.md)).
-- The user denied recording permission ([`AVAudioSession.RecordPermission.denied`](avaudiosession/recordpermission-swift.enum/denied.md)).
-- Recording permission hasn’t been requested ([`AVAudioSession.RecordPermission.undetermined`](avaudiosession/recordpermission-swift.enum/undetermined.md)).
+- The user granted permission to record ([`AVAudioSession.RecordPermission.granted`](./recordpermission-swift.enum/granted.md)).
+- The user denied recording permission ([`AVAudioSession.RecordPermission.denied`](./recordpermission-swift.enum/denied.md)).
+- Recording permission hasn’t been requested ([`AVAudioSession.RecordPermission.undetermined`](./recordpermission-swift.enum/undetermined.md)).
 
 ## Topics
 
 ### Permission states
-- [AVAudioSession.RecordPermission](avaudiosession/recordpermission-swift.enum.md)
+- [AVAudioSession.RecordPermission](./recordpermission-swift.enum.md)
   The values that define the current state of the record permission request.
 
 ## See Also
 
-- [func requestRecordPermission((Bool) -> Void)](avaudiosession/requestrecordpermission(_:).md)
+### Requesting permission to record
+- [func requestRecordPermission((Bool) -> Void)](./requestrecordpermission%28_%29.md)
   Requests the user’s permission to record audio.
 
 

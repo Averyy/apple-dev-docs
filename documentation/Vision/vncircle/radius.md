@@ -1,7 +1,8 @@
 # radius
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The circle’s radius.
 
@@ -19,15 +20,20 @@ The circle’s radius.
 var radius: Double { get }
 ```
 
+```objc
+@property (readonly) double radius;
+```
+
 ## See Also
 
-- [var center: VNPoint](vncircle/center.md)
+### Inspecting a Circle
+- [var center: VNPoint](./center.md)
   The circle’s center point.
-- [var diameter: Double](vncircle/diameter.md)
+- [var diameter: Double](./diameter.md)
   The circle’s diameter.
-- [func contains(VNPoint) -> Bool](vncircle/contains(_:).md)
+- [func contains(VNPoint) -> Bool](./contains%28_%29.md)
   Determines if this circle, including its boundary, contains the specified point.
-- [func contains(VNPoint, inCircumferentialRingOfWidth: Double) -> Bool](vncircle/contains(_:incircumferentialringofwidth:).md)
+- [func contains(VNPoint, inCircumferentialRingOfWidth: Double) -> Bool](./contains%28_,incircumferentialringofwidth%29.md)
   Determines if a ring around this circle’s circumference contains the specified point.
 
 

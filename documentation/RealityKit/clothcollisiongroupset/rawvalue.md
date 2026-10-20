@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw bitmask value of the set, where each set bit represents a group between 1 and 32.
 

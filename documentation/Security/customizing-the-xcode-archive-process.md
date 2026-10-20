@@ -1,6 +1,7 @@
 # Customizing the Xcode archive process
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: Article
 
 Archive, export, and notarize your app in one step using Xcode post-action build scripts.
 
@@ -8,9 +9,9 @@ Archive, export, and notarize your app in one step using Xcode post-action build
 
 Before distributing your software, you must create an archive containing your executables. From that archive, you must perform additional steps to create a distributable version of your software and to notarize your executables. To simplify the workflow, you can incorporate the distribution and notarization steps into the archive process using post-action scripts.
 
-A post-action script adds custom script commands to the end of standard Xcode commands. To add a script to the Archive command, open the [`scheme editor`](https://developer.apple.comhttps://help.apple.com/xcode/mac/11.4/#/dev0bee46f46) for your project and expand the Archive scheme. Select the post-actions option and enter the details of your script in the space provided.
+A post-action script adds custom script commands to the end of standard Xcode commands. To add a script to the Archive command, open the [scheme editor](https://help.apple.com/xcode/mac/11.4/#/dev0bee46f46) for your project and expand the Archive scheme. Select the post-actions option and enter the details of your script in the space provided.
 
-![Screenshot of Xcode’s scheme editor showing an example of a post-actions script for the Archive action.](/images/com.apple.security/media-3859177@2x.png)
+![Screenshot of Xcode’s scheme editor showing an example of a post-actions script for the Archive action.](https://developer.apple.com/tutorials/images/com.apple.security/media-3859177@2x.png)
 
 The following sample script exports your archive to a format that can be sent to the Apple notary service. The script includes several calls to the `osascript` command to display progress messages. Replace the value of the `AC_PASSWORD` variable with an appropriate value for your App Store Connect account.
 

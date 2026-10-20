@@ -1,24 +1,26 @@
 # NXSwapHostShortToBig
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 unsigned short NXSwapHostShortToBig(unsigned short x);
 ```
 
 ## See Also
 
-- [NXSwapHostDoubleToBig](1517865-nxswaphostdoubletobig.md)
-- [NXSwapHostFloatToBig](1517912-nxswaphostfloattobig.md)
-- [NXSwapHostIntToBig](1517873-nxswaphostinttobig.md)
-- [NXSwapHostLongLongToBig](1517900-nxswaphostlonglongtobig.md)
-- [NXSwapHostLongToBig](1517889-nxswaphostlongtobig.md)
+### Host to Big Endian
+- [NXSwapHostDoubleToBig](./api-1517865-nxswaphostdoubletobig.md)
+- [NXSwapHostFloatToBig](./api-1517912-nxswaphostfloattobig.md)
+- [NXSwapHostIntToBig](./api-1517873-nxswaphostinttobig.md)
+- [NXSwapHostLongLongToBig](./api-1517900-nxswaphostlonglongtobig.md)
+- [NXSwapHostLongToBig](./api-1517889-nxswaphostlongtobig.md)
 
 
 ---

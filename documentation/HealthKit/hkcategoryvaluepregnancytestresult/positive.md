@@ -1,7 +1,8 @@
 # HKCategoryValuePregnancyTestResult.positive
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The test returned a positive result.
 
@@ -19,11 +20,16 @@ The test returned a positive result.
 case positive
 ```
 
+```c
+HKCategoryValuePregnancyTestResultPositive
+```
+
 ## See Also
 
-- [HKCategoryValuePregnancyTestResult.negative](hkcategoryvaluepregnancytestresult/negative.md)
+### Test Results
+- [HKCategoryValuePregnancyTestResult.negative](./negative.md)
   The test returned a negative result.
-- [HKCategoryValuePregnancyTestResult.indeterminate](hkcategoryvaluepregnancytestresult/indeterminate.md)
+- [HKCategoryValuePregnancyTestResult.indeterminate](./indeterminate.md)
   The test was inconclusive.
 
 

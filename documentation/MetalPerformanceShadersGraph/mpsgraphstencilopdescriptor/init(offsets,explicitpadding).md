@@ -1,7 +1,8 @@
 # init(offsets:explicitPadding:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a stencil operation descriptor with default values.
 
@@ -17,6 +18,10 @@ Creates a stencil operation descriptor with default values.
 
 ```swift
 convenience init?(offsets: [NSNumber], explicitPadding: [NSNumber])
+```
+
+```objc
++ (instancetype) descriptorWithOffsets:(MPSShape *) offsets explicitPadding:(MPSShape *) explicitPadding;
 ```
 
 #### Return Value

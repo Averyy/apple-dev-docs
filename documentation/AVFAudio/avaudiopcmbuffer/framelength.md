@@ -1,7 +1,8 @@
 # frameLength
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current number of valid sample frames in the buffer.
 
@@ -20,15 +21,20 @@ The current number of valid sample frames in the buffer.
 var frameLength: AVAudioFrameCount { get set }
 ```
 
+```objc
+@property (nonatomic) AVAudioFrameCount frameLength;
+```
+
 #### Discussion
 
-By default, the `frameLength` property doesn’t have a useful value upon creation, so you must set this property before using the buffer. The length must be less than or equal to the [`frameCapacity`](avaudiopcmbuffer/framecapacity.md) of the buffer. For deinterleaved formats, [`frameCapacity`](avaudiopcmbuffer/framecapacity.md) refers to the size of one channel’s worth of audio samples.
+By default, the `frameLength` property doesn’t have a useful value upon creation, so you must set this property before using the buffer. The length must be less than or equal to the [`frameCapacity`](./framecapacity.md) of the buffer. For deinterleaved formats, [`frameCapacity`](./framecapacity.md) refers to the size of one channel’s worth of audio samples.
 
-You may modify the length of the buffer as part of an operation that modifies its contents. Modifying `frameLength` updates the `mDataByteSize` field in each of the underlying [`AudioBufferList`](https://developer.apple.com/documentation/coreaudiotypes/audiobufferlist) structure’s `AudioBuffer` properties correspondingly, and vice versa.
+You may modify the length of the buffer as part of an operation that modifies its contents. Modifying `frameLength` updates the `mDataByteSize` field in each of the underlying [`AudioBufferList`](../../CoreAudioTypes/audiobufferlist.md) structure’s `AudioBuffer` properties correspondingly, and vice versa.
 
 ## See Also
 
-- [var frameCapacity: AVAudioFrameCount](avaudiopcmbuffer/framecapacity.md)
+### Related Documentation
+- [var frameCapacity: AVAudioFrameCount](./framecapacity.md)
   The buffer’s capacity, in audio sample frames.
 
 

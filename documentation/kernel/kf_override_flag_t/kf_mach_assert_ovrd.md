@@ -1,14 +1,15 @@
 # KF_MACH_ASSERT_OVRD
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 KF_MACH_ASSERT_OVRD
 ```
 

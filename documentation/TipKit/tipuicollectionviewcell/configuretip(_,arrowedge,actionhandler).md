@@ -1,7 +1,8 @@
 # configureTip(_:arrowEdge:actionHandler:)
 
 **Framework**: TipKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the cell to display an embedded tip view.
 

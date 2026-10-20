@@ -1,7 +1,8 @@
 # addCompletion(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified completion block to the animator.
 
@@ -15,24 +16,35 @@ Adds the specified completion block to the animator.
 ## Declaration
 
 ```swift
+optional func addCompletion(_ completion: @escaping (UIViewAnimatingPosition) -> Void)
+```
+
+```swift
 optional func addCompletion() async -> UIViewAnimatingPosition
+```
+
+```objc
+- (void) addCompletion:(void (^)(UIViewAnimatingPosition finalPosition)) completion;
 ```
 
 #### Discussion
 
-Use this method to add the completion blocks to your custom animator object. Completion blocks should execute after the animations finish successfully. If the [`stopAnimation(_:)`](uiviewanimating/stopanimation(_:).md) method is called, do not execute any completion blocks if the `withoutFinishing` parameter for that method contains the value [`true`](https://developer.apple.com/documentation/swift/true). If the parameter is [`false`](https://developer.apple.com/documentation/swift/false) and the client subsequent calls the [`finishAnimation(at:)`](uiviewanimating/finishanimation(at:).md) method, execute the completion blocks in your implementation of that method. Your implementation must be able to handle multiple calls to this method.
+Use this method to add the completion blocks to your custom animator object. Completion blocks should execute after the animations finish successfully. If the [`stopAnimation(_:)`](../uiviewanimating/stopanimation%28_%29.md) method is called, do not execute any completion blocks if the `withoutFinishing` parameter for that method contains the value [`true`](../../Swift/true.md). If the parameter is [`false`](../../Swift/false.md) and the client subsequent calls the [`finishAnimation(at:)`](../uiviewanimating/finishanimation%28at%29.md) method, execute the completion blocks in your implementation of that method. Your implementation must be able to handle multiple calls to this method.
 
 ## Parameters
 
-- `completion`: A block to execute when the animations finish. This block has no return value and takes the following parameter: - **finalPosition**: The position where the animations stopped. Use this value to specify whether the animations stopped at their starting point, their end point, or their current position.
+- `completion`: A block to execute when the animations finish. This block has no return value and takes the following parameter:
+
+  - **finalPosition**: The position where the animations stopped. Use this value to specify whether the animations stopped at their starting point, their end point, or their current position.
 
 ## See Also
 
-- [func addAnimations(() -> Void)](uiviewimplicitlyanimating/addanimations(_:).md)
+### Modifying animations
+- [func addAnimations(() -> Void)](./addanimations%28_%29.md)
   Adds the specified animation block to the animator.
-- [func addAnimations(() -> Void, delayFactor: CGFloat)](uiviewimplicitlyanimating/addanimations(_:delayfactor:).md)
+- [func addAnimations(() -> Void, delayFactor: CGFloat)](./addanimations%28_,delayfactor%29.md)
   Adds the specified animation block to the animator with a delay.
-- [func continueAnimation(withTimingParameters: (any UITimingCurveProvider)?, durationFactor: CGFloat)](uiviewimplicitlyanimating/continueanimation(withtimingparameters:durationfactor:).md)
+- [func continueAnimation(withTimingParameters: (any UITimingCurveProvider)?, durationFactor: CGFloat)](./continueanimation%28withtimingparameters,durationfactor%29.md)
   Adjusts the final timing and duration of a paused animation.
 
 

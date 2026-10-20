@@ -1,7 +1,8 @@
 # backgroundConfiguration
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current background configuration of the view.
 
@@ -10,7 +11,7 @@ The current background configuration of the view.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -31,16 +32,17 @@ header.backgroundConfiguration = backgroundConfig
 
 A background configuration is mutually exclusive with background views, so you must use one approach or the other. Setting a non-`nil` value for this property resets the following APIs to `nil`:
 
-- [`backgroundColor`](uiview/backgroundcolor.md)
-- [`backgroundView`](uitableviewheaderfooterview/backgroundview.md)
+- [`backgroundColor`](../uiview/backgroundcolor.md)
+- [`backgroundView`](./backgroundview.md)
 
 ## See Also
 
-- [func defaultBackgroundConfiguration() -> UIBackgroundConfiguration](uitableviewheaderfooterview/defaultbackgroundconfiguration.md)
+### Configuring the background
+- [func defaultBackgroundConfiguration() -> UIBackgroundConfiguration](./defaultbackgroundconfiguration%28%29.md)
   Retrieves a background configuration with system default values.
-- [var automaticallyUpdatesBackgroundConfiguration: Bool](uitableviewheaderfooterview/automaticallyupdatesbackgroundconfiguration.md)
+- [var automaticallyUpdatesBackgroundConfiguration: Bool](./automaticallyupdatesbackgroundconfiguration.md)
   A Boolean value that determines whether the view automatically updates its background configuration when its state changes.
-- [var backgroundView: UIView?](uitableviewheaderfooterview/backgroundview.md)
+- [var backgroundView: UIView?](./backgroundview.md)
   The background view of the header or footer.
 
 

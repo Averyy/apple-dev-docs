@@ -1,7 +1,8 @@
 # init(world:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an anchor entity with a target fixed at the given position in the scene.
 
@@ -11,13 +12,20 @@ Creates an anchor entity with a target fixed at the given position in the scene.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
 ```swift
 @MainActor
 @preconcurrency convenience init(world position: SIMD3<Float>)
+```
+
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency convenience init(world transform: float4x4)
 ```
 
 ## Parameters

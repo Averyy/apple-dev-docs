@@ -1,7 +1,8 @@
 # HwProgramUART
 
 **Framework**: SerialDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configure the settings for the device’s universal asynchronous receiver/transmitter (UART).
 
@@ -10,13 +11,13 @@ Configure the settings for the device’s universal asynchronous receiver/transm
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t HwProgramUART(uint32_t baudRate, uint8_t nDataBits, uint8_t nHalfStopBits, uint8_t parity);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -31,21 +32,22 @@ Override this method and use it to program your hardware with the specified info
 
 ## See Also
 
-- [HwGetModemStatus](iouserserial/hwgetmodemstatus.md)
+### Programming the Modem
+- [HwGetModemStatus](./hwgetmodemstatus.md)
   Gets the current status of the modem from the hardware.
-- [SetModemStatus](iouserserial/setmodemstatus.md)
+- [SetModemStatus](./setmodemstatus.md)
   Sets the modem status to the specified values.
-- [HwResetFIFO](iouserserial/hwresetfifo.md)
+- [HwResetFIFO](./hwresetfifo.md)
   Sends a command to reset the specified device queues.
-- [HwSendBreak](iouserserial/hwsendbreak.md)
+- [HwSendBreak](./hwsendbreak.md)
   Sends a linebreak command to the device.
-- [HwProgramBaudRate](iouserserial/hwprogrambaudrate.md)
+- [HwProgramBaudRate](./hwprogrambaudrate.md)
   Sets the communication baud rate to the specified value.
-- [HwProgramLatencyTimer](iouserserial/hwprogramlatencytimer.md)
+- [HwProgramLatencyTimer](./hwprogramlatencytimer.md)
   Sets the amount of time to wait before sending the current buffer to the device.
-- [HwProgramMCR](iouserserial/hwprogrammcr.md)
+- [HwProgramMCR](./hwprogrammcr.md)
   Configure the setings for the device’s modem control register (MCR).
-- [Hardware Constants](hardware-constants.md)
+- [Hardware Constants](../hardware-constants.md)
   Configure your device with the appropriate parity and flow-control options.
 
 

@@ -1,7 +1,8 @@
 # rows
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rows of data in the table.
 
@@ -21,9 +22,10 @@ var rows: MLDataTable.Rows { get }
 
 ## See Also
 
-- [MLDataTable.Row](mldatatable/row.md)
+### Getting information about a data table’s rows
+- [MLDataTable.Row](./row.md)
   A row of untyped values in a data table.
-- [MLDataTable.Rows](mldatatable/rows-swift.struct.md)
+- [MLDataTable.Rows](./rows-swift.struct.md)
   A collection of rows in a data table.
 
 

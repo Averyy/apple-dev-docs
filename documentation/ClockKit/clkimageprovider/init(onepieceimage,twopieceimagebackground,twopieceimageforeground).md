@@ -1,17 +1,24 @@
 # init(onePieceImage:twoPieceImageBackground:twoPieceImageForeground:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns an image provider with both one-piece and two-piece images.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
 ```swift
 convenience init(onePieceImage: UIImage, twoPieceImageBackground: UIImage?, twoPieceImageForeground: UIImage?)
+```
+
+```objc
++ (instancetype) imageProviderWithOnePieceImage:(UIImage *) onePieceImage twoPieceImageBackground:(UIImage *) twoPieceImageBackground twoPieceImageForeground:(UIImage *) twoPieceImageForeground;
 ```
 
 #### Return Value
@@ -20,7 +27,7 @@ An image provider with both the one-piece and two-piece images.
 
 #### Discussion
 
-Use this method when you want to display a two-piece image in multicolor environments. In monochrome environments, the image provider still displays the one-piece image. After creating the image provider, you can customize the tint color applied to your images by modifying the [`tintColor`](clkimageprovider/tintcolor.md) property.
+Use this method when you want to display a two-piece image in multicolor environments. In monochrome environments, the image provider still displays the one-piece image. After creating the image provider, you can customize the tint color applied to your images by modifying the [`tintColor`](./tintcolor.md) property.
 
 ## Parameters
 
@@ -30,7 +37,8 @@ Use this method when you want to display a two-piece image in multicolor environ
 
 ## See Also
 
-- [convenience init(onePieceImage: UIImage)](clkimageprovider/init(onepieceimage:).md)
+### Creating an Image Provider
+- [convenience init(onePieceImage: UIImage)](./init%28onepieceimage%29.md)
   Creates and returns an image provider with the specified one-piece image.
 
 

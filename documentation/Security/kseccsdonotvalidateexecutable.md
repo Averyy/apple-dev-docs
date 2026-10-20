@@ -1,7 +1,8 @@
 # kSecCSDoNotValidateExecutable
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Do not validate the contents of the main executable.
 
@@ -13,6 +14,10 @@ Do not validate the contents of the main executable.
 
 ```swift
 var kSecCSDoNotValidateExecutable: UInt32 { get }
+```
+
+```c
+kSecCSDoNotValidateExecutable
 ```
 
 #### Discussion

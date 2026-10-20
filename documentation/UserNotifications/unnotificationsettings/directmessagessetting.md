@@ -1,7 +1,8 @@
 # directMessagesSetting
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -15,6 +16,18 @@
 
 ```swift
 var directMessagesSetting: UNNotificationSetting { get }
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly) UNNotificationSetting directMessagesSetting;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) UNNotificationSetting directMessagesSetting;
 ```
 
 

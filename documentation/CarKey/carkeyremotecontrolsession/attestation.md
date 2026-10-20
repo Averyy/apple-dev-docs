@@ -1,7 +1,8 @@
 # CarKeyRemoteControlSession.Attestation
 
 **Framework**: CarKey  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Object representing an attestation and related data
 
@@ -21,10 +22,10 @@ struct Attestation
 ## Topics
 
 ### Instance Properties
-- [let appBundleIdentifier: String](carkeyremotecontrolsession/attestation/appbundleidentifier.md)
-- [let nonce: Data](carkeyremotecontrolsession/attestation/nonce.md)
-- [let signature: Data](carkeyremotecontrolsession/attestation/signature.md)
-- [let signedData: Data](carkeyremotecontrolsession/attestation/signeddata.md)
+- [let appBundleIdentifier: String](./attestation/appbundleidentifier.md)
+- [let nonce: Data](./attestation/nonce.md)
+- [let signature: Data](./attestation/signature.md)
+- [let signedData: Data](./attestation/signeddata.md)
 
 
 ---

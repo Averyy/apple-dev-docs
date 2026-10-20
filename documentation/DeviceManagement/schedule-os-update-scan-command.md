@@ -1,18 +1,21 @@
 # Schedule OS Update Scan
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Schedule a background scan for operating-system updates on a device. Removed: use the declarative management `com.apple.configuration.softwareupdate.enforcement.specific` configuration.
 
 **Availability**:
-- macOS 10.11+
+- macOS 10.11+ - Deprecated in 26.0
+
+> **Deprecated**: **Removed** Use the declarative management software update features instead.
 
 #### Discussion
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -22,7 +25,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | N/A |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -68,9 +71,9 @@ Refer to the following sections to determine supported channels and requirements
 ## Topics
 
 ### Commands and responses
-- [object ScheduleOSUpdateScanCommand](scheduleosupdatescancommand.md)
+- [object ScheduleOSUpdateScanCommand](./scheduleosupdatescancommand.md)
   The command to schedule a background scan for operating-system updates on a device. Removed: use the declarative management `com.apple.configuration.softwareupdate.enforcement.specific` configuration.
-- [object ScheduleOSUpdateScanResponse](scheduleosupdatescanresponse.md)
+- [object ScheduleOSUpdateScanResponse](./scheduleosupdatescanresponse.md)
   A response from the device after it processes the command to schedule a background scan for operating-system updates on a device. Removed: use the declarative management `com.apple.configuration.softwareupdate.enforcement.specific` configuration.
 
 ## Endpoint
@@ -79,15 +82,23 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `ScheduleOSUpdateScanCommand`
+
 The request object the server returns for the Schedule OS Update Scan Command.
+
+## Responses
+
+- `200` OK (`ScheduleOSUpdateScanResponse`, `application/xml`): The response object the system returns for the Schedule OS Update Scan Command.
 
 ## See Also
 
-- [Available OS Updates](available-os-updates-command.md)
+### Commands
+- [Available OS Updates](./available-os-updates-command.md)
   Get a list of available operating-system updates for a device. Removed: use the declarative management `com.apple.configuration.softwareupdate.enforcement.specific` configuration.
-- [OS Update Status](os-update-status-command.md)
+- [OS Update Status](./os-update-status-command.md)
   Get the status of operating-system updates on a device. Removed: subscribe to the declarative management `softwareupdate.install-state` status item.
-- [Schedule OS Update](schedule-os-update-command.md)
+- [Schedule OS Update](./schedule-os-update-command.md)
   Schedule an update of the operating system on a device. Removed: use the declarative management `com.apple.configuration.softwareupdate.enforcement.specific` configuration.
 
 

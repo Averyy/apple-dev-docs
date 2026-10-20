@@ -1,6 +1,7 @@
 # Xcode 16.4 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -46,13 +47,14 @@ Xcode 16.4 includes SDKs for iOS 18.5, iPadOS 18.5, tvOS 18.5, watchOS 11.5, mac
 
 ## See Also
 
-- [Xcode 16.3 Release Notes](xcode-16_3-release-notes.md)
+### Xcode 16
+- [Xcode 16.3 Release Notes](./xcode-16_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 16.2 Release Notes](xcode-16_2-release-notes.md)
+- [Xcode 16.2 Release Notes](./xcode-16_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 16.1 Release Notes](xcode-16_1-release-notes.md)
+- [Xcode 16.1 Release Notes](./xcode-16_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 16 Release Notes](xcode-16-release-notes.md)
+- [Xcode 16 Release Notes](./xcode-16-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

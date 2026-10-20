@@ -1,7 +1,8 @@
 # kCGImageDestinationEncodeBasePixelFormatRequest
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 let kCGImageDestinationEncodeBasePixelFormatRequest: CFString
+```
+
+```c
+extern CFStringRef const kCGImageDestinationEncodeBasePixelFormatRequest;
 ```
 
 

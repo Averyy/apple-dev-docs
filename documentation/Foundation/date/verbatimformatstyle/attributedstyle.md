@@ -1,7 +1,8 @@
 # attributedStyle
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Return the type preserving attributed variant of this style.
 

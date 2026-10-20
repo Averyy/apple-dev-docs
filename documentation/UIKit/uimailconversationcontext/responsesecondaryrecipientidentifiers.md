@@ -1,7 +1,8 @@
 # responseSecondaryRecipientIdentifiers
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of strings that identifies the secondary recipients of the message, such as those in CC or BCC messages.
 
@@ -16,11 +17,16 @@ A set of strings that identifies the secondary recipients of the message, such a
 var responseSecondaryRecipientIdentifiers: Set<String> { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) NSSet<NSString *> * responseSecondaryRecipientIdentifiers;
+```
+
 ## See Also
 
-- [var responseSubject: String](uimailconversationcontext/responsesubject.md)
+### Getting message details
+- [var responseSubject: String](./responsesubject.md)
   A string that contains the subject line of an intended response.
-- [var responseHasCustomSignature: Bool](uimailconversationcontext/responsehascustomsignature.md)
+- [var responseHasCustomSignature: Bool](./responsehascustomsignature.md)
   A Boolean value that indicates whether the intended response contains a custom signature.
 
 

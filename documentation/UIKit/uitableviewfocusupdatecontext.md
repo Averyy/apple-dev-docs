@@ -1,7 +1,8 @@
 # UITableViewFocusUpdateContext
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A context object that provides information relevant to a specific focus update from one view to another.
 
@@ -19,6 +20,10 @@ A context object that provides information relevant to a specific focus update f
 class UITableViewFocusUpdateContext
 ```
 
+```objc
+@interface UITableViewFocusUpdateContext : UIFocusUpdateContext
+```
+
 #### Overview
 
 A focus update context provides extra information that’s only relevant to focus updates involving table views. Instances of this class are ephemeral and are usually discarded after the update is finished.
@@ -26,32 +31,33 @@ A focus update context provides extra information that’s only relevant to focu
 ## Topics
 
 ### Locating focusable items in a table view
-- [var previouslyFocusedIndexPath: IndexPath?](uitableviewfocusupdatecontext/previouslyfocusedindexpath.md)
+- [var previouslyFocusedIndexPath: IndexPath?](./uitableviewfocusupdatecontext/previouslyfocusedindexpath.md)
   Returns the index path of the cell containing the context’s previously focused view.
-- [var nextFocusedIndexPath: IndexPath?](uitableviewfocusupdatecontext/nextfocusedindexpath.md)
+- [var nextFocusedIndexPath: IndexPath?](./uitableviewfocusupdatecontext/nextfocusedindexpath.md)
   Returns the index path of the cell containing the context’s next focused view.
 
 ## Relationships
 
 ### Inherits From
-- [UIFocusUpdateContext](uifocusupdatecontext.md)
+- [UIFocusUpdateContext](./uifocusupdatecontext.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Estimating the height of a table’s scrolling area](estimating-the-height-of-a-table-s-scrolling-area.md)
+### Table management
+- [Estimating the height of a table’s scrolling area](./estimating-the-height-of-a-table-s-scrolling-area.md)
   Provide height estimates for your table view’s headers, footers, and rows to ensure that scrolling accurately reflects the size of your content.
-- [class UITableViewController](uitableviewcontroller.md)
+- [class UITableViewController](./uitableviewcontroller.md)
   A view controller that specializes in managing a table view.
-- [protocol UITableViewDelegate](uitableviewdelegate.md)
+- [protocol UITableViewDelegate](./uitableviewdelegate.md)
   Methods for managing selections, configuring section headers and footers, deleting and reordering cells, and performing other actions in a table view.
 
 

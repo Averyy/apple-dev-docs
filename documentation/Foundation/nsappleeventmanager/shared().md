@@ -1,7 +1,8 @@
 # shared()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the single instance of `NSAppleEventManager`, creating it first if it doesn’t exist.
 
@@ -15,9 +16,14 @@ Returns the single instance of `NSAppleEventManager`, creating it first if it do
 class func shared() -> NSAppleEventManager
 ```
 
+```objc
++ (NSAppleEventManager *) sharedAppleEventManager;
+```
+
 ## See Also
 
-- [Cocoa Scripting Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
+### Related Documentation
+- [Cocoa Scripting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
 
 
 ---

@@ -1,7 +1,8 @@
 # availability
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The availability of this node definition on each platform.
 
@@ -19,7 +20,7 @@ var availability: [ShaderGraph.NodeDefinition.Platform : ShaderGraph.NodeDefinit
 
 #### Discussion
 
-Prefer [`isAvailable(on:version:)`](shadergraph/nodedefinition/isavailable(on:version:).md) for point-in-time availability checks. Use this property when you need the full version range — for example, to display availability annotations in a node library UI.
+Prefer [`isAvailable(on:version:)`](./isavailable%28on,version%29.md) for point-in-time availability checks. Use this property when you need the full version range — for example, to display availability annotations in a node library UI.
 
 
 ---

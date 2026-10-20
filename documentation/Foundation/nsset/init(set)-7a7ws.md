@@ -1,7 +1,8 @@
 # init(set:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly allocated set and adds to it objects from another given set.
 

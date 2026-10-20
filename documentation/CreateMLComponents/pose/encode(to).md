@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the pose value into the given encoder.
 

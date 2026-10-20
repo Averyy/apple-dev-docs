@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,17 +18,17 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOFBChangedInterruptType](1645146-anonymous/kiofbchangedinterrupttype.md)
-- [kIOFBConnectInterruptType](1645146-anonymous/kiofbconnectinterrupttype.md)
-- [kIOFBDisplayPortInterruptType](1645146-anonymous/kiofbdisplayportinterrupttype.md)
-- [kIOFBDisplayPortLinkChangeInterruptType](1645146-anonymous/kiofbdisplayportlinkchangeinterrupttype.md)
-- [kIOFBFrameInterruptType](1645146-anonymous/kiofbframeinterrupttype.md)
-- [kIOFBHBLInterruptType](1645146-anonymous/kiofbhblinterrupttype.md)
-- [kIOFBMCCSInterruptType](1645146-anonymous/kiofbmccsinterrupttype.md)
-- [kIOFBOfflineInterruptType](1645146-anonymous/kiofbofflineinterrupttype.md)
-- [kIOFBOnlineInterruptType](1645146-anonymous/kiofbonlineinterrupttype.md)
-- [kIOFBVBLInterruptType](1645146-anonymous/kiofbvblinterrupttype.md)
-- [kIOFBWakeInterruptType](1645146-anonymous/kiofbwakeinterrupttype.md)
+- [kIOFBChangedInterruptType](./api-1645146-anonymous/kiofbchangedinterrupttype.md)
+- [kIOFBConnectInterruptType](./api-1645146-anonymous/kiofbconnectinterrupttype.md)
+- [kIOFBDisplayPortInterruptType](./api-1645146-anonymous/kiofbdisplayportinterrupttype.md)
+- [kIOFBDisplayPortLinkChangeInterruptType](./api-1645146-anonymous/kiofbdisplayportlinkchangeinterrupttype.md)
+- [kIOFBFrameInterruptType](./api-1645146-anonymous/kiofbframeinterrupttype.md)
+- [kIOFBHBLInterruptType](./api-1645146-anonymous/kiofbhblinterrupttype.md)
+- [kIOFBMCCSInterruptType](./api-1645146-anonymous/kiofbmccsinterrupttype.md)
+- [kIOFBOfflineInterruptType](./api-1645146-anonymous/kiofbofflineinterrupttype.md)
+- [kIOFBOnlineInterruptType](./api-1645146-anonymous/kiofbonlineinterrupttype.md)
+- [kIOFBVBLInterruptType](./api-1645146-anonymous/kiofbvblinterrupttype.md)
+- [kIOFBWakeInterruptType](./api-1645146-anonymous/kiofbwakeinterrupttype.md)
 
 
 ---

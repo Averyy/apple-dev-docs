@@ -1,7 +1,8 @@
 # remove(from:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func remove(from aContext: CGContext!)
+```
+
+```objc
+- (void) removeFromContext:(CGContextRef) aContext;
 ```
 
 

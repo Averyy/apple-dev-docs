@@ -1,7 +1,8 @@
 # init(elapsedTime:paused:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Represents a duration of time that has elapsed so far in this event, or play period of the event (quarter/inning/period).
 
@@ -14,6 +15,10 @@ Represents a duration of time that has elapsed so far in this event, or play per
 
 ```swift
 init(elapsedTime: TimeInterval, paused: Bool)
+```
+
+```objc
+- (instancetype) initWithElapsedTime:(NSTimeInterval) elapsedTime paused:(BOOL) paused;
 ```
 
 #### Discussion

@@ -1,11 +1,12 @@
 # DeviceStatusResponse.Devices
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object DeviceStatusResponse.Devices
 ```
 
@@ -15,7 +16,8 @@ object DeviceStatusResponse.Devices
 
 ## See Also
 
-- [object DeviceStatusResponse](devicestatusresponse.md)
+### Response
+- [object DeviceStatusResponse](../devicestatusresponse.md)
 
 
 ---

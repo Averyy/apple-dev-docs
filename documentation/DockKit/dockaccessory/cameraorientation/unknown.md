@@ -1,7 +1,8 @@
 # DockAccessory.CameraOrientation.unknown
 
 **Framework**: DockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The orientation is unknown.
 
@@ -19,19 +20,20 @@ case unknown
 
 ## See Also
 
-- [DockAccessory.CameraOrientation.corrected](dockaccessory/cameraorientation/corrected.md)
+### Getting camera orientation
+- [DockAccessory.CameraOrientation.corrected](./corrected.md)
   The orientation corresponds to the unit rectangle.
-- [DockAccessory.CameraOrientation.faceUp](dockaccessory/cameraorientation/faceup.md)
+- [DockAccessory.CameraOrientation.faceUp](./faceup.md)
   The orientation is facing up.
-- [DockAccessory.CameraOrientation.faceDown](dockaccessory/cameraorientation/facedown.md)
+- [DockAccessory.CameraOrientation.faceDown](./facedown.md)
   The orientation is facing down.
-- [DockAccessory.CameraOrientation.landscapeLeft](dockaccessory/cameraorientation/landscapeleft.md)
+- [DockAccessory.CameraOrientation.landscapeLeft](./landscapeleft.md)
   The orientation is landscape left.
-- [DockAccessory.CameraOrientation.landscapeRight](dockaccessory/cameraorientation/landscaperight.md)
+- [DockAccessory.CameraOrientation.landscapeRight](./landscaperight.md)
   The orientation is landscape right.
-- [DockAccessory.CameraOrientation.portrait](dockaccessory/cameraorientation/portrait.md)
+- [DockAccessory.CameraOrientation.portrait](./portrait.md)
   The orientation is portrait.
-- [DockAccessory.CameraOrientation.portraitUpsideDown](dockaccessory/cameraorientation/portraitupsidedown.md)
+- [DockAccessory.CameraOrientation.portraitUpsideDown](./portraitupsidedown.md)
   The orientation is portrait, upside down.
 
 

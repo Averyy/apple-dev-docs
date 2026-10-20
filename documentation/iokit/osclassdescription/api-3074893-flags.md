@@ -1,7 +1,8 @@
 # flags
 
 **Framework**: IOKit  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var flags: UInt64
+```
+
+```c
+uint64_t flags;
 ```
 
 

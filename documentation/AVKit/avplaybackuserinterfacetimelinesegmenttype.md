@@ -1,7 +1,8 @@
 # AVPlaybackUserInterfaceTimelineSegmentType
 
 **Framework**: AVKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Describes the type of content within a timeline segment.
 
@@ -16,45 +17,50 @@ Describes the type of content within a timeline segment.
 enum AVPlaybackUserInterfaceTimelineSegmentType
 ```
 
+```c
+enum AVPlaybackUserInterfaceTimelineSegmentType : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [AVPlaybackUserInterfaceTimelineSegmentType.advertisement](avplaybackuserinterfacetimelinesegmenttype/advertisement.md)
+- [AVPlaybackUserInterfaceTimelineSegmentType.advertisement](./avplaybackuserinterfacetimelinesegmenttype/advertisement.md)
   The segment contains an advertisement.
-- [AVPlaybackUserInterfaceTimelineSegmentType.bonus](avplaybackuserinterfacetimelinesegmenttype/bonus.md)
+- [AVPlaybackUserInterfaceTimelineSegmentType.bonus](./avplaybackuserinterfacetimelinesegmenttype/bonus.md)
   The segment contains bonus content, such as a post-credits scene or supplemental material.
-- [AVPlaybackUserInterfaceTimelineSegmentType.credits](avplaybackuserinterfacetimelinesegmenttype/credits.md)
+- [AVPlaybackUserInterfaceTimelineSegmentType.credits](./avplaybackuserinterfacetimelinesegmenttype/credits.md)
   The segment contains end credits.
-- [AVPlaybackUserInterfaceTimelineSegmentType.intro](avplaybackuserinterfacetimelinesegmenttype/intro.md)
+- [AVPlaybackUserInterfaceTimelineSegmentType.intro](./avplaybackuserinterfacetimelinesegmenttype/intro.md)
   The segment contains an opening title sequence.
-- [AVPlaybackUserInterfaceTimelineSegmentType.other](avplaybackuserinterfacetimelinesegmenttype/other.md)
+- [AVPlaybackUserInterfaceTimelineSegmentType.other](./avplaybackuserinterfacetimelinesegmenttype/other.md)
   The segment contains auxiliary content of an unspecified type.
-- [AVPlaybackUserInterfaceTimelineSegmentType.primary](avplaybackuserinterfacetimelinesegmenttype/primary.md)
+- [AVPlaybackUserInterfaceTimelineSegmentType.primary](./avplaybackuserinterfacetimelinesegmenttype/primary.md)
   The segment contains primary program content.
-- [AVPlaybackUserInterfaceTimelineSegmentType.recap](avplaybackuserinterfacetimelinesegmenttype/recap.md)
+- [AVPlaybackUserInterfaceTimelineSegmentType.recap](./avplaybackuserinterfacetimelinesegmenttype/recap.md)
   The segment contains a recap of previous content.
-- [AVPlaybackUserInterfaceTimelineSegmentType.trailer](avplaybackuserinterfacetimelinesegmenttype/trailer.md)
+- [AVPlaybackUserInterfaceTimelineSegmentType.trailer](./avplaybackuserinterfacetimelinesegmenttype/trailer.md)
   The segment contains a trailer or preview for other content.
 ### Initializers
-- [init?(rawValue: Int)](avplaybackuserinterfacetimelinesegmenttype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avplaybackuserinterfacetimelinesegmenttype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol AVPlaybackUserInterfaceTimeControllable](avplaybackuserinterfacetimecontrollable-50vcy.md)
+### Timeline and segments
+- [protocol AVPlaybackUserInterfaceTimeControllable](./avplaybackuserinterfacetimecontrollable-50vcy.md)
   Provides time control and navigation capabilities for media content.
-- [class AVPlaybackUserInterfacePlaybackPosition](avplaybackuserinterfaceplaybackposition.md)
+- [class AVPlaybackUserInterfacePlaybackPosition](./avplaybackuserinterfaceplaybackposition.md)
   A snapshot comprising a playback position recorded at a known host time and the rate of position advancement.
-- [class AVPlaybackUserInterfaceTimelineSegment](avplaybackuserinterfacetimelinesegment.md)
+- [class AVPlaybackUserInterfaceTimelineSegment](./avplaybackuserinterfacetimelinesegment.md)
   Represents a contiguous segment of timeline content with specific playback characteristics.
 
 

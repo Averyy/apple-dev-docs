@@ -1,7 +1,8 @@
 # dimmingColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dimming color.
 
@@ -18,13 +19,18 @@ The dimming color.
 var dimmingColor: UIColor? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIColor * dimmingColor;
+```
+
 ## See Also
 
-- [var alignmentRectProvider: ((UIViewController.Transition.ZoomOptions.AlignmentRectContext) -> CGRect?)?](uiviewcontroller/transition/zoomoptions/alignmentrectprovider.md)
+### Setting options
+- [var alignmentRectProvider: ((UIViewController.Transition.ZoomOptions.AlignmentRectContext) -> CGRect?)?](./alignmentrectprovider.md)
   A closure that returns the alignment rectangle for the starting and ending views.
-- [UIViewController.Transition.ZoomOptions.AlignmentRectContext](uiviewcontroller/transition/zoomoptions/alignmentrectcontext.md)
+- [UIViewController.Transition.ZoomOptions.AlignmentRectContext](./alignmentrectcontext.md)
   An object that contains a zoom transition’s starting and ending views.
-- [var dimmingVisualEffect: UIBlurEffect?](uiviewcontroller/transition/zoomoptions/dimmingvisualeffect.md)
+- [var dimmingVisualEffect: UIBlurEffect?](./dimmingvisualeffect.md)
   The dimming visual effect.
 
 

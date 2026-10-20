@@ -1,7 +1,8 @@
 # RelationshipLinks
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Links related to the response document, including self links.
 
@@ -10,7 +11,7 @@ Links related to the response document, including self links.
 
 ## Declaration
 
-```swift
+```
 object RelationshipLinks
 ```
 
@@ -21,13 +22,14 @@ object RelationshipLinks
 
 ## See Also
 
-- [object PagedDocumentLinks](pageddocumentlinks.md)
+### Objects
+- [object PagedDocumentLinks](./pageddocumentlinks.md)
   Links related to the response document, including paging links.
-- [object PagingInformation](paginginformation.md)
+- [object PagingInformation](./paginginformation.md)
   Paging information for data responses.
-- [object ResourceLinks](resourcelinks.md)
+- [object ResourceLinks](./resourcelinks.md)
   Self-links to requested resources.
-- [object DocumentLinks](documentlinks.md)
+- [object DocumentLinks](./documentlinks.md)
   Self-links to documents that can contain information for one or more resources.
 
 

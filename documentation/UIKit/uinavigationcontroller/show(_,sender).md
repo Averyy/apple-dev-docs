@@ -1,7 +1,8 @@
 # show(_:sender:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents the specified view controller in the navigation interface.
 
@@ -9,7 +10,7 @@ Presents the specified view controller in the navigation interface.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Presents the specified view controller in the navigation interface.
 func show(_ vc: UIViewController, sender: Any?)
 ```
 
+```objc
+- (void) showViewController:(UIViewController *) vc sender:(id) sender;
+```
+
 #### Discussion
 
-This method pushes `vc` onto the navigation stack in a similar way as the [`pushViewController(_:animated:)`](uinavigationcontroller/pushviewcontroller(_:animated:).md) method. You can call this method directly if you want but typically this method is called from elsewhere in the view controller hierarchy when a new view controller needs to be shown.
+This method pushes `vc` onto the navigation stack in a similar way as the [`pushViewController(_:animated:)`](./pushviewcontroller%28_,animated%29.md) method. You can call this method directly if you want but typically this method is called from elsewhere in the view controller hierarchy when a new view controller needs to be shown.
 
 The Show segue uses this method to display a new view controller.
 
@@ -31,9 +36,10 @@ The Show segue uses this method to display a new view controller.
 
 ## See Also
 
-- [Enhancing your app with fluid transitions](enhancing-your-app-with-fluid-transitions.md)
+### Displaying view controllers
+- [Enhancing your app with fluid transitions](../enhancing-your-app-with-fluid-transitions.md)
   Use the fluid zoom transition to provide a continuously interactive and responsive experience in your app.
-- [var preferredTransition: UIViewController.Transition?](uiviewcontroller/preferredtransition.md)
+- [var preferredTransition: UIViewController.Transition?](../uiviewcontroller/preferredtransition.md)
   An object that defines the transition animation when switching to the view controller.
 
 

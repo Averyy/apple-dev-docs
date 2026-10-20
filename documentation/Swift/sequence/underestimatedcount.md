@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A value less than or equal to the number of elements in the sequence, calculated nondestructively.
@@ -25,13 +26,24 @@ var underestimatedCount: Int { get }
 
 The default implementation returns 0. If you provide your own implementation, make sure to compute the value nondestructively.
 
-> **Note**: O(1), except if the sequence also conforms to `Collection`. In this case, see the documentation of `Collection.underestimatedCount`.
+> **Complexity**: O(1), except if the sequence also conforms to `Collection`. In this case, see the documentation of `Collection.underestimatedCount`.
+
+## Default Implementations
+
+### Sequence Implementations
+- [var underestimatedCount: Int](./underestimatedcount-3n9ne.md)
+  A value less than or equal to the number of elements in the collection.
+- [var underestimatedCount: Int](./underestimatedcount-7sn1i.md)
+- [var underestimatedCount: Int](./underestimatedcount-7vi5w.md)
+- [var underestimatedCount: Int](./underestimatedcount-9oyup.md)
+  A value less than or equal to the number of elements in the sequence, calculated nondestructively.
 
 ## See Also
 
-- [func forEach((Self.Element) throws -> Void) rethrows](sequence/foreach(_:).md)
+### Iterating Over a Sequence’s Elements
+- [func forEach((Self.Element) throws -> Void) rethrows](./foreach%28_%29.md)
   Calls the given closure on each element in the sequence in the same order as a `for`-`in` loop.
-- [func enumerated() -> EnumeratedSequence<Self>](sequence/enumerated.md)
+- [func enumerated() -> EnumeratedSequence<Self>](./enumerated%28%29.md)
   Returns a sequence of pairs (*n*, *x*), where *n* represents a consecutive integer starting at zero and *x* represents an element of the sequence.
 
 

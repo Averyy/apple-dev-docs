@@ -1,7 +1,8 @@
 # editCategory
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that an app specifies through the category property on a UIKit accessibility custom action.
 
@@ -17,6 +18,10 @@ A constant that an app specifies through the category property on a UIKit access
 ```swift
 nonisolated
 class let editCategory: String
+```
+
+```c
+extern NSString * const UIAccessibilityCustomActionCategoryEdit;
 ```
 
 #### Discussion

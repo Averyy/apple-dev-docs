@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance with the specified raw value.
 
@@ -9,7 +10,7 @@ Creates a new instance with the specified raw value.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,9 +21,10 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(ContentSizeCategory?)](uicontentsizecategory/init(_:)-9l1kn.md)
+### Font size category creation
+- [init(ContentSizeCategory?)](./init%28_%29-9l1kn.md)
   Creates a content size category from the specified SwiftUI content size category.
-- [init(DynamicTypeSize?)](uicontentsizecategory/init(_:)-abz4.md)
+- [init(DynamicTypeSize?)](./init%28_%29-abz4.md)
   Creates a content size category from the specified SwiftUI Dynamic Type size.
 
 

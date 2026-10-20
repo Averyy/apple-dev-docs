@@ -1,7 +1,8 @@
 # hlg
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates Hybrid-Log Gamma (HLG) high-dynamic-range video.
 
@@ -20,11 +21,16 @@ Indicates Hybrid-Log Gamma (HLG) high-dynamic-range video.
 static let hlg: AVVideoRange
 ```
 
+```c
+extern AVVideoRange const AVVideoRangeHLG;
+```
+
 ## See Also
 
-- [static let pq: AVVideoRange](avvideorange/pq.md)
+### Video ranges
+- [static let pq: AVVideoRange](./pq.md)
   Indicates Perceptual Quantizer (PQ) high-dynamic-range video.
-- [static let sdr: AVVideoRange](avvideorange/sdr.md)
+- [static let sdr: AVVideoRange](./sdr.md)
   Indicates standard-dynamic-range (SDR) video.
 
 

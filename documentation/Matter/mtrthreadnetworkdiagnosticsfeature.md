@@ -1,7 +1,8 @@
 # MTRThreadNetworkDiagnosticsFeature
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.1+
@@ -18,27 +19,31 @@
 struct MTRThreadNetworkDiagnosticsFeature
 ```
 
+```c
+enum MTRThreadNetworkDiagnosticsFeature : uint32_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](mtrthreadnetworkdiagnosticsfeature/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./mtrthreadnetworkdiagnosticsfeature/init%28rawvalue%29.md)
 ### Type Properties
-- [static var errorCounts: MTRThreadNetworkDiagnosticsFeature](mtrthreadnetworkdiagnosticsfeature/errorcounts.md)
-- [static var macCounts: MTRThreadNetworkDiagnosticsFeature](mtrthreadnetworkdiagnosticsfeature/maccounts.md)
-- [static var mleCounts: MTRThreadNetworkDiagnosticsFeature](mtrthreadnetworkdiagnosticsfeature/mlecounts.md)
-- [static var packetCounts: MTRThreadNetworkDiagnosticsFeature](mtrthreadnetworkdiagnosticsfeature/packetcounts.md)
+- [static var errorCounts: MTRThreadNetworkDiagnosticsFeature](./mtrthreadnetworkdiagnosticsfeature/errorcounts.md)
+- [static var macCounts: MTRThreadNetworkDiagnosticsFeature](./mtrthreadnetworkdiagnosticsfeature/maccounts.md)
+- [static var mleCounts: MTRThreadNetworkDiagnosticsFeature](./mtrthreadnetworkdiagnosticsfeature/mlecounts.md)
+- [static var packetCounts: MTRThreadNetworkDiagnosticsFeature](./mtrthreadnetworkdiagnosticsfeature/packetcounts.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

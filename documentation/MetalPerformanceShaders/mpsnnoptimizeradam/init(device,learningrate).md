@@ -1,7 +1,8 @@
 # init(device:learningRate:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, learningRate: Float)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device learningRate:(float) learningRate;
 ```
 
 

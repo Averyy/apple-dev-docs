@@ -1,14 +1,15 @@
 # uuid_generate_early_random
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 void uuid_generate_early_random(uuid_t out);
 ```
 

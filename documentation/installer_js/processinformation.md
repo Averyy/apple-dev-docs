@@ -7,7 +7,7 @@ A dictionary (associative array) describing an application.
 
 #### Overview
 
-[`Table 1`](processinformation#2556489.md) describes the items available in the dictionary.
+[Table 1](./processinformation.md#2556489) describes the items available in the dictionary.
 
 | Key | Description |
 | --- | --- |
@@ -25,7 +25,8 @@ A dictionary (associative array) describing an application.
 
 ## See Also
 
-- [Installer JS](installer_js.md)
+### Related Documentation
+- [Installer JS](./installer_js.md)
   Manage and customize the installation and distribution experience.
 
 

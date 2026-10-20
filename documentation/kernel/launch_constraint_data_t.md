@@ -1,14 +1,15 @@
 # launch_constraint_data_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct launch_constraint_data {
     ...
 } launch_constraint_data_t;
@@ -17,7 +18,7 @@ typedef struct launch_constraint_data {
 ## Topics
 
 ### Instance Properties
-- [launch_type](launch_constraint_data_t/3943497-launch_type.md)
+- [launch_type](./launch_constraint_data_t/api-3943497-launch_type.md)
 
 
 ---

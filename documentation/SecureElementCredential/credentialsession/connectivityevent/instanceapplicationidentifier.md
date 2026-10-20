@@ -1,7 +1,8 @@
 # instanceApplicationIdentifier
 
 **Framework**: SecureElementCredential  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The instance application identifier associated with the credential that receives an event.
 

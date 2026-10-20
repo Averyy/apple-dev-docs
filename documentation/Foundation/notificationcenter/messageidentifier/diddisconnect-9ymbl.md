@@ -1,7 +1,8 @@
 # didDisconnect
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identifier of the message that posts after a game controller accessory disconnects from the device.
 
@@ -18,6 +19,8 @@ The identifier of the message that posts after a game controller accessory disco
 ```swift
 static var didDisconnect: NotificationCenter.BaseMessageIdentifier<GCController.DidDisconnectMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<GCController.DidDisconnectMessage>`.
 
 
 ---

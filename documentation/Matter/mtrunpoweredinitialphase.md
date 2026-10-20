@@ -1,7 +1,8 @@
 # MTRUnpoweredInitialPhase
 
 **Framework**: Matter  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 27.0+
@@ -16,6 +17,10 @@
 
 ```swift
 let MTRUnpoweredInitialPhase: String
+```
+
+```c
+extern NSString * const MTRUnpoweredInitialPhase;
 ```
 
 

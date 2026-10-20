@@ -1,7 +1,8 @@
 # maximumDimensions
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The maximum dimensions of a source frame for the processor.
 
@@ -21,7 +22,8 @@ static var maximumDimensions: CMVideoDimensions? { get }
 
 ## See Also
 
-- [static var minimumDimensions: CMVideoDimensions?](vtframeprocessorconfiguration/minimumdimensions-42b0h.md)
+### Inspecting dimension constraints
+- [static var minimumDimensions: CMVideoDimensions?](./minimumdimensions-42b0h.md)
   The minimum dimensions of a source frame for the processor.
 
 

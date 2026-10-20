@@ -1,7 +1,8 @@
 # whiteBalanceRedFactor
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The white balance multiplication factor for red-filtered sensels.
 

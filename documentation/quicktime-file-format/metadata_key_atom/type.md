@@ -1,7 +1,8 @@
 # Type
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit unsigned integer value.
 
@@ -11,9 +12,10 @@ Set to `local_key_id`.
 
 ## See Also
 
-- [Size](metadata_key_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit unsigned integer that indicates the size in bytes of the atom structure.
-- [Variable array of atoms](metadata_key_atom/variable_array_of_atoms.md)
+- [Variable array of atoms](./variable_array_of_atoms.md)
   An array of atoms carrying the definitions for key structure and other optional information.
 
 

@@ -1,7 +1,8 @@
 # applying(_:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a point that’s transformed by the specified scaled pose.
 
@@ -11,7 +12,7 @@ Returns a point that’s transformed by the specified scaled pose.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -22,20 +23,21 @@ func applying(_ scaledPose: ScaledPose3D) -> Point3D
 
 ## See Also
 
-- [func applying(Pose3D) -> Point3D](point3d/applying(_:)-7ulww.md)
+### Transforming a 3D point structure
+- [func applying(Pose3D) -> Point3D](./applying%28_%29-7ulww.md)
   Returns a point that results from applying the specified pose.
-- [func clamp(to: Rect3D)](point3d/clamp(to:).md)
+- [func clamp(to: Rect3D)](./clamp%28to%29.md)
   Clamps the mutable point to the specified rectangle.
-- [func scale(by: Double)](point3d/scale(by:).md)
-- [func rotated(by: Rotation3D, around: Point3D) -> Point3D](point3d/rotated(by:around:)-4tmfq.md)
+- [func scale(by: Double)](./scale%28by%29.md)
+- [func rotated(by: Rotation3D, around: Point3D) -> Point3D](./rotated%28by,around%29-4tmfq.md)
   Returns a point that results from applying a rotation around the specified point.
-- [func rotated(by: simd_quatd, around: Point3D) -> Point3D](point3d/rotated(by:around:)-chuy.md)
+- [func rotated(by: simd_quatd, around: Point3D) -> Point3D](./rotated%28by,around%29-chuy.md)
   Returns a point that results from rotating with a quaternion around the specified point.
-- [func unapplying(Pose3D) -> Point3D](point3d/unapplying(_:)-5hk6t.md)
+- [func unapplying(Pose3D) -> Point3D](./unapplying%28_%29-5hk6t.md)
   Returns a point that results from unapplying the specified pose.
-- [func unapplying(ScaledPose3D) -> Point3D](point3d/unapplying(_:)-7wdtv.md)
+- [func unapplying(ScaledPose3D) -> Point3D](./unapplying%28_%29-7wdtv.md)
   Returns a point that’s transformed by the inverse of the specified scaled pose.
-- [func unapplying(ScaledPose3D) -> Point3D](point3d/unapplying(_:)-7wdtv.md)
+- [func unapplying(ScaledPose3D) -> Point3D](./unapplying%28_%29-7wdtv.md)
   Returns a point that’s transformed by the inverse of the specified scaled pose.
 
 

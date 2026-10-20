@@ -1,7 +1,8 @@
 # byteOrder
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 7.0+

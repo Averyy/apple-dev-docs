@@ -1,7 +1,8 @@
 # limitsNavigationsToAppBoundDomains
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the web view limits navigation to pages within the app’s domain.
 

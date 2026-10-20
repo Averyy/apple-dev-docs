@@ -1,7 +1,8 @@
 # init(serviceIdentifier:label:recordIdentifier:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 init(serviceIdentifier: ASCredentialServiceIdentifier, label: String, recordIdentifier: String?)
+```
+
+```objc
+- (instancetype) initWithServiceIdentifier:(ASCredentialServiceIdentifier *) serviceIdentifier label:(NSString *) label recordIdentifier:(NSString *) recordIdentifier;
 ```
 
 #### Discussion

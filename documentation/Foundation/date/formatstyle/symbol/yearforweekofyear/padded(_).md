@@ -1,7 +1,8 @@
 # padded(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a custom format style that represents the three or more digits of the year in week-of-year calendars, zero-padded if necessary.
 
@@ -30,9 +31,10 @@ A custom year format style that portrays the year of a week of year calendar sys
 
 ## See Also
 
-- [static var defaultDigits: Date.FormatStyle.Symbol.YearForWeekOfYear](date/formatstyle/symbol/yearforweekofyear/defaultdigits.md)
+### Modifying a Year for Week-of-Year
+- [static var defaultDigits: Date.FormatStyle.Symbol.YearForWeekOfYear](./defaultdigits.md)
   Custom week of the year format style showing the minimum number of digits that represents the year in week-of-year calendars.
-- [static var twoDigits: Date.FormatStyle.Symbol.YearForWeekOfYear](date/formatstyle/symbol/yearforweekofyear/twodigits.md)
+- [static var twoDigits: Date.FormatStyle.Symbol.YearForWeekOfYear](./twodigits.md)
   The custom format style that represents the two-digit numeric year in week-of-year calendars, zero-padded or truncated if necessary.
 
 

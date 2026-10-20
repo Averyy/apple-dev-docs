@@ -1,7 +1,8 @@
 # ListFormatStyle.Width
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type representing the width of a list.
 
@@ -22,42 +23,43 @@ enum Width
 
 #### Overview
 
-The possible values of a [`width`](listformatstyle/width-swift.property.md) are `standard`, `short`, and `narrow`.
+The possible values of a [`width`](./width-swift.property.md) are `standard`, `short`, and `narrow`.
 
 ## Topics
 
 ### Widths
-- [ListFormatStyle.Width.standard](listformatstyle/width-swift.enum/standard.md)
+- [ListFormatStyle.Width.standard](./width-swift.enum/standard.md)
   Specifies a standard list style.
-- [ListFormatStyle.Width.short](listformatstyle/width-swift.enum/short.md)
+- [ListFormatStyle.Width.short](./width-swift.enum/short.md)
   Specifies a short list style.
-- [ListFormatStyle.Width.narrow](listformatstyle/width-swift.enum/narrow.md)
+- [ListFormatStyle.Width.narrow](./width-swift.enum/narrow.md)
   Specifies a narrow list style, the shortest list style.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var width: ListFormatStyle<Style, Base>.Width](listformatstyle/width-swift.property.md)
+### Modifying a list format style
+- [var width: ListFormatStyle<Style, Base>.Width](./width-swift.property.md)
   The size of the list.
-- [var listType: ListFormatStyle<Style, Base>.ListType](listformatstyle/listtype-swift.property.md)
+- [var listType: ListFormatStyle<Style, Base>.ListType](./listtype-swift.property.md)
   The type of the list.
-- [ListFormatStyle.ListType](listformatstyle/listtype-swift.enum.md)
+- [ListFormatStyle.ListType](./listtype-swift.enum.md)
   A type that describes whether the returned list contains cumulative or alternative elements.
-- [var locale: Locale](listformatstyle/locale.md)
+- [var locale: Locale](./locale.md)
   The locale to use when formatting items in the list.
-- [func locale(Locale) -> ListFormatStyle<Style, Base>](listformatstyle/locale(_:).md)
+- [func locale(Locale) -> ListFormatStyle<Style, Base>](./locale%28_%29.md)
   Modifies the list format style to use the specified locale.
 
 

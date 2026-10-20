@@ -1,7 +1,8 @@
 # init(state:staleDate:relevanceScore:)
 
 **Framework**: ActivityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the object that describes the state and configuration of a Live Activity.
 
@@ -17,11 +18,12 @@ init(state: State, staleDate: Date?, relevanceScore: Double = 0.0)
 
 ## See Also
 
-- [let state: State](activitycontent/state.md)
+### Describing a Live Activity
+- [let state: State](./state.md)
   The current state of a Live Activity in its life cycle.
-- [let staleDate: Date?](activitycontent/staledate.md)
+- [let staleDate: Date?](./staledate.md)
   The date when the system considers the Live Activity to be out of date.
-- [let relevanceScore: Double](activitycontent/relevancescore.md)
+- [let relevanceScore: Double](./relevancescore.md)
   A score you assign that determines the order in which your Live Activities appear when you start several Live Activities for your app.
 
 

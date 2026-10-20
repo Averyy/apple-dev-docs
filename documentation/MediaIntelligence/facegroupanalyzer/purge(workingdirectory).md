@@ -1,7 +1,8 @@
 # purge(workingDirectory:)
 
 **Framework**: Media Intelligence  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Removes all analyzer data from the specified directory.
 
@@ -22,7 +23,7 @@ nonisolated
 
 ## Mentions
 
-- [Detecting and grouping faces in images](detecting-and-grouping-faces-in-images.md)
+- [Detecting and grouping faces in images](../detecting-and-grouping-faces-in-images.md)
 
 #### Discussion
 
@@ -34,14 +35,15 @@ Call this method to permanently delete all face data, cluster assignments, and m
 
 ## See Also
 
-- [let workingDirectory: URL](facegroupanalyzer/workingdirectory.md)
+### Managing assets
+- [let workingDirectory: URL](./workingdirectory.md)
   A directory where the analyzer stores its face data and metadata.
 - [func insertOrUpdateAssets([MediaIntelligenceImageAsset]) async throws -> some AsyncSequence<(assetID: MediaIntelligenceImageAsset.ID, faces: Array<FaceGroupAnalyzer.Face>), any Error>
-](facegroupanalyzer/insertorupdateassets(_:).md)
+](./insertorupdateassets%28_%29.md)
   Adds or replaces image assets in the analyzer.
-- [func deleteAssets([MediaIntelligenceImageAsset.ID]) async throws](facegroupanalyzer/deleteassets(_:).md)
+- [func deleteAssets([MediaIntelligenceImageAsset.ID]) async throws](./deleteassets%28_%29.md)
   Removes the specified assets and their associated face data.
-- [func deleteAllAssets() async throws](facegroupanalyzer/deleteallassets.md)
+- [func deleteAllAssets() async throws](./deleteallassets%28%29.md)
   Removes all assets and their associated face data from the analyzer.
 
 

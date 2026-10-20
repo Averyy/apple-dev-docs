@@ -1,7 +1,8 @@
 # NWProtocolWebSocket.Version
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Supported versions of the WebSocket protocol.
 
@@ -23,24 +24,25 @@ enum Version
 ## Topics
 
 ### Versions
-- [NWProtocolWebSocket.Version.version13](nwprotocolwebsocket/version/version13.md)
+- [NWProtocolWebSocket.Version.version13](./version/version13.md)
   Version 13 of the WebSocket protocol.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(NWProtocolWebSocket.Version)](nwprotocolwebsocket/options/init(_:).md)
+### Configuring WebSocket Options
+- [init(NWProtocolWebSocket.Version)](./options/init%28_%29.md)
   Initializes a default set of WebSocket connection options.
-- [var autoReplyPing: Bool](nwprotocolwebsocket/options/autoreplyping.md)
+- [var autoReplyPing: Bool](./options/autoreplyping.md)
   A Boolean indicating whether the connection automatically replies to Ping messages instead of delivering them to you.
-- [var maximumMessageSize: Int](nwprotocolwebsocket/options/maximummessagesize.md)
+- [var maximumMessageSize: Int](./options/maximummessagesize.md)
   The maximum allowed message size, in bytes, to be received by the WebSocket connection.
 
 

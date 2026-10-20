@@ -1,7 +1,8 @@
 # standardShareMenuItem
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A menu item suitable to display the picker for the specified items.
 
@@ -12,6 +13,10 @@ A menu item suitable to display the picker for the specified items.
 
 ```swift
 var standardShareMenuItem: NSMenuItem { get }
+```
+
+```objc
+@property (readonly) NSMenuItem * standardShareMenuItem;
 ```
 
 

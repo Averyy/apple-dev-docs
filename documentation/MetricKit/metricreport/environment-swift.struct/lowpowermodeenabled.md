@@ -1,7 +1,8 @@
 # lowPowerModeEnabled
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether low power mode is enabled on the device.
 
@@ -19,11 +20,12 @@ let lowPowerModeEnabled: Bool
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](../../analyzing-app-performance-with-metrickit.md)
 
 ## See Also
 
-- [let hasExceededStateLimit: Bool](metricreport/environment-swift.struct/hasexceededstatelimit.md)
+### System state
+- [let hasExceededStateLimit: Bool](./hasexceededstatelimit.md)
   A Boolean indicating if the number of emitted states exceeded the aggregation limit.
 
 

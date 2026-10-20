@@ -1,7 +1,8 @@
 # bufferIndex
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index in the argument table for the associated vertex buffer.
 
@@ -10,7 +11,7 @@ The index in the argument table for the associated vertex buffer.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,15 +20,21 @@ The index in the argument table for the associated vertex buffer.
 var bufferIndex: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSUInteger bufferIndex;
+```
+
 ## See Also
 
-- [func setVertexBuffer((any MTLBuffer)?, offset: Int, index: Int)](mtlrendercommandencoder/setvertexbuffer(_:offset:index:).md)
+### Related Documentation
+- [func setVertexBuffer((any MTLBuffer)?, offset: Int, index: Int)](../mtlrendercommandencoder/setvertexbuffer%28_,offset,index%29.md)
   Assigns a buffer to an entry in the vertex shader argument table.
-- [var format: MTLVertexFormat](mtlvertexattributedescriptor/format.md)
+### Organizing the vertex attribute
+- [var format: MTLVertexFormat](./format.md)
   The format of the vertex attribute.
-- [var offset: Int](mtlvertexattributedescriptor/offset.md)
+- [var offset: Int](./offset.md)
   The location of an attribute in vertex data, determined by the byte offset from the start of the vertex data.
-- [enum MTLVertexFormat](mtlvertexformat.md)
+- [enum MTLVertexFormat](../mtlvertexformat.md)
   The vertex data format options for render pipelines.
 
 

@@ -1,7 +1,8 @@
 # playbackControlDelegate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate object for the playback coordinator.
 
@@ -17,6 +18,10 @@ The delegate object for the playback coordinator.
 
 ```swift
 weak var playbackControlDelegate: (any AVPlaybackCoordinatorPlaybackControlDelegate)? { get }
+```
+
+```objc
+@property (nonatomic, weak, readonly) id<AVPlaybackCoordinatorPlaybackControlDelegate> playbackControlDelegate;
 ```
 
 

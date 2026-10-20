@@ -1,7 +1,8 @@
 # userText
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text response provided by the user.
 
@@ -17,6 +18,18 @@ The text response provided by the user.
 
 ```swift
 var userText: String { get }
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSString * userText;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSString * userText;
 ```
 
 #### Discussion

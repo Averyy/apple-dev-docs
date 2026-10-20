@@ -1,7 +1,8 @@
 # classForPage()
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a `PDFPage` subclass for a page object.
 
@@ -19,15 +20,20 @@ Returns a `PDFPage` subclass for a page object.
 optional func classForPage() -> AnyClass
 ```
 
+```objc
+- (Class) classForPage;
+```
+
 ## Mentions
 
-- [Adding Custom Graphics to a PDF](adding-custom-graphics-to-a-pdf.md)
+- [Adding Custom Graphics to a PDF](../adding-custom-graphics-to-a-pdf.md)
 
 ## See Also
 
-- [func `class`(forAnnotationClass: AnyClass) -> AnyClass](pdfdocumentdelegate/class(forannotationclass:).md)
+### Wrapping Document Elements
+- [func `class`(forAnnotationClass: AnyClass) -> AnyClass](./class%28forannotationclass%29.md)
   Returns a `PDFAnnotation` subclass for a class.
-- [func `class`(forAnnotationType: String) -> AnyClass](pdfdocumentdelegate/class(forannotationtype:).md)
+- [func `class`(forAnnotationType: String) -> AnyClass](./class%28forannotationtype%29.md)
   Returns a `PDFAnnotation` subclass for an annotation type.
 
 

@@ -1,13 +1,14 @@
 # Predefined Value
 
-**Framework**: Core Foundation
+**Framework**: Core Foundation  
+**Role**: API Collection
 
 Predefined CFNull object.
 
 ## Topics
 
 ### Constants
-- [let kCFNull: CFNull!](kcfnull.md)
+- [let kCFNull: CFNull!](./kcfnull.md)
   The singleton CFNull object.
 
 

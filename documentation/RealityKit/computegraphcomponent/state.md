@@ -1,7 +1,8 @@
 # state
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current playback state of the simulation.
 

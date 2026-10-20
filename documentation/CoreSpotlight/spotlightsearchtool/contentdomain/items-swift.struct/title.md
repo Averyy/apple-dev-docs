@@ -1,9 +1,10 @@
 # title
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-Attributes queried for the item title. Default: [`title`](searchableitemattribute/title.md)
+Attributes queried for the item title. Default: [`title`](../../../searchableitemattribute/title.md)
 
 **Availability**:
 - iOS 27.0+
@@ -20,12 +21,13 @@ var title: [SearchableItemAttribute]?
 
 ## See Also
 
-- [var created: [SearchableItemAttribute]?](spotlightsearchtool/contentdomain/items-swift.struct/created.md)
-  Attributes queried for the creation date. Default: [`contentCreationDate`](searchableitemattribute/contentcreationdate.md)
-- [var modified: [SearchableItemAttribute]?](spotlightsearchtool/contentdomain/items-swift.struct/modified.md)
-  Attributes queried for the modified date. Default: [`contentModificationDate`](searchableitemattribute/contentmodificationdate.md)
-- [var text: [SearchableItemAttribute]?](spotlightsearchtool/contentdomain/items-swift.struct/text.md)
-  Attributes queried for content keywords. Default: [`textContent`](searchableitemattribute/textcontent.md)
+### Getting the domain attributes
+- [var created: [SearchableItemAttribute]?](./created.md)
+  Attributes queried for the creation date. Default: [`contentCreationDate`](../../../searchableitemattribute/contentcreationdate.md)
+- [var modified: [SearchableItemAttribute]?](./modified.md)
+  Attributes queried for the modified date. Default: [`contentModificationDate`](../../../searchableitemattribute/contentmodificationdate.md)
+- [var text: [SearchableItemAttribute]?](./text.md)
+  Attributes queried for content keywords. Default: [`textContent`](../../../searchableitemattribute/textcontent.md)
 
 
 ---

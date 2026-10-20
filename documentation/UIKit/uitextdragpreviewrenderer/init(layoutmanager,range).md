@@ -1,7 +1,8 @@
 # init(layoutManager:range:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a text drag preview renderer with the specified layout managers and range to render the text drag preview.
 
@@ -17,6 +18,10 @@ Initializes and returns a text drag preview renderer with the specified layout m
 convenience init(layoutManager: NSLayoutManager, range: NSRange)
 ```
 
+```objc
+- (instancetype) initWithLayoutManager:(NSLayoutManager *) layoutManager range:(NSRange) range;
+```
+
 #### Return Value
 
 A renderer of a text drag preview using the specified layout manager and range.
@@ -28,7 +33,8 @@ A renderer of a text drag preview using the specified layout manager and range.
 
 ## See Also
 
-- [init(layoutManager: NSLayoutManager, range: NSRange, unifyRects: Bool)](uitextdragpreviewrenderer/init(layoutmanager:range:unifyrects:).md)
+### Initializing a text drag preview renderer
+- [init(layoutManager: NSLayoutManager, range: NSRange, unifyRects: Bool)](./init%28layoutmanager,range,unifyrects%29.md)
   Returns an initialized renderer of a text drag preview with the specified layout manager, range, and rectangle detection behavior.
 
 

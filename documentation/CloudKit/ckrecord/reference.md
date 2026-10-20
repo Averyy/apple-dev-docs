@@ -1,7 +1,8 @@
 # CKRecord.Reference
 
 **Framework**: CloudKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A relationship between two records in a record zone.
 
@@ -10,7 +11,7 @@ A relationship between two records in a record zone.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,20 +21,24 @@ A relationship between two records in a record zone.
 class Reference
 ```
 
+```objc
+@interface CKReference : NSObject
+```
+
 ## Mentions
 
-- [Designing and Creating a CloudKit Database](designing-and-creating-a-cloudkit-database.md)
-- [Encrypting User Data](encrypting-user-data.md)
+- [Designing and Creating a CloudKit Database](../designing-and-creating-a-cloudkit-database.md)
+- [Encrypting User Data](../encrypting-user-data.md)
 
 #### Overview
 
 A `CKReference` object creates a many-to-one relationship between records in your database. Each reference object stores information about the one record that is the target of the reference. You then save the reference object in the fields of one or more records to create a link from those records to the target. You may only create references between records within the same zone of the same database.
 
-References create a stronger relationship between records than just saving the ID of a record as a string. Specifically, you can use references to create an ownership model between two records. When the reference object’s action is [`CKRecord.ReferenceAction.deleteSelf`](ckrecord/referenceaction/deleteself.md), the target of the reference—that is, the record in the reference’s [`recordID`](ckrecord/reference/recordid.md) property—becomes the owner of the source record. Deleting the target (owner) record deletes all its source records. The deletion of any owned records can trigger further deletions if those records are the owners of other records. If a record contains two or more `CKReference` objects with an action of [`CKRecord.ReferenceAction.deleteSelf`](ckrecord/referenceaction/deleteself.md), CloudKit deletes the record when it deletes any of the objects it references.
+References create a stronger relationship between records than just saving the ID of a record as a string. Specifically, you can use references to create an ownership model between two records. When the reference object’s action is [`CKRecord.ReferenceAction.deleteSelf`](./referenceaction/deleteself.md), the target of the reference—that is, the record in the reference’s [`recordID`](./reference/recordid.md) property—becomes the owner of the source record. Deleting the target (owner) record deletes all its source records. The deletion of any owned records can trigger further deletions if those records are the owners of other records. If a record contains two or more `CKReference` objects with an action of [`CKRecord.ReferenceAction.deleteSelf`](./referenceaction/deleteself.md), CloudKit deletes the record when it deletes any of the objects it references.
 
 > **Note**: It is permissible to create circular owning references for a set of records.
 
-To save multiple records that contain references between them, save the target records first or save all the records in one batch operation using [`CKModifyRecordsOperation`](ckmodifyrecordsoperation.md).
+To save multiple records that contain references between them, save the target records first or save all the records in one batch operation using [`CKModifyRecordsOperation`](../ckmodifyrecordsoperation.md).
 
 ##### Interacting with Reference Objects
 
@@ -43,11 +48,11 @@ You use reference objects to create strong links between two records and to sear
 
 To link records together and create a strong relationship between them, create a new `CKReference` object, initialize it with the owner record, and assign that reference object to a field of the owned record. When you design the relationships among your own records, make the owner the more important of two related records. The owner record rarely depends on any records that point to it. The owner record is also the one that you typically fetch first from the database.
 
-> ❗ **Important**: There is a hard limit to the number of references with a [`CKRecord.ReferenceAction.deleteSelf`](ckrecord/referenceaction/deleteself.md) action that any one record can have. This limit is 750 references, and any attempt to exceed it results in an error from the server.
+> ❗ **Important**: There is a hard limit to the number of references with a [`CKRecord.ReferenceAction.deleteSelf`](./referenceaction/deleteself.md) action that any one record can have. This limit is 750 references, and any attempt to exceed it results in an error from the server.
 
 The figure below shows an example of a relationship between a to-do list record and a set of item records that represent individual items to complete. The to-do list is the primary record, or owner, in the relationship because it represents the entire to-do list, including all items on the list. As a result, each item record has a field that contains a `CKReference` object that points to the owning to-do list record.
 
-![A figure that shows the relationship between a parent record and its children.](/images/com.apple.cloudkit/media-1965777@2x.png)
+![A figure that shows the relationship between a parent record and its children.](https://developer.apple.com/tutorials/images/com.apple.cloudkit/media-1965777@2x.png)
 
 The following code sample shows how to create the reference object for each item record and configure it to point at the list record:
 
@@ -64,9 +69,9 @@ CKReference* ref = [[CKReference alloc] initWithRecord:listRecord action:CKRefer
 itemRecord[@"owningList"] = ref;
 ```
 
-An ownership type of organization is useful even if one object doesn’t explicitly own another. Ownership helps establish the relationships between records and how you search for them in the database. Ownership doesn’t require the deletion of the owned records when you delete their owner record. You can prevent such deletions by specifying the [`CKRecord.ReferenceAction.none`](ckrecord/referenceaction/none.md) action when you create a `CKReference` object.
+An ownership type of organization is useful even if one object doesn’t explicitly own another. Ownership helps establish the relationships between records and how you search for them in the database. Ownership doesn’t require the deletion of the owned records when you delete their owner record. You can prevent such deletions by specifying the [`CKRecord.ReferenceAction.none`](./referenceaction/none.md) action when you create a `CKReference` object.
 
-> **Note**: When you’re creating a `CKReference` between two objects and you have both objects in memory, be sure to fetch the object on the receiving end of the relationship. This is due to the creation of the `CKReference` between the two objects altering the [`recordChangeTag`](ckrecord/recordchangetag.md) of the receiving object on the server.
+> **Note**: When you’re creating a `CKReference` between two objects and you have both objects in memory, be sure to fetch the object on the receiving end of the relationship. This is due to the creation of the `CKReference` between the two objects altering the [`recordChangeTag`](./recordchangetag.md) of the receiving object on the server.
 
 ###### Searching for Related Records
 
@@ -109,55 +114,56 @@ CKQueryOperation *queryOp = [[CKQueryOperation alloc] initWithQuery:query];
 ## Topics
 
 ### Creating a Reference
-- [init(recordID: CKRecord.ID, action: CKRecord.ReferenceAction)](ckrecord/reference/init(recordid:action:).md)
+- [init(recordID: CKRecord.ID, action: CKRecord.ReferenceAction)](./reference/init%28recordid,action%29.md)
   Creates a reference object that points to the record with the specified ID.
-- [convenience init(record: CKRecord, action: CKRecord.ReferenceAction)](ckrecord/reference/init(record:action:).md)
+- [convenience init(record: CKRecord, action: CKRecord.ReferenceAction)](./reference/init%28record,action%29.md)
   Creates a reference object that points to the specified record object.
-- [CKRecord.Reference.Action](ckrecord/reference/action-swift.typealias.md)
+- [CKRecord.Reference.Action](./reference/action-swift.typealias.md)
   A type that represents additional actions that occur when deleting references.
 ### Getting the Reference Attributes
-- [var action: CKRecord.ReferenceAction](ckrecord/reference/action-swift.property.md)
+- [var action: CKRecord.ReferenceAction](./reference/action-swift.property.md)
   The ownership behavior for the records.
-- [var recordID: CKRecord.ID](ckrecord/reference/recordid.md)
+- [var recordID: CKRecord.ID](./reference/recordid.md)
   The ID of the referenced record.
-- [CKRecord.ReferenceAction](ckrecord/referenceaction.md)
+- [CKRecord.ReferenceAction](./referenceaction.md)
   Constants that indicate the behavior when deleting a referenced record.
 ### Initializers
-- [init?(coder: NSCoder)](ckrecord/reference/init(coder:).md)
+- [init?(coder: NSCoder)](./reference/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CKRecordValueProtocol](ckrecordvalueprotocol.md)
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CKRecordValueProtocol](../ckrecordvalueprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCoding](../../Foundation/nscoding.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../../Foundation/nssecurecoding.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Designing and Creating a CloudKit Database](designing-and-creating-a-cloudkit-database.md)
+### Schemas
+- [Designing and Creating a CloudKit Database](../designing-and-creating-a-cloudkit-database.md)
   Create a schema to store your app’s objects as records in iCloud using CloudKit.
-- [Managing iCloud Containers with CloudKit Database App](managing-icloud-containers-with-cloudkit-database-app.md)
+- [Managing iCloud Containers with CloudKit Database App](../managing-icloud-containers-with-cloudkit-database-app.md)
   Inspect and modify the schema and data for your app’s iCloud container.
-- [class CKRecordZone](ckrecordzone.md)
+- [class CKRecordZone](../ckrecordzone.md)
   A database partition that contains related records.
-- [class CKRecord](ckrecord.md)
+- [class CKRecord](../ckrecord.md)
   A collection of key-value pairs that store your app’s data.
-- [class CKAsset](ckasset.md)
+- [class CKAsset](../ckasset.md)
   An external file that belongs to a record.
-- [Integrating a Text-Based Schema into Your Workflow](integrating-a-text-based-schema-into-your-workflow.md)
+- [Integrating a Text-Based Schema into Your Workflow](../integrating-a-text-based-schema-into-your-workflow.md)
   Define and update your schema with the CloudKit Schema Language.
 
 

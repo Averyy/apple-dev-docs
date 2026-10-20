@@ -1,17 +1,22 @@
 # knobThickness
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The thickness of the slider knob, in pixels.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var knobThickness: CGFloat { get }
+```
+
+```objc
+@property (readonly) CGFloat knobThickness;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ The thickness is defined to be the extent of the knob along the long dimension o
 
 ## See Also
 
-- [var isVertical: Bool](nsslidercell/isvertical.md)
+### Managing Cell Appearance
+- [var isVertical: Bool](./isvertical.md)
   An integer indicating the orientation (vertical or horizontal) of the slider.
 
 

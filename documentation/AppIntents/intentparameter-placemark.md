@@ -1,40 +1,42 @@
 # Placemarks
 
-**Framework**: App Intents
+**Framework**: App Intents  
+**Role**: API Collection
 
 Configure the details for parameter variables that contain a geographic location.
 
 ## Topics
 
 ### Creating an intent parameter
-- [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, displayStyle: IntentParameter<Value>.PlacemarkDisplayStyle, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](intentparameter/init(title:description:displaystyle:requestvaluedialog:inputconnectionbehavior:).md)
+- [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, displayStyle: IntentParameter<Value>.PlacemarkDisplayStyle, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](./intentparameter/init%28title,description,displaystyle,requestvaluedialog,inputconnectionbehavior%29.md)
   Creates an app intent parameter.
-- [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, displayStyle: IntentParameter<Value>.PlacemarkDisplayStyle, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](intentparameter/init(title:description:displaystyle:requestvaluedialog:inputconnectionbehavior:optionsprovider:).md)
+- [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, displayStyle: IntentParameter<Value>.PlacemarkDisplayStyle, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](./intentparameter/init%28title,description,displaystyle,requestvaluedialog,inputconnectionbehavior,optionsprovider%29.md)
   Creates an app intent parameter with a list of selectable options.
-- [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, displayStyle: IntentParameter<Value>.PlacemarkDisplayStyle, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider, resolvers: () -> Spec)](intentparameter/init(title:description:displaystyle:requestvaluedialog:inputconnectionbehavior:optionsprovider:resolvers:).md)
+- [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, displayStyle: IntentParameter<Value>.PlacemarkDisplayStyle, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider, resolvers: () -> Spec)](./intentparameter/init%28title,description,displaystyle,requestvaluedialog,inputconnectionbehavior,optionsprovider,resolvers%29.md)
   Creates an app intent parameter with a list of selectable options that can convert the selected value.
-- [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, displayStyle: IntentParameter<Value>.PlacemarkDisplayStyle, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](intentparameter/init(title:description:displaystyle:requestvaluedialog:inputconnectionbehavior:resolvers:).md)
+- [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, displayStyle: IntentParameter<Value>.PlacemarkDisplayStyle, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](./intentparameter/init%28title,description,displaystyle,requestvaluedialog,inputconnectionbehavior,resolvers%29.md)
   Creates an app intent parameter that can convert the selected value.
 ### Accessing the display style
-- [var displayStyle: IntentParameter<Value>.PlacemarkDisplayStyle?](intentparameter/displaystyle.md)
-- [IntentParameter.PlacemarkDisplayStyle](intentparameter/placemarkdisplaystyle.md)
+- [var displayStyle: IntentParameter<Value>.PlacemarkDisplayStyle?](./intentparameter/displaystyle.md)
+- [IntentParameter.PlacemarkDisplayStyle](./intentparameter/placemarkdisplaystyle.md)
   Describes a location’s display style in Shortcuts and Siri Suggestions.
 
 ## See Also
 
-- [Dates](intentparameter-date.md)
+### Creating an intent parameter for common framework types
+- [Dates](./intentparameter-date.md)
   Configure the details for parameter variables that contain date values.
-- [Date components](intentparameter-date-components.md)
+- [Date components](./intentparameter-date-components.md)
   Configure the details for parameter variables that contain date components.
-- [Files](intentparameter-file.md)
+- [Files](./intentparameter-file.md)
   Configure the details for parameter variables that contain files.
-- [Currencies](intentparameter-currencies.md)
+- [Currencies](./intentparameter-currencies.md)
   Configure the details for parameter variables that contain currency values.
-- [Payments](intentparameter-payments.md)
+- [Payments](./intentparameter-payments.md)
   Configure the details for parameter variables that contain payment-related values.
-- [People](intentparameter-person.md)
+- [People](./intentparameter-person.md)
   Configure the details for parameter variables that contain references to people.
-- [Measurements](intentparameter-measurements.md)
+- [Measurements](./intentparameter-measurements.md)
   Configure the details for parameter variables that contain, among others, temperature, mass, speed, energy, duration, length, and volume values.
 
 

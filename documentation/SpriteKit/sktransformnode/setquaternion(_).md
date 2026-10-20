@@ -1,7 +1,8 @@
 # setQuaternion(_:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -18,12 +19,17 @@
 func setQuaternion(_ quaternion: simd_quatf)
 ```
 
+```objc
+- (void) setQuaternion:(simd_quatf) quaternion;
+```
+
 ## See Also
 
-- [var xRotation: CGFloat](sktransformnode/xrotation.md)
-- [var yRotation: CGFloat](sktransformnode/yrotation.md)
-- [func setEulerAngles(vector_float3)](sktransformnode/seteulerangles(_:).md)
-- [func setRotationMatrix(matrix_float3x3)](sktransformnode/setrotationmatrix(_:).md)
+### Rotating Child Nodes
+- [var xRotation: CGFloat](./xrotation.md)
+- [var yRotation: CGFloat](./yrotation.md)
+- [func setEulerAngles(vector_float3)](./seteulerangles%28_%29.md)
+- [func setRotationMatrix(matrix_float3x3)](./setrotationmatrix%28_%29.md)
 
 
 ---

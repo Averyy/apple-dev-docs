@@ -1,7 +1,8 @@
 # includeChildWindows
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that specifies whether the screenshot captures subwindows of the included apps and windows.
 
@@ -13,6 +14,10 @@ A Boolean that specifies whether the screenshot captures subwindows of the inclu
 
 ```swift
 var includeChildWindows: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL includeChildWindows;
 ```
 
 #### Discussion

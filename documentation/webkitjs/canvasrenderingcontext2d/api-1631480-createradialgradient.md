@@ -1,7 +1,8 @@
 # createRadialGradient
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Creates a radial gradient object using the cone defined by the specified starting and ending circles.
 
@@ -11,7 +12,7 @@ Creates a radial gradient object using the cone defined by the specified startin
 
 ## Declaration
 
-```swift
+```
 CanvasGradient createRadialGradient(
     float x0, 
     float y0, 
@@ -22,7 +23,7 @@ CanvasGradient createRadialGradient(
 );
 ```
 
-#### Return_value
+#### Return Value
 
 A radial gradient object.
 
@@ -41,9 +42,10 @@ You must add at least a starting and ending color stop to a radial gradient befo
 
 ## See Also
 
-- [createLinearGradient](canvasrenderingcontext2d/1630205-createlineargradient.md)
+### Creating Gradients and Patterns
+- [createLinearGradient](./api-1630205-createlineargradient.md)
   Creates a linear gradient object with a specified start point and a specified end point.
-- [createPattern](canvasrenderingcontext2d/1628866-createpattern.md)
+- [createPattern](./api-1628866-createpattern.md)
   Creates a pattern object using the specified image as a template. The pattern can be specified as repeating horizontally, vertically, both horizontally and vertically (the default), or not at all.
 
 

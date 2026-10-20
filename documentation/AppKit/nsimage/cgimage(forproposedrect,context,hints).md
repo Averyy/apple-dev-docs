@@ -1,7 +1,8 @@
 # cgImage(forProposedRect:context:hints:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Core Graphics image based on the contents of the current image object.
 
@@ -14,6 +15,10 @@ Returns a Core Graphics image based on the contents of the current image object.
 func cgImage(forProposedRect proposedDestRect: UnsafeMutablePointer<NSRect>?, context referenceContext: NSGraphicsContext?, hints: [NSImageRep.HintKey : Any]?) -> CGImage?
 ```
 
+```objc
+- (CGImageRef) CGImageForProposedRect:(NSRect *) proposedDestRect context:(NSGraphicsContext *) referenceContext hints:(NSDictionary<NSString *,id> *) hints;
+```
+
 #### Return Value
 
 A `CGImageRef`. This may be an existing `CGImage` if one is available. If not, a new `CGImage` is created.
@@ -22,7 +27,7 @@ A `CGImageRef`. This may be an existing `CGImage` if one is available. If not, a
 
 An `NSImage` is potentially resolution independent, and may have representations that allow it to draw well in many contexts.  A `CGImage` is more like a single pixel-based representation.   This method produces a snapshot of how the `NSImage` would draw if it was asked to draw in the proposed rectangle in the graphics context.
 
-All input parameters are optional.  They provide hints for how to choose among existing [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) objects, or how to create one if there isn’t already a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) available.  The parameters are only hints.
+All input parameters are optional.  They provide hints for how to choose among existing [`CGImage`](../../CoreGraphics/cgimage.md) objects, or how to create one if there isn’t already a [`CGImage`](../../CoreGraphics/cgimage.md) available.  The parameters are only hints.
 
 This method is typically called, not overridden.
 

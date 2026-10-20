@@ -1,11 +1,12 @@
 # CustomReflectable Implementations
 
-**Framework**: Create ML
+**Framework**: Create ML  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var customMirror: Mirror](mluntypedcolumn/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   A view of the column for Xcode Playgrounds and lldb.
 
 

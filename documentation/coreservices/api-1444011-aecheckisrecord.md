@@ -1,7 +1,8 @@
 # AECheckIsRecord(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Determines whether a descriptor is truly an `AERecord`.
 
@@ -14,7 +15,11 @@ Determines whether a descriptor is truly an `AERecord`.
 func AECheckIsRecord(_ theDesc: UnsafePointer<AEDesc>!) -> Bool
 ```
 
-#### Return_value
+```c
+Boolean AECheckIsRecord(const AEDesc *theDesc);
+```
+
+#### Return Value
 
 Returns `true` if the descriptor is an `AERecord` or an `AppleEvent`, `false` otherwise.
 
@@ -28,7 +33,8 @@ Thread safe starting in OS X v10.2.
 
 ## See Also
 
-- [func AEInitializeDesc(UnsafeMutablePointer<AEDesc>!)](1446047-aeinitializedesc.md)
+### Miscellaneous
+- [func AEInitializeDesc(UnsafeMutablePointer<AEDesc>!)](./api-1446047-aeinitializedesc.md)
   Initializes a new descriptor. 
 
 

@@ -1,18 +1,23 @@
 # timeStamp
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The observed time for the frame’s completion.
 
 **Availability**:
 - Mac Catalyst 14.0+
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 27.0
 
 ## Declaration
 
 ```swift
 var timeStamp: IOUSBHostTime
+```
+
+```c
+IOUSBHostTime timeStamp;
 ```
 
 #### Discussion
@@ -21,11 +26,12 @@ var timeStamp: IOUSBHostTime
 
 ## See Also
 
-- [var status: IOReturn](iousbhostisochronousframe/status.md)
+### Frame Structure
+- [var status: IOReturn](./status.md)
   The completion status for an individual frame.
-- [var requestCount: UInt32](iousbhostisochronousframe/requestcount.md)
+- [var requestCount: UInt32](./requestcount.md)
   The number of requested bytes to transfer for the frame.
-- [var completeCount: UInt32](iousbhostisochronousframe/completecount.md)
+- [var completeCount: UInt32](./completecount.md)
   The number of bytes that the system actually transferred for the frame.
 
 

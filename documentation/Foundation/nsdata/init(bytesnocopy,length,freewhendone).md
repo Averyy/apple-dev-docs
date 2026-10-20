@@ -1,7 +1,8 @@
 # init(bytesNoCopy:length:freeWhenDone:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly allocated data object by adding the given number of bytes from the given buffer.
 
@@ -20,21 +21,26 @@ Initializes a newly allocated data object by adding the given number of bytes fr
 init(bytesNoCopy bytes: UnsafeMutableRawPointer, length: Int, freeWhenDone b: Bool)
 ```
 
+```objc
+- (instancetype) initWithBytesNoCopy:(void *) bytes length:(NSUInteger) length freeWhenDone:(BOOL) b;
+```
+
 ## Parameters
 
-- `bytes`: A buffer containing data for the new object. If `flag` is [`true`](https://developer.apple.com/documentation/swift/true), `bytes` must point to a memory block allocated with `malloc`.
+- `bytes`: A buffer containing data for the new object. If `flag` is [`true`](../../Swift/true.md), `bytes` must point to a memory block allocated with `malloc`.
 - `length`: The number of bytes to hold from `bytes`. This value must not exceed the length of `bytes`.
-- `b`: If [`true`](https://developer.apple.com/documentation/swift/true), the returned object takes ownership of the `bytes` pointer and frees it on deallocation.
+- `b`: If [`true`](../../Swift/true.md), the returned object takes ownership of the `bytes` pointer and frees it on deallocation.
 
 ## See Also
 
-- [init(bytes: UnsafeRawPointer?, length: Int)](nsdata/init(bytes:length:).md)
+### Creating Data
+- [init(bytes: UnsafeRawPointer?, length: Int)](./init%28bytes,length%29.md)
   Initializes a data object filled with a given number of bytes copied from a given buffer.
-- [init(bytesNoCopy: UnsafeMutableRawPointer, length: Int)](nsdata/init(bytesnocopy:length:).md)
+- [init(bytesNoCopy: UnsafeMutableRawPointer, length: Int)](./init%28bytesnocopy,length%29.md)
   Initializes a data object filled with a given number of bytes of data from a given buffer.
-- [init(bytesNoCopy: UnsafeMutableRawPointer, length: Int, deallocator: ((UnsafeMutableRawPointer, Int) -> Void)?)](nsdata/init(bytesnocopy:length:deallocator:).md)
+- [init(bytesNoCopy: UnsafeMutableRawPointer, length: Int, deallocator: ((UnsafeMutableRawPointer, Int) -> Void)?)](./init%28bytesnocopy,length,deallocator%29.md)
   Initializes a data object filled with a given number of bytes of data from a given buffer, with a custom deallocator block.
-- [init(data: Data)](nsdata/init(data:).md)
+- [init(data: Data)](./init%28data%29.md)
   Initializes a data object with the contents of another data object.
 
 

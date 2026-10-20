@@ -1,7 +1,8 @@
 # value
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,7 +21,8 @@ var value: T
 
 ## See Also
 
-- [init(_:)](tupleview/init(_:).md)
+### Creating a tuple view
+- [init(_:)](./init%28_%29.md)
 
 
 ---

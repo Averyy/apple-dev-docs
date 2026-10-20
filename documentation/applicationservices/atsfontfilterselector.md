@@ -1,7 +1,8 @@
 # ATSFontFilterSelector
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,19 +14,25 @@
 struct ATSFontFilterSelector
 ```
 
+```c
+typedef enum ATSFontFilterSelector : unsigned int {
+    ...
+} ATSFontFilterSelector;
+```
+
 ## Topics
 
 ### Initializers
-- [init(UInt32)](atsfontfilterselector/1461500-init.md)
-- [init(rawValue: UInt32)](atsfontfilterselector/1464100-init.md)
+- [init(UInt32)](./atsfontfilterselector/api-1461500-init.md)
+- [init(rawValue: UInt32)](./atsfontfilterselector/api-1464100-init.md)
 ### Instance Properties
-- [var rawValue: UInt32](atsfontfilterselector/1462941-rawvalue.md)
+- [var rawValue: UInt32](./atsfontfilterselector/api-1462941-rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
 
 
 ---

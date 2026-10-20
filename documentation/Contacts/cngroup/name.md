@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the group.
 
@@ -19,9 +20,22 @@ The name of the group.
 var name: String { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSString * name;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSString * name;
+```
+
 ## See Also
 
-- [var identifier: String](cngroup/identifier.md)
+### Getting the Group Information
+- [var identifier: String](./identifier.md)
   The unique identifier for a group on the device.
 
 

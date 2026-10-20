@@ -1,7 +1,8 @@
 # isLoading
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the current geocoding request is in a loading state.
 
@@ -20,9 +21,14 @@ A Boolean value that indicates whether the current geocoding request is in a loa
 var isLoading: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isLoading) BOOL loading;
+```
+
 ## See Also
 
-- [var isCancelled: Bool](mkgeocodingrequest/iscancelled.md)
+### Getting the geocoder’s state
+- [var isCancelled: Bool](./iscancelled.md)
   A Boolean value that indicates whether the current geocoding request is in a cancelled state.
 
 

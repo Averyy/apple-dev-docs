@@ -1,7 +1,8 @@
 # VNRecognizedPoints3DObservation
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An observation that provides the 3D points for a request.
 
@@ -19,55 +20,60 @@ An observation that provides the 3D points for a request.
 class VNRecognizedPoints3DObservation
 ```
 
+```objc
+@interface VNRecognizedPoints3DObservation : VNObservation
+```
+
 ## Topics
 
 ### Inspecting the Observation
-- [var availableKeys: [VNRecognizedPointKey]](vnrecognizedpoints3dobservation/availablekeys.md)
+- [var availableKeys: [VNRecognizedPointKey]](./vnrecognizedpoints3dobservation/availablekeys.md)
   The available point keys in the observation.
-- [var availableGroupKeys: [VNRecognizedPointGroupKey]](vnrecognizedpoints3dobservation/availablegroupkeys.md)
+- [var availableGroupKeys: [VNRecognizedPointGroupKey]](./vnrecognizedpoints3dobservation/availablegroupkeys.md)
   The available point group keys in the observation.
-- [func recognizedPoint(forKey: VNRecognizedPointKey) throws -> VNRecognizedPoint3D](vnrecognizedpoints3dobservation/recognizedpoint(forkey:).md)
+- [func recognizedPoint(forKey: VNRecognizedPointKey) throws -> VNRecognizedPoint3D](./vnrecognizedpoints3dobservation/recognizedpoint%28forkey%29.md)
   Returns a point for a key you specify.
-- [func recognizedPoints(forGroupKey: VNRecognizedPointGroupKey) throws -> [VNRecognizedPointKey : VNRecognizedPoint3D]](vnrecognizedpoints3dobservation/recognizedpoints(forgroupkey:).md)
+- [func recognizedPoints(forGroupKey: VNRecognizedPointGroupKey) throws -> [VNRecognizedPointKey : VNRecognizedPoint3D]](./vnrecognizedpoints3dobservation/recognizedpoints%28forgroupkey%29.md)
   Returns a point for a group key you specify.
 
 ## Relationships
 
 ### Inherits From
-- [VNObservation](vnobservation.md)
+- [VNObservation](./vnobservation.md)
 ### Inherited By
-- [VNHumanBodyPose3DObservation](vnhumanbodypose3dobservation.md)
+- [VNHumanBodyPose3DObservation](./vnhumanbodypose3dobservation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [VNRequestRevisionProviding](vnrequestrevisionproviding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [VNRequestRevisionProviding](./vnrequestrevisionproviding.md)
 
 ## See Also
 
-- [Identifying 3D human body poses in images](identifying-3d-human-body-poses-in-images.md)
+### 3D body pose detection
+- [Identifying 3D human body poses in images](./identifying-3d-human-body-poses-in-images.md)
   Detect three-dimensional human body poses using the Vision framework.
-- [Detecting human body poses in 3D with Vision](detecting-human-body-poses-in-3d-with-vision.md)
+- [Detecting human body poses in 3D with Vision](./detecting-human-body-poses-in-3d-with-vision.md)
   Render skeletons of 3D body pose points in a scene overlaying the input image.
-- [class VNDetectHumanBodyPose3DRequest](vndetecthumanbodypose3drequest.md)
+- [class VNDetectHumanBodyPose3DRequest](./vndetecthumanbodypose3drequest.md)
   A request that detects points on human bodies in 3D space, relative to the camera.
-- [class VNHumanBodyPose3DObservation](vnhumanbodypose3dobservation.md)
+- [class VNHumanBodyPose3DObservation](./vnhumanbodypose3dobservation.md)
   An observation that provides the 3D body points the request recognizes.
-- [class VNHumanBodyRecognizedPoint3D](vnhumanbodyrecognizedpoint3d.md)
+- [class VNHumanBodyRecognizedPoint3D](./vnhumanbodyrecognizedpoint3d.md)
   A recognized 3D point that includes a parent joint.
-- [class VNPoint3D](vnpoint3d.md)
+- [class VNPoint3D](./vnpoint3d.md)
   An object that represents a 3D point in an image.
-- [class VNRecognizedPoint3D](vnrecognizedpoint3d.md)
+- [class VNRecognizedPoint3D](./vnrecognizedpoint3d.md)
   A 3D point that includes an identifier to the point.
-- [VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname.md)
+- [VNHumanBodyPose3DObservation.JointName](./vnhumanbodypose3dobservation/jointname.md)
   The joint names for a 3D body pose.
-- [VNHumanBodyPose3DObservation.JointsGroupName](vnhumanbodypose3dobservation/jointsgroupname.md)
+- [VNHumanBodyPose3DObservation.JointsGroupName](./vnhumanbodypose3dobservation/jointsgroupname.md)
   The joint group names for a 3D body pose.
 
 

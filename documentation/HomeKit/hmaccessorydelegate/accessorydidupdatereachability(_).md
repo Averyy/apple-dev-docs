@@ -1,7 +1,8 @@
 # accessoryDidUpdateReachability(_:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the delegate when the reachability of the accessory changes.
 
@@ -19,9 +20,13 @@ Informs the delegate when the reachability of the accessory changes.
 optional func accessoryDidUpdateReachability(_ accessory: HMAccessory)
 ```
 
+```objc
+- (void) accessoryDidUpdateReachability:(HMAccessory *) accessory;
+```
+
 #### Discussion
 
-Accessories expose their reachability via the [`isReachable`](hmaccessory/isreachable.md) property.
+Accessories expose their reachability via the [`isReachable`](../hmaccessory/isreachable.md) property.
 
 ## Parameters
 
@@ -29,21 +34,22 @@ Accessories expose their reachability via the [`isReachable`](hmaccessory/isreac
 
 ## See Also
 
-- [func accessoryDidUpdateName(HMAccessory)](hmaccessorydelegate/accessorydidupdatename(_:).md)
+### Observing accessories
+- [func accessoryDidUpdateName(HMAccessory)](./accessorydidupdatename%28_%29.md)
   Informs the delegate when the name of the accessory is updated.
-- [func accessoryDidUpdateServices(HMAccessory)](hmaccessorydelegate/accessorydidupdateservices(_:).md)
+- [func accessoryDidUpdateServices(HMAccessory)](./accessorydidupdateservices%28_%29.md)
   Informs the delegate when the services on the accessory have been updated.
-- [func accessory(HMAccessory, didUpdateNameFor: HMService)](hmaccessorydelegate/accessory(_:didupdatenamefor:).md)
+- [func accessory(HMAccessory, didUpdateNameFor: HMService)](./accessory%28_,didupdatenamefor%29.md)
   Informs the delegate when the name of a service is updated.
-- [func accessory(HMAccessory, service: HMService, didUpdateValueFor: HMCharacteristic)](hmaccessorydelegate/accessory(_:service:didupdatevaluefor:).md)
+- [func accessory(HMAccessory, service: HMService, didUpdateValueFor: HMCharacteristic)](./accessory%28_,service,didupdatevaluefor%29.md)
   Informs the delegate of a change in value of a characteristic.
-- [func accessory(HMAccessory, didUpdateAssociatedServiceTypeFor: HMService)](hmaccessorydelegate/accessory(_:didupdateassociatedservicetypefor:).md)
+- [func accessory(HMAccessory, didUpdateAssociatedServiceTypeFor: HMService)](./accessory%28_,didupdateassociatedservicetypefor%29.md)
   Informs the delegate when the associated service type of a service is modified.
-- [func accessory(HMAccessory, didAdd: HMAccessoryProfile)](hmaccessorydelegate/accessory(_:didadd:).md)
+- [func accessory(HMAccessory, didAdd: HMAccessoryProfile)](./accessory%28_,didadd%29.md)
   Informs the delegate when a profile is added to an accessory.
-- [func accessory(HMAccessory, didRemove: HMAccessoryProfile)](hmaccessorydelegate/accessory(_:didremove:).md)
+- [func accessory(HMAccessory, didRemove: HMAccessoryProfile)](./accessory%28_,didremove%29.md)
   Informs the delegate when a profile is removed from an accessory.
-- [func accessory(HMAccessory, didUpdateFirmwareVersion: String)](hmaccessorydelegate/accessory(_:didupdatefirmwareversion:).md)
+- [func accessory(HMAccessory, didUpdateFirmwareVersion: String)](./accessory%28_,didupdatefirmwareversion%29.md)
   Informs the delegate when firmwareVersion has been changed for an accessory.
 
 

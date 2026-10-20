@@ -1,7 +1,8 @@
 # kCTErrorDomainPOSIX
 
 **Framework**: Core Telephony  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain value for errors from POSIX.
 
@@ -17,15 +18,20 @@ The domain value for errors from POSIX.
 var kCTErrorDomainPOSIX: Int { get }
 ```
 
+```c
+kCTErrorDomainPOSIX
+```
+
 #### Discussion
 
 POSIX error codes are listed in `sys/errno.h`.
 
 ## See Also
 
-- [var kCTErrorDomainMach: Int](kcterrordomainmach.md)
+### Error Domains
+- [var kCTErrorDomainMach: Int](./kcterrordomainmach.md)
   The domain value for errors reported by Mach.
-- [var kCTErrorDomainNoError: Int](kcterrordomainnoerror.md)
+- [var kCTErrorDomainNoError: Int](./kcterrordomainnoerror.md)
   The domain value indicating there is no error.
 
 

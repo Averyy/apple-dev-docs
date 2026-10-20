@@ -1,7 +1,8 @@
 # MapKitLibraryLoadEvent
 
 **Framework**: MapKit JS  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An event that occurs when the MapKit JS library is loaded or fails loading.
 
@@ -10,26 +11,27 @@ An event that occurs when the MapKit JS library is loaded or fails loading.
 
 ## Declaration
 
-```swift
+```
 class MapKitLibraryLoadEvent extends Event
 ```
 
 ## Topics
 
 ### Instance Properties
-- [libraries](mapkitlibraryloadevent/libraries.md)
+- [libraries](./mapkitlibraryloadevent/libraries.md)
   The libraries that the framework loaded or failed to load.
 
 ## Relationships
 
 ### Inherits From
-- [Event](doc://com.apple.mapkitjs/__unknown__/Event)
+- Event
 
 ## See Also
 
-- [class MapKitConfigurationChangeEvent](mapkitconfigurationchangeevent.md)
+### Events
+- [class MapKitConfigurationChangeEvent](./mapkitconfigurationchangeevent.md)
   An event that represents a configuration change.
-- [class MapKitConfigurationErrorEvent](mapkitconfigurationerrorevent.md)
+- [class MapKitConfigurationErrorEvent](./mapkitconfigurationerrorevent.md)
   An event that represents a configuration error.
 
 

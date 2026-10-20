@@ -1,7 +1,8 @@
 # kCGImagePropertyGPSImgDirection
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The direction of the image.
 
@@ -20,9 +21,14 @@ The direction of the image.
 let kCGImagePropertyGPSImgDirection: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyGPSImgDirection;
+```
+
 ## See Also
 
-- [let kCGImagePropertyGPSImgDirectionRef: CFString](kcgimagepropertygpsimgdirectionref.md)
+### Image Orientation
+- [let kCGImagePropertyGPSImgDirectionRef: CFString](./kcgimagepropertygpsimgdirectionref.md)
   The reference for the direction of the image.
 
 

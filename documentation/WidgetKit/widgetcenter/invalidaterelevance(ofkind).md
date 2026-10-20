@@ -1,7 +1,8 @@
 # invalidateRelevance(ofKind:)
 
 **Framework**: WidgetKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Mark the relevance for a kind as invalid.
 

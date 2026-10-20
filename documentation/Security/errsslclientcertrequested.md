@@ -1,7 +1,8 @@
 # errSSLClientCertRequested
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The server has requested a client certificate.
 
@@ -18,6 +19,10 @@ The server has requested a client certificate.
 
 ```swift
 var errSSLClientCertRequested: OSStatus { get }
+```
+
+```c
+errSSLClientCertRequested
 ```
 
 

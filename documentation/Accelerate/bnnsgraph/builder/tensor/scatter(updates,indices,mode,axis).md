@@ -1,7 +1,8 @@
 # scatter(updates:indices:mode:axis:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a scatter operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a scatter operation to the current graph.
 ```swift
 func scatter(updates: BNNSGraph.Builder.Tensor<T>, indices: some BNNSGraph.Builder.OperationParameter<Int32>, mode: BNNSGraph.Builder.ScatterMode, axis: Int) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 ## Parameters
 

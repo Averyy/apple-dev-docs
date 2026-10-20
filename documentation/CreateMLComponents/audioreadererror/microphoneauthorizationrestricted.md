@@ -1,7 +1,8 @@
 # AudioReaderError.microphoneAuthorizationRestricted
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates that the microphone authorization status is restricted. The user is not allowed to access audio capture devices.
 
@@ -21,9 +22,10 @@ case microphoneAuthorizationRestricted
 
 ## See Also
 
-- [AudioReaderError.microphoneAuthorizationDenied](audioreadererror/microphoneauthorizationdenied.md)
+### Analyzing the error
+- [AudioReaderError.microphoneAuthorizationDenied](./microphoneauthorizationdenied.md)
   An error that indicates that the microphone authorization status is denied. The user has explicitly denied permission for audio capture.
-- [AudioReaderError.sourceDeviceNotAvailable](audioreadererror/sourcedevicenotavailable.md)
+- [AudioReaderError.sourceDeviceNotAvailable](./sourcedevicenotavailable.md)
   An error that indicates that no source devices are available.
 
 

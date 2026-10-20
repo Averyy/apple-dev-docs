@@ -1,7 +1,8 @@
 # supportedMinimumNearPlaneDistance
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum distance in meters to the layer’s near projection plane.
 

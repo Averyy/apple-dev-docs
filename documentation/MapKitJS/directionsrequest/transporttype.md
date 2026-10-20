@@ -1,7 +1,8 @@
 # transportType
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The mode of transportation the directions apply to.
 
@@ -10,7 +11,7 @@ The mode of transportation the directions apply to.
 
 ## Declaration
 
-```swift
+```
 transportType?: TransportType;
 ```
 
@@ -18,23 +19,24 @@ transportType?: TransportType;
 
 You can use this property to specify whether you want directions suited to a particular type of transportation. For example, you can specify if you want walking directions or driving directions.
 
-The default value of this property is [`Automobile`](transporttype/automobile.md).
+The default value of this property is [`Automobile`](../transporttype/automobile.md).
 
 ## See Also
 
-- [origin](directionsrequest/origin.md)
+### Directions request
+- [origin](./origin.md)
   The starting point for routing directions.
-- [destination](directionsrequest/destination.md)
+- [destination](./destination.md)
   The end point for routing directions.
-- [arrivalDate](directionsrequest/arrivaldate.md)
+- [arrivalDate](./arrivaldate.md)
   The arrival date for the trip.
-- [departureDate](directionsrequest/departuredate.md)
+- [departureDate](./departuredate.md)
   The departure date for the trip.
-- [requestsAlternateRoutes](directionsrequest/requestsalternateroutes.md)
+- [requestsAlternateRoutes](./requestsalternateroutes.md)
   A Boolean value that indicates whether the server returns multiple routes when they’re available.
-- [avoidTolls](directionsrequest/avoidtolls.md)
+- [avoidTolls](./avoidtolls.md)
   A Boolean value that prioritizes routes to avoid tolls.
-- [signal](directionsrequest/signal.md)
+- [signal](./signal.md)
   A signal object allowing you to cancel the request.
 
 

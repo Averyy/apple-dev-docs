@@ -1,10 +1,11 @@
 # ODAttributeMap
 
 **Framework**: Open Directory  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 10.9+
 
 ## Declaration
@@ -13,55 +14,60 @@
 class ODAttributeMap
 ```
 
+```objc
+@interface ODAttributeMap : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [convenience init!(staticValue: String!)](odattributemap/init(staticvalue:).md)
-- [convenience init!(value: String!)](odattributemap/init(value:).md)
+- [convenience init!(staticValue: String!)](./odattributemap/init%28staticvalue%29.md)
+- [convenience init!(value: String!)](./odattributemap/init%28value%29.md)
 ### Instance Properties
-- [var customAttributes: [Any]!](odattributemap/customattributes-swift.property.md)
-- [var customQueryFunction: String!](odattributemap/customqueryfunction-swift.property.md)
-- [var customTranslationFunction: String!](odattributemap/customtranslationfunction-swift.property.md)
-- [var value: String!](odattributemap/value-swift.property.md)
+- [var customAttributes: [Any]!](./odattributemap/customattributes-swift.property.md)
+- [var customQueryFunction: String!](./odattributemap/customqueryfunction-swift.property.md)
+- [var customTranslationFunction: String!](./odattributemap/customtranslationfunction-swift.property.md)
+- [var value: String!](./odattributemap/value-swift.property.md)
 ### Instance Methods
-- [func setStaticValue(String!)](odattributemap/setstaticvalue(_:).md)
-- [func setVariableSubstitution(String!)](odattributemap/setvariablesubstitution(_:).md)
+- [func setStaticValue(String!)](./odattributemap/setstaticvalue%28_%29.md)
+- [func setVariableSubstitution(String!)](./odattributemap/setvariablesubstitution%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class ODConfiguration](odconfiguration.md)
-- [class ODContext](odcontext.md)
+### Classes
+- [class ODConfiguration](./odconfiguration.md)
+- [class ODContext](./odcontext.md)
   An Open Directory context type.
-- [class ODMappings](odmappings.md)
-- [class ODModuleEntry](odmoduleentry.md)
-- [class ODNode](odnode.md)
+- [class ODMappings](./odmappings.md)
+- [class ODModuleEntry](./odmoduleentry.md)
+- [class ODNode](./odnode.md)
   An `ODNode` object serves as a Cocoa wrapper for an Open Directory node.
-- [class ODNodeRef](odnoderef.md)
+- [class ODNodeRef](./odnoderef.md)
   An Open Directory node type.
-- [class ODQuery](odquery.md)
+- [class ODQuery](./odquery.md)
   An `ODQuery` object serves as a Cocoa wrapper for an Open Directory query.
-- [class ODQueryRef](odqueryref.md)
+- [class ODQueryRef](./odqueryref.md)
   An Open Directory query type.
-- [class ODRecord](odrecord.md)
+- [class ODRecord](./odrecord.md)
   An `ODRecord` object serves as a Cocoa wrapper for an Open Directory record.
-- [class ODRecordMap](odrecordmap.md)
-- [class ODRecordRef](odrecordref.md)
+- [class ODRecordMap](./odrecordmap.md)
+- [class ODRecordRef](./odrecordref.md)
   An Open Directory record type.
-- [class ODSession](odsession.md)
+- [class ODSession](./odsession.md)
   An `ODSession` object serves as a Cocoa wrapper for an Open Directory session.
-- [class ODSessionRef](odsessionref.md)
+- [class ODSessionRef](./odsessionref.md)
   An Open Directory session type.
 
 

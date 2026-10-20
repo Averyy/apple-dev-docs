@@ -1,7 +1,8 @@
 # MLWordEmbedding
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A map of strings in a vector space that enable your app to find similar strings by looking at a string’s neighbors.
 
@@ -16,7 +17,7 @@ struct MLWordEmbedding
 
 #### Overview
 
-Use an [`MLWordEmbedding`](mlwordembedding.md) to configure and save a word embedding to a file, which you then add to your project in Xcode. Your project uses that word embedding file at runtime to create an [`NLEmbedding`](https://developer.apple.com/documentation/naturallanguage/nlembedding) instance, which finds similar strings based on the proximity of their vectors.
+Use an [`MLWordEmbedding`](./mlwordembedding.md) to configure and save a word embedding to a file, which you then add to your project in Xcode. Your project uses that word embedding file at runtime to create an [`NLEmbedding`](../NaturalLanguage/nlembedding.md) instance, which finds similar strings based on the proximity of their vectors.
 
 You configure a word embedding with a dictionary, keyed by strings which make up the *vocabulary* of the word embedding. The value for each string is an array of doubles, which represents a vector. The length of the arrays is arbitrary but all arrays in a word embedding must be the same length. The length of the arrays determine the number of dimensions in the vector space. For example, the following listing creates a word embedding with four dimensions and a vocabulary of two strings.
 
@@ -27,7 +28,7 @@ let wordEmbedding = try! MLWordEmbedding(dictionary: [
 ])
 ```
 
-Once you’ve configured an [`MLWordEmbedding`](mlwordembedding.md), save it to an `.mlmodel` file to include in your app.
+Once you’ve configured an [`MLWordEmbedding`](./mlwordembedding.md), save it to an `.mlmodel` file to include in your app.
 
 ```swift
 try wordEmbedding.write(toFile: "~/Desktop/WordEmbedding.mlmodel")
@@ -38,66 +39,67 @@ A word embedding file can efficiently store many strings and their vectors.
 ## Topics
 
 ### Creating a word embedding
-- [init(dictionary: [String : [Double]], parameters: MLWordEmbedding.ModelParameters) throws](mlwordembedding/init(dictionary:parameters:).md)
+- [init(dictionary: [String : [Double]], parameters: MLWordEmbedding.ModelParameters) throws](./mlwordembedding/init%28dictionary,parameters%29.md)
   Creates a word embedding.
-- [MLWordEmbedding.ModelParameters](mlwordembedding/modelparameters-swift.struct.md)
+- [MLWordEmbedding.ModelParameters](./mlwordembedding/modelparameters-swift.struct.md)
   The model configuration parameters.
-- [let modelParameters: MLWordEmbedding.ModelParameters](mlwordembedding/modelparameters-swift.property.md)
+- [let modelParameters: MLWordEmbedding.ModelParameters](./mlwordembedding/modelparameters-swift.property.md)
   The model configuration parameters.
 ### Testing a word embedding
-- [func prediction(from: String, maxCount: Int, maxDistance: Double, distanceType: NLDistanceType) throws -> [(text: String, distance: Double)]](mlwordembedding/prediction(from:maxcount:maxdistance:distancetype:).md)
+- [func prediction(from: String, maxCount: Int, maxDistance: Double, distanceType: NLDistanceType) throws -> [(text: String, distance: Double)]](./mlwordembedding/prediction%28from,maxcount,maxdistance,distancetype%29.md)
   Predicts neighbors.
-- [func distance(between: String, and: String, distanceType: NLDistanceType) -> Double](mlwordembedding/distance(between:and:distancetype:).md)
+- [func distance(between: String, and: String, distanceType: NLDistanceType) -> Double](./mlwordembedding/distance%28between,and,distancetype%29.md)
   Calculates the distance between two strings in the vocabulary space.
-- [enum NLDistanceType](../naturallanguage/nldistancetype.md)
+- [enum NLDistanceType](../NaturalLanguage/nldistancetype.md)
   The means of calculating a distance between two locations in a text embedding.
-- [func contains(String) -> Bool](mlwordembedding/contains(_:).md)
+- [func contains(String) -> Bool](./mlwordembedding/contains%28_%29.md)
   Returns a Boolean value indicating whether the vocabulary contains the given string.
-- [func vector(for: String) -> [Double]?](mlwordembedding/vector(for:).md)
+- [func vector(for: String) -> [Double]?](./mlwordembedding/vector%28for%29.md)
   Accesses the vector associated with the given string in the vocabulary.
 ### Saving a word embedding
-- [func write(to: URL, metadata: MLModelMetadata?) throws](mlwordembedding/write(to:metadata:).md)
+- [func write(to: URL, metadata: MLModelMetadata?) throws](./mlwordembedding/write%28to,metadata%29.md)
   Exports the word embedding as a Core ML model file at the specified URL.
-- [func write(toFile: String, metadata: MLModelMetadata?) throws](mlwordembedding/write(tofile:metadata:).md)
+- [func write(toFile: String, metadata: MLModelMetadata?) throws](./mlwordembedding/write%28tofile,metadata%29.md)
   Exports the word embedding as a Core ML model file at the specified file path.
 ### Describing a word embedding
-- [let dimension: Int](mlwordembedding/dimension.md)
+- [let dimension: Int](./mlwordembedding/dimension.md)
   The number of dimensions in the vocabulary embedding space.
-- [let vocabularySize: Int](mlwordembedding/vocabularysize.md)
+- [let vocabularySize: Int](./mlwordembedding/vocabularysize.md)
   The number of strings in the vocabulary.
-- [var model: MLModel](mlwordembedding/model.md)
+- [var model: MLModel](./mlwordembedding/model.md)
   The word embedding contained within a Core ML model file.
-- [var description: String](mlwordembedding/description.md)
+- [var description: String](./mlwordembedding/description.md)
   A text representation of the word embedding.
-- [var debugDescription: String](mlwordembedding/debugdescription.md)
+- [var debugDescription: String](./mlwordembedding/debugdescription.md)
   A text representation of the word embedding that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlwordembedding/playgrounddescription.md)
+- [var playgroundDescription: Any](./mlwordembedding/playgrounddescription.md)
   A description of the word embedding shown in a playground.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mlwordembedding/customdebugstringconvertible-implementations.md)
-- [CustomPlaygroundDisplayConvertible Implementations](mlwordembedding/customplaygrounddisplayconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mlwordembedding/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./mlwordembedding/customdebugstringconvertible-implementations.md)
+- [CustomPlaygroundDisplayConvertible Implementations](./mlwordembedding/customplaygrounddisplayconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./mlwordembedding/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
 
 ## See Also
 
-- [Creating a text classifier model](creating-a-text-classifier-model.md)
+### Text models
+- [Creating a text classifier model](./creating-a-text-classifier-model.md)
   Train a machine learning model to classify natural language text.
-- [Creating a word tagger model](creating-a-word-tagger-model.md)
+- [Creating a word tagger model](./creating-a-word-tagger-model.md)
   Train a machine learning model to tag individual words in natural language text.
-- [struct MLTextClassifier](mltextclassifier.md)
+- [struct MLTextClassifier](./mltextclassifier.md)
   A model you train to classify natural language text.
-- [struct MLWordTagger](mlwordtagger.md)
+- [struct MLWordTagger](./mlwordtagger.md)
   A word-tagging model you train to classify natural language text at the word level.
-- [struct MLGazetteer](mlgazetteer.md)
+- [struct MLGazetteer](./mlgazetteer.md)
   A collection of terms and their labels, which augments a tagger that analyzes natural language text.
 
 

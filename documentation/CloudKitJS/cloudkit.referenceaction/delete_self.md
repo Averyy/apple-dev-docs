@@ -1,7 +1,8 @@
 # DELETE_SELF
 
 **Framework**: CloudKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 No action when a referenced record is deleted.
 
@@ -10,17 +11,18 @@ No action when a referenced record is deleted.
 
 ## Declaration
 
-```swift
+```
 const String DELETE_SELF;
 ```
 
 #### Discussion
 
-See [`CKRecord.ReferenceAction`](https://developer.apple.com/documentation/cloudkit/ckrecord/referenceaction) in CloudKit Framework Reference.
+See [`CKRecord.ReferenceAction`](../../CloudKit/ckrecord/referenceaction.md) in CloudKit Framework Reference.
 
 ## See Also
 
-- [NONE](cloudkit.referenceaction/none.md)
+### Enumeration Cases
+- [NONE](./none.md)
   Deletes a source record when the target record is deleted.
 
 

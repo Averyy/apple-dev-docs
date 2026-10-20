@@ -1,16 +1,21 @@
 # kAudioTransportManagerClassID
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var kAudioTransportManagerClassID: AudioClassID { get }
+```
+
+```c
+kAudioTransportManagerClassID
 ```
 
 

@@ -1,10 +1,11 @@
 # kBluetoothL2CAPConfigurationResultRejected
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kBluetoothL2CAPConfigurationResultRejected: BluetoothL2CAPConfigurationResult { get }
 ```
 
+```c
+kBluetoothL2CAPConfigurationResultRejected
+```
+
 ## See Also
 
-- [var kBluetoothL2CAPConfigurationResultSuccess: BluetoothL2CAPConfigurationResult](kbluetoothl2capconfigurationresultsuccess.md)
-- [var kBluetoothL2CAPConfigurationResultUnacceptableParams: BluetoothL2CAPConfigurationResult](kbluetoothl2capconfigurationresultunacceptableparams.md)
-- [var kBluetoothL2CAPConfigurationResultUnknownOptions: BluetoothL2CAPConfigurationResult](kbluetoothl2capconfigurationresultunknownoptions.md)
+### Constants
+- [var kBluetoothL2CAPConfigurationResultSuccess: BluetoothL2CAPConfigurationResult](./kbluetoothl2capconfigurationresultsuccess.md)
+- [var kBluetoothL2CAPConfigurationResultUnacceptableParams: BluetoothL2CAPConfigurationResult](./kbluetoothl2capconfigurationresultunacceptableparams.md)
+- [var kBluetoothL2CAPConfigurationResultUnknownOptions: BluetoothL2CAPConfigurationResult](./kbluetoothl2capconfigurationresultunknownoptions.md)
 
 
 ---

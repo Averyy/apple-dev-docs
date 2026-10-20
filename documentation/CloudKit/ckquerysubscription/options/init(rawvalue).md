@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a query subscription option using the specified raw value.
 

@@ -1,7 +1,8 @@
 # setDefaultApplication(at:toOpenURLsWithScheme:completion:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the default app to use when opening files of a specific scheme.
 
@@ -11,7 +12,15 @@ Sets the default app to use when opening files of a specific scheme.
 ## Declaration
 
 ```swift
+func setDefaultApplication(at applicationURL: URL, toOpenURLsWithScheme urlScheme: String, completion completionHandler: (@Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 func setDefaultApplication(at applicationURL: URL, toOpenURLsWithScheme urlScheme: String) async throws
+```
+
+```objc
+- (void) setDefaultApplicationAtURL:(NSURL *) applicationURL toOpenURLsWithScheme:(NSString *) urlScheme completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -26,11 +35,12 @@ This method sets the default app to open files of the type specified by the `url
 
 ## See Also
 
-- [func setDefaultApplication(at: URL, toOpenFileAt: URL, completion: (((any Error)?) -> Void)?)](nsworkspace/setdefaultapplication(at:toopenfileat:completion:).md)
+### Setting Default Application Information
+- [func setDefaultApplication(at: URL, toOpenFileAt: URL, completion: (((any Error)?) -> Void)?)](./setdefaultapplication%28at,toopenfileat,completion%29.md)
   Sets the default app to use when opening a specific file.
-- [func setDefaultApplication(at: URL, toOpen: UTType, completion: (((any Error)?) -> Void)?)](nsworkspace/setdefaultapplication(at:toopen:completion:).md)
+- [func setDefaultApplication(at: URL, toOpen: UTType, completion: (((any Error)?) -> Void)?)](./setdefaultapplication%28at,toopen,completion%29.md)
   Sets the default app to use when opening files of a specific content type.
-- [func setDefaultApplication(at: URL, toOpenContentTypeOfFileAt: URL, completion: (((any Error)?) -> Void)?)](nsworkspace/setdefaultapplication(at:toopencontenttypeoffileat:completion:).md)
+- [func setDefaultApplication(at: URL, toOpenContentTypeOfFileAt: URL, completion: (((any Error)?) -> Void)?)](./setdefaultapplication%28at,toopencontenttypeoffileat,completion%29.md)
   Sets the default app to use when opening files of a specific content type defined by a file URL.
 
 

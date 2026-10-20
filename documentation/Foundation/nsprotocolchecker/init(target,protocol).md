@@ -1,7 +1,8 @@
 # init(target:protocol:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly allocated `NSProtocolChecker` instance that will forward any messages in `aProtocol` to `anObject`, the protocol checker’s target.
 
@@ -13,6 +14,10 @@ Initializes a newly allocated `NSProtocolChecker` instance that will forward any
 
 ```swift
 init(target anObject: NSObject, protocol aProtocol: Protocol)
+```
+
+```objc
+- (instancetype) initWithTarget:(NSObject *) anObject protocol:(Protocol *) aProtocol;
 ```
 
 #### Discussion

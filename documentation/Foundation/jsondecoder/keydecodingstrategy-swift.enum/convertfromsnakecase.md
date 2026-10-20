@@ -1,7 +1,8 @@
 # JSONDecoder.KeyDecodingStrategy.convertFromSnakeCase
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A key decoding strategy that converts snake-case keys to camel-case keys.
 
@@ -22,9 +23,9 @@ case convertFromSnakeCase
 
 #### Discussion
 
-Snake-case and camel-case are two common approaches for combining words when naming parts of an API. The Swift [`API Design Guidelines`](https://developer.apple.comhttps://swift.org/documentation/api-design-guidelines/#general-conventions) recommend using camel-case names. Some JSON APIs adopt snake-case; use this strategy when you encounter such an API.
+Snake-case and camel-case are two common approaches for combining words when naming parts of an API. The Swift [API Design Guidelines](https://swift.org/documentation/api-design-guidelines/#general-conventions) recommend using camel-case names. Some JSON APIs adopt snake-case; use this strategy when you encounter such an API.
 
-This strategy uses [`uppercaseLetters`](characterset/uppercaseletters.md) and [`lowercaseLetters`](characterset/lowercaseletters.md) to determine the boundaries between words, and the [`system`](nslocale/system.md) locale when capitalizing letters.
+This strategy uses [`uppercaseLetters`](../../characterset/uppercaseletters.md) and [`lowercaseLetters`](../../characterset/lowercaseletters.md) to determine the boundaries between words, and the [`system`](../../nslocale/system.md) locale when capitalizing letters.
 
 This strategy follows these steps to convert JSON keys to camel-case:
 
@@ -38,7 +39,7 @@ The following examples show the result of applying this strategy:
 - **`feeFiFoFum`**: Converts to: `feeFiFoFum`
 - **`base_uri`**: Converts to: `baseUri`
 
-> **Note**:  The [`JSONDecoder.KeyDecodingStrategy.convertFromSnakeCase`](jsondecoder/keydecodingstrategy-swift.enum/convertfromsnakecase.md) strategy can’t infer capitalization for acronyms or initialisms such as WYSIWYG or URI. The example above shows how the automatic conversion differs from the conversion you might expect: `baseURI`. To decode such a key with the correct capitalization, define a custom `CodingKeys` enumeration, as described in [`Encoding and Decoding Custom Types`](encoding-and-decoding-custom-types.md).
+> **Note**:  The [`JSONDecoder.KeyDecodingStrategy.convertFromSnakeCase`](./convertfromsnakecase.md) strategy can’t infer capitalization for acronyms or initialisms such as WYSIWYG or URI. The example above shows how the automatic conversion differs from the conversion you might expect: `baseURI`. To decode such a key with the correct capitalization, define a custom `CodingKeys` enumeration, as described in [Encoding and Decoding Custom Types](../../encoding-and-decoding-custom-types.md).
 
 The example below shows how properties on the `OlympicEventResult` structure convert from snake-case when decoded as keys in a JSON object.
 
@@ -68,9 +69,11 @@ decodeAndPrint()
 
 ## See Also
 
-- [JSONEncoder.KeyEncodingStrategy.convertToSnakeCase](jsonencoder/keyencodingstrategy-swift.enum/converttosnakecase.md)
+### Related Documentation
+- [JSONEncoder.KeyEncodingStrategy.convertToSnakeCase](../../jsonencoder/keyencodingstrategy-swift.enum/converttosnakecase.md)
   A key encoding strategy that converts camel-case keys to snake-case keys.
-- [JSONDecoder.KeyDecodingStrategy.useDefaultKeys](jsondecoder/keydecodingstrategy-swift.enum/usedefaultkeys.md)
+### Built-in Decoding
+- [JSONDecoder.KeyDecodingStrategy.useDefaultKeys](./usedefaultkeys.md)
   A key decoding strategy that doesn’t change key names during decoding.
 
 

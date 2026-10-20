@@ -1,11 +1,12 @@
 # init(user_client_type:user_client_class:parent_registry_id:parent_path:reserved:)
 
 **Framework**: Endpoint Security  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # discriminator
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object’s type identifier.
 
@@ -10,7 +11,7 @@ The object’s type identifier.
 
 ## Declaration
 
-```swift
+```
 attribute string discriminator;
 ```
 

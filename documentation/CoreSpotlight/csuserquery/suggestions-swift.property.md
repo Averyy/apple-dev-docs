@@ -1,7 +1,8 @@
 # suggestions
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An asynchronous sequence of suggested completions for the current query text.
 
@@ -24,15 +25,16 @@ Getting the value of this property starts the query and begins the delivery of s
 
 ## See Also
 
-- [var responses: CSUserQuery.Responses](csuserquery/responses-swift.property.md)
+### Executing the query automatically
+- [var responses: CSUserQuery.Responses](./responses-swift.property.md)
   The matching results and suggestions for the current query string.
-- [CSUserQuery.Responses](csuserquery/responses-swift.struct.md)
+- [CSUserQuery.Responses](./responses-swift.struct.md)
   An asynchronous sequence that contains the results and suggestions for a query string.
-- [CSUserQuery.Suggestions](csuserquery/suggestions-swift.struct.md)
+- [CSUserQuery.Suggestions](./suggestions-swift.struct.md)
   An asynchronous sequence that contains the suggested completions for a search string.
-- [CSUserQuery.Item](csuserquery/item.md)
+- [CSUserQuery.Item](./item.md)
   A search result that the query returns in a response.
-- [CSUserQuery.Suggestion](csuserquery/suggestion.md)
+- [CSUserQuery.Suggestion](./suggestion.md)
   A suggested text completion for a query’s search term.
 
 

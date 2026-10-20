@@ -1,17 +1,18 @@
 # z
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The z coordinate of the origin.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ The z coordinate of the origin.
 var z: Int
 ```
 
+```c
+NSUInteger z;
+```
+
 ## See Also
 
-- [var x: Int](mtlorigin/x.md)
+### Getting and setting coordinate values
+- [var x: Int](./x.md)
   The x coordinate of the origin.
-- [var y: Int](mtlorigin/y.md)
+- [var y: Int](./y.md)
   The y coordinate of the origin.
 
 

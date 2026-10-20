@@ -1,7 +1,8 @@
 # filteredDuringRestrictedSharingMode
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 10.0+

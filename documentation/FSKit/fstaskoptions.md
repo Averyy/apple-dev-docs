@@ -1,7 +1,8 @@
 # FSTaskOptions
 
 **Framework**: FSKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that passes command options to a task, optionally providing security-scoped URLs.
 
@@ -14,30 +15,35 @@ A class that passes command options to a task, optionally providing security-sco
 class FSTaskOptions
 ```
 
+```objc
+@interface FSTaskOptions : NSObject
+```
+
 ## Topics
 
 ### Retrieving task options
-- [var taskOptions: [String]](fstaskoptions/taskoptions.md)
+- [var taskOptions: [String]](./fstaskoptions/taskoptions.md)
   An array of strings that represent command-line options for the task.
 ### Retrieving task option URLs
-- [func url(forOption: String) -> URL?](fstaskoptions/url(foroption:).md)
+- [func url(forOption: String) -> URL?](./fstaskoptions/url%28foroption%29.md)
   Retrieves a URL for a given option.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class FSTask](fstask.md)
+### Tasks
+- [class FSTask](./fstask.md)
   A class that enables a file system module to pass log messages and completion notifications to clients.
 
 

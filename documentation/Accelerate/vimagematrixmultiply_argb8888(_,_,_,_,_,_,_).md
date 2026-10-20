@@ -1,7 +1,8 @@
 # vImageMatrixMultiply_ARGB8888(_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Multiplies each pixel in an interleaved four-channel, 8-bit source image by a matrix to produce an interleaved four-channel, 8-bit destination image.
 
@@ -20,13 +21,17 @@ Multiplies each pixel in an interleaved four-channel, 8-bit source image by a ma
 func vImageMatrixMultiply_ARGB8888(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ matrix: UnsafePointer<Int16>, _ divisor: Int32, _ pre_bias: UnsafePointer<Int16>!, _ post_bias: UnsafePointer<Int32>!, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageMatrixMultiply_ARGB8888(const vImage_Buffer *src, const vImage_Buffer *dest, const int16_t matrix[16], int32_t divisor, const int16_t *pre_bias, const int32_t *post_bias, vImage_Flags flags);
+```
+
 ## Mentions
 
-- [Applying vImage operations to regions of interest](applying-vimage-operations-to-regions-of-interest.md)
+- [Applying vImage operations to regions of interest](./applying-vimage-operations-to-regions-of-interest.md)
 
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
@@ -118,15 +123,16 @@ printf("[%d, %d, %d, %d]\n",
 - `divisor`: A value that the function divides the matrix multiplication result by after adding postbias.
 - `pre_bias`: An array that contains four bias values. The function adds the corresponding bias value to each source value before the matrix multiplication step. Pass `nil` to specify zero prebias.
 - `post_bias`: An array that contains four bias values. The function adds the corresponding bias value to each destination value after the matrix multiplication step. Pass `nil` to specify zero postbias.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 ## See Also
 
-- [func vImageMatrixMultiply_ARGBFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Float>, UnsafePointer<Float>!, UnsafePointer<Float>!, vImage_Flags) -> vImage_Error](vimagematrixmultiply_argbffff(_:_:_:_:_:_:).md)
+### Multiplying interleaved pixels by a matrix
+- [func vImageMatrixMultiply_ARGBFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Float>, UnsafePointer<Float>!, UnsafePointer<Float>!, vImage_Flags) -> vImage_Error](./vimagematrixmultiply_argbffff%28_,_,_,_,_,_%29.md)
   Multiplies each pixel in an interleaved four-channel, 32-bit source image by a matrix to produce an interleaved four-channel, 32-bit destination image.
-- [func vImageMatrixMultiply_ARGB8888ToPlanar8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Int16>, Int32, UnsafePointer<Int16>!, Int32, vImage_Flags) -> vImage_Error](vimagematrixmultiply_argb8888toplanar8(_:_:_:_:_:_:_:).md)
+- [func vImageMatrixMultiply_ARGB8888ToPlanar8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Int16>, Int32, UnsafePointer<Int16>!, Int32, vImage_Flags) -> vImage_Error](./vimagematrixmultiply_argb8888toplanar8%28_,_,_,_,_,_,_%29.md)
   Multiplies each pixel in an interleaved four-channel, 8-bit source image by a matrix to produce a planar 8-bit destination image.
-- [func vImageMatrixMultiply_ARGBFFFFToPlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Float>, UnsafePointer<Float>!, Float, vImage_Flags) -> vImage_Error](vimagematrixmultiply_argbfffftoplanarf(_:_:_:_:_:_:).md)
+- [func vImageMatrixMultiply_ARGBFFFFToPlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Float>, UnsafePointer<Float>!, Float, vImage_Flags) -> vImage_Error](./vimagematrixmultiply_argbfffftoplanarf%28_,_,_,_,_,_%29.md)
   Multiplies each pixel in an interleaved four-channel, 32-bit source image by a matrix to produce a planar 32-bit destination image.
 
 

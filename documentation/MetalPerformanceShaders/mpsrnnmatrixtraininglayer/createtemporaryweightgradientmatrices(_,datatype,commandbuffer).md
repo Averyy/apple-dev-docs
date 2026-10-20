@@ -1,7 +1,8 @@
 # createTemporaryWeightGradientMatrices(_:dataType:commandBuffer:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func createTemporaryWeightGradientMatrices(_ matricesOut: NSMutableArray, dataType: MPSDataType, commandBuffer: any MTLCommandBuffer)
+```
+
+```objc
+- (void) createTemporaryWeightGradientMatrices:(NSMutableArray<MPSMatrix *> *) matricesOut dataType:(MPSDataType) dataType commandBuffer:(id<MTLCommandBuffer>) commandBuffer;
 ```
 
 

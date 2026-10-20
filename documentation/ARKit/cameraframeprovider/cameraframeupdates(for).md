@@ -1,7 +1,8 @@
 # cameraFrameUpdates(for:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets a sequence of camera frame updates for a given video format.
 
@@ -24,7 +25,8 @@ The sequence of camera frame updates. Returns `nil` if the provider wasn’t ini
 
 ## See Also
 
-- [CameraFrameProvider.CameraFrameUpdates](cameraframeprovider/cameraframeupdates.md)
+### Getting camera frame updates
+- [CameraFrameProvider.CameraFrameUpdates](./cameraframeupdates.md)
   A sequence of camera frames.
 
 

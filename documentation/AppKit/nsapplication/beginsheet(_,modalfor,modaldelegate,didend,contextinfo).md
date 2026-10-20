@@ -1,17 +1,24 @@
 # beginSheet(_:modalFor:modalDelegate:didEnd:contextInfo:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts a document modal session.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.10
+
+> **Deprecated**: Use the [`beginSheet(_:completionHandler:)`](../nswindow/beginsheet%28_,completionhandler%29.md) method of [`NSWindow`](../nswindow.md) instead.
 
 ## Declaration
 
 ```swift
 func beginSheet(_ sheet: NSWindow, modalFor docWindow: NSWindow, modalDelegate: Any?, didEnd didEndSelector: Selector?, contextInfo: UnsafeMutableRawPointer!)
+```
+
+```objc
+- (void) beginSheet:(NSWindow *) sheet modalForWindow:(NSWindow *) docWindow modalDelegate:(id) modalDelegate didEndSelector:(SEL) didEndSelector contextInfo:(void *) contextInfo;
 ```
 
 #### Discussion
@@ -23,20 +30,23 @@ This method displays the sheet modally on the specified window and returns contr
 - `sheet`: The window object representing the sheet you want to display.
 - `docWindow`: The window object to which you want to attach the sheet.
 - `modalDelegate`: The delegate object that defines your `didEndSelector` method. If `nil`, the method in `didEndSelector` is not called.
-- `didEndSelector`: An optional method to call when the sheet’s modal session has ended. This method must be defined on the object in the `modalDelegate` parameter and have the following signature: ```objc
-- (void)sheetDidEnd:(NSWindow *)sheet returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo;
-```
+- `didEndSelector`: An optional method to call when the sheet’s modal session has ended. This method must be defined on the object in the `modalDelegate` parameter and have the following signature:
+
+  ```objc
+  - (void)sheetDidEnd:(NSWindow *)sheet returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo;
+  ```
 - `contextInfo`: A pointer to the context info you want passed to the `didEndSelector` method when the sheet’s modal session ends.
 
 ## See Also
 
-- [func activate(ignoringOtherApps: Bool)](nsapplication/activate(ignoringotherapps:).md)
+### Deprecated methods
+- [func activate(ignoringOtherApps: Bool)](./activate%28ignoringotherapps%29.md)
   Makes the receiver the active app.
-- [func endModalSession(NSApplication.ModalSession)](nsapplication/endmodalsession(_:).md)
+- [func endModalSession(NSApplication.ModalSession)](./endmodalsession%28_%29.md)
   Finishes a modal session.
-- [func endSheet(NSWindow)](nsapplication/endsheet(_:).md)
+- [func endSheet(NSWindow)](./endsheet%28_%29.md)
   Ends a document modal session by specifying the sheet window.
-- [func endSheet(NSWindow, returnCode: Int)](nsapplication/endsheet(_:returncode:).md)
+- [func endSheet(NSWindow, returnCode: Int)](./endsheet%28_,returncode%29.md)
   Ends a document modal session by specifying the sheet window.
 
 

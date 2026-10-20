@@ -1,7 +1,8 @@
 # init(code:timestamp:domain:embeddedDomains:id:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+

@@ -1,7 +1,8 @@
 # attributedTitle
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional title for the item.
 
@@ -21,14 +22,28 @@ An optional title for the item.
 var attributedTitle: NSAttributedString? { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, nullable) NSAttributedString * attributedTitle;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, nullable) NSAttributedString * attributedTitle;
+```
+
 #### Discussion
 
-> ❗ **Important**:  Alternatively, you can set attributed content in the [`userInfo`](nsextensionitem/userinfo.md) dictionary using the [`NSExtensionItemAttributedTitleKey`](nsextensionitemattributedtitlekey.md) key. However, setting the [`userInfo`](nsextensionitem/userinfo.md) dictionary after setting [`attributedTitle`](nsextensionitem/attributedtitle.md) overrides this property.
+> ❗ **Important**:  Alternatively, you can set attributed content in the [`userInfo`](./userinfo.md) dictionary using the [`NSExtensionItemAttributedTitleKey`](../nsextensionitemattributedtitlekey.md) key. However, setting the [`userInfo`](./userinfo.md) dictionary after setting [`attributedTitle`](./attributedtitle.md) overrides this property.
 
 ## See Also
 
-- [App Extension Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/index.html#//apple_ref/doc/uid/TP40014214)
-- [var userInfo: [AnyHashable : Any]?](nsextensionitem/userinfo.md)
+### Related Documentation
+- [App Extension Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/index.html#//apple_ref/doc/uid/TP40014214)
+### Identifying the Item
+- [var userInfo: [AnyHashable : Any]?](./userinfo.md)
   An optional dictionary of keys and values corresponding to the extension item’s properties.
 
 

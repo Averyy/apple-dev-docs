@@ -1,12 +1,15 @@
 # TVElementFactory
 
 **Framework**: TVMLKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object used to register new elements to extend the Apple TV Markup Language (TVML).
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,35 +17,40 @@ An object used to register new elements to extend the Apple TV Markup Language (
 class TVElementFactory
 ```
 
+```objc
+@interface TVElementFactory : NSObject
+```
+
 #### Overview
 
-You must register new elements before initializing a [`TVApplicationController`](tvapplicationcontroller.md) object.
+You must register new elements before initializing a [`TVApplicationController`](./tvapplicationcontroller.md) object.
 
 ## Topics
 
 ### Registering New Elements
-- [class func registerViewElementClass(AnyClass, elementName: String)](tvelementfactory/registerviewelementclass(_:elementname:).md)
+- [class func registerViewElementClass(AnyClass, elementName: String)](./tvelementfactory/registerviewelementclass%28_,elementname%29.md)
   Registers a view element for the specified element name.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class TVImageElement](tvimageelement.md)
+### Custom Elements
+- [class TVImageElement](./tvimageelement.md)
   A representation of a read-only DOM node containing the attributes that describe an image element.
-- [class TVTextElement](tvtextelement.md)
+- [class TVTextElement](./tvtextelement.md)
   The textual content for the DOM element.
-- [Creating TVML Elements](creating-tvml-elements.md)
+- [Creating TVML Elements](./creating-tvml-elements.md)
   Avoid rewriting complex and often used elements by creating a simplified custom element.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The time in seconds between the last event and the current time.
@@ -20,13 +21,18 @@ The time in seconds between the last event and the current time.
 var lastEventLatency: TimeInterval { get }
 ```
 
+```objc
+@property (readonly) NSTimeInterval lastEventLatency;
+```
+
 #### Discussion
 
 Use this property as a minimum latency value that may not include latency that accrues on the device or when it transmits the event. If the host goes to sleep between when the event occurs and when you get this property, the value may not be accurate.
 
 ## See Also
 
-- [var lastEventTimestamp: TimeInterval](gcdevicephysicalinputstate/lasteventtimestamp.md)
+### Getting change information
+- [var lastEventTimestamp: TimeInterval](./lasteventtimestamp.md)
   The time of the most recent event.
 
 

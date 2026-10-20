@@ -1,7 +1,8 @@
 # UISpringLoadedInteractionEffectState.possible
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An interaction state that indicates that spring loading is available.
 
@@ -17,17 +18,22 @@ An interaction state that indicates that spring loading is available.
 case possible
 ```
 
+```c
+UISpringLoadedInteractionEffectStatePossible
+```
+
 #### Discussion
 
 The interaction view provides a visual cue to the user that spring loading is available.
 
 ## See Also
 
-- [UISpringLoadedInteractionEffectState.activated](uispringloadedinteractioneffectstate/activated.md)
+### States
+- [UISpringLoadedInteractionEffectState.activated](./activated.md)
   An interaction state that indicates that the view was spring loaded.
-- [UISpringLoadedInteractionEffectState.activating](uispringloadedinteractioneffectstate/activating.md)
+- [UISpringLoadedInteractionEffectState.activating](./activating.md)
   An interaction state that indicates that spring loading is about to start.
-- [UISpringLoadedInteractionEffectState.inactive](uispringloadedinteractioneffectstate/inactive.md)
+- [UISpringLoadedInteractionEffectState.inactive](./inactive.md)
   An interaction state that indicates that spring loading is not engaged.
 
 

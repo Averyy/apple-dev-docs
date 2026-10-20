@@ -1,7 +1,8 @@
 # cssm_name_list
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,19 +14,23 @@
 struct cssm_name_list
 ```
 
+```c
+struct cssm_name_list;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cssm_name_list-swift.struct/init.md)
-- [init(NumStrings: uint32, String: UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>!)](cssm_name_list-swift.struct/init(numstrings:string:).md)
+- [init()](./cssm_name_list-swift.struct/init%28%29.md)
+- [init(NumStrings: uint32, String: UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>!)](./cssm_name_list-swift.struct/init%28numstrings,string%29.md)
 ### Instance Properties
-- [var NumStrings: uint32](cssm_name_list-swift.struct/numstrings.md)
-- [var String: UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>!](cssm_name_list-swift.struct/string.md)
+- [var NumStrings: uint32](./cssm_name_list-swift.struct/numstrings.md)
+- [var String: UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>!](./cssm_name_list-swift.struct/string.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 
 ---

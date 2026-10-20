@@ -1,7 +1,8 @@
 # BindPath.Part.ikSolver(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A path component to an IK solver instance.
 

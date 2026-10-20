@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The raw type that can be used to represent all values of the conforming type.
@@ -27,7 +28,8 @@ Every distinct value of the conforming type has a corresponding unique value of 
 
 ## See Also
 
-- [var rawValue: Self.RawValue](rawrepresentable/rawvalue-swift.property.md)
+### Accessing the Raw Value
+- [var rawValue: Self.RawValue](./rawvalue-swift.property.md)
   The corresponding value of the raw type.
 
 

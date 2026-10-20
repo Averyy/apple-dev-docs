@@ -1,7 +1,8 @@
 # SynchronizationComponent.OwnershipTransferCompletionResult
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The result of an ownership transfer request.
 
@@ -11,7 +12,7 @@ The result of an ownership transfer request.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,32 +23,33 @@ enum OwnershipTransferCompletionResult
 ## Topics
 
 ### Ownership transfer completion results
-- [SynchronizationComponent.OwnershipTransferCompletionResult.granted](synchronizationcomponent/ownershiptransfercompletionresult/granted.md)
+- [SynchronizationComponent.OwnershipTransferCompletionResult.granted](./ownershiptransfercompletionresult/granted.md)
   The request is accepted and ownership is transferred.
-- [SynchronizationComponent.OwnershipTransferCompletionResult.timedOut](synchronizationcomponent/ownershiptransfercompletionresult/timedout.md)
+- [SynchronizationComponent.OwnershipTransferCompletionResult.timedOut](./ownershiptransfercompletionresult/timedout.md)
   The ownership transfer request timed out.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [protocol SynchronizationService](synchronizationservice.md)
+### Entity ownership synchronization
+- [protocol SynchronizationService](../synchronizationservice.md)
   An interface that enables entity synchronization among a group of local peers.
-- [SynchronizationService.Identifier](synchronizationservice/identifier.md)
+- [SynchronizationService.Identifier](../synchronizationservice/identifier.md)
   A type that represents a synchronization service identifier.
-- [protocol SynchronizationPeerID](synchronizationpeerid.md)
+- [protocol SynchronizationPeerID](../synchronizationpeerid.md)
   A type that represents a peer among a group of networked devices.
-- [struct SynchronizationComponent](synchronizationcomponent.md)
+- [struct SynchronizationComponent](../synchronizationcomponent.md)
   A component that synchronizes an entity between processes and networked applications.
-- [SynchronizationComponent.OwnershipTransferMode](synchronizationcomponent/ownershiptransfermode-swift.enum.md)
+- [SynchronizationComponent.OwnershipTransferMode](./ownershiptransfermode-swift.enum.md)
   Modes of ownership transfer.
-- [enum SynchronizationEvents](synchronizationevents.md)
+- [enum SynchronizationEvents](../synchronizationevents.md)
   Events associated with network synchronization of scene information.
-- [protocol HasSynchronization](hassynchronization.md)
+- [protocol HasSynchronization](../hassynchronization.md)
   An interface that enables an entity to be synchronized between processes and networked applications.
 
 

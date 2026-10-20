@@ -1,7 +1,8 @@
 # appTransactionID
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of the app download transaction.
 
@@ -23,11 +24,12 @@ var appTransactionID: String { get }
 
 #### Discussion
 
-The App Store server APIs and StoreKit provide this value in several APIs. For more information, see [`appTransactionID`](apptransaction/apptransactionid.md) in [`AppTransaction`](apptransaction.md).
+The App Store server APIs and StoreKit provide this value in several APIs. For more information, see [`appTransactionID`](../../../apptransaction/apptransactionid.md) in [`AppTransaction`](../../../apptransaction.md).
 
 ## See Also
 
-- [var appAccountToken: UUID?](product/subscriptioninfo/renewalinfo/appaccounttoken.md)
+### Identifying the account
+- [var appAccountToken: UUID?](./appaccounttoken.md)
   The app account token you provided during the subscription purchase, if one exists.
 
 

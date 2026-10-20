@@ -1,7 +1,8 @@
 # identity(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies the input tensor values into the output, behaving as an identity operation.
 
@@ -17,6 +18,10 @@ Copies the input tensor values into the output, behaving as an identity operatio
 
 ```swift
 func identity(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) identityWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

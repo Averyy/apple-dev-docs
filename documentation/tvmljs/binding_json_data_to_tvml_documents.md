@@ -1,6 +1,8 @@
 # Binding JSON data to TVML documents
 
-**Framework**: TVMLKit JS
+**Framework**: TVMLKit JS  
+**Role**: Sample Code  
+**Download**: [BindingJSONDataToTVMLDocuments.zip](https://docs-assets.developer.apple.com/published/dab03d00ca/BindingJSONDataToTVMLDocuments.zip)
 
 Create full-fledged TVML documents by using data binding and queries on simplified TVML files.
 
@@ -12,7 +14,7 @@ Create full-fledged TVML documents by using data binding and queries on simplifi
 
 This sample shows how to combine JavaScript, JSON data, and TVML elements to create compact TVML documents. You start by creating a local server on your computer to store all of the JSON data and TVML documents. The app reads the JSON data and applies it to the TVML document, and then displays movie posters onscreen. The titles display with different colors based on the amount of rental time remaining.
 
-##### 4164065
+##### Configure the sample code project
 
 Before running the app, you need to set up a local server:
 
@@ -24,7 +26,7 @@ Before running the app, you need to set up a local server:
 
 After testing the sample app in Apple TV simulator, you can close the local server by pressing Control-C in Terminal. Closing the Terminal window also stops the server.
 
-##### 4164066
+##### Set up the TVML document
 
 The TVML document uses the `prototypes` element to create a reusable collection of elements. Use the `prototype` attribute to uniquely identify the elements. The app creates two `lockup` elements that contain movie poster information.
 
@@ -50,9 +52,9 @@ Each `lockup` contains a set of rules, or queries, that change the color of the 
 </rules>
 ```
 
-##### 4164067
+##### Retrieve the JSON data
 
-Use an [`XMLHttpRequest`](xmlhttprequest.md) to retrieve the JSON information from your server. This creates two arrays that hold JSON objects. Each object has the following properties: `type`, `ID`, `url`, `title`, and `hoursRemaining`. The `hoursRemaining` property contains the data that the queries in the previous section use.
+Use an [`XMLHttpRequest`](./xmlhttprequest.md) to retrieve the JSON information from your server. This creates two arrays that hold JSON objects. Each object has the following properties: `type`, `ID`, `url`, `title`, and `hoursRemaining`. The `hoursRemaining` property contains the data that the queries in the previous section use.
 
 ```swift
 {
@@ -68,7 +70,7 @@ Use an [`XMLHttpRequest`](xmlhttprequest.md) to retrieve the JSON information fr
 }
 ```
 
-##### 4164068
+##### Bind the JSON data
 
 You need to add a type and an identifier to each JSON object because creating new `DataItem` objects requires both a type and a unique identifier for each object. The `type` groups like items together and identifies the correct element to populate the `section` element. The `ID` identifies each object and needs to be unique within each type.
 
@@ -108,16 +110,17 @@ section.dataItem.setPropertyPath("images", newItems);
 
 ## See Also
 
-- [XMLHttpRequest](xmlhttprequest.md)
+### Data Storage and Retrieval
+- [XMLHttpRequest](./xmlhttprequest.md)
   An object used to retrieve data from a URL.
-- [DataItem](dataitem.md)
+- [DataItem](./dataitem.md)
   An object used to create observable objects from JSON objects for data binding.
-- [Storage](storage.md)
+- [Storage](./storage.md)
   An object used to store key-value-pair information.
-- [DataSource](datasource.md)
+- [DataSource](./datasource.md)
   An interface that allows the system to detect and respond to changes in your data.
-- [LoadIndexesRequest](loadindexesrequest.md)
-  A request created when the [`loadindexes`](datasource/datasource/3192119-loadindexes.md) event is triggered.
+- [LoadIndexesRequest](./loadindexesrequest.md)
+  A request created when the [`loadindexes`](./datasource/datasource/api-3192119-loadindexes.md) event is triggered.
 
 
 ---

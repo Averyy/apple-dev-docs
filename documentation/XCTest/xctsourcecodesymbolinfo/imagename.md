@@ -1,7 +1,8 @@
 # imageName
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the binary image that contains the symbolicated code.
 
@@ -11,11 +12,16 @@ The name of the binary image that contains the symbolicated code.
 var imageName: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * imageName;
+```
+
 ## See Also
 
-- [var location: XCTSourceCodeLocation?](xctsourcecodesymbolinfo/location.md)
+### Symbol Information
+- [var location: XCTSourceCodeLocation?](./location.md)
   A representation of a location in source code where a test issue occurred.
-- [var symbolName: String](xctsourcecodesymbolinfo/symbolname.md)
+- [var symbolName: String](./symbolname.md)
   A string that represents a human-readable symbol in source code.
 
 

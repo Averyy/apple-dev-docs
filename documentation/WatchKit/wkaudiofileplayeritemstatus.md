@@ -1,12 +1,15 @@
 # WKAudioFilePlayerItemStatus
 
 **Framework**: WatchKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that represent the status of a player item.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 6.0
+
+> **Deprecated**: Use the [AVFoundation](../AVFoundation/AVFoundation.md) framework’s [`AVPlayer`](../AVFoundation/avplayer.md) and [`AVQueuePlayer`](../AVFoundation/avqueueplayer.md) classes instead.
 
 ## Declaration
 
@@ -14,27 +17,31 @@ Constants that represent the status of a player item.
 enum WKAudioFilePlayerItemStatus
 ```
 
+```c
+enum WKAudioFilePlayerItemStatus : NSInteger;
+```
+
 ## Topics
 
 ### Statuses
-- [WKAudioFilePlayerItemStatus.unknown](wkaudiofileplayeritemstatus/unknown.md)
+- [WKAudioFilePlayerItemStatus.unknown](./wkaudiofileplayeritemstatus/unknown.md)
   The item’s status is unknown.
-- [WKAudioFilePlayerItemStatus.readyToPlay](wkaudiofileplayeritemstatus/readytoplay.md)
+- [WKAudioFilePlayerItemStatus.readyToPlay](./wkaudiofileplayeritemstatus/readytoplay.md)
   The item is ready to play.
-- [WKAudioFilePlayerItemStatus.failed](wkaudiofileplayeritemstatus/failed.md)
+- [WKAudioFilePlayerItemStatus.failed](./wkaudiofileplayeritemstatus/failed.md)
   The item can’t be played.
 ### Initializers
-- [init?(rawValue: Int)](wkaudiofileplayeritemstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./wkaudiofileplayeritemstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

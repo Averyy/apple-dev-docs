@@ -1,7 +1,8 @@
 # second
 
 **Framework**: Synchronization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The second element in this word pair.
 

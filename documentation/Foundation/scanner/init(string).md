@@ -1,7 +1,8 @@
 # init(string:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an `NSScanner` object initialized to scan a given string.
 
@@ -20,6 +21,10 @@ Returns an `NSScanner` object initialized to scan a given string.
 init(string: String)
 ```
 
+```objc
+- (instancetype) initWithString:(NSString *) string;
+```
+
 #### Return Value
 
 An `NSScanner` object initialized to scan `aString` from the beginning. The returned object might be different than the original receiver.
@@ -30,7 +35,8 @@ An `NSScanner` object initialized to scan `aString` from the beginning. The retu
 
 ## See Also
 
-- [class func localizedScanner(with: String) -> Any](scanner/localizedscanner(with:).md)
+### Creating a Scanner
+- [class func localizedScanner(with: String) -> Any](./localizedscanner%28with%29.md)
   Returns an `NSScanner` object that scans a given string according to the user’s default locale.
 
 

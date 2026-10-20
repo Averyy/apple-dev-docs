@@ -1,7 +1,8 @@
 # volumeIdentifier
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The volume identifier associated with the container.
 
@@ -13,6 +14,10 @@ The volume identifier associated with the container.
 ```swift
 @NSCopying
 var volumeIdentifier: FSVolume.Identifier { get }
+```
+
+```objc
+@property (copy, readonly) FSVolumeIdentifier * volumeIdentifier;
 ```
 
 #### Discussion

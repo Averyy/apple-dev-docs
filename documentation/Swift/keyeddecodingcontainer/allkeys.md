@@ -1,7 +1,8 @@
 # allKeys
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All the keys the decoder has for this container.
 

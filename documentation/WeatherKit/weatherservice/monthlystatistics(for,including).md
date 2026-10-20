@@ -1,7 +1,8 @@
 # monthlyStatistics(for:including:)
 
 **Framework**: WeatherKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns monthly weather statistics for the requested location, for all 12 months of the Gregorian calendar year.
 
@@ -26,7 +27,7 @@ The requested monthly weather statistics
 
 #### Discussion
 
-> **Note**: Weather data error `WeatherError`
+> **Throws**: Weather data error `WeatherError`
 
 The statistics returned for each month are derived from weather data recorded over the past decades, to the present date. Each item returned represents statistics for a particular Gregorian Calendar month of the year.
 

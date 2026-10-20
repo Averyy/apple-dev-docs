@@ -1,7 +1,8 @@
 # UISceneSizeRestrictions
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that specifies the minimum and maximum sizes for resizable windows.
 
@@ -19,9 +20,13 @@ An object that specifies the minimum and maximum sizes for resizable windows.
 class UISceneSizeRestrictions
 ```
 
+```objc
+@interface UISceneSizeRestrictions : NSObject
+```
+
 #### Overview
 
-Don’t create a [`UISceneSizeRestrictions`](uiscenesizerestrictions.md) object yourself. Instead, fetch an existing one from the [`sizeRestrictions`](uiwindowscene/sizerestrictions.md) property of your window scene, and modify its properties to set the minimum and maximum window sizes:
+Don’t create a [`UISceneSizeRestrictions`](./uiscenesizerestrictions.md) object yourself. Instead, fetch an existing one from the [`sizeRestrictions`](./uiwindowscene/sizerestrictions.md) property of your window scene, and modify its properties to set the minimum and maximum window sizes:
 
 **Swift**:
 
@@ -67,31 +72,32 @@ The system provides this object only when it supports variable-sized windows.
 ## Topics
 
 ### Setting the size restrictions
-- [var minimumSize: CGSize](uiscenesizerestrictions/minimumsize.md)
+- [var minimumSize: CGSize](./uiscenesizerestrictions/minimumsize.md)
   The minimum width and height supported by your app’s windows.
-- [var maximumSize: CGSize](uiscenesizerestrictions/maximumsize.md)
+- [var maximumSize: CGSize](./uiscenesizerestrictions/maximumsize.md)
   The maximum width and height supported by your app’s windows.
-- [var allowsFullScreen: Bool](uiscenesizerestrictions/allowsfullscreen.md)
+- [var allowsFullScreen: Bool](./uiscenesizerestrictions/allowsfullscreen.md)
   A Boolean value that indicates whether the scene can appear full screen.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [var traitCollection: UITraitCollection](uiwindowscene/traitcollection.md)
+### Getting the interface attributes
+- [var traitCollection: UITraitCollection](./uiwindowscene/traitcollection.md)
   The traits that describe the current environment of the scene.
-- [var sizeRestrictions: UISceneSizeRestrictions?](uiwindowscene/sizerestrictions.md)
+- [var sizeRestrictions: UISceneSizeRestrictions?](./uiwindowscene/sizerestrictions.md)
   The minimum and maximum size of the app’s windows.
 
 

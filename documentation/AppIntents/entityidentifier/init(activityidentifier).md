@@ -1,7 +1,8 @@
 # init(activityIdentifier:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -20,9 +21,10 @@ init?(activityIdentifier: String)
 
 ## See Also
 
-- [init<Entity>(for: Entity)](entityidentifier/init(for:).md)
+### Creating an entity identifier
+- [init<Entity>(for: Entity)](./init%28for%29.md)
   Creates an identifier for the specified entity.
-- [init<Entity>(for: Entity.Type, identifier: Entity.ID)](entityidentifier/init(for:identifier:).md)
+- [init<Entity>(for: Entity.Type, identifier: Entity.ID)](./init%28for,identifier%29.md)
   Creates an `EntityIdentifier` representing an instance of the specified entity type backed by the specified identifier value.
 
 

@@ -1,7 +1,8 @@
 # kAuthorizationRuleIsAdmin
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates a delegate rule definition constant specifying that the user must be an administrator.
 
@@ -13,6 +14,10 @@ Indicates a delegate rule definition constant specifying that the user must be a
 
 ```swift
 var kAuthorizationRuleIsAdmin: String { get }
+```
+
+```c
+#define kAuthorizationRuleIsAdmin
 ```
 
 

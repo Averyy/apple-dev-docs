@@ -1,18 +1,19 @@
 # managedObjectResultType
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The request returns managed objects.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ The request returns managed objects.
 static var managedObjectResultType: NSFetchRequestResultType { get }
 ```
 
+```c
+NSManagedObjectResultType
+```
+
 ## See Also
 
-- [static var managedObjectIDResultType: NSFetchRequestResultType](nsfetchrequestresulttype/managedobjectidresulttype.md)
+### Result Types
+- [static var managedObjectIDResultType: NSFetchRequestResultType](./managedobjectidresulttype.md)
   The request returns managed object IDs.
-- [static var dictionaryResultType: NSFetchRequestResultType](nsfetchrequestresulttype/dictionaryresulttype.md)
+- [static var dictionaryResultType: NSFetchRequestResultType](./dictionaryresulttype.md)
   The request returns dictionaries.
-- [static var countResultType: NSFetchRequestResultType](nsfetchrequestresulttype/countresulttype.md)
+- [static var countResultType: NSFetchRequestResultType](./countresulttype.md)
   The request returns the count of the objects that match the request.
 
 

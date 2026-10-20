@@ -1,7 +1,8 @@
 # numberOfItems
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of items for the pasteboard.
 
@@ -17,25 +18,30 @@ The number of items for the pasteboard.
 var numberOfItems: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger numberOfItems;
+```
+
 ## See Also
 
-- [var items: [[String : Any]]](uipasteboard/items.md)
+### Getting and setting pasteboard items
+- [var items: [[String : Any]]](./items.md)
   The pasteboard items on the pasteboard.
-- [func addItems([[String : Any]])](uipasteboard/additems(_:).md)
+- [func addItems([[String : Any]])](./additems%28_%29.md)
   Appends pasteboard items to the current contents of the pasteboard.
-- [func setItems([[String : Any]], options: [UIPasteboard.OptionsKey : Any])](uipasteboard/setitems(_:options:).md)
+- [func setItems([[String : Any]], options: [UIPasteboard.OptionsKey : Any])](./setitems%28_,options%29.md)
   Adds an array of items to a pasteboard, and sets privacy options for all the items on the pasteboard.
-- [func data(forPasteboardType: String) -> Data?](uipasteboard/data(forpasteboardtype:).md)
+- [func data(forPasteboardType: String) -> Data?](./data%28forpasteboardtype%29.md)
   Returns the data on the pasteboard for the given representation type.
-- [func data(forPasteboardType: String, inItemSet: IndexSet?) -> [Data]?](uipasteboard/data(forpasteboardtype:initemset:).md)
+- [func data(forPasteboardType: String, inItemSet: IndexSet?) -> [Data]?](./data%28forpasteboardtype,initemset%29.md)
   Returns the data objects in the indicated pasteboard items that have the given representation type.
-- [func setData(Data, forPasteboardType: String)](uipasteboard/setdata(_:forpasteboardtype:).md)
+- [func setData(Data, forPasteboardType: String)](./setdata%28_,forpasteboardtype%29.md)
   Puts data on the pasteboard for the specified representation type.
-- [func value(forPasteboardType: String) -> Any?](uipasteboard/value(forpasteboardtype:).md)
+- [func value(forPasteboardType: String) -> Any?](./value%28forpasteboardtype%29.md)
   Returns an object on the pasteboard for the given representation type.
-- [func values(forPasteboardType: String, inItemSet: IndexSet?) -> [Any]?](uipasteboard/values(forpasteboardtype:initemset:).md)
+- [func values(forPasteboardType: String, inItemSet: IndexSet?) -> [Any]?](./values%28forpasteboardtype,initemset%29.md)
   Returns the objects on the indicated pasteboard items that have the given representation type.
-- [func setValue(Any, forPasteboardType: String)](uipasteboard/setvalue(_:forpasteboardtype:).md)
+- [func setValue(Any, forPasteboardType: String)](./setvalue%28_,forpasteboardtype%29.md)
   Puts an object on the pasteboard for the specified representation type.
 
 

@@ -1,7 +1,8 @@
 # MetalFX
 
 **Framework**: MetalFX  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Boost your Metal app’s performance by upscaling lower-resolution content to save GPU time.
 
@@ -14,9 +15,9 @@ Boost your Metal app’s performance by upscaling lower-resolution content to sa
 
 #### Overview
 
-The `MetalFX` framework integrates with [`Metal`](https://developer.apple.com/documentation/metal) to upscale a relatively low-resolution image to a higher output resolution in less time than it takes to render directly to the output resolution.
+The `MetalFX` framework integrates with [Metal](../Metal/Metal.md) to upscale a relatively low-resolution image to a higher output resolution in less time than it takes to render directly to the output resolution.
 
-![A timeline diagram that compares a traditional rendering timespan and compares it to a MetalFX upscaling timespan. The MetalFX upscaling method, which renders at a lower resolution and then upscales to the final resolution with MetalFX, takes about half the time traditional rendering, which renders directly to the higher, final resolution.](/images/com.apple.metalfx/media-4085441@2x.png)
+![A timeline diagram that compares a traditional rendering timespan and compares it to a MetalFX upscaling timespan. The MetalFX upscaling method, which renders at a lower resolution and then upscales to the final resolution with MetalFX, takes about half the time traditional rendering, which renders directly to the higher, final resolution.](https://developer.apple.com/tutorials/images/com.apple.metalfx/media-4085441@2x.png)
 
 Use the GPU time savings to further enhance your app or game’s experience. For example, add more effects or scene details.
 
@@ -25,44 +26,44 @@ Use the GPU time savings to further enhance your app or game’s experience. For
 - Temporal antialiased upscaling
 - Spatial upscaling
 
-If you can provide pixel color, depth, and motion information, add an [`MTLFXTemporalScaler`](mtlfxtemporalscaler.md) instance to your render pipeline. Otherwise, add an [`MTLFXSpatialScaler`](mtlfxspatialscaler.md) instance, which only requires a pixel color input texture.
+If you can provide pixel color, depth, and motion information, add an [`MTLFXTemporalScaler`](./mtlfxtemporalscaler.md) instance to your render pipeline. Otherwise, add an [`MTLFXSpatialScaler`](./mtlfxspatialscaler.md) instance, which only requires a pixel color input texture.
 
 Because the scaling effects take time to initialize, make an instance of either effect at launch or when a display changes resolutions. Once you’ve created an effect instance, you can use it repeatedly, typically once per frame.
 
 ## Topics
 
 ### Temporal scaling
-- [Applying temporal antialiasing and upscaling using MetalFX](applying-temporal-antialiasing-and-upscaling-using-metalfx.md)
+- [Applying temporal antialiasing and upscaling using MetalFX](./applying-temporal-antialiasing-and-upscaling-using-metalfx.md)
   Reduce render workloads while increasing image detail with MetalFX.
-- [protocol MTLFXTemporalScaler](mtlfxtemporalscaler.md)
+- [protocol MTLFXTemporalScaler](./mtlfxtemporalscaler.md)
   An upscaling effect that generates a higher resolution texture in a render pass by analyzing multiple input textures over time.
-- [class MTLFXTemporalScalerDescriptor](mtlfxtemporalscalerdescriptor.md)
+- [class MTLFXTemporalScalerDescriptor](./mtlfxtemporalscalerdescriptor.md)
   A set of properties that configure a temporal scaling effect, and a factory method that creates the effect.
 ### Spatial scaling
-- [protocol MTLFXSpatialScaler](mtlfxspatialscaler.md)
+- [protocol MTLFXSpatialScaler](./mtlfxspatialscaler.md)
   An upscaling effect that generates a higher resolution texture in a render pass by spatially analyzing an input texture.
-- [class MTLFXSpatialScalerDescriptor](mtlfxspatialscalerdescriptor.md)
+- [class MTLFXSpatialScalerDescriptor](./mtlfxspatialscalerdescriptor.md)
   A set of properties that configure a spatial scaling effect, and a factory method that creates the effect.
-- [enum MTLFXSpatialScalerColorProcessingMode](mtlfxspatialscalercolorprocessingmode.md)
+- [enum MTLFXSpatialScalerColorProcessingMode](./mtlfxspatialscalercolorprocessingmode.md)
   The color space modes for the input and output textures you use with a spatial scaling effect instance.
 ### Classes
-- [class MTLFXFrameInterpolatorDescriptor](mtlfxframeinterpolatordescriptor.md)
+- [class MTLFXFrameInterpolatorDescriptor](./mtlfxframeinterpolatordescriptor.md)
   A set of properties that configure a frame interpolator, and a factory method that creates the effect.
-- [class MTLFXTemporalDenoisedScalerDescriptor](mtlfxtemporaldenoisedscalerdescriptor.md)
+- [class MTLFXTemporalDenoisedScalerDescriptor](./mtlfxtemporaldenoisedscalerdescriptor.md)
 ### Protocols
-- [protocol MTL4FXFrameInterpolator](mtl4fxframeinterpolator.md)
-- [protocol MTL4FXSpatialScaler](mtl4fxspatialscaler.md)
+- [protocol MTL4FXFrameInterpolator](./mtl4fxframeinterpolator.md)
+- [protocol MTL4FXSpatialScaler](./mtl4fxspatialscaler.md)
   An upscaling effect that generates a higher resolution texture in a render pass by spatially analyzing an input texture.
-- [protocol MTL4FXTemporalDenoisedScaler](mtl4fxtemporaldenoisedscaler.md)
-- [protocol MTL4FXTemporalScaler](mtl4fxtemporalscaler.md)
-- [protocol MTLFXFrameInterpolatableScaler](mtlfxframeinterpolatablescaler.md)
-- [protocol MTLFXFrameInterpolator](mtlfxframeinterpolator.md)
-- [protocol MTLFXFrameInterpolatorBase](mtlfxframeinterpolatorbase.md)
-- [protocol MTLFXSpatialScalerBase](mtlfxspatialscalerbase.md)
+- [protocol MTL4FXTemporalDenoisedScaler](./mtl4fxtemporaldenoisedscaler.md)
+- [protocol MTL4FXTemporalScaler](./mtl4fxtemporalscaler.md)
+- [protocol MTLFXFrameInterpolatableScaler](./mtlfxframeinterpolatablescaler.md)
+- [protocol MTLFXFrameInterpolator](./mtlfxframeinterpolator.md)
+- [protocol MTLFXFrameInterpolatorBase](./mtlfxframeinterpolatorbase.md)
+- [protocol MTLFXSpatialScalerBase](./mtlfxspatialscalerbase.md)
   An upscaling effect that generates a higher resolution texture in a render pass by spatially analyzing an input texture.
-- [protocol MTLFXTemporalDenoisedScaler](mtlfxtemporaldenoisedscaler.md)
-- [protocol MTLFXTemporalDenoisedScalerBase](mtlfxtemporaldenoisedscalerbase.md)
-- [protocol MTLFXTemporalScalerBase](mtlfxtemporalscalerbase.md)
+- [protocol MTLFXTemporalDenoisedScaler](./mtlfxtemporaldenoisedscaler.md)
+- [protocol MTLFXTemporalDenoisedScalerBase](./mtlfxtemporaldenoisedscalerbase.md)
+- [protocol MTLFXTemporalScalerBase](./mtlfxtemporalscalerbase.md)
   An upscaling effect that generates a higher resolution texture in a render pass by analyzing multiple input textures over time.
 
 

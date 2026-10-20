@@ -1,7 +1,8 @@
 # frictionOverrides
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A map to manually override friction values between pairs of materials.
 
@@ -22,7 +23,8 @@ Each material has its own friction properties. When two materials come into cont
 
 ## See Also
 
-- [ClothSimulationComponent.FrictionOverridesCollection](clothsimulationcomponent/frictionoverridescollection.md)
+### Overriding friction
+- [ClothSimulationComponent.FrictionOverridesCollection](./frictionoverridescollection.md)
   A collection of materials pairs whose combined frictions are overridden.
 
 

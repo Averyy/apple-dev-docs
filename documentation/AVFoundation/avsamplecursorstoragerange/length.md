@@ -1,18 +1,19 @@
 # length
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The count of bytes of storage that a media sample or its chunk occupies.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ The count of bytes of storage that a media sample or its chunk occupies.
 var length: Int64
 ```
 
+```c
+int64_t length;
+```
+
 ## See Also
 
-- [var offset: Int64](avsamplecursorstoragerange/offset.md)
+### Storage range
+- [var offset: Int64](./offset.md)
   The offset of the first byte of storage that a media sample or its chunk occupies.
 
 

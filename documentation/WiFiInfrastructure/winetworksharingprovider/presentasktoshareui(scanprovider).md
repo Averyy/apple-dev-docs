@@ -1,7 +1,8 @@
 # presentAskToShareUI(scanProvider:)
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents system UI asking people to share available networks with an accessory.
 
@@ -18,7 +19,7 @@ func presentAskToShareUI(scanProvider: (@Sendable (ASAccessory, WINetworkSharing
 
 #### Return Value
 
-The [`WINetworkSharingAskToShareState`](winetworksharingasktosharestate.md), indicating a response from the person.
+The [`WINetworkSharingAskToShareState`](../winetworksharingasktosharestate.md), indicating a response from the person.
 
 #### Discussion
 
@@ -28,29 +29,34 @@ Your app extension can present sharing UI in these scenarios:
 
 - **New networks available**: The system sets `newShareableNetworkAvailable` to `true` when networks become available for sharing. Your extension can verify with your accessory whether it needs additional networks before calling this method. Your container app doesn’t need to be in the foreground for this scenario.
 - **Accessory requests**: Your accessory can communicate directly with your extension to request network sharing, such as when connection problems occur. Your container app needs to be in the foreground before calling this method.
-- **App requests**: Your container app can call [`askToShare()`](winetworksharingcontroller/asktoshare().md) to set the [`appRequestedSharing`](winetworksharingprovider/networkevent/apprequestedsharing.md) flag, indicating it wants your extension to present sharing UI. Your container app needs to be in the foreground before calling this method.
+- **App requests**: Your container app can call [`askToShare()`](../winetworksharingcontroller/asktoshare%28%29.md) to set the [`appRequestedSharing`](./networkevent/apprequestedsharing.md) flag, indicating it wants your extension to present sharing UI. Your container app needs to be in the foreground before calling this method.
 
-> ❗ **Important**: When people choose to “Automatically Share” networks, the system adds new networks to future [`networks`](winetworksharingprovider/networkevent/networks.md) without needing additional calls to this method or further approval.
+> ❗ **Important**: When people choose to “Automatically Share” networks, the system adds new networks to future [`networks`](./networkevent/networks.md) without needing additional calls to this method or further approval.
 
-> **Note**: [`WINetworkSharingError`](winetworksharingerror.md) for various conditions: - [`WINetworkSharingError.timeout`](winetworksharingerror/timeout.md): The person didn’t respond to the request.
-- [`WINetworkSharingError.noAvailableNetworks`](winetworksharingerror/noavailablenetworks.md): No shareable networks were available nearby.
-- [`WINetworkSharingError.appNotInForeground`](winetworksharingerror/appnotinforeground.md): Called when [`newShareableNetworkAvailable`](winetworksharingprovider/networkevent/newshareablenetworkavailable.md) is false and the container app isn’t in the foreground.
-- [`WINetworkSharingError.accessoryNotAuthorized`](winetworksharingerror/accessorynotauthorized.md): The person hasn’t authorized network data sharing to the accessory.
-- [`WINetworkSharingError.accessoryNotConnected`](winetworksharingerror/accessorynotconnected.md): The accessory isn’t connected when making this request.
+> **Throws**: [`WINetworkSharingError`](../winetworksharingerror.md) for various conditions:
+>
+> - [`WINetworkSharingError.timeout`](../winetworksharingerror/timeout.md): The person didn’t respond to the request.
+> - [`WINetworkSharingError.noAvailableNetworks`](../winetworksharingerror/noavailablenetworks.md): No shareable networks were available nearby.
+> - [`WINetworkSharingError.appNotInForeground`](../winetworksharingerror/appnotinforeground.md): Called when [`newShareableNetworkAvailable`](./networkevent/newshareablenetworkavailable.md) is false and the container app isn’t in the foreground.
+> - [`WINetworkSharingError.accessoryNotAuthorized`](../winetworksharingerror/accessorynotauthorized.md): The person hasn’t authorized network data sharing to the accessory.
+> - [`WINetworkSharingError.accessoryNotConnected`](../winetworksharingerror/accessorynotconnected.md): The accessory isn’t connected when making this request.
 
 ## Parameters
 
-- `scanProvider`: The optional closure the system calls periodically to get updated scan results from the accessory. Returns networks your accessory discovers to help people select compatible, high-performance networks. Defaults to `nil` when your accessory provides no scan information. The closure receives: - **accessory**: The `ASAccessory` configured for this provider.
-- **scanRequest**: An `AccessoryScanRequest` containing scan parameters.
-- **Returns**: An `AccessoryScanResponse` with accessory scan results, or `nil` when no changes occurred since the previous results.
+- `scanProvider`: The optional closure the system calls periodically to get updated scan results from the accessory. Returns networks your accessory discovers to help people select compatible, high-performance networks. Defaults to `nil` when your accessory provides no scan information. The closure receives:
+
+  - **accessory**: The `ASAccessory` configured for this provider.
+  - **scanRequest**: An `AccessoryScanRequest` containing scan parameters.
+  - **Returns**: An `AccessoryScanResponse` with accessory scan results, or `nil` when no changes occurred since the previous results.
 
 ## See Also
 
-- [WINetworkSharingProvider.AccessoryScanRequest](winetworksharingprovider/accessoryscanrequest.md)
+### Displaying network selection
+- [WINetworkSharingProvider.AccessoryScanRequest](./accessoryscanrequest.md)
   A request for the accessory to scan for available Wi-Fi networks.
-- [WINetworkSharingProvider.AccessoryScanResponse](winetworksharingprovider/accessoryscanresponse.md)
+- [WINetworkSharingProvider.AccessoryScanResponse](./accessoryscanresponse.md)
   A scan response from the accessory containing Wi-Fi scan results, if any.
-- [WINetworkSharingProvider.AccessoryScanResult](winetworksharingprovider/accessoryscanresult.md)
+- [WINetworkSharingProvider.AccessoryScanResult](./accessoryscanresult.md)
   An access point that the accessory was able to discover in its Wi-Fi scans.
 
 

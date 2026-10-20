@@ -1,7 +1,8 @@
 # copyMemory(from:byteCount:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies the specified number of bytes from the given raw pointer’s memory into this pointer’s memory.
 

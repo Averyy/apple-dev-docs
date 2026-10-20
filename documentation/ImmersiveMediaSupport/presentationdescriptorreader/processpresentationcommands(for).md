@@ -1,7 +1,8 @@
 # processPresentationCommands(for:)
 
 **Framework**: Immersive Media Support  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Processes the commands and updates the publishers exported by this reader when called by the application (e.g. render/playback loop)
 

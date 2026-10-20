@@ -1,25 +1,26 @@
 # SetEnableWithCompletion
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Controls the enable state of the interrupt source.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t SetEnableWithCompletion(bool enable, IODispatchSourceCancelHandler handler);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](kioreturnsuccess.md) on success, or another value if an error occurs. See [`Error Codes`](error-codes.md).
+[`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../error-codes.md).
 
 ## Parameters
 
@@ -28,7 +29,8 @@ virtual kern_return_t SetEnableWithCompletion(bool enable, IODispatchSourceCance
 
 ## See Also
 
-- [Cancel](iodataqueuedispatchsource/cancel.md)
+### Starting and Stopping the Dispatch Source
+- [Cancel](./cancel.md)
   Cancels all callbacks from the dispatch source.
 
 

@@ -1,20 +1,27 @@
 # prepareForPresentation(in:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs any custom configuration of the document picker view controller.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 8.0+ - Deprecated in 14.0
+- iPadOS 8.0+ - Deprecated in 14.0
+- Mac Catalyst 13.1+ - Deprecated in 14.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: For more information, see [`UIDocumentPickerExtensionViewController`](../uidocumentpickerextensionviewcontroller.md).
 
 ## Declaration
 
 ```swift
 func prepareForPresentation(in mode: UIDocumentPickerMode)
+```
+
+```objc
+- (void) prepareForPresentationInMode:(UIDocumentPickerMode) mode;
 ```
 
 #### Discussion
@@ -25,7 +32,7 @@ Different modes may require different user interfaces. For example, the UIDocume
 
 When overriding this method, examine the mode and present an appropriate user interface for the task at hand. If the differences between the modes are significant, consider creating separate child view controllers for each mode and then present the appropriate child in this method.
 
-If your extension can manage multiple file types, check the [`validTypes`](uidocumentpickerextensionviewcontroller/validtypes.md) property and make sure you are presenting only files that match one or more of the specified types.
+If your extension can manage multiple file types, check the [`validTypes`](./validtypes.md) property and make sure you are presenting only files that match one or more of the specified types.
 
 ## Parameters
 
@@ -33,17 +40,18 @@ If your extension can manage multiple file types, check the [`validTypes`](uidoc
 
 ## See Also
 
-- [func dismissGrantingAccess(to: URL?)](uidocumentpickerextensionviewcontroller/dismissgrantingaccess(to:).md)
+### Managing the user interface
+- [func dismissGrantingAccess(to: URL?)](./dismissgrantingaccess%28to%29.md)
   Dismisses the document picker.
-- [var documentPickerMode: UIDocumentPickerMode](uidocumentpickerextensionviewcontroller/documentpickermode.md)
+- [var documentPickerMode: UIDocumentPickerMode](./documentpickermode.md)
   The document picker’s file-transfer operation. (read-only)
-- [var documentStorageURL: URL?](uidocumentpickerextensionviewcontroller/documentstorageurl.md)
+- [var documentStorageURL: URL?](./documentstorageurl.md)
   The root URL for documents provided by the corresponding File Provider extension. (read-only)
-- [var originalURL: URL?](uidocumentpickerextensionviewcontroller/originalurl.md)
+- [var originalURL: URL?](./originalurl.md)
   The URL of the file to be exported. (read-only)
-- [var providerIdentifier: String](uidocumentpickerextensionviewcontroller/provideridentifier.md)
+- [var providerIdentifier: String](./provideridentifier.md)
   An identifier shared by this Document Picker extension and its corresponding File Provider extension. (read-only)
-- [var validTypes: [String]?](uidocumentpickerextensionviewcontroller/validtypes.md)
+- [var validTypes: [String]?](./validtypes.md)
   An array of valid uniform type identifiers.
 
 

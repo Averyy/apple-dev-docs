@@ -1,7 +1,8 @@
 # CMTimeCompare(_:_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the numerical relationship of two times.
 
@@ -18,6 +19,10 @@ Returns the numerical relationship of two times.
 
 ```swift
 func CMTimeCompare(_ time1: CMTime, _ time2: CMTime) -> Int32
+```
+
+```c
+extern int32_t CMTimeCompare(CMTime time1, CMTime time2);
 ```
 
 #### Return Value
@@ -38,7 +43,7 @@ To sort numeric and nonnumeric times consistently, this call uses the following 
 
 Times with numerically larger epochs are greater than those with smaller epochs. ``
 
-> 💡 **Tip**:  You can also use the [`CMTIME_COMPARE_INLINE`](cmtime_compare_inline.md) macro to compare times. This macro results in a more readable expression because it puts the comparison operator between the operands.
+> 💡 **Tip**:  You can also use the [`CMTIME_COMPARE_INLINE`](./cmtime_compare_inline.md) macro to compare times. This macro results in a more readable expression because it puts the comparison operator between the operands.
 
 ## Parameters
 
@@ -47,9 +52,10 @@ Times with numerically larger epochs are greater than those with smaller epochs.
 
 ## See Also
 
-- [func CMTimeMaximum(CMTime, CMTime) -> CMTime](cmtimemaximum(_:_:).md)
+### Comparing Times
+- [func CMTimeMaximum(CMTime, CMTime) -> CMTime](./cmtimemaximum%28_,_%29.md)
   Returns the greater of two time values.
-- [func CMTimeMinimum(CMTime, CMTime) -> CMTime](cmtimeminimum(_:_:).md)
+- [func CMTimeMinimum(CMTime, CMTime) -> CMTime](./cmtimeminimum%28_,_%29.md)
   Returns the lesser of two time values.
 
 

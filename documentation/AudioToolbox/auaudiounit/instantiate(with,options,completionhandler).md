@@ -1,7 +1,8 @@
 # instantiate(with:options:completionHandler:)
 
 **Framework**: Audio Toolbox  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Asynchronously creates an audio unit instance.
 
@@ -16,7 +17,15 @@ Asynchronously creates an audio unit instance.
 ## Declaration
 
 ```swift
+class func instantiate(with componentDescription: AudioComponentDescription, options: AudioComponentInstantiationOptions = [], completionHandler: @escaping @Sendable (AUAudioUnit?, (any Error)?) -> Void)
+```
+
+```swift
 class func instantiate(with componentDescription: AudioComponentDescription, options: AudioComponentInstantiationOptions = []) async throws -> AUAudioUnit
+```
+
+```objc
++ (void) instantiateWithComponentDescription:(AudioComponentDescription) componentDescription options:(AudioComponentInstantiationOptions) options completionHandler:(void (^)(AUAudioUnit *audioUnit, NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -29,14 +38,17 @@ Certain types of audio units must be instantiated asynchronously, such as versio
 
 - `componentDescription`: The component to instantiate.
 - `options`: Options for loading the unit in-process or out-of-process.
-- `completionHandler`: The block called when instantiation has completed. The block parameters are defined as follows: - **audioUnit**: An initialized audio unit if the operation succeeded, or `nil` if it failed.
-- **error**: An error if the operation failed, or `nil` if it succeeded.
+- `completionHandler`: The block called when instantiation has completed. The block parameters are defined as follows:
+
+  - **audioUnit**: An initialized audio unit if the operation succeeded, or `nil` if it failed.
+  - **error**: An error if the operation failed, or `nil` if it succeeded.
 
 ## See Also
 
-- [convenience init(componentDescription: AudioComponentDescription) throws](auaudiounit/init(componentdescription:).md)
+### Creating an Audio Unit
+- [convenience init(componentDescription: AudioComponentDescription) throws](./init%28componentdescription%29.md)
   Synchronously initializes a new audio unit object.
-- [init(componentDescription: AudioComponentDescription, options: AudioComponentInstantiationOptions) throws](auaudiounit/init(componentdescription:options:).md)
+- [init(componentDescription: AudioComponentDescription, options: AudioComponentInstantiationOptions) throws](./init%28componentdescription,options%29.md)
   Synchronously initializes a new audio unit object.
 
 

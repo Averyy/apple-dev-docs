@@ -1,7 +1,8 @@
 # height
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The mobile driver’s license holder’s height on record with the issuer.
 

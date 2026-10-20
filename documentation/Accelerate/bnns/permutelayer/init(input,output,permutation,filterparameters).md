@@ -1,7 +1,8 @@
 # init(input:output:permutation:filterParameters:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new permute layer.
 
@@ -11,8 +12,10 @@ Returns a new permute layer.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 

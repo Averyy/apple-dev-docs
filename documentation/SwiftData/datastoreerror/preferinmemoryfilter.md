@@ -1,7 +1,8 @@
 # DataStoreError.preferInMemoryFilter
 
 **Framework**: SwiftData  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -21,9 +22,10 @@ case preferInMemoryFilter
 
 ## See Also
 
-- [DataStoreError.invalidPredicate](datastoreerror/invalidpredicate.md)
-- [DataStoreError.preferInMemorySort](datastoreerror/preferinmemorysort.md)
-- [DataStoreError.unsupportedFeature](datastoreerror/unsupportedfeature.md)
+### Getting error codes
+- [DataStoreError.invalidPredicate](./invalidpredicate.md)
+- [DataStoreError.preferInMemorySort](./preferinmemorysort.md)
+- [DataStoreError.unsupportedFeature](./unsupportedfeature.md)
 
 
 ---

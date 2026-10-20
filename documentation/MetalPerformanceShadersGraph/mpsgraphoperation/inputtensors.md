@@ -1,7 +1,8 @@
 # inputTensors
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The input tensors of the operation.
 
@@ -17,6 +18,10 @@ The input tensors of the operation.
 
 ```swift
 var inputTensors: [MPSGraphTensor] { get }
+```
+
+```objc
+@property (nonatomic, readonly, nonnull) NSArray<MPSGraphTensor *> * inputTensors;
 ```
 
 

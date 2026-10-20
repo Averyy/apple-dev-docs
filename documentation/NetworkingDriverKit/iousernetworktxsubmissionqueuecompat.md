@@ -1,34 +1,35 @@
 # IOUserNetworkTxSubmissionQueueCompat
 
 **Framework**: NetworkingDriverKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 class IOUserNetworkTxSubmissionQueueCompat;
 ```
 
 ## Topics
 
 ### Instance Methods
-- [free](iousernetworktxsubmissionqueuecompat/free.md)
-- [init](iousernetworktxsubmissionqueuecompat/init.md)
-- [initWithPool](iousernetworktxsubmissionqueuecompat/initwithpool.md)
-- [purgePackets](iousernetworktxsubmissionqueuecompat/purgepackets.md)
+- [free](./iousernetworktxsubmissionqueuecompat/free.md)
+- [init](./iousernetworktxsubmissionqueuecompat/init.md)
+- [initWithPool](./iousernetworktxsubmissionqueuecompat/initwithpool.md)
+- [purgePackets](./iousernetworktxsubmissionqueuecompat/purgepackets.md)
 ### Type Methods
-- [Create](iousernetworktxsubmissionqueuecompat/create-46dem.md)
-- [Create](iousernetworktxsubmissionqueuecompat/create-9aa1k.md)
-- [withPool](iousernetworktxsubmissionqueuecompat/withpool.md)
-- [withPoolAndServiceClass](iousernetworktxsubmissionqueuecompat/withpoolandserviceclass.md)
+- [Create](./iousernetworktxsubmissionqueuecompat/create-46dem.md)
+- [Create](./iousernetworktxsubmissionqueuecompat/create-9aa1k.md)
+- [withPool](./iousernetworktxsubmissionqueuecompat/withpool.md)
+- [withPoolAndServiceClass](./iousernetworktxsubmissionqueuecompat/withpoolandserviceclass.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOUserNetworkPacketQueueCompat](iousernetworkpacketqueuecompat.md)
+- [IOUserNetworkPacketQueueCompat](./iousernetworkpacketqueuecompat.md)
 
 
 ---

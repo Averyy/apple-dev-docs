@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a volume enumeration options value.
 

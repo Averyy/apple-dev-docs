@@ -1,18 +1,19 @@
 # AVAudioApplication.recordPermission.undetermined
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the app hasn’t requested recording permission.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ Indicates the app hasn’t requested recording permission.
 case undetermined
 ```
 
+```c
+AVAudioApplicationRecordPermissionUndetermined
+```
+
 ## See Also
 
-- [AVAudioApplication.recordPermission.granted](avaudioapplication/recordpermission-swift.enum/granted.md)
+### Checking permission states
+- [AVAudioApplication.recordPermission.granted](./granted.md)
   Indicates the user grants the app permission to record audio.
-- [AVAudioApplication.recordPermission.denied](avaudioapplication/recordpermission-swift.enum/denied.md)
+- [AVAudioApplication.recordPermission.denied](./denied.md)
   Indicates the user denies the app permission to record audio.
 
 

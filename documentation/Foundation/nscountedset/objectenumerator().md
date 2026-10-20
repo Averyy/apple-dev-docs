@@ -1,7 +1,8 @@
 # objectEnumerator()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an enumerator object that lets you access each object in the set once, independent of its count.
 
@@ -20,6 +21,10 @@ Returns an enumerator object that lets you access each object in the set once, i
 func objectEnumerator() -> NSEnumerator
 ```
 
+```objc
+- (NSEnumerator<id> *) objectEnumerator;
+```
+
 #### Return Value
 
 An enumerator object that lets you access each object in the set once, independent of its count.
@@ -28,13 +33,15 @@ An enumerator object that lets you access each object in the set once, independe
 
 If you add a given object to the counted set multiple times, an enumeration of the set will produce that object only once.
 
-You shouldn’t modify the set during enumeration. If you intend to modify the set, use the [`allObjects`](nsset/allobjects.md) method to create a “snapshot,” then enumerate the snapshot and modify the original set.
+You shouldn’t modify the set during enumeration. If you intend to modify the set, use the [`allObjects`](../nsset/allobjects.md) method to create a “snapshot,” then enumerate the snapshot and modify the original set.
 
 ## See Also
 
-- [func nextObject() -> Any?](nsenumerator/nextobject.md)
+### Related Documentation
+- [func nextObject() -> Any?](../nsenumerator/nextobject%28%29.md)
   Returns the next object from the collection being enumerated.
-- [func count(for: Any) -> Int](nscountedset/count(for:).md)
+### Examining a Counted Set
+- [func count(for: Any) -> Int](./count%28for%29.md)
   Returns the count associated with a given object in the set.
 
 

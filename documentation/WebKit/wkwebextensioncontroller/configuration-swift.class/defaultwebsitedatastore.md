@@ -1,7 +1,8 @@
 # defaultWebsiteDataStore
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default data store for website data and cookie access in extension contexts.
 
@@ -18,9 +19,13 @@ The default data store for website data and cookie access in extension contexts.
 var defaultWebsiteDataStore: WKWebsiteDataStore! { get set }
 ```
 
+```objc
+@property (nonatomic, retain, null_resettable) WKWebsiteDataStore * defaultWebsiteDataStore;
+```
+
 #### Discussion
 
-This property sets the primary data store for managing website data, including cookies, which extensions can access, subject to the granted permissions within the extension contexts. Defaults to [`default()`](wkwebsitedatastore/default().md).
+This property sets the primary data store for managing website data, including cookies, which extensions can access, subject to the granted permissions within the extension contexts. Defaults to [`default()`](../../wkwebsitedatastore/default%28%29.md).
 
 > **Note**: In addition to this data store, extensions can also access other data stores, such as non-persistent ones, for any open tabs.
 

@@ -1,7 +1,8 @@
 # accessibilityNextTextNavigationElement
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An accessibility element that contains text that semantically follows this element’s text.
 
@@ -16,6 +17,10 @@ An accessibility element that contains text that semantically follows this eleme
 ```swift
 @MainActor
 var accessibilityNextTextNavigationElement: Any? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) id accessibilityNextTextNavigationElement;
 ```
 
 #### Discussion

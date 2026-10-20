@@ -1,7 +1,8 @@
 # isScrollEnabled
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether any scroll views associated with this environment allow scrolling to occur.
 
@@ -22,11 +23,12 @@ var isScrollEnabled: Bool { get set }
 
 #### Discussion
 
-The default value is `true`. Use the [`scrollDisabled(_:)`](view/scrolldisabled(_:).md) modifier to configure this property.
+The default value is `true`. Use the [`scrollDisabled(_:)`](../view/scrolldisabled%28_%29.md) modifier to configure this property.
 
 ## See Also
 
-- [func scrollDisabled(Bool) -> some View](view/scrolldisabled(_:).md)
+### Disabling scrolling
+- [func scrollDisabled(Bool) -> some View](../view/scrolldisabled%28_%29.md)
   Disables or enables scrolling in scrollable views.
 
 

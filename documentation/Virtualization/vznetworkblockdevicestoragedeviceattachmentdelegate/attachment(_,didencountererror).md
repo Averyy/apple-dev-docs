@@ -1,7 +1,8 @@
 # attachment(_:didEncounterError:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The method the attachment object calls when the NBD client encounters a nonrecoverable error.
 
@@ -14,6 +15,10 @@ The method the attachment object calls when the NBD client encounters a nonrecov
 optional func attachment(_ attachment: VZNetworkBlockDeviceStorageDeviceAttachment, didEncounterError error: any Error)
 ```
 
+```objc
+- (void) attachment:(VZNetworkBlockDeviceStorageDeviceAttachment *) attachment didEncounterError:(NSError *) error;
+```
+
 #### Discussion
 
 After the attachment object calls this method, the NBD client is in a nonfunctional state.
@@ -21,11 +26,12 @@ After the attachment object calls this method, the NBD client is in a nonfunctio
 ## Parameters
 
 - `attachment`: The attachment object calling the delegate method.
-- `error`: An [`NSError`](https://developer.apple.com/documentation/foundation/nserror) that describes the nonrecoverable error.
+- `error`: An [`NSError`](../../Foundation/nserror.md) that describes the nonrecoverable error.
 
 ## See Also
 
-- [func attachmentWasConnected(VZNetworkBlockDeviceStorageDeviceAttachment)](vznetworkblockdevicestoragedeviceattachmentdelegate/attachmentwasconnected(_:).md)
+### Responding to connectivity changes
+- [func attachmentWasConnected(VZNetworkBlockDeviceStorageDeviceAttachment)](./attachmentwasconnected%28_%29.md)
   The method the attachment object calls when the NBD client successfully connects or reconnects with the server.
 
 

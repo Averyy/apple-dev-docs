@@ -1,7 +1,8 @@
 # joints
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of all of the rig’s joint settings.
 

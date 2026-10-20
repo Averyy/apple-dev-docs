@@ -1,7 +1,8 @@
 # init(position:stiffness:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a position constraint with the given target position and stiffness.
 

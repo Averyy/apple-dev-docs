@@ -1,7 +1,8 @@
 # triangle
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Triangle symbol.
 
@@ -19,6 +20,8 @@ Triangle symbol.
 ```swift
 static var triangle: BasicChartSymbolShape { get }
 ```
+
+Available when `Self` is `BasicChartSymbolShape`.
 
 
 ---

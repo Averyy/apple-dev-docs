@@ -1,7 +1,8 @@
 # addingProduct(_:_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the result of adding the product of the two given values to this value, computed without intermediate rounding.
 
@@ -26,7 +27,7 @@ The product of `lhs` and `rhs`, added to this value.
 
 #### Discussion
 
-This method is equivalent to the C `fma` function and implements the `fusedMultiplyAdd` operation defined by the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
+This method is equivalent to the C `fma` function and implements the `fusedMultiplyAdd` operation defined by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 
 ## Parameters
 
@@ -35,23 +36,24 @@ This method is equivalent to the C `fma` function and implements the `fusedMulti
 
 ## See Also
 
-- [Floating-Point Operators for Double](floating-point-operators-for-double.md)
+### Performing Calculations
+- [Floating-Point Operators for Double](../floating-point-operators-for-double.md)
   Perform arithmetic and bitwise operations or compare values.
-- [func addProduct(Double, Double)](double/addproduct(_:_:).md)
+- [func addProduct(Double, Double)](./addproduct%28_,_%29.md)
   Adds the product of the two given values to this value in place, computed without intermediate rounding.
-- [func squareRoot() -> Self](double/squareroot.md)
+- [func squareRoot() -> Self](./squareroot%28%29.md)
   Returns the square root of the value, rounded to a representable value.
-- [func formSquareRoot()](double/formsquareroot.md)
+- [func formSquareRoot()](./formsquareroot%28%29.md)
   Replaces this value with its square root, rounded to a representable value.
-- [func remainder(dividingBy: Self) -> Self](double/remainder(dividingby:).md)
+- [func remainder(dividingBy: Self) -> Self](./remainder%28dividingby%29.md)
   Returns the remainder of this value divided by the given value.
-- [func formRemainder(dividingBy: Double)](double/formremainder(dividingby:).md)
+- [func formRemainder(dividingBy: Double)](./formremainder%28dividingby%29.md)
   Replaces this value with the remainder of itself divided by the given value.
-- [func truncatingRemainder(dividingBy: Self) -> Self](double/truncatingremainder(dividingby:).md)
+- [func truncatingRemainder(dividingBy: Self) -> Self](./truncatingremainder%28dividingby%29.md)
   Returns the remainder of this value divided by the given value using truncating division.
-- [func formTruncatingRemainder(dividingBy: Double)](double/formtruncatingremainder(dividingby:).md)
+- [func formTruncatingRemainder(dividingBy: Double)](./formtruncatingremainder%28dividingby%29.md)
   Replaces this value with the remainder of itself divided by the given value using truncating division.
-- [func negate()](double/negate.md)
+- [func negate()](./negate%28%29.md)
   Replaces this value with its additive inverse.
 
 

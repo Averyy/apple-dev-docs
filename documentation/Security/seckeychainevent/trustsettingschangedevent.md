@@ -1,7 +1,8 @@
 # SecKeychainEvent.trustSettingsChangedEvent
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates trust settings have changed.
 
@@ -13,6 +14,10 @@ Indicates trust settings have changed.
 
 ```swift
 case trustSettingsChangedEvent
+```
+
+```c
+kSecTrustSettingsChangedEvent
 ```
 
 

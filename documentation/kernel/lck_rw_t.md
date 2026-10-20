@@ -1,14 +1,15 @@
 # lck_rw_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef struct __lck_rw_t__ lck_rw_t;
 ```
 

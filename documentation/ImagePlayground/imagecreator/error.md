@@ -1,16 +1,17 @@
 # ImageCreator.Error
 
 **Framework**: Image Playground  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Errors that can occur during the image generation process.
 
 **Availability**:
-- iOS 18.4+
-- iPadOS 18.4+
-- Mac Catalyst 18.4+
-- macOS 15.4+
-- visionOS 2.4+
+- iOS 18.4+ - Deprecated in 27.0
+- iPadOS 18.4+ - Deprecated in 27.0
+- Mac Catalyst 18.4+ - Deprecated in 27.0
+- macOS 15.4+ - Deprecated in 27.0
+- visionOS 2.4+ - Deprecated in 27.0
 
 ## Declaration
 
@@ -21,48 +22,49 @@ enum Error
 ## Topics
 
 ### Getting the error codes
-- [ImageCreator.Error.notSupported](imagecreator/error/notsupported.md)
+- [ImageCreator.Error.notSupported](./error/notsupported.md)
   An error that indicates the device doesn’t support image generation.
-- [ImageCreator.Error.unavailable](imagecreator/error/unavailable.md)
+- [ImageCreator.Error.unavailable](./error/unavailable.md)
   An error that indicates image creation is currently unavailable.
-- [ImageCreator.Error.creationCancelled](imagecreator/error/creationcancelled.md)
+- [ImageCreator.Error.creationCancelled](./error/creationcancelled.md)
   An error that occurs in response to cancellation of the parent task.
-- [ImageCreator.Error.faceInImageTooSmall](imagecreator/error/faceinimagetoosmall.md)
+- [ImageCreator.Error.faceInImageTooSmall](./error/faceinimagetoosmall.md)
   An error that indicates the system cannot use one of the source images because the face in it is too small.
-- [ImageCreator.Error.unsupportedLanguage](imagecreator/error/unsupportedlanguage.md)
+- [ImageCreator.Error.unsupportedLanguage](./error/unsupportedlanguage.md)
   An error that indicates the input text uses an unsupported language.
-- [ImageCreator.Error.unsupportedInputImage](imagecreator/error/unsupportedinputimage.md)
+- [ImageCreator.Error.unsupportedInputImage](./error/unsupportedinputimage.md)
   An error that indicates the system cannot use one of the specified source images.
-- [ImageCreator.Error.backgroundCreationForbidden](imagecreator/error/backgroundcreationforbidden.md)
+- [ImageCreator.Error.backgroundCreationForbidden](./error/backgroundcreationforbidden.md)
   An error that indicates the app is hidden or in the background.
-- [ImageCreator.Error.creationFailed](imagecreator/error/creationfailed.md)
+- [ImageCreator.Error.creationFailed](./error/creationfailed.md)
   An error that indicates a general failure occurred during image creation.
 ### Enumeration Cases
-- [ImageCreator.Error.conceptsRequirePersonIdentity](imagecreator/error/conceptsrequirepersonidentity.md)
+- [ImageCreator.Error.conceptsRequirePersonIdentity](./error/conceptsrequirepersonidentity.md)
   An error that indicates that a source image containing a person’s face needs to be added in order to complete the request.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomNSError](../../Foundation/customnserror.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [LocalizedError](../../Foundation/localizederror.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
+### Generating images
 - [func images(for: [ImagePlaygroundConcept], style: ImagePlaygroundStyle, limit: Int) -> some AsyncSequence<ImageCreator.CreatedImage, any Error>
-](imagecreator/images(for:style:limit:).md)
+](./images%28for,style,limit%29.md)
   Starts the creation of images based on the description and style information you provide.
-- [let availableStyles: [ImagePlaygroundStyle]](imagecreator/availablestyles.md)
+- [let availableStyles: [ImagePlaygroundStyle]](./availablestyles.md)
   The set of styles you can apply to the images you create.
-- [ImageCreator.CreatedImage](imagecreator/createdimage.md)
+- [ImageCreator.CreatedImage](./createdimage.md)
   A structure that stores a programmatically generated image.
 
 

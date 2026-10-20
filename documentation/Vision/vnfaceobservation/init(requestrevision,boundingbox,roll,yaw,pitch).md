@@ -1,7 +1,8 @@
 # init(requestRevision:boundingBox:roll:yaw:pitch:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an observation that contains the roll, yaw, and pitch of the face.
 
@@ -19,6 +20,10 @@ Creates an observation that contains the roll, yaw, and pitch of the face.
 convenience init(requestRevision: Int, boundingBox: CGRect, roll: NSNumber?, yaw: NSNumber?, pitch: NSNumber?)
 ```
 
+```objc
++ (instancetype) faceObservationWithRequestRevision:(NSUInteger) requestRevision boundingBox:(CGRect) boundingBox roll:(NSNumber *) roll yaw:(NSNumber *) yaw pitch:(NSNumber *) pitch;
+```
+
 ## Parameters
 
 - `requestRevision`: The revision of the request.
@@ -29,7 +34,8 @@ convenience init(requestRevision: Int, boundingBox: CGRect, roll: NSNumber?, yaw
 
 ## See Also
 
-- [convenience init(requestRevision: Int, boundingBox: CGRect, roll: NSNumber?, yaw: NSNumber?)](vnfaceobservation/init(requestrevision:boundingbox:roll:yaw:).md)
+### Creating an Observation
+- [convenience init(requestRevision: Int, boundingBox: CGRect, roll: NSNumber?, yaw: NSNumber?)](./init%28requestrevision,boundingbox,roll,yaw%29.md)
   Creates an observation that contains the roll and yaw of the face.
 
 

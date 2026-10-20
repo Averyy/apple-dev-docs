@@ -7,12 +7,12 @@ Returns an IOFireWireUnit object.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOFireWireUnit * getFireWireUnit(
  void );
 ```
 
-#### Return_value
+#### Return Value
 
 Returns a pointer to an IOFireWireUnit.
 
@@ -22,17 +22,18 @@ An IOFireWireUnit is the provider of an IOFireWireSBP2Target. In order to use th
 
 ## See Also
 
-- [handleClose](iofirewiresbp2target/1813009-handleclose.md)
+### Miscellaneous
+- [handleClose](./api-1813009-handleclose.md)
   Overrideable method to control the open / close behaviour of an IOService.
-- [handleIsOpen](iofirewiresbp2target/1813021-handleisopen.md)
+- [handleIsOpen](./api-1813021-handleisopen.md)
   Overrideable method to control the open / close behaviour of an IOService.
-- [handleOpen](iofirewiresbp2target/1813037-handleopen.md)
+- [handleOpen](./api-1813037-handleopen.md)
   Overrideable method to control the open / close behaviour of an IOService.
-- [matchPropertyTable](iofirewiresbp2target/1813051-matchpropertytable.md)
+- [matchPropertyTable](./api-1813051-matchpropertytable.md)
   Implements SBP2 specific matching.
-- [start](iofirewiresbp2target/1813074-start.md)
+- [start](./api-1813074-start.md)
   During an IOService instantiation, the start method is called when the IOService has been selected to run on the provider.
-- [stop](iofirewiresbp2target/1813099-stop.md)
+- [stop](./api-1813099-stop.md)
   During an IOService termination, the stop method is called in its clients before they are detached & it is destroyed.
 
 

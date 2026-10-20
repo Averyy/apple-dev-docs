@@ -1,7 +1,8 @@
 # currentInputModeDidChangeNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that posts when the current input mode changes.
 
@@ -9,7 +10,7 @@ A notification that posts when the current input mode changes.
 - iOS 4.2+
 - iPadOS 4.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,9 +20,13 @@ nonisolated
 class let currentInputModeDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UITextInputCurrentInputModeDidChangeNotification;
+```
+
 #### Discussion
 
-The posting object is a [`UITextInputMode`](uitextinputmode.md) instance.
+The posting object is a [`UITextInputMode`](../uitextinputmode.md) instance.
 
 
 ---

@@ -1,7 +1,8 @@
 # IDBFactory
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,16 +10,16 @@
 
 ## Declaration
 
-```swift
+```
 interface IDBFactory
 ```
 
 ## Topics
 
 ### Instance Methods
-- [cmp](idbfactory/1628924-cmp.md)
-- [deleteDatabase](idbfactory/1633751-deletedatabase.md)
-- [open](idbfactory/1629864-open.md)
+- [cmp](./idbfactory/api-1628924-cmp.md)
+- [deleteDatabase](./idbfactory/api-1633751-deletedatabase.md)
+- [open](./idbfactory/api-1629864-open.md)
 
 
 ---

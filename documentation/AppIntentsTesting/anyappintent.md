@@ -1,7 +1,8 @@
 # AnyAppIntent
 
 **Framework**: App Intents Testing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased, intermediate representation of an app intent for testing purposes.
 
@@ -23,7 +24,7 @@ struct AnyAppIntent
 
 #### Overview
 
-The [`AnyAppIntent`](anyappintent.md) structure resolves to your actual app intent type and gives you access to its parameters and results at runtime, enabling you to test your app intent code as shown in the following example:
+The [`AnyAppIntent`](./anyappintent.md) structure resolves to your actual app intent type and gives you access to its parameters and results at runtime, enabling you to test your app intent code as shown in the following example:
 
 ```swift
 // Getting an intent definition and creating an instance.
@@ -51,42 +52,43 @@ let result = try await intent.run()
 ## Topics
 
 ### Identifying the intent
-- [let bundleIdentifier: String](anyappintent/bundleidentifier.md)
+- [let bundleIdentifier: String](./anyappintent/bundleidentifier.md)
   The bundle identifier of the app that contains this intent.
-- [let identifier: String](anyappintent/identifier.md)
+- [let identifier: String](./anyappintent/identifier.md)
   The unique identifier for the intent type.
 ### Performing the intent
-- [func run() async throws -> ResolvedIntentResult](anyappintent/run.md)
+- [func run() async throws -> ResolvedIntentResult](./anyappintent/run%28%29.md)
   Performs the intent in the current test session.
 ### Subscripts
-- [subscript<T>(dynamicMember _: String) -> T](anyappintent/subscript(dynamicmember:)-127ab.md)
+- [subscript<T>(dynamicMember _: String) -> T](./anyappintent/subscript%28dynamicmember%29-127ab.md)
   Accesses an intent parameter by name, for comparison with a known value.
-- [subscript(dynamicMember _: String) -> DynamicPropertyPath](anyappintent/subscript(dynamicmember:)-7agfn.md)
+- [subscript(dynamicMember _: String) -> DynamicPropertyPath](./anyappintent/subscript%28dynamicmember%29-7agfn.md)
   Accesses a nested entity property by name.
-- [subscript(dynamicMember _: String) -> (any IntentValueExpressing)?](anyappintent/subscript(dynamicmember:)-8l8h0.md)
+- [subscript(dynamicMember _: String) -> (any IntentValueExpressing)?](./anyappintent/subscript%28dynamicmember%29-8l8h0.md)
   Accesses an intent parameter by name, without casting.
 ### Default Implementations
-- [CustomStringConvertible Implementations](anyappintent/customstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./anyappintent/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AnyAppEntity](anyappentity.md)
+### Intermediate types
+- [struct AnyAppEntity](./anyappentity.md)
   A type-erased, intermediate representation of your app entity for testing purposes.
-- [struct AnyEntityQuery](anyentityquery.md)
+- [struct AnyEntityQuery](./anyentityquery.md)
   A type-erased, intermediate representation of your entity query for testing purposes.
-- [struct AnyAppEnum](anyappenum.md)
+- [struct AnyAppEnum](./anyappenum.md)
   A type-erased representation of an app enumeration that provides dynamic enumeration value access.
-- [struct AnyTransientAppEntity](anytransientappentity.md)
+- [struct AnyTransientAppEntity](./anytransientappentity.md)
   A type-erased representation of a transient app entity that provides dynamic property access.
 
 

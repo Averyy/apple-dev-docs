@@ -1,7 +1,8 @@
 # CertificateUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represent a certificate update request resource.
 
@@ -10,21 +11,21 @@ The data structure that represent a certificate update request resource.
 
 ## Declaration
 
-```swift
+```
 object CertificateUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object CertificateUpdateRequest.Data.Attributes](certificateupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object CertificateUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a certificate update request resource.
 
 ## Properties
 
 - `attributes` (CertificateUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `certificates`
 
 
 ---

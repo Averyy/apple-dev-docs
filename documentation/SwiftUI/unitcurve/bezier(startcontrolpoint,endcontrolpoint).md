@@ -1,7 +1,8 @@
 # bezier(startControlPoint:endControlPoint:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new curve using bezier control points.
 

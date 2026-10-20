@@ -1,7 +1,8 @@
 # HMError.Code.noHomeHub
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating no home hub found.
 
@@ -19,9 +20,14 @@ An error indicating no home hub found.
 case noHomeHub
 ```
 
+```c
+HMErrorCodeNoHomeHub
+```
+
 ## See Also
 
-- [HMError.Code.noCompatibleHomeHub](hmerror/code/nocompatiblehomehub.md)
+### Hub errors
+- [HMError.Code.noCompatibleHomeHub](./nocompatiblehomehub.md)
   An error indicating no compatible home hub found.
 
 

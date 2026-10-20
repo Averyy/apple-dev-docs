@@ -1,7 +1,8 @@
 # DeviceHinge
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type encapsulating the state of a single hinge.
 
@@ -49,26 +50,27 @@ In the example above, the current angle and status of the hinge will be displaye
 ## Topics
 
 ### Getting hinge information
-- [var angle: Angle](devicehinge/angle.md)
+- [var angle: Angle](./devicehinge/angle.md)
   Current angle of the hinge.
-- [var status: DeviceHinge.Status](devicehinge/status-swift.property.md)
+- [var status: DeviceHinge.Status](./devicehinge/status-swift.property.md)
   Current status of the hinge.
-- [DeviceHinge.Status](devicehinge/status-swift.struct.md)
+- [DeviceHinge.Status](./devicehinge/status-swift.struct.md)
   The status of an individual hinge.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func onHingeChange(isEnabled: Bool, (DeviceHingeContext, DeviceHingeContext) -> Void) -> some View](view/onhingechange(isenabled:_:).md)
+### Responding to hinge angle changes
+- [func onHingeChange(isEnabled: Bool, (DeviceHingeContext, DeviceHingeContext) -> Void) -> some View](./view/onhingechange%28isenabled,_%29.md)
   Adds an action to perform when the hinge context of the view hierarchy changes.
-- [struct DeviceHingeContext](devicehingecontext.md)
+- [struct DeviceHingeContext](./devicehingecontext.md)
   A type describing the context of hinges on the device.
 
 

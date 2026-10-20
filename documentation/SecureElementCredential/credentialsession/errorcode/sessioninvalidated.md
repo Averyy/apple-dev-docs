@@ -1,7 +1,8 @@
 # CredentialSession.ErrorCode.sessionInvalidated
 
 **Framework**: SecureElementCredential  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The client requested invalidation of the session.
 
@@ -17,7 +18,8 @@ case sessionInvalidated
 
 ## See Also
 
-- [CredentialSession.ErrorCode.invalidSessionState](credentialsession/errorcode/invalidsessionstate.md)
+### Session error codes
+- [CredentialSession.ErrorCode.invalidSessionState](./invalidsessionstate.md)
   The session is in a state that doesn’t permit that function.
 
 

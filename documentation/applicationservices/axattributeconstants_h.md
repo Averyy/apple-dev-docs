@@ -1,6 +1,7 @@
 # AXAttributeConstants.h
 
-**Framework**: Application Services
+**Framework**: Application Services  
+**Role**: API Collection
 
 #### Overview
 
@@ -13,8 +14,8 @@ Finally, some attribute values hold simple structures, such as CGPoint and CGRec
 ## Topics
 
 ### Constants
-- [Miscellaneous Defines](axattributeconstants_h/miscellaneous_defines.md)
-- [struct AXMenuItemModifiers](axmenuitemmodifiers.md)
+- [Miscellaneous Defines](./axattributeconstants_h/miscellaneous_defines.md)
+- [struct AXMenuItemModifiers](./axmenuitemmodifiers.md)
   Values that indicate the keyboard shortcut modifiers for a menu item (used with the kAXMenuItemCmdModifiersAttribute attribute).
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets the size, in pixels, of the imageblock.
@@ -20,6 +21,10 @@ Sets the size, in pixels, of the imageblock.
 func setImageblockWidth(_ width: Int, height: Int)
 ```
 
+```objc
+- (void) setImageblockWidth:(NSUInteger) width height:(NSUInteger) height;
+```
+
 ## Parameters
 
 - `width`: The width of the imageblock.
@@ -27,17 +32,18 @@ func setImageblockWidth(_ width: Int, height: Int)
 
 ## See Also
 
-- [func setComputePipelineState(any MTLComputePipelineState)](mtlindirectcomputecommand/setcomputepipelinestate(_:).md)
+### Setting a command’s arguments
+- [func setComputePipelineState(any MTLComputePipelineState)](./setcomputepipelinestate%28_%29.md)
   Sets the command’s compute pipeline state.
-- [func setKernelBuffer(any MTLBuffer, offset: Int, at: Int)](mtlindirectcomputecommand/setkernelbuffer(_:offset:at:).md)
+- [func setKernelBuffer(any MTLBuffer, offset: Int, at: Int)](./setkernelbuffer%28_,offset,at%29.md)
   Sets a buffer for the compute function.
-- [func setThreadgroupMemoryLength(Int, index: Int)](mtlindirectcomputecommand/setthreadgroupmemorylength(_:index:).md)
+- [func setThreadgroupMemoryLength(Int, index: Int)](./setthreadgroupmemorylength%28_,index%29.md)
   Sets the size of a block of threadgroup memory.
-- [func setThreadgroupMemoryLength(Int, at: Int)](mtlindirectcomputecommand/setthreadgroupmemorylength(_:at:).md)
+- [func setThreadgroupMemoryLength(Int, at: Int)](./setthreadgroupmemorylength%28_,at%29.md)
   Sets the size of a block of threadgroup memory.
-- [func setStageInRegion(MTLRegion)](mtlindirectcomputecommand/setstageinregion(_:).md)
+- [func setStageInRegion(MTLRegion)](./setstageinregion%28_%29.md)
   Sets the region of the stage-in attributes to apply to the compute kernel.
-- [func setStageIn(MTLRegion)](mtlindirectcomputecommand/setstagein(_:).md)
+- [func setStageIn(MTLRegion)](./setstagein%28_%29.md)
   Sets the region of the stage-in attributes to apply to the compute kernel.
 
 

@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.BirthLocation
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options for the location on the shape of where particles are born, used by the birthLocation property.
 
@@ -22,20 +23,20 @@ enum BirthLocation
 ## Topics
 
 ### Enumeration Cases
-- [ParticleEmitterComponent.BirthLocation.surface](particleemittercomponent/birthlocation-swift.enum/surface.md)
+- [ParticleEmitterComponent.BirthLocation.surface](./birthlocation-swift.enum/surface.md)
   Particles emit from the surface of the shape.
-- [ParticleEmitterComponent.BirthLocation.vertices(count:)](particleemittercomponent/birthlocation-swift.enum/vertices(count:).md)
+- [ParticleEmitterComponent.BirthLocation.vertices(count:)](./birthlocation-swift.enum/vertices%28count%29.md)
   Particles emit from the vertices of the shape. `count` is the number of vertices in each direction, the distribution depends on the EmitterShape chosen.
-- [ParticleEmitterComponent.BirthLocation.volume](particleemittercomponent/birthlocation-swift.enum/volume.md)
+- [ParticleEmitterComponent.BirthLocation.volume](./birthlocation-swift.enum/volume.md)
   Particles emit from the internal volume of the shape.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

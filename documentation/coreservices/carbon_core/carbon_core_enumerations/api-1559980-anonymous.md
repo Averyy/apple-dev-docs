@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var kMPNanokernelNeedsMemoryErr: Int](kmpnanokernelneedsmemoryerr.md)
+- [var kMPNanokernelNeedsMemoryErr: Int](../../kmpnanokernelneedsmemoryerr.md)
 
 
 ---

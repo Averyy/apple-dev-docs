@@ -1,6 +1,7 @@
 # Deprecated symbols
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 Review symbols that are no longer in active development, and their recommended replacements.
 
@@ -11,22 +12,22 @@ Although these symbols are available for use, Apple is no longer actively develo
 ## Topics
 
 ### Deprecated class methods
-- [class func imageFileTypes() -> [String]](nsimage/imagefiletypes.md)
+- [class func imageFileTypes() -> [String]](./nsimage/imagefiletypes%28%29.md)
   Returns an array of strings identifying the image types supported by the registered image representation objects.
-- [class func imageUnfilteredFileTypes() -> [String]](nsimage/imageunfilteredfiletypes.md)
+- [class func imageUnfilteredFileTypes() -> [String]](./nsimage/imageunfilteredfiletypes%28%29.md)
   Returns an array of strings identifying the file types supported directly by the registered image representation objects.
-- [class func imagePasteboardTypes() -> [NSPasteboard.PasteboardType]](nsimage/imagepasteboardtypes.md)
+- [class func imagePasteboardTypes() -> [NSPasteboard.PasteboardType]](./nsimage/imagepasteboardtypes%28%29.md)
   Returns an array of strings identifying the pasteboard types supported directly by the registered image representation objects.
-- [class func imageUnfilteredPasteboardTypes() -> [NSPasteboard.PasteboardType]](nsimage/imageunfilteredpasteboardtypes.md)
+- [class func imageUnfilteredPasteboardTypes() -> [NSPasteboard.PasteboardType]](./nsimage/imageunfilteredpasteboardtypes%28%29.md)
   Returns an array of strings identifying the pasteboard types supported directly by the registered image representation objects.
 ### Deprecated instance methods
-- [func lockFocus()](nsimage/lockfocus.md)
+- [func lockFocus()](./nsimage/lockfocus%28%29.md)
   Prepares the image to receive drawing commands.
-- [func lockFocusFlipped(Bool)](nsimage/lockfocusflipped(_:).md)
+- [func lockFocusFlipped(Bool)](./nsimage/lockfocusflipped%28_%29.md)
   Prepares the image to receive drawing commands using the specified flipped state.
-- [func unlockFocus()](nsimage/unlockfocus.md)
+- [func unlockFocus()](./nsimage/unlockfocus%28%29.md)
   Removes the focus from the image.
-- [convenience init(iconRef: IconRef)](nsimage/init(iconref:).md)
+- [convenience init(iconRef: IconRef)](./nsimage/init%28iconref%29.md)
   Initializes the image object with a Carbon-style icon resource.
 
 

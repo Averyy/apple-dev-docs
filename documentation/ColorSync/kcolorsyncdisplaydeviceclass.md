@@ -1,7 +1,8 @@
 # kColorSyncDisplayDeviceClass
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The device class for a display device.
 
@@ -15,19 +16,24 @@ The device class for a display device.
 var kColorSyncDisplayDeviceClass: Unmanaged<CFString>!
 ```
 
+```c
+extern CFStringRef kColorSyncDisplayDeviceClass;
+```
+
 #### Discussion
 
 The string that represents a display device is `mntr`.
 
 ## See Also
 
-- [var kColorSyncCameraDeviceClass: Unmanaged<CFString>!](kcolorsynccameradeviceclass.md)
+### Identifying device classes
+- [var kColorSyncCameraDeviceClass: Unmanaged<CFString>!](./kcolorsynccameradeviceclass.md)
   The device class for a camera device.
-- [var kColorSyncDeviceClass: Unmanaged<CFString>!](kcolorsyncdeviceclass.md)
+- [var kColorSyncDeviceClass: Unmanaged<CFString>!](./kcolorsyncdeviceclass.md)
   A key whose value is one of the device-class constants below.
-- [var kColorSyncPrinterDeviceClass: Unmanaged<CFString>!](kcolorsyncprinterdeviceclass.md)
+- [var kColorSyncPrinterDeviceClass: Unmanaged<CFString>!](./kcolorsyncprinterdeviceclass.md)
   The device class for a printer device.
-- [var kColorSyncScannerDeviceClass: Unmanaged<CFString>!](kcolorsyncscannerdeviceclass.md)
+- [var kColorSyncScannerDeviceClass: Unmanaged<CFString>!](./kcolorsyncscannerdeviceclass.md)
   The device class for a scanner device.
 
 

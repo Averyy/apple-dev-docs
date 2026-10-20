@@ -1,7 +1,8 @@
 # colorMatrix(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a filter that multiplies by a given color matrix.
 
@@ -28,7 +29,7 @@ A filter that transforms color using the given matrix.
 
 This filter is equivalent to the `feColorMatrix` filter primitive defined by the Scalable Vector Graphics (SVG) specification.
 
-The filter creates the output color `[R', G', B', A']` at each pixel from an input color `[R, G, B, A]` by multiplying the input color by the square matrix formed by the first four columns of the [`ColorMatrix`](colormatrix.md), then adding the fifth column to the result:
+The filter creates the output color `[R', G', B', A']` at each pixel from an input color `[R, G, B, A]` by multiplying the input color by the square matrix formed by the first four columns of the [`ColorMatrix`](../../colormatrix.md), then adding the fifth column to the result:
 
 ```swift
 R' = r1 ✕ R + r2 ✕ G + r3 ✕ B + r4 ✕ A + r5
@@ -39,19 +40,20 @@ A' = a1 ✕ R + a2 ✕ G + a3 ✕ B + a4 ✕ A + a5
 
 ## Parameters
 
-- `matrix`: A [`ColorMatrix`](colormatrix.md) instance used by the filter.
+- `matrix`: A [`ColorMatrix`](../../colormatrix.md) instance used by the filter.
 
 ## See Also
 
-- [static func saturation(Double) -> GraphicsContext.Filter](graphicscontext/filter/saturation(_:).md)
+### Manipulating color
+- [static func saturation(Double) -> GraphicsContext.Filter](./saturation%28_%29.md)
   Returns a filter that applies a saturation adjustment.
-- [static func colorInvert(Double) -> GraphicsContext.Filter](graphicscontext/filter/colorinvert(_:).md)
+- [static func colorInvert(Double) -> GraphicsContext.Filter](./colorinvert%28_%29.md)
   Returns a filter that inverts the color of their results.
-- [static func colorMultiply(Color) -> GraphicsContext.Filter](graphicscontext/filter/colormultiply(_:).md)
+- [static func colorMultiply(Color) -> GraphicsContext.Filter](./colormultiply%28_%29.md)
   Returns a filter that multiplies each color component by the matching component of a given color.
-- [static func hueRotation(Angle) -> GraphicsContext.Filter](graphicscontext/filter/huerotation(_:).md)
+- [static func hueRotation(Angle) -> GraphicsContext.Filter](./huerotation%28_%29.md)
   Returns a filter that applies a hue rotation adjustment.
-- [static func grayscale(Double) -> GraphicsContext.Filter](graphicscontext/filter/grayscale(_:).md)
+- [static func grayscale(Double) -> GraphicsContext.Filter](./grayscale%28_%29.md)
   Returns a filter that applies a grayscale adjustment.
 
 

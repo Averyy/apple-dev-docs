@@ -1,6 +1,7 @@
 # Using paginated endpoints
 
-**Framework**: Device Management
+**Framework**: Device Management  
+**Role**: Article
 
 Traverse large result sets with page-index and cursor-based pagination.
 
@@ -10,18 +11,18 @@ To improve performance, the server uses pagination to return smaller discrete su
 
 The following endpoints support pagination:
 
-- [`Get Assets`](get-assets-4ski1.md)
-- [`Get Assignments`](get-assignments-9wv1e.md)
-- [`Get Users`](get-users-4mwln.md)
+- [`Get Assets`](./get-assets-4ski1.md)
+- [`Get Assignments`](./get-assignments-9wv1e.md)
+- [`Get Users`](./get-users-4mwln.md)
 
 You can use versioned endpoints to retrieve only those records with changes since your previous query. Endpoints that support versioning can accept a `sinceVersionId` query parameter. This lets you keep your data up to date with incremental changes if you’re unable to receive update notifications.
 
 The following endpoints support the `sinceVersionId` query parameter:
 
-- [`Get Assignments`](get-assignments-9wv1e.md)
-- [`Get Users`](get-users-4mwln.md)
+- [`Get Assignments`](./get-assignments-9wv1e.md)
+- [`Get Users`](./get-users-4mwln.md)
 
-#### Handle Pagination
+#### Handle pagination
 
 Requests for large record sets return paginated responses. You can traverse the pages by supplying the `pageIndex` query parameter in your request.
 
@@ -149,7 +150,7 @@ The response that contains the last page of records looks like the following:
 }
 ```
 
-#### Handle Parallel Paginated Requests
+#### Handle parallel paginated requests
 
 Paginated endpoints can accept multiple requests in parallel instead of sequentially, which can significantly reduce the amount of time to request and receive records. For performance reasons, don’t submit more than five requests simultaneously.
 
@@ -160,7 +161,7 @@ To make requests for multiple pages in parallel:
 
 > ❗ **Important**:  The `totalPages` in a result set can change while traversing a paginated result set. This occurs whenever the system modifies underlying data in the result set. When performing parallel requests, it’s important to note whether the value for `totalPages` changes on any paginated response, and to continue to iterate through the result set until you traverse the last page.
 
-#### Handle Versioned Responses
+#### Handle versioned responses
 
 If you’re unable to subscribe to notifications, or are performing an initial sync, use the `sinceVersionId` query parameter to obtain incremental updates to keep your device management service up to date with changes without having to retrieve all records.
 
@@ -177,7 +178,7 @@ To use a `versionId` to obtain modified records:
 
 Repeat these steps at regular intervals to keep your system up to date with incremental changes.
 
-> ❗ **Important**:  The [`Get Assets`](get-assets-4ski1.md) endpoint returns a `versionId` to indicate when the server modifies underlying data. However, the [`Get Assets`](get-assets-4ski1.md) endpoint doesn’t support the `sinceVersionId` query parameter so you can’t query [`Get Assets`](get-assets-4ski1.md) to obtain only those records with modifications.
+> ❗ **Important**:  The [`Get Assets`](./get-assets-4ski1.md) endpoint returns a `versionId` to indicate when the server modifies underlying data. However, the [`Get Assets`](./get-assets-4ski1.md) endpoint doesn’t support the `sinceVersionId` query parameter so you can’t query [`Get Assets`](./get-assets-4ski1.md) to obtain only those records with modifications.
 
 The following is an example of a request for the initial data:
 
@@ -253,7 +254,7 @@ The response that contains the updated data looks like the following:
 
 > **Note**:  Using the `sinceVersionId` query parameter can result in responses with zero records. This isn’t an error or an end signal. It’s just an indication that there aren’t any records with modifications.
 
-#### Handle Cursor Based Pagination
+#### Handle cursor-based pagination
 
 The subscription endpoints use cursor-based pagination instead of page-index pagination. These endpoints include:
 
@@ -280,9 +281,10 @@ The cursor-based endpoints also return a `versionId` in each response. Store the
 
 ## See Also
 
-- [Subscribing to notifications](subscribing-to-notifications.md)
+### Common tasks
+- [Subscribing to notifications](./subscribing-to-notifications.md)
   Monitor events for assets, assignments, and users in your organization.
-- [Handling error responses](handling-error-responses.md)
+- [Handling error responses](./handling-error-responses.md)
   Investigate and resolve service request errors.
 
 

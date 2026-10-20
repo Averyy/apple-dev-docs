@@ -1,7 +1,8 @@
 # PKIdentityError.Code.regionNotSupported
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 case regionNotSupported
+```
+
+```c
+PKIdentityErrorRegionNotSupported
 ```
 
 

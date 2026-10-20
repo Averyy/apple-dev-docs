@@ -1,7 +1,8 @@
 # navigationChildContexts
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The child contexts that a user can navigate to from this context in the Schoolwork app.
 
@@ -16,6 +17,10 @@ The child contexts that a user can navigate to from this context in the Schoolwo
 
 ```swift
 var navigationChildContexts: [CLSContext] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<CLSContext *> * navigationChildContexts;
 ```
 
 #### Discussion
@@ -37,9 +42,9 @@ You can also group by difficulty level:
 - Beginner Quizzes — Contains fractions and spelling quizzes.
 - Advanced quizzes — Contains algebra and grammar quizzes.
 
-If you create contexts for the math and language, and beginner and advanced groups, and then add child quizzes to each by defining unique [`identifierPath`](clscontext/identifierpath.md) values, you’ll create new contexts inside each group. This results in three distinct contexts — the original from the flat list, plus one for each group — to represent each individual quiz.
+If you create contexts for the math and language, and beginner and advanced groups, and then add child quizzes to each by defining unique [`identifierPath`](./identifierpath.md) values, you’ll create new contexts inside each group. This results in three distinct contexts — the original from the flat list, plus one for each group — to represent each individual quiz.
 
-After creating the grouping contexts, you need to define only one context for each quiz. To do this, update each group’s [`navigationChildContexts`](clscontext/navigationchildcontexts.md) collection to indicate all the children that you can navigate to from that group. Use [`addNavigationChildContext(_:)`](clscontext/addnavigationchildcontext(_:).md) to add contexts and [`removeNavigationChildContext(_:)`](clscontext/removenavigationchildcontext(_:).md) to remove them.
+After creating the grouping contexts, you need to define only one context for each quiz. To do this, update each group’s [`navigationChildContexts`](./navigationchildcontexts.md) collection to indicate all the children that you can navigate to from that group. Use [`addNavigationChildContext(_:)`](./addnavigationchildcontext%28_%29.md) to add contexts and [`removeNavigationChildContext(_:)`](./removenavigationchildcontext%28_%29.md) to remove them.
 
 ```swift
 // Group by subject.
@@ -58,9 +63,10 @@ advancedQuizzes.addNavigationChildContext(grammarQuiz)
 
 ## See Also
 
-- [func addNavigationChildContext(CLSContext)](clscontext/addnavigationchildcontext(_:).md)
+### Creating a context presentation hierarchy
+- [func addNavigationChildContext(CLSContext)](./addnavigationchildcontext%28_%29.md)
   Adds a child context that users can navigate to from this context.
-- [func removeNavigationChildContext(CLSContext)](clscontext/removenavigationchildcontext(_:).md)
+- [func removeNavigationChildContext(CLSContext)](./removenavigationchildcontext%28_%29.md)
   Removes the specified context as a presentable child of this context.
 
 

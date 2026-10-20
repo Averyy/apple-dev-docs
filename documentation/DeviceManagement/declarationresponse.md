@@ -1,18 +1,19 @@
 # DeclarationResponse
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object DeclarationResponse
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object DeclarationResponse.DeclarationPayload](declarationresponse/declarationpayload.md)
+- [object DeclarationResponse.DeclarationPayload](./declarationresponse/declarationpayload.md)
 
 ## Properties
 

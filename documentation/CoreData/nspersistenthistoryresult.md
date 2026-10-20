@@ -1,7 +1,8 @@
 # NSPersistentHistoryResult
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The result of a request to fetch persistent history.
 
@@ -20,35 +21,40 @@ The result of a request to fetch persistent history.
 class NSPersistentHistoryResult
 ```
 
+```objc
+@interface NSPersistentHistoryResult : NSPersistentStoreResult
+```
+
 ## Mentions
 
-- [Consuming relevant store changes](consuming-relevant-store-changes.md)
+- [Consuming relevant store changes](./consuming-relevant-store-changes.md)
 
 ## Topics
 
 ### Inspecting History Results
-- [var result: Any?](nspersistenthistoryresult/result.md)
+- [var result: Any?](./nspersistenthistoryresult/result.md)
   The result of the history request determined by the persistent history result type.
-- [var resultType: NSPersistentHistoryResultType](nspersistenthistoryresult/resulttype.md)
+- [var resultType: NSPersistentHistoryResultType](./nspersistenthistoryresult/resulttype.md)
   The type of result that the persistent history change request returns.
-- [enum NSPersistentHistoryResultType](nspersistenthistoryresulttype.md)
+- [enum NSPersistentHistoryResultType](./nspersistenthistoryresulttype.md)
   The types of results from a persistent history change request.
 
 ## Relationships
 
 ### Inherits From
-- [NSPersistentStoreResult](nspersistentstoreresult.md)
+- [NSPersistentStoreResult](./nspersistentstoreresult.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSPersistentHistoryChangeRequest](nspersistenthistorychangerequest.md)
+### Requesting History
+- [class NSPersistentHistoryChangeRequest](./nspersistenthistorychangerequest.md)
   A request to fetch or purge persistent history.
 
 

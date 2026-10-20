@@ -1,7 +1,8 @@
 # MTRBaseClusterUnitLocalization
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,65 +19,69 @@
 class MTRBaseClusterUnitLocalization
 ```
 
+```objc
+@interface MTRBaseClusterUnitLocalization : MTRGenericBaseCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRBaseDevice, endpoint: UInt16, queue: dispatch_queue_t)](mtrbaseclusterunitlocalization/init(device:endpoint:queue:).md)
-- [init?(device: MTRBaseDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrbaseclusterunitlocalization/init(device:endpointid:queue:).md)
+- [init?(device: MTRBaseDevice, endpoint: UInt16, queue: dispatch_queue_t)](./mtrbaseclusterunitlocalization/init%28device,endpoint,queue%29.md)
+- [init?(device: MTRBaseDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrbaseclusterunitlocalization/init%28device,endpointid,queue%29.md)
 ### Instance Methods
-- [func readAttributeAcceptedCommandList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/readattributeacceptedcommandlist(completion:).md)
-- [func readAttributeAcceptedCommandList(completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/readattributeacceptedcommandlist(completionhandler:).md)
-- [func readAttributeAttributeList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/readattributeattributelist(completion:).md)
-- [func readAttributeAttributeList(completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/readattributeattributelist(completionhandler:).md)
-- [func readAttributeClusterRevision(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/readattributeclusterrevision(completion:).md)
-- [func readAttributeClusterRevision(completionHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/readattributeclusterrevision(completionhandler:).md)
-- [func readAttributeFeatureMap(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/readattributefeaturemap(completion:).md)
-- [func readAttributeFeatureMap(completionHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/readattributefeaturemap(completionhandler:).md)
-- [func readAttributeGeneratedCommandList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/readattributegeneratedcommandlist(completion:).md)
-- [func readAttributeGeneratedCommandList(completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/readattributegeneratedcommandlist(completionhandler:).md)
-- [func readAttributeTemperatureUnit(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/readattributetemperatureunit(completion:).md)
-- [func readAttributeTemperatureUnit(completionHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/readattributetemperatureunit(completionhandler:).md)
-- [func subscribeAttributeAcceptedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/subscribeattributeacceptedcommandlist(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeAcceptedCommandList(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/subscribeattributeacceptedcommandlist(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeAttributeList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/subscribeattributeattributelist(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeAttributeList(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/subscribeattributeattributelist(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeClusterRevision(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/subscribeattributeclusterrevision(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeClusterRevision(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/subscribeattributeclusterrevision(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeFeatureMap(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/subscribeattributefeaturemap(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeFeatureMap(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/subscribeattributefeaturemap(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeGeneratedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/subscribeattributegeneratedcommandlist(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeGeneratedCommandList(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/subscribeattributegeneratedcommandlist(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeTemperatureUnit(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/subscribeattributetemperatureunit(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeTemperatureUnit(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/subscribeattributetemperatureunit(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func writeAttributeTemperatureUnit(withValue: NSNumber, completion: ((any Error)?) -> Void)](mtrbaseclusterunitlocalization/writeattributetemperatureunit(withvalue:completion:).md)
-- [func writeAttributeTemperatureUnit(withValue: NSNumber, completionHandler: ((any Error)?) -> Void)](mtrbaseclusterunitlocalization/writeattributetemperatureunit(withvalue:completionhandler:).md)
-- [func writeAttributeTemperatureUnit(withValue: NSNumber, params: MTRWriteParams?, completion: ((any Error)?) -> Void)](mtrbaseclusterunitlocalization/writeattributetemperatureunit(withvalue:params:completion:).md)
-- [func writeAttributeTemperatureUnit(withValue: NSNumber, params: MTRWriteParams?, completionHandler: ((any Error)?) -> Void)](mtrbaseclusterunitlocalization/writeattributetemperatureunit(withvalue:params:completionhandler:).md)
+- [func readAttributeAcceptedCommandList(completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/readattributeacceptedcommandlist%28completion%29.md)
+- [func readAttributeAcceptedCommandList(completionHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/readattributeacceptedcommandlist%28completionhandler%29.md)
+- [func readAttributeAttributeList(completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/readattributeattributelist%28completion%29.md)
+- [func readAttributeAttributeList(completionHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/readattributeattributelist%28completionhandler%29.md)
+- [func readAttributeClusterRevision(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/readattributeclusterrevision%28completion%29.md)
+- [func readAttributeClusterRevision(completionHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/readattributeclusterrevision%28completionhandler%29.md)
+- [func readAttributeFeatureMap(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/readattributefeaturemap%28completion%29.md)
+- [func readAttributeFeatureMap(completionHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/readattributefeaturemap%28completionhandler%29.md)
+- [func readAttributeGeneratedCommandList(completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/readattributegeneratedcommandlist%28completion%29.md)
+- [func readAttributeGeneratedCommandList(completionHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/readattributegeneratedcommandlist%28completionhandler%29.md)
+- [func readAttributeTemperatureUnit(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/readattributetemperatureunit%28completion%29.md)
+- [func readAttributeTemperatureUnit(completionHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/readattributetemperatureunit%28completionhandler%29.md)
+- [func subscribeAttributeAcceptedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/subscribeattributeacceptedcommandlist%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeAcceptedCommandList(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/subscribeattributeacceptedcommandlist%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeAttributeList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/subscribeattributeattributelist%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeAttributeList(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/subscribeattributeattributelist%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeClusterRevision(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/subscribeattributeclusterrevision%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeClusterRevision(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/subscribeattributeclusterrevision%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeFeatureMap(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/subscribeattributefeaturemap%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeFeatureMap(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/subscribeattributefeaturemap%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeGeneratedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/subscribeattributegeneratedcommandlist%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeGeneratedCommandList(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/subscribeattributegeneratedcommandlist%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeTemperatureUnit(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/subscribeattributetemperatureunit%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeTemperatureUnit(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/subscribeattributetemperatureunit%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func writeAttributeTemperatureUnit(withValue: NSNumber, completion: ((any Error)?) -> Void)](./mtrbaseclusterunitlocalization/writeattributetemperatureunit%28withvalue,completion%29.md)
+- [func writeAttributeTemperatureUnit(withValue: NSNumber, completionHandler: ((any Error)?) -> Void)](./mtrbaseclusterunitlocalization/writeattributetemperatureunit%28withvalue,completionhandler%29.md)
+- [func writeAttributeTemperatureUnit(withValue: NSNumber, params: MTRWriteParams?, completion: ((any Error)?) -> Void)](./mtrbaseclusterunitlocalization/writeattributetemperatureunit%28withvalue,params,completion%29.md)
+- [func writeAttributeTemperatureUnit(withValue: NSNumber, params: MTRWriteParams?, completionHandler: ((any Error)?) -> Void)](./mtrbaseclusterunitlocalization/writeattributetemperatureunit%28withvalue,params,completionhandler%29.md)
 ### Type Methods
-- [class func readAttributeAcceptedCommandList(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/readattributeacceptedcommandlist(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeAcceptedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/readattributeacceptedcommandlist(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeAttributeList(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/readattributeattributelist(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeAttributeList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/readattributeattributelist(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeClusterRevision(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/readattributeclusterrevision(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeClusterRevision(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/readattributeclusterrevision(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeFeatureMap(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/readattributefeaturemap(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeFeatureMap(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/readattributefeaturemap(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeGeneratedCommandList(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/readattributegeneratedcommandlist(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeGeneratedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/readattributegeneratedcommandlist(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeTemperatureUnit(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/readattributetemperatureunit(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeTemperatureUnit(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterunitlocalization/readattributetemperatureunit(withclusterstatecache:endpoint:queue:completion:).md)
+- [class func readAttributeAcceptedCommandList(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/readattributeacceptedcommandlist%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeAcceptedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/readattributeacceptedcommandlist%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeAttributeList(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/readattributeattributelist%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeAttributeList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/readattributeattributelist%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeClusterRevision(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/readattributeclusterrevision%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeClusterRevision(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/readattributeclusterrevision%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeFeatureMap(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/readattributefeaturemap%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeFeatureMap(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/readattributefeaturemap%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeGeneratedCommandList(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/readattributegeneratedcommandlist%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeGeneratedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/readattributegeneratedcommandlist%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeTemperatureUnit(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/readattributetemperatureunit%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeTemperatureUnit(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterunitlocalization/readattributetemperatureunit%28withclusterstatecache,endpoint,queue,completion%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericBaseCluster](mtrgenericbasecluster.md)
+- [MTRGenericBaseCluster](./mtrgenericbasecluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

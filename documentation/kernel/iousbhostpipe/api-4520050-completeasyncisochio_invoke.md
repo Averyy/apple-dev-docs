@@ -1,14 +1,15 @@
 # CompleteAsyncIsochIO_Invoke
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 15.4+ - Deprecated in 15.4
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t CompleteAsyncIsochIO_Invoke(const IORPC rpc, OSMetaClassBase *target, CompleteAsyncIsochIO_Handler func);
 ```
 

@@ -1,7 +1,8 @@
 # authenticationTriesRemaining
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tries remaining before the underlying credential locks itself
 

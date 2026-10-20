@@ -1,9 +1,10 @@
 # textLayoutManager
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The [`NSTextLayoutManager`](nstextlayoutmanager.md) owning the text container.
+The [`NSTextLayoutManager`](../nstextlayoutmanager.md) owning the text container.
 
 **Availability**:
 - iOS 15.0+
@@ -18,17 +19,22 @@ The [`NSTextLayoutManager`](nstextlayoutmanager.md) owning the text container.
 weak var textLayoutManager: NSTextLayoutManager? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) NSTextLayoutManager * textLayoutManager;
+```
+
 #### Discussion
 
 When non-nil, the legacy `layoutManager` should be `nil`.
 
 ## See Also
 
-- [var layoutManager: NSLayoutManager?](nstextcontainer/layoutmanager.md)
+### Managing text components
+- [var layoutManager: NSLayoutManager?](./layoutmanager.md)
   The text container’s layout manager.
-- [func replaceLayoutManager(NSLayoutManager)](nstextcontainer/replacelayoutmanager(_:).md)
+- [func replaceLayoutManager(NSLayoutManager)](./replacelayoutmanager%28_%29.md)
   Replaces the layout manager for the group of text system objects that contains the text container.
-- [var textView: NSTextView?](../appkit/nstextcontainer/textview.md)
+- [var textView: NSTextView?](../../AppKit/nstextcontainer/textview.md)
   The text container’s text view.
 
 

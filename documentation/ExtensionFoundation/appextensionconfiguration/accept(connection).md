@@ -2,6 +2,7 @@
 
 **Framework**: ExtensionFoundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a Boolean value that indicates whether you accept an incoming connection request from the host app.
@@ -24,7 +25,7 @@ func accept(connection: NSXPCConnection) -> Bool
 
 ## Mentions
 
-- [Building an app extension to support a host app](building-an-app-extension-to-support-a-host-app.md)
+- [Building an app extension to support a host app](../building-an-app-extension-to-support-a-host-app.md)
 
 #### Return Value
 
@@ -32,7 +33,7 @@ func accept(connection: NSXPCConnection) -> Bool
 
 #### Discussion
 
-Implement this method in your custom type and use it to establish communication between your app extension and the host app that made the request. To accept a connection request, set the connection’s [`exportedObject`](https://developer.apple.com/documentation/foundation/nsxpcconnection/exportedobject) property to an object in your app extension that implements a protocol or type from the host’s SDK. Similarly, put the type information in the [`exportedInterface`](https://developer.apple.com/documentation/foundation/nsxpcconnection/exportedinterface) property. You can also retrieve other relevant properties of the connection object, such as the remote connection details, and use them to set up your app extension. When you’re ready to start communicating with the host, call the connection’s [`resume()`](https://developer.apple.com/documentation/foundation/nsxpcconnection/resume()) method and then return `true` from this method.
+Implement this method in your custom type and use it to establish communication between your app extension and the host app that made the request. To accept a connection request, set the connection’s [`exportedObject`](../../Foundation/nsxpcconnection/exportedobject.md) property to an object in your app extension that implements a protocol or type from the host’s SDK. Similarly, put the type information in the [`exportedInterface`](../../Foundation/nsxpcconnection/exportedinterface.md) property. You can also retrieve other relevant properties of the connection object, such as the remote connection details, and use them to set up your app extension. When you’re ready to start communicating with the host, call the connection’s [`resume()`](../../Foundation/nsxpcconnection/resume%28%29.md) method and then return `true` from this method.
 
 ## Parameters
 

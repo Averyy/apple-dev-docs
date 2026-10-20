@@ -1,7 +1,8 @@
 # kMDItemFSCreationDate
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The date and time that the file was created. A CFDate.
 
@@ -12,6 +13,10 @@ The date and time that the file was created. A CFDate.
 
 ```swift
 let kMDItemFSCreationDate: CFString!
+```
+
+```c
+const CFStringRef kMDItemFSCreationDate;
 ```
 
 

@@ -1,7 +1,8 @@
 # supportedFeatures
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Set the supported features
 
@@ -12,6 +13,10 @@ Set the supported features
 
 ```swift
 var supportedFeatures: UInt32 { get set }
+```
+
+```objc
+@property (assign) uint32_t supportedFeatures;
 ```
 
 #### Discussion

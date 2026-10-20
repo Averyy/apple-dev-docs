@@ -1,7 +1,8 @@
 # cameraDevice
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var cameraDevice: AVCaptureDevice { get set }
+```
+
+```objc
+@property (nonatomic, strong) AVCaptureDevice * cameraDevice;
 ```
 
 #### Discussion

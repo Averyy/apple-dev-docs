@@ -1,17 +1,22 @@
 # withSDPDataElementRef(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Method call to convert an IOBluetoothSDPDataElementRef into an IOBluetoothSDPDataElement *.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func withSDPDataElementRef(_ sdpDataElementRef: IOBluetoothSDPDataElementRef!) -> Self!
+```
+
+```objc
++ (instancetype) withSDPDataElementRef:(IOBluetoothSDPDataElementRef) sdpDataElementRef;
 ```
 
 #### Return Value

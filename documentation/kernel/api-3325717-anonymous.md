@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOServicePowerCapabilityLow](3325717-anonymous/kioservicepowercapabilitylow.md)
-- [kIOServicePowerCapabilityOff](3325717-anonymous/kioservicepowercapabilityoff.md)
-- [kIOServicePowerCapabilityOn](3325717-anonymous/kioservicepowercapabilityon.md)
+- [kIOServicePowerCapabilityLow](./api-3325717-anonymous/kioservicepowercapabilitylow.md)
+- [kIOServicePowerCapabilityOff](./api-3325717-anonymous/kioservicepowercapabilityoff.md)
+- [kIOServicePowerCapabilityOn](./api-3325717-anonymous/kioservicepowercapabilityon.md)
 
 
 ---

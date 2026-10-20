@@ -1,7 +1,8 @@
 # CTFontCopyFeatures(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns an array of font features.
 
@@ -20,6 +21,10 @@ Returns an array of font features.
 func CTFontCopyFeatures(_ font: CTFont) -> CFArray?
 ```
 
+```c
+extern CFArrayRefCTFontCopyFeatures(CTFontRef font);
+```
+
 #### Return Value
 
 An array of font feature dictionaries for the font reference.
@@ -30,7 +35,8 @@ An array of font feature dictionaries for the font reference.
 
 ## See Also
 
-- [func CTFontCopyFeatureSettings(CTFont) -> CFArray?](ctfontcopyfeaturesettings(_:).md)
+### Getting Font Features
+- [func CTFontCopyFeatureSettings(CTFont) -> CFArray?](./ctfontcopyfeaturesettings%28_%29.md)
   Returns an array of font feature-setting tuples.
 
 

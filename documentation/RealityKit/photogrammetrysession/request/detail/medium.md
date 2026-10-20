@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Request.Detail.medium
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A medium-quality object with moderate resource requirements.
 
@@ -17,13 +18,14 @@ case medium
 
 ## See Also
 
-- [PhotogrammetrySession.Request.Detail.preview](photogrammetrysession/request/detail/preview.md)
+### Specifying a level of detail
+- [PhotogrammetrySession.Request.Detail.preview](./preview.md)
   A fast, low-quality object for previewing the final result.
-- [PhotogrammetrySession.Request.Detail.reduced](photogrammetrysession/request/detail/reduced.md)
+- [PhotogrammetrySession.Request.Detail.reduced](./reduced.md)
   A mobile-quality object with low resource requirements.
-- [PhotogrammetrySession.Request.Detail.full](photogrammetrysession/request/detail/full.md)
+- [PhotogrammetrySession.Request.Detail.full](./full.md)
   A high-quality object with significant resource requirements.
-- [PhotogrammetrySession.Request.Detail.raw](photogrammetrysession/request/detail/raw.md)
+- [PhotogrammetrySession.Request.Detail.raw](./raw.md)
   The raw-created object at the highest possible resolution.
 
 

@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Metal  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Retrieves the sample value at the specified index.
 
@@ -19,9 +20,13 @@ Retrieves the sample value at the specified index.
 subscript(layerIndex: Int) -> MTLRasterizationRateLayerDescriptor? { get set }
 ```
 
+```objc
+- (MTLRasterizationRateLayerDescriptor *) objectAtIndexedSubscript:(NSUInteger) layerIndex;
+```
+
 #### Return Value
 
-An [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) instance describing the value of the sample at the specified index, or `0` if the index is out of range.
+An [`NSNumber`](../../Foundation/nsnumber.md) instance describing the value of the sample at the specified index, or `0` if the index is out of range.
 
 ## Parameters
 
@@ -29,7 +34,8 @@ An [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) i
 
 ## See Also
 
-- [class MTLRasterizationRateLayerDescriptor](mtlrasterizationratelayerdescriptor.md)
+### Accessing members of the array
+- [class MTLRasterizationRateLayerDescriptor](../mtlrasterizationratelayerdescriptor.md)
   The minimum rasterization rates to apply to sections of a layer in the render target.
 
 

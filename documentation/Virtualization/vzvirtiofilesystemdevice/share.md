@@ -1,7 +1,8 @@
 # share
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that defines the directory share the host exposes to the guest VM.
 
@@ -14,13 +15,19 @@ A value that defines the directory share the host exposes to the guest VM.
 var share: VZDirectoryShare? { get set }
 ```
 
+```objc
+@property (strong, nullable) VZDirectoryShare * share;
+```
+
 ## See Also
 
-- [class VZSingleDirectoryShare](vzsingledirectoryshare.md)
+### Related Documentation
+- [class VZSingleDirectoryShare](../vzsingledirectoryshare.md)
   An object that defines the directory share for a single directory.
-- [class VZMultipleDirectoryShare](vzmultipledirectoryshare.md)
+- [class VZMultipleDirectoryShare](../vzmultipledirectoryshare.md)
   An object that describes a directory share for multiple directories.
-- [var tag: String](vzvirtiofilesystemdevice/tag.md)
+### Accessing directory properties
+- [var tag: String](./tag.md)
   A string that identifies the device.
 
 

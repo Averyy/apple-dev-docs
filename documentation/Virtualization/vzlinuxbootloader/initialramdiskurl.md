@@ -1,7 +1,8 @@
 # initialRamdiskURL
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of an optional RAM disk, which the boot loader maps into memory before it boots the Linux kernel.
 
@@ -14,13 +15,18 @@ The location of an optional RAM disk, which the boot loader maps into memory bef
 var initialRamdiskURL: URL? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSURL * initialRamdiskURL;
+```
+
 #### Discussion
 
 The default value of this property is `nil`. If you want specific files to be available when your Linux kernel boots, provide a URL to a valid RAM disk file in this property.
 
 ## See Also
 
-- [var commandLine: String](vzlinuxbootloader/commandline.md)
+### Configuring the boot parameters
+- [var commandLine: String](./commandline.md)
   The command-line parameters to pass to the Linux kernel at boot time.
 
 

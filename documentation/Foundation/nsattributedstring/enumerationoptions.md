@@ -1,7 +1,8 @@
 # NSAttributedString.EnumerationOptions
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for enumerating attributes.
 
@@ -20,49 +21,54 @@ Options for enumerating attributes.
 struct EnumerationOptions
 ```
 
+```c
+enum NSAttributedStringEnumerationOptions : NSUInteger;
+```
+
 #### Overview
 
-These constants describe the options available to the [`enumerateAttribute(_:in:options:using:)`](nsattributedstring/enumerateattribute(_:in:options:using:).md) and [`enumerateAttributes(in:options:using:)`](nsattributedstring/enumerateattributes(in:options:using:).md) methods.
+These constants describe the options available to the [`enumerateAttribute(_:in:options:using:)`](./enumerateattribute%28_,in,options,using%29.md) and [`enumerateAttributes(in:options:using:)`](./enumerateattributes%28in,options,using%29.md) methods.
 
 ## Topics
 
 ### Getting the enumeration options
-- [static var reverse: NSAttributedString.EnumerationOptions](nsattributedstring/enumerationoptions/reverse.md)
+- [static var reverse: NSAttributedString.EnumerationOptions](./enumerationoptions/reverse.md)
   Causes the enumeration to occur in reverse.
-- [static var longestEffectiveRangeNotRequired: NSAttributedString.EnumerationOptions](nsattributedstring/enumerationoptions/longesteffectiverangenotrequired.md)
+- [static var longestEffectiveRangeNotRequired: NSAttributedString.EnumerationOptions](./enumerationoptions/longesteffectiverangenotrequired.md)
   If `NSAttributedStringEnumerationLongestEffectiveRangeNotRequired` option is supplied, then the longest effective range computation is not performed; the blocks may be invoked with consecutive attribute runs that have the same value.
 ### Creating an enumeration option
-- [init(rawValue: UInt)](nsattributedstring/enumerationoptions/init(rawvalue:).md)
-- [static var reverse: NSAttributedString.EnumerationOptions](nsattributedstring/enumerationoptions/reverse.md)
+- [init(rawValue: UInt)](./enumerationoptions/init%28rawvalue%29.md)
+- [static var reverse: NSAttributedString.EnumerationOptions](./enumerationoptions/reverse.md)
   Causes the enumeration to occur in reverse.
-- [static var longestEffectiveRangeNotRequired: NSAttributedString.EnumerationOptions](nsattributedstring/enumerationoptions/longesteffectiverangenotrequired.md)
+- [static var longestEffectiveRangeNotRequired: NSAttributedString.EnumerationOptions](./enumerationoptions/longesteffectiverangenotrequired.md)
   If `NSAttributedStringEnumerationLongestEffectiveRangeNotRequired` option is supplied, then the longest effective range computation is not performed; the blocks may be invoked with consecutive attribute runs that have the same value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [func attributes(at: Int, effectiveRange: NSRangePointer?) -> [NSAttributedString.Key : Any]](nsattributedstring/attributes(at:effectiverange:).md)
+### Getting attributes for a range of text
+- [func attributes(at: Int, effectiveRange: NSRangePointer?) -> [NSAttributedString.Key : Any]](./attributes%28at,effectiverange%29.md)
   Returns the attributes for the character at the specified index.
-- [func attributes(at: Int, longestEffectiveRange: NSRangePointer?, in: NSRange) -> [NSAttributedString.Key : Any]](nsattributedstring/attributes(at:longesteffectiverange:in:).md)
+- [func attributes(at: Int, longestEffectiveRange: NSRangePointer?, in: NSRange) -> [NSAttributedString.Key : Any]](./attributes%28at,longesteffectiverange,in%29.md)
   Returns the attributes for the character at the specified index and, by reference, the range where the attributes apply.
-- [func attribute(NSAttributedString.Key, at: Int, effectiveRange: NSRangePointer?) -> Any?](nsattributedstring/attribute(_:at:effectiverange:).md)
+- [func attribute(NSAttributedString.Key, at: Int, effectiveRange: NSRangePointer?) -> Any?](./attribute%28_,at,effectiverange%29.md)
   Returns the value for an attribute with the specified name of the character at the specified index and, by reference, the range where the attribute applies.
-- [func attribute(NSAttributedString.Key, at: Int, longestEffectiveRange: NSRangePointer?, in: NSRange) -> Any?](nsattributedstring/attribute(_:at:longesteffectiverange:in:).md)
+- [func attribute(NSAttributedString.Key, at: Int, longestEffectiveRange: NSRangePointer?, in: NSRange) -> Any?](./attribute%28_,at,longesteffectiverange,in%29.md)
   Returns the value for the attribute with the specified name of the character at the specified index and, by reference, the range where the attribute applies.
-- [func enumerateAttribute(NSAttributedString.Key, in: NSRange, options: NSAttributedString.EnumerationOptions, using: (Any?, NSRange, UnsafeMutablePointer<ObjCBool>) -> Void)](nsattributedstring/enumerateattribute(_:in:options:using:).md)
+- [func enumerateAttribute(NSAttributedString.Key, in: NSRange, options: NSAttributedString.EnumerationOptions, using: (Any?, NSRange, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumerateattribute%28_,in,options,using%29.md)
   Executes the specified closure or block for each range of a particular attribute in the attributed string.
-- [func enumerateAttributes(in: NSRange, options: NSAttributedString.EnumerationOptions, using: ([NSAttributedString.Key : Any], NSRange, UnsafeMutablePointer<ObjCBool>) -> Void)](nsattributedstring/enumerateattributes(in:options:using:).md)
+- [func enumerateAttributes(in: NSRange, options: NSAttributedString.EnumerationOptions, using: ([NSAttributedString.Key : Any], NSRange, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumerateattributes%28in,options,using%29.md)
   Executes the specified closure or block for each range of attributes in the attributed string.
 
 

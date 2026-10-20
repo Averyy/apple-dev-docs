@@ -1,7 +1,8 @@
 # wifiAwarePairedDeviceID
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Wi-Fi Aware paired device identififer of the accessory to migrate.
 
@@ -15,11 +16,16 @@ The Wi-Fi Aware paired device identififer of the accessory to migrate.
 var wifiAwarePairedDeviceID: ASAccessory.WiFiAwarePairedDeviceID { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) ASAccessoryWiFiAwarePairedDeviceID wifiAwarePairedDeviceID;
+```
+
 ## See Also
 
-- [var peripheralIdentifier: UUID?](asmigrationdisplayitem/peripheralidentifier.md)
+### Accessory identifiers
+- [var peripheralIdentifier: UUID?](./peripheralidentifier.md)
   The Bluetooth identifier of the accessory to migrate.
-- [var hotspotSSID: String?](asmigrationdisplayitem/hotspotssid.md)
+- [var hotspotSSID: String?](./hotspotssid.md)
   The Wi-Fi hotspot SSID of the accessory to migrate.
 
 

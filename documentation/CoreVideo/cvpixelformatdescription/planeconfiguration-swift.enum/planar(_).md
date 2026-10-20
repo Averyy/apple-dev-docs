@@ -1,7 +1,8 @@
 # CVPixelFormatDescription.PlaneConfiguration.planar(_:)
 
 **Framework**: Core Video  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+

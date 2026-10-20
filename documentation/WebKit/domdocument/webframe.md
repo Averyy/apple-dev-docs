@@ -1,17 +1,22 @@
 # webFrame
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The web frame associated with the DOM document.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var webFrame: WebFrame! { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) WebFrame * webFrame;
 ```
 
 

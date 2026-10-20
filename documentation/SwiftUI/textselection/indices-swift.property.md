@@ -1,7 +1,8 @@
 # indices
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Return the current text selection indices.
 

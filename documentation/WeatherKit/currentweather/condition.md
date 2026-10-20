@@ -1,7 +1,8 @@
 # condition
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An enumeration value indicating the condition at the time.
 
@@ -22,7 +23,8 @@ var condition: WeatherCondition
 
 ## See Also
 
-- [var cloudCover: Double](currentweather/cloudcover.md)
+### Getting conditions
+- [var cloudCover: Double](./cloudcover.md)
   The percentage of the sky covered with clouds.
 
 

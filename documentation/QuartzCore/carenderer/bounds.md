@@ -1,7 +1,8 @@
 # bounds
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bounds of the receiver.
 
@@ -17,6 +18,10 @@ The bounds of the receiver.
 
 ```swift
 var bounds: CGRect { get set }
+```
+
+```objc
+@property CGRect bounds;
 ```
 
 

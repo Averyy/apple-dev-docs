@@ -1,7 +1,8 @@
 # CSIdentityIsEnabled(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func CSIdentityIsEnabled(_ user: CSIdentity!) -> Bool
+```
+
+```c
+Boolean CSIdentityIsEnabled(CSIdentityRef user);
 ```
 
 

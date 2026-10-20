@@ -1,7 +1,8 @@
 # inputPrimitiveTopology
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Assigns type of primitive topology this pipeline renders.
 
@@ -17,6 +18,10 @@ Assigns type of primitive topology this pipeline renders.
 
 ```swift
 var inputPrimitiveTopology: MTLPrimitiveTopologyClass { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MTLPrimitiveTopologyClass inputPrimitiveTopology;
 ```
 
 

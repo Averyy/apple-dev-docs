@@ -1,14 +1,15 @@
 # detection(atOrBefore:)
 
 **Framework**: Cinematic  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the array of detections in the detection track before a given time.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 14.0+
 - tvOS 17.0+
 

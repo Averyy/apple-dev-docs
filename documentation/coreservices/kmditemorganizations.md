@@ -1,7 +1,8 @@
 # kMDItemOrganizations
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The company or organization that created the document. A CFArray of CFStrings.
 
@@ -12,6 +13,10 @@ The company or organization that created the document. A CFArray of CFStrings.
 
 ```swift
 let kMDItemOrganizations: CFString!
+```
+
+```c
+const CFStringRef kMDItemOrganizations;
 ```
 
 

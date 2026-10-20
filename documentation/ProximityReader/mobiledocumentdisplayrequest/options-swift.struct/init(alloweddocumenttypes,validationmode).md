@@ -1,7 +1,8 @@
 # init(allowedDocumentTypes:validationMode:)
 
 **Framework**: ProximityReader  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a mobile document reader display request options type.
 

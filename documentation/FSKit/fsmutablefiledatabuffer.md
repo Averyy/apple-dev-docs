@@ -1,7 +1,8 @@
 # FSMutableFileDataBuffer
 
 **Framework**: FSKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A wrapper object for a data buffer.
 
@@ -14,6 +15,10 @@ A wrapper object for a data buffer.
 class FSMutableFileDataBuffer
 ```
 
+```objc
+@interface FSMutableFileDataBuffer : NSObject
+```
+
 #### Overview
 
 This object provides a “zero-copy” buffer, for use when reading data from files. By not requiring additional buffer copying, this object reduces the extension’s memory footprint and improves performance. The `FSMutableFileDataBuffer` behaves similarly to a `uio` in the kernel.
@@ -21,35 +26,36 @@ This object provides a “zero-copy” buffer, for use when reading data from fi
 ## Topics
 
 ### Accessing buffer properties
-- [func withUnsafeMutableBytes<R, E>((UnsafeMutableRawBufferPointer) throws(E) -> R) throws(E) -> R](fsmutablefiledatabuffer/withunsafemutablebytes(_:).md)
+- [func withUnsafeMutableBytes<R, E>((UnsafeMutableRawBufferPointer) throws(E) -> R) throws(E) -> R](./fsmutablefiledatabuffer/withunsafemutablebytes%28_%29.md)
   Performs the given closure with an unsafe pointer to the underlying bytes of the data buffer.
-- [var length: Int](fsmutablefiledatabuffer/length.md)
+- [var length: Int](./fsmutablefiledatabuffer/length.md)
   The data length of the buffer.
 ### Instance Methods
-- [func createMutableRawSpan() throws -> MutableRawSpan](fsmutablefiledatabuffer/createmutablerawspan.md)
+- [func createMutableRawSpan() throws -> MutableRawSpan](./fsmutablefiledatabuffer/createmutablerawspan%28%29.md)
   Return a MutableRawSpan to the underlying bytes of the data buffer.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func read(from: FSItem, at: off_t, length: Int, into: FSMutableFileDataBuffer, replyHandler: (FSReadFileResult?, (any Error)?) -> Void)](fsvolume/readwritehandler/read(from:at:length:into:replyhandler:).md)
+### Reading and writing
+- [func read(from: FSItem, at: off_t, length: Int, into: FSMutableFileDataBuffer, replyHandler: (FSReadFileResult?, (any Error)?) -> Void)](./fsvolume/readwritehandler/read%28from,at,length,into,replyhandler%29.md)
   Reads the contents of the given file item.
-- [class FSReadFileResult](fsreadfileresult.md)
+- [class FSReadFileResult](./fsreadfileresult.md)
   The result of a read-file call.
-- [func write(contents: Data, to: FSItem, at: off_t, replyHandler: (FSWriteFileResult?, (any Error)?) -> Void)](fsvolume/readwritehandler/write(contents:to:at:replyhandler:).md)
+- [func write(contents: Data, to: FSItem, at: off_t, replyHandler: (FSWriteFileResult?, (any Error)?) -> Void)](./fsvolume/readwritehandler/write%28contents,to,at,replyhandler%29.md)
   Writes contents to the given file item.
-- [class FSWriteFileResult](fswritefileresult.md)
+- [class FSWriteFileResult](./fswritefileresult.md)
   The result of a read-file call.
 
 

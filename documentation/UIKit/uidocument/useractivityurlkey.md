@@ -1,7 +1,8 @@
 # userActivityURLKey
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key that identifies the document associated with a user activity.
 
@@ -17,19 +18,24 @@ The key that identifies the document associated with a user activity.
 class let userActivityURLKey: String
 ```
 
+```c
+extern NSString * const NSUserActivityDocumentURLKey;
+```
+
 #### Discussion
 
-You use this key in the [`userInfo`](https://developer.apple.com/documentation/foundation/nsuseractivity/userinfo) dictionary of an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object. Its value is the URL of the document associated with the user activity.
+You use this key in the [`userInfo`](../../Foundation/nsuseractivity/userinfo.md) dictionary of an [`NSUserActivity`](../../Foundation/nsuseractivity.md) object. Its value is the URL of the document associated with the user activity.
 
-When the `NSUbiquitousDocumentUserActivityType` key is present in a [`CFBundleDocumentTypes`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundledocumenttypes) entry, AppKit automatically creates an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object for documents in iCloud, using the given activity type.
+When the `NSUbiquitousDocumentUserActivityType` key is present in a [`CFBundleDocumentTypes`](../../BundleResources/information-property-list/cfbundledocumenttypes.md) entry, AppKit automatically creates an [`NSUserActivity`](../../Foundation/nsuseractivity.md) object for documents in iCloud, using the given activity type.
 
 ## See Also
 
-- [UIDocument.ChangeKind](uidocument/changekind.md)
+### Constants
+- [UIDocument.ChangeKind](./changekind.md)
   Constants that specify the kind of change to a document.
-- [UIDocument.SaveOperation](uidocument/saveoperation.md)
+- [UIDocument.SaveOperation](./saveoperation.md)
   Constants that specify the type of save operation.
-- [UIDocument.State](uidocument/state.md)
+- [UIDocument.State](./state.md)
   Constants that specify the document state.
 
 

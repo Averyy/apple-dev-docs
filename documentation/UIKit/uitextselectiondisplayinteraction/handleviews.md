@@ -1,7 +1,8 @@
 # handleViews
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view that draws the selection handles for the selected text.
 
@@ -18,9 +19,13 @@ The view that draws the selection handles for the selected text.
 var handleViews: [any UIView & UITextSelectionHandleView] { get set }
 ```
 
+```objc
+@property (nonatomic, strong) NSArray<UIView<UITextSelectionHandleView> *> * handleViews;
+```
+
 ## Mentions
 
-- [Adopting system selection UI in custom text views](adopting-system-selection-ui-in-custom-text-views.md)
+- [Adopting system selection UI in custom text views](../adopting-system-selection-ui-in-custom-text-views.md)
 
 #### Discussion
 
@@ -30,9 +35,10 @@ When you install the interaction on your text input view, the system installs tw
 
 ## See Also
 
-- [var highlightView: any UIView & UITextSelectionHighlightView](uitextselectiondisplayinteraction/highlightview.md)
+### Getting the system selection views
+- [var highlightView: any UIView & UITextSelectionHighlightView](./highlightview.md)
   The view that draws the selection highlight behind the rendered text.
-- [var cursorView: any UIView & UITextCursorView](uitextselectiondisplayinteraction/cursorview.md)
+- [var cursorView: any UIView & UITextCursorView](./cursorview.md)
   The view that draws the caret at the text insertion point.
 
 

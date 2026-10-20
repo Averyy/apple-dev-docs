@@ -1,7 +1,8 @@
 # cuttable(for:action:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies an action that moves items to the Clipboard in response to the system’s Cut command.
 
@@ -47,20 +48,21 @@ struct CuttableExample: View {
 }
 ```
 
-When someone selects “owl” and issues a Cut command, the `action` closure removes the selected item from the list and returns it. In response, SwiftUI moves it to the Clipboard. If you want to copy the item without removing it, use the [`copyable(_:)`](view/copyable(_:).md) modifier instead.
+When someone selects “owl” and issues a Cut command, the `action` closure removes the selected item from the list and returns it. In response, SwiftUI moves it to the Clipboard. If you want to copy the item without removing it, use the [`copyable(_:)`](./copyable%28_%29.md) modifier instead.
 
-> **Note**: To enable people to cut using a custom action — like from a context menu item — rather than using the system Cut command, update the Clipboard directly using an [`NSPasteboard`](https://developer.apple.com/documentation/appkit/nspasteboard) or a [`UIPasteboard`](https://developer.apple.com/documentation/uikit/uipasteboard) instance.
+> **Note**: To enable people to cut using a custom action — like from a context menu item — rather than using the system Cut command, update the Clipboard directly using an [`NSPasteboard`](../../AppKit/nspasteboard.md) or a [`UIPasteboard`](../../UIKit/uipasteboard.md) instance.
 
 ## Parameters
 
 - `payloadType`: The type of items to cut.
-- `action`: A closure that you implement to delete the selected items from the collection, and return them for addition to the Clipboard. The items must conform to the [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) protocol.
+- `action`: A closure that you implement to delete the selected items from the collection, and return them for addition to the Clipboard. The items must conform to the [`Transferable`](../../CoreTransferable/transferable.md) protocol.
 
 ## See Also
 
-- [func copyable<T>(@autoclosure () -> [T]) -> some View](view/copyable(_:).md)
+### Copying transferable items
+- [func copyable<T>(@autoclosure () -> [T]) -> some View](./copyable%28_%29.md)
   Specifies a list of items to copy in response to the system’s Copy command.
-- [func pasteDestination<T>(for: T.Type, action: ([T]) -> Void, validator: ([T]) -> [T]) -> some View](view/pastedestination(for:action:validator:).md)
+- [func pasteDestination<T>(for: T.Type, action: ([T]) -> Void, validator: ([T]) -> [T]) -> some View](./pastedestination%28for,action,validator%29.md)
   Specifies an action that adds validated items to a view in response to the system’s Paste command.
 
 

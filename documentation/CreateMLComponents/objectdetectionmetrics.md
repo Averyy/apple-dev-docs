@@ -1,7 +1,8 @@
 # ObjectDetectionMetrics
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Metrics for object detection model.
 
@@ -22,36 +23,37 @@ struct ObjectDetectionMetrics<Label> where Label : Comparable, Label : Decodable
 ## Topics
 
 ### Creating a metrics object
-- [init()](objectdetectionmetrics/init.md)
+- [init()](./objectdetectionmetrics/init%28%29.md)
 ### Getting the properties Properties
-- [var defaultConfidenceThreshold: Float](objectdetectionmetrics/defaultconfidencethreshold.md)
+- [var defaultConfidenceThreshold: Float](./objectdetectionmetrics/defaultconfidencethreshold.md)
   The default confidence threshold. It is used as the confidence threshold for any label which does not have an explicit confidence threshold, while calculating averagePrecision and meanAveragePrecision.
-- [var labels: Set<Label>](objectdetectionmetrics/labels.md)
+- [var labels: Set<Label>](./objectdetectionmetrics/labels.md)
   A set of labels present in the dataset.
 ### Calculating the precision
-- [func averageOfAveragePrecisionAtVariedThresholds<Scalar>(predictions: [[DetectedObject<Label>]], annotations: [ObjectDetectionAnnotation<Label>], confidenceThresholds: [Label : Float]) -> [Label : Scalar]](objectdetectionmetrics/averageofaverageprecisionatvariedthresholds(predictions:annotations:confidencethresholds:).md)
+- [func averageOfAveragePrecisionAtVariedThresholds<Scalar>(predictions: [[DetectedObject<Label>]], annotations: [ObjectDetectionAnnotation<Label>], confidenceThresholds: [Label : Float]) -> [Label : Scalar]](./objectdetectionmetrics/averageofaverageprecisionatvariedthresholds%28predictions,annotations,confidencethresholds%29.md)
   Calculates average of average precision for all the labels, computed at varied bounding box overlap thresholds. The overlap thresholds range is from `[0.05, 0.95]` with a stride of `0.05`.
-- [func averageOfMeanAveragePrecisionAtVariedThresholds<Scalar>(predictions: [[DetectedObject<Label>]], annotations: [ObjectDetectionAnnotation<Label>], confidenceThresholds: [Label : Float]) -> Scalar](objectdetectionmetrics/averageofmeanaverageprecisionatvariedthresholds(predictions:annotations:confidencethresholds:).md)
+- [func averageOfMeanAveragePrecisionAtVariedThresholds<Scalar>(predictions: [[DetectedObject<Label>]], annotations: [ObjectDetectionAnnotation<Label>], confidenceThresholds: [Label : Float]) -> Scalar](./objectdetectionmetrics/averageofmeanaverageprecisionatvariedthresholds%28predictions,annotations,confidencethresholds%29.md)
   Calculates the average of mean average precision, computed at varied bounding box overlap thresholds. The overlap thresholds range is from `[0.05, 0.95]` with a stride of `0.05`.
-- [func averagePrecision<Scalar>(predictions: [[DetectedObject<Label>]], annotations: [ObjectDetectionAnnotation<Label>], confidenceThresholds: [Label : Float], overlapThreshold: Double) -> [Label : Scalar]](objectdetectionmetrics/averageprecision(predictions:annotations:confidencethresholds:overlapthreshold:).md)
+- [func averagePrecision<Scalar>(predictions: [[DetectedObject<Label>]], annotations: [ObjectDetectionAnnotation<Label>], confidenceThresholds: [Label : Float], overlapThreshold: Double) -> [Label : Scalar]](./objectdetectionmetrics/averageprecision%28predictions,annotations,confidencethresholds,overlapthreshold%29.md)
   Calculates average precision for all the labels at the bounding box overlap threshold.
-- [func meanAveragePrecision<Scalar>(predictions: [[DetectedObject<Label>]], annotations: [ObjectDetectionAnnotation<Label>], confidenceThresholds: [Label : Float], overlapThreshold: Double) -> Scalar](objectdetectionmetrics/meanaverageprecision(predictions:annotations:confidencethresholds:overlapthreshold:).md)
+- [func meanAveragePrecision<Scalar>(predictions: [[DetectedObject<Label>]], annotations: [ObjectDetectionAnnotation<Label>], confidenceThresholds: [Label : Float], overlapThreshold: Double) -> Scalar](./objectdetectionmetrics/meanaverageprecision%28predictions,annotations,confidencethresholds,overlapthreshold%29.md)
   Calculates the mean average precision at the bounding box overlap threshold.
 ### Extracting labels
-- [static func extractLabels(from: [ObjectDetectionAnnotation<Label>]) -> Set<Label>](objectdetectionmetrics/extractlabels(from:).md)
+- [static func extractLabels(from: [ObjectDetectionAnnotation<Label>]) -> Set<Label>](./objectdetectionmetrics/extractlabels%28from%29.md)
   Extracts all the labels from a list of annotations.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct DetectedObject](detectedobject.md)
+### Object detection components
+- [struct DetectedObject](./detectedobject.md)
   An item in a detection result.
-- [struct ObjectDetectionAnnotation](objectdetectionannotation.md)
+- [struct ObjectDetectionAnnotation](./objectdetectionannotation.md)
   An object detection annotation.
 
 

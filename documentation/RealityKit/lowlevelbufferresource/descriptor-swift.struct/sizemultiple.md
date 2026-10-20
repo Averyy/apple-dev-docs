@@ -1,7 +1,8 @@
 # sizeMultiple
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The required alignment of the buffer’s size, in bytes.
 
@@ -19,7 +20,8 @@ var sizeMultiple: Int { get set }
 
 ## See Also
 
-- [var capacity: Int](lowlevelbufferresource/descriptor-swift.struct/capacity.md)
+### Configuring the buffer size
+- [var capacity: Int](./capacity.md)
   The capacity of the buffer, in bytes.
 
 

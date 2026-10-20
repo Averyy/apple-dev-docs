@@ -1,6 +1,7 @@
 # Handling an Intent
 
-**Framework**: SiriKit
+**Framework**: SiriKit  
+**Role**: Article
 
 Fulfill the intent and provide feedback to SiriKit about what you did.
 
@@ -13,7 +14,7 @@ After resolving and confirming an intent, SiriKit asks you to handle the intent 
 
 You handle most intents directly from your Intents app extension, but in some cases you may ask SiriKit to let your app handle the request.
 
-##### Example Handling a Start Workout Intent
+##### Example: Handling a Start Workout Intent
 
 A workout app may need to configure timers and other health-related information, tasks that cannot be handled easily from the Intents app extension. Therefore, handling a workout intent involves directing SiriKit to launch your app.
 
@@ -29,7 +30,7 @@ func handle(startWorkout intent: INStartWorkoutIntent,
 }
 ```
 
-##### Example Handling a Request Ride Intent
+##### Example: Handling a Request Ride Intent
 
 A ride booking app needs to provide detailed information about a ride booked by the user. Retrieving ride booking information requires communicating with your service and using the returned information to create an [`INRideStatus`](https://developer.apple.com/documentation/intents/inridestatus) object.
 
@@ -115,42 +116,43 @@ When handling intents, consider the following:
 - **Always include as much information as possible in your responses.** Siri and Maps communicate as much information as possible to the user when confirming or handling intents. Filling your response object with detailed information creates a better user experience by clearly communicating what your app did.
 - **Configure data objects fully before assigning them to the response object.** For most response objects, properties use copy semantics. If you get the object in a property and modify it, the changes you make happen on the copy, not the original. Therefore, you must always set the value of the property only after making your changes.
 - **Return your response objects within a few seconds.** Because Siri and Maps are actively communicating with the user, always return your response as quickly as possible. If it will take more than a few seconds to return your response, return your response with an “in-progress” code to indicate that you are still working on the request.
-- **Use custom user activity objects to support deep linking into your app.** Providing a custom [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object, instead of relying on the default object, lets you supply additional information for configuring your user interface. You can use that information to display specific information about the task that the user performed in Siri or Maps, which yields a better user experience.
-- **Always handle user activity objects in your parent app.** Whenever Siri or Maps need to transfer control to your app, they provide an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object with information about what happened. Response objects create a default [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object if you do not provide one yourself. Handling these objects in your app ensures a seamless experience for the user.
+- **Use custom user activity objects to support deep linking into your app.** Providing a custom [`NSUserActivity`](../Foundation/nsuseractivity.md) object, instead of relying on the default object, lets you supply additional information for configuring your user interface. You can use that information to display specific information about the task that the user performed in Siri or Maps, which yields a better user experience.
+- **Always handle user activity objects in your parent app.** Whenever Siri or Maps need to transfer control to your app, they provide an [`NSUserActivity`](../Foundation/nsuseractivity.md) object with information about what happened. Response objects create a default [`NSUserActivity`](../Foundation/nsuseractivity.md) object if you do not provide one yourself. Handling these objects in your app ensures a seamless experience for the user.
 
 SiriKit leverages information from the user’s contacts database to fill in parameters when applicable. If your app was denied access to the user’s contacts, information related to those contacts may not be included with the intent. For example, any [`INPerson`](https://developer.apple.com/documentation/intents/inperson) objects in the intent may contain only a value in their [`spokenPhrase`](https://developer.apple.com/documentation/intents/inspeakable/spokenphrase) property and not contain any other contact information. This lack of access also prevents SiriKit from accessing the addresses of contacts, which causes a phrase like `“I need a ride home using <app>”` to result in an intent without a drop-off location. If your app was denied access to the user’s contacts, you might want to inform the user that you can provide a better experience with access restored.
 
 ## See Also
 
-- [Adding User Interactivity with Siri Shortcuts and the Shortcuts App](adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app.md)
+### Articles
+- [Adding User Interactivity with Siri Shortcuts and the Shortcuts App](./adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app.md)
   Add custom intents and parameters to help users interact more quickly and effectively with Siri and the Shortcuts app.
-- [Defining Relevant Shortcuts for the Siri Watch Face](defining-relevant-shortcuts-for-the-siri-watch-face.md)
+- [Defining Relevant Shortcuts for the Siri Watch Face](./defining-relevant-shortcuts-for-the-siri-watch-face.md)
   Inform Siri when your app’s shortcuts may be useful to the user.
-- [Deleting Donated Shortcuts](deleting-donated-shortcuts.md)
+- [Deleting Donated Shortcuts](./deleting-donated-shortcuts.md)
   Remove your donations from Siri.
-- [Dispatching intents to handlers](dispatching-intents-to-handlers.md)
+- [Dispatching intents to handlers](./dispatching-intents-to-handlers.md)
   Provide SiriKit with an intent handler capable of handling a specific intent.
-- [Improving Siri Media Interactions and App Selection](improving-siri-media-interactions-and-app-selection.md)
+- [Improving Siri Media Interactions and App Selection](./improving-siri-media-interactions-and-app-selection.md)
   Fine-tune voice controls and improve Siri Suggestions by sharing app capabilities, customized names, and listening habits with the system.
-- [Improving interactions between Siri and your messaging app](improving-interactions-between-siri-and-your-messaging-app.md)
+- [Improving interactions between Siri and your messaging app](./improving-interactions-between-siri-and-your-messaging-app.md)
   Donate app-specific content, use Siri’s contact suggestions, and adopt the latest platform features to create a more consistent messaging experience.
-- [Registering Custom Vocabulary with SiriKit](registering-custom-vocabulary-with-sirikit.md)
+- [Registering Custom Vocabulary with SiriKit](./registering-custom-vocabulary-with-sirikit.md)
   Register your app’s custom terminology, and provide sample phrases for how to use your app with Siri.
-- [Confirming the Details of an Intent](confirming-the-details-of-an-intent.md)
+- [Confirming the Details of an Intent](./confirming-the-details-of-an-intent.md)
   Perform final validation of the intent parameters and verify that your services are ready to fulfill the intent.
-- [Resolving the Parameters of an Intent](resolving-the-parameters-of-an-intent.md)
+- [Resolving the Parameters of an Intent](./resolving-the-parameters-of-an-intent.md)
   Validate the parameters of an intent and make sure that you have the information you need to continue.
-- [Generating a List of Ride Options](generating-a-list-of-ride-options.md)
+- [Generating a List of Ride Options](./generating-a-list-of-ride-options.md)
   Generate ride options for Maps to display to the user.
-- [Handling the Ride-Booking Intents](handling-the-ride-booking-intents.md)
+- [Handling the Ride-Booking Intents](./handling-the-ride-booking-intents.md)
   Support the different intent-handling sequences for booking rides with Shortcuts or Maps.
-- [Donating Reservations](donating-reservations.md)
+- [Donating Reservations](./donating-reservations.md)
   Inform Siri of reservations made from your app.
-- [Specifying Synonyms for Your App Name](specifying-synonyms-for-your-app-name.md)
+- [Specifying Synonyms for Your App Name](./specifying-synonyms-for-your-app-name.md)
   Provide alternative names for your app that are more familiar or easier for users to speak.
-- [Intent Phrases](intent-phrases.md)
+- [Intent Phrases](./intent-phrases.md)
   The keys that you include in your global vocabulary file to show how users engage your app from Siri.
-- [Localizing Your Vocabulary for Chinese Dialects](localizing-your-vocabulary-for-chinese-dialects.md)
+- [Localizing Your Vocabulary for Chinese Dialects](./localizing-your-vocabulary-for-chinese-dialects.md)
   Apply emphasis markers to your pronunciation tips to assist Siri with Chinese dialects.
 
 

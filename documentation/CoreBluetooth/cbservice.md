@@ -1,7 +1,8 @@
 # CBService
 
 **Framework**: Core Bluetooth  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A collection of data and associated behaviors that accomplish a function or feature of a device.
 
@@ -20,48 +21,53 @@ A collection of data and associated behaviors that accomplish a function or feat
 class CBService
 ```
 
+```objc
+@interface CBService : CBAttribute
+```
+
 #### Overview
 
-[`CBService`](cbservice.md) objects represent services of a remote peripheral. Services are either primary or secondary and may contain multiple characteristics or included services (references to other services).
+[`CBService`](./cbservice.md) objects represent services of a remote peripheral. Services are either primary or secondary and may contain multiple characteristics or included services (references to other services).
 
 ## Topics
 
 ### Identifying a Service
-- [var peripheral: CBPeripheral?](cbservice/peripheral.md)
+- [var peripheral: CBPeripheral?](./cbservice/peripheral.md)
   The peripheral to which this service belongs.
-- [var isPrimary: Bool](cbservice/isprimary.md)
+- [var isPrimary: Bool](./cbservice/isprimary.md)
   A Boolean value that indicates whether the type of service is primary or secondary.
 ### Accessing Service Data
-- [var characteristics: [CBCharacteristic]?](cbservice/characteristics.md)
+- [var characteristics: [CBCharacteristic]?](./cbservice/characteristics.md)
   A list of characteristics discovered in this service.
-- [var includedServices: [CBService]?](cbservice/includedservices.md)
+- [var includedServices: [CBService]?](./cbservice/includedservices.md)
   A list of included services discovered in this service.
 
 ## Relationships
 
 ### Inherits From
-- [CBAttribute](cbattribute.md)
+- [CBAttribute](./cbattribute.md)
 ### Inherited By
-- [CBMutableService](cbmutableservice.md)
+- [CBMutableService](./cbmutableservice.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CBMutableService](cbmutableservice.md)
+### Services
+- [class CBMutableService](./cbmutableservice.md)
   A service with writeable property values.
-- [class CBCharacteristic](cbcharacteristic.md)
+- [class CBCharacteristic](./cbcharacteristic.md)
   A characteristic of a remote peripheral’s service.
-- [class CBMutableCharacteristic](cbmutablecharacteristic.md)
+- [class CBMutableCharacteristic](./cbmutablecharacteristic.md)
   A characteristic of a local peripheral’s service.
-- [class CBDescriptor](cbdescriptor.md)
+- [class CBDescriptor](./cbdescriptor.md)
   An object that provides further information about a remote peripheral’s characteristic.
-- [class CBMutableDescriptor](cbmutabledescriptor.md)
+- [class CBMutableDescriptor](./cbmutabledescriptor.md)
   An object that provides additional information about a local peripheral’s characteristic.
 
 

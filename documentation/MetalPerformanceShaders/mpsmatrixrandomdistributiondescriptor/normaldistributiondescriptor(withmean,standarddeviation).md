@@ -1,7 +1,8 @@
 # normalDistributionDescriptor(withMean:standardDeviation:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 14.0+
@@ -15,6 +16,10 @@
 
 ```swift
 class func normalDistributionDescriptor(withMean mean: Float, standardDeviation: Float) -> MPSMatrixRandomDistributionDescriptor
+```
+
+```objc
++ (MPSMatrixRandomDistributionDescriptor *) normalDistributionDescriptorWithMean:(float) mean standardDeviation:(float) standardDeviation;
 ```
 
 

@@ -1,7 +1,8 @@
 # SCCaptureResolutionType.nominal
 
 **Framework**: ScreenCaptureKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Capture streaming content with a one point to one pixel conversion factor.
 
@@ -15,11 +16,16 @@ Capture streaming content with a one point to one pixel conversion factor.
 case nominal
 ```
 
+```c
+SCCaptureResolutionNominal
+```
+
 ## See Also
 
-- [SCCaptureResolutionType.automatic](sccaptureresolutiontype/automatic.md)
+### Resolutions
+- [SCCaptureResolutionType.automatic](./automatic.md)
   Allow ScreenCaptureKit to automatically select the quality of content depending on factors such as network connection.
-- [SCCaptureResolutionType.best](sccaptureresolutiontype/best.md)
+- [SCCaptureResolutionType.best](./best.md)
   Capture streaming content at the best available resolution.
 
 

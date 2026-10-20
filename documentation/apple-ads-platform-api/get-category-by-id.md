@@ -1,7 +1,8 @@
 # Get Business Category
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Retrieve a single business category by its identifier.
 
@@ -16,7 +17,7 @@ This endpoint returns the full `BusinessCategory` object for the specified categ
 
 ##### Request
 
-```None
+```
 GET https://api.ads.apple.com/v1/business-categories/cat-din-001
 ```
 
@@ -45,17 +46,33 @@ GET https://api.ads.apple.com/v1/business-categories/cat-din-001
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Responses
+
+- `200` OK (`BusinessCategoryResponse`, `application/json`)
+- `400` Bad Request (`Error`, `application/json`)
+- `401` Unauthorized (`Error`, `application/json`)
+- `403` Forbidden (`Error`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`Error`, `application/json`)
+- `500` Internal Server Error (`Error`, `application/json`)
 
 ## See Also
 
-- [Query Brands](query-brands.md)
+- [Query Brands](./query-brands.md)
   Retrieve a paginated list of brands using filters and sorting.
-- [Get Brand by ID](get-brand-by-id.md)
+- [Get Brand by ID](./get-brand-by-id.md)
   Retrieve a single brand by its unique identifier.
-- [Query Business Categories](query-categories.md)
+- [Query Business Categories](./query-categories.md)
   Retrieve a paginated list of business categories using filters and sorting.
-- [Query Rejection Reasons for Brands](query-policy-assignments-(rejection-reasons)-for-external-consumers.md)
+- [Query Rejection Reasons for Brands](./query-policy-assignments-%28rejection-reasons%29-for-external-consumers.md)
   Query paginated policy assignment rejection reason details.
 
 

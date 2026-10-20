@@ -1,7 +1,8 @@
 # IOCommandPool
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 Manipulates a pool of commands which inherit from IOCommand.
 
@@ -11,7 +12,7 @@ Manipulates a pool of commands which inherit from IOCommand.
 
 ## Declaration
 
-```swift
+```cpp
 class IOCommandPool : OSObject
 ```
 
@@ -22,57 +23,58 @@ The IOCommandPool class is used to manipulate a pool of commands which inherit f
 ## Topics
 
 ### Miscellaneous
-- [commandPool](iocommandpool/1811017-commandpool.md)
+- [commandPool](./iocommandpool/api-1811017-commandpool.md)
   Should never be used, obsolete. See IOCommandPool::withWorkLoop.
-- [gatedGetCommand](iocommandpool/1811028-gatedgetcommand.md)
-- [gatedReturnCommand](iocommandpool/1811045-gatedreturncommand.md)
-- [getCommand](iocommandpool/1811062-getcommand.md)
-- [init](iocommandpool/1811075-init.md)
+- [gatedGetCommand](./iocommandpool/api-1811028-gatedgetcommand.md)
+- [gatedReturnCommand](./iocommandpool/api-1811045-gatedreturncommand.md)
+- [getCommand](./iocommandpool/api-1811062-getcommand.md)
+- [init](./iocommandpool/api-1811075-init.md)
   Should never be used, obsolete. See initWithWorkLoop.
-- [initWithWorkLoop](iocommandpool/1811086-initwithworkloop.md)
+- [initWithWorkLoop](./iocommandpool/api-1811086-initwithworkloop.md)
   Primary initializer for an IOCommandPool object.
-- [returnCommand](iocommandpool/1811102-returncommand.md)
-- [withWorkLoop(IOService *, IOWorkLoop *, UInt32)](iocommandpool/1811120-withworkloop.md)
+- [returnCommand](./iocommandpool/api-1811102-returncommand.md)
+- [withWorkLoop(IOService *, IOWorkLoop *, UInt32)](./iocommandpool/api-1811120-withworkloop.md)
   Should never be used, obsolete. See IOCommandPool::withWorkLoop.
-- [withWorkLoop(IOWorkLoop *)](iocommandpool/1811136-withworkloop.md)
+- [withWorkLoop(IOWorkLoop *)](./iocommandpool/api-1811136-withworkloop.md)
   Primary factory method for the IOCommandPool class
 ### Constants
-- [kIOCommandPoolDefaultSize](iocommandpool/kiocommandpooldefaultsize.md)
+- [kIOCommandPoolDefaultSize](./iocommandpool/kiocommandpooldefaultsize.md)
   The default size of any command pool.
 ### DataTypes
-- [ExpansionData](ioservice/expansiondata.md)
+- [ExpansionData](./ioservice/expansiondata.md)
 ### Instance Variables
-- [reserved](iocommandpool/reserved.md)
+- [reserved](./iocommandpool/reserved.md)
 ### Instance Methods
-- [- free](iocommandpool/1560748-free.md)
-- [- gatedGetCommand](iocommandpool/1560742-gatedgetcommand.md)
-- [- gatedReturnCommand](iocommandpool/1560738-gatedreturncommand.md)
-- [- getCommand](iocommandpool/1560741-getcommand.md)
-- [- getMetaClass](iocommandpool/1560745-getmetaclass.md)
-- [- init](iocommandpool/1560739-init.md)
-- [- init](../driverkit/iocommandpool/init.md)
-- [- initWithQueue](../driverkit/iocommandpool/initwithqueue.md)
-- [- initWithWorkLoop](iocommandpool/1560744-initwithworkloop.md)
-- [- returnCommand](iocommandpool/1560740-returncommand.md)
+- [- free](./iocommandpool/api-1560748-free.md)
+- [- gatedGetCommand](./iocommandpool/api-1560742-gatedgetcommand.md)
+- [- gatedReturnCommand](./iocommandpool/api-1560738-gatedreturncommand.md)
+- [- getCommand](./iocommandpool/api-1560741-getcommand.md)
+- [- getMetaClass](./iocommandpool/api-1560745-getmetaclass.md)
+- [- init](./iocommandpool/api-1560739-init.md)
+- [- init](../DriverKit/iocommandpool/init.md)
+- [- initWithQueue](../DriverKit/iocommandpool/initwithqueue.md)
+- [- initWithWorkLoop](./iocommandpool/api-1560744-initwithworkloop.md)
+- [- returnCommand](./iocommandpool/api-1560740-returncommand.md)
 ### Type Methods
-- [+ commandPool](iocommandpool/1560747-commandpool.md)
-- [+ withQueue](../driverkit/iocommandpool/withqueue.md)
-- [+ withWorkLoop](iocommandpool/1560746-withworkloop.md)
+- [+ commandPool](./iocommandpool/api-1560747-commandpool.md)
+- [+ withQueue](../DriverKit/iocommandpool/withqueue.md)
+- [+ withWorkLoop](./iocommandpool/api-1560746-withworkloop.md)
 
 ## Relationships
 
 ### Inherits From
-- [OSObject](../driverkit/osobject.md)
-- [OSObject](osobject.md)
+- [OSObject](../DriverKit/osobject.md)
+- [OSObject](./osobject.md)
 
 ## See Also
 
-- [IOCommandGate](iocommandgate.md)
+### Base Types
+- [IOCommandGate](./iocommandgate.md)
   Single-threaded work-loop client request mechanism.
-- [IOCommand](iocommand.md)
+- [IOCommand](./iocommand.md)
   This class is an abstract class which represents an I/O command.
-- [IODispatchSource](iodispatchsource.md)
-- [IOEventSource](ioeventsource.md)
+- [IODispatchSource](./iodispatchsource.md)
+- [IOEventSource](./ioeventsource.md)
   Abstract class for all work-loop event sources.
 
 

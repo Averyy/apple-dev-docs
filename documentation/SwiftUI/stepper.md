@@ -1,7 +1,8 @@
 # Stepper
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A control that performs increment and decrement actions.
 
@@ -28,7 +29,7 @@ Use a stepper control when you want the user to have granular control while incr
 - Operate strictly over a prescribed range.
 - Step by specific amounts over a stepper’s range of possible values.
 
-The example below uses an array that holds a number of [`Color`](color.md) values, a local state variable, `value`, to set the control’s background color, and title label. When the user clicks or taps the stepper’s increment or decrement buttons, SwiftUI executes the relevant closure that updates `value`, wrapping the `value` to prevent overflow. SwiftUI then re-renders the view, updating the text and background color to match the current index:
+The example below uses an array that holds a number of [`Color`](./color.md) values, a local state variable, `value`, to set the control’s background color, and title label. When the user clicks or taps the stepper’s increment or decrement buttons, SwiftUI executes the relevant closure that updates `value`, wrapping the `value` to prevent overflow. SwiftUI then re-renders the view, updating the text and background color to match the current index:
 
 ```swift
 struct StepperView: View {
@@ -60,7 +61,7 @@ struct StepperView: View {
 }
 ```
 
-![A view displaying a stepper that uses a text view for stepper’s title and that changes the background color of its view when incremented or decremented. The view selects the new background color from a predefined array of colors using the stepper’s value as the index.](/images/com.apple.SwiftUI/SwiftUI-Stepper-increment-decrement-closures@2x.png)
+![A view displaying a stepper that uses a text view for stepper’s title and that changes the background color of its view when incremented or decremented. The view selects the new background color from a predefined array of colors using the stepper’s value as the index.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-Stepper-increment-decrement-closures@2x.png)
 
 The following example shows a stepper that displays the effect of incrementing or decrementing a value with the step size of `step` with the bounds defined by `range`:
 
@@ -84,53 +85,54 @@ struct StepperView: View {
 }
 ```
 
-![A view displaying a stepper with a step size of five, and a prescribed range of 1 though 50.](/images/com.apple.SwiftUI/SwiftUI-Stepper-value-step-range@2x.png)
+![A view displaying a stepper with a step size of five, and a prescribed range of 1 though 50.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-Stepper-value-step-range@2x.png)
 
 ## Topics
 
 ### Creating a stepper
-- [init<V>(value: Binding<V>, step: V.Stride, label: () -> Label, onEditingChanged: (Bool) -> Void)](stepper/init(value:step:label:oneditingchanged:).md)
+- [init<V>(value: Binding<V>, step: V.Stride, label: () -> Label, onEditingChanged: (Bool) -> Void)](./stepper/init%28value,step,label,oneditingchanged%29.md)
   Creates a stepper configured to increment or decrement a binding to a value using a step value you provide.
-- [init<F>(value: Binding<F.FormatInput>, step: F.FormatInput.Stride, format: F, label: () -> Label, onEditingChanged: (Bool) -> Void)](stepper/init(value:step:format:label:oneditingchanged:).md)
+- [init<F>(value: Binding<F.FormatInput>, step: F.FormatInput.Stride, format: F, label: () -> Label, onEditingChanged: (Bool) -> Void)](./stepper/init%28value,step,format,label,oneditingchanged%29.md)
   Creates a stepper configured to increment or decrement a binding to a value using a step value you provide, displaying its value with an applied format style.
-- [init(_:value:step:onEditingChanged:)](stepper/init(_:value:step:oneditingchanged:).md)
+- [init(_:value:step:onEditingChanged:)](./stepper/init%28_,value,step,oneditingchanged%29.md)
   Creates a stepper with a title key and configured to increment and decrement a binding to a value and step amount you provide.
-- [init(_:value:step:format:onEditingChanged:)](stepper/init(_:value:step:format:oneditingchanged:).md)
+- [init(_:value:step:format:onEditingChanged:)](./stepper/init%28_,value,step,format,oneditingchanged%29.md)
   Creates a stepper with a title key and configured to increment and decrement a binding to a value and step amount you provide, displaying its value with an applied format style.
 ### Creating a stepper over a range
-- [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, label: () -> Label, onEditingChanged: (Bool) -> Void)](stepper/init(value:in:step:label:oneditingchanged:).md)
+- [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, label: () -> Label, onEditingChanged: (Bool) -> Void)](./stepper/init%28value,in,step,label,oneditingchanged%29.md)
   Creates a stepper configured to increment or decrement a binding to a value using a step value and within a range of values you provide.
-- [init<F>(value: Binding<F.FormatInput>, in: ClosedRange<F.FormatInput>, step: F.FormatInput.Stride, format: F, label: () -> Label, onEditingChanged: (Bool) -> Void)](stepper/init(value:in:step:format:label:oneditingchanged:).md)
+- [init<F>(value: Binding<F.FormatInput>, in: ClosedRange<F.FormatInput>, step: F.FormatInput.Stride, format: F, label: () -> Label, onEditingChanged: (Bool) -> Void)](./stepper/init%28value,in,step,format,label,oneditingchanged%29.md)
   Creates a stepper configured to increment or decrement a binding to a value using a step value and within a range of values you provide, displaying its value with an applied format style.
-- [init(_:value:in:step:onEditingChanged:)](stepper/init(_:value:in:step:oneditingchanged:).md)
+- [init(_:value:in:step:onEditingChanged:)](./stepper/init%28_,value,in,step,oneditingchanged%29.md)
   Creates a stepper instance that increments and decrements a binding to a value, by a step size and within a closed range that you provide.
-- [init(_:value:in:step:format:onEditingChanged:)](stepper/init(_:value:in:step:format:oneditingchanged:).md)
+- [init(_:value:in:step:format:onEditingChanged:)](./stepper/init%28_,value,in,step,format,oneditingchanged%29.md)
   Creates a stepper instance that increments and decrements a binding to a value, by a step size and within a closed range that you provide, displaying its value with an applied format style.
 ### Creating a stepper with change behavior
-- [init(label: () -> Label, onIncrement: (() -> Void)?, onDecrement: (() -> Void)?, onEditingChanged: (Bool) -> Void)](stepper/init(label:onincrement:ondecrement:oneditingchanged:).md)
+- [init(label: () -> Label, onIncrement: (() -> Void)?, onDecrement: (() -> Void)?, onEditingChanged: (Bool) -> Void)](./stepper/init%28label,onincrement,ondecrement,oneditingchanged%29.md)
   Creates a stepper instance that performs the closures you provide when the user increments or decrements the stepper.
-- [init(_:onIncrement:onDecrement:onEditingChanged:)](stepper/init(_:onincrement:ondecrement:oneditingchanged:).md)
+- [init(_:onIncrement:onDecrement:onEditingChanged:)](./stepper/init%28_,onincrement,ondecrement,oneditingchanged%29.md)
   Creates a stepper that uses a title key and executes the closures you provide when the user clicks or taps the stepper’s increment and decrement buttons.
 ### Deprecated
-- [init<V>(value: Binding<V>, step: V.Stride, onEditingChanged: (Bool) -> Void, label: () -> Label)](stepper/init(value:step:oneditingchanged:label:).md)
+- [init<V>(value: Binding<V>, step: V.Stride, onEditingChanged: (Bool) -> Void, label: () -> Label)](./stepper/init%28value,step,oneditingchanged,label%29.md)
   Creates a stepper configured to increment or decrement a binding to a value using a step value you provide.
-- [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, onEditingChanged: (Bool) -> Void, label: () -> Label)](stepper/init(value:in:step:oneditingchanged:label:).md)
+- [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, onEditingChanged: (Bool) -> Void, label: () -> Label)](./stepper/init%28value,in,step,oneditingchanged,label%29.md)
   Creates a stepper configured to increment or decrement a binding to a value using a step value and within a range of values you provide.
-- [init(onIncrement: (() -> Void)?, onDecrement: (() -> Void)?, onEditingChanged: (Bool) -> Void, label: () -> Label)](stepper/init(onincrement:ondecrement:oneditingchanged:label:).md)
+- [init(onIncrement: (() -> Void)?, onDecrement: (() -> Void)?, onEditingChanged: (Bool) -> Void, label: () -> Label)](./stepper/init%28onincrement,ondecrement,oneditingchanged,label%29.md)
   Creates a stepper instance that performs the closures you provide when the user increments or decrements the stepper.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct Slider](slider.md)
+### Getting numeric inputs
+- [struct Slider](./slider.md)
   A control for selecting a value from a bounded linear range of values.
-- [struct Toggle](toggle.md)
+- [struct Toggle](./toggle.md)
   A control that toggles between on and off states.
-- [func toggleStyle<S>(S) -> some View](view/togglestyle(_:).md)
+- [func toggleStyle<S>(S) -> some View](./view/togglestyle%28_%29.md)
   Sets the style for toggles in a view hierarchy.
 
 

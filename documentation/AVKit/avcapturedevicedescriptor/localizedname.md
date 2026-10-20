@@ -1,7 +1,8 @@
 # localizedName
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A name for the camera that’s suitable for display in your interface.
 
@@ -16,13 +17,18 @@ A name for the camera that’s suitable for display in your interface.
 var localizedName: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * localizedName;
+```
+
 #### Discussion
 
-This value matches the [`localizedName`](https://developer.apple.com/documentation/avfoundation/avcapturedevice/localizedname) of the camera it describes.
+This value matches the [`localizedName`](../../AVFoundation/avcapturedevice/localizedname.md) of the camera it describes.
 
 ## See Also
 
-- [var uniqueID: String](avcapturedevicedescriptor/uniqueid.md)
+### Identifying the device
+- [var uniqueID: String](./uniqueid.md)
   An identifier that uniquely identifies the device’s camera.
 
 

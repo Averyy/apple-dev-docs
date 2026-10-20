@@ -1,7 +1,8 @@
 # RectangleMark
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Chart content that represents data using rectangles.
 
@@ -27,14 +28,14 @@ Use rectangle mark to map data fields to rectangles. You can use the rectangle m
 
 ##### Create a Heat Map with Rectangle Marks
 
-When presenting data about the effectiveness of a machine learning model, you typically organize the data using a confusion matrix which shows the predicted versus the actual results of the model. To create a 2D heat map that represents a machine learning model you use [`init(x:y:width:height:)`](rectanglemark/init(x:y:width:height:).md). The example below uses a 2D heat map to visualize a basic confusion matrix with the following layout:
+When presenting data about the effectiveness of a machine learning model, you typically organize the data using a confusion matrix which shows the predicted versus the actual results of the model. To create a 2D heat map that represents a machine learning model you use [`init(x:y:width:height:)`](./rectanglemark/init%28x,y,width,height%29.md). The example below uses a 2D heat map to visualize a basic confusion matrix with the following layout:
 
 |  | Negative | Positive |
 | --- | --- | --- |
 | **Negative** | True Negative | False Negative |
 | **Positive** | False Positive | True Positive |
 
-The number of records in each cell, `num`,  is represented by the color of its corresponding rectangle. This is done by applying the [`foregroundStyle(by:)`](chartcontent/foregroundstyle(by:).md) modifier to the rectangle mark and passing it a [`PlottableValue`](plottablevalue.md) constructed with [`value(_:_:)`](plottablevalue/value(_:_:)-13lvv.md) which takes a label and the value to plot, in this case `num`. A scale from values of `num` to color will be automatically generated and used to color the rectangles based on the value.
+The number of records in each cell, `num`,  is represented by the color of its corresponding rectangle. This is done by applying the [`foregroundStyle(by:)`](./chartcontent/foregroundstyle%28by%29.md) modifier to the rectangle mark and passing it a [`PlottableValue`](./plottablevalue.md) constructed with [`value(_:_:)`](./plottablevalue/value%28_,_%29-13lvv.md) which takes a label and the value to plot, in this case `num`. A scale from values of `num` to color will be automatically generated and used to color the rectangles based on the value.
 
 ```swift
 struct MatrixEntry {
@@ -61,7 +62,7 @@ var body: some View {
 }
 ```
 
-![2D heat map chart that represents a simple confusion matrix in a 2x2 grid. The number of records is represented by the color of its corresponding rectangle. Darker colors represent higher values.](/images/com.apple.Charts/RectangleMarkSwift.RectangleMarkHistogramHeatmap2D@2x.png)
+![2D heat map chart that represents a simple confusion matrix in a 2x2 grid. The number of records is represented by the color of its corresponding rectangle. Darker colors represent higher values.](https://developer.apple.com/tutorials/images/com.apple.Charts/RectangleMarkSwift.RectangleMarkHistogramHeatmap2D@2x.png)
 
 ##### Annotate a Rectangular Area with Rectangle Marks
 
@@ -97,11 +98,11 @@ var body: some View {
 }
 ```
 
-![Scatter plot chart with a rectangle mark annotation. 3 points on the chart at: (5, 5), (2.5, 2.5), (3, 3) each point mark is highlighted with an opaque rectangle.](/images/com.apple.Charts/RectangleMarkSwift.RectangleMarkScatter@2x.png)
+![Scatter plot chart with a rectangle mark annotation. 3 points on the chart at: (5, 5), (2.5, 2.5), (3, 3) each point mark is highlighted with an opaque rectangle.](https://developer.apple.com/tutorials/images/com.apple.Charts/RectangleMarkSwift.RectangleMarkScatter@2x.png)
 
-##### Rectanglemark in Chart3d
+##### RectangleMark in Chart3D
 
-To plot a rectangle in a 3D Chart, use the [`init(x:y:z:)`](rectanglemark/init(x:y:z:).md) initializer.
+To plot a rectangle in a 3D Chart, use the [`init(x:y:z:)`](./rectanglemark/init%28x,y,z%29.md) initializer.
 
 > ❗ **Important**: A 3D RectangleMark requires one parameter to be a single numeric value and the other two parameters to be numeric ranges.
 
@@ -138,50 +139,51 @@ Chart3D {
 ## Topics
 
 ### Creating a rectangle mark
-- [init<X, Y>(x: PlottableValue<X>, yStart: PlottableValue<Y>, yEnd: PlottableValue<Y>, width: MarkDimension)](rectanglemark/init(x:ystart:yend:width:)-vh2x.md)
+- [init<X, Y>(x: PlottableValue<X>, yStart: PlottableValue<Y>, yEnd: PlottableValue<Y>, width: MarkDimension)](./rectanglemark/init%28x,ystart,yend,width%29-vh2x.md)
   Creates a rectangle mark with an y interval encoding and an x encoding.
-- [init<X>(x: PlottableValue<X>, yStart: CGFloat?, yEnd: CGFloat?, width: MarkDimension)](rectanglemark/init(x:ystart:yend:width:)-xhqp.md)
+- [init<X>(x: PlottableValue<X>, yStart: CGFloat?, yEnd: CGFloat?, width: MarkDimension)](./rectanglemark/init%28x,ystart,yend,width%29-xhqp.md)
   Creates a rectangle mark that plots values on x and has a fixed y interval.
-- [init<X, Y>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, y: PlottableValue<Y>, height: MarkDimension)](rectanglemark/init(xstart:xend:y:height:)-27222.md)
+- [init<X, Y>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, y: PlottableValue<Y>, height: MarkDimension)](./rectanglemark/init%28xstart,xend,y,height%29-27222.md)
   Creates a rectangle mark with an x interval encoding and a y encoding.
-- [init<Y>(xStart: CGFloat?, xEnd: CGFloat?, y: PlottableValue<Y>, height: MarkDimension)](rectanglemark/init(xstart:xend:y:height:)-4x46i.md)
+- [init<Y>(xStart: CGFloat?, xEnd: CGFloat?, y: PlottableValue<Y>, height: MarkDimension)](./rectanglemark/init%28xstart,xend,y,height%29-4x46i.md)
   Creates a rectangle mark with a fixed x interval and y encoding.
-- [init<X, Y>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, yStart: PlottableValue<Y>, yEnd: PlottableValue<Y>)](rectanglemark/init(xstart:xend:ystart:yend:)-1qbzg.md)
+- [init<X, Y>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, yStart: PlottableValue<Y>, yEnd: PlottableValue<Y>)](./rectanglemark/init%28xstart,xend,ystart,yend%29-1qbzg.md)
   Creates a rectangle mark with x and y interval encodings.
-- [init(xStart: CGFloat?, xEnd: CGFloat?, yStart: CGFloat?, yEnd: CGFloat?)](rectanglemark/init(xstart:xend:ystart:yend:)-5682c.md)
+- [init(xStart: CGFloat?, xEnd: CGFloat?, yStart: CGFloat?, yEnd: CGFloat?)](./rectanglemark/init%28xstart,xend,ystart,yend%29-5682c.md)
   Creates a rectangle mark with fixed x and y intervals.
-- [init<Y>(xStart: CGFloat?, xEnd: CGFloat?, yStart: PlottableValue<Y>, yEnd: PlottableValue<Y>)](rectanglemark/init(xstart:xend:ystart:yend:)-5cbgh.md)
+- [init<Y>(xStart: CGFloat?, xEnd: CGFloat?, yStart: PlottableValue<Y>, yEnd: PlottableValue<Y>)](./rectanglemark/init%28xstart,xend,ystart,yend%29-5cbgh.md)
   Creates a rectangle mark with a y interval encoding and a fixed x interval.
-- [init<X>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, yStart: CGFloat?, yEnd: CGFloat?)](rectanglemark/init(xstart:xend:ystart:yend:)-6jeka.md)
+- [init<X>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, yStart: CGFloat?, yEnd: CGFloat?)](./rectanglemark/init%28xstart,xend,ystart,yend%29-6jeka.md)
   Creates a rectangle mark with an x interval encoding and a fixed y interval.
-- [init<X, Y>(x: PlottableValue<X>, y: PlottableValue<Y>, width: MarkDimension, height: MarkDimension)](rectanglemark/init(x:y:width:height:).md)
+- [init<X, Y>(x: PlottableValue<X>, y: PlottableValue<Y>, width: MarkDimension, height: MarkDimension)](./rectanglemark/init%28x,y,width,height%29.md)
   Creates a rectangle that plots values with x and y.
-- [init(x: PlottableValue<some Plottable>, y: PlottableValue<some Plottable>, z: PlottableValue<some Plottable>)](rectanglemark/init(x:y:z:).md)
+- [init(x: PlottableValue<some Plottable>, y: PlottableValue<some Plottable>, z: PlottableValue<some Plottable>)](./rectanglemark/init%28x,y,z%29.md)
   Creates a rectangle mark for a 3D chart.
 
 ## Relationships
 
 ### Conforms To
-- [Chart3DContent](chart3dcontent.md)
-- [ChartContent](chartcontent.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Chart3DContent](./chart3dcontent.md)
+- [ChartContent](./chartcontent.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AreaMark](areamark.md)
+### Marks
+- [struct AreaMark](./areamark.md)
   Chart content that represents data using the area of one or more regions.
-- [struct LineMark](linemark.md)
+- [struct LineMark](./linemark.md)
   Chart content that represents data using a sequence of connected line segments.
-- [struct PointMark](pointmark.md)
+- [struct PointMark](./pointmark.md)
   Chart content that represents data using points.
-- [struct RuleMark](rulemark.md)
+- [struct RuleMark](./rulemark.md)
   Chart content that represents data using a single horizontal or vertical rule.
-- [struct BarMark](barmark.md)
+- [struct BarMark](./barmark.md)
   Chart content that represents data using bars.
-- [struct SectorMark](sectormark.md)
+- [struct SectorMark](./sectormark.md)
   A sector of a pie or donut chart, which shows how individual categories make up a meaningful total.
 
 

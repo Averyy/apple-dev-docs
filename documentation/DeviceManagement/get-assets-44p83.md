@@ -1,17 +1,20 @@
 # Get Assets
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get the set of assets managed by your organization.
 
 **Availability**:
 - VPP License Management 1.0+
 
+> **Deprecated**: This legacy API is currently in maintenance mode. Apple won’t add any new functionality to it.
+
 ## Mentions
 
-- [Upgrading to Apple School Manager and Apple Business](upgrading-to-apple-school-manager-and-apple-business.md)
-- [Handling error responses](handling-error-responses.md)
+- [Upgrading to Apple School Manager and Apple Business](./upgrading-to-apple-school-manager-and-apple-business.md)
+- [Handling error responses](./handling-error-responses.md)
 
 #### Discussion
 
@@ -19,7 +22,7 @@ Get the set of assets managed by your organization.
 
 **Request**:
 
-```None
+```
 {
   "sToken": "h40Gte9aQnZFDNM39IUkRPCsQDxBxbZB4Wy34pxefOuQkeeb3h2 a5Rlopo4KDn3MrFKf4CM3OY+WGAoZ1cD6iZ6yzsMk1+5PVBNc66YS6ZQ=",
   "includeLicenseCounts": true,
@@ -85,7 +88,7 @@ Get the set of assets managed by your organization.
 
 **Request**:
 
-```None
+```
 {
   "sToken": "h40Gte9aQnZFDNM39IUkRPCsQDxBxbZB4Wy34pxefOuQkeeb3h2 a5Rlopo4KDn3MrFKf4CM3OY+WGAoZ1cD6iZ6yzsMk1+5PVBNc66YS6ZQ=",
   "includeLicenseCounts": true,
@@ -122,9 +125,9 @@ Get the set of assets managed by your organization.
 ## Topics
 
 ### Request and Response
-- [object GetVppAssetRequest](getvppassetrequest.md)
+- [object GetVppAssetRequest](./getvppassetrequest.md)
   The request for an asset.
-- [object GetVppAssetResponse](getvppassetresponse.md)
+- [object GetVppAssetResponse](./getvppassetresponse.md)
   The response with the asset.
 
 ## Endpoint
@@ -133,15 +136,23 @@ Get the set of assets managed by your organization.
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `GetVppAssetRequest`
+
 missing
+
+## Responses
+
+- `200` OK (`GetVppAssetResponse`, `application/json`)
 
 ## See Also
 
-- [Get Assignments](get-assignments-158kc.md)
+### Asset and license management
+- [Get Assignments](./get-assignments-158kc.md)
   Get a list of assignments currently assigned to a user or device.
-- [Get Licenses](get-licenses.md)
+- [Get Licenses](./get-licenses.md)
   Get the set of licenses managed by your organization.
-- [Manage Licenses](manage-licenses.md)
+- [Manage Licenses](./manage-licenses.md)
   Associate and disassociate licenses with users and devices.
 
 

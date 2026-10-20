@@ -1,7 +1,8 @@
 # ASPasskeyRegistrationCredentialExtensionInput
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that encapsulates input for various WebAuthn extensions during passkey registration.
 
@@ -21,24 +22,25 @@ struct ASPasskeyRegistrationCredentialExtensionInput
 ## Topics
 
 ### Inputs
-- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput?](aspasskeyregistrationcredentialextensioninput-swift.struct/largeblob.md)
+- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput?](./aspasskeyregistrationcredentialextensioninput-swift.struct/largeblob.md)
   Input for the WebAuthn large binary object extension in passkey registration requests.
-- [struct ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput](asauthorizationpublickeycredentiallargeblobregistrationinput-swift.struct.md)
+- [struct ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput](./asauthorizationpublickeycredentiallargeblobregistrationinput-swift.struct.md)
   A type that encapsulates input for large binary object extensions during registration.
-- [var prf: ASAuthorizationPublicKeyCredentialPRFRegistrationInput?](aspasskeyregistrationcredentialextensioninput-swift.struct/prf.md)
+- [var prf: ASAuthorizationPublicKeyCredentialPRFRegistrationInput?](./aspasskeyregistrationcredentialextensioninput-swift.struct/prf.md)
   Input for the WebAuthn PRF extension in passkey registration requests.
-- [struct ASAuthorizationPublicKeyCredentialPRFRegistrationInput](asauthorizationpublickeycredentialprfregistrationinput-swift.struct.md)
+- [struct ASAuthorizationPublicKeyCredentialPRFRegistrationInput](./asauthorizationpublickeycredentialprfregistrationinput-swift.struct.md)
   A type that encapsulates input for PRF extensions during registration.
 
 ## See Also
 
-- [ASPasskeyCredentialExtensionInput.none](aspasskeycredentialextensioninput/none.md)
+### Extension input types
+- [ASPasskeyCredentialExtensionInput.none](./aspasskeycredentialextensioninput/none.md)
   An empty extension input.
-- [case assertion(ASPasskeyAssertionCredentialExtensionInput)](aspasskeycredentialextensioninput/assertion(_:).md)
+- [case assertion(ASPasskeyAssertionCredentialExtensionInput)](./aspasskeycredentialextensioninput/assertion%28_%29.md)
   An extension input for an assertion.
-- [struct ASPasskeyAssertionCredentialExtensionInput](aspasskeyassertioncredentialextensioninput-swift.struct.md)
+- [struct ASPasskeyAssertionCredentialExtensionInput](./aspasskeyassertioncredentialextensioninput-swift.struct.md)
   A type that encapsulates input for various WebAuthn extensions during passkey assertion.
-- [case registration(ASPasskeyRegistrationCredentialExtensionInput)](aspasskeycredentialextensioninput/registration(_:).md)
+- [case registration(ASPasskeyRegistrationCredentialExtensionInput)](./aspasskeycredentialextensioninput/registration%28_%29.md)
   An extension input for a registration.
 
 

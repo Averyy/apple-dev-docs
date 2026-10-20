@@ -1,25 +1,26 @@
 # Certificate Item Attribute Constants
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: API Collection
 
 Use these four character values to indicate certificate item attributes.
 
 ## Topics
 
 ### Constants
-- [var kSecSubjectItemAttr: Int](ksecsubjectitemattr.md)
+- [var kSecSubjectItemAttr: Int](./ksecsubjectitemattr.md)
   DER-encoded subject distinguished name.
-- [var kSecIssuerItemAttr: Int](ksecissueritemattr.md)
+- [var kSecIssuerItemAttr: Int](./ksecissueritemattr.md)
   DER-encoded issuer distinguished name.
-- [var kSecSerialNumberItemAttr: Int](ksecserialnumberitemattr.md)
+- [var kSecSerialNumberItemAttr: Int](./ksecserialnumberitemattr.md)
   DER-encoded certificate serial number (without the tag and length).
-- [var kSecPublicKeyHashItemAttr: Int](ksecpublickeyhashitemattr.md)
+- [var kSecPublicKeyHashItemAttr: Int](./ksecpublickeyhashitemattr.md)
   Public key hash.
-- [var kSecSubjectKeyIdentifierItemAttr: Int](ksecsubjectkeyidentifieritemattr.md)
+- [var kSecSubjectKeyIdentifierItemAttr: Int](./ksecsubjectkeyidentifieritemattr.md)
   Subject key identifier.
-- [var kSecCertTypeItemAttr: Int](kseccerttypeitemattr.md)
+- [var kSecCertTypeItemAttr: Int](./kseccerttypeitemattr.md)
   Certificate type.
-- [var kSecCertEncodingItemAttr: Int](kseccertencodingitemattr.md)
+- [var kSecCertEncodingItemAttr: Int](./kseccertencodingitemattr.md)
   Certificate encoding.
 
 

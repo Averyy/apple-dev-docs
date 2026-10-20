@@ -1,7 +1,8 @@
 # baseColor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color of an entity unmodified by lighting.
 
@@ -20,7 +21,7 @@ var baseColor: CustomMaterial.BaseColor { get set }
 
 #### Discussion
 
-In physically based rendering, the base color of an entity is its color before RealityKit applies any lighting calculations or other rendering calculations to it. With custom materials, the base color `texture` and `tint` are available as inputs in your surface shader. With custom materials, RealityKit doesn’t automatically use the values set on the [`baseColor`](custommaterial/basecolor-swift.property.md) property. The material’s surface shader is responsible for calculating or setting the actual base color value for rendering by calling `params.surface().set_base_color()`.
+In physically based rendering, the base color of an entity is its color before RealityKit applies any lighting calculations or other rendering calculations to it. With custom materials, the base color `texture` and `tint` are available as inputs in your surface shader. With custom materials, RealityKit doesn’t automatically use the values set on the [`baseColor`](./basecolor-swift.property.md) property. The material’s surface shader is responsible for calculating or setting the actual base color value for rendering by calling `params.surface().set_base_color()`.
 
 The following code shows how to create a base color from a tint color and a texture, and then assign it to a custom material:
 
@@ -35,7 +36,7 @@ if let baseResource = try? TextureResource.load(named: "entity_basecolor") {
 
 In your surface shader, you can access the `tint` of the material’s base color property by calling `params.material_constants().base_color_tint()`. You can access the texture by calling `params.textures().base_color()`.
 
-The following surface shader function takes the tint and texture values from the [`baseColor`](custommaterial/basecolor-swift.property.md) property, multiplies them together, and sets the resulting value as the base color for rendering, which emulates the behavior of [`PhysicallyBasedMaterial`](physicallybasedmaterial.md):
+The following surface shader function takes the tint and texture values from the [`baseColor`](./basecolor-swift.property.md) property, multiplies them together, and sets the resulting value as the base color for rendering, which emulates the behavior of [`PhysicallyBasedMaterial`](../physicallybasedmaterial.md):
 
 ```cpp
 #include <metal_stdlib>
@@ -66,27 +67,28 @@ textureSampler(address::clamp_to_edge, filter::bicubic);
 }
 ```
 
-For more information on creating custom materials and writing shader functions, see [`Modifying RealityKit rendering using custom materials`](modifying-realitykit-rendering-using-custom-materials.md).
+For more information on creating custom materials and writing shader functions, see [Modifying RealityKit rendering using custom materials](../modifying-realitykit-rendering-using-custom-materials.md).
 
 ## See Also
 
-- [var roughness: CustomMaterial.Roughness](custommaterial/roughness-swift.property.md)
+### Setting the core properties
+- [var roughness: CustomMaterial.Roughness](./roughness-swift.property.md)
   The amount the surface of the 3D object scatters reflected light.
-- [var metallic: CustomMaterial.Metallic](custommaterial/metallic-swift.property.md)
+- [var metallic: CustomMaterial.Metallic](./metallic-swift.property.md)
   The reflectiveness of an entity.
-- [var normal: CustomMaterial.Normal](custommaterial/normal-swift.property.md)
+- [var normal: CustomMaterial.Normal](./normal-swift.property.md)
   A texture map that stores fine surface details for the entity.
-- [var emissiveColor: CustomMaterial.EmissiveColor](custommaterial/emissivecolor-swift.property.md)
+- [var emissiveColor: CustomMaterial.EmissiveColor](./emissivecolor-swift.property.md)
   The color of light this material emits.
-- [var ambientOcclusion: CustomMaterial.AmbientOcclusion](custommaterial/ambientocclusion-swift.property.md)
+- [var ambientOcclusion: CustomMaterial.AmbientOcclusion](./ambientocclusion-swift.property.md)
   The ambient light exposure for a material.
-- [var specular: CustomMaterial.Specular](custommaterial/specular-swift.property.md)
+- [var specular: CustomMaterial.Specular](./specular-swift.property.md)
   The bright highlights to apply to the entity.
-- [var clearcoat: CustomMaterial.Clearcoat](custommaterial/clearcoat-swift.property.md)
+- [var clearcoat: CustomMaterial.Clearcoat](./clearcoat-swift.property.md)
   The transparent highlights that simulate a clear, shiny coating on an entity.
-- [var clearcoatRoughness: CustomMaterial.ClearcoatRoughness](custommaterial/clearcoatroughness-swift.property.md)
+- [var clearcoatRoughness: CustomMaterial.ClearcoatRoughness](./clearcoatroughness-swift.property.md)
   The degree to which an entity’s clear, shiny coating scatters light to create soft highlights.
-- [var clearcoatNormal: CustomMaterial.ClearcoatNormal](custommaterial/clearcoatnormal-swift.property.md)
+- [var clearcoatNormal: CustomMaterial.ClearcoatNormal](./clearcoatnormal-swift.property.md)
   Waviness and imperfections for the top clearcoat.
 
 

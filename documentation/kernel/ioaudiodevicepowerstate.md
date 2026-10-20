@@ -1,7 +1,8 @@
 # IOAudioDevicePowerState
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Identifies the power state of the audio device
 
@@ -10,7 +11,7 @@ Identifies the power state of the audio device
 
 ## Declaration
 
-```swift
+```c
 typedef enum _IOAudioDevicePowerState : unsigned int {
     ...
 } IOAudioDevicePowerState;
@@ -23,9 +24,9 @@ A newly created IOAudioDevices defaults to the idle state.
 ## Topics
 
 ### Constants
-- [kIOAudioDeviceSleep](ioaudiodevicepowerstate/kioaudiodevicesleep.md)
-- [kIOAudioDeviceIdle](ioaudiodevicepowerstate/kioaudiodeviceidle.md)
-- [kIOAudioDeviceActive](ioaudiodevicepowerstate/kioaudiodeviceactive.md)
+- [kIOAudioDeviceSleep](./ioaudiodevicepowerstate/kioaudiodevicesleep.md)
+- [kIOAudioDeviceIdle](./ioaudiodevicepowerstate/kioaudiodeviceidle.md)
+- [kIOAudioDeviceActive](./ioaudiodevicepowerstate/kioaudiodeviceactive.md)
 
 
 ---

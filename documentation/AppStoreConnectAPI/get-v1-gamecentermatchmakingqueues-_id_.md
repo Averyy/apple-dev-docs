@@ -1,7 +1,8 @@
 # Read Queue Information
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get information about a specific queue and its related objects.
 
@@ -14,13 +15,33 @@ Get information about a specific queue and its related objects.
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: The unique identifier for the queue.
+
+### Query Parameters
+
 - `fields[gameCenterMatchmakingQueues]` ([string]): The fields of the queue to include in the response.
+
+  **Allowed Values**: `referenceName`, `classicMatchmakingBundleIds`, `ruleSet`, `experimentRuleSet`
 - `include` ([string]): The type of rule set to include in the response.
-- `fields[gameCenterMatchmakingRuleSets]` ([string])
+
+  **Allowed Values**: `ruleSet`, `experimentRuleSet`
+- `fields[gameCenterMatchmakingRuleSets]` ([string]): **Allowed Values**: `referenceName`, `ruleLanguageVersion`, `minPlayers`, `maxPlayers`, `teams`, `rules`, `matchmakingQueues`
+
+## Responses
+
+- `200` OK (`GameCenterMatchmakingQueueResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List All Queues](get-v1-gamecentermatchmakingqueues.md)
+### Reading queue information
+- [List All Queues](./get-v1-gamecentermatchmakingqueues.md)
   Get information about all queues.
 
 

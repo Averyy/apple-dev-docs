@@ -1,23 +1,28 @@
 # CFGetRetainCount(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the reference count of a Core Foundation object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFGetRetainCount(_ cf: CFTypeRef!) -> CFIndex
+```
+
+```c
+extern CFIndex CFGetRetainCount(CFTypeRef cf);
 ```
 
 #### Return Value
@@ -26,7 +31,7 @@ A number representing the reference count of `cf`.
 
 #### Discussion
 
-You increment the reference count using the [`CFRetain`](cfretain.md) function, and decrement the reference count using the [`CFRelease`](cfrelease.md) function.
+You increment the reference count using the [`CFRetain`](./cfretain.md) function, and decrement the reference count using the [`CFRelease`](./cfrelease.md) function.
 
 This function may be useful for debugging memory leaks. You normally do not use this function, otherwise.
 
@@ -36,7 +41,8 @@ This function may be useful for debugging memory leaks. You normally do not use 
 
 ## See Also
 
-- [func CFGetAllocator(CFTypeRef!) -> CFAllocator!](cfgetallocator(_:).md)
+### Memory Management
+- [func CFGetAllocator(CFTypeRef!) -> CFAllocator!](./cfgetallocator%28_%29.md)
   Returns the allocator used to allocate a Core Foundation object.
 
 

@@ -1,7 +1,8 @@
 # NSSensorKitUsageDescription
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A short description of the purpose of your app’s research study.
 
@@ -9,21 +10,23 @@ A short description of the purpose of your app’s research study.
 - iOS 14.0+
 - iPadOS 14.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSSensorKitUsageDescription`
+- **Type**: string
 
 #### Discussion
 
 When your app attempts to read sensor information for the first time on a user’s device, the system presents this string to explain your app’s study. Users approve or deny your app’s ability to read private sensor information based on the description you provide for this property.
 
-For more information, see [`Configuring your project for sensor reading`](https://developer.apple.com/documentation/sensorkit/configuring-your-project-for-sensor-reading).
+For more information, see [Configuring your project for sensor reading](../../SensorKit/configuring-your-project-for-sensor-reading.md).
 
 ## See Also
 
-- [NSSensorKitUsageDetail](information-property-list/nssensorkitusagedetail.md)
+### Sensors
+- [NSSensorKitUsageDetail](./nssensorkitusagedetail.md)
   A dictionary that includes keys for the specific information your app collects.
-- [NSSensorKitPrivacyPolicyURL](information-property-list/nssensorkitprivacypolicyurl.md)
+- [NSSensorKitPrivacyPolicyURL](./nssensorkitprivacypolicyurl.md)
   A hyperlink to a webpage that displays the privacy policy for your app’s research study.
 
 

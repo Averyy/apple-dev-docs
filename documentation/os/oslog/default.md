@@ -1,7 +1,8 @@
 # default
 
 **Framework**: os  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared default log.
 
@@ -11,7 +12,7 @@ The shared default log.
 - Mac Catalyst 10.0+
 - macOS 10.12+
 - tvOS 10.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 
 ## Declaration
@@ -26,7 +27,8 @@ Passing this constant to an `os_log` function causes the system to log a message
 
 ## See Also
 
-- [static let disabled: OSLog](oslog/disabled.md)
+### Getting the Shared Logs
+- [static let disabled: OSLog](./disabled.md)
   The shared disabled log.
 
 

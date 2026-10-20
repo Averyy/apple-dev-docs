@@ -1,7 +1,8 @@
 # descriptor
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptor for a USB endpoint.
 
@@ -15,17 +16,22 @@ The descriptor for a USB endpoint.
 var descriptor: IOUSBEndpointDescriptor
 ```
 
+```c
+IOUSBEndpointDescriptor descriptor;
+```
+
 #### Discussion
 
-Initialize this descriptor with a valid [`IOUSBEndpointDescriptor`](https://developer.apple.com/documentation/iokit/iousbendpointdescriptor). See USB 3.2, 9.6.6.
+Initialize this descriptor with a valid [`IOUSBEndpointDescriptor`](../../iokit/iousbendpointdescriptor.md). See USB 3.2, 9.6.6.
 
 ## See Also
 
-- [var bcdUSB: UInt16](iousbhostiosourcedescriptors/bcdusb.md)
+### Descriptors
+- [var bcdUSB: UInt16](./bcdusb.md)
   The USB version that the device supports.
-- [var ssCompanionDescriptor: IOUSBSuperSpeedEndpointCompanionDescriptor](iousbhostiosourcedescriptors/sscompaniondescriptor.md)
+- [var ssCompanionDescriptor: IOUSBSuperSpeedEndpointCompanionDescriptor](./sscompaniondescriptor.md)
   The descriptor for a SuperSpeed USB endpoint companion.
-- [var sspCompanionDescriptor: IOUSBSuperSpeedPlusIsochronousEndpointCompanionDescriptor](iousbhostiosourcedescriptors/sspcompaniondescriptor.md)
+- [var sspCompanionDescriptor: IOUSBSuperSpeedPlusIsochronousEndpointCompanionDescriptor](./sspcompaniondescriptor.md)
   The descriptor for a SuperSpeedPlus isochronous USB endpoint companion.
 
 

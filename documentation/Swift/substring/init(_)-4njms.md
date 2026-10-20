@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Substring having the given content.
 
@@ -22,7 +23,7 @@ init(_ content: Substring.UTF8View)
 
 #### Discussion
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

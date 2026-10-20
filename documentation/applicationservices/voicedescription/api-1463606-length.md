@@ -1,7 +1,8 @@
 # length
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The size of the voice description structure, in bytes.
 
@@ -12,6 +13,10 @@ The size of the voice description structure, in bytes.
 
 ```swift
 var length: Int32
+```
+
+```c
+SInt32 length;
 ```
 
 

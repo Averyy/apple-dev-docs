@@ -1,7 +1,8 @@
 # imaginary
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The imaginary (vector) component.
 

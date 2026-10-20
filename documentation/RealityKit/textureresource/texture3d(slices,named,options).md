@@ -1,7 +1,8 @@
 # texture3D(slices:named:options:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Asynchronously creates a 3D texture by generating it from images.
 
@@ -20,9 +21,16 @@ Asynchronously creates a 3D texture by generating it from images.
 @preconcurrency static func texture3D(slices: [CGImage], named resourceName: String? = nil, options: TextureResource.CreateOptions) async throws -> TextureResource
 ```
 
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency static func texture3D(slices: [CGImage], named resourceName: String? = nil, options: TextureResource.CreateOptions) throws -> TextureResource
+```
+
 #### Discussion
 
-RealityKit creates a [`MTLTextureType.type3D`](https://developer.apple.com/documentation/metal/mtltexturetype/type3d) texture with `depth == slices.count` from an array of images.
+RealityKit creates a [`MTLTextureType.type3D`](../../Metal/mtltexturetype/type3d.md) texture with `depth == slices.count` from an array of images.
 
 You can assign the resulting texture to a material you create in Reality Composer Pro that requires a 3D texture.
 

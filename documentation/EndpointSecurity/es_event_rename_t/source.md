@@ -1,13 +1,14 @@
 # source
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The source file to rename.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,15 +16,20 @@ The source file to rename.
 var source: UnsafeMutablePointer<es_file_t>
 ```
 
+```c
+es_file_t * source;
+```
+
 ## See Also
 
-- [var destination: es_event_rename_t.__Unnamed_union_destination](es_event_rename_t/destination.md)
+### Inspecting Event Properties
+- [var destination: es_event_rename_t.__Unnamed_union_destination](./destination.md)
   The destination of the rename operation.
-- [var destination_type: es_destination_type_t](es_event_rename_t/destination_type.md)
+- [var destination_type: es_destination_type_t](./destination_type.md)
   A property that indicates whether the destination is a new path or an existing file.
-- [struct es_destination_type_t](es_destination_type_t.md)
+- [struct es_destination_type_t](../es_destination_type_t.md)
   A type that indicates how a file event presents its destination to the client.
-- [var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)](es_event_rename_t/reserved.md)
+- [var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)](./reserved.md)
   An unused field reserved for future use.
 
 

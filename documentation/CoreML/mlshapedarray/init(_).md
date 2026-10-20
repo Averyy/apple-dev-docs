@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -20,7 +21,8 @@ init(_ multiArray: MLMultiArray)
 
 ## See Also
 
-- [init<S>(concatenating: S, alongAxis: Int)](mlshapedarray/init(concatenating:alongaxis:).md)
+### Creating a shaped array from another type
+- [init<S>(concatenating: S, alongAxis: Int)](./init%28concatenating,alongaxis%29.md)
   Merges a sequence of shaped arrays into one shaped array along an axis.
 
 

@@ -1,7 +1,8 @@
 # pauseButton
 
 **Framework**: AlarmKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pause button for a countdown timer.
 
@@ -22,9 +23,10 @@ If you specify, the countdown includes a pause button when presented by the temp
 
 ## See Also
 
-- [init(title: LocalizedStringResource, pauseButton: AlarmButton?)](alarmpresentation/countdown-swift.struct/init(title:pausebutton:).md)
+### Creates a pause button
+- [init(title: LocalizedStringResource, pauseButton: AlarmButton?)](./init%28title,pausebutton%29.md)
   Creates a countdown with an optional pause button.
-- [var title: LocalizedStringResource](alarmpresentation/countdown-swift.struct/title.md)
+- [var title: LocalizedStringResource](./title.md)
   The title of the countdown.
 
 

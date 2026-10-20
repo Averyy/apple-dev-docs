@@ -1,7 +1,8 @@
 # MLTextClassifier.FeatureExtractorType.elmoEmbedding
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A feature extractor that provides ELMo contextual word embeddings.
 
@@ -20,7 +21,7 @@ case elmoEmbedding
 
 ## Mentions
 
-- [Creating a text classifier model](creating-a-text-classifier-model.md)
+- [Creating a text classifier model](../../creating-a-text-classifier-model.md)
 
 #### Discussion
 
@@ -28,13 +29,14 @@ ELMo embeddings requires certain downloadable assets to be present on device at 
 
 ## See Also
 
-- [MLTextClassifier.FeatureExtractorType.customEmbedding(_:)](mltextclassifier/featureextractortype/customembedding(_:).md)
+### Selecting a feature extractor type
+- [MLTextClassifier.FeatureExtractorType.customEmbedding(_:)](./customembedding%28_%29.md)
   A feature extractor that uses a custom embedding contained in a CoreML model file.
-- [MLTextClassifier.FeatureExtractorType.staticEmbedding](mltextclassifier/featureextractortype/staticembedding.md)
+- [MLTextClassifier.FeatureExtractorType.staticEmbedding](./staticembedding.md)
   A feature extractor that uses the standard, built-in word embeddings.
-- [MLTextClassifier.FeatureExtractorType.bertEmbedding](mltextclassifier/featureextractortype/bertembedding.md)
+- [MLTextClassifier.FeatureExtractorType.bertEmbedding](./bertembedding.md)
   A feature extractor that provides BERT contextual word embeddings.
-- [MLTextClassifier.FeatureExtractorType.dynamicEmbedding](mltextclassifier/featureextractortype/dynamicembedding.md)
+- [MLTextClassifier.FeatureExtractorType.dynamicEmbedding](./dynamicembedding.md)
   A feature extractor that provides embeddings for words, based on their in-context use.
 
 

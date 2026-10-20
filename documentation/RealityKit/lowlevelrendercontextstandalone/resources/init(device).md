@@ -1,7 +1,8 @@
 # init(device:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Asynchronously prepare resources for the given device.
 
@@ -20,7 +21,7 @@ nonisolated
 
 #### Discussion
 
-> **Note**: An error if resources preparation fails.
+> **Throws**: An error if resources preparation fails.
 
 ## Parameters
 

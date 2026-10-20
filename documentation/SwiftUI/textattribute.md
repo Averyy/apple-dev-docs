@@ -1,7 +1,8 @@
 # TextAttribute
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A value that you can attach to text views and that text renderers can query.
 
@@ -23,18 +24,19 @@ protocol TextAttribute : Hashable
 ## Relationships
 
 ### Inherits From
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [Creating visual effects with SwiftUI](creating-visual-effects-with-swiftui.md)
+### Rendering text
+- [Creating visual effects with SwiftUI](./creating-visual-effects-with-swiftui.md)
   Add scroll effects, rich color treatments, custom transitions, and advanced effects using shaders and a text renderer.
-- [func textRenderer<T>(T) -> some View](view/textrenderer(_:).md)
+- [func textRenderer<T>(T) -> some View](./view/textrenderer%28_%29.md)
   Returns a new view such that any text views within it will use `renderer` to draw themselves.
-- [protocol TextRenderer](textrenderer.md)
+- [protocol TextRenderer](./textrenderer.md)
   A value that can replace the default text view rendering behavior.
-- [struct TextProxy](textproxy.md)
+- [struct TextProxy](./textproxy.md)
   A proxy for a text view that custom text renderers use.
 
 

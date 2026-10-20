@@ -1,7 +1,8 @@
 # new()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 
 ```swift
 class func new() -> Self
+```
+
+```objc
++ (instancetype) new;
 ```
 
 

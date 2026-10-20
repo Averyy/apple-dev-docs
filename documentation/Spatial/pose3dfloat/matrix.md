@@ -1,7 +1,8 @@
 # matrix
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A 4 x 4 matrix that represents the pose’s translation and rotation.
 

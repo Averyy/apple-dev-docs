@@ -1,7 +1,8 @@
 # sidebarActions
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of actions that appear in a section in a sidebar.
 
@@ -17,9 +18,13 @@ An array of actions that appear in a section in a sidebar.
 var sidebarActions: [UIAction] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<UIAction *> * sidebarActions;
+```
+
 ## Mentions
 
-- [Elevating your iPad app with a tab bar and sidebar](elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
+- [Elevating your iPad app with a tab bar and sidebar](../elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
 
 
 ---

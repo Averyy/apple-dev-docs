@@ -1,7 +1,8 @@
 # onChange(of:initial:_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 26.0+
@@ -12,6 +13,13 @@
 ```swift
 nonisolated
 func onChange<V>(of value: V, initial: Bool = false, _ action: @escaping () -> Void) -> some CompositorContent where V : Equatable
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+func onChange<V>(of value: V, initial: Bool = false, _ action: @escaping (V, V) -> Void) -> some CompositorContent where V : Equatable
 ```
 
 

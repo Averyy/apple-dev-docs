@@ -1,7 +1,8 @@
 # CWErrorDomain
 
 **Framework**: Core WLAN  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.7+
@@ -12,12 +13,17 @@
 let CWErrorDomain: String
 ```
 
+```c
+extern NSString * const CWErrorDomain;
+```
+
 #### Discussion
 
 ## See Also
 
-- [let CWLinkQualityNotificationRSSIKey: String](cwlinkqualitynotificationrssikey.md)
-- [let CWLinkQualityNotificationTransmitRateKey: String](cwlinkqualitynotificationtransmitratekey.md)
+### Constants
+- [let CWLinkQualityNotificationRSSIKey: String](./cwlinkqualitynotificationrssikey.md)
+- [let CWLinkQualityNotificationTransmitRateKey: String](./cwlinkqualitynotificationtransmitratekey.md)
 
 
 ---

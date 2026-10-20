@@ -1,7 +1,8 @@
 # viewPackingKind
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates the packing type of stereoscopic video frames.
 

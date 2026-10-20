@@ -1,7 +1,8 @@
 # dropOperation()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the current drop operation.
 
@@ -14,29 +15,34 @@ Returns the current drop operation.
 func dropOperation() -> IKImageBrowserDropOperation
 ```
 
+```objc
+- (IKImageBrowserDropOperation) dropOperation;
+```
+
 #### Return Value
 
-[`IKImageBrowserDropOn`](ikimagebrowserdropon.md) if the drop occurs on an item, otherwise [`IKImageBrowserDropBefore`](ikimagebrowserdropbefore.md).
+[`IKImageBrowserDropOn`](../ikimagebrowserdropon.md) if the drop occurs on an item, otherwise [`IKImageBrowserDropBefore`](../ikimagebrowserdropbefore.md).
 
 #### Discussion
 
 The returned value is valid when a drop occurred and until next drop.
 
-For example, given a browser with `N` cells , a cell of `N-1` and operation of [`IKImageBrowserDropOn`](ikimagebrowserdropon.md) would specify a drop on the last cell.  To specify a drop after the last cell, one would use an index of `N` and [`IKImageBrowserDropBefore`](ikimagebrowserdropbefore.md) for the operation.
+For example, given a browser with `N` cells , a cell of `N-1` and operation of [`IKImageBrowserDropOn`](../ikimagebrowserdropon.md) would specify a drop on the last cell.  To specify a drop after the last cell, one would use an index of `N` and [`IKImageBrowserDropBefore`](../ikimagebrowserdropbefore.md) for the operation.
 
 ## See Also
 
-- [func setDraggingDestinationDelegate(Any!)](ikimagebrowserview/setdraggingdestinationdelegate(_:).md)
+### Supporting Drag and Drop
+- [func setDraggingDestinationDelegate(Any!)](./setdraggingdestinationdelegate%28_%29.md)
   Sets the dragging destination delegate of the receiver.
-- [func draggingDestinationDelegate() -> Any!](ikimagebrowserview/draggingdestinationdelegate.md)
+- [func draggingDestinationDelegate() -> Any!](./draggingdestinationdelegate%28%29.md)
   Returns the dragging destination delegate of the receiver.
-- [func setDrop(Int, dropOperation: IKImageBrowserDropOperation)](ikimagebrowserview/setdrop(_:dropoperation:).md)
+- [func setDrop(Int, dropOperation: IKImageBrowserDropOperation)](./setdrop%28_,dropoperation%29.md)
   Allows the class to retarget the drop action.
-- [func indexAtLocationOfDroppedItem() -> Int](ikimagebrowserview/indexatlocationofdroppeditem.md)
+- [func indexAtLocationOfDroppedItem() -> Int](./indexatlocationofdroppeditem%28%29.md)
   Returns the index of the cell where the drop operation occurred.
-- [func setAllowsDroppingOnItems(Bool)](ikimagebrowserview/setallowsdroppingonitems(_:).md)
+- [func setAllowsDroppingOnItems(Bool)](./setallowsdroppingonitems%28_%29.md)
   Specifies whether the user can drop on items.
-- [func allowsDroppingOnItems() -> Bool](ikimagebrowserview/allowsdroppingonitems.md)
+- [func allowsDroppingOnItems() -> Bool](./allowsdroppingonitems%28%29.md)
   Returns whether the user can drop on items.
 
 

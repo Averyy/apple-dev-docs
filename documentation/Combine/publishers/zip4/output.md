@@ -1,7 +1,8 @@
 # Publishers.Zip4.Output
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of values published by this publisher.
 
@@ -26,7 +27,8 @@ This publisher produces four-element tuples, whose members’ types correspond t
 
 ## See Also
 
-- [Publishers.Zip4.Failure](publishers/zip4/failure.md)
+### Declaring supporting types
+- [Publishers.Zip4.Failure](./failure.md)
   The kind of errors this publisher might publish.
 
 

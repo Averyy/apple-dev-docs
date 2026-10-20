@@ -1,7 +1,8 @@
 # rounded
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The rounded variant of the default typeface.
 
@@ -19,17 +20,22 @@ The rounded variant of the default typeface.
 static let rounded: UIFontDescriptor.SystemDesign
 ```
 
+```c
+extern UIFontDescriptorSystemDesign const UIFontDescriptorSystemDesignRounded;
+```
+
 #### Discussion
 
 The returned typeface depends on the system. iOS returns SF Pro Rounded, while watchOS returns SF Compact Rounded.
 
 ## See Also
 
-- [static let `default`: UIFontDescriptor.SystemDesign](uifontdescriptor/systemdesign/default.md)
+### Typeface designs
+- [static let `default`: UIFontDescriptor.SystemDesign](./default.md)
   The default typeface for an app’s user interface.
-- [static let monospaced: UIFontDescriptor.SystemDesign](uifontdescriptor/systemdesign/monospaced.md)
+- [static let monospaced: UIFontDescriptor.SystemDesign](./monospaced.md)
   The monospace variant of the default typeface.
-- [static let serif: UIFontDescriptor.SystemDesign](uifontdescriptor/systemdesign/serif.md)
+- [static let serif: UIFontDescriptor.SystemDesign](./serif.md)
   The serif variant of the default typeface.
 
 

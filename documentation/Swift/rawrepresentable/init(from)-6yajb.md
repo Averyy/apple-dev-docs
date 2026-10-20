@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `UInt128`.
 
@@ -19,6 +20,8 @@ Creates a new instance by decoding from the given decoder, when the type’s `Ra
 ```swift
 init(from decoder: any Decoder) throws
 ```
+
+Available when `Self` conforms to `Decodable` and `RawValue` is `UInt128`.
 
 #### Discussion
 

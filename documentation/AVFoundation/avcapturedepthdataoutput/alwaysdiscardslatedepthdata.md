@@ -1,7 +1,8 @@
 # alwaysDiscardsLateDepthData
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the capture output should discard any depth data that is not processed before the next depth data is captured.
 
@@ -17,13 +18,18 @@ A Boolean value that determines whether the capture output should discard any de
 var alwaysDiscardsLateDepthData: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL alwaysDiscardsLateDepthData;
+```
+
 #### Discussion
 
-If the [`delegateCallbackQueue`](avcapturedepthdataoutput/delegatecallbackqueue.md) dispatch queue is blocked when new depth data is captured, this property determines whether the capture output allows your delegate object more time to process old depth data. If this property’s value is [`false`](https://developer.apple.com/documentation/swift/false), the capture output delivers old data to your delegate as soon as possible, but application memory usage may increase as a result. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+If the [`delegateCallbackQueue`](./delegatecallbackqueue.md) dispatch queue is blocked when new depth data is captured, this property determines whether the capture output allows your delegate object more time to process old depth data. If this property’s value is [`false`](../../Swift/false.md), the capture output delivers old data to your delegate as soon as possible, but application memory usage may increase as a result. The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var isFilteringEnabled: Bool](avcapturedepthdataoutput/isfilteringenabled.md)
+### Configuring depth data capture
+- [var isFilteringEnabled: Bool](./isfilteringenabled.md)
   A Boolean value that determines whether the depth data output should filter depth data to smooth out noise and fill invalid values.
 
 

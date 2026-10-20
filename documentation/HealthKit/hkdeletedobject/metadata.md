@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The metadata associated with the deleted object.
 
@@ -19,15 +20,20 @@ The metadata associated with the deleted object.
 var metadata: [String : Any]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSDictionary<NSString *,id> * metadata;
+```
+
 #### Discussion
 
-The system only copies the [`HKMetadataKeySyncIdentifier`](hkmetadatakeysyncidentifier.md) and [`HKMetadataKeySyncVersion`](hkmetadatakeysyncversion.md) keys from the original object. All other metadata is lost.
+The system only copies the [`HKMetadataKeySyncIdentifier`](../hkmetadatakeysyncidentifier.md) and [`HKMetadataKeySyncVersion`](../hkmetadatakeysyncversion.md) keys from the original object. All other metadata is lost.
 
-For more information about the metadata’s format and content, see the [`HKObject`](hkobject.md) class’s  [`metadata`](hkobject/metadata.md) property.
+For more information about the metadata’s format and content, see the [`HKObject`](../hkobject.md) class’s  [`metadata`](../hkobject/metadata.md) property.
 
 ## See Also
 
-- [var uuid: UUID](hkdeletedobject/uuid.md)
+### Identifying Deleted Objects
+- [var uuid: UUID](./uuid.md)
   The universally unique identifier (UUID) for the HealthKit object that was deleted from the store.
 
 

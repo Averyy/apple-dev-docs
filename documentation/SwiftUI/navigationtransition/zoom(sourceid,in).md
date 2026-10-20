@@ -1,7 +1,8 @@
 # zoom(sourceID:in:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A navigation transition that zooms the appearing view from a given source view.
 
@@ -19,28 +20,31 @@ A navigation transition that zooms the appearing view from a given source view.
 static func zoom(sourceID: some Hashable, in namespace: Namespace.ID) -> ZoomNavigationTransition
 ```
 
+Available when `Self` is `ZoomNavigationTransition`.
+
 #### Discussion
 
-Indicate the source view using the [`matchedTransitionSource(id:in:)`](view/matchedtransitionsource(id:in:).md) modifier.
+Indicate the source view using the [`matchedTransitionSource(id:in:)`](../view/matchedtransitionsource%28id,in%29.md) modifier.
 
-> **Note**: The zoom transition is not supported in tvOS. Navigation uses [`automatic`](navigationtransition/automatic.md) instead.
+> **Note**: The zoom transition is not supported in tvOS. Navigation uses [`automatic`](./automatic.md) instead.
 
 ## Parameters
 
 - `sourceID`: The identifier you provide to a corresponding `matchedTransitionSource` modifier.
-- `namespace`: The namespace where you define the `id`. You can create new namespaces by adding the [`Namespace`](namespace.md) attribute to a [`View`](view.md) type, then reading its value in the view’s body method.
+- `namespace`: The namespace where you define the `id`. You can create new namespaces by adding the [`Namespace`](../namespace.md) attribute to a [`View`](../view.md) type, then reading its value in the view’s body method.
 
 ## See Also
 
-- [static var automatic: AutomaticNavigationTransition](navigationtransition/automatic.md)
+### Getting built-in transitions
+- [static var automatic: AutomaticNavigationTransition](./automatic.md)
   A style that automatically chooses the appropriate presentation transition for the current context.
-- [struct AutomaticNavigationTransition](automaticnavigationtransition.md)
+- [struct AutomaticNavigationTransition](../automaticnavigationtransition.md)
   A style that automatically chooses the appropriate presentation transition for the current context.
-- [static var crossFade: CrossFadeNavigationTransition](navigationtransition/crossfade.md)
+- [static var crossFade: CrossFadeNavigationTransition](./crossfade.md)
   A navigation transition that cross-fades between the appearing view and the disappearing view.
-- [struct CrossFadeNavigationTransition](crossfadenavigationtransition.md)
+- [struct CrossFadeNavigationTransition](../crossfadenavigationtransition.md)
   A navigation transition that cross-fades between the appearing view and the disappearing view.
-- [struct ZoomNavigationTransition](zoomnavigationtransition.md)
+- [struct ZoomNavigationTransition](../zoomnavigationtransition.md)
   A navigation transition that zooms the appearing view from a given source view.
 
 

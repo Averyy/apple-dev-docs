@@ -1,7 +1,8 @@
 # appContext
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An app context that an app can use to pass necessary information to the sandboxed capture extension. The system will retrieve this app context when necessary and inject it for use during
 

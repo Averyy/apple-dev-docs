@@ -1,7 +1,8 @@
 # alphaComposite(_:topLayer:destination:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs alpha compositing of two 4-channel interleaved ARGB 32-bit pixel buffers using the specified composite mode.
 
@@ -11,7 +12,7 @@ Performs alpha compositing of two 4-channel interleaved ARGB 32-bit pixel buffer
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Performs alpha compositing of two 4-channel interleaved ARGB 32-bit pixel buffer
 ```swift
 func alphaComposite(_ compositeMode: vImage.CompositeMode<Pixel_F>, topLayer: vImage.PixelBuffer<Format>, destination: vImage.PixelBuffer<Format>)
 ```
+
+Available when `Format` is `vImage.InterleavedFx4`.
 
 #### Discussion
 
@@ -32,11 +35,13 @@ This function treats `self` as the bottom layer and both pixel buffers must have
 
 ## See Also
 
-- [Compositing images with alpha blending](compositing-images-with-alpha-blending.md)
+### Related Documentation
+- [Compositing images with alpha blending](../../compositing-images-with-alpha-blending.md)
   Combine two images by using alpha blending to create a single output.
-- [func alphaComposite(vImage.CompositeMode<Pixel_8>, topLayer: vImage.PixelBuffer<Format>, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/alphacomposite(_:toplayer:destination:)-fybo.md)
+### Alpha compositing
+- [func alphaComposite(vImage.CompositeMode<Pixel_8>, topLayer: vImage.PixelBuffer<Format>, destination: vImage.PixelBuffer<Format>)](./alphacomposite%28_,toplayer,destination%29-fybo.md)
   Performs alpha compositing of two 4-channel interleaved ARGB 8-bit pixel buffers using the specified composite mode.
-- [vImage.CompositeMode](vimage/compositemode.md)
+- [vImage.CompositeMode](../compositemode.md)
   Constants that specify whether the format of layers is premultiplied or nonpremultiplied.
 
 

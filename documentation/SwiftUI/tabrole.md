@@ -1,7 +1,8 @@
 # TabRole
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A value that defines the purpose of the tab.
 
@@ -23,32 +24,33 @@ struct TabRole
 ## Topics
 
 ### Type Properties
-- [static var prominent: TabRole](tabrole/prominent.md)
+- [static var prominent: TabRole](./tabrole/prominent.md)
   The prominent role.
-- [static var search: TabRole](tabrole/search.md)
+- [static var search: TabRole](./tabrole/search.md)
   The search role.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Enhancing your app’s content with tab navigation](enhancing-your-app-content-with-tab-navigation.md)
+### Presenting views in tabs
+- [Enhancing your app’s content with tab navigation](./enhancing-your-app-content-with-tab-navigation.md)
   Keep your app content front and center while providing quick access to navigation using the tab bar.
-- [struct TabView](tabview.md)
+- [struct TabView](./tabview.md)
   A view that switches between multiple child views using interactive user interface elements.
-- [struct Tab](tab.md)
+- [struct Tab](./tab.md)
   The content for a tab and the tab’s associated tab item in a tab view.
-- [struct TabSection](tabsection.md)
+- [struct TabSection](./tabsection.md)
   A container that you can use to add hierarchy within a tab view.
-- [func tabViewStyle<S>(S) -> some View](view/tabviewstyle(_:).md)
+- [func tabViewStyle<S>(S) -> some View](./view/tabviewstyle%28_%29.md)
   Sets the style for the tab view within the current environment.
-- [func tabItem<V>(() -> V) -> some View](view/tabitem(_:).md)
+- [func tabItem<V>(() -> V) -> some View](./view/tabitem%28_%29.md)
   Sets the tab bar item associated with this view.
 
 

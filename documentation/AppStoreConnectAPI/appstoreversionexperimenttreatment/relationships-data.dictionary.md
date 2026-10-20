@@ -1,7 +1,8 @@
 # AppStoreVersionExperimentTreatment.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,16 +11,16 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionExperimentTreatment.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreVersionExperimentTreatment.Relationships.AppStoreVersionExperimentV2](appstoreversionexperimenttreatment/relationships-data.dictionary/appstoreversionexperimentv2-data.dictionary.md)
-- [object AppStoreVersionExperimentTreatment.Relationships.AppStoreVersionExperiment](appstoreversionexperimenttreatment/relationships-data.dictionary/appstoreversionexperiment-data.dictionary.md)
-- [object AppStoreVersionExperimentTreatment.Relationships.AppStoreVersionExperimentTreatmentLocalizations](appstoreversionexperimenttreatment/relationships-data.dictionary/appstoreversionexperimenttreatmentlocalizations-data.dictionary.md)
+- [object AppStoreVersionExperimentTreatment.Relationships.AppStoreVersionExperimentV2](./relationships-data.dictionary/appstoreversionexperimentv2-data.dictionary.md)
+- [object AppStoreVersionExperimentTreatment.Relationships.AppStoreVersionExperiment](./relationships-data.dictionary/appstoreversionexperiment-data.dictionary.md)
+- [object AppStoreVersionExperimentTreatment.Relationships.AppStoreVersionExperimentTreatmentLocalizations](./relationships-data.dictionary/appstoreversionexperimenttreatmentlocalizations-data.dictionary.md)
 
 ## Properties
 
@@ -29,7 +30,8 @@ object AppStoreVersionExperimentTreatment.Relationships
 
 ## See Also
 
-- [object AppStoreVersionExperimentTreatment.Attributes](appstoreversionexperimenttreatment/attributes-data.dictionary.md)
+### Objects
+- [object AppStoreVersionExperimentTreatment.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an app store version experiment treatment resource.
 
 

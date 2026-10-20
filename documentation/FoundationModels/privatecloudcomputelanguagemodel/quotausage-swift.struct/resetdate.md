@@ -1,7 +1,8 @@
 # resetDate
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date at which the quota refreshes.
 
@@ -21,7 +22,7 @@ var resetDate: Date?
 
 ## Mentions
 
-- [Adding server-side intelligence with Private Cloud Compute](adding-server-side-intelligence-with-private-cloud-compute.md)
+- [Adding server-side intelligence with Private Cloud Compute](../../adding-server-side-intelligence-with-private-cloud-compute.md)
 
 #### Discussion
 
@@ -29,9 +30,10 @@ A `nil` value indicates that the model provider has not reported a reset time. T
 
 ## See Also
 
-- [var status: PrivateCloudComputeLanguageModel.QuotaUsage.Status](privatecloudcomputelanguagemodel/quotausage-swift.struct/status-swift.property.md)
+### Getting the quota status
+- [var status: PrivateCloudComputeLanguageModel.QuotaUsage.Status](./status-swift.property.md)
   The current quota status.
-- [PrivateCloudComputeLanguageModel.QuotaUsage.Status](privatecloudcomputelanguagemodel/quotausage-swift.struct/status-swift.enum.md)
+- [PrivateCloudComputeLanguageModel.QuotaUsage.Status](./status-swift.enum.md)
   The quota status of a language model.
 
 

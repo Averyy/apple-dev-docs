@@ -2,17 +2,22 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns an array of localized strings that will form the help menu item.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func localizedTitles(forItem item: Any) -> [String]
+```
+
+```objc
+- (NSArray<NSString *> *) localizedTitlesForItem:(id) item;
 ```
 
 #### Return Value
@@ -25,7 +30,8 @@ An `NSArray` of `NSStrings` (localized for display in the menu) that will be com
 
 ## See Also
 
-- [func showAllHelpTopics(forSearch: String)](nsuserinterfaceitemsearching/showallhelptopics(forsearch:).md)
+### Show Help Menu
+- [func showAllHelpTopics(forSearch: String)](./showallhelptopics%28forsearch%29.md)
   If this method is implemented, a “Show All Help Topics” item will appear in the menu and this method is called when the user selects it.
 
 

@@ -1,7 +1,8 @@
 # localizedShortTitle
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A shortened version of the string used to describe the context of a command.
 
@@ -20,15 +21,20 @@ A shortened version of the string used to describe the context of a command.
 var localizedShortTitle: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * localizedShortTitle;
+```
+
 #### Discussion
 
-Use this property to provide information about a feedback command that is suitable for display when screen space is more constrained. For example, Apple Watch uses this string instead of the string in the [`localizedTitle`](mpfeedbackcommand/localizedtitle.md) property.
+Use this property to provide information about a feedback command that is suitable for display when screen space is more constrained. For example, Apple Watch uses this string instead of the string in the [`localizedTitle`](./localizedtitle.md) property.
 
 ## See Also
 
-- [var isActive: Bool](mpfeedbackcommand/isactive.md)
+### Retrieving information about a feedback command
+- [var isActive: Bool](./isactive.md)
   A Boolean value that indicates whether the feedback’s action is on or off.
-- [var localizedTitle: String](mpfeedbackcommand/localizedtitle.md)
+- [var localizedTitle: String](./localizedtitle.md)
   A localized string used to describe the context of a command.
 
 

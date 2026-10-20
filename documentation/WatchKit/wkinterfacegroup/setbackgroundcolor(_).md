@@ -1,7 +1,8 @@
 # setBackgroundColor(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the background color for the group container.
 
@@ -12,6 +13,10 @@ Changes the background color for the group container.
 
 ```swift
 func setBackgroundColor(_ color: UIColor?)
+```
+
+```objc
+- (void) setBackgroundColor:(UIColor *) color;
 ```
 
 #### Discussion
@@ -28,12 +33,14 @@ Changes to the background color of a group are animatable.
 
 ## See Also
 
-- [App Programming Guide for watchOS](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969)
-- [func setBackgroundImage(UIImage?)](wkinterfacegroup/setbackgroundimage(_:).md)
+### Related Documentation
+- [App Programming Guide for watchOS](https://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969)
+### Setting the Group’s Content
+- [func setBackgroundImage(UIImage?)](./setbackgroundimage%28_%29.md)
   Changes the background image of the group container to the specified image.
-- [func setBackgroundImageData(Data?)](wkinterfacegroup/setbackgroundimagedata(_:).md)
+- [func setBackgroundImageData(Data?)](./setbackgroundimagedata%28_%29.md)
   Changes the background image of the group container to the image in the specified data object.
-- [func setBackgroundImageNamed(String?)](wkinterfacegroup/setbackgroundimagenamed(_:).md)
+- [func setBackgroundImageNamed(String?)](./setbackgroundimagenamed%28_%29.md)
   Changes the background image of the group container to the image in the specified resource file.
 
 

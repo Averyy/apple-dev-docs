@@ -1,7 +1,8 @@
 # init(commandQueue:)
 
 **Framework**: Core AI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a compute stream which will encode its work to the provided command queue.
 
@@ -23,11 +24,12 @@ You can use this to encode inferences to your own metal queue.
 
 ## Parameters
 
-- `commandQueue`: The queue which inference will be encoded to when running [`encode(inputs:states:outputViews:to:)`](inferencefunction/encode(inputs:states:outputviews:to:).md).
+- `commandQueue`: The queue which inference will be encoded to when running [`encode(inputs:states:outputViews:to:)`](../inferencefunction/encode%28inputs,states,outputviews,to%29.md).
 
 ## See Also
 
-- [convenience init()](computestream/init.md)
+### Creating a stream
+- [convenience init()](./init%28%29.md)
   Initialize an empty compute stream.
 
 

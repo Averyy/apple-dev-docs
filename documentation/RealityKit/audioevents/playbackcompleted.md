@@ -1,7 +1,8 @@
 # AudioEvents.PlaybackCompleted
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Audio playback completed.
 
@@ -11,7 +12,7 @@ Audio playback completed.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,15 +23,15 @@ struct PlaybackCompleted
 ## Topics
 
 ### Instance Properties
-- [var playbackController: AudioPlaybackController](audioevents/playbackcompleted/playbackcontroller.md)
+- [var playbackController: AudioPlaybackController](./playbackcompleted/playbackcontroller.md)
   The audio playback controller that triggered the event.
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

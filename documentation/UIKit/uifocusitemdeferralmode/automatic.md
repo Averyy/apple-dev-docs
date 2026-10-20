@@ -1,7 +1,8 @@
 # UIFocusItemDeferralMode.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Use the system default behavior.
 
@@ -16,6 +17,10 @@ Use the system default behavior.
 
 ```swift
 case automatic
+```
+
+```c
+UIFocusItemDeferralModeAutomatic
 ```
 
 

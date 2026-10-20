@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hashes the essential components of this value by feeding them into the given hasher.
 
@@ -32,11 +33,12 @@ Implement this method to conform to the `Hashable` protocol. The components used
 
 ## See Also
 
-- [var description: String](double/description.md)
+### Describing a Double
+- [var description: String](./description.md)
   A textual representation of the value.
-- [var debugDescription: String](double/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A textual representation of the value, suitable for debugging.
-- [var customMirror: Mirror](double/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   A mirror that reflects the `Double` instance.
 
 

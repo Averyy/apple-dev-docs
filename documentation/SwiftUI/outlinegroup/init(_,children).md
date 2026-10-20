@@ -1,7 +1,8 @@
 # init(_:children:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an outline group from a collection of root data elements and a key path to element’s children.
 
@@ -16,6 +17,14 @@ Creates an outline group from a collection of root data elements and a key path 
 
 ```swift
 init<DataElement>(_ data: Data, children: KeyPath<DataElement, Data?>) where ID == DataElement.ID, Parent == TableRow<DataElement>, Leaf == TableRow<DataElement>, Subgroup == TableRow<DataElement>, DataElement : Identifiable, DataElement == Data.Element
+```
+
+Available when `Data` conforms to `RandomAccessCollection`, `ID` is `Data.Element.ID`, `Parent` conforms to `TableRowContent`, `Parent` is `Leaf`, `Leaf` is `Subgroup`, and `Data.Element` is `Parent.TableRowValue`.
+
+**Other overloads**:
+
+```swift
+init<DataElement>(_ root: DataElement, children: KeyPath<DataElement, Data?>) where ID == DataElement.ID, Parent == TableRow<DataElement>, Leaf == TableRow<DataElement>, Subgroup == TableRow<DataElement>, DataElement : Identifiable, DataElement == Data.Element
 ```
 
 #### Discussion
@@ -33,9 +42,10 @@ All generated disclosure groups begin in the collapsed state.
 
 ## See Also
 
-- [init(_:children:content:)](outlinegroup/init(_:children:content:).md)
+### Creating an outline group
+- [init(_:children:content:)](./init%28_,children,content%29.md)
   Creates an outline group from a binding to a collection of root data elements and a key path to its children.
-- [init(_:id:children:content:)](outlinegroup/init(_:id:children:content:).md)
+- [init(_:id:children:content:)](./init%28_,id,children,content%29.md)
   Creates an outline group from a binding to a collection of root data elements, the key path to a data element’s identifier, and a key path to its children.
 
 

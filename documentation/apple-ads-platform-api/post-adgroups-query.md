@@ -1,7 +1,8 @@
 # Query Ad Groups
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Query ad groups using filters, sorting, and pagination.
 
@@ -14,7 +15,7 @@ This endpoint queries ad groups using a standard `QueryRequest` body. Filter by 
 
 Each result in the response includes the full `targeting` and `bidStrategy` nested objects, making this the primary endpoint for auditing ad group configuration at scale.
 
-See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
 ##### Filterable Fields
 
@@ -23,12 +24,12 @@ See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supporte
 | `id` | integer | `EQUALS`, `IN` | Yes (default) | The unique identifier for the ad group. |
 | `campaignId` | integer | `EQUALS` | Yes | The campaign this ad group belongs to. |
 | `name` | string | `EQUALS`, `STARTS_WITH` | Yes | The advertiser-given name of the ad group. |
-| `status` | string (enum) | `EQUALS`, `IN` | Yes | Advertiser-configurable status. See [`AdGroupStatus`](adgroupstatus.md). |
+| `status` | string (enum) | `EQUALS`, `IN` | Yes | Advertiser-configurable status. See [`AdGroupStatus`](./adgroupstatus.md). |
 | `startTime` | string (ISO 8601) | `LESS_THAN`, `GREATER_THAN` | Yes | Ad group schedule start time. |
 | `endTime` | string (ISO 8601) | `LESS_THAN`, `GREATER_THAN` | Yes | Ad group schedule end time. |
 | `deleted` | boolean | `EQUALS` | Yes | Whether the ad group has been deleted. |
 
-The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
+The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
 #### Payload Examples
 
@@ -289,17 +290,34 @@ POST /v1/adgroups/query
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `QueryRequest`
+
+## Responses
+
+- `200` OK (`AdGroupQueryResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`ErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create an Ad Group](post-adgroups.md)
+- [Create an Ad Group](./post-adgroups.md)
   Create a new ad group within a campaign, defining targeting, bid strategy, and scheduling for a set of ads.
-- [Get an Ad Group](get-adgroups-_id_.md)
+- [Get an Ad Group](./get-adgroups-_id_.md)
   Retrieve a single ad group by its unique identifier.
-- [Update an Ad Group](put-adgroups-_id_.md)
+- [Update an Ad Group](./put-adgroups-_id_.md)
   Update an existing ad group’s name, status, bid strategy, targeting, or scheduling.
-- [Delete an Ad Group](delete-adgroups-_id_.md)
+- [Delete an Ad Group](./delete-adgroups-_id_.md)
   Soft-delete an ad group by its unique identifier, along with all ads and keywords associated with it.
 
 

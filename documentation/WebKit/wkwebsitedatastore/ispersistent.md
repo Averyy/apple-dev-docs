@@ -1,7 +1,8 @@
 # isPersistent
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this object stores data to disk.
 
@@ -18,13 +19,18 @@ A Boolean value that indicates whether this object stores data to disk.
 var isPersistent: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isPersistent) BOOL persistent;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the data store writes data to disk, or [`false`](https://developer.apple.com/documentation/swift/false) if it doesn’t.
+The value of this property is [`true`](../../Swift/true.md) if the data store writes data to disk, or [`false`](../../Swift/false.md) if it doesn’t.
 
 ## See Also
 
-- [var identifier: UUID?](wkwebsitedatastore/identifier.md)
+### Inspecting data store properties
+- [var identifier: UUID?](./identifier.md)
   An identifier that uniquely identifies a data store.
 
 

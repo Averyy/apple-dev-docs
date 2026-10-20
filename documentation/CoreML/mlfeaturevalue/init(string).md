@@ -1,7 +1,8 @@
 # init(string:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a feature value that contains a string.
 
@@ -18,6 +19,10 @@ Creates a feature value that contains a string.
 
 ```swift
 convenience init(string value: String)
+```
+
+```objc
++ (instancetype) featureValueWithString:(NSString *) value;
 ```
 
 ## Parameters

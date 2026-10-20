@@ -1,7 +1,8 @@
 # isRunning
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the capture session is in a running state.
 
@@ -19,23 +20,28 @@ A Boolean value that indicates whether the capture session is in a running state
 var isRunning: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isRunning) BOOL running;
+```
+
 #### Discussion
 
 This property is key-value observable.
 
 ## See Also
 
-- [var isInterrupted: Bool](avcapturesession/isinterrupted.md)
+### Observing session state
+- [var isInterrupted: Bool](./isinterrupted.md)
   A Boolean value that indicates whether the capture session is in an interrupted state.
-- [class let didStartRunningNotification: NSNotification.Name](avcapturesession/didstartrunningnotification.md)
+- [class let didStartRunningNotification: NSNotification.Name](./didstartrunningnotification.md)
   A notification the system posts when a capture session starts.
-- [class let didStopRunningNotification: NSNotification.Name](avcapturesession/didstoprunningnotification.md)
+- [class let didStopRunningNotification: NSNotification.Name](./didstoprunningnotification.md)
   A notification the system posts when a capture session stops.
-- [class let wasInterruptedNotification: NSNotification.Name](avcapturesession/wasinterruptednotification.md)
+- [class let wasInterruptedNotification: NSNotification.Name](./wasinterruptednotification.md)
   A notification the system posts when it interrupts a capture session.
-- [class let interruptionEndedNotification: NSNotification.Name](avcapturesession/interruptionendednotification.md)
+- [class let interruptionEndedNotification: NSNotification.Name](./interruptionendednotification.md)
   A notification the system posts when an interruption to a capture session finishes.
-- [class let runtimeErrorNotification: NSNotification.Name](avcapturesession/runtimeerrornotification.md)
+- [class let runtimeErrorNotification: NSNotification.Name](./runtimeerrornotification.md)
   A notification the system posts when an error occurs during a capture session.
 
 

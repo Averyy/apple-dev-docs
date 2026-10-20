@@ -1,7 +1,8 @@
 # flashScrollers()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Flash the overlay scroll bars.
 
@@ -12,6 +13,10 @@ Flash the overlay scroll bars.
 
 ```swift
 func flashScrollers()
+```
+
+```objc
+- (void) flashScrollers;
 ```
 
 #### Discussion

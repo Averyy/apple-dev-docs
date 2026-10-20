@@ -1,7 +1,8 @@
 # listeningMode
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var listeningMode: SRHeadphoneSettings.ListeningMode { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) SRHeadphoneSettingsListeningMode listeningMode;
 ```
 
 

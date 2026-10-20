@@ -1,7 +1,8 @@
 # dateRangeNavigationMarkers
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of date range navigation markers for which the group provides navigation.
 
@@ -14,15 +15,20 @@ The array of date range navigation markers for which the group provides navigati
 var dateRangeNavigationMarkers: [AVDateRangeMetadataGroup]? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSArray<AVDateRangeMetadataGroup *> * dateRangeNavigationMarkers;
+```
+
 #### Discussion
 
-Returns the array of [`AVDateRangeMetadataGroup`](https://developer.apple.com/documentation/avfoundation/avdaterangemetadatagroup) objects managed by this group. This value may be `nil`.
+Returns the array of [`AVDateRangeMetadataGroup`](../../AVFoundation/avdaterangemetadatagroup.md) objects managed by this group. This value may be `nil`.
 
 ## See Also
 
-- [var title: String?](avnavigationmarkersgroup/title.md)
+### Inspecting navigation metadata
+- [var title: String?](./title.md)
   The title of the marker group.
-- [var timedNavigationMarkers: [AVTimedMetadataGroup]?](avnavigationmarkersgroup/timednavigationmarkers.md)
+- [var timedNavigationMarkers: [AVTimedMetadataGroup]?](./timednavigationmarkers.md)
   The array of timed navigation markers for which the group provides navigation.
 
 

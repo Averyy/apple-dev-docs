@@ -1,7 +1,8 @@
 # fontDesign(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the font design of the text.
 
@@ -31,11 +32,12 @@ Text that uses the font design you specify.
 
 ## See Also
 
-- [func font(Font?) -> Text](text/font(_:).md)
+### Choosing a font
+- [func font(Font?) -> Text](./font%28_%29.md)
   Sets the default font for text in the view.
-- [func fontWeight(Font.Weight?) -> Text](text/fontweight(_:).md)
+- [func fontWeight(Font.Weight?) -> Text](./fontweight%28_%29.md)
   Sets the font weight of the text.
-- [func fontWidth(Font.Width?) -> Text](text/fontwidth(_:).md)
+- [func fontWidth(Font.Width?) -> Text](./fontwidth%28_%29.md)
   Sets the font width of the text.
 
 

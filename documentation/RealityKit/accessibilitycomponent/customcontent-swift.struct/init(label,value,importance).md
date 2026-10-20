@@ -1,7 +1,8 @@
 # init(label:value:importance:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new CustomContent with the given label, value, and importance.
 
@@ -11,7 +12,7 @@ Creates a new CustomContent with the given label, value, and importance.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

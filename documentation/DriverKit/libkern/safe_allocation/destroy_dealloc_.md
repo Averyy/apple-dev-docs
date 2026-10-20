@@ -1,17 +1,18 @@
 # destroy_dealloc_
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 static void destroy_dealloc_(T * *ptr, size_t size);
 ```
 

@@ -1,7 +1,8 @@
 # XPCListener.InitializationOptions
 
 **Framework**: XPC  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that control the listener’s configuration, such as if it’s inactive at creation.
 
@@ -18,27 +19,28 @@ struct InitializationOptions
 ## Topics
 
 ### Listener creation options
-- [static let inactive: XPCListener.InitializationOptions](xpclistener/initializationoptions/inactive.md)
+- [static let inactive: XPCListener.InitializationOptions](./initializationoptions/inactive.md)
   Indicates that the listener isn’t activated during its creation.
-- [static let none: XPCListener.InitializationOptions](xpclistener/initializationoptions/none.md)
+- [static let none: XPCListener.InitializationOptions](./initializationoptions/none.md)
   Indicates that the listener uses a default configuration during creation.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [init(service: String, targetQueue: DispatchQueue?, options: XPCListener.InitializationOptions, incomingSessionHandler: (XPCListener.IncomingSessionRequest) -> XPCListener.IncomingSessionRequest.Decision) throws](xpclistener/init(service:targetqueue:options:incomingsessionhandler:).md)
+### Creating a listener
+- [init(service: String, targetQueue: DispatchQueue?, options: XPCListener.InitializationOptions, incomingSessionHandler: (XPCListener.IncomingSessionRequest) -> XPCListener.IncomingSessionRequest.Decision) throws](./init%28service,targetqueue,options,incomingsessionhandler%29.md)
   Creates the server side of an XPC service using the specified service name.
-- [XPCListener.IncomingSessionRequest](xpclistener/incomingsessionrequest.md)
+- [XPCListener.IncomingSessionRequest](./incomingsessionrequest.md)
   A session request from a client that you accept or reject.
 
 

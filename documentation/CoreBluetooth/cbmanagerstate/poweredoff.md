@@ -1,7 +1,8 @@
 # CBManagerState.poweredOff
 
 **Framework**: Core Bluetooth  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state that indicates Bluetooth is currently powered off.
 
@@ -20,17 +21,22 @@ A state that indicates Bluetooth is currently powered off.
 case poweredOff
 ```
 
+```c
+CBManagerStatePoweredOff
+```
+
 ## See Also
 
-- [CBManagerState.poweredOn](cbmanagerstate/poweredon.md)
+### Manager States
+- [CBManagerState.poweredOn](./poweredon.md)
   A state that indicates Bluetooth is currently powered on and available to use.
-- [CBManagerState.resetting](cbmanagerstate/resetting.md)
+- [CBManagerState.resetting](./resetting.md)
   A state that indicates the connection with the system service was momentarily lost.
-- [CBManagerState.unauthorized](cbmanagerstate/unauthorized.md)
+- [CBManagerState.unauthorized](./unauthorized.md)
   A state that indicates the application isn’t authorized to use the Bluetooth low energy role.
-- [CBManagerState.unknown](cbmanagerstate/unknown.md)
+- [CBManagerState.unknown](./unknown.md)
   The manager’s state is unknown.
-- [CBManagerState.unsupported](cbmanagerstate/unsupported.md)
+- [CBManagerState.unsupported](./unsupported.md)
   A state that indicates this device doesn’t support the Bluetooth low energy central or client role.
 
 

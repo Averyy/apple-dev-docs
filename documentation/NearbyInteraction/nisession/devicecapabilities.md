@@ -1,7 +1,8 @@
 # deviceCapabilities
 
 **Framework**: Nearby Interaction  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An object that communicates the device’s supported framework features.
 
@@ -17,10 +18,14 @@ An object that communicates the device’s supported framework features.
 class var deviceCapabilities: any NIDeviceCapability { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) id<NIDeviceCapability> deviceCapabilities;
+```
+
 ## Mentions
 
-- [Extending advanced direction finding and ranging](extending-advanced-direction-finding-and-ranging.md)
-- [Initiating and maintaining a session](initiating-and-maintaining-a-session.md)
+- [Extending advanced direction finding and ranging](../extending-advanced-direction-finding-and-ranging.md)
+- [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md)
 
 #### Discussion
 
@@ -28,7 +33,8 @@ Use the properties of the specified object to determine what features are availa
 
 ## See Also
 
-- [protocol NIDeviceCapability](nidevicecapability.md)
+### Ensuring feature support
+- [protocol NIDeviceCapability](../nidevicecapability.md)
   An interface that adds Boolean values that indicate an interaction session feature support.
 
 

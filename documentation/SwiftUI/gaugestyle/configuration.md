@@ -1,7 +1,8 @@
 # GaugeStyle.Configuration
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The properties of a gauge instance.
 
@@ -21,9 +22,10 @@ typealias Configuration = GaugeStyleConfiguration
 
 ## See Also
 
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](gaugestyle/makebody(configuration:).md)
+### Creating custom gauge styles
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./makebody%28configuration%29.md)
   Creates a view representing the body of a gauge.
-- [associatedtype Body : View](gaugestyle/body.md)
+- [associatedtype Body : View](./body.md)
   A view representing the body of a gauge.
 
 

@@ -1,7 +1,8 @@
 # USDLayer.AssetPath
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A reference to an external asset such as a texture, audio file, or USD layer.
 
@@ -26,38 +27,39 @@ Stores both the authored path (the string as written in USD) and the resolved pa
 ## Topics
 
 ### Initializers
-- [init()](usdlayer/assetpath/init.md)
+- [init()](./assetpath/init%28%29.md)
   Creates an empty asset path.
-- [init(String)](usdlayer/assetpath/init(_:).md)
+- [init(String)](./assetpath/init%28_%29.md)
   Creates an asset path from a string identifier.
-- [init(String, resolvedPath: String)](usdlayer/assetpath/init(_:resolvedpath:).md)
+- [init(String, resolvedPath: String)](./assetpath/init%28_,resolvedpath%29.md)
   Creates an asset path with both authored and resolved values.
 ### Instance Properties
-- [var authoredPath: String](usdlayer/assetpath/authoredpath.md)
+- [var authoredPath: String](./assetpath/authoredpath.md)
   The authored path string — the value as written in the USD file.
-- [var resolvedPath: String?](usdlayer/assetpath/resolvedpath.md)
+- [var resolvedPath: String?](./assetpath/resolvedpath.md)
   The resolved location after asset resolution, or `nil` if resolution did not run or failed.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [USDPrim.Attribute.Value](usdprim/attribute/value.md)
-- [USDValueProtocol](usdvalueprotocol.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../../Swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringLiteral](../../Swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../../Swift/expressiblebyunicodescalarliteral.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [USDPrim.Attribute.Value](../usdprim/attribute/value.md)
+- [USDValueProtocol](../usdvalueprotocol.md)
 
 ## See Also
 
-- [var defaultPrim: USDToken?](usdlayer/defaultprim.md)
+### Composing the scene
+- [var defaultPrim: USDToken?](./defaultprim.md)
   The name of the layer’s default prim — the prim referenced when this layer is included as a reference or payload without specifying a target. `nil` if not authored.
-- [var subLayerPaths: [USDLayer.AssetPath]](usdlayer/sublayerpaths.md)
+- [var subLayerPaths: [USDLayer.AssetPath]](./sublayerpaths.md)
   The asset paths of the layer’s sublayers, ordered from strongest to weakest opinion.
 
 

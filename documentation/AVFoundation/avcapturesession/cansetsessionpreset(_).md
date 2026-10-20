@@ -1,7 +1,8 @@
 # canSetSessionPreset(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines whether you can configure a capture session with the specified preset.
 
@@ -18,13 +19,17 @@ Determines whether you can configure a capture session with the specified preset
 func canSetSessionPreset(_ preset: AVCaptureSession.Preset) -> Bool
 ```
 
+```objc
+- (BOOL) canSetSessionPreset:(AVCaptureSessionPreset) preset;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the capture session supports the preset; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the capture session supports the preset; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-Use this method to determine whether the capture session, in its current I/O configuration, supports a particular preset. You can only set a preset that returns [`true`](https://developer.apple.com/documentation/swift/true) as the capture session’s [`sessionPreset`](avcapturesession/sessionpreset.md) property value.
+Use this method to determine whether the capture session, in its current I/O configuration, supports a particular preset. You can only set a preset that returns [`true`](../../Swift/true.md) as the capture session’s [`sessionPreset`](./sessionpreset.md) property value.
 
 ## Parameters
 
@@ -32,9 +37,10 @@ Use this method to determine whether the capture session, in its current I/O con
 
 ## See Also
 
-- [AVCaptureSession.Preset](avcapturesession/preset.md)
+### Setting a session preset
+- [AVCaptureSession.Preset](./preset.md)
   Presets that define standard configurations for a capture session.
-- [var sessionPreset: AVCaptureSession.Preset](avcapturesession/sessionpreset.md)
+- [var sessionPreset: AVCaptureSession.Preset](./sessionpreset.md)
   A preset value that indicates the quality level or bit rate of the output.
 
 

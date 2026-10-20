@@ -1,7 +1,8 @@
 # AppClipAdvancedExperienceCreateRequest.Data.Attributes.Place.MainAddress.StructuredAddress
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The structured address information for a point of interest or business in Apple Maps.
 
@@ -10,7 +11,7 @@ The structured address information for a point of interest or business in Apple 
 
 ## Declaration
 
-```swift
+```
 object AppClipAdvancedExperienceCreateRequest.Data.Attributes.Place.MainAddress.StructuredAddress
 ```
 

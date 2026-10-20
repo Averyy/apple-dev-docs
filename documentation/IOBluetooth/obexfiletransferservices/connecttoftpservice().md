@@ -1,17 +1,22 @@
 # connectToFTPService()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Connect to a remote device for FTP operations
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func connectToFTPService() -> OBEXError
+```
+
+```objc
+- (OBEXError) connectToFTPService;
 ```
 
 #### Return Value

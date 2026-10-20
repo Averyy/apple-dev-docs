@@ -1,7 +1,8 @@
 # MKAddressRepresentations.ContextStyle
 
 **Framework**: MapKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that describe the degree of disambiguation context to include in an address representation.
 
@@ -20,32 +21,36 @@ Values that describe the degree of disambiguation context to include in an addre
 enum ContextStyle
 ```
 
+```c
+enum MKAddressRepresentationsContextStyle : NSInteger;
+```
+
 #### Discussion
 
-Use the [`MKAddressRepresentations.ContextStyle`](mkaddressrepresentations/contextstyle.md) to configure the degree of disambiguation context to include in an address representation from [`MKAddressRepresentations`](mkaddressrepresentations.md), such as including the region name with the city.
+Use the [`MKAddressRepresentations.ContextStyle`](./contextstyle.md) to configure the degree of disambiguation context to include in an address representation from [`MKAddressRepresentations`](../mkaddressrepresentations.md), such as including the region name with the city.
 
 ## Topics
 
 ### Creating a context style
-- [init?(rawValue: Int)](mkaddressrepresentations/contextstyle/init(rawvalue:).md)
+- [init?(rawValue: Int)](./contextstyle/init%28rawvalue%29.md)
   Initializes a context style with the raw value you provide.
 ### Available context styles
-- [MKAddressRepresentations.ContextStyle.automatic](mkaddressrepresentations/contextstyle/automatic.md)
+- [MKAddressRepresentations.ContextStyle.automatic](./contextstyle/automatic.md)
   The value that represents the automatic context style.
-- [MKAddressRepresentations.ContextStyle.short](mkaddressrepresentations/contextstyle/short.md)
+- [MKAddressRepresentations.ContextStyle.short](./contextstyle/short.md)
   The value that represents the short context style.
-- [MKAddressRepresentations.ContextStyle.full](mkaddressrepresentations/contextstyle/full.md)
+- [MKAddressRepresentations.ContextStyle.full](./contextstyle/full.md)
   The value that represents the full context style.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

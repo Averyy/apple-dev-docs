@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the intersection of two volumetric entities.

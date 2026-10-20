@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: Screen Time  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration being observed.
 
@@ -15,6 +16,10 @@ The configuration being observed.
 
 ```swift
 var configuration: STScreenTimeConfiguration? { get }
+```
+
+```objc
+@property (strong, readonly, nullable) STScreenTimeConfiguration * configuration;
 ```
 
 

@@ -1,7 +1,8 @@
 # LayerRenderer.State.paused
 
 **Framework**: Compositor Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state that indicates the layer is paused and not currently drawing.
 
@@ -15,9 +16,13 @@ A state that indicates the layer is paused and not currently drawing.
 case paused
 ```
 
+```c
+cp_layer_renderer_state_paused
+```
+
 ## Mentions
 
-- [Drawing fully immersive content using Metal](drawing-fully-immersive-content-using-metal.md)
+- [Drawing fully immersive content using Metal](../../drawing-fully-immersive-content-using-metal.md)
 
 #### Discussion
 
@@ -25,9 +30,10 @@ A layer starts in this state and later transitions to other states over time. Do
 
 ## See Also
 
-- [LayerRenderer.State.running](layerrenderer/state-swift.enum/running.md)
+### Getting the states
+- [LayerRenderer.State.running](./running.md)
   A state that indicates the layer is visible and ready for you to draw your content.
-- [LayerRenderer.State.invalidated](layerrenderer/state-swift.enum/invalidated.md)
+- [LayerRenderer.State.invalidated](./invalidated.md)
   A state that indicates the layer no longer supports drawing operations.
 
 

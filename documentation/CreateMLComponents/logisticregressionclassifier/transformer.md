@@ -1,7 +1,8 @@
 # LogisticRegressionClassifier.Transformer
 
 **Framework**: Create ML Components  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The transformer type created by this estimator.
 
@@ -22,11 +23,12 @@ typealias Transformer = LogisticRegressionClassifierModel<Scalar, Label>
 
 ## See Also
 
-- [func fitted<Input>(to: Input, eventHandler: EventHandler?) async throws -> LogisticRegressionClassifier<Scalar, Label>.Transformer](logisticregressionclassifier/fitted(to:eventhandler:).md)
+### Fitting
+- [func fitted<Input>(to: Input, eventHandler: EventHandler?) async throws -> LogisticRegressionClassifier<Scalar, Label>.Transformer](./fitted%28to,eventhandler%29.md)
   Fits a logistic regression classifier model to a sequence of examples while validating with a validation sequence.
-- [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> LogisticRegressionClassifierModel<Scalar, Label>](logisticregressionclassifier/fitted(to:validateon:eventhandler:).md)
+- [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> LogisticRegressionClassifierModel<Scalar, Label>](./fitted%28to,validateon,eventhandler%29.md)
   Fits a logistic regression classifier model to a sequence of examples.
-- [LogisticRegressionClassifier.Annotation](logisticregressionclassifier/annotation.md)
+- [LogisticRegressionClassifier.Annotation](./annotation.md)
   The annotation type.
 
 

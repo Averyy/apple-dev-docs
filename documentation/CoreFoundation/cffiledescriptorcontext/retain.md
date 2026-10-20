@@ -1,23 +1,28 @@
 # retain
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The retain callback used by the CFFileDescriptor.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var retain: ((UnsafeMutableRawPointer?) -> UnsafeMutableRawPointer?)!
+```
+
+```c
+void *(*)(void *) retain;
 ```
 
 

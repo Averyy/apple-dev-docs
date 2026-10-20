@@ -1,7 +1,8 @@
 # kAEContains
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The value of `operand1` contains the value of `operand2 `(for example, the string `"operand"` contains the string `"era"`).
 

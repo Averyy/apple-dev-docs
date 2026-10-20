@@ -1,7 +1,8 @@
 # stopMonitoring(_:)
 
 **Framework**: Device Activity  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops monitoring the specified device activities.
 
@@ -26,11 +27,12 @@ This method ignores names that don’t correspond to monitored activities.
 
 ## See Also
 
-- [init()](deviceactivitycenter/init.md)
+### Monitoring Device Activities
+- [init()](./init%28%29.md)
   Creates an activity center to manage which device activities your application monitors.
-- [func startMonitoring(DeviceActivityName, during: DeviceActivitySchedule, events: [DeviceActivityEvent.Name : DeviceActivityEvent]) throws](deviceactivitycenter/startmonitoring(_:during:events:).md)
+- [func startMonitoring(DeviceActivityName, during: DeviceActivitySchedule, events: [DeviceActivityEvent.Name : DeviceActivityEvent]) throws](./startmonitoring%28_,during,events%29.md)
   Starts monitoring the specified device activity.
-- [var activities: [DeviceActivityName]](deviceactivitycenter/activities.md)
+- [var activities: [DeviceActivityName]](./activities.md)
   The activities that the application’s extension currently monitors.
 
 

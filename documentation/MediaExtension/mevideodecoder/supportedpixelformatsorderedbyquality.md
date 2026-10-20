@@ -1,7 +1,8 @@
 # supportedPixelFormatsOrderedByQuality
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides hints about quality tradeoffs between pixel formats.
 
@@ -14,25 +15,30 @@ Provides hints about quality tradeoffs between pixel formats.
 optional var supportedPixelFormatsOrderedByQuality: [NSNumber] { get }
 ```
 
+```objc
+@property (readonly) NSArray<NSNumber *> * supportedPixelFormatsOrderedByQuality;
+```
+
 #### Discussion
 
-This array contains [`CMPixelFormatType`](https://developer.apple.com/documentation/coremedia/cmpixelformattype) values, ordered by quality from best to worst. The system queries this property on the extension when [`Video Toolbox`](https://developer.apple.com/documentation/videotoolbox) queries the [`kVTDecompressionPropertyKey_SupportedPixelFormatsOrderedByQuality`](https://developer.apple.com/documentation/videotoolbox/kvtdecompressionpropertykey_supportedpixelformatsorderedbyquality) on the hosting [`VTDecompressionSession`](https://developer.apple.com/documentation/videotoolbox/vtdecompressionsession).
+This array contains [`CMPixelFormatType`](../../CoreMedia/cmpixelformattype.md) values, ordered by quality from best to worst. The system queries this property on the extension when [Video Toolbox](../../VideoToolbox/VideoToolbox.md) queries the [`kVTDecompressionPropertyKey_SupportedPixelFormatsOrderedByQuality`](../../VideoToolbox/kvtdecompressionpropertykey_supportedpixelformatsorderedbyquality.md) on the hosting [`VTDecompressionSession`](../../VideoToolbox/vtdecompressionsession.md).
 
 ## See Also
 
-- [var contentHasInterframeDependencies: Bool](mevideodecoder/contenthasinterframedependencies.md)
+### Inspecting a video decoder
+- [var contentHasInterframeDependencies: Bool](./contenthasinterframedependencies.md)
   A Boolean that specifies whether the content has interframe dependencies, if the decoder knows.
-- [var recommendedThreadCount: Int](mevideodecoder/recommendedthreadcount.md)
+- [var recommendedThreadCount: Int](./recommendedthreadcount.md)
   The recommended number of threads for the decoder to use.
-- [var actualThreadCount: Int](mevideodecoder/actualthreadcount.md)
+- [var actualThreadCount: Int](./actualthreadcount.md)
   The actual number of threads the decoder uses.
-- [var reducedResolution: CGSize](mevideodecoder/reducedresolution.md)
+- [var reducedResolution: CGSize](./reducedresolution.md)
   A request to decode at a lower resolution than full-size.
-- [var pixelFormatsWithReducedResolutionDecodeSupport: [NSNumber]](mevideodecoder/pixelformatswithreducedresolutiondecodesupport.md)
+- [var pixelFormatsWithReducedResolutionDecodeSupport: [NSNumber]](./pixelformatswithreducedresolutiondecodesupport.md)
   Provides a list of output pixel formats where the decoder supports reduced resolution decoding.
-- [var producesRAWOutput: Bool](mevideodecoder/producesrawoutput.md)
+- [var producesRAWOutput: Bool](./producesrawoutput.md)
   Indicates whether the decoder produces RAW output which requires the use of a RAW processor.
-- [var isReadyForMoreMediaData: Bool](mevideodecoder/isreadyformoremediadata.md)
+- [var isReadyForMoreMediaData: Bool](./isreadyformoremediadata.md)
   A Boolean value that indicates the readiness of the decoder to accept more sample buffers.
 
 

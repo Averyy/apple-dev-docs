@@ -1,7 +1,8 @@
 # createSession
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 WebKitMediaKeySession createSession(
     DOMString type, 
     Uint8Array initData

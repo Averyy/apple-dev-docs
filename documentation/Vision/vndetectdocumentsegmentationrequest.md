@@ -1,7 +1,8 @@
 # VNDetectDocumentSegmentationRequest
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that detects rectangular regions that contain text in the input image.
 
@@ -19,6 +20,10 @@ An object that detects rectangular regions that contain text in the input image.
 class VNDetectDocumentSegmentationRequest
 ```
 
+```objc
+@interface VNDetectDocumentSegmentationRequest : VNImageBasedRequest
+```
+
 #### Overview
 
 Perform this request to detect a document in an image. The result that the request generates contains the four corner points of a document’s quadrilateral and saliency mask.
@@ -26,42 +31,43 @@ Perform this request to detect a document in an image. The result that the reque
 ## Topics
 
 ### Accessing the Results
-- [var results: [VNRectangleObservation]?](vndetectdocumentsegmentationrequest/results.md)
+- [var results: [VNRectangleObservation]?](./vndetectdocumentsegmentationrequest/results.md)
   The results of a document segmentation request.
-- [class VNRectangleObservation](vnrectangleobservation.md)
+- [class VNRectangleObservation](./vnrectangleobservation.md)
   An object that represents the four vertices of a detected rectangle.
 ### Identifying Request Revisions
-- [var VNDetectDocumentSegmentationRequestRevision1: Int](vndetectdocumentsegmentationrequestrevision1.md)
+- [var VNDetectDocumentSegmentationRequestRevision1: Int](./vndetectdocumentsegmentationrequestrevision1.md)
   A constant for specifying revision 1 of the document segmentation request.
 
 ## Relationships
 
 ### Inherits From
-- [VNImageBasedRequest](vnimagebasedrequest.md)
+- [VNImageBasedRequest](./vnimagebasedrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Applying Matte Effects to People in Images and Video](applying-matte-effects-to-people-in-images-and-video.md)
+### Image sequence analysis
+- [Applying Matte Effects to People in Images and Video](./applying-matte-effects-to-people-in-images-and-video.md)
   Generate image masks for people automatically by using semantic person-segmentation.
-- [Detecting human actions in a live video feed](../createml/detecting-human-actions-in-a-live-video-feed.md)
+- [Detecting human actions in a live video feed](../CreateML/detecting-human-actions-in-a-live-video-feed.md)
   Identify body movements by sending a person’s pose data from a series of video frames to an action-classification model.
-- [Segmenting and colorizing individuals from a surrounding scene](segmenting-and-colorizing-individuals-from-a-surrounding-scene.md)
+- [Segmenting and colorizing individuals from a surrounding scene](./segmenting-and-colorizing-individuals-from-a-surrounding-scene.md)
   Use the Vision framework to isolate and apply colors to people in an image.
-- [class VNStatefulRequest](vnstatefulrequest.md)
+- [class VNStatefulRequest](./vnstatefulrequest.md)
   An abstract request type that builds evidence of a condition over time.
-- [class VNGeneratePersonSegmentationRequest](vngeneratepersonsegmentationrequest.md)
+- [class VNGeneratePersonSegmentationRequest](./vngeneratepersonsegmentationrequest.md)
   An object that produces a matte image for a person it finds in the input image.
-- [class VNGeneratePersonInstanceMaskRequest](vngeneratepersoninstancemaskrequest.md)
+- [class VNGeneratePersonInstanceMaskRequest](./vngeneratepersoninstancemaskrequest.md)
   An object that produces a mask of individual people it finds in the input image.
-- [class VNSequenceRequestHandler](vnsequencerequesthandler.md)
+- [class VNSequenceRequestHandler](./vnsequencerequesthandler.md)
   An object that processes image-analysis requests for each frame in a sequence.
 
 

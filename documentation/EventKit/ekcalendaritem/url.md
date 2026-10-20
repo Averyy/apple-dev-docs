@@ -1,7 +1,8 @@
 # url
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL for the calendar item.
 
@@ -19,19 +20,24 @@ The URL for the calendar item.
 var url: URL? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSURL * URL;
+```
+
 ## See Also
 
-- [var calendar: EKCalendar!](ekcalendaritem/calendar.md)
+### Accessing Calendar Item Properties
+- [var calendar: EKCalendar!](./calendar.md)
   The calendar for the calendar item.
-- [var title: String!](ekcalendaritem/title.md)
+- [var title: String!](./title.md)
   The title for the calendar item.
-- [var location: String?](ekcalendaritem/location.md)
+- [var location: String?](./location.md)
   The location associated with the calendar item.
-- [var creationDate: Date?](ekcalendaritem/creationdate.md)
+- [var creationDate: Date?](./creationdate.md)
   The date that this calendar item was created.
-- [var lastModifiedDate: Date?](ekcalendaritem/lastmodifieddate.md)
+- [var lastModifiedDate: Date?](./lastmodifieddate.md)
   The date that the calendar item was last modified.
-- [var timeZone: TimeZone?](ekcalendaritem/timezone.md)
+- [var timeZone: TimeZone?](./timezone.md)
   The time zone for the calendar item.
 
 

@@ -1,7 +1,8 @@
 # sectionIndexTitle
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The section’s index title.
 
@@ -16,13 +17,18 @@ The section’s index title.
 var sectionIndexTitle: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * sectionIndexTitle;
+```
+
 #### Discussion
 
 The system displays only the first character of the section index title.
 
 ## See Also
 
-- [var header: String?](cplistsection/header.md)
+### Getting Supplementary Information
+- [var header: String?](./header.md)
   The section’s header text.
 
 

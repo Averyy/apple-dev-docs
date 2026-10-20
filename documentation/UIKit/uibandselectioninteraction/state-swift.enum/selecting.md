@@ -1,7 +1,8 @@
 # UIBandSelectionInteraction.State.selecting
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state that indicates the interaction object is tracking changes to the selection rectangle.
 
@@ -17,17 +18,22 @@ A state that indicates the interaction object is tracking changes to the selecti
 case selecting
 ```
 
+```c
+UIBandSelectionInteractionStateSelecting
+```
+
 #### Discussion
 
 Use this state to select items that intersect the current selection rectangle.
 
 ## See Also
 
-- [UIBandSelectionInteraction.State.possible](uibandselectioninteraction/state-swift.enum/possible.md)
+### Getting the selection state
+- [UIBandSelectionInteraction.State.possible](./possible.md)
   A state that indicates the interaction object is ready to start a new interaction.
-- [UIBandSelectionInteraction.State.began](uibandselectioninteraction/state-swift.enum/began.md)
+- [UIBandSelectionInteraction.State.began](./began.md)
   A state that indicates the interaction object began a new interaction.
-- [UIBandSelectionInteraction.State.ended](uibandselectioninteraction/state-swift.enum/ended.md)
+- [UIBandSelectionInteraction.State.ended](./ended.md)
   A state that indicates the current interaction ended.
 
 

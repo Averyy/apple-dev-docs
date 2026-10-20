@@ -1,7 +1,8 @@
 # PortalComponent.BoundaryMode.none
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The portal renders without clipping or crossing.
 
@@ -21,7 +22,7 @@ case none
 
 #### Discussion
 
-Portal world content is bounded only by the [`PortalMaterial`](portalmaterial.md) mesh. Entities with [`PortalCrossingComponent`](portalcrossingcomponent.md) don’t cross the portal.
+Portal world content is bounded only by the [`PortalMaterial`](../../portalmaterial.md) mesh. Entities with [`PortalCrossingComponent`](../../portalcrossingcomponent.md) don’t cross the portal.
 
 
 ---

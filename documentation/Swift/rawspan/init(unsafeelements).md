@@ -1,7 +1,8 @@
 # init(unsafeElements:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Unsafely view a typed span as a raw span.
 

@@ -1,7 +1,8 @@
 # MTLSamplerMipFilter.nearest
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The nearest mipmap level is selected.
 
@@ -10,7 +11,7 @@ The nearest mipmap level is selected.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,11 +20,16 @@ The nearest mipmap level is selected.
 case nearest
 ```
 
+```c
+MTLSamplerMipFilterNearest
+```
+
 ## See Also
 
-- [MTLSamplerMipFilter.notMipmapped](mtlsamplermipfilter/notmipmapped.md)
+### Specifying mip filter options
+- [MTLSamplerMipFilter.notMipmapped](./notmipmapped.md)
   The texture is sampled from mipmap level `0`, and other mipmap levels are ignored.
-- [MTLSamplerMipFilter.linear](mtlsamplermipfilter/linear.md)
+- [MTLSamplerMipFilter.linear](./linear.md)
   If the filter falls between mipmap levels, both levels are sampled and the results are determined by linear interpolation between levels.
 
 

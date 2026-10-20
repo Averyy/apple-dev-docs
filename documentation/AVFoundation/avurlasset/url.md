@@ -1,7 +1,8 @@
 # url
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL to the asset’s media.
 
@@ -18,6 +19,10 @@ A URL to the asset’s media.
 
 ```swift
 var url: URL { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSURL * URL;
 ```
 
 

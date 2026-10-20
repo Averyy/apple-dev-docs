@@ -1,7 +1,8 @@
 # sortingMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The order in which the framework draws splats to blend their opacity.
 

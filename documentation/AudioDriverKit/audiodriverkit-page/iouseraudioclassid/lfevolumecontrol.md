@@ -1,7 +1,8 @@
 # LFEVolumeControl
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The identifier for the low-frequency effect volume control class.
 
@@ -10,19 +11,20 @@ The identifier for the low-frequency effect volume control class.
 
 ## Declaration
 
-```swift
+```c
 LFEVolumeControl
 ```
 
 #### Discussion
 
-This class is a subclass of the [`IOUserAudioLevelControl`](iouseraudiolevelcontrol.md) class for an LFE channel that results from bass management. If you use normal audio channels to represent LFE channels, you must use the [`VolumeControl`](audiodriverkit/iouseraudioclassid/volumecontrol.md) class to manipulate the level.
+This class is a subclass of the [`IOUserAudioLevelControl`](../../iouseraudiolevelcontrol.md) class for an LFE channel that results from bass management. If you use normal audio channels to represent LFE channels, you must use the [`VolumeControl`](./volumecontrol.md) class to manipulate the level.
 
 ## See Also
 
-- [LevelControl](audiodriverkit/iouseraudioclassid/levelcontrol.md)
+### Level and Volume Control Objects
+- [LevelControl](./levelcontrol.md)
   The identifier for the audio level control class.
-- [VolumeControl](audiodriverkit/iouseraudioclassid/volumecontrol.md)
+- [VolumeControl](./volumecontrol.md)
   The identifier for the audio volume control class.
 
 

@@ -1,7 +1,8 @@
 # zoomedViewController
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The zoomed in view.
 
@@ -18,9 +19,14 @@ The zoomed in view.
 var zoomedViewController: UIViewController { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIViewController * zoomedViewController;
+```
+
 ## See Also
 
-- [var sourceView: UIView](uiviewcontroller/transition/zoomoptions/alignmentrectcontext/sourceview.md)
+### Accessing views
+- [var sourceView: UIView](./sourceview.md)
   The zoomed-out view, for example a thumbnail image.
 
 

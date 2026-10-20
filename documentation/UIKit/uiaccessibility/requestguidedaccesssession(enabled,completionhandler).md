@@ -1,7 +1,8 @@
 # requestGuidedAccessSession(enabled:completionHandler:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Transitions the app to or from Single App mode asynchronously.
 
@@ -9,7 +10,7 @@ Transitions the app to or from Single App mode asynchronously.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -17,6 +18,10 @@ Transitions the app to or from Single App mode asynchronously.
 ```swift
 @MainActor
 static func requestGuidedAccessSession(enabled enable: Bool, completionHandler: @escaping @MainActor @Sendable (Bool) -> Void)
+```
+
+```c
+extern void UIAccessibilityRequestGuidedAccessSession(BOOL enable, void (^)(_Bool)completionHandler);
 ```
 
 #### Discussion
@@ -27,20 +32,23 @@ Because entering or exiting Single App mode might take some time, this method ex
 
 ## Parameters
 
-- `enable`: Specify [`true`](https://developer.apple.com/documentation/swift/true) to put the device into Single App mode for this app or [`false`](https://developer.apple.com/documentation/swift/false) to exit Single App mode.
-- `completionHandler`: The block that notifies your app of the success or failure of the operation. This block takes the following parameter: - **didSucceed**: If [`true`](https://developer.apple.com/documentation/swift/true), the app transitioned to or from Single App mode successfully. If [`false`](https://developer.apple.com/documentation/swift/false), the app or device is not eligible for Single App mode or there was some other error.
+- `enable`: Specify [`true`](../../Swift/true.md) to put the device into Single App mode for this app or [`false`](../../Swift/false.md) to exit Single App mode.
+- `completionHandler`: The block that notifies your app of the success or failure of the operation. This block takes the following parameter:
+
+  - **didSucceed**: If [`true`](../../Swift/true.md), the app transitioned to or from Single App mode successfully. If [`false`](../../Swift/false.md), the app or device is not eligible for Single App mode or there was some other error.
 
 ## See Also
 
-- [static func focusedElement(using: UIAccessibility.AssistiveTechnologyIdentifier?) -> Any?](uiaccessibility/focusedelement(using:).md)
+### Convenience functions
+- [static func focusedElement(using: UIAccessibility.AssistiveTechnologyIdentifier?) -> Any?](./focusedelement%28using%29.md)
   Returns the accessibility element that’s currently in focus by the specified assistive app.
-- [static var hearingDevicePairedEar: UIAccessibility.HearingDeviceEar](uiaccessibility/hearingdevicepairedear.md)
+- [static var hearingDevicePairedEar: UIAccessibility.HearingDeviceEar](./hearingdevicepairedear.md)
   The current pairing status of Made for iPhone hearing devices.
-- [UIAccessibility.HearingDeviceEar](uiaccessibility/hearingdeviceear.md)
+- [UIAccessibility.HearingDeviceEar](./hearingdeviceear.md)
   Constants that specify how a person is using a hearing device.
-- [static func registerGestureConflictWithZoom()](uiaccessibility/registergestureconflictwithzoom.md)
+- [static func registerGestureConflictWithZoom()](./registergestureconflictwithzoom%28%29.md)
   Warns users that app-specific gestures conflict with the system-defined Zoom accessibility gestures.
-- [static func zoomFocusChanged(zoomType: UIAccessibility.ZoomType, toFrame: CGRect, in: UIView)](uiaccessibility/zoomfocuschanged(zoomtype:toframe:in:).md)
+- [static func zoomFocusChanged(zoomType: UIAccessibility.ZoomType, toFrame: CGRect, in: UIView)](./zoomfocuschanged%28zoomtype,toframe,in%29.md)
   Notifies the system when the app’s focus changes to a new location.
 
 

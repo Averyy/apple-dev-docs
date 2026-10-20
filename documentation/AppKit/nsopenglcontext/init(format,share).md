@@ -1,17 +1,24 @@
 # init(format:share:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an OpenGL context object initialized with the specified pixel format information.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: Please use Metal or MetalKit.
 
 ## Declaration
 
 ```swift
 init?(format: NSOpenGLPixelFormat, share: NSOpenGLContext?)
+```
+
+```objc
+- (instancetype) initWithFormat:(NSOpenGLPixelFormat *) format shareContext:(NSOpenGLContext *) share;
 ```
 
 #### Return Value
@@ -35,7 +42,8 @@ Pixel formats are incompatible if they use different renderers; this can happen 
 
 ## See Also
 
-- [init?(cglContextObj: CGLContextObj)](nsopenglcontext/init(cglcontextobj:)-30lqr.md)
+### Creating Contexts
+- [init?(cglContextObj: CGLContextObj)](./init%28cglcontextobj%29-30lqr.md)
   Initializes and returns an OpenGL context object using an existing CGL context.
 
 

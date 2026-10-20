@@ -1,7 +1,8 @@
 # audioAttributes
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio rendition attributes for the variant.
 
@@ -20,17 +21,22 @@ The audio rendition attributes for the variant.
 var audioAttributes: AVAssetVariant.AudioAttributes? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) AVAssetVariantAudioAttributes * audioAttributes;
+```
+
 #### Discussion
 
 This property value is `nil` if the variant defines no audio attributes.
 
 ## See Also
 
-- [AVAssetVariant.AudioAttributes](avassetvariant/audioattributes-swift.class.md)
+### Configuring attributes
+- [AVAssetVariant.AudioAttributes](./audioattributes-swift.class.md)
   An object that defines the audio attributes for an asset variant.
-- [var videoAttributes: AVAssetVariant.VideoAttributes?](avassetvariant/videoattributes-swift.property.md)
+- [var videoAttributes: AVAssetVariant.VideoAttributes?](./videoattributes-swift.property.md)
   The video rendition attributes for the variant.
-- [AVAssetVariant.VideoAttributes](avassetvariant/videoattributes-swift.class.md)
+- [AVAssetVariant.VideoAttributes](./videoattributes-swift.class.md)
   An object that defines the video attributes for an asset variant.
 
 

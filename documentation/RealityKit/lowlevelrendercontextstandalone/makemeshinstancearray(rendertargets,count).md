@@ -1,7 +1,8 @@
 # makeMeshInstanceArray(renderTargets:count:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a fixed-capacity ordered collection of mesh instances for the given render targets.
 
@@ -19,13 +20,13 @@ final func makeMeshInstanceArray(renderTargets: LowLevelRenderTarget.DescriptorS
 
 #### Return Value
 
-A newly created [`LowLevelMeshInstanceArray`](lowlevelmeshinstancearray.md).
+A newly created [`LowLevelMeshInstanceArray`](../lowlevelmeshinstancearray.md).
 
 #### Discussion
 
-Pass the resulting array to [`setMeshInstances(_:at:)`](lowlevelrenderer/setmeshinstances(_:at:).md) to submit it for rendering.
+Pass the resulting array to [`setMeshInstances(_:at:)`](../lowlevelrenderer/setmeshinstances%28_,at%29.md) to submit it for rendering.
 
-> **Note**: An error if allocation fails.
+> **Throws**: An error if allocation fails.
 
 ## Parameters
 

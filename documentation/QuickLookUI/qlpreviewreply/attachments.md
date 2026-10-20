@@ -1,7 +1,8 @@
 # attachments
 
 **Framework**: Quick Look UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attachments for a preview reply that provide additional data for the system to display the preview.
 
@@ -14,15 +15,20 @@ The attachments for a preview reply that provide additional data for the system 
 var attachments: [String : QLPreviewReplyAttachment] { get set }
 ```
 
+```objc
+@property (copy) NSDictionary<NSString *,QLPreviewReplyAttachment *> * attachments;
+```
+
 #### Discussion
 
-When providing an HTML reply, use the string associated with the [`QLPreviewReplyAttachment`](qlpreviewreplyattachment.md) prefixed with `cid:` to reference the content within the HTML.
+When providing an HTML reply, use the string associated with the [`QLPreviewReplyAttachment`](../qlpreviewreplyattachment.md) prefixed with `cid:` to reference the content within the HTML.
 
 ## See Also
 
-- [var title: String](qlpreviewreply/title.md)
+### Inspecting a preview reply
+- [var title: String](./title.md)
   The title for the system to display with the preview.
-- [var stringEncoding: String.Encoding](qlpreviewreply/stringencoding-8ahm8.md)
+- [var stringEncoding: String.Encoding](./stringencoding-8ahm8.md)
 
 
 ---

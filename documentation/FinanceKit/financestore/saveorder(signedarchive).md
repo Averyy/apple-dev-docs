@@ -1,7 +1,8 @@
 # saveOrder(signedArchive:)
 
 **Framework**: FinanceKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an order to the store or updates an existing order.
 
@@ -22,7 +23,8 @@ func saveOrder(signedArchive: Data) async throws -> FinanceStore.SaveOrderResult
 
 ## See Also
 
-- [struct FullyQualifiedOrderIdentifier](fullyqualifiedorderidentifier.md)
+### Orders
+- [struct FullyQualifiedOrderIdentifier](../fullyqualifiedorderidentifier.md)
   A structure that specifies the characteristics of an order.
 
 

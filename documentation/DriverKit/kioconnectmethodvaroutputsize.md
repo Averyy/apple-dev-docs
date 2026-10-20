@@ -1,17 +1,18 @@
 # kIOConnectMethodVarOutputSize
 
 **Framework**: DriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIOConnectMethodVarOutputSize
 ```
 

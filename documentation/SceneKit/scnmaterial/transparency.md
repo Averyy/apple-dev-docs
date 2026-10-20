@@ -1,18 +1,19 @@
 # transparency
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The uniform transparency of the material. Animatable.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,24 +21,29 @@ The uniform transparency of the material. Animatable.
 var transparency: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat transparency;
+```
+
 #### Discussion
 
-SceneKit determines the total opacity of each rendered pixel in a surface by multiplying the color from the material’s [`transparent`](scnmaterial/transparent.md) property by the value of this property. Then, the material’s [`transparencyMode`](scnmaterial/transparencymode.md) property determines how pixels from the material are blended into the scene.
+SceneKit determines the total opacity of each rendered pixel in a surface by multiplying the color from the material’s [`transparent`](./transparent.md) property by the value of this property. Then, the material’s [`transparencyMode`](./transparencymode.md) property determines how pixels from the material are blended into the scene.
 
-You can also uniformly adjust the opacity of all content attached to a node using its [`opacity`](scnnode/opacity.md) property.
+You can also uniformly adjust the opacity of all content attached to a node using its [`opacity`](../scnnode/opacity.md) property.
 
-You can animate changes to this property’s value. See [`Animating SceneKit Content`](animating-scenekit-content.md).
+You can animate changes to this property’s value. See [Animating SceneKit Content](../animating-scenekit-content.md).
 
 ## See Also
 
-- [var transparencyMode: SCNTransparencyMode](scnmaterial/transparencymode.md)
+### Managing Opacity and Blending
+- [var transparencyMode: SCNTransparencyMode](./transparencymode.md)
   The mode SceneKit uses to calculate transparency for the material.
-- [enum SCNTransparencyMode](scntransparencymode.md)
-  The modes SceneKit uses to calculate the opacity of pixels rendered with a material, used by the [`transparencyMode`](scnmaterial/transparencymode.md) property.
-- [var blendMode: SCNBlendMode](scnmaterial/blendmode.md)
+- [enum SCNTransparencyMode](../scntransparencymode.md)
+  The modes SceneKit uses to calculate the opacity of pixels rendered with a material, used by the [`transparencyMode`](./transparencymode.md) property.
+- [var blendMode: SCNBlendMode](./blendmode.md)
   The mode that determines how pixel colors rendered using this material blend with other pixel colors in the rendering target.
-- [enum SCNBlendMode](scnblendmode.md)
-  Modes that describe how SceneKit blends source colors rendered using a material with destination colors already in a rendering target, used by the [`blendMode`](scnmaterial/blendmode.md) property.
+- [enum SCNBlendMode](../scnblendmode.md)
+  Modes that describe how SceneKit blends source colors rendered using a material with destination colors already in a rendering target, used by the [`blendMode`](./blendmode.md) property.
 
 
 ---

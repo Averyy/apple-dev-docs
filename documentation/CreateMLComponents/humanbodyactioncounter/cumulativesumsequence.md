@@ -1,7 +1,8 @@
 # HumanBodyActionCounter.CumulativeSumSequence
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Cumulative human body action count sequence.
 
@@ -22,23 +23,24 @@ struct CumulativeSumSequence
 ## Topics
 
 ### Getting the count
-- [var count: Int?](humanbodyactioncounter/cumulativesumsequence/count.md)
+- [var count: Int?](./cumulativesumsequence/count.md)
   The estimated number of predictions.
 ### Creating an iterator
-- [func makeAsyncIterator() -> HumanBodyActionCounter.CumulativeSumSequence.Iterator](humanbodyactioncounter/cumulativesumsequence/makeasynciterator.md)
+- [func makeAsyncIterator() -> HumanBodyActionCounter.CumulativeSumSequence.Iterator](./cumulativesumsequence/makeasynciterator%28%29.md)
   Constructs an iterator.
-- [HumanBodyActionCounter.CumulativeSumSequence.Iterator](humanbodyactioncounter/cumulativesumsequence/iterator.md)
+- [HumanBodyActionCounter.CumulativeSumSequence.Iterator](./cumulativesumsequence/iterator.md)
   An async iterator of cumulative count sequence.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [TemporalSequence](temporalsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
+- [TemporalSequence](../temporalsequence.md)
 
 ## See Also
 
-- [func applied<S>(to: S, eventHandler: EventHandler?) async throws -> HumanBodyActionCounter.OutputSequence](humanbodyactioncounter/applied(to:eventhandler:).md)
+### Performing the transformation
+- [func applied<S>(to: S, eventHandler: EventHandler?) async throws -> HumanBodyActionCounter.OutputSequence](./applied%28to,eventhandler%29.md)
   Predicts cumulative human body action counts from a sequence of human body pose windows.
 
 

@@ -1,7 +1,8 @@
 # totalActivityDuration
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Access the total activity time during the activity segment.
 
@@ -18,11 +19,12 @@ var totalActivityDuration: TimeInterval
 
 #### Discussion
 
-This value represents the total amount of time the device’s screen remained on during [`dateInterval`](deviceactivitydata/activitysegment/dateinterval.md).
+This value represents the total amount of time the device’s screen remained on during [`dateInterval`](./dateinterval.md).
 
 ## See Also
 
-- [var longestActivity: DateInterval?](deviceactivitydata/activitysegment/longestactivity.md)
+### Measuring activity
+- [var longestActivity: DateInterval?](./longestactivity.md)
   Access the date interval of the longest activity session during the activity segment.
 
 

@@ -1,14 +1,15 @@
 # l1_dcache_size
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 unsigned long l1_dcache_size;
 ```
 

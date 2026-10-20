@@ -1,12 +1,15 @@
 # pixelFormat
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The [`NSOpenGLPixelFormat`](nsopenglpixelformat.md) object associated with the receiver.
+The [`NSOpenGLPixelFormat`](../nsopenglpixelformat.md) object associated with the receiver.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: Please use MTKView instead.
 
 ## Declaration
 
@@ -14,12 +17,18 @@ The [`NSOpenGLPixelFormat`](nsopenglpixelformat.md) object associated with the r
 var pixelFormat: NSOpenGLPixelFormat? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSOpenGLPixelFormat * pixelFormat;
+```
+
 ## See Also
 
-- [init?(frame: NSRect, pixelFormat: NSOpenGLPixelFormat?)](nsopenglview/init(frame:pixelformat:).md)
+### Related Documentation
+- [init?(frame: NSRect, pixelFormat: NSOpenGLPixelFormat?)](./init%28frame,pixelformat%29.md)
   Returns an `NSOpenGLView` object initialized with the specified frame rectangle and pixel format.
-- [class func defaultPixelFormat() -> NSOpenGLPixelFormat](nsopenglview/defaultpixelformat.md)
-  Returns a default [`NSOpenGLPixelFormat`](nsopenglpixelformat.md) object.
+### Managing the NSOpenGLPixelFormat
+- [class func defaultPixelFormat() -> NSOpenGLPixelFormat](./defaultpixelformat%28%29.md)
+  Returns a default [`NSOpenGLPixelFormat`](../nsopenglpixelformat.md) object.
 
 
 ---

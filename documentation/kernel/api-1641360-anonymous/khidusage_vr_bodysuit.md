@@ -1,14 +1,15 @@
 # kHIDUsage_VR_BodySuit
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_VR_BodySuit = 0x02
 ```
 

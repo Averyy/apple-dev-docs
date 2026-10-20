@@ -1,7 +1,8 @@
 # xpc_connection_send_message_with_reply_sync(_:_:)
 
 **Framework**: XPC  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sends a message over the connection and blocks the caller until it receives a reply.
 
@@ -10,7 +11,7 @@ Sends a message over the connection and blocks the caller until it receives a re
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Sends a message over the connection and blocks the caller until it receives a re
 func xpc_connection_send_message_with_reply_sync(_ connection: xpc_connection_t, _ message: xpc_object_t) -> xpc_object_t
 ```
 
+```c
+extern xpc_object_txpc_connection_send_message_with_reply_sync(xpc_connection_t connection, xpc_object_t message);
+```
+
 #### Return Value
 
-The message that the remote service sends in reply to the original message. If the remote service exits prematurely before receiving the reply, the [`XPC_ERROR_CONNECTION_INTERRUPTED`](xpc_error_connection_interrupted-swift.var.md) error returns. If the connection becomes invalid before the remote service sends the message, the [`XPC_ERROR_CONNECTION_INVALID`](xpc_error_connection_invalid-swift.var.md) error returns.
+The message that the remote service sends in reply to the original message. If the remote service exits prematurely before receiving the reply, the [`XPC_ERROR_CONNECTION_INTERRUPTED`](./xpc_error_connection_interrupted-swift.var.md) error returns. If the connection becomes invalid before the remote service sends the message, the [`XPC_ERROR_CONNECTION_INVALID`](./xpc_error_connection_invalid-swift.var.md) error returns.
 
 #### Discussion
 
@@ -30,7 +35,7 @@ You are responsible for releasing the returned object.
 
 #### Discussion
 
-This API supports priority inversion avoidance, so use it instead of combining [`xpc_connection_send_message_with_reply(_:_:_:_:)`](xpc_connection_send_message_with_reply(_:_:_:_:).md) with a semaphore.
+This API supports priority inversion avoidance, so use it instead of combining [`xpc_connection_send_message_with_reply(_:_:_:_:)`](./xpc_connection_send_message_with_reply%28_,_,_,_%29.md) with a semaphore.
 
 Invoking this API from a queue that is a part of the target queue hierarchy results in deadlocks under certain conditions.
 
@@ -43,13 +48,14 @@ Be judicious about your use of this API. It can block indefinitely, so if you ar
 
 ## See Also
 
-- [func xpc_connection_send_message(xpc_connection_t, xpc_object_t)](xpc_connection_send_message(_:_:).md)
+### Messages
+- [func xpc_connection_send_message(xpc_connection_t, xpc_object_t)](./xpc_connection_send_message%28_,_%29.md)
   Sends a message over the connection to the destination service.
-- [func xpc_connection_send_barrier(xpc_connection_t, () -> Void)](xpc_connection_send_barrier(_:_:).md)
+- [func xpc_connection_send_barrier(xpc_connection_t, () -> Void)](./xpc_connection_send_barrier%28_,_%29.md)
   Issues a barrier against the connection’s message-send activity.
-- [func xpc_connection_send_message_with_reply(xpc_connection_t, xpc_object_t, dispatch_queue_t?, (xpc_object_t) -> Void)](xpc_connection_send_message_with_reply(_:_:_:_:).md)
+- [func xpc_connection_send_message_with_reply(xpc_connection_t, xpc_object_t, dispatch_queue_t?, (xpc_object_t) -> Void)](./xpc_connection_send_message_with_reply%28_,_,_,_%29.md)
   Sends a message over the connection to the destination service and associates a handler to invoke when the remote service sends a reply message.
-- [func xpc_main(xpc_connection_handler_t) -> Never](xpc_main(_:).md)
+- [func xpc_main(xpc_connection_handler_t) -> Never](./xpc_main%28_%29.md)
   Starts listening for incoming connections and processes them with the specified event handler.
 
 

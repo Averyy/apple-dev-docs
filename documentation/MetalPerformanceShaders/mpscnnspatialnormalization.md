@@ -1,7 +1,8 @@
 # MPSCNNSpatialNormalization
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A spatial normalization kernel.
 
@@ -19,82 +20,87 @@ A spatial normalization kernel.
 class MPSCNNSpatialNormalization
 ```
 
+```objc
+@interface MPSCNNSpatialNormalization : MPSCNNKernel
+```
+
 #### Overview
 
 The spatial normalization for a feature channel applies the kernel over local regions which extend spatially, but are in separate feature channels (i.e., they have the shape `1 x kernel width x kernel height`).
 
 For each feature channel, the function computes the sum of squares of `X` inside each rectangle, `N2(i,j)`. It then divides each element of `X` as follows:
 
-![Y(i,j) = X(i,j) / (delta + alpha/(kw*kh) * N2(i,j))^beta](/images/com.apple.metalperformanceshaders/media-2903551@2x.png)
+![Y(i,j) = X(i,j) / (delta + alpha/(kw*kh) * N2(i,j))^beta](https://developer.apple.com/tutorials/images/com.apple.metalperformanceshaders/media-2903551@2x.png)
 
-Where `kw` and `kh` are the values of the `kernelWidth` and `kernelHeight` properties, respectively. It is your responsibility to ensure that the combination of the values of the [`delta`](mpscnnspatialnormalization/delta.md) and [`alpha`](mpscnnspatialnormalization/alpha.md) `kernelWidth` `kernelHeight` properties does not result in a situation where the denominator becomes zero (in such situations the resulting pixel-value is undefined).
+Where `kw` and `kh` are the values of the `kernelWidth` and `kernelHeight` properties, respectively. It is your responsibility to ensure that the combination of the values of the [`delta`](./mpscnnspatialnormalization/delta.md) and [`alpha`](./mpscnnspatialnormalization/alpha.md) `kernelWidth` `kernelHeight` properties does not result in a situation where the denominator becomes zero (in such situations the resulting pixel-value is undefined).
 
-> **Note**:  The encoding methods in the [`MPSUnaryImageKernel`](mpsunaryimagekernel.md) class can be used to encode an [`MPSCNNSpatialNormalization`](mpscnnspatialnormalization.md) object to a [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) object.
+> **Note**:  The encoding methods in the [`MPSUnaryImageKernel`](./mpsunaryimagekernel.md) class can be used to encode an [`MPSCNNSpatialNormalization`](./mpscnnspatialnormalization.md) object to a [`MTLCommandBuffer`](../Metal/mtlcommandbuffer.md) object.
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnspatialnormalization/init(coder:device:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpscnnspatialnormalization/init%28coder,device%29.md)
   Initializes a spatial normalization kernel.
-- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)](mpscnnspatialnormalization/init(device:kernelwidth:kernelheight:).md)
+- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)](./mpscnnspatialnormalization/init%28device,kernelwidth,kernelheight%29.md)
   Initializes a spatial normalization kernel.
 ### Instance Properties
-- [var alpha: Float](mpscnnspatialnormalization/alpha.md)
+- [var alpha: Float](./mpscnnspatialnormalization/alpha.md)
   The “alpha” variable of the kernel function.
-- [var beta: Float](mpscnnspatialnormalization/beta.md)
+- [var beta: Float](./mpscnnspatialnormalization/beta.md)
   The “beta” variable of the kernel function.
-- [var delta: Float](mpscnnspatialnormalization/delta.md)
+- [var delta: Float](./mpscnnspatialnormalization/delta.md)
   The “delta” variable of the kernel function.
 ### Instance Methods
-- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)](mpscnnspatialnormalization/init(device:kernelwidth:kernelheight:).md)
+- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)](./mpscnnspatialnormalization/init%28device,kernelwidth,kernelheight%29.md)
   Initializes a spatial normalization kernel.
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNKernel](mpscnnkernel.md)
+- [MPSCNNKernel](./mpscnnkernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSCNNCrossChannelNormalization](mpscnncrosschannelnormalization.md)
+### Normalization Layers
+- [class MPSCNNCrossChannelNormalization](./mpscnncrosschannelnormalization.md)
   A normalization kernel applied across feature channels.
-- [class MPSCNNCrossChannelNormalizationGradient](mpscnncrosschannelnormalizationgradient.md)
+- [class MPSCNNCrossChannelNormalizationGradient](./mpscnncrosschannelnormalizationgradient.md)
   A gradient normalization kernel applied across feature channels.
-- [class MPSCNNLocalContrastNormalization](mpscnnlocalcontrastnormalization.md)
+- [class MPSCNNLocalContrastNormalization](./mpscnnlocalcontrastnormalization.md)
   A local-contrast normalization kernel.
-- [class MPSCNNLocalContrastNormalizationGradient](mpscnnlocalcontrastnormalizationgradient.md)
+- [class MPSCNNLocalContrastNormalizationGradient](./mpscnnlocalcontrastnormalizationgradient.md)
   A gradient local-contrast normalization kernel.
-- [class MPSCNNSpatialNormalizationGradient](mpscnnspatialnormalizationgradient.md)
+- [class MPSCNNSpatialNormalizationGradient](./mpscnnspatialnormalizationgradient.md)
   A gradient spatial normalization kernel.
-- [class MPSCNNBatchNormalization](mpscnnbatchnormalization.md)
+- [class MPSCNNBatchNormalization](./mpscnnbatchnormalization.md)
   A batch normalization kernel.
-- [class MPSCNNBatchNormalizationGradient](mpscnnbatchnormalizationgradient.md)
+- [class MPSCNNBatchNormalizationGradient](./mpscnnbatchnormalizationgradient.md)
   A gradient batch normalization kernel.
-- [class MPSCNNBatchNormalizationState](mpscnnbatchnormalizationstate.md)
+- [class MPSCNNBatchNormalizationState](./mpscnnbatchnormalizationstate.md)
   An object that stores data required to execute batch normalization.
-- [class MPSCNNNormalizationMeanAndVarianceState](mpscnnnormalizationmeanandvariancestate.md)
+- [class MPSCNNNormalizationMeanAndVarianceState](./mpscnnnormalizationmeanandvariancestate.md)
   An object that stores mean and variance terms used to execute batch normalization.
-- [class MPSCNNBatchNormalizationStatistics](mpscnnbatchnormalizationstatistics.md)
+- [class MPSCNNBatchNormalizationStatistics](./mpscnnbatchnormalizationstatistics.md)
   An object that stores statistics required to execute batch normalization.
-- [class MPSCNNBatchNormalizationStatisticsGradient](mpscnnbatchnormalizationstatisticsgradient.md)
+- [class MPSCNNBatchNormalizationStatisticsGradient](./mpscnnbatchnormalizationstatisticsgradient.md)
   An object that stores the gradient of the loss function with respect to the batch statistics and batch normalization weights.
-- [class MPSCNNInstanceNormalization](mpscnninstancenormalization.md)
+- [class MPSCNNInstanceNormalization](./mpscnninstancenormalization.md)
   An instance normalization kernel.
-- [class MPSCNNInstanceNormalizationGradient](mpscnninstancenormalizationgradient.md)
+- [class MPSCNNInstanceNormalizationGradient](./mpscnninstancenormalizationgradient.md)
   A gradient instance normalization kernel.
-- [class MPSCNNInstanceNormalizationGradientState](mpscnninstancenormalizationgradientstate.md)
+- [class MPSCNNInstanceNormalizationGradientState](./mpscnninstancenormalizationgradientstate.md)
   An object that stores information required to execute a gradient pass for instance normalization.
-- [class MPSCNNNormalizationGammaAndBetaState](mpscnnnormalizationgammaandbetastate.md)
+- [class MPSCNNNormalizationGammaAndBetaState](./mpscnnnormalizationgammaandbetastate.md)
   An object that stores gamma and beta terms used to apply a scale and bias in instance- or batch-normalization operations.
 
 

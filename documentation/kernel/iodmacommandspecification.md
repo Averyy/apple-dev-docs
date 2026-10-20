@@ -9,7 +9,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct IODMACommandSpecification {
     ...
 };
@@ -18,8 +18,8 @@ struct IODMACommandSpecification {
 ## Topics
 
 ### Instance Properties
-- [maxAddressBits](iodmacommandspecification/3645722-maxaddressbits.md)
-- [options](iodmacommandspecification/3645723-options.md)
+- [maxAddressBits](./iodmacommandspecification/api-3645722-maxaddressbits.md)
+- [options](./iodmacommandspecification/api-3645723-options.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # participantLookupInfo
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Lookup information for the requester.
 
@@ -21,9 +22,13 @@ Lookup information for the requester.
 var participantLookupInfo: CKUserIdentity.LookupInfo { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) CKUserIdentityLookupInfo * participantLookupInfo;
+```
+
 #### Discussion
 
-Use this lookup info with [`CKFetchShareParticipantsOperation`](ckfetchshareparticipantsoperation.md) to fetch the corresponding participant. Once fetched, add the participant to the share to approve the requester.
+Use this lookup info with [`CKFetchShareParticipantsOperation`](../../ckfetchshareparticipantsoperation.md) to fetch the corresponding participant. Once fetched, add the participant to the share to approve the requester.
 
 
 ---

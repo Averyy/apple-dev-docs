@@ -1,7 +1,8 @@
 # UICloudSharingController
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A view controller that presents standard screens for adding and removing people from a CloudKit share record.
 
@@ -18,11 +19,15 @@ A view controller that presents standard screens for adding and removing people 
 class UICloudSharingController
 ```
 
+```objc
+@interface UICloudSharingController : UIViewController
+```
+
 #### Overview
 
-CloudKit Sharing provides real-time collaboration between one or more people using your app. A user takes certain steps to make collaboration possible, from inviting people to participate in the collaboration to setting restrictions on what participants can do. To provide these steps to a user, you must make changes to your app. With [`UICloudSharingController`](uicloudsharingcontroller.md), the changes require minimum effort.
+CloudKit Sharing provides real-time collaboration between one or more people using your app. A user takes certain steps to make collaboration possible, from inviting people to participate in the collaboration to setting restrictions on what participants can do. To provide these steps to a user, you must make changes to your app. With [`UICloudSharingController`](./uicloudsharingcontroller.md), the changes require minimum effort.
 
-The [`UICloudSharingController`](uicloudsharingcontroller.md) view controller class provides screens, presented within your app, for managing the people, permissions, and access rights associated with a [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) record. The controller, along with a few lines of your own code, facilitates the setup and management of online sharing between users, making it possible for a user to:
+The [`UICloudSharingController`](./uicloudsharingcontroller.md) view controller class provides screens, presented within your app, for managing the people, permissions, and access rights associated with a [`CKShare`](../CloudKit/ckshare.md) record. The controller, along with a few lines of your own code, facilitates the setup and management of online sharing between users, making it possible for a user to:
 
 - Invite people to view or collaborate on a shared record
 - Set the access rights determining who can access the shared record (only people invited or anyone with the share link)
@@ -31,17 +36,17 @@ The [`UICloudSharingController`](uicloudsharingcontroller.md) view controller cl
 - Stop participating (if the user is a participant)
 - Stop sharing with all participants (if the user is the owner of the shared record)
 
-The controller provides these different actions to the user based on the user’s role. If the user is the individual sharing the record (where the record is an instance of [`CKRecord`](https://developer.apple.com/documentation/cloudkit/ckrecord) representing the data to share), then the user is called the *owner*. A user who has access to the shared record and isn’t the owner is known as a *participant*. There’s no need for you to specify the user’s role. The controller determines the role automatically.
+The controller provides these different actions to the user based on the user’s role. If the user is the individual sharing the record (where the record is an instance of [`CKRecord`](../CloudKit/ckrecord.md) representing the data to share), then the user is called the *owner*. A user who has access to the shared record and isn’t the owner is known as a *participant*. There’s no need for you to specify the user’s role. The controller determines the role automatically.
 
-##### Inviting Participants to a New Share
+##### Inviting participants to a new share
 
-The user who owns the data, represented as a [`CKRecord`](https://developer.apple.com/documentation/cloudkit/ckrecord), can invite others to view or collaborate on changes to the data. To invite participants, the owner sends the share link to the other people. To provide this capability in your app, create an instance of [`UICloudSharingController`](uicloudsharingcontroller.md) using the [`init(preparationHandler:)`](uicloudsharingcontroller/init(preparationhandler:).md) initializer method. You use this initializer method only when the owner isn’t already sharing the record.
+The user who owns the data, represented as a [`CKRecord`](../CloudKit/ckrecord.md), can invite others to view or collaborate on changes to the data. To invite participants, the owner sends the share link to the other people. To provide this capability in your app, create an instance of [`UICloudSharingController`](./uicloudsharingcontroller.md) using the [`init(preparationHandler:)`](./uicloudsharingcontroller/init%28preparationhandler%29.md) initializer method. You use this initializer method only when the owner isn’t already sharing the record.
 
 After creating the controller, you present it. The controller displays the Invitation screen. Using this screen, the owner can add participants and set restrictions on the shared record. Once done, the owner sends the share link to the participants.
 
-However, before the owner can send the share link, CloudKit must generate the link. This link generation happens when saving a new [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) record, but when do you save it? You save the share record in the `preparationHandler:`.
+However, before the owner can send the share link, CloudKit must generate the link. This link generation happens when saving a new [`CKShare`](../CloudKit/ckshare.md) record, but when do you save it? You save the share record in the `preparationHandler:`.
 
-After the owner’s selections are complete, the controller invokes the preparation handler provided in the initializer call. In the handler, you create a new [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) instance, initializing it with the [`CKRecord`](https://developer.apple.com/documentation/cloudkit/ckrecord) instance that represents the data to share. (This record is called the “root record.”) Next, you save the share and root records using [`CKModifyRecordsOperation`](https://developer.apple.com/documentation/cloudkit/ckmodifyrecordsoperation). Finally, you return the shared record to the controller or return an error if the save failed. See the following code for an example of this in action.
+After the owner’s selections are complete, the controller invokes the preparation handler provided in the initializer call. In the handler, you create a new [`CKShare`](../CloudKit/ckshare.md) instance, initializing it with the [`CKRecord`](../CloudKit/ckrecord.md) instance that represents the data to share. (This record is called the “root record.”) Next, you save the share and root records using [`CKModifyRecordsOperation`](../CloudKit/ckmodifyrecordsoperation.md). Finally, you return the shared record to the controller or return an error if the save failed. See the following code for an example of this in action.
 
 **Swift**:
 
@@ -134,9 +139,9 @@ func share(rootRecord: CKRecord, completion: @escaping (CKShare?, CKContainer?, 
 }
 ```
 
-##### Adding and Removing Participants From an Existing Share
+##### Adding and removing participants from an existing share
 
-To allow the owner of an existing share to manage the participants, create the [`UICloudSharingController`](uicloudsharingcontroller.md) instance using the [`init(share:container:)`](uicloudsharingcontroller/init(share:container:).md) initializer method.
+To allow the owner of an existing share to manage the participants, create the [`UICloudSharingController`](./uicloudsharingcontroller.md) instance using the [`init(share:container:)`](./uicloudsharingcontroller/init%28share,container%29.md) initializer method.
 
 After you create the controller, present it to show the People screen. From this screen, the owner can:
 
@@ -145,11 +150,11 @@ After you create the controller, present it to show the People screen. From this
 - Change the share’s permissions from read-only to read/write, or vice versa
 - Stop sharing with all participants
 
-> **Note**:  If all participants have left the share, the controller presents the Invitation screen, not the People screen, when [`init(share:container:)`](uicloudsharingcontroller/init(share:container:).md) is used to create the controller instance.
+> **Note**:  If all participants have left the share, the controller presents the Invitation screen, not the People screen, when [`init(share:container:)`](./uicloudsharingcontroller/init%28share,container%29.md) is used to create the controller instance.
 
-##### Viewing Participants and Leaving a Share
+##### Viewing participants and leaving a share
 
-To allow a participant to view the list of participants and remove themselves from a share, create the [`UICloudSharingController`](uicloudsharingcontroller.md) instance using the [`init(share:container:)`](uicloudsharingcontroller/init(share:container:).md) initializer method.
+To allow a participant to view the list of participants and remove themselves from a share, create the [`UICloudSharingController`](./uicloudsharingcontroller.md) instance using the [`init(share:container:)`](./uicloudsharingcontroller/init%28share,container%29.md) initializer method.
 
 After you create the controller, present it to show the People screen. From this screen, the participant can:
 
@@ -157,13 +162,13 @@ After you create the controller, present it to show the People screen. From this
 - Copy the share link to send to others (if the owner has made the share publicly available)
 - Leave the share
 
-##### Presenting the Controller
+##### Presenting the controller
 
-[`UICloudSharingController`](uicloudsharingcontroller.md) is designed for use in a popover. Therefore, you should always set the [`popoverPresentationController`](uiviewcontroller/popoverpresentationcontroller.md) source information before presenting the Cloud sharing controller. Doing this ensures that the [`UICloudSharingController`](uicloudsharingcontroller.md) instance is displayed properly across all device types.
+[`UICloudSharingController`](./uicloudsharingcontroller.md) is designed for use in a popover. Therefore, you should always set the [`popoverPresentationController`](./uiviewcontroller/popoverpresentationcontroller.md) source information before presenting the Cloud sharing controller. Doing this ensures that the [`UICloudSharingController`](./uicloudsharingcontroller.md) instance is displayed properly across all device types.
 
 > ❗ **Important**:  Presenting the Cloud sharing controller in an iPad app without setting the popover presentation controller causes a run-time error.
 
-The following code shows an example of setting the [`popoverPresentationController`](uiviewcontroller/popoverpresentationcontroller.md) before presenting a Cloud sharing controller.
+The following code shows an example of setting the [`popoverPresentationController`](./uiviewcontroller/popoverpresentationcontroller.md) before presenting a Cloud sharing controller.
 
 **Swift**:
 
@@ -209,62 +214,62 @@ func presentCloudSharingController(_ sender: Any) {  guard
 }
 ```
 
-##### Configuring the Controller
+##### Configuring the controller
 
-By default, the [`UICloudSharingController`](uicloudsharingcontroller.md) user interface displays a generic thumbnail image and title to the user. You can, however, change these to app-specific representations of the shared record. You accomplish this by setting the controller’s [`delegate`](uicloudsharingcontroller/delegate.md) property to an object that conforms to the [`UICloudSharingControllerDelegate`](uicloudsharingcontrollerdelegate.md) protocol, making sure to implement the [`itemThumbnailData(for:)`](uicloudsharingcontrollerdelegate/itemthumbnaildata(for:).md) and [`itemTitle(for:)`](uicloudsharingcontrollerdelegate/itemtitle(for:).md) delegate methods.
+By default, the [`UICloudSharingController`](./uicloudsharingcontroller.md) user interface displays a generic thumbnail image and title to the user. You can, however, change these to app-specific representations of the shared record. You accomplish this by setting the controller’s [`delegate`](./uicloudsharingcontroller/delegate.md) property to an object that conforms to the [`UICloudSharingControllerDelegate`](./uicloudsharingcontrollerdelegate.md) protocol, making sure to implement the [`itemThumbnailData(for:)`](./uicloudsharingcontrollerdelegate/itemthumbnaildata%28for%29.md) and [`itemTitle(for:)`](./uicloudsharingcontrollerdelegate/itemtitle%28for%29.md) delegate methods.
 
-You can also show or hide the permission and access options presented to the user by setting the [`availablePermissions`](uicloudsharingcontroller/availablepermissions.md) property on the [`UICloudSharingController`](uicloudsharingcontroller.md) instance.
+You can also show or hide the permission and access options presented to the user by setting the [`availablePermissions`](./uicloudsharingcontroller/availablepermissions.md) property on the [`UICloudSharingController`](./uicloudsharingcontroller.md) instance.
 
 ## Topics
 
 ### Creating the cloud sharing controller
-- [init(share: CKShare, container: CKContainer)](uicloudsharingcontroller/init(share:container:).md)
+- [init(share: CKShare, container: CKContainer)](./uicloudsharingcontroller/init%28share,container%29.md)
   Initializes the CloudKit sharing view controller with a CloudKit share record and container to manage participants and restrictions.
-- [init(preparationHandler: (UICloudSharingController, (CKShare?, CKContainer?, (any Error)?) -> Void) -> Void)](uicloudsharingcontroller/init(preparationhandler:).md)
+- [init(preparationHandler: (UICloudSharingController, (CKShare?, CKContainer?, (any Error)?) -> Void) -> Void)](./uicloudsharingcontroller/init%28preparationhandler%29.md)
   Initializes the CloudKit sharing controller with a preparation handler intending to save a new share record.
 ### Customizing the cloud sharing controller behavior
-- [var delegate: (any UICloudSharingControllerDelegate)?](uicloudsharingcontroller/delegate.md)
+- [var delegate: (any UICloudSharingControllerDelegate)?](./uicloudsharingcontroller/delegate.md)
   A reference to an object that conforms to the CloudKit sharing controller delegate protocol.
-- [protocol UICloudSharingControllerDelegate](uicloudsharingcontrollerdelegate.md)
+- [protocol UICloudSharingControllerDelegate](./uicloudsharingcontrollerdelegate.md)
   The protocol you implement to provide additional information to, and receive notifications from, the CloudKit sharing controller.
 ### Configuring the permissions
-- [var availablePermissions: UICloudSharingController.PermissionOptions](uicloudsharingcontroller/availablepermissions.md)
+- [var availablePermissions: UICloudSharingController.PermissionOptions](./uicloudsharingcontroller/availablepermissions.md)
   A combination of permission and access options made available to the user when viewing screens presented by the CloudKit sharing controller.
-- [UICloudSharingController.PermissionOptions](uicloudsharingcontroller/permissionoptions.md)
+- [UICloudSharingController.PermissionOptions](./uicloudsharingcontroller/permissionoptions.md)
   A set of options that determine the permission options available to the user when viewing the Cloud sharing controller screens.
 ### Getting the share
-- [var share: CKShare?](uicloudsharingcontroller/share.md)
+- [var share: CKShare?](./uicloudsharingcontroller/share.md)
   A reference to the CloudKit share record used by the CloudKit sharing controller.
 ### Getting an activity item source
-- [func activityItemSource() -> any UIActivityItemSource](uicloudsharingcontroller/activityitemsource.md)
+- [func activityItemSource() -> any UIActivityItemSource](./uicloudsharingcontroller/activityitemsource%28%29.md)
   The activity item object that can be used by an activity view controller.
 
 ## Relationships
 
 ### Inherits From
-- [UIViewController](uiviewcontroller.md)
+- [UIViewController](./uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
-- [UIAppearanceContainer](uiappearancecontainer.md)
-- [UIContentContainer](uicontentcontainer.md)
-- [UIFocusEnvironment](uifocusenvironment.md)
-- [UIPasteConfigurationSupporting](uipasteconfigurationsupporting.md)
-- [UIResponderStandardEditActions](uiresponderstandardeditactions.md)
-- [UIStateRestoring](uistaterestoring.md)
-- [UITraitChangeObservable](uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](uitraitenvironment.md)
-- [UIUserActivityRestoring](uiuseractivityrestoring.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSExtensionRequestHandling](../Foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](./uiactivityitemsconfigurationproviding.md)
+- [UIAppearanceContainer](./uiappearancecontainer.md)
+- [UIContentContainer](./uicontentcontainer.md)
+- [UIFocusEnvironment](./uifocusenvironment.md)
+- [UIPasteConfigurationSupporting](./uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](./uiresponderstandardeditactions.md)
+- [UIStateRestoring](./uistaterestoring.md)
+- [UITraitChangeObservable](./uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](./uitraitenvironment.md)
+- [UIUserActivityRestoring](./uiuseractivityrestoring.md)
 
 
 ---

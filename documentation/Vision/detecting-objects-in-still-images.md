@@ -1,6 +1,8 @@
 # Detecting Objects in Still Images
 
-**Framework**: Vision
+**Framework**: Vision  
+**Role**: Sample Code  
+**Download**: [DetectingObjectsInStillImages.zip](https://docs-assets.developer.apple.com/published/b2d10dc7f8ea/DetectingObjectsInStillImages.zip)
 
 Locate and demarcate rectangles, faces, barcodes, and text in images using the Vision framework.
 
@@ -12,31 +14,31 @@ Locate and demarcate rectangles, faces, barcodes, and text in images using the V
 
 #### Overview
 
-The [`Vision`](https://developer.apple.comhttps://developer.apple.com/documentation/vision) framework can detect rectangles, faces, text, and barcodes at any orientation.  This sample code shows how to create requests to detect these types of objects, and how to interpret the results of those requests.  To help you visualize where an observation occurs, and how it looks, this code uses Core Animation layers to draw paths around detected features in images.  For example, the following mock gift card has a QR code and rectangles that surface through the detector.  The sample highlights not only text blocks (shown in red) but also individual characters within text (shown in purple):
+The [Vision](./Vision.md) framework can detect rectangles, faces, text, and barcodes at any orientation.  This sample code shows how to create requests to detect these types of objects, and how to interpret the results of those requests.  To help you visualize where an observation occurs, and how it looks, this code uses Core Animation layers to draw paths around detected features in images.  For example, the following mock gift card has a QR code and rectangles that surface through the detector.  The sample highlights not only text blocks (shown in red) but also individual characters within text (shown in purple):
 
-![The left side shows a sample input image that the end user feeds into the app.  The right side shows the output image with the detected text and QR code.](/images/Vision/DevGiftCard.png)
+![The left side shows a sample input image that the end user feeds into the app.  The right side shows the output image with the detected text and QR code.](https://developer.apple.com/tutorials/images/Vision/DevGiftCard.png)
 
 This sample code project runs on iOS 11. However, you can also use Vision in your own apps on macOS 10.13, iOS 11, or tvOS 11.
 
-To see this sample in action, build and run the project, then use the toggle switches to choose which kinds of objects (any combination of rectangles, faces, barcodes, and text) to detect.  Tapping anywhere else prompts the sample to request a picture, which you either capture by camera or select from your photo library. The sample then applies computer vision algorithms to find the desired features in the provided image. Finally, the sample draws colored paths around observed features on [`Core Animation`](https://developer.apple.comhttps://developer.apple.com/documentation/quartzcore) layers.
+To see this sample in action, build and run the project, then use the toggle switches to choose which kinds of objects (any combination of rectangles, faces, barcodes, and text) to detect.  Tapping anywhere else prompts the sample to request a picture, which you either capture by camera or select from your photo library. The sample then applies computer vision algorithms to find the desired features in the provided image. Finally, the sample draws colored paths around observed features on [Core Animation](../QuartzCore/QuartzCore.md) layers.
 
 ##### Prepare an Input Image for Vision
 
-Vision handles still image-based requests using a [`VNImageRequestHandler`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnimagerequesthandler) and assumes that images are oriented upright, so pass your image with orientation in mind. [`CGImage`](https://developer.apple.comhttps://developer.apple.com/documentation/coregraphics/cgimageref), [`CIImage`](https://developer.apple.comhttps://developer.apple.com/documentation/coreimage/ciimage), and [`CVPixelBuffer`](https://developer.apple.comhttps://developer.apple.com/documentation/corevideo/cvpixelbuffer) objects don’t carry orientation, so provide it as part of the initializer.
+Vision handles still image-based requests using a [VNImageRequestHandler](./vnimagerequesthandler.md) and assumes that images are oriented upright, so pass your image with orientation in mind. [CGImage](../CoreGraphics/cgimageref.md), [CIImage](../CoreImage/ciimage.md), and [CVPixelBuffer](../CoreVideo/cvpixelbuffer.md) objects don’t carry orientation, so provide it as part of the initializer.
 
-You can initialize a [`VNImageRequestHandler`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnimagerequesthandler) from image data in the following formats:
+You can initialize a [`VNImageRequestHandler`](./vnimagerequesthandler.md) from image data in the following formats:
 
-- [`CGImage`](https://developer.apple.comhttps://developer.apple.com/documentation/coregraphics/cgimageref): The [`Core Graphics`](https://developer.apple.comhttps://developer.apple.com/documentation/coregraphics) image format, obtainable from any [`UIImage`](https://developer.apple.comhttps://developer.apple.com/documentation/uikit/uiimage) through its helper method [`CGImage`](https://developer.apple.comhttps://developer.apple.com/documentation/uikit/uiimage/1624147-cgimage). Specify orientation through the initializer using [`CGImagePropertyOrientation`](https://developer.apple.comhttps://developer.apple.com/documentation/imageio/cgimagepropertyorientation).
-- [`CIImage`](https://developer.apple.comhttps://developer.apple.com/documentation/coreimage/ciimage): The [`Core Image`](https://developer.apple.comhttps://developer.apple.com/documentation/coreimage) format, best used if you already have Core Image in your image processing pipeline. `CIImage` objects don’t contain orientation, so supply it in the initializer [`init(ciImage:orientation:options:)`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnimagerequesthandler/2869641-init).
-- [`CVPixelBuffer`](https://developer.apple.comhttps://developer.apple.com/documentation/corevideo/cvpixelbuffer): The [`Core Video`](https://developer.apple.comhttps://developer.apple.com/documentation/corevideo) image format for data from a live feed and movies.  `CVPixelBuffer` objects don’t contain orientation, so supply it in the initializer [`init(cvPixelBuffer:orientation:options:)`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnimagerequesthandler/2880303-init).
-- [`Data`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/nsdata): Image data compressed or held in memory, as you might receive over a network connection. For example, photos downloaded from a website or the cloud fall into this category. Check that any images downloaded from the web have upright orientation; if they don’t, inform Vision about the orientation through the initializer  [`init(data:orientation:options:)`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnimagerequesthandler/2869635-init).
-- [`URL`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/nsurl): A URL path to the image on disk.
+- [`CGImage`](../CoreGraphics/cgimageref.md): The [Core Graphics](../CoreGraphics/CoreGraphics.md) image format, obtainable from any [UIImage](../UIKit/uiimage.md) through its helper method [CGImage](../UIKit/uiimage/api-1624147-cgimage.md). Specify orientation through the initializer using [CGImagePropertyOrientation](../ImageIO/cgimagepropertyorientation.md).
+- [`CIImage`](../CoreImage/ciimage.md): The [Core Image](../CoreImage/CoreImage.md) format, best used if you already have Core Image in your image processing pipeline. `CIImage` objects don’t contain orientation, so supply it in the initializer [init(ciImage:orientation:options:)](./vnimagerequesthandler/api-2869641-init.md).
+- [`CVPixelBuffer`](../CoreVideo/cvpixelbuffer.md): The [Core Video](../CoreVideo/CoreVideo.md) image format for data from a live feed and movies.  `CVPixelBuffer` objects don’t contain orientation, so supply it in the initializer [init(cvPixelBuffer:orientation:options:)](./vnimagerequesthandler/api-2880303-init.md).
+- [Data](../Foundation/nsdata.md): Image data compressed or held in memory, as you might receive over a network connection. For example, photos downloaded from a website or the cloud fall into this category. Check that any images downloaded from the web have upright orientation; if they don’t, inform Vision about the orientation through the initializer  [init(data:orientation:options:)](./vnimagerequesthandler/api-2869635-init.md).
+- [URL](../Foundation/nsurl.md): A URL path to the image on disk.
 
-Vision may not detect sideways or upside-down features properly if it assumes the wrong orientation.  Photos selected in the sample’s image picker contain orientation information.  Access this data through the `UIImage` property [`imageOrientation`](https://developer.apple.comhttps://developer.apple.com/documentation/uikit/uiimage/1624141-imageorientation). If you acquire your photos through other means, such as from the web or other apps, be sure to check for orientation and provide it separately if it doesn’t come baked into the image.
+Vision may not detect sideways or upside-down features properly if it assumes the wrong orientation.  Photos selected in the sample’s image picker contain orientation information.  Access this data through the `UIImage` property [imageOrientation](../UIKit/uiimage/api-1624141-imageorientation.md). If you acquire your photos through other means, such as from the web or other apps, be sure to check for orientation and provide it separately if it doesn’t come baked into the image.
 
 ##### Create Vision Requests
 
-Create a [`VNImageRequestHandler`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnimagerequesthandler) object with the image to be processed.
+Create a [`VNImageRequestHandler`](./vnimagerequesthandler.md) object with the image to be processed.
 
 ```swift
 // Create a request handler.
@@ -60,7 +62,7 @@ lazy var rectangleDetectionRequest: VNDetectRectanglesRequest = {
 }()
 ```
 
-After you’ve created all your requests, pass them as an array to the request handler’s synchronous [`perform(_:)`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnimagerequesthandler/2880297-perform). Vision computations may consume resources and take time, so use a background queue to avoid blocking the main queue as it executes.
+After you’ve created all your requests, pass them as an array to the request handler’s synchronous [perform(_:)](./vnimagerequesthandler/api-2880297-perform.md). Vision computations may consume resources and take time, so use a background queue to avoid blocking the main queue as it executes.
 
 ```swift
 // Send the requests to the request handler.
@@ -77,12 +79,12 @@ DispatchQueue.global(qos: .userInitiated).async {
 
 ##### Interpret Detection Results
 
-The method [`perform(_:)`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnimagerequesthandler/2880297-perform) returns a Boolean representing whether the requests succeeded or resulted in an error. If it succeeded, its [`results`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnrequest/2867238-results) property contains observation or tracking data, such as a detected object’s location and bounding box.
+The method [`perform(_:)`](./vnimagerequesthandler/api-2880297-perform.md) returns a Boolean representing whether the requests succeeded or resulted in an error. If it succeeded, its [results](./vnrequest/api-2867238-results.md) property contains observation or tracking data, such as a detected object’s location and bounding box.
 
 You can access results in two ways:
 
-- Check the [`results`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnrequest/2867238-results) property after calling [`perform(_:)`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnimagerequesthandler/2880297-perform).
-- In the [`VNImageBasedRequest`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnimagebasedrequest) object’s completion handler, use the callback’s observation parameter to retrieve detection information.  The callback results may contain multiple observations, so loop through the observations array to process each one.
+- Check the [`results`](./vnrequest/api-2867238-results.md) property after calling [`perform(_:)`](./vnimagerequesthandler/api-2880297-perform.md).
+- In the [VNImageBasedRequest](./vnimagebasedrequest.md) object’s completion handler, use the callback’s observation parameter to retrieve detection information.  The callback results may contain multiple observations, so loop through the observations array to process each one.
 
 For example, the sample uses facial observations and their landmarks’ bounding boxes to locate the features and draw a rectangle around them.
 
@@ -112,11 +114,11 @@ for observation in faces {
 CATransaction.commit()
 ```
 
-For face landmark requests, the detector provides [`VNFaceObservation`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnfaceobservation) results with greater detail, such as [`facial-feature landmark regions`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnfacelandmarkregion2d).
+For face landmark requests, the detector provides [VNFaceObservation](./vnfaceobservation.md) results with greater detail, such as [facial-feature landmark regions](./vnfacelandmarkregion2d.md).
 
-For text observations, you can locate individual characters by checking the [`characterBoxes`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vntextobservation/2867213-characterboxes) property.
+For text observations, you can locate individual characters by checking the [characterBoxes](./vntextobservation/api-2867213-characterboxes.md) property.
 
-For barcode observations, some supported [`symbologies`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vndetectbarcodesrequest/2875397-symbologies) contain payload information in the [`payloadStringValue`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnbarcodeobservation/2923485-payloadstringvalue) property, allowing you to parse the content of detected barcodes. Like a supermarket scanner, barcode detection is optimized for finding one barcode per image.
+For barcode observations, some supported [symbologies](./vndetectbarcodesrequest/api-2875397-symbologies.md) contain payload information in the [payloadStringValue](./vnbarcodeobservation/api-2923485-payloadstringvalue.md) property, allowing you to parse the content of detected barcodes. Like a supermarket scanner, barcode detection is optimized for finding one barcode per image.
 
 It’s up to your app to use or store data from the observations before exiting the completion handler.  Instead of drawing paths like the sample does, write custom code to extract what your app needs from each observation.
 
@@ -126,27 +128,28 @@ To reduce unnecessary computation, don’t create multiple request handlers and 
 
 To perform detection across multiple, unrelated images, create a separate image handler for each image and make requests to each handler on separate threads, so they run in parallel. Each image request handler costs additional processing time and memory, so try not to run them on the main thread. Dispatch these handlers on additional background threads, calling back to the main thread only for UI updates such as displaying images or paths.
 
-The image-based handler that this sample introduces works for detection across any number of images, but it doesn’t track objects.  To perform object tracking, use a [`VNSequenceRequestHandler`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnsequencerequesthandler) instead.  For more information about object tracking, see Tracking the User’s Face in Real Time.
+The image-based handler that this sample introduces works for detection across any number of images, but it doesn’t track objects.  To perform object tracking, use a [VNSequenceRequestHandler](./vnsequencerequesthandler.md) instead.  For more information about object tracking, see Tracking the User’s Face in Real Time.
 
 ## See Also
 
-- [Classifying images for categorization and search](classifying-images-for-categorization-and-search.md)
+### Still-image analysis
+- [Classifying images for categorization and search](./classifying-images-for-categorization-and-search.md)
   Analyze and label images using a Vision classification request.
-- [Analyzing Image Similarity with Feature Print](analyzing-image-similarity-with-feature-print.md)
+- [Analyzing Image Similarity with Feature Print](./analyzing-image-similarity-with-feature-print.md)
   Generate a feature print to compute distance between images.
-- [class VNRequest](vnrequest.md)
+- [class VNRequest](./vnrequest.md)
   The abstract superclass for analysis requests.
-- [class VNImageBasedRequest](vnimagebasedrequest.md)
+- [class VNImageBasedRequest](./vnimagebasedrequest.md)
   The abstract superclass for image-analysis requests that focus on a specific part of an image.
-- [class VNClassifyImageRequest](vnclassifyimagerequest.md)
+- [class VNClassifyImageRequest](./vnclassifyimagerequest.md)
   A request to classify an image.
-- [class VNGenerateImageFeaturePrintRequest](vngenerateimagefeatureprintrequest.md)
+- [class VNGenerateImageFeaturePrintRequest](./vngenerateimagefeatureprintrequest.md)
   An image-based request to generate feature prints from an image.
-- [class VNFeaturePrintObservation](vnfeatureprintobservation.md)
+- [class VNFeaturePrintObservation](./vnfeatureprintobservation.md)
   An observation that provides the recognized feature print.
-- [class VNImageRequestHandler](vnimagerequesthandler.md)
+- [class VNImageRequestHandler](./vnimagerequesthandler.md)
   An object that processes one or more image-analysis request pertaining to a single image.
-- [class VNObservation](vnobservation.md)
+- [class VNObservation](./vnobservation.md)
   The abstract superclass for analysis results.
 
 

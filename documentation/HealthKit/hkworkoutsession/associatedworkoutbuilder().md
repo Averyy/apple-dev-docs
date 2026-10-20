@@ -1,7 +1,8 @@
 # associatedWorkoutBuilder()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the live workout builder associated with the workout session.
 
@@ -17,11 +18,16 @@ Returns the live workout builder associated with the workout session.
 func associatedWorkoutBuilder() -> HKLiveWorkoutBuilder
 ```
 
+```objc
+- (HKLiveWorkoutBuilder *) associatedWorkoutBuilder;
+```
+
 ## See Also
 
-- [class HKLiveWorkoutBuilder](hkliveworkoutbuilder.md)
+### Related Documentation
+- [class HKLiveWorkoutBuilder](../hkliveworkoutbuilder.md)
   A builder object that constructs a workout incrementally based on live data from an active workout session.
-- [protocol HKLiveWorkoutBuilderDelegate](hkliveworkoutbuilderdelegate.md)
+- [protocol HKLiveWorkoutBuilderDelegate](../hkliveworkoutbuilderdelegate.md)
   A protocol that defines methods for receiving updates from a live workout builder.
 
 

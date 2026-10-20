@@ -1,7 +1,8 @@
 # birthRate
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of particles emitted over the emission duration. Defaults to 100.
 

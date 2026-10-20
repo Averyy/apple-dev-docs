@@ -1,7 +1,8 @@
 # Get Org by ID
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Retrieve the details of a specific organization by its ID.
 
@@ -10,13 +11,13 @@ Retrieve the details of a specific organization by its ID.
 
 #### Discussion
 
-This endpoint retrieves the details of a specific organization by its ID. To retrieve your organization ID, call [`Get Me Details`](get-current-user-details.md), which returns the `orgId` bound to the authenticated user.
+This endpoint retrieves the details of a specific organization by its ID. To retrieve your organization ID, call [`Get Me Details`](./get-current-user-details.md), which returns the `orgId` bound to the authenticated user.
 
 #### Payload Examples
 
 ##### Request
 
-```None
+```
 GET https://api.ads.apple.com/v1/orgs/987654321
 ```
 
@@ -42,13 +43,25 @@ GET https://api.ads.apple.com/v1/orgs/987654321
 
 ## Parameters
 
+### Path Parameters
+
 - `id` (string) *(required)*
+
+## Responses
+
+- `200` OK (`OrgResponse`, `application/json`): Successful operation. Returns [`OrgResponse`](./orgresponse.md) (`result`: [`Org`](./org.md)).
+- `400` Bad Request (`ErrorResponse`, `application/json`): Bad Request. Returns [`ErrorResponse`](./errorresponse.md).
+- `401` Unauthorized (`ErrorResponse`, `application/json`): Unauthorized.
+- `403` Forbidden (`ErrorResponse`, `application/json`): Forbidden.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found. Returns [`ErrorResponse`](./errorresponse.md).
+- `429` Too Many Requests (`ErrorResponse`, `application/json`): Rate Limit Exceeded. See [Applying Rate Limits](./rate-limits.md).
+- `500` Internal Server Error (`ErrorResponse`, `application/json`): Internal Server Error. Returns [`ErrorResponse`](./errorresponse.md).
 
 ## See Also
 
-- [Get Me Details](get-current-user-details.md)
+- [Get Me Details](./get-current-user-details.md)
   Return the user ID and organization ID of the authenticated API caller.
-- [Get User ACL](get-user-acls.md)
+- [Get User ACL](./get-user-acls.md)
   Return the ad accounts and roles accessible to the authenticated API caller.
 
 

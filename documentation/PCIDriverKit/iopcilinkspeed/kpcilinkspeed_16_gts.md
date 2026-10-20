@@ -1,15 +1,16 @@
 # kPCILinkSpeed_16_GTs
 
 **Framework**: PCIDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kPCILinkSpeed_16_GTs
 ```
 

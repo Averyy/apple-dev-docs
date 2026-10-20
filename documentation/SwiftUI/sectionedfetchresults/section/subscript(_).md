@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: SwiftUI  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Gets the entity at the specified index within the section.
 

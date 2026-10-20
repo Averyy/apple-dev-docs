@@ -1,7 +1,8 @@
 # reloadItems(withIdentifiers:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reloads the data within the specified items in the snapshot.
 
@@ -18,21 +19,26 @@ Reloads the data within the specified items in the snapshot.
 func reloadItems(withIdentifiers identifiers: [Any])
 ```
 
+```objc
+- (void) reloadItemsWithIdentifiers:(NSArray<id> *) identifiers;
+```
+
 ## Parameters
 
 - `identifiers`: The array of identifiers corresponding to the items to reload in the snapshot.
 
 ## See Also
 
-- [func reconfigureItems(withIdentifiers: [Any])](nsdiffabledatasourcesnapshotreference/reconfigureitems(withidentifiers:).md)
+### Reloading data
+- [func reconfigureItems(withIdentifiers: [Any])](./reconfigureitems%28withidentifiers%29.md)
   Updates the data for the items you specify in the snapshot, preserving the existing cells for the items.
-- [var reconfiguredItemIdentifiers: [Any]](nsdiffabledatasourcesnapshotreference/reconfigureditemidentifiers.md)
+- [var reconfiguredItemIdentifiers: [Any]](./reconfigureditemidentifiers.md)
   Identifies the items reconfigured by the changes to the snapshot.
-- [var reloadedItemIdentifiers: [Any]](nsdiffabledatasourcesnapshotreference/reloadeditemidentifiers.md)
+- [var reloadedItemIdentifiers: [Any]](./reloadeditemidentifiers.md)
   Identifies the items reloaded by the changes to the snapshot.
-- [func reloadSections(withIdentifiers: [Any])](nsdiffabledatasourcesnapshotreference/reloadsections(withidentifiers:).md)
+- [func reloadSections(withIdentifiers: [Any])](./reloadsections%28withidentifiers%29.md)
   Reloads the data within the specified sections of the snapshot.
-- [var reloadedSectionIdentifiers: [Any]](nsdiffabledatasourcesnapshotreference/reloadedsectionidentifiers.md)
+- [var reloadedSectionIdentifiers: [Any]](./reloadedsectionidentifiers.md)
   Identifies the sections reloaded by the changes to the snapshot.
 
 

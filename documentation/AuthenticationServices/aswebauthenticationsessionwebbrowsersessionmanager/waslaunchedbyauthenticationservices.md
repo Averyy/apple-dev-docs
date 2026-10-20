@@ -1,7 +1,8 @@
 # wasLaunchedByAuthenticationServices
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the session was launched by authentication services.
 
@@ -14,9 +15,13 @@ A Boolean that indicates whether the session was launched by authentication serv
 var wasLaunchedByAuthenticationServices: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL wasLaunchedByAuthenticationServices;
+```
+
 ## Mentions
 
-- [Supporting Single Sign-On in a Web Browser App](supporting-single-sign-on-in-a-web-browser-app.md)
+- [Supporting Single Sign-On in a Web Browser App](../supporting-single-sign-on-in-a-web-browser-app.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # kMIDINoteAttributeNone
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 

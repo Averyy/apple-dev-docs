@@ -1,7 +1,8 @@
 # next()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns `nil`, indicating that there are no more elements.
 

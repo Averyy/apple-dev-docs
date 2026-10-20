@@ -1,12 +1,13 @@
 # isAutorotating
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the interface automatically rotates when the user flips their wrist.
 
 **Availability**:
-- watchOS 4.0+
+- watchOS 4.0+ - Deprecated in 9.2
 
 ## Declaration
 
@@ -14,23 +15,29 @@ A Boolean value that determines whether the interface automatically rotates when
 var isAutorotating: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isAutorotating) BOOL autorotating;
+```
+
 #### Discussion
 
-Defaults to [`false`](https://developer.apple.com/documentation/swift/false).
+Defaults to [`false`](../../Swift/false.md).
 
 Normally, when a user rotates their wrist–for example, to show a watchOS app to another person–the watch is likely to interpret this motion as dropping the wrist and may put the app to sleep. When autorotation is enabled, watchOS instead keeps the interface awake and rotates the content so that it is oriented properly for the viewer.
 
-Do not enable autorotation indefinitely. Instead, enable it selectively on a specific interface controller that the user is likely to share. For example, in the interface controller’s [`willActivate()`](wkinterfacecontroller/willactivate().md) method, set this property to [`true`](https://developer.apple.com/documentation/swift/true). In the [`didDeactivate()`](wkinterfacecontroller/diddeactivate().md) method, set it back to [`false`](https://developer.apple.com/documentation/swift/false).
+Do not enable autorotation indefinitely. Instead, enable it selectively on a specific interface controller that the user is likely to share. For example, in the interface controller’s [`willActivate()`](../wkinterfacecontroller/willactivate%28%29.md) method, set this property to [`true`](../../Swift/true.md). In the [`didDeactivate()`](../wkinterfacecontroller/diddeactivate%28%29.md) method, set it back to [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func deviceOrientationDidChange()](wkextensiondelegate/deviceorientationdidchange.md)
+### Related Documentation
+- [func deviceOrientationDidChange()](../wkextensiondelegate/deviceorientationdidchange%28%29.md)
   Tells the delegate that the device’s orientation has changed.
-- [var isAutorotated: Bool](wkextension/isautorotated.md)
+### Managing the user interface
+- [var isAutorotated: Bool](./isautorotated.md)
   A Boolean value that indicates whether the system has automatically rotated the user interface so that it is properly oriented for another viewer.
-- [var globalTintColor: UIColor](wkextension/globaltintcolor.md)
+- [var globalTintColor: UIColor](./globaltintcolor.md)
   The watchOS app’s global tint color.
-- [func enableWaterLock()](wkextension/enablewaterlock.md)
+- [func enableWaterLock()](./enablewaterlock%28%29.md)
   Disables the Apple Watch touch screen to prevent accidental taps while the watch is underwater.
 
 

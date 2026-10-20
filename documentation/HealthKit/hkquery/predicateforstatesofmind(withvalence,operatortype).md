@@ -1,20 +1,25 @@
 # predicateForStatesOfMind(withValence:operatorType:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 class func predicateForStatesOfMind(withValence valence: Double, operatorType: NSComparisonPredicate.Operator) -> NSPredicate
+```
+
+```objc
++ (NSPredicate *) predicateForStatesOfMindWithValence:(double) valence operatorType:(NSPredicateOperatorType) operatorType;
 ```
 
 

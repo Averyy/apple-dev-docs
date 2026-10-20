@@ -1,7 +1,8 @@
 # predictionWithConfidence(from:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Predicts tags and confidence scores for the input string. Predicts tags and confidence scores for the input string.
 
@@ -14,6 +15,12 @@ Predicts tags and confidence scores for the input string. Predicts tags and conf
 func predictionWithConfidence(from text: String) throws -> [[String : Double]]
 ```
 
+**Other overloads**:
+
+```swift
+func predictionWithConfidence(from tokens: [MLWordTagger.Token]) throws -> [[String : Double]]
+```
+
 #### Return Value
 
 An array of dictionaries. Each dictionary corresponds to a token in the input text string. A dictionary entry contains a tag prediction with its associated confidence score.
@@ -24,9 +31,10 @@ An array of dictionaries. Each dictionary corresponds to a token in the input te
 
 ## See Also
 
-- [func prediction(from:)](mlwordtagger/prediction(from:).md)
+### Testing a word tagger
+- [func prediction(from:)](./prediction%28from%29.md)
   Predicts a tag for the input string.
-- [func predictions(from:)](mlwordtagger/predictions(from:).md)
+- [func predictions(from:)](./predictions%28from%29.md)
   Predicts sequences of labels, token locations, and token lengths from the input strings.
 
 

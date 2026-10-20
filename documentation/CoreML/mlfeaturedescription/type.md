@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of this feature.
 
@@ -20,13 +21,18 @@ The type of this feature.
 var type: MLFeatureType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MLFeatureType type;
+```
+
 ## See Also
 
-- [var name: String](mlfeaturedescription/name.md)
+### Inspecting a feature
+- [var name: String](./name.md)
   The name of this feature.
-- [enum MLFeatureType](mlfeaturetype.md)
+- [enum MLFeatureType](../mlfeaturetype.md)
   The possible types for feature values, input features, and output features.
-- [var isOptional: Bool](mlfeaturedescription/isoptional.md)
+- [var isOptional: Bool](./isoptional.md)
   A Boolean value that indicates whether this feature is optional.
 
 

@@ -1,7 +1,8 @@
 # isIdentity
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,7 +21,8 @@ var isIdentity: Bool { get }
 
 ## See Also
 
-- [var isAffine: Bool](projectiontransform/isaffine.md)
+### Getting transform characteristics
+- [var isAffine: Bool](./isaffine.md)
 
 
 ---

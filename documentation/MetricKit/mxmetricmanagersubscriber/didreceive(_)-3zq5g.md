@@ -1,21 +1,28 @@
 # didReceive(_:)
 
 **Framework**: MetricKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Delivers new metrics reports to the object registered with the metrics manager.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- macOS 10.15+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.15+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`metricReports`](../metricmanager/metricreports.md) instead.
 
 ## Declaration
 
 ```swift
 optional func didReceive(_ payloads: [MXMetricPayload])
+```
+
+```objc
+- (void) didReceiveMetricPayloads:(NSArray<MXMetricPayload *> *) payloads;
 ```
 
 #### Discussion
@@ -30,7 +37,8 @@ The system calls this method at most once per day. It’s safe to process the pa
 
 ## See Also
 
-- [func didReceive([MXDiagnosticPayload])](mxmetricmanagersubscriber/didreceive(_:)-9yd4u.md)
+### Receiving reports
+- [func didReceive([MXDiagnosticPayload])](./didreceive%28_%29-9yd4u.md)
   Delivers new diagnostic reports to the object registered with the metrics manager.
 
 

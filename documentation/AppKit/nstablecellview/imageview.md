@@ -1,7 +1,8 @@
 # imageView
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Image displayed by the cell.
 
@@ -15,13 +16,18 @@ Image displayed by the cell.
 unowned(unsafe) var imageView: NSImageView? { get set }
 ```
 
+```objc
+@property (assign, nullable) NSImageView * imageView;
+```
+
 #### Discussion
 
-This property is typically configured when the row is created in the [`NSTableViewDataSource`](nstableviewdatasource.md) protocol method [`tableView(_:viewFor:row:)`](nstableviewdelegate/tableview(_:viewfor:row:).md).
+This property is typically configured when the row is created in the [`NSTableViewDataSource`](../nstableviewdatasource.md) protocol method [`tableView(_:viewFor:row:)`](../nstableviewdelegate/tableview%28_,viewfor,row%29.md).
 
 ## See Also
 
-- [var textField: NSTextField?](nstablecellview/textfield.md)
+### Displayed Items
+- [var textField: NSTextField?](./textfield.md)
   Text displayed by the cell.
 
 

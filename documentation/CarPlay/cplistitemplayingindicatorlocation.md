@@ -1,7 +1,8 @@
 # CPListItemPlayingIndicatorLocation
 
 **Framework**: CarPlay  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The locations where a list item can display the Now Playing indicator.
 
@@ -16,39 +17,44 @@ The locations where a list item can display the Now Playing indicator.
 enum CPListItemPlayingIndicatorLocation
 ```
 
+```c
+enum CPListItemPlayingIndicatorLocation : NSInteger;
+```
+
 #### Overview
 
-Use these constants to set the value of a list item’s [`playingIndicatorLocation`](cplistitem/playingindicatorlocation.md) property. When you set a list item’s [`isPlaying`](cplistitem/isplaying.md) property to `true`, it uses the specified location to position the Now Playing indicator.
+Use these constants to set the value of a list item’s [`playingIndicatorLocation`](./cplistitem/playingindicatorlocation.md) property. When you set a list item’s [`isPlaying`](./cplistitem/isplaying.md) property to `true`, it uses the specified location to position the Now Playing indicator.
 
 ## Topics
 
 ### Now Playing Indicator Locations
-- [CPListItemPlayingIndicatorLocation.leading](cplistitemplayingindicatorlocation/leading.md)
+- [CPListItemPlayingIndicatorLocation.leading](./cplistitemplayingindicatorlocation/leading.md)
   Align the Now Playing indicator with the leading edge of the list item.
-- [CPListItemPlayingIndicatorLocation.trailing](cplistitemplayingindicatorlocation/trailing.md)
+- [CPListItemPlayingIndicatorLocation.trailing](./cplistitemplayingindicatorlocation/trailing.md)
   Align the Now Playing indicator with the trailing edge of the list item.
 ### Initializers
-- [init?(rawValue: Int)](cplistitemplayingindicatorlocation/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cplistitemplayingindicatorlocation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isExplicitContent: Bool](cplistitem/isexplicitcontent.md)
+### Managing Playback Information
+- [var isExplicitContent: Bool](./cplistitem/isexplicitcontent.md)
   A Boolean value that determines whether the list item displays its explicit content indicator.
-- [var isPlaying: Bool](cplistitem/isplaying.md)
+- [var isPlaying: Bool](./cplistitem/isplaying.md)
   A Boolean value that determines whether the list item displays its Now Playing indicator.
-- [var playingIndicatorLocation: CPListItemPlayingIndicatorLocation](cplistitem/playingindicatorlocation.md)
+- [var playingIndicatorLocation: CPListItemPlayingIndicatorLocation](./cplistitem/playingindicatorlocation.md)
   The location where the list item displays its Now Playing indicator.
-- [var playbackProgress: CGFloat](cplistitem/playbackprogress.md)
+- [var playbackProgress: CGFloat](./cplistitem/playbackprogress.md)
   The playback progress status for the content that the list item represents.
 
 

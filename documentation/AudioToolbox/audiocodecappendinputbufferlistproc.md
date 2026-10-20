@@ -1,15 +1,16 @@
 # AudioCodecAppendInputBufferListProc
 
 **Framework**: Audio Toolbox  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,25 +18,30 @@
 typealias AudioCodecAppendInputBufferListProc = (UnsafeMutableRawPointer, UnsafePointer<AudioBufferList>, UnsafeMutablePointer<UInt32>, UnsafePointer<AudioStreamPacketDescription>?, UnsafeMutablePointer<UInt32>) -> OSStatus
 ```
 
+```c
+typedef int (*)(void *, const struct AudioBufferList *, unsigned int *, const struct AudioStreamPacketDescription *, unsigned int *) AudioCodecAppendInputBufferListProc;
+```
+
 ## See Also
 
-- [struct AudioCodecMagicCookieInfo](audiocodecmagiccookieinfo.md)
+### Codec Types
+- [struct AudioCodecMagicCookieInfo](./audiocodecmagiccookieinfo.md)
   A structure holding magic cookie information needed by some codecs.
-- [struct AudioCodecPrimeInfo](audiocodecprimeinfo.md)
+- [struct AudioCodecPrimeInfo](./audiocodecprimeinfo.md)
   A structure specifying the number of leading and trailing empty frames to be inserted.
-- [typealias AudioCodec](audiocodec.md)
+- [typealias AudioCodec](./audiocodec.md)
   An instance of a Component Manager component.
-- [typealias AudioCodecAppendInputDataProc](audiocodecappendinputdataproc.md)
-- [typealias AudioCodecGetPropertyInfoProc](audiocodecgetpropertyinfoproc.md)
-- [typealias AudioCodecGetPropertyProc](audiocodecgetpropertyproc.md)
-- [typealias AudioCodecInitializeProc](audiocodecinitializeproc.md)
-- [typealias AudioCodecProduceOutputBufferListProc](audiocodecproduceoutputbufferlistproc.md)
-- [typealias AudioCodecProduceOutputPacketsProc](audiocodecproduceoutputpacketsproc.md)
-- [typealias AudioCodecPropertyID](audiocodecpropertyid.md)
+- [typealias AudioCodecAppendInputDataProc](./audiocodecappendinputdataproc.md)
+- [typealias AudioCodecGetPropertyInfoProc](./audiocodecgetpropertyinfoproc.md)
+- [typealias AudioCodecGetPropertyProc](./audiocodecgetpropertyproc.md)
+- [typealias AudioCodecInitializeProc](./audiocodecinitializeproc.md)
+- [typealias AudioCodecProduceOutputBufferListProc](./audiocodecproduceoutputbufferlistproc.md)
+- [typealias AudioCodecProduceOutputPacketsProc](./audiocodecproduceoutputpacketsproc.md)
+- [typealias AudioCodecPropertyID](./audiocodecpropertyid.md)
   An integer identifying an audio codec property.
-- [typealias AudioCodecResetProc](audiocodecresetproc.md)
-- [typealias AudioCodecSetPropertyProc](audiocodecsetpropertyproc.md)
-- [typealias AudioCodecUninitializeProc](audiocodecuninitializeproc.md)
+- [typealias AudioCodecResetProc](./audiocodecresetproc.md)
+- [typealias AudioCodecSetPropertyProc](./audiocodecsetpropertyproc.md)
+- [typealias AudioCodecUninitializeProc](./audiocodecuninitializeproc.md)
 
 
 ---

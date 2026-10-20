@@ -1,17 +1,22 @@
 # replaceSubview(_:with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces one of the view’s subviews with another view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func replaceSubview(_ oldView: NSView, with newView: NSView)
+```
+
+```objc
+- (void) replaceSubview:(NSView *) oldView with:(NSView *) newView;
 ```
 
 #### Discussion
@@ -31,15 +36,16 @@ Calling this method also removes any constraints associated with `oldView` and i
 
 ## See Also
 
-- [func addSubview(NSView)](nsview/addsubview(_:).md)
+### Adding and Removing Subviews
+- [func addSubview(NSView)](./addsubview%28_%29.md)
   Adds a view to the view’s subviews so it’s displayed above its siblings.
-- [func addSubview(NSView, positioned: NSWindow.OrderingMode, relativeTo: NSView?)](nsview/addsubview(_:positioned:relativeto:).md)
+- [func addSubview(NSView, positioned: NSWindow.OrderingMode, relativeTo: NSView?)](./addsubview%28_,positioned,relativeto%29.md)
   Inserts a view among the view’s subviews so it’s displayed immediately above or below another view.
-- [func removeFromSuperview()](nsview/removefromsuperview.md)
+- [func removeFromSuperview()](./removefromsuperview%28%29.md)
   Unlinks the view from its superview and its window, removes it from the responder chain, and invalidates its cursor rectangles.
-- [func removeFromSuperviewWithoutNeedingDisplay()](nsview/removefromsuperviewwithoutneedingdisplay.md)
+- [func removeFromSuperviewWithoutNeedingDisplay()](./removefromsuperviewwithoutneedingdisplay%28%29.md)
   Unlinks the view from its superview and its window and removes it from the responder chain, but does not invalidate its cursor rectangles to cause redrawing.
-- [func sortSubviews((NSView, NSView, UnsafeMutableRawPointer?) -> ComparisonResult, context: UnsafeMutableRawPointer?)](nsview/sortsubviews(_:context:).md)
+- [func sortSubviews((NSView, NSView, UnsafeMutableRawPointer?) -> ComparisonResult, context: UnsafeMutableRawPointer?)](./sortsubviews%28_,context%29.md)
   Orders the view’s immediate subviews using the specified comparator function.
 
 

@@ -7,7 +7,7 @@ Sends an AVC command to the device and stores the response. The command must com
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn AVCCommandInGeneration(
  UInt32generation, 
  const UInt8 *command,
@@ -26,15 +26,16 @@ virtual IOReturn AVCCommandInGeneration(
 
 ## See Also
 
-- [AVCCommand](iofirewireavcunit/1813829-avccommand.md)
+### Miscellaneous
+- [AVCCommand](./api-1813829-avccommand.md)
   Sends an AVC command to the device and stores the response.
-- [handleClose](iofirewireavcunit/1813838-handleclose.md)
+- [handleClose](./api-1813838-handleclose.md)
   Overrideable method to control the open / close behaviour of an IOService.
-- [handleOpen](iofirewireavcunit/1813842-handleopen.md)
+- [handleOpen](./api-1813842-handleopen.md)
   Overrideable method to control the open / close behaviour of an IOService.
-- [matchPropertyTable](iofirewireavcunit/1813847-matchpropertytable.md)
+- [matchPropertyTable](./api-1813847-matchpropertytable.md)
   Matching language support Match on the following properties of the unit: Vendor_ID GUID Unit_Type and available sub-units, match if the device has at least the requested number of a sub-unit type: AVCSubUnit_0 -> AVCSubUnit_1f
-- [updateAVCCommandTimeout](iofirewireavcunit/1813851-updateavccommandtimeout.md)
+- [updateAVCCommandTimeout](./api-1813851-updateavccommandtimeout.md)
   By default, AVCCommands timeout 10 seconds after receiving an Interim response. This function resets the timeout of the current command to 10 seconds from the current time. Call this repeatedly for AVC commands that take a very long time to execute to prevent premature timeout.
 
 

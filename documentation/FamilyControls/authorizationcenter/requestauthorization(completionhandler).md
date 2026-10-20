@@ -1,13 +1,16 @@
 # requestAuthorization(completionHandler:)
 
 **Framework**: Family Controls  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests authorization to provide parental controls for a child.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
+- iOS 15.0+ - Deprecated in 16.0
+- iPadOS 15.0+ - Deprecated in 16.0
+
+> **Deprecated**: Use [`requestAuthorization(for:)`](./requestauthorization%28for%29.md) instead.
 
 ## Declaration
 

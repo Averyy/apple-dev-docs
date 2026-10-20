@@ -1,7 +1,8 @@
 # componentsPerVector
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of scalar components in each vector.
 
@@ -15,19 +16,24 @@ The number of scalar components in each vector.
 var componentsPerVector: Int { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) NSInteger componentsPerVector;
+```
+
 #### Discussion
 
-In the case that [`componentsPerVector`](argeometrysource/componentspervector.md) is greater than 1, the element type of the geometry-source array is itself, a sequence.
+In the case that [`componentsPerVector`](./componentspervector.md) is greater than 1, the element type of the geometry-source array is itself, a sequence.
 
 ## See Also
 
-- [var count: Int](argeometrysource/count.md)
+### Getting Geometry Information
+- [var count: Int](./count.md)
   The number of vectors in the buffer.
-- [var format: MTLVertexFormat](argeometrysource/format.md)
+- [var format: MTLVertexFormat](./format.md)
   The type of vector data in the buffer.
-- [var offset: Int](argeometrysource/offset.md)
+- [var offset: Int](./offset.md)
   The offset, in bytes, from the beginning of the buffer.
-- [var stride: Int](argeometrysource/stride.md)
+- [var stride: Int](./stride.md)
   The length, in bytes, of the start of one vector in the buffer to the start of the next vector.
 
 

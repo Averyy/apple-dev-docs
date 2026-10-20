@@ -1,7 +1,8 @@
 # retries
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of retry attempts to perform.
 
@@ -26,7 +27,8 @@ If `nil`, this publisher attempts to reconnect with the upstream publisher an un
 
 ## See Also
 
-- [let upstream: Upstream](publishers/retry/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives elements.
 
 

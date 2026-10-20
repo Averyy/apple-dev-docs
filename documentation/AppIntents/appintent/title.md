@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 A short, localized, human-readable string that conveys the app intent’s action.
@@ -12,7 +13,7 @@ A short, localized, human-readable string that conveys the app intent’s action
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,18 +24,25 @@ static var title: LocalizedStringResource { get }
 
 ## Mentions
 
-- [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
-- [Creating your first app intent](creating-your-first-app-intent.md)
+- [Responding to the Action button on Apple Watch Ultra](../actionbuttonarticle.md)
+- [Creating your first app intent](../creating-your-first-app-intent.md)
 
 #### Discussion
 
 Specify title strings using a verb followed by a noun in title case. For example, an action to open an album might have the title “Open Album”. If the app intent conforms to a schema, the schema provides this value.
 
+## Default Implementations
+
+### AppIntent Implementations
+- [static var title: LocalizedStringResource](./title-4a26m.md)
+  A short, localized, human-readable string that conveys the app intent’s action.
+
 ## See Also
 
-- [static var description: IntentDescription?](appintent/description.md)
+### Configuring the metadata
+- [static var description: IntentDescription?](./description.md)
   A localized string that describes what the app intent does.
-- [static var isDiscoverable: Bool](appintent/isdiscoverable.md)
+- [static var isDiscoverable: Bool](./isdiscoverable.md)
   A Boolean value that indicates whether system features can discover this app intent.
 
 

@@ -1,7 +1,8 @@
 # rainfall
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Used to format the rainfall amount
 
@@ -19,6 +20,8 @@ Used to format the rainfall amount
 ```swift
 static var rainfall: MeasurementFormatUnitUsage<UnitLength> { get }
 ```
+
+Available when `UnitType` is `UnitLength`.
 
 
 ---

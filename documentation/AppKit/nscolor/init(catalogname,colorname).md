@@ -1,17 +1,22 @@
 # init(catalogName:colorName:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color object using the specified asset catalog and color names.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init?(catalogName listName: NSColorList.Name, colorName: NSColor.Name)
+```
+
+```objc
++ (NSColor *) colorWithCatalogName:(NSColorListName) listName colorName:(NSColorName) colorName;
 ```
 
 #### Return Value
@@ -29,17 +34,19 @@ This method searches the app’s main bundle for an asset catalog with the speci
 
 ## See Also
 
-- [var catalogNameComponent: NSColorList.Name](nscolor/catalognamecomponent.md)
+### Related Documentation
+- [var catalogNameComponent: NSColorList.Name](./catalognamecomponent.md)
   The catalog containing the color’s name.
-- [var localizedCatalogNameComponent: String](nscolor/localizedcatalognamecomponent.md)
+- [var localizedCatalogNameComponent: String](./localizedcatalognamecomponent.md)
   The localized version of the catalog name containing the color.
-- [var colorNameComponent: NSColor.Name](nscolor/colornamecomponent.md)
+- [var colorNameComponent: NSColor.Name](./colornamecomponent.md)
   The name of the color.
-- [init?(named: NSColor.Name)](nscolor/init(named:).md)
+### Loading color objects from asset catalogs
+- [init?(named: NSColor.Name)](./init%28named%29.md)
   Creates a color object from the provided name, which corresponds to a color in the default asset catalog of the app’s main bundle.
-- [init?(named: NSColor.Name, bundle: Bundle?)](nscolor/init(named:bundle:).md)
+- [init?(named: NSColor.Name, bundle: Bundle?)](./init%28named,bundle%29.md)
   Creates a color object from the provided name, which corresponds to a color in the default asset catalog of the specified bundle.
-- [typealias Name](nscolor/name.md)
+- [typealias Name](./name.md)
   The name of a color.
 
 

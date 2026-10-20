@@ -1,23 +1,28 @@
 # CFUUIDGetTypeID()
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the type identifier for all CFUUID objects.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFUUIDGetTypeID() -> CFTypeID
+```
+
+```c
+extern CFTypeID CFUUIDGetTypeID();
 ```
 
 #### Return Value

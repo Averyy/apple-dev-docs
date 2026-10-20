@@ -1,16 +1,17 @@
 # loadModelAsync(named:in:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Asynchronously loads a model entity from a bundle.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 18.0 (renamed: ModelEntity.init(named:in:))
+- iPadOS 13.0+ - Deprecated in 18.0 (renamed: ModelEntity.init(named:in:))
+- Mac Catalyst 13.0+ - Deprecated in 18.0 (renamed: ModelEntity.init(named:in:))
+- macOS 10.15+ - Deprecated in 15.0 (renamed: ModelEntity.init(named:in:))
+- visionOS 1.0+ - Deprecated in 1.0 (renamed: ModelEntity.init(named:in:))
 
 ## Declaration
 
@@ -21,11 +22,11 @@ Asynchronously loads a model entity from a bundle.
 
 ## Mentions
 
-- [Reducing CPU Utilization in Your RealityKit App](reducing-cpu-utilization-in-your-realitykit-app.md)
+- [Reducing CPU Utilization in Your RealityKit App](../reducing-cpu-utilization-in-your-realitykit-app.md)
 
 #### Return Value
 
-A resource loader that publishes the root entity in the loaded file as a [`ModelEntity`](modelentity.md).
+A resource loader that publishes the root entity in the loaded file as a [`ModelEntity`](../modelentity.md).
 
 ## Parameters
 
@@ -34,11 +35,12 @@ A resource loader that publishes the root entity in the loaded file as a [`Model
 
 ## See Also
 
-- [static func loadModel(named: String, in: Bundle?) throws -> ModelEntity](entity/loadmodel(named:in:).md)
+### Loading a flattened model entity
+- [static func loadModel(named: String, in: Bundle?) throws -> ModelEntity](./loadmodel%28named,in%29.md)
   Synchronously loads a model entity from a bundle.
-- [static func loadModel(contentsOf: URL, withName: String?) throws -> ModelEntity](entity/loadmodel(contentsof:withname:).md)
+- [static func loadModel(contentsOf: URL, withName: String?) throws -> ModelEntity](./loadmodel%28contentsof,withname%29.md)
   Synchronously loads a model entity from a file URL.
-- [static func loadModelAsync(contentsOf: URL, withName: String?) -> LoadRequest<ModelEntity>](entity/loadmodelasync(contentsof:withname:).md)
+- [static func loadModelAsync(contentsOf: URL, withName: String?) -> LoadRequest<ModelEntity>](./loadmodelasync%28contentsof,withname%29.md)
   Returns a load request that creates a model entity by asynchronously loading it from a file URL and flattening the model entity’s hierarchy.
 
 

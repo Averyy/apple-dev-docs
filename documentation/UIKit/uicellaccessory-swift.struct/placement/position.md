@@ -1,7 +1,8 @@
 # UICellAccessory.Placement.Position
 
 **Framework**: UIKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The index position of the cell accessory in relation to the other accessories in the specified array.
 
@@ -10,7 +11,7 @@ The index position of the cell accessory in relation to the other accessories in
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,9 +21,10 @@ typealias Position = ([UICellAccessory]) -> Int
 
 ## See Also
 
-- [static func position(after: UICellAccessory) -> UICellAccessory.Placement.Position](uicellaccessory-swift.struct/placement/position(after:).md)
+### Specifying position
+- [static func position(after: UICellAccessory) -> UICellAccessory.Placement.Position](./position%28after%29.md)
   Provides a position after the accessory that matches the specified type, or at the end if there’s no matching type.
-- [static func position(before: UICellAccessory) -> UICellAccessory.Placement.Position](uicellaccessory-swift.struct/placement/position(before:).md)
+- [static func position(before: UICellAccessory) -> UICellAccessory.Placement.Position](./position%28before%29.md)
   Provides a position before the accessory that matches the specified type, or at the beginning if there’s no matching type.
 
 

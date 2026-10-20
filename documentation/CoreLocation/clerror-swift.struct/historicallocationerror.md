@@ -1,7 +1,8 @@
 # historicalLocationError
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 2.0+

@@ -1,7 +1,8 @@
 # position
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the obstacle.
 
@@ -19,13 +20,18 @@ The position of the obstacle.
 var position: vector_float2 { get set }
 ```
 
+```objc
+@property (nonatomic, assign) vector_float2 position;
+```
+
 #### Discussion
 
 The coordinate system for agents and obstacles is arbitrary; you may choose how to map agent and obstacle positions and sizes into your game scene.
 
 ## See Also
 
-- [var radius: Float](gkcircleobstacle/radius.md)
+### Placing an Obstacle
+- [var radius: Float](./radius.md)
   The radius of the obstacle.
 
 

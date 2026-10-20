@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Scroll indicator visibility depends on the policies of the component accepting the visibility configuration.
 
@@ -22,11 +23,12 @@ static var automatic: ScrollIndicatorVisibility { get }
 
 ## See Also
 
-- [static var hidden: ScrollIndicatorVisibility](scrollindicatorvisibility/hidden.md)
+### Getting visibilties
+- [static var hidden: ScrollIndicatorVisibility](./hidden.md)
   Hide the scroll indicators.
-- [static var never: ScrollIndicatorVisibility](scrollindicatorvisibility/never.md)
+- [static var never: ScrollIndicatorVisibility](./never.md)
   Scroll indicators should never be visible.
-- [static var visible: ScrollIndicatorVisibility](scrollindicatorvisibility/visible.md)
+- [static var visible: ScrollIndicatorVisibility](./visible.md)
   Show the scroll indicators.
 
 

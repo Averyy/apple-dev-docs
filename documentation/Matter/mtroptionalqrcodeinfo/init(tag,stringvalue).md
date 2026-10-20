@@ -1,7 +1,8 @@
 # init(tag:stringValue:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 init(tag: NSNumber, stringValue value: String)
+```
+
+```objc
+- (instancetype) initWithTag:(NSNumber *) tag stringValue:(NSString *) value;
 ```
 
 

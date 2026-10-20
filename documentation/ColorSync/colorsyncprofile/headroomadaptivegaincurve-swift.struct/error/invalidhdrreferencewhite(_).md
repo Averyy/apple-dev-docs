@@ -1,7 +1,8 @@
 # ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.invalidHDRReferenceWhite(_:)
 
 **Framework**: ColorSync  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The custom HDR reference white luminance isn’t greater than `0`.
 

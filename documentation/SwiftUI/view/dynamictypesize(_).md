@@ -1,7 +1,8 @@
 # dynamicTypeSize(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the Dynamic Type size within the view to the given value.
 
@@ -21,13 +22,20 @@ nonisolated
 func dynamicTypeSize(_ size: DynamicTypeSize) -> some View
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func dynamicTypeSize<T>(_ range: T) -> some View where T : RangeExpression, T.Bound == DynamicTypeSize
+```
+
 #### Return Value
 
 A view that sets the Dynamic Type size to the specified `size`.
 
 #### Discussion
 
-As an example, you can set a Dynamic Type size in `ContentView` to be [`DynamicTypeSize.xLarge`](dynamictypesize/xlarge.md) (this can be useful in previews to see your content at a different size) like this:
+As an example, you can set a Dynamic Type size in `ContentView` to be [`DynamicTypeSize.xLarge`](../dynamictypesize/xlarge.md) (this can be useful in previews to see your content at a different size) like this:
 
 ```swift
 ContentView()
@@ -42,7 +50,7 @@ ContentView() // Dynamic Type size will be .large
     .dynamicTypeSize(.xLarge)
 ```
 
-When limiting the Dynamic Type size, consider if adding a large content view with [`accessibilityShowsLargeContentViewer()`](view/accessibilityshowslargecontentviewer().md) would be appropriate.
+When limiting the Dynamic Type size, consider if adding a large content view with [`accessibilityShowsLargeContentViewer()`](./accessibilityshowslargecontentviewer%28%29.md) would be appropriate.
 
 ## Parameters
 
@@ -50,21 +58,22 @@ When limiting the Dynamic Type size, consider if adding a large content view wit
 
 ## See Also
 
-- [func textScale(Text.Scale, isEnabled: Bool) -> some View](view/textscale(_:isenabled:).md)
+### Adjusting text size
+- [func textScale(Text.Scale, isEnabled: Bool) -> some View](./textscale%28_,isenabled%29.md)
   Applies a text scale to text in the view.
-- [var dynamicTypeSize: DynamicTypeSize](environmentvalues/dynamictypesize.md)
+- [var dynamicTypeSize: DynamicTypeSize](../environmentvalues/dynamictypesize.md)
   The current Dynamic Type size.
-- [enum DynamicTypeSize](dynamictypesize.md)
+- [enum DynamicTypeSize](../dynamictypesize.md)
   A Dynamic Type size, which specifies how large scalable content should be.
-- [struct ScaledMetric](scaledmetric.md)
+- [struct ScaledMetric](../scaledmetric.md)
   A dynamic property that scales a numeric value.
-- [protocol TextVariantPreference](textvariantpreference.md)
+- [protocol TextVariantPreference](../textvariantpreference.md)
   A protocol for controlling the size variant of text views.
-- [struct FixedTextVariant](fixedtextvariant.md)
+- [struct FixedTextVariant](../fixedtextvariant.md)
   The default text variant preference that chooses the largest available variant.
-- [struct SizeDependentTextVariant](sizedependenttextvariant.md)
+- [struct SizeDependentTextVariant](../sizedependenttextvariant.md)
   The size dependent variant preference allows the text to take the available space into account when choosing the variant to display.
-- [enum ContentSizeCategory](contentsizecategory.md)
+- [enum ContentSizeCategory](../contentsizecategory.md)
   The sizes that you can specify for content.
 
 

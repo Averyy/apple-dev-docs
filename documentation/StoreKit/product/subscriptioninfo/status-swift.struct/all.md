@@ -1,7 +1,8 @@
 # all
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.0+
@@ -20,9 +21,10 @@ static var all: AsyncStream<(groupID: String, statuses: [Product.SubscriptionInf
 
 ## See Also
 
-- [static var updates: Product.SubscriptionInfo.Status.Statuses](product/subscriptioninfo/status-swift.struct/updates.md)
+### Monitoring subscription status changes
+- [static var updates: Product.SubscriptionInfo.Status.Statuses](./updates.md)
   The asynchronous sequence that emits status information when a subscription’s status changes.
-- [Product.SubscriptionInfo.Status.Statuses](product/subscriptioninfo/status-swift.struct/statuses.md)
+- [Product.SubscriptionInfo.Status.Statuses](./statuses.md)
   An asynchronous sequence that listens for new subscription status information.
 
 

@@ -1,7 +1,8 @@
 # WKUserInterfaceDirectionPolicy.system
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The directionality follows the view’s user interface layout direction.
 
@@ -14,13 +15,18 @@ The directionality follows the view’s user interface layout direction.
 case system
 ```
 
+```c
+WKUserInterfaceDirectionPolicySystem
+```
+
 #### Discussion
 
-The web view adheres to the direction in its [`userInterfaceLayoutDirection`](https://developer.apple.com/documentation/appkit/nsview/userinterfacelayoutdirection) property.
+The web view adheres to the direction in its [`userInterfaceLayoutDirection`](../../AppKit/nsview/userinterfacelayoutdirection.md) property.
 
 ## See Also
 
-- [WKUserInterfaceDirectionPolicy.content](wkuserinterfacedirectionpolicy/content.md)
+### Direction Policies
+- [WKUserInterfaceDirectionPolicy.content](./content.md)
   The directionality follows the CSS/HTML/XHTML specifications.
 
 

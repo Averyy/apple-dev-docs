@@ -1,7 +1,8 @@
 # collect(_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Collects up to the specified number of elements, and then emits a single array of the collection.
 
@@ -22,7 +23,7 @@ func collect(_ count: Int) -> Publishers.CollectByCount<Self>
 
 ## Mentions
 
-- [Processing Published Elements with Subscribers](processing-published-elements-with-subscribers.md)
+- [Processing Published Elements with Subscribers](../processing-published-elements-with-subscribers.md)
 
 #### Return Value
 
@@ -30,11 +31,11 @@ A publisher that collects up to the specified number of elements, and then publi
 
 #### Discussion
 
-Use [`collect(_:)`](publisher/collect(_:).md) to emit arrays of at most `count` elements from an upstream publisher. If the upstream publisher finishes before collecting the specified number of elements, the publisher sends an array of only the items it received. This may be fewer than `count` elements.
+Use [`collect(_:)`](./collect%28_%29.md) to emit arrays of at most `count` elements from an upstream publisher. If the upstream publisher finishes before collecting the specified number of elements, the publisher sends an array of only the items it received. This may be fewer than `count` elements.
 
 If the upstream publisher fails with an error, this publisher forwards the error to the downstream receiver instead of sending its output.
 
-In the example below, the [`collect(_:)`](publisher/collect(_:).md) operator emits one partial and two full arrays based on the requested collection size of `5`:
+In the example below, the [`collect(_:)`](./collect%28_%29.md) operator emits one partial and two full arrays based on the requested collection size of `5`:
 
 ```swift
 let numbers = (0...10)
@@ -53,17 +54,18 @@ cancellable = numbers.publisher
 
 ## See Also
 
-- [func collect() -> Publishers.Collect<Self>](publisher/collect.md)
+### Reducing elements
+- [func collect() -> Publishers.Collect<Self>](./collect%28%29.md)
   Collects all received elements, and emits a single array of the collection when the upstream publisher finishes.
-- [func collect<S>(Publishers.TimeGroupingStrategy<S>, options: S.SchedulerOptions?) -> Publishers.CollectByTime<Self, S>](publisher/collect(_:options:).md)
+- [func collect<S>(Publishers.TimeGroupingStrategy<S>, options: S.SchedulerOptions?) -> Publishers.CollectByTime<Self, S>](./collect%28_,options%29.md)
   Collects elements by a given time-grouping strategy, and emits a single array of the collection.
-- [Publishers.TimeGroupingStrategy](publishers/timegroupingstrategy.md)
+- [Publishers.TimeGroupingStrategy](../publishers/timegroupingstrategy.md)
   A strategy for collecting received elements.
-- [func ignoreOutput() -> Publishers.IgnoreOutput<Self>](publisher/ignoreoutput.md)
+- [func ignoreOutput() -> Publishers.IgnoreOutput<Self>](./ignoreoutput%28%29.md)
   Ignores all upstream elements, but passes along the upstream publisher’s completion state (finished or failed).
-- [func reduce<T>(T, (T, Self.Output) -> T) -> Publishers.Reduce<Self, T>](publisher/reduce(_:_:).md)
+- [func reduce<T>(T, (T, Self.Output) -> T) -> Publishers.Reduce<Self, T>](./reduce%28_,_%29.md)
   Applies a closure that collects each element of a stream and publishes a final result upon completion.
-- [func tryReduce<T>(T, (T, Self.Output) throws -> T) -> Publishers.TryReduce<Self, T>](publisher/tryreduce(_:_:).md)
+- [func tryReduce<T>(T, (T, Self.Output) throws -> T) -> Publishers.TryReduce<Self, T>](./tryreduce%28_,_%29.md)
   Applies an error-throwing closure that collects each element of a stream and publishes a final result upon completion.
 
 

@@ -1,18 +1,19 @@
 # userFactorStorage
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether user-provided storage backs this object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,23 +21,28 @@ A Boolean value that indicates whether user-provided storage backs this object.
 var userFactorStorage: Bool
 ```
 
+```c
+bool userFactorStorage;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the user must free factor storage after all references finish (though [`SparseCleanup(_:)`](sparsecleanup(_:)-3cnxt.md) still frees any additional allocated storage due to pivoting).
+If [`true`](../../Swift/true.md), the user must free factor storage after all references finish (though [`SparseCleanup(_:)`](../sparsecleanup%28_%29-3cnxt.md) still frees any additional allocated storage due to pivoting).
 
 ## See Also
 
-- [var attributes: SparseAttributes_t](sparseopaquefactorization_double/attributes.md)
+### Instance Properties
+- [var attributes: SparseAttributes_t](./attributes.md)
   The attributes of a factorization object.
-- [var numericFactorization: UnsafeMutableRawPointer?](sparseopaquefactorization_double/numericfactorization.md)
+- [var numericFactorization: UnsafeMutableRawPointer?](./numericfactorization.md)
   The pointer to a private internal representation of a numeric factor.
-- [var solveWorkspaceRequiredPerRHS: Int](sparseopaquefactorization_double/solveworkspacerequiredperrhs.md)
+- [var solveWorkspaceRequiredPerRHS: Int](./solveworkspacerequiredperrhs.md)
   The required size of the per-right-hand-side workspace for a call to a sparse solve function.
-- [var solveWorkspaceRequiredStatic: Int](sparseopaquefactorization_double/solveworkspacerequiredstatic.md)
+- [var solveWorkspaceRequiredStatic: Int](./solveworkspacerequiredstatic.md)
   The required size of the static workspace for a call to a sparse solve function.
-- [var status: SparseStatus_t](sparseopaquefactorization_double/status.md)
+- [var status: SparseStatus_t](./status.md)
   The status of the factorization object.
-- [var symbolicFactorization: SparseOpaqueSymbolicFactorization](sparseopaquefactorization_double/symbolicfactorization.md)
+- [var symbolicFactorization: SparseOpaqueSymbolicFactorization](./symbolicfactorization.md)
   The symbolic factorization that this numeric factorization depends on.
 
 

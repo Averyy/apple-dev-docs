@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the client that the URL Loading System received an authentication challenge.
@@ -21,6 +22,10 @@ Tells the client that the URL Loading System received an authentication challeng
 func urlProtocol(_ protocol: URLProtocol, didReceive challenge: URLAuthenticationChallenge)
 ```
 
+```objc
+- (void) URLProtocol:(NSURLProtocol *) protocol didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *) challenge;
+```
+
 #### Discussion
 
 The protocol client guarantees that it will answer the request on the same thread that called this method. The client may add a default credential to the challenge it issues to the connection delegate, if `protocol` did not provide one.
@@ -32,7 +37,8 @@ The protocol client guarantees that it will answer the request on the same threa
 
 ## See Also
 
-- [func urlProtocol(URLProtocol, didCancel: URLAuthenticationChallenge)](urlprotocolclient/urlprotocol(_:didcancel:).md)
+### Handling authentication challenges
+- [func urlProtocol(URLProtocol, didCancel: URLAuthenticationChallenge)](./urlprotocol%28_,didcancel%29.md)
   Tells the client that an authentication challenge has been canceled.
 
 

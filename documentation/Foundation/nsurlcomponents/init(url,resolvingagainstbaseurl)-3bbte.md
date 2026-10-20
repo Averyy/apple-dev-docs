@@ -1,7 +1,8 @@
 # init(url:resolvingAgainstBaseURL:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a URL components object by parsing the URL from an `NSURL` object.
 
@@ -20,6 +21,10 @@ Creates a URL components object by parsing the URL from an `NSURL` object.
 init?(url: URL, resolvingAgainstBaseURL resolve: Bool)
 ```
 
+```objc
+- (instancetype) initWithURL:(NSURL *) url resolvingAgainstBaseURL:(BOOL) resolve;
+```
+
 #### Return Value
 
 Returns the initialized URL components object, or `nil` if the URL could not be parsed.
@@ -27,15 +32,16 @@ Returns the initialized URL components object, or `nil` if the URL could not be 
 ## Parameters
 
 - `url`: The URL to parse.
-- `resolve`: Controls whether the URL should be resolved against its base URL before parsing. If [`true`](https://developer.apple.com/documentation/swift/true), and if the `url` parameter contains a relative URL, the original URL is resolved against its base URL before parsing by calling the [`absoluteURL`](nsurl/absoluteurl.md) method. Otherwise, the string portion is used by itself.
+- `resolve`: Controls whether the URL should be resolved against its base URL before parsing. If [`true`](../../Swift/true.md), and if the `url` parameter contains a relative URL, the original URL is resolved against its base URL before parsing by calling the [`absoluteURL`](../nsurl/absoluteurl.md) method. Otherwise, the string portion is used by itself.
 
 ## See Also
 
-- [init()](nsurlcomponents/init.md)
+### Creating URL components
+- [init()](./init%28%29.md)
   Creates a URL components object with all components left undefined.
-- [init?(string: String)](nsurlcomponents/init(string:).md)
+- [init?(string: String)](./init%28string%29.md)
   Creates a URL components object by parsing a URL in string form.
-- [init?(string: String, encodingInvalidCharacters: Bool)](nsurlcomponents/init(string:encodinginvalidcharacters:).md)
+- [init?(string: String, encodingInvalidCharacters: Bool)](./init%28string,encodinginvalidcharacters%29.md)
   Creates a URL components instance from the provided string, optionally IDNA- and percent-encoding any invalid characters.
 
 

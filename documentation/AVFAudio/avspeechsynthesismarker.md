@@ -1,7 +1,8 @@
 # AVSpeechSynthesisMarker
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains information about the synthesized audio.
 
@@ -20,69 +21,74 @@ An object that contains information about the synthesized audio.
 class AVSpeechSynthesisMarker
 ```
 
+```objc
+@interface AVSpeechSynthesisMarker : NSObject
+```
+
 ## Topics
 
 ### Creating a marker
-- [init(markerType: AVSpeechSynthesisMarker.Mark, forTextRange: NSRange, atByteSampleOffset: Int)](avspeechsynthesismarker/init(markertype:fortextrange:atbytesampleoffset:).md)
+- [init(markerType: AVSpeechSynthesisMarker.Mark, forTextRange: NSRange, atByteSampleOffset: Int)](./avspeechsynthesismarker/init%28markertype,fortextrange,atbytesampleoffset%29.md)
   Creates a marker with a type and location of the request’s text.
-- [init(wordRange: NSRange, atByteSampleOffset: Int)](avspeechsynthesismarker/init(wordrange:atbytesampleoffset:).md)
+- [init(wordRange: NSRange, atByteSampleOffset: Int)](./avspeechsynthesismarker/init%28wordrange,atbytesampleoffset%29.md)
   Creates a word marker with a range of the word and offset into the audio buffer.
-- [init(sentenceRange: NSRange, atByteSampleOffset: Int)](avspeechsynthesismarker/init(sentencerange:atbytesampleoffset:).md)
+- [init(sentenceRange: NSRange, atByteSampleOffset: Int)](./avspeechsynthesismarker/init%28sentencerange,atbytesampleoffset%29.md)
   Creates a sentence marker with a range of the sentence and offset into the audio buffer.
-- [init(paragraphRange: NSRange, atByteSampleOffset: Int)](avspeechsynthesismarker/init(paragraphrange:atbytesampleoffset:).md)
+- [init(paragraphRange: NSRange, atByteSampleOffset: Int)](./avspeechsynthesismarker/init%28paragraphrange,atbytesampleoffset%29.md)
   Creates a paragraph marker with a range of the paragraph and offset into the audio buffer.
-- [init(phonemeString: String, atByteSampleOffset: Int)](avspeechsynthesismarker/init(phonemestring:atbytesampleoffset:).md)
+- [init(phonemeString: String, atByteSampleOffset: Int)](./avspeechsynthesismarker/init%28phonemestring,atbytesampleoffset%29.md)
   Creates a phoneme marker with a range of the phoneme and offset into the audio buffer.
-- [init(bookmarkName: String, atByteSampleOffset: Int)](avspeechsynthesismarker/init(bookmarkname:atbytesampleoffset:).md)
+- [init(bookmarkName: String, atByteSampleOffset: Int)](./avspeechsynthesismarker/init%28bookmarkname,atbytesampleoffset%29.md)
   Creates a bookmark marker with a name and offset into the audio buffer.
 ### Inspecting a marker
-- [var mark: AVSpeechSynthesisMarker.Mark](avspeechsynthesismarker/mark-swift.property.md)
+- [var mark: AVSpeechSynthesisMarker.Mark](./avspeechsynthesismarker/mark-swift.property.md)
   The type that describes the text.
-- [var bookmarkName: String](avspeechsynthesismarker/bookmarkname.md)
+- [var bookmarkName: String](./avspeechsynthesismarker/bookmarkname.md)
   A string that represents the name of a bookmark.
-- [var phoneme: String](avspeechsynthesismarker/phoneme.md)
+- [var phoneme: String](./avspeechsynthesismarker/phoneme.md)
   A string that represents a distinct sound.
-- [var textRange: NSRange](avspeechsynthesismarker/textrange.md)
+- [var textRange: NSRange](./avspeechsynthesismarker/textrange.md)
   The location and length of the request’s text.
-- [var byteSampleOffset: Int](avspeechsynthesismarker/bytesampleoffset.md)
+- [var byteSampleOffset: Int](./avspeechsynthesismarker/bytesampleoffset.md)
   The byte offset into the audio buffer.
-- [AVSpeechSynthesisMarker.Mark](avspeechsynthesismarker/mark-swift.enum.md)
+- [AVSpeechSynthesisMarker.Mark](./avspeechsynthesismarker/mark-swift.enum.md)
   Constants that describe the type of text.
 ### Initializers
-- [init?(coder: NSCoder)](avspeechsynthesismarker/init(coder:).md)
+- [init?(coder: NSCoder)](./avspeechsynthesismarker/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var usesApplicationAudioSession: Bool](avspeechsynthesizer/usesapplicationaudiosession.md)
+### Directing speech output
+- [var usesApplicationAudioSession: Bool](./avspeechsynthesizer/usesapplicationaudiosession.md)
   A Boolean value that specifies whether the app manages the audio session.
-- [var mixToTelephonyUplink: Bool](avspeechsynthesizer/mixtotelephonyuplink.md)
+- [var mixToTelephonyUplink: Bool](./avspeechsynthesizer/mixtotelephonyuplink.md)
   A Boolean value that specifies whether to send synthesized speech to an active call.
-- [var outputChannels: [AVAudioSessionChannelDescription]?](avspeechsynthesizer/outputchannels.md)
+- [var outputChannels: [AVAudioSessionChannelDescription]?](./avspeechsynthesizer/outputchannels.md)
   An array of audio session channels to route generated speech.
-- [func write(AVSpeechUtterance, toBufferCallback: AVSpeechSynthesizer.BufferCallback)](avspeechsynthesizer/write(_:tobuffercallback:).md)
+- [func write(AVSpeechUtterance, toBufferCallback: AVSpeechSynthesizer.BufferCallback)](./avspeechsynthesizer/write%28_,tobuffercallback%29.md)
   Generates speech for the utterance and invokes the callback with the audio buffer.
-- [AVSpeechSynthesizer.BufferCallback](avspeechsynthesizer/buffercallback.md)
+- [AVSpeechSynthesizer.BufferCallback](./avspeechsynthesizer/buffercallback.md)
   A type that defines a callback that receives a buffer of generated speech.
-- [func write(AVSpeechUtterance, toBufferCallback: AVSpeechSynthesizer.BufferCallback, toMarkerCallback: AVSpeechSynthesizer.MarkerCallback)](avspeechsynthesizer/write(_:tobuffercallback:tomarkercallback:).md)
+- [func write(AVSpeechUtterance, toBufferCallback: AVSpeechSynthesizer.BufferCallback, toMarkerCallback: AVSpeechSynthesizer.MarkerCallback)](./avspeechsynthesizer/write%28_,tobuffercallback,tomarkercallback%29.md)
   Generates audio buffers and associated metadata for storage or further speech synthesis processing.
-- [AVSpeechSynthesizer.MarkerCallback](avspeechsynthesizer/markercallback.md)
+- [AVSpeechSynthesizer.MarkerCallback](./avspeechsynthesizer/markercallback.md)
   A type that defines a callback that receives speech markers.
 
 

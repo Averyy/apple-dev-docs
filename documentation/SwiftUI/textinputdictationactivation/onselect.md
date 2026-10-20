@@ -1,7 +1,8 @@
 # onSelect
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A configuration that activates dictation when someone selects the microphone.
 
@@ -19,7 +20,8 @@ static let onSelect: TextInputDictationActivation
 
 ## See Also
 
-- [static let onLook: TextInputDictationActivation](textinputdictationactivation/onlook.md)
+### Getting activation values
+- [static let onLook: TextInputDictationActivation](./onlook.md)
   A configuration that activates dictation when someone selects the microphone or looks at the entry field.
 
 

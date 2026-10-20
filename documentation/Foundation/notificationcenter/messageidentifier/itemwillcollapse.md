@@ -1,7 +1,8 @@
 # itemWillCollapse
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var itemWillCollapse: NotificationCenter.BaseMessageIdentifier<NSOutlineView.ItemWillCollapseMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSOutlineView.ItemWillCollapseMessage>`.
 
 
 ---

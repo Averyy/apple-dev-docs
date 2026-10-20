@@ -1,7 +1,8 @@
 # icon(for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an image containing the icon for the specified content type.
 
@@ -12,6 +13,10 @@ Returns an image containing the icon for the specified content type.
 
 ```swift
 func icon(for contentType: UTType) -> NSImage
+```
+
+```objc
+- (NSImage *) iconForContentType:(UTType *) contentType;
 ```
 
 #### Return Value
@@ -28,13 +33,14 @@ This method returns a default icon if the operation fails.
 
 ## See Also
 
-- [func icon(forFile: String) -> NSImage](nsworkspace/icon(forfile:).md)
+### Managing Icons
+- [func icon(forFile: String) -> NSImage](./icon%28forfile%29.md)
   Returns an image containing the icon for the specified file.
-- [func icon(forFiles: [String]) -> NSImage?](nsworkspace/icon(forfiles:).md)
+- [func icon(forFiles: [String]) -> NSImage?](./icon%28forfiles%29.md)
   Returns an image containing the icon for the specified files.
-- [func setIcon(NSImage?, forFile: String, options: NSWorkspace.IconCreationOptions) -> Bool](nsworkspace/seticon(_:forfile:options:).md)
+- [func setIcon(NSImage?, forFile: String, options: NSWorkspace.IconCreationOptions) -> Bool](./seticon%28_,forfile,options%29.md)
   Sets the icon for the file or directory at the specified path.
-- [NSWorkspace.IconCreationOptions](nsworkspace/iconcreationoptions.md)
+- [NSWorkspace.IconCreationOptions](./iconcreationoptions.md)
   Constants that describe options for creating icons.
 
 

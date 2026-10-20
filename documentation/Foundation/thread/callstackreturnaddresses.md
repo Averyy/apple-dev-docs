@@ -1,7 +1,8 @@
 # callStackReturnAddresses
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns an array containing the call stack return addresses.
 
@@ -20,17 +21,22 @@ Returns an array containing the call stack return addresses.
 class var callStackReturnAddresses: [NSNumber] { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSArray<NSNumber *> * callStackReturnAddresses;
+```
+
 #### Return Value
 
 An array containing the call stack return addresses. Each element is an `NSNumber` object containing an `NSUInteger` value.
 
 ## See Also
 
-- [class func isMultiThreaded() -> Bool](thread/ismultithreaded.md)
+### Querying the Environment
+- [class func isMultiThreaded() -> Bool](./ismultithreaded%28%29.md)
   Returns whether the application is multithreaded.
-- [class var current: Thread](thread/current.md)
+- [class var current: Thread](./current.md)
   Returns the thread object representing the current thread of execution.
-- [class var callStackSymbols: [String]](thread/callstacksymbols.md)
+- [class var callStackSymbols: [String]](./callstacksymbols.md)
   Returns an array containing the call stack symbols.
 
 

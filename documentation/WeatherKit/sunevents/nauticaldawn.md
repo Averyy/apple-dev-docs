@@ -1,7 +1,8 @@
 # nauticalDawn
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time of nautical sunrise when the sun’s center is 12° below the horizon.
 
@@ -26,23 +27,24 @@ There is enough light for sailors to distinguish the horizon at sea, but the sky
 
 ## See Also
 
-- [var astronomicalDawn: Date?](sunevents/astronomicaldawn.md)
+### Getting the sun events
+- [var astronomicalDawn: Date?](./astronomicaldawn.md)
   The time of astronomical sunrise when the sun’s center is 18° below the horizon.
-- [var astronomicalDusk: Date?](sunevents/astronomicaldusk.md)
+- [var astronomicalDusk: Date?](./astronomicaldusk.md)
   The time of astronomical sunset, when the sun’s center is 18° below the horizon.
-- [var civilDawn: Date?](sunevents/civildawn.md)
+- [var civilDawn: Date?](./civildawn.md)
   The time of civil sunrise when the sun’s center is 6° below the horizon.
-- [var civilDusk: Date?](sunevents/civildusk.md)
+- [var civilDusk: Date?](./civildusk.md)
   The time of civil sunset, when the sun’s center is 6° below the horizon.
-- [var nauticalDusk: Date?](sunevents/nauticaldusk.md)
+- [var nauticalDusk: Date?](./nauticaldusk.md)
   The time of nautical sunset, when the sun’s center is 12° below the horizon.
-- [var solarMidnight: Date?](sunevents/solarmidnight.md)
+- [var solarMidnight: Date?](./solarmidnight.md)
   Represents solar midnight, the time when the sun reaches its lowest point in the sky.
-- [var solarNoon: Date?](sunevents/solarnoon.md)
+- [var solarNoon: Date?](./solarnoon.md)
   Represents solar noon, the time when the sun reaches its highest point in the sky.
-- [var sunrise: Date?](sunevents/sunrise.md)
+- [var sunrise: Date?](./sunrise.md)
   The sunrise time immediately before the solar transit closest to calendar noon.
-- [var sunset: Date?](sunevents/sunset.md)
+- [var sunset: Date?](./sunset.md)
   The sunset time immediately after the solar transit closest to calendar noon.
 
 

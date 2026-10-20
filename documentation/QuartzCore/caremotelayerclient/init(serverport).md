@@ -1,7 +1,8 @@
 # init(serverPort:)
 
 **Framework**: Core Animation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a layer client from a server port.
 
@@ -13,6 +14,10 @@ Creates a layer client from a server port.
 
 ```swift
 init(serverPort port: mach_port_t)
+```
+
+```objc
+- (instancetype) initWithServerPort:(mach_port_t) port;
 ```
 
 

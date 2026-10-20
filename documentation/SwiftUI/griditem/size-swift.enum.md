@@ -1,7 +1,8 @@
 # GridItem.Size
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The size in the minor axis of one or more rows or columns in a grid layout.
 
@@ -22,32 +23,33 @@ enum Size
 
 #### Overview
 
-Use a `Size` instance when you create a [`GridItem`](griditem.md). The value tells a [`LazyHGrid`](lazyhgrid.md) how to size its rows, or a [`LazyVGrid`](lazyvgrid.md) how to size its columns.
+Use a `Size` instance when you create a [`GridItem`](../griditem.md). The value tells a [`LazyHGrid`](../lazyhgrid.md) how to size its rows, or a [`LazyVGrid`](../lazyvgrid.md) how to size its columns.
 
 ## Topics
 
 ### Getting the sizes
-- [case adaptive(minimum: CGFloat, maximum: CGFloat)](griditem/size-swift.enum/adaptive(minimum:maximum:).md)
+- [case adaptive(minimum: CGFloat, maximum: CGFloat)](./size-swift.enum/adaptive%28minimum,maximum%29.md)
   Multiple items in the space of a single flexible item.
-- [GridItem.Size.fixed(_:)](griditem/size-swift.enum/fixed(_:).md)
+- [GridItem.Size.fixed(_:)](./size-swift.enum/fixed%28_%29.md)
   A single item with the specified fixed size.
-- [case flexible(minimum: CGFloat, maximum: CGFloat)](griditem/size-swift.enum/flexible(minimum:maximum:).md)
+- [case flexible(minimum: CGFloat, maximum: CGFloat)](./size-swift.enum/flexible%28minimum,maximum%29.md)
   A single flexible item.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var alignment: Alignment?](griditem/alignment.md)
+### Inspecting grid item properties
+- [var alignment: Alignment?](./alignment.md)
   The alignment to use when placing each view.
-- [var spacing: CGFloat?](griditem/spacing.md)
+- [var spacing: CGFloat?](./spacing.md)
   The spacing to the next item.
-- [var size: GridItem.Size](griditem/size-swift.property.md)
+- [var size: GridItem.Size](./size-swift.property.md)
   The size of the item, which is the width of a column item or the height of a row item.
 
 

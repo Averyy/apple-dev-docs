@@ -1,7 +1,8 @@
 # NSCursor.FrameResizePosition.left
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The left edge of the frame.
 
@@ -13,6 +14,10 @@ The left edge of the frame.
 
 ```swift
 case left
+```
+
+```c
+NSCursorFrameResizePositionLeft
 ```
 
 

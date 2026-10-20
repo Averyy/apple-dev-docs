@@ -1,6 +1,7 @@
 # In-Place Functions for 2D Real FFT
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 Perform fast Fourier transforms in place on 2D real data.
 
@@ -119,7 +120,8 @@ The temporary buffer versions perform the same operation but use a temporary buf
 
 ## See Also
 
-- [Out-of-Place Functions for 2D Real FFT](out-of-place-functions-for-2d-real-fft.md)
+### Functions for 2D Real FFT
+- [Out-of-Place Functions for 2D Real FFT](./out-of-place-functions-for-2d-real-fft.md)
   Perform fast Fourier transforms out of place on 2D real data.
 
 

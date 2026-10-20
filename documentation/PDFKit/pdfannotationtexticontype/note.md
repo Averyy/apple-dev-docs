@@ -1,7 +1,8 @@
 # note
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An icon that represents a note.
 
@@ -19,19 +20,24 @@ An icon that represents a note.
 static let note: PDFAnnotationTextIconType
 ```
 
+```c
+extern PDFAnnotationTextIconType PDFAnnotationTextIconTypeNote;
+```
+
 ## See Also
 
-- [static let comment: PDFAnnotationTextIconType](pdfannotationtexticontype/comment.md)
+### Choosing a Text Icon Type
+- [static let comment: PDFAnnotationTextIconType](./comment.md)
   An icon that represents a comment.
-- [static let key: PDFAnnotationTextIconType](pdfannotationtexticontype/key.md)
+- [static let key: PDFAnnotationTextIconType](./key.md)
   An icon that represents a key.
-- [static let help: PDFAnnotationTextIconType](pdfannotationtexticontype/help.md)
+- [static let help: PDFAnnotationTextIconType](./help.md)
   An icon that indicates help information is available.
-- [static let newParagraph: PDFAnnotationTextIconType](pdfannotationtexticontype/newparagraph.md)
+- [static let newParagraph: PDFAnnotationTextIconType](./newparagraph.md)
   An icon that represents a new paragraph.
-- [static let paragraph: PDFAnnotationTextIconType](pdfannotationtexticontype/paragraph.md)
+- [static let paragraph: PDFAnnotationTextIconType](./paragraph.md)
   An icon that represents a paragraph.
-- [static let insert: PDFAnnotationTextIconType](pdfannotationtexticontype/insert.md)
+- [static let insert: PDFAnnotationTextIconType](./insert.md)
   An icon that represents an insertion command.
 
 

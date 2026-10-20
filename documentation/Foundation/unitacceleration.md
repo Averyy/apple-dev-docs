@@ -1,7 +1,8 @@
 # UnitAcceleration
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A unit of measure for acceleration.
 
@@ -20,56 +21,61 @@ A unit of measure for acceleration.
 class UnitAcceleration
 ```
 
+```objc
+@interface NSUnitAcceleration : NSDimension
+```
+
 #### Overview
 
-You typically use instances of [`UnitAcceleration`](unitacceleration.md) to represent specific quantities of acceleration using the [`NSMeasurement`](nsmeasurement.md) class.
+You typically use instances of [`UnitAcceleration`](./unitacceleration.md) to represent specific quantities of acceleration using the [`NSMeasurement`](./nsmeasurement.md) class.
 
 ##### Acceleration
 
 Acceleration is the rate of change of velocity. Acceleration can be expressed by SI derived units in terms of meters per second squared (m/s2).
 
-The [`UnitAcceleration`](unitacceleration.md) class defines its [`baseUnit()`](dimension/baseunit().md) as [`metersPerSecondSquared`](unitacceleration/meterspersecondsquared.md), and provides the following units, which are initialized using [`UnitConverterLinear`](unitconverterlinear.md) converters with the specified coefficients:
+The [`UnitAcceleration`](./unitacceleration.md) class defines its [`baseUnit()`](./dimension/baseunit%28%29.md) as [`metersPerSecondSquared`](./unitacceleration/meterspersecondsquared.md), and provides the following units, which are initialized using [`UnitConverterLinear`](./unitconverterlinear.md) converters with the specified coefficients:
 
 | Name | Method | Symbol | Coefficient |
 | --- | --- | --- | --- |
-| Meters Per Second Squared | [`metersPerSecondSquared`](unitacceleration/meterspersecondsquared.md) | m/s² | `1.0` |
-| Gravity | [`gravity`](unitacceleration/gravity.md) | g | `9.81` |
+| Meters Per Second Squared | [`metersPerSecondSquared`](./unitacceleration/meterspersecondsquared.md) | m/s² | `1.0` |
+| Gravity | [`gravity`](./unitacceleration/gravity.md) | g | `9.81` |
 
 ## Topics
 
 ### Accessing the Base Unit
-- [class func baseUnit() -> Self](dimension/baseunit.md)
+- [class func baseUnit() -> Self](./dimension/baseunit%28%29.md)
   Returns the base unit.
 ### Accessing Predefined Units
-- [class var metersPerSecondSquared: UnitAcceleration](unitacceleration/meterspersecondsquared.md)
+- [class var metersPerSecondSquared: UnitAcceleration](./unitacceleration/meterspersecondsquared.md)
   Returns the meter per second squared unit of acceleration.
-- [class var gravity: UnitAcceleration](unitacceleration/gravity.md)
+- [class var gravity: UnitAcceleration](./unitacceleration/gravity.md)
   Returns the gravity unit of acceleration.
 
 ## Relationships
 
 ### Inherits From
-- [Dimension](dimension.md)
+- [Dimension](./dimension.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UnitDuration](unitduration.md)
+### Time and Motion
+- [class UnitDuration](./unitduration.md)
   A unit of measure for a duration of time.
-- [class UnitFrequency](unitfrequency.md)
+- [class UnitFrequency](./unitfrequency.md)
   A unit of measure for frequency.
-- [class UnitSpeed](unitspeed.md)
+- [class UnitSpeed](./unitspeed.md)
   A unit of measure for speed.
 
 

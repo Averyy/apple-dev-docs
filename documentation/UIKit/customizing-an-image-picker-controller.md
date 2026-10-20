@@ -1,6 +1,8 @@
 # Customizing an image picker controller
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Sample Code  
+**Download**: [CustomizingAnImagePickerController.zip](https://docs-assets.developer.apple.com/published/8a225e1270c0/CustomizingAnImagePickerController.zip)
 
 Manage user interactions and present custom information when taking pictures by adding an overlay view to your image picker.
 
@@ -20,15 +22,15 @@ The sample app uses an overlay view to:
 - Display custom information (such as images to enhance the interface).
 - Implement a number of unique camera functions such as single picture capture, timed picture capture, and repeated pictures like a camera with a fast shutter speed.
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 Because the camera isn’t available in Simulator, you’ll need to build and run this sample on a device with iOS 10 or later installed.
 
 When you first launch the sample app on device, you’ll need to grant the app permission to use the camera.
 
-##### Set Up the Overlay View
+##### Set up the overlay view
 
-The sample app uses the [`cameraOverlayView`](uiimagepickercontroller/cameraoverlayview.md) property to provide an overlay view that contains the custom view hierarchy. The image picker places the custom overlay view on top of the other image picker views.
+The sample app uses the [`cameraOverlayView`](./uiimagepickercontroller/cameraoverlayview.md) property to provide an overlay view that contains the custom view hierarchy. The image picker places the custom overlay view on top of the other image picker views.
 
 ```swift
 /*
@@ -39,16 +41,16 @@ overlayView?.frame = (imagePickerController.cameraOverlayView?.frame)!
 imagePickerController.cameraOverlayView = overlayView
 ```
 
-An app can access the [`cameraOverlayView`](uiimagepickercontroller/cameraoverlayview.md) property only when the source type of the image picker is set to `UIImagePickerController.SourceType.camera`.
+An app can access the [`cameraOverlayView`](./uiimagepickercontroller/cameraoverlayview.md) property only when the source type of the image picker is set to `UIImagePickerController.SourceType.camera`.
 
-When the user interacts with interface elements in the custom view, the app calls an image picker method such as [`takePicture()`](uiimagepickercontroller/takepicture().md) to capture a photo, and implement other features. This sample’s custom image picker controller interface provides the following features:
+When the user interacts with interface elements in the custom view, the app calls an image picker method such as [`takePicture()`](./uiimagepickercontroller/takepicture%28%29.md) to capture a photo, and implement other features. This sample’s custom image picker controller interface provides the following features:
 
 - Take a Picture
 - Take a Delayed Picture
 - Take Repeated Pictures
 - Browse Media in the Photo Library
 
-The [`showsCameraControls`](uiimagepickercontroller/showscameracontrols.md) property indicates whether the image picker displays the default camera controls. The [`showsCameraControls`](uiimagepickercontroller/showscameracontrols.md) property is only accessible when the source type of the image picker is `UIImagePickerController.SourceType.camera`. This sample sets [`showsCameraControls`](uiimagepickercontroller/showscameracontrols.md) to `false` to hide the default controls and provide a custom overlay view.
+The [`showsCameraControls`](./uiimagepickercontroller/showscameracontrols.md) property indicates whether the image picker displays the default camera controls. The [`showsCameraControls`](./uiimagepickercontroller/showscameracontrols.md) property is only accessible when the source type of the image picker is `UIImagePickerController.SourceType.camera`. This sample sets [`showsCameraControls`](./uiimagepickercontroller/showscameracontrols.md) to `false` to hide the default controls and provide a custom overlay view.
 
 ```swift
 if sourceType == UIImagePickerController.SourceType.camera {
@@ -74,9 +76,9 @@ if sourceType == UIImagePickerController.SourceType.camera {
 }
 ```
 
-##### Take a Picture
+##### Take a picture
 
-Take a picture with the Snap button. Its action method calls the [`takePicture()`](uiimagepickercontroller/takepicture().md) method to actually take a picture.
+Take a picture with the Snap button. Its action method calls the [`takePicture()`](./uiimagepickercontroller/takepicture%28%29.md) method to actually take a picture.
 
 ```swift
 @IBAction func takePhoto(_ sender: UIBarButtonItem) {
@@ -84,9 +86,9 @@ imagePickerController.takePicture()
 }
 ```
 
-##### Take a Delayed Picture
+##### Take a delayed picture
 
-Take a picture after a short delay with the Delayed button. Its action method calls the [`takePicture()`](uiimagepickercontroller/takepicture().md) method to take a picture when the timer expires.
+Take a picture after a short delay with the Delayed button. Its action method calls the [`takePicture()`](./uiimagepickercontroller/takepicture%28%29.md) method to take a picture when the timer expires.
 
 ```swift
 @IBAction func delayedTakePhoto(_ sender: UIBarButtonItem) {
@@ -115,11 +117,11 @@ Take a picture after a short delay with the Delayed button. Its action method ca
 }
 ```
 
-##### Take Repeated Pictures
+##### Take repeated pictures
 
-Take repeated pictures at a certain interval with the Start button; for example, one photo every five seconds. Its action method creates a timer to take pictures at certain intervals using the [`takePicture()`](uiimagepickercontroller/takepicture().md) method.
+Take repeated pictures at a certain interval with the Start button; for example, one photo every five seconds. Its action method creates a timer to take pictures at certain intervals using the [`takePicture()`](./uiimagepickercontroller/takepicture%28%29.md) method.
 
-This sample takes pictures indefinitely, causing it to run out of memory quickly. You must decide upon a proper threshold of the number of captured photos for your own app (for simplicity, this app does not enforce a limit). To avoid memory constraints, save each taken photo to disk rather than keeping all of the pictures in memory. The system may invoke your app’s [`didReceiveMemoryWarning()`](uiviewcontroller/didreceivememorywarning().md)  method in low memory situations so the app can recover some memory and continue taking photos.
+This sample takes pictures indefinitely, causing it to run out of memory quickly. You must decide upon a proper threshold of the number of captured photos for your own app (for simplicity, this app does not enforce a limit). To avoid memory constraints, save each taken photo to disk rather than keeping all of the pictures in memory. The system may invoke your app’s [`didReceiveMemoryWarning()`](./uiviewcontroller/didreceivememorywarning%28%29.md)  method in low memory situations so the app can recover some memory and continue taking photos.
 
 ```swift
 @IBAction func startTakingPicturesAtIntervals(_ sender: UIBarButtonItem) {
@@ -160,9 +162,9 @@ The camera starts taking pictures as soon as the user taps the Start button (whi
 }
 ```
 
-##### Browse Media in the Photo Library
+##### Browse media in the Photo Library
 
-To browse images saved in the photo albums on the device, add a button that the user can press to go to their Photo Library. The button’s action method configures the picker for browsing saved media by setting its [`sourceType`](uiimagepickercontroller/sourcetype-swift.property.md) property to `UIImagePickerController.SourceType.photoLibrary`, before presenting the picker’s media browser user interface.
+To browse images saved in the photo albums on the device, add a button that the user can press to go to their Photo Library. The button’s action method configures the picker for browsing saved media by setting its [`sourceType`](./uiimagepickercontroller/sourcetype-swift.property.md) property to `UIImagePickerController.SourceType.photoLibrary`, before presenting the picker’s media browser user interface.
 
 ```swift
 @IBAction func showImagePickerForPhotoPicker(_ sender: UIBarButtonItem) {
@@ -170,17 +172,18 @@ showImagePicker(sourceType: UIImagePickerController.SourceType.photoLibrary, but
 }
 ```
 
-Selecting a photo invokes the app’s [`imagePickerController(_:didFinishPickingMediaWithInfo:)`](uiimagepickercontrollerdelegate/imagepickercontroller(_:didfinishpickingmediawithinfo:).md) delegate method which saves the selected image to an array and displays it in the app’s image view.
+Selecting a photo invokes the app’s [`imagePickerController(_:didFinishPickingMediaWithInfo:)`](./uiimagepickercontrollerdelegate/imagepickercontroller%28_,didfinishpickingmediawithinfo%29.md) delegate method which saves the selected image to an array and displays it in the app’s image view.
 
-Tapping the Cancel button invokes the app’s [`imagePickerControllerDidCancel(_:)`](uiimagepickercontrollerdelegate/imagepickercontrollerdidcancel(_:).md) delegate method which calls [`dismiss(animated:completion:)`](uiviewcontroller/dismiss(animated:completion:).md) to dismiss the picker.
+Tapping the Cancel button invokes the app’s [`imagePickerControllerDidCancel(_:)`](./uiimagepickercontrollerdelegate/imagepickercontrollerdidcancel%28_%29.md) delegate method which calls [`dismiss(animated:completion:)`](./uiviewcontroller/dismiss%28animated,completion%29.md) to dismiss the picker.
 
 ## See Also
 
-- [var showsCameraControls: Bool](uiimagepickercontroller/showscameracontrols.md)
+### Customizing the camera controls
+- [var showsCameraControls: Bool](./uiimagepickercontroller/showscameracontrols.md)
   A Boolean value that indicates whether the image picker displays the default camera controls.
-- [var cameraOverlayView: UIView?](uiimagepickercontroller/cameraoverlayview.md)
+- [var cameraOverlayView: UIView?](./uiimagepickercontroller/cameraoverlayview.md)
   The view to display on top of the default image picker interface.
-- [var cameraViewTransform: CGAffineTransform](uiimagepickercontroller/cameraviewtransform.md)
+- [var cameraViewTransform: CGAffineTransform](./uiimagepickercontroller/cameraviewtransform.md)
   The transform to apply to the camera’s preview image.
 
 

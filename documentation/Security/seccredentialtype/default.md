@@ -1,12 +1,15 @@
 # SecCredentialType.default
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default setting for determining whether to present UI is used.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 12.0
+
+> **Deprecated**: No longer supported
 
 ## Declaration
 
@@ -14,9 +17,13 @@ The default setting for determining whether to present UI is used.
 case `default`
 ```
 
+```c
+kSecCredentialTypeDefault
+```
+
 #### Discussion
 
-The default setting can be changed with a call to [`SecKeychainSetUserInteractionAllowed(_:)`](seckeychainsetuserinteractionallowed(_:).md).
+The default setting can be changed with a call to [`SecKeychainSetUserInteractionAllowed(_:)`](../seckeychainsetuserinteractionallowed%28_%29.md).
 
 
 ---

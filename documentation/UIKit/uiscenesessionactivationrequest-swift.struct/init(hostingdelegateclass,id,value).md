@@ -1,7 +1,8 @@
 # init(hostingDelegateClass:id:value:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a `UISceneSessionActivationRequest` customized to open a SwiftUI scene with the given identifier and presented value.
 
@@ -22,7 +23,7 @@ init?<H, D>(hostingDelegateClass: H.Type, id: String, value: D) where H : UIHost
 
 The specified scene must be declared in the `rootScene` property of your hosting delegate class. The initializer will fail if no scene with the specified identifier is defined.
 
-```None
+```
 class HostingSceneDelegate: UIHostingSceneDelegate {
     static var rootScene: some Scene {
         WindowGroup(id: "window", for: FavoriteNumber.self) { $value in

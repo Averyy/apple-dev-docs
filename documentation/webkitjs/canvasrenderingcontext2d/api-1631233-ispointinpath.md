@@ -1,7 +1,8 @@
 # isPointInPath
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Determines whether a specified point is within the area defined by the current path.
 
@@ -11,7 +12,7 @@ Determines whether a specified point is within the area defined by the current p
 
 ## Declaration
 
-```swift
+```
 boolean isPointInPath(
     DOMPath path, 
     unrestricted float x, 
@@ -20,7 +21,7 @@ boolean isPointInPath(
 );
 ```
 
-#### Return_value
+#### Return Value
 
 Returns `true` if the point is within the path.
 
@@ -35,9 +36,10 @@ All parameter values are in the canvas’s current coordinate system, subject to
 
 ## See Also
 
-- [beginPath](canvasrenderingcontext2d/1632556-beginpath.md)
+### Creating Paths (Lines, Curves, Arcs, and Shapes)
+- [beginPath](./api-1632556-beginpath.md)
   Denotes the beginning of new path.
-- [clip](canvasrenderingcontext2d/1631003-clip.md)
+- [clip](./api-1631003-clip.md)
   Constrains the clipping region of the canvas to the current path.
 
 

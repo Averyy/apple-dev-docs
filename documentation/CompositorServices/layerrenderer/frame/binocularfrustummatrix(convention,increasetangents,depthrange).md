@@ -1,11 +1,12 @@
 # binocularFrustumMatrix(convention:increaseTangents:depthRange:)
 
 **Framework**: Compositor Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 26.0+
-- visionOS 2.0+
+- visionOS 2.0+ - Deprecated in 26.0 (renamed: binocularFrustumMatrixForDrawableTarget)
 
 ## Declaration
 

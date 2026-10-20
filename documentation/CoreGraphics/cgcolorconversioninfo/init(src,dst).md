@@ -1,7 +1,8 @@
 # init(src:dst:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a conversion between two specified color spaces.
 
@@ -20,6 +21,10 @@ Creates a conversion between two specified color spaces.
 init?(src: CGColorSpace, dst: CGColorSpace)
 ```
 
+```c
+extern CGColorConversionInfoRefCGColorConversionInfoCreate(CGColorSpaceRef src, CGColorSpaceRef dst);
+```
+
 #### Return Value
 
 A color conversion object, or `nil` if no conversion between the specified color spaces is allowed.
@@ -28,7 +33,7 @@ A color conversion object, or `nil` if no conversion between the specified color
 
 The source and destination color spaces must be calibrated color spaces (that is, not device-specific or indexed color spaces).
 
-You can use a color conversion object to create [`MPSImageConversion`](https://developer.apple.com/documentation/metalperformanceshaders/mpsimageconversion) filters that perform GPU-accelerated color space conversion.
+You can use a color conversion object to create [`MPSImageConversion`](../../MetalPerformanceShaders/mpsimageconversion.md) filters that perform GPU-accelerated color space conversion.
 
 ## Parameters
 
@@ -37,8 +42,9 @@ You can use a color conversion object to create [`MPSImageConversion`](https://d
 
 ## See Also
 
-- [init?(optionsSrc: CGColorSpace, dst: CGColorSpace, options: CFDictionary?)](cgcolorconversioninfo/init(optionssrc:dst:options:).md)
-- [enum CGColorConversionInfoTransformType](cgcolorconversioninfotransformtype.md)
+### Creating a Color Conversion
+- [init?(optionsSrc: CGColorSpace, dst: CGColorSpace, options: CFDictionary?)](./init%28optionssrc,dst,options%29.md)
+- [enum CGColorConversionInfoTransformType](../cgcolorconversioninfotransformtype.md)
   Constants describing how a color conversion uses color spaces.
 
 

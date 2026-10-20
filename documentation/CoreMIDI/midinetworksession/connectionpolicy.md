@@ -1,7 +1,8 @@
 # connectionPolicy
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The policy that determines who can connect to this session.
 
@@ -18,16 +19,21 @@ The policy that determines who can connect to this session.
 var connectionPolicy: MIDINetworkConnectionPolicy { get set }
 ```
 
+```objc
+@property (nonatomic) MIDINetworkConnectionPolicy connectionPolicy;
+```
+
 ## Topics
 
 ### Connection Policies
-- [enum MIDINetworkConnectionPolicy](midinetworkconnectionpolicy.md)
+- [enum MIDINetworkConnectionPolicy](../midinetworkconnectionpolicy.md)
 
 ## See Also
 
-- [class func `default`() -> MIDINetworkSession](midinetworksession/default.md)
+### Configuring a Session
+- [class func `default`() -> MIDINetworkSession](./default%28%29.md)
   Returns the default singleton session.
-- [var isEnabled: Bool](midinetworksession/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that determines whether the session is enabled.
 
 

@@ -1,7 +1,8 @@
 # functionDescriptors
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides an array of functions to link at the Metal IR level.
 
@@ -17,6 +18,10 @@ Provides an array of functions to link at the Metal IR level.
 
 ```swift
 var functionDescriptors: [MTL4FunctionDescriptor]? { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSArray<MTL4FunctionDescriptor *> * functionDescriptors;
 ```
 
 

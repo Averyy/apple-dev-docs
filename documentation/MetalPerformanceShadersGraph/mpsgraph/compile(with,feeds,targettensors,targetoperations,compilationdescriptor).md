@@ -1,7 +1,8 @@
 # compile(with:feeds:targetTensors:targetOperations:compilationDescriptor:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compiles the graph for the given feeds to returns the target tensor values, ensuring all target operations would be executed.
 
@@ -17,6 +18,10 @@ Compiles the graph for the given feeds to returns the target tensor values, ensu
 
 ```swift
 func compile(with device: MPSGraphDevice?, feeds: [MPSGraphTensor : MPSGraphShapedType], targetTensors: [MPSGraphTensor], targetOperations: [MPSGraphOperation]?, compilationDescriptor: MPSGraphCompilationDescriptor?) -> MPSGraphExecutable
+```
+
+```objc
+- (MPSGraphExecutable *) compileWithDevice:(MPSGraphDevice *) device feeds:(MPSGraphTensorShapedTypeDictionary *) feeds targetTensors:(NSArray<MPSGraphTensor *> *) targetTensors targetOperations:(NSArray<MPSGraphOperation *> *) targetOperations compilationDescriptor:(MPSGraphCompilationDescriptor *) compilationDescriptor;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # type
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A type of touch from a Touch Bar interaction.
 
@@ -14,11 +15,16 @@ A type of touch from a Touch Bar interaction.
 var type: NSTouch.TouchType { get }
 ```
 
+```objc
+@property (readonly) NSTouchType type;
+```
+
 ## See Also
 
-- [NSTouch.TouchType](nstouch/touchtype.md)
+### Getting the Touch Type
+- [NSTouch.TouchType](./touchtype.md)
   A bit mask identifying a direct or indirect touch type.
-- [NSTouch.TouchTypeMask](nstouch/touchtypemask.md)
+- [NSTouch.TouchTypeMask](./touchtypemask.md)
   A bit mask identifying a direct or indirect touch type.
 
 

@@ -1,7 +1,8 @@
 # unsafeFlags(_:_:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Sets unsafe flags to pass arbitrary command-line flags to the corresponding build tool.
 
@@ -20,7 +21,7 @@ As the usage of the word “unsafe” implies, Swift Package Manager can’t saf
 
 As some build flags can be exploited for unsupported or malicious behavior, you can’t use products with unsafe build flags as dependencies in another package.
 
-> **Note**: First available in PackageDescription 5.0.
+> **Since**: First available in PackageDescription 5.0.
 
 ## Parameters
 
@@ -29,9 +30,10 @@ As some build flags can be exploited for unsupported or malicious behavior, you 
 
 ## See Also
 
-- [static func define(String, to: String?, BuildSettingCondition?) -> CXXSetting](cxxsetting/define(_:to:_:).md)
+### Configuring CXX Settings
+- [static func define(String, to: String?, BuildSettingCondition?) -> CXXSetting](./define%28_,to,_%29.md)
   Defines a value for a macro.
-- [static func headerSearchPath(String, BuildSettingCondition?) -> CXXSetting](cxxsetting/headersearchpath(_:_:).md)
+- [static func headerSearchPath(String, BuildSettingCondition?) -> CXXSetting](./headersearchpath%28_,_%29.md)
   Provides a header search path relative to the target’s directory.
 
 

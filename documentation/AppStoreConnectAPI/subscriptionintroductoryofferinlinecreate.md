@@ -1,7 +1,8 @@
 # SubscriptionIntroductoryOfferInlineCreate
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An inline object for specifying an introductory offer when creating or updating a subscription.
 
@@ -10,16 +11,16 @@ An inline object for specifying an introductory offer when creating or updating 
 
 ## Declaration
 
-```swift
+```
 object SubscriptionIntroductoryOfferInlineCreate
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionIntroductoryOfferInlineCreate.Attributes](subscriptionintroductoryofferinlinecreate/attributes-data.dictionary.md)
+- [object SubscriptionIntroductoryOfferInlineCreate.Attributes](./subscriptionintroductoryofferinlinecreate/attributes-data.dictionary.md)
   Attributes that describe a subscription introductory offer inline create resource.
-- [object SubscriptionIntroductoryOfferInlineCreate.Relationships](subscriptionintroductoryofferinlinecreate/relationships-data.dictionary.md)
+- [object SubscriptionIntroductoryOfferInlineCreate.Relationships](./subscriptionintroductoryofferinlinecreate/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -27,15 +28,16 @@ object SubscriptionIntroductoryOfferInlineCreate
 - `attributes` (SubscriptionIntroductoryOfferInlineCreate.Attributes) *(required)*
 - `id` (string)
 - `relationships` (SubscriptionIntroductoryOfferInlineCreate.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptionIntroductoryOffers`
 
 ## See Also
 
-- [object SubscriptionIntroductoryOfferCreateRequest](subscriptionintroductoryoffercreaterequest.md)
+### Objects
+- [object SubscriptionIntroductoryOfferCreateRequest](./subscriptionintroductoryoffercreaterequest.md)
   The request body you use to create a subscription introductory offer.
-- [object SubscriptionIntroductoryOfferResponse](subscriptionintroductoryofferresponse.md)
+- [object SubscriptionIntroductoryOfferResponse](./subscriptionintroductoryofferresponse.md)
   The response body for endpoints that create, read, or modify a single subscription introductory offer.
-- [object SubscriptionIntroductoryOfferUpdateRequest](subscriptionintroductoryofferupdaterequest.md)
+- [object SubscriptionIntroductoryOfferUpdateRequest](./subscriptionintroductoryofferupdaterequest.md)
   The request body you use to update a subscription introductory offer update request.
 
 

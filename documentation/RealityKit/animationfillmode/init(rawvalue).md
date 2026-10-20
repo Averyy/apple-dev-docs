@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a fill mode from its backing data type.
 
@@ -11,7 +12,7 @@ Creates a fill mode from its backing data type.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -34,13 +35,14 @@ let fillMode = AnimationFillMode(rawValue: rawValue)
 
 ## See Also
 
-- [static let none: AnimationFillMode](animationfillmode/none.md)
+### Choosing a fill mode
+- [static let none: AnimationFillMode](./none.md)
   An option that indicates an animation doesn’t display frame data outside of its normal duration.
-- [static let forwards: AnimationFillMode](animationfillmode/forwards.md)
+- [static let forwards: AnimationFillMode](./forwards.md)
   An option that freezes the last frame of the animation until it stops.
-- [static let backwards: AnimationFillMode](animationfillmode/backwards.md)
+- [static let backwards: AnimationFillMode](./backwards.md)
   An option that shows the first animation frame while playback progresses to the beginning position.
-- [static let both: AnimationFillMode](animationfillmode/both.md)
+- [static let both: AnimationFillMode](./both.md)
   An option that displays the animation’s initial frame or final frame when playback occurs outside of the normal duration.
 
 

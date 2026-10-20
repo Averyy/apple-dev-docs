@@ -1,7 +1,8 @@
 # startDelimiter
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The start delimiter for an embedded command. By default, the start delimiter is “`[[`”.
 
@@ -12,6 +13,10 @@ The start delimiter for an embedded command. By default, the start delimiter is 
 
 ```swift
 var startDelimiter: (UInt8, UInt8)
+```
+
+```c
+Byte startDelimiter[2];
 ```
 
 

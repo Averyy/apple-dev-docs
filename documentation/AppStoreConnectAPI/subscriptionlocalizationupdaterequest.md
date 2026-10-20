@@ -1,23 +1,26 @@
 # SubscriptionLocalizationUpdateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a subscription localization update request.
 
 **Availability**:
-- App Store Connect API 2.0+
+- App Store Connect API 2.0+ - Deprecated in 4.4.1
+
+> **Deprecated**: This object is deprecated. Use [`SubscriptionLocalizationV2UpdateRequest`](./subscriptionlocalizationv2updaterequest.md) instead.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionLocalizationUpdateRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionLocalizationUpdateRequest.Data](subscriptionlocalizationupdaterequest/data-data.dictionary.md)
+- [object SubscriptionLocalizationUpdateRequest.Data](./subscriptionlocalizationupdaterequest/data-data.dictionary.md)
   The request body you use to update a subscription localization update request.
 
 ## Properties
@@ -26,11 +29,12 @@ object SubscriptionLocalizationUpdateRequest
 
 ## See Also
 
-- [object SubscriptionLocalizationCreateRequest](subscriptionlocalizationcreaterequest.md)
+### Objects
+- [object SubscriptionLocalizationCreateRequest](./subscriptionlocalizationcreaterequest.md)
   The request body you use to create a subscription localization.
-- [object SubscriptionLocalizationResponse](subscriptionlocalizationresponse.md)
+- [object SubscriptionLocalizationResponse](./subscriptionlocalizationresponse.md)
   The response body for endpoints that create, read, or modify a single subscription localization.
-- [object SubscriptionLocalization](subscriptionlocalization.md)
+- [object SubscriptionLocalization](./subscriptionlocalization.md)
   The localized display name and description for an auto-renewable subscription shown to customers on the App Store.
 
 

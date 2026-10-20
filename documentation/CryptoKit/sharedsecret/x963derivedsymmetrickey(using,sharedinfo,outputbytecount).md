@@ -1,7 +1,8 @@
 # x963DerivedSymmetricKey(using:sharedInfo:outputByteCount:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Derives a symmetric encryption key from the secret using x9.63 key derivation.
 
@@ -32,7 +33,8 @@ The derived symmetric key.
 
 ## See Also
 
-- [func hkdfDerivedSymmetricKey<H, Salt, SI>(using: H.Type, salt: Salt, sharedInfo: SI, outputByteCount: Int) -> SymmetricKey](sharedsecret/hkdfderivedsymmetrickey(using:salt:sharedinfo:outputbytecount:).md)
+### Deriving keys
+- [func hkdfDerivedSymmetricKey<H, Salt, SI>(using: H.Type, salt: Salt, sharedInfo: SI, outputByteCount: Int) -> SymmetricKey](./hkdfderivedsymmetrickey%28using,salt,sharedinfo,outputbytecount%29.md)
   Derives a symmetric encryption key from the secret using HKDF key derivation.
 
 

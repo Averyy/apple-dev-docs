@@ -1,7 +1,8 @@
 # MTL4PipelineOptions
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Provides options controlling how to compile a pipeline state.
 
@@ -19,40 +20,45 @@ Provides options controlling how to compile a pipeline state.
 class MTL4PipelineOptions
 ```
 
+```objc
+@interface MTL4PipelineOptions : NSObject
+```
+
 #### Overview
 
-You provide these options through the [`MTL4PipelineDescriptor`](mtl4pipelinedescriptor.md) class at compilation time.
+You provide these options through the [`MTL4PipelineDescriptor`](./mtl4pipelinedescriptor.md) class at compilation time.
 
 ## Topics
 
 ### Instance Properties
-- [var shaderReflection: MTL4ShaderReflection](mtl4pipelineoptions/shaderreflection.md)
+- [var shaderReflection: MTL4ShaderReflection](./mtl4pipelineoptions/shaderreflection.md)
   Controls whether to include Metal shader reflection in this pipeline.
-- [var shaderValidation: MTLShaderValidation](mtl4pipelineoptions/shadervalidation.md)
+- [var shaderValidation: MTLShaderValidation](./mtl4pipelineoptions/shadervalidation.md)
   Controls whether to enable or disable Metal Shader Validation for the pipeline.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol MTL4PipelineDataSetSerializer](mtl4pipelinedatasetserializer.md)
+### Pipeline harvesting
+- [protocol MTL4PipelineDataSetSerializer](./mtl4pipelinedatasetserializer.md)
   A fast-addition container for collecting data during pipeline state creation.
-- [struct MTL4PipelineDataSetSerializerConfiguration](mtl4pipelinedatasetserializerconfiguration.md)
+- [struct MTL4PipelineDataSetSerializerConfiguration](./mtl4pipelinedatasetserializerconfiguration.md)
   Configuration options for pipeline dataset serializer objects.
-- [class MTL4PipelineDataSetSerializerDescriptor](mtl4pipelinedatasetserializerdescriptor.md)
+- [class MTL4PipelineDataSetSerializerDescriptor](./mtl4pipelinedatasetserializerdescriptor.md)
   Groups together properties to create a pipeline data set serializer.
-- [class MTL4PipelineDescriptor](mtl4pipelinedescriptor.md)
+- [class MTL4PipelineDescriptor](./mtl4pipelinedescriptor.md)
   Base type for descriptors you use for building pipeline state objects.
 
 

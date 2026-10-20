@@ -1,7 +1,8 @@
 # init(containerSpecifier:key:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an `NSScriptObjectSpecifier` object initialized with a given container specifier  and key.
 
@@ -15,6 +16,10 @@ Returns an `NSScriptObjectSpecifier` object initialized with a given container s
 convenience init(containerSpecifier container: NSScriptObjectSpecifier, key property: String)
 ```
 
+```objc
+- (instancetype) initWithContainerSpecifier:(NSScriptObjectSpecifier *) container key:(NSString *) property;
+```
+
 #### Return Value
 
 An `NSScriptObjectSpecifier` object  initialized with container specifier `specifier` and key `key`.
@@ -25,7 +30,8 @@ The class description of the container is set automatically.
 
 ## See Also
 
-- [init(containerClassDescription: NSScriptClassDescription, containerSpecifier: NSScriptObjectSpecifier?, key: String)](nsscriptobjectspecifier/init(containerclassdescription:containerspecifier:key:).md)
+### Initializing an object specifier
+- [init(containerClassDescription: NSScriptClassDescription, containerSpecifier: NSScriptObjectSpecifier?, key: String)](./init%28containerclassdescription,containerspecifier,key%29.md)
   Returns an `NSScriptObjectSpecifier` object initialized with the given attributes.
 
 

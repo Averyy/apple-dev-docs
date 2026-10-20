@@ -1,7 +1,8 @@
 # clearColor
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color to use when clearing the color attachment.
 
@@ -10,7 +11,7 @@ The color to use when clearing the color attachment.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,15 +20,20 @@ The color to use when clearing the color attachment.
 var clearColor: MTLClearColor { get set }
 ```
 
+```objc
+@property (nonatomic) MTLClearColor clearColor;
+```
+
 #### Discussion
 
-If the [`loadAction`](mtlrenderpassattachmentdescriptor/loadaction.md) property of the attachment is set to [`MTLLoadAction.clear`](mtlloadaction/clear.md), then at the start of a render pass, the GPU fills the texture with the value stored in the [`clearColor`](mtlrenderpasscolorattachmentdescriptor/clearcolor.md) property. Otherwise, the GPU ignores the [`clearColor`](mtlrenderpasscolorattachmentdescriptor/clearcolor.md) property.
+If the [`loadAction`](../mtlrenderpassattachmentdescriptor/loadaction.md) property of the attachment is set to [`MTLLoadAction.clear`](../mtlloadaction/clear.md), then at the start of a render pass, the GPU fills the texture with the value stored in the [`clearColor`](./clearcolor.md) property. Otherwise, the GPU ignores the [`clearColor`](./clearcolor.md) property.
 
-The [`clearColor`](mtlrenderpasscolorattachmentdescriptor/clearcolor.md) property represents a set of RGBA components. The default value is `(0.0, 0.0, 0.0, 1.0)` (black). Use the [`MTLClearColorMake(_:_:_:_:)`](mtlclearcolormake(_:_:_:_:).md) function to construct an [`MTLClearColor`](mtlclearcolor.md) value.
+The [`clearColor`](./clearcolor.md) property represents a set of RGBA components. The default value is `(0.0, 0.0, 0.0, 1.0)` (black). Use the [`MTLClearColorMake(_:_:_:_:)`](../mtlclearcolormake%28_,_,_,_%29.md) function to construct an [`MTLClearColor`](../mtlclearcolor.md) value.
 
 ## See Also
 
-- [func MTLClearColorMake(Double, Double, Double, Double) -> MTLClearColor](mtlclearcolormake(_:_:_:_:).md)
+### Specifying clearing value
+- [func MTLClearColorMake(Double, Double, Double, Double) -> MTLClearColor](../mtlclearcolormake%28_,_,_,_%29.md)
   Returns a color value used to clear a color attachment.
 
 

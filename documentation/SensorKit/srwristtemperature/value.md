@@ -1,7 +1,8 @@
 # value
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The temperature sensor value in celsius.
 
@@ -16,11 +17,16 @@ The temperature sensor value in celsius.
 var value: Measurement<UnitTemperature> { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSMeasurement<NSUnitTemperature *> * value;
+```
+
 ## See Also
 
-- [var timestamp: Date](srwristtemperature/timestamp.md)
+### Getting temperature information
+- [var timestamp: Date](./timestamp.md)
   The date and time when the device records the temperature.
-- [var errorEstimate: Measurement<UnitTemperature>](srwristtemperature/errorestimate.md)
+- [var errorEstimate: Measurement<UnitTemperature>](./errorestimate.md)
   An estimate of the amount of error in the temperature measurement.
 
 

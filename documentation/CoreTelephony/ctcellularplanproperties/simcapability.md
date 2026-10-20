@@ -1,7 +1,8 @@
 # simCapability
 
 **Framework**: Core Telephony  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The available type of cellular plan that your eSIM supports.
 
@@ -16,19 +17,24 @@ The available type of cellular plan that your eSIM supports.
 var simCapability: CTCellularPlanCapability { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) CTCellularPlanCapability simCapability;
+```
+
 #### Discussion
 
-Use to define whether your eSIM is capable of data only or data and voice. Refer to [`CTCellularPlanCapability.dataOnly`](ctcellularplancapability/dataonly.md) or [`CTCellularPlanCapability.dataAndVoice`](ctcellularplancapability/dataandvoice.md).
+Use to define whether your eSIM is capable of data only or data and voice. Refer to [`CTCellularPlanCapability.dataOnly`](../ctcellularplancapability/dataonly.md) or [`CTCellularPlanCapability.dataAndVoice`](../ctcellularplancapability/dataandvoice.md).
 
 ## See Also
 
-- [var associatedIccid: String?](ctcellularplanproperties/associatediccid.md)
+### Getting the eSIM properties
+- [var associatedIccid: String?](./associatediccid.md)
   The integrated circuit card identifier (ICCID) that identifies a SIM.
-- [var supportedRegionCodes: [Locale.Region]](ctcellularplanproperties/supportedregioncodes-yhu5.md)
+- [var supportedRegionCodes: [Locale.Region]](./supportedregioncodes-yhu5.md)
   The available regions that your eSIM supports.
-- [CTCellularPlanProperties.lifecycle](ctcellularplanproperties/lifecycle.md)
+- [CTCellularPlanProperties.lifecycle](./lifecycle.md)
   A type that contains lifecycle details for a time-limited cellular plan.
-- [var lifecycleProperties: CTCellularPlanProperties.lifecycle?](ctcellularplanproperties/lifecycleproperties.md)
+- [var lifecycleProperties: CTCellularPlanProperties.lifecycle?](./lifecycleproperties.md)
   The lifecycle details for a time-limited cellular plan.
 
 

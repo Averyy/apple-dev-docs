@@ -1,7 +1,8 @@
 # GCDeviceBattery
 
 **Framework**: Game Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The charge level and state of a device’s battery.
 
@@ -19,6 +20,10 @@ The charge level and state of a device’s battery.
 class GCDeviceBattery
 ```
 
+```objc
+@interface GCDeviceBattery : NSObject
+```
+
 #### Overview
 
 Use this class to display the state of a device’s battery to a player.
@@ -26,34 +31,35 @@ Use this class to display the state of a device’s battery to a player.
 ## Topics
 
 ### Getting the battery level and state
-- [var batteryLevel: Float](gcdevicebattery/batterylevel.md)
+- [var batteryLevel: Float](./gcdevicebattery/batterylevel.md)
   The charge level of a device’s battery.
-- [var batteryState: GCDeviceBattery.State](gcdevicebattery/batterystate.md)
+- [var batteryState: GCDeviceBattery.State](./gcdevicebattery/batterystate.md)
   The state of a device’s battery.
-- [GCDeviceBattery.State](gcdevicebattery/state.md)
+- [GCDeviceBattery.State](./gcdevicebattery/state.md)
   A state that indicates whether a device’s battery has power and is charging.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Input](input.md)
+### Game controller profiles
+- [Input](./input.md)
   Receive controller input in the way that best integrates with the flow of your game or game engine.
-- [class GCMotion](gcmotion.md)
+- [class GCMotion](./gcmotion.md)
   A controller profile that supports orientation and motion.
-- [class GCDeviceHaptics](gcdevicehaptics.md)
+- [class GCDeviceHaptics](./gcdevicehaptics.md)
   The locations of haptic actuators on a game controller.
-- [class GCDeviceLight](gcdevicelight.md)
+- [class GCDeviceLight](./gcdevicelight.md)
   The colored light on a device.
 
 

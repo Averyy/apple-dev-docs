@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a paged picker control style.
 

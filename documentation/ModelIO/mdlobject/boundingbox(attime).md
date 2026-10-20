@@ -1,7 +1,8 @@
 # boundingBox(atTime:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the minimum region entirely enclosing the object’s contents at the specified time sample.
 
@@ -19,15 +20,19 @@ Returns the minimum region entirely enclosing the object’s contents at the spe
 func boundingBox(atTime time: TimeInterval) -> MDLAxisAlignedBoundingBox
 ```
 
+```objc
+- (MDLAxisAlignedBoundingBox) boundingBoxAtTime:(NSTimeInterval) time;
+```
+
 #### Return Value
 
 The asset’s bounding box as of the specified time sample.
 
 #### Discussion
 
-Objects may or may not provide spatial content. Subclasses of [`MDLObject`](mdlobject.md) that include spatial content, such as the [`MDLMesh`](mdlmesh.md) class, implement this method to return the axis-aligned minimal region that entirely encloses such content. Objects without spatial content return an empty bounding box—that is, a [`MDLAxisAlignedBoundingBox`](mdlaxisalignedboundingbox.md) structure whose `minBounds` field is greater than its `maxBounds` field.
+Objects may or may not provide spatial content. Subclasses of [`MDLObject`](../mdlobject.md) that include spatial content, such as the [`MDLMesh`](../mdlmesh.md) class, implement this method to return the axis-aligned minimal region that entirely encloses such content. Objects without spatial content return an empty bounding box—that is, a [`MDLAxisAlignedBoundingBox`](../mdlaxisalignedboundingbox.md) structure whose `minBounds` field is greater than its `maxBounds` field.
 
-Calling this method on an object that contains other objects (that is, one whose [`children`](mdlobject/children.md) property is not `nil` and references a nonempty container) recursively computes the combined bounding box enclosing of the object’s children.
+Calling this method on an object that contains other objects (that is, one whose [`children`](./children.md) property is not `nil` and references a nonempty container) recursively computes the combined bounding box enclosing of the object’s children.
 
 ## Parameters
 
@@ -35,7 +40,8 @@ Calling this method on an object that contains other objects (that is, one whose
 
 ## See Also
 
-- [var transform: (any MDLTransformComponent)?](mdlobject/transform.md)
+### Working with Objects in Space
+- [var transform: (any MDLTransformComponent)?](./transform.md)
   A component that manages this object’s spatial transform and its changes over time.
 
 

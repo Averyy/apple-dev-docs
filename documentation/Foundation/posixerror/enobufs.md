@@ -1,7 +1,8 @@
 # ENOBUFS
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 No buffer space available.
 

@@ -1,10 +1,11 @@
 # kBluetoothSDPErrorCodeSuccess
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,17 +13,22 @@
 var kBluetoothSDPErrorCodeSuccess: Int { get }
 ```
 
+```c
+kBluetoothSDPErrorCodeSuccess
+```
+
 ## See Also
 
-- [var kBluetoothSDPErrorCodeInsufficientResources: Int](kbluetoothsdperrorcodeinsufficientresources.md)
-- [var kBluetoothSDPErrorCodeInvalidContinuationState: Int](kbluetoothsdperrorcodeinvalidcontinuationstate.md)
-- [var kBluetoothSDPErrorCodeInvalidPDUSize: Int](kbluetoothsdperrorcodeinvalidpdusize.md)
-- [var kBluetoothSDPErrorCodeInvalidRequestSyntax: Int](kbluetoothsdperrorcodeinvalidrequestsyntax.md)
-- [var kBluetoothSDPErrorCodeInvalidSDPVersion: Int](kbluetoothsdperrorcodeinvalidsdpversion.md)
-- [var kBluetoothSDPErrorCodeInvalidServiceRecordHandle: Int](kbluetoothsdperrorcodeinvalidservicerecordhandle.md)
-- [var kBluetoothSDPErrorCodeReserved: Int](kbluetoothsdperrorcodereserved.md)
-- [var kBluetoothSDPErrorCodeReservedEnd: Int](kbluetoothsdperrorcodereservedend.md)
-- [var kBluetoothSDPErrorCodeReservedStart: Int](kbluetoothsdperrorcodereservedstart.md)
+### Constants
+- [var kBluetoothSDPErrorCodeInsufficientResources: Int](./kbluetoothsdperrorcodeinsufficientresources.md)
+- [var kBluetoothSDPErrorCodeInvalidContinuationState: Int](./kbluetoothsdperrorcodeinvalidcontinuationstate.md)
+- [var kBluetoothSDPErrorCodeInvalidPDUSize: Int](./kbluetoothsdperrorcodeinvalidpdusize.md)
+- [var kBluetoothSDPErrorCodeInvalidRequestSyntax: Int](./kbluetoothsdperrorcodeinvalidrequestsyntax.md)
+- [var kBluetoothSDPErrorCodeInvalidSDPVersion: Int](./kbluetoothsdperrorcodeinvalidsdpversion.md)
+- [var kBluetoothSDPErrorCodeInvalidServiceRecordHandle: Int](./kbluetoothsdperrorcodeinvalidservicerecordhandle.md)
+- [var kBluetoothSDPErrorCodeReserved: Int](./kbluetoothsdperrorcodereserved.md)
+- [var kBluetoothSDPErrorCodeReservedEnd: Int](./kbluetoothsdperrorcodereservedend.md)
+- [var kBluetoothSDPErrorCodeReservedStart: Int](./kbluetoothsdperrorcodereservedstart.md)
 
 
 ---

@@ -21,50 +21,51 @@ Here’s an example of a section that contains two `lockup` elements that repres
 </section>
 ```
 
-##### Subelements of Lockup
+##### Subelements of lockup
 
-- [`badge`](badge.md)
-- [`description`](description.md)
-- [`img`](img.md)
-- [`organizer`](organizer.md)
-- [`overlay`](overlay.md)
-- [`title`](title.md)
+- [badge](./badge.md)
+- [description](./description.md)
+- [img](./img.md)
+- [organizer](./organizer.md)
+- [overlay](./overlay.md)
+- [title](./title.md)
 
-##### Elements That Use Lockup
+##### Elements that Use lockup
 
-- [`relatedContent`](relatedcontent.md)
-- [`section`](section.md)
+- [relatedContent](./relatedcontent.md)
+- [section](./section.md)
 
 ## Topics
 
 ### Valid TVML Styles
-- [margin](margin.md)
+- [margin](./margin.md)
   Specifies the spacing around an element.
-- [tv-align](tv-align.md)
+- [tv-align](./tv-align.md)
   Aligns an element horizontally inside its parent.
-- [width](element-shaping-width.md)
+- [width](./element-shaping-width.md)
   Specifies how wide an element is.
 ### Valid TVML Attributes
-- [autoHighlight](autohighlight.md)
+- [autoHighlight](./autohighlight.md)
   Specifies that the element should initially be in focus.
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [button](button.md)
+### Lockup Elements
+- [button](./button.md)
   Displays a button icon the user can click to initiate an action.
-- [buttonLockup](buttonlockup.md)
+- [buttonLockup](./buttonlockup.md)
   Creates a button that can also have a badge associated with it.
-- [listItemLockup](listitemlockup.md)
+- [listItemLockup](./listitemlockup.md)
   Contains a new list item.
-- [monogramLockup](monogramlockup.md)
+- [monogramLockup](./monogramlockup.md)
   Creates a monogram using a person’s image or initials.
-- [overlay](overlay.md)
+- [overlay](./overlay.md)
   Displays elements on top of other elements.
 
 

@@ -1,7 +1,8 @@
 # interrupted
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Interrupted function call.
 
@@ -22,7 +23,7 @@ static var interrupted: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -32,19 +33,20 @@ The corresponding C error is `EINTR`.
 
 ## See Also
 
-- [static var alreadyInProcess: Errno](errno/alreadyinprocess.md)
+### System Call Errors
+- [static var alreadyInProcess: Errno](./alreadyinprocess.md)
   Operation already in progress.
-- [static var badAddress: Errno](errno/badaddress.md)
+- [static var badAddress: Errno](./badaddress.md)
   Bad address.
-- [static var invalidArgument: Errno](errno/invalidargument.md)
+- [static var invalidArgument: Errno](./invalidargument.md)
   Invalid argument.
-- [static var noFunction: Errno](errno/nofunction.md)
+- [static var noFunction: Errno](./nofunction.md)
   Function not implemented.
-- [static var nowInProgress: Errno](errno/nowinprogress.md)
+- [static var nowInProgress: Errno](./nowinprogress.md)
   Operation now in progress.
-- [static var resourceBusy: Errno](errno/resourcebusy.md)
+- [static var resourceBusy: Errno](./resourcebusy.md)
   Resource busy.
-- [static var resourceTemporarilyUnavailable: Errno](errno/resourcetemporarilyunavailable.md)
+- [static var resourceTemporarilyUnavailable: Errno](./resourcetemporarilyunavailable.md)
   Resource temporarily unavailable.
 
 

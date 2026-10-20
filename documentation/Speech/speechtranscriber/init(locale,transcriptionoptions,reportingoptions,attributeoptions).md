@@ -1,7 +1,8 @@
 # init(locale:transcriptionOptions:reportingOptions:attributeOptions:)
 
 **Framework**: Speech  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a general-purpose transcriber.
 
@@ -28,9 +29,10 @@ convenience init(locale: Locale, transcriptionOptions: Set<SpeechTranscriber.Tra
 
 ## See Also
 
-- [convenience init(locale: Locale, preset: SpeechTranscriber.Preset)](speechtranscriber/init(locale:preset:).md)
+### Creating a transcriber
+- [convenience init(locale: Locale, preset: SpeechTranscriber.Preset)](./init%28locale,preset%29.md)
   Creates a general-purpose transcriber according to a preset.
-- [SpeechTranscriber.Preset](speechtranscriber/preset.md)
+- [SpeechTranscriber.Preset](./preset.md)
   Predefined transcriber configurations.
 
 

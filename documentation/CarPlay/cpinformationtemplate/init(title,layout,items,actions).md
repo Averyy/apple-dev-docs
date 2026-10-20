@@ -1,7 +1,8 @@
 # init(title:layout:items:actions:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an information template that displays the provided items using the chosen layout.
 
@@ -16,6 +17,10 @@ Creates an information template that displays the provided items using the chose
 init(title: String, layout: CPInformationTemplateLayout, items: [CPInformationItem], actions: [CPTextButton])
 ```
 
+```objc
+- (instancetype) initWithTitle:(NSString *) title layout:(CPInformationTemplateLayout) layout items:(NSArray<__kindof CPInformationItem *> *) items actions:(NSArray<CPTextButton *> *) actions;
+```
+
 #### Discussion
 
 The template can display up to 10 information items. If `items` contains more objects, the template uses only the first 10. Likewise, the template displays three actions maximum. If `actions` contains more than that, the template uses only the first three.
@@ -23,7 +28,7 @@ The template can display up to 10 information items. If `items` contains more ob
 ## Parameters
 
 - `title`: The title that the template displays.
-- `layout`: The layout that the template uses to arrange its items. See [`CPInformationTemplateLayout`](cpinformationtemplatelayout.md) for more information.
+- `layout`: The layout that the template uses to arrange its items. See [`CPInformationTemplateLayout`](../cpinformationtemplatelayout.md) for more information.
 - `items`: An array of information items that the template displays.
 - `actions`: An array of text buttons that provides the actions that the user can perform.
 

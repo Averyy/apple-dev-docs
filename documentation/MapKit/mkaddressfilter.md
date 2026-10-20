@@ -1,7 +1,8 @@
 # MKAddressFilter
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that filters which address options to include or exclude in search results.
 
@@ -20,67 +21,72 @@ An object that filters which address options to include or exclude in search res
 class MKAddressFilter
 ```
 
+```objc
+@interface MKAddressFilter : NSObject
+```
+
 #### Overview
 
-Use this object to filter search results by criteria, such as country, region, and municipality. See [`MKAddressFilter.Options`](mkaddressfilter/options.md) for more information.
+Use this object to filter search results by criteria, such as country, region, and municipality. See [`MKAddressFilter.Options`](./mkaddressfilter/options.md) for more information.
 
 ## Topics
 
 ### Creating a filter
-- [init(excluding: MKAddressFilter.Options)](mkaddressfilter/init(excluding:).md)
+- [init(excluding: MKAddressFilter.Options)](./mkaddressfilter/init%28excluding%29.md)
   Creates an address filter with options for excluding results in a search.
-- [init(including: MKAddressFilter.Options)](mkaddressfilter/init(including:).md)
+- [init(including: MKAddressFilter.Options)](./mkaddressfilter/init%28including%29.md)
   Creates an address filter with options for including results in a search.
 ### Filtering results
-- [MKAddressFilter.Options](mkaddressfilter/options.md)
+- [MKAddressFilter.Options](./mkaddressfilter/options.md)
   A structure that contains options for filtering results in a search.
-- [class var excludingAll: MKAddressFilter](mkaddressfilter/excludingall.md)
+- [class var excludingAll: MKAddressFilter](./mkaddressfilter/excludingall.md)
   A list of categories to exclude from a search.
-- [class var includingAll: MKAddressFilter](mkaddressfilter/includingall.md)
+- [class var includingAll: MKAddressFilter](./mkaddressfilter/includingall.md)
   A list of categories to include in a search.
-- [func excludes(MKAddressFilter.Options) -> Bool](mkaddressfilter/excludes(_:).md)
+- [func excludes(MKAddressFilter.Options) -> Bool](./mkaddressfilter/excludes%28_%29.md)
   Indicates whether options are excluded from filtering.
-- [func includes(MKAddressFilter.Options) -> Bool](mkaddressfilter/includes(_:).md)
+- [func includes(MKAddressFilter.Options) -> Bool](./mkaddressfilter/includes%28_%29.md)
   Indicates whether options are included for filtering.
 ### Initializers
-- [init?(coder: NSCoder)](mkaddressfilter/init(coder:).md)
-- [init(excludingOptions: MKAddressFilter.Options)](mkaddressfilter/init(excludingoptions:).md)
-- [init(includingOptions: MKAddressFilter.Options)](mkaddressfilter/init(includingoptions:).md)
+- [init?(coder: NSCoder)](./mkaddressfilter/init%28coder%29.md)
+- [init(excludingOptions: MKAddressFilter.Options)](./mkaddressfilter/init%28excludingoptions%29.md)
+- [init(includingOptions: MKAddressFilter.Options)](./mkaddressfilter/init%28includingoptions%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Interacting with nearby points of interest](interacting-with-nearby-points-of-interest.md)
+### Local search
+- [Interacting with nearby points of interest](./interacting-with-nearby-points-of-interest.md)
   Provide automatic search completions for a partial search query, search the map for relevant locations nearby, and retrieve details for selected points of interest.
-- [enum MKLocalSearchRegionPriority](mklocalsearchregionpriority.md)
+- [enum MKLocalSearchRegionPriority](./mklocalsearchregionpriority.md)
   A value that indicates the importance of the configured region.
-- [MKLocalSearch.ResultType](mklocalsearch/resulttype.md)
+- [MKLocalSearch.ResultType](./mklocalsearch/resulttype.md)
   Options that indicate types of search results.
-- [class MKLocalSearch](mklocalsearch.md)
+- [class MKLocalSearch](./mklocalsearch.md)
   A utility object for initiating map-based searches and processing the results.
-- [MKAddressFilter.Options](mkaddressfilter/options.md)
+- [MKAddressFilter.Options](./mkaddressfilter/options.md)
   A structure that contains options for filtering results in a search.
-- [MKLocalSearchCompleter.ResultType](mklocalsearchcompleter/resulttype.md)
+- [MKLocalSearchCompleter.ResultType](./mklocalsearchcompleter/resulttype.md)
   Options that indicate types of search completions.
-- [class MKLocalSearchCompleter](mklocalsearchcompleter.md)
+- [class MKLocalSearchCompleter](./mklocalsearchcompleter.md)
   A utility object for generating a list of completion strings based on a partial search string that you provide.
-- [class MKLocalSearchCompletion](mklocalsearchcompletion.md)
+- [class MKLocalSearchCompletion](./mklocalsearchcompletion.md)
   A fully formed string that completes a partial string.
-- [class MKLocalPointsOfInterestRequest](mklocalpointsofinterestrequest.md)
+- [class MKLocalPointsOfInterestRequest](./mklocalpointsofinterestrequest.md)
   A structured request to use when searching for points of interest.
 
 

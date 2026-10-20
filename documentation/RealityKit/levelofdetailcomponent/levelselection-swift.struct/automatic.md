@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Use automatic LOD selection based on the configured strategy.
 

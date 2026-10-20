@@ -1,17 +1,18 @@
 # operator!=
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function Template
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 template <typename T, typename P, typename U, typename = detail::detail::WhenComparable<T * *, U * *>> bool operator!=(U * *a, const bounded_ptr<T, P> & b);
 ```
 

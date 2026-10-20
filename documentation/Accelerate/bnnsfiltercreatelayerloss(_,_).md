@@ -1,23 +1,30 @@
 # BNNSFilterCreateLayerLoss(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a new loss layer.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
 ```swift
 func BNNSFilterCreateLayerLoss(_ layer_params: UnsafeRawPointer, _ filter_params: UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?
+```
+
+```c
+BNNSFilterBNNSFilterCreateLayerLoss(const void *layer_params, const BNNSFilterParameters *filter_params);
 ```
 
 #### Discussion
@@ -31,7 +38,7 @@ let input: [Float]  = [9, 1, 6, 3, 4, 5, 6, 7, 8, 9]
 let labels: [Float] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
-The following code computes the loss using [`BNNSLossFunctionMeanSquareError`](bnnslossfunctionmeansquareerror.md), reduced to a single value using [`BNNSLossReductionSum`](bnnslossreductionsum.md):
+The following code computes the loss using [`BNNSLossFunctionMeanSquareError`](./bnnslossfunctionmeansquareerror.md), reduced to a single value using [`BNNSLossReductionSum`](./bnnslossreductionsum.md):
 
 ```swift
 let n = input.count
@@ -105,25 +112,26 @@ On return, `output` contains `(9 - 0)² + (6 - 2)² = 97`, and `inDelta` contain
 
 ## See Also
 
-- [class LossLayer](bnns/losslayer.md)
+### Loss layers
+- [class LossLayer](./bnns/losslayer.md)
   A layer object that wraps a loss filter and manages its deinitialization.
-- [struct BNNSLossFunction](bnnslossfunction.md)
+- [struct BNNSLossFunction](./bnnslossfunction.md)
   Constants that describe loss functions.
-- [struct BNNSLossReductionFunction](bnnslossreductionfunction.md)
+- [struct BNNSLossReductionFunction](./bnnslossreductionfunction.md)
   Constants that describe reduction functions used by a loss layer.
-- [struct BNNSLayerParametersLossBase](bnnslayerparameterslossbase.md)
+- [struct BNNSLayerParametersLossBase](./bnnslayerparameterslossbase.md)
   A structure that contains the parameters of a loss layer.
-- [struct BNNSLayerParametersLossHuber](bnnslayerparameterslosshuber.md)
+- [struct BNNSLayerParametersLossHuber](./bnnslayerparameterslosshuber.md)
   A structure that contains the parameters of a Huber loss layer.
-- [struct BNNSLayerParametersLossSigmoidCrossEntropy](bnnslayerparameterslosssigmoidcrossentropy.md)
+- [struct BNNSLayerParametersLossSigmoidCrossEntropy](./bnnslayerparameterslosssigmoidcrossentropy.md)
   A structure that contains the parameters of a sigmoid cross entropy loss layer.
-- [struct BNNSLayerParametersLossSoftmaxCrossEntropy](bnnslayerparameterslosssoftmaxcrossentropy.md)
+- [struct BNNSLayerParametersLossSoftmaxCrossEntropy](./bnnslayerparameterslosssoftmaxcrossentropy.md)
   A structure that contains the parameters of a softmax cross entropy loss layer.
-- [struct BNNSLayerParametersLossYolo](bnnslayerparameterslossyolo.md)
+- [struct BNNSLayerParametersLossYolo](./bnnslayerparameterslossyolo.md)
   A structure that contains the parameters of a You Only Look Once (YOLO) loss layer.
-- [func BNNSLossFilterApplyBatch(BNNSFilter?, Int, UnsafeRawPointer, Int, UnsafeRawPointer, Int, UnsafeRawPointer?, Int, UnsafeMutableRawPointer, UnsafeMutablePointer<BNNSNDArrayDescriptor>?, Int) -> Int32](bnnslossfilterapplybatch(_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func BNNSLossFilterApplyBatch(BNNSFilter?, Int, UnsafeRawPointer, Int, UnsafeRawPointer, Int, UnsafeRawPointer?, Int, UnsafeMutableRawPointer, UnsafeMutablePointer<BNNSNDArrayDescriptor>?, Int) -> Int32](./bnnslossfilterapplybatch%28_,_,_,_,_,_,_,_,_,_,_%29.md)
   Applies a loss filter to a set of input objects, writing the result to a set of output objects.
-- [func BNNSLossFilterApplyBackwardBatch(BNNSFilter?, Int, UnsafeRawPointer, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>, Int, UnsafeRawPointer, Int, UnsafeRawPointer?, Int, UnsafePointer<BNNSNDArrayDescriptor>, Int) -> Int32](bnnslossfilterapplybackwardbatch(_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func BNNSLossFilterApplyBackwardBatch(BNNSFilter?, Int, UnsafeRawPointer, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>, Int, UnsafeRawPointer, Int, UnsafeRawPointer?, Int, UnsafePointer<BNNSNDArrayDescriptor>, Int) -> Int32](./bnnslossfilterapplybackwardbatch%28_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Applies a loss filter backward to generate gradients.
 
 

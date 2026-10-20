@@ -1,18 +1,23 @@
 # SCScreenshotConfiguration.DisplayIntent
 
 **Framework**: ScreenCaptureKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value that specifies the type of display a screenshot rendering optimizes for.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 enum DisplayIntent
+```
+
+```c
+enum SCScreenshotDisplayIntent : NSInteger;
 ```
 
 #### Overview
@@ -22,23 +27,23 @@ Specifying local or canonical display attributes optimizes output for presentati
 ## Topics
 
 ### Enumeration Cases
-- [SCScreenshotConfiguration.DisplayIntent.canonical](scscreenshotconfiguration/displayintent-swift.enum/canonical.md)
+- [SCScreenshotConfiguration.DisplayIntent.canonical](./displayintent-swift.enum/canonical.md)
   Specifies that the screenshot renders with canonical display attributes optimizing output for presentation on a high dynamic range display.
-- [SCScreenshotConfiguration.DisplayIntent.local](scscreenshotconfiguration/displayintent-swift.enum/local.md)
+- [SCScreenshotConfiguration.DisplayIntent.local](./displayintent-swift.enum/local.md)
   Specifies that the screenshot renders with local display attributes optimizing output for presentation on the capture display.
 ### Initializers
-- [init?(rawValue: Int)](scscreenshotconfiguration/displayintent-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./displayintent-swift.enum/init%28rawvalue%29.md)
   Creates a display intent object from the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

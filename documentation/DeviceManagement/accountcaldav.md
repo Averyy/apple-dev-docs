@@ -1,7 +1,8 @@
 # AccountCalDAV
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The declaration to configure a Calendar account.
 
@@ -14,7 +15,7 @@ The declaration to configure a Calendar account.
 
 ## Declaration
 
-```swift
+```
 object AccountCalDAV
 ```
 
@@ -22,7 +23,7 @@ object AccountCalDAV
 
 Specify `com.apple.configuration.account.caldav` as the declaration type.
 
-##### Configuration Availability
+##### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +35,7 @@ Specify `com.apple.configuration.account.caldav` as the declaration type.
 | Allowed in user scope | macOS, Shared iPad |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration Example
+##### Configuration example
 
 This configuration sets up a CalDAV account for calendars.
 
@@ -63,35 +64,36 @@ This configuration sets up a CalDAV account for calendars.
 
 ## See Also
 
-- [object AccessibilitySettings](accessibilitysettings.md)
+### Configurations
+- [object AccessibilitySettings](./accessibilitysettings.md)
   The declaration to configure accessibility settings.
-- [object AccountCardDAV](accountcarddav.md)
+- [object AccountCardDAV](./accountcarddav.md)
   The declaration to configure a Contacts account.
-- [object AccountExchange](accountexchange.md)
+- [object AccountExchange](./accountexchange.md)
   The declaration to configure an Exchange account.
-- [object AccountGoogle](accountgoogle.md)
+- [object AccountGoogle](./accountgoogle.md)
   The declaration to configure a Google account.
-- [object AccountLDAP](accountldap.md)
+- [object AccountLDAP](./accountldap.md)
   The declaration to configure a Lightweight Directory Access Protocol (LDAP) account.
-- [object AccountMail](accountmail.md)
+- [object AccountMail](./accountmail.md)
   The declaration to configure a Mail account.
-- [object AccountSettings](accountsettings.md)
+- [object AccountSettings](./accountsettings.md)
   The declaration to configure account settings.
-- [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
+- [object AccountSubscribedCalendar](./accountsubscribedcalendar.md)
   The declaration to configure a subscribed calendar.
-- [object AppManaged](appmanaged.md)
+- [object AppManaged](./appmanaged.md)
   The declaration to configure a managed app.
-- [object AppSettings](appsettings.md)
+- [object AppSettings](./appsettings.md)
   The declaration to configure app settings.
-- [object AudioAccessorySettings](audioaccessorysettings.md)
+- [object AudioAccessorySettings](./audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCaching](./contentcaching.md)
   The declaration to configure the Content Caching service.
-- [object DiskManagementSettings](diskmanagementsettings.md)
+- [object DiskManagementSettings](./diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
-- [object ExtensibleSSO](extensiblesso.md)
+- [object ExtensibleSSO](./extensiblesso.md)
   The declaration to configure Extensible Single Sign-On.
-- [object ExternalIntelligenceSettings](externalintelligencesettings.md)
+- [object ExternalIntelligenceSettings](./externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
 
 

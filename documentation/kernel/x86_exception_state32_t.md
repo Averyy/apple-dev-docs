@@ -1,14 +1,15 @@
 # x86_exception_state32_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct i386_exception_state x86_exception_state32_t;
 ```
 

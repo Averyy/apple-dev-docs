@@ -1,7 +1,8 @@
 # init(identifier:title:target:action:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -15,10 +16,15 @@
 convenience init(identifier: NSTouchBarItem.Identifier, title: String, target: Any?, action: Selector?)
 ```
 
+```objc
++ (instancetype) buttonTouchBarItemWithIdentifier:(NSTouchBarItemIdentifier) identifier title:(NSString *) title target:(id) target action:(SEL) action;
+```
+
 ## See Also
 
-- [convenience init(identifier: NSTouchBarItem.Identifier, image: UIImage, target: Any?, action: Selector?)](nsbuttontouchbaritem/init(identifier:image:target:action:).md)
-- [convenience init(identifier: NSTouchBarItem.Identifier, title: String, image: UIImage, target: Any?, action: Selector?)](nsbuttontouchbaritem/init(identifier:title:image:target:action:).md)
+### Creating a button item
+- [convenience init(identifier: NSTouchBarItem.Identifier, image: UIImage, target: Any?, action: Selector?)](./init%28identifier,image,target,action%29.md)
+- [convenience init(identifier: NSTouchBarItem.Identifier, title: String, image: UIImage, target: Any?, action: Selector?)](./init%28identifier,title,image,target,action%29.md)
 
 
 ---

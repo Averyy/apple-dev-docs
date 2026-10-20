@@ -1,23 +1,25 @@
 # CompleteZLP
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void CompleteZLP(OSAction *action, IOReturn status, uint32_t actualByteCount, uint64_t completionTimestamp);
 ```
 
 ## See Also
 
-- [initPipes](iouserusbhosthiddevice/initpipes.md)
-- [getHIDDescriptorInfo](iouserusbhosthiddevice/gethiddescriptorinfo.md)
-- [copyStringAtIndex](iouserusbhosthiddevice/copystringatindex.md)
+### Configuring Private Settings
+- [initPipes](./initpipes.md)
+- [getHIDDescriptorInfo](./gethiddescriptorinfo.md)
+- [copyStringAtIndex](./copystringatindex.md)
 
 
 ---

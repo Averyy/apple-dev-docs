@@ -1,7 +1,8 @@
 # endRetention()
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Releases all models held by cached recognizer instances. The method does not return until all models are released.
 

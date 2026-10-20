@@ -1,14 +1,15 @@
 # strlcpy_ret
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 char * strlcpy_ret(char *const dst, const char *const src, size_t n);
 ```
 

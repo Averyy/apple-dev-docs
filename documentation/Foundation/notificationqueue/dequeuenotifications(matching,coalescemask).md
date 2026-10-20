@@ -1,7 +1,8 @@
 # dequeueNotifications(matching:coalesceMask:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all notifications from the queue that match a provided notification using provided matching criteria.
 
@@ -20,16 +21,21 @@ Removes all notifications from the queue that match a provided notification usin
 func dequeueNotifications(matching notification: Notification, coalesceMask: Int)
 ```
 
+```objc
+- (void) dequeueNotificationsMatching:(NSNotification *) notification coalesceMask:(NSUInteger) coalesceMask;
+```
+
 ## Parameters
 
 - `notification`: The notification used for matching notifications to remove from the notification queue.
-- `coalesceMask`: A mask indicating what criteria to use when matching attributes of `notification` to attributes of notifications in the queue. The mask is created by combining any of the constants [`none`](notificationqueue/notificationcoalescing/none.md), [`onName`](notificationqueue/notificationcoalescing/onname.md), and [`onSender`](notificationqueue/notificationcoalescing/onsender.md).
+- `coalesceMask`: A mask indicating what criteria to use when matching attributes of `notification` to attributes of notifications in the queue. The mask is created by combining any of the constants [`none`](./notificationcoalescing/none.md), [`onName`](./notificationcoalescing/onname.md), and [`onSender`](./notificationcoalescing/onsender.md).
 
 ## See Also
 
-- [func enqueue(Notification, postingStyle: NotificationQueue.PostingStyle, coalesceMask: NotificationQueue.NotificationCoalescing, forModes: [RunLoop.Mode]?)](notificationqueue/enqueue(_:postingstyle:coalescemask:formodes:).md)
+### Managing Notifications
+- [func enqueue(Notification, postingStyle: NotificationQueue.PostingStyle, coalesceMask: NotificationQueue.NotificationCoalescing, forModes: [RunLoop.Mode]?)](./enqueue%28_,postingstyle,coalescemask,formodes%29.md)
   Adds a notification to the notification queue with a specified posting style, criteria for coalescing, and run loop mode.
-- [func enqueue(Notification, postingStyle: NotificationQueue.PostingStyle)](notificationqueue/enqueue(_:postingstyle:).md)
+- [func enqueue(Notification, postingStyle: NotificationQueue.PostingStyle)](./enqueue%28_,postingstyle%29.md)
   Adds a notification to the notification queue with a specified posting style.
 
 

@@ -1,14 +1,15 @@
 # messageClients
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 13.0+ - Deprecated in 13.0
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn messageClients(UInt32 type, void *argument, vm_size_t argSize);
 ```
 

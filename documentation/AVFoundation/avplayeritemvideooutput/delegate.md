@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate for the video output object.
 
@@ -19,13 +20,18 @@ The delegate for the video output object.
 weak var delegate: (any AVPlayerItemOutputPullDelegate)? { get }
 ```
 
+```objc
+@property (weak, readonly, nullable) id<AVPlayerItemOutputPullDelegate> delegate;
+```
+
 ## See Also
 
-- [func setDelegate((any AVPlayerItemOutputPullDelegate)?, queue: dispatch_queue_t?)](avplayeritemvideooutput/setdelegate(_:queue:).md)
+### Configuring the delegate
+- [func setDelegate((any AVPlayerItemOutputPullDelegate)?, queue: dispatch_queue_t?)](./setdelegate%28_,queue%29.md)
   Sets the delegate and dispatch queue for the receiver.
-- [protocol AVPlayerItemOutputPullDelegate](avplayeritemoutputpulldelegate.md)
+- [protocol AVPlayerItemOutputPullDelegate](../avplayeritemoutputpulldelegate.md)
   Methods you can implement to respond to pixel buffer changes.
-- [var delegateQueue: dispatch_queue_t?](avplayeritemvideooutput/delegatequeue.md)
+- [var delegateQueue: dispatch_queue_t?](./delegatequeue.md)
   The dispatch queue on which to call delegate methods.
 
 

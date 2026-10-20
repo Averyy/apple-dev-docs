@@ -1,7 +1,8 @@
 # mediaType
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A constant describing the media type of an `AVCaptureDevice` active or supported format.
 
@@ -19,9 +20,14 @@ A constant describing the media type of an `AVCaptureDevice` active or supported
 var mediaType: AVMediaType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVMediaType mediaType;
+```
+
 ## See Also
 
-- [var formatDescription: CMFormatDescription](avcapturedevice/format/formatdescription.md)
+### Determining supported media formats
+- [var formatDescription: CMFormatDescription](./formatdescription.md)
   An object describing the capture format.
 
 

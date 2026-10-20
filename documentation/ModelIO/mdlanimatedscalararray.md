@@ -1,7 +1,8 @@
 # MDLAnimatedScalarArray
 
 **Framework**: Model I/O  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 11.0+
@@ -17,34 +18,38 @@
 class MDLAnimatedScalarArray
 ```
 
+```objc
+@interface MDLAnimatedScalarArray : MDLAnimatedValue
+```
+
 ## Topics
 
 ### Initializers
-- [init(elementCount: Int)](mdlanimatedscalararray/init(elementcount:).md)
+- [init(elementCount: Int)](./mdlanimatedscalararray/init%28elementcount%29.md)
 ### Instance Properties
-- [var doubleArray: [Double]](mdlanimatedscalararray/doublearray.md)
-- [var elementCount: Int](mdlanimatedscalararray/elementcount.md)
-- [var floatArray: [Float]](mdlanimatedscalararray/floatarray.md)
+- [var doubleArray: [Double]](./mdlanimatedscalararray/doublearray.md)
+- [var elementCount: Int](./mdlanimatedscalararray/elementcount.md)
+- [var floatArray: [Float]](./mdlanimatedscalararray/floatarray.md)
 ### Instance Methods
-- [func doubleArray(atTime: TimeInterval) -> [Double]](mdlanimatedscalararray/doublearray(attime:).md)
-- [func floatArray(atTime: TimeInterval) -> [Float]](mdlanimatedscalararray/floatarray(attime:).md)
-- [func reset(doubleArray: [Double], atTimes: [TimeInterval])](mdlanimatedscalararray/reset(doublearray:attimes:).md)
-- [func reset(floatArray: [Float], atTimes: [TimeInterval])](mdlanimatedscalararray/reset(floatarray:attimes:).md)
-- [func set(doubleArray: [Double], atTime: TimeInterval)](mdlanimatedscalararray/set(doublearray:attime:).md)
-- [func set(floatArray: [Float], atTime: TimeInterval)](mdlanimatedscalararray/set(floatarray:attime:).md)
+- [func doubleArray(atTime: TimeInterval) -> [Double]](./mdlanimatedscalararray/doublearray%28attime%29.md)
+- [func floatArray(atTime: TimeInterval) -> [Float]](./mdlanimatedscalararray/floatarray%28attime%29.md)
+- [func reset(doubleArray: [Double], atTimes: [TimeInterval])](./mdlanimatedscalararray/reset%28doublearray,attimes%29.md)
+- [func reset(floatArray: [Float], atTimes: [TimeInterval])](./mdlanimatedscalararray/reset%28floatarray,attimes%29.md)
+- [func set(doubleArray: [Double], atTime: TimeInterval)](./mdlanimatedscalararray/set%28doublearray,attime%29.md)
+- [func set(floatArray: [Float], atTime: TimeInterval)](./mdlanimatedscalararray/set%28floatarray,attime%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MDLAnimatedValue](mdlanimatedvalue.md)
+- [MDLAnimatedValue](./mdlanimatedvalue.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

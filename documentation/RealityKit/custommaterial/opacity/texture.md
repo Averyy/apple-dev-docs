@@ -1,7 +1,8 @@
 # texture
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of opacity specified using a UV-mapped image.
 
@@ -20,7 +21,8 @@ var texture: CustomMaterial.Texture?
 
 ## See Also
 
-- [var scale: Float](custommaterial/opacity/scale.md)
+### Accessing opacity data
+- [var scale: Float](./scale.md)
   The amount of opacity specified as a single value.
 
 

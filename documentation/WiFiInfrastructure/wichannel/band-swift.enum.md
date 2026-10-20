@@ -1,7 +1,8 @@
 # WIChannel.Band
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The Wi-Fi band of a given channel.
 
@@ -19,23 +20,23 @@ enum Band
 ## Topics
 
 ### Enumeration Cases
-- [WIChannel.Band.band24GHz](wichannel/band-swift.enum/band24ghz.md)
+- [WIChannel.Band.band24GHz](./band-swift.enum/band24ghz.md)
   The 2.4 GHz Wi-Fi band.
-- [WIChannel.Band.band5GHz](wichannel/band-swift.enum/band5ghz.md)
+- [WIChannel.Band.band5GHz](./band-swift.enum/band5ghz.md)
   The 5 GHz Wi-Fi band.
-- [WIChannel.Band.band6GHz](wichannel/band-swift.enum/band6ghz.md)
+- [WIChannel.Band.band6GHz](./band-swift.enum/band6ghz.md)
   The 6 GHz Wi-Fi band.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

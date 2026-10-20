@@ -1,7 +1,8 @@
 # customRoutingController(_:didSelect:)
 
 **Framework**: AVRouting  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when a user selects a custom item in the route picker.
 
@@ -17,6 +18,10 @@ Tells the delegate when a user selects a custom item in the route picker.
 optional func customRoutingController(_ controller: AVCustomRoutingController, didSelect customActionItem: AVCustomRoutingActionItem)
 ```
 
+```objc
+- (void) customRoutingController:(AVCustomRoutingController *) controller didSelectItem:(AVCustomRoutingActionItem *) customActionItem;
+```
+
 ## Parameters
 
 - `controller`: A custom routing controller.
@@ -24,9 +29,10 @@ optional func customRoutingController(_ controller: AVCustomRoutingController, d
 
 ## See Also
 
-- [func customRoutingController(AVCustomRoutingController, handle: AVCustomRoutingEvent, completionHandler: (Bool) -> Void)](avcustomroutingcontrollerdelegate/customroutingcontroller(_:handle:completionhandler:).md)
+### Handling controller events
+- [func customRoutingController(AVCustomRoutingController, handle: AVCustomRoutingEvent, completionHandler: (Bool) -> Void)](./customroutingcontroller%28_,handle,completionhandler%29.md)
   Connects to, or disconnects from, a device when a user requests it in the picker.
-- [func customRoutingController(AVCustomRoutingController, eventDidTimeOut: AVCustomRoutingEvent)](avcustomroutingcontrollerdelegate/customroutingcontroller(_:eventdidtimeout:).md)
+- [func customRoutingController(AVCustomRoutingController, eventDidTimeOut: AVCustomRoutingEvent)](./customroutingcontroller%28_,eventdidtimeout%29.md)
   Tells the delegate when a routing event times out.
 
 

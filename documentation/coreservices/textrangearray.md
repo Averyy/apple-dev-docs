@@ -1,7 +1,8 @@
 # TextRangeArray
 
 **Framework**: Core Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Specifies an array of text ranges. Not typically used by developers.
 
@@ -15,14 +16,20 @@ Specifies an array of text ranges. Not typically used by developers.
 struct TextRangeArray
 ```
 
+```c
+typedef struct TextRangeArray {
+    ...
+} TextRangeArray;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](textrangearray/1444530-init.md)
-- [init(fNumOfRanges: Int16, fRange: TextRange)](textrangearray/1442000-init.md)
+- [init()](./textrangearray/api-1444530-init.md)
+- [init(fNumOfRanges: Int16, fRange: TextRange)](./textrangearray/api-1442000-init.md)
 ### Instance Properties
-- [var fNumOfRanges: Int16](textrangearray/1444176-fnumofranges.md)
-- [var fRange: TextRange](textrangearray/1444113-frange.md)
+- [var fNumOfRanges: Int16](./textrangearray/api-1444176-fnumofranges.md)
+- [var fRange: TextRange](./textrangearray/api-1444113-frange.md)
 
 
 ---

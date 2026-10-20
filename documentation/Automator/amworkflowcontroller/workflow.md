@@ -1,7 +1,8 @@
 # workflow
 
 **Framework**: Automator  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The controller’s workflow.
 
@@ -13,6 +14,10 @@ The controller’s workflow.
 
 ```swift
 var workflow: AMWorkflow? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) AMWorkflow * workflow;
 ```
 
 

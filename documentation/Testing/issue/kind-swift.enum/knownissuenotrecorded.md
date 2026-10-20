@@ -1,18 +1,19 @@
 # Issue.Kind.knownIssueNotRecorded
 
 **Framework**: Swift Testing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A known issue was expected, but was not recorded.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 

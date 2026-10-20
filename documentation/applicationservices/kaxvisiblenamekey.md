@@ -1,9 +1,10 @@
 # kAXVisibleNameKey
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-Optional key of the [`kAXFontTextAttribute`](kaxfonttextattribute.md) dictionary for the font display name in a `CFStringRef`.
+Optional key of the [`kAXFontTextAttribute`](./kaxfonttextattribute.md) dictionary for the font display name in a `CFStringRef`.
 
 **Availability**:
 - macOS 10.4+
@@ -12,6 +13,10 @@ Optional key of the [`kAXFontTextAttribute`](kaxfonttextattribute.md) dictionary
 
 ```swift
 var kAXVisibleNameKey: Unmanaged<CFString>
+```
+
+```c
+CFStringRef kAXVisibleNameKey;
 ```
 
 #### Discussion

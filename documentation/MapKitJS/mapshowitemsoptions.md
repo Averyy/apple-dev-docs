@@ -1,7 +1,8 @@
 # MapShowItemsOptions
 
 **Framework**: MapKit JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Interface
 
 Options that determine the map parameters to use when showing items.
 
@@ -10,43 +11,44 @@ Options that determine the map parameters to use when showing items.
 
 ## Declaration
 
-```swift
+```
 interface MapShowItemsOptions
 ```
 
 #### Overview
 
-Use these options when calling [`showItems()`](map/showitems.md).
+Use these options when calling [`showItems()`](./map/showitems.md).
 
 ## Topics
 
 ### Show item options
-- [animate](mapshowitemsoptions/animate.md)
+- [animate](./mapshowitemsoptions/animate.md)
   A Boolean value that determines whether the map animates as the map region changes to show the items.
-- [minimumSpan](mapshowitemsoptions/minimumspan.md)
+- [minimumSpan](./mapshowitemsoptions/minimumspan.md)
   The minimum longitudinal and latitudinal span the map displays.
-- [padding](mapshowitemsoptions/padding.md)
+- [padding](./mapshowitemsoptions/padding.md)
   Spacing that the framework adds around the computed map region when showing items.
-- [cameraDistance](mapshowitemsoptions/cameradistance.md)
+- [cameraDistance](./mapshowitemsoptions/cameradistance.md)
   The distance from the center of the map to the camera, when showing the items.
 
 ## See Also
 
-- [colorScheme](map/colorscheme.md)
+### Configuring the map’s appearance
+- [colorScheme](./map/colorscheme.md)
   The map’s color scheme when displaying standard or muted standard map types.
-- [distances](map/distances-data.property.md)
+- [distances](./map/distances-data.property.md)
   The system of measurement that displays on the map.
-- [mapType](map/maptype.md)
+- [mapType](./map/maptype.md)
   The type of data that the map displays.
-- [padding](map/padding.md)
+- [padding](./map/padding.md)
   The map’s inset margins.
-- [pointOfInterestFilter](map/pointofinterestfilter.md)
+- [pointOfInterestFilter](./map/pointofinterestfilter.md)
   The filter that determines the points of interest that display on the map.
-- [showsPointsOfInterest](map/showspointsofinterest.md)
+- [showsPointsOfInterest](./map/showspointsofinterest.md)
   A Boolean value that determines whether the map displays points of interest.
-- [showItems(items, options)](map/showitems.md)
+- [showItems(items, options)](./map/showitems.md)
   Adjusts the map’s visible region to bring the specified overlays and annotations into view.
-- [tintColor](map/tintcolor.md)
+- [tintColor](./map/tintcolor.md)
   The CSS color that MapKit JS uses for user interface controls on the map.
 
 

@@ -1,7 +1,8 @@
 # indexes
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of fetch index descriptions for the entity.
 
@@ -20,6 +21,10 @@ An array of fetch index descriptions for the entity.
 var indexes: [NSFetchIndexDescription] { get set }
 ```
 
+```objc
+@property (copy) NSArray<NSFetchIndexDescription *> * indexes;
+```
+
 #### Discussion
 
 This value doesn’t form part of the entity’s version hash, and stores that don’t natively support indexing may ignore it.
@@ -28,9 +33,10 @@ This value doesn’t form part of the entity’s version hash, and stores that d
 
 ## See Also
 
-- [var uniquenessConstraints: [[Any]]](nsentitydescription/uniquenessconstraints.md)
+### Configuring indexes and constraints
+- [var uniquenessConstraints: [[Any]]](./uniquenessconstraints.md)
   An array of arrays that contains one or more attributes with a value that must be unique over the instances of that entity.
-- [var compoundIndexes: [[Any]]](nsentitydescription/compoundindexes.md)
+- [var compoundIndexes: [[Any]]](./compoundindexes.md)
   The compound indexes for the entity as an array of arrays.
 
 

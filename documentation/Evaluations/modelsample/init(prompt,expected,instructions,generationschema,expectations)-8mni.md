@@ -1,7 +1,8 @@
 # init(prompt:expected:instructions:generationSchema:expectations:)
 
 **Framework**: Evaluations  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a model sample with a FoundationModels prompt.
 
@@ -22,9 +23,10 @@ init(prompt: Prompt, expected: ExpectedValue? = Optional<String>(nilLiteral: ())
 
 ## See Also
 
-- [init(prompt: String, expected: ExpectedValue?, instructions: String?, generationSchema: GenerationSchema?, expectations: TrajectoryExpectation?)](modelsample/init(prompt:expected:instructions:generationschema:expectations:)-7daed.md)
+### Creating a sample
+- [init(prompt: String, expected: ExpectedValue?, instructions: String?, generationSchema: GenerationSchema?, expectations: TrajectoryExpectation?)](./init%28prompt,expected,instructions,generationschema,expectations%29-7daed.md)
   Creates a model sample with string-based prompt and instructions.
-- [init(input: ModelSampleInput, expected: ExpectedValue?, expectations: TrajectoryExpectation?)](modelsample/init(input:expected:expectations:).md)
+- [init(input: ModelSampleInput, expected: ExpectedValue?, expectations: TrajectoryExpectation?)](./init%28input,expected,expectations%29.md)
   Creates a model sample with a prebuilt input.
 
 

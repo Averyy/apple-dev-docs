@@ -1,7 +1,8 @@
 # fetchRequest
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fetch request used to do the fetching.
 
@@ -10,7 +11,7 @@ The fetch request used to do the fetching.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.12+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,23 +21,29 @@ The fetch request used to do the fetching.
 var fetchRequest: NSFetchRequest<ResultType> { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSFetchRequest<id<NSFetchRequestResult>> * fetchRequest;
+```
+
 #### Discussion
 
-If you want to modify the fetch request, you must follow the steps described in [`Modifying the fetch request`](nsfetchedresultscontroller#Modifying-the-fetch-request.md).
+If you want to modify the fetch request, you must follow the steps described in [Modifying the fetch request](../nsfetchedresultscontroller.md#Modifying-the-fetch-request).
 
 ## See Also
 
-- [init(fetchRequest: NSFetchRequest<ResultType>, managedObjectContext: NSManagedObjectContext, sectionNameKeyPath: String?, cacheName: String?)](nsfetchedresultscontroller/init(fetchrequest:managedobjectcontext:sectionnamekeypath:cachename:).md)
+### Related Documentation
+- [init(fetchRequest: NSFetchRequest<ResultType>, managedObjectContext: NSManagedObjectContext, sectionNameKeyPath: String?, cacheName: String?)](./init%28fetchrequest,managedobjectcontext,sectionnamekeypath,cachename%29.md)
   Returns a fetch request controller initialized using the given arguments.
-- [var managedObjectContext: NSManagedObjectContext](nsfetchedresultscontroller/managedobjectcontext.md)
+### Getting Configuration Information
+- [var managedObjectContext: NSManagedObjectContext](./managedobjectcontext.md)
   The managed object context used to fetch objects.
-- [var sectionNameKeyPath: String?](nsfetchedresultscontroller/sectionnamekeypath.md)
+- [var sectionNameKeyPath: String?](./sectionnamekeypath.md)
   The key path of the attribute that determines which section the fetched entity belongs to.
-- [var cacheName: String?](nsfetchedresultscontroller/cachename.md)
+- [var cacheName: String?](./cachename.md)
   The name of the file used to cache section information.
-- [var delegate: (any NSFetchedResultsControllerDelegate)?](nsfetchedresultscontroller/delegate.md)
+- [var delegate: (any NSFetchedResultsControllerDelegate)?](./delegate.md)
   The object that is notified when the fetched results changed.
-- [class func deleteCache(withName: String?)](nsfetchedresultscontroller/deletecache(withname:).md)
+- [class func deleteCache(withName: String?)](./deletecache%28withname%29.md)
   Deletes the cached section information with the given name.
 
 

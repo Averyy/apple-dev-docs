@@ -1,7 +1,8 @@
 # selectedToolItemIdentifier
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the selected tool item in the tool picker.
 
@@ -17,9 +18,14 @@ The identifier of the selected tool item in the tool picker.
 var selectedToolItemIdentifier: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * selectedToolItemIdentifier;
+```
+
 ## See Also
 
-- [var selectedToolItem: PKToolPickerItem](pktoolpicker/selectedtoolitem.md)
+### Managing selected tools
+- [var selectedToolItem: PKToolPickerItem](./selectedtoolitem.md)
   The currently selected tool item in the tool picker.
 
 

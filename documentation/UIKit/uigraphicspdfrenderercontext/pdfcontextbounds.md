@@ -1,7 +1,8 @@
 # pdfContextBounds
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bounds of the PDF context for the current page.
 
@@ -18,9 +19,13 @@ The bounds of the PDF context for the current page.
 var pdfContextBounds: CGRect { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGRect pdfContextBounds;
+```
+
 #### Discussion
 
-This value represents the bounds provided to the [`beginPage(withBounds:pageInfo:)`](uigraphicspdfrenderercontext/beginpage(withbounds:pageinfo:).md) method that created the current page. If the current page was created using the [`beginPage()`](uigraphicspdfrenderercontext/beginpage().md) method, the bounds are equal to those provided at the initialization of the PDF renderer.
+This value represents the bounds provided to the [`beginPage(withBounds:pageInfo:)`](./beginpage%28withbounds,pageinfo%29.md) method that created the current page. If the current page was created using the [`beginPage()`](./beginpage%28%29.md) method, the bounds are equal to those provided at the initialization of the PDF renderer.
 
 
 ---

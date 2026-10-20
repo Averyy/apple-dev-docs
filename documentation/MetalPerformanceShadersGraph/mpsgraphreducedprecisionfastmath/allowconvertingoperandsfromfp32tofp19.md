@@ -1,7 +1,8 @@
 # allowConvertingOperandsFromFP32ToFP19
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Allow conversion of operands to FP19 or TF32 from FP32 when needed by dropping 13 mantissa bits.
 
@@ -17,6 +18,10 @@ Allow conversion of operands to FP19 or TF32 from FP32 when needed by dropping 1
 
 ```swift
 static var allowConvertingOperandsFromFP32ToFP19: MPSGraphReducedPrecisionFastMath { get }
+```
+
+```c
+MPSGraphReducedPrecisionFastMathAllowConvertingOperandsFromFP32ToFP19
 ```
 
 

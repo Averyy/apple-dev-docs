@@ -2,6 +2,7 @@
 
 **Framework**: Assignables  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The error type for this type.
@@ -10,7 +11,7 @@ The error type for this type.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

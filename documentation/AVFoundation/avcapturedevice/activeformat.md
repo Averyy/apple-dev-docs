@@ -1,7 +1,8 @@
 # activeFormat
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The capture format in use by the device.
 
@@ -19,17 +20,21 @@ The capture format in use by the device.
 var activeFormat: AVCaptureDevice.Format { get set }
 ```
 
+```objc
+@property (nonatomic, retain) AVCaptureDeviceFormat * activeFormat;
+```
+
 ## Mentions
 
-- [Adopting smart framing in your camera app](adopting-smart-framing-in-your-camera-app.md)
+- [Adopting smart framing in your camera app](../adopting-smart-framing-in-your-camera-app.md)
 
 #### Discussion
 
-In iOS, a device’s active format and a capture session’s [`sessionPreset`](avcapturesession/sessionpreset.md) are mutually exclusive. If you set a device’s active format, the session to which it’s attached changes its preset to [`inputPriority`](avcapturesession/preset/inputpriority.md). Likewise if you set a preset on a capture session, the session assumes control of its input devices, and configures their active format appropriately.
+In iOS, a device’s active format and a capture session’s [`sessionPreset`](../avcapturesession/sessionpreset.md) are mutually exclusive. If you set a device’s active format, the session to which it’s attached changes its preset to [`inputPriority`](../avcapturesession/preset/inputpriority.md). Likewise if you set a preset on a capture session, the session assumes control of its input devices, and configures their active format appropriately.
 
-> **Note**:  Audio devices don’t expose any user-configurable formats in iOS. To configure audio input on iOS, use [`AVAudioSession`](https://developer.apple.com/documentation/avfaudio/avaudiosession) and its related APIs instead.
+> **Note**:  Audio devices don’t expose any user-configurable formats in iOS. To configure audio input on iOS, use [`AVAudioSession`](../../AVFAudio/avaudiosession.md) and its related APIs instead.
 
-Set the [`activeFormat`](avcapturedevice/activeformat.md), [`activeVideoMinFrameDuration`](avcapturedevice/activevideominframeduration.md), and [`activeVideoMaxFrameDuration`](avcapturedevice/activevideomaxframeduration.md) properties simultaneously by performing the configuration between calls to the session’s [`beginConfiguration()`](avcapturesession/beginconfiguration().md) and [`commitConfiguration()`](avcapturesession/commitconfiguration().md) methods.
+Set the [`activeFormat`](./activeformat.md), [`activeVideoMinFrameDuration`](./activevideominframeduration.md), and [`activeVideoMaxFrameDuration`](./activevideomaxframeduration.md) properties simultaneously by performing the configuration between calls to the session’s [`beginConfiguration()`](../avcapturesession/beginconfiguration%28%29.md) and [`commitConfiguration()`](../avcapturesession/commitconfiguration%28%29.md) methods.
 
 ```swift
 // Configure capture session.
@@ -54,17 +59,18 @@ do {
 captureSession.commitConfiguration()
 ```
 
-If you configure a session to use an active format intended for high resolution still photography, and you apply zoom, orientation, or format changes to an [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md), the system may not meet the target framerate.
+If you configure a session to use an active format intended for high resolution still photography, and you apply zoom, orientation, or format changes to an [`AVCaptureVideoDataOutput`](../avcapturevideodataoutput.md), the system may not meet the target framerate.
 
 This property is key-value observable.
 
 ## See Also
 
-- [var formats: [AVCaptureDevice.Format]](avcapturedevice/formats.md)
+### Configuring capture formats
+- [var formats: [AVCaptureDevice.Format]](./formats.md)
   The capture formats a device supports.
-- [var activeDepthDataFormat: AVCaptureDevice.Format?](avcapturedevice/activedepthdataformat.md)
+- [var activeDepthDataFormat: AVCaptureDevice.Format?](./activedepthdataformat.md)
   The currently active depth data format of the capture device.
-- [AVCaptureDevice.Format](avcapturedevice/format.md)
+- [AVCaptureDevice.Format](./format.md)
   A class that defines media formats and capture settings that capture devices support.
 
 

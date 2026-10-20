@@ -1,16 +1,17 @@
 # b
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parameter b to the activation function.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,13 +19,18 @@ The parameter b to the activation function.
 var b: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float b;
+```
+
 ## See Also
 
-- [var activationType: MLCActivationType](mlcactivationdescriptor/activationtype.md)
+### Inspecting Activation Descriptors
+- [var activationType: MLCActivationType](./activationtype.md)
   The type of activation function.
-- [var a: Float](mlcactivationdescriptor/a.md)
+- [var a: Float](./a.md)
   The parameter a to the activation function.
-- [var c: Float](mlcactivationdescriptor/c.md)
+- [var c: Float](./c.md)
   The parameter c to the activation function.
 
 

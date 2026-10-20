@@ -1,7 +1,8 @@
 # isUserInteractionEnabled
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether user events are ignored and removed from the event queue.
 
@@ -9,7 +10,7 @@ A Boolean value that determines whether user events are ignored and removed from
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,20 @@ A Boolean value that determines whether user events are ignored and removed from
 var isUserInteractionEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isUserInteractionEnabled) BOOL userInteractionEnabled;
+```
+
 #### Discussion
 
-This property is inherited from the [`UIView`](uiview.md) parent class. This class changes the default value of this property to [`false`](https://developer.apple.com/documentation/swift/false).
+This property is inherited from the [`UIView`](../uiview.md) parent class. This class changes the default value of this property to [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var isHighlighted: Bool](uiimageview/ishighlighted.md)
+### Configuring the image view
+- [var isHighlighted: Bool](./ishighlighted.md)
   A Boolean value that determines whether the image is highlighted.
-- [var tintColor: UIColor!](uiimageview/tintcolor.md)
+- [var tintColor: UIColor!](./tintcolor.md)
   A color used to tint template images in the view hierarchy.
 
 

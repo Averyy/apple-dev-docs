@@ -1,7 +1,8 @@
 # DistributedActorSystemError
 
 **Framework**: Distributed  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Error protocol to which errors thrown by any `DistributedActorSystem` should conform.
 
@@ -11,7 +12,7 @@ Error protocol to which errors thrown by any `DistributedActorSystem` should con
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,21 +24,22 @@ protocol DistributedActorSystemError : Error
 ## Relationships
 
 ### Inherits From
-- [Error](../swift/error.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Error](../Swift/error.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [DistributedActorCodingError](distributedactorcodingerror.md)
-- [ExecuteDistributedTargetError](executedistributedtargeterror.md)
-- [LocalTestingDistributedActorSystemError](localtestingdistributedactorsystemerror.md)
+- [DistributedActorCodingError](./distributedactorcodingerror.md)
+- [ExecuteDistributedTargetError](./executedistributedtargeterror.md)
+- [LocalTestingDistributedActorSystemError](./localtestingdistributedactorsystemerror.md)
 
 ## See Also
 
-- [struct DistributedActorCodingError](distributedactorcodingerror.md)
+### Errors
+- [struct DistributedActorCodingError](./distributedactorcodingerror.md)
   Error thrown by distributed actor systems while encountering encoding/decoding issues.
-- [struct ExecuteDistributedTargetError](executedistributedtargeterror.md)
-  Error thrown by [`executeDistributedTarget(on:target:invocationDecoder:handler:)`](distributedactorsystem/executedistributedtarget(on:target:invocationdecoder:handler:).md).
-- [struct LocalTestingDistributedActorSystemError](localtestingdistributedactorsystemerror.md)
+- [struct ExecuteDistributedTargetError](./executedistributedtargeterror.md)
+  Error thrown by [`executeDistributedTarget(on:target:invocationDecoder:handler:)`](./distributedactorsystem/executedistributedtarget%28on,target,invocationdecoder,handler%29.md).
+- [struct LocalTestingDistributedActorSystemError](./localtestingdistributedactorsystemerror.md)
 
 
 ---

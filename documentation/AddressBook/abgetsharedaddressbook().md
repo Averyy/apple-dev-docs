@@ -1,17 +1,22 @@
 # ABGetSharedAddressBook()
 
 **Framework**: Address Book  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the unique shared ABAddressBook object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func ABGetSharedAddressBook() -> Unmanaged<ABAddressBookRef>!
+```
+
+```c
+extern ABAddressBookRefABGetSharedAddressBook();
 ```
 
 #### Return Value
@@ -24,11 +29,12 @@ Every application shares the address book for the logged-in user and this functi
 
 ## See Also
 
-- [func ABCopyDefaultCountryCode(ABAddressBookRef!) -> Unmanaged<CFString>!](abcopydefaultcountrycode(_:).md)
+### Address Book
+- [func ABCopyDefaultCountryCode(ABAddressBookRef!) -> Unmanaged<CFString>!](./abcopydefaultcountrycode%28_%29.md)
   Returns the default country code for records with unspecified country codes.
-- [func ABHasUnsavedChanges(ABAddressBookRef!) -> Bool](abhasunsavedchanges(_:).md)
+- [func ABHasUnsavedChanges(ABAddressBookRef!) -> Bool](./abhasunsavedchanges%28_%29.md)
   Returns whether if there are unsaved changes in the address book.
-- [func ABSave(ABAddressBookRef!) -> Bool](absave(_:).md)
+- [func ABSave(ABAddressBookRef!) -> Bool](./absave%28_%29.md)
   Saves all the changes made since the last save.
 
 

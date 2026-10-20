@@ -1,7 +1,8 @@
 # init(identifier:displayName:doubleValue:unitSymbol:polarity:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a performance measurement for a single iteration with the value, unit of measurement, and polarity.
 
@@ -9,6 +10,10 @@ Initializes a performance measurement for a single iteration with the value, uni
 
 ```swift
 convenience init(identifier: String, displayName: String, doubleValue: Double, unitSymbol: String, polarity: XCTPerformanceMeasurement.Polarity)
+```
+
+```objc
+- (instancetype) initWithIdentifier:(NSString *) identifier displayName:(NSString *) displayName doubleValue:(double) doubleValue unitSymbol:(NSString *) unitSymbol polarity:(XCTPerformanceMeasurementPolarity) polarity;
 ```
 
 ## Parameters
@@ -21,11 +26,12 @@ convenience init(identifier: String, displayName: String, doubleValue: Double, u
 
 ## See Also
 
-- [init(identifier: String, displayName: String, doubleValue: Double, unitSymbol: String)](xctperformancemeasurement/init(identifier:displayname:doublevalue:unitsymbol:).md)
+### Initializing a Measurement
+- [init(identifier: String, displayName: String, doubleValue: Double, unitSymbol: String)](./init%28identifier,displayname,doublevalue,unitsymbol%29.md)
   Initializes a performance measurement for a single iteration with the value and unit of measurement.
-- [convenience init(identifier: String, displayName: String, value: Measurement<Unit>)](xctperformancemeasurement/init(identifier:displayname:value:).md)
+- [convenience init(identifier: String, displayName: String, value: Measurement<Unit>)](./init%28identifier,displayname,value%29.md)
   Initializes a performance measurement for a single iteration with the value.
-- [convenience init(identifier: String, displayName: String, value: Measurement<Unit>, polarity: XCTPerformanceMeasurement.Polarity)](xctperformancemeasurement/init(identifier:displayname:value:polarity:).md)
+- [convenience init(identifier: String, displayName: String, value: Measurement<Unit>, polarity: XCTPerformanceMeasurement.Polarity)](./init%28identifier,displayname,value,polarity%29.md)
   Initializes a performance measurement for a single iteration with the value and polarity.
 
 

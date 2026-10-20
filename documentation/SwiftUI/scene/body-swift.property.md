@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The content and behavior of the scene.
@@ -26,11 +27,12 @@ The content and behavior of the scene.
 
 For any scene that you create, provide a computed `body` property that defines the scene as a composition of other scenes. You can assemble a scene from built-in scenes that SwiftUI provides, as well as other scenes that you’ve defined.
 
-Swift infers the scene’s [`Body`](scene/body-swift.associatedtype.md) associated type based on the contents of the `body` property.
+Swift infers the scene’s [`Body`](./body-swift.associatedtype.md) associated type based on the contents of the `body` property.
 
 ## See Also
 
-- [associatedtype Body : Scene](scene/body-swift.associatedtype.md)
+### Creating a scene
+- [associatedtype Body : Scene](./body-swift.associatedtype.md)
   The type of scene that represents the body of this scene.
 
 

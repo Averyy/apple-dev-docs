@@ -1,7 +1,8 @@
 # CBChannelSoundingSessionConfiguration.Role
 
 **Framework**: Core Bluetooth  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 enum Role
 ```
 
+```c
+enum CBChannelSoundingSessionConfigurationRole : NSInteger;
+```
+
 #### Overview
 
 Specifies which channel sounding role a CBPeripheral should assume for a given session.
@@ -21,19 +26,19 @@ Specifies which channel sounding role a CBPeripheral should assume for a given s
 ## Topics
 
 ### Enumeration Cases
-- [CBChannelSoundingSessionConfiguration.Role.initiator](cbchannelsoundingsessionconfiguration/role-swift.enum/initiator.md)
+- [CBChannelSoundingSessionConfiguration.Role.initiator](./role-swift.enum/initiator.md)
 ### Initializers
-- [init?(rawValue: Int)](cbchannelsoundingsessionconfiguration/role-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./role-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

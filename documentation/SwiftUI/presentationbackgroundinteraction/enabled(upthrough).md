@@ -1,7 +1,8 @@
 # enabled(upThrough:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 People can interact with the view behind a presentation up through a specified detent.
 
@@ -30,11 +31,12 @@ At detents larger than the one you specify, SwiftUI disables interaction.
 
 ## See Also
 
-- [static var automatic: PresentationBackgroundInteraction](presentationbackgroundinteraction/automatic.md)
+### Getting interaction types
+- [static var automatic: PresentationBackgroundInteraction](./automatic.md)
   The default background interaction for the presentation.
-- [static var disabled: PresentationBackgroundInteraction](presentationbackgroundinteraction/disabled.md)
+- [static var disabled: PresentationBackgroundInteraction](./disabled.md)
   People can’t interact with the view behind a presentation.
-- [static var enabled: PresentationBackgroundInteraction](presentationbackgroundinteraction/enabled.md)
+- [static var enabled: PresentationBackgroundInteraction](./enabled.md)
   People can interact with the view behind a presentation.
 
 

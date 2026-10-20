@@ -1,7 +1,8 @@
 # PKStrokePath.InterpolatedSlice
 
 **Framework**: PencilKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A struct representing an interpolated slice of stroke points with a specific stride across a range of this stroke data.
 
@@ -21,19 +22,19 @@ struct InterpolatedSlice
 ## Topics
 
 ### Traversing slices
-- [PKStrokePath.InterpolatedSlice.Stride](pkstrokepath-swift.struct/interpolatedslice/stride.md)
+- [PKStrokePath.InterpolatedSlice.Stride](./interpolatedslice/stride.md)
   The stride between elements of this slice.
 ### Supporting protocol requirements
-- [Protocol implementations](interpolatedslice-protocol-implementations.md)
+- [Protocol implementations](../interpolatedslice-protocol-implementations.md)
   Access the interpolated slice’s implementations of protocol methods.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [IteratorProtocol](../swift/iteratorprotocol.md)
-- [Sequence](../swift/sequence.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [IteratorProtocol](../../Swift/iteratorprotocol.md)
+- [Sequence](../../Swift/sequence.md)
 
 
 ---

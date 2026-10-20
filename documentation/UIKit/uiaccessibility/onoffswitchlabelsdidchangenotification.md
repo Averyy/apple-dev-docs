@@ -1,7 +1,8 @@
 # onOffSwitchLabelsDidChangeNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that UIKit posts when the system’s On/Off Labels setting changes.
 
@@ -19,9 +20,14 @@ nonisolated
 static let onOffSwitchLabelsDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UIAccessibilityOnOffSwitchLabelsDidChangeNotification;
+```
+
 ## See Also
 
-- [static var isOnOffSwitchLabelsEnabled: Bool](uiaccessibility/isonoffswitchlabelsenabled.md)
+### On and off labels
+- [static var isOnOffSwitchLabelsEnabled: Bool](./isonoffswitchlabelsenabled.md)
   A Boolean value that indicates whether the On/Off Labels setting is in an enabled state.
 
 

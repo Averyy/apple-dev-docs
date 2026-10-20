@@ -1,7 +1,8 @@
 # isOpaque
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the canvas is fully opaque.
 
@@ -27,7 +28,8 @@ You might be able to improve performance by setting this value to `true`, making
 
 ## See Also
 
-- [var colorMode: ColorRenderingMode](canvas/colormode.md)
+### Managing opacity and color
+- [var colorMode: ColorRenderingMode](./colormode.md)
   The working color space and storage format of the canvas.
 
 

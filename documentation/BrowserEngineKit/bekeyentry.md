@@ -1,7 +1,8 @@
 # BEKeyEntry
 
 **Framework**: BrowserEngineKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that represents a keyboard event in the text system.
 
@@ -17,38 +18,43 @@ A class that represents a keyboard event in the text system.
 class BEKeyEntry
 ```
 
+```objc
+@interface BEKeyEntry : NSObject
+```
+
 ## Topics
 
 ### Identifying the key
-- [var key: UIKey](bekeyentry/key.md)
+- [var key: UIKey](./bekeyentry/key.md)
   The key that the person presses.
 ### Getting information about the keypress
-- [var state: BEKeyEntry.KeyPressState](bekeyentry/state.md)
+- [var state: BEKeyEntry.KeyPressState](./bekeyentry/state.md)
   A value that indicates if the key is pressed.
-- [BEKeyEntry.KeyPressState](bekeyentry/keypressstate.md)
+- [BEKeyEntry.KeyPressState](./bekeyentry/keypressstate.md)
   Key-press states for a keyboard event.
-- [var isKeyRepeating: Bool](bekeyentry/iskeyrepeating.md)
+- [var isKeyRepeating: Bool](./bekeyentry/iskeyrepeating.md)
   A Boolean value that indicates whether the person holds a key down to repeat its key event.
-- [var timestamp: TimeInterval](bekeyentry/timestamp.md)
+- [var timestamp: TimeInterval](./bekeyentry/timestamp.md)
   The time that the key event occurs.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class BEKeyEntryContext](bekeyentrycontext.md)
+### Keyboard input
+- [class BEKeyEntryContext](./bekeyentrycontext.md)
   A class that describes a key event and the text document with which the event is associated.
-- [enum BEKeyModifierFlags](bekeymodifierflags.md)
+- [enum BEKeyModifierFlags](./bekeymodifierflags.md)
   An enumeration that records the state of the shift-modifier keys.
 
 

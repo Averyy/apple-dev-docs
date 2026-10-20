@@ -1,7 +1,8 @@
 # base
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the underlying attributed string that the attributed substring derives from.
 

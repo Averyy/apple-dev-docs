@@ -1,7 +1,8 @@
 # id
 
 **Framework**: Background Assets  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique ID for the asset pack.
 
@@ -21,7 +22,8 @@ let id: String
 
 ## See Also
 
-- [let version: Int](assetpack/version.md)
+### Identifying assets
+- [let version: Int](./version.md)
   The asset pack’s version number.
 
 

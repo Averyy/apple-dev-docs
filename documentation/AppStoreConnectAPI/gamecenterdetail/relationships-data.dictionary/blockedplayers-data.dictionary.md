@@ -1,14 +1,15 @@
 # GameCenterDetail.Relationships.BlockedPlayers
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 4.5+
 
 ## Declaration
 
-```swift
+```
 object GameCenterDetail.Relationships.BlockedPlayers
 ```
 

@@ -1,9 +1,10 @@
 # kCFUserNotificationUseRadioButtonsFlag
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-Creates a group of radio buttons instead of checkboxes for the elements in the [`kCFUserNotificationCheckBoxTitlesKey`](kcfusernotificationcheckboxtitleskey.md) array in the user notification’s description dictionary.
+Creates a group of radio buttons instead of checkboxes for the elements in the [`kCFUserNotificationCheckBoxTitlesKey`](./kcfusernotificationcheckboxtitleskey.md) array in the user notification’s description dictionary.
 
 **Availability**:
 - macOS 10.0+
@@ -14,9 +15,14 @@ Creates a group of radio buttons instead of checkboxes for the elements in the [
 var kCFUserNotificationUseRadioButtonsFlag: CFOptionFlags { get }
 ```
 
+```c
+kCFUserNotificationUseRadioButtonsFlag
+```
+
 ## See Also
 
-- [var kCFUserNotificationNoDefaultButtonFlag: CFOptionFlags](kcfusernotificationnodefaultbuttonflag.md)
+### Constants
+- [var kCFUserNotificationNoDefaultButtonFlag: CFOptionFlags](./kcfusernotificationnodefaultbuttonflag.md)
   Displays the dialog without the default, alternate, or other buttons.
 
 

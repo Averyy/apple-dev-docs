@@ -1,7 +1,8 @@
 # instanceDescriptorType
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls the type of instance descriptor that the instance descriptor buffer references.
 
@@ -17,6 +18,10 @@ Controls the type of instance descriptor that the instance descriptor buffer ref
 
 ```swift
 var instanceDescriptorType: MTLAccelerationStructureInstanceDescriptorType { get set }
+```
+
+```objc
+@property (nonatomic) MTLAccelerationStructureInstanceDescriptorType instanceDescriptorType;
 ```
 
 #### Discussion

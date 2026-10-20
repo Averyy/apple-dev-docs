@@ -1,7 +1,8 @@
 # zone()
 
 **Framework**: MetalKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 9.0+

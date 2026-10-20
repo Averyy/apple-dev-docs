@@ -1,12 +1,15 @@
 # hasDividerLines
 
 **Framework**: Notification Center  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether list displays divider lines between rows.
 
 **Availability**:
-- macOS 10.10+
+- macOS 10.10+ - Deprecated in 11.0
+
+> **Deprecated**: Use [WidgetKit](../../WidgetKit/WidgetKit.md) instead.
 
 ## Declaration
 
@@ -14,13 +17,18 @@ A Boolean value that indicates whether list displays divider lines between rows.
 var hasDividerLines: Bool { get set }
 ```
 
+```objc
+@property (assign) BOOL hasDividerLines;
+```
+
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value of this property is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var minimumVisibleRowCount: Int](ncwidgetlistviewcontroller/minimumvisiblerowcount.md)
+### Customizing the List Appearance
+- [var minimumVisibleRowCount: Int](./minimumvisiblerowcount.md)
   The minimum number of visible rows to display.
 
 

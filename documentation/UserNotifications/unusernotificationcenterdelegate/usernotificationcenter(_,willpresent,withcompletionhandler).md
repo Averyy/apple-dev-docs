@@ -1,7 +1,8 @@
 # userNotificationCenter(_:willPresent:withCompletionHandler:)
 
 **Framework**: User Notifications  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate how to handle a notification that arrived while the app was running in the foreground.
 
@@ -17,33 +18,48 @@ Asks the delegate how to handle a notification that arrived while the app was ru
 ## Declaration
 
 ```swift
+optional func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping @Sendable (UNNotificationPresentationOptions) -> Void)
+```
+
+```swift
 optional func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification) async -> UNNotificationPresentationOptions
+```
+
+```objc
+- (void) userNotificationCenter:(UNUserNotificationCenter *) center willPresentNotification:(UNNotification *) notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions options)) completionHandler;
 ```
 
 ## Mentions
 
-- [Asking permission to use notifications](asking-permission-to-use-notifications.md)
-- [Handling notifications and notification-related actions](handling-notifications-and-notification-related-actions.md)
+- [Asking permission to use notifications](../asking-permission-to-use-notifications.md)
+- [Handling notifications and notification-related actions](../handling-notifications-and-notification-related-actions.md)
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-optional func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification) async -> UNNotificationPresentationOptions
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> optional func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification) async -> UNNotificationPresentationOptions
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 If your app is in the foreground when a notification arrives, the shared user notification center calls this method to deliver the notification directly to your app. If you implement this method, you can take whatever actions are necessary to process the notification and update your app. When you finish, call the `completionHandler` block and specify how you want the system to alert the user, if at all.
 
-If your delegate does not implement this method, the system behaves as if you had passed the [`UNNotificationPresentationOptionNone`](unnotificationpresentationoptionnone.md) option to the `completionHandler` block. If you do not provide a delegate at all for the [`UNUserNotificationCenter`](unusernotificationcenter.md) object, the system uses the notification’s original options to alert the user.
+If your delegate does not implement this method, the system behaves as if you had passed the [`UNNotificationPresentationOptionNone`](../unnotificationpresentationoptionnone.md) option to the `completionHandler` block. If you do not provide a delegate at all for the [`UNUserNotificationCenter`](../unusernotificationcenter.md) object, the system uses the notification’s original options to alert the user.
 
 ## Parameters
 
 - `center`: The shared user notification center object that received the notification.
 - `notification`: The notification that is about to be delivered. Use the information in this object to determine an appropriate course of action. For example, you might use the information to update your app’s interface.
-- `completionHandler`: The block to execute with the presentation option for the notification. Always execute this block at some point during your implementation of this method. Use the `options` parameter to specify how you want the system to alert the user, if at all. This block has no return value and takes the following parameter: - **options**: The option for notifying the user. Specify [`UNNotificationPresentationOptionNone`](unnotificationpresentationoptionnone.md) to silence the notification completely. Specify other values to interact with the user. For a list of possible options, see [`UNNotificationPresentationOptions`](unnotificationpresentationoptions.md).
+- `completionHandler`: The block to execute with the presentation option for the notification. Always execute this block at some point during your implementation of this method. Use the `options` parameter to specify how you want the system to alert the user, if at all. This block has no return value and takes the following parameter:
+
+  - **options**: The option for notifying the user. Specify [`UNNotificationPresentationOptionNone`](../unnotificationpresentationoptionnone.md) to silence the notification completely. Specify other values to interact with the user. For a list of possible options, see [`UNNotificationPresentationOptions`](../unnotificationpresentationoptions.md).
 
 ## See Also
 
-- [struct UNNotificationPresentationOptions](unnotificationpresentationoptions.md)
+### Receiving Notifications
+- [struct UNNotificationPresentationOptions](../unnotificationpresentationoptions.md)
   Constants indicating how to present a notification in a foreground app.
 
 

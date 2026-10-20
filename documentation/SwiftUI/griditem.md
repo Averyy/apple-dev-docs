@@ -1,7 +1,8 @@
 # GridItem
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A description of a row or a column in a lazy grid.
 
@@ -22,7 +23,7 @@ struct GridItem
 
 #### Overview
 
-Use an array of `GridItem` instances to configure the layout of items in a lazy grid. Each grid item in the array specifies layout properties like size and spacing for the rows of a [`LazyHGrid`](lazyhgrid.md) or the columns of a [`LazyVGrid`](lazyvgrid.md). The following example defines four rows for a horizontal grid, each with different characteristics:
+Use an array of `GridItem` instances to configure the layout of items in a lazy grid. Each grid item in the array specifies layout properties like size and spacing for the rows of a [`LazyHGrid`](./lazyhgrid.md) or the columns of a [`LazyVGrid`](./lazyvgrid.md). The following example defines four rows for a horizontal grid, each with different characteristics:
 
 ```swift
 struct GridItemDemo: View {
@@ -48,39 +49,40 @@ struct GridItemDemo: View {
 }
 ```
 
-A lazy horizontal grid sets the width of each column based on the widest cell in the column. It can do this because it has access to all of the views in a given column at once. In the example above, the [`Color`](color.md) views always have the same fixed width, resulting in a uniform column width across the whole grid.
+A lazy horizontal grid sets the width of each column based on the widest cell in the column. It can do this because it has access to all of the views in a given column at once. In the example above, the [`Color`](./color.md) views always have the same fixed width, resulting in a uniform column width across the whole grid.
 
 However, a lazy horizontal grid doesn’t generally have access to all the views in a row, because it generates new cells as people scroll through information in your app. Instead, it relies on a grid item for information about each row. The example above indicates a different fixed height for each row, and sets a different amount of spacing to appear after each row:
 
-![A screenshot of a grid of rectangles arranged in four rows and a large](/images/com.apple.SwiftUI/GridItem-1-iOS@2x.png)
+![A screenshot of a grid of rectangles arranged in four rows and a large](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/GridItem-1-iOS@2x.png)
 
 ## Topics
 
 ### Creating a grid item
-- [init(GridItem.Size, spacing: CGFloat?, alignment: Alignment?)](griditem/init(_:spacing:alignment:).md)
+- [init(GridItem.Size, spacing: CGFloat?, alignment: Alignment?)](./griditem/init%28_,spacing,alignment%29.md)
   Creates a grid item with the specified size, spacing, and alignment.
 ### Inspecting grid item properties
-- [var alignment: Alignment?](griditem/alignment.md)
+- [var alignment: Alignment?](./griditem/alignment.md)
   The alignment to use when placing each view.
-- [var spacing: CGFloat?](griditem/spacing.md)
+- [var spacing: CGFloat?](./griditem/spacing.md)
   The spacing to the next item.
-- [var size: GridItem.Size](griditem/size-swift.property.md)
+- [var size: GridItem.Size](./griditem/size-swift.property.md)
   The size of the item, which is the width of a column item or the height of a row item.
-- [GridItem.Size](griditem/size-swift.enum.md)
+- [GridItem.Size](./griditem/size-swift.enum.md)
   The size in the minor axis of one or more rows or columns in a grid layout.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct LazyHGrid](lazyhgrid.md)
+### Dynamically arranging views in two dimensions
+- [struct LazyHGrid](./lazyhgrid.md)
   A container view that arranges its child views in a grid that grows horizontally, creating items only as needed.
-- [struct LazyVGrid](lazyvgrid.md)
+- [struct LazyVGrid](./lazyvgrid.md)
   A container view that arranges its child views in a grid that grows vertically, creating items only as needed.
 
 

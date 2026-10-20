@@ -1,7 +1,8 @@
 # kCVReturnInvalidDisplay
 
 **Framework**: Core Video  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The display specified when creating a display link is invalid.
 
@@ -20,13 +21,18 @@ The display specified when creating a display link is invalid.
 var kCVReturnInvalidDisplay: CVReturn { get }
 ```
 
+```c
+kCVReturnInvalidDisplay
+```
+
 ## See Also
 
-- [var kCVReturnDisplayLinkAlreadyRunning: CVReturn](kcvreturndisplaylinkalreadyrunning.md)
+### Display Link
+- [var kCVReturnDisplayLinkAlreadyRunning: CVReturn](./kcvreturndisplaylinkalreadyrunning.md)
   The specified display link is already running.
-- [var kCVReturnDisplayLinkNotRunning: CVReturn](kcvreturndisplaylinknotrunning.md)
+- [var kCVReturnDisplayLinkNotRunning: CVReturn](./kcvreturndisplaylinknotrunning.md)
   The specified display link is not running.
-- [var kCVReturnDisplayLinkCallbacksNotSet: CVReturn](kcvreturndisplaylinkcallbacksnotset.md)
+- [var kCVReturnDisplayLinkCallbacksNotSet: CVReturn](./kcvreturndisplaylinkcallbacksnotset.md)
   No callback registered for the specified display link. You must set either the output callback or both the render and display callbacks.
 
 

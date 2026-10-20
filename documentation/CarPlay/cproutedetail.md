@@ -1,7 +1,8 @@
 # CPRouteDetail
 
 **Framework**: CarPlay  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 27.0+
@@ -13,6 +14,10 @@
 ```swift
 @MainActor
 class CPRouteDetail
+```
+
+```objc
+@interface CPRouteDetail : NSObject
 ```
 
 #### Overview
@@ -28,59 +33,59 @@ Use route information to differentiate between routing options and provide trans
 ## Topics
 
 ### Initializers
-- [convenience init(HOV: String)](cproutedetail/init(hov:)-hin7.md)
-- [convenience init(batteryLevel: Double)](cproutedetail/init(batterylevel:).md)
+- [convenience init(HOV: String)](./cproutedetail/init%28hov%29-hin7.md)
+- [convenience init(batteryLevel: Double)](./cproutedetail/init%28batterylevel%29.md)
   Creates additional route information for battery percentage.
-- [convenience init(carbonFootprint: Measurement<UnitMass>)](cproutedetail/init(carbonfootprint:).md)
+- [convenience init(carbonFootprint: Measurement<UnitMass>)](./cproutedetail/init%28carbonfootprint%29.md)
   Creates additional route information for carbon footprint.
-- [init?(coder: NSCoder)](cproutedetail/init(coder:).md)
-- [convenience init(ecoScore: Double)](cproutedetail/init(ecoscore:).md)
+- [init?(coder: NSCoder)](./cproutedetail/init%28coder%29.md)
+- [convenience init(ecoScore: Double)](./cproutedetail/init%28ecoscore%29.md)
   Creates additional route information for an eco-score rating.
-- [convenience init(emissions: Measurement<UnitMass>)](cproutedetail/init(emissions:).md)
+- [convenience init(emissions: Measurement<UnitMass>)](./cproutedetail/init%28emissions%29.md)
   Creates additional route information for emissions data.
-- [convenience init(fuelEnergy: Measurement<UnitEnergy>)](cproutedetail/init(fuelenergy:).md)
+- [convenience init(fuelEnergy: Measurement<UnitEnergy>)](./cproutedetail/init%28fuelenergy%29.md)
   Creates additional route information for fuel energy content.
-- [convenience init(fuelLevel: Measurement<UnitVolume>)](cproutedetail/init(fuellevel:).md)
+- [convenience init(fuelLevel: Measurement<UnitVolume>)](./cproutedetail/init%28fuellevel%29.md)
   Creates additional route information for a fuel level.
-- [convenience init(fuelMass: Measurement<UnitMass>)](cproutedetail/init(fuelmass:).md)
+- [convenience init(fuelMass: Measurement<UnitMass>)](./cproutedetail/init%28fuelmass%29.md)
   Creates additional route information for fuel mass.
-- [convenience init(hov: String)](cproutedetail/init(hov:)-6ivii.md)
+- [convenience init(hov: String)](./cproutedetail/init%28hov%29-6ivii.md)
   Creates additional route information for High-Occupancy Vehicle (HOV) lane access.
-- [convenience init(info: String)](cproutedetail/init(info:).md)
+- [convenience init(info: String)](./cproutedetail/init%28info%29.md)
   Creates additional route information with a freeform informational string.
-- [convenience init(kilowattHours: Measurement<UnitEnergy>)](cproutedetail/init(kilowatthours:).md)
+- [convenience init(kilowattHours: Measurement<UnitEnergy>)](./cproutedetail/init%28kilowatthours%29.md)
   Creates additional route information for battery energy in kilowatt-hours.
-- [convenience init(parking: String)](cproutedetail/init(parking:).md)
+- [convenience init(parking: String)](./cproutedetail/init%28parking%29.md)
   Creates additional route information describing parking at the destination.
-- [convenience init(rating: Double)](cproutedetail/init(rating:).md)
+- [convenience init(rating: Double)](./cproutedetail/init%28rating%29.md)
   Creates additional route information for a route rating.
-- [convenience init(symbolName: String, value: String)](cproutedetail/init(symbolname:value:).md)
+- [convenience init(symbolName: String, value: String)](./cproutedetail/init%28symbolname,value%29.md)
   Creates custom additional route information with a symbol name and value.
-- [convenience init(tollAmount: Double, locale: Locale)](cproutedetail/init(tollamount:locale:).md)
+- [convenience init(tollAmount: Double, locale: Locale)](./cproutedetail/init%28tollamount,locale%29.md)
   Creates additional route information for a toll amount.
-- [convenience init(trafficLights: Int)](cproutedetail/init(trafficlights:).md)
+- [convenience init(trafficLights: Int)](./cproutedetail/init%28trafficlights%29.md)
   Creates additional route information for the number of traffic lights along the route.
-- [convenience init(warning: String)](cproutedetail/init(warning:).md)
+- [convenience init(warning: String)](./cproutedetail/init%28warning%29.md)
   Creates additional route information for route warnings.
 ### Instance Properties
-- [var symbolTintColor: UIColor?](cproutedetail/symboltintcolor.md)
+- [var symbolTintColor: UIColor?](./cproutedetail/symboltintcolor.md)
   The symbolTintColor to apply to the label.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

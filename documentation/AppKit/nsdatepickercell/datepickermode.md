@@ -1,12 +1,13 @@
 # datePickerMode
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mode in use by the date picker.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ The mode in use by the date picker.
 var datePickerMode: NSDatePicker.Mode { get set }
 ```
 
+```objc
+@property NSDatePickerMode datePickerMode;
+```
+
 #### Discussion
 
-For a list of possible values, see [`NSDatePicker.Mode`](nsdatepicker/mode.md).
+For a list of possible values, see [`NSDatePicker.Mode`](../nsdatepicker/mode.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # init(validation:maxDepth:minLossReduction:minChildWeight:randomSeed:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.0+
@@ -19,9 +20,10 @@ init(validation: MLDecisionTreeClassifier.ModelParameters.ValidationData = .spli
 
 ## See Also
 
-- [init(validationData: MLDataTable?, maxDepth: Int, minLossReduction: Double, minChildWeight: Double, randomSeed: Int)](mldecisiontreeclassifier/modelparameters-swift.struct/init(validationdata:maxdepth:minlossreduction:minchildweight:randomseed:).md)
+### Creating parameters
+- [init(validationData: MLDataTable?, maxDepth: Int, minLossReduction: Double, minChildWeight: Double, randomSeed: Int)](./init%28validationdata,maxdepth,minlossreduction,minchildweight,randomseed%29.md)
   Creates a new set of parameters.
-- [MLDecisionTreeClassifier.ModelParameters.ValidationData](mldecisiontreeclassifier/modelparameters-swift.struct/validationdata-swift.enum.md)
+- [MLDecisionTreeClassifier.ModelParameters.ValidationData](./validationdata-swift.enum.md)
   Values for specifying validation data.
 
 

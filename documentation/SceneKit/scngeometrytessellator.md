@@ -1,16 +1,17 @@
 # SCNGeometryTessellator
 
 **Framework**: SceneKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -18,40 +19,45 @@
 class SCNGeometryTessellator
 ```
 
+```objc
+@interface SCNGeometryTessellator : NSObject
+```
+
 ## Topics
 
 ### Choosing a Smoothing Algorithm
-- [var smoothingMode: SCNTessellationSmoothingMode](scngeometrytessellator/smoothingmode.md)
-- [enum SCNTessellationSmoothingMode](scntessellationsmoothingmode.md)
+- [var smoothingMode: SCNTessellationSmoothingMode](./scngeometrytessellator/smoothingmode.md)
+- [enum SCNTessellationSmoothingMode](./scntessellationsmoothingmode.md)
 ### Initializers
-- [init?(coder: NSCoder)](scngeometrytessellator/init(coder:).md)
+- [init?(coder: NSCoder)](./scngeometrytessellator/init%28coder%29.md)
 ### Instance Properties
-- [var edgeTessellationFactor: CGFloat](scngeometrytessellator/edgetessellationfactor.md)
-- [var insideTessellationFactor: CGFloat](scngeometrytessellator/insidetessellationfactor.md)
-- [var isAdaptive: Bool](scngeometrytessellator/isadaptive.md)
-- [var isScreenSpace: Bool](scngeometrytessellator/isscreenspace.md)
-- [var maximumEdgeLength: CGFloat](scngeometrytessellator/maximumedgelength.md)
-- [var tessellationFactorScale: CGFloat](scngeometrytessellator/tessellationfactorscale.md)
-- [var tessellationPartitionMode: MTLTessellationPartitionMode](scngeometrytessellator/tessellationpartitionmode.md)
+- [var edgeTessellationFactor: CGFloat](./scngeometrytessellator/edgetessellationfactor.md)
+- [var insideTessellationFactor: CGFloat](./scngeometrytessellator/insidetessellationfactor.md)
+- [var isAdaptive: Bool](./scngeometrytessellator/isadaptive.md)
+- [var isScreenSpace: Bool](./scngeometrytessellator/isscreenspace.md)
+- [var maximumEdgeLength: CGFloat](./scngeometrytessellator/maximumedgelength.md)
+- [var tessellationFactorScale: CGFloat](./scngeometrytessellator/tessellationfactorscale.md)
+- [var tessellationPartitionMode: MTLTessellationPartitionMode](./scngeometrytessellator/tessellationpartitionmode.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [var tessellator: SCNGeometryTessellator?](scngeometry/tessellator.md)
+### Managing Tessellation
+- [var tessellator: SCNGeometryTessellator?](./scngeometry/tessellator.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # date
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The start date of the ECG sensor data recording, not the start of the session.
 
@@ -16,21 +17,26 @@ The start date of the ECG sensor data recording, not the start of the session.
 var date: Date { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSDate * date;
+```
+
 ## See Also
 
-- [var frequency: Measurement<UnitFrequency>](srelectrocardiogramsample/frequency.md)
+### Accessing ECG data
+- [var frequency: Measurement<UnitFrequency>](./frequency.md)
   The frequency in hertz that the ECG sensor records the data.
-- [var lead: SRElectrocardiogramSample.Lead](srelectrocardiogramsample/lead-swift.property.md)
+- [var lead: SRElectrocardiogramSample.Lead](./lead-swift.property.md)
   The lead used to record the ECG data.
-- [SRElectrocardiogramSample.Lead](srelectrocardiogramsample/lead-swift.enum.md)
+- [SRElectrocardiogramSample.Lead](./lead-swift.enum.md)
   The location of the lead that a person uses to record the ECG data.
-- [var session: SRElectrocardiogramSession](srelectrocardiogramsample/session.md)
+- [var session: SRElectrocardiogramSession](./session.md)
   The session where this sample occurs.
-- [class SRElectrocardiogramSession](srelectrocardiogramsession.md)
+- [class SRElectrocardiogramSession](../srelectrocardiogramsession.md)
   An object that represents ECG data that a device records during a period of time.
-- [var data: [SRElectrocardiogramData]](srelectrocardiogramsample/data.md)
+- [var data: [SRElectrocardiogramData]](./data.md)
   The data that the sensor records.
-- [class SRElectrocardiogramData](srelectrocardiogramdata.md)
+- [class SRElectrocardiogramData](../srelectrocardiogramdata.md)
   A representation of the ECG data that the sensor records.
 
 

@@ -1,18 +1,19 @@
 # width
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A width value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ A width value.
 var width: Double
 ```
 
+```c
+CGFloat width;
+```
+
 ## See Also
 
-- [var height: Double](cgsize/height.md)
+### Geometric Properties
+- [var height: Double](./height.md)
   A height value.
 
 

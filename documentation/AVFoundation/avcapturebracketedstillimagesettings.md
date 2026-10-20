@@ -1,7 +1,8 @@
 # AVCaptureBracketedStillImageSettings
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The abstract superclass for bracketed photo capture settings.
 
@@ -17,6 +18,10 @@ The abstract superclass for bracketed photo capture settings.
 class AVCaptureBracketedStillImageSettings
 ```
 
+```objc
+@interface AVCaptureBracketedStillImageSettings : NSObject
+```
+
 #### Overview
 
 > **Note**:  The `AVCaptureBracketedStillImageSettings` class must not be instantiated directly. You should create instances of the `AVCaptureManualExposureBracketedStillImageSettings` and `AVCaptureAutoExposureBracketedStillImageSettings` classes as appropriate.
@@ -24,23 +29,24 @@ class AVCaptureBracketedStillImageSettings
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [AVCaptureAutoExposureBracketedStillImageSettings](avcaptureautoexposurebracketedstillimagesettings.md)
-- [AVCaptureManualExposureBracketedStillImageSettings](avcapturemanualexposurebracketedstillimagesettings.md)
+- [AVCaptureAutoExposureBracketedStillImageSettings](./avcaptureautoexposurebracketedstillimagesettings.md)
+- [AVCaptureManualExposureBracketedStillImageSettings](./avcapturemanualexposurebracketedstillimagesettings.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVCaptureAutoExposureBracketedStillImageSettings](avcaptureautoexposurebracketedstillimagesettings.md)
+### Bracketed settings types
+- [class AVCaptureAutoExposureBracketedStillImageSettings](./avcaptureautoexposurebracketedstillimagesettings.md)
   A configuration for defining bracketed photo captures in terms of bias relative to automatic exposure.
-- [class AVCaptureManualExposureBracketedStillImageSettings](avcapturemanualexposurebracketedstillimagesettings.md)
+- [class AVCaptureManualExposureBracketedStillImageSettings](./avcapturemanualexposurebracketedstillimagesettings.md)
   A configuration for defining bracketed photo captures in terms of specific exposure and ISO values.
 
 

@@ -1,14 +1,15 @@
 # setMulticastAddresses
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn setMulticastAddresses(const ether_addr_t *addresses, uint32_t count);
 ```
 

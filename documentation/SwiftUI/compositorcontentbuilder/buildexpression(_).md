@@ -1,7 +1,8 @@
 # buildExpression(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - macOS 26.0+

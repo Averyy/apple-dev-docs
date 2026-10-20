@@ -1,14 +1,15 @@
 # unrestrictedFloatNullableAttr
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 **Availability**:
 - Safari Mobile 10.1+
 
 ## Declaration
 
-```swift
+```
 readonly attribute unrestricted float? unrestrictedFloatNullableAttr;
 ```
 

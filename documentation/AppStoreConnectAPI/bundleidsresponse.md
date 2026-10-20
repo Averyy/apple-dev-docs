@@ -1,7 +1,8 @@
 # BundleIdsResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that list bundle IDs.
 
@@ -10,7 +11,7 @@ The response body for endpoints that list bundle IDs.
 
 ## Declaration
 
-```swift
+```
 object BundleIdsResponse
 ```
 
@@ -21,25 +22,29 @@ object BundleIdsResponse
 - `meta` (PagingInformation): Paging information.
 - `included` ([*]): The requested relationship data.
 
+  **Allowed Types**: `App`, `BundleIdCapability`, `Profile`
+
 ## See Also
 
-- [List bundle ids](get-v1-bundleids.md)
+### Related Documentation
+- [List bundle ids](./get-v1-bundleids.md)
   Find and list bundle IDs that are registered to your team.
-- [object BundleId](bundleid.md)
+### Objects and types
+- [object BundleId](./bundleid.md)
   An App ID registered with Apple, associating a specific bundle identifier with capabilities and provisioning profiles.
-- [type BundleIdPlatform](bundleidplatform.md)
+- [type BundleIdPlatform](./bundleidplatform.md)
   Strings that represent the operating system intended for the bundle.
-- [object BundleIdCreateRequest](bundleidcreaterequest.md)
+- [object BundleIdCreateRequest](./bundleidcreaterequest.md)
   The request body you use to create a Bundle ID.
-- [object BundleIdUpdateRequest](bundleidupdaterequest.md)
+- [object BundleIdUpdateRequest](./bundleidupdaterequest.md)
   The request body you use to update a Bundle ID.
-- [object BundleIdResponse](bundleidresponse.md)
+- [object BundleIdResponse](./bundleidresponse.md)
   The response body for endpoints that create, read, or modify a single bundle ID.
-- [object BundleIdWithoutIncludesResponse](bundleidwithoutincludesresponse.md)
+- [object BundleIdWithoutIncludesResponse](./bundleidwithoutincludesresponse.md)
   A response containing a single bundle ID, without including capability and profile details.
-- [object BundleIdAppLinkageResponse](bundleidapplinkageresponse.md)
-- [object BundleIdBundleIdCapabilitiesLinkagesResponse](bundleidbundleidcapabilitieslinkagesresponse.md)
-- [object BundleIdProfilesLinkagesResponse](bundleidprofileslinkagesresponse.md)
+- [object BundleIdAppLinkageResponse](./bundleidapplinkageresponse.md)
+- [object BundleIdBundleIdCapabilitiesLinkagesResponse](./bundleidbundleidcapabilitieslinkagesresponse.md)
+- [object BundleIdProfilesLinkagesResponse](./bundleidprofileslinkagesresponse.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # MarketplaceWebhook.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attribute that describes the url where you receive notifications.
 
@@ -10,7 +11,7 @@ The attribute that describes the url where you receive notifications.
 
 ## Declaration
 
-```swift
+```
 object MarketplaceWebhook.Attributes
 ```
 

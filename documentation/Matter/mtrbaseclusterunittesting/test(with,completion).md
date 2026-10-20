@@ -1,7 +1,8 @@
 # test(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func test(with params: MTRUnitTestingClusterTestParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func test(with params: MTRUnitTestingClusterTestParams?) async throws
+```
+
+```objc
+- (void) testWithParams:(MTRUnitTestingClusterTestParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

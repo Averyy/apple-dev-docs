@@ -1,7 +1,8 @@
 # init(name:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a time zone initialized with a given identifier.
 
@@ -20,13 +21,17 @@ Returns a time zone initialized with a given identifier.
 init?(name tzName: String)
 ```
 
+```objc
+- (instancetype) initWithName:(NSString *) tzName;
+```
+
 #### Return Value
 
 A time zone object initialized with the identifier `tzName`.
 
 #### Discussion
 
-If `tzName` is a known identifier, this method calls [`init(name:data:)`](nstimezone/init(name:data:).md) with the appropriate data object.
+If `tzName` is a known identifier, this method calls [`init(name:data:)`](./init%28name,data%29.md) with the appropriate data object.
 
 ## Parameters
 
@@ -34,15 +39,16 @@ If `tzName` is a known identifier, this method calls [`init(name:data:)`](nstime
 
 ## See Also
 
-- [init?(name: String, data: Data?)](nstimezone/init(name:data:).md)
+### Creating Time Zones
+- [init?(name: String, data: Data?)](./init%28name,data%29.md)
   Initializes a time zone with a given identifier and time zone data.
-- [convenience init?(abbreviation: String)](nstimezone/init(abbreviation:).md)
+- [convenience init?(abbreviation: String)](./init%28abbreviation%29.md)
   Returns the time zone object identified by a given abbreviation.
-- [convenience init(forSecondsFromGMT: Int)](nstimezone/init(forsecondsfromgmt:).md)
+- [convenience init(forSecondsFromGMT: Int)](./init%28forsecondsfromgmt%29.md)
   Returns a time zone object offset from Greenwich Mean Time by a given number of seconds.
-- [class var knownTimeZoneNames: [String]](nstimezone/knowntimezonenames.md)
+- [class var knownTimeZoneNames: [String]](./knowntimezonenames.md)
   Returns an array of strings listing the IDs of all the time zones known to the system.
-- [class var abbreviationDictionary: [String : String]](nstimezone/abbreviationdictionary.md)
+- [class var abbreviationDictionary: [String : String]](./abbreviationdictionary.md)
   Returns a dictionary holding the mappings of time zone abbreviations to time zone names.
 
 

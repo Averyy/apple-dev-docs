@@ -1,14 +1,15 @@
 # buffer
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 mach_vm_address_t buffer;
 ```
 

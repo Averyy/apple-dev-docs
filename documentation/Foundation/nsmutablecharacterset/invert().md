@@ -1,7 +1,8 @@
 # invert()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces all the characters in the receiver with all the characters it didn’t previously contain.
 
@@ -20,13 +21,18 @@ Replaces all the characters in the receiver with all the characters it didn’t 
 func invert()
 ```
 
+```objc
+- (void) invert;
+```
+
 #### Discussion
 
-Inverting a mutable character set, whether by [`invert()`](nsmutablecharacterset/invert().md) or by [`inverted`](nscharacterset/inverted.md), is much less efficient than inverting an immutable character set with [`inverted`](nscharacterset/inverted.md).
+Inverting a mutable character set, whether by [`invert()`](./invert%28%29.md) or by [`inverted`](../nscharacterset/inverted.md), is much less efficient than inverting an immutable character set with [`inverted`](../nscharacterset/inverted.md).
 
 ## See Also
 
-- [var inverted: CharacterSet](nscharacterset/inverted.md)
+### Related Documentation
+- [var inverted: CharacterSet](../nscharacterset/inverted.md)
   A character set containing only characters that don’t exist in the receiver.
 
 

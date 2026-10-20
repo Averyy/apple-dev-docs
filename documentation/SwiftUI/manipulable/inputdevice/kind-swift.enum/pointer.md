@@ -1,7 +1,8 @@
 # Manipulable.InputDevice.Kind.pointer
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A click-based, indirect input device.
 

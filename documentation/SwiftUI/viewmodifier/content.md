@@ -1,7 +1,8 @@
 # ViewModifier.Content
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The content view type passed to `body()`.
 
@@ -22,9 +23,10 @@ typealias Content
 
 ## See Also
 
-- [func body(content: Self.Content) -> Self.Body](viewmodifier/body(content:).md)
+### Creating a view modifier
+- [func body(content: Self.Content) -> Self.Body](./body%28content%29.md)
   Gets the current body of the caller.
-- [associatedtype Body : View](viewmodifier/body.md)
+- [associatedtype Body : View](./body.md)
   The type of view representing the body.
 
 

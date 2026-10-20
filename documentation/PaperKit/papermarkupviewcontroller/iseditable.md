@@ -1,7 +1,8 @@
 # isEditable
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a person can edit the canvas contents.
 
@@ -25,9 +26,10 @@ This property controls whether a person can edit content. The default value is `
 
 ## See Also
 
-- [var drawingTool: any PKTool](papermarkupviewcontroller/drawingtool.md)
+### Editing markup
+- [var drawingTool: any PKTool](./drawingtool.md)
   The tool for drawing on the canvas.
-- [var isRulerActive: Bool](papermarkupviewcontroller/isruleractive.md)
+- [var isRulerActive: Bool](./isruleractive.md)
   A Boolean value that indicates whether a ruler view is visible on the canvas.
 
 

@@ -1,7 +1,8 @@
 # throughputCapacity
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current estimated average throughput capacity of the data path, given the current radio conditions and concurrent Wi-Fi use cases.
 
@@ -22,9 +23,10 @@ The result is in `Mbps` and can be `nil` if the system can’t calculate the cap
 
 ## See Also
 
-- [let throughputCeiling: Double?](waperformancereport/throughputceiling.md)
+### Getting the throughput metrics
+- [let throughputCeiling: Double?](./throughputceiling.md)
   The highest throughput the connection is capable of under ideal conditions, given the hardware capabilities of both devices.
-- [var throughputCapacityRatio: Double?](waperformancereport/throughputcapacityratio.md)
+- [var throughputCapacityRatio: Double?](./throughputcapacityratio.md)
   The current normalized ratio of the throughput capacity and throughput ceiling.
 
 

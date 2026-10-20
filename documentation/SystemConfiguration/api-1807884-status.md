@@ -1,12 +1,14 @@
 # status
 
-**Framework**: System Configuration
+**Framework**: System Configuration  
+**Role**: Article
 
 The connection status.
 
 ## See Also
 
-- [connection](1807883-connection.md)
+### Fields
+- [connection](./api-1807883-connection.md)
   The network connection.
 
 

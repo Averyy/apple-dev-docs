@@ -1,7 +1,8 @@
 # subscript(dynamicMember:)
 
 **Framework**: Foundation  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 **Availability**:
 - iOS 16.0+

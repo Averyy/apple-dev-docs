@@ -2,6 +2,7 @@
 
 **Framework**: Assignables  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Wraps this user identity with a type eraser.
@@ -10,7 +11,7 @@ Wraps this user identity with a type eraser.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -18,10 +19,17 @@ Wraps this user identity with a type eraser.
 func eraseToAnyUserIdentity() -> AnyUserIdentity
 ```
 
+## Default Implementations
+
+### UserIdentity Implementations
+- [func eraseToAnyUserIdentity() -> AnyUserIdentity](./erasetoanyuseridentity%28%29-1di4z.md)
+  Wraps this user identity with a type eraser.
+
 ## See Also
 
-- [UserIdentity.As](useridentity/as.md)
-  An alias for [`UserIdentityFactory`](useridentityfactory.md) for convenience.
+### Getting a type eraser
+- [UserIdentity.As](./as.md)
+  An alias for [`UserIdentityFactory`](../useridentityfactory.md) for convenience.
 
 
 ---

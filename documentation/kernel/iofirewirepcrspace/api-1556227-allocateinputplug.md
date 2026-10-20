@@ -1,14 +1,15 @@
 # allocateInputPlug
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn allocateInputPlug(void *refcon, IOFireWirePCRCallback func, UInt32 & plug);
 ```
 

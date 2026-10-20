@@ -1,7 +1,8 @@
 # normal
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional normal texture for the decal.
 

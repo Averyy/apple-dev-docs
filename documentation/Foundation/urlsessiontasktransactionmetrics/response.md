@@ -1,7 +1,8 @@
 # response
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transaction response.
 
@@ -21,13 +22,18 @@ The transaction response.
 var response: URLResponse? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSURLResponse * response;
+```
+
 #### Discussion
 
 This property is `nil` if an error occurred and no response was generated.
 
 ## See Also
 
-- [var request: URLRequest](urlsessiontasktransactionmetrics/request.md)
+### Accessing request and response
+- [var request: URLRequest](./request.md)
   The transaction request.
 
 

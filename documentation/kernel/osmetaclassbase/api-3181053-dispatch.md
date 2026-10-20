@@ -1,7 +1,8 @@
 # Dispatch
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Runtime internals
 
@@ -11,13 +12,22 @@ Runtime internals
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+virtual kern_return_t Dispatch(IORPC invoke);
+```
+
+*macOS*
+
+```cpp
 virtual kern_return_t Dispatch(const IORPC rpc);
 ```
 
 ## See Also
 
-- [- Invoke](osmetaclassbase/3181056-invoke.md)
+### Managing Runtime Internals
+- [- Invoke](./api-3181056-invoke.md)
   Runtime internals
 
 

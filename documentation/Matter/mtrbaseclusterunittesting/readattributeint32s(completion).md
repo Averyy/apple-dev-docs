@@ -1,7 +1,8 @@
 # readAttributeInt32s(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeInt32s(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeInt32s() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeInt32sWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

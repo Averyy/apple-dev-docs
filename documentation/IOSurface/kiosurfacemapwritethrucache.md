@@ -1,7 +1,8 @@
 # kIOSurfaceMapWriteThruCache
 
 **Framework**: IOSurface  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var kIOSurfaceMapWriteThruCache: Int { get }
+```
+
+```c
+kIOSurfaceMapWriteThruCache
 ```
 
 

@@ -1,7 +1,8 @@
 # Publishers.TryReduce
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher that applies an error-throwing closure to all received elements and produces an accumulated value when the upstream publisher finishes.
 
@@ -23,39 +24,40 @@ struct TryReduce<Upstream, Output> where Upstream : Publisher
 ## Topics
 
 ### Creating a try-reduce publisher
-- [init(upstream: Upstream, initial: Output, nextPartialResult: (Output, Upstream.Output) throws -> Output)](publishers/tryreduce/init(upstream:initial:nextpartialresult:).md)
+- [init(upstream: Upstream, initial: Output, nextPartialResult: (Output, Upstream.Output) throws -> Output)](./tryreduce/init%28upstream,initial,nextpartialresult%29.md)
   Creates a publisher that applies an error-throwing closure to all received elements and produces an accumulated value when the upstream publisher finishes.
 ### Declaring supporting types
-- [Publishers.Output](publishers/output.md)
+- [Publishers.Output](./output.md)
   A publisher that publishes elements specified by a range in the sequence of published elements.
-- [Publishers.TryReduce.Failure](publishers/tryreduce/failure.md)
+- [Publishers.TryReduce.Failure](./tryreduce/failure.md)
   The kind of errors this publisher might publish.
 ### Inspecting publisher properties
-- [let upstream: Upstream](publishers/tryreduce/upstream.md)
+- [let upstream: Upstream](./tryreduce/upstream.md)
   The publisher from which this publisher receives elements.
-- [let initial: Output](publishers/tryreduce/initial.md)
+- [let initial: Output](./tryreduce/initial.md)
   The initial value provided on the first-use of the closure.
-- [let nextPartialResult: (Output, Upstream.Output) throws -> Output](publishers/tryreduce/nextpartialresult.md)
+- [let nextPartialResult: (Output, Upstream.Output) throws -> Output](./tryreduce/nextpartialresult.md)
   An error-throwing closure that takes the previously-accumulated value and the next element from the upstream to produce a new value.
 
 ## Relationships
 
 ### Conforms To
-- [Publisher](publisher.md)
+- [Publisher](../publisher.md)
 
 ## See Also
 
-- [Publishers.Collect](publishers/collect.md)
+### Reducing elements
+- [Publishers.Collect](./collect.md)
   A publisher that buffers items.
-- [Publishers.CollectByCount](publishers/collectbycount.md)
+- [Publishers.CollectByCount](./collectbycount.md)
   A publisher that buffers a maximum number of items.
-- [Publishers.CollectByTime](publishers/collectbytime.md)
+- [Publishers.CollectByTime](./collectbytime.md)
   A publisher that buffers and periodically publishes its items.
-- [Publishers.TimeGroupingStrategy](publishers/timegroupingstrategy.md)
+- [Publishers.TimeGroupingStrategy](./timegroupingstrategy.md)
   A strategy for collecting received elements.
-- [Publishers.IgnoreOutput](publishers/ignoreoutput.md)
+- [Publishers.IgnoreOutput](./ignoreoutput.md)
   A publisher that ignores all upstream elements, but passes along the upstream publisher’s completion state (finished or failed).
-- [Publishers.Reduce](publishers/reduce.md)
+- [Publishers.Reduce](./reduce.md)
   A publisher that applies a closure to all received elements and produces an accumulated value when the upstream publisher finishes.
 
 

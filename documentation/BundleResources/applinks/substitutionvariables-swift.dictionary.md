@@ -1,7 +1,8 @@
 # applinks.SubstitutionVariables
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A list of named strings and an associated array of string values that define custom substitution variables to use for URL pattern matching.
 
@@ -41,9 +42,9 @@ The following is a list of predefined substitution variables and examples of eac
 
 `$(xdigit)` — All hexadecimal digits: `0`, …, `F`, `f`.
 
-`$(region)` — All ISO regions in [`isoRegionCodes`](https://developer.apple.com/documentation/foundation/locale/isoregioncodes), such as `CA`, `UK`, and `US`.
+`$(region)` — All ISO regions in [`isoRegionCodes`](../../Foundation/locale/isoregioncodes.md), such as `CA`, `UK`, and `US`.
 
-`$(lang)` — All ISO languages in [`isoLanguageCodes`](https://developer.apple.com/documentation/foundation/locale/isolanguagecodes), such as `ar`, `en`, and `zh`.
+`$(lang)` — All ISO languages in [`isoLanguageCodes`](../../Foundation/locale/isolanguagecodes.md), such as `ar`, `en`, and `zh`.
 
 This example code shows how to use universal links substitution variables in an association file:
 

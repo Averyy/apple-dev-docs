@@ -1,21 +1,26 @@
 # CGComponent.float32Bit
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 case float32Bit
+```
+
+```c
+kCGComponentFloat32Bit
 ```
 
 

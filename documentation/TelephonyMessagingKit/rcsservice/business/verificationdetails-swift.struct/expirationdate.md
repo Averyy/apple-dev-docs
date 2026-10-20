@@ -1,7 +1,8 @@
 # expirationDate
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Expiration date of business information.
 
@@ -16,9 +17,10 @@ let expirationDate: Date?
 
 ## See Also
 
-- [let isVerified: Bool](rcsservice/business/verificationdetails-swift.struct/isverified.md)
+### Accessing verification properties
+- [let isVerified: Bool](./isverified.md)
   Whether the business is verified.
-- [let verifiedBy: String?](rcsservice/business/verificationdetails-swift.struct/verifiedby.md)
+- [let verifiedBy: String?](./verifiedby.md)
   Source of verification.
 
 

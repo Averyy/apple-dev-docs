@@ -1,7 +1,8 @@
 # MeshBuffers.ElementType
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The data type for each element of the buffer.
 
@@ -11,7 +12,7 @@ The data type for each element of the buffer.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,24 +23,24 @@ enum ElementType
 ## Topics
 
 ### Enumeration Cases
-- [MeshBuffers.ElementType.double](meshbuffers/elementtype/double.md)
-- [MeshBuffers.ElementType.float](meshbuffers/elementtype/float.md)
-- [MeshBuffers.ElementType.int16](meshbuffers/elementtype/int16.md)
-- [MeshBuffers.ElementType.int32](meshbuffers/elementtype/int32.md)
-- [MeshBuffers.ElementType.int8](meshbuffers/elementtype/int8.md)
-- [MeshBuffers.ElementType.jointInfluence](meshbuffers/elementtype/jointinfluence.md)
-- [MeshBuffers.ElementType.simd2Float](meshbuffers/elementtype/simd2float.md)
-- [MeshBuffers.ElementType.simd3Float](meshbuffers/elementtype/simd3float.md)
-- [MeshBuffers.ElementType.simd4Float](meshbuffers/elementtype/simd4float.md)
-- [MeshBuffers.ElementType.uInt16](meshbuffers/elementtype/uint16.md)
-- [MeshBuffers.ElementType.uInt32](meshbuffers/elementtype/uint32.md)
-- [MeshBuffers.ElementType.uInt8](meshbuffers/elementtype/uint8.md)
+- [MeshBuffers.ElementType.double](./elementtype/double.md)
+- [MeshBuffers.ElementType.float](./elementtype/float.md)
+- [MeshBuffers.ElementType.int16](./elementtype/int16.md)
+- [MeshBuffers.ElementType.int32](./elementtype/int32.md)
+- [MeshBuffers.ElementType.int8](./elementtype/int8.md)
+- [MeshBuffers.ElementType.jointInfluence](./elementtype/jointinfluence.md)
+- [MeshBuffers.ElementType.simd2Float](./elementtype/simd2float.md)
+- [MeshBuffers.ElementType.simd3Float](./elementtype/simd3float.md)
+- [MeshBuffers.ElementType.simd4Float](./elementtype/simd4float.md)
+- [MeshBuffers.ElementType.uInt16](./elementtype/uint16.md)
+- [MeshBuffers.ElementType.uInt32](./elementtype/uint32.md)
+- [MeshBuffers.ElementType.uInt8](./elementtype/uint8.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

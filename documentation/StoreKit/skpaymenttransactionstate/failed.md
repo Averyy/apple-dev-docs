@@ -1,18 +1,21 @@
 # SKPaymentTransactionState.failed
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A failed transaction.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 13.1+
-- macOS 10.7+
-- tvOS ?+
-- visionOS 1.0+
-- watchOS 6.2+
+- iOS 3.0+ - Deprecated in 18.0
+- iPadOS 3.0+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.7+ - Deprecated in 15.0
+- tvOS - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 6.2+ - Deprecated in 11.0
+
+> **Deprecated**: Use PurchaseResult from Product.purchase(confirmIn:options:).
 
 ## Declaration
 
@@ -20,26 +23,31 @@ A failed transaction.
 case failed
 ```
 
+```c
+SKPaymentTransactionStateFailed
+```
+
 ## Mentions
 
-- [Implementing promotional offers in your app](implementing-promotional-offers-in-your-app.md)
-- [Processing a transaction](processing-a-transaction.md)
-- [Testing an interrupted purchase](testing-an-interrupted-purchase.md)
-- [Testing Apple In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
+- [Implementing promotional offers in your app](../implementing-promotional-offers-in-your-app.md)
+- [Processing a transaction](../processing-a-transaction.md)
+- [Testing an interrupted purchase](../testing-an-interrupted-purchase.md)
+- [Testing Apple In-App Purchases in Xcode](../testing-in-app-purchases-in-xcode.md)
 
 #### Discussion
 
-Check the [`error`](skpaymenttransaction/error.md) property to determine what happened.
+Check the [`error`](../skpaymenttransaction/error.md) property to determine what happened.
 
 ## See Also
 
-- [SKPaymentTransactionState.purchasing](skpaymenttransactionstate/purchasing.md)
+### Constants
+- [SKPaymentTransactionState.purchasing](./purchasing.md)
   A transaction that is being processed by the App Store.
-- [SKPaymentTransactionState.purchased](skpaymenttransactionstate/purchased.md)
+- [SKPaymentTransactionState.purchased](./purchased.md)
   A successfully processed transaction.
-- [SKPaymentTransactionState.restored](skpaymenttransactionstate/restored.md)
+- [SKPaymentTransactionState.restored](./restored.md)
   A transaction that restores content previously purchased by the user.
-- [SKPaymentTransactionState.deferred](skpaymenttransactionstate/deferred.md)
+- [SKPaymentTransactionState.deferred](./deferred.md)
   A transaction that is in the queue, but its final status is pending external action such as Ask to Buy.
 
 

@@ -1,7 +1,8 @@
 # getItem
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Retrieves the data associated with the specified key.
 
@@ -12,13 +13,23 @@ Retrieves the data associated with the specified key.
 
 ## Declaration
 
-```swift
+*tvOS*
+
+```
+String getItem(
+    in String key
+);
+```
+
+*Safari Desktop, Safari Mobile*
+
+```
 getter DOMString? getItem(
     DOMString key
 );
 ```
 
-#### Return_value
+#### Return Value
 
 A `String` object containing the data associated with the passed key.
 
@@ -32,15 +43,16 @@ The `getItem` function retrieves the data associated with the given key. If the 
 
 ## See Also
 
-- [clear](storage/1627404-clear.md)
+### Accessing Key-Value Pair Information
+- [clear](./api-1627404-clear.md)
   Removes all instances of key-value pairs from the storage list.
-- [key](storage/1627380-key.md)
+- [key](./api-1627380-key.md)
   Returns the key located in the specified location.
-- [length](storage/1627448-length.md)
+- [length](./api-1627448-length.md)
   The number of key-value pairs currently in the storage list.
-- [removeItem](storage/1627332-removeitem.md)
+- [removeItem](./api-1627332-removeitem.md)
   Deletes a key and all associated data from storage.
-- [setItem](storage/1627302-setitem.md)
+- [setItem](./api-1627302-setitem.md)
   Associates the given data with the given key.
 
 

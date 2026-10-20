@@ -1,7 +1,8 @@
 # replace
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Replaces an item in the data source array.
 
@@ -10,7 +11,7 @@ Replaces an item in the data source array.
 
 ## Declaration
 
-```swift
+```
 Array replace(
     in int index, 
     in Array items
@@ -19,13 +20,14 @@ Array replace(
 
 ## See Also
 
-- [insert](datasource/datasource/3192116-insert.md)
+### Modifying the Data Source
+- [insert](./api-3192116-insert.md)
   Inserts a new item into the array.
-- [delete](datasource/datasource/3192115-delete.md)
+- [delete](./api-3192115-delete.md)
   Deletes an item from the data source array.
-- [move](datasource/datasource/3192120-move.md)
+- [move](./api-3192120-move.md)
   Moves an item in the data source array.
-- [update](datasource/datasource/3192123-update.md)
+- [update](./api-3192123-update.md)
   Updates an item in the data source array.
 
 

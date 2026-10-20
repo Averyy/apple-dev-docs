@@ -1,7 +1,8 @@
 # shouldPlayHaptics
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Enables/disables haptics on devices that support it.
 

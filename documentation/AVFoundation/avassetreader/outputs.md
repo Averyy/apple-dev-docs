@@ -1,7 +1,8 @@
 # outputs
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The outputs from which you read media data.
 
@@ -19,15 +20,20 @@ The outputs from which you read media data.
 var outputs: [AVAssetReaderOutput] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVAssetReaderOutput *> * outputs;
+```
+
 #### Discussion
 
-The array contains the concrete instances of [`AVAssetReaderOutput`](avassetreaderoutput.md) that you associate with the reader.
+The array contains the concrete instances of [`AVAssetReaderOutput`](../avassetreaderoutput.md) that you associate with the reader.
 
 ## See Also
 
-- [func canAdd(AVAssetReaderOutput) -> Bool](avassetreader/canadd(_:).md)
+### Managing outputs
+- [func canAdd(AVAssetReaderOutput) -> Bool](./canadd%28_%29.md)
   Determines whether you can add the output to the asset reader.
-- [func add(AVAssetReaderOutput)](avassetreader/add(_:).md)
+- [func add(AVAssetReaderOutput)](./add%28_%29.md)
   Adds an output to the reader.
 
 

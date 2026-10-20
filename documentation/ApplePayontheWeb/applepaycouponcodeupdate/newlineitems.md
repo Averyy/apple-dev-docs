@@ -1,7 +1,8 @@
 # newLineItems
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of updated line items incorporating the coupon code update.
 
@@ -11,17 +12,18 @@ The list of updated line items incorporating the coupon code update.
 
 ## Declaration
 
-```swift
+```
 sequence <ApplePayLineItem> newLineItems;
 ```
 
 ## See Also
 
-- [newShippingMethods](applepaycouponcodeupdate/newshippingmethods.md)
+### Setting updated transaction details
+- [newShippingMethods](./newshippingmethods.md)
   The list of available shipping methods.
-- [newTotal](applepaycouponcodeupdate/newtotal.md)
+- [newTotal](./newtotal.md)
   The updated total resulting from the coupon code update.
-- [errors](applepaycouponcodeupdate/errors.md)
+- [errors](./errors.md)
   A list of errors resulting from the coupon code update.
 
 

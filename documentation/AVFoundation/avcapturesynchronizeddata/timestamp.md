@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time at which this synchronized data was captured.
 
@@ -17,9 +18,13 @@ The time at which this synchronized data was captured.
 var timestamp: CMTime { get }
 ```
 
+```objc
+@property (readonly) CMTime timestamp;
+```
+
 #### Discussion
 
-Synchronized data is always synchronized to the [`masterClock`](avcapturesession/masterclock.md) time of the [`AVCaptureSession`](avcapturesession.md) object to which the data output is connected.
+Synchronized data is always synchronized to the [`masterClock`](../avcapturesession/masterclock.md) time of the [`AVCaptureSession`](../avcapturesession.md) object to which the data output is connected.
 
 
 ---

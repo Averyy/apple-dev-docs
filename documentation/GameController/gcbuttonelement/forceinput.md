@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Get the input containing the measured force applied to the button.
@@ -18,6 +19,10 @@ Get the input containing the measured force applied to the button.
 
 ```swift
 var forceInput: (any GCLinearInput)? { get }
+```
+
+```objc
+@property (readonly, nullable) id<GCLinearInput> forceInput;
 ```
 
 #### Discussion

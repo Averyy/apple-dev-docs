@@ -1,7 +1,8 @@
 # name
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the name of the named action.
 
@@ -19,13 +20,18 @@ Returns the name of the named action.
 var name: PDFActionNamedName { get set }
 ```
 
+```objc
+@property (nonatomic) PDFActionNamedName name;
+```
+
 #### Return Value
 
 The name of the named action.
 
 ## See Also
 
-- [class PDFActionNamed](pdfactionnamed.md)
+### Related Documentation
+- [class PDFActionNamed](../pdfactionnamed.md)
   `PDFActionNamed` defines methods used to work with actions in PDF documents, some of which are named in the Adobe PDF Specification.
 
 

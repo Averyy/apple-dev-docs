@@ -1,7 +1,8 @@
 # kem
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key encapsulation mechanism (KEM) for encapsulating the symmetric key.
 
@@ -22,9 +23,10 @@ let kem: HPKE.KEM
 
 ## See Also
 
-- [let aead: HPKE.AEAD](hpke/ciphersuite/aead.md)
+### Inspecting a cipher suite
+- [let aead: HPKE.AEAD](./aead.md)
   The authenticated encryption with additional data (AEAD) algorithm for encrypting and decrypting messages.
-- [let kdf: HPKE.KDF](hpke/ciphersuite/kdf.md)
+- [let kdf: HPKE.KDF](./kdf.md)
   The key derivation function (KDF) for deriving the symmetric key.
 
 

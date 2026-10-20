@@ -1,7 +1,8 @@
 # cancelRequest(withError:)
 
 **Framework**: File Provider UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels the action and returns the provided error.
 
@@ -18,17 +19,22 @@ Cancels the action and returns the provided error.
 func cancelRequest(withError error: any Error)
 ```
 
+```objc
+- (void) cancelRequestWithError:(NSError *) error;
+```
+
 ## Mentions
 
-- [Adding Actions to the Context Menu](adding-actions-to-the-context-menu.md)
+- [Adding Actions to the Context Menu](../adding-actions-to-the-context-menu.md)
 
 #### Discussion
 
-Call this method if the action fails. Set the error’s domain to [`FPUIErrorDomain`](fpuierrordomain.md). Set the error code to a [`FPUIExtensionErrorCode`](fpuiextensionerrorcode.md) value.
+Call this method if the action fails. Set the error’s domain to [`FPUIErrorDomain`](../fpuierrordomain.md). Set the error code to a [`FPUIExtensionErrorCode`](../fpuiextensionerrorcode.md) value.
 
 ## See Also
 
-- [func completeRequest()](fpuiactionextensioncontext/completerequest.md)
+### Completing the Action
+- [func completeRequest()](./completerequest%28%29.md)
   Marks the action as complete.
 
 

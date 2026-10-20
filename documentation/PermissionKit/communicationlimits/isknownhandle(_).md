@@ -1,7 +1,8 @@
 # isKnownHandle(_:)
 
 **Framework**: PermissionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A Boolean that checks if the system knows the given handle.
 
@@ -28,7 +29,8 @@ Whether or not the given handle is known by the system.
 
 ## See Also
 
-- [func knownHandles(in: Set<CommunicationHandle>) async -> Set<CommunicationHandle>](communicationlimits/knownhandles(in:).md)
+### Checking known handles
+- [func knownHandles(in: Set<CommunicationHandle>) async -> Set<CommunicationHandle>](./knownhandles%28in%29.md)
   Checks which handles in a given set are known to the system.
 
 

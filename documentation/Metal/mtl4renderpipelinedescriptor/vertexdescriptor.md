@@ -1,7 +1,8 @@
 # vertexDescriptor
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configures an optional vertex descriptor for the vertex input.
 
@@ -18,6 +19,10 @@ Configures an optional vertex descriptor for the vertex input.
 ```swift
 @NSCopying
 var vertexDescriptor: MTLVertexDescriptor? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) MTLVertexDescriptor * vertexDescriptor;
 ```
 
 #### Discussion

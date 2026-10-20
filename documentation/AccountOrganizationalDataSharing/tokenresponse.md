@@ -1,7 +1,8 @@
 # TokenResponse
 
 **Framework**: Account & Organizational Data Sharing  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Dictionary
 
 The response token object returned on a successful request.
 
@@ -10,7 +11,7 @@ The response token object returned on a successful request.
 
 ## Declaration
 
-```swift
+```
 object TokenResponse
 ```
 
@@ -24,9 +25,10 @@ object TokenResponse
 
 ## See Also
 
-- [object JWKSet](jwkset.md)
+### Common objects
+- [object JWKSet](./jwkset.md)
   A set of JSON web keys.
-- [object ErrorResponse](errorresponse.md)
+- [object ErrorResponse](./errorresponse.md)
   The error object returned after an unsuccessful request.
 
 

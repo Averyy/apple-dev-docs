@@ -1,7 +1,8 @@
 # shader(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a hover effect style that applies hover state data to a custom shader that applies to the entity’s model.
 
@@ -20,13 +21,13 @@ static func shader(_ inputs: HoverEffectComponent.ShaderHoverEffectInputs) -> Ho
 
 #### Discussion
 
-The custom shader can be either MaterialX or [`CustomMaterial`](custommaterial.md).
+The custom shader can be either MaterialX or [`CustomMaterial`](../../custommaterial.md).
 
 > ⚠️ **Warning**: This style doesn’t display anything without an appropriate custom shader.
 
 ## Parameters
 
-- `inputs`: A [`HoverEffectComponent.ShaderHoverEffectInputs`](hovereffectcomponent/shaderhovereffectinputs.md) instance that allows you to customize various aspects of this hover effect.
+- `inputs`: A [`HoverEffectComponent.ShaderHoverEffectInputs`](../shaderhovereffectinputs.md) instance that allows you to customize various aspects of this hover effect.
 
 
 ---

@@ -1,7 +1,8 @@
 # grip
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Grip for spatial gamepads.
 

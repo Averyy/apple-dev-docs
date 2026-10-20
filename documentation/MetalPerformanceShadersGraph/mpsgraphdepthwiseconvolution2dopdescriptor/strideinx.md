@@ -1,7 +1,8 @@
 # strideInX
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stride for the x dimension.
 
@@ -17,6 +18,10 @@ The stride for the x dimension.
 
 ```swift
 var strideInX: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger strideInX;
 ```
 
 #### Discussion

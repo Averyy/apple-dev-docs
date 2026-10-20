@@ -1,7 +1,8 @@
 # title
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional title for the collection.
 

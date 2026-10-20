@@ -1,7 +1,8 @@
 # messageChannel(for:)
 
 **Framework**: Audio Toolbox  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an object for bidirectional communication between an audio unit and its host.
 
@@ -18,9 +19,13 @@ Returns an object for bidirectional communication between an audio unit and its 
 func messageChannel(for channelName: String) -> any AUMessageChannel
 ```
 
+```objc
+- (id<AUMessageChannel>) messageChannelFor:(NSString *) channelName;
+```
+
 #### Return Value
 
-An object that conforms to [`AUMessageChannel`](aumessagechannel.md).
+An object that conforms to [`AUMessageChannel`](../aumessagechannel.md).
 
 #### Discussion
 
@@ -34,7 +39,8 @@ The host manages the message channel object’s lifetime. Design message channel
 
 ## See Also
 
-- [protocol AUMessageChannel](aumessagechannel.md)
+### Messaging Channels
+- [protocol AUMessageChannel](../aumessagechannel.md)
   A specification for a bidirectional communication message channel.
 
 

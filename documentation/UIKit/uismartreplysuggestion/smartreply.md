@@ -1,7 +1,8 @@
 # smartReply
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string from the Smart Reply option the user selected.
 
@@ -14,6 +15,10 @@ A string from the Smart Reply option the user selected.
 
 ```swift
 var smartReply: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * smartReply;
 ```
 
 #### Discussion

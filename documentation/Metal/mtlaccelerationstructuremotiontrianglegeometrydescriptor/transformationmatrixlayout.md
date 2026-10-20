@@ -1,7 +1,8 @@
 # transformationMatrixLayout
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var transformationMatrixLayout: MTLMatrixLayout { get set }
+```
+
+```objc
+@property (nonatomic) MTLMatrixLayout transformationMatrixLayout;
 ```
 
 

@@ -1,7 +1,8 @@
 # supportedResolutions
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 var supportedResolutions: IndexSet { get }
+```
+
+```objc
+@property (readonly) NSIndexSet * supportedResolutions;
 ```
 
 

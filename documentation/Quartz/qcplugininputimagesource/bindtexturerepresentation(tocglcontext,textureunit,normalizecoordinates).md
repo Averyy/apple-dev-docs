@@ -2,12 +2,15 @@
 
 **Framework**: Quartz  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Binds the texture to a given texture unit and optionally scales or flips the texture.
 
 **Availability**:
-- macOS 10.5+
+- macOS 10.5+ - Deprecated in 10.14
+
+> **Deprecated**: Quartz Composer OpenGL API deprecated. (Define QC_SILENCE_GL_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -15,27 +18,32 @@ Binds the texture to a given texture unit and optionally scales or flips the tex
 func bindTextureRepresentation(toCGLContext cgl_ctx: CGLContextObj!, textureUnit unit: GLenum, normalizeCoordinates flag: Bool)
 ```
 
+```objc
+- (void) bindTextureRepresentationToCGLContext:(CGLContextObj) cgl_ctx textureUnit:(GLenum) unit normalizeCoordinates:(BOOL) flag;
+```
+
 #### Discussion
 
-When you no longer need the texture, call [`unbindTextureRepresentation(fromCGLContext:textureUnit:)`](qcplugininputimagesource/unbindtexturerepresentation(fromcglcontext:textureunit:).md).
+When you no longer need the texture, call [`unbindTextureRepresentation(fromCGLContext:textureUnit:)`](./unbindtexturerepresentation%28fromcglcontext,textureunit%29.md).
 
 ## Parameters
 
 - `cgl_ctx`: The CGL context to render to.)
 - `unit`: The texture unit to bind to (such as, `GL_TEXTURE0`)
-- `flag`: To apply a texture matrix to scale coordinates (from `[0, pixels]` to `[0,1]`) and flip them vertically (if necessary), pass [`true`](https://developer.apple.com/documentation/swift/true).
+- `flag`: To apply a texture matrix to scale coordinates (from `[0, pixels]` to `[0,1]`) and flip them vertically (if necessary), pass [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [func lockTextureRepresentation(with: CGColorSpace!, forBounds: NSRect) -> Bool](qcplugininputimagesource/locktexturerepresentation(with:forbounds:).md)
+### Converting an Image to a Representation
+- [func lockTextureRepresentation(with: CGColorSpace!, forBounds: NSRect) -> Bool](./locktexturerepresentation%28with,forbounds%29.md)
   Creates an OpenGL texture representation from a subregion of the image source using the provided color space.
-- [func unlockTextureRepresentation()](qcplugininputimagesource/unlocktexturerepresentation.md)
+- [func unlockTextureRepresentation()](./unlocktexturerepresentation%28%29.md)
   Releases the OpenGL texture representation of the image source.
-- [func lockBufferRepresentation(withPixelFormat: String!, colorSpace: CGColorSpace!, forBounds: NSRect) -> Bool](qcplugininputimagesource/lockbufferrepresentation(withpixelformat:colorspace:forbounds:).md)
+- [func lockBufferRepresentation(withPixelFormat: String!, colorSpace: CGColorSpace!, forBounds: NSRect) -> Bool](./lockbufferrepresentation%28withpixelformat,colorspace,forbounds%29.md)
   Creates a memory buffer representation from a subregion of the image source using the provided pixel format and color space.
-- [func unbindTextureRepresentation(fromCGLContext: CGLContextObj!, textureUnit: GLenum)](qcplugininputimagesource/unbindtexturerepresentation(fromcglcontext:textureunit:).md)
+- [func unbindTextureRepresentation(fromCGLContext: CGLContextObj!, textureUnit: GLenum)](./unbindtexturerepresentation%28fromcglcontext,textureunit%29.md)
   Unbinds the texture from a texture unit.
-- [func unlockBufferRepresentation()](qcplugininputimagesource/unlockbufferrepresentation.md)
+- [func unlockBufferRepresentation()](./unlockbufferrepresentation%28%29.md)
   Releases the memory buffer representation of the image source.
 
 

@@ -1,7 +1,8 @@
 # shouldMerge(previous:value:time:context:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the current animation should merge with a previous animation.
 

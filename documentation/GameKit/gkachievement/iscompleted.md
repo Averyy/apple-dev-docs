@@ -1,7 +1,8 @@
 # isCompleted
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that states whether the player has completed the achievement.
 
@@ -20,19 +21,32 @@ A Boolean value that states whether the player has completed the achievement.
 var isCompleted: Bool { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly, getter=isCompleted) BOOL completed;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly, getter=isCompleted) BOOL completed;
+```
+
 #### Discussion
 
-This property is [`true`](https://developer.apple.com/documentation/swift/true) if the `percentComplete` property is equal to `100.0`; otherwise, it’s [`false`](https://developer.apple.com/documentation/swift/false).
+This property is [`true`](../../Swift/true.md) if the `percentComplete` property is equal to `100.0`; otherwise, it’s [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var identifier: String](gkachievement/identifier.md)
+### Accessing Achievement Properties
+- [var identifier: String](./identifier.md)
   The identifier for the achievement that you enter in App Store Connect.
-- [var player: GKPlayer](gkachievement/player.md)
+- [var player: GKPlayer](./player.md)
   The player who earned the achievement.
-- [var percentComplete: Double](gkachievement/percentcomplete.md)
+- [var percentComplete: Double](./percentcomplete.md)
   A percentage value that states how far the player has progressed on the achievement.
-- [var lastReportedDate: Date](gkachievement/lastreporteddate.md)
+- [var lastReportedDate: Date](./lastreporteddate.md)
   The last time your game reported progress on the achievement for the player.
 
 

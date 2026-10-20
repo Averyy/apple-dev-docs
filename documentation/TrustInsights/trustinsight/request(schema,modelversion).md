@@ -1,7 +1,8 @@
 # request(schema:modelVersion:)
 
 **Framework**: Trust Insights  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an insight request for the given insight type.
 
@@ -17,12 +18,12 @@ static func request(schema: Self.SchemaVersion, modelVersion: InsightEvaluator.M
 
 #### Return Value
 
-An [`InsightEvaluator.InsightRequest`](insightevaluator/insightrequest.md) to incorporate into an [`InsightEvaluator.InsightContext`](insightevaluator/insightcontext.md) that you can use to make an evaluation request.
+An [`InsightEvaluator.InsightRequest`](../insightevaluator/insightrequest.md) to incorporate into an [`InsightEvaluator.InsightContext`](../insightevaluator/insightcontext.md) that you can use to make an evaluation request.
 
 ## Parameters
 
-- `schema`: The required [`SchemaVersion`](trustinsight/schemaversion.md).
-- `modelVersion`: The required [`InsightEvaluator.ModelVersion`](insightevaluator/modelversion.md).
+- `schema`: The required [`SchemaVersion`](./schemaversion.md).
+- `modelVersion`: The required [`InsightEvaluator.ModelVersion`](../insightevaluator/modelversion.md).
 
 
 ---

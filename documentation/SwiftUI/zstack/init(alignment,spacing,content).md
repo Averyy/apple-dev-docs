@@ -1,7 +1,8 @@
 # init(alignment:spacing:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance with the given spacing and alignment.
 
@@ -14,6 +15,8 @@ Creates an instance with the given spacing and alignment.
 nonisolated
 init<V>(alignment: Alignment = .center, spacing: CGFloat?, @ContentBuilder content: () -> V) where Content == ZStackContent3D<V>, V : View
 ```
+
+Available when `Content` conforms to `View`.
 
 ## Parameters
 

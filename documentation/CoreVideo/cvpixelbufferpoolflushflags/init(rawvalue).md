@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Video  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a pixel buffer pool flush flags set with the options flags that you specify.
 

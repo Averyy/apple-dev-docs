@@ -1,7 +1,8 @@
 # MTRPM25ConcentrationMeasurementFeature
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.6+
@@ -18,29 +19,33 @@
 struct MTRPM25ConcentrationMeasurementFeature
 ```
 
+```c
+enum MTRPM25ConcentrationMeasurementFeature : uint32_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](mtrpm25concentrationmeasurementfeature/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./mtrpm25concentrationmeasurementfeature/init%28rawvalue%29.md)
 ### Type Properties
-- [static var averageMeasurement: MTRPM25ConcentrationMeasurementFeature](mtrpm25concentrationmeasurementfeature/averagemeasurement.md)
-- [static var criticalLevel: MTRPM25ConcentrationMeasurementFeature](mtrpm25concentrationmeasurementfeature/criticallevel.md)
-- [static var levelIndication: MTRPM25ConcentrationMeasurementFeature](mtrpm25concentrationmeasurementfeature/levelindication.md)
-- [static var mediumLevel: MTRPM25ConcentrationMeasurementFeature](mtrpm25concentrationmeasurementfeature/mediumlevel.md)
-- [static var numericMeasurement: MTRPM25ConcentrationMeasurementFeature](mtrpm25concentrationmeasurementfeature/numericmeasurement.md)
-- [static var peakMeasurement: MTRPM25ConcentrationMeasurementFeature](mtrpm25concentrationmeasurementfeature/peakmeasurement.md)
+- [static var averageMeasurement: MTRPM25ConcentrationMeasurementFeature](./mtrpm25concentrationmeasurementfeature/averagemeasurement.md)
+- [static var criticalLevel: MTRPM25ConcentrationMeasurementFeature](./mtrpm25concentrationmeasurementfeature/criticallevel.md)
+- [static var levelIndication: MTRPM25ConcentrationMeasurementFeature](./mtrpm25concentrationmeasurementfeature/levelindication.md)
+- [static var mediumLevel: MTRPM25ConcentrationMeasurementFeature](./mtrpm25concentrationmeasurementfeature/mediumlevel.md)
+- [static var numericMeasurement: MTRPM25ConcentrationMeasurementFeature](./mtrpm25concentrationmeasurementfeature/numericmeasurement.md)
+- [static var peakMeasurement: MTRPM25ConcentrationMeasurementFeature](./mtrpm25concentrationmeasurementfeature/peakmeasurement.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # isInputGainSettable
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether you can set the input gain.
 
@@ -18,9 +19,13 @@ A Boolean value that indicates whether you can set the input gain.
 var isInputGainSettable: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isInputGainSettable) BOOL inputGainSettable;
+```
+
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the device allows input gain to be changed, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+Returns [`true`](../../Swift/true.md) if the device allows input gain to be changed, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -28,9 +33,10 @@ Not all devices support variable gain; check this property before attempting to 
 
 ## See Also
 
-- [var inputGain: Float](avaudiosession/inputgain.md)
+### Setting input gain
+- [var inputGain: Float](./inputgain.md)
   The gain applied to inputs associated with the session.
-- [func setInputGain(Float) throws](avaudiosession/setinputgain(_:).md)
+- [func setInputGain(Float) throws](./setinputgain%28_%29.md)
   Changes the input gain to the specified value.
 
 

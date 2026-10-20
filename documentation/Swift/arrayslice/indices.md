@@ -1,7 +1,8 @@
 # ArraySlice.Indices
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type that represents the indices that are valid for subscripting an array, in ascending order.
 

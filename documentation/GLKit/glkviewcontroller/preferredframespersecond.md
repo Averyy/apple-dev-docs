@@ -1,19 +1,26 @@
 # preferredFramesPerSecond
 
 **Framework**: GLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rate you want the view controller to call the view to update the contents of the view.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- tvOS 9.0+
+- iOS 5.0+ - Deprecated in 12.0
+- iPadOS 5.0+ - Deprecated in 12.0
+- tvOS 9.0+ - Deprecated in 12.0
+
+> **Deprecated**: OpenGLES API deprecated. (Define GLES_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 var preferredFramesPerSecond: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSInteger preferredFramesPerSecond;
 ```
 
 #### Discussion
@@ -26,7 +33,8 @@ The default value is `30` frames per second.
 
 ## See Also
 
-- [var framesPerSecond: Int](glkviewcontroller/framespersecond.md)
+### Configuring the Frame rate
+- [var framesPerSecond: Int](./framespersecond.md)
   The actual rate that the view controller attempts to call the view to update its contents.
 
 

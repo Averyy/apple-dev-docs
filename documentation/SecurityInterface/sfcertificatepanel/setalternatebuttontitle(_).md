@@ -1,7 +1,8 @@
 # setAlternateButtonTitle(_:)
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Customizes the title of the alternate button.
 
@@ -14,9 +15,13 @@ Customizes the title of the alternate button.
 func setAlternateButtonTitle(_ title: String!)
 ```
 
+```objc
+- (void) setAlternateButtonTitle:(NSString *) title;
+```
+
 #### Discussion
 
-The alternate button is typically labelled “Cancel”. The alternate button dismisses the sheet or panel and returns a value of [`NSCancelButton`](https://developer.apple.com/documentation/appkit/nscancelbutton).
+The alternate button is typically labelled “Cancel”. The alternate button dismisses the sheet or panel and returns a value of [`NSCancelButton`](../../AppKit/nscancelbutton.md).
 
 ## Parameters
 
@@ -24,15 +29,17 @@ The alternate button is typically labelled “Cancel”. The alternate button di
 
 ## See Also
 
-- [func setDefaultButtonTitle(String!)](sfcertificatepanel/setdefaultbuttontitle(_:).md)
+### Related Documentation
+- [func setDefaultButtonTitle(String!)](./setdefaultbuttontitle%28_%29.md)
   Customizes the title of the default button.
-- [func runModal(for: SecTrust!, message: String!) -> Int](sfcertificatetrustpanel/runmodal(for:message:).md)
+- [func runModal(for: SecTrust!, message: String!) -> Int](../sfcertificatetrustpanel/runmodal%28for,message%29.md)
   Displays a modal panel that shows the results of a certificate trust evaluation and that allows the user to edit trust settings.
-- [func setDefaultButtonTitle(String!)](sfcertificatepanel/setdefaultbuttontitle(_:).md)
+### Customizing the Appearance of the Sheet or Panel
+- [func setDefaultButtonTitle(String!)](./setdefaultbuttontitle%28_%29.md)
   Customizes the title of the default button.
-- [func setPolicies(Any!)](sfcertificatepanel/setpolicies(_:).md)
+- [func setPolicies(Any!)](./setpolicies%28_%29.md)
   Specifies one or more policies that apply to the displayed certificates.
-- [func policies() -> [Any]!](sfcertificatepanel/policies.md)
+- [func policies() -> [Any]!](./policies%28%29.md)
   Returns an array of policies used to evaluate the status of the displayed certificates.
 
 

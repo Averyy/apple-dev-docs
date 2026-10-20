@@ -1,7 +1,8 @@
 # action
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The action to take when this rule matches network traffic.
 
@@ -14,9 +15,14 @@ The action to take when this rule matches network traffic.
 var action: NEFilterAction { get }
 ```
 
+```objc
+@property (readonly) NEFilterAction action;
+```
+
 ## See Also
 
-- [var networkRule: NENetworkRule](nefilterrule/networkrule.md)
+### Inspecting Filter Rule Properties
+- [var networkRule: NENetworkRule](./networkrule.md)
   The network rule that defines the network traffic characteristics that this filter rule matches.
 
 

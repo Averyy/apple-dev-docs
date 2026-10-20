@@ -1,24 +1,25 @@
 # Authenticating Calls to the ClassKit Catalog API
 
-**Framework**: ClassKit Catalog API
+**Framework**: ClassKit Catalog API  
+**Role**: Article
 
 Establish your identity to the ClassKit Catalog server by providing a cryptographically signed token for each call.
 
 #### Overview
 
-You authenticate the calls you make to the ClassKit Catalog API by including a cryptographically signed [`JSON Web Token (JWT)`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7519). You sign the JWT using a private key that you provision in [`Apple Developer`](https://developer.apple.comhttps://developer.apple.com) website, and then include the signed token as part of the header of each call that you make.
+You authenticate the calls you make to the ClassKit Catalog API by including a cryptographically signed [JSON Web Token (JWT)](https://tools.ietf.org/html/rfc7519). You sign the JWT using a private key that you provision in [Apple Developer](https://developer.apple.com) website, and then include the signed token as part of the header of each call that you make.
 
 ##### Register a Private Key
 
 Sign in to the Apple Developer web site, and navigate to the “Certificates, IDs, & Profiles” page. Choose Keys in the sidebar, and then click the plus (+) button to add a new key. Name the key, and enable it for use with ClassKit Catalog. Complete the registration and download the private key.
 
-![Screenshot of the Apple Developer website showing the form for adding a new cryptographic key.](/images/com.apple.classkitcatalogapi/media-3675465@2x.png)
+![Screenshot of the Apple Developer website showing the form for adding a new cryptographic key.](https://developer.apple.com/tutorials/images/com.apple.classkitcatalogapi/media-3675465@2x.png)
 
 You can download the private key only once. Apple doesn’t keep a copy of your key, so you can’t retrieve the key again. If you lose your key, you’ll need to revoke the key and create a new one. Similarly, if your private key is ever compromised, you’ll need to revoke the original key and create a new one.
 
 ##### Create and Sign a Token
 
-Compose a JWT as a combination of a header, a claim set, and a signature, as described in the [`JSON Web Token (JWT)`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7519) specification. Create the header as a JSON object with key-value pairs representing:
+Compose a JWT as a combination of a header, a claim set, and a signature, as described in the [JSON Web Token (JWT)](https://tools.ietf.org/html/rfc7519) specification. Create the header as a JSON object with key-value pairs representing:
 
 - The key identifier, given by the `kid` key. Provide the key identifier reported to you by the Apple Developer site after provisioning the key.
 - The type of token, given by the `typ` key. Provide a value of `JWT` to indicated a JSON web token.
@@ -62,7 +63,8 @@ Include the JWT with every request you make to the ClassKit Catalog API by addin
 
 ## See Also
 
-- [Testing Your ClassKit Catalog Implementation](testing-your-classkit-catalog-implementation.md)
+### Essentials
+- [Testing Your ClassKit Catalog Implementation](./testing-your-classkit-catalog-implementation.md)
   Verify your server interaction before deployment by operating in a development environment.
 
 

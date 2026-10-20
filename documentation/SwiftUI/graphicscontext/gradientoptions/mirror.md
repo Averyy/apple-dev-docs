@@ -1,7 +1,8 @@
 # mirror
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that repeats the gradient outside its nominal range, reflecting every other instance.
 
@@ -24,13 +25,14 @@ static var mirror: GraphicsContext.GradientOptions { get }
 
 Use this option to cause the gradient to repeat its pattern in areas that exceed the bounds of its start and end points. The repetitions alternately reverse the start and end points, producing a pattern like `0 -> 1`, `1 -> 0`, `0 -> 1`, and so on.
 
-Without either this option or [`repeat`](graphicscontext/gradientoptions/repeat.md), the gradient stops at the end of its range. This option takes precendence if you set both this one and [`repeat`](graphicscontext/gradientoptions/repeat.md).
+Without either this option or [`repeat`](./repeat.md), the gradient stops at the end of its range. This option takes precendence if you set both this one and [`repeat`](./repeat.md).
 
 ## See Also
 
-- [static var linearColor: GraphicsContext.GradientOptions](graphicscontext/gradientoptions/linearcolor.md)
+### Getting gradient options
+- [static var linearColor: GraphicsContext.GradientOptions](./linearcolor.md)
   An option that interpolates between colors in a linear color space.
-- [static var `repeat`: GraphicsContext.GradientOptions](graphicscontext/gradientoptions/repeat.md)
+- [static var `repeat`: GraphicsContext.GradientOptions](./repeat.md)
   An option that repeats the gradient outside its nominal range.
 
 

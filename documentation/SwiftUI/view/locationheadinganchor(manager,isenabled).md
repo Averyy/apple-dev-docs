@@ -1,7 +1,8 @@
 # locationHeadingAnchor(manager:isEnabled:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies this view as the reference body for the location manager’s heading calculations.
 

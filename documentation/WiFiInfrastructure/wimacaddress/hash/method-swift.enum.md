@@ -1,7 +1,8 @@
 # WIMACAddress.Hash.Method
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The method used to hash the MAC Address
 
@@ -19,19 +20,19 @@ enum Method
 ## Topics
 
 ### Enumeration Cases
-- [WIMACAddress.Hash.Method.sha256](wimacaddress/hash/method-swift.enum/sha256.md)
+- [WIMACAddress.Hash.Method.sha256](./method-swift.enum/sha256.md)
   Hash using `SHA256(salt, macAddress)`.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../../Swift/caseiterable.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

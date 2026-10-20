@@ -1,7 +1,8 @@
 # canRotateSelectedItemsLeft
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns whether the selected items can be rotated left.
 
@@ -14,13 +15,18 @@ Returns whether the selected items can be rotated left.
 var canRotateSelectedItemsLeft: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL canRotateSelectedItemsLeft;
+```
+
 ## See Also
 
-- [var canRotateSelectedItemsRight: Bool](ikcameradeviceview/canrotateselecteditemsright.md)
+### Selected Item Rotation
+- [var canRotateSelectedItemsRight: Bool](./canrotateselecteditemsright.md)
   Returns whether the selected items can be rotated right.
-- [func rotateLeft(Any!)](ikcameradeviceview/rotateleft(_:).md)
+- [func rotateLeft(Any!)](./rotateleft%28_%29.md)
   Rotates the selected image to the left.
-- [func rotateRight(Any!)](ikcameradeviceview/rotateright(_:).md)
+- [func rotateRight(Any!)](./rotateright%28_%29.md)
   Rotates the selected image to the right.
 
 

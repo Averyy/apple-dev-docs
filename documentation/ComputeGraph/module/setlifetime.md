@@ -1,13 +1,14 @@
 # module::setLifetime
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the lifetime of an element in seconds.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -19,7 +20,7 @@ void module::setLifetime(float lifetime)
 
 Use this function to control how long an element will exist before being automatically removed from the system.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/module__setLifetime.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/module__setLifetime.svg)
 
 ## Parameters
 

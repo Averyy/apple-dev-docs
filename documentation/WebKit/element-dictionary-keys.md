@@ -1,6 +1,7 @@
 # Element Dictionary Keys
 
-**Framework**: WebKit
+**Framework**: WebKit  
+**Role**: API Collection
 
 Predefined keys used to access an element dictionary.
 
@@ -11,27 +12,27 @@ These constants represent predefined keys used to access an element dictionary. 
 ## Topics
 
 ### Constants
-- [let WebElementDOMNodeKey: String](webelementdomnodekey.md)
+- [let WebElementDOMNodeKey: String](./webelementdomnodekey.md)
   The DOMNode for this element.
-- [let WebElementFrameKey: String](webelementframekey.md)
+- [let WebElementFrameKey: String](./webelementframekey.md)
   The WebFrame object associated with this element.
-- [let WebElementImageAltStringKey: String](webelementimagealtstringkey.md)
+- [let WebElementImageAltStringKey: String](./webelementimagealtstringkey.md)
   An NSString of the ALT attribute of an image element.
-- [let WebElementImageKey: String](webelementimagekey.md)
+- [let WebElementImageKey: String](./webelementimagekey.md)
   An NSImage representing an image element.
-- [let WebElementImageRectKey: String](webelementimagerectkey.md)
+- [let WebElementImageRectKey: String](./webelementimagerectkey.md)
   An NSValue containing an NSRect, the size of an image element.
-- [let WebElementImageURLKey: String](webelementimageurlkey.md)
+- [let WebElementImageURLKey: String](./webelementimageurlkey.md)
   An NSURL containing the location of an image element.
-- [let WebElementIsSelectedKey: String](webelementisselectedkey.md)
+- [let WebElementIsSelectedKey: String](./webelementisselectedkey.md)
   An NSNumber used as a BOOL value to indicate whether a text element is selected or not. Zero value indicates false, true otherwise.
-- [let WebElementLinkURLKey: String](webelementlinkurlkey.md)
+- [let WebElementLinkURLKey: String](./webelementlinkurlkey.md)
   An NSURL containing the location of a link if the element is within an anchor.
-- [let WebElementLinkTargetFrameKey: String](webelementlinktargetframekey.md)
+- [let WebElementLinkTargetFrameKey: String](./webelementlinktargetframekey.md)
   The WebFrame object associated with the target of the anchor.
-- [let WebElementLinkTitleKey: String](webelementlinktitlekey.md)
+- [let WebElementLinkTitleKey: String](./webelementlinktitlekey.md)
   An NSString containing the title of an anchor.
-- [let WebElementLinkLabelKey: String](webelementlinklabelkey.md)
+- [let WebElementLinkLabelKey: String](./webelementlinklabelkey.md)
   An NSString containing the text within an anchor.
 
 

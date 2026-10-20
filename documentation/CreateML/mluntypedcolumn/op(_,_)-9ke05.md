@@ -1,7 +1,8 @@
 # <(_:_:)
 
 **Framework**: Create ML  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Creates a column of Booleans by testing whether each element in the first column is less than the corresponding element in the second column.
 
@@ -19,6 +20,16 @@ Creates a column of Booleans by testing whether each element in the first column
 static func < (a: MLUntypedColumn, b: MLUntypedColumn) -> MLUntypedColumn
 ```
 
+**Other overloads**:
+
+```swift
+static func < (a: MLUntypedColumn, b: any MLDataValueConvertible) -> MLUntypedColumn
+```
+
+```swift
+static func < (a: any MLDataValueConvertible, b: MLUntypedColumn) -> MLUntypedColumn
+```
+
 #### Return Value
 
 A new column of Booleans if the columns have the same size and underlying type; otherwise an invalid column.
@@ -30,15 +41,16 @@ A new column of Booleans if the columns have the same size and underlying type; 
 
 ## See Also
 
-- [static ==(_:_:)](mluntypedcolumn/==(_:_:).md)
+### Comparing columns
+- [static ==(_:_:)](./eqeq%28_,_%29.md)
   Creates a column of Booleans by testing whether each element in the first column is equal to the corresponding element in the second column.
-- [static !=(_:_:)](mluntypedcolumn/!=(_:_:).md)
+- [static !=(_:_:)](./noteq%28_,_%29.md)
   Creates a column of Booleans by testing whether each element in the first column is not equal to the corresponding element in the second column.
-- [static >(_:_:)](mluntypedcolumn/_(_:_:)-1hr3j.md)
+- [static >(_:_:)](./op%28_,_%29-1hr3j.md)
   Creates a column of Booleans by testing whether each element in the first column is greater than the corresponding element in the second column.
-- [static <=(_:_:)](mluntypedcolumn/_=(_:_:)-2i3xz.md)
+- [static <=(_:_:)](./opeq%28_,_%29-2i3xz.md)
   Creates a column of Booleans by testing whether each element in the first column is less than or equal to the corresponding element in the second column.
-- [static >=(_:_:)](mluntypedcolumn/_=(_:_:)-221lt.md)
+- [static >=(_:_:)](./opeq%28_,_%29-221lt.md)
   Creates a column of Booleans by testing whether each element in the first column is greater than or equal to the corresponding element in the second column.
 
 

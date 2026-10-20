@@ -1,7 +1,8 @@
 # attachments
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Attachments to set on the pixel buffer.
 

@@ -1,7 +1,8 @@
 # videoComposition
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The video composition being rendered.
 
@@ -19,15 +20,20 @@ The video composition being rendered.
 var videoComposition: AVVideoComposition { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVVideoComposition * videoComposition;
+```
+
 ## See Also
 
-- [var highQualityRendering: Bool](avvideocompositionrendercontext/highqualityrendering.md)
+### Getting the render settings
+- [var highQualityRendering: Bool](./highqualityrendering.md)
   The rendering quality to use.
-- [var renderScale: Float](avvideocompositionrendercontext/renderscale.md)
+- [var renderScale: Float](./renderscale.md)
   A scaling ratio that is applied when rendering frames.
-- [var renderTransform: CGAffineTransform](avvideocompositionrendercontext/rendertransform.md)
+- [var renderTransform: CGAffineTransform](./rendertransform.md)
   A transform to apply to the source image.
-- [var size: CGSize](avvideocompositionrendercontext/size.md)
+- [var size: CGSize](./size.md)
   The width and height for the rendering frames.
 
 

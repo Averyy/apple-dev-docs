@@ -1,26 +1,28 @@
 # wSpeedsSupported
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint16_t wSpeedsSupported;
 ```
 
 ## See Also
 
-- [bLength](iousbdevicecapabilitysuperspeedusb/blength.md)
-- [bDescriptorType](iousbdevicecapabilitysuperspeedusb/bdescriptortype.md)
-- [bDevCapabilityType](iousbdevicecapabilitysuperspeedusb/bdevcapabilitytype.md)
-- [bmAttributes](iousbdevicecapabilitysuperspeedusb/bmattributes.md)
-- [bFunctionalitySupport](iousbdevicecapabilitysuperspeedusb/bfunctionalitysupport.md)
-- [bU1DevExitLat](iousbdevicecapabilitysuperspeedusb/bu1devexitlat.md)
-- [wU2DevExitLat](iousbdevicecapabilitysuperspeedusb/wu2devexitlat.md)
+### Accessing the Descriptor Properties
+- [bLength](./blength.md)
+- [bDescriptorType](./bdescriptortype.md)
+- [bDevCapabilityType](./bdevcapabilitytype.md)
+- [bmAttributes](./bmattributes.md)
+- [bFunctionalitySupport](./bfunctionalitysupport.md)
+- [bU1DevExitLat](./bu1devexitlat.md)
+- [wU2DevExitLat](./wu2devexitlat.md)
 
 
 ---

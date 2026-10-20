@@ -1,12 +1,13 @@
 # identityMatrix
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identify matrix for the font.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ The identify matrix for the font.
 class var identityMatrix: UnsafePointer<CGFloat>
 ```
 
+```c
+extern const CGFloat * NSFontIdentityMatrix;
+```
+
 ## See Also
 
-- [var matrix: UnsafePointer<CGFloat>](nsfont/matrix.md)
+### Getting the Font Matrices
+- [var matrix: UnsafePointer<CGFloat>](./matrix.md)
   The transformation matrix associated with the font.
-- [var textTransform: AffineTransform](nsfont/texttransform.md)
+- [var textTransform: AffineTransform](./texttransform.md)
   The current transformation matrix of the font.
 
 

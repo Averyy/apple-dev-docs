@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var extendedBlock: Int](extendedblock.md)
-- [var extendedBlockLen: Int](extendedblocklen.md)
+- [var extendedBlock: Int](../extendedblock.md)
+- [var extendedBlockLen: Int](../extendedblocklen.md)
 
 
 ---

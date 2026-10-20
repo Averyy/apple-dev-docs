@@ -1,7 +1,8 @@
 # DataDetector.Match.SemanticDetails.PaymentIdentifier.PaymentSystem
 
 **Framework**: DataDetection  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that describe payment system types.
 
@@ -23,20 +24,20 @@ enum PaymentSystem
 ## Topics
 
 ### Payment systems
-- [DataDetector.Match.SemanticDetails.PaymentIdentifier.PaymentSystem.unifiedPaymentsInterface](datadetector/match/semanticdetails/paymentidentifier/paymentsystem/unifiedpaymentsinterface.md)
+- [DataDetector.Match.SemanticDetails.PaymentIdentifier.PaymentSystem.unifiedPaymentsInterface](./paymentsystem/unifiedpaymentsinterface.md)
   A value the describes the Unified Payments Interface (UPI).
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../../../Swift/copyable.md)
+- [Decodable](../../../../../Swift/decodable.md)
+- [Encodable](../../../../../Swift/encodable.md)
+- [Equatable](../../../../../Swift/equatable.md)
+- [Escapable](../../../../../Swift/escapable.md)
+- [Hashable](../../../../../Swift/hashable.md)
+- [Sendable](../../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../../Swift/sendablemetatype.md)
 
 
 ---

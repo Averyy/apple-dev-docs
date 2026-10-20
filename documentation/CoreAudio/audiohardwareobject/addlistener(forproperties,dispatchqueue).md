@@ -1,12 +1,13 @@
 # addListener(forProperties:dispatchQueue:)
 
 **Framework**: Core Audio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers for notifications to be received on the property listener delegates when the given properties change.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

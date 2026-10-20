@@ -1,7 +1,8 @@
 # alertLocalizationArgs
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fields for building a notification’s alert.
 
@@ -10,7 +11,7 @@ The fields for building a notification’s alert.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 - Swift 4.2+
 
@@ -28,15 +29,16 @@ If you use `%@` for your substitution variables, CloudKit replaces those variabl
 
 ## See Also
 
-- [var alertBody: String?](cksubscription/notificationinfo-swift.class/alertbody.md)
+### Accessing the Notification Alert
+- [var alertBody: String?](./alertbody.md)
   The text for the notification’s alert.
-- [var alertLocalizationKey: String?](cksubscription/notificationinfo-swift.class/alertlocalizationkey.md)
+- [var alertLocalizationKey: String?](./alertlocalizationkey.md)
   The key that identifies the localized string for the notification’s alert.
-- [var alertActionLocalizationKey: String?](cksubscription/notificationinfo-swift.class/alertactionlocalizationkey.md)
+- [var alertActionLocalizationKey: String?](./alertactionlocalizationkey.md)
   The key that identifies the localized string for the notification’s action.
-- [var alertLaunchImage: String?](cksubscription/notificationinfo-swift.class/alertlaunchimage.md)
+- [var alertLaunchImage: String?](./alertlaunchimage.md)
   The filename of an image to use as a launch image.
-- [var soundName: String?](cksubscription/notificationinfo-swift.class/soundname.md)
+- [var soundName: String?](./soundname.md)
   The filename of the sound file to play when a notification arrives.
 
 

@@ -1,7 +1,8 @@
 # ProvidesTextToInsert
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 Allows this credential provider to show up in the system AutoFill context menu, so that it can fill text in any text field.
 
@@ -9,9 +10,12 @@ Allows this credential provider to show up in the system AutoFill context menu, 
 - iOS 18.0+
 - iPadOS 18.0+
 
+## Details
+
+- **Name**: `ProvidesTextToInsert`
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `NO`
 

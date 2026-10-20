@@ -1,14 +1,15 @@
 # ElectricalLoadDevice.DeviceType
 
 **Framework**: EnergyKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of electrical load device.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -19,31 +20,32 @@ enum DeviceType
 ## Topics
 
 ### Device types
-- [ElectricalLoadDevice.DeviceType.hvac](electricalloaddevice/devicetype/hvac.md)
+- [ElectricalLoadDevice.DeviceType.hvac](./devicetype/hvac.md)
   A heating, ventilation, and air conditioning system.
-- [ElectricalLoadDevice.DeviceType.electricVehicle](electricalloaddevice/devicetype/electricvehicle.md)
+- [ElectricalLoadDevice.DeviceType.electricVehicle](./devicetype/electricvehicle.md)
   An electric vehicle.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let id: String](electricalloaddevice/id.md)
+### Getting device information
+- [let id: String](./id.md)
   A unique, stable identifier for a device.
-- [let name: String](electricalloaddevice/name.md)
+- [let name: String](./name.md)
   A human-readable name for the device.
-- [let type: ElectricalLoadDevice.DeviceType](electricalloaddevice/type.md)
+- [let type: ElectricalLoadDevice.DeviceType](./type.md)
   The type of electrical load device.
 
 

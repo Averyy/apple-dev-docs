@@ -1,7 +1,8 @@
 # GL_AMBIENT_AND_DIFFUSE
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_AMBIENT_AND_DIFFUSE: Int32 { get }
+```
+
+```c
+#define GL_AMBIENT_AND_DIFFUSE
 ```
 
 

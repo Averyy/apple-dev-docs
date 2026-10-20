@@ -1,22 +1,24 @@
 # CDConvertTrackNumberToMSF
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 CDMSF CDConvertTrackNumberToMSF(UInt8 track, CDTOC *toc);
 ```
 
 ## See Also
 
-- [CDConvertLBAToMSF](1424061-cdconvertlbatomsf.md)
-- [CDConvertMSFToClippedLBA](1424066-cdconvertmsftoclippedlba.md)
-- [CDConvertMSFToLBA](1423856-cdconvertmsftolba.md)
+### Conversions
+- [CDConvertLBAToMSF](./api-1424061-cdconvertlbatomsf.md)
+- [CDConvertMSFToClippedLBA](./api-1424066-cdconvertmsftoclippedlba.md)
+- [CDConvertMSFToLBA](./api-1423856-cdconvertmsftolba.md)
 
 
 ---

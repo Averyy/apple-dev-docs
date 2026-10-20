@@ -1,17 +1,22 @@
 # selectText(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Ends editing in the text field and, if it’s selectable, selects the entire text content.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func selectText(_ sender: Any?)
+```
+
+```objc
+- (void) selectText:(id) sender;
 ```
 
 #### Discussion

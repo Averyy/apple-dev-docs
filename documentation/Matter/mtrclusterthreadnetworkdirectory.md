@@ -1,7 +1,8 @@
 # MTRClusterThreadNetworkDirectory
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Cluster Thread Network Directory Manages the names and credentials of Thread networks visible to the user.
 
@@ -20,37 +21,41 @@ Cluster Thread Network Directory Manages the names and credentials of Thread net
 class MTRClusterThreadNetworkDirectory
 ```
 
+```objc
+@interface MTRClusterThreadNetworkDirectory : MTRGenericCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclusterthreadnetworkdirectory/init(device:endpointid:queue:).md)
+- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrclusterthreadnetworkdirectory/init%28device,endpointid,queue%29.md)
   For all instance methods that take a completion (i.e. command invocations), the completion will be called on the provided queue.
 ### Instance Methods
-- [func addNetwork(with: MTRThreadNetworkDirectoryClusterAddNetworkParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterthreadnetworkdirectory/addnetwork(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func getOperationalDataset(with: MTRThreadNetworkDirectoryClusterGetOperationalDatasetParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRThreadNetworkDirectoryClusterOperationalDatasetResponseParams?, (any Error)?) -> Void)](mtrclusterthreadnetworkdirectory/getoperationaldataset(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterthreadnetworkdirectory/readattributeacceptedcommandlist(with:).md)
-- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclusterthreadnetworkdirectory/readattributeattributelist(with:).md)
-- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclusterthreadnetworkdirectory/readattributeclusterrevision(with:).md)
-- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclusterthreadnetworkdirectory/readattributefeaturemap(with:).md)
-- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterthreadnetworkdirectory/readattributegeneratedcommandlist(with:).md)
-- [func readAttributePreferredExtendedPanID(with: MTRReadParams?) -> [String : Any]?](mtrclusterthreadnetworkdirectory/readattributepreferredextendedpanid(with:).md)
-- [func readAttributeThreadNetworkTableSize(with: MTRReadParams?) -> [String : Any]?](mtrclusterthreadnetworkdirectory/readattributethreadnetworktablesize(with:).md)
-- [func readAttributeThreadNetworks(with: MTRReadParams?) -> [String : Any]?](mtrclusterthreadnetworkdirectory/readattributethreadnetworks(with:).md)
-- [func removeNetwork(with: MTRThreadNetworkDirectoryClusterRemoveNetworkParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterthreadnetworkdirectory/removenetwork(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func writeAttributePreferredExtendedPanID(withValue: [String : Any], expectedValueInterval: NSNumber)](mtrclusterthreadnetworkdirectory/writeattributepreferredextendedpanid(withvalue:expectedvalueinterval:).md)
-- [func writeAttributePreferredExtendedPanID(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](mtrclusterthreadnetworkdirectory/writeattributepreferredextendedpanid(withvalue:expectedvalueinterval:params:).md)
+- [func addNetwork(with: MTRThreadNetworkDirectoryClusterAddNetworkParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterthreadnetworkdirectory/addnetwork%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func getOperationalDataset(with: MTRThreadNetworkDirectoryClusterGetOperationalDatasetParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRThreadNetworkDirectoryClusterOperationalDatasetResponseParams?, (any Error)?) -> Void)](./mtrclusterthreadnetworkdirectory/getoperationaldataset%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterthreadnetworkdirectory/readattributeacceptedcommandlist%28with%29.md)
+- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterthreadnetworkdirectory/readattributeattributelist%28with%29.md)
+- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](./mtrclusterthreadnetworkdirectory/readattributeclusterrevision%28with%29.md)
+- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](./mtrclusterthreadnetworkdirectory/readattributefeaturemap%28with%29.md)
+- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterthreadnetworkdirectory/readattributegeneratedcommandlist%28with%29.md)
+- [func readAttributePreferredExtendedPanID(with: MTRReadParams?) -> [String : Any]?](./mtrclusterthreadnetworkdirectory/readattributepreferredextendedpanid%28with%29.md)
+- [func readAttributeThreadNetworkTableSize(with: MTRReadParams?) -> [String : Any]?](./mtrclusterthreadnetworkdirectory/readattributethreadnetworktablesize%28with%29.md)
+- [func readAttributeThreadNetworks(with: MTRReadParams?) -> [String : Any]?](./mtrclusterthreadnetworkdirectory/readattributethreadnetworks%28with%29.md)
+- [func removeNetwork(with: MTRThreadNetworkDirectoryClusterRemoveNetworkParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterthreadnetworkdirectory/removenetwork%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func writeAttributePreferredExtendedPanID(withValue: [String : Any], expectedValueInterval: NSNumber)](./mtrclusterthreadnetworkdirectory/writeattributepreferredextendedpanid%28withvalue,expectedvalueinterval%29.md)
+- [func writeAttributePreferredExtendedPanID(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](./mtrclusterthreadnetworkdirectory/writeattributepreferredextendedpanid%28withvalue,expectedvalueinterval,params%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericCluster](mtrgenericcluster.md)
+- [MTRGenericCluster](./mtrgenericcluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,17 +1,22 @@
 # NSOutlineViewDropOnItemIndex
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 May be used as a valid child index of a drop target item.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var NSOutlineViewDropOnItemIndex: Int { get }
+```
+
+```c
+NSOutlineViewDropOnItemIndex
 ```
 
 #### Discussion

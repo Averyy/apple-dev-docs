@@ -1,9 +1,10 @@
 # parametricImmersive
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-Indicates a projection described mathematically by a model of camera lens calibration parameters. Parameters may be found in lens calibration metadata in [`cameraCalibrationDataLensCollection`](cmformatdescription/extensions-swift.struct/key/cameracalibrationdatalenscollection.md) with algorithmKind being [`CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection.AlgorithmKind.parametric`](cmformatdescription/extensions-swift.struct/value/cameracalibrationdatalenscollection/algorithmkind/parametric.md).
+Indicates a projection described mathematically by a model of camera lens calibration parameters. Parameters may be found in lens calibration metadata in [`cameraCalibrationDataLensCollection`](../../key/cameracalibrationdatalenscollection.md) with algorithmKind being [`CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection.AlgorithmKind.parametric`](../cameracalibrationdatalenscollection/algorithmkind/parametric.md).
 
 **Availability**:
 - iOS 26.0+

@@ -1,7 +1,8 @@
 # init(pixelBufferAttributes:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an instance of AVPlayerItemVideoOutput, using the specified pixel buffer attributes, for video image output
 
@@ -25,9 +26,10 @@ convenience init(pixelBufferAttributes: CVPixelBufferAttributes)
 
 ## See Also
 
-- [init(pixelBufferAttributes: [String : any Sendable]?)](avplayeritemvideooutput/init(pixelbufferattributes:)-7n7v8.md)
+### Creating a video output
+- [init(pixelBufferAttributes: [String : any Sendable]?)](./init%28pixelbufferattributes%29-7n7v8.md)
   Creates a video output object using the specified pixel buffer attributes.
-- [init(outputSettings: [String : any Sendable]?)](avplayeritemvideooutput/init(outputsettings:).md)
+- [init(outputSettings: [String : any Sendable]?)](./init%28outputsettings%29.md)
   Creates a video output object initialized with the specified output settings.
 
 

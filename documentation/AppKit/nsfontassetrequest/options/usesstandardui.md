@@ -1,7 +1,8 @@
 # usesStandardUI
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 10.13+
@@ -10,6 +11,10 @@
 
 ```swift
 static var usesStandardUI: NSFontAssetRequest.Options { get }
+```
+
+```c
+NSFontAssetRequestOptionUsesStandardUI
 ```
 
 

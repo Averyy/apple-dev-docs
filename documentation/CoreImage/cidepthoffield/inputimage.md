@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The image to use as an input image.
@@ -11,7 +12,7 @@ The image to use as an input image.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,19 +21,24 @@ The image to use as an input image.
 var inputImage: CIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) CIImage * inputImage;
+```
+
 ## See Also
 
-- [var point0: CGPoint](cidepthoffield/point0.md)
+### Instance Properties
+- [var point0: CGPoint](./point0.md)
   The first point in the focused region of the output image.
-- [var point1: CGPoint](cidepthoffield/point1.md)
+- [var point1: CGPoint](./point1.md)
   The second point in the focused region of the output image.
-- [var radius: Float](cidepthoffield/radius.md)
+- [var radius: Float](./radius.md)
   The distance from the center of the effect.
-- [var saturation: Float](cidepthoffield/saturation.md)
+- [var saturation: Float](./saturation.md)
   The amount to adjust the saturation by.
-- [var unsharpMaskIntensity: Float](cidepthoffield/unsharpmaskintensity.md)
+- [var unsharpMaskIntensity: Float](./unsharpmaskintensity.md)
   The intensity of the unsharp mask effect applied to the in-focus area.
-- [var unsharpMaskRadius: Float](cidepthoffield/unsharpmaskradius.md)
+- [var unsharpMaskRadius: Float](./unsharpmaskradius.md)
   The radius of the unsharp mask effect applied to the in-focus area.
 
 

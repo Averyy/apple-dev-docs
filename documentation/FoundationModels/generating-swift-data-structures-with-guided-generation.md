@@ -1,6 +1,7 @@
 # Generating Swift data structures with guided generation
 
-**Framework**: Foundation Models
+**Framework**: Foundation Models  
+**Role**: Article
 
 Create robust apps by describing output you want programmatically.
 
@@ -10,11 +11,11 @@ When you perform a request, the model returns a raw string in its natural langua
 
 To use guided generation, describe the output you want as a new Swift type. When you make a request to the model, include your custom type and the framework performs the work necessary to fill in and return an object with the parameters filled in for you. The framework uses constrained sampling when generating output, which defines the rules on what the model can generate. Constrained sampling prevents the model from producing malformed output and provides you with results as a type you define.
 
-For more information about creating a session and prompting the model, see [`Generating content and performing tasks with Foundation Models`](generating-content-and-performing-tasks-with-foundation-models.md).
+For more information about creating a session and prompting the model, see [Generating content and performing tasks with Foundation Models](./generating-content-and-performing-tasks-with-foundation-models.md).
 
-#### Conform Your Data Type to Generable
+#### Conform your data type to Generable
 
-To conform your type to [`Generable`](generable.md), describe the type and the parameters to guide the response of the model. The framework supports generating content with basic Swift types like `Bool`, `Int`, `Float`, `Double`, `Decimal`, and `Array`. For example, if you only want the model to return a numeric result, call [`respond(to:generating:includeSchemaInPrompt:options:)`](languagemodelsession/respond(to:generating:includeschemainprompt:options:)-13kji.md) using the type `Float`:
+To conform your type to [`Generable`](./generable.md), describe the type and the parameters to guide the response of the model. The framework supports generating content with basic Swift types like `Bool`, `Int`, `Float`, `Double`, `Decimal`, and `Array`. For example, if you only want the model to return a numeric result, call [`respond(to:generating:includeSchemaInPrompt:options:)`](./languagemodelsession/respond%28to,generating,includeschemainprompt,options%29-13kji.md) using the type `Float`:
 
 ```swift
 let prompt = "How many tablespoons are in a cup?"
@@ -24,7 +25,7 @@ let session = LanguageModelSession(model: .default)
 let response = try await session.respond(to: prompt, generating: Float.self)
 ```
 
-A schema provides the ability to control the values of a property, and you can specify guides to control values you associate with it. The framework provides two macros that help you with schema creation. Use [`Generable(description:)`](generable(description:).md) on structures, actors, and enumerations; and only use [`Guide(description:)`](guide(description:).md) with stored properties.
+A schema provides the ability to control the values of a property, and you can specify guides to control values you associate with it. The framework provides two macros that help you with schema creation. Use [`Generable(description:)`](./generable%28description%29.md) on structures, actors, and enumerations; and only use [`Guide(description:)`](./guide%28description%29.md) with stored properties.
 
 When you add descriptions to `Generable` properties, you help the model understand the semantics of the properties. Keep the descriptions as short as possible — long descriptions take up additional context size and can introduce latency. The following example creates a type that describes a cat and includes a name, an age that’s constrained to a range of values, and a short profile:
 
@@ -46,9 +47,9 @@ struct CatProfile {
 
 You can nest custom `Generable` types inside other `Generable` types, and mark enumerations with associated values as `Generable`. The `Generable` macro ensures that all associated and nested values are themselves generable. This allows for advanced use cases like creating complex data types or dynamically generating views at runtime.
 
-#### Make a Request with Your Custom Data Type
+#### Make a request with your custom data type
 
-After creating your type, use it along with a [`LanguageModelSession`](languagemodelsession.md) to prompt the model. When you use a `Generable` type it prevents the model from producing malformed output and prevents the need for any manual string parsing.
+After creating your type, use it along with a [`LanguageModelSession`](./languagemodelsession.md) to prompt the model. When you use a `Generable` type it prevents the model from producing malformed output and prevents the need for any manual string parsing.
 
 ```swift
 // Generate a response using a custom type.
@@ -58,9 +59,9 @@ let response = try await session.respond(
 )
 ```
 
-#### Define a Dynamic Schema at Runtime
+#### Define a dynamic schema at runtime
 
-If you don’t know what you want the model to produce at compile time use [`DynamicGenerationSchema`](dynamicgenerationschema.md) to define what you need. For example, when you’re working on a restaurant app and want to restrict the model to pick from menu options that a restaurant provides. Because each restaurant provides a different menu, the schema won’t be known in its entirety until runtime.
+If you don’t know what you want the model to produce at compile time use [`DynamicGenerationSchema`](./dynamicgenerationschema.md) to define what you need. For example, when you’re working on a restaurant app and want to restrict the model to pick from menu options that a restaurant provides. Because each restaurant provides a different menu, the schema won’t be known in its entirety until runtime.
 
 ```swift
 // Create the dynamic schema at runtime.
@@ -80,7 +81,7 @@ let menuSchema = DynamicGenerationSchema(
 )
 ```
 
-After creating a dynamic schema, use it to create a [`GenerationSchema`](generationschema.md) that you provide with your request. When you try to create a generation schema, it can throw an error if there are conflicting property names, undefined references, or duplicate types.
+After creating a dynamic schema, use it to create a [`GenerationSchema`](./generationschema.md) that you provide with your request. When you try to create a generation schema, it can throw an error if there are conflicting property names, undefined references, or duplicate types.
 
 ```swift
 // Create the schema.
@@ -93,23 +94,24 @@ let response = try await session.respond(
 )
 ```
 
-The response you get is an instance of [`GeneratedContent`](generatedcontent.md). You can decode the outputs from schemas you define at runtime by calling [`value(_:forProperty:)`](generatedcontent/value(_:forproperty:)-3xsez.md) for the property you want.
+The response you get is an instance of [`GeneratedContent`](./generatedcontent.md). You can decode the outputs from schemas you define at runtime by calling [`value(_:forProperty:)`](./generatedcontent/value%28_,forproperty%29-3xsez.md) for the property you want.
 
 ## See Also
 
-- [macro Generable(description: String?)](generable(description:).md)
-- [macro Guide(description: String)](guide(description:).md)
-- [protocol Generable](generable.md)
+### Structured output
+- [macro Generable(description: String?)](./generable%28description%29.md)
+- [macro Guide(description: String)](./guide%28description%29.md)
+- [protocol Generable](./generable.md)
   A type that the model uses when responding to prompts.
-- [struct GenerationSchema](generationschema.md)
+- [struct GenerationSchema](./generationschema.md)
   A type that describes the properties of an object and any guides on their values.
-- [struct DynamicGenerationSchema](dynamicgenerationschema.md)
+- [struct DynamicGenerationSchema](./dynamicgenerationschema.md)
   The dynamic counterpart to the generation schema type that you use to construct schemas at runtime.
-- [struct GeneratedContent](generatedcontent.md)
+- [struct GeneratedContent](./generatedcontent.md)
   A type that represents structured, generated content.
-- [protocol ConvertibleToGeneratedContent](convertibletogeneratedcontent.md)
+- [protocol ConvertibleToGeneratedContent](./convertibletogeneratedcontent.md)
   A type that can be converted to generated content.
-- [protocol ConvertibleFromGeneratedContent](convertiblefromgeneratedcontent.md)
+- [protocol ConvertibleFromGeneratedContent](./convertiblefromgeneratedcontent.md)
   A type that can be initialized from generated content.
 
 

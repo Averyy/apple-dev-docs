@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The cube texture data to use as a color lookup table.
@@ -20,21 +21,26 @@ The cube texture data to use as a color lookup table.
 var cubeData: Data { get set }
 ```
 
+```objc
+@property (nonatomic, retain) NSData * cubeData;
+```
+
 #### Discussion
 
 This filter maps color values in the input image to new color values using a three-dimensional color lookup table. For each RGBA pixel in the input image, the filter uses the R, G, and B component values as indices to identify a location in the table; the RGBA value at that location becomes the RGBA value of the output pixel.
 
-Use the [`cubeData`](cicolorcube/cubedata.md) parameter to provide data formatted for use as a color lookup table, and the inputCubeDimension parameter to specify the size of the table. This data should be an array of texel values in 32-bit floating-point RGBA linear premultiplied format. The inputCubeDimension parameter identifies the size of the cube by specifying the length of one side, so the size of the array should be [`cubeDimension`](cicolorcube/cubedimension.md) cubed times the size of a single texel value. In the color table, the R component varies fastest, followed by G, then B.
+Use the [`cubeData`](../cicolorcube/cubedata.md) parameter to provide data formatted for use as a color lookup table, and the inputCubeDimension parameter to specify the size of the table. This data should be an array of texel values in 32-bit floating-point RGBA linear premultiplied format. The inputCubeDimension parameter identifies the size of the cube by specifying the length of one side, so the size of the array should be [`cubeDimension`](../cicolorcube/cubedimension.md) cubed times the size of a single texel value. In the color table, the R component varies fastest, followed by G, then B.
 
 ## See Also
 
-- [var colorSpace: CGColorSpace?](cicolorcubewithcolorspace/colorspace.md)
+### Instance Properties
+- [var colorSpace: CGColorSpace?](./colorspace.md)
   The working color space.
-- [var cubeDimension: Float](cicolorcubewithcolorspace/cubedimension.md)
+- [var cubeDimension: Float](./cubedimension.md)
   The length, in texels, of each side of the cube texture.
-- [var inputImage: CIImage?](cicolorcubewithcolorspace/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var extrapolate: Bool](cicolorcubewithcolorspace/extrapolate.md)
+- [var extrapolate: Bool](./extrapolate.md)
   If true, then the filter extrapolates the color cube for any RGB component values outside the range 0.0 to 1.0.
 
 

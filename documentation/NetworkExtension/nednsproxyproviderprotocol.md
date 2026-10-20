@@ -1,7 +1,8 @@
 # NEDNSProxyProviderProtocol
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Configuration parameters for a DNS proxy.
 
@@ -18,32 +19,37 @@ Configuration parameters for a DNS proxy.
 class NEDNSProxyProviderProtocol
 ```
 
+```objc
+@interface NEDNSProxyProviderProtocol : NEVPNProtocol
+```
+
 ## Topics
 
 ### Accessing the DNS proxy configuration
-- [var providerConfiguration: [String : Any]?](nednsproxyproviderprotocol/providerconfiguration.md)
+- [var providerConfiguration: [String : Any]?](./nednsproxyproviderprotocol/providerconfiguration.md)
   A dictionary containing vendor-specific configuration parameters for a proxy provider.
-- [var providerBundleIdentifier: String?](nednsproxyproviderprotocol/providerbundleidentifier.md)
+- [var providerBundleIdentifier: String?](./nednsproxyproviderprotocol/providerbundleidentifier.md)
   A string containing the bundle identifier of the proxy provider to be used by this configuration.
 
 ## Relationships
 
 ### Inherits From
-- [NEVPNProtocol](nevpnprotocol.md)
+- [NEVPNProtocol](./nevpnprotocol.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class NEDNSProxyManager](nednsproxymanager.md)
+### Configuration
+- [class NEDNSProxyManager](./nednsproxymanager.md)
   An object to create and manage an DNS proxy provider’s configuration.
 
 

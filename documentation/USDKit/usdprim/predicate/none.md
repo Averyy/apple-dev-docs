@@ -1,7 +1,8 @@
 # none
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A predicate which is always false, and accepts no prims.
 

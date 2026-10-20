@@ -1,7 +1,8 @@
 # contentVersion
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An opaque object used to track versions of the item’s content.
 
@@ -18,9 +19,13 @@ An opaque object used to track versions of the item’s content.
 var contentVersion: Data { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSData * contentVersion;
+```
+
 #### Discussion
 
-If the system stores a local copy of an item’s content, it downloads a new copy when the [`contentVersion`](nsfileprovideritemversion/contentversion.md) changes. The content version also invalidates the system’s thumbnail cache.
+If the system stores a local copy of an item’s content, it downloads a new copy when the [`contentVersion`](./contentversion.md) changes. The content version also invalidates the system’s thumbnail cache.
 
 The system considers the file’s resource fork part of the file’s content. The version changes when either the data fork or the resource fork changes.
 
@@ -28,9 +33,10 @@ The version data object must be no longer than 128 bytes.
 
 ## See Also
 
-- [class var beforeFirstSyncComponent: Data](nsfileprovideritemversion/beforefirstsynccomponent.md)
+### Accessing Version Data
+- [class var beforeFirstSyncComponent: Data](./beforefirstsynccomponent.md)
   A Boolean value indicating that this version predates the version returned by the file provider extension.
-- [var metadataVersion: Data](nsfileprovideritemversion/metadataversion.md)
+- [var metadataVersion: Data](./metadataversion.md)
   An opaque object used to track versions of the item’s metadata.
 
 

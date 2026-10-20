@@ -1,7 +1,8 @@
 # errSecMissingAttributeBase
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A base attribute is missing.
 
@@ -18,6 +19,10 @@ A base attribute is missing.
 
 ```swift
 var errSecMissingAttributeBase: OSStatus { get }
+```
+
+```c
+errSecMissingAttributeBase
 ```
 
 

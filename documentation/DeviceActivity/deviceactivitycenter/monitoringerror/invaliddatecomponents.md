@@ -1,7 +1,8 @@
 # DeviceActivityCenter.MonitoringError.invalidDateComponents
 
 **Framework**: Device Activity  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The schedule’s date range is invalid.
 
@@ -22,13 +23,14 @@ The schedule’s start or end date components don’t match any future dates. Co
 
 ## See Also
 
-- [DeviceActivityCenter.MonitoringError.excessiveActivities](deviceactivitycenter/monitoringerror/excessiveactivities.md)
+### Checking for Errors
+- [DeviceActivityCenter.MonitoringError.excessiveActivities](./excessiveactivities.md)
   The calling process is monitoring too many activities.
-- [DeviceActivityCenter.MonitoringError.intervalTooLong](deviceactivitycenter/monitoringerror/intervaltoolong.md)
+- [DeviceActivityCenter.MonitoringError.intervalTooLong](./intervaltoolong.md)
   The activity’s schedule has an interval that is too long.
-- [DeviceActivityCenter.MonitoringError.intervalTooShort](deviceactivitycenter/monitoringerror/intervaltooshort.md)
+- [DeviceActivityCenter.MonitoringError.intervalTooShort](./intervaltooshort.md)
   The activity’s schedule has an interval that is too short.
-- [DeviceActivityCenter.MonitoringError.unauthorized](deviceactivitycenter/monitoringerror/unauthorized.md)
+- [DeviceActivityCenter.MonitoringError.unauthorized](./unauthorized.md)
   The calling process isn’t authorized to monitor device activity.
 
 

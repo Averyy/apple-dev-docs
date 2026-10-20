@@ -1,7 +1,8 @@
 # SpatialAudioExperiences.SoundStageSize.small
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Places all of an audio stream’s channels near the layout’s front.
 

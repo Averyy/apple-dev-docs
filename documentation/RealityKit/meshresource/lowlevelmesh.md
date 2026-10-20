@@ -1,7 +1,8 @@
 # lowLevelMesh
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The low-level mesh that this mesh is built from, if any.
 
@@ -22,13 +23,14 @@ The low-level mesh that this mesh is built from, if any.
 
 #### Discussion
 
-If this mesh is not built from a [`LowLevelMesh`](lowlevelmesh.md), it returns nil.
+If this mesh is not built from a [`LowLevelMesh`](../lowlevelmesh.md), it returns nil.
 
 ## See Also
 
-- [convenience init(from: LowLevelMesh) async throws](meshresource/init(from:)-1i7c9.md)
+### Creating a low level resource
+- [convenience init(from: LowLevelMesh) async throws](./init%28from%29-1i7c9.md)
   Asynchronously creates a mesh resource from a low-level mesh.
-- [convenience init(from: LowLevelMesh) async throws](meshresource/init(from:)-1i7c9.md)
+- [convenience init(from: LowLevelMesh) async throws](./init%28from%29-1i7c9.md)
   Asynchronously creates a mesh resource from a low-level mesh.
 
 

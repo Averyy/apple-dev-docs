@@ -1,17 +1,22 @@
 # imageURL(forTraits:)
 
 **Framework**: TV Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieve the URL for the image that best matches the specified traits.
 
 **Availability**:
-- tvOS 11.0+
+- tvOS 11.0+ - Deprecated in 13.0
 
 ## Declaration
 
 ```swift
 func imageURL(forTraits traits: TVContentItemImageTrait) -> URL?
+```
+
+```objc
+- (NSURL *) imageURLForTraits:(TVContentItemImageTrait) traits;
 ```
 
 #### Return Value
@@ -20,7 +25,7 @@ The URL for the image asset, or `nil` if an image with the specified traits was 
 
 #### Discussion
 
-The image URL can be an absolute path on the local device or an HTTP path. The preferred file format for this image is a layered image file that provides the proper 3d effects. For more information, see [`App Programming Guide for tvOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/AppleTV_PG/index.html#//apple_ref/doc/uid/TP40015241).
+The image URL can be an absolute path on the local device or an HTTP path. The preferred file format for this image is a layered image file that provides the proper 3d effects. For more information, see [App Programming Guide for tvOS](https://developer.apple.com/library/archive/documentation/General/Conceptual/AppleTV_PG/index.html#//apple_ref/doc/uid/TP40015241).
 
 ## Parameters
 
@@ -28,10 +33,11 @@ The image URL can be an absolute path on the local device or an HTTP path. The p
 
 ## See Also
 
-- [var imageURL: URL?](tvcontentitem/imageurl.md)
+### Accessing Image Resources
+- [var imageURL: URL?](./imageurl.md)
   A URL giving the location of the image to be displayed for this content item.
-- [func setImageURL(URL?, forTraits: TVContentItemImageTrait)](tvcontentitem/setimageurl(_:fortraits:).md)
-- [struct TVContentItemImageTrait](tvcontentitemimagetrait.md)
+- [func setImageURL(URL?, forTraits: TVContentItemImageTrait)](./setimageurl%28_,fortraits%29.md)
+- [struct TVContentItemImageTrait](../tvcontentitemimagetrait.md)
   Traits describing the type of image you want.
 
 

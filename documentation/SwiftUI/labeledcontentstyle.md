@@ -1,7 +1,8 @@
 # LabeledContentStyle
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The appearance and behavior of a labeled content instance..
 
@@ -23,7 +24,7 @@ The appearance and behavior of a labeled content instance..
 
 #### Overview
 
-Use [`labeledContentStyle(_:)`](view/labeledcontentstyle(_:).md) to set a style on a view.
+Use [`labeledContentStyle(_:)`](./view/labeledcontentstyle%28_%29.md) to set a style on a view.
 
 A type conforming to this protocol inherits `@preconcurrency @MainActor` isolation from the protocol if the conformance is included in the type’s base declaration:
 
@@ -44,51 +45,52 @@ extension MyCustomType: Transition {
 ## Topics
 
 ### Getting built-in labeled content styles
-- [static var automatic: AutomaticLabeledContentStyle](labeledcontentstyle/automatic.md)
+- [static var automatic: AutomaticLabeledContentStyle](./labeledcontentstyle/automatic.md)
   A labeled content style that resolves its appearance automatically based on the current context.
 ### Creating custom labeled content styles
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](labeledcontentstyle/makebody(configuration:).md)
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./labeledcontentstyle/makebody%28configuration%29.md)
   Creates a view that represents the body of labeled content.
-- [LabeledContentStyle.Configuration](labeledcontentstyle/configuration.md)
+- [LabeledContentStyle.Configuration](./labeledcontentstyle/configuration.md)
   The properties of a labeled content instance.
-- [associatedtype Body : View](labeledcontentstyle/body.md)
+- [associatedtype Body : View](./labeledcontentstyle/body.md)
   A view that represents the appearance and behavior of labeled content.
 ### Supporting types
-- [struct AutomaticLabeledContentStyle](automaticlabeledcontentstyle.md)
+- [struct AutomaticLabeledContentStyle](./automaticlabeledcontentstyle.md)
   The default labeled content style.
 
 ## Relationships
 
 ### Conforming Types
-- [AutomaticLabeledContentStyle](automaticlabeledcontentstyle.md)
+- [AutomaticLabeledContentStyle](./automaticlabeledcontentstyle.md)
 
 ## See Also
 
-- [func controlGroupStyle<S>(S) -> some View](view/controlgroupstyle(_:).md)
+### Styling groups
+- [func controlGroupStyle<S>(S) -> some View](./view/controlgroupstyle%28_%29.md)
   Sets the style for control groups within this view.
-- [protocol ControlGroupStyle](controlgroupstyle.md)
+- [protocol ControlGroupStyle](./controlgroupstyle.md)
   Defines the implementation of all control groups within a view hierarchy.
-- [struct ControlGroupStyleConfiguration](controlgroupstyleconfiguration.md)
+- [struct ControlGroupStyleConfiguration](./controlgroupstyleconfiguration.md)
   The properties of a control group.
-- [func formStyle<S>(S) -> some View](view/formstyle(_:).md)
+- [func formStyle<S>(S) -> some View](./view/formstyle%28_%29.md)
   Sets the style for forms in a view hierarchy.
-- [protocol FormStyle](formstyle.md)
+- [protocol FormStyle](./formstyle.md)
   The appearance and behavior of a form.
-- [struct FormStyleConfiguration](formstyleconfiguration.md)
+- [struct FormStyleConfiguration](./formstyleconfiguration.md)
   The properties of a form instance.
-- [func groupBoxStyle<S>(S) -> some View](view/groupboxstyle(_:).md)
+- [func groupBoxStyle<S>(S) -> some View](./view/groupboxstyle%28_%29.md)
   Sets the style for group boxes within this view.
-- [protocol GroupBoxStyle](groupboxstyle.md)
+- [protocol GroupBoxStyle](./groupboxstyle.md)
   A type that specifies the appearance and interaction of all group boxes within a view hierarchy.
-- [struct GroupBoxStyleConfiguration](groupboxstyleconfiguration.md)
+- [struct GroupBoxStyleConfiguration](./groupboxstyleconfiguration.md)
   The properties of a group box instance.
-- [func indexViewStyle<S>(S) -> some View](view/indexviewstyle(_:).md)
+- [func indexViewStyle<S>(S) -> some View](./view/indexviewstyle%28_%29.md)
   Sets the style for the index view within the current environment.
-- [protocol IndexViewStyle](indexviewstyle.md)
+- [protocol IndexViewStyle](./indexviewstyle.md)
   Defines the implementation of all `IndexView` instances within a view hierarchy.
-- [func labeledContentStyle<S>(S) -> some View](view/labeledcontentstyle(_:).md)
+- [func labeledContentStyle<S>(S) -> some View](./view/labeledcontentstyle%28_%29.md)
   Sets a style for labeled content.
-- [struct LabeledContentStyleConfiguration](labeledcontentstyleconfiguration.md)
+- [struct LabeledContentStyleConfiguration](./labeledcontentstyleconfiguration.md)
   The properties of a labeled content instance.
 
 

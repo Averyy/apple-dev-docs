@@ -1,7 +1,8 @@
 # nw_endpoint_type_invalid
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An undefined endpoint type.
 
@@ -20,15 +21,20 @@ An undefined endpoint type.
 var nw_endpoint_type_invalid: nw_endpoint_type_t { get }
 ```
 
+```c
+nw_endpoint_type_invalid
+```
+
 ## See Also
 
-- [var nw_endpoint_type_address: nw_endpoint_type_t](nw_endpoint_type_address.md)
+### Endpoint Types
+- [var nw_endpoint_type_address: nw_endpoint_type_t](./nw_endpoint_type_address.md)
   An endpoint represented as an IP address and port.
-- [var nw_endpoint_type_host: nw_endpoint_type_t](nw_endpoint_type_host.md)
+- [var nw_endpoint_type_host: nw_endpoint_type_t](./nw_endpoint_type_host.md)
   An endpoint represented as a hostname and port.
-- [var nw_endpoint_type_bonjour_service: nw_endpoint_type_t](nw_endpoint_type_bonjour_service.md)
+- [var nw_endpoint_type_bonjour_service: nw_endpoint_type_t](./nw_endpoint_type_bonjour_service.md)
   An endpoint represented as a Bonjour service.
-- [var nw_endpoint_type_url: nw_endpoint_type_t](nw_endpoint_type_url.md)
+- [var nw_endpoint_type_url: nw_endpoint_type_t](./nw_endpoint_type_url.md)
   An endpoint represented as a URL, with host and port values inferred from the URL.
 
 

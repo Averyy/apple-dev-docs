@@ -1,7 +1,8 @@
 # NSPersistentCloudKitContainer.EventType
 
 **Framework**: Core Data  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of event in a persistent CloudKit container, either setup, import, or export.
 
@@ -20,39 +21,44 @@ The type of event in a persistent CloudKit container, either setup, import, or e
 enum EventType
 ```
 
+```c
+enum NSPersistentCloudKitContainerEventType : NSInteger;
+```
+
 ## Topics
 
 ### Event Types
-- [NSPersistentCloudKitContainer.EventType.setup](nspersistentcloudkitcontainer/eventtype/setup.md)
+- [NSPersistentCloudKitContainer.EventType.setup](./eventtype/setup.md)
   An event the persistent CloudKit container generates when setting up a store.
-- [NSPersistentCloudKitContainer.EventType.import](nspersistentcloudkitcontainer/eventtype/import.md)
+- [NSPersistentCloudKitContainer.EventType.import](./eventtype/import.md)
   An event the persistent CloudKit container generates when importing records into a store.
-- [NSPersistentCloudKitContainer.EventType.export](nspersistentcloudkitcontainer/eventtype/export.md)
+- [NSPersistentCloudKitContainer.EventType.export](./eventtype/export.md)
   An event the persistent CloudKit container generates when exporting managed objects from a store.
 ### Initializers
-- [init?(rawValue: Int)](nspersistentcloudkitcontainer/eventtype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./eventtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSPersistentCloudKitContainer.Event](nspersistentcloudkitcontainer/event.md)
+### Monitoring Container Events
+- [NSPersistentCloudKitContainer.Event](./event.md)
   An object that represents activity in a persistent CloudKit container.
-- [class NSPersistentCloudKitContainerEventRequest](nspersistentcloudkitcontainereventrequest.md)
+- [class NSPersistentCloudKitContainerEventRequest](../nspersistentcloudkitcontainereventrequest.md)
   A request to fetch setup, import, or export events in a persistent CloudKit container.
-- [class NSPersistentCloudKitContainerEventResult](nspersistentcloudkitcontainereventresult.md)
+- [class NSPersistentCloudKitContainerEventResult](../nspersistentcloudkitcontainereventresult.md)
   The result of a request to fetch persistent CloudKit container events.
-- [class let eventChangedNotification: NSNotification.Name](nspersistentcloudkitcontainer/eventchangednotification.md)
+- [class let eventChangedNotification: NSNotification.Name](./eventchangednotification.md)
   A notification that contains details about an event in a persistent CloudKit container.
-- [class let eventNotificationUserInfoKey: String](nspersistentcloudkitcontainer/eventnotificationuserinfokey.md)
+- [class let eventNotificationUserInfoKey: String](./eventnotificationuserinfokey.md)
   The user info dictionary key for the persistent CloudKit container event.
 
 

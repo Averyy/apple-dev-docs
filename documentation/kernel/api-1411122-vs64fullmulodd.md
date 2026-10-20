@@ -1,7 +1,8 @@
 # vS64FullMulOdd
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Signed 64-bit multiplication; results are twice as wide as multiplicands, odd-numbered elements of multiplicand vectors are used.  Note the big-endian convention: the leftmost element is element 0.
 
@@ -10,7 +11,7 @@ Signed 64-bit multiplication; results are twice as wide as multiplicands, odd-nu
 
 ## Declaration
 
-```swift
+```c
 vSInt32 vS64FullMulOdd(vSInt32 vA, vSInt32 vB);
 ```
 

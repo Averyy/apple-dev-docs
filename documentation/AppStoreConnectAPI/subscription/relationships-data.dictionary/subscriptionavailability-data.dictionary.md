@@ -1,21 +1,22 @@
 # Subscription.Relationships.SubscriptionAvailability
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 2.4+
 
 ## Declaration
 
-```swift
+```
 object Subscription.Relationships.SubscriptionAvailability
 ```
 
 ## Topics
 
 ### Objects
-- [object Subscription.Relationships.SubscriptionAvailability.Data](subscription/relationships-data.dictionary/subscriptionavailability-data.dictionary/data-data.dictionary.md)
+- [object Subscription.Relationships.SubscriptionAvailability.Data](./subscriptionavailability-data.dictionary/data-data.dictionary.md)
   The request body you use to update a subscription.
 
 ## Properties

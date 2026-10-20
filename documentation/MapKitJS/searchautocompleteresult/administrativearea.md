@@ -1,7 +1,8 @@
 # administrativeArea
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the state or province of the place.
 
@@ -10,13 +11,13 @@ The name of the state or province of the place.
 
 ## Declaration
 
-```swift
+```
 administrativeArea: string | null;
 ```
 
 #### Discussion
 
-For example, the [`administrativeArea`](place/administrativearea.md) for Golden Gate Park in San Francisco, California, is “`California"`.
+For example, the [`administrativeArea`](../place/administrativearea.md) for Golden Gate Park in San Francisco, California, is “`California"`.
 
 
 ---

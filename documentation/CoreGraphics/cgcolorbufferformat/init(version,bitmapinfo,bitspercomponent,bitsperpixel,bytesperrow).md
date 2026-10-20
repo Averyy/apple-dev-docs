@@ -1,16 +1,17 @@
 # init(version:bitmapInfo:bitsPerComponent:bitsPerPixel:bytesPerRow:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ init(version: UInt32, bitmapInfo: CGBitmapInfo, bitsPerComponent: Int, bitsPerPi
 
 ## See Also
 
-- [init()](cgcolorbufferformat/init.md)
+### Initializers
+- [init()](./init%28%29.md)
 
 
 ---

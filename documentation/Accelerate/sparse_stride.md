@@ -1,23 +1,28 @@
 # sparse_stride
 
 **Framework**: Accelerate  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The stride type.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 typealias sparse_stride = Int64
+```
+
+```c
+typedef int64_t sparse_stride;
 ```
 
 #### Discussion
@@ -28,17 +33,18 @@ Supports negative strides for the dense vectors.
 
 ## See Also
 
-- [typealias sparse_matrix_double](sparse_matrix_double.md)
+### Supporting Types
+- [typealias sparse_matrix_double](./sparse_matrix_double.md)
   Sparse matrix opaque type for double.
-- [typealias sparse_matrix_float](sparse_matrix_float.md)
+- [typealias sparse_matrix_float](./sparse_matrix_float.md)
   Sparse matrix opaque type for float.
-- [struct sparse_status](sparse_status.md)
+- [struct sparse_status](./sparse_status.md)
   The type reflecting the status of an operations.
-- [typealias sparse_dimension](sparse_dimension.md)
+- [typealias sparse_dimension](./sparse_dimension.md)
   The dimension type.
-- [typealias sparse_index](sparse_index.md)
+- [typealias sparse_index](./sparse_index.md)
   The index type.
-- [struct sparse_norm](sparse_norm.md)
+- [struct sparse_norm](./sparse_norm.md)
   The norm specifier.
 
 

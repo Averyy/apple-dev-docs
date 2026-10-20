@@ -1,7 +1,8 @@
 # SpotlightSearchTool.SearchReply.Status
 
 **Framework**: Core Spotlight  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -19,28 +20,29 @@ enum Status
 ## Topics
 
 ### Enumeration Cases
-- [SpotlightSearchTool.SearchReply.Status.complete](spotlightsearchtool/searchreply/status-swift.enum/complete.md)
+- [SpotlightSearchTool.SearchReply.Status.complete](./status-swift.enum/complete.md)
   This is the final set of results for this `queryToken`.
-- [SpotlightSearchTool.SearchReply.Status.partial](spotlightsearchtool/searchreply/status-swift.enum/partial.md)
+- [SpotlightSearchTool.SearchReply.Status.partial](./status-swift.enum/partial.md)
   More results may be yielded for this `queryToken`.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let content: SpotlightSearchTool.SearchReply.Content](spotlightsearchtool/searchreply/content-swift.property.md)
+### Getting the reply details
+- [let content: SpotlightSearchTool.SearchReply.Content](./content-swift.property.md)
   The result content — determines what to display and how.
-- [let label: String?](spotlightsearchtool/searchreply/label.md)
+- [let label: String?](./label.md)
   A short, LLM-generated description of what the result represents.
-- [let status: SpotlightSearchTool.SearchReply.Status](spotlightsearchtool/searchreply/status-swift.property.md)
+- [let status: SpotlightSearchTool.SearchReply.Status](./status-swift.property.md)
   An indicator of whether the current query is complete or still in progress.
-- [SpotlightSearchTool.SearchReply.Content](spotlightsearchtool/searchreply/content-swift.enum.md)
+- [SpotlightSearchTool.SearchReply.Content](./content-swift.enum.md)
   What this set of results represents — determines display strategy.
 
 

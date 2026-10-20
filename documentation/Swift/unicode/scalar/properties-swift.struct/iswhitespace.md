@@ -1,7 +1,8 @@
 # isWhitespace
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scalar is a whitespace character.
 
@@ -24,7 +25,7 @@ var isWhitespace: Bool { get }
 
 This property is `true` for scalars that are spaces, separator characters, and other control characters that should be treated as whitespace for the purposes of parsing text elements.
 
-This property corresponds to the “White_Space” property in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “White_Space” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

@@ -1,7 +1,8 @@
 # init(for:values:default:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a definition that constrains an attribute’s value to a defined set of allowed values.
 
@@ -18,6 +19,12 @@ Create a definition that constrains an attribute’s value to a defined set of a
 
 ```swift
 init(for attribute: AttributeKey.Type, values allowedValues: Set<AttributeKey.Value?>, default defaultValue: AttributeKey.Value?)
+```
+
+**Other overloads**:
+
+```swift
+init(for keyPath: KeyPath<Scope, AttributeKey>, values allowedValues: Set<AttributeKey.Value?>, default defaultValue: AttributeKey.Value?)
 ```
 
 ## Parameters

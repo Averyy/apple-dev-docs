@@ -1,7 +1,8 @@
 # ASCredentialImportToken
 
 **Framework**: Authentication Services  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key for the token in the user info dictionary of the user activity sent to importing apps.
 

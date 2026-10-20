@@ -1,7 +1,8 @@
 # NSGridCell.Placement
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
@@ -12,36 +13,41 @@
 enum Placement
 ```
 
+```c
+enum NSGridCellPlacement : NSInteger;
+```
+
 ## Topics
 
 ### Placement Options
-- [static var top: NSGridCell.Placement](nsgridcell/placement/top.md)
-- [static var bottom: NSGridCell.Placement](nsgridcell/placement/bottom.md)
-- [NSGridCell.Placement.center](nsgridcell/placement/center.md)
-- [NSGridCell.Placement.fill](nsgridcell/placement/fill.md)
-- [NSGridCell.Placement.inherited](nsgridcell/placement/inherited.md)
-- [NSGridCell.Placement.leading](nsgridcell/placement/leading.md)
-- [NSGridCell.Placement.none](nsgridcell/placement/none.md)
-- [NSGridCell.Placement.trailing](nsgridcell/placement/trailing.md)
+- [static var top: NSGridCell.Placement](./placement/top.md)
+- [static var bottom: NSGridCell.Placement](./placement/bottom.md)
+- [NSGridCell.Placement.center](./placement/center.md)
+- [NSGridCell.Placement.fill](./placement/fill.md)
+- [NSGridCell.Placement.inherited](./placement/inherited.md)
+- [NSGridCell.Placement.leading](./placement/leading.md)
+- [NSGridCell.Placement.none](./placement/none.md)
+- [NSGridCell.Placement.trailing](./placement/trailing.md)
 ### Initializers
-- [init?(rawValue: Int)](nsgridcell/placement/init(rawvalue:).md)
+- [init?(rawValue: Int)](./placement/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var customPlacementConstraints: [NSLayoutConstraint]](nsgridcell/customplacementconstraints.md)
-- [var rowAlignment: NSGridRow.Alignment](nsgridcell/rowalignment.md)
-- [var xPlacement: NSGridCell.Placement](nsgridcell/xplacement.md)
-- [var yPlacement: NSGridCell.Placement](nsgridcell/yplacement.md)
+### Formatting the Cell
+- [var customPlacementConstraints: [NSLayoutConstraint]](./customplacementconstraints.md)
+- [var rowAlignment: NSGridRow.Alignment](./rowalignment.md)
+- [var xPlacement: NSGridCell.Placement](./xplacement.md)
+- [var yPlacement: NSGridCell.Placement](./yplacement.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(_:color:width:azimuth:)
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 26.0+

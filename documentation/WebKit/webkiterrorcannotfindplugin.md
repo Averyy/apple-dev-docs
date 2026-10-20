@@ -1,10 +1,11 @@
 # WebKitErrorCannotFindPlugIn
 
 **Framework**: WebKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var WebKitErrorCannotFindPlugIn: Int { get }
 ```
 
+```c
+WebKitErrorCannotFindPlugIn
+```
+
 ## See Also
 
-- [var WebKitErrorBlockedPlugInVersion: Int](webkiterrorblockedpluginversion.md)
-- [var WebKitErrorCannotLoadPlugIn: Int](webkiterrorcannotloadplugin.md)
-- [var WebKitErrorJavaUnavailable: Int](webkiterrorjavaunavailable.md)
+### Constants
+- [var WebKitErrorBlockedPlugInVersion: Int](./webkiterrorblockedpluginversion.md)
+- [var WebKitErrorCannotLoadPlugIn: Int](./webkiterrorcannotloadplugin.md)
+- [var WebKitErrorJavaUnavailable: Int](./webkiterrorjavaunavailable.md)
 
 
 ---

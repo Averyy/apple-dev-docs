@@ -1,7 +1,8 @@
 # ARPlaneAnchor.Classification.seat
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The plane anchor represents a real-world chair, stool, bench or similar flat surface.
 
@@ -17,17 +18,18 @@ case seat
 
 ## See Also
 
-- [ARPlaneAnchor.Classification.wall](arplaneanchor/classification-swift.enum/wall.md)
+### Plane Classifications
+- [ARPlaneAnchor.Classification.wall](./wall.md)
   The plane anchor represents a real-world wall or similar large vertical surface.
-- [ARPlaneAnchor.Classification.floor](arplaneanchor/classification-swift.enum/floor.md)
+- [ARPlaneAnchor.Classification.floor](./floor.md)
   The plane anchor represents a real-world floor, ground plane, or similar large horizontal surface.
-- [ARPlaneAnchor.Classification.ceiling](arplaneanchor/classification-swift.enum/ceiling.md)
+- [ARPlaneAnchor.Classification.ceiling](./ceiling.md)
   The plane anchor represents a real-world ceiling or similar overhead horizontal surface.
-- [ARPlaneAnchor.Classification.table](arplaneanchor/classification-swift.enum/table.md)
+- [ARPlaneAnchor.Classification.table](./table.md)
   The plane anchor represents a real-world table, desk, bar, or similar flat surface.
-- [ARPlaneAnchor.Classification.door](arplaneanchor/classification-swift.enum/door.md)
+- [ARPlaneAnchor.Classification.door](./door.md)
   The plane anchor represents a real-world door or similar vertical surface.
-- [ARPlaneAnchor.Classification.window](arplaneanchor/classification-swift.enum/window.md)
+- [ARPlaneAnchor.Classification.window](./window.md)
   The plane anchor represents a real-world window or similar vertical surface.
 
 

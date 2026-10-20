@@ -1,7 +1,8 @@
 # init(unit:doubleValue:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Instantiates and returns a new quantity object.
 
@@ -19,13 +20,17 @@ Instantiates and returns a new quantity object.
 convenience init(unit: HKUnit, doubleValue value: Double)
 ```
 
+```objc
++ (instancetype) quantityWithUnit:(HKUnit *) unit doubleValue:(double) value;
+```
+
 #### Return Value
 
 A newly instantiated quantity instance.
 
 #### Discussion
 
-HealthKit uses quantity objects to store data for quantity samples. For more information on using quantity objects, see [`HKQuantitySample`](hkquantitysample.md).
+HealthKit uses quantity objects to store data for quantity samples. For more information on using quantity objects, see [`HKQuantitySample`](../hkquantitysample.md).
 
 ## Parameters
 

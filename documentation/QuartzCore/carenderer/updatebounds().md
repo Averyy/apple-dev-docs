@@ -1,7 +1,8 @@
 # updateBounds()
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the bounds of the update region that contains all pixels that will be rendered by the current frame.
 
@@ -19,6 +20,10 @@ Returns the bounds of the update region that contains all pixels that will be re
 func updateBounds() -> CGRect
 ```
 
+```objc
+- (CGRect) updateBounds;
+```
+
 #### Return Value
 
 The bounds of the update region..
@@ -29,15 +34,16 @@ Initially `updateBounds` will include all differences between the current frame 
 
 ## See Also
 
-- [func beginFrame(atTime: CFTimeInterval, timeStamp: UnsafeMutablePointer<CVTimeStamp>?)](carenderer/beginframe(attime:timestamp:).md)
+### Rendering a Frame
+- [func beginFrame(atTime: CFTimeInterval, timeStamp: UnsafeMutablePointer<CVTimeStamp>?)](./beginframe%28attime,timestamp%29.md)
   Begin rendering a frame at the specified time.
-- [func addUpdate(CGRect)](carenderer/addupdate(_:).md)
+- [func addUpdate(CGRect)](./addupdate%28_%29.md)
   Adds the rectangle to the update region of the current frame.
-- [func render()](carenderer/render.md)
+- [func render()](./render%28%29.md)
   Render the update region of the current frame to the target context.
-- [func nextFrameTime() -> CFTimeInterval](carenderer/nextframetime.md)
+- [func nextFrameTime() -> CFTimeInterval](./nextframetime%28%29.md)
   Returns the time at which the next update should happen.
-- [func endFrame()](carenderer/endframe.md)
+- [func endFrame()](./endframe%28%29.md)
   Release any data associated with the current frame.
 
 

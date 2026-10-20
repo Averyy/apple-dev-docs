@@ -1,18 +1,19 @@
 # kCFCopyStringSetCallBacks
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-Predefined [`CFSetCallBacks`](cfsetcallbacks.md) structure containing a set of callbacks  appropriate for use when the values in a set are all CFString objects. The retain callback makes an immutable copy of strings added to the set.
+Predefined [`CFSetCallBacks`](./cfsetcallbacks.md) structure containing a set of callbacks  appropriate for use when the values in a set are all CFString objects. The retain callback makes an immutable copy of strings added to the set.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ Predefined [`CFSetCallBacks`](cfsetcallbacks.md) structure containing a set of c
 let kCFCopyStringSetCallBacks: CFSetCallBacks
 ```
 
+```c
+extern const CFSetCallBacks kCFCopyStringSetCallBacks;
+```
+
 ## See Also
 
-- [let kCFTypeSetCallBacks: CFSetCallBacks](kcftypesetcallbacks.md)
+### Constants
+- [let kCFTypeSetCallBacks: CFSetCallBacks](./kcftypesetcallbacks.md)
 
 
 ---

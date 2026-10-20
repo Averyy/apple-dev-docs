@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOMediaAttributeEjectableMask](1644056-anonymous/kiomediaattributeejectablemask.md)
-- [kIOMediaAttributeRemovableMask](1644056-anonymous/kiomediaattributeremovablemask.md)
-- [kIOMediaAttributeReservedMask](1644056-anonymous/kiomediaattributereservedmask.md)
+- [kIOMediaAttributeEjectableMask](./api-1644056-anonymous/kiomediaattributeejectablemask.md)
+- [kIOMediaAttributeRemovableMask](./api-1644056-anonymous/kiomediaattributeremovablemask.md)
+- [kIOMediaAttributeReservedMask](./api-1644056-anonymous/kiomediaattributereservedmask.md)
 
 
 ---

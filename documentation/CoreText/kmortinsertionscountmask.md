@@ -1,16 +1,17 @@
 # kMORTInsertionsCountMask
 
 **Framework**: Core Text  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,23 +19,28 @@
 var kMORTInsertionsCountMask: Int { get }
 ```
 
+```c
+kMORTInsertionsCountMask
+```
+
 ## See Also
 
-- [var cmapFontTableTag: Int](cmapfonttabletag.md)
-- [var descriptorFontTableTag: Int](descriptorfonttabletag.md)
-- [var featureFontTableTag: Int](featurefonttabletag.md)
-- [var kANKRCurrentVersion: Int](kankrcurrentversion.md)
-- [var kAbbrevSquaredLigaturesOffSelector: Int](kabbrevsquaredligaturesoffselector.md)
-- [var kAbbrevSquaredLigaturesOnSelector: Int](kabbrevsquaredligaturesonselector.md)
-- [var kAllCapsSelector: Int](kallcapsselector.md)
-- [var kAllLowerCaseSelector: Int](kalllowercaseselector.md)
-- [var kAllTypeFeaturesOffSelector: Int](kalltypefeaturesoffselector.md)
-- [var kAllTypeFeaturesOnSelector: Int](kalltypefeaturesonselector.md)
-- [var kAllTypographicFeaturesType: Int](kalltypographicfeaturestype.md)
-- [var kAltHalfWidthTextSelector: Int](kalthalfwidthtextselector.md)
-- [var kAltProportionalTextSelector: Int](kaltproportionaltextselector.md)
-- [var kAlternateHorizKanaOffSelector: Int](kalternatehorizkanaoffselector.md)
-- [var kAlternateHorizKanaOnSelector: Int](kalternatehorizkanaonselector.md)
+### Constants
+- [var cmapFontTableTag: Int](./cmapfonttabletag.md)
+- [var descriptorFontTableTag: Int](./descriptorfonttabletag.md)
+- [var featureFontTableTag: Int](./featurefonttabletag.md)
+- [var kANKRCurrentVersion: Int](./kankrcurrentversion.md)
+- [var kAbbrevSquaredLigaturesOffSelector: Int](./kabbrevsquaredligaturesoffselector.md)
+- [var kAbbrevSquaredLigaturesOnSelector: Int](./kabbrevsquaredligaturesonselector.md)
+- [var kAllCapsSelector: Int](./kallcapsselector.md)
+- [var kAllLowerCaseSelector: Int](./kalllowercaseselector.md)
+- [var kAllTypeFeaturesOffSelector: Int](./kalltypefeaturesoffselector.md)
+- [var kAllTypeFeaturesOnSelector: Int](./kalltypefeaturesonselector.md)
+- [var kAllTypographicFeaturesType: Int](./kalltypographicfeaturestype.md)
+- [var kAltHalfWidthTextSelector: Int](./kalthalfwidthtextselector.md)
+- [var kAltProportionalTextSelector: Int](./kaltproportionaltextselector.md)
+- [var kAlternateHorizKanaOffSelector: Int](./kalternatehorizkanaoffselector.md)
+- [var kAlternateHorizKanaOnSelector: Int](./kalternatehorizkanaonselector.md)
 
 
 ---

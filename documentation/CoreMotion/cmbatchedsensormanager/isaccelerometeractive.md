@@ -1,7 +1,8 @@
 # isAccelerometerActive
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 4.0+
@@ -16,14 +17,19 @@
 var isAccelerometerActive: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isAccelerometerActive) BOOL accelerometerActive;
+```
+
 ## See Also
 
-- [func startAccelerometerUpdates()](cmbatchedsensormanager/startaccelerometerupdates.md)
-- [func startAccelerometerUpdates(handler: ([CMAccelerometerData]?, (any Error)?) -> Void)](cmbatchedsensormanager/startaccelerometerupdates(handler:).md)
-- [func stopAccelerometerUpdates()](cmbatchedsensormanager/stopaccelerometerupdates.md)
-- [var accelerometerBatch: [CMAccelerometerData]?](cmbatchedsensormanager/accelerometerbatch.md)
-- [func accelerometerUpdates() -> CMBatchedSensorManager.AccelerometerUpdates](cmbatchedsensormanager/accelerometerupdates.md)
-- [CMBatchedSensorManager.AccelerometerUpdates](cmbatchedsensormanager/accelerometerupdates.md)
+### Collecting accelerometer data
+- [func startAccelerometerUpdates()](./startaccelerometerupdates%28%29.md)
+- [func startAccelerometerUpdates(handler: ([CMAccelerometerData]?, (any Error)?) -> Void)](./startaccelerometerupdates%28handler%29.md)
+- [func stopAccelerometerUpdates()](./stopaccelerometerupdates%28%29.md)
+- [var accelerometerBatch: [CMAccelerometerData]?](./accelerometerbatch.md)
+- [func accelerometerUpdates() -> CMBatchedSensorManager.AccelerometerUpdates](./accelerometerupdates%28%29.md)
+- [CMBatchedSensorManager.AccelerometerUpdates](./accelerometerupdates.md)
 
 
 ---

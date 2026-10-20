@@ -1,16 +1,19 @@
 # Available OS Updates
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get a list of available operating-system updates for a device. Removed: use the declarative management `com.apple.configuration.softwareupdate.enforcement.specific` configuration.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 9.0+
-- macOS 10.11+
-- tvOS 12.0+
+- iOS 9.0+ - Deprecated in 26.0
+- iPadOS 9.0+ - Deprecated in 26.0
+- Mac Catalyst 9.0+ - Deprecated in 26.0
+- macOS 10.11+ - Deprecated in 26.0
+- tvOS 12.0+ - Deprecated in 26.0
+
+> **Deprecated**: **Removed** Use the declarative management software update features instead.
 
 #### Discussion
 
@@ -18,7 +21,7 @@ A device must have a total of `DownloadSize` + `InstallSize` bytes available to 
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -28,7 +31,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | AllowAppInstallation |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -93,9 +96,9 @@ Refer to the following sections to determine supported channels and requirements
 ## Topics
 
 ### Commands and responses
-- [object AvailableOSUpdatesCommand](availableosupdatescommand.md)
+- [object AvailableOSUpdatesCommand](./availableosupdatescommand.md)
   The command to get a list of available operating-system updates for a device. Removed: use the declarative management `com.apple.configuration.softwareupdate.enforcement.specific` configuration.
-- [object AvailableOSUpdatesResponse](availableosupdatesresponse.md)
+- [object AvailableOSUpdatesResponse](./availableosupdatesresponse.md)
   A response from the device after it processes the command to get a list of available operating-system updates for a device. Removed: use the declarative management `com.apple.configuration.softwareupdate.enforcement.specific` configuration.
 
 ## Endpoint
@@ -104,15 +107,23 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `AvailableOSUpdatesCommand`
+
 The request object the server returns for the Available OS Updates Command.
+
+## Responses
+
+- `200` OK (`AvailableOSUpdatesResponse`, `application/xml`): The response object the system returns for the Available OS Updates Command.
 
 ## See Also
 
-- [OS Update Status](os-update-status-command.md)
+### Commands
+- [OS Update Status](./os-update-status-command.md)
   Get the status of operating-system updates on a device. Removed: subscribe to the declarative management `softwareupdate.install-state` status item.
-- [Schedule OS Update](schedule-os-update-command.md)
+- [Schedule OS Update](./schedule-os-update-command.md)
   Schedule an update of the operating system on a device. Removed: use the declarative management `com.apple.configuration.softwareupdate.enforcement.specific` configuration.
-- [Schedule OS Update Scan](schedule-os-update-scan-command.md)
+- [Schedule OS Update Scan](./schedule-os-update-scan-command.md)
   Schedule a background scan for operating-system updates on a device. Removed: use the declarative management `com.apple.configuration.softwareupdate.enforcement.specific` configuration.
 
 

@@ -1,7 +1,8 @@
 # characterSpecial
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Character special device
 

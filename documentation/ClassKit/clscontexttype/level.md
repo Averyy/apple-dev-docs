@@ -1,7 +1,8 @@
 # CLSContextType.level
 
 **Framework**: ClassKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A level context.
 
@@ -18,37 +19,42 @@ A level context.
 case level
 ```
 
+```c
+CLSContextTypeLevel
+```
+
 ## See Also
 
-- [CLSContextType.app](clscontexttype/app.md)
+### Context Types
+- [CLSContextType.app](./app.md)
   An app context.
-- [CLSContextType.audio](clscontexttype/audio.md)
+- [CLSContextType.audio](./audio.md)
   An audio context.
-- [CLSContextType.book](clscontexttype/book.md)
+- [CLSContextType.book](./book.md)
   A book context.
-- [CLSContextType.challenge](clscontexttype/challenge.md)
+- [CLSContextType.challenge](./challenge.md)
   A challenge context.
-- [CLSContextType.chapter](clscontexttype/chapter.md)
+- [CLSContextType.chapter](./chapter.md)
   A chapter context.
-- [CLSContextType.course](clscontexttype/course.md)
+- [CLSContextType.course](./course.md)
   A context that represents an entire course.
-- [CLSContextType.custom](clscontexttype/custom.md)
+- [CLSContextType.custom](./custom.md)
   A context for assignable content that isn’t represented by one of the built-in context types.
-- [CLSContextType.document](clscontexttype/document.md)
+- [CLSContextType.document](./document.md)
   A document context.
-- [CLSContextType.exercise](clscontexttype/exercise.md)
+- [CLSContextType.exercise](./exercise.md)
   An exercise context.
-- [CLSContextType.game](clscontexttype/game.md)
+- [CLSContextType.game](./game.md)
   A game context.
-- [CLSContextType.lesson](clscontexttype/lesson.md)
+- [CLSContextType.lesson](./lesson.md)
   A lesson context.
-- [CLSContextType.none](clscontexttype/none.md)
+- [CLSContextType.none](./none.md)
   No type is assigned.
-- [CLSContextType.page](clscontexttype/page.md)
+- [CLSContextType.page](./page.md)
   A page context.
-- [CLSContextType.quiz](clscontexttype/quiz.md)
+- [CLSContextType.quiz](./quiz.md)
   A quiz context.
-- [CLSContextType.section](clscontexttype/section.md)
+- [CLSContextType.section](./section.md)
   A section context.
 
 

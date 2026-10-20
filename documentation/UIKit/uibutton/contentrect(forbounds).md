@@ -1,21 +1,28 @@
 # contentRect(forBounds:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the rectangle in which the receiver draws its entire content.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- tvOS 2.0+
-- visionOS 1.0+
+- iOS 2.0+ - Deprecated in 15.0
+- iPadOS 2.0+ - Deprecated in 15.0
+- Mac Catalyst 13.1+ - Deprecated in 15.0
+- tvOS 2.0+ - Deprecated in 15.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use [`layoutSubviews()`](../uiview/layoutsubviews%28%29.md) instead.
 
 ## Declaration
 
 ```swift
 func contentRect(forBounds bounds: CGRect) -> CGRect
+```
+
+```objc
+- (CGRect) contentRectForBounds:(CGRect) bounds;
 ```
 
 #### Return Value
@@ -32,13 +39,15 @@ The content rectangle is the area needed to display the image and title includin
 
 ## See Also
 
-- [var contentEdgeInsets: UIEdgeInsets](uibutton/contentedgeinsets.md)
+### Related Documentation
+- [var contentEdgeInsets: UIEdgeInsets](./contentedgeinsets.md)
   The inset or outset margins for the rectangle surrounding all of the button’s content.
-- [func backgroundRect(forBounds: CGRect) -> CGRect](uibutton/backgroundrect(forbounds:).md)
+### Deprecated dimensions
+- [func backgroundRect(forBounds: CGRect) -> CGRect](./backgroundrect%28forbounds%29.md)
   Returns the rectangle in which the receiver draws its background.
-- [func titleRect(forContentRect: CGRect) -> CGRect](uibutton/titlerect(forcontentrect:).md)
+- [func titleRect(forContentRect: CGRect) -> CGRect](./titlerect%28forcontentrect%29.md)
   Returns the rectangle in which the receiver draws its title.
-- [func imageRect(forContentRect: CGRect) -> CGRect](uibutton/imagerect(forcontentrect:).md)
+- [func imageRect(forContentRect: CGRect) -> CGRect](./imagerect%28forcontentrect%29.md)
   Returns the rectangle in which the receiver draws its image.
 
 

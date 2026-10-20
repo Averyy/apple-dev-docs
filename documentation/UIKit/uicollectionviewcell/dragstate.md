@@ -1,7 +1,8 @@
 # UICollectionViewCell.DragState
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating the current state of the drag operation.
 
@@ -17,31 +18,36 @@ Constants indicating the current state of the drag operation.
 enum DragState
 ```
 
+```c
+enum UICollectionViewCellDragState : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UICollectionViewCell.DragState.none](uicollectionviewcell/dragstate/none.md)
+- [UICollectionViewCell.DragState.none](./dragstate/none.md)
   The cell isn’t involved in a drag.
-- [UICollectionViewCell.DragState.lifting](uicollectionviewcell/dragstate/lifting.md)
+- [UICollectionViewCell.DragState.lifting](./dragstate/lifting.md)
   The cell is being animated off of the surface of the collection view.
-- [UICollectionViewCell.DragState.dragging](uicollectionviewcell/dragstate/dragging.md)
+- [UICollectionViewCell.DragState.dragging](./dragstate/dragging.md)
   The cell is being dragged.
 ### Initializers
-- [init?(rawValue: Int)](uicollectionviewcell/dragstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./dragstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func dragStateDidChange(UICollectionViewCell.DragState)](uicollectionviewcell/dragstatedidchange(_:).md)
+### Managing drag state changes
+- [func dragStateDidChange(UICollectionViewCell.DragState)](./dragstatedidchange%28_%29.md)
   Called when the drag state of the cell changes.
 
 

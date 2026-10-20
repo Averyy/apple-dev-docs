@@ -1,7 +1,8 @@
 # displayName(forKey:value:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the display name for the given locale component value.
 
@@ -20,6 +21,10 @@ Returns the display name for the given locale component value.
 func displayName(forKey key: NSLocale.Key, value: Any) -> String?
 ```
 
+```objc
+- (NSString *) displayNameForKey:(NSLocaleKey) key value:(id) value;
+```
+
 #### Return Value
 
 The display name for `value`.
@@ -28,7 +33,7 @@ The display name for `value`.
 
 Not all locale property keys have values with display name values.
 
-You can use the [`identifier`](nslocale/key/identifier.md) key to get the name of a locale in the language of another locale, as illustrated in the following examples.
+You can use the [`identifier`](./key/identifier.md) key to get the name of a locale in the language of another locale, as illustrated in the following examples.
 
 **Swift**:
 
@@ -74,14 +79,15 @@ NSLog(@"%@", [gbLocale displayNameForKey:NSLocaleIdentifier value:@"en_US"]);
 
 ## Parameters
 
-- `key`: The locale property key of `value`. For possible values, see [`NSLocale.Key`](nslocale/key.md).
+- `key`: The locale property key of `value`. For possible values, see [`NSLocale.Key`](./key.md).
 - `value`: A value for `key`.
 
 ## See Also
 
-- [func object(forKey: NSLocale.Key) -> Any?](nslocale/object(forkey:).md)
+### Accessing Locale Information by Key
+- [func object(forKey: NSLocale.Key) -> Any?](./object%28forkey%29.md)
   Returns the value of the component corresponding to the specified key.
-- [NSLocale.Key](nslocale/key.md)
+- [NSLocale.Key](./key.md)
   The keys used to access components of a locale.
 
 

@@ -1,7 +1,8 @@
 # replaceSubrange(_:with:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the elements within the specified bounds with the given Unicode scalar values.
 
@@ -24,7 +25,7 @@ mutating func replaceSubrange<C>(_ subrange: Range<String.UnicodeScalarView.Inde
 
 Calling this method invalidates any existing indices for use with this string.
 
-> **Note**: O(*m*), where *m* is the combined length of the view and `newElements`. If the call to `replaceSubrange(_:with:)` simply removes elements at the end of the string, the complexity is O(*n*), where *n* is equal to `bounds.count`.
+> **Complexity**: O(*m*), where *m* is the combined length of the view and `newElements`. If the call to `replaceSubrange(_:with:)` simply removes elements at the end of the string, the complexity is O(*n*), where *n* is equal to `bounds.count`.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # temporaryDirectoryDoesNotExist
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the specified temporary files directory doesn’t exist.
 
@@ -19,17 +20,22 @@ Indicates that the specified temporary files directory doesn’t exist.
 static let temporaryDirectoryDoesNotExist: AVAssetExportSession.ResumptionFailureReason
 ```
 
+```c
+extern AVAssetExportSessionResumptionFailureReason const AVAssetExportSessionResumptionFailureReasonTemporaryDirectoryDoesNotExist;
+```
+
 #### Discussion
 
-Create the temporary files directory and call [`configureForResumableExportWithCompletionHandler:`](avassetexportsession/configureforresumableexportwithcompletionhandler:.md) again.
+Create the temporary files directory and call [`configureForResumableExportWithCompletionHandler:`](../configureforresumableexportwithcompletionhandler_.md) again.
 
 ## See Also
 
-- [static let incompatibleSessionSettings: AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason/incompatiblesessionsettings.md)
+### Failure reasons
+- [static let incompatibleSessionSettings: AVAssetExportSession.ResumptionFailureReason](./incompatiblesessionsettings.md)
   Indicates the export session settings are incompatible with resumable export.
-- [static let incompatibleTemporaryDirectoryContents: AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason/incompatibletemporarydirectorycontents.md)
+- [static let incompatibleTemporaryDirectoryContents: AVAssetExportSession.ResumptionFailureReason](./incompatibletemporarydirectorycontents.md)
   Indicates that the contents of the specified temporary files directory are inconsistent with the current resuming export.
-- [static let unsupportedForPresetOnPlatform: AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason/unsupportedforpresetonplatform.md)
+- [static let unsupportedForPresetOnPlatform: AVAssetExportSession.ResumptionFailureReason](./unsupportedforpresetonplatform.md)
   Indicates that resumption isn’t supported for this preset and platform combination.
 
 

@@ -1,7 +1,8 @@
 # HKMetadataKeyVO2MaxTestType
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The method used to calculate the user’s VO2 max rate.
 
@@ -19,14 +20,18 @@ The method used to calculate the user’s VO2 max rate.
 let HKMetadataKeyVO2MaxTestType: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyVO2MaxTestType;
+```
+
 #### Discussion
 
-This key takes an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing a [`HKVO2MaxTestType`](hkvo2maxtesttype.md) value.
+This key takes an [`NSNumber`](../Foundation/nsnumber.md) object containing a [`HKVO2MaxTestType`](./hkvo2maxtesttype.md) value.
 
 ## Topics
 
 ### Valid Test Types
-- [enum HKVO2MaxTestType](hkvo2maxtesttype.md)
+- [enum HKVO2MaxTestType](./hkvo2maxtesttype.md)
   Methods for calculating the user’s VO2 max rate.
 
 

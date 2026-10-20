@@ -2,6 +2,7 @@
 
 **Framework**: Authentication Services  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The challenge to sign.
@@ -20,13 +21,18 @@ The challenge to sign.
 var challenge: Data { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSData * challenge;
+```
+
 ## See Also
 
-- [var relyingPartyIdentifier: String](asauthorizationpublickeycredentialassertionrequest/relyingpartyidentifier.md)
+### Getting the properties
+- [var relyingPartyIdentifier: String](./relyingpartyidentifier.md)
   The domain name of the website for the credential.
-- [var allowedCredentials: [any ASAuthorizationPublicKeyCredentialDescriptor]](asauthorizationpublickeycredentialassertionrequest/allowedcredentials.md)
+- [var allowedCredentials: [any ASAuthorizationPublicKeyCredentialDescriptor]](./allowedcredentials.md)
   A list of allowed credential descriptors the user attempts to sign in with.
-- [var userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference](asauthorizationpublickeycredentialassertionrequest/userverificationpreference.md)
+- [var userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference](./userverificationpreference.md)
   A preference that indicates whether the authenticator attempts to verify the user at the time of sign-in.
 
 

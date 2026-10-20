@@ -1,7 +1,8 @@
 # NavigationComponent.Filter
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A struct that stores information about flags to ignore and include, and area costs for a pathfind.
 
@@ -22,20 +23,21 @@ struct Filter
 ## Topics
 
 ### Configuring the filter
-- [var includeFlags: NavigationMeshResource.FlagGroup](navigationcomponent/filter-swift.struct/includeflags.md)
+- [var includeFlags: NavigationMeshResource.FlagGroup](./filter-swift.struct/includeflags.md)
   The set of flags to include when pathfinding. The path will only move through polygons that have any of these flags set.
-- [var ignoreFlags: NavigationMeshResource.FlagGroup](navigationcomponent/filter-swift.struct/ignoreflags.md)
+- [var ignoreFlags: NavigationMeshResource.FlagGroup](./filter-swift.struct/ignoreflags.md)
   The set of flags to ignore when pathfinding. The path will not be able to move through any polygons with any of these flags set.
-- [var areaCosts: [NavigationMeshResource.Area : Float]](navigationcomponent/filter-swift.struct/areacosts.md)
+- [var areaCosts: [NavigationMeshResource.Area : Float]](./filter-swift.struct/areacosts.md)
   The costs for pathing through an area. The path can move through polygons with these areas, but will try to find the lowest-cost path, avoiding high-cost areas if possible.
 ### Initializers
-- [init()](navigationcomponent/filter-swift.struct/init.md)
+- [init()](./filter-swift.struct/init%28%29.md)
 
 ## See Also
 
-- [var layer: NavigationMeshResource.Layer?](navigationcomponent/layer.md)
+### Configuring navigation
+- [var layer: NavigationMeshResource.Layer?](./layer.md)
   The layer to use when searching for a NavigationMeshResource in a Scene. If not set, the first available NavigationMeshResource will be used.
-- [var filter: NavigationComponent.Filter?](navigationcomponent/filter-swift.property.md)
+- [var filter: NavigationComponent.Filter?](./filter-swift.property.md)
   The filter to use when pathfinding.
 
 

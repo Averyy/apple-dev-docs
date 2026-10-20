@@ -1,7 +1,8 @@
 # ContentCachingRangesItemObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A range of IP addresses to cache.
 
@@ -10,7 +11,7 @@ A range of IP addresses to cache.
 
 ## Declaration
 
-```swift
+```
 object ContentCachingRangesItemObject
 ```
 
@@ -19,6 +20,8 @@ object ContentCachingRangesItemObject
 - `first` (string) *(required)*: The first IP address in the range.
 - `last` (string) *(required)*: The last IP address in the range.
 - `type` (string): The IP address type.
+
+  **Default**: `IPv4`; **Allowed Values**: `IPv4`, `IPv6`
 
 
 ---

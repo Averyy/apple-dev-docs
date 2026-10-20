@@ -1,7 +1,8 @@
 # authorizationStatus()
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the authorization status for monitoring headphone motion.
 
@@ -18,13 +19,18 @@ Returns the authorization status for monitoring headphone motion.
 class func authorizationStatus() -> CMAuthorizationStatus
 ```
 
+```objc
++ (CMAuthorizationStatus) authorizationStatus;
+```
+
 ## See Also
 
-- [var isDeviceMotionAvailable: Bool](cmheadphonemotionmanager/isdevicemotionavailable.md)
+### Checking Availability
+- [var isDeviceMotionAvailable: Bool](./isdevicemotionavailable.md)
   A Boolean value that indicates whether the current device supports the headphone motion manager.
-- [var isDeviceMotionActive: Bool](cmheadphonemotionmanager/isdevicemotionactive.md)
+- [var isDeviceMotionActive: Bool](./isdevicemotionactive.md)
   A Boolean value that indicates whether the headphone motion manager is active.
-- [var isConnectionStatusActive: Bool](cmheadphonemotionmanager/isconnectionstatusactive.md)
+- [var isConnectionStatusActive: Bool](./isconnectionstatusactive.md)
 
 
 ---

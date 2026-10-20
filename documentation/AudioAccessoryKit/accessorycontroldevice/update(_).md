@@ -1,7 +1,8 @@
 # update(_:)
 
 **Framework**: AudioAccessoryKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the accessory’s configuration.
 
@@ -33,7 +34,7 @@ try await accessoryDevice.update(configuration)
 print("Successfully updated device configuration")
 ```
 
-Always register a capability before trying to update it. For example, the code above is valid only if you included the [`placement`](accessorycontroldevice/capabilities/placement.md) capability when registering the accessory.
+Always register a capability before trying to update it. For example, the code above is valid only if you included the [`placement`](./capabilities/placement.md) capability when registering the accessory.
 
 This method throws an error if the update fails.
 

@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Insert elements before an identified action.
@@ -17,6 +18,10 @@ Insert elements before an identified action.
 
 ```swift
 func insertElements(_ insertedElements: [UIMenuElement], beforeAction siblingIdentifier: UIAction.Identifier)
+```
+
+```objc
+- (void) insertElements:(NSArray<UIMenuElement *> *) insertedElements beforeActionForIdentifier:(UIActionIdentifier) siblingIdentifier;
 ```
 
 ## Parameters

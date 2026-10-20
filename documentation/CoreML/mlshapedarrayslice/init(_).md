@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new MLShapedArraySlice using a `MLMultiArray` as a backing storage.
 
@@ -32,7 +33,8 @@ Mutating operations trigger copy-on-write. Non-mutating operations access the `M
 
 ## See Also
 
-- [init<S>(concatenating: S, alongAxis: Int)](mlshapedarrayslice/init(concatenating:alongaxis:).md)
+### Creating a shaped array slice from another type
+- [init<S>(concatenating: S, alongAxis: Int)](./init%28concatenating,alongaxis%29.md)
   Merges a sequence of shaped arrays into one shaped array along an axis.
 
 

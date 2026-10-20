@@ -1,7 +1,8 @@
 # authorizationRequests
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The authorization requests that the controller manages.
 
@@ -20,15 +21,20 @@ The authorization requests that the controller manages.
 var authorizationRequests: [ASAuthorizationRequest] { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSArray<ASAuthorizationRequest *> * authorizationRequests;
+```
+
 #### Discussion
 
-Use an authorization provider, like [`ASAuthorizationAppleIDProvider`](asauthorizationappleidprovider.md), [`ASAuthorizationPasswordProvider`](asauthorizationpasswordprovider.md), or [`ASAuthorizationSingleSignOnProvider`](asauthorizationsinglesignonprovider.md), to create a request for a particular purpose.
+Use an authorization provider, like [`ASAuthorizationAppleIDProvider`](../asauthorizationappleidprovider.md), [`ASAuthorizationPasswordProvider`](../asauthorizationpasswordprovider.md), or [`ASAuthorizationSingleSignOnProvider`](../asauthorizationsinglesignonprovider.md), to create a request for a particular purpose.
 
 ## See Also
 
-- [class ASAuthorizationRequest](asauthorizationrequest.md)
+### Inspecting requests
+- [class ASAuthorizationRequest](../asauthorizationrequest.md)
   A base class for different kinds of authorization requests.
-- [var customAuthorizationMethods: [ASAuthorizationCustomMethod]](asauthorizationcontroller/customauthorizationmethods.md)
+- [var customAuthorizationMethods: [ASAuthorizationCustomMethod]](./customauthorizationmethods.md)
   An array of custom authorization methods for the user to choose.
 
 

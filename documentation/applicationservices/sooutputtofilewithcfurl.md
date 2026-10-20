@@ -1,7 +1,8 @@
 # soOutputToFileWithCFURL
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Pass a `CFURLRef` in the `speechInfo` parameter to write to this file, or `NULL` to generate sound.
 

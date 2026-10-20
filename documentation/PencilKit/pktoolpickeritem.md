@@ -1,7 +1,8 @@
 # PKToolPickerItem
 
 **Framework**: PencilKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The base class for an item in the tool picker.
 
@@ -18,52 +19,57 @@ The base class for an item in the tool picker.
 class PKToolPickerItem
 ```
 
+```objc
+@interface PKToolPickerItem : NSObject
+```
+
 ## Topics
 
 ### Identifying the item
-- [var identifier: String](pktoolpickeritem/identifier.md)
+- [var identifier: String](./pktoolpickeritem/identifier.md)
   A string that identifies the item in the tool picker.
 ### Instance Properties
-- [var tool: (any PKTool)?](pktoolpickeritem/tool-2ji9h.md)
+- [var tool: (any PKTool)?](./pktoolpickeritem/tool-2ji9h.md)
   A tool for drawing on a PKCanvasView.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [PKToolPickerCustomItem](pktoolpickercustomitem.md)
-- [PKToolPickerEraserItem](pktoolpickereraseritem.md)
-- [PKToolPickerInkingItem](pktoolpickerinkingitem.md)
-- [PKToolPickerLassoItem](pktoolpickerlassoitem.md)
-- [PKToolPickerRulerItem](pktoolpickerruleritem.md)
-- [PKToolPickerScribbleItem](pktoolpickerscribbleitem.md)
+- [PKToolPickerCustomItem](./pktoolpickercustomitem.md)
+- [PKToolPickerEraserItem](./pktoolpickereraseritem.md)
+- [PKToolPickerInkingItem](./pktoolpickerinkingitem.md)
+- [PKToolPickerLassoItem](./pktoolpickerlassoitem.md)
+- [PKToolPickerRulerItem](./pktoolpickerruleritem.md)
+- [PKToolPickerScribbleItem](./pktoolpickerscribbleitem.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [init()](pktoolpicker/init.md)
+### Creating a tool picker
+- [init()](./pktoolpicker/init%28%29.md)
   Creates a new tool picker with a default set of tools.
-- [init(toolItems: [PKToolPickerItem])](pktoolpicker/init(toolitems:).md)
+- [init(toolItems: [PKToolPickerItem])](./pktoolpicker/init%28toolitems%29.md)
   Creates a new tool picker with the tools you specify.
-- [class PKToolPickerInkingItem](pktoolpickerinkingitem.md)
+- [class PKToolPickerInkingItem](./pktoolpickerinkingitem.md)
   An item that represents an inking tool in the tool picker.
-- [class PKToolPickerEraserItem](pktoolpickereraseritem.md)
+- [class PKToolPickerEraserItem](./pktoolpickereraseritem.md)
   An item that represents an eraser tool in the tool picker.
-- [class PKToolPickerLassoItem](pktoolpickerlassoitem.md)
+- [class PKToolPickerLassoItem](./pktoolpickerlassoitem.md)
   An item that represents a lasso tool in the tool picker.
-- [class PKToolPickerRulerItem](pktoolpickerruleritem.md)
+- [class PKToolPickerRulerItem](./pktoolpickerruleritem.md)
   An item that represents a ruler tool in the tool picker.
-- [class PKToolPickerScribbleItem](pktoolpickerscribbleitem.md)
+- [class PKToolPickerScribbleItem](./pktoolpickerscribbleitem.md)
   An item that represents a Scribble tool in the tool picker.
-- [class PKToolPickerCustomItem](pktoolpickercustomitem.md)
+- [class PKToolPickerCustomItem](./pktoolpickercustomitem.md)
   An item that represents a custom tool in the tool picker.
 
 

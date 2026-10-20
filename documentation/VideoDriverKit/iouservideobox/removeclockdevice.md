@@ -1,7 +1,8 @@
 # RemoveClockDevice
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes aa clock device from the video box.
 
@@ -10,7 +11,7 @@ Removes aa clock device from the video box.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t RemoveClockDevice(IOUserVideoClockDevice *in_clock_device);
 ```
 
@@ -28,15 +29,16 @@ The clock device’s reference count will be decremented if it was successfully 
 
 ## See Also
 
-- [AddDevice](iouservideobox/adddevice.md)
+### Managing box contents
+- [AddDevice](./adddevice.md)
   Adds a video device to the video box.
-- [RemoveDevice](iouservideobox/removedevice.md)
+- [RemoveDevice](./removedevice.md)
   Removes a video device from the video box.
-- [IOUserVideoDevice](iouservideodevice.md)
+- [IOUserVideoDevice](../iouservideodevice.md)
   A video device.
-- [AddClockDevice](iouservideobox/addclockdevice.md)
+- [AddClockDevice](./addclockdevice.md)
   Adds a clock device video box.
-- [IOUserVideoClockDevice](iouservideoclockdevice.md)
+- [IOUserVideoClockDevice](../iouservideoclockdevice.md)
   A clock device.
 
 

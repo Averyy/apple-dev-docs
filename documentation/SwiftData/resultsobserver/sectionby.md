@@ -1,7 +1,8 @@
 # sectionBy
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key path on the element used to determine section grouping.
 
@@ -26,16 +27,17 @@ Returns `nil` if no section grouping was configured at initialization.
 
 ## See Also
 
-- [var fetchDescriptor: FetchDescriptor<Element>](resultsobserver/fetchdescriptor.md)
+### Accessing observer properties
+- [var fetchDescriptor: FetchDescriptor<Element>](./fetchdescriptor.md)
   The fetch descriptor used to query the model context.
-- [var filterBy: Predicate<Element>?](resultsobserver/filterby.md)
+- [var filterBy: Predicate<Element>?](./filterby.md)
   The predicate used to filter which models are included in the results.
-- [let modelContext: ModelContext](resultsobserver/modelcontext.md)
+- [let modelContext: ModelContext](./modelcontext.md)
   The model context from which models are fetched.
-- [var sortBy: [SortDescriptor<Element>]](resultsobserver/sortby.md)
+- [var sortBy: [SortDescriptor<Element>]](./sortby.md)
   The sort descriptors used to order the results.
-- [var sections: SectionedResults<Element, SectionTitle>?](resultsobserver/sections.md)
-  The sections computed from the current results, grouped by [`sectionBy`](resultsobserver/sectionby.md).
+- [var sections: SectionedResults<Element, SectionTitle>?](./sections.md)
+  The sections computed from the current results, grouped by [`sectionBy`](./sectionby.md).
 
 
 ---

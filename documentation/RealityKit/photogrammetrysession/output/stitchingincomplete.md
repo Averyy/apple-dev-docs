@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Output.stitchingIncomplete
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session reconstruction could not fully stitch all images of the object.
 

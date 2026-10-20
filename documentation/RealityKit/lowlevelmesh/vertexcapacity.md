@@ -1,7 +1,8 @@
 # vertexCapacity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The capacity of the vertex buffer, measured in vertices.
 
@@ -22,15 +23,16 @@ var vertexCapacity: Int { get }
 
 #### Discussion
 
-This value is equivalent to [`vertexCapacity`](lowlevelmesh/descriptor-swift.struct/vertexcapacity.md).
+This value is equivalent to [`vertexCapacity`](./descriptor-swift.struct/vertexcapacity.md).
 
 ## See Also
 
-- [let descriptor: LowLevelMesh.Descriptor](lowlevelmesh/descriptor-swift.property.md)
+### Describing a low-level mesh
+- [let descriptor: LowLevelMesh.Descriptor](./descriptor-swift.property.md)
   The definition of the structure of this low-level mesh.
-- [var parts: LowLevelMesh.PartsCollection](lowlevelmesh/parts.md)
+- [var parts: LowLevelMesh.PartsCollection](./parts.md)
   A mutable collection of parts.
-- [var indexCapacity: Int](lowlevelmesh/indexcapacity.md)
+- [var indexCapacity: Int](./indexcapacity.md)
   The capacity of the index buffer, measured in indices.
 
 

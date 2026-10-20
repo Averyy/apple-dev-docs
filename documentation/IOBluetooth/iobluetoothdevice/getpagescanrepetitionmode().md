@@ -1,17 +1,22 @@
 # getPageScanRepetitionMode()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Get the value of the page scan repetition mode for the device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getPageScanRepetitionMode() -> BluetoothPageScanRepetitionMode
+```
+
+```objc
+- (BluetoothPageScanRepetitionMode) getPageScanRepetitionMode;
 ```
 
 #### Return Value

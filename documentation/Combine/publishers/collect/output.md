@@ -1,7 +1,8 @@
 # Publishers.Collect.Output
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of values published by this publisher.
 
@@ -26,7 +27,8 @@ This publisher publishes arrays of its upstream publisher’s output type.
 
 ## See Also
 
-- [Publishers.Collect.Failure](publishers/collect/failure.md)
+### Declaring supporting types
+- [Publishers.Collect.Failure](./failure.md)
   The kind of errors this publisher might publish.
 
 

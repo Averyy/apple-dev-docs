@@ -1,7 +1,8 @@
 # init
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes a video box.
 
@@ -10,7 +11,7 @@ Initializes a video box.
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init(IOUserVideoDriver *in_driver, bool in_is_acquirable, OSString *in_box_uid);
 ```
 
@@ -30,9 +31,10 @@ Always pass in the `IOUserVideoDriver` and arguments; calling `init()` always re
 
 ## See Also
 
-- [Create](iouservideobox/create.md)
+### Creating a video box
+- [Create](./create.md)
   Static factory method to allocate and initialize a user video box.
-- [IOUserVideoDriver](iouservideodriver.md)
+- [IOUserVideoDriver](../iouservideodriver.md)
   A video driver.
 
 

@@ -1,7 +1,8 @@
 # bandwidth
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bandwidth of the equalizer filter, in octaves.
 
@@ -20,21 +21,26 @@ The bandwidth of the equalizer filter, in octaves.
 var bandwidth: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float bandwidth;
+```
+
 #### Discussion
 
 The value range of values is `0.05` to `5.0` octaves.
 
 ## See Also
 
-- [var bypass: Bool](avaudiouniteqfilterparameters/bypass.md)
+### Configuring a filter band
+- [var bypass: Bool](./bypass.md)
   The bypass state of the equalizer filter band.
-- [var filterType: AVAudioUnitEQFilterType](avaudiouniteqfilterparameters/filtertype.md)
+- [var filterType: AVAudioUnitEQFilterType](./filtertype.md)
   The equalizer filter type.
-- [enum AVAudioUnitEQFilterType](avaudiouniteqfiltertype.md)
+- [enum AVAudioUnitEQFilterType](../avaudiouniteqfiltertype.md)
   Filter types available to use with the filter type property.
-- [var frequency: Float](avaudiouniteqfilterparameters/frequency.md)
+- [var frequency: Float](./frequency.md)
   The frequency of the equalizer filter, in hertz.
-- [var gain: Float](avaudiouniteqfilterparameters/gain.md)
+- [var gain: Float](./gain.md)
   The gain of the equalizer filter, in decibels.
 
 

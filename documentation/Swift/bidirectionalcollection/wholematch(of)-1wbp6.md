@@ -1,7 +1,8 @@
 # wholeMatch(of:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Matches a regex in its entirety, where the regex is created by the given closure.
 
@@ -19,6 +20,8 @@ Matches a regex in its entirety, where the regex is created by the given closure
 ```swift
 func wholeMatch<Output>(@RegexComponentBuilder of content: () -> some RegexComponent) -> Regex<Output>.Match?
 ```
+
+Available when `SubSequence` is `Substring`.
 
 #### Return Value
 

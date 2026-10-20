@@ -1,7 +1,8 @@
 # write(toFile:metadata:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports the hand pose classifier as a Core ML model file.
 
@@ -25,7 +26,8 @@ func write(toFile path: String, metadata: MLModelMetadata? = nil) throws
 
 ## See Also
 
-- [func write(to: URL, metadata: MLModelMetadata?) throws](mlhandposeclassifier/write(to:metadata:).md)
+### Saving a hand pose classifier
+- [func write(to: URL, metadata: MLModelMetadata?) throws](./write%28to,metadata%29.md)
   Exports the hand pose classifier as a CoreML model file.
 
 

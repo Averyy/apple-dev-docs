@@ -1,7 +1,8 @@
 # invalidArgument
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 At least one of the arguments passed in is not valid. Either out of range or the wrong type.
 

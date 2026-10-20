@@ -1,7 +1,8 @@
 # uti
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The item’s uniform type identifier (UTI) string.
 
@@ -18,17 +19,22 @@ The item’s uniform type identifier (UTI) string.
 var uti: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * UTI;
+```
+
 #### Discussion
 
 The `UTI` options are `kUTTypeFolder`, `kUTTypeImage`, `kUTTypeMovie`, `kUTTypeAudio`, or `kUTTypeData`.
 
 ## See Also
 
-- [var name: String?](iccameraitem/name.md)
+### Inspecting an Item’s Name and Type
+- [var name: String?](./name.md)
   The item’s name.
-- [var ptpObjectHandle: UInt32](iccameraitem/ptpobjecthandle.md)
+- [var ptpObjectHandle: UInt32](./ptpobjecthandle.md)
   The item’s `PTP` object handle value, if the camera uses the `PTP` protocol.
-- [var isRaw: Bool](iccameraitem/israw.md)
+- [var isRaw: Bool](./israw.md)
   A Boolean value indicating whether the item is a raw image file.
 
 

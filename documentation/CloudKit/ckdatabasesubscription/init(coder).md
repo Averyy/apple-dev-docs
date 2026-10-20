@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a database subscription from a serialized instance.
 
@@ -20,15 +21,20 @@ Creates a database subscription from a serialized instance.
 init(coder aDecoder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) aDecoder;
+```
+
 ## Parameters
 
 - `aDecoder`: The object that decodes the serialized database subscription.
 
 ## See Also
 
-- [convenience init()](ckdatabasesubscription/init.md)
+### Creating a Database Subscription
+- [convenience init()](./init%28%29.md)
   Creates an empty database subscription.
-- [convenience init(subscriptionID: CKSubscription.ID)](ckdatabasesubscription/init(subscriptionid:).md)
+- [convenience init(subscriptionID: CKSubscription.ID)](./init%28subscriptionid%29.md)
   Creates a named subscription for all records in a database.
 
 

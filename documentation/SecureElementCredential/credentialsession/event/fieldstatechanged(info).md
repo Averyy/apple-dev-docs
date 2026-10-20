@@ -1,7 +1,8 @@
 # CredentialSession.Event.fieldStateChanged(info:)
 
 **Framework**: SecureElementCredential  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The state of the NFC RF field changed during card emulation.
 
@@ -19,11 +20,12 @@ case fieldStateChanged(info: CredentialSession.NFCFieldInformation)
 
 The credential session sends an initial event with the current field state when entering the card emulation state. The session then sends further events if the field state changes. The session only publishes this event when it’s in the card emulation state.
 
-You can only receive this event if you have acquired the [`CredentialSession.PresentmentIntentAssertion`](credentialsession/presentmentintentassertion.md).
+You can only receive this event if you have acquired the [`CredentialSession.PresentmentIntentAssertion`](../presentmentintentassertion.md).
 
 ## See Also
 
-- [CredentialSession.NFCFieldInformation](credentialsession/nfcfieldinformation.md)
+### NFC field events
+- [CredentialSession.NFCFieldInformation](../nfcfieldinformation.md)
   The state of an NFC RF field.
 
 

@@ -1,17 +1,18 @@
 # SCNetworkConnection
 
 **Framework**: System Configuration  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The handle to manage a connection-oriented service.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,17 +20,22 @@ The handle to manage a connection-oriented service.
 class SCNetworkConnection
 ```
 
+```c
+typedef const struct __SCNetworkConnection * SCNetworkConnectionRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [typealias SCNetworkConnectionCallBack](scnetworkconnectioncallback.md)
+### Data Types
+- [typealias SCNetworkConnectionCallBack](./scnetworkconnectioncallback.md)
   The type of callback function used when a status event is delivered.
-- [struct SCNetworkConnectionContext](scnetworkconnectioncontext.md)
+- [struct SCNetworkConnectionContext](./scnetworkconnectioncontext.md)
   A structure containing user-specified data and callbacks for a network connection.
 
 

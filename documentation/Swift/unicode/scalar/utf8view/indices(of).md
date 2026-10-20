@@ -1,7 +1,8 @@
 # indices(of:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the indices of all the elements that are equal to the given element.
 
@@ -20,6 +21,8 @@ Returns the indices of all the elements that are equal to the given element.
 func indices(of element: Self.Element) -> RangeSet<Self.Index>
 ```
 
+Available when `Element` conforms to `Equatable`.
+
 #### Return Value
 
 A set of the indices of the elements that are equal to `element`.
@@ -34,7 +37,7 @@ let allTheEs = str.indices(of: "e")
 // str[allTheEs].count == 7
 ```
 
-> **Note**: O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 

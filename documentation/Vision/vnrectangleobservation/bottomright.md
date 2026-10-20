@@ -1,7 +1,8 @@
 # bottomRight
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The coordinates of the lower-right corner of the observation bounding box.
 
@@ -19,13 +20,18 @@ The coordinates of the lower-right corner of the observation bounding box.
 var bottomRight: CGPoint { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) CGPoint bottomRight;
+```
+
 ## See Also
 
-- [var bottomLeft: CGPoint](vnrectangleobservation/bottomleft.md)
+### Accessing the Coordinates
+- [var bottomLeft: CGPoint](./bottomleft.md)
   The coordinates of the lower-left corner of the observation bounding box.
-- [var topLeft: CGPoint](vnrectangleobservation/topleft.md)
+- [var topLeft: CGPoint](./topleft.md)
   The coordinates of the upper-left corner of the observation bounding box.
-- [var topRight: CGPoint](vnrectangleobservation/topright.md)
+- [var topRight: CGPoint](./topright.md)
   The coordinates of the upper-right corner of the observation bounding box.
 
 

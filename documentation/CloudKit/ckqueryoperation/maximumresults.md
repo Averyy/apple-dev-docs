@@ -1,7 +1,8 @@
 # maximumResults
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant value that represents the maximum number of results CloudKit retrieves.
 
@@ -10,7 +11,7 @@ A constant value that represents the maximum number of results CloudKit retrieve
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,25 +21,30 @@ A constant value that represents the maximum number of results CloudKit retrieve
 class let maximumResults: Int
 ```
 
+```c
+extern const NSUInteger CKQueryOperationMaximumResults;
+```
+
 #### Discussion
 
 The value of this constant doesn’t correspond to the actual number of records. CloudKit dynamically determines the actual number according to various conditions at runtime.
 
-This constant is the [`resultsLimit`](ckqueryoperation/resultslimit.md) property’s default value.
+This constant is the [`resultsLimit`](./resultslimit.md) property’s default value.
 
 ## See Also
 
-- [var query: CKQuery?](ckqueryoperation/query.md)
+### Configuring the Query Operation
+- [var query: CKQuery?](./query.md)
   The query for the search.
-- [var cursor: CKQueryOperation.Cursor?](ckqueryoperation/cursor-swift.property.md)
+- [var cursor: CKQueryOperation.Cursor?](./cursor-swift.property.md)
   The cursor for continuing the search.
-- [CKQueryOperation.Cursor](ckqueryoperation/cursor-swift.class.md)
+- [CKQueryOperation.Cursor](./cursor-swift.class.md)
   An object that marks the stopping point for a query and the starting point for retrieving the remaining results.
-- [var zoneID: CKRecordZone.ID?](ckqueryoperation/zoneid.md)
+- [var zoneID: CKRecordZone.ID?](./zoneid.md)
   The ID of the record zone that contains the records to search.
-- [var resultsLimit: Int](ckqueryoperation/resultslimit.md)
+- [var resultsLimit: Int](./resultslimit.md)
   The maximum number of records to return at one time.
-- [var desiredKeys: [CKRecord.FieldKey]?](ckqueryoperation/desiredkeys-7qrse.md)
+- [var desiredKeys: [CKRecord.FieldKey]?](./desiredkeys-7qrse.md)
   The fields of the records to fetch.
 
 

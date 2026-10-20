@@ -1,14 +1,15 @@
 # issuerKeyIdentifiers
 
 **Framework**: IdentityDocumentServices  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of X.509 authority key identifiers corresponding to the issuer certificates accepted by the relying party.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 27.0+
 
 ## Declaration

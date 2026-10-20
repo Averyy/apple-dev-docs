@@ -1,7 +1,8 @@
 # tint
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
@@ -14,9 +15,10 @@ var tint: NSColor { get set }
 
 ## See Also
 
-- [var texture: CustomMaterial.Texture?](custommaterial/basecolor-swift.struct/texture.md)
+### Accessing base color data
+- [var texture: CustomMaterial.Texture?](./texture.md)
   The base color as a UV-mapped image.
-- [var tint: UIColor](custommaterial/basecolor-swift.struct/tint-4xg2a.md)
+- [var tint: UIColor](./tint-4xg2a.md)
 
 
 ---

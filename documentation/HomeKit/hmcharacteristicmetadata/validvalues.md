@@ -1,7 +1,8 @@
 # validValues
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subset of valid values supported by the characteristic when the format is of type unsigned integer.
 
@@ -19,15 +20,20 @@ The subset of valid values supported by the characteristic when the format is of
 var validValues: [NSNumber]? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSArray<NSNumber *> * validValues;
+```
+
 ## See Also
 
-- [var minimumValue: NSNumber?](hmcharacteristicmetadata/minimumvalue.md)
+### Bounding the value
+- [var minimumValue: NSNumber?](./minimumvalue.md)
   The minimum value for the characteristic.
-- [var maximumValue: NSNumber?](hmcharacteristicmetadata/maximumvalue.md)
+- [var maximumValue: NSNumber?](./maximumvalue.md)
   The maximum value for the characteristic.
-- [var stepValue: NSNumber?](hmcharacteristicmetadata/stepvalue.md)
+- [var stepValue: NSNumber?](./stepvalue.md)
   The minimum interval between values for the characteristic.
-- [var maxLength: NSNumber?](hmcharacteristicmetadata/maxlength.md)
+- [var maxLength: NSNumber?](./maxlength.md)
   The maximum number of UTF-8 characters allowed in a characteristic that uses a string format.
 
 

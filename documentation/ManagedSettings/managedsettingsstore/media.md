@@ -1,7 +1,8 @@
 # media
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Settings that affect media.
 
@@ -18,23 +19,24 @@ var media: MediaSettings
 
 ## See Also
 
-- [var appStore: AppStoreSettings](managedsettingsstore/appstore.md)
+### Filtering media content
+- [var appStore: AppStoreSettings](./appstore.md)
   Settings that affect the App Store.
-- [struct AppStoreSettings](appstoresettings.md)
+- [struct AppStoreSettings](../appstoresettings.md)
   Constraints on a user’s App Store settings.
-- [var application: ApplicationSettings](managedsettingsstore/application.md)
+- [var application: ApplicationSettings](./application.md)
   Settings that affect applications.
-- [struct ApplicationSettings](applicationsettings.md)
+- [struct ApplicationSettings](../applicationsettings.md)
   Constraints on the apps and categories of apps a user can run on their device.
-- [var effectiveMaximumMovieRating: Int](managedsettingsstore/effectivemaximummovierating.md)
+- [var effectiveMaximumMovieRating: Int](./effectivemaximummovierating.md)
   The movie rating constraint that is active on this device.
-- [var effectiveMaximumTVShowRating: Int](managedsettingsstore/effectivemaximumtvshowrating.md)
+- [var effectiveMaximumTVShowRating: Int](./effectivemaximumtvshowrating.md)
   The TV rating constraint that is active on this device.
-- [var gameCenter: GameCenterSettings](managedsettingsstore/gamecenter.md)
+- [var gameCenter: GameCenterSettings](./gamecenter.md)
   Settings that affect Game Center.
-- [struct GameCenterSettings](gamecentersettings.md)
+- [struct GameCenterSettings](../gamecentersettings.md)
   Constraints on the user’s Game Center settings.
-- [struct MediaSettings](mediasettings.md)
+- [struct MediaSettings](../mediasettings.md)
   Constraints on the media content the user can access.
 
 

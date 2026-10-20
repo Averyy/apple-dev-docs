@@ -1,7 +1,8 @@
 # List Automatically Generated Prices for an App
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 List the automatically calculated prices for an app generated from a base territory.
 
@@ -14,7 +15,7 @@ List the automatically calculated prices for an app generated from a base territ
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/appPriceSchedules/6447402192/automaticPrices
 ```
 
@@ -592,30 +593,56 @@ https://api.appstoreconnect.apple.com/v1/appPriceSchedules/6447402192/automaticP
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List apps`](./get-v1-apps.md) response.
+
+### Query Parameters
+
 - `fields[appPricePoints]` ([string]): Additional fields to include for each app price point resource returned by the response.
+
+  **Allowed Values**: `customerPrice`, `proceeds`, `app`, `equalizations`, `territory`
 - `fields[appPrices]` ([string]): Additional fields to include for each app price resource returned by the response.
+
+  **Allowed Values**: `manual`, `startDate`, `endDate`, `appPricePoint`, `territory`
 - `fields[territories]` ([string]): Additional fields to include for each territory resource returned by the response.
+
+  **Allowed Values**: `currency`
 - `filter[endDate]` ([string]): Filter the returned app prices by end date.
 - `filter[startDate]` ([string]): Filter the returned app prices by start date.
 - `filter[territory]` ([string]): Filter the returned app prices by territory.
 - `include` ([string]): The relationship data to include in the response.
+
+  **Allowed Values**: `appPricePoint`, `territory`
 - `limit` (integer): The maximum number of app price resources to return.
+
+  **Maximum**: `200`
+
+## Responses
+
+- `200` OK (`AppPricesV2Response`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Read Price Schedule Information for an App](get-v1-apps-_id_-apppriceschedule.md)
+### Getting and managing an app’s price schedules
+- [Read Price Schedule Information for an App](./get-v1-apps-_id_-apppriceschedule.md)
   Read price schedule details for a specific app.
-- [Get the app price schedule ID for an app](get-v1-apps-_id_-relationships-apppriceschedule.md)
-- [Read an App's Price Schedule Information](get-v1-apppriceschedules-_id_.md)
+- [Get the app price schedule ID for an app](./get-v1-apps-_id_-relationships-apppriceschedule.md)
+- [Read an App's Price Schedule Information](./get-v1-apppriceschedules-_id_.md)
   List the price schedule details for a specific app.
-- [Read the Base Territory for an App's Price Schedule](get-v1-apppriceschedules-_id_-baseterritory.md)
+- [Read the Base Territory for an App's Price Schedule](./get-v1-apppriceschedules-_id_-baseterritory.md)
   Read the base territory and currency for a specific app.
-- [List Manually Chosen Prices for an App](get-v1-apppriceschedules-_id_-manualprices.md)
+- [List Manually Chosen Prices for an App](./get-v1-apppriceschedules-_id_-manualprices.md)
   List the prices you chose for a specific app.
-- [List automatic price IDs for an app price schedule](get-v1-apppriceschedules-_id_-relationships-automaticprices.md)
-- [Get the base territory ID for an app price schedule](get-v1-apppriceschedules-_id_-relationships-baseterritory.md)
-- [List manual price IDs for an app price schedule](get-v1-apppriceschedules-_id_-relationships-manualprices.md)
-- [Add a Scheduled Price Change to an App](post-v1-apppriceschedules.md)
+- [List automatic price IDs for an app price schedule](./get-v1-apppriceschedules-_id_-relationships-automaticprices.md)
+- [Get the base territory ID for an app price schedule](./get-v1-apppriceschedules-_id_-relationships-baseterritory.md)
+- [List manual price IDs for an app price schedule](./get-v1-apppriceschedules-_id_-relationships-manualprices.md)
+- [Add a Scheduled Price Change to an App](./post-v1-apppriceschedules.md)
   Create a scheduled price change for an app.
 
 

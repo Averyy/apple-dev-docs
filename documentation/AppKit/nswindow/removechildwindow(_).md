@@ -1,17 +1,22 @@
 # removeChildWindow(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Detaches a given child window from the window.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func removeChildWindow(_ childWin: NSWindow)
+```
+
+```objc
+- (void) removeChildWindow:(NSWindow *) childWin;
 ```
 
 ## Parameters
@@ -20,11 +25,12 @@ func removeChildWindow(_ childWin: NSWindow)
 
 ## See Also
 
-- [var childWindows: [NSWindow]?](nswindow/childwindows.md)
+### Managing Attached Windows
+- [var childWindows: [NSWindow]?](./childwindows.md)
   An array of the window’s attached child windows.
-- [func addChildWindow(NSWindow, ordered: NSWindow.OrderingMode)](nswindow/addchildwindow(_:ordered:).md)
+- [func addChildWindow(NSWindow, ordered: NSWindow.OrderingMode)](./addchildwindow%28_,ordered%29.md)
   Adds a given window as a child window of the window.
-- [var parent: NSWindow?](nswindow/parent.md)
+- [var parent: NSWindow?](./parent.md)
   The parent window to which the window is attached as a child.
 
 

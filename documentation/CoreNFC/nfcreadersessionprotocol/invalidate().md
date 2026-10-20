@@ -2,6 +2,7 @@
 
 **Framework**: Core NFC  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Closes the reader session, which prevents it from being reused.
@@ -17,19 +18,24 @@ Closes the reader session, which prevents it from being reused.
 func invalidate()
 ```
 
+```objc
+- (void) invalidateSession;
+```
+
 ## See Also
 
-- [func begin()](nfcreadersessionprotocol/begin.md)
+### Managing a Reader Session
+- [func begin()](./begin%28%29.md)
   Starts the reader session.
-- [func invalidate(errorMessage: String)](nfcreadersessionprotocol/invalidate(errormessage:).md)
+- [func invalidate(errorMessage: String)](./invalidate%28errormessage%29.md)
   Closes the reader session and displays an error message to the user.
-- [var alertMessage: String](nfcreadersessionprotocol/alertmessage.md)
+- [var alertMessage: String](./alertmessage.md)
   A custom description that helps users understand how they can use NFC reader mode in your app.
-- [func begin()](nfcreadersessionprotocol/begin.md)
+- [func begin()](./begin%28%29.md)
   Starts the reader session.
-- [func invalidate(errorMessage: String)](nfcreadersessionprotocol/invalidate(errormessage:).md)
+- [func invalidate(errorMessage: String)](./invalidate%28errormessage%29.md)
   Closes the reader session and displays an error message to the user.
-- [var alertMessage: String](nfcreadersessionprotocol/alertmessage.md)
+- [var alertMessage: String](./alertmessage.md)
   A custom description that helps users understand how they can use NFC reader mode in your app.
 
 

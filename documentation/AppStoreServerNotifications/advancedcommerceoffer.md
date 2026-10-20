@@ -1,14 +1,15 @@
 # advancedCommerceOffer
 
 **Framework**: App Store Server Notifications  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Server Notifications 2.14+
 
 ## Declaration
 
-```swift
+```
 object advancedCommerceOffer
 ```
 
@@ -21,13 +22,14 @@ object advancedCommerceOffer
 
 ## See Also
 
-- [object advancedCommerceDescriptors](advancedcommercedescriptors.md)
-- [object advancedCommercePriceIncreaseInfo](advancedcommercepriceincreaseinfo.md)
-- [object advancedCommerceRefund](advancedcommercerefund.md)
-- [object advancedCommerceRenewalInfo](advancedcommercerenewalinfo.md)
-- [object advancedCommerceRenewalItem](advancedcommercerenewalitem.md)
-- [object advancedCommerceTransactionInfo](advancedcommercetransactioninfo.md)
-- [object advancedCommerceTransactionItem](advancedcommercetransactionitem.md)
+### Objects
+- [object advancedCommerceDescriptors](./advancedcommercedescriptors.md)
+- [object advancedCommercePriceIncreaseInfo](./advancedcommercepriceincreaseinfo.md)
+- [object advancedCommerceRefund](./advancedcommercerefund.md)
+- [object advancedCommerceRenewalInfo](./advancedcommercerenewalinfo.md)
+- [object advancedCommerceRenewalItem](./advancedcommercerenewalitem.md)
+- [object advancedCommerceTransactionInfo](./advancedcommercetransactioninfo.md)
+- [object advancedCommerceTransactionItem](./advancedcommercetransactionitem.md)
 
 
 ---

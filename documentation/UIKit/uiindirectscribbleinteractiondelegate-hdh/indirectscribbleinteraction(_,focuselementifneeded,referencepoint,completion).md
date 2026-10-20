@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asks the delegate to focus an element to handle text edits.
@@ -10,7 +11,7 @@ Asks the delegate to focus an element to handle text edits.
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,24 +21,25 @@ func indirectScribbleInteraction(_ interaction: any UIInteraction, focusElementI
 
 #### Return Value
 
-In response to this callback, the implementation should make this element the currently focused one, and make the corresponding [`UITextInput`](uitextinput.md) become first responder.
+In response to this callback, the implementation should make this element the currently focused one, and make the corresponding [`UITextInput`](../uitextinput.md) become first responder.
 
 If the element isn’t focused already, set the text selection to the character location closest to `focusReferencePoint` to avoid any scrolling or shifting of content.
 
-If the element is already focused, make no changes to the selection. Before returning you must still call the completion handler with a reference to [`UITextInput`](uitextinput.md).
+If the element is already focused, make no changes to the selection. Before returning you must still call the completion handler with a reference to [`UITextInput`](../uitextinput.md).
 
 ## Parameters
 
 - `interaction`: The interaction requesting to focus an element.
 - `elementIdentifier`: The identifier of the element that should receive focus.
-- `focusReferencePoint`: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) inside the element’s view.
+- `focusReferencePoint`: A [`CGPoint`](../../CoreFoundation/cgpoint.md) inside the element’s view.
 - `completion`: A completion handler that you must call, either synchronously or asynchronously. On success, the first parameter should be the text input that became first responder and that handles text operations for this element. On failure, call the completion with a `nil` parameter.
 
 ## See Also
 
-- [func indirectScribbleInteraction(any UIInteraction, isElementFocused: Self.ElementIdentifier) -> Bool](uiindirectscribbleinteractiondelegate-hdh/indirectscribbleinteraction(_:iselementfocused:).md)
+### Managing Focus
+- [func indirectScribbleInteraction(any UIInteraction, isElementFocused: Self.ElementIdentifier) -> Bool](./indirectscribbleinteraction%28_,iselementfocused%29.md)
   Asks the delegate if an element is currently focused, according to the internal state of the interaction’s view.
-- [func indirectScribbleInteraction(any UIInteraction, shouldDelayFocusForElement: Self.ElementIdentifier) -> Bool](uiindirectscribbleinteractiondelegate-hdh/indirectscribbleinteraction(_:shoulddelayfocusforelement:).md)
+- [func indirectScribbleInteraction(any UIInteraction, shouldDelayFocusForElement: Self.ElementIdentifier) -> Bool](./indirectscribbleinteraction%28_,shoulddelayfocusforelement%29.md)
   Allow the delegate to delay focusing an element.
 
 

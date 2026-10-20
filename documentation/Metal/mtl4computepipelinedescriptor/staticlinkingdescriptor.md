@@ -1,7 +1,8 @@
 # staticLinkingDescriptor
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that contains information about functions to link to the compute pipeline.
 
@@ -18,6 +19,10 @@ An object that contains information about functions to link to the compute pipel
 ```swift
 @NSCopying
 var staticLinkingDescriptor: MTL4StaticLinkingDescriptor? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) MTL4StaticLinkingDescriptor * staticLinkingDescriptor;
 ```
 
 

@@ -1,7 +1,8 @@
 # MigrationStage.custom(fromVersion:toVersion:willMigrate:didMigrate:)
 
 **Framework**: SwiftData  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.0+
@@ -22,7 +23,8 @@ case custom(fromVersion: any VersionedSchema.Type, toVersion: any VersionedSchem
 
 ## See Also
 
-- [case lightweight(fromVersion: any VersionedSchema.Type, toVersion: any VersionedSchema.Type)](migrationstage/lightweight(fromversion:toversion:).md)
+### Migration stages
+- [case lightweight(fromVersion: any VersionedSchema.Type, toVersion: any VersionedSchema.Type)](./lightweight%28fromversion,toversion%29.md)
 
 
 ---

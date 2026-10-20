@@ -6,17 +6,17 @@ Call endpoints using CRUD methods.
 
 #### Overview
 
-> **Note**: The Apple Ads Campaign Management API is deprecated and will be sunset on January 26, 2027. Use the [`Apple Ads Platform API`](https://developer.apple.comhttps://developer.apple.com/documentation/apple-ads-platform-api) instead.
+> **Deprecated**: The Apple Ads Campaign Management API is deprecated and will be sunset on January 26, 2027. Use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md) instead.
 
 The Apple Ads API uses a REST data model, and you use CRUD (create, read, update, delete) functions to call endpoint resources.
 
-![Apple Ads API call structure. This image is an example of an API call, including the domain, path, and resource. In some cases, the call may also incliude a query parameter.](/images/com.apple.appleads/media-3697454@2x.png)
+![Apple Ads API call structure. This image is an example of an API call, including the domain, path, and resource. In some cases, the call may also incliude a query parameter.](https://developer.apple.com/tutorials/images/com.apple.appleads/media-3697454@2x.png)
 
 CRUD methods in the Apple Ads API include the following:
 
 - **POST**: Creates new resources, finds resources, and pulls reports.
 
-The API supports the use of selectors with `find` calls to filter resource data. See the [`Selector`](selector.md) object.
+The API supports the use of selectors with `find` calls to filter resource data. See the [`Selector`](./selector.md) object.
 
 - **GET**: Reads a specific resource. Some calls use an identifier and accept `limit` and `offset` query parameters to obtain a collection of resources.
 
@@ -29,7 +29,7 @@ See the Use a Partial Fetch section below for query parameter functionality.
 
 The API uses JSON to represent the request and response payloads. Create payloads in JSON using fields, properties, and values that the API provides. Take note of the required fields.
 
-The following is an example POST request to [`Create a Campaign`](create-a-campaign.md):
+The following is an example POST request to [`Create a Campaign`](./create-a-campaign.md):
 
 ```json
 {
@@ -88,9 +88,9 @@ A response resembles the following:
 }
 ```
 
-You use the `id` that returns in the response in an endpoint URI to target a resource. In the example above,  the `id` serves as a `campaignId` throughout the API whenever making calls to that specific campaign resource. The same logic applies when you use the [`Create an Ad Group`](create-an-ad-group.md). The returned `id` serves as an ad group identifier (`adgroupId`) in applicable endpoints.
+You use the `id` that returns in the response in an endpoint URI to target a resource. In the example above,  the `id` serves as a `campaignId` throughout the API whenever making calls to that specific campaign resource. The same logic applies when you use the [`Create an Ad Group`](./create-an-ad-group.md). The returned `id` serves as an ad group identifier (`adgroupId`) in applicable endpoints.
 
-In other examples, when you use the [`Create Targeting Keywords`](create-targeting-keywords.md) and [`Create Ad Group Negative Keywords`](create-ad-group-negative-keywords.md) endpoints, the `id` dervies from the `campaignId` and `adgroupId` in the URI. When you use [`Create Campaign Negative Keywords`](create-campaign-negative-keywords.md), the `id` derives from the `campaignId` resource.
+In other examples, when you use the [`Create Targeting Keywords`](./create-targeting-keywords.md) and [`Create Ad Group Negative Keywords`](./create-ad-group-negative-keywords.md) endpoints, the `id` dervies from the `campaignId` and `adgroupId` in the URI. When you use [`Create Campaign Negative Keywords`](./create-campaign-negative-keywords.md), the `id` derives from the `campaignId` resource.
 
 ##### Use Partial Updates
 
@@ -116,7 +116,7 @@ PUT https://api.searchads.apple.com/api/v5/campaigns/<campaignId>
 
 ##### Use a Partial Fetch
 
-A partial fetch indicates which properties to return in a response when fetching data. Use a partial fetch where a [`Selector`](selector.md) is available by using optional field parameters to limit the fields within each record that returns. Use a partial fetch with some GET endpoints by specifying the `field` query string parameter. For example, you can choose to only return the `id` for each campaign, as the following example shows:
+A partial fetch indicates which properties to return in a response when fetching data. Use a partial fetch where a [`Selector`](./selector.md) is available by using optional field parameters to limit the fields within each record that returns. Use a partial fetch with some GET endpoints by specifying the `field` query string parameter. For example, you can choose to only return the `id` for each campaign, as the following example shows:
 
 ```javascript
 GET https://api.searchads.apple.com/api/v5/campaigns?fields=id,name,countriesOrRegions
@@ -161,9 +161,9 @@ GET https://api.searchads.apple.com/api/v5/campaigns?fields=id,name,countriesOrR
 
 ##### Use Query Parameters
 
-You use query parameters with the [`Search for iOS apps`](search-for-ios-apps.md), [`Search for Geolocations`](search-for-geolocations.md), and `Get a List of Geolocations` endpoints by appending the query parameter to the URI in method calls.
+You use query parameters with the [`Search for iOS apps`](./search-for-ios-apps.md), [`Search for Geolocations`](./search-for-geolocations.md), and `Get a List of Geolocations` endpoints by appending the query parameter to the URI in method calls.
 
-`GET` calls use query parameters to control [`Pagination`](pagination.md) and to assign a limit to returned responses. You can combine these query parameters with data to fetch, such as in the following example:
+`GET` calls use query parameters to control [`Pagination`](./pagination.md) and to assign a limit to returned responses. You can combine these query parameters with data to fetch, such as in the following example:
 
 ```console
 GET https://api.searchads.apple.com/api/v5/search/geo?entity=Locality&limit=1000
@@ -172,14 +172,15 @@ GET https://api.searchads.apple.com/api/v5/search/geo?entity=Locality&limit=1000
 ## Topics
 
 ### Responses
-- [Usability and Errors](usability-and-errors.md)
+- [Usability and Errors](./usability-and-errors.md)
   Additional objects to use for reference.
 
 ## See Also
 
-- [Implementing OAuth for the Apple Ads API](implementing-oauth-for-the-apple-search-ads-api.md)
+### Essentials
+- [Implementing OAuth for the Apple Ads API](./implementing-oauth-for-the-apple-search-ads-api.md)
   Manage secure access to Ads accounts.
-- [Calling the Apple Ads API](calling-the-apple-search-ads-api.md)
+- [Calling the Apple Ads API](./calling-the-apple-search-ads-api.md)
   Pass your access token in the authorization header of HTTP requests.
 
 

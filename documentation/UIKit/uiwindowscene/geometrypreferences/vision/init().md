@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a geometry preference with no changes. Update the properties who’s preference should change
 
@@ -12,6 +13,10 @@ Creates a geometry preference with no changes. Update the properties who’s pre
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

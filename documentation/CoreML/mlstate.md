@@ -1,7 +1,8 @@
 # MLState
 
 **Framework**: Core ML  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Handle to the state buffers.
 
@@ -18,6 +19,10 @@ Handle to the state buffers.
 
 ```swift
 class MLState
+```
+
+```objc
+@interface MLState : NSObject
 ```
 
 #### Overview
@@ -50,26 +55,27 @@ Each stateful prediction that uses the same `MLState` must be serialized. Otherw
 ## Topics
 
 ### Getting a state buffer
-- [func withMultiArray<R>(for: String, (MLMultiArray) throws -> R) rethrows -> R](mlstate/withmultiarray(for:_:).md)
-- [func withMultiArray<R>((MLMultiArray) -> R) throws -> R](mlstate/withmultiarray(_:).md)
+- [func withMultiArray<R>(for: String, (MLMultiArray) throws -> R) rethrows -> R](./mlstate/withmultiarray%28for,_%29.md)
+- [func withMultiArray<R>((MLMultiArray) -> R) throws -> R](./mlstate/withmultiarray%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class MLStateConstraint](mlstateconstraint.md)
+### Model state
+- [class MLStateConstraint](./mlstateconstraint.md)
   Constraint of a state feature value.
 
 

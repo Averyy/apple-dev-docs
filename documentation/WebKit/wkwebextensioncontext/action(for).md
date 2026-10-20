@@ -1,7 +1,8 @@
 # action(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the extension action for a given tab, or the default action if `nil` is passed.
 
@@ -18,6 +19,10 @@ Retrieves the extension action for a given tab, or the default action if `nil` i
 func action(for tab: (any WKWebExtensionTab)?) -> WKWebExtension.Action?
 ```
 
+```objc
+- (WKWebExtensionAction *) actionForTab:(id<WKWebExtensionTab>) tab;
+```
+
 #### Discussion
 
 The returned object represents the action specific to the tab when provided; otherwise, it returns the default action. The default action is useful when the context is unrelated to a specific tab. When possible, specify the tab to get the most context-relevant action.
@@ -28,7 +33,8 @@ The returned object represents the action specific to the tab when provided; oth
 
 ## See Also
 
-- [func performAction(for: (any WKWebExtensionTab)?)](wkwebextensioncontext/performaction(for:).md)
+### Related Documentation
+- [func performAction(for: (any WKWebExtensionTab)?)](./performaction%28for%29.md)
   Performs the extension action associated with the specified tab or performs the default action if `nil` is passed.
 
 

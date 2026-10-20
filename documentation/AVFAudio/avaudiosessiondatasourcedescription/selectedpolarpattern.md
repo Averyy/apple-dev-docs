@@ -1,7 +1,8 @@
 # selectedPolarPattern
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data source’s active polar pattern.
 
@@ -18,19 +19,24 @@ The data source’s active polar pattern.
 var selectedPolarPattern: AVAudioSession.PolarPattern? { get }
 ```
 
+```objc
+@property (readonly, nullable) AVAudioSessionPolarPattern selectedPolarPattern;
+```
+
 #### Discussion
 
-If this value is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0), the data source doesn’t support directivity configuration.
+If this value is [`nil`](../../ObjectiveC/nil-227m0.md), the data source doesn’t support directivity configuration.
 
 ## See Also
 
-- [var supportedPolarPatterns: [AVAudioSession.PolarPattern]?](avaudiosessiondatasourcedescription/supportedpolarpatterns.md)
+### Configuring microphone directivity
+- [var supportedPolarPatterns: [AVAudioSession.PolarPattern]?](./supportedpolarpatterns.md)
   The set of directivity configurations supported by the data source.
-- [var preferredPolarPattern: AVAudioSession.PolarPattern?](avaudiosessiondatasourcedescription/preferredpolarpattern.md)
+- [var preferredPolarPattern: AVAudioSession.PolarPattern?](./preferredpolarpattern.md)
   The preferred directivity configuration for the data source.
-- [func setPreferredPolarPattern(AVAudioSession.PolarPattern?) throws](avaudiosessiondatasourcedescription/setpreferredpolarpattern(_:).md)
+- [func setPreferredPolarPattern(AVAudioSession.PolarPattern?) throws](./setpreferredpolarpattern%28_%29.md)
   Selects the preferred directivity configuration for the data source.
-- [AVAudioSession.PolarPattern](avaudiosession/polarpattern.md)
+- [AVAudioSession.PolarPattern](../avaudiosession/polarpattern.md)
   Constants that describe the possible polar patterns of the data source on an iOS device.
 
 

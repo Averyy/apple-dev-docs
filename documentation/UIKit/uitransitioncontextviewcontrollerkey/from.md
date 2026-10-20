@@ -1,7 +1,8 @@
 # from
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key that identifies the view controller that’s visible at the beginning of the transition, or at the end of a canceled transition.
 
@@ -9,7 +10,7 @@ A key that identifies the view controller that’s visible at the beginning of t
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ A key that identifies the view controller that’s visible at the beginning of t
 static let from: UITransitionContextViewControllerKey
 ```
 
+```c
+extern UITransitionContextViewControllerKey const UITransitionContextFromViewControllerKey;
+```
+
 #### Discussion
 
 This view controller is typically the one presenting the “to” view controller or is the one being replaced by the “to” view controller.
 
 ## See Also
 
-- [static let to: UITransitionContextViewControllerKey](uitransitioncontextviewcontrollerkey/to.md)
+### Keys
+- [static let to: UITransitionContextViewControllerKey](./to.md)
   A key that identifies the view controller that’s visible at the end of a completed transition.
 
 

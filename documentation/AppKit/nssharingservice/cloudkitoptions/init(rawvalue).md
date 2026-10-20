@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a set of CloudKit options using the specified raw value.
 

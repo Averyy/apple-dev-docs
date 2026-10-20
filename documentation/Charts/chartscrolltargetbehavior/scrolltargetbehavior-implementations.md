@@ -1,11 +1,12 @@
 # ScrollTargetBehavior Implementations
 
-**Framework**: Swift Charts
+**Framework**: Swift Charts  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func updateTarget(inout ScrollTarget, context: ScrollTargetBehaviorContext)](chartscrolltargetbehavior/updatetarget(_:context:)-8j5z4.md)
+- [func updateTarget(inout ScrollTarget, context: ScrollTargetBehaviorContext)](./updatetarget%28_,context%29-8j5z4.md)
   Updates the proposed target that a scrollable view should scroll to.
 
 

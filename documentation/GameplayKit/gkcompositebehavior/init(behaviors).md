@@ -1,7 +1,8 @@
 # init(behaviors:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a composite behavior from the specified individual behaviors.
 
@@ -19,15 +20,19 @@ Creates a composite behavior from the specified individual behaviors.
 convenience init(behaviors: [GKBehavior])
 ```
 
+```objc
++ (instancetype) behaviorWithBehaviors:(NSArray<GKBehavior *> *) behaviors;
+```
+
 #### Return Value
 
-A new behavior object. To assign a behavior to an agent, use the agent’s [`behavior`](gkagent/behavior.md) property.
+A new behavior object. To assign a behavior to an agent, use the agent’s [`behavior`](../gkagent/behavior.md) property.
 
 #### Discussion
 
-The new behavior contains the specified behaviors, each with a weight of `1.0`. To change an individual behavior’s weight after creating the composite behavior, keep a reference to that behavior and use the [`setWeight(_:for:)`](gkcompositebehavior/setweight(_:for:).md) method.
+The new behavior contains the specified behaviors, each with a weight of `1.0`. To change an individual behavior’s weight after creating the composite behavior, keep a reference to that behavior and use the [`setWeight(_:for:)`](./setweight%28_,for%29.md) method.
 
-For more information, see [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
+For more information, see [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 ## Parameters
 
@@ -35,7 +40,8 @@ For more information, see [`GameplayKit Programming Guide`](https://developer.ap
 
 ## See Also
 
-- [convenience init(behaviors: [GKBehavior], andWeights: [NSNumber])](gkcompositebehavior/init(behaviors:andweights:).md)
+### Creating a Composite Behavior
+- [convenience init(behaviors: [GKBehavior], andWeights: [NSNumber])](./init%28behaviors,andweights%29.md)
   Creates a behavior with the specified behaviors and weights.
 
 

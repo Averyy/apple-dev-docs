@@ -1,17 +1,20 @@
 # MCError.Code.unavailable
 
 **Framework**: Multipeer Connectivity  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Multipeer connectivity is currently unavailable.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS 10.0+
-- visionOS 1.0+
+- iOS 7.0+ - Deprecated in 27.0
+- iPadOS 7.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.10+ - Deprecated in 27.0
+- tvOS 10.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use Network Framework instead
 
 ## Declaration
 
@@ -19,19 +22,24 @@ Multipeer connectivity is currently unavailable.
 case unavailable
 ```
 
+```c
+MCErrorUnavailable
+```
+
 ## See Also
 
-- [MCError.Code.unknown](mcerror/code/unknown.md)
+### Constants
+- [MCError.Code.unknown](./unknown.md)
   An unknown error occurred.
-- [MCError.Code.notConnected](mcerror/code/notconnected.md)
+- [MCError.Code.notConnected](./notconnected.md)
   Your app attempted to send data to a peer that is not connected.
-- [MCError.Code.invalidParameter](mcerror/code/invalidparameter.md)
+- [MCError.Code.invalidParameter](./invalidparameter.md)
   Your app passed an invalid value as a parameter.
-- [MCError.Code.unsupported](mcerror/code/unsupported.md)
-  The operation is unsupported. For example, this error is returned if you call [`sendResource(at:withName:toPeer:withCompletionHandler:)`](mcsession/sendresource(at:withname:topeer:withcompletionhandler:).md) with a URL that is neither a local file nor a web URL.
-- [MCError.Code.timedOut](mcerror/code/timedout.md)
+- [MCError.Code.unsupported](./unsupported.md)
+  The operation is unsupported. For example, this error is returned if you call [`sendResource(at:withName:toPeer:withCompletionHandler:)`](../../mcsession/sendresource%28at,withname,topeer,withcompletionhandler%29.md) with a URL that is neither a local file nor a web URL.
+- [MCError.Code.timedOut](./timedout.md)
   The connection attempt timed out.
-- [MCError.Code.cancelled](mcerror/code/cancelled.md)
+- [MCError.Code.cancelled](./cancelled.md)
   The operation was cancelled by the user.
 
 

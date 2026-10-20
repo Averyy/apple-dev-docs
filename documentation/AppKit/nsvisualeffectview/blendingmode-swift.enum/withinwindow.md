@@ -1,7 +1,8 @@
 # NSVisualEffectView.BlendingMode.withinWindow
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that blends and blurs the visual effect view with contents behind the view in the current window only.
 
@@ -14,13 +15,18 @@ A mode that blends and blurs the visual effect view with contents behind the vie
 case withinWindow
 ```
 
+```c
+NSVisualEffectBlendingModeWithinWindow
+```
+
 #### Discussion
 
 Views using this blending mode must not overlap each other.
 
 ## See Also
 
-- [NSVisualEffectView.BlendingMode.behindWindow](nsvisualeffectview/blendingmode-swift.enum/behindwindow.md)
+### Blend Modes
+- [NSVisualEffectView.BlendingMode.behindWindow](./behindwindow.md)
   A mode that blends and blurs the visual effect view with the contents behind the window, such as the desktop or other windows.
 
 

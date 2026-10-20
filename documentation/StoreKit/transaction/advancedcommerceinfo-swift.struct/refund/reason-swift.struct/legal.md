@@ -1,7 +1,8 @@
 # legal
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The customer requested a refund based on a legal reason.
 
@@ -22,14 +23,15 @@ static let legal: Transaction.AdvancedCommerceInfo.Refund.Reason
 
 ## See Also
 
-- [static let modifyItems: Transaction.AdvancedCommerceInfo.Refund.Reason](transaction/advancedcommerceinfo-swift.struct/refund/reason-swift.struct/modifyitems.md)
-- [static let other: Transaction.AdvancedCommerceInfo.Refund.Reason](transaction/advancedcommerceinfo-swift.struct/refund/reason-swift.struct/other.md)
+### Type Properties
+- [static let modifyItems: Transaction.AdvancedCommerceInfo.Refund.Reason](./modifyitems.md)
+- [static let other: Transaction.AdvancedCommerceInfo.Refund.Reason](./other.md)
   The customer requested a refund for other reasons.
-- [static let unfulfilled: Transaction.AdvancedCommerceInfo.Refund.Reason](transaction/advancedcommerceinfo-swift.struct/refund/reason-swift.struct/unfulfilled.md)
+- [static let unfulfilled: Transaction.AdvancedCommerceInfo.Refund.Reason](./unfulfilled.md)
   The customer had issues with receiving or using the Apple In-App Purchase.
-- [static let unintended: Transaction.AdvancedCommerceInfo.Refund.Reason](transaction/advancedcommerceinfo-swift.struct/refund/reason-swift.struct/unintended.md)
+- [static let unintended: Transaction.AdvancedCommerceInfo.Refund.Reason](./unintended.md)
   The customer didn’t intend to make the Apple In-App Purchase.
-- [static let unsatisfied: Transaction.AdvancedCommerceInfo.Refund.Reason](transaction/advancedcommerceinfo-swift.struct/refund/reason-swift.struct/unsatisfied.md)
+- [static let unsatisfied: Transaction.AdvancedCommerceInfo.Refund.Reason](./unsatisfied.md)
   The customer wasn’t satisfied with the Apple In-App Purchase.
 
 

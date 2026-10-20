@@ -1,7 +1,8 @@
 # indexes
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 indexes will be nil unless the observed KeyPath refers to an ordered to-many property
 

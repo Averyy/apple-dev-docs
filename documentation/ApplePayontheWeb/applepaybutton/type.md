@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The kind of Apple Pay button, such as a button for purchasing a subscription.
 
@@ -11,25 +12,26 @@ The kind of Apple Pay button, such as a button for purchasing a subscription.
 
 ## Declaration
 
-```swift
+```
 attribute ApplePayButtonType type;
 ```
 
 #### Discussion
 
-For a list of button types, see [`ApplePayButtonType`](applepaybuttontype.md).
+For a list of button types, see [`ApplePayButtonType`](../applepaybuttontype.md).
 
 ## See Also
 
-- [buttonstyle](applepaybutton/buttonstyle.md)
+### Configuring appearance
+- [buttonstyle](./buttonstyle.md)
   The appearance of the Apple Pay button, such as a black button with white lettering.
-- [locale](applepaybutton/locale.md)
+- [locale](./locale.md)
   The language and region used for the displayed Apple Pay button.
-- [ApplePayButtonType](applepaybuttontype.md)
+- [ApplePayButtonType](../applepaybuttontype.md)
   A type that indicates the button types that you can display to initiate Apple Pay transactions.
-- [ApplePayButtonStyle](applepaybuttonstyle.md)
+- [ApplePayButtonStyle](../applepaybuttonstyle.md)
   A type that indicates the available appearances for an Apple Pay Button.
-- [ApplePayButtonLocale](applepaybuttonlocale.md)
+- [ApplePayButtonLocale](../applepaybuttonlocale.md)
   A type that indicates the languages and regions that you can specify for the Apple Pay button.
 
 

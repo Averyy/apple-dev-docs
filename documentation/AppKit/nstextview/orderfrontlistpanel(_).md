@@ -1,17 +1,22 @@
 # orderFrontListPanel(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Brings forward a panel allowing the user to manipulate text lists in the text view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func orderFrontListPanel(_ sender: Any?)
+```
+
+```objc
+- (void) orderFrontListPanel:(id) sender;
 ```
 
 ## Parameters
@@ -20,19 +25,20 @@ func orderFrontListPanel(_ sender: Any?)
 
 ## See Also
 
-- [var usesFontPanel: Bool](nstextview/usesfontpanel.md)
+### Working with panels
+- [var usesFontPanel: Bool](./usesfontpanel.md)
   A Boolean value that controls whether the text views sharing the receiver’s layout manager use the Font panel and Font menu.
-- [var usesFindPanel: Bool](nstextview/usesfindpanel.md)
+- [var usesFindPanel: Bool](./usesfindpanel.md)
   A Boolean value that indicates whether the receiver allows for a find panel.
-- [func performFindPanelAction(Any?)](nstextview/performfindpanelaction(_:).md)
+- [func performFindPanelAction(Any?)](./performfindpanelaction%28_%29.md)
   Performs a find panel action specified by the sender’s tag.
-- [func orderFrontLinkPanel(Any?)](nstextview/orderfrontlinkpanel(_:).md)
+- [func orderFrontLinkPanel(Any?)](./orderfrontlinkpanel%28_%29.md)
   Brings forward a panel allowing the user to manipulate links in the text view.
-- [func orderFrontSpacingPanel(Any?)](nstextview/orderfrontspacingpanel(_:).md)
+- [func orderFrontSpacingPanel(Any?)](./orderfrontspacingpanel%28_%29.md)
   Brings forward a panel allowing the user to manipulate text line heights, interline spacing, and paragraph spacing, in the text view.
-- [func orderFrontTablePanel(Any?)](nstextview/orderfronttablepanel(_:).md)
+- [func orderFrontTablePanel(Any?)](./orderfronttablepanel%28_%29.md)
   Brings forward a panel allowing the user to manipulate text tables in the text view.
-- [func orderFrontSubstitutionsPanel(Any?)](nstextview/orderfrontsubstitutionspanel(_:).md)
+- [func orderFrontSubstitutionsPanel(Any?)](./orderfrontsubstitutionspanel%28_%29.md)
   Brings forward a panel allowing the user to specify string substitutions in the text view.
 
 

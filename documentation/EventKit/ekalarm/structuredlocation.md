@@ -1,7 +1,8 @@
 # structuredLocation
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location to trigger an alarm.
 
@@ -20,15 +21,20 @@ The location to trigger an alarm.
 var structuredLocation: EKStructuredLocation? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) EKStructuredLocation * structuredLocation;
+```
+
 #### Discussion
 
-This property is used in conjunction with [`proximity`](ekalarm/proximity.md) to perform geofence-based triggering of reminders.
+This property is used in conjunction with [`proximity`](./proximity.md) to perform geofence-based triggering of reminders.
 
 ## See Also
 
-- [enum EKAlarmProximity](ekalarmproximity.md)
+### Setting GeoFence-based Alarms
+- [enum EKAlarmProximity](../ekalarmproximity.md)
   A value indicating whether an alarm is triggered by entering or exiting a region.
-- [var proximity: EKAlarmProximity](ekalarm/proximity.md)
+- [var proximity: EKAlarmProximity](./proximity.md)
   A value indicating how a location-based alarm is triggered.
 
 

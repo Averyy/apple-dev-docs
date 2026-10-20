@@ -1,24 +1,26 @@
 # Create
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t Create(IOService *device, uint64_t options, const IODMACommandSpecification *specification, IODMACommand **command);
 ```
 
 ## See Also
 
-- [init](iodmacommand/init.md)
-- [free](iodmacommand/free.md)
+### Creating a DMA Command
+- [init](./init.md)
+- [free](./free.md)
 
 
 ---

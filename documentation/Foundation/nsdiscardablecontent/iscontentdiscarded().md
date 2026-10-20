@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a Boolean value indicating whether the content has been discarded.
@@ -21,13 +22,18 @@ Returns a Boolean value indicating whether the content has been discarded.
 func isContentDiscarded() -> Bool
 ```
 
+```objc
+- (BOOL) isContentDiscarded;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the content has been discarded; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the content has been discarded; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func discardContentIfPossible()](nsdiscardablecontent/discardcontentifpossible.md)
+### Discarding Content
+- [func discardContentIfPossible()](./discardcontentifpossible%28%29.md)
   Called to discard the contents of the receiver if the value of the accessed counter is 0.
 
 

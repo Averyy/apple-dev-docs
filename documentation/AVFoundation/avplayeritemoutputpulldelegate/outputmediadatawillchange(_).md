@@ -1,7 +1,8 @@
 # outputMediaDataWillChange(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that new samples are about to arrive.
 
@@ -20,6 +21,10 @@ Tells the delegate that new samples are about to arrive.
 optional func outputMediaDataWillChange(_ sender: AVPlayerItemOutput)
 ```
 
+```objc
+- (void) outputMediaDataWillChange:(AVPlayerItemOutput *) sender;
+```
+
 #### Discussion
 
 You can use this method to prepare for any new sample data. This method is called at some point after a call to your video output object’s `requestNotificationOfMediaDataChangeWithAdvanceInterval:` method.
@@ -30,7 +35,8 @@ You can use this method to prepare for any new sample data. This method is calle
 
 ## See Also
 
-- [func outputSequenceWasFlushed(AVPlayerItemOutput)](avplayeritemoutputpulldelegate/outputsequencewasflushed(_:).md)
+### Responding to pixel buffer changes
+- [func outputSequenceWasFlushed(AVPlayerItemOutput)](./outputsequencewasflushed%28_%29.md)
   Tells the delegate that a new sample sequence is commencing.
 
 

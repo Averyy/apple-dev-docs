@@ -1,7 +1,8 @@
 # expectedItemTime(atHostTime:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a time in the current item’s timeline that the coordinator expects to play at the specified host time.
 
@@ -19,6 +20,10 @@ Returns a time in the current item’s timeline that the coordinator expects to 
 func expectedItemTime(atHostTime hostClockTime: CMTime) -> CMTime
 ```
 
+```objc
+- (CMTime) expectedItemTimeAtHostTime:(CMTime) hostClockTime;
+```
+
 #### Return Value
 
 A time in the current item’s timeline.
@@ -29,9 +34,10 @@ A time in the current item’s timeline.
 
 ## See Also
 
-- [func beginSuspension(for: AVCoordinatedPlaybackSuspension.Reason) -> AVCoordinatedPlaybackSuspension](avplaybackcoordinator/beginsuspension(for:).md)
+### Suspending state coordination
+- [func beginSuspension(for: AVCoordinatedPlaybackSuspension.Reason) -> AVCoordinatedPlaybackSuspension](./beginsuspension%28for%29.md)
   Tells the coordinator to stop sending playback commands temporarily when the playback object disconnects from the group activity.
-- [class AVCoordinatedPlaybackSuspension](avcoordinatedplaybacksuspension.md)
+- [class AVCoordinatedPlaybackSuspension](../avcoordinatedplaybacksuspension.md)
   An object that represents a temporary suspension of coordinated playback.
 
 

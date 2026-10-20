@@ -1,7 +1,8 @@
 # inline(activation:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Adds a dictation microphone in the search bar.
 
@@ -19,9 +20,10 @@ static func inline(activation: TextInputDictationActivation) -> TextInputDictati
 
 ## See Also
 
-- [static let automatic: TextInputDictationBehavior](textinputdictationbehavior/automatic.md)
+### Getting behavior values
+- [static let automatic: TextInputDictationBehavior](./automatic.md)
   A platform-appropriate default text input dictation behavior.
-- [static let preventDictation: TextInputDictationBehavior](textinputdictationbehavior/preventdictation.md)
+- [static let preventDictation: TextInputDictationBehavior](./preventdictation.md)
   Prevents the search bar from having a dictation microphone.
 
 

@@ -1,17 +1,18 @@
 # allocate_memory
 
 **Framework**: DriverKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 constexpr const allocate_memory_t allocate_memory;
 ```
 

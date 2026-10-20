@@ -1,7 +1,8 @@
 # Measurement.Specification
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 16.0+
@@ -17,6 +18,8 @@
 ```swift
 typealias Specification = some ResolverSpecification
 ```
+
+Available when `UnitType` inherits `Unit`.
 
 
 ---

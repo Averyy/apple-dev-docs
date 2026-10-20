@@ -1,12 +1,15 @@
 # javaEnabled
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether Java is enabled.
 
 **Availability**:
-- macOS 10.10+
+- macOS 10.10+ - Deprecated in 10.15
+
+> **Deprecated**: Java is no longer supported
 
 ## Declaration
 
@@ -14,15 +17,20 @@ A Boolean value that indicates whether Java is enabled.
 var javaEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL javaEnabled;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var javaScriptEnabled: Bool](wkpreferences/javascriptenabled.md)
+### Deprecated
+- [var javaScriptEnabled: Bool](./javascriptenabled.md)
   A Boolean value that indicates whether JavaScript is enabled.
-- [var plugInsEnabled: Bool](wkpreferences/pluginsenabled.md)
+- [var plugInsEnabled: Bool](./pluginsenabled.md)
   A Boolean value that indicates whether plug-ins are enabled.
 
 

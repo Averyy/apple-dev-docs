@@ -1,7 +1,8 @@
 # displayLink(target:selector:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a display link targeting the display associated with this scene.
 
@@ -16,6 +17,10 @@ Creates a display link targeting the display associated with this scene.
 
 ```swift
 func displayLink(target: Any, selector sel: Selector) -> CADisplayLink?
+```
+
+```objc
+- (CADisplayLink *) displayLinkWithTarget:(id) target selector:(SEL) sel;
 ```
 
 #### Return Value

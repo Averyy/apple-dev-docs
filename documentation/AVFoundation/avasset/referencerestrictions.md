@@ -1,7 +1,8 @@
 # referenceRestrictions
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The restrictions that an asset places on how it resolves references to external media.
 
@@ -19,15 +20,20 @@ The restrictions that an asset places on how it resolves references to external 
 var referenceRestrictions: AVAssetReferenceRestrictions { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVAssetReferenceRestrictions referenceRestrictions;
+```
+
 #### Discussion
 
-For [`AVURLAsset`](avurlasset.md), this property reflects the value passed in for [`AVURLAssetReferenceRestrictionsKey`](avurlassetreferencerestrictionskey.md), if any.
+For [`AVURLAsset`](../avurlasset.md), this property reflects the value passed in for [`AVURLAssetReferenceRestrictionsKey`](../avurlassetreferencerestrictionskey.md), if any.
 
-The default value for this property is [`defaultPolicy`](avassetreferencerestrictions/defaultpolicy.md). See [`AVURLAssetReferenceRestrictionsKey`](avurlassetreferencerestrictionskey.md) for more information about reference restrictions.
+The default value for this property is [`defaultPolicy`](../avassetreferencerestrictions/defaultpolicy.md). See [`AVURLAssetReferenceRestrictionsKey`](../avurlassetreferencerestrictionskey.md) for more information about reference restrictions.
 
 ## See Also
 
-- [struct AVAssetReferenceRestrictions](avassetreferencerestrictions.md)
+### Retrieving reference restrictions
+- [struct AVAssetReferenceRestrictions](../avassetreferencerestrictions.md)
   Restrictions to use when resolving references to external media data.
 
 

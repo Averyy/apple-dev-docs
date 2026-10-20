@@ -1,7 +1,8 @@
 # ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.adaptiveGainCurveMapping(_:)
 
 **Framework**: ColorSync  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Maps content above reference white using a headroom-adaptive gain curve.
 

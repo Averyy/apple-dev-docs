@@ -1,7 +1,8 @@
 # ManageAssetsRequest
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request for asset management.
 
@@ -10,18 +11,18 @@ The request for asset management.
 
 ## Declaration
 
-```swift
+```
 object ManageAssetsRequest
 ```
 
 ## Mentions
 
-- [Managing assets](managing-assets.md)
+- [Managing assets](./managing-assets.md)
 
 ## Topics
 
 ### Objects and Data Types
-- [object Asset](asset.md)
+- [object Asset](./asset.md)
   A product in the store.
 
 ## Properties
@@ -32,9 +33,10 @@ object ManageAssetsRequest
 
 ## See Also
 
-- [object EventResponse](eventresponse.md)
+### Request and Response
+- [object EventResponse](./eventresponse.md)
   The response that contains the event identifier.
-- [object ErrorResponse](errorresponse.md)
+- [object ErrorResponse](./errorresponse.md)
   The response that contains the error that occurs.
 
 

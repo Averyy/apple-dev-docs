@@ -1,7 +1,8 @@
 # updateTraitsIfNeeded()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Forces an immediate trait update for this view (and its view controller, if applicable) and any subviews, including any view controllers or views in its subtree. Any trait change callbacks are sent synchronously.
 
@@ -16,6 +17,10 @@ Forces an immediate trait update for this view (and its view controller, if appl
 
 ```swift
 func updateTraitsIfNeeded()
+```
+
+```objc
+- (void) updateTraitsIfNeeded;
 ```
 
 

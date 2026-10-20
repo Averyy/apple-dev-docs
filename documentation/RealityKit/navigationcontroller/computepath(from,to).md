@@ -1,7 +1,8 @@
 # computePath(from:to:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously requests a pathfind from a given position to the target position and waits for the path or a failure. If the function returns an empty path, the pathfind succeeded with no nodes (for example, the start and end positions are in the same place). If the function returns nil, the pathfinding failed to find a path.
 
@@ -21,7 +22,8 @@ func computePath(from startPosition: SIMD3<Float>, to targetPosition: SIMD3<Floa
 
 ## See Also
 
-- [func computePath(to: SIMD3<Float>) async -> [NavigationMeshResource.PathNode]?](navigationcontroller/computepath(to:).md)
+### Computing paths
+- [func computePath(to: SIMD3<Float>) async -> [NavigationMeshResource.PathNode]?](./computepath%28to%29.md)
   Asynchronously requests a pathfind from the owning entity’s position to the target position and waits for the path or a failure. If the function returns an empty path, the pathfind succeeded with no nodes (for example, the start and end positions are in the same place). If the function returns nil, the pathfinding failed to find a path.
 
 

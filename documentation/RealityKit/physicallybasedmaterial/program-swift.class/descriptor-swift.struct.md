@@ -1,7 +1,8 @@
 # PhysicallyBasedMaterial.Program.Descriptor
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Specifies all parameters necessary to initialize `PhysicallyBasedMaterial` programs
 
@@ -22,18 +23,18 @@ struct Descriptor
 ## Topics
 
 ### Initializers
-- [init()](physicallybasedmaterial/program-swift.class/descriptor-swift.struct/init.md)
+- [init()](./descriptor-swift.struct/init%28%29.md)
 ### Instance Properties
-- [var blendMode: MaterialParameterTypes.BlendMode?](physicallybasedmaterial/program-swift.class/descriptor-swift.struct/blendmode.md)
+- [var blendMode: MaterialParameterTypes.BlendMode?](./descriptor-swift.struct/blendmode.md)
   Describes how materials using the created `PhysicallyBasedMaterial.Program` will be blended with content behind them.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

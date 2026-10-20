@@ -1,7 +1,8 @@
 # CKShare.ParticipantAcceptanceStatus.removed
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system removed the participant from the share.
 
@@ -20,13 +21,18 @@ The system removed the participant from the share.
 case removed
 ```
 
+```c
+CKShareParticipantAcceptanceStatusRemoved
+```
+
 ## See Also
 
-- [CKShare.ParticipantAcceptanceStatus.unknown](ckshare/participantacceptancestatus/unknown.md)
+### Constants
+- [CKShare.ParticipantAcceptanceStatus.unknown](./unknown.md)
   The participant’s status is unknown.
-- [CKShare.ParticipantAcceptanceStatus.pending](ckshare/participantacceptancestatus/pending.md)
+- [CKShare.ParticipantAcceptanceStatus.pending](./pending.md)
   The participant’s acceptance of the share request is pending.
-- [CKShare.ParticipantAcceptanceStatus.accepted](ckshare/participantacceptancestatus/accepted.md)
+- [CKShare.ParticipantAcceptanceStatus.accepted](./accepted.md)
   The participant accepted the share request.
 
 

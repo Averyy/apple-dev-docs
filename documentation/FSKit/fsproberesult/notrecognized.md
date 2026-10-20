@@ -1,7 +1,8 @@
 # notRecognized
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A probe result for an unrecognized file system.
 
@@ -14,19 +15,24 @@ A probe result for an unrecognized file system.
 class var notRecognized: FSProbeResult { get }
 ```
 
+```objc
+@property (class, readonly) FSProbeResult * notRecognizedProbeResult;
+```
+
 #### Discussion
 
-An unrecognized probe result contains `nil` for its [`name`](fsproberesult/name.md) and [`containerID`](fsproberesult/containerid.md) properties.
+An unrecognized probe result contains `nil` for its [`name`](./name.md) and [`containerID`](./containerid.md) properties.
 
 ## See Also
 
-- [class func recognized(name: String, containerID: FSContainerIdentifier) -> Self](fsproberesult/recognized(name:containerid:).md)
+### Working with results
+- [class func recognized(name: String, containerID: FSContainerIdentifier) -> Self](./recognized%28name,containerid%29.md)
   Creates a probe result for a recognized file system.
-- [class func usable(name: String, containerID: FSContainerIdentifier) -> Self](fsproberesult/usable(name:containerid:).md)
+- [class func usable(name: String, containerID: FSContainerIdentifier) -> Self](./usable%28name,containerid%29.md)
   Creates a probe result for a recognized and usable file system.
-- [class func usableButLimited(name: String, containerID: FSContainerIdentifier) -> Self](fsproberesult/usablebutlimited(name:containerid:).md)
+- [class func usableButLimited(name: String, containerID: FSContainerIdentifier) -> Self](./usablebutlimited%28name,containerid%29.md)
   Creates a probe result for a recognized file system that is usable, but with limited capabilities.
-- [class var usableButLimited: FSProbeResult](fsproberesult/usablebutlimited.md)
+- [class var usableButLimited: FSProbeResult](./usablebutlimited.md)
   A probe result for a recognized file system that is usable, but with limited capabilities.
 
 

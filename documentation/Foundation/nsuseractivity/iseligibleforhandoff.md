@@ -1,7 +1,8 @@
 # isEligibleForHandoff
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the activity can continue on another device using Handoff.
 
@@ -20,25 +21,30 @@ A Boolean value that indicates whether the activity can continue on another devi
 var isEligibleForHandoff: Bool { get set }
 ```
 
+```objc
+@property (getter=isEligibleForHandoff) BOOL eligibleForHandoff;
+```
+
 ## Mentions
 
-- [Creating a user activity object](creating-a-user-activity-object.md)
+- [Creating a user activity object](../creating-a-user-activity-object.md)
 
 #### Discussion
 
 Set the value of this property to `true` for activities you can continue on a person’s other devices; otherwise, set it to `false`. The default value of this property is `true`.
 
-For information about how to support Handoff in your app, see [`Implementing Handoff in Your App`](implementing-handoff-in-your-app.md).
+For information about how to support Handoff in your app, see [Implementing Handoff in Your App](../implementing-handoff-in-your-app.md).
 
 ## See Also
 
-- [var isEligibleForSearch: Bool](nsuseractivity/iseligibleforsearch.md)
+### Enabling system behaviors
+- [var isEligibleForSearch: Bool](./iseligibleforsearch.md)
   A Boolean value that indicates whether to add the activity to the on-device index.
-- [var isEligibleForPublicIndexing: Bool](nsuseractivity/iseligibleforpublicindexing.md)
+- [var isEligibleForPublicIndexing: Bool](./iseligibleforpublicindexing.md)
   A Boolean value that indicates whether the activity is publicly accessible by all iOS users.
-- [var isEligibleForPrediction: Bool](nsuseractivity/iseligibleforprediction.md)
+- [var isEligibleForPrediction: Bool](./iseligibleforprediction.md)
   A Boolean value that determines whether Siri can suggest the activity as a shortcut.
-- [var expirationDate: Date?](nsuseractivity/expirationdate.md)
+- [var expirationDate: Date?](./expirationdate.md)
   The date after which the activity is no longer eligible for Handoff or indexing.
 
 

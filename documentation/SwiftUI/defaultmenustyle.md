@@ -1,7 +1,8 @@
 # DefaultMenuStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The default menu style, based on the menu’s context.
 
@@ -22,22 +23,23 @@ struct DefaultMenuStyle
 
 #### Overview
 
-You can also use [`automatic`](menustyle/automatic.md) to construct this style.
+You can also use [`automatic`](./menustyle/automatic.md) to construct this style.
 
 ## Topics
 
 ### Creating the menu style
-- [init()](defaultmenustyle/init.md)
+- [init()](./defaultmenustyle/init%28%29.md)
   Creates a default menu style.
 
 ## Relationships
 
 ### Conforms To
-- [MenuStyle](menustyle.md)
+- [MenuStyle](./menustyle.md)
 
 ## See Also
 
-- [struct ButtonMenuStyle](buttonmenustyle.md)
+### Supporting types
+- [struct ButtonMenuStyle](./buttonmenustyle.md)
   A menu style that displays a button that toggles the display of the menu’s contents when pressed.
 
 

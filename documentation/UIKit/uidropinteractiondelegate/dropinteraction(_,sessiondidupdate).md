@@ -1,7 +1,8 @@
 # dropInteraction(_:sessionDidUpdate:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate the drop session has changed.
 
@@ -17,13 +18,17 @@ Tells the delegate the drop session has changed.
 optional func dropInteraction(_ interaction: UIDropInteraction, sessionDidUpdate session: any UIDropSession) -> UIDropProposal
 ```
 
+```objc
+- (UIDropProposal *) dropInteraction:(UIDropInteraction *) interaction sessionDidUpdate:(id<UIDropSession>) session;
+```
+
 ## Mentions
 
-- [Making a view into a drop destination](making-a-view-into-a-drop-destination.md)
+- [Making a view into a drop destination](../making-a-view-into-a-drop-destination.md)
 
 #### Return Value
 
-A drop proposal that contains the operation the delegate intends to perform. You may return a proposal containing the [`UIDropOperation.move`](uidropoperation/move.md) operation only if the session’s [`allowsMoveOperation`](uidragdropsession/allowsmoveoperation.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+A drop proposal that contains the operation the delegate intends to perform. You may return a proposal containing the [`UIDropOperation.move`](../uidropoperation/move.md) operation only if the session’s [`allowsMoveOperation`](../uidragdropsession/allowsmoveoperation.md) is [`true`](../../Swift/true.md).
 
 #### Discussion
 
@@ -35,7 +40,7 @@ The interaction calls this method when one of the following happens:
 - The session moves inside the area of the drop interaction’s view.
 - The user adds a drag item to the session that within the area of the drop interaction’s view.
 
-To get the location of the drop session after it has moved, call the session’s [`location(in:)`](uidragdropsession/location(in:).md) method.
+To get the location of the drop session after it has moved, call the session’s [`location(in:)`](../uidragdropsession/location%28in%29.md) method.
 
 ## Parameters
 
@@ -44,11 +49,12 @@ To get the location of the drop session after it has moved, call the session’s
 
 ## See Also
 
-- [func dropInteraction(UIDropInteraction, sessionDidEnter: any UIDropSession)](uidropinteractiondelegate/dropinteraction(_:sessiondidenter:).md)
+### Tracking the drop movements
+- [func dropInteraction(UIDropInteraction, sessionDidEnter: any UIDropSession)](./dropinteraction%28_,sessiondidenter%29.md)
   Tells the delegate the drop session has moved into the drop interaction’s view.
-- [func dropInteraction(UIDropInteraction, sessionDidExit: any UIDropSession)](uidropinteractiondelegate/dropinteraction(_:sessiondidexit:).md)
+- [func dropInteraction(UIDropInteraction, sessionDidExit: any UIDropSession)](./dropinteraction%28_,sessiondidexit%29.md)
   Tells the delegate the drop session has moved out of the drop interaction’s view.
-- [func dropInteraction(UIDropInteraction, sessionDidEnd: any UIDropSession)](uidropinteractiondelegate/dropinteraction(_:sessiondidend:).md)
+- [func dropInteraction(UIDropInteraction, sessionDidEnd: any UIDropSession)](./dropinteraction%28_,sessiondidend%29.md)
   Tells the delegate the drop session has ended.
 
 

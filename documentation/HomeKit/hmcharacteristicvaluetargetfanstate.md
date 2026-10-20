@@ -1,7 +1,8 @@
 # HMCharacteristicValueTargetFanState
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the target fan state.
 
@@ -19,25 +20,29 @@ Possible values for the target fan state.
 enum HMCharacteristicValueTargetFanState
 ```
 
+```c
+enum HMCharacteristicValueTargetFanState : NSInteger;
+```
+
 ## Topics
 
 ### Fan State
-- [HMCharacteristicValueTargetFanState.manual](hmcharacteristicvaluetargetfanstate/manual.md)
+- [HMCharacteristicValueTargetFanState.manual](./hmcharacteristicvaluetargetfanstate/manual.md)
   The fan should be controlled manually.
-- [HMCharacteristicValueTargetFanState.automatic](hmcharacteristicvaluetargetfanstate/automatic.md)
+- [HMCharacteristicValueTargetFanState.automatic](./hmcharacteristicvaluetargetfanstate/automatic.md)
   The fan should be controlled automatically.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluetargetfanstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluetargetfanstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

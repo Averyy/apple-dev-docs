@@ -1,7 +1,8 @@
 # withObservationTracking(_:onChange:)
 
 **Framework**: Observation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Tracks access to properties.
 
@@ -47,7 +48,8 @@ func render() {
 
 ## See Also
 
-- [struct ObservationRegistrar](observationregistrar.md)
+### Change tracking
+- [struct ObservationRegistrar](./observationregistrar.md)
   Provides storage for tracking and access to data changes.
 
 

@@ -12,7 +12,7 @@ The default theme for a product bundle template is `dark` when you specify a bac
 
 The following figure shows the basic layout for a `productBundleTemplate` page.
 
-![Layout diagram showing a stack area on the left side of the screen and a banner area on the right. A shelf area is at the bottom of the screen. A second shelf area is shown as being off the bottom of the screen.](/images/com.apple.TVML/productbundletemplate-1@2x.png)
+![Layout diagram showing a stack area on the left side of the screen and a banner area on the right. A shelf area is at the bottom of the screen. A second shelf area is shown as being off the bottom of the screen.](https://developer.apple.com/tutorials/images/com.apple.TVML/productbundletemplate-1@2x.png)
 
 ##### Main Elements
 
@@ -51,18 +51,18 @@ The following listing shows the main elements of the `productBundleTemplate` ele
 
 ###### Element Descriptions
 
-- **[`background`](background.md)**: Images or audio to be presented in the background.
-- **[`banner`](banner.md)**: Element containing various elements that provide primary information about the product, such as a TV show title and episode title, description, and buttons for purchasing or previewing.
-- **[`buttonLockup`](buttonlockup.md)**: A type of button that can contain an image (the `badge` element) as well as text.
-- **[`description`](description.md)**: The text that describes the show.
-- **[`heroImg`](heroimg.md)**: An image of the show.
-- **[`productInfo`](productinfo.md)**: Technical information about the product bundle, such as a show’s runtime, language availability, and accessibility information.
-- **[`row`](row.md)**: A group of information elements.
-- **[`shelf`](shelf.md)**: An element containing row elements. Several shelves are used to display information like shows other users have watched and extra features provided by this product.
-- **[`stack`](stack.md)**: Basic information about the product, including the title, rating, and a description.
-- **[`subtitle`](subtitle.md)**: Text that provides additional information about its containing element.
-- **[`text`](text.md)**: The text used to describe the surrounding elements.
-- **[`title`](title.md)**: The title describing its containing element.
+- **[background](./background.md)**: Images or audio to be presented in the background.
+- **[banner](./banner.md)**: Element containing various elements that provide primary information about the product, such as a TV show title and episode title, description, and buttons for purchasing or previewing.
+- **[buttonLockup](./buttonlockup.md)**: A type of button that can contain an image (the `badge` element) as well as text.
+- **[description](./description.md)**: The text that describes the show.
+- **[heroImg](./heroimg.md)**: An image of the show.
+- **[productInfo](./productinfo.md)**: Technical information about the product bundle, such as a show’s runtime, language availability, and accessibility information.
+- **[row](./row.md)**: A group of information elements.
+- **[shelf](./shelf.md)**: An element containing row elements. Several shelves are used to display information like shows other users have watched and extra features provided by this product.
+- **[stack](./stack.md)**: Basic information about the product, including the title, rating, and a description.
+- **[subtitle](./subtitle.md)**: Text that provides additional information about its containing element.
+- **[text](./text.md)**: The text used to describe the surrounding elements.
+- **[title](./title.md)**: The title describing its containing element.
 
 ##### Example
 
@@ -241,55 +241,56 @@ The following listing shows the TVML for a `productBundleTemplate` example.
 
 The following figures show the two pages created using the above example. The first figure shows what appears immediately onscreen, while the second figure shows what the user sees after navigating down the screen.
 
-![Screenshot showing a sample product bundle. An image of the series is on the right and a description on the left. A row of episodes is at the bottom of the screen.](/images/com.apple.TVML/productbundletemplate-2@2x.png)
+![Screenshot showing a sample product bundle. An image of the series is on the right and a description on the left. A row of episodes is at the bottom of the screen.](https://developer.apple.com/tutorials/images/com.apple.TVML/productbundletemplate-2@2x.png)
 
-![Screenshot showing the second page of the product bundle. The top row contains reviews and ratings, the middle row contains actor informations, and the bottom row contains general information about the product bundle.](/images/com.apple.TVML/productbundletemplate-3@2x.png)
+![Screenshot showing the second page of the product bundle. The top row contains reviews and ratings, the middle row contains actor informations, and the bottom row contains general information about the product bundle.](https://developer.apple.com/tutorials/images/com.apple.TVML/productbundletemplate-3@2x.png)
 
 ## Topics
 
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [itemID](itemid.md)
+- [itemID](./itemid.md)
   Mark elements for reuse during DOM updates.
-- [layoutDirection](layoutdirection.md)
+- [layoutDirection](./layoutdirection.md)
   Specifies the direction in which text is displayed.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [alertTemplate](alerttemplate.md)
+### Full-Page Templates
+- [alertTemplate](./alerttemplate.md)
   Displays important information to the user.
-- [catalogTemplate](catalogtemplate.md)
+- [catalogTemplate](./catalogtemplate.md)
   Displays groups of items along one side of a page and images of a group’s contents on the other side.
-- [compilationTemplate](compilationtemplate.md)
+- [compilationTemplate](./compilationtemplate.md)
   Displays information about a single media item and its components.
-- [descriptiveAlertTemplate](descriptivealerttemplate.md)
+- [descriptiveAlertTemplate](./descriptivealerttemplate.md)
   Displays large amounts of important information to the user.
-- [divTemplate](divtemplate.md)
+- [divTemplate](./divtemplate.md)
   Provides the ability to create pages that don’t conform to a layout defined by another template.
-- [formTemplate](formtemplate.md)
+- [formTemplate](./formtemplate.md)
   Provides the ability to gather information from the user.
-- [listTemplate](listtemplate.md)
+- [listTemplate](./listtemplate.md)
   Displays a list of items along one side of a page and the corresponding image on the other side.
-- [loadingTemplate](loadingtemplate.md)
+- [loadingTemplate](./loadingtemplate.md)
   Displays a spinner and description on the screen.
-- [mainTemplate](maintemplate.md)
+- [mainTemplate](./maintemplate.md)
   Displays user options for a media item.
-- [menuBarTemplate](menubartemplate.md)
+- [menuBarTemplate](./menubartemplate.md)
   Creates a page with items along the top and related information below.
-- [oneupTemplate](oneuptemplate.md)
+- [oneupTemplate](./oneuptemplate.md)
   Creates a page that allows users to navigate between full-screen images.
-- [paradeTemplate](paradetemplate.md)
+- [paradeTemplate](./paradetemplate.md)
   Displays a groups of items along one side of a page and scrolling images on the other side.
-- [productTemplate](producttemplate.md)
+- [productTemplate](./producttemplate.md)
   Displays detailed information about a single product.
-- [ratingTemplate](ratingtemplate.md)
+- [ratingTemplate](./ratingtemplate.md)
   Displays a rating for an item.
-- [searchTemplate](searchtemplate.md)
+- [searchTemplate](./searchtemplate.md)
   Searches for a media item based on user input.
 
 

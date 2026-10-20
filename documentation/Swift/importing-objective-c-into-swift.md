@@ -1,6 +1,7 @@
 # Importing Objective-C into Swift
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Article
 
 Access classes and other declarations from your Objective-C code in Swift.
 
@@ -8,7 +9,7 @@ Access classes and other declarations from your Objective-C code in Swift.
 
 You can use Objective-C and Swift files together in a single project, no matter which language the project used originally. This makes creating mixed-language app and framework targets as straightforward as creating an app or framework target written in a single language.
 
-![Diagram showing the steps to import Objective-C declarations into Swift code. Import your Objective-C headers into an Objective-C bridging header file to expose the declarations to all your Swift files.](/images/com.apple.Swift/importing-objective-c-into-swift-1@2x.png)
+![Diagram showing the steps to import Objective-C declarations into Swift code. Import your Objective-C headers into an Objective-C bridging header file to expose the declarations to all your Swift files.](https://developer.apple.com/tutorials/images/com.apple.Swift/importing-objective-c-into-swift-1@2x.png)
 
 The process for using your Objective-C declarations from your Swift code within mixed-language targets differs slightly depending on whether you’re writing an app or a framework. Both processes are described below.
 
@@ -16,7 +17,7 @@ The process for using your Objective-C declarations from your Swift code within 
 
 To import a set of Objective-C files into Swift code within the same app target, you rely on an Objective-C bridging header file to expose those files to Swift. Xcode offers to create this header when you add a Swift file to an existing Objective-C app, or an Objective-C file to an existing Swift app.
 
-![Screenshot of the Xcode prompt to configure an Objective-C bridging header.](/images/com.apple.Swift/importing-objective-c-into-swift-2@2x.png)
+![Screenshot of the Xcode prompt to configure an Objective-C bridging header.](https://developer.apple.com/tutorials/images/com.apple.Swift/importing-objective-c-into-swift-2@2x.png)
 
 If you accept, Xcode creates the bridging header file along with the file you were creating, and names it by using your product module name followed by `"-Bridging-Header.h"`. Alternatively, you can create a bridging header yourself by choosing File > New > File > [*operating system*] > Source > Header File.
 
@@ -38,7 +39,8 @@ Swift sees every header you expose publicly in your umbrella header. The content
 
 ## See Also
 
-- [Importing Swift into Objective-C](importing-swift-into-objective-c.md)
+### Swift and Objective-C in the Same Project
+- [Importing Swift into Objective-C](./importing-swift-into-objective-c.md)
   Access Swift types and declarations from within your Objective-C codebase.
 
 

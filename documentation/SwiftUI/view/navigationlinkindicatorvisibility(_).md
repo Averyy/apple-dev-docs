@@ -1,7 +1,8 @@
 # navigationLinkIndicatorVisibility(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures whether navigation links show a disclosure indicator.
 
@@ -23,7 +24,7 @@ Configures whether navigation links show a disclosure indicator.
 
 #### Discussion
 
-If you need to detect whether the navigation disclosure indicator should be shown for the current view, read the [`navigationLinkIndicatorVisibility`](environmentvalues/navigationlinkindicatorvisibility.md) environment value.
+If you need to detect whether the navigation disclosure indicator should be shown for the current view, read the [`navigationLinkIndicatorVisibility`](../environmentvalues/navigationlinkindicatorvisibility.md) environment value.
 
 The following example hides the indicator for all links in the list. The indicator can be hidden for a specific link by placing the modifier on the `NavigationLink` itself.
 
@@ -46,17 +47,18 @@ struct NoIndicatorLink: View {
 
 ## See Also
 
-- [func navigationDestination<D, C>(for: D.Type, destination: (D) -> C) -> some View](view/navigationdestination(for:destination:).md)
+### Navigation stacks and columns
+- [func navigationDestination<D, C>(for: D.Type, destination: (D) -> C) -> some View](./navigationdestination%28for,destination%29.md)
   Associates a destination view with a presented data type for use within a navigation stack.
-- [func navigationDestination<V>(isPresented: Binding<Bool>, destination: () -> V) -> some View](view/navigationdestination(ispresented:destination:).md)
-  Associates a destination view with a binding that can be used to push the view onto a [`NavigationStack`](navigationstack.md).
-- [func navigationDestination<D, C>(item: Binding<Optional<D>>, destination: (D) -> C) -> some View](view/navigationdestination(item:destination:).md)
+- [func navigationDestination<V>(isPresented: Binding<Bool>, destination: () -> V) -> some View](./navigationdestination%28ispresented,destination%29.md)
+  Associates a destination view with a binding that can be used to push the view onto a [`NavigationStack`](../navigationstack.md).
+- [func navigationDestination<D, C>(item: Binding<Optional<D>>, destination: (D) -> C) -> some View](./navigationdestination%28item,destination%29.md)
   Associates a destination view with a bound value for use within a navigation stack or navigation split view
-- [func navigationSplitViewColumnWidth(CGFloat) -> some View](view/navigationsplitviewcolumnwidth(_:).md)
+- [func navigationSplitViewColumnWidth(CGFloat) -> some View](./navigationsplitviewcolumnwidth%28_%29.md)
   Sets a fixed, preferred width for the column containing this view.
-- [func navigationSplitViewColumnWidth(min: CGFloat?, ideal: CGFloat, max: CGFloat?) -> some View](view/navigationsplitviewcolumnwidth(min:ideal:max:).md)
+- [func navigationSplitViewColumnWidth(min: CGFloat?, ideal: CGFloat, max: CGFloat?) -> some View](./navigationsplitviewcolumnwidth%28min,ideal,max%29.md)
   Sets a flexible, preferred width for the column containing this view.
-- [func navigationTransition(some NavigationTransition) -> some View](view/navigationtransition(_:).md)
+- [func navigationTransition(some NavigationTransition) -> some View](./navigationtransition%28_%29.md)
   Sets the navigation transition style for this view.
 
 

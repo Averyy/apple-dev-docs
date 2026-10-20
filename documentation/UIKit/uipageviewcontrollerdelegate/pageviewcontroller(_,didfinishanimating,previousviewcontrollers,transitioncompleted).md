@@ -1,7 +1,8 @@
 # pageViewController(_:didFinishAnimating:previousViewControllers:transitionCompleted:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called after a gesture-driven transition completes.
 
@@ -9,7 +10,7 @@ Called after a gesture-driven transition completes.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,24 +19,29 @@ Called after a gesture-driven transition completes.
 optional func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool)
 ```
 
+```objc
+- (void) pageViewController:(UIPageViewController *) pageViewController didFinishAnimating:(BOOL) finished previousViewControllers:(NSArray<UIViewController *> *) previousViewControllers transitionCompleted:(BOOL) completed;
+```
+
 #### Discussion
 
 Use the `completed` parameter to distinguish between a transition that completed (the page was turned) and a transition that the user aborted (the page was not turned).
 
-The value of the `previousViewControllers` parameter is the same as what the [`viewControllers`](uipageviewcontroller/viewcontrollers.md) method would have returned prior to the page turn.
+The value of the `previousViewControllers` parameter is the same as what the [`viewControllers`](../uipageviewcontroller/viewcontrollers.md) method would have returned prior to the page turn.
 
 ## Parameters
 
 - `pageViewController`: The page view controller.
-- `finished`: [`true`](https://developer.apple.com/documentation/swift/true) if the animation finished; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+- `finished`: [`true`](../../Swift/true.md) if the animation finished; otherwise, [`false`](../../Swift/false.md).
 - `previousViewControllers`: The view controllers prior to the transition.
-- `completed`: [`true`](https://developer.apple.com/documentation/swift/true) if the user completed the page-turn gesture; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+- `completed`: [`true`](../../Swift/true.md) if the user completed the page-turn gesture; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func pageViewController(UIPageViewController, willTransitionTo: [UIViewController])](uipageviewcontrollerdelegate/pageviewcontroller(_:willtransitionto:).md)
+### Responding to Page View Controller Events
+- [func pageViewController(UIPageViewController, willTransitionTo: [UIViewController])](./pageviewcontroller%28_,willtransitionto%29.md)
   Called before a gesture-driven transition begins.
-- [func pageViewController(UIPageViewController, spineLocationFor: UIInterfaceOrientation) -> UIPageViewController.SpineLocation](uipageviewcontrollerdelegate/pageviewcontroller(_:spinelocationfor:).md)
+- [func pageViewController(UIPageViewController, spineLocationFor: UIInterfaceOrientation) -> UIPageViewController.SpineLocation](./pageviewcontroller%28_,spinelocationfor%29.md)
   Returns the spine location for the given orientation.
 
 

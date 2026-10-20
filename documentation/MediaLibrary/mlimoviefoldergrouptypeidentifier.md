@@ -1,13 +1,16 @@
 # MLiMovieFolderGroupTypeIdentifier
 
 **Framework**: Media Library  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A media group that represents a folder in iMovie.
 
 **Availability**:
 - Mac Catalyst 13.0+
-- macOS 10.9+
+- macOS 10.9+ - Deprecated in 10.15
+
+> **Deprecated**: MediaLibrary.framework will be removed in a future OS version. Use Photos.framework or iTunesLibrary.framework instead.
 
 ## Declaration
 
@@ -15,17 +18,22 @@ A media group that represents a folder in iMovie.
 let MLiMovieFolderGroupTypeIdentifier: String
 ```
 
+```c
+extern NSString * const MLiMovieFolderGroupTypeIdentifier;
+```
+
 ## See Also
 
-- [let MLiMovieRootGroupTypeIdentifier: String](mlimovierootgrouptypeidentifier.md)
+### Constants
+- [let MLiMovieRootGroupTypeIdentifier: String](./mlimovierootgrouptypeidentifier.md)
   The root media group for iMovie.
-- [let MLiMovieProjectGroupTypeIdentifier: String](mlimovieprojectgrouptypeidentifier.md)
+- [let MLiMovieProjectGroupTypeIdentifier: String](./mlimovieprojectgrouptypeidentifier.md)
   A media group that represents a project in iMovie.
-- [let MLiMovieEventGroupTypeIdentifier: String](mlimovieeventgrouptypeidentifier.md)
+- [let MLiMovieEventGroupTypeIdentifier: String](./mlimovieeventgrouptypeidentifier.md)
   A media group that represents an event in iMovie.
-- [let MLiMovieEventCalendarGroupTypeIdentifier: String](mlimovieeventcalendargrouptypeidentifier.md)
+- [let MLiMovieEventCalendarGroupTypeIdentifier: String](./mlimovieeventcalendargrouptypeidentifier.md)
   A media group that represents a collection of events from a specific time period in iMovie.
-- [let MLiMovieEventLibraryGroupTypeIdentifier: String](mlimovieeventlibrarygrouptypeidentifier.md)
+- [let MLiMovieEventLibraryGroupTypeIdentifier: String](./mlimovieeventlibrarygrouptypeidentifier.md)
   The media group that represents the event library in iMovie. The event library contains all event calendar groups.
 
 

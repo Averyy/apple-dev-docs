@@ -1,7 +1,8 @@
 # GameCenterLeaderboardSetLocalizationCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a leaderboard resource.
 
@@ -10,18 +11,19 @@ Attributes that describe a leaderboard resource.
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardSetLocalizationCreateRequest.Data.Attributes
 ```
 
 ## Properties
 
-- `locale` (string) *(required)*: The specified locale. To learn more, see [`Managing metadata in your app by using locale shortcodes`](managing-metadata-in-your-app-by-using-locale-shortcodes.md).
+- `locale` (string) *(required)*: The specified locale. To learn more, see [Managing metadata in your app by using locale shortcodes](../../managing-metadata-in-your-app-by-using-locale-shortcodes.md).
 - `name` (string) *(required)*
 
 ## See Also
 
-- [object GameCenterLeaderboardSetLocalizationCreateRequest.Data.Relationships](gamecenterleaderboardsetlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object GameCenterLeaderboardSetLocalizationCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

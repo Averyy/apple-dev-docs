@@ -1,7 +1,8 @@
 # CVAttachmentAccess
 
 **Framework**: Core Video  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Provides access to the attachments of a buffer.
 
@@ -62,45 +63,46 @@ pixelBuffer.attachments[CVPixelBufferAttachmentKeyDefinitions.displayDimensions.
 ## Topics
 
 ### Instance Methods
-- [func attachedMode(of: KeyPath<Keys.Type, CVAttachmentKeyDefinitionWithDefault<some CVAttachmentModePreference, some CVAttachmentValueRepresentable & Equatable & Sendable>>) -> CVAttachmentMode?](cvattachmentaccess/attachedmode(of:)-79dr.md)
+- [func attachedMode(of: KeyPath<Keys.Type, CVAttachmentKeyDefinitionWithDefault<some CVAttachmentModePreference, some CVAttachmentValueRepresentable & Equatable & Sendable>>) -> CVAttachmentMode?](./cvattachmentaccess/attachedmode%28of%29-79dr.md)
   Returns the propagation mode of an attachment you identify with a key path to a key definition that supplies a default, without retrieving the value.
-- [func attachedMode(of: KeyPath<Keys.Type, CVAttachmentKeyDefinition<some CVAttachmentModePreference, some CVAttachmentValueRepresentable>>) -> CVAttachmentMode?](cvattachmentaccess/attachedmode(of:)-9g9h6.md)
+- [func attachedMode(of: KeyPath<Keys.Type, CVAttachmentKeyDefinition<some CVAttachmentModePreference, some CVAttachmentValueRepresentable>>) -> CVAttachmentMode?](./cvattachmentaccess/attachedmode%28of%29-9g9h6.md)
   Returns the propagation mode of an attachment you identify with a key path to a key definition, without retrieving the value.
-- [func attachedMode(of: String) -> CVAttachmentMode?](cvattachmentaccess/attachedmode(of:)-m49.md)
+- [func attachedMode(of: String) -> CVAttachmentMode?](./cvattachmentaccess/attachedmode%28of%29-m49.md)
   Returns the propagation mode of an attachment you identify by its raw key string, without retrieving the value.
-- [func copy() -> CVAttachmentContainer<Keys>](cvattachmentaccess/copy.md)
+- [func copy() -> CVAttachmentContainer<Keys>](./cvattachmentaccess/copy%28%29.md)
   Creates a copy all propagated and non-propagated attachments.
-- [func propagate(from: borrowing CVAttachmentAccess<Keys>)](cvattachmentaccess/propagate(from:).md)
+- [func propagate(from: borrowing CVAttachmentAccess<Keys>)](./cvattachmentaccess/propagate%28from%29.md)
   Copies all propagated attachment values from another buffer.
-- [func removeAll()](cvattachmentaccess/removeall.md)
+- [func removeAll()](./cvattachmentaccess/removeall%28%29.md)
   Removes all attachments.
-- [func update(from: CVAttachmentContainer<Keys>)](cvattachmentaccess/update(from:).md)
+- [func update(from: CVAttachmentContainer<Keys>)](./cvattachmentaccess/update%28from%29.md)
   Updates propagated and non-propagated attachment values using the provided container.
 ### Subscripts
-- [subscript<Value>(String, as _: Value.Type) -> (value: Value, mode: CVAttachmentMode)?](cvattachmentaccess/subscript(_:as:).md)
+- [subscript<Value>(String, as _: Value.Type) -> (value: Value, mode: CVAttachmentMode)?](./cvattachmentaccess/subscript%28_,as%29.md)
   Get or set attachment value associated with a string key
-- [subscript<ModePreference, Value>(dynamicMember _: KeyPath<Keys.Type, CVAttachmentCompositeKeyDefinition<ModePreference, Value>>) -> Value?](cvattachmentaccess/subscript(dynamicmember:)-1ya6s.md)
+- [subscript<ModePreference, Value>(dynamicMember _: KeyPath<Keys.Type, CVAttachmentCompositeKeyDefinition<ModePreference, Value>>) -> Value?](./cvattachmentaccess/subscript%28dynamicmember%29-1ya6s.md)
   Get or set composite attachment value as a property of this object.
-- [subscript<ModePreference, Value>(dynamicMember _: KeyPath<Keys.Type, CVAttachmentKeyDefinitionWithDefault<ModePreference, Value>>) -> Value](cvattachmentaccess/subscript(dynamicmember:)-38ve9.md)
+- [subscript<ModePreference, Value>(dynamicMember _: KeyPath<Keys.Type, CVAttachmentKeyDefinitionWithDefault<ModePreference, Value>>) -> Value](./cvattachmentaccess/subscript%28dynamicmember%29-38ve9.md)
   Get or set attachment value as a property of this object with default value.
-- [subscript<ModePreference, Value>(dynamicMember _: KeyPath<Keys.Type, CVAttachmentKeyDefinition<ModePreference, Value>>) -> Value?](cvattachmentaccess/subscript(dynamicmember:)-9egcs.md)
+- [subscript<ModePreference, Value>(dynamicMember _: KeyPath<Keys.Type, CVAttachmentKeyDefinition<ModePreference, Value>>) -> Value?](./cvattachmentaccess/subscript%28dynamicmember%29-9egcs.md)
   Get or set attachment value as a property of this object.
 
 ## See Also
 
-- [struct CVAttachmentContainer](cvattachmentcontainer.md)
+### Attachment system (Swift)
+- [struct CVAttachmentContainer](./cvattachmentcontainer.md)
   Provides storage for buffer attachments independent of the buffer lifetime
-- [struct CVAttachmentRawValue](cvattachmentrawvalue.md)
+- [struct CVAttachmentRawValue](./cvattachmentrawvalue.md)
   A lightweight wrapper around raw attachment values.
-- [struct CVAttachmentKeyDefinition](cvattachmentkeydefinition.md)
+- [struct CVAttachmentKeyDefinition](./cvattachmentkeydefinition.md)
   Associates a raw attachment key with a value type and preferred propagation mode.
-- [struct CVAttachmentKeyDefinitionWithDefault](cvattachmentkeydefinitionwithdefault.md)
+- [struct CVAttachmentKeyDefinitionWithDefault](./cvattachmentkeydefinitionwithdefault.md)
   Associates a raw attachment key with a default value and preferred propagation mode.
-- [struct CVAttachmentCompositeKeyDefinition](cvattachmentcompositekeydefinition.md)
+- [struct CVAttachmentCompositeKeyDefinition](./cvattachmentcompositekeydefinition.md)
   Associates a set of raw attachment keys with a value type and preferred propagation mode.
-- [enum CVAttachmentModePreferenceShouldPropagate](cvattachmentmodepreferenceshouldpropagate.md)
+- [enum CVAttachmentModePreferenceShouldPropagate](./cvattachmentmodepreferenceshouldpropagate.md)
   Sets preferred mode for attachment to should propagate
-- [enum CVAttachmentModePreferenceShouldNotPropagate](cvattachmentmodepreferenceshouldnotpropagate.md)
+- [enum CVAttachmentModePreferenceShouldNotPropagate](./cvattachmentmodepreferenceshouldnotpropagate.md)
   Sets preferred mode for attachment to should not propagate
 
 

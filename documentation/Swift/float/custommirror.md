@@ -1,7 +1,8 @@
 # customMirror
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mirror that reflects the `Float` instance.
 
@@ -22,13 +23,14 @@ var customMirror: Mirror { get }
 
 ## See Also
 
-- [func hash(into: inout Hasher)](float/hash(into:).md)
+### Describing a Float
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
-- [var description: String](float/description.md)
+- [var description: String](./description.md)
   A textual representation of the value.
-- [var debugDescription: String](float/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A textual representation of the value, suitable for debugging.
-- [var hashValue: Int](float/hashvalue.md)
+- [var hashValue: Int](./hashvalue.md)
   The hash value.
 
 

@@ -1,7 +1,8 @@
 # sorted(on:_:order:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a data frame by copying the data frame’s rows and then sorting the rows according to two columns that you select by their column identifiers.
 
@@ -32,7 +33,8 @@ func sorted<T0, T1>(on columnID0: ColumnID<T0>, _ columnID1: ColumnID<T1>, order
 
 ## See Also
 
-- [func sorted<T0, T1, T2>(on: ColumnID<T0>, ColumnID<T1>, ColumnID<T2>, order: Order) -> DataFrame](dataframeprotocol/sorted(on:_:_:order:).md)
+### Creating a Data Frame by Sorting Multiple Columns
+- [func sorted<T0, T1, T2>(on: ColumnID<T0>, ColumnID<T1>, ColumnID<T2>, order: Order) -> DataFrame](./sorted%28on,_,_,order%29.md)
   Generates a data frame by copying the data frame’s rows and then sorting the rows according to three columns that you select by their column identifiers.
 
 

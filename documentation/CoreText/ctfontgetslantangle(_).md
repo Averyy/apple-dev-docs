@@ -1,7 +1,8 @@
 # CTFontGetSlantAngle(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the slant angle of the given font.
 
@@ -20,6 +21,10 @@ Returns the slant angle of the given font.
 func CTFontGetSlantAngle(_ font: CTFont) -> CGFloat
 ```
 
+```c
+extern CGFloat CTFontGetSlantAngle(CTFontRef font);
+```
+
 #### Return Value
 
 The transformed slant angle of the font. This is equivalent to the italic or caret angle with any skew from the transformation matrix applied.
@@ -30,25 +35,26 @@ The transformed slant angle of the font. This is equivalent to the italic or car
 
 ## See Also
 
-- [func CTFontGetAscent(CTFont) -> CGFloat](ctfontgetascent(_:).md)
+### Getting Font Metrics
+- [func CTFontGetAscent(CTFont) -> CGFloat](./ctfontgetascent%28_%29.md)
   Returns the scaled font-ascent metric of the given font.
-- [func CTFontGetDescent(CTFont) -> CGFloat](ctfontgetdescent(_:).md)
+- [func CTFontGetDescent(CTFont) -> CGFloat](./ctfontgetdescent%28_%29.md)
   Returns the scaled font-descent metric of the given font.
-- [func CTFontGetLeading(CTFont) -> CGFloat](ctfontgetleading(_:).md)
+- [func CTFontGetLeading(CTFont) -> CGFloat](./ctfontgetleading%28_%29.md)
   Returns the scaled font-leading metric of the given font.
-- [func CTFontGetUnitsPerEm(CTFont) -> UInt32](ctfontgetunitsperem(_:).md)
+- [func CTFontGetUnitsPerEm(CTFont) -> UInt32](./ctfontgetunitsperem%28_%29.md)
   Returns the units-per-em metric of the given font.
-- [func CTFontGetGlyphCount(CTFont) -> CFIndex](ctfontgetglyphcount(_:).md)
+- [func CTFontGetGlyphCount(CTFont) -> CFIndex](./ctfontgetglyphcount%28_%29.md)
   Returns the number of glyphs of the given font.
-- [func CTFontGetBoundingBox(CTFont) -> CGRect](ctfontgetboundingbox(_:).md)
+- [func CTFontGetBoundingBox(CTFont) -> CGRect](./ctfontgetboundingbox%28_%29.md)
   Returns the scaled bounding box of the given font.
-- [func CTFontGetUnderlinePosition(CTFont) -> CGFloat](ctfontgetunderlineposition(_:).md)
+- [func CTFontGetUnderlinePosition(CTFont) -> CGFloat](./ctfontgetunderlineposition%28_%29.md)
   Returns the scaled underline position of the given font.
-- [func CTFontGetUnderlineThickness(CTFont) -> CGFloat](ctfontgetunderlinethickness(_:).md)
+- [func CTFontGetUnderlineThickness(CTFont) -> CGFloat](./ctfontgetunderlinethickness%28_%29.md)
   Returns the scaled underline-thickness metric of the given font.
-- [func CTFontGetCapHeight(CTFont) -> CGFloat](ctfontgetcapheight(_:).md)
+- [func CTFontGetCapHeight(CTFont) -> CGFloat](./ctfontgetcapheight%28_%29.md)
   Returns the cap-height metric of the given font.
-- [func CTFontGetXHeight(CTFont) -> CGFloat](ctfontgetxheight(_:).md)
+- [func CTFontGetXHeight(CTFont) -> CGFloat](./ctfontgetxheight%28_%29.md)
   Returns the x-height metric of the given font.
 
 

@@ -1,17 +1,22 @@
 # clickCount
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of mouse clicks associated with a mouse-down or mouse-up event.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var clickCount: Int { get }
+```
+
+```objc
+@property (readonly) NSInteger clickCount;
 ```
 
 #### Discussion
@@ -24,17 +29,19 @@ The return value of this method is meaningless for events other than mouse-down 
 
 ## See Also
 
-- [class func mouseEvent(with: NSEvent.EventType, location: NSPoint, modifierFlags: NSEvent.ModifierFlags, timestamp: TimeInterval, windowNumber: Int, context: NSGraphicsContext?, eventNumber: Int, clickCount: Int, pressure: Float) -> NSEvent?](nsevent/mouseevent(with:location:modifierflags:timestamp:windownumber:context:eventnumber:clickcount:pressure:).md)
+### Related Documentation
+- [class func mouseEvent(with: NSEvent.EventType, location: NSPoint, modifierFlags: NSEvent.ModifierFlags, timestamp: TimeInterval, windowNumber: Int, context: NSGraphicsContext?, eventNumber: Int, clickCount: Int, pressure: Float) -> NSEvent?](./mouseevent%28with,location,modifierflags,timestamp,windownumber,context,eventnumber,clickcount,pressure%29.md)
   Creates and returns a new event object that describes a mouse-down, -up, -moved, or -dragged event.
-- [class var pressedMouseButtons: Int](nsevent/pressedmousebuttons.md)
+### Getting mouse event information
+- [class var pressedMouseButtons: Int](./pressedmousebuttons.md)
   The indices of the currently pressed mouse buttons.
-- [class var doubleClickInterval: TimeInterval](nsevent/doubleclickinterval.md)
+- [class var doubleClickInterval: TimeInterval](./doubleclickinterval.md)
   The maximum number of seconds in which a second mouse click must occur for an event to be a double-click event.
-- [class var mouseLocation: NSPoint](nsevent/mouselocation.md)
+- [class var mouseLocation: NSPoint](./mouselocation.md)
   Reports the current mouse position in screen coordinates.
-- [var buttonNumber: Int](nsevent/buttonnumber.md)
+- [var buttonNumber: Int](./buttonnumber.md)
   The button number for a mouse event.
-- [var associatedEventsMask: NSEvent.EventTypeMask](nsevent/associatedeventsmask.md)
+- [var associatedEventsMask: NSEvent.EventTypeMask](./associatedeventsmask.md)
   The associated events mask of a mouse event.
 
 

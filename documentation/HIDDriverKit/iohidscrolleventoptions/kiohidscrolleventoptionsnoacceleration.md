@@ -1,17 +1,18 @@
 # kIOHIDScrollEventOptionsNoAcceleration
 
 **Framework**: HIDDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 An option for not applying the default acceleration algorithm to this event.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIOHIDScrollEventOptionsNoAcceleration
 ```
 

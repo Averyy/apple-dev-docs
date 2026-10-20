@@ -1,7 +1,8 @@
 # errSecMissingAttributeRounds
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The number of rounds attribute is missing.
 
@@ -18,6 +19,10 @@ The number of rounds attribute is missing.
 
 ```swift
 var errSecMissingAttributeRounds: OSStatus { get }
+```
+
+```c
+errSecMissingAttributeRounds
 ```
 
 

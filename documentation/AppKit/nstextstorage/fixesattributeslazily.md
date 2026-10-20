@@ -1,7 +1,8 @@
 # fixesAttributesLazily
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the text storage object fixes attributes lazily.
 
@@ -14,15 +15,20 @@ A Boolean value that indicates whether the text storage object fixes attributes 
 var fixesAttributesLazily: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL fixesAttributesLazily;
+```
+
 #### Discussion
 
-When subclassing, the default value of this property is [`false`](https://developer.apple.com/documentation/swift/false), meaning that your subclass fixes attributes immediately when they change. The system’s concrete subclass overrides this property and sets it to [`true`](https://developer.apple.com/documentation/swift/true).
+When subclassing, the default value of this property is [`false`](../../Swift/false.md), meaning that your subclass fixes attributes immediately when they change. The system’s concrete subclass overrides this property and sets it to [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [func invalidateAttributes(in: NSRange)](nstextstorage/invalidateattributes(in:).md)
+### Fixing the string attributes
+- [func invalidateAttributes(in: NSRange)](./invalidateattributes%28in%29.md)
   Invalidates attributes in the specified range.
-- [func ensureAttributesAreFixed(in: NSRange)](nstextstorage/ensureattributesarefixed(in:).md)
+- [func ensureAttributesAreFixed(in: NSRange)](./ensureattributesarefixed%28in%29.md)
   Ensures that attribute fixing occurs in the specified range.
 
 

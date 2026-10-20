@@ -1,7 +1,8 @@
 # timeMapping
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time mapping for this segment.
 
@@ -20,17 +21,22 @@ The time mapping for this segment.
 var timeMapping: CMTimeMapping { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMTimeMapping timeMapping;
+```
+
 #### Discussion
 
-The time mapping’s source time range represents the start time and duration in the segment source’s timeline, either the primary item or interstitial event. The target time range represents the start time and duration in the integrated timeline. For interstitial events that occupy a single point, the target’s duration is [`zero`](https://developer.apple.com/documentation/coremedia/cmtime/zero).
+The time mapping’s source time range represents the start time and duration in the segment source’s timeline, either the primary item or interstitial event. The target time range represents the start time and duration in the integrated timeline. For interstitial events that occupy a single point, the target’s duration is [`zero`](../../CoreMedia/cmtime/zero.md).
 
 ## See Also
 
-- [var loadedTimeRanges: [CMTimeRange]](avplayeritemsegment/loadedtimeranges-879hc.md)
+### Inspecting the segment
+- [var loadedTimeRanges: [CMTimeRange]](./loadedtimeranges-879hc.md)
   The time ranges for the segment that have media data is readily available.
-- [var startDate: Date?](avplayeritemsegment/startdate.md)
+- [var startDate: Date?](./startdate.md)
   The date at which a segment starts.
-- [var interstitialEvent: AVPlayerInterstitialEvent?](avplayeritemsegment/interstitialevent.md)
+- [var interstitialEvent: AVPlayerInterstitialEvent?](./interstitialevent.md)
   The associated interstitial event for this segment.
 
 

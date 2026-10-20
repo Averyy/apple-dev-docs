@@ -1,6 +1,7 @@
 # Integrating a Text-Based Schema into Your Workflow
 
-**Framework**: CloudKit
+**Framework**: CloudKit  
+**Role**: Article
 
 Define and update your schema with the CloudKit Schema Language.
 
@@ -12,7 +13,7 @@ When publishing a schema, CloudKit attempts to apply changes to the existing sch
 
 For containers with an existing schema, use the CloudKit command line tools to download the container’s schema. Manually constructing your existing schema by hand isn’t recommended, as any mistakes may result in your existing sandbox data becoming inaccessible. A good practice is to integrate the schema into your source code repository.
 
-##### Learn the Cloudkit Schema Language Grammar
+##### Learn the CloudKit Schema Language Grammar
 
 The grammar for the CloudKit Schema Language contains all the elements to define your schema. Use the grammar to create roles, declare record types and their permissions, as well as specify data types and options for each field in the record.
 
@@ -190,17 +191,18 @@ DEFINE SCHEMA
 
 ## See Also
 
-- [Designing and Creating a CloudKit Database](designing-and-creating-a-cloudkit-database.md)
+### Schemas
+- [Designing and Creating a CloudKit Database](./designing-and-creating-a-cloudkit-database.md)
   Create a schema to store your app’s objects as records in iCloud using CloudKit.
-- [Managing iCloud Containers with CloudKit Database App](managing-icloud-containers-with-cloudkit-database-app.md)
+- [Managing iCloud Containers with CloudKit Database App](./managing-icloud-containers-with-cloudkit-database-app.md)
   Inspect and modify the schema and data for your app’s iCloud container.
-- [class CKRecordZone](ckrecordzone.md)
+- [class CKRecordZone](./ckrecordzone.md)
   A database partition that contains related records.
-- [class CKRecord](ckrecord.md)
+- [class CKRecord](./ckrecord.md)
   A collection of key-value pairs that store your app’s data.
-- [CKRecord.Reference](ckrecord/reference.md)
+- [CKRecord.Reference](./ckrecord/reference.md)
   A relationship between two records in a record zone.
-- [class CKAsset](ckasset.md)
+- [class CKAsset](./ckasset.md)
   An external file that belongs to a record.
 
 

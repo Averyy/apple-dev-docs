@@ -1,7 +1,8 @@
 # userName
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user name associated with the generator. When instantiating from JSON, this property will be populated from the “username” field.
 

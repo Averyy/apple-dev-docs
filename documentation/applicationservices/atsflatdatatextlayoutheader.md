@@ -1,7 +1,8 @@
 # ATSFlatDataTextLayoutHeader
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.3+
@@ -12,14 +13,20 @@
 struct ATSFlatDataTextLayoutHeader
 ```
 
+```c
+typedef struct ATSFlatDataTextLayoutHeader {
+    ...
+} ATSFlatDataTextLayoutHeader;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](atsflatdatatextlayoutheader/1464272-init.md)
-- [init(numFlattenedTextLayouts: UInt32, flattenedTextLayouts: ATSFlatDataTextLayoutDataHeader)](atsflatdatatextlayoutheader/1464280-init.md)
+- [init()](./atsflatdatatextlayoutheader/api-1464272-init.md)
+- [init(numFlattenedTextLayouts: UInt32, flattenedTextLayouts: ATSFlatDataTextLayoutDataHeader)](./atsflatdatatextlayoutheader/api-1464280-init.md)
 ### Instance Properties
-- [var flattenedTextLayouts: ATSFlatDataTextLayoutDataHeader](atsflatdatatextlayoutheader/1463120-flattenedtextlayouts.md)
-- [var numFlattenedTextLayouts: UInt32](atsflatdatatextlayoutheader/1460854-numflattenedtextlayouts.md)
+- [var flattenedTextLayouts: ATSFlatDataTextLayoutDataHeader](./atsflatdatatextlayoutheader/api-1463120-flattenedtextlayouts.md)
+- [var numFlattenedTextLayouts: UInt32](./atsflatdatatextlayoutheader/api-1460854-numflattenedtextlayouts.md)
 
 
 ---

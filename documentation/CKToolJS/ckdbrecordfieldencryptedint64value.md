@@ -1,7 +1,8 @@
 # CKDBRecordFieldEncryptedInt64Value
 
 **Framework**: CKTool JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The value of the encrypted field of type int64.
 
@@ -10,7 +11,7 @@ The value of the encrypted field of type int64.
 
 ## Declaration
 
-```swift
+```
 dictionary CKDBRecordFieldEncryptedInt64Value {
 	string type;
 	Int64? value;
@@ -30,18 +31,19 @@ import type { CKDBRecordFieldEncryptedInt64Value } from "@apple/cktool.database"
 ## Topics
 
 ### Instance Properties
-- [type](ckdbrecordfieldencryptedint64value/type.md)
+- [type](./ckdbrecordfieldencryptedint64value/type.md)
   A string used to identify the field type.
-- [value](ckdbrecordfieldencryptedint64value/value.md)
+- [value](./ckdbrecordfieldencryptedint64value/value.md)
   An int64 value.
 
 ## See Also
 
-- [CKDBRecordFieldInt64Value](ckdbrecordfieldint64value.md)
+### Int64
+- [CKDBRecordFieldInt64Value](./ckdbrecordfieldint64value.md)
   The value of the field of type int64.
-- [CKDBRecordFieldInt64ListValue](ckdbrecordfieldint64listvalue.md)
+- [CKDBRecordFieldInt64ListValue](./ckdbrecordfieldint64listvalue.md)
   The value of the field of type int64 list.
-- [CKDBRecordFieldEncryptedInt64ListValue](ckdbrecordfieldencryptedint64listvalue.md)
+- [CKDBRecordFieldEncryptedInt64ListValue](./ckdbrecordfieldencryptedint64listvalue.md)
   The value of the encrypted field of type int64 list.
 
 

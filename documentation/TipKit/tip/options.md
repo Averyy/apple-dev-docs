@@ -2,6 +2,7 @@
 
 **Framework**: TipKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Customizations for a tip.
@@ -24,13 +25,14 @@ Customizations for a tip.
 
 ## See Also
 
-- [typealias Option](tip/option.md)
+### Customizing tip behavior
+- [typealias Option](./option.md)
   A type that represents the various customizations that you can make to a tip’s behavior.
-- [typealias IgnoresDisplayFrequency](tip/ignoresdisplayfrequency.md)
+- [typealias IgnoresDisplayFrequency](./ignoresdisplayfrequency.md)
   Controls whether a tip obeys the preconfigured display frequency interval.
-- [typealias MaxDisplayCount](tip/maxdisplaycount.md)
+- [typealias MaxDisplayCount](./maxdisplaycount.md)
   Specifies the maximum number of times a tip displays before the system automatically invalidates it.
-- [typealias MaxDisplayDuration](tip/maxdisplayduration.md)
+- [typealias MaxDisplayDuration](./maxdisplayduration.md)
   Specifies the maximum amount of time a tip is displayed before it is invalidated.
 
 

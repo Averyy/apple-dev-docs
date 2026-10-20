@@ -1,7 +1,8 @@
 # init(domain:)
 
 **Framework**: Managed Settings  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that represents the specified web domain.
 
@@ -18,7 +19,7 @@ init(domain: String)
 
 #### Discussion
 
-Provide a high-level domain, such as `example.com`. To protect a family’s privacy, use [`init(token:)`](webdomain/init(token:).md) instead.
+Provide a high-level domain, such as `example.com`. To protect a family’s privacy, use [`init(token:)`](./init%28token%29.md) instead.
 
 ## Parameters
 
@@ -26,7 +27,8 @@ Provide a high-level domain, such as `example.com`. To protect a family’s priv
 
 ## See Also
 
-- [init(token: WebDomainToken)](webdomain/init(token:).md)
+### Creating a web domain
+- [init(token: WebDomainToken)](./init%28token%29.md)
   Creates an object that represents the provided domain.
 
 

@@ -1,17 +1,18 @@
 # MusicSequenceFileTypeID.iMelodyType
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An iMelody file type.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,14 @@ An iMelody file type.
 case iMelodyType
 ```
 
+```c
+kMusicSequenceFile_iMelodyType
+```
+
 ## See Also
 
-- [MusicSequenceFileTypeID.midiType](musicsequencefiletypeid/miditype.md)
+### Constants
+- [MusicSequenceFileTypeID.midiType](./miditype.md)
   A MIDI file type
 
 

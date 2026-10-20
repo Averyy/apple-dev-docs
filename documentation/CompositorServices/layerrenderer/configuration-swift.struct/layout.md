@@ -1,7 +1,8 @@
 # layout
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout being used by the layer.
 
@@ -17,11 +18,12 @@ var layout: LayerRenderer.Layout { get set }
 
 #### Discussion
 
-Layouts define how Compositor Services creates the color and depth textures it passes to your app. A layout might use separate textures for each view, or combine the content from multiple views into a single texture. The layout type also determines which Metal texture type to create. For more information about the supported layouts, see [`LayerRenderer.Layout`](layerrenderer/layout.md).
+Layouts define how Compositor Services creates the color and depth textures it passes to your app. A layout might use separate textures for each view, or combine the content from multiple views into a single texture. The layout type also determines which Metal texture type to create. For more information about the supported layouts, see [`LayerRenderer.Layout`](../layout.md).
 
 ## See Also
 
-- [LayerRenderer.Layout](layerrenderer/layout.md)
+### Configuring the texture layout
+- [LayerRenderer.Layout](../layout.md)
   Constants that specify the organization of the textures you use for drawing.
 
 

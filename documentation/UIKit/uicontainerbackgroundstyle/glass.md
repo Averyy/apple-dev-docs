@@ -1,7 +1,8 @@
 # UIContainerBackgroundStyle.glass
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - visionOS 1.0+
@@ -10,6 +11,10 @@
 
 ```swift
 case glass
+```
+
+```c
+UIContainerBackgroundStyleGlass
 ```
 
 

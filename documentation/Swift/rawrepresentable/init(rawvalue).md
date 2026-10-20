@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates a new instance with the specified raw value.

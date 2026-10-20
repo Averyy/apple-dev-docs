@@ -1,14 +1,15 @@
 # tpidr2_el0
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 __uint64_t tpidr2_el0;
 ```
 

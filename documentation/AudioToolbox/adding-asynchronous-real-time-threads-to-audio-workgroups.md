@@ -1,6 +1,7 @@
 # Adding Asynchronous Real-Time Threads to Audio Workgroups
 
-**Framework**: Audio Toolbox
+**Framework**: Audio Toolbox  
+**Role**: Article
 
 Optimize system performance by adding real-time audio threads that run asynchronously to the I/O thread to custom audio workgroups.
 
@@ -10,7 +11,7 @@ If your app creates auxiliary real-time threads that run asynchronously to the a
 
 ##### Create Workgroups
 
-If your auxiliary real-time threads run asynchronously to the I/O thread, you don’t add them to the audio device workgroup, but instead create a new audio workgroup. For each thread that has a unique work interval, create a new audio workgroup for it by calling [`AudioWorkIntervalCreate`](audioworkintervalcreate.md). Your workgroup may contain multiple threads, but only one is the primary thread and is responsible for controlling the others. In this thread, call [`os_workgroup_interval_start`](https://developer.apple.com/documentation/os/os_workgroup_interval_start) in each work cycle. The start time that you pass to this function can be the present, or a time in the past if you know exactly when the system scheduled your work cycle to begin. The function’s deadline argument has to be a timestamp value greater than the start time.
+If your auxiliary real-time threads run asynchronously to the I/O thread, you don’t add them to the audio device workgroup, but instead create a new audio workgroup. For each thread that has a unique work interval, create a new audio workgroup for it by calling [`AudioWorkIntervalCreate`](./audioworkintervalcreate.md). Your workgroup may contain multiple threads, but only one is the primary thread and is responsible for controlling the others. In this thread, call [`os_workgroup_interval_start`](../os/os_workgroup_interval_start.md) in each work cycle. The start time that you pass to this function can be the present, or a time in the past if you know exactly when the system scheduled your work cycle to begin. The function’s deadline argument has to be a timestamp value greater than the start time.
 
 ```objc
 #include <mach/mach_time.h>
@@ -125,11 +126,12 @@ void realtimeThreadFunction(os_workgroup_t workgroup) {
 
 ## See Also
 
-- [Understanding Audio Workgroups](understanding-audio-workgroups.md)
+### Essentials
+- [Understanding Audio Workgroups](./understanding-audio-workgroups.md)
   Learn how to optimize real-time rendering performance with the Audio Workgroups API.
-- [Adding Parallel Real-Time Threads to Audio Workgroups](adding-parallel-real-time-threads-to-audio-workgroups.md)
+- [Adding Parallel Real-Time Threads to Audio Workgroups](./adding-parallel-real-time-threads-to-audio-workgroups.md)
   Optimize the performance of real-time audio threads that run in sync with the I/O thread by adding them to the audio device workgroup.
-- [Adding Audio Unit Auxiliary Real-Time Threads to Audio Workgroups](adding-audio-unit-auxiliary-real-time-threads-to-audio-workgroups.md)
+- [Adding Audio Unit Auxiliary Real-Time Threads to Audio Workgroups](./adding-audio-unit-auxiliary-real-time-threads-to-audio-workgroups.md)
   If your Audio Unit plug-in creates auxiliary real-time rendering threads, add them to the host app’s audio workgroup so the system can schedule them appropriately.
 
 

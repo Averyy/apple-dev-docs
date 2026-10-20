@@ -1,7 +1,8 @@
 # pointsOfInterest
 
 **Framework**: os  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The category you use to log signposts.
 
@@ -11,7 +12,7 @@ The category you use to log signposts.
 - Mac Catalyst 12.0+
 - macOS 10.14+
 - tvOS 12.0+
-- visionOS ?+
+- visionOS
 - watchOS 5.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ static let pointsOfInterest: OSLog.Category
 
 ## See Also
 
-- [static let dynamicStackTracing: OSLog.Category](oslog/category/dynamicstacktracing.md)
+### Logging Signposts
+- [static let dynamicStackTracing: OSLog.Category](./dynamicstacktracing.md)
   The category for dynamic stack tracing.
-- [static let dynamicTracing: OSLog.Category](oslog/category/dynamictracing.md)
+- [static let dynamicTracing: OSLog.Category](./dynamictracing.md)
   The category for dynamic tracing.
 
 

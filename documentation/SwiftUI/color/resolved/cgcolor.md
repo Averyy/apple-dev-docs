@@ -1,7 +1,8 @@
 # cgColor
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Core Graphics representation of the color.
 
@@ -22,7 +23,7 @@ var cgColor: CGColor { get }
 
 #### Discussion
 
-You can get a [`CGColor`](https://developer.apple.com/documentation/coregraphics/cgcolor) instance from a resolved color.
+You can get a [`CGColor`](../../../CoreGraphics/cgcolor.md) instance from a resolved color.
 
 
 ---

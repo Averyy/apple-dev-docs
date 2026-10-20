@@ -1,7 +1,8 @@
 # SFSpeechRecognitionTaskState
 
 **Framework**: Speech  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The state of the task associated with the recognition request.
 
@@ -18,37 +19,42 @@ The state of the task associated with the recognition request.
 enum SFSpeechRecognitionTaskState
 ```
 
+```c
+enum SFSpeechRecognitionTaskState : NSInteger;
+```
+
 ## Topics
 
 ### Task states
-- [SFSpeechRecognitionTaskState.canceling](sfspeechrecognitiontaskstate/canceling.md)
+- [SFSpeechRecognitionTaskState.canceling](./sfspeechrecognitiontaskstate/canceling.md)
   Delivery of recognition results has finished, but audio recording may be ongoing.
-- [SFSpeechRecognitionTaskState.completed](sfspeechrecognitiontaskstate/completed.md)
+- [SFSpeechRecognitionTaskState.completed](./sfspeechrecognitiontaskstate/completed.md)
   Delivery of recognition requests has finished and audio recording has stopped.
-- [SFSpeechRecognitionTaskState.finishing](sfspeechrecognitiontaskstate/finishing.md)
+- [SFSpeechRecognitionTaskState.finishing](./sfspeechrecognitiontaskstate/finishing.md)
   Audio recording has stopped, but delivery of recognition results may continue.
-- [SFSpeechRecognitionTaskState.running](sfspeechrecognitiontaskstate/running.md)
+- [SFSpeechRecognitionTaskState.running](./sfspeechrecognitiontaskstate/running.md)
   Speech recognition (potentially including audio recording) is in progress.
-- [SFSpeechRecognitionTaskState.starting](sfspeechrecognitiontaskstate/starting.md)
+- [SFSpeechRecognitionTaskState.starting](./sfspeechrecognitiontaskstate/starting.md)
   Speech recognition (potentially including audio recording) has not yet started.
 ### Initializers
-- [init?(rawValue: Int)](sfspeechrecognitiontaskstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./sfspeechrecognitiontaskstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class SFSpeechRecognitionTask](sfspeechrecognitiontask.md)
+### In-progress requests
+- [class SFSpeechRecognitionTask](./sfspeechrecognitiontask.md)
   A task object for monitoring the speech recognition progress.
-- [protocol SFSpeechRecognitionTaskDelegate](sfspeechrecognitiontaskdelegate.md)
+- [protocol SFSpeechRecognitionTaskDelegate](./sfspeechrecognitiontaskdelegate.md)
   A protocol with methods for managing multi-utterance speech recognition requests.
 
 

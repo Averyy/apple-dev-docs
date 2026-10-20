@@ -1,7 +1,8 @@
 # startInteraction(onEquipmentID:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts a local interaction. It will return `nil` if too many interactions are already happening at the same time.
 

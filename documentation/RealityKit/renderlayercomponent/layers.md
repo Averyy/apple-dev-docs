@@ -1,7 +1,8 @@
 # layers
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layers this entity participates in.
 
@@ -21,17 +22,18 @@ var layers: RenderLayer.Set
 
 #### Discussion
 
-A layer is either a custom layer you define in an extension to [`RenderLayer`](renderlayer.md) or [`defaultLayer`](renderlayer/defaultlayer.md). Common conventions include:
+A layer is either a custom layer you define in an extension to [`RenderLayer`](../renderlayer.md) or [`defaultLayer`](../renderlayer/defaultlayer.md). Common conventions include:
 
-- [`defaultLayer`](renderlayer/defaultlayer.md) for general entities
+- [`defaultLayer`](../renderlayer/defaultlayer.md) for general entities
 - `RenderLayer("com.myapp.hero")` for main character objects
 - `RenderLayer("com.myapp.background")` for background elements
 - `RenderLayer("com.myapp.props")` for scene props
 
 ## See Also
 
-- [static let defaultLayer: RenderLayerComponent](renderlayercomponent/defaultlayer.md)
-  A render layer component that contains only [`defaultLayer`](renderlayer/defaultlayer.md).
+### Accessing render layers
+- [static let defaultLayer: RenderLayerComponent](./defaultlayer.md)
+  A render layer component that contains only [`defaultLayer`](../renderlayer/defaultlayer.md).
 
 
 ---

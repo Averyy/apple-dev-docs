@@ -1,7 +1,8 @@
 # HMCharacteristicValueLockMechanismLastKnownAction.unsecuredUsingPhysicalMovement
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The last known action was for the lock to be unsecured using physical movement.
 
@@ -19,27 +20,32 @@ The last known action was for the lock to be unsecured using physical movement.
 case unsecuredUsingPhysicalMovement
 ```
 
+```c
+HMCharacteristicValueLockMechanismLastKnownActionUnsecuredUsingPhysicalMovement
+```
+
 ## See Also
 
-- [HMCharacteristicValueLockMechanismLastKnownAction.securedRemotely](hmcharacteristicvaluelockmechanismlastknownaction/securedremotely.md)
+### Lock Mechanism Actions
+- [HMCharacteristicValueLockMechanismLastKnownAction.securedRemotely](./securedremotely.md)
   The last known action was for the lock to be secured remotely.
-- [HMCharacteristicValueLockMechanismLastKnownAction.securedUsingPhysicalMovement](hmcharacteristicvaluelockmechanismlastknownaction/securedusingphysicalmovement.md)
+- [HMCharacteristicValueLockMechanismLastKnownAction.securedUsingPhysicalMovement](./securedusingphysicalmovement.md)
   The last known action was for the lock to be secured using physical movement.
-- [HMCharacteristicValueLockMechanismLastKnownAction.securedUsingPhysicalMovementExterior](hmcharacteristicvaluelockmechanismlastknownaction/securedusingphysicalmovementexterior.md)
+- [HMCharacteristicValueLockMechanismLastKnownAction.securedUsingPhysicalMovementExterior](./securedusingphysicalmovementexterior.md)
   The last known action was for the lock to be secured using physical movement on the exterior of the door.
-- [HMCharacteristicValueLockMechanismLastKnownAction.securedUsingPhysicalMovementInterior](hmcharacteristicvaluelockmechanismlastknownaction/securedusingphysicalmovementinterior.md)
+- [HMCharacteristicValueLockMechanismLastKnownAction.securedUsingPhysicalMovementInterior](./securedusingphysicalmovementinterior.md)
   The last known action was for the lock to be secured using physical movement on the interior of the door.
-- [HMCharacteristicValueLockMechanismLastKnownAction.securedWithAutomaticSecureTimeout](hmcharacteristicvaluelockmechanismlastknownaction/securedwithautomaticsecuretimeout.md)
+- [HMCharacteristicValueLockMechanismLastKnownAction.securedWithAutomaticSecureTimeout](./securedwithautomaticsecuretimeout.md)
   The last known action was for the lock to be secured automatically after a timeout period expired.
-- [HMCharacteristicValueLockMechanismLastKnownAction.securedWithKeypad](hmcharacteristicvaluelockmechanismlastknownaction/securedwithkeypad.md)
+- [HMCharacteristicValueLockMechanismLastKnownAction.securedWithKeypad](./securedwithkeypad.md)
   The last known action was for the lock to be secured using a keypad.
-- [HMCharacteristicValueLockMechanismLastKnownAction.unsecuredRemotely](hmcharacteristicvaluelockmechanismlastknownaction/unsecuredremotely.md)
+- [HMCharacteristicValueLockMechanismLastKnownAction.unsecuredRemotely](./unsecuredremotely.md)
   The last known action was for the lock to be unsecured remotely.
-- [HMCharacteristicValueLockMechanismLastKnownAction.unsecuredUsingPhysicalMovementExterior](hmcharacteristicvaluelockmechanismlastknownaction/unsecuredusingphysicalmovementexterior.md)
+- [HMCharacteristicValueLockMechanismLastKnownAction.unsecuredUsingPhysicalMovementExterior](./unsecuredusingphysicalmovementexterior.md)
   The last known action was for the lock to be unsecured using physical movement on the exterior of the door.
-- [HMCharacteristicValueLockMechanismLastKnownAction.unsecuredUsingPhysicalMovementInterior](hmcharacteristicvaluelockmechanismlastknownaction/unsecuredusingphysicalmovementinterior.md)
+- [HMCharacteristicValueLockMechanismLastKnownAction.unsecuredUsingPhysicalMovementInterior](./unsecuredusingphysicalmovementinterior.md)
   The last known action was for the lock to be unsecured using physical movement on the interior of the door.
-- [HMCharacteristicValueLockMechanismLastKnownAction.unsecuredWithKeypad](hmcharacteristicvaluelockmechanismlastknownaction/unsecuredwithkeypad.md)
+- [HMCharacteristicValueLockMechanismLastKnownAction.unsecuredWithKeypad](./unsecuredwithkeypad.md)
   The last known action was for the lock to be unsecured using a keypad.
 
 

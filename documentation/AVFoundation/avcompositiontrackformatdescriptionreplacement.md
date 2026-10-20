@@ -1,7 +1,8 @@
 # AVCompositionTrackFormatDescriptionReplacement
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a format description and its replacement.
 
@@ -20,37 +21,42 @@ An object that represents a format description and its replacement.
 class AVCompositionTrackFormatDescriptionReplacement
 ```
 
+```objc
+@interface AVCompositionTrackFormatDescriptionReplacement : NSObject
+```
+
 ## Topics
 
 ### Managing format descriptions
-- [var originalFormatDescription: CMFormatDescription](avcompositiontrackformatdescriptionreplacement/originalformatdescription.md)
+- [var originalFormatDescription: CMFormatDescription](./avcompositiontrackformatdescriptionreplacement/originalformatdescription.md)
   The format description to replace.
-- [var replacementFormatDescription: CMFormatDescription](avcompositiontrackformatdescriptionreplacement/replacementformatdescription.md)
+- [var replacementFormatDescription: CMFormatDescription](./avcompositiontrackformatdescriptionreplacement/replacementformatdescription.md)
   The replacement format description.
 ### Initializers
-- [init?(coder: NSCoder)](avcompositiontrackformatdescriptionreplacement/init(coder:).md)
+- [init?(coder: NSCoder)](./avcompositiontrackformatdescriptionreplacement/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var formatDescriptions: [Any]](avcompositiontrack/formatdescriptions.md)
+### Managing format descriptions
+- [var formatDescriptions: [Any]](./avcompositiontrack/formatdescriptions.md)
   The format descriptions of the media samples that a track references.
-- [var formatDescriptionReplacements: [AVCompositionTrackFormatDescriptionReplacement]](avcompositiontrack/formatdescriptionreplacements.md)
+- [var formatDescriptionReplacements: [AVCompositionTrackFormatDescriptionReplacement]](./avcompositiontrack/formatdescriptionreplacements.md)
   The replacement format descriptions.
 
 

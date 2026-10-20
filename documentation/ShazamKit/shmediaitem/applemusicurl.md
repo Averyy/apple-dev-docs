@@ -1,7 +1,8 @@
 # appleMusicURL
 
 **Framework**: ShazamKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A link to the Apple Music page that contains the full information for the song.
 
@@ -20,11 +21,24 @@ A link to the Apple Music page that contains the full information for the song.
 var appleMusicURL: URL? { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, strong, readonly, nullable) NSURL * appleMusicURL;
+```
+
+*macOS*
+
+```objc
+@property (atomic, strong, readonly, nullable) NSURL * appleMusicURL;
+```
+
 ## See Also
 
-- [var songs: [Song]](shmediaitem/songs.md)
+### Reading Apple Music properties
+- [var songs: [Song]](./songs.md)
   An array of MusicKit song objects that represent the song.
-- [var appleMusicID: String?](shmediaitem/applemusicid.md)
+- [var appleMusicID: String?](./applemusicid.md)
   The Apple Music ID for the song.
 
 

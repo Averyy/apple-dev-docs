@@ -1,7 +1,8 @@
 # BackgroundAssetVersion.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a background asset version resource.
 
@@ -10,14 +11,14 @@ Attributes that describe a background asset version resource.
 
 ## Declaration
 
-```swift
+```
 object BackgroundAssetVersion.Attributes
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BackgroundAssetVersion.Attributes.StateDetails](backgroundassetversion/attributes-data.dictionary/statedetails-data.dictionary.md)
+- [object BackgroundAssetVersion.Attributes.StateDetails](./attributes-data.dictionary/statedetails-data.dictionary.md)
   Details about errors, warnings, and informational messages related to the state.
 
 ## Properties

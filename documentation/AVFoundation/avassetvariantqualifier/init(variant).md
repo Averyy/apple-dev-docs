@@ -1,7 +1,8 @@
 # init(variant:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a variant qualifier with an asset variant.
 
@@ -20,15 +21,20 @@ Creates a variant qualifier with an asset variant.
 convenience init(variant: AVAssetVariant)
 ```
 
+```objc
++ (instancetype) assetVariantQualifierWithVariant:(AVAssetVariant *) variant;
+```
+
 ## Parameters
 
 - `variant`: The asset variant for the qualifier.
 
 ## See Also
 
-- [class AVAssetVariant](avassetvariant.md)
+### Creating a variant qualifier
+- [class AVAssetVariant](../avassetvariant.md)
   An object that represents a bit rate variant.
-- [convenience init(predicate: NSPredicate)](avassetvariantqualifier/init(predicate:).md)
+- [convenience init(predicate: NSPredicate)](./init%28predicate%29.md)
   Creates a variant qualifier with a predicate.
 
 

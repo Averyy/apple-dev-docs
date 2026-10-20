@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,13 +18,13 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kRegIterChildren](1645155-anonymous/kregiterchildren.md)
-- [kRegIterContinue](1645155-anonymous/kregitercontinue.md)
-- [kRegIterDescendants](1645155-anonymous/kregiterdescendants.md)
-- [kRegIterParents](1645155-anonymous/kregiterparents.md)
-- [kRegIterRoot](1645155-anonymous/kregiterroot.md)
-- [kRegIterSibling](1645155-anonymous/kregitersibling.md)
-- [kRegIterSubTrees](1645155-anonymous/kregitersubtrees.md)
+- [kRegIterChildren](./api-1645155-anonymous/kregiterchildren.md)
+- [kRegIterContinue](./api-1645155-anonymous/kregitercontinue.md)
+- [kRegIterDescendants](./api-1645155-anonymous/kregiterdescendants.md)
+- [kRegIterParents](./api-1645155-anonymous/kregiterparents.md)
+- [kRegIterRoot](./api-1645155-anonymous/kregiterroot.md)
+- [kRegIterSibling](./api-1645155-anonymous/kregitersibling.md)
+- [kRegIterSubTrees](./api-1645155-anonymous/kregitersubtrees.md)
 
 
 ---

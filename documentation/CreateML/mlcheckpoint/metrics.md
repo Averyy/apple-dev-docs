@@ -1,7 +1,8 @@
 # metrics
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Measurements of the model’s performance at the time the session saved the checkpoint.
 
@@ -21,7 +22,8 @@ var metrics: [MLProgress.Metric : Any] { get set }
 
 ## See Also
 
-- [MLProgress.Metric](mlprogress/metric.md)
+### Assessing a checkpoint
+- [MLProgress.Metric](../mlprogress/metric.md)
   Metrics you use to evaluate a model’s performance during a training session.
 
 

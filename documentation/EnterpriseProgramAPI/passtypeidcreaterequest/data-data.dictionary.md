@@ -1,26 +1,27 @@
 # PassTypeIdCreateRequest.Data
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request body.
 
 ## Declaration
 
-```swift
+```
 object PassTypeIdCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object PassTypeIdCreateRequest.Data.Attributes](passtypeidcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object PassTypeIdCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that you set that describe the new resource.
 
 ## Properties
 
 - `attributes` (PassTypeIdCreateRequest.Data.Attributes) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `passTypeIds`
 
 
 ---

@@ -1,7 +1,8 @@
 # MTRThermostatControlSequenceOfOperation
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.4+
@@ -18,27 +19,31 @@
 enum MTRThermostatControlSequenceOfOperation
 ```
 
+```c
+enum MTRThermostatControlSequenceOfOperation : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRThermostatControlSequenceOfOperation.coolingAndHeating](mtrthermostatcontrolsequenceofoperation/coolingandheating.md)
-- [MTRThermostatControlSequenceOfOperation.coolingAndHeatingWithReheat](mtrthermostatcontrolsequenceofoperation/coolingandheatingwithreheat.md)
-- [MTRThermostatControlSequenceOfOperation.coolingOnly](mtrthermostatcontrolsequenceofoperation/coolingonly.md)
-- [MTRThermostatControlSequenceOfOperation.coolingWithReheat](mtrthermostatcontrolsequenceofoperation/coolingwithreheat.md)
-- [MTRThermostatControlSequenceOfOperation.heatingOnly](mtrthermostatcontrolsequenceofoperation/heatingonly.md)
-- [MTRThermostatControlSequenceOfOperation.heatingWithReheat](mtrthermostatcontrolsequenceofoperation/heatingwithreheat.md)
+- [MTRThermostatControlSequenceOfOperation.coolingAndHeating](./mtrthermostatcontrolsequenceofoperation/coolingandheating.md)
+- [MTRThermostatControlSequenceOfOperation.coolingAndHeatingWithReheat](./mtrthermostatcontrolsequenceofoperation/coolingandheatingwithreheat.md)
+- [MTRThermostatControlSequenceOfOperation.coolingOnly](./mtrthermostatcontrolsequenceofoperation/coolingonly.md)
+- [MTRThermostatControlSequenceOfOperation.coolingWithReheat](./mtrthermostatcontrolsequenceofoperation/coolingwithreheat.md)
+- [MTRThermostatControlSequenceOfOperation.heatingOnly](./mtrthermostatcontrolsequenceofoperation/heatingonly.md)
+- [MTRThermostatControlSequenceOfOperation.heatingWithReheat](./mtrthermostatcontrolsequenceofoperation/heatingwithreheat.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrthermostatcontrolsequenceofoperation/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrthermostatcontrolsequenceofoperation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

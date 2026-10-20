@@ -1,7 +1,8 @@
 # handoffReply(to:_:)
 
 **Framework**: XPC  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the system when message processing and response continues in a separate dispatch queue.
 
@@ -11,7 +12,7 @@ Informs the system when message processing and response continues in a separate 
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -27,7 +28,7 @@ This method always returns `nil`, allowing a message handler closure to return a
 
 #### Discussion
 
-You can only call this method from the context of a message handler closure, or from a continuation closure passed to [`handoffReply(to:_:)`](xpcreceivedmessage/handoffreply(to:_:).md).
+You can only call this method from the context of a message handler closure, or from a continuation closure passed to [`handoffReply(to:_:)`](./handoffreply%28to,_%29.md).
 
 ## Parameters
 
@@ -36,9 +37,10 @@ You can only call this method from the context of a message handler closure, or 
 
 ## See Also
 
-- [var expectsReply: Bool](xpcreceivedmessage/expectsreply.md)
+### Replying to messages
+- [var expectsReply: Bool](./expectsreply.md)
   A Boolean value that indicates if the client that sent the message expects a reply.
-- [func reply<Message>(Message)](xpcreceivedmessage/reply(_:).md)
+- [func reply<Message>(Message)](./reply%28_%29.md)
   Sends a reply to the originator of the message.
 
 

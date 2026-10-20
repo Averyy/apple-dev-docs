@@ -1,7 +1,8 @@
 # invalidUnarchiveOperationException
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The name of the exception raised by `NSKeyedArchiver` if there is a problem extracting an archive.
 
@@ -18,6 +19,10 @@ The name of the exception raised by `NSKeyedArchiver` if there is a problem extr
 
 ```swift
 static let invalidUnarchiveOperationException: NSExceptionName
+```
+
+```c
+extern NSExceptionName const NSInvalidUnarchiveOperationException;
 ```
 
 

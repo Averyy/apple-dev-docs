@@ -1,7 +1,8 @@
 # FormatFlagIsBigEndian
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A flag to indicate whether samples use big-endian values.
 
@@ -10,7 +11,7 @@ A flag to indicate whether samples use big-endian values.
 
 ## Declaration
 
-```swift
+```c
 FormatFlagIsBigEndian
 ```
 
@@ -20,9 +21,10 @@ Set this flag for big-endian values; clear it for little-endian.
 
 ## See Also
 
-- [LinearPCMFormatFlagIsBigEndian](audiodriverkit/iouseraudioformatflags/linearpcmformatflagisbigendian.md)
+### Endianness Flags
+- [LinearPCMFormatFlagIsBigEndian](./linearpcmformatflagisbigendian.md)
   A flag to indicate whether PCM samples use big-endian values.
-- [FormatFlagsNativeEndian](audiodriverkit/iouseraudioformatflags/formatflagsnativeendian.md)
+- [FormatFlagsNativeEndian](./formatflagsnativeendian.md)
   A flag to indicate whether samples use the platform’s native endianness for its values.
 
 

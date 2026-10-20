@@ -1,15 +1,18 @@
 # detectsCustomRoutes
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether route detection includes custom routes.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- visionOS 1.0+
+- iOS 16.0+ - Deprecated in 27.0
+- iPadOS 16.0+ - Deprecated in 27.0
+- Mac Catalyst 16.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: To detect custom routes, adopt the [AVSystemRouting](../../AVSystemRouting/AVSystemRouting.md) framework instead.
 
 ## Declaration
 
@@ -17,9 +20,13 @@ A Boolean value that indicates whether route detection includes custom routes.
 var detectsCustomRoutes: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL detectsCustomRoutes;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). Only set it to [`true`](https://developer.apple.com/documentation/swift/true) if your app uses an instance of [`AVCustomRoutingController`](https://developer.apple.com/documentation/avrouting/avcustomroutingcontroller).
+The default value is [`false`](../../Swift/false.md). Only set it to [`true`](../../Swift/true.md) if your app uses an instance of [`AVCustomRoutingController`](../../AVRouting/avcustomroutingcontroller.md).
 
 
 ---

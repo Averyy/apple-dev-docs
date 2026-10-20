@@ -1,7 +1,8 @@
 # init
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes an instance of the audio box class.
 
@@ -10,7 +11,7 @@ Initializes an instance of the audio box class.
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init(IOUserAudioDriver *in_driver, bool in_is_acquirable, OSString *in_box_uid);
 ```
 
@@ -20,19 +21,20 @@ virtual bool init(IOUserAudioDriver *in_driver, bool in_is_acquirable, OSString 
 
 #### Discussion
 
-Always pass in the [`IOUserAudioDriver`](iouseraudiodriver.md) and arguments. The no-argument ``IOUserAudioBox/init```()`always returns`false`.
+Always pass in the [`IOUserAudioDriver`](../iouseraudiodriver.md) and arguments. The no-argument ``IOUserAudioBox/init```()`always returns`false`.
 
 ## Parameters
 
-- `in_driver`: The [`IOUserAudioDriver`](iouseraudiodriver.md) that owns this object.
+- `in_driver`: The [`IOUserAudioDriver`](../iouseraudiodriver.md) that owns this object.
 - `in_is_acquirable`: A Boolean value that specifies if the box supports being acquired.
-- `in_box_uid`: The name of the box, as an [`OSString`](https://developer.apple.com/documentation/driverkit/osstring).
+- `in_box_uid`: The name of the box, as an [`OSString`](../../DriverKit/osstring.md).
 
 ## See Also
 
-- [Create](iouseraudiobox/create.md)
+### Creating an Audio Box
+- [Create](./create.md)
   Allocates and initializes an instance of the audio box class.
-- [IOUserAudioDriver](iouseraudiodriver.md)
+- [IOUserAudioDriver](../iouseraudiodriver.md)
   A DriverKit provider object that manages communications with an audio device.
 
 

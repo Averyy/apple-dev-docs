@@ -1,7 +1,8 @@
 # kPMLayoutDownAEProp
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.3+
@@ -10,6 +11,10 @@
 
 ```swift
 var kPMLayoutDownAEProp: String { get }
+```
+
+```c
+#define kPMLayoutDownAEProp
 ```
 
 

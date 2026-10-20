@@ -1,7 +1,8 @@
 # insert(_:within:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts a range that contains only the specified index into the range set.
 
@@ -21,13 +22,15 @@ Inserts a range that contains only the specified index into the range set.
 mutating func insert<C>(_ index: Bound, within collection: C) -> Bool where Bound == C.Index, C : Collection
 ```
 
+Available when `Bound` conforms to `Comparable`.
+
 #### Return Value
 
 `true` if the range set was modified, or `false` if the given `index` was already in the range set.
 
 #### Discussion
 
-> **Note**: O(*n*), where *n* is the number of ranges in the range set.
+> **Complexity**: O(*n*), where *n* is the number of ranges in the range set.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # axes(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the axes that the arrangement supports to the axes you provide.
 
@@ -28,9 +29,10 @@ For axes that you don’t include, the arrangement only displays the primary vie
 
 ## See Also
 
-- [UISplitArrangement.Dimension](uisplitarrangement-swift.struct/dimension.md)
+### Configuring the arrangement
+- [UISplitArrangement.Dimension](./dimension.md)
   A dimension for a view within a split arrangement.
-- [UISplitArrangement.DimensionRange](uisplitarrangement-swift.struct/dimensionrange.md)
+- [UISplitArrangement.DimensionRange](./dimensionrange.md)
   A range of dimensions defining the minimum, preferred, and maximum size for a view within a split arrangement.
 
 

@@ -1,7 +1,8 @@
 # estimator
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The estimator to use on each column.
 
@@ -22,7 +23,8 @@ var estimator: Estimator
 
 ## See Also
 
-- [var columnSelection: ColumnSelection](columnselector/columnselection.md)
+### Getting the properties
+- [var columnSelection: ColumnSelection](./columnselection.md)
   The column selection strategy.
 
 

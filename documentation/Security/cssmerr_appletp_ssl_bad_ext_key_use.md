@@ -1,7 +1,8 @@
 # CSSMERR_APPLETP_SSL_BAD_EXT_KEY_USE
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSMERR_APPLETP_SSL_BAD_EXT_KEY_USE: Int { get }
+```
+
+```c
+CSSMERR_APPLETP_SSL_BAD_EXT_KEY_USE
 ```
 
 

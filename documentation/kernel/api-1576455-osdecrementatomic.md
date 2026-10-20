@@ -1,7 +1,8 @@
 # OSDecrementAtomic
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 32-bit decrement operation, performed atomically with respect to all devices that participate in the coherency architecture of the platform.
 
@@ -10,11 +11,11 @@
 
 ## Declaration
 
-```swift
+```c
 SInt32 OSDecrementAtomic(volatile SInt32 *address);
 ```
 
-#### Return_value
+#### Return Value
 
 The value before the decrement.
 
@@ -30,11 +31,12 @@ This function guarantees atomicity only with main system memory. It is specifica
 
 ## See Also
 
-- [OSDecrementAtomic8](1576458-osdecrementatomic8.md)
+### Decrement
+- [OSDecrementAtomic8](./api-1576458-osdecrementatomic8.md)
   8-bit decrement operation, performed atomically with respect to all devices that participate in the coherency architecture of the platform.
-- [OSDecrementAtomic16](1576468-osdecrementatomic16.md)
+- [OSDecrementAtomic16](./api-1576468-osdecrementatomic16.md)
   16-bit decrement operation, performed atomically with respect to all devices that participate in the coherency architecture of the platform.
-- [OSDecrementAtomic64](1576449-osdecrementatomic64.md)
+- [OSDecrementAtomic64](./api-1576449-osdecrementatomic64.md)
   64-bit decrement.
 
 

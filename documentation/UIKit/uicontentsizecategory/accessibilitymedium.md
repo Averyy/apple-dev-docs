@@ -1,7 +1,8 @@
 # accessibilityMedium
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A medium font size that reflects the current accessibility settings.
 
@@ -9,7 +10,7 @@ A medium font size that reflects the current accessibility settings.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ A medium font size that reflects the current accessibility settings.
 static let accessibilityMedium: UIContentSizeCategory
 ```
 
+```c
+extern UIContentSizeCategory const UIContentSizeCategoryAccessibilityMedium;
+```
+
 ## See Also
 
-- [static let accessibilityLarge: UIContentSizeCategory](uicontentsizecategory/accessibilitylarge.md)
+### Accessibility sizes
+- [static let accessibilityLarge: UIContentSizeCategory](./accessibilitylarge.md)
   A large font size that reflects the current accessibility settings.
-- [static let accessibilityExtraLarge: UIContentSizeCategory](uicontentsizecategory/accessibilityextralarge.md)
+- [static let accessibilityExtraLarge: UIContentSizeCategory](./accessibilityextralarge.md)
   An extra-large font size that reflects the current accessibility settings.
-- [static let accessibilityExtraExtraLarge: UIContentSizeCategory](uicontentsizecategory/accessibilityextraextralarge.md)
+- [static let accessibilityExtraExtraLarge: UIContentSizeCategory](./accessibilityextraextralarge.md)
   A font that is larger than the extra-large font but not the largest available, reflecting the current accessibility settings.
-- [static let accessibilityExtraExtraExtraLarge: UIContentSizeCategory](uicontentsizecategory/accessibilityextraextraextralarge.md)
+- [static let accessibilityExtraExtraExtraLarge: UIContentSizeCategory](./accessibilityextraextraextralarge.md)
   The largest font size that reflects the current accessibility settings.
-- [var isAccessibilityCategory: Bool](uicontentsizecategory/isaccessibilitycategory.md)
+- [var isAccessibilityCategory: Bool](./isaccessibilitycategory.md)
   A Boolean value that indicates whether the content size category is associated with accessibility.
 
 

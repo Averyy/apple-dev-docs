@@ -1,7 +1,8 @@
 # registerClient(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command RegisterClient
 
@@ -17,7 +18,15 @@ Command RegisterClient
 ## Declaration
 
 ```swift
+func registerClient(with params: MTRICDManagementClusterRegisterClientParams, completion: @escaping @Sendable (MTRICDManagementClusterRegisterClientResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func registerClient(with params: MTRICDManagementClusterRegisterClientParams) async throws -> MTRICDManagementClusterRegisterClientResponseParams
+```
+
+```objc
+- (void) registerClientWithParams:(MTRICDManagementClusterRegisterClientParams *) params completion:(void (^)(MTRICDManagementClusterRegisterClientResponseParams *data, NSError *error)) completion;
 ```
 
 #### Discussion

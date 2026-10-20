@@ -1,14 +1,15 @@
 # pe_init_debug
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 void pe_init_debug(void);
 ```
 

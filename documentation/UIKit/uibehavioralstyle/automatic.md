@@ -1,7 +1,8 @@
 # UIBehavioralStyle.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style the system chooses based on the app’s targeted platform.
 
@@ -17,11 +18,16 @@ A style the system chooses based on the app’s targeted platform.
 case automatic
 ```
 
+```c
+UIBehavioralStyleAutomatic
+```
+
 ## See Also
 
-- [UIBehavioralStyle.pad](uibehavioralstyle/pad.md)
+### Styles
+- [UIBehavioralStyle.pad](./pad.md)
   A style that indicates that a control appears and behaves as it does in iPadOS.
-- [UIBehavioralStyle.mac](uibehavioralstyle/mac.md)
+- [UIBehavioralStyle.mac](./mac.md)
   A style that indicates that a control appears and behaves as it does in macOS.
 
 

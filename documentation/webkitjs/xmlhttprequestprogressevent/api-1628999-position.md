@@ -1,7 +1,8 @@
 # position
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 readonly attribute unsigned long long position;
 ```
 

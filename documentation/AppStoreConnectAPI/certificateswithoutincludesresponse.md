@@ -1,7 +1,8 @@
 # CertificatesWithoutIncludesResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response containing a list of certificates, without related resources.
 
@@ -10,7 +11,7 @@ A response containing a list of certificates, without related resources.
 
 ## Declaration
 
-```swift
+```
 object CertificatesWithoutIncludesResponse
 ```
 
@@ -22,19 +23,20 @@ object CertificatesWithoutIncludesResponse
 
 ## See Also
 
-- [object Certificate](certificate.md)
+### Object and data types
+- [object Certificate](./certificate.md)
   A code signing certificate registered in your Apple developer account, used for development, distribution, or provisioning.
-- [object CertificateCreateRequest](certificatecreaterequest.md)
+- [object CertificateCreateRequest](./certificatecreaterequest.md)
   The request body you use to create a Certificate.
-- [object CertificateResponse](certificateresponse.md)
+- [object CertificateResponse](./certificateresponse.md)
   The response body for endpoints that create or read a single signing certificate.
-- [object CertificatesResponse](certificatesresponse.md)
+- [object CertificatesResponse](./certificatesresponse.md)
   The response body for endpoints that list signing certificates.
-- [object CertificateUpdateRequest](certificateupdaterequest.md)
+- [object CertificateUpdateRequest](./certificateupdaterequest.md)
   The request body you use to update a certificate activation status.
-- [type CertificateType](certificatetype.md)
+- [type CertificateType](./certificatetype.md)
   Literal values that represent types of signing certificates.
-- [object CertificatePassTypeIdLinkageResponse](certificatepasstypeidlinkageresponse.md)
+- [object CertificatePassTypeIdLinkageResponse](./certificatepasstypeidlinkageresponse.md)
   A response body that contains the ID of a single related resource.
 
 

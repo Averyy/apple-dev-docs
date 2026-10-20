@@ -1,14 +1,15 @@
 # StandardUSB20::kBusCurrentDefault
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 StandardUSB20::kBusCurrentDefault = kIOUSB20BusCurrentDefault
 ```
 

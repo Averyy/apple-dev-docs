@@ -1,7 +1,8 @@
 # IntentResponseStream
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -20,13 +21,14 @@ struct IntentResponseStream<Value>
 
 ## See Also
 
-- [struct IntentItem](intentitem.md)
+### Items and collections
+- [struct IntentItem](./intentitem.md)
   A type describing a value returned from a dynamic options provider, plus information about how to display it to users.
-- [struct IntentItemCollection](intentitemcollection.md)
+- [struct IntentItemCollection](./intentitemcollection.md)
   Return this object to provide an advanced list of options, optionally divided in sections.
-- [struct IntentItemSection](intentitemsection.md)
+- [struct IntentItemSection](./intentitemsection.md)
   An object you use to divide dynamic options into sections.
-- [struct IntentCollectionSize](intentcollectionsize.md)
+- [struct IntentCollectionSize](./intentcollectionsize.md)
 
 
 ---

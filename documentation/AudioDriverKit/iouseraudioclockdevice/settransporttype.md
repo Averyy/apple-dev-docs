@@ -1,7 +1,8 @@
 # SetTransportType
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the transport type of the clock device.
 
@@ -10,13 +11,13 @@ Sets the transport type of the clock device.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetTransportType(IOUserAudioTransportType in_transport_type);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -28,9 +29,10 @@ Drivers can change the transport type of the clock device dynamically. If succes
 
 ## See Also
 
-- [GetTransportType](iouseraudioclockdevice/gettransporttype.md)
+### Working with Transport Type
+- [GetTransportType](./gettransporttype.md)
   Gets the transport type of the clock device.
-- [IOUserAudioTransportType](audiodriverkit/iouseraudiotransporttype.md)
+- [IOUserAudioTransportType](../audiodriverkit-page/iouseraudiotransporttype.md)
   The type of transport to deliver audio.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Inserts a debug string into the frame data to aid debugging.
@@ -18,6 +19,10 @@ Inserts a debug string into the frame data to aid debugging.
 
 ```swift
 func insertDebugSignpost(_ string: String)
+```
+
+```objc
+- (void) insertDebugSignpost:(NSString *) string;
 ```
 
 #### Discussion

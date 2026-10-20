@@ -1,7 +1,8 @@
 # previewContext(_:isStale:viewKind:)
 
 **Framework**: ActivityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a preview for a Live Activity.
 

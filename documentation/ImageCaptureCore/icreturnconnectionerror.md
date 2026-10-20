@@ -1,16 +1,17 @@
 # ICReturnConnectionError
 
 **Framework**: ImageCaptureCore  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A connection error returned from ImageCaptureCore.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -21,51 +22,52 @@ struct ICReturnConnectionError
 ## Topics
 
 ### Error Domain
-- [let ICErrorDomain: String](icerrordomain.md)
+- [let ICErrorDomain: String](./icerrordomain.md)
   An error returned by the ImageCaptureCore framework.
 ### Error Codes
-- [static var closedSessionSuddenly: ICReturnConnectionError.Code](icreturnconnectionerror/closedsessionsuddenly.md)
+- [static var closedSessionSuddenly: ICReturnConnectionError.Code](./icreturnconnectionerror/closedsessionsuddenly.md)
   Device closed session without request.
-- [static var driverExited: ICReturnConnectionError.Code](icreturnconnectionerror/driverexited.md)
+- [static var driverExited: ICReturnConnectionError.Code](./icreturnconnectionerror/driverexited.md)
   Device driver exited without request.
-- [static var ejectFailed: ICReturnConnectionError.Code](icreturnconnectionerror/ejectfailed.md)
+- [static var ejectFailed: ICReturnConnectionError.Code](./icreturnconnectionerror/ejectfailed.md)
   Device reports eject has failed.
-- [static var ejectedSuddenly: ICReturnConnectionError.Code](icreturnconnectionerror/ejectedsuddenly.md)
+- [static var ejectedSuddenly: ICReturnConnectionError.Code](./icreturnconnectionerror/ejectedsuddenly.md)
   Device ejected without request.
-- [static var failedToOpen: ICReturnConnectionError.Code](icreturnconnectionerror/failedtoopen.md)
+- [static var failedToOpen: ICReturnConnectionError.Code](./icreturnconnectionerror/failedtoopen.md)
   Failed to open a connection to the device.
-- [static var failedToOpenDevice: ICReturnConnectionError.Code](icreturnconnectionerror/failedtoopendevice.md)
+- [static var failedToOpenDevice: ICReturnConnectionError.Code](./icreturnconnectionerror/failedtoopendevice.md)
   Failed to open the device.
-- [static var sessionAlreadyOpen: ICReturnConnectionError.Code](icreturnconnectionerror/sessionalreadyopen.md)
+- [static var sessionAlreadyOpen: ICReturnConnectionError.Code](./icreturnconnectionerror/sessionalreadyopen.md)
   Device reports session is already open.
-- [ICReturnConnectionError.Code](icreturnconnectionerror/code.md)
+- [ICReturnConnectionError.Code](./icreturnconnectionerror/code.md)
 ### Type Properties
-- [static var errorDomain: String](icreturnconnectionerror/errordomain.md)
-- [static var notAuthorizedToOpenDevice: ICReturnConnectionError.Code](icreturnconnectionerror/notauthorizedtoopendevice.md)
+- [static var errorDomain: String](./icreturnconnectionerror/errordomain.md)
+- [static var notAuthorizedToOpenDevice: ICReturnConnectionError.Code](./icreturnconnectionerror/notauthorizedtoopendevice.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ICReturn](icreturn.md)
-- [struct ICLegacyReturn](iclegacyreturn.md)
-- [struct ICReturnDownloadError](icreturndownloaderror.md)
+### Errors
+- [struct ICReturn](./icreturn.md)
+- [struct ICLegacyReturn](./iclegacyreturn.md)
+- [struct ICReturnDownloadError](./icreturndownloaderror.md)
   A download error returned from ImageCaptureCore.
-- [struct ICReturnMetadataError](icreturnmetadataerror.md)
+- [struct ICReturnMetadataError](./icreturnmetadataerror.md)
   A metadata error returned from ImageCaptureCore.
-- [struct ICReturnObjectError](icreturnobjecterror.md)
+- [struct ICReturnObjectError](./icreturnobjecterror.md)
   An object error returned from ImageCaptureCore.
-- [struct ICReturnPTPDeviceError](icreturnptpdeviceerror.md)
+- [struct ICReturnPTPDeviceError](./icreturnptpdeviceerror.md)
   A PTP device error returned from ImageCaptureCore.
-- [struct ICReturnThumbnailError](icreturnthumbnailerror.md)
+- [struct ICReturnThumbnailError](./icreturnthumbnailerror.md)
   A thumbnail error returned from ImageCaptureCore.
 
 

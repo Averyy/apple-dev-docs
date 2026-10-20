@@ -1,7 +1,8 @@
 # UICalendarView.DecorationSize.medium
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A medium relative decoration size in a calendar view.
 
@@ -17,11 +18,16 @@ A medium relative decoration size in a calendar view.
 case medium
 ```
 
+```c
+UICalendarViewDecorationSizeMedium
+```
+
 ## See Also
 
-- [UICalendarView.DecorationSize.large](uicalendarview/decorationsize/large.md)
+### Decoration View Sizes
+- [UICalendarView.DecorationSize.large](./large.md)
   A large relative decoration size in a calendar view.
-- [UICalendarView.DecorationSize.small](uicalendarview/decorationsize/small.md)
+- [UICalendarView.DecorationSize.small](./small.md)
   A small relative decoration size in a calendar view.
 
 

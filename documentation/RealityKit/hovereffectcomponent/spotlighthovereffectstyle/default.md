@@ -1,7 +1,8 @@
 # default
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default style applies a white spotlight glow at the hover location.
 

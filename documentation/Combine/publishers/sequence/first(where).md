@@ -1,7 +1,8 @@
 # first(where:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -18,15 +19,18 @@
 func first(where predicate: (Publishers.Sequence<Elements, Failure>.Output) -> Bool) -> Optional<Publishers.Sequence<Elements, Failure>.Output>.Publisher
 ```
 
+Available when `Elements` conforms to `Sequence` and `Failure` is `Never`.
+
 ## See Also
 
-- [func first() -> Optional<Publishers.Sequence<Elements, Failure>.Output>.Publisher](publishers/sequence/first.md)
-- [func last() -> Optional<Publishers.Sequence<Elements, Failure>.Output>.Publisher](publishers/sequence/last.md)
-- [func last(where: (Publishers.Sequence<Elements, Failure>.Output) -> Bool) -> Optional<Publishers.Sequence<Elements, Failure>.Output>.Publisher](publishers/sequence/last(where:).md)
-- [func output(at: Elements.Index) -> Optional<Publishers.Sequence<Elements, Failure>.Output>.Publisher](publishers/sequence/output(at:)-3r7zo.md)
-- [func output(at: Elements.Index) -> Optional<Publishers.Sequence<Elements, Failure>.Output>.Publisher](publishers/sequence/output(at:)-9kto7.md)
-- [func output(in: Range<Elements.Index>) -> Publishers.Sequence<[Publishers.Sequence<Elements, Failure>.Output], Failure>](publishers/sequence/output(in:)-6g2zc.md)
-- [func output(in: Range<Elements.Index>) -> Publishers.Sequence<[Publishers.Sequence<Elements, Failure>.Output], Failure>](publishers/sequence/output(in:)-8l6yw.md)
+### Selecting specific elements
+- [func first() -> Optional<Publishers.Sequence<Elements, Failure>.Output>.Publisher](./first%28%29.md)
+- [func last() -> Optional<Publishers.Sequence<Elements, Failure>.Output>.Publisher](./last%28%29.md)
+- [func last(where: (Publishers.Sequence<Elements, Failure>.Output) -> Bool) -> Optional<Publishers.Sequence<Elements, Failure>.Output>.Publisher](./last%28where%29.md)
+- [func output(at: Elements.Index) -> Optional<Publishers.Sequence<Elements, Failure>.Output>.Publisher](./output%28at%29-3r7zo.md)
+- [func output(at: Elements.Index) -> Optional<Publishers.Sequence<Elements, Failure>.Output>.Publisher](./output%28at%29-9kto7.md)
+- [func output(in: Range<Elements.Index>) -> Publishers.Sequence<[Publishers.Sequence<Elements, Failure>.Output], Failure>](./output%28in%29-6g2zc.md)
+- [func output(in: Range<Elements.Index>) -> Publishers.Sequence<[Publishers.Sequence<Elements, Failure>.Output], Failure>](./output%28in%29-8l6yw.md)
 
 
 ---

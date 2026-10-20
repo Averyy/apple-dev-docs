@@ -1,7 +1,8 @@
 # macOS(_:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Configures the minimum deployment target version for the macOS platform.
 
@@ -13,7 +14,7 @@ static func macOS(_ version: SupportedPlatform.MacOSVersion) -> SupportedPlatfor
 
 #### Discussion
 
-> **Note**: First available in PackageDescription 5.0
+> **Since**: First available in PackageDescription 5.0
 
 ## Parameters
 
@@ -21,11 +22,12 @@ static func macOS(_ version: SupportedPlatform.MacOSVersion) -> SupportedPlatfor
 
 ## See Also
 
-- [static func macOS(String) -> SupportedPlatform](supportedplatform/macos(_:)-9771f.md)
+### Supporting macOS
+- [static func macOS(String) -> SupportedPlatform](./macos%28_%29-9771f.md)
   Configures the minimum deployment target version for the macOS platform using a version string.
-- [static let macOS: Platform](platform/macos.md)
+- [static let macOS: Platform](../platform/macos.md)
   The macOS platform.
-- [SupportedPlatform.MacOSVersion](supportedplatform/macosversion.md)
+- [SupportedPlatform.MacOSVersion](./macosversion.md)
   The supported macOS version.
 
 

@@ -5,11 +5,11 @@
 ## Topics
 
 ### Constants
-- [var kATSOptionFlagsComposeFontPostScriptName: Int](katsoptionflagscomposefontpostscriptname.md)
-- [var kATSOptionFlagsDefault: Int](katsoptionflagsdefault.md)
-- [var kATSOptionFlagsUseDataFork: Int](katsoptionflagsusedatafork.md)
-- [var kATSOptionFlagsUseDataForkAsResourceFork: Int](katsoptionflagsusedataforkasresourcefork.md)
-- [var kATSOptionFlagsUseResourceFork: Int](katsoptionflagsuseresourcefork.md)
+- [var kATSOptionFlagsComposeFontPostScriptName: Int](../katsoptionflagscomposefontpostscriptname.md)
+- [var kATSOptionFlagsDefault: Int](../katsoptionflagsdefault.md)
+- [var kATSOptionFlagsUseDataFork: Int](../katsoptionflagsusedatafork.md)
+- [var kATSOptionFlagsUseDataForkAsResourceFork: Int](../katsoptionflagsusedataforkasresourcefork.md)
+- [var kATSOptionFlagsUseResourceFork: Int](../katsoptionflagsuseresourcefork.md)
 
 
 ---

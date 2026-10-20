@@ -1,7 +1,8 @@
 # execute(withArguments:completionHandler:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Execute the unix script with the specified arguments.
 
@@ -11,7 +12,15 @@ Execute the unix script with the specified arguments.
 ## Declaration
 
 ```swift
+func execute(withArguments arguments: [String]?, completionHandler handler: NSUserUnixTask.CompletionHandler? = nil)
+```
+
+```swift
 func execute(withArguments arguments: [String]?) async throws
+```
+
+```objc
+- (void) executeWithArguments:(NSArray<NSString *> *) arguments completionHandler:(NSUserUnixTaskCompletionHandler) handler;
 ```
 
 #### Discussion
@@ -23,17 +32,18 @@ If the script completed normally, the completion handler’s `error` parameter w
 ## Parameters
 
 - `arguments`: An array of `NSString` objects containing the script arguments. The arguments do not undergo shell expansion, so you do not need to do special quoting, and shell variables are not resolved.
-- `handler`: The completion handler Block that returns the result. See [`NSUserUnixTask.CompletionHandler`](nsuserunixtask/completionhandler.md).
+- `handler`: The completion handler Block that returns the result. See [`NSUserUnixTask.CompletionHandler`](./completionhandler.md).
 
 ## See Also
 
-- [var standardOutput: FileHandle?](nsuserunixtask/standardoutput.md)
+### Related Documentation
+- [var standardOutput: FileHandle?](./standardoutput.md)
   The standard output stream.
-- [var standardError: FileHandle?](nsuserunixtask/standarderror.md)
+- [var standardError: FileHandle?](./standarderror.md)
   The standard error stream.
-- [init(url: URL) throws](nsuserscripttask/init(url:)-2qgls.md)
+- [init(url: URL) throws](../nsuserscripttask/init%28url%29-2qgls.md)
   Return a user script task instance given a URL for a script file.
-- [var standardInput: FileHandle?](nsuserunixtask/standardinput.md)
+- [var standardInput: FileHandle?](./standardinput.md)
   The standard input stream.
 
 

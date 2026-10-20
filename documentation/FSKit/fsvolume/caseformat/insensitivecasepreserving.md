@@ -1,7 +1,8 @@
 # FSVolume.CaseFormat.insensitiveCasePreserving
 
 **Framework**: FSKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The volume isn’t case sensitive, but supports preserving the case of file and directory names.
 
@@ -14,11 +15,16 @@ The volume isn’t case sensitive, but supports preserving the case of file and 
 case insensitiveCasePreserving
 ```
 
+```c
+FSVolumeCaseFormatInsensitiveCasePreserving
+```
+
 ## See Also
 
-- [FSVolume.CaseFormat.sensitive](fsvolume/caseformat/sensitive.md)
+### Declaring case formats
+- [FSVolume.CaseFormat.sensitive](./sensitive.md)
   The volume is case sensitive.
-- [FSVolume.CaseFormat.insensitive](fsvolume/caseformat/insensitive.md)
+- [FSVolume.CaseFormat.insensitive](./insensitive.md)
   The volume isn’t case sensitive.
 
 

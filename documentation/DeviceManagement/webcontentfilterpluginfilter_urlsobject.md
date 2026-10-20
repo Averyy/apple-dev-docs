@@ -1,7 +1,8 @@
 # WebContentFilterPluginFilter_URLsObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Settings that control the URL filter. If not present, the system doesn’t use URL filtering.
 
@@ -13,14 +14,14 @@ Settings that control the URL filter. If not present, the system doesn’t use U
 
 ## Declaration
 
-```swift
+```
 object WebContentFilterPluginFilter_URLsObject
 ```
 
 ## Topics
 
 ### Objects
-- [object WebContentFilterPluginFilter_URLs_ParametersObject](webcontentfilterpluginfilter_urls_parametersobject.md)
+- [object WebContentFilterPluginFilter_URLs_ParametersObject](./webcontentfilterpluginfilter_urls_parametersobject.md)
   A dictionary containing URL filter parameters. Required when `Enabled` is `true`.
 
 ## Properties
@@ -30,11 +31,12 @@ object WebContentFilterPluginFilter_URLsObject
 
 ## See Also
 
-- [object WebContentFilterPluginFilter_BrowsersObject](webcontentfilterpluginfilter_browsersobject.md)
+### Objects
+- [object WebContentFilterPluginFilter_BrowsersObject](./webcontentfilterpluginfilter_browsersobject.md)
   Settings that control the browser filter. If not present, the system doesn’t use browser filtering.
-- [object WebContentFilterPluginFilter_PacketsObject](webcontentfilterpluginfilter_packetsobject.md)
+- [object WebContentFilterPluginFilter_PacketsObject](./webcontentfilterpluginfilter_packetsobject.md)
   Settings that control the packet filter. If not present, the system doesn’t use packet filtering.
-- [object WebContentFilterPluginFilter_SocketsObject](webcontentfilterpluginfilter_socketsobject.md)
+- [object WebContentFilterPluginFilter_SocketsObject](./webcontentfilterpluginfilter_socketsobject.md)
   Settings that control the socket filter. If not present, the system doesn’t use socket filtering.
 
 

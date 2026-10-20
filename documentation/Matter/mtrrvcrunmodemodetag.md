@@ -1,7 +1,8 @@
 # MTRRVCRunModeModeTag
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.4+
@@ -18,34 +19,38 @@
 enum MTRRVCRunModeModeTag
 ```
 
+```c
+enum MTRRVCRunModeModeTag : uint16_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRRVCRunModeModeTag.cleaning](mtrrvcrunmodemodetag/cleaning.md)
-- [MTRRVCRunModeModeTag.idle](mtrrvcrunmodemodetag/idle.md)
-- [MTRRVCRunModeModeTag.auto](mtrrvcrunmodemodetag/auto.md)
-- [MTRRVCRunModeModeTag.day](mtrrvcrunmodemodetag/day.md)
-- [MTRRVCRunModeModeTag.lowEnergy](mtrrvcrunmodemodetag/lowenergy.md)
-- [MTRRVCRunModeModeTag.lowNoise](mtrrvcrunmodemodetag/lownoise.md)
-- [MTRRVCRunModeModeTag.mapping](mtrrvcrunmodemodetag/mapping.md)
-- [MTRRVCRunModeModeTag.max](mtrrvcrunmodemodetag/max.md)
-- [MTRRVCRunModeModeTag.min](mtrrvcrunmodemodetag/min.md)
-- [MTRRVCRunModeModeTag.night](mtrrvcrunmodemodetag/night.md)
-- [MTRRVCRunModeModeTag.quick](mtrrvcrunmodemodetag/quick.md)
-- [MTRRVCRunModeModeTag.quiet](mtrrvcrunmodemodetag/quiet.md)
-- [MTRRVCRunModeModeTag.vacation](mtrrvcrunmodemodetag/vacation.md)
+- [MTRRVCRunModeModeTag.cleaning](./mtrrvcrunmodemodetag/cleaning.md)
+- [MTRRVCRunModeModeTag.idle](./mtrrvcrunmodemodetag/idle.md)
+- [MTRRVCRunModeModeTag.auto](./mtrrvcrunmodemodetag/auto.md)
+- [MTRRVCRunModeModeTag.day](./mtrrvcrunmodemodetag/day.md)
+- [MTRRVCRunModeModeTag.lowEnergy](./mtrrvcrunmodemodetag/lowenergy.md)
+- [MTRRVCRunModeModeTag.lowNoise](./mtrrvcrunmodemodetag/lownoise.md)
+- [MTRRVCRunModeModeTag.mapping](./mtrrvcrunmodemodetag/mapping.md)
+- [MTRRVCRunModeModeTag.max](./mtrrvcrunmodemodetag/max.md)
+- [MTRRVCRunModeModeTag.min](./mtrrvcrunmodemodetag/min.md)
+- [MTRRVCRunModeModeTag.night](./mtrrvcrunmodemodetag/night.md)
+- [MTRRVCRunModeModeTag.quick](./mtrrvcrunmodemodetag/quick.md)
+- [MTRRVCRunModeModeTag.quiet](./mtrrvcrunmodemodetag/quiet.md)
+- [MTRRVCRunModeModeTag.vacation](./mtrrvcrunmodemodetag/vacation.md)
 ### Initializers
-- [init?(rawValue: UInt16)](mtrrvcrunmodemodetag/init(rawvalue:).md)
+- [init?(rawValue: UInt16)](./mtrrvcrunmodemodetag/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

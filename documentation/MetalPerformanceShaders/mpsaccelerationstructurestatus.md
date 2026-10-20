@@ -1,17 +1,18 @@
 # MPSAccelerationStructureStatus
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate an acceleration structure build state.
 
 **Availability**:
-- iOS 12.0+
-- iPadOS 12.0+
-- Mac Catalyst 13.0+
-- macOS 10.14+
-- tvOS 12.0+
-- visionOS 1.0+
+- iOS 12.0+ - Deprecated in 17.0
+- iPadOS 12.0+ - Deprecated in 17.0
+- Mac Catalyst 13.0+ - Deprecated in 17.0
+- macOS 10.14+ - Deprecated in 14.0
+- tvOS 12.0+ - Deprecated in 17.0
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
 
@@ -19,48 +20,53 @@ Constants that indicate an acceleration structure build state.
 enum MPSAccelerationStructureStatus
 ```
 
+```c
+enum MPSAccelerationStructureStatus : NSUInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MPSAccelerationStructureStatus.built](mpsaccelerationstructurestatus/built.md)
-- [MPSAccelerationStructureStatus.unbuilt](mpsaccelerationstructurestatus/unbuilt.md)
+- [MPSAccelerationStructureStatus.built](./mpsaccelerationstructurestatus/built.md)
+- [MPSAccelerationStructureStatus.unbuilt](./mpsaccelerationstructurestatus/unbuilt.md)
 ### Initializers
-- [init?(rawValue: UInt)](mpsaccelerationstructurestatus/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mpsaccelerationstructurestatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct MPSAccelerationStructureUsage](mpsaccelerationstructureusage.md)
+### Enumerations
+- [struct MPSAccelerationStructureUsage](./mpsaccelerationstructureusage.md)
   Options that describe how an acceleration structure will be used.
-- [struct MPSAliasingStrategy](mpsaliasingstrategy.md)
-- [enum MPSBoundingBoxIntersectionTestType](mpsboundingboxintersectiontesttype.md)
+- [struct MPSAliasingStrategy](./mpsaliasingstrategy.md)
+- [enum MPSBoundingBoxIntersectionTestType](./mpsboundingboxintersectiontesttype.md)
   Options for the intersection test type for a ray intersector bounding box.
-- [struct MPSCNNBatchNormalizationFlags](mpscnnbatchnormalizationflags.md)
+- [struct MPSCNNBatchNormalizationFlags](./mpscnnbatchnormalizationflags.md)
   Options that define how statistics are calculated during batch normalization.
-- [struct MPSCNNConvolutionGradientOption](mpscnnconvolutiongradientoption.md)
+- [struct MPSCNNConvolutionGradientOption](./mpscnnconvolutiongradientoption.md)
   Options that control which gradient to compute during backward propagation.
-- [enum MPSCNNConvolutionWeightsLayout](mpscnnconvolutionweightslayout.md)
-- [enum MPSCNNLossType](mpscnnlosstype.md)
+- [enum MPSCNNConvolutionWeightsLayout](./mpscnnconvolutionweightslayout.md)
+- [enum MPSCNNLossType](./mpscnnlosstype.md)
   Constants that indicate supported loss filter types.
-- [enum MPSCNNReductionType](mpscnnreductiontype.md)
+- [enum MPSCNNReductionType](./mpscnnreductiontype.md)
   Constants that indicate supported reduction types.
-- [enum MPSCNNWeightsQuantizationType](mpscnnweightsquantizationtype.md)
+- [enum MPSCNNWeightsQuantizationType](./mpscnnweightsquantizationtype.md)
   Options that specify the type of quantization used to generate unsigned integer weights.
-- [struct MPSCustomKernelIndex](mpscustomkernelindex.md)
-- [struct MPSDeviceCapsValues](mpsdevicecapsvalues.md)
-- [struct MPSDeviceOptions](mpsdeviceoptions.md)
-- [enum MPSFloatDataTypeBit](mpsfloatdatatypebit.md)
-- [enum MPSFloatDataTypeShift](mpsfloatdatatypeshift.md)
-- [struct MPSImageType](mpsimagetype.md)
+- [struct MPSCustomKernelIndex](./mpscustomkernelindex.md)
+- [struct MPSDeviceCapsValues](./mpsdevicecapsvalues.md)
+- [struct MPSDeviceOptions](./mpsdeviceoptions.md)
+- [enum MPSFloatDataTypeBit](./mpsfloatdatatypebit.md)
+- [enum MPSFloatDataTypeShift](./mpsfloatdatatypeshift.md)
+- [struct MPSImageType](./mpsimagetype.md)
   Options that define a Metal Performance Shaders image type.
 
 

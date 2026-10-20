@@ -1,7 +1,8 @@
 # controlPointCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the number of control points in the buffers the control point buffers reference.
 
@@ -17,6 +18,10 @@ Specifies the number of control points in the buffers the control point buffers 
 
 ```swift
 var controlPointCount: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger controlPointCount;
 ```
 
 #### Discussion

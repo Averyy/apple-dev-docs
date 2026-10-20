@@ -1,7 +1,8 @@
 # inset(by:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a threshold that is met when the target view is closer to the center of the container by `distance`. Use negative values to move the threshold away from the center.
 
@@ -22,7 +23,8 @@ func inset(by distance: Double) -> ScrollTransitionConfiguration.Threshold
 
 ## See Also
 
-- [func interpolated(towards: ScrollTransitionConfiguration.Threshold, amount: Double) -> ScrollTransitionConfiguration.Threshold](scrolltransitionconfiguration/threshold/interpolated(towards:amount:).md)
+### Modifying the threshold
+- [func interpolated(towards: ScrollTransitionConfiguration.Threshold, amount: Double) -> ScrollTransitionConfiguration.Threshold](./interpolated%28towards,amount%29.md)
   Creates a new threshold that combines this threshold value with another threshold, interpolated by the given amount.
 
 

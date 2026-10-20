@@ -1,7 +1,8 @@
 # currentRoute
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the current audio route’s input and output ports.
 
@@ -19,10 +20,14 @@ A description of the current audio route’s input and output ports.
 var currentRoute: AVAudioSessionRouteDescription { get }
 ```
 
+```objc
+@property (readonly) AVAudioSessionRouteDescription * currentRoute;
+```
+
 ## Mentions
 
-- [Responding to audio route changes](responding-to-audio-route-changes.md)
-- [Routing audio to specific devices in multidevice sessions](routing-audio-to-specific-devices-in-multidevice-sessions.md)
+- [Responding to audio route changes](../responding-to-audio-route-changes.md)
+- [Routing audio to specific devices in multidevice sessions](../routing-audio-to-specific-devices-in-multidevice-sessions.md)
 
 #### Discussion
 
@@ -30,11 +35,12 @@ An audio route is an electronic pathway for audio signals. Inspect the state of 
 
 ## See Also
 
-- [class AVAudioSessionRouteDescription](avaudiosessionroutedescription.md)
+### Inspecting the current route
+- [class AVAudioSessionRouteDescription](../avaudiosessionroutedescription.md)
   An object that describes the input and output ports associated with a session’s audio route.
-- [class AVAudioSessionPortDescription](avaudiosessionportdescription.md)
+- [class AVAudioSessionPortDescription](../avaudiosessionportdescription.md)
   Information about the capabilities of the port and the hardware channels it supports.
-- [class let routeChangeNotification: NSNotification.Name](avaudiosession/routechangenotification.md)
+- [class let routeChangeNotification: NSNotification.Name](./routechangenotification.md)
   A notification the system posts when its audio route changes.
 
 

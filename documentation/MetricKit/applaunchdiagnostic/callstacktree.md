@@ -1,7 +1,8 @@
 # callStackTree
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The application call stack tree associated with the launch issue.
 

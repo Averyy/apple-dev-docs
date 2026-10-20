@@ -1,7 +1,8 @@
 # NSBinaryStoreType
 
 **Framework**: Core Data  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The binary store type.
 
@@ -10,7 +11,7 @@ The binary store type.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,18 @@ The binary store type.
 let NSBinaryStoreType: String
 ```
 
+```c
+extern NSString * const NSBinaryStoreType;
+```
+
 ## See Also
 
-- [let NSSQLiteStoreType: String](nssqlitestoretype.md)
+### Constants
+- [let NSSQLiteStoreType: String](./nssqlitestoretype.md)
   The SQLite database store type.
-- [let NSXMLStoreType: String](nsxmlstoretype.md)
+- [let NSXMLStoreType: String](./nsxmlstoretype.md)
   The XML store type.
-- [let NSInMemoryStoreType: String](nsinmemorystoretype.md)
+- [let NSInMemoryStoreType: String](./nsinmemorystoretype.md)
   The in-memory store type.
 
 

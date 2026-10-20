@@ -1,18 +1,19 @@
 # ReportingAdGroup.CpaGoal
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object ReportingAdGroup.CpaGoal
 ```
 
 ## Relationships
 
 ### Inherits From
-- [Money](money.md)
+- [Money](../money.md)
 
 
 ---

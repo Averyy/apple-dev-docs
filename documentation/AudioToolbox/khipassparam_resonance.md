@@ -1,15 +1,16 @@
 # kHipassParam_Resonance
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,9 +18,14 @@
 var kHipassParam_Resonance: AudioUnitParameterID { get }
 ```
 
+```c
+kHipassParam_Resonance
+```
+
 ## See Also
 
-- [var kHipassParam_CutoffFrequency: AudioUnitParameterID](khipassparam_cutofffrequency.md)
+### Constants
+- [var kHipassParam_CutoffFrequency: AudioUnitParameterID](./khipassparam_cutofffrequency.md)
 
 
 ---

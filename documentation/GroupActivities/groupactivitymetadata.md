@@ -1,7 +1,8 @@
 # GroupActivityMetadata
 
 **Framework**: Group Activities  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Text and image content that describes an activity to potential participants.
 
@@ -21,80 +22,81 @@ struct GroupActivityMetadata
 
 ## Mentions
 
-- [Defining your app’s SharePlay activities](defining-your-apps-shareplay-activities.md)
-- [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
+- [Defining your app’s SharePlay activities](./defining-your-apps-shareplay-activities.md)
+- [Adding spatial Persona support to an activity](./adding-spatial-persona-support-to-an-activity.md)
 
 #### Overview
 
 Use a `GroupActivityMetadata` structure to store user-facing information about a specific activity your app suggests. Metadata information includes the title of the activity, an image that corresponds to the activity, and a fallback URL for users who don’t have your app. For example, a movie-watching activity might include the poster of the specific movie a participant suggests. The system uses the provided metadata to generate invitations for other participants.
 
-Create a `GroupActivityMetadata` structure in the [`metadata`](groupactivity/metadata.md) property of your custom [`GroupActivity`](groupactivity.md) subclass. Populate the new structure with the relevant data for your activity.
+Create a `GroupActivityMetadata` structure in the [`metadata`](./groupactivity/metadata.md) property of your custom [`GroupActivity`](./groupactivity.md) subclass. Populate the new structure with the relevant data for your activity.
 
 ## Topics
 
 ### Creating group activity metadata
-- [init()](groupactivitymetadata/init.md)
+- [init()](./groupactivitymetadata/init%28%29.md)
   Creates a new instance for storing descriptive information about an activity.
 ### Presenting the activity
-- [var title: String?](groupactivitymetadata/title.md)
+- [var title: String?](./groupactivitymetadata/title.md)
   The localized string to display as the title of your activity.
-- [var subtitle: String?](groupactivitymetadata/subtitle.md)
+- [var subtitle: String?](./groupactivitymetadata/subtitle.md)
   The localized string that provides additional information about the activity.
-- [var previewImage: CGImage?](groupactivitymetadata/previewimage.md)
+- [var previewImage: CGImage?](./groupactivitymetadata/previewimage.md)
   The image to display for the current activity.
-- [var fallbackURL: URL?](groupactivitymetadata/fallbackurl.md)
+- [var fallbackURL: URL?](./groupactivitymetadata/fallbackurl.md)
   A URL that offers participants a way to identify or join the activity from a web browser.
 ### Indicating the activity’s type
-- [var type: GroupActivityMetadata.ActivityType](groupactivitymetadata/type.md)
+- [var type: GroupActivityMetadata.ActivityType](./groupactivitymetadata/type.md)
   The type of shared experience.
-- [GroupActivityMetadata.ActivityType](groupactivitymetadata/activitytype.md)
+- [GroupActivityMetadata.ActivityType](./groupactivitymetadata/activitytype.md)
   Constants that indicate the group activity’s type to the system.
 ### Assigning an app-specific scene
-- [var sceneAssociationBehavior: SceneAssociationBehavior](groupactivitymetadata/sceneassociationbehavior.md)
+- [var sceneAssociationBehavior: SceneAssociationBehavior](./groupactivitymetadata/sceneassociationbehavior.md)
   Criteria the system uses to direct an activity to a specific scene of your app.
-- [struct SceneAssociationBehavior](sceneassociationbehavior.md)
+- [struct SceneAssociationBehavior](./sceneassociationbehavior.md)
   A type that tells the system which scene to associate with an incoming group activity.
 ### Specifying media-related behavior
-- [var supportsContinuationOnTV: Bool](groupactivitymetadata/supportscontinuationontv.md)
+- [var supportsContinuationOnTV: Bool](./groupactivitymetadata/supportscontinuationontv.md)
   A Boolean value that indicates whether your app supports activity continuation on an Apple TV.
-- [var preferredBroadcastOptions: BroadcastOptions](groupactivitymetadata/preferredbroadcastoptions.md)
+- [var preferredBroadcastOptions: BroadcastOptions](./groupactivitymetadata/preferredbroadcastoptions.md)
   Preferences for how to present audio and video on the main communication channel.
-- [struct BroadcastOptions](broadcastoptions.md)
+- [struct BroadcastOptions](./broadcastoptions.md)
   Options for how to broadcast media on the shared communications channel.
 ### Structures
-- [GroupActivityMetadata.LifetimePolicy](groupactivitymetadata/lifetimepolicy-swift.struct.md)
+- [GroupActivityMetadata.LifetimePolicy](./groupactivitymetadata/lifetimepolicy-swift.struct.md)
   An activity lifetime policy used by a Group Activity.
 ### Instance Properties
-- [var experience: GroupActivityMetadata.Experience?](groupactivitymetadata/experience-swift.property.md)
-- [var lifetimePolicy: GroupActivityMetadata.LifetimePolicy](groupactivitymetadata/lifetimepolicy-swift.property.md)
+- [var experience: GroupActivityMetadata.Experience?](./groupactivitymetadata/experience-swift.property.md)
+- [var lifetimePolicy: GroupActivityMetadata.LifetimePolicy](./groupactivitymetadata/lifetimepolicy-swift.property.md)
   Determines how an activity can be ended.
-- [var localizedSubtitle: String?](groupactivitymetadata/localizedsubtitle.md)
-- [var localizedTitle: String?](groupactivitymetadata/localizedtitle.md)
+- [var localizedSubtitle: String?](./groupactivitymetadata/localizedsubtitle.md)
+- [var localizedTitle: String?](./groupactivitymetadata/localizedtitle.md)
 ### Enumerations
-- [GroupActivityMetadata.Experience](groupactivitymetadata/experience-swift.enum.md)
+- [GroupActivityMetadata.Experience](./groupactivitymetadata/experience-swift.enum.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Defining your app’s SharePlay activities](defining-your-apps-shareplay-activities.md)
+### Activity definition
+- [Defining your app’s SharePlay activities](./defining-your-apps-shareplay-activities.md)
   Configure your app’s SharePlay support and define the activities that people can perform from your app.
-- [Supporting coordinated media playback](../avfoundation/supporting-coordinated-media-playback.md)
+- [Supporting coordinated media playback](../AVFoundation/supporting-coordinated-media-playback.md)
   Create synchronized media experiences that enable users to watch and listen across devices.
-- [protocol GroupActivity](groupactivity.md)
+- [protocol GroupActivity](./groupactivity.md)
   A type that can advertise your app’s activities to other participants.
-- [enum GroupActivityActivationResult](groupactivityactivationresult.md)
+- [enum GroupActivityActivationResult](./groupactivityactivationresult.md)
   The result of preparing to start a custom activity.
-- [struct GroupActivityTransferRepresentation](groupactivitytransferrepresentation.md)
+- [struct GroupActivityTransferRepresentation](./groupactivitytransferrepresentation.md)
   A type that lets you start a group activity from a known context.
 
 

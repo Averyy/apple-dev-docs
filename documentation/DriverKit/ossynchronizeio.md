@@ -1,25 +1,27 @@
 # OSSynchronizeIO
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Performs an `mfence` instruction on Intel-based Mac computers.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 void OSSynchronizeIO();
 ```
 
 ## See Also
 
-- [OSReportWithBacktrace](osreportwithbacktrace.md)
+### Additional Utilities
+- [OSReportWithBacktrace](./osreportwithbacktrace.md)
   Generates a backtrace and message for debugging.
 
 

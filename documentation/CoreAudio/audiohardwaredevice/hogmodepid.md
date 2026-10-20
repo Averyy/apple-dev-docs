@@ -1,12 +1,13 @@
 # hogModePID
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A pid_t indicating the process that currently owns exclusive access to the device or a value of -1 indicating that the device is currently available to all processes.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

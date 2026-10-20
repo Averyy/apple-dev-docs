@@ -1,7 +1,8 @@
 # HourWeatherConditions
 
 **Framework**: WeatherKit REST API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The historical or forecasted weather conditions for a specified hour.
 
@@ -10,7 +11,7 @@ The historical or forecasted weather conditions for a specified hour.
 
 ## Declaration
 
-```swift
+```
 object HourWeatherConditions
 ```
 
@@ -38,9 +39,10 @@ object HourWeatherConditions
 
 ## See Also
 
-- [object HourlyForecast](hourlyforecast.md)
+### Obtaining hourly weather information
+- [object HourlyForecast](./hourlyforecast.md)
   A collection of hour forecasts for a specified range of hours.
-- [object NextHourForecast](nexthourforecast.md)
+- [object NextHourForecast](./nexthourforecast.md)
   A minute-by-minute forecast for the next hour.
 
 

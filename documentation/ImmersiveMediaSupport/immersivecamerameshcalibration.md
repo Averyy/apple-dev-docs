@@ -1,7 +1,8 @@
 # ImmersiveCameraMeshCalibration
 
 **Framework**: Immersive Media Support  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Calibration mesh geometry based on USDZ data.
 
@@ -25,25 +26,26 @@ This class is associated with the calibration type ‘usdzMesh’ and is used fo
 ## Topics
 
 ### Initializers
-- [init(name: String, usdzData: Data)](immersivecamerameshcalibration/init(name:usdzdata:).md)
+- [init(name: String, usdzData: Data)](./immersivecamerameshcalibration/init%28name,usdzdata%29.md)
   Creates an instance of `ImmersiveCameraMeshCalibration`.
 ### Instance Properties
-- [let name: String](immersivecamerameshcalibration/name.md)
-- [let usdzData: Data](immersivecamerameshcalibration/usdzdata.md)
+- [let name: String](./immersivecamerameshcalibration/name.md)
+- [let usdzData: Data](./immersivecamerameshcalibration/usdzdata.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [ImmersiveCameraCalibration.CameraOrigin](immersivecameracalibration/cameraorigin.md)
+### Calibration geometry
+- [ImmersiveCameraCalibration.CameraOrigin](./immersivecameracalibration/cameraorigin.md)
   A type that holds the position information representing the origin from which to render the calibration in 3D space relative to the person’s eye.
-- [ImmersiveCameraCalibration.CameraTextureMapping](immersivecameracalibration/cameratexturemapping.md)
+- [ImmersiveCameraCalibration.CameraTextureMapping](./immersivecameracalibration/cameratexturemapping.md)
   A type that holds the matrices used for video frame texture mapping on the camera lens geometry.
 
 

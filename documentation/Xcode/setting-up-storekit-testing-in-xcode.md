@@ -1,6 +1,7 @@
 # Setting up StoreKit Testing in Xcode
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Prepare your test environment to test in-app purchases with data you configure locally.
 
@@ -8,21 +9,21 @@ Prepare your test environment to test in-app purchases with data you configure l
 
 StoreKit Testing in Xcode is a local test environment for testing in-app purchases without requiring a connection to App Store servers. Set up in-app purchases in a local StoreKit configuration file in your Xcode project, or create a synced StoreKit configuration file in Xcode from your in-app purchase settings in App Store Connect. After you enable the configuration file, the test environment uses this local data when your app calls StoreKit APIs.
 
-> **Note**: Enable Developer Mode to test your app on devices running iOS 16 and later, visionOS, or watchOS 9 and later. For more information about how to enable Developer Mode, see [`Enabling Developer Mode on a device`](enabling-developer-mode-on-a-device.md).
+> **Note**: Enable Developer Mode to test your app on devices running iOS 16 and later, visionOS, or watchOS 9 and later. For more information about how to enable Developer Mode, see [Enabling Developer Mode on a device](./enabling-developer-mode-on-a-device.md).
 
 As you test purchases, the test environment displays a payment sheet with localized values, and produces transactions for you to inspect.
 
 Testing in-app purchase scenarios with StoreKit in Xcode is useful for:
 
-- Developing features that use in-app purchases before configuring them in [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/login).
+- Developing features that use in-app purchases before configuring them in [App Store Connect](https://appstoreconnect.apple.com/login).
 - Testing locally when a network connection isn’t available.
 - Debugging in-app purchase use cases that are harder to set up in the sandbox environment, such as eligibility for promotional offers.
 - Viewing localized product information in the payment sheet.
 - Testing transactions end-to-end, including failed transactions.
 
-The full functionality of StoreKit Testing in Xcode is available for automation. See [`StoreKit Test`](https://developer.apple.com/documentation/storekittest) for information about automating in-app purchase testing. For more information about testing StoreKit at different stages of development, see [`Testing at all stages of development with Xcode and the sandbox`](https://developer.apple.com/documentation/storekit/testing-at-all-stages-of-development-with-xcode-and-the-sandbox).
+The full functionality of StoreKit Testing in Xcode is available for automation. See [StoreKit Test](../StoreKitTest/StoreKitTest.md) for information about automating in-app purchase testing. For more information about testing StoreKit at different stages of development, see [Testing at all stages of development with Xcode and the sandbox](../StoreKit/testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md).
 
-##### Create a Storekit Configuration File
+##### Create a StoreKit configuration file
 
 A StoreKit configuration file contains descriptions of in-app purchases, subscription groups, auto-renewable subscriptions, and non-renewing subscriptions. When the configuration file is active, StoreKit uses this data when your app calls StoreKit APIs in the test environment. There are two types of StoreKit configuration files: local and, in Xcode 14 and later, synced.
 
@@ -38,13 +39,13 @@ To create a StoreKit configuration file:
 5. Select a location, and click Create.
 6. Save the file to your project.
 
-![A screenshot of the Xcode new file sheet entitled StoreKit Configuration that shows file creation options. Options include the Name field, a checkbox with the label Sync this file with an app in App Store Connect, the Team drop-down, and the app Drop-down. The checkbox is selected.](/images/com.apple.Xcode/create-config-file@2x.png)
+![A screenshot of the Xcode new file sheet entitled StoreKit Configuration that shows file creation options. Options include the Name field, a checkbox with the label Sync this file with an app in App Store Connect, the Team drop-down, and the app Drop-down. The checkbox is selected.](https://developer.apple.com/tutorials/images/com.apple.Xcode/create-config-file@2x.png)
 
 If you rename the configuration file, be sure to keep its file extension .`storekit`.
 
 > **Note**: You can convert a synced configuration file to a local configuration file. If you want to sync again, create a new synced configuration file.
 
-##### Set Up a Storekit Configuration
+##### Set up a StoreKit configuration
 
 To edit the settings in a local StoreKit configuration file, select the file in the Project navigator to open the custom editor. Click the Add button (+) in the editor to add product details to the configuration file.
 
@@ -58,13 +59,13 @@ Each in-app purchase and non-renewing subscription has a reference name, product
 
 For non-consumable in-app purchases and auto-renewable subscriptions, select Family Sharing to mark the product for sharing as the following image shows:
 
-![A screenshot of the Xcode StoreKit configuration file editor with an example non-consumable purchase selected that displays two expanded disclosure triangles: Non-Consumable In-App Purchase and Localizations. The Non-Consumable In-App Purchase section shows Reference Name, Product ID, Price, and Family Sharing for the selected purchase. The Localizations section shows two localization entries, English (U.S.) and Arabic, and the corresponding Display Name and Description for each.](/images/com.apple.Xcode/storeKit-config-editor-non-consumable@2x.png)
+![A screenshot of the Xcode StoreKit configuration file editor with an example non-consumable purchase selected that displays two expanded disclosure triangles: Non-Consumable In-App Purchase and Localizations. The Non-Consumable In-App Purchase section shows Reference Name, Product ID, Price, and Family Sharing for the selected purchase. The Localizations section shows two localization entries, English (U.S.) and Arabic, and the corresponding Display Name and Description for each.](https://developer.apple.com/tutorials/images/com.apple.Xcode/storeKit-config-editor-non-consumable@2x.png)
 
-When you set up the first auto-renewable subscription, Xcode prompts you to create the first subscription group. After adding subscriptions to a group, the level you assign to each subscription determines their upgrade and downgrade options. For more information, see [`Offer auto-renewable subscriptions`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/offer-auto-renewable-subscriptions).
+When you set up the first auto-renewable subscription, Xcode prompts you to create the first subscription group. After adding subscriptions to a group, the level you assign to each subscription determines their upgrade and downgrade options. For more information, see [Offer auto-renewable subscriptions](https://developer.apple.com/help/app-store-connect/manage-subscriptions/offer-auto-renewable-subscriptions).
 
 For auto-renewable subscriptions, set up introductory offers and promotional offers with the options available in App Store Connect. To begin testing, configure at least one in-app purchase product.
 
-##### Enable Storekit Testing in Xcode
+##### Enable StoreKit Testing in Xcode
 
 To enable StoreKit Testing in Xcode, your project must have an active StoreKit configuration file. By default, StoreKit Testing in Xcode is disabled. To select a configuration file and make it active:
 
@@ -73,13 +74,13 @@ To enable StoreKit Testing in Xcode, your project must have an active StoreKit c
 3. Click the Options tab.
 4. For the StoreKit Configuration option, select a configuration file and click Close.
 
-![A screenshot of the Xcode scheme editor with the Run action selected, and the Options tab selected. The displayed content shows several options, with the StoreKit Configuration option highlighted. The StoreKit Configuration pop-up menu shows configuration.storekit as the selected configuration.](/images/com.apple.Xcode/scheme-storeKit-testing-enabled@2x.png)
+![A screenshot of the Xcode scheme editor with the Run action selected, and the Options tab selected. The displayed content shows several options, with the StoreKit Configuration option highlighted. The StoreKit Configuration pop-up menu shows configuration.storekit as the selected configuration.](https://developer.apple.com/tutorials/images/com.apple.Xcode/scheme-storeKit-testing-enabled@2x.png)
 
 You can also add an existing StoreKit configuration file to the project from this menu. Choose a configuration file with a .`storekit` file extension.
 
 An Xcode project can contain multiple StoreKit configuration files, but only one can be active at a time. When it’s active, build and run your app as usual. Instead of accessing App Store Connect or the sandbox server, your app gets StoreKit data from the test environment.
 
-##### Disable Storekit Testing in Xcode
+##### Disable StoreKit Testing in Xcode
 
 To disable StoreKit Testing in Xcode, remove the StoreKit configuration file from the scheme’s run options:
 
@@ -88,11 +89,11 @@ To disable StoreKit Testing in Xcode, remove the StoreKit configuration file fro
 3. Click the Options tab.
 4. For the StoreKit Configuration option, select None.
 
-![A screenshot of the Xcode scheme editor with the Run action selected, and the Options tab selected. The displayed content shows several options, with the StoreKit Configuration option highlighted. The StoreKit Configuration pop-up menu shows None as the selected configuration.](/images/com.apple.Xcode/scheme-storeKit-testing-disabled@2x.png)
+![A screenshot of the Xcode scheme editor with the Run action selected, and the Options tab selected. The displayed content shows several options, with the StoreKit Configuration option highlighted. The StoreKit Configuration pop-up menu shows None as the selected configuration.](https://developer.apple.com/tutorials/images/com.apple.Xcode/scheme-storeKit-testing-disabled@2x.png)
 
-Your app stops using the local data from the configuration file and starts using the data from App Store Connect. For more information, see [`Overview for configuring in-app purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
+Your app stops using the local data from the configuration file and starts using the data from App Store Connect. For more information, see [Overview for configuring in-app purchases](https://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
 
-##### Prepare to Validate Receipts in the Test Environment
+##### Prepare to validate receipts in the test environment
 
 StoreKit Testing in Xcode generates locally signed receipts that your app validates locally. Obtain the certificate you need for local validation and add it to your project as follows:
 
@@ -102,7 +103,7 @@ StoreKit Testing in Xcode generates locally signed receipts that your app valida
 
 > **Note**: The test environment’s certificate is a root certificate. There’s no certificate chain to validate when you validate the receipt signature.
 
-![An Xcode screenshot with the file StoreKitCertificate.cer selected in the Project navigator. The editor area shows the details of the certificate, including: Subject Name, Issuer Name, Serial Number, Version, and so forth.](/images/com.apple.Xcode/storeKit-saved-certificate@2x.png)
+![An Xcode screenshot with the file StoreKitCertificate.cer selected in the Project navigator. The editor area shows the details of the certificate, including: Subject Name, Issuer Name, Serial Number, Version, and so forth.](https://developer.apple.com/tutorials/images/com.apple.Xcode/storeKit-saved-certificate@2x.png)
 
 Be sure your code uses the correct certificate in all environments. Add the following conditional compilation block to your receipt validation code to select the test certificate for testing, and the Apple root certificate, otherwise:
 
@@ -120,7 +121,8 @@ Your code is ready to validate receipts by selecting the appropriate certificate
 
 ## See Also
 
-- [Testing in-app purchases with StoreKit transaction manager in Xcode](testing-in-app-purchases-with-storekit-transaction-manager-in-code.md)
+### StoreKit
+- [Testing in-app purchases with StoreKit transaction manager in Xcode](./testing-in-app-purchases-with-storekit-transaction-manager-in-code.md)
   Use the transaction manager within Xcode to test in-app purchases without requiring a connection to App Store servers.
 
 

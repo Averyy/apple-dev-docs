@@ -1,7 +1,8 @@
 # toolCalling
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The capability to call tools to gather information or trigger side effects.
 
@@ -21,11 +22,12 @@ static var toolCalling: LanguageModelCapabilities.Capability { get }
 
 ## See Also
 
-- [static var guidedGeneration: LanguageModelCapabilities.Capability](languagemodelcapabilities/capability/guidedgeneration.md)
+### Accessing model capabilities
+- [static var guidedGeneration: LanguageModelCapabilities.Capability](./guidedgeneration.md)
   The capability to ensure model output conforms to a given generation schema.
-- [static var reasoning: LanguageModelCapabilities.Capability](languagemodelcapabilities/capability/reasoning.md)
+- [static var reasoning: LanguageModelCapabilities.Capability](./reasoning.md)
   The capability to reason, structurally separately from producing a response.
-- [static var vision: LanguageModelCapabilities.Capability](languagemodelcapabilities/capability/vision.md)
+- [static var vision: LanguageModelCapabilities.Capability](./vision.md)
   The capability to accept image inputs in prompts.
 
 

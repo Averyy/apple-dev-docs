@@ -1,7 +1,8 @@
 # latestRenderingVersion
 
 **Framework**: Cinematic  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The version of the newest rendering algorithm
 
@@ -16,6 +17,10 @@ The version of the newest rendering algorithm
 
 ```swift
 class var latestRenderingVersion: Int { get }
+```
+
+```objc
+@property (class, readonly) NSInteger latestRenderingVersion;
 ```
 
 

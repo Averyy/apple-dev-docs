@@ -1,6 +1,7 @@
 # Model Personalization
 
-**Framework**: Core ML
+**Framework**: Core ML  
+**Role**: API Collection
 
 Update your model to adapt to new data.
 
@@ -11,24 +12,25 @@ On-device model updates provide your app the flexibility to personalize a userâ€
 ## Topics
 
 ### On-device model updates
-- [class MLTask](mltask.md)
+- [class MLTask](./mltask.md)
   An abstract base class for machine learning tasks.
-- [Personalizing a Model with On-Device Updates](personalizing-a-model-with-on-device-updates.md)
+- [Personalizing a Model with On-Device Updates](./personalizing-a-model-with-on-device-updates.md)
   Modify an updatable Core ML model by running an update task with labeled data.
-- [class MLUpdateTask](mlupdatetask.md)
+- [class MLUpdateTask](./mlupdatetask.md)
   A task that updates a model with additional training data.
 
 ## See Also
 
-- [Getting a Core ML Model](getting-a-core-ml-model.md)
+### Core ML models
+- [Getting a Core ML Model](./getting-a-core-ml-model.md)
   Obtain a Core ML model to use in your app.
-- [Updating a Model File to a Model Package](updating-a-model-file-to-a-model-package.md)
+- [Updating a Model File to a Model Package](./updating-a-model-file-to-a-model-package.md)
   Convert a Core ML model file into a model package in Xcode.
-- [Integrating a Core ML Model into Your App](integrating-a-core-ml-model-into-your-app.md)
+- [Integrating a Core ML Model into Your App](./integrating-a-core-ml-model-into-your-app.md)
   Add a simple model to an app, pass input data to the model, and process the modelâ€™s predictions.
-- [class MLModel](mlmodel.md)
+- [class MLModel](./mlmodel.md)
   An encapsulation of all the details of your machine learning model.
-- [Model Customization](model-customization.md)
+- [Model Customization](./model-customization.md)
   Expand and modify your model with new layers.
 
 

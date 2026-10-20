@@ -1,14 +1,15 @@
 # unique_pid
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 uint64_t unique_pid;
 ```
 

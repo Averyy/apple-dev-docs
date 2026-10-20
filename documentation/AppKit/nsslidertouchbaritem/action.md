@@ -1,7 +1,8 @@
 # action
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The selector on the target object that is invoked when a user interacts with the slider or either of the accessories.
 
@@ -17,9 +18,14 @@ The selector on the target object that is invoked when a user interacts with the
 var action: Selector? { get set }
 ```
 
+```objc
+@property (nullable) SEL action;
+```
+
 ## See Also
 
-- [var target: AnyObject?](nsslidertouchbaritem/target.md)
+### Handling slider interaction
+- [var target: AnyObject?](./target.md)
   An object that is notified when a user interacts with the slider or either of the accessories.
 
 

@@ -1,7 +1,8 @@
 # init(azimuth:inclination:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a `Chart3DPose` with the provided azimuth and inclination angles.
 

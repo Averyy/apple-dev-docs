@@ -1,7 +1,8 @@
 # animates
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 A Boolean value that determines whether the map animates the annotation.
 
@@ -10,7 +11,7 @@ A Boolean value that determines whether the map animates the annotation.
 
 ## Declaration
 
-```swift
+```
 animates?: boolean;
 ```
 
@@ -20,13 +21,14 @@ The default value is `true`.
 
 ## See Also
 
-- [draggable](annotationconstructoroptions/draggable.md)
+### Creating interaction behavior
+- [draggable](./draggable.md)
   A Boolean value that determines whether the user can drag the annotation.
-- [enabled](annotationconstructoroptions/enabled.md)
+- [enabled](./enabled.md)
   A Boolean value that determines whether the annotation responds to user interaction.
-- [selected](annotationconstructoroptions/selected.md)
+- [selected](./selected.md)
   A Boolean value that determines whether the map displays the annotation in a selected state.
-- [place](annotationconstructoroptions/place.md)
+- [place](./place.md)
   An object that allows a custom annotation to potentially supersede a point of interest at the same map coordinates.
 
 

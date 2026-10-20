@@ -1,15 +1,16 @@
 # init(device:resultImage:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 11.0+
-- macOS 10.13+
-- tvOS 11.0+
-- visionOS 1.0+
+- iOS 11.0+ - Deprecated in 11.3
+- iPadOS 11.0+ - Deprecated in 11.3
+- Mac Catalyst 11.0+ - Deprecated in 11.3
+- macOS 10.13+ - Deprecated in 10.13.4
+- tvOS 11.0+ - Deprecated in 11.3
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
 
@@ -17,11 +18,16 @@
 convenience init?(device: any MTLDevice, resultImage: MPSNNImageNode)
 ```
 
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device resultImage:(MPSNNImageNode *) resultImage;
+```
+
 ## See Also
 
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsnngraph/init(coder:device:).md)
-- [init?(device: any MTLDevice, resultImage: MPSNNImageNode, resultImageIsNeeded: Bool)](mpsnngraph/init(device:resultimage:resultimageisneeded:).md)
-- [init?(device: any MTLDevice, resultImages: [MPSNNImageNode], resultsAreNeeded: UnsafeMutablePointer<ObjCBool>?)](mpsnngraph/init(device:resultimages:resultsareneeded:).md)
+### Initializers
+- [init?(coder: NSCoder, device: any MTLDevice)](./init%28coder,device%29.md)
+- [init?(device: any MTLDevice, resultImage: MPSNNImageNode, resultImageIsNeeded: Bool)](./init%28device,resultimage,resultimageisneeded%29.md)
+- [init?(device: any MTLDevice, resultImages: [MPSNNImageNode], resultsAreNeeded: UnsafeMutablePointer<ObjCBool>?)](./init%28device,resultimages,resultsareneeded%29.md)
 
 
 ---

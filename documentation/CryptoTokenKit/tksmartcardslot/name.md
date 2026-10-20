@@ -1,7 +1,8 @@
 # name
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the Smart Card reader slot.
 
@@ -20,11 +21,16 @@ The name of the Smart Card reader slot.
 var name: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * name;
+```
+
 ## See Also
 
-- [var maxInputLength: Int](tksmartcardslot/maxinputlength.md)
+### Getting the Slot Configuration
+- [var maxInputLength: Int](./maxinputlength.md)
   The maximum length of input APDU (Application Protocol Data Unit) that the Smart Card reader slot is able to transfer to the Smart Card.
-- [var maxOutputLength: Int](tksmartcardslot/maxoutputlength.md)
+- [var maxOutputLength: Int](./maxoutputlength.md)
   The maximum length of output APDU (Application Protocol Data Unit) that the Smart Card reader slot is able to transfer from the Smart Card.
 
 

@@ -1,21 +1,28 @@
 # BNNSImageStackDescriptor
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 13.1+
-- macOS 10.12+
-- tvOS 10.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 10.0+ - Deprecated in 14.0
+- iPadOS 10.0+ - Deprecated in 14.0
+- Mac Catalyst 13.1+ - Deprecated in 14.0
+- macOS 10.12+ - Deprecated in 11.0
+- tvOS 10.0+ - Deprecated in 14.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 3.0+ - Deprecated in 7.0
+
+> **Deprecated**: BNNS switched to new Layer Parameters data structures
 
 ## Declaration
 
 ```swift
 struct BNNSImageStackDescriptor
+```
+
+```c
+typedef struct { ... } BNNSImageStackDescriptor;
 ```
 
 #### Overview
@@ -31,35 +38,36 @@ Int types are converted to floating point using float Y = DATA_SCALE * (float)X 
 ## Topics
 
 ### Initializers
-- [init()](bnnsimagestackdescriptor/init.md)
-- [init(width: Int, height: Int, channels: Int, row_stride: Int, image_stride: Int, data_type: BNNSDataType)](bnnsimagestackdescriptor/init(width:height:channels:row_stride:image_stride:data_type:).md)
-- [init(width: Int, height: Int, channels: Int, row_stride: Int, image_stride: Int, data_type: BNNSDataType, data_scale: Float, data_bias: Float)](bnnsimagestackdescriptor/init(width:height:channels:row_stride:image_stride:data_type:data_scale:data_bias:).md)
+- [init()](./bnnsimagestackdescriptor/init%28%29.md)
+- [init(width: Int, height: Int, channels: Int, row_stride: Int, image_stride: Int, data_type: BNNSDataType)](./bnnsimagestackdescriptor/init%28width,height,channels,row_stride,image_stride,data_type%29.md)
+- [init(width: Int, height: Int, channels: Int, row_stride: Int, image_stride: Int, data_type: BNNSDataType, data_scale: Float, data_bias: Float)](./bnnsimagestackdescriptor/init%28width,height,channels,row_stride,image_stride,data_type,data_scale,data_bias%29.md)
 ### Instance Properties
-- [var channels: Int](bnnsimagestackdescriptor/channels.md)
-- [var data_bias: Float](bnnsimagestackdescriptor/data_bias.md)
-- [var data_scale: Float](bnnsimagestackdescriptor/data_scale.md)
-- [var data_type: BNNSDataType](bnnsimagestackdescriptor/data_type.md)
-- [var height: Int](bnnsimagestackdescriptor/height.md)
-- [var image_stride: Int](bnnsimagestackdescriptor/image_stride.md)
-- [var row_stride: Int](bnnsimagestackdescriptor/row_stride.md)
-- [var width: Int](bnnsimagestackdescriptor/width.md)
+- [var channels: Int](./bnnsimagestackdescriptor/channels.md)
+- [var data_bias: Float](./bnnsimagestackdescriptor/data_bias.md)
+- [var data_scale: Float](./bnnsimagestackdescriptor/data_scale.md)
+- [var data_type: BNNSDataType](./bnnsimagestackdescriptor/data_type.md)
+- [var height: Int](./bnnsimagestackdescriptor/height.md)
+- [var image_stride: Int](./bnnsimagestackdescriptor/image_stride.md)
+- [var row_stride: Int](./bnnsimagestackdescriptor/row_stride.md)
+- [var width: Int](./bnnsimagestackdescriptor/width.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct BNNSDataType](bnnsdatatype.md)
+### Structures
+- [struct BNNSDataType](./bnnsdatatype.md)
   BNNS Data Types.
-- [struct BNNSSparsityParameters](bnnssparsityparameters.md)
-- [struct BNNSSparsityType](bnnssparsitytype.md)
-- [struct BNNSTargetSystem](bnnstargetsystem.md)
-- [struct bnns_graph_argument_t](bnns_graph_argument_t.md)
+- [struct BNNSSparsityParameters](./bnnssparsityparameters.md)
+- [struct BNNSSparsityType](./bnnssparsitytype.md)
+- [struct BNNSTargetSystem](./bnnstargetsystem.md)
+- [struct bnns_graph_argument_t](./bnns_graph_argument_t.md)
   Describes data associated with an input or output argument
-- [struct BNNSVectorDescriptor](bnnsvectordescriptor.md)
+- [struct BNNSVectorDescriptor](./bnnsvectordescriptor.md)
 
 
 ---

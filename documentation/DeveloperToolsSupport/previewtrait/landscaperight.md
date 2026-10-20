@@ -1,7 +1,8 @@
 # landscapeRight
 
 **Framework**: DeveloperToolsSupport  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The device is in landscape mode, with the top of the device on the right.
 
@@ -21,17 +22,20 @@ The device is in landscape mode, with the top of the device on the right.
 static var landscapeRight: PreviewTrait<Preview.ViewTraits> { get }
 ```
 
+Available when `T` is `Preview.ViewTraits`.
+
 #### Discussion
 
-This is the same as [`landscapeRight`](https://developer.apple.com/documentation/swiftui/interfaceorientation/landscaperight).
+This is the same as [`landscapeRight`](../../SwiftUI/interfaceorientation/landscaperight.md).
 
 ## See Also
 
-- [static var portrait: PreviewTrait<Preview.ViewTraits>](previewtrait/portrait.md)
+### Getting an orientation
+- [static var portrait: PreviewTrait<Preview.ViewTraits>](./portrait.md)
   The device is in portrait mode, with the top of the device on top.
-- [static var portraitUpsideDown: PreviewTrait<Preview.ViewTraits>](previewtrait/portraitupsidedown.md)
+- [static var portraitUpsideDown: PreviewTrait<Preview.ViewTraits>](./portraitupsidedown.md)
   The device is in portrait mode, but is upside down.
-- [static var landscapeLeft: PreviewTrait<Preview.ViewTraits>](previewtrait/landscapeleft.md)
+- [static var landscapeLeft: PreviewTrait<Preview.ViewTraits>](./landscapeleft.md)
   The device is in landscape mode, with the top of the device on the left.
 
 

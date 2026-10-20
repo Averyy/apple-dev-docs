@@ -1,14 +1,15 @@
 # priority_queue_compare_fn_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef int (^priority_queue_compare_fn_t)(struct priority_queue_entry *e1, struct priority_queue_entry *e2);
 ```
 

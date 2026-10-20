@@ -1,7 +1,8 @@
 # faceCulling
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A process in which the system specifies polygons to remove before rendering a mesh using this material.
 
@@ -11,7 +12,7 @@ A process in which the system specifies polygons to remove before rendering a me
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,7 +26,7 @@ To improve performance, RealityKit culls polygons, or faces, that it determines 
 
 RealityKit recognizes when a face aims toward the camera (a front face) or away from the camera (a back face). This value controls the type of faces RealityKit culls.
 
-This value defaults to [`MaterialParameterTypes.FaceCulling.back`](materialparametertypes/faceculling/back.md), which means RealityKit removes faces that point away from the camera. Most of the time, this is the correct behavior, because back faces are usually obscured by other front-facing polygons.
+This value defaults to [`MaterialParameterTypes.FaceCulling.back`](../materialparametertypes/faceculling/back.md), which means RealityKit removes faces that point away from the camera. Most of the time, this is the correct behavior, because back faces are usually obscured by other front-facing polygons.
 
 You can change the culling behavior to cull front faces instead or to turn off face culling altogether, but be aware that turning off face culling results in less efficient rendering and may negatively impact your app’s frame rate.
 

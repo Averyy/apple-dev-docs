@@ -1,7 +1,8 @@
 # cryptorSubsampleAuxiliaryData
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Describes the ranges of protected and unprotected data within a protected sample buffer.
 

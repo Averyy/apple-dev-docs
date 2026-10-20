@@ -1,7 +1,8 @@
 # minute
 
 **Framework**: AlarmKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minute of the hour the alarm alerts.
 
@@ -18,9 +19,10 @@ var minute: Int
 
 ## See Also
 
-- [init(hour: Int, minute: Int)](alarm/schedule-swift.enum/relative/time-swift.struct/init(hour:minute:).md)
+### Creating a scheduled time
+- [init(hour: Int, minute: Int)](./init%28hour,minute%29.md)
   Creates an instance of time.
-- [var hour: Int](alarm/schedule-swift.enum/relative/time-swift.struct/hour.md)
+- [var hour: Int](./hour.md)
   The hour mark the alarm alerts.
 
 

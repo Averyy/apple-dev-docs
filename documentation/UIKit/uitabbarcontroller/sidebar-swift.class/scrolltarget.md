@@ -1,7 +1,8 @@
 # UITabBarController.Sidebar.ScrollTarget
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.0+
@@ -18,13 +19,14 @@ enum ScrollTarget
 ## Topics
 
 ### Enumeration Cases
-- [UITabBarController.Sidebar.ScrollTarget.footer](uitabbarcontroller/sidebar-swift.class/scrolltarget/footer.md)
-- [UITabBarController.Sidebar.ScrollTarget.header](uitabbarcontroller/sidebar-swift.class/scrolltarget/header.md)
-- [UITabBarController.Sidebar.ScrollTarget.tab(_:)](uitabbarcontroller/sidebar-swift.class/scrolltarget/tab(_:).md)
+- [UITabBarController.Sidebar.ScrollTarget.footer](./scrolltarget/footer.md)
+- [UITabBarController.Sidebar.ScrollTarget.header](./scrolltarget/header.md)
+- [UITabBarController.Sidebar.ScrollTarget.tab(_:)](./scrolltarget/tab%28_%29.md)
 
 ## See Also
 
-- [func scroll(to: UITabBarController.Sidebar.ScrollTarget, animated: Bool)](uitabbarcontroller/sidebar-swift.class/scroll(to:animated:).md)
+### Scrolling
+- [func scroll(to: UITabBarController.Sidebar.ScrollTarget, animated: Bool)](./scroll%28to,animated%29.md)
 
 
 ---

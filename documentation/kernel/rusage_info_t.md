@@ -1,14 +1,15 @@
 # rusage_info_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 typedef void *rusage_info_t;
 ```
 

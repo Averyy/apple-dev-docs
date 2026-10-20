@@ -1,7 +1,8 @@
 # VZError.Code.guestProvisioningInvalidPassword
 
 **Framework**: Virtualization  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the password for guest provisioning is invalid.
 
@@ -12,6 +13,10 @@ An error that indicates the password for guest provisioning is invalid.
 
 ```swift
 case guestProvisioningInvalidPassword
+```
+
+```c
+VZErrorGuestProvisioningInvalidPassword
 ```
 
 

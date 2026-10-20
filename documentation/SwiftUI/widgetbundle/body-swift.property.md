@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Declares the group of widgets that an app supports.
@@ -37,9 +38,10 @@ struct GameWidgets: WidgetBundle {
 
 ## See Also
 
-- [associatedtype Body : Widget](widgetbundle/body-swift.associatedtype.md)
+### Implementing a widget bundle
+- [associatedtype Body : Widget](./body-swift.associatedtype.md)
   The type of widget that represents the content of the bundle.
-- [struct WidgetBundleBuilder](widgetbundlebuilder.md)
+- [struct WidgetBundleBuilder](../widgetbundlebuilder.md)
   A custom attribute that constructs a widget bundle’s body.
 
 

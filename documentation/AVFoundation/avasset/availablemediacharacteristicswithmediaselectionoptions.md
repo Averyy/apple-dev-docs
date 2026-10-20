@@ -1,17 +1,20 @@
 # availableMediaCharacteristicsWithMediaSelectionOptions
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of media characteristics for which a media selection option is available.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- watchOS 1.0+
+- iOS 5.0+ - Deprecated in 16.0
+- iPadOS 5.0+ - Deprecated in 16.0
+- Mac Catalyst 13.1+ - Deprecated in 16.0
+- macOS 10.8+ - Deprecated in 13.0
+- tvOS 9.0+ - Deprecated in 16.0
+- watchOS 1.0+ - Deprecated in 9.0
+
+> **Deprecated**: Load the value of [`availableMediaCharacteristicsWithMediaSelectionOptions`](../avpartialasyncproperty/availablemediacharacteristicswithmediaselectionoptions.md) asynchronously instead.
 
 ## Declaration
 
@@ -19,9 +22,13 @@ An array of media characteristics for which a media selection option is availabl
 var availableMediaCharacteristicsWithMediaSelectionOptions: [AVMediaCharacteristic] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSString *> * availableMediaCharacteristicsWithMediaSelectionOptions;
+```
+
 ## Mentions
 
-- [Selecting subtitles and alternative audio tracks](selecting-subtitles-and-alternative-audio-tracks.md)
+- [Selecting subtitles and alternative audio tracks](../selecting-subtitles-and-alternative-audio-tracks.md)
 
 
 ---

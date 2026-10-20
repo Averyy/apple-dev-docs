@@ -1,7 +1,8 @@
 # findPanelSubstringMatch
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A number object containing the match type to use in the find panel.
 
@@ -14,15 +15,20 @@ A number object containing the match type to use in the find panel.
 static let findPanelSubstringMatch: NSPasteboard.PasteboardType.FindPanelSearchOptionKey
 ```
 
+```c
+extern NSPasteboardTypeFindPanelSearchOptionKey NSFindPanelSubstringMatch;
+```
+
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing one of the values defined in [`NSFindPanelSubstringMatchType`](nsfindpanelsubstringmatchtype.md).
+The value of this key is an [`NSNumber`](../../../../Foundation/nsnumber.md) object containing one of the values defined in [`NSFindPanelSubstringMatchType`](../../../nsfindpanelsubstringmatchtype.md).
 
 ## See Also
 
-- [static let findPanelSearchOptions: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/findpanelsearchoptions.md)
+### Constants
+- [static let findPanelSearchOptions: NSPasteboard.PasteboardType](../findpanelsearchoptions.md)
   Type for the find panel metadata property list.
-- [static let findPanelCaseInsensitiveSearch: NSPasteboard.PasteboardType.FindPanelSearchOptionKey](nspasteboard/pasteboardtype/findpanelsearchoptionkey/findpanelcaseinsensitivesearch.md)
+- [static let findPanelCaseInsensitiveSearch: NSPasteboard.PasteboardType.FindPanelSearchOptionKey](./findpanelcaseinsensitivesearch.md)
   A Boolean value indicating whether the search is case-insensitive.
 
 

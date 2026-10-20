@@ -1,7 +1,8 @@
 # AggregationOperation.custom(label:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A custom aggregation identified by its label.
 

@@ -1,7 +1,8 @@
 # cancelRequest()
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels a request in progress.
 
@@ -15,6 +16,10 @@ Cancels a request in progress.
 
 ```swift
 func cancelRequest()
+```
+
+```objc
+- (void) cancelRequest;
 ```
 
 #### Discussion

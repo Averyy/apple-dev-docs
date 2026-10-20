@@ -1,7 +1,8 @@
 # InAppPurchaseOfferCodeCustomCode.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,16 +11,16 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseOfferCodeCustomCode.Relationships
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object InAppPurchaseOfferCodeCustomCode.Relationships.CreatedByActor](inapppurchaseoffercodecustomcode/relationships-data.dictionary/createdbyactor-data.dictionary.md)
+- [object InAppPurchaseOfferCodeCustomCode.Relationships.CreatedByActor](./relationships-data.dictionary/createdbyactor-data.dictionary.md)
   The data that describes the created by actor of the In-App Purchase offer code custom code.
-- [object InAppPurchaseOfferCodeCustomCode.Relationships.DeactivatedByActor](inapppurchaseoffercodecustomcode/relationships-data.dictionary/deactivatedbyactor-data.dictionary.md)
+- [object InAppPurchaseOfferCodeCustomCode.Relationships.DeactivatedByActor](./relationships-data.dictionary/deactivatedbyactor-data.dictionary.md)
   The data that describes the deactivated by actor of the In-App Purchase offer code custom code.
 
 ## Properties
@@ -29,7 +30,8 @@ object InAppPurchaseOfferCodeCustomCode.Relationships
 
 ## See Also
 
-- [object InAppPurchaseOfferCodeCustomCode.Attributes](inapppurchaseoffercodecustomcode/attributes-data.dictionary.md)
+### Dictionaries
+- [object InAppPurchaseOfferCodeCustomCode.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an In-App Purchase offer code custom code resource.
 
 

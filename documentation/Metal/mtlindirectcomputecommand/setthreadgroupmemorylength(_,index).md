@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets the size of a block of threadgroup memory.
@@ -20,6 +21,10 @@ Sets the size of a block of threadgroup memory.
 func setThreadgroupMemoryLength(_ length: Int, index: Int)
 ```
 
+```objc
+- (void) setThreadgroupMemoryLength:(NSUInteger) length atIndex:(NSUInteger) index;
+```
+
 ## Parameters
 
 - `length`: The size of the threadgroup memory, in bytes, which needs to be a multiple of 16 bytes.
@@ -27,17 +32,18 @@ func setThreadgroupMemoryLength(_ length: Int, index: Int)
 
 ## See Also
 
-- [func setComputePipelineState(any MTLComputePipelineState)](mtlindirectcomputecommand/setcomputepipelinestate(_:).md)
+### Setting a command’s arguments
+- [func setComputePipelineState(any MTLComputePipelineState)](./setcomputepipelinestate%28_%29.md)
   Sets the command’s compute pipeline state.
-- [func setImageblockWidth(Int, height: Int)](mtlindirectcomputecommand/setimageblockwidth(_:height:).md)
+- [func setImageblockWidth(Int, height: Int)](./setimageblockwidth%28_,height%29.md)
   Sets the size, in pixels, of the imageblock.
-- [func setKernelBuffer(any MTLBuffer, offset: Int, at: Int)](mtlindirectcomputecommand/setkernelbuffer(_:offset:at:).md)
+- [func setKernelBuffer(any MTLBuffer, offset: Int, at: Int)](./setkernelbuffer%28_,offset,at%29.md)
   Sets a buffer for the compute function.
-- [func setThreadgroupMemoryLength(Int, at: Int)](mtlindirectcomputecommand/setthreadgroupmemorylength(_:at:).md)
+- [func setThreadgroupMemoryLength(Int, at: Int)](./setthreadgroupmemorylength%28_,at%29.md)
   Sets the size of a block of threadgroup memory.
-- [func setStageInRegion(MTLRegion)](mtlindirectcomputecommand/setstageinregion(_:).md)
+- [func setStageInRegion(MTLRegion)](./setstageinregion%28_%29.md)
   Sets the region of the stage-in attributes to apply to the compute kernel.
-- [func setStageIn(MTLRegion)](mtlindirectcomputecommand/setstagein(_:).md)
+- [func setStageIn(MTLRegion)](./setstagein%28_%29.md)
   Sets the region of the stage-in attributes to apply to the compute kernel.
 
 

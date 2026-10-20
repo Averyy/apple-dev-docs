@@ -1,7 +1,8 @@
 # latest
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A property that returns latest version of PencilKit, which supports all currently available inks.
 
@@ -16,6 +17,10 @@ A property that returns latest version of PencilKit, which supports all currentl
 
 ```swift
 static var latest: PKContentVersion { get }
+```
+
+```c
+PKContentVersionLatest
 ```
 
 

@@ -1,7 +1,8 @@
 # includeChildWindows
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 18.2+
@@ -11,6 +12,10 @@
 
 ```swift
 var includeChildWindows: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL includeChildWindows;
 ```
 
 

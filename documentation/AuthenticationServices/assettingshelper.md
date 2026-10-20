@@ -1,7 +1,8 @@
 # ASSettingsHelper
 
 **Framework**: Authentication Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that opens Settings and navigates to the settings for configuring credential providers.
 
@@ -18,28 +19,32 @@ A class that opens Settings and navigates to the settings for configuring creden
 class ASSettingsHelper
 ```
 
+```objc
+@interface ASSettingsHelper : NSObject
+```
+
 ## Topics
 
 ### Opening the Settings app
-- [class func openCredentialProviderAppSettings(completionHandler: (((any Error)?) -> Void)?)](assettingshelper/opencredentialproviderappsettings(completionhandler:).md)
+- [class func openCredentialProviderAppSettings(completionHandler: (((any Error)?) -> Void)?)](./assettingshelper/opencredentialproviderappsettings%28completionhandler%29.md)
   Open the Settings app and navigate to the AutoFill provider settings.
-- [class func openVerificationCodeAppSettings(completionHandler: (((any Error)?) -> Void)?)](assettingshelper/openverificationcodeappsettings(completionhandler:).md)
+- [class func openVerificationCodeAppSettings(completionHandler: (((any Error)?) -> Void)?)](./assettingshelper/openverificationcodeappsettings%28completionhandler%29.md)
   Open the Settings app and navigate to the verification code provider settings.
 ### Type Methods
-- [class func requestToTurnOnCredentialProviderExtension(completionHandler: (Bool) -> Void)](assettingshelper/requesttoturnoncredentialproviderextension(completionhandler:).md)
+- [class func requestToTurnOnCredentialProviderExtension(completionHandler: (Bool) -> Void)](./assettingshelper/requesttoturnoncredentialproviderextension%28completionhandler%29.md)
   Call this method from your containing app to request to turn on a contained Credential Provider Extension. If the extension is not currently enabled, a prompt will be shown to allow it to be turned on. The completion handler is called with YES or NO depending on whether the credential provider is enabled. You need to wait 10 seconds in order to make additional request to this API.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/usage/environment_variables.htm
 
 # Environment Variables
 
-**
-
-- [.rst](../_sources/usage/environment_variables.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# Environment Variables
-
- Table of contents 
-
-## Contents
-
-# Environment Variables
-
 MLX uses environment variables to configure compilation, numerical precision,
 backend behavior, and distributed execution. Set them before starting the
 process. Many variables are read when the corresponding subsystem is first
@@ -46,7 +19,7 @@ otherwise noted.
 **MLX_DISABLE_COMPILE**
 : Disable compilation globally. This variable is enabled by its presence, so
 setting it to `0` also disables compilation. Calling
-[mlx.core.enable_compile()](../python/_autosummary/mlx.core.enable_compile.html#mlx.core.enable_compile) overrides it.
+[mlx.core.enable_compile()](../python/_autosummary/mlx.core.enable_compile.md#mlx.core.enable_compile) overrides it.
 
 **MLX_ENABLE_TF32**
 : Allow reduced-precision `float32` matrix-multiplication family operations
@@ -97,7 +70,7 @@ macOS and `libmpi.so` on other platforms.
 The NCCL backend also requires `NCCL_HOST_IP` and `NCCL_PORT`. Setting
 `NCCL_DEBUG=INFO` enables additional logging while MLX establishes the
 bootstrap connection. NCCL itself recognizes additional [NCCL environment
-variables](https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/env.md).
+variables](https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/env.html).
 `CUDA_VISIBLE_DEVICES` selects the local CUDA device for each process and is
 handled by the CUDA runtime.
 
@@ -108,7 +81,7 @@ handled by the CUDA runtime.
 milliseconds. This works around macOS releasing residency while the GPU is
 idle. The default is `0` (disabled); nonpositive values disable renewal.
 For example, `1000` renews once per second. This does not change the wired
-limit set by [mlx.core.set_wired_limit()](../python/_autosummary/mlx.core.set_wired_limit.html#mlx.core.set_wired_limit) or submit GPU work. Renewal
+limit set by [mlx.core.set_wired_limit()](../python/_autosummary/mlx.core.set_wired_limit.md#mlx.core.set_wired_limit) or submit GPU work. Renewal
 continues while the Metal device exists and can keep memory wired during
 long idle periods. Requires a Metal 3 GPU on macOS 15 or iOS 18 or later.
 
@@ -195,5 +168,3 @@ default is `1`.
 
 MLX also uses `CUDA_HOME` or `CUDA_PATH` to locate CUDA headers for runtime
 kernel compilation when they cannot be found in the Python environment.
-
-** Contents

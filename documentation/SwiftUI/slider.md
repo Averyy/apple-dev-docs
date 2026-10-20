@@ -1,7 +1,8 @@
 # Slider
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A control for selecting a value from a bounded linear range of values.
 
@@ -22,13 +23,13 @@ struct Slider<Label, ValueLabel> where Label : View, ValueLabel : View
 
 ## Mentions
 
-- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
+- [Populating SwiftUI menus with adaptive controls](./populating-swiftui-menus-with-adaptive-controls.md)
 
 #### Overview
 
 A slider consists of a “thumb” image that the user moves between two extremes of a linear “track”. The ends of the track represent the minimum and maximum possible values. As the user moves the thumb, the slider updates its bound value.
 
-The following example shows a slider bound to the value `speed`. As the slider updates this value, a bound [`Text`](text.md) view shows the value updating. The `onEditingChanged` closure passed to the slider receives callbacks when the user drags the slider. The example uses this to change the color of the value text.
+The following example shows a slider bound to the value `speed`. As the slider updates this value, a bound [`Text`](./text.md) view shows the value updating. The `onEditingChanged` closure passed to the slider receives callbacks when the user drags the slider. The example uses this to change the color of the value text.
 
 ```swift
 @State private var speed = 50.0
@@ -49,7 +50,7 @@ var body: some View {
 }
 ```
 
-![An unlabeled slider, with its thumb about one third of the way from the](/images/com.apple.SwiftUI/SwiftUI-Slider-simple@2x.png)
+![An unlabeled slider, with its thumb about one third of the way from the](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-Slider-simple@2x.png)
 
 You can also use a `step` parameter to provide incremental steps along the path of the slider. For example, if you have a slider with a range of `0` to `100`, and you set the `step` value to `5`, the slider’s increments would be `0`, `5`, `10`, and so on. The following example shows this approach, and also adds optional minimum and maximum value labels.
 
@@ -76,66 +77,67 @@ var body: some View {
 }
 ```
 
-![A slider with labels show minimum and maximum values of 0 and 100,](/images/com.apple.SwiftUI/SwiftUI-Slider-withStepAndLabels@2x.png)
+![A slider with labels show minimum and maximum values of 0 and 100,](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-Slider-withStepAndLabels@2x.png)
 
 The slider also uses the `step` to increase or decrease the value when a VoiceOver user adjusts the slider with voice commands.
 
 ## Topics
 
 ### Creating a slider
-- [init<V>(value: Binding<V>, in: ClosedRange<V>, onEditingChanged: (Bool) -> Void)](slider/init(value:in:oneditingchanged:).md)
+- [init<V>(value: Binding<V>, in: ClosedRange<V>, onEditingChanged: (Bool) -> Void)](./slider/init%28value,in,oneditingchanged%29.md)
   Creates a slider to select a value from a given range.
-- [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, onEditingChanged: (Bool) -> Void)](slider/init(value:in:step:oneditingchanged:).md)
+- [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, onEditingChanged: (Bool) -> Void)](./slider/init%28value,in,step,oneditingchanged%29.md)
   Creates a slider to select a value from a given range, subject to a step increment.
 ### Creating a slider with labels
-- [init<V>(value: Binding<V>, in: ClosedRange<V>, label: () -> Label, onEditingChanged: (Bool) -> Void)](slider/init(value:in:label:oneditingchanged:).md)
+- [init<V>(value: Binding<V>, in: ClosedRange<V>, label: () -> Label, onEditingChanged: (Bool) -> Void)](./slider/init%28value,in,label,oneditingchanged%29.md)
   Creates a slider to select a value from a given range, which displays the provided label.
-- [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, label: () -> Label, onEditingChanged: (Bool) -> Void)](slider/init(value:in:step:label:oneditingchanged:).md)
+- [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, label: () -> Label, onEditingChanged: (Bool) -> Void)](./slider/init%28value,in,step,label,oneditingchanged%29.md)
   Creates a slider to select a value from a given range, subject to a step increment, which displays the provided label.
-- [init<V>(value: Binding<V>, in: ClosedRange<V>, label: () -> Label, minimumValueLabel: () -> ValueLabel, maximumValueLabel: () -> ValueLabel, onEditingChanged: (Bool) -> Void)](slider/init(value:in:label:minimumvaluelabel:maximumvaluelabel:oneditingchanged:).md)
+- [init<V>(value: Binding<V>, in: ClosedRange<V>, label: () -> Label, minimumValueLabel: () -> ValueLabel, maximumValueLabel: () -> ValueLabel, onEditingChanged: (Bool) -> Void)](./slider/init%28value,in,label,minimumvaluelabel,maximumvaluelabel,oneditingchanged%29.md)
   Creates a slider to select a value from a given range, which displays the provided labels.
-- [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, label: () -> Label, minimumValueLabel: () -> ValueLabel, maximumValueLabel: () -> ValueLabel, onEditingChanged: (Bool) -> Void)](slider/init(value:in:step:label:minimumvaluelabel:maximumvaluelabel:oneditingchanged:).md)
+- [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, label: () -> Label, minimumValueLabel: () -> ValueLabel, maximumValueLabel: () -> ValueLabel, onEditingChanged: (Bool) -> Void)](./slider/init%28value,in,step,label,minimumvaluelabel,maximumvaluelabel,oneditingchanged%29.md)
   Creates a slider to select a value from a given range, subject to a step increment, which displays the provided labels.
 ### Adding ticks to a slider
-- [struct SliderTick](slidertick.md)
+- [struct SliderTick](./slidertick.md)
   A representation of a tick in a slider, with associated value and optional label.
-- [struct SliderTickBuilder](slidertickbuilder.md)
+- [struct SliderTickBuilder](./slidertickbuilder.md)
   A result builder that constructs `SliderTick`s for use when creating a `Slider`.
-- [struct SliderTickContentForEach](slidertickcontentforeach.md)
+- [struct SliderTickContentForEach](./slidertickcontentforeach.md)
   A type of slider content that creates content by iterating over a collection.
-- [struct TupleSliderTickContent](tupleslidertickcontent.md)
+- [struct TupleSliderTickContent](./tupleslidertickcontent.md)
   Slider content created from a Swift tuple of slider content.
-- [protocol SliderTickContent](slidertickcontent.md)
+- [protocol SliderTickContent](./slidertickcontent.md)
   A type that provides content for a `SliderTickBuilder`.
 ### Deprecated
-- [init<V>(value: Binding<V>, in: ClosedRange<V>, onEditingChanged: (Bool) -> Void, label: () -> Label)](slider/init(value:in:oneditingchanged:label:).md)
+- [init<V>(value: Binding<V>, in: ClosedRange<V>, onEditingChanged: (Bool) -> Void, label: () -> Label)](./slider/init%28value,in,oneditingchanged,label%29.md)
   Creates a slider to select a value from a given range, which displays the provided label.
-- [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, onEditingChanged: (Bool) -> Void, label: () -> Label)](slider/init(value:in:step:oneditingchanged:label:).md)
+- [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, onEditingChanged: (Bool) -> Void, label: () -> Label)](./slider/init%28value,in,step,oneditingchanged,label%29.md)
   Creates a slider to select a value from a given range, subject to a step increment, which displays the provided label.
-- [init<V>(value: Binding<V>, in: ClosedRange<V>, onEditingChanged: (Bool) -> Void, minimumValueLabel: ValueLabel, maximumValueLabel: ValueLabel, label: () -> Label)](slider/init(value:in:oneditingchanged:minimumvaluelabel:maximumvaluelabel:label:).md)
+- [init<V>(value: Binding<V>, in: ClosedRange<V>, onEditingChanged: (Bool) -> Void, minimumValueLabel: ValueLabel, maximumValueLabel: ValueLabel, label: () -> Label)](./slider/init%28value,in,oneditingchanged,minimumvaluelabel,maximumvaluelabel,label%29.md)
   Creates a slider to select a value from a given range, which displays the provided labels.
-- [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, onEditingChanged: (Bool) -> Void, minimumValueLabel: ValueLabel, maximumValueLabel: ValueLabel, label: () -> Label)](slider/init(value:in:step:oneditingchanged:minimumvaluelabel:maximumvaluelabel:label:).md)
+- [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, onEditingChanged: (Bool) -> Void, minimumValueLabel: ValueLabel, maximumValueLabel: ValueLabel, label: () -> Label)](./slider/init%28value,in,step,oneditingchanged,minimumvaluelabel,maximumvaluelabel,label%29.md)
   Creates a slider to select a value from a given range, subject to a step increment, which displays the provided labels.
 ### Initializers
-- [init<V>(value: Binding<V>, in: ClosedRange<V>, neutralValue: V?, enabledBounds: ClosedRange<V>?, label: () -> Label, currentValueLabel: () -> some View, minimumValueLabel: () -> ValueLabel, maximumValueLabel: () -> ValueLabel, onEditingChanged: (Bool) -> Void)](slider/init(value:in:neutralvalue:enabledbounds:label:currentvaluelabel:minimumvaluelabel:maximumvaluelabel:oneditingchanged:).md)
+- [init<V>(value: Binding<V>, in: ClosedRange<V>, neutralValue: V?, enabledBounds: ClosedRange<V>?, label: () -> Label, currentValueLabel: () -> some View, minimumValueLabel: () -> ValueLabel, maximumValueLabel: () -> ValueLabel, onEditingChanged: (Bool) -> Void)](./slider/init%28value,in,neutralvalue,enabledbounds,label,currentvaluelabel,minimumvaluelabel,maximumvaluelabel,oneditingchanged%29.md)
   Creates a slider to select a value from a given range, which displays the provided labels.
-- [init<V>(value: Binding<V>, in: ClosedRange<V>, neutralValue: V?, enabledBounds: ClosedRange<V>?, label: () -> Label, currentValueLabel: () -> some View, minimumValueLabel: () -> ValueLabel, maximumValueLabel: () -> ValueLabel, ticks: () -> some SliderTickContent, onEditingChanged: (Bool) -> Void)](slider/init(value:in:neutralvalue:enabledbounds:label:currentvaluelabel:minimumvaluelabel:maximumvaluelabel:ticks:oneditingchanged:).md)
+- [init<V>(value: Binding<V>, in: ClosedRange<V>, neutralValue: V?, enabledBounds: ClosedRange<V>?, label: () -> Label, currentValueLabel: () -> some View, minimumValueLabel: () -> ValueLabel, maximumValueLabel: () -> ValueLabel, ticks: () -> some SliderTickContent, onEditingChanged: (Bool) -> Void)](./slider/init%28value,in,neutralvalue,enabledbounds,label,currentvaluelabel,minimumvaluelabel,maximumvaluelabel,ticks,oneditingchanged%29.md)
   Creates a slider to select a value from a given range, which displays the provided labels and customized ticks.
-- [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, neutralValue: V?, enabledBounds: ClosedRange<V>?, label: () -> Label, currentValueLabel: () -> some View, minimumValueLabel: () -> ValueLabel, maximumValueLabel: () -> ValueLabel, tick: (V) -> SliderTick<V>?, onEditingChanged: (Bool) -> Void)](slider/init(value:in:step:neutralvalue:enabledbounds:label:currentvaluelabel:minimumvaluelabel:maximumvaluelabel:tick:oneditingchanged:).md)
+- [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, neutralValue: V?, enabledBounds: ClosedRange<V>?, label: () -> Label, currentValueLabel: () -> some View, minimumValueLabel: () -> ValueLabel, maximumValueLabel: () -> ValueLabel, tick: (V) -> SliderTick<V>?, onEditingChanged: (Bool) -> Void)](./slider/init%28value,in,step,neutralvalue,enabledbounds,label,currentvaluelabel,minimumvaluelabel,maximumvaluelabel,tick,oneditingchanged%29.md)
   Creates a slider to select a value from a given range, subject to a step increment, which displays the provided labels and customizable ticks.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct Stepper](stepper.md)
+### Getting numeric inputs
+- [struct Stepper](./stepper.md)
   A control that performs increment and decrement actions.
-- [struct Toggle](toggle.md)
+- [struct Toggle](./toggle.md)
   A control that toggles between on and off states.
-- [func toggleStyle<S>(S) -> some View](view/togglestyle(_:).md)
+- [func toggleStyle<S>(S) -> some View](./view/togglestyle%28_%29.md)
   Sets the style for toggles in a view hierarchy.
 
 

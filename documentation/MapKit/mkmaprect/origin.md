@@ -1,18 +1,19 @@
 # origin
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The origin point of the rectangle.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ The origin point of the rectangle.
 var origin: MKMapPoint
 ```
 
+```c
+MKMapPoint origin;
+```
+
 ## See Also
 
-- [var size: MKMapSize](mkmaprect/size.md)
+### Getting the rectangle coordinates
+- [var size: MKMapSize](./size.md)
   The width and height of the rectangle, starting from the origin point.
 
 

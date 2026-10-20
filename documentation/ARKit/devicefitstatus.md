@@ -1,7 +1,8 @@
 # DeviceFitStatus
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Device fit validation status indicating the user’s eye position relative to the optimal device fit range.
 
@@ -17,42 +18,43 @@ enum DeviceFitStatus
 ## Topics
 
 ### Enumeration Cases
-- [DeviceFitStatus.eyesAbove](devicefitstatus/eyesabove.md)
+- [DeviceFitStatus.eyesAbove](./devicefitstatus/eyesabove.md)
   User’s eyes are positioned above the optimal device fit range.
-- [DeviceFitStatus.eyesBackward](devicefitstatus/eyesbackward.md)
+- [DeviceFitStatus.eyesBackward](./devicefitstatus/eyesbackward.md)
   User’s eyes are positioned farther from the display than the optimal device fit range.
-- [DeviceFitStatus.eyesBelow](devicefitstatus/eyesbelow.md)
+- [DeviceFitStatus.eyesBelow](./devicefitstatus/eyesbelow.md)
   User’s eyes are positioned below the optimal device fit range.
-- [DeviceFitStatus.eyesForward](devicefitstatus/eyesforward.md)
+- [DeviceFitStatus.eyesForward](./devicefitstatus/eyesforward.md)
   User’s eyes are positioned closer to the display than the optimal device fit range.
-- [DeviceFitStatus.eyesLeft](devicefitstatus/eyesleft.md)
+- [DeviceFitStatus.eyesLeft](./devicefitstatus/eyesleft.md)
   User’s eyes are positioned to the left of the optimal device fit range.
-- [DeviceFitStatus.eyesRight](devicefitstatus/eyesright.md)
+- [DeviceFitStatus.eyesRight](./devicefitstatus/eyesright.md)
   User’s eyes are positioned to the right of the optimal device fit range.
-- [DeviceFitStatus.unknown](devicefitstatus/unknown.md)
+- [DeviceFitStatus.unknown](./devicefitstatus/unknown.md)
   Device fit status is unknown.
-- [DeviceFitStatus.valid](devicefitstatus/valid.md)
+- [DeviceFitStatus.valid](./devicefitstatus/valid.md)
   User’s eyes are properly positioned within the optimal device fit range.
 ### Instance Properties
-- [var description: String](devicefitstatus/description.md)
+- [var description: String](./devicefitstatus/description.md)
   A textual representation of the device fit status.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class VisualFidelityProvider](visualfidelityprovider.md)
+### Visual Fidelity
+- [class VisualFidelityProvider](./visualfidelityprovider.md)
   A data provider that delivers visual fidelity monitoring data.
-- [struct VisualFidelityData](visualfidelitydata.md)
+- [struct VisualFidelityData](./visualfidelitydata.md)
   Visual fidelity data containing device fit and field of view verification.
-- [struct FieldOfViewAnchor](fieldofviewanchor.md)
+- [struct FieldOfViewAnchor](./fieldofviewanchor.md)
   An anchor representing a set of field of view (FoV) boundary polygon points in immersive space.
 
 

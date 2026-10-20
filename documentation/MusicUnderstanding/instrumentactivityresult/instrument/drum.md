@@ -1,7 +1,8 @@
 # drum
 
 **Framework**: Music Understanding  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key to use to obtain drum activity from an instrument activity result.
 

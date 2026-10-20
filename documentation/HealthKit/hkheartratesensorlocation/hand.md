@@ -1,7 +1,8 @@
 # HKHeartRateSensorLocation.hand
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The heart rate sensor is located on the user’s hand.
 
@@ -19,19 +20,24 @@ The heart rate sensor is located on the user’s hand.
 case hand
 ```
 
+```c
+HKHeartRateSensorLocationHand
+```
+
 ## See Also
 
-- [HKHeartRateSensorLocation.other](hkheartratesensorlocation/other.md)
+### Locations
+- [HKHeartRateSensorLocation.other](./other.md)
   The heart rate sensor’s location is not otherwise on this list.
-- [HKHeartRateSensorLocation.chest](hkheartratesensorlocation/chest.md)
+- [HKHeartRateSensorLocation.chest](./chest.md)
   The heart rate sensor is located on the user’s chest.
-- [HKHeartRateSensorLocation.wrist](hkheartratesensorlocation/wrist.md)
+- [HKHeartRateSensorLocation.wrist](./wrist.md)
   The heart rate sensor is located on the user’s wrist.
-- [HKHeartRateSensorLocation.finger](hkheartratesensorlocation/finger.md)
+- [HKHeartRateSensorLocation.finger](./finger.md)
   The heart rate sensor is located on the user’s finger.
-- [HKHeartRateSensorLocation.earLobe](hkheartratesensorlocation/earlobe.md)
+- [HKHeartRateSensorLocation.earLobe](./earlobe.md)
   The heart rate sensor is located on the user’s earlobe.
-- [HKHeartRateSensorLocation.foot](hkheartratesensorlocation/foot.md)
+- [HKHeartRateSensorLocation.foot](./foot.md)
   The heart rate sensor is located on the user’s foot.
 
 

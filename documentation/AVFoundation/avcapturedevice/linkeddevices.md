@@ -1,7 +1,8 @@
 # linkedDevices
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of capture devices that are physically linked to a device.
 
@@ -14,9 +15,13 @@ An array of capture devices that are physically linked to a device.
 var linkedDevices: [AVCaptureDevice] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVCaptureDevice *> * linkedDevices;
+```
+
 #### Discussion
 
-For an external iSight camera, the array contains an [`AVCaptureDevice`](avcapturedevice.md) instance that represents the external iSight microphone.
+For an external iSight camera, the array contains an [`AVCaptureDevice`](../avcapturedevice.md) instance that represents the external iSight microphone.
 
 
 ---

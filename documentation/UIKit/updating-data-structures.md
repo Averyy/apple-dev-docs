@@ -1,6 +1,7 @@
 # Updating data structures
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Article
 
 Review your app’s data design and update it to conform with 64-bit architecture.
 
@@ -12,7 +13,7 @@ Code that doesn’t use explicitly sized types can cause problems for other deve
 
 Inconsistency between type declarations in a function and their use in code causes inconsistent behaviors at runtime. You need to ensure that data you pass to functions or capture as a return value are the same type as the declared parameter type.
 
-##### Align 64 Bit Integer Types
+##### Align 64-bit integer types
 
 As a result of the increased size of the 64-bit architecture, the alignment of all 64-bit integer types in the runtime changes from 4 bytes to 8 bytes. Even if you specify each integer type explicitly, the two structures may still not be identical in both runtimes. This is important to know if you have data that was created by the 32-bit version of your app that you need to read in the 64-bit version.
 
@@ -29,7 +30,7 @@ struct bar {
 
 When this code is compiled with a 32-bit compiler, the field `bar` begins 12 bytes from the start of the structure. When the same code is compiled with a 64-bit compiler, the field `bar` begins 16 bytes from the start of the structure. Four bytes of padding are added after `foo2` so that `bar` is aligned to an 8-byte boundary.
 
-![Alignment between 32-bit and 64-bit representations of the same structure.](/images/com.apple.uikit/media-3109112@2x.png)
+![Alignment between 32-bit and 64-bit representations of the same structure.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-3109112@2x.png)
 
 If you’re defining a new data structure, organize the elements with the largest alignment values first and the smallest values last. This organization eliminates the need for most padding bytes. If you’re working with an existing structure that includes misaligned 64-bit integers, you can use a pragma to force the proper alignment. The following code shows the same data structure, but here it’s forced to use the 32-bit alignment rules.
 
@@ -46,7 +47,7 @@ struct bar {
 
 Use this option sparingly because there’s a performance penalty for misaligned accesses. You might use this option, for example, to maintain backward compatibility with data structures that were deployed in the 32-bit version of your app.
 
-##### Use Explicit Integer Data Types
+##### Use explicit integer data types
 
 The C99 standard provides built-in data types that are guaranteed to be a specific size, regardless of the underlying hardware architecture. The following table lists the C99 types and defined ranges of values for each.
 
@@ -64,7 +65,7 @@ Avoid types such as `short`, `int`, or `unsigned int`. Instead, use types that a
 
 Choosing a fixed-width type also avoids allocating a variable whose range is much larger than you need, and saves memory.
 
-##### Keep Data Types Consistent
+##### Keep data types consistent
 
 Inconsistent use of data types in your code can truncate results of computation and provide incorrect results. Even though the compiler warns you of many problems that result from inconsistent data types, it’s also useful to see a few variations of these patterns so that you can recognize them in your code.
 
@@ -99,18 +100,18 @@ int ReturnMax()
 }
 ```
 
-All of these examples result from code that assumes that `int` and `long` are identical. The ANSI C standard doesn’t make this assumption, and it’s explicitly incorrect when working in the 64-bit runtime. By default, if you modernized your project as described in [`Updating your app from 32-bit to 64-bit architecture`](updating-your-app-from-32-bit-to-64-bit-architecture.md), the `-Wshorten-64-to-32` compiler option was automatically enabled, so the compiler automatically warns you about many cases where a value is truncated. If you didn’t modernize your project, you should explicitly enable that compiler option. Optionally, you may want to include the `-Wconversion` option, which is more verbose, but finds more potential errors.
+All of these examples result from code that assumes that `int` and `long` are identical. The ANSI C standard doesn’t make this assumption, and it’s explicitly incorrect when working in the 64-bit runtime. By default, if you modernized your project as described in [Updating your app from 32-bit to 64-bit architecture](./updating-your-app-from-32-bit-to-64-bit-architecture.md), the `-Wshorten-64-to-32` compiler option was automatically enabled, so the compiler automatically warns you about many cases where a value is truncated. If you didn’t modernize your project, you should explicitly enable that compiler option. Optionally, you may want to include the `-Wconversion` option, which is more verbose, but finds more potential errors.
 
-##### Choose an Appropriate Data Type for Enumerated Values
+##### Choose an appropriate data type for enumerated values
 
 In the LLVM compiler, enumerated types can define the size of the enumeration, so some enumerated types may be larger than you expect. The solution, as in all other cases, is to make no assumptions about a data type’s size. Instead, assign any enumerated values to a variable with the proper data type.
 
-##### Look for Common Type Conversion Problems
+##### Look for common type-conversion problems
 
 The `NSInteger` type is used throughout the system for declaring numeric types. It’s a 32-bit integer in the 32-bit runtime and a 64-bit integer in the 64-bit runtime. Never make the assumption that an `NSInteger` type is the same size as an `int` type. Here are a few cases in your code to look for:
 
-- Converting to or from an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object.
-- Encoding and decoding data using the [`NSCoder`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/MacOSX/WhatsNewInOSX/Articles/MacOSX10_11.html#//apple_ref/doc/uid/TP40016227-SW42) class. In particular, if you encode an `NSInteger` on a 64-bit device and later decode it on a 32-bit device, the decode method throws an exception if the value exceeds the range of a 32-bit integer. You may want to use an explicit integer type instead.
+- Converting to or from an [`NSNumber`](../Foundation/nsnumber.md) object.
+- Encoding and decoding data using the [NSCoder](https://developer.apple.com/library/archive/releasenotes/MacOSX/WhatsNewInOSX/Articles/MacOSX10_11.html#//apple_ref/doc/uid/TP40016227-SW42) class. In particular, if you encode an `NSInteger` on a 64-bit device and later decode it on a 32-bit device, the decode method throws an exception if the value exceeds the range of a 32-bit integer. You may want to use an explicit integer type instead.
 - Working with constants defined in the framework as `NSInteger`. Of particular note is the `NSNotFound` constant. In the 64-bit runtime, its value is larger than the maximum range of an `int` type, so truncating its value often causes errors in your app.
 
 Don’t assume the size of `CGFloat`. As a result of the conversion, the `CGFloat` type changes to a 64-bit floating-point number. As with the `NSInteger` type, you can’t assume that `CGFloat` is a `float` or a `double`, so use it consistently. The following code shows an example that uses Core Foundation to create a `CFNumber:`
@@ -129,9 +130,10 @@ The first part of the code assumes that a `CGFloat` is the same size as a `float
 
 ## See Also
 
-- [Auditing pointer usage](auditing-pointer-usage.md)
+### Memory and pointer access
+- [Auditing pointer usage](./auditing-pointer-usage.md)
   Ensure that the pointers in your code are safe for the 64-bit runtime.
-- [Managing functions and function pointers](managing-functions-and-function-pointers.md)
+- [Managing functions and function pointers](./managing-functions-and-function-pointers.md)
   Ensure that your code correctly handles functions, function pointers, and Objective-C messages.
 
 

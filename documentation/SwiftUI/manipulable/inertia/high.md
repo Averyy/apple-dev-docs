@@ -1,7 +1,8 @@
 # high
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A view has high inertia and high resistance to being manipulated.
 

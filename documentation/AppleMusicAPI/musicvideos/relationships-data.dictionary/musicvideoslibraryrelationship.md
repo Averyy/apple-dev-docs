@@ -1,7 +1,8 @@
 # MusicVideos.Relationships.MusicVideosLibraryRelationship
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A relationship from the music video to its library.
 
@@ -10,7 +11,7 @@ A relationship from the music video to its library.
 
 ## Declaration
 
-```swift
+```
 object MusicVideos.Relationships.MusicVideosLibraryRelationship
 ```
 
@@ -22,13 +23,14 @@ object MusicVideos.Relationships.MusicVideosLibraryRelationship
 
 ## See Also
 
-- [object MusicVideos.Relationships.MusicVideosAlbumsRelationship](musicvideos/relationships-data.dictionary/musicvideosalbumsrelationship.md)
+### Related Objects
+- [object MusicVideos.Relationships.MusicVideosAlbumsRelationship](./musicvideosalbumsrelationship.md)
   A relationship from the music video to its albums.
-- [object MusicVideos.Relationships.MusicVideosArtistsRelationship](musicvideos/relationships-data.dictionary/musicvideosartistsrelationship.md)
+- [object MusicVideos.Relationships.MusicVideosArtistsRelationship](./musicvideosartistsrelationship.md)
   A relationship from the music video to its artists.
-- [object MusicVideos.Relationships.MusicVideosGenresRelationship](musicvideos/relationships-data.dictionary/musicvideosgenresrelationship.md)
+- [object MusicVideos.Relationships.MusicVideosGenresRelationship](./musicvideosgenresrelationship.md)
   A relationship from the music video to its genres.
-- [object MusicVideos.Relationships.MusicVideosSongsRelationship](musicvideos/relationships-data.dictionary/musicvideossongsrelationship.md)
+- [object MusicVideos.Relationships.MusicVideosSongsRelationship](./musicvideossongsrelationship.md)
   A relationship from the music video to its songs.
 
 

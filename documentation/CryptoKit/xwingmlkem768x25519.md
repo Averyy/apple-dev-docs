@@ -1,7 +1,8 @@
 # XWingMLKEM768X25519
 
 **Framework**: Apple CryptoKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The X-Wing (ML-KEM768 with X25519) Key Encapsulation Mechanism, defined in https://datatracker.ietf.org/doc/html/draft-connolly-cfrg-xwing-kem-06
 
@@ -23,24 +24,25 @@ enum XWingMLKEM768X25519
 ## Topics
 
 ### Keys
-- [XWingMLKEM768X25519.PrivateKey](xwingmlkem768x25519/privatekey.md)
-- [XWingMLKEM768X25519.PublicKey](xwingmlkem768x25519/publickey.md)
+- [XWingMLKEM768X25519.PrivateKey](./xwingmlkem768x25519/privatekey.md)
+- [XWingMLKEM768X25519.PublicKey](./xwingmlkem768x25519/publickey.md)
 ### Structures
-- [XWingMLKEM768X25519.OneTimePrivateKey](xwingmlkem768x25519/onetimeprivatekey.md)
+- [XWingMLKEM768X25519.OneTimePrivateKey](./xwingmlkem768x25519/onetimeprivatekey.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum KEM](kem.md)
+### Key encapsulation mechanisms (KEM)
+- [enum KEM](./kem.md)
   A key encapsulation mechanism.
-- [enum MLKEM768](mlkem768.md)
+- [enum MLKEM768](./mlkem768.md)
   The Module-Lattice key encapsulation mechanism (KEM).
-- [enum MLKEM1024](mlkem1024.md)
+- [enum MLKEM1024](./mlkem1024.md)
   The Module-Lattice key encapsulation mechanism (KEM).
 
 

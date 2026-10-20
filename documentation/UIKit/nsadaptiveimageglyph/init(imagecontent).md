@@ -1,7 +1,8 @@
 # init(imageContent:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create an adaptive image glyph from previously saved data.
 
@@ -19,6 +20,10 @@ Create an adaptive image glyph from previously saved data.
 init(imageContent: Data)
 ```
 
+```objc
+- (instancetype) initWithImageContent:(NSData *) imageContent;
+```
+
 #### Return Value
 
 A new adaptive image glyph with the identifier and details from the image data.
@@ -33,7 +38,8 @@ Use this initializer to create an adaptive image glyph from data you previously 
 
 ## See Also
 
-- [init(coder: NSCoder)](nsadaptiveimageglyph/init(coder:).md)
+### Creating an adaptive image glyph
+- [init(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

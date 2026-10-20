@@ -1,7 +1,8 @@
 # unit
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The increment of time for the subscription period.
 
@@ -22,15 +23,16 @@ let unit: Product.SubscriptionPeriod.Unit
 
 #### Discussion
 
-The units used to specify a subscription period include day, week, month, and year, as defined in [`Product.SubscriptionPeriod.Unit`](product/subscriptionperiod/unit-swift.enum.md).
+The units used to specify a subscription period include day, week, month, and year, as defined in [`Product.SubscriptionPeriod.Unit`](./unit-swift.enum.md).
 
-To calculate the duration of one subscription period, multiply the [`unit`](product/subscriptionperiod/unit-swift.property.md) by the number of units ([`value`](product/subscriptionperiod/value.md)).
+To calculate the duration of one subscription period, multiply the [`unit`](./unit-swift.property.md) by the number of units ([`value`](./value.md)).
 
 ## See Also
 
-- [let value: Int](product/subscriptionperiod/value.md)
+### Getting the subscription period
+- [let value: Int](./value.md)
   The number of period units.
-- [Product.SubscriptionPeriod.Unit](product/subscriptionperiod/unit-swift.enum.md)
+- [Product.SubscriptionPeriod.Unit](./unit-swift.enum.md)
   Units of time that describe subscription periods.
 
 

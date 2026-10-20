@@ -1,7 +1,8 @@
 # setUniformTransform(type:transform:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers a raw-data transformer closure for a uniform of type `V`.
 

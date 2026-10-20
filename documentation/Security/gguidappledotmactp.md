@@ -1,7 +1,8 @@
 # gGuidAppleDotMacTP
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 let gGuidAppleDotMacTP: cssm_guid
+```
+
+```c
+extern const CSSM_GUID gGuidAppleDotMacTP;
 ```
 
 

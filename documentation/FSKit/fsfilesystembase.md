@@ -1,7 +1,8 @@
 # FSFileSystemBase
 
 **Framework**: FSKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol containing functionality supplied by FSKit to file system implementations.
 
@@ -14,30 +15,35 @@ A protocol containing functionality supplied by FSKit to file system implementat
 protocol FSFileSystemBase : NSObjectProtocol
 ```
 
+```objc
+@protocol FSFileSystemBase <NSObject>
+```
+
 #### Overview
 
-Both [`FSFileSystem`](fsfilesystem.md) and [`FSUnaryFileSystem`](fsunaryfilesystem.md) conform to this protocol.
+Both [`FSFileSystem`](./fsfilesystem.md) and [`FSUnaryFileSystem`](./fsunaryfilesystem.md) conform to this protocol.
 
 ## Topics
 
 ### Implementing essential functionality
-- [var containerStatus: FSContainerStatus](fsfilesystembase/containerstatus.md)
+- [var containerStatus: FSContainerStatus](./fsfilesystembase/containerstatus.md)
   The status of the file system container, indicating its readiness and activity.
-- [func wipe(FSBlockDeviceResource, completionHandler: ((any Error)?) -> Void)](fsfilesystembase/wipe(_:completionhandler:).md)
+- [func wipe(FSBlockDeviceResource, completionHandler: ((any Error)?) -> Void)](./fsfilesystembase/wipe%28_,completionhandler%29.md)
   Wipes existing file systems on the specified resource.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [FSUnaryFileSystem](fsunaryfilesystem.md)
+- [FSUnaryFileSystem](./fsunaryfilesystem.md)
 
 ## See Also
 
-- [class FSUnaryFileSystem](fsunaryfilesystem.md)
+### File systems
+- [class FSUnaryFileSystem](./fsunaryfilesystem.md)
   An abstract base class for implementing a minimal file system.
-- [class FSFileName](fsfilename.md)
+- [class FSFileName](./fsfilename.md)
   The name of a file, expressed as a data buffer.
 
 

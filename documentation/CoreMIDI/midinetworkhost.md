@@ -1,7 +1,8 @@
 # MIDINetworkHost
 
 **Framework**: Core MIDI  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents the host’s network address.
 
@@ -18,49 +19,54 @@ An object that represents the host’s network address.
 class MIDINetworkHost
 ```
 
+```objc
+@interface MIDINetworkHost : NSObject
+```
+
 ## Topics
 
 ### Creating Network Hosts
-- [convenience init(name: String, address: String, port: Int)](midinetworkhost/init(name:address:port:).md)
+- [convenience init(name: String, address: String, port: Int)](./midinetworkhost/init%28name,address,port%29.md)
   Creates a host with the specified name, adress, and port.
-- [convenience init(name: String, netService: NetService)](midinetworkhost/init(name:netservice:).md)
+- [convenience init(name: String, netService: NetService)](./midinetworkhost/init%28name,netservice%29.md)
   Creates a host with the specified name and net service.
-- [convenience init(name: String, netServiceName: String, netServiceDomain: String)](midinetworkhost/init(name:netservicename:netservicedomain:).md)
+- [convenience init(name: String, netServiceName: String, netServiceDomain: String)](./midinetworkhost/init%28name,netservicename,netservicedomain%29.md)
   Creates a host with the specified name, net service name, and domain.
-- [let MIDINetworkBonjourServiceType: String](midinetworkbonjourservicetype.md)
+- [let MIDINetworkBonjourServiceType: String](./midinetworkbonjourservicetype.md)
   The Bonjour service type.
 ### Inspecting Host Properties
-- [var name: String](midinetworkhost/name.md)
+- [var name: String](./midinetworkhost/name.md)
   The host name.
-- [var netServiceName: String?](midinetworkhost/netservicename.md)
+- [var netServiceName: String?](./midinetworkhost/netservicename.md)
   The net service name.
-- [var netServiceDomain: String?](midinetworkhost/netservicedomain.md)
+- [var netServiceDomain: String?](./midinetworkhost/netservicedomain.md)
   The net service domain.
-- [var address: String](midinetworkhost/address.md)
+- [var address: String](./midinetworkhost/address.md)
   The host address.
-- [var port: Int](midinetworkhost/port.md)
+- [var port: Int](./midinetworkhost/port.md)
   The host port.
 ### Comparing Hosts
-- [func hasSameAddress(as: MIDINetworkHost) -> Bool](midinetworkhost/hassameaddress(as:).md)
+- [func hasSameAddress(as: MIDINetworkHost) -> Bool](./midinetworkhost/hassameaddress%28as%29.md)
   Compares this host instance with another to see if they share the same address value.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MIDINetworkConnection](midinetworkconnection.md)
+### Networking
+- [class MIDINetworkConnection](./midinetworkconnection.md)
   An object that connects a session to a host.
-- [class MIDINetworkSession](midinetworksession.md)
+- [class MIDINetworkSession](./midinetworksession.md)
   An object that represents a pairing of a source and destination.
 
 

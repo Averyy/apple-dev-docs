@@ -1,7 +1,8 @@
 # throttles
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing all the throttle controls managed by this controller.
 
@@ -16,29 +17,34 @@ An array containing all the throttle controls managed by this controller.
 var throttles: [TCThrottle] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<TCThrottle *> * throttles;
+```
+
 ## See Also
 
-- [var buttons: [TCButton]](tctouchcontroller/buttons.md)
+### Inspecting the touch controller
+- [var buttons: [TCButton]](./buttons.md)
   An array containing all the button controls managed by this controller.
-- [var controls: [any TCControl]](tctouchcontroller/controls.md)
+- [var controls: [any TCControl]](./controls.md)
   An array containing all the touch controls managed by this controller.
-- [var device: any MTLDevice](tctouchcontroller/device.md)
+- [var device: any MTLDevice](./device.md)
   The Metal device the touch control uses for rendering the touch controls.
-- [var directionPads: [TCDirectionPad]](tctouchcontroller/directionpads.md)
+- [var directionPads: [TCDirectionPad]](./directionpads.md)
   An array containing all the direction pad controls managed by this controller.
-- [var drawableSize: CGSize](tctouchcontroller/drawablesize.md)
+- [var drawableSize: CGSize](./drawablesize.md)
   The size of the drawable to which the touch controller’s contents be drawn, in native pixels.
-- [var size: CGSize](tctouchcontroller/size.md)
+- [var size: CGSize](./size.md)
   The size of the view the touch controller’s drawable is embedded in, in points.
-- [var switches: [TCSwitch]](tctouchcontroller/switches.md)
+- [var switches: [TCSwitch]](./switches.md)
   An array containing all the switch controls managed by this controller.
-- [var isConnected: Bool](tctouchcontroller/isconnected.md)
+- [var isConnected: Bool](./isconnected.md)
   A Boolean value that indicates whether the touch controller is connected to the Game Controller framework.
-- [class var isSupported: Bool](tctouchcontroller/issupported.md)
+- [class var isSupported: Bool](./issupported.md)
   Whether touch controllers are supported for the device.
-- [var thumbsticks: [TCThumbstick]](tctouchcontroller/thumbsticks.md)
+- [var thumbsticks: [TCThumbstick]](./thumbsticks.md)
   An array containing all the thumbstick controls managed by this controller.
-- [var touchpads: [TCTouchpad]](tctouchcontroller/touchpads.md)
+- [var touchpads: [TCTouchpad]](./touchpads.md)
   An array containing all the touchpad controls managed by this controller.
 
 

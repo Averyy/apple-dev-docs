@@ -1,7 +1,8 @@
 # jsonRepresentation
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The JSON representation of the subscription renewal information.
 
@@ -22,11 +23,11 @@ var jsonRepresentation: Data { get }
 
 #### Discussion
 
-The [`jsonRepresentation`](product/subscriptioninfo/renewalinfo/jsonrepresentation.md) is UTF-8 string data that has the same JSON schema as the [`JWSRenewalInfoDecodedPayload`](https://developer.apple.com/documentation/appstoreserverapi/jwsrenewalinfodecodedpayload) object. You can use the JSON data to decode the subscription renewal information into your own data type, or use the [`Product.SubscriptionInfo.RenewalInfo`](product/subscriptioninfo/renewalinfo.md) value and its properties directly.
+The [`jsonRepresentation`](./jsonrepresentation.md) is UTF-8 string data that has the same JSON schema as the [`JWSRenewalInfoDecodedPayload`](../../../../AppStoreServerAPI/jwsrenewalinfodecodedpayload.md) object. You can use the JSON data to decode the subscription renewal information into your own data type, or use the [`Product.SubscriptionInfo.RenewalInfo`](../renewalinfo.md) value and its properties directly.
 
-The JSON Web Signature (JWS) Compact Serialization for the subscription renewal information is available in the [`jwsRepresentation`](verificationresult/jwsrepresentation-178oj.md) property of the [`VerificationResult`](verificationresult.md). The JWS string consists of three Base64URL-encoded components, separated by a period: a header, a payload, and a signature. The [`jsonRepresentation`](transaction/jsonrepresentation.md) is the Base64URL-decoded payload component.
+The JSON Web Signature (JWS) Compact Serialization for the subscription renewal information is available in the [`jwsRepresentation`](../../../verificationresult/jwsrepresentation-178oj.md) property of the [`VerificationResult`](../../../verificationresult.md). The JWS string consists of three Base64URL-encoded components, separated by a period: a header, a payload, and a signature. The [`jsonRepresentation`](../../../transaction/jsonrepresentation.md) is the Base64URL-decoded payload component.
 
-> **Note**:  If you send the subscription renewal information to your server or store it, use the [`jwsRepresentation`](verificationresult/jwsrepresentation-178oj.md) and validate the signature before parsing it.
+> **Note**:  If you send the subscription renewal information to your server or store it, use the [`jwsRepresentation`](../../../verificationresult/jwsrepresentation-178oj.md) and validate the signature before parsing it.
 
 
 ---

@@ -1,7 +1,8 @@
 # WKWebExtensionContext.PermissionStatus.grantedExplicitly
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the permission was explicitly granted permission.
 
@@ -16,6 +17,10 @@ Indicates that the permission was explicitly granted permission.
 
 ```swift
 case grantedExplicitly
+```
+
+```c
+WKWebExtensionContextPermissionStatusGrantedExplicitly
 ```
 
 

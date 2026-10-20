@@ -1,7 +1,8 @@
 # Tips.Status.invalidated(_:)
 
 **Framework**: TipKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The tip is no longer valid.
 

@@ -1,7 +1,8 @@
 # appendingPathComponent(_:isDirectory:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new URL by appending a path component to the original URL, along with a trailing slash if the component is a directory.
 
@@ -20,9 +21,13 @@ Returns a new URL by appending a path component to the original URL, along with 
 func appendingPathComponent(_ pathComponent: String, isDirectory: Bool) -> URL?
 ```
 
+```objc
+- (NSURL *) URLByAppendingPathComponent:(NSString *) pathComponent isDirectory:(BOOL) isDirectory;
+```
+
 ## Mentions
 
-- [Improving performance and stability when accessing the file system](improving-performance-and-stability-when-accessing-the-file-system.md)
+- [Improving performance and stability when accessing the file system](../improving-performance-and-stability-when-accessing-the-file-system.md)
 
 #### Return Value
 
@@ -35,31 +40,32 @@ If the original URL does not end with a forward slash and `pathComponent` does n
 ## Parameters
 
 - `pathComponent`: The path component to add to the URL.
-- `isDirectory`: If [`true`](https://developer.apple.com/documentation/swift/true), a trailing slash is appended after `pathComponent`.
+- `isDirectory`: If [`true`](../../Swift/true.md), a trailing slash is appended after `pathComponent`.
 
 ## See Also
 
-- [var filePathURL: URL?](nsurl/filepathurl.md)
+### Modifying and Converting a File URL
+- [var filePathURL: URL?](./filepathurl.md)
   A file path URL that points to the same resource as the URL object. (read-only)
-- [func fileReferenceURL() -> URL?](nsurl/filereferenceurl.md)
+- [func fileReferenceURL() -> URL?](./filereferenceurl%28%29.md)
   Returns a new file reference URL that points to the same resource as the receiver.
-- [func appendingPathComponent(String) -> URL?](nsurl/appendingpathcomponent(_:).md)
+- [func appendingPathComponent(String) -> URL?](./appendingpathcomponent%28_%29.md)
   Returns a new URL by appending a path component to the original URL.
-- [func appendingPathComponent(String, conformingTo: UTType) -> URL](nsurl/appendingpathcomponent(_:conformingto:).md)
+- [func appendingPathComponent(String, conformingTo: UTType) -> URL](./appendingpathcomponent%28_,conformingto%29.md)
   Returns a URL by appending the specified path component with the file extension for a uniform type identifier.
-- [func appendingPathExtension(String) -> URL?](nsurl/appendingpathextension(_:).md)
+- [func appendingPathExtension(String) -> URL?](./appendingpathextension%28_%29.md)
   Returns a new URL by appending a path extension to the original URL.
-- [func appendingPathExtension(for: UTType) -> URL](nsurl/appendingpathextension(for:).md)
+- [func appendingPathExtension(for: UTType) -> URL](./appendingpathextension%28for%29.md)
   Returns a URL by appending the path extension for a uniform type identifier.
-- [var deletingLastPathComponent: URL?](nsurl/deletinglastpathcomponent.md)
+- [var deletingLastPathComponent: URL?](./deletinglastpathcomponent.md)
   A URL you create by removing the last path component from the receiver. (read-only)
-- [var deletingPathExtension: URL?](nsurl/deletingpathextension.md)
+- [var deletingPathExtension: URL?](./deletingpathextension.md)
   A URL you create by removing the path extension from the receiver, if any. (read-only)
-- [var resolvingSymlinksInPath: URL?](nsurl/resolvingsymlinksinpath.md)
+- [var resolvingSymlinksInPath: URL?](./resolvingsymlinksinpath.md)
   A URL that points to the same resource as the receiver and includes no symbolic links. (read-only)
-- [var standardizingPath: URL?](nsurl/standardizingpath.md)
+- [var standardizingPath: URL?](./standardizingpath.md)
   A URL that points to the same resource as the original URL using an absolute path. (read-only)
-- [var hasDirectoryPath: Bool](nsurl/hasdirectorypath.md)
+- [var hasDirectoryPath: Bool](./hasdirectorypath.md)
   A Boolean value that indicates whether the URL string’s path represents a directory.
 
 

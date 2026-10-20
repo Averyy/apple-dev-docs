@@ -1,14 +1,15 @@
 # IdentityDocumentProviderRegistrationStore.Status.authorized
 
 **Framework**: IdentityDocumentServices  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user has authorized the current app for document providing.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 

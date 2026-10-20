@@ -1,7 +1,8 @@
 # init(name:dynamicProvider:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a dynamic catalog color with a provider that’s used to resolve the exact color value, calculated on first use.
 
@@ -14,9 +15,13 @@ Creates a dynamic catalog color with a provider that’s used to resolve the exa
 init(name colorName: NSColor.Name?, dynamicProvider: @escaping (NSAppearance) -> NSColor)
 ```
 
+```objc
++ (NSColor *) colorWithName:(NSColorName) colorName dynamicProvider:(NSColor * (^)(NSAppearance *)) dynamicProvider;
+```
+
 #### Discussion
 
-When methods on a color need color component values, AppKit calls the provider with [`currentDrawingAppearance`](nsappearance/currentdrawingappearance.md). The provider can use the appearance to return another color to use for drawing. For example, if you create a color matching [`systemYellow`](nscolor/systemyellow.md) for Light appearance, you’ll get a color matching [`systemYellow`](nscolor/systemyellow.md) for Dark appearance when using Dark Mode. As often as possible, use the given appearance.
+When methods on a color need color component values, AppKit calls the provider with [`currentDrawingAppearance`](../nsappearance/currentdrawingappearance.md). The provider can use the appearance to return another color to use for drawing. For example, if you create a color matching [`systemYellow`](./systemyellow.md) for Light appearance, you’ll get a color matching [`systemYellow`](./systemyellow.md) for Dark appearance when using Dark Mode. As often as possible, use the given appearance.
 
 The `colorName` is equal to the identity of the color and should be universally unique; if `nil`, the system generates a unique name.
 

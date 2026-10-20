@@ -1,7 +1,8 @@
 # AccessibilityQuickActionOutlineStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A presentation style that displays a prompt to the user when the accessibility quick action is active.
 
@@ -16,16 +17,17 @@ struct AccessibilityQuickActionOutlineStyle
 
 #### Overview
 
-Don’t use this type directly. Instead, use [`outline`](accessibilityquickactionstyle/outline.md).
+Don’t use this type directly. Instead, use [`outline`](./accessibilityquickactionstyle/outline.md).
 
 ## Relationships
 
 ### Conforms To
-- [AccessibilityQuickActionStyle](accessibilityquickactionstyle.md)
+- [AccessibilityQuickActionStyle](./accessibilityquickactionstyle.md)
 
 ## See Also
 
-- [struct AccessibilityQuickActionPromptStyle](accessibilityquickactionpromptstyle.md)
+### Supporting types
+- [struct AccessibilityQuickActionPromptStyle](./accessibilityquickactionpromptstyle.md)
   A presentation style that displays a prompt to the user when the accessibility quick action is active.
 
 

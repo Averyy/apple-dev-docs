@@ -1,12 +1,14 @@
 # Dot product calculation
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 Calculate the scalar product of two vectors.
 
 ## See Also
 
-- [Vector distance and Pythagorean computation](vector-distance-and-pythagorean-computation.md)
+### Vector geometry functions
+- [Vector distance and Pythagorean computation](./vector-distance-and-pythagorean-computation.md)
   Calculate distance and hypotenuse of vectors.
 
 

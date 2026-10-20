@@ -1,18 +1,19 @@
 # NSManagedObjectConstraintMergeError
 
 **Framework**: Core Data  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Error code to denote a problem with the merging of instances of a managed object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,37 +21,42 @@ Error code to denote a problem with the merging of instances of a managed object
 var NSManagedObjectConstraintMergeError: Int { get }
 ```
 
+```c
+NSManagedObjectConstraintMergeError
+```
+
 ## See Also
 
-- [var NSCoreDataError: Int](nscoredataerror.md)
+### Error codes
+- [var NSCoreDataError: Int](./nscoredataerror.md)
   An error code that indicates a nonspecific Core Data error.
-- [var NSEntityMigrationPolicyError: Int](nsentitymigrationpolicyerror.md)
+- [var NSEntityMigrationPolicyError: Int](./nsentitymigrationpolicyerror.md)
   An error code that indicates a migration failure during processing of an entity migration policy.
-- [var NSExternalRecordImportError: Int](nsexternalrecordimporterror.md)
+- [var NSExternalRecordImportError: Int](./nsexternalrecordimporterror.md)
   Error code to denote a general error encountered while importing external records.
-- [var NSInferredMappingModelError: Int](nsinferredmappingmodelerror.md)
+- [var NSInferredMappingModelError: Int](./nsinferredmappingmodelerror.md)
   Error code to denote a problem with the creation of an inferred mapping model.
-- [var NSManagedObjectConstraintValidationError: Int](nsmanagedobjectconstraintvalidationerror.md)
+- [var NSManagedObjectConstraintValidationError: Int](./nsmanagedobjectconstraintvalidationerror.md)
   Error code to denote a problem with the validation of a managed object.
-- [var NSManagedObjectContextLockingError: Int](nsmanagedobjectcontextlockingerror.md)
+- [var NSManagedObjectContextLockingError: Int](./nsmanagedobjectcontextlockingerror.md)
   Error code to denote an inability to acquire a lock in a managed object context.
-- [var NSManagedObjectExternalRelationshipError: Int](nsmanagedobjectexternalrelationshiperror.md)
+- [var NSManagedObjectExternalRelationshipError: Int](./nsmanagedobjectexternalrelationshiperror.md)
   Error code to denote that an object being saved has a relationship containing an object from another store.
-- [var NSManagedObjectMergeError: Int](nsmanagedobjectmergeerror.md)
+- [var NSManagedObjectMergeError: Int](./nsmanagedobjectmergeerror.md)
   Error code to denote that a merge policy failed—Core Data is unable to complete merging.
-- [var NSManagedObjectModelReferenceNotFoundError: Int](nsmanagedobjectmodelreferencenotfounderror.md)
+- [var NSManagedObjectModelReferenceNotFoundError: Int](./nsmanagedobjectmodelreferencenotfounderror.md)
   An error code that indicates Core Data isn’t able to find or instantiate the referenced object model.
-- [var NSManagedObjectReferentialIntegrityError: Int](nsmanagedobjectreferentialintegrityerror.md)
+- [var NSManagedObjectReferentialIntegrityError: Int](./nsmanagedobjectreferentialintegrityerror.md)
   Error code to denote an attempt to fire a fault pointing to an object that does not exist.
-- [var NSManagedObjectValidationError: Int](nsmanagedobjectvalidationerror.md)
+- [var NSManagedObjectValidationError: Int](./nsmanagedobjectvalidationerror.md)
   Error code to denote a generic validation error.
-- [var NSMigrationCancelledError: Int](nsmigrationcancellederror.md)
+- [var NSMigrationCancelledError: Int](./nsmigrationcancellederror.md)
   Error code to denote that migration failed due to manual cancellation.
-- [var NSMigrationConstraintViolationError: Int](nsmigrationconstraintviolationerror.md)
+- [var NSMigrationConstraintViolationError: Int](./nsmigrationconstraintviolationerror.md)
   Error code to denote a problem with the validation of a managed object during a migration.
-- [var NSMigrationError: Int](nsmigrationerror.md)
+- [var NSMigrationError: Int](./nsmigrationerror.md)
   Error code to denote a general migration error.
-- [var NSMigrationManagerDestinationStoreError: Int](nsmigrationmanagerdestinationstoreerror.md)
+- [var NSMigrationManagerDestinationStoreError: Int](./nsmigrationmanagerdestinationstoreerror.md)
   Error code to denote that migration failed due to a problem with the destination data store.
 
 

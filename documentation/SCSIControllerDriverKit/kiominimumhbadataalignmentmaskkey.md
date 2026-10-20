@@ -1,23 +1,25 @@
 # kIOMinimumHBADataAlignmentMaskKey
 
 **Framework**: SCSIControllerDriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 #define kIOMinimumHBADataAlignmentMaskKey
 ```
 
 ## See Also
 
-- [kIOHierarchicalLogicalUnitSupportKey](kiohierarchicallogicalunitsupportkey.md)
-- [kIOServicePowerCapabilityPause](kioservicepowercapabilitypause.md)
+### Macros
+- [kIOHierarchicalLogicalUnitSupportKey](./kiohierarchicallogicalunitsupportkey.md)
+- [kIOServicePowerCapabilityPause](./kioservicepowercapabilitypause.md)
   A PCIe-specific power state for halting transactions while reallocating resources.
-- [kMaxSenseBufferSize](kmaxsensebuffersize.md)
+- [kMaxSenseBufferSize](./kmaxsensebuffersize.md)
   The maximum size of the SCSI sense data buffer in a response.
 
 

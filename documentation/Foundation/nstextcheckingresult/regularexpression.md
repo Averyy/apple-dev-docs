@@ -1,7 +1,8 @@
 # regularExpression
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The regular expression of a type checking result.
 
@@ -21,9 +22,14 @@ The regular expression of a type checking result.
 var regularExpression: NSRegularExpression? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSRegularExpression * regularExpression;
+```
+
 ## See Also
 
-- [class func regularExpressionCheckingResult(ranges: NSRangePointer, count: Int, regularExpression: NSRegularExpression) -> NSTextCheckingResult](nstextcheckingresult/regularexpressioncheckingresult(ranges:count:regularexpression:).md)
+### Text Checking Results for Regular Expressions
+- [class func regularExpressionCheckingResult(ranges: NSRangePointer, count: Int, regularExpression: NSRegularExpression) -> NSTextCheckingResult](./regularexpressioncheckingresult%28ranges,count,regularexpression%29.md)
   Creates and returns a type checking result with the specified regular expression data.
 
 

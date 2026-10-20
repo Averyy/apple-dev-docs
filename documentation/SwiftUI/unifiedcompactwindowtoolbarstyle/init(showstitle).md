@@ -1,7 +1,8 @@
 # init(showsTitle:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a unified compact window toolbar style.
 
@@ -20,7 +21,8 @@ init(showsTitle: Bool)
 
 ## See Also
 
-- [init()](unifiedcompactwindowtoolbarstyle/init.md)
+### Creating the window toolbar style
+- [init()](./init%28%29.md)
   Creates a unified compact window toolbar style.
 
 

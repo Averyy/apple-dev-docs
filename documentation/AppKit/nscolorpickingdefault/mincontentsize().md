@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Indicates the receiver’s minimum content size.
@@ -16,19 +17,24 @@ Indicates the receiver’s minimum content size.
 func minContentSize() -> NSSize
 ```
 
+```objc
+- (NSSize) minContentSize;
+```
+
 #### Discussion
 
 The receiver does not allow a size smaller than `minContentSize`.
 
 ## See Also
 
-- [func setMode(NSColorPanel.Mode)](nscolorpickingdefault/setmode(_:).md)
+### Configuring Color Pickers
+- [func setMode(NSColorPanel.Mode)](./setmode%28_%29.md)
   Specifies the receiver’s mode.
-- [func insertNewButtonImage(NSImage, in: NSButtonCell)](nscolorpickingdefault/insertnewbuttonimage(_:in:).md)
+- [func insertNewButtonImage(NSImage, in: NSButtonCell)](./insertnewbuttonimage%28_,in%29.md)
   Sets the image of a given button cell.
-- [func provideNewButtonImage() -> NSImage](nscolorpickingdefault/providenewbuttonimage.md)
+- [func provideNewButtonImage() -> NSImage](./providenewbuttonimage%28%29.md)
   Provides the image of the button used to select the receiver in the color panel.
-- [func buttonToolTip() -> String](nscolorpickingdefault/buttontooltip.md)
+- [func buttonToolTip() -> String](./buttontooltip%28%29.md)
   Provides the toolbar button help tag.
 
 

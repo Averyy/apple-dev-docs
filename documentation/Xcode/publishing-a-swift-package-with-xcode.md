@@ -1,6 +1,7 @@
 # Publishing a Swift package with Xcode
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Publish your Swift package privately, or share it globally with other developers.
 
@@ -8,7 +9,7 @@ Publish your Swift package privately, or share it globally with other developers
 
 Making your Swift packages available online enables you to use the support for Swift package dependencies in Xcode. By publishing your Swift packages to private Git repositories, you can manage and integrate internal dependencies across your projects, allowing you to reduce duplicate code and promote maintainability. Publish your packages publicly, and share your code with developers around the world. To get started, you just need a Swift package and an account with a provider of hosted Git repositories.
 
-##### Provide Information on Your Swift Package
+##### Provide information on your Swift package
 
 Every newly created Swift package contains a blank `README.md` file for you to modify. Consider adding information to it so other developers can learn more your Swift package, for example:
 
@@ -19,25 +20,25 @@ Every newly created Swift package contains a blank `README.md` file for you to m
 
 Some developers even choose to include tutorials or usage documentation as part of their `README.md` file.
 
-##### Put Your Local Swift Package Under Version Control
+##### Put your local Swift package under version control
 
 When you create a new Swift package with Xcode, check “Create Git repository on my Mac” in the sheet for creating a new package.
 
 If you already have a local package that’s not using version control, put it under version control using Xcode. Open your Swift package, choose Integrate > New Git Repository, check the checkbox next to your package, and click Create. This initializes a Git repository, adds your package to the staging area, and commits your files.
 
-![Screenshot showing the dialogue when following the directions to put a standalone Swift package under version control.](/images/com.apple.Xcode/publishing-a-swift-package-with-xcode-1@2x.png)
+![Screenshot showing the dialogue when following the directions to put a standalone Swift package under version control.](https://developer.apple.com/tutorials/images/com.apple.Xcode/publishing-a-swift-package-with-xcode-1@2x.png)
 
-##### Tag Your Latest Commit
+##### Tag your latest commit
 
-It’s a best practice to create a version tag for a Swift package; however, there are other ways to add a package to a project, as described in [`Adding package dependencies to your app`](adding-package-dependencies-to-your-app.md). To create a version tag, tag the last commit with the package version. A *package version* is a three period-separated integer. An example is `1.0.0.` The package version must conform to *semantic versioning* to ensure that your package behaves in a predictable manner when developers update their package dependency to a newer version.
+It’s a best practice to create a version tag for a Swift package; however, there are other ways to add a package to a project, as described in [Adding package dependencies to your app](./adding-package-dependencies-to-your-app.md). To create a version tag, tag the last commit with the package version. A *package version* is a three period-separated integer. An example is `1.0.0.` The package version must conform to *semantic versioning* to ensure that your package behaves in a predictable manner when developers update their package dependency to a newer version.
 
-To learn more about the semantic versioning standard, visit [`Semantic Versioning 2.0.0`](https://developer.apple.comhttps://semver.org).
+To learn more about the semantic versioning standard, visit [Semantic Versioning 2.0.0](https://semver.org).
 
 > **Note**: Make sure to commit any changes that you want to include in the release of your Swift package before creating a version tag.
 
 In the Source Code navigator, click the disclosure triangle next to Branches to show a list of your branches, then select a branch. In the history editor, Control-click a commit, then choose Tag “Your Identifier” from the pop-up menu. In the sheet that appears, enter a tag name that follows the semantic versioning standard, such as `1.2.4`. Add an optional message, then click Create.
 
-##### Make Your Swift Package Publicly Available
+##### Make your Swift package publicly available
 
 Ensure the Source Control navigator is visible and select your local repository. Right-click it, and choose Create *[packageName]* Remote. In case you’ve already created an empty remote repository for your Swift package, choose Add Existing Remote.
 
@@ -47,7 +48,7 @@ Next, push your local changes and the version tag to your Git remote. Click the 
 
 Ensure your Git repository is public, and let people know that the package exists. Other developers only need the package’s Git URL to get started.
 
-Learn more about adopting package dependencies in [`Adding package dependencies to your app`](adding-package-dependencies-to-your-app.md).
+Learn more about adopting package dependencies in [Adding package dependencies to your app](./adding-package-dependencies-to-your-app.md).
 
 
 ---

@@ -1,9 +1,10 @@
 # flags
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The flags associated with the `CVTime` value. See [`CVTime Values`](cvtime-values.md) for possible values. If `kCVTimeIsIndefinite` is set, you should not use any of the other fields in this structure.
+The flags associated with the `CVTime` value. See [CVTime Values](../cvtime-values.md) for possible values. If `kCVTimeIsIndefinite` is set, you should not use any of the other fields in this structure.
 
 **Availability**:
 - iOS 4.0+
@@ -20,11 +21,16 @@ The flags associated with the `CVTime` value. See [`CVTime Values`](cvtime-value
 var flags: Int32
 ```
 
+```c
+int32_t flags;
+```
+
 ## See Also
 
-- [var timeScale: Int32](cvtime/timescale.md)
+### Properties
+- [var timeScale: Int32](./timescale.md)
   The time scale for this value.
-- [var timeValue: Int64](cvtime/timevalue.md)
+- [var timeValue: Int64](./timevalue.md)
   The time value.
 
 

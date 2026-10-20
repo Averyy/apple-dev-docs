@@ -1,7 +1,8 @@
 # GSS_C_OPTION_MASK
 
 **Framework**: GSS  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The masking constant for options.
 
@@ -18,25 +19,30 @@ The masking constant for options.
 var GSS_C_OPTION_MASK: Int32 { get }
 ```
 
+```c
+#define GSS_C_OPTION_MASK
+```
+
 ## See Also
 
-- [var GSS_C_INDEFINITE: UInt](gss_c_indefinite.md)
+### Credential Masks and Macros
+- [var GSS_C_INDEFINITE: UInt](./gss_c_indefinite.md)
   The value that indicates the maximum permitted lifetime when used in a time request.
-- [var GSS_C_INITIATE: Int32](gss_c_initiate.md)
+- [var GSS_C_INITIATE: Int32](./gss_c_initiate.md)
   The value that indicates a credential that can initiate a security context.
-- [var GSS_C_ACCEPT: Int32](gss_c_accept.md)
+- [var GSS_C_ACCEPT: Int32](./gss_c_accept.md)
   The value that indicates a credential that can accept a security context.
-- [var GSS_C_BOTH: Int32](gss_c_both.md)
+- [var GSS_C_BOTH: Int32](./gss_c_both.md)
   The value that indicates a credential that can both initiate and accept security contexts.
-- [var GSS_C_CRED_NO_UI: Int32](gss_c_cred_no_ui.md)
+- [var GSS_C_CRED_NO_UI: Int32](./gss_c_cred_no_ui.md)
   The value that indicates no UI.
-- [typealias gss_auth_identity_t](gss_auth_identity_t.md)
+- [typealias gss_auth_identity_t](./gss_auth_identity_t.md)
   A pointer to an opaque object used to manage authentication identities.
-- [typealias gss_const_cred_id_t](gss_const_cred_id_t.md)
+- [typealias gss_const_cred_id_t](./gss_const_cred_id_t.md)
   A pointer to an immutable opaque type that you use to exchange a credential object with GSS-API functions.
-- [typealias gss_cred_id_t](gss_cred_id_t.md)
+- [typealias gss_cred_id_t](./gss_cred_id_t.md)
   A pointer to an opaque type that you use to exchange a credential object with GSS-API functions.
-- [typealias gss_cred_usage_t](gss_cred_usage_t.md)
+- [typealias gss_cred_usage_t](./gss_cred_usage_t.md)
   A credential usage value.
 
 

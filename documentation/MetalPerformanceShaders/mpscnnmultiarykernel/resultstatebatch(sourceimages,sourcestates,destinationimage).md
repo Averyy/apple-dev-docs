@@ -1,7 +1,8 @@
 # resultStateBatch(sourceImages:sourceStates:destinationImage:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func resultStateBatch(sourceImages: [[MPSImage]], sourceStates: [[MPSState]]?, destinationImage: [MPSImage]) -> [MPSState]?
+```
+
+```objc
+- (MPSStateBatch *) resultStateBatchForSourceImages:(NSArray<NSArray<MPSImage *> *> *) sourceImages sourceStates:(NSArray<NSArray<MPSState *> *> *) sourceStates destinationImage:(MPSImageBatch *) destinationImage;
 ```
 
 

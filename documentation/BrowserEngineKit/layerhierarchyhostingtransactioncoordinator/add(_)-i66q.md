@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the transaction coordinator to start coordinating transactions for the given layer hierarchy.
 
@@ -16,9 +17,13 @@ Notifies the transaction coordinator to start coordinating transactions for the 
 func add(_ layerHierarchy: LayerHierarchy)
 ```
 
+```objc
+- (void) addLayerHierarchy:(BELayerHierarchy *) layerHierarchy;
+```
+
 #### Discussion
 
-The transaction coordinator coordinates any transactions involving layers in the `layerHierarchy` until you call [`commit()`](layerhierarchyhostingtransactioncoordinator/commit().md).
+The transaction coordinator coordinates any transactions involving layers in the `layerHierarchy` until you call [`commit()`](./commit%28%29.md).
 
 ## Parameters
 
@@ -26,9 +31,10 @@ The transaction coordinator coordinates any transactions involving layers in the
 
 ## See Also
 
-- [func add(LayerHierarchyHostingView)](layerhierarchyhostingtransactioncoordinator/add(_:)-7day0.md)
+### Synchronizing transactions
+- [func add(LayerHierarchyHostingView)](./add%28_%29-7day0.md)
   Notifies the transaction coordinator to start coordinating transactions for the given view.
-- [func commit()](layerhierarchyhostingtransactioncoordinator/commit.md)
+- [func commit()](./commit%28%29.md)
   Notifies the render server to coordinate transactions for the added views and layer hierarchies.
 
 

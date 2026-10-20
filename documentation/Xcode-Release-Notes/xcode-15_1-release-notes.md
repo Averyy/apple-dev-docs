@@ -1,6 +1,7 @@
 # Xcode 15.1 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -42,7 +43,9 @@ Xcode 15.1 includes SDKs for iOS 17.2, iPadOS 17.2, tvOS 17.2, watchOS 10.2, and
 ###### Known Issues
 
 - In certain circumstances, an app can’t read the contents of its own data container after replacing the content of the data container using Xcode or devicectl.  (116698465) (FB13253099)
-- Running a WatchApp that requires the companion iOS app to be installed will result in an error if the run destination is set to a Watch via iPhone Simulator pair.  (119640671) **Workaround:** Select a singular Watch Simulator run destination and then Run.
+- Running a WatchApp that requires the companion iOS app to be installed will result in an error if the run destination is set to a Watch via iPhone Simulator pair.  (119640671)
+
+  **Workaround:** Select a singular Watch Simulator run destination and then Run.
 
 ##### Instruments
 
@@ -67,7 +70,7 @@ Xcode 15.1 includes SDKs for iOS 17.2, iPadOS 17.2, tvOS 17.2, watchOS 10.2, and
 - Fixed: Binaries using symbols with a weak definition crash at runtime on iOS 14/macOS 12 or older. This impacts primarily C++ projects due to their extensive use of weak symbols.  (114813650) (FB13097713)
 - Fixed: Weak symbol imports are linked as non-weak imports, when used from LTO object files.  (115521975) (FB13171424)
 
-##### Optic Id
+##### Optic ID
 
 ###### Resolved Issues
 
@@ -100,10 +103,14 @@ Xcode 15.1 includes SDKs for iOS 17.2, iPadOS 17.2, tvOS 17.2, watchOS 10.2, and
 
 ###### Known Issues
 
-- Reality Composer Pro might quit unexpectedly after switching audio devices from a Studio Display to another device, such as AirPods or built-in speakers.  (109912081) **Workaround:** Save the project and quit Reality Composer Pro, switch the audio output device, then reload the project.
-- Subsequent launches of app in Simulator might not play audio on launch  (113052899) **Workaround:** You can keep a reference to the AudioPlaybackController, either in a variable or a collection, replacing instances of `entity.playAudio(someAudioFileResource)` with `controller = entity.playAudio(someFileResource)` where the `controller` variable keeps a reference to the sound for the expected duration of playback. Keeping a reference to the controller should work around this issue until fix is available.
+- Reality Composer Pro might quit unexpectedly after switching audio devices from a Studio Display to another device, such as AirPods or built-in speakers.  (109912081)
 
-##### Signing Distribution
+  **Workaround:** Save the project and quit Reality Composer Pro, switch the audio output device, then reload the project.
+- Subsequent launches of app in Simulator might not play audio on launch  (113052899)
+
+  **Workaround:** You can keep a reference to the AudioPlaybackController, either in a variable or a collection, replacing instances of `entity.playAudio(someAudioFileResource)` with `controller = entity.playAudio(someFileResource)` where the `controller` variable keeps a reference to the sound for the expected duration of playback. Keeping a reference to the controller should work around this issue until fix is available.
+
+##### Signing & Distribution
 
 ###### Resolved Issues
 
@@ -115,17 +122,17 @@ Xcode 15.1 includes SDKs for iOS 17.2, iPadOS 17.2, tvOS 17.2, watchOS 10.2, and
 
 - Fixed: Xcode isn’t offering the latest iOS simulator runtime for downloading when an older one exists.  (116372892)
 
-##### Storekit
+##### StoreKit
 
 ###### New Features
 
-- New pricing properties `price`, `currency`, and `currencyCode` are now available on [`Transaction`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction). If an offer was applied to the transaction, a new property `offer` is available to see information about it (id, type, payment mode), as well as convenience properties `offerID`, `offerType`, and `offerPaymentMode`.  (106650768)
+- New pricing properties `price`, `currency`, and `currencyCode` are now available on [Transaction](../StoreKit/transaction.md). If an offer was applied to the transaction, a new property `offer` is available to see information about it (id, type, payment mode), as well as convenience properties `offerID`, `offerType`, and `offerPaymentMode`.  (106650768)
 
-##### Storekit Testing in Xcode
+##### StoreKit Testing in Xcode
 
 ###### New Features
 
-- New testing functionality to send [`Purchase Intents`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/purchaseintent) to apps using StoreKit Testing in Xcode from the Transaction Manager.  (101034395)
+- New testing functionality to send [Purchase Intents](../StoreKit/purchaseintent.md) to apps using StoreKit Testing in Xcode from the Transaction Manager.  (101034395)
 
 ###### Resolved Issues
 
@@ -156,11 +163,13 @@ Xcode 15.1 includes SDKs for iOS 17.2, iPadOS 17.2, tvOS 17.2, watchOS 10.2, and
 
 - Fixed: Unit test bundles hosted by extension-based WatchKit applications fail to run on device destinations when code coverage is enabled in the active test plan.  (118158060)
 
-##### Visionos
+##### visionOS
 
 ###### Known Issues
 
-- iOS apps with a deployment target set to 17.2 fail to run on Apple Vision Pro.  (117105090) **Workaround:** Set the iOS deployment target to 17.0 or earlier in the project or target’s build settings.
+- iOS apps with a deployment target set to 17.2 fail to run on Apple Vision Pro.  (117105090)
+
+  **Workaround:** Set the iOS deployment target to 17.0 or earlier in the project or target’s build settings.
 
 ##### Xcode Cloud
 
@@ -168,23 +177,26 @@ Xcode 15.1 includes SDKs for iOS 17.2, iPadOS 17.2, tvOS 17.2, watchOS 10.2, and
 
 - Xcode now supports configuring a new Manual start condition in Xcode Cloud workflows.  (112108570)
 
-##### Xctest
+##### XCTest
 
 ###### Known Issues
 
-- Test Action report logs may appear in less human readable form when os_log’s are output.  (118455129) **Workaround:** Set this User Default on your system by running the following command in terminal. `defaults write com.apple.dt.Xcode IDEDisableConsoleLibLogRedirectLoggingForTestActions -bool YES`
+- Test Action report logs may appear in less human readable form when os_log’s are output.  (118455129)
+
+  **Workaround:** Set this User Default on your system by running the following command in terminal. `defaults write com.apple.dt.Xcode IDEDisableConsoleLibLogRedirectLoggingForTestActions -bool YES`
 
 ## See Also
 
-- [Xcode 15.4 Release Notes](xcode-15_4-release-notes.md)
+### Xcode 15
+- [Xcode 15.4 Release Notes](./xcode-15_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 15.3 Release Notes](xcode-15_3-release-notes.md)
+- [Xcode 15.3 Release Notes](./xcode-15_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 15.2 Release Notes](xcode-15_2-release-notes.md)
+- [Xcode 15.2 Release Notes](./xcode-15_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 15.0.1 Release Notes](xcode-15_0_1-release-notes.md)
+- [Xcode 15.0.1 Release Notes](./xcode-15_0_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 15 Release Notes](xcode-15-release-notes.md)
+- [Xcode 15 Release Notes](./xcode-15-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

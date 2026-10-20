@@ -1,7 +1,8 @@
 # canAddSecureElementPass(primaryAccountIdentifier:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether PassKit can add a Secure Element pass for the specified account.
 
@@ -19,13 +20,17 @@ Returns a Boolean value that indicates whether PassKit can add a Secure Element 
 func canAddSecureElementPass(primaryAccountIdentifier: String) -> Bool
 ```
 
+```objc
+- (BOOL) canAddSecureElementPassWithPrimaryAccountIdentifier:(NSString *) primaryAccountIdentifier;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if PassKit can add a secure element pass for the specified account; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if PassKit can add a secure element pass for the specified account; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-Adding a Secure Element pass requires a special entitlement that Apple provides. If the entitlement isn’t present, this method returns [`false`](https://developer.apple.com/documentation/swift/false).
+Adding a Secure Element pass requires a special entitlement that Apple provides. If the entitlement isn’t present, this method returns [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -33,11 +38,12 @@ Adding a Secure Element pass requires a special entitlement that Apple provides.
 
 ## See Also
 
-- [func canAddFelicaPass() -> Bool](pkpasslibrary/canaddfelicapass.md)
+### Adding passes
+- [func canAddFelicaPass() -> Bool](./canaddfelicapass%28%29.md)
   Returns a Boolean value that indicates whether the library can add FeliCa™ passes.
-- [func addPasses([PKPass], withCompletionHandler: ((PKPassLibraryAddPassesStatus) -> Void)?)](pkpasslibrary/addpasses(_:withcompletionhandler:).md)
+- [func addPasses([PKPass], withCompletionHandler: ((PKPassLibraryAddPassesStatus) -> Void)?)](./addpasses%28_,withcompletionhandler%29.md)
   Presents a user interface for adding multiple passes at once.
-- [enum PKPassLibraryAddPassesStatus](pkpasslibraryaddpassesstatus.md)
+- [enum PKPassLibraryAddPassesStatus](../pkpasslibraryaddpassesstatus.md)
   Statuses that PassKit uses when it adds passes to the pass library.
 
 

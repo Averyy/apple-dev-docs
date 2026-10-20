@@ -1,7 +1,8 @@
 # UIWindowScene
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A scene that manages one or more windows for your app.
 
@@ -19,155 +20,160 @@ A scene that manages one or more windows for your app.
 class UIWindowScene
 ```
 
+```objc
+@interface UIWindowScene : UIScene
+```
+
 ## Mentions
 
-- [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
-- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
-- [Providing data to the view hierarchy with custom traits](providing-data-to-the-view-hierarchy-with-custom-traits.md)
-- [Specifying the scenes your app supports](specifying-the-scenes-your-app-supports.md)
+- [Transitioning to the UIKit scene-based life cycle](./transitioning-to-the-uikit-scene-based-life-cycle.md)
+- [Presenting content on a connected display](./presenting-content-on-a-connected-display.md)
+- [Providing data to the view hierarchy with custom traits](./providing-data-to-the-view-hierarchy-with-custom-traits.md)
+- [Specifying the scenes your app supports](./specifying-the-scenes-your-app-supports.md)
 
 #### Overview
 
-A [`UIWindowScene`](uiwindowscene.md) object manages one instance of your app’s UI, including one or more windows that you display from that scene. The scene object manages the display of your windows on the user’s device, and the life cycle of that scene as the user interacts with it. When the state of the scene changes, the scene object notifies its delegate object, which adopts the [`UIWindowSceneDelegate`](uiwindowscenedelegate.md) protocol. The scene also posts appropriate notifications to registered observers. Use the delegate object or notification observers to respond to any changes.
+A [`UIWindowScene`](./uiwindowscene.md) object manages one instance of your app’s UI, including one or more windows that you display from that scene. The scene object manages the display of your windows on the user’s device, and the life cycle of that scene as the user interacts with it. When the state of the scene changes, the scene object notifies its delegate object, which adopts the [`UIWindowSceneDelegate`](./uiwindowscenedelegate.md) protocol. The scene also posts appropriate notifications to registered observers. Use the delegate object or notification observers to respond to any changes.
 
-Don’t create window scene objects directly. Instead, specify that you want a [`UIWindowScene`](uiwindowscene.md) object at configuration time by including the class name for the scene in the scene configuration details of your app’s `Info.plist` file. You can also specify the class name when creating a [`UISceneConfiguration`](uisceneconfiguration.md) object in your app delegate’s [`application(_:configurationForConnecting:options:)`](uiapplicationdelegate/application(_:configurationforconnecting:options:).md) method. When the user interacts with your app, the system creates an appropriate scene object based on the configuration data you provided. To create a scene programmatically, call the [`requestSceneSessionActivation(_:userActivity:options:errorHandler:)`](uiapplication/requestscenesessionactivation(_:useractivity:options:errorhandler:).md) method of [`UIApplication`](uiapplication.md).
+Don’t create window scene objects directly. Instead, specify that you want a [`UIWindowScene`](./uiwindowscene.md) object at configuration time by including the class name for the scene in the scene configuration details of your app’s `Info.plist` file. You can also specify the class name when creating a [`UISceneConfiguration`](./uisceneconfiguration.md) object in your app delegate’s [`application(_:configurationForConnecting:options:)`](./uiapplicationdelegate/application%28_,configurationforconnecting,options%29.md) method. When the user interacts with your app, the system creates an appropriate scene object based on the configuration data you provided. To create a scene programmatically, call the [`requestSceneSessionActivation(_:userActivity:options:errorHandler:)`](./uiapplication/requestscenesessionactivation%28_,useractivity,options,errorhandler%29.md) method of [`UIApplication`](./uiapplication.md).
 
 ## Topics
 
 ### Getting the active windows
-- [var windows: [UIWindow]](uiwindowscene/windows.md)
+- [var windows: [UIWindow]](./uiwindowscene/windows.md)
   The windows associated with the scene.
-- [var keyWindow: UIWindow?](uiwindowscene/keywindow.md)
+- [var keyWindow: UIWindow?](./uiwindowscene/keywindow.md)
   The key window associated with the scene.
-- [var screen: UIScreen](uiwindowscene/screen.md)
+- [var screen: UIScreen](./uiwindowscene/screen.md)
   The screen that displays the contents of the scene.
 ### Getting the interface attributes
-- [var traitCollection: UITraitCollection](uiwindowscene/traitcollection.md)
+- [var traitCollection: UITraitCollection](./uiwindowscene/traitcollection.md)
   The traits that describe the current environment of the scene.
-- [var sizeRestrictions: UISceneSizeRestrictions?](uiwindowscene/sizerestrictions.md)
+- [var sizeRestrictions: UISceneSizeRestrictions?](./uiwindowscene/sizerestrictions.md)
   The minimum and maximum size of the app’s windows.
-- [class UISceneSizeRestrictions](uiscenesizerestrictions.md)
+- [class UISceneSizeRestrictions](./uiscenesizerestrictions.md)
   An object that specifies the minimum and maximum sizes for resizable windows.
 ### Observing trait changes
-- [protocol UITraitChangeObservable](uitraitchangeobservable-67e94.md)
+- [protocol UITraitChangeObservable](./uitraitchangeobservable-67e94.md)
   A type that calls your code in reaction to changes in the trait environment.
 ### Overriding trait values
-- [var traitOverrides: UITraitOverrides](uiwindowscene/traitoverrides-1klo1.md)
-- [struct UITraitOverrides](uitraitoverrides-swift.struct.md)
+- [var traitOverrides: UITraitOverrides](./uiwindowscene/traitoverrides-1klo1.md)
+- [struct UITraitOverrides](./uitraitoverrides-swift.struct.md)
   A mutable container of traits you use to set trait changes for an object and its descendants.
 ### Providing a PDF version of your scene
-- [var screenshotService: UIScreenshotService?](uiwindowscene/screenshotservice.md)
+- [var screenshotService: UIScreenshotService?](./uiwindowscene/screenshotservice.md)
   An object that generates a high-fidelity version of your app’s content.
-- [class UIScreenshotService](uiscreenshotservice.md)
+- [class UIScreenshotService](./uiscreenshotservice.md)
   An object that coordinates the creation of PDF screenshots of an app’s content.
 ### Sharing content
-- [var activityItemsConfigurationSource: (any UIActivityItemsConfigurationProviding)?](uiwindowscene/activityitemsconfigurationsource.md)
+- [var activityItemsConfigurationSource: (any UIActivityItemsConfigurationProviding)?](./uiwindowscene/activityitemsconfigurationsource.md)
   An object that can provide shareable items for a scene.
-- [protocol UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
+- [protocol UIActivityItemsConfigurationProviding](./uiactivityitemsconfigurationproviding.md)
   An interface that provides a source for shareable content to fulfill user requests to share current content.
 ### Determining window behaviors
-- [var isFullScreen: Bool](uiwindowscene/isfullscreen.md)
+- [var isFullScreen: Bool](./uiwindowscene/isfullscreen.md)
   A Boolean value that indicates whether the window scene is full screen or windowed.
-- [var windowingBehaviors: UISceneWindowingBehaviors?](uiwindowscene/windowingbehaviors.md)
+- [var windowingBehaviors: UISceneWindowingBehaviors?](./uiwindowscene/windowingbehaviors.md)
   An object that specifies the behaviors of the window.
-- [class UISceneWindowingBehaviors](uiscenewindowingbehaviors.md)
+- [class UISceneWindowingBehaviors](./uiscenewindowingbehaviors.md)
   An object with properties that determine the behavior of a window.
 ### Working with window geometry
-- [var effectiveGeometry: UIWindowScene.Geometry](uiwindowscene/effectivegeometry.md)
+- [var effectiveGeometry: UIWindowScene.Geometry](./uiwindowscene/effectivegeometry.md)
   The current values for the window scene’s geometry in system space.
-- [func requestGeometryUpdate(UIWindowScene.GeometryPreferences, errorHandler: ((any Error) -> Void)?)](uiwindowscene/requestgeometryupdate(_:errorhandler:).md)
+- [func requestGeometryUpdate(UIWindowScene.GeometryPreferences, errorHandler: ((any Error) -> Void)?)](./uiwindowscene/requestgeometryupdate%28_,errorhandler%29.md)
   Requests an update to the window scene’s geometry using the specified geometry preferences object.
-- [UIWindowScene.Geometry](uiwindowscene/geometry.md)
+- [UIWindowScene.Geometry](./uiwindowscene/geometry.md)
   An object that provides geometry information about the window scene.
-- [UIWindowScene.GeometryPreferences](uiwindowscene/geometrypreferences.md)
+- [UIWindowScene.GeometryPreferences](./uiwindowscene/geometrypreferences.md)
   An abstract superclass for representing window scene geometry preferences.
-- [UIWindowScene.GeometryPreferences.iOS](uiwindowscene/geometrypreferences/ios.md)
+- [UIWindowScene.GeometryPreferences.iOS](./uiwindowscene/geometrypreferences/ios.md)
   An object that represents the geometry preferences for a window scene in an iOS app.
-- [UIWindowScene.GeometryPreferences.Mac](uiwindowscene/geometrypreferences/mac.md)
+- [UIWindowScene.GeometryPreferences.Mac](./uiwindowscene/geometrypreferences/mac.md)
   An object that represents the geometry preferences for a window scene in an app built with Mac Catalyst.
-- [UIWindowScene.GeometryPreferences.Vision](uiwindowscene/geometrypreferences/vision.md)
-- [let UIProposedSceneSizeNoPreference: CGFloat](uiproposedscenesizenopreference.md)
+- [UIWindowScene.GeometryPreferences.Vision](./uiwindowscene/geometrypreferences/vision.md)
+- [let UIProposedSceneSizeNoPreference: CGFloat](./uiproposedscenesizenopreference.md)
   Used as the value for a dimension of a size related preference when wanting to leave it unchanged.
 ### Working with focus
-- [var focusSystem: UIFocusSystem?](uiwindowscene/focussystem.md)
+- [var focusSystem: UIFocusSystem?](./uiwindowscene/focussystem.md)
   The focus system that’s responsible for the window scene.
 ### Getting the status bar configuration
-- [var statusBarManager: UIStatusBarManager?](uiwindowscene/statusbarmanager.md)
+- [var statusBarManager: UIStatusBarManager?](./uiwindowscene/statusbarmanager.md)
   The current configuration of the status bar.
-- [class UIStatusBarManager](uistatusbarmanager.md)
+- [class UIStatusBarManager](./uistatusbarmanager.md)
   An object that describes the configuration of the status bar.
 ### Configuring a window’s title bar
-- [var titlebar: UITitlebar?](uiwindowscene/titlebar.md)
+- [var titlebar: UITitlebar?](./uiwindowscene/titlebar.md)
   The title bar displayed in a window of a Mac app.
-- [class UITitlebar](uititlebar.md)
+- [class UITitlebar](./uititlebar.md)
   An object that you use to configure the title bar of a window in a Mac app built with Mac Catalyst.
 ### Configuring the windowing control style
-- [UIWindowScene.WindowingControlStyle](uiwindowscene/windowingcontrolstyle.md)
+- [UIWindowScene.WindowingControlStyle](./uiwindowscene/windowingcontrolstyle.md)
   Describes the placement and style of the system windowing controls for a scene
 ### Supporting types
-- [UIWindowScene.ActivationAction](uiwindowscene/activationaction.md)
+- [UIWindowScene.ActivationAction](./uiwindowscene/activationaction.md)
   A menu element that requests a window scene.
-- [UIWindowScene.ActivationConfiguration](uiwindowscene/activationconfiguration.md)
+- [UIWindowScene.ActivationConfiguration](./uiwindowscene/activationconfiguration.md)
   An object that provides configuration options for a window scene request.
-- [UIWindowScene.ActivationInteraction](uiwindowscene/activationinteraction.md)
+- [UIWindowScene.ActivationInteraction](./uiwindowscene/activationinteraction.md)
   An interaction that facilitates activating a window scene when a user pinches out on the interaction’s view.
-- [UIWindowScene.ActivationRequestOptions](uiwindowscene/activationrequestoptions.md)
+- [UIWindowScene.ActivationRequestOptions](./uiwindowscene/activationrequestoptions.md)
   An object that contains information you want the system to use when activating a new window scene.
-- [class UIWindowSceneDestructionRequestOptions](uiwindowscenedestructionrequestoptions.md)
+- [class UIWindowSceneDestructionRequestOptions](./uiwindowscenedestructionrequestoptions.md)
   An object that contains information to use when removing a window scene from your app.
-- [UIWindowScene.DismissalAnimation](uiwindowscene/dismissalanimation.md)
+- [UIWindowScene.DismissalAnimation](./uiwindowscene/dismissalanimation.md)
   Constants that indicate the types of animations available for dismissing a scene’s windows.
-- [class UIWindowSceneDragInteraction](uiwindowscenedraginteraction.md)
+- [class UIWindowSceneDragInteraction](./uiwindowscenedraginteraction.md)
   An interaction you add to a view that enables pan gestures to change the containing window scene’s position.
-- [UIWindowScene.ResizingRestrictions](uiwindowscene/resizingrestrictions.md)
-- [enum UIWindowSceneResizingRestrictions](uiwindowsceneresizingrestrictions.md)
+- [UIWindowScene.ResizingRestrictions](./uiwindowscene/resizingrestrictions.md)
+- [enum UIWindowSceneResizingRestrictions](./uiwindowsceneresizingrestrictions.md)
 ### Deprecated
-- [var coordinateSpace: any UICoordinateSpace](uiwindowscene/coordinatespace.md)
+- [var coordinateSpace: any UICoordinateSpace](./uiwindowscene/coordinatespace.md)
   The coordinate space occupied by the scene.
-- [var interfaceOrientation: UIInterfaceOrientation](uiwindowscene/interfaceorientation.md)
+- [var interfaceOrientation: UIInterfaceOrientation](./uiwindowscene/interfaceorientation.md)
   The orientation to use when displaying content in your windows.
-- [UIWindowScene.PresentationStyle](uiwindowscene/presentationstyle.md)
+- [UIWindowScene.PresentationStyle](./uiwindowscene/presentationstyle.md)
   The placement of a window scene relative to other scenes in the workspace.
 ### Instance Properties
-- [var closureConfirmation: UISceneClosureConfirmation?](uiwindowscene/closureconfirmation.md)
+- [var closureConfirmation: UISceneClosureConfirmation?](./uiwindowscene/closureconfirmation.md)
   A configuration describing a confirmation dialog to be shown when a user action will result in destruction of the scene session and disconnection of the scene.
 ### Instance Methods
-- [func displayLink(action: (CADisplayLink) -> Void) -> CADisplayLink?](uiwindowscene/displaylink(action:).md)
-- [func displayLink(target: Any, selector: Selector) -> CADisplayLink?](uiwindowscene/displaylink(target:selector:).md)
+- [func displayLink(action: (CADisplayLink) -> Void) -> CADisplayLink?](./uiwindowscene/displaylink%28action%29.md)
+- [func displayLink(target: Any, selector: Selector) -> CADisplayLink?](./uiwindowscene/displaylink%28target,selector%29.md)
   Creates a display link targeting the display associated with this scene.
 
 ## Relationships
 
 ### Inherits From
-- [UIScene](uiscene.md)
+- [UIScene](./uiscene.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
-- [UIPasteConfigurationSupporting](uipasteconfigurationsupporting.md)
-- [UIResponderStandardEditActions](uiresponderstandardeditactions.md)
-- [UITraitChangeObservable](uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](uitraitenvironment.md)
-- [UIUserActivityRestoring](uiuseractivityrestoring.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](./uiactivityitemsconfigurationproviding.md)
+- [UIPasteConfigurationSupporting](./uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](./uiresponderstandardeditactions.md)
+- [UITraitChangeObservable](./uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](./uitraitenvironment.md)
+- [UIUserActivityRestoring](./uiuseractivityrestoring.md)
 
 ## See Also
 
-- [Supporting multiple windows on iPad](supporting-multiple-windows-on-ipad.md)
+### Window scenes
+- [Supporting multiple windows on iPad](./supporting-multiple-windows-on-ipad.md)
   Support side-by-side instances of your app’s interface and create new windows.
-- [protocol UIWindowSceneDelegate](uiwindowscenedelegate.md)
+- [protocol UIWindowSceneDelegate](./uiwindowscenedelegate.md)
   Additional methods that you use to manage app-specific tasks occurring in a scene.
-- [class UIScene](uiscene.md)
+- [class UIScene](./uiscene.md)
   An object that represents one instance of your app’s user interface.
-- [protocol UISceneDelegate](uiscenedelegate.md)
+- [protocol UISceneDelegate](./uiscenedelegate.md)
   The core methods you use to respond to life-cycle events occurring within a scene.
 
 

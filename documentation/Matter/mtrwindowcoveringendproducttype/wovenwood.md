@@ -1,7 +1,8 @@
 # MTRWindowCoveringEndProductType.wovenWood
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 case wovenWood
+```
+
+```c
+MTRWindowCoveringEndProductTypeWovenWood
 ```
 
 

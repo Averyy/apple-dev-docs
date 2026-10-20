@@ -1,7 +1,8 @@
 # TKCompactTLVRecord
 
 **Framework**: CryptoTokenKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that implements encoding using Compact-TLV encoding according to ISO 7816-4.
 
@@ -20,31 +21,36 @@ An object that implements encoding using Compact-TLV encoding according to ISO 7
 class TKCompactTLVRecord
 ```
 
+```objc
+@interface TKCompactTLVRecord : TKTLVRecord
+```
+
 ## Topics
 
 ### Creating TLV Records
-- [init(tag: UInt8, value: Data)](tkcompacttlvrecord/init(tag:value:).md)
+- [init(tag: UInt8, value: Data)](./tkcompacttlvrecord/init%28tag,value%29.md)
   Initializes a TLV record with the specified tag and value.
 
 ## Relationships
 
 ### Inherits From
-- [TKTLVRecord](tktlvrecord.md)
+- [TKTLVRecord](./tktlvrecord.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class TKTLVRecord](tktlvrecord.md)
+### Working with Tag-Length-Value Records
+- [class TKTLVRecord](./tktlvrecord.md)
   The base class encapsulating a Tag-Length-Value record.
-- [class TKBERTLVRecord](tkbertlvrecord.md)
+- [class TKBERTLVRecord](./tkbertlvrecord.md)
   An object that parses BER-encoded data and produces DER-encoded data for TLV records.
-- [class TKSimpleTLVRecord](tksimpletlvrecord.md)
+- [class TKSimpleTLVRecord](./tksimpletlvrecord.md)
   An object that implements encoding using Simple-TLV encoding according to ISO 7816-4.
 
 

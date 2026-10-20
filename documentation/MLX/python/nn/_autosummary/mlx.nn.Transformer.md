@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.T
 
 # mlx.nn.Transformer
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.Transformer.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.Transformer
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.Transformer
-
 **class Transformer(*dims: int = 512, num_heads: int = 8, num_encoder_layers: int = 6, num_decoder_layers: int = 6, mlp_dims: int | None = None, dropout: float = 0.0, activation: ~typing.Callable[[~typing.Any], ~typing.Any] = <mlx.core._gc_func object>, custom_encoder: ~typing.Any | None = None, custom_decoder: ~typing.Any | None = None, norm_first: bool = True, checkpoint: bool = False*)**
 : Implements a standard Transformer model.
 The implementation is based on [Attention Is All You Need](https://arxiv.org/abs/1706.03762).
@@ -58,10 +31,10 @@ Transformer layer. Defaults to `4*dims` if not provided. Default:
 encoder and decoder. Dropout is used after each attention layer and
 the activation in the MLP layer. Default: `0.0`.
 **activation** (*function**, **optional*) – the activation function for the MLP
-hidden layer. Default: [mlx.nn.relu()](../_autosummary_functions/mlx.nn.relu.html#mlx.nn.relu).
-**custom_encoder** ([Module](../module.html#mlx.nn.Module)*, **optional*) – A custom encoder to replace the
+hidden layer. Default: [mlx.nn.relu()](../_autosummary_functions/mlx.nn.relu.md#mlx.nn.relu).
+**custom_encoder** ([Module](../module.md#mlx.nn.Module)*, **optional*) – A custom encoder to replace the
 standard Transformer encoder. Default: `None`.
-**custom_decoder** ([Module](../module.html#mlx.nn.Module)*, **optional*) – A custom decoder to replace the
+**custom_decoder** ([Module](../module.md#mlx.nn.Module)*, **optional*) – A custom decoder to replace the
 standard Transformer decoder. Default: `None`.
 **norm_first** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – if `True`, encoder and decoder layers
 will perform layer normalization before attention and MLP
@@ -71,5 +44,3 @@ to reduce the memory usage at the expense of more computation.
 Default: `False`.
 
 Methods
-
-** Contents

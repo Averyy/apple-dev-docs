@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new of movie file output.
 
@@ -16,6 +17,10 @@ Creates a new of movie file output.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

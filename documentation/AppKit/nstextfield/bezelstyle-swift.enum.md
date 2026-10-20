@@ -1,12 +1,13 @@
 # NSTextField.BezelStyle
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The style of bezel the text field displays.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,39 +15,44 @@ The style of bezel the text field displays.
 enum BezelStyle
 ```
 
+```c
+enum NSTextFieldBezelStyle : NSUInteger;
+```
+
 #### Overview
 
-Use [`bezelStyle`](nstextfieldcell/bezelstyle.md) to set a text field’s bezel style.
+Use [`bezelStyle`](../nstextfieldcell/bezelstyle.md) to set a text field’s bezel style.
 
 ## Topics
 
 ### Constants
-- [NSTextField.BezelStyle.squareBezel](nstextfield/bezelstyle-swift.enum/squarebezel.md)
+- [NSTextField.BezelStyle.squareBezel](./bezelstyle-swift.enum/squarebezel.md)
   A style that draws a bezel with square corners around a text field.
-- [NSTextField.BezelStyle.roundedBezel](nstextfield/bezelstyle-swift.enum/roundedbezel.md)
+- [NSTextField.BezelStyle.roundedBezel](./bezelstyle-swift.enum/roundedbezel.md)
   A style that draws a bezel with rounded corners around a single-line text field.
 ### Initializers
-- [init?(rawValue: UInt)](nstextfield/bezelstyle-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./bezelstyle-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var backgroundColor: NSColor?](nstextfield/backgroundcolor.md)
+### Controlling the background
+- [var backgroundColor: NSColor?](./backgroundcolor.md)
   The color of the background the text field’s cell draws behind the text.
-- [var drawsBackground: Bool](nstextfield/drawsbackground.md)
+- [var drawsBackground: Bool](./drawsbackground.md)
   A Boolean value that controls whether the text field’s cell draws a background color behind the text.
-- [var isBezeled: Bool](nstextfield/isbezeled.md)
+- [var isBezeled: Bool](./isbezeled.md)
   A Boolean value that controls whether the text field draws a bezeled background around its contents.
-- [var bezelStyle: NSTextField.BezelStyle](nstextfield/bezelstyle-swift.property.md)
+- [var bezelStyle: NSTextField.BezelStyle](./bezelstyle-swift.property.md)
   The text field’s bezel style, square or rounded.
 
 

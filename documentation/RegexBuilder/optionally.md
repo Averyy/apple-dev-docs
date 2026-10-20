@@ -1,7 +1,8 @@
 # Optionally
 
 **Framework**: RegexBuilder  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A regex component that matches zero or one occurrences of its underlying component.
 
@@ -11,7 +12,7 @@ A regex component that matches zero or one occurrences of its underlying compone
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,69 +24,70 @@ struct Optionally<Output>
 ## Topics
 
 ### Initializers
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8>(RegexRepetitionBehavior?, () -> some RegexComponent)](optionally/init(_:_:)-12hxo.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8>(RegexRepetitionBehavior?, () -> some RegexComponent)](./optionally/init%28_,_%29-12hxo.md)
   Creates a regex component that matches the given component zero or one times.
-- [init<W, C1, C2, C3, C4, C5, C6, C7>(RegexRepetitionBehavior?, () -> some RegexComponent)](optionally/init(_:_:)-2jtrp.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7>(RegexRepetitionBehavior?, () -> some RegexComponent)](./optionally/init%28_,_%29-2jtrp.md)
   Creates a regex component that matches the given component zero or one times.
-- [init(some RegexComponent, RegexRepetitionBehavior?)](optionally/init(_:_:)-2zdez.md)
+- [init(some RegexComponent, RegexRepetitionBehavior?)](./optionally/init%28_,_%29-2zdez.md)
   Creates a regex component that matches the given component zero or one times.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10>(RegexRepetitionBehavior?, () -> some RegexComponent)](optionally/init(_:_:)-4230v.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10>(RegexRepetitionBehavior?, () -> some RegexComponent)](./optionally/init%28_,_%29-4230v.md)
   Creates a regex component that matches the given component zero or one times.
-- [init<W, C1, C2, C3>(some RegexComponent, RegexRepetitionBehavior?)](optionally/init(_:_:)-44oku.md)
+- [init<W, C1, C2, C3>(some RegexComponent, RegexRepetitionBehavior?)](./optionally/init%28_,_%29-44oku.md)
   Creates a regex component that matches the given component zero or one times.
-- [init<W, C1, C2, C3, C4, C5>(RegexRepetitionBehavior?, () -> some RegexComponent)](optionally/init(_:_:)-4kz5l.md)
+- [init<W, C1, C2, C3, C4, C5>(RegexRepetitionBehavior?, () -> some RegexComponent)](./optionally/init%28_,_%29-4kz5l.md)
   Creates a regex component that matches the given component zero or one times.
-- [init<W, C1, C2, C3>(RegexRepetitionBehavior?, () -> some RegexComponent)](optionally/init(_:_:)-5azqh.md)
+- [init<W, C1, C2, C3>(RegexRepetitionBehavior?, () -> some RegexComponent)](./optionally/init%28_,_%29-5azqh.md)
   Creates a regex component that matches the given component zero or one times.
-- [init<W, C1>(RegexRepetitionBehavior?, () -> some RegexComponent)](optionally/init(_:_:)-6j92l.md)
+- [init<W, C1>(RegexRepetitionBehavior?, () -> some RegexComponent)](./optionally/init%28_,_%29-6j92l.md)
   Creates a regex component that matches the given component zero or one times.
-- [init<W, C1, C2>(some RegexComponent, RegexRepetitionBehavior?)](optionally/init(_:_:)-6v0ti.md)
+- [init<W, C1, C2>(some RegexComponent, RegexRepetitionBehavior?)](./optionally/init%28_,_%29-6v0ti.md)
   Creates a regex component that matches the given component zero or one times.
-- [init<W, C1, C2>(RegexRepetitionBehavior?, () -> some RegexComponent)](optionally/init(_:_:)-7f3n1.md)
+- [init<W, C1, C2>(RegexRepetitionBehavior?, () -> some RegexComponent)](./optionally/init%28_,_%29-7f3n1.md)
   Creates a regex component that matches the given component zero or one times.
-- [init<W, C1, C2, C3, C4>(RegexRepetitionBehavior?, () -> some RegexComponent)](optionally/init(_:_:)-7te1p.md)
+- [init<W, C1, C2, C3, C4>(RegexRepetitionBehavior?, () -> some RegexComponent)](./optionally/init%28_,_%29-7te1p.md)
   Creates a regex component that matches the given component zero or one times.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9>(some RegexComponent, RegexRepetitionBehavior?)](optionally/init(_:_:)-83pgy.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9>(some RegexComponent, RegexRepetitionBehavior?)](./optionally/init%28_,_%29-83pgy.md)
   Creates a regex component that matches the given component zero or one times.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10>(some RegexComponent, RegexRepetitionBehavior?)](optionally/init(_:_:)-84fcd.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10>(some RegexComponent, RegexRepetitionBehavior?)](./optionally/init%28_,_%29-84fcd.md)
   Creates a regex component that matches the given component zero or one times.
-- [init<W, C1, C2, C3, C4, C5, C6>(some RegexComponent, RegexRepetitionBehavior?)](optionally/init(_:_:)-8j8dz.md)
+- [init<W, C1, C2, C3, C4, C5, C6>(some RegexComponent, RegexRepetitionBehavior?)](./optionally/init%28_,_%29-8j8dz.md)
   Creates a regex component that matches the given component zero or one times.
-- [init(RegexRepetitionBehavior?, () -> some RegexComponent)](optionally/init(_:_:)-8kdq8.md)
+- [init(RegexRepetitionBehavior?, () -> some RegexComponent)](./optionally/init%28_,_%29-8kdq8.md)
   Creates a regex component that matches the given component zero or one times.
-- [init<W, C1, C2, C3, C4>(some RegexComponent, RegexRepetitionBehavior?)](optionally/init(_:_:)-8l2ha.md)
+- [init<W, C1, C2, C3, C4>(some RegexComponent, RegexRepetitionBehavior?)](./optionally/init%28_,_%29-8l2ha.md)
   Creates a regex component that matches the given component zero or one times.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8>(some RegexComponent, RegexRepetitionBehavior?)](optionally/init(_:_:)-96725.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8>(some RegexComponent, RegexRepetitionBehavior?)](./optionally/init%28_,_%29-96725.md)
   Creates a regex component that matches the given component zero or one times.
-- [init<W, C1, C2, C3, C4, C5, C6, C7>(some RegexComponent, RegexRepetitionBehavior?)](optionally/init(_:_:)-9pgy7.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7>(some RegexComponent, RegexRepetitionBehavior?)](./optionally/init%28_,_%29-9pgy7.md)
   Creates a regex component that matches the given component zero or one times.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9>(RegexRepetitionBehavior?, () -> some RegexComponent)](optionally/init(_:_:)-9picp.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9>(RegexRepetitionBehavior?, () -> some RegexComponent)](./optionally/init%28_,_%29-9picp.md)
   Creates a regex component that matches the given component zero or one times.
-- [init<W, C1>(some RegexComponent, RegexRepetitionBehavior?)](optionally/init(_:_:)-9wu1h.md)
+- [init<W, C1>(some RegexComponent, RegexRepetitionBehavior?)](./optionally/init%28_,_%29-9wu1h.md)
   Creates a regex component that matches the given component zero or one times.
-- [init<W, C1, C2, C3, C4, C5>(some RegexComponent, RegexRepetitionBehavior?)](optionally/init(_:_:)-bak6.md)
+- [init<W, C1, C2, C3, C4, C5>(some RegexComponent, RegexRepetitionBehavior?)](./optionally/init%28_,_%29-bak6.md)
   Creates a regex component that matches the given component zero or one times.
-- [init<W, C1, C2, C3, C4, C5, C6>(RegexRepetitionBehavior?, () -> some RegexComponent)](optionally/init(_:_:)-frqi.md)
+- [init<W, C1, C2, C3, C4, C5, C6>(RegexRepetitionBehavior?, () -> some RegexComponent)](./optionally/init%28_,_%29-frqi.md)
   Creates a regex component that matches the given component zero or one times.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [RegexComponent](../swift/regexcomponent.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [RegexComponent](../Swift/regexcomponent.md)
 
 ## See Also
 
-- [struct One](one.md)
+### Quantifiers
+- [struct One](./one.md)
   A regex component that matches exactly one occurrence of its underlying component.
-- [struct ZeroOrMore](zeroormore.md)
+- [struct ZeroOrMore](./zeroormore.md)
   A regex component that matches zero or more occurrences of its underlying component.
-- [struct OneOrMore](oneormore.md)
+- [struct OneOrMore](./oneormore.md)
   A regex component that matches one or more occurrences of its underlying component.
-- [struct Repeat](repeat.md)
+- [struct Repeat](./repeat.md)
   A regex component that matches a selectable number of occurrences of its underlying component.
-- [struct Local](local.md)
+- [struct Local](./local.md)
   A regex component that represents an atomic group.
 
 

@@ -1,7 +1,8 @@
 # worldTransform
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A matrix, in scene coordinates, that determines the object’s pose in the scene.
 
@@ -19,6 +20,10 @@ A matrix, in scene coordinates, that determines the object’s pose in the scene
 var worldTransform: simd_float4x4 { get set }
 ```
 
+```objc
+@property (nonatomic, assign) simd_float4x4 worldTransform;
+```
+
 #### Discussion
 
 The value of this property requires orthogonal basis vectors and uniform scale.
@@ -27,7 +32,8 @@ The framework interprets the transform’s position values in a right-handed coo
 
 ## See Also
 
-- [var transform: simd_float4x4](phaseobject/transform.md)
+### Defining a Pose
+- [var transform: simd_float4x4](./transform.md)
   A matrix, in local coordinates, that determines the object’s pose in the scene.
 
 

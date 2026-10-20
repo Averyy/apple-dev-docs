@@ -1,14 +1,15 @@
 # executeCommandAction
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 static void executeCommandAction(OSObject *owner, void *arg0, void *arg1, void *arg2, void *arg3);
 ```
 

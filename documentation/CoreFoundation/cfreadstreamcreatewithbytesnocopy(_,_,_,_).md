@@ -1,18 +1,19 @@
 # CFReadStreamCreateWithBytesNoCopy(_:_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a readable stream for a block of memory.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,17 @@ Creates a readable stream for a block of memory.
 func CFReadStreamCreateWithBytesNoCopy(_ alloc: CFAllocator!, _ bytes: UnsafePointer<UInt8>!, _ length: CFIndex, _ bytesDeallocator: CFAllocator!) -> CFReadStream!
 ```
 
+```c
+extern CFReadStreamRefCFReadStreamCreateWithBytesNoCopy(CFAllocatorRef alloc, const UInt8 *bytes, CFIndex length, CFAllocatorRef bytesDeallocator);
+```
+
 #### Return Value
 
-The new read stream, or `NULL` on failure. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+The new read stream, or `NULL` on failure. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 #### Discussion
 
-You must open the stream, using [`CFReadStreamOpen(_:)`](cfreadstreamopen(_:).md), before reading from it.
+You must open the stream, using [`CFReadStreamOpen(_:)`](./cfreadstreamopen%28_%29.md), before reading from it.
 
 ## Parameters
 
@@ -37,7 +42,8 @@ You must open the stream, using [`CFReadStreamOpen(_:)`](cfreadstreamopen(_:).md
 
 ## See Also
 
-- [func CFReadStreamCreateWithFile(CFAllocator!, CFURL!) -> CFReadStream!](cfreadstreamcreatewithfile(_:_:).md)
+### Creating a Read Stream
+- [func CFReadStreamCreateWithFile(CFAllocator!, CFURL!) -> CFReadStream!](./cfreadstreamcreatewithfile%28_,_%29.md)
   Creates a readable stream for a file.
 
 

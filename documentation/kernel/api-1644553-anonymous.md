@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kDepthDependent](1644553-anonymous/kdepthdependent.md)
-- [kDepthDependentMask](1644553-anonymous/kdepthdependentmask.md)
+- [kDepthDependent](./api-1644553-anonymous/kdepthdependent.md)
+- [kDepthDependentMask](./api-1644553-anonymous/kdepthdependentmask.md)
 
 
 ---

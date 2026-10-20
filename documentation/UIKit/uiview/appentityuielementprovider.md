@@ -1,7 +1,8 @@
 # appEntityUIElementProvider
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A closure that provides app entity identifiers to make custom view content discoverable by Apple Intelligence and Siri when it appears onscreen.
 
@@ -21,7 +22,7 @@ A closure that provides app entity identifiers to make custom view content disco
 
 #### Discussion
 
-Dynamically provide app entity identifiers for a custom view where your app manages state for the user interface or you use custom drawing to render the interface. For example, you might use a custom list or tab implementation and manage selection and other states in the app, or you might use Metal to render the interface. If either applies to your app’s interface, make content discoverable by Apple Intelligence and Siri using [`appEntityUIElementProvider`](uiview/appentityuielementprovider.md) and provide the system with a list of `AppEntityUIElement` instances.
+Dynamically provide app entity identifiers for a custom view where your app manages state for the user interface or you use custom drawing to render the interface. For example, you might use a custom list or tab implementation and manage selection and other states in the app, or you might use Metal to render the interface. If either applies to your app’s interface, make content discoverable by Apple Intelligence and Siri using [`appEntityUIElementProvider`](./appentityuielementprovider.md) and provide the system with a list of `AppEntityUIElement` instances.
 
 For example, a web browser with tabs might provide context to Apple Intelligence like this:
 
@@ -92,9 +93,9 @@ class MetalPhotoGridController: UIViewController {
 
 > **Note**: The order of the returned elements isn’t relevant.
 
-If your custom view shows content you can describe with a single app entity, use the [`appEntityIdentifier`](uiview/appentityidentifier.md) property instead to associate the app entity with your custom view.
+If your custom view shows content you can describe with a single app entity, use the [`appEntityIdentifier`](./appentityidentifier.md) property instead to associate the app entity with your custom view.
 
-For more information, refer to [`Providing contextual cues to Apple Intelligence and Siri`](https://developer.apple.com/documentation/appintents/providing-contextual-cues-to-apple-intelligence-and-siri) and [`App Intents`](https://developer.apple.com/documentation/appintents).
+For more information, refer to [Providing contextual cues to Apple Intelligence and Siri](../../AppIntents/providing-contextual-cues-to-apple-intelligence-and-siri.md) and [App Intents](../../AppIntents/AppIntents.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # motionCancelled(_:with:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the responder that a motion event has been canceled.
 
@@ -9,13 +10,17 @@ Tells the responder that a motion event has been canceled.
 - iOS 3.0+
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func motionCancelled(_ motion: UIEvent.EventSubtype, with event: UIEvent?)
+```
+
+```objc
+- (void) motionCancelled:(UIEventSubtype) motion withEvent:(UIEvent *) event;
 ```
 
 #### Discussion
@@ -26,14 +31,15 @@ The default implementation of this method forwards the message up the responder 
 
 ## Parameters
 
-- `motion`: An event-subtype constant indicating the kind of motion associated with `event`. A common motion is shaking, which is indicated by [`UIEvent.EventSubtype.motionShake`](uievent/eventsubtype/motionshake.md).
+- `motion`: An event-subtype constant indicating the kind of motion associated with `event`. A common motion is shaking, which is indicated by [`UIEvent.EventSubtype.motionShake`](../uievent/eventsubtype/motionshake.md).
 - `event`: An object representing the event associated with the motion.
 
 ## See Also
 
-- [func motionBegan(UIEvent.EventSubtype, with: UIEvent?)](uiresponder/motionbegan(_:with:).md)
+### Responding to motion events
+- [func motionBegan(UIEvent.EventSubtype, with: UIEvent?)](./motionbegan%28_,with%29.md)
   Tells the responder that a motion event has begun.
-- [func motionEnded(UIEvent.EventSubtype, with: UIEvent?)](uiresponder/motionended(_:with:).md)
+- [func motionEnded(UIEvent.EventSubtype, with: UIEvent?)](./motionended%28_,with%29.md)
   Tells the responder that a motion event has ended.
 
 

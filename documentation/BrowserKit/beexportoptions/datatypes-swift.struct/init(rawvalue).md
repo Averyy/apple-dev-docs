@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: BrowserKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a browser data export option with a value that represents the underlying type.
 

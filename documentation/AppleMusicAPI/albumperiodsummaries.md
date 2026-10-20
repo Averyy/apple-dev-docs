@@ -1,7 +1,8 @@
 # AlbumPeriodSummaries
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The album for the period summary.
 
@@ -10,14 +11,14 @@ The album for the period summary.
 
 ## Declaration
 
-```swift
+```
 object AlbumPeriodSummaries
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AlbumPeriodSummaries.Relationships](albumperiodsummaries/relationships-data.dictionary.md)
+- [object AlbumPeriodSummaries.Relationships](./albumperiodsummaries/relationships-data.dictionary.md)
   The relationships from album-period-summary to other resources.
 
 ## Properties
@@ -25,6 +26,8 @@ object AlbumPeriodSummaries
 - `id` (string) *(required)*: The identifier for the album period summaries resource.
 - `relationships` (AlbumPeriodSummaries.Relationships): The connection from `artist-period-summary` to other resources.
 - `type` (string) *(required)*: The type of resource. This value is always `album-period-summaries`.
+
+  **Allowed Values**: `album-period-summaries`
 
 
 ---

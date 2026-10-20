@@ -1,7 +1,8 @@
 # requestDidComplete(_:)
 
 **Framework**: Sound Analysis  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies your app when the analysis request completes normally.
 
@@ -20,6 +21,10 @@ Notifies your app when the analysis request completes normally.
 optional func requestDidComplete(_ request: any SNRequest)
 ```
 
+```objc
+- (void) requestDidComplete:(id<SNRequest>) request;
+```
+
 #### Discussion
 
 The analyzer calls this method when it finishes processing the request.
@@ -30,11 +35,12 @@ The analyzer calls this method when it finishes processing the request.
 
 ## See Also
 
-- [func request(any SNRequest, didProduce: any SNResult)](snresultsobserving/request(_:didproduce:).md)
+### Handling Requests
+- [func request(any SNRequest, didProduce: any SNResult)](./request%28_,didproduce%29.md)
   Provides a new analysis result to your app with the specified time range.
-- [protocol SNResult](snresult.md)
+- [protocol SNResult](../snresult.md)
   A protocol that represents sound analysis results.
-- [func request(any SNRequest, didFailWithError: any Error)](snresultsobserving/request(_:didfailwitherror:).md)
+- [func request(any SNRequest, didFailWithError: any Error)](./request%28_,didfailwitherror%29.md)
   Provides any errors that occur during processing of the request.
 
 

@@ -1,7 +1,8 @@
 # localizedTitle
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized string used to describe the context of a command.
 
@@ -20,15 +21,20 @@ A localized string used to describe the context of a command.
 var localizedTitle: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * localizedTitle;
+```
+
 #### Discussion
 
 Use this property to store the text you want shown to the user in conjunction with this command. For example, you might assign the string “I like this” to this property for the command associated with a Like button. The text you specify is displayed to the user at appropriate times by the system.
 
 ## See Also
 
-- [var isActive: Bool](mpfeedbackcommand/isactive.md)
+### Retrieving information about a feedback command
+- [var isActive: Bool](./isactive.md)
   A Boolean value that indicates whether the feedback’s action is on or off.
-- [var localizedShortTitle: String](mpfeedbackcommand/localizedshorttitle.md)
+- [var localizedShortTitle: String](./localizedshorttitle.md)
   A shortened version of the string used to describe the context of a command.
 
 

@@ -1,7 +1,8 @@
 # OSBitAndAtomic16
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 16-bit logical and operation, performed atomically with respect to all devices that participate in the coherency architecture of the platform.
 
@@ -10,11 +11,11 @@
 
 ## Declaration
 
-```swift
+```c
 UInt16 OSBitAndAtomic16(UInt32 mask, volatile UInt16 *address);
 ```
 
-#### Return_value
+#### Return Value
 
 The value before the bitwise operation.
 
@@ -31,21 +32,22 @@ This function guarantees atomicity only with main system memory. It is specifica
 
 ## See Also
 
-- [OSBitAndAtomic](1576481-osbitandatomic.md)
+### Boolean Operations
+- [OSBitAndAtomic](./api-1576481-osbitandatomic.md)
   32-bit logical and operation, performed atomically with respect to all devices that participate in the coherency architecture of the platform.
-- [OSBitAndAtomic8](1576487-osbitandatomic8.md)
+- [OSBitAndAtomic8](./api-1576487-osbitandatomic8.md)
   8-bit logical and operation, performed atomically with respect to all devices that participate in the coherency architecture of the platform.
-- [OSBitOrAtomic](1576467-osbitoratomic.md)
+- [OSBitOrAtomic](./api-1576467-osbitoratomic.md)
   32-bit logical or operation, performed atomically with respect to all devices that participate in the coherency architecture of the platform.
-- [OSBitOrAtomic8](1576478-osbitoratomic8.md)
+- [OSBitOrAtomic8](./api-1576478-osbitoratomic8.md)
   8-bit logical or operation, performed atomically with respect to all devices that participate in the coherency architecture of the platform.
-- [OSBitOrAtomic16](1576466-osbitoratomic16.md)
+- [OSBitOrAtomic16](./api-1576466-osbitoratomic16.md)
   16-bit logical or operation, performed atomically with respect to all devices that participate in the coherency architecture of the platform.
-- [OSBitXorAtomic](1576476-osbitxoratomic.md)
+- [OSBitXorAtomic](./api-1576476-osbitxoratomic.md)
   32-bit logical xor operation, performed atomically with respect to all devices that participate in the coherency architecture of the platform.
-- [OSBitXorAtomic8](1576459-osbitxoratomic8.md)
+- [OSBitXorAtomic8](./api-1576459-osbitxoratomic8.md)
   8-bit logical xor operation, performed atomically with respect to all devices that participate in the coherency architecture of the platform.
-- [OSBitXorAtomic16](1576464-osbitxoratomic16.md)
+- [OSBitXorAtomic16](./api-1576464-osbitxoratomic16.md)
   16-bit logical xor operation, performed atomically with respect to all devices that participate in the coherency architecture of the platform.
 
 

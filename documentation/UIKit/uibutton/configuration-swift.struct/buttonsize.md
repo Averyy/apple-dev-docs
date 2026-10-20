@@ -1,7 +1,8 @@
 # buttonSize
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A size that requests a preferred size for the button.
 
@@ -10,7 +11,7 @@ A size that requests a preferred size for the button.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,11 +25,12 @@ The size indicates a system-defined size you prefer for this button. The exact s
 
 ## See Also
 
-- [UIButton.Configuration.Size](uibutton/configuration-swift.struct/size.md)
+### Configuring layout
+- [UIButton.Configuration.Size](./size.md)
   A predefined size for button elements.
-- [var contentInsets: NSDirectionalEdgeInsets](uibutton/configuration-swift.struct/contentinsets.md)
+- [var contentInsets: NSDirectionalEdgeInsets](./contentinsets.md)
   The distance from the button’s content area to its bounds.
-- [func setDefaultContentInsets()](uibutton/configuration-swift.struct/setdefaultcontentinsets.md)
+- [func setDefaultContentInsets()](./setdefaultcontentinsets%28%29.md)
   Restores the default content insets.
 
 

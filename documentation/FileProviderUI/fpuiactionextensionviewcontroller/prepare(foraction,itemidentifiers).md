@@ -1,7 +1,8 @@
 # prepare(forAction:itemIdentifiers:)
 
 **Framework**: File Provider UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs any necessary setup or configuration for the specified action.
 
@@ -18,15 +19,19 @@ Performs any necessary setup or configuration for the specified action.
 func prepare(forAction actionIdentifier: String, itemIdentifiers: [NSFileProviderItemIdentifier])
 ```
 
+```objc
+- (void) prepareForActionWithIdentifier:(NSString *) actionIdentifier itemIdentifiers:(NSArray<NSString *> *) itemIdentifiers;
+```
+
 ## Mentions
 
-- [Adding Actions to the Context Menu](adding-actions-to-the-context-menu.md)
+- [Adding Actions to the Context Menu](../adding-actions-to-the-context-menu.md)
 
 #### Discussion
 
 Use this method to prepare a user interface for handling the action. At a minimum, you should display feedback about the action.
 
-For more information, see [`Adding Actions to the Context Menu`](adding-actions-to-the-context-menu.md).
+For more information, see [Adding Actions to the Context Menu](../adding-actions-to-the-context-menu.md).
 
 ## Parameters
 
@@ -35,11 +40,12 @@ For more information, see [`Adding Actions to the Context Menu`](adding-actions-
 
 ## See Also
 
-- [func prepare(forError: any Error)](fpuiactionextensionviewcontroller/prepare(forerror:).md)
+### Working with Actions
+- [func prepare(forError: any Error)](./prepare%28forerror%29.md)
   Performs any necessary setup or configuration when an authentication error occurs.
-- [var extensionContext: FPUIActionExtensionContext](fpuiactionextensionviewcontroller/extensioncontext.md)
+- [var extensionContext: FPUIActionExtensionContext](./extensioncontext.md)
   The extension context provided by the host app.
-- [class FPUIActionExtensionContext](fpuiactionextensioncontext.md)
+- [class FPUIActionExtensionContext](../fpuiactionextensioncontext.md)
   An extension context provided to File Provider UI extensions.
 
 

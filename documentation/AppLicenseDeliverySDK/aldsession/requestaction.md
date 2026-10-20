@@ -1,7 +1,8 @@
 # requestAction
 
 **Framework**: App License Delivery SDK  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 action specified in this request
 

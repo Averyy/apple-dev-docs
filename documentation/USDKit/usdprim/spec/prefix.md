@@ -1,7 +1,8 @@
 # prefix
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The authored prefix, or `nil` if not authored.
 

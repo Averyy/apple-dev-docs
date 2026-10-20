@@ -1,7 +1,8 @@
 # GroupActivityTransferRepresentation
 
 **Framework**: Group Activities  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that lets you start a group activity from a known context.
 
@@ -21,27 +22,28 @@ struct GroupActivityTransferRepresentation<Item> where Item : Transferable
 ## Topics
 
 ### Initializers
-- [init<ActivityType>(exporting: (Item) async throws -> ActivityType)](groupactivitytransferrepresentation/init(exporting:).md)
+- [init<ActivityType>(exporting: (Item) async throws -> ActivityType)](./groupactivitytransferrepresentation/init%28exporting%29.md)
   Creates a type that exports a group activity for the specified item.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TransferRepresentation](../coretransferable/transferrepresentation.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TransferRepresentation](../CoreTransferable/transferrepresentation.md)
 
 ## See Also
 
-- [Defining your app’s SharePlay activities](defining-your-apps-shareplay-activities.md)
+### Activity definition
+- [Defining your app’s SharePlay activities](./defining-your-apps-shareplay-activities.md)
   Configure your app’s SharePlay support and define the activities that people can perform from your app.
-- [Supporting coordinated media playback](../avfoundation/supporting-coordinated-media-playback.md)
+- [Supporting coordinated media playback](../AVFoundation/supporting-coordinated-media-playback.md)
   Create synchronized media experiences that enable users to watch and listen across devices.
-- [protocol GroupActivity](groupactivity.md)
+- [protocol GroupActivity](./groupactivity.md)
   A type that can advertise your app’s activities to other participants.
-- [struct GroupActivityMetadata](groupactivitymetadata.md)
+- [struct GroupActivityMetadata](./groupactivitymetadata.md)
   Text and image content that describes an activity to potential participants.
-- [enum GroupActivityActivationResult](groupactivityactivationresult.md)
+- [enum GroupActivityActivationResult](./groupactivityactivationresult.md)
   The result of preparing to start a custom activity.
 
 

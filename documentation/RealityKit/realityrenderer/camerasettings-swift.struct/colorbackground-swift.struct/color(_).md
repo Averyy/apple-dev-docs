@@ -1,7 +1,8 @@
 # color(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Use a solid color as background.
 

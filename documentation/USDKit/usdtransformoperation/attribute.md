@@ -1,7 +1,8 @@
 # attribute
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attribute backing this operation.
 

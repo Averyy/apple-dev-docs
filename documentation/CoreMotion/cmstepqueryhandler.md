@@ -1,7 +1,8 @@
 # CMStepQueryHandler
 
 **Framework**: Core Motion  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A block that reports the number of steps for a query operation.
 
@@ -18,6 +19,10 @@ A block that reports the number of steps for a query operation.
 typealias CMStepQueryHandler = (Int, (any Error)?) -> Void
 ```
 
+```c
+typedef void (^)(long, NSError *) CMStepQueryHandler;
+```
+
 #### Discussion
 
 This block takes two parameters:
@@ -27,7 +32,8 @@ This block takes two parameters:
 
 ## See Also
 
-- [func queryStepCountStarting(from: Date, to: Date, to: OperationQueue, withHandler: CMStepQueryHandler)](cmstepcounter/querystepcountstarting(from:to:to:withhandler:).md)
+### Getting Historical Step Counting Data
+- [func queryStepCountStarting(from: Date, to: Date, to: OperationQueue, withHandler: CMStepQueryHandler)](./cmstepcounter/querystepcountstarting%28from,to,to,withhandler%29.md)
   Gathers and returns historical step count data for the specified time period.
 
 

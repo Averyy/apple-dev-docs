@@ -1,7 +1,8 @@
 # selectedFontDescriptor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Information about the font family or face selected by the user in the font picker.
 
@@ -17,15 +18,20 @@ Information about the font family or face selected by the user in the font picke
 var selectedFontDescriptor: UIFontDescriptor? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIFontDescriptor * selectedFontDescriptor;
+```
+
 #### Discussion
 
-This font descriptor does not include a size attribute, so if you want to use this descriptor as a parameter in [`init(descriptor:size:)`](uifont/init(descriptor:size:).md), you also need a size parameter greater than `0.0`.
+This font descriptor does not include a size attribute, so if you want to use this descriptor as a parameter in [`init(descriptor:size:)`](../uifont/init%28descriptor,size%29.md), you also need a size parameter greater than `0.0`.
 
 ## See Also
 
-- [var delegate: (any UIFontPickerViewControllerDelegate)?](uifontpickerviewcontroller/delegate.md)
+### Responding to font picker interactions
+- [var delegate: (any UIFontPickerViewControllerDelegate)?](./delegate.md)
   The object that handles messages about the user’s interaction with a font picker.
-- [protocol UIFontPickerViewControllerDelegate](uifontpickerviewcontrollerdelegate.md)
+- [protocol UIFontPickerViewControllerDelegate](../uifontpickerviewcontrollerdelegate.md)
   A set of optional methods for receiving messages about the user’s interaction with the font picker.
 
 

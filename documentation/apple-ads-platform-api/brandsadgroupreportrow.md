@@ -1,7 +1,8 @@
 # BrandsAdGroupReportRow
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A single row in a Brands (Apple Maps) ad group report, pairing ad group metadata with total and granular performance metrics.
 
@@ -10,13 +11,13 @@ A single row in a Brands (Apple Maps) ad group report, pairing ad group metadata
 
 ## Declaration
 
-```swift
+```
 object BrandsAdGroupReportRow
 ```
 
 #### Discussion
 
-The `BrandsAdGroupReportRow` object is the `brands` counterpart to [`AppsAdGroupReportRow`](appsadgroupreportrow.md). The `metadata` field captures ad group identifiers and configuration at report time. The `totalMetrics` field contains the aggregated performance figures across the full reporting period.
+The `BrandsAdGroupReportRow` object is the `brands` counterpart to [`AppsAdGroupReportRow`](./appsadgroupreportrow.md). The `metadata` field captures ad group identifiers and configuration at report time. The `totalMetrics` field contains the aggregated performance figures across the full reporting period.
 
 ##### Example
 
@@ -207,41 +208,41 @@ The `BrandsAdGroupReportRow` object is the `brands` counterpart to [`AppsAdGroup
 
 ## Properties
 
-- `totalMetrics` (BrandsAdGroupMetrics): See [`BrandsAdGroupMetrics`](brandsadgroupmetrics.md) for details.
+- `totalMetrics` (BrandsAdGroupMetrics): See [`BrandsAdGroupMetrics`](./brandsadgroupmetrics.md) for details.
 - `granularMetrics` ([BrandsAdGroupMetrics]): Time-series metrics broken down by the requested granularity (for example, `DAILY`, `WEEKLY`). Present only when a `granularity` is specified in the request. When it isn’t, this field is absent and all data appears in `totalMetrics` instead.
-- `metadata` (BrandsReportingAdGroup): See [`BrandsReportingAdGroup`](brandsreportingadgroup.md) for details.
+- `metadata` (BrandsReportingAdGroup): See [`BrandsReportingAdGroup`](./brandsreportingadgroup.md) for details.
 
 ## See Also
 
-- [object BrandsReportingRequest](brandsreportingrequest.md)
+- [object BrandsReportingRequest](./brandsreportingrequest.md)
   Request body for brands reporting queries.
-- [object BrandsReportingCampaign](brandsreportingcampaign.md)
+- [object BrandsReportingCampaign](./brandsreportingcampaign.md)
   Campaign metadata for Apple Maps report rows.
-- [object BrandsReportingAdGroup](brandsreportingadgroup.md)
+- [object BrandsReportingAdGroup](./brandsreportingadgroup.md)
   Ad group metadata for brands report rows.
-- [object BrandsReportingAd](brandsreportingad.md)
+- [object BrandsReportingAd](./brandsreportingad.md)
   Ad metadata for brands report rows.
-- [object BrandsReportingCreative](brandsreportingcreative.md)
+- [object BrandsReportingCreative](./brandsreportingcreative.md)
   Creative metadata for brands ads.
-- [object BrandsReportingKeyword](brandsreportingkeyword.md)
+- [object BrandsReportingKeyword](./brandsreportingkeyword.md)
   Keyword metadata for brands report rows, extending the base reporting keyword with brands-only internal fields.
-- [object BrandsReportingSearchTerm](brandsreportingsearchterm.md)
+- [object BrandsReportingSearchTerm](./brandsreportingsearchterm.md)
   Search term metadata for brands report rows, extending the base reporting search term with brands-only internal fields.
-- [object BrandsCampaignReportResponse](brandscampaignreportresponse.md)
+- [object BrandsCampaignReportResponse](./brandscampaignreportresponse.md)
   The top-level response envelope for Apple Maps campaign-level reports.
-- [object BrandsCampaignReportRow](brandscampaignreportrow.md)
+- [object BrandsCampaignReportRow](./brandscampaignreportrow.md)
   A single row in an Apple Maps campaign report, containing campaign metadata, total metrics, and optional granular time-series metrics.
-- [object BrandsCampaignReportSummary](brandscampaignreportsummary.md)
+- [object BrandsCampaignReportSummary](./brandscampaignreportsummary.md)
   The grand-total metrics aggregated across all rows in an Apple Maps campaign report.
-- [object BrandsCampaignResultContainer](brandscampaignresultcontainer.md)
+- [object BrandsCampaignResultContainer](./brandscampaignresultcontainer.md)
   Wraps the array of Apple Maps campaign report rows along with a grand-total summary.
-- [object BrandsAdGroupReportResponse](brandsadgroupreportresponse.md)
+- [object BrandsAdGroupReportResponse](./brandsadgroupreportresponse.md)
   The top-level response envelope for brands ad group reports.
-- [object BrandsAdGroupReportSummary](brandsadgroupreportsummary.md)
+- [object BrandsAdGroupReportSummary](./brandsadgroupreportsummary.md)
   The grand-total metrics aggregated across all rows in a Brands ad group report.
-- [object BrandsAdGroupResultContainer](brandsadgroupresultcontainer.md)
+- [object BrandsAdGroupResultContainer](./brandsadgroupresultcontainer.md)
   Wraps the array of Brands ad group report rows along with a grand-total summary.
-- [object BrandsAdReportResponse](brandsadreportresponse.md)
+- [object BrandsAdReportResponse](./brandsadreportresponse.md)
   The top-level response envelope for brands ad-level reports.
 
 

@@ -1,7 +1,8 @@
 # RoutingAppCoverageCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that you set that describe the new resource.
 
@@ -10,7 +11,7 @@ Attributes that you set that describe the new resource.
 
 ## Declaration
 
-```swift
+```
 object RoutingAppCoverageCreateRequest.Data.Attributes
 ```
 
@@ -21,7 +22,8 @@ object RoutingAppCoverageCreateRequest.Data.Attributes
 
 ## See Also
 
-- [object RoutingAppCoverageCreateRequest.Data.Relationships](routingappcoveragecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object RoutingAppCoverageCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 

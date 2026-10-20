@@ -1,7 +1,8 @@
 # ObjectCaptureSession.Tracking.Reason.excessiveMotion
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device is moving too fast for accurate tracking.
 

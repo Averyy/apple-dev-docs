@@ -1,7 +1,8 @@
 # ignoreSnapshotOnNextApplicationLaunch()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prevents the app from using the recent snapshot image during the next launch cycle.
 
@@ -9,13 +10,17 @@ Prevents the app from using the recent snapshot image during the next launch cyc
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func ignoreSnapshotOnNextApplicationLaunch()
+```
+
+```objc
+- (void) ignoreSnapshotOnNextApplicationLaunch;
 ```
 
 #### Discussion
@@ -26,11 +31,12 @@ You must call this method from within the code you use to preserve your app’s 
 
 ## See Also
 
-- [func extendStateRestoration()](uiapplication/extendstaterestoration.md)
+### Managing state restoration
+- [func extendStateRestoration()](./extendstaterestoration%28%29.md)
   Tells the app that your code is restoring state asynchronously.
-- [func completeStateRestoration()](uiapplication/completestaterestoration.md)
+- [func completeStateRestoration()](./completestaterestoration%28%29.md)
   Tells the app that your code has finished any asynchronous state restoration.
-- [class func registerObject(forStateRestoration: any UIStateRestoring, restorationIdentifier: String)](uiapplication/registerobject(forstaterestoration:restorationidentifier:).md)
+- [class func registerObject(forStateRestoration: any UIStateRestoring, restorationIdentifier: String)](./registerobject%28forstaterestoration,restorationidentifier%29.md)
   Registers a custom object for use with the state restoration system.
 
 

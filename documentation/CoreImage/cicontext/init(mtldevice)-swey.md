@@ -1,7 +1,8 @@
 # init(mtlDevice:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Core Image context using the specified Metal device.
 
@@ -19,13 +20,17 @@ Creates a Core Image context using the specified Metal device.
 init(mtlDevice device: any MTLDevice)
 ```
 
+```objc
++ (CIContext *) contextWithMTLDevice:(id<MTLDevice>) device;
+```
+
 #### Return Value
 
 A Core Image context.
 
 #### Discussion
 
-Use this method to choose a specific Metal device for rendering when a system contains multiple Metal devices. To create a Metal-based context using the system’s default Metal device, use the [`contextWithOptions:`](cicontext/contextwithoptions:.md) method.
+Use this method to choose a specific Metal device for rendering when a system contains multiple Metal devices. To create a Metal-based context using the system’s default Metal device, use the [`contextWithOptions:`](./contextwithoptions_.md) method.
 
 ## Parameters
 
@@ -33,10 +38,11 @@ Use this method to choose a specific Metal device for rendering when a system co
 
 ## See Also
 
-- [init(mtlDevice: any MTLDevice, options: [CIContextOption : Any]?)](cicontext/init(mtldevice:options:)-26usb.md)
+### Creating a Context for GPU-Based Rendering
+- [init(mtlDevice: any MTLDevice, options: [CIContextOption : Any]?)](./init%28mtldevice,options%29-26usb.md)
   Creates a Core Image context using the specified Metal device and options.
-- [init(mtlCommandQueue: any MTLCommandQueue)](cicontext/init(mtlcommandqueue:)-7dtqk.md)
-- [init(mtlCommandQueue: any MTLCommandQueue, options: [CIContextOption : Any]?)](cicontext/init(mtlcommandqueue:options:)-6i3me.md)
+- [init(mtlCommandQueue: any MTLCommandQueue)](./init%28mtlcommandqueue%29-7dtqk.md)
+- [init(mtlCommandQueue: any MTLCommandQueue, options: [CIContextOption : Any]?)](./init%28mtlcommandqueue,options%29-6i3me.md)
 
 
 ---

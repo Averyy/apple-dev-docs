@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a system pressure level from its raw string value.
 

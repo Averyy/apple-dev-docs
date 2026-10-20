@@ -1,14 +1,15 @@
 # importUserDCL
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn importUserDCL(UInt8 *data, IOByteCount & dataSize, IOMemoryMap *bufferMap, const OSArray *dcl);
 ```
 

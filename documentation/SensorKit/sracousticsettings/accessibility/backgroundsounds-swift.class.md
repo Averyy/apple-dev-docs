@@ -1,7 +1,8 @@
 # SRAcousticSettings.Accessibility.BackgroundSounds
 
 **Framework**: SensorKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 26.0+
@@ -14,34 +15,38 @@
 class BackgroundSounds
 ```
 
+```objc
+@interface SRAcousticSettingsAccessibilityBackgroundSounds : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var isEnabled: Bool](sracousticsettings/accessibility/backgroundsounds-swift.class/isenabled.md)
-- [var isPlayWithMediaEnabled: Bool](sracousticsettings/accessibility/backgroundsounds-swift.class/isplaywithmediaenabled.md)
-- [var isStopOnLockEnabled: Bool](sracousticsettings/accessibility/backgroundsounds-swift.class/isstoponlockenabled.md)
-- [var relativeVolume: Double](sracousticsettings/accessibility/backgroundsounds-swift.class/relativevolume.md)
-- [var relativeVolumeWithMedia: Double](sracousticsettings/accessibility/backgroundsounds-swift.class/relativevolumewithmedia.md)
-- [var soundName: SRAcousticSettings.Accessibility.BackgroundSounds.Name](sracousticsettings/accessibility/backgroundsounds-swift.class/soundname.md)
+- [var isEnabled: Bool](./backgroundsounds-swift.class/isenabled.md)
+- [var isPlayWithMediaEnabled: Bool](./backgroundsounds-swift.class/isplaywithmediaenabled.md)
+- [var isStopOnLockEnabled: Bool](./backgroundsounds-swift.class/isstoponlockenabled.md)
+- [var relativeVolume: Double](./backgroundsounds-swift.class/relativevolume.md)
+- [var relativeVolumeWithMedia: Double](./backgroundsounds-swift.class/relativevolumewithmedia.md)
+- [var soundName: SRAcousticSettings.Accessibility.BackgroundSounds.Name](./backgroundsounds-swift.class/soundname.md)
 ### Enumerations
-- [SRAcousticSettings.Accessibility.BackgroundSounds.Name](sracousticsettings/accessibility/backgroundsounds-swift.class/name.md)
+- [SRAcousticSettings.Accessibility.BackgroundSounds.Name](./backgroundsounds-swift.class/name.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [NSCoding](../../../Foundation/nscoding.md)
+- [NSCopying](../../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../../../Foundation/nssecurecoding.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

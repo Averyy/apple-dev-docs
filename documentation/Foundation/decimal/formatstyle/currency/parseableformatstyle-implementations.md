@@ -1,11 +1,12 @@
 # ParseableFormatStyle Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var parseStrategy: Decimal.ParseStrategy<Decimal.FormatStyle.Currency>](decimal/formatstyle/currency/parsestrategy.md)
+- [var parseStrategy: Decimal.ParseStrategy<Decimal.FormatStyle.Currency>](./parsestrategy.md)
   The parse strategy that this format style uses.
 
 

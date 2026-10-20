@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: os  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The signpost ID’s raw value.
 
@@ -11,7 +12,7 @@ The signpost ID’s raw value.
 - Mac Catalyst 12.0+
 - macOS 10.14+
 - tvOS 12.0+
-- visionOS ?+
+- visionOS
 - watchOS 5.0+
 
 ## Declaration

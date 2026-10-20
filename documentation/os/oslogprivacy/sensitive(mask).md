@@ -1,7 +1,8 @@
 # sensitive(mask:)
 
 **Framework**: os  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a privacy structure that marks an interpolated value as sensitive, and customizes the display of redacted values.
 
@@ -11,7 +12,7 @@ Returns a privacy structure that marks an interpolated value as sensitive, and c
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -30,11 +31,12 @@ A privacy object that redacts a sensitive value.
 
 ## See Also
 
-- [static func auto(mask: OSLogPrivacy.Mask) -> OSLogPrivacy](oslogprivacy/auto(mask:).md)
+### Creating a Custom Privacy Mask
+- [static func auto(mask: OSLogPrivacy.Mask) -> OSLogPrivacy](./auto%28mask%29.md)
   Returns a privacy structure that determines whether to redact or show values according to their type, and customizes the display of redacted values.
-- [static func `private`(mask: OSLogPrivacy.Mask) -> OSLogPrivacy](oslogprivacy/private(mask:).md)
+- [static func `private`(mask: OSLogPrivacy.Mask) -> OSLogPrivacy](./private%28mask%29.md)
   Returns a privacy structure that marks an interpolated value as private, and customizes the display of redacted values.
-- [OSLogPrivacy.Mask](oslogprivacy/mask.md)
+- [OSLogPrivacy.Mask](./mask.md)
   A mask that establishes how the system displays a redacted value in a log message.
 
 

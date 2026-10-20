@@ -1,14 +1,15 @@
 # dispatchKeyboardEvent
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.12.2+ - Deprecated in 10.15.1
 
 ## Declaration
 
-```swift
+```cpp
 virtual void dispatchKeyboardEvent(AbsoluteTime timeStamp, UInt32 usagePage, UInt32 usage, UInt32 value, IOOptionBits options);
 ```
 

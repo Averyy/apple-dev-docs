@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a person name components object from a given string.
 
@@ -60,9 +61,10 @@ Here are some general rules that describe the name component parsing behavior:
 
 ## See Also
 
-- [init<S>(S.ParseInput, strategy: S) throws](personnamecomponents/init(_:strategy:).md)
+### Parsing Person Name Components
+- [init<S>(S.ParseInput, strategy: S) throws](./init%28_,strategy%29.md)
   Creates a person name components object from a given string by applying the provided parsing strategy.
-- [var parseStrategy: PersonNameComponents.ParseStrategy](personnamecomponents/formatstyle/parsestrategy.md)
+- [var parseStrategy: PersonNameComponents.ParseStrategy](./formatstyle/parsestrategy.md)
   The strategy used to parse a string into person name components.
 
 

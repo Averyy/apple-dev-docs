@@ -1,7 +1,8 @@
 # WAPublisherListener.DatapathParameters
 
 **Framework**: Wi-Fi Aware  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The parameter that sets the initial Wi-Fi Aware data path configuration for any devices that are connected.
 
@@ -26,29 +27,30 @@ The code below is an example of how to set a data path configuration:
 NetworkListener(for: .wifiAware( .connecting(to:service,  from:.selected(devices)) datapath: .defaults) )
 ```
 
-> ❗ **Important**: Each service must have the same [`WAPerformanceMode`](waperformancemode.md) on both the `NetworkBrowser` (subscriber) and `NetworkListener` (publisher) sides of the connection, or the resulting performance behavior is undefined. If not specified, the performance mode defaults to [`WAPerformanceMode.bulk`](waperformancemode/bulk.md) on both sides.
+> ❗ **Important**: Each service must have the same [`WAPerformanceMode`](../waperformancemode.md) on both the `NetworkBrowser` (subscriber) and `NetworkListener` (publisher) sides of the connection, or the resulting performance behavior is undefined. If not specified, the performance mode defaults to [`WAPerformanceMode.bulk`](../waperformancemode/bulk.md) on both sides.
 
 ## Topics
 
 ### Setting performance modes
-- [static let defaults: WAPublisherListener.DatapathParameters](wapublisherlistener/datapathparameters/defaults.md)
+- [static let defaults: WAPublisherListener.DatapathParameters](./datapathparameters/defaults.md)
   The property that configures default parameters that prioritize bulk throughput, power consumption, and other concurrent Wi-Fi use cases.
-- [static let realtime: WAPublisherListener.DatapathParameters](wapublisherlistener/datapathparameters/realtime.md)
+- [static let realtime: WAPublisherListener.DatapathParameters](./datapathparameters/realtime.md)
   Parameters that prioritize latency at the expense of throughput, power consumption, and other concurrent Wi-Fi use cases and devices.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct WAPublisherListener](wapublisherlistener.md)
+### Publisher
+- [struct WAPublisherListener](../wapublisherlistener.md)
   Configures a network listener to publish a service over Wi-Fi Aware and accept incoming connections from paired devices.
-- [WAPublisherListener.Action](wapublisherlistener/action.md)
+- [WAPublisherListener.Action](./action.md)
   The structure that configures the Wi-Fi Aware publisher operation that the network listener performs.
-- [WAPublisherListener.Devices](wapublisherlistener/devices.md)
+- [WAPublisherListener.Devices](./devices.md)
   The structure that determines the devices to connect to.
 
 

@@ -1,7 +1,8 @@
 # isEqual(_:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares two `CKShareParticipant` objects for person identity equality.
 
@@ -18,6 +19,10 @@ Compares two `CKShareParticipant` objects for person identity equality.
 
 ```swift
 func isEqual(_ object: Any) -> Bool
+```
+
+```objc
+- (BOOL) isEqual:(id) object;
 ```
 
 #### Return Value

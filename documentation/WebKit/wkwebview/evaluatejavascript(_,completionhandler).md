@@ -1,7 +1,8 @@
 # evaluateJavaScript(_:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Evaluates the specified JavaScript string.
 
@@ -15,7 +16,15 @@ Evaluates the specified JavaScript string.
 ## Declaration
 
 ```swift
+func evaluateJavaScript(_ javaScriptString: String, completionHandler: (@MainActor @Sendable (Any?, (any Error)?) -> Void)? = nil)
+```
+
+```swift
 func evaluateJavaScript(_ javaScriptString: String) async throws -> Any?
+```
+
+```objc
+- (void) evaluateJavaScript:(NSString *) javaScriptString completionHandler:(void (^)(id, NSError *)) completionHandler;
 ```
 
 #### Discussion
@@ -25,18 +34,21 @@ After evaluating the script, this method executes the completion handler block w
 ## Parameters
 
 - `javaScriptString`: The JavaScript string to evaluate.
-- `completionHandler`: A handler block to execute when script evaluation finishes. The method calls your block whether script evaluation completes successfully or fails. The block has no return value and takes the following parameters: - **object**: The result of the script evaluation, or `nil` if an error occurred.
-- **error**: `nil` on success, or an error object with information about the problem.
+- `completionHandler`: A handler block to execute when script evaluation finishes. The method calls your block whether script evaluation completes successfully or fails. The block has no return value and takes the following parameters:
+
+  - **object**: The result of the script evaluation, or `nil` if an error occurred.
+  - **error**: `nil` on success, or an error object with information about the problem.
 
 ## See Also
 
-- [func evaluateJavaScript(String, in: WKFrameInfo?, in: WKContentWorld, completionHandler: ((Result<Any, any Error>) -> Void)?)](wkwebview/evaluatejavascript(_:in:in:completionhandler:).md)
+### Executing JavaScript
+- [func evaluateJavaScript(String, in: WKFrameInfo?, in: WKContentWorld, completionHandler: ((Result<Any, any Error>) -> Void)?)](./evaluatejavascript%28_,in,in,completionhandler%29.md)
   Evaluates a JavaScript string in the context of the specified frame and content world.
-- [func evaluateJavaScript(String, in: WKFrameInfo?, contentWorld: WKContentWorld) async throws -> Any?](wkwebview/evaluatejavascript(_:in:contentworld:).md)
+- [func evaluateJavaScript(String, in: WKFrameInfo?, contentWorld: WKContentWorld) async throws -> Any?](./evaluatejavascript%28_,in,contentworld%29.md)
   Evaluates a JavaScript string in the context of the specified frame and content world.
-- [func callAsyncJavaScript(String, arguments: [String : Any], in: WKFrameInfo?, in: WKContentWorld, completionHandler: ((Result<Any, any Error>) -> Void)?)](wkwebview/callasyncjavascript(_:arguments:in:in:completionhandler:).md)
+- [func callAsyncJavaScript(String, arguments: [String : Any], in: WKFrameInfo?, in: WKContentWorld, completionHandler: ((Result<Any, any Error>) -> Void)?)](./callasyncjavascript%28_,arguments,in,in,completionhandler%29.md)
   Executes the specified string as an asynchronous JavaScript function.
-- [func callAsyncJavaScript(String, arguments: [String : Any], in: WKFrameInfo?, contentWorld: WKContentWorld) async throws -> Any?](wkwebview/callasyncjavascript(_:arguments:in:contentworld:).md)
+- [func callAsyncJavaScript(String, arguments: [String : Any], in: WKFrameInfo?, contentWorld: WKContentWorld) async throws -> Any?](./callasyncjavascript%28_,arguments,in,contentworld%29.md)
   Executes the specified string as an asynchronous JavaScript function.
 
 

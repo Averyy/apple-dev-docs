@@ -1,7 +1,8 @@
 # UIEvent.ButtonMask
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that indicate which input-device buttons are pressed.
 
@@ -17,34 +18,39 @@ Constants that indicate which input-device buttons are pressed.
 struct ButtonMask
 ```
 
+```c
+enum UIEventButtonMask : NSInteger;
+```
+
 ## Topics
 
 ### Creating button masks
-- [init(rawValue: Int)](uievent/buttonmask-swift.struct/init(rawvalue:).md)
+- [init(rawValue: Int)](./buttonmask-swift.struct/init%28rawvalue%29.md)
   Creates a button mask with the specified raw value.
-- [static func button(Int) -> UIEvent.ButtonMask](uievent/buttonmask-swift.struct/button(_:).md)
+- [static func button(Int) -> UIEvent.ButtonMask](./buttonmask-swift.struct/button%28_%29.md)
   Creates a button mask from the specified button index.
 ### Accessing button masks
-- [static var primary: UIEvent.ButtonMask](uievent/buttonmask-swift.struct/primary.md)
+- [static var primary: UIEvent.ButtonMask](./buttonmask-swift.struct/primary.md)
   A constant that represents the primary button on the input device.
-- [static var secondary: UIEvent.ButtonMask](uievent/buttonmask-swift.struct/secondary.md)
+- [static var secondary: UIEvent.ButtonMask](./buttonmask-swift.struct/secondary.md)
   A constant that represents the secondary button on the input device.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var buttonMask: UIEvent.ButtonMask](uievent/buttonmask-swift.property.md)
+### Getting the button mask
+- [var buttonMask: UIEvent.ButtonMask](./buttonmask-swift.property.md)
   A bit mask that represents which input-device buttons are pressed for the current event.
 
 

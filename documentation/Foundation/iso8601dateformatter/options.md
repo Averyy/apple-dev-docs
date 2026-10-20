@@ -1,7 +1,8 @@
 # ISO8601DateFormatter.Options
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options used to generate and parse ISO 8601 date representations.
 
@@ -20,39 +21,43 @@ Options used to generate and parse ISO 8601 date representations.
 struct Options
 ```
 
+```c
+enum NSISO8601DateFormatOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [static var withYear: ISO8601DateFormatter.Options](iso8601dateformatter/options/withyear.md)
-- [static var withMonth: ISO8601DateFormatter.Options](iso8601dateformatter/options/withmonth.md)
-- [static var withWeekOfYear: ISO8601DateFormatter.Options](iso8601dateformatter/options/withweekofyear.md)
-- [static var withDay: ISO8601DateFormatter.Options](iso8601dateformatter/options/withday.md)
-- [static var withTime: ISO8601DateFormatter.Options](iso8601dateformatter/options/withtime.md)
-- [static var withTimeZone: ISO8601DateFormatter.Options](iso8601dateformatter/options/withtimezone.md)
-- [static var withSpaceBetweenDateAndTime: ISO8601DateFormatter.Options](iso8601dateformatter/options/withspacebetweendateandtime.md)
-- [static var withDashSeparatorInDate: ISO8601DateFormatter.Options](iso8601dateformatter/options/withdashseparatorindate.md)
-- [static var withColonSeparatorInTime: ISO8601DateFormatter.Options](iso8601dateformatter/options/withcolonseparatorintime.md)
-- [static var withColonSeparatorInTimeZone: ISO8601DateFormatter.Options](iso8601dateformatter/options/withcolonseparatorintimezone.md)
-- [static var withFullDate: ISO8601DateFormatter.Options](iso8601dateformatter/options/withfulldate.md)
-- [static var withFullTime: ISO8601DateFormatter.Options](iso8601dateformatter/options/withfulltime.md)
-- [static var withInternetDateTime: ISO8601DateFormatter.Options](iso8601dateformatter/options/withinternetdatetime.md)
+- [static var withYear: ISO8601DateFormatter.Options](./options/withyear.md)
+- [static var withMonth: ISO8601DateFormatter.Options](./options/withmonth.md)
+- [static var withWeekOfYear: ISO8601DateFormatter.Options](./options/withweekofyear.md)
+- [static var withDay: ISO8601DateFormatter.Options](./options/withday.md)
+- [static var withTime: ISO8601DateFormatter.Options](./options/withtime.md)
+- [static var withTimeZone: ISO8601DateFormatter.Options](./options/withtimezone.md)
+- [static var withSpaceBetweenDateAndTime: ISO8601DateFormatter.Options](./options/withspacebetweendateandtime.md)
+- [static var withDashSeparatorInDate: ISO8601DateFormatter.Options](./options/withdashseparatorindate.md)
+- [static var withColonSeparatorInTime: ISO8601DateFormatter.Options](./options/withcolonseparatorintime.md)
+- [static var withColonSeparatorInTimeZone: ISO8601DateFormatter.Options](./options/withcolonseparatorintimezone.md)
+- [static var withFullDate: ISO8601DateFormatter.Options](./options/withfulldate.md)
+- [static var withFullTime: ISO8601DateFormatter.Options](./options/withfulltime.md)
+- [static var withInternetDateTime: ISO8601DateFormatter.Options](./options/withinternetdatetime.md)
 ### Initializers
-- [init(rawValue: UInt)](iso8601dateformatter/options/init(rawvalue:).md)
+- [init(rawValue: UInt)](./options/init%28rawvalue%29.md)
 ### Type Properties
-- [static var withFractionalSeconds: ISO8601DateFormatter.Options](iso8601dateformatter/options/withfractionalseconds.md)
+- [static var withFractionalSeconds: ISO8601DateFormatter.Options](./options/withfractionalseconds.md)
   The date representation uses the colon separator (`:`) in the time zone.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 
 ---

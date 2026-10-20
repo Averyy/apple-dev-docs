@@ -1,7 +1,8 @@
 # EKCalendarItem
 
 **Framework**: EventKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract superclass for calendar events and reminders.
 
@@ -19,10 +20,14 @@ An abstract superclass for calendar events and reminders.
 class EKCalendarItem
 ```
 
+```objc
+@interface EKCalendarItem : EKObject
+```
+
 ## Mentions
 
-- [Creating a recurring event](creating-a-recurring-event.md)
-- [Creating events and reminders](creating-events-and-reminders.md)
+- [Creating a recurring event](./creating-a-recurring-event.md)
+- [Creating events and reminders](./creating-events-and-reminders.md)
 
 #### Overview
 
@@ -31,76 +36,77 @@ The `EKCalendarItem` is a an abstract superclass for calendar events and reminde
 ## Topics
 
 ### Accessing Calendar Items
-- [var calendarItemIdentifier: String](ekcalendaritem/calendaritemidentifier.md)
+- [var calendarItemIdentifier: String](./ekcalendaritem/calendaritemidentifier.md)
   The calendar item’s unique identifier.
-- [var calendarItemExternalIdentifier: String!](ekcalendaritem/calendaritemexternalidentifier.md)
+- [var calendarItemExternalIdentifier: String!](./ekcalendaritem/calendaritemexternalidentifier.md)
   The calendar item’s external identifier as provided by the calendar server.
-- [var uuid: String](ekcalendaritem/uuid.md)
+- [var uuid: String](./ekcalendaritem/uuid.md)
   The calendar item’s unique identifier.
 ### Accessing Calendar Item Properties
-- [var calendar: EKCalendar!](ekcalendaritem/calendar.md)
+- [var calendar: EKCalendar!](./ekcalendaritem/calendar.md)
   The calendar for the calendar item.
-- [var title: String!](ekcalendaritem/title.md)
+- [var title: String!](./ekcalendaritem/title.md)
   The title for the calendar item.
-- [var location: String?](ekcalendaritem/location.md)
+- [var location: String?](./ekcalendaritem/location.md)
   The location associated with the calendar item.
-- [var creationDate: Date?](ekcalendaritem/creationdate.md)
+- [var creationDate: Date?](./ekcalendaritem/creationdate.md)
   The date that this calendar item was created.
-- [var lastModifiedDate: Date?](ekcalendaritem/lastmodifieddate.md)
+- [var lastModifiedDate: Date?](./ekcalendaritem/lastmodifieddate.md)
   The date that the calendar item was last modified.
-- [var timeZone: TimeZone?](ekcalendaritem/timezone.md)
+- [var timeZone: TimeZone?](./ekcalendaritem/timezone.md)
   The time zone for the calendar item.
-- [var url: URL?](ekcalendaritem/url.md)
+- [var url: URL?](./ekcalendaritem/url.md)
   The URL for the calendar item.
 ### Attaching Notes
-- [var hasNotes: Bool](ekcalendaritem/hasnotes.md)
+- [var hasNotes: Bool](./ekcalendaritem/hasnotes.md)
   A Boolean value that indicates whether the calendar item has notes.
-- [var notes: String?](ekcalendaritem/notes.md)
+- [var notes: String?](./ekcalendaritem/notes.md)
   The notes associated with the calendar item.
 ### Displaying Attendees
-- [var hasAttendees: Bool](ekcalendaritem/hasattendees.md)
+- [var hasAttendees: Bool](./ekcalendaritem/hasattendees.md)
   A Boolean value that indicates whether the calendar item has attendees.
-- [var attendees: [EKParticipant]?](ekcalendaritem/attendees.md)
-  The attendees associated with the calendar item, as an array of [`EKParticipant`](ekparticipant.md) objects.
+- [var attendees: [EKParticipant]?](./ekcalendaritem/attendees.md)
+  The attendees associated with the calendar item, as an array of [`EKParticipant`](./ekparticipant.md) objects.
 ### Adding and Removing Alarms
-- [var hasAlarms: Bool](ekcalendaritem/hasalarms.md)
+- [var hasAlarms: Bool](./ekcalendaritem/hasalarms.md)
   A Boolean value that indicates whether the calendar item has alarms.
-- [func addAlarm(EKAlarm)](ekcalendaritem/addalarm(_:).md)
+- [func addAlarm(EKAlarm)](./ekcalendaritem/addalarm%28_%29.md)
   Adds an alarm to the receiver.
-- [func removeAlarm(EKAlarm)](ekcalendaritem/removealarm(_:).md)
+- [func removeAlarm(EKAlarm)](./ekcalendaritem/removealarm%28_%29.md)
   Removes an alarm from the calendar item.
-- [var alarms: [EKAlarm]?](ekcalendaritem/alarms.md)
-  The alarms associated with the calendar item, as an array of [`EKAlarm`](ekalarm.md) objects.
+- [var alarms: [EKAlarm]?](./ekcalendaritem/alarms.md)
+  The alarms associated with the calendar item, as an array of [`EKAlarm`](./ekalarm.md) objects.
 ### Setting Recurrence Rules
-- [var hasRecurrenceRules: Bool](ekcalendaritem/hasrecurrencerules.md)
+- [var hasRecurrenceRules: Bool](./ekcalendaritem/hasrecurrencerules.md)
   A Boolean value that indicates whether the calendar item has recurrence rules.
-- [func addRecurrenceRule(EKRecurrenceRule)](ekcalendaritem/addrecurrencerule(_:).md)
+- [func addRecurrenceRule(EKRecurrenceRule)](./ekcalendaritem/addrecurrencerule%28_%29.md)
   Adds a recurrence rule to the recurrence rule array.
-- [func removeRecurrenceRule(EKRecurrenceRule)](ekcalendaritem/removerecurrencerule(_:).md)
+- [func removeRecurrenceRule(EKRecurrenceRule)](./ekcalendaritem/removerecurrencerule%28_%29.md)
   Removes a recurrence rule from the recurrence rule array.
-- [var recurrenceRules: [EKRecurrenceRule]?](ekcalendaritem/recurrencerules.md)
+- [var recurrenceRules: [EKRecurrenceRule]?](./ekcalendaritem/recurrencerules.md)
   The recurrence rules for the calendar item.
 
 ## Relationships
 
 ### Inherits From
-- [EKObject](ekobject.md)
+- [EKObject](./ekobject.md)
 ### Inherited By
-- [EKEvent](ekevent.md)
-- [EKReminder](ekreminder.md)
+- [EKEvent](./ekevent.md)
+- [EKReminder](./ekreminder.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class EKObject](ekobject.md)
+### Common objects
+- [class EKObject](./ekobject.md)
   An abstract superclass for all EventKit classes that have persistent instances.
-- [class EKSource](eksource.md)
+- [class EKSource](./eksource.md)
   An abstract superclass that represents the account a calendar belongs to.
 
 

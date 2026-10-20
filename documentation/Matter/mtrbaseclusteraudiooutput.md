@@ -1,7 +1,8 @@
 # MTRBaseClusterAudioOutput
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,71 +19,75 @@
 class MTRBaseClusterAudioOutput
 ```
 
+```objc
+@interface MTRBaseClusterAudioOutput : MTRGenericBaseCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRBaseDevice, endpoint: UInt16, queue: dispatch_queue_t)](mtrbaseclusteraudiooutput/init(device:endpoint:queue:).md)
-- [init?(device: MTRBaseDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrbaseclusteraudiooutput/init(device:endpointid:queue:).md)
+- [init?(device: MTRBaseDevice, endpoint: UInt16, queue: dispatch_queue_t)](./mtrbaseclusteraudiooutput/init%28device,endpoint,queue%29.md)
+- [init?(device: MTRBaseDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrbaseclusteraudiooutput/init%28device,endpointid,queue%29.md)
 ### Instance Methods
-- [func readAttributeAcceptedCommandList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/readattributeacceptedcommandlist(completion:).md)
-- [func readAttributeAcceptedCommandList(completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/readattributeacceptedcommandlist(completionhandler:).md)
-- [func readAttributeAttributeList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/readattributeattributelist(completion:).md)
-- [func readAttributeAttributeList(completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/readattributeattributelist(completionhandler:).md)
-- [func readAttributeClusterRevision(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/readattributeclusterrevision(completion:).md)
-- [func readAttributeClusterRevision(completionHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/readattributeclusterrevision(completionhandler:).md)
-- [func readAttributeCurrentOutput(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/readattributecurrentoutput(completion:).md)
-- [func readAttributeCurrentOutput(completionHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/readattributecurrentoutput(completionhandler:).md)
-- [func readAttributeFeatureMap(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/readattributefeaturemap(completion:).md)
-- [func readAttributeFeatureMap(completionHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/readattributefeaturemap(completionhandler:).md)
-- [func readAttributeGeneratedCommandList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/readattributegeneratedcommandlist(completion:).md)
-- [func readAttributeGeneratedCommandList(completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/readattributegeneratedcommandlist(completionhandler:).md)
-- [func readAttributeOutputList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/readattributeoutputlist(completion:).md)
-- [func readAttributeOutputList(completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/readattributeoutputlist(completionhandler:).md)
-- [func renameOutput(with: MTRAudioOutputClusterRenameOutputParams, completion: ((any Error)?) -> Void)](mtrbaseclusteraudiooutput/renameoutput(with:completion:).md)
-- [func renameOutput(with: MTRAudioOutputClusterRenameOutputParams, completionHandler: ((any Error)?) -> Void)](mtrbaseclusteraudiooutput/renameoutput(with:completionhandler:).md)
-- [func select(with: MTRAudioOutputClusterSelectOutputParams, completion: ((any Error)?) -> Void)](mtrbaseclusteraudiooutput/select(with:completion:).md)
-- [func select(with: MTRAudioOutputClusterSelectOutputParams, completionHandler: ((any Error)?) -> Void)](mtrbaseclusteraudiooutput/select(with:completionhandler:).md)
-- [func subscribeAttributeAcceptedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/subscribeattributeacceptedcommandlist(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeAcceptedCommandList(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/subscribeattributeacceptedcommandlist(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeAttributeList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/subscribeattributeattributelist(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeAttributeList(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/subscribeattributeattributelist(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeClusterRevision(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/subscribeattributeclusterrevision(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeClusterRevision(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/subscribeattributeclusterrevision(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeCurrentOutput(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/subscribeattributecurrentoutput(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeCurrentOutput(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/subscribeattributecurrentoutput(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeFeatureMap(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/subscribeattributefeaturemap(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeFeatureMap(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/subscribeattributefeaturemap(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeGeneratedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/subscribeattributegeneratedcommandlist(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeGeneratedCommandList(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/subscribeattributegeneratedcommandlist(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeOutputList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/subscribeattributeoutputlist(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeOutputList(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/subscribeattributeoutputlist(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
+- [func readAttributeAcceptedCommandList(completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/readattributeacceptedcommandlist%28completion%29.md)
+- [func readAttributeAcceptedCommandList(completionHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/readattributeacceptedcommandlist%28completionhandler%29.md)
+- [func readAttributeAttributeList(completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/readattributeattributelist%28completion%29.md)
+- [func readAttributeAttributeList(completionHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/readattributeattributelist%28completionhandler%29.md)
+- [func readAttributeClusterRevision(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/readattributeclusterrevision%28completion%29.md)
+- [func readAttributeClusterRevision(completionHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/readattributeclusterrevision%28completionhandler%29.md)
+- [func readAttributeCurrentOutput(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/readattributecurrentoutput%28completion%29.md)
+- [func readAttributeCurrentOutput(completionHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/readattributecurrentoutput%28completionhandler%29.md)
+- [func readAttributeFeatureMap(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/readattributefeaturemap%28completion%29.md)
+- [func readAttributeFeatureMap(completionHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/readattributefeaturemap%28completionhandler%29.md)
+- [func readAttributeGeneratedCommandList(completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/readattributegeneratedcommandlist%28completion%29.md)
+- [func readAttributeGeneratedCommandList(completionHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/readattributegeneratedcommandlist%28completionhandler%29.md)
+- [func readAttributeOutputList(completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/readattributeoutputlist%28completion%29.md)
+- [func readAttributeOutputList(completionHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/readattributeoutputlist%28completionhandler%29.md)
+- [func renameOutput(with: MTRAudioOutputClusterRenameOutputParams, completion: ((any Error)?) -> Void)](./mtrbaseclusteraudiooutput/renameoutput%28with,completion%29.md)
+- [func renameOutput(with: MTRAudioOutputClusterRenameOutputParams, completionHandler: ((any Error)?) -> Void)](./mtrbaseclusteraudiooutput/renameoutput%28with,completionhandler%29.md)
+- [func select(with: MTRAudioOutputClusterSelectOutputParams, completion: ((any Error)?) -> Void)](./mtrbaseclusteraudiooutput/select%28with,completion%29.md)
+- [func select(with: MTRAudioOutputClusterSelectOutputParams, completionHandler: ((any Error)?) -> Void)](./mtrbaseclusteraudiooutput/select%28with,completionhandler%29.md)
+- [func subscribeAttributeAcceptedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/subscribeattributeacceptedcommandlist%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeAcceptedCommandList(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/subscribeattributeacceptedcommandlist%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeAttributeList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/subscribeattributeattributelist%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeAttributeList(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/subscribeattributeattributelist%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeClusterRevision(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/subscribeattributeclusterrevision%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeClusterRevision(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/subscribeattributeclusterrevision%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeCurrentOutput(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/subscribeattributecurrentoutput%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeCurrentOutput(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/subscribeattributecurrentoutput%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeFeatureMap(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/subscribeattributefeaturemap%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeFeatureMap(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/subscribeattributefeaturemap%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeGeneratedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/subscribeattributegeneratedcommandlist%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeGeneratedCommandList(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/subscribeattributegeneratedcommandlist%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeOutputList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/subscribeattributeoutputlist%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeOutputList(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/subscribeattributeoutputlist%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
 ### Type Methods
-- [class func readAttributeAcceptedCommandList(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/readattributeacceptedcommandlist(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeAcceptedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/readattributeacceptedcommandlist(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeAttributeList(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/readattributeattributelist(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeAttributeList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/readattributeattributelist(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeClusterRevision(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/readattributeclusterrevision(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeClusterRevision(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/readattributeclusterrevision(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeCurrentOutput(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/readattributecurrentoutput(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeCurrentOutput(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/readattributecurrentoutput(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeFeatureMap(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/readattributefeaturemap(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeFeatureMap(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/readattributefeaturemap(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeGeneratedCommandList(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/readattributegeneratedcommandlist(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeGeneratedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/readattributegeneratedcommandlist(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeOutputList(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/readattributeoutputlist(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeOutputList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteraudiooutput/readattributeoutputlist(withclusterstatecache:endpoint:queue:completion:).md)
+- [class func readAttributeAcceptedCommandList(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/readattributeacceptedcommandlist%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeAcceptedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/readattributeacceptedcommandlist%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeAttributeList(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/readattributeattributelist%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeAttributeList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/readattributeattributelist%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeClusterRevision(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/readattributeclusterrevision%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeClusterRevision(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/readattributeclusterrevision%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeCurrentOutput(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/readattributecurrentoutput%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeCurrentOutput(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/readattributecurrentoutput%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeFeatureMap(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/readattributefeaturemap%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeFeatureMap(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/readattributefeaturemap%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeGeneratedCommandList(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/readattributegeneratedcommandlist%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeGeneratedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/readattributegeneratedcommandlist%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeOutputList(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/readattributeoutputlist%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeOutputList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteraudiooutput/readattributeoutputlist%28withclusterstatecache,endpoint,queue,completion%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericBaseCluster](mtrgenericbasecluster.md)
+- [MTRGenericBaseCluster](./mtrgenericbasecluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

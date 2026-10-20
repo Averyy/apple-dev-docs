@@ -1,7 +1,8 @@
 # MTRMediaInputFeature
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.1+
@@ -18,24 +19,28 @@
 struct MTRMediaInputFeature
 ```
 
+```c
+enum MTRMediaInputFeature : uint32_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](mtrmediainputfeature/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./mtrmediainputfeature/init%28rawvalue%29.md)
 ### Type Properties
-- [static var nameUpdates: MTRMediaInputFeature](mtrmediainputfeature/nameupdates.md)
+- [static var nameUpdates: MTRMediaInputFeature](./mtrmediainputfeature/nameupdates.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

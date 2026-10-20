@@ -1,16 +1,17 @@
 # rawValue
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,14 @@ var rawValue: UInt32
 
 ## See Also
 
-- [init(UInt32)](bnnsoptimizerregularizationfunction/init(_:).md)
-- [init(rawValue: UInt32)](bnnsoptimizerregularizationfunction/init(rawvalue:).md)
-- [var BNNSOptimizerRegularizationL1: BNNSOptimizerRegularizationFunction](bnnsoptimizerregularizationl1.md)
+### Regularization Functions
+- [init(UInt32)](./init%28_%29.md)
+- [init(rawValue: UInt32)](./init%28rawvalue%29.md)
+- [var BNNSOptimizerRegularizationL1: BNNSOptimizerRegularizationFunction](../bnnsoptimizerregularizationl1.md)
   A regularization function that applies L1 regularization.
-- [var BNNSOptimizerRegularizationL2: BNNSOptimizerRegularizationFunction](bnnsoptimizerregularizationl2.md)
+- [var BNNSOptimizerRegularizationL2: BNNSOptimizerRegularizationFunction](../bnnsoptimizerregularizationl2.md)
   A regularization function that applies L2 regularization.
-- [var BNNSOptimizerRegularizationNone: BNNSOptimizerRegularizationFunction](bnnsoptimizerregularizationnone.md)
+- [var BNNSOptimizerRegularizationNone: BNNSOptimizerRegularizationFunction](../bnnsoptimizerregularizationnone.md)
   A regularization function that adoesn’t apply any regularization.
 
 

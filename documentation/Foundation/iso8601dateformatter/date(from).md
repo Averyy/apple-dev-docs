@@ -1,7 +1,8 @@
 # date(from:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates and returns a date object from the specified ISO 8601 formatted string representation.
 
@@ -20,6 +21,10 @@ Creates and returns a date object from the specified ISO 8601 formatted string r
 func date(from string: String) -> Date?
 ```
 
+```objc
+- (NSDate *) dateFromString:(NSString *) string;
+```
+
 #### Return Value
 
 A date object, or `nil` if no valid date was found.
@@ -30,9 +35,10 @@ A date object, or `nil` if no valid date was found.
 
 ## See Also
 
-- [func string(from: Date) -> String](iso8601dateformatter/string(from:).md)
+### Converting ISO 8601 Dates
+- [func string(from: Date) -> String](./string%28from%29.md)
   Creates and returns an ISO 8601 formatted string representation of the specified date.
-- [class func string(from: Date, timeZone: TimeZone, formatOptions: ISO8601DateFormatter.Options) -> String](iso8601dateformatter/string(from:timezone:formatoptions:).md)
+- [class func string(from: Date, timeZone: TimeZone, formatOptions: ISO8601DateFormatter.Options) -> String](./string%28from,timezone,formatoptions%29.md)
   Creates a representation of the specified date with a given time zone and format options.
 
 

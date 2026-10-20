@@ -1,17 +1,22 @@
 # view
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the view associated with the receiver to `view`.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var view: NSView? { get set }
+```
+
+```objc
+@property (strong, nullable) NSView * view;
 ```
 
 #### Discussion

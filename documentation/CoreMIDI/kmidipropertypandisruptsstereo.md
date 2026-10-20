@@ -1,7 +1,8 @@
 # kMIDIPropertyPanDisruptsStereo
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value that indicates whether the MIDI pan messages sent to the device or entity cause undesirable effects when playing stereo sounds.
 
@@ -16,6 +17,10 @@ A Boolean value that indicates whether the MIDI pan messages sent to the device 
 
 ```swift
 let kMIDIPropertyPanDisruptsStereo: CFString
+```
+
+```c
+extern CFStringRef const kMIDIPropertyPanDisruptsStereo;
 ```
 
 

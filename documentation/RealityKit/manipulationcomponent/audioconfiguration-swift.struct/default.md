@@ -1,7 +1,8 @@
 # default
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default configuration. The system will apply default sounds as the user interacts with the object.
 

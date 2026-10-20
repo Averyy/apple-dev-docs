@@ -1,7 +1,8 @@
 # allCredentials
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The credentials for all available protection spaces.
 
@@ -20,15 +21,20 @@ The credentials for all available protection spaces.
 var allCredentials: [URLProtectionSpace : [String : URLCredential]] { get }
 ```
 
+```objc
+@property (copy, readonly) NSDictionary<NSURLProtectionSpace *,NSDictionary<NSString *,NSURLCredential *> *> * allCredentials;
+```
+
 #### Discussion
 
-The dictionary has keys corresponding to the [`URLProtectionSpace`](urlprotectionspace.md) instances. The values are dictionaries where the keys are user name strings, and each value is the corresponding [`URLCredential`](urlcredential.md) instances.
+The dictionary has keys corresponding to the [`URLProtectionSpace`](../urlprotectionspace.md) instances. The values are dictionaries where the keys are user name strings, and each value is the corresponding [`URLCredential`](../urlcredential.md) instances.
 
 ## See Also
 
-- [func credentials(for: URLProtectionSpace) -> [String : URLCredential]?](urlcredentialstorage/credentials(for:).md)
+### Retrieving credentials
+- [func credentials(for: URLProtectionSpace) -> [String : URLCredential]?](./credentials%28for%29.md)
   Returns a dictionary containing the credentials for the specified protection space.
-- [func getCredentials(for: URLProtectionSpace, task: URLSessionTask, completionHandler: ([String : URLCredential]?) -> Void)](urlcredentialstorage/getcredentials(for:task:completionhandler:).md)
+- [func getCredentials(for: URLProtectionSpace, task: URLSessionTask, completionHandler: ([String : URLCredential]?) -> Void)](./getcredentials%28for,task,completionhandler%29.md)
   Gets a dictionary containing the credentials for the specified protection space, on behalf of the given task, and passes the dictionary to the provided completion handler.
 
 

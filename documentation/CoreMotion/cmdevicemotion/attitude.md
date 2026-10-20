@@ -1,7 +1,8 @@
 # attitude
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attitude of the device.
 
@@ -19,14 +20,20 @@ The attitude of the device.
 var attitude: CMAttitude { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMAttitude * attitude;
+```
+
 #### Discussion
 
-A [`CMAttitude`](cmattitude.md) object represents a measurement of attitude—that is, the orientation of a body relative to a given frame of reference.
+A [`CMAttitude`](../cmattitude.md) object represents a measurement of attitude—that is, the orientation of a body relative to a given frame of reference.
 
 ## See Also
 
-- [Event Handling Guide for UIKit Apps](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/EventHandling/Conceptual/EventHandlingiPhoneOS/index.html?language=swift#//apple_ref/doc/uid/TP40009541)
-- [var rotationRate: CMRotationRate](cmdevicemotion/rotationrate.md)
+### Related Documentation
+- [Event Handling Guide for UIKit Apps](https://developer.apple.com/library/archive/documentation/EventHandling/Conceptual/EventHandlingiPhoneOS/index.html?language=swift#//apple_ref/doc/uid/TP40009541)
+### Getting Attitude and Rotation Rate
+- [var rotationRate: CMRotationRate](./rotationrate.md)
   The rotation rate of the device.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value indicating whether this instance is finite.

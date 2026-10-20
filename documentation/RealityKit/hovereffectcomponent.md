@@ -1,7 +1,8 @@
 # HoverEffectComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that applies a visual effect to a hierarchy of entities when a person looks at or selects an entity.
 
@@ -24,7 +25,7 @@ Add a HoverEffectComponent to an entity to convey the entity can receive gesture
 
 > **Note**: On visionOS, you hover over an entity by looking at or directly touching it. On other platforms, you hover over an entity by moving your mouse cursor over it.
 
-> ❗ **Important**: Entities also need to have an [`InputTargetComponent`](inputtargetcomponent.md) and [`CollisionComponent`](collisioncomponent.md) to receive hover effects.
+> ❗ **Important**: Entities also need to have an [`InputTargetComponent`](./inputtargetcomponent.md) and [`CollisionComponent`](./collisioncomponent.md) to receive hover effects.
 
 ```swift
 let boxSize = SIMD3<Float>(0.5, 0.1, 0.05)
@@ -45,7 +46,9 @@ entityA.components.set([modelComponent, collisionComponent, inputTargetComponent
 
 The example code above produces the following scene.
 
-##### Hierarchical Behavior
+[Video: A video of a living room scene with 1 3D black rectangle in the center of it. The rectangle starts glowing with a feathered effect that moves around slowly.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/hovereffectcomponent-scene-default-effect-1.mp4)
+
+##### Hierarchical behavior
 
 The `HoverEffectComponent` applies its effect to an entity’s entire hierarchy, which means that all the entity’s descendent entities inherit the effect when a person looks at (or selects) an entity.
 
@@ -86,9 +89,11 @@ entityA.components.set(hoverEffectComponent)
 
 In this example only the highest entity in the hierarchy has a `HoverEffectComponent`. Activating this hover effect causes all of its children to display the same effect.
 
-##### Grouping Multiple Hover Effects
+[Video: A video of a living room scene with three black rectangles arranged in a column. All three of the rectangles start glowing with a feathered effect that moves around slowly.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/hovereffectcomponent-scene-default-effect-3.mp4)
 
-The optional [`groupID`](hovereffectcomponent/hovereffect-swift.struct/groupid.md) connects entities so that they activate their hover effects together, which is independent from the entities’ hierarchy. When someone hovers over any entity in the group, all entities with the same [`HoverEffectComponent.GroupID`](hovereffectcomponent/groupid.md) instance start their hover effects together.
+##### Grouping multiple hover effects
+
+The optional [`groupID`](./hovereffectcomponent/hovereffect-swift.struct/groupid.md) connects entities so that they activate their hover effects together, which is independent from the entities’ hierarchy. When someone hovers over any entity in the group, all entities with the same [`HoverEffectComponent.GroupID`](./hovereffectcomponent/groupid.md) instance start their hover effects together.
 
 ```swift
 let boxSize = SIMD3<Float>(0.5, 0.1, 0.05)
@@ -144,13 +149,15 @@ hoverEntityC.components.set(hoverC)
 
 ```
 
-In this example, the top and middle entities, `entityA` and `entityB`, have a [`HoverEffectComponent`](hovereffectcomponent.md) with the same group identifier. However, the bottom entity, `entityC`, has a different group ID. The top amd middle entity both glow when a person activates either one. The bottom entity glows separately and only when someone activates it directly.
+In this example, the top and middle entities, `entityA` and `entityB`, have a [`HoverEffectComponent`](./hovereffectcomponent.md) with the same group identifier. However, the bottom entity, `entityC`, has a different group ID. The top amd middle entity both glow when a person activates either one. The bottom entity glows separately and only when someone activates it directly.
+
+[Video: A video of a living room scene with three black rectangles arranged in a column. The top two rectangles start glowing as the gaze pointer hovers over the top rectangle and as it continues over the middle rectange. The bottom rectangle begins glowing only when the gaze pointer hovers over it.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/hovereffectcomponent-groupid.mp4)
 
 ##### Styles
 
 You can customize the visual effect of the `HoverEffectComponent` through the use of styles.
 
-The [`HoverEffectComponent.SpotlightHoverEffectStyle`](hovereffectcomponent/spotlighthovereffectstyle.md) represents a feathered effect that follows the hover location on the entity. This is the default effect RealityKit uses if you create a `HoverEffectComponent` with the default initializer, [`init()`](hovereffectcomponent/init().md). You can customize the color and strength of this effect by passing values into the [`HoverEffectComponent.SpotlightHoverEffectStyle`](hovereffectcomponent/spotlighthovereffectstyle.md) constructor.
+The [`HoverEffectComponent.SpotlightHoverEffectStyle`](./hovereffectcomponent/spotlighthovereffectstyle.md) represents a feathered effect that follows the hover location on the entity. This is the default effect RealityKit uses if you create a `HoverEffectComponent` with the default initializer, [`init()`](./hovereffectcomponent/init%28%29.md). You can customize the color and strength of this effect by passing values into the [`HoverEffectComponent.SpotlightHoverEffectStyle`](./hovereffectcomponent/spotlighthovereffectstyle.md) constructor.
 
 ```swift
 let hoverComponent = HoverEffectComponent(.spotlight(
@@ -160,7 +167,9 @@ let hoverComponent = HoverEffectComponent(.spotlight(
 ))
 ```
 
-The [`HoverEffectComponent.HighlightHoverEffectStyle`](hovereffectcomponent/highlighthovereffectstyle.md) applies a uniform glow to the entity in addition to the feathered effect from the [`HoverEffectComponent.SpotlightHoverEffectStyle`](hovereffectcomponent/spotlighthovereffectstyle.md). You can customize the color and strength of this effect by passing values into the [`HoverEffectComponent.HighlightHoverEffectStyle`](hovereffectcomponent/highlighthovereffectstyle.md) constructor.
+[Video: A screen recording of a living room with a black rectangle in the center of it. The rectangle begins to glow with a faint green feathered effect that moves around slowly.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/hovereffectcomponent-spotlight.mp4)
+
+The [`HoverEffectComponent.HighlightHoverEffectStyle`](./hovereffectcomponent/highlighthovereffectstyle.md) applies a uniform glow to the entity in addition to the feathered effect from the [`HoverEffectComponent.SpotlightHoverEffectStyle`](./hovereffectcomponent/spotlighthovereffectstyle.md). You can customize the color and strength of this effect by passing values into the [`HoverEffectComponent.HighlightHoverEffectStyle`](./hovereffectcomponent/highlighthovereffectstyle.md) constructor.
 
 ```swift
 let hoverComponent = HoverEffectComponent(.highlight(
@@ -170,19 +179,33 @@ let hoverComponent = HoverEffectComponent(.highlight(
 ))
 ```
 
-##### Opacity Functions
+[Video: A screen recording of a living room with a black rectangle in the center of it. The rectangle begins to glow with a bright green feathered effect.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/hovereffectcomponent-highlight.mp4)
+
+##### Opacity functions
 
 Customize how a `HoverEffectComponent` presents on a partially or fully transparent material with the following opacity functions:
 
-- **[`HoverEffectComponent.OpacityFunction.full`](hovereffectcomponent/opacityfunction/full.md)**: An opacity function that causes the effect to draw at full opacity regardless of opacity of the base material. This is the default opacity function.
-- **[`HoverEffectComponent.OpacityFunction.mask`](hovereffectcomponent/opacityfunction/mask.md)**: An opacity function that draws the hover effect at full opacity when the entity’s base material opacity is greater than `0.05`, and fades out the hover effect with the entity’s base material when its opacity is equal to or less than `0.05`.
-- **[`HoverEffectComponent.OpacityFunction.blend`](hovereffectcomponent/opacityfunction/blend.md)**: An opacity function that draws the hover effect with an opacity that’s equal to the product of the entity’s base material and the shader’s output.
+- **[`HoverEffectComponent.OpacityFunction.full`](./hovereffectcomponent/opacityfunction/full.md)**: An opacity function that causes the effect to draw at full opacity regardless of opacity of the base material. This is the default opacity function.
+- **[`HoverEffectComponent.OpacityFunction.mask`](./hovereffectcomponent/opacityfunction/mask.md)**: An opacity function that draws the hover effect at full opacity when the entity’s base material opacity is greater than `0.05`, and fades out the hover effect with the entity’s base material when its opacity is equal to or less than `0.05`.
+- **[`HoverEffectComponent.OpacityFunction.blend`](./hovereffectcomponent/opacityfunction/blend.md)**: An opacity function that draws the hover effect with an opacity that’s equal to the product of the entity’s base material and the shader’s output.
 
-> **Note**: Opacity functions can’t be applied to `HoverEffectComponents` that use [`HoverEffectComponent.ShaderHoverEffectInputs`](hovereffectcomponent/shaderhovereffectinputs.md).
+`.full`
 
-##### Shader Inputs
+[Video: A screen recording of a living room with a partially transparent green rectangle in the center of it. The green rectangle fades in to full opacity and becomes darker before fading out again and becoming partially transparent.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/hovereffectcomponent-opacityfunction-full.mp4)
 
-Pass [`HoverEffectComponent.ShaderHoverEffectInputs`](hovereffectcomponent/shaderhovereffectinputs.md) to the `HoverEffectComponent` constructor with [`shader(_:)`](hovereffectcomponent/hovereffect-swift.struct/shader(_:).md) to activate the `Hover State` Shader Graph node in a [`ShaderGraphMaterial`](shadergraphmaterial.md). Apply the [`ShaderGraphMaterial`](shadergraphmaterial.md) to the entity’s [`ModelComponent`](modelcomponent.md) when using this effect.
+`.mask`
+
+[Video: A screen recording of an empty living room. After a short delay a partially transparent green rectangle appears in the middle of the living room. The rectangle slowly fades in to become fully opaque before it fades out to be partially transparent and then disappears entirely.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/hovereffectcomponent-opacityfunction-mask.mp4)
+
+`.blend`
+
+[Video: A screen recording of an empty living room. After a short delay a green rectangle slowly fades in and then fades back out.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/hovereffectcomponent-opacityfunction-blend.mp4)
+
+> **Note**: Opacity functions can’t be applied to `HoverEffectComponents` that use [`HoverEffectComponent.ShaderHoverEffectInputs`](./hovereffectcomponent/shaderhovereffectinputs.md).
+
+##### Shader inputs
+
+Pass [`HoverEffectComponent.ShaderHoverEffectInputs`](./hovereffectcomponent/shaderhovereffectinputs.md) to the `HoverEffectComponent` constructor with [`shader(_:)`](./hovereffectcomponent/hovereffect-swift.struct/shader%28_%29.md) to activate the `Hover State` Shader Graph node in a [`ShaderGraphMaterial`](./shadergraphmaterial.md). Apply the [`ShaderGraphMaterial`](./shadergraphmaterial.md) to the entity’s [`ModelComponent`](./modelcomponent.md) when using this effect.
 
 ```swift
 let boxSize = SIMD3<Float>(0.5, 0.1, 0.05)
@@ -209,49 +232,52 @@ entity.components.set(hoverComponent)
 
 This shader graph represents a red and blue effect that interpolates between each color using a sine wave.
 
-![A screenshot of an app window with a shader graph visible. The shader graph represents a red and blue effect that interpolates between each color using a sine wave. On the bottom right is a purple cube representing the effect halfway between red and blue.](/images/com.apple.RealityKit/hovereffectcomponent-shader-graph.jpg)
+![A screenshot of an app window with a shader graph visible. The shader graph represents a red and blue effect that interpolates between each color using a sine wave. On the bottom right is a purple cube representing the effect halfway between red and blue.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/hovereffectcomponent-shader-graph.jpg)
 
 Hovering over the entity displays the following effect.
+
+[Video: A screen recording of a living room with a single black rectangle in the middle of the room. The rectangle fades to a red color and back to black several times, and then stops at black.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/hovereffectcomponent-shader.mp4)
 
 ## Topics
 
 ### Structures
-- [HoverEffectComponent.GroupID](hovereffectcomponent/groupid.md)
+- [HoverEffectComponent.GroupID](./hovereffectcomponent/groupid.md)
   A struct for grouping hover effects together.
-- [HoverEffectComponent.HighlightHoverEffectStyle](hovereffectcomponent/highlighthovereffectstyle.md)
+- [HoverEffectComponent.HighlightHoverEffectStyle](./hovereffectcomponent/highlighthovereffectstyle.md)
   A type that configures the visual aspects of a highlight hover effect for an entity
-- [HoverEffectComponent.HoverEffect](hovereffectcomponent/hovereffect-swift.struct.md)
+- [HoverEffectComponent.HoverEffect](./hovereffectcomponent/hovereffect-swift.struct.md)
   An effect that applies when a person looks at or directly touches the entity.
-- [HoverEffectComponent.ShaderHoverEffectInputs](hovereffectcomponent/shaderhovereffectinputs.md)
+- [HoverEffectComponent.ShaderHoverEffectInputs](./hovereffectcomponent/shaderhovereffectinputs.md)
   A type that configures the visual aspects of a hover effect that applies a custom material
-- [HoverEffectComponent.SpotlightHoverEffectStyle](hovereffectcomponent/spotlighthovereffectstyle.md)
+- [HoverEffectComponent.SpotlightHoverEffectStyle](./hovereffectcomponent/spotlighthovereffectstyle.md)
   A type that configures the visual aspects of a spotlight hover effect for an entity.
 ### Initializers
-- [init()](hovereffectcomponent/init.md)
+- [init()](./hovereffectcomponent/init%28%29.md)
   Creates a hover effect component with a default spotlight effect.
-- [init(HoverEffectComponent.HoverEffect)](hovereffectcomponent/init(_:).md)
+- [init(HoverEffectComponent.HoverEffect)](./hovereffectcomponent/init%28_%29.md)
   Creates a hover effect component with a particular visualization effect.
 ### Instance Properties
-- [var hoverEffect: HoverEffectComponent.HoverEffect](hovereffectcomponent/hovereffect-swift.property.md)
+- [var hoverEffect: HoverEffectComponent.HoverEffect](./hovereffectcomponent/hovereffect-swift.property.md)
   The current hover effect of the hover effect component.
 ### Enumerations
-- [HoverEffectComponent.OpacityFunction](hovereffectcomponent/opacityfunction.md)
+- [HoverEffectComponent.OpacityFunction](./hovereffectcomponent/opacityfunction.md)
   The blending technique options a hover effect applies to its entity’s base material.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
+- [Component](./component.md)
 
 ## See Also
 
-- [struct BillboardComponent](billboardcomponent.md)
+### Visual adjustments
+- [struct BillboardComponent](./billboardcomponent.md)
   A component that orients an entity instance so that it continuously points toward the active camera.
-- [struct EnvironmentBlendingComponent](environmentblendingcomponent.md)
+- [struct EnvironmentBlendingComponent](./environmentblendingcomponent.md)
   A component that controls how an entity blends visually with objects in the local environment.
-- [struct LensDistortionData](lensdistortiondata.md)
+- [struct LensDistortionData](./lensdistortiondata.md)
   A description of estimated lens distortion that can be used to rectify images.
-- [struct ImagePresentationComponent](imagepresentationcomponent.md)
+- [struct ImagePresentationComponent](./imagepresentationcomponent.md)
   A component that supports general image presentation.
 
 

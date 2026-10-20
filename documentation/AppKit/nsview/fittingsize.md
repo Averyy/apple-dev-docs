@@ -1,7 +1,8 @@
 # fittingSize
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum size of the view that satisfies the constraints it holds.
 
@@ -14,25 +15,30 @@ The minimum size of the view that satisfies the constraints it holds.
 var fittingSize: NSSize { get }
 ```
 
+```objc
+@property (readonly) NSSize fittingSize;
+```
+
 #### Discussion
 
 AppKit sets this property to the best size available for the view, considering all of the constraints it and its subviews hold and satisfying a preference to make the view as small as possible. The size values in this property are never negative.
 
 ## See Also
 
-- [var intrinsicContentSize: NSSize](nsview/intrinsiccontentsize.md)
+### Measuring in Auto Layout
+- [var intrinsicContentSize: NSSize](./intrinsiccontentsize.md)
   The natural size for the receiving view, considering only properties of the view itself.
-- [func invalidateIntrinsicContentSize()](nsview/invalidateintrinsiccontentsize.md)
+- [func invalidateIntrinsicContentSize()](./invalidateintrinsiccontentsize%28%29.md)
   Invalidates the view’s intrinsic content size.
-- [func contentCompressionResistancePriority(for: NSLayoutConstraint.Orientation) -> NSLayoutConstraint.Priority](nsview/contentcompressionresistancepriority(for:).md)
+- [func contentCompressionResistancePriority(for: NSLayoutConstraint.Orientation) -> NSLayoutConstraint.Priority](./contentcompressionresistancepriority%28for%29.md)
   Returns the priority with which a view resists being made smaller than its intrinsic size.
-- [func setContentCompressionResistancePriority(NSLayoutConstraint.Priority, for: NSLayoutConstraint.Orientation)](nsview/setcontentcompressionresistancepriority(_:for:).md)
+- [func setContentCompressionResistancePriority(NSLayoutConstraint.Priority, for: NSLayoutConstraint.Orientation)](./setcontentcompressionresistancepriority%28_,for%29.md)
   Sets the priority with which a view resists being made smaller than its intrinsic size.
-- [func contentHuggingPriority(for: NSLayoutConstraint.Orientation) -> NSLayoutConstraint.Priority](nsview/contenthuggingpriority(for:).md)
+- [func contentHuggingPriority(for: NSLayoutConstraint.Orientation) -> NSLayoutConstraint.Priority](./contenthuggingpriority%28for%29.md)
   Returns the priority with which a view resists being made larger than its intrinsic size.
-- [func setContentHuggingPriority(NSLayoutConstraint.Priority, for: NSLayoutConstraint.Orientation)](nsview/setcontenthuggingpriority(_:for:).md)
+- [func setContentHuggingPriority(NSLayoutConstraint.Priority, for: NSLayoutConstraint.Orientation)](./setcontenthuggingpriority%28_,for%29.md)
   Sets the priority with which a view resists being made larger than its intrinsic size.
-- [class let noIntrinsicMetric: CGFloat](nsview/nointrinsicmetric.md)
+- [class let noIntrinsicMetric: CGFloat](./nointrinsicmetric.md)
   A value that tells the layout system to ignore the intrinsic size value for a given dimension.
 
 

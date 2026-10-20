@@ -1,7 +1,8 @@
 # FoveatedStreamingSession.InputCapability.microphone
 
 **Framework**: Foveated Streaming  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Microphone input.
 

@@ -1,7 +1,8 @@
 # AssetPackManifest.DecodingConfiguration
 
 **Framework**: Background Assets  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that includes information for decoding an asset-pack manifest.
 
@@ -22,7 +23,7 @@ struct DecodingConfiguration
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # kSKIndexUnknown
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies an unknown index type.
 

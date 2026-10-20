@@ -1,7 +1,8 @@
 # threadgroupMemoryLength
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The per-tile size, in bytes, of the persistent threadgroup memory allocation, used when rendering.
 
@@ -23,11 +24,12 @@ Corresponds to `MTLRenderCommandEncoder.threadgroupMemoryLength`.
 
 ## See Also
 
-- [var renderTargetWidth: Int](lowlevelrenderer/output-swift.struct/rendertargetwidth.md)
+### Configuring render targets
+- [var renderTargetWidth: Int](./rendertargetwidth.md)
   The width of the render target, in pixels.
-- [var renderTargetHeight: Int](lowlevelrenderer/output-swift.struct/rendertargetheight.md)
+- [var renderTargetHeight: Int](./rendertargetheight.md)
   The height of the render target, in pixels.
-- [var renderTargetArrayLength: Int](lowlevelrenderer/output-swift.struct/rendertargetarraylength.md)
+- [var renderTargetArrayLength: Int](./rendertargetarraylength.md)
   The number of active array slices in the render target textures.
 
 

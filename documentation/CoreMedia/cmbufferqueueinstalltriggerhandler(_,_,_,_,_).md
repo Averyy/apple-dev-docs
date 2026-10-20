@@ -1,7 +1,8 @@
 # CMBufferQueueInstallTriggerHandler(_:_:_:_:_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Installs a trigger with a handler on a buffer queue.
 
@@ -20,25 +21,30 @@ Installs a trigger with a handler on a buffer queue.
 func CMBufferQueueInstallTriggerHandler(_ queue: CMBufferQueue, _ condition: CMBufferQueueTriggerCondition, _ time: CMTime, _ triggerTokenOut: UnsafeMutablePointer<CMBufferQueueTriggerToken?>?, _ handler: CMBufferQueueTriggerHandler?) -> OSStatus
 ```
 
+```c
+extern OSStatus CMBufferQueueInstallTriggerHandler(CMBufferQueueRef queue, CMBufferQueueTriggerCondition condition, CMTime time, CMBufferQueueTriggerToken*triggerTokenOut, CMBufferQueueTriggerHandler handler);
+```
+
 ## See Also
 
-- [func CMBufferQueueInstallTriggerHandlerWithIntegerThreshold(CMBufferQueue, CMBufferQueueTriggerCondition, CMItemCount, UnsafeMutablePointer<CMBufferQueueTriggerToken?>?, CMBufferQueueTriggerHandler?) -> OSStatus](cmbufferqueueinstalltriggerhandlerwithintegerthreshold(_:_:_:_:_:).md)
+### Managing Triggers
+- [func CMBufferQueueInstallTriggerHandlerWithIntegerThreshold(CMBufferQueue, CMBufferQueueTriggerCondition, CMItemCount, UnsafeMutablePointer<CMBufferQueueTriggerToken?>?, CMBufferQueueTriggerHandler?) -> OSStatus](./cmbufferqueueinstalltriggerhandlerwithintegerthreshold%28_,_,_,_,_%29.md)
   Installs a trigger with a handler and threshold on a buffer queue.
-- [typealias CMBufferQueueTriggerHandler](cmbufferqueuetriggerhandler.md)
+- [typealias CMBufferQueueTriggerHandler](./cmbufferqueuetriggerhandler.md)
   A type alias for a trigger handler.
-- [typealias CMBufferQueueTriggerToken](cmbufferqueuetriggertoken.md)
+- [typealias CMBufferQueueTriggerToken](./cmbufferqueuetriggertoken.md)
   A type alias for a trigger token.
-- [Buffer Trigger Conditions](buffer-trigger-conditions.md)
+- [Buffer Trigger Conditions](./buffer-trigger-conditions.md)
   The trigger conditions the framework supports.
-- [func CMBufferQueueTestTrigger(CMBufferQueue, triggerToken: CMBufferQueueTriggerToken) -> Bool](cmbufferqueuetesttrigger(_:triggertoken:).md)
+- [func CMBufferQueueTestTrigger(CMBufferQueue, triggerToken: CMBufferQueueTriggerToken) -> Bool](./cmbufferqueuetesttrigger%28_,triggertoken%29.md)
   Tests whether the trigger condition is true for the specified buffer queue.
-- [func CMBufferQueueInstallTrigger(CMBufferQueue, callback: CMBufferQueueTriggerCallback?, refcon: UnsafeMutableRawPointer?, condition: CMBufferQueueTriggerCondition, time: CMTime, triggerTokenOut: UnsafeMutablePointer<CMBufferQueueTriggerToken?>?) -> OSStatus](cmbufferqueueinstalltrigger(_:callback:refcon:condition:time:triggertokenout:).md)
+- [func CMBufferQueueInstallTrigger(CMBufferQueue, callback: CMBufferQueueTriggerCallback?, refcon: UnsafeMutableRawPointer?, condition: CMBufferQueueTriggerCondition, time: CMTime, triggerTokenOut: UnsafeMutablePointer<CMBufferQueueTriggerToken?>?) -> OSStatus](./cmbufferqueueinstalltrigger%28_,callback,refcon,condition,time,triggertokenout%29.md)
   Installs a trigger with a callback on a buffer queue.
-- [func CMBufferQueueInstallTriggerWithIntegerThreshold(CMBufferQueue, callback: CMBufferQueueTriggerCallback?, refcon: UnsafeMutableRawPointer?, condition: CMBufferQueueTriggerCondition, threshold: CMItemCount, triggerTokenOut: UnsafeMutablePointer<CMBufferQueueTriggerToken?>?) -> OSStatus](cmbufferqueueinstalltriggerwithintegerthreshold(_:callback:refcon:condition:threshold:triggertokenout:).md)
+- [func CMBufferQueueInstallTriggerWithIntegerThreshold(CMBufferQueue, callback: CMBufferQueueTriggerCallback?, refcon: UnsafeMutableRawPointer?, condition: CMBufferQueueTriggerCondition, threshold: CMItemCount, triggerTokenOut: UnsafeMutablePointer<CMBufferQueueTriggerToken?>?) -> OSStatus](./cmbufferqueueinstalltriggerwithintegerthreshold%28_,callback,refcon,condition,threshold,triggertokenout%29.md)
   Installs a trigger with a callback and threshold on a buffer queue.
-- [typealias CMBufferQueueTriggerCallback](cmbufferqueuetriggercallback.md)
+- [typealias CMBufferQueueTriggerCallback](./cmbufferqueuetriggercallback.md)
   A callback for the system to invoke when a trigger condition becomes true.
-- [typealias CMBufferQueueTriggerCondition](cmbufferqueuetriggercondition.md)
+- [typealias CMBufferQueueTriggerCondition](./cmbufferqueuetriggercondition.md)
   A type to specify conditions to associate with a buffer queue trigger.
 
 

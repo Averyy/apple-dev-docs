@@ -1,9 +1,10 @@
 # setFlag(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Sets a specific flag in the [`NavigationMeshResource.FlagGroup`](navigationmeshresource/flaggroup.md).
+Sets a specific flag in the [`NavigationMeshResource.FlagGroup`](../flaggroup.md).
 
 **Availability**:
 - iOS 27.0+
@@ -21,8 +22,9 @@ mutating func setFlag(_ flag: NavigationMeshResource.Flag)
 
 ## See Also
 
-- [func unsetFlag(NavigationMeshResource.Flag)](navigationmeshresource/flaggroup/unsetflag(_:).md)
-  Unsets a specific flag in the [`NavigationMeshResource.FlagGroup`](navigationmeshresource/flaggroup.md).
+### Modifying flags
+- [func unsetFlag(NavigationMeshResource.Flag)](./unsetflag%28_%29.md)
+  Unsets a specific flag in the [`NavigationMeshResource.FlagGroup`](../flaggroup.md).
 
 
 ---

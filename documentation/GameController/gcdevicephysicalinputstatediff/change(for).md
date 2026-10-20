@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns whether the input value of an element changes.
@@ -20,9 +21,13 @@ Returns whether the input value of an element changes.
 func change(for element: any GCPhysicalInputElement) -> GCDevicePhysicalInputElementChange
 ```
 
+```objc
+- (GCDevicePhysicalInputElementChange) changeForElement:(id<GCPhysicalInputElement>) element;
+```
+
 ## Mentions
 
-- [Handling input events](handling-input-events.md)
+- [Handling input events](../handling-input-events.md)
 
 #### Return Value
 
@@ -34,12 +39,13 @@ Description of the change to the element.
 
 ## See Also
 
-- [enum GCDevicePhysicalInputElementChange](gcdevicephysicalinputelementchange.md)
+### Getting changes
+- [enum GCDevicePhysicalInputElementChange](../gcdevicephysicalinputelementchange.md)
   Possible values that describe whether the input value of an element changes.
-- [func changedElements() -> NSEnumerator?](gcdevicephysicalinputstatediff/changedelements-9cdq4.md)
+- [func changedElements() -> NSEnumerator?](./changedelements%28%29-9cdq4.md)
   Returns the elements that changed since the previous input state.
 - [func changedElements() -> (some Sequence<any GCPhysicalInputElement>)?
-](gcdevicephysicalinputstatediff/changedelements-2zzwm.md)
+](./changedelements%28%29-2zzwm.md)
   Returns the elements that changed since the previous input state.
 
 

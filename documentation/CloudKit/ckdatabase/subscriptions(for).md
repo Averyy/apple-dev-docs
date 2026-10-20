@@ -1,7 +1,8 @@
 # subscriptions(for:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches the specified subscriptions and returns them to an awaiting caller.
 
@@ -11,7 +12,7 @@ Fetches the specified subscriptions and returns them to an awaiting caller.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -22,13 +23,13 @@ func subscriptions(for ids: [CKSubscription.ID]) async throws -> [CKSubscription
 
 #### Return Value
 
-A dictionary that contains the fetched subscriptions. The dictionary uses the identifiers you specify in `ids` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/swift/result) that contains either the corresponding fetched subscription, or an error that describes why CloudKit can’t provide that subscription.
+A dictionary that contains the fetched subscriptions. The dictionary uses the identifiers you specify in `ids` as its keys. The value of each key is a [`Result`](../../Swift/result.md) that contains either the corresponding fetched subscription, or an error that describes why CloudKit can’t provide that subscription.
 
 #### Discussion
 
 This method throws an error if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account; otherwise, the returned dictionary includes any individual subscription errors.
 
-For information on a more configurable way to fetch specific subscriptions, see [`CKFetchSubscriptionsOperation`](ckfetchsubscriptionsoperation.md).
+For information on a more configurable way to fetch specific subscriptions, see [`CKFetchSubscriptionsOperation`](../ckfetchsubscriptionsoperation.md).
 
 ## Parameters
 
@@ -36,13 +37,14 @@ For information on a more configurable way to fetch specific subscriptions, see 
 
 ## See Also
 
-- [func fetch(withSubscriptionIDs: [CKSubscription.ID], completionHandler: (Result<[CKSubscription.ID : Result<CKSubscription, any Error>], any Error>) -> Void)](ckdatabase/fetch(withsubscriptionids:completionhandler:).md)
+### Fetching Subscriptions
+- [func fetch(withSubscriptionIDs: [CKSubscription.ID], completionHandler: (Result<[CKSubscription.ID : Result<CKSubscription, any Error>], any Error>) -> Void)](./fetch%28withsubscriptionids,completionhandler%29.md)
   Fetches the specified subscriptions and delivers them to a completion handler.
-- [func subscription(for: CKSubscription.ID) async throws -> CKSubscription](ckdatabase/subscription(for:).md)
+- [func subscription(for: CKSubscription.ID) async throws -> CKSubscription](./subscription%28for%29.md)
   Fetches a specific subscription and returns it to an awaiting caller.
-- [func fetch(withSubscriptionID: CKSubscription.ID, completionHandler: (CKSubscription?, (any Error)?) -> Void)](ckdatabase/fetch(withsubscriptionid:completionhandler:).md)
+- [func fetch(withSubscriptionID: CKSubscription.ID, completionHandler: (CKSubscription?, (any Error)?) -> Void)](./fetch%28withsubscriptionid,completionhandler%29.md)
   Fetches a specific subscription and delivers it to a completion handler.
-- [func fetchAllSubscriptions(completionHandler: ([CKSubscription]?, (any Error)?) -> Void)](ckdatabase/fetchallsubscriptions(completionhandler:).md)
+- [func fetchAllSubscriptions(completionHandler: ([CKSubscription]?, (any Error)?) -> Void)](./fetchallsubscriptions%28completionhandler%29.md)
   Fetches all subscriptions from the current database.
 
 

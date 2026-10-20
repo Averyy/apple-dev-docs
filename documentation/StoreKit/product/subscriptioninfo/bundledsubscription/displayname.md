@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized display name of the product.
 

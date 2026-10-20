@@ -1,7 +1,8 @@
 # string(fromValue:)
 
 **Framework**: Audio Toolbox  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the string representation of a parameter value.
 
@@ -19,6 +20,10 @@ Gets the string representation of a parameter value.
 func string(fromValue value: UnsafePointer<AUValue>?) -> String
 ```
 
+```objc
+- (NSString *) stringFromValue:(const AUValue *) value;
+```
+
 #### Return Value
 
 The string representation of a parameter value.
@@ -33,14 +38,15 @@ Pass `nil` into the `value` parameter to use the current value.
 
 ## See Also
 
-- [var value: AUValue](auparameter/value.md)
+### Managing Parameter Values
+- [var value: AUValue](./value.md)
   The parameter’s current value.
-- [func setValue(AUValue, originator: AUParameterObserverToken?)](auparameter/setvalue(_:originator:).md)
+- [func setValue(AUValue, originator: AUParameterObserverToken?)](./setvalue%28_,originator%29.md)
   Sets the parameter’s value, avoiding redundant notifications to the originator.
-- [func setValue(AUValue, originator: AUParameterObserverToken?, atHostTime: UInt64)](auparameter/setvalue(_:originator:athosttime:).md)
+- [func setValue(AUValue, originator: AUParameterObserverToken?, atHostTime: UInt64)](./setvalue%28_,originator,athosttime%29.md)
   Sets the parameter’s value, preserving the host time of the gesture that initiated the change.
-- [func setValue(AUValue, originator: AUParameterObserverToken?, atHostTime: UInt64, eventType: AUParameterAutomationEventType)](auparameter/setvalue(_:originator:athosttime:eventtype:).md)
-- [func value(from: String) -> AUValue](auparameter/value(from:).md)
+- [func setValue(AUValue, originator: AUParameterObserverToken?, atHostTime: UInt64, eventType: AUParameterAutomationEventType)](./setvalue%28_,originator,athosttime,eventtype%29.md)
+- [func value(from: String) -> AUValue](./value%28from%29.md)
   Converts a string into a parameter value.
 
 

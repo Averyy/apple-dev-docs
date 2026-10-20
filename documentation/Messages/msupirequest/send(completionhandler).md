@@ -1,7 +1,8 @@
 # send(completionHandler:)
 
 **Framework**: Messages  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -11,7 +12,15 @@
 ## Declaration
 
 ```swift
+func send(completionHandler: @escaping @Sendable (Bool) -> Void)
+```
+
+```swift
 func send() async -> Bool
+```
+
+```objc
+- (void) sendWithCompletionHandler:(void (^)(BOOL sent)) completionHandler;
 ```
 
 #### Discussion

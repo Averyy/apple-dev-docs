@@ -1,7 +1,8 @@
 # isIDStart
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scalar is one which is recommended to be allowed to appear in a starting position in a programming language identifier.
 
@@ -24,7 +25,7 @@ var isIDStart: Bool { get }
 
 Applications that store identifiers in NFKC normalized form should instead use `isXIDStart` to check whether a scalar is a valid identifier character.
 
-This property corresponds to the “ID_Start” and the “Other_ID_Start” properties in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “ID_Start” and the “Other_ID_Start” properties in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

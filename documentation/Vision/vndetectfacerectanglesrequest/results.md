@@ -1,7 +1,8 @@
 # results
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The results of the face detection request.
 
@@ -19,9 +20,14 @@ The results of the face detection request.
 var results: [VNFaceObservation]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSArray<VNFaceObservation *> * results;
+```
+
 ## See Also
 
-- [class VNFaceObservation](vnfaceobservation.md)
+### Accessing the Results
+- [class VNFaceObservation](../vnfaceobservation.md)
   Face or facial-feature information that an image analysis request detects.
 
 

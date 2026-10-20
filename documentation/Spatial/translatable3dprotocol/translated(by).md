@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the entity translated by the specified vector.
@@ -24,6 +25,12 @@ func translated(by vector: Self.Vector) -> Self
 ## Parameters
 
 - `vector`: The vector that defines that translation.
+
+## Default Implementations
+
+### Translatable3DProtocol Implementations
+- [func translated(by: Self.Vector) -> Self](./translated%28by%29-27p04.md)
+  Returns the entity translated by the specified vector.
 
 
 ---

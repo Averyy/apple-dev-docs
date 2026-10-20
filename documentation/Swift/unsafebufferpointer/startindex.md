@@ -1,7 +1,8 @@
 # startIndex
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the first element in a nonempty buffer.
 

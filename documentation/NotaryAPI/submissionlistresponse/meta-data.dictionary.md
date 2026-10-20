@@ -1,7 +1,8 @@
 # SubmissionListResponse.Meta
 
 **Framework**: Notary API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An empty object.
 
@@ -10,7 +11,7 @@ An empty object.
 
 ## Declaration
 
-```swift
+```
 object SubmissionListResponse.Meta
 ```
 
@@ -20,7 +21,8 @@ This object is reserved for future use.
 
 ## See Also
 
-- [object SubmissionListResponse.Data](submissionlistresponse/data-data.dictionary.md)
+### Objects
+- [object SubmissionListResponse.Data](./data-data.dictionary.md)
   Data that describes one of your team’s previous submissions.
 
 

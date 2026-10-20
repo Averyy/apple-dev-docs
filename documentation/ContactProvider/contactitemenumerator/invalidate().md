@@ -2,6 +2,7 @@
 
 **Framework**: ContactProvider  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Invalidates the enumerator.

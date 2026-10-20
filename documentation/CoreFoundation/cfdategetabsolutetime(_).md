@@ -1,23 +1,28 @@
 # CFDateGetAbsoluteTime(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a `CFDate` object’s absolute time.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFDateGetAbsoluteTime(_ theDate: CFDate!) -> CFAbsoluteTime
+```
+
+```c
+extern CFAbsoluteTime CFDateGetAbsoluteTime(CFDateRef theDate);
 ```
 
 #### Return Value
@@ -34,13 +39,14 @@ Absolute time is measured in seconds relative to the absolute reference date of 
 
 ## See Also
 
-- [func CFDateCompare(CFDate!, CFDate!, UnsafeMutableRawPointer!) -> CFComparisonResult](cfdatecompare(_:_:_:).md)
+### CFDate Miscellaneous Functions
+- [func CFDateCompare(CFDate!, CFDate!, UnsafeMutableRawPointer!) -> CFComparisonResult](./cfdatecompare%28_,_,_%29.md)
   Compares two `CFDate` objects and returns a comparison result.
-- [func CFDateCreate(CFAllocator!, CFAbsoluteTime) -> CFDate!](cfdatecreate(_:_:).md)
+- [func CFDateCreate(CFAllocator!, CFAbsoluteTime) -> CFDate!](./cfdatecreate%28_,_%29.md)
   Creates a `CFDate` object given an absolute time.
-- [func CFDateGetTimeIntervalSinceDate(CFDate!, CFDate!) -> CFTimeInterval](cfdategettimeintervalsincedate(_:_:).md)
+- [func CFDateGetTimeIntervalSinceDate(CFDate!, CFDate!) -> CFTimeInterval](./cfdategettimeintervalsincedate%28_,_%29.md)
   Returns the number of elapsed seconds between the given `CFDate` objects.
-- [func CFDateGetTypeID() -> CFTypeID](cfdategettypeid().md)
+- [func CFDateGetTypeID() -> CFTypeID](./cfdategettypeid%28%29.md)
   Returns the type identifier for the `CFDate` opaque type.
 
 

@@ -1,7 +1,8 @@
 # init(_:strategy:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new `DateComponents` by parsing the given string representation.
 

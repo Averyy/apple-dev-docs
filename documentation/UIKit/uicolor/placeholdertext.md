@@ -1,7 +1,8 @@
 # placeholderText
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The color for placeholder text in controls or text views.
 
@@ -16,6 +17,10 @@ The color for placeholder text in controls or text views.
 
 ```swift
 class var placeholderText: UIColor { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) UIColor * placeholderTextColor;
 ```
 
 

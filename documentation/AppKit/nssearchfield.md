@@ -1,12 +1,13 @@
 # NSSearchField
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A text field optimized for performing text-based searches.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,90 +15,94 @@ A text field optimized for performing text-based searches.
 class NSSearchField
 ```
 
+```objc
+@interface NSSearchField : NSTextField
+```
+
 #### Overview
 
-[`NSSearchField`](nssearchfield.md) provides a customized text field for entering search data. The class also provides a search button, a cancel button, and a pop-up icon menu for listing recent search strings and custom search categories.
+[`NSSearchField`](./nssearchfield.md) provides a customized text field for entering search data. The class also provides a search button, a cancel button, and a pop-up icon menu for listing recent search strings and custom search categories.
 
-An [`NSSearchField`](nssearchfield.md) object wraps an [`NSSearchFieldCell`](nssearchfieldcell.md) object. The cell provides access to most search field attributes and a comprehensive programmatic interface for manipulating the search field. You can use an [`NSSearchField`](nssearchfield.md) object to manipulate some aspects of the search field.
+An [`NSSearchField`](./nssearchfield.md) object wraps an [`NSSearchFieldCell`](./nssearchfieldcell.md) object. The cell provides access to most search field attributes and a comprehensive programmatic interface for manipulating the search field. You can use an [`NSSearchField`](./nssearchfield.md) object to manipulate some aspects of the search field.
 
-For additional information about search fields and how to implement them, see the [`NSSearchFieldCell`](nssearchfieldcell.md) class.
+For additional information about search fields and how to implement them, see the [`NSSearchFieldCell`](./nssearchfieldcell.md) class.
 
 ## Topics
 
 ### Managing Search
-- [var delegate: (any NSSearchFieldDelegate)?](nssearchfield/delegate.md)
+- [var delegate: (any NSSearchFieldDelegate)?](./nssearchfield/delegate.md)
   The delegate for the search field, or `nil` if the search field doesn’t have a delegate.
-- [protocol NSSearchFieldDelegate](nssearchfielddelegate.md)
+- [protocol NSSearchFieldDelegate](./nssearchfielddelegate.md)
   A protocol that a search field delegate can use to determine when a search started or ended.
 ### Managing Menu Templates
-- [var searchMenuTemplate: NSMenu?](nssearchfield/searchmenutemplate.md)
+- [var searchMenuTemplate: NSMenu?](./nssearchfield/searchmenutemplate.md)
   The menu object used to dynamically construct the search field’s pop-up icon menu.
-- [class var clearRecentsMenuItemTag: Int](nssearchfield/clearrecentsmenuitemtag.md)
+- [class var clearRecentsMenuItemTag: Int](./nssearchfield/clearrecentsmenuitemtag.md)
   The menu item for clearing the current set of recent string searches in the menu.
-- [class var noRecentsMenuItemTag: Int](nssearchfield/norecentsmenuitemtag.md)
+- [class var noRecentsMenuItemTag: Int](./nssearchfield/norecentsmenuitemtag.md)
   The menu item that describes a lack of recent search strings.
-- [class var recentsMenuItemTag: Int](nssearchfield/recentsmenuitemtag.md)
+- [class var recentsMenuItemTag: Int](./nssearchfield/recentsmenuitemtag.md)
   The location of recent search strings in the “recents” menu group.
-- [class var recentsTitleMenuItemTag: Int](nssearchfield/recentstitlemenuitemtag.md)
+- [class var recentsTitleMenuItemTag: Int](./nssearchfield/recentstitlemenuitemtag.md)
   The menu item that provides the title of the menu group for recent search strings.
 ### Managing Search Modes
-- [var sendsSearchStringImmediately: Bool](nssearchfield/sendssearchstringimmediately.md)
+- [var sendsSearchStringImmediately: Bool](./nssearchfield/sendssearchstringimmediately.md)
   A Boolean value indicating whether the cell calls its action method immediately when an appropriate action occurs.
-- [var sendsWholeSearchString: Bool](nssearchfield/sendswholesearchstring.md)
+- [var sendsWholeSearchString: Bool](./nssearchfield/sendswholesearchstring.md)
   A Boolean value indicating whether the cell calls its search action method when the user clicks the search button or presses Return, or after each keystroke.
 ### Managing Recent Searches
-- [var recentSearches: [String]](nssearchfield/recentsearches.md)
+- [var recentSearches: [String]](./nssearchfield/recentsearches.md)
   The list of recent search strings for the control.
-- [var maximumRecents: Int](nssearchfield/maximumrecents.md)
+- [var maximumRecents: Int](./nssearchfield/maximumrecents.md)
   The maximum number of search strings that can appear in the search menu.
-- [var recentsAutosaveName: NSSearchField.RecentsAutosaveName?](nssearchfield/recentsautosavename-swift.property.md)
+- [var recentsAutosaveName: NSSearchField.RecentsAutosaveName?](./nssearchfield/recentsautosavename-swift.property.md)
   The name under which the search field automatically archives the list of recent search strings.
-- [NSSearchField.RecentsAutosaveName](nssearchfield/recentsautosavename-swift.typealias.md)
+- [NSSearchField.RecentsAutosaveName](./nssearchfield/recentsautosavename-swift.typealias.md)
   The string that stores the name under which a search field automatically archives a list of recent search strings.
 ### Getting Search Field Metrics
-- [var cancelButtonBounds: NSRect](nssearchfield/cancelbuttonbounds.md)
+- [var cancelButtonBounds: NSRect](./nssearchfield/cancelbuttonbounds.md)
   The rectangle for the cancel button within the bounds of the search field.
-- [var searchButtonBounds: NSRect](nssearchfield/searchbuttonbounds.md)
+- [var searchButtonBounds: NSRect](./nssearchfield/searchbuttonbounds.md)
   The rectangle for the search button within the bounds of the search field.
-- [var searchTextBounds: NSRect](nssearchfield/searchtextbounds.md)
+- [var searchTextBounds: NSRect](./nssearchfield/searchtextbounds.md)
   The rectangle for the search text within the bounds of the search field.
 ### Deprecated
-- [var centersPlaceholder: Bool](nssearchfield/centersplaceholder.md)
+- [var centersPlaceholder: Bool](./nssearchfield/centersplaceholder.md)
   A Boolean value that determines whether the search field’s components are centered within the control.
-- [func rectForCancelButton(whenCentered: Bool) -> NSRect](nssearchfield/rectforcancelbutton(whencentered:).md)
+- [func rectForCancelButton(whenCentered: Bool) -> NSRect](./nssearchfield/rectforcancelbutton%28whencentered%29.md)
   The rectangle for the cancel button within the bounds of the search field.
-- [func rectForSearchButton(whenCentered: Bool) -> NSRect](nssearchfield/rectforsearchbutton(whencentered:).md)
+- [func rectForSearchButton(whenCentered: Bool) -> NSRect](./nssearchfield/rectforsearchbutton%28whencentered%29.md)
   The rectangle for the search button within the bounds of the search field.
-- [func rectForSearchText(whenCentered: Bool) -> NSRect](nssearchfield/rectforsearchtext(whencentered:).md)
+- [func rectForSearchText(whenCentered: Bool) -> NSRect](./nssearchfield/rectforsearchtext%28whencentered%29.md)
   The rectangle for the search text within the bounds of the field.
 
 ## Relationships
 
 ### Inherits From
-- [NSTextField](nstextfield.md)
+- [NSTextField](./nstextfield.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
-- [NSAccessibilityNavigableStaticText](nsaccessibilitynavigablestatictext.md)
-- [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
-- [NSAccessibilityStaticText](nsaccessibilitystatictext.md)
-- [NSAnimatablePropertyContainer](nsanimatablepropertycontainer.md)
-- [NSAppearanceCustomization](nsappearancecustomization.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSDraggingDestination](nsdraggingdestination.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
-- [NSTextContent](nstextcontent.md)
-- [NSTouchBarProvider](nstouchbarprovider.md)
-- [NSUserActivityRestoring](nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [NSUserInterfaceValidations](nsuserinterfacevalidations.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](./nsaccessibilityelementprotocol.md)
+- [NSAccessibilityNavigableStaticText](./nsaccessibilitynavigablestatictext.md)
+- [NSAccessibilityProtocol](./nsaccessibilityprotocol.md)
+- [NSAccessibilityStaticText](./nsaccessibilitystatictext.md)
+- [NSAnimatablePropertyContainer](./nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](./nsappearancecustomization.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSDraggingDestination](./nsdraggingdestination.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](./nsstandardkeybindingresponding.md)
+- [NSTextContent](./nstextcontent.md)
+- [NSTouchBarProvider](./nstouchbarprovider.md)
+- [NSUserActivityRestoring](./nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](./nsuserinterfaceitemidentification.md)
+- [NSUserInterfaceValidations](./nsuserinterfacevalidations.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

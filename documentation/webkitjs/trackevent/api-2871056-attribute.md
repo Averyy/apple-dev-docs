@@ -1,7 +1,8 @@
 # attribute
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 readonly attribute(
     VideoTrack or AudioTrack or TextTrack, 
     track

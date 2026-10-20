@@ -1,7 +1,8 @@
 # inheritPipelineState
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines where commands in the indirect command buffer get their pipeline state from when you execute them.
 
@@ -19,13 +20,17 @@ A Boolean value that determines where commands in the indirect command buffer ge
 var inheritPipelineState: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) BOOL inheritPipelineState;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). If the value is [`false`](https://developer.apple.com/documentation/swift/false), set the pipeline state object when you encode the commands into the indirect command buffer. The commands ignore any pipeline state object set on the parent encoder.
+The default value is [`false`](../../Swift/false.md). If the value is [`false`](../../Swift/false.md), set the pipeline state object when you encode the commands into the indirect command buffer. The commands ignore any pipeline state object set on the parent encoder.
 
-If you set the value to [`true`](https://developer.apple.com/documentation/swift/true), don’t set a pipeline state object when you encode commands into the indirect command buffer. The commands use (inherit) the pipeline stage object that you set on the parent encoder.
+If you set the value to [`true`](../../Swift/true.md), don’t set a pipeline state object when you encode commands into the indirect command buffer. The commands use (inherit) the pipeline stage object that you set on the parent encoder.
 
-This property doesn’t exist in iOS 12 and earlier, and tvOS 12 and earlier. If you create an indirect command buffer on those systems, it inherits the pipeline state, exactly as if the property existed, with a value of [`true`](https://developer.apple.com/documentation/swift/true). If you need your app to run on earlier versions of iOS, use an availability attribute to set the property conditionally:
+This property doesn’t exist in iOS 12 and earlier, and tvOS 12 and earlier. If you create an indirect command buffer on those systems, it inherits the pipeline state, exactly as if the property existed, with a value of [`true`](../../Swift/true.md). If you need your app to run on earlier versions of iOS, use an availability attribute to set the property conditionally:
 
 **Swift**:
 
@@ -45,7 +50,8 @@ if (@available(iOS 13.0, tvOS 13.0, *)) {
 
 ## See Also
 
-- [var inheritBuffers: Bool](mtlindirectcommandbufferdescriptor/inheritbuffers.md)
+### Declaring command inheritance
+- [var inheritBuffers: Bool](./inheritbuffers.md)
   A Boolean value that determines where commands in the indirect command buffer get their buffer arguments from when you execute them.
 
 

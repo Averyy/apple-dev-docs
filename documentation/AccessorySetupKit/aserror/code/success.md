@@ -1,7 +1,8 @@
 # ASError.Code.success
 
 **Framework**: AccessorySetupKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A code that represents a successful action.
 
@@ -13,6 +14,10 @@ A code that represents a successful action.
 
 ```swift
 case success
+```
+
+```c
+ASErrorCodeSuccess
 ```
 
 

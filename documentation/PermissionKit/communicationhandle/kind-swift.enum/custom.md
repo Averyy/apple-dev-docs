@@ -1,7 +1,8 @@
 # CommunicationHandle.Kind.custom
 
 **Framework**: PermissionKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A unique identifier that distinguishes one person from another.
 
@@ -24,9 +25,10 @@ An example of a handle can be a custom user ID.
 
 ## See Also
 
-- [CommunicationHandle.Kind.phoneNumber](communicationhandle/kind-swift.enum/phonenumber.md)
+### Identifying a handle type
+- [CommunicationHandle.Kind.phoneNumber](./phonenumber.md)
   A person’s phone number.
-- [CommunicationHandle.Kind.emailAddress](communicationhandle/kind-swift.enum/emailaddress.md)
+- [CommunicationHandle.Kind.emailAddress](./emailaddress.md)
   A person’s email address.
 
 

@@ -1,19 +1,20 @@
 # init
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes the dispatch queue object.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init();
 ```
 
@@ -23,13 +24,14 @@ virtual bool init();
 
 #### Discussion
 
-Do not call this method directly. Call [`Create`](iodispatchqueue/create.md) when you want to create a new dispatch queue.
+Do not call this method directly. Call [`Create`](./create.md) when you want to create a new dispatch queue.
 
 ## See Also
 
-- [Create](iodispatchqueue/create.md)
+### Creating a Dispatch Queue
+- [Create](./create.md)
   Creates a new dispatch queue object.
-- [free](iodispatchqueue/free.md)
+- [free](./free.md)
   Performs any final cleanup for the dispatch queue object.
 
 

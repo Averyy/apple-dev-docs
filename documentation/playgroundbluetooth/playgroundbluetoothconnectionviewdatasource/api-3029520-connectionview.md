@@ -2,6 +2,7 @@
 
 **Framework**: Playground Bluetooth  
 **Kind**: intfm  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that a new peripheral was discovered and can be displayed in the connection view.
@@ -16,9 +17,9 @@ Tells the delegate that a new peripheral was discovered and can be displayed in 
 func connectionView(_ connectionView: PlaygroundBluetoothConnectionView, itemForPeripheral peripheral: CBPeripheral, withAdvertisementData advertisementData: [String : Any]?) -> PlaygroundBluetoothConnectionView.Item
 ```
 
-#### Return_value
+#### Return Value
 
-A [`PlaygroundBluetoothConnectionView.Item`](playgroundbluetoothconnectionview/item.md) instance that's displayed within a [`PlaygroundBluetoothConnectionView`](playgroundbluetoothconnectionview.md).
+A [`PlaygroundBluetoothConnectionView.Item`](../playgroundbluetoothconnectionview/item.md) instance that's displayed within a [`PlaygroundBluetoothConnectionView`](../playgroundbluetoothconnectionview.md).
 
 ## Parameters
 

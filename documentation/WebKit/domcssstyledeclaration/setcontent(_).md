@@ -1,7 +1,8 @@
 # setContent(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setContent(_ content: String!)
+```
+
+```objc
+- (void) setContent:(NSString *) content;
 ```
 
 

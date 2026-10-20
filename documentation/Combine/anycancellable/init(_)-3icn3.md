@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the cancellable object with the given cancel-time closure.
 
@@ -26,7 +27,8 @@ init(_ cancel: @escaping () -> Void)
 
 ## See Also
 
-- [init<C>(C)](anycancellable/init(_:)-48fh3.md)
+### Creating a type-erased cancellable
+- [init<C>(C)](./init%28_%29-48fh3.md)
 
 
 ---

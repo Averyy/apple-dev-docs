@@ -1,10 +1,13 @@
 # init(replacing:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- visionOS 2.0+
+- visionOS 2.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use [`push(onto:)`](../uiwindowsceneplacement-swift.protocol/push%28onto%29.md) instead.
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # unitAdjustForLocale
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -18,12 +19,15 @@
 final var unitAdjustForLocale: Bool? { get }
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitInformationStorage>`.
+
 ## See Also
 
-- [var unit: IntentParameter<Value>.InformationStorage?](intentparameter/unit-36fxd.md)
-- [IntentParameter.InformationStorage](intentparameter/informationstorage.md)
-- [var defaultUnit: IntentParameter<Value>.InformationStorage?](intentparameter/defaultunit-ry6s.md)
-- [var supportsNegativeNumbers: Bool?](intentparameter/supportsnegativenumbers-9qbxt.md)
+### Accessing unit details
+- [var unit: IntentParameter<Value>.InformationStorage?](./unit-36fxd.md)
+- [IntentParameter.InformationStorage](./informationstorage.md)
+- [var defaultUnit: IntentParameter<Value>.InformationStorage?](./defaultunit-ry6s.md)
+- [var supportsNegativeNumbers: Bool?](./supportsnegativenumbers-9qbxt.md)
 
 
 ---

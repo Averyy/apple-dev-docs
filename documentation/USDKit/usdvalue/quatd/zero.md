@@ -1,7 +1,8 @@
 # zero
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The zero quaternion `(0, 0, 0, 0)`.
 

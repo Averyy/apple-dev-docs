@@ -1,7 +1,8 @@
 # BAErrorDomain
 
 **Framework**: Background Assets  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 17.0+
@@ -17,12 +18,17 @@
 let BAErrorDomain: String
 ```
 
+```c
+extern NSString * const BAErrorDomain;
+```
+
 ## See Also
 
-- [enum ManagedBackgroundAssetsError](managedbackgroundassetserror.md)
+### Errors
+- [enum ManagedBackgroundAssetsError](./managedbackgroundassetserror.md)
   An error for a managed asset pack.
-- [enum BAErrorCode](baerrorcode.md)
-- [AssetPackManager.LocalAvailabilityError](assetpackmanager/localavailabilityerror.md)
+- [enum BAErrorCode](./baerrorcode.md)
+- [AssetPackManager.LocalAvailabilityError](./assetpackmanager/localavailabilityerror.md)
   An error that provides information about local asset pack availability, distinguishing between successes and failures.
 
 

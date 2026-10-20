@@ -1,7 +1,8 @@
 # preloadsEligibleContentKeys
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether content keys will be loaded as quickly as possible.
 
@@ -17,6 +18,10 @@ A Boolean value that indicates whether content keys will be loaded as quickly as
 
 ```swift
 var preloadsEligibleContentKeys: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL preloadsEligibleContentKeys;
 ```
 
 #### Discussion

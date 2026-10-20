@@ -1,17 +1,22 @@
 # main
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the screen object containing the window with the keyboard focus.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class var main: NSScreen? { get }
+```
+
+```objc
+@property (class, strong, readonly, nullable) NSScreen * mainScreen;
 ```
 
 #### Return Value
@@ -22,13 +27,14 @@ The main screen object.
 
 The main screen is not necessarily the same screen that contains the menu bar or has its origin at `(0, 0)`. The main screen refers to the screen containing the window that is currently receiving keyboard events. It is the main screen because it is the one with which the user is most likely interacting.
 
-The screen containing the menu bar is always the first object (index `0`) in the array returned by the [`screens`](nsscreen/screens.md) method.
+The screen containing the menu bar is always the first object (index `0`) in the array returned by the [`screens`](./screens.md) method.
 
 ## See Also
 
-- [class var deepest: NSScreen?](nsscreen/deepest.md)
+### Getting Screen Objects
+- [class var deepest: NSScreen?](./deepest.md)
   Returns a screen object representing the screen that can best represent color.
-- [class var screens: [NSScreen]](nsscreen/screens.md)
+- [class var screens: [NSScreen]](./screens.md)
   Returns an array of screen objects representing all of the screens available on the system.
 
 

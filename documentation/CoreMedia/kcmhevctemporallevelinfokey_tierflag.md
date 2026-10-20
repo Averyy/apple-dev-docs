@@ -1,7 +1,8 @@
 # kCMHEVCTemporalLevelInfoKey_TierFlag
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The value is a number.
 
@@ -20,19 +21,24 @@ The value is a number.
 let kCMHEVCTemporalLevelInfoKey_TierFlag: CFString
 ```
 
+```c
+extern CFStringRef const kCMHEVCTemporalLevelInfoKey_TierFlag;
+```
+
 ## See Also
 
-- [let kCMHEVCTemporalLevelInfoKey_ConstraintIndicatorFlags: CFString](kcmhevctemporallevelinfokey_constraintindicatorflags.md)
+### Constants
+- [let kCMHEVCTemporalLevelInfoKey_ConstraintIndicatorFlags: CFString](./kcmhevctemporallevelinfokey_constraintindicatorflags.md)
   The value is a 6 byte data value.
-- [let kCMHEVCTemporalLevelInfoKey_LevelIndex: CFString](kcmhevctemporallevelinfokey_levelindex.md)
+- [let kCMHEVCTemporalLevelInfoKey_LevelIndex: CFString](./kcmhevctemporallevelinfokey_levelindex.md)
   The value is a number.
-- [let kCMHEVCTemporalLevelInfoKey_ProfileCompatibilityFlags: CFString](kcmhevctemporallevelinfokey_profilecompatibilityflags.md)
+- [let kCMHEVCTemporalLevelInfoKey_ProfileCompatibilityFlags: CFString](./kcmhevctemporallevelinfokey_profilecompatibilityflags.md)
   The value is a 4 byte data value.
-- [let kCMHEVCTemporalLevelInfoKey_ProfileIndex: CFString](kcmhevctemporallevelinfokey_profileindex.md)
+- [let kCMHEVCTemporalLevelInfoKey_ProfileIndex: CFString](./kcmhevctemporallevelinfokey_profileindex.md)
   The value is a number.
-- [let kCMHEVCTemporalLevelInfoKey_ProfileSpace: CFString](kcmhevctemporallevelinfokey_profilespace.md)
+- [let kCMHEVCTemporalLevelInfoKey_ProfileSpace: CFString](./kcmhevctemporallevelinfokey_profilespace.md)
   The value is a number.
-- [let kCMHEVCTemporalLevelInfoKey_TemporalLevel: CFString](kcmhevctemporallevelinfokey_temporallevel.md)
+- [let kCMHEVCTemporalLevelInfoKey_TemporalLevel: CFString](./kcmhevctemporallevelinfokey_temporallevel.md)
   The value is a number.
 
 

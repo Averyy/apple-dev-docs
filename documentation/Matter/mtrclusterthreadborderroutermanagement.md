@@ -1,7 +1,8 @@
 # MTRClusterThreadBorderRouterManagement
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Cluster Thread Border Router Management Manage the Thread network of Thread Border Router
 
@@ -20,41 +21,45 @@ Cluster Thread Border Router Management Manage the Thread network of Thread Bord
 class MTRClusterThreadBorderRouterManagement
 ```
 
+```objc
+@interface MTRClusterThreadBorderRouterManagement : MTRGenericCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclusterthreadborderroutermanagement/init(device:endpointid:queue:).md)
+- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrclusterthreadborderroutermanagement/init%28device,endpointid,queue%29.md)
   For all instance methods that take a completion (i.e. command invocations), the completion will be called on the provided queue.
 ### Instance Methods
-- [func getActiveDatasetRequest(with: MTRThreadBorderRouterManagementClusterGetActiveDatasetRequestParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRThreadBorderRouterManagementClusterDatasetResponseParams?, (any Error)?) -> Void)](mtrclusterthreadborderroutermanagement/getactivedatasetrequest(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func getActiveDatasetRequest(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRThreadBorderRouterManagementClusterDatasetResponseParams?, (any Error)?) -> Void)](mtrclusterthreadborderroutermanagement/getactivedatasetrequest(withexpectedvalues:expectedvalueinterval:completion:).md)
-- [func getPendingDatasetRequest(with: MTRThreadBorderRouterManagementClusterGetPendingDatasetRequestParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRThreadBorderRouterManagementClusterDatasetResponseParams?, (any Error)?) -> Void)](mtrclusterthreadborderroutermanagement/getpendingdatasetrequest(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func getPendingDatasetRequest(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRThreadBorderRouterManagementClusterDatasetResponseParams?, (any Error)?) -> Void)](mtrclusterthreadborderroutermanagement/getpendingdatasetrequest(withexpectedvalues:expectedvalueinterval:completion:).md)
-- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterthreadborderroutermanagement/readattributeacceptedcommandlist(with:).md)
-- [func readAttributeActiveDatasetTimestamp(with: MTRReadParams?) -> [String : Any]?](mtrclusterthreadborderroutermanagement/readattributeactivedatasettimestamp(with:).md)
-- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclusterthreadborderroutermanagement/readattributeattributelist(with:).md)
-- [func readAttributeBorderAgentID(with: MTRReadParams?) -> [String : Any]?](mtrclusterthreadborderroutermanagement/readattributeborderagentid(with:).md)
-- [func readAttributeBorderRouterName(with: MTRReadParams?) -> [String : Any]?](mtrclusterthreadborderroutermanagement/readattributeborderroutername(with:).md)
-- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclusterthreadborderroutermanagement/readattributeclusterrevision(with:).md)
-- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclusterthreadborderroutermanagement/readattributefeaturemap(with:).md)
-- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterthreadborderroutermanagement/readattributegeneratedcommandlist(with:).md)
-- [func readAttributeInterfaceEnabled(with: MTRReadParams?) -> [String : Any]?](mtrclusterthreadborderroutermanagement/readattributeinterfaceenabled(with:).md)
-- [func readAttributePendingDatasetTimestamp(with: MTRReadParams?) -> [String : Any]?](mtrclusterthreadborderroutermanagement/readattributependingdatasettimestamp(with:).md)
-- [func readAttributeThreadVersion(with: MTRReadParams?) -> [String : Any]?](mtrclusterthreadborderroutermanagement/readattributethreadversion(with:).md)
-- [func setActiveDatasetRequestWith(MTRThreadBorderRouterManagementClusterSetActiveDatasetRequestParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterthreadborderroutermanagement/setactivedatasetrequestwith(_:expectedvalues:expectedvalueinterval:completion:).md)
-- [func setPendingDatasetRequestWith(MTRThreadBorderRouterManagementClusterSetPendingDatasetRequestParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterthreadborderroutermanagement/setpendingdatasetrequestwith(_:expectedvalues:expectedvalueinterval:completion:).md)
+- [func getActiveDatasetRequest(with: MTRThreadBorderRouterManagementClusterGetActiveDatasetRequestParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRThreadBorderRouterManagementClusterDatasetResponseParams?, (any Error)?) -> Void)](./mtrclusterthreadborderroutermanagement/getactivedatasetrequest%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func getActiveDatasetRequest(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRThreadBorderRouterManagementClusterDatasetResponseParams?, (any Error)?) -> Void)](./mtrclusterthreadborderroutermanagement/getactivedatasetrequest%28withexpectedvalues,expectedvalueinterval,completion%29.md)
+- [func getPendingDatasetRequest(with: MTRThreadBorderRouterManagementClusterGetPendingDatasetRequestParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRThreadBorderRouterManagementClusterDatasetResponseParams?, (any Error)?) -> Void)](./mtrclusterthreadborderroutermanagement/getpendingdatasetrequest%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func getPendingDatasetRequest(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRThreadBorderRouterManagementClusterDatasetResponseParams?, (any Error)?) -> Void)](./mtrclusterthreadborderroutermanagement/getpendingdatasetrequest%28withexpectedvalues,expectedvalueinterval,completion%29.md)
+- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterthreadborderroutermanagement/readattributeacceptedcommandlist%28with%29.md)
+- [func readAttributeActiveDatasetTimestamp(with: MTRReadParams?) -> [String : Any]?](./mtrclusterthreadborderroutermanagement/readattributeactivedatasettimestamp%28with%29.md)
+- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterthreadborderroutermanagement/readattributeattributelist%28with%29.md)
+- [func readAttributeBorderAgentID(with: MTRReadParams?) -> [String : Any]?](./mtrclusterthreadborderroutermanagement/readattributeborderagentid%28with%29.md)
+- [func readAttributeBorderRouterName(with: MTRReadParams?) -> [String : Any]?](./mtrclusterthreadborderroutermanagement/readattributeborderroutername%28with%29.md)
+- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](./mtrclusterthreadborderroutermanagement/readattributeclusterrevision%28with%29.md)
+- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](./mtrclusterthreadborderroutermanagement/readattributefeaturemap%28with%29.md)
+- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterthreadborderroutermanagement/readattributegeneratedcommandlist%28with%29.md)
+- [func readAttributeInterfaceEnabled(with: MTRReadParams?) -> [String : Any]?](./mtrclusterthreadborderroutermanagement/readattributeinterfaceenabled%28with%29.md)
+- [func readAttributePendingDatasetTimestamp(with: MTRReadParams?) -> [String : Any]?](./mtrclusterthreadborderroutermanagement/readattributependingdatasettimestamp%28with%29.md)
+- [func readAttributeThreadVersion(with: MTRReadParams?) -> [String : Any]?](./mtrclusterthreadborderroutermanagement/readattributethreadversion%28with%29.md)
+- [func setActiveDatasetRequestWith(MTRThreadBorderRouterManagementClusterSetActiveDatasetRequestParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterthreadborderroutermanagement/setactivedatasetrequestwith%28_,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func setPendingDatasetRequestWith(MTRThreadBorderRouterManagementClusterSetPendingDatasetRequestParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterthreadborderroutermanagement/setpendingdatasetrequestwith%28_,expectedvalues,expectedvalueinterval,completion%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericCluster](mtrgenericcluster.md)
+- [MTRGenericCluster](./mtrgenericcluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

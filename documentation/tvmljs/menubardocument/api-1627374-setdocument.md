@@ -1,7 +1,8 @@
 # setDocument
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Associates a document with a menu item.
 
@@ -10,7 +11,7 @@ Associates a document with a menu item.
 
 ## Declaration
 
-```swift
+```
 void setDocument(
     in Document document, 
     in Object menuItem
@@ -24,11 +25,12 @@ void setDocument(
 
 ## See Also
 
-- [getDocument](menubardocument/1627405-getdocument.md)
+### Setting and Retrieving Menu Item Documents
+- [getDocument](./api-1627405-getdocument.md)
   Retrieves the document associated with the specified menu item.
-- [getSelectedItem](menubardocument/1657224-getselecteditem.md)
+- [getSelectedItem](./api-1657224-getselecteditem.md)
   Retrieves the menu item in the menu bar that is currently in focus.
-- [setSelectedItem](menubardocument/1627427-setselecteditem.md)
+- [setSelectedItem](./api-1627427-setselecteditem.md)
   Sets the focus in a menu bar to the specified menu item.
 
 

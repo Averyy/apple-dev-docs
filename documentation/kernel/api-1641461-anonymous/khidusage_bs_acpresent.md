@@ -1,14 +1,15 @@
 # kHIDUsage_BS_ACPresent
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_BS_ACPresent = 0xD0
 ```
 

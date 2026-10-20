@@ -1,7 +1,8 @@
 # MTRAsyncCallbackReadyHandler
 
 **Framework**: Matter  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 16.0+
@@ -16,6 +17,10 @@
 
 ```swift
 typealias MTRAsyncCallbackReadyHandler = (Any, Int) -> Void
+```
+
+```c
+typedef void (^)(id, unsigned long) MTRAsyncCallbackReadyHandler;
 ```
 
 

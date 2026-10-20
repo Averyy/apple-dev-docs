@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kSCSIProtocolLayerNumDefaultStates](1641838-anonymous/kscsiprotocollayernumdefaultstates.md)
-- [kSCSIProtocolLayerPowerStateOff](1641838-anonymous/kscsiprotocollayerpowerstateoff.md)
-- [kSCSIProtocolLayerPowerStateOn](1641838-anonymous/kscsiprotocollayerpowerstateon.md)
+- [kSCSIProtocolLayerNumDefaultStates](./api-1641838-anonymous/kscsiprotocollayernumdefaultstates.md)
+- [kSCSIProtocolLayerPowerStateOff](./api-1641838-anonymous/kscsiprotocollayerpowerstateoff.md)
+- [kSCSIProtocolLayerPowerStateOn](./api-1641838-anonymous/kscsiprotocollayerpowerstateon.md)
 
 
 ---

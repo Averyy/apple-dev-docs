@@ -1,7 +1,8 @@
 # SSReadingListError.Code.urlSchemeNotAllowed
 
 **Framework**: Safari Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 7.0+
@@ -13,6 +14,10 @@
 
 ```swift
 case urlSchemeNotAllowed
+```
+
+```c
+SSReadingListErrorURLSchemeNotAllowed
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # NavigationMeshResource.OffMeshConnection
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A container for the data associated with an off-mesh connection.
 
@@ -22,35 +23,36 @@ struct OffMeshConnection
 ## Topics
 
 ### Creating a connection
-- [init(startPoint: SIMD3<Float>, endPoint: SIMD3<Float>, radius: Float, isBidirectional: Bool, label: String)](navigationmeshresource/offmeshconnection/init(startpoint:endpoint:radius:isbidirectional:label:).md)
+- [init(startPoint: SIMD3<Float>, endPoint: SIMD3<Float>, radius: Float, isBidirectional: Bool, label: String)](./offmeshconnection/init%28startpoint,endpoint,radius,isbidirectional,label%29.md)
 ### Defining the path
-- [var startPoint: SIMD3<Float>](navigationmeshresource/offmeshconnection/startpoint.md)
+- [var startPoint: SIMD3<Float>](./offmeshconnection/startpoint.md)
   The start point of the off-mesh connection.
-- [var endPoint: SIMD3<Float>](navigationmeshresource/offmeshconnection/endpoint.md)
+- [var endPoint: SIMD3<Float>](./offmeshconnection/endpoint.md)
   The end point of the off-mesh connection.
-- [var isBidirectional: Bool](navigationmeshresource/offmeshconnection/isbidirectional.md)
+- [var isBidirectional: Bool](./offmeshconnection/isbidirectional.md)
   Whether the connection is bidirectional. If false, pathfinds will only allow going from startPoint to endPoint. If true, pathfinds will allow going in both directions.
 ### Instance Properties
-- [var label: String](navigationmeshresource/offmeshconnection/label.md)
+- [var label: String](./offmeshconnection/label.md)
   The label on the connection for other systems to know what type of movement should occur here.
-- [var radius: Float](navigationmeshresource/offmeshconnection/radius.md)
+- [var radius: Float](./offmeshconnection/radius.md)
   The distance to the connection that counts as being close enough to use it.
 
 ## See Also
 
-- [NavigationMeshResource.Configuration](navigationmeshresource/configuration-swift.struct.md)
+### Supporting types
+- [NavigationMeshResource.Configuration](./configuration-swift.struct.md)
   The NavigationMeshResource configuration that defines how the mesh is created.
-- [NavigationMeshResource.Area](navigationmeshresource/area.md)
+- [NavigationMeshResource.Area](./area.md)
   An identifier for different areas on a Navigation Mesh.
-- [NavigationMeshResource.Flag](navigationmeshresource/flag.md)
+- [NavigationMeshResource.Flag](./flag.md)
   An identifier for different flags on a Navigation Mesh.
-- [NavigationMeshResource.FlagGroup](navigationmeshresource/flaggroup.md)
+- [NavigationMeshResource.FlagGroup](./flaggroup.md)
   A collection of Flags.
-- [NavigationMeshResource.HeightData](navigationmeshresource/heightdata-swift.struct.md)
+- [NavigationMeshResource.HeightData](./heightdata-swift.struct.md)
   A container for the detailed height data of the NavigationMeshResource.
-- [NavigationMeshResource.Layer](navigationmeshresource/layer-swift.struct.md)
-  An identifier for a Navigation Mesh, used by a [`NavigationComponent`](navigationcomponent.md) to select a specific Navigation Mesh for pathfinding.
-- [NavigationMeshResource.PathNode](navigationmeshresource/pathnode.md)
+- [NavigationMeshResource.Layer](./layer-swift.struct.md)
+  An identifier for a Navigation Mesh, used by a [`NavigationComponent`](../navigationcomponent.md) to select a specific Navigation Mesh for pathfinding.
+- [NavigationMeshResource.PathNode](./pathnode.md)
   A container for the path node data.
 
 

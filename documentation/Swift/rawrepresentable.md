@@ -1,7 +1,8 @@
 # RawRepresentable
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that can be converted to and from an associated raw value.
 
@@ -87,127 +88,128 @@ print(allowedMoves.rawValue & Directions.right.rawValue)
 ## Topics
 
 ### Creating a Value
-- [init?(rawValue: Self.RawValue)](rawrepresentable/init(rawvalue:).md)
+- [init?(rawValue: Self.RawValue)](./rawrepresentable/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
 ### Accessing the Raw Value
-- [var rawValue: Self.RawValue](rawrepresentable/rawvalue-swift.property.md)
+- [var rawValue: Self.RawValue](./rawrepresentable/rawvalue-swift.property.md)
   The corresponding value of the raw type.
-- [associatedtype RawValue](rawrepresentable/rawvalue-swift.associatedtype.md)
+- [associatedtype RawValue](./rawrepresentable/rawvalue-swift.associatedtype.md)
   The raw type that can be used to represent all values of the conforming type.
 ### Comparing Values
-- [func == <T>(T, T) -> Bool](==(_:_:)-9hu5c.md)
+- [func == <T>(T, T) -> Bool](./eqeq%28_,_%29-9hu5c.md)
   Returns a Boolean value indicating whether the two arguments are equal.
-- [func != <T>(T, T) -> Bool](!=(_:_:)-9wy5n.md)
+- [func != <T>(T, T) -> Bool](./noteq%28_,_%29-9wy5n.md)
   Returns a Boolean value indicating whether the two arguments are not equal.
-- [func != <T>(T, T) -> Bool](!=(_:_:)-8pggn.md)
+- [func != <T>(T, T) -> Bool](./noteq%28_,_%29-8pggn.md)
   Returns a Boolean value indicating whether the two arguments are not equal.
 ### Decoding a Value
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-5auil.md)
+- [init(from: any Decoder) throws](./rawrepresentable/init%28from%29-5auil.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `String`.
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-5ar5m.md)
+- [init(from: any Decoder) throws](./rawrepresentable/init%28from%29-5ar5m.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `Bool`.
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-417i8.md)
+- [init(from: any Decoder) throws](./rawrepresentable/init%28from%29-417i8.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `Double`.
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-9u9tp.md)
+- [init(from: any Decoder) throws](./rawrepresentable/init%28from%29-9u9tp.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `Float`.
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-4ibll.md)
+- [init(from: any Decoder) throws](./rawrepresentable/init%28from%29-4ibll.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `Int`.
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-3hvw1.md)
+- [init(from: any Decoder) throws](./rawrepresentable/init%28from%29-3hvw1.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `UInt`.
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-5ktev.md)
+- [init(from: any Decoder) throws](./rawrepresentable/init%28from%29-5ktev.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `Int8`.
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-2hvc0.md)
+- [init(from: any Decoder) throws](./rawrepresentable/init%28from%29-2hvc0.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `Int16`.
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-114vz.md)
+- [init(from: any Decoder) throws](./rawrepresentable/init%28from%29-114vz.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `Int32`.
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-29lhi.md)
+- [init(from: any Decoder) throws](./rawrepresentable/init%28from%29-29lhi.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `Int64`.
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-94955.md)
+- [init(from: any Decoder) throws](./rawrepresentable/init%28from%29-94955.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `UInt8`.
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-6z4x4.md)
+- [init(from: any Decoder) throws](./rawrepresentable/init%28from%29-6z4x4.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `UInt16`.
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-3arr3.md)
+- [init(from: any Decoder) throws](./rawrepresentable/init%28from%29-3arr3.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `UInt32`.
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-812cy.md)
+- [init(from: any Decoder) throws](./rawrepresentable/init%28from%29-812cy.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `UInt64`.
 ### Encoding a Value
-- [func encode(to: any Encoder) throws](rawrepresentable/encode(to:)-4evma.md)
+- [func encode(to: any Encoder) throws](./rawrepresentable/encode%28to%29-4evma.md)
   Encodes this value into the given encoder, when the type’s `RawValue` is `String`.
-- [func encode(to: any Encoder) throws](rawrepresentable/encode(to:)-5igsi.md)
+- [func encode(to: any Encoder) throws](./rawrepresentable/encode%28to%29-5igsi.md)
   Encodes this value into the given encoder, when the type’s `RawValue` is `Bool`.
-- [func encode(to: any Encoder) throws](rawrepresentable/encode(to:)-4tbh4.md)
+- [func encode(to: any Encoder) throws](./rawrepresentable/encode%28to%29-4tbh4.md)
   Encodes this value into the given encoder, when the type’s `RawValue` is `Double`.
-- [func encode(to: any Encoder) throws](rawrepresentable/encode(to:)-21ma8.md)
+- [func encode(to: any Encoder) throws](./rawrepresentable/encode%28to%29-21ma8.md)
   Encodes this value into the given encoder, when the type’s `RawValue` is `Float`.
-- [func encode(to: any Encoder) throws](rawrepresentable/encode(to:)-8horh.md)
+- [func encode(to: any Encoder) throws](./rawrepresentable/encode%28to%29-8horh.md)
   Encodes this value into the given encoder, when the type’s `RawValue` is `Int`.
-- [func encode(to: any Encoder) throws](rawrepresentable/encode(to:)-78oqu.md)
+- [func encode(to: any Encoder) throws](./rawrepresentable/encode%28to%29-78oqu.md)
   Encodes this value into the given encoder, when the type’s `RawValue` is `UInt`.
-- [func encode(to: any Encoder) throws](rawrepresentable/encode(to:)-4pavm.md)
+- [func encode(to: any Encoder) throws](./rawrepresentable/encode%28to%29-4pavm.md)
   Encodes this value into the given encoder, when the type’s `RawValue` is `Int8`.
-- [func encode(to: any Encoder) throws](rawrepresentable/encode(to:)-86dqn.md)
+- [func encode(to: any Encoder) throws](./rawrepresentable/encode%28to%29-86dqn.md)
   Encodes this value into the given encoder, when the type’s `RawValue` is `Int16`.
-- [func encode(to: any Encoder) throws](rawrepresentable/encode(to:)-7dyeb.md)
+- [func encode(to: any Encoder) throws](./rawrepresentable/encode%28to%29-7dyeb.md)
   Encodes this value into the given encoder, when the type’s `RawValue` is `Int32`.
-- [func encode(to: any Encoder) throws](rawrepresentable/encode(to:)-4gohs.md)
+- [func encode(to: any Encoder) throws](./rawrepresentable/encode%28to%29-4gohs.md)
   Encodes this value into the given encoder, when the type’s `RawValue` is `Int64`.
-- [func encode(to: any Encoder) throws](rawrepresentable/encode(to:)-9u5rt.md)
+- [func encode(to: any Encoder) throws](./rawrepresentable/encode%28to%29-9u5rt.md)
   Encodes this value into the given encoder, when the type’s `RawValue` is `UInt8`.
-- [func encode(to: any Encoder) throws](rawrepresentable/encode(to:)-cla3.md)
+- [func encode(to: any Encoder) throws](./rawrepresentable/encode%28to%29-cla3.md)
   Encodes this value into the given encoder, when the type’s `RawValue` is `UInt16`.
-- [func encode(to: any Encoder) throws](rawrepresentable/encode(to:)-27waz.md)
+- [func encode(to: any Encoder) throws](./rawrepresentable/encode%28to%29-27waz.md)
   Encodes this value into the given encoder, when the type’s `RawValue` is `UInt32`.
-- [func encode(to: any Encoder) throws](rawrepresentable/encode(to:)-16ame.md)
+- [func encode(to: any Encoder) throws](./rawrepresentable/encode%28to%29-16ame.md)
   Encodes this value into the given encoder, when the type’s `RawValue` is `UInt64`.
 ### Initializers
-- [init?<T>(codingKey: T)](rawrepresentable/init(codingkey:)-3mxjn.md)
-- [init?<T>(codingKey: T)](rawrepresentable/init(codingkey:)-9gih0.md)
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-6yajb.md)
+- [init?<T>(codingKey: T)](./rawrepresentable/init%28codingkey%29-3mxjn.md)
+- [init?<T>(codingKey: T)](./rawrepresentable/init%28codingkey%29-9gih0.md)
+- [init(from: any Decoder) throws](./rawrepresentable/init%28from%29-6yajb.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `UInt128`.
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-8fm8i.md)
+- [init(from: any Decoder) throws](./rawrepresentable/init%28from%29-8fm8i.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `Int128`.
 ### Instance Properties
-- [var codingKey: any CodingKey](rawrepresentable/codingkey-2f0gm.md)
-- [var codingKey: any CodingKey](rawrepresentable/codingkey-xnw1.md)
-- [var hashValue: Int](rawrepresentable/hashvalue.md)
-- [var rawAttachmentValueRepresentation: CVAttachmentRawValue](rawrepresentable/rawattachmentvaluerepresentation.md)
+- [var codingKey: any CodingKey](./rawrepresentable/codingkey-2f0gm.md)
+- [var codingKey: any CodingKey](./rawrepresentable/codingkey-xnw1.md)
+- [var hashValue: Int](./rawrepresentable/hashvalue.md)
+- [var rawAttachmentValueRepresentation: CVAttachmentRawValue](./rawrepresentable/rawattachmentvaluerepresentation.md)
 ### Instance Methods
-- [func encode(to: any Encoder) throws](rawrepresentable/encode(to:)-172ut.md)
+- [func encode(to: any Encoder) throws](./rawrepresentable/encode%28to%29-172ut.md)
   Encodes this value into the given encoder, when the type’s `RawValue` is `Int128`.
-- [func encode(to: any Encoder) throws](rawrepresentable/encode(to:)-3ahar.md)
+- [func encode(to: any Encoder) throws](./rawrepresentable/encode%28to%29-3ahar.md)
   Encodes this value into the given encoder, when the type’s `RawValue` is `UInt128`.
-- [func hash(into: inout Hasher)](rawrepresentable/hash(into:).md)
+- [func hash(into: inout Hasher)](./rawrepresentable/hash%28into%29.md)
 ### Type Aliases
-- [RawRepresentable.AtomicOptionalRepresentation](rawrepresentable/atomicoptionalrepresentation.md)
+- [RawRepresentable.AtomicOptionalRepresentation](./rawrepresentable/atomicoptionalrepresentation.md)
   The storage representation type that encodes to and decodes from `Optional<Self>` which is a suitable type when used in atomic operations on `Optional`.
-- [RawRepresentable.AtomicRepresentation](rawrepresentable/atomicrepresentation.md)
+- [RawRepresentable.AtomicRepresentation](./rawrepresentable/atomicrepresentation.md)
   The storage representation type that `Self` encodes to and decodes from which is a suitable type when used in atomic operations.
 ### Type Methods
-- [static func decodeAtomicOptionalRepresentation(consuming Self.RawValue.AtomicOptionalRepresentation) -> Self?](rawrepresentable/decodeatomicoptionalrepresentation(_:).md)
+- [static func decodeAtomicOptionalRepresentation(consuming Self.RawValue.AtomicOptionalRepresentation) -> Self?](./rawrepresentable/decodeatomicoptionalrepresentation%28_%29.md)
   Recovers the logical atomic type `Self?` by destroying some `AtomicOptionalRepresentation` storage instance returned from an atomic operation on `Optional`.
-- [static func decodeAtomicRepresentation(consuming Self.RawValue.AtomicRepresentation) -> Self](rawrepresentable/decodeatomicrepresentation(_:).md)
+- [static func decodeAtomicRepresentation(consuming Self.RawValue.AtomicRepresentation) -> Self](./rawrepresentable/decodeatomicrepresentation%28_%29.md)
   Recovers the logical atomic type `Self` by destroying some `AtomicRepresentation` storage instance returned from an atomic operation.
-- [static func encodeAtomicOptionalRepresentation(consuming Self?) -> Self.RawValue.AtomicOptionalRepresentation](rawrepresentable/encodeatomicoptionalrepresentation(_:).md)
+- [static func encodeAtomicOptionalRepresentation(consuming Self?) -> Self.RawValue.AtomicOptionalRepresentation](./rawrepresentable/encodeatomicoptionalrepresentation%28_%29.md)
   Destroys a value of `Self` and prepares an `AtomicOptionalRepresentation` storage type to be used for atomic operations on `Optional`.
-- [static func encodeAtomicRepresentation(consuming Self) -> Self.RawValue.AtomicRepresentation](rawrepresentable/encodeatomicrepresentation(_:).md)
+- [static func encodeAtomicRepresentation(consuming Self) -> Self.RawValue.AtomicRepresentation](./rawrepresentable/encodeatomicrepresentation%28_%29.md)
   Destroys a value of `Self` and prepares an `AtomicRepresentation` storage type to be used for atomic operations.
-- [static func makeFromRawAttachmentValue(CVAttachmentRawValue) -> Self?](rawrepresentable/makefromrawattachmentvalue(_:).md)
+- [static func makeFromRawAttachmentValue(CVAttachmentRawValue) -> Self?](./rawrepresentable/makefromrawattachmentvalue%28_%29.md)
 
 ## Relationships
 
 ### Inherited By
-- [OptionSet](optionset.md)
+- [OptionSet](./optionset.md)
 ### Conforming Types
-- [CodingUserInfoKey](codinguserinfokey.md)
-- [FloatingPointSign](floatingpointsign.md)
-- [String.Encoding](string/encoding.md)
-- [TaskPriority](taskpriority.md)
-- [Unicode.CanonicalCombiningClass](unicode/canonicalcombiningclass.md)
-- [Unicode.UTF8.ValidationError.Kind](unicode/utf8/validationerror/kind-swift.struct.md)
+- [CodingUserInfoKey](./codinguserinfokey.md)
+- [FloatingPointSign](./floatingpointsign.md)
+- [String.Encoding](./string/encoding.md)
+- [TaskPriority](./taskpriority.md)
+- [Unicode.CanonicalCombiningClass](./unicode/canonicalcombiningclass.md)
+- [Unicode.UTF8.ValidationError.Kind](./unicode/utf8/validationerror/kind-swift.struct.md)
 
 ## See Also
 
-- [protocol CaseIterable](caseiterable.md)
+### Raw Representation
+- [protocol CaseIterable](./caseiterable.md)
   A type that provides a collection of all of its values.
 
 

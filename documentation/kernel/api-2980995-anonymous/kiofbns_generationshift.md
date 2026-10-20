@@ -1,14 +1,15 @@
 # kIOFBNS_GenerationShift
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 kIOFBNS_GenerationShift = 16
 ```
 

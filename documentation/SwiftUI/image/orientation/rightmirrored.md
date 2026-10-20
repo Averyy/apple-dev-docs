@@ -1,7 +1,8 @@
 # Image.Orientation.rightMirrored
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates a 90° counterclockwise rotation and horizontal flip from the orientation of its original pixel data.
 
@@ -22,11 +23,12 @@ case rightMirrored
 
 ## See Also
 
-- [Image.Orientation.upMirrored](image/orientation/upmirrored.md)
+### Getting mirrored image orientation
+- [Image.Orientation.upMirrored](./upmirrored.md)
   A value that indicates a horizontal flip of the image from the orientation of its original pixel data.
-- [Image.Orientation.downMirrored](image/orientation/downmirrored.md)
+- [Image.Orientation.downMirrored](./downmirrored.md)
   A value that indicates a vertical flip of the image from the orientation of its original pixel data.
-- [Image.Orientation.leftMirrored](image/orientation/leftmirrored.md)
+- [Image.Orientation.leftMirrored](./leftmirrored.md)
   A value that indicates a 90° clockwise rotation and horizontal flip of the image from the orientation of its original pixel data.
 
 

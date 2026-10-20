@@ -1,7 +1,8 @@
 # errSecCertificateValidityPeriodTooLong
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The validity period in the certificate exceeds the maximum allowed period.
 
@@ -18,6 +19,10 @@ The validity period in the certificate exceeds the maximum allowed period.
 
 ```swift
 var errSecCertificateValidityPeriodTooLong: OSStatus { get }
+```
+
+```c
+errSecCertificateValidityPeriodTooLong
 ```
 
 

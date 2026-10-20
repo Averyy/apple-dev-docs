@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Group Activities  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance for storing descriptive information about an activity.
 
@@ -21,7 +22,7 @@ init()
 
 #### Discussion
 
-After you create a new [`GroupActivityMetadata`](groupactivitymetadata.md) structure, assign values to its properties and deliver it to the system from the [`metadata`](groupactivity/metadata.md) property of your custom [`GroupActivity`](groupactivity.md) type.
+After you create a new [`GroupActivityMetadata`](../groupactivitymetadata.md) structure, assign values to its properties and deliver it to the system from the [`metadata`](../groupactivity/metadata.md) property of your custom [`GroupActivity`](../groupactivity.md) type.
 
 
 ---

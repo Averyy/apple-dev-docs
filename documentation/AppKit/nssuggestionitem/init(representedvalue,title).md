@@ -1,7 +1,8 @@
 # init(representedValue:title:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 15.0+

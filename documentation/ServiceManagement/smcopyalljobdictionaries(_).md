@@ -1,20 +1,25 @@
 # SMCopyAllJobDictionaries(_:)
 
 **Framework**: Service Management  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Copies the job description dictionaries for all jobs in the specified domain.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 13.1+
-- macOS 10.6+
+- iOS 3.0+ - Deprecated in 8.0
+- iPadOS 3.0+ - Deprecated in 8.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.6+ - Deprecated in 10.10
 
 ## Declaration
 
 ```swift
 func SMCopyAllJobDictionaries(_ domain: CFString!) -> Unmanaged<CFArray>!
+```
+
+```c
+extern CFArrayRefSMCopyAllJobDictionaries(CFStringRef domain);
 ```
 
 #### Return Value
@@ -23,15 +28,16 @@ A new array containing all job dictionaries, or `NULL` if an error occurred. The
 
 ## Parameters
 
-- `domain`: The job’s domain (for example, [`kSMDomainSystemLaunchd`](ksmdomainsystemlaunchd.md)).
+- `domain`: The job’s domain (for example, [`kSMDomainSystemLaunchd`](./ksmdomainsystemlaunchd.md)).
 
 ## See Also
 
-- [func SMJobCopyDictionary(CFString!, CFString) -> Unmanaged<CFDictionary>!](smjobcopydictionary(_:_:).md)
+### Deprecated Functions
+- [func SMJobCopyDictionary(CFString!, CFString) -> Unmanaged<CFDictionary>!](./smjobcopydictionary%28_,_%29.md)
   Copies the job description dictionary for the specified job label.
-- [func SMJobRemove(CFString!, CFString, UnsafeMutableRawPointer!, Bool, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](smjobremove(_:_:_:_:_:).md)
+- [func SMJobRemove(CFString!, CFString, UnsafeMutableRawPointer!, Bool, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](./smjobremove%28_,_,_,_,_%29.md)
   Removes the job with the specified label from the specified domain.
-- [func SMJobSubmit(CFString!, CFDictionary, UnsafeMutableRawPointer!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](smjobsubmit(_:_:_:_:).md)
+- [func SMJobSubmit(CFString!, CFDictionary, UnsafeMutableRawPointer!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](./smjobsubmit%28_,_,_,_%29.md)
   Submits the specified job to the specified domain.
 
 

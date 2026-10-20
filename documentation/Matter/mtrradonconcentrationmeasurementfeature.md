@@ -1,7 +1,8 @@
 # MTRRadonConcentrationMeasurementFeature
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.6+
@@ -18,29 +19,33 @@
 struct MTRRadonConcentrationMeasurementFeature
 ```
 
+```c
+enum MTRRadonConcentrationMeasurementFeature : uint32_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](mtrradonconcentrationmeasurementfeature/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./mtrradonconcentrationmeasurementfeature/init%28rawvalue%29.md)
 ### Type Properties
-- [static var averageMeasurement: MTRRadonConcentrationMeasurementFeature](mtrradonconcentrationmeasurementfeature/averagemeasurement.md)
-- [static var criticalLevel: MTRRadonConcentrationMeasurementFeature](mtrradonconcentrationmeasurementfeature/criticallevel.md)
-- [static var levelIndication: MTRRadonConcentrationMeasurementFeature](mtrradonconcentrationmeasurementfeature/levelindication.md)
-- [static var mediumLevel: MTRRadonConcentrationMeasurementFeature](mtrradonconcentrationmeasurementfeature/mediumlevel.md)
-- [static var numericMeasurement: MTRRadonConcentrationMeasurementFeature](mtrradonconcentrationmeasurementfeature/numericmeasurement.md)
-- [static var peakMeasurement: MTRRadonConcentrationMeasurementFeature](mtrradonconcentrationmeasurementfeature/peakmeasurement.md)
+- [static var averageMeasurement: MTRRadonConcentrationMeasurementFeature](./mtrradonconcentrationmeasurementfeature/averagemeasurement.md)
+- [static var criticalLevel: MTRRadonConcentrationMeasurementFeature](./mtrradonconcentrationmeasurementfeature/criticallevel.md)
+- [static var levelIndication: MTRRadonConcentrationMeasurementFeature](./mtrradonconcentrationmeasurementfeature/levelindication.md)
+- [static var mediumLevel: MTRRadonConcentrationMeasurementFeature](./mtrradonconcentrationmeasurementfeature/mediumlevel.md)
+- [static var numericMeasurement: MTRRadonConcentrationMeasurementFeature](./mtrradonconcentrationmeasurementfeature/numericmeasurement.md)
+- [static var peakMeasurement: MTRRadonConcentrationMeasurementFeature](./mtrradonconcentrationmeasurementfeature/peakmeasurement.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

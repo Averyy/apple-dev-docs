@@ -1,7 +1,8 @@
 # featureCount
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of features expected in the input.
 
@@ -22,7 +23,8 @@ var featureCount: Int { get }
 
 ## See Also
 
-- [var coefficients: [Scalar]](linearregressormodel/coefficients.md)
+### Getting the properties
+- [var coefficients: [Scalar]](./coefficients.md)
   The linear coefficients.
 
 

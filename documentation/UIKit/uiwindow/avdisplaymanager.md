@@ -1,7 +1,8 @@
 # avDisplayManager
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The display manager that handles requests for screen resolution, refresh rate, and HDR mode information.
 
@@ -15,9 +16,14 @@ The display manager that handles requests for screen resolution, refresh rate, a
 var avDisplayManager: AVDisplayManager { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVDisplayManager * avDisplayManager;
+```
+
 ## See Also
 
-- [var windowScene: UIWindowScene?](uiwindow/windowscene.md)
+### Getting related objects
+- [var windowScene: UIWindowScene?](./windowscene.md)
   The scene containing the window.
 
 

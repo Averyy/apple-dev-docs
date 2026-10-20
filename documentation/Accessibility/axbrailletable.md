@@ -1,7 +1,8 @@
 # AXBrailleTable
 
 **Framework**: Accessibility  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A rule for translating print text to Braille, and back-translating Braille to print text.
 
@@ -20,57 +21,62 @@ A rule for translating print text to Braille, and back-translating Braille to pr
 class AXBrailleTable
 ```
 
+```objc
+@interface AXBrailleTable : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](axbrailletable/init(coder:).md)
-- [init?(identifier: String)](axbrailletable/init(identifier:).md)
+- [init?(coder: NSCoder)](./axbrailletable/init%28coder%29.md)
+- [init?(identifier: String)](./axbrailletable/init%28identifier%29.md)
   Returns nil if there is no table with the given identifier.
 ### Instance Properties
-- [var identifier: String](axbrailletable/identifier.md)
+- [var identifier: String](./axbrailletable/identifier.md)
   A unique string that identifies this table.
-- [var isEightDot: Bool](axbrailletable/iseightdot.md)
+- [var isEightDot: Bool](./axbrailletable/iseightdot.md)
   Returns true if this table makes use of eight dots as opposed to six dots.
-- [var language: Locale.Language](axbrailletable/language-3stsd.md)
-- [var locales: Set<Locale>](axbrailletable/locales.md)
+- [var language: Locale.Language](./axbrailletable/language-3stsd.md)
+- [var locales: Set<Locale>](./axbrailletable/locales.md)
   All locales this table supports.
-- [var localizedName: String](axbrailletable/localizedname.md)
+- [var localizedName: String](./axbrailletable/localizedname.md)
   The localized name of this table for user display.
-- [var localizedProviderName: String](axbrailletable/localizedprovidername.md)
+- [var localizedProviderName: String](./axbrailletable/localizedprovidername.md)
   The localized name of the provider of this table for user display.
-- [var providerIdentifier: String](axbrailletable/provideridentifier.md)
+- [var providerIdentifier: String](./axbrailletable/provideridentifier.md)
   The identifier of the provider of this table.
 ### Type Methods
-- [class func defaultTable(for: Locale) -> AXBrailleTable?](axbrailletable/defaulttable(for:).md)
+- [class func defaultTable(for: Locale) -> AXBrailleTable?](./axbrailletable/defaulttable%28for%29.md)
   The default table that provides translations for the given locale’s language. Returns nil if there is none.
-- [class func languageAgnosticTables() -> Set<AXBrailleTable>](axbrailletable/languageagnostictables.md)
+- [class func languageAgnosticTables() -> Set<AXBrailleTable>](./axbrailletable/languageagnostictables%28%29.md)
   All tables that are not specific to any language.
-- [class func supportedLocales() -> Set<Locale>](axbrailletable/supportedlocales.md)
+- [class func supportedLocales() -> Set<Locale>](./axbrailletable/supportedlocales%28%29.md)
   All locales supported by existing tables.
-- [class func tables(for: Locale) -> Set<AXBrailleTable>](axbrailletable/tables(for:).md)
+- [class func tables(for: Locale) -> Set<AXBrailleTable>](./axbrailletable/tables%28for%29.md)
   All tables that provide translations for the given locale’s language.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Braille displays](braille-displays.md)
+### Braille
+- [Braille displays](./braille-displays.md)
   Display a graphical representation of images, icons, data, and more on a two-dimensional braille display.
-- [class AXBrailleTranslator](axbrailletranslator.md)
+- [class AXBrailleTranslator](./axbrailletranslator.md)
   Translates print text to Braille and Braille to print text according to the given Braille table.
-- [class AXBrailleTranslationResult](axbrailletranslationresult.md)
+- [class AXBrailleTranslationResult](./axbrailletranslationresult.md)
   The result of translation or back-translation.
 
 

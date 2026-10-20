@@ -1,7 +1,8 @@
 # LibraryArtistSortProperties
 
 **Framework**: MusicKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Artist properties your app uses to sort results for a library request.
 
@@ -23,11 +24,11 @@ protocol LibraryArtistSortProperties
 ## Topics
 
 ### Instance Properties
-- [var albumCount: Int?](libraryartistsortproperties/albumcount.md)
+- [var albumCount: Int?](./libraryartistsortproperties/albumcount.md)
   The number of albums from this artist.
-- [var libraryAddedDate: Date?](libraryartistsortproperties/libraryaddeddate.md)
+- [var libraryAddedDate: Date?](./libraryartistsortproperties/libraryaddeddate.md)
   The date when the user added the artist to the library.
-- [var name: String](libraryartistsortproperties/name.md)
+- [var name: String](./libraryartistsortproperties/name.md)
   The name of the artist.
 
 

@@ -1,7 +1,8 @@
 # init(clockName:sourceIdentifier:getTimeCallMinimumInterval:numberOfEventsForRateSmoothing:numberOfAveragesForRateSmoothing:)
 
 **Framework**: Core Media I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a custom clock configuration.
 
@@ -13,6 +14,10 @@ Creates a custom clock configuration.
 
 ```swift
 init(clockName: String, sourceIdentifier: UUID, getTimeCallMinimumInterval: CMTime, numberOfEventsForRateSmoothing: UInt32, numberOfAveragesForRateSmoothing: UInt32)
+```
+
+```objc
+- (instancetype) initWithClockName:(NSString *) clockName sourceIdentifier:(NSUUID *) sourceIdentifier getTimeCallMinimumInterval:(CMTime) getTimeCallMinimumInterval numberOfEventsForRateSmoothing:(uint32_t) numberOfEventsForRateSmoothing numberOfAveragesForRateSmoothing:(uint32_t) numberOfAveragesForRateSmoothing;
 ```
 
 ## Parameters

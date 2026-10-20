@@ -1,7 +1,8 @@
 # resetFocus
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An action that requests the focus system to reevaluate default focus.
 
@@ -33,7 +34,8 @@ var body: some View {
 
 ## See Also
 
-- [struct ResetFocusAction](resetfocusaction.md)
+### Resetting focus
+- [struct ResetFocusAction](../resetfocusaction.md)
   An environment value that provides the ability to reevaluate default focus.
 
 

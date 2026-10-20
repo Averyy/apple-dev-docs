@@ -1,7 +1,8 @@
 # TextSelection.Indices.selection(_:)
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The range of the single selection. This may also an represent insertion points if `range.lowerBound == range.upperBound`.
 

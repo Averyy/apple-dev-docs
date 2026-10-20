@@ -1,15 +1,22 @@
 # challengeDelegate
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS 10.8+
+- macOS 10.8+ - Deprecated in 10.10
+
+> **Deprecated**: No longer supported
 
 ## Declaration
 
 ```swift
 weak var challengeDelegate: (any GKChallengesViewControllerDelegate)! { get set }
+```
+
+```objc
+@property (atomic, weak) id<GKChallengesViewControllerDelegate> challengeDelegate;
 ```
 
 

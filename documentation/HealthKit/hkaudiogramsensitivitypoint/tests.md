@@ -1,7 +1,8 @@
 # tests
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.1+
@@ -15,6 +16,10 @@
 
 ```swift
 var tests: [HKAudiogramSensitivityTest] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<HKAudiogramSensitivityTest *> * tests;
 ```
 
 #### Discussion

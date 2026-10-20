@@ -1,7 +1,8 @@
 # invalidPredicateValueType
 
 **Framework**: TipKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.0+

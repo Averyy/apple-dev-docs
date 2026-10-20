@@ -1,7 +1,8 @@
 # HMCharacteristicValueAirQuality.excellent
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The air quality is excellent.
 
@@ -19,17 +20,22 @@ The air quality is excellent.
 case excellent
 ```
 
+```c
+HMCharacteristicValueAirQualityExcellent
+```
+
 ## See Also
 
-- [HMCharacteristicValueAirQuality.unknown](hmcharacteristicvalueairquality/unknown.md)
+### Air Quality
+- [HMCharacteristicValueAirQuality.unknown](./unknown.md)
   The air quality is unknown.
-- [HMCharacteristicValueAirQuality.good](hmcharacteristicvalueairquality/good.md)
+- [HMCharacteristicValueAirQuality.good](./good.md)
   The air quality is good.
-- [HMCharacteristicValueAirQuality.fair](hmcharacteristicvalueairquality/fair.md)
+- [HMCharacteristicValueAirQuality.fair](./fair.md)
   The air quality is fair.
-- [HMCharacteristicValueAirQuality.inferior](hmcharacteristicvalueairquality/inferior.md)
+- [HMCharacteristicValueAirQuality.inferior](./inferior.md)
   The air quality is inferior.
-- [HMCharacteristicValueAirQuality.poor](hmcharacteristicvalueairquality/poor.md)
+- [HMCharacteristicValueAirQuality.poor](./poor.md)
   The air quality is poor.
 
 

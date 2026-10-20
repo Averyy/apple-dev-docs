@@ -1,7 +1,8 @@
 # BetaTesterInvitationCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships to other resources that you can set with this request.
 
@@ -10,22 +11,22 @@ The relationships to other resources that you can set with this request.
 
 ## Declaration
 
-```swift
+```
 object BetaTesterInvitationCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object BetaTesterInvitationCreateRequest.Data.Relationships.App](betatesterinvitationcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)
+- [object BetaTesterInvitationCreateRequest.Data.Relationships.App](./relationships-data.dictionary/app-data.dictionary.md)
   The relationships to other resources that you can set with this request.
-- [object BetaTesterInvitationCreateRequest.Data.Relationships.BetaTester](betatesterinvitationcreaterequest/data-data.dictionary/relationships-data.dictionary/betatester-data.dictionary.md)
+- [object BetaTesterInvitationCreateRequest.Data.Relationships.BetaTester](./relationships-data.dictionary/betatester-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 ## Properties
 
 - `app` (BetaTesterInvitationCreateRequest.Data.Relationships.App) *(required)*
-- `betaTester` (BetaTesterInvitationCreateRequest.Data.Relationships.BetaTester)
+- `betaTester` (BetaTesterInvitationCreateRequest.Data.Relationships.BetaTester) *(deprecated)*
 
 
 ---

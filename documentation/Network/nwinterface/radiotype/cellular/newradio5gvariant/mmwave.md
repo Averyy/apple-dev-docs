@@ -1,7 +1,8 @@
 # NWInterface.RadioType.Cellular.NewRadio5GVariant.mmWave
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 15.0+

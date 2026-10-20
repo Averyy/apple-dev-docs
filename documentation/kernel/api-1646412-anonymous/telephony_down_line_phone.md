@@ -1,14 +1,15 @@
 # TELEPHONY_DOWN_LINE_PHONE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 TELEPHONY_DOWN_LINE_PHONE = 0x0503
 ```
 

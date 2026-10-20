@@ -1,7 +1,8 @@
 # KeyResult.Mode.major
 
 **Framework**: Music Understanding  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The major keys.
 

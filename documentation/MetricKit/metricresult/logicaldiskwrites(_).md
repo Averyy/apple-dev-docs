@@ -1,7 +1,8 @@
 # MetricResult.logicalDiskWrites(_:)
 
 **Framework**: MetricKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -17,9 +18,10 @@ case logicalDiskWrites(LogicalDiskWritesMetric)
 
 ## See Also
 
-- [case totalFileCount(TotalFileCountMetric)](metricresult/totalfilecount(_:).md)
-- [case totalFileSize(TotalFileSizeMetric)](metricresult/totalfilesize(_:).md)
-- [case totalDiskSpaceCapacity(TotalDiskSpaceCapacityMetric)](metricresult/totaldiskspacecapacity(_:).md)
+### Storage
+- [case totalFileCount(TotalFileCountMetric)](./totalfilecount%28_%29.md)
+- [case totalFileSize(TotalFileSizeMetric)](./totalfilesize%28_%29.md)
+- [case totalDiskSpaceCapacity(TotalDiskSpaceCapacityMetric)](./totaldiskspacecapacity%28_%29.md)
 
 
 ---

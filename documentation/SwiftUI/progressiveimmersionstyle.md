@@ -1,7 +1,8 @@
 # ProgressiveImmersionStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An immersion style that displays unbounded content that partially replaces passthrough video.
 
@@ -17,38 +18,39 @@ struct ProgressiveImmersionStyle
 
 #### Overview
 
-Use [`progressive`](immersionstyle/progressive.md) with the [`immersionStyle(selection:in:)`](scene/immersionstyle(selection:in:).md)modifier to specify this style.
+Use [`progressive`](./immersionstyle/progressive.md) with the [`immersionStyle(selection:in:)`](./scene/immersionstyle%28selection,in%29.md)modifier to specify this style.
 
 ## Topics
 
 ### Creating the immersion style
-- [init()](progressiveimmersionstyle/init.md)
+- [init()](./progressiveimmersionstyle/init%28%29.md)
   An immersion style that displays unbounded content that partially replaces passthrough video.
 ### Initializers
-- [init(immersion:initialAmount:)](progressiveimmersionstyle/init(immersion:initialamount:).md)
+- [init(immersion:initialAmount:)](./progressiveimmersionstyle/init%28immersion,initialamount%29.md)
   An immersion style that displays unbounded content that partially replaces passthrough video.
 ### Instance Properties
-- [let aspectRatio: ProgressiveImmersionAspectRatio](progressiveimmersionstyle/aspectratio.md)
+- [let aspectRatio: ProgressiveImmersionAspectRatio](./progressiveimmersionstyle/aspectratio.md)
   The aspect ratio used for this instance of the style.
-- [let initialImmersionAmount: Double?](progressiveimmersionstyle/initialimmersionamount.md)
+- [let initialImmersionAmount: Double?](./progressiveimmersionstyle/initialimmersionamount.md)
   The initial amount of immersion used for this instance of the style.
-- [let maximumImmersionAmount: Double?](progressiveimmersionstyle/maximumimmersionamount.md)
+- [let maximumImmersionAmount: Double?](./progressiveimmersionstyle/maximumimmersionamount.md)
   The maximum amount of immersion used for this instance of the style.
-- [let minimumImmersionAmount: Double?](progressiveimmersionstyle/minimumimmersionamount.md)
+- [let minimumImmersionAmount: Double?](./progressiveimmersionstyle/minimumimmersionamount.md)
   The minimum amount of immersion used for this instance of the style.
 
 ## Relationships
 
 ### Conforms To
-- [ImmersionStyle](immersionstyle.md)
+- [ImmersionStyle](./immersionstyle.md)
 
 ## See Also
 
-- [struct AutomaticImmersionStyle](automaticimmersionstyle.md)
+### Supporting types
+- [struct AutomaticImmersionStyle](./automaticimmersionstyle.md)
   The default style of immersive spaces.
-- [struct FullImmersionStyle](fullimmersionstyle.md)
+- [struct FullImmersionStyle](./fullimmersionstyle.md)
   An immersion style that displays unbounded content that completely replaces passthrough video.
-- [struct MixedImmersionStyle](mixedimmersionstyle.md)
+- [struct MixedImmersionStyle](./mixedimmersionstyle.md)
   An immersion style that displays unbounded content intermixed with other app content, along with passthrough video.
 
 

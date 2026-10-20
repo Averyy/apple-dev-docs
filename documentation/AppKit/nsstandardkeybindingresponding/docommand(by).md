@@ -1,7 +1,8 @@
 # doCommand(by:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs the given selector if possible.
 
@@ -12,6 +13,10 @@ Performs the given selector if possible.
 
 ```swift
 optional func doCommand(by selector: Selector)
+```
+
+```objc
+- (void) doCommandBySelector:(SEL) selector;
 ```
 
 ## Parameters

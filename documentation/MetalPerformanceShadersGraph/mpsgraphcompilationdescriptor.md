@@ -1,7 +1,8 @@
 # MPSGraphCompilationDescriptor
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that consists of all the levers for compiling graphs.
 
@@ -19,75 +20,80 @@ A class that consists of all the levers for compiling graphs.
 class MPSGraphCompilationDescriptor
 ```
 
+```objc
+@interface MPSGraphCompilationDescriptor : MPSGraphObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var callables: [String : MPSGraphExecutable]?](mpsgraphcompilationdescriptor/callables.md)
-  The dictionary used during runtime to lookup the [`MPSGraphExecutable`](mpsgraphexecutable.md) which correspond to the `symbolName`.
-- [var compilationCompletionHandler: MPSGraphCompilationCompletionHandler](mpsgraphcompilationdescriptor/compilationcompletionhandler.md)
+- [var callables: [String : MPSGraphExecutable]?](./mpsgraphcompilationdescriptor/callables.md)
+  The dictionary used during runtime to lookup the [`MPSGraphExecutable`](./mpsgraphexecutable.md) which correspond to the `symbolName`.
+- [var compilationCompletionHandler: MPSGraphCompilationCompletionHandler](./mpsgraphcompilationdescriptor/compilationcompletionhandler.md)
   The handler that the graph calls when the compilation completes.
-- [var dispatchQueue: dispatch_queue_t](mpsgraphcompilationdescriptor/dispatchqueue.md)
+- [var dispatchQueue: dispatch_queue_t](./mpsgraphcompilationdescriptor/dispatchqueue.md)
   The dispatch queue used for the compilation.
-- [var optimizationLevel: MPSGraphOptimization](mpsgraphcompilationdescriptor/optimizationlevel.md)
+- [var optimizationLevel: MPSGraphOptimization](./mpsgraphcompilationdescriptor/optimizationlevel.md)
   The optimization level for the graph execution, default is MPSGraphOptimizationLevel1.
-- [var optimizationProfile: MPSGraphOptimizationProfile](mpsgraphcompilationdescriptor/optimizationprofile.md)
+- [var optimizationProfile: MPSGraphOptimizationProfile](./mpsgraphcompilationdescriptor/optimizationprofile.md)
   The optimization profile for the graph optimization.
-- [var reducedPrecisionFastMath: MPSGraphReducedPrecisionFastMath](mpsgraphcompilationdescriptor/reducedprecisionfastmath.md)
+- [var reducedPrecisionFastMath: MPSGraphReducedPrecisionFastMath](./mpsgraphcompilationdescriptor/reducedprecisionfastmath.md)
   Across the executable allow reduced precision fast math optimizations.
-- [var waitForCompilationCompletion: Bool](mpsgraphcompilationdescriptor/waitforcompilationcompletion.md)
+- [var waitForCompilationCompletion: Bool](./mpsgraphcompilationdescriptor/waitforcompilationcompletion.md)
   Flag that makes the compile or specialize call blocking till the entire compilation is complete, defaults to NO.
 ### Instance Methods
-- [func convertLayoutToNHWC()](mpsgraphcompilationdescriptor/convertlayouttonhwc.md)
+- [func convertLayoutToNHWC()](./mpsgraphcompilationdescriptor/convertlayouttonhwc%28%29.md)
   Turns on Automatic Layout Conversion (for conv like operations) for GPU.
-- [func disableAutoLayoutConversion()](mpsgraphcompilationdescriptor/disableautolayoutconversion.md)
+- [func disableAutoLayoutConversion()](./mpsgraphcompilationdescriptor/disableautolayoutconversion%28%29.md)
   Turns off Automatic Layout Conversion (for conv like operations) for GPU.
-- [func disableTypeInference()](mpsgraphcompilationdescriptor/disabletypeinference.md)
+- [func disableTypeInference()](./mpsgraphcompilationdescriptor/disabletypeinference%28%29.md)
   Turns off type inference and relies on type inference during runtime.
 
 ## Relationships
 
 ### Inherits From
-- [MPSGraphObject](mpsgraphobject.md)
+- [MPSGraphObject](./mpsgraphobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSGraph](mpsgraph.md)
+### Classes
+- [class MPSGraph](./mpsgraph.md)
   The optimized representation of a compute graph of operations and tensors.
-- [class MPSGraphConvolution2DOpDescriptor](mpsgraphconvolution2dopdescriptor.md)
+- [class MPSGraphConvolution2DOpDescriptor](./mpsgraphconvolution2dopdescriptor.md)
   A class that describes the properties of a 2D-convolution operator.
-- [class MPSGraphConvolution3DOpDescriptor](mpsgraphconvolution3dopdescriptor.md)
+- [class MPSGraphConvolution3DOpDescriptor](./mpsgraphconvolution3dopdescriptor.md)
   A class that describes the properties of a 3D-convolution operator.
-- [class MPSGraphCreateSparseOpDescriptor](mpsgraphcreatesparseopdescriptor.md)
+- [class MPSGraphCreateSparseOpDescriptor](./mpsgraphcreatesparseopdescriptor.md)
   A class that describes the properties of a create sparse operation.
-- [class MPSGraphDepthwiseConvolution2DOpDescriptor](mpsgraphdepthwiseconvolution2dopdescriptor.md)
+- [class MPSGraphDepthwiseConvolution2DOpDescriptor](./mpsgraphdepthwiseconvolution2dopdescriptor.md)
   A class that defines the parameters for  a 2D-depthwise convolution operation.
-- [class MPSGraphDepthwiseConvolution3DOpDescriptor](mpsgraphdepthwiseconvolution3dopdescriptor.md)
+- [class MPSGraphDepthwiseConvolution3DOpDescriptor](./mpsgraphdepthwiseconvolution3dopdescriptor.md)
   The class that defines the parameters for a 3D-depthwise convolution operation.
-- [class MPSGraphDevice](mpsgraphdevice.md)
+- [class MPSGraphDevice](./mpsgraphdevice.md)
   A class that describes the compute device.
-- [class MPSGraphExecutable](mpsgraphexecutable.md)
+- [class MPSGraphExecutable](./mpsgraphexecutable.md)
   The compiled representation of a compute graph executable.
-- [class MPSGraphExecutableExecutionDescriptor](mpsgraphexecutableexecutiondescriptor.md)
+- [class MPSGraphExecutableExecutionDescriptor](./mpsgraphexecutableexecutiondescriptor.md)
   A class that consists of all the levers  to synchronize and schedule executable execution.
-- [class MPSGraphExecutableSerializationDescriptor](mpsgraphexecutableserializationdescriptor.md)
+- [class MPSGraphExecutableSerializationDescriptor](./mpsgraphexecutableserializationdescriptor.md)
   A class that consists of all the levers  to serialize an executable.
-- [class MPSGraphExecutionDescriptor](mpsgraphexecutiondescriptor.md)
+- [class MPSGraphExecutionDescriptor](./mpsgraphexecutiondescriptor.md)
   A class that consists of all the levers  to synchronize and schedule graph execution.
-- [class MPSGraphFFTDescriptor](mpsgraphfftdescriptor.md)
+- [class MPSGraphFFTDescriptor](./mpsgraphfftdescriptor.md)
   The class that defines the parameters for a fast Fourier transform (FFT) operation.
-- [class MPSGraphGRUDescriptor](mpsgraphgrudescriptor.md)
+- [class MPSGraphGRUDescriptor](./mpsgraphgrudescriptor.md)
   The class that defines the parameters for a gated recurrent unit (GRU) operation.
-- [class MPSGraphImToColOpDescriptor](mpsgraphimtocolopdescriptor.md)
+- [class MPSGraphImToColOpDescriptor](./mpsgraphimtocolopdescriptor.md)
   The class that defines the parameters for an image to column or column to image operation.
-- [class MPSGraphLSTMDescriptor](mpsgraphlstmdescriptor.md)
+- [class MPSGraphLSTMDescriptor](./mpsgraphlstmdescriptor.md)
   The class that defines the parameters for a long short-term memory (LSTM) operation.
 
 

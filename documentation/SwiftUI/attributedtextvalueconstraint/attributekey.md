@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The attribute constrained by this constraint.

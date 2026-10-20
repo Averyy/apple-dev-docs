@@ -1,7 +1,8 @@
 # items
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns all items for token in the keychain.
 
@@ -20,11 +21,16 @@ Returns all items for token in the keychain.
 var items: [TKTokenKeychainItem] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<TKTokenKeychainItem *> * items;
+```
+
 ## See Also
 
-- [func key(forObjectID: TKToken.ObjectID) throws -> TKTokenKeychainKey](tktokenkeychaincontents/key(forobjectid:).md)
+### Accessing Keychain Items
+- [func key(forObjectID: TKToken.ObjectID) throws -> TKTokenKeychainKey](./key%28forobjectid%29.md)
   Returns the key for a specified object identifier.
-- [func certificate(forObjectID: TKToken.ObjectID) throws -> TKTokenKeychainCertificate](tktokenkeychaincontents/certificate(forobjectid:).md)
+- [func certificate(forObjectID: TKToken.ObjectID) throws -> TKTokenKeychainCertificate](./certificate%28forobjectid%29.md)
   Returns the key for a specified object identifier.
 
 

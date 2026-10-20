@@ -1,7 +1,8 @@
 # transform(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates and returns a new Bézier path object with each point in the given path transformed by the receiver.
 
@@ -14,6 +15,10 @@ Creates and returns a new Bézier path object with each point in the given path 
 func transform(_ path: NSBezierPath) -> NSBezierPath
 ```
 
+```objc
+- (NSBezierPath *) transformBezierPath:(NSBezierPath *) path;
+```
+
 #### Discussion
 
 The original `NSBezierPath` object is not modified.
@@ -24,9 +29,10 @@ The original `NSBezierPath` object is not modified.
 
 ## See Also
 
-- [func transform(NSPoint) -> NSPoint](nsaffinetransform/transform(_:)-41p16.md)
+### Transforming Data and Objects
+- [func transform(NSPoint) -> NSPoint](./transform%28_%29-41p16.md)
   Applies the receiver’s transform to the specified point and returns the result.
-- [func transform(NSSize) -> NSSize](nsaffinetransform/transform(_:)-5r6ol.md)
+- [func transform(NSSize) -> NSSize](./transform%28_%29-5r6ol.md)
   Applies the receiver’s transform to the specified size and returns the results.
 
 

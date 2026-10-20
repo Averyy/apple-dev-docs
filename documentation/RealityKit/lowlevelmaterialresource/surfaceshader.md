@@ -1,7 +1,8 @@
 # LowLevelMaterialResource.SurfaceShader
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A compiled Metal function that implements the surface shader function.
 
@@ -19,37 +20,38 @@ final class SurfaceShader
 
 #### Overview
 
-Create a `SurfaceShader` by compiling a [`LowLevelMaterialResource.SurfaceShader.Descriptor`](lowlevelmaterialresource/surfaceshader/descriptor.md) with [`makeSurfaceShader(descriptor:)`](lowlevelrendercontext/makesurfaceshader(descriptor:)-66tq8.md), or use [`makeSimpleSurfaceShader(descriptor:)`](lowlevelrendercontext/makesimplesurfaceshader(descriptor:)-74vhb.md) for the built-in simple surface shader function.
+Create a `SurfaceShader` by compiling a [`LowLevelMaterialResource.SurfaceShader.Descriptor`](./surfaceshader/descriptor.md) with [`makeSurfaceShader(descriptor:)`](../lowlevelrendercontext/makesurfaceshader%28descriptor%29-66tq8.md), or use [`makeSimpleSurfaceShader(descriptor:)`](../lowlevelrendercontext/makesimplesurfaceshader%28descriptor%29-74vhb.md) for the built-in simple surface shader function.
 
 ## Topics
 
 ### Describing the shader
-- [LowLevelMaterialResource.SurfaceShader.Descriptor](lowlevelmaterialresource/surfaceshader/descriptor.md)
+- [LowLevelMaterialResource.SurfaceShader.Descriptor](./surfaceshader/descriptor.md)
   The name and library for a user-authored Metal surface shader function.
 ### Configuring shader parameters
-- [var parameterMapping: LowLevelMaterialParameterMapping?](lowlevelmaterialresource/surfaceshader/parametermapping.md)
+- [var parameterMapping: LowLevelMaterialParameterMapping?](./surfaceshader/parametermapping.md)
   The parameter name-to-slot mapping for this surface shader function, or `nil` if it takes no custom parameters.
-- [var argumentTableDescriptor: LowLevelArgumentTable.Descriptor?](lowlevelmaterialresource/surfaceshader/argumenttabledescriptor.md)
+- [var argumentTableDescriptor: LowLevelArgumentTable.Descriptor?](./surfaceshader/argumenttabledescriptor.md)
   The argument table descriptor for this surface shader, or `nil` if it takes no per-draw arguments.
 
 ## Relationships
 
 ### Conforms To
-- [LowLevelMaterialResource.Function](lowlevelmaterialresource/function.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [LowLevelMaterialResource.Function](./function.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var surface: LowLevelMaterialResource.SurfaceShader](lowlevelmaterialresource/surface.md)
+### Configuring the shaders
+- [var surface: LowLevelMaterialResource.SurfaceShader](./surface.md)
   The compiled fragment-stage surface shader.
-- [var geometry: LowLevelMaterialResource.GeometryModifier](lowlevelmaterialresource/geometry.md)
+- [var geometry: LowLevelMaterialResource.GeometryModifier](./geometry.md)
   The compiled vertex-stage geometry modifier.
-- [LowLevelMaterialResource.GeometryModifier](lowlevelmaterialresource/geometrymodifier.md)
+- [LowLevelMaterialResource.GeometryModifier](./geometrymodifier.md)
   A compiled Metal function that implements the geometry modifier function.
-- [LowLevelMaterialResource.LightingFunction](lowlevelmaterialresource/lightingfunction.md)
+- [LowLevelMaterialResource.LightingFunction](./lightingfunction.md)
   A compiled Metal function that evaluates lighting.
-- [LowLevelMaterialResource.Function](lowlevelmaterialresource/function.md)
+- [LowLevelMaterialResource.Function](./function.md)
   A compiled shader function that can receive per-draw parameters via an argument table.
 
 

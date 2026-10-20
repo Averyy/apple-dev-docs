@@ -1,7 +1,8 @@
 # replace(_:withAttributedText:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -14,6 +15,10 @@
 
 ```swift
 optional func replace(_ range: UITextRange, withAttributedText attributedText: NSAttributedString)
+```
+
+```objc
+- (void) replaceRange:(UITextRange *) range withAttributedText:(NSAttributedString *) attributedText;
 ```
 
 

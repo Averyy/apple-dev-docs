@@ -1,7 +1,8 @@
 # init(decodingCString:as:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new string by copying the null-terminated sequence of code units referenced by the given pointer.
 

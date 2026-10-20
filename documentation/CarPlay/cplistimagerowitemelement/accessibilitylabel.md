@@ -1,7 +1,8 @@
 # accessibilityLabel
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.4+
@@ -12,6 +13,10 @@
 
 ```swift
 var accessibilityLabel: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * accessibilityLabel;
 ```
 
 

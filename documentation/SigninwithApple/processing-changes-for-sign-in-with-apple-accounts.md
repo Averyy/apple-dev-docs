@@ -1,24 +1,25 @@
 # Processing changes for Sign in with Apple accounts
 
-**Framework**: Sign in with Apple
+**Framework**: Sign in with Apple  
+**Role**: Article
 
 Manage user-initiated modifications to maintain privacy with server-to-server notifications.
 
 #### Overview
 
-Sign in with Apple users can modify their accounts, including deleting or disabling their Apple Accounts. If your app or website hosts such an account, Apple can alert you when these changes occur by delivering developer notifications to your server. To learn how your users manage their account preferences for your app, see [`Manage the apps that you use with Sign in with Apple`](https://developer.apple.comhttps://support.apple.com/en-us/HT210426).
+Sign in with Apple users can modify their accounts, including deleting or disabling their Apple Accounts. If your app or website hosts such an account, Apple can alert you when these changes occur by delivering developer notifications to your server. To learn how your users manage their account preferences for your app, see [Manage the apps that you use with Sign in with Apple](https://support.apple.com/en-us/HT210426).
 
-##### Set Up Your Server
+##### Set up your server
 
-To receive server notifications for Sign in with Apple, your server must support the Transport Layer Security (TLS) 1.2 protocol or later. When determining the endpoint URL on your server to receive notifications, you may use the same URL for multiple developer teams and apps. To configure your Sign in with Apple service to receive notifications, see [`Enabling server-to-server notifications`](https://developer.apple.comhttps://developer.apple.com/help/account/configure-app-capabilities/enabling-server-to-server-notifications).
+To receive server notifications for Sign in with Apple, your server must support the Transport Layer Security (TLS) 1.2 protocol or later. When determining the endpoint URL on your server to receive notifications, you may use the same URL for multiple developer teams and apps. To configure your Sign in with Apple service to receive notifications, see [Enabling server-to-server notifications](https://developer.apple.com/help/account/configure-app-capabilities/enabling-server-to-server-notifications).
 
-##### Decode and Validate the Notifications
+##### Decode and validate the notifications
 
 These notifications contain a cryptographically signed payload, in JSON Web Signature (JWS) format, signed by Apple’s private key. After your server receives a notification, examine the JWS payload and use the algorithm specified in the header’s `alg` parameter to validate the signature. For more information, see [`Fetch Apple’s public key to verify token signatures`](https://developer.apple.com/documentation/signinwithapplerestapi/fetch-apple's-public-key-for-verifying-token-signature).
 
 After validating the token signature, your server performs work according to the `type` value in the `events` claim of the token. The notification payload object contains information about user-initiated account modification events. The event types include the following:
 
-- **`email-disabled`**: The user disables email forwarding to their personal email address using [`Hide My Email`](https://developer.apple.comhttps://support.apple.com/en-us/HT210425).
+- **`email-disabled`**: The user disables email forwarding to their personal email address using [Hide My Email](https://support.apple.com/en-us/HT210425).
 - **email-enabled**: The user enables email forwarding to their personal email address using Hide My Email.
 - **`consent-revoked`**: The user revokes consent for your app to use their Apple Account and their credentials become invalid.
 - **`account-deleted`**: The user requests that Apple permanently delete their Apple Account.
@@ -36,7 +37,7 @@ Pragma: no-cache
 }
 ```
 
-##### Process a Users Email Forwarding Change
+##### Process a user’s email forwarding change
 
 Users can enable or disable email forwarding to your app or website. When a user enables email forwarding, Apple sends a JWT to your registered endpoint URL with the `type` value of `email-enabled` in the `events` claim. A decoded payload for an email-enabled notification has the following format:
 
@@ -74,9 +75,9 @@ When a user disables email forwarding, Apple sends a JWT to your registered endp
 }
 ```
 
-To allow or prevent sending emails to the email address, be sure to update your server’s records according to your process. For more information, see [`Communicating using the private email relay service`](communicating-using-the-private-email-relay-service.md).
+To allow or prevent sending emails to the email address, be sure to update your server’s records according to your process. For more information, see [Communicating using the private email relay service](./communicating-using-the-private-email-relay-service.md).
 
-##### Process Disabling and Deleting a Users Apple Account
+##### Process disabling and deleting a user’s Apple Account
 
 Users can disable their Apple Account for a specific primary app ID, or delete their Apple Account account entirely. When a user disables their Apple Account for an app or app group, Apple sends a JWT to your registered endpoint URL with the `type` value of `consent-revoked` in the `events` claim. A decoded payload for a consent-revoked notification has the following format:
 
@@ -110,19 +111,20 @@ When a user requests for Apple to permanently delete their Apple Account, Apple 
 }
 ```
 
-> ❗ **Important**:  When a user permanently deletes their Apple Account, Sign in with Apple invalidates all user tokens and disables email forwarding for all associated apps. For native apps, the system doesn’t send a [`credentialRevokedNotification`](https://developer.apple.com/documentation/authenticationservices/asauthorizationappleidprovider/credentialrevokednotification). Use [`getCredentialState(forUserID:completion:)`](https://developer.apple.com/documentation/authenticationservices/asauthorizationappleidprovider/getcredentialstate(foruserid:completion:)) to respond to account deletion events.
+> ❗ **Important**:  When a user permanently deletes their Apple Account, Sign in with Apple invalidates all user tokens and disables email forwarding for all associated apps. For native apps, the system doesn’t send a [`credentialRevokedNotification`](../AuthenticationServices/asauthorizationappleidprovider/credentialrevokednotification.md). Use [`getCredentialState(forUserID:completion:)`](../AuthenticationServices/asauthorizationappleidprovider/getcredentialstate%28foruserid,completion%29.md) to respond to account deletion events.
 
-To indicate when the user disables or permanently deletes their Apple Account, be sure to update your server’s records according to your process. For more information about handling Managed Apple Accounts, see [`Obtaining information about people and classes`](https://developer.apple.com/documentation/rosterapi/obtaining-information-about-people-and-classes).
+To indicate when the user disables or permanently deletes their Apple Account, be sure to update your server’s records according to your process. For more information about handling Managed Apple Accounts, see [Obtaining information about people and classes](../RosterAPI/obtaining-information-about-people-and-classes.md).
 
 ## See Also
 
-- [Sign in with Apple JS](../signinwithapplejs/signinwithapplejs.md)
+### Web support
+- [Sign in with Apple JS](https://developer.apple.com/documentation/signinwithapplejs)
   Provide users a fast, secure way to sign in to your web service with their Apple Account.
-- [Sign in with Apple REST API](../signinwithapplerestapi/signinwithapplerestapi.md)
+- [Sign in with Apple REST API](https://developer.apple.com/documentation/signinwithapplerestapi)
   Communicate between your app servers and Apple’s authentication servers.
-- [Displaying Sign in with Apple buttons on the web](displaying-sign-in-with-apple-buttons-on-the-web.md)
+- [Displaying Sign in with Apple buttons on the web](./displaying-sign-in-with-apple-buttons-on-the-web.md)
   Configure the appearance of Sign in with Apple buttons with CSS styles.
-- [Configuring your environment for Sign in with Apple](configuring-your-environment-for-sign-in-with-apple.md)
+- [Configuring your environment for Sign in with Apple](./configuring-your-environment-for-sign-in-with-apple.md)
   Authenticate users with your web service by associating an existing app with a Services ID and private key.
 
 

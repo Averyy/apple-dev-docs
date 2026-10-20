@@ -1,7 +1,8 @@
 # slope
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The slope at the location toward the direction of travel, measured in degrees.
 
@@ -21,13 +22,14 @@ var slope: Double? { get }
 
 #### Discussion
 
-If the slope measurement is invalid, this property is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0).
+If the slope measurement is invalid, this property is [`nil`](../../ObjectiveC/nil-227m0.md).
 
 ## See Also
 
-- [var speed: CLLocationSpeed](cmodometerdata/speed.md)
+### Getting speed and slope
+- [var speed: CLLocationSpeed](./speed.md)
   The instantaneous velocity of the device, measured in meters per second.
-- [var maxAbsSlope: Double?](cmodometerdata/maxabsslope-9mnfd.md)
+- [var maxAbsSlope: Double?](./maxabsslope-9mnfd.md)
   The maximum absolute slope at the location toward all directions, measured in degrees.
 
 

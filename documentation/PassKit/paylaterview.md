@@ -1,14 +1,17 @@
 # PayLaterView
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that displays the Apple Pay Later visual merchandising widget.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- visionOS ?+
+- visionOS
+
+> **Deprecated**: Apple Pay Later is deprecated.
 
 ## Declaration
 
@@ -24,24 +27,25 @@ Use this view to display a widget that allows people to learn more about the App
 ## Topics
 
 ### Setting the view’s action
-- [struct PayLaterViewAction](paylaterviewaction.md)
+- [struct PayLaterViewAction](./paylaterviewaction.md)
   Values you use to set the Apple Pay Later action.
 ### Styling the view
-- [struct PayLaterViewDisplayStyle](paylaterviewdisplaystyle.md)
+- [struct PayLaterViewDisplayStyle](./paylaterviewdisplaystyle.md)
   Values you use to style an Apple Pay Later visual merchandising widget.
 ### Initializers
-- [init(amount: Decimal, currency: Locale.Currency)](paylaterview/init(amount:currency:).md)
+- [init(amount: Decimal, currency: Locale.Currency)](./paylaterview/init%28amount,currency%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [class PKPayLaterView](pkpaylaterview.md)
+### Deprecated
+- [class PKPayLaterView](./pkpaylaterview.md)
   A view that displays the Apple Pay Later visual merchandising widget.
 
 

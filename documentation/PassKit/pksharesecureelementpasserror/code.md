@@ -1,13 +1,14 @@
 # PKShareSecureElementPassError.Code
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 9.0+
 
@@ -17,50 +18,55 @@
 enum Code
 ```
 
+```c
+enum PKShareSecureElementPassErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [PKShareSecureElementPassError.Code.setupError](pksharesecureelementpasserror/code/setuperror.md)
-- [PKShareSecureElementPassError.Code.unknownError](pksharesecureelementpasserror/code/unknownerror.md)
+- [PKShareSecureElementPassError.Code.setupError](./code/setuperror.md)
+- [PKShareSecureElementPassError.Code.unknownError](./code/unknownerror.md)
 ### Initializers
-- [init?(rawValue: Int)](pksharesecureelementpasserror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct PKPassKitError](pkpasskiterror.md)
+### Errors
+- [struct PKPassKitError](../pkpasskiterror.md)
   Errors that the PassKit framework uses.
-- [struct PKAddSecureElementPassError](pkaddsecureelementpasserror.md)
+- [struct PKAddSecureElementPassError](../pkaddsecureelementpasserror.md)
   An error object that PassKit uses when it adds Secure Element passes.
-- [PKPassKitError.Code](pkpasskiterror/code.md)
+- [PKPassKitError.Code](../pkpasskiterror/code.md)
   Errors that the PassKit framework uses.
-- [PKAddSecureElementPassError.Code](pkaddsecureelementpasserror/code.md)
+- [PKAddSecureElementPassError.Code](../pkaddsecureelementpasserror/code.md)
   Error codes for problems that occur when you add a secure element passes.
-- [enum PKAddPaymentPassError](pkaddpaymentpasserror.md)
+- [enum PKAddPaymentPassError](../pkaddpaymentpasserror.md)
   Error codes for adding payment passes.
-- [struct PKIdentityError](pkidentityerror-swift.struct.md)
+- [struct PKIdentityError](../pkidentityerror-swift.struct.md)
   A structure that represents an identity error.
-- [PKIdentityError.Code](pkidentityerror-swift.struct/code.md)
+- [PKIdentityError.Code](../pkidentityerror-swift.struct/code.md)
   Error codes for identity operations.
-- [struct PKShareSecureElementPassError](pksharesecureelementpasserror.md)
-- [enum PKVehicleConnectionErrorCode](pkvehicleconnectionerrorcode.md)
-- [enum PayWithApplePayButtonPaymentAuthorizationPhase](paywithapplepaybuttonpaymentauthorizationphase.md)
-- [let PKPassKitErrorDomain: String](pkpasskiterrordomain.md)
+- [struct PKShareSecureElementPassError](../pksharesecureelementpasserror.md)
+- [enum PKVehicleConnectionErrorCode](../pkvehicleconnectionerrorcode.md)
+- [enum PayWithApplePayButtonPaymentAuthorizationPhase](../paywithapplepaybuttonpaymentauthorizationphase.md)
+- [let PKPassKitErrorDomain: String](../pkpasskiterrordomain.md)
   The error domain for PassKit errors.
-- [let PKIdentityErrorDomain: String](pkidentityerrordomain.md)
+- [let PKIdentityErrorDomain: String](../pkidentityerrordomain.md)
   The error domain for identity errors.
-- [let PKAddSecureElementPassErrorDomain: String](pkaddsecureelementpasserrordomain.md)
+- [let PKAddSecureElementPassErrorDomain: String](../pkaddsecureelementpasserrordomain.md)
   The error domain for errors that occur when adding a secure pass.
-- [let PKShareSecureElementPassErrorDomain: String](pksharesecureelementpasserrordomain.md)
+- [let PKShareSecureElementPassErrorDomain: String](../pksharesecureelementpasserrordomain.md)
 
 
 ---

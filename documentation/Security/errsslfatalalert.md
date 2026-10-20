@@ -1,7 +1,8 @@
 # errSSLFatalAlert
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A fatal alert was encountered.
 
@@ -18,6 +19,10 @@ A fatal alert was encountered.
 
 ```swift
 var errSSLFatalAlert: OSStatus { get }
+```
+
+```c
+errSSLFatalAlert
 ```
 
 

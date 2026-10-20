@@ -1,12 +1,15 @@
 # init(rawValue:)
 
 **Framework**: Exposure Notification  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 15.2+
-- iPadOS 15.2+
-- Mac Catalyst 15.2+
+- iOS 15.2+ - Deprecated in 27.0
+- iPadOS 15.2+ - Deprecated in 27.0
+- Mac Catalyst 15.2+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 

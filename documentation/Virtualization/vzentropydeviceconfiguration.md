@@ -1,7 +1,8 @@
 # VZEntropyDeviceConfiguration
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The common configuration traits for entropy devices.
 
@@ -14,28 +15,33 @@ The common configuration traits for entropy devices.
 class VZEntropyDeviceConfiguration
 ```
 
+```objc
+@interface VZEntropyDeviceConfiguration : NSObject
+```
+
 #### Overview
 
-Don’t create a VZEntropyDeviceConfiguration object directly. Instead, instantiate a subclass such as [`VZVirtioEntropyDeviceConfiguration`](vzvirtioentropydeviceconfiguration.md) to configure a source of entropy for your virtual machine.
+Don’t create a VZEntropyDeviceConfiguration object directly. Instead, instantiate a subclass such as [`VZVirtioEntropyDeviceConfiguration`](./vzvirtioentropydeviceconfiguration.md) to configure a source of entropy for your virtual machine.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [VZVirtioEntropyDeviceConfiguration](vzvirtioentropydeviceconfiguration.md)
+- [VZVirtioEntropyDeviceConfiguration](./vzvirtioentropydeviceconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZVirtioEntropyDeviceConfiguration](vzvirtioentropydeviceconfiguration.md)
+### Configurations
+- [class VZVirtioEntropyDeviceConfiguration](./vzvirtioentropydeviceconfiguration.md)
   A source of entropy for the guest’s random number generator.
 
 

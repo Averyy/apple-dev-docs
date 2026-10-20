@@ -1,7 +1,8 @@
 # presentationContextProvider
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate that provides a display context in which the system can present an authentication session to the user.
 
@@ -18,13 +19,18 @@ A delegate that provides a display context in which the system can present an au
 weak var presentationContextProvider: (any ASWebAuthenticationPresentationContextProviding)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak) id<ASWebAuthenticationPresentationContextProviding> presentationContextProvider;
+```
+
 ## Mentions
 
-- [Authenticating a User Through a Web Service](authenticating-a-user-through-a-web-service.md)
+- [Authenticating a User Through a Web Service](../authenticating-a-user-through-a-web-service.md)
 
 ## See Also
 
-- [protocol ASWebAuthenticationPresentationContextProviding](aswebauthenticationpresentationcontextproviding.md)
+### Presenting a Session
+- [protocol ASWebAuthenticationPresentationContextProviding](../aswebauthenticationpresentationcontextproviding.md)
   An interface the session uses to ask a delegate for a presentation context.
 
 

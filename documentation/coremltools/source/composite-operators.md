@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/composite-operators.
 
 # Composite Operators
 
-**
-
-- [.md](../_sources/source/composite-operators.md)
-- **
-
-.pdf
-
-**
-
-# Composite Operators
-
- Table of contents 
-
-## Contents
-
-# Composite Operators
-
 As machine learning continually evolves, new operations are regularly added to source frameworks such as [TensorFlow](https://www.tensorflow.org/) and [PyTorch](https://pytorch.org/). While converting a model to [Core ML](https://developer.apple.com/documentation/coreml), you may encounter an unsupported operation.
 
 In most cases, you can handle unsupported operations by using composite operators, which you can construct using the existing MIL operations. For an  overview of MIL operations, see [Model Intermediate Language](model-intermediate-language.md).
@@ -36,18 +19,29 @@ You may need to first install [Transformers](https://huggingface.co/transformers
 ## Import and Convert the Pre-trained Model
 
 1. Add the import statement and load the pre-trained model:
-from transformers import TFT5Model
 
-model = TFT5Model.from_pretrained('t5-small')
+   ```
+   from transformers import TFT5Model
+
+   model = TFT5Model.from_pretrained('t5-small')
+   ```
 2. The returned object is an instance of a `tf.keras` model, which you can pass directly into the coremltools converter:
-import coremltools as ct
 
-mlmodel = ct.convert(model)
+   ```
+   import coremltools as ct
+
+   mlmodel = ct.convert(model)
+   ```
 3. To simulate a scenario in which coremltools lacks support for an operation, disable the `Einsum` operation needed to convert the model:
-from coremltools.converters.mil.frontend.tensorflow.tf_op_registry import _TF_OPS_REGISTRY
 
-del _TF_OPS_REGISTRY["Einsum"]
+   ```
+   from coremltools.converters.mil.frontend.tensorflow.tf_op_registry import _TF_OPS_REGISTRY
+
+   del _TF_OPS_REGISTRY["Einsum"]
+   ```
 4. Run the conversion. The following error occurs, indicating an unsupported TensorFlow operation:
+
+![Not-implemented error](https://apple.github.io/coremltools/docs-guides/_images/not-implemented-error.png)
 
 ## Decompose into Existing MIL Operators
 
@@ -55,37 +49,50 @@ The TensorFlow [documentation on Einsum](https://www.tensorflow.org/api_docs/jav
 
 The error trace shows that the model uses the following notation for Einsum:
 
+![Notation for Einsum](https://apple.github.io/coremltools/docs-guides/_images/first_eq_300.png)
+
 The above notation translates into the following mathematical expression:
+
+![Math expression](https://apple.github.io/coremltools/docs-guides/_images/second_eq_300.png)
 
 While the above may look complicated, it is essentially a batched matrix multiplication with a transpose on the second input:
 
-![Batched matrix multiplication](../_images/third_eq_300.png)
+![Batched matrix multiplication](https://apple.github.io/coremltools/docs-guides/_images/third_eq_300.png)
 
 You can decompose this operation with existing MIL operators. In fact, MIL supports this operation directly. To write a composite for this operation, follow these steps:
 
 1. Import MIL builder and a decorator:
-from coremltools.converters.mil import Builder as mb
 
-from coremltools.converters.mil import register_tf_op
+   ```
+   from coremltools.converters.mil import Builder as mb
+
+   from coremltools.converters.mil import register_tf_op
+   ```
 2. Define a function with the same name as the TensorFlow operation. For this example, this is `Einsum`. To define the function, grab inputs and define a `matmul` operation using the MIL builder:
-@register_tf_op
-def Einsum(context, node):
 
-	assert node.attr['equation'] == 'bnqd,bnkd->bnqk'
+   ```
+   @register_tf_op
+   def Einsum(context, node):
 
-	a = context[node.inputs[0]]
-	b = context[node.inputs[1]]
+   	assert node.attr['equation'] == 'bnqd,bnkd->bnqk'
 
-	x = mb.matmul(x=a, y=b, transpose_x=False, 
-				  transpose_y=True, name=node.name)
+   	a = context[node.inputs[0]]
+   	b = context[node.inputs[1]]
 
-	context.add(node.name, x)
+   	x = mb.matmul(x=a, y=b, transpose_x=False, 
+   				  transpose_y=True, name=node.name)
+
+   	context.add(node.name, x)
+   ```
 
 Register the Function
 Be sure to decorate this function to register it with the converter, as shown in the above code for TensorFlow (`@register_tf_op`). The decoration ensures that the user-defined function will be invoked whenever an Einsum operation is encountered during the conversion. The corresponding decorator for PyTorch is `@register_torch_op`.
 3. With composite operation for Einsum defined, call the Core ML converter again and print `mlmodel`. This verifies that the conversion is completed, and implies that the unsupported operation error is resolved:
-mlmodel = ct.convert(model)
-print(mlmodel)
+
+   ```
+   mlmodel = ct.convert(model)
+   print(mlmodel)
+   ```
 
 ## Using Composite Ops with PyTorch Conversion
 
@@ -115,5 +122,3 @@ model = ct.convert(....)
 ## More Examples
 
 For more examples, see the translation code for the supported [TensorFlow ops](https://github.com/apple/coremltools/blob/5c6bec6f20368d474dbcd29b3836acc2c62c933c/coremltools/converters/mil/frontend/tensorflow/ops.py) and [PyTorch ops](https://github.com/apple/coremltools/blob/5c6bec6f20368d474dbcd29b3836acc2c62c933c/coremltools/converters/mil/frontend/torch/ops.py).
-
-** Contents

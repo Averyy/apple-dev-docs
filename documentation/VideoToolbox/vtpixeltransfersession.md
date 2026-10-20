@@ -1,7 +1,8 @@
 # VTPixelTransferSession
 
 **Framework**: Video Toolbox  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A reference to a VideoToolbox pixel transfer session.
 
@@ -19,6 +20,10 @@ A reference to a VideoToolbox pixel transfer session.
 class VTPixelTransferSession
 ```
 
+```c
+typedef struct OpaqueVTPixelTransferSession * VTPixelTransferSessionRef;
+```
+
 #### Overview
 
 A pixel transfer session supports the copying and/or conversion of images from source `CVPixelBuffers` to destination `CVPixelBuffers`. The session is a reference-counted Core Foundation (CF) object.
@@ -26,8 +31,8 @@ A pixel transfer session supports the copying and/or conversion of images from s
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

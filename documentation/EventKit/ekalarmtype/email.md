@@ -1,17 +1,18 @@
 # EKAlarmType.email
 
 **Framework**: EventKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The alarm sends an email.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,13 +20,18 @@ The alarm sends an email.
 case email
 ```
 
+```c
+EKAlarmTypeEmail
+```
+
 ## See Also
 
-- [EKAlarmType.display](ekalarmtype/display.md)
+### Constants
+- [EKAlarmType.display](./display.md)
   The alarm displays a message.
-- [EKAlarmType.audio](ekalarmtype/audio.md)
+- [EKAlarmType.audio](./audio.md)
   The alarm plays a sound.
-- [EKAlarmType.procedure](ekalarmtype/procedure.md)
+- [EKAlarmType.procedure](./procedure.md)
   The alarm opens a URL.
 
 

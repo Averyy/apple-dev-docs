@@ -1,7 +1,8 @@
 # allowFailover
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var allowFailover: Bool { get set }
+```
+
+```objc
+@property BOOL allowFailover;
 ```
 
 #### Discussion

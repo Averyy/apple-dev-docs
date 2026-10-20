@@ -1,14 +1,15 @@
 # ElectricVehicleStatusEvent.Status.chargingIdle(_:)
 
 **Framework**: EnergyKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A status that indicates the charger is connected but the vehicle isn’t charging.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,15 +19,16 @@ case chargingIdle(ElectricVehicleChargingReason.IdleReason)
 
 ## Mentions
 
-- [Providing charging history for electric vehicles](providing-informative-charging-history-for-electric-vehicles.md)
+- [Providing charging history for electric vehicles](../../providing-informative-charging-history-for-electric-vehicles.md)
 
 #### Discussion
 
-The associated [`ElectricVehicleChargingReason.IdleReason`](electricvehiclechargingreason/idlereason.md) explains why charging isn’t active.
+The associated [`ElectricVehicleChargingReason.IdleReason`](../../electricvehiclechargingreason/idlereason.md) explains why charging isn’t active.
 
 ## See Also
 
-- [case chargingActive(ElectricVehicleChargingReason.ActiveReason)](electricvehiclestatusevent/status-swift.enum/chargingactive(_:).md)
+### Charging states
+- [case chargingActive(ElectricVehicleChargingReason.ActiveReason)](./chargingactive%28_%29.md)
   A status that indicates that the vehicle is actively charging.
 
 

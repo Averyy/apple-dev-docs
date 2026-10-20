@@ -1,7 +1,8 @@
 # DSPComplex
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Used to hold a complex value.
 
@@ -10,7 +11,7 @@ Used to hold a complex value.
 
 ## Declaration
 
-```swift
+```c
 typedef struct DSPComplex DSPComplex;
 ```
 
@@ -21,12 +22,12 @@ Complex data are stored as ordered pairs of floating-point numbers. Because they
 ## Topics
 
 ### Fields
-- [real](dspcomplex/1579938-real.md)
+- [real](./dspcomplex/api-1579938-real.md)
   The real part of the value.
-- [imag](../accelerate/dspcomplex/imag.md)
+- [imag](../Accelerate/dspcomplex/imag.md)
   The imaginary part of the value.
 ### Instance Properties
-- [imag](dspcomplex/1579947-imag.md)
+- [imag](./dspcomplex/api-1579947-imag.md)
 
 
 ---

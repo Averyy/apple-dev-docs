@@ -1,7 +1,8 @@
 # captureView(shouldPresent:error:)
 
 **Framework**: RoomPlan  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates that the app receives and displays post-processed scan results when the scan session stops.
 
@@ -22,7 +23,7 @@ This implementation always returns `true`.
 
 #### Discussion
 
-If your app’s room-capture view [`delegate`](roomcaptureview/delegate.md) doesn’t implement [`captureView(shouldPresent:error:)`](roomcaptureviewdelegate/captureview(shouldpresent:error:).md), then the framework calls this default implementation.
+If your app’s room-capture view [`delegate`](../roomcaptureview/delegate.md) doesn’t implement [`captureView(shouldPresent:error:)`](./captureview%28shouldpresent,error%29.md), then the framework calls this default implementation.
 
 ## Parameters
 
@@ -31,7 +32,8 @@ If your app’s room-capture view [`delegate`](roomcaptureview/delegate.md) does
 
 ## See Also
 
-- [func captureView(didPresent: CapturedRoom, error: (any Error)?)](roomcaptureviewdelegate/captureview(didpresent:error:)-6em1r.md)
+### Default implementations
+- [func captureView(didPresent: CapturedRoom, error: (any Error)?)](./captureview%28didpresent,error%29-6em1r.md)
   Provides a default, blank implementation for the processed scan-results callback.
 
 

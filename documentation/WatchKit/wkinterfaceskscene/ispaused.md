@@ -1,7 +1,8 @@
 # isPaused
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the view’s scene animations are paused.
 
@@ -14,17 +15,22 @@ A Boolean value that determines whether the view’s scene animations are paused
 var isPaused: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isPaused) BOOL paused;
+```
+
 ## Mentions
 
-- [Configuring a WatchKit Scene in a Storyboard](configuring-a-watchkit-scene-in-a-storyboard.md)
+- [Configuring a WatchKit Scene in a Storyboard](../configuring-a-watchkit-scene-in-a-storyboard.md)
 
 #### Discussion
 
-If the value is [`true`](https://developer.apple.com/documentation/swift/true), the scene’s content is fixed onscreen. No actions are executed and no physics simulation is performed.
+If the value is [`true`](../../Swift/true.md), the scene’s content is fixed onscreen. No actions are executed and no physics simulation is performed.
 
 ## See Also
 
-- [var preferredFramesPerSecond: Int](wkinterfaceskscene/preferredframespersecond.md)
+### Controlling the Timing of a Scene’s Rendering
+- [var preferredFramesPerSecond: Int](./preferredframespersecond.md)
   The animation frame rate that the interface uses to render its scene.
 
 

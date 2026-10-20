@@ -1,7 +1,8 @@
 # tIOUSB30DeviceNotificationType
 
 **Framework**: USBDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating the type of a device notification.
 
@@ -10,22 +11,22 @@ Constants indicating the type of a device notification.
 
 ## Declaration
 
-```swift
+```c
 enum tIOUSB30DeviceNotificationType : unsigned int;
 ```
 
 #### Discussion
 
-For information about this type, see Table 8-18 of the USB 3.2 specification at [`http://www.usb.org`](https://developer.apple.comhttp://www.usb.org).
+For information about this type, see Table 8-18 of the USB 3.2 specification at [http://www.usb.org](http://www.usb.org).
 
 ## Topics
 
 ### Getting the Notification Types
-- [kIOUSB30DeviceNotificationTypeFunctionWake](tiousb30devicenotificationtype/kiousb30devicenotificationtypefunctionwake.md)
-- [kIOUSB30DeviceNotificationTypeLatencyTolerance](tiousb30devicenotificationtype/kiousb30devicenotificationtypelatencytolerance.md)
-- [kIOUSB30DeviceNotificationTypeBusIntervalAdjustment](tiousb30devicenotificationtype/kiousb30devicenotificationtypebusintervaladjustment.md)
-- [kIOUSB30DeviceNotificationTypeHostRoleRequest](tiousb30devicenotificationtype/kiousb30devicenotificationtypehostrolerequest.md)
-- [kIOUSB30DeviceNotificationTypeSublinkSpeed](tiousb30devicenotificationtype/kiousb30devicenotificationtypesublinkspeed.md)
+- [kIOUSB30DeviceNotificationTypeFunctionWake](./tiousb30devicenotificationtype/kiousb30devicenotificationtypefunctionwake.md)
+- [kIOUSB30DeviceNotificationTypeLatencyTolerance](./tiousb30devicenotificationtype/kiousb30devicenotificationtypelatencytolerance.md)
+- [kIOUSB30DeviceNotificationTypeBusIntervalAdjustment](./tiousb30devicenotificationtype/kiousb30devicenotificationtypebusintervaladjustment.md)
+- [kIOUSB30DeviceNotificationTypeHostRoleRequest](./tiousb30devicenotificationtype/kiousb30devicenotificationtypehostrolerequest.md)
+- [kIOUSB30DeviceNotificationTypeSublinkSpeed](./tiousb30devicenotificationtype/kiousb30devicenotificationtypesublinkspeed.md)
 
 
 ---

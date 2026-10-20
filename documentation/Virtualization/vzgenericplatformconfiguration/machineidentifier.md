@@ -1,7 +1,8 @@
 # machineIdentifier
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that represents a unique identifier for the virtual machine.
 
@@ -15,13 +16,18 @@ A value that represents a unique identifier for the virtual machine.
 var machineIdentifier: VZGenericMachineIdentifier { get set }
 ```
 
+```objc
+@property (copy) VZGenericMachineIdentifier * machineIdentifier;
+```
+
 ## See Also
 
-- [var isNestedVirtualizationEnabled: Bool](vzgenericplatformconfiguration/isnestedvirtualizationenabled.md)
+### Identifying the platform configuration
+- [var isNestedVirtualizationEnabled: Bool](./isnestedvirtualizationenabled.md)
   A Boolean value that indicates whether nested virtualization is in an enabled state.
-- [class var isNestedVirtualizationSupported: Bool](vzgenericplatformconfiguration/isnestedvirtualizationsupported.md)
+- [class var isNestedVirtualizationSupported: Bool](./isnestedvirtualizationsupported.md)
   A Boolean value that describes whether the platform configuration supports nested virtualization.
-- [class VZGenericMachineIdentifier](vzgenericmachineidentifier.md)
+- [class VZGenericMachineIdentifier](../vzgenericmachineidentifier.md)
   An object that represents a unique identifier for a virtual machine.
 
 

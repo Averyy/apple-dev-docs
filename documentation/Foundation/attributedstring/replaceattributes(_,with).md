@@ -1,7 +1,8 @@
 # replaceAttributes(_:with:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces occurrences of attributes in one attribute container with those in another attribute container.
 
@@ -27,13 +28,14 @@ mutating func replaceAttributes(_ attributes: AttributeContainer, with others: A
 
 ## See Also
 
-- [func setAttributes(AttributeContainer)](attributedstring/setattributes(_:).md)
+### Applying and Modifying Attributes
+- [func setAttributes(AttributeContainer)](./setattributes%28_%29.md)
   Sets the attributed string’s attributes to those in a specified attribute container.
-- [func mergeAttributes(AttributeContainer, mergePolicy: AttributedString.AttributeMergePolicy)](attributedstring/mergeattributes(_:mergepolicy:).md)
+- [func mergeAttributes(AttributeContainer, mergePolicy: AttributedString.AttributeMergePolicy)](./mergeattributes%28_,mergepolicy%29.md)
   Merges the attributed string’s attributes with those in a specified attribute container.
-- [AttributedString.AttributeMergePolicy](attributedstring/attributemergepolicy.md)
+- [AttributedString.AttributeMergePolicy](./attributemergepolicy.md)
   An enumeration of behaviors to apply when merging attributes.
-- [protocol AttributedStringAttributeMutation](attributedstringattributemutation.md)
+- [protocol AttributedStringAttributeMutation](../attributedstringattributemutation.md)
   A protocol that defines in-place mutations for attributes in an attributed string.
 
 

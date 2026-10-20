@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new instance with a call stack from the executing thread and no location.
 
@@ -11,17 +12,22 @@ Initializes a new instance with a call stack from the executing thread and no lo
 convenience init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Discussion
 
 The system derives the call stack from `NSThread.callStackReturnAddresses.`
 
 ## See Also
 
-- [init(callStack: [XCTSourceCodeFrame], location: XCTSourceCodeLocation?)](xctsourcecodecontext/init(callstack:location:).md)
+### Initializers
+- [init(callStack: [XCTSourceCodeFrame], location: XCTSourceCodeLocation?)](./init%28callstack,location%29.md)
   Initializes a new instance with a provided call stack and source code location.
-- [convenience init(callStackAddresses: [NSNumber], location: XCTSourceCodeLocation?)](xctsourcecodecontext/init(callstackaddresses:location:).md)
+- [convenience init(callStackAddresses: [NSNumber], location: XCTSourceCodeLocation?)](./init%28callstackaddresses,location%29.md)
   Initializes a new instance with an array of call stack addresses and a source code location.
-- [convenience init(location: XCTSourceCodeLocation?)](xctsourcecodecontext/init(location:).md)
+- [convenience init(location: XCTSourceCodeLocation?)](./init%28location%29.md)
   Initializes a new instance with a call stack from the executing thread and a provided source code location.
 
 

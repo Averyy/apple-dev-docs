@@ -1,7 +1,8 @@
 # init(configuration:dialogPresenter:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new WebPage.
 
@@ -21,18 +22,19 @@ convenience init(configuration: WebPage.Configuration = Configuration(), dialogP
 
 ## Parameters
 
-- `configuration`: A [`WebPage.Configuration`](webpage/configuration.md) value to use when initializing the page.
+- `configuration`: A [`WebPage.Configuration`](./configuration.md) value to use when initializing the page.
 - `dialogPresenter`: A dialog presenter which controls how JavaScript dialogs are handled.
 
 ## See Also
 
-- [WebPage.Configuration](webpage/configuration.md)
+### Creating a WebPage
+- [WebPage.Configuration](./configuration.md)
   A configuration type that specifies the preferences and behaviors of a webpage.
-- [convenience init(configuration: WebPage.Configuration)](webpage/init(configuration:).md)
+- [convenience init(configuration: WebPage.Configuration)](./init%28configuration%29.md)
   Create a new WebPage.
-- [convenience init(configuration: WebPage.Configuration, navigationDecider: some WebPage.NavigationDeciding)](webpage/init(configuration:navigationdecider:).md)
+- [convenience init(configuration: WebPage.Configuration, navigationDecider: some WebPage.NavigationDeciding)](./init%28configuration,navigationdecider%29.md)
   Create a new WebPage.
-- [convenience init(configuration: WebPage.Configuration, navigationDecider: some WebPage.NavigationDeciding, dialogPresenter: some WebPage.DialogPresenting)](webpage/init(configuration:navigationdecider:dialogpresenter:).md)
+- [convenience init(configuration: WebPage.Configuration, navigationDecider: some WebPage.NavigationDeciding, dialogPresenter: some WebPage.DialogPresenting)](./init%28configuration,navigationdecider,dialogpresenter%29.md)
   Create a new WebPage.
 
 

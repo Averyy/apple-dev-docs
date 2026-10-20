@@ -1,7 +1,8 @@
 # init(jointIndexType:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a skinning descriptor.
 
@@ -19,7 +20,8 @@ init(jointIndexType: MTLIndexType = .uint32)
 
 ## See Also
 
-- [var jointIndexType: MTLIndexType](lowleveldeformation/pipeline/descriptor/skinning-swift.struct/jointindextype.md)
+### Creating a skinning configuration
+- [var jointIndexType: MTLIndexType](./jointindextype.md)
   The data type of the joint index buffer.
 
 

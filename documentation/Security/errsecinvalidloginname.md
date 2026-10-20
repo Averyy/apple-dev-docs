@@ -1,7 +1,8 @@
 # errSecInvalidLoginName
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid login name was detected.
 
@@ -18,6 +19,10 @@ An invalid login name was detected.
 
 ```swift
 var errSecInvalidLoginName: OSStatus { get }
+```
+
+```c
+errSecInvalidLoginName
 ```
 
 

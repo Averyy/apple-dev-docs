@@ -1,7 +1,8 @@
 # UISplitViewController.BackgroundStyle
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Styles that apply a visual effect to the background of a primary view controller.
 
@@ -17,29 +18,34 @@ Styles that apply a visual effect to the background of a primary view controller
 enum BackgroundStyle
 ```
 
+```c
+enum UISplitViewControllerBackgroundStyle : NSInteger;
+```
+
 ## Topics
 
 ### Background styles
-- [UISplitViewController.BackgroundStyle.none](uisplitviewcontroller/backgroundstyle/none.md)
+- [UISplitViewController.BackgroundStyle.none](./backgroundstyle/none.md)
   A style that has no visual effect on the background appearance of the primary view controller.
-- [UISplitViewController.BackgroundStyle.sidebar](uisplitviewcontroller/backgroundstyle/sidebar.md)
+- [UISplitViewController.BackgroundStyle.sidebar](./backgroundstyle/sidebar.md)
   A style that applies a blurred effect to the background of the primary view controller.
 ### Initializers
-- [init?(rawValue: Int)](uisplitviewcontroller/backgroundstyle/init(rawvalue:).md)
+- [init?(rawValue: Int)](./backgroundstyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var primaryBackgroundStyle: UISplitViewController.BackgroundStyle](uisplitviewcontroller/primarybackgroundstyle.md)
+### Managing the background style
+- [var primaryBackgroundStyle: UISplitViewController.BackgroundStyle](./primarybackgroundstyle.md)
   The background style of the primary view controller.
 
 

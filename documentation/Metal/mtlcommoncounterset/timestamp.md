@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The common name for the counter set that contains the timestamp counter.
 
@@ -19,19 +20,24 @@ The common name for the counter set that contains the timestamp counter.
 static let timestamp: MTLCommonCounterSet
 ```
 
+```c
+extern MTLCommonCounterSet MTLCommonCounterSetTimestamp;
+```
+
 ## Mentions
 
-- [Converting a GPU’s counter data into a readable format](converting-a-gpus-counter-data-into-a-readable-format.md)
+- [Converting a GPU’s counter data into a readable format](../converting-a-gpus-counter-data-into-a-readable-format.md)
 
 #### Discussion
 
-The [`timestamp`](mtlcommoncounterset/timestamp.md) counter set contains the [`timestamp`](mtlcommoncounter/timestamp.md) counter. Use this name to check whether a GPU device supports the corresponding counter set (see [`Confirming which counters and counter sets a GPU supports`](confirming-which-counters-and-counter-sets-a-gpu-supports.md)).
+The [`timestamp`](./timestamp.md) counter set contains the [`timestamp`](../mtlcommoncounter/timestamp.md) counter. Use this name to check whether a GPU device supports the corresponding counter set (see [Confirming which counters and counter sets a GPU supports](../confirming-which-counters-and-counter-sets-a-gpu-supports.md)).
 
 ## See Also
 
-- [static let stageUtilization: MTLCommonCounterSet](mtlcommoncounterset/stageutilization.md)
+### Common counter set names
+- [static let stageUtilization: MTLCommonCounterSet](./stageutilization.md)
   The common name for the counter set that contains hardware utilization measurements from various render stages.
-- [static let statistic: MTLCommonCounterSet](mtlcommoncounterset/statistic.md)
+- [static let statistic: MTLCommonCounterSet](./statistic.md)
   The common name for the counter set that contains GPU workload statistics.
 
 

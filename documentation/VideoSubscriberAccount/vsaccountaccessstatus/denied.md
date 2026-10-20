@@ -1,7 +1,8 @@
 # VSAccountAccessStatus.denied
 
 **Framework**: Video Subscriber Account  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user denied the app access to subscription information.
 
@@ -9,7 +10,7 @@ The user denied the app access to subscription information.
 - iOS 10.0+
 - iPadOS 10.0+
 - Mac Catalyst 10.0+
-- macOS ?+
+- macOS
 - tvOS 10.0+
 - visionOS 1.0+
 
@@ -19,13 +20,18 @@ The user denied the app access to subscription information.
 case denied
 ```
 
+```c
+VSAccountAccessStatusDenied
+```
+
 ## See Also
 
-- [VSAccountAccessStatus.granted](vsaccountaccessstatus/granted.md)
+### Statuses
+- [VSAccountAccessStatus.granted](./granted.md)
   The user allowed the app to access subscription information.
-- [VSAccountAccessStatus.notDetermined](vsaccountaccessstatus/notdetermined.md)
+- [VSAccountAccessStatus.notDetermined](./notdetermined.md)
   The user hasn’t chosen whether to allow the app to access subscription information.
-- [VSAccountAccessStatus.restricted](vsaccountaccessstatus/restricted.md)
+- [VSAccountAccessStatus.restricted](./restricted.md)
   The app isn’t allowed to access subscription information.
 
 

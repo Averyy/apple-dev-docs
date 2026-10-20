@@ -1,7 +1,8 @@
 # color
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The picker’s currently selected color.
 
@@ -13,16 +14,38 @@ The picker’s currently selected color.
 
 ## Declaration
 
+*Mac Catalyst*
+
+```swift
+@NSCopying
+var color: UIColor { get set }
+```
+
+*macOS*
+
 ```swift
 @NSCopying
 var color: NSColor { get set }
 ```
 
+*Mac Catalyst*
+
+```objc
+@property (copy) UIColor * color;
+```
+
+*macOS*
+
+```objc
+@property (copy) NSColor * color;
+```
+
 ## See Also
 
-- [var target: AnyObject?](nscolorpickertouchbaritem/target.md)
+### Obtaining the selected color
+- [var target: AnyObject?](./target.md)
   An object that is notified when a user interacts with the color picker.
-- [var action: Selector?](nscolorpickertouchbaritem/action.md)
+- [var action: Selector?](./action.md)
   The selector on the target object that is invoked when a user interacts with the color picker.
 
 

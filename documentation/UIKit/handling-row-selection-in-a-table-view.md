@@ -1,6 +1,7 @@
 # Handling row selection in a table view
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Article
 
 Detect when a user taps a table view cell so your app can take the next indicated action.
 
@@ -8,18 +9,18 @@ Detect when a user taps a table view cell so your app can take the next indicate
 
 When a user taps a row of a table view, an action of some kind usually follows, such as another view sliding into place, or the row indicating the selected state with a checkmark. In order for your app to perform the action, it must know when the user taps the row and respond accordingly.
 
-##### Configure Row Selection Behavior
+##### Configure row selection behavior
 
 Use the following properties to configure how row selection behaves in a table view:
 
-- **[`allowsSelection`](uitableview/allowsselection.md)**: Determines whether users can select a row when the table isn’t in editing mode. The default is [`true`](https://developer.apple.com/documentation/swift/true).
-- **[`allowsMultipleSelection`](uitableview/allowsmultipleselection.md)**: Determines whether users can select more than one row when the table isn’t in editing mode. The default is [`false`](https://developer.apple.com/documentation/swift/false).
-- **[`allowsSelectionDuringEditing`](uitableview/allowsselectionduringediting.md)**: Determines whether user can select a row while the table view is in editing mode. The default is [`false`](https://developer.apple.com/documentation/swift/false).
-- **[`allowsMultipleSelectionDuringEditing`](uitableview/allowsmultipleselectionduringediting.md)**: Determines whether users can select a more than one row while in editing mode. The default is [`false`](https://developer.apple.com/documentation/swift/false).
+- **[`allowsSelection`](./uitableview/allowsselection.md)**: Determines whether users can select a row when the table isn’t in editing mode. The default is [`true`](../Swift/true.md).
+- **[`allowsMultipleSelection`](./uitableview/allowsmultipleselection.md)**: Determines whether users can select more than one row when the table isn’t in editing mode. The default is [`false`](../Swift/false.md).
+- **[`allowsSelectionDuringEditing`](./uitableview/allowsselectionduringediting.md)**: Determines whether user can select a row while the table view is in editing mode. The default is [`false`](../Swift/false.md).
+- **[`allowsMultipleSelectionDuringEditing`](./uitableview/allowsmultipleselectionduringediting.md)**: Determines whether users can select a more than one row while in editing mode. The default is [`false`](../Swift/false.md).
 
-##### Respond to Row Selections
+##### Respond to row selections
 
-When the user taps a row, the table view calls the delegate method [`tableView(_:didSelectRowAt:)`](uitableviewdelegate/tableview(_:didselectrowat:).md). At this point, your app performs the action, such as displaying the details of the selected hiking trail:
+When the user taps a row, the table view calls the delegate method [`tableView(_:didSelectRowAt:)`](./uitableviewdelegate/tableview%28_,didselectrowat%29.md). At this point, your app performs the action, such as displaying the details of the selected hiking trail:
 
 ```swift
 func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -32,7 +33,7 @@ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 }
 ```
 
-If you respond to the cell selection by pushing a new view controller onto the navigation stack, deselect the cell when the view controller pops off the stack. If you’re using a [`UITableViewController`](uitableviewcontroller.md) to display a table view, you get the behavior by setting the [`clearsSelectionOnViewWillAppear`](uitableviewcontroller/clearsselectiononviewwillappear.md) property to [`true`](https://developer.apple.com/documentation/swift/true). Otherwise, you can clear the selection in your view controller’s [`viewWillAppear(_:)`](uiviewcontroller/viewwillappear(_:).md) method:
+If you respond to the cell selection by pushing a new view controller onto the navigation stack, deselect the cell when the view controller pops off the stack. If you’re using a [`UITableViewController`](./uitableviewcontroller.md) to display a table view, you get the behavior by setting the [`clearsSelectionOnViewWillAppear`](./uitableviewcontroller/clearsselectiononviewwillappear.md) property to [`true`](../Swift/true.md). Otherwise, you can clear the selection in your view controller’s [`viewWillAppear(_:)`](./uiviewcontroller/viewwillappear%28_%29.md) method:
 
 ```swift
 override func viewWillAppear(_ animated: Bool) {
@@ -43,19 +44,19 @@ override func viewWillAppear(_ animated: Bool) {
 }
 ```
 
-If the row displays the detail button accessory view and the user taps it, the table view calls the [`tableView(_:accessoryButtonTappedForRowWith:)`](uitableviewdelegate/tableview(_:accessorybuttontappedforrowwith:).md) method instead of calling the [`tableView(_:didSelectRowAt:)`](uitableviewdelegate/tableview(_:didselectrowat:).md) method. To learn more about accessory views, see [`Configuring the cells for your table`](configuring-the-cells-for-your-table.md).
+If the row displays the detail button accessory view and the user taps it, the table view calls the [`tableView(_:accessoryButtonTappedForRowWith:)`](./uitableviewdelegate/tableview%28_,accessorybuttontappedforrowwith%29.md) method instead of calling the [`tableView(_:didSelectRowAt:)`](./uitableviewdelegate/tableview%28_,didselectrowat%29.md) method. To learn more about accessory views, see [Configuring the cells for your table](./configuring-the-cells-for-your-table.md).
 
-##### Select a Row Programmatically
+##### Select a row programmatically
 
-The selection of a row may originate within the app itself rather than from a tap in the table view. For example, a user might add a new person to an address book, then return to the list of contacts. After returning to the contact list, the app scrolls the list to show the row of the newly added person. In this situation, use the table view method [`selectRow(at:animated:scrollPosition:)`](uitableview/selectrow(at:animated:scrollposition:).md) to select and scroll to the new row.
+The selection of a row may originate within the app itself rather than from a tap in the table view. For example, a user might add a new person to an address book, then return to the list of contacts. After returning to the contact list, the app scrolls the list to show the row of the newly added person. In this situation, use the table view method [`selectRow(at:animated:scrollPosition:)`](./uitableview/selectrow%28at,animated,scrollposition%29.md) to select and scroll to the new row.
 
-> **Note**:  Selecting a row programmatically doesn’t call the delegate methods [`tableView(_:willSelectRowAt:)`](uitableviewdelegate/tableview(_:willselectrowat:).md) or [`tableView(_:didSelectRowAt:)`](uitableviewdelegate/tableview(_:didselectrowat:).md), nor does it send [`selectionDidChangeNotification`](uitableview/selectiondidchangenotification.md) notifications to observers.
+> **Note**:  Selecting a row programmatically doesn’t call the delegate methods [`tableView(_:willSelectRowAt:)`](./uitableviewdelegate/tableview%28_,willselectrowat%29.md) or [`tableView(_:didSelectRowAt:)`](./uitableviewdelegate/tableview%28_,didselectrowat%29.md), nor does it send [`selectionDidChangeNotification`](./uitableview/selectiondidchangenotification.md) notifications to observers.
 
-##### Manage Selection Lists
+##### Manage selection lists
 
 You can also use cell selection to maintain inclusive and exclusive lists of selected items. An inclusive list can have one or more selected items while an exclusive list has at most one.
 
-When providing a selection list in your app, don’t use the cell’s selected state to indicate the state of the item. Instead, display a checkmark or an accessory view. To indicate the state using a checkmark, implement the [`tableView(_:didSelectRowAt:)`](uitableviewdelegate/tableview(_:didselectrowat:).md) delegate method, then deselect the cell with [`deselectRow(at:animated:)`](uitableview/deselectrow(at:animated:).md), followed by setting the cell’s [`accessoryType`](uitableviewcell/accessorytype-swift.property.md) property to [`UITableViewCell.AccessoryType.checkmark`](uitableviewcell/accessorytype-swift.enum/checkmark.md).
+When providing a selection list in your app, don’t use the cell’s selected state to indicate the state of the item. Instead, display a checkmark or an accessory view. To indicate the state using a checkmark, implement the [`tableView(_:didSelectRowAt:)`](./uitableviewdelegate/tableview%28_,didselectrowat%29.md) delegate method, then deselect the cell with [`deselectRow(at:animated:)`](./uitableview/deselectrow%28at,animated%29.md), followed by setting the cell’s [`accessoryType`](./uitableviewcell/accessorytype-swift.property.md) property to [`UITableViewCell.AccessoryType.checkmark`](./uitableviewcell/accessorytype-swift.enum/checkmark.md).
 
 For example, an app for backpackers may let users create a packing list—an inclusive list of camping gear like sleeping bags and tents. When the user taps an item to indicate that they packed that piece of gear, the app unselects the row, updates the item’s data model, and displays a checkmark in the row for packed items. Tapping the item again marks the item as unpacked and removes the checkmark. Here’s an example:
 
@@ -113,7 +114,8 @@ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
 ## See Also
 
-- [Selecting multiple items with a two-finger pan gesture](selecting-multiple-items-with-a-two-finger-pan-gesture.md)
+### Selection management
+- [Selecting multiple items with a two-finger pan gesture](./selecting-multiple-items-with-a-two-finger-pan-gesture.md)
   Accelerate user selection of multiple items using the multiselect gesture on table and collection views.
 
 

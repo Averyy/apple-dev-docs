@@ -1,7 +1,8 @@
 # compassSetting
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.4+
@@ -14,13 +15,18 @@
 var compassSetting: CPInstrumentClusterSetting { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CPInstrumentClusterSetting compassSetting;
+```
+
 ## See Also
 
-- [var attributedInactiveDescriptionVariants: [NSAttributedString]](cpinstrumentclustercontroller/attributedinactivedescriptionvariants.md)
-- [var delegate: (any CPInstrumentClusterControllerDelegate)?](cpinstrumentclustercontroller/delegate.md)
-- [var inactiveDescriptionVariants: [String]](cpinstrumentclustercontroller/inactivedescriptionvariants.md)
-- [var instrumentClusterWindow: UIWindow?](cpinstrumentclustercontroller/instrumentclusterwindow.md)
-- [var speedLimitSetting: CPInstrumentClusterSetting](cpinstrumentclustercontroller/speedlimitsetting.md)
+### Instance Properties
+- [var attributedInactiveDescriptionVariants: [NSAttributedString]](./attributedinactivedescriptionvariants.md)
+- [var delegate: (any CPInstrumentClusterControllerDelegate)?](./delegate.md)
+- [var inactiveDescriptionVariants: [String]](./inactivedescriptionvariants.md)
+- [var instrumentClusterWindow: UIWindow?](./instrumentclusterwindow.md)
+- [var speedLimitSetting: CPInstrumentClusterSetting](./speedlimitsetting.md)
 
 
 ---

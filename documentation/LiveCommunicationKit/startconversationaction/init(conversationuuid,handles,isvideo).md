@@ -1,7 +1,8 @@
 # init(conversationUUID:handles:isVideo:)
 
 **Framework**: LiveCommunicationKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an action that starts an outgoing conversation.
 

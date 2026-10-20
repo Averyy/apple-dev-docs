@@ -1,7 +1,8 @@
 # biases
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key you use to access the biases of a layer in a neural network model.
 
@@ -20,15 +21,20 @@ The key you use to access the biases of a layer in a neural network model.
 class var biases: MLParameterKey { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) MLParameterKey * biases;
+```
+
 #### Discussion
 
-The value type for the [`biases`](mlparameterkey/biases.md) key is an [`MLMultiArray`](mlmultiarray.md). You must scope this key with the name of the specific neural network layer whose biases you’d like to access. See [`scoped(to:)`](mlparameterkey/scoped(to:).md).
+The value type for the [`biases`](./biases.md) key is an [`MLMultiArray`](../mlmultiarray.md). You must scope this key with the name of the specific neural network layer whose biases you’d like to access. See [`scoped(to:)`](./scoped%28to%29.md).
 
-> **Note**:  You can only override the biases of a model’s *updatable* layers. Model developers mark these layers as updatable with the [`Core ML Tools`](https://developer.apple.comhttps://coremltools.readme.io/).
+> **Note**:  You can only override the biases of a model’s *updatable* layers. Model developers mark these layers as updatable with the [Core ML Tools](https://coremltools.readme.io/).
 
 ## See Also
 
-- [class var weights: MLParameterKey](mlparameterkey/weights.md)
+### Accessing neural network layer parameters
+- [class var weights: MLParameterKey](./weights.md)
   The key you use to access the weights of a layer in a neural network model.
 
 

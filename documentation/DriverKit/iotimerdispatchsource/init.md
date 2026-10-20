@@ -1,37 +1,39 @@
 # init
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles the basic initialization of the dispatch source.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init();
 ```
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if initialization was successful, or [`false`](https://developer.apple.com/documentation/swift/false) if an error occurred.
+[`true`](../../Swift/true.md) if initialization was successful, or [`false`](../../Swift/false.md) if an error occurred.
 
 #### Discussion
 
-Don’t call this method directly. Call [`Create`](iotimerdispatchsource/create.md) when you want to create a new timer dispatch queue.
+Don’t call this method directly. Call [`Create`](./create.md) when you want to create a new timer dispatch queue.
 
 ## See Also
 
-- [Create](iotimerdispatchsource/create.md)
+### Configuring the Timer Source
+- [Create](./create.md)
   Creates and configures a timer dispatch object.
-- [free](iotimerdispatchsource/free.md)
+- [free](./free.md)
   Performs any final cleanup for the timer dispatch source.
-- [SetHandler](iotimerdispatchsource/sethandler.md)
+- [SetHandler](./sethandler.md)
   Sets the handler block to run when the timer fires.
 
 

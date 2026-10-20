@@ -1,7 +1,8 @@
 # isEqual(to:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the configuration objects are equivalent.
 
@@ -19,13 +20,17 @@ Returns a Boolean value that indicates whether the configuration objects are equ
 func isEqual(to otherConfiguration: UIImage.SymbolConfiguration?) -> Bool
 ```
 
+```objc
+- (BOOL) isEqualToConfiguration:(UIImageSymbolConfiguration *) otherConfiguration;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the trait collections and image configuration values of both objects match; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../../Swift/true.md) if the trait collections and image configuration values of both objects match; otherwise, [`false`](../../../Swift/false.md).
 
 ## Parameters
 
-- `otherConfiguration`: The other configuration object. Specify `nil` to compare the current configuration object to the configuration object in the [`unspecified`](uiimage/symbolconfiguration-swift.class/unspecified.md) property.
+- `otherConfiguration`: The other configuration object. Specify `nil` to compare the current configuration object to the configuration object in the [`unspecified`](./unspecified.md) property.
 
 
 ---

@@ -1,7 +1,8 @@
 # ModelSortGroup.DepthPass
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options that indicate when the renderer draws a model’s depth relative to its color.
 
@@ -22,18 +23,18 @@ enum DepthPass
 ## Topics
 
 ### Enumeration Cases
-- [ModelSortGroup.DepthPass.postPass](modelsortgroup/depthpass-swift.enum/postpass.md)
+- [ModelSortGroup.DepthPass.postPass](./depthpass-swift.enum/postpass.md)
   An option that instructs the renderer to draw the depth of a model only after it draws the colors for all the models in the group first.
-- [ModelSortGroup.DepthPass.prePass](modelsortgroup/depthpass-swift.enum/prepass.md)
+- [ModelSortGroup.DepthPass.prePass](./depthpass-swift.enum/prepass.md)
   An option that instructs the renderer to draw the depth of all the models in the group before it draws any model’s color.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

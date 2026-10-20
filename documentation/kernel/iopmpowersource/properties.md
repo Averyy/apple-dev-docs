@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 OSDictionary *properties;
 ```
 
@@ -15,7 +15,8 @@ Stores power source state
 
 ## See Also
 
-- [settingsChangedSinceUpdate](iopmpowersource/settingschangedsinceupdate.md)
+### Instance Variables
+- [settingsChangedSinceUpdate](./settingschangedsinceupdate.md)
 
 
 ---

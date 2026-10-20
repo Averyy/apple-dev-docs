@@ -1,14 +1,15 @@
 # ml_at_interrupt_context
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 boolean_t ml_at_interrupt_context(void);
 ```
 

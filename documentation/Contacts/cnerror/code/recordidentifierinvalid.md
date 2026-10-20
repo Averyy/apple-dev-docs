@@ -1,7 +1,8 @@
 # CNError.Code.recordIdentifierInvalid
 
 **Framework**: Contacts  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates a record identifier is invalid.
 
@@ -19,37 +20,42 @@ An error that indicates a record identifier is invalid.
 case recordIdentifierInvalid
 ```
 
+```c
+CNErrorCodeRecordIdentifierInvalid
+```
+
 ## See Also
 
-- [CNError.Code.authorizationDenied](cnerror/code/authorizationdenied.md)
+### Errors
+- [CNError.Code.authorizationDenied](./authorizationdenied.md)
   An error that indicates the system denied authorization.
-- [CNError.Code.changeHistoryExpired](cnerror/code/changehistoryexpired.md)
+- [CNError.Code.changeHistoryExpired](./changehistoryexpired.md)
   An error that indicates the change history expired.
-- [CNError.Code.changeHistoryInvalidAnchor](cnerror/code/changehistoryinvalidanchor.md)
+- [CNError.Code.changeHistoryInvalidAnchor](./changehistoryinvalidanchor.md)
   An error that indicates a change history anchor is invalid.
-- [CNError.Code.changeHistoryInvalidFetchRequest](cnerror/code/changehistoryinvalidfetchrequest.md)
+- [CNError.Code.changeHistoryInvalidFetchRequest](./changehistoryinvalidfetchrequest.md)
   An error that indicates a change history fetch request is invalid.
-- [CNError.Code.clientIdentifierCollision](cnerror/code/clientidentifiercollision.md)
+- [CNError.Code.clientIdentifierCollision](./clientidentifiercollision.md)
   An error that indicates a client identifier collision.
-- [CNError.Code.clientIdentifierInvalid](cnerror/code/clientidentifierinvalid.md)
+- [CNError.Code.clientIdentifierInvalid](./clientidentifierinvalid.md)
   An error that indicates the client identifier is invalid.
-- [CNError.Code.clientIdentifierDoesNotExist](cnerror/code/clientidentifierdoesnotexist.md)
+- [CNError.Code.clientIdentifierDoesNotExist](./clientidentifierdoesnotexist.md)
   An error that indicates the client identifier doesn’t exist.
-- [CNError.Code.communicationError](cnerror/code/communicationerror.md)
+- [CNError.Code.communicationError](./communicationerror.md)
   An error that indicates a communication error occurred.
-- [CNError.Code.containmentCycle](cnerror/code/containmentcycle.md)
+- [CNError.Code.containmentCycle](./containmentcycle.md)
   An error with the containment cycle.
-- [CNError.Code.containmentScope](cnerror/code/containmentscope.md)
+- [CNError.Code.containmentScope](./containmentscope.md)
   An error with containment scope.
-- [CNError.Code.dataAccessError](cnerror/code/dataaccesserror.md)
+- [CNError.Code.dataAccessError](./dataaccesserror.md)
   An error with data access.
-- [CNError.Code.featureDisabledByUser](cnerror/code/featuredisabledbyuser.md)
+- [CNError.Code.featureDisabledByUser](./featuredisabledbyuser.md)
   An error that indicates the user disabled the feature.
-- [CNError.Code.featureNotAvailable](cnerror/code/featurenotavailable.md)
+- [CNError.Code.featureNotAvailable](./featurenotavailable.md)
   An error that indicates the feature isn’t available.
-- [CNError.Code.insertedRecordAlreadyExists](cnerror/code/insertedrecordalreadyexists.md)
+- [CNError.Code.insertedRecordAlreadyExists](./insertedrecordalreadyexists.md)
   An error that indicates the inserted record already exists.
-- [CNError.Code.noAccessableWritableContainers](cnerror/code/noaccessablewritablecontainers.md)
+- [CNError.Code.noAccessableWritableContainers](./noaccessablewritablecontainers.md)
   An error that indicates there are no accessible writable containers.
 
 

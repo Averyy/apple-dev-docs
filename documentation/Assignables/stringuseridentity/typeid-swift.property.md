@@ -1,7 +1,8 @@
 # typeID
 
 **Framework**: Assignables  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique type identifier for this user identity.
 
@@ -9,7 +10,7 @@ A unique type identifier for this user identity.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,12 @@ var typeID: String { get }
 
 ## See Also
 
-- [var stringRepresentation: String](stringuseridentity/stringrepresentation.md)
+### Inspecting an identity
+- [var stringRepresentation: String](./stringrepresentation.md)
   String representation of this user identity for display or debugging purposes.
-- [static var typeID: String](stringuseridentity/typeid-swift.type.property.md)
+- [static var typeID: String](./typeid-swift.type.property.md)
   A unique type identifier for this user identity.
-- [var value: String](stringuseridentity/value.md)
+- [var value: String](./value.md)
   The value of the string to contain in this user identity.
 
 

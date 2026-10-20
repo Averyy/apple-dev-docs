@@ -1,7 +1,8 @@
 # String.IntentInputOptions.KeyboardType.numberPad
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A numeric keypad.
 

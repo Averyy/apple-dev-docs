@@ -1,7 +1,8 @@
 # RCSMessage.Content.dispositionNotification(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A content type for disposition notification content.
 
@@ -16,7 +17,8 @@ case dispositionNotification(RCSMessage.DispositionNotification)
 
 ## See Also
 
-- [RCSMessage.DispositionNotification](rcsmessage/dispositionnotification.md)
+### Working with disposition notifications
+- [RCSMessage.DispositionNotification](../dispositionnotification.md)
   A structure that represents disposition notification content in an RCS message, such as whether delivery succeeded or failed.
 
 

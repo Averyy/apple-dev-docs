@@ -1,7 +1,8 @@
 # nw_path_get_link_quality(_:)
 
 **Framework**: Network  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func nw_path_get_link_quality(_ path: nw_path_t) -> nw_link_quality_t
+```
+
+```c
+nw_link_quality_t nw_path_get_link_quality(nw_path_t path);
 ```
 
 #### Return Value

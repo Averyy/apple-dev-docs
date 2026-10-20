@@ -1,7 +1,8 @@
 # imageCropAndScaleOption
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional setting that tells the Vision algorithm how to scale an input image.
 
@@ -19,15 +20,20 @@ An optional setting that tells the Vision algorithm how to scale an input image.
 var imageCropAndScaleOption: VNImageCropAndScaleOption { get set }
 ```
 
+```objc
+@property (nonatomic) VNImageCropAndScaleOption imageCropAndScaleOption;
+```
+
 #### Discussion
 
 Scaling an image ensures that the entire image fits into the algorithm’s input image dimensions, which may require a change in aspect ratio. Each crop-and-scale option transforms the input image in a different way.
 
-![A series of six photos that show the effects of applying a center crop, scale fit, scale fill, scale fit rotate 90 degrees counterclockwise, and scale fill rotate 90 degrees counterclockwise option to the original input image.](/images/Vision/scale-crop-options@2x.png)
+![A series of six photos that show the effects of applying a center crop, scale fit, scale fill, scale fit rotate 90 degrees counterclockwise, and scale fill rotate 90 degrees counterclockwise option to the original input image.](https://developer.apple.com/tutorials/images/Vision/scale-crop-options@2x.png)
 
 ## See Also
 
-- [enum VNImageCropAndScaleOption](vnimagecropandscaleoption.md)
+### Configuring Image Options
+- [enum VNImageCropAndScaleOption](../vnimagecropandscaleoption.md)
   Options that define how Vision crops and scales an input-image.
 
 

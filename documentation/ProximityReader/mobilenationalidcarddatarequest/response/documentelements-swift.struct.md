@@ -1,7 +1,8 @@
 # MobileNationalIDCardDataRequest.Response.DocumentElements
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that contains the document elements from a successful mobile national ID card data request.
 
@@ -19,33 +20,33 @@ struct DocumentElements
 ## Topics
 
 ### Instance Properties
-- [let age: Int?](mobilenationalidcarddatarequest/response/documentelements-swift.struct/age.md)
+- [let age: Int?](./documentelements-swift.struct/age.md)
   The mobile national ID card holder’s age in years.
-- [let ageAtLeastElements: [Int : Bool]](mobilenationalidcarddatarequest/response/documentelements-swift.struct/ageatleastelements.md)
+- [let ageAtLeastElements: [Int : Bool]](./documentelements-swift.struct/ageatleastelements.md)
   A dictionary of values that indicate whether the document holder is at least the specified age.
-- [let dateOfBirth: DateComponents?](mobilenationalidcarddatarequest/response/documentelements-swift.struct/dateofbirth.md)
+- [let dateOfBirth: DateComponents?](./documentelements-swift.struct/dateofbirth.md)
   The date of birth of the mobile national ID card holder.
-- [let documentNumber: String?](mobilenationalidcarddatarequest/response/documentelements-swift.struct/documentnumber.md)
+- [let documentNumber: String?](./documentelements-swift.struct/documentnumber.md)
   The document’s number, as defined by the document’s issuing authority.
-- [let name: MobileDocumentHolderName?](mobilenationalidcarddatarequest/response/documentelements-swift.struct/name.md)
+- [let name: MobileDocumentHolderName?](./documentelements-swift.struct/name.md)
   The mobile national ID card holder’s name.
-- [var nameComponents: PersonNameComponents?](mobilenationalidcarddatarequest/response/documentelements-swift.struct/namecomponents.md)
+- [var nameComponents: PersonNameComponents?](./documentelements-swift.struct/namecomponents.md)
   The mobile national ID card holder’s name components.
-- [let portraitData: Data?](mobilenationalidcarddatarequest/response/documentelements-swift.struct/portraitdata.md)
+- [let portraitData: Data?](./documentelements-swift.struct/portraitdata.md)
   The portrait data of the mobile national ID card holder on record with the issuer.
-- [let sex: MobileNationalIDCardDataRequest.Response.DocumentElements.Sex?](mobilenationalidcarddatarequest/response/documentelements-swift.struct/sex-swift.property.md)
+- [let sex: MobileNationalIDCardDataRequest.Response.DocumentElements.Sex?](./documentelements-swift.struct/sex-swift.property.md)
   The mobile national ID card holder’s sex.
 ### Enumerations
-- [MobileNationalIDCardDataRequest.Response.DocumentElements.Sex](mobilenationalidcarddatarequest/response/documentelements-swift.struct/sex-swift.enum.md)
+- [MobileNationalIDCardDataRequest.Response.DocumentElements.Sex](./documentelements-swift.struct/sex-swift.enum.md)
   A type that represents the mobile national ID card holder’s sex.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

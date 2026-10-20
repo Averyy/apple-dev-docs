@@ -1,7 +1,8 @@
 # contacts
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The person needs to allow the app to access contacts.
 

@@ -1,7 +1,8 @@
 # UIPencilHoverPose
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes the hover pose of Apple Pencil during an interaction like double tap or squeeze.
 
@@ -18,11 +19,15 @@ An object that describes the hover pose of Apple Pencil during an interaction li
 class UIPencilHoverPose
 ```
 
+```objc
+@interface UIPencilHoverPose : NSObject
+```
+
 #### Overview
 
 Use the hover pose of Apple Pencil to support more complex interactions in response to a double tap or squeeze. Information about the hover pose — such as azimuth, altitude, and hover distance — is available when a person holds a supported model of Apple Pencil close to the screen during a double tap or squeeze.
 
-The following code example shows how to use the [`location`](uipencilhoverpose/location.md) of a hover pose to present a contextual palette near the tip of Apple Pencil.
+The following code example shows how to use the [`location`](./uipencilhoverpose/location.md) of a hover pose to present a contextual palette near the tip of Apple Pencil.
 
 ```swift
 func pencilInteraction(_ interaction: UIPencilInteraction,
@@ -40,43 +45,44 @@ func pencilInteraction(_ interaction: UIPencilInteraction,
 ## Topics
 
 ### Getting the hover characteristics
-- [var location: CGPoint](uipencilhoverpose/location.md)
+- [var location: CGPoint](./uipencilhoverpose/location.md)
   The location of an Apple Pencil above the view’s bounds, in view’s coordinate space.
-- [var altitudeAngle: CGFloat](uipencilhoverpose/altitudeangle.md)
+- [var altitudeAngle: CGFloat](./uipencilhoverpose/altitudeangle.md)
   A value that represents the altitude angle of Apple Pencil.
-- [var azimuthAngle: CGFloat](uipencilhoverpose/azimuthangle.md)
+- [var azimuthAngle: CGFloat](./uipencilhoverpose/azimuthangle.md)
   A value that represents the azimuth angle of Apple Pencil.
-- [var azimuthUnitVector: CGVector](uipencilhoverpose/azimuthunitvector.md)
+- [var azimuthUnitVector: CGVector](./uipencilhoverpose/azimuthunitvector.md)
   A value that represents the azimuth unit vector of Apple Pencil in the specified view.
-- [var rollAngle: CGFloat](uipencilhoverpose/rollangle.md)
+- [var rollAngle: CGFloat](./uipencilhoverpose/rollangle.md)
   A value that represents the barrel-roll angle of Apple Pencil.
-- [var zOffset: CGFloat](uipencilhoverpose/zoffset.md)
+- [var zOffset: CGFloat](./uipencilhoverpose/zoffset.md)
   A value that represents the normalized distance between the screen and Apple Pencil.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class UIPencilInteraction](uipencilinteraction.md)
+### Apple Pencil interactions in UIKit
+- [class UIPencilInteraction](./uipencilinteraction.md)
   An interaction that tells your app when a person double-taps or squeezes Apple Pencil.
-- [protocol UIPencilInteractionDelegate](uipencilinteractiondelegate.md)
+- [protocol UIPencilInteractionDelegate](./uipencilinteractiondelegate.md)
   The interface an object implements to handle double taps or squeezes a person makes on Apple Pencil.
-- [UIPencilInteraction.Tap](uipencilinteraction/tap.md)
+- [UIPencilInteraction.Tap](./uipencilinteraction/tap.md)
   An interaction that represents a double tap on Apple Pencil.
-- [UIPencilInteraction.Squeeze](uipencilinteraction/squeeze.md)
+- [UIPencilInteraction.Squeeze](./uipencilinteraction/squeeze.md)
   An interaction that represents a squeeze on Apple Pencil.
-- [UIPencilInteraction.Phase](uipencilinteraction/phase.md)
+- [UIPencilInteraction.Phase](./uipencilinteraction/phase.md)
   Constants that describe the phases of an interaction on Apple Pencil.
 
 

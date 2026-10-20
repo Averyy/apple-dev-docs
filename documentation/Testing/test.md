@@ -1,18 +1,19 @@
 # Test
 
 **Framework**: Swift Testing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type representing a test or suite.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 
@@ -35,58 +36,59 @@ Two instances of this type are considered to be equal if the values of their `Te
 ## Topics
 
 ### Structures
-- [struct Case](test/case.md)
-  A single test case from a parameterized [`Test`](test.md).
+- [struct Case](./test/case.md)
+  A single test case from a parameterized [`Test`](./test.md).
 ### Instance Properties
-- [var associatedBugs: [Bug]](test/associatedbugs.md)
+- [var associatedBugs: [Bug]](./test/associatedbugs.md)
   The set of bugs associated with this test.
-- [var comments: [Comment]](test/comments.md)
+- [var comments: [Comment]](./test/comments.md)
   The complete set of comments about this test from all of its traits.
-- [var displayName: String?](test/displayname.md)
+- [var displayName: String?](./test/displayname.md)
   The customized display name of this instance, if specified.
-- [var isParameterized: Bool](test/isparameterized.md)
+- [var isParameterized: Bool](./test/isparameterized.md)
   Whether or not this test is parameterized.
-- [var isSuite: Bool](test/issuite.md)
+- [var isSuite: Bool](./test/issuite.md)
   Whether or not this instance is a test suite containing other tests.
-- [var name: String](test/name.md)
+- [var name: String](./test/name.md)
   The name of this instance.
-- [var sourceLocation: SourceLocation](test/sourcelocation.md)
+- [var sourceLocation: SourceLocation](./test/sourcelocation.md)
   The source location of this test.
-- [var tags: Set<Tag>](test/tags.md)
+- [var tags: Set<Tag>](./test/tags.md)
   The complete, unique set of tags associated with this test.
-- [var timeLimit: Duration?](test/timelimit.md)
+- [var timeLimit: Duration?](./test/timelimit.md)
   The maximum amount of time this test’s cases may run for.
-- [var traits: [any Trait]](test/traits.md)
+- [var traits: [any Trait]](./test/traits.md)
   The set of traits added to this instance when it was initialized.
 ### Type Properties
-- [static var current: Test?](test/current.md)
+- [static var current: Test?](./test/current.md)
   The test that is running on the current task, if any.
 ### Type Methods
-- [static func cancel(Comment?, sourceLocation: SourceLocation) throws -> Never](test/cancel(_:sourcelocation:).md)
+- [static func cancel(Comment?, sourceLocation: SourceLocation) throws -> Never](./test/cancel%28_,sourcelocation%29.md)
   Cancel the current test or test case.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Defining test functions](definingtests.md)
+### Essentials
+- [Defining test functions](./definingtests.md)
   Define a test function to validate that code is working correctly.
-- [Organizing test functions with suite types](organizingtests.md)
+- [Organizing test functions with suite types](./organizingtests.md)
   Organize tests into test suites.
-- [Migrating a test from XCTest](migratingfromxctest.md)
+- [Migrating a test from XCTest](./migratingfromxctest.md)
   Migrate an existing test method or test class written using XCTest.
-- [macro Test(String?, any TestTrait...)](test(_:_:).md)
+- [macro Test(String?, any TestTrait...)](./test%28_,_%29.md)
   Declare a test.
-- [macro Suite(String?, any SuiteTrait...)](suite(_:_:).md)
+- [macro Suite(String?, any SuiteTrait...)](./suite%28_,_%29.md)
   Declare a test suite.
 
 

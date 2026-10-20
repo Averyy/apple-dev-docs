@@ -1,7 +1,8 @@
 # buildBlock(_:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,7 +21,8 @@ static func buildBlock(_ blocks: PartialKeyPath<Intent>...) -> [PartialKeyPath<I
 
 ## See Also
 
-- [static func buildExpression<ValueType>(KeyPath<Intent, IntentParameter<ValueType>>) -> PartialKeyPath<Intent>](intentparametersummary/parameterkeypathsbuilder/buildexpression(_:).md)
+### Building the path
+- [static func buildExpression<ValueType>(KeyPath<Intent, IntentParameter<ValueType>>) -> PartialKeyPath<Intent>](./buildexpression%28_%29.md)
 
 
 ---

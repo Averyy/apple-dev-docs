@@ -1,7 +1,8 @@
 # canceledLogin
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The login has been canceled.
 
@@ -22,15 +23,16 @@ static var canceledLogin: ASWebAuthenticationSessionError.Code { get }
 
 ## Mentions
 
-- [Authenticating a User Through a Web Service](authenticating-a-user-through-a-web-service.md)
+- [Authenticating a User Through a Web Service](../authenticating-a-user-through-a-web-service.md)
 
 ## See Also
 
-- [static var presentationContextNotProvided: ASWebAuthenticationSessionError.Code](aswebauthenticationsessionerror/presentationcontextnotprovided.md)
+### Error Codes
+- [static var presentationContextNotProvided: ASWebAuthenticationSessionError.Code](./presentationcontextnotprovided.md)
   A context wasn’t provided.
-- [static var presentationContextInvalid: ASWebAuthenticationSessionError.Code](aswebauthenticationsessionerror/presentationcontextinvalid.md)
+- [static var presentationContextInvalid: ASWebAuthenticationSessionError.Code](./presentationcontextinvalid.md)
   The context was invalid.
-- [ASWebAuthenticationSessionError.Code](aswebauthenticationsessionerror/code.md)
+- [ASWebAuthenticationSessionError.Code](./code.md)
   The error code for a web authentication session error.
 
 

@@ -1,7 +1,8 @@
 # WeatherCondition
 
 **Framework**: WeatherKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A description of the current weather condition.
 
@@ -23,110 +24,111 @@ enum WeatherCondition
 ## Topics
 
 ### Getting visibility properties
-- [WeatherCondition.blowingDust](weathercondition/blowingdust.md)
+- [WeatherCondition.blowingDust](./weathercondition/blowingdust.md)
   Blowing dust or sandstorm.
-- [WeatherCondition.clear](weathercondition/clear.md)
+- [WeatherCondition.clear](./weathercondition/clear.md)
   Clear.
-- [WeatherCondition.cloudy](weathercondition/cloudy.md)
+- [WeatherCondition.cloudy](./weathercondition/cloudy.md)
   Cloudy, overcast conditions.
-- [WeatherCondition.foggy](weathercondition/foggy.md)
+- [WeatherCondition.foggy](./weathercondition/foggy.md)
   Fog.
-- [WeatherCondition.haze](weathercondition/haze.md)
+- [WeatherCondition.haze](./weathercondition/haze.md)
   Haze.
-- [WeatherCondition.mostlyClear](weathercondition/mostlyclear.md)
+- [WeatherCondition.mostlyClear](./weathercondition/mostlyclear.md)
   Mostly clear.
-- [WeatherCondition.mostlyCloudy](weathercondition/mostlycloudy.md)
+- [WeatherCondition.mostlyCloudy](./weathercondition/mostlycloudy.md)
   Mostly cloudy.
-- [WeatherCondition.partlyCloudy](weathercondition/partlycloudy.md)
+- [WeatherCondition.partlyCloudy](./weathercondition/partlycloudy.md)
   Partly cloudy.
-- [WeatherCondition.smoky](weathercondition/smoky.md)
+- [WeatherCondition.smoky](./weathercondition/smoky.md)
   Smoky.
 ### Getting wind properties
-- [WeatherCondition.breezy](weathercondition/breezy.md)
+- [WeatherCondition.breezy](./weathercondition/breezy.md)
   Breezy, light wind.
-- [WeatherCondition.windy](weathercondition/windy.md)
+- [WeatherCondition.windy](./weathercondition/windy.md)
   Windy.
 ### Getting precipitation properties
-- [WeatherCondition.drizzle](weathercondition/drizzle.md)
+- [WeatherCondition.drizzle](./weathercondition/drizzle.md)
   Drizzle or light rain.
-- [WeatherCondition.heavyRain](weathercondition/heavyrain.md)
+- [WeatherCondition.heavyRain](./weathercondition/heavyrain.md)
   Heavy rain.
-- [WeatherCondition.isolatedThunderstorms](weathercondition/isolatedthunderstorms.md)
+- [WeatherCondition.isolatedThunderstorms](./weathercondition/isolatedthunderstorms.md)
   Thunderstorms covering less than 1/8 of the forecast area.
-- [WeatherCondition.rain](weathercondition/rain.md)
+- [WeatherCondition.rain](./weathercondition/rain.md)
   Rain.
-- [WeatherCondition.sunShowers](weathercondition/sunshowers.md)
+- [WeatherCondition.sunShowers](./weathercondition/sunshowers.md)
   Rain with visible sun.
-- [WeatherCondition.scatteredThunderstorms](weathercondition/scatteredthunderstorms.md)
+- [WeatherCondition.scatteredThunderstorms](./weathercondition/scatteredthunderstorms.md)
   Numerous thunderstorms spread across up to 50% of the forecast area.
-- [WeatherCondition.strongStorms](weathercondition/strongstorms.md)
+- [WeatherCondition.strongStorms](./weathercondition/strongstorms.md)
   Notably strong thunderstorms.
-- [WeatherCondition.thunderstorms](weathercondition/thunderstorms.md)
+- [WeatherCondition.thunderstorms](./weathercondition/thunderstorms.md)
   Thunderstorms.
 ### Getting hazardous properties
-- [WeatherCondition.frigid](weathercondition/frigid.md)
+- [WeatherCondition.frigid](./weathercondition/frigid.md)
   Frigid conditions, low temperatures, or ice crystals.
-- [WeatherCondition.hail](weathercondition/hail.md)
+- [WeatherCondition.hail](./weathercondition/hail.md)
   Hail.
-- [WeatherCondition.hot](weathercondition/hot.md)
+- [WeatherCondition.hot](./weathercondition/hot.md)
   High temperatures.
 ### Getting winter precipitation properties
-- [WeatherCondition.flurries](weathercondition/flurries.md)
+- [WeatherCondition.flurries](./weathercondition/flurries.md)
   Flurries or light snow.
-- [WeatherCondition.sleet](weathercondition/sleet.md)
+- [WeatherCondition.sleet](./weathercondition/sleet.md)
   Sleet.
-- [WeatherCondition.snow](weathercondition/snow.md)
+- [WeatherCondition.snow](./weathercondition/snow.md)
   Snow.
-- [WeatherCondition.sunFlurries](weathercondition/sunflurries.md)
+- [WeatherCondition.sunFlurries](./weathercondition/sunflurries.md)
   Snow flurries with visible sun.
-- [WeatherCondition.wintryMix](weathercondition/wintrymix.md)
+- [WeatherCondition.wintryMix](./weathercondition/wintrymix.md)
   Wintry mix.
 ### Getting hazardous winter properties
-- [WeatherCondition.blizzard](weathercondition/blizzard.md)
+- [WeatherCondition.blizzard](./weathercondition/blizzard.md)
   Blizzard.
-- [WeatherCondition.blowingSnow](weathercondition/blowingsnow.md)
+- [WeatherCondition.blowingSnow](./weathercondition/blowingsnow.md)
   Blowing or drifting snow.
-- [WeatherCondition.freezingDrizzle](weathercondition/freezingdrizzle.md)
+- [WeatherCondition.freezingDrizzle](./weathercondition/freezingdrizzle.md)
   Freezing drizzle or light rain.
-- [WeatherCondition.freezingRain](weathercondition/freezingrain.md)
+- [WeatherCondition.freezingRain](./weathercondition/freezingrain.md)
   Freezing rain.
-- [WeatherCondition.heavySnow](weathercondition/heavysnow.md)
+- [WeatherCondition.heavySnow](./weathercondition/heavysnow.md)
   Heavy snow.
 ### Getting tropical hazard properties
-- [WeatherCondition.hurricane](weathercondition/hurricane.md)
+- [WeatherCondition.hurricane](./weathercondition/hurricane.md)
   Hurricane.
-- [WeatherCondition.tropicalStorm](weathercondition/tropicalstorm.md)
+- [WeatherCondition.tropicalStorm](./weathercondition/tropicalstorm.md)
   Tropical storm.
 ### Describing the weather condition
-- [var accessibilityDescription: String](weathercondition/accessibilitydescription.md)
+- [var accessibilityDescription: String](./weathercondition/accessibilitydescription.md)
   A localized accessibility description describing the weather condition.
-- [var description: String](weathercondition/description.md)
+- [var description: String](./weathercondition/description.md)
   A localized string describing the current condition.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum Precipitation](precipitation.md)
+### Characteristics
+- [enum Precipitation](./precipitation.md)
   The form of precipitation.
-- [enum PressureTrend](pressuretrend.md)
+- [enum PressureTrend](./pressuretrend.md)
   The atmospheric pressure change over time.
-- [struct UVIndex](uvindex.md)
+- [struct UVIndex](./uvindex.md)
   The expected intensity of ultraviolet radiation from the sun.
-- [struct Wind](wind.md)
+- [struct Wind](./wind.md)
   Contains wind data of speed, direction, and gust.
 
 

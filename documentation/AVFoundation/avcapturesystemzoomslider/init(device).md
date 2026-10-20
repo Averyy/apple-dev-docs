@@ -1,7 +1,8 @@
 # init(device:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a slider to control the video zoom factor of a capture device.
 
@@ -18,9 +19,13 @@ Creates a slider to control the video zoom factor of a capture device.
 init(device: AVCaptureDevice)
 ```
 
+```objc
+- (instancetype) initWithDevice:(AVCaptureDevice *) device;
+```
+
 #### Discussion
 
-You can only create a zoom slider with a device that support’s setting its [`videoZoomFactor`](avcapturedevice/videozoomfactor.md) property value.
+You can only create a zoom slider with a device that support’s setting its [`videoZoomFactor`](../avcapturedevice/videozoomfactor.md) property value.
 
 ## Parameters
 
@@ -28,7 +33,8 @@ You can only create a zoom slider with a device that support’s setting its [`v
 
 ## See Also
 
-- [init(device: AVCaptureDevice, action: (CGFloat) -> Void)](avcapturesystemzoomslider/init(device:action:).md)
+### Creating a zoom slider
+- [init(device: AVCaptureDevice, action: (CGFloat) -> Void)](./init%28device,action%29.md)
   Creates a slider to control the zoom level of the specified capture device with an action to respond to zoom changes.
 
 

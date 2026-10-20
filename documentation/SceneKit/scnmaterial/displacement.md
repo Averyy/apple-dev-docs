@@ -1,16 +1,17 @@
 # displacement
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -18,15 +19,20 @@
 var displacement: SCNMaterialProperty { get }
 ```
 
+```objc
+@property (nonatomic, readonly) SCNMaterialProperty * displacement;
+```
+
 ## See Also
 
-- [var normal: SCNMaterialProperty](scnmaterial/normal.md)
+### Visual Properties for Special Effects
+- [var normal: SCNMaterialProperty](./normal.md)
   An object that defines the nominal orientation of the surface at each point for use in lighting.
-- [var emission: SCNMaterialProperty](scnmaterial/emission.md)
+- [var emission: SCNMaterialProperty](./emission.md)
   An object that defines the color emitted by each point on a surface.
-- [var selfIllumination: SCNMaterialProperty](scnmaterial/selfillumination.md)
+- [var selfIllumination: SCNMaterialProperty](./selfillumination.md)
   An object that provides color values representing the global illumination of the surface.
-- [var ambientOcclusion: SCNMaterialProperty](scnmaterial/ambientocclusion.md)
+- [var ambientOcclusion: SCNMaterialProperty](./ambientocclusion.md)
   An object that provides color values to be multiplied with the ambient light affecting the material.
 
 

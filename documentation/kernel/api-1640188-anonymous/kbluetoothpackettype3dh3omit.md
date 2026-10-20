@@ -1,14 +1,15 @@
 # kBluetoothPacketType3DH3Omit
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothPacketType3DH3Omit = 0x0200
 ```
 

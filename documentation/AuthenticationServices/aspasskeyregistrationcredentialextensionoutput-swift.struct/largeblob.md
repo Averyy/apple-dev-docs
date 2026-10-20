@@ -1,7 +1,8 @@
 # largeBlob
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The output for a large binary object operation during passkey registration.
 
@@ -20,11 +21,12 @@ var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationOutput? { 
 
 ## See Also
 
-- [struct ASAuthorizationPublicKeyCredentialLargeBlobRegistrationOutput](asauthorizationpublickeycredentiallargeblobregistrationoutput-swift.struct.md)
+### Inspecting properties
+- [struct ASAuthorizationPublicKeyCredentialLargeBlobRegistrationOutput](../asauthorizationpublickeycredentiallargeblobregistrationoutput-swift.struct.md)
   The result of the large binary object support check, resulting from a passkey registration response.
-- [var prf: ASAuthorizationPublicKeyCredentialPRFRegistrationOutput?](aspasskeyregistrationcredentialextensionoutput-swift.struct/prf.md)
+- [var prf: ASAuthorizationPublicKeyCredentialPRFRegistrationOutput?](./prf.md)
   The outputs of the WebAuthn PRF extension in passkey registration requests.
-- [struct ASAuthorizationPublicKeyCredentialPRFRegistrationOutput](asauthorizationpublickeycredentialprfregistrationoutput-swift.struct.md)
+- [struct ASAuthorizationPublicKeyCredentialPRFRegistrationOutput](../asauthorizationpublickeycredentialprfregistrationoutput-swift.struct.md)
   A type to represent outputs of the web authentication PRF extension, when requesting them during a registration.
 
 

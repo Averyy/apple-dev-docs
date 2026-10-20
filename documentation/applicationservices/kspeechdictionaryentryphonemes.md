@@ -1,7 +1,8 @@
 # kSpeechDictionaryEntryPhonemes
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The phonemic representation of an entry.
 
@@ -12,6 +13,10 @@ The phonemic representation of an entry.
 
 ```swift
 let kSpeechDictionaryEntryPhonemes: CFString
+```
+
+```c
+const CFStringRef kSpeechDictionaryEntryPhonemes;
 ```
 
 

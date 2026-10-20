@@ -1,7 +1,8 @@
 # MoonEvents
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents lunar events.
 
@@ -23,29 +24,30 @@ struct MoonEvents
 ## Topics
 
 ### Getting the moon events
-- [var moonrise: Date?](moonevents/moonrise.md)
+- [var moonrise: Date?](./moonevents/moonrise.md)
   The time of moonrise.
-- [var moonset: Date?](moonevents/moonset.md)
+- [var moonset: Date?](./moonevents/moonset.md)
   The time of moonset.
-- [var phase: MoonPhase](moonevents/phase.md)
+- [var phase: MoonPhase](./moonevents/phase.md)
   The moon phase.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct SunEvents](sunevents.md)
+### Celestial information
+- [struct SunEvents](./sunevents.md)
   An enumeration that represents dates of solar events, including sunrise, sunset, dawn, and dusk.
-- [enum MoonPhase](moonphase.md)
+- [enum MoonPhase](./moonphase.md)
   An enumeration that specifies the moon phase kind.
 
 

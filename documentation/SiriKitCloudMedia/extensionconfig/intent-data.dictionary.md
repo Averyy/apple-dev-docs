@@ -1,7 +1,8 @@
 # ExtensionConfig.Intent
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Instructions for accessing your media service’s intent endpoints.
 
@@ -10,33 +11,34 @@ Instructions for accessing your media service’s intent endpoints.
 
 ## Declaration
 
-```swift
+```
 object ExtensionConfig.Intent
 ```
 
 ## Topics
 
 ### Requiring Headers for All Intent Requests
-- [object ExtensionConfig.Intent.Hdr](extensionconfig/intent-data.dictionary/hdr-data.dictionary.md)
+- [object ExtensionConfig.Intent.Hdr](./intent-data.dictionary/hdr-data.dictionary.md)
   Headers to include with requests to intent endpoints.
 ### Specifying Required Headers and Supported Processing for Each Intent
-- [object ExtensionConfig.Intent.AddMedia](extensionconfig/intent-data.dictionary/addmedia-data.dictionary.md)
+- [object ExtensionConfig.Intent.AddMedia](./intent-data.dictionary/addmedia-data.dictionary.md)
   Configuration details for your service’s add media intent.
-- [object ExtensionConfig.Intent.PlayMedia](extensionconfig/intent-data.dictionary/playmedia-data.dictionary.md)
+- [object ExtensionConfig.Intent.PlayMedia](./intent-data.dictionary/playmedia-data.dictionary.md)
   Configuration details for your service’s play media intent.
-- [object ExtensionConfig.Intent.UpdateMediaAffinity](extensionconfig/intent-data.dictionary/updatemediaaffinity-data.dictionary.md)
+- [object ExtensionConfig.Intent.UpdateMediaAffinity](./intent-data.dictionary/updatemediaaffinity-data.dictionary.md)
   Configuration details for your service’s update media affinity intent.
 
 ## Properties
 
 - `hdr` (ExtensionConfig.Intent.Hdr): Headers to include with requests to intent endpoints.
-- `addMedia` (ExtensionConfig.Intent.AddMedia): Details specific to [`Process an Add Media Intent`](addmedia.md).
-- `playMedia` (ExtensionConfig.Intent.PlayMedia) *(required)*: Details specific to [`Process a Play Media Intent`](playmedia-1g2o9.md).
-- `updateMediaAffinity` (ExtensionConfig.Intent.UpdateMediaAffinity): Details specific to [`updateMediaAffinity`](extensionconfig/intent-data.dictionary/updatemediaaffinity-data.dictionarykey.md).
+- `addMedia` (ExtensionConfig.Intent.AddMedia): Details specific to [`Process an Add Media Intent`](../addmedia.md).
+- `playMedia` (ExtensionConfig.Intent.PlayMedia) *(required)*: Details specific to [`Process a Play Media Intent`](../playmedia-1g2o9.md).
+- `updateMediaAffinity` (ExtensionConfig.Intent.UpdateMediaAffinity): Details specific to [`updateMediaAffinity`](./intent-data.dictionary/updatemediaaffinity-data.dictionarykey.md).
 
 ## See Also
 
-- [object ExtensionEndpointConfig](extensionendpointconfig.md)
+### Describing Supported Intent Endpoints
+- [object ExtensionEndpointConfig](../extensionendpointconfig.md)
   Instructions for accessing an intent endpoint.
 
 

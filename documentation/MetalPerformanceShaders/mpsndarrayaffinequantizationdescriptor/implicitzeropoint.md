@@ -1,7 +1,8 @@
 # implicitZeroPoint
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var implicitZeroPoint: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) bool implicitZeroPoint;
 ```
 
 

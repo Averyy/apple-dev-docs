@@ -1,7 +1,8 @@
 # keyDirectObject
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Direct parameter. Usually specifies the data to be acted upon by the target application.
 

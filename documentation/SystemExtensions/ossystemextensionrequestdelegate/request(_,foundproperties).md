@@ -1,7 +1,8 @@
 # request(_:foundProperties:)
 
 **Framework**: System Extensions  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 12.0+
@@ -10,6 +11,10 @@
 
 ```swift
 optional func request(_ request: OSSystemExtensionRequest, foundProperties properties: [OSSystemExtensionProperties])
+```
+
+```objc
+- (void) request:(OSSystemExtensionRequest *) request foundProperties:(NSArray<OSSystemExtensionProperties *> *) properties;
 ```
 
 

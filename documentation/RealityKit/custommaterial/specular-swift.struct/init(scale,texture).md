@@ -1,7 +1,8 @@
 # init(scale:texture:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object from a single value, a UV-mapped texture, or both.
 
@@ -20,15 +21,15 @@ init(scale: Float = 1.0, texture: CustomMaterial.Texture? = nil)
 
 #### Discussion
 
-RealityKit automatically draws *specular highlights* for physically based materials using the values of various properties, primarily [`roughness`](physicallybasedmaterial/roughness-swift.property.md) and [`metallic`](physicallybasedmaterial/metallic-swift.property.md). Specular highlights are bright spots of reflected light that appear on shiny objects.
+RealityKit automatically draws *specular highlights* for physically based materials using the values of various properties, primarily [`roughness`](../../physicallybasedmaterial/roughness-swift.property.md) and [`metallic`](../../physicallybasedmaterial/metallic-swift.property.md). Specular highlights are bright spots of reflected light that appear on shiny objects.
 
-![An illustration showing a sphere and a cube with rounded corners.](/images/com.apple.RealityKit/CustomMaterial-Specular-swift-struct-init(scale:texture:)-1@2x.png)
+![An illustration showing a sphere and a cube with rounded corners.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/CustomMaterial-Specular-swift-struct-init(scale:texture:)-1@2x.png)
 
 While many real-world objects can be accurately and realistically simulated with just the core physically based rendering (PBR) properties, you can create additional realistic effects by augmenting the specular highlights.
 
-The specular [`scale`](custommaterial/specular-swift.struct/scale.md) and [`texture`](custommaterial/specular-swift.struct/texture.md) values are available to the material’s surface shader, but RealityKit doesn’t render additional specular highlights unless the surface shader function calls `params.surface().set_specular()`.
+The specular [`scale`](./scale.md) and [`texture`](./texture.md) values are available to the material’s surface shader, but RealityKit doesn’t render additional specular highlights unless the surface shader function calls `params.surface().set_specular()`.
 
-The following Metal code demonstrates using the specular `scale` and `texture` values in a surface shader function to calculate specular highlights, emulating the specular behavior of [`PhysicallyBasedMaterial`](physicallybasedmaterial.md):
+The following Metal code demonstrates using the specular `scale` and `texture` values in a surface shader function to calculate specular highlights, emulating the specular behavior of [`PhysicallyBasedMaterial`](../../physicallybasedmaterial.md):
 
 ```other
     // Retrieve the opacity scale from the CustomMaterial.
@@ -58,9 +59,10 @@ The following Metal code demonstrates using the specular `scale` and `texture` v
 
 ## See Also
 
-- [init(floatLiteral: Float)](custommaterial/specular-swift.struct/init(floatliteral:).md)
+### Creating a specular object
+- [init(floatLiteral: Float)](./init%28floatliteral%29.md)
   Creates an object from a single value.
-- [init(PhysicallyBasedMaterial.Specular)](custommaterial/specular-swift.struct/init(_:).md)
+- [init(PhysicallyBasedMaterial.Specular)](./init%28_%29.md)
   Creates an object from a physically based material’s specular property.
 
 

@@ -1,7 +1,8 @@
 # NSStringFromCPManeuverType(_:)
 
 **Framework**: CarPlay  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 17.4+
@@ -12,6 +13,10 @@
 
 ```swift
 func NSStringFromCPManeuverType(_ maneuverType: CPManeuverType) -> String!
+```
+
+```c
+NSString *NSStringFromCPManeuverType(CPManeuverType maneuverType);
 ```
 
 

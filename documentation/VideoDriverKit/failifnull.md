@@ -1,14 +1,15 @@
 # FailIfNULL
 
 **Framework**: VideoDriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 #define FailIfNULL(inPointer, inAction, inHandler, inMessage)
 ```
 

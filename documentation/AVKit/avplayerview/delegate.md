@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The player view’s delegate object.
 
@@ -14,9 +15,14 @@ The player view’s delegate object.
 weak var delegate: (any AVPlayerViewDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, readwrite, nullable) id<AVPlayerViewDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol AVPlayerViewDelegate](avplayerviewdelegate.md)
+### Setting the delegate object
+- [protocol AVPlayerViewDelegate](../avplayerviewdelegate.md)
   A protocol that defines the methods to implement to participate in the player view’s full-screen presentation life cycle.
 
 

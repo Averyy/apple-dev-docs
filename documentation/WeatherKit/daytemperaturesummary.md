@@ -1,7 +1,8 @@
 # DayTemperatureSummary
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes the temperature summary for a day.
 
@@ -23,21 +24,21 @@ struct DayTemperatureSummary
 ## Topics
 
 ### Instance Properties
-- [var date: Date](daytemperaturesummary/date.md)
+- [var date: Date](./daytemperaturesummary/date.md)
   The day of the observed temperature summary.
-- [var highTemperature: Measurement<UnitTemperature>](daytemperaturesummary/hightemperature.md)
+- [var highTemperature: Measurement<UnitTemperature>](./daytemperaturesummary/hightemperature.md)
   The observed high temperature for the day.
-- [var lowTemperature: Measurement<UnitTemperature>](daytemperaturesummary/lowtemperature.md)
+- [var lowTemperature: Measurement<UnitTemperature>](./daytemperaturesummary/lowtemperature.md)
   The observed low temperature for the day.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # MTRThreadNetworkDiagnosticsNetworkFault
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,25 +19,29 @@
 enum MTRThreadNetworkDiagnosticsNetworkFault
 ```
 
+```c
+enum MTRThreadNetworkDiagnosticsNetworkFault : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRThreadNetworkDiagnosticsNetworkFault.hardwareFailure](mtrthreadnetworkdiagnosticsnetworkfault/hardwarefailure.md)
-- [MTRThreadNetworkDiagnosticsNetworkFault.linkDown](mtrthreadnetworkdiagnosticsnetworkfault/linkdown.md)
-- [MTRThreadNetworkDiagnosticsNetworkFault.networkJammed](mtrthreadnetworkdiagnosticsnetworkfault/networkjammed.md)
-- [MTRThreadNetworkDiagnosticsNetworkFault.unspecified](mtrthreadnetworkdiagnosticsnetworkfault/unspecified.md)
+- [MTRThreadNetworkDiagnosticsNetworkFault.hardwareFailure](./mtrthreadnetworkdiagnosticsnetworkfault/hardwarefailure.md)
+- [MTRThreadNetworkDiagnosticsNetworkFault.linkDown](./mtrthreadnetworkdiagnosticsnetworkfault/linkdown.md)
+- [MTRThreadNetworkDiagnosticsNetworkFault.networkJammed](./mtrthreadnetworkdiagnosticsnetworkfault/networkjammed.md)
+- [MTRThreadNetworkDiagnosticsNetworkFault.unspecified](./mtrthreadnetworkdiagnosticsnetworkfault/unspecified.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrthreadnetworkdiagnosticsnetworkfault/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrthreadnetworkdiagnosticsnetworkfault/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

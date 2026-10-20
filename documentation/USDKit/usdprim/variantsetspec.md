@@ -1,7 +1,8 @@
 # USDPrim.VariantSetSpec
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A handle to a variant set — a named group of variant options.
 
@@ -22,41 +23,42 @@ struct VariantSetSpec
 ## Topics
 
 ### Initializers
-- [init()](usdprim/variantsetspec/init.md)
+- [init()](./variantsetspec/init%28%29.md)
   Creates an empty (invalid) variant set spec handle.
-- [init?(USDLayer.Spec)](usdprim/variantsetspec/init(_:).md)
-  Narrows an untyped [`USDLayer.Spec`](usdlayer/spec.md) to a variant set spec.
-- [init?(owner: USDPrim.VariantSpec, name: USDToken)](usdprim/variantsetspec/init(owner:name:)-1njrp.md)
+- [init?(USDLayer.Spec)](./variantsetspec/init%28_%29.md)
+  Narrows an untyped [`USDLayer.Spec`](../usdlayer/spec.md) to a variant set spec.
+- [init?(owner: USDPrim.VariantSpec, name: USDToken)](./variantsetspec/init%28owner,name%29-1njrp.md)
   Creates a new variant set spec nested inside a variant spec.
-- [init?(owner: USDPrim.Spec, name: USDToken)](usdprim/variantsetspec/init(owner:name:)-6pbza.md)
+- [init?(owner: USDPrim.Spec, name: USDToken)](./variantsetspec/init%28owner,name%29-6pbza.md)
   Creates a new variant set spec under the given prim spec.
 ### Instance Properties
-- [var name: USDToken](usdprim/variantsetspec/name.md)
+- [var name: USDToken](./variantsetspec/name.md)
   The variant set’s local name.
-- [var owner: USDLayer.Spec?](usdprim/variantsetspec/owner.md)
+- [var owner: USDLayer.Spec?](./variantsetspec/owner.md)
   The owning spec — a prim spec or variant spec.
-- [var variants: [USDPrim.VariantSpec]](usdprim/variantsetspec/variants.md)
+- [var variants: [USDPrim.VariantSpec]](./variantsetspec/variants.md)
   All variant specs in this set.
 ### Instance Methods
-- [func removeVariant(USDPrim.VariantSpec)](usdprim/variantsetspec/removevariant(_:).md)
+- [func removeVariant(USDPrim.VariantSpec)](./variantsetspec/removevariant%28_%29.md)
   Removes the given variant spec from this set.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [USDLayer.Spec.FieldCollection](usdlayer/spec/fieldcollection.md)
-- [USDLayer.Spec.MetadataCollection](usdlayer/spec/metadatacollection.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [USDLayer.Spec.FieldCollection](../usdlayer/spec/fieldcollection.md)
+- [USDLayer.Spec.MetadataCollection](../usdlayer/spec/metadatacollection.md)
 
 ## See Also
 
-- [USDPrim.VariantSpec](usdprim/variantspec.md)
+### Authoring variants
+- [USDPrim.VariantSpec](./variantspec.md)
   A handle to a single variant option within a variant set.
-- [typealias VariantsMap](usdprim/variantsmap.md)
+- [typealias VariantsMap](./variantsmap.md)
   Maps variant set names to lists of available variant names.
-- [typealias VariantSelectionMap](usdprim/variantselectionmap.md)
+- [typealias VariantSelectionMap](./variantselectionmap.md)
   Maps variant set names to selected variant names.
 
 

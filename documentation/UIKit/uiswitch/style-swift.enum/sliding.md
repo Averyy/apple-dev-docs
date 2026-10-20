@@ -1,7 +1,8 @@
 # UISwitch.Style.sliding
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style indicating that the switch appears as an on/off slider.
 
@@ -17,11 +18,16 @@ A style indicating that the switch appears as an on/off slider.
 case sliding
 ```
 
+```c
+UISwitchStyleSliding
+```
+
 ## See Also
 
-- [UISwitch.Style.automatic](uiswitch/style-swift.enum/automatic.md)
+### Styles
+- [UISwitch.Style.automatic](./automatic.md)
   A style indicating that the system chooses the appearance of the switch according to the current user interface idiom.
-- [UISwitch.Style.checkbox](uiswitch/style-swift.enum/checkbox.md)
+- [UISwitch.Style.checkbox](./checkbox.md)
   A style indicating that the switch appears as a Mac-style checkbox.
 
 

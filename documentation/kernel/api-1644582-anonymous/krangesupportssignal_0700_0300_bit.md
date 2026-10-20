@@ -1,14 +1,15 @@
 # kRangeSupportsSignal_0700_0300_Bit
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kRangeSupportsSignal_0700_0300_Bit = 0
 ```
 

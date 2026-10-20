@@ -1,7 +1,8 @@
 # ErrorsResponse
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The collection of errors that occurred while processing the request.
 
@@ -10,7 +11,7 @@ The collection of errors that occurred while processing the request.
 
 ## Declaration
 
-```swift
+```
 object ErrorsResponse
 ```
 
@@ -20,15 +21,16 @@ object ErrorsResponse
 
 ## See Also
 
-- [object ResourceCollectionResponse](resourcecollectionresponse.md)
+### Interpreting responses
+- [object ResourceCollectionResponse](./resourcecollectionresponse.md)
   A response that contains the resource objects for the request.
-- [object ResultsResponse](resultsresponse.md)
+- [object ResultsResponse](./resultsresponse.md)
   A response that contains the resource objects for the request.
-- [object AppsResponse](appsresponse.md)
+- [object AppsResponse](./appsresponse.md)
   A response that contains the resource objects for the request.
-- [object BooksResponse](booksresponse.md)
+- [object BooksResponse](./booksresponse.md)
   A response that contains the resource objects for the request.
-- [object UnauthorizedResponse](unauthorizedresponse.md)
+- [object UnauthorizedResponse](./unauthorizedresponse.md)
   A response that indicates an incorrect authorization header.
 
 

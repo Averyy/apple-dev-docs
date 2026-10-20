@@ -1,7 +1,8 @@
 # get()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the success value as a throwing expression.
 
@@ -19,6 +20,8 @@ Returns the success value as a throwing expression.
 ```swift
 consuming func get() throws(Failure) -> Success
 ```
+
+Available when `Failure` conforms to `Error`.
 
 #### Return Value
 
@@ -39,7 +42,7 @@ do {
 // Prints "The value is 5."
 ```
 
-> **Note**: The failure value, if the instance represents a failure.
+> **Throws**: The failure value, if the instance represents a failure.
 
 
 ---

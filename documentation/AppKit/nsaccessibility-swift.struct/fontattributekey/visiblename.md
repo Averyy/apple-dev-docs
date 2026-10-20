@@ -1,12 +1,13 @@
 # visibleName
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An optional key for font visibility.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ An optional key for font visibility.
 static let visibleName: NSAccessibility.FontAttributeKey
 ```
 
+```c
+extern NSAccessibilityFontAttributeKey const NSAccessibilityVisibleNameKey;
+```
+
 ## See Also
 
-- [static let fontFamily: NSAccessibility.FontAttributeKey](nsaccessibility-swift.struct/fontattributekey/fontfamily.md)
+### Font Attributes
+- [static let fontFamily: NSAccessibility.FontAttributeKey](./fontfamily.md)
   An optional key for a font family.
-- [static let fontName: NSAccessibility.FontAttributeKey](nsaccessibility-swift.struct/fontattributekey/fontname.md)
+- [static let fontName: NSAccessibility.FontAttributeKey](./fontname.md)
   A required key for a font name.
-- [static let fontSize: NSAccessibility.FontAttributeKey](nsaccessibility-swift.struct/fontattributekey/fontsize.md)
+- [static let fontSize: NSAccessibility.FontAttributeKey](./fontsize.md)
   A required key for a font size.
 
 

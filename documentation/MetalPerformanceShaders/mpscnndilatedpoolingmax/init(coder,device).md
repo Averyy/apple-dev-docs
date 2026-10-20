@@ -1,7 +1,8 @@
 # init(coder:device:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a dilated max pooling filter.
 
@@ -19,9 +20,14 @@ Initializes a dilated max pooling filter.
 init?(coder aDecoder: NSCoder, device: any MTLDevice)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) aDecoder device:(id<MTLDevice>) device;
+```
+
 ## See Also
 
-- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, dilationRateX: Int, dilationRateY: Int, strideInPixelsX: Int, strideInPixelsY: Int)](mpscnndilatedpoolingmax/init(device:kernelwidth:kernelheight:dilationratex:dilationratey:strideinpixelsx:strideinpixelsy:).md)
+### Initializers
+- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, dilationRateX: Int, dilationRateY: Int, strideInPixelsX: Int, strideInPixelsY: Int)](./init%28device,kernelwidth,kernelheight,dilationratex,dilationratey,strideinpixelsx,strideinpixelsy%29.md)
   Initializes a dilated max pooling filter.
 
 

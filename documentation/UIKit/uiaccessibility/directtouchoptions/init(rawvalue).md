@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new direct touch options structure using an unsigned integer.
 

@@ -1,14 +1,15 @@
 # tcpi_tfo_cookie_req_rcv
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 u_int16_t tcpi_tfo_cookie_req_rcv:1;
 ```
 

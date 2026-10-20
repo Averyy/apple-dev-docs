@@ -1,7 +1,8 @@
 # days
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The unit for days. One day is always 86400 seconds.
 

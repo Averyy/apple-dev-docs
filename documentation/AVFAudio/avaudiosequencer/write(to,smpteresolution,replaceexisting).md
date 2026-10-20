@@ -1,7 +1,8 @@
 # write(to:smpteResolution:replaceExisting:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates and writes a MIDI file from the events in the sequence.
 
@@ -17,6 +18,10 @@ Creates and writes a MIDI file from the events in the sequence.
 
 ```swift
 func write(to fileURL: URL, smpteResolution resolution: Int, replaceExisting replace: Bool) throws
+```
+
+```objc
+- (BOOL) writeToURL:(NSURL *) fileURL SMPTEResolution:(NSInteger) resolution replaceExisting:(BOOL) replace error:(NSError **) outError;
 ```
 
 #### Discussion

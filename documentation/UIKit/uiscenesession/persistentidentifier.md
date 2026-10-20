@@ -1,7 +1,8 @@
 # persistentIdentifier
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier that persists for the lifetime of the session.
 
@@ -16,6 +17,10 @@ A unique identifier that persists for the lifetime of the session.
 
 ```swift
 var persistentIdentifier: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * persistentIdentifier;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # switchingResolutions
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -19,9 +20,10 @@ var switchingResolutions: [LevelOfDetailComponent.SelectionStrategy.ResolutionMe
 
 ## See Also
 
-- [LevelOfDetailComponent.SelectionStrategy.ResolutionMetric.DirectionalSwitchingResolutions](levelofdetailcomponent/selectionstrategy/resolutionmetric/directionalswitchingresolutions.md)
+### Configuring the metric
+- [LevelOfDetailComponent.SelectionStrategy.ResolutionMetric.DirectionalSwitchingResolutions](./directionalswitchingresolutions.md)
   A struct containing the ideal switching resolutions for a single detail level in a `LevelOfDetailComponent` when viewed from a specific direction. Note that switching may not actually occur at these resolutions depending on device performance.
-- [let boundingBox: BoundingBox](levelofdetailcomponent/selectionstrategy/resolutionmetric/boundingbox.md)
+- [let boundingBox: BoundingBox](./boundingbox.md)
 
 
 ---

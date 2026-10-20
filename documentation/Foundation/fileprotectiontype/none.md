@@ -1,7 +1,8 @@
 # none
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The file has no special protections associated with it.
 
@@ -20,17 +21,22 @@ The file has no special protections associated with it.
 static let none: FileProtectionType
 ```
 
+```c
+extern NSFileProtectionType const NSFileProtectionNone;
+```
+
 #### Discussion
 
 A file with this type of protection can be read from or written to at any time.
 
 ## See Also
 
-- [static let complete: FileProtectionType](fileprotectiontype/complete.md)
+### Working with Protection Levels
+- [static let complete: FileProtectionType](./complete.md)
   The file is stored in an encrypted format on disk and cannot be read from or written to while the device is locked or booting.
-- [static let completeUnlessOpen: FileProtectionType](fileprotectiontype/completeunlessopen.md)
+- [static let completeUnlessOpen: FileProtectionType](./completeunlessopen.md)
   The file is stored in an encrypted format on disk after it is closed.
-- [static let completeUntilFirstUserAuthentication: FileProtectionType](fileprotectiontype/completeuntilfirstuserauthentication.md)
+- [static let completeUntilFirstUserAuthentication: FileProtectionType](./completeuntilfirstuserauthentication.md)
   The file is stored in an encrypted format on disk and cannot be accessed until after the device has booted.
 
 

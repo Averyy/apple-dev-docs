@@ -1,7 +1,8 @@
 # makeShaderGraphFunctions(shaderGraph:constantValues:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compiles a ShaderGraph into a geometry modifier and surface shader.
 
@@ -18,9 +19,15 @@ nonisolated
 (nonsending) final func makeShaderGraphFunctions(shaderGraph: ShaderGraph, constantValues: MTLFunctionConstantValues) async throws -> sending LowLevelMaterialResource.ShaderGraphOutput
 ```
 
+**Other overloads**:
+
+```swift
+final func makeShaderGraphFunctions(shaderGraph: ShaderGraph, constantValues: MTLFunctionConstantValues) throws -> sending LowLevelMaterialResource.ShaderGraphOutput
+```
+
 #### Return Value
 
-The compiled functions for use in a [`LowLevelMaterialResource`](lowlevelmaterialresource.md).
+The compiled functions for use in a [`LowLevelMaterialResource`](../lowlevelmaterialresource.md).
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # MEMessageSecurityError.Code.encodingError
 
 **Framework**: MailKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 12.0+
@@ -12,9 +13,14 @@
 case encodingError
 ```
 
+```c
+MEMessageSecurityEncodingError
+```
+
 ## See Also
 
-- [MEMessageSecurityError.Code.decodingError](memessagesecurityerror/code/decodingerror.md)
+### Enumeration Cases
+- [MEMessageSecurityError.Code.decodingError](./decodingerror.md)
 
 
 ---

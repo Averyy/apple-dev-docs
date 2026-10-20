@@ -1,7 +1,8 @@
 # init(tag:int32Value:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 init(tag: NSNumber, int32Value value: Int32)
+```
+
+```objc
+- (instancetype) initWithTag:(NSNumber *) tag int32Value:(int32_t) value;
 ```
 
 

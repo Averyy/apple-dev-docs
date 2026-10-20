@@ -6,40 +6,13 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.te
 
 # mlx.core.tensordot
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.tensordot.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.tensordot
-
- Table of contents 
-
-## Contents
-
-# mlx.core.tensordot
-
-**tensordot(*a: array*, *b: array*, */*, *axes: int | list[Sequence[int]] = 2*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**tensordot(*a: array*, *b: array*, */*, *axes: int | list[Sequence[int]] = 2*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
 : Compute the tensor dot product along the specified axes.
 
 Parameters:
 
-**a** ([array](mlx.core.array.html#mlx.core.array)) – Input array
-**b** ([array](mlx.core.array.html#mlx.core.array)) – Input array
+**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array
+**b** ([array](mlx.core.array.md#mlx.core.array)) – Input array
 **axes** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**)**, **optional*) – The number of dimensions to
 sum over. If an integer is provided, then sum over the last
 `axes` dimensions of `a` and the first `axes` dimensions of
@@ -50,6 +23,4 @@ Returns:
 The tensor dot product.
 
 Return type:
-[array](mlx.core.array.html#mlx.core.array)
-
-** Contents
+[array](mlx.core.array.md#mlx.core.array)

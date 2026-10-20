@@ -1,7 +1,8 @@
 # metadataObjectTypes
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of strings identifying the types of metadata objects  to process.
 
@@ -18,23 +19,28 @@ An array of strings identifying the types of metadata objects  to process.
 var metadataObjectTypes: [AVMetadataObject.ObjectType]! { get set }
 ```
 
+```objc
+@property (nonatomic, copy, null_resettable) NSArray<NSString *> * metadataObjectTypes;
+```
+
 #### Discussion
 
-This property is used to filter the metadata objects reported by the receiver. Only metadata objects whose type matches one of the strings in this property are forwarded to the delegate’s [`metadataOutput(_:didOutput:from:)`](avcapturemetadataoutputobjectsdelegate/metadataoutput(_:didoutput:from:).md) method for processing.
+This property is used to filter the metadata objects reported by the receiver. Only metadata objects whose type matches one of the strings in this property are forwarded to the delegate’s [`metadataOutput(_:didOutput:from:)`](../avcapturemetadataoutputobjectsdelegate/metadataoutput%28_,didoutput,from%29.md) method for processing.
 
-When assigning a new array to this property, each of the type strings must be present in the array returned by the [`availableMetadataObjectTypes`](avcapturemetadataoutput/availablemetadataobjecttypes.md) property; otherwise, the receiver raises an[`NSException`](https://developer.apple.com/documentation/foundation/nsexception).
+When assigning a new array to this property, each of the type strings must be present in the array returned by the [`availableMetadataObjectTypes`](./availablemetadataobjecttypes.md) property; otherwise, the receiver raises an[`NSException`](../../Foundation/nsexception.md).
 
-The default is an empty [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) object, and as a result, no metadata objects are forwarded to the delegate’s [`metadataOutput(_:didOutput:from:)`](avcapturemetadataoutputobjectsdelegate/metadataoutput(_:didoutput:from:).md) method. The same result can be achieved by setting the property to `nil`. This default behavior maximizes both performance and battery life.
+The default is an empty [`NSArray`](../../Foundation/nsarray.md) object, and as a result, no metadata objects are forwarded to the delegate’s [`metadataOutput(_:didOutput:from:)`](../avcapturemetadataoutputobjectsdelegate/metadataoutput%28_,didoutput,from%29.md) method. The same result can be achieved by setting the property to `nil`. This default behavior maximizes both performance and battery life.
 
-> **Note**:  Applications linked prior to iOS 7.0 will pass [`AVMetadataFaceObject`](avmetadatafaceobject.md) objects to the delegate by default, if supported by the device.
+> **Note**:  Applications linked prior to iOS 7.0 will pass [`AVMetadataFaceObject`](../avmetadatafaceobject.md) objects to the delegate by default, if supported by the device.
 
 ## See Also
 
-- [var availableMetadataObjectTypes: [AVMetadataObject.ObjectType]](avcapturemetadataoutput/availablemetadataobjecttypes.md)
+### Configuring metadata capture
+- [var availableMetadataObjectTypes: [AVMetadataObject.ObjectType]](./availablemetadataobjecttypes.md)
   An array of strings identifying the types of metadata objects that can be captured.
-- [var rectOfInterest: CGRect](avcapturemetadataoutput/rectofinterest.md)
+- [var rectOfInterest: CGRect](./rectofinterest.md)
   A rectangle of interest for limiting the search area for visual metadata.
-- [var requiredMetadataObjectTypesForCinematicVideoCapture: [AVMetadataObject.ObjectType]](avcapturemetadataoutput/requiredmetadataobjecttypesforcinematicvideocapture.md)
+- [var requiredMetadataObjectTypesForCinematicVideoCapture: [AVMetadataObject.ObjectType]](./requiredmetadataobjecttypesforcinematicvideocapture.md)
   The required metadata object types when Cinematic Video capture is enabled.
 
 

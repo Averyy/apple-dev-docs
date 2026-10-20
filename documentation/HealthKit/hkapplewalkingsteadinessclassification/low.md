@@ -1,7 +1,8 @@
 # HKAppleWalkingSteadinessClassification.low
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A classification indicating that the stability of the user’s gate is below normal.
 
@@ -19,11 +20,16 @@ A classification indicating that the stability of the user’s gate is below nor
 case low
 ```
 
+```c
+HKAppleWalkingSteadinessClassificationLow
+```
+
 ## See Also
 
-- [HKAppleWalkingSteadinessClassification.ok](hkapplewalkingsteadinessclassification/ok.md)
+### Accessing classifications
+- [HKAppleWalkingSteadinessClassification.ok](./ok.md)
   A classification indicating that the stability of the user’s gait is within the normal range.
-- [HKAppleWalkingSteadinessClassification.veryLow](hkapplewalkingsteadinessclassification/verylow.md)
+- [HKAppleWalkingSteadinessClassification.veryLow](./verylow.md)
   A classification indicating that the stability of the user’s gate is considerably below normal.
 
 

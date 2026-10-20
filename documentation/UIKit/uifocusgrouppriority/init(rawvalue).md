@@ -1,16 +1,17 @@
 # init(rawValue:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a focus group priority with the specified raw value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -24,7 +25,8 @@ init(rawValue: Int)
 
 ## See Also
 
-- [init(Int)](uifocusgrouppriority/init(_:).md)
+### Initializing a focus group priority
+- [init(Int)](./init%28_%29.md)
   Creates a focus group priority with the specified value.
 
 

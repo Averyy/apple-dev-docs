@@ -1,7 +1,8 @@
 # UITextSpellCheckingType.no
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Disables spell-checking behavior.
 
@@ -9,7 +10,7 @@ Disables spell-checking behavior.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,16 @@ Disables spell-checking behavior.
 case no
 ```
 
+```c
+UITextSpellCheckingTypeNo
+```
+
 ## See Also
 
-- [UITextSpellCheckingType.default](uitextspellcheckingtype/default.md)
+### Constants
+- [UITextSpellCheckingType.default](./default.md)
   Specifies the default spell-checking behavior.
-- [UITextSpellCheckingType.yes](uitextspellcheckingtype/yes.md)
+- [UITextSpellCheckingType.yes](./yes.md)
   Enables spell-checking behavior.
 
 

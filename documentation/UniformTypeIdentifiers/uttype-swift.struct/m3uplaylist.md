@@ -1,7 +1,8 @@
 # m3uPlaylist
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents an M3U or M3U8 playlist.
 
@@ -24,19 +25,20 @@ static var m3uPlaylist: UTType { get }
 
 The identifier for this type is `public.m3u-playlist`.
 
-This type conforms to [`UTTypeText`](uttypetext.md) and [`UTTypePlaylist`](uttypeplaylist.md).
+This type conforms to [`UTTypeText`](../uttypetext.md) and [`UTTypePlaylist`](../uttypeplaylist.md).
 
 ## See Also
 
-- [static var mp3: UTType](uttype-swift.struct/mp3.md)
+### Audio
+- [static var mp3: UTType](./mp3.md)
   A type that represents MP3 audio.
-- [static var aiff: UTType](uttype-swift.struct/aiff.md)
+- [static var aiff: UTType](./aiff.md)
   A type that represents data in AIFF audio format.
-- [static var wav: UTType](uttype-swift.struct/wav.md)
+- [static var wav: UTType](./wav.md)
   A type that represents data in Microsoft Waveform Audio File Format.
-- [static var midi: UTType](uttype-swift.struct/midi.md)
+- [static var midi: UTType](./midi.md)
   A type that represents data in MIDI audio format.
-- [static var playlist: UTType](uttype-swift.struct/playlist.md)
+- [static var playlist: UTType](./playlist.md)
   A base type that represents a playlist.
 
 

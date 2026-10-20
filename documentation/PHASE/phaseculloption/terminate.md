@@ -1,17 +1,18 @@
 # PHASECullOption.terminate
 
 **Framework**: PHASE  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option that culls sound by stopping playback.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,15 +20,20 @@ An option that culls sound by stopping playback.
 case terminate
 ```
 
+```c
+PHASECullOptionTerminate
+```
+
 ## See Also
 
-- [PHASECullOption.doNotCull](phaseculloption/donotcull.md)
+### Options
+- [PHASECullOption.doNotCull](./donotcull.md)
   An option that indicates the framework takes no action to cull sound.
-- [PHASECullOption.sleepWakeAtRealtimeOffset](phaseculloption/sleepwakeatrealtimeoffset.md)
+- [PHASECullOption.sleepWakeAtRealtimeOffset](./sleepwakeatrealtimeoffset.md)
   An option that pauses playback and resumes where it left off.
-- [PHASECullOption.sleepWakeAtZero](phaseculloption/sleepwakeatzero.md)
+- [PHASECullOption.sleepWakeAtZero](./sleepwakeatzero.md)
   An option that pauses playback and resumes at the beginning.
-- [PHASECullOption.sleepWakeAtRandomOffset](phaseculloption/sleepwakeatrandomoffset.md)
+- [PHASECullOption.sleepWakeAtRandomOffset](./sleepwakeatrandomoffset.md)
   An option that pauses playback and resumes at a random position.
 
 

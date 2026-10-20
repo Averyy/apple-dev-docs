@@ -1,7 +1,8 @@
 # vImageSepConvolve_Planar8to16U(_:_:_:_:_:_:_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Convolves an 8-bit planar image by separate horizontal and vertical separable kernels, and writes the result to an unsigned 16-bit planar destination.
 
@@ -20,9 +21,13 @@ Convolves an 8-bit planar image by separate horizontal and vertical separable ke
 func vImageSepConvolve_Planar8to16U(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ tempBuffer: UnsafeMutableRawPointer!, _ srcOffsetToROI_X: vImagePixelCount, _ srcOffsetToROI_Y: vImagePixelCount, _ kernelX: UnsafePointer<Float>!, _ kernelX_width: UInt32, _ kernelY: UnsafePointer<Float>!, _ kernelY_width: UInt32, _ scale: Float, _ bias: Float, _ backgroundColor: Pixel_8, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageSepConvolve_Planar8to16U(const vImage_Buffer *src, const vImage_Buffer *dest, void *tempBuffer, vImagePixelCount srcOffsetToROI_X, vImagePixelCount srcOffsetToROI_Y, const float *kernelX, uint32_t kernelX_width, const float *kernelY, uint32_t kernelY_width, float scale, float bias, Pixel_8 backgroundColor, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [`Data Types and Constants`](data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
 
 #### Discussion
 
@@ -30,7 +35,7 @@ A separable convolution applies two separate 1D filters along the rows and colum
 
 An example of separable convolution is the edge-detection Sobel filter, for approximating the image gradient. The Sobel filter is the outer product of the averaging filter, `[1, 2, 1]`, and the differentiation filter, `[-1, 0, 1]`. For the image x-derivative, this results in the general 2D filter:
 
-![Matrix multiplication that describes the column matrix that contains the values one, two, one multiplied by the row matrix that contains the values minus one, zero, one. The result is a square matrix that contains the values minus one, zero, one, minus two, zero, two, minus one, zero, one.](/images/com.apple.accelerate/media-3591854@2x.png)
+![Matrix multiplication that describes the column matrix that contains the values one, two, one multiplied by the row matrix that contains the values minus one, zero, one. The result is a square matrix that contains the values minus one, zero, one, minus two, zero, two, minus one, zero, one.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3591854@2x.png)
 
 Note that the differentiation filter produces a result that contains, on average, half of the destination values having a negative value. Add a bias of 128 to allow the operation to represent values in the range `-1...1` as unsigned 8-bit integer destination pixels. For example, the operation represents a result of -1 as 0 in the destination, and represents a result of 1 as 255 in the destination.
 
@@ -130,9 +135,9 @@ printf("[[%u, %u, %u], [%u, %u, %u], [%u, %u, %u]]\n",
 
 The following image shows two photographs, with the original image on the left, and the image after applying the Sobel filter on the right:
 
-![An image of some buildings before and after applying an edge detection filter.](/images/com.apple.accelerate/media-3591851@2x.png)
+![An image of some buildings before and after applying an edge detection filter.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3591851@2x.png)
 
-##### Optimize Performance with Temporary Buffers
+##### Optimize performance with temporary buffers
 
 This function uses a multiple-pass algorithm that saves intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional storage.
 
@@ -160,19 +165,24 @@ You can use the same workspace memory for a group of images that are different s
 - `scale`: The value to add to each element in the convolution result, before performing any clipping.
 - `bias`: The value to add to each element in the convolution result, before performing any clipping.
 - `backgroundColor`: A background color. If you supply a color, you need to also set the `kvImageBackgroundColorFill` flag; otherwise, the function ignores the color.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md). To instruct the function to return the minimum size of the workspace memory, set the [`kvImageGetTempBufferSize`](kvimagegettempbuffersize.md) flag. Pass one of the following flags to specify how vImage handles pixel locations beyond the edge of the source image: [`kvImageCopyInPlace`](kvimagecopyinplace.md), [`kvImageTruncateKernel`](kvimagetruncatekernel.md), [`kvImageBackgroundColorFill`](kvimagebackgroundcolorfill.md), or [`kvImageEdgeExtend`](kvimageedgeextend.md).
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md).
+
+  To instruct the function to return the minimum size of the workspace memory, set the [`kvImageGetTempBufferSize`](./kvimagegettempbuffersize.md) flag.
+
+  Pass one of the following flags to specify how vImage handles pixel locations beyond the edge of the source image: [`kvImageCopyInPlace`](./kvimagecopyinplace.md), [`kvImageTruncateKernel`](./kvimagetruncatekernel.md), [`kvImageBackgroundColorFill`](./kvimagebackgroundcolorfill.md), or [`kvImageEdgeExtend`](./kvimageedgeextend.md).
 
 ## See Also
 
-- [func vImageSepConvolve_Planar8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafePointer<Float>!, UInt32, UnsafePointer<Float>!, UInt32, Float, Pixel_16U, vImage_Flags) -> vImage_Error](vimagesepconvolve_planar8(_:_:_:_:_:_:_:_:_:_:_:_:).md)
+### Convolving with separable filter kernels
+- [func vImageSepConvolve_Planar8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafePointer<Float>!, UInt32, UnsafePointer<Float>!, UInt32, Float, Pixel_16U, vImage_Flags) -> vImage_Error](./vimagesepconvolve_planar8%28_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Convolves an 8-bit planar image by separate horizontal and vertical separable kernels.
-- [func vImageSepConvolve_Planar16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafePointer<Float>!, UInt32, UnsafePointer<Float>!, UInt32, Float, Pixel_16U, vImage_Flags) -> vImage_Error](vimagesepconvolve_planar16u(_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func vImageSepConvolve_Planar16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafePointer<Float>!, UInt32, UnsafePointer<Float>!, UInt32, Float, Pixel_16U, vImage_Flags) -> vImage_Error](./vimagesepconvolve_planar16u%28_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Convolves an unsigned 16-bit planar image by separate horizontal and vertical separable kernels.
-- [func vImageSepConvolve_Planar16F(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafePointer<Float>!, UInt32, UnsafePointer<Float>!, UInt32, Float, Pixel_16F, vImage_Flags) -> vImage_Error](vimagesepconvolve_planar16f(_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func vImageSepConvolve_Planar16F(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafePointer<Float>!, UInt32, UnsafePointer<Float>!, UInt32, Float, Pixel_16F, vImage_Flags) -> vImage_Error](./vimagesepconvolve_planar16f%28_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Convolves a floating-point 16-bit planar image by separate horizontal and vertical separable kernels.
-- [func vImageSepConvolve_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafePointer<Float>!, UInt32, UnsafePointer<Float>!, UInt32, Float, Pixel_F, vImage_Flags) -> vImage_Error](vimagesepconvolve_planarf(_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func vImageSepConvolve_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafePointer<Float>!, UInt32, UnsafePointer<Float>!, UInt32, Float, Pixel_F, vImage_Flags) -> vImage_Error](./vimagesepconvolve_planarf%28_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Convolves a floating-point 32-bit planar image by separate horizontal and vertical separable kernels.
-- [func vImageSepConvolve_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafePointer<Float>!, UInt32, UnsafePointer<Float>!, UInt32, Float, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](vimagesepconvolve_argb8888(_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func vImageSepConvolve_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafePointer<Float>!, UInt32, UnsafePointer<Float>!, UInt32, Float, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](./vimagesepconvolve_argb8888%28_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Convolves an 8-bit-per-channel, 4-channel interleaved image by separate horizontal and vertical separable kernels.
 
 

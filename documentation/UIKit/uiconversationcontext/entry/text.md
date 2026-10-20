@@ -1,7 +1,8 @@
 # text
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that contains the message’s text.
 
@@ -16,9 +17,14 @@ A string that contains the message’s text.
 var text: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) NSString * text;
+```
+
 ## See Also
 
-- [var sentDate: Date](uiconversationcontext/entry/sentdate.md)
+### Getting entry details
+- [var sentDate: Date](./sentdate.md)
   A date that notes when the sender added the message to the conversation.
 
 

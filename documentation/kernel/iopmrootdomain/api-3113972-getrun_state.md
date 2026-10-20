@@ -1,14 +1,15 @@
 # getRUN_STATE
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 unsigned long getRUN_STATE(void);
 ```
 

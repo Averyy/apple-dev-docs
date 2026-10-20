@@ -1,7 +1,8 @@
 # withUnsafeBytes(_:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls a given closure with a raw pointer to the multiarray’s storage.
 
@@ -22,15 +23,18 @@ func withUnsafeBytes<R>(_ body: (UnsafeRawBufferPointer) throws -> R) rethrows -
 
 ## Parameters
 
-- `body`: A closure with an [`UnsafeRawBufferPointer`](https://developer.apple.com/documentation/swift/unsaferawbufferpointer) parameter that points to the storage for the multiarray. This closure takes the following parameter: - **`ptr`**: The pointer to the buffer.
+- `body`: A closure with an [`UnsafeRawBufferPointer`](../../Swift/unsaferawbufferpointer.md) parameter that points to the storage for the multiarray. This closure takes the following parameter:
+
+  - **`ptr`**: The pointer to the buffer.
 
 ## See Also
 
-- [func withUnsafeBufferPointer<S, R>(ofType: S.Type, (UnsafeBufferPointer<S>) throws -> R) rethrows -> R](mlmultiarray/withunsafebufferpointer(oftype:_:).md)
+### Providing buffer access
+- [func withUnsafeBufferPointer<S, R>(ofType: S.Type, (UnsafeBufferPointer<S>) throws -> R) rethrows -> R](./withunsafebufferpointer%28oftype,_%29.md)
   Calls a given closure with a raw pointer to the multiarray’s storage.
-- [func withUnsafeMutableBufferPointer<S, R>(ofType: S.Type, (UnsafeMutableBufferPointer<S>, [Int]) throws -> R) rethrows -> R](mlmultiarray/withunsafemutablebufferpointer(oftype:_:).md)
+- [func withUnsafeMutableBufferPointer<S, R>(ofType: S.Type, (UnsafeMutableBufferPointer<S>, [Int]) throws -> R) rethrows -> R](./withunsafemutablebufferpointer%28oftype,_%29.md)
   Calls a given closure with a raw pointer to the multiarray’s mutable storage.
-- [func withUnsafeMutableBytes<R>((UnsafeMutableRawBufferPointer, [Int]) throws -> R) rethrows -> R](mlmultiarray/withunsafemutablebytes(_:).md)
+- [func withUnsafeMutableBytes<R>((UnsafeMutableRawBufferPointer, [Int]) throws -> R) rethrows -> R](./withunsafemutablebytes%28_%29.md)
   Calls a given closure with a raw pointer to the multiarray’s mutable storage.
 
 

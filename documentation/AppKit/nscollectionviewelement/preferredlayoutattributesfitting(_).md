@@ -1,7 +1,8 @@
 # preferredLayoutAttributesFitting(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks your element if it wants to modify any layout attributes before they are applied.
 
@@ -13,6 +14,10 @@ Asks your element if it wants to modify any layout attributes before they are ap
 ```swift
 @MainActor
 optional func preferredLayoutAttributesFitting(_ layoutAttributes: NSCollectionViewLayoutAttributes) -> NSCollectionViewLayoutAttributes
+```
+
+```objc
+- (NSCollectionViewLayoutAttributes *) preferredLayoutAttributesFittingAttributes:(NSCollectionViewLayoutAttributes *) layoutAttributes;
 ```
 
 #### Return Value
@@ -33,11 +38,12 @@ In OS X 10.11, this method is never called.
 
 ## See Also
 
-- [func apply(NSCollectionViewLayoutAttributes)](nscollectionviewelement/apply(_:).md)
+### Managing Layout Changes
+- [func apply(NSCollectionViewLayoutAttributes)](./apply%28_%29.md)
   Applies the specified layout attributes to the element.
-- [func willTransition(from: NSCollectionViewLayout, to: NSCollectionViewLayout)](nscollectionviewelement/willtransition(from:to:).md)
+- [func willTransition(from: NSCollectionViewLayout, to: NSCollectionViewLayout)](./willtransition%28from,to%29.md)
   Tells the element that the layout object of the collection view is about to change.
-- [func didTransition(from: NSCollectionViewLayout, to: NSCollectionViewLayout)](nscollectionviewelement/didtransition(from:to:).md)
+- [func didTransition(from: NSCollectionViewLayout, to: NSCollectionViewLayout)](./didtransition%28from,to%29.md)
   Tells the element that the layout object of the collection view changed.
 
 

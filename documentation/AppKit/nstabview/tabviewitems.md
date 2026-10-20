@@ -1,17 +1,22 @@
 # tabViewItems
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tab view’s array of tab view items.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var tabViewItems: [NSTabViewItem] { get set }
+```
+
+```objc
+@property (copy) NSArray<__kindof NSTabViewItem *> * tabViewItems;
 ```
 
 #### Discussion
@@ -20,13 +25,14 @@ A tab view keeps an array containing one tab view item for each tab in the view.
 
 ## See Also
 
-- [func indexOfTabViewItem(NSTabViewItem) -> Int](nstabview/indexoftabviewitem(_:).md)
+### Accessing Tabs
+- [func indexOfTabViewItem(NSTabViewItem) -> Int](./indexoftabviewitem%28_%29.md)
   Returns the index of the specified item in the tab view.
-- [func indexOfTabViewItem(withIdentifier: Any) -> Int](nstabview/indexoftabviewitem(withidentifier:).md)
+- [func indexOfTabViewItem(withIdentifier: Any) -> Int](./indexoftabviewitem%28withidentifier%29.md)
   Returns the index of the item that matches the specified identifier or `NSNotFound` if the item is not found.
-- [var numberOfTabViewItems: Int](nstabview/numberoftabviewitems.md)
+- [var numberOfTabViewItems: Int](./numberoftabviewitems.md)
   The number of items in the tab view’s array of tab view items.
-- [func tabViewItem(at: Int) -> NSTabViewItem](nstabview/tabviewitem(at:)-7r3at.md)
+- [func tabViewItem(at: Int) -> NSTabViewItem](./tabviewitem%28at%29-7r3at.md)
   Returns the tab view item at `index` in the tab view’s array of items.
 
 

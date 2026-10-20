@@ -1,7 +1,8 @@
 # init(algorithm:credentialWithUV:credentialWithoutUV:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.4+

@@ -1,7 +1,8 @@
 # simulationState
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls particle simulation state: playing, paused or stopped. Defaults to `play`.
 

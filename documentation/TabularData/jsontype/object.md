@@ -1,7 +1,8 @@
 # JSONType.object
 
 **Framework**: TabularData  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An object type.
 

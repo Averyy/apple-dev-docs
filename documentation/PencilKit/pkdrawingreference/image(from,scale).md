@@ -1,7 +1,8 @@
 # image(from:scale:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an image object that contains the specified portion of the drawing.
 
@@ -14,8 +15,28 @@ Returns an image object that contains the specified portion of the drawing.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+func image(from rect: CGRect, scale: CGFloat) -> UIImage
+```
+
+*macOS*
+
 ```swift
 func image(from rect: CGRect, scale: CGFloat) -> NSImage
+```
+
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```objc
+- (UIImage *) imageFromRect:(CGRect) rect scale:(CGFloat) scale;
+```
+
+*macOS*
+
+```objc
+- (NSImage *) imageFromRect:(CGRect) rect scale:(CGFloat) scale;
 ```
 
 #### Return Value

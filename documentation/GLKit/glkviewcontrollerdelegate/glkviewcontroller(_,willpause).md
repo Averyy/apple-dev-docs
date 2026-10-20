@@ -1,7 +1,8 @@
 # glkViewController(_:willPause:)
 
 **Framework**: GLKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called before the rendering loop is paused or resumed.
 
@@ -16,10 +17,14 @@ Called before the rendering loop is paused or resumed.
 optional func glkViewController(_ controller: GLKViewController, willPause pause: Bool)
 ```
 
+```objc
+- (void) glkViewController:(GLKViewController *) controller willPause:(BOOL) pause;
+```
+
 ## Parameters
 
 - `controller`: The controller that is about to change the rendering loop state.
-- `pause`: [`true`](https://developer.apple.com/documentation/swift/true) if the loop is being paused, [`false`](https://developer.apple.com/documentation/swift/false) if it is being resumed.
+- `pause`: [`true`](../../Swift/true.md) if the loop is being paused, [`false`](../../Swift/false.md) if it is being resumed.
 
 
 ---

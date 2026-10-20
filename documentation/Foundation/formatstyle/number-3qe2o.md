@@ -1,7 +1,8 @@
 # number
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A style for formatting 16-bit floating-point values.
 
@@ -20,17 +21,20 @@ A style for formatting 16-bit floating-point values.
 static var number: FloatingPointFormatStyle<Float16> { get }
 ```
 
+Available when `Self` is `FloatingPointFormatStyle<Float16>`.
+
 #### Discussion
 
-Use this type property when the call point allows the use of [`FloatingPointFormatStyle`](floatingpointformatstyle.md). You typically do this when calling the `formatted` methods of types that conform to [`BinaryFloatingPoint`](https://developer.apple.com/documentation/swift/binaryfloatingpoint).
+Use this type property when the call point allows the use of [`FloatingPointFormatStyle`](../floatingpointformatstyle.md). You typically do this when calling the `formatted` methods of types that conform to [`BinaryFloatingPoint`](../../Swift/binaryfloatingpoint.md).
 
 ## See Also
 
-- [static var number: FloatingPointFormatStyle<Float>](formatstyle/number-432x3.md)
+### Applying numeric styles for floating-point values
+- [static var number: FloatingPointFormatStyle<Float>](./number-432x3.md)
   A style for formatting the Swift standard single-precision floating-point type.
-- [static var number: FloatingPointFormatStyle<Double>](formatstyle/number-8c8rj.md)
+- [static var number: FloatingPointFormatStyle<Double>](./number-8c8rj.md)
   A style for formatting the Swift standard double-precision floating-point type.
-- [struct FloatingPointFormatStyle](floatingpointformatstyle.md)
+- [struct FloatingPointFormatStyle](../floatingpointformatstyle.md)
   A structure that converts between floating-point values and their textual representations.
 
 

@@ -1,7 +1,8 @@
 # cmEmbeddedUse
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 0 is to use anywhere, 1 is to use as embedded profile only
 

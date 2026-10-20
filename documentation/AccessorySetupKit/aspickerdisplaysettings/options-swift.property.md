@@ -1,7 +1,8 @@
 # options
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Custom options for the picker.
 
@@ -15,9 +16,14 @@ Custom options for the picker.
 var options: ASPickerDisplaySettings.Options { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) ASPickerDisplaySettingsOptions options;
+```
+
 ## See Also
 
-- [ASPickerDisplaySettings.Options](aspickerdisplaysettings/options-swift.struct.md)
+### Customizing picker options
+- [ASPickerDisplaySettings.Options](./options-swift.struct.md)
   Options offered by the accessory picker.
 
 

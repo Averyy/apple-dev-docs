@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Pops the latest debug group string from this encoder’s stack of debug groups.
@@ -18,6 +19,10 @@ Pops the latest debug group string from this encoder’s stack of debug groups.
 
 ```swift
 func popDebugGroup()
+```
+
+```objc
+- (void) popDebugGroup;
 ```
 
 

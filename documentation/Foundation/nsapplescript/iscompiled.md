@@ -1,7 +1,8 @@
 # isCompiled
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the receiver’s script has been compiled.
 
@@ -15,9 +16,14 @@ A Boolean value that indicates whether the receiver’s script has been compiled
 var isCompiled: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isCompiled) BOOL compiled;
+```
+
 ## See Also
 
-- [var source: String?](nsapplescript/source.md)
+### Getting Information About a Script
+- [var source: String?](./source.md)
   The script source for the receiver.
 
 

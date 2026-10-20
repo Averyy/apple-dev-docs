@@ -1,7 +1,8 @@
 # throughputCapacityRatio
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current normalized ratio of the throughput capacity and throughput ceiling.
 
@@ -22,9 +23,10 @@ This ratio reflects the current throughput capability of the data path as a valu
 
 ## See Also
 
-- [let throughputCeiling: Double?](waperformancereport/throughputceiling.md)
+### Getting the throughput metrics
+- [let throughputCeiling: Double?](./throughputceiling.md)
   The highest throughput the connection is capable of under ideal conditions, given the hardware capabilities of both devices.
-- [let throughputCapacity: Double?](waperformancereport/throughputcapacity.md)
+- [let throughputCapacity: Double?](./throughputcapacity.md)
   The current estimated average throughput capacity of the data path, given the current radio conditions and concurrent Wi-Fi use cases.
 
 

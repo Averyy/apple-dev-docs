@@ -1,7 +1,8 @@
 # init(id:content:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a text segment that contains the text you provide.
 

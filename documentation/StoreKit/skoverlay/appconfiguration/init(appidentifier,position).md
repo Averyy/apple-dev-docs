@@ -1,7 +1,8 @@
 # init(appIdentifier:position:)
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that represents the attributes of an overlay you use to recommend another app on the App Store.
 
@@ -17,6 +18,10 @@ Creates an object that represents the attributes of an overlay you use to recomm
 init(appIdentifier: String, position: SKOverlay.Position)
 ```
 
+```objc
+- (instancetype) initWithAppIdentifier:(NSString *) appIdentifier position:(SKOverlayPosition) position;
+```
+
 ## Parameters
 
 - `appIdentifier`: The iTunes identifier of the recommended app.
@@ -24,11 +29,12 @@ init(appIdentifier: String, position: SKOverlay.Position)
 
 ## See Also
 
-- [var appIdentifier: String](skoverlay/appconfiguration/appidentifier.md)
+### Creating an App Configuration
+- [var appIdentifier: String](./appidentifier.md)
   The iTunes identifier of the recommended app.
-- [var position: SKOverlay.Position](skoverlay/appconfiguration/position.md)
+- [var position: SKOverlay.Position](./position.md)
   The position of the overlay on the screen.
-- [SKOverlay.Position](skoverlay/position.md)
+- [SKOverlay.Position](../position.md)
   Constants that identify the position of an overlay on the screen.
 
 

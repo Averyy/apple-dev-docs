@@ -1,15 +1,18 @@
 # UIActivityIndicatorView.Style.white
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The standard white style of indicator.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- tvOS 9.0+
+- iOS 2.0+ - Deprecated in 13.0 (renamed: UIActivityIndicatorView.Style.medium)
+- iPadOS 2.0+ - Deprecated in 13.0 (renamed: UIActivityIndicatorView.Style.medium)
+- Mac Catalyst 13.1+ - Deprecated in 13.1 (renamed: UIActivityIndicatorView.Style.medium)
+- tvOS 9.0+ - Deprecated in 13.0 (renamed: UIActivityIndicatorView.Style.medium)
+
+> **Deprecated**: Use [`UIActivityIndicatorView.Style.medium`](./medium.md) instead.
 
 ## Declaration
 
@@ -17,11 +20,16 @@ The standard white style of indicator.
 case white
 ```
 
+```c
+UIActivityIndicatorViewStyleWhite
+```
+
 ## See Also
 
-- [UIActivityIndicatorView.Style.whiteLarge](uiactivityindicatorview/style-swift.enum/whitelarge.md)
+### Deprecated
+- [UIActivityIndicatorView.Style.whiteLarge](./whitelarge.md)
   The large white style of indicator.
-- [UIActivityIndicatorView.Style.gray](uiactivityindicatorview/style-swift.enum/gray.md)
+- [UIActivityIndicatorView.Style.gray](./gray.md)
   The standard gray style of indicator.
 
 

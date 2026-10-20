@@ -1,7 +1,8 @@
 # init(named:from:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Loads a ShaderGraphMaterial from a named material within a USD file.
 
@@ -17,6 +18,12 @@ Loads a ShaderGraphMaterial from a named material within a USD file.
 
 ```swift
 init(named name: String, from data: Data) async throws
+```
+
+**Other overloads**:
+
+```swift
+init(named name: String, from url: URL) async throws
 ```
 
 #### Return Value

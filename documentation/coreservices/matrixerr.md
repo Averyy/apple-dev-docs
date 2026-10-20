@@ -1,7 +1,8 @@
 # matrixErr
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Bad matrix; the digitizer did nothing. 
 

@@ -1,7 +1,8 @@
 # associationKind
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional value that indicates the kind of group activity association, if any.
 

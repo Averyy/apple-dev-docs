@@ -1,7 +1,8 @@
 # playgroundDescription
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the data table shown in a playground.
 
@@ -21,7 +22,8 @@ var playgroundDescription: Any { get }
 
 ## See Also
 
-- [var description: String](mldatatable/description.md)
+### Describing a data table
+- [var description: String](./description.md)
   A text representation of the data table.
 
 

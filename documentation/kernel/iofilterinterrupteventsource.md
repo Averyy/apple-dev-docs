@@ -1,7 +1,8 @@
 # IOFilterInterruptEventSource
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 Filtering varient of the $link IOInterruptEventSource.
 
@@ -10,7 +11,7 @@ Filtering varient of the $link IOInterruptEventSource.
 
 ## Declaration
 
-```swift
+```cpp
 class IOFilterInterruptEventSource : IOInterruptEventSource
 ```
 
@@ -27,57 +28,58 @@ CAUTION: Called in primary interrupt context, if you need to disable interrupt t
 ## Topics
 
 ### Miscellaneous
-- [disableInterruptOccurred](iofilterinterrupteventsource/1810540-disableinterruptoccurred.md)
+- [disableInterruptOccurred](./iofilterinterrupteventsource/api-1810540-disableinterruptoccurred.md)
   Override $link IOInterruptEventSource::disableInterruptOccurred to make a filter callout.
-- [filterInterruptEventSource](iofilterinterrupteventsource/1810599-filterinterrupteventsource.md)
+- [filterInterruptEventSource](./iofilterinterrupteventsource/api-1810599-filterinterrupteventsource.md)
   Factor method to create and initialise an IOFilterInterruptEventSource. See $link init.
-- [getFilterAction](iofilterinterrupteventsource/1810653-getfilteraction.md)
+- [getFilterAction](./iofilterinterrupteventsource/api-1810653-getfilteraction.md)
   Get'ter for filterAction variable.
-- [init](iofilterinterrupteventsource/1810702-init.md)
+- [init](./iofilterinterrupteventsource/api-1810702-init.md)
   Primary initialiser for the IOFilterInterruptEventSource class.
-- [normalInterruptOccurred](iofilterinterrupteventsource/1810739-normalinterruptoccurred.md)
+- [normalInterruptOccurred](./iofilterinterrupteventsource/api-1810739-normalinterruptoccurred.md)
   Override $link IOInterruptEventSource::normalInterruptOccured to make a filter callout.
-- [signalInterrupt](iofilterinterrupteventsource/1810772-signalinterrupt.md)
+- [signalInterrupt](./iofilterinterrupteventsource/api-1810772-signalinterrupt.md)
   Cause the work loop to schedule the action.
 ### Callbacks
-- [Filter](iofilterinterrupteventsource/filter.md)
+- [Filter](./iofilterinterrupteventsource/filter.md)
 ### Constants
-- [Miscellaneous Defines](iofilterinterrupteventsource/miscellaneous_defines.md)
+- [Miscellaneous Defines](./iofilterinterrupteventsource/miscellaneous_defines.md)
 ### DataTypes
-- [ExpansionData](ioservice/expansiondata.md)
+- [ExpansionData](./ioservice/expansiondata.md)
 ### Instance Variables
-- [reserved](iofilterinterrupteventsource/reserved.md)
-- [filterAction](iofilterinterrupteventsource/filteraction.md)
+- [reserved](./iofilterinterrupteventsource/reserved.md)
+- [filterAction](./iofilterinterrupteventsource/filteraction.md)
 ### Instance Methods
-- [- disableInterruptOccurred](iofilterinterrupteventsource/1515906-disableinterruptoccurred.md)
-- [- free](iofilterinterrupteventsource/2967271-free.md)
-- [- getFilterAction](iofilterinterrupteventsource/1515908-getfilteraction.md)
-- [- getFilterActionBlock](iofilterinterrupteventsource/2967272-getfilteractionblock.md)
-- [- getMetaClass](iofilterinterrupteventsource/1515902-getmetaclass.md)
-- [- init](iofilterinterrupteventsource/1515901-init.md)
-- [- init](iofilterinterrupteventsource/3516455-init.md)
-- [- normalInterruptOccurred](iofilterinterrupteventsource/1515904-normalinterruptoccurred.md)
-- [- signalInterrupt](iofilterinterrupteventsource/1515903-signalinterrupt.md)
+- [- disableInterruptOccurred](./iofilterinterrupteventsource/api-1515906-disableinterruptoccurred.md)
+- [- free](./iofilterinterrupteventsource/api-2967271-free.md)
+- [- getFilterAction](./iofilterinterrupteventsource/api-1515908-getfilteraction.md)
+- [- getFilterActionBlock](./iofilterinterrupteventsource/api-2967272-getfilteractionblock.md)
+- [- getMetaClass](./iofilterinterrupteventsource/api-1515902-getmetaclass.md)
+- [- init](./iofilterinterrupteventsource/api-1515901-init.md)
+- [- init](./iofilterinterrupteventsource/api-3516455-init.md)
+- [- normalInterruptOccurred](./iofilterinterrupteventsource/api-1515904-normalinterruptoccurred.md)
+- [- signalInterrupt](./iofilterinterrupteventsource/api-1515903-signalinterrupt.md)
 ### Type Methods
-- [+ filterInterruptEventSource](iofilterinterrupteventsource/1515895-filterinterrupteventsource.md)
-- [+ filterInterruptEventSource](iofilterinterrupteventsource/3516454-filterinterrupteventsource.md)
-- [+ interruptEventSource](iofilterinterrupteventsource/1515897-interrupteventsource.md)
+- [+ filterInterruptEventSource](./iofilterinterrupteventsource/api-1515895-filterinterrupteventsource.md)
+- [+ filterInterruptEventSource](./iofilterinterrupteventsource/api-3516454-filterinterrupteventsource.md)
+- [+ interruptEventSource](./iofilterinterrupteventsource/api-1515897-interrupteventsource.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOInterruptEventSource](iointerrupteventsource.md)
+- [IOInterruptEventSource](./iointerrupteventsource.md)
 
 ## See Also
 
-- [IOInterruptDispatchSource](iointerruptdispatchsource.md)
-- [IOInterruptDispatchSourceInterface](iointerruptdispatchsourceinterface.md)
-- [IOInterruptEventSource](iointerrupteventsource.md)
+### Interrupts
+- [IOInterruptDispatchSource](./iointerruptdispatchsource.md)
+- [IOInterruptDispatchSourceInterface](./iointerruptdispatchsourceinterface.md)
+- [IOInterruptEventSource](./iointerrupteventsource.md)
   Event source for interrupt delivery to work-loop based drivers.
-- [IOInterruptController](iointerruptcontroller.md)
-- [PassthruInterruptController](passthruinterruptcontroller.md)
-- [IOInterruptSource](iointerruptsource.md)
-- [IOInterruptVector](iointerruptvector.md)
+- [IOInterruptController](./iointerruptcontroller.md)
+- [PassthruInterruptController](./passthruinterruptcontroller.md)
+- [IOInterruptSource](./iointerruptsource.md)
+- [IOInterruptVector](./iointerruptvector.md)
 
 
 ---

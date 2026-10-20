@@ -1,16 +1,17 @@
 # master
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
+- iOS 13.0+ - Deprecated in 15.0 (renamed: source)
+- iPadOS 13.0+ - Deprecated in 15.0 (renamed: source)
+- Mac Catalyst 13.0+ - Deprecated in 15.0 (renamed: source)
+- macOS 10.15+ - Deprecated in 12.0 (renamed: source)
+- tvOS 13.0+ - Deprecated in 15.0 (renamed: source)
 - visionOS 1.0+
-- watchOS 6.0+
+- watchOS 6.0+ - Deprecated in 8.0 (renamed: source)
 
 ## Declaration
 
@@ -20,9 +21,10 @@ var master: any CMSyncProtocol { get set }
 
 ## See Also
 
-- [var masterClock: CMClock?](cmtimebase/masterclock.md)
-- [var masterTimebase: CMTimebase?](cmtimebase/mastertimebase.md)
-- [var ultimateMasterClock: CMClock](cmtimebase/ultimatemasterclock.md)
+### Deprecations
+- [var masterClock: CMClock?](./masterclock.md)
+- [var masterTimebase: CMTimebase?](./mastertimebase.md)
+- [var ultimateMasterClock: CMClock](./ultimatemasterclock.md)
 
 
 ---

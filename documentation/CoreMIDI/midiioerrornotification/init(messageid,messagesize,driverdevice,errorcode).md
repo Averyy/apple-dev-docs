@@ -1,16 +1,17 @@
 # init(messageID:messageSize:driverDevice:errorCode:)
 
 **Framework**: Core MIDI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ init(messageID: MIDINotificationMessageID, messageSize: UInt32, driverDevice: MI
 
 ## See Also
 
-- [init()](midiioerrornotification/init.md)
+### Creating an error notification
+- [init()](./init%28%29.md)
 
 
 ---

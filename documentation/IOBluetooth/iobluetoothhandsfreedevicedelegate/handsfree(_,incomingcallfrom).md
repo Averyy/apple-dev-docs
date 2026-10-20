@@ -1,7 +1,8 @@
 # handsFree(_:incomingCallFrom:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate there’s an incoming call on the connected Bluetooth hands-free phone or headset.
 
@@ -14,6 +15,10 @@ Tells the delegate there’s an incoming call on the connected Bluetooth hands-f
 optional func handsFree(_ device: IOBluetoothHandsFreeDevice!, incomingCallFrom number: String!)
 ```
 
+```objc
+- (void) handsFree:(IOBluetoothHandsFreeDevice *) device incomingCallFrom:(NSString *) number;
+```
+
 ## Parameters
 
 - `device`: The connected Bluetooth hands-free phone or headset.
@@ -21,9 +26,10 @@ optional func handsFree(_ device: IOBluetoothHandsFreeDevice!, incomingCallFrom 
 
 ## See Also
 
-- [func handsFree(IOBluetoothHandsFreeDevice!, currentCall: [AnyHashable : Any]!)](iobluetoothhandsfreedevicedelegate/handsfree(_:currentcall:).md)
+### Receiving Call Status
+- [func handsFree(IOBluetoothHandsFreeDevice!, currentCall: [AnyHashable : Any]!)](./handsfree%28_,currentcall%29.md)
   Sends the delegate information about the current call.
-- [Current Call Information Constants](current-call-information-constants.md)
+- [Current Call Information Constants](../current-call-information-constants.md)
   Get information about a phone call on a hands-free Bluetooth device.
 
 

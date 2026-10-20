@@ -2,6 +2,7 @@
 
 **Framework**: Core Media I/O  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An array of formats that a stream supports.
@@ -16,13 +17,18 @@ An array of formats that a stream supports.
 var formats: [CMIOExtensionStreamFormat] { get }
 ```
 
+```objc
+@property (atomic, readonly) NSArray<CMIOExtensionStreamFormat *> * formats;
+```
+
 #### Discussion
 
 Don’t change stream formats during the life cycle of the associated stream.
 
 ## See Also
 
-- [class CMIOExtensionStreamFormat](cmioextensionstreamformat.md)
+### Accessing the Source Format
+- [class CMIOExtensionStreamFormat](../cmioextensionstreamformat.md)
   An object that describes the format of a media stream.
 
 

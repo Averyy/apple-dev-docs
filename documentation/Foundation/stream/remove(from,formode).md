@@ -1,7 +1,8 @@
 # remove(from:forMode:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the receiver from a given run loop running in a given mode.
 
@@ -20,6 +21,10 @@ Removes the receiver from a given run loop running in a given mode.
 func remove(from aRunLoop: RunLoop, forMode mode: RunLoop.Mode)
 ```
 
+```objc
+- (void) removeFromRunLoop:(NSRunLoop *) aRunLoop forMode:(NSRunLoopMode) mode;
+```
+
 ## Parameters
 
 - `aRunLoop`: The run loop on which the receiver was scheduled.
@@ -27,7 +32,8 @@ func remove(from aRunLoop: RunLoop, forMode mode: RunLoop.Mode)
 
 ## See Also
 
-- [func schedule(in: RunLoop, forMode: RunLoop.Mode)](stream/schedule(in:formode:).md)
+### Managing Run Loops
+- [func schedule(in: RunLoop, forMode: RunLoop.Mode)](./schedule%28in,formode%29.md)
   Schedules the receiver on a given run loop in a given mode.
 
 

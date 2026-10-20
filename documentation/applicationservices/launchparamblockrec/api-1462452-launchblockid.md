@@ -1,7 +1,8 @@
 # launchBlockID
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var launchBlockID: UInt16
+```
+
+```c
+UInt16 launchBlockID;
 ```
 
 

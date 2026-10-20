@@ -1,7 +1,8 @@
 # Dismiss Daily Budget Recommendations
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Dismiss one or more daily budget recommendations without changing the campaign’s budget.
 
@@ -59,23 +60,38 @@ POST /v1/recommendations/daily-budgets/dismiss
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
 
 ## Request Body
 
-Send an array of [`ApplyDailyCapRecommendation`](applydailycaprecommendation.md) objects, one per recommendation you want to dismiss. All items must share the same `promotedObjectId`, and each item needs `id`, `promotedObjectId`, and `promotedObjectType`.
+**Content-Type**: `application/json`  
+**Type**: `[ApplyDailyCapRecommendation]`
+
+Send an array of [`ApplyDailyCapRecommendation`](./applydailycaprecommendation.md) objects, one per recommendation you want to dismiss. All items must share the same `promotedObjectId`, and each item needs `id`, `promotedObjectId`, and `promotedObjectType`.
+
+## Responses
+
+- `200` OK (`RecommendationDismissDailyBudgetResponse`, `application/json`)
+- `400` Bad Request (`RecommendationResponseBody`, `application/json`)
+- `401` Unauthorized (`RecommendationResponseBody`, `application/json`)
+- `403` Forbidden (`RecommendationResponseBody`, `application/json`)
+- `404` Not Found (`RecommendationResponseBody`, `application/json`)
+- `429` Too Many Requests (`RecommendationResponseBody`, `application/json`)
+- `500` Internal Server Error (`RecommendationResponseBody`, `application/json`)
 
 ## See Also
 
-- [Query Target CPA Recommendations](query-target-cpa-recommendations.md)
+- [Query Target CPA Recommendations](./query-target-cpa-recommendations.md)
   Retrieve target cost-per-acquisition recommendations for campaigns using a Maximize Conversions bid strategy.
-- [Apply Target CPA Recommendations](apply-target-cpa-recommendations.md)
+- [Apply Target CPA Recommendations](./apply-target-cpa-recommendations.md)
   Apply one or more target CPA recommendations.
-- [Dismiss Target CPA Recommendations](dismiss-target-cpa-recommendations.md)
+- [Dismiss Target CPA Recommendations](./dismiss-target-cpa-recommendations.md)
   Dismiss one or more target CPA recommendations without changing the campaign’s bid strategy.
-- [Query Daily Budget Recommendations](query-daily-budget-recommendations.md)
+- [Query Daily Budget Recommendations](./query-daily-budget-recommendations.md)
   Retrieve daily budget recommendations for campaigns that may have more opportunities.
-- [Apply Daily Budget Recommendations](apply-daily-budget-recommendations.md)
+- [Apply Daily Budget Recommendations](./apply-daily-budget-recommendations.md)
   Apply one or more daily budget recommendations, updating the campaign’s daily budget to the suggested amount.
 
 

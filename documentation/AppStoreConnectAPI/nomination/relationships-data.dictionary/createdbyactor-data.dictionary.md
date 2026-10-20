@@ -1,21 +1,22 @@
 # Nomination.Relationships.CreatedByActor
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object Nomination.Relationships.CreatedByActor
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object Nomination.Relationships.CreatedByActor.Data](nomination/relationships-data.dictionary/createdbyactor-data.dictionary/data-data.dictionary.md)
+- [object Nomination.Relationships.CreatedByActor.Data](./createdbyactor-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

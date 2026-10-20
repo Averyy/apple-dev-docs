@@ -1,7 +1,8 @@
 # AppsReportingCreative.SystemStatus
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 System-evaluated validation state of the creative at report time.
 
@@ -10,9 +11,15 @@ System-evaluated validation state of the creative at report time.
 
 ## Declaration
 
-```swift
+```
 string AppsReportingCreative.SystemStatus
 ```
+
+## Possible Values
+
+- `VALID`: The creative has passed all system validation checks and is ready to serve. The creative may still be subject to additional review.
+- `INVALID`: The creative has failed one or more validation checks. Check `systemStatusReasons` for the cause.
+- `PENDING`: The creative is undergoing system validation, policy determination, or waiting for asset CDN availability.
 
 #### Discussion
 
@@ -26,7 +33,7 @@ This is a point-in-time snapshot of validation state; a creative later marked `I
 }
 ```
 
-See [`CreativeSystemStatus`](creativesystemstatus.md) for additional context.
+See [`CreativeSystemStatus`](../creativesystemstatus.md) for additional context.
 
 
 ---

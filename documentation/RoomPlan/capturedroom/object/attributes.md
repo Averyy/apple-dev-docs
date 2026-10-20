@@ -1,7 +1,8 @@
 # attributes
 
 **Framework**: RoomPlan  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of details that describe a particular object in the room.
 
@@ -18,7 +19,8 @@ var attributes: [any CapturedRoomAttribute] { get }
 
 ## See Also
 
-- [func attribute<T>(of: T.Type) -> T?](capturedroom/object/attribute(of:).md)
+### Describing an object
+- [func attribute<T>(of: T.Type) -> T?](./attribute%28of%29.md)
   Checks an object for specific attribute types.
 
 

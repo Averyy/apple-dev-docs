@@ -1,7 +1,8 @@
 # anchorPoint
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The anchor point of the view’s bounds rectangle.
 
@@ -18,23 +19,28 @@ The anchor point of the view’s bounds rectangle.
 var anchorPoint: CGPoint { get set }
 ```
 
+```objc
+@property (nonatomic) CGPoint anchorPoint;
+```
+
 #### Discussion
 
-You specify the value for this property using the unit coordinate space, where (`0`, `0`) is the bottom-left corner of the view’s [`bounds`](https://developer.apple.com/documentation/quartzcore/calayer/bounds) rectangle, and (`1`, `1`) is the top-right corner. The default value of this property is (`0.5`, `0.5`), which represents the center of the view’s [`bounds`](https://developer.apple.com/documentation/quartzcore/calayer/bounds) rectangle.
+You specify the value for this property using the unit coordinate space, where (`0`, `0`) is the bottom-left corner of the view’s [`bounds`](../../QuartzCore/calayer/bounds.md) rectangle, and (`1`, `1`) is the top-right corner. The default value of this property is (`0.5`, `0.5`), which represents the center of the view’s [`bounds`](../../QuartzCore/calayer/bounds.md) rectangle.
 
 All geometric manipulations to the view occur about the specified point. For example, applying a rotation transform to a view with the default anchor point causes the view to rotate around its center. Changing the anchor point to a different location causes the view to rotate around that new point.
 
 ## See Also
 
-- [var frame: CGRect](uiview/frame.md)
+### Configuring the bounds and frame rectangles
+- [var frame: CGRect](./frame.md)
   The frame rectangle, which describes the view’s location and size in its superview’s coordinate system.
-- [var bounds: CGRect](uiview/bounds.md)
+- [var bounds: CGRect](./bounds.md)
   The bounds rectangle, which describes the view’s location and size in its own coordinate system.
-- [var center: CGPoint](uiview/center.md)
+- [var center: CGPoint](./center.md)
   The center point of the view’s frame rectangle.
-- [var transform: CGAffineTransform](uiview/transform.md)
+- [var transform: CGAffineTransform](./transform.md)
   Specifies the transform applied to the view, relative to the center of its bounds.
-- [var transform3D: CATransform3D](uiview/transform3d.md)
+- [var transform3D: CATransform3D](./transform3d.md)
   The three-dimensional transform to apply to the view.
 
 

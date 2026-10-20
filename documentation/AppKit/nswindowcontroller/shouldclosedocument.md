@@ -1,12 +1,13 @@
 # shouldCloseDocument
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the receiver necessarily closes the associated document when the window it manages is closed.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ A Boolean value that indicates whether the receiver necessarily closes the assoc
 var shouldCloseDocument: Bool { get set }
 ```
 
+```objc
+@property BOOL shouldCloseDocument;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the receiver necessarily closes the associated document when the window it manages is closed, [`false`](https://developer.apple.com/documentation/swift/false) otherwise. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](../../Swift/true.md) if the receiver necessarily closes the associated document when the window it manages is closed, [`false`](../../Swift/false.md) otherwise. The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func close()](nswindowcontroller/close.md)
+### Closing the Window
+- [func close()](./close%28%29.md)
   Closes the window if it was loaded.
 
 

@@ -1,16 +1,19 @@
 # actionID
 
 **Framework**: CarKey  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The vehicle-specific code that identifies what action to take on the targeted feature.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.3+
-- watchOS 9.0+
+- iOS 16.0+ - Deprecated in 18.0
+- iPadOS 16.0+ - Deprecated in 18.0
+- Mac Catalyst 16.0+ - Deprecated in 18.0
+- macOS 13.3+ - Deprecated in 15.0
+- watchOS 9.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use [`perform(_:continuationStrategy:)`](../carkeyremotecontrolsession/perform%28_,continuationstrategy%29.md) instead.
 
 ## Declaration
 
@@ -24,9 +27,10 @@ You define the action identifiers for your vehicles and what actions they perfor
 
 ## See Also
 
-- [let functionID: FunctionIdentifier](remotekeylessentryenduringaction/functionid.md)
+### Getting the Action Details
+- [let functionID: FunctionIdentifier](./functionid.md)
   The vehicle-specific code that identifies which feature you want to control.
-- [let recipientVehicleID: String](remotekeylessentryenduringaction/recipientvehicleid.md)
+- [let recipientVehicleID: String](./recipientvehicleid.md)
   The vehicle to receive the action request.
 
 

@@ -1,7 +1,8 @@
 # isKeyWindow
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the window is the key window.
 
@@ -9,7 +10,7 @@ A Boolean value that indicates whether the window is the key window.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,23 +19,28 @@ A Boolean value that indicates whether the window is the key window.
 var isKeyWindow: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isKeyWindow) BOOL keyWindow;
+```
+
 #### Discussion
 
-In iOS 15 and later, the value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the window is the key window of its scene. In iOS 14 and earlier, the value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the window is the key window in the app.
+In iOS 15 and later, the value of this property is [`true`](../../Swift/true.md) when the window is the key window of its scene. In iOS 14 and earlier, the value of this property is [`true`](../../Swift/true.md) when the window is the key window in the app.
 
 The key window receives keyboard and other non-touch-related events. Only one window at a time may be the key window.
 
 ## See Also
 
-- [var canBecomeKey: Bool](uiwindow/canbecomekey.md)
+### Making windows key
+- [var canBecomeKey: Bool](./canbecomekey.md)
   A Boolean value that indicates whether the window can become the key window.
-- [func makeKeyAndVisible()](uiwindow/makekeyandvisible.md)
+- [func makeKeyAndVisible()](./makekeyandvisible%28%29.md)
   Shows the window and makes it the key window.
-- [func makeKey()](uiwindow/makekey.md)
+- [func makeKey()](./makekey%28%29.md)
   Makes the window the key window.
-- [func becomeKey()](uiwindow/becomekey.md)
+- [func becomeKey()](./becomekey%28%29.md)
   Tells the window that it’s the key window.
-- [func resignKey()](uiwindow/resignkey.md)
+- [func resignKey()](./resignkey%28%29.md)
   Tells the window that it’s no longer the key window.
 
 

@@ -1,7 +1,8 @@
 # MTRMicrowaveOvenModeModeTag
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.4+
@@ -18,33 +19,37 @@
 enum MTRMicrowaveOvenModeModeTag
 ```
 
+```c
+enum MTRMicrowaveOvenModeModeTag : uint16_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRMicrowaveOvenModeModeTag.auto](mtrmicrowaveovenmodemodetag/auto.md)
-- [MTRMicrowaveOvenModeModeTag.day](mtrmicrowaveovenmodemodetag/day.md)
-- [MTRMicrowaveOvenModeModeTag.defrost](mtrmicrowaveovenmodemodetag/defrost.md)
-- [MTRMicrowaveOvenModeModeTag.lowEnergy](mtrmicrowaveovenmodemodetag/lowenergy.md)
-- [MTRMicrowaveOvenModeModeTag.lowNoise](mtrmicrowaveovenmodemodetag/lownoise.md)
-- [MTRMicrowaveOvenModeModeTag.max](mtrmicrowaveovenmodemodetag/max.md)
-- [MTRMicrowaveOvenModeModeTag.min](mtrmicrowaveovenmodemodetag/min.md)
-- [MTRMicrowaveOvenModeModeTag.night](mtrmicrowaveovenmodemodetag/night.md)
-- [MTRMicrowaveOvenModeModeTag.normal](mtrmicrowaveovenmodemodetag/normal.md)
-- [MTRMicrowaveOvenModeModeTag.quick](mtrmicrowaveovenmodemodetag/quick.md)
-- [MTRMicrowaveOvenModeModeTag.quiet](mtrmicrowaveovenmodemodetag/quiet.md)
-- [MTRMicrowaveOvenModeModeTag.vacation](mtrmicrowaveovenmodemodetag/vacation.md)
+- [MTRMicrowaveOvenModeModeTag.auto](./mtrmicrowaveovenmodemodetag/auto.md)
+- [MTRMicrowaveOvenModeModeTag.day](./mtrmicrowaveovenmodemodetag/day.md)
+- [MTRMicrowaveOvenModeModeTag.defrost](./mtrmicrowaveovenmodemodetag/defrost.md)
+- [MTRMicrowaveOvenModeModeTag.lowEnergy](./mtrmicrowaveovenmodemodetag/lowenergy.md)
+- [MTRMicrowaveOvenModeModeTag.lowNoise](./mtrmicrowaveovenmodemodetag/lownoise.md)
+- [MTRMicrowaveOvenModeModeTag.max](./mtrmicrowaveovenmodemodetag/max.md)
+- [MTRMicrowaveOvenModeModeTag.min](./mtrmicrowaveovenmodemodetag/min.md)
+- [MTRMicrowaveOvenModeModeTag.night](./mtrmicrowaveovenmodemodetag/night.md)
+- [MTRMicrowaveOvenModeModeTag.normal](./mtrmicrowaveovenmodemodetag/normal.md)
+- [MTRMicrowaveOvenModeModeTag.quick](./mtrmicrowaveovenmodemodetag/quick.md)
+- [MTRMicrowaveOvenModeModeTag.quiet](./mtrmicrowaveovenmodemodetag/quiet.md)
+- [MTRMicrowaveOvenModeModeTag.vacation](./mtrmicrowaveovenmodemodetag/vacation.md)
 ### Initializers
-- [init?(rawValue: UInt16)](mtrmicrowaveovenmodemodetag/init(rawvalue:).md)
+- [init?(rawValue: UInt16)](./mtrmicrowaveovenmodemodetag/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

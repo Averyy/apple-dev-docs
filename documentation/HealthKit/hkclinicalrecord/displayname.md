@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The primary display name as shown in the Health app.
 
@@ -18,11 +19,16 @@ The primary display name as shown in the Health app.
 var displayName: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * displayName;
+```
+
 ## See Also
 
-- [var clinicalType: HKClinicalType](hkclinicalrecord/clinicaltype.md)
+### Accessing Clinical Record Data
+- [var clinicalType: HKClinicalType](./clinicaltype.md)
   An identifier that indicates the type of record, such as an allergic reaction, a lab result, or a medical procedure.
-- [var fhirResource: HKFHIRResource?](hkclinicalrecord/fhirresource.md)
+- [var fhirResource: HKFHIRResource?](./fhirresource.md)
   The Fast Healthcare Interoperability Resources (FHIR) data for this record.
 
 

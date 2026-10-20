@@ -1,7 +1,8 @@
 # segmentCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of curve segments in each curve of the geometry.
 
@@ -17,6 +18,10 @@ The number of curve segments in each curve of the geometry.
 
 ```swift
 var segmentCount: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger segmentCount;
 ```
 
 

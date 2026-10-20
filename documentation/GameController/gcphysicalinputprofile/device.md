@@ -1,7 +1,8 @@
 # device
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The physical device that the profile represents.
 
@@ -17,6 +18,10 @@ The physical device that the profile represents.
 
 ```swift
 weak var device: (any GCDevice)? { get }
+```
+
+```objc
+@property (nonatomic, weak, readonly) id<GCDevice> device;
 ```
 
 

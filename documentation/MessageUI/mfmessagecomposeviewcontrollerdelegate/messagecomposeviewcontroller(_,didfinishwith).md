@@ -2,6 +2,7 @@
 
 **Framework**: Message UI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that the user finished composing the message.
@@ -18,6 +19,10 @@ Tells the delegate that the user finished composing the message.
 func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult)
 ```
 
+```objc
+- (void) messageComposeViewController:(MFMessageComposeViewController *) controller didFinishWithResult:(MessageComposeResult) result;
+```
+
 #### Discussion
 
 This method is called when the user taps one of the buttons to dismiss the message composition interface. Your implementation of this method should dismiss the view controller and perform any additional actions needed to process the sending of the message. The result parameter lets you know whether the user chose to cancel or send the message, or whether sending the message failed.
@@ -27,11 +32,12 @@ Implementation of this method is required.
 ## Parameters
 
 - `controller`: The message composition view controller that is returning the result.
-- `result`: A result code that indicates how the user chose to complete the composition. See the [`MessageComposeResult`](messagecomposeresult.md) enumeration.
+- `result`: A result code that indicates how the user chose to complete the composition. See the [`MessageComposeResult`](../messagecomposeresult.md) enumeration.
 
 ## See Also
 
-- [enum MessageComposeResult](messagecomposeresult.md)
+### Responding to the Message Completion
+- [enum MessageComposeResult](../messagecomposeresult.md)
   These constants describe the result of the message-composition interface.
 
 

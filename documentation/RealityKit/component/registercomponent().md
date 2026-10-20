@@ -1,7 +1,8 @@
 # registerComponent()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Registers a new component type.
 
@@ -11,7 +12,7 @@ Registers a new component type.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,7 @@ static func registerComponent()
 
 #### Discussion
 
-Call the `registerComponent()` method once for every custom component type that you use in your app before you use it. You don’t need to call the method for built-in component types, like [`ModelComponent`](modelcomponent.md) or [`AnchoringComponent`](anchoringcomponent.md).
+Call the `registerComponent()` method once for every custom component type that you use in your app before you use it. You don’t need to call the method for built-in component types, like [`ModelComponent`](../modelcomponent.md) or [`AnchoringComponent`](../anchoringcomponent.md).
 
 
 ---

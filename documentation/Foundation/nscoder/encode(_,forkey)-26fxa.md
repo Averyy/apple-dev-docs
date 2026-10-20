@@ -1,7 +1,8 @@
 # encode(_:forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes vector data and associates it with the specified key in the coder’s archive.
 
@@ -19,9 +20,13 @@ Encodes vector data and associates it with the specified key in the coder’s ar
 func encode(_ vector: CGVector, forKey key: String)
 ```
 
+```objc
+- (void) encodeCGVector:(CGVector) vector forKey:(NSString *) key;
+```
+
 #### Discussion
 
-When decoding the data from the archive, you pass the value in the `key` parameter to the corresponding [`decodeCGVector(forKey:)`](nscoder/decodecgvector(forkey:).md) method to retrieve the data.
+When decoding the data from the archive, you pass the value in the `key` parameter to the corresponding [`decodeCGVector(forKey:)`](./decodecgvector%28forkey%29.md) method to retrieve the data.
 
 ## Parameters
 
@@ -30,21 +35,23 @@ When decoding the data from the archive, you pass the value in the `key` paramet
 
 ## See Also
 
-- [func decodeCGVector(forKey: String) -> CGVector](nscoder/decodecgvector(forkey:).md)
+### Related Documentation
+- [func decodeCGVector(forKey: String) -> CGVector](./decodecgvector%28forkey%29.md)
   Decodes and returns the Core Graphics vector data associated with the specified key in the coder’s archive.
-- [func encode(CGAffineTransform, forKey: String)](nscoder/encode(_:forkey:)-29jyx.md)
+### Encoding Geometry-Based Data
+- [func encode(CGAffineTransform, forKey: String)](./encode%28_,forkey%29-29jyx.md)
   Encodes an affine transform and associates it with the specified key in the receiver’s archive.
-- [func encode(CGPoint, forKey: String)](nscoder/encode(_:forkey:)-7z9kc.md)
+- [func encode(CGPoint, forKey: String)](./encode%28_,forkey%29-7z9kc.md)
   Encodes a point and associates it with the specified key in the receiver’s archive.
-- [func encode(CGRect, forKey: String)](nscoder/encode(_:forkey:)-10qhm.md)
+- [func encode(CGRect, forKey: String)](./encode%28_,forkey%29-10qhm.md)
   Encodes a rectangle and associates it with the specified key in the receiver’s archive.
-- [func encode(CGSize, forKey: String)](nscoder/encode(_:forkey:)-6wq3n.md)
+- [func encode(CGSize, forKey: String)](./encode%28_,forkey%29-6wq3n.md)
   Encodes size information and associates it with the specified key in the coder’s archive.
-- [func encode(NSDirectionalEdgeInsets, forKey: String)](nscoder/encode(_:forkey:)-7oo2n.md)
+- [func encode(NSDirectionalEdgeInsets, forKey: String)](./encode%28_,forkey%29-7oo2n.md)
   Encodes directional edge inset data and associates it with the specified key in the coder’s archive.
-- [func encode(UIEdgeInsets, forKey: String)](nscoder/encode(_:forkey:)-44zsc.md)
+- [func encode(UIEdgeInsets, forKey: String)](./encode%28_,forkey%29-44zsc.md)
   Encodes edge inset data and associates it with the specified key in the coder’s archive.
-- [func encode(UIOffset, forKey: String)](nscoder/encode(_:forkey:)-9d1qy.md)
+- [func encode(UIOffset, forKey: String)](./encode%28_,forkey%29-9d1qy.md)
   Encodes offset data and associates it with the specified key in the coder’s archive.
 
 

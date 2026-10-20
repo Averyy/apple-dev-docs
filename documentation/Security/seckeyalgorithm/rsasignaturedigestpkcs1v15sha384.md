@@ -1,7 +1,8 @@
 # rsaSignatureDigestPKCS1v15SHA384
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 static let rsaSignatureDigestPKCS1v15SHA384: SecKeyAlgorithm
+```
+
+```c
+extern SecKeyAlgorithm const kSecKeyAlgorithmRSASignatureDigestPKCS1v15SHA384;
 ```
 
 

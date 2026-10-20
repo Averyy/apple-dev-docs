@@ -1,7 +1,8 @@
 # recurrenceRules
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The recurrence rules for the calendar item.
 
@@ -19,17 +20,22 @@ The recurrence rules for the calendar item.
 var recurrenceRules: [EKRecurrenceRule]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<EKRecurrenceRule *> * recurrenceRules;
+```
+
 #### Discussion
 
 The implementation only supports a single recurrence rule.
 
 ## See Also
 
-- [var hasRecurrenceRules: Bool](ekcalendaritem/hasrecurrencerules.md)
+### Setting Recurrence Rules
+- [var hasRecurrenceRules: Bool](./hasrecurrencerules.md)
   A Boolean value that indicates whether the calendar item has recurrence rules.
-- [func addRecurrenceRule(EKRecurrenceRule)](ekcalendaritem/addrecurrencerule(_:).md)
+- [func addRecurrenceRule(EKRecurrenceRule)](./addrecurrencerule%28_%29.md)
   Adds a recurrence rule to the recurrence rule array.
-- [func removeRecurrenceRule(EKRecurrenceRule)](ekcalendaritem/removerecurrencerule(_:).md)
+- [func removeRecurrenceRule(EKRecurrenceRule)](./removerecurrencerule%28_%29.md)
   Removes a recurrence rule from the recurrence rule array.
 
 

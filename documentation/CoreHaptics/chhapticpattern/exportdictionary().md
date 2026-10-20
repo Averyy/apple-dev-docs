@@ -1,7 +1,8 @@
 # exportDictionary()
 
 **Framework**: Core Haptics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the dictionary representation of the haptic pattern.
 
@@ -17,6 +18,10 @@ Returns the dictionary representation of the haptic pattern.
 
 ```swift
 func exportDictionary() throws -> [CHHapticPattern.Key : Any]
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) exportDictionaryAndReturnError:(NSError **) outError;
 ```
 
 

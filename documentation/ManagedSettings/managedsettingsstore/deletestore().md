@@ -1,7 +1,8 @@
 # deleteStore()
 
 **Framework**: Managed Settings  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes this store
 

@@ -1,30 +1,35 @@
 # SubscriptionImageUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a subscription purchase image reservation.
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 3.6+ - Deprecated in 4.4.1
+
+> **Deprecated**: This object is deprecated. Use [`SubscriptionImageV2UpdateRequest`](../subscriptionimagev2updaterequest.md) instead.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionImageUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionImageUpdateRequest.Data.Attributes](subscriptionimageupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object SubscriptionImageUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a subscription image request resource.
 
 ## Properties
 
 - `attributes` (SubscriptionImageUpdateRequest.Data.Attributes): The resource’s attributes.
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `subscriptionImages` resource ID from the [`List Subscription Images`](get-v1-subscriptions-_id_-images.md) response.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `subscriptionImages` resource ID from the [`List Subscription Images`](../get-v1-subscriptions-_id_-images.md) response.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `subscriptionImages`
 
 
 ---

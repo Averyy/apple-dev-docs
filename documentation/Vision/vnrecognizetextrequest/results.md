@@ -1,7 +1,8 @@
 # results
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The results of the text recognition request.
 
@@ -17,6 +18,10 @@ The results of the text recognition request.
 
 ```swift
 var results: [VNRecognizedTextObservation]? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) NSArray<VNRecognizedTextObservation *> * results;
 ```
 
 

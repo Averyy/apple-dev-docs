@@ -1,7 +1,8 @@
 # confidence
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The level of confidence the speech recognizer has in its recognition of the speech transcribed for the segment.
 
@@ -16,6 +17,10 @@ The level of confidence the speech recognizer has in its recognition of the spee
 
 ```swift
 var confidence: Float { get }
+```
+
+```objc
+@property (nonatomic, readonly) float confidence;
 ```
 
 #### Discussion

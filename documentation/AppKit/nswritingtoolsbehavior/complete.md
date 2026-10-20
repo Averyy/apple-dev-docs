@@ -1,7 +1,8 @@
 # NSWritingToolsBehavior.complete
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to provide the complete Writing Tools experience for the text view.
 
@@ -14,13 +15,18 @@ An option to provide the complete Writing Tools experience for the text view.
 case complete
 ```
 
+```c
+NSWritingToolsBehaviorComplete
+```
+
 ## See Also
 
-- [NSWritingToolsBehavior.none](nswritingtoolsbehavior/none.md)
+### Getting the Writing Tools behaviors
+- [NSWritingToolsBehavior.none](./none.md)
   An option to prevent Writing Tools from modifying the text in the view.
-- [NSWritingToolsBehavior.default](nswritingtoolsbehavior/default.md)
+- [NSWritingToolsBehavior.default](./default.md)
   An option to let the system determine the best way to enable Writing Tools for the view.
-- [NSWritingToolsBehavior.limited](nswritingtoolsbehavior/limited.md)
+- [NSWritingToolsBehavior.limited](./limited.md)
   An option to provide a limited, overlay-panel experience for the text view.
 
 

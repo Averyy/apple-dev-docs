@@ -1,14 +1,15 @@
 # kAVCSignalModeMask_50
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kAVCSignalModeMask_50 = 0x80
 ```
 

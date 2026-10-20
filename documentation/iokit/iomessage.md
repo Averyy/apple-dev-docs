@@ -1,7 +1,8 @@
 # IOMessage
 
 **Framework**: IOKit  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 16.0+
@@ -14,6 +15,10 @@
 
 ```swift
 typealias IOMessage = UInt32
+```
+
+```c
+typedef UInt32 IOMessage;
 ```
 
 

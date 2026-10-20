@@ -1,7 +1,8 @@
 # ACAccountStoreRequestAccessCompletionHandler
 
 **Framework**: Accounts  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Specifies a handler to call when access is granted or denied.
 
@@ -17,16 +18,21 @@ Specifies a handler to call when access is granted or denied.
 typealias ACAccountStoreRequestAccessCompletionHandler = (Bool, (any Error)?) -> Void
 ```
 
+```c
+typedef void (^)(_Bool, NSError *) ACAccountStoreRequestAccessCompletionHandler;
+```
+
 #### Discussion
 
 The completion handler parameters are:
 
-- **`granted`**: A Boolean value indicating whether access is granted. [`true`](https://developer.apple.com/documentation/swift/true) if access is granted; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+- **`granted`**: A Boolean value indicating whether access is granted. [`true`](../Swift/true.md) if access is granted; otherwise [`false`](../Swift/false.md).
 - **`error`**: An error, if one occurred.
 
 ## See Also
 
-- [func requestAccessToAccounts(with: ACAccountType!, options: [AnyHashable : Any]!, completion: ((Bool, (any Error)?) -> Void)!)](acaccountstore/requestaccesstoaccounts(with:options:completion:).md)
+### Requesting Access
+- [func requestAccessToAccounts(with: ACAccountType!, options: [AnyHashable : Any]!, completion: ((Bool, (any Error)?) -> Void)!)](./acaccountstore/requestaccesstoaccounts%28with,options,completion%29.md)
   Obtains permission to access protected user properties.
 
 

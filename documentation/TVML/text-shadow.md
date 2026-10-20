@@ -1,6 +1,7 @@
 # text-shadow
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Adds a shadow effect to displayed text.
 

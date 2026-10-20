@@ -2,6 +2,7 @@
 
 **Framework**: MapKit  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type represents the data this protocol contains.
@@ -12,7 +13,7 @@ The type represents the data this protocol contains.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

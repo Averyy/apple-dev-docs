@@ -1,7 +1,8 @@
 # Input type
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit integer that specifies the type of data that is to be received from the secondary data source.
 
@@ -22,9 +23,10 @@ Valid values for this field are as follows.
 
 ## See Also
 
-- [Size](input_type_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this input type atom.
-- [Type](input_type_atom/type.md)
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
 
 

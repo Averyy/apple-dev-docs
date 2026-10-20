@@ -1,7 +1,8 @@
 # bestPaper(forPageSize:withPapersFrom:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The print-paper object that UIKit determines to be the best for a print job based on the specified page size and the paper size–imageable area combinations specific to the printer.
 
@@ -17,18 +18,22 @@ The print-paper object that UIKit determines to be the best for a print job base
 class func bestPaper(forPageSize contentSize: CGSize, withPapersFrom paperList: [UIPrintPaper]) -> UIPrintPaper
 ```
 
+```objc
++ (UIPrintPaper *) bestPaperForPageSize:(CGSize) contentSize withPapersFromArray:(NSArray<UIPrintPaper *> *) paperList;
+```
+
 #### Return Value
 
 An instance of `UIPrintPaper` that represents the optimal printable area and paper size for the current print job. Returns `nil` if the instance could not be created.
 
 #### Discussion
 
-The delegate of [`UIPrintInteractionController`](uiprintinteractioncontroller.md) may call this method in its implementation of the [`printInteractionController(_:choosePaper:)`](uiprintinteractioncontrollerdelegate/printinteractioncontroller(_:choosepaper:).md) method declared in the [`UIPrintInteractionControllerDelegate`](uiprintinteractioncontrollerdelegate.md) protocol.
+The delegate of [`UIPrintInteractionController`](../uiprintinteractioncontroller.md) may call this method in its implementation of the [`printInteractionController(_:choosePaper:)`](../uiprintinteractioncontrollerdelegate/printinteractioncontroller%28_,choosepaper%29.md) method declared in the [`UIPrintInteractionControllerDelegate`](../uiprintinteractioncontrollerdelegate.md) protocol.
 
 ## Parameters
 
 - `contentSize`: The size of the printed page that your application requests, in points. You should think of this as the size of the physical sheet of paper to use in printing without consideration of the margin.
-- `paperList`: An array of `UIPrintPaper` objects that represent combinations of supported paper size and printable areas. The array of objects usually comes directly from the second argument of the [`printInteractionController(_:choosePaper:)`](uiprintinteractioncontrollerdelegate/printinteractioncontroller(_:choosepaper:).md) method of the [`UIPrintInteractionControllerDelegate`](uiprintinteractioncontrollerdelegate.md) protocol.
+- `paperList`: An array of `UIPrintPaper` objects that represent combinations of supported paper size and printable areas. The array of objects usually comes directly from the second argument of the [`printInteractionController(_:choosePaper:)`](../uiprintinteractioncontrollerdelegate/printinteractioncontroller%28_,choosepaper%29.md) method of the [`UIPrintInteractionControllerDelegate`](../uiprintinteractioncontrollerdelegate.md) protocol.
 
 
 ---

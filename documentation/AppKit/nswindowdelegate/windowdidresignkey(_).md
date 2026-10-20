@@ -1,7 +1,8 @@
 # windowDidResignKey(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the window has resigned key window status.
 
@@ -15,17 +16,22 @@ Tells the delegate that the window has resigned key window status.
 optional func windowDidResignKey(_ notification: Notification)
 ```
 
+```objc
+- (void) windowDidResignKey:(NSNotification *) notification;
+```
+
 #### Discussion
 
-You can retrieve the window object in question by sending [`object`](https://developer.apple.com/documentation/foundation/nsnotification/object) to `notification`.
+You can retrieve the window object in question by sending [`object`](../../Foundation/nsnotification/object.md) to `notification`.
 
 ## Parameters
 
-- `notification`: A notification named [`didResignKeyNotification`](nswindow/didresignkeynotification.md).
+- `notification`: A notification named [`didResignKeyNotification`](../nswindow/didresignkeynotification.md).
 
 ## See Also
 
-- [func windowDidBecomeKey(Notification)](nswindowdelegate/windowdidbecomekey(_:).md)
+### Managing Key Status
+- [func windowDidBecomeKey(Notification)](./windowdidbecomekey%28_%29.md)
   Tells the delegate that the window has become the key window.
 
 

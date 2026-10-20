@@ -1,7 +1,8 @@
 # init(groups:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a collision group set from an array of numbered groups.
 

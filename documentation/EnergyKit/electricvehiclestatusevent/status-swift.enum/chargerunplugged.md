@@ -1,14 +1,15 @@
 # ElectricVehicleStatusEvent.Status.chargerUnplugged
 
 **Framework**: EnergyKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A status that indicates when the charger disconnects from the vehicle.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,11 +19,12 @@ case chargerUnplugged
 
 ## Mentions
 
-- [Providing charging history for electric vehicles](providing-informative-charging-history-for-electric-vehicles.md)
+- [Providing charging history for electric vehicles](../../providing-informative-charging-history-for-electric-vehicles.md)
 
 ## See Also
 
-- [ElectricVehicleStatusEvent.Status.chargerPluggedIn](electricvehiclestatusevent/status-swift.enum/chargerpluggedin.md)
+### Connection states
+- [ElectricVehicleStatusEvent.Status.chargerPluggedIn](./chargerpluggedin.md)
   A status that indicates when the charger connects to the vehicle.
 
 

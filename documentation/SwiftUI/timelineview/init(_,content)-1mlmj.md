@@ -1,7 +1,8 @@
 # init(_:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new timeline view that uses the given schedule.
 
@@ -21,14 +22,24 @@ Creates a new timeline view that uses the given schedule.
 nonisolated init(_ schedule: Schedule, @ContentBuilder content: @escaping (TimelineViewDefaultContext) -> Content)
 ```
 
+Available when `Schedule` conforms to `TimelineSchedule` and `Content` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(_ schedule: Schedule, @ContentBuilder content: @escaping (TimelineView<Schedule, Content>.Context) -> Content)
+```
+
 ## Parameters
 
-- `schedule`: A schedule that produces a sequence of dates that indicate the instances when the view should update. Use a type that conforms to [`TimelineSchedule`](timelineschedule.md), like [`everyMinute`](timelineschedule/everyminute.md), or a custom timeline schedule that you define.
-- `content`: A closure that generates view content at the moments indicated by the schedule. The closure takes an input of type [`TimelineViewDefaultContext`](timelineviewdefaultcontext.md) that includes the date from the schedule that prompted the update, as well as a [`TimelineView.Context.Cadence`](timelineview/context/cadence-swift.enum.md) value that the view can use to customize its appearance.
+- `schedule`: A schedule that produces a sequence of dates that indicate the instances when the view should update. Use a type that conforms to [`TimelineSchedule`](../timelineschedule.md), like [`everyMinute`](../timelineschedule/everyminute.md), or a custom timeline schedule that you define.
+- `content`: A closure that generates view content at the moments indicated by the schedule. The closure takes an input of type [`TimelineViewDefaultContext`](../timelineviewdefaultcontext.md) that includes the date from the schedule that prompted the update, as well as a [`TimelineView.Context.Cadence`](./context/cadence-swift.enum.md) value that the view can use to customize its appearance.
 
 ## See Also
 
-- [TimelineView.Context](timelineview/context.md)
+### Creating a timeline
+- [TimelineView.Context](./context.md)
   Information passed to a timeline view’s content callback.
 
 

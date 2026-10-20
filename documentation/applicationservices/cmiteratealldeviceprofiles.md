@@ -1,7 +1,8 @@
 # cmIterateAllDeviceProfiles
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Iterate all profiles, without replacement.
 

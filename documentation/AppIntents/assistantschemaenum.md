@@ -1,7 +1,8 @@
 # AssistantSchemaEnum
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 18.0+
@@ -21,38 +22,39 @@ protocol AssistantSchemaEnum : AssistantEnum
 ## Topics
 
 ### Type Properties
-- [static var isAssistantOnly: Bool](assistantschemaenum/isassistantonly.md)
+- [static var isAssistantOnly: Bool](./assistantschemaenum/isassistantonly.md)
 
 ## Relationships
 
 ### Inherits From
-- [AppEnum](appenum.md)
-- [AppValue](appvalue.md)
-- [AssistantEnum](assistantenum.md)
-- [CaseDisplayRepresentable](casedisplayrepresentable.md)
-- [CaseIterable](../swift/caseiterable.md)
-- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [StaticDisplayRepresentable](staticdisplayrepresentable.md)
-- [TypeDisplayRepresentable](typedisplayrepresentable.md)
+- [AppEnum](./appenum.md)
+- [AppValue](./appvalue.md)
+- [AssistantEnum](./assistantenum.md)
+- [CaseDisplayRepresentable](./casedisplayrepresentable.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [CustomLocalizedStringResourceConvertible](../Foundation/customlocalizedstringresourceconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [PersistentlyIdentifiable](./persistentlyidentifiable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [StaticDisplayRepresentable](./staticdisplayrepresentable.md)
+- [TypeDisplayRepresentable](./typedisplayrepresentable.md)
 
 ## See Also
 
-- [protocol AssistantEnum](assistantenum.md)
+### Previous schema types
+- [protocol AssistantEnum](./assistantenum.md)
   A value that Apple Intelligence and Siri use to fulfill a person’s request.
-- [protocol AssistantEntity](assistantentity.md)
+- [protocol AssistantEntity](./assistantentity.md)
   An app entity that Apple Intelligence can discover to fulfill a person’s request.
-- [protocol AssistantIntent](assistantintent.md)
+- [protocol AssistantIntent](./assistantintent.md)
   An app intent that Siri performs to fulfill a person’s request.
-- [protocol AssistantSchemaEntity](assistantschemaentity.md)
-- [protocol AssistantSchemaIntent](assistantschemaintent.md)
-- [struct AssistantSchema](assistantschema.md)
-- [enum AssistantSchemas](assistantschemas.md)
+- [protocol AssistantSchemaEntity](./assistantschemaentity.md)
+- [protocol AssistantSchemaIntent](./assistantschemaintent.md)
+- [struct AssistantSchema](./assistantschema.md)
+- [enum AssistantSchemas](./assistantschemas.md)
 
 
 ---

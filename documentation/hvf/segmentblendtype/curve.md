@@ -1,7 +1,8 @@
 # SegmentBlendType.curve
 
 **Framework**: hvf  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Segment is a curve segment
 

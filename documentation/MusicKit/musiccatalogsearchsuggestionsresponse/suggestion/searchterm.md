@@ -1,7 +1,8 @@
 # searchTerm
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The term to use as a search input when using this suggestion.
 

@@ -1,7 +1,8 @@
 # CiArtifact.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes that describe the output of an artifact resource.
 
@@ -10,13 +11,13 @@ The attributes that describe the output of an artifact resource.
 
 ## Declaration
 
-```swift
+```
 object CiArtifact.Attributes
 ```
 
 ## Mentions
 
-- [App Store Connect API 3.2 release notes](app-store-connect-api-3-2-release-notes.md)
+- [App Store Connect API 3.2 release notes](../app-store-connect-api-3-2-release-notes.md)
 
 ## Properties
 
@@ -24,6 +25,8 @@ object CiArtifact.Attributes
 - `fileName` (string): The artifact’s filename as a string.
 - `fileSize` (integer): An integer value that represents the artifact’s file size.
 - `fileType` (string): A string that describes the type of the artifact.
+
+  **Allowed Values**: `ARCHIVE`, `ARCHIVE_EXPORT`, `LOG_BUNDLE`, `RESULT_BUNDLE`, `TEST_PRODUCTS`, `XCODEBUILD_PRODUCTS`, `STAPLED_NOTARIZED_ARCHIVE`
 
 
 ---

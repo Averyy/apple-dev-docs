@@ -1,7 +1,8 @@
 # kernelWidth
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of the filter window. Must be an odd number.
 
@@ -19,11 +20,16 @@ The width of the filter window. Must be an odd number.
 var kernelWidth: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger kernelWidth;
+```
+
 ## See Also
 
-- [var kernelHeight: Int](mpsimageconvolution/kernelheight.md)
+### Properties
+- [var kernelHeight: Int](./kernelheight.md)
   The height of the filter window. Must be an odd number.
-- [var bias: Float](mpsimageconvolution/bias.md)
+- [var bias: Float](./bias.md)
   The value added to a convolved pixel before it is converted back to its intended storage format.
 
 

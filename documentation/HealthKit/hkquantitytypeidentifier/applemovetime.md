@@ -1,7 +1,8 @@
 # appleMoveTime
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A quantity sample type that measures the amount of time the user has spent performing activities that involve full-body movements during the specified day.
 
@@ -19,9 +20,13 @@ A quantity sample type that measures the amount of time the user has spent perfo
 static let appleMoveTime: HKQuantityTypeIdentifier
 ```
 
+```c
+extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierAppleMoveTime;
+```
+
 #### Discussion
 
-[`appleMoveTime`](hkquantitytypeidentifier/applemovetime.md) measures every full minute where the watch detects the user actively moving. Apple Watch uses the accelerometer and gyroscopes to detect activities that involve full-body movements, like walking, running, or playing in the playground.
+[`appleMoveTime`](./applemovetime.md) measures every full minute where the watch detects the user actively moving. Apple Watch uses the accelerometer and gyroscopes to detect activities that involve full-body movements, like walking, running, or playing in the playground.
 
 For younger users, HealthKit’s activity summary can track move time instead of active energy burned:
 
@@ -29,47 +34,49 @@ For younger users, HealthKit’s activity summary can track move time instead of
 - Users 13 to 18 years old can choose whether to track move time or active calorie burn.
 - All users over 18 years old track active calorie burn.
 
-These samples use time units (described in [`HKUnit`](hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)).
+These samples use time units (described in [`HKUnit`](../hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 
 ## See Also
 
-- [var activityMoveMode: HKActivityMoveMode](hkactivitysummary/activitymovemode.md)
+### Related Documentation
+- [var activityMoveMode: HKActivityMoveMode](../hkactivitysummary/activitymovemode.md)
   The move mode that they system used for this activity summary.
-- [struct HKQuantityTypeIdentifier](hkquantitytypeidentifier.md)
+- [struct HKQuantityTypeIdentifier](../hkquantitytypeidentifier.md)
   The identifiers that create quantity type objects.
-- [class HKQuantitySample](hkquantitysample.md)
+- [class HKQuantitySample](../hkquantitysample.md)
   A sample that represents a quantity, including the value and the units.
-- [class HKQuantity](hkquantity.md)
+- [class HKQuantity](../hkquantity.md)
   An object that stores a value for a given unit.
-- [static let stepCount: HKQuantityTypeIdentifier](hkquantitytypeidentifier/stepcount.md)
+### Activity
+- [static let stepCount: HKQuantityTypeIdentifier](./stepcount.md)
   A quantity sample type that measures the number of steps the user has taken.
-- [static let distanceWalkingRunning: HKQuantityTypeIdentifier](hkquantitytypeidentifier/distancewalkingrunning.md)
+- [static let distanceWalkingRunning: HKQuantityTypeIdentifier](./distancewalkingrunning.md)
   A quantity sample type that measures the distance the user has moved by walking or running.
-- [static let runningSpeed: HKQuantityTypeIdentifier](hkquantitytypeidentifier/runningspeed.md)
+- [static let runningSpeed: HKQuantityTypeIdentifier](./runningspeed.md)
   A quantity sample type that measures the runner’s speed.
-- [static let runningStrideLength: HKQuantityTypeIdentifier](hkquantitytypeidentifier/runningstridelength.md)
+- [static let runningStrideLength: HKQuantityTypeIdentifier](./runningstridelength.md)
   A quantity sample type that measures the distance covered by a single step while running.
-- [static let runningPower: HKQuantityTypeIdentifier](hkquantitytypeidentifier/runningpower.md)
+- [static let runningPower: HKQuantityTypeIdentifier](./runningpower.md)
   A quantity sample type that measures the rate of work required for the runner to maintain their speed.
-- [static let runningGroundContactTime: HKQuantityTypeIdentifier](hkquantitytypeidentifier/runninggroundcontacttime.md)
+- [static let runningGroundContactTime: HKQuantityTypeIdentifier](./runninggroundcontacttime.md)
   A quantity sample type that measures the amount of time the runner’s foot is in contact with the ground while running.
-- [static let runningVerticalOscillation: HKQuantityTypeIdentifier](hkquantitytypeidentifier/runningverticaloscillation.md)
+- [static let runningVerticalOscillation: HKQuantityTypeIdentifier](./runningverticaloscillation.md)
   A quantity sample type measuring pelvis vertical range of motion during a single running stride.
-- [static let distanceCycling: HKQuantityTypeIdentifier](hkquantitytypeidentifier/distancecycling.md)
+- [static let distanceCycling: HKQuantityTypeIdentifier](./distancecycling.md)
   A quantity sample type that measures the distance the user has moved by cycling.
-- [static let pushCount: HKQuantityTypeIdentifier](hkquantitytypeidentifier/pushcount.md)
+- [static let pushCount: HKQuantityTypeIdentifier](./pushcount.md)
   A quantity sample type that measures the number of pushes that the user has performed while using a wheelchair.
-- [static let distanceWheelchair: HKQuantityTypeIdentifier](hkquantitytypeidentifier/distancewheelchair.md)
+- [static let distanceWheelchair: HKQuantityTypeIdentifier](./distancewheelchair.md)
   A quantity sample type that measures the distance the user has moved using a wheelchair.
-- [static let swimmingStrokeCount: HKQuantityTypeIdentifier](hkquantitytypeidentifier/swimmingstrokecount.md)
+- [static let swimmingStrokeCount: HKQuantityTypeIdentifier](./swimmingstrokecount.md)
   A quantity sample type that measures the number of strokes performed while swimming.
-- [static let distanceSwimming: HKQuantityTypeIdentifier](hkquantitytypeidentifier/distanceswimming.md)
+- [static let distanceSwimming: HKQuantityTypeIdentifier](./distanceswimming.md)
   A quantity sample type that measures the distance the user has moved while swimming.
-- [static let distanceDownhillSnowSports: HKQuantityTypeIdentifier](hkquantitytypeidentifier/distancedownhillsnowsports.md)
+- [static let distanceDownhillSnowSports: HKQuantityTypeIdentifier](./distancedownhillsnowsports.md)
   A quantity sample type that measures the distance the user has traveled while skiing or snowboarding.
-- [static let basalEnergyBurned: HKQuantityTypeIdentifier](hkquantitytypeidentifier/basalenergyburned.md)
+- [static let basalEnergyBurned: HKQuantityTypeIdentifier](./basalenergyburned.md)
   A quantity sample type that measures the resting energy burned by the user.
-- [static let activeEnergyBurned: HKQuantityTypeIdentifier](hkquantitytypeidentifier/activeenergyburned.md)
+- [static let activeEnergyBurned: HKQuantityTypeIdentifier](./activeenergyburned.md)
   A quantity sample type that measures the amount of active energy the user has burned.
 
 

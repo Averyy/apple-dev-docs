@@ -1,7 +1,8 @@
 # readAttributeBallastStatus(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeBallastStatus(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeBallastStatus() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeBallastStatusWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

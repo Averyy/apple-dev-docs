@@ -1,7 +1,8 @@
 # canRetry
 
 **Framework**: XPC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether you can retry the operation that caused the error.
 
@@ -11,7 +12,7 @@ A Boolean that indicates whether you can retry the operation that caused the err
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

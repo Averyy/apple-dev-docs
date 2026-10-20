@@ -1,7 +1,8 @@
 # CFErrorGetTypeID()
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the type identifier for the CFError opaque type.
 
@@ -18,6 +19,10 @@ Returns the type identifier for the CFError opaque type.
 
 ```swift
 func CFErrorGetTypeID() -> CFTypeID
+```
+
+```c
+extern CFTypeID CFErrorGetTypeID();
 ```
 
 #### Return Value

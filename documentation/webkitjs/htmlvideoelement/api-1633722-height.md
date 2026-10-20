@@ -1,7 +1,8 @@
 # height
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The height of the video element in CSS pixels.
 
@@ -11,15 +12,16 @@ The height of the video element in CSS pixels.
 
 ## Declaration
 
-```swift
+```
 attribute unsigned long height;
 ```
 
 ## See Also
 
-- [width](htmlvideoelement/1631245-width.md)
+### Getting and Setting Properties
+- [width](./api-1631245-width.md)
   The width of the video element in CSS pixels.
-- [poster](htmlvideoelement/1631880-poster.md)
+- [poster](./api-1631880-poster.md)
   The URI address of an image file that is shown when no video data is available.
 
 

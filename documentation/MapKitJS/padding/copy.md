@@ -1,7 +1,8 @@
 # copy()
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a copy of the padding object.
 
@@ -10,13 +11,13 @@ Returns a copy of the padding object.
 
 ## Declaration
 
-```swift
+```
 copy(): Padding;
 ```
 
 #### Return Value
 
-A [`Padding`](padding.md) object that is a copy of the original.
+A [`Padding`](../padding.md) object that is a copy of the original.
 
 
 ---

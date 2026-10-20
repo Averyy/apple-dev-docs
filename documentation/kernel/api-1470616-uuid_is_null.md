@@ -1,14 +1,15 @@
 # uuid_is_null
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 int uuid_is_null(const uuid_t uu);
 ```
 

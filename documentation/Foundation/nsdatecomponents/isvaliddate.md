@@ -1,7 +1,8 @@
 # isValidDate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the current combination of properties represents a date which exists in the current calendar.
 
@@ -20,17 +21,22 @@ A Boolean value that indicates whether the current combination of properties rep
 var isValidDate: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isValidDate) BOOL validDate;
+```
+
 #### Discussion
 
-If the [`timeZone`](nsdatecomponents/timezone.md) property is set on the receiver, the time zone property value is used. If the [`calendar`](nsdatecomponents/calendar.md) property is not set on the receiver, `nil` is returned.
+If the [`timeZone`](./timezone.md) property is set on the receiver, the time zone property value is used. If the [`calendar`](./calendar.md) property is not set on the receiver, `nil` is returned.
 
 ## See Also
 
-- [func isValidDate(in: Calendar) -> Bool](nsdatecomponents/isvaliddate(in:).md)
+### Validating a Date
+- [func isValidDate(in: Calendar) -> Bool](./isvaliddate%28in%29.md)
   Returns a Boolean value that indicates whether the current combination of properties represents a date which exists in the specified calendar.
-- [var date: Date?](nsdatecomponents/date.md)
+- [var date: Date?](./date.md)
   The date calculated from the current components using the stored calendar.
-- [Undefined Components](1430344-undefined-components.md)
+- [Undefined Components](../api-1430344-undefined-components.md)
   Constants that denote that the value of a date component is undefined.
 
 

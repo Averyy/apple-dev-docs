@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Instantiates an instance of the conforming type from a string representation.
 

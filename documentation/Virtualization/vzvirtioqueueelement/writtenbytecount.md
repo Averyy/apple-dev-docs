@@ -1,7 +1,8 @@
 # writtenByteCount
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the write buffers memory exposed (in bytes) by the Virtio queue element that has already been written to.
 
@@ -12,6 +13,10 @@ The size of the write buffers memory exposed (in bytes) by the Virtio queue elem
 
 ```swift
 var writtenByteCount: Int { get }
+```
+
+```objc
+@property (readonly) NSUInteger writtenByteCount;
 ```
 
 #### Discussion

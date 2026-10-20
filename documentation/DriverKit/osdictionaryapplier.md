@@ -1,23 +1,25 @@
 # OSDictionaryApplier
 
 **Framework**: DriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 typedef _Bool (^)(const char *, class OSObject *) OSDictionaryApplier;
 ```
 
 ## See Also
 
-- [OSDictionaryApply](osdictionaryapply.md)
+### Modifying the Dictionary Items
+- [OSDictionaryApply](./osdictionaryapply.md)
 
 
 ---

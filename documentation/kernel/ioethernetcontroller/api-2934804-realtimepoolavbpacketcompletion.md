@@ -1,14 +1,15 @@
 # realtimePoolAVBPacketCompletion
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.13.1+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 static void realtimePoolAVBPacketCompletion(void *context, IOEthernetAVBPacket *packet);
 ```
 

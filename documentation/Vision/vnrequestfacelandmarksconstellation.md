@@ -1,7 +1,8 @@
 # VNRequestFaceLandmarksConstellation
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of face landmarks in a constellation object.
 
@@ -11,31 +12,36 @@ An enumeration of face landmarks in a constellation object.
 enum VNRequestFaceLandmarksConstellation
 ```
 
+```c
+enum VNRequestFaceLandmarksConstellation : NSUInteger;
+```
+
 ## Topics
 
 ### Types of Constellations
-- [VNRequestFaceLandmarksConstellation.constellationNotDefined](vnrequestfacelandmarksconstellation/constellationnotdefined.md)
+- [VNRequestFaceLandmarksConstellation.constellationNotDefined](./vnrequestfacelandmarksconstellation/constellationnotdefined.md)
   An undefined constellation.
-- [VNRequestFaceLandmarksConstellation.constellation65Points](vnrequestfacelandmarksconstellation/constellation65points.md)
+- [VNRequestFaceLandmarksConstellation.constellation65Points](./vnrequestfacelandmarksconstellation/constellation65points.md)
   A constellation with 65 points.
-- [VNRequestFaceLandmarksConstellation.constellation76Points](vnrequestfacelandmarksconstellation/constellation76points.md)
+- [VNRequestFaceLandmarksConstellation.constellation76Points](./vnrequestfacelandmarksconstellation/constellation76points.md)
   A constellation with 76 points.
 ### Creating a Constellation
-- [init?(rawValue: UInt)](vnrequestfacelandmarksconstellation/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./vnrequestfacelandmarksconstellation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var constellation: VNRequestFaceLandmarksConstellation](vndetectfacelandmarksrequest/constellation.md)
+### Locating Face Landmarks
+- [var constellation: VNRequestFaceLandmarksConstellation](./vndetectfacelandmarksrequest/constellation.md)
   A variable that describes how a face landmarks request orders or enumerates the resulting features.
 
 

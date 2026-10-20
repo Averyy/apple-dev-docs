@@ -1,17 +1,18 @@
 # XCUIDevice.Button.home
 
 **Framework**: XCUIAutomation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device’s home button.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -20,15 +21,20 @@ The device’s home button.
 case home
 ```
 
+```c
+XCUIDeviceButtonHome
+```
+
 ## See Also
 
-- [XCUIDevice.Button.volumeUp](xcuidevice/button/volumeup.md)
+### Device buttons
+- [XCUIDevice.Button.volumeUp](./volumeup.md)
   The device’s volume up button.
-- [XCUIDevice.Button.volumeDown](xcuidevice/button/volumedown.md)
+- [XCUIDevice.Button.volumeDown](./volumedown.md)
   The device’s volume down button.
-- [XCUIDevice.Button.action](xcuidevice/button/action.md)
+- [XCUIDevice.Button.action](./action.md)
   The device’s action button.
-- [XCUIDevice.Button.camera](xcuidevice/button/camera.md)
+- [XCUIDevice.Button.camera](./camera.md)
   The device’s camera button.
 
 

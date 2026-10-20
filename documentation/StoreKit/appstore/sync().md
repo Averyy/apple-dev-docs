@@ -1,7 +1,8 @@
 # sync()
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Synchronizes your app’s transaction information and subscription status with information from the App Store.
 
@@ -22,11 +23,11 @@ static func sync() async throws
 
 #### Discussion
 
-Include some mechanism in your app, such as a Restore Purchases button, to let users restore their Apple In-App Purchases. In rare cases when a user suspects the app isn’t showing all the transactions, call [`sync()`](appstore/sync().md). By calling [`sync()`](appstore/sync().md), you force the app to obtain transaction information and subscription status from the App Store.
+Include some mechanism in your app, such as a Restore Purchases button, to let users restore their Apple In-App Purchases. In rare cases when a user suspects the app isn’t showing all the transactions, call [`sync()`](./sync%28%29.md). By calling [`sync()`](./sync%28%29.md), you force the app to obtain transaction information and subscription status from the App Store.
 
-> ❗ **Important**:  Calling [`sync()`](appstore/sync().md)displays a system prompt that asks users to authenticate with their App Store credentials. Call this function only in response to an explicit user action, like tapping or clicking a button.
+> ❗ **Important**:  Calling [`sync()`](./sync%28%29.md)displays a system prompt that asks users to authenticate with their App Store credentials. Call this function only in response to an explicit user action, like tapping or clicking a button.
 
-In regular operations, there’s no need to call [`sync()`](appstore/sync().md). StoreKit automatically keeps up to date transaction information and subscription status available to your app. When users reinstall your app or download it on a new device, the app automatically has all transactions available to it upon initial launch. There’s no need for users to ask your app to restore transactions — your app can immediately get the current entitlements using [`currentEntitlements`](transaction/currententitlements.md) and transaction history using [`all`](transaction/all.md). For more information about transactions, see [`Transaction`](transaction.md).
+In regular operations, there’s no need to call [`sync()`](./sync%28%29.md). StoreKit automatically keeps up to date transaction information and subscription status available to your app. When users reinstall your app or download it on a new device, the app automatically has all transactions available to it upon initial launch. There’s no need for users to ask your app to restore transactions — your app can immediately get the current entitlements using [`currentEntitlements`](../transaction/currententitlements.md) and transaction history using [`all`](../transaction/all.md). For more information about transactions, see [`Transaction`](../transaction.md).
 
 
 ---

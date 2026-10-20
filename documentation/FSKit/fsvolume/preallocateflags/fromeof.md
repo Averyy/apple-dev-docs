@@ -1,7 +1,8 @@
 # fromEOF
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Allocates space from the physical end of file.
 
@@ -14,17 +15,22 @@ Allocates space from the physical end of file.
 static var fromEOF: FSVolume.PreallocateFlags { get }
 ```
 
+```c
+FSPreallocateFlagsFromEOF
+```
+
 #### Discussion
 
-When implementing this behavior, ignore any offset in the preallocate call. This flag is currently set for all [`preallocateSpace(for:at:length:flags:context:replyHandler:)`](fsvolume/preallocatehandler/preallocatespace(for:at:length:flags:context:replyhandler:).md) calls.
+When implementing this behavior, ignore any offset in the preallocate call. This flag is currently set for all [`preallocateSpace(for:at:length:flags:context:replyHandler:)`](../preallocatehandler/preallocatespace%28for,at,length,flags,context,replyhandler%29.md) calls.
 
 ## See Also
 
-- [static var contiguous: FSVolume.PreallocateFlags](fsvolume/preallocateflags/contiguous.md)
+### Declaring preallocation behaviors
+- [static var contiguous: FSVolume.PreallocateFlags](./contiguous.md)
   Allocates contiguous space.
-- [static var all: FSVolume.PreallocateFlags](fsvolume/preallocateflags/all.md)
+- [static var all: FSVolume.PreallocateFlags](./all.md)
   Allocates all requested space or no space at all.
-- [static var persist: FSVolume.PreallocateFlags](fsvolume/preallocateflags/persist.md)
+- [static var persist: FSVolume.PreallocateFlags](./persist.md)
   Allocates space that isn’t freed when deleting the descriptor.
 
 

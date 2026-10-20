@@ -1,7 +1,8 @@
 # numberOfColumns
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 6.0+
@@ -17,12 +18,17 @@
 var numberOfColumns: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSInteger numberOfColumns;
+```
+
 ## See Also
 
-- [var layoutAlgorithm: NSTextTable.LayoutAlgorithm](nstexttable/layoutalgorithm-swift.property.md)
-- [var collapsesBorders: Bool](nstexttable/collapsesborders.md)
-- [var hidesEmptyCells: Bool](nstexttable/hidesemptycells.md)
-- [NSTextTable.LayoutAlgorithm](nstexttable/layoutalgorithm-swift.enum.md)
+### Configuring the table
+- [var layoutAlgorithm: NSTextTable.LayoutAlgorithm](./layoutalgorithm-swift.property.md)
+- [var collapsesBorders: Bool](./collapsesborders.md)
+- [var hidesEmptyCells: Bool](./hidesemptycells.md)
+- [NSTextTable.LayoutAlgorithm](./layoutalgorithm-swift.enum.md)
 
 
 ---

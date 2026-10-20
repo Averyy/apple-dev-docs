@@ -1,7 +1,8 @@
 # linear(duration:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 An animation that moves at a constant speed during a specified duration.
 
@@ -28,7 +29,7 @@ A linear animation with a specified duration.
 
 A linear animation provides a mechanical feel to the motion because its speed is consistent from start to finish of the animation. This constant speed makes a linear animation ideal for animating the movement of objects where changes in the speed might feel awkward, such as with an activity indicator.
 
-Use `linear(duration:)` when you want to specify the time it takes for the animation to complete. Otherwise, use [`linear`](animation/linear.md) to perform the animation for a default length of time.
+Use `linear(duration:)` when you want to specify the time it takes for the animation to complete. Otherwise, use [`linear`](./linear.md) to perform the animation for a default length of time.
 
 The following code shows an example of using linear animation with a duration of two seconds to animate the movement of a circle as it moves between the leading and trailing edges of the view. The color of the circle also animates from red to blue as it moves across the view.
 
@@ -53,13 +54,16 @@ struct ContentView: View {
 }
 ```
 
+[Video: A video that shows a circle moving from the leading edge of the view to the trailing edge. The color of the circle also changes from red to blue as it moves across the view. Then the circle moves from the trailing edge back to the leading edge while also changing colors from blue to red.](https://developer.apple.com/tutorials/videos/com.apple.SwiftUI/animation-07-linear-duration.mp4)
+
 ## Parameters
 
 - `duration`: The length of time, expressed in seconds, that the animation takes to complete.
 
 ## See Also
 
-- [static var linear: Animation](animation/linear.md)
+### Getting linear animations
+- [static var linear: Animation](./linear.md)
   An animation that moves at a constant speed.
 
 

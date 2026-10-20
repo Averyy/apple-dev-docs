@@ -64,36 +64,37 @@ The `productInfo` element contains all of the elements required to describe a pr
 </productInfo>
 ```
 
-##### Subelements of Productinfo
+##### Subelements of productInfo
 
-- [`header`](header.md)
-- [`infoTable`](infotable.md)
-- [`row`](row.md)
-- [`text`](text.md)
+- [header](./header.md)
+- [infoTable](./infotable.md)
+- [row](./row.md)
+- [text](./text.md)
 
-##### Elements That Use Productinfo
+##### Elements that Use productInfo
 
-- [`productBundleTemplate`](productbundletemplate.md)
-- [`productTemplate`](producttemplate.md)
+- [productBundleTemplate](./productbundletemplate.md)
+- [productTemplate](./producttemplate.md)
 
 ## Topics
 
 ### Valid TVML Styles
-- [padding](padding.md)
+- [padding](./padding.md)
   Specifies the padding between the border and contents of an element.
-- [tv-interitem-spacing](tv-interitem-spacing.md)
+- [tv-interitem-spacing](./tv-interitem-spacing.md)
   Specifies the spacing between child elements.
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [info](info.md)
+### General Information Elements
+- [info](./info.md)
   Displays grouped sets of information.
 
 

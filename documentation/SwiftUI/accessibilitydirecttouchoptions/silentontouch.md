@@ -1,7 +1,8 @@
 # silentOnTouch
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Allows a direct touch area to immediately receive touch events without an assitive technology, such as VoiceOver, speaking. Appropriate for apps that provide direct audio feedback on touch that would conflict with speech feedback.
 
@@ -22,7 +23,8 @@ static let silentOnTouch: AccessibilityDirectTouchOptions
 
 ## See Also
 
-- [static let requiresActivation: AccessibilityDirectTouchOptions](accessibilitydirecttouchoptions/requiresactivation.md)
+### Getting the options
+- [static let requiresActivation: AccessibilityDirectTouchOptions](./requiresactivation.md)
   Prevents touch passthrough with the direct touch area until an assistive technology, such as VoiceOver, has activated the direct touch area through a user action, for example a double tap.
 
 

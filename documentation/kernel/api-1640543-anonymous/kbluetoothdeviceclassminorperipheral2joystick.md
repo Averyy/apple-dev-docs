@@ -1,14 +1,15 @@
 # kBluetoothDeviceClassMinorPeripheral2Joystick
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothDeviceClassMinorPeripheral2Joystick = 0x01
 ```
 

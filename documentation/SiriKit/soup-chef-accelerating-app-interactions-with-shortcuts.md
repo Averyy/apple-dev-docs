@@ -1,6 +1,8 @@
 # Soup Chef: Accelerating App Interactions with Shortcuts
 
-**Framework**: SiriKit
+**Framework**: SiriKit  
+**Role**: Sample Code  
+**Download**: [SoupChefAcceleratingAppInteractionsWithShortcuts.zip](https://docs-assets.developer.apple.com/published/087e5ed18661/SoupChefAcceleratingAppInteractionsWithShortcuts.zip)
 
 Make it easy for people to use Siri with your app by providing shortcuts to your app’s actions.
 
@@ -19,11 +21,11 @@ Soup Chef is the fictitious app from this sample code project. The project shows
 
 Before you can run Soup Chef, you need to:
 
-1. Set the app group name for the SoupChef, SoupChefIntents, SoupChefWatch Extension, and SoupChefIntentsWatch targets to a valid name. For more information on app groups, see [`Configure app groups`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev8dd3880fe).
+1. Set the app group name for the SoupChef, SoupChefIntents, SoupChefWatch Extension, and SoupChefIntentsWatch targets to a valid name. For more information on app groups, see [Configure app groups](https://help.apple.com/xcode/mac/current/#/dev8dd3880fe).
 
 ##### Share Code Between the App and App Extension
 
-The Soup Chef project contains targets for an app and an Intents app extension, which the system uses to handle shortcuts that run in the background. To avoid duplicating code that is common across the two targets, the project includes a shared framework called SoupKit. This framework provides a central location for shared code responsible for tasks such as data management and donating shortcuts. For more information about structuring code, see [`Structuring Your Code to Support App Extensions`](structuring-your-code-to-support-app-extensions.md).
+The Soup Chef project contains targets for an app and an Intents app extension, which the system uses to handle shortcuts that run in the background. To avoid duplicating code that is common across the two targets, the project includes a shared framework called SoupKit. This framework provides a central location for shared code responsible for tasks such as data management and donating shortcuts. For more information about structuring code, see [Structuring Your Code to Support App Extensions](./structuring-your-code-to-support-app-extensions.md).
 
 ##### Identify Common Actions
 
@@ -97,7 +99,7 @@ private func donateInteraction(for order: Order) {
 
 As mentioned earlier, to handle a order soup intent, Soup Chef provides an Intents app extension, which handles the intent in the background. This makes it possible for the user to remain on the current screen – such as the Lock screen – while Soup Chef places the order in the background.
 
-There are times, however, when the app must launch to handle the intent; for example, when the user taps the shortcut in Search. That’s why Soup Chef also handles the order soup intent in its [`scene(_:continue:)`](https://developer.apple.com/documentation/uikit/uiscenedelegate/scene(_:continue:)) implementation found in the scene delegate.
+There are times, however, when the app must launch to handle the intent; for example, when the user taps the shortcut in Search. That’s why Soup Chef also handles the order soup intent in its [`scene(_ scene: UIScene,  continue userActivity: NSUserActivity)`](../UIKit/uiscenedelegate/scene%28_,continue%29.md) implementation found in the scene delegate.
 
 ```swift
 /// The system calls this method when continuing a user activity through the restoration handler
@@ -154,25 +156,26 @@ func present(_ editVoiceShortcutViewController: INUIEditVoiceShortcutViewControl
 }
 ```
 
-Adding shortcuts and phrases are two examples of how your app can accelerate user interactions with Siri. For more information on how your app can leverage Siri, see the [`SiriKit`](SiriKit.md) developer documentation.
+Adding shortcuts and phrases are two examples of how your app can accelerate user interactions with Siri. For more information on how your app can leverage Siri, see the [SiriKit](./SiriKit.md) developer documentation.
 
 ## See Also
 
-- [Adding Shortcuts for Wind Down](adding-shortcuts-for-wind-down.md)
+### Sample code
+- [Adding Shortcuts for Wind Down](./adding-shortcuts-for-wind-down.md)
   Reveal your app’s shortcuts inside the Health app.
-- [Booking Rides with SiriKit](booking-rides-with-sirikit.md)
+- [Booking Rides with SiriKit](./booking-rides-with-sirikit.md)
   Add Intents extensions to your app to handle requests to book rides using Siri and Maps.
-- [Handling Payment Requests with SiriKit](handling-payment-requests-with-sirikit.md)
+- [Handling Payment Requests with SiriKit](./handling-payment-requests-with-sirikit.md)
   Add an Intent Extension to your app to handle money transfer requests with Siri.
-- [Handling Workout Requests with SiriKit](handling-workout-requests-with-sirikit.md)
+- [Handling Workout Requests with SiriKit](./handling-workout-requests-with-sirikit.md)
   Add an Intent Extension to your app that handles requests to control workouts with Siri.
-- [Integrating Your App with Siri Event Suggestions](integrating-your-app-with-siri-event-suggestions.md)
+- [Integrating Your App with Siri Event Suggestions](./integrating-your-app-with-siri-event-suggestions.md)
   Donate reservations and provide quick access to event details throughout the system.
-- [Managing Audio with SiriKit](managing-audio-with-sirikit.md)
+- [Managing Audio with SiriKit](./managing-audio-with-sirikit.md)
   Control audio playback and handle requests to add media using SiriKit Media Intents.
-- [Providing Hands-Free App Control with Intents](providing-hands-free-app-control-with-intents.md)
+- [Providing Hands-Free App Control with Intents](./providing-hands-free-app-control-with-intents.md)
   Resolve, confirm, and handle intents without an extension.
-- [Soup Chef with App Intents: Migrating custom intents](soup-chef-with-app-intents-migrating-custom-intents.md)
+- [Soup Chef with App Intents: Migrating custom intents](./soup-chef-with-app-intents-migrating-custom-intents.md)
   Integrating App Intents to provide your appʼs actions to Siri and Shortcuts.
 
 

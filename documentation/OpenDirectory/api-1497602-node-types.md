@@ -1,29 +1,31 @@
 # Node Types
 
-**Framework**: Open Directory
+**Framework**: Open Directory  
+**Role**: API Collection
 
 Open Directory node types.
 
 ## Topics
 
 ### Constants
-- [var kODNodeTypeAuthentication: Int](kodnodetypeauthentication.md)
+- [var kODNodeTypeAuthentication: Int](./kodnodetypeauthentication.md)
   A node used for authentication or record lookups.
-- [var kODNodeTypeContacts: Int](kodnodetypecontacts.md)
+- [var kODNodeTypeContacts: Int](./kodnodetypecontacts.md)
   A node used for applications that handle contact data.
-- [var kODNodeTypeNetwork: Int](kodnodetypenetwork.md)
+- [var kODNodeTypeNetwork: Int](./kodnodetypenetwork.md)
   A node used for looking up network resource type data.
-- [var kODNodeTypeLocalNodes: Int](kodnodetypelocalnodes.md)
+- [var kODNodeTypeLocalNodes: Int](./kodnodetypelocalnodes.md)
   A node that specifically looks at the local directory.
-- [var kODNodeTypeConfigure: Int](kodnodetypeconfigure.md)
+- [var kODNodeTypeConfigure: Int](./kodnodetypeconfigure.md)
   A node that specifically refers to the Directory Services configuration.
 
 ## See Also
 
-- [Anonymous](1579651-anonymous.md)
-- [Anonymous](1579652-anonymous.md)
-- [Anonymous](1497623-anonymous.md)
-- [Anonymous](1497721-anonymous.md)
+### Enumerations
+- [Anonymous](./api-1579651-anonymous.md)
+- [Anonymous](./api-1579652-anonymous.md)
+- [Anonymous](./api-1497623-anonymous.md)
+- [Anonymous](./api-1497721-anonymous.md)
 
 
 ---

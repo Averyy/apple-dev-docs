@@ -1,7 +1,8 @@
 # indexPath(forObject:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index path of a given object.
 
@@ -10,7 +11,7 @@ Returns the index path of a given object.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.12+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns the index path of a given object.
 
 ```swift
 func indexPath(forObject object: ResultType) -> IndexPath?
+```
+
+```objc
+- (NSIndexPath *) indexPathForObject:(ResultType) object;
 ```
 
 #### Return Value
@@ -34,9 +39,10 @@ In versions of iOS before 3.2, this method raises an exception if `object` is no
 
 ## See Also
 
-- [var fetchedObjects: [ResultType]?](nsfetchedresultscontroller/fetchedobjects.md)
+### Accessing Results
+- [var fetchedObjects: [ResultType]?](./fetchedobjects.md)
   The results of the fetch.
-- [func object(at: IndexPath) -> ResultType](nsfetchedresultscontroller/object(at:).md)
+- [func object(at: IndexPath) -> ResultType](./object%28at%29.md)
   Returns the object at the given index path in the fetch results.
 
 

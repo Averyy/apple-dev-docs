@@ -1,7 +1,8 @@
 # IKScannerDeviceViewDisplayMode.simple
 
 **Framework**: Quartz  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The view will display in simple mode.
 
@@ -14,9 +15,14 @@ The view will display in simple mode.
 case simple
 ```
 
+```c
+IKScannerDeviceViewDisplayModeSimple
+```
+
 ## See Also
 
-- [IKScannerDeviceViewDisplayMode.advanced](ikscannerdeviceviewdisplaymode/advanced.md)
+### Constants
+- [IKScannerDeviceViewDisplayMode.advanced](./advanced.md)
   The view will display in advanced mode.
 
 

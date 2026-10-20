@@ -1,7 +1,8 @@
 # MTLVertexFormat.ushort2
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A two-component vector with 16-bit, unsigned integer values.
 
@@ -10,7 +11,7 @@ A two-component vector with 16-bit, unsigned integer values.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,21 +20,26 @@ A two-component vector with 16-bit, unsigned integer values.
 case ushort2
 ```
 
+```c
+MTLVertexFormatUShort2
+```
+
 ## See Also
 
-- [MTLVertexFormat.short](mtlvertexformat/short.md)
+### 16-bit integer formats
+- [MTLVertexFormat.short](./short.md)
   A 16-bit, signed integer value.
-- [MTLVertexFormat.short2](mtlvertexformat/short2.md)
+- [MTLVertexFormat.short2](./short2.md)
   A two-component vector with 16-bit, signed integer values.
-- [MTLVertexFormat.short3](mtlvertexformat/short3.md)
+- [MTLVertexFormat.short3](./short3.md)
   A three-component vector with 16-bit, signed integer values.
-- [MTLVertexFormat.short4](mtlvertexformat/short4.md)
+- [MTLVertexFormat.short4](./short4.md)
   A four-component vector with 16-bit, signed integer values.
-- [MTLVertexFormat.ushort](mtlvertexformat/ushort.md)
+- [MTLVertexFormat.ushort](./ushort.md)
   A 16-bit, unsigned integer value.
-- [MTLVertexFormat.ushort3](mtlvertexformat/ushort3.md)
+- [MTLVertexFormat.ushort3](./ushort3.md)
   A three-component vector with 16-bit, unsigned integer values.
-- [MTLVertexFormat.ushort4](mtlvertexformat/ushort4.md)
+- [MTLVertexFormat.ushort4](./ushort4.md)
   A four-component vector with 16-bit, unsigned integer values.
 
 

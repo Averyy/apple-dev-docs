@@ -1,7 +1,8 @@
 # ASCredentialIdentityStoreError
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A credential identity store error.
 
@@ -21,33 +22,34 @@ struct ASCredentialIdentityStoreError
 ## Topics
 
 ### Error domain
-- [static var errorDomain: String](ascredentialidentitystoreerror/errordomain.md)
-- [let ASCredentialIdentityStoreErrorDomain: String](ascredentialidentitystoreerrordomain.md)
+- [static var errorDomain: String](./ascredentialidentitystoreerror/errordomain.md)
+- [let ASCredentialIdentityStoreErrorDomain: String](./ascredentialidentitystoreerrordomain.md)
   The domain for a credential identity store error.
-- [static var internalError: ASCredentialIdentityStoreError.Code](ascredentialidentitystoreerror/internalerror.md)
+- [static var internalError: ASCredentialIdentityStoreError.Code](./ascredentialidentitystoreerror/internalerror.md)
   The operation failed due to an internal error.
-- [static var storeBusy: ASCredentialIdentityStoreError.Code](ascredentialidentitystoreerror/storebusy.md)
+- [static var storeBusy: ASCredentialIdentityStoreError.Code](./ascredentialidentitystoreerror/storebusy.md)
   The operation failed because the credential identity store is busy.
-- [static var storeDisabled: ASCredentialIdentityStoreError.Code](ascredentialidentitystoreerror/storedisabled.md)
+- [static var storeDisabled: ASCredentialIdentityStoreError.Code](./ascredentialidentitystoreerror/storedisabled.md)
   The operation failed because the credential identity store is disabled.
-- [ASCredentialIdentityStoreError.Code](ascredentialidentitystoreerror/code.md)
+- [ASCredentialIdentityStoreError.Code](./ascredentialidentitystoreerror/code.md)
   Constants that represent credential identity store error codes.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let ASCredentialIdentityStoreErrorDomain: String](ascredentialidentitystoreerrordomain.md)
+### Recognizing errors
+- [let ASCredentialIdentityStoreErrorDomain: String](./ascredentialidentitystoreerrordomain.md)
   The domain for a credential identity store error.
-- [ASCredentialIdentityStoreError.Code](ascredentialidentitystoreerror/code.md)
+- [ASCredentialIdentityStoreError.Code](./ascredentialidentitystoreerror/code.md)
   Constants that represent credential identity store error codes.
 
 

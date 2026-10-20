@@ -1,7 +1,8 @@
 # title
 
 **Framework**: Quick Look UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title for the system to display with the preview.
 
@@ -14,11 +15,16 @@ The title for the system to display with the preview.
 var title: String { get set }
 ```
 
+```objc
+@property (copy) NSString * title;
+```
+
 ## See Also
 
-- [var attachments: [String : QLPreviewReplyAttachment]](qlpreviewreply/attachments.md)
+### Inspecting a preview reply
+- [var attachments: [String : QLPreviewReplyAttachment]](./attachments.md)
   The attachments for a preview reply that provide additional data for the system to display the preview.
-- [var stringEncoding: String.Encoding](qlpreviewreply/stringencoding-8ahm8.md)
+- [var stringEncoding: String.Encoding](./stringencoding-8ahm8.md)
 
 
 ---

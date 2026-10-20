@@ -1,7 +1,8 @@
 # listRowHoverEffect(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests that the containing list row use the provided hover effect.
 
@@ -27,7 +28,7 @@ This modifier can be applied to a list row’s content to request that the list 
 
 Use a `nil` effect to indicate that the list row’s default hover effect should not be modified.
 
-[`lift`](hovereffect/lift.md) is not supported for list rows.
+[`lift`](../hovereffect/lift.md) is not supported for list rows.
 
 ## Parameters
 
@@ -35,11 +36,12 @@ Use a `nil` effect to indicate that the list row’s default hover effect should
 
 ## See Also
 
-- [func swipeActions<T>(edge: HorizontalEdge, allowsFullSwipe: Bool, content: () -> T) -> some View](view/swipeactions(edge:allowsfullswipe:content:).md)
+### Configuring interaction
+- [func swipeActions<T>(edge: HorizontalEdge, allowsFullSwipe: Bool, content: () -> T) -> some View](./swipeactions%28edge,allowsfullswipe,content%29.md)
   Adds custom swipe actions to a row in a list.
-- [func selectionDisabled(Bool) -> some View](view/selectiondisabled(_:).md)
+- [func selectionDisabled(Bool) -> some View](./selectiondisabled%28_%29.md)
   Adds a condition that controls whether users can select this view.
-- [func listRowHoverEffectDisabled(Bool) -> some View](view/listrowhovereffectdisabled(_:).md)
+- [func listRowHoverEffectDisabled(Bool) -> some View](./listrowhovereffectdisabled%28_%29.md)
   Requests that the containing list row have its hover effect disabled.
 
 

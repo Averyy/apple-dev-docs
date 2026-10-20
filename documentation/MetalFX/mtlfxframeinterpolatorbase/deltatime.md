@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The length of the time interval, in seconds, between time of current and previous frame.
@@ -17,6 +18,10 @@ The length of the time interval, in seconds, between time of current and previou
 
 ```swift
 var deltaTime: Float { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) float deltaTime;
 ```
 
 

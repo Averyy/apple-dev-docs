@@ -1,7 +1,8 @@
 # init(content:footer:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a section with a footer and the provided section content.
 
@@ -21,6 +22,8 @@ Creates a section with a footer and the provided section content.
 init(@ContentBuilder content: () -> Content, @ContentBuilder footer: () -> Footer)
 ```
 
+Available when `Parent` is `EmptyView`.
+
 ## Parameters
 
 - `content`: The section’s content.
@@ -28,9 +31,10 @@ init(@ContentBuilder content: () -> Content, @ContentBuilder footer: () -> Foote
 
 ## See Also
 
-- [init(content:header:)](section/init(content:header:).md)
+### Adding headers and footers
+- [init(content:header:)](./init%28content,header%29.md)
   Creates a section with a header and the provided section content.
-- [init(content: () -> Content, header: () -> Parent, footer: () -> Footer)](section/init(content:header:footer:).md)
+- [init(content: () -> Content, header: () -> Parent, footer: () -> Footer)](./init%28content,header,footer%29.md)
   Creates a section with a header, footer, and the provided section content.
 
 

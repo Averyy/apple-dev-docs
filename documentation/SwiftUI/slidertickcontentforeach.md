@@ -1,7 +1,8 @@
 # SliderTickContentForEach
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type of slider content that creates content by iterating over a collection.
 
@@ -22,25 +23,26 @@ struct SliderTickContentForEach<Data, ID, Content> where Data : RandomAccessColl
 ## Topics
 
 ### Initializers
-- [init(_:content:)](slidertickcontentforeach/init(_:content:).md)
+- [init(_:content:)](./slidertickcontentforeach/init%28_,content%29.md)
   Creates an instance that uniquely identifies and creates slider ticks across updates based on the identity of the underlying data.
-- [init<V>(Data, id: KeyPath<Data.Element, ID>, content: (Data.Element) -> Content)](slidertickcontentforeach/init(_:id:content:).md)
+- [init<V>(Data, id: KeyPath<Data.Element, ID>, content: (Data.Element) -> Content)](./slidertickcontentforeach/init%28_,id,content%29.md)
   Creates an instance that uniquely identifies and creates slider ticks across updates based on the provided key path to the underlying data’s identifier.
 
 ## Relationships
 
 ### Conforms To
-- [SliderTickContent](slidertickcontent.md)
+- [SliderTickContent](./slidertickcontent.md)
 
 ## See Also
 
-- [struct SliderTick](slidertick.md)
+### Adding ticks to a slider
+- [struct SliderTick](./slidertick.md)
   A representation of a tick in a slider, with associated value and optional label.
-- [struct SliderTickBuilder](slidertickbuilder.md)
+- [struct SliderTickBuilder](./slidertickbuilder.md)
   A result builder that constructs `SliderTick`s for use when creating a `Slider`.
-- [struct TupleSliderTickContent](tupleslidertickcontent.md)
+- [struct TupleSliderTickContent](./tupleslidertickcontent.md)
   Slider content created from a Swift tuple of slider content.
-- [protocol SliderTickContent](slidertickcontent.md)
+- [protocol SliderTickContent](./slidertickcontent.md)
   A type that provides content for a `SliderTickBuilder`.
 
 

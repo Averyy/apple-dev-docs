@@ -1,22 +1,27 @@
 # CIKernelROICallback
 
 **Framework**: Core Image  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
-The signature for a block that computes the region of interest (ROI) for a given area of destination image pixels. Core Image calls this block when applying the kernel. You specify this block when using the [`apply(extent:roiCallback:arguments:)`](cikernel/apply(extent:roicallback:arguments:).md) method.
+The signature for a block that computes the region of interest (ROI) for a given area of destination image pixels. Core Image calls this block when applying the kernel. You specify this block when using the [`apply(extent:roiCallback:arguments:)`](./cikernel/apply%28extent,roicallback,arguments%29.md) method.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 typealias CIKernelROICallback = (Int32, CGRect) -> CGRect
+```
+
+```c
+typedef struct CGRect (^)(int, struct CGRect) CIKernelROICallback;
 ```
 
 #### Discussion
@@ -26,9 +31,9 @@ The block takes the following parameters:
 - **index**: For a general-purpose kernel or color kernel routine that supports multiple input images, the index of the source image for which Core Image is requesting ROI information. For all other kernel routines, this parameter is always zero.
 - **rect**: The rectangle in destination image pixels for which Core Image is requesting ROI information.
 
-The block returns a [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) structure describing the region of interest for the specified rectangle.
+The block returns a [`CGRect`](../CoreFoundation/cgrect.md) structure describing the region of interest for the specified rectangle.
 
-When applying a filter kernel, the region of interest is the area of source image pixels that must be processed to produce a given area of destination image pixels. (For a more detailed definition, see [`The Region of Interest`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_advanced_concepts/ci.advanced_concepts.html#//apple_ref/doc/uid/TP30001185-CH9-SW12).) For example, a kernel that applies a blur effect in a ten-pixel radius must sample source image pixels ten pixels away in each direction from every output pixel. Thus, its region of interest is a rectangle ten pixels larger on each side than the destination rectangle:
+When applying a filter kernel, the region of interest is the area of source image pixels that must be processed to produce a given area of destination image pixels. (For a more detailed definition, see [The Region of Interest](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_advanced_concepts/ci.advanced_concepts.html#//apple_ref/doc/uid/TP30001185-CH9-SW12).) For example, a kernel that applies a blur effect in a ten-pixel radius must sample source image pixels ten pixels away in each direction from every output pixel. Thus, its region of interest is a rectangle ten pixels larger on each side than the destination rectangle:
 
 ```objc
 CIKernelROICallback callback = ^(int index, CGRect rect) {
@@ -36,11 +41,12 @@ CIKernelROICallback callback = ^(int index, CGRect rect) {
 };
 ```
 
-If your kernel does not need the image at `index` to produce output in the rectangle `rect`, your block should return [`CGRectNull`](https://developer.apple.com/documentation/coregraphics/cgrectnull).
+If your kernel does not need the image at `index` to produce output in the rectangle `rect`, your block should return [`CGRectNull`](../CoreGraphics/cgrectnull.md).
 
 ## See Also
 
-- [func apply(extent: CGRect, roiCallback: CIKernelROICallback, arguments: [Any]) -> CIImage?](cikernel/apply(extent:roicallback:arguments:).md)
+### Applying a Kernel to Filter an Image
+- [func apply(extent: CGRect, roiCallback: CIKernelROICallback, arguments: [Any]) -> CIImage?](./cikernel/apply%28extent,roicallback,arguments%29.md)
   Creates a new image using the kernel and specified arguments.
 
 

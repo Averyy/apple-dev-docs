@@ -1,7 +1,8 @@
 # Submit request
 
 **Framework**: App Data Transfer  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Starts preparing someone’s data for download.
 
@@ -12,11 +13,11 @@ Starts preparing someone’s data for download.
 
 Request the `app-store` data type to get App Store information and app-install activity.
 
-##### Request a One Time Download
+##### Request a one-time download
 
 **Request**:
 
-```None
+```
 % curl -X POST \
   -H "Authorization: Bearer [ACCESS_TOKEN]" \
   -H "X-Apple-Transaction-Id: E3857B28-7FC4-41C8-AC54-08E121E26F59" \
@@ -27,7 +28,7 @@ Request the `app-store` data type to get App Store information and app-install a
 
 **Response**:
 
-```None
+```
 {
   "requestId": "11619695-72C0-4FFD-858A-1E152DCF0838",
   "status": "in_progress",
@@ -35,11 +36,11 @@ Request the `app-store` data type to get App Store information and app-install a
 }
 ```
 
-##### Request a Recurring Download
+##### Request a recurring download
 
 **Request**:
 
-```None
+```
 % curl -X POST \
   -H "Authorization: Bearer [ACCESS_TOKEN]" \
   -H "X-Apple-Transaction-Id: E3857B28-7FC4-41C8-AC54-08E121E26F59" \
@@ -50,7 +51,7 @@ Request the `app-store` data type to get App Store information and app-install a
 
 **Response**:
 
-```None
+```
 {
   "parentRequestId": "EABD06C0-9210-47FF-83C4-318CF8520644",
   "requestId": "7BBBD45D-638B-4DB5-8B02-F23FDB15EDA7",
@@ -65,19 +66,31 @@ Request the `app-store` data type to get App Store information and app-install a
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `JobSubmission`
+
 The description of the new download request.
+
+## Responses
+
+- `200` OK (`CreatedJob`, `application/json`)
+- `400` Bad Request
+- `401` Unauthorized
+- `403` Forbidden
+- `500` Internal Server Error
 
 ## See Also
 
-- [object JobSubmission](jobsubmission.md)
+### Request creation
+- [object JobSubmission](./jobsubmission.md)
   An object that describes a submission that requests someone’s data.
-- [object CreatedJob](createdjob.md)
+- [object CreatedJob](./createdjob.md)
   An object that represents a newly created download request.
-- [Resubmit request](resubmit-request.md)
+- [Resubmit request](./resubmit-request.md)
   Enqueue the next instance of a recurring request.
-- [object ResubmissionRequest](resubmissionrequest.md)
+- [object ResubmissionRequest](./resubmissionrequest.md)
   An object that describes a request to resubmit a recurring download request.
-- [object ResubmissionResponse](resubmissionresponse.md)
+- [object ResubmissionResponse](./resubmissionresponse.md)
   An object that represents a resubmitted recurring download request.
 
 

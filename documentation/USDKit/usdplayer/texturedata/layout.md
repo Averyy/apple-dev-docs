@@ -1,7 +1,8 @@
 # layout
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Per-mip-level byte-layout descriptors.
 

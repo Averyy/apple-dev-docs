@@ -1,7 +1,8 @@
 # parameter(withID:scope:element:)
 
 **Framework**: Audio Toolbox  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Searches the tree for a specific version 2 audio unit parameter.
 
@@ -17,6 +18,10 @@ Searches the tree for a specific version 2 audio unit parameter.
 
 ```swift
 func parameter(withID paramID: AudioUnitParameterID, scope: AudioUnitScope, element: AudioUnitElement) -> AUParameter?
+```
+
+```objc
+- (AUParameter *) parameterWithID:(AudioUnitParameterID) paramID scope:(AudioUnitScope) scope element:(AudioUnitElement) element;
 ```
 
 #### Return Value
@@ -35,7 +40,8 @@ Version 2 audio units publish parameters identified by a parameter ID, scope, an
 
 ## See Also
 
-- [func parameter(withAddress: AUParameterAddress) -> AUParameter?](auparametertree/parameter(withaddress:).md)
+### Obtaining Tree Parameters
+- [func parameter(withAddress: AUParameterAddress) -> AUParameter?](./parameter%28withaddress%29.md)
   Searches the tree for a parameter with a specific address.
 
 

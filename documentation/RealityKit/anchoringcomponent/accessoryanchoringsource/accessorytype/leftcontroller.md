@@ -1,7 +1,8 @@
 # leftController
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A left-handed game controller.
 
@@ -16,11 +17,12 @@ static var leftController: AnchoringComponent.AccessoryAnchoringSource.Accessory
 
 ## See Also
 
-- [static var eitherController: AnchoringComponent.AccessoryAnchoringSource.AccessoryType](anchoringcomponent/accessoryanchoringsource/accessorytype/eithercontroller.md)
+### Accessing predefined types
+- [static var eitherController: AnchoringComponent.AccessoryAnchoringSource.AccessoryType](./eithercontroller.md)
   Either left or right game controller.
-- [static var rightController: AnchoringComponent.AccessoryAnchoringSource.AccessoryType](anchoringcomponent/accessoryanchoringsource/accessorytype/rightcontroller.md)
+- [static var rightController: AnchoringComponent.AccessoryAnchoringSource.AccessoryType](./rightcontroller.md)
   A right-handed game controller.
-- [static var stylus: AnchoringComponent.AccessoryAnchoringSource.AccessoryType](anchoringcomponent/accessoryanchoringsource/accessorytype/stylus.md)
+- [static var stylus: AnchoringComponent.AccessoryAnchoringSource.AccessoryType](./stylus.md)
   A stylus device.
 
 

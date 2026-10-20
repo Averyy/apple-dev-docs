@@ -1,7 +1,8 @@
 # captureView(didPresent:error:)
 
 **Framework**: RoomPlan  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides a default, blank implementation for the processed scan-results callback.
 
@@ -18,7 +19,7 @@ func captureView(didPresent processedResult: CapturedRoom, error: (any Error)?)
 
 #### Discussion
 
-The system calls this implementation if your app doesn’t implement [`captureView(didPresent:error:)`](roomcaptureviewdelegate/captureview(didpresent:error:).md).
+The system calls this implementation if your app doesn’t implement [`captureView(didPresent:error:)`](./captureview%28didpresent,error%29.md).
 
 ## Parameters
 
@@ -27,7 +28,8 @@ The system calls this implementation if your app doesn’t implement [`captureVi
 
 ## See Also
 
-- [func captureView(shouldPresent: CapturedRoomData, error: (any Error)?) -> Bool](roomcaptureviewdelegate/captureview(shouldpresent:error:)-5l74q.md)
+### Default implementations
+- [func captureView(shouldPresent: CapturedRoomData, error: (any Error)?) -> Bool](./captureview%28shouldpresent,error%29-5l74q.md)
   Indicates that the app receives and displays post-processed scan results when the scan session stops.
 
 

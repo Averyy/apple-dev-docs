@@ -1,7 +1,8 @@
 # kSecPolicyAppleIPsec
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Policy for use in IPsec communication. Functionally identical to SSL policy. A separate OID is provided to facilitate per-policy, per-certificate trust settings using the `SecTrust` mechanism.
 
@@ -18,6 +19,10 @@ Policy for use in IPsec communication. Functionally identical to SSL policy. A s
 
 ```swift
 let kSecPolicyAppleIPsec: CFString
+```
+
+```c
+extern CFStringRef const kSecPolicyAppleIPsec;
 ```
 
 

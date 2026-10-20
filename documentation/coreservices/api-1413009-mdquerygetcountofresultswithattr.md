@@ -1,7 +1,8 @@
 # MDQueryGetCountOfResultsWithAttributeValue(_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the number of results which have the given attribute and attribute value.
 
@@ -14,7 +15,11 @@ Returns the number of results which have the given attribute and attribute value
 func MDQueryGetCountOfResultsWithAttributeValue(_ query: MDQuery!, _ name: CFString!, _ value: CFTypeRef!) -> CFIndex
 ```
 
-#### Return_value
+```c
+CFIndex MDQueryGetCountOfResultsWithAttributeValue(MDQueryRef query, CFStringRef name, CFTypeRef value);
+```
+
+#### Return Value
 
 The number of results containing that attribute and value.
 
@@ -30,17 +35,18 @@ This count may change over time if the query allows live-updates.
 
 ## See Also
 
-- [func MDQueryCopyValuesOfAttribute(MDQuery!, CFString!) -> CFArray!](1413105-mdquerycopyvaluesofattribute.md)
+### Getting Query Result Values
+- [func MDQueryCopyValuesOfAttribute(MDQuery!, CFString!) -> CFArray!](./api-1413105-mdquerycopyvaluesofattribute.md)
   Returns the list of values from the results of the query for the specified attribute.
-- [func MDQueryGetAttributeValueOfResultAtIndex(MDQuery!, CFString!, CFIndex) -> UnsafeMutableRawPointer!](1413046-mdquerygetattributevalueofresult.md)
+- [func MDQueryGetAttributeValueOfResultAtIndex(MDQuery!, CFString!, CFIndex) -> UnsafeMutableRawPointer!](./api-1413046-mdquerygetattributevalueofresult.md)
   Returns the value of the named attribute for the result at the given index.
-- [func MDQueryGetIndexOfResult(MDQuery!, UnsafeRawPointer!) -> CFIndex](1413093-mdquerygetindexofresult.md)
+- [func MDQueryGetIndexOfResult(MDQuery!, UnsafeRawPointer!) -> CFIndex](./api-1413093-mdquerygetindexofresult.md)
   Returns the current index of the given result.
-- [func MDQueryGetResultAtIndex(MDQuery!, CFIndex) -> UnsafeRawPointer!](1413055-mdquerygetresultatindex.md)
+- [func MDQueryGetResultAtIndex(MDQuery!, CFIndex) -> UnsafeRawPointer!](./api-1413055-mdquerygetresultatindex.md)
   Returns the current result at the given index.
-- [func MDQueryGetResultCount(MDQuery!) -> CFIndex](1413008-mdquerygetresultcount.md)
+- [func MDQueryGetResultCount(MDQuery!) -> CFIndex](./api-1413008-mdquerygetresultcount.md)
   Returns the number of results currently collected by the query. 
-- [func MDQuerySetSortComparatorBlock(MDQuery!, ((UnsafePointer<Unmanaged<CFTypeRef>?>?, UnsafePointer<Unmanaged<CFTypeRef>?>?) -> CFComparisonResult)!)](1413021-mdquerysetsortcomparatorblock.md)
+- [func MDQuerySetSortComparatorBlock(MDQuery!, ((UnsafePointer<Unmanaged<CFTypeRef>?>?, UnsafePointer<Unmanaged<CFTypeRef>?>?) -> CFComparisonResult)!)](./api-1413021-mdquerysetsortcomparatorblock.md)
   Sets the block used to sort the results of an MDQuery.
 
 

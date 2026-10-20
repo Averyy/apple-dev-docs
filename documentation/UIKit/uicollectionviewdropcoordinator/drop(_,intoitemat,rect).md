@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Animates the item to the specified rectangle in the collection view.
@@ -18,6 +19,10 @@ Animates the item to the specified rectangle in the collection view.
 func drop(_ dragItem: UIDragItem, intoItemAt indexPath: IndexPath, rect: CGRect) -> any UIDragAnimating
 ```
 
+```objc
+- (id<UIDragAnimating>) dropItem:(UIDragItem *) dragItem intoItemAtIndexPath:(NSIndexPath *) indexPath rect:(CGRect) rect;
+```
+
 #### Discussion
 
 Use this method to animate drops where you incorporate the dragged items into another item of your collection view. For example, when incorporating items into a folder, you’d use this method to animate the items in a way that makes it look like they were placed into the folder.
@@ -30,11 +35,12 @@ Use this method to animate drops where you incorporate the dragged items into an
 
 ## See Also
 
-- [func drop(UIDragItem, toItemAt: IndexPath) -> any UIDragAnimating](uicollectionviewdropcoordinator/drop(_:toitemat:).md)
+### Animating Items to Their Destination
+- [func drop(UIDragItem, toItemAt: IndexPath) -> any UIDragAnimating](./drop%28_,toitemat%29.md)
   Animates the item to the specified index path in the collection view.
-- [func drop(UIDragItem, to: UIDragPreviewTarget) -> any UIDragAnimating](uicollectionviewdropcoordinator/drop(_:to:)-7w5rn.md)
+- [func drop(UIDragItem, to: UIDragPreviewTarget) -> any UIDragAnimating](./drop%28_,to%29-7w5rn.md)
   Animates the item to an arbitrary location in your view hierarchy.
-- [func drop(UIDragItem, to: UICollectionViewDropPlaceholder) -> any UICollectionViewDropPlaceholderContext](uicollectionviewdropcoordinator/drop(_:to:)-l5tg.md)
+- [func drop(UIDragItem, to: UICollectionViewDropPlaceholder) -> any UICollectionViewDropPlaceholderContext](./drop%28_,to%29-l5tg.md)
   Animates the item to the specified location and inserts a placeholder cell at that location.
 
 

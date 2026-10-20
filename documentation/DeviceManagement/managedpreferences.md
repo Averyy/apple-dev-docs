@@ -1,7 +1,8 @@
 # ManagedPreferences
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures managed preferences.
 
@@ -10,19 +11,19 @@ The payload that configures managed preferences.
 
 ## Declaration
 
-```swift
+```
 object ManagedPreferences
 ```
 
 ## Mentions
 
-- [Implementing Platform SSO during Automated Device Enrollment](implementing-platform-sso-during-automated-device-enrollment.md)
+- [Implementing Platform SSO during Automated Device Enrollment](./implementing-platform-sso-during-automated-device-enrollment.md)
 
 #### Discussion
 
 Specify `com.apple.ManagedClient.preferences` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +35,7 @@ Specify `com.apple.ManagedClient.preferences` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -87,7 +88,7 @@ Specify `com.apple.ManagedClient.preferences` as the payload type.
 ## Topics
 
 ### Objects
-- [object ManagedPreferences.PayloadContent](managedpreferences/payloadcontent-data.dictionary.md)
+- [object ManagedPreferences.PayloadContent](./managedpreferences/payloadcontent-data.dictionary.md)
   The dictionary containing app preference domains. The key names are application preference domain identifiers (for example, `com.example.my-app`), or the string `.GlobalPreferences` for the global domain. The values are the corresponding forced and set-once preferences.
 
 ## Properties
@@ -96,13 +97,14 @@ Specify `com.apple.ManagedClient.preferences` as the payload type.
 
 ## See Also
 
-- [object EducationConfiguration](educationconfiguration.md)
+### Managed devices
+- [object EducationConfiguration](./educationconfiguration.md)
   The payload that configures the users, groups, and departments within an educational organization.
-- [object LightsOutManagementLOM](lightsoutmanagementlom.md)
+- [object LightsOutManagementLOM](./lightsoutmanagementlom.md)
   The payload that configures lights-out management (LOM) settings.
-- [object MDM](mdm.md)
+- [object MDM](./mdm.md)
   The payload that configures mobile device management (MDM) settings.
-- [object ProfileRemovalPassword](profileremovalpassword.md)
+- [object ProfileRemovalPassword](./profileremovalpassword.md)
   The payload that configures profile removal.
 
 

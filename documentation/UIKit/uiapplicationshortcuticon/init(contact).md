@@ -1,7 +1,8 @@
 # init(contact:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Home Screen quick action icon from the picture for a contact or a monogram of the contact name if the picture is unavailable.
 
@@ -17,33 +18,38 @@ Creates a Home Screen quick action icon from the picture for a contact or a mono
 convenience init(contact: CNContact)
 ```
 
+```objc
++ (instancetype) iconWithContact:(CNContact *) contact;
+```
+
 #### Return Value
 
 A Home Screen quick action icon initialized with the contact’s picture or monogram.
 
 #### Discussion
 
-To use this method, pass in a contact from the user’s contacts database, available through the [`CNContactStore`](https://developer.apple.com/documentation/contacts/cncontactstore) object. If the contact you specify has a picture, the system creates a full-color quick action icon from that picture. If the contact has no picture, the system employs the contact’s initials and displays instead a monogram.
+To use this method, pass in a contact from the user’s contacts database, available through the [`CNContactStore`](../../Contacts/cncontactstore.md) object. If the contact you specify has a picture, the system creates a full-color quick action icon from that picture. If the contact has no picture, the system employs the contact’s initials and displays instead a monogram.
 
-> **Note**:  This method employs the [`Contacts`](https://developer.apple.com/documentation/contacts) framework.
+> **Note**:  This method employs the [Contacts](../../Contacts/Contacts.md) framework.
 
-You can, alternatively, pass in a [`CNContact`](https://developer.apple.com/documentation/contacts/cncontact) object you create at runtime. Such a contact must have at least a first name or a last name. The quick action icon returned from this method is then a monogram built from the contact’s name. With this approach, it isn’t possible for you to provide an image for the quick action icon.
+You can, alternatively, pass in a [`CNContact`](../../Contacts/cncontact.md) object you create at runtime. Such a contact must have at least a first name or a last name. The quick action icon returned from this method is then a monogram built from the contact’s name. With this approach, it isn’t possible for you to provide an image for the quick action icon.
 
-Finally, you can call this method with an empty contact that you create by using the [`CNContact`](https://developer.apple.com/documentation/contacts/cncontact) class’s inherited [`alloc`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/alloc) and `init` methods. With this approach, the resulting icon is a monochrome silhouette.
+Finally, you can call this method with an empty contact that you create by using the [`CNContact`](../../Contacts/cncontact.md) class’s inherited [`alloc`](../../ObjectiveC/nsobject-swift.class/alloc.md) and `init` methods. With this approach, the resulting icon is a monochrome silhouette.
 
 When providing a set of contact quick actions, ensure that every one of them has an icon. This ensures the best appearance for the set of quick actions.
 
 ## Parameters
 
-- `contact`: The [`CNContact`](https://developer.apple.com/documentation/contacts/cncontact) contact object to derive the icon from.
+- `contact`: The [`CNContact`](../../Contacts/cncontact.md) contact object to derive the icon from.
 
 ## See Also
 
-- [convenience init(type: UIApplicationShortcutIcon.IconType)](uiapplicationshortcuticon/init(type:).md)
+### Creating a quick action icon
+- [convenience init(type: UIApplicationShortcutIcon.IconType)](./init%28type%29.md)
   Creates a Home Screen quick action icon using a system-defined image.
-- [convenience init(templateImageName: String)](uiapplicationshortcuticon/init(templateimagename:).md)
+- [convenience init(templateImageName: String)](./init%28templateimagename%29.md)
   Creates a Home Screen quick action icon based on an image in your app’s bundle, preferably in an asset catalog.
-- [convenience init(systemImageName: String)](uiapplicationshortcuticon/init(systemimagename:).md)
+- [convenience init(systemImageName: String)](./init%28systemimagename%29.md)
   Creates a Home Screen quick action icon using a system symbol image.
 
 

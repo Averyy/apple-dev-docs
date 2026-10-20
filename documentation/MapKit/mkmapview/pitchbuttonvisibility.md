@@ -1,7 +1,8 @@
 # pitchButtonVisibility
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates whether the map’s pitch button is visible.
 
@@ -19,23 +20,28 @@ A value that indicates whether the map’s pitch button is visible.
 var pitchButtonVisibility: MKFeatureVisibility { get set }
 ```
 
+```objc
+@property (nonatomic, assign) MKFeatureVisibility pitchButtonVisibility;
+```
+
 #### Discussion
 
 Use this button to display or hide a button that allows a person to set the map to a pleasing pitch or return the map to a flat appearance.
 
 ## See Also
 
-- [var preferredConfiguration: MKMapConfiguration](mkmapview/preferredconfiguration.md)
+### Configuring the map appearance
+- [var preferredConfiguration: MKMapConfiguration](./preferredconfiguration.md)
   The characteristics of the map view, including the map type and features the map displays.
-- [var showsUserTrackingButton: Bool](mkmapview/showsusertrackingbutton.md)
+- [var showsUserTrackingButton: Bool](./showsusertrackingbutton.md)
   A Boolean value that indicates whether the map displays the user tracking button.
-- [class MKMapConfiguration](mkmapconfiguration.md)
+- [class MKMapConfiguration](../mkmapconfiguration.md)
   An abstract class that represents the shared elements of map configurations.
-- [class MKStandardMapConfiguration](mkstandardmapconfiguration.md)
+- [class MKStandardMapConfiguration](../mkstandardmapconfiguration.md)
   The class that represents the default map presentation, which is a street map that shows the position of all roads and some road names.
-- [class MKHybridMapConfiguration](mkhybridmapconfiguration.md)
+- [class MKHybridMapConfiguration](../mkhybridmapconfiguration.md)
   The class that represents a satellite image of the area with road and road name information layers on top.
-- [class MKImageryMapConfiguration](mkimagerymapconfiguration.md)
+- [class MKImageryMapConfiguration](../mkimagerymapconfiguration.md)
   The class that represents an imagery-based map presentation, such as one using satellite imagery.
 
 

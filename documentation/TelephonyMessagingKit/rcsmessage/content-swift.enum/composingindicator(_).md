@@ -1,7 +1,8 @@
 # RCSMessage.Content.composingIndicator(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A content type for composing indicator content.
 
@@ -16,7 +17,8 @@ case composingIndicator(RCSMessage.ComposingIndicator)
 
 ## See Also
 
-- [RCSMessage.ComposingIndicator](rcsmessage/composingindicator.md)
+### Working with composing indicators
+- [RCSMessage.ComposingIndicator](../composingindicator.md)
   A structure that represents RFC 3994 composing indicator content in an RCS message.
 
 

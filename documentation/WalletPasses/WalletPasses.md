@@ -1,7 +1,8 @@
 # Wallet Passes
 
 **Framework**: Wallet Passes  
-**Kind**: module
+**Kind**: module  
+**Role**: Web Service
 
 Create, distribute, and update passes for the Wallet app.
 
@@ -14,7 +15,7 @@ Create, distribute, and update passes for the Wallet app.
 
 *Passes* are digital representations of information that previously might have been distributed on paper, plastic, or some other physical item. Passes enable people to take action, including board a flight, attend an event, or redeem a coupon. Use the Wallet Passes framework to create dynamic, interactive passes that stay up-to-date and provide people with relevant information.
 
-![An illustration showing three different passes. One pass is an annual pass for an art museum, the center pass shows an event pass for a soccer event, and the pass on the right is an airline boarding pass for a flight.](/images/com.apple.walletpasses/wallet-passes-overview@2x.png)
+![An illustration showing three different passes. One pass is an annual pass for an art museum, the center pass shows an event pass for a soccer event, and the pass on the right is an airline boarding pass for a flight.](https://developer.apple.com/tutorials/images/com.apple.walletpasses/wallet-passes-overview@2x.png)
 
 With this framework you can:
 
@@ -35,82 +36,82 @@ You can further tailor passes for a personalized experience and make live update
 ## Topics
 
 ### Essentials
-- [Creating a pass with Pass Designer](creating-a-pass-with-pass-designer.md)
+- [Creating a pass with Pass Designer](./creating-a-pass-with-pass-designer.md)
   Construct and customize a variety of pass styles with this easy-to-use tool.
-- [Creating a Poster Generic Pass](creating-a-poster-generic-pass.md)
+- [Creating a Poster Generic Pass](./creating-a-poster-generic-pass.md)
   Construct a digital pass with information that enables people to take action.
-- [Creating the Source for a Pass](creating-the-source-for-a-pass.md)
+- [Creating the Source for a Pass](./creating-the-source-for-a-pass.md)
   Create the directory structure and add source files and images to define a pass.
-- [Building a Pass](building-a-pass.md)
+- [Building a Pass](./building-a-pass.md)
   Build a distributable pass.
-- [Defining the metadata of your Wallet Pass](defining-the-metadata-of-your-wallet-pass.md)
+- [Defining the metadata of your Wallet Pass](./defining-the-metadata-of-your-wallet-pass.md)
   Provide customizable information for your Wallet Pass.
-- [Distributing and updating a pass](distributing-and-updating-a-pass.md)
+- [Distributing and updating a pass](./distributing-and-updating-a-pass.md)
   Distribute a pass to your users or update an existing pass.
-- [object Pass](pass.md)
+- [object Pass](./pass.md)
   An object that represents a pass.
-- [object PassFields](passfields.md)
+- [object PassFields](./passfields.md)
   An object that represents the groups of fields that display information on the front and back of a pass.
 ### Boarding passes
-- [Creating an airline boarding pass using semantic tags](creating-an-airline-boarding-pass-using-semantic-tags.md)
+- [Creating an airline boarding pass using semantic tags](./creating-an-airline-boarding-pass-using-semantic-tags.md)
   Update your semantic tags to provide live and interactive passenger information for boarding passes.
-- [object Pass.BoardingPass](pass/boardingpass-data.dictionary.md)
+- [object Pass.BoardingPass](./pass/boardingpass-data.dictionary.md)
   An object that represents the groups of fields that display the information for a boarding pass.
-- [object SemanticTags](semantictags.md)
+- [object SemanticTags](./semantictags.md)
   An object that contains machine-readable metadata the system uses to offer a pass and suggest related actions.
-- [object SemanticTagType](semantictagtype.md)
+- [object SemanticTagType](./semantictagtype.md)
   A compilation of data object types for semantic tags.
 ### Coupon passes
-- [Creating a coupon pass](creating-a-coupon-pass.md)
+- [Creating a coupon pass](./creating-a-coupon-pass.md)
   Construct a digital pass for discounts and special offers.
-- [object Pass.Coupon](pass/coupon-data.dictionary.md)
+- [object Pass.Coupon](./pass/coupon-data.dictionary.md)
   An object that represents the groups of fields that display the information for a coupon.
 ### Event passes
-- [Creating a poster event pass using semantic tags](creating-an-event-pass-using-semantic-tags.md)
+- [Creating a poster event pass using semantic tags](./creating-an-event-pass-using-semantic-tags.md)
   Use semantic tags to provide up-to-date information for event passes.
-- [object Pass.EventTicket](pass/eventticket-data.dictionary.md)
+- [object Pass.EventTicket](./pass/eventticket-data.dictionary.md)
   An object that represents the groups of fields that display the information for an event ticket.
-- [object SemanticTags](semantictags.md)
+- [object SemanticTags](./semantictags.md)
   An object that contains machine-readable metadata the system uses to offer a pass and suggest related actions.
-- [object SemanticTagType](semantictagtype.md)
+- [object SemanticTagType](./semantictagtype.md)
   A compilation of data object types for semantic tags.
-- [object UpcomingPassInformationEntry](upcomingpassinformationentry.md)
+- [object UpcomingPassInformationEntry](./upcomingpassinformationentry.md)
   An object that represents the ordered list of all upcoming pass information entries.
-- [object UpcomingPassInformationEntryType](upcomingpassinformationentrytype.md)
+- [object UpcomingPassInformationEntryType](./upcomingpassinformationentrytype.md)
   An object that represents a upcoming pass information entry for an specific upcoming event.
 ### Generic passes
-- [Creating a Poster Generic Pass](creating-a-poster-generic-pass.md)
+- [Creating a Poster Generic Pass](./creating-a-poster-generic-pass.md)
   Construct a digital pass with information that enables people to take action.
-- [object Pass.Generic](pass/generic-data.dictionary.md)
+- [object Pass.Generic](./pass/generic-data.dictionary.md)
   An object that represents the groups of fields that display the information for a generic pass.
 ### Store card passes
-- [Creating a store card pass](creating-a-store-card-pass.md)
+- [Creating a store card pass](./creating-a-store-card-pass.md)
   Construct a digital pass for store loyalty and gift cards.
-- [object Pass.StoreCard](pass/storecard-data.dictionary.md)
+- [object Pass.StoreCard](./pass/storecard-data.dictionary.md)
   An object that represents groups of fields that show the information for a store card.
 ### Pass updates
-- [Adding a Web Service to Update Passes](adding-a-web-service-to-update-passes.md)
+- [Adding a Web Service to Update Passes](./adding-a-web-service-to-update-passes.md)
   Implement a web server to register, update, and unregister a pass on a device.
-- [Register a Pass for Update Notifications](register-a-pass-for-update-notifications.md)
+- [Register a Pass for Update Notifications](./register-a-pass-for-update-notifications.md)
   Set up change notifications for a pass on a device.
-- [Get the List of Updatable Passes](get-the-list-of-updatable-passes.md)
+- [Get the List of Updatable Passes](./get-the-list-of-updatable-passes.md)
   Send the serial numbers for updated passes to a device.
-- [Send an Updated Pass](send-an-updated-pass.md)
+- [Send an Updated Pass](./send-an-updated-pass.md)
   Create and sign an updated pass, and send it to the device.
-- [Unregister a Pass for Update Notifications](unregister-a-pass-for-update-notifications.md)
+- [Unregister a Pass for Update Notifications](./unregister-a-pass-for-update-notifications.md)
   Stop sending update notifications for a pass on a device.
-- [Log a Message](log-a-message.md)
+- [Log a Message](./log-a-message.md)
   Record a message on your server.
-- [object PushToken](pushtoken.md)
+- [object PushToken](./pushtoken.md)
   An object that contains the push notification token for a registered pass on a device.
-- [object SerialNumbers](serialnumbers.md)
+- [object SerialNumbers](./serialnumbers.md)
   An object that contains serial numbers for the updatable passes on a device.
-- [object LogEntries](logentries.md)
+- [object LogEntries](./logentries.md)
   An object that contains an array of messages.
 ### Personalized passes
-- [Return a Personalized Pass](return-a-personalized-pass.md)
+- [Return a Personalized Pass](./return-a-personalized-pass.md)
   Create and sign a personalized pass, and send it to a device.
-- [object PersonalizationDictionary](personalizationdictionary.md)
+- [object PersonalizationDictionary](./personalizationdictionary.md)
   An object that contains the information you use to personalize a pass.
 
 

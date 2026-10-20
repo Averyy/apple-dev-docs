@@ -1,7 +1,8 @@
 # keySpecifier
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a specifier that identifies the attribute or relationship that is to be set for the receiver of the `set` AppleScript command.
 
@@ -15,14 +16,20 @@ Returns a specifier that identifies the attribute or relationship that is to be 
 var keySpecifier: NSScriptObjectSpecifier { get }
 ```
 
+```objc
+@property (retain, readonly) NSScriptObjectSpecifier * keySpecifier;
+```
+
 #### Return Value
 
 A specifier that identifies the attribute or relationship that is to be set for the receiver of the `set` AppleScript command.
 
 ## See Also
 
-- [Cocoa Scripting Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
-- [func setReceiversSpecifier(NSScriptObjectSpecifier?)](nssetcommand/setreceiversspecifier(_:).md)
+### Related Documentation
+- [Cocoa Scripting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
+### Working with specifiers
+- [func setReceiversSpecifier(NSScriptObjectSpecifier?)](./setreceiversspecifier%28_%29.md)
   Sets the receiver’s object specifier.
 
 

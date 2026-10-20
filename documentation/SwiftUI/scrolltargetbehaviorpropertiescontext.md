@@ -1,7 +1,8 @@
 # ScrollTargetBehaviorPropertiesContext
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The context in which a scroll target behavior can decide its properties.
 
@@ -23,30 +24,31 @@ struct ScrollTargetBehaviorPropertiesContext
 ## Topics
 
 ### Instance Properties
-- [var axes: Axis.Set](scrolltargetbehaviorpropertiescontext/axes.md)
+- [var axes: Axis.Set](./scrolltargetbehaviorpropertiescontext/axes.md)
   The scrollable axes of the scroll view.
-- [var environment: EnvironmentValues](scrolltargetbehaviorpropertiescontext/environment.md)
+- [var environment: EnvironmentValues](./scrolltargetbehaviorpropertiescontext/environment.md)
   The environment of the scroll view.
 
 ## See Also
 
-- [func scrollTargetBehavior(some ScrollTargetBehavior) -> some View](view/scrolltargetbehavior(_:).md)
+### Defining scroll targets
+- [func scrollTargetBehavior(some ScrollTargetBehavior) -> some View](./view/scrolltargetbehavior%28_%29.md)
   Sets the scroll behavior of views scrollable in the provided axes.
-- [func scrollTargetLayout(isEnabled: Bool) -> some View](view/scrolltargetlayout(isenabled:).md)
+- [func scrollTargetLayout(isEnabled: Bool) -> some View](./view/scrolltargetlayout%28isenabled%29.md)
   Configures the outermost layout as a scroll target layout.
-- [struct ScrollTarget](scrolltarget.md)
+- [struct ScrollTarget](./scrolltarget.md)
   A type defining the target in which a scroll view should try and scroll to.
-- [protocol ScrollTargetBehavior](scrolltargetbehavior.md)
+- [protocol ScrollTargetBehavior](./scrolltargetbehavior.md)
   A type that defines the scroll behavior of a scrollable view.
-- [struct ScrollTargetBehaviorContext](scrolltargetbehaviorcontext.md)
+- [struct ScrollTargetBehaviorContext](./scrolltargetbehaviorcontext.md)
   The context in which a scroll target behavior updates its scroll target.
-- [struct PagingScrollTargetBehavior](pagingscrolltargetbehavior.md)
+- [struct PagingScrollTargetBehavior](./pagingscrolltargetbehavior.md)
   The scroll behavior that aligns scroll targets to container-based geometry.
-- [struct ViewAlignedScrollTargetBehavior](viewalignedscrolltargetbehavior.md)
+- [struct ViewAlignedScrollTargetBehavior](./viewalignedscrolltargetbehavior.md)
   The scroll behavior that aligns scroll targets to view-based geometry.
-- [struct AnyScrollTargetBehavior](anyscrolltargetbehavior.md)
+- [struct AnyScrollTargetBehavior](./anyscrolltargetbehavior.md)
   A type-erased scroll target behavior.
-- [struct ScrollTargetBehaviorProperties](scrolltargetbehaviorproperties.md)
+- [struct ScrollTargetBehaviorProperties](./scrolltargetbehaviorproperties.md)
   Properties influencing the scroll view a scroll target behavior applies to.
 
 

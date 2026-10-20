@@ -1,7 +1,8 @@
 # TipGroup.Priority.firstAvailable
 
 **Framework**: TipKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Shows the first tip eligible for display.
 

@@ -1,7 +1,8 @@
 # zoneGroup
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The zone group that contains the current duration data.
 
@@ -20,9 +21,10 @@ final var zoneGroup: HKWorkoutZoneGroup? { get }
 
 ## See Also
 
-- [var currentZoneDuration: HKWorkoutZoneDuration?](hkliveworkoutzoneupdate/currentzoneduration.md)
+### Accessing zone data
+- [var currentZoneDuration: HKWorkoutZoneDuration?](./currentzoneduration.md)
   A property that contains the zone duration just entered.
-- [var previousZoneDuration: HKWorkoutZoneDuration?](hkliveworkoutzoneupdate/previouszoneduration.md)
+- [var previousZoneDuration: HKWorkoutZoneDuration?](./previouszoneduration.md)
   A property that contains the zone duration that just completed.
 
 

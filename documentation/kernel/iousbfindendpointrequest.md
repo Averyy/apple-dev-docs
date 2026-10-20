@@ -1,7 +1,8 @@
 # IOUSBFindEndpointRequest
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 The structure that represents an endoint request to locate.
 
@@ -10,27 +11,28 @@ The structure that represents an endoint request to locate.
 
 ## Declaration
 
-```swift
+```c
 typedef struct IOUSBFindEndpointRequest IOUSBFindEndpointRequest;
 ```
 
 ## Topics
 
 ### Getting the Properties
-- [type](iousbfindendpointrequest/1546255-type.md)
+- [type](./iousbfindendpointrequest/api-1546255-type.md)
   The type of endpoint.
-- [direction](iousbfindendpointrequest/1546504-direction.md)
+- [direction](./iousbfindendpointrequest/api-1546504-direction.md)
   The direction of the endpoint.
-- [maxPacketSize](iousbfindendpointrequest/1546175-maxpacketsize.md)
+- [maxPacketSize](./iousbfindendpointrequest/api-1546175-maxpacketsize.md)
   The maximum packet size of the endpoint.
-- [interval](iousbfindendpointrequest/1546078-interval.md)
+- [interval](./iousbfindendpointrequest/api-1546078-interval.md)
   The polling interval for the endpoint in milliseconds.
 
 ## See Also
 
-- [IOUSBFindInterfaceRequest](iousbfindinterfacerequest.md)
+### Communication Requests
+- [IOUSBFindInterfaceRequest](./iousbfindinterfacerequest.md)
   The structure for finding an interface request.
-- [IOUSBBulkPipeReq](iousbbulkpipereq.md)
+- [IOUSBBulkPipeReq](./iousbbulkpipereq.md)
   The structure that represents a bulk pipe request.
 
 

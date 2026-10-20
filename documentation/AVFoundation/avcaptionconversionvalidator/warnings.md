@@ -1,7 +1,8 @@
 # warnings
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection of warnings the validator encountered.
 
@@ -17,17 +18,22 @@ The collection of warnings the validator encountered.
 var warnings: [AVCaptionConversionWarning] { get }
 ```
 
+```objc
+@property (readonly) NSArray<AVCaptionConversionWarning *> * warnings;
+```
+
 #### Discussion
 
-This property value may change while the validator’s status is [`AVCaptionConversionValidator.Status.validating`](avcaptionconversionvalidator/status-swift.enum/validating.md).
+This property value may change while the validator’s status is [`AVCaptionConversionValidator.Status.validating`](./status-swift.enum/validating.md).
 
 ## See Also
 
-- [func validateCaptionConversion(warningHandler: (AVCaptionConversionWarning?) -> Void)](avcaptionconversionvalidator/validatecaptionconversion(warninghandler:).md)
+### Validating captions
+- [func validateCaptionConversion(warningHandler: (AVCaptionConversionWarning?) -> Void)](./validatecaptionconversion%28warninghandler%29.md)
   Validates the object’s captions.
-- [class AVCaptionConversionWarning](avcaptionconversionwarning.md)
+- [class AVCaptionConversionWarning](../avcaptionconversionwarning.md)
   An object that represents a conversion warning produced by a validator.
-- [func stopValidating()](avcaptionconversionvalidator/stopvalidating.md)
+- [func stopValidating()](./stopvalidating%28%29.md)
   Stops the active validation operation.
 
 

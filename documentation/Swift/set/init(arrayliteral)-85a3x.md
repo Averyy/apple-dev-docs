@@ -1,7 +1,8 @@
 # init(arrayLiteral:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a set containing the elements of the given array literal.
 
@@ -19,6 +20,8 @@ Creates a set containing the elements of the given array literal.
 ```swift
 init(arrayLiteral: Self.Element...)
 ```
+
+Available when `ArrayLiteralElement` is `Self.Element`.
 
 #### Discussion
 

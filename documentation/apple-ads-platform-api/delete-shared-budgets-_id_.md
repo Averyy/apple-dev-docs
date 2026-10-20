@@ -1,7 +1,8 @@
 # Delete a Budget Order
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Soft-deletes a budget order by its unique identifier.
 
@@ -12,9 +13,9 @@ Soft-deletes a budget order by its unique identifier.
 
 This endpoint soft-deletes the specified budget order. The system marks the record `deleted: true`, and it’s no longer available for assignment to campaigns. You must remove all campaign assignments before you can delete a budget order.
 
-Omit the `X-AP-Context` header. This endpoint requires organization-level permissions, and the API returns `403 Forbidden` if you send an ad account header. See [`Budget Orders Endpoints`](budget-orders-endpoints.md).
+Omit the `X-AP-Context` header. This endpoint requires organization-level permissions, and the API returns `403 Forbidden` if you send an ad account header. See [Budget Orders Endpoints](./budget-orders-endpoints.md).
 
-##### Check Deletion Restrictions
+##### Check deletion restrictions
 
 Deletion returns a `400 Bad Request` in the following cases:
 
@@ -41,7 +42,7 @@ Deletion has different implications depending on what you’re trying to do next
 
 Deletes a budget order by its unique identifier. Remove all campaign assignments before issuing this request. A successful delete returns HTTP 200 with an empty response body.
 
-```None
+```
 DELETE https://api.ads.apple.com/v1/shared-budgets/777890001
 ```
 
@@ -57,17 +58,29 @@ DELETE https://api.ads.apple.com/v1/shared-budgets/777890001
 
 ## Parameters
 
+### Path Parameters
+
 - `id` (string) *(required)*
+
+## Responses
+
+- `200` OK (`Response`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`ErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Get a Budget Order by ID](get-shared-budgets-_id_.md)
+- [Get a Budget Order by ID](./get-shared-budgets-_id_.md)
   Retrieves a single budget order by its ID.
-- [Create a Budget Order](post-shared-budgets.md)
+- [Create a Budget Order](./post-shared-budgets.md)
   Creates a budget order that can be assigned to campaigns within an ad account.
-- [Query Budget Orders](post-shared-budgets-query.md)
+- [Query Budget Orders](./post-shared-budgets-query.md)
   Returns a filtered, sorted, and paginated list of budget orders.
-- [Update a Budget Order](put-shared-budgets-_id_.md)
+- [Update a Budget Order](./put-shared-budgets-_id_.md)
   Updates mutable fields of an existing budget order by its unique identifier.
 
 

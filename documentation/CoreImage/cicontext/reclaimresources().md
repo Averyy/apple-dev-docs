@@ -1,7 +1,8 @@
 # reclaimResources()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs the garbage collector to reclaim any resources that the context no longer requires.
 
@@ -14,19 +15,24 @@ Runs the garbage collector to reclaim any resources that the context no longer r
 func reclaimResources()
 ```
 
+```objc
+- (void) reclaimResources;
+```
+
 #### Discussion
 
 The system calls this method automatically after every rendering operation. You can use this method to remove textures from the texture cache that reference deleted images.
 
 ## See Also
 
-- [func clearCaches()](cicontext/clearcaches.md)
+### Managing Resources
+- [func clearCaches()](./clearcaches%28%29.md)
   Frees any cached data, such as temporary images, associated with the context and runs the garbage collector.
-- [class func offlineGPUCount() -> UInt32](cicontext/offlinegpucount.md)
+- [class func offlineGPUCount() -> UInt32](./offlinegpucount%28%29.md)
   Returns the number of GPUs not currently driving a display.
-- [var workingColorSpace: CGColorSpace?](cicontext/workingcolorspace.md)
+- [var workingColorSpace: CGColorSpace?](./workingcolorspace.md)
   The working color space of the Core Image context.
-- [var workingFormat: CIFormat](cicontext/workingformat.md)
+- [var workingFormat: CIFormat](./workingformat.md)
   The working pixel format of the Core Image context.
 
 

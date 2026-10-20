@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var kUCTypeSelectMaxListSize: UInt32](kuctypeselectmaxlistsize.md)
+- [var kUCTypeSelectMaxListSize: UInt32](../../kuctypeselectmaxlistsize.md)
 
 
 ---

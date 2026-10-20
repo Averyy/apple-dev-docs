@@ -2,6 +2,7 @@
 
 **Framework**: DeviceDiscoveryExtension  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Begins the extension’s device discovery process.
@@ -9,9 +10,9 @@ Begins the extension’s device discovery process.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,7 @@ func startDiscovery(session: DDDiscoverySession)
 
 #### Discussion
 
-The system controls the discovery process using this function by calling it when [`AVRoutePickerView`](https://developer.apple.com/documentation/avkit/avroutepickerview) displays. You code your extension to search the local network or paired Bluetooth devices for a third-party device of interest that you want the system to include in the picker.
+The system controls the discovery process using this function by calling it when [`AVRoutePickerView`](../../AVKit/avroutepickerview.md) displays. You code your extension to search the local network or paired Bluetooth devices for a third-party device of interest that you want the system to include in the picker.
 
 ## Parameters
 
@@ -29,7 +30,8 @@ The system controls the discovery process using this function by calling it when
 
 ## See Also
 
-- [func stopDiscovery(session: DDDiscoverySession)](dddiscoveryextension/stopdiscovery(session:).md)
+### Controlling discovery
+- [func stopDiscovery(session: DDDiscoverySession)](./stopdiscovery%28session%29.md)
   Ends the extension’s device discovery process.
 
 

@@ -1,7 +1,8 @@
 # heading
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The heading of the camera, in degrees, relative to true North.
 
@@ -11,7 +12,7 @@ The heading of the camera, in degrees, relative to true North.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,11 +23,12 @@ var heading: Double
 
 ## See Also
 
-- [var centerCoordinate: CLLocationCoordinate2D](mapcamera/centercoordinate.md)
+### Accessing the camera properties
+- [var centerCoordinate: CLLocationCoordinate2D](./centercoordinate.md)
   The map coordinate at the center of the map view.
-- [var distance: Double](mapcamera/distance.md)
+- [var distance: Double](./distance.md)
   The distance from the center point of the map to the camera, in meters.
-- [var pitch: Double](mapcamera/pitch.md)
+- [var pitch: Double](./pitch.md)
   The viewing angle of the camera, in degrees.
 
 

@@ -1,13 +1,14 @@
 # CAConstraintAttribute
 
 **Framework**: Core Animation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The constraint attribute type.
 
 **Availability**:
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,37 +16,41 @@ The constraint attribute type.
 enum CAConstraintAttribute
 ```
 
+```c
+enum CAConstraintAttribute : int;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [CAConstraintAttribute.height](caconstraintattribute/height.md)
+- [CAConstraintAttribute.height](./caconstraintattribute/height.md)
   The height of a layer.
-- [CAConstraintAttribute.maxX](caconstraintattribute/maxx.md)
+- [CAConstraintAttribute.maxX](./caconstraintattribute/maxx.md)
   The right edge of a layer’s frame.
-- [CAConstraintAttribute.maxY](caconstraintattribute/maxy.md)
+- [CAConstraintAttribute.maxY](./caconstraintattribute/maxy.md)
   The top edge of a layer’s frame.
-- [CAConstraintAttribute.midX](caconstraintattribute/midx.md)
+- [CAConstraintAttribute.midX](./caconstraintattribute/midx.md)
   The horizontal location of the center of a layer’s frame.
-- [CAConstraintAttribute.midY](caconstraintattribute/midy.md)
+- [CAConstraintAttribute.midY](./caconstraintattribute/midy.md)
   The vertical location of the center of a layer’s frame.
-- [CAConstraintAttribute.minX](caconstraintattribute/minx.md)
+- [CAConstraintAttribute.minX](./caconstraintattribute/minx.md)
   The left edge of a layer’s frame.
-- [CAConstraintAttribute.minY](caconstraintattribute/miny.md)
+- [CAConstraintAttribute.minY](./caconstraintattribute/miny.md)
   The bottom edge of a layer’s frame.
-- [CAConstraintAttribute.width](caconstraintattribute/width.md)
+- [CAConstraintAttribute.width](./caconstraintattribute/width.md)
   The width of a layer.
 ### Initializers
-- [init?(rawValue: Int32)](caconstraintattribute/init(rawvalue:).md)
+- [init?(rawValue: Int32)](./caconstraintattribute/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

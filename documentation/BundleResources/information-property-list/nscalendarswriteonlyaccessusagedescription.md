@@ -1,7 +1,8 @@
 # NSCalendarsWriteOnlyAccessUsageDescription
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A message that tells people why the app is requesting access to create calendar events.
 
@@ -13,23 +14,25 @@ A message that tells people why the app is requesting access to create calendar 
 - visionOS 1.0+
 - watchOS 10.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSCalendarsWriteOnlyAccessUsageDescription` (Privacy - Calendars Write Only Usage Description)
+- **Type**: string
 
 #### Discussion
 
-If your app needs to read calendar events in addition to creating them, use [`NSCalendarsFullAccessUsageDescription`](information-property-list/nscalendarsfullaccessusagedescription.md). If your app runs on iOS 17 or later and presents an [`EKEventEditViewController`](https://developer.apple.com/documentation/eventkitui/ekeventeditviewcontroller) to allow people to create calendar events, you don’t need to request calendar access.
+If your app needs to read calendar events in addition to creating them, use [`NSCalendarsFullAccessUsageDescription`](./nscalendarsfullaccessusagedescription.md). If your app runs on iOS 17 or later and presents an [`EKEventEditViewController`](../../EventKitUI/ekeventeditviewcontroller.md) to allow people to create calendar events, you don’t need to request calendar access.
 
 > ❗ **Important**:  This key is required if your app uses APIs that write to the person’s calendar data.
 
 ## See Also
 
-- [NSCalendarsFullAccessUsageDescription](information-property-list/nscalendarsfullaccessusagedescription.md)
+### Calendar and reminders
+- [NSCalendarsFullAccessUsageDescription](./nscalendarsfullaccessusagedescription.md)
   A message that tells people why the app is requesting access to read and write their calendar data.
-- [NSRemindersFullAccessUsageDescription](information-property-list/nsremindersfullaccessusagedescription.md)
+- [NSRemindersFullAccessUsageDescription](./nsremindersfullaccessusagedescription.md)
   A message that tells people why the app is requesting access to read and write their reminders data.
-- [Accessing the event store](../eventkit/accessing-the-event-store.md)
+- [Accessing the event store](../../EventKit/accessing-the-event-store.md)
   Request access to a person’s calendar data through the event store.
 
 

@@ -1,7 +1,8 @@
 # kSecACLAuthorizationKeychainItemModify
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Modify an item in a keychain.
 
@@ -12,6 +13,10 @@ Modify an item in a keychain.
 
 ```swift
 let kSecACLAuthorizationKeychainItemModify: CFString
+```
+
+```c
+extern CFStringRef const kSecACLAuthorizationKeychainItemModify;
 ```
 
 

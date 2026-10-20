@@ -1,12 +1,13 @@
 # readSelection(from:type:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reads data of the given type from the specified pasteboard.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,19 @@ Reads data of the given type from the specified pasteboard.
 func readSelection(from pboard: NSPasteboard, type: NSPasteboard.PasteboardType) -> Bool
 ```
 
+```objc
+- (BOOL) readSelectionFromPasteboard:(NSPasteboard *) pboard type:(NSPasteboardType) type;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the data was successfully read, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the data was successfully read, [`false`](../../Swift/false.md) otherwise.
 
 #### Discussion
 
 The new data is placed at the current insertion point, replacing the current selection if one exists.
 
-You should override this method to read pasteboard types other than the default types. Use the [`rangeForUserTextChange`](nstextview/rangeforusertextchange.md) method to obtain the range of characters (if any) to be replaced by the new data.
+You should override this method to read pasteboard types other than the default types. Use the [`rangeForUserTextChange`](./rangeforusertextchange.md) method to obtain the range of characters (if any) to be replaced by the new data.
 
 ## Parameters
 
@@ -31,21 +36,23 @@ You should override this method to read pasteboard types other than the default 
 
 ## See Also
 
-- [var rangeForUserTextChange: NSRange](nstextview/rangeforusertextchange.md)
+### Related Documentation
+- [var rangeForUserTextChange: NSRange](./rangeforusertextchange.md)
   The range of characters affected by a method that changes characters (as opposed to attributes).
-- [func preferredPasteboardType(from: [NSPasteboard.PasteboardType], restrictedToTypesFrom: [NSPasteboard.PasteboardType]?) -> NSPasteboard.PasteboardType?](nstextview/preferredpasteboardtype(from:restrictedtotypesfrom:).md)
+### Managing the pasteboard
+- [func preferredPasteboardType(from: [NSPasteboard.PasteboardType], restrictedToTypesFrom: [NSPasteboard.PasteboardType]?) -> NSPasteboard.PasteboardType?](./preferredpasteboardtype%28from,restrictedtotypesfrom%29.md)
   Returns whatever type on the pasteboard would be most preferred for copying data.
-- [func readSelection(from: NSPasteboard) -> Bool](nstextview/readselection(from:).md)
+- [func readSelection(from: NSPasteboard) -> Bool](./readselection%28from%29.md)
   Reads the text view’s preferred type of data from the specified pasteboard.
-- [var readablePasteboardTypes: [NSPasteboard.PasteboardType]](nstextview/readablepasteboardtypes.md)
+- [var readablePasteboardTypes: [NSPasteboard.PasteboardType]](./readablepasteboardtypes.md)
   The types this text view can read immediately from the pasteboard.
-- [var writablePasteboardTypes: [NSPasteboard.PasteboardType]](nstextview/writablepasteboardtypes.md)
+- [var writablePasteboardTypes: [NSPasteboard.PasteboardType]](./writablepasteboardtypes.md)
   The pasteboard types that can be provided from the current selection.
-- [func writeSelection(to: NSPasteboard, type: NSPasteboard.PasteboardType) -> Bool](nstextview/writeselection(to:type:).md)
+- [func writeSelection(to: NSPasteboard, type: NSPasteboard.PasteboardType) -> Bool](./writeselection%28to,type%29.md)
   Writes the current selection to the specified pasteboard using the given type.
-- [func writeSelection(to: NSPasteboard, types: [NSPasteboard.PasteboardType]) -> Bool](nstextview/writeselection(to:types:).md)
+- [func writeSelection(to: NSPasteboard, types: [NSPasteboard.PasteboardType]) -> Bool](./writeselection%28to,types%29.md)
   Writes the current selection to the specified pasteboard under each given type.
-- [func validRequestor(forSendType: NSPasteboard.PasteboardType?, returnType: NSPasteboard.PasteboardType?) -> Any?](nstextview/validrequestor(forsendtype:returntype:).md)
+- [func validRequestor(forSendType: NSPasteboard.PasteboardType?, returnType: NSPasteboard.PasteboardType?) -> Any?](./validrequestor%28forsendtype,returntype%29.md)
   Returns `self` if the text view can provide and accept the specified data types, or `nil` if it can’t.
 
 

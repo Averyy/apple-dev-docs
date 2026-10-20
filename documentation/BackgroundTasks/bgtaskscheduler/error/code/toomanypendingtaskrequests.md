@@ -1,7 +1,8 @@
 # BGTaskScheduler.Error.Code.tooManyPendingTaskRequests
 
 **Framework**: Background Tasks  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A task scheduling error that indicates there are too many pending tasks of the type requested.
 
@@ -18,17 +19,22 @@ A task scheduling error that indicates there are too many pending tasks of the t
 case tooManyPendingTaskRequests
 ```
 
+```c
+BGTaskSchedulerErrorCodeTooManyPendingTaskRequests
+```
+
 #### Discussion
 
 Try canceling some existing task requests and then resubmit the request that failed.
 
 ## See Also
 
-- [BGTaskScheduler.Error.Code.notPermitted](bgtaskscheduler/error/code/notpermitted.md)
+### Identifying an error
+- [BGTaskScheduler.Error.Code.notPermitted](./notpermitted.md)
   A task scheduling error that indicates the app isn’t permitted to launch the task.
-- [BGTaskScheduler.Error.Code.unavailable](bgtaskscheduler/error/code/unavailable.md)
+- [BGTaskScheduler.Error.Code.unavailable](./unavailable.md)
   A task scheduling error that indicates the app or extension can’t schedule background work.
-- [BGTaskScheduler.Error.Code.immediateRunIneligible](bgtaskscheduler/error/code/immediaterunineligible.md)
+- [BGTaskScheduler.Error.Code.immediateRunIneligible](./immediaterunineligible.md)
   A task scheduling error that indicates a task request didn’t run immediately due to system conditions.
 
 

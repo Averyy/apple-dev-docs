@@ -1,7 +1,8 @@
 # passphrase
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A password that contains multiple words or phrases.
 
@@ -15,6 +16,10 @@ A password that contains multiple words or phrases.
 
 ```swift
 static let passphrase: ASGeneratedPassword.Kind
+```
+
+```c
+extern ASGeneratedPasswordKind const ASGeneratedPasswordKindPassphrase;
 ```
 
 

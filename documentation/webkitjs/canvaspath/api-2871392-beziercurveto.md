@@ -1,7 +1,8 @@
 # bezierCurveTo
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 void bezierCurveTo(
     unrestricted double cp1x, 
     unrestricted double cp1y, 

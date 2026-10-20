@@ -1,7 +1,8 @@
 # GroupActivityMetadata.Experience.listenTogether
 
 **Framework**: Group Activities  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 15.0+

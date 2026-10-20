@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Queries the string that helps identify this object.
@@ -18,6 +19,10 @@ Queries the string that helps identify this object.
 
 ```swift
 var label: String? { get }
+```
+
+```objc
+@property (readonly, nullable) NSString * label;
 ```
 
 

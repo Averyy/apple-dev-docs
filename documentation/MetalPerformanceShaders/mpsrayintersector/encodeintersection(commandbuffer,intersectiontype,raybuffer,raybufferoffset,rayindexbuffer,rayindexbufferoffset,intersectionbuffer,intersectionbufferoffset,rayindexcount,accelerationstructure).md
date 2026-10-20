@@ -1,20 +1,25 @@
 # encodeIntersection(commandBuffer:intersectionType:rayBuffer:rayBufferOffset:rayIndexBuffer:rayIndexBufferOffset:intersectionBuffer:intersectionBufferOffset:rayIndexCount:accelerationStructure:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 17.0
+- iPadOS 13.0+ - Deprecated in 17.0
+- Mac Catalyst 13.0+ - Deprecated in 17.0
+- macOS 10.15+ - Deprecated in 14.0
+- tvOS 13.0+ - Deprecated in 17.0
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
 
 ```swift
 func encodeIntersection(commandBuffer: any MTLCommandBuffer, intersectionType: MPSIntersectionType, rayBuffer: any MTLBuffer, rayBufferOffset: Int, rayIndexBuffer: any MTLBuffer, rayIndexBufferOffset: Int, intersectionBuffer: any MTLBuffer, intersectionBufferOffset: Int, rayIndexCount: Int, accelerationStructure: MPSAccelerationStructure)
+```
+
+```objc
+- (void) encodeIntersectionToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer intersectionType:(MPSIntersectionType) intersectionType rayBuffer:(id<MTLBuffer>) rayBuffer rayBufferOffset:(NSUInteger) rayBufferOffset rayIndexBuffer:(id<MTLBuffer>) rayIndexBuffer rayIndexBufferOffset:(NSUInteger) rayIndexBufferOffset intersectionBuffer:(id<MTLBuffer>) intersectionBuffer intersectionBufferOffset:(NSUInteger) intersectionBufferOffset rayIndexCount:(NSUInteger) rayIndexCount accelerationStructure:(MPSAccelerationStructure *) accelerationStructure;
 ```
 
 

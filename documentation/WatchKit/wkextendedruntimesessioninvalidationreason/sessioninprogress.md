@@ -1,7 +1,8 @@
 # WKExtendedRuntimeSessionInvalidationReason.sessionInProgress
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This app already has a running session.
 
@@ -14,21 +15,26 @@ This app already has a running session.
 case sessionInProgress
 ```
 
+```c
+WKExtendedRuntimeSessionInvalidationReasonSessionInProgress
+```
+
 #### Discussion
 
 Each app can only run one extended runtime session at a time.
 
 ## See Also
 
-- [WKExtendedRuntimeSessionInvalidationReason.error](wkextendedruntimesessioninvalidationreason/error.md)
+### Invalidation Reasons
+- [WKExtendedRuntimeSessionInvalidationReason.error](./error.md)
   An error prevented the session from running.
-- [WKExtendedRuntimeSessionInvalidationReason.none](wkextendedruntimesessioninvalidationreason/none.md)
+- [WKExtendedRuntimeSessionInvalidationReason.none](./none.md)
   The session ended normally.
-- [WKExtendedRuntimeSessionInvalidationReason.expired](wkextendedruntimesessioninvalidationreason/expired.md)
+- [WKExtendedRuntimeSessionInvalidationReason.expired](./expired.md)
   The session used all of its allocated time.
-- [WKExtendedRuntimeSessionInvalidationReason.resignedFrontmost](wkextendedruntimesessioninvalidationreason/resignedfrontmost.md)
+- [WKExtendedRuntimeSessionInvalidationReason.resignedFrontmost](./resignedfrontmost.md)
   The app lost its frontmost status.
-- [WKExtendedRuntimeSessionInvalidationReason.suppressedBySystem](wkextendedruntimesessioninvalidationreason/suppressedbysystem.md)
+- [WKExtendedRuntimeSessionInvalidationReason.suppressedBySystem](./suppressedbysystem.md)
   The system is in a state that doesn’t allow sessions of this type.
 
 

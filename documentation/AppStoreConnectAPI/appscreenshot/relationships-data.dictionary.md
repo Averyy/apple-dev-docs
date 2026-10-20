@@ -1,7 +1,8 @@
 # AppScreenshot.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AppScreenshot.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppScreenshot.Relationships.AppScreenshotSet](appscreenshot/relationships-data.dictionary/appscreenshotset-data.dictionary.md)
+- [object AppScreenshot.Relationships.AppScreenshotSet](./relationships-data.dictionary/appscreenshotset-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 ## Properties
@@ -26,7 +27,8 @@ object AppScreenshot.Relationships
 
 ## See Also
 
-- [object AppScreenshot.Attributes](appscreenshot/attributes-data.dictionary.md)
+### Objects
+- [object AppScreenshot.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an App Screenshots resource.
 
 

@@ -1,7 +1,8 @@
 # passEntries(completion:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reports the list of passes available to add to an iPhone.
 
@@ -14,20 +15,31 @@ Reports the list of passes available to add to an iPhone.
 ## Declaration
 
 ```swift
+func passEntries(completion: @escaping @Sendable ([PKIssuerProvisioningExtensionPassEntry]) -> Void)
+```
+
+```swift
 func passEntries() async -> [PKIssuerProvisioningExtensionPassEntry]
+```
+
+```objc
+- (void) passEntriesWithCompletion:(void (^)(NSArray<PKIssuerProvisioningExtensionPassEntry *> *entries)) completion;
 ```
 
 ## Parameters
 
-- `completion`: A completion handler that the system calls to find the list of passes available to add to an iPhone. This handler takes the following parameter: - **`entries`**: An array [`PKIssuerProvisioningExtensionPassEntry`](pkissuerprovisioningextensionpassentry.md) items that represents the passes that are available to add to Wallet.
+- `completion`: A completion handler that the system calls to find the list of passes available to add to an iPhone. This handler takes the following parameter:
+
+  - **`entries`**: An array [`PKIssuerProvisioningExtensionPassEntry`](../pkissuerprovisioningextensionpassentry.md) items that represents the passes that are available to add to Wallet.
 
 ## See Also
 
-- [func remotePassEntries(completion: ([PKIssuerProvisioningExtensionPassEntry]) -> Void)](pkissuerprovisioningextensionhandler/remotepassentries(completion:).md)
+### Returning available passes
+- [func remotePassEntries(completion: ([PKIssuerProvisioningExtensionPassEntry]) -> Void)](./remotepassentries%28completion%29.md)
   Reports the list of passes available to add to an Apple Watch.
-- [class PKIssuerProvisioningExtensionPassEntry](pkissuerprovisioningextensionpassentry.md)
+- [class PKIssuerProvisioningExtensionPassEntry](../pkissuerprovisioningextensionpassentry.md)
   An object that represents an item available to add to as a Wallet pass.
-- [class PKIssuerProvisioningExtensionPaymentPassEntry](pkissuerprovisioningextensionpaymentpassentry.md)
+- [class PKIssuerProvisioningExtensionPaymentPassEntry](../pkissuerprovisioningextensionpaymentpassentry.md)
   An object that represents a payment card available to add as a payment pass.
 
 

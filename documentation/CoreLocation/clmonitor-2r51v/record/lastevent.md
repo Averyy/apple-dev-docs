@@ -1,7 +1,8 @@
 # lastEvent
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The most recent event the monitor records.
 
@@ -23,7 +24,8 @@ The event record contains the specifics of the most recent event, including its 
 
 ## See Also
 
-- [let condition: any CLCondition](clmonitor-2r51v/record/condition.md)
+### Record characteristics
+- [let condition: any CLCondition](./condition.md)
   The condition that the framework is monitoring for.
 
 

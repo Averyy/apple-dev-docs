@@ -1,7 +1,8 @@
 # resourceLoader
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The resource loader for the asset.
 
@@ -19,13 +20,18 @@ The resource loader for the asset.
 var resourceLoader: AVAssetResourceLoader { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVAssetResourceLoader * resourceLoader;
+```
+
 #### Discussion
 
 During loading, the system may ask the resource loader to assist loading the resource. For example, a resource that requires decryption may require the resource loader to provide the appropriate decryption keys. You can assign a delegate object to the resource loader object and use your delegate to intercept these requests and provide appropriate responses.
 
 ## See Also
 
-- [var mayRequireContentKeysForMediaDataProcessing: Bool](avurlasset/mayrequirecontentkeysformediadataprocessing.md)
+### Assisting with resource loading
+- [var mayRequireContentKeysForMediaDataProcessing: Bool](./mayrequirecontentkeysformediadataprocessing.md)
   A Boolean value that indicates whether you can add this asset as a content key recipient to a content key session.
 
 

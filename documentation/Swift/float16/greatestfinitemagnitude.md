@@ -1,7 +1,8 @@
 # greatestFiniteMagnitude
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The greatest finite number representable by this type.
 

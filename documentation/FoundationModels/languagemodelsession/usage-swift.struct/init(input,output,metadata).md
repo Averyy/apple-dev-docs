@@ -1,7 +1,8 @@
 # init(input:output:metadata:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a usage value with the given token counts.
 

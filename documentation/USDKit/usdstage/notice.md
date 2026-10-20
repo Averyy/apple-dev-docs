@@ -1,7 +1,8 @@
 # USDStage.Notice
 
 **Framework**: USDKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A change notification that can be observed on a stage.
 
@@ -22,21 +23,22 @@ protocol Notice
 ## Topics
 
 ### Instance Properties
-- [var stage: USDStage](usdstage/notice/stage.md)
+- [var stage: USDStage](./notice/stage.md)
   The stage associated with this notice.
 
 ## Relationships
 
 ### Conforming Types
-- [USDStage.ObjectsDidChange](usdstage/objectsdidchange.md)
+- [USDStage.ObjectsDidChange](./objectsdidchange.md)
 
 ## See Also
 
-- [func addObserver<Notice>(for: Notice.Type, using: (Notice) -> Void) -> USDStage.ObservationToken](usdstage/addobserver(for:using:).md)
+### Observing changes
+- [func addObserver<Notice>(for: Notice.Type, using: (Notice) -> Void) -> USDStage.ObservationToken](./addobserver%28for,using%29.md)
   Registers an observer that runs when a notice of the given type is sent for this stage.
-- [USDStage.ObjectsDidChange](usdstage/objectsdidchange.md)
+- [USDStage.ObjectsDidChange](./objectsdidchange.md)
   A notice sent when the objects on a stage change.
-- [USDStage.ObservationToken](usdstage/observationtoken.md)
+- [USDStage.ObservationToken](./observationtoken.md)
   A token that keeps an observer registered for as long as it is retained.
 
 

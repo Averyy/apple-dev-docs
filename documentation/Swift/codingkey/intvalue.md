@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The value to use in an integer-indexed collection (e.g. an int-keyed dictionary).

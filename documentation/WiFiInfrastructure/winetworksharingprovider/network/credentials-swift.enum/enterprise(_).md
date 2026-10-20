@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.Network.Credentials.enterprise(_:)
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The credentials to login to a network using 802.1x Enterprise authentication.
 

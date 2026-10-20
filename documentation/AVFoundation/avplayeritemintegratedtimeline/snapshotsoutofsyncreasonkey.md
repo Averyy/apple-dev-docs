@@ -1,7 +1,8 @@
 # snapshotsOutOfSyncReasonKey
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key to retrieve the reason for an out-of-sync state notification.
 
@@ -20,9 +21,14 @@ A key to retrieve the reason for an out-of-sync state notification.
 class let snapshotsOutOfSyncReasonKey: String
 ```
 
+```c
+extern NSString * const AVPlayerIntegratedTimelineSnapshotsOutOfSyncReasonKey;
+```
+
 ## See Also
 
-- [struct AVPlayerIntegratedTimelineSnapshotsOutOfSyncReason](avplayerintegratedtimelinesnapshotsoutofsyncreason.md)
+### User-information keys
+- [struct AVPlayerIntegratedTimelineSnapshotsOutOfSyncReason](../avplayerintegratedtimelinesnapshotsoutofsyncreason.md)
   Constants that represent the reason for an out-of-sync state.
 
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kHFSMaxFileNameChars](1646119-anonymous/khfsmaxfilenamechars.md)
-- [kHFSMaxVolumeNameChars](1646119-anonymous/khfsmaxvolumenamechars.md)
-- [kHFSPlusMaxFileNameChars](1646119-anonymous/khfsplusmaxfilenamechars.md)
+- [kHFSMaxFileNameChars](./api-1646119-anonymous/khfsmaxfilenamechars.md)
+- [kHFSMaxVolumeNameChars](./api-1646119-anonymous/khfsmaxvolumenamechars.md)
+- [kHFSPlusMaxFileNameChars](./api-1646119-anonymous/khfsplusmaxfilenamechars.md)
 
 
 ---

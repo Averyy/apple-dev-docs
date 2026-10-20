@@ -1,7 +1,8 @@
 # CMSampleBuffer.SizePerSample.distinct(_:)
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Each sample has a distinct size.
 

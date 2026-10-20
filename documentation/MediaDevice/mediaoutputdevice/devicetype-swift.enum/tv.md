@@ -1,7 +1,8 @@
 # MediaOutputDevice.DeviceType.tv
 
 **Framework**: Media Device  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A television.
 

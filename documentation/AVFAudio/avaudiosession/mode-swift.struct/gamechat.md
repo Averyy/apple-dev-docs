@@ -1,7 +1,8 @@
 # gameChat
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mode that the GameKit framework sets on behalf of an application that uses GameKit’s voice chat service.
 
@@ -19,33 +20,38 @@ A mode that the GameKit framework sets on behalf of an application that uses Gam
 static let gameChat: AVAudioSession.Mode
 ```
 
+```c
+extern AVAudioSessionMode const AVAudioSessionModeGameChat;
+```
+
 #### Discussion
 
-This mode is valid only with the [`playAndRecord`](avaudiosession/category-swift.struct/playandrecord.md) audio session category.
+This mode is valid only with the [`playAndRecord`](../category-swift.struct/playandrecord.md) audio session category.
 
-Don’t set this mode directly. If you need similar behavior and aren’t using a [`GKVoiceChat`](https://developer.apple.com/documentation/gamekit/gkvoicechat) object, use [`voiceChat`](avaudiosession/mode-swift.struct/voicechat.md) or [`videoChat`](avaudiosession/mode-swift.struct/videochat.md) instead.
+Don’t set this mode directly. If you need similar behavior and aren’t using a [`GKVoiceChat`](../../../GameKit/gkvoicechat.md) object, use [`voiceChat`](./voicechat.md) or [`videoChat`](./videochat.md) instead.
 
 ## See Also
 
-- [static let `default`: AVAudioSession.Mode](avaudiosession/mode-swift.struct/default.md)
+### Getting standard session modes
+- [static let `default`: AVAudioSession.Mode](./default.md)
   The default audio session mode.
-- [static let dualRoute: AVAudioSession.Mode](avaudiosession/mode-swift.struct/dualroute.md)
+- [static let dualRoute: AVAudioSession.Mode](./dualroute.md)
   A mode that provides simultaneous use of the built-in microphone/speaker and a secondary audio device that supports input and output.
-- [static let measurement: AVAudioSession.Mode](avaudiosession/mode-swift.struct/measurement.md)
+- [static let measurement: AVAudioSession.Mode](./measurement.md)
   A mode that indicates that your app is performing measurement of audio input or output.
-- [static let moviePlayback: AVAudioSession.Mode](avaudiosession/mode-swift.struct/movieplayback.md)
+- [static let moviePlayback: AVAudioSession.Mode](./movieplayback.md)
   A mode that indicates that your app is playing back movie content.
-- [static let shortFormVideo: AVAudioSession.Mode](avaudiosession/mode-swift.struct/shortformvideo.md)
+- [static let shortFormVideo: AVAudioSession.Mode](./shortformvideo.md)
   Appropriate for applications playing short-form video content.
-- [static let spokenAudio: AVAudioSession.Mode](avaudiosession/mode-swift.struct/spokenaudio.md)
+- [static let spokenAudio: AVAudioSession.Mode](./spokenaudio.md)
   A mode used for continuous spoken audio to pause the audio when another app plays a short audio prompt.
-- [static let videoChat: AVAudioSession.Mode](avaudiosession/mode-swift.struct/videochat.md)
+- [static let videoChat: AVAudioSession.Mode](./videochat.md)
   A mode that indicates that your app is engaging in online video conferencing.
-- [static let videoRecording: AVAudioSession.Mode](avaudiosession/mode-swift.struct/videorecording.md)
+- [static let videoRecording: AVAudioSession.Mode](./videorecording.md)
   A mode that indicates that your app is recording a movie.
-- [static let voiceChat: AVAudioSession.Mode](avaudiosession/mode-swift.struct/voicechat.md)
+- [static let voiceChat: AVAudioSession.Mode](./voicechat.md)
   A mode that indicates that your app is performing two-way voice communication, such as using Voice over Internet Protocol (VoIP).
-- [static let voicePrompt: AVAudioSession.Mode](avaudiosession/mode-swift.struct/voiceprompt.md)
+- [static let voicePrompt: AVAudioSession.Mode](./voiceprompt.md)
   A mode that indicates that your app plays audio using text-to-speech.
 
 

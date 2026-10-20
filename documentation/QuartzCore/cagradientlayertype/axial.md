@@ -1,7 +1,8 @@
 # axial
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An axial gradient (also called a linear gradient) varies along an axis between two defined end points. All points that lie on a line perpendicular to the axis have the same color value.
 
@@ -17,6 +18,10 @@ An axial gradient (also called a linear gradient) varies along an axis between t
 
 ```swift
 static let axial: CAGradientLayerType
+```
+
+```c
+extern CAGradientLayerType const kCAGradientLayerAxial;
 ```
 
 

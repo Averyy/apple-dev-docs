@@ -1,7 +1,8 @@
 # CXErrorCodeNotificationServiceExtensionError.Code.unknown
 
 **Framework**: CallKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that occurs when there is an unknown problem.
 
@@ -18,11 +19,16 @@ An error that occurs when there is an unknown problem.
 case unknown
 ```
 
+```c
+CXErrorCodeNotificationServiceExtensionErrorUnknown
+```
+
 ## See Also
 
-- [CXErrorCodeNotificationServiceExtensionError.Code.invalidClientProcess](cxerrorcodenotificationserviceextensionerror-swift.struct/code/invalidclientprocess.md)
+### Error Codes
+- [CXErrorCodeNotificationServiceExtensionError.Code.invalidClientProcess](./invalidclientprocess.md)
   An error indicating that an invalid client process reported the incoming call.
-- [CXErrorCodeNotificationServiceExtensionError.Code.missingNotificationFilteringEntitlement](cxerrorcodenotificationserviceextensionerror-swift.struct/code/missingnotificationfilteringentitlement.md)
+- [CXErrorCodeNotificationServiceExtensionError.Code.missingNotificationFilteringEntitlement](./missingnotificationfilteringentitlement.md)
   An error indicating that the notification service extension is missing the required filtering entitlement.
 
 

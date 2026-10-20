@@ -1,7 +1,8 @@
 # LanguageModelSession.Error.transcriptMutationWhileResponding
 
 **Framework**: Foundation Models  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A request mutated the session’s transcript while it was in progress.
 
@@ -25,7 +26,8 @@ Do not modify the transcript while a request is being processed.
 
 ## See Also
 
-- [LanguageModelSession.Error.concurrentRequests](languagemodelsession/error/concurrentrequests.md)
+### Getting the session errors
+- [LanguageModelSession.Error.concurrentRequests](./concurrentrequests.md)
   The session received multiple concurrent requests.
 
 

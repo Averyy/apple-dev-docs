@@ -1,7 +1,8 @@
 # init(duration:)
 
 **Framework**: MusicKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates options for a crossfade transition.
 

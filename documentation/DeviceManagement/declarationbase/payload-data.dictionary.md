@@ -1,7 +1,8 @@
 # DeclarationBase.Payload
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - iOS 15.0+
@@ -14,7 +15,7 @@
 
 ## Declaration
 
-```swift
+```
 object DeclarationBase.Payload
 ```
 

@@ -1,7 +1,8 @@
 # layerContents(forContentsScale:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an object that may be used as the contents of a layer.
 
@@ -14,9 +15,13 @@ Returns an object that may be used as the contents of a layer.
 func layerContents(forContentsScale layerContentsScale: CGFloat) -> Any
 ```
 
+```objc
+- (id) layerContentsForContentsScale:(CGFloat) layerContentsScale;
+```
+
 #### Return Value
 
-A object that you can assign to the [`contents`](https://developer.apple.com/documentation/quartzcore/calayer/contents) property of a [`CALayer`](https://developer.apple.com/documentation/quartzcore/calayer) object. This object contains the image data from the current image optimized for the specified scale factor.
+A object that you can assign to the [`contents`](../../QuartzCore/calayer/contents.md) property of a [`CALayer`](../../QuartzCore/calayer.md) object. This object contains the image data from the current image optimized for the specified scale factor.
 
 #### Discussion
 
@@ -24,11 +29,12 @@ Use this method in situations where you want to use the image as the contents of
 
 ## Parameters
 
-- `layerContentsScale`: The scale factor for the resulting image. Obtain the value for this parameter by calling the [`recommendedLayerContentsScale(_:)`](nsimage/recommendedlayercontentsscale(_:).md) method.
+- `layerContentsScale`: The scale factor for the resulting image. Obtain the value for this parameter by calling the [`recommendedLayerContentsScale(_:)`](./recommendedlayercontentsscale%28_%29.md) method.
 
 ## See Also
 
-- [func recommendedLayerContentsScale(CGFloat) -> CGFloat](nsimage/recommendedlayercontentsscale(_:).md)
+### Using Images with Core Animation
+- [func recommendedLayerContentsScale(CGFloat) -> CGFloat](./recommendedlayercontentsscale%28_%29.md)
   Returns the recommended layer contents scale for this image.
 
 

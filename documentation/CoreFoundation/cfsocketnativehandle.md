@@ -1,18 +1,19 @@
 # CFSocketNativeHandle
 
 **Framework**: Core Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Type for the platform-specific native socket handle.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ Type for the platform-specific native socket handle.
 typealias CFSocketNativeHandle = Int32
 ```
 
+```c
+typedef int CFSocketNativeHandle;
+```
+
 ## See Also
 
-- [struct CFSocketContext](cfsocketcontext.md)
+### Data Types
+- [struct CFSocketContext](./cfsocketcontext.md)
   A structure that contains program-defined data and callbacks with which you can configure a CFSocket object’s behavior.
-- [struct CFSocketSignature](cfsocketsignature.md)
+- [struct CFSocketSignature](./cfsocketsignature.md)
   A structure that fully specifies the communication protocol and connection address of a CFSocket object.
 
 

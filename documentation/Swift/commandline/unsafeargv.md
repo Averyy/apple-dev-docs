@@ -1,7 +1,8 @@
 # unsafeArgv
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Access to the raw argv value from C.
 
@@ -22,13 +23,14 @@ static var unsafeArgv: UnsafeMutablePointer<UnsafeMutablePointer<Int8>?> { get }
 
 #### Discussion
 
-The value of this property is a `nil`-terminated C array. Including the trailing `nil`, there are [`argc`](commandline/argc.md) `+ 1` elements in the array.
+The value of this property is a `nil`-terminated C array. Including the trailing `nil`, there are [`argc`](./argc.md) `+ 1` elements in the array.
 
-> **Note**: Accessing the argument vector through this pointer is unsafe. Where possible, use [`arguments`](commandline/arguments.md) instead.
+> **Note**: Accessing the argument vector through this pointer is unsafe. Where possible, use [`arguments`](./arguments.md) instead.
 
 ## See Also
 
-- [static var argc: Int32](commandline/argc.md)
+### Accessing Raw Argument Data
+- [static var argc: Int32](./argc.md)
   Access to the raw argc value from C.
 
 

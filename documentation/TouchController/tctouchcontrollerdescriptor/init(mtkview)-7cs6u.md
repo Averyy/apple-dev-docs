@@ -1,7 +1,8 @@
 # init(mtkView:)
 
 **Framework**: Touch Controller  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -14,9 +15,14 @@
 convenience init(mtkView: MTKView)
 ```
 
+```objc
+- (instancetype) initWithMTKView:(MTKView *) mtkView;
+```
+
 ## See Also
 
-- [init()](tctouchcontrollerdescriptor/init.md)
+### Creating a touch controller descriptor
+- [init()](./init%28%29.md)
 
 
 ---

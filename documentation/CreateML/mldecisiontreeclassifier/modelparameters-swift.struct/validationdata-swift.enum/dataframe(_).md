@@ -1,7 +1,8 @@
 # MLDecisionTreeClassifier.ModelParameters.ValidationData.dataFrame(_:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Validation data provided in a DataFrame.
 
@@ -21,11 +22,12 @@ case dataFrame(DataFrame)
 
 ## See Also
 
-- [MLDecisionTreeClassifier.ModelParameters.ValidationData.split(strategy:)](mldecisiontreeclassifier/modelparameters-swift.struct/validationdata-swift.enum/split(strategy:).md)
+### Specifying validation data
+- [MLDecisionTreeClassifier.ModelParameters.ValidationData.split(strategy:)](./split%28strategy%29.md)
   Generate validation data by splitting the training dataset. This is the default.
-- [MLDecisionTreeClassifier.ModelParameters.ValidationData.table(_:)](mldecisiontreeclassifier/modelparameters-swift.struct/validationdata-swift.enum/table(_:).md)
+- [MLDecisionTreeClassifier.ModelParameters.ValidationData.table(_:)](./table%28_%29.md)
   Set validation data from the MLDataTable provided.
-- [MLDecisionTreeClassifier.ModelParameters.ValidationData.none](mldecisiontreeclassifier/modelparameters-swift.struct/validationdata-swift.enum/none.md)
+- [MLDecisionTreeClassifier.ModelParameters.ValidationData.none](./none.md)
   Do not set validation data.
 
 

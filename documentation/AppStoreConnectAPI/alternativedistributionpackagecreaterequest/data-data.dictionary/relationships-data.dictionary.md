@@ -1,7 +1,8 @@
 # AlternativeDistributionPackageCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AlternativeDistributionPackageCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AlternativeDistributionPackageCreateRequest.Data.Relationships.AppStoreVersion](alternativedistributionpackagecreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversion-data.dictionary.md)
+- [object AlternativeDistributionPackageCreateRequest.Data.Relationships.AppStoreVersion](./relationships-data.dictionary/appstoreversion-data.dictionary.md)
 
 ## Properties
 

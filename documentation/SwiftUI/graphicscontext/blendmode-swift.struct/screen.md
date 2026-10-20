@@ -1,7 +1,8 @@
 # screen
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mode that multiplies the inverse of the source image samples with the inverse of the background image samples.
 
@@ -26,11 +27,12 @@ Drawing in this mode results in colors that are at least as light as either of t
 
 ## See Also
 
-- [static var lighten: GraphicsContext.BlendMode](graphicscontext/blendmode-swift.struct/lighten.md)
+### Lightening
+- [static var lighten: GraphicsContext.BlendMode](./lighten.md)
   A mode that creates composite image samples by choosing the lighter samples from either the source image or the background.
-- [static var colorDodge: GraphicsContext.BlendMode](graphicscontext/blendmode-swift.struct/colordodge.md)
+- [static var colorDodge: GraphicsContext.BlendMode](./colordodge.md)
   A mode that brightens the background image samples to reflect the source image samples.
-- [static var plusLighter: GraphicsContext.BlendMode](graphicscontext/blendmode-swift.struct/pluslighter.md)
+- [static var plusLighter: GraphicsContext.BlendMode](./pluslighter.md)
   A mode that adds the components of the source and background images, resulting in a lightened composite.
 
 

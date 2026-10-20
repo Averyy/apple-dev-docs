@@ -1,6 +1,7 @@
 # Working with Concurrency
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: Article
 
 Learn about thread safety issues related to the certificate, key, and trust services API.
 

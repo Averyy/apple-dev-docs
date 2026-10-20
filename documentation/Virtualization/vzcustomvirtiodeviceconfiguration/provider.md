@@ -1,7 +1,8 @@
 # provider
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The custom Virtio device provider.
 
@@ -14,13 +15,18 @@ The custom Virtio device provider.
 var provider: VZCustomVirtioDeviceProvider? { get set }
 ```
 
+```objc
+@property (strong, readwrite, nullable) VZCustomVirtioDeviceProvider * provider;
+```
+
 #### Discussion
 
 This data defines how the virtual device is implemented.
 
 ## See Also
 
-- [class VZCustomVirtioDeviceDelegateProvider](vzcustomvirtiodevicedelegateprovider.md)
+### Related Documentation
+- [class VZCustomVirtioDeviceDelegateProvider](../vzcustomvirtiodevicedelegateprovider.md)
   A custom Virtio Device provider for devices that implement a custom Virtio device configuration delegate.
 
 

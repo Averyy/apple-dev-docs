@@ -1,7 +1,8 @@
 # lockIfAvailable()
 
 **Framework**: os  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to acquire a lock.
 
@@ -11,7 +12,7 @@ Attempts to acquire a lock.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,15 +21,18 @@ Attempts to acquire a lock.
 func lockIfAvailable() -> Bool
 ```
 
+Available when `State` is `()`.
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successful; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if successful; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func lock()](osallocatedunfairlock/lock.md)
+### Using locks
+- [func lock()](./lock%28%29.md)
   Acquires a lock.
-- [func unlock()](osallocatedunfairlock/unlock.md)
+- [func unlock()](./unlock%28%29.md)
   Ends the lock.
 
 

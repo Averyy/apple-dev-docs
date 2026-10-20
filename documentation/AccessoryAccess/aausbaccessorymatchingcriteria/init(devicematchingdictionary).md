@@ -1,7 +1,8 @@
 # init(deviceMatchingDictionary:)
 
 **Framework**: Accessory Access  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a criteria object using a USB device matching dictionary.
 
@@ -14,11 +15,15 @@ Initializes a criteria object using a USB device matching dictionary.
 init?(deviceMatchingDictionary dictionary: [String : any Sendable])
 ```
 
+```objc
+- (instancetype) initWithDeviceMatchingDictionary:(NSDictionary<NSString *,id> *) dictionary;
+```
+
 #### Discussion
 
-Use [`createMatchingDictionaryWithVendorID:productID:bcdDevice:deviceClass:deviceSubclass:deviceProtocol:speed:productIDArray:`](https://developer.apple.com/documentation/iousbhost/iousbhostdevice/creatematchingdictionarywithvendorid:productid:bcddevice:deviceclass:devicesubclass:deviceprotocol:speed:productidarray:) to create such a matching dictionary.
+Use [`createMatchingDictionaryWithVendorID:productID:bcdDevice:deviceClass:deviceSubclass:deviceProtocol:speed:productIDArray:`](../../IOUSBHost/iousbhostdevice/creatematchingdictionarywithvendorid_productid_bcddevice_deviceclass_devicesubclass_deviceprotocol_speed_productidarray_.md) to create such a matching dictionary.
 
-See [`IOTypes.h User-Space`](https://developer.apple.com/documentation/iokit/iotypes_h_user-space) in [`IOKit`](https://developer.apple.com/documentation/iokit) for more details about dictionary keys for the USB device properties.
+See [IOTypes.h User-Space](../../iokit/iotypes_h_user-space.md) in [IOKit](../../iokit/iokit.md) for more details about dictionary keys for the USB device properties.
 
 ## Parameters
 
@@ -26,11 +31,12 @@ See [`IOTypes.h User-Space`](https://developer.apple.com/documentation/iokit/iot
 
 ## See Also
 
-- [init?(deviceMatchingDictionary: [String : any Sendable]?, interfaceMatchingDictionaries: [[String : any Sendable]], interfaceMatchingOption: AAUSBAccessoryMatchingCriteria.InterfaceMatchingOption)](aausbaccessorymatchingcriteria/init(devicematchingdictionary:interfacematchingdictionaries:interfacematchingoption:).md)
+### Creating matching criteria
+- [init?(deviceMatchingDictionary: [String : any Sendable]?, interfaceMatchingDictionaries: [[String : any Sendable]], interfaceMatchingOption: AAUSBAccessoryMatchingCriteria.InterfaceMatchingOption)](./init%28devicematchingdictionary,interfacematchingdictionaries,interfacematchingoption%29.md)
   Initializes a criteria object using USB interface matching dictionaries, for the provided USB device matching criteria.
-- [convenience init(deviceMatchingCriteria: AAUSBAccessoryMatchingCriteria.DeviceMatchingCriteria)](aausbaccessorymatchingcriteria/init(devicematchingcriteria:).md)
+- [convenience init(deviceMatchingCriteria: AAUSBAccessoryMatchingCriteria.DeviceMatchingCriteria)](./init%28devicematchingcriteria%29.md)
   Initializes a criteria object with the provided USB device matching properties.
-- [convenience init(deviceMatchingCriteria: AAUSBAccessoryMatchingCriteria.DeviceMatchingCriteria?, interfaceMatchingCriteria: [AAUSBAccessoryMatchingCriteria.InterfaceMatchingCriteria], interfaceMatchingOption: AAUSBAccessoryMatchingCriteria.InterfaceMatchingOption)](aausbaccessorymatchingcriteria/init(devicematchingcriteria:interfacematchingcriteria:interfacematchingoption:).md)
+- [convenience init(deviceMatchingCriteria: AAUSBAccessoryMatchingCriteria.DeviceMatchingCriteria?, interfaceMatchingCriteria: [AAUSBAccessoryMatchingCriteria.InterfaceMatchingCriteria], interfaceMatchingOption: AAUSBAccessoryMatchingCriteria.InterfaceMatchingOption)](./init%28devicematchingcriteria,interfacematchingcriteria,interfacematchingoption%29.md)
   Initializes a criteria object using USB interface matching criteria, for the given USB device matching criteria.
 
 

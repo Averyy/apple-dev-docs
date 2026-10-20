@@ -1,21 +1,22 @@
 # GameCenterActivity.Relationships.Leaderboards
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 4.0+
 
 ## Declaration
 
-```swift
+```
 object GameCenterActivity.Relationships.Leaderboards
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterActivity.Relationships.Leaderboards.Data](gamecenteractivity/relationships-data.dictionary/leaderboards-data.dictionary/data-data.dictionary.md)
+- [object GameCenterActivity.Relationships.Leaderboards.Data](./leaderboards-data.dictionary/data-data.dictionary.md)
   The request body you use to update a activity.
 
 ## Properties

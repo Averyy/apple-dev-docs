@@ -1,14 +1,15 @@
 # ipi6_ifindex
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 unsigned int ipi6_ifindex;
 ```
 

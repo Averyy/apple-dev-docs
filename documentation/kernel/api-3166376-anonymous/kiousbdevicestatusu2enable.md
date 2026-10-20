@@ -1,14 +1,15 @@
 # kIOUSBDeviceStatusU2Enable
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kIOUSBDeviceStatusU2Enable = IOUSBBit(3)
 ```
 

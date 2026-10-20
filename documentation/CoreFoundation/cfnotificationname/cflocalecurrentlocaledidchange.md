@@ -1,7 +1,8 @@
 # cfLocaleCurrentLocaleDidChange
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Identifier for the notification sent if the current locale changes.
 
@@ -18,6 +19,10 @@ Identifier for the notification sent if the current locale changes.
 
 ```swift
 static let cfLocaleCurrentLocaleDidChange: CFNotificationName!
+```
+
+```c
+extern CFNotificationName const kCFLocaleCurrentLocaleDidChangeNotification;
 ```
 
 #### Discussion

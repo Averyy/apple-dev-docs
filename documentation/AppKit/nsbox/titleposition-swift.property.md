@@ -1,12 +1,13 @@
 # titlePosition
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A constant representing the title position.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,27 +15,32 @@ A constant representing the title position.
 var titlePosition: NSBox.TitlePosition { get set }
 ```
 
+```objc
+@property NSTitlePosition titlePosition;
+```
+
 #### Discussion
 
-A constant representing the position of the receiver’s title. See [`NSBox.TitlePosition`](nsbox/titleposition-swift.enum.md) for a list of these constants. If the new title position changes the size of the box’s border area, the content view is resized to absorb the difference, and the box is marked as needing redisplay.
+A constant representing the position of the receiver’s title. See [`NSBox.TitlePosition`](./titleposition-swift.enum.md) for a list of these constants. If the new title position changes the size of the box’s border area, the content view is resized to absorb the difference, and the box is marked as needing redisplay.
 
 ## See Also
 
-- [var borderRect: NSRect](nsbox/borderrect.md)
+### Configuring Boxes
+- [var borderRect: NSRect](./borderrect.md)
   The rectangle in which the receiver’s border is drawn.
-- [var boxType: NSBox.BoxType](nsbox/boxtype-swift.property.md)
+- [var boxType: NSBox.BoxType](./boxtype-swift.property.md)
   The receiver’s box type.
-- [var isTransparent: Bool](nsbox/istransparent.md)
+- [var isTransparent: Bool](./istransparent.md)
   A Boolean value that indicates whether the receiver is transparent.
-- [var title: String](nsbox/title.md)
+- [var title: String](./title.md)
   The receiver’s title.
-- [var titleFont: NSFont](nsbox/titlefont.md)
+- [var titleFont: NSFont](./titlefont.md)
   The font object used to draw the receiver’s title.
-- [var titleCell: Any](nsbox/titlecell.md)
+- [var titleCell: Any](./titlecell.md)
   The cell used to display the receiver’s title.
-- [var titleRect: NSRect](nsbox/titlerect.md)
+- [var titleRect: NSRect](./titlerect.md)
   The rectangle in which the receiver’s title is drawn.
-- [var borderType: NSBorderType](nsbox/bordertype.md)
+- [var borderType: NSBorderType](./bordertype.md)
   The receiver’s border type.
 
 

@@ -1,7 +1,8 @@
 # CKDatabase.RecordZoneChange.Modification
 
 **Framework**: CloudKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A record zone change that represents the modification of a record.
 
@@ -11,7 +12,7 @@ A record zone change that represents the modification of a record.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -23,16 +24,16 @@ struct Modification
 ## Topics
 
 ### Getting the Modified Record
-- [var record: CKRecord](ckdatabase/recordzonechange/modification/record.md)
+- [var record: CKRecord](./modification/record.md)
   The modified record.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

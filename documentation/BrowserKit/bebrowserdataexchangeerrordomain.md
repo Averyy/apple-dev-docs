@@ -1,14 +1,15 @@
 # BEBrowserDataExchangeErrorDomain
 
 **Framework**: BrowserKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that identifies the error domain for browser data exchange errors.
 
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -16,9 +17,14 @@ A constant that identifies the error domain for browser data exchange errors.
 let BEBrowserDataExchangeErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const BEBrowserDataExchangeErrorDomain;
+```
+
 ## See Also
 
-- [struct BEBrowserDataExchangeError](bebrowserdataexchangeerror-swift.struct.md)
+### Errors
+- [struct BEBrowserDataExchangeError](./bebrowserdataexchangeerror-swift.struct.md)
   An error that occurs during browser data import or export operations.
 
 

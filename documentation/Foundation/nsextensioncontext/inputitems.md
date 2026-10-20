@@ -1,9 +1,10 @@
 # inputItems
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The list of input [`NSExtensionItem`](nsextensionitem.md) objects associated with the context.
+The list of input [`NSExtensionItem`](../nsextensionitem.md) objects associated with the context.
 
 **Availability**:
 - iOS 8.0+
@@ -18,6 +19,18 @@ The list of input [`NSExtensionItem`](nsextensionitem.md) objects associated wit
 
 ```swift
 var inputItems: [Any] { get }
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSArray * inputItems;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSArray * inputItems;
 ```
 
 #### Discussion

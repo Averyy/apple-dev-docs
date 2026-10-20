@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Reserves a place for the input/output command buffer in the input/output command queue without committing the command buffer.
@@ -20,19 +21,24 @@ Reserves a place for the input/output command buffer in the input/output command
 func enqueue()
 ```
 
+```objc
+- (void) enqueue;
+```
+
 #### Discussion
 
-The method saves the next position for the command buffer in the input/output command queue. You can call [`enqueue()`](mtliocommandbuffer/enqueue().md) at any time relative to encoding commands, but you can only enqueue a command buffer once. To submit a command buffer to GPU for execution, call its [`commit()`](mtliocommandbuffer/commit().md) method.
+The method saves the next position for the command buffer in the input/output command queue. You can call [`enqueue()`](./enqueue%28%29.md) at any time relative to encoding commands, but you can only enqueue a command buffer once. To submit a command buffer to GPU for execution, call its [`commit()`](./commit%28%29.md) method.
 
 For example, to fill multiple command buffers asynchronously that execute in a specific order:
 
-1. Call each command buffer’s [`enqueue()`](mtliocommandbuffer/enqueue().md) method in order.
+1. Call each command buffer’s [`enqueue()`](./enqueue%28%29.md) method in order.
 2. Encode commands into each command buffer on its own, separate thread.
-3. Call each command buffer’s [`commit()`](mtliocommandbuffer/commit().md) in any order.
+3. Call each command buffer’s [`commit()`](./commit%28%29.md) in any order.
 
 ## See Also
 
-- [func commit()](mtliocommandbuffer/commit.md)
+### Submitting a command buffer
+- [func commit()](./commit%28%29.md)
   Submits the command buffer to the queue for execution on the GPU.
 
 

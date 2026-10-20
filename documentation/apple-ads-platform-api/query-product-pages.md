@@ -1,7 +1,8 @@
 # Query Product Pages
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Queries App Store product pages available to your account.
 
@@ -16,7 +17,7 @@ Filter by `adamId` to list all product pages for a specific app. This is the rec
 
 Changes made in App Store Connect, such as publishing, hiding, or editing a product page, appear in this endpoint’s results after a short propagation delay.
 
-See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
 ##### Filterable Fields
 
@@ -25,7 +26,7 @@ See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supporte
 | `adamId` | integer | `EQUALS` |  | Filter to all product pages for a specific app. |
 | `state` | string | `EQUALS` |  | Filter by page state. `state` is a plain nullable string with no fixed enum. The typical value is `PUBLISHED`. |
 
-The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
+The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
 Keep the following constraints in mind when querying product pages:
 
@@ -92,15 +93,32 @@ Keep the following constraints in mind when querying product pages:
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `QueryRequest`
+
+## Responses
+
+- `200` OK (`ProductPageDetailsQueryResponse`, `application/json`)
+- `400` Bad Request (`ProductPageDetailsQueryResponse`, `application/json`)
+- `401` Unauthorized (`Error`, `application/json`)
+- `403` Forbidden (`Error`, `application/json`)
+- `404` Not Found (`Error`, `application/json`)
+- `429` Too Many Requests (`Error`, `application/json`)
+- `500` Internal Server Error (`Error`, `application/json`)
 
 ## See Also
 
-- [Get Product Page by ID](get-product-page-by-id.md)
+- [Get Product Page by ID](./get-product-page-by-id.md)
   Retrieves a specific Product Page (DPP, CPP, or PPO) by its unique UUID.
-- [Query Product Page Locale Details](query-product-page-locale-details.md)
+- [Query Product Page Locale Details](./query-product-page-locale-details.md)
   Queries the localized content associated with a custom product page.
-- [Query App Locale Details](query-default-product-page-locale-details-by-adam-id.md)
+- [Query App Locale Details](./query-default-product-page-locale-details-by-adam-id.md)
   Return the default product page locale details for an app identified by its adamId.
 
 

@@ -1,7 +1,8 @@
 # releaseReference(at:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Releases the reference an entity holds.
 
@@ -21,7 +22,7 @@ static func releaseReference(at entity: Entity) throws
 
 ## Parameters
 
-- `entity`: The entity that holds the [`ReferenceComponent`](referencecomponent.md) to release.
+- `entity`: The entity that holds the [`ReferenceComponent`](../referencecomponent.md) to release.
 
 
 ---

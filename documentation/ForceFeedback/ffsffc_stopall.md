@@ -1,7 +1,8 @@
 # FFSFFC_STOPALL
 
 **Framework**: Force Feedback  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,13 +14,18 @@
 var FFSFFC_STOPALL: Int { get }
 ```
 
+```c
+FFSFFC_STOPALL
+```
+
 ## See Also
 
-- [var FFSFFC_CONTINUE: Int](ffsffc_continue.md)
-- [var FFSFFC_PAUSE: Int](ffsffc_pause.md)
-- [var FFSFFC_RESET: Int](ffsffc_reset.md)
-- [var FFSFFC_SETACTUATORSOFF: Int](ffsffc_setactuatorsoff.md)
-- [var FFSFFC_SETACTUATORSON: Int](ffsffc_setactuatorson.md)
+### Constants
+- [var FFSFFC_CONTINUE: Int](./ffsffc_continue.md)
+- [var FFSFFC_PAUSE: Int](./ffsffc_pause.md)
+- [var FFSFFC_RESET: Int](./ffsffc_reset.md)
+- [var FFSFFC_SETACTUATORSOFF: Int](./ffsffc_setactuatorsoff.md)
+- [var FFSFFC_SETACTUATORSON: Int](./ffsffc_setactuatorson.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # channelMap
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of integers that indicates which input to derive each output from.
 
@@ -20,6 +21,10 @@ An array of integers that indicates which input to derive each output from.
 var channelMap: [NSNumber] { get set }
 ```
 
+```objc
+@property (nonatomic, retain) NSArray<NSNumber *> * channelMap;
+```
+
 #### Discussion
 
 The array size equals the number of output channels. Each element’s value is the input channel number, starting with zero, that the framework copies to that output.
@@ -30,17 +35,18 @@ Setting a channel map overrides channel mapping due to any channel layouts in th
 
 ## See Also
 
-- [var dither: Bool](avaudioconverter/dither.md)
+### Getting audio converter properties
+- [var dither: Bool](./dither.md)
   A Boolean value that indicates whether dither is on.
-- [var downmix: Bool](avaudioconverter/downmix.md)
+- [var downmix: Bool](./downmix.md)
   A Boolean value that indicates whether the framework mixes the channels instead of remapping.
-- [var inputFormat: AVAudioFormat](avaudioconverter/inputformat.md)
+- [var inputFormat: AVAudioFormat](./inputformat.md)
   The format of the input audio stream.
-- [var outputFormat: AVAudioFormat](avaudioconverter/outputformat.md)
+- [var outputFormat: AVAudioFormat](./outputformat.md)
   The format of the output audio stream.
-- [var magicCookie: Data?](avaudioconverter/magiccookie.md)
+- [var magicCookie: Data?](./magiccookie.md)
   An object that contains metadata for encoders and decoders.
-- [var maximumOutputPacketSize: Int](avaudioconverter/maximumoutputpacketsize.md)
+- [var maximumOutputPacketSize: Int](./maximumoutputpacketsize.md)
   The maximum size of an output packet, in bytes.
 
 

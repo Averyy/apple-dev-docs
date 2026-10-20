@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOFWSBP2DontUsePTPacketLimit](1644254-anonymous/kiofwsbp2dontuseptpacketlimit.md)
-- [kIOFWSBP2FailsOnAckBusy](1644254-anonymous/kiofwsbp2failsonackbusy.md)
-- [kIOFWSBP2FailsOnBusResetsDuringIO](1644254-anonymous/kiofwsbp2failsonbusresetsduringio.md)
+- [kIOFWSBP2DontUsePTPacketLimit](./api-1644254-anonymous/kiofwsbp2dontuseptpacketlimit.md)
+- [kIOFWSBP2FailsOnAckBusy](./api-1644254-anonymous/kiofwsbp2failsonackbusy.md)
+- [kIOFWSBP2FailsOnBusResetsDuringIO](./api-1644254-anonymous/kiofwsbp2failsonbusresetsduringio.md)
 
 
 ---

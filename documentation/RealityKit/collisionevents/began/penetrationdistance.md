@@ -1,7 +1,8 @@
 # penetrationDistance
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The estimated distance of overlap between the two colliding entities in scene coordinate space.
 
@@ -21,7 +22,7 @@ var penetrationDistance: Float { get }
 
 #### Discussion
 
-This is the maximum penetration distance for all contacts, for more detailed penetration distance see [`contacts`](collisionevents/began/contacts.md) and [`fullContactInformation`](collisioncomponent/collisionoptions-swift.struct/fullcontactinformation.md).
+This is the maximum penetration distance for all contacts, for more detailed penetration distance see [`contacts`](./contacts.md) and [`fullContactInformation`](../../collisioncomponent/collisionoptions-swift.struct/fullcontactinformation.md).
 
 
 ---

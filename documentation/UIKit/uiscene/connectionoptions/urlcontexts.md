@@ -1,7 +1,8 @@
 # urlContexts
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URLs to open, along with metadata specifying how to open them.
 
@@ -16,6 +17,10 @@ The URLs to open, along with metadata specifying how to open them.
 
 ```swift
 var urlContexts: Set<UIOpenURLContext> { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSSet<UIOpenURLContext *> * URLContexts;
 ```
 
 #### Discussion

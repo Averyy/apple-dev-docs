@@ -1,7 +1,8 @@
 # es_exec_entitlements(_:)
 
 **Framework**: Endpoint Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 27.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func es_exec_entitlements(_ exec: UnsafePointer<es_event_exec_t>) -> xpc_object_t?
+```
+
+```c
+extern xpc_object_tes_exec_entitlements(const es_event_exec_t *exec);
 ```
 
 #### Return Value

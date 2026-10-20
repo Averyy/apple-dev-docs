@@ -1,7 +1,8 @@
 # Impression Share Query
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Retrieve impression share data showing how often your ads appear relative to total eligible impressions for a given search term and country.
 
@@ -12,7 +13,7 @@ Retrieve impression share data showing how often your ads appear relative to tot
 
 This endpoint measures impression share: what fraction of available impressions your app captures for a given search term and country. To identify competitive gaps, use this data. A low impression share on a high-volume term indicates that either budget, bid, or eligibility constraints are limiting your reach.
 
-See [`Filter`](filter.md) for the full set of supported comparison operators.
+See [`Filter`](./filter.md) for the full set of supported comparison operators.
 
 ##### Filterable Fields
 
@@ -306,11 +307,28 @@ POST /v1/insights/apps/impression-share/query
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `ImpressionShareQueryRequest`
+
+## Responses
+
+- `200` OK (`ImpressionShareQueryResponse`, `application/json`): Successful response. Returns [`ImpressionShareQueryResponse`](./impressionsharequeryresponse.md) (`result`: [`ImpressionShareResultContainer`](./impressionshareresultcontainer.md)).
+- `400` Bad Request (`Error`, `application/json`): Bad Request. Returns [`Error`](./error.md).
+- `401` Unauthorized (`Error`, `application/json`): Unauthorized.
+- `403` Forbidden (`Error`, `application/json`): Forbidden.
+- `404` Not Found (`Error`, `application/json`): Not Found. Returns [`Error`](./error.md).
+- `429` Too Many Requests (`Error`, `application/json`): Rate Limit Exceeded. Returns [`Error`](./error.md).
+- `500` Internal Server Error (`Error`, `application/json`): Internal Server Error. Returns [`Error`](./error.md).
 
 ## See Also
 
-- [Search Term Popularity Query](query-app-search-term-popularity-data.md)
+- [Search Term Popularity Query](./query-app-search-term-popularity-data.md)
   Retrieve the relative search volume ranking of search terms for a given App Store genre and country or region.
 
 

@@ -1,7 +1,8 @@
 # init(_:scale:judge:scoringMode:)
 
 **Framework**: Evaluations  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a single-metric evaluator with default prompt configuration.
 
@@ -16,6 +17,14 @@ Creates a single-metric evaluator with default prompt configuration.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, macOS, visionOS*
+
+```swift
+init(_ name: String, scale: ScoringScale, judge: any LanguageModel = SystemLanguageModel(), scoringMode: ScoringMode = .discrete)
+```
+
+*watchOS*
+
 ```swift
 init(_ name: String, scale: ScoringScale, judge: any LanguageModel, scoringMode: ScoringMode = .discrete)
 ```
@@ -29,7 +38,8 @@ init(_ name: String, scale: ScoringScale, judge: any LanguageModel, scoringMode:
 
 ## See Also
 
-- [init(String, scale: ScoringScale, judge: any LanguageModel, scoringMode: ScoringMode, prompt: ModelJudgePrompt<Input>)](modeljudgeevaluator/init(_:scale:judge:scoringmode:prompt:).md)
+### Creating a single-dimension evaluator
+- [init(String, scale: ScoringScale, judge: any LanguageModel, scoringMode: ScoringMode, prompt: ModelJudgePrompt<Input>)](./init%28_,scale,judge,scoringmode,prompt%29.md)
   Creates a single-metric evaluator with a custom judge prompt.
 
 

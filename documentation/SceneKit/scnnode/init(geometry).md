@@ -1,23 +1,28 @@
 # init(geometry:)
 
 **Framework**: SceneKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a node object with the specified geometry attached.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 init(geometry: SCNGeometry?)
+```
+
+```objc
++ (SCNNode *) nodeWithGeometry:(SCNGeometry *) geometry;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # init(contentsOfSFrameDirectory:columns:rows:)
 
 **Framework**: TabularData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a data frame from a Turi Create scalable data frame.
 
@@ -22,7 +23,7 @@ init(contentsOfSFrameDirectory url: URL, columns: [String]? = nil, rows: Range<I
 
 #### Discussion
 
-> **Note**: An `SFrameReadingError` instance.
+> **Throws**: An `SFrameReadingError` instance.
 
 ## Parameters
 
@@ -32,7 +33,8 @@ init(contentsOfSFrameDirectory url: URL, columns: [String]? = nil, rows: Range<I
 
 ## See Also
 
-- [struct ShapedData](shapeddata.md)
+### Creating a Data Frame from Turi Create Types
+- [struct ShapedData](../shapeddata.md)
   A collection type that represents multidimensional data in a data frame element.
 
 

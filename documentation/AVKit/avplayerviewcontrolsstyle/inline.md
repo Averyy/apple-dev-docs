@@ -1,7 +1,8 @@
 # AVPlayerViewControlsStyle.inline
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The view displays playback controls in a bar along the view’s bottom edge.
 
@@ -14,15 +15,20 @@ The view displays playback controls in a bar along the view’s bottom edge.
 case inline
 ```
 
+```c
+AVPlayerViewControlsStyleInline
+```
+
 ## See Also
 
-- [AVPlayerViewControlsStyle.none](avplayerviewcontrolsstyle/none.md)
+### Controls styles
+- [AVPlayerViewControlsStyle.none](./none.md)
   The view displays no playback controls.
-- [AVPlayerViewControlsStyle.floating](avplayerviewcontrolsstyle/floating.md)
+- [AVPlayerViewControlsStyle.floating](./floating.md)
   The view displays playback controls in a floating window over the video content.
-- [AVPlayerViewControlsStyle.minimal](avplayerviewcontrolsstyle/minimal.md)
+- [AVPlayerViewControlsStyle.minimal](./minimal.md)
   The view presents basic controls to play and pause playback.
-- [static var `default`: AVPlayerViewControlsStyle](avplayerviewcontrolsstyle/default.md)
+- [static var `default`: AVPlayerViewControlsStyle](./default.md)
   The view’s default controls style.
 
 

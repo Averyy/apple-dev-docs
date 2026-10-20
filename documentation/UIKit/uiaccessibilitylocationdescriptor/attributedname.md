@@ -1,7 +1,8 @@
 # attributedName
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the attributed string representation of the name for the accessibility location descriptor.
 
@@ -17,13 +18,18 @@ Returns the attributed string representation of the name for the accessibility l
 var attributedName: NSAttributedString { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSAttributedString * attributedName;
+```
+
 ## See Also
 
-- [var name: String](uiaccessibilitylocationdescriptor/name.md)
+### Getting the descriptor information
+- [var name: String](./name.md)
   Returns the plaintext string representation of the name for the accessibility location descriptor.
-- [var point: CGPoint](uiaccessibilitylocationdescriptor/point.md)
+- [var point: CGPoint](./point.md)
   Returns the geometric point of interest for the accessibility location descriptor within its associated view and in the coordinate space of the view.
-- [var view: UIView?](uiaccessibilitylocationdescriptor/view.md)
+- [var view: UIView?](./view.md)
   Returns the view associated with the accessibility location descriptor.
 
 

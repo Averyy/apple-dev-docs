@@ -1,7 +1,8 @@
 # shouldBeFocused
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the window should be focused.
 
@@ -16,6 +17,10 @@ Indicates whether the window should be focused.
 
 ```swift
 var shouldBeFocused: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL shouldBeFocused;
 ```
 
 

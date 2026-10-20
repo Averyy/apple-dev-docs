@@ -1,7 +1,8 @@
 # reLU(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the ReLU (rectified linear activation unit) function with the input tensor.
 
@@ -19,9 +20,13 @@ Computes the ReLU (rectified linear activation unit) function with the input ten
 func reLU(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
 ```
 
+```objc
+- (MPSGraphTensor *) reLUWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
+```
+
 #### Return Value
 
-A valid [`MPSGraphTensor`](mpsgraphtensor.md) object.
+A valid [`MPSGraphTensor`](../mpsgraphtensor.md) object.
 
 #### Discussion
 

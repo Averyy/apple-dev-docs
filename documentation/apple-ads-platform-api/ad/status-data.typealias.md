@@ -1,7 +1,8 @@
 # Ad.Status
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 Advertiser-configurable serving status for an ad.
 
@@ -10,13 +11,18 @@ Advertiser-configurable serving status for an ad.
 
 ## Declaration
 
-```swift
+```
 string Ad.Status
 ```
 
+## Possible Values
+
+- `ENABLED`: The advertiser has set the ad to run, so it can participate in auctions.
+- `PAUSED`: The advertiser has paused the ad, so it does not participate in auctions.
+
 #### Discussion
 
-The `Status` field controls auction eligibility directly, while the system-computed [`Ad.SystemStatus`](ad/systemstatus-data.typealias.md) reflects whether the ad is actually delivering.
+The `Status` field controls auction eligibility directly, while the system-computed [`Ad.SystemStatus`](./systemstatus-data.typealias.md) reflects whether the ad is actually delivering.
 
 ##### Example
 
@@ -26,7 +32,7 @@ The `Status` field controls auction eligibility directly, while the system-compu
 }
 ```
 
-See [`AdStatus`](adstatus.md) for additional context.
+See [`AdStatus`](../adstatus.md) for additional context.
 
 
 ---

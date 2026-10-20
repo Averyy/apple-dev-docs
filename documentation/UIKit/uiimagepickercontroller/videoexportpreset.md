@@ -1,15 +1,18 @@
 # videoExportPreset
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preset to use when preparing video for export to your app.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 11.0+ - Deprecated in 27.0
+- iPadOS 11.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`PHPickerViewController`](https://developer.apple.com/documentation/photosui/phpickerviewcontroller) with [`AVAssetExportSession`](../../AVFoundation/avassetexportsession.md) instead.
 
 ## Declaration
 
@@ -17,15 +20,20 @@ The preset to use when preparing video for export to your app.
 var videoExportPreset: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * videoExportPreset;
+```
+
 #### Discussion
 
-The value of this key is one of the export presets supported by the [`AVAssetExportSession`](https://developer.apple.com/documentation/avfoundation/avassetexportsession) class. For a list of possible values, see the export preset constants in [`AVAssetExportSession`](https://developer.apple.com/documentation/avfoundation/avassetexportsession).
+The value of this key is one of the export presets supported by the [`AVAssetExportSession`](../../AVFoundation/avassetexportsession.md) class. For a list of possible values, see the export preset constants in [`AVAssetExportSession`](../../AVFoundation/avassetexportsession.md).
 
 ## See Also
 
-- [var imageExportPreset: UIImagePickerController.ImageURLExportPreset](uiimagepickercontroller/imageexportpreset.md)
+### Deprecated
+- [var imageExportPreset: UIImagePickerController.ImageURLExportPreset](./imageexportpreset.md)
   The preset to use when preparing images for export to your app.
-- [UIImagePickerController.ImageURLExportPreset](uiimagepickercontroller/imageurlexportpreset.md)
+- [UIImagePickerController.ImageURLExportPreset](./imageurlexportpreset.md)
   Constants that indicate how to export images to the client app.
 
 

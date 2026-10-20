@@ -1,7 +1,8 @@
 # IntelligenceSettingsAppsObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 If present, configures app-specific Intelligence features.
 
@@ -14,25 +15,27 @@ If present, configures app-specific Intelligence features.
 
 ## Declaration
 
-```swift
+```
 object IntelligenceSettingsAppsObject
 ```
 
 ## Topics
 
 ### Objects
-- [object IntelligenceSettingsApps_CalendarObject](intelligencesettingsapps_calendarobject.md)
+- [object IntelligenceSettingsApps_CalendarObject](./intelligencesettingsapps_calendarobject.md)
   If present, configures Calendar and Reminders Intelligence features.
-- [object IntelligenceSettingsApps_MailObject](intelligencesettingsapps_mailobject.md)
+- [object IntelligenceSettingsApps_MailObject](./intelligencesettingsapps_mailobject.md)
   If present, configures Mail Intelligence features.
-- [object IntelligenceSettingsApps_NotesObject](intelligencesettingsapps_notesobject.md)
+- [object IntelligenceSettingsApps_NotesObject](./intelligencesettingsapps_notesobject.md)
   If present, configures Notes Intelligence features.
-- [object IntelligenceSettingsApps_SafariObject](intelligencesettingsapps_safariobject.md)
+- [object IntelligenceSettingsApps_SafariObject](./intelligencesettingsapps_safariobject.md)
   If present, configures Safari intelligence features.
 
 ## Properties
 
-- `Calendar` (IntelligenceSettingsApps_CalendarObject): If present, configures Calendar and Reminders Intelligence features. Available: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+- `Calendar` (IntelligenceSettingsApps_CalendarObject): If present, configures Calendar and Reminders Intelligence features.
+
+  Available: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
 - `Mail` (IntelligenceSettingsApps_MailObject): If present, configures Mail Intelligence features.
 - `Notes` (IntelligenceSettingsApps_NotesObject): If present, configures Notes Intelligence features.
 - `Safari` (IntelligenceSettingsApps_SafariObject): If present, configures Safari intelligence features.

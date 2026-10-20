@@ -1,7 +1,8 @@
 # init(position:)
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that represents the attributes of an overlay you use to recommend an App Clip’s corresponding app.
 
@@ -17,15 +18,20 @@ Creates an object that represents the attributes of an overlay you use to recomm
 init(position: SKOverlay.Position)
 ```
 
+```objc
+- (instancetype) initWithPosition:(SKOverlayPosition) position;
+```
+
 ## Parameters
 
 - `position`: The position of the overlay on the screen.
 
 ## See Also
 
-- [var position: SKOverlay.Position](skoverlay/appclipconfiguration/position.md)
+### Creating an App Clip Configuration
+- [var position: SKOverlay.Position](./position.md)
   The position of the overlay on the screen.
-- [SKOverlay.Position](skoverlay/position.md)
+- [SKOverlay.Position](../position.md)
   Constants that identify the position of an overlay on the screen.
 
 

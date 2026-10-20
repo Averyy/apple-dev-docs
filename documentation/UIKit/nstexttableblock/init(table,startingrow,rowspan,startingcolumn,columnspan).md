@@ -1,7 +1,8 @@
 # init(table:startingRow:rowSpan:startingColumn:columnSpan:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 6.0+
@@ -17,9 +18,14 @@
 init(table: NSTextTable, startingRow row: Int, rowSpan: Int, startingColumn column: Int, columnSpan: Int)
 ```
 
+```objc
+- (instancetype) initWithTable:(NSTextTable *) table startingRow:(NSInteger) row rowSpan:(NSInteger) rowSpan startingColumn:(NSInteger) column columnSpan:(NSInteger) columnSpan;
+```
+
 ## See Also
 
-- [init?(coder: NSCoder)](nstexttableblock/init(coder:).md)
+### Creating a text table block
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

@@ -1,15 +1,16 @@
 # init(uuid:major:minor:identifier:)
 
 **Framework**: Core Location  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a region object that targets beacons with the specified UUID, and major and minor values.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- macOS 10.15+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.15+ - Deprecated in 27.2
 
 ## Declaration
 
@@ -17,24 +18,29 @@ Creates and returns a region object that targets beacons with the specified UUID
 init(uuid: UUID, major: CLBeaconMajorValue, minor: CLBeaconMinorValue, identifier: String)
 ```
 
+```objc
+- (instancetype) initWithUUID:(NSUUID *) uuid major:(CLBeaconMajorValue) major minor:(CLBeaconMinorValue) minor identifier:(NSString *) identifier;
+```
+
 ## Parameters
 
-- `uuid`: A [`NSUUID`](https://developer.apple.com/documentation/foundation/nsuuid) that identifies the beacons to target.
-- `major`: The [`CLBeaconMajorValue`](clbeaconmajorvalue.md) that characterizes beacons for this region to target.
-- `minor`: The [`CLBeaconMinorValue`](clbeaconminorvalue.md) that characterizes beacons for this region to target.
+- `uuid`: A [`NSUUID`](../../Foundation/nsuuid.md) that identifies the beacons to target.
+- `major`: The [`CLBeaconMajorValue`](../clbeaconmajorvalue.md) that characterizes beacons for this region to target.
+- `minor`: The [`CLBeaconMinorValue`](../clbeaconminorvalue.md) that characterizes beacons for this region to target.
 - `identifier`: A unique identifier to associate with the returned region object. You use this identifier to differentiate regions within your app. This value can’t be `nil.`
 
 ## See Also
 
-- [init(beaconIdentityConstraint: CLBeaconIdentityConstraint, identifier: String)](clbeaconregion/init(beaconidentityconstraint:identifier:).md)
+### Creating a beacon region
+- [init(beaconIdentityConstraint: CLBeaconIdentityConstraint, identifier: String)](./init%28beaconidentityconstraint,identifier%29.md)
   Creates and returns a region object that targets beacons that satisfy the specified beacon identity constraints.
-- [init(uuid: UUID, identifier: String)](clbeaconregion/init(uuid:identifier:)-6hg8v.md)
+- [init(uuid: UUID, identifier: String)](./init%28uuid,identifier%29-6hg8v.md)
   Creates and returns a region object that targets beacons with the specified UUID.
-- [init(uuid: UUID, major: CLBeaconMajorValue, identifier: String)](clbeaconregion/init(uuid:major:identifier:)-8ur0j.md)
+- [init(uuid: UUID, major: CLBeaconMajorValue, identifier: String)](./init%28uuid,major,identifier%29-8ur0j.md)
   Creates and returns a region object that targets beacons with the specified UUID and major value.
-- [typealias CLBeaconMajorValue](clbeaconmajorvalue.md)
+- [typealias CLBeaconMajorValue](../clbeaconmajorvalue.md)
   The most significant value in a beacon.
-- [typealias CLBeaconMinorValue](clbeaconminorvalue.md)
+- [typealias CLBeaconMinorValue](../clbeaconminorvalue.md)
   The least significant value in a beacon.
 
 

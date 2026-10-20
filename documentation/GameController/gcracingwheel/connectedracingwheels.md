@@ -1,7 +1,8 @@
 # connectedRacingWheels
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The racing wheels connected to the device.
 
@@ -15,11 +16,16 @@ The racing wheels connected to the device.
 class var connectedRacingWheels: Set<GCRacingWheel> { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) NSSet<GCRacingWheel *> * connectedRacingWheels;
+```
+
 ## See Also
 
-- [static let GCRacingWheelDidConnect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gcracingwheeldidconnect.md)
+### Discovering racing wheels
+- [static let GCRacingWheelDidConnect: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/gcracingwheeldidconnect.md)
   A notification that posts after a racing wheel controller connects to the device.
-- [static let GCRacingWheelDidDisconnect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gcracingwheeldiddisconnect.md)
+- [static let GCRacingWheelDidDisconnect: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/gcracingwheeldiddisconnect.md)
   A notification that posts after a racing wheel controller disconnects from the device.
 
 

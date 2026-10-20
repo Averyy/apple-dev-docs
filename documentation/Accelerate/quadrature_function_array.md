@@ -1,21 +1,26 @@
 # quadrature_function_array
 
 **Framework**: Accelerate  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 typealias quadrature_function_array = (UnsafeMutableRawPointer?, Int, UnsafePointer<Double>, UnsafeMutablePointer<Double>) -> Void
+```
+
+```c
+typedef void (*)(void *, unsigned long, const double *, double *) quadrature_function_array;
 ```
 
 #### Discussion
@@ -33,8 +38,9 @@ Should set values y[i] = F(x[i]) for i=0..n-1.
 
 ## See Also
 
-- [struct quadrature_integrate_function](quadrature_integrate_function.md)
-- [struct quadrature_integrate_options](quadrature_integrate_options.md)
+### Type Aliases
+- [struct quadrature_integrate_function](./quadrature_integrate_function.md)
+- [struct quadrature_integrate_options](./quadrature_integrate_options.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # frustum
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frustum to test instances against.
 
@@ -19,7 +20,8 @@ var frustum: LowLevelRenderer.CullConfiguration.Frustum { get set }
 
 ## See Also
 
-- [LowLevelRenderer.CullConfiguration.Frustum](lowlevelrenderer/cullconfiguration/frustum-swift.struct.md)
+### Configuring the frustum
+- [LowLevelRenderer.CullConfiguration.Frustum](./frustum-swift.struct.md)
   A culling frustum defined by a set of planes.
 
 

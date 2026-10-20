@@ -1,7 +1,8 @@
 # timeZone
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time zone with which to specify time values.
 
@@ -20,21 +21,26 @@ The time zone with which to specify time values.
 var timeZone: TimeZone! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) NSTimeZone * timeZone;
+```
+
 #### Discussion
 
-The default value of this property is the default time zone for the current user, which is accessible from the [`default`](nstimezone/default.md) method of [`NSTimeZone`](nstimezone.md). You can change this value to a different time zone to generate strings based on that time zone.
+The default value of this property is the default time zone for the current user, which is accessible from the [`default`](../nstimezone/default.md) method of [`NSTimeZone`](../nstimezone.md). You can change this value to a different time zone to generate strings based on that time zone.
 
 ## See Also
 
-- [var dateStyle: DateIntervalFormatter.Style](dateintervalformatter/datestyle.md)
+### Configuring the Formatter Options
+- [var dateStyle: DateIntervalFormatter.Style](./datestyle.md)
   The style to use when formatting day, month, and year information.
-- [var timeStyle: DateIntervalFormatter.Style](dateintervalformatter/timestyle.md)
+- [var timeStyle: DateIntervalFormatter.Style](./timestyle.md)
   The style to use when formatting hour, minute, and second information.
-- [var dateTemplate: String!](dateintervalformatter/datetemplate.md)
+- [var dateTemplate: String!](./datetemplate.md)
   The template for formatting one date and time value.
-- [var calendar: Calendar!](dateintervalformatter/calendar.md)
+- [var calendar: Calendar!](./calendar.md)
   The calendar to use for date values.
-- [var locale: Locale!](dateintervalformatter/locale.md)
+- [var locale: Locale!](./locale.md)
   The locale to use when formatting date and time values.
 
 

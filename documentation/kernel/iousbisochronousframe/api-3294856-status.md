@@ -1,7 +1,8 @@
 # status
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The completion status for this individual frame.
 
@@ -10,7 +11,7 @@ The completion status for this individual frame.
 
 ## Declaration
 
-```swift
+```c
 IOReturn status;
 ```
 
@@ -20,13 +21,14 @@ The system initializes this field to `kIOReturnInvalid` and updates it with a va
 
 ## See Also
 
-- [requestCount](iousbisochronousframe/3294855-requestcount.md)
+### Getting the Frame Properties
+- [requestCount](./api-3294855-requestcount.md)
   The number of bytes to transfer for this frame.
-- [completeCount](iousbisochronousframe/3294854-completecount.md)
+- [completeCount](./api-3294854-completecount.md)
   The number of bytes that the system actually transferred for this frame.
-- [reserved](iousbisochronousframe/3377598-reserved.md)
+- [reserved](./api-3377598-reserved.md)
   Reserved for future use.
-- [timeStamp](iousbisochronousframe/3294857-timestamp.md)
+- [timeStamp](./api-3294857-timestamp.md)
   The frame’s observed completion time.
 
 

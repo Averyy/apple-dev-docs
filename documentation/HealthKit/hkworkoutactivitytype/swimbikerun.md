@@ -1,7 +1,8 @@
 # HKWorkoutActivityType.swimBikeRun
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The constant for multisport activities like triathlons.
 
@@ -19,17 +20,22 @@ The constant for multisport activities like triathlons.
 case swimBikeRun
 ```
 
+```c
+HKWorkoutActivityTypeSwimBikeRun
+```
+
 ## Mentions
 
-- [Dividing a HealthKit workout into activities](dividing-a-healthkit-workout-into-activities.md)
+- [Dividing a HealthKit workout into activities](../dividing-a-healthkit-workout-into-activities.md)
 
 #### Discussion
 
-Use this constant to create workouts that contain the [`HKWorkoutActivityType.swimming`](hkworkoutactivitytype/swimming.md), [`HKWorkoutActivityType.cycling`](hkworkoutactivitytype/cycling.md), and [`HKWorkoutActivityType.running`](hkworkoutactivitytype/running.md) activities. These activities can happen in any order. For more information, see [`HKWorkoutActivity`](hkworkoutactivity.md). HealthKit provides optimized calorie calculations for this activity based on the data from Apple Watch’s sensors.
+Use this constant to create workouts that contain the [`HKWorkoutActivityType.swimming`](./swimming.md), [`HKWorkoutActivityType.cycling`](./cycling.md), and [`HKWorkoutActivityType.running`](./running.md) activities. These activities can happen in any order. For more information, see [`HKWorkoutActivity`](../hkworkoutactivity.md). HealthKit provides optimized calorie calculations for this activity based on the data from Apple Watch’s sensors.
 
 ## See Also
 
-- [HKWorkoutActivityType.transition](hkworkoutactivitytype/transition.md)
+### Multisport activities
+- [HKWorkoutActivityType.transition](./transition.md)
   A constant for the transition time between activities in a multisport workout.
 
 

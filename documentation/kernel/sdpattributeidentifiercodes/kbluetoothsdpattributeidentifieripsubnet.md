@@ -1,14 +1,15 @@
 # kBluetoothSDPAttributeIdentifierIPSubnet
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPAttributeIdentifierIPSubnet = 0x0200
 ```
 

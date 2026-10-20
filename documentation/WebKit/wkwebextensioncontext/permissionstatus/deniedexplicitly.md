@@ -1,7 +1,8 @@
 # WKWebExtensionContext.PermissionStatus.deniedExplicitly
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the permission was explicitly denied.
 
@@ -16,6 +17,10 @@ Indicates that the permission was explicitly denied.
 
 ```swift
 case deniedExplicitly
+```
+
+```c
+WKWebExtensionContextPermissionStatusDeniedExplicitly
 ```
 
 

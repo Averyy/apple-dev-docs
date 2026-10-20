@@ -2,12 +2,13 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the text position where you draw the attachment cell’s image, relative to the current point established in the glyph layout.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -16,17 +17,23 @@ nonisolated
 func cellBaselineOffset() -> NSPoint
 ```
 
+```objc
+- (NSPoint) cellBaselineOffset;
+```
+
 #### Discussion
 
 The image should be drawn so its lower-left corner lies on this point.
 
 ## See Also
 
-- [var icon: NSImage?](../foundation/filewrapper/icon.md)
+### Related Documentation
+- [var icon: NSImage?](../../Foundation/filewrapper/icon.md)
   The icon that represents the file wrapper.
-- [func cellSize() -> NSSize](nstextattachmentcellprotocol/cellsize.md)
+### Providing the cell metrics
+- [func cellSize() -> NSSize](./cellsize%28%29.md)
   Returns the size of the attachment’s icon.
-- [func cellFrame(for: NSTextContainer, proposedLineFragment: NSRect, glyphPosition: NSPoint, characterIndex: Int) -> NSRect](nstextattachmentcellprotocol/cellframe(for:proposedlinefragment:glyphposition:characterindex:).md)
+- [func cellFrame(for: NSTextContainer, proposedLineFragment: NSRect, glyphPosition: NSPoint, characterIndex: Int) -> NSRect](./cellframe%28for,proposedlinefragment,glyphposition,characterindex%29.md)
   Returns the frame of the cell to draw at the specified position in a text container.
 
 

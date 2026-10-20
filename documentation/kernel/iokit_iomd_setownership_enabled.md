@@ -1,14 +1,15 @@
 # iokit_iomd_setownership_enabled
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 bool iokit_iomd_setownership_enabled;
 ```
 

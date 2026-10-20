@@ -1,7 +1,8 @@
 # stopObserving()
 
 **Framework**: Screen Time  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops observing changes to the current configuration.
 
@@ -17,9 +18,14 @@ Stops observing changes to the current configuration.
 func stopObserving()
 ```
 
+```objc
+- (void) stopObserving;
+```
+
 ## See Also
 
-- [func startObserving()](stscreentimeconfigurationobserver/startobserving.md)
+### Instance methods
+- [func startObserving()](./startobserving%28%29.md)
   Starts observing changes to the current configuration.
 
 

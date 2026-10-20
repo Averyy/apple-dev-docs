@@ -1,7 +1,8 @@
 # FSSyncFlags.wait
 
 **Framework**: FSKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A flag for synchronized I/O with file-integrity completion.
 
@@ -14,11 +15,16 @@ A flag for synchronized I/O with file-integrity completion.
 case wait
 ```
 
+```c
+FSSyncFlagsWait
+```
+
 ## See Also
 
-- [FSSyncFlags.noWait](fssyncflags/nowait.md)
+### Declaring synchronization behaviors
+- [FSSyncFlags.noWait](./nowait.md)
   A flag for synchronized I/O that starts I/O but doesn’t wait for it.
-- [FSSyncFlags.dWait](fssyncflags/dwait.md)
+- [FSSyncFlags.dWait](./dwait.md)
   A flag for synchronized I/O with data-integrity completion.
 
 

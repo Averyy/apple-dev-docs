@@ -1,7 +1,8 @@
 # scrollTo(x:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scrolls the position of the scroll view to the x value you provide.
 

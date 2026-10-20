@@ -1,18 +1,21 @@
 # tracks
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tracks an asset contains.
 
 **Availability**:
-- iOS 12.0+
-- iPadOS 12.0+
-- Mac Catalyst 13.1+
-- macOS 10.11+
-- tvOS 12.0+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 12.0+ - Deprecated in 16.0
+- iPadOS 12.0+ - Deprecated in 16.0
+- Mac Catalyst 13.1+ - Deprecated in 16.0
+- macOS 10.11+ - Deprecated in 13.0
+- tvOS 12.0+ - Deprecated in 16.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 6.0+ - Deprecated in 9.0
+
+> **Deprecated**: Load the value of [`tracks`](../avpartialasyncproperty/tracks-9z3j9.md) asynchronously instead.
 
 ## Declaration
 
@@ -20,13 +23,18 @@ The tracks an asset contains.
 var tracks: [AVFragmentedAssetTrack] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVFragmentedAssetTrack *> * tracks;
+```
+
 ## See Also
 
-- [func track(withTrackID: CMPersistentTrackID) -> AVFragmentedAssetTrack?](avfragmentedasset/track(withtrackid:).md)
+### Accessing tracks
+- [func track(withTrackID: CMPersistentTrackID) -> AVFragmentedAssetTrack?](./track%28withtrackid%29.md)
   Returns a track that contains the specified identifier.
-- [func tracks(withMediaType: AVMediaType) -> [AVFragmentedAssetTrack]](avfragmentedasset/tracks(withmediatype:).md)
+- [func tracks(withMediaType: AVMediaType) -> [AVFragmentedAssetTrack]](./tracks%28withmediatype%29.md)
   Returns tracks that present media of a specified type.
-- [func tracks(withMediaCharacteristic: AVMediaCharacteristic) -> [AVFragmentedAssetTrack]](avfragmentedasset/tracks(withmediacharacteristic:).md)
+- [func tracks(withMediaCharacteristic: AVMediaCharacteristic) -> [AVFragmentedAssetTrack]](./tracks%28withmediacharacteristic%29.md)
   Returns tracks that present media of a specified characteristic.
 
 

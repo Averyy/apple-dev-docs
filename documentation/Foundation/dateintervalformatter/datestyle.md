@@ -1,7 +1,8 @@
 # dateStyle
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style to use when formatting day, month, and year information.
 
@@ -20,21 +21,26 @@ The style to use when formatting day, month, and year information.
 var dateStyle: DateIntervalFormatter.Style { get set }
 ```
 
+```objc
+@property NSDateIntervalFormatterStyle dateStyle;
+```
+
 #### Discussion
 
-Set this property to an appropriate value before generating string values. The default value of this property is [`DateIntervalFormatter.Style.none`](dateintervalformatter/style/none.md).
+Set this property to an appropriate value before generating string values. The default value of this property is [`DateIntervalFormatter.Style.none`](./style/none.md).
 
 ## See Also
 
-- [var timeStyle: DateIntervalFormatter.Style](dateintervalformatter/timestyle.md)
+### Configuring the Formatter Options
+- [var timeStyle: DateIntervalFormatter.Style](./timestyle.md)
   The style to use when formatting hour, minute, and second information.
-- [var dateTemplate: String!](dateintervalformatter/datetemplate.md)
+- [var dateTemplate: String!](./datetemplate.md)
   The template for formatting one date and time value.
-- [var calendar: Calendar!](dateintervalformatter/calendar.md)
+- [var calendar: Calendar!](./calendar.md)
   The calendar to use for date values.
-- [var locale: Locale!](dateintervalformatter/locale.md)
+- [var locale: Locale!](./locale.md)
   The locale to use when formatting date and time values.
-- [var timeZone: TimeZone!](dateintervalformatter/timezone.md)
+- [var timeZone: TimeZone!](./timezone.md)
   The time zone with which to specify time values.
 
 

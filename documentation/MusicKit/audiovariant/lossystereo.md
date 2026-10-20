@@ -1,7 +1,8 @@
 # AudioVariant.lossyStereo
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Lossy stereo uses compression used to store sound data.
 

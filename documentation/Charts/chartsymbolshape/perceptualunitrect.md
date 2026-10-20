@@ -2,6 +2,7 @@
 
 **Framework**: Swift Charts  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Returns a rectangle that bounds the shape in such a way that viewers perceive it as having the same size and position as a unit rectangle.

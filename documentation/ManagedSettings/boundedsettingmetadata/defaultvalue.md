@@ -1,7 +1,8 @@
 # defaultValue
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The implicit value for a setting if your app doesn’t set a value.
 
@@ -18,7 +19,8 @@ let defaultValue: Value
 
 ## See Also
 
-- [let bounds: ClosedRange<Value>](boundedsettingmetadata/bounds.md)
+### Getting metadata
+- [let bounds: ClosedRange<Value>](./bounds.md)
   The range of values that a setting can accomodate.
 
 

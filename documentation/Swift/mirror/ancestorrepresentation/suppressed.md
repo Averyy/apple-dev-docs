@@ -1,7 +1,8 @@
 # Mirror.AncestorRepresentation.suppressed
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Suppresses the representation of all ancestor classes.
 

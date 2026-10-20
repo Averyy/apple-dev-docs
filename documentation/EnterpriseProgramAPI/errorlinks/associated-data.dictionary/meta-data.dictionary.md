@@ -1,11 +1,12 @@
 # ErrorLinks.Associated.Meta
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object ErrorLinks.Associated.Meta
 ```
 

@@ -1,7 +1,8 @@
 # domain
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Bonjour domain of the service.
 
@@ -22,13 +23,14 @@ let domain: String?
 
 ## See Also
 
-- [let name: String?](nwlistener/service-swift.struct/name.md)
+### Inspecting Services
+- [let name: String?](./name.md)
   The Bonjour name of the service.
-- [let type: String](nwlistener/service-swift.struct/type.md)
+- [let type: String](./type.md)
   The Bonjour type of the service.
-- [var txtRecordObject: NWTXTRecord?](nwlistener/service-swift.struct/txtrecordobject.md)
+- [var txtRecordObject: NWTXTRecord?](./txtrecordobject.md)
   The TXT record to advertise with the service.
-- [let txtRecord: Data?](nwlistener/service-swift.struct/txtrecord.md)
+- [let txtRecord: Data?](./txtrecord.md)
   The TXT record as a raw buffer to advertise with the service.
 
 

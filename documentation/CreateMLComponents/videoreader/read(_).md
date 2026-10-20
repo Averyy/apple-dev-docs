@@ -1,7 +1,8 @@
 # read(_:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Reads a sequence of annotated files as an array of annotated async sequences of video frames.
 
@@ -19,6 +20,12 @@ Reads a sequence of annotated files as an array of annotated async sequences of 
 static func read<S, Annotation>(_ annotatedFiles: S) async throws -> [AnnotatedFeature<VideoReader.AsyncFrames, Annotation>] where S : Sequence, Annotation : Equatable, Annotation : Sendable, S.Element == AnnotatedFeature<URL, Annotation>
 ```
 
+**Other overloads**:
+
+```swift
+static func read<S>(_ files: S) async throws -> [VideoReader.AsyncFrames] where S : Sequence, S.Element == URL
+```
+
 #### Return Value
 
 An array of annotated async sequences.
@@ -29,15 +36,16 @@ An array of annotated async sequences.
 
 ## See Also
 
-- [static func readCamera(configuration: VideoReader.CameraConfiguration) async throws -> VideoReader.CameraAsyncBuffers](videoreader/readcamera(configuration:).md)
+### Reading
+- [static func readCamera(configuration: VideoReader.CameraConfiguration) async throws -> VideoReader.CameraAsyncBuffers](./readcamera%28configuration%29.md)
   Reads an async sequence of video frames captured with a video camera.
-- [static func read(contentsOf: URL) async throws -> VideoReader.AsyncFrames](videoreader/read(contentsof:).md)
+- [static func read(contentsOf: URL) async throws -> VideoReader.AsyncFrames](./read%28contentsof%29.md)
   Reads a video file as an async sequence of video frames.
-- [VideoReader.AsyncFrames](videoreader/asyncframes.md)
+- [VideoReader.AsyncFrames](./asyncframes.md)
   An async sequence of video frames.
-- [VideoReader.CameraAsyncBuffers](videoreader/cameraasyncbuffers.md)
+- [VideoReader.CameraAsyncBuffers](./cameraasyncbuffers.md)
   An async sequence of video frames.
-- [VideoReader.CameraConfiguration](videoreader/cameraconfiguration.md)
+- [VideoReader.CameraConfiguration](./cameraconfiguration.md)
   The configuration of the camera to pass to the `readCamera` method.
 
 

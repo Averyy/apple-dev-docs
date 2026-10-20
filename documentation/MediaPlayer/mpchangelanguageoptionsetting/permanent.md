@@ -1,7 +1,8 @@
 # MPChangeLanguageOptionSetting.permanent
 
 **Framework**: Media Player  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The language option change is applied to all future playback items.
 
@@ -20,11 +21,16 @@ The language option change is applied to all future playback items.
 case permanent
 ```
 
+```c
+MPChangeLanguageOptionSettingPermanent
+```
+
 ## See Also
 
-- [MPChangeLanguageOptionSetting.none](mpchangelanguageoptionsetting/none.md)
+### Enumeration Cases
+- [MPChangeLanguageOptionSetting.none](./none.md)
   No language option change is to be made.
-- [MPChangeLanguageOptionSetting.nowPlayingItemOnly](mpchangelanguageoptionsetting/nowplayingitemonly.md)
+- [MPChangeLanguageOptionSetting.nowPlayingItemOnly](./nowplayingitemonly.md)
   The language option change is applied to the now playing item only.
 
 

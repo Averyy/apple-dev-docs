@@ -1,7 +1,8 @@
 # splitViewControllerPreferredInterfaceOrientationForPresentation(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for the orientation to use when presenting the split view controller.
 
@@ -15,6 +16,10 @@ Asks the delegate for the orientation to use when presenting the split view cont
 
 ```swift
 optional func splitViewControllerPreferredInterfaceOrientationForPresentation(_ splitViewController: UISplitViewController) -> UIInterfaceOrientation
+```
+
+```objc
+- (UIInterfaceOrientation) splitViewControllerPreferredInterfaceOrientationForPresentation:(UISplitViewController *) splitViewController;
 ```
 
 #### Return Value
@@ -33,9 +38,11 @@ If you do not implement this method, the system presents the view controller usi
 
 ## See Also
 
-- [var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation](uiviewcontroller/preferredinterfaceorientationforpresentation.md)
+### Related Documentation
+- [var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation](../uiviewcontroller/preferredinterfaceorientationforpresentation.md)
   The interface orientation to use when presenting the view controller.
-- [func splitViewControllerSupportedInterfaceOrientations(UISplitViewController) -> UIInterfaceOrientationMask](uisplitviewcontrollerdelegate/splitviewcontrollersupportedinterfaceorientations(_:).md)
+### Specifying the interface orientations
+- [func splitViewControllerSupportedInterfaceOrientations(UISplitViewController) -> UIInterfaceOrientationMask](./splitviewcontrollersupportedinterfaceorientations%28_%29.md)
   Asks the delegate to specify the interface orientations that the split view controller supports.
 
 

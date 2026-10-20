@@ -1,7 +1,8 @@
 # MonthPrecipitationStatistics
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes precipitation statistics for a specific month.
 
@@ -23,23 +24,23 @@ struct MonthPrecipitationStatistics
 ## Topics
 
 ### Instance Properties
-- [var averagePrecipitationAmount: Measurement<UnitLength>](monthprecipitationstatistics/averageprecipitationamount.md)
+- [var averagePrecipitationAmount: Measurement<UnitLength>](./monthprecipitationstatistics/averageprecipitationamount.md)
   The average amount of liquid precipitation for the month.
-- [var averagePrecipitationProbability: Double](monthprecipitationstatistics/averageprecipitationprobability.md)
+- [var averagePrecipitationProbability: Double](./monthprecipitationstatistics/averageprecipitationprobability.md)
   The average percentage probability of precipitation (0.0 = 0%, 1.0 = 100%) for the month.
-- [var averageSnowfallAmount: Measurement<UnitLength>](monthprecipitationstatistics/averagesnowfallamount.md)
+- [var averageSnowfallAmount: Measurement<UnitLength>](./monthprecipitationstatistics/averagesnowfallamount.md)
   The average amount of snowfall as depth of snow crystals for the month.
-- [var month: Int](monthprecipitationstatistics/month.md)
+- [var month: Int](./monthprecipitationstatistics/month.md)
   The month of the year, in UTC.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # requirePasswordForPurchases
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to require the user’s password to make App Store transactions.
 
@@ -22,7 +23,8 @@ Specify `true` to require the user’s password for each transaction. The value 
 
 ## See Also
 
-- [static let requirePasswordForPurchases: SettingMetadata<Bool>](appstoresettings/requirepasswordforpurchases-swift.type.property.md)
+### Requiring a password
+- [static let requirePasswordForPurchases: SettingMetadata<Bool>](./requirepasswordforpurchases-swift.type.property.md)
   The metadata associated with the setting that requires a password for App Store purchases.
 
 

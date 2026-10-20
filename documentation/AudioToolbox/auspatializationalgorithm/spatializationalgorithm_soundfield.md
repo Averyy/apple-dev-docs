@@ -1,15 +1,16 @@
 # AUSpatializationAlgorithm.spatializationAlgorithm_SoundField
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,13 +18,18 @@
 case spatializationAlgorithm_SoundField
 ```
 
+```c
+kSpatializationAlgorithm_SoundField
+```
+
 ## See Also
 
-- [AUSpatializationAlgorithm.spatializationAlgorithm_EqualPowerPanning](auspatializationalgorithm/spatializationalgorithm_equalpowerpanning.md)
-- [AUSpatializationAlgorithm.spatializationAlgorithm_HRTF](auspatializationalgorithm/spatializationalgorithm_hrtf.md)
-- [AUSpatializationAlgorithm.spatializationAlgorithm_SphericalHead](auspatializationalgorithm/spatializationalgorithm_sphericalhead.md)
-- [AUSpatializationAlgorithm.spatializationAlgorithm_StereoPassThrough](auspatializationalgorithm/spatializationalgorithm_stereopassthrough.md)
-- [AUSpatializationAlgorithm.spatializationAlgorithm_VectorBasedPanning](auspatializationalgorithm/spatializationalgorithm_vectorbasedpanning.md)
+### Constants
+- [AUSpatializationAlgorithm.spatializationAlgorithm_EqualPowerPanning](./spatializationalgorithm_equalpowerpanning.md)
+- [AUSpatializationAlgorithm.spatializationAlgorithm_HRTF](./spatializationalgorithm_hrtf.md)
+- [AUSpatializationAlgorithm.spatializationAlgorithm_SphericalHead](./spatializationalgorithm_sphericalhead.md)
+- [AUSpatializationAlgorithm.spatializationAlgorithm_StereoPassThrough](./spatializationalgorithm_stereopassthrough.md)
+- [AUSpatializationAlgorithm.spatializationAlgorithm_VectorBasedPanning](./spatializationalgorithm_vectorbasedpanning.md)
 
 
 ---

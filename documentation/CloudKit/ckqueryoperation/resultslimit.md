@@ -1,7 +1,8 @@
 # resultsLimit
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of records to return at one time.
 
@@ -10,7 +11,7 @@ The maximum number of records to return at one time.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,23 +21,28 @@ The maximum number of records to return at one time.
 var resultsLimit: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSUInteger resultsLimit;
+```
+
 #### Discussion
 
-For most queries, leave the value of this property as the default value, which is the [`maximumResults`](ckqueryoperation/maximumresults.md) constant. When using that value, CloudKit returns as many records as possible while minimizing delays in receiving those records. If you want to process a fixed number of results, change the value of this property accordingly.
+For most queries, leave the value of this property as the default value, which is the [`maximumResults`](./maximumresults.md) constant. When using that value, CloudKit returns as many records as possible while minimizing delays in receiving those records. If you want to process a fixed number of results, change the value of this property accordingly.
 
 ## See Also
 
-- [var query: CKQuery?](ckqueryoperation/query.md)
+### Configuring the Query Operation
+- [var query: CKQuery?](./query.md)
   The query for the search.
-- [var cursor: CKQueryOperation.Cursor?](ckqueryoperation/cursor-swift.property.md)
+- [var cursor: CKQueryOperation.Cursor?](./cursor-swift.property.md)
   The cursor for continuing the search.
-- [CKQueryOperation.Cursor](ckqueryoperation/cursor-swift.class.md)
+- [CKQueryOperation.Cursor](./cursor-swift.class.md)
   An object that marks the stopping point for a query and the starting point for retrieving the remaining results.
-- [var zoneID: CKRecordZone.ID?](ckqueryoperation/zoneid.md)
+- [var zoneID: CKRecordZone.ID?](./zoneid.md)
   The ID of the record zone that contains the records to search.
-- [class let maximumResults: Int](ckqueryoperation/maximumresults.md)
+- [class let maximumResults: Int](./maximumresults.md)
   A constant value that represents the maximum number of results CloudKit retrieves.
-- [var desiredKeys: [CKRecord.FieldKey]?](ckqueryoperation/desiredkeys-7qrse.md)
+- [var desiredKeys: [CKRecord.FieldKey]?](./desiredkeys-7qrse.md)
   The fields of the records to fetch.
 
 

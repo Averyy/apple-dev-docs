@@ -1,7 +1,8 @@
 # writeAttributeDefaultOpenDuration(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeDefaultOpenDuration(withValue value: NSNumber?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeDefaultOpenDuration(withValue value: NSNumber?) async throws
+```
+
+```objc
+- (void) writeAttributeDefaultOpenDurationWithValue:(NSNumber *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

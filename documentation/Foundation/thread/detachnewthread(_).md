@@ -1,7 +1,8 @@
 # detachNewThread(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 class func detachNewThread(_ block: @escaping @Sendable () -> Void)
+```
+
+```objc
++ (void) detachNewThreadWithBlock:(void (^)()) block;
 ```
 
 

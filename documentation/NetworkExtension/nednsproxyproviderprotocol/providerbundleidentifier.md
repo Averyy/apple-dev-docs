@@ -1,7 +1,8 @@
 # providerBundleIdentifier
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string containing the bundle identifier of the proxy provider to be used by this configuration.
 
@@ -18,9 +19,14 @@ A string containing the bundle identifier of the proxy provider to be used by th
 var providerBundleIdentifier: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * providerBundleIdentifier;
+```
+
 ## See Also
 
-- [var providerConfiguration: [String : Any]?](nednsproxyproviderprotocol/providerconfiguration.md)
+### Accessing the DNS proxy configuration
+- [var providerConfiguration: [String : Any]?](./providerconfiguration.md)
   A dictionary containing vendor-specific configuration parameters for a proxy provider.
 
 

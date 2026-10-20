@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/convert-a-tensorflow
 
 # Converting a TensorFlow 1 DeepSpeech Model
 
-**
-
-- [.md](../_sources/source/convert-a-tensorflow-1-deepspeech-model.md)
-- **
-
-.pdf
-
-**
-
-# Converting a TensorFlow 1 DeepSpeech Model
-
- Table of contents 
-
-## Contents
-
-# Converting a TensorFlow 1 DeepSpeech Model
-
 The following example explores the automatic handling of flexible shapes and other related capabilities of the Core ML Tools converter. It uses an [automatic speech recognition](https://en.wikipedia.org/wiki/Speech_recognition#End-to-end_automatic_speech_recognition) (ASR) task in which the input is a speech audio file and the output is the text transcription of it.
 
 The ASR system for this example consists of three stages: preprocessing, post-processing, and a neural network model between them that does most of the heavy lifting. The preprocessing and post-processing stages employ standard techniques which can be easily implemented. The focus of this example is on converting the neural network model.
@@ -46,31 +29,49 @@ Language model scorer ([kenlm.scorer](https://github.com/mozilla/DeepSpeech/blob
 Pre-trained weights ([deepspeech-0.7.1-checkpoint](https://github.com/mozilla/DeepSpeech/releases/download/v0.7.1/deepspeech-0.7.1-checkpoint.tar.gz))
 Script to export TensorFlow 1 model ([DeepSpeech.py](https://github.com/mozilla/DeepSpeech/blob/master/DeepSpeech.py))
 2. Install the `deepspeech` package using `pip`:
-pip install deepspeech
+
+   ```
+   pip install deepspeech
+   ```
 3. Run the following script downloaded from the [DeepSpeech repository](https://github.com/mozilla/DeepSpeech) to export the TensorFlow 1 model:
-python DeepSpeech.py --export_dir /tmp --checkpoint_dir ./deepspeech-0.7.1-checkpoint --alphabet_config_path=alphabet.txt --scorer_path=kenlm.scorer >/dev/null 2>&1
+
+   ```
+   python DeepSpeech.py --export_dir /tmp --checkpoint_dir ./deepspeech-0.7.1-checkpoint --alphabet_config_path=alphabet.txt --scorer_path=kenlm.scorer >/dev/null 2>&1
+   ```
 4. After the model is exported, inspect the outputs of the TensorFlow graph:
-tf_model = "/tmp/output_graph.pb"
-from demo_utils import inspect_tf_outputs
-inspect_tf_outputs(tf_model)
+
+   ```
+   tf_model = "/tmp/output_graph.pb"
+   from demo_utils import inspect_tf_outputs
+   inspect_tf_outputs(tf_model)
+   ```
 
 The TensorFlow graph outputs are `'mfccs'`, `'logits'`, `'new_state_c'`, and `'new_state_h'`.
 The `'mfccs'` output represents the output of the preprocessing stage. This means that the exported TensorFlow graph contains not just the DeepSpeech model, but also the preprocessing subgraph.
 5. Strip off this preprocessing component by providing the remaining three output names to the unified converter function:
-outputs = ["logits", "new_state_c", "new_state_h"]
+
+   ```
+   outputs = ["logits", "new_state_c", "new_state_h"]
+   ```
 
 ## Convert the Model and Preprocess an Audio File
 
 Preprocessing and post-processing functions have already been constructed using code in the [DeepSpeech repository](https://github.com/mozilla/DeepSpeech). To convert the model and preprocess an audio file, follow these steps:
 
 1. Convert the model to a Core ML neural network model:
-import coremltools as ct
-mlmodel = ct.convert(tf_model, outputs=outputs)
+
+   ```
+   import coremltools as ct
+   mlmodel = ct.convert(tf_model, outputs=outputs)
+   ```
 2. After the model is converted, load and preprocess an audio file:
-audiofile = "./audio_sample_16bit_mono_16khz.wav"
-from demo_utils import preprocessing, postprocessing
-mfccs = preprocessing(audiofile)
-print(mfccs.shape)
+
+   ```
+   audiofile = "./audio_sample_16bit_mono_16khz.wav"
+   from demo_utils import preprocessing, postprocessing
+   mfccs = preprocessing(audiofile)
+   print(mfccs.shape)
+   ```
 
 Preprocessing transforms the audio file into a tensor object of shape `(1, 636, 19, 26)`. The shape of the tensor can be viewed as one audio file, preprocessed into 636 sequences, each of width 19, and containing 26 coefficients. The number of sequences changes with the length of the audio. In this 12-second audio file there are 636 sequences.
 
@@ -124,11 +125,20 @@ The above code breaks the preprocessed feature into size-16 slices, and runs a p
 It is also possible to run the prediction on the entire preprocessed feature in just one go using a dynamic TensorFlow model. Follow these steps:
 
 1. Rerun the same script from the DeepSpeech repository to obtain a dynamic graph. Provide an additional flag `n_steps` which corresponds to the sequence length and has a default value of 16. Setting it to -1 means that the sequence length can take any positive value:
-!python DeepSpeech.py --n_steps -1 --export_dir /tmp --checkpoint_dir ./deepspeech-0.7.1-checkpoint --alphabet_config_path=alphabet.txt --scorer_path=kenlm.scorer >/dev/null 2>&1
+
+   ```
+   !python DeepSpeech.py --n_steps -1 --export_dir /tmp --checkpoint_dir ./deepspeech-0.7.1-checkpoint --alphabet_config_path=alphabet.txt --scorer_path=kenlm.scorer >/dev/null 2>&1
+   ```
 2. Convert the newly exported dynamic TensorFlow model to a Core ML neural network model:
-mlmodel = ct.convert(tf_model, outputs=outputs)
+
+   ```
+   mlmodel = ct.convert(tf_model, outputs=outputs)
+   ```
 3. After the model is converted, inspect how this new model is different from the previous static one:
-inspect_inputs(mlmodel,tf_model)
+
+   ```
+   inspect_inputs(mlmodel,tf_model)
+   ```
 
 The shape of input `input_node` is now `(1, None, 19, 26)`, which mean that this CoreML model can work on inputs of arbitrary-sequence length.
 
@@ -175,5 +185,3 @@ mlmodel = ct.convert(tf_model, outputs=outputs, inputs=[input])
 Under the hood, the type and value inference propagates this shape information to remove all the unnecessary dynamic operations.
 
 Static models are likely to be more performant while the dynamic ones are more flexible.
-
-** Contents

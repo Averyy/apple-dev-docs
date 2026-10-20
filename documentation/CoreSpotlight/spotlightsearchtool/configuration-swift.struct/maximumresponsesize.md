@@ -1,7 +1,8 @@
 # maximumResponseSize
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of UTF-8 characters of rendered tool output the search tool sends back to the model on a single call.
 
@@ -20,7 +21,7 @@ var maximumResponseSize: Int?
 
 #### Discussion
 
-If `nil`, the tool picks a default based on the configured [`guide`](spotlightsearchtool/configuration-swift.struct/guide.md). Pass an explicit value to override that default; the override applies regardless of the guide’s level.
+If `nil`, the tool picks a default based on the configured [`guide`](./guide.md). Pass an explicit value to override that default; the override applies regardless of the guide’s level.
 
 
 ---

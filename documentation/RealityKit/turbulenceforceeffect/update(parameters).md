@@ -1,7 +1,8 @@
 # update(parameters:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calculates the turbulence forces for rigid bodies from the force effect.
 

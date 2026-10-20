@@ -1,7 +1,8 @@
 # metallic
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional metallic texture for the decal.
 

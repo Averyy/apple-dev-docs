@@ -1,7 +1,8 @@
 # makeAsyncIterator()
 
 **Framework**: DockKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Create and return an iterator that traverses the list of tracking session states.
 

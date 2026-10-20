@@ -1,7 +1,8 @@
 # CardSession.EventStream.Iterator
 
 **Framework**: Core NFC  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The iterator that produces elements of this asynchronous sequence.
 
@@ -19,7 +20,7 @@ class Iterator
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 
 ---

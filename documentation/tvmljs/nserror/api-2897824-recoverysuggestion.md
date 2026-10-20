@@ -1,7 +1,8 @@
 # recoverySuggestion
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 A string containing the localized recovery suggestion for the error.
 
@@ -10,15 +11,16 @@ A string containing the localized recovery suggestion for the error.
 
 ## Declaration
 
-```swift
+```
 readonly attribute String recoverySuggestion;
 ```
 
 ## See Also
 
-- [description](nserror/2897823-description.md)
+### Getting a Localized Error Description
+- [description](./api-2897823-description.md)
   A string containing the localized description of the error.
-- [failureReason](nserror/2897833-failurereason.md)
+- [failureReason](./api-2897833-failurereason.md)
   A string containing the localized explanation of the reason for the error.
 
 

@@ -1,18 +1,21 @@
 # shiftJIS_X0213_00
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Shift-JIS format encoding of JIS X0213 planes 1 and 2.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
+
+> **Deprecated**: Deprecated. Use [`CFStringEncodings.shiftJIS_X0213`](./shiftjis_x0213.md) instead.
 
 ## Declaration
 
@@ -20,23 +23,28 @@ Shift-JIS format encoding of JIS X0213 planes 1 and 2.
 static var shiftJIS_X0213_00: CFStringEncodings { get }
 ```
 
+```c
+kCFStringEncodingShiftJIS_X0213_00
+```
+
 ## See Also
 
-- [CFStringEncodings.macJapanese](cfstringencodings/macjapanese.md)
-- [CFStringEncodings.macChineseTrad](cfstringencodings/macchinesetrad.md)
-- [CFStringEncodings.macKorean](cfstringencodings/mackorean.md)
-- [CFStringEncodings.macArabic](cfstringencodings/macarabic.md)
-- [CFStringEncodings.macHebrew](cfstringencodings/machebrew.md)
-- [CFStringEncodings.macGreek](cfstringencodings/macgreek.md)
-- [CFStringEncodings.macCyrillic](cfstringencodings/maccyrillic.md)
-- [CFStringEncodings.macDevanagari](cfstringencodings/macdevanagari.md)
-- [CFStringEncodings.macGurmukhi](cfstringencodings/macgurmukhi.md)
-- [CFStringEncodings.macGujarati](cfstringencodings/macgujarati.md)
-- [CFStringEncodings.macOriya](cfstringencodings/macoriya.md)
-- [CFStringEncodings.macBengali](cfstringencodings/macbengali.md)
-- [CFStringEncodings.macTamil](cfstringencodings/mactamil.md)
-- [CFStringEncodings.macTelugu](cfstringencodings/mactelugu.md)
-- [CFStringEncodings.macKannada](cfstringencodings/mackannada.md)
+### Constants
+- [CFStringEncodings.macJapanese](./macjapanese.md)
+- [CFStringEncodings.macChineseTrad](./macchinesetrad.md)
+- [CFStringEncodings.macKorean](./mackorean.md)
+- [CFStringEncodings.macArabic](./macarabic.md)
+- [CFStringEncodings.macHebrew](./machebrew.md)
+- [CFStringEncodings.macGreek](./macgreek.md)
+- [CFStringEncodings.macCyrillic](./maccyrillic.md)
+- [CFStringEncodings.macDevanagari](./macdevanagari.md)
+- [CFStringEncodings.macGurmukhi](./macgurmukhi.md)
+- [CFStringEncodings.macGujarati](./macgujarati.md)
+- [CFStringEncodings.macOriya](./macoriya.md)
+- [CFStringEncodings.macBengali](./macbengali.md)
+- [CFStringEncodings.macTamil](./mactamil.md)
+- [CFStringEncodings.macTelugu](./mactelugu.md)
+- [CFStringEncodings.macKannada](./mackannada.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # DOMPointReadOnly
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface DOMPointReadOnly
 ```
 
 ## Topics
 
 ### Instance Properties
-- [serializer](dompointreadonly/2871300-serializer.md)
-- [w](dompointreadonly/2871037-w.md)
-- [x](dompointreadonly/2871475-x.md)
-- [y](dompointreadonly/2871097-y.md)
-- [z](dompointreadonly/2871029-z.md)
+- [serializer](./dompointreadonly/api-2871300-serializer.md)
+- [w](./dompointreadonly/api-2871037-w.md)
+- [x](./dompointreadonly/api-2871475-x.md)
+- [y](./dompointreadonly/api-2871097-y.md)
+- [z](./dompointreadonly/api-2871029-z.md)
 ### Type Methods
-- [fromPoint](dompointreadonly/2871450-frompoint.md)
+- [fromPoint](./dompointreadonly/api-2871450-frompoint.md)
 
 
 ---

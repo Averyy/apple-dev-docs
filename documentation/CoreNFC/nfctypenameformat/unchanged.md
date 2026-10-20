@@ -1,7 +1,8 @@
 # NFCTypeNameFormat.unchanged
 
 **Framework**: Core NFC  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A type indicating that the payload is part of a series of records containing chunked data.
 
@@ -16,23 +17,28 @@ A type indicating that the payload is part of a series of records containing chu
 case unchanged
 ```
 
+```c
+NFCTypeNameFormatUnchanged
+```
+
 #### Discussion
 
-The first record in a series of chunked data records indicates the type name format for the series. The remaining records have a type name format of [`NFCTypeNameFormat.unchanged`](nfctypenameformat/unchanged.md).
+The first record in a series of chunked data records indicates the type name format for the series. The remaining records have a type name format of [`NFCTypeNameFormat.unchanged`](./unchanged.md).
 
 ## See Also
 
-- [NFCTypeNameFormat.absoluteURI](nfctypenameformat/absoluteuri.md)
+### Content Types
+- [NFCTypeNameFormat.absoluteURI](./absoluteuri.md)
   A type indicating that the payload contains a uniform resource identifier.
-- [NFCTypeNameFormat.empty](nfctypenameformat/empty.md)
+- [NFCTypeNameFormat.empty](./empty.md)
   A type indicating that the payload contains no data.
-- [NFCTypeNameFormat.media](nfctypenameformat/media.md)
+- [NFCTypeNameFormat.media](./media.md)
   A type indicating that the payload contains media data as defined by RFC 2046.
-- [NFCTypeNameFormat.nfcExternal](nfctypenameformat/nfcexternal.md)
+- [NFCTypeNameFormat.nfcExternal](./nfcexternal.md)
   A type indicating that the payload contains NFC external type data.
-- [NFCTypeNameFormat.nfcWellKnown](nfctypenameformat/nfcwellknown.md)
+- [NFCTypeNameFormat.nfcWellKnown](./nfcwellknown.md)
   A type indicating that the payload contains well-known NFC record type data.
-- [NFCTypeNameFormat.unknown](nfctypenameformat/unknown.md)
+- [NFCTypeNameFormat.unknown](./unknown.md)
   A type indicating that the payload data type is unknown.
 
 

@@ -1,7 +1,8 @@
 # StringComparisonOperator
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -21,22 +22,23 @@ enum StringComparisonOperator
 ## Topics
 
 ### Enumeration Cases
-- [StringComparisonOperator.contains](stringcomparisonoperator/contains.md)
-- [StringComparisonOperator.doesNotContain](stringcomparisonoperator/doesnotcontain.md)
-- [StringComparisonOperator.hasPrefix](stringcomparisonoperator/hasprefix.md)
-- [StringComparisonOperator.hasSuffix](stringcomparisonoperator/hassuffix.md)
+- [StringComparisonOperator.contains](./stringcomparisonoperator/contains.md)
+- [StringComparisonOperator.doesNotContain](./stringcomparisonoperator/doesnotcontain.md)
+- [StringComparisonOperator.hasPrefix](./stringcomparisonoperator/hasprefix.md)
+- [StringComparisonOperator.hasSuffix](./stringcomparisonoperator/hassuffix.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [class HasPrefixComparator](hasprefixcomparator.md)
+### String comparisons
+- [class HasPrefixComparator](./hasprefixcomparator.md)
   An object that determines whether the value of a string property has the specified prefix.
-- [class HasSuffixComparator](hassuffixcomparator.md)
+- [class HasSuffixComparator](./hassuffixcomparator.md)
   An object that determines whether the value of a string property has the specified suffix.
 
 

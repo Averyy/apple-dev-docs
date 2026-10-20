@@ -1,7 +1,8 @@
 # performance
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that specifies compilation optimization for best execution performance.
 
@@ -11,7 +12,7 @@ A constant that specifies compilation optimization for best execution performanc
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ static var performance: BNNSGraph.CompileOptions.OptimizationPreference { get }
 
 ## See Also
 
-- [static var internalRepresentationSize: BNNSGraph.CompileOptions.OptimizationPreference](bnnsgraph/compileoptions/optimizationpreference-swift.struct/internalrepresentationsize.md)
+### Optimization preferences
+- [static var internalRepresentationSize: BNNSGraph.CompileOptions.OptimizationPreference](./internalrepresentationsize.md)
   A constant that specifies compilation optimization for smallest graph size on disk.
 
 

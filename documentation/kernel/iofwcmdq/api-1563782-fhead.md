@@ -1,7 +1,8 @@
 # fHead
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Points to the head of the queue, or NULL if queue is empty
 
@@ -10,15 +11,16 @@ Points to the head of the queue, or NULL if queue is empty
 
 ## Declaration
 
-```swift
+```c
 IOFWCommand *fHead;
 ```
 
 ## See Also
 
-- [fTail](iofwcmdq/1563843-ftail.md)
+### Fields
+- [fTail](./api-1563843-ftail.md)
   Points to the tail of the queue, or NULL if queue is empty
-- [headChanged](iofwcmdq/1813007-headchanged.md)
+- [headChanged](./api-1813007-headchanged.md)
   called when head command is changed, or the command itself changes state.
 
 

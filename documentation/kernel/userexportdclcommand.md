@@ -1,25 +1,26 @@
 # UserExportDCLCommand
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 typedef struct UserExportDCLCommandStruct UserExportDCLCommand;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [compilerData](userexportdclcommand/1561469-compilerdata.md)
-- [opcode](userexportdclcommand/1561438-opcode.md)
-- [operands](userexportdclcommand/1561453-operands.md)
-- [pClientDCLStruct](userexportdclcommand/1561213-pclientdclstruct.md)
-- [pNextDCLCommand](userexportdclcommand/1561258-pnextdclcommand.md)
+- [compilerData](./userexportdclcommand/api-1561469-compilerdata.md)
+- [opcode](./userexportdclcommand/api-1561438-opcode.md)
+- [operands](./userexportdclcommand/api-1561453-operands.md)
+- [pClientDCLStruct](./userexportdclcommand/api-1561213-pclientdclstruct.md)
+- [pNextDCLCommand](./userexportdclcommand/api-1561258-pnextdclcommand.md)
 
 
 ---

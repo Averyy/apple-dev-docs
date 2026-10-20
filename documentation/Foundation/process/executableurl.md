@@ -1,7 +1,8 @@
 # executableURL
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s executable.
 
@@ -14,21 +15,26 @@ The receiver’s executable.
 var executableURL: URL? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSURL * executableURL;
+```
+
 ## See Also
 
-- [var arguments: [String]?](process/arguments.md)
+### Configuring a process
+- [var arguments: [String]?](./arguments.md)
   The command arguments that the system uses to launch the executable.
-- [var currentDirectoryURL: URL?](process/currentdirectoryurl.md)
+- [var currentDirectoryURL: URL?](./currentdirectoryurl.md)
   The current directory for the receiver.
-- [var environment: [String : String]?](process/environment.md)
+- [var environment: [String : String]?](./environment.md)
   The environment for the receiver.
-- [var qualityOfService: QualityOfService](process/qualityofservice.md)
+- [var qualityOfService: QualityOfService](./qualityofservice.md)
   The default quality of service level the system applies to operations the task executes.
-- [var standardError: Any?](process/standarderror.md)
+- [var standardError: Any?](./standarderror.md)
   The standard error for the receiver.
-- [var standardInput: Any?](process/standardinput.md)
+- [var standardInput: Any?](./standardinput.md)
   The standard input for the receiver.
-- [var standardOutput: Any?](process/standardoutput.md)
+- [var standardOutput: Any?](./standardoutput.md)
   The standard output for the receiver.
 
 

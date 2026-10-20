@@ -1,14 +1,15 @@
 # DATA_BYTES_PER_PHYSICAL_SECTOR
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 UInt16 DATA_BYTES_PER_PHYSICAL_SECTOR;
 ```
 

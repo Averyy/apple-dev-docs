@@ -1,9 +1,10 @@
 # recoveryAttempter
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The object in the user info dictionary corresponding to the [`NSRecoveryAttempterErrorKey`](nsrecoveryattemptererrorkey.md) key.
+The object in the user info dictionary corresponding to the [`NSRecoveryAttempterErrorKey`](../nsrecoveryattemptererrorkey.md) key.
 
 **Availability**:
 - iOS 2.0+
@@ -20,17 +21,23 @@ The object in the user info dictionary corresponding to the [`NSRecoveryAttempte
 var recoveryAttempter: Any? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) id recoveryAttempter;
+```
+
 #### Discussion
 
-The recovery attempter must be an instance of a class that conforms to the [`NSSecureCoding`](nssecurecoding.md) and NSErrorRecoveryAttempting protocols. It must also be able to correctly interpret an index in the [`localizedRecoveryOptions`](nserror/localizedrecoveryoptions.md) property.
+The recovery attempter must be an instance of a class that conforms to the [`NSSecureCoding`](../nssecurecoding.md) and NSErrorRecoveryAttempting protocols. It must also be able to correctly interpret an index in the [`localizedRecoveryOptions`](./localizedrecoveryoptions.md) property.
 
-If [`userInfo`](nserror/userinfo.md) doesn’t contain a value for [`NSRecoveryAttempterErrorKey`](nsrecoveryattemptererrorkey.md), this property is `nil`.
+If [`userInfo`](./userinfo.md) doesn’t contain a value for [`NSRecoveryAttempterErrorKey`](../nsrecoveryattemptererrorkey.md), this property is `nil`.
 
 ## See Also
 
-- [var localizedRecoveryOptions: [String]?](nserror/localizedrecoveryoptions.md)
+### Related Documentation
+- [var localizedRecoveryOptions: [String]?](./localizedrecoveryoptions.md)
   An array containing the localized titles of buttons appropriate for displaying in an alert panel.
-- [NSErrorRecoveryAttempting](nserrorrecoveryattempting.md)
+### Getting the Error Recovery Attempter
+- [NSErrorRecoveryAttempting](../nserrorrecoveryattempting.md)
   A set of methods that provide options to recover from an error.
 
 

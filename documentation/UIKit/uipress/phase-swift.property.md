@@ -1,7 +1,8 @@
 # phase
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current press phase of the object.
 
@@ -18,17 +19,22 @@ The current press phase of the object.
 var phase: UIPress.Phase { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIPressPhase phase;
+```
+
 #### Discussion
 
-For a list of all possible press phases, see the [`UIPress.Phase`](uipress/phase-swift.enum.md) enumeration.
+For a list of all possible press phases, see the [`UIPress.Phase`](./phase-swift.enum.md) enumeration.
 
 ## See Also
 
-- [var key: UIKey?](uipress/key.md)
+### Getting press attributes
+- [var key: UIKey?](./key.md)
   The key pressed or released on a physical keyboard.
-- [var type: UIPress.PressType](uipress/type.md)
+- [var type: UIPress.PressType](./type.md)
   The type of the specified press.
-- [var timestamp: TimeInterval](uipress/timestamp.md)
+- [var timestamp: TimeInterval](./timestamp.md)
   The time when the press occurred or when it was last mutated.
 
 

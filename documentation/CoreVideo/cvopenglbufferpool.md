@@ -1,7 +1,8 @@
 # CVOpenGLBufferPool
 
 **Framework**: Core Video  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A reference to an OpenGL buffer pool object.
 
@@ -15,11 +16,15 @@ A reference to an OpenGL buffer pool object.
 class CVOpenGLBufferPool
 ```
 
+```c
+typedef struct __CVOpenGLBufferPool * CVOpenGLBufferPoolRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

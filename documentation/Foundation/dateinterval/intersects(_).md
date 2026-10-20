@@ -1,7 +1,8 @@
 # intersects(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether this interval intersects the specified interval.
 
@@ -22,7 +23,8 @@ func intersects(_ dateInterval: DateInterval) -> Bool
 
 ## See Also
 
-- [func intersection(with: DateInterval) -> DateInterval?](dateinterval/intersection(with:).md)
+### Determining Intersections
+- [func intersection(with: DateInterval) -> DateInterval?](./intersection%28with%29.md)
   Returns an interval that represents the interval where the given date interval and the current instance intersect.
 
 

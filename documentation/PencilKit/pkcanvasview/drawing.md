@@ -1,7 +1,8 @@
 # drawing
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data object that the canvas uses to store drawn content.
 
@@ -15,6 +16,10 @@ The data object that the canvas uses to store drawn content.
 
 ```swift
 var drawing: PKDrawing { get set }
+```
+
+```objc
+@property (nonatomic, copy) PKDrawing * drawing;
 ```
 
 

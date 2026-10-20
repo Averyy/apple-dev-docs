@@ -1,7 +1,8 @@
 # loadVideoPerformanceMetrics(completionHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.4+
@@ -14,7 +15,15 @@
 ## Declaration
 
 ```swift
+func loadVideoPerformanceMetrics(completionHandler: @escaping @Sendable (AVVideoPerformanceMetrics?) -> Void)
+```
+
+```swift
 var videoPerformanceMetrics: AVVideoPerformanceMetrics? { get async }
+```
+
+```objc
+- (void) loadVideoPerformanceMetricsWithCompletionHandler:(void (^)(AVVideoPerformanceMetrics *videoPerformanceMetrics)) completionHandler;
 ```
 
 

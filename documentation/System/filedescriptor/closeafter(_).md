@@ -1,7 +1,8 @@
 # closeAfter(_:)
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs a closure and then closes the file descriptor, even if an error occurs.
 
@@ -34,7 +35,8 @@ If `body` throws an error or an error occurs while closing the file descriptor, 
 
 ## See Also
 
-- [func close() throws](filedescriptor/close.md)
+### Closing a File
+- [func close() throws](./close%28%29.md)
   Deletes a file descriptor.
 
 

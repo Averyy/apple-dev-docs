@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates new usage options from a raw integer value.
 

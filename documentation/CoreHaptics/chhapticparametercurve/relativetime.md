@@ -1,7 +1,8 @@
 # relativeTime
 
 **Framework**: Core Haptics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time at which this parameter curve is applied, relative to the start time of the pattern.
 
@@ -9,7 +10,7 @@ The time at which this parameter curve is applied, relative to the start time of
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- macOS ?+
+- macOS
 - tvOS 14.0+
 - visionOS 1.0+
 
@@ -19,11 +20,16 @@ The time at which this parameter curve is applied, relative to the start time of
 var relativeTime: TimeInterval { get set }
 ```
 
+```objc
+@property (readwrite) NSTimeInterval relativeTime;
+```
+
 ## See Also
 
-- [var controlPoints: [CHHapticParameterCurve.ControlPoint]](chhapticparametercurve/controlpoints.md)
+### Describing the Curve
+- [var controlPoints: [CHHapticParameterCurve.ControlPoint]](./controlpoints.md)
   An array containing the curve’s control points.
-- [var parameterID: CHHapticDynamicParameter.ID](chhapticparametercurve/parameterid.md)
+- [var parameterID: CHHapticDynamicParameter.ID](./parameterid.md)
   The parameter ID defining the type of parameter that the curve represents.
 
 

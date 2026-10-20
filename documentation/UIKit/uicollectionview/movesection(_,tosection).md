@@ -1,7 +1,8 @@
 # moveSection(_:toSection:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves a section from one location to another in the collection view.
 
@@ -9,7 +10,7 @@ Moves a section from one location to another in the collection view.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,15 @@ Moves a section from one location to another in the collection view.
 func moveSection(_ section: Int, toSection newSection: Int)
 ```
 
+```objc
+- (void) moveSection:(NSInteger) section toSection:(NSInteger) newSection;
+```
+
 #### Discussion
 
 Use this method to reorganize existing sections and their contained items. You might do this when you rearrange sections within your data source object or in response to user interactions with the collection view. The collection view updates the layout as needed to account for the move, animating new views into position as needed.
 
-You can also call this method from a block passed to the [`performBatchUpdates(_:completion:)`](uicollectionview/performbatchupdates(_:completion:).md) method when you want to animate multiple separate changes into place at the same time. See the description of that method for more information.
+You can also call this method from a block passed to the [`performBatchUpdates(_:completion:)`](./performbatchupdates%28_,completion%29.md) method when you want to animate multiple separate changes into place at the same time. See the description of that method for more information.
 
 ## Parameters
 
@@ -31,9 +36,10 @@ You can also call this method from a block passed to the [`performBatchUpdates(_
 
 ## See Also
 
-- [func insertSections(IndexSet)](uicollectionview/insertsections(_:).md)
+### Inserting, moving, and deleting sections
+- [func insertSections(IndexSet)](./insertsections%28_%29.md)
   Inserts new sections at the specified indexes.
-- [func deleteSections(IndexSet)](uicollectionview/deletesections(_:).md)
+- [func deleteSections(IndexSet)](./deletesections%28_%29.md)
   Deletes the sections at the specified indexes.
 
 

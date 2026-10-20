@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Applies a loaded snapshot to the document model.
@@ -22,7 +23,7 @@ func apply(snapshot: sending Self.Reader.Snapshot, previous: sending Self.Reader
 
 #### Discussion
 
-SwiftUI calls this on the main actor after the reader’s [`read(from:progress:)`](documentreader/read(from:progress:).md) completes. Update your model properties here. Keep this method lightweight — all deserialization should happen in the reader.
+SwiftUI calls this on the main actor after the reader’s [`read(from:progress:)`](../documentreader/read%28from,progress%29.md) completes. Update your model properties here. Keep this method lightweight — all deserialization should happen in the reader.
 
 ## Parameters
 
@@ -31,15 +32,16 @@ SwiftUI calls this on the main actor after the reader’s [`read(from:progress:)
 
 ## See Also
 
-- [static var readableContentTypes: [UTType]](readabledocument/readablecontenttypes.md)
+### Reading a document
+- [static var readableContentTypes: [UTType]](./readablecontenttypes.md)
   The content types this document can open.
-- [ReadableDocument.ReadConfiguration](readabledocument/readconfiguration.md)
+- [ReadableDocument.ReadConfiguration](./readconfiguration.md)
   The configuration for reading document contents.
-- [associatedtype Reader : DocumentReader](readabledocument/reader.md)
+- [associatedtype Reader : DocumentReader](./reader.md)
   A type that implements reading from disk.
-- [func reader(configuration: sending Self.ReadConfiguration) -> sending Self.Reader](readabledocument/reader(configuration:).md)
+- [func reader(configuration: sending Self.ReadConfiguration) -> sending Self.Reader](./reader%28configuration%29.md)
   Creates a reader to load this document from disk.
-- [static var writableContentTypes: [UTType]](readabledocument/writablecontenttypes.md)
+- [static var writableContentTypes: [UTType]](./writablecontenttypes.md)
   By default, a document that supports reading also supports writing the same content types.
 
 

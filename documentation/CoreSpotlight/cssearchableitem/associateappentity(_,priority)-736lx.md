@@ -1,7 +1,8 @@
 # associateAppEntity(_:priority:)
 
 **Framework**: Core Spotlight  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Associates an app entity with this searchable item.
 
@@ -25,9 +26,10 @@ func associateAppEntity(_ appEntity: some IndexedEntity, priority: Int = 0)
 
 ## See Also
 
-- [func associateAppEntity(some IndexedEntity, priority: Int) async](cssearchableitem/associateappentity(_:priority:)-6h7ym.md)
+### Associating an entity with an item
+- [func associateAppEntity(some IndexedEntity, priority: Int) async](./associateappentity%28_,priority%29-6h7ym.md)
   Associates an app entity with this searchable item. Resolves deferred properties before association.
-- [var relatedAppEntityIdentifier: EntityIdentifier?](cssearchableitem/relatedappentityidentifier.md)
+- [var relatedAppEntityIdentifier: EntityIdentifier?](./relatedappentityidentifier.md)
   The identifier of the related indexed entity for this searchable item.
 
 

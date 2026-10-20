@@ -1,7 +1,8 @@
 # shortTerm
 
 **Framework**: Music Understanding  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of short-term loudness measurements sampled across the song in LUFS.
 
@@ -26,11 +27,12 @@ Short-term loudness is a 3-second window that advances 100 milliseconds (ms) per
 
 ## See Also
 
-- [let integrated: MusicUnderstandingSession.TimedValue<Float>](loudnessresult/integrated.md)
+### Getting loudness results
+- [let integrated: MusicUnderstandingSession.TimedValue<Float>](./integrated.md)
   The integrated loudness of the song, measured in LUFS over its full duration.
-- [let momentary: [MusicUnderstandingSession.TimedValue<Float>]](loudnessresult/momentary.md)
+- [let momentary: [MusicUnderstandingSession.TimedValue<Float>]](./momentary.md)
   An array of momentary loudness measurements sampled across the song in LUFS.
-- [let peak: MusicUnderstandingSession.TimedValue<Float>](loudnessresult/peak.md)
+- [let peak: MusicUnderstandingSession.TimedValue<Float>](./peak.md)
   The peak amplitude of the song in decibels (dB).
 
 

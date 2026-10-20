@@ -1,14 +1,15 @@
 # tei_scid
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 14.4+
 
 ## Declaration
 
-```swift
+```c
 uint64_t tei_scid;
 ```
 

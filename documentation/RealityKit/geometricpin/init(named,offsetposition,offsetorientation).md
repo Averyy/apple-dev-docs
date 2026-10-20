@@ -1,7 +1,8 @@
 # init(named:offsetPosition:offsetOrientation:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a geometric pin that identifies a local position and orientation.
 

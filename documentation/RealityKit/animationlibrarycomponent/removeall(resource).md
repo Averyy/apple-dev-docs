@@ -1,7 +1,8 @@
 # removeAll(resource:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all the component’s references to an animation resource.
 

@@ -1,16 +1,17 @@
 # UIReturnKeyType
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the type of Return key the keyboard displays.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,65 +19,70 @@ Constants that specify the type of Return key the keyboard displays.
 enum UIReturnKeyType
 ```
 
+```c
+enum UIReturnKeyType : NSInteger;
+```
+
 #### Overview
 
-Use these constants with the [`returnKeyType`](uitextinputtraits/returnkeytype.md) property.
+Use these constants with the [`returnKeyType`](./uitextinputtraits/returnkeytype.md) property.
 
 ## Topics
 
 ### Constants
-- [UIReturnKeyType.default](uireturnkeytype/default.md)
+- [UIReturnKeyType.default](./uireturnkeytype/default.md)
   Specifies that the Return key displays an indication to accept the user’s input.
-- [UIReturnKeyType.go](uireturnkeytype/go.md)
+- [UIReturnKeyType.go](./uireturnkeytype/go.md)
   Specifies that the Return key displays an indication to proceed.
-- [UIReturnKeyType.google](uireturnkeytype/google.md)
+- [UIReturnKeyType.google](./uireturnkeytype/google.md)
   Specifies that the Return key displays an indication to search using Google.
-- [UIReturnKeyType.join](uireturnkeytype/join.md)
+- [UIReturnKeyType.join](./uireturnkeytype/join.md)
   Specifies that the Return key displays an indication to join something, such as a meeting.
-- [UIReturnKeyType.next](uireturnkeytype/next.md)
+- [UIReturnKeyType.next](./uireturnkeytype/next.md)
   Specifies that the Return key displays an indication to proceed forward.
-- [UIReturnKeyType.route](uireturnkeytype/route.md)
+- [UIReturnKeyType.route](./uireturnkeytype/route.md)
   Specifies that the Return key displays an indication to plan a route to a location.
-- [UIReturnKeyType.search](uireturnkeytype/search.md)
+- [UIReturnKeyType.search](./uireturnkeytype/search.md)
   Specifies that the Return key displays an indication to perform a search.
-- [UIReturnKeyType.send](uireturnkeytype/send.md)
+- [UIReturnKeyType.send](./uireturnkeytype/send.md)
   Specifies that the Return key displays an indication to send something, such as an email.
-- [UIReturnKeyType.yahoo](uireturnkeytype/yahoo.md)
+- [UIReturnKeyType.yahoo](./uireturnkeytype/yahoo.md)
   Specifies that the Return key displays an indication to search using Yahoo.
-- [UIReturnKeyType.done](uireturnkeytype/done.md)
+- [UIReturnKeyType.done](./uireturnkeytype/done.md)
   Specifies that the Return key displays an indication to accept the user’s input.
-- [UIReturnKeyType.emergencyCall](uireturnkeytype/emergencycall.md)
+- [UIReturnKeyType.emergencyCall](./uireturnkeytype/emergencycall.md)
   Specifies that the Return key displays an indication to place an emergency phone call.
-- [UIReturnKeyType.continue](uireturnkeytype/continue.md)
+- [UIReturnKeyType.continue](./uireturnkeytype/continue.md)
   Specifies that the Return key displays an indication to continue what the user is doing.
 ### Initializers
-- [init?(rawValue: Int)](uireturnkeytype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uireturnkeytype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var keyboardType: UIKeyboardType](uitextinputtraits/keyboardtype.md)
+### Configuring the keyboard appearance
+- [var keyboardType: UIKeyboardType](./uitextinputtraits/keyboardtype.md)
   The keyboard type for the text object.
-- [enum UIKeyboardType](uikeyboardtype.md)
+- [enum UIKeyboardType](./uikeyboardtype.md)
   Constants that specify the type of keyboard to display for a text-based view.
-- [var keyboardAppearance: UIKeyboardAppearance](uitextinputtraits/keyboardappearance.md)
+- [var keyboardAppearance: UIKeyboardAppearance](./uitextinputtraits/keyboardappearance.md)
   The appearance style of the keyboard for the text object.
-- [enum UIKeyboardAppearance](uikeyboardappearance.md)
+- [enum UIKeyboardAppearance](./uikeyboardappearance.md)
   Constants that specify the appearance of the keyboard for a text-based view.
-- [var returnKeyType: UIReturnKeyType](uitextinputtraits/returnkeytype.md)
+- [var returnKeyType: UIReturnKeyType](./uitextinputtraits/returnkeytype.md)
   The visible indication of what the Return key does.
-- [var textContentType: UITextContentType!](uitextinputtraits/textcontenttype.md)
+- [var textContentType: UITextContentType!](./uitextinputtraits/textcontenttype.md)
   The semantic meaning for a text input area.
-- [struct UITextContentType](uitextcontenttype.md)
+- [struct UITextContentType](./uitextcontenttype.md)
   Constants that identify the semantic meaning for a text-entry area.
 
 

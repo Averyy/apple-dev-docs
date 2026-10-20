@@ -1,7 +1,8 @@
 # init(kem:kdf:aead:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an HPKE cipher suite.
 

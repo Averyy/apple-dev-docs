@@ -1,7 +1,8 @@
 # targetScene
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scene where the system reflects the user’s response to a notification.
 
@@ -17,15 +18,20 @@ The scene where the system reflects the user’s response to a notification.
 var targetScene: UIScene? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UIScene * targetScene;
+```
+
 ## See Also
 
-- [var actionIdentifier: String](unnotificationresponse/actionidentifier.md)
+### Getting the Response Information
+- [var actionIdentifier: String](./actionidentifier.md)
   The identifier string of the action that the user selected.
-- [var notification: UNNotification](unnotificationresponse/notification.md)
+- [var notification: UNNotification](./notification.md)
   The notification to which the user responded.
-- [let UNNotificationDefaultActionIdentifier: String](unnotificationdefaultactionidentifier.md)
+- [let UNNotificationDefaultActionIdentifier: String](../unnotificationdefaultactionidentifier.md)
   An action that indicates the user opened the app from the notification interface.
-- [let UNNotificationDismissActionIdentifier: String](unnotificationdismissactionidentifier.md)
+- [let UNNotificationDismissActionIdentifier: String](../unnotificationdismissactionidentifier.md)
   The action that indicates the user explicitly dismissed the notification interface.
 
 

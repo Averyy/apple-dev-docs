@@ -1,14 +1,15 @@
 # init(stateOfCharge:estimatedCompletionTime:scheduledStartTime:estimatedRangeAtTarget:)
 
 **Framework**: EnergyKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates target information for the desired outcome of charging an electric vehicle.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 

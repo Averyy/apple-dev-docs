@@ -1,7 +1,8 @@
 # NSItemProviderRepresentationVisibility.team
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A representation visibility specification confining item visibility to processes created by the app’s development team.
 
@@ -19,13 +20,18 @@ A representation visibility specification confining item visibility to processes
 case team
 ```
 
+```c
+NSItemProviderRepresentationVisibilityTeam
+```
+
 ## See Also
 
-- [NSItemProviderRepresentationVisibility.all](nsitemproviderrepresentationvisibility/all.md)
+### Enumeration Cases
+- [NSItemProviderRepresentationVisibility.all](./all.md)
   A representation visibility specification conferring item visibility to all processes.
-- [NSItemProviderRepresentationVisibility.group](nsitemproviderrepresentationvisibility/group.md)
+- [NSItemProviderRepresentationVisibility.group](./group.md)
   A representation visibility specification confining item visibility to the app’s app group.
-- [NSItemProviderRepresentationVisibility.ownProcess](nsitemproviderrepresentationvisibility/ownprocess.md)
+- [NSItemProviderRepresentationVisibility.ownProcess](./ownprocess.md)
   A representation visibility specification confining item visibility to the app that is the source of the item.
 
 

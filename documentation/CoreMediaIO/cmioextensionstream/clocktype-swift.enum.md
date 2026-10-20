@@ -1,7 +1,8 @@
 # CMIOExtensionStream.ClockType
 
 **Framework**: Core Media I/O  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the clock type of a stream.
 
@@ -15,41 +16,46 @@ Constants that indicate the clock type of a stream.
 enum ClockType
 ```
 
+```c
+enum CMIOExtensionStreamClockType : NSInteger;
+```
+
 ## Topics
 
 ### Clock Types
-- [CMIOExtensionStream.ClockType.hostTime](cmioextensionstream/clocktype-swift.enum/hosttime.md)
+- [CMIOExtensionStream.ClockType.hostTime](./clocktype-swift.enum/hosttime.md)
   Indicates that the stream uses the host time clock.
-- [CMIOExtensionStream.ClockType.linkedCoreAudioDeviceUID](cmioextensionstream/clocktype-swift.enum/linkedcoreaudiodeviceuid.md)
+- [CMIOExtensionStream.ClockType.linkedCoreAudioDeviceUID](./clocktype-swift.enum/linkedcoreaudiodeviceuid.md)
   Indicates that the stream uses the clock of the linked Core Audio device.
-- [CMIOExtensionStream.ClockType.custom](cmioextensionstream/clocktype-swift.enum/custom.md)
+- [CMIOExtensionStream.ClockType.custom](./clocktype-swift.enum/custom.md)
   Indicates that the stream’s clock is specific to the device hosting the stream.
 ### Initializers
-- [init?(rawValue: Int)](cmioextensionstream/clocktype-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./clocktype-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var source: (any CMIOExtensionStreamSource)?](cmioextensionstream/source.md)
+### Inspecting a Stream
+- [var source: (any CMIOExtensionStreamSource)?](./source.md)
   The source object for the stream.
-- [var direction: CMIOExtensionStream.Direction](cmioextensionstream/direction-swift.property.md)
+- [var direction: CMIOExtensionStream.Direction](./direction-swift.property.md)
   The data-flow direction of the stream.
-- [CMIOExtensionStream.Direction](cmioextensionstream/direction-swift.enum.md)
+- [CMIOExtensionStream.Direction](./direction-swift.enum.md)
   Constants that define the data-flow direction of the stream.
-- [var clockType: CMIOExtensionStream.ClockType](cmioextensionstream/clocktype-swift.property.md)
+- [var clockType: CMIOExtensionStream.ClockType](./clocktype-swift.property.md)
   A clock type for the stream.
-- [var customClockConfiguration: CMIOExtensionStreamCustomClockConfiguration?](cmioextensionstream/customclockconfiguration.md)
+- [var customClockConfiguration: CMIOExtensionStreamCustomClockConfiguration?](./customclockconfiguration.md)
   An optional custom clock configuration for a stream.
-- [class CMIOExtensionStreamCustomClockConfiguration](cmioextensionstreamcustomclockconfiguration.md)
+- [class CMIOExtensionStreamCustomClockConfiguration](../cmioextensionstreamcustomclockconfiguration.md)
   An object that describes the parameters to create a custom clock on the host side.
 
 

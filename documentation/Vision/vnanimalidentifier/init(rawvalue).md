@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an identifier with a string.
 

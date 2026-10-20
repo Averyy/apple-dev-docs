@@ -1,20 +1,22 @@
 # IODeviceTreeAlloc
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 IORegistryEntry * IODeviceTreeAlloc(void *dtTop);
 ```
 
 ## See Also
 
-- [IONDRVLibrariesInitialize](1442150-iondrvlibrariesinitialize.md)
+### Setup and Configuration
+- [IONDRVLibrariesInitialize](./api-1442150-iondrvlibrariesinitialize.md)
 
 
 ---

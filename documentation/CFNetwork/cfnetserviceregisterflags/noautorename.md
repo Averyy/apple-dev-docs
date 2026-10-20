@@ -1,7 +1,8 @@
 # noAutoRename
 
 **Framework**: CFNetwork  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Causes registrations to fail if a name conflict occurs.
 
@@ -17,6 +18,10 @@ Causes registrations to fail if a name conflict occurs.
 
 ```swift
 static var noAutoRename: CFNetServiceRegisterFlags { get }
+```
+
+```c
+kCFNetServiceFlagNoAutoRename
 ```
 
 

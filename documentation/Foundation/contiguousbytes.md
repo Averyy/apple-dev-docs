@@ -1,7 +1,8 @@
 # ContiguousBytes
 
 **Framework**: Foundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that declares the type offers direct access to the underlying raw bytes in a contiguous manner.
 
@@ -23,24 +24,25 @@ protocol ContiguousBytes : ~Copyable, ~Escapable
 ## Topics
 
 ### Accessing Underlying Storage
-- [func withUnsafeBytes<R>((UnsafeRawBufferPointer) throws -> R) rethrows -> R](contiguousbytes/withunsafebytes(_:).md)
+- [func withUnsafeBytes<R>((UnsafeRawBufferPointer) throws -> R) rethrows -> R](./contiguousbytes/withunsafebytes%28_%29.md)
   Calls the given closure with a pointer to the underlying bytes of the type’s contiguous storage.
 ### Instance Methods
-- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](contiguousbytes/withbytes(_:).md)
+- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](./contiguousbytes/withbytes%28_%29.md)
   Calls the given closure with the contents of underlying storage.
 
 ## Relationships
 
 ### Conforming Types
-- [Data](data.md)
+- [Data](./data.md)
 
 ## See Also
 
-- [struct Data](data.md)
+### Binary Data
+- [struct Data](./data.md)
   A byte buffer in memory.
-- [protocol DataProtocol](dataprotocol.md)
+- [protocol DataProtocol](./dataprotocol.md)
   A protocol that provides consistent data access to the bytes underlying contiguous and noncontiguous data buffers.
-- [protocol MutableDataProtocol](mutabledataprotocol.md)
+- [protocol MutableDataProtocol](./mutabledataprotocol.md)
   A protocol that provides consistent data access to the bytes underlying contiguous and noncontiguous mutable data buffers.
 
 

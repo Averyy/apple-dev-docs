@@ -1,7 +1,8 @@
 # exifData
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Auxiliary data for the captured image.
 
@@ -15,21 +16,26 @@ Auxiliary data for the captured image.
 var exifData: [String : Any] { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSDictionary<NSString *,id> * exifData;
+```
+
 #### Discussion
 
-The system’s image capture pipeline produces pixel data and auxiliary information for each exposure. The AR frame exposes this pixel data through [`capturedImage`](arframe/capturedimage.md) and the auxilliary info through this property ([`exifData`](arframe/exifdata.md)). Example EXIF data includes camera manufacturer, orientation, compression, resolution, exposure, and the date and time that the exposure occurred.
+The system’s image capture pipeline produces pixel data and auxiliary information for each exposure. The AR frame exposes this pixel data through [`capturedImage`](./capturedimage.md) and the auxilliary info through this property ([`exifData`](./exifdata.md)). Example EXIF data includes camera manufacturer, orientation, compression, resolution, exposure, and the date and time that the exposure occurred.
 
 ## See Also
 
-- [var camera: ARCamera](arframe/camera.md)
+### Accessing camera data
+- [var camera: ARCamera](./camera.md)
   Information about the camera position, orientation, and imaging parameters used to capture the frame.
-- [var capturedImage: CVPixelBuffer](arframe/capturedimage.md)
+- [var capturedImage: CVPixelBuffer](./capturedimage.md)
   A pixel buffer containing the image captured by the camera.
-- [var timestamp: TimeInterval](arframe/timestamp.md)
+- [var timestamp: TimeInterval](./timestamp.md)
   The time at which the frame was captured.
-- [var cameraGrainIntensity: Float](arframe/cameragrainintensity.md)
+- [var cameraGrainIntensity: Float](./cameragrainintensity.md)
   A value that specifies the amount of grain present in the camera grain texture.
-- [var cameraGrainTexture: (any MTLTexture)?](arframe/cameragraintexture.md)
+- [var cameraGrainTexture: (any MTLTexture)?](./cameragraintexture.md)
   A tileable Metal texture created by ARKit to match the visual characteristics of the current video stream.
 
 

@@ -1,7 +1,8 @@
 # kAXApplicationDeactivatedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The application was deactivated.
 
@@ -12,6 +13,10 @@ The application was deactivated.
 
 ```swift
 var kAXApplicationDeactivatedNotification: String { get }
+```
+
+```c
+#define kAXApplicationDeactivatedNotification
 ```
 
 

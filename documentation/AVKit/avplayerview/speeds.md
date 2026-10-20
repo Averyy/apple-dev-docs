@@ -1,7 +1,8 @@
 # speeds
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of user-selectable playback speeds to show in the playback speed control.
 
@@ -14,19 +15,24 @@ A list of user-selectable playback speeds to show in the playback speed control.
 var speeds: [AVPlaybackSpeed] { get set }
 ```
 
+```objc
+@property (copy) NSArray<AVPlaybackSpeed *> * speeds;
+```
+
 #### Discussion
 
-By default, this property value equals [`systemDefaultSpeeds`](avplaybackspeed/systemdefaultspeeds.md). Setting this property to an empty array hides the playback speed selection user interface.
+By default, this property value equals [`systemDefaultSpeeds`](../avplaybackspeed/systemdefaultspeeds.md). Setting this property to an empty array hides the playback speed selection user interface.
 
-To set the playback speed programmatically, call the [`selectSpeed(_:)`](avplayerview/selectspeed(_:).md) method, or set the value of the [`defaultRate`](https://developer.apple.com/documentation/avfoundation/avplayer/defaultrate) property on the view controller’s associated [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) object.
+To set the playback speed programmatically, call the [`selectSpeed(_:)`](./selectspeed%28_%29.md) method, or set the value of the [`defaultRate`](../../AVFoundation/avplayer/defaultrate.md) property on the view controller’s associated [`AVPlayer`](../../AVFoundation/avplayer.md) object.
 
 ## See Also
 
-- [var selectedSpeed: AVPlaybackSpeed?](avplayerview/selectedspeed.md)
+### Configuring the playback speed
+- [var selectedSpeed: AVPlaybackSpeed?](./selectedspeed.md)
   The currently selected playback speed.
-- [func selectSpeed(AVPlaybackSpeed)](avplayerview/selectspeed(_:).md)
+- [func selectSpeed(AVPlaybackSpeed)](./selectspeed%28_%29.md)
   Selects a specified playback speed.
-- [class AVPlaybackSpeed](avplaybackspeed.md)
+- [class AVPlaybackSpeed](../avplaybackspeed.md)
   An object that represents a user-selectable playback speed in a playback user interface.
 
 

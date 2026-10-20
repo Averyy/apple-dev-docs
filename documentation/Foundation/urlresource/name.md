@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the resource in the bundle.
 
@@ -22,15 +23,16 @@ let name: String
 
 #### Discussion
 
-The [`name`](urlresource/name.md) property specifies both the resource name and its file extension.
+The [`name`](./name.md) property specifies both the resource name and its file extension.
 
 ## See Also
 
-- [let bundle: Bundle](urlresource/bundle.md)
+### Accessing resource properties
+- [let bundle: Bundle](./bundle.md)
   The bundle containing the resource.
-- [let subdirectory: String?](urlresource/subdirectory.md)
+- [let subdirectory: String?](./subdirectory.md)
   The subdirectory, if any, of the resource.
-- [var locale: Locale](urlresource/locale.md)
+- [var locale: Locale](./locale.md)
   The bundle containing the resource.
 
 

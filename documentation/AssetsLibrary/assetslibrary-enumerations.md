@@ -1,19 +1,21 @@
 # AssetsLibrary Enumerations
 
-**Framework**: Assets Library
+**Framework**: Assets Library  
+**Role**: API Collection
 
 ## Topics
 
 ### Enumerations
-- [Error Codes](error-codes.md)
+- [Error Codes](./error-codes.md)
   AssetsLibrary-related error codes
-- [Types of Asset](types-of-asset.md)
+- [Types of Asset](./types-of-asset.md)
   Constants to identify types of asset.
 
 ## See Also
 
-- [AssetsLibrary Constants](assetslibrary-constants.md)
-- [AssetsLibrary Data Types](assetslibrary-data-types.md)
+### Reference
+- [AssetsLibrary Constants](./assetslibrary-constants.md)
+- [AssetsLibrary Data Types](./assetslibrary-data-types.md)
 
 
 ---

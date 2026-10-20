@@ -1,7 +1,8 @@
 # kSKStopWords
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A set of stopwords—words not to index. Specified as a CFSet object. There is no default stopword list. You must supply your own.
 
@@ -12,6 +13,10 @@ A set of stopwords—words not to index. Specified as a CFSet object. There is n
 
 ```swift
 let kSKStopWords: CFString!
+```
+
+```c
+const CFStringRef kSKStopWords;
 ```
 
 

@@ -1,22 +1,27 @@
 # mFramePosition
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame in the file, counting from the start of the audio data.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var mFramePosition: Float64
+```
+
+```c
+Float64 mFramePosition;
 ```
 
 

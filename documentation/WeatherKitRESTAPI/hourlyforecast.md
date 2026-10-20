@@ -1,7 +1,8 @@
 # HourlyForecast
 
 **Framework**: WeatherKit REST API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A collection of hour forecasts for a specified range of hours.
 
@@ -10,27 +11,28 @@ A collection of hour forecasts for a specified range of hours.
 
 ## Declaration
 
-```swift
+```
 object HourlyForecast
 ```
 
 ## Topics
 
 ### Getting the hourly forecast
-- [object HourlyForecast.HourlyForecastData](hourlyforecast/hourlyforecastdata.md)
+- [object HourlyForecast.HourlyForecastData](./hourlyforecast/hourlyforecastdata.md)
   The hourly forecast information.
 
 ## Relationships
 
 ### Inherits From
-- [HourlyForecast.HourlyForecastData](hourlyforecast/hourlyforecastdata.md)
-- [ProductData](productdata.md)
+- [HourlyForecast.HourlyForecastData](./hourlyforecast/hourlyforecastdata.md)
+- [ProductData](./productdata.md)
 
 ## See Also
 
-- [object HourWeatherConditions](hourweatherconditions.md)
+### Obtaining hourly weather information
+- [object HourWeatherConditions](./hourweatherconditions.md)
   The historical or forecasted weather conditions for a specified hour.
-- [object NextHourForecast](nexthourforecast.md)
+- [object NextHourForecast](./nexthourforecast.md)
   A minute-by-minute forecast for the next hour.
 
 

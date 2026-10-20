@@ -1,13 +1,14 @@
 # Gradient Types
 
-**Framework**: Core Animation
+**Framework**: Core Animation  
+**Role**: API Collection
 
 The style of gradient drawn by the layer.
 
 ## Topics
 
 ### Constants
-- [static let axial: CAGradientLayerType](cagradientlayertype/axial.md)
+- [static let axial: CAGradientLayerType](./cagradientlayertype/axial.md)
   An axial gradient (also called a linear gradient) varies along an axis between two defined end points. All points that lie on a line perpendicular to the axis have the same color value.
 
 

@@ -1,7 +1,8 @@
 # executeCommandsInBuffer(_:indirectBuffer:offset:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes an instruction to run commands from an indirect buffer, using another buffer to provide the command range.
 
@@ -11,7 +12,7 @@ Encodes an instruction to run commands from an indirect buffer, using another bu
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,19 +22,22 @@ func executeCommandsInBuffer(_ buffer: any MTLIndirectCommandBuffer, indirectBuf
 
 ## Parameters
 
-- `buffer`: The [`MTLIndirectCommandBuffer`](mtlindirectcommandbuffer.md) instance containing the commands to execute.
-- `indirectRangeBuffer`: An [`MTLBuffer`](mtlbuffer.md) instance with data that matches the layout of the [`MTLIndirectCommandBufferExecutionRange`](mtlindirectcommandbufferexecutionrange.md) structure. When running on Metal devices that belong to the [`MTLGPUFamily.mac2`](mtlgpufamily/mac2.md) GPU family, the maximum value for the [`length`](mtlindirectcommandbufferexecutionrange/length.md) property of that structure is 0x4000 (16,384). Metal devices that belong to an Apple silicon family, such as [`MTLGPUFamily.apple10`](mtlgpufamily/apple10.md), don’t have this limitation.
+- `buffer`: The [`MTLIndirectCommandBuffer`](../mtlindirectcommandbuffer.md) instance containing the commands to execute.
+- `indirectRangeBuffer`: An [`MTLBuffer`](../mtlbuffer.md) instance with data that matches the layout of the [`MTLIndirectCommandBufferExecutionRange`](../mtlindirectcommandbufferexecutionrange.md) structure.
+
+  When running on Metal devices that belong to the [`MTLGPUFamily.mac2`](../mtlgpufamily/mac2.md) GPU family, the maximum value for the [`length`](../mtlindirectcommandbufferexecutionrange/length.md) property of that structure is 0x4000 (16,384). Metal devices that belong to an Apple silicon family, such as [`MTLGPUFamily.apple10`](../mtlgpufamily/apple10.md), don’t have this limitation.
 - `offset`: The number of bytes from the start of `indirectRangeBuffer` containing the execution range to use. Align the offset on a multiple of `4`.
 
 ## See Also
 
-- [func dispatchThreadgroups(indirectBuffer: any MTLBuffer, indirectBufferOffset: Int, threadsPerThreadgroup: MTLSize)](mtlcomputecommandencoder/dispatchthreadgroups(indirectbuffer:indirectbufferoffset:threadsperthreadgroup:).md)
+### Dispatching from indirect command buffers
+- [func dispatchThreadgroups(indirectBuffer: any MTLBuffer, indirectBufferOffset: Int, threadsPerThreadgroup: MTLSize)](./dispatchthreadgroups%28indirectbuffer,indirectbufferoffset,threadsperthreadgroup%29.md)
   Encodes a dispatch call for a compute pass, using an indirect buffer that defines the size of a grid that aligns to threadgroup boundaries.
-- [func executeCommandsInBuffer(any MTLIndirectCommandBuffer, range: Range<Int>)](mtlcomputecommandencoder/executecommandsinbuffer(_:range:).md)
+- [func executeCommandsInBuffer(any MTLIndirectCommandBuffer, range: Range<Int>)](./executecommandsinbuffer%28_,range%29.md)
   Encodes an instruction to run commands from an indirect buffer.
-- [func executeCommands(in: any MTLIndirectCommandBuffer, indirectBuffer: any MTLBuffer, indirectBufferOffset: Int)](mtlcomputecommandencoder/executecommands(in:indirectbuffer:indirectbufferoffset:).md)
+- [func executeCommands(in: any MTLIndirectCommandBuffer, indirectBuffer: any MTLBuffer, indirectBufferOffset: Int)](./executecommands%28in,indirectbuffer,indirectbufferoffset%29.md)
   Encodes an instruction to run commands from an indirect buffer, using another buffer to provide the command range.
-- [func executeCommands(in: any MTLIndirectCommandBuffer, with: NSRange)](mtlcomputecommandencoder/executecommands(in:with:).md)
+- [func executeCommands(in: any MTLIndirectCommandBuffer, with: NSRange)](./executecommands%28in,with%29.md)
   Encodes an instruction to run commands from an indirect buffer.
 
 

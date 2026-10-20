@@ -1,17 +1,24 @@
 # highlights
 
 **Framework**: TVMLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of the individual highlights that make up a group.
 
 **Availability**:
-- tvOS 12.0+
+- tvOS 12.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
 ```swift
 var highlights: [TVMediaItem.Highlight] { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) NSArray<TVHighlight *> * highlights;
 ```
 
 #### Discussion
@@ -20,9 +27,10 @@ The `highlights` property contains all of the highlights associated with a speci
 
 ## See Also
 
-- [var localizedName: String?](tvmediaitem/highlightgroup/localizedname.md)
+### Accessing the Highlights
+- [var localizedName: String?](./localizedname.md)
   The name of a highlight group.
-- [TVMediaItem.Highlight](tvmediaitem/highlight.md)
+- [TVMediaItem.Highlight](../highlight.md)
   An object that describes a media item highlight.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Core Media I/O  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Stops the stream of media data.
@@ -16,11 +17,16 @@ Stops the stream of media data.
 func stopStream() throws
 ```
 
+```objc
+- (BOOL) stopStreamAndReturnError:(NSError **) outError;
+```
+
 ## See Also
 
-- [func authorizedToStartStream(for: CMIOExtensionClient) -> Bool](cmioextensionstreamsource/authorizedtostartstream(for:).md)
+### Managing a Stream
+- [func authorizedToStartStream(for: CMIOExtensionClient) -> Bool](./authorizedtostartstream%28for%29.md)
   Determines whether to authorize an app to use this stream.
-- [func startStream() throws](cmioextensionstreamsource/startstream.md)
+- [func startStream() throws](./startstream%28%29.md)
   Starts the stream of media data.
 
 

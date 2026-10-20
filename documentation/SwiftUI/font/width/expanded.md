@@ -1,7 +1,8 @@
 # expanded
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.0+
@@ -20,9 +21,10 @@ static let expanded: Font.Width
 
 ## See Also
 
-- [static let compressed: Font.Width](font/width/compressed.md)
-- [static let condensed: Font.Width](font/width/condensed.md)
-- [static let standard: Font.Width](font/width/standard.md)
+### Getting standard font widths
+- [static let compressed: Font.Width](./compressed.md)
+- [static let condensed: Font.Width](./condensed.md)
+- [static let standard: Font.Width](./standard.md)
 
 
 ---

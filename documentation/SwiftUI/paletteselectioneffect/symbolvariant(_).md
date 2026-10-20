@@ -1,7 +1,8 @@
 # symbolVariant(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Applies the specified symbol variant when selected.
 
@@ -24,9 +25,10 @@ static func symbolVariant(_ variant: SymbolVariants) -> PaletteSelectionEffect
 
 ## See Also
 
-- [static let automatic: PaletteSelectionEffect](paletteselectioneffect/automatic.md)
+### Getting palette selection effects
+- [static let automatic: PaletteSelectionEffect](./automatic.md)
   Applies the system’s default effect when selected.
-- [static let custom: PaletteSelectionEffect](paletteselectioneffect/custom.md)
+- [static let custom: PaletteSelectionEffect](./custom.md)
   Does not apply any system effect when selected.
 
 

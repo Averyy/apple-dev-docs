@@ -1,18 +1,19 @@
 # lyrics
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The lyrics of the asset in a language suitable for the current locale.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,15 +23,16 @@ var lyrics: String? { get }
 
 ## See Also
 
-- [var metadata: [AVMetadataItem]](avcomposition/metadata.md)
+### Accessing metadata
+- [var metadata: [AVMetadataItem]](./metadata.md)
   An array of metadata items for all metadata identifiers for which a value is available.
-- [var commonMetadata: [AVMetadataItem]](avcomposition/commonmetadata.md)
+- [var commonMetadata: [AVMetadataItem]](./commonmetadata.md)
   The metadata items an asset contains for common metadata identifiers that provide a value.
-- [var availableMetadataFormats: [AVMetadataFormat]](avcomposition/availablemetadataformats.md)
+- [var availableMetadataFormats: [AVMetadataFormat]](./availablemetadataformats.md)
   The metadata formats this asset contains.
-- [func metadata(forFormat: AVMetadataFormat) -> [AVMetadataItem]](avcomposition/metadata(forformat:).md)
+- [func metadata(forFormat: AVMetadataFormat) -> [AVMetadataItem]](./metadata%28forformat%29.md)
   Returns an array of metadata items from the container with the specified format.
-- [var creationDate: AVMetadataItem?](avcomposition/creationdate.md)
+- [var creationDate: AVMetadataItem?](./creationdate.md)
   A metadata item that indicates the asset’s creation date.
 
 

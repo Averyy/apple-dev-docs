@@ -1,7 +1,8 @@
 # contentCommitment
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The `ContentCommitment` bit is set in KeyUsage extension.
 
@@ -12,6 +13,10 @@ The `ContentCommitment` bit is set in KeyUsage extension.
 
 ```swift
 static var contentCommitment: SecKeyUsage { get }
+```
+
+```c
+kSecKeyUsageContentCommitment
 ```
 
 

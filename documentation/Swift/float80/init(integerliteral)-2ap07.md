@@ -1,7 +1,8 @@
 # init(integerLiteral:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 10.10+
@@ -11,6 +12,8 @@
 ```swift
 init(integerLiteral value: Self)
 ```
+
+Available when `Self` conforms to `_ExpressibleByBuiltinIntegerLiteral`.
 
 
 ---

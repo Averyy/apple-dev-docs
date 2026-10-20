@@ -1,7 +1,8 @@
 # pid
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ID of the process that generated this event.
 
@@ -12,6 +13,10 @@ The ID of the process that generated this event.
 
 ```swift
 var pid: pid_t
+```
+
+```c
+pid_t pid;
 ```
 
 

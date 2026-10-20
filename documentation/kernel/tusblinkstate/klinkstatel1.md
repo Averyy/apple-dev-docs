@@ -1,14 +1,15 @@
 # kLinkStateL1
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 kLinkStateL1 = 1
 ```
 

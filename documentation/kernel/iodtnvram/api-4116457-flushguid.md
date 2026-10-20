@@ -1,14 +1,15 @@
 # flushGUID
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 13.3+
 
 ## Declaration
 
-```swift
+```c
 IOReturn flushGUID(const uuid_t guid, IONVRAMOperation op);
 ```
 

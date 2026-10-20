@@ -1,7 +1,8 @@
 # resourceLoader(_:shouldWaitForRenewalOfRequestedResource:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when assistance is required of the application to renew a resource.
 
@@ -19,19 +20,23 @@ Tells the delegate when assistance is required of the application to renew a res
 optional func resourceLoader(_ resourceLoader: AVAssetResourceLoader, shouldWaitForRenewalOfRequestedResource renewalRequest: AVAssetResourceRenewalRequest) -> Bool
 ```
 
+```objc
+- (BOOL) resourceLoader:(AVAssetResourceLoader *) resourceLoader shouldWaitForRenewalOfRequestedResource:(AVAssetResourceRenewalRequest *) renewalRequest;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the delegate can renew the resource; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the delegate can renew the resource; otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-Delegates receive this message when assistance is required to renew a resource previously loaded by [`resourceLoader(_:shouldWaitForLoadingOfRequestedResource:)`](avassetresourceloaderdelegate/resourceloader(_:shouldwaitforloadingofrequestedresource:).md). For example, this method is invoked to for decryption keys that require renewal, as indicated in a response to a prior invocation of [`resourceLoader(_:shouldWaitForLoadingOfRequestedResource:)`](avassetresourceloaderdelegate/resourceloader(_:shouldwaitforloadingofrequestedresource:).md).
+Delegates receive this message when assistance is required to renew a resource previously loaded by [`resourceLoader(_:shouldWaitForLoadingOfRequestedResource:)`](./resourceloader%28_,shouldwaitforloadingofrequestedresource%29.md). For example, this method is invoked to for decryption keys that require renewal, as indicated in a response to a prior invocation of [`resourceLoader(_:shouldWaitForLoadingOfRequestedResource:)`](./resourceloader%28_,shouldwaitforloadingofrequestedresource%29.md).
 
-If the result is [`true`](https://developer.apple.com/documentation/swift/true), the resource loader expects invocation, either subsequently or immediately, of either the `AVAssetResourceRenewalRequest` method `finishLoading` or `finishLoadingWithError:`. If you intend to finish loading the resource after your handling of this message returns, you must retain the `renewalRequest` until after loading is finished.
+If the result is [`true`](../../Swift/true.md), the resource loader expects invocation, either subsequently or immediately, of either the `AVAssetResourceRenewalRequest` method `finishLoading` or `finishLoadingWithError:`. If you intend to finish loading the resource after your handling of this message returns, you must retain the `renewalRequest` until after loading is finished.
 
-If the result is [`false`](https://developer.apple.com/documentation/swift/false), the resource loader treats the loading of the resource as having failed.
+If the result is [`false`](../../Swift/false.md), the resource loader treats the loading of the resource as having failed.
 
-> **Note**:  If the delegate’s implementation of -[`resourceLoader(_:shouldWaitForLoadingOfRequestedResource:)`](avassetresourceloaderdelegate/resourceloader(_:shouldwaitforloadingofrequestedresource:).md) returns [`true`](https://developer.apple.com/documentation/swift/true) without finishing the loading request immediately, it may be invoked again with another loading request before the prior request is finished; therefore in such cases the delegate should be prepared to manage multiple loading requests.
+> **Note**:  If the delegate’s implementation of -[`resourceLoader(_:shouldWaitForLoadingOfRequestedResource:)`](./resourceloader%28_,shouldwaitforloadingofrequestedresource%29.md) returns [`true`](../../Swift/true.md) without finishing the loading request immediately, it may be invoked again with another loading request before the prior request is finished; therefore in such cases the delegate should be prepared to manage multiple loading requests.
 
 ## Parameters
 
@@ -40,9 +45,10 @@ If the result is [`false`](https://developer.apple.com/documentation/swift/false
 
 ## See Also
 
-- [func resourceLoader(AVAssetResourceLoader, shouldWaitForLoadingOfRequestedResource: AVAssetResourceLoadingRequest) -> Bool](avassetresourceloaderdelegate/resourceloader(_:shouldwaitforloadingofrequestedresource:).md)
+### Processing resource requests
+- [func resourceLoader(AVAssetResourceLoader, shouldWaitForLoadingOfRequestedResource: AVAssetResourceLoadingRequest) -> Bool](./resourceloader%28_,shouldwaitforloadingofrequestedresource%29.md)
   Asks the delegate if it wants to load the requested resource.
-- [func resourceLoader(AVAssetResourceLoader, didCancel: AVAssetResourceLoadingRequest)](avassetresourceloaderdelegate/resourceloader(_:didcancel:)-3nl51.md)
+- [func resourceLoader(AVAssetResourceLoader, didCancel: AVAssetResourceLoadingRequest)](./resourceloader%28_,didcancel%29-3nl51.md)
   Informs the delegate that a prior loading request has been cancelled.
 
 

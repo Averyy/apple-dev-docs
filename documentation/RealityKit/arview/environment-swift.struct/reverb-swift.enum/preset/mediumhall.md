@@ -1,7 +1,8 @@
 # ARView.Environment.Reverb.Preset.mediumHall
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Reverb that sounds like the inside of a medium hall.
 
@@ -20,15 +21,16 @@ case mediumHall
 
 ## See Also
 
-- [ARView.Environment.Reverb.Preset.cathedral](arview/environment-swift.struct/reverb-swift.enum/preset/cathedral.md)
+### Reverb presets
+- [ARView.Environment.Reverb.Preset.cathedral](./cathedral.md)
   Reverb that sounds like the inside of a cathedral.
-- [ARView.Environment.Reverb.Preset.largeHall](arview/environment-swift.struct/reverb-swift.enum/preset/largehall.md)
+- [ARView.Environment.Reverb.Preset.largeHall](./largehall.md)
   Reverb that sounds like the inside of a large hall.
-- [ARView.Environment.Reverb.Preset.largeRoom](arview/environment-swift.struct/reverb-swift.enum/preset/largeroom.md)
+- [ARView.Environment.Reverb.Preset.largeRoom](./largeroom.md)
   Reverb that sounds like the inside of a large room.
-- [ARView.Environment.Reverb.Preset.mediumRoom](arview/environment-swift.struct/reverb-swift.enum/preset/mediumroom.md)
+- [ARView.Environment.Reverb.Preset.mediumRoom](./mediumroom.md)
   Reverb that sounds like the inside of a medium room.
-- [ARView.Environment.Reverb.Preset.smallRoom](arview/environment-swift.struct/reverb-swift.enum/preset/smallroom.md)
+- [ARView.Environment.Reverb.Preset.smallRoom](./smallroom.md)
   Reverb that sounds like the inside of a small room.
 
 

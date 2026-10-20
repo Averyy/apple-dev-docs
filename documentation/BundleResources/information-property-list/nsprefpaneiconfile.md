@@ -1,20 +1,23 @@
 # NSPrefPaneIconFile
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The name of an image file used to represent a preference pane in the System Preferences app.
 
 **Availability**:
 - macOS 10.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSPrefPaneIconFile` (Preference Pane icon file)
+- **Type**: string
 
 ## See Also
 
-- [NSPrefPaneIconLabel](information-property-list/nsprefpaneiconlabel.md)
+### Preferences
+- [NSPrefPaneIconLabel](./nsprefpaneiconlabel.md)
   The name of a preference pane displayed beneath the preference pane icon in the System Preferences app.
 
 

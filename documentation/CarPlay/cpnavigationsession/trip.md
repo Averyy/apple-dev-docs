@@ -1,7 +1,8 @@
 # trip
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The trip associated with the navigation session.
 
@@ -16,9 +17,14 @@ The trip associated with the navigation session.
 var trip: CPTrip { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) CPTrip * trip;
+```
+
 ## See Also
 
-- [class CPTrip](cptrip.md)
+### Getting the Trip
+- [class CPTrip](../cptrip.md)
   An object that represents a journey between an origin and a destination.
 
 

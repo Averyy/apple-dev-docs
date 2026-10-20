@@ -1,7 +1,8 @@
 # kSKSearchPrefixRanked
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Deprecated. Specifies a prefix-based search, which matches terms that begin with the query string.
 

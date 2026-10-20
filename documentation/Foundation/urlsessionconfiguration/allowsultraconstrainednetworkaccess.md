@@ -1,7 +1,8 @@
 # allowsUltraConstrainedNetworkAccess
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.1+
@@ -16,6 +17,10 @@
 
 ```swift
 var allowsUltraConstrainedNetworkAccess: Bool { get set }
+```
+
+```objc
+@property BOOL allowsUltraConstrainedNetworkAccess;
 ```
 
 

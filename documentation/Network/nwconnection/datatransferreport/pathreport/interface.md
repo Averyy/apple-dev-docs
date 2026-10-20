@@ -1,7 +1,8 @@
 # interface
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The network interface this path used.
 

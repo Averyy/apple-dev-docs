@@ -1,7 +1,8 @@
 # AVAssetImageGenerator.DynamicRangePolicy
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that specifies the dynamic range policy to apply when generating images.
 
@@ -19,40 +20,45 @@ A type that specifies the dynamic range policy to apply when generating images.
 struct DynamicRangePolicy
 ```
 
+```c
+typedef NSString * AVAssetImageGeneratorDynamicRangePolicy;
+```
+
 ## Topics
 
 ### Policies
-- [static let forceSDR: AVAssetImageGenerator.DynamicRangePolicy](avassetimagegenerator/dynamicrangepolicy-swift.struct/forcesdr.md)
+- [static let forceSDR: AVAssetImageGenerator.DynamicRangePolicy](./dynamicrangepolicy-swift.struct/forcesdr.md)
   A policy that forces conversion to standard dynamic range.
-- [static let matchSource: AVAssetImageGenerator.DynamicRangePolicy](avassetimagegenerator/dynamicrangepolicy-swift.struct/matchsource.md)
+- [static let matchSource: AVAssetImageGenerator.DynamicRangePolicy](./dynamicrangepolicy-swift.struct/matchsource.md)
   A policy that preserves the color parameters of the source media.
 ### Initializers
-- [init(rawValue: String)](avassetimagegenerator/dynamicrangepolicy-swift.struct/init(rawvalue:).md)
+- [init(rawValue: String)](./dynamicrangepolicy-swift.struct/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var maximumSize: CGSize](avassetimagegenerator/maximumsize.md)
+### Configuring image generation
+- [var maximumSize: CGSize](./maximumsize.md)
   The maximum size of images to generate.
-- [var requestedTimeToleranceBefore: CMTime](avassetimagegenerator/requestedtimetolerancebefore.md)
+- [var requestedTimeToleranceBefore: CMTime](./requestedtimetolerancebefore.md)
   A maximum length of time before the requested time to allow image generation to occur.
-- [var requestedTimeToleranceAfter: CMTime](avassetimagegenerator/requestedtimetoleranceafter.md)
+- [var requestedTimeToleranceAfter: CMTime](./requestedtimetoleranceafter.md)
   A maximum length of time after the requested time to allow image generation to occur.
-- [var dynamicRangePolicy: AVAssetImageGenerator.DynamicRangePolicy](avassetimagegenerator/dynamicrangepolicy-swift.property.md)
+- [var dynamicRangePolicy: AVAssetImageGenerator.DynamicRangePolicy](./dynamicrangepolicy-swift.property.md)
   The dynamic range policy to use when generating images.
-- [var appliesPreferredTrackTransform: Bool](avassetimagegenerator/appliespreferredtracktransform.md)
+- [var appliesPreferredTrackTransform: Bool](./appliespreferredtracktransform.md)
   A Boolean value that specifies whether to apply the track matrix or matrices when generating an image from the asset.
-- [var apertureMode: AVAssetImageGenerator.ApertureMode?](avassetimagegenerator/aperturemode-swift.property.md)
+- [var apertureMode: AVAssetImageGenerator.ApertureMode?](./aperturemode-swift.property.md)
   Specifies the aperture mode for the generated image.
-- [AVAssetImageGenerator.ApertureMode](avassetimagegenerator/aperturemode-swift.struct.md)
+- [AVAssetImageGenerator.ApertureMode](./aperturemode-swift.struct.md)
   Constants that define aperture modes to use when generating images.
 
 

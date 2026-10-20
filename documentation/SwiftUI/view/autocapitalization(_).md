@@ -1,16 +1,19 @@
 # autocapitalization(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets whether to apply auto-capitalization to this view.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- tvOS 13.0+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.0+ - Deprecated in 27.2
+- tvOS 13.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`textInputAutocapitalization(_:)`](./textinputautocapitalization%28_%29.md) instead.
 
 ## Declaration
 
@@ -30,15 +33,16 @@ TextField("Last, First", text: $fullName)
     .autocapitalization(UITextAutocapitalizationType.words)
 ```
 
-The [`UITextAutocapitalizationType`](https://developer.apple.com/documentation/uikit/uitextautocapitalizationtype) enumeration defines the available capitalization modes. The default is [`UITextAutocapitalizationType.sentences`](https://developer.apple.com/documentation/uikit/uitextautocapitalizationtype/sentences).
+The [`UITextAutocapitalizationType`](../../UIKit/uitextautocapitalizationtype.md) enumeration defines the available capitalization modes. The default is [`UITextAutocapitalizationType.sentences`](../../UIKit/uitextautocapitalizationtype/sentences.md).
 
 ## Parameters
 
-- `style`: One of the autocapitalization modes defined in the [`UITextAutocapitalizationType`](https://developer.apple.com/documentation/uikit/uitextautocapitalizationtype) enumeration.
+- `style`: One of the autocapitalization modes defined in the [`UITextAutocapitalizationType`](../../UIKit/uitextautocapitalizationtype.md) enumeration.
 
 ## See Also
 
-- [func disableAutocorrection(Bool?) -> some View](view/disableautocorrection(_:).md)
+### Text modifiers
+- [func disableAutocorrection(Bool?) -> some View](./disableautocorrection%28_%29.md)
   Sets whether to disable autocorrection for this view.
 
 

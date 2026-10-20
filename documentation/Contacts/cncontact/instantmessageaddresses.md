@@ -1,7 +1,8 @@
 # instantMessageAddresses
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of labeled IM addresses for the contact.
 
@@ -19,13 +20,26 @@ An array of labeled IM addresses for the contact.
 var instantMessageAddresses: [CNLabeledValue<CNInstantMessageAddress>] { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<CNLabeledValue<CNInstantMessageAddress *> *> * instantMessageAddresses;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSArray<CNLabeledValue<CNInstantMessageAddress *> *> * instantMessageAddresses;
+```
+
 #### Discussion
 
-This property is an array of [`CNLabeledValue`](cnlabeledvalue.md) objects, each of which has a label and a [`CNInstantMessageAddress`](cninstantmessageaddress.md) value.
+This property is an array of [`CNLabeledValue`](../cnlabeledvalue.md) objects, each of which has a label and a [`CNInstantMessageAddress`](../cninstantmessageaddress.md) value.
 
 ## See Also
 
-- [var contactRelations: [CNLabeledValue<CNContactRelation>]](cncontact/contactrelations.md)
+### Getting Related Information
+- [var contactRelations: [CNLabeledValue<CNContactRelation>]](./contactrelations.md)
   An array of labeled relations for the contact.
 
 

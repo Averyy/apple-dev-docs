@@ -1,16 +1,17 @@
 # gammaParameter
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The gamma tensor parameter you use for optimizer updates.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,23 +19,28 @@ The gamma tensor parameter you use for optimizer updates.
 var gammaParameter: MLCTensorParameter? { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly, nullable) MLCTensorParameter * gammaParameter;
+```
+
 ## See Also
 
-- [var featureChannelCount: Int](mlcbatchnormalizationlayer/featurechannelcount.md)
+### Inspecting Batch Normalization Layers
+- [var featureChannelCount: Int](./featurechannelcount.md)
   The number of feature channels.
-- [var mean: MLCTensor](mlcbatchnormalizationlayer/mean.md)
+- [var mean: MLCTensor](./mean.md)
   The mean tensor.
-- [var variance: MLCTensor](mlcbatchnormalizationlayer/variance.md)
+- [var variance: MLCTensor](./variance.md)
   The variance tensor.
-- [var beta: MLCTensor?](mlcbatchnormalizationlayer/beta.md)
+- [var beta: MLCTensor?](./beta.md)
   The beta tensor.
-- [var gamma: MLCTensor?](mlcbatchnormalizationlayer/gamma.md)
+- [var gamma: MLCTensor?](./gamma.md)
   The gamma tensor.
-- [var varianceEpsilon: Float](mlcbatchnormalizationlayer/varianceepsilon.md)
+- [var varianceEpsilon: Float](./varianceepsilon.md)
   The variance epsilon you use for numerical stability.
-- [var momentum: Float](mlcbatchnormalizationlayer/momentum.md)
+- [var momentum: Float](./momentum.md)
   The value you use for the running mean and variance computation.
-- [var betaParameter: MLCTensorParameter?](mlcbatchnormalizationlayer/betaparameter.md)
+- [var betaParameter: MLCTensorParameter?](./betaparameter.md)
   The beta tensor parameter you use for optimizer updates.
 
 

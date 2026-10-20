@@ -1,7 +1,8 @@
 # NSMenuItemBadge
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A control that provides additional quantitative information specific to a menu item, such as the number of available updates.
 
@@ -14,13 +15,17 @@ A control that provides additional quantitative information specific to a menu i
 class NSMenuItemBadge
 ```
 
+```objc
+@interface NSMenuItemBadge : NSObject
+```
+
 #### Overview
 
-You create a badge using an initializer or a predefined factory method, and then you assign it to the [`badge`](nsmenuitem/badge.md) property of a [`NSMenuItem`](nsmenuitem.md) for display.
+You create a badge using an initializer or a predefined factory method, and then you assign it to the [`badge`](./nsmenuitem/badge.md) property of a [`NSMenuItem`](./nsmenuitem.md) for display.
 
-![A menu containing five menu items with each menu item displaying a different style of badge. A NSMenuItem callout points to a menu item in the menu. A NSMenuItemBadge call out points to the badge that displays to the right of the menu item.](/images/com.apple.appkit/media-4304515@2x.png)
+![A menu containing five menu items with each menu item displaying a different style of badge. A NSMenuItem callout points to a menu item in the menu. A NSMenuItemBadge call out points to the badge that displays to the right of the menu item.](https://developer.apple.com/tutorials/images/com.apple.appkit/media-4304515@2x.png)
 
-For example, to display a badge with a count, use the [`init(count:)`](nsmenuitembadge/init(count:).md) initalizer, passing in the value of `count` as an `Int`.
+For example, to display a badge with a count, use the [`init(count:)`](./nsmenuitembadge/init%28count%29.md) initalizer, passing in the value of `count` as an `Int`.
 
 **Swift**:
 
@@ -52,7 +57,7 @@ menuItem.badge = [[NSMenuItemBadge alloc] initWithCount:6];
 [menu addItem:menuItem];
 ```
 
-To display a badge with a custom string, use the [`init(string:)`](nsmenuitembadge/init(string:).md) initializer, passing in the string you want to display.
+To display a badge with a custom string, use the [`init(string:)`](./nsmenuitembadge/init%28string%29.md) initializer, passing in the string you want to display.
 
 **Swift**:
 
@@ -86,7 +91,7 @@ menuItem.badge = [[NSMenuItemBadge alloc] initWithString:[NSString stringWithFor
 [menu addItem:menuItem];
 ```
 
-To display a badge using a predefined [`NSMenuItemBadge.BadgeType`](nsmenuitembadge/badgetype.md), use a factory method such as [`newItems(count:)`](nsmenuitembadge/newitems(count:).md), passing in the `count` of the badge to display.
+To display a badge using a predefined [`NSMenuItemBadge.BadgeType`](./nsmenuitembadge/badgetype.md), use a factory method such as [`newItems(count:)`](./nsmenuitembadge/newitems%28count%29.md), passing in the `count` of the badge to display.
 
 **Swift**:
 
@@ -130,62 +135,63 @@ updatesItem.badge = [NSMenuItemBadge updatesWithCount:5];
 [menu addItem:updatesItem];
 ```
 
-> ❗ **Important**:  If you use one of the predefined badge types, the system localizes and pluralizes the string for you. If you create your own custom badge string, you need to localize and pluralize that string yourself. For more information on how to localize and pluralize text, see [`Localizing and varying text with a string catalog`](https://developer.apple.com/documentation/xcode/localizing-and-varying-text-with-a-string-catalog).
+> ❗ **Important**:  If you use one of the predefined badge types, the system localizes and pluralizes the string for you. If you create your own custom badge string, you need to localize and pluralize that string yourself. For more information on how to localize and pluralize text, see [Localizing and varying text with a string catalog](../Xcode/localizing-and-varying-text-with-a-string-catalog.md).
 
 The default value of this property is `nil`.
 
 ## Topics
 
 ### Creating menu item badges
-- [init(count: Int)](nsmenuitembadge/init(count:).md)
+- [init(count: Int)](./nsmenuitembadge/init%28count%29.md)
   Creates a badge with a count and an empty string.
-- [init(string: String)](nsmenuitembadge/init(string:).md)
+- [init(string: String)](./nsmenuitembadge/init%28string%29.md)
   Creates a badge with the provided custom string.
 ### Creating badges of a specific type
-- [class func alerts(count: Int) -> Self](nsmenuitembadge/alerts(count:).md)
+- [class func alerts(count: Int) -> Self](./nsmenuitembadge/alerts%28count%29.md)
   Creates an alert-style badge with an integer count and a predefined label that represents the number of alerts.
-- [class func newItems(count: Int) -> Self](nsmenuitembadge/newitems(count:).md)
+- [class func newItems(count: Int) -> Self](./nsmenuitembadge/newitems%28count%29.md)
   Creates a new item-style badge with an integer count and a predefined label that represents the number of new items.
-- [class func updates(count: Int) -> Self](nsmenuitembadge/updates(count:).md)
+- [class func updates(count: Int) -> Self](./nsmenuitembadge/updates%28count%29.md)
   Creates an update-style badge with an integer count and a predefined label that represents the number of available updates.
-- [NSMenuItemBadge.BadgeType](nsmenuitembadge/badgetype.md)
+- [NSMenuItemBadge.BadgeType](./nsmenuitembadge/badgetype.md)
   Constants that define types of badges for display.
 ### Accessing menu item badge attributes
-- [var itemCount: Int](nsmenuitembadge/itemcount.md)
+- [var itemCount: Int](./nsmenuitembadge/itemcount.md)
   The number of items the badge displays.
-- [var stringValue: String?](nsmenuitembadge/stringvalue-fc9f.md)
+- [var stringValue: String?](./nsmenuitembadge/stringvalue-fc9f.md)
   The string representation of the badge when it displays.
-- [var type: NSMenuItemBadge.BadgeType](nsmenuitembadge/type.md)
+- [var type: NSMenuItemBadge.BadgeType](./nsmenuitembadge/type.md)
   The type of items the badge displays.
 ### Instance Properties
-- [var stringValue: String?](nsmenuitembadge/stringvalue-32sbt.md)
+- [var stringValue: String?](./nsmenuitembadge/stringvalue-32sbt.md)
   The string representation of the badge as it would appear when the badge is displayed.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSMenu](nsmenu.md)
+### Menus
+- [class NSMenu](./nsmenu.md)
   An object that manages an app’s menus.
-- [class NSMenuItem](nsmenuitem.md)
+- [class NSMenuItem](./nsmenuitem.md)
   A command item in an app menu.
-- [protocol NSMenuDelegate](nsmenudelegate.md)
-  The optional methods implemented by delegates of [`NSMenu`](nsmenu.md) objects to manage menu display and handle some events.
+- [protocol NSMenuDelegate](./nsmenudelegate.md)
+  The optional methods implemented by delegates of [`NSMenu`](./nsmenu.md) objects to manage menu display and handle some events.
 
 
 ---

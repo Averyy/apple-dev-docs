@@ -1,7 +1,8 @@
 # resetAuthorizationStatus(for:)
 
 **Framework**: XCUIAutomation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resets the authorization status for a protected resource.
 
@@ -21,13 +22,18 @@ Resets the authorization status for a protected resource.
 func resetAuthorizationStatus(for resource: XCUIProtectedResource)
 ```
 
+```objc
+- (void) resetAuthorizationStatusForResource:(XCUIProtectedResource) resource;
+```
+
 ## Parameters
 
 - `resource`: A system resource that requires user authorization to access.
 
 ## See Also
 
-- [enum XCUIProtectedResource](xcuiprotectedresource.md)
+### Resetting authorization status
+- [enum XCUIProtectedResource](../xcuiprotectedresource.md)
   A system resource that requires user authorization to access.
 
 

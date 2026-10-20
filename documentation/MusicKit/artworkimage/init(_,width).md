@@ -1,7 +1,8 @@
 # init(_:width:)
 
 **Framework**: MusicKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance with a specified width.
 
@@ -23,7 +24,7 @@ init(_ artwork: Artwork, width: CGFloat)
 
 #### Discussion
 
-This initializer derives the [`URL`](https://developer.apple.com/documentation/foundation/url) for loading the artwork image from the [`Artwork`](artwork.md) instance and the specified sizing parameters, as well as the display scale for the current environment.
+This initializer derives the [`URL`](../../Foundation/url.md) for loading the artwork image from the [`Artwork`](../artwork.md) instance and the specified sizing parameters, as well as the display scale for the current environment.
 
 The loaded image and placeholder have constrained frames from these sizing parameters.
 

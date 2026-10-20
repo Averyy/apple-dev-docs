@@ -1,7 +1,8 @@
 # init(coder:rootView:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a hosting view object from an archive and the specified SwiftUI view.
 

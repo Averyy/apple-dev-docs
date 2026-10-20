@@ -1,7 +1,8 @@
 # includes(_:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the filter includes the point of interest category.
 
@@ -20,6 +21,10 @@ Returns a Boolean value indicating whether the filter includes the point of inte
 func includes(_ category: MKPointOfInterestCategory) -> Bool
 ```
 
+```objc
+- (BOOL) includesCategory:(MKPointOfInterestCategory) category;
+```
+
 #### Return Value
 
 `true` if the filter includes the point of interest category; otherwise, `false`.
@@ -30,7 +35,8 @@ func includes(_ category: MKPointOfInterestCategory) -> Bool
 
 ## See Also
 
-- [func excludes(MKPointOfInterestCategory) -> Bool](mkpointofinterestfilter/excludes(_:).md)
+### Querying filter behavior
+- [func excludes(MKPointOfInterestCategory) -> Bool](./excludes%28_%29.md)
   Returns a Boolean value indicating whether the filter excludes the point of interest category.
 
 

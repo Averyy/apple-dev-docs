@@ -1,7 +1,8 @@
 # triangleFillMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that controls how RealityKit draws triangles.
 
@@ -21,7 +22,7 @@ var triangleFillMode: PhysicallyBasedMaterial.TriangleFillMode { get set }
 
 #### Discussion
 
-A value of [`MaterialParameterTypes.TriangleFillMode.fill`](materialparametertypes/trianglefillmode/fill.md) causes RealityKit to draw triangles normally, while a value of  [`MaterialParameterTypes.TriangleFillMode.lines`](materialparametertypes/trianglefillmode/lines.md) turns on wireframe rendering.
+A value of [`MaterialParameterTypes.TriangleFillMode.fill`](../materialparametertypes/trianglefillmode/fill.md) causes RealityKit to draw triangles normally, while a value of  [`MaterialParameterTypes.TriangleFillMode.lines`](../materialparametertypes/trianglefillmode/lines.md) turns on wireframe rendering.
 
 
 ---

@@ -1,7 +1,8 @@
 # cinemagraphURL
 
 **Framework**: TV Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of a looping video to play, without sound, while the preview loads.
 
@@ -14,15 +15,20 @@ The URL of a looping video to play, without sound, while the preview loads.
 var cinemagraphURL: URL? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSURL * cinemagraphURL;
+```
+
 #### Discussion
 
-If you specify a value for this property, the system initially displays the corresponding video instead of a static image. The video plays in a loop until the preview video loads and is ready to play. If you do not specify a value for this property, the system displays the image you set using the [`setImageURL(_:for:)`](tvtopshelfitem/setimageurl(_:for:).md) method.
+If you specify a value for this property, the system initially displays the corresponding video instead of a static image. The video plays in a loop until the preview video loads and is ready to play. If you do not specify a value for this property, the system displays the image you set using the [`setImageURL(_:for:)`](../tvtopshelfitem/setimageurl%28_,for%29.md) method.
 
 The system does not play any sound content present in the video, so there is no need to include it when creating your assets.
 
 ## See Also
 
-- [var previewVideoURL: URL?](tvtopshelfcarouselitem/previewvideourl.md)
+### Specifying the Content Previews
+- [var previewVideoURL: URL?](./previewvideourl.md)
   The URL for the content’s trailer or preview.
 
 

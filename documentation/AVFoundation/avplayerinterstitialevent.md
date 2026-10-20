@@ -1,7 +1,8 @@
 # AVPlayerInterstitialEvent
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides instructions for how a player presents interstitial content.
 
@@ -20,114 +21,119 @@ An object that provides instructions for how a player presents interstitial cont
 class AVPlayerInterstitialEvent
 ```
 
+```objc
+@interface AVPlayerInterstitialEvent : NSObject
+```
+
 #### Overview
 
-An interstitial event defines a [`date`](avplayerinterstitialevent/date.md) or [`time`](avplayerinterstitialevent/time.md), on the timeline of its [`primaryItem`](avplayerinterstitialevent/primaryitem.md), at which playback of interstitial content begins. It specifies the alternative interstitial content to play as an array of one or more template player items. The system uses the configuration of the event’s [`templateItems`](avplayerinterstitialevent/templateitems.md) to build new player item instances to present the interstitial content.
+An interstitial event defines a [`date`](./avplayerinterstitialevent/date.md) or [`time`](./avplayerinterstitialevent/time.md), on the timeline of its [`primaryItem`](./avplayerinterstitialevent/primaryitem.md), at which playback of interstitial content begins. It specifies the alternative interstitial content to play as an array of one or more template player items. The system uses the configuration of the event’s [`templateItems`](./avplayerinterstitialevent/templateitems.md) to build new player item instances to present the interstitial content.
 
-Use [`AVPlayerInterstitialEventMonitor`](avplayerinterstitialeventmonitor.md) to observe the scheduling and progress of interstitial events. If your app requires specifying the schedule of interstitial events, use [`AVPlayerInterstitialEventController`](avplayerinterstitialeventcontroller.md) instead.
+Use [`AVPlayerInterstitialEventMonitor`](./avplayerinterstitialeventmonitor.md) to observe the scheduling and progress of interstitial events. If your app requires specifying the schedule of interstitial events, use [`AVPlayerInterstitialEventController`](./avplayerinterstitialeventcontroller.md) instead.
 
-> **Note**:  [`AVPlayerInterstitialEvent`](avplayerinterstitialevent.md) was previously an immutable type. Starting in iOS 16, tvOS 16, macOS 13, and watchOS 9, it’s now a mutable type, which allows you to create and customize an event before setting it on an [`AVPlayerInterstitialEventController`](avplayerinterstitialeventcontroller.md).
+> **Note**:  [`AVPlayerInterstitialEvent`](./avplayerinterstitialevent.md) was previously an immutable type. Starting in iOS 16, tvOS 16, macOS 13, and watchOS 9, it’s now a mutable type, which allows you to create and customize an event before setting it on an [`AVPlayerInterstitialEventController`](./avplayerinterstitialeventcontroller.md).
 
 ## Topics
 
 ### Creating an event
-- [convenience init(primaryItem: AVPlayerItem, time: CMTime)](avplayerinterstitialevent/init(primaryitem:time:).md)
+- [convenience init(primaryItem: AVPlayerItem, time: CMTime)](./avplayerinterstitialevent/init%28primaryitem,time%29.md)
   Creates an interstitial event for the specified time.
-- [convenience init(primaryItem: AVPlayerItem, date: Date)](avplayerinterstitialevent/init(primaryitem:date:).md)
+- [convenience init(primaryItem: AVPlayerItem, date: Date)](./avplayerinterstitialevent/init%28primaryitem,date%29.md)
   Creates an interstitial event for the specified date.
-- [convenience init(primaryItem: AVPlayerItem, identifier: String?, time: CMTime, templateItems: [AVPlayerItem], restrictions: AVPlayerInterstitialEvent.Restrictions, resumptionOffset: CMTime, playoutLimit: CMTime, userDefinedAttributes: [String : Any])](avplayerinterstitialevent/init(primaryitem:identifier:time:templateitems:restrictions:resumptionoffset:playoutlimit:userdefinedattributes:).md)
+- [convenience init(primaryItem: AVPlayerItem, identifier: String?, time: CMTime, templateItems: [AVPlayerItem], restrictions: AVPlayerInterstitialEvent.Restrictions, resumptionOffset: CMTime, playoutLimit: CMTime, userDefinedAttributes: [String : Any])](./avplayerinterstitialevent/init%28primaryitem,identifier,time,templateitems,restrictions,resumptionoffset,playoutlimit,userdefinedattributes%29.md)
   Creates an interstitial event, with user-defined attributes, for the specified time.
-- [convenience init(primaryItem: AVPlayerItem, identifier: String?, date: Date, templateItems: [AVPlayerItem], restrictions: AVPlayerInterstitialEvent.Restrictions, resumptionOffset: CMTime, playoutLimit: CMTime, userDefinedAttributes: [String : Any])](avplayerinterstitialevent/init(primaryitem:identifier:date:templateitems:restrictions:resumptionoffset:playoutlimit:userdefinedattributes:).md)
+- [convenience init(primaryItem: AVPlayerItem, identifier: String?, date: Date, templateItems: [AVPlayerItem], restrictions: AVPlayerInterstitialEvent.Restrictions, resumptionOffset: CMTime, playoutLimit: CMTime, userDefinedAttributes: [String : Any])](./avplayerinterstitialevent/init%28primaryitem,identifier,date,templateitems,restrictions,resumptionoffset,playoutlimit,userdefinedattributes%29.md)
   Creates an interstitial event, with user-defined attributes, for the specified date.
 ### Identifying events
-- [var identifier: String](avplayerinterstitialevent/identifier.md)
+- [var identifier: String](./avplayerinterstitialevent/identifier.md)
   An identifier for the event.
 ### Accessing player items
-- [var primaryItem: AVPlayerItem?](avplayerinterstitialevent/primaryitem.md)
+- [var primaryItem: AVPlayerItem?](./avplayerinterstitialevent/primaryitem.md)
   The player item that represents the primary content.
-- [var templateItems: [AVPlayerItem]](avplayerinterstitialevent/templateitems.md)
+- [var templateItems: [AVPlayerItem]](./avplayerinterstitialevent/templateitems.md)
   An array of player item configurations to use as templates for player items that play interstitial content.
 ### Configuring cues
-- [var cue: AVPlayerInterstitialEvent.Cue](avplayerinterstitialevent/cue-swift.property.md)
+- [var cue: AVPlayerInterstitialEvent.Cue](./avplayerinterstitialevent/cue-swift.property.md)
   A cue to schedule interstitial event playback at a predefined position during primary playback.
-- [AVPlayerInterstitialEvent.Cue](avplayerinterstitialevent/cue-swift.struct.md)
+- [AVPlayerInterstitialEvent.Cue](./avplayerinterstitialevent/cue-swift.struct.md)
   A structure that defines standard cues to play interstitial content.
 ### Inspecting timing
-- [var time: CMTime](avplayerinterstitialevent/time.md)
+- [var time: CMTime](./avplayerinterstitialevent/time.md)
   A time within the timeline of the primary content that playback of interstitial content begins.
-- [var date: Date?](avplayerinterstitialevent/date.md)
+- [var date: Date?](./avplayerinterstitialevent/date.md)
   A date within the date range of the primary content that playback of interstitial content begins.
-- [var willPlayOnce: Bool](avplayerinterstitialevent/willplayonce.md)
+- [var willPlayOnce: Bool](./avplayerinterstitialevent/willplayonce.md)
   A Boolean value that indicates whether to schedule this event one time only and suppress subsequent replay.
-- [var resumptionOffset: CMTime](avplayerinterstitialevent/resumptionoffset.md)
+- [var resumptionOffset: CMTime](./avplayerinterstitialevent/resumptionoffset.md)
   A time offset at which playback of primary content resumes after interstitial content finishes.
-- [var playoutLimit: CMTime](avplayerinterstitialevent/playoutlimit.md)
+- [var playoutLimit: CMTime](./avplayerinterstitialevent/playoutlimit.md)
   The time offset at which playback of the interstitial ends.
-- [var alignsStartWithPrimarySegmentBoundary: Bool](avplayerinterstitialevent/alignsstartwithprimarysegmentboundary.md)
+- [var alignsStartWithPrimarySegmentBoundary: Bool](./avplayerinterstitialevent/alignsstartwithprimarysegmentboundary.md)
   A Boolean value that indicates whether the start time of interstitial playback should snap to a segment boundary of the primary asset.
-- [var alignsResumptionWithPrimarySegmentBoundary: Bool](avplayerinterstitialevent/alignsresumptionwithprimarysegmentboundary.md)
+- [var alignsResumptionWithPrimarySegmentBoundary: Bool](./avplayerinterstitialevent/alignsresumptionwithprimarysegmentboundary.md)
   A Boolean value that indicates whether the resumption time of primary playback should snap to a segment boundary of the primary asset.
 ### Managing restrictions
-- [var restrictions: AVPlayerInterstitialEvent.Restrictions](avplayerinterstitialevent/restrictions-swift.property.md)
+- [var restrictions: AVPlayerInterstitialEvent.Restrictions](./avplayerinterstitialevent/restrictions-swift.property.md)
   The restrictions the event imposes on the playback of interstitial content.
-- [AVPlayerInterstitialEvent.Restrictions](avplayerinterstitialevent/restrictions-swift.struct.md)
+- [AVPlayerInterstitialEvent.Restrictions](./avplayerinterstitialevent/restrictions-swift.struct.md)
   Constants that define restrictions on the playback of interstitial content.
 ### Accessing asset lists
-- [var assetListResponse: [AnyHashable : any Sendable]?](avplayerinterstitialevent/assetlistresponse.md)
+- [var assetListResponse: [AnyHashable : any Sendable]?](./avplayerinterstitialevent/assetlistresponse.md)
   The asset list JSON response as a dictionary.
 ### Accessing attributes
-- [var userDefinedAttributes: [AnyHashable : any Sendable]](avplayerinterstitialevent/userdefinedattributes.md)
+- [var userDefinedAttributes: [AnyHashable : any Sendable]](./avplayerinterstitialevent/userdefinedattributes.md)
   Attributes of the event that the vendor or app defines.
 ### Inspecting timeline occupancy
-- [var timelineOccupancy: AVPlayerInterstitialEvent.TimelineOccupancy](avplayerinterstitialevent/timelineoccupancy-swift.property.md)
+- [var timelineOccupancy: AVPlayerInterstitialEvent.TimelineOccupancy](./avplayerinterstitialevent/timelineoccupancy-swift.property.md)
   An event’s occupancy on the integrated timeline.
-- [AVPlayerInterstitialEvent.TimelineOccupancy](avplayerinterstitialevent/timelineoccupancy-swift.enum.md)
+- [AVPlayerInterstitialEvent.TimelineOccupancy](./avplayerinterstitialevent/timelineoccupancy-swift.enum.md)
   Constants that specify how an event occupies time on an integrated timeline.
-- [var supplementsPrimaryContent: Bool](avplayerinterstitialevent/supplementsprimarycontent.md)
+- [var supplementsPrimaryContent: Bool](./avplayerinterstitialevent/supplementsprimarycontent.md)
   A Boolean value that indicates whether an event supplements the primary content and should present with the primary item.
-- [var contentMayVary: Bool](avplayerinterstitialevent/contentmayvary.md)
+- [var contentMayVary: Bool](./avplayerinterstitialevent/contentmayvary.md)
   A Boolean value that indicates whether an event’s content is dynamic and the server may respond with different interstitial assets for other participants in a coordinated playback session.
-- [var plannedDuration: CMTime](avplayerinterstitialevent/plannedduration.md)
+- [var plannedDuration: CMTime](./avplayerinterstitialevent/plannedduration.md)
   The planned duration of the event.
 ### Managing skipping behavior
-- [var skipControlLocalizedLabelBundleKey: String?](avplayerinterstitialevent/skipcontrollocalizedlabelbundlekey.md)
+- [var skipControlLocalizedLabelBundleKey: String?](./avplayerinterstitialevent/skipcontrollocalizedlabelbundlekey.md)
   The key defined in the AVPlayerInterstitialEventController’s localizedStringsBundle that points to the localized label for the skip button.
-- [var skipControlTimeRange: CMTimeRange](avplayerinterstitialevent/skipcontroltimerange.md)
+- [var skipControlTimeRange: CMTimeRange](./avplayerinterstitialevent/skipcontroltimerange.md)
   The time range within the duration of the interstitial event for which a skip button should be displayed.
-- [AVPlayerInterstitialEvent.SkippableEventState](avplayerinterstitialevent/skippableeventstate.md)
+- [AVPlayerInterstitialEvent.SkippableEventState](./avplayerinterstitialevent/skippableeventstate.md)
   These constants describe the state for a skippable AVPlayerInterstitialEvent.
 ### Instance Properties
-- [var scheduleIdentifier: String?](avplayerinterstitialevent/scheduleidentifier.md)
+- [var scheduleIdentifier: String?](./avplayerinterstitialevent/scheduleidentifier.md)
   The identifier of the daterange-schedule that produced this event. nil if the event was not a product of a daterange-schedule.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Providing an integrated view of your timeline when playing HLS interstitials](providing-an-integrated-view-of-your-timeline-when-playing-hls-interstitials.md)
+### Interstitials
+- [Providing an integrated view of your timeline when playing HLS interstitials](./providing-an-integrated-view-of-your-timeline-when-playing-hls-interstitials.md)
   Go beyond simple ad insertion with point and fill occupancy HLS interstitials.
-- [class AVPlayerInterstitialEventController](avplayerinterstitialeventcontroller.md)
+- [class AVPlayerInterstitialEventController](./avplayerinterstitialeventcontroller.md)
   An object that schedules interstitial events for items played by the primary player.
-- [class AVPlayerInterstitialEventMonitor](avplayerinterstitialeventmonitor.md)
+- [class AVPlayerInterstitialEventMonitor](./avplayerinterstitialeventmonitor.md)
   An object that monitors the scheduling and progress of interstitial events.
-- [let AVPlayerInterstitialEventMonitorScheduleRequestErrorKey: String](avplayerinterstitialeventmonitorschedulerequesterrorkey.md)
+- [let AVPlayerInterstitialEventMonitorScheduleRequestErrorKey: String](./avplayerinterstitialeventmonitorschedulerequesterrorkey.md)
   userInfo dictionary key for the AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification. Value is NSError. Absent if the request succeeded
-- [let AVPlayerInterstitialEventMonitorScheduleRequestIdentifierKey: String](avplayerinterstitialeventmonitorschedulerequestidentifierkey.md)
+- [let AVPlayerInterstitialEventMonitorScheduleRequestIdentifierKey: String](./avplayerinterstitialeventmonitorschedulerequestidentifierkey.md)
   userInfo dictionary key for the AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification. Value is NSString.
-- [let AVPlayerInterstitialEventMonitorScheduleRequestResponseKey: String](avplayerinterstitialeventmonitorschedulerequestresponsekey.md)
+- [let AVPlayerInterstitialEventMonitorScheduleRequestResponseKey: String](./avplayerinterstitialeventmonitorschedulerequestresponsekey.md)
   userInfo dictionary key for the AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification. Value is NSData. Absent if the request failed.
-- [class AVPlayerItemIntegratedTimeline](avplayeritemintegratedtimeline.md)
+- [class AVPlayerItemIntegratedTimeline](./avplayeritemintegratedtimeline.md)
   An object that models the timeline and playback sequence of a primary player item and scheduled interstitial events.
 
 

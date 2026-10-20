@@ -1,7 +1,8 @@
 # collisionBoundsType
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of collision bounds associated with the item.
 
@@ -18,23 +19,28 @@ The type of collision bounds associated with the item.
 optional var collisionBoundsType: UIDynamicItemCollisionBoundsType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIDynamicItemCollisionBoundsType collisionBoundsType;
+```
+
 #### Discussion
 
-The dynamics system uses this property to determine how to evaluate collisions with the dynamic item. Rectangular and elliptical bounds are defined by the [`bounds`](uidynamicitem/bounds.md) property of the item. For custom collision bounds, the shape of the bounds are in the [`collisionBoundingPath`](uidynamicitem/collisionboundingpath.md) property.
+The dynamics system uses this property to determine how to evaluate collisions with the dynamic item. Rectangular and elliptical bounds are defined by the [`bounds`](./bounds.md) property of the item. For custom collision bounds, the shape of the bounds are in the [`collisionBoundingPath`](./collisionboundingpath.md) property.
 
-If you implement this property in your dynamic item and set its value to [`UIDynamicItemCollisionBoundsType.path`](uidynamicitemcollisionboundstype/path.md), you must also implement the [`collisionBoundingPath`](uidynamicitem/collisionboundingpath.md) property and provide a valid path. Failure to do so is a programmer error.
+If you implement this property in your dynamic item and set its value to [`UIDynamicItemCollisionBoundsType.path`](../uidynamicitemcollisionboundstype/path.md), you must also implement the [`collisionBoundingPath`](./collisionboundingpath.md) property and provide a valid path. Failure to do so is a programmer error.
 
-The default value of this property is [`UIDynamicItemCollisionBoundsType.rectangle`](uidynamicitemcollisionboundstype/rectangle.md).
+The default value of this property is [`UIDynamicItemCollisionBoundsType.rectangle`](../uidynamicitemcollisionboundstype/rectangle.md).
 
 ## See Also
 
-- [var bounds: CGRect](uidynamicitem/bounds.md)
+### Participating in dynamic animation
+- [var bounds: CGRect](./bounds.md)
   Called when a dynamic animator needs the bounds of the dynamic item.
-- [var center: CGPoint](uidynamicitem/center.md)
+- [var center: CGPoint](./center.md)
   The center point of the dynamic item.
-- [var transform: CGAffineTransform](uidynamicitem/transform.md)
+- [var transform: CGAffineTransform](./transform.md)
   The rotation of the dynamic item.
-- [var collisionBoundingPath: UIBezierPath](uidynamicitem/collisionboundingpath.md)
+- [var collisionBoundingPath: UIBezierPath](./collisionboundingpath.md)
   The path-based shape to use for the collision bounds.
 
 

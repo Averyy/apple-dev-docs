@@ -1,7 +1,8 @@
 # ShareLink
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that controls a sharing presentation.
 
@@ -28,7 +29,7 @@ People tap or click on a share link to present a share interface. The link typic
 ShareLink(item: URL(string: "https://developer.apple.com/xcode/swiftui/")!)
 ```
 
-You can control the appearance of the link by providing view content. For example, you can use a [`Label`](label.md) to display a link with a custom icon:
+You can control the appearance of the link by providing view content. For example, you can use a [`Label`](./label.md) to display a link with a custom icon:
 
 ```swift
 ShareLink(item: URL(string: "https://developer.apple.com/xcode/swiftui/")!) {
@@ -42,9 +43,9 @@ If you only wish to customize the link’s title, you can use one of the conveni
 ShareLink("Share URL", item: URL(string: "https://developer.apple.com/xcode/swiftui/")!)
 ```
 
-The link can share any content that is [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable). Many framework types, like [`URL`](https://developer.apple.com/documentation/foundation/url), already conform to this protocol. You can also make your own types transferable.
+The link can share any content that is [`Transferable`](../CoreTransferable/transferable.md). Many framework types, like [`URL`](../Foundation/url.md), already conform to this protocol. You can also make your own types transferable.
 
-For example, you can use [`ProxyRepresentation`](https://developer.apple.com/documentation/coretransferable/proxyrepresentation) to resolve your own type to a framework type:
+For example, you can use [`ProxyRepresentation`](../CoreTransferable/proxyrepresentation.md) to resolve your own type to a framework type:
 
 ```swift
 struct Photo: Transferable {
@@ -72,9 +73,9 @@ struct PhotoView: View {
 }
 ```
 
-Sometimes the content that your app shares isn’t immediately available. You can use [`FileRepresentation`](https://developer.apple.com/documentation/coretransferable/filerepresentation) or [`DataRepresentation`](https://developer.apple.com/documentation/coretransferable/datarepresentation) when you need an asynchronous operation, like a network request, to retrieve and prepare the content.
+Sometimes the content that your app shares isn’t immediately available. You can use [`FileRepresentation`](../CoreTransferable/filerepresentation.md) or [`DataRepresentation`](../CoreTransferable/datarepresentation.md) when you need an asynchronous operation, like a network request, to retrieve and prepare the content.
 
-Note that some applications offer their sharing service for files, but not for a wide range of different data types, for example, Mail.app, Notes.app, Messages.app or AirDrop. If you don’t see a particular sharing service in the presented `ShareLink`, try adding a [`FileRepresentation`](https://developer.apple.com/documentation/coretransferable/filerepresentation) to the type’s `Transferable` conformance.
+Note that some applications offer their sharing service for files, but not for a wide range of different data types, for example, Mail.app, Notes.app, Messages.app or AirDrop. If you don’t see a particular sharing service in the presented `ShareLink`, try adding a [`FileRepresentation`](../CoreTransferable/filerepresentation.md) to the type’s `Transferable` conformance.
 
 A `Transferable` type also lets you provide multiple content types for a single shareable item. The share interface shows relevant sharing services based on the types that you provide.
 
@@ -99,51 +100,52 @@ ShareLink(
 ## Topics
 
 ### Sharing an item
-- [init(item:subject:message:)](sharelink/init(item:subject:message:).md)
+- [init(item:subject:message:)](./sharelink/init%28item,subject,message%29.md)
   Creates an instance that presents the share interface.
-- [init(_:item:subject:message:)](sharelink/init(_:item:subject:message:).md)
+- [init(_:item:subject:message:)](./sharelink/init%28_,item,subject,message%29.md)
   Creates an instance, with a custom label, that presents the share interface.
-- [init(item:subject:message:label:)](sharelink/init(item:subject:message:label:).md)
+- [init(item:subject:message:label:)](./sharelink/init%28item,subject,message,label%29.md)
   Creates an instance that presents the share interface.
 ### Sharing an item with a preview
-- [init<I>(item: I, subject: Text?, message: Text?, preview: SharePreview<PreviewImage, PreviewIcon>)](sharelink/init(item:subject:message:preview:).md)
+- [init<I>(item: I, subject: Text?, message: Text?, preview: SharePreview<PreviewImage, PreviewIcon>)](./sharelink/init%28item,subject,message,preview%29.md)
   Creates an instance that presents the share interface.
-- [init(_:item:subject:message:preview:)](sharelink/init(_:item:subject:message:preview:).md)
+- [init(_:item:subject:message:preview:)](./sharelink/init%28_,item,subject,message,preview%29.md)
   Creates an instance, with a custom label, that presents the share interface.
-- [init<I>(item: I, subject: Text?, message: Text?, preview: SharePreview<PreviewImage, PreviewIcon>, label: () -> Label)](sharelink/init(item:subject:message:preview:label:).md)
+- [init<I>(item: I, subject: Text?, message: Text?, preview: SharePreview<PreviewImage, PreviewIcon>, label: () -> Label)](./sharelink/init%28item,subject,message,preview,label%29.md)
   Creates an instance that presents the share interface.
 ### Sharing items
-- [init(items:subject:message:)](sharelink/init(items:subject:message:).md)
+- [init(items:subject:message:)](./sharelink/init%28items,subject,message%29.md)
   Creates an instance that presents the share interface.
-- [init(_:items:subject:message:)](sharelink/init(_:items:subject:message:).md)
+- [init(_:items:subject:message:)](./sharelink/init%28_,items,subject,message%29.md)
   Creates an instance, with a custom label, that presents the share interface.
-- [init(items:subject:message:label:)](sharelink/init(items:subject:message:label:).md)
+- [init(items:subject:message:label:)](./sharelink/init%28items,subject,message,label%29.md)
   Creates an instance that presents the share interface.
 ### Sharing items with a preview
-- [init(items: Data, subject: Text?, message: Text?, preview: (Data.Element) -> SharePreview<PreviewImage, PreviewIcon>)](sharelink/init(items:subject:message:preview:).md)
+- [init(items: Data, subject: Text?, message: Text?, preview: (Data.Element) -> SharePreview<PreviewImage, PreviewIcon>)](./sharelink/init%28items,subject,message,preview%29.md)
   Creates an instance that presents the share interface.
-- [init(_:items:subject:message:preview:)](sharelink/init(_:items:subject:message:preview:).md)
+- [init(_:items:subject:message:preview:)](./sharelink/init%28_,items,subject,message,preview%29.md)
   Creates an instance, with a custom label, that presents the share interface.
-- [init(items: Data, subject: Text?, message: Text?, preview: (Data.Element) -> SharePreview<PreviewImage, PreviewIcon>, label: () -> Label)](sharelink/init(items:subject:message:preview:label:).md)
+- [init(items: Data, subject: Text?, message: Text?, preview: (Data.Element) -> SharePreview<PreviewImage, PreviewIcon>, label: () -> Label)](./sharelink/init%28items,subject,message,preview,label%29.md)
   Creates an instance that presents the share interface.
 ### Supporting types
-- [struct DefaultShareLinkLabel](defaultsharelinklabel.md)
+- [struct DefaultShareLinkLabel](./defaultsharelinklabel.md)
   The default label used for a share link.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct Link](link.md)
+### Linking to other content
+- [struct Link](./link.md)
   A control for navigating to a URL.
-- [struct SharePreview](sharepreview.md)
+- [struct SharePreview](./sharepreview.md)
   A representation of a type to display in a share preview.
-- [struct TextFieldLink](textfieldlink.md)
+- [struct TextFieldLink](./textfieldlink.md)
   A control that requests text input from the user when pressed.
-- [struct HelpLink](helplink.md)
+- [struct HelpLink](./helplink.md)
   A button with a standard appearance that opens app-specific help documentation.
 
 

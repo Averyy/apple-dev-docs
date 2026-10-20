@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The current decoding index of the container (i.e. the index of the next element to be decoded.) Incremented after every successful decode call.

@@ -1,7 +1,8 @@
 # intrinsicMatrix
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The 3x3 camera intrinsic matrix for camera calibration.
 

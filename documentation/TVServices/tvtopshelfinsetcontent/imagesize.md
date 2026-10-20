@@ -1,7 +1,8 @@
 # imageSize
 
 **Framework**: TV Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The standard width and height for images in an inset interface.
 
@@ -14,9 +15,13 @@ The standard width and height for images in an inset interface.
 class var imageSize: CGSize { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) CGSize imageSize;
+```
+
 #### Discussion
 
-The standard image size for inset items is 1740 x 560 points. For more information about configuring the images for an inset interface, see [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/tvos/icons-and-images/top-shelf-images/).
+The standard image size for inset items is 1740 x 560 points. For more information about configuring the images for an inset interface, see [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/tvos/icons-and-images/top-shelf-images/).
 
 
 ---

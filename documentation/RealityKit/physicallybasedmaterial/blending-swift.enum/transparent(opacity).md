@@ -1,7 +1,8 @@
 # PhysicallyBasedMaterial.Blending.transparent(opacity:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A surface that’s transparent.
 
@@ -11,7 +12,7 @@ A surface that’s transparent.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -29,11 +30,12 @@ This enumeration case indicates that the material supports transparency.
 
 ## See Also
 
-- [PhysicallyBasedMaterial.Blending.opaque](physicallybasedmaterial/blending-swift.enum/opaque.md)
+### Specifying opacity
+- [PhysicallyBasedMaterial.Blending.opaque](./opaque.md)
   An opaque surface.
-- [var opacityThreshold: Float?](physicallybasedmaterial/opacitythreshold.md)
+- [var opacityThreshold: Float?](../opacitythreshold.md)
   A threshold below which RealityKit ignores opacity.
-- [PhysicallyBasedMaterial.Opacity](physicallybasedmaterial/opacity.md)
+- [PhysicallyBasedMaterial.Opacity](../opacity.md)
   An object that defines the opacity of an entity.
 
 

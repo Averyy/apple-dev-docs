@@ -1,7 +1,8 @@
 # shippingContact
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The shipping address selected by the user.
 
@@ -11,13 +12,13 @@ The shipping address selected by the user.
 
 ## Declaration
 
-```swift
+```
 readonly attribute ApplePayPaymentContact shippingContact;
 ```
 
 #### Discussion
 
-This attribute is contained by the [`onshippingcontactselected`](applepaysession/onshippingcontactselected.md) event. Access this attribute using the event parameter in the callback function; for example, `var myShippingContact = event.shippingContact;`.
+This attribute is contained by the [`onshippingcontactselected`](../applepaysession/onshippingcontactselected.md) event. Access this attribute using the event parameter in the callback function; for example, `var myShippingContact = event.shippingContact;`.
 
 
 ---

@@ -1,12 +1,13 @@
 # deselectItem(at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deselects the pop-up list item at the given index if it’s selected.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Deselects the pop-up list item at the given index if it’s selected.
 func deselectItem(at index: Int)
 ```
 
+```objc
+- (void) deselectItemAtIndex:(NSInteger) index;
+```
+
 #### Discussion
 
-If the selection does in fact change, this method posts an [`selectionDidChangeNotification`](nscombobox/selectiondidchangenotification.md) to the default notification center.
+If the selection does in fact change, this method posts an [`selectionDidChangeNotification`](../nscombobox/selectiondidchangenotification.md) to the default notification center.
 
 ## Parameters
 
@@ -24,15 +29,17 @@ If the selection does in fact change, this method posts an [`selectionDidChangeN
 
 ## See Also
 
-- [var numberOfItems: Int](nscomboboxcell/numberofitems.md)
+### Related Documentation
+- [var numberOfItems: Int](./numberofitems.md)
   The total number of items in the pop-up list.
-- [var indexOfSelectedItem: Int](nscomboboxcell/indexofselecteditem.md)
+### Manipulating the Selection
+- [var indexOfSelectedItem: Int](./indexofselecteditem.md)
   The index of the last item selected from the pop-up list.
-- [var objectValueOfSelectedItem: Any?](nscomboboxcell/objectvalueofselecteditem.md)
+- [var objectValueOfSelectedItem: Any?](./objectvalueofselecteditem.md)
   The object corresponding to the last item selected from the pop-up list.
-- [func selectItem(at: Int)](nscomboboxcell/selectitem(at:).md)
+- [func selectItem(at: Int)](./selectitem%28at%29.md)
   Selects the pop-up list row at the given index.
-- [func selectItem(withObjectValue: Any?)](nscomboboxcell/selectitem(withobjectvalue:).md)
+- [func selectItem(withObjectValue: Any?)](./selectitem%28withobjectvalue%29.md)
   Selects the first pop-up list item that corresponds to the specified object.
 
 

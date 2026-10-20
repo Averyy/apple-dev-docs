@@ -1,7 +1,8 @@
 # cSettings
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The target’s C build settings.
 
@@ -16,29 +17,30 @@ final var cSettings: [CSetting]?
 
 ## See Also
 
-- [var cxxSettings: [CXXSetting]?](target/cxxsettings.md)
+### Configuring the Target
+- [var cxxSettings: [CXXSetting]?](./cxxsettings.md)
   The target’s C++ build settings.
-- [var swiftSettings: [SwiftSetting]?](target/swiftsettings.md)
+- [var swiftSettings: [SwiftSetting]?](./swiftsettings.md)
   The target’s Swift build settings.
-- [var linkerSettings: [LinkerSetting]?](target/linkersettings.md)
+- [var linkerSettings: [LinkerSetting]?](./linkersettings.md)
   The target’s linker settings.
-- [var plugins: [Target.PluginUsage]?](target/plugins.md)
+- [var plugins: [Target.PluginUsage]?](./plugins.md)
   The uses of package plug-ins by the target.
-- [struct BuildConfiguration](buildconfiguration.md)
+- [struct BuildConfiguration](../buildconfiguration.md)
   The build configuration, such as debug or release.
-- [struct BuildSettingCondition](buildsettingcondition.md)
+- [struct BuildSettingCondition](../buildsettingcondition.md)
   A condition that limits the application of a build setting.
-- [struct CSetting](csetting.md)
+- [struct CSetting](../csetting.md)
   A C language build setting.
-- [struct CXXSetting](cxxsetting.md)
+- [struct CXXSetting](../cxxsetting.md)
   A CXX-language build setting.
-- [struct SwiftSetting](swiftsetting.md)
+- [struct SwiftSetting](../swiftsetting.md)
   A Swift language build setting.
-- [struct LinkerSetting](linkersetting.md)
+- [struct LinkerSetting](../linkersetting.md)
   A linker build setting.
-- [Target.PluginUsage](target/pluginusage.md)
+- [Target.PluginUsage](./pluginusage.md)
   A plug-in used in a target.
-- [let packageAccess: Bool](target/packageaccess.md)
+- [let packageAccess: Bool](./packageaccess.md)
   If true, access to package declarations from other targets in the package is allowed.
 
 

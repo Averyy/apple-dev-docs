@@ -1,7 +1,8 @@
 # requirePasswordForPurchases
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The metadata associated with the setting that requires a password for App Store purchases.
 
@@ -18,11 +19,12 @@ static let requirePasswordForPurchases: SettingMetadata<Bool>
 
 #### Discussion
 
-Use `requirePasswordForPurchases` to access metadata for the [`requirePasswordForPurchases`](appstoresettings/requirepasswordforpurchases-swift.property.md) setting.
+Use `requirePasswordForPurchases` to access metadata for the [`requirePasswordForPurchases`](./requirepasswordforpurchases-swift.property.md) setting.
 
 ## See Also
 
-- [var requirePasswordForPurchases: Bool?](appstoresettings/requirepasswordforpurchases-swift.property.md)
+### Requiring a password
+- [var requirePasswordForPurchases: Bool?](./requirepasswordforpurchases-swift.property.md)
   A Boolean value that indicates whether to require the user’s password to make App Store transactions.
 
 

@@ -1,7 +1,8 @@
 # kCMIOObjectSystemObject
 
 **Framework**: Core Media I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,9 +14,14 @@
 var kCMIOObjectSystemObject: Int { get }
 ```
 
+```c
+kCMIOObjectSystemObject
+```
+
 ## See Also
 
-- [var kCMIOSystemObjectClassID: Int](kcmiosystemobjectclassid.md)
+### Constants
+- [var kCMIOSystemObjectClassID: Int](./kcmiosystemobjectclassid.md)
 
 
 ---

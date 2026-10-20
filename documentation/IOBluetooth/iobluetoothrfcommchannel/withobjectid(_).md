@@ -1,17 +1,22 @@
 # withObjectID(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the IObluetoothRFCOMMChannel with the given IOBluetoothObjectID.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func withObjectID(_ objectID: IOBluetoothObjectID) -> Self!
+```
+
+```objc
++ (instancetype) withObjectID:(IOBluetoothObjectID) objectID;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # init
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes an video level control.
 
@@ -10,7 +11,7 @@ Initializes an video level control.
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init(IOUserVideoDriver *in_driver, bool in_is_settable, float in_decibel_value, IOUserVideoLevelControlRange in_decibel_range, IOUserVideoObjectPropertyElement in_control_element, IOUserVideoObjectPropertyScope in_control_scope, IOUserVideoClassID in_control_class_id);
 ```
 
@@ -30,15 +31,16 @@ True on success.
 
 ## See Also
 
-- [Create](iouservideolevelcontrol/create.md)
+### Creating a level control
+- [Create](./create.md)
   A static factory method that allocates and initializes a video level control.
-- [IOUserVideoDriver](iouservideodriver.md)
+- [IOUserVideoDriver](../iouservideodriver.md)
   A video driver.
-- [IOUserVideoLevelControlRange](iouservideolevelcontrolrange.md)
+- [IOUserVideoLevelControlRange](../iouservideolevelcontrolrange.md)
   A control that supports a range of floating-point values.
-- [IOUserVideoObjectPropertyElement](videodriverkit/iouservideoobjectpropertyelement.md)
+- [IOUserVideoObjectPropertyElement](../videodriverkit-page/iouservideoobjectpropertyelement.md)
   An integer that identifies, along with the property selector and scope, a specific piece of information about a video object.
-- [IOUserVideoObjectPropertyScope](videodriverkit/iouservideoobjectpropertyscope.md)
+- [IOUserVideoObjectPropertyScope](../videodriverkit-page/iouservideoobjectpropertyscope.md)
   A four character code which, along with the selector and element, identifies a specific piece of information about a video object.
 
 

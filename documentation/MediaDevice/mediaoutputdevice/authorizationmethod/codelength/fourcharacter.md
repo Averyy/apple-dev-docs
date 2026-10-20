@@ -1,7 +1,8 @@
 # fourCharacter
 
 **Framework**: Media Device  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A 4-character code.
 
@@ -18,7 +19,7 @@ static let fourCharacter: MediaOutputDevice.AuthorizationMethod.CodeLength
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../../../creating-a-media-device-extension.md)
 
 
 ---

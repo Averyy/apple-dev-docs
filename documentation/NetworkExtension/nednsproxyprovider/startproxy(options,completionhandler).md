@@ -1,7 +1,8 @@
 # startProxy(options:completionHandler:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts the DNS proxy.
 
@@ -15,25 +16,34 @@ Starts the DNS proxy.
 ## Declaration
 
 ```swift
+func startProxy(options: [String : Any]? = nil, completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func startProxy(options: [String : Any]? = nil) async throws
+```
+
+```objc
+- (void) startProxyWithOptions:(NSDictionary<NSString *,id> *) options completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-Subclasses of [`NEDNSProxyProvider`](nednsproxyprovider.md) must override this method to perform any necessary steps to ready the proxy for handling flows of network data.
+Subclasses of [`NEDNSProxyProvider`](../nednsproxyprovider.md) must override this method to perform any necessary steps to ready the proxy for handling flows of network data.
 
 The framework calls this method when a new proxy instance is created. You indicate that setup is complete by calling the completion handler with a `nil` error parameter, or that setup failed by calling the completion handler with an error instance. You define the error domain and code.
 
 ## Parameters
 
-- `options`: A dictionary that you define as part of a device configuration profile. You can also modify the contents of this dictionary from your app using the shared instance of [`NEDNSProxyManager`](nednsproxymanager.md). The dictionary appears as the [`providerConfiguration`](nednsproxyproviderprotocol/providerconfiguration.md) component of the manager’s [`providerProtocol`](nednsproxymanager/providerprotocol.md) property.
+- `options`: A dictionary that you define as part of a device configuration profile. You can also modify the contents of this dictionary from your app using the shared instance of [`NEDNSProxyManager`](../nednsproxymanager.md). The dictionary appears as the [`providerConfiguration`](../nednsproxyproviderprotocol/providerconfiguration.md) component of the manager’s [`providerProtocol`](../nednsproxymanager/providerprotocol.md) property.
 - `completionHandler`: A block that you must execute when the proxy is fully established, or when the proxy cannot be started due to an error. If the proxy is successfully established, the error parameter should be set to `nil`. Otherwise, the error parameter passed to this block indicates the reason for failure.
 
 ## See Also
 
-- [func stopProxy(with: NEProviderStopReason, completionHandler: () -> Void)](nednsproxyprovider/stopproxy(with:completionhandler:).md)
+### Managing the DNS proxy life cycle
+- [func stopProxy(with: NEProviderStopReason, completionHandler: () -> Void)](./stopproxy%28with,completionhandler%29.md)
   Stops the DNS proxy.
-- [func cancelProxyWithError((any Error)?)](nednsproxyprovider/cancelproxywitherror(_:).md)
+- [func cancelProxyWithError((any Error)?)](./cancelproxywitherror%28_%29.md)
   Cancels the DNS proxy.
 
 

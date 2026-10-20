@@ -1,7 +1,8 @@
 # FormatFlagIsNonInterleaved
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Set if the samples for each channel are located contiguously and the channels are layed out end to end, clear if the samples for each frame are layed out contiguously and the frames layed out end to end.
 
@@ -10,13 +11,14 @@ Set if the samples for each channel are located contiguously and the channels ar
 
 ## Declaration
 
-```swift
+```c
 FormatFlagIsNonInterleaved
 ```
 
 ## See Also
 
-- [LinearPCMFormatFlagIsNonInterleaved](videodriverkit/iouservideoformatflags/linearpcmformatflagisnoninterleaved.md)
+### Channel layout flags
+- [LinearPCMFormatFlagIsNonInterleaved](./linearpcmformatflagisnoninterleaved.md)
   Synonym for `FormatFlagIsNonInterleaved`.
 
 

@@ -1,7 +1,8 @@
 # collectionView(_:didEndDisplaying:forRepresentedObjectAt:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate that the specified item was removed from the collection view.
 
@@ -13,6 +14,10 @@ Notifies the delegate that the specified item was removed from the collection vi
 ```swift
 @MainActor
 optional func collectionView(_ collectionView: NSCollectionView, didEndDisplaying item: NSCollectionViewItem, forRepresentedObjectAt indexPath: IndexPath)
+```
+
+```objc
+- (void) collectionView:(NSCollectionView *) collectionView didEndDisplayingItem:(NSCollectionViewItem *) item forRepresentedObjectAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
 #### Discussion
@@ -27,11 +32,12 @@ The collection view calls this method after removing an item from its content. Y
 
 ## See Also
 
-- [func collectionView(NSCollectionView, willDisplay: NSCollectionViewItem, forRepresentedObjectAt: IndexPath)](nscollectionviewdelegate/collectionview(_:willdisplay:forrepresentedobjectat:).md)
+### Tracking the Addition and Removal of Items
+- [func collectionView(NSCollectionView, willDisplay: NSCollectionViewItem, forRepresentedObjectAt: IndexPath)](./collectionview%28_,willdisplay,forrepresentedobjectat%29.md)
   Notifies the delegate that the specified item is about to be displayed by the collection view.
-- [func collectionView(NSCollectionView, willDisplaySupplementaryView: NSView, forElementKind: NSCollectionView.SupplementaryElementKind, at: IndexPath)](nscollectionviewdelegate/collectionview(_:willdisplaysupplementaryview:forelementkind:at:).md)
+- [func collectionView(NSCollectionView, willDisplaySupplementaryView: NSView, forElementKind: NSCollectionView.SupplementaryElementKind, at: IndexPath)](./collectionview%28_,willdisplaysupplementaryview,forelementkind,at%29.md)
   Notifies the delegate that the specified supplementary view is about to be displayed by the collection view.
-- [func collectionView(NSCollectionView, didEndDisplayingSupplementaryView: NSView, forElementOfKind: NSCollectionView.SupplementaryElementKind, at: IndexPath)](nscollectionviewdelegate/collectionview(_:didenddisplayingsupplementaryview:forelementofkind:at:).md)
+- [func collectionView(NSCollectionView, didEndDisplayingSupplementaryView: NSView, forElementOfKind: NSCollectionView.SupplementaryElementKind, at: IndexPath)](./collectionview%28_,didenddisplayingsupplementaryview,forelementofkind,at%29.md)
   Notifies the delegate that the specified supplementary view was removed from the collection view.
 
 

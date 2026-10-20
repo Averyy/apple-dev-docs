@@ -1,7 +1,8 @@
 # layoutSublayers(of:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate a layer’s bounds have changed.
 
@@ -19,11 +20,15 @@ Tells the delegate a layer’s bounds have changed.
 optional func layoutSublayers(of layer: CALayer)
 ```
 
+```objc
+- (void) layoutSublayersOfLayer:(CALayer *) layer;
+```
+
 #### Discussion
 
-The [`layoutSublayers(of:)`](calayerdelegate/layoutsublayers(of:).md) method is called when a layer’s bounds have changed and its sublayers may need rearranging, for example by changing its frame’s size. You can implement this method if you need precise control over the layout of your layer’s sublayers.
+The [`layoutSublayers(of:)`](./layoutsublayers%28of%29.md) method is called when a layer’s bounds have changed and its sublayers may need rearranging, for example by changing its frame’s size. You can implement this method if you need precise control over the layout of your layer’s sublayers.
 
-The following code shows how you can create a class named `LayerDelegate` that implements `CALayerDelegate` and sets it as a layer’s (named `sublayer`) delegate. When the layer’s size changes, the delegate’s [`layoutSublayers(of:)`](calayerdelegate/layoutsublayers(of:).md) iterates over all of the sublayers of `sublayer` and resizes them to fit within it.
+The following code shows how you can create a class named `LayerDelegate` that implements `CALayerDelegate` and sets it as a layer’s (named `sublayer`) delegate. When the layer’s size changes, the delegate’s [`layoutSublayers(of:)`](./layoutsublayers%28of%29.md) iterates over all of the sublayers of `sublayer` and resizes them to fit within it.
 
 ```swift
 let delegate = LayerDelegate()

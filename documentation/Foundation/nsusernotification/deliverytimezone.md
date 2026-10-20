@@ -1,17 +1,24 @@
 # deliveryTimeZone
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specify the time zone to interpret the delivery date in.
 
 **Availability**:
-- macOS 10.8+
+- macOS 10.8+ - Deprecated in 11.0
+
+> **Deprecated**: All NSUserNotifications API should be replaced with UserNotifications.frameworks API
 
 ## Declaration
 
 ```swift
 var deliveryTimeZone: TimeZone? { get set }
+```
+
+```objc
+@property (copy, nullable) NSTimeZone * deliveryTimeZone;
 ```
 
 #### Discussion
@@ -22,11 +29,12 @@ If a notification should be delivered at a time in a specific time zone (regardl
 
 ## See Also
 
-- [var deliveryDate: Date?](nsusernotification/deliverydate.md)
+### Delivery Timing
+- [var deliveryDate: Date?](./deliverydate.md)
   Specifies when the notification should be delivered.
-- [var actualDeliveryDate: Date?](nsusernotification/actualdeliverydate.md)
+- [var actualDeliveryDate: Date?](./actualdeliverydate.md)
   The date this notification was actually delivered.
-- [var deliveryRepeatInterval: DateComponents?](nsusernotification/deliveryrepeatinterval.md)
+- [var deliveryRepeatInterval: DateComponents?](./deliveryrepeatinterval.md)
   Specifies the date components that control how often a user notification is repeated.
 
 

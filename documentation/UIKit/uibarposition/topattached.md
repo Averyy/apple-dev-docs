@@ -1,7 +1,8 @@
 # UIBarPosition.topAttached
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that the bar is at the top of the screen, as well as its containing view.
 
@@ -9,7 +10,7 @@ Specifies that the bar is at the top of the screen, as well as its containing vi
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ Specifies that the bar is at the top of the screen, as well as its containing vi
 case topAttached
 ```
 
+```c
+UIBarPositionTopAttached
+```
+
 #### Discussion
 
 Bars with this position draw their background extended upwards, allowing their background content to show through the status bar.
 
 ## See Also
 
-- [UIBarPosition.any](uibarposition/any.md)
+### Constants
+- [UIBarPosition.any](./any.md)
   Specifies that the position is unspecified.
-- [UIBarPosition.bottom](uibarposition/bottom.md)
+- [UIBarPosition.bottom](./bottom.md)
   Specifies that the bar is at the bottom of its containing view.
-- [UIBarPosition.top](uibarposition/top.md)
+- [UIBarPosition.top](./top.md)
   Specifies that the bar is at the top of its containing view.
 
 

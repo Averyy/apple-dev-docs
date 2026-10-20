@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates a new instance by retrieving the instance’s data from the specified decoder with help from the provided configuration.

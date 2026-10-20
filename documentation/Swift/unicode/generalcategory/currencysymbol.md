@@ -1,7 +1,8 @@
 # Unicode.GeneralCategory.currencySymbol
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A currency sign.
 
@@ -22,7 +23,7 @@ case currencySymbol
 
 #### Discussion
 
-This value corresponds to the category `Currency_Symbol` (abbreviated `Sc`) in the [`Unicode Standard`](https://developer.apple.comhttps://unicode.org/reports/tr44/#General_Category_Values).
+This value corresponds to the category `Currency_Symbol` (abbreviated `Sc`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 
 
 ---

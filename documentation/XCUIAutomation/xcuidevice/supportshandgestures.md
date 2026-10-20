@@ -1,12 +1,13 @@
 # supportsHandGestures
 
 **Framework**: XCUIAutomation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates if the device supports hand gestures.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -15,11 +16,16 @@ A Boolean value that indicates if the device supports hand gestures.
 var supportsHandGestures: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL supportsHandGestures;
+```
+
 ## See Also
 
-- [class var shared: XCUIDevice](xcuidevice/shared.md)
+### Accessing the current device
+- [class var shared: XCUIDevice](./shared.md)
   The current device.
-- [var supportsPointerInteraction: Bool](xcuidevice/supportspointerinteraction.md)
+- [var supportsPointerInteraction: Bool](./supportspointerinteraction.md)
   A Boolean value that indicates if the device supports pointer interaction.
 
 

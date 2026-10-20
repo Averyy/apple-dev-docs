@@ -1,7 +1,8 @@
 # init(alignment:spacing:pinnedViews:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a lazy vertical stack view with the given spacing, vertical alignment, pinning behavior, and content.
 

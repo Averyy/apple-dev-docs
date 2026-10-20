@@ -1,7 +1,8 @@
 # MusicCatalogChartsResponse
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that contains results for a catalog charts request.
 
@@ -23,28 +24,28 @@ struct MusicCatalogChartsResponse
 ## Topics
 
 ### Instance Properties
-- [let albumCharts: [MusicCatalogChart<Album>]](musiccatalogchartsresponse/albumcharts.md)
+- [let albumCharts: [MusicCatalogChart<Album>]](./musiccatalogchartsresponse/albumcharts.md)
   A collection of charts that contain albums.
-- [let musicVideoCharts: [MusicCatalogChart<MusicVideo>]](musiccatalogchartsresponse/musicvideocharts.md)
+- [let musicVideoCharts: [MusicCatalogChart<MusicVideo>]](./musiccatalogchartsresponse/musicvideocharts.md)
   A collection of charts that contain music videos.
-- [let playlistCharts: [MusicCatalogChart<Playlist>]](musiccatalogchartsresponse/playlistcharts.md)
+- [let playlistCharts: [MusicCatalogChart<Playlist>]](./musiccatalogchartsresponse/playlistcharts.md)
   A collection of charts that contain playlists.
-- [let songCharts: [MusicCatalogChart<Song>]](musiccatalogchartsresponse/songcharts.md)
+- [let songCharts: [MusicCatalogChart<Song>]](./musiccatalogchartsresponse/songcharts.md)
   A collection of charts that contain songs.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

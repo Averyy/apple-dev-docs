@@ -1,7 +1,8 @@
 # treatWarning(_:as:_:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Controls how a specific C++ compiler warning is treated during compilation.
 
@@ -20,7 +21,7 @@ Use this setting to specify whether a particular warning should be treated as a 
 
 This setting allows for fine-grained control over individual warnings. To control all warnings at once, use `treatAllWarnings(as:_:)` instead.
 
-> **Note**: First available in PackageDescription 6.2.
+> **Since**: First available in PackageDescription 6.2.
 
 ## Parameters
 

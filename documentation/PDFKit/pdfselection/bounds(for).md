@@ -1,7 +1,8 @@
 # bounds(for:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the bounds of the selection on the specified page.
 
@@ -15,8 +16,28 @@ Returns the bounds of the selection on the specified page.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+func bounds(for page: PDFPage) -> CGRect
+```
+
+*macOS*
+
 ```swift
 func bounds(for page: PDFPage) -> NSRect
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+- (CGRect) boundsForPage:(PDFPage *) page;
+```
+
+*macOS*
+
+```objc
+- (NSRect) boundsForPage:(PDFPage *) page;
 ```
 
 #### Discussion
@@ -27,15 +48,16 @@ Page space is a 72 dpi coordinate system with the origin at the lower-left corne
 
 ## See Also
 
-- [var pages: [PDFPage]](pdfselection/pages.md)
+### Getting Information About a Selection
+- [var pages: [PDFPage]](./pages.md)
   Returns the array of pages contained in the selection.
-- [var string: String?](pdfselection/string.md)
+- [var string: String?](./string.md)
   Returns an `NSString` object representing the text contained in the selection (may contain linefeed characters).
-- [var attributedString: NSAttributedString?](pdfselection/attributedstring.md)
+- [var attributedString: NSAttributedString?](./attributedstring.md)
   Returns an `NSAttributedString` object representing the text contained in the selection (may contain linefeed characters).
-- [func selectionsByLine() -> [PDFSelection]](pdfselection/selectionsbyline.md)
+- [func selectionsByLine() -> [PDFSelection]](./selectionsbyline%28%29.md)
   Returns an array of selections, one for each line of text covered by the receiver.
-- [var color: UIColor?](pdfselection/color.md)
+- [var color: UIColor?](./color.md)
   Sets the color used for the drawing of a selection in both active and inactive states.
 
 

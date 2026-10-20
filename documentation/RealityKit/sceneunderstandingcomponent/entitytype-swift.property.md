@@ -1,7 +1,8 @@
 # entityType
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of real-world objects that the component models.
 
@@ -20,7 +21,8 @@ var entityType: SceneUnderstandingComponent.EntityType?
 
 ## See Also
 
-- [SceneUnderstandingComponent.EntityType](sceneunderstandingcomponent/entitytype-swift.enum.md)
+### Managing the component
+- [SceneUnderstandingComponent.EntityType](./entitytype-swift.enum.md)
   Types of real-world objects that a scene-understanding component models.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates an integer from the given floating-point value, if it can be represented exactly.
@@ -35,6 +36,13 @@ let y = Int(exactly: 21.5)
 ## Parameters
 
 - `source`: A floating-point value to convert to an integer.
+
+## Default Implementations
+
+### Numeric Implementations
+- [init?<T>(exactly: T)](../numeric/init%28exactly%29-1dg3p.md)
+- [init?<T>(exactly: T)](../numeric/init%28exactly%29-8briw.md)
+- [init?<T>(exactly: T)](../numeric/init%28exactly%29-uz93.md)
 
 
 ---

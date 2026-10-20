@@ -1,7 +1,8 @@
 # sourceURL
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL to a remote file to download.
 
@@ -22,7 +23,8 @@ Your browser app’s network extension retrieves the downloaded file from this l
 
 ## See Also
 
-- [let destinationURL: URL](bedownloadmonitor-9bwls/destinationurl.md)
+### Getting information about a download
+- [let destinationURL: URL](./destinationurl.md)
   A local file path to the downloaded file.
 
 

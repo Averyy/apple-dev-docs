@@ -1,16 +1,18 @@
 # PDFKit Data Types
 
-**Framework**: PDFKit
+**Framework**: PDFKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Data Types
-- [PDFPage.ImageInitializationOption](pdfpage/imageinitializationoption.md)
+- [PDFPage.ImageInitializationOption](./pdfpage/imageinitializationoption.md)
 
 ## See Also
 
-- [PDFKit Enumerations](enumerations.md)
-- [PDFKit Constants](constants.md)
+### Reference
+- [PDFKit Enumerations](./enumerations.md)
+- [PDFKit Constants](./constants.md)
 
 
 ---

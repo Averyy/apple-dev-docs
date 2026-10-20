@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a command that modifies the contents of a texture to improve the performance of GPU accesses to its contents.
@@ -20,6 +21,10 @@ Encodes a command that modifies the contents of a texture to improve the perform
 func optimizeContents(forGPUAccess texture: any MTLTexture)
 ```
 
+```objc
+- (void) optimizeContentsForGPUAccess:(id<MTLTexture>) texture;
+```
+
 #### Discussion
 
 Optimizing a texture for GPU access may affect the performance of CPU accesses, however, the data the CPU retrieves from the texture remains consistent.
@@ -27,21 +32,22 @@ Optimizing a texture for GPU access may affect the performance of CPU accesses, 
 You typically run this command for:
 
 - Textures the GPU accesses for an extended period of time.
-- Textures with a [`storageMode`](mtltexturedescriptor/storagemode.md) property that’s [`MTLStorageMode.shared`](mtlstoragemode/shared.md) or [`MTLStorageMode.managed`](mtlstoragemode/managed.md).
+- Textures with a [`storageMode`](../mtltexturedescriptor/storagemode.md) property that’s [`MTLStorageMode.shared`](../mtlstoragemode/shared.md) or [`MTLStorageMode.managed`](../mtlstoragemode/managed.md).
 
 ## Parameters
 
-- `texture`: A [`MTLTexture`](mtltexture.md) instance the command optimizes for GPU access.
+- `texture`: A [`MTLTexture`](../mtltexture.md) instance the command optimizes for GPU access.
 
 ## See Also
 
-- [func optimizeCommands(buffer: any MTLIndirectCommandBuffer, range: Range<Int>)](mtl4computecommandencoder/optimizecommands(buffer:range:).md)
+### Encoding optimization commands
+- [func optimizeCommands(buffer: any MTLIndirectCommandBuffer, range: Range<Int>)](./optimizecommands%28buffer,range%29.md)
   Encode a command to attempt to improve the performance of a range of commands within an indirect command buffer.
-- [func optimizeContents(forCPUAccess: any MTLTexture)](mtl4computecommandencoder/optimizecontents(forcpuaccess:).md)
+- [func optimizeContents(forCPUAccess: any MTLTexture)](./optimizecontents%28forcpuaccess%29.md)
   Encodes a command that modifies the contents of a texture to improve the performance of CPU accesses to its contents.
-- [func optimizeContents(forCPUAccess: any MTLTexture, slice: Int, level: Int)](mtl4computecommandencoder/optimizecontents(forcpuaccess:slice:level:).md)
+- [func optimizeContents(forCPUAccess: any MTLTexture, slice: Int, level: Int)](./optimizecontents%28forcpuaccess,slice,level%29.md)
   Encodes a command that modifies the contents of a texture to improve the performance of CPU accesses to its contents in a specific region.
-- [func optimizeContents(forGPUAccess: any MTLTexture, slice: Int, level: Int)](mtl4computecommandencoder/optimizecontents(forgpuaccess:slice:level:).md)
+- [func optimizeContents(forGPUAccess: any MTLTexture, slice: Int, level: Int)](./optimizecontents%28forgpuaccess,slice,level%29.md)
   Encodes a command that modifies the contents of a texture instance to improve the performance of GPU accesses to its contents in a specific region.
 
 

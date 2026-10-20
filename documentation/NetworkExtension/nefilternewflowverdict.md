@@ -1,7 +1,8 @@
 # NEFilterNewFlowVerdict
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The result from a filter data provder after the initial examination of a flow.
 
@@ -18,63 +19,68 @@ The result from a filter data provder after the initial examination of a flow.
 class NEFilterNewFlowVerdict
 ```
 
+```objc
+@interface NEFilterNewFlowVerdict : NEFilterVerdict
+```
+
 ## Topics
 
 ### Creating new flow verdicts
-- [class func allow() -> NEFilterNewFlowVerdict](nefilternewflowverdict/allow.md)
+- [class func allow() -> NEFilterNewFlowVerdict](./nefilternewflowverdict/allow%28%29.md)
   Create a verdict that indicates to the system that the all of the new flow’s data should be allowed to pass to its final destination.
-- [class func drop() -> NEFilterNewFlowVerdict](nefilternewflowverdict/drop.md)
+- [class func drop() -> NEFilterNewFlowVerdict](./nefilternewflowverdict/drop%28%29.md)
   Create a verdict that indicates to the system that all of the new flow’s data should dropped, and the user should not be given the opportunity to request access.
-- [class func pause() -> NEFilterNewFlowVerdict](nefilternewflowverdict/pause.md)
+- [class func pause() -> NEFilterNewFlowVerdict](./nefilternewflowverdict/pause%28%29.md)
   Creates a verdict that tells the system to pause the flow.
-- [class func filterDataVerdict(withFilterInbound: Bool, peekInboundBytes: Int, filterOutbound: Bool, peekOutboundBytes: Int) -> NEFilterNewFlowVerdict](nefilternewflowverdict/filterdataverdict(withfilterinbound:peekinboundbytes:filteroutbound:peekoutboundbytes:).md)
+- [class func filterDataVerdict(withFilterInbound: Bool, peekInboundBytes: Int, filterOutbound: Bool, peekOutboundBytes: Int) -> NEFilterNewFlowVerdict](./nefilternewflowverdict/filterdataverdict%28withfilterinbound,peekinboundbytes,filteroutbound,peekoutboundbytes%29.md)
   Create a verdict that indicates to the system that the filter needs to make a decision about a new flow after seeing a portion of the flow’s data.
-- [class func remediateVerdict(withRemediationURLMapKey: String, remediationButtonTextMapKey: String) -> NEFilterNewFlowVerdict](nefilternewflowverdict/remediateverdict(withremediationurlmapkey:remediationbuttontextmapkey:).md)
+- [class func remediateVerdict(withRemediationURLMapKey: String, remediationButtonTextMapKey: String) -> NEFilterNewFlowVerdict](./nefilternewflowverdict/remediateverdict%28withremediationurlmapkey,remediationbuttontextmapkey%29.md)
   Create a verdict that indicates to the system that all of the new flow’s data should be dropped, but allow the user to request access by tapping or clicking on a URL.
-- [class func needRules() -> NEFilterNewFlowVerdict](nefilternewflowverdict/needrules.md)
+- [class func needRules() -> NEFilterNewFlowVerdict](./nefilternewflowverdict/needrules%28%29.md)
   Create a verdict that indicates to the system that the Filter Data Provider needs more information before it can make a decision about a new flow.
-- [class func urlAppendStringVerdict(withMapKey: String) -> NEFilterNewFlowVerdict](nefilternewflowverdict/urlappendstringverdict(withmapkey:).md)
+- [class func urlAppendStringVerdict(withMapKey: String) -> NEFilterNewFlowVerdict](./nefilternewflowverdict/urlappendstringverdict%28withmapkey%29.md)
   Create a verdict that indicates to the system that all of the new flow’s data should be allowed to pass to its final destination, but a string should first be appended to the new flow’s request URL.
 ### Inspecting new flow verdict properties
-- [var statisticsReportFrequency: NEFilterReport.Frequency](nefilternewflowverdict/statisticsreportfrequency.md)
+- [var statisticsReportFrequency: NEFilterReport.Frequency](./nefilternewflowverdict/statisticsreportfrequency.md)
   The frequency at which the data provider receives reports.
-- [NEFilterReport.Frequency](nefilterreport/frequency.md)
+- [NEFilterReport.Frequency](./nefilterreport/frequency.md)
   An enumeration that represents the frequency of filter report delivery.
 
 ## Relationships
 
 ### Inherits From
-- [NEFilterVerdict](nefilterverdict.md)
+- [NEFilterVerdict](./nefilterverdict.md)
 ### Inherited By
-- [NEFilterControlVerdict](nefiltercontrolverdict.md)
+- [NEFilterControlVerdict](./nefiltercontrolverdict.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class NEFilterFlow](nefilterflow.md)
+### Flow handling
+- [class NEFilterFlow](./nefilterflow.md)
   The abstract base class for types that represent flows of network data.
-- [class NEFilterBrowserFlow](nefilterbrowserflow.md)
+- [class NEFilterBrowserFlow](./nefilterbrowserflow.md)
   A flow of network data, originating from a WebKit-based browser, that the filter examines.
-- [class NEFilterSocketFlow](nefiltersocketflow.md)
+- [class NEFilterSocketFlow](./nefiltersocketflow.md)
   A flow of network data that the filter examines.
-- [class NEFilterDataVerdict](nefilterdataverdict.md)
+- [class NEFilterDataVerdict](./nefilterdataverdict.md)
   The result from a filter data provder for subsequent chunks of data on a flow.
-- [class NEFilterControlVerdict](nefiltercontrolverdict.md)
+- [class NEFilterControlVerdict](./nefiltercontrolverdict.md)
   The result from a filter control provider.
-- [class NEFilterRemediationVerdict](nefilterremediationverdict.md)
+- [class NEFilterRemediationVerdict](./nefilterremediationverdict.md)
   The result from a filter data provider after the user requests remediation for a blocked flow.
-- [class NEFilterVerdict](nefilterverdict.md)
+- [class NEFilterVerdict](./nefilterverdict.md)
   The abstract base class for filter verdict classes.
-- [class NEFilterReport](nefilterreport.md)
+- [class NEFilterReport](./nefilterreport.md)
   The report of the data provider’s action on a flow.
 
 

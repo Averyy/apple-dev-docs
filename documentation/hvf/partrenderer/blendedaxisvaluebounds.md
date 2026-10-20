@@ -1,7 +1,8 @@
 # blendedAxisValueBounds
 
 **Framework**: hvf  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 After rendering, returns the maximum and minimum blended values set on any axis in the part’s tree This is useful for detecting axes going out of range (-1.0…1.0)
 

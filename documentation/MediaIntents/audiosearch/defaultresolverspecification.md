@@ -1,7 +1,8 @@
 # defaultResolverSpecification
 
 **Framework**: Media Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -20,7 +21,8 @@ static let defaultResolverSpecification: EmptyResolverSpecification<AudioSearch>
 
 ## See Also
 
-- [init(criteria: AudioSearch.Criteria, spotlightSearchResults: [Never])](audiosearch/init(criteria:spotlightsearchresults:).md)
+### Providing default implementations
+- [init(criteria: AudioSearch.Criteria, spotlightSearchResults: [Never])](./init%28criteria,spotlightsearchresults%29.md)
 
 
 ---

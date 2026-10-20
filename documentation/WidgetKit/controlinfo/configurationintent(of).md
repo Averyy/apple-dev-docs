@@ -1,7 +1,8 @@
 # configurationIntent(of:)
 
 **Framework**: WidgetKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the associated App Intent.
 

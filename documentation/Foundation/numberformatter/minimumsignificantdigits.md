@@ -1,7 +1,8 @@
 # minimumSignificantDigits
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum number of significant digits for the number formatter.
 
@@ -20,11 +21,15 @@ The minimum number of significant digits for the number formatter.
 var minimumSignificantDigits: Int { get set }
 ```
 
+```objc
+@property NSUInteger minimumSignificantDigits;
+```
+
 #### Discussion
 
-You must set the [`usesSignificantDigits`](numberformatter/usessignificantdigits.md) property to [`true`](https://developer.apple.com/documentation/swift/true) in order for this property to affect formatting behavior. By default, the minimum number of significant digits is 1.
+You must set the [`usesSignificantDigits`](./usessignificantdigits.md) property to [`true`](../../Swift/true.md) in order for this property to affect formatting behavior. By default, the minimum number of significant digits is 1.
 
-The following code demonstrates the effect of setting [`minimumSignificantDigits`](numberformatter/minimumsignificantdigits.md) when formatting various numbers:
+The following code demonstrates the effect of setting [`minimumSignificantDigits`](./minimumsignificantdigits.md) when formatting various numbers:
 
 ```swift
 var numberFormatter = NumberFormatter()
@@ -40,9 +45,10 @@ numberFormatter.string(from: 0.000123) // 0.0001230
 
 ## See Also
 
-- [var usesSignificantDigits: Bool](numberformatter/usessignificantdigits.md)
+### Configuring Significant Digits
+- [var usesSignificantDigits: Bool](./usessignificantdigits.md)
   A Boolean value indicating whether the formatter uses minimum and maximum significant digits when formatting numbers.
-- [var maximumSignificantDigits: Int](numberformatter/maximumsignificantdigits.md)
+- [var maximumSignificantDigits: Int](./maximumsignificantdigits.md)
   The maximum number of significant digits for the number formatter.
 
 

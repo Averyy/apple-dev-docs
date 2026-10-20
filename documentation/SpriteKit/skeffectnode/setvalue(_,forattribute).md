@@ -1,7 +1,8 @@
 # setValue(_:forAttribute:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets an attribute value for an attached shader.
 
@@ -20,6 +21,10 @@ Sets an attribute value for an attached shader.
 func setValue(_ value: SKAttributeValue, forAttribute key: String)
 ```
 
+```objc
+- (void) setValue:(SKAttributeValue *) value forAttributeNamed:(NSString *) key;
+```
+
 ## Parameters
 
 - `value`: An attribute value object containing the scalar or vector value to set in the attached shader.
@@ -27,11 +32,12 @@ func setValue(_ value: SKAttributeValue, forAttribute key: String)
 
 ## See Also
 
-- [var shader: SKShader?](skeffectnode/shader.md)
+### Applying a Shader with an Effect Node
+- [var shader: SKShader?](./shader.md)
   A custom shader that is called when the effect node is blended into the parent’s framebuffer.
-- [var attributeValues: [String : SKAttributeValue]](skeffectnode/attributevalues.md)
+- [var attributeValues: [String : SKAttributeValue]](./attributevalues.md)
   The values of each attribute associated with the node’s attached shader.
-- [func value(forAttributeNamed: String) -> SKAttributeValue?](skeffectnode/value(forattributenamed:).md)
+- [func value(forAttributeNamed: String) -> SKAttributeValue?](./value%28forattributenamed%29.md)
   Gets the value of a shader attribute.
 
 

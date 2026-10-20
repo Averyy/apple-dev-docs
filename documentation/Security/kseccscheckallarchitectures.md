@@ -1,7 +1,8 @@
 # kSecCSCheckAllArchitectures
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 For multi-architecture (universal) Mach-O programs, validate all architectures included.
 
@@ -13,6 +14,10 @@ For multi-architecture (universal) Mach-O programs, validate all architectures i
 
 ```swift
 var kSecCSCheckAllArchitectures: UInt32 { get }
+```
+
+```c
+kSecCSCheckAllArchitectures
 ```
 
 #### Discussion

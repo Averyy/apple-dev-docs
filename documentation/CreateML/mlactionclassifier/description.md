@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the action classifier.
 
@@ -16,9 +17,10 @@ var description: String { get }
 
 ## See Also
 
-- [var debugDescription: String](mlactionclassifier/debugdescription.md)
+### Describing an action classifier
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the action classifier that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlactionclassifier/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the action classifier shown in a playground.
 
 

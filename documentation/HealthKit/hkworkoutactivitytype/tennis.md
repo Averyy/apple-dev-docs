@@ -1,7 +1,8 @@
 # HKWorkoutActivityType.tennis
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The constant for playing tennis.
 
@@ -19,17 +20,22 @@ The constant for playing tennis.
 case tennis
 ```
 
+```c
+HKWorkoutActivityTypeTennis
+```
+
 ## See Also
 
-- [HKWorkoutActivityType.badminton](hkworkoutactivitytype/badminton.md)
+### Racket sports
+- [HKWorkoutActivityType.badminton](./badminton.md)
   The constant for playing badminton.
-- [HKWorkoutActivityType.pickleball](hkworkoutactivitytype/pickleball.md)
+- [HKWorkoutActivityType.pickleball](./pickleball.md)
   The constant for playing pickleball.
-- [HKWorkoutActivityType.racquetball](hkworkoutactivitytype/racquetball.md)
+- [HKWorkoutActivityType.racquetball](./racquetball.md)
   The constant for playing racquetball.
-- [HKWorkoutActivityType.squash](hkworkoutactivitytype/squash.md)
+- [HKWorkoutActivityType.squash](./squash.md)
   The constant for playing squash.
-- [HKWorkoutActivityType.tableTennis](hkworkoutactivitytype/tabletennis.md)
+- [HKWorkoutActivityType.tableTennis](./tabletennis.md)
   The constant for playing table tennis.
 
 

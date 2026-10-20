@@ -1,7 +1,8 @@
 # alarm(schedule:attributes:appEntityIdentifier:stopIntent:secondaryIntent:sound:)
 
 **Framework**: AlarmKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a configuration that behaves like a traditional alarm.
 
@@ -15,6 +16,8 @@ Creates a configuration that behaves like a traditional alarm.
 ```swift
 static func alarm(schedule: Alarm.Schedule? = nil, attributes: AlarmAttributes<Metadata>, appEntityIdentifier: EntityIdentifier? = nil, stopIntent: (any LiveActivityIntent)? = nil, secondaryIntent: (any LiveActivityIntent)? = nil, sound: AlertConfiguration.AlertSound = .default) -> AlarmManager.AlarmConfiguration<Metadata>
 ```
+
+Available when `Metadata` conforms to `AlarmMetadata`.
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # UIDeferredMenuElement.Identifier
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -16,24 +17,29 @@
 struct Identifier
 ```
 
+```c
+typedef NSString * UIDeferredMenuElementIdentifier;
+```
+
 ## Topics
 
 ### Initializers
-- [init(String)](uideferredmenuelement/identifier-swift.struct/init(_:).md)
-- [init(rawValue: String)](uideferredmenuelement/identifier-swift.struct/init(rawvalue:).md)
+- [init(String)](./identifier-swift.struct/init%28_%29.md)
+- [init(rawValue: String)](./identifier-swift.struct/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var identifier: UIDeferredMenuElement.Identifier](uideferredmenuelement/identifier-swift.property.md)
+### Setting an identifier
+- [var identifier: UIDeferredMenuElement.Identifier](./identifier-swift.property.md)
   The identifier of this deferred menu element.
 
 

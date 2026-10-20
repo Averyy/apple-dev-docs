@@ -2,6 +2,7 @@
 
 **Framework**: Assignables  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 String representation of this user identity for display or debugging purposes.
@@ -10,7 +11,7 @@ String representation of this user identity for display or debugging purposes.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ var stringRepresentation: String { get }
 
 ## See Also
 
-- [var typeID: String](useridentity/typeid.md)
+### Inspecting an identity
+- [var typeID: String](./typeid.md)
   A unique type identifier for this user identity.
 
 

@@ -1,7 +1,8 @@
 # imagePlaygroundViewControllerDidCancel(_:)
 
 **Framework**: Image Playground  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate that the person canceled the generation of the image.
 
@@ -21,7 +22,7 @@ Notifies the delegate that the person canceled the generation of the image.
 
 #### Discussion
 
-Use this method to dismiss the specified [`ImagePlaygroundViewController`](imageplaygroundviewcontroller.md) from your app’s interface.
+Use this method to dismiss the specified [`ImagePlaygroundViewController`](../../imageplaygroundviewcontroller.md) from your app’s interface.
 
 ## Parameters
 

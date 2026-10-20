@@ -1,7 +1,8 @@
 # trackingLevel
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tracking quality preference.
 
@@ -22,11 +23,12 @@ final var trackingLevel: TrackRectangleRequest.TrackingLevel { get set }
 
 ## See Also
 
-- [let inputObservation: any QuadrilateralProviding & VisionObservation](trackrectanglerequest/inputobservation.md)
+### Configuring a request
+- [let inputObservation: any QuadrilateralProviding & VisionObservation](./inputobservation.md)
   The object to track.
-- [protocol QuadrilateralProviding](quadrilateralproviding.md)
+- [protocol QuadrilateralProviding](../quadrilateralproviding.md)
   A protocol for objects that have a bounding quadrilateral.
-- [TrackRectangleRequest.TrackingLevel](trackrectanglerequest/trackinglevel-swift.enum.md)
+- [TrackRectangleRequest.TrackingLevel](./trackinglevel-swift.enum.md)
 
 
 ---

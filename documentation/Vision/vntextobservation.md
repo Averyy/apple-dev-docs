@@ -1,7 +1,8 @@
 # VNTextObservation
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Information about regions of text that an image-analysis request detects.
 
@@ -19,35 +20,40 @@ Information about regions of text that an image-analysis request detects.
 class VNTextObservation
 ```
 
+```objc
+@interface VNTextObservation : VNRectangleObservation
+```
+
 #### Overview
 
-This type of observation results from a [`VNDetectTextRectanglesRequest`](vndetecttextrectanglesrequest.md). It expresses the location of each detected character by its bounding box.
+This type of observation results from a [`VNDetectTextRectanglesRequest`](./vndetecttextrectanglesrequest.md). It expresses the location of each detected character by its bounding box.
 
 ## Topics
 
 ### Finding Individual Characters
-- [var characterBoxes: [VNRectangleObservation]?](vntextobservation/characterboxes.md)
+- [var characterBoxes: [VNRectangleObservation]?](./vntextobservation/characterboxes.md)
   An array of detected individual character bounding boxes.
 
 ## Relationships
 
 ### Inherits From
-- [VNRectangleObservation](vnrectangleobservation.md)
+- [VNRectangleObservation](./vnrectangleobservation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [VNRequestRevisionProviding](vnrequestrevisionproviding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [VNRequestRevisionProviding](./vnrequestrevisionproviding.md)
 
 ## See Also
 
-- [class VNDetectTextRectanglesRequest](vndetecttextrectanglesrequest.md)
+### Text detection
+- [class VNDetectTextRectanglesRequest](./vndetecttextrectanglesrequest.md)
   An image-analysis request that finds regions of visible text in an image.
 
 

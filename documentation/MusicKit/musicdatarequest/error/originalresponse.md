@@ -1,7 +1,8 @@
 # originalResponse
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The original response that contains the error.
 

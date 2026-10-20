@@ -1,7 +1,8 @@
 # CMFormatDescriptionGetExtension(_:extensionKey:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns an extension from the format description by using an extension key.
 
@@ -20,6 +21,10 @@ Returns an extension from the format description by using an extension key.
 func CMFormatDescriptionGetExtension(_ desc: CMFormatDescription, extensionKey: CFString) -> CFPropertyList?
 ```
 
+```c
+extern CFPropertyListRefCMFormatDescriptionGetExtension(CMFormatDescriptionRef desc, CFStringRef extensionKey);
+```
+
 #### Return Value
 
 An extension, or `NULL` if it doesn’t exist.
@@ -35,13 +40,14 @@ The extension is always a valid property list object. This means that it will be
 
 ## See Also
 
-- [func CMFormatDescriptionGetMediaType(CMFormatDescription) -> CMMediaType](cmformatdescriptiongetmediatype(_:).md)
+### Inspecting Format Descriptions
+- [func CMFormatDescriptionGetMediaType(CMFormatDescription) -> CMMediaType](./cmformatdescriptiongetmediatype%28_%29.md)
   Returns the media type of a format description.
-- [func CMFormatDescriptionGetMediaSubType(CMFormatDescription) -> FourCharCode](cmformatdescriptiongetmediasubtype(_:).md)
+- [func CMFormatDescriptionGetMediaSubType(CMFormatDescription) -> FourCharCode](./cmformatdescriptiongetmediasubtype%28_%29.md)
   Returns the media subtype of a format description.
-- [func CMFormatDescriptionGetExtensions(CMFormatDescription) -> CFDictionary?](cmformatdescriptiongetextensions(_:).md)
+- [func CMFormatDescriptionGetExtensions(CMFormatDescription) -> CFDictionary?](./cmformatdescriptiongetextensions%28_%29.md)
   Returns all of the extensions for a format description.
-- [func CMFormatDescriptionGetTypeID() -> CFTypeID](cmformatdescriptiongettypeid().md)
+- [func CMFormatDescriptionGetTypeID() -> CFTypeID](./cmformatdescriptiongettypeid%28%29.md)
   Returns the Core Foundation type identifier that identifies format description objects.
 
 

@@ -1,7 +1,8 @@
 # BetaTester.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,18 +11,18 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object BetaTester.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object BetaTester.Relationships.Apps](betatester/relationships-data.dictionary/apps-data.dictionary.md)
+- [object BetaTester.Relationships.Apps](./relationships-data.dictionary/apps-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object BetaTester.Relationships.BetaGroups](betatester/relationships-data.dictionary/betagroups-data.dictionary.md)
+- [object BetaTester.Relationships.BetaGroups](./relationships-data.dictionary/betagroups-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object BetaTester.Relationships.Builds](betatester/relationships-data.dictionary/builds-data.dictionary.md)
+- [object BetaTester.Relationships.Builds](./relationships-data.dictionary/builds-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 ## Properties
@@ -32,11 +33,12 @@ object BetaTester.Relationships
 
 ## See Also
 
-- [object BetaTester.Attributes](betatester/attributes-data.dictionary.md)
+### Attributes and Relationships
+- [object BetaTester.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a beta tester resource.
-- [type BetaInviteType](betainvitetype.md)
+- [type BetaInviteType](../betainvitetype.md)
   String that indicates how you offer a beta invitation.
-- [type BetaTesterState](betatesterstate.md)
+- [type BetaTesterState](../betatesterstate.md)
   String that describes the state of a beta tester.
 
 

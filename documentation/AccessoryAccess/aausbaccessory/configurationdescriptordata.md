@@ -1,7 +1,8 @@
 # configurationDescriptorData
 
 **Framework**: Accessory Access  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the currently selected configuration descriptor data.
 
@@ -14,15 +15,20 @@ Returns the currently selected configuration descriptor data.
 var configurationDescriptorData: Data? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSData * configurationDescriptorData;
+```
+
 #### Discussion
 
-The underlying bytes can be cast to [`IOUSBConfigurationDescriptor`](https://developer.apple.com/documentation/kernel/iousbconfigurationdescriptor). If the USB accessory isn’t configured, this returns `nil`.
+The underlying bytes can be cast to [`IOUSBConfigurationDescriptor`](../../kernel/iousbconfigurationdescriptor.md). If the USB accessory isn’t configured, this returns `nil`.
 
 ## See Also
 
-- [var deviceDescriptorData: Data](aausbaccessory/devicedescriptordata.md)
+### Getting information about a USB accessory
+- [var deviceDescriptorData: Data](./devicedescriptordata.md)
   Returns the device descriptor data.
-- [var registryID: UInt64](aausbaccessory/registryid.md)
+- [var registryID: UInt64](./registryid.md)
   Returns the IORegistry ID for the USB accessory.
 
 

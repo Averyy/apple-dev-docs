@@ -2,6 +2,7 @@
 
 **Framework**: CarPlay  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -14,6 +15,10 @@
 ```swift
 @NSCopying
 var playbackConfiguration: CPPlaybackConfiguration? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) CPPlaybackConfiguration * playbackConfiguration;
 ```
 
 

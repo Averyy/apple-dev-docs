@@ -1,6 +1,7 @@
 # Deprecated symbols
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: API Collection
 
 Review symbols that are no longer in active development, and their recommended replacements.
 
@@ -11,7 +12,7 @@ Although these symbols are available for use, Apple is no longer actively develo
 ## Topics
 
 ### Deprecated functions
-- [func UIGraphicsBeginImageContextWithOptions(CGSize, Bool, CGFloat)](uigraphicsbeginimagecontextwithoptions(_:_:_:).md)
+- [func UIGraphicsBeginImageContextWithOptions(CGSize, Bool, CGFloat)](./uigraphicsbeginimagecontextwithoptions%28_,_,_%29.md)
   Creates a bitmap-based graphics context with the specified options.
 
 

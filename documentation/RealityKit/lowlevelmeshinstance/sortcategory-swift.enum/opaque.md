@@ -1,7 +1,8 @@
 # LowLevelMeshInstance.SortCategory.opaque
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An opaque draw call that renders before all transparent instances.
 
@@ -19,7 +20,8 @@ case opaque
 
 ## See Also
 
-- [LowLevelMeshInstance.SortCategory.transparent](lowlevelmeshinstance/sortcategory-swift.enum/transparent.md)
+### Identifying sort categories
+- [LowLevelMeshInstance.SortCategory.transparent](./transparent.md)
   A transparent draw call sorted back-to-front by distance from the camera.
 
 

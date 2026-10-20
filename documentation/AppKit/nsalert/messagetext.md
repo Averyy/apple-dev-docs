@@ -1,12 +1,13 @@
 # messageText
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The alert’s message text or title.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ The alert’s message text or title.
 var messageText: String { get set }
 ```
 
+```objc
+@property (copy) NSString * messageText;
+```
+
 ## See Also
 
-- [var informativeText: String](nsalert/informativetext.md)
+### Accessing alert text
+- [var informativeText: String](./informativetext.md)
   The alert’s informative text.
 
 

@@ -1,7 +1,8 @@
 # Transaction.AdvancedCommerceInfo.Partner
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -21,18 +22,18 @@ struct Partner
 ## Topics
 
 ### Instance Properties
-- [let id: String](transaction/advancedcommerceinfo-swift.struct/partner/id.md)
+- [let id: String](./partner/id.md)
   The unique identifier you set for the app partner across your developer account.
-- [let name: String?](transaction/advancedcommerceinfo-swift.struct/partner/name.md)
+- [let name: String?](./partner/name.md)
   The unique identifier you set for the app partner across your developer account.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

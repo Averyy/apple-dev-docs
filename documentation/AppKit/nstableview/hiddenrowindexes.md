@@ -1,7 +1,8 @@
 # hiddenRowIndexes
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The indexes of all hidden table rows.
 
@@ -14,15 +15,20 @@ The indexes of all hidden table rows.
 var hiddenRowIndexes: IndexSet { get }
 ```
 
+```objc
+@property (copy, readonly) NSIndexSet * hiddenRowIndexes;
+```
+
 #### Discussion
 
-The value of this property is an index set containing the indexes of any hidden table rows. Table rows may be hidden by invoking the [`hideRows(at:withAnimation:)`](nstableview/hiderows(at:withanimation:).md) method. Some drag-and-drop operations also result in hidden rows.
+The value of this property is an index set containing the indexes of any hidden table rows. Table rows may be hidden by invoking the [`hideRows(at:withAnimation:)`](./hiderows%28at,withanimation%29.md) method. Some drag-and-drop operations also result in hidden rows.
 
 ## See Also
 
-- [func hideRows(at: IndexSet, withAnimation: NSTableView.AnimationOptions)](nstableview/hiderows(at:withanimation:).md)
+### Hiding and Showing Table Rows
+- [func hideRows(at: IndexSet, withAnimation: NSTableView.AnimationOptions)](./hiderows%28at,withanimation%29.md)
   Hides the specified table rows.
-- [func unhideRows(at: IndexSet, withAnimation: NSTableView.AnimationOptions)](nstableview/unhiderows(at:withanimation:).md)
+- [func unhideRows(at: IndexSet, withAnimation: NSTableView.AnimationOptions)](./unhiderows%28at,withanimation%29.md)
   Unhides the specified table rows.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Quick Look  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the number of preview items to include in the preview navigation list.
@@ -18,6 +19,10 @@ Returns the number of preview items to include in the preview navigation list.
 func numberOfPreviewItems(in controller: QLPreviewController) -> Int
 ```
 
+```objc
+- (NSInteger) numberOfPreviewItemsInPreviewController:(QLPreviewController *) controller;
+```
+
 #### Return Value
 
 The number of items that the Quick Look preview controller should include in its preview navigation list.
@@ -26,7 +31,7 @@ The number of items that the Quick Look preview controller should include in its
 
 The system invokes this method to inform the preview controller of the number of preview items available.
 
-If you push a Quick Look preview controller into view using a [`UINavigationController`](https://developer.apple.com/documentation/uikit/uinavigationcontroller) object that has a toolbar, the system automatically displays arrows in the toolbar to navigate among the items in the navigation list. If you’re not displaying a toolbar and want to provide your own method of switching among items, use the [`currentPreviewItemIndex`](qlpreviewcontroller/currentpreviewitemindex.md) property to indicate the item you want to display.
+If you push a Quick Look preview controller into view using a [`UINavigationController`](../../UIKit/uinavigationcontroller.md) object that has a toolbar, the system automatically displays arrows in the toolbar to navigate among the items in the navigation list. If you’re not displaying a toolbar and want to provide your own method of switching among items, use the [`currentPreviewItemIndex`](../qlpreviewcontroller/currentpreviewitemindex.md) property to indicate the item you want to display.
 
 If you display a preview controller modally (full screen), the controller includes navigation arrows if there’s more than one item in the navigation list.
 
@@ -36,7 +41,8 @@ If you display a preview controller modally (full screen), the controller includ
 
 ## See Also
 
-- [func previewController(QLPreviewController, previewItemAt: Int) -> any QLPreviewItem](qlpreviewcontrollerdatasource/previewcontroller(_:previewitemat:).md)
+### Providing data to a preview controller
+- [func previewController(QLPreviewController, previewItemAt: Int) -> any QLPreviewItem](./previewcontroller%28_,previewitemat%29.md)
   Returns the preview item that the controller displays for the specified index.
 
 

@@ -1,7 +1,8 @@
 # TableOutlineGroupContent
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An opaque table row type created by a table’s hierarchical initializers.
 
@@ -23,16 +24,17 @@ struct TableOutlineGroupContent<Data> where Data : RandomAccessCollection, Data.
 
 This row content is created by `Table.init(_:,children:,...)` initializers as the table’s `Rows` generic type.
 
-To explicitly create hierarchical rows, use [`OutlineGroup`](outlinegroup.md) instead.
+To explicitly create hierarchical rows, use [`OutlineGroup`](./outlinegroup.md) instead.
 
 ## Relationships
 
 ### Conforms To
-- [TableRowContent](tablerowcontent.md)
+- [TableRowContent](./tablerowcontent.md)
 
 ## See Also
 
-- [struct DisclosureTableRow](disclosuretablerow.md)
+### Adding progressive disclosure
+- [struct DisclosureTableRow](./disclosuretablerow.md)
   A kind of table row that shows or hides additional rows based on the state of a disclosure control.
 
 

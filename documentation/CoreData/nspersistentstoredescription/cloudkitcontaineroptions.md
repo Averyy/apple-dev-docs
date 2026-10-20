@@ -1,7 +1,8 @@
 # cloudKitContainerOptions
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Options that customize how this store description aligns with a CloudKit database.
 
@@ -20,9 +21,13 @@ Options that customize how this store description aligns with a CloudKit databas
 var cloudKitContainerOptions: NSPersistentCloudKitContainerOptions? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSPersistentCloudKitContainerOptions * cloudKitContainerOptions;
+```
+
 ## Mentions
 
-- [Setting Up Core Data with CloudKit](setting-up-core-data-with-cloudkit.md)
+- [Setting Up Core Data with CloudKit](../setting-up-core-data-with-cloudkit.md)
 
 
 ---

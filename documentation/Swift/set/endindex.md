@@ -1,7 +1,8 @@
 # endIndex
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The “past the end” position for the set—that is, the position one greater than the last valid subscript argument.
 
@@ -19,6 +20,8 @@ The “past the end” position for the set—that is, the position one greater 
 ```swift
 var endIndex: Set<Element>.Index { get }
 ```
+
+Available when `Element` conforms to `Hashable`.
 
 #### Discussion
 

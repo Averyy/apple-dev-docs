@@ -1,7 +1,8 @@
 # focusGroupPriority
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The importance of the item within a focus group, used by the focus system to determine the group’s primary item.
 
@@ -17,15 +18,20 @@ The importance of the item within a focus group, used by the focus system to det
 optional var focusGroupPriority: UIFocusGroupPriority { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIFocusGroupPriority focusGroupPriority;
+```
+
 #### Discussion
 
-The system automatically assigns each focusable item in a focus group one of the predefined system priorities. The system assigns the [`currentlyFocused`](uifocusgrouppriority/currentlyfocused.md) priority to the focused item, [`previouslyFocused`](uifocusgrouppriority/previouslyfocused.md) to the group’s previous focused item, and [`ignored`](uifocusgrouppriority/ignored.md) for all other items. The visible item with the highest priority is the group’s primary item.
+The system automatically assigns each focusable item in a focus group one of the predefined system priorities. The system assigns the [`currentlyFocused`](../uifocusgrouppriority/currentlyfocused.md) priority to the focused item, [`previouslyFocused`](../uifocusgrouppriority/previouslyfocused.md) to the group’s previous focused item, and [`ignored`](../uifocusgrouppriority/ignored.md) for all other items. The visible item with the highest priority is the group’s primary item.
 
 You can override the default priority of an item to customize the primary item of a group. When setting a custom priority, you can only increase the item’s priority above its system-provided value, not decrease it. The system-provided priority is always the minimum priority applied for the item. The system ignores any priority lower than `0`.
 
 ## See Also
 
-- [struct UIFocusGroupPriority](uifocusgrouppriority.md)
+### Determining the focus priority
+- [struct UIFocusGroupPriority](../uifocusgrouppriority.md)
   The importance of an item within a focus group, used by the focus system to determine the group’s primary item.
 
 

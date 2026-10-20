@@ -1,7 +1,8 @@
 # UIScrollType
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that define the type of the scroll.
 
@@ -17,31 +18,36 @@ Constants that define the type of the scroll.
 enum UIScrollType
 ```
 
+```c
+enum UIScrollType : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIScrollType.discrete](uiscrolltype/discrete.md)
+- [UIScrollType.discrete](./uiscrolltype/discrete.md)
   A discrete scroll type that originates from a device like a mouse with a scroll wheel.
-- [UIScrollType.continuous](uiscrolltype/continuous.md)
+- [UIScrollType.continuous](./uiscrolltype/continuous.md)
   A continuous scroll type that originates from a device like a trackpad.
 ### Initializers
-- [init?(rawValue: UInt)](uiscrolltype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./uiscrolltype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var allowedScrollTypesMask: UIScrollTypeMask](uipangesturerecognizer/allowedscrolltypesmask.md)
+### Tracking scroll events
+- [var allowedScrollTypesMask: UIScrollTypeMask](./uipangesturerecognizer/allowedscrolltypesmask.md)
   A scroll type mask that enables recognition of scroll events.
-- [struct UIScrollTypeMask](uiscrolltypemask.md)
+- [struct UIScrollTypeMask](./uiscrolltypemask.md)
   A bit mask identifying the scroll type of a pan gesture.
 
 

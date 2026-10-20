@@ -1,17 +1,22 @@
 # colorPanel
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color panel instance that owns the color picker.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var colorPanel: NSColorPanel { get }
+```
+
+```objc
+@property (strong, readonly) NSColorPanel * colorPanel;
 ```
 
 

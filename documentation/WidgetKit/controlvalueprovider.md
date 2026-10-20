@@ -1,7 +1,8 @@
 # ControlValueProvider
 
 **Framework**: WidgetKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that provides a value to a control template.
 
@@ -37,18 +38,19 @@ struct GarageDoorValueProvider: ControlValueProvider {
 ## Topics
 
 ### Associated Types
-- [associatedtype Value](controlvalueprovider/value.md)
+- [associatedtype Value](./controlvalueprovider/value.md)
   The type of value provided to the template.
 ### Instance Properties
-- [var previewValue: Self.Value](controlvalueprovider/previewvalue.md)
+- [var previewValue: Self.Value](./controlvalueprovider/previewvalue.md)
   A value to be shown while previewing the control in the add sheet.
 ### Instance Methods
-- [func currentValue() async throws -> Self.Value](controlvalueprovider/currentvalue.md)
+- [func currentValue() async throws -> Self.Value](./controlvalueprovider/currentvalue%28%29.md)
   The current value of the control.
 
 ## See Also
 
-- [protocol AppIntentControlValueProvider](appintentcontrolvalueprovider.md)
+### Previews
+- [protocol AppIntentControlValueProvider](./appintentcontrolvalueprovider.md)
   A type that uses a custom intent to provide a value to a control template.
 
 

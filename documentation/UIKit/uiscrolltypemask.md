@@ -1,7 +1,8 @@
 # UIScrollTypeMask
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A bit mask identifying the scroll type of a pan gesture.
 
@@ -17,36 +18,41 @@ A bit mask identifying the scroll type of a pan gesture.
 struct UIScrollTypeMask
 ```
 
+```c
+enum UIScrollTypeMask : NSInteger;
+```
+
 ## Topics
 
 ### Scroll types
-- [static var all: UIScrollTypeMask](uiscrolltypemask/all.md)
+- [static var all: UIScrollTypeMask](./uiscrolltypemask/all.md)
   A scroll type that’s either discrete or continuous.
-- [static var continuous: UIScrollTypeMask](uiscrolltypemask/continuous.md)
+- [static var continuous: UIScrollTypeMask](./uiscrolltypemask/continuous.md)
   A continuous scroll type from a device, like a trackpad.
-- [static var discrete: UIScrollTypeMask](uiscrolltypemask/discrete.md)
+- [static var discrete: UIScrollTypeMask](./uiscrolltypemask/discrete.md)
   A discrete scroll type from a device, like a mouse.
 ### Initializer
-- [init(rawValue: Int)](uiscrolltypemask/init(rawvalue:).md)
+- [init(rawValue: Int)](./uiscrolltypemask/init%28rawvalue%29.md)
   Creates a new scroll type mask from the raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [var allowedScrollTypesMask: UIScrollTypeMask](uipangesturerecognizer/allowedscrolltypesmask.md)
+### Tracking scroll events
+- [var allowedScrollTypesMask: UIScrollTypeMask](./uipangesturerecognizer/allowedscrolltypesmask.md)
   A scroll type mask that enables recognition of scroll events.
-- [enum UIScrollType](uiscrolltype.md)
+- [enum UIScrollType](./uiscrolltype.md)
   Constants that define the type of the scroll.
 
 

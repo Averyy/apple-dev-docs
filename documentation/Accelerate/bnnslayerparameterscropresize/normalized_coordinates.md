@@ -1,18 +1,21 @@
 # normalized_coordinates
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that specifies whether the operation treats the coordinates as normalized to `0...1`.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- tvOS 16.0+
-- visionOS 1.0+
-- watchOS 9.0+
+- iOS 16.0+ - Deprecated in 18.0
+- iPadOS 16.0+ - Deprecated in 18.0
+- Mac Catalyst 16.0+ - Deprecated in 18.0
+- macOS 13.0+ - Deprecated in 15.0
+- tvOS 16.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 9.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -20,17 +23,22 @@ A Boolean value that specifies whether the operation treats the coordinates as n
 var normalized_coordinates: Bool
 ```
 
+```c
+bool normalized_coordinates;
+```
+
 ## See Also
 
-- [var spatial_scale: Float](bnnslayerparameterscropresize/spatial_scale.md)
+### Instance Properties
+- [var spatial_scale: Float](./spatial_scale.md)
   An additional spatial scale that mutliplies the bounding box coordinates.
-- [var extrapolation_value: Float](bnnslayerparameterscropresize/extrapolation_value.md)
+- [var extrapolation_value: Float](./extrapolation_value.md)
   A value that the operation uses for extrapolation. Default value is `0`.
-- [var sampling_mode: BNNSLinearSamplingMode](bnnslayerparameterscropresize/sampling_mode.md)
+- [var sampling_mode: BNNSLinearSamplingMode](./sampling_mode.md)
   The sampling mode that the operation uses to select sample points.
-- [var box_coordinate_mode: BNNSBoxCoordinateMode](bnnslayerparameterscropresize/box_coordinate_mode.md)
+- [var box_coordinate_mode: BNNSBoxCoordinateMode](./box_coordinate_mode.md)
   A constant that defines the convention that the operation uses to specify the four bounding box coordinates.
-- [var method: BNNSInterpolationMethod](bnnslayerparameterscropresize/method.md)
+- [var method: BNNSInterpolationMethod](./method.md)
   The interpolation method.
 
 

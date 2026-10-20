@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A string that helps you identify the render pipeline state during debugging.
@@ -11,7 +12,7 @@ A string that helps you identify the render pipeline state during debugging.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,11 +21,16 @@ A string that helps you identify the render pipeline state during debugging.
 var label: String? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSString * label;
+```
+
 ## See Also
 
-- [var device: any MTLDevice](mtlrenderpipelinestate/device.md)
+### Identifying a pipeline state
+- [var device: any MTLDevice](./device.md)
   The device instance that creates the pipeline state.
-- [var gpuResourceID: MTLResourceID](mtlrenderpipelinestate/gpuresourceid.md)
+- [var gpuResourceID: MTLResourceID](./gpuresourceid.md)
   An unique identifier that represents the pipeline state, which you can add to an argument buffer.
 
 

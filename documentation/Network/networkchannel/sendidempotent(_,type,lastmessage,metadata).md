@@ -1,7 +1,8 @@
 # sendIdempotent(_:type:lastMessage:metadata:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Send idempotent data on a connection.
 
@@ -19,6 +20,8 @@ Send idempotent data on a connection.
 ```swift
 func sendIdempotent<Content>(_ content: Content, type: Int, lastMessage: Bool = false, @ProtocolMetadataBuilder metadata builder: () -> [NWProtocolMetadata] = {[]}) where Content : DataProtocol
 ```
+
+Available when `ApplicationProtocol` is `TLV`.
 
 #### Discussion
 

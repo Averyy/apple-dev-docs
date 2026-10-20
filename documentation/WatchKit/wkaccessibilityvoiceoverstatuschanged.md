@@ -1,7 +1,8 @@
 # WKAccessibilityVoiceOverStatusChanged
 
 **Framework**: WatchKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Tells the interface controller that the VoiceOver status has changed.
 
@@ -14,9 +15,13 @@ Tells the interface controller that the VoiceOver status has changed.
 let WKAccessibilityVoiceOverStatusChanged: String
 ```
 
+```c
+extern NSString * const WKAccessibilityVoiceOverStatusChanged;
+```
+
 #### Discussion
 
-Use this notification to customize your application’s user interface for VoiceOver users. You can also use the [`isVoiceOverRunning`](https://developer.apple.com/documentation/uikit/uiaccessibility/isvoiceoverrunning) function to determine whether VoiceOver is currently running.
+Use this notification to customize your application’s user interface for VoiceOver users. You can also use the [`isVoiceOverRunning`](../UIKit/uiaccessibility/isvoiceoverrunning.md) function to determine whether VoiceOver is currently running.
 
 Observe this notification using the default notification center. This notification doesn’t include a parameter.
 

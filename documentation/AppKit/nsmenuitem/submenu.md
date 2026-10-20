@@ -1,17 +1,22 @@
 # submenu
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The submenu of the menu item.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var submenu: NSMenu? { get set }
+```
+
+```objc
+@property (strong, nullable) NSMenu * submenu;
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ The default implementation of the `NSMenuItem` class raises an exception if `aSu
 
 ## See Also
 
-- [var hasSubmenu: Bool](nsmenuitem/hassubmenu.md)
+### Managing submenus
+- [var hasSubmenu: Bool](./hassubmenu.md)
   A Boolean value that indicates whether the menu item has a submenu.
-- [var parent: NSMenuItem?](nsmenuitem/parent.md)
+- [var parent: NSMenuItem?](./parent.md)
   The menu item whose submenu contains the receiver.
 
 

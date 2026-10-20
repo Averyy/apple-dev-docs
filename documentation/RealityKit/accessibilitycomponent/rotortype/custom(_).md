@@ -1,14 +1,15 @@
 # AccessibilityComponent.RotorType.custom(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

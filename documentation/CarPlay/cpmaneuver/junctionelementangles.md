@@ -1,7 +1,8 @@
 # junctionElementAngles
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of angles for the rest of the roads of this junction.
 
@@ -16,15 +17,20 @@ A set of angles for the rest of the roads of this junction.
 var junctionElementAngles: Set<Measurement<UnitAngle>>? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSSet<NSMeasurement<NSUnitAngle *> *> * junctionElementAngles;
+```
+
 ##### Discussion
 
 This must not include `junctionExitAngle`.
 
 ## See Also
 
-- [var junctionType: CPJunctionType](cpmaneuver/junctiontype.md)
+### Providing junction information
+- [var junctionType: CPJunctionType](./junctiontype.md)
   A value that represents the type of junction associated with this maneuver.
-- [var junctionExitAngle: Measurement<UnitAngle>?](cpmaneuver/junctionexitangle.md)
+- [var junctionExitAngle: Measurement<UnitAngle>?](./junctionexitangle.md)
   The angle of the exit road of this junction.
 
 

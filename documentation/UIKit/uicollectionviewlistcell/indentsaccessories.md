@@ -1,7 +1,8 @@
 # indentsAccessories
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that detemines whether the cell indents accessories on the leading side.
 
@@ -18,19 +19,24 @@ A Boolean value that detemines whether the cell indents accessories on the leadi
 var indentsAccessories: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL indentsAccessories;
+```
+
 #### Discussion
 
-If the value is [`false`](https://developer.apple.com/documentation/swift/false), the cell indents the content view only.
+If the value is [`false`](../../Swift/false.md), the cell indents the content view only.
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value of this property is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var indentationLevel: Int](uicollectionviewlistcell/indentationlevel.md)
+### Customizing layout
+- [var indentationLevel: Int](./indentationlevel.md)
   The level of indentation for the cell.
-- [var indentationWidth: CGFloat](uicollectionviewlistcell/indentationwidth.md)
+- [var indentationWidth: CGFloat](./indentationwidth.md)
   The width of an indentation level.
-- [var separatorLayoutGuide: UILayoutGuide](uicollectionviewlistcell/separatorlayoutguide.md)
+- [var separatorLayoutGuide: UILayoutGuide](./separatorlayoutguide.md)
   A guide for laying out separators in relation to the primary content in the cell.
 
 

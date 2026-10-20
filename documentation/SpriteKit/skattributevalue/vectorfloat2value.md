@@ -1,7 +1,8 @@
 # vectorFloat2Value
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s value as a vector of two floating-point numbers.
 
@@ -20,17 +21,22 @@ The receiver’s value as a vector of two floating-point numbers.
 var vectorFloat2Value: vector_float2 { get set }
 ```
 
+```objc
+@property (nonatomic) vector_float2 vectorFloat2Value;
+```
+
 #### Discussion
 
 If the receiver’s original value is a floating-point number, the second item of the vector is set to 0. If the receiver’s original value is a vector of more than two items, the additional items are truncated.
 
 ## See Also
 
-- [var floatValue: Float](skattributevalue/floatvalue.md)
+### Instance Properties
+- [var floatValue: Float](./floatvalue.md)
   The receiver’s floating point value.
-- [var vectorFloat3Value: vector_float3](skattributevalue/vectorfloat3value.md)
+- [var vectorFloat3Value: vector_float3](./vectorfloat3value.md)
   The receiver’s value as a vector of three floating point numbers.
-- [var vectorFloat4Value: vector_float4](skattributevalue/vectorfloat4value.md)
+- [var vectorFloat4Value: vector_float4](./vectorfloat4value.md)
   The receiver’s value as a vector of four floating point numbers.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Apple CryptoKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Performs a Diffie-Hellman Key Agreement.

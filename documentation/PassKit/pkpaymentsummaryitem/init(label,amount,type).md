@@ -1,7 +1,8 @@
 # init(label:amount:type:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a summary item with the given label, amount, and type.
 
@@ -19,13 +20,17 @@ Initializes and returns a summary item with the given label, amount, and type.
 convenience init(label: String, amount: NSDecimalNumber, type: PKPaymentSummaryItemType)
 ```
 
+```objc
++ (instancetype) summaryItemWithLabel:(NSString *) label amount:(NSDecimalNumber *) amount type:(PKPaymentSummaryItemType) type;
+```
+
 #### Return Value
 
 A summary item with the given label, amount, and type.
 
 #### Discussion
 
-When creating summary items for estimates or charges whose final value isn’t yet known, use a [`PKPaymentSummaryItemType.pending`](pkpaymentsummaryitemtype/pending.md) type. Use [`zero`](https://developer.apple.com/documentation/foundation/nsdecimalnumber/zero) for the amount of pending items. The payment sheet doesn’t show the value of pending items.
+When creating summary items for estimates or charges whose final value isn’t yet known, use a [`PKPaymentSummaryItemType.pending`](../pkpaymentsummaryitemtype/pending.md) type. Use [`zero`](../../Foundation/nsdecimalnumber/zero.md) for the amount of pending items. The payment sheet doesn’t show the value of pending items.
 
 > **Note**:  The payment request’s total must include a final value, even if the payment request includes one or more pending summary items. This total represents the total of all the known costs; don’t include the value of any pending items.
 
@@ -37,7 +42,8 @@ When creating summary items for estimates or charges whose final value isn’t y
 
 ## See Also
 
-- [convenience init(label: String, amount: NSDecimalNumber)](pkpaymentsummaryitem/init(label:amount:).md)
+### Creating  summary items
+- [convenience init(label: String, amount: NSDecimalNumber)](./init%28label,amount%29.md)
   Initializes and returns a summary item with the given label and amount.
 
 

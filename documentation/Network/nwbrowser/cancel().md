@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops browsing for services.
 
@@ -22,11 +23,12 @@ final func cancel()
 
 ## See Also
 
-- [var stateUpdateHandler: ((NWBrowser.State) -> Void)?](nwbrowser/stateupdatehandler.md)
+### Managing Browsers
+- [var stateUpdateHandler: ((NWBrowser.State) -> Void)?](./stateupdatehandler.md)
   A handler that receives browser state updates.
-- [NWBrowser.State](nwbrowser/state-swift.enum.md)
+- [NWBrowser.State](./state-swift.enum.md)
   States indicating whether a browser is able to discover services.
-- [var state: NWBrowser.State](nwbrowser/state-swift.property.md)
+- [var state: NWBrowser.State](./state-swift.property.md)
   The current state of the browser.
 
 

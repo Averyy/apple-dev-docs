@@ -1,7 +1,8 @@
 # m_max
 
 **Framework**: AudioDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum value of the range.
 
@@ -10,13 +11,14 @@ The maximum value of the range.
 
 ## Declaration
 
-```swift
+```c
 float m_max;
 ```
 
 ## See Also
 
-- [m_min](iouseraudiolevelcontrolrange/m_min.md)
+### Accessing the Minimum and Maximum
+- [m_min](./m_min.md)
   The minimum value of the range.
 
 

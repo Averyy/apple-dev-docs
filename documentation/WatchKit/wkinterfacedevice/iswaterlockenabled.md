@@ -1,7 +1,8 @@
 # isWaterLockEnabled
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the water lock is enabled.
 
@@ -14,13 +15,18 @@ A Boolean value that indicates whether the water lock is enabled.
 var isWaterLockEnabled: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isWaterLockEnabled) BOOL waterLockEnabled;
+```
+
 ## See Also
 
-- [var waterResistanceRating: WKWaterResistanceRating](wkinterfacedevice/waterresistancerating.md)
+### Accessing Water Resistance and Lock
+- [var waterResistanceRating: WKWaterResistanceRating](./waterresistancerating.md)
   The Apple Watch water-resistance rating.
-- [enum WKWaterResistanceRating](wkwaterresistancerating.md)
+- [enum WKWaterResistanceRating](../wkwaterresistancerating.md)
   Values indicating the water-resistance rating.
-- [func enableWaterLock()](wkinterfacedevice/enablewaterlock.md)
+- [func enableWaterLock()](./enablewaterlock%28%29.md)
   Disables the Apple Watch touch screen to prevent accidental taps while submerged.
 
 

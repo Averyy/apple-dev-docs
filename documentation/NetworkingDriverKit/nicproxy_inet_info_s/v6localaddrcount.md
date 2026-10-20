@@ -1,14 +1,15 @@
 # v6LocalAddrCount
 
 **Framework**: NetworkingDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 uint8_t v6LocalAddrCount;
 ```
 

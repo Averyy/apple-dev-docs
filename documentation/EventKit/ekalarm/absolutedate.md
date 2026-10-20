@@ -1,7 +1,8 @@
 # absoluteDate
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The absolute date for the alarm.
 
@@ -19,13 +20,18 @@ The absolute date for the alarm.
 var absoluteDate: Date? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSDate * absoluteDate;
+```
+
 #### Discussion
 
 If you set this property for a relative offset alarm, it loses the relative offset and becomes an absolute alarm.
 
 ## See Also
 
-- [var relativeOffset: TimeInterval](ekalarm/relativeoffset.md)
+### Accessing Alarm Dates
+- [var relativeOffset: TimeInterval](./relativeoffset.md)
   The offset from the start of an event, at which the alarm fires.
 
 

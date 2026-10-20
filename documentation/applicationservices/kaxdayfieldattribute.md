@@ -1,7 +1,8 @@
 # kAXDayFieldAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The day field of a time field represented by this accessibility object. This attribute is required for accessibility objects that represent time fields that display days.
 
@@ -12,6 +13,10 @@ The day field of a time field represented by this accessibility object. This att
 
 ```swift
 var kAXDayFieldAttribute: String { get }
+```
+
+```c
+#define kAXDayFieldAttribute
 ```
 
 

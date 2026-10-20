@@ -1,7 +1,8 @@
 # bounds
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A rectangle that identifies the extremities of a subject within an image in relation to the interaction view’s bounds.
 

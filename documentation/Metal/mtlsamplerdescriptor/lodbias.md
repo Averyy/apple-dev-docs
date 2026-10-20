@@ -1,7 +1,8 @@
 # lodBias
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the level-of-detail (lod) bias when sampling from a texture.
 
@@ -17,6 +18,10 @@ Sets the level-of-detail (lod) bias when sampling from a texture.
 
 ```swift
 var lodBias: Float { get set }
+```
+
+```objc
+@property (nonatomic) float lodBias;
 ```
 
 #### Discussion

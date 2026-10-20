@@ -1,7 +1,8 @@
 # accessibilityHeaderElementsBlock
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -15,6 +16,10 @@
 ```swift
 @MainActor
 var accessibilityHeaderElementsBlock: AXArrayReturnBlock? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) AXArrayReturnBlock accessibilityHeaderElementsBlock;
 ```
 
 

@@ -1,7 +1,8 @@
 # anchor
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date the formatted output refers to from the perspective of the input values.
 

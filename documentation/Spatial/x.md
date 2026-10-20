@@ -1,7 +1,8 @@
 # x
 
 **Framework**: Spatial  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The operation is along the x-axis.
 
@@ -11,7 +12,7 @@ The operation is along the x-axis.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ let x: Axis3D
 
 ## See Also
 
-- [let y: Axis3D](y.md)
+### Deprecated global variables
+- [let y: Axis3D](./y.md)
   The operation is along the y-axis.
-- [let z: Axis3D](z.md)
+- [let z: Axis3D](./z.md)
   The operation is along the z-axis.
 
 

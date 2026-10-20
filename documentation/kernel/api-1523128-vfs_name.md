@@ -1,7 +1,8 @@
 # vfs_name
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Copy filesystem name into a buffer.
 
@@ -10,11 +11,11 @@ Copy filesystem name into a buffer.
 
 ## Declaration
 
-```swift
+```c
 void vfs_name(mount_t mp, char *buffer);
 ```
 
-#### Return_value
+#### Return Value
 
 void.
 

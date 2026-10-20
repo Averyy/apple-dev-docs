@@ -1,7 +1,8 @@
 # star(points:innerRadius:)
 
 **Framework**: PaperKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A star shape with alternating inner and outer points.
 

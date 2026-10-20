@@ -1,7 +1,8 @@
 # MDLDataPrecision.undefined
 
 **Framework**: Model I/O  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case undefined
+```
+
+```c
+MDLDataPrecisionUndefined
 ```
 
 

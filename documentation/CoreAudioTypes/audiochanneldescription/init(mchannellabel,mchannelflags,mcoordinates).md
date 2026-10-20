@@ -1,7 +1,8 @@
 # init(mChannelLabel:mChannelFlags:mCoordinates:)
 
 **Framework**: Core Audio Types  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a channel description with a label, flags, and coordinates.
 
@@ -28,7 +29,8 @@ init(mChannelLabel: AudioChannelLabel, mChannelFlags: AudioChannelFlags, mCoordi
 
 ## See Also
 
-- [init()](audiochanneldescription/init.md)
+### Creating a Channel Description
+- [init()](./init%28%29.md)
   Creates an empty channel description.
 
 

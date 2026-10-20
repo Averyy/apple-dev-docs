@@ -1,7 +1,8 @@
 # objectID
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The managed object ID of the node.
 
@@ -10,7 +11,7 @@ The managed object ID of the node.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,18 @@ The managed object ID of the node.
 var objectID: NSManagedObjectID { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSManagedObjectID * objectID;
+```
+
 ## See Also
 
-- [var propertyCache: NSMutableDictionary?](nsatomicstorecachenode/propertycache.md)
+### Managing Node Data
+- [var propertyCache: NSMutableDictionary?](./propertycache.md)
   The property cache dictionary of the node.
-- [func value(forKey: String) -> Any?](nsatomicstorecachenode/value(forkey:).md)
+- [func value(forKey: String) -> Any?](./value%28forkey%29.md)
   Returns the value for a given key.
-- [func setValue(Any?, forKey: String)](nsatomicstorecachenode/setvalue(_:forkey:).md)
+- [func setValue(Any?, forKey: String)](./setvalue%28_,forkey%29.md)
   Sets the value for the given key.
 
 

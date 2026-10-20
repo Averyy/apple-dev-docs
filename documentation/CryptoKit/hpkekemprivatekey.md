@@ -1,7 +1,8 @@
 # HPKEKEMPrivateKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that represents the private key in HPKE.
 
@@ -24,13 +25,13 @@ protocol HPKEKEMPrivateKey : KEMPrivateKey where Self.PublicKey : HPKEKEMPublicK
 ## Relationships
 
 ### Inherits From
-- [KEMPrivateKey](kemprivatekey.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [KEMPrivateKey](./kemprivatekey.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Inherited By
-- [HPKEKEMPrivateKeyGeneration](hpkekemprivatekeygeneration.md)
+- [HPKEKEMPrivateKeyGeneration](./hpkekemprivatekeygeneration.md)
 ### Conforming Types
-- [XWingMLKEM768X25519.PrivateKey](xwingmlkem768x25519/privatekey.md)
+- [XWingMLKEM768X25519.PrivateKey](./xwingmlkem768x25519/privatekey.md)
 
 
 ---

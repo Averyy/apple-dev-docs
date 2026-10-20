@@ -1,7 +1,8 @@
 # ASPasskeyCredentialExtensionInput.none
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An empty extension input.
 
@@ -20,13 +21,14 @@ case none
 
 ## See Also
 
-- [case assertion(ASPasskeyAssertionCredentialExtensionInput)](aspasskeycredentialextensioninput/assertion(_:).md)
+### Extension input types
+- [case assertion(ASPasskeyAssertionCredentialExtensionInput)](./assertion%28_%29.md)
   An extension input for an assertion.
-- [struct ASPasskeyAssertionCredentialExtensionInput](aspasskeyassertioncredentialextensioninput-swift.struct.md)
+- [struct ASPasskeyAssertionCredentialExtensionInput](../aspasskeyassertioncredentialextensioninput-swift.struct.md)
   A type that encapsulates input for various WebAuthn extensions during passkey assertion.
-- [case registration(ASPasskeyRegistrationCredentialExtensionInput)](aspasskeycredentialextensioninput/registration(_:).md)
+- [case registration(ASPasskeyRegistrationCredentialExtensionInput)](./registration%28_%29.md)
   An extension input for a registration.
-- [struct ASPasskeyRegistrationCredentialExtensionInput](aspasskeyregistrationcredentialextensioninput-swift.struct.md)
+- [struct ASPasskeyRegistrationCredentialExtensionInput](../aspasskeyregistrationcredentialextensioninput-swift.struct.md)
   A type that encapsulates input for various WebAuthn extensions during passkey registration.
 
 

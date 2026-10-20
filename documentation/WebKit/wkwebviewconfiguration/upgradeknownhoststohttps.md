@@ -1,7 +1,8 @@
 # upgradeKnownHostsToHTTPS
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the web view should automatically upgrade supported HTTP requests to HTTPS.
 
@@ -18,17 +19,22 @@ A Boolean value that indicates whether the web view should automatically upgrade
 var upgradeKnownHostsToHTTPS: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL upgradeKnownHostsToHTTPS;
+```
+
 ## See Also
 
-- [var websiteDataStore: WKWebsiteDataStore](wkwebviewconfiguration/websitedatastore.md)
+### Configuring the web view’s behavior
+- [var websiteDataStore: WKWebsiteDataStore](./websitedatastore.md)
   The object you use to get and set the site’s cookies and to track the cached data objects.
-- [var userContentController: WKUserContentController](wkwebviewconfiguration/usercontentcontroller.md)
+- [var userContentController: WKUserContentController](./usercontentcontroller.md)
   The object that coordinates interactions between your app’s native code and the webpage’s scripts and other content.
-- [var processPool: WKProcessPool](wkwebviewconfiguration/processpool.md)
+- [var processPool: WKProcessPool](./processpool.md)
   The object that coordinates the processes the web view uses to render its web content and execute scripts.
-- [var applicationNameForUserAgent: String?](wkwebviewconfiguration/applicationnameforuseragent.md)
+- [var applicationNameForUserAgent: String?](./applicationnameforuseragent.md)
   The app name that appears in the user agent string.
-- [var limitsNavigationsToAppBoundDomains: Bool](wkwebviewconfiguration/limitsnavigationstoappbounddomains.md)
+- [var limitsNavigationsToAppBoundDomains: Bool](./limitsnavigationstoappbounddomains.md)
   A Boolean value that indicates whether the web view limits navigation to pages within the app’s domain.
 
 

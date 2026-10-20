@@ -1,7 +1,8 @@
 # ChartPlotContent
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that represents a chart’s plot area.
 
@@ -24,13 +25,14 @@ A view that represents a chart’s plot area.
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [struct ChartProxy](chartproxy.md)
+### Chart management
+- [struct ChartProxy](./chartproxy.md)
   A proxy that you use to access the scales and plot area of a chart.
 
 

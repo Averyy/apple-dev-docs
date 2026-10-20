@@ -1,14 +1,15 @@
 # DEVICE_STEP_RATE
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 UInt16 DEVICE_STEP_RATE;
 ```
 

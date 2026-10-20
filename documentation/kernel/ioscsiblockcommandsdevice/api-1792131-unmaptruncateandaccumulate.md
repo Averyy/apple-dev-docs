@@ -1,14 +1,15 @@
 # UnmapTruncateAndAccumulate
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 bool UnmapTruncateAndAccumulate(IOBlockStorageDeviceExtent *extentDispatchList, UInt32 blockDescriptorCount, UInt32 *unmapLBACount, IOBlockStorageDeviceExtent *mergedExtent);
 ```
 

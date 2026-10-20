@@ -1,7 +1,8 @@
 # originalPurchaseDate
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date of purchase for the original transaction.
 
@@ -22,7 +23,8 @@ let originalPurchaseDate: Date
 
 ## See Also
 
-- [let originalID: UInt64](transaction/originalid.md)
+### Getting the original transaction identifier
+- [let originalID: UInt64](./originalid.md)
   The original transaction identifier of a purchase.
 
 

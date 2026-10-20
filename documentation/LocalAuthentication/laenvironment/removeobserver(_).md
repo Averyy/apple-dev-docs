@@ -1,7 +1,8 @@
 # removeObserver(_:)
 
 **Framework**: Local Authentication  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func removeObserver(_ observer: any LAEnvironment.Observer)
+```
+
+```objc
+- (void) removeObserver:(id<LAEnvironmentObserver>) observer;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # leading(relativeTo:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the leading direction in the given user interface layout direction.
 

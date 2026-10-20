@@ -1,7 +1,8 @@
 # PKPushRegistryDelegate
 
 **Framework**: PushKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The methods that you use to handle incoming PushKit notifications and registration events.
 
@@ -19,39 +20,44 @@ The methods that you use to handle incoming PushKit notifications and registrati
 protocol PKPushRegistryDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol PKPushRegistryDelegate <NSObject>
+```
+
 #### Overview
 
-Implement the methods of this protocol in an object of your app and assign that object to the [`delegate`](pkpushregistry/delegate.md) property of your `PKPushRegistry` object. Use the methods of this protocol to process incoming notifications and to react to token registration and invalidation.
+Implement the methods of this protocol in an object of your app and assign that object to the [`delegate`](./pkpushregistry/delegate.md) property of your `PKPushRegistry` object. Use the methods of this protocol to process incoming notifications and to react to token registration and invalidation.
 
 ## Topics
 
 ### Responding to Registration Events
-- [func pushRegistry(PKPushRegistry, didUpdate: PKPushCredentials, for: PKPushType)](pkpushregistrydelegate/pushregistry(_:didupdate:for:).md)
+- [func pushRegistry(PKPushRegistry, didUpdate: PKPushCredentials, for: PKPushType)](./pkpushregistrydelegate/pushregistry%28_,didupdate,for%29.md)
   Tells the delegate that the system updated the credentials for the specified type of push notification.
-- [func pushRegistry(PKPushRegistry, didInvalidatePushTokenFor: PKPushType)](pkpushregistrydelegate/pushregistry(_:didinvalidatepushtokenfor:).md)
+- [func pushRegistry(PKPushRegistry, didInvalidatePushTokenFor: PKPushType)](./pkpushregistrydelegate/pushregistry%28_,didinvalidatepushtokenfor%29.md)
   Tells the delegate that the system invalidated the push token for the specified type.
 ### Handling an Incoming Notification
-- [func pushRegistry(PKPushRegistry, didReceiveIncomingPushWith: PKPushPayload, for: PKPushType, completion: () -> Void)](pkpushregistrydelegate/pushregistry(_:didreceiveincomingpushwith:for:completion:).md)
+- [func pushRegistry(PKPushRegistry, didReceiveIncomingPushWith: PKPushPayload, for: PKPushType, completion: () -> Void)](./pkpushregistrydelegate/pushregistry%28_,didreceiveincomingpushwith,for,completion%29.md)
   Tells the delegate that a remote push notification arrived.
 ### Deprecated Methods
-- [func pushRegistry(PKPushRegistry, didReceiveIncomingPushWith: PKPushPayload, for: PKPushType)](pkpushregistrydelegate/pushregistry(_:didreceiveincomingpushwith:for:).md)
+- [func pushRegistry(PKPushRegistry, didReceiveIncomingPushWith: PKPushPayload, for: PKPushType)](./pkpushregistrydelegate/pushregistry%28_,didreceiveincomingpushwith,for%29.md)
   Notifies the delegate that a remote push has been received.
 ### Instance Methods
-- [func pushRegistry(PKPushRegistry, didReceiveIncomingVoIPPushWith: PKPushPayload, metadata: PKVoIPPushMetadata, withCompletionHandler: () -> Void)](pkpushregistrydelegate/pushregistry(_:didreceiveincomingvoippushwith:metadata:withcompletionhandler:).md)
+- [func pushRegistry(PKPushRegistry, didReceiveIncomingVoIPPushWith: PKPushPayload, metadata: PKVoIPPushMetadata, withCompletionHandler: () -> Void)](./pkpushregistrydelegate/pushregistry%28_,didreceiveincomingvoippushwith,metadata,withcompletionhandler%29.md)
   The system calls this method when it receives a VoIP push notification. Use this method to extract data from the notification’s payload and to report a VoIP call using CallKit or LiveCommunicationKit.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Supporting PushKit Notifications in Your App](supporting-pushkit-notifications-in-your-app.md)
+### Registration
+- [Supporting PushKit Notifications in Your App](./supporting-pushkit-notifications-in-your-app.md)
   Declare the types of PushKit notifications your app supports and configure objects to respond to them.
-- [class PKPushRegistry](pkpushregistry.md)
+- [class PKPushRegistry](./pkpushregistry.md)
   An object that requests the delivery and handles the receipt of PushKit notifications.
-- [class PKPushCredentials](pkpushcredentials.md)
+- [class PKPushCredentials](./pkpushcredentials.md)
   An object that encapsulates the device token you use to deliver push notifications to your app.
 
 

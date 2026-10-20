@@ -1,7 +1,8 @@
 # SRSensor
 
 **Framework**: SensorKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The sensors an app can read.
 
@@ -16,9 +17,13 @@ The sensors an app can read.
 struct SRSensor
 ```
 
+```c
+typedef NSString * SRSensor;
+```
+
 ## Mentions
 
-- [Configuring your project for sensor reading](configuring-your-project-for-sensor-reading.md)
+- [Configuring your project for sensor reading](./configuring-your-project-for-sensor-reading.md)
 
 #### Discussion
 
@@ -27,72 +32,73 @@ Use the properties in this structure to access the different sensors.
 ## Topics
 
 ### Reading device sensors
-- [static let deviceUsageReport: SRSensor](srsensor/deviceusagereport.md)
+- [static let deviceUsageReport: SRSensor](./srsensor/deviceusagereport.md)
   A sensor that provides information about device usage.
-- [static let keyboardMetrics: SRSensor](srsensor/keyboardmetrics.md)
+- [static let keyboardMetrics: SRSensor](./srsensor/keyboardmetrics.md)
   A sensor that provides information about keyboard usage.
-- [static let onWristState: SRSensor](srsensor/onwriststate.md)
+- [static let onWristState: SRSensor](./srsensor/onwriststate.md)
   A sensor that describes the watch’s position on the wrist.
 ### Reading app activity sensors
-- [static let messagesUsageReport: SRSensor](srsensor/messagesusagereport.md)
+- [static let messagesUsageReport: SRSensor](./srsensor/messagesusagereport.md)
   A sensor that provides information about use of the Messages app.
-- [static let phoneUsageReport: SRSensor](srsensor/phoneusagereport.md)
+- [static let phoneUsageReport: SRSensor](./srsensor/phoneusagereport.md)
   A sensor that reports the amount of time that the user is on phone calls.
 ### Reading user activity sensors
-- [static let accelerometer: SRSensor](srsensor/accelerometer.md)
+- [static let accelerometer: SRSensor](./srsensor/accelerometer.md)
   A sensor that provides acceleration motion data.
-- [static let faceMetrics: SRSensor](srsensor/facemetrics.md)
+- [static let faceMetrics: SRSensor](./srsensor/facemetrics.md)
   A sensor that provides data describing a user’s face.
-- [static let heartRate: SRSensor](srsensor/heartrate.md)
+- [static let heartRate: SRSensor](./srsensor/heartrate.md)
   A sensor that provides the user’s heart rate data.
-- [static let mediaEvents: SRSensor](srsensor/mediaevents.md)
+- [static let mediaEvents: SRSensor](./srsensor/mediaevents.md)
   A sensor that provides information about interactions with media, such as images and videos, in messaging apps.
-- [static let odometer: SRSensor](srsensor/odometer.md)
+- [static let odometer: SRSensor](./srsensor/odometer.md)
   A sensor that provides information about speed and slope.
-- [static let pedometerData: SRSensor](srsensor/pedometerdata.md)
+- [static let pedometerData: SRSensor](./srsensor/pedometerdata.md)
   A sensor that provides information about the user’s steps.
-- [static let rotationRate: SRSensor](srsensor/rotationrate.md)
+- [static let rotationRate: SRSensor](./srsensor/rotationrate.md)
   A sensor that provides rotation motion data.
-- [static let siriSpeechMetrics: SRSensor](srsensor/sirispeechmetrics.md)
+- [static let siriSpeechMetrics: SRSensor](./srsensor/sirispeechmetrics.md)
   A sensor that provides data describing a user’s speech to Siri.
-- [static let telephonySpeechMetrics: SRSensor](srsensor/telephonyspeechmetrics.md)
+- [static let telephonySpeechMetrics: SRSensor](./srsensor/telephonyspeechmetrics.md)
   A sensor that provides data describing speech during phone calls.
-- [static let visits: SRSensor](srsensor/visits.md)
+- [static let visits: SRSensor](./srsensor/visits.md)
   A sensor that provides information about frequently visited locations.
-- [static let wristTemperature: SRSensor](srsensor/wristtemperature.md)
+- [static let wristTemperature: SRSensor](./srsensor/wristtemperature.md)
   A sensor that provides wrist temperature while the user sleeps.
-- [static let photoplethysmogram: SRSensor](srsensor/photoplethysmogram.md)
+- [static let photoplethysmogram: SRSensor](./srsensor/photoplethysmogram.md)
   A sensor that streams sample PPG sensor data.
-- [static let electrocardiogram: SRSensor](srsensor/electrocardiogram.md)
+- [static let electrocardiogram: SRSensor](./srsensor/electrocardiogram.md)
   A sensor that streams sample ECG sensor data.
 ### Reading environment sensors
-- [static let ambientLightSensor: SRSensor](srsensor/ambientlightsensor.md)
+- [static let ambientLightSensor: SRSensor](./srsensor/ambientlightsensor.md)
   A sensor that provides ambient light information.
-- [static let ambientPressure: SRSensor](srsensor/ambientpressure.md)
+- [static let ambientPressure: SRSensor](./srsensor/ambientpressure.md)
   A sensor that provides pressure and temperature metrics.
 ### Creating a sensor
-- [init(rawValue: String)](srsensor/init(rawvalue:).md)
+- [init(rawValue: String)](./srsensor/init%28rawvalue%29.md)
   Creates a sensor from a raw value.
 ### Type Properties
-- [static let acousticSettings: SRSensor](srsensor/acousticsettings.md)
-- [static let headphoneMotion: SRSensor](srsensor/headphonemotion.md)
-- [static let headphoneSettings: SRSensor](srsensor/headphonesettings.md)
-- [static let sleepSessions: SRSensor](srsensor/sleepsessions.md)
+- [static let acousticSettings: SRSensor](./srsensor/acousticsettings.md)
+- [static let headphoneMotion: SRSensor](./srsensor/headphonemotion.md)
+- [static let headphoneSettings: SRSensor](./srsensor/headphonesettings.md)
+- [static let sleepSessions: SRSensor](./srsensor/sleepsessions.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(sensor: SRSensor)](srsensorreader/init(sensor:).md)
+### Creating a sensor reader
+- [init(sensor: SRSensor)](./srsensorreader/init%28sensor%29.md)
   Initializes a new sensor reader object.
-- [var sensor: SRSensor](srsensorreader/sensor.md)
+- [var sensor: SRSensor](./srsensorreader/sensor.md)
   The particular sensor that this object reads.
 
 

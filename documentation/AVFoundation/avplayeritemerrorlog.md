@@ -1,7 +1,8 @@
 # AVPlayerItemErrorLog
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The error log associated with a player item.
 
@@ -20,42 +21,47 @@ The error log associated with a player item.
 class AVPlayerItemErrorLog
 ```
 
+```objc
+@interface AVPlayerItemErrorLog : NSObject
+```
+
 ## Topics
 
 ### Accessing error data
-- [var events: [AVPlayerItemErrorLogEvent]](avplayeritemerrorlog/events.md)
+- [var events: [AVPlayerItemErrorLogEvent]](./avplayeritemerrorlog/events.md)
   A chronologically ordered array of player item error log event objects.
-- [func extendedLogData() -> Data?](avplayeritemerrorlog/extendedlogdata.md)
+- [func extendedLogData() -> Data?](./avplayeritemerrorlog/extendedlogdata%28%29.md)
   Returns a serialized representation of the error log in the Extended Log File Format.
-- [var extendedLogDataStringEncoding: UInt](avplayeritemerrorlog/extendedlogdatastringencoding.md)
+- [var extendedLogDataStringEncoding: UInt](./avplayeritemerrorlog/extendedlogdatastringencoding.md)
   The string encoding of the extended log data.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func accessLog() -> AVPlayerItemAccessLog?](avplayeritem/accesslog.md)
+### Accessing logging information
+- [func accessLog() -> AVPlayerItemAccessLog?](./avplayeritem/accesslog%28%29.md)
   Returns an object that represents a snapshot of the network access log.
-- [class AVPlayerItemAccessLog](avplayeritemaccesslog.md)
+- [class AVPlayerItemAccessLog](./avplayeritemaccesslog.md)
   An object used to retrieve the access log associated with a player item.
-- [class AVPlayerItemAccessLogEvent](avplayeritemaccesslogevent.md)
+- [class AVPlayerItemAccessLogEvent](./avplayeritemaccesslogevent.md)
   A single entry in a player item’s access log.
-- [func errorLog() -> AVPlayerItemErrorLog?](avplayeritem/errorlog.md)
+- [func errorLog() -> AVPlayerItemErrorLog?](./avplayeritem/errorlog%28%29.md)
   Returns an object that represents a snapshot of the error log.
-- [class AVPlayerItemErrorLogEvent](avplayeritemerrorlogevent.md)
+- [class AVPlayerItemErrorLogEvent](./avplayeritemerrorlogevent.md)
   A single item in a player item’s error log.
 
 

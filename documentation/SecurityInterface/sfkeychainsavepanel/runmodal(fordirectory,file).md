@@ -1,7 +1,8 @@
 # runModal(forDirectory:file:)
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays a panel that allows a user to create a new keychain.
 
@@ -14,11 +15,15 @@ Displays a panel that allows a user to create a new keychain.
 func runModal(forDirectory path: String!, file name: String!) -> Int
 ```
 
+```objc
+- (NSInteger) runModalForDirectory:(NSString *) path file:(NSString *) name;
+```
+
 #### Discussion
 
-This method returns a result code from the [`runModalForDirectory:file:types:`](https://developer.apple.com/documentation/appkit/nsopenpanel/runmodalfordirectory:file:types:) method of the [`NSSavePanel`](https://developer.apple.com/documentation/appkit/nssavepanel) class: [`NSFileHandlingPanelOKButton`](https://developer.apple.com/documentation/appkit/nsfilehandlingpanelokbutton) if the user clicks the OK button or [`NSFileHandlingPanelCancelButton`](https://developer.apple.com/documentation/appkit/nsfilehandlingpanelcancelbutton) if the user clicks the Cancel button.
+This method returns a result code from the [`runModalForDirectory:file:types:`](../../AppKit/nsopenpanel/runmodalfordirectory_file_types_.md) method of the [`NSSavePanel`](../../AppKit/nssavepanel.md) class: [`NSFileHandlingPanelOKButton`](../../AppKit/nsfilehandlingpanelokbutton.md) if the user clicks the OK button or [`NSFileHandlingPanelCancelButton`](../../AppKit/nsfilehandlingpanelcancelbutton.md) if the user clicks the Cancel button.
 
-Use the [`keychain()`](sfkeychainsavepanel/keychain().md) method to obtain the keychain created by the user.
+Use the [`keychain()`](./keychain%28%29.md) method to obtain the keychain created by the user.
 
 ## Parameters
 
@@ -27,9 +32,10 @@ Use the [`keychain()`](sfkeychainsavepanel/keychain().md) method to obtain the k
 
 ## See Also
 
-- [func setPassword(String!)](sfkeychainsavepanel/setpassword(_:).md)
+### Displaying a Sheet or Panel
+- [func setPassword(String!)](./setpassword%28_%29.md)
   Specifies the password for the keychain that will be created.
-- [func beginSheet(forDirectory: String!, file: String!, modalFor: NSWindow!, modalDelegate: Any!, didEnd: Selector!, contextInfo: UnsafeMutableRawPointer!)](sfkeychainsavepanel/beginsheet(fordirectory:file:modalfor:modaldelegate:didend:contextinfo:).md)
+- [func beginSheet(forDirectory: String!, file: String!, modalFor: NSWindow!, modalDelegate: Any!, didEnd: Selector!, contextInfo: UnsafeMutableRawPointer!)](./beginsheet%28fordirectory,file,modalfor,modaldelegate,didend,contextinfo%29.md)
   Displays a sheet that allows a user to create a new keychain.
 
 

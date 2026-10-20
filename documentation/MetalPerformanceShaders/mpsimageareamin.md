@@ -1,7 +1,8 @@
 # MPSImageAreaMin
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A filter that finds the minimum pixel value in a rectangular region centered around each pixel in the source image.
 
@@ -19,34 +20,39 @@ A filter that finds the minimum pixel value in a rectangular region centered aro
 class MPSImageAreaMin
 ```
 
+```objc
+@interface MPSImageAreaMin : MPSImageAreaMax
+```
+
 #### Overview
 
-An [`MPSImageAreaMin`](mpsimageareamin.md) filter has the same methods and properties as the [`MPSImageAreaMax`](mpsimageareamax.md) class.
+An [`MPSImageAreaMin`](./mpsimageareamin.md) filter has the same methods and properties as the [`MPSImageAreaMax`](./mpsimageareamax.md) class.
 
-If there are multiple channels in the source image, each channel is processed independently. The [`edgeMode`](mpsunaryimagekernel/edgemode.md) property value is assumed to always be [`MPSImageEdgeMode.clamp`](mpsimageedgemode/clamp.md) for this filter.
+If there are multiple channels in the source image, each channel is processed independently. The [`edgeMode`](./mpsunaryimagekernel/edgemode.md) property value is assumed to always be [`MPSImageEdgeMode.clamp`](./mpsimageedgemode/clamp.md) for this filter.
 
 ## Relationships
 
 ### Inherits From
-- [MPSImageAreaMax](mpsimageareamax.md)
+- [MPSImageAreaMax](./mpsimageareamax.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSImageAreaMax](mpsimageareamax.md)
+### Morphological Image Filters
+- [class MPSImageAreaMax](./mpsimageareamax.md)
   A filter that finds the maximum pixel value in a rectangular region centered around each pixel in the source image.
-- [class MPSImageDilate](mpsimagedilate.md)
+- [class MPSImageDilate](./mpsimagedilate.md)
   A filter that finds the maximum pixel value in a rectangular region by applying a dilation function.
-- [class MPSImageErode](mpsimageerode.md)
+- [class MPSImageErode](./mpsimageerode.md)
   A filter that finds the minimum pixel value in a rectangular region by applying an erosion function.
 
 

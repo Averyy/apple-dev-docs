@@ -1,7 +1,8 @@
 # init(appleItemID:appKeyBlob:)
 
 **Framework**: App License Delivery SDK  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an app key to decrypt a license request.
 
@@ -13,8 +14,8 @@ init(appleItemID: UInt64, appKeyBlob: [UInt8]) throws
 
 ## Parameters
 
-- `appleItemID`: A unique identifier for the app. See [`AppleItemID`](https://developer.apple.com/documentation/marketplacekit/appleitemid).
-- `appKeyBlob`: A *key blob* for a specific app variant that App Store Connect provides your marketplace server during app ingestion. For more information, see [`Ingesting an alternative distribution package`](https://developer.apple.com/documentation/marketplacekit/ingesting-an-alternative-distribution-package).
+- `appleItemID`: A unique identifier for the app. See [`AppleItemID`](../../MarketplaceKit/appleitemid.md).
+- `appKeyBlob`: A *key blob* for a specific app variant that App Store Connect provides your marketplace server during app ingestion. For more information, see [Ingesting an alternative distribution package](../../MarketplaceKit/ingesting-an-alternative-distribution-package.md).
 
 
 ---

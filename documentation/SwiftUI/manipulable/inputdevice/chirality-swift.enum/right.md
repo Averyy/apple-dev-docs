@@ -1,7 +1,8 @@
 # Manipulable.InputDevice.Chirality.right
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The right-handed chirality.
 

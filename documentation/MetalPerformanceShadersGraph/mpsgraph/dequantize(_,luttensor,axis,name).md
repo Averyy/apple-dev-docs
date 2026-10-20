@@ -1,7 +1,8 @@
 # dequantize(_:LUTTensor:axis:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a vector lookup-table based dequantize operation and returns the result tensor.
 
@@ -19,9 +20,13 @@ Creates a vector lookup-table based dequantize operation and returns the result 
 func dequantize(_ tensor: MPSGraphTensor, LUTTensor: MPSGraphTensor, axis: Int, name: String?) -> MPSGraphTensor
 ```
 
+```objc
+- (MPSGraphTensor *) dequantizeTensor:(MPSGraphTensor *) tensor LUTTensor:(MPSGraphTensor *) LUTTensor axis:(NSInteger) axis name:(NSString *) name;
+```
+
 #### Return Value
 
-A valid [`MPSGraphTensor`](mpsgraphtensor.md) object.
+A valid [`MPSGraphTensor`](../mpsgraphtensor.md) object.
 
 #### Discussion
 

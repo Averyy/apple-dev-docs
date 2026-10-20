@@ -1,7 +1,8 @@
 # DetectHumanBodyPoseRequest
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A request that detects a human body pose.
 
@@ -21,64 +22,65 @@ struct DetectHumanBodyPoseRequest
 
 #### Overview
 
-This type of request produces a collection of [`HumanBodyPoseObservation`](humanbodyposeobservation.md) objects that describe the body pose.
+This type of request produces a collection of [`HumanBodyPoseObservation`](./humanbodyposeobservation.md) objects that describe the body pose.
 
 ## Topics
 
 ### Creating a request
-- [init(DetectHumanBodyPoseRequest.Revision?)](detecthumanbodyposerequest/init(_:).md)
+- [init(DetectHumanBodyPoseRequest.Revision?)](./detecthumanbodyposerequest/init%28_%29.md)
   Creates a human body pose request.
 ### Performing a request
-- [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-80bya.md)
+- [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-80bya.md)
   Performs the request on an image URL and produces observations.
-- [func perform(on: Data, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-3f3f1.md)
+- [func perform(on: Data, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-3f3f1.md)
   Performs the request on image data and produces observations.
-- [func perform(on: CGImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-qxxx.md)
+- [func perform(on: CGImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-qxxx.md)
   Performs the request on a Core Graphics image and produces observations.
-- [func perform(on: CVPixelBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-xspx.md)
+- [func perform(on: CVPixelBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-xspx.md)
   Performs the request on a pixel buffer and produces observations.
-- [func perform(on: CMSampleBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-3hddl.md)
+- [func perform(on: CMSampleBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-3hddl.md)
   Performs the request on a Core Media buffer and produces observations.
-- [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-85ex1.md)
+- [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-85ex1.md)
   Performs the request on a Core Image image and produces observations.
 ### Understanding the result
-- [struct HumanBodyPoseObservation](humanbodyposeobservation.md)
+- [struct HumanBodyPoseObservation](./humanbodyposeobservation.md)
   An observation that provides the body points the analysis recognizes.
 ### Configuring a request
-- [var detectsHands: Bool](detecthumanbodyposerequest/detectshands.md)
+- [var detectsHands: Bool](./detecthumanbodyposerequest/detectshands.md)
   A Boolean value that detects hands of the body in the results, if they’re visible.
-- [var supportedJointNames: [HumanBodyPoseObservation.JointName]](detecthumanbodyposerequest/supportedjointnames.md)
+- [var supportedJointNames: [HumanBodyPoseObservation.JointName]](./detecthumanbodyposerequest/supportedjointnames.md)
   The joint names the request supports.
-- [var supportedJointsGroupNames: [HumanBodyPoseObservation.JointsGroupName]](detecthumanbodyposerequest/supportedjointsgroupnames.md)
+- [var supportedJointsGroupNames: [HumanBodyPoseObservation.JointsGroupName]](./detecthumanbodyposerequest/supportedjointsgroupnames.md)
   The joint group names the request supports.
 ### Getting the revision
-- [let revision: DetectHumanBodyPoseRequest.Revision](detecthumanbodyposerequest/revision-swift.property.md)
+- [let revision: DetectHumanBodyPoseRequest.Revision](./detecthumanbodyposerequest/revision-swift.property.md)
   The algorithm or implementation the request uses.
-- [static let supportedRevisions: [DetectHumanBodyPoseRequest.Revision]](detecthumanbodyposerequest/supportedrevisions.md)
+- [static let supportedRevisions: [DetectHumanBodyPoseRequest.Revision]](./detecthumanbodyposerequest/supportedrevisions.md)
   The collection of revisions the request supports.
-- [DetectHumanBodyPoseRequest.Revision](detecthumanbodyposerequest/revision-swift.enum.md)
+- [DetectHumanBodyPoseRequest.Revision](./detecthumanbodyposerequest/revision-swift.enum.md)
   A type that describes the algorithm or implementation that the request performs.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [ImageProcessingRequest](imageprocessingrequest.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisionRequest](visionrequest.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [ImageProcessingRequest](./imageprocessingrequest.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisionRequest](./visionrequest.md)
 
 ## See Also
 
-- [struct DetectAnimalBodyPoseRequest](detectanimalbodyposerequest.md)
+### Pose analysis
+- [struct DetectAnimalBodyPoseRequest](./detectanimalbodyposerequest.md)
   A request that detects an animal body pose.
-- [class DetectHumanBodyPose3DRequest](detecthumanbodypose3drequest.md)
+- [class DetectHumanBodyPose3DRequest](./detecthumanbodypose3drequest.md)
   A request that detects points on human bodies in 3D space, relative to the camera.
-- [struct DetectHumanHandPoseRequest](detecthumanhandposerequest.md)
+- [struct DetectHumanHandPoseRequest](./detecthumanhandposerequest.md)
   A request that detects a human hand pose.
-- [Supporting Pose Types](supporting-pose-types.md)
+- [Supporting Pose Types](./supporting-pose-types.md)
   Types you use when working with pose analysis.
 
 

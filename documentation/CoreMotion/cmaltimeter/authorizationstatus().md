@@ -1,7 +1,8 @@
 # authorizationStatus()
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a value indicating whether the app is authorized to retrieve altimeter data.
 
@@ -17,13 +18,18 @@ Returns a value indicating whether the app is authorized to retrieve altimeter d
 class func authorizationStatus() -> CMAuthorizationStatus
 ```
 
+```objc
++ (CMAuthorizationStatus) authorizationStatus;
+```
+
 ## See Also
 
-- [class func isAbsoluteAltitudeAvailable() -> Bool](cmaltimeter/isabsolutealtitudeavailable.md)
+### Determining Altitude Availability
+- [class func isAbsoluteAltitudeAvailable() -> Bool](./isabsolutealtitudeavailable%28%29.md)
   Returns a Boolean value indicating whether the current device reports changes in the absolute altitude.
-- [class func isRelativeAltitudeAvailable() -> Bool](cmaltimeter/isrelativealtitudeavailable.md)
+- [class func isRelativeAltitudeAvailable() -> Bool](./isrelativealtitudeavailable%28%29.md)
   Returns a Boolean value indicating whether the current device supports generating data for relative altitude changes.
-- [enum CMAuthorizationStatus](cmauthorizationstatus.md)
+- [enum CMAuthorizationStatus](../cmauthorizationstatus.md)
   The authorization status for motion-related features.
 
 

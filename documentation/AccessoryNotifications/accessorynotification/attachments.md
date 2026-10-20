@@ -1,7 +1,8 @@
 # attachments
 
 **Framework**: Accessory Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of files sent with the notification.
 
@@ -16,11 +17,12 @@ let attachments: [AccessoryNotification.File]
 
 ## See Also
 
-- [let sourceIcon: AccessoryNotification.File?](accessorynotification/sourceicon.md)
+### Accessing related media
+- [let sourceIcon: AccessoryNotification.File?](./sourceicon.md)
   An icon that represents the app that sent the notification.
-- [let contextIcon: AccessoryNotification.File?](accessorynotification/contexticon.md)
+- [let contextIcon: AccessoryNotification.File?](./contexticon.md)
   A secondary icon that provides additional contextual information about the notification.
-- [AccessoryNotification.File](accessorynotification/file.md)
+- [AccessoryNotification.File](./file.md)
   A file associated with a notification.
 
 

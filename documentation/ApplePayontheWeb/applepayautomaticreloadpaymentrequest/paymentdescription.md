@@ -1,7 +1,8 @@
 # paymentDescription
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the automatic reload payment that Apple Pay displays in the payment sheet.
 
@@ -11,7 +12,7 @@ A description of the automatic reload payment that Apple Pay displays in the pay
 
 ## Declaration
 
-```swift
+```
 required DOMString paymentDescription;
 ```
 
@@ -21,7 +22,8 @@ Provide a display name for the automatic reload, for example, “Gift Card Reloa
 
 ## See Also
 
-- [billingAgreement](applepayautomaticreloadpaymentrequest/billingagreement.md)
+### Describing an automatic reload payment
+- [billingAgreement](./billingagreement.md)
   A localized billing agreement that the payment sheet displays to the user before the user authorizes the payment.
 
 

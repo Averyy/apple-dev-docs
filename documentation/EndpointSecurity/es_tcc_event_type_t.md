@@ -1,16 +1,21 @@
 # es_tcc_event_type_t
 
 **Framework**: Endpoint Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 struct es_tcc_event_type_t
+```
+
+```c
+typedef enum { ... } es_tcc_event_type_t;
 ```
 
 #### Overview
@@ -25,19 +30,19 @@ Represent the type of TCC modification event.
 ## Topics
 
 ### Initializers
-- [init(UInt32)](es_tcc_event_type_t/init(_:).md)
-- [init(rawValue: UInt32)](es_tcc_event_type_t/init(rawvalue:).md)
+- [init(UInt32)](./es_tcc_event_type_t/init%28_%29.md)
+- [init(rawValue: UInt32)](./es_tcc_event_type_t/init%28rawvalue%29.md)
 ### Instance Properties
-- [var rawValue: UInt32](es_tcc_event_type_t/rawvalue.md)
+- [var rawValue: UInt32](./es_tcc_event_type_t/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

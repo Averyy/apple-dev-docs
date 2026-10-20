@@ -1,7 +1,8 @@
 # readAttributeHoldTimeLimits(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeHoldTimeLimits(completion: @escaping @Sendable (MTROccupancySensingClusterHoldTimeLimitsStruct?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeHoldTimeLimits() async throws -> MTROccupancySensingClusterHoldTimeLimitsStruct
+```
+
+```objc
+- (void) readAttributeHoldTimeLimitsWithCompletion:(void (^)(MTROccupancySensingClusterHoldTimeLimitsStruct *value, NSError *error)) completion;
 ```
 
 

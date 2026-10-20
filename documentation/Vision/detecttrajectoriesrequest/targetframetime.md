@@ -1,7 +1,8 @@
 # targetFrameTime
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The requested target frame time for processing trajectory detection.
 
@@ -28,11 +29,12 @@ The default value is indefinite, which indicates that accuracy stays at the pred
 
 ## See Also
 
-- [var objectMaximumNormalizedRadius: Float](detecttrajectoriesrequest/objectmaximumnormalizedradius.md)
+### Configuring a request
+- [var objectMaximumNormalizedRadius: Float](./objectmaximumnormalizedradius.md)
   The maximum radius of the bounding circle of the object to track.
-- [var objectMinimumNormalizedRadius: Float](detecttrajectoriesrequest/objectminimumnormalizedradius.md)
+- [var objectMinimumNormalizedRadius: Float](./objectminimumnormalizedradius.md)
   The minimum radius of the bounding circle of the object to track.
-- [let trajectoryLength: Int](detecttrajectoriesrequest/trajectorylength.md)
+- [let trajectoryLength: Int](./trajectorylength.md)
   The number of points to detect before calculating a trajectory.
 
 

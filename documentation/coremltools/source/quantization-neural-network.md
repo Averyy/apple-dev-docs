@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/quantization-neural-
 
 # Compressing Neural Network Weights
 
-**
-
-- [.md](../_sources/source/quantization-neural-network.md)
-- **
-
-.pdf
-
-**
-
-# Compressing Neural Network Weights
-
- Table of contents 
-
-## Contents
-
-# Compressing Neural Network Weights
-
 For Neural Network Format Only
 
 This page describes the API to compress the weights
@@ -120,7 +103,7 @@ quantized_model = quantize_weights(model,
                                    selector=selector)
 ```
 
-For a list of all the layer types in the Core ML neural network model, see the [NeuralNetworkLayer](https://apple.github.io/coremltools/mlmodel/Format/NeuralNetwork.html#neuralnetworklayer) section in the Core ML Format reference for [NeuralNetwork](https://apple.github.io/coremltools/mlmodel/Format/NeuralNetwork.md).
+For a list of all the layer types in the Core ML neural network model, see the [NeuralNetworkLayer](https://apple.github.io/coremltools/mlmodel/Format/NeuralNetwork.html#neuralnetworklayer) section in the Core ML Format reference for [NeuralNetwork](https://apple.github.io/coremltools/mlmodel/Format/NeuralNetwork.html).
 
 For finer control, you can write a custom rule to skip (or not skip) quantizing a layer by extending the `QuantizedLayerSelector` class:
 
@@ -146,5 +129,3 @@ quantized_model = quantize_weights(
   selector=selector
 )
 ```
-
-** Contents

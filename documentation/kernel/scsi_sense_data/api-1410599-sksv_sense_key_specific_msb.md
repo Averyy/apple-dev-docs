@@ -1,14 +1,15 @@
 # SKSV_SENSE_KEY_SPECIFIC_MSB
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 UInt8 SKSV_SENSE_KEY_SPECIFIC_MSB;
 ```
 

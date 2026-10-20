@@ -1,7 +1,8 @@
 # rawRepresentation
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A data representation of the private key.
 
@@ -22,11 +23,12 @@ var rawRepresentation: Data { get }
 
 ## See Also
 
-- [var derRepresentation: Data](p384/keyagreement/privatekey/derrepresentation.md)
+### Representing the key
+- [var derRepresentation: Data](./derrepresentation.md)
   A Distinguished Encoding Rules (DER) encoded representation of the private key.
-- [var pemRepresentation: String](p384/keyagreement/privatekey/pemrepresentation.md)
+- [var pemRepresentation: String](./pemrepresentation.md)
   A Privacy-Enhanced Mail (PEM) representation of the private key.
-- [var x963Representation: Data](p384/keyagreement/privatekey/x963representation.md)
+- [var x963Representation: Data](./x963representation.md)
   An ANSI x9.63 representation of the private key.
 
 

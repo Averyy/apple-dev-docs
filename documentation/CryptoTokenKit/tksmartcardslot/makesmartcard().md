@@ -1,9 +1,10 @@
 # makeSmartCard()
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Creates a new [`TKSmartCard`](tksmartcard.md) object representing the currently inserted Smart Card.
+Creates a new [`TKSmartCard`](../tksmartcard.md) object representing the currently inserted Smart Card.
 
 **Availability**:
 - iOS 9.0+
@@ -20,9 +21,13 @@ Creates a new [`TKSmartCard`](tksmartcard.md) object representing the currently 
 func makeSmartCard() -> TKSmartCard?
 ```
 
+```objc
+- (TKSmartCard *) makeSmartCard;
+```
+
 #### Return Value
 
-A new [`TKSmartCard`](tksmartcard.md) object, or `nil` if no Smart Card is currently inserted.
+A new [`TKSmartCard`](../tksmartcard.md) object, or `nil` if no Smart Card is currently inserted.
 
 #### Discussion
 

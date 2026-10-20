@@ -1,7 +1,8 @@
 # UICommandAlternate
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object representing an alternative action for a command.
 
@@ -19,13 +20,17 @@ An object representing an alternative action for a command.
 class UICommandAlternate
 ```
 
+```objc
+@interface UICommandAlternate : NSObject
+```
+
 #### Overview
 
-Create a [`UICommandAlternate`](uicommandalternate.md) object and add it to a [`UICommand`](uicommand.md) or [`UIKeyCommand`](uikeycommand.md) object when you want to provide users an alternative action for the command. The command alternate is available to the user when they press the keyboard modifier keys, like Control or Option, specified in the [`modifierFlags`](uicommandalternate/modifierflags.md) property.
+Create a [`UICommandAlternate`](./uicommandalternate.md) object and add it to a [`UICommand`](./uicommand.md) or [`UIKeyCommand`](./uikeycommand.md) object when you want to provide users an alternative action for the command. The command alternate is available to the user when they press the keyboard modifier keys, like Control or Option, specified in the [`modifierFlags`](./uicommandalternate/modifierflags.md) property.
 
 For instance, an app may have a Reload menu, created with a key command, that has the keyboard shortcut Command+R. When the user selects Reload, or presses Command+R on their keyboard, the app reloads the data displayed in the current window. The app, however, can display more than one window, so it includes a Reload All alternative for Reload that reloads data in all windows, not just the current one.
 
-The Reload All command alternate specifies [`alternate`](uikeymodifierflags/alternate.md) in its [`modifierFlags`](uicommandalternate/modifierflags.md) property, which makes Reload All available to the user when they press the Option key. To select Reload All, the user can press and hold the Option key while displaying the menu that contains Reload. This replaces the Reload menu with Reload All. The user can also select Reload All by pressing Option+Command+R.
+The Reload All command alternate specifies [`alternate`](./uikeymodifierflags/alternate.md) in its [`modifierFlags`](./uicommandalternate/modifierflags.md) property, which makes Reload All available to the user when they press the Option key. To select Reload All, the user can press and hold the Option key while displaying the menu that contains Reload. This replaces the Reload menu with Reload All. The user can also select Reload All by pressing Option+Command+R.
 
 ```swift
 // Create an alternate for the reload command. The alternative command appears
@@ -52,37 +57,38 @@ builder.insertSibling(reloadMenuItem, beforeMenu: .close)
 ## Topics
 
 ### Creating a command alternative
-- [convenience init(title: String, action: Selector, modifierFlags: UIKeyModifierFlags)](uicommandalternate/init(title:action:modifierflags:).md)
+- [convenience init(title: String, action: Selector, modifierFlags: UIKeyModifierFlags)](./uicommandalternate/init%28title,action,modifierflags%29.md)
   Creates a command alternative with the specified title, action, and modifier flags.
-- [init?(coder: NSCoder)](uicommandalternate/init(coder:).md)
+- [init?(coder: NSCoder)](./uicommandalternate/init%28coder%29.md)
   Creates a command alternative from data in an unarchiver.
 ### Getting information about the alternative
-- [var title: String](uicommandalternate/title.md)
+- [var title: String](./uicommandalternate/title.md)
   The command alternative’s title.
-- [var action: Selector](uicommandalternate/action.md)
+- [var action: Selector](./uicommandalternate/action.md)
   The command alternative’s action-method selector.
-- [var modifierFlags: UIKeyModifierFlags](uicommandalternate/modifierflags.md)
+- [var modifierFlags: UIKeyModifierFlags](./uicommandalternate/modifierflags.md)
   The bit mask of modifier keys that the user must press to invoke the action for the alternative command.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [var alternates: [UICommandAlternate]](uicommand/alternates.md)
+### Getting command alternatives
+- [var alternates: [UICommandAlternate]](./uicommand/alternates.md)
   An array of alternative actions to take for the command.
 
 

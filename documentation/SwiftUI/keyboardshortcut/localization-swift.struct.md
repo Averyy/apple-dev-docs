@@ -1,7 +1,8 @@
 # KeyboardShortcut.Localization
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for how a keyboard shortcut participates in automatic localization.
 
@@ -22,29 +23,30 @@ struct Localization
 
 A shortcut’s `key` that is defined on an US-English keyboard layout might not be reachable on international layouts. For example the shortcut `⌘[` works well for the US layout but is hard to reach for German users. On the German keyboard layout, pressing `⌥5` will produce `[`, which causes the shortcut to become `⌥⌘5`. If configured, which is the default behavior, automatic shortcut remapping will convert it to `⌘Ö`.
 
-In addition to that, some keyboard shortcuts carry information about directionality. Right-aligning a block of text or seeking forward in context of music playback are such examples. These kinds of shortcuts benefit from the option [`withoutMirroring`](keyboardshortcut/localization-swift.struct/withoutmirroring.md) to tell the system that they won’t be flipped when running in a right-to-left context.
+In addition to that, some keyboard shortcuts carry information about directionality. Right-aligning a block of text or seeking forward in context of music playback are such examples. These kinds of shortcuts benefit from the option [`withoutMirroring`](./localization-swift.struct/withoutmirroring.md) to tell the system that they won’t be flipped when running in a right-to-left context.
 
 ## Topics
 
 ### Getting localization strategies
-- [static let automatic: KeyboardShortcut.Localization](keyboardshortcut/localization-swift.struct/automatic.md)
+- [static let automatic: KeyboardShortcut.Localization](./localization-swift.struct/automatic.md)
   Remap shortcuts to their international counterparts, mirrored for right-to-left usage if appropriate.
-- [static let custom: KeyboardShortcut.Localization](keyboardshortcut/localization-swift.struct/custom.md)
+- [static let custom: KeyboardShortcut.Localization](./localization-swift.struct/custom.md)
   Don’t use automatic shortcut remapping.
-- [static let withoutMirroring: KeyboardShortcut.Localization](keyboardshortcut/localization-swift.struct/withoutmirroring.md)
+- [static let withoutMirroring: KeyboardShortcut.Localization](./localization-swift.struct/withoutmirroring.md)
   Don’t mirror shortcuts.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(KeyEquivalent, modifiers: EventModifiers, localization: KeyboardShortcut.Localization)](keyboardshortcut/init(_:modifiers:localization:).md)
+### Creating a localized shortcut
+- [init(KeyEquivalent, modifiers: EventModifiers, localization: KeyboardShortcut.Localization)](./init%28_,modifiers,localization%29.md)
   Creates a new keyboard shortcut with the given key equivalent and set of modifier keys.
-- [var localization: KeyboardShortcut.Localization](keyboardshortcut/localization-swift.property.md)
+- [var localization: KeyboardShortcut.Localization](./localization-swift.property.md)
   The localization strategy to apply to this shortcut.
 
 

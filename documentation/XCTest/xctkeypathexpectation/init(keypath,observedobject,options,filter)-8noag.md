@@ -1,7 +1,8 @@
 # init(keyPath:observedObject:options:filter:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -15,16 +16,19 @@
 convenience init(keyPath: KeyPath<T, V>, observedObject: T, options: NSKeyValueObservingOptions = [.initial, .new, .old], filter: XCTKeyPathExpectation<T, V>.AsynchronousFilter? = nil)
 ```
 
+Available when `T` inherits `NSObject`, `T` conforms to `Sendable`, and `V` conforms to `Sendable`.
+
 ## See Also
 
-- [convenience init(keyPath: KeyPath<T, V>, observedObject: T, options: NSKeyValueObservingOptions, expectedValue: V)](xctkeypathexpectation/init(keypath:observedobject:options:expectedvalue:).md)
+### Creating key path expectations
+- [convenience init(keyPath: KeyPath<T, V>, observedObject: T, options: NSKeyValueObservingOptions, expectedValue: V)](./init%28keypath,observedobject,options,expectedvalue%29.md)
   Creates an expectation that the system fulfills when the value of the observed property changes to an expected value.
-- [convenience init(keyPath: KeyPath<T, V>, observedObject: T, options: NSKeyValueObservingOptions, predicate: XCTKeyPathExpectation<T, V>.Predicate?)](xctkeypathexpectation/init(keypath:observedobject:options:predicate:).md)
+- [convenience init(keyPath: KeyPath<T, V>, observedObject: T, options: NSKeyValueObservingOptions, predicate: XCTKeyPathExpectation<T, V>.Predicate?)](./init%28keypath,observedobject,options,predicate%29.md)
   Creates an expectation that the system fulfills when the value of the observed property changes and satisfies the conditions of a predicate’s evaluation.
-- [convenience init(keyPath: KeyPath<T, V>, observedObject: T, options: NSKeyValueObservingOptions, filter: XCTKeyPathExpectation<T, V>.SynchronousFilter?)](xctkeypathexpectation/init(keypath:observedobject:options:filter:)-plka.md)
-- [XCTKeyPathExpectation.AsynchronousFilter](xctkeypathexpectation/asynchronousfilter.md)
-- [XCTKeyPathExpectation.SynchronousFilter](xctkeypathexpectation/synchronousfilter.md)
-- [XCTKeyPathExpectation.Predicate](xctkeypathexpectation/predicate.md)
+- [convenience init(keyPath: KeyPath<T, V>, observedObject: T, options: NSKeyValueObservingOptions, filter: XCTKeyPathExpectation<T, V>.SynchronousFilter?)](./init%28keypath,observedobject,options,filter%29-plka.md)
+- [XCTKeyPathExpectation.AsynchronousFilter](./asynchronousfilter.md)
+- [XCTKeyPathExpectation.SynchronousFilter](./synchronousfilter.md)
+- [XCTKeyPathExpectation.Predicate](./predicate.md)
   A function the key path expectation uses to test the value of an observed property.
 
 

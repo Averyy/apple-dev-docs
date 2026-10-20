@@ -1,7 +1,8 @@
 # player(_:didRequestMatchWithRecipients:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles the event when the local player sends other players an invitation to join a match.
 
@@ -19,6 +20,10 @@ Handles the event when the local player sends other players an invitation to joi
 optional func player(_ player: GKPlayer, didRequestMatchWithRecipients recipientPlayers: [GKPlayer])
 ```
 
+```objc
+- (void) player:(GKPlayer *) player didRequestMatchWithRecipients:(NSArray<GKPlayer *> *) recipientPlayers;
+```
+
 #### Discussion
 
 When GameKit calls this method, Game Center starts the matchmaking process.
@@ -30,9 +35,10 @@ When GameKit calls this method, Game Center starts the matchmaking process.
 
 ## See Also
 
-- [func player(GKPlayer, didAccept: GKInvite)](gkinviteeventlistener/player(_:didaccept:).md)
+### Starting a New Match
+- [func player(GKPlayer, didAccept: GKInvite)](./player%28_,didaccept%29.md)
   Handles the event when the local player accepts an invitation from another player.
-- [func player(GKPlayer, didRequestMatchWithPlayers: [String])](gkinviteeventlistener/player(_:didrequestmatchwithplayers:).md)
+- [func player(GKPlayer, didRequestMatchWithPlayers: [String])](./player%28_,didrequestmatchwithplayers%29.md)
   Handles the event when the local player sends other players an invitation to join a match.
 
 

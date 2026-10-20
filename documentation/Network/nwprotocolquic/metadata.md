@@ -1,7 +1,8 @@
 # NWProtocolQUIC.Metadata
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A handle you can use to inspect a connection’s QUIC state.
 
@@ -23,45 +24,45 @@ class Metadata
 ## Topics
 
 ### Inspecting Connection State
-- [var negotiatedALPN: String?](nwprotocolquic/metadata/negotiatedalpn.md)
+- [var negotiatedALPN: String?](./metadata/negotiatedalpn.md)
   The Application-Layer Protocol Negotiation value used when establishing the connection.
-- [var localMaxStreamsBidirectional: Int](nwprotocolquic/metadata/localmaxstreamsbidirectional.md)
+- [var localMaxStreamsBidirectional: Int](./metadata/localmaxstreamsbidirectional.md)
   The maximum number of bidirectional streams that the peer can create on a QUIC connection.
-- [var localMaxStreamsUnidirectional: Int](nwprotocolquic/metadata/localmaxstreamsunidirectional.md)
+- [var localMaxStreamsUnidirectional: Int](./metadata/localmaxstreamsunidirectional.md)
   The maximum number of unidirectional streams that the peer can create on a QUIC connection.
-- [var remoteMaxStreamsBidirectional: Int](nwprotocolquic/metadata/remotemaxstreamsbidirectional.md)
+- [var remoteMaxStreamsBidirectional: Int](./metadata/remotemaxstreamsbidirectional.md)
   The maximum number of bidirectional streams advertised by peer that the connection is allowed to create.
-- [var remoteMaxStreamsUnidirectional: Int](nwprotocolquic/metadata/remotemaxstreamsunidirectional.md)
+- [var remoteMaxStreamsUnidirectional: Int](./metadata/remotemaxstreamsunidirectional.md)
   The maximum number of unidirectional streams advertised by peer that the connection is allowed to create.
-- [var remoteIdleTimeout: Int](nwprotocolquic/metadata/remoteidletimeout.md)
+- [var remoteIdleTimeout: Int](./metadata/remoteidletimeout.md)
   The idle timeout value from the peer’s transport parameters, in milliseconds.
-- [var securityProtocolMetadata: sec_protocol_metadata_t](nwprotocolquic/metadata/securityprotocolmetadata.md)
+- [var securityProtocolMetadata: sec_protocol_metadata_t](./metadata/securityprotocolmetadata.md)
   The result of the QUIC handshake.
 ### Inspecting Stream State
-- [var streamIdentifier: UInt64](nwprotocolquic/metadata/streamidentifier.md)
+- [var streamIdentifier: UInt64](./metadata/streamidentifier.md)
   The QUIC stream identifier.
-- [var usableDatagramFrameSize: Int](nwprotocolquic/metadata/usabledatagramframesize.md)
+- [var usableDatagramFrameSize: Int](./metadata/usabledatagramframesize.md)
   The maximum usable size of a datagram frame on a QUIC datagram flow.
 ### Handling Errors
-- [var applicationError: NWProtocolQUIC.ApplicationError](nwprotocolquic/metadata/applicationerror.md)
+- [var applicationError: NWProtocolQUIC.ApplicationError](./metadata/applicationerror.md)
   The QUIC application error code to send for the connection, or received from the peer.
-- [NWProtocolQUIC.ApplicationError](nwprotocolquic/applicationerror.md)
+- [NWProtocolQUIC.ApplicationError](./applicationerror.md)
   A QUIC application error code.
-- [var streamApplicationErrorCode: UInt64](nwprotocolquic/metadata/streamapplicationerrorcode.md)
+- [var streamApplicationErrorCode: UInt64](./metadata/streamapplicationerrorcode.md)
   The QUIC application error code to send for the stream, or received from the peer.
 ### Configuring Keepalives
-- [var keepAlive: NWProtocolQUIC.Metadata.KeepAliveBehavior](nwprotocolquic/metadata/keepalive.md)
+- [var keepAlive: NWProtocolQUIC.Metadata.KeepAliveBehavior](./metadata/keepalive.md)
   The QUIC connection keepalive behavior.
-- [NWProtocolQUIC.Metadata.KeepAliveBehavior](nwprotocolquic/metadata/keepalivebehavior.md)
+- [NWProtocolQUIC.Metadata.KeepAliveBehavior](./metadata/keepalivebehavior.md)
   A QUIC connection keepalive behavior.
 
 ## Relationships
 
 ### Inherits From
-- [NWProtocolMetadata](nwprotocolmetadata.md)
+- [NWProtocolMetadata](../nwprotocolmetadata.md)
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

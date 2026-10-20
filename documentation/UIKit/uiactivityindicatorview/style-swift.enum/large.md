@@ -1,7 +1,8 @@
 # UIActivityIndicatorView.Style.large
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The large style of indicator.
 
@@ -18,9 +19,14 @@ The large style of indicator.
 case large
 ```
 
+```c
+UIActivityIndicatorViewStyleLarge
+```
+
 ## See Also
 
-- [UIActivityIndicatorView.Style.medium](uiactivityindicatorview/style-swift.enum/medium.md)
+### Constants
+- [UIActivityIndicatorView.Style.medium](./medium.md)
   The default activity indicator style.
 
 

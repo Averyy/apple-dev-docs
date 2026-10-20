@@ -1,15 +1,16 @@
 # kNewTimePitchParam_EnablePeakLocking
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- macOS 10.0+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 2.0+ - Deprecated in 16.0 (renamed: kNewTimePitchParam_EnableSpectralCoherence)
+- iPadOS 2.0+ - Deprecated in 16.0 (renamed: kNewTimePitchParam_EnableSpectralCoherence)
+- Mac Catalyst 13.1+ - Deprecated in 16.0 (renamed: kNewTimePitchParam_EnableSpectralCoherence)
+- macOS 10.0+ - Deprecated in 13.0 (renamed: kNewTimePitchParam_EnableSpectralCoherence)
+- tvOS 9.0+ - Deprecated in 16.0 (renamed: kNewTimePitchParam_EnableSpectralCoherence)
+- visionOS 1.0+ - Deprecated in 1.0 (renamed: kNewTimePitchParam_EnableSpectralCoherence)
 
 ## Declaration
 
@@ -17,14 +18,19 @@
 var kNewTimePitchParam_EnablePeakLocking: AudioUnitParameterID { get }
 ```
 
+```c
+kNewTimePitchParam_EnablePeakLocking
+```
+
 ## See Also
 
-- [var kNewTimePitchParam_Overlap: AudioUnitParameterID](knewtimepitchparam_overlap.md)
-- [var kNewTimePitchParam_Pitch: AudioUnitParameterID](knewtimepitchparam_pitch.md)
-- [var kNewTimePitchParam_Rate: AudioUnitParameterID](knewtimepitchparam_rate.md)
-- [var kNewTimePitchParam_EnableSpectralCoherence: AudioUnitParameterID](knewtimepitchparam_enablespectralcoherence.md)
-- [var kNewTimePitchParam_EnableTransientPreservation: AudioUnitParameterID](knewtimepitchparam_enabletransientpreservation.md)
-- [var kNewTimePitchParam_Smoothness: AudioUnitParameterID](knewtimepitchparam_smoothness.md)
+### Constants
+- [var kNewTimePitchParam_Overlap: AudioUnitParameterID](./knewtimepitchparam_overlap.md)
+- [var kNewTimePitchParam_Pitch: AudioUnitParameterID](./knewtimepitchparam_pitch.md)
+- [var kNewTimePitchParam_Rate: AudioUnitParameterID](./knewtimepitchparam_rate.md)
+- [var kNewTimePitchParam_EnableSpectralCoherence: AudioUnitParameterID](./knewtimepitchparam_enablespectralcoherence.md)
+- [var kNewTimePitchParam_EnableTransientPreservation: AudioUnitParameterID](./knewtimepitchparam_enabletransientpreservation.md)
+- [var kNewTimePitchParam_Smoothness: AudioUnitParameterID](./knewtimepitchparam_smoothness.md)
 
 
 ---

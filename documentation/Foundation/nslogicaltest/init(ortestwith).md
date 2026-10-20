@@ -1,7 +1,8 @@
 # init(orTestWith:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an `NSLogicalTest` object initialized to perform an `OR` operation with the `NSSpecifierTest` objects in a given array.
 
@@ -15,6 +16,10 @@ Returns an `NSLogicalTest` object initialized to perform an `OR` operation with 
 init(orTestWith subTests: [NSSpecifierTest])
 ```
 
+```objc
+- (instancetype) initOrTestWithTests:(NSArray<NSSpecifierTest *> *) subTests;
+```
+
 #### Return Value
 
 An `NSLogicalTest` object initialized to perform an `OR` operation with the `NSSpecifierTest` objects in `subTests`.
@@ -25,9 +30,10 @@ An `NSLogicalTest` object initialized to perform an `OR` operation with the `NSS
 
 ## See Also
 
-- [init(andTestWith: [NSSpecifierTest])](nslogicaltest/init(andtestwith:).md)
+### Initializing a logical test
+- [init(andTestWith: [NSSpecifierTest])](./init%28andtestwith%29.md)
   Returns an `NSLogicalTest` object initialized to perform an `AND` operation with the `NSSpecifierTest` objects in a given array.
-- [init(notTestWith: NSScriptWhoseTest)](nslogicaltest/init(nottestwith:).md)
+- [init(notTestWith: NSScriptWhoseTest)](./init%28nottestwith%29.md)
   Returns an `NSLogicalTest` object initialized to perform a `NOT` operation on the given `NSScriptWhoseTest` object.
 
 

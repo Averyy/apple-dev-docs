@@ -1,7 +1,8 @@
 # start(at:completion:)
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -14,7 +15,15 @@
 ## Declaration
 
 ```swift
+func start(at when: AVAudioTime?, completion handler: (@Sendable (PHASESoundEvent.StartHandlerReason) -> Void)? = nil)
+```
+
+```swift
 func start(at when: AVAudioTime?) async -> PHASESoundEvent.StartHandlerReason
+```
+
+```objc
+- (void) startAtTime:(AVAudioTime *) when completion:(void (^)(PHASESoundEventStartHandlerReason reason)) handler;
 ```
 
 #### Discussion

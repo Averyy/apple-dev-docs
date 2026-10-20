@@ -1,7 +1,8 @@
 # currentPermissions
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently granted permissions that have not expired.
 
@@ -18,9 +19,14 @@ The currently granted permissions that have not expired.
 var currentPermissions: Set<WKWebExtension.Permission> { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSSet<NSString *> * currentPermissions;
+```
+
 ## See Also
 
-- [var grantedPermissions: [WKWebExtension.Permission : Date]](wkwebextensioncontext/grantedpermissions.md)
+### Related Documentation
+- [var grantedPermissions: [WKWebExtension.Permission : Date]](./grantedpermissions.md)
   The currently granted permissions and their expiration dates.
 
 

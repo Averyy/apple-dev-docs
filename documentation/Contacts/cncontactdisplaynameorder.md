@@ -1,7 +1,8 @@
 # CNContactDisplayNameOrder
 
 **Framework**: Contacts  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The formatting orders for contact names component.
 
@@ -19,33 +20,38 @@ The formatting orders for contact names component.
 enum CNContactDisplayNameOrder
 ```
 
+```c
+enum CNContactDisplayNameOrder : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [CNContactDisplayNameOrder.userDefault](cncontactdisplaynameorder/userdefault.md)
+- [CNContactDisplayNameOrder.userDefault](./cncontactdisplaynameorder/userdefault.md)
   Display name order by user default.
-- [CNContactDisplayNameOrder.givenNameFirst](cncontactdisplaynameorder/givennamefirst.md)
+- [CNContactDisplayNameOrder.givenNameFirst](./cncontactdisplaynameorder/givennamefirst.md)
   Display name order by given name first.
-- [CNContactDisplayNameOrder.familyNameFirst](cncontactdisplaynameorder/familynamefirst.md)
+- [CNContactDisplayNameOrder.familyNameFirst](./cncontactdisplaynameorder/familynamefirst.md)
   Display name order by family name first.
 ### Initializers
-- [init?(rawValue: Int)](cncontactdisplaynameorder/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cncontactdisplaynameorder/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class func delimiter(for: CNContact) -> String](cncontactformatter/delimiter(for:).md)
+### Getting format information
+- [class func delimiter(for: CNContact) -> String](./cncontactformatter/delimiter%28for%29.md)
   Returns the delimiter to use between name components.
-- [class func nameOrder(for: CNContact) -> CNContactDisplayNameOrder](cncontactformatter/nameorder(for:).md)
+- [class func nameOrder(for: CNContact) -> CNContactDisplayNameOrder](./cncontactformatter/nameorder%28for%29.md)
   Returns the display name order.
 
 

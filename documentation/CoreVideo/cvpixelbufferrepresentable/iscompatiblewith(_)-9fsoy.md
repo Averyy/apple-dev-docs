@@ -1,7 +1,8 @@
 # isCompatibleWith(_:)
 
 **Framework**: Core Video  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns `true` if the pixel buffer is compatible with the specified attributes.
 

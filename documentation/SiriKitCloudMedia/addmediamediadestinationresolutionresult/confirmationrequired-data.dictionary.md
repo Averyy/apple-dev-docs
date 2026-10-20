@@ -1,7 +1,8 @@
 # AddMediaMediaDestinationResolutionResult.ConfirmationRequired
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A result that requires the user to confirm the library or playlist before you add media items to it.
 
@@ -10,7 +11,7 @@ A result that requires the user to confirm the library or playlist before you ad
 
 ## Declaration
 
-```swift
+```
 object AddMediaMediaDestinationResolutionResult.ConfirmationRequired
 ```
 
@@ -20,7 +21,8 @@ object AddMediaMediaDestinationResolutionResult.ConfirmationRequired
 
 ## See Also
 
-- [object AddMediaMediaDestinationResolutionResult.Disambiguation](addmediamediadestinationresolutionresult/disambiguation-data.dictionary.md)
+### Clarifying a Possible Match
+- [object AddMediaMediaDestinationResolutionResult.Disambiguation](./disambiguation-data.dictionary.md)
   A result that requires the user to choose which library or playlist they want to add media items to.
 
 

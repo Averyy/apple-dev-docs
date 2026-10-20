@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a pose by decoding from the given decoder.
 
@@ -17,6 +18,12 @@ Creates a pose by decoding from the given decoder.
 
 ```swift
 init(from decoder: any Decoder) throws
+```
+
+**Other overloads**:
+
+```swift
+init(from points: [JointKey : JointPoint])
 ```
 
 

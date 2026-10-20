@@ -1,7 +1,8 @@
 # status
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A placement for items that represents a change in status.
 
@@ -27,13 +28,14 @@ In macOS and in Mac Catalyst apps, the system places status items in the center 
 
 In iOS and iPadOS, the system places status items in the center of the bottom toolbar.
 
-In tvOS, this placement is only available from within the sidebar of a [`NavigationSplitView`](navigationsplitview.md).  The system places status items in the center of the bottom toolbar within the navigation sidebar.  It has no effect if used elsewhere.
+In tvOS, this placement is only available from within the sidebar of a [`NavigationSplitView`](../navigationsplitview.md).  The system places status items in the center of the bottom toolbar within the navigation sidebar.  It has no effect if used elsewhere.
 
 ## See Also
 
-- [static let automatic: ToolbarItemPlacement](toolbaritemplacement/automatic.md)
+### Getting semantic placement
+- [static let automatic: ToolbarItemPlacement](./automatic.md)
   A placement the system positions automatically.
-- [static let principal: ToolbarItemPlacement](toolbaritemplacement/principal.md)
+- [static let principal: ToolbarItemPlacement](./principal.md)
   A placement for the principal item section.
 
 

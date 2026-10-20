@@ -1,7 +1,8 @@
 # init(nonce:ciphertext:tag:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sealed box from the given tag, nonce, and ciphertext.
 
@@ -28,7 +29,8 @@ init<C, T>(nonce: ChaChaPoly.Nonce, ciphertext: C, tag: T) throws where C : Data
 
 ## See Also
 
-- [init<D>(combined: D) throws](chachapoly/sealedbox/init(combined:).md)
+### Creating the sealed box
+- [init<D>(combined: D) throws](./init%28combined%29.md)
   Creates a sealed box from the given data.
 
 

@@ -1,7 +1,8 @@
 # MPSGraphPaddingStyle.explicit
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Explicit
 
@@ -17,6 +18,10 @@ Explicit
 
 ```swift
 case explicit
+```
+
+```c
+MPSGraphPaddingStyleExplicit
 ```
 
 

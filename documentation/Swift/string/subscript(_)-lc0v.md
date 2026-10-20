@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Swift  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the character at the given position.
 
@@ -40,13 +41,14 @@ if let nextCapital = substr.firstIndex(where: { $0 >= "A" && $0 <= "Z" }) {
 
 ## See Also
 
-- [var first: Self.Element?](string/first.md)
+### Getting Characters and Bytes
+- [var first: Self.Element?](./first.md)
   The first element of the collection.
-- [var last: Self.Element?](string/last.md)
+- [var last: Self.Element?](./last.md)
   The last element of the collection.
-- [func randomElement() -> Self.Element?](string/randomelement.md)
+- [func randomElement() -> Self.Element?](./randomelement%28%29.md)
   Returns a random element of the collection.
-- [func randomElement<T>(using: inout T) -> Self.Element?](string/randomelement(using:).md)
+- [func randomElement<T>(using: inout T) -> Self.Element?](./randomelement%28using%29.md)
   Returns a random element of the collection, using the given generator as a source for randomness.
 
 

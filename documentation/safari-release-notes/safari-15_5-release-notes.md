@@ -1,6 +1,7 @@
 # Safari 15.5 Release Notes
 
-**Framework**: Safari Release Notes
+**Framework**: Safari Release Notes  
+**Role**: Article
 
 Released May 16, 2022 — Version 15.5 (17613.2.7)
 
@@ -8,7 +9,7 @@ Released May 16, 2022 — Version 15.5 (17613.2.7)
 
 Safari 15.5 ships with iOS & iPadOS 15.5 and macOS 12.4.
 
-##### Html
+##### HTML
 
 ###### New Features
 
@@ -21,7 +22,7 @@ Safari 15.5 ships with iOS & iPadOS 15.5 and macOS 12.4.
 - Fixed rendering a USDZ loaded as the main resource.
 - Fixed uploading Pages files to file inputs accepting Pages and JPEG files.
 
-##### Web Api
+##### Web API
 
 ###### Resolved Issues
 
@@ -33,7 +34,7 @@ Safari 15.5 ships with iOS & iPadOS 15.5 and macOS 12.4.
 - Fixed computing the site for cookies when the document is created by `window.open`.
 - Fixed `Element.focus({preventScroll: true})` to correctly prevent scrolling on iOS.
 
-##### Css
+##### CSS
 
 ###### Resolved Issues
 
@@ -84,7 +85,7 @@ Safari 15.5 ships with iOS & iPadOS 15.5 and macOS 12.4.
 - Fixed playback of HTML5 embedded audio with unbounded range requests.
 - Fixed the video poster disappearing prematurely on play, leaving a transparent video element.
 
-##### Webrtc
+##### WebRTC
 
 ###### Resolved Issues
 
@@ -107,7 +108,7 @@ Safari 15.5 ships with iOS & iPadOS 15.5 and macOS 12.4.
 
 - Fixed the Apple Pay sheet to return `billingContact` on iOS.
 
-##### Webgl
+##### WebGL
 
 ###### Resolved Issues
 
@@ -129,13 +130,13 @@ Safari 15.5 ships with iOS & iPadOS 15.5 and macOS 12.4.
 
 - Fixed launching Microsoft Teams from Safari.
 
-##### Wkwebview
+##### WKWebView
 
 ###### New Features
 
 - Added `minimumViewportInset` and `maximumViewportInset` API to support small (`svw`, `svh`, `svi`, `svb`, `svmin`, `svmax`), large (`lvw`, `lvh`, `lvi`, `lvb`, `lvmin`, `lvmax`), dynamic (`dvw`, `dvh`, `dvi`, `dvb`, `dvmin`, `dvmax`), and logical (`vi`, `vb`) viewport units.
 
-##### Sfsafariviewcontroller
+##### SFSafariViewController
 
 ###### Resolved Issues
 
@@ -154,13 +155,14 @@ Safari 15.5 ships with iOS & iPadOS 15.5 and macOS 12.4.
 
 ## See Also
 
-- [Safari 15.6 Release Notes](safari-15_6-release-notes.md)
+### Version 15
+- [Safari 15.6 Release Notes](./safari-15_6-release-notes.md)
   Released July 20, 2022 — Version 15.6 (17613.3.9)
-- [Safari 15.4 Release Notes](safari-15_4-release-notes.md)
+- [Safari 15.4 Release Notes](./safari-15_4-release-notes.md)
   Released March 14, 2022 — Version 15.4 (17613.1.17)
-- [Safari 15.2 Release Notes](safari-15_2-release-notes.md)
+- [Safari 15.2 Release Notes](./safari-15_2-release-notes.md)
   Released December 13, 2021 — Version 15.2 (17612.3.6)
-- [Safari 15 Release Notes](safari-15-release-notes.md)
+- [Safari 15 Release Notes](./safari-15-release-notes.md)
   Released September 20, 2021 — Version 15 (17612.1.27)
 
 

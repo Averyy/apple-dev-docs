@@ -1,7 +1,8 @@
 # BetaAppClipInvocationUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes you set that describe the updated Beta App Clip Invocations resource.
 
@@ -10,7 +11,7 @@ The attributes you set that describe the updated Beta App Clip Invocations resou
 
 ## Declaration
 
-```swift
+```
 object BetaAppClipInvocationUpdateRequest.Data.Attributes
 ```
 

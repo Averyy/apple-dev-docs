@@ -1,7 +1,8 @@
 # init(name:indexBuffer:indexCount:indexType:geometryType:material:topology:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a named submesh with a specific topology.
 
@@ -19,15 +20,19 @@ Initializes a named submesh with a specific topology.
 init(name: String, indexBuffer: any MDLMeshBuffer, indexCount: Int, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType, material: MDLMaterial?, topology: MDLSubmeshTopology?)
 ```
 
+```objc
+- (instancetype) initWithName:(NSString *) name indexBuffer:(id<MDLMeshBuffer>) indexBuffer indexCount:(NSUInteger) indexCount indexType:(MDLIndexBitDepth) indexType geometryType:(MDLGeometryType) geometryType material:(MDLMaterial *) material topology:(MDLSubmeshTopology *) topology;
+```
+
 #### Return Value
 
 A new submesh object.
 
 #### Discussion
 
-Typically, a submesh is imported from an asset file as a member of a [`MDLMesh`](mdlmesh.md) object, but you can also use this method to create a submesh programmatically.
+Typically, a submesh is imported from an asset file as a member of a [`MDLMesh`](../mdlmesh.md) object, but you can also use this method to create a submesh programmatically.
 
-Use this method when the index buffer from which you’re creating a submesh does not contain a uniform array of geometric primitives. Pass  [`MDLGeometryType.variableTopology`](mdlgeometrytype/variabletopology.md) for the `geometryType` parameter, and provide an `MDLSubmeshTopology` object for the `topology` parameter to describe how the points in the index buffer combine to produce the submesh’s shape. Otherwise, this method is equivalent to the [`init(name:indexBuffer:indexCount:indexType:geometryType:material:)`](mdlsubmesh/init(name:indexbuffer:indexcount:indextype:geometrytype:material:).md) method.
+Use this method when the index buffer from which you’re creating a submesh does not contain a uniform array of geometric primitives. Pass  [`MDLGeometryType.variableTopology`](../mdlgeometrytype/variabletopology.md) for the `geometryType` parameter, and provide an `MDLSubmeshTopology` object for the `topology` parameter to describe how the points in the index buffer combine to produce the submesh’s shape. Otherwise, this method is equivalent to the [`init(name:indexBuffer:indexCount:indexType:geometryType:material:)`](./init%28name,indexbuffer,indexcount,indextype,geometrytype,material%29.md) method.
 
 ## Parameters
 
@@ -41,11 +46,12 @@ Use this method when the index buffer from which you’re creating a submesh doe
 
 ## See Also
 
-- [init(indexBuffer: any MDLMeshBuffer, indexCount: Int, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType, material: MDLMaterial?)](mdlsubmesh/init(indexbuffer:indexcount:indextype:geometrytype:material:).md)
+### Creating a Submesh
+- [init(indexBuffer: any MDLMeshBuffer, indexCount: Int, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType, material: MDLMaterial?)](./init%28indexbuffer,indexcount,indextype,geometrytype,material%29.md)
   Initializes a submesh with an index buffer and the specified properties.
-- [init(name: String, indexBuffer: any MDLMeshBuffer, indexCount: Int, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType, material: MDLMaterial?)](mdlsubmesh/init(name:indexbuffer:indexcount:indextype:geometrytype:material:).md)
+- [init(name: String, indexBuffer: any MDLMeshBuffer, indexCount: Int, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType, material: MDLMaterial?)](./init%28name,indexbuffer,indexcount,indextype,geometrytype,material%29.md)
   Initializes a named submesh with an index buffer and the specified properties.
-- [init?(mdlSubmesh: MDLSubmesh, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType)](mdlsubmesh/init(mdlsubmesh:indextype:geometrytype:)-4czyc.md)
+- [init?(mdlSubmesh: MDLSubmesh, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType)](./init%28mdlsubmesh,indextype,geometrytype%29-4czyc.md)
   Initializes a submesh by copying or converting another submesh.
 
 

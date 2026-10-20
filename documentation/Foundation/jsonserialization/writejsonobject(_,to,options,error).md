@@ -1,7 +1,8 @@
 # writeJSONObject(_:to:options:error:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Writes a given JSON object to a stream.
 
@@ -20,6 +21,10 @@ Writes a given JSON object to a stream.
 class func writeJSONObject(_ obj: Any, to stream: OutputStream, options opt: JSONSerialization.WritingOptions = [], error: NSErrorPointer) -> Int
 ```
 
+```objc
++ (NSInteger) writeJSONObject:(id) obj toStream:(NSOutputStream *) stream options:(NSJSONWritingOptions) opt error:(NSError **) error;
+```
+
 #### Return Value
 
 The number of bytes written to the stream, or `0` if an error occurs.
@@ -27,17 +32,22 @@ The number of bytes written to the stream, or `0` if an error occurs.
 ## Parameters
 
 - `obj`: The object to write to `stream`.
-- `stream`: The stream to which to write. The stream should be open and configured.
-- `opt`: Options for writing the JSON data. See [`JSONSerialization.WritingOptions`](jsonserialization/writingoptions.md) for possible values.
-- `error`: If an error occurs, upon return contains an `NSError` object with code [`NSPropertyListWriteInvalidError`](nspropertylistwriteinvaliderror-swift.var.md) that describes the problem.
+- `stream`: The stream to which to write.
+
+  The stream should be open and configured.
+- `opt`: Options for writing the JSON data.
+
+  See [`JSONSerialization.WritingOptions`](./writingoptions.md) for possible values.
+- `error`: If an error occurs, upon return contains an `NSError` object with code [`NSPropertyListWriteInvalidError`](../nspropertylistwriteinvaliderror-swift.var.md) that describes the problem.
 
 ## See Also
 
-- [class func data(withJSONObject: Any, options: JSONSerialization.WritingOptions) throws -> Data](jsonserialization/data(withjsonobject:options:).md)
+### Creating JSON Data
+- [class func data(withJSONObject: Any, options: JSONSerialization.WritingOptions) throws -> Data](./data%28withjsonobject,options%29.md)
   Returns JSON data from a Foundation object.
-- [JSONSerialization.WritingOptions](jsonserialization/writingoptions.md)
+- [JSONSerialization.WritingOptions](./writingoptions.md)
   Options for writing JSON data.
-- [class func isValidJSONObject(Any) -> Bool](jsonserialization/isvalidjsonobject(_:).md)
+- [class func isValidJSONObject(Any) -> Bool](./isvalidjsonobject%28_%29.md)
   Returns a Boolean value that indicates whether the serializer can convert a given object to JSON data.
 
 

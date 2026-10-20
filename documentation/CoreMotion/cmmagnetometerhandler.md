@@ -1,7 +1,8 @@
 # CMMagnetometerHandler
 
 **Framework**: Core Motion  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of block callback for handling magnetometer data.
 
@@ -18,24 +19,29 @@ The type of block callback for handling magnetometer data.
 typealias CMMagnetometerHandler = (CMMagnetometerData?, (any Error)?) -> Void
 ```
 
+```c
+typedef void (^)(CMMagnetometerData *, NSError *) CMMagnetometerHandler;
+```
+
 #### Discussion
 
-Blocks of type `CMMagnetometerHandler` are called when there is magnetometer data to process. You pass the block into the [`startMagnetometerUpdates(to:withHandler:)`](cmmotionmanager/startmagnetometerupdates(to:withhandler:).md) method as the second argument. Blocks of this type return no value but take two arguments:
+Blocks of type `CMMagnetometerHandler` are called when there is magnetometer data to process. You pass the block into the [`startMagnetometerUpdates(to:withHandler:)`](./cmmotionmanager/startmagnetometerupdates%28to,withhandler%29.md) method as the second argument. Blocks of this type return no value but take two arguments:
 
-- **`magnetometerData`**: An object that encapsulates a [`CMMagneticField`](cmmagneticfield.md) structure with fields holding magnetic-field values for the three axes of movement.
-- **`error`**: An error object representing an error encountered in providing magnetometer data. If an error occurs, you should stop magnetometer updates and inform the user of the problem. If there is no error, this argument is `nil`. Core Motion errors are of the [`CMErrorDomain`](cmerrordomain.md) domain and the [`CMError`](cmerror.md) type.
+- **`magnetometerData`**: An object that encapsulates a [`CMMagneticField`](./cmmagneticfield.md) structure with fields holding magnetic-field values for the three axes of movement.
+- **`error`**: An error object representing an error encountered in providing magnetometer data. If an error occurs, you should stop magnetometer updates and inform the user of the problem. If there is no error, this argument is `nil`. Core Motion errors are of the [`CMErrorDomain`](./cmerrordomain.md) domain and the [`CMError`](./cmerror.md) type.
 
 ## See Also
 
-- [var magnetometerUpdateInterval: TimeInterval](cmmotionmanager/magnetometerupdateinterval.md)
+### Managing Magnetometer Updates
+- [var magnetometerUpdateInterval: TimeInterval](./cmmotionmanager/magnetometerupdateinterval.md)
   The interval, in seconds, at which the system delivers magnetometer data to the block handler.
-- [func startMagnetometerUpdates(to: OperationQueue, withHandler: CMMagnetometerHandler)](cmmotionmanager/startmagnetometerupdates(to:withhandler:).md)
+- [func startMagnetometerUpdates(to: OperationQueue, withHandler: CMMagnetometerHandler)](./cmmotionmanager/startmagnetometerupdates%28to,withhandler%29.md)
   Starts magnetometer updates on an operation queue and with a specified handler.
-- [func startMagnetometerUpdates()](cmmotionmanager/startmagnetometerupdates.md)
+- [func startMagnetometerUpdates()](./cmmotionmanager/startmagnetometerupdates%28%29.md)
   Starts magnetometer updates without a block handler.
-- [func stopMagnetometerUpdates()](cmmotionmanager/stopmagnetometerupdates.md)
+- [func stopMagnetometerUpdates()](./cmmotionmanager/stopmagnetometerupdates%28%29.md)
   Stops magnetometer updates.
-- [var magnetometerData: CMMagnetometerData?](cmmotionmanager/magnetometerdata.md)
+- [var magnetometerData: CMMagnetometerData?](./cmmotionmanager/magnetometerdata.md)
   The latest sample of magnetometer data.
 
 

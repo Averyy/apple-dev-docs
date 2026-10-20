@@ -1,7 +1,8 @@
 # requestFocusUpdate(to:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Submits a request to update the focus state of the specified object.
 
@@ -18,17 +19,22 @@ Submits a request to update the focus state of the specified object.
 func requestFocusUpdate(to environment: any UIFocusEnvironment)
 ```
 
+```objc
+- (void) requestFocusUpdateToEnvironment:(id<UIFocusEnvironment>) environment;
+```
+
 #### Discussion
 
 Use this method to ask the focus engine to update the focus-related information for the specified object. If the update request is accepted, the focus engine updates the object’s focus-related information during the next run loop cycle. If the specified object does not contain a focused item, calling this method has no effect.
 
 ## Parameters
 
-- `environment`: The view, view controller, window, or other object that you want to update. You can specify any object that adopts the [`UIFocusEnvironment`](uifocusenvironment.md) protocol.
+- `environment`: The view, view controller, window, or other object that you want to update. You can specify any object that adopts the [`UIFocusEnvironment`](../uifocusenvironment.md) protocol.
 
 ## See Also
 
-- [func updateFocusIfNeeded()](uifocussystem/updatefocusifneeded.md)
+### Managing focus updates
+- [func updateFocusIfNeeded()](./updatefocusifneeded%28%29.md)
   Forces the system to act on a pending focus update for the current environment.
 
 

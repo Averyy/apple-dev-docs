@@ -1,7 +1,8 @@
 # ClosedRange.SubSequence
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A collection representing a contiguous subrange of this collection’s elements. The subsequence shares indices with the original collection.
 
@@ -19,6 +20,8 @@ A collection representing a contiguous subrange of this collection’s elements.
 ```swift
 typealias SubSequence = Slice<ClosedRange<Bound>>
 ```
+
+Available when `Bound` conforms to `Strideable` and `Bound.Stride` conforms to `SignedInteger`.
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # BetaRecruitmentCriterionCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a beta recruitment criterion.
 
@@ -10,23 +11,23 @@ The request body you use to create a beta recruitment criterion.
 
 ## Declaration
 
-```swift
+```
 object BetaRecruitmentCriterionCreateRequest.Data
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BetaRecruitmentCriterionCreateRequest.Data.Attributes](betarecruitmentcriterioncreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object BetaRecruitmentCriterionCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a beta recruitment criterion create request resource.
-- [object BetaRecruitmentCriterionCreateRequest.Data.Relationships](betarecruitmentcriterioncreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object BetaRecruitmentCriterionCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
 - `attributes` (BetaRecruitmentCriterionCreateRequest.Data.Attributes) *(required)*
 - `relationships` (BetaRecruitmentCriterionCreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `betaRecruitmentCriteria`
 
 
 ---

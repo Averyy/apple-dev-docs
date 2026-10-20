@@ -1,7 +1,8 @@
 # StorageType.cabinet
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An enclosed storage area.
 
@@ -18,7 +19,8 @@ case cabinet
 
 ## See Also
 
-- [StorageType.shelf](storagetype/shelf.md)
+### Choosing a storage area type
+- [StorageType.shelf](./shelf.md)
   An open, wall-located storage area.
 
 

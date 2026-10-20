@@ -1,7 +1,8 @@
 # PortalComponent.ClippingMode.volume(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Clips the contents within the portal to a box-shaped region.
 
@@ -23,11 +24,11 @@ case volume(PortalComponent.Volume)
 
 Use this case for room-sized portals and other bounded portal spaces where content shouldn’t extend infinitely behind the portal surface. RealityKit hides any portal world content outside the volume.
 
-For portals where the box should enclose the portal surface, [`enclosingBox(depth:)`](portalcomponent/boundarystyle/enclosingbox(depth:).md) is a convenient way to configure this case alongside the matching [`PortalComponent.CrossingMode.volume(_:)`](portalcomponent/crossingmode-swift.enum/volume(_:).md).
+For portals where the box should enclose the portal surface, [`enclosingBox(depth:)`](../boundarystyle/enclosingbox%28depth%29.md) is a convenient way to configure this case alongside the matching [`PortalComponent.CrossingMode.volume(_:)`](../crossingmode-swift.enum/volume%28_%29.md).
 
 ## Parameters
 
-- `volume`: A [`PortalComponent.Volume`](portalcomponent/volume.md) describing the box’s center and extents in portal-local space.
+- `volume`: A [`PortalComponent.Volume`](../volume.md) describing the box’s center and extents in portal-local space.
 
 
 ---

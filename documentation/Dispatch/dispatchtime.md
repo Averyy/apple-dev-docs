@@ -1,18 +1,19 @@
 # DispatchTime
 
 **Framework**: Dispatch  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A point in time relative to the default clock, with nanosecond precision.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -27,48 +28,49 @@ On Apple platforms, the default clock is based on the Mach absolute time unit.
 ## Topics
 
 ### Getting Well-Known Times
-- [static func now() -> DispatchTime](dispatchtime/now.md)
+- [static func now() -> DispatchTime](./dispatchtime/now%28%29.md)
   Returns the current time.
-- [static let distantFuture: DispatchTime](dispatchtime/distantfuture.md)
+- [static let distantFuture: DispatchTime](./dispatchtime/distantfuture.md)
   A time in the distant future.
 ### Creating a Dispatch Time Object
-- [init(uptimeNanoseconds: UInt64)](dispatchtime/init(uptimenanoseconds:).md)
+- [init(uptimeNanoseconds: UInt64)](./dispatchtime/init%28uptimenanoseconds%29.md)
   Creates a time relative to the amount of time the system has been running.
 ### Getting the Time
-- [let rawValue: dispatch_time_t](dispatchtime/rawvalue.md)
+- [let rawValue: dispatch_time_t](./dispatchtime/rawvalue.md)
   Returns the underlying time value.
-- [var uptimeNanoseconds: UInt64](dispatchtime/uptimenanoseconds.md)
+- [var uptimeNanoseconds: UInt64](./dispatchtime/uptimenanoseconds.md)
   Returns the number of nanoseconds since boot, excluding any time the system spent asleep.
 ### Modifying the Value
-- [func advanced(by: DispatchTimeInterval) -> DispatchTime](dispatchtime/advanced(by:).md)
-- [func distance(to: DispatchTime) -> DispatchTimeInterval](dispatchtime/distance(to:).md)
+- [func advanced(by: DispatchTimeInterval) -> DispatchTime](./dispatchtime/advanced%28by%29.md)
+- [func distance(to: DispatchTime) -> DispatchTimeInterval](./dispatchtime/distance%28to%29.md)
 ### Operator Functions
-- [func + (DispatchTime, Double) -> DispatchTime](+(_:_:)-6fmcc.md)
-- [func + (DispatchTime, DispatchTimeInterval) -> DispatchTime](+(_:_:)-2dcrq.md)
-- [func - (DispatchTime, Double) -> DispatchTime](-(_:_:)-5l4yh.md)
-- [func - (DispatchTime, DispatchTimeInterval) -> DispatchTime](-(_:_:)-8usj3.md)
+- [func + (DispatchTime, Double) -> DispatchTime](./plus%28_,_%29-6fmcc.md)
+- [func + (DispatchTime, DispatchTimeInterval) -> DispatchTime](./plus%28_,_%29-2dcrq.md)
+- [func - (DispatchTime, Double) -> DispatchTime](./minus%28_,_%29-5l4yh.md)
+- [func - (DispatchTime, DispatchTimeInterval) -> DispatchTime](./minus%28_,_%29-8usj3.md)
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](../swift/comparable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Comparable](../Swift/comparable.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct DispatchWallTime](dispatchwalltime.md)
+### Time Constructs
+- [struct DispatchWallTime](./dispatchwalltime.md)
   An absolute point in time according to the wall clock, with microsecond precision.
-- [enum DispatchTimeInterval](dispatchtimeinterval.md)
+- [enum DispatchTimeInterval](./dispatchtimeinterval.md)
   A number of seconds, millisconds, microseconds, or nanoseconds.
-- [enum DispatchTimeoutResult](dispatchtimeoutresult.md)
+- [enum DispatchTimeoutResult](./dispatchtimeoutresult.md)
   A result value indicating whether a dispatch operation finished before a specified time.
-- [typealias dispatch_time_t](dispatch_time_t.md)
+- [typealias dispatch_time_t](./dispatch_time_t.md)
   An abstract representation of time.
-- [var DISPATCH_WALLTIME_NOW: UInt](dispatch_walltime_now.md)
+- [var DISPATCH_WALLTIME_NOW: UInt](./dispatch_walltime_now.md)
   The current time.
-- [Wall Time Constants](2963138-wall-time-constants.md)
+- [Wall Time Constants](./api-2963138-wall-time-constants.md)
   Constants for wall time values.
 
 

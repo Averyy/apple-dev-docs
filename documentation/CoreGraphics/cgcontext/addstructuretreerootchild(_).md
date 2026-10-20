@@ -1,7 +1,8 @@
 # addStructureTreeRootChild(_:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 
 ```swift
 func addStructureTreeRootChild(_ structureElement: CGPDFStructureElement) -> OSStatus
+```
+
+```c
+extern OSStatus CGPDFContextAddStructureTreeRootChild(CGContextRef context, CGPDFStructureElementRef structureElement);
 ```
 
 

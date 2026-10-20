@@ -1,7 +1,8 @@
 # title
 
 **Framework**: Link Presentation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A representative title for the URL.
 

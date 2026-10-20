@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Now Playing template the system provides.
 
@@ -14,6 +15,10 @@ The Now Playing template the system provides.
 
 ```swift
 class var shared: CPNowPlayingTemplate { get }
+```
+
+```objc
+@property (class, nonatomic, strong, readonly) CPNowPlayingTemplate * sharedTemplate;
 ```
 
 #### Discussion

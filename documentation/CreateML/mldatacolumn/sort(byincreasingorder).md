@@ -1,7 +1,8 @@
 # sort(byIncreasingOrder:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new MLDataColumn containing values sorted by the specified order.
 
@@ -18,6 +19,8 @@ Returns a new MLDataColumn containing values sorted by the specified order.
 ```swift
 func sort(byIncreasingOrder: Bool = true) -> MLDataColumn<Element>
 ```
+
+Available when `Element` conforms to `MLDataValueConvertible`.
 
 #### Return Value
 

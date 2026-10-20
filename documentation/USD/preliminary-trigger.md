@@ -6,7 +6,7 @@ A condition that, when met, performs an action.
 
 #### Overview
 
-Because it inherits `Typed`, this schema declares a `Preliminary_Trigger` as a type of prim. For more information about typed schemas, see USD Specification > [`Typed`](https://developer.apple.comhttp://graphics.pixar.com/usd/docs/USD-Glossary.html#USDGlossary-TypedSchema).
+Because it inherits `Typed`, this schema declares a `Preliminary_Trigger` as a type of prim. For more information about typed schemas, see USD Specification > [Typed](http://graphics.pixar.com/usd/docs/USD-Glossary.html#USDGlossary-TypedSchema).
 
 The runtime executes triggers based on:
 
@@ -22,7 +22,7 @@ class "Preliminary_Trigger" (
 )
 ```
 
-##### Add a Tap Trigger to a Cube
+##### Add a tap trigger to a cube
 
 The following example shows how a prim named `TapCube` opts in to notification of user taps.
 
@@ -40,20 +40,21 @@ def Preliminary_Trigger "TapCube" {
 ## Topics
 
 ### Properties
-- [info:id](info-id.md)
+- [info:id](./info-id.md)
   The action’s unique identifier.
 
 ## See Also
 
-- [CollideTrigger](collidetrigger.md)
+### Triggers
+- [CollideTrigger](./collidetrigger.md)
   A trigger that activates when specified objects collide.
-- [ProximityToCameraTrigger](proximitytocameratrigger.md)
+- [ProximityToCameraTrigger](./proximitytocameratrigger.md)
   A trigger that fires when the camera crosses the distance threshold of an object.
-- [SceneTransitionTrigger](scenetransitiontrigger.md)
+- [SceneTransitionTrigger](./scenetransitiontrigger.md)
   A trigger that fires during scene transitions.
-- [TapGestureTrigger](tapgesturetrigger.md)
+- [TapGestureTrigger](./tapgesturetrigger.md)
   A trigger that fires when the user taps.
-- [NotificationTrigger](notificationtrigger.md)
+- [NotificationTrigger](./notificationtrigger.md)
   A trigger that fires when an app posts a notification.
 
 

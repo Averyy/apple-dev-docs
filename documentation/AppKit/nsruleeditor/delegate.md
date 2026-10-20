@@ -1,12 +1,13 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rule editor’s delegate.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,10 +15,15 @@ The rule editor’s delegate.
 weak var delegate: (any NSRuleEditorDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSRuleEditorDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol NSRuleEditorDelegate](nsruleeditordelegate.md)
-  The `NSRuleEditorDelegate` protocol defines the optional methods implemented by delegates of [`NSRuleEditor`](nsruleeditor.md) objects.
+### Configuring the Delegate
+- [protocol NSRuleEditorDelegate](../nsruleeditordelegate.md)
+  The `NSRuleEditorDelegate` protocol defines the optional methods implemented by delegates of [`NSRuleEditor`](../nsruleeditor.md) objects.
 
 
 ---

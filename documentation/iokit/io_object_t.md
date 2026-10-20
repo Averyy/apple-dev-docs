@@ -1,7 +1,8 @@
 # io_object_t
 
 **Framework**: IOKit  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 15.0+
@@ -17,6 +18,10 @@
 
 ```swift
 typealias io_object_t = mach_port_t
+```
+
+```c
+typedef mach_port_t io_object_t;
 ```
 
 

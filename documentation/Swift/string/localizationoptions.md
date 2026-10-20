@@ -1,7 +1,8 @@
 # String.LocalizationOptions
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options to apply when initializing a localized string.
 
@@ -22,31 +23,32 @@ struct LocalizationOptions
 
 #### Overview
 
-Use this type to configure how the system localizes strings. You can use the [`replacements`](string/localizationoptions/replacements.md) property to provide replacement values for localizable strings that use the `\(placeholder:)` syntax.
+Use this type to configure how the system localizes strings. You can use the [`replacements`](./localizationoptions/replacements.md) property to provide replacement values for localizable strings that use the `\(placeholder:)` syntax.
 
 ## Topics
 
 ### Specifying localization behavior
-- [var replacements: [any CVarArg]?](string/localizationoptions/replacements.md)
+- [var replacements: [any CVarArg]?](./localizationoptions/replacements.md)
   An array of replacement options.
 ### Initializers
-- [init()](string/localizationoptions/init.md)
+- [init()](./localizationoptions/init%28%29.md)
 
 ## See Also
 
-- [init(localized: String.LocalizationValue, table: String?, bundle: Bundle?, locale: Locale, comment: StaticString?)](string/init(localized:table:bundle:locale:comment:).md)
+### Creating a Localized String
+- [init(localized: String.LocalizationValue, table: String?, bundle: Bundle?, locale: Locale, comment: StaticString?)](./init%28localized,table,bundle,locale,comment%29.md)
   Creates a localized string from an interpolated string.
-- [init(localized: String.LocalizationValue, options: String.LocalizationOptions, table: String?, bundle: Bundle?, locale: Locale, comment: StaticString?)](string/init(localized:options:table:bundle:locale:comment:).md)
+- [init(localized: String.LocalizationValue, options: String.LocalizationOptions, table: String?, bundle: Bundle?, locale: Locale, comment: StaticString?)](./init%28localized,options,table,bundle,locale,comment%29.md)
   Creates a localized string from an interpolated string, applying the specified options.
-- [String.LocalizationValue](string/localizationvalue.md)
+- [String.LocalizationValue](./localizationvalue.md)
   A reference to a localizable string, with optional string interpolation.
-- [init(localized: StaticString, defaultValue: String.LocalizationValue, table: String?, bundle: Bundle?, locale: Locale, comment: StaticString?)](string/init(localized:defaultvalue:table:bundle:locale:comment:).md)
+- [init(localized: StaticString, defaultValue: String.LocalizationValue, table: String?, bundle: Bundle?, locale: Locale, comment: StaticString?)](./init%28localized,defaultvalue,table,bundle,locale,comment%29.md)
   Creates a localized string from an arbitrary static string key.
-- [init(localized: StaticString, defaultValue: String.LocalizationValue, options: String.LocalizationOptions, table: String?, bundle: Bundle?, locale: Locale, comment: StaticString?)](string/init(localized:defaultvalue:options:table:bundle:locale:comment:).md)
+- [init(localized: StaticString, defaultValue: String.LocalizationValue, options: String.LocalizationOptions, table: String?, bundle: Bundle?, locale: Locale, comment: StaticString?)](./init%28localized,defaultvalue,options,table,bundle,locale,comment%29.md)
   Creates a localized string from an arbitrary static string key, applying the specified options.
-- [init(localized: LocalizedStringResource)](string/init(localized:).md)
+- [init(localized: LocalizedStringResource)](./init%28localized%29.md)
   Creates a localized string from a localized string resource.
-- [init(localized: LocalizedStringResource, options: String.LocalizationOptions)](string/init(localized:options:).md)
+- [init(localized: LocalizedStringResource, options: String.LocalizationOptions)](./init%28localized,options%29.md)
   Creates a localized string from a localized string resource, applying the specified options.
 
 

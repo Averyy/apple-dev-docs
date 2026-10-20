@@ -1,7 +1,8 @@
 # ColorSyncTransform
 
 **Framework**: ColorSync  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A reference to a color transform that converts color data between profiles.
 
@@ -20,11 +21,15 @@ A reference to a color transform that converts color data between profiles.
 class ColorSyncTransform
 ```
 
+```c
+typedef struct ColorSyncTransform * ColorSyncTransformRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a value-type attributed string from a reference type.
 
@@ -22,17 +23,18 @@ init(_ nsStr: NSAttributedString)
 
 #### Discussion
 
-This initializer includes all attribute scopes defined by the SDK, such as [`AttributeScopes.FoundationAttributes`](attributescopes/foundationattributes.md), [`AttributeScopes.SwiftUIAttributes`](attributescopes/swiftuiattributes.md), and [`AttributeScopes.AccessibilityAttributes`](attributescopes/accessibilityattributes.md). To use third-party attribute scopes, use the initializers [`init(_:including:)`](attributedstring/init(_:including:)-9no47.md) or [`init(_:including:)`](attributedstring/init(_:including:)-puv0.md).
+This initializer includes all attribute scopes defined by the SDK, such as [`AttributeScopes.FoundationAttributes`](../attributescopes/foundationattributes.md), [`AttributeScopes.SwiftUIAttributes`](../attributescopes/swiftuiattributes.md), and [`AttributeScopes.AccessibilityAttributes`](../attributescopes/accessibilityattributes.md). To use third-party attribute scopes, use the initializers [`init(_:including:)`](./init%28_,including%29-9no47.md) or [`init(_:including:)`](./init%28_,including%29-puv0.md).
 
 ## Parameters
 
-- `nsStr`: The [`NSAttributedString`](nsattributedstring.md) to convert.
+- `nsStr`: The [`NSAttributedString`](../nsattributedstring.md) to convert.
 
 ## See Also
 
-- [init<S>(NSAttributedString, including: S.Type) throws](attributedstring/init(_:including:)-9no47.md)
+### Creating an Attributed String from a Reference Type
+- [init<S>(NSAttributedString, including: S.Type) throws](./init%28_,including%29-9no47.md)
   Creates a value-type attributed string from a reference type, including an attribute scope.
-- [init<S>(NSAttributedString, including: KeyPath<AttributeScopes, S.Type>) throws](attributedstring/init(_:including:)-puv0.md)
+- [init<S>(NSAttributedString, including: KeyPath<AttributeScopes, S.Type>) throws](./init%28_,including%29-puv0.md)
   Creates a value-type attributed string from a reference type, including an attribute scope that a key path identifies.
 
 

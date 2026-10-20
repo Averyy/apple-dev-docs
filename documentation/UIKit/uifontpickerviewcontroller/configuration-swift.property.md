@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Settings for fonts the font picker should offer to the user and how to display those fonts.
 
@@ -18,11 +19,16 @@ Settings for fonts the font picker should offer to the user and how to display t
 var configuration: UIFontPickerViewController.Configuration { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) UIFontPickerViewControllerConfiguration * configuration;
+```
+
 ## See Also
 
-- [init(configuration: UIFontPickerViewController.Configuration)](uifontpickerviewcontroller/init(configuration:).md)
+### Configuring a font picker to display in iOS
+- [init(configuration: UIFontPickerViewController.Configuration)](./init%28configuration%29.md)
   Creates a controller for a font picker view.
-- [UIFontPickerViewController.Configuration](uifontpickerviewcontroller/configuration-swift.class.md)
+- [UIFontPickerViewController.Configuration](./configuration-swift.class.md)
   The filters and display settings a font picker view controller uses to set up a font picker.
 
 

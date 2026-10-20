@@ -1,7 +1,8 @@
 # TextureResource.Semantic.scalar
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Use the texture to store a single value in each pixel.
 
@@ -11,7 +12,7 @@ Use the texture to store a single value in each pixel.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,13 +26,14 @@ Properties that specify a semantic of `scalar` use the texture to store a single
 
 ## See Also
 
-- [TextureResource.Semantic.raw](textureresource/semantic-swift.enum/raw.md)
+### Specifying intended use
+- [TextureResource.Semantic.raw](./raw.md)
   Use the texture unmodified.
-- [TextureResource.Semantic.color](textureresource/semantic-swift.enum/color.md)
+- [TextureResource.Semantic.color](./color.md)
   Use the texture to store colors data.
-- [TextureResource.Semantic.hdrColor](textureresource/semantic-swift.enum/hdrcolor.md)
+- [TextureResource.Semantic.hdrColor](./hdrcolor.md)
   Use the texture to store a high-dynamic range image.
-- [TextureResource.Semantic.normal](textureresource/semantic-swift.enum/normal.md)
+- [TextureResource.Semantic.normal](./normal.md)
   Use the texture to store surface normals.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: TabletopKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:

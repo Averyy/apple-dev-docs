@@ -1,7 +1,8 @@
 # device
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Metal device object to use to back the virtual graphics device.
 
@@ -13,6 +14,10 @@ The Metal device object to use to back the virtual graphics device.
 
 ```swift
 var device: (any MTLDevice)? { get set }
+```
+
+```objc
+@property (nonatomic, retain, readwrite, nullable) id<MTLDevice> device;
 ```
 
 

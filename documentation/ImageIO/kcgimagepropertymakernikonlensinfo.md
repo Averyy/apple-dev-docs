@@ -1,7 +1,8 @@
 # kCGImagePropertyMakerNikonLensInfo
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Lens information.
 
@@ -20,13 +21,18 @@ Lens information.
 let kCGImagePropertyMakerNikonLensInfo: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyMakerNikonLensInfo;
+```
+
 ## See Also
 
-- [let kCGImagePropertyMakerNikonLensAdapter: CFString](kcgimagepropertymakernikonlensadapter.md)
+### Camera Details
+- [let kCGImagePropertyMakerNikonLensAdapter: CFString](./kcgimagepropertymakernikonlensadapter.md)
   The lens adapter.
-- [let kCGImagePropertyMakerNikonLensType: CFString](kcgimagepropertymakernikonlenstype.md)
+- [let kCGImagePropertyMakerNikonLensType: CFString](./kcgimagepropertymakernikonlenstype.md)
   The lens type.
-- [let kCGImagePropertyMakerNikonCameraSerialNumber: CFString](kcgimagepropertymakernikoncameraserialnumber.md)
+- [let kCGImagePropertyMakerNikonCameraSerialNumber: CFString](./kcgimagepropertymakernikoncameraserialnumber.md)
   The camera serial number.
 
 

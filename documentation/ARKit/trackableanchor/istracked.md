@@ -2,6 +2,7 @@
 
 **Framework**: ARKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether ARKit is tracking an anchor.

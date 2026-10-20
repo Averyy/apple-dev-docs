@@ -1,7 +1,8 @@
 # init(from:forSourceModel:destinationModel:)
 
 **Framework**: Core Data  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns the mapping model that will translate data from the source to the destination model.
 
@@ -10,7 +11,7 @@ Returns the mapping model that will translate data from the source to the destin
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,17 @@ Returns the mapping model that will translate data from the source to the destin
 init?(from bundles: [Bundle]?, forSourceModel sourceModel: NSManagedObjectModel?, destinationModel: NSManagedObjectModel?)
 ```
 
+```objc
++ (NSMappingModel *) mappingModelFromBundles:(NSArray<NSBundle *> *) bundles forSourceModel:(NSManagedObjectModel *) sourceModel destinationModel:(NSManagedObjectModel *) destinationModel;
+```
+
 #### Return Value
 
 Returns the mapping model to translate data from `sourceModel` to `destinationModel`. If a suitable mapping model cannot be found, returns `nil`.
 
 #### Discussion
 
-This method is a companion to the [`mergedModel(from:)`](nsmanagedobjectmodel/mergedmodel(from:).md) and [`mergedModel(from:forStoreMetadata:)`](nsmanagedobjectmodel/mergedmodel(from:forstoremetadata:).md) methods. In this case, the framework uses the version information from the models to locate the appropriate mapping model in the available bundles.
+This method is a companion to the [`mergedModel(from:)`](../nsmanagedobjectmodel/mergedmodel%28from%29.md) and [`mergedModel(from:forStoreMetadata:)`](../nsmanagedobjectmodel/mergedmodel%28from,forstoremetadata%29.md) methods. In this case, the framework uses the version information from the models to locate the appropriate mapping model in the available bundles.
 
 ## Parameters
 
@@ -36,10 +41,12 @@ This method is a companion to the [`mergedModel(from:)`](nsmanagedobjectmodel/me
 
 ## See Also
 
-- [Core Data Model Versioning and Data Migration Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreDataVersioning/Articles/Introduction.html#//apple_ref/doc/uid/TP40004399)
-- [class func inferredMappingModel(forSourceModel: NSManagedObjectModel, destinationModel: NSManagedObjectModel) throws -> NSMappingModel](nsmappingmodel/inferredmappingmodel(forsourcemodel:destinationmodel:).md)
+### Related Documentation
+- [Core Data Model Versioning and Data Migration Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreDataVersioning/Articles/Introduction.html#//apple_ref/doc/uid/TP40004399)
+### Creating a Mapping
+- [class func inferredMappingModel(forSourceModel: NSManagedObjectModel, destinationModel: NSManagedObjectModel) throws -> NSMappingModel](./inferredmappingmodel%28forsourcemodel,destinationmodel%29.md)
   Returns a newly created mapping model that will migrate data from the source to the destination model.
-- [init?(contentsOf: URL?)](nsmappingmodel/init(contentsof:).md)
+- [init?(contentsOf: URL?)](./init%28contentsof%29.md)
   Returns a mapping model initialized from a given URL.
 
 

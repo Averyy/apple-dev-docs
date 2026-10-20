@@ -1,18 +1,19 @@
 # centerOfMassOffset
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the body’s center of mass relative to its local coordinate origin.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,11 +21,15 @@ The position of the body’s center of mass relative to its local coordinate ori
 var centerOfMassOffset: SCNVector3 { get set }
 ```
 
+```objc
+@property (nonatomic) SCNVector3 centerOfMassOffset;
+```
+
 #### Discussion
 
 The results of physics interactions with a body depend on its center of mass. For example, a collision close to or in line with the center of mass tends to move the whole body (that is, it adds linear velocity), but a collision not aligned with the center of mass tends to cause the body to rotate or topple (that is, it adds angular velocity).
 
-When this property’s value is the vector `(0, 0, 0)` (the default), SceneKit simulates interactions with the assumption that the body’s center of mass is at the origin of its local coordinate space (the [`simdPosition`](scnnode/simdposition.md) of the node owning the physics body).
+When this property’s value is the vector `(0, 0, 0)` (the default), SceneKit simulates interactions with the assumption that the body’s center of mass is at the origin of its local coordinate space (the [`simdPosition`](../scnnode/simdposition.md) of the node owning the physics body).
 
 Change this value when you want to introduce a difference between the object’s geometric center and its center of mass. For example:
 
@@ -33,23 +38,24 @@ Change this value when you want to introduce a difference between the object’s
 
 ## See Also
 
-- [var mass: CGFloat](scnphysicsbody/mass.md)
+### Defining a Body’s Physical Properties
+- [var mass: CGFloat](./mass.md)
   The mass of the body, in kilograms.
-- [var charge: CGFloat](scnphysicsbody/charge.md)
+- [var charge: CGFloat](./charge.md)
   The electric charge of the body, in coulombs.
-- [var friction: CGFloat](scnphysicsbody/friction.md)
+- [var friction: CGFloat](./friction.md)
   The body’s resistance to sliding motion.
-- [var rollingFriction: CGFloat](scnphysicsbody/rollingfriction.md)
+- [var rollingFriction: CGFloat](./rollingfriction.md)
   The body’s resistance to rolling motion.
-- [var restitution: CGFloat](scnphysicsbody/restitution.md)
+- [var restitution: CGFloat](./restitution.md)
   A factor that determines how much kinetic energy the body loses or gains in collisions.
-- [var damping: CGFloat](scnphysicsbody/damping.md)
+- [var damping: CGFloat](./damping.md)
   A factor that reduces the body’s linear velocity.
-- [var angularDamping: CGFloat](scnphysicsbody/angulardamping.md)
+- [var angularDamping: CGFloat](./angulardamping.md)
   A factor that reduces the body’s angular velocity.
-- [var momentOfInertia: SCNVector3](scnphysicsbody/momentofinertia.md)
+- [var momentOfInertia: SCNVector3](./momentofinertia.md)
   The body’s moment of inertia, expressed in the local coordinate system of the node that contains the body.
-- [var usesDefaultMomentOfInertia: Bool](scnphysicsbody/usesdefaultmomentofinertia.md)
+- [var usesDefaultMomentOfInertia: Bool](./usesdefaultmomentofinertia.md)
   A Boolean value that determines whether SceneKit automatically calculates the body’s moment of inertia or allows setting a custom value.
 
 

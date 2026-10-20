@@ -1,14 +1,15 @@
 # SFLT_EXTENDED_REGISTRY
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 SFLT_EXTENDED_REGISTRY = 0x08
 ```
 

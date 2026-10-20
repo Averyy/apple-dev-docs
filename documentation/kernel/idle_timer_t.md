@@ -1,14 +1,15 @@
 # idle_timer_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef void (*idle_timer_t)(void *refcon, uint64_t *new_timeout_ticks);
 ```
 

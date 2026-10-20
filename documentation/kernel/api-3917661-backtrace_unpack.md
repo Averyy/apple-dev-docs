@@ -1,14 +1,15 @@
 # backtrace_unpack
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.3+
 
 ## Declaration
 
-```swift
+```c
 unsigned int backtrace_unpack(backtrace_pack_t packing, uintptr_t *dst, unsigned int dst_len, const uint8_t *src, size_t src_size);
 ```
 

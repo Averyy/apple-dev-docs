@@ -1,7 +1,8 @@
 # NWProtocolWebSocket.Opcode
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Types of messages that you send and receive on a WebSocket connection.
 
@@ -23,40 +24,41 @@ enum Opcode
 ## Topics
 
 ### Data Types
-- [NWProtocolWebSocket.Opcode.binary](nwprotocolwebsocket/opcode/binary.md)
+- [NWProtocolWebSocket.Opcode.binary](./opcode/binary.md)
   A binary data message.
-- [NWProtocolWebSocket.Opcode.text](nwprotocolwebsocket/opcode/text.md)
+- [NWProtocolWebSocket.Opcode.text](./opcode/text.md)
   A text data message.
-- [NWProtocolWebSocket.Opcode.cont](nwprotocolwebsocket/opcode/cont.md)
+- [NWProtocolWebSocket.Opcode.cont](./opcode/cont.md)
   A continuation message.
 ### Control Types
-- [NWProtocolWebSocket.Opcode.ping](nwprotocolwebsocket/opcode/ping.md)
+- [NWProtocolWebSocket.Opcode.ping](./opcode/ping.md)
   A Ping message, which requests a Pong from the peer.
-- [NWProtocolWebSocket.Opcode.pong](nwprotocolwebsocket/opcode/pong.md)
+- [NWProtocolWebSocket.Opcode.pong](./opcode/pong.md)
   A Pong message in response to a Ping from the peer.
-- [NWProtocolWebSocket.Opcode.close](nwprotocolwebsocket/opcode/close.md)
+- [NWProtocolWebSocket.Opcode.close](./opcode/close.md)
   A message indicating a close of the connection.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(opcode: NWProtocolWebSocket.Opcode)](nwprotocolwebsocket/metadata/init(opcode:).md)
+### Sending Messages
+- [init(opcode: NWProtocolWebSocket.Opcode)](./metadata/init%28opcode%29.md)
   Initializes a WebSocket message with a specific type code.
-- [func setPongHandler(DispatchQueue, handler: (NWError?) -> Void)](nwprotocolwebsocket/metadata/setponghandler(_:handler:).md)
+- [func setPongHandler(DispatchQueue, handler: (NWError?) -> Void)](./metadata/setponghandler%28_,handler%29.md)
   Sets a handler on a Ping message to be invoked when the corresponding Pong message is received.
-- [var closeCode: NWProtocolWebSocket.CloseCode](nwprotocolwebsocket/metadata/closecode.md)
+- [var closeCode: NWProtocolWebSocket.CloseCode](./metadata/closecode.md)
   The close code on a WebSocket message.
-- [NWProtocolWebSocket.CloseCode](nwprotocolwebsocket/closecode.md)
+- [NWProtocolWebSocket.CloseCode](./closecode.md)
   Types of codes used upon closing a WebSocket connection.
 
 

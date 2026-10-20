@@ -1,7 +1,8 @@
 # renderTargets
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The barrier affects any render targets.
 
@@ -13,6 +14,10 @@ The barrier affects any render targets.
 
 ```swift
 static var renderTargets: MTLBarrierScope { get }
+```
+
+```c
+MTLBarrierScopeRenderTargets
 ```
 
 

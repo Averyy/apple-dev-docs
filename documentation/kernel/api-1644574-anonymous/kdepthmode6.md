@@ -1,14 +1,15 @@
 # kDepthMode6
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kDepthMode6 = 133
 ```
 

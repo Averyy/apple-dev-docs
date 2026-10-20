@@ -1,7 +1,8 @@
 # CKSyncEngine.Event.SentRecordZoneChanges.FailedRecordSave
 
 **Framework**: CloudKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that describes an unsuccessful attempt to modify a single record.
 
@@ -11,7 +12,7 @@ A type that describes an unsuccessful attempt to modify a single record.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,31 +24,32 @@ struct FailedRecordSave
 ## Topics
 
 ### Accessing the record
-- [let record: CKRecord](cksyncengine-5sie5/event/sentrecordzonechanges/failedrecordsave/record.md)
+- [let record: CKRecord](./failedrecordsave/record.md)
   The record that CloudKit is unable to modify.
 ### Accessing the error
-- [let error: CKError](cksyncengine-5sie5/event/sentrecordzonechanges/failedrecordsave/error.md)
+- [let error: CKError](./failedrecordsave/error.md)
   An error that describes the reason for the unsuccessful attempt to modify the associated record.
 ### Debugging the type
-- [var description: String](cksyncengine-5sie5/event/sentrecordzonechanges/failedrecordsave/description.md)
+- [var description: String](./failedrecordsave/description.md)
   A textual description of the type that’s suitable for logging.
 ### Default Implementations
-- [CustomStringConvertible Implementations](cksyncengine-5sie5/event/sentrecordzonechanges/failedrecordsave/customstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./failedrecordsave/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../../Swift/copyable.md)
+- [CustomStringConvertible](../../../../Swift/customstringconvertible.md)
+- [Escapable](../../../../Swift/escapable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let failedRecordDeletes: [CKRecord.ID : CKError]](cksyncengine-5sie5/event/sentrecordzonechanges/failedrecorddeletes.md)
+### Accessing failed changes
+- [let failedRecordDeletes: [CKRecord.ID : CKError]](./failedrecorddeletes.md)
   The unique identifiers of the records CloudKit is unable to delete, and the reasons why.
-- [let failedRecordSaves: [CKSyncEngine.Event.SentRecordZoneChanges.FailedRecordSave]](cksyncengine-5sie5/event/sentrecordzonechanges/failedrecordsaves.md)
+- [let failedRecordSaves: [CKSyncEngine.Event.SentRecordZoneChanges.FailedRecordSave]](./failedrecordsaves.md)
   The records that CloudKit is unable to modify.
 
 

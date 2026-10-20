@@ -1,14 +1,15 @@
 # PE_get_kc_base_pointers
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 const void *const * PE_get_kc_base_pointers(void);
 ```
 

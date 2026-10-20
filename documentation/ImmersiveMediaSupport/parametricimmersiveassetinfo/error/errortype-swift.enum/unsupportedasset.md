@@ -1,7 +1,8 @@
 # ParametricImmersiveAssetInfo.Error.ErrorType.unsupportedAsset
 
 **Framework**: Immersive Media Support  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the asset can’t be converted due to a currently unsupported camera model or capture mode.
 

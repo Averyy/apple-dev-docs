@@ -1,7 +1,8 @@
 # kIOUSBDeviceRequestTypeValueClass
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A class-specific device request.
 
@@ -10,15 +11,16 @@ A class-specific device request.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBDeviceRequestTypeValueClass
 ```
 
 ## See Also
 
-- [kIOUSBDeviceRequestTypeValueStandard](tiousbdevicerequesttypevalue/kiousbdevicerequesttypevaluestandard.md)
+### Getting the Request Type
+- [kIOUSBDeviceRequestTypeValueStandard](./kiousbdevicerequesttypevaluestandard.md)
   A standard device request.
-- [kIOUSBDeviceRequestTypeValueVendor](tiousbdevicerequesttypevalue/kiousbdevicerequesttypevaluevendor.md)
+- [kIOUSBDeviceRequestTypeValueVendor](./kiousbdevicerequesttypevaluevendor.md)
   A vendor-specific device request.
 
 

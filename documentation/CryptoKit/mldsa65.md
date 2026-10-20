@@ -1,7 +1,8 @@
 # MLDSA65
 
 **Framework**: Apple CryptoKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The MLDSA65 Digital Signature Algorithm
 
@@ -23,16 +24,16 @@ enum MLDSA65
 ## Topics
 
 ### Keys
-- [MLDSA65.PrivateKey](mldsa65/privatekey.md)
+- [MLDSA65.PrivateKey](./mldsa65/privatekey.md)
   The private key for MLDSA65.
-- [MLDSA65.PublicKey](mldsa65/publickey.md)
+- [MLDSA65.PublicKey](./mldsa65/publickey.md)
   The public key for MLDSA65.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

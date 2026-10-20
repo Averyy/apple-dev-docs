@@ -1,7 +1,8 @@
 # UnownedTaskExecutor
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -22,45 +23,46 @@ struct UnownedTaskExecutor
 ## Topics
 
 ### Initializers
-- [init(Builtin.Executor)](unownedtaskexecutor/init(_:)-55b8h.md)
-- [init<E>(E)](unownedtaskexecutor/init(_:)-5pjm5.md)
-- [init<E>(ordinary: E)](unownedtaskexecutor/init(ordinary:).md)
+- [init(Builtin.Executor)](./unownedtaskexecutor/init%28_%29-55b8h.md)
+- [init<E>(E)](./unownedtaskexecutor/init%28_%29-5pjm5.md)
+- [init<E>(ordinary: E)](./unownedtaskexecutor/init%28ordinary%29.md)
 ### Instance Methods
-- [func asTaskExecutor() -> (any TaskExecutor)?](unownedtaskexecutor/astaskexecutor.md)
+- [func asTaskExecutor() -> (any TaskExecutor)?](./unownedtaskexecutor/astaskexecutor%28%29.md)
 ### Default Implementations
-- [Equatable Implementations](unownedtaskexecutor/equatable-implementations.md)
-- [Hashable Implementations](unownedtaskexecutor/hashable-implementations.md)
+- [Equatable Implementations](./unownedtaskexecutor/equatable-implementations.md)
+- [Hashable Implementations](./unownedtaskexecutor/hashable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Copyable](copyable.md)
-- [Equatable](equatable.md)
-- [Hashable](hashable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [BitwiseCopyable](./bitwisecopyable.md)
+- [Copyable](./copyable.md)
+- [Equatable](./equatable.md)
+- [Hashable](./hashable.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [protocol Executor](executor.md)
+### Executors
+- [protocol Executor](./executor.md)
   A service that can execute jobs.
-- [struct ExecutorJob](executorjob.md)
+- [struct ExecutorJob](./executorjob.md)
   A unit of schedulable work.
-- [protocol SerialExecutor](serialexecutor.md)
+- [protocol SerialExecutor](./serialexecutor.md)
   A service that executes jobs.
-- [protocol TaskExecutor](taskexecutor.md)
+- [protocol TaskExecutor](./taskexecutor.md)
   An executor that may be used as preferred executor by a task.
-- [struct UnownedJob](unownedjob.md)
+- [struct UnownedJob](./unownedjob.md)
   A unit of schedulable work.
-- [struct JobPriority](jobpriority.md)
+- [struct JobPriority](./jobpriority.md)
   The priority of this job.
-- [struct UnownedSerialExecutor](unownedserialexecutor.md)
+- [struct UnownedSerialExecutor](./unownedserialexecutor.md)
   An unowned reference to a serial executor (a `SerialExecutor` value).
-- [var globalConcurrentExecutor: any TaskExecutor](globalconcurrentexecutor.md)
+- [var globalConcurrentExecutor: any TaskExecutor](./globalconcurrentexecutor.md)
   The global concurrent executor that is used by default for Swift Concurrency tasks.
-- [func withTaskExecutorPreference<T, Failure>((any TaskExecutor)?, isolation: isolated (any Actor)?, operation: () async throws(Failure) -> T) async throws(Failure) -> T](withtaskexecutorpreference(_:isolation:operation:).md)
-  Configure the current task hierarchy’s task executor preference to the passed [`TaskExecutor`](taskexecutor.md), and execute the passed in closure by immediately hopping to that executor.
+- [func withTaskExecutorPreference<T, Failure>((any TaskExecutor)?, isolation: isolated (any Actor)?, operation: () async throws(Failure) -> T) async throws(Failure) -> T](./withtaskexecutorpreference%28_,isolation,operation%29.md)
+  Configure the current task hierarchy’s task executor preference to the passed [`TaskExecutor`](./taskexecutor.md), and execute the passed in closure by immediately hopping to that executor.
 
 
 ---

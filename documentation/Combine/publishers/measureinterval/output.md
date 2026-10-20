@@ -1,7 +1,8 @@
 # Publishers.MeasureInterval.Output
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of values published by this publisher.
 
@@ -26,7 +27,8 @@ This publisher produces elements of the provided scheduler’s time type’s str
 
 ## See Also
 
-- [Publishers.MeasureInterval.Failure](publishers/measureinterval/failure.md)
+### Declaring supporting types
+- [Publishers.MeasureInterval.Failure](./failure.md)
   The kind of errors this publisher might publish.
 
 

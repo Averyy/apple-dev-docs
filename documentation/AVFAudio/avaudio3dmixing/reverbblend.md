@@ -2,17 +2,18 @@
 
 **Framework**: AVFAudio  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A value that controls the blend of dry and reverb processed audio.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,29 +21,34 @@ A value that controls the blend of dry and reverb processed audio.
 var reverbBlend: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float reverbBlend;
+```
+
 #### Discussion
 
-This property controls the amount of the source’s audio that the [`AVAudioEnvironmentNode`](avaudioenvironmentnode.md) instance processes. A value of `0.5` results in an equal blend of dry and processed (wet) audio.
+This property controls the amount of the source’s audio that the [`AVAudioEnvironmentNode`](../avaudioenvironmentnode.md) instance processes. A value of `0.5` results in an equal blend of dry and processed (wet) audio.
 
-The default is `0.0`, and the range of valid values is `0.0` (completely dry) to `1.0` (completely wet). Only the [`AVAudioEnvironmentNode`](avaudioenvironmentnode.md) class implements this property.
+The default is `0.0`, and the range of valid values is `0.0` (completely dry) to `1.0` (completely wet). Only the [`AVAudioEnvironmentNode`](../avaudioenvironmentnode.md) class implements this property.
 
 ## See Also
 
-- [var obstruction: Float](avaudio3dmixing/obstruction.md)
+### Getting the 3D mixing parameters
+- [var obstruction: Float](./obstruction.md)
   A value that simulates filtering of the direct path of sound due to an obstacle.
-- [var occlusion: Float](avaudio3dmixing/occlusion.md)
+- [var occlusion: Float](./occlusion.md)
   A value that simulates filtering of the direct and reverb paths of sound due to an obstacle.
-- [var position: AVAudio3DPoint](avaudio3dmixing/position.md)
+- [var position: AVAudio3DPoint](./position.md)
   The location of the source in the 3D environment.
-- [var rate: Float](avaudio3dmixing/rate.md)
+- [var rate: Float](./rate.md)
   A value that changes the playback rate of the input signal.
-- [var pointSourceInHeadMode: AVAudio3DMixingPointSourceInHeadMode](avaudio3dmixing/pointsourceinheadmode.md)
+- [var pointSourceInHeadMode: AVAudio3DMixingPointSourceInHeadMode](./pointsourceinheadmode.md)
   The in-head mode for a point source.
-- [enum AVAudio3DMixingPointSourceInHeadMode](avaudio3dmixingpointsourceinheadmode.md)
+- [enum AVAudio3DMixingPointSourceInHeadMode](../avaudio3dmixingpointsourceinheadmode.md)
   The in-head modes for a point source.
-- [var sourceMode: AVAudio3DMixingSourceMode](avaudio3dmixing/sourcemode.md)
+- [var sourceMode: AVAudio3DMixingSourceMode](./sourcemode.md)
   The source mode for the input bus of the audio environment node.
-- [enum AVAudio3DMixingSourceMode](avaudio3dmixingsourcemode.md)
+- [enum AVAudio3DMixingSourceMode](../avaudio3dmixingsourcemode.md)
   The source modes for the input bus of the audio environment node.
 
 

@@ -1,7 +1,8 @@
 # PKPaymentMethodType.debit
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A debit card.
 
@@ -19,17 +20,22 @@ A debit card.
 case debit
 ```
 
+```c
+PKPaymentMethodTypeDebit
+```
+
 ## See Also
 
-- [PKPaymentMethodType.unknown](pkpaymentmethodtype/unknown.md)
+### Payment Method Type Constants
+- [PKPaymentMethodType.unknown](./unknown.md)
   The card’s type is unknown.
-- [PKPaymentMethodType.eMoney](pkpaymentmethodtype/emoney.md)
+- [PKPaymentMethodType.eMoney](./emoney.md)
   An electronic money card.
-- [PKPaymentMethodType.credit](pkpaymentmethodtype/credit.md)
+- [PKPaymentMethodType.credit](./credit.md)
   A credit card.
-- [PKPaymentMethodType.prepaid](pkpaymentmethodtype/prepaid.md)
+- [PKPaymentMethodType.prepaid](./prepaid.md)
   A prepaid card.
-- [PKPaymentMethodType.store](pkpaymentmethodtype/store.md)
+- [PKPaymentMethodType.store](./store.md)
   A store card.
 
 

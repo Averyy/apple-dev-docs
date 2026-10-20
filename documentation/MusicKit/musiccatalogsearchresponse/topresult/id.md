@@ -1,7 +1,8 @@
 # id
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of this top result for catalog search.
 

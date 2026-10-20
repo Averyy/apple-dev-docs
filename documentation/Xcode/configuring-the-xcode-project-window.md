@@ -1,6 +1,7 @@
 # Configuring the Xcode project window
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Customize the Xcode project window and editor area to view and edit project files in a configuration you prefer.
 
@@ -10,7 +11,7 @@ The Xcode *project window* is your primary interface for viewing, editing, and m
 
 The main window opens when you create or open a project. To open additional main windows, choose File > New > Window.
 
-![An Xcode screenshot of the project editor showing the location of the main window areas: the toolbar at the top, navigator area on the far left, editor area in the middle, and inspector area on the far right. In the editor area, the source editor is on the left, the canvas is on the right, and the debugger is below.](/images/com.apple.Xcode/xcode-window-areas@2x.png)
+![An Xcode screenshot of the project editor showing the location of the main window areas: the toolbar at the top, navigator area on the far left, editor area in the middle, and inspector area on the far right. In the editor area, the source editor is on the left, the canvas is on the right, and the debugger is below.](https://developer.apple.com/tutorials/images/com.apple.Xcode/xcode-window-areas@2x.png)
 
 The areas of the main window:
 
@@ -20,11 +21,11 @@ The areas of the main window:
 - The *debug area* — for controlling the app runtime during debugging, and for displaying variables, register, and status information — appears below an editor pane.
 - The *inspector area* — for viewing and editing information about the project, or about the selected object in the navigator or editor area — appears on the right of the editor area.
 
-To create an Xcode project, see [`Creating an Xcode project for an app`](creating-an-xcode-project-for-an-app.md).
+To create an Xcode project, see [Creating an Xcode project for an app](./creating-an-xcode-project-for-an-app.md).
 
 > **Note**: You can perform most commands described in this document using corresponding menus in the Xcode menu bar. Refer to the menu items for keyboard shortcuts.
 
-##### Show and Hide Areas of the Main Window
+##### Show and hide areas of the main window
 
 Configure the areas of the main window to focus on your specific task. To show or hide the navigator, inspector, and debug areas:
 
@@ -34,15 +35,15 @@ Configure the areas of the main window to focus on your specific task. To show o
 
 To switch the navigator, click a navigator in the control above the navigator area.
 
-For information about the coding assistant, which appears in the navigator area when you click the coding assistant button, see [`Writing code with intelligence in Xcode`](writing-code-with-intelligence-in-xcode.md).
+For information about the coding assistant, which appears in the navigator area when you click the coding assistant button, see [Writing code with intelligence in Xcode](./writing-code-with-intelligence-in-xcode.md).
 
-##### Navigate the Project Files
+##### Navigate the project files
 
 You browse the hierarchy of your project files using the Project navigator. Files that you select in the Project navigator open in the editor area. The editor that appears depends on the type of file that you select. For example, if you select a source file, Xcode opens it in the source editor.
 
 Then you can use the related menu, arrows, and jump bar that appear in the toolbar above the editor to view or open other files in the editor area.
 
-##### Add Multiple Editor Panes to the Editor Area
+##### Add multiple editor panes to the editor area
 
 Use the controls on the editor toolbar to open multiple files in separate editor panes.
 
@@ -51,9 +52,9 @@ Use the controls on the editor toolbar to open multiple files in separate editor
 - To change the focus of the Project navigator and inspector to an editor pane, click it.
 - To temporarily expand or collapse an editor pane, click the Focus/Unfocus this Editor Pane button on the left of the editor toolbar.
 
-![An Xcode screenshot of the project editor with the Project navigator on the left and a source file selected. The editor area on the right shows the comparison view above and two source editor panes side-by-side below with the Canvas menu item selected from the Adjust Editor Options pop-up menu.](/images/com.apple.Xcode/configuring-editor-area@2x.png)
+![An Xcode screenshot of the project editor with the Project navigator on the left and a source file selected. The editor area on the right shows the comparison view above and two source editor panes side-by-side below with the Canvas menu item selected from the Adjust Editor Options pop-up menu.](https://developer.apple.com/tutorials/images/com.apple.Xcode/configuring-editor-area@2x.png)
 
-##### Choose Editor Options and Companion Views
+##### Choose editor options and companion views
 
 You configure editor panes using controls on the editor toolbar. Use the Adjust Editor Options pop-up menu on the right of the editor toolbar to add options to an editor pane and change the layout of it. You can choose from the following editor options:
 
@@ -69,7 +70,7 @@ You configure editor panes using controls on the editor toolbar. Use the Adjust 
 - **Invisibles**: Shows invisible characters in a file.
 - **Wrap Line**: Wraps lines that exceed the width of the editor.
 
-##### Compare File Changes with Previous Versions
+##### Compare file changes with previous versions
 
 For files under source control, you can compare your changes with a previous commit. To toggle the comparsion view, click the Enable/Disable Code Review button on the left of the editor toolbar.
 
@@ -77,7 +78,7 @@ To show the previous commit on the right of an editor, choose Side By Side Compa
 
 Then use the controls on the bottom of the comparison view to select versions of the file to compare.
 
-##### Switch Quickly Between Files Using the Tab Bar
+##### Switch quickly between files using the tab bar
 
 Use the *tab bar* that appears above an editor pane to open and pin files that you access frequently. To show the tab bar, choose View > Show Editor Tab Bar. Then add, remove, and pin files:
 
@@ -88,11 +89,12 @@ Use the *tab bar* that appears above an editor pane to open and pin files that y
 
 For other actions, Control-click the tab and choose an item from the pop-up menu, such as Close Other Tabs.
 
-![An Xcode screenshot of the project editor with the Project navigator on the left and a source file selected. The editor area is on the right with the source editor on its right and the canvas on its left. The tab bar appears above the editor toolbar with a tab contextual pop-up menu showing the Close Other Tabs menu item selected.](/images/com.apple.Xcode/using-editor-tabs@2x.png)
+![An Xcode screenshot of the project editor with the Project navigator on the left and a source file selected. The editor area is on the right with the source editor on its right and the canvas on its left. The tab bar appears above the editor toolbar with a tab contextual pop-up menu showing the Close Other Tabs menu item selected.](https://developer.apple.com/tutorials/images/com.apple.Xcode/using-editor-tabs@2x.png)
 
 ## See Also
 
-- [Finding and replacing content in a project](finding-and-replacing-content-in-a-project.md)
+### Navigation
+- [Finding and replacing content in a project](./finding-and-replacing-content-in-a-project.md)
   Search some or all of your project for text strings or symbol names, and perform advanced searches using regular expressions.
 
 

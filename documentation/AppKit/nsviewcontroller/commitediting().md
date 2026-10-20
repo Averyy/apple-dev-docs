@@ -1,7 +1,8 @@
 # commitEditing()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the receiver was able to commit any pending edits.
 
@@ -15,9 +16,13 @@ Returns whether the receiver was able to commit any pending edits.
 func commitEditing() -> Bool
 ```
 
+```objc
+- (BOOL) commitEditing;
+```
+
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the changes were successfully applied to the model, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+Returns [`true`](../../Swift/true.md) if the changes were successfully applied to the model, [`false`](../../Swift/false.md) otherwise.
 
 #### Discussion
 
@@ -25,9 +30,10 @@ A commit is denied if the receiver fails to apply the changes to the model objec
 
 ## See Also
 
-- [func commitEditing(withDelegate: Any?, didCommit: Selector?, contextInfo: UnsafeMutableRawPointer?)](nsviewcontroller/commitediting(withdelegate:didcommit:contextinfo:).md)
+### NSEditor Conformance
+- [func commitEditing(withDelegate: Any?, didCommit: Selector?, contextInfo: UnsafeMutableRawPointer?)](./commitediting%28withdelegate,didcommit,contextinfo%29.md)
   Attempt to commit any currently edited results of the receiver.
-- [func discardEditing()](nsviewcontroller/discardediting.md)
+- [func discardEditing()](./discardediting%28%29.md)
   Causes the receiver to discard any changes, restoring the previous values.
 
 

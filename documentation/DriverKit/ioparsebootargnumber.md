@@ -1,19 +1,20 @@
 # IOParseBootArgNumber
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Parses any boot arguments in the macOS kernel boot-args.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 bool IOParseBootArgNumber(const char *arg_string, void *arg_ptr, int max_len);
 ```
 
@@ -33,7 +34,8 @@ If the named argument is present in the kernel boot-args, return its value as an
 
 ## See Also
 
-- [IOParseBootArgString](ioparsebootargstring.md)
+### Boot Support
+- [IOParseBootArgString](./ioparsebootargstring.md)
   Parses any boot arguments in the macOS kernel boot-args.
 
 

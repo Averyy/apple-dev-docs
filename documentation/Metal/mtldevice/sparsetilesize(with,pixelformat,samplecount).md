@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the dimensions of a sparse tile for a texture.
@@ -20,13 +21,17 @@ Returns the dimensions of a sparse tile for a texture.
 func sparseTileSize(with textureType: MTLTextureType, pixelFormat: MTLPixelFormat, sampleCount: Int) -> MTLSize
 ```
 
+```objc
+- (MTLSize) sparseTileSizeWithTextureType:(MTLTextureType) textureType pixelFormat:(MTLPixelFormat) pixelFormat sampleCount:(NSUInteger) sampleCount;
+```
+
 ## Mentions
 
-- [Converting between pixel regions and sparse tile regions](converting-between-pixel-regions-and-sparse-tile-regions.md)
+- [Converting between pixel regions and sparse tile regions](../converting-between-pixel-regions-and-sparse-tile-regions.md)
 
 #### Return Value
 
-A new [`MTLSize`](mtlsize.md) instance.
+A new [`MTLSize`](../mtlsize.md) instance.
 
 #### Discussion
 
@@ -34,25 +39,26 @@ The size of a sparse tile, in bytes, is the same for all sparse textures on a GP
 
 ## Parameters
 
-- `textureType`: An [`MTLTextureType`](mtltexturetype.md) instance.
-- `pixelFormat`: An [`MTLPixelFormat`](mtlpixelformat.md) instance.
+- `textureType`: An [`MTLTextureType`](../mtltexturetype.md) instance.
+- `pixelFormat`: An [`MTLPixelFormat`](../mtlpixelformat.md) instance.
 - `sampleCount`: The number of samples for each pixel.
 
 ## See Also
 
-- [func sparseTileSize(textureType: MTLTextureType, pixelFormat: MTLPixelFormat, sampleCount: Int, sparsePageSize: MTLSparsePageSize) -> MTLSize](mtldevice/sparsetilesize(texturetype:pixelformat:samplecount:sparsepagesize:).md)
+### Working with sparse textures
+- [func sparseTileSize(textureType: MTLTextureType, pixelFormat: MTLPixelFormat, sampleCount: Int, sparsePageSize: MTLSparsePageSize) -> MTLSize](./sparsetilesize%28texturetype,pixelformat,samplecount,sparsepagesize%29.md)
   Returns the dimensions of a sparse tile for a texture that has a specific sparse page size.
-- [func sparseTileSizeInBytes(sparsePageSize: MTLSparsePageSize) -> Int](mtldevice/sparsetilesizeinbytes(sparsepagesize:).md)
+- [func sparseTileSizeInBytes(sparsePageSize: MTLSparsePageSize) -> Int](./sparsetilesizeinbytes%28sparsepagesize%29.md)
   Returns the size, in bytes, of a sparse tile the GPU device creates with a specific page size.
-- [var sparseTileSizeInBytes: Int](mtldevice/sparsetilesizeinbytes.md)
+- [var sparseTileSizeInBytes: Int](./sparsetilesizeinbytes.md)
   Returns the size, in bytes, of a sparse tile the GPU device creates using a default page size.
-- [func convertSparsePixelRegions(UnsafePointer<MTLRegion>, toTileRegions: UnsafeMutablePointer<MTLRegion>, withTileSize: MTLSize, alignmentMode: MTLSparseTextureRegionAlignmentMode, numRegions: Int)](mtldevice/convertsparsepixelregions(_:totileregions:withtilesize:alignmentmode:numregions:).md)
+- [func convertSparsePixelRegions(UnsafePointer<MTLRegion>, toTileRegions: UnsafeMutablePointer<MTLRegion>, withTileSize: MTLSize, alignmentMode: MTLSparseTextureRegionAlignmentMode, numRegions: Int)](./convertsparsepixelregions%28_,totileregions,withtilesize,alignmentmode,numregions%29.md)
   Converts a list of sparse pixel regions to tile regions.
-- [func convertSparseTileRegions(UnsafePointer<MTLRegion>, toPixelRegions: UnsafeMutablePointer<MTLRegion>, withTileSize: MTLSize, numRegions: Int)](mtldevice/convertsparsetileregions(_:topixelregions:withtilesize:numregions:).md)
+- [func convertSparseTileRegions(UnsafePointer<MTLRegion>, toPixelRegions: UnsafeMutablePointer<MTLRegion>, withTileSize: MTLSize, numRegions: Int)](./convertsparsetileregions%28_,topixelregions,withtilesize,numregions%29.md)
   Converts a list of sparse tile regions to pixel regions.
-- [enum MTLSparsePageSize](mtlsparsepagesize.md)
+- [enum MTLSparsePageSize](../mtlsparsepagesize.md)
   The page size options, in kilobytes, for sparse textures.
-- [enum MTLSparseTextureRegionAlignmentMode](mtlsparsetextureregionalignmentmode.md)
+- [enum MTLSparseTextureRegionAlignmentMode](../mtlsparsetextureregionalignmentmode.md)
   Options used when converting between a pixel-based region within a texture to a tile-based region.
 
 

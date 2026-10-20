@@ -1,7 +1,8 @@
 # append(contentsOf:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the elements of a sequence or collection to the end of this collection.
 
@@ -33,7 +34,7 @@ print(numbers)
 // Prints "[1, 2, 3, 4, 5, 10, 11, 12, 13, 14, 15]"
 ```
 
-> **Note**: O(*m*), where *m* is the length of `newElements`.
+> **Complexity**: O(*m*), where *m* is the length of `newElements`.
 
 ## Parameters
 

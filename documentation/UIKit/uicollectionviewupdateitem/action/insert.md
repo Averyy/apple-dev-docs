@@ -1,19 +1,24 @@
 # UICollectionViewUpdateItem.Action.insert
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case insert
+```
+
+```c
+UICollectionUpdateActionInsert
 ```
 
 #### Discussion
@@ -22,10 +27,11 @@ Insert the item into the collection view.
 
 ## See Also
 
-- [UICollectionViewUpdateItem.Action.none](uicollectionviewupdateitem/action/none.md)
-- [UICollectionViewUpdateItem.Action.delete](uicollectionviewupdateitem/action/delete.md)
-- [UICollectionViewUpdateItem.Action.reload](uicollectionviewupdateitem/action/reload.md)
-- [UICollectionViewUpdateItem.Action.move](uicollectionviewupdateitem/action/move.md)
+### Constants
+- [UICollectionViewUpdateItem.Action.none](./none.md)
+- [UICollectionViewUpdateItem.Action.delete](./delete.md)
+- [UICollectionViewUpdateItem.Action.reload](./reload.md)
+- [UICollectionViewUpdateItem.Action.move](./move.md)
 
 
 ---

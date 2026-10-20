@@ -1,12 +1,13 @@
 # enabled
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Bool where a value of true indicates that the box’s contents are available to the system.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

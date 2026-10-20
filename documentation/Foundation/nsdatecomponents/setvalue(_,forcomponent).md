@@ -1,7 +1,8 @@
 # setValue(_:forComponent:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a value for a given calendar unit.
 
@@ -20,20 +21,25 @@ Sets a value for a given calendar unit.
 func setValue(_ value: Int, forComponent unit: NSCalendar.Unit)
 ```
 
+```objc
+- (void) setValue:(NSInteger) value forComponent:(NSCalendarUnit) unit;
+```
+
 #### Discussion
 
-This method allows for component values to be set for an [`NSCalendar.Unit`](nscalendar/unit.md) value.
+This method allows for component values to be set for an [`NSCalendar.Unit`](../nscalendar/unit.md) value.
 
 ## Parameters
 
 - `value`: The value to set for the `unit` component.
-- `unit`: The calendar unit for which to set `value`. Do not pass [`calendar`](nscalendar/unit/calendar.md) or [`timeZone`](nscalendar/unit/timezone.md).
+- `unit`: The calendar unit for which to set `value`. Do not pass [`calendar`](../nscalendar/unit/calendar.md) or [`timeZone`](../nscalendar/unit/timezone.md).
 
 ## See Also
 
-- [func value(forComponent: NSCalendar.Unit) -> Int](nsdatecomponents/value(forcomponent:).md)
+### Accessing Components as Calendrical Units
+- [func value(forComponent: NSCalendar.Unit) -> Int](./value%28forcomponent%29.md)
   Returns the value for a given calendar unit.
-- [NSCalendar.Unit](nscalendar/unit.md)
+- [NSCalendar.Unit](../nscalendar/unit.md)
   Calendrical units such as year, month, day and hour.
 
 

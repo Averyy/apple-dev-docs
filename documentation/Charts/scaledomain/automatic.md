@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Creates a scale domain configuration that infers the scale domain from data.
 
@@ -19,6 +20,8 @@ Creates a scale domain configuration that infers the scale domain from data.
 ```swift
 static var automatic: AutomaticScaleDomain { get }
 ```
+
+Available when `Self` is `AutomaticScaleDomain`.
 
 
 ---

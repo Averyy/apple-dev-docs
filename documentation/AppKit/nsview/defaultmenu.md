@@ -1,17 +1,22 @@
 # defaultMenu
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Overridden by subclasses to return the default pop-up menu for instances of the receiving class.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class var defaultMenu: NSMenu? { get }
+```
+
+```objc
+@property (class, strong, readonly, nullable) NSMenu * defaultMenu;
 ```
 
 #### Discussion
@@ -20,13 +25,15 @@ The default implementation returns `nil`.
 
 ## See Also
 
-- [var menu: NSMenu?](nsresponder/menu.md)
+### Related Documentation
+- [var menu: NSMenu?](../nsresponder/menu.md)
   Returns the responder’s menu.
-- [func menu(for: NSEvent) -> NSMenu?](nsview/menu(for:).md)
+### Managing Contextual Menus
+- [func menu(for: NSEvent) -> NSMenu?](./menu%28for%29.md)
   Overridden by subclasses to return a context-sensitive pop-up menu for a given mouse-down event.
-- [func willOpenMenu(NSMenu, with: NSEvent)](nsview/willopenmenu(_:with:).md)
+- [func willOpenMenu(NSMenu, with: NSEvent)](./willopenmenu%28_,with%29.md)
   Called just before a contextual menu for a view is opened on screen.
-- [func didCloseMenu(NSMenu, with: NSEvent?)](nsview/didclosemenu(_:with:).md)
+- [func didCloseMenu(NSMenu, with: NSEvent?)](./didclosemenu%28_,with%29.md)
   Called after a contextual menu that was displayed from the receiving view has been closed.
 
 

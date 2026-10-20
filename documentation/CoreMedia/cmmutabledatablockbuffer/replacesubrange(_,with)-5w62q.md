@@ -1,7 +1,8 @@
 # replaceSubrange(_:with:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replace a range of bytes in the block buffer.
 

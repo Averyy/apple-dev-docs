@@ -1,47 +1,49 @@
 # initInputReport
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts reading the input report from the device.
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t initInputReport();
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
-This method requests the input report from the USB device asynchronously, delivering the results to the [`CompleteInputReport`](iouserusbhosthiddevice/completeinputreport.md) method.
+This method requests the input report from the USB device asynchronously, delivering the results to the [`CompleteInputReport`](./completeinputreport.md) method.
 
-You don’t need to call this method directly. The service’s [`Start`](iouserusbhosthiddevice/start.md) method calls it when the service first runs, and the service requests new input reports regularly.
+You don’t need to call this method directly. The service’s [`Start`](./start.md) method calls it when the service first runs, and the service requests new input reports regularly.
 
 ## See Also
 
-- [newReportDescriptor](iouserusbhosthiddevice/newreportdescriptor.md)
+### Managing Device Reports
+- [newReportDescriptor](./newreportdescriptor.md)
   Returns the data in the HID device’s report descriptor.
-- [getReport](iouserusbhosthiddevice/getreport-6stqs.md)
+- [getReport](./getreport-6stqs.md)
   Gets a report from the HID device.
-- [getReport](iouserusbhosthiddevice/getreport-2v8zk.md)
+- [getReport](./getreport-2v8zk.md)
   Gets a report from the HID device.
-- [setReport](iouserusbhosthiddevice/setreport.md)
+- [setReport](./setreport.md)
   Sends a report to the HID device.
-- [CompleteInputReport](iouserusbhosthiddevice/completeinputreport.md)
+- [CompleteInputReport](./completeinputreport.md)
   Processes the results of an asynchronous request for an input report.
-- [scheduleInputReportRetry](iouserusbhosthiddevice/scheduleinputreportretry.md)
+- [scheduleInputReportRetry](./scheduleinputreportretry.md)
   Retries a previous request for an input report.
-- [cancelInputReportRetry](iouserusbhosthiddevice/cancelinputreportretry.md)
+- [cancelInputReportRetry](./cancelinputreportretry.md)
   Cancels a retry attempt for an input report request.
-- [TimerOccurred](iouserusbhosthiddevice/timeroccurred.md)
+- [TimerOccurred](./timeroccurred.md)
   Handles timeout-related actions when retrying input report requests.
 
 

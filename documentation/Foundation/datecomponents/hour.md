@@ -1,7 +1,8 @@
 # hour
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An hour or count of hours.
 
@@ -26,11 +27,12 @@ var hour: Int? { get set }
 
 ## See Also
 
-- [var minute: Int?](datecomponents/minute.md)
+### Accessing Hours and Seconds
+- [var minute: Int?](./minute.md)
   A minute or count of minutes.
-- [var second: Int?](datecomponents/second.md)
+- [var second: Int?](./second.md)
   A second or count of seconds.
-- [var nanosecond: Int?](datecomponents/nanosecond.md)
+- [var nanosecond: Int?](./nanosecond.md)
   A nanosecond or count of nanoseconds.
 
 

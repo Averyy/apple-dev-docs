@@ -1,7 +1,8 @@
 # Upload Asset
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Upload a binary image file to create a new asset.
 
@@ -14,7 +15,7 @@ This endpoint uploads a raw image file and associates it with a promoted object 
 
 **This endpoint currently supports Business Brand assets only.** `promotedObjectType` accepts only `BUSINESS_BRAND`, so uploaded assets serve ads on Apple Maps. App Store app assets aren’t supported here: App Store creatives use `CUSTOM_PRODUCT_PAGE` or `DEFAULT_PRODUCT_PAGE`, which reference an app’s existing App Store product page instead of an uploaded image.
 
-After upload, the asset begins processing. Poll using [`Get Asset`](get-asset-by-id.md) until the `eligibility.status` indicates the asset is ready before referencing it in a creative.
+After upload, the asset begins processing. Poll using [`Get Asset`](./get-asset-by-id.md) until the `eligibility.status` indicates the asset is ready before referencing it in a creative.
 
 The returned asset has `assetType: IMAGE` and a `providerAssetId` that the provider system assigns.
 
@@ -28,9 +29,9 @@ Multipart form data (`multipart/form-data`) containing the binary image file and
 | `promotedObjectId` | string | Yes | The identifier of the promoted object (for example, the brand ID for a `BUSINESS_BRAND`). |
 | `promotedObjectType` | string | Yes | The type of the promoted object. Only `BUSINESS_BRAND` is supported; App Store apps aren’t supported by this endpoint. |
 
-##### Post Upload Workflow
+##### Post-Upload Workflow
 
-1. Poll `GET /v1/assets/{id}` ([`Get Asset`](get-asset-by-id.md)) until `eligibility.status` indicates the asset is ready to use.
+1. Poll `GET /v1/assets/{id}` ([`Get Asset`](./get-asset-by-id.md)) until `eligibility.status` indicates the asset is ready to use.
 2. Reference the asset UUID in a `creativeAssets` array when creating a `LOCAL_ADS_SEARCH_CREATIVE`.
 
 #### Payload Examples
@@ -85,15 +86,36 @@ curl -X POST https://api.ads.apple.com/v1/assets/upload \
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `multipart/form-data`  
+**Type**: `form-data`
+
+- `file` (binary) *(required)*
+- `promotedObjectId` (string) *(required)*
+- `promotedObjectType` (string) *(required)*: **Allowed Values**: `BUSINESS_BRAND`
+
+## Responses
+
+- `200` OK (`AssetResponse`, `application/json`)
+- `400` Bad Request (`AssetResponse`, `application/json`)
+- `401` Unauthorized (`Error`, `application/json`)
+- `403` Forbidden (`Error`, `application/json`)
+- `404` Not Found (`Error`, `application/json`)
+- `429` Too Many Requests (`Error`, `application/json`)
+- `500` Internal Server Error (`Error`, `application/json`)
 
 ## See Also
 
-- [Query Assets](query-assets.md)
+- [Query Assets](./query-assets.md)
   Retrieve a paginated list of creative assets using filters and sorting.
-- [Get Asset](get-asset-by-id.md)
+- [Get Asset](./get-asset-by-id.md)
   Retrieve a single asset by its UUID.
-- [Delete Asset](delete-asset-by-id.md)
+- [Delete Asset](./delete-asset-by-id.md)
   Soft-delete an asset by its UUID.
 
 

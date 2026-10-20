@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Assigns an optional label with this command buffer.
@@ -18,6 +19,10 @@ Assigns an optional label with this command buffer.
 
 ```swift
 var label: String? { get set }
+```
+
+```objc
+@property (atomic, copy, nullable) NSString * label;
 ```
 
 

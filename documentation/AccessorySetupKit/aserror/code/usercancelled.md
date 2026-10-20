@@ -1,7 +1,8 @@
 # ASError.Code.userCancelled
 
 **Framework**: AccessorySetupKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The person using the app canceled the operation.
 
@@ -13,6 +14,10 @@ The person using the app canceled the operation.
 
 ```swift
 case userCancelled
+```
+
+```c
+ASErrorCodeUserCancelled
 ```
 
 

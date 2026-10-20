@@ -1,6 +1,7 @@
 # Supporting promoted Apple In-App Purchases in your app
 
-**Framework**: StoreKit
+**Framework**: StoreKit  
+**Role**: Article
 
 Display promoted Apple In-App Purchases on your product page and handle purchases that users initiate on the App Store.
 
@@ -12,30 +13,30 @@ If your app isn’t installed when the user selects to purchase the in-app produ
 
 Promoting Apple In-App Purchases requires two steps:
 
-1. In your app, starting in iOS 16.4, implement [`PurchaseIntent`](purchaseintent.md) to complete the purchase users initiate on the App Store. To support this feature in apps that run in iOS 11–16.3, see [`Promoting Apple In-App Purchases`](promoting-in-app-purchases.md).
-2. In App Store Connect, configure promoted Apple In-App Purchases. For more information, see [`Promote Apple In-App Purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/promote-in-app-purchases).
+1. In your app, starting in iOS 16.4, implement [`PurchaseIntent`](./purchaseintent.md) to complete the purchase users initiate on the App Store. To support this feature in apps that run in iOS 11–16.3, see [Promoting Apple In-App Purchases](./promoting-in-app-purchases.md).
+2. In App Store Connect, configure promoted Apple In-App Purchases. For more information, see [Promote Apple In-App Purchases](https://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/promote-in-app-purchases).
 
-> ❗ **Important**:  To enable promoted Apple In-App Purchases, your app needs to use either [`PurchaseIntent`](purchaseintent.md) (starting in iOS 16.4) or [`paymentQueue(_:shouldAddStorePayment:for:)`](skpaymenttransactionobserver/paymentqueue(_:shouldaddstorepayment:for:).md) (starting in iOS 11). Don’t use both at the same time. If necessary, use conditional compilation to identify the OS version the app is running in. For more information, see [`Running code on a specific platform or OS version`](https://developer.apple.com/documentation/xcode/running-code-on-a-specific-version).
+> ❗ **Important**:  To enable promoted Apple In-App Purchases, your app needs to use either [`PurchaseIntent`](./purchaseintent.md) (starting in iOS 16.4) or [`paymentQueue(_:shouldAddStorePayment:for:)`](./skpaymenttransactionobserver/paymentqueue%28_,shouldaddstorepayment,for%29.md) (starting in iOS 11). Don’t use both at the same time. If necessary, use conditional compilation to identify the OS version the app is running in. For more information, see [Running code on a specific platform or OS version](../Xcode/running-code-on-a-specific-version.md).
 
-You can optionally customize which promoted Apple In-App Purchases a users sees on a specific device using the [`Product.PromotionInfo`](product/promotioninfo.md) API. Using [`Product.PromotionInfo`](product/promotioninfo.md) isn’t required for your promoted Apple In-App Purchases to appear on the App Store.
+You can optionally customize which promoted Apple In-App Purchases a users sees on a specific device using the [`Product.PromotionInfo`](./product/promotioninfo.md) API. Using [`Product.PromotionInfo`](./product/promotioninfo.md) isn’t required for your promoted Apple In-App Purchases to appear on the App Store.
 
-For marketing guidance on this feature, see [`Promoting Your Apple In-App Purchases`](https://developer.apple.comhttps://developer.apple.com/app-store/promoting-in-app-purchases/).
+For marketing guidance on this feature, see [Promoting Your Apple In-App Purchases](https://developer.apple.com/app-store/promoting-in-app-purchases/).
 
-To test promoted Apple In-App Purchases, see [`Testing promoted Apple In-App Purchases`](testing-promoted-in-app-purchases.md).
+To test promoted Apple In-App Purchases, see [Testing promoted Apple In-App Purchases](./testing-promoted-in-app-purchases.md).
 
 > **Note**:  Promoted Apple In-App Purchases aren’t available to compatible iPad or iPhone apps running in visionOS.
 
-##### Set Up Promoted Apple in App Purchases Using App Store Connect
+##### Set up promoted Apple In-App Purchases using App Store Connect
 
-In App Store Connect, set up promoted Apple In-App Purchases by uploading promotional images. Use the App Store Promotions feature in App Store Connect to manage their default order and visibility. For more information about the setup, see [`Promote Apple In-App Purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/promote-in-app-purchases).
+In App Store Connect, set up promoted Apple In-App Purchases by uploading promotional images. Use the App Store Promotions feature in App Store Connect to manage their default order and visibility. For more information about the setup, see [Promote Apple In-App Purchases](https://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/promote-in-app-purchases).
 
-##### Complete the Purchase in Your App
+##### Complete the purchase in your app
 
-When users initiate an Apple In-App Purchase on the App Store, StoreKit automatically opens your app and sends the product information in the [`intents`](purchaseintent/intents.md) asynchronous sequence of [`PurchaseIntent`](purchaseintent.md). Your app needs to complete the purchase transaction and perform any related actions that are specific to it.
+When users initiate an Apple In-App Purchase on the App Store, StoreKit automatically opens your app and sends the product information in the [`intents`](./purchaseintent/intents.md) asynchronous sequence of [`PurchaseIntent`](./purchaseintent.md). Your app needs to complete the purchase transaction and perform any related actions that are specific to it.
 
-To complete the transaction, call the [`purchase(options:)`](product/purchase(options:).md) method on the [`product`](purchaseintent/product.md) of the [`PurchaseIntent`](purchaseintent.md). Follow the same workflow your app uses for any In-App Purchase, such as unlocking the purchased content and finishing the transaction ([`finish()`](transaction/finish().md)).
+To complete the transaction, call the [`purchase(options:)`](./product/purchase%28options%29.md) method on the [`product`](./purchaseintent/product.md) of the [`PurchaseIntent`](./purchaseintent.md). Follow the same workflow your app uses for any In-App Purchase, such as unlocking the purchased content and finishing the transaction ([`finish()`](./transaction/finish%28%29.md)).
 
-The following code example listens for purchase intents from the App Store. It receives a [`Product`](product.md) object when the user taps a promoted Apple In-App Purchase on the App Store, and performs its purchase workflow.
+The following code example listens for purchase intents from the App Store. It receives a [`Product`](./product.md) object when the user taps a promoted Apple In-App Purchase on the App Store, and performs its purchase workflow.
 
 ```swift
 for await purchaseIntent in PurchaseIntent.intents {
@@ -49,26 +50,26 @@ for await purchaseIntent in PurchaseIntent.intents {
 }
 ```
 
-##### Defer or Cancel the Purchase
+##### Defer or cancel the purchase
 
 In some cases, your app may need to defer or cancel the purchase transaction. For example, you may need to defer the transaction if the user is in the middle of onboarding, and complete it after they finish. Or, you may need to cancel the transaction if the user has already unlocked the product they’re trying to buy.
 
 To defer the transaction, store the purchase intent and process it later after the user finishes onboarding or other actions that require deferring.
 
-To cancel the transaction, don’t call [`purchase(options:)`](product/purchase(options:).md). Instead, provide feedback to the user. Although this step is optional, if you don’t provide feedback, the app’s lack of action after the user initiates the purchase on the App Store may seem like a bug.
+To cancel the transaction, don’t call [`purchase(options:)`](./product/purchase%28options%29.md). Instead, provide feedback to the user. Although this step is optional, if you don’t provide feedback, the app’s lack of action after the user initiates the purchase on the App Store may seem like a bug.
 
-##### Customize Promoted Product Order and Visibility on a Device
+##### Customize promoted product order and visibility on a device
 
-To customize promoted Apple In-App Purchases on a device, you can override their default order and visibility using [`Product.PromotionInfo`](product/promotioninfo.md). Use it to show only promotions that are relevant to your user, based on their experience with your app, or based on their previous purchases. For example, suppose a game has Apple In-App Purchases to promote for each game level. You can show only the promoted products for the user’s game level, and hide those they already purchased.
+To customize promoted Apple In-App Purchases on a device, you can override their default order and visibility using [`Product.PromotionInfo`](./product/promotioninfo.md). Use it to show only promotions that are relevant to your user, based on their experience with your app, or based on their previous purchases. For example, suppose a game has Apple In-App Purchases to promote for each game level. You can show only the promoted products for the user’s game level, and hide those they already purchased.
 
 To control whether a promoted Apple In-App Purchase appears in the App Store on the device, use any of these methods:
 
-- Add or remove it from the list. Set the product order by calling [`updateAll(_:)`](product/promotioninfo/updateall(_:).md) or [`updateProductOrder(byID:)`](product/promotioninfo/updateproductorder(byid:).md). Leave out the products you don’t want to display.
-- Set its visibility. Show or hide the product by setting its [`visibility`](product/promotioninfo/visibility-swift.property.md) value and calling [`update()`](product/promotioninfo/update().md) or [`updateAll(_:)`](product/promotioninfo/updateall(_:).md), or call [`updateProductVisibility(_:for:)`](product/promotioninfo/updateproductvisibility(_:for:).md).
+- Add or remove it from the list. Set the product order by calling [`updateAll(_:)`](./product/promotioninfo/updateall%28_%29.md) or [`updateProductOrder(byID:)`](./product/promotioninfo/updateproductorder%28byid%29.md). Leave out the products you don’t want to display.
+- Set its visibility. Show or hide the product by setting its [`visibility`](./product/promotioninfo/visibility-swift.property.md) value and calling [`update()`](./product/promotioninfo/update%28%29.md) or [`updateAll(_:)`](./product/promotioninfo/updateall%28_%29.md), or call [`updateProductVisibility(_:for:)`](./product/promotioninfo/updateproductvisibility%28_,for%29.md).
 
 These overrides are specific to the device, and take effect after the user launches the app at least once.
 
-The following code example uses an array of product identifiers to set their order. It calls [`currentOrder`](product/promotioninfo/currentorder.md) to get the [`Product.PromotionInfo`](product/promotioninfo.md) objects, and sets their visibility directly. It then calls [`updateAll(_:)`](product/promotioninfo/updateall(_:).md) to save the changes.
+The following code example uses an array of product identifiers to set their order. It calls [`currentOrder`](./product/promotioninfo/currentorder.md) to get the [`Product.PromotionInfo`](./product/promotioninfo.md) objects, and sets their visibility directly. It then calls [`updateAll(_:)`](./product/promotioninfo/updateall%28_%29.md) to save the changes.
 
 ```swift
 // Set the product order.
@@ -122,25 +123,26 @@ catch {
 }
 ```
 
-##### Control a Promotions Visibility From App Store Connect
+##### Control a promotion’s visibility from App Store Connect
 
-To control a promotion’s visibility from App Store Connect, set its [`visibility`](product/promotioninfo/visibility-swift.property.md) value in the app to the default of [`Product.PromotionInfo.Visibility.appStoreConnectDefault`](product/promotioninfo/visibility-swift.enum/appstoreconnectdefault.md). Products with this value are visible or hidden based on the setting you configure in App Store Connect. For more information about using App Store Connect, see [`Promote Apple In-App Purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/promote-in-app-purchases).
+To control a promotion’s visibility from App Store Connect, set its [`visibility`](./product/promotioninfo/visibility-swift.property.md) value in the app to the default of [`Product.PromotionInfo.Visibility.appStoreConnectDefault`](./product/promotioninfo/visibility-swift.enum/appstoreconnectdefault.md). Products with this value are visible or hidden based on the setting you configure in App Store Connect. For more information about using App Store Connect, see [Promote Apple In-App Purchases](https://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/promote-in-app-purchases).
 
-For example, to promote a product on a holiday for all users, ensure the app sets the product’s visibility to [`Product.PromotionInfo.Visibility.appStoreConnectDefault`](product/promotioninfo/visibility-swift.enum/appstoreconnectdefault.md). In App Store Connect, start with its visibility set as hidden. On the holiday, use App Store Connect to manually change the product to be visible. The promoted product becomes visible in the App Store for all users automatically.
+For example, to promote a product on a holiday for all users, ensure the app sets the product’s visibility to [`Product.PromotionInfo.Visibility.appStoreConnectDefault`](./product/promotioninfo/visibility-swift.enum/appstoreconnectdefault.md). In App Store Connect, start with its visibility set as hidden. On the holiday, use App Store Connect to manually change the product to be visible. The promoted product becomes visible in the App Store for all users automatically.
 
-##### Cancel Overrides
+##### Cancel overrides
 
-To reset changes your app makes to the promoted products’ order and visibility, call the [`updateAll(_:)`](product/promotioninfo/updateall(_:).md) or [`updateProductOrder(byID:)`](product/promotioninfo/updateproductorder(byid:).md) methods with an empty array. This cancels the overrides so the user can see the promoted Apple In-App Purchases in their default order.
+To reset changes your app makes to the promoted products’ order and visibility, call the [`updateAll(_:)`](./product/promotioninfo/updateall%28_%29.md) or [`updateProductOrder(byID:)`](./product/promotioninfo/updateproductorder%28byid%29.md) methods with an empty array. This cancels the overrides so the user can see the promoted Apple In-App Purchases in their default order.
 
-Call [`currentOrder`](product/promotioninfo/currentorder.md) to get a list of your overrides. If the list is empty, the device displays promoted Apple In-App Purchases in their default order.
+Call [`currentOrder`](./product/promotioninfo/currentorder.md) to get a list of your overrides. If the list is empty, the device displays promoted Apple In-App Purchases in their default order.
 
 ## See Also
 
-- [struct PurchaseIntent](purchaseintent.md)
+### Promoted Apple In-App Purchases
+- [struct PurchaseIntent](./purchaseintent.md)
   An instance that emits purchase intents, which indicate that the customer initiated a purchase outside of your app, for your app to complete.
-- [Product.PromotionInfo](product/promotioninfo.md)
+- [Product.PromotionInfo](./product/promotioninfo.md)
   Information about a promoted Apple In-App Purchase that customizes its order and visibility on the device.
-- [Testing promoted Apple In-App Purchases](testing-promoted-in-app-purchases.md)
+- [Testing promoted Apple In-App Purchases](./testing-promoted-in-app-purchases.md)
   Test your Apple In-App Purchases before making your app available in the App Store.
 
 

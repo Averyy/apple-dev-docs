@@ -1,7 +1,8 @@
 # readAttributeCharString(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeCharString(completion: @escaping @Sendable (String?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeCharString() async throws -> String
+```
+
+```objc
+- (void) readAttributeCharStringWithCompletion:(void (^)(NSString *value, NSError *error)) completion;
 ```
 
 

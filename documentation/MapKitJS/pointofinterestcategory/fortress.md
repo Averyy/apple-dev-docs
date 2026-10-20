@@ -1,7 +1,8 @@
 # Fortress
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The point-of-interest category for fortresses.
 
@@ -10,7 +11,7 @@ The point-of-interest category for fortresses.
 
 ## Declaration
 
-```swift
+```
 readonly Fortress: "Fortress";
 ```
 

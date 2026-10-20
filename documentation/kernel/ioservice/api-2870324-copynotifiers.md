@@ -1,14 +1,15 @@
 # copyNotifiers
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 OSPtr<OSArray> copyNotifiers(const OSSymbol *type, IOOptionBits orNewState, IOOptionBits andNewState);
 ```
 

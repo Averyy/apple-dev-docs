@@ -1,9 +1,10 @@
 # AccessibilitySettings.ApplicationAccessibilityEnabledDidChangeMessage
 
 **Framework**: Accessibility  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-A type- and concurrency-safe `NotificationCenter` message posted when the value of [`isApplicationAccessibilityEnabled`](accessibilitysettings/isapplicationaccessibilityenabled.md) changes.
+A type- and concurrency-safe `NotificationCenter` message posted when the value of [`isApplicationAccessibilityEnabled`](./isapplicationaccessibilityenabled.md) changes.
 
 **Availability**:
 - iOS 27.0+
@@ -23,13 +24,13 @@ struct ApplicationAccessibilityEnabledDidChangeMessage
 ## Topics
 
 ### Initializers
-- [init()](accessibilitysettings/applicationaccessibilityenableddidchangemessage/init.md)
+- [init()](./applicationaccessibilityenableddidchangemessage/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

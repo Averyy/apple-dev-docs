@@ -1,7 +1,8 @@
 # defaultBodies
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Default option reserved for cloth bodies.
 
@@ -18,11 +19,12 @@ static let defaultBodies: ClothCollisionGroupSet
 
 #### Discussion
 
-All particles of cloth bodies have their [`groups`](clothcollisionfilter/groups.md) set to this value by default.
+All particles of cloth bodies have their [`groups`](../clothcollisionfilter/groups.md) set to this value by default.
 
 ## See Also
 
-- [static let defaultColliders: ClothCollisionGroupSet](clothcollisiongroupset/defaultcolliders.md)
+### Accessing default groups
+- [static let defaultColliders: ClothCollisionGroupSet](./defaultcolliders.md)
   Default option reserved for colliders.
 
 

@@ -1,17 +1,20 @@
 # timeRemaining
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An estimated time, in seconds, to finish downloading the content.
 
 **Availability**:
-- iOS 6.0+
-- iPadOS 6.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- watchOS 6.2+
+- iOS 6.0+ - Deprecated in 16.0
+- iPadOS 6.0+ - Deprecated in 16.0
+- Mac Catalyst 13.1+ - Deprecated in 16.0
+- macOS 10.8+ - Deprecated in 13.0
+- tvOS 9.0+ - Deprecated in 16.0
+- watchOS 6.2+ - Deprecated in 9.0
+
+> **Deprecated**: Hosted content is no longer supported.
 
 ## Declaration
 
@@ -19,25 +22,30 @@ An estimated time, in seconds, to finish downloading the content.
 var timeRemaining: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval timeRemaining;
+```
+
 ## Mentions
 
-- [Unlocking purchased content](unlocking-purchased-content.md)
+- [Unlocking purchased content](../unlocking-purchased-content.md)
 
 #### Discussion
 
-The system attempts to estimate how long it will take to finish downloading the file. If it cannot create a good estimate, the value of this property is set to [`SKDownloadTimeRemainingUnknown`](skdownloadtimeremainingunknown.md).
+The system attempts to estimate how long it will take to finish downloading the file. If it cannot create a good estimate, the value of this property is set to [`SKDownloadTimeRemainingUnknown`](../skdownloadtimeremainingunknown.md).
 
 ## See Also
 
-- [var state: SKDownloadState](skdownload/state.md)
+### Getting State Information
+- [var state: SKDownloadState](./state.md)
   The current state of the download object.
-- [var progress: Float](skdownload/progress.md)
+- [var progress: Float](./progress.md)
   A value that indicates how much of the file has been downloaded.
-- [var SKDownloadTimeRemainingUnknown: TimeInterval](skdownloadtimeremainingunknown.md)
+- [var SKDownloadTimeRemainingUnknown: TimeInterval](../skdownloadtimeremainingunknown.md)
   Indicates that the system cannot determine how much time is needed to finish downloading the content.
-- [enum SKDownloadState](skdownloadstate.md)
+- [enum SKDownloadState](../skdownloadstate.md)
   The states that a download operation can be in.
-- [var downloadState: SKDownloadState](skdownload/downloadstate.md)
+- [var downloadState: SKDownloadState](./downloadstate.md)
   The current state of the download object.
 
 

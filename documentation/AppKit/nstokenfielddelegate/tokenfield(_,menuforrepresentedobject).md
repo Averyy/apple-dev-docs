@@ -1,18 +1,23 @@
 # tokenField(_:menuForRepresentedObject:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows the delegate to provide a menu for the specified represented object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @MainActor
 optional func tokenField(_ tokenField: NSTokenField, menuForRepresentedObject representedObject: Any) -> NSMenu?
+```
+
+```objc
+- (NSMenu *) tokenField:(NSTokenField *) tokenField menuForRepresentedObject:(id) representedObject;
 ```
 
 #### Return Value
@@ -30,7 +35,8 @@ The returned menu should be autoreleased. By default tokens in a token field do 
 
 ## See Also
 
-- [func tokenField(NSTokenField, hasMenuForRepresentedObject: Any) -> Bool](nstokenfielddelegate/tokenfield(_:hasmenuforrepresentedobject:).md)
+### Managing Menus for Represented Objects
+- [func tokenField(NSTokenField, hasMenuForRepresentedObject: Any) -> Bool](./tokenfield%28_,hasmenuforrepresentedobject%29.md)
   Allows the delegate to specify whether the given represented object provides a menu.
 
 

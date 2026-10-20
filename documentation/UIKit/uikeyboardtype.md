@@ -1,16 +1,17 @@
 # UIKeyboardType
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the type of keyboard to display for a text-based view.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,67 +19,72 @@ Constants that specify the type of keyboard to display for a text-based view.
 enum UIKeyboardType
 ```
 
+```c
+enum UIKeyboardType : NSInteger;
+```
+
 #### Overview
 
-Use these constants with the [`keyboardType`](uitextinputtraits/keyboardtype.md) property.
+Use these constants with the [`keyboardType`](./uitextinputtraits/keyboardtype.md) property.
 
 ## Topics
 
 ### Constants
-- [UIKeyboardType.default](uikeyboardtype/default.md)
+- [UIKeyboardType.default](./uikeyboardtype/default.md)
   Specifies the default keyboard for the current input method.
-- [UIKeyboardType.asciiCapable](uikeyboardtype/asciicapable.md)
+- [UIKeyboardType.asciiCapable](./uikeyboardtype/asciicapable.md)
   Specifies a keyboard that displays standard ASCII characters.
-- [UIKeyboardType.numbersAndPunctuation](uikeyboardtype/numbersandpunctuation.md)
+- [UIKeyboardType.numbersAndPunctuation](./uikeyboardtype/numbersandpunctuation.md)
   Specifies the numbers and punctuation keyboard.
-- [UIKeyboardType.URL](uikeyboardtype/url.md)
+- [UIKeyboardType.URL](./uikeyboardtype/url.md)
   Specifies a keyboard for URL entry.
-- [UIKeyboardType.numberPad](uikeyboardtype/numberpad.md)
+- [UIKeyboardType.numberPad](./uikeyboardtype/numberpad.md)
   Specifies a numeric keypad for PIN entry.
-- [UIKeyboardType.phonePad](uikeyboardtype/phonepad.md)
+- [UIKeyboardType.phonePad](./uikeyboardtype/phonepad.md)
   Specifies a keypad for entering telephone numbers.
-- [UIKeyboardType.namePhonePad](uikeyboardtype/namephonepad.md)
+- [UIKeyboardType.namePhonePad](./uikeyboardtype/namephonepad.md)
   Specifies a keypad for entering a person’s name or phone number.
-- [UIKeyboardType.emailAddress](uikeyboardtype/emailaddress.md)
+- [UIKeyboardType.emailAddress](./uikeyboardtype/emailaddress.md)
   Specifies a keyboard for entering email addresses.
-- [UIKeyboardType.decimalPad](uikeyboardtype/decimalpad.md)
+- [UIKeyboardType.decimalPad](./uikeyboardtype/decimalpad.md)
   Specifies a keyboard with numbers and a decimal point.
-- [UIKeyboardType.twitter](uikeyboardtype/twitter.md)
+- [UIKeyboardType.twitter](./uikeyboardtype/twitter.md)
   Specifies a keyboard for Twitter text entry, with easy access to the at (”`@`”) and hash (”`#`”) characters.
-- [UIKeyboardType.webSearch](uikeyboardtype/websearch.md)
+- [UIKeyboardType.webSearch](./uikeyboardtype/websearch.md)
   Specifies a keyboard for web search terms and URL entry.
-- [UIKeyboardType.asciiCapableNumberPad](uikeyboardtype/asciicapablenumberpad.md)
+- [UIKeyboardType.asciiCapableNumberPad](./uikeyboardtype/asciicapablenumberpad.md)
   Specifies a number pad that outputs only ASCII digits.
-- [static var alphabet: UIKeyboardType](uikeyboardtype/alphabet.md)
+- [static var alphabet: UIKeyboardType](./uikeyboardtype/alphabet.md)
   Specifies a keyboard for alphabetic entry.
 ### Initializers
-- [init?(rawValue: Int)](uikeyboardtype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uikeyboardtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var keyboardType: UIKeyboardType](uitextinputtraits/keyboardtype.md)
+### Configuring the keyboard appearance
+- [var keyboardType: UIKeyboardType](./uitextinputtraits/keyboardtype.md)
   The keyboard type for the text object.
-- [var keyboardAppearance: UIKeyboardAppearance](uitextinputtraits/keyboardappearance.md)
+- [var keyboardAppearance: UIKeyboardAppearance](./uitextinputtraits/keyboardappearance.md)
   The appearance style of the keyboard for the text object.
-- [enum UIKeyboardAppearance](uikeyboardappearance.md)
+- [enum UIKeyboardAppearance](./uikeyboardappearance.md)
   Constants that specify the appearance of the keyboard for a text-based view.
-- [var returnKeyType: UIReturnKeyType](uitextinputtraits/returnkeytype.md)
+- [var returnKeyType: UIReturnKeyType](./uitextinputtraits/returnkeytype.md)
   The visible indication of what the Return key does.
-- [enum UIReturnKeyType](uireturnkeytype.md)
+- [enum UIReturnKeyType](./uireturnkeytype.md)
   Constants that specify the type of Return key the keyboard displays.
-- [var textContentType: UITextContentType!](uitextinputtraits/textcontenttype.md)
+- [var textContentType: UITextContentType!](./uitextinputtraits/textcontenttype.md)
   The semantic meaning for a text input area.
-- [struct UITextContentType](uitextcontenttype.md)
+- [struct UITextContentType](./uitextcontenttype.md)
   Constants that identify the semantic meaning for a text-entry area.
 
 

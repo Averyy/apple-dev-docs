@@ -1,7 +1,8 @@
 # AudioFileSetProperty(_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the value of an audio file property
 
@@ -19,6 +20,10 @@ Sets the value of an audio file property
 func AudioFileSetProperty(_ inAudioFile: AudioFileID, _ inPropertyID: AudioFilePropertyID, _ inDataSize: UInt32, _ inPropertyData: UnsafeRawPointer) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioFileSetProperty(AudioFileID inAudioFile, AudioFilePropertyID inPropertyID, UInt32 inDataSize, const void *inPropertyData);
+```
+
 #### Return Value
 
 A result code. See Result Codes.
@@ -26,15 +31,16 @@ A result code. See Result Codes.
 ## Parameters
 
 - `inAudioFile`: The audio file that you want to set a property value for.
-- `inPropertyID`: The property whose value you want to set. See [`Audio File Properties`](1576499-audio-file-properties.md) for possible values. Use the [`AudioFileGetPropertyInfo(_:_:_:_:)`](audiofilegetpropertyinfo(_:_:_:_:).md) function to determine whether the property value is writable.
+- `inPropertyID`: The property whose value you want to set. See [Audio File Properties](./api-1576499-audio-file-properties.md) for possible values. Use the [`AudioFileGetPropertyInfo(_:_:_:_:)`](./audiofilegetpropertyinfo%28_,_,_,_%29.md) function to determine whether the property value is writable.
 - `inDataSize`: The size of the value you are passing in the `inPropertyData` parameter.
 - `inPropertyData`: The new value for the property.
 
 ## See Also
 
-- [func AudioFileGetProperty(AudioFileID, AudioFilePropertyID, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](audiofilegetproperty(_:_:_:_:).md)
+### Getting and Setting Audio File Properties
+- [func AudioFileGetProperty(AudioFileID, AudioFilePropertyID, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](./audiofilegetproperty%28_,_,_,_%29.md)
   Gets the value of an audio file property.
-- [func AudioFileGetPropertyInfo(AudioFileID, AudioFilePropertyID, UnsafeMutablePointer<UInt32>?, UnsafeMutablePointer<UInt32>?) -> OSStatus](audiofilegetpropertyinfo(_:_:_:_:).md)
+- [func AudioFileGetPropertyInfo(AudioFileID, AudioFilePropertyID, UnsafeMutablePointer<UInt32>?, UnsafeMutablePointer<UInt32>?) -> OSStatus](./audiofilegetpropertyinfo%28_,_,_,_%29.md)
   Gets information about an audio file property, including the size of the property value and whether the value is writable.
 
 

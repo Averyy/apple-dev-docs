@@ -1,9 +1,10 @@
 # NSSpecifierTest.TestComparisonOperation
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-These are passed to  [`init(objectSpecifier:comparisonOperator:test:)`](nsspecifiertest/init(objectspecifier:comparisonoperator:test:).md) to specify the comparison operator.
+These are passed to  [`init(objectSpecifier:comparisonOperator:test:)`](./init%28objectspecifier,comparisonoperator,test%29.md) to specify the comparison operator.
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -15,37 +16,41 @@ These are passed to  [`init(objectSpecifier:comparisonOperator:test:)`](nsspecif
 enum TestComparisonOperation
 ```
 
+```c
+enum NSTestComparisonOperation : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSSpecifierTest.TestComparisonOperation.equal](nsspecifiertest/testcomparisonoperation/equal.md)
+- [NSSpecifierTest.TestComparisonOperation.equal](./testcomparisonoperation/equal.md)
   Binary comparison operator that results in true if the two objects are equal.
-- [NSSpecifierTest.TestComparisonOperation.lessThanOrEqual](nsspecifiertest/testcomparisonoperation/lessthanorequal.md)
+- [NSSpecifierTest.TestComparisonOperation.lessThanOrEqual](./testcomparisonoperation/lessthanorequal.md)
   Binary comparison operator that results in true if the value of the test object is equal to or less than the value of the other object.
-- [NSSpecifierTest.TestComparisonOperation.lessThan](nsspecifiertest/testcomparisonoperation/lessthan.md)
+- [NSSpecifierTest.TestComparisonOperation.lessThan](./testcomparisonoperation/lessthan.md)
   Binary comparison operator that results in true if the value of the test object is less than the value of the other object.
-- [NSSpecifierTest.TestComparisonOperation.greaterThanOrEqual](nsspecifiertest/testcomparisonoperation/greaterthanorequal.md)
+- [NSSpecifierTest.TestComparisonOperation.greaterThanOrEqual](./testcomparisonoperation/greaterthanorequal.md)
   Binary comparison operator that results in true if the value of the test object is greater than or equal to the value of the other object.
-- [NSSpecifierTest.TestComparisonOperation.greaterThan](nsspecifiertest/testcomparisonoperation/greaterthan.md)
+- [NSSpecifierTest.TestComparisonOperation.greaterThan](./testcomparisonoperation/greaterthan.md)
   Binary comparison operator that results in true if the value of the test object is greater than the value of the other object.
-- [NSSpecifierTest.TestComparisonOperation.beginsWith](nsspecifiertest/testcomparisonoperation/beginswith.md)
+- [NSSpecifierTest.TestComparisonOperation.beginsWith](./testcomparisonoperation/beginswith.md)
   Binary containment operator that results in true if the test object is a list or string that matches the beginning of the other object (which is also a list or string).
-- [NSSpecifierTest.TestComparisonOperation.endsWith](nsspecifiertest/testcomparisonoperation/endswith.md)
+- [NSSpecifierTest.TestComparisonOperation.endsWith](./testcomparisonoperation/endswith.md)
   Binary containment operator that results in true if the test object is a list or string that matches the end of the other object (which is also a list or string).
-- [NSSpecifierTest.TestComparisonOperation.contains](nsspecifiertest/testcomparisonoperation/contains.md)
+- [NSSpecifierTest.TestComparisonOperation.contains](./testcomparisonoperation/contains.md)
   Binary containment operator that results in true if the test object is a list or string that matches the other object (which is also a list or string) at any location.
 ### Initializers
-- [init?(rawValue: UInt)](nsspecifiertest/testcomparisonoperation/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./testcomparisonoperation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

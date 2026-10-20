@@ -1,7 +1,8 @@
 # AVMetadataBodyObject
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract class that defines the interface for a metadata body object.
 
@@ -18,43 +19,48 @@ An abstract class that defines the interface for a metadata body object.
 class AVMetadataBodyObject
 ```
 
+```objc
+@interface AVMetadataBodyObject : AVMetadataObject
+```
+
 #### Overview
 
-A metadata body object represents a single detected body in a picture. It’s the base object used to represent bodies, for example [`AVMetadataHumanBodyObject`](avmetadatahumanbodyobject.md), [`AVMetadataDogBodyObject`](avmetadatadogbodyobject.md), and [`AVMetadataCatBodyObject`](avmetadatacatbodyobject.md).
+A metadata body object represents a single detected body in a picture. It’s the base object used to represent bodies, for example [`AVMetadataHumanBodyObject`](./avmetadatahumanbodyobject.md), [`AVMetadataDogBodyObject`](./avmetadatadogbodyobject.md), and [`AVMetadataCatBodyObject`](./avmetadatacatbodyobject.md).
 
 ## Topics
 
 ### Inspecting metadata
-- [var bodyID: Int](avmetadatabodyobject/bodyid.md)
+- [var bodyID: Int](./avmetadatabodyobject/bodyid.md)
   An integer value that defines the unique identifier of an object in a picture.
 
 ## Relationships
 
 ### Inherits From
-- [AVMetadataObject](avmetadataobject.md)
+- [AVMetadataObject](./avmetadataobject.md)
 ### Inherited By
-- [AVMetadataCatBodyObject](avmetadatacatbodyobject.md)
-- [AVMetadataDogBodyObject](avmetadatadogbodyobject.md)
-- [AVMetadataHumanBodyObject](avmetadatahumanbodyobject.md)
-- [AVMetadataHumanFullBodyObject](avmetadatahumanfullbodyobject.md)
+- [AVMetadataCatBodyObject](./avmetadatacatbodyobject.md)
+- [AVMetadataDogBodyObject](./avmetadatadogbodyobject.md)
+- [AVMetadataHumanBodyObject](./avmetadatahumanbodyobject.md)
+- [AVMetadataHumanFullBodyObject](./avmetadatahumanfullbodyobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVMetadataCatBodyObject](avmetadatacatbodyobject.md)
+### Bodies
+- [class AVMetadataCatBodyObject](./avmetadatacatbodyobject.md)
   An object representing a single detected cat body in a picture.
-- [class AVMetadataDogBodyObject](avmetadatadogbodyobject.md)
+- [class AVMetadataDogBodyObject](./avmetadatadogbodyobject.md)
   An object representing a single detected dog body in a picture.
-- [class AVMetadataHumanBodyObject](avmetadatahumanbodyobject.md)
+- [class AVMetadataHumanBodyObject](./avmetadatahumanbodyobject.md)
   An object representing a single detected human body in a picture.
-- [class AVMetadataHumanFullBodyObject](avmetadatahumanfullbodyobject.md)
+- [class AVMetadataHumanFullBodyObject](./avmetadatahumanfullbodyobject.md)
   An object that represents a detected human full body in a picture.
 
 

@@ -1,7 +1,8 @@
 # kMDItemPerformers
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Performers in the movie. A CFArray of CFStrings.
 
@@ -12,6 +13,10 @@ Performers in the movie. A CFArray of CFStrings.
 
 ```swift
 let kMDItemPerformers: CFString!
+```
+
+```c
+const CFStringRef kMDItemPerformers;
 ```
 
 

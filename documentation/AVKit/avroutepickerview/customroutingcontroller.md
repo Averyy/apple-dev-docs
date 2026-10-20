@@ -1,7 +1,8 @@
 # customRoutingController
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A routing controller that enables connections to non-AirPlay devices.
 
@@ -14,6 +15,10 @@ A routing controller that enables connections to non-AirPlay devices.
 
 ```swift
 var customRoutingController: AVCustomRoutingController? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) AVCustomRoutingController * customRoutingController;
 ```
 
 

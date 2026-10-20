@@ -1,7 +1,8 @@
 # ImagePresentationEvents.TransitionStarted
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transition between two viewing modes has started for an image presentation component.
 
@@ -23,21 +24,22 @@ Use the `TransitionStarted` event as an opportunity to hide overlaid UI during a
 ## Topics
 
 ### Instance Properties
-- [let currentViewingMode: ImagePresentationComponent.ViewingMode](imagepresentationevents/transitionstarted/currentviewingmode.md)
+- [let currentViewingMode: ImagePresentationComponent.ViewingMode](./transitionstarted/currentviewingmode.md)
   The viewing mode the image presentation component is transitioning from.
-- [let targetViewingMode: ImagePresentationComponent.ViewingMode](imagepresentationevents/transitionstarted/targetviewingmode.md)
+- [let targetViewingMode: ImagePresentationComponent.ViewingMode](./transitionstarted/targetviewingmode.md)
   The viewing mode the image presentation component is transitioning to.
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [ImagePresentationEvents.TransitionCompleted](imagepresentationevents/transitioncompleted.md)
+### Viewing mode transitions
+- [ImagePresentationEvents.TransitionCompleted](./transitioncompleted.md)
   A transition between two viewing modes has completed for an image presentation component.
 
 

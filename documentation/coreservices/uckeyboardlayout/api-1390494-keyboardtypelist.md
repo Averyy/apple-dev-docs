@@ -1,7 +1,8 @@
 # keyboardTypeList
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A variable-length array containing structures of type `UCKeyboardTypeHeader`. Each `UCKeyboardTypeHeader` entry specifies a range of physical keyboard types and contains offsets to each of the key mapping sections to be used for that range of keyboard types. 
 
@@ -13,6 +14,10 @@ A variable-length array containing structures of type `UCKeyboardTypeHeader`. Ea
 
 ```swift
 var keyboardTypeList: UCKeyboardTypeHeader
+```
+
+```c
+UCKeyboardTypeHeader keyboardTypeList[1];
 ```
 
 

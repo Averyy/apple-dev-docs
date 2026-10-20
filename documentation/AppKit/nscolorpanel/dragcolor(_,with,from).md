@@ -1,12 +1,13 @@
 # dragColor(_:with:from:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Drags a color into a destination view from the specified source view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,19 @@ Drags a color into a destination view from the specified source view.
 class func dragColor(_ color: NSColor, with event: NSEvent, from sourceView: NSView) -> Bool
 ```
 
+```objc
++ (BOOL) dragColor:(NSColor *) color withEvent:(NSEvent *) event fromView:(NSView *) sourceView;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true)
+[`true`](../../Swift/true.md)
 
 #### Discussion
 
 This method is usually invoked by the `mouseDown:` method of `sourceView`. The dragging mechanism handles all subsequent events.
 
-Because it is a class method, [`dragColor(_:with:from:)`](nscolorpanel/dragcolor(_:with:from:).md) can be invoked whether or not the instance of `NSColorPanel` exists.
+Because it is a class method, [`dragColor(_:with:from:)`](./dragcolor%28_,with,from%29.md) can be invoked whether or not the instance of `NSColorPanel` exists.
 
 ## Parameters
 
@@ -32,7 +37,8 @@ Because it is a class method, [`dragColor(_:with:from:)`](nscolorpanel/dragcolor
 
 ## See Also
 
-- [var color: NSColor](nscolorpanel/color.md)
+### Setting color
+- [var color: NSColor](./color.md)
   The color of the receiver.
 
 

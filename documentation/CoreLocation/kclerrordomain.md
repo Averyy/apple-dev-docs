@@ -1,7 +1,8 @@
 # kCLErrorDomain
 
 **Framework**: Core Location  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for Core Location errors.
 
@@ -20,15 +21,20 @@ The domain for Core Location errors.
 let kCLErrorDomain: String
 ```
 
+```c
+extern NSString * const kCLErrorDomain;
+```
+
 #### Discussion
 
-This value is used in the [`NSError`](https://developer.apple.com/documentation/foundation/nserror) class.
+This value is used in the [`NSError`](../Foundation/nserror.md) class.
 
 ## See Also
 
-- [struct CLError](clerror-swift.struct.md)
+### Errors
+- [struct CLError](./clerror-swift.struct.md)
   A Core Location error.
-- [let kCLErrorUserInfoAlternateRegionKey: String](kclerroruserinfoalternateregionkey.md)
+- [let kCLErrorUserInfoAlternateRegionKey: String](./kclerroruserinfoalternateregionkey.md)
   A key in the user information dictionary of an error relating to a delayed region-monitoring response.
 
 

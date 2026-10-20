@@ -1,7 +1,8 @@
 # cmRelativeColorimetric
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The colors that fall within the gamuts of both devices are left unchanged. This intent is best suited to logo images.
 

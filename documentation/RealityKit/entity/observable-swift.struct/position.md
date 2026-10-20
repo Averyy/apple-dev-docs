@@ -1,7 +1,8 @@
 # position
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity’s local position, allowing observation of its translation.
 

@@ -1,7 +1,8 @@
 # AudioFeaturePrint.FeatureSequence.Iterator
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An async iterator of audio buffers.
 
@@ -22,11 +23,12 @@ struct Iterator
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 ## See Also
 
-- [func makeAsyncIterator() -> AudioFeaturePrint.FeatureSequence.AsyncIterator](audiofeatureprint/featuresequence/makeasynciterator.md)
+### Creating an iterator
+- [func makeAsyncIterator() -> AudioFeaturePrint.FeatureSequence.AsyncIterator](./makeasynciterator%28%29.md)
   Constructs an iterator.
 
 

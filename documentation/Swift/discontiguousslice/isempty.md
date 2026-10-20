@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the collection is empty.
 
@@ -20,6 +21,8 @@ A Boolean value indicating whether the collection is empty.
 var isEmpty: Bool { get }
 ```
 
+Available when `Base` conforms to `Collection`.
+
 #### Discussion
 
 When you need to check whether your collection is empty, use the `isEmpty` property instead of checking that the `count` property is equal to zero. For collections that don’t conform to `RandomAccessCollection`, accessing the `count` property iterates through the elements of the collection.
@@ -34,7 +37,7 @@ if horseName.isEmpty {
 // Prints "Hi ho, Silver!"
 ```
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

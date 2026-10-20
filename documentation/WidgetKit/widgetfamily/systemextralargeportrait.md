@@ -1,7 +1,8 @@
 # WidgetFamily.systemExtraLargePortrait
 
 **Framework**: WidgetKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An extra-large widget that uses a portrait orientation.
 
@@ -20,23 +21,24 @@ case systemExtraLargePortrait
 
 ## Mentions
 
-- [Updating your widgets for visionOS](updating-your-widgets-for-visionos.md)
-- [Adding interactivity to widgets and Live Activities](adding-interactivity-to-widgets-and-live-activities.md)
-- [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
+- [Updating your widgets for visionOS](../updating-your-widgets-for-visionos.md)
+- [Adding interactivity to widgets and Live Activities](../adding-interactivity-to-widgets-and-live-activities.md)
+- [Preparing widgets for additional platforms, contexts, and appearances](../preparing-widgets-for-additional-contexts-and-appearances.md)
 
 #### Discussion
 
-The `systemExtraLargePortrait` widget family can appear on the Home Screen on iOS, on the Today View on iOS and iPadOS, on the Desktop on macOS, and on visionOS.  This extra-large widget appears in a portrait orientation, similar to the [`WidgetFamily.systemExtraLargePortrait`](widgetfamily/systemextralargeportrait.md) widget of a visionOS app.
+The `systemExtraLargePortrait` widget family can appear on the Home Screen on iOS, on the Today View on iOS and iPadOS, on the Desktop on macOS, and on visionOS.  This extra-large widget appears in a portrait orientation, similar to the [`WidgetFamily.systemExtraLargePortrait`](./systemextralargeportrait.md) widget of a visionOS app.
 
 ## See Also
 
-- [WidgetFamily.systemSmall](widgetfamily/systemsmall.md)
+### Accessing system families
+- [WidgetFamily.systemSmall](./systemsmall.md)
   A small widget.
-- [WidgetFamily.systemMedium](widgetfamily/systemmedium.md)
+- [WidgetFamily.systemMedium](./systemmedium.md)
   A medium-sized widget.
-- [WidgetFamily.systemLarge](widgetfamily/systemlarge.md)
+- [WidgetFamily.systemLarge](./systemlarge.md)
   A large widget.
-- [WidgetFamily.systemExtraLarge](widgetfamily/systemextralarge.md)
+- [WidgetFamily.systemExtraLarge](./systemextralarge.md)
   An extra-large widget.
 
 

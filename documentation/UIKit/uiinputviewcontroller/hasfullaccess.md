@@ -1,7 +1,8 @@
 # hasFullAccess
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the keyboard has full access.
 
@@ -18,15 +19,20 @@ A Boolean value that indicates whether the keyboard has full access.
 var hasFullAccess: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasFullAccess;
+```
+
 ## Mentions
 
-- [Configuring open access for a custom keyboard](configuring-open-access-for-a-custom-keyboard.md)
+- [Configuring open access for a custom keyboard](../configuring-open-access-for-a-custom-keyboard.md)
 
 ## See Also
 
-- [var needsInputModeSwitchKey: Bool](uiinputviewcontroller/needsinputmodeswitchkey.md)
+### Configuring the keyboard behaviors
+- [var needsInputModeSwitchKey: Bool](./needsinputmodeswitchkey.md)
   A Boolean value that indicates whether the keyboard must display an input switcher key.
-- [var hasDictationKey: Bool](uiinputviewcontroller/hasdictationkey.md)
+- [var hasDictationKey: Bool](./hasdictationkey.md)
   A Boolean value that indicates whether the keyboard has a dictation key.
 
 

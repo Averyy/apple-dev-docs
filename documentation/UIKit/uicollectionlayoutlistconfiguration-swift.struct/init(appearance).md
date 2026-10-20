@@ -1,7 +1,8 @@
 # init(appearance:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a list layout configuration with the specified appearance.
 
@@ -10,7 +11,7 @@ Creates a list layout configuration with the specified appearance.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

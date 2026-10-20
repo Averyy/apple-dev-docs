@@ -1,7 +1,8 @@
 # gaussianGradient()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Generates a gradient that varies from one color to another using a Gaussian distribution.
 
@@ -19,6 +20,10 @@ Generates a gradient that varies from one color to another using a Gaussian dist
 class func gaussianGradient() -> any CIFilter & CIGaussianGradient
 ```
 
+```objc
++ (CIFilter<CIGaussianGradient> *) gaussianGradientFilter;
+```
+
 #### Return Value
 
 The generated image.
@@ -29,10 +34,10 @@ This method generates a Gaussian gradient image. The effect uses the Gaussian ke
 
 The Gaussian gradient filter uses the following properties:
 
-- **`center`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) representing the center of the effect as x and y coordinates.
-- **`color0`**: A [`CIColor`](cicolor.md) representing the first color to use in the gradient.
-- **`color1`**: A [`CIColor`](cicolor.md) representing the second color to use in the gradient.
-- **`radius`**: A `float` representing the radius of the Gaussian distribution as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`center`**: A [`CGPoint`](../../CoreFoundation/cgpoint.md) representing the center of the effect as x and y coordinates.
+- **`color0`**: A [`CIColor`](../cicolor.md) representing the first color to use in the gradient.
+- **`color1`**: A [`CIColor`](../cicolor.md) representing the second color to use in the gradient.
+- **`radius`**: A `float` representing the radius of the Gaussian distribution as an [`NSNumber`](../../Foundation/nsnumber.md).
 
 The following code creates a filter that generates a gradient image:
 
@@ -48,17 +53,18 @@ func gaussian() -> CIImage {
 }
 ```
 
-![A photo of a Gaussian gradient that gradually changes in color from purple in the center and shifts to light blue in the periphery.](/images/com.apple.coreimage/media-3558795@2x.png)
+![A photo of a Gaussian gradient that gradually changes in color from purple in the center and shifts to light blue in the periphery.](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-3558795@2x.png)
 
 ## See Also
 
-- [class func hueSaturationValueGradient() -> any CIFilter & CIHueSaturationValueGradient](cifilter-swift.class/huesaturationvaluegradient.md)
+### Filters
+- [class func hueSaturationValueGradient() -> any CIFilter & CIHueSaturationValueGradient](./huesaturationvaluegradient%28%29.md)
   Generates a gradient representing a specified color space.
-- [class func linearGradient() -> any CIFilter & CILinearGradient](cifilter-swift.class/lineargradient.md)
+- [class func linearGradient() -> any CIFilter & CILinearGradient](./lineargradient%28%29.md)
   Generates a color gradient that varies along a linear axis between two defined endpoints.
-- [class func radialGradient() -> any CIFilter & CIRadialGradient](cifilter-swift.class/radialgradient.md)
+- [class func radialGradient() -> any CIFilter & CIRadialGradient](./radialgradient%28%29.md)
   Generates a gradient that varies radially between two circles having the same center.
-- [class func smoothLinearGradient() -> any CIFilter & CISmoothLinearGradient](cifilter-swift.class/smoothlineargradient.md)
+- [class func smoothLinearGradient() -> any CIFilter & CISmoothLinearGradient](./smoothlineargradient%28%29.md)
   Generates a gradient that blends colors along a linear axis between two defined endpoints.
 
 

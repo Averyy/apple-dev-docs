@@ -1,7 +1,8 @@
 # MPSNNReductionFeatureChannelsSumNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 12.1+
@@ -17,22 +18,26 @@
 class MPSNNReductionFeatureChannelsSumNode
 ```
 
+```objc
+@interface MPSNNReductionFeatureChannelsSumNode : MPSNNUnaryReductionNode
+```
+
 ## Topics
 
 ### Instance Properties
-- [var weight: Float](mpsnnreductionfeaturechannelssumnode/weight.md)
+- [var weight: Float](./mpsnnreductionfeaturechannelssumnode/weight.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNNUnaryReductionNode](mpsnnunaryreductionnode.md)
+- [MPSNNUnaryReductionNode](./mpsnnunaryreductionnode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

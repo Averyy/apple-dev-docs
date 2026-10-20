@@ -1,7 +1,8 @@
 # MSMessagesAppPresentationStyle.transcript
 
 **Framework**: Messages  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The iMessage app is displayed in the Messages app’s transcript or input field.
 
@@ -16,11 +17,16 @@ The iMessage app is displayed in the Messages app’s transcript or input field.
 case transcript
 ```
 
+```c
+MSMessagesAppPresentationStyleTranscript
+```
+
 ## See Also
 
-- [MSMessagesAppPresentationStyle.compact](msmessagesapppresentationstyle/compact.md)
+### Presentation Styles
+- [MSMessagesAppPresentationStyle.compact](./compact.md)
   The iMessage App is displayed inside the keyboard area.
-- [MSMessagesAppPresentationStyle.expanded](msmessagesapppresentationstyle/expanded.md)
+- [MSMessagesAppPresentationStyle.expanded](./expanded.md)
   The iMessage App expands to fill most of the screen.
 
 

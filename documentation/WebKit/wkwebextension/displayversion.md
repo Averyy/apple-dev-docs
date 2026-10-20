@@ -1,7 +1,8 @@
 # displayVersion
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized extension display version.
 
@@ -16,6 +17,10 @@ The localized extension display version.
 
 ```swift
 var displayVersion: String? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * displayVersion;
 ```
 
 #### Discussion

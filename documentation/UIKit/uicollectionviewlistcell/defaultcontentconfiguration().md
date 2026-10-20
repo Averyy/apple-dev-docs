@@ -1,7 +1,8 @@
 # defaultContentConfiguration()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves a default list content configuration for the cell’s style.
 
@@ -10,7 +11,7 @@ Retrieves a default list content configuration for the cell’s style.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

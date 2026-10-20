@@ -1,14 +1,15 @@
 # kIO64RGBAFloatPixelFormat
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIO64RGBAFloatPixelFormat = IO_FOUR_CHAR_CODE('B16F')
 ```
 

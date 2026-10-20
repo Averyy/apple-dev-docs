@@ -1,25 +1,27 @@
 # OSContainer
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 typedef OSObject OSContainer;
 ```
 
 ## See Also
 
-- [OSAsyncReference](osasyncreference.md)
-- [OSAsyncReference64](osasyncreference64.md)
-- [OSKextRequestTag](oskextrequesttag.md)
+### Typedefs
+- [OSAsyncReference](./osasyncreference.md)
+- [OSAsyncReference64](./osasyncreference64.md)
+- [OSKextRequestTag](./oskextrequesttag.md)
   Identifies a kext request made to user space.
-- [OSIterator](ositerator-8m.md)
-- [OSType](ostype.md)
+- [OSIterator](./ositerator-8m.md)
+- [OSType](./ostype.md)
 
 
 ---

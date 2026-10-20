@@ -1,7 +1,8 @@
 # CXCallDirectoryPhoneNumber
 
 **Framework**: CallKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A value that represents a phone number consisting of a country calling code followed by a sequence of digits.
 
@@ -19,13 +20,18 @@ A value that represents a phone number consisting of a country calling code foll
 typealias CXCallDirectoryPhoneNumber = Int64
 ```
 
+```c
+typedef int64_t CXCallDirectoryPhoneNumber;
+```
+
 ## Mentions
 
-- [Identifying and blocking calls](identifying-and-blocking-calls.md)
+- [Identifying and blocking calls](./identifying-and-blocking-calls.md)
 
 ## See Also
 
-- [var CXCallDirectoryPhoneNumberMax: CXCallDirectoryPhoneNumber](cxcalldirectoryphonenumbermax.md)
+### Types
+- [var CXCallDirectoryPhoneNumberMax: CXCallDirectoryPhoneNumber](./cxcalldirectoryphonenumbermax.md)
   The maximum allowable value for a phone number.
 
 

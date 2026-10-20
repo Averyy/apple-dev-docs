@@ -1,7 +1,8 @@
 # callerSecuritySession
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A value that is a placeholder for the caller’s session.
 
@@ -20,9 +21,13 @@ A value that is a placeholder for the caller’s session.
 var callerSecuritySession: SecuritySessionId { get }
 ```
 
+```c
+callerSecuritySession
+```
+
 #### Discussion
 
-When you provide this value as the `session` input to the [`SessionGetInfo(_:_:_:)`](sessiongetinfo(_:_:_:).md) function, the function will return the actual session ID via the `sessionId` output.
+When you provide this value as the `session` input to the [`SessionGetInfo(_:_:_:)`](./sessiongetinfo%28_,_,_%29.md) function, the function will return the actual session ID via the `sessionId` output.
 
 
 ---

@@ -1,7 +1,8 @@
 # isMultiThreaded()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns whether the application is multithreaded.
 
@@ -20,21 +21,26 @@ Returns whether the application is multithreaded.
 class func isMultiThreaded() -> Bool
 ```
 
+```objc
++ (BOOL) isMultiThreaded;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the application is multithreaded, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the application is multithreaded, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-An application is considered multithreaded if a thread was ever detached from the main thread using either [`detachNewThreadSelector(_:toTarget:with:)`](thread/detachnewthreadselector(_:totarget:with:).md) or [`start()`](thread/start().md). If you detached a thread in your application using a non-Cocoa API, such as the POSIX or Multiprocessing Services APIs, this method could still return [`false`](https://developer.apple.com/documentation/swift/false). The detached thread does not have to be currently running for the application to be considered multithreaded—this method only indicates whether a single thread has been spawned.
+An application is considered multithreaded if a thread was ever detached from the main thread using either [`detachNewThreadSelector(_:toTarget:with:)`](./detachnewthreadselector%28_,totarget,with%29.md) or [`start()`](./start%28%29.md). If you detached a thread in your application using a non-Cocoa API, such as the POSIX or Multiprocessing Services APIs, this method could still return [`false`](../../Swift/false.md). The detached thread does not have to be currently running for the application to be considered multithreaded—this method only indicates whether a single thread has been spawned.
 
 ## See Also
 
-- [class var current: Thread](thread/current.md)
+### Querying the Environment
+- [class var current: Thread](./current.md)
   Returns the thread object representing the current thread of execution.
-- [class var callStackReturnAddresses: [NSNumber]](thread/callstackreturnaddresses.md)
+- [class var callStackReturnAddresses: [NSNumber]](./callstackreturnaddresses.md)
   Returns an array containing the call stack return addresses.
-- [class var callStackSymbols: [String]](thread/callstacksymbols.md)
+- [class var callStackSymbols: [String]](./callstacksymbols.md)
   Returns an array containing the call stack symbols.
 
 

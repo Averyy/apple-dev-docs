@@ -1,7 +1,8 @@
 # append(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -16,6 +17,8 @@
 ```swift
 mutating func append(_ newElement: Element)
 ```
+
+Available when `Element` conforms to `USDValueProtocol`.
 
 
 ---

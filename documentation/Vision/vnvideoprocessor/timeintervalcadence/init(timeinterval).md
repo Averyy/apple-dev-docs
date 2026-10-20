@@ -1,7 +1,8 @@
 # init(timeInterval:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 14.0+
@@ -19,7 +20,8 @@ init(timeInterval: CFTimeInterval)
 
 ## See Also
 
-- [init(CFTimeInterval)](vnvideoprocessor/timeintervalcadence/init(_:).md)
+### Creating a Cadence
+- [init(CFTimeInterval)](./init%28_%29.md)
   Creates a new time-based cadence with a time interval.
 
 

@@ -1,7 +1,8 @@
 # usesFontLeading
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Uses the font leading for calculating line heights.
 
@@ -19,13 +20,18 @@ Uses the font leading for calculating line heights.
 static var usesFontLeading: NSStringDrawingOptions { get }
 ```
 
+```c
+NSStringDrawingUsesFontLeading
+```
+
 ## See Also
 
-- [static var usesLineFragmentOrigin: NSStringDrawingOptions](nsstringdrawingoptions/useslinefragmentorigin.md)
+### Constants
+- [static var usesLineFragmentOrigin: NSStringDrawingOptions](./useslinefragmentorigin.md)
   Uses the line fragment origin instead of the baseline origin.
-- [static var usesDeviceMetrics: NSStringDrawingOptions](nsstringdrawingoptions/usesdevicemetrics.md)
+- [static var usesDeviceMetrics: NSStringDrawingOptions](./usesdevicemetrics.md)
   Uses image glyph bounds instead of typographic bounds.
-- [static var truncatesLastVisibleLine: NSStringDrawingOptions](nsstringdrawingoptions/truncateslastvisibleline.md)
+- [static var truncatesLastVisibleLine: NSStringDrawingOptions](./truncateslastvisibleline.md)
   Truncates and adds the ellipsis character to the last visible line if the text doesn’t fit into the specified bounds.
 
 

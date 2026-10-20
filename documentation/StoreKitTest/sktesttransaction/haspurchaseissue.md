@@ -1,7 +1,8 @@
 # hasPurchaseIssue
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether you resolve this transaction using the test framework functions.
 
@@ -20,17 +21,22 @@ A Boolean value that indicates whether you resolve this transaction using the te
 var hasPurchaseIssue: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasPurchaseIssue;
+```
+
 #### Discussion
 
-To test interrupted purchases, first set [`interruptedPurchasesEnabled`](sktestsession/interruptedpurchasesenabled.md) to `true` before making a purchase. If [`hasPurchaseIssue`](sktesttransaction/haspurchaseissue.md) value is `true`, then resolve the identified transaction by calling [`resolveIssueForTransaction(identifier:)`](sktestsession/resolveissuefortransaction(identifier:).md).
+To test interrupted purchases, first set [`interruptedPurchasesEnabled`](../sktestsession/interruptedpurchasesenabled.md) to `true` before making a purchase. If [`hasPurchaseIssue`](./haspurchaseissue.md) value is `true`, then resolve the identified transaction by calling [`resolveIssueForTransaction(identifier:)`](../sktestsession/resolveissuefortransaction%28identifier%29.md).
 
 ## See Also
 
-- [var autoRenewingEnabled: Bool](sktesttransaction/autorenewingenabled.md)
+### Getting Test Environment States
+- [var autoRenewingEnabled: Bool](./autorenewingenabled.md)
   A Boolean value that indicates whether automatic renewal is enabled for the subscription.
-- [var isPendingPriceIncreaseConsent: Bool](sktesttransaction/ispendingpriceincreaseconsent.md)
+- [var isPendingPriceIncreaseConsent: Bool](./ispendingpriceincreaseconsent.md)
   A Boolean value that indicates whether the auto-renewable subscription has a price increase that’s awaiting user consent in the test environment.
-- [var pendingAskToBuyConfirmation: Bool](sktesttransaction/pendingasktobuyconfirmation.md)
+- [var pendingAskToBuyConfirmation: Bool](./pendingasktobuyconfirmation.md)
   A Boolean value that indicates whether the transaction is awaiting an Ask to Buy confirmation.
 
 

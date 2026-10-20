@@ -1,7 +1,8 @@
 # FocusEvent
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface FocusEvent
 ```
 
 ## Topics
 
 ### Instance Properties
-- [relatedTarget](focusevent/1633988-relatedtarget.md)
+- [relatedTarget](./focusevent/api-1633988-relatedtarget.md)
 
 ## Relationships
 
 ### Inherits From
-- [UIEvent](uievent.md)
+- [UIEvent](./uievent.md)
 
 
 ---

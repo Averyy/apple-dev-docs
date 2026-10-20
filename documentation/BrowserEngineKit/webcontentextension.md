@@ -1,7 +1,8 @@
 # WebContentExtension
 
 **Framework**: BrowserEngineKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for an app extension that manages web content for your browser app.
 
@@ -23,26 +24,27 @@ When you add an object that conforms to this protocol in your extension’s Xcod
 ## Topics
 
 ### Handling incoming XPC connections
-- [func handle(xpcConnection: xpc_connection_t)](webcontentextension/handle(xpcconnection:).md)
+- [func handle(xpcConnection: xpc_connection_t)](./webcontentextension/handle%28xpcconnection%29.md)
   Accepts or rejects an incoming XPC connection.
 
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../extensionfoundation/appextension.md)
-- [RestrictedSandboxAppliable](restrictedsandboxappliable.md)
+- [AppExtension](../ExtensionFoundation/appextension.md)
+- [RestrictedSandboxAppliable](./restrictedsandboxappliable.md)
 
 ## See Also
 
-- [struct WebContentExtensionConfiguration](webcontentextensionconfiguration.md)
+### Browser extensions
+- [struct WebContentExtensionConfiguration](./webcontentextensionconfiguration.md)
   An opaque configuration structure for a web content extension.
-- [protocol NetworkingExtension](networkingextension.md)
+- [protocol NetworkingExtension](./networkingextension.md)
   A protocol for an app extension that manages network connections for your browser app.
-- [struct NetworkingExtensionConfiguration](networkingextensionconfiguration.md)
+- [struct NetworkingExtensionConfiguration](./networkingextensionconfiguration.md)
   An opaque configuration structure for a networking extension.
-- [protocol RenderingExtension](renderingextension.md)
+- [protocol RenderingExtension](./renderingextension.md)
   A protocol for an app extension that manages graphics rendering for your browser app.
-- [struct RenderingExtensionConfiguration](renderingextensionconfiguration.md)
+- [struct RenderingExtensionConfiguration](./renderingextensionconfiguration.md)
   An opaque configuration structure for a rendering extension.
 
 

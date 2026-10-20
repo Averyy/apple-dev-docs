@@ -1,7 +1,8 @@
 # readOnlyPropertyAttribute
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A class property for a read-only property attribute.
 
@@ -15,9 +16,13 @@ A class property for a read-only property attribute.
 class var readOnlyPropertyAttribute: CMIOExtensionPropertyAttributes<AnyObject> { get }
 ```
 
+```objc
+@property (class, readonly) CMIOExtensionPropertyAttributes * readOnlyPropertyAttribute;
+```
+
 #### Discussion
 
-The attribute doesn’t contain values for its [`minValue`](cmioextensionpropertyattributes/minvalue.md), [`maxValue`](cmioextensionpropertyattributes/maxvalue.md), or [`validValues`](cmioextensionpropertyattributes/validvalues.md) properties.
+The attribute doesn’t contain values for its [`minValue`](./minvalue.md), [`maxValue`](./maxvalue.md), or [`validValues`](./validvalues.md) properties.
 
 
 ---

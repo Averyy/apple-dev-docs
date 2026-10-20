@@ -1,7 +1,8 @@
 # update(from:count:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Update this pointer’s initialized memory with the specified number of instances, copied from the given pointer’s memory.
 

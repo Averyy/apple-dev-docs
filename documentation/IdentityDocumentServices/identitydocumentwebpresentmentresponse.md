@@ -1,14 +1,15 @@
 # IdentityDocumentWebPresentmentResponse
 
 **Framework**: IdentityDocumentServices  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A closed protocol that indicates that the system uses this object to represent a web presentment response.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 26.0+
 
 ## Declaration
@@ -20,22 +21,23 @@ protocol IdentityDocumentWebPresentmentResponse : Sendable
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [ISO18013MobileDocumentResponse](iso18013mobiledocumentresponse.md)
+- [ISO18013MobileDocumentResponse](./iso18013mobiledocumentresponse.md)
 
 ## See Also
 
-- [struct IdentityDocumentWebPresentmentRawRequestValidator](identitydocumentwebpresentmentrawrequestvalidator.md)
+### Implementing the web presentment flow into your browser
+- [struct IdentityDocumentWebPresentmentRawRequestValidator](./identitydocumentwebpresentmentrawrequestvalidator.md)
   A type that contains functions for validating the incoming web presentment raw request.
-- [protocol IdentityDocumentWebPresentmentRequest](identitydocumentwebpresentmentrequest.md)
+- [protocol IdentityDocumentWebPresentmentRequest](./identitydocumentwebpresentmentrequest.md)
   A closed protocol that indicates that the system uses this object to perform an identity document web presentment
-- [struct ISO18013MobileDocumentRequest](iso18013mobiledocumentrequest.md)
+- [struct ISO18013MobileDocumentRequest](./iso18013mobiledocumentrequest.md)
   A type that represents an incoming ISO 18013-5 mobile document request.
-- [struct ISO18013MobileDocumentResponse](iso18013mobiledocumentresponse.md)
+- [struct ISO18013MobileDocumentResponse](./iso18013mobiledocumentresponse.md)
   A type representing the document response from a web presentment request.
-- [struct IdentityDocumentWebPresentmentRawRequest](identitydocumentwebpresentmentrawrequest.md)
+- [struct IdentityDocumentWebPresentmentRawRequest](./identitydocumentwebpresentmentrawrequest.md)
   A struct that defines the type that represents a raw web presentment request.
 
 

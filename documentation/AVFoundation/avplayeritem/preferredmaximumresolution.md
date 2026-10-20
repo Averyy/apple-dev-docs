@@ -1,7 +1,8 @@
 # preferredMaximumResolution
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The desired maximum resolution of a video that is to be downloaded.
 
@@ -20,17 +21,22 @@ nonisolated
 var preferredMaximumResolution: CGSize { get set }
 ```
 
+```objc
+@property CGSize preferredMaximumResolution;
+```
+
 #### Discussion
 
-Defaults to [`CGSizeZero`](https://developer.apple.com/documentation/coregraphics/cgsizezero), which indicates there is no limit on the video resolution. Any other value indicates a preferred maximum video resolution. This property only applies to HTTP Live Streaming assets.
+Defaults to [`CGSizeZero`](../../CoreGraphics/cgsizezero.md), which indicates there is no limit on the video resolution. Any other value indicates a preferred maximum video resolution. This property only applies to HTTP Live Streaming assets.
 
 ## See Also
 
-- [var presentationSize: CGSize](avplayeritem/presentationsize.md)
+### Configuring presentation
+- [var presentationSize: CGSize](./presentationsize.md)
   The size at which the visual portion of the item is presented by the player.
-- [var videoApertureMode: AVVideoApertureMode](avplayeritem/videoaperturemode.md)
+- [var videoApertureMode: AVVideoApertureMode](./videoaperturemode.md)
   The video aperture mode to apply during playback.
-- [struct AVVideoApertureMode](avvideoaperturemode.md)
+- [struct AVVideoApertureMode](../avvideoaperturemode.md)
   A value that describes how a video is scaled or cropped.
 
 

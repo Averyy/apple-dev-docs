@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Retrieves instances matching the supplied comparators.
@@ -12,7 +13,7 @@ Retrieves instances matching the supplied comparators.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -30,9 +31,10 @@ func entities(matching comparators: [Self.ComparatorMappingType], mode: Self.Com
 
 ## See Also
 
-- [EntityPropertyQuery.Sort](entitypropertyquery/sort.md)
-- [EntityPropertyQuery.ComparatorMode](entitypropertyquery/comparatormode.md)
-- [enum EntityQueryComparatorMode](entityquerycomparatormode.md)
+### Searching for entities
+- [EntityPropertyQuery.Sort](./sort.md)
+- [EntityPropertyQuery.ComparatorMode](./comparatormode.md)
+- [enum EntityQueryComparatorMode](../entityquerycomparatormode.md)
   Modes that determine how to apply a query’s comparators.
 
 

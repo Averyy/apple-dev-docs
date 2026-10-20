@@ -1,7 +1,8 @@
 # voiceTraits
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The traits of a voice.
 
@@ -20,23 +21,28 @@ The traits of a voice.
 var voiceTraits: AVSpeechSynthesisVoice.Traits { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVSpeechSynthesisVoiceTraits voiceTraits;
+```
+
 ## See Also
 
-- [var identifier: String](avspeechsynthesisvoice/identifier.md)
+### Inspecting voices
+- [var identifier: String](./identifier.md)
   The unique identifier of a voice.
-- [var name: String](avspeechsynthesisvoice/name.md)
+- [var name: String](./name.md)
   The name of a voice.
-- [var quality: AVSpeechSynthesisVoiceQuality](avspeechsynthesisvoice/quality.md)
+- [var quality: AVSpeechSynthesisVoiceQuality](./quality.md)
   The speech quality of a voice.
-- [var gender: AVSpeechSynthesisVoiceGender](avspeechsynthesisvoice/gender.md)
+- [var gender: AVSpeechSynthesisVoiceGender](./gender.md)
   The gender for a voice.
-- [var audioFileSettings: [String : Any]](avspeechsynthesisvoice/audiofilesettings.md)
+- [var audioFileSettings: [String : Any]](./audiofilesettings.md)
   A dictionary that contains audio file settings.
-- [enum AVSpeechSynthesisVoiceQuality](avspeechsynthesisvoicequality.md)
+- [enum AVSpeechSynthesisVoiceQuality](../avspeechsynthesisvoicequality.md)
   The speech quality of a voice.
-- [enum AVSpeechSynthesisVoiceGender](avspeechsynthesisvoicegender.md)
+- [enum AVSpeechSynthesisVoiceGender](../avspeechsynthesisvoicegender.md)
   The gender for a voice.
-- [AVSpeechSynthesisVoice.Traits](avspeechsynthesisvoice/traits.md)
+- [AVSpeechSynthesisVoice.Traits](./traits.md)
   Traits that describe a voice.
 
 

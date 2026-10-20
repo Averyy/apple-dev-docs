@@ -1,7 +1,8 @@
 # positiveEdgeInset
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance from each positive edge (+X, +Y, +Z) of the clip bounds over which opacity fades to 0, expressed in local coordinate space units.
 
@@ -28,7 +29,8 @@ Values range from `0.0` to the half-extent of the bounding box on each axis. For
 
 ## See Also
 
-- [var negativeEdgeInset: SIMD3<Float>](clippingcomponent/featherededge-swift.struct/negativeedgeinset.md)
+### Configuring edge insets
+- [var negativeEdgeInset: SIMD3<Float>](./negativeedgeinset.md)
   The distance from each negative edge (-X, -Y, -Z) of the clip bounds over which opacity fades to 0, expressed in local coordinate space units.
 
 

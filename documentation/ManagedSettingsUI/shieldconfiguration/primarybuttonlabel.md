@@ -1,7 +1,8 @@
 # primaryButtonLabel
 
 **Framework**: Managed Settings UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The label of the topmost rounded rectangle button.
 
@@ -18,7 +19,8 @@ let primaryButtonLabel: ShieldConfiguration.Label?
 
 ## See Also
 
-- [let primaryButtonBackgroundColor: UIColor?](shieldconfiguration/primarybuttonbackgroundcolor.md)
+### Configure the primary button
+- [let primaryButtonBackgroundColor: UIColor?](./primarybuttonbackgroundcolor.md)
   The color to fill the contents of the rounded rectangle primary button.
 
 

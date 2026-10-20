@@ -1,7 +1,8 @@
 # externalMetadata
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of additional metadata for the player item to supplement or replace an asset’s embedded metadata.
 
@@ -9,7 +10,7 @@ An array of additional metadata for the player item to supplement or replace an 
 - iOS 12.2+
 - iPadOS 12.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,16 +19,20 @@ An array of additional metadata for the player item to supplement or replace an 
 var externalMetadata: [AVMetadataItem] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<AVMetadataItem *> * externalMetadata;
+```
+
 #### Discussion
 
-[`AVPlayerViewController`](https://developer.apple.com/documentation/avkit/avplayerviewcontroller) supports displaying the following metadata identifiers:
+[`AVPlayerViewController`](../../AVKit/avplayerviewcontroller.md) supports displaying the following metadata identifiers:
 
-- [`commonKeyTitle`](avmetadatakey/commonkeytitle.md)
-- [`iTunesMetadataTrackSubTitle`](avmetadataidentifier/itunesmetadatatracksubtitle.md)
-- [`commonIdentifierArtwork`](avmetadataidentifier/commonidentifierartwork.md)
-- [`commonKeyDescription`](avmetadatakey/commonkeydescription.md)
-- [`iTunesMetadataKeyContentRating`](avmetadatakey/itunesmetadatakeycontentrating.md)
-- [`quickTimeMetadataKeyGenre`](avmetadatakey/quicktimemetadatakeygenre.md)
+- [`commonKeyTitle`](../avmetadatakey/commonkeytitle.md)
+- [`iTunesMetadataTrackSubTitle`](../avmetadataidentifier/itunesmetadatatracksubtitle.md)
+- [`commonIdentifierArtwork`](../avmetadataidentifier/commonidentifierartwork.md)
+- [`commonKeyDescription`](../avmetadatakey/commonkeydescription.md)
+- [`iTunesMetadataKeyContentRating`](../avmetadatakey/itunesmetadatakeycontentrating.md)
+- [`quickTimeMetadataKeyGenre`](../avmetadatakey/quicktimemetadatakeygenre.md)
 
 
 ---

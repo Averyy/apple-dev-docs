@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that specifies whether the drag interaction responds to touches and is allowed to participate in a drag activity.
 
@@ -17,9 +18,14 @@ A Boolean value that specifies whether the drag interaction responds to touches 
 var isEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isEnabled) BOOL enabled;
+```
+
 ## See Also
 
-- [class var isEnabledByDefault: Bool](uidraginteraction/isenabledbydefault.md)
+### Enabling the interactions
+- [class var isEnabledByDefault: Bool](./isenabledbydefault.md)
   A device-dependent Boolean value that indicates whether a newly-instantiated drag interaction is allowed to participate in a drag activity.
 
 

@@ -1,7 +1,8 @@
 # eventType
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A type for the event that describes the discovery status.
 
@@ -9,7 +10,7 @@ A type for the event that describes the discovery status.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,16 @@ A type for the event that describes the discovery status.
 var eventType: DDDeviceEvent.EventType { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) DDEventType eventType;
+```
+
 ## See Also
 
-- [DDDeviceEvent.EventType](dddeviceevent/eventtype-swift.enum.md)
+### Configuring a device event
+- [DDDeviceEvent.EventType](./eventtype-swift.enum.md)
   Identifiers for the types of events that occur in the device discovery life cycle.
-- [var device: DDDevice](dddeviceevent/device.md)
+- [var device: DDDevice](./device.md)
   An object that describes a third-party media receiver.
 
 

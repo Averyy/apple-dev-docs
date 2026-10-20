@@ -1,7 +1,8 @@
 # TextDecoder
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,18 +10,18 @@
 
 ## Declaration
 
-```swift
+```
 interface TextDecoder
 ```
 
 ## Topics
 
 ### Instance Properties
-- [encoding](textdecoder/2871159-encoding.md)
-- [fatal](textdecoder/2871186-fatal.md)
-- [ignoreBOM](textdecoder/2871150-ignorebom.md)
+- [encoding](./textdecoder/api-2871159-encoding.md)
+- [fatal](./textdecoder/api-2871186-fatal.md)
+- [ignoreBOM](./textdecoder/api-2871150-ignorebom.md)
 ### Instance Methods
-- [decode](textdecoder/2871227-decode.md)
+- [decode](./textdecoder/api-2871227-decode.md)
 
 
 ---

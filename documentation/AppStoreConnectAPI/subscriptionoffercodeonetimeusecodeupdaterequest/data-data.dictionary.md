@@ -1,7 +1,8 @@
 # SubscriptionOfferCodeOneTimeUseCodeUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a subscription offer code one time use code update request.
 
@@ -10,21 +11,21 @@ The request body you use to update a subscription offer code one time use code u
 
 ## Declaration
 
-```swift
+```
 object SubscriptionOfferCodeOneTimeUseCodeUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionOfferCodeOneTimeUseCodeUpdateRequest.Data.Attributes](subscriptionoffercodeonetimeusecodeupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object SubscriptionOfferCodeOneTimeUseCodeUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a subscription offer code one time use code update request resource.
 
 ## Properties
 
 - `attributes` (SubscriptionOfferCodeOneTimeUseCodeUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptionOfferCodeOneTimeUseCodes`
 
 
 ---

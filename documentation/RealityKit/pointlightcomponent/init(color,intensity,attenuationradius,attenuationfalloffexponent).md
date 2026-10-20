@@ -1,7 +1,8 @@
 # init(color:intensity:attenuationRadius:attenuationFalloffExponent:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a point light component with a configuration.
 
@@ -9,6 +10,12 @@ Creates a point light component with a configuration.
 - macOS 15.0+
 
 ## Declaration
+
+```swift
+init(color: PointLightComponent.Color = .white, intensity: Float = 26963.76, attenuationRadius: Float = 10.0, attenuationFalloffExponent: Float = 2.0)
+```
+
+**Other overloads**:
 
 ```swift
 init(color: PointLightComponent.Color = .white, intensity: Float = 26963.76, attenuationRadius: Float = 10.0, attenuationFalloffExponent: Float = 2.0)

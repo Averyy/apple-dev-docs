@@ -1,6 +1,7 @@
 # Creating a Scene with a Transparent Background
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Set a transparent background color to show the content of the views below.
 
@@ -8,15 +9,16 @@ Set a transparent background color to show the content of the views below.
 
 To overlay content rendered with SpriteKit on top of another view, follow these steps:
 
-1. Set the scene’s [`backgroundColor`](skscene/backgroundcolor.md) to clear.
-2. Enable [`allowsTransparency`](skview/allowstransparency.md) on the view.
-3. Set the view’s [`backgroundColor`](https://developer.apple.com/documentation/uikit/uiview/backgroundcolor) to `clear`.
+1. Set the scene’s [`backgroundColor`](./skscene/backgroundcolor.md) to clear.
+2. Enable [`allowsTransparency`](./skview/allowstransparency.md) on the view.
+3. Set the view’s [`backgroundColor`](../UIKit/uiview/backgroundcolor.md) to `clear`.
 
 ## See Also
 
-- [var view: SKView?](skscene/view.md)
+### Setting the Background Appearance
+- [var view: SKView?](./skscene/view.md)
   The view that is currently presenting the scene.
-- [var backgroundColor: UIColor](skscene/backgroundcolor.md)
+- [var backgroundColor: UIColor](./skscene/backgroundcolor.md)
   The background color of the scene.
 
 

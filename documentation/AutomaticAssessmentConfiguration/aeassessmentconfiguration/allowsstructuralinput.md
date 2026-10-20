@@ -1,7 +1,8 @@
 # allowsStructuralInput
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to allow Chinese and Japanese structural input during an assessment.
 
@@ -15,9 +16,13 @@ A Boolean value that indicates whether to allow Chinese and Japanese structural 
 var allowsStructuralInput: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL allowsStructuralInput;
+```
+
 #### Discussion
 
-Chinese and Japanese structural input methods allow users to enter characters using component-based input. An assessment session disables structural input by default, but you can allow it by setting [`allowsStructuralInput`](aeassessmentconfiguration/allowsstructuralinput.md) to `true` in the [`AEAssessmentConfiguration`](aeassessmentconfiguration.md) instance that you use to initialize a session.
+Chinese and Japanese structural input methods allow users to enter characters using component-based input. An assessment session disables structural input by default, but you can allow it by setting [`allowsStructuralInput`](./allowsstructuralinput.md) to `true` in the [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance that you use to initialize a session.
 
 
 ---

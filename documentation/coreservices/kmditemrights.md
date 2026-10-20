@@ -1,7 +1,8 @@
 # kMDItemRights
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Provides a link to information about rights held in and over the resource. A CFString.
 
@@ -12,6 +13,10 @@ Provides a link to information about rights held in and over the resource. A CFS
 
 ```swift
 let kMDItemRights: CFString!
+```
+
+```c
+const CFStringRef kMDItemRights;
 ```
 
 #### Discussion

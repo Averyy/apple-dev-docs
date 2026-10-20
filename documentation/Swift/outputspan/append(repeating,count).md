@@ -1,7 +1,8 @@
 # append(repeating:count:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Repeatedly append an element to this span.
 

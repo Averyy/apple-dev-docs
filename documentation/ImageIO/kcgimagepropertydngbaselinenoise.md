@@ -1,7 +1,8 @@
 # kCGImagePropertyDNGBaselineNoise
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The relative noise level of the camera model at an ISO of 100.
 
@@ -20,11 +21,16 @@ The relative noise level of the camera model at an ISO of 100.
 let kCGImagePropertyDNGBaselineNoise: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyDNGBaselineNoise;
+```
+
 ## See Also
 
-- [let kCGImagePropertyDNGBaselineExposure: CFString](kcgimagepropertydngbaselineexposure.md)
+### Exposure
+- [let kCGImagePropertyDNGBaselineExposure: CFString](./kcgimagepropertydngbaselineexposure.md)
   The amount by which to adjust the zero point of the exposure, specified in EV units.
-- [let kCGImagePropertyDNGBaselineExposureOffset: CFString](kcgimagepropertydngbaselineexposureoffset.md)
+- [let kCGImagePropertyDNGBaselineExposureOffset: CFString](./kcgimagepropertydngbaselineexposureoffset.md)
   The amount of EV units to add to the baseline exposure during image rendering.
 
 

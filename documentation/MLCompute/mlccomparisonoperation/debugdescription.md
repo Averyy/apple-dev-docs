@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual description of the comparison operation, suitable for debugging.
 
@@ -18,20 +19,25 @@ A textual description of the comparison operation, suitable for debugging.
 var debugDescription: String { get }
 ```
 
+```c
+NSString *MLCComparisonOperationDebugDescription(MLCComparisonOperation operation);
+```
+
 ## See Also
 
-- [MLCComparisonOperation.equal](mlccomparisonoperation/equal.md)
-- [MLCComparisonOperation.greater](mlccomparisonoperation/greater.md)
-- [MLCComparisonOperation.greaterOrEqual](mlccomparisonoperation/greaterorequal.md)
-- [MLCComparisonOperation.less](mlccomparisonoperation/less.md)
-- [MLCComparisonOperation.lessOrEqual](mlccomparisonoperation/lessorequal.md)
-- [MLCComparisonOperation.logicalAND](mlccomparisonoperation/logicaland.md)
-- [MLCComparisonOperation.logicalNAND](mlccomparisonoperation/logicalnand.md)
-- [MLCComparisonOperation.logicalNOR](mlccomparisonoperation/logicalnor.md)
-- [MLCComparisonOperation.logicalNOT](mlccomparisonoperation/logicalnot.md)
-- [MLCComparisonOperation.logicalOR](mlccomparisonoperation/logicalor.md)
-- [MLCComparisonOperation.logicalXOR](mlccomparisonoperation/logicalxor.md)
-- [MLCComparisonOperation.notEqual](mlccomparisonoperation/notequal.md)
+### Enumeration Cases
+- [MLCComparisonOperation.equal](./equal.md)
+- [MLCComparisonOperation.greater](./greater.md)
+- [MLCComparisonOperation.greaterOrEqual](./greaterorequal.md)
+- [MLCComparisonOperation.less](./less.md)
+- [MLCComparisonOperation.lessOrEqual](./lessorequal.md)
+- [MLCComparisonOperation.logicalAND](./logicaland.md)
+- [MLCComparisonOperation.logicalNAND](./logicalnand.md)
+- [MLCComparisonOperation.logicalNOR](./logicalnor.md)
+- [MLCComparisonOperation.logicalNOT](./logicalnot.md)
+- [MLCComparisonOperation.logicalOR](./logicalor.md)
+- [MLCComparisonOperation.logicalXOR](./logicalxor.md)
+- [MLCComparisonOperation.notEqual](./notequal.md)
 
 
 ---

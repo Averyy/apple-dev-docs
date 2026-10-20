@@ -1,7 +1,8 @@
 # SuspendingClock.Duration
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 16.0+

@@ -1,7 +1,8 @@
 # maskAmount
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount by which to mask the cells in a collection view.
 
@@ -14,6 +15,10 @@ The amount by which to mask the cells in a collection view.
 var maskAmount: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CGFloat maskAmount;
+```
+
 #### Discussion
 
 Use the `maskAmount` property to change how much masking the collection view applies to its cells. Setting the value of the property on the layout updates the `maskAmount` value of all the cells.
@@ -22,11 +27,12 @@ This property can take on a float value between `0` and `1.0`. A value of `0` in
 
 The default value of this property is `1.0`.
 
-![Diagrams showing a fully masked cell with a maskAmount value of 1.0, and an unmasked cell with a maskAmount value of 0.0.](/images/com.apple.tvuikit/media-4142366@2x.png)
+![Diagrams showing a fully masked cell with a maskAmount value of 1.0, and an unmasked cell with a maskAmount value of 0.0.](https://developer.apple.com/tutorials/images/com.apple.tvuikit/media-4142366@2x.png)
 
 ## See Also
 
-- [var maskInset: UIEdgeInsets](tvcollectionviewfullscreenlayout/maskinset.md)
+### Configuring cell masks
+- [var maskInset: UIEdgeInsets](./maskinset.md)
   The edge insets of the cell mask.
 
 

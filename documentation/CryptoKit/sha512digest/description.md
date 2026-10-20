@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A human-readable description of the digest.
 

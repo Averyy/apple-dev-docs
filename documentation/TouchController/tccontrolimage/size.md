@@ -1,7 +1,8 @@
 # size
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the image in points.
 
@@ -16,15 +17,20 @@ The size of the image in points.
 var size: CGSize { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CGSize size;
+```
+
 ## See Also
 
-- [var highlightTexture: (any MTLTexture)?](tccontrolimage/highlighttexture.md)
+### Inspecting the control image
+- [var highlightTexture: (any MTLTexture)?](./highlighttexture.md)
   The Metal texture to use for the image when highlighted. May be `nil`.
-- [var offset: CGPoint](tccontrolimage/offset.md)
+- [var offset: CGPoint](./offset.md)
   The offset from the center of the parent control in points.
-- [var texture: any MTLTexture](tccontrolimage/texture.md)
+- [var texture: any MTLTexture](./texture.md)
   The Metal texture to use for the image.
-- [var tintColor: CGColor](tccontrolimage/tintcolor.md)
+- [var tintColor: CGColor](./tintcolor.md)
   The color tint to apply to the texture. The color ref is retained.
 
 

@@ -1,7 +1,8 @@
 # subscript(dynamicMember:)
 
 **Framework**: WidgetKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns the widget environment variants for a key path to an environment values instance.
 

@@ -1,7 +1,8 @@
 # errSecSuccess
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 No error.
 
@@ -18,6 +19,10 @@ No error.
 
 ```swift
 var errSecSuccess: OSStatus { get }
+```
+
+```c
+errSecSuccess
 ```
 
 

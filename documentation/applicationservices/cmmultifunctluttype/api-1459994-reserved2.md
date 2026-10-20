@@ -1,7 +1,8 @@
 # reserved2
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
@@ -10,6 +11,10 @@
 
 ```swift
 var reserved2: UInt16
+```
+
+```c
+UInt16 reserved2;
 ```
 
 

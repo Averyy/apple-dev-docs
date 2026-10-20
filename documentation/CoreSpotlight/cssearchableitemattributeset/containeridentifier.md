@@ -1,7 +1,8 @@
 # containerIdentifier
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the container to which the item belongs.
 
@@ -18,13 +19,18 @@ The identifier of the container to which the item belongs.
 var containerIdentifier: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * containerIdentifier;
+```
+
 ## See Also
 
-- [var containerDisplayName: String?](cssearchableitemattributeset/containerdisplayname.md)
+### Describing containment
+- [var containerDisplayName: String?](./containerdisplayname.md)
   A localized string that specifies the name of a container to which the item belongs, suitable to display in the user interface.
-- [var containerOrder: NSNumber?](cssearchableitemattributeset/containerorder.md)
+- [var containerOrder: NSNumber?](./containerorder.md)
   The order of the item within the container.
-- [var containerTitle: String?](cssearchableitemattributeset/containertitle.md)
+- [var containerTitle: String?](./containertitle.md)
   The title of the container to which the item belongs.
 
 

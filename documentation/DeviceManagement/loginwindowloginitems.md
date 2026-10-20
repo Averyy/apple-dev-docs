@@ -1,7 +1,8 @@
 # LoginWindowLoginItems
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures login behavior.
 
@@ -10,7 +11,7 @@ The payload that configures login behavior.
 
 ## Declaration
 
-```swift
+```
 object LoginWindowLoginItems
 ```
 
@@ -18,7 +19,7 @@ object LoginWindowLoginItems
 
 Specify `loginwindow` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `loginwindow` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -68,17 +69,22 @@ Specify `loginwindow` as the payload type.
 
 ## Properties
 
-- `DisableLoginItemsSuppression` (boolean): If `true`, the system prevents the user from disabling login item launches by using the Shift key. Available: macOS all+
+- `DisableLoginItemsSuppression` (boolean): If `true`, the system prevents the user from disabling login item launches by using the Shift key.
+
+  Available: macOS all+
+
+  **Default**: `false`
 
 ## See Also
 
-- [object LoginItemsManagedItems](loginitemsmanageditems.md)
+### Login
+- [object LoginItemsManagedItems](./loginitemsmanageditems.md)
   The payload that configures a device’s login items.
-- [object LoginWindow](loginwindow.md)
+- [object LoginWindow](./loginwindow.md)
   The payload that configures Login Window behavior.
-- [object LoginWindowScripts](loginwindowscripts.md)
+- [object LoginWindowScripts](./loginwindowscripts.md)
   The payload that configures scripts to run at login and logout.
-- [object ServiceManagementManagedLoginItems](servicemanagementmanagedloginitems.md)
+- [object ServiceManagementManagedLoginItems](./servicemanagementmanagedloginitems.md)
   This payload that configures managed login items, which auto-enables and auto-allows matched items.
 
 

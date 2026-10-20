@@ -1,7 +1,8 @@
 # init(_:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a section with the provided section content.
 
@@ -21,6 +22,35 @@ Creates a section with the provided section content.
 init(_ titleKey: LocalizedStringKey, @ContentBuilder content: () -> Content)
 ```
 
+Available when `Parent` is `Text` and `Footer` is `EmptyView`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+init(_ titleResource: LocalizedStringResource, @ContentBuilder content: () -> Content)
+```
+
+```swift
+@export(implementation)
+init<S>(_ title: S, @ContentBuilder content: () -> Content) where S : StringProtocol
+```
+
+```swift
+@export(implementation)
+nonisolated init<V>(_ titleResource: LocalizedStringResource, @TableRowBuilder<V> content: () -> Content) where Parent == TableHeaderRowContent<V, Text>, Footer == EmptyTableRowContent<V>, V == Content.TableRowValue
+```
+
+```swift
+nonisolated
+init<V, S>(_ title: S, @TableRowBuilder<V> content: () -> Content) where Parent == TableHeaderRowContent<V, Text>, Footer == EmptyTableRowContent<V>, V == Content.TableRowValue, S : StringProtocol
+```
+
+```swift
+nonisolated
+init<V>(_ titleKey: LocalizedStringKey, @TableRowBuilder<V> content: () -> Content) where Parent == TableHeaderRowContent<V, Text>, Footer == EmptyTableRowContent<V>, V == Content.TableRowValue
+```
+
 ## Parameters
 
 - `titleKey`: The key for the section’s localized title, which describes the contents of the section.
@@ -28,7 +58,8 @@ init(_ titleKey: LocalizedStringKey, @ContentBuilder content: () -> Content)
 
 ## See Also
 
-- [init(content:)](section/init(content:).md)
+### Creating a section
+- [init(content:)](./init%28content%29.md)
   Creates a section with the provided section content.
 
 

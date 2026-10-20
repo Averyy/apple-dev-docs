@@ -1,7 +1,8 @@
 # init(device:kernelDiameter:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a filter for a particular kernel size and device.
 
@@ -19,6 +20,10 @@ Initializes a filter for a particular kernel size and device.
 init(device: any MTLDevice, kernelDiameter: Int)
 ```
 
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device kernelDiameter:(NSUInteger) kernelDiameter;
+```
+
 #### Return Value
 
 An initialized median filter object.
@@ -30,9 +35,10 @@ An initialized median filter object.
 
 ## See Also
 
-- [class func maxKernelDiameter() -> Int](mpsimagemedian/maxkerneldiameter.md)
+### Methods
+- [class func maxKernelDiameter() -> Int](./maxkerneldiameter%28%29.md)
   Queries the maximum diameter, in pixels, of the filter window supported by the median filter.
-- [class func minKernelDiameter() -> Int](mpsimagemedian/minkerneldiameter.md)
+- [class func minKernelDiameter() -> Int](./minkerneldiameter%28%29.md)
   Queries the minimum diameter, in pixels, of the filter window supported by the median filter.
 
 

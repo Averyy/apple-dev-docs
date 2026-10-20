@@ -1,7 +1,8 @@
 # EAAccessoryDidDisconnect
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that is posted when an accessory is disconnected and no longer available for your application to use.
 
@@ -21,13 +22,14 @@ static let EAAccessoryDidDisconnect: NSNotification.Name
 
 #### Discussion
 
-The notification object is the shared accessory manager. The `userInfo` dictionary contains an [`EAAccessoryKey`](https://developer.apple.com/documentation/externalaccessory/eaaccessorykey), whose value is the [`EAAccessory`](https://developer.apple.com/documentation/externalaccessory/eaaccessory) object representing the accessory that was disconnected. Before delivery of this notification can occur, you must call the [`registerForLocalNotifications()`](https://developer.apple.com/documentation/externalaccessory/eaaccessorymanager/registerforlocalnotifications()) method to let the system know you are interested in receiving this notification.
+The notification object is the shared accessory manager. The `userInfo` dictionary contains an [`EAAccessoryKey`](../../../ExternalAccessory/eaaccessorykey.md), whose value is the [`EAAccessory`](../../../ExternalAccessory/eaaccessory.md) object representing the accessory that was disconnected. Before delivery of this notification can occur, you must call the [`registerForLocalNotifications()`](../../../ExternalAccessory/eaaccessorymanager/registerforlocalnotifications%28%29.md) method to let the system know you are interested in receiving this notification.
 
-If your accessory manager has a delegate, the delegate can use the [`accessoryDidDisconnect(_:)`](https://developer.apple.com/documentation/externalaccessory/eaaccessorydelegate/accessorydiddisconnect(_:)) method to receive this notification instead.
+If your accessory manager has a delegate, the delegate can use the [`accessoryDidDisconnect(_:)`](../../../ExternalAccessory/eaaccessorydelegate/accessorydiddisconnect%28_%29.md) method to receive this notification instead.
 
 ## See Also
 
-- [static let EAAccessoryDidConnect: NSNotification.Name](nsnotification/name-swift.struct/eaaccessorydidconnect.md)
+### External Accessory
+- [static let EAAccessoryDidConnect: NSNotification.Name](./eaaccessorydidconnect.md)
   A notification that the system sends when an accessory becomes connected and available for your application to use.
 
 

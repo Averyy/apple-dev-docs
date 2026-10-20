@@ -1,7 +1,8 @@
 # init(sourceFrame:nextFrame:opticalFlow:interpolationPhase:submissionMode:destinationFrames:)
 
 **Framework**: Video Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new frame rate conversion parameters object.
 

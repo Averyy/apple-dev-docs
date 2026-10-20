@@ -1,7 +1,8 @@
 # kAESameProcess
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The source of the Apple event is the same application that received the event (the target application and the source application are the same).
 

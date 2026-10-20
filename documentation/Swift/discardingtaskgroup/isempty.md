@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the group has any remaining tasks.
 

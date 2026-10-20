@@ -1,10 +1,11 @@
 # init(manufacturerID:effectID:variantID:settingsVersion:numberOfSettings:settings:)
 
 **Framework**: Audio Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

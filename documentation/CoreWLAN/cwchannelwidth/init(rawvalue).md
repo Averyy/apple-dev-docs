@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core WLAN  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 10.7+

@@ -1,7 +1,8 @@
 # strokeStart
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unit distance along the polygon where the stroke starts.
 
@@ -19,13 +20,18 @@ The unit distance along the polygon where the stroke starts.
 var strokeStart: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CGFloat strokeStart;
+```
+
 #### Discussion
 
-Use this property and [`strokeEnd`](mkpolygonrenderer/strokeend.md) to render a portion of the polygon. Use [`location(atPointIndex:)`](mkmultipoint/location(atpointindex:).md) to get unit distance locations for point indices along the polygon.
+Use this property and [`strokeEnd`](./strokeend.md) to render a portion of the polygon. Use [`location(atPointIndex:)`](../mkmultipoint/location%28atpointindex%29.md) to get unit distance locations for point indices along the polygon.
 
 ## See Also
 
-- [var strokeEnd: CGFloat](mkpolygonrenderer/strokeend.md)
+### Accessing the stroke
+- [var strokeEnd: CGFloat](./strokeend.md)
   The unit distance along the polygon where the stroke ends.
 
 

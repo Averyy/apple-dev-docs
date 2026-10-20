@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct exclave_textlayout_segment_v2 {
     ...
 };
@@ -17,9 +17,9 @@ struct exclave_textlayout_segment_v2 {
 ## Topics
 
 ### Instance Properties
-- [layoutSegment_loadAddress](exclave_textlayout_segment_v2/4520077-layoutsegment_loadaddress.md)
-- [layoutSegment_rawLoadAddress](exclave_textlayout_segment_v2/4520078-layoutsegment_rawloadaddress.md)
-- [layoutSegment_uuid](exclave_textlayout_segment_v2/4520079-layoutsegment_uuid.md)
+- [layoutSegment_loadAddress](./exclave_textlayout_segment_v2/api-4520077-layoutsegment_loadaddress.md)
+- [layoutSegment_rawLoadAddress](./exclave_textlayout_segment_v2/api-4520078-layoutsegment_rawloadaddress.md)
+- [layoutSegment_uuid](./exclave_textlayout_segment_v2/api-4520079-layoutsegment_uuid.md)
 
 
 ---

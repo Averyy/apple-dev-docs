@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,11 +18,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOAudioPortTypeInput](1646420-anonymous/kioaudioporttypeinput.md)
-- [kIOAudioPortTypeMixer](1646420-anonymous/kioaudioporttypemixer.md)
-- [kIOAudioPortTypeOutput](1646420-anonymous/kioaudioporttypeoutput.md)
-- [kIOAudioPortTypePassThru](1646420-anonymous/kioaudioporttypepassthru.md)
-- [kIOAudioPortTypeProcessing](1646420-anonymous/kioaudioporttypeprocessing.md)
+- [kIOAudioPortTypeInput](./api-1646420-anonymous/kioaudioporttypeinput.md)
+- [kIOAudioPortTypeMixer](./api-1646420-anonymous/kioaudioporttypemixer.md)
+- [kIOAudioPortTypeOutput](./api-1646420-anonymous/kioaudioporttypeoutput.md)
+- [kIOAudioPortTypePassThru](./api-1646420-anonymous/kioaudioporttypepassthru.md)
+- [kIOAudioPortTypeProcessing](./api-1646420-anonymous/kioaudioporttypeprocessing.md)
 
 
 ---

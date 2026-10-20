@@ -1,7 +1,8 @@
 # NSURL.BookmarkResolutionOptions
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options used when resolving bookmark data.
 
@@ -20,58 +21,63 @@ Options used when resolving bookmark data.
 struct BookmarkResolutionOptions
 ```
 
+```c
+enum NSURLBookmarkResolutionOptions : NSUInteger;
+```
+
 #### Overview
 
-When resolving a bookmark, use bitwise `OR` operators to combine the options you want to specify, and provide them to the `options` parameter of the [`URLByResolvingBookmarkData:options:relativeToURL:bookmarkDataIsStale:error:`](nsurl/urlbyresolvingbookmarkdata:options:relativetourl:bookmarkdataisstale:error:.md) method.
+When resolving a bookmark, use bitwise `OR` operators to combine the options you want to specify, and provide them to the `options` parameter of the [`URLByResolvingBookmarkData:options:relativeToURL:bookmarkDataIsStale:error:`](./urlbyresolvingbookmarkdata_options_relativetourl_bookmarkdataisstale_error_.md) method.
 
-##### Version Notes
+##### Version-Notes
 
 Security-scoped bookmarks are not available in versions of macOS prior to OS X 10.7.3.
 
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](nsurl/bookmarkresolutionoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./bookmarkresolutionoptions/init%28rawvalue%29.md)
   Initializes a new resolution options structure.
 ### Constants
-- [static var withoutUI: NSURL.BookmarkResolutionOptions](nsurl/bookmarkresolutionoptions/withoutui.md)
+- [static var withoutUI: NSURL.BookmarkResolutionOptions](./bookmarkresolutionoptions/withoutui.md)
   Specifies that no UI feedback should accompany resolution of the bookmark data.
-- [static var withoutMounting: NSURL.BookmarkResolutionOptions](nsurl/bookmarkresolutionoptions/withoutmounting.md)
+- [static var withoutMounting: NSURL.BookmarkResolutionOptions](./bookmarkresolutionoptions/withoutmounting.md)
   Specifies that no volume should be mounted during resolution of the bookmark data.
-- [static var withSecurityScope: NSURL.BookmarkResolutionOptions](nsurl/bookmarkresolutionoptions/withsecurityscope.md)
+- [static var withSecurityScope: NSURL.BookmarkResolutionOptions](./bookmarkresolutionoptions/withsecurityscope.md)
   Specifies that the security scope, applied to the bookmark when it was created, should be used during resolution of the bookmark data.
-- [static var withoutImplicitStartAccessing: NSURL.BookmarkResolutionOptions](nsurl/bookmarkresolutionoptions/withoutimplicitstartaccessing.md)
+- [static var withoutImplicitStartAccessing: NSURL.BookmarkResolutionOptions](./bookmarkresolutionoptions/withoutimplicitstartaccessing.md)
   A property that specifies that resolution doesn’t implicitly start accessing the ephemeral security-scoped resource.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [class func bookmarkData(withContentsOf: URL) throws -> Data](nsurl/bookmarkdata(withcontentsof:).md)
+### Working with Bookmark Data
+- [class func bookmarkData(withContentsOf: URL) throws -> Data](./bookmarkdata%28withcontentsof%29.md)
   Initializes and returns bookmark data derived from an alias file pointed to by a specified URL.
-- [func bookmarkData(options: NSURL.BookmarkCreationOptions, includingResourceValuesForKeys: [URLResourceKey]?, relativeTo: URL?) throws -> Data](nsurl/bookmarkdata(options:includingresourcevaluesforkeys:relativeto:).md)
+- [func bookmarkData(options: NSURL.BookmarkCreationOptions, includingResourceValuesForKeys: [URLResourceKey]?, relativeTo: URL?) throws -> Data](./bookmarkdata%28options,includingresourcevaluesforkeys,relativeto%29.md)
   Returns a bookmark for the URL, created with specified options and resource values.
-- [class func resourceValues(forKeys: [URLResourceKey], fromBookmarkData: Data) -> [URLResourceKey : Any]?](nsurl/resourcevalues(forkeys:frombookmarkdata:).md)
+- [class func resourceValues(forKeys: [URLResourceKey], fromBookmarkData: Data) -> [URLResourceKey : Any]?](./resourcevalues%28forkeys,frombookmarkdata%29.md)
   Returns the resource values for properties identified by a specified array of keys contained in specified bookmark data.
-- [class func writeBookmarkData(Data, to: URL, options: NSURL.BookmarkFileCreationOptions) throws](nsurl/writebookmarkdata(_:to:options:).md)
+- [class func writeBookmarkData(Data, to: URL, options: NSURL.BookmarkFileCreationOptions) throws](./writebookmarkdata%28_,to,options%29.md)
   Creates an alias file on disk at a specified location with specified bookmark data.
-- [func startAccessingSecurityScopedResource() -> Bool](nsurl/startaccessingsecurityscopedresource.md)
+- [func startAccessingSecurityScopedResource() -> Bool](./startaccessingsecurityscopedresource%28%29.md)
   In an app that has adopted App Sandbox, makes the resource pointed to by a security-scoped URL available to the app.
-- [func stopAccessingSecurityScopedResource()](nsurl/stopaccessingsecurityscopedresource.md)
+- [func stopAccessingSecurityScopedResource()](./stopaccessingsecurityscopedresource%28%29.md)
   In an app that adopts App Sandbox, revokes access to the resource pointed to by a security-scoped URL.
-- [typealias BookmarkFileCreationOptions](nsurl/bookmarkfilecreationoptions.md)
+- [typealias BookmarkFileCreationOptions](./bookmarkfilecreationoptions.md)
   Options used when creating file bookmark data
-- [struct BookmarkCreationOptions](nsurl/bookmarkcreationoptions.md)
+- [struct BookmarkCreationOptions](./bookmarkcreationoptions.md)
   Options used when creating bookmark data.
 
 

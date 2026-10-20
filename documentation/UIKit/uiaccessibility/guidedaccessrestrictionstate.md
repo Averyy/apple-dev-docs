@@ -1,16 +1,17 @@
 # UIAccessibility.GuidedAccessRestrictionState
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the state of a restriction, either allow or deny.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,29 +19,34 @@ Constants that describe the state of a restriction, either allow or deny.
 enum GuidedAccessRestrictionState
 ```
 
+```c
+enum UIGuidedAccessRestrictionState : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIAccessibility.GuidedAccessRestrictionState.allow](uiaccessibility/guidedaccessrestrictionstate/allow.md)
+- [UIAccessibility.GuidedAccessRestrictionState.allow](./guidedaccessrestrictionstate/allow.md)
   The app should allow the user to perform the action controlled by the restriction.
-- [UIAccessibility.GuidedAccessRestrictionState.deny](uiaccessibility/guidedaccessrestrictionstate/deny.md)
+- [UIAccessibility.GuidedAccessRestrictionState.deny](./guidedaccessrestrictionstate/deny.md)
   The app should deny the user from performing the action controlled by the restriction.
 ### Initializers
-- [init?(rawValue: Int)](uiaccessibility/guidedaccessrestrictionstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./guidedaccessrestrictionstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func guidedAccessRestriction(withIdentifier: String, didChange: UIAccessibility.GuidedAccessRestrictionState)](uiguidedaccessrestrictiondelegate/guidedaccessrestriction(withidentifier:didchange:).md)
+### Implementing restrictions
+- [func guidedAccessRestriction(withIdentifier: String, didChange: UIAccessibility.GuidedAccessRestrictionState)](../uiguidedaccessrestrictiondelegate/guidedaccessrestriction%28withidentifier,didchange%29.md)
   Tells the delegate that the restriction associated with the identifier has changed state.
 
 

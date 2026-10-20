@@ -1,7 +1,8 @@
 # fontSize
 
 **Framework**: CoreLocationUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The font size of the text on the button.
 
@@ -16,9 +17,14 @@ The font size of the text on the button.
 var fontSize: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) CGFloat fontSize;
+```
+
 ## See Also
 
-- [var cornerRadius: CGFloat](cllocationbutton/cornerradius.md)
+### Customizing the button appearance
+- [var cornerRadius: CGFloat](./cornerradius.md)
   The corner radius of the button.
 
 

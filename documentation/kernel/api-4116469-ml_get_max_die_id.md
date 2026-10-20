@@ -1,14 +1,15 @@
 # ml_get_max_die_id
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 13.3+
 
 ## Declaration
 
-```swift
+```c
 unsigned int ml_get_max_die_id(void);
 ```
 

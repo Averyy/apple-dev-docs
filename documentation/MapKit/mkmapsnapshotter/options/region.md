@@ -1,7 +1,8 @@
 # region
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The area of the map that you want to capture.
 
@@ -20,17 +21,22 @@ The area of the map that you want to capture.
 var region: MKCoordinateRegion { get set }
 ```
 
+```objc
+@property (nonatomic, assign) MKCoordinateRegion region;
+```
+
 #### Discussion
 
-Use this property to specify the map using geographical coordinates. If you assign a value for this property, the snapshotter updates the value in the [`mapRect`](mkmapsnapshotter/options/maprect.md) property to match the corresponding area as closely as possible.
+Use this property to specify the map using geographical coordinates. If you assign a value for this property, the snapshotter updates the value in the [`mapRect`](./maprect.md) property to match the corresponding area as closely as possible.
 
 The snapshotter sets the default value of this property to an area that encompasses the user’s country or region, based on the current locale information.
 
 ## See Also
 
-- [var mapRect: MKMapRect](mkmapsnapshotter/options/maprect.md)
+### Configuring the snapshot region
+- [var mapRect: MKMapRect](./maprect.md)
   The map rectangle that you want to capture.
-- [var camera: MKMapCamera](mkmapsnapshotter/options/camera.md)
+- [var camera: MKMapCamera](./camera.md)
   The camera to use when taking the map snapshot.
 
 

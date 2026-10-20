@@ -1,7 +1,8 @@
 # moreByCurator
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of additional playlists by the same curator.
 

@@ -1,7 +1,8 @@
 # bandPart(_:numLower:numUpper:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the band part of an input tensor.
 
@@ -17,6 +18,10 @@ Computes the band part of an input tensor.
 
 ```swift
 func bandPart(_ inputTensor: MPSGraphTensor, numLower: Int, numUpper: Int, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) bandPartWithTensor:(MPSGraphTensor *) inputTensor numLower:(NSInteger) numLower numUpper:(NSInteger) numUpper name:(NSString *) name;
 ```
 
 #### Return Value

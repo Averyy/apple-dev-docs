@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: Nearby Interaction  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 14.0+

@@ -1,7 +1,8 @@
 # MTLCounterSampleBufferError
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The error codes that indicate why a GPU driver can’t create a counter sample buffer.
 
@@ -22,29 +23,29 @@ struct MTLCounterSampleBufferError
 ## Topics
 
 ### Error code values
-- [static var outOfMemory: MTLCounterSampleBufferError.Code](mtlcountersamplebuffererror-swift.struct/outofmemory.md)
+- [static var outOfMemory: MTLCounterSampleBufferError.Code](./mtlcountersamplebuffererror-swift.struct/outofmemory.md)
   An error code that indicates the GPU device doesn’t have sufficient memory to create a counter sample buffer.
-- [static var invalid: MTLCounterSampleBufferError.Code](mtlcountersamplebuffererror-swift.struct/invalid.md)
+- [static var invalid: MTLCounterSampleBufferError.Code](./mtlcountersamplebuffererror-swift.struct/invalid.md)
   An error code that indicates the descriptor for creating a counter sample buffer descriptor has an invalid property.
-- [static var `internal`: MTLCounterSampleBufferError.Code](mtlcountersamplebuffererror-swift.struct/internal.md)
+- [static var `internal`: MTLCounterSampleBufferError.Code](./mtlcountersamplebuffererror-swift.struct/internal.md)
   An error code that indicates the Metal framework has an internal problem.
-- [MTLCounterSampleBufferError.Code](mtlcountersamplebuffererror-swift.struct/code.md)
+- [MTLCounterSampleBufferError.Code](./mtlcountersamplebuffererror-swift.struct/code.md)
   The underlying error code type that indicates why a GPU driver can’t create a counter sample buffer.
 ### Error domain
-- [static var errorDomain: String](mtlcountersamplebuffererror-swift.struct/errordomain.md)
+- [static var errorDomain: String](./mtlcountersamplebuffererror-swift.struct/errordomain.md)
   The current counter sample buffer error domain.
-- [let MTLCounterErrorDomain: String](mtlcountererrordomain.md)
+- [let MTLCounterErrorDomain: String](./mtlcountererrordomain.md)
   The domain for Metal counter sample buffer errors.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

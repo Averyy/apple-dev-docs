@@ -1,16 +1,17 @@
 # spineLocation
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Location of the spine.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,15 +19,20 @@ Location of the spine.
 static let spineLocation: UIPageViewController.OptionsKey
 ```
 
+```c
+extern UIPageViewControllerOptionsKey const UIPageViewControllerOptionSpineLocationKey;
+```
+
 #### Discussion
 
-For possible values, see [`UIPageViewController.SpineLocation`](uipageviewcontroller/spinelocation-swift.enum.md). A spine location is only valid if the transition style is [`UIPageViewController.TransitionStyle.pageCurl`](uipageviewcontroller/transitionstyle-swift.enum/pagecurl.md).
+For possible values, see [`UIPageViewController.SpineLocation`](../spinelocation-swift.enum.md). A spine location is only valid if the transition style is [`UIPageViewController.TransitionStyle.pageCurl`](../transitionstyle-swift.enum/pagecurl.md).
 
-If the transition style is [`UIPageViewController.TransitionStyle.pageCurl`](uipageviewcontroller/transitionstyle-swift.enum/pagecurl.md), the default value for this property is [`UIPageViewController.SpineLocation.min`](uipageviewcontroller/spinelocation-swift.enum/min.md); otherwise, the default is [`UIPageViewController.SpineLocation.none`](uipageviewcontroller/spinelocation-swift.enum/none.md).
+If the transition style is [`UIPageViewController.TransitionStyle.pageCurl`](../transitionstyle-swift.enum/pagecurl.md), the default value for this property is [`UIPageViewController.SpineLocation.min`](../spinelocation-swift.enum/min.md); otherwise, the default is [`UIPageViewController.SpineLocation.none`](../spinelocation-swift.enum/none.md).
 
 ## See Also
 
-- [static let interPageSpacing: UIPageViewController.OptionsKey](uipageviewcontroller/optionskey/interpagespacing.md)
+### Page options
+- [static let interPageSpacing: UIPageViewController.OptionsKey](./interpagespacing.md)
   Space between pages, in points.
 
 

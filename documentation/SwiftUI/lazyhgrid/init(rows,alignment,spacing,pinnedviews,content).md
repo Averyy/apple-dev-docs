@@ -1,7 +1,8 @@
 # init(rows:alignment:spacing:pinnedViews:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a grid that grows horizontally.
 

@@ -1,7 +1,8 @@
 # init(_:isExpanded:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a section with the provided section content.
 
@@ -21,6 +22,35 @@ Creates a section with the provided section content.
 init(_ titleKey: LocalizedStringKey, isExpanded: Binding<Bool>, @ContentBuilder content: () -> Content)
 ```
 
+Available when `Parent` is `Text` and `Footer` is `EmptyView`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+init(_ titleResource: LocalizedStringResource, isExpanded: Binding<Bool>, @ContentBuilder content: () -> Content)
+```
+
+```swift
+@export(implementation)
+init<S>(_ title: S, isExpanded: Binding<Bool>, @ContentBuilder content: () -> Content) where S : StringProtocol
+```
+
+```swift
+@export(implementation)
+nonisolated init<V>(_ titleResource: LocalizedStringResource, isExpanded: Binding<Bool>, @TableRowBuilder<V> content: () -> Content) where Parent == TableHeaderRowContent<V, Text>, Footer == EmptyTableRowContent<V>, V == Content.TableRowValue
+```
+
+```swift
+nonisolated
+init<V, S>(_ title: S, isExpanded: Binding<Bool>, @TableRowBuilder<V> content: () -> Content) where Parent == TableHeaderRowContent<V, Text>, Footer == EmptyTableRowContent<V>, V == Content.TableRowValue, S : StringProtocol
+```
+
+```swift
+nonisolated
+init<V>(_ titleKey: LocalizedStringKey, isExpanded: Binding<Bool>, @TableRowBuilder<V> content: () -> Content) where Parent == TableHeaderRowContent<V, Text>, Footer == EmptyTableRowContent<V>, V == Content.TableRowValue
+```
+
 ## Parameters
 
 - `titleKey`: The key for the section’s localized title, which describes the contents of the section.
@@ -29,7 +59,8 @@ init(_ titleKey: LocalizedStringKey, isExpanded: Binding<Bool>, @ContentBuilder 
 
 ## See Also
 
-- [init(isExpanded:content:header:)](section/init(isexpanded:content:header:).md)
+### Controlling collapsibility
+- [init(isExpanded:content:header:)](./init%28isexpanded,content,header%29.md)
   Creates a section with the provided section content.
 
 

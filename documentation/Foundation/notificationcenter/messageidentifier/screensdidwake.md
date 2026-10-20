@@ -1,7 +1,8 @@
 # screensDidWake
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 26.0+
@@ -12,23 +13,26 @@
 static var screensDidWake: NotificationCenter.BaseMessageIdentifier<NSWorkspace.ScreensDidWakeMessage> { get }
 ```
 
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSWorkspace.ScreensDidWakeMessage>`.
+
 ## See Also
 
-- [static var didHideApplication: NotificationCenter.BaseMessageIdentifier<NSWorkspace.DidHideApplicationMessage>](notificationcenter/messageidentifier/didhideapplication.md)
-- [static var didUnhideApplication: NotificationCenter.BaseMessageIdentifier<NSWorkspace.DidUnhideApplicationMessage>](notificationcenter/messageidentifier/didunhideapplication.md)
-- [static var willLaunchApplication: NotificationCenter.BaseMessageIdentifier<NSWorkspace.WillLaunchApplicationMessage>](notificationcenter/messageidentifier/willlaunchapplication.md)
-- [static var didLaunchApplication: NotificationCenter.BaseMessageIdentifier<NSWorkspace.DidLaunchApplicationMessage>](notificationcenter/messageidentifier/didlaunchapplication.md)
-- [static var willSleep: NotificationCenter.BaseMessageIdentifier<NSWorkspace.WillSleepMessage>](notificationcenter/messageidentifier/willsleep.md)
-- [static var didWake: NotificationCenter.BaseMessageIdentifier<NSWorkspace.DidWakeMessage>](notificationcenter/messageidentifier/didwake.md)
-- [static var didTerminateApplication: NotificationCenter.BaseMessageIdentifier<NSWorkspace.DidTerminateApplicationMessage>](notificationcenter/messageidentifier/didterminateapplication.md)
-- [static var didMountVolume: NotificationCenter.BaseMessageIdentifier<NSWorkspace.DidMountVolumeMessage>](notificationcenter/messageidentifier/didmountvolume.md)
-- [static var willUnmountVolume: NotificationCenter.BaseMessageIdentifier<NSWorkspace.WillUnmountVolumeMessage>](notificationcenter/messageidentifier/willunmountvolume.md)
-- [static var didUnmountVolume: NotificationCenter.BaseMessageIdentifier<NSWorkspace.DidUnmountVolumeMessage>](notificationcenter/messageidentifier/didunmountvolume.md)
-- [static var didActivateApplication: NotificationCenter.BaseMessageIdentifier<NSWorkspace.DidActivateApplicationMessage>](notificationcenter/messageidentifier/didactivateapplication.md)
-- [static var didDeactivateApplication: NotificationCenter.BaseMessageIdentifier<NSWorkspace.DidDeactivateApplicationMessage>](notificationcenter/messageidentifier/diddeactivateapplication.md)
-- [static var didRenameVolume: NotificationCenter.BaseMessageIdentifier<NSWorkspace.DidRenameVolumeMessage>](notificationcenter/messageidentifier/didrenamevolume.md)
-- [static var sessionDidBecomeActive: NotificationCenter.BaseMessageIdentifier<NSWorkspace.SessionDidBecomeActiveMessage>](notificationcenter/messageidentifier/sessiondidbecomeactive.md)
-- [static var sessionDidResignActive: NotificationCenter.BaseMessageIdentifier<NSWorkspace.SessionDidResignActiveMessage>](notificationcenter/messageidentifier/sessiondidresignactive.md)
+### Identifying AppKit workspace messages
+- [static var didHideApplication: NotificationCenter.BaseMessageIdentifier<NSWorkspace.DidHideApplicationMessage>](./didhideapplication.md)
+- [static var didUnhideApplication: NotificationCenter.BaseMessageIdentifier<NSWorkspace.DidUnhideApplicationMessage>](./didunhideapplication.md)
+- [static var willLaunchApplication: NotificationCenter.BaseMessageIdentifier<NSWorkspace.WillLaunchApplicationMessage>](./willlaunchapplication.md)
+- [static var didLaunchApplication: NotificationCenter.BaseMessageIdentifier<NSWorkspace.DidLaunchApplicationMessage>](./didlaunchapplication.md)
+- [static var willSleep: NotificationCenter.BaseMessageIdentifier<NSWorkspace.WillSleepMessage>](./willsleep.md)
+- [static var didWake: NotificationCenter.BaseMessageIdentifier<NSWorkspace.DidWakeMessage>](./didwake.md)
+- [static var didTerminateApplication: NotificationCenter.BaseMessageIdentifier<NSWorkspace.DidTerminateApplicationMessage>](./didterminateapplication.md)
+- [static var didMountVolume: NotificationCenter.BaseMessageIdentifier<NSWorkspace.DidMountVolumeMessage>](./didmountvolume.md)
+- [static var willUnmountVolume: NotificationCenter.BaseMessageIdentifier<NSWorkspace.WillUnmountVolumeMessage>](./willunmountvolume.md)
+- [static var didUnmountVolume: NotificationCenter.BaseMessageIdentifier<NSWorkspace.DidUnmountVolumeMessage>](./didunmountvolume.md)
+- [static var didActivateApplication: NotificationCenter.BaseMessageIdentifier<NSWorkspace.DidActivateApplicationMessage>](./didactivateapplication.md)
+- [static var didDeactivateApplication: NotificationCenter.BaseMessageIdentifier<NSWorkspace.DidDeactivateApplicationMessage>](./diddeactivateapplication.md)
+- [static var didRenameVolume: NotificationCenter.BaseMessageIdentifier<NSWorkspace.DidRenameVolumeMessage>](./didrenamevolume.md)
+- [static var sessionDidBecomeActive: NotificationCenter.BaseMessageIdentifier<NSWorkspace.SessionDidBecomeActiveMessage>](./sessiondidbecomeactive.md)
+- [static var sessionDidResignActive: NotificationCenter.BaseMessageIdentifier<NSWorkspace.SessionDidResignActiveMessage>](./sessiondidresignactive.md)
 
 
 ---

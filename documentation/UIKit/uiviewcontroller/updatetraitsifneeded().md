@@ -1,7 +1,8 @@
 # updateTraitsIfNeeded()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates traits immediately for this view controller and its view, including any view controllers and views in this subtree.
 
@@ -18,15 +19,20 @@ Updates traits immediately for this view controller and its view, including any 
 func updateTraitsIfNeeded()
 ```
 
+```objc
+- (void) updateTraitsIfNeeded;
+```
+
 #### Discussion
 
 The system sends trait change callbacks synchronously.
 
 ## See Also
 
-- [var traitOverrides: UITraitOverrides](uiviewcontroller/traitoverrides-1z1cc.md)
+### Overriding trait values
+- [var traitOverrides: UITraitOverrides](./traitoverrides-1z1cc.md)
   A mutable container of traits you use to set trait changes for this view controller and its views.
-- [struct UITraitOverrides](uitraitoverrides-swift.struct.md)
+- [struct UITraitOverrides](../uitraitoverrides-swift.struct.md)
   A mutable container of traits you use to set trait changes for an object and its descendants.
 
 

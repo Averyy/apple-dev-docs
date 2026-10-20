@@ -1,7 +1,8 @@
 # PhysicsSimulationComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that controls localized physics simulations.
 
@@ -21,43 +22,44 @@ struct PhysicsSimulationComponent
 
 #### Overview
 
-Simulate local physics by adding a [`PhysicsSimulationComponent`](physicssimulationcomponent.md) to an entity. The component gives your app the ability to customize the physics simulation by configuring its properties, such as [`gravity`](physicssimulationcomponent/gravity.md) and [`collisionOptions`](physicssimulationcomponent/collisionoptions-swift.property.md).
+Simulate local physics by adding a [`PhysicsSimulationComponent`](./physicssimulationcomponent.md) to an entity. The component gives your app the ability to customize the physics simulation by configuring its properties, such as [`gravity`](./physicssimulationcomponent/gravity.md) and [`collisionOptions`](./physicssimulationcomponent/collisionoptions-swift.property.md).
 
-> ❗ **Important**: Each physics simulation component uses meters as its unit of distance, which can be important to other types in the physics simulation, such as [`ShapeResource`](shaperesource.md) instances.
+> ❗ **Important**: Each physics simulation component uses meters as its unit of distance, which can be important to other types in the physics simulation, such as [`ShapeResource`](./shaperesource.md) instances.
 
 ## Topics
 
 ### Structures
-- [PhysicsSimulationComponent.CollisionOptions](physicssimulationcomponent/collisionoptions-swift.struct.md)
+- [PhysicsSimulationComponent.CollisionOptions](./physicssimulationcomponent/collisionoptions-swift.struct.md)
   The options set that defines how a physics simulation reports collisions.
-- [PhysicsSimulationComponent.SolverIterations](physicssimulationcomponent/solveriterations-swift.struct.md)
+- [PhysicsSimulationComponent.SolverIterations](./physicssimulationcomponent/solveriterations-swift.struct.md)
   The parameters that control the accuracy of solving physics simulations.
 ### Initializers
-- [init()](physicssimulationcomponent/init.md)
+- [init()](./physicssimulationcomponent/init%28%29.md)
 ### Instance Properties
-- [var clock: CMClockOrTimebase](physicssimulationcomponent/clock.md)
+- [var clock: CMClockOrTimebase](./physicssimulationcomponent/clock.md)
   A custom clock which drives the physics simulation, defaults to the engine clock.
-- [var collisionOptions: PhysicsSimulationComponent.CollisionOptions](physicssimulationcomponent/collisionoptions-swift.property.md)
+- [var collisionOptions: PhysicsSimulationComponent.CollisionOptions](./physicssimulationcomponent/collisionoptions-swift.property.md)
   Options for kinematic collision reporting.
-- [var gravity: SIMD3<Float>](physicssimulationcomponent/gravity.md)
+- [var gravity: SIMD3<Float>](./physicssimulationcomponent/gravity.md)
   The gravity for the simulation relative to the simulation entity.
-- [var solverIterations: PhysicsSimulationComponent.SolverIterations](physicssimulationcomponent/solveriterations-swift.property.md)
+- [var solverIterations: PhysicsSimulationComponent.SolverIterations](./physicssimulationcomponent/solveriterations-swift.property.md)
   The parameters that control the accuracy of solving physics simulations.
 ### Type Methods
-- [static func nearestSimulationEntity(for: Entity) -> Entity?](physicssimulationcomponent/nearestsimulationentity(for:).md)
+- [static func nearestSimulationEntity(for: Entity) -> Entity?](./physicssimulationcomponent/nearestsimulationentity%28for%29.md)
   Obtains the entity containing the physics simulation origin.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
-- [Equatable](../swift/equatable.md)
+- [Component](./component.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [Designing scene hierarchies for efficient physics simulation](designing-scene-hierarchies-for-efficient-physics-simulation.md)
+### Simulation setup
+- [Designing scene hierarchies for efficient physics simulation](./designing-scene-hierarchies-for-efficient-physics-simulation.md)
   Configure your RealityKit scenes to avoid performance bottlenecks.
-- [Handling different-sized objects in physics simulations](handling-different-sized-objects-in-physics-simulations.md)
+- [Handling different-sized objects in physics simulations](./handling-different-sized-objects-in-physics-simulations.md)
   Set up a scene hierarchy for accurate physics simulations.
 
 

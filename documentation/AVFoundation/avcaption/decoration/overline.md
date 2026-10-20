@@ -1,7 +1,8 @@
 # overline
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A decoration representing a line over the text.
 
@@ -17,11 +18,16 @@ A decoration representing a line over the text.
 static var overline: AVCaption.Decoration { get }
 ```
 
+```c
+AVCaptionDecorationOverline
+```
+
 ## See Also
 
-- [static var underline: AVCaption.Decoration](avcaption/decoration/underline.md)
+### Decorations
+- [static var underline: AVCaption.Decoration](./underline.md)
   A decoration representing a line under the text.
-- [static var lineThrough: AVCaption.Decoration](avcaption/decoration/linethrough.md)
+- [static var lineThrough: AVCaption.Decoration](./linethrough.md)
   A decoration representing a line through the text.
 
 

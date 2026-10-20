@@ -1,28 +1,30 @@
 # kIOUSBSuperSpeedHubCharacteristicsPowerSwitchingIndividual
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 kIOUSBSuperSpeedHubCharacteristicsPowerSwitchingIndividual
 ```
 
 ## See Also
 
-- [kIOUSBSuperSpeedHubCharacteristicsCompoundDevice](kiousbsuperspeedhubcharacteristicscompounddevice.md)
-- [kIOUSBSuperSpeedHubCharacteristicsOverCurrentGlobal](kiousbsuperspeedhubcharacteristicsovercurrentglobal.md)
-- [kIOUSBSuperSpeedHubCharacteristicsOverCurrentIndividual](kiousbsuperspeedhubcharacteristicsovercurrentindividual.md)
-- [kIOUSBSuperSpeedHubCharacteristicsOverCurrentMask](kiousbsuperspeedhubcharacteristicsovercurrentmask.md)
-- [kIOUSBSuperSpeedHubCharacteristicsPowerSwitchingGanged](kiousbsuperspeedhubcharacteristicspowerswitchingganged.md)
-- [kIOUSBSuperSpeedHubCharacteristicsPowerSwitchingMask](kiousbsuperspeedhubcharacteristicspowerswitchingmask.md)
-- [kIOUSBSuperSpeedHubCharacteristicsReserved](kiousbsuperspeedhubcharacteristicsreserved.md)
-- [kIOUSBSuperSpeedHubDecodeLatencyMax](kiousbsuperspeedhubdecodelatencymax.md)
-- [kIOUSBSuperSpeedHubDelayMax](kiousbsuperspeedhubdelaymax.md)
+### Getting the Characteristics
+- [kIOUSBSuperSpeedHubCharacteristicsCompoundDevice](./kiousbsuperspeedhubcharacteristicscompounddevice.md)
+- [kIOUSBSuperSpeedHubCharacteristicsOverCurrentGlobal](./kiousbsuperspeedhubcharacteristicsovercurrentglobal.md)
+- [kIOUSBSuperSpeedHubCharacteristicsOverCurrentIndividual](./kiousbsuperspeedhubcharacteristicsovercurrentindividual.md)
+- [kIOUSBSuperSpeedHubCharacteristicsOverCurrentMask](./kiousbsuperspeedhubcharacteristicsovercurrentmask.md)
+- [kIOUSBSuperSpeedHubCharacteristicsPowerSwitchingGanged](./kiousbsuperspeedhubcharacteristicspowerswitchingganged.md)
+- [kIOUSBSuperSpeedHubCharacteristicsPowerSwitchingMask](./kiousbsuperspeedhubcharacteristicspowerswitchingmask.md)
+- [kIOUSBSuperSpeedHubCharacteristicsReserved](./kiousbsuperspeedhubcharacteristicsreserved.md)
+- [kIOUSBSuperSpeedHubDecodeLatencyMax](./kiousbsuperspeedhubdecodelatencymax.md)
+- [kIOUSBSuperSpeedHubDelayMax](./kiousbsuperspeedhubdelaymax.md)
 
 
 ---

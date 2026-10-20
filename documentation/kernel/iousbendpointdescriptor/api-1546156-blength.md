@@ -1,7 +1,8 @@
 # bLength
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The size of the descriptor.
 
@@ -10,21 +11,22 @@ The size of the descriptor.
 
 ## Declaration
 
-```swift
+```c
 uint8_t bLength;
 ```
 
 ## See Also
 
-- [bDescriptorType](iousbendpointdescriptor/1545995-bdescriptortype.md)
+### Getting the Properties
+- [bDescriptorType](./api-1545995-bdescriptortype.md)
   The type of the descriptor.
-- [bEndpointAddress](iousbendpointdescriptor/1546243-bendpointaddress.md)
+- [bEndpointAddress](./api-1546243-bendpointaddress.md)
   The address of the endpoint.
-- [bmAttributes](iousbendpointdescriptor/1546048-bmattributes.md)
+- [bmAttributes](./api-1546048-bmattributes.md)
   The attributes of the endpoint.
-- [wMaxPacketSize](iousbendpointdescriptor/1546305-wmaxpacketsize.md)
+- [wMaxPacketSize](./api-1546305-wmaxpacketsize.md)
   The maximum packet size that the endpoint supports.
-- [bInterval](iousbendpointdescriptor/1546209-binterval.md)
+- [bInterval](./api-1546209-binterval.md)
   The interval to use when polling the endpoint for data transfers.
 
 

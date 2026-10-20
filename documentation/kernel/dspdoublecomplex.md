@@ -1,7 +1,8 @@
 # DSPDoubleComplex
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Used to hold a double-precision complex value.
 
@@ -10,7 +11,7 @@ Used to hold a double-precision complex value.
 
 ## Declaration
 
-```swift
+```c
 typedef struct DSPDoubleComplex DSPDoubleComplex;
 ```
 
@@ -21,12 +22,12 @@ Double complex data are stored as ordered pairs of double-precision floating-poi
 ## Topics
 
 ### Fields
-- [real](dspdoublecomplex/1579982-real.md)
+- [real](./dspdoublecomplex/api-1579982-real.md)
   The real part of the value.
-- [imag](../accelerate/dspdoublecomplex/imag.md)
+- [imag](../Accelerate/dspdoublecomplex/imag.md)
   The imaginary part of the value.
 ### Instance Properties
-- [imag](dspdoublecomplex/1579996-imag.md)
+- [imag](./dspdoublecomplex/api-1579996-imag.md)
 
 
 ---

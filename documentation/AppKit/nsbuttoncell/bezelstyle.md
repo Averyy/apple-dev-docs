@@ -1,12 +1,13 @@
 # bezelStyle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The appearance of the button’s border, if it has one.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,23 +15,28 @@ The appearance of the button’s border, if it has one.
 var bezelStyle: NSButton.BezelStyle { get set }
 ```
 
+```objc
+@property NSBezelStyle bezelStyle;
+```
+
 #### Discussion
 
-The value of this property is a constant that specifies the bezel style used by the button. See [`NSButton.BezelStyle`](nsbutton/bezelstyle-swift.enum.md) for a list of possible values. If a button is borderless, the value of this property is ignored.
+The value of this property is a constant that specifies the bezel style used by the button. See [`NSButton.BezelStyle`](../nsbutton/bezelstyle-swift.enum.md) for a list of possible values. If a button is borderless, the value of this property is ignored.
 
-A button uses shading to look like it’s sticking out or pushed in. You can set the shading with the [`gradientType`](nsbuttoncell/gradienttype.md) property.
+A button uses shading to look like it’s sticking out or pushed in. You can set the shading with the [`gradientType`](./gradienttype.md) property.
 
 ## See Also
 
-- [var backgroundColor: NSColor?](nsbuttoncell/backgroundcolor.md)
+### Managing Graphics Attributes
+- [var backgroundColor: NSColor?](./backgroundcolor.md)
   The background color of the button.
-- [var imageDimsWhenDisabled: Bool](nsbuttoncell/imagedimswhendisabled.md)
+- [var imageDimsWhenDisabled: Bool](./imagedimswhendisabled.md)
   A Boolean value that indicates if the button’s image and text appear “dim” when the button is disabled.
-- [var isOpaque: Bool](nsbuttoncell/isopaque.md)
+- [var isOpaque: Bool](./isopaque.md)
   A Boolean value that indicates if the button is opaque.
-- [var isTransparent: Bool](nsbuttoncell/istransparent.md)
+- [var isTransparent: Bool](./istransparent.md)
   A Boolean value that indicates if the button is transparent.
-- [var showsBorderOnlyWhileMouseInside: Bool](nsbuttoncell/showsborderonlywhilemouseinside.md)
+- [var showsBorderOnlyWhileMouseInside: Bool](./showsborderonlywhilemouseinside.md)
   A Boolean value that indicates if the button displays its border only when the pointer is over it.
 
 

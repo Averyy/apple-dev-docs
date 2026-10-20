@@ -1,7 +1,8 @@
 # generateSkybox(using:fromEquirectangular:quality:into:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds commands for generating a cube from an equirectangular image, including generating mipmaps.
 
@@ -19,19 +20,20 @@ func generateSkybox(using commandBuffer: any MTLCommandBuffer, fromEquirectangul
 
 #### Discussion
 
-> **Note**: If `texture` is not a 2D Metal texture, if `destination` is not a cube texture, or if `destination`’s pixel format does not support shader writes on this device.
+> **Throws**: If `texture` is not a 2D Metal texture, if `destination` is not a cube texture, or if `destination`’s pixel format does not support shader writes on this device.
 
 ## Parameters
 
 - `commandBuffer`: The command buffer to dispatch GPU work to generate cubemap
 - `texture`: The source image equirectangular texture, also known as “latitude longitude” texture.
 - `quality`: The sampling quality the method applies as it generates the cube texture.
-- `destination`: The destination cube texture. Use [`makeDescriptor(fromEquirectangular:)`](skyboxgenerator/makedescriptor(fromequirectangular:).md) to get a recommended descriptor for creating the destination texture.
+- `destination`: The destination cube texture. Use [`makeDescriptor(fromEquirectangular:)`](./makedescriptor%28fromequirectangular%29.md) to get a recommended descriptor for creating the destination texture.
 
 ## See Also
 
-- [func makeDescriptor(fromEquirectangular: any MTLTexture) throws -> MTLTextureDescriptor](skyboxgenerator/makedescriptor(fromequirectangular:).md)
-  Returns a recommended skybox cube texture descriptor (for [`generateSkybox(using:fromEquirectangular:quality:into:)`](skyboxgenerator/generateskybox(using:fromequirectangular:quality:into:).md)).
+### Generating a skybox
+- [func makeDescriptor(fromEquirectangular: any MTLTexture) throws -> MTLTextureDescriptor](./makedescriptor%28fromequirectangular%29.md)
+  Returns a recommended skybox cube texture descriptor (for [`generateSkybox(using:fromEquirectangular:quality:into:)`](./generateskybox%28using,fromequirectangular,quality,into%29.md)).
 
 
 ---

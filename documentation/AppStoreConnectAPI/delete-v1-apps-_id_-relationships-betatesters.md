@@ -1,7 +1,8 @@
 # Remove specified beta testers from all groups and builds of an app
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Remove one or more beta testers’ access to test any builds of a specific app.
 
@@ -14,7 +15,7 @@ Remove one or more beta testers’ access to test any builds of a specific app.
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/apps/1000001234/relationships/betaTesters -d
 "{
   "data": [
@@ -39,13 +40,33 @@ https://api.appstoreconnect.apple.com/v1/apps/1000001234/relationships/betaTeste
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List apps`](get-v1-apps.md) response.
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List apps`](./get-v1-apps.md) response.
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `AppBetaTestersLinkagesRequest`
+
+## Responses
+
+- `202` Accepted
+- `204` No Content
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `409` Conflict (`ErrorResponse`, `application/json`): The provided resource data is not valid.
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List all beta groups for an app](get-v1-apps-_id_-betagroups.md)
+### Getting beta tester information for TestFlight
+- [List all beta groups for an app](./get-v1-apps-_id_-betagroups.md)
   Get a list of beta groups associated with a specific app.
-- [List beta group IDs for an app](get-v1-apps-_id_-relationships-betagroups.md)
+- [List beta group IDs for an app](./get-v1-apps-_id_-relationships-betagroups.md)
 
 
 ---

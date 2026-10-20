@@ -1,7 +1,8 @@
 # ExtAudioFileGetPropertyInfo(_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets information about an extended audio file object property.
 
@@ -19,6 +20,10 @@ Gets information about an extended audio file object property.
 func ExtAudioFileGetPropertyInfo(_ inExtAudioFile: ExtAudioFileRef, _ inPropertyID: ExtAudioFilePropertyID, _ outSize: UnsafeMutablePointer<UInt32>?, _ outWritable: UnsafeMutablePointer<DarwinBoolean>?) -> OSStatus
 ```
 
+```c
+extern OSStatus ExtAudioFileGetPropertyInfo(ExtAudioFileRef inExtAudioFile, ExtAudioFilePropertyID inPropertyID, UInt32 *outSize, Boolean *outWritable);
+```
+
 #### Return Value
 
 A result code.
@@ -32,9 +37,10 @@ A result code.
 
 ## See Also
 
-- [func ExtAudioFileGetProperty(ExtAudioFileRef, ExtAudioFilePropertyID, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](extaudiofilegetproperty(_:_:_:_:).md)
+### Configuring Properties for Extended Audio File Objects
+- [func ExtAudioFileGetProperty(ExtAudioFileRef, ExtAudioFilePropertyID, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](./extaudiofilegetproperty%28_,_,_,_%29.md)
   Gets a property value from an extended audio file object.
-- [func ExtAudioFileSetProperty(ExtAudioFileRef, ExtAudioFilePropertyID, UInt32, UnsafeRawPointer) -> OSStatus](extaudiofilesetproperty(_:_:_:_:).md)
+- [func ExtAudioFileSetProperty(ExtAudioFileRef, ExtAudioFilePropertyID, UInt32, UnsafeRawPointer) -> OSStatus](./extaudiofilesetproperty%28_,_,_,_%29.md)
   Sets a property value for an extended audio file object.
 
 

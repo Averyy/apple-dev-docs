@@ -1,13 +1,14 @@
 # kODNodeTypeContacts
 
 **Framework**: Open Directory  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A node used for applications that handle contact data.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,15 +16,20 @@ A node used for applications that handle contact data.
 var kODNodeTypeContacts: Int { get }
 ```
 
+```c
+kODNodeTypeContacts
+```
+
 ## See Also
 
-- [var kODNodeTypeAuthentication: Int](kodnodetypeauthentication.md)
+### Constants
+- [var kODNodeTypeAuthentication: Int](./kodnodetypeauthentication.md)
   A node used for authentication or record lookups.
-- [var kODNodeTypeNetwork: Int](kodnodetypenetwork.md)
+- [var kODNodeTypeNetwork: Int](./kodnodetypenetwork.md)
   A node used for looking up network resource type data.
-- [var kODNodeTypeLocalNodes: Int](kodnodetypelocalnodes.md)
+- [var kODNodeTypeLocalNodes: Int](./kodnodetypelocalnodes.md)
   A node that specifically looks at the local directory.
-- [var kODNodeTypeConfigure: Int](kodnodetypeconfigure.md)
+- [var kODNodeTypeConfigure: Int](./kodnodetypeconfigure.md)
   A node that specifically refers to the Directory Services configuration.
 
 

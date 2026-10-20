@@ -1,7 +1,8 @@
 # trigger(challengeDefinitionID:handler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays the challenge creation view for the provided challenge definition ID.
 
@@ -14,12 +15,20 @@ Displays the challenge creation view for the provided challenge definition ID.
 ## Declaration
 
 ```swift
+func trigger(challengeDefinitionID: String, handler: (@Sendable () -> Void)? = nil)
+```
+
+```swift
 func trigger(challengeDefinitionID: String) async
+```
+
+```objc
+- (void) triggerAccessPointWithChallengeDefinitionID:(NSString *) challengeDefinitionID handler:(void (^)()) handler;
 ```
 
 ## Mentions
 
-- [Creating engaging challenges from leaderboards](creating-engaging-challenges-from-leaderboards.md)
+- [Creating engaging challenges from leaderboards](../creating-engaging-challenges-from-leaderboards.md)
 
 
 ---

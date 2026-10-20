@@ -1,12 +1,13 @@
 # Implementing flexible enhanced buffering for your content
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: Article
 
 Configure your app for flexible enhanced buffering to stream content faster to AirPlay-enabled devices and supported CarPlay vehicles.
 
 #### Overview
 
-If you’re working with content that requires flexibility with buffering, use the [`AVSampleBufferAudioRenderer`](avsamplebufferaudiorenderer.md) and [`AVSampleBufferRenderSynchronizer`](avsamplebufferrendersynchronizer.md) classes.
+If you’re working with content that requires flexibility with buffering, use the [`AVSampleBufferAudioRenderer`](./avsamplebufferaudiorenderer.md) and [`AVSampleBufferRenderSynchronizer`](./avsamplebufferrendersynchronizer.md) classes.
 
 To implement flexible enhanced buffering, complete the following steps.
 
@@ -65,9 +66,10 @@ serializationQueue.async { [weak self] in
 
 ## See Also
 
-- [Implementing simple enhanced buffering for your content](implementing-simple-enhanced-buffering-for-your-content.md)
+### Buffered playback
+- [Implementing simple enhanced buffering for your content](./implementing-simple-enhanced-buffering-for-your-content.md)
   Configure your app for simple enhanced buffering to stream content faster to AirPlay-enabled devices and supported CarPlay vehicles.
-- [Integrating AirPlay for long-form video apps](integrating-airplay-for-long-form-video-apps.md)
+- [Integrating AirPlay for long-form video apps](./integrating-airplay-for-long-form-video-apps.md)
   Integrate AirPlay features and implement a dedicated external playback experience by preparing the routing system for long-form video playback.
 
 

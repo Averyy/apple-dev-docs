@@ -1,7 +1,8 @@
 # init(items:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a group containing the specified items.
 
@@ -16,6 +17,10 @@ Initializes and returns a group containing the specified items.
 
 ```swift
 init(items: [any UIDynamicItem])
+```
+
+```objc
+- (instancetype) initWithItems:(NSArray<id<UIDynamicItem>> *) items;
 ```
 
 #### Return Value

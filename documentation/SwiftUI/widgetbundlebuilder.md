@@ -1,7 +1,8 @@
 # WidgetBundleBuilder
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A custom attribute that constructs a widget bundle’s body.
 
@@ -22,7 +23,7 @@ struct WidgetBundleBuilder
 
 #### Overview
 
-Use the `@WidgetBundleBuilder` attribute to group multiple widgets listed in the [`body`](widgetbundle/body-swift.property.md) property of a widget bundle. For example, the following code defines a widget bundle that consists of two widgets.
+Use the `@WidgetBundleBuilder` attribute to group multiple widgets listed in the [`body`](./widgetbundle/body-swift.property.md) property of a widget bundle. For example, the following code defines a widget bundle that consists of two widgets.
 
 ```swift
 @main
@@ -38,21 +39,22 @@ struct GameWidgets: WidgetBundle {
 ## Topics
 
 ### Bundling widgets
-- [static func buildBlock() -> some Widget](widgetbundlebuilder/buildblock.md)
+- [static func buildBlock() -> some Widget](./widgetbundlebuilder/buildblock%28%29.md)
   Builds an empty Widget from a block containing no statements, `{ }`.
-- [static buildBlock(_:)](widgetbundlebuilder/buildblock(_:).md)
-- [static buildExpression(_:)](widgetbundlebuilder/buildexpression(_:).md)
+- [static buildBlock(_:)](./widgetbundlebuilder/buildblock%28_%29.md)
+- [static buildExpression(_:)](./widgetbundlebuilder/buildexpression%28_%29.md)
   Builds an expression within the builder.
-- [static buildLimitedAvailability(_:)](widgetbundlebuilder/buildlimitedavailability(_:).md)
+- [static buildLimitedAvailability(_:)](./widgetbundlebuilder/buildlimitedavailability%28_%29.md)
   Builds an availability check within the builder
-- [static func buildOptional((any Widget & _LimitedAvailabilityWidgetMarker)?) -> some Widget](widgetbundlebuilder/buildoptional(_:).md)
+- [static func buildOptional((any Widget & _LimitedAvailabilityWidgetMarker)?) -> some Widget](./widgetbundlebuilder/buildoptional%28_%29.md)
   Produces an optional widget for conditional statements in multi-statement closures that’s only visible when the condition evaluates to true.
 
 ## See Also
 
-- [var body: Self.Body](widgetbundle/body-swift.property.md)
+### Implementing a widget bundle
+- [var body: Self.Body](./widgetbundle/body-swift.property.md)
   Declares the group of widgets that an app supports.
-- [associatedtype Body : Widget](widgetbundle/body-swift.associatedtype.md)
+- [associatedtype Body : Widget](./widgetbundle/body-swift.associatedtype.md)
   The type of widget that represents the content of the bundle.
 
 

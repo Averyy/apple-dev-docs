@@ -1,7 +1,8 @@
 # residentKeyPreference
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preference that indicates where the resident key resides.
 
@@ -17,11 +18,16 @@ The preference that indicates where the resident key resides.
 var residentKeyPreference: ASAuthorizationPublicKeyCredentialResidentKeyPreference { get set }
 ```
 
+```objc
+@property (nonatomic) ASAuthorizationPublicKeyCredentialResidentKeyPreference residentKeyPreference;
+```
+
 ## See Also
 
-- [var credentialParameters: [ASAuthorizationPublicKeyCredentialParameters]](asauthorizationsecuritykeypublickeycredentialregistrationrequest/credentialparameters.md)
+### Getting the properties
+- [var credentialParameters: [ASAuthorizationPublicKeyCredentialParameters]](./credentialparameters.md)
   An array of parameters for the credential.
-- [var excludedCredentials: [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor]](asauthorizationsecuritykeypublickeycredentialregistrationrequest/excludedcredentials.md)
+- [var excludedCredentials: [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor]](./excludedcredentials.md)
   An array of excluded parameters for the credential.
 
 

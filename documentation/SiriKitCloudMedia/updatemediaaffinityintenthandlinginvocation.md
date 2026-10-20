@@ -1,7 +1,8 @@
 # UpdateMediaAffinityIntentHandlingInvocation
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A request to process an update media affinity intent.
 
@@ -10,14 +11,14 @@ A request to process an update media affinity intent.
 
 ## Declaration
 
-```swift
+```
 object UpdateMediaAffinityIntentHandlingInvocation
 ```
 
 ## Topics
 
 ### Accessing the Intent
-- [object UpdateMediaAffinityIntentHandlingInvocation.Params](updatemediaaffinityintenthandlinginvocation/params-data.dictionary.md)
+- [object UpdateMediaAffinityIntentHandlingInvocation.Params](./updatemediaaffinityintenthandlinginvocation/params-data.dictionary.md)
   The parameters of an update media affinity intent request.
 
 ## Properties
@@ -25,16 +26,19 @@ object UpdateMediaAffinityIntentHandlingInvocation
 - `params` (UpdateMediaAffinityIntentHandlingInvocation.Params) *(required)*: The parameters of this request, including the update media affinity intent.
 - `method` (string) *(required)*: The action for your service to take to process this intent.
 
+  **Allowed Values**: `UpdateMediaAffinityIntentHandling.resolveMediaItems`, `UpdateMediaAffinityIntentHandling.resolveAffinityType`, `UpdateMediaAffinityIntentHandling.handle`
+
 ## Relationships
 
 ### Inherits From
-- [Invocation](invocation.md)
+- [Invocation](./invocation.md)
 
 ## See Also
 
-- [object UpdateMediaAffinityIntent](updatemediaaffinityintent.md)
+### Processing an Update Media Affinity Intent
+- [object UpdateMediaAffinityIntent](./updatemediaaffinityintent.md)
   An object that describes a user’s stated preference regarding media items.
-- [type UpdateMediaAffinityIntentHandlingInvocationResponse](updatemediaaffinityintenthandlinginvocationresponse.md)
+- [type UpdateMediaAffinityIntentHandlingInvocationResponse](./updatemediaaffinityintenthandlinginvocationresponse.md)
   The service’s response to a request to process an update media affinity intent.
 
 

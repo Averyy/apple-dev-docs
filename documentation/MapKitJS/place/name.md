@@ -1,7 +1,8 @@
 # name
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the place.
 
@@ -10,7 +11,7 @@ The name of the place.
 
 ## Declaration
 
-```swift
+```
 name: string | null;
 ```
 
@@ -20,11 +21,12 @@ For example, the name for a specific place in Golden Gate Park in San Francisco,
 
 ## See Also
 
-- [formattedAddress](place/formattedaddress.md)
+### Place name and category
+- [formattedAddress](./formattedaddress.md)
   The address of the place, formatted using its conventions of its country or region.
-- [areasOfInterest](place/areasofinterest.md)
+- [areasOfInterest](./areasofinterest.md)
   Common names of the area in which the place resides.
-- [pointOfInterestCategory](place/pointofinterestcategory.md)
+- [pointOfInterestCategory](./pointofinterestcategory.md)
   The category of the place.
 
 

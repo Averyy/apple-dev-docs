@@ -1,7 +1,8 @@
 # playlists
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the relationship property that returns the associated playlists for the curator.
 
@@ -19,6 +20,8 @@ An identifier for the relationship property that returns the associated playlist
 ```swift
 static let playlists: MusicRelationshipProperty<Curator, Playlist>
 ```
+
+Available when `Root` is `Curator`.
 
 
 ---

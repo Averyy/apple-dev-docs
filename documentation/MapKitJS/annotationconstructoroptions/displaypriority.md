@@ -1,7 +1,8 @@
 # displayPriority
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 A hint the map uses to prioritize displaying the annotation.
 
@@ -10,29 +11,30 @@ A hint the map uses to prioritize displaying the annotation.
 
 ## Declaration
 
-```swift
+```
 displayPriority?: AnnotationDisplayPriority;
 ```
 
 ## Mentions
 
-- [MapKit JS 5](mapkit-js-5.md)
+- [MapKit JS 5](../mapkit-js-5.md)
 
 #### Discussion
 
-The default value is [`Required`](annotationdisplaypriority/required.md)
+The default value is [`Required`](../annotationdisplaypriority/required.md)
 
 ## See Also
 
-- [anchorOffset](annotationconstructoroptions/anchoroffset.md)
+### Setting position and appearances
+- [anchorOffset](./anchoroffset.md)
   The offset, in CSS pixels, of the element from the bottom center.
-- [appearanceAnimation](annotationconstructoroptions/appearanceanimation.md)
+- [appearanceAnimation](./appearanceanimation.md)
   A CSS animation that runs when the annotation appears on the map.
-- [padding](annotationconstructoroptions/padding.md)
+- [padding](./padding.md)
   Spacing to add around the annotation when showing items.
-- [size](annotationconstructoroptions/size.md)
+- [size](./size.md)
   The desired dimensions of the annotation, in CSS pixels.
-- [visible](annotationconstructoroptions/visible.md)
+- [visible](./visible.md)
   A Boolean value that determines whether the annotation is visible or hidden.
 
 

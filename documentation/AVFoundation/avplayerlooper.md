@@ -1,7 +1,8 @@
 # AVPlayerLooper
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that loops media content using a queue player.
 
@@ -19,9 +20,13 @@ An object that loops media content using a queue player.
 class AVPlayerLooper
 ```
 
+```objc
+@interface AVPlayerLooper : NSObject
+```
+
 #### Overview
 
-You can manually implement looping playback in your app using [`AVQueuePlayer`](avqueueplayer.md), but `AVPlayerLooper` provides a much simpler interface to loop a single [`AVPlayerItem`](avplayeritem.md). You create a player looper by passing it a reference to your [`AVQueuePlayer`](avqueueplayer.md) and a template [`AVPlayerItem`](avplayeritem.md) and the looper automatically manages the looping playback of this content (see example).
+You can manually implement looping playback in your app using [`AVQueuePlayer`](./avqueueplayer.md), but `AVPlayerLooper` provides a much simpler interface to loop a single [`AVPlayerItem`](./avplayeritem.md). You create a player looper by passing it a reference to your [`AVQueuePlayer`](./avqueueplayer.md) and a template [`AVPlayerItem`](./avplayeritem.md) and the looper automatically manages the looping playback of this content (see example).
 
 ```swift
 let asset = // AVAsset with its 'duration' property value loaded
@@ -37,57 +42,58 @@ queuePlayer.play()
 ## Topics
 
 ### Creating a player looper
-- [init(player: AVQueuePlayer, templateItem: AVPlayerItem, timeRange: CMTimeRange, existingItemsOrdering: AVPlayerLooper.ItemOrdering)](avplayerlooper/init(player:templateitem:timerange:existingitemsordering:).md)
+- [init(player: AVQueuePlayer, templateItem: AVPlayerItem, timeRange: CMTimeRange, existingItemsOrdering: AVPlayerLooper.ItemOrdering)](./avplayerlooper/init%28player,templateitem,timerange,existingitemsordering%29.md)
   Creates a player looper that continuously plays the full duration of a player item while adhering to the specified ordering of existing items in the queue.
-- [convenience init(player: AVQueuePlayer, templateItem: AVPlayerItem)](avplayerlooper/init(player:templateitem:).md)
+- [convenience init(player: AVQueuePlayer, templateItem: AVPlayerItem)](./avplayerlooper/init%28player,templateitem%29.md)
   Creates a player looper that continuously plays the full duration of a player item.
-- [convenience init(player: AVQueuePlayer, templateItem: AVPlayerItem, timeRange: CMTimeRange)](avplayerlooper/init(player:templateitem:timerange:).md)
+- [convenience init(player: AVQueuePlayer, templateItem: AVPlayerItem, timeRange: CMTimeRange)](./avplayerlooper/init%28player,templateitem,timerange%29.md)
   Creates a player looper that continuously plays the specified time range of a player item.
 ### Configuring looping
-- [var loopingPlayerItems: [AVPlayerItem]](avplayerlooper/loopingplayeritems.md)
+- [var loopingPlayerItems: [AVPlayerItem]](./avplayerlooper/loopingplayeritems.md)
   An array containing replicas of the template player item used to accomplish the looping.
-- [func disableLooping()](avplayerlooper/disablelooping.md)
+- [func disableLooping()](./avplayerlooper/disablelooping%28%29.md)
   Disables looping for the player queue.
 ### Observing looping state
-- [var loopCount: Int](avplayerlooper/loopcount.md)
+- [var loopCount: Int](./avplayerlooper/loopcount.md)
   The number of times the object played the media.
-- [var status: AVPlayerLooper.Status](avplayerlooper/status-swift.property.md)
+- [var status: AVPlayerLooper.Status](./avplayerlooper/status-swift.property.md)
   A status that indicates the object’s ability to loop playback.
-- [AVPlayerLooper.Status](avplayerlooper/status-swift.enum.md)
+- [AVPlayerLooper.Status](./avplayerlooper/status-swift.enum.md)
   Status constants that indicate whether a looper can successfully perform looping playback.
 ### Monitoring errors
-- [var error: (any Error)?](avplayerlooper/error.md)
+- [var error: (any Error)?](./avplayerlooper/error.md)
   An error that describes the reason looping failed.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Observing playback state in SwiftUI](observing-playback-state-in-swiftui.md)
+### Playback control
+- [Observing playback state in SwiftUI](./observing-playback-state-in-swiftui.md)
   Keep your user interface in sync with state changes from playback objects.
-- [Controlling the transport behavior of a player](controlling-the-transport-behavior-of-a-player.md)
+- [Controlling the transport behavior of a player](./controlling-the-transport-behavior-of-a-player.md)
   Play, pause, and seek through a media presentation.
-- [Creating a seamless multiview playback experience](creating-a-seamless-multiview-playback-experience.md)
+- [Creating a seamless multiview playback experience](./creating-a-seamless-multiview-playback-experience.md)
   Build advanced multiview playback experiences with the AVFoundation and AVRouting frameworks.
-- [class AVPlayer](avplayer.md)
+- [class AVPlayer](./avplayer.md)
   An object that provides the interface to control the player’s transport behavior.
-- [class AVPlayerItem](avplayeritem.md)
+- [class AVPlayerItem](./avplayeritem.md)
   An object that models the timing and presentation state of an asset during playback.
-- [class AVPlayerItemTrack](avplayeritemtrack.md)
+- [class AVPlayerItemTrack](./avplayeritemtrack.md)
   An object that represents the presentation state of an asset track during playback.
-- [class AVQueuePlayer](avqueueplayer.md)
+- [class AVQueuePlayer](./avqueueplayer.md)
   An object that plays a sequence of player items.
 
 

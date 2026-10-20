@@ -1,7 +1,8 @@
 # vDSP.FourierTransformDirection
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Fast Fourier transform directions.
 
@@ -11,7 +12,7 @@ Fast Fourier transform directions.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -23,25 +24,26 @@ enum FourierTransformDirection
 ## Topics
 
 ### Enumeration Cases
-- [vDSP.FourierTransformDirection.forward](vdsp/fouriertransformdirection/forward.md)
-- [vDSP.FourierTransformDirection.inverse](vdsp/fouriertransformdirection/inverse.md)
+- [vDSP.FourierTransformDirection.forward](./fouriertransformdirection/forward.md)
+- [vDSP.FourierTransformDirection.inverse](./fouriertransformdirection/inverse.md)
 ### Instance Properties
-- [var dftDirection: vDSP_DFT_Direction](vdsp/fouriertransformdirection/dftdirection.md)
-- [var fftDirection: FFTDirection](vdsp/fouriertransformdirection/fftdirection.md)
+- [var dftDirection: vDSP_DFT_Direction](./fouriertransformdirection/dftdirection.md)
+- [var fftDirection: FFTDirection](./fouriertransformdirection/fftdirection.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [class FFT](vdsp/fft.md)
+### Objects that Simplify FFTs
+- [class FFT](./fft.md)
   A 1D single- and double-precision fast Fourier transform.
-- [class FFT2D](vdsp/fft2d.md)
+- [class FFT2D](./fft2d.md)
   A 2D single- and double-precision fast Fourier transform.
-- [vDSP.Radix](vdsp/radix.md)
+- [vDSP.Radix](./radix.md)
   Fast Fourier transform radices.
 
 

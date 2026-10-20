@@ -1,7 +1,8 @@
 # scope
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio unit scope.
 
@@ -19,11 +20,16 @@ The audio unit scope.
 var scope: UInt32 { get set }
 ```
 
+```objc
+@property (readwrite) UInt32 scope;
+```
+
 ## See Also
 
-- [var element: UInt32](avaupresetevent/element.md)
+### Configuring a preset event
+- [var element: UInt32](./element.md)
   The element index in the scope.
-- [var presetDictionary: [AnyHashable : Any]](avaupresetevent/presetdictionary.md)
+- [var presetDictionary: [AnyHashable : Any]](./presetdictionary.md)
   The dictionary that contains the preset.
 
 

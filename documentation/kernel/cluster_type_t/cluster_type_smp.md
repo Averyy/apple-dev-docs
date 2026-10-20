@@ -1,14 +1,15 @@
 # CLUSTER_TYPE_SMP
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 CLUSTER_TYPE_SMP = 0
 ```
 

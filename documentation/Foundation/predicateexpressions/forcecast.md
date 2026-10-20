@@ -1,7 +1,8 @@
 # PredicateExpressions.ForceCast
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -21,22 +22,22 @@ struct ForceCast<Input, Desired> where Input : PredicateExpression
 ## Topics
 
 ### Initializers
-- [init(Input)](predicateexpressions/forcecast/init(_:).md)
+- [init(Input)](./forcecast/init%28_%29.md)
 ### Instance Properties
-- [let input: Input](predicateexpressions/forcecast/input.md)
+- [let input: Input](./forcecast/input.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Escapable](../swift/escapable.md)
-- [PredicateExpression](predicateexpression.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [StandardPredicateExpression](standardpredicateexpression.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Escapable](../../Swift/escapable.md)
+- [PredicateExpression](../predicateexpression.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [StandardPredicateExpression](../standardpredicateexpression.md)
 
 
 ---

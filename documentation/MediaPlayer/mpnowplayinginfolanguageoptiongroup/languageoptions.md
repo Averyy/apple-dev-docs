@@ -1,7 +1,8 @@
 # languageOptions
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The available language options for the group.
 
@@ -20,15 +21,20 @@ The available language options for the group.
 var languageOptions: [MPNowPlayingInfoLanguageOption] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<MPNowPlayingInfoLanguageOption *> * languageOptions;
+```
+
 #### Discussion
 
 This property contains an array of available language options for the group.
 
 ## See Also
 
-- [var allowEmptySelection: Bool](mpnowplayinginfolanguageoptiongroup/allowemptyselection.md)
+### Retrieving language option group information
+- [var allowEmptySelection: Bool](./allowemptyselection.md)
   A Boolean that indicates whether the system requires a selection for the language option group.
-- [var defaultLanguageOption: MPNowPlayingInfoLanguageOption?](mpnowplayinginfolanguageoptiongroup/defaultlanguageoption.md)
+- [var defaultLanguageOption: MPNowPlayingInfoLanguageOption?](./defaultlanguageoption.md)
   The default language option for the group.
 
 

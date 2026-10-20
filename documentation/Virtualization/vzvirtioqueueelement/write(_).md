@@ -1,7 +1,8 @@
 # write(_:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes the memory represented by the data object you provide into the write buffers.
 
@@ -14,9 +15,13 @@ Writes the memory represented by the data object you provide into the write buff
 func write(_ data: Data) throws
 ```
 
+```objc
+- (BOOL) writeData:(NSData *) data error:(NSError **) error;
+```
+
 ## Parameters
 
-- `data`: The [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object that represents the memory the framework uses to the write buffers.
+- `data`: The [`NSData`](../../Foundation/nsdata.md) object that represents the memory the framework uses to the write buffers.
 
 
 ---

@@ -1,7 +1,8 @@
 # dataTaskPublisher(for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a publisher that wraps a URL session data task for a given URL.
 
@@ -22,7 +23,7 @@ func dataTaskPublisher(for url: URL) -> URLSession.DataTaskPublisher
 
 ## Mentions
 
-- [Processing URL session data task results with Combine](processing-url-session-data-task-results-with-combine.md)
+- [Processing URL session data task results with Combine](../processing-url-session-data-task-results-with-combine.md)
 
 #### Discussion
 
@@ -34,11 +35,12 @@ The publisher publishes data when the task completes, or terminates if the task 
 
 ## See Also
 
-- [Processing URL session data task results with Combine](processing-url-session-data-task-results-with-combine.md)
+### Performing tasks as a Combine Publisher
+- [Processing URL session data task results with Combine](../processing-url-session-data-task-results-with-combine.md)
   Use a chain of asynchronous operators to receive and process data fetched from a URL.
-- [func dataTaskPublisher(for: URLRequest) -> URLSession.DataTaskPublisher](urlsession/datataskpublisher(for:)-61v3e.md)
+- [func dataTaskPublisher(for: URLRequest) -> URLSession.DataTaskPublisher](./datataskpublisher%28for%29-61v3e.md)
   Returns a publisher that wraps a URL session data task for a given URL request.
-- [URLSession.DataTaskPublisher](urlsession/datataskpublisher.md)
+- [URLSession.DataTaskPublisher](./datataskpublisher.md)
   A publisher that delivers the results of performing URL session data tasks.
 
 

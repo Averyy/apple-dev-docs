@@ -1,9 +1,10 @@
 # close()
 
 **Framework**: Foveated Streaming  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Closes the channel and finishes [`receivedMessages`](foveatedstreamingprovidermessagechannel/receivedmessages.md).
+Closes the channel and finishes [`receivedMessages`](./receivedmessages.md).
 
 **Availability**:
 - visionOS 27.0+

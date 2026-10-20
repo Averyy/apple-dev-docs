@@ -1,7 +1,8 @@
 # downOrClose(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func downOrClose(with params: MTRWindowCoveringClusterDownOrCloseParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func downOrClose(with params: MTRWindowCoveringClusterDownOrCloseParams?) async throws
+```
+
+```objc
+- (void) downOrCloseWithParams:(MTRWindowCoveringClusterDownOrCloseParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

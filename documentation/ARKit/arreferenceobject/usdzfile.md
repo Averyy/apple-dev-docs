@@ -1,7 +1,8 @@
 # usdzFile
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL to the extracted USDZ model, if available.
 
@@ -13,6 +14,10 @@ The URL to the extracted USDZ model, if available.
 
 ```swift
 var usdzFile: URL? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) NSURL * usdzFile;
 ```
 
 

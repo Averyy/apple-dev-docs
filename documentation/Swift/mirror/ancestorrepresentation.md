@@ -1,7 +1,8 @@
 # Mirror.AncestorRepresentation
 
 **Framework**: Swift  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The representation to use for ancestor classes.
 
@@ -27,11 +28,11 @@ A class that conforms to the `CustomReflectable` protocol can control how its mi
 ## Topics
 
 ### Enumeration Cases
-- [Mirror.AncestorRepresentation.customized(_:)](mirror/ancestorrepresentation/customized(_:).md)
+- [Mirror.AncestorRepresentation.customized(_:)](./ancestorrepresentation/customized%28_%29.md)
   Uses the nearest ancestor’s implementation of `customMirror` to create a mirror for that ancestor.
-- [Mirror.AncestorRepresentation.generated](mirror/ancestorrepresentation/generated.md)
+- [Mirror.AncestorRepresentation.generated](./ancestorrepresentation/generated.md)
   Generates a default mirror for all ancestor classes.
-- [Mirror.AncestorRepresentation.suppressed](mirror/ancestorrepresentation/suppressed.md)
+- [Mirror.AncestorRepresentation.suppressed](./ancestorrepresentation/suppressed.md)
   Suppresses the representation of all ancestor classes.
 
 

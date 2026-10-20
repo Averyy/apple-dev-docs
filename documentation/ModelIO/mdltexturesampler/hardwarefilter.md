@@ -1,7 +1,8 @@
 # hardwareFilter
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that describes filtering modes for sampling from the texture.
 
@@ -19,15 +20,20 @@ An object that describes filtering modes for sampling from the texture.
 var hardwareFilter: MDLTextureFilter? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) MDLTextureFilter * hardwareFilter;
+```
+
 #### Discussion
 
 Filtering modes specify the behavior of texture sampling at different sizes and texture coordinates.
 
 ## See Also
 
-- [var texture: MDLTexture?](mdltexturesampler/texture.md)
+### Working with Texture Parameters
+- [var texture: MDLTexture?](./texture.md)
   The texture object that provides image data for sampling.
-- [var transform: MDLTransform?](mdltexturesampler/transform.md)
+- [var transform: MDLTransform?](./transform.md)
   The transformation to be applied to texture coordinate data before sampling from the texture.
 
 

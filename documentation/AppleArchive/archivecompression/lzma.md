@@ -1,7 +1,8 @@
 # lzma
 
 **Framework**: Apple Archive  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The LZMA compression algorithm, that’s recommended for high-compression ratio.
 
@@ -11,7 +12,7 @@ The LZMA compression algorithm, that’s recommended for high-compression ratio.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -22,15 +23,16 @@ static let lzma: ArchiveCompression
 
 ## See Also
 
-- [static let none: ArchiveCompression](archivecompression/none.md)
+### Type Properties
+- [static let none: ArchiveCompression](./none.md)
   A constant that represents no compression.
-- [static let lzfse: ArchiveCompression](archivecompression/lzfse.md)
+- [static let lzfse: ArchiveCompression](./lzfse.md)
   The LZFSE compression algorithm, that’s recommended for use on Apple platforms.
-- [static let lz4: ArchiveCompression](archivecompression/lz4.md)
+- [static let lz4: ArchiveCompression](./lz4.md)
   The LZ4 compression algorithm, that’s recommended for fast compression.
-- [static let zlib: ArchiveCompression](archivecompression/zlib.md)
+- [static let zlib: ArchiveCompression](./zlib.md)
   The zlib compression algorithm, that’s recommended for cross-platform compression.
-- [static let lzbitmap: ArchiveCompression](archivecompression/lzbitmap.md)
+- [static let lzbitmap: ArchiveCompression](./lzbitmap.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # maxMovieRatingForCountry
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 The maximum movie rating allowed for the specified country or region.
 
@@ -10,13 +11,13 @@ The maximum movie rating allowed for the specified country or region.
 
 ## Declaration
 
-```swift
+```
 String maxMovieRatingForCountry(
     in String countryCode
 );
 ```
 
-#### Return_value
+#### Return Value
 
 A string representing the maximum allowed rating for a movie in the specified country or region; for example, PG-13.
 
@@ -26,13 +27,14 @@ A string representing the maximum allowed rating for a movie in the specified co
 
 ## See Also
 
-- [allowsExplicit](restrictions/1627425-allowsexplicit.md)
+### Retrieving Restriction Information
+- [allowsExplicit](./api-1627425-allowsexplicit.md)
   A boolean value that indicates whether any explicit media is allowed.
-- [maxMovieRank](restrictions/1627305-maxmovierank.md)
+- [maxMovieRank](./api-1627305-maxmovierank.md)
   The maximum allowed ranking for a movie.
-- [maxTVShowRank](restrictions/1627434-maxtvshowrank.md)
+- [maxTVShowRank](./api-1627434-maxtvshowrank.md)
   The maximum allowed ranking for a television show.
-- [maxTVShowRatingForCountry](restrictions/1627442-maxtvshowratingforcountry.md)
+- [maxTVShowRatingForCountry](./api-1627442-maxtvshowratingforcountry.md)
   The maximum television show rating allowed for the specified country or region.
 
 

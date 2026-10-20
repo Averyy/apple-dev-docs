@@ -1,7 +1,8 @@
 # CMTimeEpoch
 
 **Framework**: Core Media  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An epoch for a time.
 
@@ -20,19 +21,24 @@ An epoch for a time.
 typealias CMTimeEpoch = Int64
 ```
 
+```c
+typedef int64_t CMTimeEpoch;
+```
+
 #### Discussion
 
 The epoch is typically `0`, but you can use a different value — for example to denote a particular iteration of a loop.
 
 ## See Also
 
-- [struct CMTime](cmtime.md)
+### Data Types
+- [struct CMTime](./cmtime.md)
   A structure that represents time.
-- [typealias CMTimeValue](cmtimevalue.md)
+- [typealias CMTimeValue](./cmtimevalue.md)
   An integer time value.
-- [typealias CMTimeScale](cmtimescale.md)
+- [typealias CMTimeScale](./cmtimescale.md)
   An integer timescale.
-- [struct CMTimeFlags](cmtimeflags.md)
+- [struct CMTimeFlags](./cmtimeflags.md)
   A structure that defines the flags for a time value.
 
 

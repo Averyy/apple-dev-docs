@@ -1,7 +1,8 @@
 # init(parameters:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 init(parameters: MTRDeviceControllerAbstractParameters) throws
+```
+
+```objc
+- (MTRDeviceController *) initWithParameters:(MTRDeviceControllerAbstractParameters *) parameters error:(NSError **) error;
 ```
 
 

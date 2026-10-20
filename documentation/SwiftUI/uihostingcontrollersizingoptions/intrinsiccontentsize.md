@@ -1,7 +1,8 @@
 # intrinsicContentSize
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The hosting controller’s view automatically invalidate its intrinsic content size when its ideal size changes.
 
@@ -22,11 +23,12 @@ static let intrinsicContentSize: UIHostingControllerSizingOptions
 
 Use this option when the hosting controller’s view is being laid out with Auto Layout.
 
-> **Note**: This option comes with a performance cost because it asks for the ideal size of the content using the [`unspecified`](proposedviewsize/unspecified.md) size proposal.
+> **Note**: This option comes with a performance cost because it asks for the ideal size of the content using the [`unspecified`](../proposedviewsize/unspecified.md) size proposal.
 
 ## See Also
 
-- [static let preferredContentSize: UIHostingControllerSizingOptions](uihostingcontrollersizingoptions/preferredcontentsize.md)
+### Getting sizing options
+- [static let preferredContentSize: UIHostingControllerSizingOptions](./preferredcontentsize.md)
   The hosting controller tracks its content’s ideal size in its preferred content size.
 
 

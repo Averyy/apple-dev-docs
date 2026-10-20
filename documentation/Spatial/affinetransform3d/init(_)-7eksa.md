@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a double-precision affine transformation from a single-precision affine transformation.
 

@@ -1,7 +1,8 @@
 # GKMatchmakingMode.inviteOnly
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that matches the local player only with players who they invite, and doesn’t use automatch to fill empty slots.
 
@@ -19,17 +20,22 @@ A mode that matches the local player only with players who they invite, and does
 case inviteOnly
 ```
 
+```c
+GKMatchmakingModeInviteOnly
+```
+
 ## Mentions
 
-- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
+- [Finding multiple players for a game](../finding-multiple-players-for-a-game.md)
 
 ## See Also
 
-- [GKMatchmakingMode.default](gkmatchmakingmode/default.md)
+### Modes
+- [GKMatchmakingMode.default](./default.md)
   The default matchmaking mode.
-- [GKMatchmakingMode.nearbyOnly](gkmatchmakingmode/nearbyonly.md)
+- [GKMatchmakingMode.nearbyOnly](./nearbyonly.md)
   A mode that matches the local player only with nearby players.
-- [GKMatchmakingMode.automatchOnly](gkmatchmakingmode/automatchonly.md)
+- [GKMatchmakingMode.automatchOnly](./automatchonly.md)
   A mode that matches the local player only with players who are also actively looking for a match.
 
 

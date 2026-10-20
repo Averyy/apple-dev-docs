@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of the item to open.
@@ -12,7 +13,7 @@ The type of the item to open.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,7 +24,8 @@ associatedtype Value : AppValue
 
 ## See Also
 
-- [var target: Self.Value](openintent/target.md)
+### Getting the item to open
+- [var target: Self.Value](./target.md)
   The item to open in your app.
 
 

@@ -1,14 +1,17 @@
 # GKSessionError
 
 **Framework**: GameKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 3.0+ - Deprecated in 7.0
+- iPadOS 3.0+ - Deprecated in 7.0
+- tvOS 9.0+ - Deprecated in 18.4
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 3.0+ - Deprecated in 3.0
+
+> **Deprecated**: No longer supported
 
 ## Declaration
 
@@ -19,41 +22,42 @@ struct GKSessionError
 ## Topics
 
 ### Type Properties
-- [static var cancelledError: GKSessionError.Code](gksessionerror-swift.struct/cancellederror.md)
-- [static var cannotEnableError: GKSessionError.Code](gksessionerror-swift.struct/cannotenableerror.md)
-- [static var connectionClosedError: GKSessionError.Code](gksessionerror-swift.struct/connectionclosederror.md)
-- [static var connectionFailedError: GKSessionError.Code](gksessionerror-swift.struct/connectionfailederror.md)
-- [static var connectivityError: GKSessionError.Code](gksessionerror-swift.struct/connectivityerror.md)
-- [static var dataTooBigError: GKSessionError.Code](gksessionerror-swift.struct/datatoobigerror.md)
-- [static var declinedError: GKSessionError.Code](gksessionerror-swift.struct/declinederror.md)
-- [static var errorDomain: String](gksessionerror-swift.struct/errordomain.md)
-- [static var inProgressError: GKSessionError.Code](gksessionerror-swift.struct/inprogresserror.md)
-- [static var internalError: GKSessionError.Code](gksessionerror-swift.struct/internalerror.md)
-- [static var invalidParameterError: GKSessionError.Code](gksessionerror-swift.struct/invalidparametererror.md)
-- [static var notConnectedError: GKSessionError.Code](gksessionerror-swift.struct/notconnectederror.md)
-- [static var peerNotFoundError: GKSessionError.Code](gksessionerror-swift.struct/peernotfounderror.md)
-- [static var systemError: GKSessionError.Code](gksessionerror-swift.struct/systemerror.md)
-- [static var timedOutError: GKSessionError.Code](gksessionerror-swift.struct/timedouterror.md)
-- [static var transportError: GKSessionError.Code](gksessionerror-swift.struct/transporterror.md)
-- [static var unknownError: GKSessionError.Code](gksessionerror-swift.struct/unknownerror.md)
+- [static var cancelledError: GKSessionError.Code](./gksessionerror-swift.struct/cancellederror.md)
+- [static var cannotEnableError: GKSessionError.Code](./gksessionerror-swift.struct/cannotenableerror.md)
+- [static var connectionClosedError: GKSessionError.Code](./gksessionerror-swift.struct/connectionclosederror.md)
+- [static var connectionFailedError: GKSessionError.Code](./gksessionerror-swift.struct/connectionfailederror.md)
+- [static var connectivityError: GKSessionError.Code](./gksessionerror-swift.struct/connectivityerror.md)
+- [static var dataTooBigError: GKSessionError.Code](./gksessionerror-swift.struct/datatoobigerror.md)
+- [static var declinedError: GKSessionError.Code](./gksessionerror-swift.struct/declinederror.md)
+- [static var errorDomain: String](./gksessionerror-swift.struct/errordomain.md)
+- [static var inProgressError: GKSessionError.Code](./gksessionerror-swift.struct/inprogresserror.md)
+- [static var internalError: GKSessionError.Code](./gksessionerror-swift.struct/internalerror.md)
+- [static var invalidParameterError: GKSessionError.Code](./gksessionerror-swift.struct/invalidparametererror.md)
+- [static var notConnectedError: GKSessionError.Code](./gksessionerror-swift.struct/notconnectederror.md)
+- [static var peerNotFoundError: GKSessionError.Code](./gksessionerror-swift.struct/peernotfounderror.md)
+- [static var systemError: GKSessionError.Code](./gksessionerror-swift.struct/systemerror.md)
+- [static var timedOutError: GKSessionError.Code](./gksessionerror-swift.struct/timedouterror.md)
+- [static var transportError: GKSessionError.Code](./gksessionerror-swift.struct/transporterror.md)
+- [static var unknownError: GKSessionError.Code](./gksessionerror-swift.struct/unknownerror.md)
 ### Enumerations
-- [GKSessionError.Code](gksessionerror-swift.struct/code.md)
+- [GKSessionError.Code](./gksessionerror-swift.struct/code.md)
   Error codes for the session error domain.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct GKVoiceChatServiceError](gkvoicechatserviceerror-swift.struct.md)
-- [struct GKGameSessionError](gkgamesessionerror.md)
+### Deprecated structures
+- [struct GKVoiceChatServiceError](./gkvoicechatserviceerror-swift.struct.md)
+- [struct GKGameSessionError](./gkgamesessionerror.md)
   Error codes for the game session domain.
 
 

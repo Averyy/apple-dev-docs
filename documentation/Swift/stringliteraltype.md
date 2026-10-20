@@ -1,7 +1,8 @@
 # StringLiteralType
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The default type for an otherwise-unconstrained string literal.
 
@@ -22,9 +23,10 @@ typealias StringLiteralType = String
 
 ## See Also
 
-- [typealias ExtendedGraphemeClusterType](extendedgraphemeclustertype.md)
+### Strings and Text
+- [typealias ExtendedGraphemeClusterType](./extendedgraphemeclustertype.md)
   The default type for an otherwise-unconstrained Unicode extended grapheme cluster literal.
-- [typealias UnicodeScalarType](unicodescalartype.md)
+- [typealias UnicodeScalarType](./unicodescalartype.md)
   The default type for an otherwise-unconstrained unicode scalar literal.
 
 

@@ -1,7 +1,8 @@
 # completeKeyRotation(_:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 15.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func completeKeyRotation(_ keyType: ASAuthorizationProviderExtensionKeyType)
+```
+
+```objc
+- (void) completeKeyRotationForKeyType:(ASAuthorizationProviderExtensionKeyType) keyType;
 ```
 
 #### Discussion

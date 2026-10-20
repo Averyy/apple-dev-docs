@@ -1,7 +1,8 @@
 # revision
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The specific algorithm or configuration revision that is to be used to perform the request.
 
@@ -17,13 +18,18 @@ The specific algorithm or configuration revision that is to be used to perform t
 var revision: VTOpticalFlowConfiguration.Revision { get }
 ```
 
+```objc
+@property (nonatomic, readonly) VTOpticalFlowConfigurationRevision revision;
+```
+
 ## See Also
 
-- [class var defaultRevision: VTOpticalFlowConfiguration.Revision](vtopticalflowconfiguration/defaultrevision.md)
+### Inspecting revision information
+- [class var defaultRevision: VTOpticalFlowConfiguration.Revision](./defaultrevision.md)
   The default revision of a particular algorithm or configuration.
-- [class var supportedRevisions: IndexSet](vtopticalflowconfiguration/supportedrevisions.md)
+- [class var supportedRevisions: IndexSet](./supportedrevisions.md)
   A boolean value that indicates whether the processor supported on the current configuration.
-- [VTOpticalFlowConfiguration.Revision](vtopticalflowconfiguration/revision-swift.enum.md)
+- [VTOpticalFlowConfiguration.Revision](./revision-swift.enum.md)
   The specific algorithm or configuration revision that is to be used to perform the request.
 
 

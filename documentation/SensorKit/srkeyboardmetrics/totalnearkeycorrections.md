@@ -1,7 +1,8 @@
 # totalNearKeyCorrections
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of near key corrections for the keyboard.
 
@@ -16,37 +17,42 @@ The total number of near key corrections for the keyboard.
 var totalNearKeyCorrections: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger totalNearKeyCorrections;
+```
+
 ## See Also
 
-- [var totalWords: Int](srkeyboardmetrics/totalwords.md)
+### Quantifying Key Use
+- [var totalWords: Int](./totalwords.md)
   The total number of typed words for the keyboard.
-- [var totalAlteredWords: Int](srkeyboardmetrics/totalalteredwords.md)
+- [var totalAlteredWords: Int](./totalalteredwords.md)
   The total number of altered words for the keyboard.
-- [var totalTaps: Int](srkeyboardmetrics/totaltaps.md)
+- [var totalTaps: Int](./totaltaps.md)
   The total number of taps for the keyboard.
-- [var totalDrags: Int](srkeyboardmetrics/totaldrags.md)
+- [var totalDrags: Int](./totaldrags.md)
   The total number of drags for the keyboard.
-- [var totalDeletes: Int](srkeyboardmetrics/totaldeletes.md)
+- [var totalDeletes: Int](./totaldeletes.md)
   The total number of deletions for the keyboard.
-- [var totalEmojis: Int](srkeyboardmetrics/totalemojis.md)
+- [var totalEmojis: Int](./totalemojis.md)
   The total number of emojis for the keyboard.
-- [var totalPaths: Int](srkeyboardmetrics/totalpaths.md)
+- [var totalPaths: Int](./totalpaths.md)
   The total number of completed paths for the keyboard.
-- [var totalPathTime: TimeInterval](srkeyboardmetrics/totalpathtime.md)
+- [var totalPathTime: TimeInterval](./totalpathtime.md)
   The total time to complete paths for the keyboard.
-- [var totalPathLength: Measurement<UnitLength>](srkeyboardmetrics/totalpathlength.md)
+- [var totalPathLength: Measurement<UnitLength>](./totalpathlength.md)
   The total length of completed paths for the keyboard.
-- [var totalAutoCorrections: Int](srkeyboardmetrics/totalautocorrections.md)
+- [var totalAutoCorrections: Int](./totalautocorrections.md)
   The total number of autocorrections for the keyboard.
-- [var totalSpaceCorrections: Int](srkeyboardmetrics/totalspacecorrections.md)
+- [var totalSpaceCorrections: Int](./totalspacecorrections.md)
   The total number of space corrections for the keyboard.
-- [var totalRetroCorrections: Int](srkeyboardmetrics/totalretrocorrections.md)
+- [var totalRetroCorrections: Int](./totalretrocorrections.md)
   The total number of retro corrections for the keyboard.
-- [var totalTranspositionCorrections: Int](srkeyboardmetrics/totaltranspositioncorrections.md)
+- [var totalTranspositionCorrections: Int](./totaltranspositioncorrections.md)
   The total number of transposition corrections for the keyboard.
-- [var totalInsertKeyCorrections: Int](srkeyboardmetrics/totalinsertkeycorrections.md)
+- [var totalInsertKeyCorrections: Int](./totalinsertkeycorrections.md)
   The total number of Insert key corrections for the keyboard.
-- [var totalSkipTouchCorrections: Int](srkeyboardmetrics/totalskiptouchcorrections.md)
+- [var totalSkipTouchCorrections: Int](./totalskiptouchcorrections.md)
   The total number of skip touch corrections for the keyboard.
 
 

@@ -1,7 +1,8 @@
 # cellForItem(at:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the browser cell for the item at the specified index.
 
@@ -12,6 +13,10 @@ Returns the browser cell for the item at the specified index.
 
 ```swift
 func cellForItem(at index: Int) -> IKImageBrowserCell!
+```
+
+```objc
+- (IKImageBrowserCell *) cellForItemAtIndex:(NSUInteger) index;
 ```
 
 #### Return Value
@@ -28,11 +33,12 @@ Subclasses must not override this method.
 
 ## See Also
 
-- [func indexOfItem(at: NSPoint) -> Int](ikimagebrowserview/indexofitem(at:).md)
+### Getting Item Information
+- [func indexOfItem(at: NSPoint) -> Int](./indexofitem%28at%29.md)
   Returns the index of the item at the specified location.
-- [func itemFrame(at: Int) -> NSRect](ikimagebrowserview/itemframe(at:).md)
+- [func itemFrame(at: Int) -> NSRect](./itemframe%28at%29.md)
   Returns the frame rectangle for the item located at the specified index.
-- [func visibleItemIndexes() -> IndexSet!](ikimagebrowserview/visibleitemindexes.md)
+- [func visibleItemIndexes() -> IndexSet!](./visibleitemindexes%28%29.md)
   Returns the indexes of the view’s currently visible items.
 
 

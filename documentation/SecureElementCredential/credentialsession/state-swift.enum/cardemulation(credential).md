@@ -1,7 +1,8 @@
 # CredentialSession.State.cardEmulation(credential:)
 
 **Framework**: SecureElementCredential  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The state for performing card emulation with a given credential.
 
@@ -17,7 +18,7 @@ case cardEmulation(credential: CredentialSession.Credential)
 
 ## Mentions
 
-- [Accessing and using secure element credentials](accessing-and-using-secure-element-credentials.md)
+- [Accessing and using secure element credentials](../../accessing-and-using-secure-element-credentials.md)
 
 #### Discussion
 
@@ -29,13 +30,14 @@ In the card emulation state, the session makes the selected credential available
 
 ## See Also
 
-- [CredentialSession.State.management](credentialsession/state-swift.enum/management.md)
+### Credential session states
+- [CredentialSession.State.management](./management.md)
   The state for managing the credential session.
-- [case wired(credential: CredentialSession.Credential)](credentialsession/state-swift.enum/wired(credential:).md)
+- [case wired(credential: CredentialSession.Credential)](./wired%28credential%29.md)
   The state for performing wired operations with a given credential.
-- [CredentialSession.Credential](credentialsession/credential.md)
+- [CredentialSession.Credential](../credential.md)
   Information about a credential that a credential session retrieves from the Secure Element.
-- [CredentialSession.State.invalid](credentialsession/state-swift.enum/invalid.md)
+- [CredentialSession.State.invalid](./invalid.md)
   The state of an invalid credential session.
 
 

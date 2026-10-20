@@ -1,7 +1,8 @@
 # CGImageMetadataErrors.conflictingArguments
 
 **Framework**: Image I/O  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates an attempt to save conflicting metadata values.
 
@@ -20,15 +21,20 @@ An error that indicates an attempt to save conflicting metadata values.
 case conflictingArguments
 ```
 
+```c
+kCGImageMetadataErrorConflictingArguments
+```
+
 ## See Also
 
-- [CGImageMetadataErrors.unknown](cgimagemetadataerrors/unknown.md)
+### Error Codes
+- [CGImageMetadataErrors.unknown](./unknown.md)
   An error that indicates an unknown condition occurred.
-- [CGImageMetadataErrors.unsupportedFormat](cgimagemetadataerrors/unsupportedformat.md)
+- [CGImageMetadataErrors.unsupportedFormat](./unsupportedformat.md)
   An error that indicates the metadata was in an unsupported format.
-- [CGImageMetadataErrors.badArgument](cgimagemetadataerrors/badargument.md)
+- [CGImageMetadataErrors.badArgument](./badargument.md)
   An error that indicates a parameter was malformed or contained invalid data.
-- [CGImageMetadataErrors.prefixConflict](cgimagemetadataerrors/prefixconflict.md)
+- [CGImageMetadataErrors.prefixConflict](./prefixconflict.md)
   An error that indicates an attempt to register a namespace with a prefix that is different than the namespace’s existing prefix.
 
 

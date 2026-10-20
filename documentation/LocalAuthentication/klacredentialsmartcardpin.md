@@ -1,7 +1,8 @@
 # kLACredentialSmartCardPIN
 
 **Framework**: Local Authentication  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 8.0+
@@ -17,9 +18,14 @@
 var kLACredentialSmartCardPIN: Int32 { get }
 ```
 
+```c
+#define kLACredentialSmartCardPIN
+```
+
 ## See Also
 
-- [var kLACredentialTypeApplicationPassword: Int32](klacredentialtypeapplicationpassword.md)
+### Constants
+- [var kLACredentialTypeApplicationPassword: Int32](./klacredentialtypeapplicationpassword.md)
   Specifies that a password is provided by the application.
 
 

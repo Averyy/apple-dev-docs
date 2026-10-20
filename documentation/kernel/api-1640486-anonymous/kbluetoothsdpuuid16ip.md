@@ -1,14 +1,15 @@
 # kBluetoothSDPUUID16IP
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPUUID16IP = 0x0009
 ```
 

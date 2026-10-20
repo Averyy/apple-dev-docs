@@ -1,7 +1,8 @@
 # NSAdaptiveImageGlyph
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A data object for an emoji-like image that can appear in attributed text.
 
@@ -19,61 +20,66 @@ A data object for an emoji-like image that can appear in attributed text.
 class NSAdaptiveImageGlyph
 ```
 
+```objc
+@interface NSAdaptiveImageGlyph : NSObject
+```
+
 #### Overview
 
-An [`NSAdaptiveImageGlyph`](nsadaptiveimageglyph.md) contains an image that automatically adapts to different sizes and resolutions. The text system creates instances of this type to represent custom emojis that people create using the system interfaces. This type manages multiple images, along with metadata describing how to adapt those images correctly to different fonts and font attributes.
+An [`NSAdaptiveImageGlyph`](./nsadaptiveimageglyph.md) contains an image that automatically adapts to different sizes and resolutions. The text system creates instances of this type to represent custom emojis that people create using the system interfaces. This type manages multiple images, along with metadata describing how to adapt those images correctly to different fonts and font attributes.
 
-Typically, you receive new [`NSAdaptiveImageGlyph`](nsadaptiveimageglyph.md) objects only from the text-input system. When someone creates a new emoji and inserts it into their text, TextKit creates an instance of this type to represent it. If your app examines or changes the attributes of attributed strings, preserve the [`adaptiveImageGlyph`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/adaptiveimageglyph) attribute in Swift or the [`NSAdaptiveImageGlyphAttributeName`](nsadaptiveimageglyphattributename.md) attribute in Objective-C when making any changes. For example, if you filter unknown attributes in a custom text-storage object, update your code to preserve this attribute. The value of the attribute is an [`NSAdaptiveImageGlyph`](nsadaptiveimageglyph.md) containing the emoji data. You can save the image data with the rest of your content and use the data to recreate the type later.
+Typically, you receive new [`NSAdaptiveImageGlyph`](./nsadaptiveimageglyph.md) objects only from the text-input system. When someone creates a new emoji and inserts it into their text, TextKit creates an instance of this type to represent it. If your app examines or changes the attributes of attributed strings, preserve the [`adaptiveImageGlyph`](../Foundation/nsattributedstring/key/adaptiveimageglyph.md) attribute in Swift or the [`NSAdaptiveImageGlyphAttributeName`](./nsadaptiveimageglyphattributename.md) attribute in Objective-C when making any changes. For example, if you filter unknown attributes in a custom text-storage object, update your code to preserve this attribute. The value of the attribute is an [`NSAdaptiveImageGlyph`](./nsadaptiveimageglyph.md) containing the emoji data. You can save the image data with the rest of your content and use the data to recreate the type later.
 
 ## Topics
 
 ### Creating an adaptive image glyph
-- [init(imageContent: Data)](nsadaptiveimageglyph/init(imagecontent:).md)
+- [init(imageContent: Data)](./nsadaptiveimageglyph/init%28imagecontent%29.md)
   Create an adaptive image glyph from previously saved data.
-- [init(coder: NSCoder)](nsadaptiveimageglyph/init(coder:).md)
+- [init(coder: NSCoder)](./nsadaptiveimageglyph/init%28coder%29.md)
 ### Getting the image data
-- [var imageContent: Data](nsadaptiveimageglyph/imagecontent.md)
+- [var imageContent: Data](./nsadaptiveimageglyph/imagecontent.md)
   The raw data for the image.
 ### Getting the content metadata
-- [var contentIdentifier: String](nsadaptiveimageglyph/contentidentifier.md)
+- [var contentIdentifier: String](./nsadaptiveimageglyph/contentidentifier.md)
   A unique identifier for this image.
-- [var contentDescription: String](nsadaptiveimageglyph/contentdescription.md)
+- [var contentDescription: String](./nsadaptiveimageglyph/contentdescription.md)
   An alternate textual description of the image contents.
-- [class var contentType: UTType](nsadaptiveimageglyph/contenttype.md)
+- [class var contentType: UTType](./nsadaptiveimageglyph/contenttype.md)
   The image data format to use for this image type.
 ### Examining attributed strings
-- [static let adaptiveImageGlyph: NSAttributedString.Key](../foundation/nsattributedstring/key/adaptiveimageglyph.md)
+- [static let adaptiveImageGlyph: NSAttributedString.Key](../Foundation/nsattributedstring/key/adaptiveimageglyph.md)
   The adaptive image glyph for the text.
 ### Initializers
-- [convenience init(AttributedString.AdaptiveImageGlyph)](nsadaptiveimageglyph/init(_:).md)
+- [convenience init(AttributedString.AdaptiveImageGlyph)](./nsadaptiveimageglyph/init%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CTAdaptiveImageProviding](../coretext/ctadaptiveimageproviding.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CTAdaptiveImageProviding](../CoreText/ctadaptiveimageproviding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSTextAttachment](nstextattachment.md)
+### Attachments
+- [class NSTextAttachment](./nstextattachment.md)
   The values for the attachment characteristics of attributed strings and related objects.
-- [class NSTextAttachmentViewProvider](nstextattachmentviewprovider.md)
+- [class NSTextAttachmentViewProvider](./nstextattachmentviewprovider.md)
   A container object that associates a text attachment at a particular document location with a view object.
-- [protocol NSTextAttachmentContainer](nstextattachmentcontainer.md)
+- [protocol NSTextAttachmentContainer](./nstextattachmentcontainer.md)
   A set of methods that defines the interface to text attachment objects from a layout manager.
-- [protocol NSTextAttachmentLayout](nstextattachmentlayout.md)
+- [protocol NSTextAttachmentLayout](./nstextattachmentlayout.md)
   A set of methods that defines the interface to attachment objects from a text layout manager.
 
 

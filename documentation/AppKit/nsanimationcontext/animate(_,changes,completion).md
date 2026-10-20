@@ -1,7 +1,8 @@
 # animate(_:changes:completion:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Animate changes to one or more views using the specified SwiftUI animation.
 
@@ -18,7 +19,7 @@ static func animate(_ animation: Animation, changes: () -> Void, completion: (()
 
 Animations performed using this method can be smoothly retargeted while preserving velocity, just like animations in SwiftUI views.
 
-```None
+```
 // Grow the window with a smooth spring animation
 NSAnimationContext.animate(.smooth) {
     let scaledFrame = myWindowContentView.frame.applying(

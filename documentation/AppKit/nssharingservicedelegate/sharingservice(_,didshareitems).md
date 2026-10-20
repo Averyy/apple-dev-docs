@@ -1,7 +1,8 @@
 # sharingService(_:didShareItems:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked when the sharing service has finished sharing the items.
 
@@ -15,6 +16,10 @@ Invoked when the sharing service has finished sharing the items.
 optional func sharingService(_ sharingService: NSSharingService, didShareItems items: [Any])
 ```
 
+```objc
+- (void) sharingService:(NSSharingService *) sharingService didShareItems:(NSArray *) items;
+```
+
 ## Parameters
 
 - `sharingService`: The sharing service.
@@ -22,9 +27,10 @@ optional func sharingService(_ sharingService: NSSharingService, didShareItems i
 
 ## See Also
 
-- [func sharingService(NSSharingService, willShareItems: [Any])](nssharingservicedelegate/sharingservice(_:willshareitems:).md)
+### Sharing Items
+- [func sharingService(NSSharingService, willShareItems: [Any])](./sharingservice%28_,willshareitems%29.md)
   Invoked when the sharing service will share the specified items.
-- [func sharingService(NSSharingService, didFailToShareItems: [Any], error: any Error)](nssharingservicedelegate/sharingservice(_:didfailtoshareitems:error:).md)
+- [func sharingService(NSSharingService, didFailToShareItems: [Any], error: any Error)](./sharingservice%28_,didfailtoshareitems,error%29.md)
   Invoked when the sharing service encountered an error when sharing items.
 
 

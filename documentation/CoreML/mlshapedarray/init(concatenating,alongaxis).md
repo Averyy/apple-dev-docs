@@ -1,7 +1,8 @@
 # init(concatenating:alongAxis:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Merges a sequence of shaped arrays into one shaped array along an axis.
 
@@ -53,11 +54,14 @@ let shapedArray3 = MLShapedArray(concatenating: [shapedArray1,shapedArray2],
 ## Parameters
 
 - `shapedArrays`: A sequence of shaped arrays.
-- `alongAxis`: A zero-based axis number the shaped arrays in `multiArray` merge along. > 💡 **Tip**:  Select the shaped array’s highest dimension by passing a negative axis number. For example, an axis value of `-1` or `-2` selects the last or second-to-last dimension, respectively.
+- `alongAxis`: A zero-based axis number the shaped arrays in `multiArray` merge along.
+
+  > 💡 **Tip**:  Select the shaped array’s highest dimension by passing a negative axis number. For example, an axis value of `-1` or `-2` selects the last or second-to-last dimension, respectively.
 
 ## See Also
 
-- [init(MLMultiArray)](mlshapedarray/init(_:).md)
+### Creating a shaped array from another type
+- [init(MLMultiArray)](./init%28_%29.md)
 
 
 ---

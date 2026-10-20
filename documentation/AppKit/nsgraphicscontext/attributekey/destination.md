@@ -1,12 +1,13 @@
 # destination
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies the destination.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ Specifies the destination.
 static let destination: NSGraphicsContext.AttributeKey
 ```
 
+```c
+extern NSGraphicsContextAttributeKey NSGraphicsContextDestinationAttributeName;
+```
+
 #### Discussion
 
-This value can be an instance of [`NSWindow`](nswindow.md) or [`NSBitmapImageRep`](nsbitmapimagerep.md) when creating a graphics context.
+This value can be an instance of [`NSWindow`](../../nswindow.md) or [`NSBitmapImageRep`](../../nsbitmapimagerep.md) when creating a graphics context.
 
-When determining the type of a graphics context, this value can be an [`NSMutableData`](https://developer.apple.com/documentation/foundation/nsmutabledata), [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), or [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) object.
+When determining the type of a graphics context, this value can be an [`NSMutableData`](../../../Foundation/nsmutabledata.md), [`NSString`](../../../Foundation/nsstring.md), or [`NSURL`](../../../Foundation/nsurl.md) object.
 
 ## See Also
 
-- [static let representationFormat: NSGraphicsContext.AttributeKey](nsgraphicscontext/attributekey/representationformat.md)
+### Attribute Keys
+- [static let representationFormat: NSGraphicsContext.AttributeKey](./representationformat.md)
   Specifies the destination file format.
 
 

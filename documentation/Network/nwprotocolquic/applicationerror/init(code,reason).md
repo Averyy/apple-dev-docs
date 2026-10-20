@@ -1,7 +1,8 @@
 # init(code:reason:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a QUIC application error with an error code and an optional reason.
 

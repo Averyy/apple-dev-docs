@@ -1,7 +1,8 @@
 # ErrorResponse
 
 **Framework**: Account & Organizational Data Sharing  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Dictionary
 
 The error object returned after an unsuccessful request.
 
@@ -10,7 +11,7 @@ The error object returned after an unsuccessful request.
 
 ## Declaration
 
-```swift
+```
 object ErrorResponse
 ```
 
@@ -29,11 +30,14 @@ The `error` property is one of the following values:
 
 - `error` (string): A string that describes the reason for the unsuccessful request. The string is one of the allowed values, listed below.
 
+  **Allowed Values**: `invalid_request`, `invalid_client`, `invalid_grant`, `unauthorized_client`, `unsupported_grant_type`, `invalid_scope`
+
 ## See Also
 
-- [object JWKSet](jwkset.md)
+### Common objects
+- [object JWKSet](./jwkset.md)
   A set of JSON web keys.
-- [object TokenResponse](tokenresponse.md)
+- [object TokenResponse](./tokenresponse.md)
   The response token object returned on a successful request.
 
 

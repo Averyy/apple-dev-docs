@@ -1,22 +1,25 @@
 # AppStoreVersionExperiment.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
-- App Store Connect API 1.7+
+- App Store Connect API 1.7+ - Deprecated in 2.4
+
+> **Deprecated**: This object is deprecated.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionExperiment.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreVersionExperiment.Relationships.AppStoreVersion](appstoreversionexperiment/relationships-data.dictionary/appstoreversion-data.dictionary.md)
-- [object AppStoreVersionExperiment.Relationships.AppStoreVersionExperimentTreatments](appstoreversionexperiment/relationships-data.dictionary/appstoreversionexperimenttreatments-data.dictionary.md)
+- [object AppStoreVersionExperiment.Relationships.AppStoreVersion](./relationships-data.dictionary/appstoreversion-data.dictionary.md)
+- [object AppStoreVersionExperiment.Relationships.AppStoreVersionExperimentTreatments](./relationships-data.dictionary/appstoreversionexperimenttreatments-data.dictionary.md)
 
 ## Properties
 
@@ -25,7 +28,8 @@ object AppStoreVersionExperiment.Relationships
 
 ## See Also
 
-- [object AppStoreVersionExperiment.Attributes](appstoreversionexperiment/attributes-data.dictionary.md)
+### Objects
+- [object AppStoreVersionExperiment.Attributes](./attributes-data.dictionary.md)
 
 
 ---

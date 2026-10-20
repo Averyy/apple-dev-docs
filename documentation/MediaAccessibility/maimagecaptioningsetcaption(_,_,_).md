@@ -1,7 +1,8 @@
 # MAImageCaptioningSetCaption(_:_:_:)
 
 **Framework**: Media Accessibility  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the accessibility caption for an image’s metadata.
 
@@ -19,11 +20,16 @@ Sets the accessibility caption for an image’s metadata.
 func MAImageCaptioningSetCaption(_ url: CFURL, _ string: CFString?, _ error: UnsafeMutablePointer<CFError?>?) -> Bool
 ```
 
+```c
+extern bool MAImageCaptioningSetCaption(CFURLRef url, CFStringRef string, CFErrorRef*error);
+```
+
 ## See Also
 
-- [func MAImageCaptioningCopyCaption(CFURL, UnsafeMutablePointer<CFError?>?) -> CFString?](maimagecaptioningcopycaption(_:_:).md)
+### Image captioning settings
+- [func MAImageCaptioningCopyCaption(CFURL, UnsafeMutablePointer<CFError?>?) -> CFString?](./maimagecaptioningcopycaption%28_,_%29.md)
   Returns an accessibility caption from an image’s metadata.
-- [func MAImageCaptioningCopyMetadataTagPath() -> CFString](maimagecaptioningcopymetadatatagpath().md)
+- [func MAImageCaptioningCopyMetadataTagPath() -> CFString](./maimagecaptioningcopymetadatatagpath%28%29.md)
   Returns the metadata tag path.
 
 

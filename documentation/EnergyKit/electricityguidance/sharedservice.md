@@ -1,14 +1,15 @@
 # sharedService
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A single, shared guidance service object.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -22,7 +23,8 @@ Use this object to interact with guidance services in your app.
 
 ## See Also
 
-- [ElectricityGuidance.Service](electricityguidance/service.md)
+### Getting the electricity guidance data
+- [ElectricityGuidance.Service](./service.md)
   An interface for obtaining electricity guidance data.
 
 

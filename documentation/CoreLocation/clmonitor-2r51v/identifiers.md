@@ -1,7 +1,8 @@
 # identifiers
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array that contains the identifiers of the conditions the framework is monitoring.
 

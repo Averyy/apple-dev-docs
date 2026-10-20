@@ -1,7 +1,8 @@
 # isSpatial
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the person supports being in a shared simulation space for an activity.
 
@@ -16,7 +17,7 @@ let isSpatial: Bool
 
 ## Mentions
 
-- [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
+- [Adding spatial Persona support to an activity](../../adding-spatial-persona-support-to-an-activity.md)
 
 #### Discussion
 

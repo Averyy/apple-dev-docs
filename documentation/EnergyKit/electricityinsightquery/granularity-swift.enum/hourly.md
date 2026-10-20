@@ -1,14 +1,15 @@
 # ElectricityInsightQuery.Granularity.hourly
 
 **Framework**: EnergyKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An hourly aggregated insight record for at least one calendar week.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -22,13 +23,14 @@ The data period returns insight records aggregated by hour for at least one cale
 
 ## See Also
 
-- [ElectricityInsightQuery.Granularity.daily](electricityinsightquery/granularity-swift.enum/daily.md)
+### Returning electricity insight records
+- [ElectricityInsightQuery.Granularity.daily](./daily.md)
   A daily aggregated insight record for at least one calendar month.
-- [ElectricityInsightQuery.Granularity.monthly](electricityinsightquery/granularity-swift.enum/monthly.md)
+- [ElectricityInsightQuery.Granularity.monthly](./monthly.md)
   A monthly aggregated insight record for at least 1 calendar year.
-- [ElectricityInsightQuery.Granularity.weekly](electricityinsightquery/granularity-swift.enum/weekly.md)
+- [ElectricityInsightQuery.Granularity.weekly](./weekly.md)
   A weekly aggregated insight record for at least six months.
-- [ElectricityInsightQuery.Granularity.yearly](electricityinsightquery/granularity-swift.enum/yearly.md)
+- [ElectricityInsightQuery.Granularity.yearly](./yearly.md)
   A yearly aggregated insight record for at least one calendar year.
 
 

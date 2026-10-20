@@ -1,7 +1,8 @@
 # tableView(_:didUnhighlightRowAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the highlight was removed from the row at the specified index path.
 
@@ -18,6 +19,10 @@ Tells the delegate that the highlight was removed from the row at the specified 
 optional func tableView(_ tableView: UITableView, didUnhighlightRowAt indexPath: IndexPath)
 ```
 
+```objc
+- (void) tableView:(UITableView *) tableView didUnhighlightRowAtIndexPath:(NSIndexPath *) indexPath;
+```
+
 ## Parameters
 
 - `tableView`: The table view that removed the highlight from the cell.
@@ -25,9 +30,10 @@ optional func tableView(_ tableView: UITableView, didUnhighlightRowAt indexPath:
 
 ## See Also
 
-- [func tableView(UITableView, shouldHighlightRowAt: IndexPath) -> Bool](uitableviewdelegate/tableview(_:shouldhighlightrowat:).md)
+### Managing table view highlights
+- [func tableView(UITableView, shouldHighlightRowAt: IndexPath) -> Bool](./tableview%28_,shouldhighlightrowat%29.md)
   Asks the delegate if the specified row should be highlighted.
-- [func tableView(UITableView, didHighlightRowAt: IndexPath)](uitableviewdelegate/tableview(_:didhighlightrowat:).md)
+- [func tableView(UITableView, didHighlightRowAt: IndexPath)](./tableview%28_,didhighlightrowat%29.md)
   Tells the delegate that the specified row was highlighted.
 
 

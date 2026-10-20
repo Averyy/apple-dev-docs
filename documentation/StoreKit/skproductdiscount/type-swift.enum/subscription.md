@@ -1,18 +1,21 @@
 # SKProductDiscount.Type.subscription
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant indicating the discount type is a promotional offer.
 
 **Availability**:
-- iOS 12.2+
-- iPadOS 12.2+
-- Mac Catalyst 13.1+
-- macOS 10.14.4+
-- tvOS 12.2+
-- visionOS 1.0+
-- watchOS 6.2+
+- iOS 12.2+ - Deprecated in 18.0
+- iPadOS 12.2+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.14.4+ - Deprecated in 15.0
+- tvOS 12.2+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 6.2+ - Deprecated in 11.0
+
+> **Deprecated**: Use Product.SubscriptionOffer.OfferType.
 
 ## Declaration
 
@@ -20,13 +23,18 @@ A constant indicating the discount type is a promotional offer.
 case subscription
 ```
 
+```c
+SKProductDiscountTypeSubscription
+```
+
 #### Discussion
 
-For more information about promotional offers, see [`Implementing promotional offers in your app`](implementing-promotional-offers-in-your-app.md).
+For more information about promotional offers, see [Implementing promotional offers in your app](../../implementing-promotional-offers-in-your-app.md).
 
 ## See Also
 
-- [SKProductDiscount.Type.introductory](skproductdiscount/type-swift.enum/introductory.md)
+### Types of Offers
+- [SKProductDiscount.Type.introductory](./introductory.md)
   A constant indicating the discount type is an introductory offer.
 
 

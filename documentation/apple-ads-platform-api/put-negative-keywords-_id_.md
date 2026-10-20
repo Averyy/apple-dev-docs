@@ -1,7 +1,8 @@
 # Update a Negative Keyword
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Update a negative keyword’s status to enable or pause its search term exclusion.
 
@@ -50,17 +51,38 @@ PUT /v1/negative-keywords/{id}
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `NegativeKeywordUpdate`
+
+## Responses
+
+- `200` OK (`NegativeKeywordResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`ErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create a Negative Keyword](post-negative-keywords.md)
+- [Create a Negative Keyword](./post-negative-keywords.md)
   Create a negative keyword at the campaign or ad group level to prevent ads from showing for unwanted search terms.
-- [Query Negative Keywords](post-negative-keywords-query.md)
+- [Query Negative Keywords](./post-negative-keywords-query.md)
   Query negative keywords using structured filters, sorting, and pagination.
-- [Get a Negative Keyword](get-negative-keywords-_id_.md)
+- [Get a Negative Keyword](./get-negative-keywords-_id_.md)
   Retrieve a single negative keyword by its unique identifier.
-- [Delete a Negative Keyword](delete-negative-keywords-_id_.md)
+- [Delete a Negative Keyword](./delete-negative-keywords-_id_.md)
   Soft-delete a negative keyword by ID.
 
 

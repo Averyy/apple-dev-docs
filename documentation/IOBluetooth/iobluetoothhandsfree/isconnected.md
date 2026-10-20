@@ -1,7 +1,8 @@
 # isConnected
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 var isConnected: Bool { get }
+```
+
+```objc
+@property (readonly, getter=isConnected) BOOL connected;
 ```
 
 

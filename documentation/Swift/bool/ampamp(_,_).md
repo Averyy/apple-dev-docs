@@ -1,7 +1,8 @@
 # &&(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Performs a logical AND operation on two Boolean values.
 
@@ -48,11 +49,12 @@ In this example, `lhs` tests whether `measurements.count` is greater than zero. 
 
 ## See Also
 
-- [func toggle()](bool/toggle.md)
+### Transforming a Boolean
+- [func toggle()](./toggle%28%29.md)
   Toggles the Boolean variable’s value.
-- [static func ! (Bool) -> Bool](bool/!(_:).md)
+- [static func ! (Bool) -> Bool](./not%28_%29.md)
   Performs a logical NOT operation on a Boolean value.
-- [static func || (Bool, @autoclosure () throws -> Bool) rethrows -> Bool](bool/__(_:_:).md)
+- [static func || (Bool, @autoclosure () throws -> Bool) rethrows -> Bool](./opop%28_,_%29.md)
   Performs a logical OR operation on two Boolean values.
 
 

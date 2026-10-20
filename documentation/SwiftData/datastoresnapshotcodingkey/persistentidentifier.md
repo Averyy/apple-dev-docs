@@ -1,7 +1,8 @@
 # DataStoreSnapshotCodingKey.persistentIdentifier
 
 **Framework**: SwiftData  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that represents a persistent identifier.
 

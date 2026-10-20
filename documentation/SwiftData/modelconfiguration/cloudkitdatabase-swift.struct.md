@@ -1,7 +1,8 @@
 # ModelConfiguration.CloudKitDatabase
 
 **Framework**: SwiftData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that describes the options for detecting a CloudKit database.
 
@@ -24,30 +25,31 @@ struct CloudKitDatabase
 ## Topics
 
 ### Getting discovery options
-- [static var automatic: ModelConfiguration.CloudKitDatabase](modelconfiguration/cloudkitdatabase-swift.struct/automatic.md)
+- [static var automatic: ModelConfiguration.CloudKitDatabase](./cloudkitdatabase-swift.struct/automatic.md)
   Enables managed CloudKit sync using the primary ubiquity container from the app’s entitlements.
-- [static func `private`(String) -> ModelConfiguration.CloudKitDatabase](modelconfiguration/cloudkitdatabase-swift.struct/private(_:).md)
+- [static func `private`(String) -> ModelConfiguration.CloudKitDatabase](./cloudkitdatabase-swift.struct/private%28_%29.md)
   Enables managed CloudKit sync using the specified ubiquity container.
-- [static var none: ModelConfiguration.CloudKitDatabase](modelconfiguration/cloudkitdatabase-swift.struct/none.md)
+- [static var none: ModelConfiguration.CloudKitDatabase](./cloudkitdatabase-swift.struct/none.md)
   Disables managed CloudKit sync.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let cloudKitContainerIdentifier: String?](modelconfiguration/cloudkitcontaineridentifier.md)
+### Sharing and syncing the model store
+- [let cloudKitContainerIdentifier: String?](./cloudkitcontaineridentifier.md)
   The identifier of the configuration’s CloudKit database container.
-- [let cloudKitDatabase: ModelConfiguration.CloudKitDatabase](modelconfiguration/cloudkitdatabase-swift.property.md)
+- [let cloudKitDatabase: ModelConfiguration.CloudKitDatabase](./cloudkitdatabase-swift.property.md)
   The option to use when detecting the container of the preferred CloudKit database.
-- [let groupAppContainerIdentifier: String?](modelconfiguration/groupappcontaineridentifier.md)
+- [let groupAppContainerIdentifier: String?](./groupappcontaineridentifier.md)
   The identifier of the configuration’s app group container.
-- [let groupContainer: ModelConfiguration.GroupContainer](modelconfiguration/groupcontainer-swift.property.md)
+- [let groupContainer: ModelConfiguration.GroupContainer](./groupcontainer-swift.property.md)
   The option to use when detecting the preferred app group container.
-- [ModelConfiguration.GroupContainer](modelconfiguration/groupcontainer-swift.struct.md)
+- [ModelConfiguration.GroupContainer](./groupcontainer-swift.struct.md)
   A type that describes the options for detecting an app group container.
 
 

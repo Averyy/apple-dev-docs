@@ -1,7 +1,8 @@
 # libraryDirectory
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The standard directory for documentation, support, and configuration files.
 
@@ -24,35 +25,36 @@ static var libraryDirectory: URL { get }
 
 In iOS, this directory is within the app’s sandbox directory. In macOS, it’s within the app’s sandbox directory for sandboxed apps, or in the current user’s home directory `(~/Library)` if the app isn’t sandboxed.
 
-This computed property is equivalent to calling [`NSSearchPathForDirectoriesInDomains(_:_:_:)`](nssearchpathfordirectoriesindomains(_:_:_:).md) with the [`FileManager.SearchPathDirectory.libraryDirectory`](filemanager/searchpathdirectory/librarydirectory.md) parameter.
+This computed property is equivalent to calling [`NSSearchPathForDirectoriesInDomains(_:_:_:)`](../nssearchpathfordirectoriesindomains%28_,_,_%29.md) with the [`FileManager.SearchPathDirectory.libraryDirectory`](../filemanager/searchpathdirectory/librarydirectory.md) parameter.
 
 ## See Also
 
-- [static var applicationDirectory: URL](url/applicationdirectory.md)
+### Accessing common directories
+- [static var applicationDirectory: URL](./applicationdirectory.md)
   The standard directory for apps.
-- [static var applicationSupportDirectory: URL](url/applicationsupportdirectory.md)
+- [static var applicationSupportDirectory: URL](./applicationsupportdirectory.md)
   The standard directory for application support files.
-- [static var cachesDirectory: URL](url/cachesdirectory.md)
+- [static var cachesDirectory: URL](./cachesdirectory.md)
   The standard directory for discardable cache files.
-- [static var desktopDirectory: URL](url/desktopdirectory.md)
+- [static var desktopDirectory: URL](./desktopdirectory.md)
   The standard directory for files on the desktop.
-- [static var documentsDirectory: URL](url/documentsdirectory.md)
+- [static var documentsDirectory: URL](./documentsdirectory.md)
   The standard directory for document files.
-- [static var downloadsDirectory: URL](url/downloadsdirectory.md)
+- [static var downloadsDirectory: URL](./downloadsdirectory.md)
   The standard directory for download files.
-- [static var moviesDirectory: URL](url/moviesdirectory.md)
+- [static var moviesDirectory: URL](./moviesdirectory.md)
   The standard directory for movie files.
-- [static var musicDirectory: URL](url/musicdirectory.md)
+- [static var musicDirectory: URL](./musicdirectory.md)
   The standard directory for music files.
-- [static var picturesDirectory: URL](url/picturesdirectory.md)
+- [static var picturesDirectory: URL](./picturesdirectory.md)
   The standard directory for image files.
-- [static var sharedPublicDirectory: URL](url/sharedpublicdirectory.md)
+- [static var sharedPublicDirectory: URL](./sharedpublicdirectory.md)
   The standard directory for publicly shared files.
-- [static var temporaryDirectory: URL](url/temporarydirectory.md)
+- [static var temporaryDirectory: URL](./temporarydirectory.md)
   The standard directory for temporary files.
-- [static var trashDirectory: URL](url/trashdirectory.md)
+- [static var trashDirectory: URL](./trashdirectory.md)
   The standard trash directory.
-- [static var userDirectory: URL](url/userdirectory.md)
+- [static var userDirectory: URL](./userdirectory.md)
   The container directory of user home directories.
 
 

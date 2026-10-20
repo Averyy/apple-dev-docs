@@ -1,7 +1,8 @@
 # supplementaryItems
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of the supplementary items attached to the item.
 
@@ -12,6 +13,10 @@ An array of the supplementary items attached to the item.
 
 ```swift
 var supplementaryItems: [NSCollectionLayoutSupplementaryItem] { get }
+```
+
+```objc
+@property (readonly) NSArray<NSCollectionLayoutSupplementaryItem *> * supplementaryItems;
 ```
 
 

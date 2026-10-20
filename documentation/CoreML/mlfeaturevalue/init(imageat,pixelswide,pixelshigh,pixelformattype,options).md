@@ -1,7 +1,8 @@
 # init(imageAt:pixelsWide:pixelsHigh:pixelFormatType:options:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Construct image feature value from an image on disk. Orientation is read from Exif if avaiable
 
@@ -18,6 +19,10 @@ Construct image feature value from an image on disk. Orientation is read from Ex
 
 ```swift
 convenience init(imageAt url: URL, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]? = nil) throws
+```
+
+```objc
++ (instancetype) featureValueWithImageAtURL:(NSURL *) url pixelsWide:(NSInteger) pixelsWide pixelsHigh:(NSInteger) pixelsHigh pixelFormatType:(OSType) pixelFormatType options:(NSDictionary<NSString *,id> *) options error:(NSError **) error;
 ```
 
 

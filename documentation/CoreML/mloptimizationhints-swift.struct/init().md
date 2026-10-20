@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Construct an MLOptimizationHints
 

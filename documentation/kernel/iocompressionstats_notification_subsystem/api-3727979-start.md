@@ -1,14 +1,15 @@
 # start
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 mach_msg_id_t start;
 ```
 

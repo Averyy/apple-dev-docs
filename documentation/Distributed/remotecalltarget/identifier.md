@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Distributed  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying identifier of the target, returned as-is.
 
@@ -11,7 +12,7 @@ The underlying identifier of the target, returned as-is.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

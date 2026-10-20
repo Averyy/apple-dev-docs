@@ -1,7 +1,8 @@
 # EALREADY
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Operation already in progress.
 

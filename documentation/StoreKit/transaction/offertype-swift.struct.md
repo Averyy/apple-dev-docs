@@ -1,7 +1,8 @@
 # Transaction.OfferType
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The types of offers that apply to a transaction.
 
@@ -22,31 +23,31 @@ struct OfferType
 
 #### Overview
 
-You don’t create offer types in [`Transaction.OfferType`](transaction/offertype-swift.struct.md). The static values indicate the offer types that the system reports for a transaction.
+You don’t create offer types in [`Transaction.OfferType`](./offertype-swift.struct.md). The static values indicate the offer types that the system reports for a transaction.
 
 ## Topics
 
 ### Getting offer types
-- [static let introductory: Transaction.OfferType](transaction/offertype-swift.struct/introductory.md)
+- [static let introductory: Transaction.OfferType](./offertype-swift.struct/introductory.md)
   An introductory offer for an auto-renewable subscription.
-- [static let promotional: Transaction.OfferType](transaction/offertype-swift.struct/promotional.md)
+- [static let promotional: Transaction.OfferType](./offertype-swift.struct/promotional.md)
   A promotional offer for an auto-renewable subscription.
-- [static let code: Transaction.OfferType](transaction/offertype-swift.struct/code.md)
+- [static let code: Transaction.OfferType](./offertype-swift.struct/code.md)
   An offer code.
-- [static var winBack: Transaction.OfferType](transaction/offertype-swift.struct/winback.md)
+- [static var winBack: Transaction.OfferType](./offertype-swift.struct/winback.md)
   A win-back offer for an auto-renewable subscription.
 ### Getting a localized description
-- [var localizedDescription: String](transaction/offertype-swift.struct/localizeddescription.md)
+- [var localizedDescription: String](./offertype-swift.struct/localizeddescription.md)
   The localized text that describes the offer type.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

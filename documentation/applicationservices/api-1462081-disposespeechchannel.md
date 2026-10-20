@@ -1,7 +1,8 @@
 # DisposeSpeechChannel(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Disposes of an existing speech channel.
 
@@ -14,9 +15,13 @@ Disposes of an existing speech channel.
 func DisposeSpeechChannel(_ chan: SpeechChannel) -> OSErr
 ```
 
-#### Return_value
+```c
+OSErr DisposeSpeechChannel(SpeechChannel chan);
+```
 
-A resultcode. See [`Result Codes`](speech_synthesis_manager#1659745.md).
+#### Return Value
+
+A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
 #### Discussion
 
@@ -30,7 +35,8 @@ The Speech Synthesis Manager releases any speech channelsthat have not been expl
 
 ## See Also
 
-- [func NewSpeechChannel(UnsafeMutablePointer<VoiceSpec>?, UnsafeMutablePointer<SpeechChannel?>) -> OSErr](1461367-newspeechchannel.md)
+### Managing Speech Channels
+- [func NewSpeechChannel(UnsafeMutablePointer<VoiceSpec>?, UnsafeMutablePointer<SpeechChannel?>) -> OSErr](./api-1461367-newspeechchannel.md)
   Creates a new speech channel.
 
 

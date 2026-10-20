@@ -1,7 +1,8 @@
 # init(audioUnit:)
 
 **Framework**: CoreAudioKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a panner view for an audio unit.
 
@@ -12,6 +13,10 @@ Creates a panner view for an audio unit.
 
 ```swift
 init(audioUnit au: AudioUnit)
+```
+
+```objc
++ (AUPannerView *) AUPannerViewWithAudioUnit:(AudioUnit) au;
 ```
 
 #### Return Value

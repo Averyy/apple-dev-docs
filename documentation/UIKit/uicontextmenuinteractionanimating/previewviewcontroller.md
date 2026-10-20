@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The current preview view controller.
@@ -17,6 +18,10 @@ The current preview view controller.
 
 ```swift
 var previewViewController: UIViewController? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) UIViewController * previewViewController;
 ```
 
 

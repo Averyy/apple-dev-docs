@@ -1,7 +1,8 @@
 # SWHighlightCenterErrorCode
 
 **Framework**: Shared with You  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The error codes for the highlight center.
 
@@ -19,29 +20,33 @@ The error codes for the highlight center.
 enum SWHighlightCenterErrorCode
 ```
 
+```c
+enum SWHighlightCenterErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Highlight center errors
-- [SWHighlightCenterErrorCode.noError](swhighlightcentererrorcode/noerror.md)
+- [SWHighlightCenterErrorCode.noError](./swhighlightcentererrorcode/noerror.md)
   Reports no error.
-- [SWHighlightCenterErrorCode.internalError](swhighlightcentererrorcode/internalerror.md)
+- [SWHighlightCenterErrorCode.internalError](./swhighlightcentererrorcode/internalerror.md)
   Reports an internal error.
-- [SWHighlightCenterErrorCode.invalidURL](swhighlightcentererrorcode/invalidurl.md)
+- [SWHighlightCenterErrorCode.invalidURL](./swhighlightcentererrorcode/invalidurl.md)
   Reports an invalid URL error.
-- [SWHighlightCenterErrorCode.accessDenied](swhighlightcentererrorcode/accessdenied.md)
+- [SWHighlightCenterErrorCode.accessDenied](./swhighlightcentererrorcode/accessdenied.md)
   Reports and access denied error.
 ### Initializers
-- [init?(rawValue: Int)](swhighlightcentererrorcode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./swhighlightcentererrorcode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

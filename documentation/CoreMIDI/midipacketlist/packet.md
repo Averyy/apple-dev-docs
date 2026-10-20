@@ -1,18 +1,19 @@
 # packet
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An open-ended array of variable-length MIDI packets.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ An open-ended array of variable-length MIDI packets.
 var packet: MIDIPacket
 ```
 
+```c
+MIDIPacket packet[1];
+```
+
 ## See Also
 
-- [var numPackets: UInt32](midipacketlist/numpackets.md)
+### Inspecting a Packet List
+- [var numPackets: UInt32](./numpackets.md)
   The number of MIDI packets in the list.
 
 

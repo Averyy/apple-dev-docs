@@ -1,7 +1,8 @@
 # DOMStringList
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,17 +10,17 @@
 
 ## Declaration
 
-```swift
+```
 interface DOMStringList
 ```
 
 ## Topics
 
 ### Instance Properties
-- [length](domstringlist/1633504-length.md)
+- [length](./domstringlist/api-1633504-length.md)
 ### Instance Methods
-- [contains](domstringlist/1629122-contains.md)
-- [item](domstringlist/1630468-item.md)
+- [contains](./domstringlist/api-1629122-contains.md)
+- [item](./domstringlist/api-1630468-item.md)
 
 
 ---

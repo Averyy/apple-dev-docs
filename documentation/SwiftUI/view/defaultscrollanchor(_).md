@@ -1,7 +1,8 @@
 # defaultScrollAnchor(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Associates an anchor to control which part of the scroll view’s content should be rendered by default.
 
@@ -25,7 +26,7 @@ func defaultScrollAnchor(_ anchor: UnitPoint?) -> some View
 
 Use this modifier to specify an anchor to control both which part of the scroll view’s content should be visible initially and how the scroll view handles content size changes.
 
-Provide a value of [`center`](unitpoint/center.md) to have the scroll view start in the center of its content when a scroll view is scrollable in both axes.
+Provide a value of [`center`](../unitpoint/center.md) to have the scroll view start in the center of its content when a scroll view is scrollable in both axes.
 
 ```swift
 ScrollView([.horizontal, .vertical]) {
@@ -34,7 +35,7 @@ ScrollView([.horizontal, .vertical]) {
 .defaultScrollAnchor(.center)
 ```
 
-Provide a value of [`bottom`](unitpoint/bottom.md) to have the scroll view start at the bottom of its content when scrollable in the vertical axis.
+Provide a value of [`bottom`](../unitpoint/bottom.md) to have the scroll view start at the bottom of its content when scrollable in the vertical axis.
 
 ```swift
 @Binding var items: [Item]
@@ -54,15 +55,16 @@ The user may scroll away from the initial defined scroll position. When the cont
 
 ## See Also
 
-- [func scrollPosition(Binding<ScrollPosition>, anchor: UnitPoint?) -> some View](view/scrollposition(_:anchor:).md)
+### Managing scroll position
+- [func scrollPosition(Binding<ScrollPosition>, anchor: UnitPoint?) -> some View](./scrollposition%28_,anchor%29.md)
   Associates a binding to a scroll position with a scroll view within this view.
-- [func scrollPosition(id: Binding<(some Hashable)?>, anchor: UnitPoint?) -> some View](view/scrollposition(id:anchor:).md)
+- [func scrollPosition(id: Binding<(some Hashable)?>, anchor: UnitPoint?) -> some View](./scrollposition%28id,anchor%29.md)
   Associates a binding to be updated when a scroll view within this view scrolls.
-- [func defaultScrollAnchor(UnitPoint?, for: ScrollAnchorRole) -> some View](view/defaultscrollanchor(_:for:).md)
+- [func defaultScrollAnchor(UnitPoint?, for: ScrollAnchorRole) -> some View](./defaultscrollanchor%28_,for%29.md)
   Associates an anchor to control the position of a scroll view in a particular circumstance.
-- [struct ScrollAnchorRole](scrollanchorrole.md)
+- [struct ScrollAnchorRole](../scrollanchorrole.md)
   A type defining the role of a scroll anchor.
-- [struct ScrollPosition](scrollposition.md)
+- [struct ScrollPosition](../scrollposition.md)
   A type that defines the semantic position of where a scroll view is scrolled within its content.
 
 

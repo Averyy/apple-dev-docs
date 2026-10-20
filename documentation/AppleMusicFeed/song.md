@@ -1,7 +1,8 @@
 # Song
 
 **Framework**: Apple Music Feed  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represents a Song resource.
 
@@ -10,36 +11,36 @@ The data structure that represents a Song resource.
 
 ## Declaration
 
-```swift
+```
 object Song
 ```
 
 ## Topics
 
 ### Related objects
-- [object Song.ArtistRole](song/artistrole.md)
+- [object Song.ArtistRole](./song/artistrole.md)
   Information about an artist’s role.
-- [object Song.Genre](song/genre.md)
+- [object Song.Genre](./song/genre.md)
   A genre name and its structure.
-- [object Song.Name](song/name-data.dictionary.md)
+- [object Song.Name](./song/name-data.dictionary.md)
   A mapping of locale to localized names for the song.
-- [object Song.NamePronunciation](song/namepronunciation-data.dictionary.md)
+- [object Song.NamePronunciation](./song/namepronunciation-data.dictionary.md)
   A mapping of locale to translations for the specific pronunciation-name translation type.
-- [object Song.Prices](song/prices-data.dictionary.md)
+- [object Song.Prices](./song/prices-data.dictionary.md)
   A mapping of locale to pricing information.
-- [object Song.RelatedAlbum](song/relatedalbum.md)
-- [object Song.RelatedArtist](song/relatedartist.md)
+- [object Song.RelatedAlbum](./song/relatedalbum.md)
+- [object Song.RelatedArtist](./song/relatedartist.md)
   Information about a related artist.
-- [object Song.ReleaseDate](song/releasedate-data.dictionary.md)
+- [object Song.ReleaseDate](./song/releasedate-data.dictionary.md)
   A mapping of locale to release date for the song.
-- [object Song.RelevanceScore](song/relevancescore-data.dictionary.md)
+- [object Song.RelevanceScore](./song/relevancescore-data.dictionary.md)
   A score representing song relevance, used to rank songs when surfacing content.
-- [object Song.TitleVersion](song/titleversion-data.dictionary.md)
+- [object Song.TitleVersion](./song/titleversion-data.dictionary.md)
   A mapping of locale to translations for the specific title-version translation type.
-- [object Song.TitleVersionPronunciation](song/titleversionpronunciation-data.dictionary.md)
+- [object Song.TitleVersionPronunciation](./song/titleversionpronunciation-data.dictionary.md)
   A mapping of locale to translations for the specific title-version-pronunciation-name translation type.
 ### Dictionaries
-- [object Song.Album](song/album-data.dictionary.md)
+- [object Song.Album](./song/album-data.dictionary.md)
   Information about the related album that contains the song.
 
 ## Properties
@@ -73,13 +74,14 @@ object Song
 
 ## See Also
 
-- [object Album](album.md)
+### Objects
+- [object Album](./album.md)
   The data structure that represents an Album resource.
-- [object Artist](artist.md)
+- [object Artist](./artist.md)
   The data structure that represents an Artist resource.
-- [object PopularityTopChartAlbums](popularitytopchartalbums.md)
+- [object PopularityTopChartAlbums](./popularitytopchartalbums.md)
   The data structure that represents an album popularity chart resource.
-- [object PopularityTopChartSongs](popularitytopchartsongs.md)
+- [object PopularityTopChartSongs](./popularitytopchartsongs.md)
   The data structure that represents a song popularity chart resource.
 
 

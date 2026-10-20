@@ -1,7 +1,8 @@
 # init(customIndexingKey:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.4+
@@ -15,6 +16,8 @@
 ```swift
 convenience init(customIndexingKey: CSCustomAttributeKey)
 ```
+
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, `Value.ValueType` conforms to `Decodable`, and `Value.ValueType` conforms to `Encodable`.
 
 
 ---

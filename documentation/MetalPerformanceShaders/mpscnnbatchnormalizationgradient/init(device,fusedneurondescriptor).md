@@ -1,7 +1,8 @@
 # init(device:fusedNeuronDescriptor:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, fusedNeuronDescriptor: MPSNNNeuronDescriptor?)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device fusedNeuronDescriptor:(MPSNNNeuronDescriptor *) fusedNeuronDescriptor;
 ```
 
 

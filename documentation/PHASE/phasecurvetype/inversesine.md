@@ -1,17 +1,18 @@
 # PHASECurveType.inverseSine
 
 **Framework**: PHASE  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An inverse sine curve.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,31 +20,36 @@ An inverse sine curve.
 case inverseSine
 ```
 
+```c
+PHASECurveTypeInverseSine
+```
+
 #### Discussion
 
-The function `y` `=` `sin^-1(x)` shapes this curve. The inverse sine curve behaves like [`PHASECurveType.sine`](phasecurvetype/sine.md), only rotated `90` degrees.
+The function `y` `=` `sin^-1(x)` shapes this curve. The inverse sine curve behaves like [`PHASECurveType.sine`](./sine.md), only rotated `90` degrees.
 
 ## See Also
 
-- [PHASECurveType.linear](phasecurvetype/linear.md)
+### Types
+- [PHASECurveType.linear](./linear.md)
   A curve that increases uniformly with its input.
-- [PHASECurveType.squared](phasecurvetype/squared.md)
+- [PHASECurveType.squared](./squared.md)
   A curve that increases at a rate that squares its input.
-- [PHASECurveType.inverseSquared](phasecurvetype/inversesquared.md)
+- [PHASECurveType.inverseSquared](./inversesquared.md)
   A curve that increases at a rate of one divided by the input’s square.
-- [PHASECurveType.cubed](phasecurvetype/cubed.md)
+- [PHASECurveType.cubed](./cubed.md)
   A curve that increases at a rate that cubes its input.
-- [PHASECurveType.inverseCubed](phasecurvetype/inversecubed.md)
+- [PHASECurveType.inverseCubed](./inversecubed.md)
   A curve that increases at a rate of one divided by the input’s cube.
-- [PHASECurveType.sine](phasecurvetype/sine.md)
+- [PHASECurveType.sine](./sine.md)
   A sine curve.
-- [PHASECurveType.sigmoid](phasecurvetype/sigmoid.md)
+- [PHASECurveType.sigmoid](./sigmoid.md)
   A sigmoid curve.
-- [PHASECurveType.inverseSigmoid](phasecurvetype/inversesigmoid.md)
+- [PHASECurveType.inverseSigmoid](./inversesigmoid.md)
   An inverse sigmoid curve.
-- [PHASECurveType.holdStartValue](phasecurvetype/holdstartvalue.md)
+- [PHASECurveType.holdStartValue](./holdstartvalue.md)
   A curve that equals its start value for the entire duration.
-- [PHASECurveType.jumpToEndValue](phasecurvetype/jumptoendvalue.md)
+- [PHASECurveType.jumpToEndValue](./jumptoendvalue.md)
   A curve that equals its end value for the entire duration.
 
 

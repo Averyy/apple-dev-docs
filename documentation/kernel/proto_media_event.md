@@ -1,14 +1,15 @@
 # proto_media_event
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef void (*proto_media_event)(ifnet_t ifp, protocol_family_t protocol, const struct kev_msg *event);
 ```
 

@@ -1,7 +1,8 @@
 # kCIAttributeTypeTransform
 
 **Framework**: Core Image  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The transform type of an attribute.
 
@@ -10,7 +11,7 @@ The transform type of an attribute.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,14 +20,19 @@ The transform type of an attribute.
 let kCIAttributeTypeTransform: String
 ```
 
+```c
+extern NSString * const kCIAttributeTypeTransform;
+```
+
 #### Discussion
 
-An [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) is associated with attribute.
+An [`CGAffineTransform`](../CoreFoundation/cgaffinetransform.md) is associated with attribute.
 
 ## See Also
 
-- [let kCIAttributeTypeImage: String](kciattributetypeimage.md)
-  A [`CIImage`](ciimage.md) object.
+### Constants
+- [let kCIAttributeTypeImage: String](./kciattributetypeimage.md)
+  A [`CIImage`](./ciimage.md) object.
 
 
 ---

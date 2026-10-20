@@ -1,7 +1,8 @@
 # NSLayoutManager.TextLayoutOrientation.horizontal
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Lines render horizontally, each line following the previous from top to bottom.
 
@@ -18,9 +19,14 @@ Lines render horizontally, each line following the previous from top to bottom.
 case horizontal
 ```
 
+```c
+NSTextLayoutOrientationHorizontal
+```
+
 ## See Also
 
-- [NSLayoutManager.TextLayoutOrientation.vertical](nslayoutmanager/textlayoutorientation/vertical.md)
+### Constants
+- [NSLayoutManager.TextLayoutOrientation.vertical](./vertical.md)
   Lines render vertically, each line following the previous from right to left.
 
 

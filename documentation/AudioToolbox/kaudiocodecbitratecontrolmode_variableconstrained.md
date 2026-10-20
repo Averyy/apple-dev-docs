@@ -1,15 +1,16 @@
 # kAudioCodecBitRateControlMode_VariableConstrained
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,11 +18,16 @@
 var kAudioCodecBitRateControlMode_VariableConstrained: UInt32 { get }
 ```
 
+```c
+kAudioCodecBitRateControlMode_VariableConstrained
+```
+
 ## See Also
 
-- [var kAudioCodecBitRateControlMode_Constant: UInt32](kaudiocodecbitratecontrolmode_constant.md)
-- [var kAudioCodecBitRateControlMode_LongTermAverage: UInt32](kaudiocodecbitratecontrolmode_longtermaverage.md)
-- [var kAudioCodecBitRateControlMode_Variable: UInt32](kaudiocodecbitratecontrolmode_variable.md)
+### Constants
+- [var kAudioCodecBitRateControlMode_Constant: UInt32](./kaudiocodecbitratecontrolmode_constant.md)
+- [var kAudioCodecBitRateControlMode_LongTermAverage: UInt32](./kaudiocodecbitratecontrolmode_longtermaverage.md)
+- [var kAudioCodecBitRateControlMode_Variable: UInt32](./kaudiocodecbitratecontrolmode_variable.md)
 
 
 ---

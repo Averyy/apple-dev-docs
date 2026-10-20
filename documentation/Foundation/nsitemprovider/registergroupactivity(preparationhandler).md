@@ -1,7 +1,8 @@
 # registerGroupActivity(preparationHandler:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers a group activity instance asynchronously with the specified options.
 
@@ -25,7 +26,8 @@ func registerGroupActivity<ActivityType>(preparationHandler: @escaping () async 
 
 ## See Also
 
-- [func registerGroupActivity<ActivityType>(ActivityType)](nsitemprovider/registergroupactivity(_:).md)
+### Registering group activities
+- [func registerGroupActivity<ActivityType>(ActivityType)](./registergroupactivity%28_%29.md)
   Registers a group activity instance with the specificed options.
 
 

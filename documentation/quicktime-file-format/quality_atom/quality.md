@@ -1,7 +1,8 @@
 # Quality
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 The relative quality of the movie, expressed as a 32-bit integer.
 
@@ -11,9 +12,10 @@ A larger number indicates higher quality. Give each movie a unique value.
 
 ## See Also
 
-- [Size](quality_atom/size.md)
+### Data fields
+- [Size](./size.md)
   The number of bytes in this quality atom.
-- [Type](quality_atom/type.md)
+- [Type](./type.md)
   The type of this atom.
 
 

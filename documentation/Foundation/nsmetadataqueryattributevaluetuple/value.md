@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of the tuple’s attribute.
 
@@ -20,11 +21,16 @@ The value of the tuple’s attribute.
 var value: Any? { get }
 ```
 
+```objc
+@property (retain, readonly, nullable) id value;
+```
+
 ## See Also
 
-- [var attribute: String](nsmetadataqueryattributevaluetuple/attribute.md)
+### Getting Query Attribute/Value Information
+- [var attribute: String](./attribute.md)
   The attribute name for the tuple’s value.
-- [var count: Int](nsmetadataqueryattributevaluetuple/count.md)
+- [var count: Int](./count.md)
   The number of instances of the value for the tuple’s attribute.
 
 

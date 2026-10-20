@@ -1,7 +1,8 @@
 # GeometryElement.Primitive.triangle
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Three vertices that connect to form a triangle.
 
@@ -16,7 +17,8 @@ case triangle
 
 ## See Also
 
-- [GeometryElement.Primitive.line](geometryelement/primitive-swift.enum/line.md)
+### Primitive shapes
+- [GeometryElement.Primitive.line](./line.md)
   Two vertices that connect to form a line.
 
 

@@ -1,16 +1,17 @@
 # DDDevice.MediaPlaybackState
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 States that indicate the status of a device’s media playback.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -18,39 +19,44 @@ States that indicate the status of a device’s media playback.
 enum MediaPlaybackState
 ```
 
+```c
+enum DDDeviceMediaPlaybackState : NSInteger;
+```
+
 #### Overview
 
-The device ([`DDDevice`](dddevice.md)) property [`mediaPlaybackState`](dddevice/mediaplaybackstate-swift.property.md) is of this type.
+The device ([`DDDevice`](../dddevice.md)) property [`mediaPlaybackState`](./mediaplaybackstate-swift.property.md) is of this type.
 
 ## Topics
 
 ### Distinguishing media playback states
-- [DDDevice.MediaPlaybackState.noContent](dddevice/mediaplaybackstate-swift.enum/nocontent.md)
+- [DDDevice.MediaPlaybackState.noContent](./mediaplaybackstate-swift.enum/nocontent.md)
   A state that indicates when the device plays no content.
-- [DDDevice.MediaPlaybackState.paused](dddevice/mediaplaybackstate-swift.enum/paused.md)
+- [DDDevice.MediaPlaybackState.paused](./mediaplaybackstate-swift.enum/paused.md)
   A state that indicates when content playback for the device pauses.
-- [DDDevice.MediaPlaybackState.playing](dddevice/mediaplaybackstate-swift.enum/playing.md)
+- [DDDevice.MediaPlaybackState.playing](./mediaplaybackstate-swift.enum/playing.md)
   A state that indicates when the device plays media.
 ### Initializers
-- [init?(rawValue: Int)](dddevice/mediaplaybackstate-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mediaplaybackstate-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var mediaContentTitle: String?](dddevice/mediacontenttitle.md)
+### Communicating device content and playback status
+- [var mediaContentTitle: String?](./mediacontenttitle.md)
   A title for the current media that the device plays.
-- [var mediaContentSubtitle: String?](dddevice/mediacontentsubtitle.md)
+- [var mediaContentSubtitle: String?](./mediacontentsubtitle.md)
   A subtitle for the current media that the device plays.
-- [var mediaPlaybackState: DDDevice.MediaPlaybackState](dddevice/mediaplaybackstate-swift.property.md)
+- [var mediaPlaybackState: DDDevice.MediaPlaybackState](./mediaplaybackstate-swift.property.md)
   A playback status for the device’s current media.
 
 

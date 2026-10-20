@@ -1,7 +1,8 @@
 # init(erasing:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -21,7 +22,8 @@ nonisolated init<V>(erasing view: V) where V : View
 
 ## See Also
 
-- [init<V>(V)](anyview/init(_:).md)
+### Creating a view
+- [init<V>(V)](./init%28_%29.md)
   Create an instance that type-erases `view`.
 
 

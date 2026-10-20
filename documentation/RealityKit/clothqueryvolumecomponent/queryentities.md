@@ -1,7 +1,8 @@
 # queryEntities
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entities to query for intersections with the volume.
 
@@ -18,7 +19,7 @@ var queryEntities: [Entity]
 
 #### Discussion
 
-Only entities with a [`ClothBodyComponent`](clothbodycomponent.md) are included in the query; others are ignored.
+Only entities with a [`ClothBodyComponent`](../clothbodycomponent.md) are included in the query; others are ignored.
 
 
 ---

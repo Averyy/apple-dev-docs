@@ -1,9 +1,10 @@
 # NSTextBlock.VerticalAlignment
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-The following constants specify values used by the property [`verticalAlignment`](nstextblock/verticalalignment-swift.property.md) to specify vertical alignment.
+The following constants specify values used by the property [`verticalAlignment`](./verticalalignment-swift.property.md) to specify vertical alignment.
 
 **Availability**:
 - macOS 10.0+
@@ -14,38 +15,43 @@ The following constants specify values used by the property [`verticalAlignment`
 enum VerticalAlignment
 ```
 
+```c
+enum NSTextBlockVerticalAlignment : NSInteger;
+```
+
 ## Topics
 
 ### Deprecated
-- [static var topAlignment: NSTextBlock.VerticalAlignment](nstextblock/verticalalignment-swift.enum/topalignment.md)
+- [static var topAlignment: NSTextBlock.VerticalAlignment](./verticalalignment-swift.enum/topalignment.md)
   Aligns adjacent blocks at their top.
-- [static var middleAlignment: NSTextBlock.VerticalAlignment](nstextblock/verticalalignment-swift.enum/middlealignment.md)
+- [static var middleAlignment: NSTextBlock.VerticalAlignment](./verticalalignment-swift.enum/middlealignment.md)
   Aligns adjacent blocks at their middle.
-- [static var bottomAlignment: NSTextBlock.VerticalAlignment](nstextblock/verticalalignment-swift.enum/bottomalignment.md)
+- [static var bottomAlignment: NSTextBlock.VerticalAlignment](./verticalalignment-swift.enum/bottomalignment.md)
   Aligns adjacent blocks at their bottom.
-- [static var baselineAlignment: NSTextBlock.VerticalAlignment](nstextblock/verticalalignment-swift.enum/baselinealignment.md)
+- [static var baselineAlignment: NSTextBlock.VerticalAlignment](./verticalalignment-swift.enum/baselinealignment.md)
   Aligns adjacent blocks at the baseline of the first line of text in the block.
 ### Enumeration Cases
-- [NSTextBlock.VerticalAlignment.baseline](nstextblock/verticalalignment-swift.enum/baseline.md)
-- [NSTextBlock.VerticalAlignment.bottom](nstextblock/verticalalignment-swift.enum/bottom.md)
-- [NSTextBlock.VerticalAlignment.middle](nstextblock/verticalalignment-swift.enum/middle.md)
-- [NSTextBlock.VerticalAlignment.top](nstextblock/verticalalignment-swift.enum/top.md)
+- [NSTextBlock.VerticalAlignment.baseline](./verticalalignment-swift.enum/baseline.md)
+- [NSTextBlock.VerticalAlignment.bottom](./verticalalignment-swift.enum/bottom.md)
+- [NSTextBlock.VerticalAlignment.middle](./verticalalignment-swift.enum/middle.md)
+- [NSTextBlock.VerticalAlignment.top](./verticalalignment-swift.enum/top.md)
 ### Initializers
-- [init?(rawValue: Int)](nstextblock/verticalalignment-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./verticalalignment-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var verticalAlignment: NSTextBlock.VerticalAlignment](nstextblock/verticalalignment-swift.property.md)
+### Getting and setting alignment
+- [var verticalAlignment: NSTextBlock.VerticalAlignment](./verticalalignment-swift.property.md)
   The vertical alignment of the text block.
 
 

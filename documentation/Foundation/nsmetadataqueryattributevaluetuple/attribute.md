@@ -1,7 +1,8 @@
 # attribute
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attribute name for the tuple’s value.
 
@@ -20,12 +21,18 @@ The attribute name for the tuple’s value.
 var attribute: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * attribute;
+```
+
 ## See Also
 
-- [File Metadata Attributes Reference](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreServices/Reference/MetadataAttributesRef/MetadataAttrRef.html#//apple_ref/doc/uid/TP40001689)
-- [var count: Int](nsmetadataqueryattributevaluetuple/count.md)
+### Related Documentation
+- [File Metadata Attributes Reference](https://developer.apple.com/library/archive/documentation/CoreServices/Reference/MetadataAttributesRef/MetadataAttrRef.html#//apple_ref/doc/uid/TP40001689)
+### Getting Query Attribute/Value Information
+- [var count: Int](./count.md)
   The number of instances of the value for the tuple’s attribute.
-- [var value: Any?](nsmetadataqueryattributevaluetuple/value.md)
+- [var value: Any?](./value.md)
   The value of the tuple’s attribute.
 
 

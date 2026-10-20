@@ -1,7 +1,8 @@
 # label(for:)
 
 **Framework**: Natural Language  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the label for the given term.
 
@@ -18,6 +19,10 @@ Retrieves the label for the given term.
 
 ```swift
 func label(for string: String) -> String?
+```
+
+```objc
+- (NSString *) labelForString:(NSString *) string;
 ```
 
 #### Return Value

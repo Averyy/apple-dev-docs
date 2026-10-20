@@ -1,7 +1,8 @@
 # imageIdentifier
 
 **Framework**: Retention Messaging API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A unique identifier for an image that you provide when you upload the image.
 
@@ -10,21 +11,22 @@ A unique identifier for an image that you provide when you upload the image.
 
 ## Declaration
 
-```swift
+```
 uuid imageIdentifier
 ```
 
 #### Discussion
 
-You create a UUID to identify an image when you call [`Upload Image`](upload-image.md). Use this identifier to refer to the same image throughout the API.
+You create a UUID to identify an image when you call [`Upload Image`](./upload-image.md). Use this identifier to refer to the same image throughout the API.
 
 ## See Also
 
-- [type imageState](imagestate.md)
+### Images
+- [type imageState](./imagestate.md)
   The approval state of an image.
-- [type imageSize](imagesize.md)
+- [type imageSize](./imagesize.md)
   The size of an image.
-- [type altText](alttext.md)
+- [type altText](./alttext.md)
   The alternative text for a corresponding image.
 
 

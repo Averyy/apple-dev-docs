@@ -1,7 +1,8 @@
 # init(data:width:height:byteCountPerRow:pixelFormat:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new buffer that references existing data.
 
@@ -11,7 +12,7 @@ Returns a new buffer that references existing data.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,9 +21,11 @@ Returns a new buffer that references existing data.
 init(data: UnsafeMutableRawPointer, width: Int, height: Int, byteCountPerRow: Int, pixelFormat: Format.Type)
 ```
 
+Available when `Format` conforms to `SinglePlanePixelFormat`.
+
 #### Discussion
 
-You can use this function to simplify interoperation with other libraries and frameworks. For example, the following code shows a function that permutes the channels of a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance. The function creates a pixel buffer that uses the storage a [`CGDataProvider`](https://developer.apple.com/documentation/coregraphics/cgdataprovider) instance’s [`data`](https://developer.apple.com/documentation/coregraphics/cgdataprovider/data) property provides. The [`data`](https://developer.apple.com/documentation/coregraphics/cgdataprovider/data) property is a copy of the image data, therefore, the code returns a new [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance that it generates from the permuted pixel buffer.
+You can use this function to simplify interoperation with other libraries and frameworks. For example, the following code shows a function that permutes the channels of a [`CGImage`](../../../CoreGraphics/cgimage.md) instance. The function creates a pixel buffer that uses the storage a [`CGDataProvider`](../../../CoreGraphics/cgdataprovider.md) instance’s [`data`](../../../CoreGraphics/cgdataprovider/data.md) property provides. The [`data`](../../../CoreGraphics/cgdataprovider/data.md) property is a copy of the image data, therefore, the code returns a new [`CGImage`](../../../CoreGraphics/cgimage.md) instance that it generates from the permuted pixel buffer.
 
 ```swift
 static func permute(image: CGImage,
@@ -65,9 +68,10 @@ static func permute(image: CGImage,
 
 ## See Also
 
-- [init<U>(pixelValues: U, size: vImage.Size, pixelFormat: Format.Type)](vimage/pixelbuffer/init(pixelvalues:size:pixelformat:).md)
+### Creating a pixel buffer from raw pixel data
+- [init<U>(pixelValues: U, size: vImage.Size, pixelFormat: Format.Type)](./init%28pixelvalues,size,pixelformat%29.md)
   Creates a new pixel buffer by copying the supplied collection of pixel values.
-- [init(data: UnsafeMutableRawPointer, width: Int, height: Int, byteCountPerRow: Int?, pixelFormat: Format.Type)](vimage/pixelbuffer/init(data:width:height:bytecountperrow:pixelformat:)-27czc.md)
+- [init(data: UnsafeMutableRawPointer, width: Int, height: Int, byteCountPerRow: Int?, pixelFormat: Format.Type)](./init%28data,width,height,bytecountperrow,pixelformat%29-27czc.md)
   Calculates the correct bytes per row and returns a new buffer that references existing data.
 
 

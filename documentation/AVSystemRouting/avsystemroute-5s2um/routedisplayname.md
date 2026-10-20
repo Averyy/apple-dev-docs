@@ -1,7 +1,8 @@
 # routeDisplayName
 
 **Framework**: AVSystemRouting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user-facing display name of the remote device or route.
 
@@ -18,7 +19,7 @@ final var routeDisplayName: String { get }
 
 ## Mentions
 
-- [Routing and streaming media to remote devices](routing-and-streaming-media-to-remote-devices.md)
+- [Routing and streaming media to remote devices](../routing-and-streaming-media-to-remote-devices.md)
 
 #### Discussion
 

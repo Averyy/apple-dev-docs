@@ -1,7 +1,8 @@
 # kCMIODeckStatusTapeInserted
 
 **Framework**: Core Media I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,14 +14,19 @@
 var kCMIODeckStatusTapeInserted: Int { get }
 ```
 
+```c
+kCMIODeckStatusTapeInserted
+```
+
 ## See Also
 
-- [var kCMIODeckStatusBusy: Int](kcmiodeckstatusbusy.md)
-- [var kCMIODeckStatusLocal: Int](kcmiodeckstatuslocal.md)
-- [var kCMIODeckStatusNoDevice: Int](kcmiodeckstatusnodevice.md)
-- [var kCMIODeckStatusNotThreaded: Int](kcmiodeckstatusnotthreaded.md)
-- [var kCMIODeckStatusOpcode: Int](kcmiodeckstatusopcode.md)
-- [var kCMIODeckStatusSearchingForDevice: Int](kcmiodeckstatussearchingfordevice.md)
+### Constants
+- [var kCMIODeckStatusBusy: Int](./kcmiodeckstatusbusy.md)
+- [var kCMIODeckStatusLocal: Int](./kcmiodeckstatuslocal.md)
+- [var kCMIODeckStatusNoDevice: Int](./kcmiodeckstatusnodevice.md)
+- [var kCMIODeckStatusNotThreaded: Int](./kcmiodeckstatusnotthreaded.md)
+- [var kCMIODeckStatusOpcode: Int](./kcmiodeckstatusopcode.md)
+- [var kCMIODeckStatusSearchingForDevice: Int](./kcmiodeckstatussearchingfordevice.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # ATSJustWidthDeltaEntryOverride
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,18 +14,24 @@
 struct ATSJustWidthDeltaEntryOverride
 ```
 
+```c
+typedef struct ATSJustWidthDeltaEntryOverride {
+    ...
+} ATSJustWidthDeltaEntryOverride;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](atsjustwidthdeltaentryoverride/1462175-init.md)
-- [init(beforeGrowLimit: Fixed, beforeShrinkLimit: Fixed, afterGrowLimit: Fixed, afterShrinkLimit: Fixed, growFlags: JustificationFlags, shrinkFlags: JustificationFlags)](atsjustwidthdeltaentryoverride/1458778-init.md)
+- [init()](./atsjustwidthdeltaentryoverride/api-1462175-init.md)
+- [init(beforeGrowLimit: Fixed, beforeShrinkLimit: Fixed, afterGrowLimit: Fixed, afterShrinkLimit: Fixed, growFlags: JustificationFlags, shrinkFlags: JustificationFlags)](./atsjustwidthdeltaentryoverride/api-1458778-init.md)
 ### Instance Properties
-- [var afterGrowLimit: Fixed](atsjustwidthdeltaentryoverride/1462046-aftergrowlimit.md)
-- [var afterShrinkLimit: Fixed](atsjustwidthdeltaentryoverride/1460699-aftershrinklimit.md)
-- [var beforeGrowLimit: Fixed](atsjustwidthdeltaentryoverride/1464220-beforegrowlimit.md)
-- [var beforeShrinkLimit: Fixed](atsjustwidthdeltaentryoverride/1459567-beforeshrinklimit.md)
-- [var growFlags: JustificationFlags](atsjustwidthdeltaentryoverride/1459465-growflags.md)
-- [var shrinkFlags: JustificationFlags](atsjustwidthdeltaentryoverride/1464744-shrinkflags.md)
+- [var afterGrowLimit: Fixed](./atsjustwidthdeltaentryoverride/api-1462046-aftergrowlimit.md)
+- [var afterShrinkLimit: Fixed](./atsjustwidthdeltaentryoverride/api-1460699-aftershrinklimit.md)
+- [var beforeGrowLimit: Fixed](./atsjustwidthdeltaentryoverride/api-1464220-beforegrowlimit.md)
+- [var beforeShrinkLimit: Fixed](./atsjustwidthdeltaentryoverride/api-1459567-beforeshrinklimit.md)
+- [var growFlags: JustificationFlags](./atsjustwidthdeltaentryoverride/api-1459465-growflags.md)
+- [var shrinkFlags: JustificationFlags](./atsjustwidthdeltaentryoverride/api-1464744-shrinkflags.md)
 
 
 ---

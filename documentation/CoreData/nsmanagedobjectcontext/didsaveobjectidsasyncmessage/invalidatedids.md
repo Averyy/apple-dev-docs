@@ -1,7 +1,8 @@
 # invalidatedIDs
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Object IDs of objects that were invalidated during this save.
 

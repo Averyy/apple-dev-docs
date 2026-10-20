@@ -1,17 +1,22 @@
 # image
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The browser cell’s image.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var image: NSImage? { get set }
+```
+
+```objc
+@property (strong, nullable) NSImage * image;
 ```
 
 #### Discussion
@@ -24,7 +29,8 @@ When the value of this property is `nil`, it removes the image for the browser c
 
 ## See Also
 
-- [var alternateImage: NSImage?](nsbrowsercell/alternateimage.md)
+### Configuring Browser Cells
+- [var alternateImage: NSImage?](./alternateimage.md)
   The browser cell’s image for the highlighted state.
 
 

@@ -1,15 +1,16 @@
 # kHintBasic
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,10 +18,15 @@
 var kHintBasic: UInt32 { get }
 ```
 
+```c
+kHintBasic
+```
+
 ## See Also
 
-- [var kHintAdvanced: UInt32](khintadvanced.md)
-- [var kHintHidden: UInt32](khinthidden.md)
+### Constants
+- [var kHintAdvanced: UInt32](./khintadvanced.md)
+- [var kHintHidden: UInt32](./khinthidden.md)
 
 
 ---

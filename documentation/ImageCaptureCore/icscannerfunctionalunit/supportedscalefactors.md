@@ -1,7 +1,8 @@
 # supportedScaleFactors
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 var supportedScaleFactors: IndexSet { get }
+```
+
+```objc
+@property (readonly) NSIndexSet * supportedScaleFactors;
 ```
 
 

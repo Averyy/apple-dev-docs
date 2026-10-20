@@ -1,7 +1,8 @@
 # fileURLValue
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contents of the receiver as a file URL, coercing if necessary.
 
@@ -12,6 +13,10 @@ The contents of the receiver as a file URL, coercing if necessary.
 
 ```swift
 var fileURLValue: URL? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) NSURL * fileURLValue;
 ```
 
 

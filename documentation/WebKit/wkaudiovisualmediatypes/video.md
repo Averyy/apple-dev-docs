@@ -1,7 +1,8 @@
 # video
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Media types that contain video require a user gesture to begin playing.
 
@@ -18,11 +19,16 @@ Media types that contain video require a user gesture to begin playing.
 static var video: WKAudiovisualMediaTypes { get }
 ```
 
+```c
+WKAudiovisualMediaTypeVideo
+```
+
 ## See Also
 
-- [static var audio: WKAudiovisualMediaTypes](wkaudiovisualmediatypes/audio.md)
+### Media Types
+- [static var audio: WKAudiovisualMediaTypes](./audio.md)
   Media types that contain audio require a user gesture to begin playing.
-- [static var all: WKAudiovisualMediaTypes](wkaudiovisualmediatypes/all.md)
+- [static var all: WKAudiovisualMediaTypes](./all.md)
   All media types require a user gesture to begin playing.
 
 

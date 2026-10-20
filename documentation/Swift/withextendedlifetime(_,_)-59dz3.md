@@ -1,7 +1,8 @@
 # withExtendedLifetime(_:_:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Evaluates a closure while ensuring that the given instance is not destroyed before the closure returns.
 
@@ -31,11 +32,12 @@ The return value, if any, of the `body` closure parameter.
 
 ## See Also
 
-- [struct Unmanaged](unmanaged.md)
+### Reference Counting
+- [struct Unmanaged](./unmanaged.md)
   A type for propagating an unmanaged object reference.
-- [func withExtendedLifetime<T, E, Result>(borrowing T, () throws(E) -> Result) throws(E) -> Result](withextendedlifetime(_:_:)-4mmpv.md)
+- [func withExtendedLifetime<T, E, Result>(borrowing T, () throws(E) -> Result) throws(E) -> Result](./withextendedlifetime%28_,_%29-4mmpv.md)
   Evaluates a closure while ensuring that the given instance is not destroyed before the closure returns.
-- [func extendLifetime<T>(borrowing T)](extendlifetime(_:).md)
+- [func extendLifetime<T>(borrowing T)](./extendlifetime%28_%29.md)
   Extends the lifetime of the given instance.
 
 

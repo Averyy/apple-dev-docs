@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.Network.Credentials.EAPCredentials.EAPType
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The EAP types allowed for this network
 
@@ -19,24 +20,24 @@ enum EAPType
 ## Topics
 
 ### Enumeration Cases
-- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.EAPType.eapFAST](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/eaptype/eapfast.md)
+- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.EAPType.eapFAST](./eaptype/eapfast.md)
   The value that indicates the system allows the Flexible Authentication via Secure Tunneling Extensible Authentication Protocol (EAP-FAST) for this network.
-- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.EAPType.eapTLS](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/eaptype/eaptls.md)
+- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.EAPType.eapTLS](./eaptype/eaptls.md)
   The value that indicates the system allows the Transport Layer Security Extensible Authentication Protocol (EAP-TLS) for this network.
-- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.EAPType.eapTTLS](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/eaptype/eapttls.md)
+- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.EAPType.eapTTLS](./eaptype/eapttls.md)
   The value that indicates the system allows the Tunneled Transport Layer Security Extensible Authentication Protocol (EAP-TTLS) for this network.
-- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.EAPType.peap](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/eaptype/peap.md)
+- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.EAPType.peap](./eaptype/peap.md)
   The value that indicates the system allows the Protected Extensible Authentication Protocol (PEAP) for this network.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../../../Swift/decodable.md)
+- [Encodable](../../../../../Swift/encodable.md)
+- [Equatable](../../../../../Swift/equatable.md)
+- [Hashable](../../../../../Swift/hashable.md)
+- [Sendable](../../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../../Swift/sendablemetatype.md)
 
 
 ---

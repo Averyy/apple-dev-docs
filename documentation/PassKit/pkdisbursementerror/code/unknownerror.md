@@ -1,7 +1,8 @@
 # PKDisbursementError.Code.unknownError
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An unknown error occurred.
 
@@ -18,11 +19,16 @@ An unknown error occurred.
 case unknownError
 ```
 
+```c
+PKDisbursementUnknownError
+```
+
 ## See Also
 
-- [PKDisbursementError.Code.recipientContactInvalidError](pkdisbursementerror/code/recipientcontactinvaliderror.md)
+### Error codes
+- [PKDisbursementError.Code.recipientContactInvalidError](./recipientcontactinvaliderror.md)
   The recipient’s contact information wasn’t valid.
-- [PKDisbursementError.Code.unsupportedCardError](pkdisbursementerror/code/unsupportedcarderror.md)
+- [PKDisbursementError.Code.unsupportedCardError](./unsupportedcarderror.md)
   The framework doesn’t support the card the individual presented.
 
 

@@ -1,21 +1,22 @@
 # Nomination.Relationships.RelatedApps
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object Nomination.Relationships.RelatedApps
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object Nomination.Relationships.RelatedApps.Data](nomination/relationships-data.dictionary/relatedapps-data.dictionary/data-data.dictionary.md)
+- [object Nomination.Relationships.RelatedApps.Data](./relatedapps-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

@@ -1,7 +1,8 @@
 # tileAdditionalBinaryFunctions
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides an array of binary functions representing additional binary tile shader functions.
 
@@ -17,6 +18,10 @@ Provides an array of binary functions representing additional binary tile shader
 
 ```swift
 var tileAdditionalBinaryFunctions: [any MTL4BinaryFunction]? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSArray<id<MTL4BinaryFunction>> * tileAdditionalBinaryFunctions;
 ```
 
 

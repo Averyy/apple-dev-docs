@@ -1,23 +1,25 @@
 # hfs_getencodingbias
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 u_int32_t hfs_getencodingbias(void);
 ```
 
 ## See Also
 
-- [hfs_getconverter](1646506-hfs_getconverter.md)
-- [hfs_pickencoding](1646509-hfs_pickencoding.md)
-- [hfs_relconverter](1646505-hfs_relconverter.md)
-- [hfs_setencodingbias](1646502-hfs_setencodingbias.md)
+### Encodings
+- [hfs_getconverter](./api-1646506-hfs_getconverter.md)
+- [hfs_pickencoding](./api-1646509-hfs_pickencoding.md)
+- [hfs_relconverter](./api-1646505-hfs_relconverter.md)
+- [hfs_setencodingbias](./api-1646502-hfs_setencodingbias.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # max
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The maximum allowed priority for overlapping views.
 
@@ -19,13 +20,18 @@ The maximum allowed priority for overlapping views.
 static var max: MKAnnotationViewZPriority { get }
 ```
 
+```c
+static const MKAnnotationViewZPriority MKAnnotationViewZPriorityMax;
+```
+
 ## See Also
 
-- [static var defaultSelected: MKAnnotationViewZPriority](mkannotationviewzpriority/defaultselected.md)
+### Priorities
+- [static var defaultSelected: MKAnnotationViewZPriority](./defaultselected.md)
   The default view overlapping priority for a selected view.
-- [static var defaultUnselected: MKAnnotationViewZPriority](mkannotationviewzpriority/defaultunselected.md)
+- [static var defaultUnselected: MKAnnotationViewZPriority](./defaultunselected.md)
   The default view overlapping priority for an unselected view.
-- [static var min: MKAnnotationViewZPriority](mkannotationviewzpriority/min.md)
+- [static var min: MKAnnotationViewZPriority](./min.md)
   The minimum allowed priority for overlapping views.
 
 

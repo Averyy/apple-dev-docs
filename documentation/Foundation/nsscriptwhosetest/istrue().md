@@ -1,7 +1,8 @@
 # isTrue()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the test represented by the receiver evaluates to true.
 
@@ -15,13 +16,18 @@ Returns a Boolean value that indicates whether the test represented by the recei
 func isTrue() -> Bool
 ```
 
+```objc
+- (BOOL) isTrue;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the test represented by the receiver evaluates to [`true`](https://developer.apple.com/documentation/swift/true), otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the test represented by the receiver evaluates to [`true`](../../Swift/true.md), otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [Cocoa Scripting Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
+### Related Documentation
+- [Cocoa Scripting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
 
 
 ---

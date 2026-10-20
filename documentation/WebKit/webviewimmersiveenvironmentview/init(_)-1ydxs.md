@@ -1,9 +1,10 @@
 # init(_:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Creates an immersive environment view from a [`WebPage.ImmersiveEnvironment`](webpage/immersiveenvironment.md).
+Creates an immersive environment view from a [`WebPage.ImmersiveEnvironment`](../webpage/immersiveenvironment.md).
 
 **Availability**:
 - visionOS 27.0+

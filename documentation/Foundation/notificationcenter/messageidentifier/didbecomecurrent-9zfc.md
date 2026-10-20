@@ -1,7 +1,8 @@
 # didBecomeCurrent
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identifier of the message that posts after a mouse becomes the most recently used mouse.
 
@@ -18,6 +19,8 @@ The identifier of the message that posts after a mouse becomes the most recently
 ```swift
 static var didBecomeCurrent: NotificationCenter.BaseMessageIdentifier<GCMouse.DidBecomeCurrentMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<GCMouse.DidBecomeCurrentMessage>`.
 
 
 ---

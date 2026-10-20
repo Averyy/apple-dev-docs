@@ -1,7 +1,8 @@
 # textView(_:primaryActionFor:defaultAction:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for the action to be performed when interacting with a text item. If a nil action is provided, the text view will request a menu to be presented on primary action if possible.
 
@@ -17,6 +18,10 @@ Asks the delegate for the action to be performed when interacting with a text it
 optional func textView(_ textView: UITextView, primaryActionFor textItem: UITextItem, defaultAction: UIAction) -> UIAction?
 ```
 
+```objc
+- (UIAction *) textView:(UITextView *) textView primaryActionForTextItem:(UITextItem *) textItem defaultAction:(UIAction *) defaultAction;
+```
+
 #### Return Value
 
 Return a UIAction to be performed when the text item is interacted with. Return @c nil to prevent the action from being performed.
@@ -29,11 +34,12 @@ Return a UIAction to be performed when the text item is interacted with. Return 
 
 ## See Also
 
-- [func textView(UITextView, menuConfigurationFor: UITextItem, defaultMenu: UIMenu) -> UITextItem.MenuConfiguration?](uitextviewdelegate/textview(_:menuconfigurationfor:defaultmenu:).md)
+### Interacting with text data
+- [func textView(UITextView, menuConfigurationFor: UITextItem, defaultMenu: UIMenu) -> UITextItem.MenuConfiguration?](./textview%28_,menuconfigurationfor,defaultmenu%29.md)
   Asks the delegate for the menu configuration to be performed when interacting with a text item.
-- [func textView(UITextView, textItemMenuWillDisplayFor: UITextItem, animator: any UIContextMenuInteractionAnimating)](uitextviewdelegate/textview(_:textitemmenuwilldisplayfor:animator:).md)
+- [func textView(UITextView, textItemMenuWillDisplayFor: UITextItem, animator: any UIContextMenuInteractionAnimating)](./textview%28_,textitemmenuwilldisplayfor,animator%29.md)
   Informs the delegate that a text item menu is about to be presented with the specified animator.
-- [func textView(UITextView, textItemMenuWillEndFor: UITextItem, animator: any UIContextMenuInteractionAnimating)](uitextviewdelegate/textview(_:textitemmenuwillendfor:animator:).md)
+- [func textView(UITextView, textItemMenuWillEndFor: UITextItem, animator: any UIContextMenuInteractionAnimating)](./textview%28_,textitemmenuwillendfor,animator%29.md)
   Informs the delegate that a text item menu is about to be dismissed with the specified animator.
 
 

@@ -1,7 +1,8 @@
 # DockAccessory.MotionStates.Iterator
 
 **Framework**: DockKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that allows iteration over dock accessory motion states.
 
@@ -20,19 +21,20 @@ struct Iterator
 ## Topics
 
 ### Instance Methods
-- [func next() async -> DockAccessory.MotionState?](dockaccessory/motionstates-swift.struct/iterator/next.md)
+- [func next() async -> DockAccessory.MotionState?](./iterator/next%28%29.md)
   Provide the next dock accessory motion state in the list.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 ## See Also
 
-- [func makeAsyncIterator() -> DockAccessory.MotionStates.Iterator](dockaccessory/motionstates-swift.struct/makeasynciterator.md)
+### Iterating over motion states
+- [func makeAsyncIterator() -> DockAccessory.MotionStates.Iterator](./makeasynciterator%28%29.md)
   Creates and returns an iterator that traverses the list of dock accessory motion states.
-- [DockAccessory.MotionStates.Element](dockaccessory/motionstates-swift.struct/element.md)
+- [DockAccessory.MotionStates.Element](./element.md)
   A dock accessory motion state.
 
 

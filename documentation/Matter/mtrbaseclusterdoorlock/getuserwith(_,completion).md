@@ -1,7 +1,8 @@
 # getUserWith(_:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func getUserWith(_ params: MTRDoorLockClusterGetUserParams, completion: @escaping @Sendable (MTRDoorLockClusterGetUserResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func user(with params: MTRDoorLockClusterGetUserParams) async throws -> MTRDoorLockClusterGetUserResponseParams
+```
+
+```objc
+- (void) getUserWithParams:(MTRDoorLockClusterGetUserParams *) params completion:(void (^)(MTRDoorLockClusterGetUserResponseParams *data, NSError *error)) completion;
 ```
 
 

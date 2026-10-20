@@ -1,7 +1,8 @@
 # searchExclude
 
 **Framework**: Apple Archive  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An entry message indicating the operation has excluded the entry, specified by path, in search.
 
@@ -11,7 +12,7 @@ An entry message indicating the operation has excluded the entry, specified by p
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -22,31 +23,32 @@ static let searchExclude: ArchiveHeader.EntryMessage
 
 ## See Also
 
-- [static let convertExclude: ArchiveHeader.EntryMessage](archiveheader/entrymessage/convertexclude.md)
+### Entry Messages
+- [static let convertExclude: ArchiveHeader.EntryMessage](./convertexclude.md)
   An entry message indicating the conversion operation has skipped the entry as the path data is an archive header instance.
-- [static let decodeReading: ArchiveHeader.EntryMessage](archiveheader/entrymessage/decodereading.md)
+- [static let decodeReading: ArchiveHeader.EntryMessage](./decodereading.md)
   An entry message indicating the decoder operation is reading the entry at path.
-- [static let encodeScanning: ArchiveHeader.EntryMessage](archiveheader/entrymessage/encodescanning.md)
+- [static let encodeScanning: ArchiveHeader.EntryMessage](./encodescanning.md)
   An entry message indicating the encoder operation is scanning the entry at path.
-- [static let encodeWriting: ArchiveHeader.EntryMessage](archiveheader/entrymessage/encodewriting.md)
+- [static let encodeWriting: ArchiveHeader.EntryMessage](./encodewriting.md)
   An entry message indicating the encoder operation is writing the entry at path.
-- [static let extractACL: ArchiveHeader.EntryMessage](archiveheader/entrymessage/extractacl.md)
+- [static let extractACL: ArchiveHeader.EntryMessage](./extractacl.md)
   An entry message indicating the extraction operation has modified entry access control lists.
-- [static let extractAttributes: ArchiveHeader.EntryMessage](archiveheader/entrymessage/extractattributes.md)
+- [static let extractAttributes: ArchiveHeader.EntryMessage](./extractattributes.md)
   An entry message indicating the extraction operation has modified entry attributes, and that the data is an entry attributes instance.
-- [static let extractBegin: ArchiveHeader.EntryMessage](archiveheader/entrymessage/extractbegin.md)
+- [static let extractBegin: ArchiveHeader.EntryMessage](./extractbegin.md)
   An entry message indicating the extraction operation has began, this is the first message for this entry.
-- [static let extractEnd: ArchiveHeader.EntryMessage](archiveheader/entrymessage/extractend.md)
+- [static let extractEnd: ArchiveHeader.EntryMessage](./extractend.md)
   An entry message indicating the extraction operation has ended, this is the last message for this entry.
-- [static let extractFail: ArchiveHeader.EntryMessage](archiveheader/entrymessage/extractfail.md)
+- [static let extractFail: ArchiveHeader.EntryMessage](./extractfail.md)
   An entry message indicating the extraction operation has failed, this is the last message for this entry.
-- [static let extractXAT: ArchiveHeader.EntryMessage](archiveheader/entrymessage/extractxat.md)
+- [static let extractXAT: ArchiveHeader.EntryMessage](./extractxat.md)
   An entry message indicating the extraction operation has modified entry extended attributes, and that the data is an entry extended attributes blob.
-- [static let processExclude: ArchiveHeader.EntryMessage](archiveheader/entrymessage/processexclude.md)
+- [static let processExclude: ArchiveHeader.EntryMessage](./processexclude.md)
   An entry message indicating the process operation has skipped this entry and that the data is an archive header instance.
-- [static let searchFail: ArchiveHeader.EntryMessage](archiveheader/entrymessage/searchfail.md)
+- [static let searchFail: ArchiveHeader.EntryMessage](./searchfail.md)
   An entry message indicating the operation has reported an error in search.
-- [static let searchPruneDirectory: ArchiveHeader.EntryMessage](archiveheader/entrymessage/searchprunedirectory.md)
+- [static let searchPruneDirectory: ArchiveHeader.EntryMessage](./searchprunedirectory.md)
   An entry message indicating the operation has skipped the directory, specified by path, in search.
 
 

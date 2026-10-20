@@ -1,7 +1,8 @@
 # id
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A stable per-link ID that can be used to uniquely identify this link. ID will be stable for the lifetime of a given App launch.
 

@@ -1,7 +1,8 @@
 # init(frequency:tests:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.1+
@@ -15,6 +16,10 @@
 
 ```swift
 convenience init(frequency: HKQuantity, tests: [HKAudiogramSensitivityTest]) throws
+```
+
+```objc
++ (instancetype) sensitivityPointWithFrequency:(HKQuantity *) frequency tests:(NSArray<HKAudiogramSensitivityTest *> *) tests error:(NSError **) errorOut;
 ```
 
 

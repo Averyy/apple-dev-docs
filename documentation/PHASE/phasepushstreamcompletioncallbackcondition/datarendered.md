@@ -1,22 +1,27 @@
 # PHASEPushStreamCompletionCallbackCondition.dataRendered
 
 **Framework**: PHASE  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the framework invokes the callback when the engine processes the audio for output.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case dataRendered
+```
+
+```c
+PHASEPushStreamCompletionDataRendered
 ```
 
 

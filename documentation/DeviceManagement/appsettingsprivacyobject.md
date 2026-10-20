@@ -1,7 +1,8 @@
 # AppSettingsPrivacyObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The dictionary of app settings.
 
@@ -13,23 +14,28 @@ The dictionary of app settings.
 
 ## Declaration
 
-```swift
+```
 object AppSettingsPrivacyObject
 ```
 
 ## Topics
 
 ### Objects
-- [object AppSettingsPrivacy_PermissionDefaultsObject](appsettingsprivacy_permissiondefaultsobject.md)
+- [object AppSettingsPrivacy_PermissionDefaultsObject](./appsettingsprivacy_permissiondefaultsobject.md)
   The dictionary of app privacy permission defaults. Each key in the dictionary is an app identifier. The dictionary values represent the permission defaults that the device applies for each matching app.
 
 ## Properties
 
-- `PermissionDefaults` (AppSettingsPrivacy_PermissionDefaultsObject): The dictionary of app privacy permission defaults. Each key in the dictionary is an app identifier. The dictionary values represent the permission defaults that the device applies for each matching app. In iOS, the app identifier is a bundle ID, for example, “com.example.app”. In macOS, the app identifier is a composed identifier. The format of the composed identifier is “Bundle-ID {Designated-Requirement}”. “Bundle-ID” is the bundle identifier string of the app. “Designated-Requirement” is the designated requirement string the device uses to match the code signature of the app. For example, “com.example.app {anchor apple generic}”. The device only applies defaults for an app if its code signature matches the composed identifier.
+- `PermissionDefaults` (AppSettingsPrivacy_PermissionDefaultsObject): The dictionary of app privacy permission defaults. Each key in the dictionary is an app identifier. The dictionary values represent the permission defaults that the device applies for each matching app.
+
+  In iOS, the app identifier is a bundle ID, for example, “com.example.app”.
+
+  In macOS, the app identifier is a composed identifier. The format of the composed identifier is “Bundle-ID {Designated-Requirement}”. “Bundle-ID” is the bundle identifier string of the app. “Designated-Requirement” is the designated requirement string the device uses to match the code signature of the app. For example, “com.example.app {anchor apple generic}”. The device only applies defaults for an app if its code signature matches the composed identifier.
 
 ## See Also
 
-- [object AppSettingsAllowedObject](appsettingsallowedobject.md)
+### Objects
+- [object AppSettingsAllowedObject](./appsettingsallowedobject.md)
   The dictionary of allowed app settings.
 
 

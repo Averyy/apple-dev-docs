@@ -1,7 +1,8 @@
 # featureName
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name used in the model description of the CoreML model that produced this observation.
 
@@ -19,10 +20,15 @@ The name used in the model description of the CoreML model that produced this ob
 var featureName: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * featureName;
+```
+
 ## See Also
 
-- [var featureValue: MLFeatureValue](vncoremlfeaturevalueobservation/featurevalue.md)
-  The feature result of a [`VNCoreMLRequest`](vncoremlrequest.md) that outputs neither a classification nor an image.
+### Obtaining Feature Values
+- [var featureValue: MLFeatureValue](./featurevalue.md)
+  The feature result of a [`VNCoreMLRequest`](../vncoremlrequest.md) that outputs neither a classification nor an image.
 
 
 ---

@@ -1,7 +1,8 @@
 # importFromDeviceIdentifier
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identifier for a Continuity Camera menu item, which takes pictures or scans documents using an iOS device.
 
@@ -14,9 +15,13 @@ The identifier for a Continuity Camera menu item, which takes pictures or scans 
 class let importFromDeviceIdentifier: NSUserInterfaceItemIdentifier
 ```
 
+```c
+extern NSUserInterfaceItemIdentifier const NSMenuItemImportFromDeviceIdentifier;
+```
+
 #### Discussion
 
-Use this string to locate the standard menu item that supports the Continuity Camera feature. The menu item stores this value in its [`identifier`](nsuserinterfaceitemidentification/identifier.md) property.
+Use this string to locate the standard menu item that supports the Continuity Camera feature. The menu item stores this value in its [`identifier`](../nsuserinterfaceitemidentification/identifier.md) property.
 
 
 ---

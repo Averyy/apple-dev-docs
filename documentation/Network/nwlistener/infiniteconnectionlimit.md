@@ -1,7 +1,8 @@
 # InfiniteConnectionLimit
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A static value to indicate that inbound connections should not be limited.
 
@@ -22,9 +23,10 @@ static let InfiniteConnectionLimit: Int
 
 ## See Also
 
-- [var newConnectionHandler: ((NWConnection) -> Void)?](nwlistener/newconnectionhandler.md)
+### Receiving Connections
+- [var newConnectionHandler: ((NWConnection) -> Void)?](./newconnectionhandler.md)
   A handler that receives inbound connections.
-- [var newConnectionLimit: Int](nwlistener/newconnectionlimit.md)
+- [var newConnectionLimit: Int](./newconnectionlimit.md)
   The remaining number of inbound connections to deliver before rejecting connections.
 
 

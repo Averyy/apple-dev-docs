@@ -1,7 +1,8 @@
 # init(relayHops:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a proxy configuration with one or two relay hops.
 
@@ -26,11 +27,12 @@ init(relayHops: [ProxyConfiguration.RelayHop])
 
 ## See Also
 
-- [ProxyConfiguration.RelayHop](proxyconfiguration/relayhop.md)
+### Creating Proxy Configurations
+- [ProxyConfiguration.RelayHop](./relayhop.md)
   A single relay server you can chain together with other servers.
-- [init(httpCONNECTProxy: NWEndpoint, tlsOptions: NWProtocolTLS.Options?)](proxyconfiguration/init(httpconnectproxy:tlsoptions:).md)
+- [init(httpCONNECTProxy: NWEndpoint, tlsOptions: NWProtocolTLS.Options?)](./init%28httpconnectproxy,tlsoptions%29.md)
   Initializes a legacy HTTP CONNECT configuration for a proxy server accessible using HTTP/1.1.
-- [init(socksv5Proxy: NWEndpoint)](proxyconfiguration/init(socksv5proxy:).md)
+- [init(socksv5Proxy: NWEndpoint)](./init%28socksv5proxy%29.md)
   Initializes a SOCKSv5 proxy configuration.
 
 

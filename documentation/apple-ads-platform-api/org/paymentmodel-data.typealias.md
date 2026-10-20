@@ -1,7 +1,8 @@
 # Org.PaymentModel
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The payment model set through Apple Ads.
 
@@ -10,9 +11,14 @@ The payment model set through Apple Ads.
 
 ## Declaration
 
-```swift
+```
 string Org.PaymentModel
 ```
+
+## Possible Values
+
+- `PAYG`: Pay as you go. The default billing model when no payment model is configured, charged per campaign spend. Budget orders aren’t available with this model.
+- `LOC`: Line of credit. A monthly invoicing model required to use budget orders. Invoicing details are available in [`InvoiceDetail`](../invoicedetail.md).
 
 #### Discussion
 

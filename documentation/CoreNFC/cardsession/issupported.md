@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A property that indicates whether the current device supports card session functionality.
 
@@ -18,11 +19,12 @@ class var isSupported: Bool { get }
 
 #### Discussion
 
-Query this property before calling [`init()`](cardsession/init().md) to avoid raising [`fatalError(_:file:line:)`](https://developer.apple.com/documentation/swift/fatalerror(_:file:line:)) on ineligible devices.
+Query this property before calling [`init()`](./init%28%29.md) to avoid raising [`fatalError(_:file:line:)`](../../Swift/fatalerror%28_,file,line%29.md) on ineligible devices.
 
 ## See Also
 
-- [static var isEligible: Bool](cardsession/iseligible.md)
+### Determining card session availability
+- [static var isEligible: Bool](./iseligible.md)
   A property that indicates whether the current system supports card session functionality.
 
 

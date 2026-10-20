@@ -1,7 +1,8 @@
 # HandSkeleton.JointName.wrist
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - visionOS 1.0+
@@ -14,8 +15,9 @@ case wrist
 
 ## See Also
 
-- [HandSkeleton.JointName.forearmArm](handskeleton/jointname/forearmarm.md)
-- [HandSkeleton.JointName.forearmWrist](handskeleton/jointname/forearmwrist.md)
+### Forearm joints
+- [HandSkeleton.JointName.forearmArm](./forearmarm.md)
+- [HandSkeleton.JointName.forearmWrist](./forearmwrist.md)
 
 
 ---

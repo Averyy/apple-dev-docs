@@ -1,7 +1,8 @@
 # explicit(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Use explicit language.
 
@@ -34,7 +35,8 @@ An explicit language will be used for typesetting. For example, if used with Tha
 
 ## See Also
 
-- [static let automatic: TypesettingLanguage](typesettinglanguage/automatic.md)
+### Getting language behavior
+- [static let automatic: TypesettingLanguage](./automatic.md)
   Automatic language behavior.
 
 

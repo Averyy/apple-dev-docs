@@ -1,7 +1,8 @@
 # latitude
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The latitude of the coordinate point.
 
@@ -10,7 +11,7 @@ The latitude of the coordinate point.
 
 ## Declaration
 
-```swift
+```
 attribute Double latitude;
 ```
 

@@ -1,7 +1,8 @@
 # AttributeScopes.TranslationAttributes.SkipTranslationAttribute
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The attribute key for skipping translation.
 
@@ -24,23 +25,24 @@ enum SkipTranslationAttribute
 ## Topics
 
 ### Using attrubute properties
-- [AttributeScopes.TranslationAttributes.SkipTranslationAttribute.Value](attributescopes/translationattributes/skiptranslationattribute/value.md)
+- [AttributeScopes.TranslationAttributes.SkipTranslationAttribute.Value](./skiptranslationattribute/value.md)
   A type that stores whether to exclude the associated text range from translation.
-- [static let name: String](attributescopes/translationattributes/skiptranslationattribute/name.md)
+- [static let name: String](./skiptranslationattribute/name.md)
   The identifier of the attribute for serialization and identification.
 
 ## Relationships
 
 ### Conforms To
-- [AttributedStringKey](attributedstringkey.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributedStringKey](../../attributedstringkey.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let skipsTranslation: AttributeScopes.TranslationAttributes.SkipTranslationAttribute](attributescopes/translationattributes/skipstranslation.md)
+### Handling translation behavior
+- [let skipsTranslation: AttributeScopes.TranslationAttributes.SkipTranslationAttribute](./skipstranslation.md)
   An attribute that marks portions of an attributed string to be excluded from translation.
 
 

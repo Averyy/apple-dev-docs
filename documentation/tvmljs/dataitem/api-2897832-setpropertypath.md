@@ -1,7 +1,8 @@
 # setPropertyPath
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Sets the value associated with a property path.
 
@@ -10,7 +11,7 @@ Sets the value associated with a property path.
 
 ## Declaration
 
-```swift
+```
 void setPropertyPath(
     in String path, 
     in Object value
@@ -19,7 +20,7 @@ void setPropertyPath(
 
 #### Discussion
 
-Set the property path to associate the data item objects contained in the `value` parameter with a section element. [`Listing 1`](dataitem/2897832-setpropertypath#2902804.md) shows an example of data item objects contained in the `newItems` object added to the section that binds the `images` path; for example `<section binding="items:{images};" />`.
+Set the property path to associate the data item objects contained in the `value` parameter with a section element. [Listing 1](./api-2897832-setpropertypath.md#2902804) shows an example of data item objects contained in the `newItems` object added to the section that binds the `images` path; for example `<section binding="items:{images};" />`.
 
 ```javascript
 let section = shelf.getElementsByTagName("section").item(0)section.dataItem = new DataItem()
@@ -40,9 +41,10 @@ section.dataItem.setPropertyPath("images", newItems)
 
 ## See Also
 
-- [getPropertyPath](dataitem/2897819-getpropertypath.md)
+### Working with Property Paths
+- [getPropertyPath](./api-2897819-getpropertypath.md)
   Retrieves the value associated with a property path.
-- [touchPropertyPath](dataitem/2897830-touchpropertypath.md)
+- [touchPropertyPath](./api-2897830-touchpropertypath.md)
   Updates the property path.
 
 

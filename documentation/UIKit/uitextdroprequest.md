@@ -1,7 +1,8 @@
 # UITextDropRequest
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface for specifying the attributes of a drop request for a text view.
 
@@ -18,33 +19,38 @@ The interface for specifying the attributes of a drop request for a text view.
 protocol UITextDropRequest : NSObjectProtocol
 ```
 
+```objc
+@protocol UITextDropRequest <NSObject>
+```
+
 ## Topics
 
 ### Getting information about the text drop request
-- [var dropPosition: UITextPosition](uitextdroprequest/dropposition.md)
+- [var dropPosition: UITextPosition](./uitextdroprequest/dropposition.md)
   The text position corresponding to the location of a drop session.
-- [var isSameView: Bool](uitextdroprequest/issameview.md)
+- [var isSameView: Bool](./uitextdroprequest/issameview.md)
   A Boolean value indicating whether the drag and the drop are within the same text view.
-- [var suggestedProposal: UITextDropProposal](uitextdroprequest/suggestedproposal.md)
+- [var suggestedProposal: UITextDropProposal](./uitextdroprequest/suggestedproposal.md)
   The text drop proposal offered by the text view.
 ### Getting the drop session
-- [var dropSession: any UIDropSession](uitextdroprequest/dropsession.md)
+- [var dropSession: any UIDropSession](./uitextdroprequest/dropsession.md)
   The drop session for the text view.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class UITextDropProposal](uitextdropproposal.md)
+### Drop management
+- [class UITextDropProposal](./uitextdropproposal.md)
   A proposed configuration for the behavior of a text drop interaction.
-- [UITextDropProposal.Action](uitextdropproposal/action.md)
+- [UITextDropProposal.Action](./uitextdropproposal/action.md)
   The text drop action styles for text views.
-- [UITextDropProposal.Performer](uitextdropproposal/performer.md)
+- [UITextDropProposal.Performer](./uitextdropproposal/performer.md)
   The performers that are responsible for handling the drop operation.
-- [UITextDropProposal.ProgressMode](uitextdropproposal/progressmode.md)
+- [UITextDropProposal.ProgressMode](./uitextdropproposal/progressmode.md)
   The text drop progress styles for user-visible progress indication.
 
 

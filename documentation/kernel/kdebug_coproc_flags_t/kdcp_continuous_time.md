@@ -1,14 +1,15 @@
 # KDCP_CONTINUOUS_TIME
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 KDCP_CONTINUOUS_TIME
 ```
 

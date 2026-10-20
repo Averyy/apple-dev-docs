@@ -1,7 +1,8 @@
 # NWConnection.EstablishmentReport.Resolution.Source.query
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The DNS response was received from the network.
 
@@ -22,9 +23,10 @@ case query
 
 ## See Also
 
-- [NWConnection.EstablishmentReport.Resolution.Source.cache](nwconnection/establishmentreport/resolution/source-swift.enum/cache.md)
+### Resolution Sources
+- [NWConnection.EstablishmentReport.Resolution.Source.cache](./cache.md)
   The DNS response was retrieved from a local cache.
-- [NWConnection.EstablishmentReport.Resolution.Source.expiredCache](nwconnection/establishmentreport/resolution/source-swift.enum/expiredcache.md)
+- [NWConnection.EstablishmentReport.Resolution.Source.expiredCache](./expiredcache.md)
   The DNS response had expired and was retrieved from a local cache.
 
 

@@ -1,7 +1,8 @@
 # AVVariantPreferences
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Defines the preferences the player item uses when selecting variant playlists.
 
@@ -20,32 +21,37 @@ Defines the preferences the player item uses when selecting variant playlists.
 struct AVVariantPreferences
 ```
 
+```c
+enum AVVariantPreferences : NSUInteger;
+```
+
 ## Topics
 
 ### Preference settings
-- [static var scalabilityToLosslessAudio: AVVariantPreferences](avvariantpreferences/scalabilitytolosslessaudio.md)
+- [static var scalabilityToLosslessAudio: AVVariantPreferences](./avvariantpreferences/scalabilitytolosslessaudio.md)
   A preference that indicates the player item supports variant playlists that contain losslessly encoded audio when sufficient bandwidth is available.
 ### Initializers
-- [init(rawValue: UInt)](avvariantpreferences/init(rawvalue:).md)
+- [init(rawValue: UInt)](./avvariantpreferences/init%28rawvalue%29.md)
   Creates a variant preferences structure with an integer value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [var variantPreferences: AVVariantPreferences](avplayeritem/variantpreferences.md)
+### Setting variant behavior
+- [var variantPreferences: AVVariantPreferences](./avplayeritem/variantpreferences.md)
   The preferences the player item uses when selecting variant playlists.
-- [var startsOnFirstEligibleVariant: Bool](avplayeritem/startsonfirsteligiblevariant.md)
+- [var startsOnFirstEligibleVariant: Bool](./avplayeritem/startsonfirsteligiblevariant.md)
   A Boolean value that indicates whether playback starts with the first eligible variant that appears in the stream’s main playlist.
 
 

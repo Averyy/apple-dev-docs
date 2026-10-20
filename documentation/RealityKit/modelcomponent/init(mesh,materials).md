@@ -1,7 +1,8 @@
 # init(mesh:materials:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a model component from a mesh and a collection of materials.
 
@@ -11,7 +12,7 @@ Creates a model component from a mesh and a collection of materials.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

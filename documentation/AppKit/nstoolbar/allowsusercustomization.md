@@ -1,7 +1,8 @@
 # allowsUserCustomization
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether users can modify the contents of the toolbar.
 
@@ -9,7 +10,7 @@ A Boolean value that indicates whether users can modify the contents of the tool
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -17,21 +18,26 @@ A Boolean value that indicates whether users can modify the contents of the tool
 var allowsUserCustomization: Bool { get set }
 ```
 
+```objc
+@property BOOL allowsUserCustomization;
+```
+
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the toolbar enables the Customize Toolbar… menu item. If the value is [`false`](https://developer.apple.com/documentation/swift/false), the toolbar disables this menu item. The Customize Toolbar… menu item lets people change the items on the toolbar, rearrange their positions, and change the toolbar’s display mode. This attribute does not affect someone’s ability to show or hide the toolbar. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+If the value of this property is [`true`](../../Swift/true.md), the toolbar enables the Customize Toolbar… menu item. If the value is [`false`](../../Swift/false.md), the toolbar disables this menu item. The Customize Toolbar… menu item lets people change the items on the toolbar, rearrange their positions, and change the toolbar’s display mode. This attribute does not affect someone’s ability to show or hide the toolbar. The default value of this property is [`false`](../../Swift/false.md).
 
-You can change the value of this property at any time to change your toolbar’s customization behavior. For example, you might prevent toolbar customizations while your app processes some other event. If you set this property to [`true`](https://developer.apple.com/documentation/swift/true), set the [`autosavesConfiguration`](nstoolbar/autosavesconfiguration.md) property to true to persist any customizations.
+You can change the value of this property at any time to change your toolbar’s customization behavior. For example, you might prevent toolbar customizations while your app processes some other event. If you set this property to [`true`](../../Swift/true.md), set the [`autosavesConfiguration`](./autosavesconfiguration.md) property to true to persist any customizations.
 
 ## See Also
 
-- [var isVisible: Bool](nstoolbar/isvisible.md)
+### Configuring the toolbar’s behavior
+- [var isVisible: Bool](./isvisible.md)
   A Boolean value that indicates whether the toolbar is visible.
-- [var displayMode: NSToolbar.DisplayMode](nstoolbar/displaymode-swift.property.md)
+- [var displayMode: NSToolbar.DisplayMode](./displaymode-swift.property.md)
   A value that indicates whether the toolbar displays items using a name, icon, or combination of elements.
-- [NSToolbar.DisplayMode](nstoolbar/displaymode-swift.enum.md)
+- [NSToolbar.DisplayMode](./displaymode-swift.enum.md)
   Constants that indicate whether the toolbar displays items using a name, icon, or combination of elements.
-- [var allowsExtensionItems: Bool](nstoolbar/allowsextensionitems.md)
+- [var allowsExtensionItems: Bool](./allowsextensionitems.md)
   A Boolean value that indicates whether the toolbar can add items for Action extensions.
 
 

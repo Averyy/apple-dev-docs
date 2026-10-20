@@ -1,16 +1,17 @@
 # kCMMediaType_AuxiliaryPicture
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,25 +19,30 @@
 var kCMMediaType_AuxiliaryPicture: CMMediaType { get }
 ```
 
+```c
+kCMMediaType_AuxiliaryPicture
+```
+
 ## See Also
 
-- [var kCMMediaType_Audio: CMMediaType](kcmmediatype_audio.md)
+### Constants
+- [var kCMMediaType_Audio: CMMediaType](./kcmmediatype_audio.md)
   Audio media.
-- [var kCMMediaType_ClosedCaption: CMMediaType](kcmmediatype_closedcaption.md)
+- [var kCMMediaType_ClosedCaption: CMMediaType](./kcmmediatype_closedcaption.md)
   Closed-caption media.
-- [var kCMMediaType_Metadata: CMMediaType](kcmmediatype_metadata.md)
+- [var kCMMediaType_Metadata: CMMediaType](./kcmmediatype_metadata.md)
   Meta data.
-- [var kCMMediaType_Muxed: CMMediaType](kcmmediatype_muxed.md)
+- [var kCMMediaType_Muxed: CMMediaType](./kcmmediatype_muxed.md)
   Muxed media.
-- [var kCMMediaType_Subtitle: CMMediaType](kcmmediatype_subtitle.md)
+- [var kCMMediaType_Subtitle: CMMediaType](./kcmmediatype_subtitle.md)
   Subtitle media.
-- [var kCMMediaType_Text: CMMediaType](kcmmediatype_text.md)
+- [var kCMMediaType_Text: CMMediaType](./kcmmediatype_text.md)
   Text media.
-- [var kCMMediaType_TimeCode: CMMediaType](kcmmediatype_timecode.md)
+- [var kCMMediaType_TimeCode: CMMediaType](./kcmmediatype_timecode.md)
   Time code media.
-- [var kCMMediaType_Video: CMMediaType](kcmmediatype_video.md)
+- [var kCMMediaType_Video: CMMediaType](./kcmmediatype_video.md)
   Video media.
-- [var kCMMediaType_TaggedBufferGroup: CMMediaType](kcmmediatype_taggedbuffergroup.md)
+- [var kCMMediaType_TaggedBufferGroup: CMMediaType](./kcmmediatype_taggedbuffergroup.md)
   Media containing a tagged buffer group.
 
 

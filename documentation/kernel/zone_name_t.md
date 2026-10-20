@@ -1,14 +1,15 @@
 # zone_name_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct zone_name {
     ...
 } zone_name_t;
@@ -17,7 +18,7 @@ typedef struct zone_name {
 ## Topics
 
 ### Instance Properties
-- [zn_name](zone_name_t/1569589-zn_name.md)
+- [zn_name](./zone_name_t/api-1569589-zn_name.md)
 
 
 ---

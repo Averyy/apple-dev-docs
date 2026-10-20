@@ -1,14 +1,15 @@
 # kBluetoothDeviceClassMinorHealthDataDisplay
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothDeviceClassMinorHealthDataDisplay = 0x07
 ```
 

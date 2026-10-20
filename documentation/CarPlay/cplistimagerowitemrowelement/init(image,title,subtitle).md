@@ -1,7 +1,8 @@
 # init(image:title:subtitle:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an element that is constituted of an image, title and subtitle. Only image is required while the two others can be omitted.
 
@@ -14,6 +15,10 @@ Initialize an element that is constituted of an image, title and subtitle. Only 
 
 ```swift
 init(image: UIImage, title: String?, subtitle: String?)
+```
+
+```objc
+- (instancetype) initWithImage:(UIImage *) image title:(NSString *) title subtitle:(NSString *) subtitle;
 ```
 
 #### Discussion

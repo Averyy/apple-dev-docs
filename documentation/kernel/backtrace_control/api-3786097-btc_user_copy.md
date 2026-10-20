@@ -1,14 +1,15 @@
 # btc_user_copy
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 backtrace_user_copy_fn btc_user_copy;
 ```
 

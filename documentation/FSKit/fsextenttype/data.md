@@ -1,7 +1,8 @@
 # FSExtentType.data
 
 **Framework**: FSKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An extent type to indicate valid data.
 
@@ -14,6 +15,10 @@ An extent type to indicate valid data.
 case data
 ```
 
+```c
+FSExtentTypeData
+```
+
 #### Discussion
 
 Use this type for all extents on a file system that doesn’t support sparse files.
@@ -22,9 +27,10 @@ Use this type for all extents on a file system that doesn’t support sparse fil
 
 ## See Also
 
-- [FSExtentType.zeroFill](fsextenttype/zerofill.md)
+### Working with extent types
+- [FSExtentType.zeroFill](./zerofill.md)
   An extent type to indicate uninitialized data.
-- [FSExtentType.readOnly](fsextenttype/readonly.md)
+- [FSExtentType.readOnly](./readonly.md)
   An extent type to indicate read-only data.
 
 

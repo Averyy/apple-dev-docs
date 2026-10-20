@@ -1,7 +1,8 @@
 # GroupBoxStyleConfiguration.Label
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased label of a group box.
 
@@ -22,11 +23,12 @@ A type-erased label of a group box.
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](../view.md)
 
 ## See Also
 
-- [let label: GroupBoxStyleConfiguration.Label](groupboxstyleconfiguration/label-swift.property.md)
+### Configuring the label
+- [let label: GroupBoxStyleConfiguration.Label](./label-swift.property.md)
   A view that provides the title of the group box.
 
 

@@ -1,12 +1,13 @@
 # disclosing
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag that indicates whether a row is disclosing other rows (`NSNumber`).
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,32 +15,37 @@ A flag that indicates whether a row is disclosing other rows (`NSNumber`).
 static let disclosing: NSAccessibility.Attribute
 ```
 
+```c
+extern NSAccessibilityAttributeName const NSAccessibilityDisclosingAttribute;
+```
+
 ## See Also
 
-- [static let activationPoint: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/activationpoint.md)
-- [static let allowedValues: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/allowedvalues.md)
+### Attributes
+- [static let activationPoint: NSAccessibility.Attribute](./activationpoint.md)
+- [static let allowedValues: NSAccessibility.Attribute](./allowedvalues.md)
   The allowed values in the slider (`NSArray`).
-- [static let alternateUIVisible: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/alternateuivisible.md)
-- [static let autoInteractableAttribute: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/autointeractableattribute.md)
-- [static let blockQuoteLevelAttribute: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/blockquotelevelattribute.md)
-- [static let cancelButton: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/cancelbutton.md)
+- [static let alternateUIVisible: NSAccessibility.Attribute](./alternateuivisible.md)
+- [static let autoInteractableAttribute: NSAccessibility.Attribute](./autointeractableattribute.md)
+- [static let blockQuoteLevelAttribute: NSAccessibility.Attribute](./blockquotelevelattribute.md)
+- [static let cancelButton: NSAccessibility.Attribute](./cancelbutton.md)
   The element that represents the cancel button (`id`).
-- [static let children: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/children.md)
+- [static let children: NSAccessibility.Attribute](./children.md)
   The element’s child elements in the accessibility hierarchy (`NSArray`).
-- [static let childrenInNavigationOrderAttribute: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/childreninnavigationorderattribute.md)
-- [static let clearButton: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/clearbutton.md)
+- [static let childrenInNavigationOrderAttribute: NSAccessibility.Attribute](./childreninnavigationorderattribute.md)
+- [static let clearButton: NSAccessibility.Attribute](./clearbutton.md)
   The element that represents the clear button in a search field (`id`).
-- [static let closeButton: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/closebutton.md)
+- [static let closeButton: NSAccessibility.Attribute](./closebutton.md)
   The element representing the close button (`id`).
-- [static let columnCount: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/columncount.md)
+- [static let columnCount: NSAccessibility.Attribute](./columncount.md)
   The number of columns in the grid (`NSNumber` as `intValue`).
-- [static let columnHeaderUIElements: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/columnheaderuielements.md)
+- [static let columnHeaderUIElements: NSAccessibility.Attribute](./columnheaderuielements.md)
   The table’s column headers (`NSArray`).
-- [static let columnIndexRange: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/columnindexrange.md)
+- [static let columnIndexRange: NSAccessibility.Attribute](./columnindexrange.md)
   The column index range of the cell (an `NSValue` instance that contains the row’s starting index and index span in the table).
-- [static let columnTitles: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/columntitles.md)
+- [static let columnTitles: NSAccessibility.Attribute](./columntitles.md)
   The elements that represent the column titles (`NSArray`).
-- [static let columns: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/columns.md)
+- [static let columns: NSAccessibility.Attribute](./columns.md)
   The table’s columns (`NSArray`).
 
 

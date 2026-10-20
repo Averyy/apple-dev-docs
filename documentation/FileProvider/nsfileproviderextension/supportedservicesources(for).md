@@ -1,7 +1,8 @@
 # supportedServiceSources(for:)
 
 **Framework**: File Provider  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Return an array of service sources that let the host app perform actions associated with the specified item.
 
@@ -17,9 +18,14 @@ Return an array of service sources that let the host app perform actions associa
 func supportedServiceSources(for itemIdentifier: NSFileProviderItemIdentifier) throws -> [any NSFileProviderServiceSource]
 ```
 
+```objc
+- (NSArray<id<NSFileProviderServiceSource>> *) supportedServiceSourcesForItemIdentifier:(NSFileProviderItemIdentifier) itemIdentifier error:(NSError **) error;
+```
+
 ## See Also
 
-- [protocol NSFileProviderServiceSource](nsfileproviderservicesource.md)
+### Working with services
+- [protocol NSFileProviderServiceSource](../nsfileproviderservicesource.md)
   A service that provides a custom communication channel between the host app and the File Provider extension.
 
 

@@ -1,7 +1,8 @@
 # codingPath
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The path of coding keys taken to get to this point in decoding.
 

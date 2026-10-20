@@ -1,7 +1,8 @@
 # LPError.Code.metadataFetchNotAllowed
 
 **Framework**: Link Presentation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating that the metadata fetch was not allowed due to system policies.
 
@@ -18,6 +19,10 @@ An error indicating that the metadata fetch was not allowed due to system polici
 
 ```swift
 case metadataFetchNotAllowed
+```
+
+```c
+LPErrorMetadataFetchNotAllowed
 ```
 
 

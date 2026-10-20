@@ -1,7 +1,8 @@
 # setting
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The extent of the language setting change.
 
@@ -20,11 +21,16 @@ The extent of the language setting change.
 var setting: MPChangeLanguageOptionSetting { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MPChangeLanguageOptionSetting setting;
+```
+
 ## See Also
 
-- [var languageOption: MPNowPlayingInfoLanguageOption](mpchangelanguageoptioncommandevent/languageoption.md)
+### Changing the language option
+- [var languageOption: MPNowPlayingInfoLanguageOption](./languageoption.md)
   The requested language option to change.
-- [enum MPChangeLanguageOptionSetting](mpchangelanguageoptionsetting.md)
+- [enum MPChangeLanguageOptionSetting](../mpchangelanguageoptionsetting.md)
   The states that determine when language option changes take effect.
 
 

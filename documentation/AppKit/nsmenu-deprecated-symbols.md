@@ -1,6 +1,7 @@
 # Deprecated symbols
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 Review symbols that are no longer in active development, and their recommended replacements.
 
@@ -11,14 +12,14 @@ Although these symbols are available for use, Apple is no longer actively develo
 ## Topics
 
 ### Deprecated methods
-- [func helpRequested(with: NSEvent)](nsmenu/helprequested(with:).md)
+- [func helpRequested(with: NSEvent)](./nsmenu/helprequested%28with%29.md)
   Overridden by subclasses to implement specialized context-sensitive help behavior.
-- [class func menuZone() -> NSZone!](nsmenu/menuzone.md)
+- [class func menuZone() -> NSZone!](./nsmenu/menuzone%28%29.md)
   Returns the zone from which `NSMenu` objects should be allocated.
 ### Deprecated properties
-- [var isTornOff: Bool](nsmenu/istornoff.md)
+- [var isTornOff: Bool](./nsmenu/istornoff.md)
   Indicates whether the menu is offscreen or attached to another menu (or if it’s the main menu).
-- [var menuChangedMessagesEnabled: Bool](nsmenu/menuchangedmessagesenabled.md)
+- [var menuChangedMessagesEnabled: Bool](./nsmenu/menuchangedmessagesenabled.md)
   Indicates whether messages are sent to the application’s windows each time the menu changes.
 
 

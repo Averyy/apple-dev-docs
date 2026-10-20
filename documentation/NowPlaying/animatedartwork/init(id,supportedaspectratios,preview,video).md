@@ -1,7 +1,8 @@
 # init(id:supportedAspectRatios:preview:video:)
 
 **Framework**: Now Playing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an animated artwork whose preview and video assets load on demand.
 

@@ -1,7 +1,8 @@
 # imageCropAndScaleOption
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional setting that tells the algorithm how to scale an input image before generating the feature print.
 
@@ -19,17 +20,22 @@ An optional setting that tells the algorithm how to scale an input image before 
 var imageCropAndScaleOption: VNImageCropAndScaleOption { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) VNImageCropAndScaleOption imageCropAndScaleOption;
+```
+
 #### Discussion
 
-Scaling is applied before generating the feature print. The default value is [`VNImageCropAndScaleOption.scaleFill`](vnimagecropandscaleoption/scalefill.md).
+Scaling is applied before generating the feature print. The default value is [`VNImageCropAndScaleOption.scaleFill`](../vnimagecropandscaleoption/scalefill.md).
 
 Scaling an image ensures that the entire image fits into the algorithm’s input image dimensions, which may require a change in aspect ratio. Each crop and scale option transforms the input image in a different way:
 
-![A photo of a flower cropped and scaled according to Vision image options](/images/Vision/scale-crop-options@2x.png)
+![A photo of a flower cropped and scaled according to Vision image options](https://developer.apple.com/tutorials/images/Vision/scale-crop-options@2x.png)
 
 ## See Also
 
-- [enum VNImageCropAndScaleOption](vnimagecropandscaleoption.md)
+### Scaling and Cropping Images
+- [enum VNImageCropAndScaleOption](../vnimagecropandscaleoption.md)
   Options that define how Vision crops and scales an input-image.
 
 

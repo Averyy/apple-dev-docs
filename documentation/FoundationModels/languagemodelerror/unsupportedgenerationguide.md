@@ -1,7 +1,8 @@
 # LanguageModelError.UnsupportedGenerationGuide
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about an unsupported generation guide.
 
@@ -22,25 +23,26 @@ struct UnsupportedGenerationGuide
 ## Topics
 
 ### Creating an error instance
-- [init(schemaName: String?, debugDescription: String, metadata: [String : any Sendable])](languagemodelerror/unsupportedgenerationguide/init(schemaname:debugdescription:metadata:).md)
+- [init(schemaName: String?, debugDescription: String, metadata: [String : any Sendable])](./unsupportedgenerationguide/init%28schemaname,debugdescription,metadata%29.md)
   Creates information describing a generation guide the model doesn’t support.
 ### Inspecting unsupported generation guide errors
-- [var metadata: [String : any Sendable]](languagemodelerror/unsupportedgenerationguide/metadata.md)
+- [var metadata: [String : any Sendable]](./unsupportedgenerationguide/metadata.md)
   Additional information about the failure, keyed by name.
-- [var schemaName: String?](languagemodelerror/unsupportedgenerationguide/schemaname.md)
+- [var schemaName: String?](./unsupportedgenerationguide/schemaname.md)
   The name of the schema whose generation guide isn’t supported, if any.
-- [var debugDescription: String](languagemodelerror/unsupportedgenerationguide/debugdescription.md)
+- [var debugDescription: String](./unsupportedgenerationguide/debugdescription.md)
   A debug description to help developers diagnose issues during development.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case unsupportedGenerationGuide(LanguageModelError.UnsupportedGenerationGuide)](languagemodelerror/unsupportedgenerationguide(_:).md)
+### Generation guide unsupported error
+- [case unsupportedGenerationGuide(LanguageModelError.UnsupportedGenerationGuide)](./unsupportedgenerationguide%28_%29.md)
   An unsupported generation guide was used.
 
 

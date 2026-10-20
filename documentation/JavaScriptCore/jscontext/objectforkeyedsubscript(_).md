@@ -1,7 +1,8 @@
 # objectForKeyedSubscript(_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the value of the specified JavaScript property in the context’s global object, allowing subscript getter syntax.
 
@@ -19,13 +20,17 @@ Returns the value of the specified JavaScript property in the context’s global
 func objectForKeyedSubscript(_ key: Any!) -> JSValue!
 ```
 
+```objc
+- (JSValue *) objectForKeyedSubscript:(id) key;
+```
+
 #### Return Value
 
 The JavaScript property named by `key`, or `nil` if no such field or function exists.
 
 #### Discussion
 
-This method first constructs a [`JSValue`](jsvalue.md) object from the `key` parameter, then uses that value in JavaScript to look up the name of a property in the context’s global object.
+This method first constructs a [`JSValue`](../jsvalue.md) object from the `key` parameter, then uses that value in JavaScript to look up the name of a property in the context’s global object.
 
 ## Parameters
 
@@ -33,7 +38,8 @@ This method first constructs a [`JSValue`](jsvalue.md) object from the `key` par
 
 ## See Also
 
-- [func setObject(Any!, forKeyedSubscript: (any NSCopying & NSObjectProtocol)!)](jscontext/setobject(_:forkeyedsubscript:).md)
+### Accessing JavaScript global state with subscripts
+- [func setObject(Any!, forKeyedSubscript: (any NSCopying & NSObjectProtocol)!)](./setobject%28_,forkeyedsubscript%29.md)
   Sets the specified JavaScript property of the context’s global object, allowing subscript setter syntax.
 
 

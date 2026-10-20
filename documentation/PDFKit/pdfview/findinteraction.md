@@ -1,7 +1,8 @@
 # findInteraction
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -15,12 +16,17 @@
 var findInteraction: UIFindInteraction { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIFindInteraction * findInteraction;
+```
+
 ## See Also
 
-- [var isFindInteractionEnabled: Bool](pdfview/isfindinteractionenabled.md)
-- [var isInMarkupMode: Bool](pdfview/isinmarkupmode.md)
-- [var pageOverlayViewProvider: (any PDFPageOverlayViewProvider)?](pdfview/pageoverlayviewprovider.md)
-- [var pageShadowsEnabled: Bool](pdfview/pageshadowsenabled.md)
+### Instance Properties
+- [var isFindInteractionEnabled: Bool](./isfindinteractionenabled.md)
+- [var isInMarkupMode: Bool](./isinmarkupmode.md)
+- [var pageOverlayViewProvider: (any PDFPageOverlayViewProvider)?](./pageoverlayviewprovider.md)
+- [var pageShadowsEnabled: Bool](./pageshadowsenabled.md)
 
 
 ---

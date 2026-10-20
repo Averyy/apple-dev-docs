@@ -1,14 +1,15 @@
 # tUSBLPMExitLatency
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 typedef enum tUSBLPMExitLatency : unsigned int {
     ...
 } tUSBLPMExitLatency;
@@ -17,16 +18,16 @@ typedef enum tUSBLPMExitLatency : unsigned int {
 ## Topics
 
 ### Constants
-- [kBestEffortServiceLatency](tusblpmexitlatency/kbesteffortservicelatency.md)
-- [kBestEffortServiceLatencyDeep](tusblpmexitlatency/kbesteffortservicelatencydeep.md)
-- [kDefaultBestEffortServiceLatency](tusblpmexitlatency/kdefaultbesteffortservicelatency.md)
-- [kDefaultBestEffortServiceLatencyDeep](tusblpmexitlatency/kdefaultbesteffortservicelatencydeep.md)
-- [kDescriptorExitLatency](tusblpmexitlatency/kdescriptorexitlatency.md)
-- [kDeviceExitLatency](tusblpmexitlatency/kdeviceexitlatency.md)
-- [kMaxExitLatency](tusblpmexitlatency/kmaxexitlatency.md)
-- [kMaxL1BaseExitLatency](tusblpmexitlatency/kmaxl1baseexitlatency.md)
-- [kMaxL1DeepExitLatency](tusblpmexitlatency/kmaxl1deepexitlatency.md)
-- [kSystemExitLatency](tusblpmexitlatency/ksystemexitlatency.md)
+- [kBestEffortServiceLatency](./tusblpmexitlatency/kbesteffortservicelatency.md)
+- [kBestEffortServiceLatencyDeep](./tusblpmexitlatency/kbesteffortservicelatencydeep.md)
+- [kDefaultBestEffortServiceLatency](./tusblpmexitlatency/kdefaultbesteffortservicelatency.md)
+- [kDefaultBestEffortServiceLatencyDeep](./tusblpmexitlatency/kdefaultbesteffortservicelatencydeep.md)
+- [kDescriptorExitLatency](./tusblpmexitlatency/kdescriptorexitlatency.md)
+- [kDeviceExitLatency](./tusblpmexitlatency/kdeviceexitlatency.md)
+- [kMaxExitLatency](./tusblpmexitlatency/kmaxexitlatency.md)
+- [kMaxL1BaseExitLatency](./tusblpmexitlatency/kmaxl1baseexitlatency.md)
+- [kMaxL1DeepExitLatency](./tusblpmexitlatency/kmaxl1deepexitlatency.md)
+- [kSystemExitLatency](./tusblpmexitlatency/ksystemexitlatency.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # username
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user name for the social profile.
 
@@ -19,13 +20,26 @@ The user name for the social profile.
 var username: String { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSString * username;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSString * username;
+```
+
 ## See Also
 
-- [var service: String](cnsocialprofile/service.md)
+### Getting Social Profile Information
+- [var service: String](./service.md)
   The social profile’s service name.
-- [var urlString: String](cnsocialprofile/urlstring.md)
+- [var urlString: String](./urlstring.md)
   The URL associated with the social profile.
-- [var userIdentifier: String](cnsocialprofile/useridentifier.md)
+- [var userIdentifier: String](./useridentifier.md)
   The service’s user identifier associated with the social profile.
 
 

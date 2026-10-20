@@ -2,17 +2,26 @@
 
 **Framework**: FSKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Preallocates disk space for the given item.
 
 **Availability**:
-- macOS 15.4+
+- macOS 15.4+ - Deprecated in 27.0
 
 ## Declaration
 
 ```swift
+func preallocateSpace(for item: FSItem, at offset: off_t, length: Int, flags: FSVolume.PreallocateFlags, replyHandler reply: @escaping @Sendable (Int, (any Error)?) -> Void)
+```
+
+```swift
 func preallocateSpace(for item: FSItem, at offset: off_t, length: Int, flags: FSVolume.PreallocateFlags) async throws -> Int
+```
+
+```objc
+- (void) preallocateSpaceForItem:(FSItem *) item atOffset:(off_t) offset length:(size_t) length flags:(FSPreallocateFlags) flags replyHandler:(void (^)(size_t bytesAllocated, NSError *error)) reply;
 ```
 
 ## Parameters
@@ -25,7 +34,8 @@ func preallocateSpace(for item: FSItem, at offset: off_t, length: Int, flags: FS
 
 ## See Also
 
-- [FSVolume.PreallocateFlags](fsvolume/preallocateflags.md)
+### Preallocating space
+- [FSVolume.PreallocateFlags](../preallocateflags.md)
   Behavior flags for preallocation operations.
 
 

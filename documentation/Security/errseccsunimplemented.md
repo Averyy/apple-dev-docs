@@ -1,7 +1,8 @@
 # errSecCSUnimplemented
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Unimplemented code signing feature.
 
@@ -13,6 +14,10 @@ Unimplemented code signing feature.
 
 ```swift
 var errSecCSUnimplemented: OSStatus { get }
+```
+
+```c
+errSecCSUnimplemented
 ```
 
 

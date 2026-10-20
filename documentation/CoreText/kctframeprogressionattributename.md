@@ -1,7 +1,8 @@
 # kCTFrameProgressionAttributeName
 
 **Framework**: Core Text  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies progression for a frame.
 
@@ -20,23 +21,28 @@ Specifies progression for a frame.
 let kCTFrameProgressionAttributeName: CFString
 ```
 
+```c
+extern CFStringRef const kCTFrameProgressionAttributeName;
+```
+
 #### Discussion
 
-A [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object containing a [`CTFrameProgression`](ctframeprogression.md) constant. The default is `kCTFrameProgressionTopToBottom`.
+A [`CFNumber`](../CoreFoundation/cfnumber.md) object containing a [`CTFrameProgression`](./ctframeprogression.md) constant. The default is `kCTFrameProgressionTopToBottom`.
 
 This value determines the line-stacking behavior for a frame and does not affect the appearance of the glyphs within that frame.
 
 ## See Also
 
-- [enum CTFrameProgression](ctframeprogression.md)
+### Constants
+- [enum CTFrameProgression](./ctframeprogression.md)
   Constants that specify frame progression types.
-- [let kCTFramePathFillRuleAttributeName: CFString](kctframepathfillruleattributename.md)
+- [let kCTFramePathFillRuleAttributeName: CFString](./kctframepathfillruleattributename.md)
   The key used to specify the fill rule for a frame.
-- [let kCTFramePathWidthAttributeName: CFString](kctframepathwidthattributename.md)
+- [let kCTFramePathWidthAttributeName: CFString](./kctframepathwidthattributename.md)
   The key used to specify the frame width.
-- [let kCTFrameClippingPathsAttributeName: CFString](kctframeclippingpathsattributename.md)
+- [let kCTFrameClippingPathsAttributeName: CFString](./kctframeclippingpathsattributename.md)
   Specifies array of paths to clip frame.
-- [let kCTFramePathClippingPathAttributeName: CFString](kctframepathclippingpathattributename.md)
+- [let kCTFramePathClippingPathAttributeName: CFString](./kctframepathclippingpathattributename.md)
   Specifies clipping path.
 
 

@@ -1,7 +1,8 @@
 # maxIterations
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum training iterations.
 
@@ -16,11 +17,12 @@ var maxIterations: Int? { get set }
 
 ## See Also
 
-- [var algorithm: MLWordTagger.ModelAlgorithmType](mlwordtagger/modelparameters-swift.struct/algorithm.md)
+### Accessing parameters
+- [var algorithm: MLWordTagger.ModelAlgorithmType](./algorithm.md)
   The algorithm type.
-- [var language: NLLanguage?](mlwordtagger/modelparameters-swift.struct/language.md)
+- [var language: NLLanguage?](./language.md)
   The language setting.
-- [var validation: MLWordTagger.ModelParameters.ValidationData](mlwordtagger/modelparameters-swift.struct/validation.md)
+- [var validation: MLWordTagger.ModelParameters.ValidationData](./validation.md)
   The validation dataset.
 
 

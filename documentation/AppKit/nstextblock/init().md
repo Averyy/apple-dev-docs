@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns an empty text block object.
 
@@ -14,6 +15,10 @@ Initializes and returns an empty text block object.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 An initialized text block object.
@@ -24,9 +29,11 @@ This is the designated initializer for `NSTextBlock`.
 
 ## See Also
 
-- [class NSTextTableBlock](nstexttableblock.md)
+### Related Documentation
+- [class NSTextTableBlock](../nstexttableblock.md)
   A text block that appears as a cell in a text table.
-- [init?(coder: NSCoder)](nstextblock/init(coder:).md)
+### Creating text blocks
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

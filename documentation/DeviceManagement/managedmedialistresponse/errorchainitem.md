@@ -1,7 +1,8 @@
 # ManagedMediaListResponse.ErrorChainItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that describes an error chain item.
 
@@ -12,7 +13,7 @@ A dictionary that describes an error chain item.
 
 ## Declaration
 
-```swift
+```
 object ManagedMediaListResponse.ErrorChainItem
 ```
 
@@ -25,7 +26,8 @@ object ManagedMediaListResponse.ErrorChainItem
 
 ## See Also
 
-- [object ManagedMediaListResponse.BooksItem](managedmedialistresponse/booksitem.md)
+### Objects
+- [object ManagedMediaListResponse.BooksItem](./booksitem.md)
   A dictionary that describes a managed book.
 
 

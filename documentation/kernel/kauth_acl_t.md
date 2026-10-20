@@ -1,7 +1,8 @@
 # kauth_acl_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.4+
@@ -9,9 +10,9 @@
 ## Topics
 
 ### Instance Properties
-- [acl_ace](kauth_acl_t/1547423-acl_ace.md)
-- [acl_entrycount](kauth_acl_t/1547379-acl_entrycount.md)
-- [acl_flags](kauth_acl_t/1547490-acl_flags.md)
+- [acl_ace](./kauth_acl_t/api-1547423-acl_ace.md)
+- [acl_entrycount](./kauth_acl_t/api-1547379-acl_entrycount.md)
+- [acl_flags](./kauth_acl_t/api-1547490-acl_flags.md)
 
 
 ---

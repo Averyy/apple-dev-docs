@@ -1,14 +1,15 @@
 # kExtInt9_NMIIntSource
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kExtInt9_NMIIntSource = 0x800506E0
 ```
 

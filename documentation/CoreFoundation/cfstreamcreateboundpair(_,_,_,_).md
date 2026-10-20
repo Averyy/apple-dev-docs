@@ -1,23 +1,28 @@
 # CFStreamCreateBoundPair(_:_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a bound pair of read and write streams.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFStreamCreateBoundPair(_ alloc: CFAllocator!, _ readStream: UnsafeMutablePointer<Unmanaged<CFReadStream>?>!, _ writeStream: UnsafeMutablePointer<Unmanaged<CFWriteStream>?>!, _ transferBufferSize: CFIndex)
+```
+
+```c
+extern void CFStreamCreateBoundPair(CFAllocatorRef alloc, CFReadStreamRef*readStream, CFWriteStreamRef*writeStream, CFIndex transferBufferSize);
 ```
 
 #### Discussion
@@ -26,24 +31,26 @@ The created streams are bound to one another, such that any data written to `wri
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new objects. Pass [`kCFAllocatorDefault`](kcfallocatordefault.md) or `NULL` to use the current default allocator.
-- `readStream`: On return, contains a readable stream. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
-- `writeStream`: On return, contains a writable stream. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+- `alloc`: The allocator to use to allocate memory for the new objects. Pass [`kCFAllocatorDefault`](./kcfallocatordefault.md) or `NULL` to use the current default allocator.
+- `readStream`: On return, contains a readable stream. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+- `writeStream`: On return, contains a writable stream. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 - `transferBufferSize`: The size of the buffer, in bytes, used to transfer data from `readStream` to `writeStream`.
 
 ## See Also
 
-- [class func getBoundStreams(withBufferSize: Int, inputStream: AutoreleasingUnsafeMutablePointer<InputStream?>?, outputStream: AutoreleasingUnsafeMutablePointer<OutputStream?>?)](../foundation/stream/getboundstreams(withbuffersize:inputstream:outputstream:).md)
+### Related Documentation
+- [class func getBoundStreams(withBufferSize: Int, inputStream: AutoreleasingUnsafeMutablePointer<InputStream?>?, outputStream: AutoreleasingUnsafeMutablePointer<OutputStream?>?)](../Foundation/stream/getboundstreams%28withbuffersize,inputstream,outputstream%29.md)
   Creates and returns by reference a bound pair of input and output streams.
-- [func CFStreamCreatePairWithPeerSocketSignature(CFAllocator!, UnsafePointer<CFSocketSignature>!, UnsafeMutablePointer<Unmanaged<CFReadStream>?>!, UnsafeMutablePointer<Unmanaged<CFWriteStream>?>!)](cfstreamcreatepairwithpeersocketsignature(_:_:_:_:).md)
+### Creating Streams
+- [func CFStreamCreatePairWithPeerSocketSignature(CFAllocator!, UnsafePointer<CFSocketSignature>!, UnsafeMutablePointer<Unmanaged<CFReadStream>?>!, UnsafeMutablePointer<Unmanaged<CFWriteStream>?>!)](./cfstreamcreatepairwithpeersocketsignature%28_,_,_,_%29.md)
   Creates readable and writable streams connected to a socket.
-- [func CFStreamCreatePairWithSocketToHost(CFAllocator!, CFString!, UInt32, UnsafeMutablePointer<Unmanaged<CFReadStream>?>!, UnsafeMutablePointer<Unmanaged<CFWriteStream>?>!)](cfstreamcreatepairwithsockettohost(_:_:_:_:_:).md)
+- [func CFStreamCreatePairWithSocketToHost(CFAllocator!, CFString!, UInt32, UnsafeMutablePointer<Unmanaged<CFReadStream>?>!, UnsafeMutablePointer<Unmanaged<CFWriteStream>?>!)](./cfstreamcreatepairwithsockettohost%28_,_,_,_,_%29.md)
   Creates readable and writable streams connected to a TCP/IP port of a particular host.
-- [func CFStreamCreatePairWithSocket(CFAllocator!, CFSocketNativeHandle, UnsafeMutablePointer<Unmanaged<CFReadStream>?>!, UnsafeMutablePointer<Unmanaged<CFWriteStream>?>!)](cfstreamcreatepairwithsocket(_:_:_:_:).md)
+- [func CFStreamCreatePairWithSocket(CFAllocator!, CFSocketNativeHandle, UnsafeMutablePointer<Unmanaged<CFReadStream>?>!, UnsafeMutablePointer<Unmanaged<CFWriteStream>?>!)](./cfstreamcreatepairwithsocket%28_,_,_,_%29.md)
   Creates readable and writable streams connected to a socket.
-- [func CFStreamCreatePairWithSocketToCFHost(CFAllocator?, CFHost, Int32, UnsafeMutablePointer<Unmanaged<CFReadStream>?>?, UnsafeMutablePointer<Unmanaged<CFWriteStream>?>?)](../cfnetwork/cfstreamcreatepairwithsockettocfhost(_:_:_:_:_:).md)
+- [func CFStreamCreatePairWithSocketToCFHost(CFAllocator?, CFHost, Int32, UnsafeMutablePointer<Unmanaged<CFReadStream>?>?, UnsafeMutablePointer<Unmanaged<CFWriteStream>?>?)](../CFNetwork/cfstreamcreatepairwithsockettocfhost%28_,_,_,_,_%29.md)
   Creates readable and writable streams connected to a given `CFHost` object.
-- [func CFStreamCreatePairWithSocketToNetService(CFAllocator?, CFNetService, UnsafeMutablePointer<Unmanaged<CFReadStream>?>?, UnsafeMutablePointer<Unmanaged<CFWriteStream>?>?)](../cfnetwork/cfstreamcreatepairwithsockettonetservice(_:_:_:_:).md)
+- [func CFStreamCreatePairWithSocketToNetService(CFAllocator?, CFNetService, UnsafeMutablePointer<Unmanaged<CFReadStream>?>?, UnsafeMutablePointer<Unmanaged<CFWriteStream>?>?)](../CFNetwork/cfstreamcreatepairwithsockettonetservice%28_,_,_,_%29.md)
   Creates a pair of streams for a CFNetService.
 
 

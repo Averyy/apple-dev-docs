@@ -1,7 +1,8 @@
 # SecItemAttr.crlType
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a `CSSM_CRL_TYPE` type.
 
@@ -13,6 +14,10 @@ Indicates a `CSSM_CRL_TYPE` type.
 
 ```swift
 case crlType
+```
+
+```c
+kSecCrlType
 ```
 
 

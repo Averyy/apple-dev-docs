@@ -1,7 +1,8 @@
 # ray(to:forViewPort:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a point, in 3D world coordinates, corresponding to the specified 2D view coordinates.
 
@@ -19,6 +20,10 @@ Returns a point, in 3D world coordinates, corresponding to the specified 2D view
 func ray(to pixel: vector_int2, forViewPort size: vector_int2) -> vector_float3
 ```
 
+```objc
+- (vector_float3) rayTo:(vector_int2) pixel forViewPort:(vector_int2) size;
+```
+
 #### Return Value
 
 A set of 3D world coordinates.
@@ -34,19 +39,20 @@ This method projects a ray from the camera’s location in the direction of the 
 
 ## See Also
 
-- [var projectionMatrix: matrix_float4x4](mdlcamera/projectionmatrix.md)
+### Managing Camera Perspective
+- [var projectionMatrix: matrix_float4x4](./projectionmatrix.md)
   A transformation matrix that determines the extent of a scene visible to the camera.
-- [var projection: MDLCameraProjection](mdlcamera/projection.md)
+- [var projection: MDLCameraProjection](./projection.md)
   The style of projection transform used by the camera.
-- [enum MDLCameraProjection](mdlcameraprojection.md)
-  Options for camera projection styles, used by the [`projection`](mdlcamera/projection.md) property.
-- [var nearVisibilityDistance: Float](mdlcamera/nearvisibilitydistance.md)
+- [enum MDLCameraProjection](../mdlcameraprojection.md)
+  Options for camera projection styles, used by the [`projection`](./projection.md) property.
+- [var nearVisibilityDistance: Float](./nearvisibilitydistance.md)
   The camera’s near depth limit.
-- [var farVisibilityDistance: Float](mdlcamera/farvisibilitydistance.md)
+- [var farVisibilityDistance: Float](./farvisibilitydistance.md)
   The camera’s far depth limit.
-- [var fieldOfView: Float](mdlcamera/fieldofview.md)
+- [var fieldOfView: Float](./fieldofview.md)
   The camera’s field of view, in degrees.
-- [var worldToMetersConversionScale: Float](mdlcamera/worldtometersconversionscale.md)
+- [var worldToMetersConversionScale: Float](./worldtometersconversionscale.md)
   The scale factor to meters from the world coordinate system containing the camera.
 
 

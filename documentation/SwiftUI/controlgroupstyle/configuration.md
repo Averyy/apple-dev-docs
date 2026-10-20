@@ -1,7 +1,8 @@
 # ControlGroupStyle.Configuration
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The properties of a `ControlGroup` instance being created.
 
@@ -21,9 +22,10 @@ typealias Configuration = ControlGroupStyleConfiguration
 
 ## See Also
 
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](controlgroupstyle/makebody(configuration:).md)
+### Creating custom control group styles
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./makebody%28configuration%29.md)
   Creates a view representing the body of a control group.
-- [associatedtype Body : View](controlgroupstyle/body.md)
+- [associatedtype Body : View](./body.md)
   A view representing the body of a control group.
 
 

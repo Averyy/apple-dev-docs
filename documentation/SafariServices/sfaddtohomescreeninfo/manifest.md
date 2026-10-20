@@ -1,7 +1,8 @@
 # manifest
 
 **Framework**: Safari Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.2+
@@ -15,6 +16,10 @@
 var manifest: BEWebAppManifest { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) BEWebAppManifest * manifest;
+```
+
 #### Discussion
 
 A property for the web app manifest. This is only available to apps that can use BrowserEngineKit.
@@ -23,7 +28,8 @@ The web app manifest for the bookmark.
 
 ## See Also
 
-- [var websiteCookies: [HTTPCookie]](sfaddtohomescreeninfo/websitecookies.md)
+### Information about a web app
+- [var websiteCookies: [HTTPCookie]](./websitecookies.md)
 
 
 ---

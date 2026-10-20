@@ -1,7 +1,8 @@
 # argSort(axis:sortOrder:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an argsort operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds an argsort operation to the current graph.
 ```swift
 func argSort(axis: Int, sortOrder: BNNSGraph.Builder.SortOrder) -> BNNSGraph.Builder.Tensor<Int32>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 #### Discussion
 

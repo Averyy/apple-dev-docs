@@ -1,7 +1,8 @@
 # Account Configuration
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Create and configure a local administrator account on a device.
 
@@ -10,7 +11,7 @@ Create and configure a local administrator account on a device.
 
 ## Mentions
 
-- [Implementing Platform SSO for unattended device enrollment](implementing-platform-sso-for-unattended-device-enrollment.md)
+- [Implementing Platform SSO for unattended device enrollment](./implementing-platform-sso-for-unattended-device-enrollment.md)
 
 #### Discussion
 
@@ -18,7 +19,7 @@ The device only uses this command during initial device setup. The device ignore
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -28,7 +29,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | N/A |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -110,9 +111,9 @@ Refer to the following sections to determine supported channels and requirements
 ## Topics
 
 ### Commands and responses
-- [object AccountConfigurationCommand](accountconfigurationcommand.md)
+- [object AccountConfigurationCommand](./accountconfigurationcommand.md)
   The command to create and configure a local administrator account on a device.
-- [object AccountConfigurationResponse](accountconfigurationresponse.md)
+- [object AccountConfigurationResponse](./accountconfigurationresponse.md)
   A response from the device after it processes the command to create and configure a local administrator account on a device.
 
 ## Endpoint
@@ -121,11 +122,19 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `AccountConfigurationCommand`
+
 The request object the server returns for the Account Configuration Command.
+
+## Responses
+
+- `200` OK (`AccountConfigurationResponse`, `application/xml`): The response object the system returns for the Account Configuration Command.
 
 ## See Also
 
-- [Invite To Program](invite-to-program-command.md)
+### Accounts
+- [Invite To Program](./invite-to-program-command.md)
   Invite a user to join the Volume Purchase Program (VPP).
 
 

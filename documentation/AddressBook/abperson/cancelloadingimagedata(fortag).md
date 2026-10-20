@@ -1,12 +1,13 @@
 # cancelLoadingImageData(forTag:)
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Cancels an asynchronous fetch of the images for a given tag.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Cancels an asynchronous fetch of the images for a given tag.
 class func cancelLoadingImageData(forTag tag: Int)
 ```
 
+```objc
++ (void) cancelLoadingImageDataForTag:(NSInteger) tag;
+```
+
 #### Discussion
 
-The tag is returned from the previous call to the [`beginLoadingImageData(for:)`](abperson/beginloadingimagedata(for:).md) method that started the asynchronous fetch.
+The tag is returned from the previous call to the [`beginLoadingImageData(for:)`](./beginloadingimagedata%28for%29.md) method that started the asynchronous fetch.
 
 ## Parameters
 
@@ -24,11 +29,12 @@ The tag is returned from the previous call to the [`beginLoadingImageData(for:)`
 
 ## See Also
 
-- [func beginLoadingImageData(for: (any ABImageClient)!) -> Int](abperson/beginloadingimagedata(for:).md)
+### Managing Images
+- [func beginLoadingImageData(for: (any ABImageClient)!) -> Int](./beginloadingimagedata%28for%29.md)
   Starts an asynchronous fetch for image data in all locations
-- [func imageData() -> Data!](abperson/imagedata.md)
+- [func imageData() -> Data!](./imagedata%28%29.md)
   Returns data that contains a picture of this person.
-- [func setImageData(Data!) -> Bool](abperson/setimagedata(_:).md)
+- [func setImageData(Data!) -> Bool](./setimagedata%28_%29.md)
   Sets the image for this person to the given data.
 
 

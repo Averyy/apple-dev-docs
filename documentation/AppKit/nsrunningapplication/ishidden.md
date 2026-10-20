@@ -1,7 +1,8 @@
 # isHidden
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the application is currently hidden.
 
@@ -14,15 +15,20 @@ Indicates whether the application is currently hidden.
 var isHidden: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isHidden) BOOL hidden;
+```
+
 #### Discussion
 
 This property is observable using key-value observing.
 
 ## See Also
 
-- [func hide() -> Bool](nsrunningapplication/hide.md)
+### Hiding and unhiding applications
+- [func hide() -> Bool](./hide%28%29.md)
   Attempts to hide or the application.
-- [func unhide() -> Bool](nsrunningapplication/unhide.md)
+- [func unhide() -> Bool](./unhide%28%29.md)
   Attempts to unhide or the application.
 
 

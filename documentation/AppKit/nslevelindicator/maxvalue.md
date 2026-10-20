@@ -1,12 +1,13 @@
 # maxValue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s maximum value.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The receiver’s maximum value.
 var maxValue: Double { get set }
 ```
 
+```objc
+@property double maxValue;
+```
+
 ## See Also
 
-- [var minValue: Double](nslevelindicator/minvalue.md)
+### Configuring the Range of Values
+- [var minValue: Double](./minvalue.md)
   The receiver’s minimum value.
-- [var warningValue: Double](nslevelindicator/warningvalue.md)
+- [var warningValue: Double](./warningvalue.md)
   The receiver’s warning value.
-- [var criticalValue: Double](nslevelindicator/criticalvalue.md)
+- [var criticalValue: Double](./criticalvalue.md)
   The receiver’s critical value.
 
 

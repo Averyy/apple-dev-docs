@@ -1,7 +1,8 @@
 # children
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The child entities that the entity manages.
 
@@ -11,7 +12,7 @@ The child entities that the entity manages.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,13 +25,14 @@ The child entities that the entity manages.
 
 An entity can have any number of child entities.
 
-Use the [`addChild(_:preservingWorldTransform:)`](hashierarchy/addchild(_:preservingworldtransform:).md) method to add a child to an entity. Use the [`removeChild(_:preservingWorldTransform:)`](hashierarchy/removechild(_:preservingworldtransform:).md) method to remove one from an entity. These methods automatically update the [`parent`](hashierarchy/parent.md) properties of the child entities.
+Use the [`addChild(_:preservingWorldTransform:)`](./addchild%28_,preservingworldtransform%29.md) method to add a child to an entity. Use the [`removeChild(_:preservingWorldTransform:)`](./removechild%28_,preservingworldtransform%29.md) method to remove one from an entity. These methods automatically update the [`parent`](./parent.md) properties of the child entities.
 
 ## See Also
 
-- [func addChild(Entity, preservingWorldTransform: Bool)](hashierarchy/addchild(_:preservingworldtransform:).md)
+### Managing children
+- [func addChild(Entity, preservingWorldTransform: Bool)](./addchild%28_,preservingworldtransform%29.md)
   Adds the given entity to the collection of child entities.
-- [func removeChild(Entity, preservingWorldTransform: Bool)](hashierarchy/removechild(_:preservingworldtransform:).md)
+- [func removeChild(Entity, preservingWorldTransform: Bool)](./removechild%28_,preservingworldtransform%29.md)
   Removes the given child from the entity.
 
 

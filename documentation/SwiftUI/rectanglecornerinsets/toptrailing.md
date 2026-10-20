@@ -1,7 +1,8 @@
 # topTrailing
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the top-trailing corner inset.
 

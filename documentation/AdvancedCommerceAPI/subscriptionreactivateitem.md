@@ -1,7 +1,8 @@
 # SubscriptionReactivateItem
 
 **Framework**: Advanced Commerce API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An item in a subscription to reactivate.
 
@@ -10,21 +11,24 @@ An item in a subscription to reactivate.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionReactivateItem
 ```
 
 #### Discussion
 
-This object is part of the [`SubscriptionReactivateInAppRequest`](subscriptionreactivateinapprequest.md) that your app uses to reactivate a subscription that would otherwise expire.
+This object is part of the [`SubscriptionReactivateInAppRequest`](./subscriptionreactivateinapprequest.md) that your app uses to reactivate a subscription that would otherwise expire.
 
 ## Properties
 
 - `SKU` (SKU) *(required)*: The SKU of the item to reactivate.
 
+  **Maximum Length**: `128`
+
 ## See Also
 
-- [object SubscriptionReactivateInAppRequest](subscriptionreactivateinapprequest.md)
+### Subscription reactivation in the app
+- [object SubscriptionReactivateInAppRequest](./subscriptionreactivateinapprequest.md)
   The request your app provides to reactivate a subscription that has automatic renewal turned off.
 
 

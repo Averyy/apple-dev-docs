@@ -1,7 +1,8 @@
 # song(_:)
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an item that contains the name of a song.
 
@@ -29,7 +30,8 @@ When a participant adds a song or changes the next song in the queue, call this 
 
 ## See Also
 
-- [static func container(String) -> GroupSessionEvent.Action.QueueChange.Item](groupsessionevent/action-swift.struct/queuechange/item/container(_:).md)
+### Creating the item
+- [static func container(String) -> GroupSessionEvent.Action.QueueChange.Item](./container%28_%29.md)
   Creates an item that contains the name of a container.
 
 

@@ -1,7 +1,8 @@
 # AppSupportedLanguages
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 App supported and default languages for an App Store country or region.
 
@@ -10,7 +11,7 @@ App supported and default languages for an App Store country or region.
 
 ## Declaration
 
-```swift
+```
 object AppSupportedLanguages
 ```
 
@@ -18,7 +19,7 @@ object AppSupportedLanguages
 
 The `AppSupportedLanguages` object provides metadata about a supported advertising market, including the country name, its ISO 3166-1 alpha-2 `countryCode`, and the language settings relevant for ad delivery. The `adsSupportedLanguages` field lists all languages available for ads in that market. The `adsDefaultLanguages` field lists the languages the system applies automatically when you don’t set explicit language targeting.
 
-The [`Query Supported App Languages`](query-supported-app-languages.md) endpoint returns this object, which you use to validate locale choices before setting them on creatives or ad groups.
+The [`Query Supported App Languages`](./query-supported-app-languages.md) endpoint returns this object, which you use to validate locale choices before setting them on creatives or ad groups.
 
 ##### Example
 
@@ -58,15 +59,15 @@ The [`Query Supported App Languages`](query-supported-app-languages.md) endpoint
 
 ## See Also
 
-- [object AppInfo](appinfo.md)
+- [object AppInfo](./appinfo.md)
   A single app search result.
-- [object AppLocaleDetails](applocaledetails.md)
+- [object AppLocaleDetails](./applocaledetails.md)
   Localized content for an app’s Default Product Page.
-- [object AppsSearchResponse](appssearchresponse.md)
+- [object AppsSearchResponse](./appssearchresponse.md)
   Apps search response envelope.
-- [object AppLocaleDetailsQueryResponse](applocaledetailsqueryresponse.md)
+- [object AppLocaleDetailsQueryResponse](./applocaledetailsqueryresponse.md)
   Paginated response object for app locale detail queries.
-- [object AppSupportedLanguagesQueryResponse](appsupportedlanguagesqueryresponse.md)
+- [object AppSupportedLanguagesQueryResponse](./appsupportedlanguagesqueryresponse.md)
   Paginated response object for the supported app languages query.
 
 

@@ -1,7 +1,8 @@
 # MTRClusterBooleanStateConfiguration
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 17.6+
@@ -18,40 +19,44 @@
 class MTRClusterBooleanStateConfiguration
 ```
 
+```objc
+@interface MTRClusterBooleanStateConfiguration : MTRGenericCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclusterbooleanstateconfiguration/init(device:endpointid:queue:).md)
+- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrclusterbooleanstateconfiguration/init%28device,endpointid,queue%29.md)
 ### Instance Methods
-- [func enableDisableAlarm(with: MTRBooleanStateConfigurationClusterEnableDisableAlarmParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterbooleanstateconfiguration/enabledisablealarm(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterbooleanstateconfiguration/readattributeacceptedcommandlist(with:).md)
-- [func readAttributeAlarmsActive(with: MTRReadParams?) -> [String : Any]?](mtrclusterbooleanstateconfiguration/readattributealarmsactive(with:).md)
-- [func readAttributeAlarmsEnabled(with: MTRReadParams?) -> [String : Any]?](mtrclusterbooleanstateconfiguration/readattributealarmsenabled(with:).md)
-- [func readAttributeAlarmsSupported(with: MTRReadParams?) -> [String : Any]?](mtrclusterbooleanstateconfiguration/readattributealarmssupported(with:).md)
-- [func readAttributeAlarmsSuppressed(with: MTRReadParams?) -> [String : Any]?](mtrclusterbooleanstateconfiguration/readattributealarmssuppressed(with:).md)
-- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclusterbooleanstateconfiguration/readattributeattributelist(with:).md)
-- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclusterbooleanstateconfiguration/readattributeclusterrevision(with:).md)
-- [func readAttributeCurrentSensitivityLevel(with: MTRReadParams?) -> [String : Any]?](mtrclusterbooleanstateconfiguration/readattributecurrentsensitivitylevel(with:).md)
-- [func readAttributeDefaultSensitivityLevel(with: MTRReadParams?) -> [String : Any]?](mtrclusterbooleanstateconfiguration/readattributedefaultsensitivitylevel(with:).md)
-- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclusterbooleanstateconfiguration/readattributefeaturemap(with:).md)
-- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterbooleanstateconfiguration/readattributegeneratedcommandlist(with:).md)
-- [func readAttributeSensorFault(with: MTRReadParams?) -> [String : Any]?](mtrclusterbooleanstateconfiguration/readattributesensorfault(with:).md)
-- [func readAttributeSupportedSensitivityLevels(with: MTRReadParams?) -> [String : Any]?](mtrclusterbooleanstateconfiguration/readattributesupportedsensitivitylevels(with:).md)
-- [func suppressAlarm(with: MTRBooleanStateConfigurationClusterSuppressAlarmParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterbooleanstateconfiguration/suppressalarm(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func writeAttributeCurrentSensitivityLevel(withValue: [String : Any], expectedValueInterval: NSNumber)](mtrclusterbooleanstateconfiguration/writeattributecurrentsensitivitylevel(withvalue:expectedvalueinterval:).md)
-- [func writeAttributeCurrentSensitivityLevel(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](mtrclusterbooleanstateconfiguration/writeattributecurrentsensitivitylevel(withvalue:expectedvalueinterval:params:).md)
+- [func enableDisableAlarm(with: MTRBooleanStateConfigurationClusterEnableDisableAlarmParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterbooleanstateconfiguration/enabledisablealarm%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterbooleanstateconfiguration/readattributeacceptedcommandlist%28with%29.md)
+- [func readAttributeAlarmsActive(with: MTRReadParams?) -> [String : Any]?](./mtrclusterbooleanstateconfiguration/readattributealarmsactive%28with%29.md)
+- [func readAttributeAlarmsEnabled(with: MTRReadParams?) -> [String : Any]?](./mtrclusterbooleanstateconfiguration/readattributealarmsenabled%28with%29.md)
+- [func readAttributeAlarmsSupported(with: MTRReadParams?) -> [String : Any]?](./mtrclusterbooleanstateconfiguration/readattributealarmssupported%28with%29.md)
+- [func readAttributeAlarmsSuppressed(with: MTRReadParams?) -> [String : Any]?](./mtrclusterbooleanstateconfiguration/readattributealarmssuppressed%28with%29.md)
+- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterbooleanstateconfiguration/readattributeattributelist%28with%29.md)
+- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](./mtrclusterbooleanstateconfiguration/readattributeclusterrevision%28with%29.md)
+- [func readAttributeCurrentSensitivityLevel(with: MTRReadParams?) -> [String : Any]?](./mtrclusterbooleanstateconfiguration/readattributecurrentsensitivitylevel%28with%29.md)
+- [func readAttributeDefaultSensitivityLevel(with: MTRReadParams?) -> [String : Any]?](./mtrclusterbooleanstateconfiguration/readattributedefaultsensitivitylevel%28with%29.md)
+- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](./mtrclusterbooleanstateconfiguration/readattributefeaturemap%28with%29.md)
+- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterbooleanstateconfiguration/readattributegeneratedcommandlist%28with%29.md)
+- [func readAttributeSensorFault(with: MTRReadParams?) -> [String : Any]?](./mtrclusterbooleanstateconfiguration/readattributesensorfault%28with%29.md)
+- [func readAttributeSupportedSensitivityLevels(with: MTRReadParams?) -> [String : Any]?](./mtrclusterbooleanstateconfiguration/readattributesupportedsensitivitylevels%28with%29.md)
+- [func suppressAlarm(with: MTRBooleanStateConfigurationClusterSuppressAlarmParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterbooleanstateconfiguration/suppressalarm%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func writeAttributeCurrentSensitivityLevel(withValue: [String : Any], expectedValueInterval: NSNumber)](./mtrclusterbooleanstateconfiguration/writeattributecurrentsensitivitylevel%28withvalue,expectedvalueinterval%29.md)
+- [func writeAttributeCurrentSensitivityLevel(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](./mtrclusterbooleanstateconfiguration/writeattributecurrentsensitivitylevel%28withvalue,expectedvalueinterval,params%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericCluster](mtrgenericcluster.md)
+- [MTRGenericCluster](./mtrgenericcluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

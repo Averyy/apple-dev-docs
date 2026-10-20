@@ -1,7 +1,8 @@
 # AggregationOperation.standardDeviation(of:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The standard deviation of the metric’s values.
 

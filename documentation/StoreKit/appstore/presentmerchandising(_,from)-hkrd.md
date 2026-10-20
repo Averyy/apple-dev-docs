@@ -1,7 +1,8 @@
 # presentMerchandising(_:from:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Display a merchandising view.
 
@@ -24,7 +25,7 @@ The result of the App Store merchandising presentation.
 
 #### Discussion
 
-> **Note**: A `StoreKitError`.
+> **Throws**: A `StoreKitError`.
 
 ## Parameters
 

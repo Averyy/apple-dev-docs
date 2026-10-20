@@ -1,7 +1,8 @@
 # beginSheetModal(for:modalDelegate:didEnd:contextInfo:)
 
 **Framework**: IOBluetooth UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs the transfer UI as a sheet on the target window.
 
@@ -12,6 +13,10 @@ Runs the transfer UI as a sheet on the target window.
 
 ```swift
 func beginSheetModal(for sheetWindow: NSWindow!, modalDelegate: Any!, didEnd didEndSelector: Selector!, contextInfo: UnsafeMutableRawPointer!) -> IOReturn
+```
+
+```objc
+- (IOReturn) beginSheetModalForWindow:(NSWindow *) sheetWindow modalDelegate:(id) modalDelegate didEndSelector:(SEL) didEndSelector contextInfo:(void *) contextInfo;
 ```
 
 #### Return Value
@@ -33,21 +38,22 @@ This function works the same way as -[NSApplication beginSheet:modalForWindow:mo
 
 ## See Also
 
-- [func getDevice() -> IOBluetoothDevice!](iobluetoothobjectpushuicontroller/getdevice.md)
+### Instance Methods
+- [func getDevice() -> IOBluetoothDevice!](./getdevice%28%29.md)
   Gets the object representing the remote target device in the transfer.
-- [func getTitle() -> String!](iobluetoothobjectpushuicontroller/gettitle.md)
+- [func getTitle() -> String!](./gettitle%28%29.md)
   Returns the title of the transfer panel.
-- [func isTransferInProgress() -> Bool](iobluetoothobjectpushuicontroller/istransferinprogress.md)
+- [func isTransferInProgress() -> Bool](./istransferinprogress%28%29.md)
   Gets state of the transfer
-- [func runModal()](iobluetoothobjectpushuicontroller/runmodal.md)
+- [func runModal()](./runmodal%28%29.md)
   Runs the transfer UI panel in a modal session
-- [func runPanel()](iobluetoothobjectpushuicontroller/runpanel.md)
+- [func runPanel()](./runpanel%28%29.md)
   Runs the transfer UI as a panel with no modal session
-- [func setIconImage(NSImage!)](iobluetoothobjectpushuicontroller/seticonimage(_:).md)
+- [func setIconImage(NSImage!)](./seticonimage%28_%29.md)
   Manually sets the icon used in the panel.
-- [func setTitle(String!)](iobluetoothobjectpushuicontroller/settitle(_:).md)
+- [func setTitle(String!)](./settitle%28_%29.md)
   Sets the title of the panel when not run as a sheet.
-- [func stop()](iobluetoothobjectpushuicontroller/stop.md)
+- [func stop()](./stop%28%29.md)
   Stops the transfer UI
 
 

@@ -1,7 +1,8 @@
 # UICellAccessory.PopUpMenuOptions
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Configuration options for a popup menu accessory.
 
@@ -9,7 +10,7 @@ Configuration options for a popup menu accessory.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,21 +21,22 @@ struct PopUpMenuOptions
 ## Topics
 
 ### Creating configuration options
-- [init(isHidden: Bool?, reservedLayoutWidth: UICellAccessory.LayoutDimension?, tintColor: UIColor?)](uicellaccessory-swift.struct/popupmenuoptions/init(ishidden:reservedlayoutwidth:tintcolor:).md)
+- [init(isHidden: Bool?, reservedLayoutWidth: UICellAccessory.LayoutDimension?, tintColor: UIColor?)](./popupmenuoptions/init%28ishidden,reservedlayoutwidth,tintcolor%29.md)
   Creates a popup menu accessory options structure.
 ### Accessing configuration options
-- [var isHidden: Bool](uicellaccessory-swift.struct/popupmenuoptions/ishidden.md)
+- [var isHidden: Bool](./popupmenuoptions/ishidden.md)
   A Boolean value that determines whether the cell hides the accessory.
-- [var reservedLayoutWidth: UICellAccessory.LayoutDimension](uicellaccessory-swift.struct/popupmenuoptions/reservedlayoutwidth.md)
+- [var reservedLayoutWidth: UICellAccessory.LayoutDimension](./popupmenuoptions/reservedlayoutwidth.md)
   The layout width that the system reserves for the accessory, and then centers the accessory within.
-- [var tintColor: UIColor?](uicellaccessory-swift.struct/popupmenuoptions/tintcolor.md)
+- [var tintColor: UIColor?](./popupmenuoptions/tintcolor.md)
   The tint color to apply to the accessory.
 
 ## See Also
 
-- [static func popUpMenu(UIMenu, displayed: UICellAccessory.DisplayedState, options: UICellAccessory.PopUpMenuOptions, selectedElementDidChangeHandler: UICellAccessory.MenuSelectedElementDidChangeHandler?) -> UICellAccessory](uicellaccessory-swift.struct/popupmenu(_:displayed:options:selectedelementdidchangehandler:).md)
+### Creating a popup menu accessory
+- [static func popUpMenu(UIMenu, displayed: UICellAccessory.DisplayedState, options: UICellAccessory.PopUpMenuOptions, selectedElementDidChangeHandler: UICellAccessory.MenuSelectedElementDidChangeHandler?) -> UICellAccessory](./popupmenu%28_,displayed,options,selectedelementdidchangehandler%29.md)
   Creates a popup menu system accessory with the specified menu, display state, configuration options, and optional selection handler.
-- [UICellAccessory.MenuSelectedElementDidChangeHandler](uicellaccessory-swift.struct/menuselectedelementdidchangehandler.md)
+- [UICellAccessory.MenuSelectedElementDidChangeHandler](./menuselectedelementdidchangehandler.md)
   A closure type that defines a handler to perform when a user selects an element in the menu.
 
 

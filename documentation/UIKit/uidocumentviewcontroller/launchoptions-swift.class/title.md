@@ -1,7 +1,8 @@
 # title
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title that appears in the title view.
 
@@ -17,9 +18,13 @@ The title that appears in the title view.
 var title: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * title;
+```
+
 ## Mentions
 
-- [Customizing a document-based app’s launch experience](customizing-a-document-based-app-s-launch-experience.md)
+- [Customizing a document-based app’s launch experience](../../customizing-a-document-based-app-s-launch-experience.md)
 
 #### Discussion
 
@@ -27,11 +32,12 @@ By default, the system displays your app’s name.
 
 ## See Also
 
-- [var background: UIBackgroundConfiguration](uidocumentviewcontroller/launchoptions-swift.class/background.md)
+### Configuring the appearance
+- [var background: UIBackgroundConfiguration](./background.md)
   A configuration that describes the launch scene’s background.
-- [var documentTargetView: UIView?](uidocumentviewcontroller/launchoptions-swift.class/documenttargetview.md)
+- [var documentTargetView: UIView?](./documenttargetview.md)
   The document target view.
-- [var browserViewController: UIDocumentBrowserViewController](uidocumentviewcontroller/launchoptions-swift.class/browserviewcontroller.md)
+- [var browserViewController: UIDocumentBrowserViewController](./browserviewcontroller.md)
   The document browser view controller.
 
 

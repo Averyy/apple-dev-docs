@@ -1,7 +1,8 @@
 # MoveEquipmentAction.Order.first
 
 **Framework**: TabletopKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Inserts the equipment at the beginning of the list
 
@@ -16,13 +17,14 @@ case first
 
 ## See Also
 
-- [MoveEquipmentAction.Order.last](moveequipmentaction/order-swift.enum/last.md)
+### Orders
+- [MoveEquipmentAction.Order.last](./last.md)
   Inserts the equipment at the end of the list
-- [MoveEquipmentAction.Order.before(_:)](moveequipmentaction/order-swift.enum/before(_:).md)
+- [MoveEquipmentAction.Order.before(_:)](./before%28_%29.md)
   Inserts the equipment before the specified equipment identifier.
-- [MoveEquipmentAction.Order.after(_:)](moveequipmentaction/order-swift.enum/after(_:).md)
+- [MoveEquipmentAction.Order.after(_:)](./after%28_%29.md)
   Inserts the equipment after the specified equipment identifier.
-- [MoveEquipmentAction.Order.atIndex(_:)](moveequipmentaction/order-swift.enum/atindex(_:).md)
+- [MoveEquipmentAction.Order.atIndex(_:)](./atindex%28_%29.md)
   Inserts the equipment at a specific location Note: the equipment is inserted at a undefined location if the index provided is not valid
 
 

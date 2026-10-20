@@ -1,7 +1,8 @@
 # SecProtocolType.cvSpserver
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates CVS pserver.
 
@@ -13,6 +14,10 @@ Indicates CVS pserver.
 
 ```swift
 case cvSpserver
+```
+
+```c
+kSecProtocolTypeCVSpserver
 ```
 
 

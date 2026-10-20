@@ -1,7 +1,8 @@
 # nextCoordinateSpaceData
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Get the next coordinate space data to be broadcast to all participants.
 

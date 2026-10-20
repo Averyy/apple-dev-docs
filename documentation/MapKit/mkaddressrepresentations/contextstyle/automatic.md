@@ -1,7 +1,8 @@
 # MKAddressRepresentations.ContextStyle.automatic
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The value that represents the automatic context style.
 
@@ -20,15 +21,20 @@ The value that represents the automatic context style.
 case automatic
 ```
 
+```c
+MKAddressRepresentationsContextStyleAutomatic
+```
+
 #### Discussion
 
-This value tells the framework to automatically select the content style for address representations. For example, when used with [`cityWithContext(_:)`](mkaddressrepresentations/citywithcontext(_:).md) MapKit only includes the region.
+This value tells the framework to automatically select the content style for address representations. For example, when used with [`cityWithContext(_:)`](../citywithcontext%28_%29.md) MapKit only includes the region.
 
 ## See Also
 
-- [MKAddressRepresentations.ContextStyle.short](mkaddressrepresentations/contextstyle/short.md)
+### Available context styles
+- [MKAddressRepresentations.ContextStyle.short](./short.md)
   The value that represents the short context style.
-- [MKAddressRepresentations.ContextStyle.full](mkaddressrepresentations/contextstyle/full.md)
+- [MKAddressRepresentations.ContextStyle.full](./full.md)
   The value that represents the full context style.
 
 

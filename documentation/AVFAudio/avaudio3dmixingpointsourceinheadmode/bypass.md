@@ -1,7 +1,8 @@
 # AVAudio3DMixingPointSourceInHeadMode.bypass
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The point source distributes into each output channel inside the head of the listener.
 
@@ -19,13 +20,18 @@ The point source distributes into each output channel inside the head of the lis
 case bypass
 ```
 
+```c
+AVAudio3DMixingPointSourceInHeadModeBypass
+```
+
 #### Discussion
 
 This option enables transitions between traditional, nonspatialized rendering and spatialized sources outside of the listener’s head.
 
 ## See Also
 
-- [AVAudio3DMixingPointSourceInHeadMode.mono](avaudio3dmixingpointsourceinheadmode/mono.md)
+### Choosing an in-head mode
+- [AVAudio3DMixingPointSourceInHeadMode.mono](./mono.md)
   The point source remains a single mono source inside the head of the listener regardless of the channels it consists of.
 
 

@@ -1,9 +1,10 @@
 # init(texture:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Creates a new [`LowLevelDeviceResource`](lowleveldeviceresource.md) from the specified Metal texture. This is not available on visionOS; device resources on this platform must be initialized from a shared texture using `init(sharedTextureHandle:)` instead.
+Creates a new [`LowLevelDeviceResource`](../lowleveldeviceresource.md) from the specified Metal texture. This is not available on visionOS; device resources on this platform must be initialized from a shared texture using `init(sharedTextureHandle:)` instead.
 
 **Availability**:
 - iOS 27.0+

@@ -1,7 +1,8 @@
 # RunSystemShortcutIntent
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An app intent you use in widgets to open another app or perform an App Shortcut, custom shortcut, or system action.
 
@@ -18,7 +19,7 @@ struct RunSystemShortcutIntent
 
 #### Overview
 
-Only use `RunSystemShortcutIntent` to initialize a [`Button`](https://developer.apple.com/documentation/swiftui/button) with the [`init(_:intent:)`](https://developer.apple.com/documentation/swiftui/button/init(_:intent:)) initializer and place the button in a widget. The run system shortcut intent doesn’t provide functionality in other contexts.
+Only use `RunSystemShortcutIntent` to initialize a [`Button`](../SwiftUI/button.md) with the [`init(_:intent:)`](../SwiftUI/button/init%28_,intent%29.md) initializer and place the button in a widget. The run system shortcut intent doesn’t provide functionality in other contexts.
 
 When a person configures the widget, they choose the button’s action. It can:
 
@@ -71,38 +72,39 @@ The `RunSystemShortcutIntent` represents a person’s chosen action when they co
 ## Topics
 
 ### Creating the intent
-- [init(shortcut: SystemShortcut)](runsystemshortcutintent/init(shortcut:).md)
+- [init(shortcut: SystemShortcut)](./runsystemshortcutintent/init%28shortcut%29.md)
   Creates an intent that performs a person’s configured action.
-- [struct SystemShortcut](systemshortcut.md)
+- [struct SystemShortcut](./systemshortcut.md)
   An opaque reference to a user-configured action for use in a widget button.
 ### Initializers
-- [init()](runsystemshortcutintent/init.md)
+- [init()](./runsystemshortcutintent/init%28%29.md)
   Creates an intent that performs a person’s configured action.
 ### Instance Methods
-- [func perform() async throws -> IntentResultContainer<Never, Never, Never, Never>](runsystemshortcutintent/perform.md)
+- [func perform() async throws -> IntentResultContainer<Never, Never, Never, Never>](./runsystemshortcutintent/perform%28%29.md)
   Performs a widget’s configured action, like opening another app or performing an App Shortcut, custom shortcut, or system action.
 ### Type Properties
-- [static let persistentIdentifier: String](runsystemshortcutintent/persistentidentifier.md)
+- [static let persistentIdentifier: String](./runsystemshortcutintent/persistentidentifier.md)
   The string that identifies the intent.
-- [static let title: LocalizedStringResource](runsystemshortcutintent/title.md)
+- [static let title: LocalizedStringResource](./runsystemshortcutintent/title.md)
   The localized string that describes the intent’s functionality.
 
 ## Relationships
 
 ### Conforms To
-- [AppIntent](appintent.md)
-- [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SystemIntent](systemintent.md)
+- [AppIntent](./appintent.md)
+- [PersistentlyIdentifiable](./persistentlyidentifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SystemIntent](./systemintent.md)
 
 ## See Also
 
-- [protocol ControlConfigurationIntent](controlconfigurationintent.md)
+### Controls, widgets, and Live Activities
+- [protocol ControlConfigurationIntent](./controlconfigurationintent.md)
   An interface for configuring a Control Center module.
-- [protocol LiveActivityIntent](liveactivityintent.md)
+- [protocol LiveActivityIntent](./liveactivityintent.md)
   An intent that starts, pauses, or otherwise modifies a Live Activity when it runs.
-- [protocol WidgetConfigurationIntent](widgetconfigurationintent.md)
+- [protocol WidgetConfigurationIntent](./widgetconfigurationintent.md)
   An interface for configuring a WidgetKit widget.
 
 

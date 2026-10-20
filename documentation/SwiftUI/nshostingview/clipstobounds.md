@@ -1,7 +1,8 @@
 # clipsToBounds
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.15+

@@ -1,7 +1,8 @@
 # setUTCTimeWith(_:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command SetUTCTime
 
@@ -17,7 +18,15 @@ Command SetUTCTime
 ## Declaration
 
 ```swift
+func setUTCTimeWith(_ params: MTRTimeSynchronizationClusterSetUTCTimeParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func setUTCTimeWith(_ params: MTRTimeSynchronizationClusterSetUTCTimeParams) async throws
+```
+
+```objc
+- (void) setUTCTimeWithParams:(MTRTimeSynchronizationClusterSetUTCTimeParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

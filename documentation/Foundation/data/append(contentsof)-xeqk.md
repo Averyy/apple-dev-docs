@@ -1,7 +1,8 @@
 # append(contentsOf:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends the bytes in the specified sequence to the end of the data.
 

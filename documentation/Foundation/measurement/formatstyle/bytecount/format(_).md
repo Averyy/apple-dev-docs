@@ -1,7 +1,8 @@
 # format(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Formats a byte count measurment, using this style.
 
@@ -26,7 +27,7 @@ A formatted representation of `value`, formatted according to the style’s conf
 
 #### Discussion
 
-Use this method when you want to create a single style instance, and then use it to format multiple values. The following example creates a [`Measurement.FormatStyle.ByteCount`](measurement/formatstyle/bytecount.md) instance to format values as kilobyte counts, then applies this style to an array of [`Measurement`](measurement.md) values.
+Use this method when you want to create a single style instance, and then use it to format multiple values. The following example creates a [`Measurement.FormatStyle.ByteCount`](../bytecount.md) instance to format values as kilobyte counts, then applies this style to an array of [`Measurement`](../../../measurement.md) values.
 
 ```swift
 let style = Measurement.FormatStyle.ByteCount(style: .memory,                                              
@@ -47,7 +48,7 @@ let counts: [Measurement] = [
 let formatted = counts.map ( {style.format($0) } ) // ["Zero kB", "1 kB", "2 kB", "4 kB", "8 kB", "16 kB", "32 kB", "64 kB"]
 ```
 
-To format a single data-storage measurement, use the Measurement instance method [`formatted(_:)`](measurement/formatted(_:).md), passing in an instance of [`Measurement.FormatStyle.ByteCount`](measurement/formatstyle/bytecount.md), or [`formatted()`](measurement/formatted().md) to use a default style.
+To format a single data-storage measurement, use the Measurement instance method [`formatted(_:)`](../../formatted%28_%29.md), passing in an instance of [`Measurement.FormatStyle.ByteCount`](../bytecount.md), or [`formatted()`](../../formatted%28%29.md) to use a default style.
 
 ## Parameters
 

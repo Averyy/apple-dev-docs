@@ -1,7 +1,8 @@
 # inertiaTensor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The inertia tensor of each rigid body.
 

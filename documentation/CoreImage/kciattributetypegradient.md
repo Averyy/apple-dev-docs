@@ -1,7 +1,8 @@
 # kCIAttributeTypeGradient
 
 **Framework**: Core Image  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An n-by-1 gradient image used to describe a color ramp.
 
@@ -19,12 +20,17 @@ An n-by-1 gradient image used to describe a color ramp.
 let kCIAttributeTypeGradient: String
 ```
 
+```c
+extern NSString * const kCIAttributeTypeGradient;
+```
+
 ## See Also
 
-- [let kCIAttributeTypeOpaqueColor: String](kciattributetypeopaquecolor.md)
-  A Core Image color ([`CIColor`](cicolor.md) object) that specifies red, green, and blue component values. Use this key for colors with no alpha component. If the key is not present, Core Image assumes color with alpha.
-- [let kCIAttributeTypeColor: String](kciattributetypecolor.md)
-  A Core Image color ([`CIColor`](cicolor.md) object) that specifies red, green, and blue component values.
+### Constants
+- [let kCIAttributeTypeOpaqueColor: String](./kciattributetypeopaquecolor.md)
+  A Core Image color ([`CIColor`](./cicolor.md) object) that specifies red, green, and blue component values. Use this key for colors with no alpha component. If the key is not present, Core Image assumes color with alpha.
+- [let kCIAttributeTypeColor: String](./kciattributetypecolor.md)
+  A Core Image color ([`CIColor`](./cicolor.md) object) that specifies red, green, and blue component values.
 
 
 ---

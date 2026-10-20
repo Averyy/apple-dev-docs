@@ -1,7 +1,8 @@
 # shadow
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Temperature and tint values ideal for scenes illuminated with daylight but in heavy shade.
 
@@ -17,15 +18,20 @@ Temperature and tint values ideal for scenes illuminated with daylight but in he
 static let shadow: AVCaptureDevice.WhiteBalanceTemperatureAndTintValues
 ```
 
+```c
+extern const AVCaptureWhiteBalanceTemperatureAndTintValues AVCaptureWhiteBalanceTemperatureAndTintValuesShadow;
+```
+
 ## See Also
 
-- [static let cloudy: AVCaptureDevice.WhiteBalanceTemperatureAndTintValues](avcapturedevice/whitebalancetemperatureandtintvalues/cloudy.md)
+### Accessing standard values
+- [static let cloudy: AVCaptureDevice.WhiteBalanceTemperatureAndTintValues](./cloudy.md)
   Temperature and tint values ideal for scenes illuminated with natural cloudy daylight.
-- [static let daylight: AVCaptureDevice.WhiteBalanceTemperatureAndTintValues](avcapturedevice/whitebalancetemperatureandtintvalues/daylight.md)
+- [static let daylight: AVCaptureDevice.WhiteBalanceTemperatureAndTintValues](./daylight.md)
   Temperature and tint values ideal for scenes illuminated with natural daylight.
-- [static let fluorescent: AVCaptureDevice.WhiteBalanceTemperatureAndTintValues](avcapturedevice/whitebalancetemperatureandtintvalues/fluorescent.md)
+- [static let fluorescent: AVCaptureDevice.WhiteBalanceTemperatureAndTintValues](./fluorescent.md)
   Temperature and tint values ideal for scenes illuminated with a fluorescent light source.
-- [static let tungsten: AVCaptureDevice.WhiteBalanceTemperatureAndTintValues](avcapturedevice/whitebalancetemperatureandtintvalues/tungsten.md)
+- [static let tungsten: AVCaptureDevice.WhiteBalanceTemperatureAndTintValues](./tungsten.md)
   Temperature and tint values ideal for scenes illuminated with a tungsten light source.
 
 

@@ -1,7 +1,8 @@
 # IOUserAudioCustomPropertyDataType
 
 **Framework**: AudioDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A data and qualifier type used for custom properties.
 
@@ -10,7 +11,7 @@ A data and qualifier type used for custom properties.
 
 ## Declaration
 
-```swift
+```c
 enum IOUserAudioCustomPropertyDataType : uint32_t;
 ```
 
@@ -21,20 +22,21 @@ Use `0` to indicate the custom property doesn’t have any data.
 ## Topics
 
 ### Data Types
-- [Dictionary](audiodriverkit/iouseraudiocustompropertydatatype/dictionary.md)
+- [Dictionary](./iouseraudiocustompropertydatatype/dictionary.md)
   A data type that indicates the custom data is a dictionary.
-- [String](audiodriverkit/iouseraudiocustompropertydatatype/string.md)
+- [String](./iouseraudiocustompropertydatatype/string.md)
   A data type that indicates the custom data is a string.
 ### Enumeration Cases
-- [None](audiodriverkit/iouseraudiocustompropertydatatype/none.md)
+- [None](./iouseraudiocustompropertydatatype/none.md)
 
 ## See Also
 
-- [Create](iouseraudiocustomproperty/create.md)
+### Creating a Custom Property
+- [Create](../iouseraudiocustomproperty/create.md)
   Allocates and initializes an instance of the custom property class.
-- [init](iouseraudiocustomproperty/init.md)
+- [init](../iouseraudiocustomproperty/init.md)
   Initializes an instance of a custom property.
-- [IOUserAudioObjectPropertyAddress](audiodriverkit/iouseraudioobjectpropertyaddress.md)
+- [IOUserAudioObjectPropertyAddress](./iouseraudioobjectpropertyaddress.md)
   An object that collects the three parts — selector, scope, and element — that identify a specific property.
 
 

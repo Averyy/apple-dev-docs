@@ -1,14 +1,15 @@
 # StandardUSB::getNextAssociatedDescriptorWithType
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 const Descriptor * StandardUSB::getNextAssociatedDescriptorWithType(const ConfigurationDescriptor *configurationDescriptor, const Descriptor *parentDescriptor, const Descriptor *currentDescriptor, const uint8_t type);
 ```
 

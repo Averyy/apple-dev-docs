@@ -1,7 +1,8 @@
 # CLSProgressReportingCapability.Kind.score
 
 **Framework**: ClassKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A score.
 
@@ -18,19 +19,24 @@ A score.
 case score
 ```
 
+```c
+CLSProgressReportingCapabilityKindScore
+```
+
 #### Discussion
 
-Add this capability to indicate that a context reports a score at the end of a task using a [`CLSScoreItem`](clsscoreitem.md) instance.
+Add this capability to indicate that a context reports a score at the end of a task using a [`CLSScoreItem`](../../clsscoreitem.md) instance.
 
 ## See Also
 
-- [CLSProgressReportingCapability.Kind.duration](clsprogressreportingcapability/kind-swift.enum/duration.md)
+### Reporting capabilities
+- [CLSProgressReportingCapability.Kind.duration](./duration.md)
   Time spent performing the task.
-- [CLSProgressReportingCapability.Kind.percent](clsprogressreportingcapability/kind-swift.enum/percent.md)
+- [CLSProgressReportingCapability.Kind.percent](./percent.md)
   The percentage of the total task that has been completed.
-- [CLSProgressReportingCapability.Kind.binary](clsprogressreportingcapability/kind-swift.enum/binary.md)
+- [CLSProgressReportingCapability.Kind.binary](./binary.md)
   A binary outcome for the task, like true or false.
-- [CLSProgressReportingCapability.Kind.quantity](clsprogressreportingcapability/kind-swift.enum/quantity.md)
+- [CLSProgressReportingCapability.Kind.quantity](./quantity.md)
   A discrete value.
 
 

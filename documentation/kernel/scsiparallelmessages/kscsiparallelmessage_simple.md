@@ -1,14 +1,15 @@
 # kSCSIParallelMessage_SIMPLE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kSCSIParallelMessage_SIMPLE = 0x20
 ```
 

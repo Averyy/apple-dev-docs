@@ -1,7 +1,8 @@
 # text
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The most likely interpretation of the audio in this range.
 
@@ -23,11 +24,12 @@ var text: AttributedString { get }
 
 An empty string indicates that the audio contains no recognizable speech and, for results in the volatile range, that previous results for this range are revoked.
 
-This value is the first (most likely) element of [`alternatives`](speechtranscriber/result/alternatives.md).
+This value is the first (most likely) element of [`alternatives`](./alternatives.md).
 
 ## See Also
 
-- [let alternatives: [AttributedString]](speechtranscriber/result/alternatives.md)
+### Getting transcriptions
+- [let alternatives: [AttributedString]](./alternatives.md)
   All the alternative interpretations of the audio in this range. The interpretations are in descending order of likelihood.
 
 

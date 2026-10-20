@@ -1,19 +1,21 @@
 # Item_info
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 An optional item information atom.
 
 #### Overview
 
-See [`Item information atom`](item_information_atom.md).
+See [`Item information atom`](../item_information_atom.md).
 
 ## See Also
 
-- [Name](metadata_item_atom/name.md)
+### Data fields
+- [Name](./name.md)
   An optional name atom.
-- [Data_value_atom[]](metadata_item_atom/data_value_atom.md)
+- [Data_value_atom[]](./data_value_atom.md)
   An array of value atoms.
 
 

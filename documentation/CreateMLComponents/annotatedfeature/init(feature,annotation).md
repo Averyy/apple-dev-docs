@@ -1,7 +1,8 @@
 # init(feature:annotation:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an example with a feature and an annotation.
 

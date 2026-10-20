@@ -1,6 +1,7 @@
 # type
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Specifies how a badge is drawn.
 
@@ -8,26 +9,27 @@ Specifies how a badge is drawn.
 
 Use the `type` attribute to specify whether a badge is filled or an outline.
 
-##### Values for Type
+##### Values for type
 
 - **`fill`**: Completely fills the badge icon.
 - **`stroke`**: Draws the badge icon as an outline. This is the default value.
 
-##### Elements That Use Type
+##### Elements that Use type
 
-- [`textBadge`](textbadge.md)
+- [textBadge](./textbadge.md)
 
 ## See Also
 
-- [aspectFill](aspectfill.md)
+### Image Display
+- [aspectFill](./aspectfill.md)
   Stretches an image to fill the containing bounding box.
-- [contentsMode](contentsmode.md)
+- [contentsMode](./contentsmode.md)
   Specifies how an image is expanded to fill its containing element.
-- [opaque](opaque.md)
+- [opaque](./opaque.md)
   Indicates whether an image has a transparent background.
-- [mode](mode.md)
+- [mode](./mode.md)
   Specifies how an image is displayed.
-- [value](value.md)
+- [value](./value.md)
   Specifies the value used for a fillable element.
 
 

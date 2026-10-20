@@ -1,9 +1,10 @@
 # kCVBufferPropagatedAttachmentsKey
 
 **Framework**: Core Video  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-Attachments that should be copied when using the [`CVBufferPropagateAttachments(_:_:)`](cvbufferpropagateattachments(_:_:).md) function (type `CFDictionary`, containing a list of attachments as key-value pairs).
+Attachments that should be copied when using the [`CVBufferPropagateAttachments(_:_:)`](./cvbufferpropagateattachments%28_,_%29.md) function (type `CFDictionary`, containing a list of attachments as key-value pairs).
 
 **Availability**:
 - iOS 4.0+
@@ -20,10 +21,15 @@ Attachments that should be copied when using the [`CVBufferPropagateAttachments(
 let kCVBufferPropagatedAttachmentsKey: CFString
 ```
 
+```c
+extern CFStringRef const kCVBufferPropagatedAttachmentsKey;
+```
+
 ## See Also
 
-- [let kCVBufferNonPropagatedAttachmentsKey: CFString](kcvbuffernonpropagatedattachmentskey.md)
-  Attachments that should not be copied when using the [`CVBufferPropagateAttachments(_:_:)`](cvbufferpropagateattachments(_:_:).md) function (type `CFDictionary`, containing a list of attachments as key-value pairs).
+### Constants
+- [let kCVBufferNonPropagatedAttachmentsKey: CFString](./kcvbuffernonpropagatedattachmentskey.md)
+  Attachments that should not be copied when using the [`CVBufferPropagateAttachments(_:_:)`](./cvbufferpropagateattachments%28_,_%29.md) function (type `CFDictionary`, containing a list of attachments as key-value pairs).
 
 
 ---

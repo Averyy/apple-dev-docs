@@ -1,7 +1,8 @@
 # additionalOverflowItems
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Additional items to present in the overflow menu.
 
@@ -17,15 +18,20 @@ Additional items to present in the overflow menu.
 var additionalOverflowItems: UIDeferredMenuElement? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, readwrite, nullable) UIDeferredMenuElement * additionalOverflowItems;
+```
+
 #### Discussion
 
-When you assign a non-`nil` value to this property, the overflow menu button appears on the trailing edge of the navigation bar. This button appears regardless of whether you provide menu elements in the callback for the [`UIDeferredMenuElement`](uideferredmenuelement.md).
+When you assign a non-`nil` value to this property, the overflow menu button appears on the trailing edge of the navigation bar. This button appears regardless of whether you provide menu elements in the callback for the [`UIDeferredMenuElement`](../uideferredmenuelement.md).
 
-The system presents any menu elements you return in the callback for [`UIDeferredMenuElement`](uideferredmenuelement.md) in the overflow menu. The system also populates the overflow menu with any items that can’t fit in the navigation bar due to layout space constraints.
+The system presents any menu elements you return in the callback for [`UIDeferredMenuElement`](../uideferredmenuelement.md) in the overflow menu. The system also populates the overflow menu with any items that can’t fit in the navigation bar due to layout space constraints.
 
 ## See Also
 
-- [var overflowPresentationSource: (any UIPopoverPresentationControllerSourceItem)?](uinavigationitem/overflowpresentationsource.md)
+### Working with the overflow menu
+- [var overflowPresentationSource: (any UIPopoverPresentationControllerSourceItem)?](./overflowpresentationsource.md)
   The item you can use as an anchor to present a custom UI from the overflow menu button.
 
 

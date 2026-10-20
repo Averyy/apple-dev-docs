@@ -1,7 +1,8 @@
 # saveRecords
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Saves records to the database.
 
@@ -10,7 +11,7 @@ Saves records to the database.
 
 ## Declaration
 
-```swift
+```
 Promise<CloudKit.RecordsResponse, CloudKit.CKError> saveRecords(
 	CloudKit.Record|CloudKit.Record[] records,
 	optional Object options
@@ -19,7 +20,7 @@ Promise<CloudKit.RecordsResponse, CloudKit.CKError> saveRecords(
 
 #### Return Value
 
-A `Promise` object that resolves to a [`CloudKit.RecordZonesResponse`](cloudkit.recordzonesresponse.md) object, or if the operation fails, a [`CKError`](cloudkit/ckerror.md) object.
+A `Promise` object that resolves to a [`CloudKit.RecordZonesResponse`](../cloudkit.recordzonesresponse.md) object, or if the operation fails, a [`CKError`](../cloudkit/ckerror.md) object.
 
 #### Discussion
 
@@ -27,7 +28,7 @@ Before saving records, create the record dictionaries with the appropriate key-v
 
 Creating Records
 
-Create a record represented by a [`CloudKit.Record`](cloudkit.record.md) dictionary. If you are creating a new record, the `recordType` is required. (If the record exists, the `recordChangeTag` key is required. ) If you omit the `recordName` key, the record is assigned a random UUID. Don’t include the other keys in the [`CloudKit.Record`](cloudkit.record.md) dictionary when creating a record for the first time. This code fragment shows a new `Artwork` record:
+Create a record represented by a [`CloudKit.Record`](../cloudkit.record.md) dictionary. If you are creating a new record, the `recordType` is required. (If the record exists, the `recordChangeTag` key is required. ) If you omit the `recordName` key, the record is assigned a random UUID. Don’t include the other keys in the [`CloudKit.Record`](../cloudkit.record.md) dictionary when creating a record for the first time. This code fragment shows a new `Artwork` record:
 
 ```javascript
 var record = {
@@ -46,7 +47,7 @@ var record = {
 
 Saving Records
 
-To get the record that was saved in the response, use the [`records`](cloudkit.recordsresponse/records.md) property in the [`CloudKit.RecordsResponse`](cloudkit.recordsresponse.md) class. Otherwise, handle any errors that occur appropriately.
+To get the record that was saved in the response, use the [`records`](../cloudkit.recordsresponse/records.md) property in the [`CloudKit.RecordsResponse`](../cloudkit.recordsresponse.md) class. Otherwise, handle any errors that occur appropriately.
 
 ```javascript
 database.saveRecords(record).then(function(response) {
@@ -63,7 +64,7 @@ database.saveRecords(record).then(function(response) {
 
 Saving Records with Asset Fields
 
-Use an `Asset` field type in your schema to store large data files separately from the associated record. In CloudKit JS, the value of an `Asset` field is an `Asset` dictionary, described in [`Asset Dictionary`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/Types.html#//apple_ref/doc/uid/TP40015240-CH3-SW3).
+Use an `Asset` field type in your schema to store large data files separately from the associated record. In CloudKit JS, the value of an `Asset` field is an `Asset` dictionary, described in [Asset Dictionary](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/Types.html#//apple_ref/doc/uid/TP40015240-CH3-SW3).
 
 To save a record with an asset field, set a handler for uploading the asset file in HTML.
 
@@ -112,25 +113,30 @@ assetURL.replace('${f}', 'image.png');
 
 ## Parameters
 
-- `records`: Possible values are: | Type | Description |
-| --- | --- |
-| [`CloudKit.Record`](cloudkit.record.md) | A dictionary record to save. |
-| `CloudKit.Record[]` | An array of records to save. |
-- `options`: A dictionary containing options to use when saving records. Possible dictionary keys are: | Key | Description |
-| --- | --- |
-| `zoneID` | A [`CloudKit.ZoneID`](cloudkit.zoneid.md) or zone name (`String`) that identifies the record zone in the database where you want to perform the operation. The default is the database default zone. |
-| `desiredKeys` | An array of strings containing record field names that limits the amount of data returned in this operation. Only the fields specified in the array are returned. The default is `null` which fetches all record fields. |
-| `numbersAsStrings` | A Boolean value indicating whether number fields should be represented by strings. The default value is `false`. |
+- `records`: Possible values are:
+
+  | Type | Description |
+  | --- | --- |
+  | [`CloudKit.Record`](../cloudkit.record.md) | A dictionary record to save. |
+  | `CloudKit.Record[]` | An array of records to save. |
+- `options`: A dictionary containing options to use when saving records. Possible dictionary keys are:
+
+  | Key | Description |
+  | --- | --- |
+  | `zoneID` | A [`CloudKit.ZoneID`](../cloudkit.zoneid.md) or zone name (`String`) that identifies the record zone in the database where you want to perform the operation. The default is the database default zone. |
+  | `desiredKeys` | An array of strings containing record field names that limits the amount of data returned in this operation. Only the fields specified in the array are returned. The default is `null` which fetches all record fields. |
+  | `numbersAsStrings` | A Boolean value indicating whether number fields should be represented by strings. The default value is `false`. |
 
 ## See Also
 
-- [fetchRecords](cloudkit.database/fetchrecords.md)
+### Accessing Records
+- [fetchRecords](./fetchrecords.md)
   Fetches one or more records.
-- [deleteRecords](cloudkit.database/deleterecords.md)
+- [deleteRecords](./deleterecords.md)
   Deletes one or more records.
-- [performQuery](cloudkit.database/performquery.md)
+- [performQuery](./performquery.md)
   Fetches records by using a query.
-- [newRecordsBatch](cloudkit.database/newrecordsbatch.md)
+- [newRecordsBatch](./newrecordsbatch.md)
   Creates records batch builder object for modifying multiple records.
 
 

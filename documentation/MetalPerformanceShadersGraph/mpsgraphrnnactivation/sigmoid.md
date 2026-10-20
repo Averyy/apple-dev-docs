@@ -1,7 +1,8 @@
 # MPSGraphRNNActivation.sigmoid
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Defines a Sigmoid activation.
 
@@ -17,6 +18,10 @@ Defines a Sigmoid activation.
 
 ```swift
 case sigmoid
+```
+
+```c
+MPSGraphRNNActivationSigmoid
 ```
 
 

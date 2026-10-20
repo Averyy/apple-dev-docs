@@ -1,7 +1,8 @@
 # threadIdentifier
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that uniquely identifies a conversation. This identifier is persistent for the life of the conversation.
 
@@ -14,6 +15,10 @@ A string that uniquely identifies a conversation. This identifier is persistent 
 
 ```swift
 var threadIdentifier: String { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite) NSString * threadIdentifier;
 ```
 
 

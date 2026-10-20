@@ -1,7 +1,8 @@
 # DockAccessory.AccessoryEvent.button(id:pressed:)
 
 **Framework**: DockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A button press event on the dock accessory.
 

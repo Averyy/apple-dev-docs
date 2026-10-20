@@ -1,7 +1,8 @@
 # kCTFontDescriptionNameKey
 
 **Framework**: Core Text  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 3.2+
@@ -18,27 +19,32 @@
 let kCTFontDescriptionNameKey: CFString
 ```
 
+```c
+extern CFStringRef const kCTFontDescriptionNameKey;
+```
+
 #### Discussion
 
 The name specifier for the description name.
 
 ## See Also
 
-- [let kCTFontCopyrightNameKey: CFString](kctfontcopyrightnamekey.md)
-- [let kCTFontFamilyNameKey: CFString](kctfontfamilynamekey.md)
-- [let kCTFontSubFamilyNameKey: CFString](kctfontsubfamilynamekey.md)
-- [let kCTFontStyleNameKey: CFString](kctfontstylenamekey.md)
-- [let kCTFontUniqueNameKey: CFString](kctfontuniquenamekey.md)
-- [let kCTFontFullNameKey: CFString](kctfontfullnamekey.md)
-- [let kCTFontVersionNameKey: CFString](kctfontversionnamekey.md)
-- [let kCTFontPostScriptNameKey: CFString](kctfontpostscriptnamekey.md)
-- [let kCTFontTrademarkNameKey: CFString](kctfonttrademarknamekey.md)
-- [let kCTFontManufacturerNameKey: CFString](kctfontmanufacturernamekey.md)
-- [let kCTFontDesignerNameKey: CFString](kctfontdesignernamekey.md)
-- [let kCTFontVendorURLNameKey: CFString](kctfontvendorurlnamekey.md)
-- [let kCTFontDesignerURLNameKey: CFString](kctfontdesignerurlnamekey.md)
-- [let kCTFontLicenseNameKey: CFString](kctfontlicensenamekey.md)
-- [let kCTFontLicenseURLNameKey: CFString](kctfontlicenseurlnamekey.md)
+### Constants
+- [let kCTFontCopyrightNameKey: CFString](./kctfontcopyrightnamekey.md)
+- [let kCTFontFamilyNameKey: CFString](./kctfontfamilynamekey.md)
+- [let kCTFontSubFamilyNameKey: CFString](./kctfontsubfamilynamekey.md)
+- [let kCTFontStyleNameKey: CFString](./kctfontstylenamekey.md)
+- [let kCTFontUniqueNameKey: CFString](./kctfontuniquenamekey.md)
+- [let kCTFontFullNameKey: CFString](./kctfontfullnamekey.md)
+- [let kCTFontVersionNameKey: CFString](./kctfontversionnamekey.md)
+- [let kCTFontPostScriptNameKey: CFString](./kctfontpostscriptnamekey.md)
+- [let kCTFontTrademarkNameKey: CFString](./kctfonttrademarknamekey.md)
+- [let kCTFontManufacturerNameKey: CFString](./kctfontmanufacturernamekey.md)
+- [let kCTFontDesignerNameKey: CFString](./kctfontdesignernamekey.md)
+- [let kCTFontVendorURLNameKey: CFString](./kctfontvendorurlnamekey.md)
+- [let kCTFontDesignerURLNameKey: CFString](./kctfontdesignerurlnamekey.md)
+- [let kCTFontLicenseNameKey: CFString](./kctfontlicensenamekey.md)
+- [let kCTFontLicenseURLNameKey: CFString](./kctfontlicenseurlnamekey.md)
 
 
 ---

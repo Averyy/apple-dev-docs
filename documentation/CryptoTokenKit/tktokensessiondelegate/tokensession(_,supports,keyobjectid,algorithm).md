@@ -1,7 +1,8 @@
 # tokenSession(_:supports:keyObjectID:algorithm:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate whether the token session supports a given operation using the specified key and algorithm.
 
@@ -20,9 +21,13 @@ Asks the delegate whether the token session supports a given operation using the
 optional func tokenSession(_ session: TKTokenSession, supports operation: TKTokenOperation, keyObjectID: TKToken.ObjectID, algorithm: TKTokenKeyAlgorithm) -> Bool
 ```
 
+```objc
+- (BOOL) tokenSession:(TKTokenSession *) session supportsOperation:(TKTokenOperation) operation usingKey:(TKTokenObjectID) keyObjectID algorithm:(TKTokenKeyAlgorithm *) algorithm;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the operation is supported; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the operation is supported; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -33,11 +38,12 @@ optional func tokenSession(_ session: TKTokenSession, supports operation: TKToke
 
 ## See Also
 
-- [enum TKTokenOperation](tktokenoperation.md)
+### Determining Support for Operations
+- [enum TKTokenOperation](../tktokenoperation.md)
   Operations that can be performed with a token’s keys and certificates.
-- [typealias ObjectID](tktoken/objectid.md)
+- [typealias ObjectID](../tktoken/objectid.md)
   A unique and persistent identifier of a particular token object.
-- [class TKTokenKeyAlgorithm](tktokenkeyalgorithm.md)
+- [class TKTokenKeyAlgorithm](../tktokenkeyalgorithm.md)
   Cryptographic algorithms used by token keys.
 
 

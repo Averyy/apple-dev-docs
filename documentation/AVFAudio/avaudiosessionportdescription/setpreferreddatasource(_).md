@@ -1,7 +1,8 @@
 # setPreferredDataSource(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the preferred audio data source for the port.
 
@@ -18,9 +19,13 @@ Sets the preferred audio data source for the port.
 func setPreferredDataSource(_ dataSource: AVAudioSessionDataSourceDescription?) throws
 ```
 
+```objc
+- (BOOL) setPreferredDataSource:(AVAudioSessionDataSourceDescription *) dataSource error:(NSError **) outError;
+```
+
 #### Discussion
 
-Call this method to request a change to the audio session’s preferred data source. To determine whether the change has taken effect, inspect the [`selectedDataSource`](avaudiosessionportdescription/selecteddatasource.md) property. (For details, see Configuring standard audio behaviors in the [`AVAudioSession`](avaudiosession.md) class reference).
+Call this method to request a change to the audio session’s preferred data source. To determine whether the change has taken effect, inspect the [`selectedDataSource`](./selecteddatasource.md) property. (For details, see Configuring standard audio behaviors in the [`AVAudioSession`](../avaudiosession.md) class reference).
 
 If the port is in use, changing this setting is likely to result in a route reconfiguration.
 
@@ -32,11 +37,12 @@ Set a preferred data source only after setting the audio session’s category an
 
 ## See Also
 
-- [var dataSources: [AVAudioSessionDataSourceDescription]?](avaudiosessionportdescription/datasources.md)
+### Managing a port’s data sources
+- [var dataSources: [AVAudioSessionDataSourceDescription]?](./datasources.md)
   The available data sources for the port.
-- [var selectedDataSource: AVAudioSessionDataSourceDescription?](avaudiosessionportdescription/selecteddatasource.md)
+- [var selectedDataSource: AVAudioSessionDataSourceDescription?](./selecteddatasource.md)
   The currently selected audio data source for the port.
-- [var preferredDataSource: AVAudioSessionDataSourceDescription?](avaudiosessionportdescription/preferreddatasource.md)
+- [var preferredDataSource: AVAudioSessionDataSourceDescription?](./preferreddatasource.md)
   The preferred audio data source for the port.
 
 

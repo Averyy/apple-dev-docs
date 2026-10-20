@@ -1,24 +1,26 @@
 # SpriteKit Variables
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: API Collection
 
 Global variables and macros used across SpriteKit.
 
 ## Topics
 
 ### Global variables
-- [var SKVIEW_AVAILABLE: Int32](skview_available.md)
-- [var SK_VERSION: Int32](sk_version.md)
+- [var SKVIEW_AVAILABLE: Int32](./skview_available.md)
+- [var SK_VERSION: Int32](./sk_version.md)
 
 ## See Also
 
-- [SpriteKit Enumerations](spritekit-enumerations.md)
+### Reference
+- [SpriteKit Enumerations](./spritekit-enumerations.md)
   Enumerations used across SpriteKit.
-- [SpriteKit Data Types](spritekit-data-types.md)
+- [SpriteKit Data Types](./spritekit-data-types.md)
   Data types used across SpriteKit.
-- [SpriteKit Constants](spritekit-constants.md)
+- [SpriteKit Constants](./spritekit-constants.md)
   Constants used across SpriteKit.
-- [SpriteKit Type Aliases](spritekit-type-aliases.md)
+- [SpriteKit Type Aliases](./spritekit-type-aliases.md)
   Type aliases used across SpriteKit.
 
 

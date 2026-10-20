@@ -1,7 +1,8 @@
 # NSSiriUsageDescription
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A message that tells people why the app is requesting to send user data to Siri.
 
@@ -10,9 +11,10 @@ A message that tells people why the app is requesting to send user data to Siri.
 - iPadOS 10.0+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSSiriUsageDescription` (Privacy - Siri Usage Description)
+- **Type**: string
 
 #### Discussion
 
@@ -20,7 +22,8 @@ A message that tells people why the app is requesting to send user data to Siri.
 
 ## See Also
 
-- [Requesting Authorization to Use Siri](../sirikit/requesting-authorization-to-use-siri.md)
+### Siri
+- [Requesting Authorization to Use Siri](../../SiriKit/requesting-authorization-to-use-siri.md)
   Request permission from the user for Siri and Maps to communicate with your app or Intents app extension.
 
 

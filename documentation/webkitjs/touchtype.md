@@ -1,7 +1,8 @@
 # TouchType
 
 **Framework**: WebKit JS  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - Safari Desktop 10.1+

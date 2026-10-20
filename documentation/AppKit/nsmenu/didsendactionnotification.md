@@ -1,17 +1,22 @@
 # didSendActionNotification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted just after the application dispatches a menu item’s action method to the menu item’s target.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class let didSendActionNotification: NSNotification.Name
+```
+
+```c
+extern NSNotificationName NSMenuDidSendActionNotification;
 ```
 
 #### Discussion
@@ -22,21 +27,22 @@ The notification object is the instance of `NSMenu` containing the chosen menu i
 | --- | --- |
 | `@"MenuItem"` | The menu item that was chosen. |
 
-To observe this notification using Swift concurrency, use [`NSMenu.DidSendActionMessage`](nsmenu/didsendactionmessage.md).
+To observe this notification using Swift concurrency, use [`NSMenu.DidSendActionMessage`](./didsendactionmessage.md).
 
 ## See Also
 
-- [class let didAddItemNotification: NSNotification.Name](nsmenu/didadditemnotification.md)
+### Notifications
+- [class let didAddItemNotification: NSNotification.Name](./didadditemnotification.md)
   Posted after a menu item is added to the menu.
-- [class let didChangeItemNotification: NSNotification.Name](nsmenu/didchangeitemnotification.md)
+- [class let didChangeItemNotification: NSNotification.Name](./didchangeitemnotification.md)
   Posted after a menu item in the menu changes appearance.
-- [class let didBeginTrackingNotification: NSNotification.Name](nsmenu/didbegintrackingnotification.md)
+- [class let didBeginTrackingNotification: NSNotification.Name](./didbegintrackingnotification.md)
   Posted when menu tracking begins.
-- [class let didEndTrackingNotification: NSNotification.Name](nsmenu/didendtrackingnotification.md)
+- [class let didEndTrackingNotification: NSNotification.Name](./didendtrackingnotification.md)
   Posted when menu tracking ends, even if no action is sent.
-- [class let didRemoveItemNotification: NSNotification.Name](nsmenu/didremoveitemnotification.md)
+- [class let didRemoveItemNotification: NSNotification.Name](./didremoveitemnotification.md)
   Posted after a menu item is removed from the menu.
-- [class let willSendActionNotification: NSNotification.Name](nsmenu/willsendactionnotification.md)
+- [class let willSendActionNotification: NSNotification.Name](./willsendactionnotification.md)
   Posted just before the application dispatches a menu item’s action method to the menu item’s target.
 
 

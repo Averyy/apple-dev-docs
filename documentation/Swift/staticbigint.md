@@ -1,7 +1,8 @@
 # StaticBigInt
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An immutable arbitrary-precision signed integer.
 
@@ -43,43 +44,44 @@ extension UInt256: ExpressibleByIntegerLiteral {
 ## Topics
 
 ### Instance Properties
-- [var bitWidth: Int](staticbigint/bitwidth.md)
+- [var bitWidth: Int](./staticbigint/bitwidth.md)
   Returns the minimal number of bits in this value’s binary representation, including the sign bit, and excluding the sign extension.
 ### Instance Methods
-- [func signum() -> Int](staticbigint/signum.md)
+- [func signum() -> Int](./staticbigint/signum%28%29.md)
   Indicates the value’s sign.
 ### Subscripts
-- [subscript(Int) -> UInt](staticbigint/subscript(_:).md)
+- [subscript(Int) -> UInt](./staticbigint/subscript%28_%29.md)
   Returns a 32-bit or 64-bit word of this value’s binary representation.
 ### Type Aliases
-- [StaticBigInt.IntegerLiteralType](staticbigint/integerliteraltype.md)
+- [StaticBigInt.IntegerLiteralType](./staticbigint/integerliteraltype.md)
   A type that represents an integer literal.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](staticbigint/customdebugstringconvertible-implementations.md)
-- [CustomReflectable Implementations](staticbigint/customreflectable-implementations.md)
-- [ExpressibleByIntegerLiteral Implementations](staticbigint/expressiblebyintegerliteral-implementations.md)
+- [CustomDebugStringConvertible Implementations](./staticbigint/customdebugstringconvertible-implementations.md)
+- [CustomReflectable Implementations](./staticbigint/customreflectable-implementations.md)
+- [ExpressibleByIntegerLiteral Implementations](./staticbigint/expressiblebyintegerliteral-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Copyable](copyable.md)
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [CustomReflectable](customreflectable.md)
-- [Escapable](escapable.md)
-- [ExpressibleByIntegerLiteral](expressiblebyintegerliteral.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [BitwiseCopyable](./bitwisecopyable.md)
+- [Copyable](./copyable.md)
+- [CustomDebugStringConvertible](./customdebugstringconvertible.md)
+- [CustomReflectable](./customreflectable.md)
+- [Escapable](./escapable.md)
+- [ExpressibleByIntegerLiteral](./expressiblebyintegerliteral.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [protocol ExpressibleByIntegerLiteral](expressiblebyintegerliteral.md)
+### Value Literals
+- [protocol ExpressibleByIntegerLiteral](./expressiblebyintegerliteral.md)
   A type that can be initialized with an integer literal.
-- [protocol ExpressibleByFloatLiteral](expressiblebyfloatliteral.md)
+- [protocol ExpressibleByFloatLiteral](./expressiblebyfloatliteral.md)
   A type that can be initialized with a floating-point literal.
-- [protocol ExpressibleByBooleanLiteral](expressiblebybooleanliteral.md)
+- [protocol ExpressibleByBooleanLiteral](./expressiblebybooleanliteral.md)
   A type that can be initialized with the Boolean literals `true` and `false`.
-- [protocol ExpressibleByNilLiteral](expressiblebynilliteral.md)
+- [protocol ExpressibleByNilLiteral](./expressiblebynilliteral.md)
   A type that can be initialized using the nil literal, `nil`.
 
 

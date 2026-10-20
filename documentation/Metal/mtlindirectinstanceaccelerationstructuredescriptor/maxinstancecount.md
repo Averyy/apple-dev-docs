@@ -1,7 +1,8 @@
 # maxInstanceCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var maxInstanceCount: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger maxInstanceCount;
 ```
 
 

@@ -1,7 +1,8 @@
 # resource
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The diffuse probe resource containing baked lighting data for this group.
 

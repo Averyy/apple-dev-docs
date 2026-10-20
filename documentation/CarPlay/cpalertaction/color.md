@@ -1,7 +1,8 @@
 # color
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -13,6 +14,10 @@
 ```swift
 @NSCopying
 var color: UIColor? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) UIColor * color;
 ```
 
 

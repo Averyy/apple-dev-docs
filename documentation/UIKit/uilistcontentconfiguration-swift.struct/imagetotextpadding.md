@@ -1,7 +1,8 @@
 # imageToTextPadding
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The padding between the image and text.
 
@@ -10,7 +11,7 @@ The padding between the image and text.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,15 +25,16 @@ This value only applies when there’s both an image and text.
 
 ## See Also
 
-- [var axesPreservingSuperviewLayoutMargins: UIAxis](uilistcontentconfiguration-swift.struct/axespreservingsuperviewlayoutmargins.md)
+### Customizing layout
+- [var axesPreservingSuperviewLayoutMargins: UIAxis](./axespreservingsuperviewlayoutmargins.md)
   A Boolean value that determines whether the content view preserves the layout margins that it inherits from its superview on the horizontal or vertical axes.
-- [var directionalLayoutMargins: NSDirectionalEdgeInsets](uilistcontentconfiguration-swift.struct/directionallayoutmargins.md)
+- [var directionalLayoutMargins: NSDirectionalEdgeInsets](./directionallayoutmargins.md)
   The margins between the content and the edges of the content view.
-- [var prefersSideBySideTextAndSecondaryText: Bool](uilistcontentconfiguration-swift.struct/preferssidebysidetextandsecondarytext.md)
+- [var prefersSideBySideTextAndSecondaryText: Bool](./preferssidebysidetextandsecondarytext.md)
   A Boolean value that determines whether the configuration positions the text and secondary text side by side.
-- [var textToSecondaryTextHorizontalPadding: CGFloat](uilistcontentconfiguration-swift.struct/texttosecondarytexthorizontalpadding.md)
+- [var textToSecondaryTextHorizontalPadding: CGFloat](./texttosecondarytexthorizontalpadding.md)
   The minimum horizontal padding between the text and secondary text.
-- [var textToSecondaryTextVerticalPadding: CGFloat](uilistcontentconfiguration-swift.struct/texttosecondarytextverticalpadding.md)
+- [var textToSecondaryTextVerticalPadding: CGFloat](./texttosecondarytextverticalpadding.md)
   The vertical padding between the text and secondary text.
 
 

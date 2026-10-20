@@ -2,6 +2,7 @@
 
 **Framework**: Authentication Services  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A list of passkeys that the relying party doesn’t accept for resolving the challenge.
@@ -18,11 +19,16 @@ A list of passkeys that the relying party doesn’t accept for resolving the cha
 var excludedCredentials: [ASAuthorizationPlatformPublicKeyCredentialDescriptor]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<ASAuthorizationPlatformPublicKeyCredentialDescriptor *> * excludedCredentials;
+```
+
 ## See Also
 
-- [var clientData: ASPublicKeyCredentialClientData?](asauthorizationwebbrowserplatformpublickeycredentialregistrationrequest/clientdata-5dk66.md)
+### Information about the assertion
+- [var clientData: ASPublicKeyCredentialClientData?](./clientdata-5dk66.md)
   The client data to supply to the relying party.
-- [var shouldShowHybridTransport: Bool](asauthorizationwebbrowserplatformpublickeycredentialregistrationrequest/shouldshowhybridtransport.md)
+- [var shouldShowHybridTransport: Bool](./shouldshowhybridtransport.md)
   Whether a remote authenticator that communicates with the operating system using Bluetooth can resolve the challenge.
 
 

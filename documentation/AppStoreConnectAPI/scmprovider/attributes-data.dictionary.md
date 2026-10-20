@@ -1,7 +1,8 @@
 # ScmProvider.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes that describe a Providers resource.
 
@@ -10,7 +11,7 @@ The attributes that describe a Providers resource.
 
 ## Declaration
 
-```swift
+```
 object ScmProvider.Attributes
 ```
 
@@ -21,7 +22,8 @@ object ScmProvider.Attributes
 
 ## See Also
 
-- [object ScmProviderType](scmprovidertype.md)
+### Objects and types
+- [object ScmProviderType](../scmprovidertype.md)
   The source code management provider’s type.
 
 

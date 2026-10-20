@@ -1,7 +1,8 @@
 # mFormatID
 
 **Framework**: Core Audio Types  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier specifying the general audio data format in the stream.
 
@@ -20,27 +21,32 @@ An identifier specifying the general audio data format in the stream.
 var mFormatID: AudioFormatID
 ```
 
+```c
+AudioFormatID mFormatID;
+```
+
 #### Discussion
 
-See [`Audio Format Identifiers`](audio-format-identifiers.md). This value must be nonzero.
+See [Audio Format Identifiers](../audio-format-identifiers.md). This value must be nonzero.
 
 ## See Also
 
-- [var mFormatFlags: AudioFormatFlags](audiostreambasicdescription/mformatflags.md)
+### Inspecting a description
+- [var mFormatFlags: AudioFormatFlags](./mformatflags.md)
   Format-specific flags to specify details of the format.
-- [var mSampleRate: Float64](audiostreambasicdescription/msamplerate.md)
+- [var mSampleRate: Float64](./msamplerate.md)
   The number of frames per second of the data in the stream, when playing the stream at normal speed.
-- [var mBitsPerChannel: UInt32](audiostreambasicdescription/mbitsperchannel.md)
+- [var mBitsPerChannel: UInt32](./mbitsperchannel.md)
   The number of bits for one audio sample.
-- [var mBytesPerFrame: UInt32](audiostreambasicdescription/mbytesperframe.md)
+- [var mBytesPerFrame: UInt32](./mbytesperframe.md)
   The number of bytes from the start of one frame to the start of the next frame in an audio buffer.
-- [var mChannelsPerFrame: UInt32](audiostreambasicdescription/mchannelsperframe.md)
+- [var mChannelsPerFrame: UInt32](./mchannelsperframe.md)
   The number of channels in each frame of audio data.
-- [var mBytesPerPacket: UInt32](audiostreambasicdescription/mbytesperpacket.md)
+- [var mBytesPerPacket: UInt32](./mbytesperpacket.md)
   The number of bytes in a packet of audio data.
-- [var mFramesPerPacket: UInt32](audiostreambasicdescription/mframesperpacket.md)
+- [var mFramesPerPacket: UInt32](./mframesperpacket.md)
   The number of frames in a packet of audio data.
-- [var mReserved: UInt32](audiostreambasicdescription/mreserved.md)
+- [var mReserved: UInt32](./mreserved.md)
   The amount to pad the structure to force an even 8-byte alignment.
 
 

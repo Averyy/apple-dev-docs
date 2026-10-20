@@ -1,21 +1,23 @@
 # m_name
 
 **Framework**: VideoDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 OSSharedPtr<OSString> m_name;
 ```
 
 ## See Also
 
-- [m_value](iouservideoselectorvaluedescription/m_value.md)
-- [IOUserVideoSelectorValue](iouservideoselectorvalue.md)
+### Accessing description properties
+- [m_value](./m_value.md)
+- [IOUserVideoSelectorValue](../iouservideoselectorvalue.md)
   Selector value for controls.
 
 

@@ -1,14 +1,15 @@
 # CSMAGIC_BLOBWRAPPER
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 CSMAGIC_BLOBWRAPPER = 0xfade0b01
 ```
 

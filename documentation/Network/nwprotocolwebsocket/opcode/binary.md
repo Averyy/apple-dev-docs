@@ -1,7 +1,8 @@
 # NWProtocolWebSocket.Opcode.binary
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A binary data message.
 
@@ -22,9 +23,10 @@ case binary
 
 ## See Also
 
-- [NWProtocolWebSocket.Opcode.text](nwprotocolwebsocket/opcode/text.md)
+### Data Types
+- [NWProtocolWebSocket.Opcode.text](./text.md)
   A text data message.
-- [NWProtocolWebSocket.Opcode.cont](nwprotocolwebsocket/opcode/cont.md)
+- [NWProtocolWebSocket.Opcode.cont](./cont.md)
   A continuation message.
 
 

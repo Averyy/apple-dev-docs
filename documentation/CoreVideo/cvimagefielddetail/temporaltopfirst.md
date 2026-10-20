@@ -1,7 +1,8 @@
 # CVImageFieldDetail.temporalTopFirst
 
 **Framework**: Core Video  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The image buffer contains complete fields in alternating order. The top, odd-numbered, fields contain image data captured at an earlier time than bottom, even-numbered, fields.
 

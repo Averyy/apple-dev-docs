@@ -1,13 +1,14 @@
 # AppleItemID
 
 **Framework**: MarketplaceKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An identifier that represents an app.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS
+- iPadOS
 
 ## Declaration
 
@@ -17,25 +18,26 @@ typealias AppleItemID = UInt64
 
 ## Mentions
 
-- [Installing apps from an alternative marketplace](installing-apps-from-an-alternative-marketplace.md)
-- [Installing your app from your website](installing-your-app-from-your-website.md)
-- [Supplying an install verification token](supplying-an-install-verification-token.md)
+- [Installing apps from an alternative marketplace](./installing-apps-from-an-alternative-marketplace.md)
+- [Installing your app from your website](./installing-your-app-from-your-website.md)
+- [Supplying an install verification token](./supplying-an-install-verification-token.md)
 
 ## See Also
 
-- [class AppLibrary](applibrary.md)
+### App management
+- [class AppLibrary](./applibrary.md)
   A class that represents a catalog of all installed apps, and offers various services for the apps that your marketplace distributes.
-- [struct AppVersion](appversion.md)
+- [struct AppVersion](./appversion.md)
   Information that describes an app, including its identifier and version number.
-- [struct AutomaticUpdate](automaticupdate.md)
+- [struct AutomaticUpdate](./automaticupdate.md)
   Information that describes an app that’s available for update, including a download URL.
-- [struct InstallRequirements](installrequirements.md)
+- [struct InstallRequirements](./installrequirements.md)
   An app’s installation criteria for a device.
-- [typealias AppleVersionID](appleversionid.md)
+- [typealias AppleVersionID](./appleversionid.md)
   An identifier that represents a single app version.
-- [let MarketplaceKitURIScheme: String](marketplacekiturischeme.md)
+- [let MarketplaceKitURIScheme: String](./marketplacekiturischeme.md)
   A URI scheme that defines an alternative distribution app installation link.
-- [struct RequestAppDeletionAction](requestappdeletionaction.md)
+- [struct RequestAppDeletionAction](./requestappdeletionaction.md)
   A SwiftUI environment action that requests the deletion of an app.
 
 

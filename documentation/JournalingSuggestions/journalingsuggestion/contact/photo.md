@@ -1,7 +1,8 @@
 # photo
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL to an image on disk for the contact photo.
 
@@ -16,7 +17,8 @@ let photo: URL?
 
 ## See Also
 
-- [var name: String](journalingsuggestion/contact/name.md)
+### Inspecting contact information
+- [var name: String](./name.md)
   The contact’s full name.
 
 

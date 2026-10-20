@@ -1,7 +1,8 @@
 # init(sourceFrame:destinationFrame:)
 
 **Framework**: Video Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new low-latency, super-resolution scaler parameters object.
 
@@ -17,6 +18,10 @@ Creates a new low-latency, super-resolution scaler parameters object.
 
 ```swift
 init(sourceFrame: VTFrameProcessorFrame, destinationFrame: VTFrameProcessorFrame)
+```
+
+```objc
+- (instancetype) initWithSourceFrame:(VTFrameProcessorFrame *) sourceFrame destinationFrame:(VTFrameProcessorFrame *) destinationFrame;
 ```
 
 ## Parameters

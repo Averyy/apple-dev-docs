@@ -1,18 +1,21 @@
 # BNNSFilterCreateLayerDropout(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a new dropout layer.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -20,9 +23,13 @@ Returns a new dropout layer.
 func BNNSFilterCreateLayerDropout(_ layer_params: UnsafePointer<BNNSLayerParametersDropout>, _ filter_params: UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?
 ```
 
+```c
+BNNSFilterBNNSFilterCreateLayerDropout(const BNNSLayerParametersDropout *layer_params, const BNNSFilterParameters *filter_params);
+```
+
 #### Discussion
 
-Use a dropout layer to randomly set the elements—or entire dimensions—of a tensor to 0. The layer scales the unchanged elements by `1 / (1 -` [`rate`](bnnslayerparametersdropout/rate.md) `)`. The following code randomly drops half the elements from a 4 x 4 matrix:
+Use a dropout layer to randomly set the elements—or entire dimensions—of a tensor to 0. The layer scales the unchanged elements by `1 / (1 -` [`rate`](./bnnslayerparametersdropout/rate.md) `)`. The following code randomly drops half the elements from a 4 x 4 matrix:
 
 ```swift
 let input: [Float] = [1, 1, 1, 1,
@@ -67,7 +74,7 @@ On return, output contains the following values:
   0.0, 0.0, 0.0, 2.0 ]
 ```
 
-Use the [`control`](bnnslayerparametersdropout/control.md) parameter to dropout entire dimensions. For example, setting `control` to `0b0010` and `rate` to `0.75` drops three quarters of the columns, and scales the remaining values by 4:
+Use the [`control`](./bnnslayerparametersdropout/control.md) parameter to dropout entire dimensions. For example, setting `control` to `0b0010` and `rate` to `0.75` drops three quarters of the columns, and scales the remaining values by 4:
 
 ```c
 [ 0.0, 4.0, 0.0, 0.0, 
@@ -83,9 +90,10 @@ Use the [`control`](bnnslayerparametersdropout/control.md) parameter to dropout 
 
 ## See Also
 
-- [class DropoutLayer](bnns/dropoutlayer.md)
+### Dropout layers
+- [class DropoutLayer](./bnns/dropoutlayer.md)
   A layer object that wraps a dropout filter and manages its deinitialization.
-- [struct BNNSLayerParametersDropout](bnnslayerparametersdropout.md)
+- [struct BNNSLayerParametersDropout](./bnnslayerparametersdropout.md)
   A structure that contains the parameters of a dropout layer.
 
 

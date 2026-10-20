@@ -626,7 +626,7 @@ Unless otherwise specified,
 the default inferred type of an integer literal is the Swift standard library type `Int`.
 The Swift standard library also defines types for various sizes of
 signed and unsigned integers,
-as described in [Integers](TheBasics.md#Integers).
+as described in [Integers](../LanguageGuide/TheBasics.md#Integers).
 
 <!--
   TR: The prose assumes underscores only belong between digits.
@@ -954,7 +954,7 @@ have the same indentation requirements as regular multiline string literals.
 
 The default inferred type of a string literal is `String`.
 For more information about the `String` type,
-see [Strings And Characters](StringsAndCharacters.md)
+see [Strings and Characters](../LanguageGuide/StringsAndCharacters.md)
 and [`String`](https://developer.apple.com/documentation/swift/string).
 
 String literals that are concatenated by the `+` operator
@@ -1148,8 +1148,8 @@ you must use the extended delimiter syntax.
 ## Operators
 
 The Swift standard library defines a number of operators for your use,
-many of which are discussed in [Basic Operators](BasicOperators.md)
-and [Advanced Operators](AdvancedOperators.md).
+many of which are discussed in [Basic Operators](../LanguageGuide/BasicOperators.md)
+and [Advanced Operators](../LanguageGuide/AdvancedOperators.md).
 The present section describes which characters can be used to define custom operators.
 
 Custom operators can begin with one of the ASCII characters
@@ -1298,9 +1298,9 @@ that may then be misinterpreted as a bit shift `>>` operator.
 -->
 
 To learn how to define new, custom operators,
-see [Custom Operators](AdvancedOperators.md#Custom-Operators) and [Operator Declaration](Declarations.md#Operator-Declaration).
+see [Custom Operators](../LanguageGuide/AdvancedOperators.md#Custom-Operators) and [Operator Declaration](Declarations.md#Operator-Declaration).
 To learn how to overload existing operators,
-see [Operator Methods](AdvancedOperators.md#Operator-Methods).
+see [Operator Methods](../LanguageGuide/AdvancedOperators.md#Operator-Methods).
 
 <!--
   NOTE: The ? is a reserved punctuation.  Optional-chaining (foo?.bar) is actually a

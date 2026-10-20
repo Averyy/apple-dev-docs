@@ -1,7 +1,8 @@
 # CFNetServicesError.missingRequiredConfiguration
 
 **Framework**: CFNetwork  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A required configuration for local network access is missing.
 
@@ -17,6 +18,10 @@ A required configuration for local network access is missing.
 
 ```swift
 case missingRequiredConfiguration
+```
+
+```c
+kCFNetServicesErrorMissingRequiredConfiguration
 ```
 
 

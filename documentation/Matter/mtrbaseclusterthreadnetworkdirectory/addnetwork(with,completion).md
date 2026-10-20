@@ -1,7 +1,8 @@
 # addNetwork(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command AddNetwork
 
@@ -17,7 +18,15 @@ Command AddNetwork
 ## Declaration
 
 ```swift
+func addNetwork(with params: MTRThreadNetworkDirectoryClusterAddNetworkParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func addNetwork(with params: MTRThreadNetworkDirectoryClusterAddNetworkParams) async throws
+```
+
+```objc
+- (void) addNetworkWithParams:(MTRThreadNetworkDirectoryClusterAddNetworkParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

@@ -1,17 +1,20 @@
 # stop()
 
 **Framework**: Multipeer Connectivity  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops advertising the service provided by a local peer and stops the assistant.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS 10.0+
-- visionOS 1.0+
+- iOS 7.0+ - Deprecated in 27.0
+- iPadOS 7.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.10+ - Deprecated in 27.0
+- tvOS 10.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use Network Framework instead
 
 ## Declaration
 
@@ -19,9 +22,14 @@ Stops advertising the service provided by a local peer and stops the assistant.
 func stop()
 ```
 
+```objc
+- (void) stop;
+```
+
 ## See Also
 
-- [func start()](mcadvertiserassistant/start.md)
+### Starting and Stopping the Assistant
+- [func start()](./start%28%29.md)
   Begins advertising the service provided by a local peer and starts the assistant.
 
 

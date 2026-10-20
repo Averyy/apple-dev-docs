@@ -1,7 +1,8 @@
 # init(CVPixelBuffer:properties:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.0+

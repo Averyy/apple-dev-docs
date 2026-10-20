@@ -1,14 +1,15 @@
 # SearchProperty_Invoke
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t SearchProperty_Invoke(const IORPC rpc, OSMetaClassBase *target, SearchProperty_Handler func);
 ```
 

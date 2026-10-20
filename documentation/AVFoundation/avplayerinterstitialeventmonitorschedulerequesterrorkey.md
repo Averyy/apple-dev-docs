@@ -1,7 +1,8 @@
 # AVPlayerInterstitialEventMonitorScheduleRequestErrorKey
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 userInfo dictionary key for the AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification. Value is NSError. Absent if the request succeeded
 
@@ -20,21 +21,26 @@ userInfo dictionary key for the AVPlayerInterstitialEventMonitorScheduleRequestC
 let AVPlayerInterstitialEventMonitorScheduleRequestErrorKey: String
 ```
 
+```c
+extern NSString * const AVPlayerInterstitialEventMonitorScheduleRequestErrorKey;
+```
+
 ## See Also
 
-- [Providing an integrated view of your timeline when playing HLS interstitials](providing-an-integrated-view-of-your-timeline-when-playing-hls-interstitials.md)
+### Interstitials
+- [Providing an integrated view of your timeline when playing HLS interstitials](./providing-an-integrated-view-of-your-timeline-when-playing-hls-interstitials.md)
   Go beyond simple ad insertion with point and fill occupancy HLS interstitials.
-- [class AVPlayerInterstitialEvent](avplayerinterstitialevent.md)
+- [class AVPlayerInterstitialEvent](./avplayerinterstitialevent.md)
   An object that provides instructions for how a player presents interstitial content.
-- [class AVPlayerInterstitialEventController](avplayerinterstitialeventcontroller.md)
+- [class AVPlayerInterstitialEventController](./avplayerinterstitialeventcontroller.md)
   An object that schedules interstitial events for items played by the primary player.
-- [class AVPlayerInterstitialEventMonitor](avplayerinterstitialeventmonitor.md)
+- [class AVPlayerInterstitialEventMonitor](./avplayerinterstitialeventmonitor.md)
   An object that monitors the scheduling and progress of interstitial events.
-- [let AVPlayerInterstitialEventMonitorScheduleRequestIdentifierKey: String](avplayerinterstitialeventmonitorschedulerequestidentifierkey.md)
+- [let AVPlayerInterstitialEventMonitorScheduleRequestIdentifierKey: String](./avplayerinterstitialeventmonitorschedulerequestidentifierkey.md)
   userInfo dictionary key for the AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification. Value is NSString.
-- [let AVPlayerInterstitialEventMonitorScheduleRequestResponseKey: String](avplayerinterstitialeventmonitorschedulerequestresponsekey.md)
+- [let AVPlayerInterstitialEventMonitorScheduleRequestResponseKey: String](./avplayerinterstitialeventmonitorschedulerequestresponsekey.md)
   userInfo dictionary key for the AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification. Value is NSData. Absent if the request failed.
-- [class AVPlayerItemIntegratedTimeline](avplayeritemintegratedtimeline.md)
+- [class AVPlayerItemIntegratedTimeline](./avplayeritemintegratedtimeline.md)
   An object that models the timeline and playback sequence of a primary player item and scheduled interstitial events.
 
 

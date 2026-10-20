@@ -1,7 +1,8 @@
 # hardware(headphones:)
 
 **Framework**: RelevanceKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Tells the system a widget is relevant when a person’s headphones are connected.
 
@@ -26,9 +27,9 @@ A contextual clue that the system uses to determine the relevance of a widget in
 
 #### Discussion
 
-Setting a [`RelevantContext.HeadphonesCondition`](relevantcontext/headphonescondition.md) to signal relevance to the system doesn’t give you access to fitness activity and information. If contextual fitness information isn’t available to the system, fitness clues to signal relevance don’t have an effect.
+Setting a [`RelevantContext.HeadphonesCondition`](./headphonescondition.md) to signal relevance to the system doesn’t give you access to fitness activity and information. If contextual fitness information isn’t available to the system, fitness clues to signal relevance don’t have an effect.
 
-> **Note**: Smart Stacks are available in iOS, iPadOS, and watchOS. However, functionality provided by RelevanceKit API is only available in watchOS. Calling its API on other platforms doesn’t have any effect. For more information, refer to [`Increasing the visibility of widgets in Smart Stacks`](https://developer.apple.com/documentation/widgetkit/widget-suggestions-in-smart-stacks).
+> **Note**: Smart Stacks are available in iOS, iPadOS, and watchOS. However, functionality provided by RelevanceKit API is only available in watchOS. Calling its API on other platforms doesn’t have any effect. For more information, refer to [Increasing the visibility of widgets in Smart Stacks](../../WidgetKit/widget-suggestions-in-smart-stacks.md).
 
 ## Parameters
 
@@ -36,7 +37,8 @@ Setting a [`RelevantContext.HeadphonesCondition`](relevantcontext/headphonescond
 
 ## See Also
 
-- [RelevantContext.HeadphonesCondition](relevantcontext/headphonescondition.md)
+### Hardware clues
+- [RelevantContext.HeadphonesCondition](./headphonescondition.md)
   A structure that indicates whether a person’s headphones are connected.
 
 

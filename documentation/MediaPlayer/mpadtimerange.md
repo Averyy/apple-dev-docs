@@ -1,7 +1,8 @@
 # MPAdTimeRange
 
 **Framework**: Media Player  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a time range where an ad break exists in the current player.
 
@@ -18,6 +19,10 @@ An object that represents a time range where an ad break exists in the current p
 class MPAdTimeRange
 ```
 
+```objc
+@interface MPAdTimeRange : NSObject
+```
+
 #### Overview
 
 This value must be in bounds of the duration of the current player item.
@@ -25,26 +30,26 @@ This value must be in bounds of the duration of the current player item.
 ## Topics
 
 ### Creating an Ad Time Range
-- [init(CMTimeRange)](mpadtimerange/init(_:).md)
+- [init(CMTimeRange)](./mpadtimerange/init%28_%29.md)
   Creates a Media Player time range that indicates where an ad break exists in the current player.
 ### Inspecting an Ad Time Range
-- [var timeRange: CMTimeRange](mpadtimerange/timerange.md)
+- [var timeRange: CMTimeRange](./mpadtimerange/timerange.md)
   A Media Player time range that indicates where an ad break exists in the current player.
 ### Initializers
-- [init(timeRange: CMTimeRange)](mpadtimerange/init(timerange:).md)
+- [init(timeRange: CMTimeRange)](./mpadtimerange/init%28timerange%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: ClassKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asks the delegate for a new context with the given identifier for the given parent context.
@@ -17,6 +18,10 @@ Asks the delegate for a new context with the given identifier for the given pare
 
 ```swift
 func createContext(forIdentifier identifier: String, parentContext: CLSContext, parentIdentifierPath: [String]) -> CLSContext?
+```
+
+```objc
+- (CLSContext *) createContextForIdentifier:(NSString *) identifier parentContext:(CLSContext *) parentContext parentIdentifierPath:(NSArray<NSString *> *) parentIdentifierPath;
 ```
 
 #### Return Value

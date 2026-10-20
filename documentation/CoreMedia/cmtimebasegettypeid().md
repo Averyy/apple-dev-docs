@@ -1,7 +1,8 @@
 # CMTimebaseGetTypeID()
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the Core Foundation type identifier that identifies a timebase object.
 
@@ -18,6 +19,10 @@ Returns the Core Foundation type identifier that identifies a timebase object.
 
 ```swift
 func CMTimebaseGetTypeID() -> CFTypeID
+```
+
+```c
+extern CFTypeID CMTimebaseGetTypeID();
 ```
 
 

@@ -1,7 +1,8 @@
 # projection
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The projection matrix used to render the frame.
 

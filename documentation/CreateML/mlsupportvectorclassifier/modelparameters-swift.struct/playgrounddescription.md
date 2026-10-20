@@ -1,12 +1,13 @@
 # playgroundDescription
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the model parameters for a support vector classifier shown in a playground.
 
 **Availability**:
-- macOS 10.14+
+- macOS 10.14+ - Deprecated in 14.0
 
 ## Declaration
 
@@ -16,9 +17,10 @@ var playgroundDescription: Any { get }
 
 ## See Also
 
-- [var description: String](mlsupportvectorclassifier/modelparameters-swift.struct/description.md)
+### Describing parameters
+- [var description: String](./description.md)
   A text representation of the model parameters for a support vector classifier.
-- [var debugDescription: String](mlsupportvectorclassifier/modelparameters-swift.struct/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the model parameters for a support vector classifier that’s suitable for output during debugging.
 
 

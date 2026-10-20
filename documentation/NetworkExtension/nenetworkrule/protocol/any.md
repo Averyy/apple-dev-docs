@@ -1,7 +1,8 @@
 # NENetworkRule.Protocol.any
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A rule protocol to match TCP and UDP traffic.
 
@@ -14,11 +15,16 @@ A rule protocol to match TCP and UDP traffic.
 case any
 ```
 
+```c
+NENetworkRuleProtocolAny
+```
+
 ## See Also
 
-- [NENetworkRule.Protocol.TCP](nenetworkrule/protocol/tcp.md)
+### Protocols
+- [NENetworkRule.Protocol.TCP](./tcp.md)
   A rule protocol to match TCP traffic.
-- [NENetworkRule.Protocol.UDP](nenetworkrule/protocol/udp.md)
+- [NENetworkRule.Protocol.UDP](./udp.md)
   A rule protocol to match UDP traffic.
 
 

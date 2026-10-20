@@ -1,7 +1,8 @@
 # VSErrorDomain
 
 **Framework**: Video Subscriber Account  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for all errors in the framework.
 
@@ -9,7 +10,7 @@ The domain for all errors in the framework.
 - iOS 10.0+
 - iPadOS 10.0+
 - Mac Catalyst 10.0+
-- macOS ?+
+- macOS
 - tvOS 10.0+
 - visionOS 1.0+
 
@@ -19,19 +20,24 @@ The domain for all errors in the framework.
 let VSErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const VSErrorDomain;
+```
+
 ## See Also
 
-- [let VSErrorInfoKeySAMLResponse: String](vserrorinfokeysamlresponse.md)
+### Errors
+- [let VSErrorInfoKeySAMLResponse: String](./vserrorinfokeysamlresponse.md)
   The subscription provider’s SAML error response.
-- [let VSErrorInfoKeySAMLResponseStatus: String](vserrorinfokeysamlresponsestatus.md)
+- [let VSErrorInfoKeySAMLResponseStatus: String](./vserrorinfokeysamlresponsestatus.md)
   The subscription provider’s SAML error-response status code.
-- [let VSErrorInfoKeyAccountProviderResponse: String](vserrorinfokeyaccountproviderresponse.md)
+- [let VSErrorInfoKeyAccountProviderResponse: String](./vserrorinfokeyaccountproviderresponse.md)
   The account provider’s error-response object.
-- [let VSErrorInfoKeyUnsupportedProviderIdentifier: String](vserrorinfokeyunsupportedprovideridentifier.md)
+- [let VSErrorInfoKeyUnsupportedProviderIdentifier: String](./vserrorinfokeyunsupportedprovideridentifier.md)
   The identifier of the unsupported subscription provider.
-- [struct VSError](vserror.md)
+- [struct VSError](./vserror.md)
   Error information in the framework error domain.
-- [VSError.Code](vserror/code.md)
+- [VSError.Code](./vserror/code.md)
   Error codes in the framework error domain.
 
 

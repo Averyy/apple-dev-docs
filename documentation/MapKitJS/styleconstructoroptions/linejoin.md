@@ -1,7 +1,8 @@
 # lineJoin
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The style to use when drawing joins between line segments.
 
@@ -10,7 +11,7 @@ The style to use when drawing joins between line segments.
 
 ## Declaration
 
-```swift
+```
 lineJoin?: "bevel" | "miter" | "round";
 ```
 
@@ -20,13 +21,14 @@ The three options for line joins are `miter` (the join is a sharp corner), `roun
 
 ## See Also
 
-- [lineCap](styleconstructoroptions/linecap.md)
+### Setting line styles
+- [lineCap](./linecap.md)
   The style to use when drawing line endings.
-- [lineDash](styleconstructoroptions/linedash.md)
+- [lineDash](./linedash.md)
   An array of line and gap lengths for creating a dashed line.
-- [lineDashOffset](styleconstructoroptions/linedashoffset.md)
+- [lineDashOffset](./linedashoffset.md)
   The number of CSS pixels to use as the offset when drawing a line’s dash pattern.
-- [lineWidth](styleconstructoroptions/linewidth.md)
+- [lineWidth](./linewidth.md)
   The width of a line’s stroke, in CSS pixels.
 
 

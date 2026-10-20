@@ -1,7 +1,8 @@
 # vDSP_vpoly
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Evaluates a single-precision polynomial using specified coefficients, variables, and strides.
 
@@ -10,13 +11,13 @@ Evaluates a single-precision polynomial using specified coefficients, variables,
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
 ## Declaration
 
-```swift
+```c
 extern void vDSP_vpoly(const float *__A, vDSP_Stride __IA, const float *__B, vDSP_Stride __IB, float *__C, vDSP_Stride __IC, vDSP_Length __N, vDSP_Length __P);
 ```
 

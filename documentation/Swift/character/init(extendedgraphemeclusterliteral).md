@@ -1,7 +1,8 @@
 # init(extendedGraphemeClusterLiteral:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a character with the specified value.
 
@@ -34,7 +35,8 @@ The assignment to the `oBreve` constant calls this initializer behind the scenes
 
 ## See Also
 
-- [init(unicodeScalarLiteral: Self.ExtendedGraphemeClusterLiteralType)](character/init(unicodescalarliteral:).md)
+### Infrequently Used Functionality
+- [init(unicodeScalarLiteral: Self.ExtendedGraphemeClusterLiteralType)](./init%28unicodescalarliteral%29.md)
 
 
 ---

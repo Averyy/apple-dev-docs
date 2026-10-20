@@ -1,7 +1,8 @@
 # HIDDeviceError.noResources
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device doesn’t have the resources required to handle this request.
 

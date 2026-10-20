@@ -1,14 +1,15 @@
 # ml_gpu_stat_update
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void ml_gpu_stat_update(uint64_t);
 ```
 

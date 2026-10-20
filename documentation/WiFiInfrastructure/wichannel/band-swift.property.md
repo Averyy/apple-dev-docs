@@ -1,7 +1,8 @@
 # band
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Wi-Fi band of a given channel.
 

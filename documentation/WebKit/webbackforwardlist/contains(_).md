@@ -1,12 +1,13 @@
 # contains(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the back-forward list contains the specified item.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Returns a Boolean value indicating whether the back-forward list contains the sp
 func contains(_ item: WebHistoryItem!) -> Bool
 ```
 
+```objc
+- (BOOL) containsItem:(WebHistoryItem *) item;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the specified item is in the back-forward list; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the specified item is in the back-forward list; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -24,21 +29,22 @@ func contains(_ item: WebHistoryItem!) -> Bool
 
 ## See Also
 
-- [var backItem: WebHistoryItem!](webbackforwardlist/backitem.md)
+### Querying the Back-Forward List
+- [var backItem: WebHistoryItem!](./backitem.md)
   The item that precedes the current item in the back-forward list.
-- [var backListCount: Int32](webbackforwardlist/backlistcount.md)
+- [var backListCount: Int32](./backlistcount.md)
   The number of items that precede the current item in the back-forward list.
-- [func back(withLimit: Int32) -> [Any]!](webbackforwardlist/back(withlimit:).md)
+- [func back(withLimit: Int32) -> [Any]!](./back%28withlimit%29.md)
   Returns the items that precede the current item in the back-forward list, up to the specified number of items.
-- [var currentItem: WebHistoryItem!](webbackforwardlist/currentitem.md)
+- [var currentItem: WebHistoryItem!](./currentitem.md)
   The current item in the back-forward list.
-- [func item(at: Int32) -> WebHistoryItem!](webbackforwardlist/item(at:).md)
+- [func item(at: Int32) -> WebHistoryItem!](./item%28at%29.md)
   Returns the item at the specified index in the back-forward list.
-- [var forwardItem: WebHistoryItem!](webbackforwardlist/forwarditem.md)
+- [var forwardItem: WebHistoryItem!](./forwarditem.md)
   The item that follows the current item in the back-forward list.
-- [var forwardListCount: Int32](webbackforwardlist/forwardlistcount.md)
+- [var forwardListCount: Int32](./forwardlistcount.md)
   The number of items that follow the current item in the back-forward list.
-- [func forwardList(withLimit: Int32) -> [Any]!](webbackforwardlist/forwardlist(withlimit:).md)
+- [func forwardList(withLimit: Int32) -> [Any]!](./forwardlist%28withlimit%29.md)
   Returns the items that follow the current item in the back-forward list, up to the specified number of items.
 
 

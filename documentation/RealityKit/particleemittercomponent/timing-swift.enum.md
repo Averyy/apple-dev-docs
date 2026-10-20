@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.Timing
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options for specifying the duration of the particle effects, used by the timing property.
 
@@ -22,20 +23,20 @@ enum Timing
 ## Topics
 
 ### Structures
-- [ParticleEmitterComponent.Timing.VariableDuration](particleemittercomponent/timing-swift.enum/variableduration.md)
+- [ParticleEmitterComponent.Timing.VariableDuration](./timing-swift.enum/variableduration.md)
   Duration along with an optional variation used to define an amount of time.
 ### Enumeration Cases
-- [case once(warmUp: TimeInterval?, emit: ParticleEmitterComponent.Timing.VariableDuration)](particleemittercomponent/timing-swift.enum/once(warmup:emit:).md)
+- [case once(warmUp: TimeInterval?, emit: ParticleEmitterComponent.Timing.VariableDuration)](./timing-swift.enum/once%28warmup,emit%29.md)
   Emits for the given `emit` duration and then stops, `warmUp` determines how long the simulation should appear to have run before first appearing.
-- [case repeating(warmUp: TimeInterval?, emit: ParticleEmitterComponent.Timing.VariableDuration, idle: ParticleEmitterComponent.Timing.VariableDuration?)](particleemittercomponent/timing-swift.enum/repeating(warmup:emit:idle:).md)
+- [case repeating(warmUp: TimeInterval?, emit: ParticleEmitterComponent.Timing.VariableDuration, idle: ParticleEmitterComponent.Timing.VariableDuration?)](./timing-swift.enum/repeating%28warmup,emit,idle%29.md)
   Emits for the given `emit` duration, and waits `idle` seconds before looping, `warmUp` determines how long the simulation should appear to have run before first appearing.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
 
 
 ---

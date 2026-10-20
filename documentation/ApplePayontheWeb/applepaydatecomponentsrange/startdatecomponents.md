@@ -1,7 +1,8 @@
 # startDateComponents
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The start date and time of the range.
 
@@ -11,15 +12,16 @@ The start date and time of the range.
 
 ## Declaration
 
-```swift
+```
 required ApplePayDateComponents startDateComponents;
 ```
 
 ## See Also
 
-- [endDateComponents](applepaydatecomponentsrange/enddatecomponents.md)
+### Start and End Dates of the Range
+- [endDateComponents](./enddatecomponents.md)
   The end date and time of the range.
-- [ApplePayDateComponents](applepaydatecomponents.md)
+- [ApplePayDateComponents](../applepaydatecomponents.md)
   A dictionary that specifies the values for the calendrical units for a date.
 
 

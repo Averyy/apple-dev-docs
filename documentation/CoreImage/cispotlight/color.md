@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The color of the spotlight.
@@ -11,7 +12,7 @@ The color of the spotlight.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,17 +21,22 @@ The color of the spotlight.
 var color: CIColor { get set }
 ```
 
+```objc
+@property (nonatomic, retain) CIColor * color;
+```
+
 ## See Also
 
-- [var brightness: Float](cispotlight/brightness.md)
+### Instance Properties
+- [var brightness: Float](./brightness.md)
   The brightness of the spotlight.
-- [var concentration: Float](cispotlight/concentration.md)
+- [var concentration: Float](./concentration.md)
   The size of the spotlight.
-- [var inputImage: CIImage?](cispotlight/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var lightPointsAt: CIVector](cispotlight/lightpointsat.md)
+- [var lightPointsAt: CIVector](./lightpointsat.md)
   The x and y position that the spotlight points at.
-- [var lightPosition: CIVector](cispotlight/lightposition.md)
+- [var lightPosition: CIVector](./lightposition.md)
   The x and y position of the spotlight.
 
 

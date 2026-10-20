@@ -1,7 +1,8 @@
 # readAttributeTemperatureDisplayMode(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeTemperatureDisplayMode(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeTemperatureDisplayMode() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeTemperatureDisplayModeWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

@@ -1,23 +1,28 @@
 # value(forKey:)
 
 **Framework**: SceneKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the object previously associated with the current transaction using the specified key.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 class func value(forKey key: String) -> Any?
+```
+
+```objc
++ (id) valueForKey:(NSString *) key;
 ```
 
 #### Return Value
@@ -34,7 +39,8 @@ Nested transactions have nested data scope. Setting a value for a key associates
 
 ## See Also
 
-- [class func setValue(Any?, forKey: String)](scntransaction/setvalue(_:forkey:).md)
+### Getting and Setting Transaction Properties
+- [class func setValue(Any?, forKey: String)](./setvalue%28_,forkey%29.md)
   Associates an arbitrary object with the current transaction using the specified key.
 
 

@@ -1,7 +1,8 @@
 # files
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Assistant schema conformance for app intents that offer file management functionality.
 
@@ -19,6 +20,8 @@ Assistant schema conformance for app intents that offer file management function
 ```swift
 static var files: some AssistantSchemas.FilesIntent { get }
 ```
+
+Available when `Self` is `AssistantSchemas.IntentSchema`.
 
 
 ---

@@ -1,7 +1,8 @@
 # GCKeyPower
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The keyboard code for the Power key.
 
@@ -19,37 +20,42 @@ The keyboard code for the Power key.
 let GCKeyPower: String
 ```
 
+```c
+extern NSString * const GCKeyPower;
+```
+
 ## See Also
 
-- [let GCKeyTab: String](gckeytab.md)
+### Punctuation and Command Keys
+- [let GCKeyTab: String](./gckeytab.md)
   The keyboard code for the Tab key.
-- [let GCKeySpacebar: String](gckeyspacebar.md)
+- [let GCKeySpacebar: String](./gckeyspacebar.md)
   The keyboard code for the Space Bar key.
-- [let GCKeyHyphen: String](gckeyhyphen.md)
+- [let GCKeyHyphen: String](./gckeyhyphen.md)
   The keyboard code for the - or _ key.
-- [let GCKeyEqualSign: String](gckeyequalsign.md)
+- [let GCKeyEqualSign: String](./gckeyequalsign.md)
   The keyboard code for the = or + key.
-- [let GCKeyOpenBracket: String](gckeyopenbracket.md)
+- [let GCKeyOpenBracket: String](./gckeyopenbracket.md)
   The keyboard code for the [ or { key.
-- [let GCKeyCloseBracket: String](gckeyclosebracket.md)
+- [let GCKeyCloseBracket: String](./gckeyclosebracket.md)
   The keyboard code for the ] or } key.
-- [let GCKeyBackslash: String](gckeybackslash.md)
+- [let GCKeyBackslash: String](./gckeybackslash.md)
   The keyboard code for the \ or | key.
-- [let GCKeyNonUSPound: String](gckeynonuspound.md)
+- [let GCKeyNonUSPound: String](./gckeynonuspound.md)
   The keyboard code for the non-US Pound or _ key.
-- [let GCKeySemicolon: String](gckeysemicolon.md)
+- [let GCKeySemicolon: String](./gckeysemicolon.md)
   The keyboard code for the ; or : key.
-- [let GCKeyQuote: String](gckeyquote.md)
+- [let GCKeyQuote: String](./gckeyquote.md)
   The keyboard code for the ’ or “ key.
-- [let GCKeyGraveAccentAndTilde: String](gckeygraveaccentandtilde.md)
+- [let GCKeyGraveAccentAndTilde: String](./gckeygraveaccentandtilde.md)
   The keyboard code for the Grave Accent or Tilde key.
-- [let GCKeyComma: String](gckeycomma.md)
+- [let GCKeyComma: String](./gckeycomma.md)
   The keyboard code for the Comma or < key.
-- [let GCKeyPeriod: String](gckeyperiod.md)
+- [let GCKeyPeriod: String](./gckeyperiod.md)
   The keyboard code for the Period or > key.
-- [let GCKeySlash: String](gckeyslash.md)
+- [let GCKeySlash: String](./gckeyslash.md)
   The keyboard code for the / or ? key.
-- [let GCKeyCapsLock: String](gckeycapslock.md)
+- [let GCKeyCapsLock: String](./gckeycapslock.md)
   The keyboard code for the Caps Lock key.
 
 

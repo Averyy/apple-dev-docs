@@ -1,7 +1,8 @@
 # emailAddress
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The type that represents email addresses.
 
@@ -22,25 +23,26 @@ static let emailAddress: DataDetector.MatchType
 
 ## See Also
 
-- [static let all: DataDetector.MatchType](datadetector/matchtype/all.md)
+### Known entity types
+- [static let all: DataDetector.MatchType](./all.md)
   A set of types that includes all publicly useable types.
-- [static let link: DataDetector.MatchType](datadetector/matchtype/link.md)
+- [static let link: DataDetector.MatchType](./link.md)
   The type that represents links, not limited to web links.
-- [static let phoneNumber: DataDetector.MatchType](datadetector/matchtype/phonenumber.md)
+- [static let phoneNumber: DataDetector.MatchType](./phonenumber.md)
   The type that represents phone numbers.
-- [static let postalAddress: DataDetector.MatchType](datadetector/matchtype/postaladdress.md)
+- [static let postalAddress: DataDetector.MatchType](./postaladdress.md)
   The type that represents postal addresses.
-- [static let calendarEvent: DataDetector.MatchType](datadetector/matchtype/calendarevent.md)
+- [static let calendarEvent: DataDetector.MatchType](./calendarevent.md)
   The type that represents calendar events, such as dates and times, or date and time ranges.
-- [static let moneyAmount: DataDetector.MatchType](datadetector/matchtype/moneyamount.md)
+- [static let moneyAmount: DataDetector.MatchType](./moneyamount.md)
   The type that represents monetary amounts.
-- [static let measurement: DataDetector.MatchType](datadetector/matchtype/measurement.md)
+- [static let measurement: DataDetector.MatchType](./measurement.md)
   The type that represents measurements, such as distances and weights.
-- [static let flightNumber: DataDetector.MatchType](datadetector/matchtype/flightnumber.md)
+- [static let flightNumber: DataDetector.MatchType](./flightnumber.md)
   The type that represents flight numbers.
-- [static let shipmentTrackingNumber: DataDetector.MatchType](datadetector/matchtype/shipmenttrackingnumber.md)
+- [static let shipmentTrackingNumber: DataDetector.MatchType](./shipmenttrackingnumber.md)
   The type that represents shipment tracking numbers.
-- [static let paymentIdentifier: DataDetector.MatchType](datadetector/matchtype/paymentidentifier.md)
+- [static let paymentIdentifier: DataDetector.MatchType](./paymentidentifier.md)
   The type that represents payment identifiers, such as Universal Payments Interface (UPI) identifiers.
 
 

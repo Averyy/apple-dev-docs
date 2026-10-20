@@ -1,7 +1,8 @@
 # vDSP_vsmul
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Multiplies a single-precision scalar value by a single-precision vector.
 
@@ -10,7 +11,7 @@ Multiplies a single-precision scalar value by a single-precision vector.
 
 ## Declaration
 
-```swift
+```c
 void vDSP_vsmul(const float *__A, vDSP_Stride __IA, const float *__B, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
@@ -27,7 +28,7 @@ The operation is:
     C[n] = A[n] * B;
 ```
 
-The following code shows an example of using [`vDSP_vsmul`](https://developer.apple.com/documentation/accelerate/vdsp_vsmul):
+The following code shows an example of using [`vDSP_vsmul`](../Accelerate/vdsp_vsmul.md):
 
 ```swift
 let stride = vDSP_Stride(1)
@@ -60,15 +61,16 @@ print(c)
 
 ## See Also
 
-- [vDSP_vadd](1532191-vdsp_vadd.md)
+### Vector Arithmetic Functions
+- [vDSP_vadd](./api-1532191-vdsp_vadd.md)
   Adds two single-precision vectors.
-- [vDSP_vma](1532193-vdsp_vma.md)
+- [vDSP_vma](./api-1532193-vdsp_vma.md)
   Adds a single-precision vector to the product of two single-precision vectors.
-- [vDSP_vsub](1532189-vdsp_vsub.md)
+- [vDSP_vsub](./api-1532189-vdsp_vsub.md)
   Subtracts two single-precision vectors.
-- [vDSP_vmul](1532206-vdsp_vmul.md)
+- [vDSP_vmul](./api-1532206-vdsp_vmul.md)
   Multiplies two single-precision vectors.
-- [vDSP_vdiv](1532168-vdsp_vdiv.md)
+- [vDSP_vdiv](./api-1532168-vdsp_vdiv.md)
   Divides two single-precision vectors.
 
 

@@ -1,7 +1,8 @@
 # ASCredentialRequestType.oneTimeCode
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The app or website is requesting a one-time passcode.
 
@@ -18,17 +19,22 @@ The app or website is requesting a one-time passcode.
 case oneTimeCode
 ```
 
+```c
+ASCredentialRequestTypeOneTimeCode
+```
+
 ## Mentions
 
-- [Providing one-time passcodes to AutoFill](providing-one-time-passcodes-to-autofill.md)
+- [Providing one-time passcodes to AutoFill](../providing-one-time-passcodes-to-autofill.md)
 
 ## See Also
 
-- [ASCredentialRequestType.passkeyAssertion](ascredentialrequesttype/passkeyassertion.md)
+### Credential types
+- [ASCredentialRequestType.passkeyAssertion](./passkeyassertion.md)
   The app or website is requesting a passkey assertion credential.
-- [ASCredentialRequestType.passkeyRegistration](ascredentialrequesttype/passkeyregistration.md)
+- [ASCredentialRequestType.passkeyRegistration](./passkeyregistration.md)
   The app or website is requesting a passkey registration credential.
-- [ASCredentialRequestType.password](ascredentialrequesttype/password.md)
+- [ASCredentialRequestType.password](./password.md)
   The app or website is requesting a password credential.
 
 

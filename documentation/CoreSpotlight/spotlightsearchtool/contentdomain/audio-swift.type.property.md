@@ -1,7 +1,8 @@
 # audio
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Music, podcasts, voice memos, and other audio content.
 
@@ -20,9 +21,10 @@ static var audio: SpotlightSearchTool.ContentDomain { get }
 
 ## See Also
 
-- [static func audio(SpotlightSearchTool.ContentDomain.Audio) -> SpotlightSearchTool.ContentDomain](spotlightsearchtool/contentdomain/audio(_:).md)
+### Getting the audio domain
+- [static func audio(SpotlightSearchTool.ContentDomain.Audio) -> SpotlightSearchTool.ContentDomain](./audio%28_%29.md)
   Music, podcasts, voice memos, and other audio content with custom attribute mapping.
-- [SpotlightSearchTool.ContentDomain.Audio](spotlightsearchtool/contentdomain/audio-swift.struct.md)
+- [SpotlightSearchTool.ContentDomain.Audio](./audio-swift.struct.md)
   Attribute mapping for the audio domain.
 
 

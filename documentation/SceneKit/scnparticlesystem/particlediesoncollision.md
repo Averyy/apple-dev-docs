@@ -1,18 +1,19 @@
 # particleDiesOnCollision
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether particles are removed from the scene upon colliding with another object.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,39 +21,44 @@ A Boolean value that determines whether particles are removed from the scene upo
 var particleDiesOnCollision: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL particleDiesOnCollision;
+```
+
 #### Discussion
 
-This property has no effect if the [`colliderNodes`](scnparticlesystem/collidernodes.md) array is empty or contains no nodes with attached geometry.
+This property has no effect if the [`colliderNodes`](./collidernodes.md) array is empty or contains no nodes with attached geometry.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false), specifying that particles remain in the scene after a collision. The [`particleBounce`](scnparticlesystem/particlebounce.md) and [`particleFriction`](scnparticlesystem/particlefriction.md) properties determine whether and how particles bounce or slide after colliding with a geometry.
+The default value is [`false`](../../Swift/false.md), specifying that particles remain in the scene after a collision. The [`particleBounce`](./particlebounce.md) and [`particleFriction`](./particlefriction.md) properties determine whether and how particles bounce or slide after colliding with a geometry.
 
 ## See Also
 
-- [var isAffectedByGravity: Bool](scnparticlesystem/isaffectedbygravity.md)
+### Simulating Physics for Particles
+- [var isAffectedByGravity: Bool](./isaffectedbygravity.md)
   A Boolean value that determines whether gravity, as defined by the scene’s physics simulation, affects the motion of particles.
-- [var isAffectedByPhysicsFields: Bool](scnparticlesystem/isaffectedbyphysicsfields.md)
+- [var isAffectedByPhysicsFields: Bool](./isaffectedbyphysicsfields.md)
   A Boolean value that determines whether physics fields in the scene affect the motion of particles.
-- [var colliderNodes: [SCNNode]?](scnparticlesystem/collidernodes.md)
+- [var colliderNodes: [SCNNode]?](./collidernodes.md)
   The nodes whose geometry the system’s particles can collide with.
-- [var acceleration: SCNVector3](scnparticlesystem/acceleration.md)
+- [var acceleration: SCNVector3](./acceleration.md)
   The constant acceleration vector, in units per second per second, applied to all particles in the system. Animatable.
-- [var dampingFactor: CGFloat](scnparticlesystem/dampingfactor.md)
+- [var dampingFactor: CGFloat](./dampingfactor.md)
   A factor that slows particles relative to their velocity. Animatable.
-- [var particleMass: CGFloat](scnparticlesystem/particlemass.md)
+- [var particleMass: CGFloat](./particlemass.md)
   The mass, in kilograms, of each particle in the system. Animatable.
-- [var particleMassVariation: CGFloat](scnparticlesystem/particlemassvariation.md)
+- [var particleMassVariation: CGFloat](./particlemassvariation.md)
   The range, in kilograms, of randomized particle masses. Animatable.
-- [var particleCharge: CGFloat](scnparticlesystem/particlecharge.md)
+- [var particleCharge: CGFloat](./particlecharge.md)
   The electric charge, in coulombs, of each particle in the system. Animatable.
-- [var particleChargeVariation: CGFloat](scnparticlesystem/particlechargevariation.md)
+- [var particleChargeVariation: CGFloat](./particlechargevariation.md)
   The range, in coulombs, of randomized particle charges. Animatable.
-- [var particleBounce: CGFloat](scnparticlesystem/particlebounce.md)
+- [var particleBounce: CGFloat](./particlebounce.md)
   The restitution coefficient of each particle in the system. Animatable.
-- [var particleBounceVariation: CGFloat](scnparticlesystem/particlebouncevariation.md)
+- [var particleBounceVariation: CGFloat](./particlebouncevariation.md)
   The range of randomized restitution coefficients for particles. Animatable.
-- [var particleFriction: CGFloat](scnparticlesystem/particlefriction.md)
+- [var particleFriction: CGFloat](./particlefriction.md)
   The friction coefficient of each particle in the system. Animatable.
-- [var particleFrictionVariation: CGFloat](scnparticlesystem/particlefrictionvariation.md)
+- [var particleFrictionVariation: CGFloat](./particlefrictionvariation.md)
   The range of randomized friction coefficients for particles. Animatable.
 
 

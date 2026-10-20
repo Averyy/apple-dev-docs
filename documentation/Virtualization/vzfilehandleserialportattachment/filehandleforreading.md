@@ -1,7 +1,8 @@
 # fileHandleForReading
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The file handle that the guest operating system uses to read data.
 
@@ -14,13 +15,18 @@ The file handle that the guest operating system uses to read data.
 var fileHandleForReading: FileHandle? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) NSFileHandle * fileHandleForReading;
+```
+
 #### Discussion
 
 When you want to send data to the guest operating system, write data to the file handle in this property.
 
 ## See Also
 
-- [var fileHandleForWriting: FileHandle?](vzfilehandleserialportattachment/filehandleforwriting.md)
+### Getting the file handles
+- [var fileHandleForWriting: FileHandle?](./filehandleforwriting.md)
   The file handle that the guest operating system uses to write data.
 
 

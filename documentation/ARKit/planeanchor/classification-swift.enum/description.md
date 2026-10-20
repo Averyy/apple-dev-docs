@@ -1,12 +1,13 @@
 # description
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of PlaneAnchor.Classification
 
 **Availability**:
-- visionOS 1.0+
+- visionOS 1.0+ - Deprecated in 26.0 (renamed: SurfaceClassification)
 
 ## Declaration
 

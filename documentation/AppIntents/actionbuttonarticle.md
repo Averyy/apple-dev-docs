@@ -1,6 +1,7 @@
 # Responding to the Action button on Apple Watch Ultra
 
-**Framework**: App Intents
+**Framework**: App Intents  
+**Role**: Article
 
 Use App Intents to register actions for your app.
 
@@ -10,21 +11,21 @@ On Apple Watch Ultra, people can specify the action that the system performs whe
 
 For workout apps, you can implement the following protocols:
 
-- **[`StartWorkoutIntent`](startworkoutintent.md)**: Starts a workout session when someone first presses the Action button.
-- **[`AppIntent`](appintent.md)**: Runs a custom action when someone presses the Action button during your app’s active workout session. Donating an intent sets the Action button’s next action. Your app can have only one next action at a time; however, donating a new intent changes the next action.
-- **[`PauseWorkoutIntent`](pauseworkoutintent.md)**: Pauses the current workout session when someone simultaneously presses the Action button and the side button during a workout session.
-- **[`ResumeWorkoutIntent`](resumeworkoutintent.md)**: Resumes the current workout session when someone simultaneously presses the Action button and the side button while a workout session is in a paused state.
+- **[`StartWorkoutIntent`](./startworkoutintent.md)**: Starts a workout session when someone first presses the Action button.
+- **[`AppIntent`](./appintent.md)**: Runs a custom action when someone presses the Action button during your app’s active workout session. Donating an intent sets the Action button’s next action. Your app can have only one next action at a time; however, donating a new intent changes the next action.
+- **[`PauseWorkoutIntent`](./pauseworkoutintent.md)**: Pauses the current workout session when someone simultaneously presses the Action button and the side button during a workout session.
+- **[`ResumeWorkoutIntent`](./resumeworkoutintent.md)**: Resumes the current workout session when someone simultaneously presses the Action button and the side button while a workout session is in a paused state.
 
 For dive apps, you can implement the following protocols:
 
-- **[`StartDiveIntent`](startdiveintent.md)**: Starts a dive session when someone first presses the Action button.
-- **[`AppIntent`](appintent.md)**: Runs a custom action when someone presses the Action button during your app’s active dive session. The system also performs the next action if someone simultaneously presses the Action button and the side button. Donating an intent sets the Action button’s next action. Your app can have only one next action at a time; however, donating a new intent changes the next action.
+- **[`StartDiveIntent`](./startdiveintent.md)**: Starts a dive session when someone first presses the Action button.
+- **[`AppIntent`](./appintent.md)**: Runs a custom action when someone presses the Action button during your app’s active dive session. The system also performs the next action if someone simultaneously presses the Action button and the side button. Donating an intent sets the Action button’s next action. Your app can have only one next action at a time; however, donating a new intent changes the next action.
 
-> ❗ **Important**: When creating intents for the Action button, don’t implement them in an [`AppIntentsExtension`](appintentsextension.md). Always implement the intents directly in your watchOS app.
+> ❗ **Important**: When creating intents for the Action button, don’t implement them in an [`AppIntentsExtension`](./appintentsextension.md). Always implement the intents directly in your watchOS app.
 
-##### Start a New Workout Session
+##### Start a new workout session
 
-Start by creating either an [`AppEnum`](appenum.md) or an [`AppEntity`](appentity.md) that defines the types of workouts that your app supports. If your app supports only a single workout, you can create an enumeration with a single case. Also define the display representation for each type of workout that your app supports. Apple Watch Ultra shows the case description’s title and subtitle below the First Press settings when someone sets your app as the workout app in Settings > Action Button.
+Start by creating either an [`AppEnum`](./appenum.md) or an [`AppEntity`](./appentity.md) that defines the types of workouts that your app supports. If your app supports only a single workout, you can create an enumeration with a single case. Also define the display representation for each type of workout that your app supports. Apple Watch Ultra shows the case description’s title and subtitle below the First Press settings when someone sets your app as the workout app in Settings > Action Button.
 
 ```swift
 enum WorkoutEnum: String, AppEnum {
@@ -40,7 +41,7 @@ enum WorkoutEnum: String, AppEnum {
 }
 ```
 
-Next, create a structure that adopts the [`StartWorkoutIntent`](startworkoutintent.md) protocol. Your implementation needs to define the intent’s [`title`](appintent/title.md), a list of [`suggestedWorkouts`](startworkoutintent/suggestedworkouts.md), and a parameter that contains the [`workoutStyle`](startworkoutintent/workoutstyle-swift.property.md).
+Next, create a structure that adopts the [`StartWorkoutIntent`](./startworkoutintent.md) protocol. Your implementation needs to define the intent’s [`title`](./appintent/title.md), a list of [`suggestedWorkouts`](./startworkoutintent/suggestedworkouts.md), and a parameter that contains the [`workoutStyle`](./startworkoutintent/workoutstyle-swift.property.md).
 
 ```swift
 struct MyStartWorkoutIntent: StartWorkoutIntent {
@@ -65,9 +66,9 @@ struct MyStartWorkoutIntent: StartWorkoutIntent {
 }
 ```
 
-> ❗ **Important**: Define your implementation’s `workoutStyle` property using the [`AppIntent.Parameter`](appintent/parameter.md) property wrapper.
+> ❗ **Important**: Define your implementation’s `workoutStyle` property using the [`AppIntent.Parameter`](./appintent/parameter.md) property wrapper.
 
-You can dynamically change the list of suggested workouts by changing the value of the [`suggestedWorkouts`](startworkoutintent/suggestedworkouts.md) property and then calling [`invalidateSuggestedWorkouts()`](startworkoutintent/invalidatesuggestedworkouts().md), which tells the system to reread the suggested workouts.
+You can dynamically change the list of suggested workouts by changing the value of the [`suggestedWorkouts`](./startworkoutintent/suggestedworkouts.md) property and then calling [`invalidateSuggestedWorkouts()`](./startworkoutintent/invalidatesuggestedworkouts%28%29.md), which tells the system to reread the suggested workouts.
 
 Next, set the display strings for the intent by defining the `displayRepresentation` just after the intent’s initializer.
 
@@ -78,7 +79,7 @@ var displayRepresentation: DisplayRepresentation {
 }
 ```
 
-Then, implement your intent’s [`perform()`](appintent/perform().md) method. The system calls this method when anything starts the intent. In your implementation, you have 30 seconds to start a workout session and return a successful value. If you don’t start a workout session in that time, the system displays an error message, but the app remains in the foreground. People can start a workout session directly from the app, but without a session, the app goes to the background the next time they drop their wrist.
+Then, implement your intent’s [`perform()`](./appintent/perform%28%29.md) method. The system calls this method when anything starts the intent. In your implementation, you have 30 seconds to start a workout session and return a successful value. If you don’t start a workout session in that time, the system displays an error message, but the app remains in the foreground. People can start a workout session directly from the app, but without a session, the app goes to the background the next time they drop their wrist.
 
 ```swift
 // Define the method that the system calls when it performs the intent.
@@ -109,9 +110,9 @@ The start workout intent becomes available as soon as someone downloads your app
 
 Similarly, if you update your app and change the data types that the workout session uses, someone can launch the updated workout from the Action button without launching your app.
 
-To ensure that your app requests authorization for the current set of HealthKit data types it intends to use during its workout sessions, you need to schedule an authorization request from within your intent’s [`perform()`](appintent/perform().md) method. Because someone using your app doesn’t have access to its user interface until after the `perform()` method returns, you need to schedule the request authorization using a [`Task`](https://developer.apple.com/documentation/swift/task).
+To ensure that your app requests authorization for the current set of HealthKit data types it intends to use during its workout sessions, you need to schedule an authorization request from within your intent’s [`perform()`](./appintent/perform%28%29.md) method. Because someone using your app doesn’t have access to its user interface until after the `perform()` method returns, you need to schedule the request authorization using a [`Task`](../Swift/task.md).
 
-> **Note**: If your app has never requested authorization for any HealthKit data types, the system just launches your app when someone presses the Action button. It doesn’t call your intent’s [`perform()`](appintent/perform().md) method.
+> **Note**: If your app has never requested authorization for any HealthKit data types, the system just launches your app when someone presses the Action button. It doesn’t call your intent’s [`perform()`](./appintent/perform%28%29.md) method.
 
 Before authorizing the HealthKit data, create and start your workout session.
 
@@ -204,19 +205,19 @@ func startCollectingData() async throws {
 
 In the code example above, the last line donates the `MyMarkLapIntent()` as the next action for the Action button. Donating the next action is described in more detail below.
 
-After implementing your [`StartWorkoutIntent`](startworkoutintent.md), build and run your app to load it onto the test device or Simulator. Then, on the test device, choose Settings > Action Button. Tap Action and choose Workout, then tap App and choose your app.
+After implementing your [`StartWorkoutIntent`](./startworkoutintent.md), build and run your app to load it onto the test device or Simulator. Then, on the test device, choose Settings > Action Button. Tap Action and choose Workout, then tap App and choose your app.
 
-![A screenshot from Apple Watch Ultra showing the Action button settings, with](/images/com.apple.AppIntents/Setting-A-Workout-Action@2x.png)
+![A screenshot from Apple Watch Ultra showing the Action button settings, with](https://developer.apple.com/tutorials/images/com.apple.AppIntents/Setting-A-Workout-Action@2x.png)
 
 The device starts a new workout session when you press the Action button.
 
-> ❗ **Important**: The system always launches your app before running the [`perform()`](appintent/perform().md) method for your [`StartWorkoutIntent`](startworkoutintent.md) or [`StartDiveIntent`](startdiveintent.md) structures.  By default, these intents set their [`openAppWhenRun`](appintent/openappwhenrun.md) property to `true`. To ensure these intents run as expected, don’t change the property’s value.
+> ❗ **Important**: The system always launches your app before running the [`perform()`](./appintent/perform%28%29.md) method for your [`StartWorkoutIntent`](./startworkoutintent.md) or [`StartDiveIntent`](./startdiveintent.md) structures.  By default, these intents set their [`openAppWhenRun`](./appintent/openappwhenrun.md) property to `true`. To ensure these intents run as expected, don’t change the property’s value.
 
-##### Support Multiple Workout Types
+##### Support multiple workout types
 
 Your app can provide a list of suggested workout types, letting people associate a particular workout type with the Action button.
 
-To suggest multiple workout types, start by defining the different types of workouts that your app supports in your [`AppEnum`](appenum.md) implementation.
+To suggest multiple workout types, start by defining the different types of workouts that your app supports in your [`AppEnum`](./appenum.md) implementation.
 
 ```swift
 enum WorkoutEnum: String, AppEnum {
@@ -244,7 +245,7 @@ static var caseDisplayRepresentations: [WorkoutEnum: DisplayRepresentation] =
 ]
 ```
 
-Next, in your [`StartWorkoutIntent`](startworkoutintent.md) implementation, define the set of suggested workouts.
+Next, in your [`StartWorkoutIntent`](./startworkoutintent.md) implementation, define the set of suggested workouts.
 
 ```swift
 static var suggestedWorkouts: [MyStartWorkoutIntent] =
@@ -254,7 +255,7 @@ static var suggestedWorkouts: [MyStartWorkoutIntent] =
  MyStartWorkoutIntent(style: .cycling)]
 ```
 
-Then, in the [`perform()`](appintent/perform().md) method, check the intent’s [`workoutStyle`](startworkoutintent/workoutstyle-swift.property.md) and create the corresponding workout session.
+Then, in the [`perform()`](./appintent/perform%28%29.md) method, check the intent’s [`workoutStyle`](./startworkoutintent/workoutstyle-swift.property.md) and create the corresponding workout session.
 
 ```swift
 func perform() async throws -> some IntentResult {
@@ -324,15 +325,15 @@ let typesToRead: Set = [
 
 Build and run your app again. When you open the Action button settings, you can specify a particular workout for the First Press > Workout setting.
 
-![A screenshot from Apple Watch Ultra showing the Action button’s First Press](/images/com.apple.AppIntents/Specifying-The-Workout-Type@2x.png)
+![A screenshot from Apple Watch Ultra showing the Action button’s First Press](https://developer.apple.com/tutorials/images/com.apple.AppIntents/Specifying-The-Workout-Type@2x.png)
 
 And pressing the Action button launches the selected type of workout.
 
-##### Donate the Next Action
+##### Donate the next action
 
 Apple Watch Ultra runs the next action when someone presses the Action button while a workout or dive session is already running. This means the first time someone presses the Action button, the system starts your session. If they press the Action button any other time during the session, it performs the next action.
 
-To set the next action, implement a structure that adopts the [`AppIntent`](appintent.md) protocol.
+To set the next action, implement a structure that adopts the [`AppIntent`](./appintent.md) protocol.
 
 ```swift
 struct MarkLapIntent: AppIntent {
@@ -346,9 +347,9 @@ struct MarkLapIntent: AppIntent {
 }
 ```
 
-This intent needs a [`title`](appintent/title.md) property that provides a localized description of the action, and a [`perform()`](appintent/perform().md) method, which the system calls when it performs the intent.
+This intent needs a [`title`](./appintent/title.md) property that provides a localized description of the action, and a [`perform()`](./appintent/perform%28%29.md) method, which the system calls when it performs the intent.
 
-Next, donate the app intent as the current session’s next action. For example, in your start workout intent’s `perform()` method, you can donate the next action for the new session by returning [`result(actionButtonIntent:)`](intentresult/result(actionbuttonintent:).md).
+Next, donate the app intent as the current session’s next action. For example, in your start workout intent’s `perform()` method, you can donate the next action for the new session by returning [`result(actionButtonIntent:)`](./intentresult/result%28actionbuttonintent%29.md).
 
 However, in most cases you want to donate a next action regardless of whether the user presses the Action button or launches the session from within your app. To ensure that your app donates the correct intent, simply return `.result()` from your start intent, and then donate the next intent as soon as the session starts.
 
@@ -361,11 +362,11 @@ try await MyStartWorkoutIntent().donate(result: .result(actionButtonIntent: MyMa
 
 You can donate as many action intents as you need; however, your app can use only the most recently donated intent as the next action. Donating a new intent changes the next action.
 
-##### Pause and Resume a Workout
+##### Pause and resume a workout
 
 Apple Watch Ultra supports pausing and resuming a current workout session by simultaneously pressing both the Action button and the side button.
 
-To implement the pause action, create a structure that adopts the [`PauseWorkoutIntent`](pauseworkoutintent.md) protocol.
+To implement the pause action, create a structure that adopts the [`PauseWorkoutIntent`](./pauseworkoutintent.md) protocol.
 
 ```swift
 struct MyPauseWorkoutIntent: PauseWorkoutIntent {
@@ -379,9 +380,9 @@ struct MyPauseWorkoutIntent: PauseWorkoutIntent {
 }
 ```
 
-This intent needs a [`title`](appintent/title.md) property that provides a localized description of the action, and a [`perform()`](appintent/perform().md) method, which the system calls when it performs the intent.
+This intent needs a [`title`](./appintent/title.md) property that provides a localized description of the action, and a [`perform()`](./appintent/perform%28%29.md) method, which the system calls when it performs the intent.
 
-Similarly, to implement the resume action, create a structure that adopts the [`ResumeWorkoutIntent`](resumeworkoutintent.md) protocol.
+Similarly, to implement the resume action, create a structure that adopts the [`ResumeWorkoutIntent`](./resumeworkoutintent.md) protocol.
 
 ```swift
 struct MyResumeWorkoutIntent: ResumeWorkoutIntent {
@@ -397,9 +398,9 @@ struct MyResumeWorkoutIntent: ResumeWorkoutIntent {
 
 If your app doesn’t implement structures that adopt these protocols, the system ignores simultaneous presses.
 
-##### Start a New Dive Session
+##### Start a new dive session
 
-Dive sessions work similarly to workout sessions. To start a dive session, implement a structure that adopts the [`StartDiveIntent`](startdiveintent.md) protocol. Typically, people start the dive session just before entering the water. Your app can then donate App Intents that help them use your app while in the water. For example, while in the water they can’t use the touch screen, but the Action button and Digital Crown function normally.
+Dive sessions work similarly to workout sessions. To start a dive session, implement a structure that adopts the [`StartDiveIntent`](./startdiveintent.md) protocol. Typically, people start the dive session just before entering the water. Your app can then donate App Intents that help them use your app while in the water. For example, while in the water they can’t use the touch screen, but the Action button and Digital Crown function normally.
 
 ```swift
 struct MyStartDiveSessionIntent: StartDiveIntent {
@@ -415,19 +416,19 @@ struct MyStartDiveSessionIntent: StartDiveIntent {
 }
 ```
 
-This intent needs a [`title`](appintent/title.md) property that provides a localized description of the action, and a [`perform()`](appintent/perform().md) method, which the system calls when it performs the intent.
+This intent needs a [`title`](./appintent/title.md) property that provides a localized description of the action, and a [`perform()`](./appintent/perform%28%29.md) method, which the system calls when it performs the intent.
 
-To read live depth, water pressure, and water temperature data, see [`Accessing submersion data`](https://developer.apple.com/documentation/coremotion/accessing-submersion-data).
+To read live depth, water pressure, and water temperature data, see [Accessing submersion data](../CoreMotion/accessing-submersion-data.md).
 
-> ❗ **Important**: Before you can access live dive data, your app needs to include an entitlement to access submersion data. For more information, see [`Express interest in the Submerged Depth and Pressure API`](https://developer.apple.comhttps://developer.apple.com/contact/request/submerged-depth-pressure-api/).
+> ❗ **Important**: Before you can access live dive data, your app needs to include an entitlement to access submersion data. For more information, see [Express interest in the Submerged Depth and Pressure API](https://developer.apple.com/contact/request/submerged-depth-pressure-api/).
 
 Unlike workout sessions, the start dive intent supports only a single type of session. You can donate next actions for your dive session; however, you can’t create intents to pause or resume the session.
 
-##### Passing Data to the Intents
+##### Passing data to the intents
 
 The previous examples use singleton objects to share data between the different parts of your app; however, App Intents support dependency injection, letting you define the data in your main app, and access it in your intents.
 
-In your intents, create a property that uses the [`AppDependency`](appdependency.md) property wrapper.
+In your intents, create a property that uses the [`AppDependency`](./appdependency.md) property wrapper.
 
 ```swift
 struct MyStartWorkoutIntent: StartWorkoutIntent {
@@ -437,19 +438,19 @@ struct MyStartWorkoutIntent: StartWorkoutIntent {
 }
 ```
 
-Then, as early as possible when your app launches, use the [`AppDependencyManager`](appdependencymanager.md) to define the dependency.
+Then, as early as possible when your app launches, use the [`AppDependencyManager`](./appdependencymanager.md) to define the dependency.
 
 ```swift
 AppDependencyManager.shared.add { MyWorkoutManager() }
 ```
 
-You can set the dependency in your app’s [`applicationDidFinishLaunching()`](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationdidfinishlaunching()) method. Or, if your app uses SwiftUI life cycles, add an `init()` method to your [`App`](https://developer.apple.com/documentation/swiftui/app) structure, and set it there.
+You can set the dependency in your app’s [`applicationDidFinishLaunching()`](../WatchKit/wkapplicationdelegate/applicationdidfinishlaunching%28%29.md) method. Or, if your app uses SwiftUI life cycles, add an `init()` method to your [`App`](../SwiftUI/app.md) structure, and set it there.
 
 One of the main advantages of dependency injection is that you can easily replace your main data object with a mock object during testing.
 
 > **Note**: You can only use dependency injection to pass data objects from your main app to its intents. If you need to pass the data to other parts of your app, you need to use a different approach.
 
-##### Debug Intents
+##### Debug intents
 
 To see console output and respond to breakpoints in Xcode, use the following steps to debug your intents:
 
@@ -462,7 +463,8 @@ Any logging from your intents appears in Xcode’s console. The system also paus
 
 ## See Also
 
-- [struct ConfirmationActionName](confirmationactionname.md)
+### Action button
+- [struct ConfirmationActionName](./confirmationactionname.md)
 
 
 ---

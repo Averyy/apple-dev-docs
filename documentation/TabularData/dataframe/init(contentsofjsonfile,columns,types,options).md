@@ -1,7 +1,8 @@
 # init(contentsOfJSONFile:columns:types:options:)
 
 **Framework**: TabularData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a data frame by reading a JSON file.
 
@@ -24,14 +25,14 @@ init(contentsOfJSONFile url: URL, columns: [String]? = nil, types: [String : JSO
 
 The JSON file should contain a sequence of objects where each object contains a value for every column name. Here’s an example with two columns “id” and “name”:
 
-```None
+```
 [
   {"id": 1, "name": "foo"},
   {"id": 2, "name": "bar"},
 ]
 ```
 
-> **Note**: A `JSONReadingError` instance.
+> **Throws**: A `JSONReadingError` instance.
 
 ## Parameters
 
@@ -42,11 +43,12 @@ The JSON file should contain a sequence of objects where each object contains a 
 
 ## See Also
 
-- [init(jsonData: Data, columns: [String]?, types: [String : JSONType], options: JSONReadingOptions) throws](dataframe/init(jsondata:columns:types:options:).md)
+### Creating a Data Frame from a JSON File
+- [init(jsonData: Data, columns: [String]?, types: [String : JSONType], options: JSONReadingOptions) throws](./init%28jsondata,columns,types,options%29.md)
   Creates a data frame by converting JSON data.
-- [enum JSONType](jsontype.md)
+- [enum JSONType](../jsontype.md)
   Represents the value types in a JSON file.
-- [struct JSONReadingOptions](jsonreadingoptions.md)
+- [struct JSONReadingOptions](../jsonreadingoptions.md)
   A set of JSON file-reading options.
 
 

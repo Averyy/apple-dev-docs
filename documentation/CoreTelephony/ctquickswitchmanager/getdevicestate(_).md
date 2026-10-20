@@ -1,7 +1,8 @@
 # getDeviceState(_:)
 
 **Framework**: Core Telephony  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the quick switch state of the current device.
 
@@ -13,18 +14,27 @@ Gets the quick switch state of the current device.
 ## Declaration
 
 ```swift
+func getDeviceState(_ completionHandler: @escaping @Sendable (CTQuickSwitchState, (any Error)?) -> Void)
+```
+
+```swift
 var deviceState: CTQuickSwitchState { get async throws }
+```
+
+```objc
+- (void) getDeviceState:(void (^)(CTQuickSwitchState state, NSError *error)) completionHandler;
 ```
 
 ## Parameters
 
-- `completionHandler`: A completion handler the framework calls after processing the request. The parameters passed to the completion handler indicate the [`CTQuickSwitchState`](ctquickswitchstate.md) and an error value that indicates whether the request succeeded, failed, or ended in an unknown state.
+- `completionHandler`: A completion handler the framework calls after processing the request. The parameters passed to the completion handler indicate the [`CTQuickSwitchState`](../ctquickswitchstate.md) and an error value that indicates whether the request succeeded, failed, or ended in an unknown state.
 
 ## See Also
 
-- [func getPhoneNumberState(forSuffix: String, completion: (CTQuickSwitchState, (any Error)?) -> Void)](ctquickswitchmanager/getphonenumberstate(forsuffix:completion:).md)
+### Checking the state of a device
+- [func getPhoneNumberState(forSuffix: String, completion: (CTQuickSwitchState, (any Error)?) -> Void)](./getphonenumberstate%28forsuffix,completion%29.md)
   Queries the quick switch state for a phone number whose suffix matches the provided phone number suffix.
-- [enum CTQuickSwitchState](ctquickswitchstate.md)
+- [enum CTQuickSwitchState](../ctquickswitchstate.md)
   Values that describe a device’s quick switch status.
 
 

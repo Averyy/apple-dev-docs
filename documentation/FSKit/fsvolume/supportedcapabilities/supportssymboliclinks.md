@@ -1,7 +1,8 @@
 # supportsSymbolicLinks
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean property that indicates whether the volume supports symbolic links.
 
@@ -14,9 +15,14 @@ A Boolean property that indicates whether the volume supports symbolic links.
 var supportsSymbolicLinks: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL supportsSymbolicLinks;
+```
+
 ## See Also
 
-- [var supportsHardLinks: Bool](fsvolume/supportedcapabilities/supportshardlinks.md)
+### Declaring linking capabilities
+- [var supportsHardLinks: Bool](./supportshardlinks.md)
   A Boolean property that indicates whether the volume supports hard links.
 
 

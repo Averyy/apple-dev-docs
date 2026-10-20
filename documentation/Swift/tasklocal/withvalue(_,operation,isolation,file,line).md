@@ -1,7 +1,8 @@
 # withValue(_:operation:isolation:file:line:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -11,6 +12,8 @@
 - tvOS 13.0+
 - visionOS 1.0+
 - watchOS 6.0+
+
+> **Deprecated**: Prefer the 'nonisolated(nonsending)' overload with stricter execution on caller context semantics: withValue(_:operation:file:line:)
 
 ## Declaration
 

@@ -1,14 +1,15 @@
 # tDeviceRequestDirection
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 typedef enum tDeviceRequestDirection : unsigned int {
     ...
 } tDeviceRequestDirection;
@@ -17,8 +18,8 @@ typedef enum tDeviceRequestDirection : unsigned int {
 ## Topics
 
 ### Constants
-- [kRequestDirectionIn](tdevicerequestdirection/krequestdirectionin.md)
-- [kRequestDirectionOut](tdevicerequestdirection/krequestdirectionout.md)
+- [kRequestDirectionIn](./tdevicerequestdirection/krequestdirectionin.md)
+- [kRequestDirectionOut](./tdevicerequestdirection/krequestdirectionout.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # CMPedometerEventType
 
 **Framework**: Core Motion  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating the change that occurred to the user’s pedestrian activity.
 
@@ -19,31 +20,36 @@ Constants indicating the change that occurred to the user’s pedestrian activit
 enum CMPedometerEventType
 ```
 
+```c
+enum CMPedometerEventType : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [CMPedometerEventType.pause](cmpedometereventtype/pause.md)
+- [CMPedometerEventType.pause](./cmpedometereventtype/pause.md)
   The user’s pedestrian activity stopped.
-- [CMPedometerEventType.resume](cmpedometereventtype/resume.md)
+- [CMPedometerEventType.resume](./cmpedometereventtype/resume.md)
   The user’s pedestrian activity resumed.
 ### Initializers
-- [init?(rawValue: Int)](cmpedometereventtype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cmpedometereventtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var date: Date](cmpedometerevent/date.md)
+### Pedometer Data
+- [var date: Date](./cmpedometerevent/date.md)
   The date on which the pedometer event was recorded.
-- [var type: CMPedometerEventType](cmpedometerevent/type.md)
+- [var type: CMPedometerEventType](./cmpedometerevent/type.md)
   The type of change that occurred.
 
 

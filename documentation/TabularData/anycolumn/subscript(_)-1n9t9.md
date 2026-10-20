@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: TabularData  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses a contiguous subrange of the elements.
 
@@ -26,7 +27,8 @@ subscript(range: Range<Int>) -> AnyColumnSlice { get set }
 
 ## See Also
 
-- [subscript(Int) -> Any?](anycolumn/subscript(_:)-6z1b5.md)
+### Accessing Elements
+- [subscript(Int) -> Any?](./subscript%28_%29-6z1b5.md)
   Accesses an element at an index.
 
 

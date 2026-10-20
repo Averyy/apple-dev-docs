@@ -1,9 +1,10 @@
 # GKMeshGraphTriangulationMode
 
 **Framework**: GameplayKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-Options for how to place graph nodes when generating the graph, used by the [`triangulationMode`](gkmeshgraph/triangulationmode.md) property.
+Options for how to place graph nodes when generating the graph, used by the [`triangulationMode`](./gkmeshgraph/triangulationmode.md) property.
 
 **Availability**:
 - iOS 9.0+
@@ -19,34 +20,39 @@ Options for how to place graph nodes when generating the graph, used by the [`tr
 struct GKMeshGraphTriangulationMode
 ```
 
+```c
+enum GKMeshGraphTriangulationMode : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [static var vertices: GKMeshGraphTriangulationMode](gkmeshgraphtriangulationmode/vertices.md)
+- [static var vertices: GKMeshGraphTriangulationMode](./gkmeshgraphtriangulationmode/vertices.md)
   An option to place graph nodes at each vertex in the generated mesh.
-- [static var centers: GKMeshGraphTriangulationMode](gkmeshgraphtriangulationmode/centers.md)
+- [static var centers: GKMeshGraphTriangulationMode](./gkmeshgraphtriangulationmode/centers.md)
   An option to place graph nodes at the center of each polygon in the generated mesh.
-- [static var edgeMidpoints: GKMeshGraphTriangulationMode](gkmeshgraphtriangulationmode/edgemidpoints.md)
+- [static var edgeMidpoints: GKMeshGraphTriangulationMode](./gkmeshgraphtriangulationmode/edgemidpoints.md)
   An option to place graph nodes at the midpoint of each in the generated mesh.
 ### Initializers
-- [init(rawValue: UInt)](gkmeshgraphtriangulationmode/init(rawvalue:).md)
+- [init(rawValue: UInt)](./gkmeshgraphtriangulationmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [struct GKTriangle](gktriangle.md)
-  The definition of a triangle in the mesh, available with the [`triangle(at:)`](gkmeshgraph/triangle(at:).md) method.
+### Constants
+- [struct GKTriangle](./gktriangle.md)
+  The definition of a triangle in the mesh, available with the [`triangle(at:)`](./gkmeshgraph/triangle%28at%29.md) method.
 
 
 ---

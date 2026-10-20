@@ -1,7 +1,8 @@
 # pushController(withName:context:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Pushes a new interface controller onto the screen.
 
@@ -14,9 +15,13 @@ Pushes a new interface controller onto the screen.
 func pushController(withName name: String, context: Any?)
 ```
 
+```objc
+- (void) pushControllerWithName:(NSString *) name context:(id) context;
+```
+
 ## Mentions
 
-- [Navigating Between Scenes](navigating-between-scenes.md)
+- [Navigating Between Scenes](../navigating-between-scenes.md)
 
 #### Discussion
 
@@ -24,7 +29,7 @@ Use this method to perform a navigation-style transition to the specified interf
 
 Always call this method from your WatchKit extension’s main thread.
 
-> **Note**:  If Item Pagination  is enabled, do not use this method to respond to the selection of a table row. Use [`performSegue(forRow:)`](wkinterfacetable/performsegue(forrow:).md)  instead.
+> **Note**:  If Item Pagination  is enabled, do not use this method to respond to the selection of a table row. Use [`performSegue(forRow:)`](../wkinterfacetable/performsegue%28forrow%29.md)  instead.
 
 ## Parameters
 
@@ -33,9 +38,10 @@ Always call this method from your WatchKit extension’s main thread.
 
 ## See Also
 
-- [func pop()](wkinterfacecontroller/pop.md)
+### Implementing a navigation interface
+- [func pop()](./pop%28%29.md)
   Pops the current interface controller from the screen.
-- [func popToRootController()](wkinterfacecontroller/poptorootcontroller.md)
+- [func popToRootController()](./poptorootcontroller%28%29.md)
   Pops all interface controllers except the app’s initial interface controller.
 
 

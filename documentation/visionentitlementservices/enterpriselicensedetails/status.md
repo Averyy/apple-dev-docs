@@ -1,7 +1,8 @@
 # EnterpriseLicenseDetails.Status
 
 **Framework**: VisionEntitlementServices  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - visionOS 26.0+
@@ -15,23 +16,24 @@ enum Status
 ## Topics
 
 ### Enumeration Cases
-- [EnterpriseLicenseDetails.Status.expired](enterpriselicensedetails/status/expired.md)
-- [EnterpriseLicenseDetails.Status.invalidFormat](enterpriselicensedetails/status/invalidformat.md)
-- [EnterpriseLicenseDetails.Status.notAuthorized](enterpriselicensedetails/status/notauthorized.md)
-- [EnterpriseLicenseDetails.Status.notFound](enterpriselicensedetails/status/notfound.md)
-- [EnterpriseLicenseDetails.Status.valid](enterpriselicensedetails/status/valid.md)
+- [EnterpriseLicenseDetails.Status.expired](./status/expired.md)
+- [EnterpriseLicenseDetails.Status.invalidFormat](./status/invalidformat.md)
+- [EnterpriseLicenseDetails.Status.notAuthorized](./status/notauthorized.md)
+- [EnterpriseLicenseDetails.Status.notFound](./status/notfound.md)
+- [EnterpriseLicenseDetails.Status.valid](./status/valid.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [class EnterpriseLicenseDetails](enterpriselicensedetails.md)
+### Reading license state
+- [class EnterpriseLicenseDetails](../enterpriselicensedetails.md)
   Class to retrieve and inspect information relating to visionOS Enterprise License and Managed Entitlement status and validity.
-- [EnterpriseLicenseDetails.EnterpriseEntitlement](enterpriselicensedetails/enterpriseentitlement.md)
+- [EnterpriseLicenseDetails.EnterpriseEntitlement](./enterpriseentitlement.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kCDTrackInfoAddressTypeLBA](1645347-anonymous/kcdtrackinfoaddresstypelba.md)
-- [kCDTrackInfoAddressTypeSessionNumber](1645347-anonymous/kcdtrackinfoaddresstypesessionnumber.md)
-- [kCDTrackInfoAddressTypeTrackNumber](1645347-anonymous/kcdtrackinfoaddresstypetracknumber.md)
+- [kCDTrackInfoAddressTypeLBA](./api-1645347-anonymous/kcdtrackinfoaddresstypelba.md)
+- [kCDTrackInfoAddressTypeSessionNumber](./api-1645347-anonymous/kcdtrackinfoaddresstypesessionnumber.md)
+- [kCDTrackInfoAddressTypeTrackNumber](./api-1645347-anonymous/kcdtrackinfoaddresstypetracknumber.md)
 
 
 ---

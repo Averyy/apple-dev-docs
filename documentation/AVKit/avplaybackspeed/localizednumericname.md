@@ -1,7 +1,8 @@
 # localizedNumericName
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized numeric name for a speed that’s suitable for display in a user interface.
 
@@ -19,15 +20,20 @@ A localized numeric name for a speed that’s suitable for display in a user int
 var localizedNumericName: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * localizedNumericName;
+```
+
 #### Discussion
 
-Use this value to represent the speed in a user interface where limited space is available. Represent the speed using its [`localizedName`](avplaybackspeed/localizedname.md) value where space allows.
+Use this value to represent the speed in a user interface where limited space is available. Represent the speed using its [`localizedName`](./localizedname.md) value where space allows.
 
 ## See Also
 
-- [var rate: Float](avplaybackspeed/rate.md)
+### Inspecting speed details
+- [var rate: Float](./rate.md)
   The playback rate to use when you select this speed.
-- [var localizedName: String](avplaybackspeed/localizedname.md)
+- [var localizedName: String](./localizedname.md)
   A localized name for a speed that’s suitable for display in a user interface.
 
 

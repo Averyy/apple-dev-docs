@@ -1,7 +1,8 @@
 # AudioVariant
 
 **Framework**: MusicKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Variants that indicate the quality of audio available for an item.
 
@@ -23,32 +24,32 @@ enum AudioVariant
 ## Topics
 
 ### Enumeration Cases
-- [AudioVariant.dolbyAtmos](audiovariant/dolbyatmos.md)
+- [AudioVariant.dolbyAtmos](./audiovariant/dolbyatmos.md)
   Dolby Atmos is an immersive audio experience that surrounds you with sound from all sides, including above.
-- [AudioVariant.dolbyAudio](audiovariant/dolbyaudio.md)
+- [AudioVariant.dolbyAudio](./audiovariant/dolbyaudio.md)
   Dolby Audio is a surround sound format that includes Dolby 5.1 and 7.1.
-- [AudioVariant.highResolutionLossless](audiovariant/highresolutionlossless.md)
+- [AudioVariant.highResolutionLossless](./audiovariant/highresolutionlossless.md)
   Hi-Res Lossless uses Apple Lossless Audio Codec (ALAC) for bit-for-bit accuracy up to 24-bit/192 kHz.
-- [AudioVariant.lossless](audiovariant/lossless.md)
+- [AudioVariant.lossless](./audiovariant/lossless.md)
   Lossless uses Apple Lossless Audio Codec (ALAC) for bit-for-bit accuracy up to 24-bit/48 kHz.
-- [AudioVariant.lossyStereo](audiovariant/lossystereo.md)
+- [AudioVariant.lossyStereo](./audiovariant/lossystereo.md)
   Lossy stereo uses compression used to store sound data.
-- [AudioVariant.spatialAudio](audiovariant/spatialaudio.md)
+- [AudioVariant.spatialAudio](./audiovariant/spatialaudio.md)
   Spatial audio is a fallback mode if the content is Dolby Atmos or Dolby Audio, but hardware capabilities don’t support them.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

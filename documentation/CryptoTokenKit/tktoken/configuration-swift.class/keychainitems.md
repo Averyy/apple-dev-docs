@@ -1,7 +1,8 @@
 # keychainItems
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The keychain items associated with this token.
 
@@ -20,11 +21,16 @@ The keychain items associated with this token.
 var keychainItems: [TKTokenKeychainItem] { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) NSArray<__kindof TKTokenKeychainItem *> * keychainItems;
+```
+
 ## See Also
 
-- [func certificate(for: TKToken.ObjectID) throws -> TKTokenKeychainCertificate](tktoken/configuration-swift.class/certificate(for:).md)
+### Retrieving Keys and Certificates
+- [func certificate(for: TKToken.ObjectID) throws -> TKTokenKeychainCertificate](./certificate%28for%29.md)
   Returns a certificate from the keychain with the object identifier you specify.
-- [func key(for: TKToken.ObjectID) throws -> TKTokenKeychainKey](tktoken/configuration-swift.class/key(for:).md)
+- [func key(for: TKToken.ObjectID) throws -> TKTokenKeychainKey](./key%28for%29.md)
   Returns a key from the keychain with the object identifier you specify.
 
 

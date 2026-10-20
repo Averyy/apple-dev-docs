@@ -1,7 +1,8 @@
 # iso8601WithTimeZone(includingFractionalSeconds:dateSeparator:dateTimeSeparator:timeSeparator:timeZoneSeparator:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a regex component that matches an ISO 8601-formatted date string that includes a time zone component, capturing the matched substring as a Foundation date.
 
@@ -20,15 +21,17 @@ Creates a regex component that matches an ISO 8601-formatted date string that in
 static func iso8601WithTimeZone(includingFractionalSeconds: Bool = false, dateSeparator: Date.ISO8601FormatStyle.DateSeparator = .dash, dateTimeSeparator: Date.ISO8601FormatStyle.DateTimeSeparator = .standard, timeSeparator: Date.ISO8601FormatStyle.TimeSeparator = .colon, timeZoneSeparator: Date.ISO8601FormatStyle.TimeZoneSeparator = .omitted) -> Self
 ```
 
+Available when `Self` is `Date.ISO8601FormatStyle`.
+
 #### Return Value
 
-A `RegexComponent` that matches ISO 8601-formatted date substrings as Foundation [`Date`](https://developer.apple.com/documentation/foundation/date) instances.
+A `RegexComponent` that matches ISO 8601-formatted date substrings as Foundation [`Date`](../../Foundation/date.md) instances.
 
 #### Discussion
 
 This method matches an ISO 8601 date string using the provided separator characters.
 
-The following example creates a [`Regex`](regex.md) that matches an ISO 8601-formatted date. The format looks for a dash for the date separator, the standard date/time separator (none), a colon for the time separator, and no separator for the time zone. It then matches this regex against a source string containing a date with this format (specifying a time zone five hours behind UTC), some whitespace, a substring, more whitespace, and a currency value.
+The following example creates a [`Regex`](../regex.md) that matches an ISO 8601-formatted date. The format looks for a dash for the date separator, the standard date/time separator (none), a colon for the time separator, and no separator for the time zone. It then matches this regex against a source string containing a date with this format (specifying a time zone five hours behind UTC), some whitespace, a substring, more whitespace, and a currency value.
 
 ```swift
 let iso860Source = "2022-07-14T21:10:15-05:00   Lemon-lime slushie      $1.99"
@@ -53,24 +56,25 @@ let date = match?.1 // date == Jul 14, 2022 at 7:10 PM (may vary depending on cu
 ## Parameters
 
 - `includingFractionalSeconds`: A Boolean value that specifies whether the source string contains fractional seconds. The default is `false`.
-- `dateSeparator`: The character that separates year, month, and day sections of the date substring. The default is [`Date.ISO8601FormatStyle.DateSeparator.dash`](https://developer.apple.com/documentation/foundation/date/iso8601formatstyle/dateseparator-swift.enum/dash).
-- `dateTimeSeparator`: The character that separates the date and time sections of the substring. The default is [`Date.ISO8601FormatStyle.DateTimeSeparator.standard`](https://developer.apple.com/documentation/foundation/date/iso8601formatstyle/datetimeseparator-swift.enum/standard).
-- `timeSeparator`: The character that separates the date and time sections of the substring. The default is [`Date.ISO8601FormatStyle.TimeSeparator.colon`](https://developer.apple.com/documentation/foundation/date/iso8601formatstyle/timeseparator-swift.enum/colon).
-- `timeZoneSeparator`: The character that separates the hour, minute, and second sections of the substring. The default is [`Date.ISO8601FormatStyle.TimeSeparator.colon`](https://developer.apple.com/documentation/foundation/date/iso8601formatstyle/timeseparator-swift.enum/colon)
+- `dateSeparator`: The character that separates year, month, and day sections of the date substring. The default is [`Date.ISO8601FormatStyle.DateSeparator.dash`](../../Foundation/date/iso8601formatstyle/dateseparator-swift.enum/dash.md).
+- `dateTimeSeparator`: The character that separates the date and time sections of the substring. The default is [`Date.ISO8601FormatStyle.DateTimeSeparator.standard`](../../Foundation/date/iso8601formatstyle/datetimeseparator-swift.enum/standard.md).
+- `timeSeparator`: The character that separates the date and time sections of the substring. The default is [`Date.ISO8601FormatStyle.TimeSeparator.colon`](../../Foundation/date/iso8601formatstyle/timeseparator-swift.enum/colon.md).
+- `timeZoneSeparator`: The character that separates the hour, minute, and second sections of the substring. The default is [`Date.ISO8601FormatStyle.TimeSeparator.colon`](../../Foundation/date/iso8601formatstyle/timeseparator-swift.enum/colon.md)
 
 ## See Also
 
-- [static func date(Date.FormatStyle.DateStyle, locale: Locale, timeZone: TimeZone, calendar: Calendar?) -> Date.ParseStrategy](regexcomponent/date(_:locale:timezone:calendar:).md)
+### Matching dates and times
+- [static func date(Date.FormatStyle.DateStyle, locale: Locale, timeZone: TimeZone, calendar: Calendar?) -> Date.ParseStrategy](./date%28_,locale,timezone,calendar%29.md)
   Creates a regex component that matches a localized date string formatted in accordance with a style, capturing it as a Foundation date.
-- [static func date(format: Date.FormatString, locale: Locale, timeZone: TimeZone, calendar: Calendar?, twoDigitStartDate: Date) -> Self](regexcomponent/date(format:locale:timezone:calendar:twodigitstartdate:).md)
+- [static func date(format: Date.FormatString, locale: Locale, timeZone: TimeZone, calendar: Calendar?, twoDigitStartDate: Date) -> Self](./date%28format,locale,timezone,calendar,twodigitstartdate%29.md)
   Creates a regex component that matches a localized date string formatted in accordance with a format string, capturing it as a Foundation date.
-- [static func dateTime(date: Date.FormatStyle.DateStyle, time: Date.FormatStyle.TimeStyle, locale: Locale, timeZone: TimeZone, calendar: Calendar?) -> Date.ParseStrategy](regexcomponent/datetime(date:time:locale:timezone:calendar:).md)
+- [static func dateTime(date: Date.FormatStyle.DateStyle, time: Date.FormatStyle.TimeStyle, locale: Locale, timeZone: TimeZone, calendar: Calendar?) -> Date.ParseStrategy](./datetime%28date,time,locale,timezone,calendar%29.md)
   Creates a regex component that matches a localized date and time string, capturing it as a Foundation date.
-- [static var iso8601: Date.ISO8601FormatStyle](regexcomponent/iso8601.md)
+- [static var iso8601: Date.ISO8601FormatStyle](./iso8601.md)
   A regex component that matches a default ISO 8601-formatted date string, capturing it as a Foundation date.
-- [static func iso8601Date(timeZone: TimeZone, dateSeparator: Date.ISO8601FormatStyle.DateSeparator) -> Self](regexcomponent/iso8601date(timezone:dateseparator:).md)
+- [static func iso8601Date(timeZone: TimeZone, dateSeparator: Date.ISO8601FormatStyle.DateSeparator) -> Self](./iso8601date%28timezone,dateseparator%29.md)
   Creates a regex component that matches an ISO 8601-formatted date string, capturing it as a Foundation date in the specified time zone.
-- [static func iso8601(timeZone: TimeZone, includingFractionalSeconds: Bool, dateSeparator: Date.ISO8601FormatStyle.DateSeparator, dateTimeSeparator: Date.ISO8601FormatStyle.DateTimeSeparator, timeSeparator: Date.ISO8601FormatStyle.TimeSeparator) -> Self](regexcomponent/iso8601(timezone:includingfractionalseconds:dateseparator:datetimeseparator:timeseparator:).md)
+- [static func iso8601(timeZone: TimeZone, includingFractionalSeconds: Bool, dateSeparator: Date.ISO8601FormatStyle.DateSeparator, dateTimeSeparator: Date.ISO8601FormatStyle.DateTimeSeparator, timeSeparator: Date.ISO8601FormatStyle.TimeSeparator) -> Self](./iso8601%28timezone,includingfractionalseconds,dateseparator,datetimeseparator,timeseparator%29.md)
   Creates a regex component that matches an ISO 8601-formatted date string, capturing the matched substring as a Foundation date in the specified time zone.
 
 

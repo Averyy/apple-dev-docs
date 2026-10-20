@@ -1,7 +1,8 @@
 # secondaryScale
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,14 +18,19 @@
 var secondaryScale: Float { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) float secondaryScale;
+```
+
 ## See Also
 
-- [var bias: Float](mpsimagearithmetic/bias.md)
-- [var primaryScale: Float](mpsimagearithmetic/primaryscale.md)
-- [var primaryStrideInPixels: MTLSize](mpsimagearithmetic/primarystrideinpixels.md)
-- [var secondaryStrideInPixels: MTLSize](mpsimagearithmetic/secondarystrideinpixels.md)
-- [var maximumValue: Float](mpsimagearithmetic/maximumvalue.md)
-- [var minimumValue: Float](mpsimagearithmetic/minimumvalue.md)
+### Instance Properties
+- [var bias: Float](./bias.md)
+- [var primaryScale: Float](./primaryscale.md)
+- [var primaryStrideInPixels: MTLSize](./primarystrideinpixels.md)
+- [var secondaryStrideInPixels: MTLSize](./secondarystrideinpixels.md)
+- [var maximumValue: Float](./maximumvalue.md)
+- [var minimumValue: Float](./minimumvalue.md)
 
 
 ---

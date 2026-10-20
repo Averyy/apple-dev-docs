@@ -1,12 +1,15 @@
 # SecTransformSetAttribute(_:_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets a static value for an attribute in a transform.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 12.0
+
+> **Deprecated**: SecTransform is no longer supported
 
 ## Declaration
 
@@ -14,20 +17,24 @@ Sets a static value for an attribute in a transform.
 func SecTransformSetAttribute(_ transformRef: SecTransform, _ key: CFString, _ value: CFTypeRef, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Bool
 ```
 
+```c
+extern Boolean SecTransformSetAttribute(SecTransformRef transformRef, CFStringRef key, CFTypeRef value, CFErrorRef*error);
+```
+
 #### Return Value
 
-A Boolean set to [`true`](https://developer.apple.com/documentation/swift/true) if the call succeeds. Otherwise, the `error` parameter contains information about the failure.
+A Boolean set to [`true`](../Swift/true.md) if the call succeeds. Otherwise, the `error` parameter contains information about the failure.
 
 #### Discussion
 
-This function is useful for things like iteration counts and other non-changing values. It returns an error and the named attribute is not changed if [`SecTransformExecute(_:_:)`](sectransformexecute(_:_:).md) has already been called on the transform.
+This function is useful for things like iteration counts and other non-changing values. It returns an error and the named attribute is not changed if [`SecTransformExecute(_:_:)`](./sectransformexecute%28_,_%29.md) has already been called on the transform.
 
-Compare this function with the [`SecTransformConnectTransforms(_:_:_:_:_:_:)`](sectransformconnecttransforms(_:_:_:_:_:_:).md) function which sets derived data.
+Compare this function with the [`SecTransformConnectTransforms(_:_:_:_:_:_:)`](./sectransformconnecttransforms%28_,_,_,_,_,_%29.md) function which sets derived data.
 
 ## Parameters
 
 - `transformRef`: The transform whose attribute is to be set.
-- `key`: The name of the attribute to be set. See [`Transform Attributes`](transform-attributes.md) for a list of valid keys and possible values.
+- `key`: The name of the attribute to be set. See [Transform Attributes](./transform-attributes.md) for a list of valid keys and possible values.
 - `value`: The static value to set for the named attribute.
 - `error`: A pointer that the function uses to provide an error object with details if an error occurs. The caller becomes responsible for the object’s memory. Pass `NULL` to ignore the error.
 

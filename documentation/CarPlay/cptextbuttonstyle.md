@@ -1,7 +1,8 @@
 # CPTextButtonStyle
 
 **Framework**: CarPlay  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The styles a button can apply to its title to communicate its action.
 
@@ -16,31 +17,36 @@ The styles a button can apply to its title to communicate its action.
 enum CPTextButtonStyle
 ```
 
+```c
+enum CPTextButtonStyle : NSInteger;
+```
+
 ## Topics
 
 ### Button Text Styles
-- [CPTextButtonStyle.normal](cptextbuttonstyle/normal.md)
+- [CPTextButtonStyle.normal](./cptextbuttonstyle/normal.md)
   A style that indicates the button performs an action other than to confirm or cancel.
-- [CPTextButtonStyle.confirm](cptextbuttonstyle/confirm.md)
+- [CPTextButtonStyle.confirm](./cptextbuttonstyle/confirm.md)
   A style that indicates the button confirms an action and changes data.
-- [CPTextButtonStyle.cancel](cptextbuttonstyle/cancel.md)
+- [CPTextButtonStyle.cancel](./cptextbuttonstyle/cancel.md)
   A style that indicates the button cancels an action and doesn’t change data.
 ### Initializers
-- [init?(rawValue: Int)](cptextbuttonstyle/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cptextbuttonstyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var textStyle: CPTextButtonStyle](cptextbutton/textstyle.md)
+### Managing the Button Style
+- [var textStyle: CPTextButtonStyle](./cptextbutton/textstyle.md)
   The text style the button applies to its title.
 
 

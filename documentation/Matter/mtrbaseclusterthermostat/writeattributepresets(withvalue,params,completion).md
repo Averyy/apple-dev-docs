@@ -1,7 +1,8 @@
 # writeAttributePresets(withValue:params:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributePresets(withValue value: [Any], params: MTRWriteParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributePresets(withValue value: [Any], params: MTRWriteParams?) async throws
+```
+
+```objc
+- (void) writeAttributePresetsWithValue:(NSArray *) value params:(MTRWriteParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

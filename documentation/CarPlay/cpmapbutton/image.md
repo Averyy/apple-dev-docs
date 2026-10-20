@@ -1,7 +1,8 @@
 # image
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image to display on the button.
 
@@ -16,13 +17,18 @@ The image to display on the button.
 var image: UIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIImage * image;
+```
+
 #### Discussion
 
 This property doesn’t support animated images. If it’s set with an animated image, the button displays the first image in the animated sequence.
 
 ## See Also
 
-- [var focusedImage: UIImage?](cpmapbutton/focusedimage.md)
+### Providing Button Images
+- [var focusedImage: UIImage?](./focusedimage.md)
   The image to display when focus is on the button.
 
 

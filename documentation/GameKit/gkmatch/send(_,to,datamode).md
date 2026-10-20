@@ -1,7 +1,8 @@
 # send(_:to:dataMode:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Transmits data to one or more players connected to the match.
 
@@ -19,9 +20,13 @@ Transmits data to one or more players connected to the match.
 func send(_ data: Data, to players: [GKPlayer], dataMode mode: GKMatch.SendDataMode) throws
 ```
 
+```objc
+- (BOOL) sendData:(NSData *) data toPlayers:(NSArray<GKPlayer *> *) players dataMode:(GKMatchSendDataMode) mode error:(NSError **) error;
+```
+
 ## Mentions
 
-- [Exchanging data between players in real-time games](exchanging-data-between-players-in-real-time-games.md)
+- [Exchanging data between players in real-time games](../exchanging-data-between-players-in-real-time-games.md)
 
 #### Discussion
 
@@ -35,11 +40,12 @@ The match queues the data and transmits it when the network becomes available.
 
 ## See Also
 
-- [func chooseBestHostingPlayer(completionHandler: (GKPlayer?) -> Void)](gkmatch/choosebesthostingplayer(completionhandler:).md)
+### Sending data to other players
+- [func chooseBestHostingPlayer(completionHandler: (GKPlayer?) -> Void)](./choosebesthostingplayer%28completionhandler%29.md)
   Determines the best player in the game to act as the server for a client-server topology.
-- [func sendData(toAllPlayers: Data, with: GKMatch.SendDataMode) throws](gkmatch/senddata(toallplayers:with:).md)
+- [func sendData(toAllPlayers: Data, with: GKMatch.SendDataMode) throws](./senddata%28toallplayers,with%29.md)
   Transmits data to all players connected to the match.
-- [GKMatch.SendDataMode](gkmatch/senddatamode.md)
+- [GKMatch.SendDataMode](./senddatamode.md)
   The mechanism used to transmit data to other players.
 
 

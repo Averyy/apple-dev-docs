@@ -1,7 +1,8 @@
 # AppCategory.Relationships.Subcategories
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the resources.
 
@@ -10,14 +11,14 @@ The data and links that describe the relationship between the resources.
 
 ## Declaration
 
-```swift
+```
 object AppCategory.Relationships.Subcategories
 ```
 
 ## Topics
 
 ### Objects
-- [object AppCategory.Relationships.Subcategories.Data](appcategory/relationships-data.dictionary/subcategories-data.dictionary/data-data.dictionary.md)
+- [object AppCategory.Relationships.Subcategories.Data](./subcategories-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties
@@ -28,7 +29,8 @@ object AppCategory.Relationships.Subcategories
 
 ## See Also
 
-- [object AppCategory.Relationships.Parent](appcategory/relationships-data.dictionary/parent-data.dictionary.md)
+### Objects
+- [object AppCategory.Relationships.Parent](./parent-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 

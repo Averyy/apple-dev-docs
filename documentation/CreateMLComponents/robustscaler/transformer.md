@@ -1,7 +1,8 @@
 # RobustScaler.Transformer
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transformer that scales the input using statistics that are robust to outliers.
 
@@ -20,33 +21,35 @@ A transformer that scales the input using statistics that are robust to outliers
 struct Transformer
 ```
 
+Available when `Element` conforms to `BinaryFloatingPoint`, `Decodable`, and `Encodable`.
+
 ## Topics
 
 ### Creating a transformer
-- [init(median: Element, interQuartileRange: Element)](robustscaler/transformer/init(median:interquartilerange:).md)
+- [init(median: Element, interQuartileRange: Element)](./transformer/init%28median,interquartilerange%29.md)
   Creates a robust scaling transformer.
 ### Getting the properties
-- [var interQuartileRange: Element](robustscaler/transformer/interquartilerange.md)
+- [var interQuartileRange: Element](./transformer/interquartilerange.md)
   The interquartile rage  used for scaling.
-- [var median: Element](robustscaler/transformer/median.md)
+- [var median: Element](./transformer/median.md)
   The median used for offsetting.
 ### Performing the transformation
-- [func applied(to: Element, eventHandler: EventHandler?) -> Element](robustscaler/transformer/applied(to:eventhandler:).md)
+- [func applied(to: Element, eventHandler: EventHandler?) -> Element](./transformer/applied%28to,eventhandler%29.md)
   Scales the input values using the calculation `(input - median) / interQuartileRange`.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Transformer](transformer.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [Transformer](../transformer.md)
 
 
 ---

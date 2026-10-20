@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: RoomPlan  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A raw value for a configuration option.
 
@@ -17,7 +18,8 @@ let rawValue: Int
 
 ## See Also
 
-- [init(rawValue: Int)](roombuilder/configurationoptions/init(rawvalue:).md)
+### Creating a configuration option
+- [init(rawValue: Int)](./init%28rawvalue%29.md)
   Creates a configuration option with the specified raw value.
 
 

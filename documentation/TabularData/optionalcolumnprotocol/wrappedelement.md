@@ -2,6 +2,7 @@
 
 **Framework**: TabularData  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of the optional column type’s elements.

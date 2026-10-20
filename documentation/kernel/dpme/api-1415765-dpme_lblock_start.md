@@ -1,14 +1,15 @@
 # dpme_lblock_start
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 UInt32 dpme_lblock_start;
 ```
 

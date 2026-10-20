@@ -1,7 +1,8 @@
 # CAGradientLayerType
 
 **Framework**: Core Animation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 3.0+
@@ -17,42 +18,47 @@
 struct CAGradientLayerType
 ```
 
+```c
+typedef NSString * CAGradientLayerType;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: String)](cagradientlayertype/init(rawvalue:).md)
+- [init(rawValue: String)](./cagradientlayertype/init%28rawvalue%29.md)
 ### Type Properties
-- [static let axial: CAGradientLayerType](cagradientlayertype/axial.md)
+- [static let axial: CAGradientLayerType](./cagradientlayertype/axial.md)
   An axial gradient (also called a linear gradient) varies along an axis between two defined end points. All points that lie on a line perpendicular to the axis have the same color value.
-- [static let conic: CAGradientLayerType](cagradientlayertype/conic.md)
-- [static let radial: CAGradientLayerType](cagradientlayertype/radial.md)
+- [static let conic: CAGradientLayerType](./cagradientlayertype/conic.md)
+- [static let radial: CAGradientLayerType](./cagradientlayertype/radial.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CAAnimationCalculationMode](caanimationcalculationmode.md)
-- [struct CAAnimationRotationMode](caanimationrotationmode.md)
-- [struct CAEmitterLayerEmitterMode](caemitterlayeremittermode.md)
-- [struct CAEmitterLayerEmitterShape](caemitterlayeremittershape.md)
-- [struct CAEmitterLayerRenderMode](caemitterlayerrendermode.md)
-- [struct CALayerContentsFilter](calayercontentsfilter.md)
-- [struct CALayerContentsFormat](calayercontentsformat.md)
-- [struct CALayerContentsGravity](calayercontentsgravity.md)
-- [struct CALayerCornerCurve](calayercornercurve.md)
-- [struct CAMediaTimingFillMode](camediatimingfillmode.md)
-- [struct CAMediaTimingFunctionName](camediatimingfunctionname.md)
-- [struct CAScrollLayerScrollMode](cascrolllayerscrollmode.md)
-- [struct CAShapeLayerFillRule](cashapelayerfillrule.md)
-- [struct CAShapeLayerLineCap](cashapelayerlinecap.md)
-- [struct CAShapeLayerLineJoin](cashapelayerlinejoin.md)
+### Data Types
+- [struct CAAnimationCalculationMode](./caanimationcalculationmode.md)
+- [struct CAAnimationRotationMode](./caanimationrotationmode.md)
+- [struct CAEmitterLayerEmitterMode](./caemitterlayeremittermode.md)
+- [struct CAEmitterLayerEmitterShape](./caemitterlayeremittershape.md)
+- [struct CAEmitterLayerRenderMode](./caemitterlayerrendermode.md)
+- [struct CALayerContentsFilter](./calayercontentsfilter.md)
+- [struct CALayerContentsFormat](./calayercontentsformat.md)
+- [struct CALayerContentsGravity](./calayercontentsgravity.md)
+- [struct CALayerCornerCurve](./calayercornercurve.md)
+- [struct CAMediaTimingFillMode](./camediatimingfillmode.md)
+- [struct CAMediaTimingFunctionName](./camediatimingfunctionname.md)
+- [struct CAScrollLayerScrollMode](./cascrolllayerscrollmode.md)
+- [struct CAShapeLayerFillRule](./cashapelayerfillrule.md)
+- [struct CAShapeLayerLineCap](./cashapelayerlinecap.md)
+- [struct CAShapeLayerLineJoin](./cashapelayerlinejoin.md)
 
 
 ---

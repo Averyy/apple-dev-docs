@@ -1,7 +1,8 @@
 # setRenderingIntent(_:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the rendering intent in the current graphics state.
 
@@ -10,7 +11,7 @@ Sets the rendering intent in the current graphics state.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,23 +21,28 @@ Sets the rendering intent in the current graphics state.
 func setRenderingIntent(_ intent: CGColorRenderingIntent)
 ```
 
+```c
+extern void CGContextSetRenderingIntent(CGContextRef c, CGColorRenderingIntent intent);
+```
+
 #### Discussion
 
 The rendering intent specifies how to handle colors that are not located within the gamut of the destination color space of a graphics context. If you do not explicitly set the rendering intent, Core Graphics uses perceptual rendering intent when drawing sampled images and relative colorimetric rendering intent for all other drawing.
 
 ## Parameters
 
-- `intent`: A rendering intent constant—[`CGColorRenderingIntent.defaultIntent`](cgcolorrenderingintent/defaultintent.md), [`CGColorRenderingIntent.absoluteColorimetric`](cgcolorrenderingintent/absolutecolorimetric.md), [`CGColorRenderingIntent.relativeColorimetric`](cgcolorrenderingintent/relativecolorimetric.md), [`CGColorRenderingIntent.perceptual`](cgcolorrenderingintent/perceptual.md), or [`CGColorRenderingIntent.saturation`](cgcolorrenderingintent/saturation.md). For a discussion of these constants, see [`CGColorSpace`](cgcolorspace.md).
+- `intent`: A rendering intent constant—[`CGColorRenderingIntent.defaultIntent`](../cgcolorrenderingintent/defaultintent.md), [`CGColorRenderingIntent.absoluteColorimetric`](../cgcolorrenderingintent/absolutecolorimetric.md), [`CGColorRenderingIntent.relativeColorimetric`](../cgcolorrenderingintent/relativecolorimetric.md), [`CGColorRenderingIntent.perceptual`](../cgcolorrenderingintent/perceptual.md), or [`CGColorRenderingIntent.saturation`](../cgcolorrenderingintent/saturation.md). For a discussion of these constants, see [`CGColorSpace`](../cgcolorspace.md).
 
 ## See Also
 
-- [func flush()](cgcontext/flush.md)
+### Managing a Graphics Context
+- [func flush()](./flush%28%29.md)
   Forces all pending drawing operations in a window context to be rendered immediately to the destination device.
-- [func synchronize()](cgcontext/synchronize.md)
+- [func synchronize()](./synchronize%28%29.md)
   Marks a window context for update.
-- [func setBlendMode(CGBlendMode)](cgcontext/setblendmode(_:).md)
+- [func setBlendMode(CGBlendMode)](./setblendmode%28_%29.md)
   Sets how sample values are composited by a graphics context.
-- [enum CGBlendMode](cgblendmode.md)
+- [enum CGBlendMode](../cgblendmode.md)
   Compositing operations for images.
 
 

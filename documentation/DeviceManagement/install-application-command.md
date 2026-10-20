@@ -1,7 +1,8 @@
 # Install Application
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Install a third-party app on a device.
 
@@ -16,9 +17,9 @@ Install a third-party app on a device.
 
 ## Mentions
 
-- [Implementing Platform SSO for unattended device enrollment](implementing-platform-sso-for-unattended-device-enrollment.md)
-- [Migrating managed devices](migrating-managed-devices.md)
-- [Transferring management of apps to declarative management](transferring-management-of-apps-to-declarative-management.md)
+- [Implementing Platform SSO for unattended device enrollment](./implementing-platform-sso-for-unattended-device-enrollment.md)
+- [Migrating managed devices](./migrating-managed-devices.md)
+- [Transferring management of apps to declarative management](./transferring-management-of-apps-to-declarative-management.md)
 
 #### Discussion
 
@@ -38,7 +39,7 @@ Prior to iOS 16.0 and tvOS 16.0, this command would return `NotNow` when Setup A
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -48,7 +49,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Required access right | AllowAppInstallation |
 
-##### Example Request and Response
+##### Example request and response
 
 **Enterprise**:
 
@@ -152,9 +153,9 @@ This command installs an App Store app.
 ## Topics
 
 ### Commands and responses
-- [object InstallApplicationCommand](installapplicationcommand.md)
+- [object InstallApplicationCommand](./installapplicationcommand.md)
   The command to install a third-party app on a device.
-- [object InstallApplicationResponse](installapplicationresponse.md)
+- [object InstallApplicationResponse](./installapplicationresponse.md)
   A response from the device after it processes the command to install a third-party app on a device.
 
 ## Endpoint
@@ -163,27 +164,35 @@ This command installs an App Store app.
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `InstallApplicationCommand`
+
 The request object the server returns for the Install Application Command.
+
+## Responses
+
+- `200` OK (`InstallApplicationResponse`, `application/xml`): The response object the system returns for the Install Application Command.
 
 ## See Also
 
-- [Install Enterprise Application](install-enterprise-application-command.md)
+### Managed apps
+- [Install Enterprise Application](./install-enterprise-application-command.md)
   Install an enterprise app on a device.
-- [Installed Application List](installed-application-list-command.md)
+- [Installed Application List](./installed-application-list-command.md)
   Get a list of the installed apps on a device.
-- [Managed Application List](managed-application-list-command.md)
+- [Managed Application List](./managed-application-list-command.md)
   Get the status of all managed apps on a device.
-- [Remove Application](remove-application-command.md)
+- [Remove Application](./remove-application-command.md)
   Remove an app.
-- [Apply Redemption Code](apply-redemption-code-command.md)
+- [Apply Redemption Code](./apply-redemption-code-command.md)
   Complete the installation of an app using a redemption code.
-- [Validate Applications](validate-applications-command.md)
+- [Validate Applications](./validate-applications-command.md)
   Force validation of developer and universal provisioning profiles for enterprise apps.
-- [Managed Application Attributes](managed-application-attributes-command.md)
+- [Managed Application Attributes](./managed-application-attributes-command.md)
   Query attributes in managed apps on a device.
-- [Managed Application Configuration](managed-application-configuration-command.md)
+- [Managed Application Configuration](./managed-application-configuration-command.md)
   Get app configurations from managed apps on a device.
-- [Managed Application Feedback](managed-application-feedback-command.md)
+- [Managed Application Feedback](./managed-application-feedback-command.md)
   Get app feedback from a managed app on the device.
 
 

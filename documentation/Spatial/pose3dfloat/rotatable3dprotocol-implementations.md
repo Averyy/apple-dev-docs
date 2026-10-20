@@ -1,13 +1,14 @@
 # Rotatable3DProtocol Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func rotated(by: Rotation3DFloat) -> Pose3DFloat](pose3dfloat/rotated(by:)-16eh.md)
+- [func rotated(by: Rotation3DFloat) -> Pose3DFloat](./rotated%28by%29-16eh.md)
   Returns a pose with a rotation that’s rotated by the specified rotation.
-- [func rotated(by: simd_quatf) -> Pose3DFloat](pose3dfloat/rotated(by:)-6s426.md)
+- [func rotated(by: simd_quatf) -> Pose3DFloat](./rotated%28by%29-6s426.md)
   Returns a pose with a rotation that’s rotated by the specified quaternion.
 
 

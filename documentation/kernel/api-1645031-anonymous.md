@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,15 +18,15 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOPMAuxPowerOn](1645031-anonymous/kiopmauxpoweron.md)
-- [kIOPMCapabilitiesMask](1645031-anonymous/kiopmcapabilitiesmask.md)
-- [kIOPMConfigRetained](1645031-anonymous/kiopmconfigretained.md)
-- [kIOPMContextRetained](1645031-anonymous/kiopmcontextretained.md)
-- [kIOPMMaxPerformance](1645031-anonymous/kiopmmaxperformance.md)
-- [kIOPMNotAttainable](1645031-anonymous/kiopmnotattainable.md)
-- [kIOPMPassThrough](1645031-anonymous/kiopmpassthrough.md)
-- [kIOPMSoftSleep](1645031-anonymous/kiopmsoftsleep.md)
-- [kIOPMStaticPowerValid](1645031-anonymous/kiopmstaticpowervalid.md)
+- [kIOPMAuxPowerOn](./api-1645031-anonymous/kiopmauxpoweron.md)
+- [kIOPMCapabilitiesMask](./api-1645031-anonymous/kiopmcapabilitiesmask.md)
+- [kIOPMConfigRetained](./api-1645031-anonymous/kiopmconfigretained.md)
+- [kIOPMContextRetained](./api-1645031-anonymous/kiopmcontextretained.md)
+- [kIOPMMaxPerformance](./api-1645031-anonymous/kiopmmaxperformance.md)
+- [kIOPMNotAttainable](./api-1645031-anonymous/kiopmnotattainable.md)
+- [kIOPMPassThrough](./api-1645031-anonymous/kiopmpassthrough.md)
+- [kIOPMSoftSleep](./api-1645031-anonymous/kiopmsoftsleep.md)
+- [kIOPMStaticPowerValid](./api-1645031-anonymous/kiopmstaticpowervalid.md)
 
 
 ---

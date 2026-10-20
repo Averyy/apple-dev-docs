@@ -1,31 +1,32 @@
 # MIDIDriverKit
 
 **Framework**: MIDIDriverKit  
-**Kind**: namespace
+**Kind**: namespace  
+**Role**: Namespace
 
 **Availability**:
 - DriverKit 24.0+
 
 ## Declaration
 
-```swift
+```cpp
 namespace MIDIDriverKit;
 ```
 
 ## Topics
 
 ### Variables
-- [kIOUserMIDIObjectIDDriver](mididriverkit/kiousermidiobjectiddriver.md)
+- [kIOUserMIDIObjectIDDriver](./mididriverkit-page/kiousermidiobjectiddriver.md)
 ### Type Aliases
-- [IOUserMIDIObjectID](mididriverkit/iousermidiobjectid.md)
-- [IOUserMIDIPropertySelector](mididriverkit/iousermidipropertyselector.md)
-- [IOUserMIDIUMPWord](mididriverkit/iousermidiumpword.md)
-- [MIDIIOBlock](mididriverkit/midiioblock.md)
+- [IOUserMIDIObjectID](./mididriverkit-page/iousermidiobjectid.md)
+- [IOUserMIDIPropertySelector](./mididriverkit-page/iousermidipropertyselector.md)
+- [IOUserMIDIUMPWord](./mididriverkit-page/iousermidiumpword.md)
+- [MIDIIOBlock](./mididriverkit-page/midiioblock.md)
 ### Enumerations
-- [IOUserMIDIClassID](mididriverkit/iousermidiclassid.md)
-- [IOUserMIDIProperty](mididriverkit/iousermidiproperty.md)
-- [IOUserMIDIPropertyType](mididriverkit/iousermidipropertytype.md)
-- [IOUserMIDIProtocolID](mididriverkit/iousermidiprotocolid.md)
+- [IOUserMIDIClassID](./mididriverkit-page/iousermidiclassid.md)
+- [IOUserMIDIProperty](./mididriverkit-page/iousermidiproperty.md)
+- [IOUserMIDIPropertyType](./mididriverkit-page/iousermidipropertytype.md)
+- [IOUserMIDIProtocolID](./mididriverkit-page/iousermidiprotocolid.md)
 
 
 ---

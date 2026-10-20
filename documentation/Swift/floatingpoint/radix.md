@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The radix, or base of exponentiation, for a floating-point type.
@@ -30,6 +31,12 @@ x.significand * (F.radix ** x.exponent)
 ```
 
 A conforming type may use any integer radix, but values other than 2 (for binary floating-point types) or 10 (for decimal floating-point types) are extraordinarily rare in practice.
+
+## Default Implementations
+
+### FloatingPoint Implementations
+- [static var radix: Int](./radix-322z3.md)
+  The radix, or base of exponentiation, for a floating-point type.
 
 
 ---

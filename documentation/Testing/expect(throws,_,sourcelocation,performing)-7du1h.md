@@ -1,18 +1,19 @@
 # expect(throws:_:sourceLocation:performing:)
 
 **Framework**: Swift Testing  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Check that an expression always throws a specific error.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 
@@ -25,7 +26,7 @@ Check that an expression always throws a specific error.
 
 ## Mentions
 
-- [Testing for errors in Swift code](testing-for-errors-in-swift-code.md)
+- [Testing for errors in Swift code](./testing-for-errors-in-swift-code.md)
 
 #### Return Value
 
@@ -42,11 +43,11 @@ Use this overload of `#expect()` when the expression `expression` *should* throw
 }
 ```
 
-If `expression` does not throw an error, or if it throws an error that is not equal to `error`, an [`Issue`](issue.md) is recorded for the test that is running in the current task. Any value returned by `expression` is discarded.
+If `expression` does not throw an error, or if it throws an error that is not equal to `error`, an [`Issue`](./issue.md) is recorded for the test that is running in the current task. Any value returned by `expression` is discarded.
 
 > **Note**: If you use this macro with a Swift compiler version lower than 6.1, it doesn’t return a value.
 
-If the thrown error need only be an instance of a particular type, use [`expect(throws:_:sourceLocation:performing:)`](expect(throws:_:sourcelocation:performing:)-1hfms.md) instead.
+If the thrown error need only be an instance of a particular type, use [`expect(throws:_:sourceLocation:performing:)`](./expect%28throws,_,sourcelocation,performing%29-1hfms.md) instead.
 
 ## Parameters
 
@@ -57,16 +58,17 @@ If the thrown error need only be an instance of a particular type, use [`expect(
 
 ## See Also
 
-- [Testing for errors in Swift code](testing-for-errors-in-swift-code.md)
+### Checking that errors are thrown
+- [Testing for errors in Swift code](./testing-for-errors-in-swift-code.md)
   Ensure that your code handles errors in the way you expect.
-- [macro expect<E, R>(throws: E.Type, @autoclosure () -> Comment?, sourceLocation: SourceLocation, performing: () async throws -> R) -> E?](expect(throws:_:sourcelocation:performing:)-1hfms.md)
+- [macro expect<E, R>(throws: E.Type, @autoclosure () -> Comment?, sourceLocation: SourceLocation, performing: () async throws -> R) -> E?](./expect%28throws,_,sourcelocation,performing%29-1hfms.md)
   Check that an expression always throws an error of a given type.
-- [macro expect<R>(@autoclosure () -> Comment?, sourceLocation: SourceLocation, performing: () async throws -> R, throws: (any Error) async throws -> Bool) -> (any Error)?](expect(_:sourcelocation:performing:throws:).md)
+- [macro expect<R>(@autoclosure () -> Comment?, sourceLocation: SourceLocation, performing: () async throws -> R, throws: (any Error) async throws -> Bool) -> (any Error)?](./expect%28_,sourcelocation,performing,throws%29.md)
   Check that an expression always throws an error matching some condition.
-- [macro require<E, R>(throws: E.Type, @autoclosure () -> Comment?, sourceLocation: SourceLocation, performing: () async throws -> R) -> E](require(throws:_:sourcelocation:performing:)-7n34r.md)
+- [macro require<E, R>(throws: E.Type, @autoclosure () -> Comment?, sourceLocation: SourceLocation, performing: () async throws -> R) -> E](./require%28throws,_,sourcelocation,performing%29-7n34r.md)
   Check that an expression always throws an error of a given type, and throw an error if it does not.
-- [macro require<E, R>(throws: E, @autoclosure () -> Comment?, sourceLocation: SourceLocation, performing: () async throws -> R) -> E](require(throws:_:sourcelocation:performing:)-4djuw.md)
-- [macro require<R>(@autoclosure () -> Comment?, sourceLocation: SourceLocation, performing: () async throws -> R, throws: (any Error) async throws -> Bool) -> any Error](require(_:sourcelocation:performing:throws:).md)
+- [macro require<E, R>(throws: E, @autoclosure () -> Comment?, sourceLocation: SourceLocation, performing: () async throws -> R) -> E](./require%28throws,_,sourcelocation,performing%29-4djuw.md)
+- [macro require<R>(@autoclosure () -> Comment?, sourceLocation: SourceLocation, performing: () async throws -> R, throws: (any Error) async throws -> Bool) -> any Error](./require%28_,sourcelocation,performing,throws%29.md)
   Check that an expression always throws an error matching some condition, and throw an error if it does not.
 
 

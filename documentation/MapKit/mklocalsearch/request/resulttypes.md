@@ -1,7 +1,8 @@
 # resultTypes
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The types of items to include in the search results.
 
@@ -20,21 +21,26 @@ The types of items to include in the search results.
 var resultTypes: MKLocalSearch.ResultType { get set }
 ```
 
+```objc
+@property (nonatomic, assign) MKLocalSearchResultType resultTypes;
+```
+
 ## See Also
 
-- [var addressFilter: MKAddressFilter?](mklocalsearch/request/addressfilter.md)
+### Configuring the search parameters
+- [var addressFilter: MKAddressFilter?](./addressfilter.md)
   A filter that lists which address options to include or exclude in search results.
-- [var naturalLanguageQuery: String?](mklocalsearch/request/naturallanguagequery.md)
+- [var naturalLanguageQuery: String?](./naturallanguagequery.md)
   A string containing the desired search item.
-- [var region: MKCoordinateRegion](mklocalsearch/request/region.md)
+- [var region: MKCoordinateRegion](./region.md)
   A map region that provides a hint as to where to search.
-- [static var physicalFeature: MKLocalSearch.ResultType](mklocalsearch/resulttype/physicalfeature.md)
+- [static var physicalFeature: MKLocalSearch.ResultType](../resulttype/physicalfeature.md)
   A value that indicates that search results include physical features.
-- [var pointOfInterestFilter: MKPointOfInterestFilter?](mklocalsearch/request/pointofinterestfilter.md)
+- [var pointOfInterestFilter: MKPointOfInterestFilter?](./pointofinterestfilter.md)
   A filter that lists point-of-interest categories to include or exclude in search results.
-- [var regionPriority: MKLocalSearchRegionPriority](mklocalsearch/request/regionpriority.md)
+- [var regionPriority: MKLocalSearchRegionPriority](./regionpriority.md)
   A value that indicates the importance of the configured region.
-- [MKLocalSearch.Request.ResultType](mklocalsearch/request/resulttype.md)
+- [MKLocalSearch.Request.ResultType](./resulttype.md)
   Options that indicate types of search results.
 
 

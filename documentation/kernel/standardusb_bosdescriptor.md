@@ -1,14 +1,15 @@
 # StandardUSB::BOSDescriptor
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 typedef struct StandardUSB::BOSDescriptor {
     ...
 } StandardUSB::BOSDescriptor;
@@ -17,8 +18,8 @@ typedef struct StandardUSB::BOSDescriptor {
 ## Topics
 
 ### Instance Properties
-- [bNumDeviceCaps](standardusb_bosdescriptor/3794022-bnumdevicecaps.md)
-- [wTotalLength](standardusb_bosdescriptor/3794023-wtotallength.md)
+- [bNumDeviceCaps](./standardusb_bosdescriptor/api-3794022-bnumdevicecaps.md)
+- [wTotalLength](./standardusb_bosdescriptor/api-3794023-wtotallength.md)
 
 
 ---

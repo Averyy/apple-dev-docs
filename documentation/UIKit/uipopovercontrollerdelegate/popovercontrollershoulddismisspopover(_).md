@@ -1,15 +1,16 @@
 # popoverControllerShouldDismissPopover(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate if the popover should be dismissed.
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
-- tvOS ?+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- tvOS - Deprecated in 9.0
 
 ## Declaration
 
@@ -17,15 +18,19 @@ Asks the delegate if the popover should be dismissed.
 optional func popoverControllerShouldDismissPopover(_ popoverController: UIPopoverController) -> Bool
 ```
 
+```objc
+- (BOOL) popoverControllerShouldDismissPopover:(UIPopoverController *) popoverController;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the popover should be dismissed or [`false`](https://developer.apple.com/documentation/swift/false) if it should remain visible.
+[`true`](../../Swift/true.md) if the popover should be dismissed or [`false`](../../Swift/false.md) if it should remain visible.
 
 #### Discussion
 
-This method is called in response to user-initiated attempts to dismiss the popover. It is not called when you dismiss the popover using the [`dismiss(animated:)`](uipopovercontroller/dismiss(animated:).md) method of the popover controller.
+This method is called in response to user-initiated attempts to dismiss the popover. It is not called when you dismiss the popover using the [`dismiss(animated:)`](../uipopovercontroller/dismiss%28animated%29.md) method of the popover controller.
 
-If you do not implement this method in your delegate, the default return value is assumed to be [`true`](https://developer.apple.com/documentation/swift/true).
+If you do not implement this method in your delegate, the default return value is assumed to be [`true`](../../Swift/true.md).
 
 ## Parameters
 
@@ -33,9 +38,10 @@ If you do not implement this method in your delegate, the default return value i
 
 ## See Also
 
-- [func popoverController(UIPopoverController, willRepositionPopoverTo: UnsafeMutablePointer<CGRect>, in: AutoreleasingUnsafeMutablePointer<UIView>)](uipopovercontrollerdelegate/popovercontroller(_:willrepositionpopoverto:in:).md)
+### Deprecated
+- [func popoverController(UIPopoverController, willRepositionPopoverTo: UnsafeMutablePointer<CGRect>, in: AutoreleasingUnsafeMutablePointer<UIView>)](./popovercontroller%28_,willrepositionpopoverto,in%29.md)
   Tells the delegate that the popover controller needs to change the popover’s location in its view.
-- [func popoverControllerDidDismissPopover(UIPopoverController)](uipopovercontrollerdelegate/popovercontrollerdiddismisspopover(_:).md)
+- [func popoverControllerDidDismissPopover(UIPopoverController)](./popovercontrollerdiddismisspopover%28_%29.md)
   Tells the delegate that the popover was dismissed.
 
 

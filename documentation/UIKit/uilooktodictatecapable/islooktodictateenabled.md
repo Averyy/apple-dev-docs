@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Enable or disable ‘Look To Dictate’ on the receiver.
@@ -16,6 +17,10 @@ Enable or disable ‘Look To Dictate’ on the receiver.
 
 ```swift
 var isLookToDictateEnabled: Bool { get set }
+```
+
+```objc
+@property (nonatomic, getter=isLookToDictateEnabled) BOOL lookToDictateEnabled;
 ```
 
 

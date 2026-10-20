@@ -1,7 +1,8 @@
 # modifierFlags
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The modifier keys that were pressed at the time of the navigation request.
 
@@ -14,13 +15,34 @@ The modifier keys that were pressed at the time of the navigation request.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+var modifierFlags: UIKeyModifierFlags { get }
+```
+
+*macOS*
+
 ```swift
 var modifierFlags: NSEvent.ModifierFlags { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```objc
+@property (nonatomic, readonly) UIKeyModifierFlags modifierFlags;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic, readonly) NSEventModifierFlags modifierFlags;
+```
+
 ## See Also
 
-- [var buttonNumber: UIEvent.ButtonMask](wknavigationaction/buttonnumber.md)
+### Inspecting user actions
+- [var buttonNumber: UIEvent.ButtonMask](./buttonnumber.md)
   The number of the mouse button that caused the navigation request.
 
 

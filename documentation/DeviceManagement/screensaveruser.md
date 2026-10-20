@@ -1,7 +1,8 @@
 # ScreensaverUser
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures a user’s screen saver settings.
 
@@ -10,7 +11,7 @@ The payload that configures a user’s screen saver settings.
 
 ## Declaration
 
-```swift
+```
 object ScreensaverUser
 ```
 
@@ -18,7 +19,7 @@ object ScreensaverUser
 
 Specify `com.apple.screensaver.user` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.screensaver.user` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -76,23 +77,24 @@ Specify `com.apple.screensaver.user` as the payload type.
 
 ## See Also
 
-- [object Accessibility](accessibility.md)
+### User experience
+- [object Accessibility](./accessibility.md)
   The payload that configures the accessibility features of the device.
-- [object Desktop](desktop.md)
+- [object Desktop](./desktop.md)
   The payload that configures the desktop wallpaper.
-- [object Dock](dock.md)
+- [object Dock](./dock.md)
   The payload that configures the Dock.
-- [object Finder](finder.md)
+- [object Finder](./finder.md)
   The payload that configures Finder settings.
-- [object HomeScreenLayout](homescreenlayout.md)
+- [object HomeScreenLayout](./homescreenlayout.md)
   The payload that configures the Home Screen layout.
-- [object ManagedMenuExtras](managedmenuextras.md)
+- [object ManagedMenuExtras](./managedmenuextras.md)
   The payload that configures menu extras.
-- [object Notifications](notifications.md)
+- [object Notifications](./notifications.md)
   The payload that configures notifications.
-- [object SetupAssistant](setupassistant.md)
+- [object SetupAssistant](./setupassistant.md)
   The payload that configures Setup Assistant settings.
-- [object TimeMachine](timemachine.md)
+- [object TimeMachine](./timemachine.md)
   The payload that configures Time Machine.
 
 

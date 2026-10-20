@@ -1,7 +1,8 @@
 # Preview.ViewTraits
 
 **Framework**: DeveloperToolsSupport  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Traits that apply to previews of views and view controllers.
 

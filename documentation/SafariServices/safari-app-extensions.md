@@ -1,6 +1,7 @@
 # Safari app extensions
 
-**Framework**: Safari Services
+**Framework**: Safari Services  
+**Role**: API Collection
 
 Learn how Safari app extensions extend the web-browsing experience in Safari by leveraging web technologies and native code.
 
@@ -8,67 +9,69 @@ Learn how Safari app extensions extend the web-browsing experience in Safari by 
 
 A Safari app extension can add new functionality to Safari by reading and modifying webpage content. These capabilities enhance the tools you use, the tasks you can accomplish, and the data you can access in your browser. A Safari app extension is uniquely useful because it can communicate with a native app. Sharing data between an app and Safari lets you integrate app content into Safari or send web data back to the app, enabling a unified experience for a web version and a native version of an app.
 
-![A diagram showing Safari app extensions communicating between the containing app and the Safari browser. A box labeled Safari app extension is nested inside a box labeled Containing app. Arrows indicate that the app extension and the containing app pass information to each other through shared resources. Another arrow indicates that the app extension and Safari pass information to each other. ](/images/com.apple.safariservices/media-2970145@2x.png)
+![A diagram showing Safari app extensions communicating between the containing app and the Safari browser. A box labeled Safari app extension is nested inside a box labeled Containing app. Arrows indicate that the app extension and the containing app pass information to each other through shared resources. Another arrow indicates that the app extension and Safari pass information to each other. ](https://developer.apple.com/tutorials/images/com.apple.safariservices/media-2970145@2x.png)
 
-> **Note**:  Previously, Safari extensions provided the communication between apps and Safari. To migrate a legacy Safari extension, see [`Converting a legacy Safari extension to a Safari app extension`](converting-a-legacy-safari-extension-to-a-safari-app-extension.md).
+> **Note**:  Previously, Safari extensions provided the communication between apps and Safari. To migrate a legacy Safari extension, see [Converting a legacy Safari extension to a Safari app extension](./converting-a-legacy-safari-extension-to-a-safari-app-extension.md).
 
 Safari app extensions use a combination of JavaScript, CSS, and native code written in Objective-C or Swift. Because you build Safari app extensions on the standard app extension model, you get many native app benefits:
 
-- You bundle Safari app extensions inside your app and distribute them through the App Store. You can distribute a Safari app extension with a Mac app or a [`Mac Catalyst`](https://developer.apple.com/documentation/uikit/mac-catalyst) app.
+- You bundle Safari app extensions inside your app and distribute them through the App Store. You can distribute a Safari app extension with a Mac app or a [Mac Catalyst](../UIKit/mac-catalyst.md) app.
 - Because you distribute your app and your Safari app extension together, you minimize the chances of installing mismatched versions.
 - Your Safari app extension can securely communicate with your app using shared resources.
 
-To become familiar with app extension concepts, see [`App Extensions`](https://developer.apple.comhttps://developer.apple.com/app-extensions/). If you’re interested in deploying an extension you build for Chrome, Firefox, or Edge in Safari, or creating an extension that works in Safari and other browsers, see [`Safari web extensions`](safari-web-extensions.md).
+To become familiar with app extension concepts, see [App Extensions](https://developer.apple.com/app-extensions/). If you’re interested in deploying an extension you build for Chrome, Firefox, or Edge in Safari, or creating an extension that works in Safari and other browsers, see [Safari web extensions](./safari-web-extensions.md).
 
 ## Topics
 
 ### Essentials
-- [Building a Safari app extension](building-a-safari-app-extension.md)
+- [Building a Safari app extension](./building-a-safari-app-extension.md)
   Add, build, and enable a Safari app extension.
-- [Converting a legacy Safari extension to a Safari app extension](converting-a-legacy-safari-extension-to-a-safari-app-extension.md)
+- [Converting a legacy Safari extension to a Safari app extension](./converting-a-legacy-safari-extension-to-a-safari-app-extension.md)
   Convert a legacy Safari extension to a Safari app extension, automatically with keys or manually.
-- [Troubleshooting your Safari app extension](troubleshooting-your-safari-app-extension.md)
+- [Troubleshooting your Safari app extension](./troubleshooting-your-safari-app-extension.md)
   Debug your Safari app extension with these techniques.
 ### Injected style sheets and scripts
-- [Using injected style sheets and scripts](using-injected-style-sheets-and-scripts.md)
+- [Using injected style sheets and scripts](./using-injected-style-sheets-and-scripts.md)
   Learn how you can affect the appearance or behavior of a webpage by using injected style sheets and scripts.
-- [Injecting a script into a webpage](injecting-a-script-into-a-webpage.md)
+- [Injecting a script into a webpage](./injecting-a-script-into-a-webpage.md)
   Inject a script that you write for a Safari app extension into a webpage.
-- [Injecting CSS style sheets into a webpage](injecting-css-style-sheets-into-a-webpage.md)
+- [Injecting CSS style sheets into a webpage](./injecting-css-style-sheets-into-a-webpage.md)
   Add to or override styles by injecting CSS style sheets into webpages.
-- [Passing messages between Safari app extensions and injected scripts](passing-messages-between-safari-app-extensions-and-injected-scripts.md)
+- [Passing messages between Safari app extensions and injected scripts](./passing-messages-between-safari-app-extensions-and-injected-scripts.md)
   Communicate between your Safari app extension and injected scripts.
-- [class SFSafariExtensionHandler](sfsafariextensionhandler.md)
+- [class SFSafariExtensionHandler](./sfsafariextensionhandler.md)
   A base class that you subclass to handle events in your Safari app extension.
-- [class SFSafariExtensionManager](sfsafariextensionmanager.md)
+- [class SFSafariExtensionManager](./sfsafariextensionmanager.md)
   A class that your app uses to find out the current state of a Safari extension.
-- [class SFSafariExtensionState](sfsafariextensionstate.md)
+- [class SFSafariExtensionState](./sfsafariextensionstate.md)
   The state of a Safari extension.
-- [class SFSafariPageProperties](sfsafaripageproperties.md)
+- [class SFSafariPageProperties](./sfsafaripageproperties.md)
   An object that captures information about a webpage.
-- [protocol SFSafariExtensionHandling](sfsafariextensionhandling.md)
+- [protocol SFSafariExtensionHandling](./sfsafariextensionhandling.md)
   A protocol for implementing event handling in a Safari app extension.
-- [let SFExtensionProfileKey: String](sfextensionprofilekey.md)
+- [let SFExtensionProfileKey: String](./sfextensionprofilekey.md)
   A string the system uses as a key in a user info dictionary to identify a profile identifier.
 ### Information property list keys
-- [Safari app extension information property list keys](safari-app-extension-information-property-list-keys.md)
+- [Safari app extension information property list keys](./safari-app-extension-information-property-list-keys.md)
   Specify keys in your information property list file that provide information about your Safari app extension, UI, and permissions to the operating system.
 
 ## See Also
 
-- [Safari app extensions](safari-app-extensions.md)
+### Related Documentation
+- [Safari app extensions](./safari-app-extensions.md)
   Learn how Safari app extensions extend the web-browsing experience in Safari by leveraging web technologies and native code.
-- [Safari web extensions](safari-web-extensions.md)
+- [Safari web extensions](./safari-web-extensions.md)
   Create web extensions that work in Safari and other browsers.
-- [class SFSafariExtension](sfsafariextension.md)
+### Safari app extensions
+- [class SFSafariExtension](./sfsafariextension.md)
   A proxy for the Safari extension.
-- [class SFSafariApplication](sfsafariapplication.md)
+- [class SFSafariApplication](./sfsafariapplication.md)
   A proxy for the Safari app.
-- [class SFSafariWindow](sfsafariwindow.md)
+- [class SFSafariWindow](./sfsafariwindow.md)
   A proxy for a Safari window.
-- [class SFSafariPage](sfsafaripage.md)
+- [class SFSafariPage](./sfsafaripage.md)
   A proxy for a Safari webpage.
-- [class SFSafariTab](sfsafaritab.md)
+- [class SFSafariTab](./sfsafaritab.md)
   A proxy for a tab in a Safari window.
 
 

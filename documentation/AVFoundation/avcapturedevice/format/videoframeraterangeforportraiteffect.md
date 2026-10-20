@@ -1,7 +1,8 @@
 # videoFrameRateRangeForPortraitEffect
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range of frame rates available when Portrait Effect is active.
 
@@ -18,15 +19,20 @@ The range of frame rates available when Portrait Effect is active.
 var videoFrameRateRangeForPortraitEffect: AVFrameRateRange? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) AVFrameRateRange * videoFrameRateRangeForPortraitEffect;
+```
+
 #### Discussion
 
 Devices may support a limited range of frame rates when Portrait Effect is active. If a device format doesn’t support Portrait Effect, the value of this property is `nil`.
 
 ## See Also
 
-- [var isPortraitEffectSupported: Bool](avcapturedevice/format/isportraiteffectsupported.md)
+### Determining Portrait Effects support
+- [var isPortraitEffectSupported: Bool](./isportraiteffectsupported.md)
   A Boolean value that indicates whether the format supports the Portrait Effect feature.
-- [var isPortraitEffectsMatteStillImageDeliverySupported: Bool](avcapturedevice/format/isportraiteffectsmattestillimagedeliverysupported.md)
+- [var isPortraitEffectsMatteStillImageDeliverySupported: Bool](./isportraiteffectsmattestillimagedeliverysupported.md)
   A Boolean indicating whether the device supports portrait matte effects in still-image capture.
 
 

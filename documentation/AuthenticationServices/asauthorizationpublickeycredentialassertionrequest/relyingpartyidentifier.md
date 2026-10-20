@@ -2,6 +2,7 @@
 
 **Framework**: Authentication Services  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The domain name of the website for the credential.
@@ -20,13 +21,18 @@ The domain name of the website for the credential.
 var relyingPartyIdentifier: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * relyingPartyIdentifier;
+```
+
 ## See Also
 
-- [var challenge: Data](asauthorizationpublickeycredentialassertionrequest/challenge.md)
+### Getting the properties
+- [var challenge: Data](./challenge.md)
   The challenge to sign.
-- [var allowedCredentials: [any ASAuthorizationPublicKeyCredentialDescriptor]](asauthorizationpublickeycredentialassertionrequest/allowedcredentials.md)
+- [var allowedCredentials: [any ASAuthorizationPublicKeyCredentialDescriptor]](./allowedcredentials.md)
   A list of allowed credential descriptors the user attempts to sign in with.
-- [var userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference](asauthorizationpublickeycredentialassertionrequest/userverificationpreference.md)
+- [var userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference](./userverificationpreference.md)
   A preference that indicates whether the authenticator attempts to verify the user at the time of sign-in.
 
 

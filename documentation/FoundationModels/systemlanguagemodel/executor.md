@@ -1,7 +1,8 @@
 # SystemLanguageModel.Executor
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An executor that responds to session requests using the on-device system model.
 
@@ -21,17 +22,17 @@ struct Executor
 ## Topics
 
 ### Type Aliases
-- [SystemLanguageModel.Executor.Model](systemlanguagemodel/executor/model.md)
+- [SystemLanguageModel.Executor.Model](./executor/model.md)
   The model type this executor processes requests for.
 ### Default Implementations
-- [LanguageModelExecutor Implementations](systemlanguagemodel/executor/languagemodelexecutor-implementations.md)
+- [LanguageModelExecutor Implementations](./executor/languagemodelexecutor-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [LanguageModelExecutor](languagemodelexecutor.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [LanguageModelExecutor](../languagemodelexecutor.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

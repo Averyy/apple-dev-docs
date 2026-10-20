@@ -1,7 +1,8 @@
 # init(target:)
 
 **Framework**: WorkoutKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new power threshold alert for the target measurement.
 

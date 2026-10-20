@@ -1,7 +1,8 @@
 # maxIterations
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The largest number of iterations the training session can use.
 
@@ -20,13 +21,14 @@ var maxIterations: Int
 
 ## See Also
 
-- [var validation: MLSoundClassifier.ModelParameters.ValidationData](mlsoundclassifier/modelparameters-swift.struct/validation.md)
+### Accessing the training parameters
+- [var validation: MLSoundClassifier.ModelParameters.ValidationData](./validation.md)
   The sound classifier’s validation dataset.
-- [var overlapFactor: Double](mlsoundclassifier/modelparameters-swift.struct/overlapfactor.md)
+- [var overlapFactor: Double](./overlapfactor.md)
   The proportion of overlap that the training session uses to analyze two consecutive windows in the audio data.
-- [var algorithm: MLSoundClassifier.ModelParameters.ModelAlgorithmType](mlsoundclassifier/modelparameters-swift.struct/algorithm.md)
+- [var algorithm: MLSoundClassifier.ModelParameters.ModelAlgorithmType](./algorithm.md)
   The algorithm the training session uses to train the sound classifier.
-- [var featureExtractionTimeWindowSize: TimeInterval](mlsoundclassifier/modelparameters-swift.struct/featureextractiontimewindowsize.md)
+- [var featureExtractionTimeWindowSize: TimeInterval](./featureextractiontimewindowsize.md)
   A time duration, in seconds, the training session uses for each audio sample it reads from an audio file in a dataset.
 
 

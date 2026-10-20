@@ -1,7 +1,8 @@
 # timebase
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default timebase for the scene, useful for driving custom times managed by the user which are derived from the scene time.
 

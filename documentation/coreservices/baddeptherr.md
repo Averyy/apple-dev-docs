@@ -1,7 +1,8 @@
 # badDepthErr
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Can't digitize into the requested pixel depth. 
 

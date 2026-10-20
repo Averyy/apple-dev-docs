@@ -1,7 +1,8 @@
 # mapRect
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 A rectangular area on a two-dimensional map projection.
 
@@ -10,17 +11,18 @@ A rectangular area on a two-dimensional map projection.
 
 ## Declaration
 
-```swift
+```
 mapRect: MapRect;
 ```
 
 #### Discussion
 
-Thie mapRect is an instance of [`MapRect`](maprect.md).
+Thie mapRect is an instance of [`MapRect`](../maprect.md).
 
 ## See Also
 
-- [region](cameraboundarydescription/region.md)
+### Defining a Camera Boundary
+- [region](./region.md)
   A rectangular area on a map, defined by coordinates of the rectangle’s northeast and southwest corners.
 
 

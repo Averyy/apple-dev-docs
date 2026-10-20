@@ -1,7 +1,8 @@
 # totalBlocks
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for the volume’s total data block count.
 
@@ -12,6 +13,10 @@ A property for the volume’s total data block count.
 
 ```swift
 var totalBlocks: UInt64 { get set }
+```
+
+```objc
+@property uint64_t totalBlocks;
 ```
 
 

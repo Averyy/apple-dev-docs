@@ -1,7 +1,8 @@
 # default
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The text styling information is the same level of information that AVFoundation uses within a player layer.
 
@@ -19,13 +20,18 @@ The text styling information is the same level of information that AVFoundation 
 static let `default`: AVPlayerItemLegibleOutput.TextStylingResolution
 ```
 
+```c
+extern AVPlayerItemLegibleOutputTextStylingResolution const AVPlayerItemLegibleOutputTextStylingResolutionDefault;
+```
+
 #### Discussion
 
-Specify this level of text styling resolution to receive attributed strings from an `AVPlayerItemLegibleOutput` that include the same level of styling information that AVFoundation would use itself to render text within an [`AVPlayerLayer`](avplayerlayer.md). The text styling will accommodate user-level Media Accessibility settings.
+Specify this level of text styling resolution to receive attributed strings from an `AVPlayerItemLegibleOutput` that include the same level of styling information that AVFoundation would use itself to render text within an [`AVPlayerLayer`](../../avplayerlayer.md). The text styling will accommodate user-level Media Accessibility settings.
 
 ## See Also
 
-- [static let sourceAndRulesOnly: AVPlayerItemLegibleOutput.TextStylingResolution](avplayeritemlegibleoutput/textstylingresolution-swift.struct/sourceandrulesonly.md)
+### Text styling options
+- [static let sourceAndRulesOnly: AVPlayerItemLegibleOutput.TextStylingResolution](./sourceandrulesonly.md)
   The level of resolution excludes styling provided by the user-level Media Accessibility settings.
 
 

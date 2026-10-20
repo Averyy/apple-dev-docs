@@ -1,7 +1,8 @@
 # SecExternalFormat.formatWrappedOpenSSL
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Format for wrapped symmetric and private keys. OpenSSL is an open-source toolkit for Secure Sockets Layer (SSL) and Transport Layer Security (TLS).
 
@@ -12,6 +13,10 @@ Format for wrapped symmetric and private keys. OpenSSL is an open-source toolkit
 
 ```swift
 case formatWrappedOpenSSL
+```
+
+```c
+kSecFormatWrappedOpenSSL
 ```
 
 

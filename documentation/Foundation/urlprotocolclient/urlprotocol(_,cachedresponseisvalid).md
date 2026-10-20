@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the client that a cached response is valid.
@@ -19,6 +20,10 @@ Tells the client that a cached response is valid.
 
 ```swift
 func urlProtocol(_ protocol: URLProtocol, cachedResponseIsValid cachedResponse: CachedURLResponse)
+```
+
+```objc
+- (void) URLProtocol:(NSURLProtocol *) protocol cachedResponseIsValid:(NSCachedURLResponse *) cachedResponse;
 ```
 
 ## Parameters

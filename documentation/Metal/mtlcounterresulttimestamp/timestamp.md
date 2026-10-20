@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A timestamp value from a GPU at a particular point in time during an operation, typically at the beginning or ending of a render stage.
 
@@ -17,6 +18,10 @@ A timestamp value from a GPU at a particular point in time during an operation, 
 
 ```swift
 var timestamp: UInt64
+```
+
+```c
+uint64_t timestamp;
 ```
 
 

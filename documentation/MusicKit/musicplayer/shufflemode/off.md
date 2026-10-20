@@ -1,7 +1,8 @@
 # MusicPlayer.ShuffleMode.off
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The shuffle mode is in a disabled state.
 

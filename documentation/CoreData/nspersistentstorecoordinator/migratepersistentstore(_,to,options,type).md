@@ -1,7 +1,8 @@
 # migratePersistentStore(_:to:options:type:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the location and, if necessary, the store type of the specified persistent store.
 
@@ -11,7 +12,7 @@ Changes the location and, if necessary, the store type of the specified persiste
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -28,20 +29,21 @@ Performance may vary depending on the store types of the old and new stores. Inv
 
 - `store`: The peristent store to migrate.
 - `storeURL`: The location of the new persistent store.
-- `options`: A dictionary containing key-value pairs that specify store behavior and characteristics. For more information, see [`Store options`](store-options.md).
-- `storeType`: The new store type. For possible values, see [`NSPersistentStore.StoreType`](nspersistentstore/storetype.md).
+- `options`: A dictionary containing key-value pairs that specify store behavior and characteristics. For more information, see [Store options](../store-options.md).
+- `storeType`: The new store type. For possible values, see [`NSPersistentStore.StoreType`](../nspersistentstore/storetype.md).
 
 ## See Also
 
-- [func destroyPersistentStore(at: URL, type: NSPersistentStore.StoreType, options: [AnyHashable : Any]?) throws](nspersistentstorecoordinator/destroypersistentstore(at:type:options:).md)
+### Modifying a store
+- [func destroyPersistentStore(at: URL, type: NSPersistentStore.StoreType, options: [AnyHashable : Any]?) throws](./destroypersistentstore%28at,type,options%29.md)
   Deletes a specific type of persistent store at the provided location.
-- [func replacePersistentStore(at: URL, destinationOptions: [AnyHashable : Any]?, withPersistentStoreFrom: URL, sourceOptions: [AnyHashable : Any]?, type: NSPersistentStore.StoreType) throws](nspersistentstorecoordinator/replacepersistentstore(at:destinationoptions:withpersistentstorefrom:sourceoptions:type:).md)
+- [func replacePersistentStore(at: URL, destinationOptions: [AnyHashable : Any]?, withPersistentStoreFrom: URL, sourceOptions: [AnyHashable : Any]?, type: NSPersistentStore.StoreType) throws](./replacepersistentstore%28at,destinationoptions,withpersistentstorefrom,sourceoptions,type%29.md)
   Replaces one persistent store with another.
-- [func destroyPersistentStore(at: URL, ofType: String, options: [AnyHashable : Any]?) throws](nspersistentstorecoordinator/destroypersistentstore(at:oftype:options:).md)
+- [func destroyPersistentStore(at: URL, ofType: String, options: [AnyHashable : Any]?) throws](./destroypersistentstore%28at,oftype,options%29.md)
   Deletes a specific type of persistent store at the provided location.
-- [func migratePersistentStore(NSPersistentStore, to: URL, options: [AnyHashable : Any]?, withType: String) throws -> NSPersistentStore](nspersistentstorecoordinator/migratepersistentstore(_:to:options:withtype:).md)
+- [func migratePersistentStore(NSPersistentStore, to: URL, options: [AnyHashable : Any]?, withType: String) throws -> NSPersistentStore](./migratepersistentstore%28_,to,options,withtype%29.md)
   Changes the location and, if necessary, the store type of the specified persistent store.
-- [func replacePersistentStore(at: URL, destinationOptions: [AnyHashable : Any]?, withPersistentStoreFrom: URL, sourceOptions: [AnyHashable : Any]?, ofType: String) throws](nspersistentstorecoordinator/replacepersistentstore(at:destinationoptions:withpersistentstorefrom:sourceoptions:oftype:).md)
+- [func replacePersistentStore(at: URL, destinationOptions: [AnyHashable : Any]?, withPersistentStoreFrom: URL, sourceOptions: [AnyHashable : Any]?, ofType: String) throws](./replacepersistentstore%28at,destinationoptions,withpersistentstorefrom,sourceoptions,oftype%29.md)
   Replaces one persistent store with another.
 
 

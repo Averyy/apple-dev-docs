@@ -1,7 +1,8 @@
 # GKMatchType
 
 **Framework**: GameKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The kind of match managed by Game Center.
 
@@ -20,37 +21,42 @@ The kind of match managed by Game Center.
 enum GKMatchType
 ```
 
+```c
+enum GKMatchType : NSUInteger;
+```
+
 ## Topics
 
 ### Types
-- [GKMatchType.peerToPeer](gkmatchtype/peertopeer.md)
+- [GKMatchType.peerToPeer](./gkmatchtype/peertopeer.md)
   A peer-to-peer match hosted by Game Center.
-- [GKMatchType.hosted](gkmatchtype/hosted.md)
+- [GKMatchType.hosted](./gkmatchtype/hosted.md)
   A match hosted on your private server.
-- [GKMatchType.turnBased](gkmatchtype/turnbased.md)
+- [GKMatchType.turnBased](./gkmatchtype/turnbased.md)
   A turn-based match hosted by Game Center.
 ### Initializers
-- [init?(rawValue: UInt)](gkmatchtype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./gkmatchtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class func maxPlayersAllowedForMatch(of: GKMatchType) -> Int](gkmatchrequest/maxplayersallowedformatch(of:).md)
+### Restricting the number of players
+- [class func maxPlayersAllowedForMatch(of: GKMatchType) -> Int](./gkmatchrequest/maxplayersallowedformatch%28of%29.md)
   Returns the maximum number of players allowed in the match request for a given match type.
-- [var minPlayers: Int](gkmatchrequest/minplayers.md)
+- [var minPlayers: Int](./gkmatchrequest/minplayers.md)
   The minimum number of players that can join the match.
-- [var maxPlayers: Int](gkmatchrequest/maxplayers.md)
+- [var maxPlayers: Int](./gkmatchrequest/maxplayers.md)
   The maximum number of players that can join the match.
-- [var defaultNumberOfPlayers: Int](gkmatchrequest/defaultnumberofplayers.md)
+- [var defaultNumberOfPlayers: Int](./gkmatchrequest/defaultnumberofplayers.md)
   The default number of players for the match.
 
 

@@ -1,7 +1,8 @@
 # UIPress.PressType.tvRemoteFourColors
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Represents a button on a TV remote labeled with four colors, analogous to the four separate color buttons found on some TV remotes. When this button is pressed, an app should perform the appropriate color action or if there are multiple color actions available provide UI to choose the specific color.
 
@@ -12,6 +13,10 @@ Represents a button on a TV remote labeled with four colors, analogous to the fo
 
 ```swift
 case tvRemoteFourColors
+```
+
+```c
+UIPressTypeTVRemoteFourColors
 ```
 
 

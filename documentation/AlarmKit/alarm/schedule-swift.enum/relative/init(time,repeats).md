@@ -1,7 +1,8 @@
 # init(time:repeats:)
 
 **Framework**: AlarmKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an alarm that fires at a specific time.
 
@@ -23,7 +24,8 @@ init(time: Alarm.Schedule.Relative.Time, repeats: Alarm.Schedule.Relative.Recurr
 
 ## See Also
 
-- [Alarm.Schedule.Relative.Time](alarm/schedule-swift.enum/relative/time-swift.struct.md)
+### Creating a scheduled alarm
+- [Alarm.Schedule.Relative.Time](./time-swift.struct.md)
   An object that describes the hour and minute at which an alarm alerts.
 
 

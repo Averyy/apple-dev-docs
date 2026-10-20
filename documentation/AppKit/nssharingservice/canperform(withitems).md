@@ -1,7 +1,8 @@
 # canPerform(withItems:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the service can share all the specified items.
 
@@ -14,9 +15,13 @@ Returns whether the service can share all the specified items.
 func canPerform(withItems items: [Any]?) -> Bool
 ```
 
+```objc
+- (BOOL) canPerformWithItems:(NSArray *) items;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the service can share all the items; [`false`](https://developer.apple.com/documentation/swift/false) otherwise. If `items` is `nil`, the method will return [`true`](https://developer.apple.com/documentation/swift/true) when the service is configured.
+[`true`](../../Swift/true.md) if the service can share all the items; [`false`](../../Swift/false.md) otherwise. If `items` is `nil`, the method will return [`true`](../../Swift/true.md) when the service is configured.
 
 #### Discussion
 
@@ -28,9 +33,11 @@ This method can be used to validate a custom user interface such as a dedicated 
 
 ## See Also
 
-- [func perform(withItems: [Any])](nssharingservice/perform(withitems:).md)
+### Related Documentation
+- [func perform(withItems: [Any])](./perform%28withitems%29.md)
   Manually performs the service on the provided items.
-- [class func sharingServices(forItems: [Any]) -> [NSSharingService]](nssharingservice/sharingservices(foritems:).md)
+### Querying Service Availability
+- [class func sharingServices(forItems: [Any]) -> [NSSharingService]](./sharingservices%28foritems%29.md)
   Returns a list of sharing services which could share all the provided items together.
 
 

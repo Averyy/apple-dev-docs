@@ -1,7 +1,8 @@
 # commandFields
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The command fields to pass for the command invoke.  nil if this command does not have any fields.  If not nil, this should be a data-value dictionary of MTRStructureValueType.
 
@@ -18,6 +19,10 @@ The command fields to pass for the command invoke.  nil if this command does not
 
 ```swift
 var commandFields: [String : Any]? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) NSDictionary<NSString *,id> * commandFields;
 ```
 
 

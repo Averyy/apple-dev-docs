@@ -1,24 +1,26 @@
 # Notification Posting Options
 
-**Framework**: Core Foundation
+**Framework**: Core Foundation  
+**Role**: API Collection
 
 Possible options when posting notifications.
 
 #### Overview
 
-Use these constants when calling the [`CFNotificationCenterPostNotificationWithOptions(_:_:_:_:_:)`](cfnotificationcenterpostnotificationwithoptions(_:_:_:_:_:).md) function.
+Use these constants when calling the [`CFNotificationCenterPostNotificationWithOptions(_:_:_:_:_:)`](./cfnotificationcenterpostnotificationwithoptions%28_,_,_,_,_%29.md) function.
 
 ## Topics
 
 ### Constants
-- [var kCFNotificationDeliverImmediately: CFOptionFlags](kcfnotificationdeliverimmediately.md)
+- [var kCFNotificationDeliverImmediately: CFOptionFlags](./kcfnotificationdeliverimmediately.md)
   Delivers the notification immediately.
-- [var kCFNotificationPostToAllSessions: CFOptionFlags](kcfnotificationposttoallsessions.md)
+- [var kCFNotificationPostToAllSessions: CFOptionFlags](./kcfnotificationposttoallsessions.md)
   Delivers the notification to all sessions.
 
 ## See Also
 
-- [enum CFNotificationSuspensionBehavior](cfnotificationsuspensionbehavior.md)
+### Constants
+- [enum CFNotificationSuspensionBehavior](./cfnotificationsuspensionbehavior.md)
   Suspension flags that indicate how distributed notifications should be handled when the receiving application is in the background.
 
 

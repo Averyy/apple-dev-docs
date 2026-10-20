@@ -1,7 +1,8 @@
 # RelevantContext.SleepCondition
 
 **Framework**: RelevanceKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Values that represent a person’s typical bedtime or wakeup time.
 
@@ -23,14 +24,15 @@ struct SleepCondition
 ## Topics
 
 ### Conditions
-- [static var bedtime: RelevantContext.SleepCondition](relevantcontext/sleepcondition/bedtime.md)
+- [static var bedtime: RelevantContext.SleepCondition](./sleepcondition/bedtime.md)
   A timespan close to when a person typically goes to bed.
-- [static var wakeup: RelevantContext.SleepCondition](relevantcontext/sleepcondition/wakeup.md)
+- [static var wakeup: RelevantContext.SleepCondition](./sleepcondition/wakeup.md)
   A timespan close to when a person typically wakes up.
 
 ## See Also
 
-- [static func sleep(RelevantContext.SleepCondition) -> RelevantContext](relevantcontext/sleep(_:).md)
+### Sleep clues
+- [static func sleep(RelevantContext.SleepCondition) -> RelevantContext](./sleep%28_%29.md)
   Tells the system a widget is relevant because of a person’s sleep schedule.
 
 

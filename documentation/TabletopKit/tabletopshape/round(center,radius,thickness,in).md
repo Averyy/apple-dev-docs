@@ -1,7 +1,8 @@
 # round(center:radius:thickness:in:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a round tabletop shape with the specified center, radius, and thickness.
 
@@ -16,7 +17,8 @@ static func round(center: Point3D = .zero, radius: Float, thickness: Float, in u
 
 ## See Also
 
-- [static func rectangular(center: Point3D, width: Float, height: Float, thickness: Float, in: UnitLength) -> TabletopShape](tabletopshape/rectangular(center:width:height:thickness:in:).md)
+### Creating a round or rectangular table
+- [static func rectangular(center: Point3D, width: Float, height: Float, thickness: Float, in: UnitLength) -> TabletopShape](./rectangular%28center,width,height,thickness,in%29.md)
   Creates a rectangular tabletop shape with the specified center and dimensions.
 
 

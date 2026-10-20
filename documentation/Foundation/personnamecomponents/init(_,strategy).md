@@ -1,7 +1,8 @@
 # init(_:strategy:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a person name components object from a given string by applying the provided parsing strategy.
 
@@ -33,9 +34,10 @@ This method uses a combination of locale rules and the provided parse strategy o
 
 ## See Also
 
-- [init(String) throws](personnamecomponents/init(_:).md)
+### Parsing Person Name Components
+- [init(String) throws](./init%28_%29.md)
   Creates a person name components object from a given string.
-- [var parseStrategy: PersonNameComponents.ParseStrategy](personnamecomponents/formatstyle/parsestrategy.md)
+- [var parseStrategy: PersonNameComponents.ParseStrategy](./formatstyle/parsestrategy.md)
   The strategy used to parse a string into person name components.
 
 

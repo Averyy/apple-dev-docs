@@ -1,7 +1,8 @@
 # name
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The trait’s canonical name.
 
@@ -20,8 +21,8 @@ Use the trait’s name to enable the trait or when referring to it from other mo
 
 The following rules are enforced on trait names:
 
-- The first character must be a [`Unicode XID start character`](https://developer.apple.comhttps://unicode.org/reports/tr31/#Figure_Code_Point_Categories_for_Identifier_Parsing) (most letters), a digit, or `_`.
-- Subsequent characters must be a [`Unicode XID start character`](https://developer.apple.comhttps://unicode.org/reports/tr31/#Figure_Code_Point_Categories_for_Identifier_Parsing) (a digit, `_`, or most letters), `-`, or `+`.
+- The first character must be a [Unicode XID start character](https://unicode.org/reports/tr31/#Figure_Code_Point_Categories_for_Identifier_Parsing) (most letters), a digit, or `_`.
+- Subsequent characters must be a [Unicode XID continue character](https://unicode.org/reports/tr31/#Figure_Code_Point_Categories_for_Identifier_Parsing) (a digit, `_`, or most letters), `-`, or `+`.
 - The names `default` and `defaults` (in any letter casing combination) aren’t allowed as trait names to avoid confusion with default traits.
 
 

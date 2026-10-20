@@ -1,7 +1,8 @@
 # pin
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The PIN value resulting from performing the operation.
 
@@ -20,11 +21,15 @@ The PIN value resulting from performing the operation.
 var pin: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * PIN;
+```
+
 #### Discussion
 
 This property is set to the result of the operation after `finishWithError:` is called.
 
-> **Note**:  If the [`apduTemplate`](tktokensmartcardpinauthoperation/apdutemplate.md) property has a set value, this property is not set, as the PIN is automatically sent to the Smart Card using the specified template.
+> **Note**:  If the [`apduTemplate`](./apdutemplate.md) property has a set value, this property is not set, as the PIN is automatically sent to the Smart Card using the specified template.
 
 
 ---

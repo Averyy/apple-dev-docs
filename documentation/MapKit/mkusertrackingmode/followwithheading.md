@@ -1,7 +1,8 @@
 # MKUserTrackingMode.followWithHeading
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The map follows the user’s location and rotates when the heading changes.
 
@@ -16,15 +17,20 @@ The map follows the user’s location and rotates when the heading changes.
 case followWithHeading
 ```
 
+```c
+MKUserTrackingModeFollowWithHeading
+```
+
 #### Discussion
 
 This mode requires the device to have an available magnetometer. This mode isn’t available for compatible iPad or iPhone apps running in visionOS.
 
 ## See Also
 
-- [MKUserTrackingMode.none](mkusertrackingmode/none.md)
+### Constants
+- [MKUserTrackingMode.none](./none.md)
   The map doesn’t follow the user’s location.
-- [MKUserTrackingMode.follow](mkusertrackingmode/follow.md)
+- [MKUserTrackingMode.follow](./follow.md)
   The map follows the user location.
 
 

@@ -1,7 +1,8 @@
 # kNWErrorDomainPOSIX
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A POSIX error, which is used for most network protocol and routing errors.
 
@@ -20,11 +21,16 @@ A POSIX error, which is used for most network protocol and routing errors.
 let kNWErrorDomainPOSIX: CFString
 ```
 
+```c
+extern CFStringRef const kNWErrorDomainPOSIX;
+```
+
 ## See Also
 
-- [let kNWErrorDomainDNS: CFString](knwerrordomaindns.md)
+### CFError Domain Constants
+- [let kNWErrorDomainDNS: CFString](./knwerrordomaindns.md)
   A DNS error encountered in resolving, browsing, or advertising.
-- [let kNWErrorDomainTLS: CFString](knwerrordomaintls.md)
+- [let kNWErrorDomainTLS: CFString](./knwerrordomaintls.md)
   A TLS error reported by a TLS connection or listener.
 
 

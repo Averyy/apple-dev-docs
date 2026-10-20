@@ -1,17 +1,18 @@
 # minPixelValue
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the minimum pixel value. Any pixel value less than this will be clipped to this value (for the purposes of histogram calculation), and assigned to the first histogram entry. This minimum value is applied to each of the four channels separately.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,13 +20,18 @@ Specifies the minimum pixel value. Any pixel value less than this will be clippe
 var minPixelValue: vector_float4
 ```
 
+```c
+vector_float4 minPixelValue;
+```
+
 ## See Also
 
-- [var numberOfHistogramEntries: Int](mpsimagehistograminfo/numberofhistogramentries.md)
+### Fields
+- [var numberOfHistogramEntries: Int](./numberofhistogramentries.md)
   Specifies the number of histogram entries (*bins*) for each channel.
-- [var histogramForAlpha: ObjCBool](mpsimagehistograminfo/histogramforalpha.md)
+- [var histogramForAlpha: ObjCBool](./histogramforalpha.md)
   Specifies whether the histogram for the alpha channel should be computed or not.
-- [var maxPixelValue: vector_float4](mpsimagehistograminfo/maxpixelvalue.md)
+- [var maxPixelValue: vector_float4](./maxpixelvalue.md)
   Specifies the maximum pixel value.  Any pixel value greater than this will be clipped to this value (for the purposes of histogram calculation), and assigned to the first histogram entry. This maximum value is applied to each of the four channels separately.
 
 

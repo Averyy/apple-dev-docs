@@ -1,7 +1,8 @@
 # UILargeContentViewerInteraction
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interaction that enables a gesture to present the large content viewer for cases when supporting the largest dynamic type sizes isn’t appropriate.
 
@@ -18,47 +19,52 @@ An interaction that enables a gesture to present the large content viewer for ca
 class UILargeContentViewerInteraction
 ```
 
+```objc
+@interface UILargeContentViewerInteraction : NSObject
+```
+
 #### Overview
 
 Don’t use the large content viewer as a replacement for proper Dynamic Type support. For example, Dynamic Type allows items in a list to grow or shrink vertically to accommodate the user’s preferred font size. Rely on the large content viewer only in situations where items must remain small due to unavoidable design constraints. For example, buttons in a tab bar remain small to leave more room for the main app content.
 
-For more information about allowing your app’s content to adjust to varying font sizes, see [`Add Dynamic Type support`](creating-self-sizing-table-view-cells#Add-Dynamic-Type-support.md) and the [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/accessibility/overview/text-size-and-weight/).
+For more information about allowing your app’s content to adjust to varying font sizes, see [Add Dynamic Type support](./creating-self-sizing-table-view-cells.md#Add-Dynamic-Type-support) and the [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/accessibility/overview/text-size-and-weight/).
 
 ## Topics
 
 ### Creating large content viewer interactions
-- [init(delegate: (any UILargeContentViewerInteractionDelegate)?)](uilargecontentviewerinteraction/init(delegate:).md)
+- [init(delegate: (any UILargeContentViewerInteractionDelegate)?)](./uilargecontentviewerinteraction/init%28delegate%29.md)
   Creates an interaction object with the specified delegate.
 ### Customizing large content viewer interactions
-- [var delegate: (any UILargeContentViewerInteractionDelegate)?](uilargecontentviewerinteraction/delegate.md)
+- [var delegate: (any UILargeContentViewerInteractionDelegate)?](./uilargecontentviewerinteraction/delegate.md)
   An object that can fine-tune the large content viewer interactions, especially in the presence of other gesture recognizers.
-- [var gestureRecognizerForExclusionRelationship: UIGestureRecognizer](uilargecontentviewerinteraction/gesturerecognizerforexclusionrelationship.md)
+- [var gestureRecognizerForExclusionRelationship: UIGestureRecognizer](./uilargecontentviewerinteraction/gesturerecognizerforexclusionrelationship.md)
   A gesture recognizer that you can use to set up simultaneous recognition or failure relationships with other gesture recognizers.
 ### Detecting the large content viewer
-- [class var isEnabled: Bool](uilargecontentviewerinteraction/isenabled.md)
+- [class var isEnabled: Bool](./uilargecontentviewerinteraction/isenabled.md)
   A Boolean value that indicates whether the large content viewer is enabled on the device.
-- [class let enabledStatusDidChangeNotification: NSNotification.Name](uilargecontentviewerinteraction/enabledstatusdidchangenotification.md)
+- [class let enabledStatusDidChangeNotification: NSNotification.Name](./uilargecontentviewerinteraction/enabledstatusdidchangenotification.md)
   A notification the system posts when it enables or disables the large content viewer.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [UIInteraction](uiinteraction.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [UIInteraction](./uiinteraction.md)
 
 ## See Also
 
-- [protocol UILargeContentViewerInteractionDelegate](uilargecontentviewerinteractiondelegate.md)
+### Content viewer
+- [protocol UILargeContentViewerInteractionDelegate](./uilargecontentviewerinteractiondelegate.md)
   An object that customizes the behavior of the large content viewer interactions.
-- [protocol UILargeContentViewerItem](uilargecontentvieweritem.md)
+- [protocol UILargeContentViewerItem](./uilargecontentvieweritem.md)
   Methods that provide details about how to display your custom content in the large content viewer.
 
 

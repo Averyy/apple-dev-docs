@@ -1,7 +1,8 @@
 # intersectionFunctionBuffer
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,10 @@
 
 ```swift
 static var intersectionFunctionBuffer: MTLIntersectionFunctionSignature { get }
+```
+
+```c
+MTLIntersectionFunctionSignatureIntersectionFunctionBuffer
 ```
 
 #### Discussion

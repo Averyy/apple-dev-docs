@@ -1,7 +1,8 @@
 # init(alert:countdown:paused:)
 
 **Framework**: AlarmKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Configures an alert with an optional countdown and paused state.
 
@@ -19,16 +20,17 @@ init(alert: AlarmPresentation.Alert, countdown: AlarmPresentation.Countdown? = n
 ## Parameters
 
 - `alert`: The required content for the alert mode of the alarm.
-- `countdown`: An optional parameter with a default `nil` value. Provide a [`AlarmPresentation.Countdown`](alarmpresentation/countdown-swift.struct.md) object.
-- `paused`: An optional parameter with a default `nil` value. Provide a [`AlarmPresentation.Paused`](alarmpresentation/paused-swift.struct.md) object.
+- `countdown`: An optional parameter with a default `nil` value. Provide a [`AlarmPresentation.Countdown`](./countdown-swift.struct.md) object.
+- `paused`: An optional parameter with a default `nil` value. Provide a [`AlarmPresentation.Paused`](./paused-swift.struct.md) object.
 
 ## See Also
 
-- [var alert: AlarmPresentation.Alert](alarmpresentation/alert-swift.property.md)
+### Defining the alarm UI
+- [var alert: AlarmPresentation.Alert](./alert-swift.property.md)
   The content for the alert mode of the alarm.
-- [var countdown: AlarmPresentation.Countdown?](alarmpresentation/countdown-swift.property.md)
+- [var countdown: AlarmPresentation.Countdown?](./countdown-swift.property.md)
   The content for the snooze or countdown mode of the alarm.
-- [var paused: AlarmPresentation.Paused?](alarmpresentation/paused-swift.property.md)
+- [var paused: AlarmPresentation.Paused?](./paused-swift.property.md)
   The content for the pause mode of the alarm.
 
 

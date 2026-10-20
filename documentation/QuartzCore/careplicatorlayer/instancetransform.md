@@ -1,7 +1,8 @@
 # instanceTransform
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transform matrix applied to the previous instance to produce the current instance. Animatable.
 
@@ -19,6 +20,10 @@ The transform matrix applied to the previous instance to produce the current ins
 var instanceTransform: CATransform3D { get set }
 ```
 
+```objc
+@property CATransform3D instanceTransform;
+```
+
 #### Discussion
 
 This transform matrix is applied to instance `k-1` to produce instance `k`. The matrix is applied relative to the center of this layer.
@@ -27,9 +32,10 @@ Defaults to the identity matrix.
 
 ## See Also
 
-- [var instanceCount: Int](careplicatorlayer/instancecount.md)
+### Setting Instance Display Properties
+- [var instanceCount: Int](./instancecount.md)
   The number of copies to create, including the source layers.
-- [var instanceDelay: CFTimeInterval](careplicatorlayer/instancedelay.md)
+- [var instanceDelay: CFTimeInterval](./instancedelay.md)
   Specifies the delay, in seconds, between replicated copies. Animatable.
 
 

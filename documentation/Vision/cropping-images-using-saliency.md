@@ -1,6 +1,7 @@
 # Cropping Images Using Saliency
 
-**Framework**: Vision
+**Framework**: Vision  
+**Role**: Article
 
 Isolate regions in an image that are most likely to draw people’s attention.
 
@@ -61,7 +62,7 @@ Both types of saliency requests return their results as heatmaps, which are 68 x
 
 If your app overlays the saliency heatmap on the original input image, upsample the heatmap and apply a colormap before showing it to the user.
 
-##### Merge Salient Regions for Object Based Saliency
+##### Merge Salient Regions for Object-Based Saliency
 
 For object-based saliency requests, which return up to three bounding boxes, you can use either the most salient bounding box directly to crop a region of your image, or the union of all boxes. Each bounding box comes with a score that you use to rank the relevance of regions within the image.
 
@@ -124,7 +125,7 @@ dispatch_async(dispatch_get_main_queue(), ^{
 
 If nothing is salient, the attention heatmap that’s returned highlights the central part of the image. This behavior reflects the fact that people tend to look at the center of an image if nothing in particular stands out to them.
 
-##### Feed Saliency Results Into Other Vision Requests
+##### Feed Saliency Results into Other Vision Requests
 
 Once you know which regions of an image are interesting, you can use the output of a saliency request as the input to another Vision request, like text recognition. The bounding boxes from saliency requests also help you localize the regions you’d like to search, so you can prioritize recognition on the most salient parts of an image, like signs or posters.
 
@@ -158,13 +159,14 @@ return request.results.first;
 
 ## See Also
 
-- [Highlighting Areas of Interest in an Image Using Saliency](highlighting-areas-of-interest-in-an-image-using-saliency.md)
+### Saliency analysis
+- [Highlighting Areas of Interest in an Image Using Saliency](./highlighting-areas-of-interest-in-an-image-using-saliency.md)
   Quantify and visualize where people are likely to look in an image.
-- [class VNGenerateAttentionBasedSaliencyImageRequest](vngenerateattentionbasedsaliencyimagerequest.md)
+- [class VNGenerateAttentionBasedSaliencyImageRequest](./vngenerateattentionbasedsaliencyimagerequest.md)
   An object that produces a heat map that identifies the parts of an image most likely to draw attention.
-- [class VNGenerateObjectnessBasedSaliencyImageRequest](vngenerateobjectnessbasedsaliencyimagerequest.md)
+- [class VNGenerateObjectnessBasedSaliencyImageRequest](./vngenerateobjectnessbasedsaliencyimagerequest.md)
   A request that generates a heat map that identifies the parts of an image most likely to represent objects.
-- [class VNSaliencyImageObservation](vnsaliencyimageobservation.md)
+- [class VNSaliencyImageObservation](./vnsaliencyimageobservation.md)
   An observation that contains a grayscale heat map of important areas across an image.
 
 

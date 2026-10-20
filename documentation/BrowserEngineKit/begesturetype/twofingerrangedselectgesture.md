@@ -1,14 +1,15 @@
 # BEGestureType.twoFingerRangedSelectGesture
 
 **Framework**: BrowserEngineKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A gesture to select a range of text with two fingers.
 
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- macOS ?+
+- macOS
 - tvOS 17.4+
 - visionOS 1.1+
 
@@ -18,9 +19,14 @@ A gesture to select a range of text with two fingers.
 case twoFingerRangedSelectGesture
 ```
 
+```c
+BEGestureTypeTwoFingerRangedSelectGesture
+```
+
 ## See Also
 
-- [BEGestureType.imPhraseBoundaryDrag](begesturetype/imphraseboundarydrag.md)
+### Selection and range gestures
+- [BEGestureType.imPhraseBoundaryDrag](./imphraseboundarydrag.md)
   A gesture for dragging to adjust input method phrase boundaries.
 
 

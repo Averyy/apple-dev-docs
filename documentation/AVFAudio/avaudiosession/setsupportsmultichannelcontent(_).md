@@ -1,7 +1,8 @@
 # setSupportsMultichannelContent(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets whether your app supplies multichannel audio content.
 
@@ -19,13 +20,18 @@ Sets whether your app supplies multichannel audio content.
 func setSupportsMultichannelContent(_ inValue: Bool) throws
 ```
 
+```objc
+- (BOOL) setSupportsMultichannelContent:(BOOL) inValue error:(NSError **) outError;
+```
+
 ## Parameters
 
 - `inValue`: A Boolean value that indicates whether your app supplies multichannel audio content.
 
 ## See Also
 
-- [var supportsMultichannelContent: Bool](avaudiosession/supportsmultichannelcontent.md)
+### Configuring multichannel support
+- [var supportsMultichannelContent: Bool](./supportsmultichannelcontent.md)
   A Boolean value that indicates whether your app supplies multichannel audio content.
 
 

@@ -1,7 +1,8 @@
 # makeTrainingSession(trainingData:parameters:sessionParameters:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates or restores a training session.
 
@@ -32,16 +33,17 @@ A `MLTrainingSession` that can be used to start or resume training.
 ## Parameters
 
 - `trainingData`: Data source for training.
-- `parameters`: Model training parameters. See [`MLImageClassifier.ModelParameters`](mlimageclassifier/modelparameters-swift.struct.md) for the defaults.
-- `sessionParameters`: Training session parameters. See [`MLTrainingSessionParameters`](mltrainingsessionparameters.md) for the defaults.
+- `parameters`: Model training parameters. See [`MLImageClassifier.ModelParameters`](./modelparameters-swift.struct.md) for the defaults.
+- `sessionParameters`: Training session parameters. See [`MLTrainingSessionParameters`](../mltrainingsessionparameters.md) for the defaults.
 
 ## See Also
 
-- [static func train(trainingData: MLImageClassifier.DataSource, parameters: MLImageClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLImageClassifier>](mlimageclassifier/train(trainingdata:parameters:sessionparameters:).md)
+### Training an image classifier asynchronously
+- [static func train(trainingData: MLImageClassifier.DataSource, parameters: MLImageClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLImageClassifier>](./train%28trainingdata,parameters,sessionparameters%29.md)
   Begins an asynchronous image classifier training session with a training dataset represented by a data source.
-- [static func resume(MLTrainingSession<MLImageClassifier>) throws -> MLJob<MLImageClassifier>](mlimageclassifier/resume(_:).md)
+- [static func resume(MLTrainingSession<MLImageClassifier>) throws -> MLJob<MLImageClassifier>](./resume%28_%29.md)
   Begins or continues an asynchronous image classifier training session.
-- [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLImageClassifier>](mlimageclassifier/restoretrainingsession(sessionparameters:).md)
+- [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLImageClassifier>](./restoretrainingsession%28sessionparameters%29.md)
   Creates an asynchronous training session for an image classifier by restoring an existing training session’s state from its parameters.
 
 

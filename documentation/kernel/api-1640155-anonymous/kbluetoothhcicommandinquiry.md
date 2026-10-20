@@ -1,14 +1,15 @@
 # kBluetoothHCICommandInquiry
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCICommandInquiry = 0x0001
 ```
 

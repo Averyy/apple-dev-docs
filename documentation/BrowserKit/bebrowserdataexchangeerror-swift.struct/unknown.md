@@ -1,7 +1,8 @@
 # unknown
 
 **Framework**: BrowserKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error that indicates an unexpected failure.
 
@@ -17,11 +18,12 @@ static var unknown: BEBrowserDataExchangeError.Code { get }
 
 ## See Also
 
-- [BEBrowserDataExchangeError.Code](bebrowserdataexchangeerror-swift.struct/code.md)
+### Identifying error types
+- [BEBrowserDataExchangeError.Code](./code.md)
   The types of data exchange errors that can occur.
-- [static var export: BEBrowserDataExchangeError.Code](bebrowserdataexchangeerror-swift.struct/export.md)
+- [static var export: BEBrowserDataExchangeError.Code](./export.md)
   An error that indicates a failure during the export operation.
-- [static var `import`: BEBrowserDataExchangeError.Code](bebrowserdataexchangeerror-swift.struct/import.md)
+- [static var `import`: BEBrowserDataExchangeError.Code](./import.md)
   An error that indicates a failure during the import operation.
 
 

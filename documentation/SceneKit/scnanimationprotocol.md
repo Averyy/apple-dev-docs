@@ -1,16 +1,17 @@
 # SCNAnimationProtocol
 
 **Framework**: SceneKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -18,23 +19,28 @@
 protocol SCNAnimationProtocol : NSObjectProtocol
 ```
 
+```objc
+@protocol SCNAnimation <NSObject>
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [SCNAnimation](scnanimation-swift.class.md)
+- [SCNAnimation](./scnanimation-swift.class.md)
 
 ## See Also
 
-- [protocol SCNAnimatable](scnanimatable.md)
+### Explicit Animation
+- [protocol SCNAnimatable](./scnanimatable.md)
   The common interface for attaching animations to nodes, geometries, materials, and other SceneKit objects.
-- [class SCNAnimationEvent](scnanimationevent.md)
+- [class SCNAnimationEvent](./scnanimationevent.md)
   A container for a closure, a block in Objective-C, to be executed at a specific time during playback of an animation.
-- [class SCNAnimation](scnanimation-swift.class.md)
-- [class SCNAnimationPlayer](scnanimationplayer.md)
-- [class SCNTimingFunction](scntimingfunction.md)
-- [class SCNAnimation](scnanimation-swift.class.md)
+- [class SCNAnimation](./scnanimation-swift.class.md)
+- [class SCNAnimationPlayer](./scnanimationplayer.md)
+- [class SCNTimingFunction](./scntimingfunction.md)
+- [class SCNAnimation](./scnanimation-swift.class.md)
 
 
 ---

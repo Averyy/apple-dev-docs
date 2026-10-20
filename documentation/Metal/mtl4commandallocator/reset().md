@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Marks the command allocator’s heaps for reuse.
@@ -20,13 +21,17 @@ Marks the command allocator’s heaps for reuse.
 func reset()
 ```
 
+```objc
+- (void) reset;
+```
+
 ## Mentions
 
-- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
+- [Understanding the Metal 4 core API](../understanding-the-metal-4-core-api.md)
 
 #### Discussion
 
-Calling this method allows new [`MTL4CommandBuffer`](mtl4commandbuffer.md) to reuse its existing internal memory heaps to encode new GPU commands.
+Calling this method allows new [`MTL4CommandBuffer`](../mtl4commandbuffer.md) to reuse its existing internal memory heaps to encode new GPU commands.
 
 You are responsible to ensure that all command buffers with memory originating from this allocator instance are complete before calling resetting it.
 

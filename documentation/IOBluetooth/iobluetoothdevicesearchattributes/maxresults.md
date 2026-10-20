@@ -1,15 +1,20 @@
 # maxResults
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var maxResults: IOItemCount
+```
+
+```c
+IOItemCount maxResults;
 ```
 
 

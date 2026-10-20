@@ -1,7 +1,8 @@
 # strokeBorder(style:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.0+
@@ -17,6 +18,8 @@
 ```swift
 func strokeBorder(style: StrokeStyle) -> some ChartSymbolShape
 ```
+
+Available when `Self` conforms to `InsettableShape`.
 
 
 ---

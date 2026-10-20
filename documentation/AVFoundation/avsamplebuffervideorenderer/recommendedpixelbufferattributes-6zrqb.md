@@ -1,7 +1,8 @@
 # recommendedPixelBufferAttributes
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Recommended pixel buffer attributes for optimal performance when using CMSampleBuffers containing CVPixelbuffers.
 
@@ -25,7 +26,8 @@ The returned attributes are not sufficient for pixel buffer creation. Use `CVPix
 
 ## See Also
 
-- [func displayedPixelBuffer() -> CVPixelBuffer?](avsamplebuffervideorenderer/displayedpixelbuffer.md)
+### Accessing the pixel buffer
+- [func displayedPixelBuffer() -> CVPixelBuffer?](./displayedpixelbuffer%28%29.md)
 
 
 ---

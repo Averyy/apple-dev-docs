@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate object that handles changes to the availability of speech recognition services.
 
@@ -18,17 +19,22 @@ The delegate object that handles changes to the availability of speech recogniti
 weak var delegate: (any SFSpeechRecognizerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak) id<SFSpeechRecognizerDelegate> delegate;
+```
+
 #### Discussion
 
-Provide a delegate object when you want to monitor changes to the availability of speech recognition services. Your delegate object must conform to the [`SFSpeechRecognizerDelegate`](sfspeechrecognizerdelegate.md) protocol.
+Provide a delegate object when you want to monitor changes to the availability of speech recognition services. Your delegate object must conform to the [`SFSpeechRecognizerDelegate`](../sfspeechrecognizerdelegate.md) protocol.
 
 ## See Also
 
-- [protocol SFSpeechRecognizerDelegate](sfspeechrecognizerdelegate.md)
+### Monitoring speech recognition availability
+- [protocol SFSpeechRecognizerDelegate](../sfspeechrecognizerdelegate.md)
   A protocol that you adopt in your objects to track the availability of a speech recognizer.
-- [var isAvailable: Bool](sfspeechrecognizer/isavailable.md)
+- [var isAvailable: Bool](./isavailable.md)
   A Boolean value that indicates whether the speech recognizer is currently available.
-- [var supportsOnDeviceRecognition: Bool](sfspeechrecognizer/supportsondevicerecognition.md)
+- [var supportsOnDeviceRecognition: Bool](./supportsondevicerecognition.md)
   A Boolean value that indicates whether the speech recognizer can operate without network access.
 
 

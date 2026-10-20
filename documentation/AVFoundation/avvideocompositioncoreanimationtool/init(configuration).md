@@ -1,7 +1,8 @@
 # init(configuration:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Compose the composited video frames with the Core Animation layer.
 
@@ -21,13 +22,14 @@ convenience init(configuration: sending AVVideoCompositionCoreAnimationTool.Conf
 
 ## See Also
 
-- [convenience init(additionalLayer: sending CALayer, asTrackID: CMPersistentTrackID)](avvideocompositioncoreanimationtool/init(additionallayer:astrackid:).md)
+### Creating a composition tool
+- [convenience init(additionalLayer: sending CALayer, asTrackID: CMPersistentTrackID)](./init%28additionallayer,astrackid%29.md)
   Adds a Core Animation layer to the video composition.
-- [convenience init(postProcessingAsVideoLayer: CALayer, in: CALayer)](avvideocompositioncoreanimationtool/init(postprocessingasvideolayer:in:).md)
+- [convenience init(postProcessingAsVideoLayer: CALayer, in: CALayer)](./init%28postprocessingasvideolayer,in%29.md)
   Composes the composited video frame with a Core Animation layer.
-- [convenience init(postProcessingAsVideoLayers: [CALayer], in: CALayer)](avvideocompositioncoreanimationtool/init(postprocessingasvideolayers:in:).md)
+- [convenience init(postProcessingAsVideoLayers: [CALayer], in: CALayer)](./init%28postprocessingasvideolayers,in%29.md)
   Composes the composited video frames with the Core Animation layer.
-- [AVVideoCompositionCoreAnimationTool.Configuration](avvideocompositioncoreanimationtool/configuration.md)
+- [AVVideoCompositionCoreAnimationTool.Configuration](./configuration.md)
   Configurable properties for initializing a new AVVideoCompositionCoreAnimationTool instance.
 
 

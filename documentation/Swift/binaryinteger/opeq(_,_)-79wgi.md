@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: op  
+**Role**: Operator  
 **Required**: Yes
 
 Divides the first value by the second and stores the remainder in the left-hand-side variable.

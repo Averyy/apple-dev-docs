@@ -1,7 +1,8 @@
 # inspectCommand(_:)
 
 **Framework**: IOUSBHost  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,10 +14,15 @@
 func inspectCommand(_ command: UnsafePointer<IOUSBHostCIMessage>) throws
 ```
 
+```objc
+- (BOOL) inspectCommand:(const IOUSBHostCIMessage *) command error:(NSError **) error;
+```
+
 ## See Also
 
-- [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus) throws](iousbhostcidevicestatemachine/respond(tocommand:status:).md)
-- [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus, deviceAddress: Int) throws](iousbhostcidevicestatemachine/respond(tocommand:status:deviceaddress:).md)
+### Instance Methods
+- [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus) throws](./respond%28tocommand,status%29.md)
+- [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus, deviceAddress: Int) throws](./respond%28tocommand,status,deviceaddress%29.md)
 
 
 ---

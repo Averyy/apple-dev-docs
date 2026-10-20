@@ -1,7 +1,8 @@
 # AlarmManager.AuthorizationState.denied
 
 **Framework**: AlarmKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The client previously requested authorization from the person, but they declined.
 
@@ -18,9 +19,10 @@ case denied
 
 ## See Also
 
-- [AlarmManager.AuthorizationState.authorized](alarmmanager/authorizationstate-swift.enum/authorized.md)
+### Describing an authorization state
+- [AlarmManager.AuthorizationState.authorized](./authorized.md)
   The person authorized the client to use alarms and timers.
-- [AlarmManager.AuthorizationState.notDetermined](alarmmanager/authorizationstate-swift.enum/notdetermined.md)
+- [AlarmManager.AuthorizationState.notDetermined](./notdetermined.md)
   The client hasn’t requested authorization from a person.
 
 

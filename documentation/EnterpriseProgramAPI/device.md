@@ -1,20 +1,21 @@
 # Device
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represents a Devices resource.
 
 ## Declaration
 
-```swift
+```
 object Device
 ```
 
 ## Topics
 
 ### Objects
-- [object Device.Attributes](device/attributes-data.dictionary.md)
+- [object Device.Attributes](./device/attributes-data.dictionary.md)
   Attributes that describe a Devices resource.
 
 ## Properties
@@ -22,18 +23,21 @@ object Device
 - `attributes` (Device.Attributes): The resource’s attributes.
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `devices`
 - `links` (ResourceLinks): Navigational links that include the self-link.
 
 ## See Also
 
-- [object DevicesWithoutIncludesResponse](deviceswithoutincludesresponse.md)
-- [object DeviceCreateRequest](devicecreaterequest.md)
+### Objects
+- [object DevicesWithoutIncludesResponse](./deviceswithoutincludesresponse.md)
+- [object DeviceCreateRequest](./devicecreaterequest.md)
   The request body you use to create a Device.
-- [object DeviceUpdateRequest](deviceupdaterequest.md)
+- [object DeviceUpdateRequest](./deviceupdaterequest.md)
   The request body you use to update a Device.
-- [object DeviceResponse](deviceresponse.md)
+- [object DeviceResponse](./deviceresponse.md)
   A response that contains a single Devices resource.
-- [object DevicesResponse](devicesresponse.md)
+- [object DevicesResponse](./devicesresponse.md)
   A response that contains a list of Devices resources.
 
 

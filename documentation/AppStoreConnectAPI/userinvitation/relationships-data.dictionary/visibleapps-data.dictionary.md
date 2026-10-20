@@ -1,7 +1,8 @@
 # UserInvitation.Relationships.VisibleApps
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the resources.
 
@@ -10,14 +11,14 @@ The data and links that describe the relationship between the resources.
 
 ## Declaration
 
-```swift
+```
 object UserInvitation.Relationships.VisibleApps
 ```
 
 ## Topics
 
 ### Objects
-- [object UserInvitation.Relationships.VisibleApps.Data](userinvitation/relationships-data.dictionary/visibleapps-data.dictionary/data-data.dictionary.md)
+- [object UserInvitation.Relationships.VisibleApps.Data](./visibleapps-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties

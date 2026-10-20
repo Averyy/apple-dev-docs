@@ -1,7 +1,8 @@
 # init(keyType:cipherSuite:version:key:supportedTransports:identifier:)
 
 **Framework**: Accessory Transport Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a security message with key material and metadata.
 
@@ -16,7 +17,7 @@ init(keyType: SecurityMessage.KeyType, cipherSuite: SecurityMessage.CipherSuite,
 
 #### Discussion
 
-When initiating key exchange from your accessory, create a message with [`SecurityMessage.KeyType.publicKey`](securitymessage/keytype-swift.enum/publickey.md) and your accessory’s public key. The system responds with a message containing [`SecurityMessage.KeyType.encapsulatedKey`](securitymessage/keytype-swift.enum/encapsulatedkey.md).
+When initiating key exchange from your accessory, create a message with [`SecurityMessage.KeyType.publicKey`](./keytype-swift.enum/publickey.md) and your accessory’s public key. The system responds with a message containing [`SecurityMessage.KeyType.encapsulatedKey`](./keytype-swift.enum/encapsulatedkey.md).
 
 ## Parameters
 

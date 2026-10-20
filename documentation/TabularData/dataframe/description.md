@@ -1,7 +1,8 @@
 # description
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the data frame.
 
@@ -22,9 +23,10 @@ var description: String { get }
 
 ## See Also
 
-- [var debugDescription: String](dataframe/debugdescription.md)
+### Describing a Data Frame
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the data frame suitable for debugging.
-- [var customMirror: Mirror](dataframe/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   A mirror that reflects the data frame.
 
 

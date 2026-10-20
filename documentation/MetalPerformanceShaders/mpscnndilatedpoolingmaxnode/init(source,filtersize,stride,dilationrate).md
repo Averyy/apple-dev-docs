@@ -1,7 +1,8 @@
 # init(source:filterSize:stride:dilationRate:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -17,10 +18,15 @@
 init(source sourceNode: MPSNNImageNode, filterSize size: Int, stride: Int, dilationRate: Int)
 ```
 
+```objc
+- (instancetype) initWithSource:(MPSNNImageNode *) sourceNode filterSize:(NSUInteger) size stride:(NSUInteger) stride dilationRate:(NSUInteger) dilationRate;
+```
+
 ## See Also
 
-- [init(source: MPSNNImageNode, filterSize: Int)](mpscnndilatedpoolingmaxnode/init(source:filtersize:).md)
-- [init(source: MPSNNImageNode, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int, dilationRateX: Int, dilationRateY: Int)](mpscnndilatedpoolingmaxnode/init(source:kernelwidth:kernelheight:strideinpixelsx:strideinpixelsy:dilationratex:dilationratey:).md)
+### Initializers
+- [init(source: MPSNNImageNode, filterSize: Int)](./init%28source,filtersize%29.md)
+- [init(source: MPSNNImageNode, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int, dilationRateX: Int, dilationRateY: Int)](./init%28source,kernelwidth,kernelheight,strideinpixelsx,strideinpixelsy,dilationratex,dilationratey%29.md)
 
 
 ---

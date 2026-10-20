@@ -1,7 +1,8 @@
 # computeUnits
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The processing unit or units the model uses to make predictions.
 
@@ -20,13 +21,18 @@ The processing unit or units the model uses to make predictions.
 var computeUnits: MLComputeUnits { get set }
 ```
 
+```objc
+@property (readwrite) MLComputeUnits computeUnits;
+```
+
 ## Mentions
 
-- [Analyzing a Core ML model’s performance in Xcode](analyzing-a-core-ml-model-s-performance-in-xcode.md)
+- [Analyzing a Core ML model’s performance in Xcode](../analyzing-a-core-ml-model-s-performance-in-xcode.md)
 
 ## See Also
 
-- [enum MLComputeUnits](mlcomputeunits.md)
+### Allowing access to processing units
+- [enum MLComputeUnits](../mlcomputeunits.md)
   The set of processing-unit configurations the model can use to make predictions.
 
 

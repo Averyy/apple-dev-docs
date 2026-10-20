@@ -1,7 +1,8 @@
 # keyChangedHandler
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The block that the profile calls when the user presses a key.
 
@@ -19,13 +20,18 @@ The block that the profile calls when the user presses a key.
 var keyChangedHandler: GCKeyboardValueChangedHandler? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) GCKeyboardValueChangedHandler keyChangedHandler;
+```
+
 #### Discussion
 
 If multiple keys change values at the same time, the profile calls this block once for each key that changes.
 
 ## See Also
 
-- [typealias GCKeyboardValueChangedHandler](gckeyboardvaluechangedhandler.md)
+### Getting Change Information
+- [typealias GCKeyboardValueChangedHandler](../gckeyboardvaluechangedhandler.md)
   The signature for the block that the keyboard input profile calls when a key value changes.
 
 

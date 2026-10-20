@@ -1,7 +1,8 @@
 # delegate()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the receiver’s delegate.
 
@@ -20,13 +21,18 @@ Returns the receiver’s delegate.
 func delegate() -> (any PortDelegate)?
 ```
 
+```objc
+- (id<NSPortDelegate>) delegate;
+```
+
 #### Return Value
 
 The receiver’s delegate.
 
 ## See Also
 
-- [func setDelegate((any PortDelegate)?)](port/setdelegate(_:).md)
+### Working with the delegate
+- [func setDelegate((any PortDelegate)?)](./setdelegate%28_%29.md)
   Sets the receiver’s delegate to a given object.
 
 

@@ -1,7 +1,8 @@
 # strideInPixelsX
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 10.0+
@@ -17,31 +18,36 @@
 var strideInPixelsX: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger strideInPixelsX;
+```
+
 ## See Also
 
-- [var offset: MPSOffset](mpscnnkernel/offset.md)
+### Instance Properties
+- [var offset: MPSOffset](./offset.md)
   The position of the destination image’s clip rectangle origin, relative to the source image.
-- [struct MPSOffset](mpsoffset.md)
+- [struct MPSOffset](../mpsoffset.md)
   A signed coordinate with x, y, and z components.
-- [var clipRect: MTLRegion](mpscnnkernel/cliprect.md)
+- [var clipRect: MTLRegion](./cliprect.md)
   An optional clip rectangle to use when writing data. Only the pixels in the clip rectangle will be overwritten.
-- [struct MTLRegion](../metal/mtlregion.md)
+- [struct MTLRegion](../../Metal/mtlregion.md)
   The bounds for a subset of an instance’s elements.
-- [var destinationFeatureChannelOffset: Int](mpscnnkernel/destinationfeaturechanneloffset.md)
+- [var destinationFeatureChannelOffset: Int](./destinationfeaturechanneloffset.md)
   The number of channels in the destination image to skip before writing output data.
-- [var edgeMode: MPSImageEdgeMode](mpscnnkernel/edgemode.md)
+- [var edgeMode: MPSImageEdgeMode](./edgemode.md)
   The edge mode to use when texture reads stray off the edge of an image.
-- [enum MPSImageEdgeMode](mpsimageedgemode.md)
+- [enum MPSImageEdgeMode](../mpsimageedgemode.md)
   The options used to control the edge behavior of an image filter when it reads outside the bounds of a source texture.
-- [var kernelHeight: Int](mpscnnkernel/kernelheight.md)
-- [var kernelWidth: Int](mpscnnkernel/kernelwidth.md)
-- [var strideInPixelsY: Int](mpscnnkernel/strideinpixelsy.md)
-- [var isBackwards: Bool](mpscnnkernel/isbackwards.md)
-- [var padding: any MPSNNPadding](mpscnnkernel/padding.md)
-- [protocol MPSNNPadding](mpsnnpadding.md)
+- [var kernelHeight: Int](./kernelheight.md)
+- [var kernelWidth: Int](./kernelwidth.md)
+- [var strideInPixelsY: Int](./strideinpixelsy.md)
+- [var isBackwards: Bool](./isbackwards.md)
+- [var padding: any MPSNNPadding](./padding.md)
+- [protocol MPSNNPadding](../mpsnnpadding.md)
   The protocol that provides a description of how kernels should pad images.
-- [var destinationImageAllocator: any MPSImageAllocator](mpscnnkernel/destinationimageallocator.md)
-- [protocol MPSImageAllocator](mpsimageallocator.md)
+- [var destinationImageAllocator: any MPSImageAllocator](./destinationimageallocator.md)
+- [protocol MPSImageAllocator](../mpsimageallocator.md)
 
 
 ---

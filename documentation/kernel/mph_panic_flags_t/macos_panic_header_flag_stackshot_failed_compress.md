@@ -1,14 +1,15 @@
 # MACOS_PANIC_HEADER_FLAG_STACKSHOT_FAILED_COMPRESS
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 MACOS_PANIC_HEADER_FLAG_STACKSHOT_FAILED_COMPRESS
 ```
 

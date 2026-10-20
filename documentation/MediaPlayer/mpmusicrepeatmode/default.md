@@ -1,7 +1,8 @@
 # MPMusicRepeatMode.default
 
 **Framework**: Media Player  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user’s preferred repeat mode.
 
@@ -18,13 +19,18 @@ The user’s preferred repeat mode.
 case `default`
 ```
 
+```c
+MPMusicRepeatModeDefault
+```
+
 ## See Also
 
-- [MPMusicRepeatMode.none](mpmusicrepeatmode/none.md)
+### Constants
+- [MPMusicRepeatMode.none](./none.md)
   The music player will not repeat the current song or playlist.
-- [MPMusicRepeatMode.one](mpmusicrepeatmode/one.md)
+- [MPMusicRepeatMode.one](./one.md)
   The music player will repeat the current song.
-- [MPMusicRepeatMode.all](mpmusicrepeatmode/all.md)
+- [MPMusicRepeatMode.all](./all.md)
   The music player will repeat the current playlist.
 
 

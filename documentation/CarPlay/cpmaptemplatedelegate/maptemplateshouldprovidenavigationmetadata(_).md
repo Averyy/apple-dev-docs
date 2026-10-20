@@ -1,7 +1,8 @@
 # mapTemplateShouldProvideNavigationMetadata(_:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate whether the template should provide navigation metadata
 
@@ -16,6 +17,10 @@ Asks the delegate whether the template should provide navigation metadata
 optional func mapTemplateShouldProvideNavigationMetadata(_ mapTemplate: CPMapTemplate) -> Bool
 ```
 
+```objc
+- (BOOL) mapTemplateShouldProvideNavigationMetadata:(CPMapTemplate *) mapTemplate;
+```
+
 #### Discussion
 
 - Returns `true` if the template needs to provide navigation metadata, otherwise `false`.
@@ -26,11 +31,12 @@ optional func mapTemplateShouldProvideNavigationMetadata(_ mapTemplate: CPMapTem
 
 ## See Also
 
-- [func mapTemplate(CPMapTemplate, selectedPreviewFor: CPTrip, using: CPRouteChoice)](cpmaptemplatedelegate/maptemplate(_:selectedpreviewfor:using:).md)
+### Handling Navigation Events
+- [func mapTemplate(CPMapTemplate, selectedPreviewFor: CPTrip, using: CPRouteChoice)](./maptemplate%28_,selectedpreviewfor,using%29.md)
   Tells the delegate that the user selected a trip and route choice to preview.
-- [func mapTemplate(CPMapTemplate, startedTrip: CPTrip, using: CPRouteChoice)](cpmaptemplatedelegate/maptemplate(_:startedtrip:using:).md)
+- [func mapTemplate(CPMapTemplate, startedTrip: CPTrip, using: CPRouteChoice)](./maptemplate%28_,startedtrip,using%29.md)
   Tells the delegate that the user selected a trip and route choice to navigate.
-- [func mapTemplateDidCancelNavigation(CPMapTemplate)](cpmaptemplatedelegate/maptemplatedidcancelnavigation(_:).md)
+- [func mapTemplateDidCancelNavigation(CPMapTemplate)](./maptemplatedidcancelnavigation%28_%29.md)
   Tells the delegate that the system canceled the navigation.
 
 

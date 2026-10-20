@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.S
 
 # mlx.nn.ShardedToAllLinear
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.ShardedToAllLinear.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.ShardedToAllLinear
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.ShardedToAllLinear
-
 **class ShardedToAllLinear(*input_dims: int*, *output_dims: int*, *bias: bool = True*, *group: Group | None = None*)**
 : Each member of the group applies part of the affine transformation and
 then aggregates the results.
@@ -53,5 +26,3 @@ this group. If not set then the global group is used. Default is
 Methods
 
 `from_linear`(linear_layer, *[, segments, group])
-
-** Contents

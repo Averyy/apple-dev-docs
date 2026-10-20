@@ -1,7 +1,8 @@
 # errSecCSDSStoreSymlink
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A `.DS_Store` file can’t be a symlink.
 
@@ -13,6 +14,10 @@ A `.DS_Store` file can’t be a symlink.
 
 ```swift
 var errSecCSDSStoreSymlink: OSStatus { get }
+```
+
+```c
+errSecCSDSStoreSymlink
 ```
 
 

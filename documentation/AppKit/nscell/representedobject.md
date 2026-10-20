@@ -1,12 +1,13 @@
 # representedObject
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object represented by the cell.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ The object represented by the cell.
 var representedObject: Any? { get set }
 ```
 
+```objc
+@property (strong, nullable) id representedObject;
+```
+
 #### Discussion
 
-Use this property to link the cell an appropriate object. For example, in a pop-up list of color names, the represented object of each cell could be the appropriate [`NSColor`](nscolor.md) object.
+Use this property to link the cell an appropriate object. For example, in a pop-up list of color names, the represented object of each cell could be the appropriate [`NSColor`](../nscolor.md) object.
 
 ##### Special Considerations
 
@@ -24,7 +29,8 @@ When you copy an `NSCell` object, the value of this property is set to `nil` in 
 
 ## See Also
 
-- [var objectValue: Any?](nscell/objectvalue.md)
+### Related Documentation
+- [var objectValue: Any?](./objectvalue.md)
   The cell’s value as an Objective-C object.
 
 

@@ -1,7 +1,8 @@
 # removeAllAnnotations()
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all annotations from the map.
 
@@ -14,15 +15,20 @@ Removes all annotations from the map.
 func removeAllAnnotations()
 ```
 
+```objc
+- (void) removeAllAnnotations;
+```
+
 ## See Also
 
-- [func addAnnotation(CLLocationCoordinate2D, with: UIImage?, centerOffset: CGPoint)](wkinterfacemap/addannotation(_:with:centeroffset:).md)
+### Managing Map Annotations
+- [func addAnnotation(CLLocationCoordinate2D, with: UIImage?, centerOffset: CGPoint)](./addannotation%28_,with,centeroffset%29.md)
   Displays the specified image on top of the map.
-- [func addAnnotation(CLLocationCoordinate2D, withImageNamed: String?, centerOffset: CGPoint)](wkinterfacemap/addannotation(_:withimagenamed:centeroffset:).md)
+- [func addAnnotation(CLLocationCoordinate2D, withImageNamed: String?, centerOffset: CGPoint)](./addannotation%28_,withimagenamed,centeroffset%29.md)
   Displays an image from the WatchKit app’s bundle on top of the map.
-- [func addAnnotation(CLLocationCoordinate2D, with: WKInterfaceMapPinColor)](wkinterfacemap/addannotation(_:with:).md)
+- [func addAnnotation(CLLocationCoordinate2D, with: WKInterfaceMapPinColor)](./addannotation%28_,with%29.md)
   Adds a pin to the map at the specified location.
-- [enum WKInterfaceMapPinColor](wkinterfacemappincolor.md)
+- [enum WKInterfaceMapPinColor](../wkinterfacemappincolor.md)
   Constants for map pin colors.
 
 

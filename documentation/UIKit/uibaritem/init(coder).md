@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a bar item from data in an unarchiver.
 
@@ -9,7 +10,7 @@ Creates a bar item from data in an unarchiver.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,14 @@ Creates a bar item from data in an unarchiver.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init()](uibaritem/init.md)
+### Creating a bar item
+- [init()](./init%28%29.md)
   Initializes the bar item to its default state.
 
 

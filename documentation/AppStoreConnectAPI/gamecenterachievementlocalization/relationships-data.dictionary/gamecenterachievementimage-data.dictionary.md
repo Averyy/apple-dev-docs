@@ -1,21 +1,22 @@
 # GameCenterAchievementLocalization.Relationships.GameCenterAchievementImage
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.0+
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementLocalization.Relationships.GameCenterAchievementImage
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterAchievementLocalization.Relationships.GameCenterAchievementImage.Data](gamecenterachievementlocalization/relationships-data.dictionary/gamecenterachievementimage-data.dictionary/data-data.dictionary.md)
+- [object GameCenterAchievementLocalization.Relationships.GameCenterAchievementImage.Data](./gamecenterachievementimage-data.dictionary/data-data.dictionary.md)
   The request body you use to update a achievement.
 
 ## Properties
@@ -25,7 +26,8 @@ object GameCenterAchievementLocalization.Relationships.GameCenterAchievementImag
 
 ## See Also
 
-- [object GameCenterAchievementLocalization.Relationships.GameCenterAchievement](gamecenterachievementlocalization/relationships-data.dictionary/gamecenterachievement-data.dictionary.md)
+### Objects
+- [object GameCenterAchievementLocalization.Relationships.GameCenterAchievement](./gamecenterachievement-data.dictionary.md)
 
 
 ---

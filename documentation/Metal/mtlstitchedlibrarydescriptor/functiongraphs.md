@@ -1,7 +1,8 @@
 # functionGraphs
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The function graphs that define the new stitched library’s functions.
 
@@ -19,9 +20,14 @@ The function graphs that define the new stitched library’s functions.
 var functionGraphs: [MTLFunctionStitchingGraph] { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nonnull) NSArray<MTLFunctionStitchingGraph *> * functionGraphs;
+```
+
 ## See Also
 
-- [var functions: [any MTLFunction]](mtlstitchedlibrarydescriptor/functions.md)
+### Configuring a stitched library
+- [var functions: [any MTLFunction]](./functions.md)
   The list of functions for creating the stitched library.
 
 

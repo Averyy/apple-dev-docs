@@ -1,7 +1,8 @@
 # DisclosureGroupStyleConfiguration.Label
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased label of a disclosure group.
 
@@ -22,11 +23,12 @@ A type-erased label of a disclosure group.
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](../view.md)
 
 ## See Also
 
-- [let label: DisclosureGroupStyleConfiguration.Label](disclosuregroupstyleconfiguration/label-swift.property.md)
+### Configuring the label
+- [let label: DisclosureGroupStyleConfiguration.Label](./label-swift.property.md)
   The label for the disclosure group.
 
 

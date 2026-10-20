@@ -1,7 +1,8 @@
 # preferredName
 
 **Framework**: Swift Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A filename to use when saving this attachment.
 

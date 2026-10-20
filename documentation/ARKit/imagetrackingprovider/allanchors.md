@@ -1,7 +1,8 @@
 # allAnchors
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of all the image anchors the provider is tracking.
 
@@ -16,9 +17,10 @@ final var allAnchors: [ImageAnchor] { get }
 
 ## See Also
 
-- [var state: DataProviderState](imagetrackingprovider/state.md)
+### Inspecting an image-tracking provider
+- [var state: DataProviderState](./state.md)
   The current status of data coming from a provider.
-- [var description: String](imagetrackingprovider/description.md)
+- [var description: String](./description.md)
   A textual representation of this image tracking provider.
 
 

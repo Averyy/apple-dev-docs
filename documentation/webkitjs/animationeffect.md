@@ -1,7 +1,8 @@
 # AnimationEffect
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 interface AnimationEffect
 ```
 

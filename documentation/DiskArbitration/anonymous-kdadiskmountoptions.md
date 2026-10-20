@@ -1,18 +1,20 @@
 # Disk mount options
 
-**Framework**: Disk Arbitration
+**Framework**: Disk Arbitration  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [var kDADiskMountOptionDefault: Int](kdadiskmountoptiondefault.md)
-- [var kDADiskMountOptionWhole: Int](kdadiskmountoptionwhole.md)
+- [var kDADiskMountOptionDefault: Int](./kdadiskmountoptiondefault.md)
+- [var kDADiskMountOptionWhole: Int](./kdadiskmountoptionwhole.md)
   Mount the volumes tied to the whole disk object.
 
 ## See Also
 
-- [Disk unmount options](anonymous-kdadiskunmountoptions.md)
-- [Disk options](anonymous-kdadiskoptions.md)
+### Enumerations
+- [Disk unmount options](./anonymous-kdadiskunmountoptions.md)
+- [Disk options](./anonymous-kdadiskoptions.md)
 
 
 ---

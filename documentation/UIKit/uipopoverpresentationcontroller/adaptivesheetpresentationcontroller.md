@@ -1,7 +1,8 @@
 # adaptiveSheetPresentationController
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sheet presentation controller the popover adapts to in compact size classes.
 
@@ -14,6 +15,10 @@ The sheet presentation controller the popover adapts to in compact size classes.
 
 ```swift
 var adaptiveSheetPresentationController: UISheetPresentationController { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) UISheetPresentationController * adaptiveSheetPresentationController;
 ```
 
 #### Discussion

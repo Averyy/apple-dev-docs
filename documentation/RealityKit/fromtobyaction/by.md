@@ -1,7 +1,8 @@
 # by
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount that the animated property changes during the animation.
 

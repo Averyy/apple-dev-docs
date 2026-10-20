@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of the underlying collection of data.
@@ -23,7 +24,8 @@ associatedtype Data : Collection
 
 ## See Also
 
-- [var data: Self.Data](dynamicviewcontent/data-swift.property.md)
+### Managing the data
+- [var data: Self.Data](./data-swift.property.md)
   The collection of underlying data.
 
 

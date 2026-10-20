@@ -1,7 +1,8 @@
 # isCenterStageSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the format supports Center Stage.
 
@@ -18,17 +19,22 @@ A Boolean value that indicates whether the format supports Center Stage.
 var isCenterStageSupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isCenterStageSupported) BOOL centerStageSupported;
+```
+
 #### Discussion
 
-See [`AVCaptureDevice`](avcapturedevice.md) for more information on using Center Stage.
+See [`AVCaptureDevice`](../../avcapturedevice.md) for more information on using Center Stage.
 
 ## See Also
 
-- [var videoFrameRateRangeForCenterStage: AVFrameRateRange?](avcapturedevice/format/videoframeraterangeforcenterstage.md)
+### Determining Center Stage support
+- [var videoFrameRateRangeForCenterStage: AVFrameRateRange?](./videoframeraterangeforcenterstage.md)
   The range of frame rates available when Center Stage is active.
-- [var videoMinZoomFactorForCenterStage: CGFloat](avcapturedevice/format/videominzoomfactorforcenterstage.md)
+- [var videoMinZoomFactorForCenterStage: CGFloat](./videominzoomfactorforcenterstage.md)
   The minimum zoom factor available when Center Stage is active.
-- [var videoMaxZoomFactorForCenterStage: CGFloat](avcapturedevice/format/videomaxzoomfactorforcenterstage.md)
+- [var videoMaxZoomFactorForCenterStage: CGFloat](./videomaxzoomfactorforcenterstage.md)
   The maximum zoom factor available when Center Stage is active.
 
 

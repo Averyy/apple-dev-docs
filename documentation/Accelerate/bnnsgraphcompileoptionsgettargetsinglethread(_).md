@@ -1,7 +1,8 @@
 # BNNSGraphCompileOptionsGetTargetSingleThread(_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the option for the compiled graph to execute on a single thread.
 
@@ -20,6 +21,10 @@ Returns the option for the compiled graph to execute on a single thread.
 func BNNSGraphCompileOptionsGetTargetSingleThread(_ options: bnns_graph_compile_options_t) -> Bool
 ```
 
+```c
+bool BNNSGraphCompileOptionsGetTargetSingleThread(const bnns_graph_compile_options_t options);
+```
+
 #### Return Value
 
 `true` if the options specify single-threaded execution; otherwise, `false`.
@@ -30,33 +35,34 @@ func BNNSGraphCompileOptionsGetTargetSingleThread(_ options: bnns_graph_compile_
 
 ## See Also
 
-- [struct bnns_graph_compile_options_t](bnns_graph_compile_options_t.md)
+### Specifying and querying compilation options
+- [struct bnns_graph_compile_options_t](./bnns_graph_compile_options_t.md)
   The compilation options that BNNS uses when compiling a source mlmodelc file to a graph object.
-- [func BNNSGraphCompileOptionsMakeDefault() -> bnns_graph_compile_options_t](bnnsgraphcompileoptionsmakedefault().md)
+- [func BNNSGraphCompileOptionsMakeDefault() -> bnns_graph_compile_options_t](./bnnsgraphcompileoptionsmakedefault%28%29.md)
   Returns an allocated compilation options object with default values.
-- [func BNNSGraphCompileOptionsDestroy(bnns_graph_compile_options_t)](bnnsgraphcompileoptionsdestroy(_:).md)
+- [func BNNSGraphCompileOptionsDestroy(bnns_graph_compile_options_t)](./bnnsgraphcompileoptionsdestroy%28_%29.md)
   Destroys the specified compilation options object.
-- [func BNNSGraphCompileOptionsSetOutputPath(bnns_graph_compile_options_t, UnsafePointer<CChar>?)](bnnsgraphcompileoptionssetoutputpath(_:_:).md)
+- [func BNNSGraphCompileOptionsSetOutputPath(bnns_graph_compile_options_t, UnsafePointer<CChar>?)](./bnnsgraphcompileoptionssetoutputpath%28_,_%29.md)
   Sets the option for graph compilation to generate the graph object directly to the specified file.
-- [func BNNSGraphCompileOptionsGetOutputPath(bnns_graph_compile_options_t) -> UnsafePointer<CChar>?](bnnsgraphcompileoptionsgetoutputpath(_:).md)
+- [func BNNSGraphCompileOptionsGetOutputPath(bnns_graph_compile_options_t) -> UnsafePointer<CChar>?](./bnnsgraphcompileoptionsgetoutputpath%28_%29.md)
   Returns the option for the compiled graph’s output path.
-- [func BNNSGraphCompileOptionsSetOutputFD(bnns_graph_compile_options_t, Int32)](bnnsgraphcompileoptionssetoutputfd(_:_:).md)
+- [func BNNSGraphCompileOptionsSetOutputFD(bnns_graph_compile_options_t, Int32)](./bnnsgraphcompileoptionssetoutputfd%28_,_%29.md)
   Sets the option for graph compilation to generate the graph object directly to the specified file descriptor.
-- [func BNNSGraphCompileOptionsGetOutputFD(bnns_graph_compile_options_t) -> Int32](bnnsgraphcompileoptionsgetoutputfd(_:).md)
+- [func BNNSGraphCompileOptionsGetOutputFD(bnns_graph_compile_options_t) -> Int32](./bnnsgraphcompileoptionsgetoutputfd%28_%29.md)
   Returns the option for the compiled graph’s output file descriptor.
-- [func BNNSGraphCompileOptionsSetTargetSingleThread(bnns_graph_compile_options_t, Bool)](bnnsgraphcompileoptionssettargetsinglethread(_:_:).md)
+- [func BNNSGraphCompileOptionsSetTargetSingleThread(bnns_graph_compile_options_t, Bool)](./bnnsgraphcompileoptionssettargetsinglethread%28_,_%29.md)
   Sets the option for the compiled graph to execute on a single thread.
-- [func BNNSGraphCompileOptionsSetOptimizationPreference(bnns_graph_compile_options_t, BNNSGraphOptimizationPreference)](bnnsgraphcompileoptionssetoptimizationpreference(_:_:).md)
+- [func BNNSGraphCompileOptionsSetOptimizationPreference(bnns_graph_compile_options_t, BNNSGraphOptimizationPreference)](./bnnsgraphcompileoptionssetoptimizationpreference%28_,_%29.md)
   Sets the option for the compiled graph to optimize for either size or performance.
-- [func BNNSGraphCompileOptionsGetOptimizationPreference(bnns_graph_compile_options_t) -> BNNSGraphOptimizationPreference](bnnsgraphcompileoptionsgetoptimizationpreference(_:).md)
+- [func BNNSGraphCompileOptionsGetOptimizationPreference(bnns_graph_compile_options_t) -> BNNSGraphOptimizationPreference](./bnnsgraphcompileoptionsgetoptimizationpreference%28_%29.md)
   Returns the option for the compiled graph to optimize for either size or performance.
-- [struct BNNSGraphOptimizationPreference](bnnsgraphoptimizationpreference.md)
+- [struct BNNSGraphOptimizationPreference](./bnnsgraphoptimizationpreference.md)
   Constants that describe the compilation optimization preference.
-- [func BNNSGraphCompileOptionsSetGenerateDebugInfo(bnns_graph_compile_options_t, Bool)](bnnsgraphcompileoptionssetgeneratedebuginfo(_:_:).md)
+- [func BNNSGraphCompileOptionsSetGenerateDebugInfo(bnns_graph_compile_options_t, Bool)](./bnnsgraphcompileoptionssetgeneratedebuginfo%28_,_%29.md)
   Sets the option for the compiled graph to include debugging information.
-- [func BNNSGraphCompileOptionsGetGenerateDebugInfo(bnns_graph_compile_options_t) -> Bool](bnnsgraphcompileoptionsgetgeneratedebuginfo(_:).md)
+- [func BNNSGraphCompileOptionsGetGenerateDebugInfo(bnns_graph_compile_options_t) -> Bool](./bnnsgraphcompileoptionsgetgeneratedebuginfo%28_%29.md)
   Returns the option for the compiled graph to include debugging information.
-- [var BNNSTargetSystemGeneric: BNNSTargetSystem](bnnstargetsystemgeneric.md)
+- [var BNNSTargetSystemGeneric: BNNSTargetSystem](./bnnstargetsystemgeneric.md)
 
 
 ---

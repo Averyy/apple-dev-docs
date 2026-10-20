@@ -1,7 +1,8 @@
 # PrecipitationType
 
 **Framework**: WeatherKit REST API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The type of precipitation forecasted to occur during the day.
 
@@ -10,9 +11,19 @@ The type of precipitation forecasted to occur during the day.
 
 ## Declaration
 
-```swift
+```
 string PrecipitationType
 ```
+
+## Possible Values
+
+- `clear`
+- `precipitation`
+- `rain`
+- `snow`
+- `sleet`
+- `hail`
+- `mixed`
 
 #### Possible Values
 
@@ -24,11 +35,12 @@ string PrecipitationType
 
 ## See Also
 
-- [type UnitsSystem](unitssystem.md)
+### Identifying weather events
+- [type UnitsSystem](./unitssystem.md)
   The system of units that the weather data is reported in.
-- [type MoonPhase](moonphase.md)
+- [type MoonPhase](./moonphase.md)
   The shape of the moon as seen by an observer on the ground at a given time.
-- [type PressureTrend](pressuretrend.md)
+- [type PressureTrend](./pressuretrend.md)
   The direction of change of the sea level air pressure.
 
 

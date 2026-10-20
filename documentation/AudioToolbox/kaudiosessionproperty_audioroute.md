@@ -1,19 +1,24 @@
 # kAudioSessionProperty_AudioRoute
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var kAudioSessionProperty_AudioRoute: Int { get }
+```
+
+```c
+kAudioSessionProperty_AudioRoute
 ```
 
 

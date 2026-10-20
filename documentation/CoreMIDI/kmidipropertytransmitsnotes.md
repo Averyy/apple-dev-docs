@@ -1,7 +1,8 @@
 # kMIDIPropertyTransmitsNotes
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value that indicates whether the device or entity transmits MIDI note messages.
 
@@ -18,9 +19,14 @@ A Boolean value that indicates whether the device or entity transmits MIDI note 
 let kMIDIPropertyTransmitsNotes: CFString
 ```
 
+```c
+extern CFStringRef const kMIDIPropertyTransmitsNotes;
+```
+
 ## See Also
 
-- [let kMIDIPropertyReceivesNotes: CFString](kmidipropertyreceivesnotes.md)
+### Notes
+- [let kMIDIPropertyReceivesNotes: CFString](./kmidipropertyreceivesnotes.md)
   A Boolean value that indicates whether the device or entity responds to MIDI Note On messages.
 
 

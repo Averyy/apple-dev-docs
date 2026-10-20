@@ -1,7 +1,8 @@
 # init(contentsOf:withName:configuration:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an AudioFileResource asynchronously.
 

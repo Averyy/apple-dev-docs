@@ -1,17 +1,22 @@
 # setWindowsNeedUpdate(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets whether the receiver’s windows need updating when the receiver has finished processing the current event.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setWindowsNeedUpdate(_ needUpdate: Bool)
+```
+
+```objc
+- (void) setWindowsNeedUpdate:(BOOL) needUpdate;
 ```
 
 #### Discussion
@@ -20,12 +25,13 @@ This method is especially useful for making sure menus are updated to reflect ch
 
 ## Parameters
 
-- `needUpdate`: If [`true`](https://developer.apple.com/documentation/swift/true), the receiver’s windows are updated after an event is processed.
+- `needUpdate`: If [`true`](../../Swift/true.md), the receiver’s windows are updated after an event is processed.
 
 ## See Also
 
-- [func updateWindows()](nsapplication/updatewindows.md)
-  Sends an [`update()`](nswindow/update().md) message to each onscreen window.
+### Updating Windows
+- [func updateWindows()](./updatewindows%28%29.md)
+  Sends an [`update()`](../nswindow/update%28%29.md) message to each onscreen window.
 
 
 ---

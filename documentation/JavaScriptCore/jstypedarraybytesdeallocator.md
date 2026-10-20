@@ -1,7 +1,8 @@
 # JSTypedArrayBytesDeallocator
 
 **Framework**: JavaScriptCore  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A function that deallocates bytes that pass to a typed array constructor.
 
@@ -19,6 +20,10 @@ A function that deallocates bytes that pass to a typed array constructor.
 typealias JSTypedArrayBytesDeallocator = (UnsafeMutableRawPointer?, UnsafeMutableRawPointer?) -> Void
 ```
 
+```c
+typedef void (*)(void *, void *) JSTypedArrayBytesDeallocator;
+```
+
 ## Parameters
 
 - `bytes`: A pointer to the bytes that originally pass to the typed array constructor.
@@ -26,15 +31,16 @@ typealias JSTypedArrayBytesDeallocator = (UnsafeMutableRawPointer?, UnsafeMutabl
 
 ## See Also
 
-- [func JSObjectMakeTypedArray(JSContextRef!, JSTypedArrayType, Int, UnsafeMutablePointer<JSValueRef?>!) -> JSObjectRef!](jsobjectmaketypedarray(_:_:_:_:).md)
+### Creating a Typed Array
+- [func JSObjectMakeTypedArray(JSContextRef!, JSTypedArrayType, Int, UnsafeMutablePointer<JSValueRef?>!) -> JSObjectRef!](./jsobjectmaketypedarray%28_,_,_,_%29.md)
   Creates a JavaScript typed array object with the specified number of elements.
-- [func JSObjectMakeTypedArrayWithBytesNoCopy(JSContextRef!, JSTypedArrayType, UnsafeMutableRawPointer!, Int, JSTypedArrayBytesDeallocator!, UnsafeMutableRawPointer!, UnsafeMutablePointer<JSValueRef?>!) -> JSObjectRef!](jsobjectmaketypedarraywithbytesnocopy(_:_:_:_:_:_:_:).md)
+- [func JSObjectMakeTypedArrayWithBytesNoCopy(JSContextRef!, JSTypedArrayType, UnsafeMutableRawPointer!, Int, JSTypedArrayBytesDeallocator!, UnsafeMutableRawPointer!, UnsafeMutablePointer<JSValueRef?>!) -> JSObjectRef!](./jsobjectmaketypedarraywithbytesnocopy%28_,_,_,_,_,_,_%29.md)
   Creates a JavaScript typed array object from an existing pointer.
-- [func JSObjectMakeTypedArrayWithArrayBuffer(JSContextRef!, JSTypedArrayType, JSObjectRef!, UnsafeMutablePointer<JSValueRef?>!) -> JSObjectRef!](jsobjectmaketypedarraywitharraybuffer(_:_:_:_:).md)
+- [func JSObjectMakeTypedArrayWithArrayBuffer(JSContextRef!, JSTypedArrayType, JSObjectRef!, UnsafeMutablePointer<JSValueRef?>!) -> JSObjectRef!](./jsobjectmaketypedarraywitharraybuffer%28_,_,_,_%29.md)
   Creates a JavaScript typed array object from an existing JavaScript array buffer object.
-- [func JSObjectMakeTypedArrayWithArrayBufferAndOffset(JSContextRef!, JSTypedArrayType, JSObjectRef!, Int, Int, UnsafeMutablePointer<JSValueRef?>!) -> JSObjectRef!](jsobjectmaketypedarraywitharraybufferandoffset(_:_:_:_:_:_:).md)
+- [func JSObjectMakeTypedArrayWithArrayBufferAndOffset(JSContextRef!, JSTypedArrayType, JSObjectRef!, Int, Int, UnsafeMutablePointer<JSValueRef?>!) -> JSObjectRef!](./jsobjectmaketypedarraywitharraybufferandoffset%28_,_,_,_,_,_%29.md)
   Creates a JavaScript typed array object from an existing JavaScript array buffer object with the specified offset and length.
-- [struct JSTypedArrayType](jstypedarraytype.md)
+- [struct JSTypedArrayType](./jstypedarraytype.md)
   The type of a JavaScript typed array object.
 
 

@@ -1,7 +1,8 @@
 # MTLResourceID
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.0+
@@ -17,32 +18,37 @@
 struct MTLResourceID
 ```
 
+```c
+typedef struct MTLResourceID { ... } MTLResourceID;
+```
+
 ## Mentions
 
-- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
+- [Understanding the Metal 4 core API](./understanding-the-metal-4-core-api.md)
 
 ## Topics
 
 ### Initializers
-- [init()](mtlresourceid/init.md)
+- [init()](./mtlresourceid/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [typealias MTLGPUAddress](mtlgpuaddress.md)
+### Common resource functionality
+- [typealias MTLGPUAddress](./mtlgpuaddress.md)
   A 64-bit unsigned integer type appropriate for storing GPU addresses.
-- [protocol MTLAllocation](mtlallocation.md)
+- [protocol MTLAllocation](./mtlallocation.md)
   A memory allocation from a Metal GPU device, such as a memory heap, texture, or data buffer.
-- [protocol MTLResource](mtlresource.md)
+- [protocol MTLResource](./mtlresource.md)
   An allocation of memory accessible to a GPU.
-- [struct MTLResourceOptions](mtlresourceoptions.md)
+- [struct MTLResourceOptions](./mtlresourceoptions.md)
   Optional arguments used to set the behavior of a resource.
-- [struct MTLResourceUsage](mtlresourceusage.md)
+- [struct MTLResourceUsage](./mtlresourceusage.md)
   Options that describe how a graphics or compute function uses an argument buffer’s resource.
 
 

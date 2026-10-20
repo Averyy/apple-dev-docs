@@ -1,7 +1,8 @@
 # USDLayer.Permission.private
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Accessible only within the defining layer.
 

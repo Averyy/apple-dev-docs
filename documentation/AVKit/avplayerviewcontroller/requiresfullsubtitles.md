@@ -1,7 +1,8 @@
 # requiresFullSubtitles
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether someone can disable the display of subtitles.
 
@@ -14,6 +15,10 @@ A Boolean value that indicates whether someone can disable the display of subtit
 var requiresFullSubtitles: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL requiresFullSubtitles;
+```
+
 #### Discussion
 
 When this property value is `true`, the subtitle menu doesn’t present the Off or Auto options, because subtitles are always displayed, if available.
@@ -22,9 +27,10 @@ The default value is `false`.
 
 ## See Also
 
-- [var allowedSubtitleOptionLanguages: [String]?](avplayerviewcontroller/allowedsubtitleoptionlanguages.md)
+### Managing subtitles
+- [var allowedSubtitleOptionLanguages: [String]?](./allowedsubtitleoptionlanguages.md)
   An array of language codes that restrict the set of subtitle languages available.
-- [class var mediaCharacteristicsForSupportedCustomMediaSelectionSchemes: [AVMediaCharacteristic]](avplayerviewcontroller/mediacharacteristicsforsupportedcustommediaselectionschemes.md)
+- [class var mediaCharacteristicsForSupportedCustomMediaSelectionSchemes: [AVMediaCharacteristic]](./mediacharacteristicsforsupportedcustommediaselectionschemes.md)
 
 
 ---

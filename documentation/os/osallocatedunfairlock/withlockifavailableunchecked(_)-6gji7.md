@@ -1,7 +1,8 @@
 # withLockIfAvailableUnchecked(_:)
 
 **Framework**: os  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -17,6 +18,8 @@
 ```swift
 func withLockIfAvailableUnchecked<R>(_ body: () throws -> R) rethrows -> R?
 ```
+
+Available when `State` is `()`.
 
 
 ---

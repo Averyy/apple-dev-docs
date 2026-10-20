@@ -1,11 +1,12 @@
 # Encodable Implementations
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func encode(to: any Encoder) throws](fromtobyaction/encode(to:).md)
+- [func encode(to: any Encoder) throws](./encode%28to%29.md)
   Writes the action data into an encoder.
 
 

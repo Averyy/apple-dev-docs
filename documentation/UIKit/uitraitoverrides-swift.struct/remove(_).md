@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the change for the trait you provide.
 
@@ -10,7 +11,7 @@ Removes the change for the trait you provide.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

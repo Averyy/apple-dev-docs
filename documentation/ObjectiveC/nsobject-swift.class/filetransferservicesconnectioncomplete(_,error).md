@@ -1,15 +1,20 @@
 # fileTransferServicesConnectionComplete(_:error:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func fileTransferServicesConnectionComplete(_ inServices: OBEXFileTransferServices!, error inError: OBEXError)
+```
+
+```objc
+- (void) fileTransferServicesConnectionComplete:(OBEXFileTransferServices *) inServices error:(OBEXError) inError;
 ```
 
 

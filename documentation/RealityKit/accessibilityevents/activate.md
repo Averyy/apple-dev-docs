@@ -1,7 +1,8 @@
 # AccessibilityEvents.Activate
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An accessibility event for activating an accessibility element.
 
@@ -11,7 +12,7 @@ An accessibility event for activating an accessibility element.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,17 +23,17 @@ struct Activate
 ## Topics
 
 ### Initializers
-- [init(entity: Entity)](accessibilityevents/activate/init(entity:).md)
+- [init(entity: Entity)](./activate/init%28entity%29.md)
 ### Instance Properties
-- [var entity: Entity](accessibilityevents/activate/entity.md)
+- [var entity: Entity](./activate/entity.md)
   The receiver of the action.
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

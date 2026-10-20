@@ -1,7 +1,8 @@
 # batchStart
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 10.0+
@@ -17,15 +18,20 @@
 var batchStart: Int { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSUInteger batchStart;
+```
+
 ## See Also
 
-- [var leftMatrixOrigin: MTLOrigin](mpsmatrixmultiplication/leftmatrixorigin.md)
+### Properties
+- [var leftMatrixOrigin: MTLOrigin](./leftmatrixorigin.md)
   The origin of the left input matrix.
-- [var rightMatrixOrigin: MTLOrigin](mpsmatrixmultiplication/rightmatrixorigin.md)
+- [var rightMatrixOrigin: MTLOrigin](./rightmatrixorigin.md)
   The origin of the right input matrix.
-- [var resultMatrixOrigin: MTLOrigin](mpsmatrixmultiplication/resultmatrixorigin.md)
+- [var resultMatrixOrigin: MTLOrigin](./resultmatrixorigin.md)
   The origin of the result matrix.
-- [var batchSize: Int](mpsmatrixmultiplication/batchsize.md)
+- [var batchSize: Int](./batchsize.md)
 
 
 ---

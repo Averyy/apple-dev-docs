@@ -1,7 +1,8 @@
 # FinanceStore.DataType.orders
 
 **Framework**: FinanceKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The value that describes orders records, such as purchases.
 
@@ -18,7 +19,8 @@ case orders
 
 ## See Also
 
-- [FinanceStore.DataType.financialData](financestore/datatype/financialdata.md)
+### Enumeration Cases
+- [FinanceStore.DataType.financialData](./financialdata.md)
   The value that describes financial data, such as account information.
 
 

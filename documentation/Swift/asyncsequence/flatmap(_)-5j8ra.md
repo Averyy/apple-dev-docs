@@ -1,7 +1,8 @@
 # flatMap(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an asynchronous sequence that concatenates the results of calling the given error-throwing transformation with each element of this sequence.
 

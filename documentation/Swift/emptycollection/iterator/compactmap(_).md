@@ -1,7 +1,8 @@
 # compactMap(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array containing the non-`nil` results of calling the given transformation with each element of this sequence.
 
@@ -40,7 +41,7 @@ let compactMapped: [Int] = possibleNumbers.compactMap { str in Int(str) }
 // [1, 2, 5]
 ```
 
-> **Note**: O(*n*), where *n* is the length of this sequence.
+> **Complexity**: O(*n*), where *n* is the length of this sequence.
 
 ## Parameters
 

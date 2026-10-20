@@ -1,7 +1,8 @@
 # addObserver(forName:object:queue:using:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an entry to the notification center to receive notifications that passed to the provided block.
 
@@ -20,6 +21,10 @@ Adds an entry to the notification center to receive notifications that passed to
 func addObserver(forName name: NSNotification.Name?, object obj: Any?, queue: OperationQueue?, using block: @escaping @Sendable (Notification) -> Void) -> any NSObjectProtocol
 ```
 
+```objc
+- (id<NSObject>) addObserverForName:(NSNotificationName) name object:(id) obj queue:(NSOperationQueue *) queue usingBlock:(void (^)(NSNotification *notification)) block;
+```
+
 #### Return Value
 
 An opaque object to act as the observer. Notification center strongly holds this return value until you remove the observer registration.
@@ -28,7 +33,7 @@ An opaque object to act as the observer. Notification center strongly holds this
 
 If a notification triggers more than one observer block, the blocks can all execute concurrently (but on their queue or on the current thread).
 
-The following example shows how you can register to receive locale change notifications. It stores the return value from [`addObserver(forName:object:queue:using:)`](notificationcenter/addobserver(forname:object:queue:using:).md) in an instance property called `localeChangeObserver`.
+The following example shows how you can register to receive locale change notifications. It stores the return value from [`addObserver(forName:object:queue:using:)`](./addobserver%28forname,object,queue,using%29.md) in an instance property called `localeChangeObserver`.
 
 **Swift**:
 
@@ -56,9 +61,9 @@ self.localeChangeObserver = [center addObserverForName:NSCurrentLocaleDidChangeN
     }];
 ```
 
-Unregister an observer to stop receiving notifications. To unregister an observer, use `NotificationCenter/removeObserver(_:)` or [`removeObserver(_:name:object:)`](notificationcenter/removeobserver(_:name:object:).md) with the most specific detail possible. For example, if you used a name and object to register the observer, use the name and object to remove it.
+Unregister an observer to stop receiving notifications. To unregister an observer, use `NotificationCenter/removeObserver(_:)` or [`removeObserver(_:name:object:)`](./removeobserver%28_,name,object%29.md) with the most specific detail possible. For example, if you used a name and object to register the observer, use the name and object to remove it.
 
-You must invoke `NotificationCenter/removeObserver(_:)` or [`removeObserver(_:name:object:)`](notificationcenter/removeobserver(_:name:object:).md) before the system deallocates any object that [`addObserver(forName:object:queue:using:)`](notificationcenter/addobserver(forname:object:queue:using:).md) specifies.
+You must invoke `NotificationCenter/removeObserver(_:)` or [`removeObserver(_:name:object:)`](./removeobserver%28_,name,object%29.md) before the system deallocates any object that [`addObserver(forName:object:queue:using:)`](./addobserver%28forname,object,queue,using%29.md) specifies.
 
 **Swift**:
 
@@ -111,18 +116,29 @@ This example stores the opaque observer object in an instance property called `t
 
 ## Parameters
 
-- `name`: The name of the notification to register for delivery to the observer block. Specify a notification name to deliver only entries with this notification name. When `nil`, the sender doesn’t use notification names as criteria for delivery.
-- `obj`: The object that sends notifications to the observer block. Specify a sender to deliver only notifications from this sender. When `nil`, the notification center doesn’t use the sender as criteria for the delivery.
-- `queue`: The operation queue where the `block` runs. When `nil`, the block runs synchronously on the posting thread.
-- `block`: The block that executes when receiving a notification. The notification center copies the block. The notification center strongly holds the copied block until you remove the observer registration. The block takes one argument: the notification.
+- `name`: The name of the notification to register for delivery to the observer block. Specify a notification name to deliver only entries with this notification name.
+
+  When `nil`, the sender doesn’t use notification names as criteria for delivery.
+- `obj`: The object that sends notifications to the observer block. Specify a sender to deliver only notifications from this sender.
+
+  When `nil`, the notification center doesn’t use the sender as criteria for the delivery.
+- `queue`: The operation queue where the `block` runs.
+
+  When `nil`, the block runs synchronously on the posting thread.
+- `block`: The block that executes when receiving a notification.
+
+  The notification center copies the block. The notification center strongly holds the copied block until you remove the observer registration.
+
+  The block takes one argument: the notification.
 
 ## See Also
 
-- [func addObserver(Any, selector: Selector, name: NSNotification.Name?, object: Any?)](notificationcenter/addobserver(_:selector:name:object:).md)
+### Adding and removing notification observers
+- [func addObserver(Any, selector: Selector, name: NSNotification.Name?, object: Any?)](./addobserver%28_,selector,name,object%29.md)
   Adds an entry to the notification center to call the provided selector with the notification.
-- [func removeObserver(Any, name: NSNotification.Name?, object: Any?)](notificationcenter/removeobserver(_:name:object:).md)
+- [func removeObserver(Any, name: NSNotification.Name?, object: Any?)](./removeobserver%28_,name,object%29.md)
   Removes matching entries from the notification center’s dispatch table.
-- [func removeObserver(Any)](notificationcenter/removeobserver(_:)-2yciv.md)
+- [func removeObserver(Any)](./removeobserver%28_%29-2yciv.md)
   Removes all entries specifying an observer from the notification center’s dispatch table.
 
 

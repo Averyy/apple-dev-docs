@@ -1,10 +1,11 @@
 # kBluetoothL2CAPConnectionResultPending
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,15 +13,20 @@
 var kBluetoothL2CAPConnectionResultPending: BluetoothL2CAPConnectionResult { get }
 ```
 
+```c
+kBluetoothL2CAPConnectionResultPending
+```
+
 ## See Also
 
-- [var kBluetoothL2CAPConnectionResultRefusedNoResources: BluetoothL2CAPConnectionResult](kbluetoothl2capconnectionresultrefusednoresources.md)
-- [var kBluetoothL2CAPConnectionResultRefusedPSMNotSupported: BluetoothL2CAPConnectionResult](kbluetoothl2capconnectionresultrefusedpsmnotsupported.md)
-- [var kBluetoothL2CAPConnectionResultRefusedSecurityBlock: BluetoothL2CAPConnectionResult](kbluetoothl2capconnectionresultrefusedsecurityblock.md)
-- [var kBluetoothL2CAPConnectionResultSuccessful: BluetoothL2CAPConnectionResult](kbluetoothl2capconnectionresultsuccessful.md)
-- [var kBluetoothL2CAPConnectionResultRefusedInvalidSourceCID: BluetoothL2CAPConnectionResult](kbluetoothl2capconnectionresultrefusedinvalidsourcecid.md)
-- [var kBluetoothL2CAPConnectionResultRefusedReserved: BluetoothL2CAPConnectionResult](kbluetoothl2capconnectionresultrefusedreserved.md)
-- [var kBluetoothL2CAPConnectionResultRefusedSourceCIDAlreadyAllocated: BluetoothL2CAPConnectionResult](kbluetoothl2capconnectionresultrefusedsourcecidalreadyallocated.md)
+### Constants
+- [var kBluetoothL2CAPConnectionResultRefusedNoResources: BluetoothL2CAPConnectionResult](./kbluetoothl2capconnectionresultrefusednoresources.md)
+- [var kBluetoothL2CAPConnectionResultRefusedPSMNotSupported: BluetoothL2CAPConnectionResult](./kbluetoothl2capconnectionresultrefusedpsmnotsupported.md)
+- [var kBluetoothL2CAPConnectionResultRefusedSecurityBlock: BluetoothL2CAPConnectionResult](./kbluetoothl2capconnectionresultrefusedsecurityblock.md)
+- [var kBluetoothL2CAPConnectionResultSuccessful: BluetoothL2CAPConnectionResult](./kbluetoothl2capconnectionresultsuccessful.md)
+- [var kBluetoothL2CAPConnectionResultRefusedInvalidSourceCID: BluetoothL2CAPConnectionResult](./kbluetoothl2capconnectionresultrefusedinvalidsourcecid.md)
+- [var kBluetoothL2CAPConnectionResultRefusedReserved: BluetoothL2CAPConnectionResult](./kbluetoothl2capconnectionresultrefusedreserved.md)
+- [var kBluetoothL2CAPConnectionResultRefusedSourceCIDAlreadyAllocated: BluetoothL2CAPConnectionResult](./kbluetoothl2capconnectionresultrefusedsourcecidalreadyallocated.md)
 
 
 ---

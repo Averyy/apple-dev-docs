@@ -1,7 +1,8 @@
 # indefinite
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 CVTime with indefinite value
 

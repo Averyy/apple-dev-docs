@@ -1,7 +1,8 @@
 # runWorkflow(atPath:withInput:)
 
 **Framework**: Automator  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads and runs the specified workflow file.
 
@@ -13,6 +14,10 @@ Loads and runs the specified workflow file.
 
 ```swift
 func runWorkflow(atPath path: String!, withInput input: Any!) throws -> Any
+```
+
+```objc
+- (id) runWorkflowAtPath:(NSString *) path withInput:(id) input error:(NSError **) error;
 ```
 
 #### Return Value

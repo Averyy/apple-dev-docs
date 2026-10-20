@@ -1,15 +1,16 @@
 # MPSAliasingStrategy
 
 **Framework**: Metal Performance Shaders  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,29 +18,33 @@
 struct MPSAliasingStrategy
 ```
 
+```c
+enum MPSAliasingStrategy : NSUInteger;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](mpsaliasingstrategy/init(rawvalue:).md)
+- [init(rawValue: UInt)](./mpsaliasingstrategy/init%28rawvalue%29.md)
 ### Type Properties
-- [static var aliasingReserved: MPSAliasingStrategy](mpsaliasingstrategy/aliasingreserved.md)
-- [static var `default`: MPSAliasingStrategy](mpsaliasingstrategy/default.md)
-- [static var preferNonTemporaryMemory: MPSAliasingStrategy](mpsaliasingstrategy/prefernontemporarymemory.md)
-- [static var preferTemporaryMemory: MPSAliasingStrategy](mpsaliasingstrategy/prefertemporarymemory.md)
-- [static var shallAlias: MPSAliasingStrategy](mpsaliasingstrategy/shallalias.md)
-- [static var shallNotAlias: MPSAliasingStrategy](mpsaliasingstrategy/shallnotalias.md)
+- [static var aliasingReserved: MPSAliasingStrategy](./mpsaliasingstrategy/aliasingreserved.md)
+- [static var `default`: MPSAliasingStrategy](./mpsaliasingstrategy/default.md)
+- [static var preferNonTemporaryMemory: MPSAliasingStrategy](./mpsaliasingstrategy/prefernontemporarymemory.md)
+- [static var preferTemporaryMemory: MPSAliasingStrategy](./mpsaliasingstrategy/prefertemporarymemory.md)
+- [static var shallAlias: MPSAliasingStrategy](./mpsaliasingstrategy/shallalias.md)
+- [static var shallNotAlias: MPSAliasingStrategy](./mpsaliasingstrategy/shallnotalias.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

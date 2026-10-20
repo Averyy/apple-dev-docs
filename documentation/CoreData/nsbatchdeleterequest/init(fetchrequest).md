@@ -1,7 +1,8 @@
 # init(fetchRequest:)
 
 **Framework**: Core Data  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a request that deletes the results of the specified fetch request.
 
@@ -20,13 +21,18 @@ Creates a request that deletes the results of the specified fetch request.
 init(fetchRequest fetch: NSFetchRequest<any NSFetchRequestResult>)
 ```
 
+```objc
+- (instancetype) initWithFetchRequest:(NSFetchRequest *) fetch;
+```
+
 ## Parameters
 
 - `fetch`: The fetch request that identifies the managed objects to delete.
 
 ## See Also
 
-- [convenience init(objectIDs: [NSManagedObjectID])](nsbatchdeleterequest/init(objectids:).md)
+### Creating a Request
+- [convenience init(objectIDs: [NSManagedObjectID])](./init%28objectids%29.md)
   Creates a request that deletes the managed objects with the specified identifiers.
 
 

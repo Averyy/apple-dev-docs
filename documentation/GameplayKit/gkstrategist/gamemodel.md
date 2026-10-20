@@ -2,6 +2,7 @@
 
 **Framework**: GameplayKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The model representing the current state of the game.
@@ -20,11 +21,15 @@ The model representing the current state of the game.
 var gameModel: (any GKGameModel)? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) id<GKGameModel> gameModel;
+```
+
 #### Discussion
 
-A game model—an instance of one of your custom classes implementing the [`GKGameModel`](gkgamemodel.md) protocol—contains all the information necessary to describe a distinct state of your game. For example, the game model class for a Tic-Tac-Toe game would encode the locations of X and O marks currently on the board and which player’s turn is next. The strategist works from the current game model when planning moves.
+A game model—an instance of one of your custom classes implementing the [`GKGameModel`](../gkgamemodel.md) protocol—contains all the information necessary to describe a distinct state of your game. For example, the game model class for a Tic-Tac-Toe game would encode the locations of X and O marks currently on the board and which player’s turn is next. The strategist works from the current game model when planning moves.
 
-For more information, see [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
+For more information, see [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 
 ---

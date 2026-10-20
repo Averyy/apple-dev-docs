@@ -1,14 +1,15 @@
 # vol_capabilities_set_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef u_int32_t vol_capabilities_set_t[4];
 ```
 

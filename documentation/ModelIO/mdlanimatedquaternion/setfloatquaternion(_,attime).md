@@ -1,7 +1,8 @@
 # setFloatQuaternion(_:atTime:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func setFloatQuaternion(_ value: simd_quatf, atTime time: TimeInterval)
+```
+
+```objc
+- (void) setFloatQuaternion:(simd_quatf) value atTime:(NSTimeInterval) time;
 ```
 
 

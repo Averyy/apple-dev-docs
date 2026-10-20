@@ -1,7 +1,8 @@
 # serialNumber
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The serial number of the device.
 

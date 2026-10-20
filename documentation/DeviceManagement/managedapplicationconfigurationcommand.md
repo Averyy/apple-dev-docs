@@ -1,7 +1,8 @@
 # ManagedApplicationConfigurationCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to get app configurations from managed apps on a device.
 
@@ -16,14 +17,14 @@ The command to get app configurations from managed apps on a device.
 
 ## Declaration
 
-```swift
+```
 object ManagedApplicationConfigurationCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object ManagedApplicationConfigurationCommand.Command](managedapplicationconfigurationcommand/command-data.dictionary.md)
+- [object ManagedApplicationConfigurationCommand.Command](./managedapplicationconfigurationcommand/command-data.dictionary.md)
   The command to get app configurations from managed apps on a device.
 
 ## Properties
@@ -33,7 +34,8 @@ object ManagedApplicationConfigurationCommand
 
 ## See Also
 
-- [object ManagedApplicationConfigurationResponse](managedapplicationconfigurationresponse.md)
+### Commands and responses
+- [object ManagedApplicationConfigurationResponse](./managedapplicationconfigurationresponse.md)
   A response from the device after it processes the command to get app configurations from managed apps on a device.
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a base color object from a custom material’s base color property.
 
@@ -24,9 +25,10 @@ init(_ value: CustomMaterial.BaseColor)
 
 ## See Also
 
-- [init(tint: UIColor, texture: MaterialParameters.Texture?)](physicallybasedmaterial/basecolor-swift.struct/init(tint:texture:)-2wriz.md)
+### Creating a base color object
+- [init(tint: UIColor, texture: MaterialParameters.Texture?)](./init%28tint,texture%29-2wriz.md)
   Creates a base color object from a color or texture on macOS.
-- [init(tint: NSColor, texture: MaterialParameters.Texture?)](physicallybasedmaterial/basecolor-swift.struct/init(tint:texture:)-5jeqr.md)
+- [init(tint: NSColor, texture: MaterialParameters.Texture?)](./init%28tint,texture%29-5jeqr.md)
   Creates a base color object from a color or texture on macOS.
 
 

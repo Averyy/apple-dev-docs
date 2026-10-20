@@ -1,7 +1,8 @@
 # errSSLHandshakeFail
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Handshake failed.
 
@@ -18,6 +19,10 @@ Handshake failed.
 
 ```swift
 var errSSLHandshakeFail: OSStatus { get }
+```
+
+```c
+errSSLHandshakeFail
 ```
 
 

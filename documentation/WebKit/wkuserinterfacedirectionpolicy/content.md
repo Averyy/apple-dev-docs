@@ -1,7 +1,8 @@
 # WKUserInterfaceDirectionPolicy.content
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The directionality follows the CSS/HTML/XHTML specifications.
 
@@ -14,13 +15,18 @@ The directionality follows the CSS/HTML/XHTML specifications.
 case content
 ```
 
+```c
+WKUserInterfaceDirectionPolicyContent
+```
+
 #### Discussion
 
-This is the default value of [`userInterfaceDirectionPolicy`](wkwebviewconfiguration/userinterfacedirectionpolicy.md).
+This is the default value of [`userInterfaceDirectionPolicy`](../wkwebviewconfiguration/userinterfacedirectionpolicy.md).
 
 ## See Also
 
-- [WKUserInterfaceDirectionPolicy.system](wkuserinterfacedirectionpolicy/system.md)
+### Direction Policies
+- [WKUserInterfaceDirectionPolicy.system](./system.md)
   The directionality follows the view’s user interface layout direction.
 
 

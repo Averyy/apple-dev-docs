@@ -1,7 +1,8 @@
 # didStopBeingCurrent
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identifier of the message that posts after a game controller stops being longer the most recently used controller.
 
@@ -18,6 +19,8 @@ The identifier of the message that posts after a game controller stops being lon
 ```swift
 static var didStopBeingCurrent: NotificationCenter.BaseMessageIdentifier<GCController.DidStopBeingCurrentMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<GCController.DidStopBeingCurrentMessage>`.
 
 
 ---

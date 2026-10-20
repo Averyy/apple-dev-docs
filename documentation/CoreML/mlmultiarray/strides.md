@@ -1,7 +1,8 @@
 # strides
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A number array in which each element is the number of memory locations that span the length of the corresponding dimension.
 
@@ -20,17 +21,22 @@ A number array in which each element is the number of memory locations that span
 var strides: [NSNumber] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSNumber *> * strides;
+```
+
 #### Discussion
 
-See [`subscript(_:)`](mlmultiarray/subscript(_:)-2hh91.md) and [`subscript(_:)`](mlmultiarray/subscript(_:)-3d9el.md) for code examples that use `strides`.
+See [`subscript(_:)`](./subscript%28_%29-2hh91.md) and [`subscript(_:)`](./subscript%28_%29-3d9el.md) for code examples that use `strides`.
 
 ## See Also
 
-- [var count: Int](mlmultiarray/count.md)
+### Inspecting a multiarray
+- [var count: Int](./count.md)
   The total number of elements in the multiarray.
-- [var dataType: MLMultiArrayDataType](mlmultiarray/datatype.md)
+- [var dataType: MLMultiArrayDataType](./datatype.md)
   The underlying type of the multiarray.
-- [var shape: [NSNumber]](mlmultiarray/shape.md)
+- [var shape: [NSNumber]](./shape.md)
   The multiarray’s multidimensional shape as a number array in which each element’s value is the size of the corresponding dimension.
 
 

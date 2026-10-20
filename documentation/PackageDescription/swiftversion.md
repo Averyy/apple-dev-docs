@@ -1,12 +1,13 @@
 # SwiftVersion
 
 **Framework**: PackageDescription  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Type alias to previous name for backward source compatibility
 
 **Availability**:
-- SwiftPM ?+
+- SwiftPM - Deprecated in 6.0 (renamed: SwiftLanguageMode)
 
 ## Declaration
 
@@ -16,19 +17,20 @@ typealias SwiftVersion = SwiftLanguageMode
 
 ## See Also
 
-- [enum SwiftLanguageMode](swiftlanguagemode.md)
+### Declaring Supported Languages
+- [enum SwiftLanguageMode](./swiftlanguagemode.md)
   The Swift language mode used to compile Swift sources in the package
-- [enum CLanguageStandard](clanguagestandard.md)
+- [enum CLanguageStandard](./clanguagestandard.md)
   The supported C language standard you use to compile C sources in the package.
-- [enum CXXLanguageStandard](cxxlanguagestandard.md)
+- [enum CXXLanguageStandard](./cxxlanguagestandard.md)
   The supported C++ language standard you use to compile C++ sources in the package.
-- [var swiftLanguageModes: [SwiftLanguageMode]?](package/swiftlanguagemodes.md)
+- [var swiftLanguageModes: [SwiftLanguageMode]?](./package/swiftlanguagemodes.md)
   The list of Swift language modes with which this package is compatible.
-- [var cLanguageStandard: CLanguageStandard?](package/clanguagestandard.md)
+- [var cLanguageStandard: CLanguageStandard?](./package/clanguagestandard.md)
   The C language standard to use for all C targets in this package.
-- [var cxxLanguageStandard: CXXLanguageStandard?](package/cxxlanguagestandard.md)
+- [var cxxLanguageStandard: CXXLanguageStandard?](./package/cxxlanguagestandard.md)
   The C++ language standard to use for all C++ targets in this package.
-- [var swiftLanguageVersions: [SwiftVersion]?](package/swiftlanguageversions.md)
+- [var swiftLanguageVersions: [SwiftVersion]?](./package/swiftlanguageversions.md)
   Legacy property name, accesses value of `swiftLanguageModes`
 
 

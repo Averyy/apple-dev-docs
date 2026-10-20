@@ -1,18 +1,19 @@
 # CFBagGetValue(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a requested value from a bag.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Returns a requested value from a bag.
 func CFBagGetValue(_ theBag: CFBag!, _ value: UnsafeRawPointer!) -> UnsafeRawPointer!
 ```
 
+```c
+extern const void *CFBagGetValue(CFBagRef theBag, const void *value);
+```
+
 #### Return Value
 
-A pointer to `value`, or `NULL` if `value` is not in `theBag`. If the value is a Core Foundation object, ownership follows the [`The Get Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
+A pointer to `value`, or `NULL` if `value` is not in `theBag`. If the value is a Core Foundation object, ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 
 #### Discussion
 
@@ -35,15 +40,16 @@ Depending on the implementation of the equal callback specified when creating `t
 
 ## See Also
 
-- [func CFBagContainsValue(CFBag!, UnsafeRawPointer!) -> Bool](cfbagcontainsvalue(_:_:).md)
+### Examining a Bag
+- [func CFBagContainsValue(CFBag!, UnsafeRawPointer!) -> Bool](./cfbagcontainsvalue%28_,_%29.md)
   Reports whether or not a value is in a bag.
-- [func CFBagGetCount(CFBag!) -> CFIndex](cfbaggetcount(_:).md)
+- [func CFBagGetCount(CFBag!) -> CFIndex](./cfbaggetcount%28_%29.md)
   Returns the number of values currently in a bag.
-- [func CFBagGetCountOfValue(CFBag!, UnsafeRawPointer!) -> CFIndex](cfbaggetcountofvalue(_:_:).md)
+- [func CFBagGetCountOfValue(CFBag!, UnsafeRawPointer!) -> CFIndex](./cfbaggetcountofvalue%28_,_%29.md)
   Returns the number of times a value occurs in a bag.
-- [func CFBagGetValueIfPresent(CFBag!, UnsafeRawPointer!, UnsafeMutablePointer<UnsafeRawPointer?>!) -> Bool](cfbaggetvalueifpresent(_:_:_:).md)
+- [func CFBagGetValueIfPresent(CFBag!, UnsafeRawPointer!, UnsafeMutablePointer<UnsafeRawPointer?>!) -> Bool](./cfbaggetvalueifpresent%28_,_,_%29.md)
   Reports whether or not a value is in a bag, and returns that value indirectly if it exists.
-- [func CFBagGetValues(CFBag!, UnsafeMutablePointer<UnsafeRawPointer?>!)](cfbaggetvalues(_:_:).md)
+- [func CFBagGetValues(CFBag!, UnsafeMutablePointer<UnsafeRawPointer?>!)](./cfbaggetvalues%28_,_%29.md)
   Fills a buffer with values from a bag.
 
 

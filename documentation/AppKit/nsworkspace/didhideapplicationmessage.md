@@ -1,7 +1,8 @@
 # NSWorkspace.DidHideApplicationMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 26.0+
@@ -15,15 +16,15 @@ struct DidHideApplicationMessage
 ## Topics
 
 ### Initializers
-- [init(application: NSRunningApplication)](nsworkspace/didhideapplicationmessage/init(application:).md)
+- [init(application: NSRunningApplication)](./didhideapplicationmessage/init%28application%29.md)
 ### Instance Properties
-- [var application: NSRunningApplication](nsworkspace/didhideapplicationmessage/application.md)
+- [var application: NSRunningApplication](./didhideapplicationmessage/application.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

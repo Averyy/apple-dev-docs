@@ -1,7 +1,8 @@
 # MPMediaLibraryAuthorizationStatus.notDetermined
 
 **Framework**: Media Player  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user hasn’t determined whether to authorize the use of their media library.
 
@@ -17,13 +18,18 @@ The user hasn’t determined whether to authorize the use of their media library
 case notDetermined
 ```
 
+```c
+MPMediaLibraryAuthorizationStatusNotDetermined
+```
+
 ## See Also
 
-- [MPMediaLibraryAuthorizationStatus.denied](mpmedialibraryauthorizationstatus/denied.md)
+### Authorization statuses
+- [MPMediaLibraryAuthorizationStatus.denied](./denied.md)
   The app may not access the items in the user’s media library.
-- [MPMediaLibraryAuthorizationStatus.restricted](mpmedialibraryauthorizationstatus/restricted.md)
+- [MPMediaLibraryAuthorizationStatus.restricted](./restricted.md)
   The app may access some of the content in the user’s media library.
-- [MPMediaLibraryAuthorizationStatus.authorized](mpmedialibraryauthorizationstatus/authorized.md)
+- [MPMediaLibraryAuthorizationStatus.authorized](./authorized.md)
   Your app may access items in the user’s media library.
 
 

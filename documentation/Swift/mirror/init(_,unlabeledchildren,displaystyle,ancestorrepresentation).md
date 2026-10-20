@@ -1,7 +1,8 @@
 # init(_:unlabeledChildren:displayStyle:ancestorRepresentation:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a mirror representing the given subject with unlabeled children.
 

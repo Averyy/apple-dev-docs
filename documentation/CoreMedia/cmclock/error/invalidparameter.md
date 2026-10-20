@@ -1,7 +1,8 @@
 # invalidParameter
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error that indicates an invalid parameter.
 
@@ -22,11 +23,12 @@ static let invalidParameter: NSError
 
 ## See Also
 
-- [static let allocationFailed: NSError](cmclock/error/allocationfailed.md)
+### Constants
+- [static let allocationFailed: NSError](./allocationfailed.md)
   An error that indicates the allocation fails.
-- [static let missingRequiredParameter: NSError](cmclock/error/missingrequiredparameter.md)
+- [static let missingRequiredParameter: NSError](./missingrequiredparameter.md)
   An error that indicates a missing parameter the function requires.
-- [static let unsupportedOperation: NSError](cmclock/error/unsupportedoperation.md)
+- [static let unsupportedOperation: NSError](./unsupportedoperation.md)
   An error that indicates an operation the system doesn’t support.
 
 

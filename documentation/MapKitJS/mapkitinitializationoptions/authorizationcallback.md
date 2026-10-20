@@ -1,7 +1,8 @@
 # authorizationCallback
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 A callback function that obtains a token.
 
@@ -10,7 +11,7 @@ A callback function that obtains a token.
 
 ## Declaration
 
-```swift
+```
 authorizationCallback?: (this: null, done: (token: string) => void) => void;
 ```
 
@@ -24,7 +25,8 @@ MapKit JS asyncronously invokes the `authorizationCallback` function throughout 
 
 ## See Also
 
-- [language](mapkitinitializationoptions/language.md)
+### Callback and language
+- [language](./language.md)
   An ID that indicates the preferred language to use when displaying map labels, controls, directions, and other text.
 
 

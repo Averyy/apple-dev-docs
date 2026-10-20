@@ -1,7 +1,8 @@
 # CredentialSession.NFCFieldInformation
 
 **Framework**: SecureElementCredential  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The state of an NFC RF field.
 
@@ -18,22 +19,23 @@ enum NFCFieldInformation
 ## Topics
 
 ### Field states
-- [CredentialSession.NFCFieldInformation.fieldAbsent](credentialsession/nfcfieldinformation/fieldabsent.md)
+- [CredentialSession.NFCFieldInformation.fieldAbsent](./nfcfieldinformation/fieldabsent.md)
   No NFC reader RF field is present.
-- [CredentialSession.NFCFieldInformation.fieldPresent](credentialsession/nfcfieldinformation/fieldpresent.md)
+- [CredentialSession.NFCFieldInformation.fieldPresent](./nfcfieldinformation/fieldpresent.md)
   An NFC reader’s RF field is present.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case fieldStateChanged(info: CredentialSession.NFCFieldInformation)](credentialsession/event/fieldstatechanged(info:).md)
+### NFC field events
+- [case fieldStateChanged(info: CredentialSession.NFCFieldInformation)](./event/fieldstatechanged%28info%29.md)
   The state of the NFC RF field changed during card emulation.
 
 

@@ -1,45 +1,46 @@
 # End User License Agreements (EULA)
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: API Collection
 
 Manage custom End User License Agreements (EULA) that are related to territories.
 
 #### Overview
 
-`endUserLicenseAgreements` represents the custom End User License Agreement (EULA) that you provide. Apple provides a standard EULA that applies in all territories. If you need to provide a custom EULA, use this resource to provide your agreement text. Relate it to the app and territories for which it applies using the [`Territories`](territories.md) resource.
+`endUserLicenseAgreements` represents the custom End User License Agreement (EULA) that you provide. Apple provides a standard EULA that applies in all territories. If you need to provide a custom EULA, use this resource to provide your agreement text. Relate it to the app and territories for which it applies using the [Territories](./territories.md) resource.
 
-For more information, see App Store Connect Help: [`Create a new version`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/update-your-app/create-a-new-version).
+For more information, see App Store Connect Help: [Create a new version](https://developer.apple.com/help/app-store-connect/update-your-app/create-a-new-version).
 
 ## Topics
 
 ### Creating, Modifying, and Deleting an EULA
-- [Create an end user license agreement](post-v1-enduserlicenseagreements.md)
+- [Create an end user license agreement](./post-v1-enduserlicenseagreements.md)
   Add a custom end user license agreement (EULA) to an app and configure the territories to which it applies.
-- [Modify an end user license agreement](patch-v1-enduserlicenseagreements-_id_.md)
+- [Modify an end user license agreement](./patch-v1-enduserlicenseagreements-_id_.md)
   Update the text or territories for your custom end user license agreement.
-- [Delete an end user license agreement](delete-v1-enduserlicenseagreements-_id_.md)
+- [Delete an end user license agreement](./delete-v1-enduserlicenseagreements-_id_.md)
   Delete the custom end user license agreement that is associated with an app.
 ### Reading EULA and Listing Territories
-- [Read end user license agreement information](get-v1-enduserlicenseagreements-_id_.md)
+- [Read end user license agreement information](./get-v1-enduserlicenseagreements-_id_.md)
   Get the custom end user license agreement associated with an app, and the territories it applies to.
-- [Read the end user license agreement information of an app](get-v1-apps-_id_-enduserlicenseagreement.md)
+- [Read the end user license agreement information of an app](./get-v1-apps-_id_-enduserlicenseagreement.md)
   Get the custom end user license agreement (EULA) for a specific app and the territories where the agreement applies.
-- [List all territories for an end user license agreement](get-v1-enduserlicenseagreements-_id_-territories.md)
+- [List all territories for an end user license agreement](./get-v1-enduserlicenseagreements-_id_-territories.md)
   List all the App Store territories to which a specific custom app license agreement applies.
-- [List territory IDs for an end user license agreement](get-v1-enduserlicenseagreements-_id_-relationships-territories.md)
+- [List territory IDs for an end user license agreement](./get-v1-enduserlicenseagreements-_id_-relationships-territories.md)
 ### Objects
-- [object EndUserLicenseAgreement](enduserlicenseagreement.md)
+- [object EndUserLicenseAgreement](./enduserlicenseagreement.md)
   A custom end-user license agreement (EULA) for an app, targeting specific territories where it applies.
-- [object EndUserLicenseAgreementCreateRequest](enduserlicenseagreementcreaterequest.md)
+- [object EndUserLicenseAgreementCreateRequest](./enduserlicenseagreementcreaterequest.md)
   The request body you use to create an End User License Agreement.
-- [object EndUserLicenseAgreementUpdateRequest](enduserlicenseagreementupdaterequest.md)
+- [object EndUserLicenseAgreementUpdateRequest](./enduserlicenseagreementupdaterequest.md)
   The request body you use to update an End User License Agreement.
-- [object EndUserLicenseAgreementResponse](enduserlicenseagreementresponse.md)
+- [object EndUserLicenseAgreementResponse](./enduserlicenseagreementresponse.md)
   The response body for endpoints that read or modify a custom end user license agreement for an app.
-- [object EndUserLicenseAgreementWithoutIncludesResponse](enduserlicenseagreementwithoutincludesresponse.md)
+- [object EndUserLicenseAgreementWithoutIncludesResponse](./enduserlicenseagreementwithoutincludesresponse.md)
   A response containing a single EULA, without including territory details.
-- [object AppEndUserLicenseAgreementLinkageResponse](appenduserlicenseagreementlinkageresponse.md)
-- [object EndUserLicenseAgreementTerritoriesLinkagesResponse](enduserlicenseagreementterritorieslinkagesresponse.md)
+- [object AppEndUserLicenseAgreementLinkageResponse](./appenduserlicenseagreementlinkageresponse.md)
+- [object EndUserLicenseAgreementTerritoriesLinkagesResponse](./enduserlicenseagreementterritorieslinkagesresponse.md)
 
 
 ---

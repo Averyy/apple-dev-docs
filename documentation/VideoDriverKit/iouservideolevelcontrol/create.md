@@ -1,7 +1,8 @@
 # Create
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 A static factory method that allocates and initializes a video level control.
 
@@ -10,7 +11,7 @@ A static factory method that allocates and initializes a video level control.
 
 ## Declaration
 
-```swift
+```c
 static OSSharedPtr<IOUserVideoLevelControl> Create(IOUserVideoDriver *in_driver, bool in_is_settable, float in_decibel_value, IOUserVideoLevelControlRange in_decibel_range, IOUserVideoObjectPropertyElement in_control_element, IOUserVideoObjectPropertyScope in_control_scope, IOUserVideoClassID in_control_class_id);
 ```
 
@@ -34,15 +35,16 @@ If IOUserVideoLevelControl is subclassed to override behavior, don’t use this 
 
 ## See Also
 
-- [init](iouservideolevelcontrol/init.md)
+### Creating a level control
+- [init](./init.md)
   Initializes an video level control.
-- [IOUserVideoDriver](iouservideodriver.md)
+- [IOUserVideoDriver](../iouservideodriver.md)
   A video driver.
-- [IOUserVideoLevelControlRange](iouservideolevelcontrolrange.md)
+- [IOUserVideoLevelControlRange](../iouservideolevelcontrolrange.md)
   A control that supports a range of floating-point values.
-- [IOUserVideoObjectPropertyElement](videodriverkit/iouservideoobjectpropertyelement.md)
+- [IOUserVideoObjectPropertyElement](../videodriverkit-page/iouservideoobjectpropertyelement.md)
   An integer that identifies, along with the property selector and scope, a specific piece of information about a video object.
-- [IOUserVideoObjectPropertyScope](videodriverkit/iouservideoobjectpropertyscope.md)
+- [IOUserVideoObjectPropertyScope](../videodriverkit-page/iouservideoobjectpropertyscope.md)
   A four character code which, along with the selector and element, identifies a specific piece of information about a video object.
 
 

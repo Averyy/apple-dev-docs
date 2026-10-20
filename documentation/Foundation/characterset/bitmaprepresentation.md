@@ -1,7 +1,8 @@
 # bitmapRepresentation
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a representation of the `CharacterSet` in binary format.
 

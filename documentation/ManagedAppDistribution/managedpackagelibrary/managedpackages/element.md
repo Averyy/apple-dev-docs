@@ -1,7 +1,8 @@
 # ManagedPackageLibrary.ManagedPackages.Element
 
 **Framework**: ManagedAppDistribution  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of element this asynchronous sequence produces.
 

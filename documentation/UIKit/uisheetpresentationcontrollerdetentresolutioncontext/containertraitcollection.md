@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The trait collection of the sheet’s container view.
@@ -17,13 +18,18 @@ The trait collection of the sheet’s container view.
 var containerTraitCollection: UITraitCollection { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UITraitCollection * containerTraitCollection;
+```
+
 #### Discussion
 
-The value of this property is the same as the window’s [`traitCollection`](uiwindowscene/traitcollection.md), and doesn’t include overrides from the sheet’s [`overrideTraitCollection`](uipresentationcontroller/overridetraitcollection.md).
+The value of this property is the same as the window’s [`traitCollection`](../uiwindowscene/traitcollection.md), and doesn’t include overrides from the sheet’s [`overrideTraitCollection`](../uipresentationcontroller/overridetraitcollection.md).
 
 ## See Also
 
-- [var maximumDetentValue: CGFloat](uisheetpresentationcontrollerdetentresolutioncontext/maximumdetentvalue.md)
+### Accessing the properties of the context
+- [var maximumDetentValue: CGFloat](./maximumdetentvalue.md)
   The maximum value of a detent.
 
 

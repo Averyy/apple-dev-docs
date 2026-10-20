@@ -1,6 +1,7 @@
 # Configuring your environment for the Verify with Wallet API
 
-**Framework**: PassKit (Apple Pay and Wallet)
+**Framework**: PassKit (Apple Pay and Wallet)  
+**Role**: Article
 
 Set up your environment to use Verify with Wallet.
 
@@ -8,9 +9,9 @@ Set up your environment to use Verify with Wallet.
 
 Verify with Wallet allows you to verify a person’s information using their digital ID stored in Apple Wallet. Verify with Wallet streamlines the verification experience in apps that use age or identity verification by allowing people to share information from their digital ID.
 
-To request a digital ID stored in Apple Wallet, you use the [`PKIdentityNationalIDCardDescriptor`](pkidentitynationalidcarddescriptor.md). You need the `in-app-identity-presentment` entitlement to use this API, and you can [`submit your request here`](https://developer.apple.comhttps://developer.apple.com/contact/request/verify-with-wallet/). For more information on the Verify with Wallet API and entitlement requirements, see [`Get started with the Verify with Wallet API`](https://developer.apple.comhttps://developer.apple.com/wallet/get-started-with-verify-with-wallet/).
+To request a digital ID stored in Apple Wallet, you use the [`PKIdentityNationalIDCardDescriptor`](./pkidentitynationalidcarddescriptor.md). You need the `in-app-identity-presentment` entitlement to use this API, and you can [submit your request here](https://developer.apple.com/contact/request/verify-with-wallet/). For more information on the Verify with Wallet API and entitlement requirements, see [Get started with the Verify with Wallet API](https://developer.apple.com/wallet/get-started-with-verify-with-wallet/).
 
-#### Set Up Your Developer Account
+#### Set up your developer account
 
 After you add the `in-app-identity-presentment` entitlement, you’ll set up your developer account. Complete the following steps in the Certificates, Identifiers, & Profiles section of the Apple Developer website:
 
@@ -20,9 +21,9 @@ After you add the `in-app-identity-presentment` entitlement, you’ll set up you
 4. Add the ‘In App Identity Presentment Merchant IDs’ capability to your App ID and select the associated Merchant IDs.
 5. Generate a new provisioning profile with these changes.
 
-#### Configure Your Apps Entitlement File
+#### Configure your app’s entitlement file
 
-Choose the `document-type` you want to add the entitlement to from the entitlement request you submitted. For more information, see [`Managing your app’s information property list values`](https://developer.apple.com/documentation/bundleresources/managing-your-app-s-information-property-list).
+Choose the `document-type` you want to add the entitlement to from the entitlement request you submitted. For more information, see [Managing your app’s information property list values](../BundleResources/managing-your-app-s-information-property-list.md).
 
 Filter the list of entitlements to just the ones you requested through the entitlement request. The following example shows what a entitlement with the `us-drivers-license` doc-type request might look like:
 
@@ -54,37 +55,38 @@ Filter the list of entitlements to just the ones you requested through the entit
 
 You must add the `com.apple.developer.in-app-identity-presentment.merchant-identifiers` entitlement even if you’re using the same merchant ID for Apple Pay. Apple Pay’s `com.apple.developer.in-app-payments` entitlement isn’t recognized for identity verification.
 
-Once you’ve set up your developer environment, you can use the [`PKIdentityNationalIDCardDescriptor`](pkidentitynationalidcarddescriptor.md) API to request a digital ID stored in Apple Wallet.
+Once you’ve set up your developer environment, you can use the [`PKIdentityNationalIDCardDescriptor`](./pkidentitynationalidcarddescriptor.md) API to request a digital ID stored in Apple Wallet.
 
 ## See Also
 
-- [Requesting identity data from a Wallet pass](requesting-identity-data-from-a-wallet-pass.md)
+### Identity passes and authorization
+- [Requesting identity data from a Wallet pass](./requesting-identity-data-from-a-wallet-pass.md)
   Initiate a request for identity information by prompting a user for permission and decrypting a response payload.
-- [Verifying Wallet identity requests](verifying-wallet-identity-requests.md)
+- [Verifying Wallet identity requests](./verifying-wallet-identity-requests.md)
   Decrypt and verify an in-app presentment request on your server.
-- [class PKIdentityPhotoIDDescriptor](pkidentityphotoiddescriptor.md)
+- [class PKIdentityPhotoIDDescriptor](./pkidentityphotoiddescriptor.md)
   An object you use to request information from a user’s photo ID or equivalent document.
-- [class PKIdentityAnyOfDescriptor](pkidentityanyofdescriptor.md)
+- [class PKIdentityAnyOfDescriptor](./pkidentityanyofdescriptor.md)
   An object you use to request information from multiple identity documents.
-- [class PKIdentityDriversLicenseDescriptor](pkidentitydriverslicensedescriptor.md)
+- [class PKIdentityDriversLicenseDescriptor](./pkidentitydriverslicensedescriptor.md)
   An object for requesting information from a user’s driver’s license or equivalent document.
-- [class PKAddIdentityDocumentMetadata](pkaddidentitydocumentmetadata.md)
+- [class PKAddIdentityDocumentMetadata](./pkaddidentitydocumentmetadata.md)
   The object for specifying the metadata necessary to provision identity documents.
-- [class PKAddIdentityDocumentConfiguration](pkaddidentitydocumentconfiguration.md)
+- [class PKAddIdentityDocumentConfiguration](./pkaddidentitydocumentconfiguration.md)
   Configuration to define the identity document.
-- [enum PKAddIdentityDocumentType](pkaddidentitydocumenttype.md)
+- [enum PKAddIdentityDocumentType](./pkaddidentitydocumenttype.md)
   Classifications that reflect the type of identity document.
-- [struct JPKIPassContents](jpkipasscontents.md)
+- [struct JPKIPassContents](./jpkipasscontents.md)
   A set of actions for viewing and updating PINs, passwords, and signing abilities associated with digital identities on the JPKI applet.
-- [class PKAddIdentityDocumentConfiguration](pkaddidentitydocumentconfiguration.md)
+- [class PKAddIdentityDocumentConfiguration](./pkaddidentitydocumentconfiguration.md)
   Configuration to define the identity document.
-- [class PKAddPassMetadataPreview](pkaddpassmetadatapreview.md)
+- [class PKAddPassMetadataPreview](./pkaddpassmetadatapreview.md)
   A preview object that contains information representing the pass you add to Wallet.
-- [class PKIdentityDocumentMetadata](pkidentitydocumentmetadata.md)
+- [class PKIdentityDocumentMetadata](./pkidentitydocumentmetadata.md)
   A set of configured metadata that defines the required information to add the corresponding pass to Wallet.
-- [class PKIdentityNationalIDCardDescriptor](pkidentitynationalidcarddescriptor.md)
+- [class PKIdentityNationalIDCardDescriptor](./pkidentitynationalidcarddescriptor.md)
   An object for requesting information from a user’s national ID card.
-- [class PKJapanIndividualNumberCardMetadata](pkjapanindividualnumbercardmetadata.md)
+- [class PKJapanIndividualNumberCardMetadata](./pkjapanindividualnumbercardmetadata.md)
   A class that contains metadata indicating the specific product instance to provision.
 
 

@@ -1,12 +1,13 @@
 # removeAndLabel(at:)
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the value and label at the given index.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Removes the value and label at the given index.
 func removeAndLabel(at index: Int) -> Bool
 ```
 
+```objc
+- (BOOL) removeValueAndLabelAtIndex:(NSUInteger) index;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successful; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if successful; otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 

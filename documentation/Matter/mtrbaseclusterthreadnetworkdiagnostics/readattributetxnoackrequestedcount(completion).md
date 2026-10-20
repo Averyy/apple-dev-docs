@@ -1,7 +1,8 @@
 # readAttributeTxNoAckRequestedCount(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeTxNoAckRequestedCount(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeTxNoAckRequestedCount() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeTxNoAckRequestedCountWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # ActivationLockBypassCodeCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to get the code to bypass Activation Lock on a device.
 
@@ -14,18 +15,18 @@ The command to get the code to bypass Activation Lock on a device.
 
 ## Declaration
 
-```swift
+```
 object ActivationLockBypassCodeCommand
 ```
 
 ## Mentions
 
-- [Handling NotNow status responses](handling-notnow-status-responses.md)
+- [Handling NotNow status responses](./handling-notnow-status-responses.md)
 
 ## Topics
 
 ### Objects
-- [object ActivationLockBypassCodeCommand.Command](activationlockbypasscodecommand/command-data.dictionary.md)
+- [object ActivationLockBypassCodeCommand.Command](./activationlockbypasscodecommand/command-data.dictionary.md)
   The command to get the code to bypass Activation Lock on a device.
 
 ## Properties
@@ -35,7 +36,8 @@ object ActivationLockBypassCodeCommand
 
 ## See Also
 
-- [object ActivationLockBypassCodeResponse](activationlockbypasscoderesponse.md)
+### Commands and responses
+- [object ActivationLockBypassCodeResponse](./activationlockbypasscoderesponse.md)
   A response from the device after it processes the command to get the code to bypass Activation Lock on a device.
 
 

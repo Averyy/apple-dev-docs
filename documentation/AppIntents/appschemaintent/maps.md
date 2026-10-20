@@ -1,7 +1,8 @@
 # maps
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of intent schemas in the maps domain.
 
@@ -17,6 +18,8 @@ The collection of intent schemas in the maps domain.
 ```swift
 static var maps: some AppSchema.MapsIntent { get }
 ```
+
+Available when `Self` is `AppSchema.Intent`.
 
 
 ---

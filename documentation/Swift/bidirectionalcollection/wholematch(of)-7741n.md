@@ -1,7 +1,8 @@
 # wholeMatch(of:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a match if this string is matched by the given regex in its entirety.
 
@@ -19,6 +20,8 @@ Returns a match if this string is matched by the given regex in its entirety.
 ```swift
 func wholeMatch<R>(of regex: R) -> Regex<R.RegexOutput>.Match? where R : RegexComponent
 ```
+
+Available when `SubSequence` is `Substring`.
 
 #### Return Value
 

@@ -1,7 +1,8 @@
 # RoutingAppCoverage.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a Routing App Coverages resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a Routing App Coverages resource.
 
 ## Declaration
 
-```swift
+```
 object RoutingAppCoverage.Attributes
 ```
 
@@ -24,7 +25,8 @@ object RoutingAppCoverage.Attributes
 
 ## See Also
 
-- [object RoutingAppCoverage.Relationships](routingappcoverage/relationships-data.dictionary.md)
+### Objects
+- [object RoutingAppCoverage.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

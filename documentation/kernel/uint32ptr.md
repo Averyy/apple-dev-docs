@@ -1,14 +1,15 @@
 # UInt32Ptr
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 typedef UInt32 *UInt32Ptr;
 ```
 

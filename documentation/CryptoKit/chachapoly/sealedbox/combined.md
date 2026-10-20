@@ -1,7 +1,8 @@
 # combined
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A combined element composed of the tag, the nonce, and the ciphertext.
 

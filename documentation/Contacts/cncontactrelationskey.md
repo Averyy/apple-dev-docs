@@ -1,7 +1,8 @@
 # CNContactRelationsKey
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The relationships of the contact.
 
@@ -17,6 +18,10 @@ The relationships of the contact.
 
 ```swift
 let CNContactRelationsKey: String
+```
+
+```c
+extern NSString * const CNContactRelationsKey;
 ```
 
 #### Discussion

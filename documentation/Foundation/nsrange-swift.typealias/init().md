@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty range.
 
@@ -22,7 +23,8 @@ init()
 
 ## See Also
 
-- [init(location: Int, length: Int)](nsrange-swift.typealias/init(location:length:).md)
+### Creating a range
+- [init(location: Int, length: Int)](./init%28location,length%29.md)
   Creates a range with the given location and length.
 
 

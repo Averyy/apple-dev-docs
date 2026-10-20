@@ -1,7 +1,8 @@
 # CLSDataStoreDelegate
 
 **Framework**: ClassKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface the data store uses to request new contexts.
 
@@ -18,13 +19,17 @@ An interface the data store uses to request new contexts.
 protocol CLSDataStoreDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol CLSDataStoreDelegate <NSObject>
+```
+
 ## Mentions
 
-- [Building missing contexts](building-missing-contexts.md)
+- [Building missing contexts](./building-missing-contexts.md)
 
 #### Overview
 
-When you request a context from the data store, for example using a call to the [`descendant(matchingIdentifierPath:completion:)`](clscontext/descendant(matchingidentifierpath:completion:).md) method, the data store first tries to locate an existing context matching the search criterion (an identifier path in this case) in its database. Depending on certain conditions, the context might already exist in the database from the last time you requested it. If it does, the data store returns the stored context. But if it doesn’t exist, the data store asks its delegate to build a new context.
+When you request a context from the data store, for example using a call to the [`descendant(matchingIdentifierPath:completion:)`](./clscontext/descendant%28matchingidentifierpath,completion%29.md) method, the data store first tries to locate an existing context matching the search criterion (an identifier path in this case) in its database. Depending on certain conditions, the context might already exist in the database from the last time you requested it. If it does, the data store returns the stored context. But if it doesn’t exist, the data store asks its delegate to build a new context.
 
 Adopt the data store delegate protocol to provide contexts on demand.
 
@@ -33,19 +38,20 @@ You can alternatively build contexts directly without relying on the delegate ca
 ## Topics
 
 ### Creating Contexts
-- [func createContext(forIdentifier: String, parentContext: CLSContext, parentIdentifierPath: [String]) -> CLSContext?](clsdatastoredelegate/createcontext(foridentifier:parentcontext:parentidentifierpath:).md)
+- [func createContext(forIdentifier: String, parentContext: CLSContext, parentIdentifierPath: [String]) -> CLSContext?](./clsdatastoredelegate/createcontext%28foridentifier,parentcontext,parentidentifierpath%29.md)
   Asks the delegate for a new context with the given identifier for the given parent context.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Building missing contexts](building-missing-contexts.md)
+### Managing the delegate
+- [Building missing contexts](./building-missing-contexts.md)
   Create and initialize missing contexts.
-- [var delegate: (any CLSDataStoreDelegate)?](clsdatastore/delegate.md)
+- [var delegate: (any CLSDataStoreDelegate)?](./clsdatastore/delegate.md)
   The data store delegate instance.
 
 

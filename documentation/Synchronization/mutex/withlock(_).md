@@ -1,7 +1,8 @@
 # withLock(_:)
 
 **Framework**: Synchronization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls the given closure after acquiring the lock and then releases ownership.
 

@@ -11,7 +11,7 @@ This address mode is preferred for targeting specific applications. For example,
 ## Topics
 
 ### Constants
-- [var typeApplicationBundleID: DescType](../coreservices/typeapplicationbundleid.md)
+- [var typeApplicationBundleID: DescType](../../coreservices/typeapplicationbundleid.md)
   Indicates a descriptor containing UTF-8 characters that specify the bundle ID of an application. Bundle IDs should be constructed similarly to `"com.company.directorylocation.ApplicationName"`.
 
 

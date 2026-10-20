@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Insert elements after an identified menu.
@@ -17,6 +18,10 @@ Insert elements after an identified menu.
 
 ```swift
 func insertElements(_ insertedElements: [UIMenuElement], afterMenu siblingIdentifier: UIMenu.Identifier)
+```
+
+```objc
+- (void) insertElements:(NSArray<UIMenuElement *> *) insertedElements afterMenuForIdentifier:(UIMenuIdentifier) siblingIdentifier;
 ```
 
 ## Parameters

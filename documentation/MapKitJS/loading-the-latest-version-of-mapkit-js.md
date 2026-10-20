@@ -1,6 +1,7 @@
 # Loading the latest version of MapKit JS
 
-**Framework**: MapKit JS
+**Framework**: MapKit JS  
+**Role**: Article
 
 Link to the most recent autoupdating version of MapKit JS, or a version of your choice.
 
@@ -10,7 +11,7 @@ When you include a map element on your webpage, your webpage loads a version of 
 
 Load MapKit JS directly using a `<script>` tag, or by using the `@apple/mapkit-loader` package; save payload size and bandwidth by specifying only the libraries that you need. Increase the security of your website by implementing a Content Security Policy.
 
-#### Load with the Mapkit Js Loader
+#### Load with the MapKit JS Loader
 
 The `@apple/mapkit-loader` package is a convenient way to load MapKit JS: it provides a single API that you can use to load MapKit JS directly from your JavaScript or TypeScript source code, without having access to HTML.
 
@@ -26,30 +27,30 @@ const mapkit = await load({
 });
 ```
 
-See [`Creating a Maps token`](creating-a-maps-token.md) to obtain a Maps token and insert that into the `token` property. To load more efficiently, instruct MapKit JS to load only the specific libraries that you need by setting the `libraries` array.
+See [Creating a Maps token](./creating-a-maps-token.md) to obtain a Maps token and insert that into the `token` property. To load more efficiently, instruct MapKit JS to load only the specific libraries that you need by setting the `libraries` array.
 
-Your application code needs to call the `load()` function as early as possible, but only when it needs MapKit JS. The [`MapKit JS Loader project repository`](https://developer.apple.comhttps://github.com/apple/mapkit-loader) contains additional examples about integrating with different Web Frameworks and server-side rendering.
+Your application code needs to call the `load()` function as early as possible, but only when it needs MapKit JS. The [MapKit JS Loader project repository](https://github.com/apple/mapkit-loader) contains additional examples about integrating with different Web Frameworks and server-side rendering.
 
 The package automatically resolves type definitions for the interfaces that you load.
 
-#### Select Mapkit Js Libraries
+#### Select MapKit JS libraries
 
 Pick only the interfaces you need to optimize your app load time. MapKit JS divides its interfaces into libraries that you can specify when loading the framework:
 
 - **`services`**: All services interfaces (such as Search and Geocoder) and relevant data types.
 - **`full-map`**: All `mapkit.Map` features and relevant data types.
 - **`map`**: Basic `mapkit.Map` features without overlays, annotations, and relevant data types.
-- **`overlays`**: Overlays, data types, and displays on [`Map`](map.md).
-- **`annotations`**: Annotations, data types, and displays on [`Map`](map.md).
+- **`overlays`**: Overlays, data types, and displays on [`Map`](./map.md).
+- **`annotations`**: Annotations, data types, and displays on [`Map`](./map.md).
 - **`geojson`**: The GeoJSON importer.
-- **`user-location`**: User location display and controls on [`Map`](map.md).
-- **`look-around`**: [`LookAround`](lookaround.md) and [`LookAroundPreview`](lookaroundpreview.md).
+- **`user-location`**: User location display and controls on [`Map`](./map.md).
+- **`look-around`**: [`LookAround`](./lookaround.md) and [`LookAroundPreview`](./lookaroundpreview.md).
 
 You can set the libraries to load statically by defining them in the `libraries` options array on the MapKit JS Loader `load()` function, within a script tag in the `data-libraries` attribute.
 
-You can load additional libraries using the [`load()`](mapkit/load.md) method after MapKit JS initialization; the method returns a promise that resolves when the libraries finish loading. The [`init()`](mapkit/init.md) method also offers a `libraries` property in [`MapKitInitializationOptions`](mapkitinitializationoptions.md).
+You can load additional libraries using the [`load()`](./mapkit/load.md) method after MapKit JS initialization; the method returns a promise that resolves when the libraries finish loading. The [`init()`](./mapkit/init.md) method also offers a `libraries` property in [`MapKitInitializationOptions`](./mapkitinitializationoptions.md).
 
-#### Load with a Script Tag
+#### Load with a script tag
 
 Load MapKit JS through autoupdate URLs (which are backward-compatible with previous MapKit JS versions), as in the example below:
 
@@ -61,11 +62,11 @@ Load MapKit JS through autoupdate URLs (which are backward-compatible with previ
     data-token="Your MapKit JS token"></script>
 ```
 
-See [`Creating a Maps token`](creating-a-maps-token.md) to obtain a Maps token and insert the token into the `data-token` attribute. To load MapKit JS more efficiently, specify that MapKit JS only loads the specific libraries that you need by setting the `data-libraries` attribute.
+See [Creating a Maps token](./creating-a-maps-token.md) to obtain a Maps token and insert the token into the `data-token` attribute. To load MapKit JS more efficiently, specify that MapKit JS only loads the specific libraries that you need by setting the `data-libraries` attribute.
 
 Once the callback triggers, `mapkit` is available as a global object. Install `@types/apple-mapkit` separately to access its type definitions.
 
-##### Select Script Element Attributes
+##### Select script element attributes
 
 The `script` tag you use to load MapKit JS supports several attribute elements that allow you to customize the loading of the framework to support only the features you need.
 
@@ -89,9 +90,9 @@ The data attributes you can set on the `script` element are:
 - **`data-callback`**: Required; this is the callback the browser calls when MapKit JS finishes loading or when library loading fails, allowing your application to handle errors.
 - **`data-language`**: The language to set for MapKit JS. A language ID is a language designator followed by an optional region or script designator. Examples of language IDs include: `de` (German), `es-MX`, (Mexican Spanish), and `zh-Hans` (simplified Chinese).
 - **`data-libraries`**: Required; this is a comma-separated list of libraries to load at initialization. See the list of available libraries and the services they provide below.
-- **`data-token`**: Required unless you intend to call [`init()`](mapkit/init.md) later. See [`Creating a Maps token`](creating-a-maps-token.md) to obtain a Maps token.
+- **`data-token`**: Required unless you intend to call [`init()`](./mapkit/init.md) later. See [Creating a Maps token](./creating-a-maps-token.md) to obtain a Maps token.
 
-#### Choose Specific Releases Using Semantic Versioning
+#### Choose specific releases using semantic versioning
 
 MapKit JS follows semantic versioning with each release. As a result, you have full control over when to upgrade to a new version of MapKit JS. Each version follows the standard semantic versioning pattern `MAJOR.MINOR.PATCH,` which conveys the following information:
 
@@ -125,7 +126,7 @@ Here, the script tag pins the `major.minor` version at `6.0`, and the server aut
 
 Autoupdate URLs have a cache time of 5 minutes.
 
-#### Use Explicitly Versioned Urls
+#### Use explicitly versioned URLs
 
 If your code depends upon a specific MapKit JS version, each version of MapKit JS has a unique URL. Linking to a specific version ensures that your app always gets that exact version of MapKit JS.
 
@@ -143,9 +144,9 @@ Below is an example of a version URL, loading MapKit JS with a `<script>` tag:
 
 Browsers cache version URLs for a longer time. Use versioned URLs if you want to be in full control of when MapKit JS updates and get the benefits of browser caching.
 
-#### Load the Full Bundle of Mapkit Js
+#### Load the full bundle of MapKit JS
 
-> **Note**:  The full bundle does not contain newer features like [`LookAround`](lookaround.md).
+> **Note**:  The full bundle does not contain newer features like [`LookAround`](./lookaround.md).
 
 A full browser bundle is also available, but it isn’t recommended in production for performance reasons. With the full bundle, the full MapKit JS interfaces are available as soon as the script tag loads.
 
@@ -227,13 +228,14 @@ const mapKitJsLoadedPromise = new Promise(resolve => {
 
 ## See Also
 
-- [Displaying place information using the Maps Embed API](displaying-place-information-using-the-maps-embed-api.md)
+### Essentials
+- [Displaying place information using the Maps Embed API](./displaying-place-information-using-the-maps-embed-api.md)
   Show place information on a map using a URL.
-- [Creating a Maps token](creating-a-maps-token.md)
+- [Creating a Maps token](./creating-a-maps-token.md)
   Generate your token to access MapKit services with proper authorization.
-- [Understanding Browser Support](browser-support.md)
+- [Understanding Browser Support](./browser-support.md)
   Supported browsers and compatibility information for MapKit JS.
-- [class mapkit](mapkit.md)
+- [class mapkit](./mapkit.md)
   The JavaScript API for embedding Apple Maps on your website.
 
 

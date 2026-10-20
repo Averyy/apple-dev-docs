@@ -1,7 +1,8 @@
 # colorSpaceDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var colorSpaceDidChange: NotificationCenter.BaseMessageIdentifier<NSScreen.ColorSpaceDidChangeMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSScreen.ColorSpaceDidChangeMessage>`.
 
 
 ---

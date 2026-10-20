@@ -1,7 +1,8 @@
 # init(textLayoutManager:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance with the text layout manager you provide.
 
@@ -18,9 +19,13 @@ Creates a new instance with the text layout manager you provide.
 init(textLayoutManager: NSTextLayoutManager)
 ```
 
+```objc
+- (instancetype) initWithTextLayoutManager:(NSTextLayoutManager *) textLayoutManager;
+```
+
 ## Parameters
 
-- `textLayoutManager`: The [`NSTextLayoutManager`](nstextlayoutmanager.md) to associate with this viewport layout controller.
+- `textLayoutManager`: The [`NSTextLayoutManager`](../nstextlayoutmanager.md) to associate with this viewport layout controller.
 
 
 ---

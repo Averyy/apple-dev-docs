@@ -1,7 +1,8 @@
 # makeIterator()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an iterator over the elements of this collection.
 
@@ -22,7 +23,7 @@ func makeIterator() -> CollectionOfOne<Element>.Iterator
 
 #### Discussion
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

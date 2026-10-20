@@ -1,14 +1,15 @@
 # close
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - tvOS 13.0+
 
 ## Declaration
 
-```swift
+```
 void close(
     in Object error
 );

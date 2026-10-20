@@ -1,7 +1,8 @@
 # init(bytesRead:itemAttributes:)
 
 **Framework**: FSKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a result for a file-reading operation.
 
@@ -14,6 +15,10 @@ Creates a result for a file-reading operation.
 init?(bytesRead actuallyRead: Int, itemAttributes attributes: FSItem.Attributes)
 ```
 
+```objc
+- (instancetype) initWithBytesRead:(size_t) actuallyRead itemAttributes:(FSItemAttributes *) attributes;
+```
+
 #### Return Value
 
 A populated result instance, or `nil` if validation fails.
@@ -21,11 +26,12 @@ A populated result instance, or `nil` if validation fails.
 ## Parameters
 
 - `actuallyRead`: The number of bytes actually read from the file. This may be less than the requested length if the end of file was reached.
-- `attributes`: The updated [`FSItem.Attributes`](fsitem/attributes.md) of the file after the read operation (e.g., updated access time).
+- `attributes`: The updated [`FSItem.Attributes`](../fsitem/attributes.md) of the file after the read operation (e.g., updated access time).
 
 ## See Also
 
-- [FSItem.Attributes](fsitem/attributes.md)
+### Creating a read-file result
+- [FSItem.Attributes](../fsitem/attributes.md)
   Attributes of an item, such as size, creation and modification times, and user and group identifiers.
 
 

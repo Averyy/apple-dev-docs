@@ -1,7 +1,8 @@
 # detailRatio
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.4+
@@ -15,6 +16,10 @@
 
 ```swift
 var detailRatio: UInt16 { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) unsigned short detailRatio;
 ```
 
 

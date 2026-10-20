@@ -1,7 +1,8 @@
 # extensionContexts
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of all the currently loaded extension contexts.
 
@@ -18,9 +19,14 @@ A set of all the currently loaded extension contexts.
 var extensionContexts: Set<WKWebExtensionContext> { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSSet<WKWebExtensionContext *> * extensionContexts;
+```
+
 ## See Also
 
-- [var extensions: Set<WKWebExtension>](wkwebextensioncontroller/extensions.md)
+### Related Documentation
+- [var extensions: Set<WKWebExtension>](./extensions.md)
   A set of all the currently loaded extensions.
 
 

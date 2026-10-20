@@ -1,7 +1,8 @@
 # NWParameters.Attribution.user
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 15.0+
@@ -20,7 +21,7 @@ case user
 
 ## Mentions
 
-- [Indicating the source of network activity](indicating-the-source-of-network-activity.md)
+- [Indicating the source of network activity](../../indicating-the-source-of-network-activity.md)
 
 
 ---

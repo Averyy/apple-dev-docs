@@ -1,7 +1,8 @@
 # UITabAccessory.Environment.inline
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The environment for when the accessory is laid out inline with the collapsed bottom tab bar.
 
@@ -14,6 +15,10 @@ The environment for when the accessory is laid out inline with the collapsed bot
 
 ```swift
 case inline
+```
+
+```c
+UITabAccessoryEnvironmentInline
 ```
 
 

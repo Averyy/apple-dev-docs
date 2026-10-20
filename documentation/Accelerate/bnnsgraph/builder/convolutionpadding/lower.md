@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.ConvolutionPadding.lower
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Pad the output to look like the input but prefer padding on the top and left.
 

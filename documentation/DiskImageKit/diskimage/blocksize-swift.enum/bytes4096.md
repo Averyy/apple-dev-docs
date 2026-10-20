@@ -1,7 +1,8 @@
 # DiskImage.BlockSize.bytes4096
 
 **Framework**: DiskImageKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that represents a 4096 byte block size.
 
@@ -16,7 +17,7 @@ case bytes4096
 
 #### Discussion
 
-The framework doesn’t support this block size for RAW images; see [`RAWCreationConfiguration`](rawcreationconfiguration.md).
+The framework doesn’t support this block size for RAW images; see [`RAWCreationConfiguration`](../../rawcreationconfiguration.md).
 
 
 ---

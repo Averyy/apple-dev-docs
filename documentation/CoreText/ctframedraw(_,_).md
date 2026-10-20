@@ -1,7 +1,8 @@
 # CTFrameDraw(_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Draws an entire frame into a context.
 
@@ -18,6 +19,10 @@ Draws an entire frame into a context.
 
 ```swift
 func CTFrameDraw(_ frame: CTFrame, _ context: CGContext)
+```
+
+```c
+extern void CTFrameDraw(CTFrameRef frame, CGContextRef context);
 ```
 
 #### Discussion

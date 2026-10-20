@@ -1,7 +1,8 @@
 # highlightedResultIndex
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the result the find panel highlights.
 
@@ -17,23 +18,28 @@ The index of the result the find panel highlights.
 var highlightedResultIndex: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger highlightedResultIndex;
+```
+
 #### Discussion
 
-To indicate no highlighted result, return `nil` (Swift) or [`NSNotFound`](https://developer.apple.com/documentation/foundation/nsnotfound-9t5v2) (Objective-C).
+To indicate no highlighted result, return `nil` (Swift) or [`NSNotFound`](../../Foundation/nsnotfound-9t5v2.md) (Objective-C).
 
 ## See Also
 
-- [var resultCount: Int](uifindsession/resultcount.md)
+### Getting session information
+- [var resultCount: Int](./resultcount.md)
   The total number of results the search matches.
-- [var supportsReplacement: Bool](uifindsession/supportsreplacement.md)
+- [var supportsReplacement: Bool](./supportsreplacement.md)
   A Boolean value that indicates whether to allow replacing find panel results.
-- [var allowsReplacementForCurrentlyHighlightedResult: Bool](uifindsession/allowsreplacementforcurrentlyhighlightedresult.md)
+- [var allowsReplacementForCurrentlyHighlightedResult: Bool](./allowsreplacementforcurrentlyhighlightedresult.md)
   A Boolean value that indicates whether to allow replacing the result the find panel is highlighting.
-- [var searchResultDisplayStyle: UIFindSession.SearchResultDisplayStyle](uifindsession/searchresultdisplaystyle-swift.property.md)
+- [var searchResultDisplayStyle: UIFindSession.SearchResultDisplayStyle](./searchresultdisplaystyle-swift.property.md)
   The information the find panel includes in the summary of found results.
-- [UIFindSession.SearchResultDisplayStyle](uifindsession/searchresultdisplaystyle-swift.enum.md)
+- [UIFindSession.SearchResultDisplayStyle](./searchresultdisplaystyle-swift.enum.md)
   Constants that describe the results summary the find panel UI includes.
-- [var allowsReplacement: Bool](uifindsession/allowsreplacement.md)
+- [var allowsReplacement: Bool](./allowsreplacement.md)
   A Boolean value that indicates whether to allow replacing the result the find panel is highlighting.
 
 

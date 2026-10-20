@@ -2,6 +2,7 @@
 
 **Framework**: MusicKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The date when the user last played the album on this device.

@@ -1,7 +1,8 @@
 # isValidDate(in:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether the current combination of properties represents a date which exists in the specified calendar.
 
@@ -30,9 +31,10 @@ If the time zone property is set in the `DateComponents`, it is used.
 
 ## See Also
 
-- [var isValidDate: Bool](datecomponents/isvaliddate.md)
+### Validating a Date
+- [var isValidDate: Bool](./isvaliddate.md)
   Indicates whether the current combination of properties represents a date which exists in the current calendar.
-- [var date: Date?](datecomponents/date.md)
+- [var date: Date?](./date.md)
   The date calculated from the current components using the stored calendar.
 
 

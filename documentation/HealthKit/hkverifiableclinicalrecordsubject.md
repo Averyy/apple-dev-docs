@@ -1,7 +1,8 @@
 # HKVerifiableClinicalRecordSubject
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The subject associated with a signed clinical record.
 
@@ -18,60 +19,65 @@ The subject associated with a signed clinical record.
 class HKVerifiableClinicalRecordSubject
 ```
 
+```objc
+@interface HKVerifiableClinicalRecordSubject : NSObject
+```
+
 #### Overview
 
-[`HKVerifiableClinicalRecordSubject`](hkverifiableclinicalrecordsubject.md) objects contain data about the subject from a SMART Health Card.  These cards combine both the user’s identity and clinical data into a cryptographically-signed bundle. To protect the subject’s privacy, SMART Health Cards provide the minimum required data. For more information, see [`SMART Health Cards Framework`](https://developer.apple.comhttps://smarthealth.cards).
+[`HKVerifiableClinicalRecordSubject`](./hkverifiableclinicalrecordsubject.md) objects contain data about the subject from a SMART Health Card.  These cards combine both the user’s identity and clinical data into a cryptographically-signed bundle. To protect the subject’s privacy, SMART Health Cards provide the minimum required data. For more information, see [SMART Health Cards Framework](https://smarthealth.cards).
 
 ## Topics
 
 ### Accessing Patient Data
-- [var fullName: String](hkverifiableclinicalrecordsubject/fullname.md)
+- [var fullName: String](./hkverifiableclinicalrecordsubject/fullname.md)
   The subject’s full name.
-- [var dateOfBirthComponents: DateComponents?](hkverifiableclinicalrecordsubject/dateofbirthcomponents.md)
+- [var dateOfBirthComponents: DateComponents?](./hkverifiableclinicalrecordsubject/dateofbirthcomponents.md)
   The subject’s birthdate.
 ### Initializers
-- [init?(coder: NSCoder)](hkverifiableclinicalrecordsubject/init(coder:).md)
+- [init?(coder: NSCoder)](./hkverifiableclinicalrecordsubject/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Accessing Health Records](accessing-health-records.md)
+### Medical records
+- [Accessing Health Records](./accessing-health-records.md)
   Read clinical record data from the HealthKit store.
-- [Accessing Sample Data in the Simulator](accessing-sample-data-in-the-simulator.md)
+- [Accessing Sample Data in the Simulator](./accessing-sample-data-in-the-simulator.md)
   Set up sample accounts to build and test your app.
-- [Accessing a User’s Clinical Records](accessing-a-user-s-clinical-records.md)
+- [Accessing a User’s Clinical Records](./accessing-a-user-s-clinical-records.md)
   Request authorization to query HealthKit for a user’s clinical records and display them in your app.
-- [Accessing Data from a SMART Health Card](accessing-data-from-a-smart-health-card.md)
+- [Accessing Data from a SMART Health Card](./accessing-data-from-a-smart-health-card.md)
   Query for and validate a verifiable clinical record.
-- [class HKClinicalRecord](hkclinicalrecord.md)
+- [class HKClinicalRecord](./hkclinicalrecord.md)
   A sample that stores a clinical record.
-- [class HKFHIRResource](hkfhirresource.md)
+- [class HKFHIRResource](./hkfhirresource.md)
   An object containing Fast Healthcare Interoperability Resources (FHIR) data.
-- [class HKVerifiableClinicalRecord](hkverifiableclinicalrecord.md)
+- [class HKVerifiableClinicalRecord](./hkverifiableclinicalrecord.md)
   A sample that represents the contents of a SMART Health Card or EU Digital COVID Certificate.
-- [class HKCDADocumentSample](hkcdadocumentsample.md)
+- [class HKCDADocumentSample](./hkcdadocumentsample.md)
   A Clinical Document Architecture (CDA) sample that stores a single document.
-- [class HKDocumentSample](hkdocumentsample.md)
+- [class HKDocumentSample](./hkdocumentsample.md)
   An abstract class that represents a health document in the HealthKit store.
-- [static let CDA: HKDocumentTypeIdentifier](hkdocumenttypeidentifier/cda.md)
+- [static let CDA: HKDocumentTypeIdentifier](./hkdocumenttypeidentifier/cda.md)
   The CDA Document type identifier, used when requesting permission to read or share CDA documents.
-- [class HKDocumentType](hkdocumenttype.md)
+- [class HKDocumentType](./hkdocumenttype.md)
   A sample type used to create queries for documents.
 
 

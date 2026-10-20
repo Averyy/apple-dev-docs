@@ -1,7 +1,8 @@
 # countRange
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range of values allowed for the sequence’s length.
 
@@ -20,9 +21,14 @@ The range of values allowed for the sequence’s length.
 var countRange: NSRange { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSRange countRange;
+```
+
 ## See Also
 
-- [var valueDescription: MLFeatureDescription](mlsequenceconstraint/valuedescription.md)
+### Accessing the constraints
+- [var valueDescription: MLFeatureDescription](./valuedescription.md)
   The description that all sequence elements must match.
 
 

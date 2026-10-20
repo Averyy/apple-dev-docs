@@ -1,7 +1,8 @@
 # makeBlockBuffer(count:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a block buffer with `count` number of bytes.
 

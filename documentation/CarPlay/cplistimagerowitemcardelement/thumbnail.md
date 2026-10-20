@@ -1,7 +1,8 @@
 # thumbnail
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The thumbnail associated with this element.
 
@@ -14,6 +15,10 @@ The thumbnail associated with this element.
 
 ```swift
 var thumbnail: CPThumbnailImage? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) CPThumbnailImage * thumbnail;
 ```
 
 

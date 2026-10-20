@@ -1,7 +1,8 @@
 # AccessibilityTechnologies
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Accessibility technologies available to the system.
 
@@ -23,26 +24,27 @@ struct AccessibilityTechnologies
 ## Topics
 
 ### Getting technology types
-- [static let switchControl: AccessibilityTechnologies](accessibilitytechnologies/switchcontrol.md)
+- [static let switchControl: AccessibilityTechnologies](./accessibilitytechnologies/switchcontrol.md)
   The value that represents a Switch Control, allowing the use of the entire system using controller buttons, a breath-controlled switch or similar hardware.
-- [static let voiceOver: AccessibilityTechnologies](accessibilitytechnologies/voiceover.md)
+- [static let voiceOver: AccessibilityTechnologies](./accessibilitytechnologies/voiceover.md)
   The value that represents the VoiceOver screen reader, allowing use of the system without seeing the screen visually.
 ### Creating a technology type
-- [init()](accessibilitytechnologies/init.md)
+- [init()](./accessibilitytechnologies/init%28%29.md)
   Creates a new accessibility technologies structure with an empy accessibility technology set.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [struct AccessibilityAttachmentModifier](accessibilityattachmentmodifier.md)
+### Supporting types
+- [struct AccessibilityAttachmentModifier](./accessibilityattachmentmodifier.md)
   A view modifier that adds accessibility properties to the view
 
 

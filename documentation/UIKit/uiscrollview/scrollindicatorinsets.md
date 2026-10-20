@@ -1,7 +1,8 @@
 # scrollIndicatorInsets
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance the scroll indicators are inset from the edge of the scroll view.
 
@@ -9,8 +10,10 @@ The distance the scroll indicators are inset from the edge of the scroll view.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
+
+> **Deprecated**: Use [`horizontalScrollIndicatorInsets`](./horizontalscrollindicatorinsets.md) and [`verticalScrollIndicatorInsets`](./verticalscrollindicatorinsets.md) instead.
 
 ## Declaration
 
@@ -18,9 +21,13 @@ The distance the scroll indicators are inset from the edge of the scroll view.
 var scrollIndicatorInsets: UIEdgeInsets { get set }
 ```
 
+```objc
+@property (nonatomic) UIEdgeInsets scrollIndicatorInsets;
+```
+
 #### Discussion
 
-The default value is [`zero`](uiedgeinsets/zero.md).
+The default value is [`zero`](../uiedgeinsets/zero.md).
 
 
 ---

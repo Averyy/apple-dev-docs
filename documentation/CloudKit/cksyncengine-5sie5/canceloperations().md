@@ -1,7 +1,8 @@
 # cancelOperations()
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels any in-progress or pending sync operations.
 
@@ -11,7 +12,7 @@ Cancels any in-progress or pending sync operations.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

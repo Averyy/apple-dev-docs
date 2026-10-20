@@ -1,7 +1,8 @@
 # leftTeam
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The left team information.
 
@@ -14,6 +15,10 @@ The left team information.
 
 ```swift
 var leftTeam: CPNowPlayingSportsTeam { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) CPNowPlayingSportsTeam * leftTeam;
 ```
 
 

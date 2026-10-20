@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that denotes whether the option is empty.
 
@@ -14,15 +15,20 @@ A Boolean value that denotes whether the option is empty.
 var isEmpty: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isEmpty) BOOL empty;
+```
+
 #### Discussion
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the option is equivalent to the empty set, or [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+Returns [`true`](../../Swift/true.md) if the option is equivalent to the empty set, or [`false`](../../Swift/false.md) otherwise.
 
 ## See Also
 
-- [func contains(NSUserInterfaceCompressionOptions) -> Bool](nsuserinterfacecompressionoptions/contains(_:).md)
+### Comparing compression options
+- [func contains(NSUserInterfaceCompressionOptions) -> Bool](./contains%28_%29.md)
   Determines whether the supplied compression options are all present in the current instance.
-- [func intersects(NSUserInterfaceCompressionOptions) -> Bool](nsuserinterfacecompressionoptions/intersects(_:).md)
+- [func intersects(NSUserInterfaceCompressionOptions) -> Bool](./intersects%28_%29.md)
   Determines whether the supplied compression options intersect with the current instance’s options.
 
 

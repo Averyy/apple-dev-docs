@@ -1,12 +1,13 @@
 # AudioHardwareProcess
 
 **Framework**: Core Audio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Instances of the AudioHardwareProcess class encapsulate a single audio process, which contains information about a client process connected to the HAL.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration
@@ -18,28 +19,28 @@ class AudioHardwareProcess
 ## Topics
 
 ### Initializers
-- [init(id: AudioObjectID)](audiohardwareprocess/init(id:).md)
+- [init(id: AudioObjectID)](./audiohardwareprocess/init%28id%29.md)
 ### Instance Properties
-- [var bundleID: String?](audiohardwareprocess/bundleid.md)
+- [var bundleID: String?](./audiohardwareprocess/bundleid.md)
   A String that contains the bundle ID of the process.
-- [var devices: [AudioHardwareDevice]](audiohardwareprocess/devices.md)
+- [var devices: [AudioHardwareDevice]](./audiohardwareprocess/devices.md)
   An array of AudioHardwareDevices that represent the devices currently used by the process for output.
-- [var isRunning: Bool](audiohardwareprocess/isrunning.md)
+- [var isRunning: Bool](./audiohardwareprocess/isrunning.md)
   A Bool where a value of true indicates that there is audio IO in progress in the process.
-- [var isRunningInput: Bool](audiohardwareprocess/isrunninginput.md)
+- [var isRunningInput: Bool](./audiohardwareprocess/isrunninginput.md)
   A Bool where a value of true indicates that the process is running IO and there is at least one active input stream.
-- [var isRunningOutput: Bool](audiohardwareprocess/isrunningoutput.md)
+- [var isRunningOutput: Bool](./audiohardwareprocess/isrunningoutput.md)
   A Bool where a value of true indicates that the process is running IO and there is at least one active output stream.
-- [var pid: pid_t](audiohardwareprocess/pid.md)
+- [var pid: pid_t](./audiohardwareprocess/pid.md)
   A pid_t indicating the process ID associated with the process.
 
 ## Relationships
 
 ### Inherits From
-- [AudioHardwareObject](audiohardwareobject.md)
+- [AudioHardwareObject](./audiohardwareobject.md)
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

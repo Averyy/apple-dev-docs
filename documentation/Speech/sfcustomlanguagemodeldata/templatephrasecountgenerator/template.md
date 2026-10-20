@@ -1,7 +1,8 @@
 # SFCustomLanguageModelData.TemplatePhraseCountGenerator.Template
 
 **Framework**: Speech  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -20,23 +21,24 @@ struct Template
 ## Topics
 
 ### Creating a template
-- [init(String, count: Int)](sfcustomlanguagemodeldata/templatephrasecountgenerator/template/init(_:count:).md)
+- [init(String, count: Int)](./template/init%28_,count%29.md)
 ### Inspecting the template
-- [let body: String](sfcustomlanguagemodeldata/templatephrasecountgenerator/template/body.md)
-- [let count: Int](sfcustomlanguagemodeldata/templatephrasecountgenerator/template/count.md)
+- [let body: String](./template/body.md)
+- [let count: Int](./template/count.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [TemplateInsertable](templateinsertable.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [TemplateInsertable](../../templateinsertable.md)
 
 ## See Also
 
-- [func insert(template: String, count: Int)](sfcustomlanguagemodeldata/templatephrasecountgenerator/insert(template:count:).md)
+### Adding a template
+- [func insert(template: String, count: Int)](./insert%28template,count%29.md)
   Add a template to be used to generate data samples.
 
 

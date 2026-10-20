@@ -1,7 +1,8 @@
 # components
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Components in group.
 
@@ -15,6 +16,10 @@ Components in group.
 
 ```swift
 var components: [UITextFormattingViewController.Component] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<UITextFormattingViewControllerComponent *> * components;
 ```
 
 

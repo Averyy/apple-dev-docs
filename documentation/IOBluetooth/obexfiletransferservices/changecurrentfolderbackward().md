@@ -1,17 +1,22 @@
 # changeCurrentFolderBackward()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Change to the directory above the current level if not at the root
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func changeCurrentFolderBackward() -> OBEXError
+```
+
+```objc
+- (OBEXError) changeCurrentFolderBackward;
 ```
 
 #### Return Value

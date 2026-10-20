@@ -1,7 +1,8 @@
 # AnimationRepeatMode.autoReverse
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that reverses the animation after reaching the end or the beginning.
 
@@ -11,7 +12,7 @@ A mode that reverses the animation after reaching the end or the beginning.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,11 +22,12 @@ case autoReverse
 
 ## See Also
 
-- [AnimationRepeatMode.repeat](animationrepeatmode/repeat.md)
+### Choosing a repeat mode
+- [AnimationRepeatMode.repeat](./repeat.md)
   A mode that restarts the animation after it completes.
-- [AnimationRepeatMode.cumulative](animationrepeatmode/cumulative.md)
+- [AnimationRepeatMode.cumulative](./cumulative.md)
   A mode that repeats indefinitely and begins each repetition by setting the animated property to the ending value of the previous repetition.
-- [AnimationRepeatMode.none](animationrepeatmode/none.md)
+- [AnimationRepeatMode.none](./none.md)
   An option that determines the animation doesn’t repeat.
 
 

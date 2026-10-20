@@ -1,7 +1,8 @@
 # pencilKitResponderState
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The PencilKit state associated with the responder object.
 
@@ -15,6 +16,10 @@ The PencilKit state associated with the responder object.
 
 ```swift
 var pencilKitResponderState: PKResponderState { get }
+```
+
+```objc
+@property (nonatomic, readonly, nonnull) PKResponderState * pencilKitResponderState;
 ```
 
 #### Discussion

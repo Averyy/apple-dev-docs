@@ -1,20 +1,25 @@
 # MPSCustomKernelIndexSrc3Index
 
 **Framework**: Metal Performance Shaders  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var MPSCustomKernelIndexSrc3Index: MPSCustomKernelIndex { get }
+```
+
+```c
+MPSCustomKernelIndexSrc3Index
 ```
 
 

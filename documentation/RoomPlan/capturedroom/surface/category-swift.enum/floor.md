@@ -1,7 +1,8 @@
 # CapturedRoom.Surface.Category.floor
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A category for a surface that represents a floor.
 
@@ -18,13 +19,14 @@ case floor
 
 ## See Also
 
-- [CapturedRoom.Surface.Category.door(isOpen:)](capturedroom/surface/category-swift.enum/door(isopen:).md)
+### Determining the surface category
+- [CapturedRoom.Surface.Category.door(isOpen:)](./door%28isopen%29.md)
   A category for a surface that represents a door.
-- [CapturedRoom.Surface.Category.opening](capturedroom/surface/category-swift.enum/opening.md)
+- [CapturedRoom.Surface.Category.opening](./opening.md)
   A category for a surface that represents an opening.
-- [CapturedRoom.Surface.Category.wall](capturedroom/surface/category-swift.enum/wall.md)
+- [CapturedRoom.Surface.Category.wall](./wall.md)
   A category for a surface that represents a wall.
-- [CapturedRoom.Surface.Category.window](capturedroom/surface/category-swift.enum/window.md)
+- [CapturedRoom.Surface.Category.window](./window.md)
   A category for a surface that represents a window.
 
 

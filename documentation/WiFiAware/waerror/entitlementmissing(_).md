@@ -1,7 +1,8 @@
 # WAError.entitlementMissing(_:)
 
 **Framework**: Wi-Fi Aware  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that occurs if your app is missing the entitlement needed for the requested operation.
 
@@ -18,7 +19,8 @@ case entitlementMissing(WAError.EntitlementMissingDetails)
 
 ## See Also
 
-- [WAError.EntitlementMissingDetails](waerror/entitlementmissingdetails.md)
+### Checking for missing entitlement
+- [WAError.EntitlementMissingDetails](./entitlementmissingdetails.md)
   The optional details describing the missing entitlement.
 
 

@@ -1,7 +1,8 @@
 # value
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current value of the slider.
 
@@ -18,17 +19,22 @@ The current value of the slider.
 var value: Float { get set }
 ```
 
+```objc
+@property (nonatomic, assign) float value;
+```
+
 #### Discussion
 
 The default value is the slider’s minimum value. You may set a value only if it’s within the slider’s minimum and maximum values, otherwise the system throws an exception.
 
-> ❗ **Important**:  Only modify a slider’s value from the same dispatch queue that you specified in the control’s [`setActionQueue:action:`](avcaptureslider/setactionqueue:action:.md) method.
+> ❗ **Important**:  Only modify a slider’s value from the same dispatch queue that you specified in the control’s [`setActionQueue:action:`](./setactionqueue_action_.md) method.
 
 ## See Also
 
-- [var prominentValues: [Float]](avcaptureslider/prominentvalues-199dz.md)
+### Accessing the control value
+- [var prominentValues: [Float]](./prominentvalues-199dz.md)
   Values in this array may receive unique visual representations or behaviors.
-- [var localizedValueFormat: String?](avcaptureslider/localizedvalueformat.md)
+- [var localizedValueFormat: String?](./localizedvalueformat.md)
   A localized string that defines the presentation of the slider’s value.
 
 

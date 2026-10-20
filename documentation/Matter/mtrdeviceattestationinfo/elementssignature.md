@@ -1,7 +1,8 @@
 # elementsSignature
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 var elementsSignature: Data { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSData * elementsSignature;
 ```
 
 

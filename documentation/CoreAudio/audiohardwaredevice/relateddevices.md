@@ -1,12 +1,13 @@
 # relatedDevices
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of AudioHardwareDevices for devices related to the device. For IOAudio-based devices, devices are related if they share the same IOAudioDevice object.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

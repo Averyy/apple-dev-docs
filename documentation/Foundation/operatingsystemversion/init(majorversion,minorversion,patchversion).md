@@ -1,7 +1,8 @@
 # init(majorVersion:minorVersion:patchVersion:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an operating system version with the provided values.
 
@@ -22,7 +23,8 @@ init(majorVersion: Int, minorVersion: Int, patchVersion: Int)
 
 ## See Also
 
-- [init()](operatingsystemversion/init.md)
+### Creating an Operating System Version
+- [init()](./init%28%29.md)
   Creates an empty operating system version.
 
 

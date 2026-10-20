@@ -1,14 +1,15 @@
 # TASK_DEFAULT_APPLICATION
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 TASK_DEFAULT_APPLICATION = 7
 ```
 

@@ -1,7 +1,8 @@
 # UIMenu.Options
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options you use to configure a menu’s appearance.
 
@@ -18,44 +19,49 @@ Options you use to configure a menu’s appearance.
 struct Options
 ```
 
+```c
+enum UIMenuOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Options
-- [static var displayInline: UIMenu.Options](uimenu/options-swift.struct/displayinline.md)
+- [static var displayInline: UIMenu.Options](./options-swift.struct/displayinline.md)
   An option indicating the menu displays inline with its parent menu instead of displaying as a submenu.
-- [static var destructive: UIMenu.Options](uimenu/options-swift.struct/destructive.md)
+- [static var destructive: UIMenu.Options](./options-swift.struct/destructive.md)
   An option indicating the menu’s appearance represents a destructive action.
-- [static var singleSelection: UIMenu.Options](uimenu/options-swift.struct/singleselection.md)
+- [static var singleSelection: UIMenu.Options](./options-swift.struct/singleselection.md)
   An option indicating whether the menu and its submenus allow a single menu item that’s in the “on” state.
-- [static var displayAsPalette: UIMenu.Options](uimenu/options-swift.struct/displayaspalette.md)
+- [static var displayAsPalette: UIMenu.Options](./options-swift.struct/displayaspalette.md)
   An option indicating the menu displays as a row of menu elements for choosing from a collection of items.
 ### Initializers
-- [init(rawValue: UInt)](uimenu/options-swift.struct/init(rawvalue:).md)
+- [init(rawValue: UInt)](./options-swift.struct/init%28rawvalue%29.md)
   Creates a menu options structure from data in an unarchiver.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [convenience init(title: String, image: UIImage?, identifier: UIMenu.Identifier?, options: UIMenu.Options, children: [UIMenuElement])](uimenu/init(title:image:identifier:options:children:).md)
+### Creating a menu object
+- [convenience init(title: String, image: UIImage?, identifier: UIMenu.Identifier?, options: UIMenu.Options, children: [UIMenuElement])](./init%28title,image,identifier,options,children%29.md)
   Creates a new menu with the specified values.
-- [convenience init(title: String, subtitle: String?, image: UIImage?, identifier: UIMenu.Identifier?, options: UIMenu.Options, children: [UIMenuElement])](uimenu/init(title:subtitle:image:identifier:options:children:).md)
+- [convenience init(title: String, subtitle: String?, image: UIImage?, identifier: UIMenu.Identifier?, options: UIMenu.Options, children: [UIMenuElement])](./init%28title,subtitle,image,identifier,options,children%29.md)
   Creates a new menu with the specified title, subtitle, image, identifier, menu options, and child elements.
-- [convenience init(title: String, subtitle: String?, image: UIImage?, identifier: UIMenu.Identifier?, options: UIMenu.Options, preferredElementSize: UIMenu.ElementSize, children: [UIMenuElement])](uimenu/init(title:subtitle:image:identifier:options:preferredelementsize:children:).md)
+- [convenience init(title: String, subtitle: String?, image: UIImage?, identifier: UIMenu.Identifier?, options: UIMenu.Options, preferredElementSize: UIMenu.ElementSize, children: [UIMenuElement])](./init%28title,subtitle,image,identifier,options,preferredelementsize,children%29.md)
   Creates a new menu with the specified title, subtitle, image, identifier, menu options, element size, and child elements.
-- [UIMenu.Identifier](uimenu/identifier-swift.struct.md)
+- [UIMenu.Identifier](./identifier-swift.struct.md)
   Constants you use to identify an app’s standard menus.
-- [init?(coder: NSCoder)](uimenu/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a menu from data in an unarchiver.
 
 

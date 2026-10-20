@@ -1,21 +1,28 @@
 # UIPreviewAction
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A preview action, or *peek quick action*, that displays below a peek when a user swipes the peek upward.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
-- tvOS 9.0+
+- iOS 9.0+ - Deprecated in 13.0
+- iPadOS 9.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- tvOS 9.0+ - Deprecated in 13.0
+
+> **Deprecated**: Use [`UIContextMenuInteraction`](./uicontextmenuinteraction.md) instead.
 
 ## Declaration
 
 ```swift
 @MainActor
 class UIPreviewAction
+```
+
+```objc
+@interface UIPreviewAction : NSObject
 ```
 
 #### Overview
@@ -25,59 +32,60 @@ A peek quick action typically selects a deep link to your app and has a title, a
 ## Topics
 
 ### Creating a peek quick action
-- [convenience init(title: String, style: UIPreviewAction.Style, handler: (UIPreviewAction, UIViewController) -> Void)](uipreviewaction/init(title:style:handler:).md)
+- [convenience init(title: String, style: UIPreviewAction.Style, handler: (UIPreviewAction, UIViewController) -> Void)](./uipreviewaction/init%28title,style,handler%29.md)
   Creates a peek quick action using a specified title, style, and handler.
-- [var handler: (any UIPreviewActionItem, UIViewController) -> Void](uipreviewaction/handler.md)
+- [var handler: (any UIPreviewActionItem, UIViewController) -> Void](./uipreviewaction/handler.md)
   The block called when the peek quick action is selected by the user.
-- [UIPreviewAction.Style](uipreviewaction/style.md)
+- [UIPreviewAction.Style](./uipreviewaction/style.md)
   The style for a peek quick action.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [UIPreviewActionItem](uipreviewactionitem.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [UIPreviewActionItem](./uipreviewactionitem.md)
 
 ## See Also
 
-- [class UIActionSheet](uiactionsheet.md)
+### Deprecated classes
+- [class UIActionSheet](./uiactionsheet.md)
   A view that presents a set of alternatives for how to proceed with a task.
-- [class UIAlertView](uialertview.md)
+- [class UIAlertView](./uialertview.md)
   A view that displays an alert message.
-- [class UIDocumentMenuViewController](uidocumentmenuviewcontroller.md)
+- [class UIDocumentMenuViewController](./uidocumentmenuviewcontroller.md)
   A list of all the available document providers for a given file type and mode, in addition to custom menu items that you add.
-- [class UILocalNotification](uilocalnotification.md)
+- [class UILocalNotification](./uilocalnotification.md)
   A notification that an app can schedule for presentation at a specific date and time.
-- [class UIMenuController](uimenucontroller.md)
+- [class UIMenuController](./uimenucontroller.md)
   The menu interface for the Cut, Copy, Paste, Select, Select All, and Delete commands.
-- [class UIMenuItem](uimenuitem.md)
+- [class UIMenuItem](./uimenuitem.md)
   A custom item in the editing menu managed by the menu controller.
-- [class UIMutableUserNotificationAction](uimutableusernotificationaction.md)
+- [class UIMutableUserNotificationAction](./uimutableusernotificationaction.md)
   A modifiable version of the user notification action class.
-- [class UIMutableUserNotificationCategory](uimutableusernotificationcategory.md)
+- [class UIMutableUserNotificationCategory](./uimutableusernotificationcategory.md)
   Information about custom actions that your app can perform in response to a local or push notification.
-- [class UIPopoverController](uipopovercontroller.md)
+- [class UIPopoverController](./uipopovercontroller.md)
   An object that manages the presentation of content in a popover.
-- [class UIPreviewActionGroup](uipreviewactiongroup.md)
+- [class UIPreviewActionGroup](./uipreviewactiongroup.md)
   A group of one or more child quick actions, each an instance of the preview action class.
-- [class UISearchDisplayController](uisearchdisplaycontroller.md)
+- [class UISearchDisplayController](./uisearchdisplaycontroller.md)
   An object that manages the display of a search bar, along with a table view that displays search results.
-- [class UIStoryboardPopoverSegue](uistoryboardpopoversegue.md)
+- [class UIStoryboardPopoverSegue](./uistoryboardpopoversegue.md)
   A specific type of segue for presenting content in a popover.
-- [class UIWebView](uiwebview.md)
+- [class UIWebView](./uiwebview.md)
   A view that embeds web content in your app.
-- [class UIUserNotificationAction](uiusernotificationaction.md)
+- [class UIUserNotificationAction](./uiusernotificationaction.md)
   A custom action that your app can perform in response to a remote or local notification.
-- [class UIUserNotificationCategory](uiusernotificationcategory.md)
+- [class UIUserNotificationCategory](./uiusernotificationcategory.md)
   Information about custom actions that your app can perform in response to a local or push notification.
 
 

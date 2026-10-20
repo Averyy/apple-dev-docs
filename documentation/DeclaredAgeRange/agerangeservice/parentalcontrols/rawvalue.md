@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: Declared Age Range  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw value of the option set.
 
@@ -19,7 +20,8 @@ let rawValue: Int
 
 ## See Also
 
-- [var description: String](agerangeservice/parentalcontrols/description.md)
+### Accessing the raw value
+- [var description: String](./description.md)
   A list of active parental controls, for debugging purposes.
 
 

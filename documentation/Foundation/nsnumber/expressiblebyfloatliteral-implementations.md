@@ -1,11 +1,12 @@
 # ExpressibleByFloatLiteral Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [convenience init(floatLiteral: Double)](nsnumber/init(floatliteral:).md)
+- [convenience init(floatLiteral: Double)](./init%28floatliteral%29.md)
   Create an instance initialized to `value`.
 
 

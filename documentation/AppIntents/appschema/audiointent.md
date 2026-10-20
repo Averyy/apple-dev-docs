@@ -1,7 +1,8 @@
 # AppSchema.AudioIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies intent schemas in the audio domain.
 
@@ -21,43 +22,44 @@ protocol AudioIntent : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var addToLibrary: some AppSchemaIntent](appschema/audiointent/addtolibrary.md)
+- [var addToLibrary: some AppSchemaIntent](./audiointent/addtolibrary.md)
   An intent schema that adds an audio item to the person’s library.
-- [var addToPlaylist: some AppSchemaIntent](appschema/audiointent/addtoplaylist.md)
+- [var addToPlaylist: some AppSchemaIntent](./audiointent/addtoplaylist.md)
   An intent schema that adds an audio item to a playlist.
-- [var createStation: some AppSchemaIntent](appschema/audiointent/createstation.md)
+- [var createStation: some AppSchemaIntent](./audiointent/createstation.md)
   An intent schema that starts a station based on the now-playing item.
-- [var playAudio: some AppSchemaIntent](appschema/audiointent/playaudio.md)
+- [var playAudio: some AppSchemaIntent](./audiointent/playaudio.md)
   An intent schema that plays an audio item.
-- [var recognizeAudio: some AppSchemaIntent](appschema/audiointent/recognizeaudio.md)
+- [var recognizeAudio: some AppSchemaIntent](./audiointent/recognizeaudio.md)
   An intent schema that finds out what audio is playing nearby.
-- [var updateAudioAffinity: some AppSchemaIntent](appschema/audiointent/updateaudioaffinity.md)
+- [var updateAudioAffinity: some AppSchemaIntent](./audiointent/updateaudioaffinity.md)
   An intent schema that sets the like state of an audio item to liked, unliked, or unset.
-- [var warmupAudioQueue: some AppSchemaIntent](appschema/audiointent/warmupaudioqueue.md)
+- [var warmupAudioQueue: some AppSchemaIntent](./audiointent/warmupaudioqueue.md)
   An intent schema that warms up an audio item by setting the queue without starting playback.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Intent](appschema/intent.md)
+- [AppSchema.Intent](./intent.md)
 
 ## See Also
 
-- [var addToLibrary: some AppSchemaIntent](appschema/audiointent/addtolibrary.md)
+### Actions
+- [var addToLibrary: some AppSchemaIntent](./audiointent/addtolibrary.md)
   An intent schema that adds an audio item to the person’s library.
-- [var addToPlaylist: some AppSchemaIntent](appschema/audiointent/addtoplaylist.md)
+- [var addToPlaylist: some AppSchemaIntent](./audiointent/addtoplaylist.md)
   An intent schema that adds an audio item to a playlist.
-- [var createStation: some AppSchemaIntent](appschema/audiointent/createstation.md)
+- [var createStation: some AppSchemaIntent](./audiointent/createstation.md)
   An intent schema that starts a station based on the now-playing item.
-- [var playAudio: some AppSchemaIntent](appschema/audiointent/playaudio.md)
+- [var playAudio: some AppSchemaIntent](./audiointent/playaudio.md)
   An intent schema that plays an audio item.
-- [var recognizeAudio: some AppSchemaIntent](appschema/audiointent/recognizeaudio.md)
+- [var recognizeAudio: some AppSchemaIntent](./audiointent/recognizeaudio.md)
   An intent schema that finds out what audio is playing nearby.
-- [var updateAudioAffinity: some AppSchemaIntent](appschema/audiointent/updateaudioaffinity.md)
+- [var updateAudioAffinity: some AppSchemaIntent](./audiointent/updateaudioaffinity.md)
   An intent schema that sets the like state of an audio item to liked, unliked, or unset.
-- [var warmupAudioQueue: some AppSchemaIntent](appschema/audiointent/warmupaudioqueue.md)
+- [var warmupAudioQueue: some AppSchemaIntent](./audiointent/warmupaudioqueue.md)
   An intent schema that warms up an audio item by setting the queue without starting playback.
 
 

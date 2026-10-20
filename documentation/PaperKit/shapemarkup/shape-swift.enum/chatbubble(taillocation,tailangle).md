@@ -1,7 +1,8 @@
 # chatBubble(tailLocation:tailAngle:)
 
 **Framework**: PaperKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A speech bubble with a tail pointing to a specific location.
 

@@ -2,6 +2,7 @@
 
 **Framework**: MediaExtension  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new format reader with the byte source and options that you specify.
@@ -15,6 +16,10 @@ Creates a new format reader with the byte source and options that you specify.
 func formatReader(with primaryByteSource: MEByteSource, options: MEFormatReaderInstantiationOptions?) throws -> any MEFormatReader
 ```
 
+```objc
+- (id<MEFormatReader>) formatReaderWithByteSource:(MEByteSource *) primaryByteSource options:(MEFormatReaderInstantiationOptions *) options error:(NSError **) error;
+```
+
 #### Return Value
 
 A new format reader.
@@ -26,7 +31,8 @@ A new format reader.
 
 ## See Also
 
-- [init()](meformatreaderextension/init.md)
+### Creating a format reader
+- [init()](./init%28%29.md)
   Creates a new format reader factory.
 
 

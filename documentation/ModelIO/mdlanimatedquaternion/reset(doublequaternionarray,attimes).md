@@ -1,7 +1,8 @@
 # reset(doubleQuaternionArray:atTimes:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+

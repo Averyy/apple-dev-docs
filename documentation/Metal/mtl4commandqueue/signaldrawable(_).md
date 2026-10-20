@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Schedules a signal operation on the command queue to indicate when rendering to a Metal drawable is complete.
@@ -20,11 +21,15 @@ Schedules a signal operation on the command queue to indicate when rendering to 
 func signalDrawable(_ drawable: any MTLDrawable)
 ```
 
+```objc
+- (void) signalDrawable:(id<MTLDrawable>) drawable;
+```
+
 #### Discussion
 
-Signaling when rendering to a [`MTLDrawable`](mtldrawable.md) instance is complete indicates that it’s safe to present it to the display.
+Signaling when rendering to a [`MTLDrawable`](../mtldrawable.md) instance is complete indicates that it’s safe to present it to the display.
 
-You are responsible for calling this method after committing all command buffers that contain commands targeting this drawable, and before calling [`present()`](mtldrawable/present().md), [`present(at:)`](mtldrawable/present(at:).md), or [`present(afterMinimumDuration:)`](mtldrawable/present(afterminimumduration:).md).
+You are responsible for calling this method after committing all command buffers that contain commands targeting this drawable, and before calling [`present()`](../mtldrawable/present%28%29.md), [`present(at:)`](../mtldrawable/present%28at%29.md), or [`present(afterMinimumDuration:)`](../mtldrawable/present%28afterminimumduration%29.md).
 
 > **Note**: This method doesn’t trigger the presentation of the drawable, and fails if you call it after any of the present methods, or if you call it multiple times.
 
@@ -32,7 +37,7 @@ Metal doesn’t guarantee that command buffers you commit to the command queue a
 
 ## Parameters
 
-- `drawable`: [`MTLDrawable`](mtldrawable.md) instance to signal.
+- `drawable`: [`MTLDrawable`](../mtldrawable.md) instance to signal.
 
 
 ---

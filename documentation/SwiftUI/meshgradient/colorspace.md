@@ -1,7 +1,8 @@
 # colorSpace
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color space in which to interpolate vertex colors.
 

@@ -1,12 +1,13 @@
 # isMovable
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the user can move the receiver in its ruler view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ A Boolean that indicates whether the user can move the receiver in its ruler vie
 var isMovable: Bool { get set }
 ```
 
+```objc
+@property (getter=isMovable) BOOL movable;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow the user to drag the marker image in the ruler, [`false`](https://developer.apple.com/documentation/swift/false) to make it immobile.
+[`true`](../../Swift/true.md) to allow the user to drag the marker image in the ruler, [`false`](../../Swift/false.md) to make it immobile.
 
 By default, ruler markers are movable.
 
 ## See Also
 
-- [var isRemovable: Bool](nsrulermarker/isremovable.md)
+### Setting movability
+- [var isRemovable: Bool](./isremovable.md)
   A Boolean that indicates whether the user can remove the receiver from its ruler view.
 
 

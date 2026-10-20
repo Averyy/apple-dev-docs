@@ -1,12 +1,13 @@
 # drawsBackground
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that controls whether the receiver draws its background.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ A Boolean that controls whether the receiver draws its background.
 var drawsBackground: Bool { get set }
 ```
 
+```objc
+@property BOOL drawsBackground;
+```
+
 #### Discussion
 
-If `flag` is [`true`](https://developer.apple.com/documentation/swift/true), the receiver fills its background with the background color, if `flag` is [`false`](https://developer.apple.com/documentation/swift/false), it doesn’t.
+If `flag` is [`true`](../../Swift/true.md), the receiver fills its background with the background color, if `flag` is [`false`](../../Swift/false.md), it doesn’t.
 
 ## See Also
 
-- [var backgroundColor: NSColor?](nstext/backgroundcolor.md)
+### Setting graphics attributes
+- [var backgroundColor: NSColor?](./backgroundcolor.md)
   The receiver’s background color to a given color.
 
 

@@ -1,7 +1,8 @@
 # physicsSimulation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the physics simulation spece that the entity and its descendants are in.
 
@@ -21,9 +22,10 @@ var physicsSimulation: AnchoringComponent.PhysicsSimulation { get set }
 
 ## See Also
 
-- [let target: AnchoringComponent.Target](anchoringcomponent/target-swift.property.md)
+### Configuring the anchor
+- [let target: AnchoringComponent.Target](./target-swift.property.md)
   The real world anchor target to attach the entity to.
-- [var trackingMode: AnchoringComponent.TrackingMode](anchoringcomponent/trackingmode-swift.property.md)
+- [var trackingMode: AnchoringComponent.TrackingMode](./trackingmode-swift.property.md)
   Defines how the `Entity` tracks its target anchor.
 
 

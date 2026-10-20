@@ -1,7 +1,8 @@
 # receive()
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the subscriber that a publisher of void elements is ready to receive further requests.
 
@@ -20,9 +21,11 @@ Tells the subscriber that a publisher of void elements is ready to receive furth
 func receive() -> Subscribers.Demand
 ```
 
+Available when `Input` is `()`.
+
 #### Return Value
 
-A [`Subscribers.Demand`](subscribers/demand.md) instance indicating how many more elements the subscriber expects to receive.
+A [`Subscribers.Demand`](../subscribers/demand.md) instance indicating how many more elements the subscriber expects to receive.
 
 #### Discussion
 
@@ -30,7 +33,8 @@ Use `Void` inputs and outputs when you want to signal that an event has occurred
 
 ## See Also
 
-- [func receive(Self.Input) -> Subscribers.Demand](subscriber/receive(_:).md)
+### Receiving elements
+- [func receive(Self.Input) -> Subscribers.Demand](./receive%28_%29.md)
   Tells the subscriber that the publisher has produced an element.
 
 

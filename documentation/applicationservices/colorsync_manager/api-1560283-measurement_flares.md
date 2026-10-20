@@ -7,8 +7,8 @@ Specify measurement flare encodings.
 ## Topics
 
 ### Constants
-- [var cmFlare0: Int](cmflare0.md)
-- [var cmFlare100: Int](cmflare100.md)
+- [var cmFlare0: Int](../cmflare0.md)
+- [var cmFlare100: Int](../cmflare100.md)
 
 
 ---

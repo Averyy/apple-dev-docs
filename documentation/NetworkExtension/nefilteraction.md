@@ -1,7 +1,8 @@
 # NEFilterAction
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The actions a data provider can take on a filter flow.
 
@@ -18,49 +19,54 @@ The actions a data provider can take on a filter flow.
 enum NEFilterAction
 ```
 
+```c
+enum NEFilterAction : NSInteger;
+```
+
 #### Overview
 
-The control provider receives a filter report when the data provider issues a verdict with the [`shouldReport`](nefilterverdict/shouldreport.md) property set to [`true`](https://developer.apple.com/documentation/swift/true). The report contains an [`action`](nefilterreport/action.md) property set to one of the values listed here.
+The control provider receives a filter report when the data provider issues a verdict with the [`shouldReport`](./nefilterverdict/shouldreport.md) property set to [`true`](../Swift/true.md). The report contains an [`action`](./nefilterreport/action.md) property set to one of the values listed here.
 
 ## Topics
 
 ### Enumeration Cases
-- [NEFilterAction.invalid](nefilteraction/invalid.md)
+- [NEFilterAction.invalid](./nefilteraction/invalid.md)
   Invalid action used to represent an error.
-- [NEFilterAction.allow](nefilteraction/allow.md)
+- [NEFilterAction.allow](./nefilteraction/allow.md)
   Allow the flow.
-- [NEFilterAction.drop](nefilteraction/drop.md)
+- [NEFilterAction.drop](./nefilteraction/drop.md)
   Drop the flow.
-- [NEFilterAction.remediate](nefilteraction/remediate.md)
+- [NEFilterAction.remediate](./nefilteraction/remediate.md)
   Remediate the flow.
-- [NEFilterAction.filterData](nefilteraction/filterdata.md)
+- [NEFilterAction.filterData](./nefilteraction/filterdata.md)
   Filter data on the flow.
 ### Initializers
-- [init?(rawValue: Int)](nefilteraction/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nefilteraction/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var flow: NEFilterFlow?](nefilterreport/flow.md)
+### Getting report properties
+- [var flow: NEFilterFlow?](./nefilterreport/flow.md)
   The flow on which the associated action was taken.
-- [var action: NEFilterAction](nefilterreport/action.md)
+- [var action: NEFilterAction](./nefilterreport/action.md)
   The action taken on the reported flow.
-- [var event: NEFilterReport.Event](nefilterreport/event-swift.property.md)
+- [var event: NEFilterReport.Event](./nefilterreport/event-swift.property.md)
   The type of event indicated by this report.
-- [NEFilterReport.Event](nefilterreport/event-swift.enum.md)
+- [NEFilterReport.Event](./nefilterreport/event-swift.enum.md)
   A type that represents the kind of event indicated by a report.
-- [var bytesInboundCount: Int](nefilterreport/bytesinboundcount.md)
+- [var bytesInboundCount: Int](./nefilterreport/bytesinboundcount.md)
   The number of inbound bytes received from the flow.
-- [var bytesOutboundCount: Int](nefilterreport/bytesoutboundcount.md)
+- [var bytesOutboundCount: Int](./nefilterreport/bytesoutboundcount.md)
   The number of outbound bytes sent on the flow.
 
 

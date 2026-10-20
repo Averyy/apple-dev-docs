@@ -1,14 +1,15 @@
 # vio_pager_ready
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 boolean_t vio_pager_ready;
 ```
 

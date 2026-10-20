@@ -1,23 +1,25 @@
 # initPipes
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kern_return_t initPipes();
 ```
 
 ## See Also
 
-- [getHIDDescriptorInfo](iouserusbhosthiddevice/gethiddescriptorinfo.md)
-- [CompleteZLP](iouserusbhosthiddevice/completezlp.md)
-- [copyStringAtIndex](iouserusbhosthiddevice/copystringatindex.md)
+### Configuring Private Settings
+- [getHIDDescriptorInfo](./gethiddescriptorinfo.md)
+- [CompleteZLP](./completezlp.md)
+- [copyStringAtIndex](./copystringatindex.md)
 
 
 ---

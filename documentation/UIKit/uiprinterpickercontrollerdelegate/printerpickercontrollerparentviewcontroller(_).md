@@ -1,7 +1,8 @@
 # printerPickerControllerParentViewController(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate to provide the view controller to act as the parent of the printer picker.
 
@@ -15,6 +16,10 @@ Asks the delegate to provide the view controller to act as the parent of the pri
 
 ```swift
 optional func printerPickerControllerParentViewController(_ printerPickerController: UIPrinterPickerController) -> UIViewController?
+```
+
+```objc
+- (UIViewController *) printerPickerControllerParentViewController:(UIPrinterPickerController *) printerPickerController;
 ```
 
 #### Return Value
@@ -33,13 +38,14 @@ If you do not implement this method or your implementation returns `nil`, UIKit 
 
 ## See Also
 
-- [func printerPickerControllerWillPresent(UIPrinterPickerController)](uiprinterpickercontrollerdelegate/printerpickercontrollerwillpresent(_:).md)
+### Responding to Printer Picker Events
+- [func printerPickerControllerWillPresent(UIPrinterPickerController)](./printerpickercontrollerwillpresent%28_%29.md)
   Tells the delegate that the printer picker is about to be displayed.
-- [func printerPickerControllerDidPresent(UIPrinterPickerController)](uiprinterpickercontrollerdelegate/printerpickercontrollerdidpresent(_:).md)
+- [func printerPickerControllerDidPresent(UIPrinterPickerController)](./printerpickercontrollerdidpresent%28_%29.md)
   Tells the delegate that the printer picker was displayed and is now visible.
-- [func printerPickerControllerWillDismiss(UIPrinterPickerController)](uiprinterpickercontrollerdelegate/printerpickercontrollerwilldismiss(_:).md)
+- [func printerPickerControllerWillDismiss(UIPrinterPickerController)](./printerpickercontrollerwilldismiss%28_%29.md)
   Tells the delegate that the printer picker is about to be dismissed.
-- [func printerPickerControllerDidDismiss(UIPrinterPickerController)](uiprinterpickercontrollerdelegate/printerpickercontrollerdiddismiss(_:).md)
+- [func printerPickerControllerDidDismiss(UIPrinterPickerController)](./printerpickercontrollerdiddismiss%28_%29.md)
   Tells the delegate that the printer picker was dismissed.
 
 

@@ -1,7 +1,8 @@
 # NSTableView.RowActionEdge.trailing
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Denotes the trailing, or right, edge of a table row view.
 
@@ -14,9 +15,14 @@ Denotes the trailing, or right, edge of a table row view.
 case trailing
 ```
 
+```c
+NSTableRowActionEdgeTrailing
+```
+
 ## See Also
 
-- [NSTableView.RowActionEdge.leading](nstableview/rowactionedge/leading.md)
+### Constants
+- [NSTableView.RowActionEdge.leading](./leading.md)
   Denotes the leading, or left, edge of a table row view.
 
 

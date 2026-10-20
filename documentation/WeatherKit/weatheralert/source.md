@@ -1,7 +1,8 @@
 # source
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the source issuing the weather alert.
 
@@ -26,7 +27,8 @@ This is required for attribution.
 
 ## See Also
 
-- [var detailsURL: URL](weatheralert/detailsurl.md)
+### Providing attribution
+- [var detailsURL: URL](./detailsurl.md)
   The site for more details about the weather alert.
 
 

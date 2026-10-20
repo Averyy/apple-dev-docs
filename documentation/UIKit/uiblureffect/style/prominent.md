@@ -1,7 +1,8 @@
 # UIBlurEffect.Style.prominent
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A blur style for making content more prominent that adapts to the user interface style.
 
@@ -18,17 +19,22 @@ A blur style for making content more prominent that adapts to the user interface
 case prominent
 ```
 
+```c
+UIBlurEffectStyleProminent
+```
+
 ## See Also
 
-- [UIBlurEffect.Style.extraLight](uiblureffect/style/extralight.md)
+### Additional styles
+- [UIBlurEffect.Style.extraLight](./extralight.md)
   The area of the view is lighter than the underlying view.
-- [UIBlurEffect.Style.light](uiblureffect/style/light.md)
+- [UIBlurEffect.Style.light](./light.md)
   The area of the view is the same approximate lightness of the underlying view.
-- [UIBlurEffect.Style.dark](uiblureffect/style/dark.md)
+- [UIBlurEffect.Style.dark](./dark.md)
   The area of the view is darker than the underlying view.
-- [UIBlurEffect.Style.extraDark](uiblureffect/style/extradark.md)
+- [UIBlurEffect.Style.extraDark](./extradark.md)
   The area of the view is even more dark than the underlying view.
-- [UIBlurEffect.Style.regular](uiblureffect/style/regular.md)
+- [UIBlurEffect.Style.regular](./regular.md)
   A regular blur style that adapts to the user interface style.
 
 

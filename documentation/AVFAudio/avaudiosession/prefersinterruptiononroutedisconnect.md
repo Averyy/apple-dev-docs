@@ -1,7 +1,8 @@
 # prefersInterruptionOnRouteDisconnect
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the system interrupts the audio session when the active route disconnects.
 
@@ -19,19 +20,24 @@ A Boolean value that indicates whether the system interrupts the audio session w
 var prefersInterruptionOnRouteDisconnect: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL prefersInterruptionOnRouteDisconnect;
+```
+
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var prefersNoInterruptionsFromSystemAlerts: Bool](avaudiosession/prefersnointerruptionsfromsystemalerts.md)
+### Handling interruptions
+- [var prefersNoInterruptionsFromSystemAlerts: Bool](./prefersnointerruptionsfromsystemalerts.md)
   A Boolean value that indicates a preference for not interrupting the session with system alerts.
-- [func setPrefersNoInterruptionsFromSystemAlerts(Bool) throws](avaudiosession/setprefersnointerruptionsfromsystemalerts(_:).md)
+- [func setPrefersNoInterruptionsFromSystemAlerts(Bool) throws](./setprefersnointerruptionsfromsystemalerts%28_%29.md)
   Sets the preference for not interrupting the audio session with system alerts.
-- [func setPrefersInterruptionOnRouteDisconnect(Bool) throws](avaudiosession/setprefersinterruptiononroutedisconnect(_:).md)
+- [func setPrefersInterruptionOnRouteDisconnect(Bool) throws](./setprefersinterruptiononroutedisconnect%28_%29.md)
   Sets a preference to interrupt the audio session when the active route disconnects.
-- [class let interruptionNotification: NSNotification.Name](avaudiosession/interruptionnotification.md)
+- [class let interruptionNotification: NSNotification.Name](./interruptionnotification.md)
   A notification the system posts when an audio interruption occurs.
 
 

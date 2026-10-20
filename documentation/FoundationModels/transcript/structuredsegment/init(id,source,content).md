@@ -1,14 +1,15 @@
 # init(id:source:content:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
-- macOS 26.0+
-- visionOS 26.0+
+- iOS 26.0+ - Deprecated in 27.0 (renamed: init(id:schemaName:content:))
+- iPadOS 26.0+ - Deprecated in 27.0 (renamed: init(id:schemaName:content:))
+- Mac Catalyst 26.0+ - Deprecated in 27.0 (renamed: init(id:schemaName:content:))
+- macOS 26.0+ - Deprecated in 27.0 (renamed: init(id:schemaName:content:))
+- visionOS 26.0+ - Deprecated in 27.0 (renamed: init(id:schemaName:content:))
 
 ## Declaration
 
@@ -18,7 +19,8 @@ init(id: String = UUID().uuidString, source: String, content: GeneratedContent)
 
 ## See Also
 
-- [init(id: String, schemaName: String, content: GeneratedContent)](transcript/structuredsegment/init(id:schemaname:content:).md)
+### Creating a structured segment
+- [init(id: String, schemaName: String, content: GeneratedContent)](./init%28id,schemaname,content%29.md)
   Creates a structured segment that contains the generated content you provide.
 
 

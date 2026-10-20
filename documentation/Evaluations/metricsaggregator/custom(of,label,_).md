@@ -1,7 +1,8 @@
 # custom(of:label:_:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes a custom aggregation from a single metric’s results.
 
@@ -22,7 +23,7 @@ mutating func custom(of metric: Metric, label: String, _ body: ([Double]) -> Dou
 
 ## Mentions
 
-- [Evaluating language model responses](evaluating-language-model-responses.md)
+- [Evaluating language model responses](../evaluating-language-model-responses.md)
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # inferringMoves()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new collection difference with associations between individual elements that have been removed and inserted only once.
 
@@ -20,13 +21,15 @@ Returns a new collection difference with associations between individual element
 func inferringMoves() -> CollectionDifference<ChangeElement>
 ```
 
+Available when `ChangeElement` conforms to `Hashable`.
+
 #### Return Value
 
 A collection difference with all possible moves inferred.
 
 #### Discussion
 
-> **Note**: O(*n*) where *n* is the number of collection differences.
+> **Complexity**: O(*n*) where *n* is the number of collection differences.
 
 
 ---

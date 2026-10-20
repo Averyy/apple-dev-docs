@@ -1,7 +1,8 @@
 # kSecAttrEffectiveKeySize
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value indicates the effective number of bits in a cryptographic key.
 
@@ -20,9 +21,13 @@ A key whose value indicates the effective number of bits in a cryptographic key.
 let kSecAttrEffectiveKeySize: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrEffectiveKeySize;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) and indicates the effective number of bits in this cryptographic key. For example, a DES key has a [`kSecAttrKeySizeInBits`](ksecattrkeysizeinbits.md) of 64, but a [`kSecAttrEffectiveKeySize`](ksecattreffectivekeysize.md) of 56 bits.
+The corresponding value is of type [`CFNumber`](../CoreFoundation/cfnumber.md) and indicates the effective number of bits in this cryptographic key. For example, a DES key has a [`kSecAttrKeySizeInBits`](./ksecattrkeysizeinbits.md) of 64, but a [`kSecAttrEffectiveKeySize`](./ksecattreffectivekeysize.md) of 56 bits.
 
 
 ---

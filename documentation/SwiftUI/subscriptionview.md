@@ -1,7 +1,8 @@
 # SubscriptionView
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that subscribes to a publisher with an action.
 
@@ -24,29 +25,30 @@ nonisolated struct SubscriptionView<PublisherType, Content> where PublisherType 
 ## Topics
 
 ### Creating a subscription view
-- [init(content: Content, publisher: PublisherType, action: (PublisherType.Output) -> Void)](subscriptionview/init(content:publisher:action:).md)
+- [init(content: Content, publisher: PublisherType, action: (PublisherType.Output) -> Void)](./subscriptionview/init%28content,publisher,action%29.md)
 ### Managing the subscription
-- [var publisher: PublisherType](subscriptionview/publisher.md)
+- [var publisher: PublisherType](./subscriptionview/publisher.md)
   The `Publisher` that is being subscribed.
-- [var action: (PublisherType.Output) -> Void](subscriptionview/action.md)
+- [var action: (PublisherType.Output) -> Void](./subscriptionview/action.md)
   The `Action` executed when `publisher` emits an event.
-- [var content: Content](subscriptionview/content.md)
+- [var content: Content](./subscriptionview/content.md)
   The content view.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct AnyView](anyview.md)
+### Supporting view types
+- [struct AnyView](./anyview.md)
   A type-erased view.
-- [struct EmptyView](emptyview.md)
+- [struct EmptyView](./emptyview.md)
   A view that doesn’t contain any content.
-- [struct EquatableView](equatableview.md)
+- [struct EquatableView](./equatableview.md)
   A view type that compares itself against its previous value and prevents its child updating if its new value is the same as its old value.
-- [struct TupleView](tupleview.md)
+- [struct TupleView](./tupleview.md)
   A View created from a swift tuple of View values.
 
 

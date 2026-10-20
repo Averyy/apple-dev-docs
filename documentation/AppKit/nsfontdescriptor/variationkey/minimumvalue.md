@@ -1,12 +1,13 @@
 # minimumValue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The minimum axis value as a number object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ The minimum axis value as a number object.
 static let minimumValue: NSFontDescriptor.VariationKey
 ```
 
+```c
+extern NSFontDescriptorVariationKey NSFontVariationAxisMinimumValueKey;
+```
+
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object.
+The value of this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object.
 
 ## See Also
 
-- [static let identifier: NSFontDescriptor.VariationKey](nsfontdescriptor/variationkey/identifier.md)
+### Variation Keys
+- [static let identifier: NSFontDescriptor.VariationKey](./identifier.md)
   The axis identifier value as a number object.
-- [static let maximumValue: NSFontDescriptor.VariationKey](nsfontdescriptor/variationkey/maximumvalue.md)
+- [static let maximumValue: NSFontDescriptor.VariationKey](./maximumvalue.md)
   The maximum axis value as a number object.
-- [static let defaultValue: NSFontDescriptor.VariationKey](nsfontdescriptor/variationkey/defaultvalue.md)
+- [static let defaultValue: NSFontDescriptor.VariationKey](./defaultvalue.md)
   The default axis value as a number object.
-- [static let name: NSFontDescriptor.VariationKey](nsfontdescriptor/variationkey/name.md)
+- [static let name: NSFontDescriptor.VariationKey](./name.md)
   The localized variation axis name.
 
 

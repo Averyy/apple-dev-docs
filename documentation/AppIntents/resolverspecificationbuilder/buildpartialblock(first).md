@@ -1,7 +1,8 @@
 # buildPartialBlock(first:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 18.0+
@@ -17,6 +18,8 @@
 ```swift
 static func buildPartialBlock<R>(first: R) -> ResolverSpecificationBuilder<Property>.Specification<Property, R> where R : Resolver
 ```
+
+Available when `Property` conforms to `_IntentValue`.
 
 
 ---

@@ -1,7 +1,8 @@
 # prepareInterface(for:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prepares the interface to display a prompt to save a password credential.
 
@@ -17,13 +18,17 @@ Prepares the interface to display a prompt to save a password credential.
 func prepareInterface(for savePasswordRequest: ASSavePasswordRequest)
 ```
 
+```objc
+- (void) prepareInterfaceForSavePasswordRequest:(ASSavePasswordRequest *) savePasswordRequest;
+```
+
 #### Discussion
 
 The system calls this method to tell your extension’s view controller to prepare to present a prompt to save a password credential. After calling this method, the system presents the view controller to the user.
 
-Upon success, call [`completeSavePasswordRequest(completionHandler:)`](ascredentialproviderextensioncontext/completesavepasswordrequest(completionhandler:).md).
+Upon success, call [`completeSavePasswordRequest(completionHandler:)`](../ascredentialproviderextensioncontext/completesavepasswordrequest%28completionhandler%29.md).
 
-Always provide a way for someone to cancel the operation from your view controller, for example, by including a Cancel button in the navigation bar. When someone cancels the operation, call `ASCredentialProviderExtensionContext/cancelRequest(with:)`, using [`userCanceled`](asextensionerror/usercanceled.md).
+Always provide a way for someone to cancel the operation from your view controller, for example, by including a Cancel button in the navigation bar. When someone cancels the operation, call `ASCredentialProviderExtensionContext/cancelRequest(with:)`, using [`userCanceled`](../asextensionerror/usercanceled.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # switchControl
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The value that represents a Switch Control, allowing the use of the entire system using controller buttons, a breath-controlled switch or similar hardware.
 
@@ -22,7 +23,8 @@ static let switchControl: AccessibilityTechnologies
 
 ## See Also
 
-- [static let voiceOver: AccessibilityTechnologies](accessibilitytechnologies/voiceover.md)
+### Getting technology types
+- [static let voiceOver: AccessibilityTechnologies](./voiceover.md)
   The value that represents the VoiceOver screen reader, allowing use of the system without seeing the screen visually.
 
 

@@ -1,7 +1,8 @@
 # PDFTextAnnotationIconType.insert
 
 **Framework**: PDFKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Insert annotation icon.
 
@@ -10,7 +11,7 @@ Insert annotation icon.
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,19 +20,24 @@ Insert annotation icon.
 case insert
 ```
 
+```c
+kPDFTextAnnotationIconInsert
+```
+
 ## See Also
 
-- [PDFTextAnnotationIconType.comment](pdftextannotationicontype/comment.md)
+### Constants
+- [PDFTextAnnotationIconType.comment](./comment.md)
   Comment annotation icon.
-- [PDFTextAnnotationIconType.key](pdftextannotationicontype/key.md)
+- [PDFTextAnnotationIconType.key](./key.md)
   Key annotation icon.
-- [PDFTextAnnotationIconType.note](pdftextannotationicontype/note.md)
+- [PDFTextAnnotationIconType.note](./note.md)
   Note annotation icon.
-- [PDFTextAnnotationIconType.help](pdftextannotationicontype/help.md)
+- [PDFTextAnnotationIconType.help](./help.md)
   Help annotation icon.
-- [PDFTextAnnotationIconType.newParagraph](pdftextannotationicontype/newparagraph.md)
+- [PDFTextAnnotationIconType.newParagraph](./newparagraph.md)
   New Paragraph annotation icon.
-- [PDFTextAnnotationIconType.paragraph](pdftextannotationicontype/paragraph.md)
+- [PDFTextAnnotationIconType.paragraph](./paragraph.md)
   Paragraph annotation icon.
 
 

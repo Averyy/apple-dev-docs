@@ -1,7 +1,8 @@
 # MTLTessellationFactorFormat.half
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A 16-bit floating-point format.
 
@@ -17,6 +18,10 @@ A 16-bit floating-point format.
 
 ```swift
 case half
+```
+
+```c
+MTLTessellationFactorFormatHalf
 ```
 
 

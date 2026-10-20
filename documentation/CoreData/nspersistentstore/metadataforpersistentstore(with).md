@@ -1,7 +1,8 @@
 # metadataForPersistentStore(with:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the metadata from the persistent store at the given URL.
 
@@ -10,7 +11,7 @@ Returns the metadata from the persistent store at the given URL.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns the metadata from the persistent store at the given URL.
 
 ```swift
 class func metadataForPersistentStore(with url: URL) throws -> [String : Any]
+```
+
+```objc
++ (NSDictionary<NSString *,id> *) metadataForPersistentStoreWithURL:(NSURL *) url error:(NSError **) error;
 ```
 
 #### Return Value
@@ -34,11 +39,12 @@ Subclasses must override this method.
 
 ## See Also
 
-- [class func setMetadata([String : Any]?, forPersistentStoreAt: URL) throws](nspersistentstore/setmetadata(_:forpersistentstoreat:).md)
+### Managing Store Metadata
+- [class func setMetadata([String : Any]?, forPersistentStoreAt: URL) throws](./setmetadata%28_,forpersistentstoreat%29.md)
   Sets the metadata for the store at a given URL.
-- [func loadMetadata() throws](nspersistentstore/loadmetadata.md)
+- [func loadMetadata() throws](./loadmetadata%28%29.md)
   Instructs the persistent store to load its metadata.
-- [var metadata: [String : Any]!](nspersistentstore/metadata.md)
+- [var metadata: [String : Any]!](./metadata.md)
   The metadata for the persistent store.
 
 

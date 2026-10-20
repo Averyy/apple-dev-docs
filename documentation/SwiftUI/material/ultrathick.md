@@ -1,7 +1,8 @@
 # ultraThick
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mostly opaque material.
 
@@ -22,15 +23,16 @@ static let ultraThick: Material
 
 ## See Also
 
-- [static let ultraThin: Material](material/ultrathin.md)
+### Getting material types
+- [static let ultraThin: Material](./ultrathin.md)
   A mostly translucent material.
-- [static let thin: Material](material/thin.md)
+- [static let thin: Material](./thin.md)
   A material that’s more translucent than opaque.
-- [static let regular: Material](material/regular.md)
+- [static let regular: Material](./regular.md)
   A material that’s somewhat translucent.
-- [static let thick: Material](material/thick.md)
+- [static let thick: Material](./thick.md)
   A material that’s more opaque than translucent.
-- [static let bar: Material](material/bar.md)
+- [static let bar: Material](./bar.md)
   A material matching the style of system toolbars.
 
 

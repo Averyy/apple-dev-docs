@@ -1,7 +1,8 @@
 # distance(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the distance from this value to the given value, expressed as a stride.
 
@@ -22,7 +23,7 @@ The distance from this value to `other`.
 
 If this type’s `Stride` type conforms to `BinaryInteger`, then for two values `x` and `y`, and a distance `n = x.distance(to: y)`, `x.advanced(by: n) == y`. Using this method with types that have a noninteger `Stride` may result in an approximation.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

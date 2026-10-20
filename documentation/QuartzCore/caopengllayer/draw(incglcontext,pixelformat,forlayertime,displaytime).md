@@ -1,18 +1,25 @@
 # draw(inCGLContext:pixelFormat:forLayerTime:displayTime:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the OpenGL content for the specified time.
 
 **Availability**:
-- Mac Catalyst 13.1+
-- macOS 10.5+
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.5+ - Deprecated in 10.14
+
+> **Deprecated**: OpenGL is deprecated. (Define GL_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 func draw(inCGLContext ctx: CGLContextObj, pixelFormat pf: CGLPixelFormatObj, forLayerTime t: CFTimeInterval, displayTime ts: UnsafePointer<CVTimeStamp>?)
+```
+
+```objc
+- (void) drawInCGLContext:(CGLContextObj) ctx pixelFormat:(CGLPixelFormatObj) pf forLayerTime:(CFTimeInterval) t displayTime:(const CVTimeStamp *) ts;
 ```
 
 #### Discussion
@@ -30,9 +37,10 @@ The default implementation of the method flushes the context.
 
 ## See Also
 
-- [var isAsynchronous: Bool](caopengllayer/isasynchronous.md)
+### Drawing Layer Content
+- [var isAsynchronous: Bool](./isasynchronous.md)
   Determines when the contents of the layer are updated.
-- [func canDraw(inCGLContext: CGLContextObj, pixelFormat: CGLPixelFormatObj, forLayerTime: CFTimeInterval, displayTime: UnsafePointer<CVTimeStamp>?) -> Bool](caopengllayer/candraw(incglcontext:pixelformat:forlayertime:displaytime:).md)
+- [func canDraw(inCGLContext: CGLContextObj, pixelFormat: CGLPixelFormatObj, forLayerTime: CFTimeInterval, displayTime: UnsafePointer<CVTimeStamp>?) -> Bool](./candraw%28incglcontext,pixelformat,forlayertime,displaytime%29.md)
   Returns whether the receiver should draw OpenGL content for the specified time.
 
 

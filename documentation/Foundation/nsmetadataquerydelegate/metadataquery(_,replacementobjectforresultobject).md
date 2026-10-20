@@ -1,7 +1,8 @@
 # metadataQuery(_:replacementObjectForResultObject:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a different object for a given query result object.
 
@@ -20,13 +21,17 @@ Returns a different object for a given query result object.
 optional func metadataQuery(_ query: NSMetadataQuery, replacementObjectForResultObject result: NSMetadataItem) -> Any
 ```
 
+```objc
+- (id) metadataQuery:(NSMetadataQuery *) query replacementObjectForResultObject:(NSMetadataItem *) result;
+```
+
 #### Return Value
 
 Object that replaces the query result object.
 
 #### Discussion
 
-By default query result objects are instances of the [`NSMetadataItem`](nsmetadataitem.md) class. By implementing this method, you can return an object of a different class type for the specified result object.
+By default query result objects are instances of the [`NSMetadataItem`](../nsmetadataitem.md) class. By implementing this method, you can return an object of a different class type for the specified result object.
 
 ## Parameters
 
@@ -35,8 +40,10 @@ By default query result objects are instances of the [`NSMetadataItem`](nsmetada
 
 ## See Also
 
-- [File Metadata Search Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Carbon/Conceptual/SpotlightQuery/Concepts/Introduction.html#//apple_ref/doc/uid/TP40001841)
-- [func metadataQuery(NSMetadataQuery, replacementValueForAttribute: String, value: Any) -> Any](nsmetadataquerydelegate/metadataquery(_:replacementvalueforattribute:value:).md)
+### Related Documentation
+- [File Metadata Search Programming Guide](https://developer.apple.com/library/archive/documentation/Carbon/Conceptual/SpotlightQuery/Concepts/Introduction.html#//apple_ref/doc/uid/TP40001841)
+### Getting Query Results
+- [func metadataQuery(NSMetadataQuery, replacementValueForAttribute: String, value: Any) -> Any](./metadataquery%28_,replacementvalueforattribute,value%29.md)
   Returns a different value for a given attribute and value.
 
 

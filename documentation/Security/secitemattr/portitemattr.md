@@ -1,7 +1,8 @@
 # SecItemAttr.portItemAttr
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifies the port attribute.
 
@@ -13,6 +14,10 @@ Identifies the port attribute.
 
 ```swift
 case portItemAttr
+```
+
+```c
+kSecPortItemAttr
 ```
 
 #### Discussion

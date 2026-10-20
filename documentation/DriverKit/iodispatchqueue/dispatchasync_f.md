@@ -1,19 +1,20 @@
 # DispatchAsync_f
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Schedule a C-style function for asynchrous execution on the current queue.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 void DispatchAsync_f(void *context, IODispatchFunction function);
 ```
 
@@ -28,11 +29,12 @@ This method schedules the function for execution on the queue and returns immedi
 
 ## See Also
 
-- [DispatchAsync](iodispatchqueue/dispatchasync.md)
+### Executing a Task Asynchronously
+- [DispatchAsync](./dispatchasync.md)
   Schedule a block for asynchronous execution on the current queue.
-- [IODispatchBlock](iodispatchblock.md)
+- [IODispatchBlock](../iodispatchblock.md)
   A block to execute on a dispatch queue.
-- [IODispatchFunction](iodispatchfunction.md)
+- [IODispatchFunction](../iodispatchfunction.md)
   A C-style function to execute on a dispatch queue.
 
 

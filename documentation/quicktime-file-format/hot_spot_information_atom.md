@@ -1,13 +1,16 @@
 # Hot spot information atom ('hsin')
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An atom that contains general information about a hot spot.
 
+> **Deprecated**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
+
 ## Mentions
 
-- [Custom cursor atom](custom_cursor_atom.md)
+- [Custom cursor atom](./custom_cursor_atom.md)
 
 #### Overview
 
@@ -39,44 +42,45 @@ typedef struct VRHotSpotInfoAtom {
 ## Topics
 
 ### Data fields
-- [majorVersion](hot_spot_information_atom/majorversion.md)
+- [majorVersion](./hot_spot_information_atom/majorversion.md)
   The major version number of the file format.
-- [minorVersion](hot_spot_information_atom/minorversion.md)
+- [minorVersion](./hot_spot_information_atom/minorversion.md)
   The minor version number of the file format.
-- [hotSpotType](hot_spot_information_atom/hotspottype.md)
+- [hotSpotType](./hot_spot_information_atom/hotspottype.md)
   The hot spot type.
-- [nameAtomID](hot_spot_information_atom/nameatomid.md)
+- [nameAtomID](./hot_spot_information_atom/nameatomid.md)
   The ID of the string atom that contains the name of the hot spot.
-- [commentAtomID](hot_spot_information_atom/commentatomid.md)
+- [commentAtomID](./hot_spot_information_atom/commentatomid.md)
   The ID of the string atom that contains a comment for the hot spot.
-- [cursorID](hot_spot_information_atom/cursorid.md)
+- [cursorID](./hot_spot_information_atom/cursorid.md)
   An array of three IDs for custom hot spot cursors.
-- [bestPan](hot_spot_information_atom/bestpan.md)
+- [bestPan](./hot_spot_information_atom/bestpan.md)
   The best pan angle for viewing this hot spot.
-- [bestTilt](hot_spot_information_atom/besttilt.md)
+- [bestTilt](./hot_spot_information_atom/besttilt.md)
   The best tilt angle for viewing this hot spot.
-- [bestFOV](hot_spot_information_atom/bestfov.md)
+- [bestFOV](./hot_spot_information_atom/bestfov.md)
   The best field of view for viewing this hot spot.
-- [bestViewCenter](hot_spot_information_atom/bestviewcenter.md)
+- [bestViewCenter](./hot_spot_information_atom/bestviewcenter.md)
   The best view center for viewing this hot spot.
-- [hotSpotRect](hot_spot_information_atom/hotspotrect.md)
+- [hotSpotRect](./hot_spot_information_atom/hotspotrect.md)
   The boundary box for this hot spot, specified as the number of pixels in full panoramic space.
-- [flags](hot_spot_information_atom/flags.md)
+- [flags](./hot_spot_information_atom/flags.md)
   A set of hot spot flags.
-- [reserved1](hot_spot_information_atom/reserved1.md)
+- [reserved1](./hot_spot_information_atom/reserved1.md)
   Reserved.
-- [reserved2](hot_spot_information_atom/reserved2.md)
+- [reserved2](./hot_spot_information_atom/reserved2.md)
   Reserved.
 
 ## See Also
 
-- [Node header atom ('ndhd')](node_header_atom.md)
+### Specifying node information
+- [Node header atom ('ndhd')](./node_header_atom.md)
   An atom that describes the type and ID of a node, as well as other information about the node.
-- [Hot spot parent atom ('hspa')](hot_spot_parent_atom.md)
+- [Hot spot parent atom ('hspa')](./hot_spot_parent_atom.md)
   An atom that is the parent for all hot spot atoms for the node.
-- [Specific information atom](specific_information_atom.md)
+- [Specific information atom](./specific_information_atom.md)
   An atom that identified the hot spot type.
-- [Link hot spot atom ('link')](link_hot_spot_atom.md)
+- [Link hot spot atom ('link')](./link_hot_spot_atom.md)
   An atom that specifies information for a link hot spot.
 
 

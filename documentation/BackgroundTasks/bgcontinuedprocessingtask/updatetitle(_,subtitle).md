@@ -1,7 +1,8 @@
 # updateTitle(_:subtitle:)
 
 **Framework**: Background Tasks  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Update the task title and subtitle that the system displays to a person.
 
@@ -16,6 +17,10 @@ Update the task title and subtitle that the system displays to a person.
 func updateTitle(_ title: String, subtitle: String)
 ```
 
+```objc
+- (void) updateTitle:(NSString *) title subtitle:(NSString *) subtitle;
+```
+
 #### Discussion
 
 The system displays Continuous Background Task requests in a Live Activity for a person to monitor progress and cancel a task, if they wish.
@@ -27,9 +32,10 @@ The system displays Continuous Background Task requests in a Live Activity for a
 
 ## See Also
 
-- [var title: String](bgcontinuedprocessingtask/title.md)
+### Titling the task
+- [var title: String](./title.md)
   The localized title displayed to a person.
-- [var subtitle: String](bgcontinuedprocessingtask/subtitle.md)
+- [var subtitle: String](./subtitle.md)
   The localized subtitle displayed to a person.
 
 

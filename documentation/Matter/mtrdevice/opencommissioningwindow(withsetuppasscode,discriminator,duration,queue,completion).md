@@ -1,7 +1,8 @@
 # openCommissioningWindow(withSetupPasscode:discriminator:duration:queue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.2+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func openCommissioningWindow(withSetupPasscode setupPasscode: NSNumber, discriminator: NSNumber, duration: NSNumber, queue: dispatch_queue_t, completion: @escaping @Sendable (MTRSetupPayload?, (any Error)?) -> Void)
+```
+
+```swift
 func openCommissioningWindow(withSetupPasscode setupPasscode: NSNumber, discriminator: NSNumber, duration: NSNumber, queue: dispatch_queue_t) async throws -> MTRSetupPayload
+```
+
+```objc
+- (void) openCommissioningWindowWithSetupPasscode:(NSNumber *) setupPasscode discriminator:(NSNumber *) discriminator duration:(NSNumber *) duration queue:(dispatch_queue_t) queue completion:(MTRDeviceOpenCommissioningWindowHandler) completion;
 ```
 
 

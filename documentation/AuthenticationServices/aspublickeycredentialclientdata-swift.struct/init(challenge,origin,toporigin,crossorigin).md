@@ -1,7 +1,8 @@
 # init(challenge:origin:topOrigin:crossOrigin:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.4+

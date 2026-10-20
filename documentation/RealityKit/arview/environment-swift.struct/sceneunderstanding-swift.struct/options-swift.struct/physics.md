@@ -1,7 +1,8 @@
 # physics
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 No abstract
 

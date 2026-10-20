@@ -1,21 +1,22 @@
 # AppPriceScheduleCreateRequest.Data.Relationships.BaseTerritory
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 2.3+
 
 ## Declaration
 
-```swift
+```
 object AppPriceScheduleCreateRequest.Data.Relationships.BaseTerritory
 ```
 
 ## Topics
 
 ### Objects
-- [object AppPriceScheduleCreateRequest.Data.Relationships.BaseTerritory.Data](apppriceschedulecreaterequest/data-data.dictionary/relationships-data.dictionary/baseterritory-data.dictionary/data-data.dictionary.md)
+- [object AppPriceScheduleCreateRequest.Data.Relationships.BaseTerritory.Data](./baseterritory-data.dictionary/data-data.dictionary.md)
   The request body you use to create an app price schedule.
 
 ## Properties
@@ -24,8 +25,9 @@ object AppPriceScheduleCreateRequest.Data.Relationships.BaseTerritory
 
 ## See Also
 
-- [object AppPriceScheduleCreateRequest.Data.Relationships.App](apppriceschedulecreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)
-- [object AppPriceScheduleCreateRequest.Data.Relationships.ManualPrices](apppriceschedulecreaterequest/data-data.dictionary/relationships-data.dictionary/manualprices-data.dictionary.md)
+### Objects
+- [object AppPriceScheduleCreateRequest.Data.Relationships.App](./app-data.dictionary.md)
+- [object AppPriceScheduleCreateRequest.Data.Relationships.ManualPrices](./manualprices-data.dictionary.md)
 
 
 ---

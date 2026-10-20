@@ -1,7 +1,8 @@
 # binaryArchives
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var binaryArchives: [any MTLBinaryArchive]? { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSArray<id<MTLBinaryArchive>> * binaryArchives;
 ```
 
 

@@ -1,7 +1,8 @@
 # ctx_key
 
 **Framework**: GSS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Kerberos session context key.
 
@@ -18,11 +19,16 @@ The Kerberos session context key.
 var ctx_key: gss_krb5_lucid_key_t
 ```
 
+```c
+gss_krb5_lucid_key_t ctx_key;
+```
+
 ## See Also
 
-- [var acceptor_subkey: gss_krb5_lucid_key_t](gss_krb5_cfx_keydata/acceptor_subkey.md)
+### Key Properties
+- [var acceptor_subkey: gss_krb5_lucid_key_t](./acceptor_subkey.md)
   The Kerberos session acceptor subkey.
-- [var have_acceptor_subkey: OM_uint32](gss_krb5_cfx_keydata/have_acceptor_subkey.md)
+- [var have_acceptor_subkey: OM_uint32](./have_acceptor_subkey.md)
   The flag that indicates if the Kerberos session acceptor subkey is available.
 
 

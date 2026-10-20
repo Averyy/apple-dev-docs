@@ -1,17 +1,22 @@
 # alpha
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s current alpha value based on its opacity slider.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var alpha: CGFloat { get }
+```
+
+```objc
+@property (readonly) CGFloat alpha;
 ```
 
 

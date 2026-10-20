@@ -1,7 +1,8 @@
 # AVAsyncProperty
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An asynchronous property that constrains its type and value.
 
@@ -22,34 +23,35 @@ class AVAsyncProperty<Root, Value>
 
 ## Mentions
 
-- [Loading media data asynchronously](loading-media-data-asynchronously.md)
+- [Loading media data asynchronously](./loading-media-data-asynchronously.md)
 
 #### Overview
 
-This class subclasses [`AVPartialAsyncProperty`](avpartialasyncproperty.md) to provide a type constraint on the property value.
+This class subclasses [`AVPartialAsyncProperty`](./avpartialasyncproperty.md) to provide a type constraint on the property value.
 
 ## Topics
 
 ### Accessing the status
-- [AVAsyncProperty.Status](avasyncproperty/status.md)
+- [AVAsyncProperty.Status](./avasyncproperty/status.md)
   Loaded status values for asynchronous properties.
 
 ## Relationships
 
 ### Inherits From
-- [AVPartialAsyncProperty](avpartialasyncproperty.md)
+- [AVPartialAsyncProperty](./avpartialasyncproperty.md)
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol AVAsynchronousKeyValueLoading](avasynchronouskeyvalueloading.md)
+### Property loading
+- [protocol AVAsynchronousKeyValueLoading](./avasynchronouskeyvalueloading.md)
   A protocol that defines the interface to load media data asynchronously.
-- [class AVPartialAsyncProperty](avpartialasyncproperty.md)
+- [class AVPartialAsyncProperty](./avpartialasyncproperty.md)
   An asynchronous property that constrains its type.
-- [class AVAnyAsyncProperty](avanyasyncproperty.md)
+- [class AVAnyAsyncProperty](./avanyasyncproperty.md)
   A base class for asynchronous properties.
 
 

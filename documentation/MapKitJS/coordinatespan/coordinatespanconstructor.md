@@ -1,7 +1,8 @@
 # new CoordinateSpan(latitudeDelta, longitudeDelta)
 
 **Framework**: MapKit JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Constructor
 
 Creates a new coordinate span object with the specified latitude and longitude deltas.
 
@@ -10,7 +11,7 @@ Creates a new coordinate span object with the specified latitude and longitude d
 
 ## Declaration
 
-```swift
+```
 constructor(latitudeDelta?: number, longitudeDelta?: number);
 ```
 
@@ -29,7 +30,8 @@ const span = new mapkit.CoordinateSpan(.016, .016); // The initializer requires 
 
 ## See Also
 
-- [interface CoordinateSpanData](coordinatespandata.md)
+### Creating a coordinate span
+- [interface CoordinateSpanData](../coordinatespandata.md)
   A plain object representation of a coordinate span.
 
 

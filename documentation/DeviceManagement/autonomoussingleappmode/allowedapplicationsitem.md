@@ -1,7 +1,8 @@
 # AutonomousSingleAppMode.AllowedApplicationsItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 A dictionary that specifies an app that can be granted access to the Accessibilty APIs.
 
@@ -10,7 +11,7 @@ A dictionary that specifies an app that can be granted access to the Accessibilt
 
 ## Declaration
 
-```swift
+```
 object AutonomousSingleAppMode.AllowedApplicationsItem
 ```
 

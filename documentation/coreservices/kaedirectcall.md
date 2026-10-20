@@ -1,7 +1,8 @@
 # kAEDirectCall
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The source of the Apple event is a direct call that bypassed the PPC Toolbox.
 

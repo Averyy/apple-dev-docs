@@ -1,7 +1,8 @@
 # fontWeight()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The font weight for the specified symbol weight.
 
@@ -19,9 +20,13 @@ The font weight for the specified symbol weight.
 func fontWeight() -> UIFont.Weight
 ```
 
+```c
+extern UIFontWeight UIFontWeightForImageSymbolWeight(UIImageSymbolWeight symbolWeight);
+```
+
 #### Return Value
 
-The [`UIFont.Weight`](uifont/weight.md) value that matches the specified symbol weight.
+The [`UIFont.Weight`](../../uifont/weight.md) value that matches the specified symbol weight.
 
 
 ---

@@ -1,14 +1,15 @@
 # ABAddressBookRequestAccessCompletionHandler
 
 **Framework**: Address Book  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Definition for a block callback invoked when an access request has completed.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
+- iOS 2.0+ - Deprecated in 9.0
+- iPadOS 2.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
 
 ## Declaration
 
@@ -16,9 +17,13 @@ Definition for a block callback invoked when an access request has completed.
 typealias ABAddressBookRequestAccessCompletionHandler = (Bool, CFError?) -> Void
 ```
 
+```c
+typedef void (^)(_Bool, struct __CFError *) ABAddressBookRequestAccessCompletionHandler;
+```
+
 #### Discussion
 
-Address book request access completion handler blocks are used with [`ABAddressBookCreateWithOptions(_:_:)`](abaddressbookcreatewithoptions(_:_:).md). If you had a view controller that wanted to display the count of users with the name “Smith” in the address book, you might implement something like the code shown in the following code listing.
+Address book request access completion handler blocks are used with [`ABAddressBookCreateWithOptions(_:_:)`](./abaddressbookcreatewithoptions%28_,_%29.md). If you had a view controller that wanted to display the count of users with the name “Smith” in the address book, you might implement something like the code shown in the following code listing.
 
 Listing 1. Sample implementation using ABAddressBookRequestAccessCompletionHandler
 
@@ -55,23 +60,24 @@ Listing 1. Sample implementation using ABAddressBookRequestAccessCompletionHandl
 
 ## See Also
 
-- [typealias ABRecord](abrecord-swift.typealias.md)
+### Deprecated
+- [typealias ABRecord](./abrecord-swift.typealias.md)
   A reference to an ABRecord object or any of its derivedopaque types.
-- [typealias ABExternalChangeCallback](abexternalchangecallback.md)
+- [typealias ABExternalChangeCallback](./abexternalchangecallback.md)
   Prototype for a function callback invoked on an address book when the Address Book database is modified by another address book instance.
-- [typealias ABMultiValueIdentifier](abmultivalueidentifier.md)
+- [typealias ABMultiValueIdentifier](./abmultivalueidentifier.md)
   Identifies multivalue properties.
-- [typealias ABPersonCompositeNameFormat](abpersoncompositenameformat.md)
+- [typealias ABPersonCompositeNameFormat](./abpersoncompositenameformat.md)
   Indicates a person-name display format.
-- [typealias ABPersonSortOrdering](abpersonsortordering.md)
+- [typealias ABPersonSortOrdering](./abpersonsortordering.md)
   Indicates a person sort ordering.
-- [typealias ABPropertyID](abpropertyid.md)
+- [typealias ABPropertyID](./abpropertyid.md)
   Integer that identifies a record property.
-- [typealias ABRecordID](abrecordid.md)
+- [typealias ABRecordID](./abrecordid.md)
   Integer that identifies a record.
-- [typealias ABRecordType](abrecordtype.md)
+- [typealias ABRecordType](./abrecordtype.md)
   Integer that identifies a record type.
-- [typealias ABSourceType](absourcetype.md)
+- [typealias ABSourceType](./absourcetype.md)
   Indicates a source type. See `Source Properties`.
 
 

@@ -1,7 +1,8 @@
 # removeAllDeliveredNotifications()
 
 **Framework**: User Notifications  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all of your app’s delivered notifications from Notification Center.
 
@@ -19,15 +20,20 @@ Removes all of your app’s delivered notifications from Notification Center.
 func removeAllDeliveredNotifications()
 ```
 
+```objc
+- (void) removeAllDeliveredNotifications;
+```
+
 #### Discussion
 
 Use this method to remove all of your app’s delivered notifications from Notification Center. The method executes asynchronously, returning immediately and removing the identifiers on a background thread. This method does not affect any notification requests that are scheduled, but have not yet been delivered.
 
 ## See Also
 
-- [func getDeliveredNotifications(completionHandler: ([UNNotification]) -> Void)](unusernotificationcenter/getdeliverednotifications(completionhandler:).md)
+### Removing delivered notifications
+- [func getDeliveredNotifications(completionHandler: ([UNNotification]) -> Void)](./getdeliverednotifications%28completionhandler%29.md)
   Fetches all of your app’s delivered notifications that are still present in Notification Center.
-- [func removeDeliveredNotifications(withIdentifiers: [String])](unusernotificationcenter/removedeliverednotifications(withidentifiers:).md)
+- [func removeDeliveredNotifications(withIdentifiers: [String])](./removedeliverednotifications%28withidentifiers%29.md)
   Removes your app’s notifications from Notification Center that match the specified identifiers.
 
 

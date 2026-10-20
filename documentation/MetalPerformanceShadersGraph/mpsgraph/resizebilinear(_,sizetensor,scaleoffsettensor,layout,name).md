@@ -1,7 +1,8 @@
 # resizeBilinear(_:sizeTensor:scaleOffsetTensor:layout:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resamples input images to given size using the provided scale and offset and bilinear sampling See above discussion for more details.
 
@@ -17,6 +18,10 @@ Resamples input images to given size using the provided scale and offset and bil
 
 ```swift
 func resizeBilinear(_ imagesTensor: MPSGraphTensor, sizeTensor size: MPSGraphTensor, scaleOffsetTensor scaleOffset: MPSGraphTensor, layout: MPSGraphTensorNamedDataLayout, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) resizeBilinearWithTensor:(MPSGraphTensor *) imagesTensor sizeTensor:(MPSGraphTensor *) size scaleOffsetTensor:(MPSGraphTensor *) scaleOffset layout:(MPSGraphTensorNamedDataLayout) layout name:(NSString *) name;
 ```
 
 #### Return Value

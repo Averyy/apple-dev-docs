@@ -1,7 +1,8 @@
 # tertiary
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A shape style that maps to the third level of the current content style.
 
@@ -22,11 +23,12 @@ static let tertiary: HierarchicalShapeStyle
 
 ## See Also
 
-- [static let primary: HierarchicalShapeStyle](hierarchicalshapestyle/primary.md)
+### Getting hierarchical shape styles
+- [static let primary: HierarchicalShapeStyle](./primary.md)
   A shape style that maps to the first level of the current content style.
-- [static let secondary: HierarchicalShapeStyle](hierarchicalshapestyle/secondary.md)
+- [static let secondary: HierarchicalShapeStyle](./secondary.md)
   A shape style that maps to the second level of the current content style.
-- [static let quaternary: HierarchicalShapeStyle](hierarchicalshapestyle/quaternary.md)
+- [static let quaternary: HierarchicalShapeStyle](./quaternary.md)
   A shape style that maps to the fourth level of the current content style.
 
 

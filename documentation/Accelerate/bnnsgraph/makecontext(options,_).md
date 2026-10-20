@@ -1,7 +1,8 @@
 # makeContext(options:_:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a new context that wraps a graph object that the given closure defines.
 
@@ -24,7 +25,7 @@ static func makeContext(options: BNNSGraph.CompileOptions = CompileOptions(), _ 
 
 Use this function to specify the operations that define a BNNS graph. For example, the following code creates a graph that performs element-wise multiplication of two eight-element vectors:
 
-```None
+```
    let context = try BNNSGraph.makeContext ({
        builder in
 
@@ -43,7 +44,7 @@ Use this function to specify the operations that define a BNNS graph. For exampl
 
 The following code defines the arguments and executes the graph:
 
-```None
+```
    var args = context.argumentNames().map {
        name in
 
@@ -78,11 +79,12 @@ On return, `args[0]` contains the values `[8.0, 14.0, 18.0, 20.0, 20.0, 18.0, 14
 
 ## See Also
 
-- [BNNSGraph.Builder](bnnsgraph/builder.md)
+### Building graphs in Swift
+- [BNNSGraph.Builder](./builder.md)
   A structure thats provides a closure you can use to define the arguments and operations of a BNNS Graph.
-- [BNNSGraph.Builder.Tensor](bnnsgraph/builder/tensor.md)
+- [BNNSGraph.Builder.Tensor](./builder/tensor.md)
   A structure that represents an abstract handle to a tensor that you use within a `BNNSGraph.makeContext` closure.
-- [Supporting real-time ML inference on the CPU](supporting-real-time-ml-inference-on-the-cpu.md)
+- [Supporting real-time ML inference on the CPU](../supporting-real-time-ml-inference-on-the-cpu.md)
   Add real-time digital signal processing to apps like Logic Pro X and GarageBand with the BNNS Graph API.
 
 

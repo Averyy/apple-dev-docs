@@ -1,7 +1,8 @@
 # dataRepresentation
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the opaque data representation of the hardware model.
 
@@ -14,13 +15,18 @@ Returns the opaque data representation of the hardware model.
 var dataRepresentation: Data { get }
 ```
 
+```objc
+@property (copy, readonly) NSData * dataRepresentation;
+```
+
 #### Discussion
 
-You can use this to recreate the same hardware model with [`init(dataRepresentation:)`](vzmachardwaremodel/init(datarepresentation:).md).
+You can use this to recreate the same hardware model with [`init(dataRepresentation:)`](./init%28datarepresentation%29.md).
 
 ## See Also
 
-- [var isSupported: Bool](vzmachardwaremodel/issupported.md)
+### Configuring the hardware model
+- [var isSupported: Bool](./issupported.md)
   A Boolean value that indicates whether the host supports this hardware model.
 
 

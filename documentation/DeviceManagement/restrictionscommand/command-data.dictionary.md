@@ -1,7 +1,8 @@
 # RestrictionsCommand.Command
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to get a list of restrictions on the device.
 
@@ -15,15 +16,21 @@ The command to get a list of restrictions on the device.
 
 ## Declaration
 
-```swift
+```
 object RestrictionsCommand.Command
 ```
 
 ## Properties
 
 - `ProfileRestrictions` (boolean): If `true`, the device reports restrictions from each profile.
+
+  **Default**: `false`
 - `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+
+  **Default**: `false`
 - `RequestType` (string) *(required)*: The request type for this command.
+
+  **Allowed Values**: `Restrictions`
 
 
 ---

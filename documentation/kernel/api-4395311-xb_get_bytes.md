@@ -1,14 +1,15 @@
 # xb_get_bytes
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 int xb_get_bytes(struct xdrbuf *, char *, uint32_t, int);
 ```
 

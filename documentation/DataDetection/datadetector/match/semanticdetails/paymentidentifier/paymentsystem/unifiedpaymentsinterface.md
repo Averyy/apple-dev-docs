@@ -1,7 +1,8 @@
 # DataDetector.Match.SemanticDetails.PaymentIdentifier.PaymentSystem.unifiedPaymentsInterface
 
 **Framework**: DataDetection  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value the describes the Unified Payments Interface (UPI).
 

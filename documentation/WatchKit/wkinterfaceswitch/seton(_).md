@@ -1,7 +1,8 @@
 # setOn(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the state of the switch to the specified value.
 
@@ -14,17 +15,22 @@ Sets the state of the switch to the specified value.
 func setOn(_ on: Bool)
 ```
 
+```objc
+- (void) setOn:(BOOL) on;
+```
+
 #### Discussion
 
 Use this method to set the value of a switch. If you want to know the value of a switch, use a local variable to track that information.
 
 ## Parameters
 
-- `on`: A Boolean value indicating whether the switch should be set to the On or Off state. Specify [`true`](https://developer.apple.com/documentation/swift/true) to set the switch to the On state.
+- `on`: A Boolean value indicating whether the switch should be set to the On or Off state. Specify [`true`](../../Swift/true.md) to set the switch to the On state.
 
 ## See Also
 
-- [func setColor(UIColor?)](wkinterfaceswitch/setcolor(_:).md)
+### Configuring the Switch
+- [func setColor(UIColor?)](./setcolor%28_%29.md)
   Changes the tint color of the switch when it is on.
 
 

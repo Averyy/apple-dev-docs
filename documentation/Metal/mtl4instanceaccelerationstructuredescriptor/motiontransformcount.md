@@ -1,7 +1,8 @@
 # motionTransformCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls the total number of motion transforms in the motion transform buffer.
 
@@ -17,6 +18,10 @@ Controls the total number of motion transforms in the motion transform buffer.
 
 ```swift
 var motionTransformCount: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger motionTransformCount;
 ```
 
 

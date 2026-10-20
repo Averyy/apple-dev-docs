@@ -1,25 +1,27 @@
 # RingBufferFrameSize
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 RingBufferFrameSize
 ```
 
 ## See Also
 
-- [SampleRate](videodriverkit/iouservideoreservedconfigchangeaction/samplerate.md)
-- [StreamFormat](videodriverkit/iouservideoreservedconfigchangeaction/streamformat.md)
-- [StreamAddition](videodriverkit/iouservideoreservedconfigchangeaction/streamaddition.md)
-- [StreamCount](videodriverkit/iouservideoreservedconfigchangeaction/streamcount.md)
-- [StreamDirection](videodriverkit/iouservideoreservedconfigchangeaction/streamdirection.md)
-- [StreamRemoval](videodriverkit/iouservideoreservedconfigchangeaction/streamremoval.md)
+### Configuration change identifiers
+- [SampleRate](./samplerate.md)
+- [StreamFormat](./streamformat.md)
+- [StreamAddition](./streamaddition.md)
+- [StreamCount](./streamcount.md)
+- [StreamDirection](./streamdirection.md)
+- [StreamRemoval](./streamremoval.md)
 
 
 ---

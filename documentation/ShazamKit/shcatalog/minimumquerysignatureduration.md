@@ -1,7 +1,8 @@
 # minimumQuerySignatureDuration
 
 **Framework**: ShazamKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum duration of a query signature that you use to match reference signatures in the catalog.
 
@@ -20,9 +21,22 @@ The minimum duration of a query signature that you use to match reference signat
 var minimumQuerySignatureDuration: TimeInterval { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, assign, readonly) NSTimeInterval minimumQuerySignatureDuration;
+```
+
+*macOS*
+
+```objc
+@property (atomic, assign, readonly) NSTimeInterval minimumQuerySignatureDuration;
+```
+
 ## See Also
 
-- [var maximumQuerySignatureDuration: TimeInterval](shcatalog/maximumquerysignatureduration.md)
+### Accessing catalog properties
+- [var maximumQuerySignatureDuration: TimeInterval](./maximumquerysignatureduration.md)
   The maximum duration of a query signature that you use to match reference signatures in the catalog.
 
 

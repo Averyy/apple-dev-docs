@@ -1,12 +1,13 @@
 # write(to:ofType:for:originalContentsURL:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes the contents of the document to a file or file package located by a URL.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,11 +16,15 @@ nonisolated
 func write(to url: URL, ofType typeName: String, for saveOperation: NSDocument.SaveOperationType, originalContentsURL absoluteOriginalContentsURL: URL?) throws
 ```
 
+```objc
+- (BOOL) writeToURL:(NSURL *) url ofType:(NSString *) typeName forSaveOperation:(NSSaveOperationType) saveOperation originalContentsURL:(NSURL *) absoluteOriginalContentsURL error:(NSError **) outError;
+```
+
 #### Discussion
 
-The default implementation of this method merely invokes `[self writeToURL:absoluteURL ofType:typeName error:outError]`. You can override this method instead of one of the three simple writing methods ([`write(to:ofType:)`](nsdocument/write(to:oftype:).md),[`fileWrapper(ofType:)`](nsdocument/filewrapper(oftype:).md), and [`data(ofType:)`](nsdocument/data(oftype:).md)) if your document writing machinery needs access to the on-disk representation of the document revision that is about to be overwritten. The value of `absoluteURL` is often not the same as `[self fileURL]`. Other times it is not the same as the URL for the final save destination. Likewise, `absoluteOriginalContentsURL` is often not the same value as `[self fileURL]`. If `absoluteOriginalContentsURL` is `nil`, either the document has never been saved or the user deleted the document file since it was opened.
+The default implementation of this method merely invokes `[self writeToURL:absoluteURL ofType:typeName error:outError]`. You can override this method instead of one of the three simple writing methods ([`write(to:ofType:)`](./write%28to,oftype%29.md),[`fileWrapper(ofType:)`](./filewrapper%28oftype%29.md), and [`data(ofType:)`](./data%28oftype%29.md)) if your document writing machinery needs access to the on-disk representation of the document revision that is about to be overwritten. The value of `absoluteURL` is often not the same as `[self fileURL]`. Other times it is not the same as the URL for the final save destination. Likewise, `absoluteOriginalContentsURL` is often not the same value as `[self fileURL]`. If `absoluteOriginalContentsURL` is `nil`, either the document has never been saved or the user deleted the document file since it was opened.
 
-For backward binary compatibility with OS X v10.3 and earlier, if [`writeToFile:ofType:originalFile:saveOperation:`](nsdocument/writetofile:oftype:originalfile:saveoperation:.md) is overridden and both URLs use the `file:` scheme, the default implementation of this method instead invokes:
+For backward binary compatibility with OS X v10.3 and earlier, if [`writeToFile:ofType:originalFile:saveOperation:`](./writetofile_oftype_originalfile_saveoperation_.md) is overridden and both URLs use the `file:` scheme, the default implementation of this method instead invokes:
 
 ```objc
 [self writeToFile:[absoluteURL path]
@@ -30,7 +35,9 @@ For backward binary compatibility with OS X v10.3 and earlier, if [`writeToFile:
 
 The save operation used in this case is never `NSAutosaveOperation`; `NSSaveToOperation` is used instead.
 
-> **Note**:  In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure. When overriding this method, use the `throw` statement to throw an `NSError`, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> When overriding this method, use the `throw` statement to throw an `NSError`, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
@@ -41,25 +48,26 @@ The save operation used in this case is never `NSAutosaveOperation`; `NSSaveToOp
 
 ## See Also
 
-- [func canAsynchronouslyWrite(to: URL, ofType: String, for: NSDocument.SaveOperationType) -> Bool](nsdocument/canasynchronouslywrite(to:oftype:for:).md)
+### Writing the Document’s Content
+- [func canAsynchronouslyWrite(to: URL, ofType: String, for: NSDocument.SaveOperationType) -> Bool](./canasynchronouslywrite%28to,oftype,for%29.md)
   Returns whether the receiver can concurrently write to a file or file package located by a URL, that is formatted for a specific type, for a specific kind of save operation.
-- [func unblockUserInteraction()](nsdocument/unblockuserinteraction.md)
+- [func unblockUserInteraction()](./unblockuserinteraction%28%29.md)
   Unblocks the main thread during asynchronous saving.
-- [func write(to: URL, ofType: String) throws](nsdocument/write(to:oftype:).md)
+- [func write(to: URL, ofType: String) throws](./write%28to,oftype%29.md)
   Writes the contents of the document to a file or file package located by a URL, that is formatted to a specified type.
-- [func writeSafely(to: URL, ofType: String, for: NSDocument.SaveOperationType) throws](nsdocument/writesafely(to:oftype:for:).md)
+- [func writeSafely(to: URL, ofType: String, for: NSDocument.SaveOperationType) throws](./writesafely%28to,oftype,for%29.md)
   Writes the contents of the document to a file or file package located by a URL.
-- [func fileWrapper(ofType: String) throws -> FileWrapper](nsdocument/filewrapper(oftype:).md)
+- [func fileWrapper(ofType: String) throws -> FileWrapper](./filewrapper%28oftype%29.md)
   Creates and returns a file wrapper that contains the contents of the document, formatted to the specified type.
-- [func data(ofType: String) throws -> Data](nsdocument/data(oftype:).md)
+- [func data(ofType: String) throws -> Data](./data%28oftype%29.md)
   Creates and returns a data object that contains the contents of the document, formatted to a specified type.
-- [func save(to: URL, ofType: String, for: NSDocument.SaveOperationType, delegate: Any?, didSave: Selector?, contextInfo: UnsafeMutableRawPointer?)](nsdocument/save(to:oftype:for:delegate:didsave:contextinfo:).md)
+- [func save(to: URL, ofType: String, for: NSDocument.SaveOperationType, delegate: Any?, didSave: Selector?, contextInfo: UnsafeMutableRawPointer?)](./save%28to,oftype,for,delegate,didsave,contextinfo%29.md)
   Saves the contents of the document to a file or file package located by a URL, that is formatted to a specified type, for a particular kind of save operation.
-- [func save(to: URL, ofType: String, for: NSDocument.SaveOperationType, completionHandler: ((any Error)?) -> Void)](nsdocument/save(to:oftype:for:completionhandler:).md)
+- [func save(to: URL, ofType: String, for: NSDocument.SaveOperationType, completionHandler: ((any Error)?) -> Void)](./save%28to,oftype,for,completionhandler%29.md)
   Saves the contents of the document to a file or file package located by a URL, that is formatted to a specified type, for a particular kind of save operation, and invokes the passed-in completion handler.
-- [func fileAttributesToWrite(to: URL, ofType: String, for: NSDocument.SaveOperationType, originalContentsURL: URL?) throws -> [String : Any]](nsdocument/fileattributestowrite(to:oftype:for:originalcontentsurl:).md)
+- [func fileAttributesToWrite(to: URL, ofType: String, for: NSDocument.SaveOperationType, originalContentsURL: URL?) throws -> [String : Any]](./fileattributestowrite%28to,oftype,for,originalcontentsurl%29.md)
   Returns the attributes to write to the file or file package at the specified URL, and targeting the specified type of save operation.
-- [NSDocument.SaveOperationType](nsdocument/saveoperationtype.md)
+- [NSDocument.SaveOperationType](./saveoperationtype.md)
   Constants for specifying the type of document-save operation to perform.
 
 

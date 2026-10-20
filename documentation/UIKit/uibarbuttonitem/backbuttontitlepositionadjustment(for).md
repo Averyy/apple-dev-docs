@@ -1,7 +1,8 @@
 # backButtonTitlePositionAdjustment(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the back button title offset for specified bar metrics.
 
@@ -15,6 +16,10 @@ Returns the back button title offset for specified bar metrics.
 
 ```swift
 func backButtonTitlePositionAdjustment(for barMetrics: UIBarMetrics) -> UIOffset
+```
+
+```objc
+- (UIOffset) backButtonTitlePositionAdjustmentForBarMetrics:(UIBarMetrics) barMetrics;
 ```
 
 #### Return Value
@@ -31,15 +36,16 @@ This modifier applies only to navigation bar back buttons and is ignored by othe
 
 ## See Also
 
-- [func backButtonBackgroundImage(for: UIControl.State, barMetrics: UIBarMetrics) -> UIImage?](uibarbuttonitem/backbuttonbackgroundimage(for:barmetrics:).md)
+### Customizing the Back button
+- [func backButtonBackgroundImage(for: UIControl.State, barMetrics: UIBarMetrics) -> UIImage?](./backbuttonbackgroundimage%28for,barmetrics%29.md)
   Returns the back button background image for a specified control state and bar metrics.
-- [func setBackButtonBackgroundImage(UIImage?, for: UIControl.State, barMetrics: UIBarMetrics)](uibarbuttonitem/setbackbuttonbackgroundimage(_:for:barmetrics:).md)
+- [func setBackButtonBackgroundImage(UIImage?, for: UIControl.State, barMetrics: UIBarMetrics)](./setbackbuttonbackgroundimage%28_,for,barmetrics%29.md)
   Sets the back button background image for a specified control state and bar metrics.
-- [func setBackButtonTitlePositionAdjustment(UIOffset, for: UIBarMetrics)](uibarbuttonitem/setbackbuttontitlepositionadjustment(_:for:).md)
+- [func setBackButtonTitlePositionAdjustment(UIOffset, for: UIBarMetrics)](./setbackbuttontitlepositionadjustment%28_,for%29.md)
   Sets the back button title offset for specified bar metrics.
-- [func backButtonBackgroundVerticalPositionAdjustment(for: UIBarMetrics) -> CGFloat](uibarbuttonitem/backbuttonbackgroundverticalpositionadjustment(for:).md)
+- [func backButtonBackgroundVerticalPositionAdjustment(for: UIBarMetrics) -> CGFloat](./backbuttonbackgroundverticalpositionadjustment%28for%29.md)
   Returns the back button vertical position offset for specified bar metrics.
-- [func setBackButtonBackgroundVerticalPositionAdjustment(CGFloat, for: UIBarMetrics)](uibarbuttonitem/setbackbuttonbackgroundverticalpositionadjustment(_:for:).md)
+- [func setBackButtonBackgroundVerticalPositionAdjustment(CGFloat, for: UIBarMetrics)](./setbackbuttonbackgroundverticalpositionadjustment%28_,for%29.md)
   Sets the back button vertical position offset for specified bar metrics.
 
 

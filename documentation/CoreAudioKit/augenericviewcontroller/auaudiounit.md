@@ -1,7 +1,8 @@
 # auAudioUnit
 
 **Framework**: CoreAudioKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var auAudioUnit: AUAudioUnit? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) AUAudioUnit * auAudioUnit;
 ```
 
 

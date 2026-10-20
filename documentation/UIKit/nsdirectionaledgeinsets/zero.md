@@ -1,7 +1,8 @@
 # zero
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A directional edge insets structure whose top, leading, bottom, and trailing fields all have a value of `0`.
 
@@ -17,6 +18,10 @@ A directional edge insets structure whose top, leading, bottom, and trailing fie
 
 ```swift
 static let zero: NSDirectionalEdgeInsets
+```
+
+```c
+extern const NSDirectionalEdgeInsets NSDirectionalEdgeInsetsZero;
 ```
 
 

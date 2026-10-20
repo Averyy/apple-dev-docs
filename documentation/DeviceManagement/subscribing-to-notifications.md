@@ -1,6 +1,7 @@
 # Subscribing to notifications
 
-**Framework**: Device Management
+**Framework**: Device Management  
+**Role**: Article
 
 Monitor events for assets, assignments, and users in your organization.
 
@@ -13,7 +14,7 @@ Notifications make it easy to learn about changes to an organization’s assets,
 - User management events
 - User-associated events
 
-For information about subscribing to different notification types, see  [`ClientConfigRequest`](clientconfigrequest.md).
+For information about subscribing to different notification types, see  [`ClientConfigRequest`](./clientconfigrequest.md).
 
 Each notification has these common fields:
 
@@ -39,11 +40,11 @@ The server delivers notifications on a best-effort basis. The server attempts de
 
 There is a limit of 100 elements in the notification. Any request for more than 100 discrete tasks results in multiple notifications. For example, an assignment request for one `adamId` to 150 users results in at least two notifications.
 
-If your device management service doesn’t receive a notification for an event within 5 minutes, check the event status using the [`Event Status`](events-status.md) endpoint with the `eventId` from the original request. While the returned `eventStatus` is `PENDING`, wait at least 30 seconds between subsequent status queries to avoid unnecessary load on the server. If the status remains `PENDING` after 10 minutes, retry the request.
+If your device management service doesn’t receive a notification for an event within 5 minutes, check the event status using the [`Event Status`](./events-status.md) endpoint with the `eventId` from the original request. While the returned `eventStatus` is `PENDING`, wait at least 30 seconds between subsequent status queries to avoid unnecessary load on the server. If the status remains `PENDING` after 10 minutes, retry the request.
 
-Notifications require an HTTPS URL and an authentication token. The authentication token is in a [`bearer token format`](https://developer.apple.comhttps://tools.ietf.org/html/rfc6750). See the [`ClientConfigRequest`](clientconfigrequest.md) for more details about these parameters.
+Notifications require an HTTPS URL and an authentication token. The authentication token is in a [bearer token format](https://tools.ietf.org/html/rfc6750). See the [`ClientConfigRequest`](./clientconfigrequest.md) for more details about these parameters.
 
-> ❗ **Important**:  The server sends a test notification of type `TEST_NOTIFICATION` when you configure notifications with [`Client Config`](client-config-4szk1.md). If delivery fails, the system rejects the configuration.
+> ❗ **Important**:  The server sends a test notification of type `TEST_NOTIFICATION` when you configure notifications with [`Client Config`](./client-config-4szk1.md). If delivery fails, the system rejects the configuration.
 
 The test notification has the following format:
 
@@ -56,7 +57,7 @@ The test notification has the following format:
 }
 ```
 
-#### Update Asset Counts
+#### Update asset counts
 
 Update total asset counts upon receiving an `ASSET_COUNT` notification type that the server sends when:
 
@@ -79,9 +80,9 @@ The notifications have the following format:
 }
 ```
 
-The `adamId` and `pricingParam` pair represents the [`Asset`](asset.md) with the count that’s changing, and the `countDelta` represents the change amount. A positive `countDelta` indicates an increase; a negative value indicates a decrease.
+The `adamId` and `pricingParam` pair represents the [`Asset`](./asset.md) with the count that’s changing, and the `countDelta` represents the change amount. A positive `countDelta` indicates an increase; a negative value indicates a decrease.
 
-#### Update Subscription Counts
+#### Update subscription counts
 
 Update subscription seat counts upon receiving a `SUBSCRIPTION_COUNT` notification type that the server sends when subscription inventory changes — for example, when a content manager purchases additional seats, when seats expire at the end of a billing period, or when renewing seats auto-renew.
 
@@ -111,11 +112,11 @@ The notifications have the following format:
 }
 ```
 
-The notification uses a subset of the [`SubscriptionCounts`](subscriptioncounts.md) schema: the `counts` object contains only `available` and `total`. It omits `assigned`, which is only present in the synchronous `GET /v2/subscriptions` response. Use `total` to track actual seat ownership and `available` to track unassigned capacity.
+The notification uses a subset of the [`SubscriptionCounts`](./subscriptioncounts.md) schema: the `counts` object contains only `available` and `total`. It omits `assigned`, which is only present in the synchronous `GET /v2/subscriptions` response. Use `total` to track actual seat ownership and `available` to track unassigned capacity.
 
-#### Track Assignments
+#### Track assignments
 
-Track assignments upon receiving an `ASSET_MANAGEMENT` notification type that the server sends when it associates or disassociates an asset. The body of the notification contains a list of [`Assignment`](assignment.md) objects.
+Track assignments upon receiving an `ASSET_MANAGEMENT` notification type that the server sends when it associates or disassociates an asset. The body of the notification contains a list of [`Assignment`](./assignment.md) objects.
 
 The assignment notifications for associations have the following format:
 
@@ -201,9 +202,9 @@ The assignment notifications for revoke calls have the following format:
 
 ```
 
-#### Track Subscription Assignments
+#### Track subscription assignments
 
-Track subscription assignments upon receiving a `SUBSCRIPTION_MANAGEMENT` notification type that the server sends when it associates or disassociates a subscription. The body of the notification contains a list of [`ResponseSubscriptionAssignment`](responsesubscriptionassignment.md) objects, each with a `renewing` Boolean value that reflects the renewal state of the seat assigned to that user.
+Track subscription assignments upon receiving a `SUBSCRIPTION_MANAGEMENT` notification type that the server sends when it associates or disassociates a subscription. The body of the notification contains a list of [`ResponseSubscriptionAssignment`](./responsesubscriptionassignment.md) objects, each with a `renewing` Boolean value that reflects the renewal state of the seat assigned to that user.
 
 The subscription assignment notifications for associations have the following format:
 
@@ -249,9 +250,9 @@ The subscription assignment notifications for disassociations have the following
 }
 ```
 
-When you set the `deferred` flag to `true` in a disassociation request, the notification arrives at the end of the current billing period rather than immediately. For more information about renewal state and deferred disassociation, see [`Managing subscriptions`](managing-subscriptions.md).
+When you set the `deferred` flag to `true` in a disassociation request, the notification arrives at the end of the current billing period rather than immediately. For more information about renewal state and deferred disassociation, see [Managing subscriptions](./managing-subscriptions.md).
 
-#### Track User Events
+#### Track user events
 
 Track users upon receiving a `USER_MANAGEMENT` notification type that the server sends when:
 
@@ -330,7 +331,7 @@ The notifications for retiring a user have the following format:
 
 ```
 
-#### Track User Associations
+#### Track user associations
 
 Track users upon receiving a `USER_ASSOCIATED` notification type that the server sends when a user accepts an invitation.
 
@@ -359,9 +360,10 @@ The notifications have the following format:
 
 ## See Also
 
-- [Using paginated endpoints](using-paginated-endpoints.md)
+### Common tasks
+- [Using paginated endpoints](./using-paginated-endpoints.md)
   Traverse large result sets with page-index and cursor-based pagination.
-- [Handling error responses](handling-error-responses.md)
+- [Handling error responses](./handling-error-responses.md)
   Investigate and resolve service request errors.
 
 

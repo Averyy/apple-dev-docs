@@ -1,7 +1,8 @@
 # hasLocalContents
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the version has local contents. Versions that are returned by +getNonlocalVersionsOfItemAtURL:completionHandler: do not initially have local contents. You can only access their contents, either directly via the URL or by invoking -replaceItemAtURL:options:error:, from within a coordinated read on the NSFileVersion’s URL.
 
@@ -18,6 +19,10 @@ Whether the version has local contents. Versions that are returned by +getNonloc
 
 ```swift
 var hasLocalContents: Bool { get }
+```
+
+```objc
+@property (readonly) BOOL hasLocalContents;
 ```
 
 

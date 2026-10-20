@@ -1,7 +1,8 @@
 # setNeedsDropPreviewUpdate()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the operating system that an updated drop preview is available for the item.
 
@@ -17,13 +18,18 @@ Notifies the operating system that an updated drop preview is available for the 
 func setNeedsDropPreviewUpdate()
 ```
 
+```objc
+- (void) setNeedsDropPreviewUpdate;
+```
+
 #### Discussion
 
-Call this method to provide an updated drop preview after UIKit has started the drop animation. If the drop animation is still ongoing, UIKit calls the drop interaction delegate’s [`dropInteraction(_:previewForDropping:withDefault:)`](uidropinteractiondelegate/dropinteraction(_:previewfordropping:withdefault:).md) method, passing the previous drop preview as the `defaultPreview`.
+Call this method to provide an updated drop preview after UIKit has started the drop animation. If the drop animation is still ongoing, UIKit calls the drop interaction delegate’s [`dropInteraction(_:previewForDropping:withDefault:)`](../uidropinteractiondelegate/dropinteraction%28_,previewfordropping,withdefault%29.md) method, passing the previous drop preview as the `defaultPreview`.
 
 ## See Also
 
-- [var previewProvider: (() -> UIDragPreview?)?](uidragitem/previewprovider.md)
+### Changing the drag item preview
+- [var previewProvider: (() -> UIDragPreview?)?](./previewprovider.md)
   A visual preview of the drag item, displayed while the user drags the item across the screen.
 
 

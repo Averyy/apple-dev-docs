@@ -1,7 +1,8 @@
 # predictedTouches(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of touches that are predicted to occur for the specified touch.
 
@@ -18,9 +19,13 @@ Returns an array of touches that are predicted to occur for the specified touch.
 func predictedTouches(for touch: UITouch) -> [UITouch]?
 ```
 
+```objc
+- (NSArray<UITouch *> *) predictedTouchesForTouch:(UITouch *) touch;
+```
+
 #### Return Value
 
-An array of [`UITouch`](uitouch.md) objects representing the set of touches that the system predicts will occur next. The order of the objects in the array matches the order in which the touches are expected to be delivered to your app. This array does not include the original touch you specified in the *touch* parameter. The return value is `nil` if the object in the *touch* parameter is not associated with the current event.
+An array of [`UITouch`](../uitouch.md) objects representing the set of touches that the system predicts will occur next. The order of the objects in the array matches the order in which the touches are expected to be delivered to your app. This array does not include the original touch you specified in the *touch* parameter. The return value is `nil` if the object in the *touch* parameter is not associated with the current event.
 
 #### Discussion
 
@@ -34,13 +39,14 @@ The touches returned by this method represent the system’s estimation of where
 
 ## See Also
 
-- [var allTouches: Set<UITouch>?](uievent/alltouches.md)
+### Getting the touches for an event
+- [var allTouches: Set<UITouch>?](./alltouches.md)
   All touches associated with the event.
-- [func touches(for: UIView) -> Set<UITouch>?](uievent/touches(for:)-9neb4.md)
+- [func touches(for: UIView) -> Set<UITouch>?](./touches%28for%29-9neb4.md)
   Returns the touch objects from the event that belong to the specified given view.
-- [func touches(for: UIWindow) -> Set<UITouch>?](uievent/touches(for:)-767rm.md)
+- [func touches(for: UIWindow) -> Set<UITouch>?](./touches%28for%29-767rm.md)
   Returns the touch objects from the event that belong to the specified window.
-- [func coalescedTouches(for: UITouch) -> [UITouch]?](uievent/coalescedtouches(for:).md)
+- [func coalescedTouches(for: UITouch) -> [UITouch]?](./coalescedtouches%28for%29.md)
   Returns all of the touches associated with the specified main touch.
 
 

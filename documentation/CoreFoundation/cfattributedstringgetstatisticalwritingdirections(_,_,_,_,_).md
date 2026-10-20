@@ -1,7 +1,8 @@
 # CFAttributedStringGetStatisticalWritingDirections(_:_:_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func CFAttributedStringGetStatisticalWritingDirections(_ attributedString: CFAttributedString!, _ range: CFRange, _ baseDirection: Int8, _ bidiLevels: UnsafeMutablePointer<UInt8>!, _ baseDirections: UnsafeMutablePointer<UInt8>!) -> Bool
+```
+
+```c
+extern bool CFAttributedStringGetStatisticalWritingDirections(CFAttributedStringRef attributedString, CFRange range, int8_t baseDirection, uint8_t *bidiLevels, uint8_t *baseDirections);
 ```
 
 #### Discussion

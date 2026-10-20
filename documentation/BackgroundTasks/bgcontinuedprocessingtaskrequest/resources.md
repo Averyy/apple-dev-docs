@@ -1,7 +1,8 @@
 # BGContinuedProcessingTaskRequest.Resources
 
 **Framework**: Background Tasks  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that specify additional system resources a background task needs.
 
@@ -16,37 +17,42 @@ Options that specify additional system resources a background task needs.
 struct Resources
 ```
 
+```c
+enum BGContinuedProcessingTaskRequestResources : NSInteger;
+```
+
 #### Overview
 
 The following properties are of this type:
 
-- Continuous Background Task request ([`BGContinuedProcessingTaskRequest`](bgcontinuedprocessingtaskrequest.md)) property [`requiredResources`](bgcontinuedprocessingtaskrequest/requiredresources.md).
-- [`BGTaskScheduler`](bgtaskscheduler.md) property [`supportedResources`](bgtaskscheduler/supportedresources.md).
+- Continuous Background Task request ([`BGContinuedProcessingTaskRequest`](../bgcontinuedprocessingtaskrequest.md)) property [`requiredResources`](./requiredresources.md).
+- [`BGTaskScheduler`](../bgtaskscheduler.md) property [`supportedResources`](../bgtaskscheduler/supportedresources.md).
 
 ## Topics
 
 ### Identiying a resource
-- [static var gpu: BGContinuedProcessingTaskRequest.Resources](bgcontinuedprocessingtaskrequest/resources/gpu.md)
+- [static var gpu: BGContinuedProcessingTaskRequest.Resources](./resources/gpu.md)
   An option that indicates a long-running task requires the GPU.
 ### Creating a resource
-- [init(rawValue: Int)](bgcontinuedprocessingtaskrequest/resources/init(rawvalue:).md)
+- [init(rawValue: Int)](./resources/init%28rawvalue%29.md)
   Initializes a required resource for a Continuous Background Task by raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var requiredResources: BGContinuedProcessingTaskRequest.Resources](bgcontinuedprocessingtaskrequest/requiredresources.md)
+### Identifying resource dependencies
+- [var requiredResources: BGContinuedProcessingTaskRequest.Resources](./requiredresources.md)
   An option that indicates any special system resources that the task requires.
 
 

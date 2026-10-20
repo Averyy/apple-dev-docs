@@ -1,7 +1,8 @@
 # stride(from:through:by:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a sequence from a starting value toward, and possibly including, an end value, stepping by the specified amount.
 
@@ -79,7 +80,8 @@ for x in stride(from: 0, through: 10, by: -1) {
 
 ## See Also
 
-- [func stride<T>(from: T, to: T, by: T.Stride) -> StrideTo<T>](stride(from:to:by:).md)
+### Strides
+- [func stride<T>(from: T, to: T, by: T.Stride) -> StrideTo<T>](./stride%28from,to,by%29.md)
   Returns a sequence from a starting value to, but not including, an end value, stepping by the specified amount.
 
 

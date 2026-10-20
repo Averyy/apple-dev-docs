@@ -1,7 +1,8 @@
 # VerifyRecoveryLockCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to verify the device’s Recovery Lock password.
 
@@ -10,14 +11,14 @@ The command to verify the device’s Recovery Lock password.
 
 ## Declaration
 
-```swift
+```
 object VerifyRecoveryLockCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object VerifyRecoveryLockCommand.Command](verifyrecoverylockcommand/command-data.dictionary.md)
+- [object VerifyRecoveryLockCommand.Command](./verifyrecoverylockcommand/command-data.dictionary.md)
   The command to verify the device’s Recovery Lock password.
 
 ## Properties
@@ -27,7 +28,8 @@ object VerifyRecoveryLockCommand
 
 ## See Also
 
-- [object VerifyRecoveryLockResponse](verifyrecoverylockresponse.md)
+### Commands and responses
+- [object VerifyRecoveryLockResponse](./verifyrecoverylockresponse.md)
   A response from the device after it processes the command to verify the device’s Recovery Lock password.
 
 

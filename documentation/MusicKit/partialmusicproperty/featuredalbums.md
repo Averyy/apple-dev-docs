@@ -1,7 +1,8 @@
 # featuredAlbums
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the association property that returns a collection of featured albums for the artist.
 
@@ -19,6 +20,8 @@ An identifier for the association property that returns a collection of featured
 ```swift
 static let featuredAlbums: MusicRelationshipProperty<Artist, Album>
 ```
+
+Available when `Root` is `Artist`.
 
 
 ---

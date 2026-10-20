@@ -1,21 +1,26 @@
 # layoutAttributesForDecorationView(ofKind:at:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A convenience method for returning the layout attributes for a collection view decoration view.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 func layoutAttributesForDecorationView(ofKind decorationViewKind: String, at indexPath: IndexPath) -> UICollectionViewLayoutAttributes?
+```
+
+```objc
+- (UICollectionViewLayoutAttributes *) layoutAttributesForDecorationViewOfKind:(NSString *) decorationViewKind atIndexPath:(NSIndexPath *) indexPath;
 ```
 
 #### Return Value
@@ -29,9 +34,10 @@ The collection view layout attributes for the specified decoration view.
 
 ## See Also
 
-- [func layoutAttributesForCell(at: IndexPath) -> UICollectionViewLayoutAttributes?](uidynamicanimator/layoutattributesforcell(at:).md)
+### Working with collection views
+- [func layoutAttributesForCell(at: IndexPath) -> UICollectionViewLayoutAttributes?](./layoutattributesforcell%28at%29.md)
   A convenience method for returning the layout attributes for a collection view cell.
-- [func layoutAttributesForSupplementaryView(ofKind: String, at: IndexPath) -> UICollectionViewLayoutAttributes?](uidynamicanimator/layoutattributesforsupplementaryview(ofkind:at:).md)
+- [func layoutAttributesForSupplementaryView(ofKind: String, at: IndexPath) -> UICollectionViewLayoutAttributes?](./layoutattributesforsupplementaryview%28ofkind,at%29.md)
   A convenience method for returning the layout attributes for a collection view supplementary view.
 
 

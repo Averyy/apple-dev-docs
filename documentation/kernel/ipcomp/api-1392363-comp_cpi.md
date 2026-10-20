@@ -1,14 +1,15 @@
 # comp_cpi
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 u_int16_t comp_cpi;
 ```
 

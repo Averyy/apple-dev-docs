@@ -1,7 +1,8 @@
 # ancestorFromSpaceTransformFloat()
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Get the transformation to ancestor space from this ARKit coordinate space.
 

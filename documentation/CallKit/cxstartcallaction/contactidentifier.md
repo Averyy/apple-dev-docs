@@ -1,7 +1,8 @@
 # contactIdentifier
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier for the call recipient.
 
@@ -18,17 +19,22 @@ The identifier for the call recipient.
 var contactIdentifier: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * contactIdentifier;
+```
+
 #### Discussion
 
 The identifier is displayed in the native call UI, and is typically the name of the call recipient.
 
-If a caller corresponds to a [`CNContact`](https://developer.apple.com/documentation/contacts/cncontact) object, set this to the value of the [`identifier`](https://developer.apple.com/documentation/contacts/cncontact/identifier) property of the contact.
+If a caller corresponds to a [`CNContact`](../../Contacts/cncontact.md) object, set this to the value of the [`identifier`](../../Contacts/cncontact/identifier.md) property of the contact.
 
 ## See Also
 
-- [var isVideo: Bool](cxstartcallaction/isvideo.md)
+### Accessing Action Attributes
+- [var isVideo: Bool](./isvideo.md)
   A Boolean value that indicates whether the call is a video call.
-- [var handle: CXHandle](cxstartcallaction/handle.md)
+- [var handle: CXHandle](./handle.md)
   The handle of the call recipient.
 
 

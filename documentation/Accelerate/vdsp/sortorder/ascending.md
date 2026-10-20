@@ -1,7 +1,8 @@
 # vDSP.SortOrder.ascending
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An ascending search.
 
@@ -11,7 +12,7 @@ An ascending search.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ case ascending
 
 ## See Also
 
-- [vDSP.SortOrder.descending](vdsp/sortorder/descending.md)
+### Enumeration Cases
+- [vDSP.SortOrder.descending](./descending.md)
   A descending search.
 
 

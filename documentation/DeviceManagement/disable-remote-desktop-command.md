@@ -1,7 +1,8 @@
 # Disable Remote Desktop
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Disable Remote Desktop on a device.
 
@@ -14,7 +15,7 @@ This command disables Remote Desktop on the device, and prevents any further rem
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -24,7 +25,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | N/A |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -64,9 +65,9 @@ Refer to the following sections to determine supported channels and requirements
 ## Topics
 
 ### Commands and responses
-- [object DisableRemoteDesktopCommand](disableremotedesktopcommand.md)
+- [object DisableRemoteDesktopCommand](./disableremotedesktopcommand.md)
   The command to disable Remote Desktop on a device.
-- [object DisableRemoteDesktopResponse](disableremotedesktopresponse.md)
+- [object DisableRemoteDesktopResponse](./disableremotedesktopresponse.md)
   A response from the device after it processes the command to disable Remote Desktop on a device.
 
 ## Endpoint
@@ -75,13 +76,21 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `DisableRemoteDesktopCommand`
+
 The request object the server returns for the Disable Remote Desktop Command.
+
+## Responses
+
+- `200` OK (`DisableRemoteDesktopResponse`, `application/xml`): The response object the system returns for the Disable Remote Desktop Command.
 
 ## See Also
 
-- [Enable Remote Desktop](enable-remote-desktop-command.md)
+### Managed settings
+- [Enable Remote Desktop](./enable-remote-desktop-command.md)
   Enable Remote Desktop on a device.
-- [Settings](settings-command.md)
+- [Settings](./settings-command.md)
   Configure settings on a device.
 
 

@@ -1,7 +1,8 @@
 # init(_:value:format:prompt:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a text field that applies a format style to a bound value, with a label generated from a localized title string resource.
 
@@ -21,13 +22,42 @@ Creates a text field that applies a format style to a bound value, with a label 
 nonisolated init<F>(_ titleResource: LocalizedStringResource, value: Binding<F.FormatInput>, format: F, prompt: Text? = nil) where F : ParseableFormatStyle, F.FormatOutput == String
 ```
 
+Available when `Label` is `Text`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+nonisolated init<F>(_ titleResource: LocalizedStringResource, value: Binding<F.FormatInput?>, format: F, prompt: Text? = nil) where F : ParseableFormatStyle, F.FormatOutput == String
+```
+
+```swift
+nonisolated
+init<F>(_ titleKey: LocalizedStringKey, value: Binding<F.FormatInput>, format: F, prompt: Text? = nil) where F : ParseableFormatStyle, F.FormatOutput == String
+```
+
+```swift
+nonisolated
+init<F>(_ titleKey: LocalizedStringKey, value: Binding<F.FormatInput?>, format: F, prompt: Text? = nil) where F : ParseableFormatStyle, F.FormatOutput == String
+```
+
+```swift
+nonisolated
+init<S, F>(_ title: S, value: Binding<F.FormatInput>, format: F, prompt: Text? = nil) where S : StringProtocol, F : ParseableFormatStyle, F.FormatOutput == String
+```
+
+```swift
+nonisolated
+init<S, F>(_ title: S, value: Binding<F.FormatInput?>, format: F, prompt: Text? = nil) where S : StringProtocol, F : ParseableFormatStyle, F.FormatOutput == String
+```
+
 #### Discussion
 
-Use this initializer to create a text field that binds to a bound value, using a [`ParseableFormatStyle`](https://developer.apple.com/documentation/foundation/parseableformatstyle) to convert to and from this type. Changes to the bound value update the string displayed by the text field. Editing the text field updates the bound value, as long as the format style can parse the text. If the format style can’t parse the input, the bound value remains unchanged.
+Use this initializer to create a text field that binds to a bound value, using a [`ParseableFormatStyle`](../../Foundation/parseableformatstyle.md) to convert to and from this type. Changes to the bound value update the string displayed by the text field. Editing the text field updates the bound value, as long as the format style can parse the text. If the format style can’t parse the input, the bound value remains unchanged.
 
-Use the [`onSubmit(of:_:)`](view/onsubmit(of:_:).md) modifier to invoke an action whenever the user submits this text field.
+Use the [`onSubmit(of:_:)`](../view/onsubmit%28of,_%29.md) modifier to invoke an action whenever the user submits this text field.
 
-The following example uses a [`Double`](https://developer.apple.com/documentation/swift/double) as the bound value, and a [`FloatingPointFormatStyle`](https://developer.apple.com/documentation/foundation/floatingpointformatstyle) instance to convert to and from a string representation. As the user types, the bound value updates, which in turn updates three [`Text`](text.md) views that use different format styles. If the user enters text that doesn’t represent a valid `Double`, the bound value doesn’t update.
+The following example uses a [`Double`](../../Swift/double.md) as the bound value, and a [`FloatingPointFormatStyle`](../../Foundation/floatingpointformatstyle.md) instance to convert to and from a string representation. As the user types, the bound value updates, which in turn updates three [`Text`](../text.md) views that use different format styles. If the user enters text that doesn’t represent a valid `Double`, the bound value doesn’t update.
 
 ```swift
 @State private var myDouble: Double = 0.673
@@ -45,7 +75,7 @@ var body: some View {
 }
 ```
 
-![A text field with the string 0.673. Below this, three text views](/images/com.apple.SwiftUI/TextField-init-format-1@2x.png)
+![A text field with the string 0.673. Below this, three text views](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/TextField-init-format-1@2x.png)
 
 ## Parameters
 
@@ -56,13 +86,14 @@ var body: some View {
 
 ## See Also
 
-- [init(value:format:prompt:label:)](textfield/init(value:format:prompt:label:).md)
+### Creating a text field with a value
+- [init(value:format:prompt:label:)](./init%28value,format,prompt,label%29.md)
   Creates a text field that applies a format style to a bound value, with a label generated from a content builder.
-- [init(_:value:formatter:)](textfield/init(_:value:formatter:).md)
+- [init(_:value:formatter:)](./init%28_,value,formatter%29.md)
   Create an instance which binds over an arbitrary type, `V`.
-- [init(_:value:formatter:prompt:)](textfield/init(_:value:formatter:prompt:).md)
+- [init(_:value:formatter:prompt:)](./init%28_,value,formatter,prompt%29.md)
   Creates a text field that applies a formatter to a bound value, with a label generated from a localized title string resource.
-- [init<V>(value: Binding<V>, formatter: Formatter, prompt: Text?, label: () -> Label)](textfield/init(value:formatter:prompt:label:).md)
+- [init<V>(value: Binding<V>, formatter: Formatter, prompt: Text?, label: () -> Label)](./init%28value,formatter,prompt,label%29.md)
   Creates a text field that applies a formatter to a bound optional value, with a label generated from a content builder.
 
 

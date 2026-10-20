@@ -1,7 +1,8 @@
 # SphericalCoordinates3DFloat
 
 **Framework**: Spatial  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A single-precision structure that defines spherical coordinates in radial, inclination, azimuthal order.
 
@@ -20,81 +21,86 @@ A single-precision structure that defines spherical coordinates in radial, incli
 struct SphericalCoordinates3DFloat
 ```
 
+```c
+typedef union { ... } SPSphericalCoordinates3DFloat;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](sphericalcoordinates3dfloat/init.md)
-- [init(Vector3DFloat)](sphericalcoordinates3dfloat/init(_:)-4t1io.md)
+- [init()](./sphericalcoordinates3dfloat/init%28%29.md)
+- [init(Vector3DFloat)](./sphericalcoordinates3dfloat/init%28_%29-4t1io.md)
   Creates a new spherical coordinates structure from the specified Cartesian coordinates represented by a Spatial vector.
-- [init(simd_float3)](sphericalcoordinates3dfloat/init(_:)-6dp94.md)
+- [init(simd_float3)](./sphericalcoordinates3dfloat/init%28_%29-6dp94.md)
   Creates a new spherical coordinates structure from the specified Cartesian coordinates.
-- [init(SphericalCoordinates3D)](sphericalcoordinates3dfloat/init(_:)-6lfdm.md)
+- [init(SphericalCoordinates3D)](./sphericalcoordinates3dfloat/init%28_%29-6lfdm.md)
   Returns a single-precision spherical coordinates structure from a double-precision spherical coordinates structure.
-- [init(Point3DFloat)](sphericalcoordinates3dfloat/init(_:)-8zaur.md)
+- [init(Point3DFloat)](./sphericalcoordinates3dfloat/init%28_%29-8zaur.md)
   Creates a new spherical coordinates structure from the specified Cartesian coordinates represented by a Spatial point.
-- [init(simd_packed_float4)](sphericalcoordinates3dfloat/init(_:)-99axl.md)
+- [init(simd_packed_float4)](./sphericalcoordinates3dfloat/init%28_%29-99axl.md)
   Creates a Spatial spherical coordinates structure from a simd packed vector.
-- [init(radius: Float, inclination: Angle2DFloat, azimuth: Angle2DFloat)](sphericalcoordinates3dfloat/init(radius:inclination:azimuth:).md)
-- [init(vector: simd_float3)](sphericalcoordinates3dfloat/init(vector:).md)
-- [init(x: Float, y: Float, z: Float)](sphericalcoordinates3dfloat/init(x:y:z:).md)
+- [init(radius: Float, inclination: Angle2DFloat, azimuth: Angle2DFloat)](./sphericalcoordinates3dfloat/init%28radius,inclination,azimuth%29.md)
+- [init(vector: simd_float3)](./sphericalcoordinates3dfloat/init%28vector%29.md)
+- [init(x: Float, y: Float, z: Float)](./sphericalcoordinates3dfloat/init%28x,y,z%29.md)
   Creates a new spherical coordinates structure from the specified Cartesian coordinates.
 ### Instance Properties
-- [var azimuth: Angle2DFloat](sphericalcoordinates3dfloat/azimuth.md)
-- [var inclination: Angle2DFloat](sphericalcoordinates3dfloat/inclination.md)
-- [var radius: Float](sphericalcoordinates3dfloat/radius.md)
-- [var vector: simd_float3](sphericalcoordinates3dfloat/vector.md)
+- [var azimuth: Angle2DFloat](./sphericalcoordinates3dfloat/azimuth.md)
+- [var inclination: Angle2DFloat](./sphericalcoordinates3dfloat/inclination.md)
+- [var radius: Float](./sphericalcoordinates3dfloat/radius.md)
+- [var vector: simd_float3](./sphericalcoordinates3dfloat/vector.md)
 ### Default Implementations
-- [CustomReflectable Implementations](sphericalcoordinates3dfloat/customreflectable-implementations.md)
-- [Decodable Implementations](sphericalcoordinates3dfloat/decodable-implementations.md)
-- [Encodable Implementations](sphericalcoordinates3dfloat/encodable-implementations.md)
-- [Equatable Implementations](sphericalcoordinates3dfloat/equatable-implementations.md)
-- [Hashable Implementations](sphericalcoordinates3dfloat/hashable-implementations.md)
+- [CustomReflectable Implementations](./sphericalcoordinates3dfloat/customreflectable-implementations.md)
+- [Decodable Implementations](./sphericalcoordinates3dfloat/decodable-implementations.md)
+- [Encodable Implementations](./sphericalcoordinates3dfloat/encodable-implementations.md)
+- [Equatable Implementations](./sphericalcoordinates3dfloat/equatable-implementations.md)
+- [Hashable Implementations](./sphericalcoordinates3dfloat/hashable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomReflectable](../Swift/customreflectable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Point3D](point3d.md)
+### 3D primitives
+- [struct Point3D](./point3d.md)
   A point in a 3D coordinate system.
-- [struct Point3DFloat](point3dfloat.md)
+- [struct Point3DFloat](./point3dfloat.md)
   A single-precision structure that contains a point in a three-dimensional coordinate system.
-- [struct Size3D](size3d.md)
+- [struct Size3D](./size3d.md)
   A size that describes width, height, and depth in a 3D coordinate system.
-- [struct Size3DFloat](size3dfloat.md)
+- [struct Size3DFloat](./size3dfloat.md)
   A single-precision structure that contains width, height, and depth values.
-- [struct Rect3D](rect3d.md)
+- [struct Rect3D](./rect3d.md)
   A rectangle in a 3D coordinate system.
-- [struct Rect3DFloat](rect3dfloat.md)
+- [struct Rect3DFloat](./rect3dfloat.md)
   A single-precision structure that contains the location and dimensions of a 3D rectangle.
-- [struct Rotation3D](rotation3d.md)
+- [struct Rotation3D](./rotation3d.md)
   A rotation in three dimensions.
-- [struct Rotation3DFloat](rotation3dfloat.md)
+- [struct Rotation3DFloat](./rotation3dfloat.md)
   A single-precision structure that represents a rotation in three dimensions.
-- [struct RotationAxis3D](rotationaxis3d.md)
+- [struct RotationAxis3D](./rotationaxis3d.md)
   A 3D rotation axis.
-- [struct RotationAxis3DFloat](rotationaxis3dfloat.md)
+- [struct RotationAxis3DFloat](./rotationaxis3dfloat.md)
   A 3D axis.
-- [struct Pose3D](pose3d.md)
+- [struct Pose3D](./pose3d.md)
   A structure that contains a 3D position and a 3D rotation.
-- [struct Pose3DFloat](pose3dfloat.md)
+- [struct Pose3DFloat](./pose3dfloat.md)
   A single-precision structure that contains a position and rotation.
-- [struct ScaledPose3D](scaledpose3d.md)
+- [struct ScaledPose3D](./scaledpose3d.md)
   A structure that contains a position, rotation, and scale.
-- [struct ScaledPose3DFloat](scaledpose3dfloat.md)
+- [struct ScaledPose3DFloat](./scaledpose3dfloat.md)
   A structure that contains a position, rotation, and scale.
-- [struct SphericalCoordinates3D](sphericalcoordinates3d.md)
+- [struct SphericalCoordinates3D](./sphericalcoordinates3d.md)
   A structure that defines spherical coordinates in radial, inclination, azimuthal order.
 
 

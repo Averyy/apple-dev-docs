@@ -1,32 +1,36 @@
 # AppStoreVersionSubmissionResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that submit an App Store version for review.
 
 **Availability**:
-- App Store Connect API 1.2+
+- App Store Connect API 1.2+ - Deprecated in 1.7
+
+> **Deprecated**: This object is deprecated. Use [`ReviewSubmissionResponse`](./reviewsubmissionresponse.md) instead.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionSubmissionResponse
 ```
 
 ## Mentions
 
-- [App Store Connect API 1.7 release notes](app-store-connect-api-1-7-release-notes.md)
+- [App Store Connect API 1.7 release notes](./app-store-connect-api-1-7-release-notes.md)
 
 ## Properties
 
-- `data` (AppStoreVersionSubmission) *(required)*
+- `data` (AppStoreVersionSubmission) *(required)* *(deprecated)*
 - `links` (DocumentLinks) *(required)*
 - `included` ([AppStoreVersion])
 
 ## See Also
 
-- [object AppStoreVersionSubmission](appstoreversionsubmission.md)
+### Objects
+- [object AppStoreVersionSubmission](./appstoreversionsubmission.md)
   A submission of an App Store version to Apple’s review queue, triggering the review process.
 
 

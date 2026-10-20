@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Optional user-provided label for the node
 
@@ -12,7 +13,7 @@ Optional user-provided label for the node
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

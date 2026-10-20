@@ -1,7 +1,8 @@
 # calendar
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The calendar to use when formatting the date.
 
@@ -22,17 +23,18 @@ var calendar: Calendar
 
 #### Discussion
 
-Defaults to [`autoupdatingCurrent`](nscalendar/autoupdatingcurrent.md). If you set this property to `nil`, the formatter resets to using `autoupdatingCurrent`.
+Defaults to [`autoupdatingCurrent`](../../nscalendar/autoupdatingcurrent.md). If you set this property to `nil`, the formatter resets to using `autoupdatingCurrent`.
 
 ## See Also
 
-- [func locale(Locale) -> Date.FormatStyle](date/formatstyle/locale(_:).md)
+### Modifying a Date Format Style
+- [func locale(Locale) -> Date.FormatStyle](./locale%28_%29.md)
   Modifies the date format style to use the specified locale.
-- [var timeZone: TimeZone](date/formatstyle/timezone.md)
+- [var timeZone: TimeZone](./timezone.md)
   The time zone to use when formatting the date and time components.
-- [var capitalizationContext: FormatStyleCapitalizationContext](date/formatstyle/capitalizationcontext.md)
+- [var capitalizationContext: FormatStyleCapitalizationContext](./capitalizationcontext.md)
   The capitalization context to use when formatting the date.
-- [var locale: Locale](date/formatstyle/locale.md)
+- [var locale: Locale](./locale.md)
   The locale to use when formatting the date and time components.
 
 

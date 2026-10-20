@@ -1,7 +1,8 @@
 # reason
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reason why the sync engine is attempting to fetch changes.
 
@@ -11,7 +12,7 @@ The reason why the sync engine is attempting to fetch changes.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

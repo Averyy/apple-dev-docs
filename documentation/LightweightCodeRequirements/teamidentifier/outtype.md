@@ -1,9 +1,10 @@
 # TeamIdentifier.OutType
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
-The type of this constraint: [`TeamIdentifier`](teamidentifier.md).
+The type of this constraint: [`TeamIdentifier`](../teamidentifier.md).
 
 **Availability**:
 - iOS 17.4+

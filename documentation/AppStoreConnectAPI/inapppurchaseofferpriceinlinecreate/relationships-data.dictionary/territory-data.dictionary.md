@@ -1,21 +1,22 @@
 # InAppPurchaseOfferPriceInlineCreate.Relationships.Territory
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseOfferPriceInlineCreate.Relationships.Territory
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object InAppPurchaseOfferPriceInlineCreate.Relationships.Territory.Data](inapppurchaseofferpriceinlinecreate/relationships-data.dictionary/territory-data.dictionary/data-data.dictionary.md)
+- [object InAppPurchaseOfferPriceInlineCreate.Relationships.Territory.Data](./territory-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

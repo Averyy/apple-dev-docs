@@ -1,7 +1,8 @@
 # allowEvaluation()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Forces a securely decoded predicate to allow evaluation.
 
@@ -20,17 +21,22 @@ Forces a securely decoded predicate to allow evaluation.
 func allowEvaluation()
 ```
 
+```objc
+- (void) allowEvaluation;
+```
+
 #### Discussion
 
-When securely decoding [`NSPredicate`](nspredicate.md) objects that are encoded using [`NSSecureCoding`](nssecurecoding.md), evaluation is disabled because it is potentially unsafe to evaluate predicates you get out of an archive.
+When securely decoding [`NSPredicate`](../nspredicate.md) objects that are encoded using [`NSSecureCoding`](../nssecurecoding.md), evaluation is disabled because it is potentially unsafe to evaluate predicates you get out of an archive.
 
-Before you enable evaluation, you should validate key paths, selectors, and other details to ensure no erroneous or malicious code will be executed. Once you’ve verified the predicate, you can enable the receiver for evaluation by calling [`allowEvaluation()`](nspredicate/allowevaluation().md).
+Before you enable evaluation, you should validate key paths, selectors, and other details to ensure no erroneous or malicious code will be executed. Once you’ve verified the predicate, you can enable the receiver for evaluation by calling [`allowEvaluation()`](./allowevaluation%28%29.md).
 
 ## See Also
 
-- [func evaluate(with: Any?) -> Bool](nspredicate/evaluate(with:).md)
+### Evaluating a Predicate
+- [func evaluate(with: Any?) -> Bool](./evaluate%28with%29.md)
   Returns a Boolean value that indicates whether the specified object matches the conditions that the predicate specifies.
-- [func evaluate(with: Any?, substitutionVariables: [String : Any]?) -> Bool](nspredicate/evaluate(with:substitutionvariables:).md)
+- [func evaluate(with: Any?, substitutionVariables: [String : Any]?) -> Bool](./evaluate%28with,substitutionvariables%29.md)
   Returns a Boolean value that indicates whether the specified object matches the conditions that the predicate specifies after substituting in the values from a specified variables dictionary.
 
 

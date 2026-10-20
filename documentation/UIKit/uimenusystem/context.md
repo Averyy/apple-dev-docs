@@ -1,7 +1,8 @@
 # context
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The context menu system.
 
@@ -18,9 +19,14 @@ The context menu system.
 class var context: UIMenuSystem { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) UIMenuSystem * contextSystem;
+```
+
 ## See Also
 
-- [class var main: UIMenuSystem](uimenusystem/main.md)
+### Getting a menu system
+- [class var main: UIMenuSystem](./main.md)
   The main menu system.
 
 

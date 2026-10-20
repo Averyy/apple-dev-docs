@@ -1,7 +1,8 @@
 # isEligibleForHierarchicalShare
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether zone is eligible for Hierarchical Share.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether zone is eligible for Hierarchical Share.
 
 ## Declaration
 
-```swift
+```
 attribute boolean? isEligibleForHierarchicalShare;
 ```
 

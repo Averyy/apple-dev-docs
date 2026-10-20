@@ -1,7 +1,8 @@
 # thoroughfare
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The street name at the place.
 
@@ -10,21 +11,22 @@ The street name at the place.
 
 ## Declaration
 
-```swift
+```
 thoroughfare: string | null;
 ```
 
 #### Discussion
 
-For example, one possible [`thoroughfare`](place/thoroughfare.md) in Golden Gate Park in San Francisco, California, is `"John F Kennedy Dr"`.
+For example, one possible [`thoroughfare`](./thoroughfare.md) in Golden Gate Park in San Francisco, California, is `"John F Kennedy Dr"`.
 
 ## See Also
 
-- [subThoroughfare](place/subthoroughfare.md)
+### Street address
+- [subThoroughfare](./subthoroughfare.md)
   The number on the street at the place.
-- [fullThoroughfare](place/fullthoroughfare.md)
+- [fullThoroughfare](./fullthoroughfare.md)
   A combination of thoroughfare and subthoroughfare.
-- [postCode](place/postcode.md)
+- [postCode](./postcode.md)
   The postal code of the place.
 
 

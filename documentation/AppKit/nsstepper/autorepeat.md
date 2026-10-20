@@ -1,12 +1,13 @@
 # autorepeat
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates how the stepper responds to mouse events.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ A Boolean value that indicates how the stepper responds to mouse events.
 var autorepeat: Bool { get set }
 ```
 
+```objc
+@property BOOL autorepeat;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the first mouse down does one increment (or decrement) and, after a delay of 0.5 seconds, increments (or decrements) at a rate of ten times per second. [`false`](https://developer.apple.com/documentation/swift/false) if the receiver does one increment (decrement) on a mouse up. The default is [`true`](https://developer.apple.com/documentation/swift/true).
+[`true`](../../Swift/true.md) if the first mouse down does one increment (or decrement) and, after a delay of 0.5 seconds, increments (or decrements) at a rate of ten times per second. [`false`](../../Swift/false.md) if the receiver does one increment (decrement) on a mouse up. The default is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var valueWraps: Bool](nsstepper/valuewraps.md)
+### Specifying how the stepper responds
+- [var valueWraps: Bool](./valuewraps.md)
   A Boolean value that indicates whether the stepper wraps around the minimum and maximum values.
 
 

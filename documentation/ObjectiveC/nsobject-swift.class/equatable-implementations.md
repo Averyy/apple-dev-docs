@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: Objective-C Runtime
+**Framework**: Objective-C Runtime  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (NSObject, NSObject) -> Bool](nsobject-swift.class/==(_:_:).md)
+- [static func == (NSObject, NSObject) -> Bool](./eqeq%28_,_%29.md)
 
 
 ---

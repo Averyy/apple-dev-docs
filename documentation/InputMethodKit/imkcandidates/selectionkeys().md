@@ -1,7 +1,8 @@
 # selectionKeys()
 
 **Framework**: InputMethodKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of `NSNumber` objects where each `NSNumber` object represents a virtual key code.
 
@@ -14,6 +15,10 @@ Returns an array of `NSNumber` objects where each `NSNumber` object represents a
 func selectionKeys() -> [Any]!
 ```
 
+```objc
+- (NSArray *) selectionKeys;
+```
+
 #### Return Value
 
 The array of `NSNumber` objects.
@@ -24,11 +29,12 @@ Selection keys  are keys that can be used to select one of the candidates. They 
 
 ## See Also
 
-- [func setSelectionKeys([Any]!)](imkcandidates/setselectionkeys(_:).md)
+### Managing Selection Keys
+- [func setSelectionKeys([Any]!)](./setselectionkeys%28_%29.md)
   Sets the selection keys for the candidates.
-- [func setSelectionKeysKeylayout(TISInputSource!)](imkcandidates/setselectionkeyskeylayout(_:).md)
+- [func setSelectionKeysKeylayout(TISInputSource!)](./setselectionkeyskeylayout%28_%29.md)
   Sets the key layout that is used to map virtual key codes to characters.
-- [func selectionKeysKeylayout() -> Unmanaged<TISInputSource>!](imkcandidates/selectionkeyskeylayout.md)
+- [func selectionKeysKeylayout() -> Unmanaged<TISInputSource>!](./selectionkeyskeylayout%28%29.md)
   Returns the key layout that maps virtual key codes to selection keys.
 
 

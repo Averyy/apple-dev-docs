@@ -1,7 +1,8 @@
 # IKImageStateReady
 
 **Framework**: Quartz  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The receiver’s represented object has been set and the cell is ready to display.
 
@@ -14,11 +15,16 @@ The receiver’s represented object has been set and the cell is ready to displa
 var IKImageStateReady: IKImageBrowserCellState { get }
 ```
 
+```c
+IKImageStateReady
+```
+
 ## See Also
 
-- [var IKImageStateNoImage: IKImageBrowserCellState](ikimagestatenoimage.md)
+### Constants
+- [var IKImageStateNoImage: IKImageBrowserCellState](./ikimagestatenoimage.md)
   Returned until a thumbnail has been created from the represented object.
-- [var IKImageStateInvalid: IKImageBrowserCellState](ikimagestateinvalid.md)
+- [var IKImageStateInvalid: IKImageBrowserCellState](./ikimagestateinvalid.md)
   The thumbnail is invalid. For example, an unsupported image is provided.
 
 

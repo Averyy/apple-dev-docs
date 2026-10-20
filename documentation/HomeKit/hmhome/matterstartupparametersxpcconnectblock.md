@@ -1,7 +1,8 @@
 # matterStartupParametersXPCConnectBlock
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.2+
@@ -15,6 +16,10 @@
 
 ```swift
 var matterStartupParametersXPCConnectBlock: () -> NSXPCConnection { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) NSXPCConnection *(^)(void) matterStartupParametersXPCConnectBlock;
 ```
 
 #### Discussion

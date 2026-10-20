@@ -1,7 +1,8 @@
 # FoveatedStreamingExtension.MessageChannel
 
 **Framework**: Foveated Streaming  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A message channel between the host app and the extension.
 

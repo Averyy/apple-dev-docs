@@ -1,7 +1,8 @@
 # willTerminate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,8 @@
 ```swift
 static var willTerminate: NotificationCenter.BaseMessageIdentifier<UIApplication.WillTerminateMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<UIApplication.WillTerminateMessage>`.
 
 
 ---

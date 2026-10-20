@@ -1,7 +1,8 @@
 # WKSnapshotReason.prelaunch
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system needs a snapshot for the dock, but the app has not been launched yet.
 
@@ -14,15 +15,20 @@ The system needs a snapshot for the dock, but the app has not been launched yet.
 case prelaunch
 ```
 
+```c
+WKSnapshotReasonPrelaunch
+```
+
 ## See Also
 
-- [WKSnapshotReason.appBackgrounded](wksnapshotreason/appbackgrounded.md)
+### Enumeration Cases
+- [WKSnapshotReason.appBackgrounded](./appbackgrounded.md)
   The app transitioned from the foreground to the background.
-- [WKSnapshotReason.appScheduled](wksnapshotreason/appscheduled.md)
+- [WKSnapshotReason.appScheduled](./appscheduled.md)
   The app scheduled this snapshot.
-- [WKSnapshotReason.complicationUpdate](wksnapshotreason/complicationupdate.md)
+- [WKSnapshotReason.complicationUpdate](./complicationupdate.md)
   The app updated the complication timeline.
-- [WKSnapshotReason.returnToDefaultState](wksnapshotreason/returntodefaultstate.md)
+- [WKSnapshotReason.returnToDefaultState](./returntodefaultstate.md)
   It has been more than an hour since the user’s last interaction with the app; the app’s snapshot should return to its default state.
 
 

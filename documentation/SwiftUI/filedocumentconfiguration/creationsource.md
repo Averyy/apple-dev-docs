@@ -1,15 +1,18 @@
 # creationSource
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The source associated with the button that created this document.
 
 **Availability**:
-- iOS 27.0+
-- iPadOS 27.0+
-- Mac Catalyst 27.0+
-- visionOS 27.0+
+- iOS 27.0+ - Deprecated in 27.2
+- iPadOS 27.0+ - Deprecated in 27.2
+- Mac Catalyst 27.0+ - Deprecated in 27.2
+- visionOS 27.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use the Document protocol and URLDocumentConfiguration.
 
 ## Declaration
 
@@ -17,9 +20,11 @@ The source associated with the button that created this document.
 var creationSource: DocumentCreationSource? { get }
 ```
 
+Available when `Document` conforms to `FileDocument`.
+
 #### Discussion
 
-On iOS, you can specify the source via a [`NewDocumentButton`](newdocumentbutton.md) in [`DocumentGroupLaunchScene`](documentgrouplaunchscene.md):
+On iOS, you can specify the source via a [`NewDocumentButton`](../newdocumentbutton.md) in [`DocumentGroupLaunchScene`](../documentgrouplaunchscene.md):
 
 ```swift
 extension DocumentCreationSource {
@@ -36,7 +41,7 @@ DocumentGroupLaunchScene("Documents") {
 }
 ```
 
-Use this property to determine which [`NewDocumentButton`](newdocumentbutton.md) triggered the creation of the current document, allowing you to customize the UI accordingly.
+Use this property to determine which [`NewDocumentButton`](../newdocumentbutton.md) triggered the creation of the current document, allowing you to customize the UI accordingly.
 
 
 ---

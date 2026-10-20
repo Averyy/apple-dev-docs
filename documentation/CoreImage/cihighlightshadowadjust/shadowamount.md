@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The amount of adjustment to the shadows in the image.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ The amount of adjustment to the shadows in the image.
 var shadowAmount: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float shadowAmount;
+```
+
 ## See Also
 
-- [var highlightAmount: Float](cihighlightshadowadjust/highlightamount.md)
+### Instance Properties
+- [var highlightAmount: Float](./highlightamount.md)
   The amount of adjustment to the highlights in the image.
-- [var inputImage: CIImage?](cihighlightshadowadjust/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var radius: Float](cihighlightshadowadjust/radius.md)
+- [var radius: Float](./radius.md)
   The shadow highlight radius.
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: PaperKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new element ID from a stroke UUID.
 
@@ -20,7 +21,8 @@ init(_ id: UUID)
 
 ## See Also
 
-- [init<T>(MarkupID<T>)](markuporderedset/elementid/init(_:)-5ja8j.md)
+### Creating an element ID
+- [init<T>(MarkupID<T>)](./init%28_%29-5ja8j.md)
   Creates a new element ID from a markup ID.
 
 

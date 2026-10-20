@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value indicating whether two optional instances are equal.
 
@@ -19,6 +20,8 @@ Returns a Boolean value indicating whether two optional instances are equal.
 ```swift
 static func == (lhs: Wrapped?, rhs: Wrapped?) -> Bool
 ```
+
+Available when `Wrapped` conforms to `Equatable`.
 
 #### Discussion
 

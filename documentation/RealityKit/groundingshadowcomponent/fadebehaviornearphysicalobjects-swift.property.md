@@ -1,7 +1,8 @@
 # fadeBehaviorNearPhysicalObjects
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configures the grounding shadow’s fade behavior when the entity is near physical objects.
 

@@ -1,7 +1,8 @@
 # vImage.EdgeMode.extend
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An edge mode that extends the edges of the image infinitely.
 
@@ -11,7 +12,7 @@ An edge mode that extends the edges of the image infinitely.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,11 +23,12 @@ case extend
 
 ## See Also
 
-- [vImage.EdgeMode.copyInPlace](vimage/edgemode/copyinplace.md)
+### Enumeration Cases
+- [vImage.EdgeMode.copyInPlace](./copyinplace.md)
   An edge mode that copies the value of the edge pixel in the source to the destination.
-- [vImage.EdgeMode.fill(backgroundColor:)](vimage/edgemode/fill(backgroundcolor:).md)
+- [vImage.EdgeMode.fill(backgroundColor:)](./fill%28backgroundcolor%29.md)
   An edge mode that uses the background color for missing pixels.
-- [vImage.EdgeMode.truncateKernel](vimage/edgemode/truncatekernel.md)
+- [vImage.EdgeMode.truncateKernel](./truncatekernel.md)
   An edge mode that uses only the part of the kernel that overlaps the image.
 
 

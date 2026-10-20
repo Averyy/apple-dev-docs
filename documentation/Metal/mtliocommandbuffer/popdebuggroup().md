@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Restores the previous name for this input/output command encoder by removing the top item of the debug name stack.
@@ -20,11 +21,16 @@ Restores the previous name for this input/output command encoder by removing the
 func popDebugGroup()
 ```
 
+```objc
+- (void) popDebugGroup;
+```
+
 ## See Also
 
-- [var label: String?](mtliocommandbuffer/label.md)
+### Debugging a command buffer
+- [var label: String?](./label.md)
   An optional name for the input/output command buffer.
-- [func pushDebugGroup(String)](mtliocommandbuffer/pushdebuggroup(_:).md)
+- [func pushDebugGroup(String)](./pushdebuggroup%28_%29.md)
   Sets the current name for this input/output command encoder by adding it to the top of the debug name stack.
 
 

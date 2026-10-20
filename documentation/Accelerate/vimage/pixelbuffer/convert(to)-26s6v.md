@@ -1,7 +1,8 @@
 # convert(to:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts the contents of a 32-bit, four-plane pixel buffer to a four-channel interleaved pixel buffer.
 
@@ -11,7 +12,7 @@ Converts the contents of a 32-bit, four-plane pixel buffer to a four-channel int
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,13 +21,16 @@ Converts the contents of a 32-bit, four-plane pixel buffer to a four-channel int
 func convert(to destination: vImage.PixelBuffer<vImage.InterleavedFx4>)
 ```
 
+Available when `Format` is `vImage.PlanarFx4`.
+
 ## Parameters
 
 - `destination`: The destination pixel buffer.
 
 ## See Also
 
-- [func convert(to: vImage.PixelBuffer<vImage.InterleavedFx3>)](vimage/pixelbuffer/convert(to:)-8bqjc.md)
+### Converting from 32-bit multiple plane to 32-bit interleaved
+- [func convert(to: vImage.PixelBuffer<vImage.InterleavedFx3>)](./convert%28to%29-8bqjc.md)
   Converts the contents of a 32-bit, three-plane pixel buffer to a three-channel interleaved pixel buffer.
 
 

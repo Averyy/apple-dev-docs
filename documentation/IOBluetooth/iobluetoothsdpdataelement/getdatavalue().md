@@ -1,17 +1,22 @@
 # getDataValue()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 If the data element is represented by a data object, it returns the value as an NSData.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getDataValue() -> Data!
+```
+
+```objc
+- (NSData *) getDataValue;
 ```
 
 #### Return Value

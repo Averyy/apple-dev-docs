@@ -1,7 +1,8 @@
 # pendingActions
 
 **Framework**: LiveCommunicationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All unfinished conversation actions.
 
@@ -20,9 +21,10 @@ final var pendingActions: [ConversationAction] { get }
 
 ## See Also
 
-- [var conversations: [Conversation]](conversationmanager/conversations.md)
+### Configuring the manager
+- [var conversations: [Conversation]](./conversations.md)
   Currently active conversations.
-- [var delegate: (any ConversationManagerDelegate)?](conversationmanager/delegate.md)
+- [var delegate: (any ConversationManagerDelegate)?](./delegate.md)
   The object that acts as the delegate of the conversation manager.
 
 

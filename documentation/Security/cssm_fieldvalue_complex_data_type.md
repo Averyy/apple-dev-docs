@@ -1,7 +1,8 @@
 # CSSM_FIELDVALUE_COMPLEX_DATA_TYPE
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_FIELDVALUE_COMPLEX_DATA_TYPE: UInt32 { get }
+```
+
+```c
+CSSM_FIELDVALUE_COMPLEX_DATA_TYPE
 ```
 
 

@@ -1,7 +1,8 @@
 # sum(keepRank:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the sum along all axes.
 
@@ -41,7 +42,8 @@ await y.shapedArray(of: Float.self) // is [27]
 
 ## See Also
 
-- [func sum(alongAxes:keepRank:)](mltensor/sum(alongaxes:keeprank:).md)
+### Getting the sum
+- [func sum(alongAxes:keepRank:)](./sum%28alongaxes,keeprank%29.md)
   Returns the sum along the specified axes.
 
 

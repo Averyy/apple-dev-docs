@@ -1,14 +1,15 @@
 # bpf_send_func
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 typedef errno_t (*bpf_send_func)(ifnet_t interface, u_int32_t data_link_type, mbuf_t packet);
 ```
 

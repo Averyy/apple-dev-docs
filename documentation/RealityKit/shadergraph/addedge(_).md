@@ -1,7 +1,8 @@
 # addEdge(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an edge to the graph.
 
@@ -19,7 +20,7 @@ final func addEdge(_ edge: ShaderGraph.Edge) throws
 
 #### Discussion
 
-> **Note**: If the edge is invalid for this graph.
+> **Throws**: If the edge is invalid for this graph.
 
 
 ---

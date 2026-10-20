@@ -1,7 +1,8 @@
 # IOUSBDeviceRequest
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 A structure that defines a standard device request.
 
@@ -10,7 +11,7 @@ A structure that defines a standard device request.
 
 ## Declaration
 
-```swift
+```c
 typedef struct IOUSBDeviceRequest IOUSBDeviceRequest;
 ```
 
@@ -21,25 +22,26 @@ For information about device requests, see USB 3.2, 9.3.
 ## Topics
 
 ### Instance Properties
-- [bRequest](iousbdevicerequest/3166572-brequest.md)
-- [bmRequestType](iousbdevicerequest/3166573-bmrequesttype.md)
-- [wIndex](iousbdevicerequest/3166574-windex.md)
-- [wLength](iousbdevicerequest/3166575-wlength.md)
-- [wValue](iousbdevicerequest/3166576-wvalue.md)
+- [bRequest](./iousbdevicerequest/api-3166572-brequest.md)
+- [bmRequestType](./iousbdevicerequest/api-3166573-bmrequesttype.md)
+- [wIndex](./iousbdevicerequest/api-3166574-windex.md)
+- [wLength](./iousbdevicerequest/api-3166575-wlength.md)
+- [wValue](./iousbdevicerequest/api-3166576-wvalue.md)
 
 ## See Also
 
-- [IOUSBDevReqOOL](iousbdevreqool.md)
+### Device Requests
+- [IOUSBDevReqOOL](./iousbdevreqool.md)
   An internal structure to pass parameters between IOUSBLib and UserClient.
-- [IOUSBDevReqOOLTO](iousbdevreqoolto.md)
+- [IOUSBDevReqOOLTO](./iousbdevreqoolto.md)
   An internal structure to pass parameters between IOUSBLib and UserClient.
-- [IOUSBDevRequest](iousbdevrequest.md)
+- [IOUSBDevRequest](./iousbdevrequest.md)
   A structure that defines a standard device request.
-- [IOUSBDevRequestTO](iousbdevrequestto.md)
+- [IOUSBDevRequestTO](./iousbdevrequestto.md)
   A structure that defines a standard device request with timeout.
-- [IOUSBDeviceRequestPtr](iousbdevicerequestptr.md)
+- [IOUSBDeviceRequestPtr](./iousbdevicerequestptr.md)
   A pointer to a structure that defines a standard device request.
-- [IOUSBDeviceRequestSetSELData](iousbdevicerequestsetseldata.md)
+- [IOUSBDeviceRequestSetSELData](./iousbdevicerequestsetseldata.md)
   The structure for receiving system exit latency values.
 
 

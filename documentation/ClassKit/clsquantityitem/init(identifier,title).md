@@ -1,7 +1,8 @@
 # init(identifier:title:)
 
 **Framework**: ClassKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an activity item that records a discrete quantity.
 
@@ -16,6 +17,10 @@ Initializes an activity item that records a discrete quantity.
 
 ```swift
 init(identifier: String, title: String)
+```
+
+```objc
+- (instancetype) initWithIdentifier:(NSString *) identifier title:(NSString *) title;
 ```
 
 ## Parameters

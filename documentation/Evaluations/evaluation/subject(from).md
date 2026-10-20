@@ -2,6 +2,7 @@
 
 **Framework**: Evaluations  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Produces the subject of evaluation from a given sample.
@@ -24,8 +25,8 @@ nonisolated
 
 ## Mentions
 
-- [Evaluating language model responses](evaluating-language-model-responses.md)
-- [Evaluating tool-calling behavior](evaluating-tool-calling-behavior.md)
+- [Evaluating language model responses](../evaluating-language-model-responses.md)
+- [Evaluating tool-calling behavior](../evaluating-tool-calling-behavior.md)
 
 #### Return Value
 
@@ -41,13 +42,14 @@ Implement this method to run your system under test and return the subject that 
 
 ## See Also
 
-- [associatedtype Subject : EvaluationSubject](evaluation/subject.md)
+### Testing an intelligent feature
+- [associatedtype Subject : EvaluationSubject](./subject.md)
   The type of subject the system under test produces.
-- [protocol EvaluationSubject](evaluationsubject.md)
+- [protocol EvaluationSubject](../evaluationsubject.md)
   A type that represents the output the system under test produces.
-- [struct ModelSubject](modelsubject.md)
+- [struct ModelSubject](../modelsubject.md)
   The subject type for language model evaluations.
-- [var name: String](evaluation/name.md)
+- [var name: String](./name.md)
   The evaluation’s name in results. Defaults to the type name; override for a custom one.
 
 

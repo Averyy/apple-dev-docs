@@ -1,7 +1,8 @@
 # Forecast.Index
 
 **Framework**: WeatherKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The forecast index.
 
@@ -22,7 +23,8 @@ typealias Index = Int
 
 ## See Also
 
-- [subscript(Forecast<Element>.Index) -> Element](forecast/subscript(_:).md)
+### Accessing elements
+- [subscript(Forecast<Element>.Index) -> Element](./subscript%28_%29.md)
   The forecast element at the provided index.
 
 

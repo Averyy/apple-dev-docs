@@ -1,14 +1,15 @@
 # gpu_max_domains
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 uint32_t gpu_max_domains;
 ```
 

@@ -1,7 +1,8 @@
 # formatForInput(at:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Override this class method if you want your any of the inputs to be in a specific pixel format.
 
@@ -19,6 +20,10 @@ Override this class method if you want your any of the inputs to be in a specifi
 class func formatForInput(at inputIndex: Int32) -> CIFormat
 ```
 
+```objc
++ (CIFormat) formatForInputAtIndex:(int) inputIndex;
+```
+
 #### Discussion
 
 The format must be one of `kCIFormatBGRA8`, `kCIFormatRGBAh`, `kCIFormatRGBAf` or `kCIFormatR8`. On iOS 12 and macOS 10.14, the formats `kCIFormatRh` and `kCIFormatRf` are also supported.
@@ -29,13 +34,14 @@ If a processor wants data in a colorspace other than the context’s working col
 
 ## See Also
 
-- [class func apply(withExtent: CGRect, inputs: [CIImage]?, arguments: [String : Any]?) throws -> CIImage](ciimageprocessorkernel/apply(withextent:inputs:arguments:).md)
+### Type Methods
+- [class func apply(withExtent: CGRect, inputs: [CIImage]?, arguments: [String : Any]?) throws -> CIImage](./apply%28withextent,inputs,arguments%29.md)
   Call this method on your Core Image Processor Kernel subclass to create a new image of the specified extent.
-- [class func process(with: [any CIImageProcessorInput]?, arguments: [String : Any]?, output: any CIImageProcessorOutput) throws](ciimageprocessorkernel/process(with:arguments:output:).md)
+- [class func process(with: [any CIImageProcessorInput]?, arguments: [String : Any]?, output: any CIImageProcessorOutput) throws](./process%28with,arguments,output%29.md)
   Override this class method to implement your Core Image Processor Kernel subclass.
-- [class func roi(forInput: Int32, arguments: [String : Any]?, outputRect: CGRect) -> CGRect](ciimageprocessorkernel/roi(forinput:arguments:outputrect:).md)
+- [class func roi(forInput: Int32, arguments: [String : Any]?, outputRect: CGRect) -> CGRect](./roi%28forinput,arguments,outputrect%29.md)
   Override this class method to implement your processor’s ROI callback.
-- [class func roiTileArray(forInput: Int32, arguments: [String : Any]?, outputRect: CGRect) -> [CIVector]](ciimageprocessorkernel/roitilearray(forinput:arguments:outputrect:).md)
+- [class func roiTileArray(forInput: Int32, arguments: [String : Any]?, outputRect: CGRect) -> [CIVector]](./roitilearray%28forinput,arguments,outputrect%29.md)
   Override this class method to implement your processor’s tiled ROI callback.
 
 

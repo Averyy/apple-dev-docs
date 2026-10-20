@@ -1,7 +1,8 @@
 # UIUserInterfaceLayoutDirection.rightToLeft
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The layout direction right to left.
 
@@ -9,7 +10,7 @@ The layout direction right to left.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ The layout direction right to left.
 case rightToLeft
 ```
 
+```c
+UIUserInterfaceLayoutDirectionRightToLeft
+```
+
 #### Discussion
 
 This value is appropriate when running with localizations such as Arabic or Hebrew that should have the user interface layout origin on the right edge of the coordinate system.
 
 ## See Also
 
-- [UIUserInterfaceLayoutDirection.leftToRight](uiuserinterfacelayoutdirection/lefttoright.md)
+### Constants
+- [UIUserInterfaceLayoutDirection.leftToRight](./lefttoright.md)
   The layout direction is left to right.
 
 

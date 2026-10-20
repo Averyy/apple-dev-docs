@@ -1,7 +1,8 @@
 # createShortGuid
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to create a short GUID for sharing this record.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether to create a short GUID for sharing this r
 
 ## Declaration
 
-```swift
+```
 attribute boolean? createShortGuid;
 ```
 

@@ -1,16 +1,17 @@
 # ICReturnMetadataError.Code.notAvailable
 
 **Framework**: ImageCaptureCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Item does not have metadata available.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -18,19 +19,24 @@ Item does not have metadata available.
 case notAvailable
 ```
 
+```c
+ICReturnMetadataNotAvailable
+```
+
 ## See Also
 
-- [ICReturnMetadataError.Code.alreadyFetching](icreturnmetadataerror/code/alreadyfetching.md)
+### Error Cases
+- [ICReturnMetadataError.Code.alreadyFetching](./alreadyfetching.md)
   Item metadata request is being serviced.
-- [ICReturnMetadataError.Code.canceled](icreturnmetadataerror/code/canceled.md)
+- [ICReturnMetadataError.Code.canceled](./canceled.md)
   Item metadata request has been canceled.
-- [ICReturnMetadataError.Code.invalid](icreturnmetadataerror/code/invalid.md)
+- [ICReturnMetadataError.Code.invalid](./invalid.md)
   Item metadata request completed with invalid result.
-- [ICReturnMetadataError.Code.alreadyFetching](icreturnmetadataerror/code/alreadyfetching.md)
+- [ICReturnMetadataError.Code.alreadyFetching](./alreadyfetching.md)
   Item metadata request is being serviced.
-- [ICReturnMetadataError.Code.canceled](icreturnmetadataerror/code/canceled.md)
+- [ICReturnMetadataError.Code.canceled](./canceled.md)
   Item metadata request has been canceled.
-- [ICReturnMetadataError.Code.invalid](icreturnmetadataerror/code/invalid.md)
+- [ICReturnMetadataError.Code.invalid](./invalid.md)
   Item metadata request completed with invalid result.
 
 

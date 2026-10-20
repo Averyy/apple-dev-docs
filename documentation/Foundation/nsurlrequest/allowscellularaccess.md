@@ -1,7 +1,8 @@
 # allowsCellularAccess
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the request is allowed to use the cellular radio (if present).
 
@@ -20,19 +21,25 @@ A Boolean value that indicates whether the request is allowed to use the cellula
 var allowsCellularAccess: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL allowsCellularAccess;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the cellular radio can be used; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the cellular radio can be used; [`false`](../../Swift/false.md) otherwise.
 
 ## See Also
 
-- [var allowsCellularAccess: Bool](nsmutableurlrequest/allowscellularaccess.md)
+### Related Documentation
+- [var allowsCellularAccess: Bool](../nsmutableurlrequest/allowscellularaccess.md)
   A Boolean value that indicates whether a connection can use the device’s cellular network (if present).
-- [var timeoutInterval: TimeInterval](nsurlrequest/timeoutinterval.md)
+### Controlling request behavior
+- [var timeoutInterval: TimeInterval](./timeoutinterval.md)
   The request’s timeout interval, in seconds.
-- [var httpShouldHandleCookies: Bool](nsurlrequest/httpshouldhandlecookies.md)
+- [var httpShouldHandleCookies: Bool](./httpshouldhandlecookies.md)
   A Boolean value that indicates whether the default cookie handling will be used for this request.
-- [var httpShouldUsePipelining: Bool](nsurlrequest/httpshouldusepipelining.md)
+- [var httpShouldUsePipelining: Bool](./httpshouldusepipelining.md)
   A Boolean value that indicates whether the request should continue transmitting data before receiving a response from an earlier transmission.
 
 

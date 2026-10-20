@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 Returns the properties this transition type has.
@@ -26,9 +27,16 @@ Returns the properties this transition type has.
 
 Defaults to `TransitionProperties()`.
 
+## Default Implementations
+
+### Transition Implementations
+- [static var properties: TransitionProperties](./properties-3v8pe.md)
+  Returns the properties this transition type has.
+
 ## See Also
 
-- [func animation(Animation?) -> some Transition](transition/animation(_:).md)
+### Configuring a transition
+- [func animation(Animation?) -> some Transition](./animation%28_%29.md)
   Attaches an animation to this transition.
 
 

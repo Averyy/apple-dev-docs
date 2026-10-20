@@ -1,7 +1,8 @@
 # BlendMode.screen
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.0+
@@ -20,9 +21,10 @@ case screen
 
 ## See Also
 
-- [BlendMode.lighten](blendmode/lighten.md)
-- [BlendMode.colorDodge](blendmode/colordodge.md)
-- [BlendMode.plusLighter](blendmode/pluslighter.md)
+### Lightening
+- [BlendMode.lighten](./lighten.md)
+- [BlendMode.colorDodge](./colordodge.md)
+- [BlendMode.plusLighter](./pluslighter.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # kBluetoothHCICommandWriteScanEnable
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCICommandWriteScanEnable = 0x001A
 ```
 

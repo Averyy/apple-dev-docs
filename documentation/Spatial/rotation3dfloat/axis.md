@@ -1,7 +1,8 @@
 # axis
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The axis of the rotation.
 

@@ -1,7 +1,8 @@
 # Social
 
 **Framework**: Social  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Post content to supported social networking services, using standard system interfaces.
 
@@ -26,12 +27,12 @@ A common way to use this framework is:
 ## Topics
 
 ### Composition Interfaces
-- [class SLComposeServiceViewController](slcomposeserviceviewcontroller.md)
+- [class SLComposeServiceViewController](./slcomposeserviceviewcontroller.md)
   A view controller that you present from your share app extension, allowing the user to compose social media posts.
-- [class SLComposeViewController](slcomposeviewcontroller.md)
+- [class SLComposeViewController](./slcomposeviewcontroller.md)
   A view controller that allows the user to compose social media posts.
 ### Server Communication
-- [class SLRequest](slrequest.md)
+- [class SLRequest](./slrequest.md)
   An object that you use to assemble an HTTP request for communicating with a social media service.
 
 

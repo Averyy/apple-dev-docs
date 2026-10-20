@@ -1,23 +1,28 @@
 # bitsPerComponent
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bits that represents one channel of data in one pixel.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var bitsPerComponent: UInt32
+```
+
+```c
+uint32_t bitsPerComponent;
 ```
 
 #### Discussion
@@ -26,19 +31,20 @@ For ARGB8888, this is 8. Expected values are 1, 2, 4, 5, 8, 10, 12, 16, or 32.
 
 ## See Also
 
-- [var bitsPerPixel: UInt32](vimage_cgimageformat/bitsperpixel.md)
+### Instance properties
+- [var bitsPerPixel: UInt32](./bitsperpixel.md)
   The number of bits that represents one pixel.
-- [var colorSpace: Unmanaged<CGColorSpace>!](vimage_cgimageformat/colorspace.md)
+- [var colorSpace: Unmanaged<CGColorSpace>!](./colorspace.md)
   A description of the position of the pixel data in the image, relative to a reference XYZ color space.
-- [var bitmapInfo: CGBitmapInfo](vimage_cgimageformat/bitmapinfo.md)
+- [var bitmapInfo: CGBitmapInfo](./bitmapinfo.md)
   The component information that describes the color channels.
-- [var version: UInt32](vimage_cgimageformat/version.md)
+- [var version: UInt32](./version.md)
   The version number.
-- [var decode: UnsafePointer<CGFloat>!](vimage_cgimageformat/decode.md)
+- [var decode: UnsafePointer<CGFloat>!](./decode.md)
   The decode array for the image.
-- [var renderingIntent: CGColorRenderingIntent](vimage_cgimageformat/renderingintent.md)
+- [var renderingIntent: CGColorRenderingIntent](./renderingintent.md)
   A rendering intent constant that specifies how Core Graphics handles colors that aren’t within the destination color space gamut.
-- [var componentCount: Int](vimage_cgimageformat/componentcount.md)
+- [var componentCount: Int](./componentcount.md)
   The number of color and alpha channels.
 
 

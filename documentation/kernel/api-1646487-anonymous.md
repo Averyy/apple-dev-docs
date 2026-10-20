@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,11 +18,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kSCSICDBSize_10Byte](1646487-anonymous/kscsicdbsize_10byte.md)
-- [kSCSICDBSize_12Byte](1646487-anonymous/kscsicdbsize_12byte.md)
-- [kSCSICDBSize_16Byte](1646487-anonymous/kscsicdbsize_16byte.md)
-- [kSCSICDBSize_6Byte](1646487-anonymous/kscsicdbsize_6byte.md)
-- [kSCSICDBSize_Maximum](1646487-anonymous/kscsicdbsize_maximum.md)
+- [kSCSICDBSize_10Byte](./api-1646487-anonymous/kscsicdbsize_10byte.md)
+- [kSCSICDBSize_12Byte](./api-1646487-anonymous/kscsicdbsize_12byte.md)
+- [kSCSICDBSize_16Byte](./api-1646487-anonymous/kscsicdbsize_16byte.md)
+- [kSCSICDBSize_6Byte](./api-1646487-anonymous/kscsicdbsize_6byte.md)
+- [kSCSICDBSize_Maximum](./api-1646487-anonymous/kscsicdbsize_maximum.md)
 
 
 ---

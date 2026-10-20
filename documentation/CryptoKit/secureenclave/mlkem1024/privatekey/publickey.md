@@ -1,7 +1,8 @@
 # publicKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The corresponding public key.
 
@@ -22,7 +23,8 @@ let publicKey: MLKEM1024.PublicKey
 
 ## See Also
 
-- [let dataRepresentation: Data](secureenclave/mlkem1024/privatekey/datarepresentation.md)
+### Accessing a key’s properties
+- [let dataRepresentation: Data](./datarepresentation.md)
   A data representation of the private key.
 
 

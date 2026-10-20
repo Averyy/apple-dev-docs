@@ -1,7 +1,8 @@
 # legacyBuiltinOverridesEnabled
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var legacyBuiltinOverridesEnabled: Bool { get set }
+```
+
+```objc
+@property (nonatomic, getter=isLegacyBuiltinOverridesEnabled) BOOL legacyBuiltinOverridesEnabled;
 ```
 
 #### Discussion

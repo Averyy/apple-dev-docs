@@ -1,7 +1,8 @@
 # addRangeForInputValuesBetween(lowValue:highValue:fullGainAtLowValue:fullGainAtHighValue:lowFadeCurveType:highFadeCurveType:subtree:)
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a child node that blends between a given high and low value.
 
@@ -19,6 +20,10 @@ Adds a child node that blends between a given high and low value.
 func addRangeForInputValuesBetween(lowValue: Double, highValue: Double, fullGainAtLowValue: Double, fullGainAtHighValue: Double, lowFadeCurveType: PHASECurveType, highFadeCurveType: PHASECurveType, subtree: PHASESoundEventNodeDefinition)
 ```
 
+```objc
+- (void) addRangeForInputValuesBetween:(double) lowValue highValue:(double) highValue fullGainAtLowValue:(double) fullGainAtLowValue fullGainAtHighValue:(double) fullGainAtHighValue lowFadeCurveType:(PHASECurveType) lowFadeCurveType highFadeCurveType:(PHASECurveType) highFadeCurveType subtree:(PHASESoundEventNodeDefinition *) subtree;
+```
+
 ## Parameters
 
 - `lowValue`: A value above which the child node blends.
@@ -31,11 +36,12 @@ func addRangeForInputValuesBetween(lowValue: Double, highValue: Double, fullGain
 
 ## See Also
 
-- [func addRange(envelope: PHASEEnvelope, subtree: PHASESoundEventNodeDefinition)](phaseblendnodedefinition/addrange(envelope:subtree:).md)
+### Adding Child Nodes
+- [func addRange(envelope: PHASEEnvelope, subtree: PHASESoundEventNodeDefinition)](./addrange%28envelope,subtree%29.md)
   Adds a child node with an envelope.
-- [func addRangeForInputValuesAbove(value: Double, fullGainAtValue: Double, fadeCurveType: PHASECurveType, subtree: PHASESoundEventNodeDefinition)](phaseblendnodedefinition/addrangeforinputvaluesabove(value:fullgainatvalue:fadecurvetype:subtree:).md)
+- [func addRangeForInputValuesAbove(value: Double, fullGainAtValue: Double, fadeCurveType: PHASECurveType, subtree: PHASESoundEventNodeDefinition)](./addrangeforinputvaluesabove%28value,fullgainatvalue,fadecurvetype,subtree%29.md)
   Adds a child node that blends above a given value.
-- [func addRangeForInputValuesBelow(value: Double, fullGainAtValue: Double, fadeCurveType: PHASECurveType, subtree: PHASESoundEventNodeDefinition)](phaseblendnodedefinition/addrangeforinputvaluesbelow(value:fullgainatvalue:fadecurvetype:subtree:).md)
+- [func addRangeForInputValuesBelow(value: Double, fullGainAtValue: Double, fadeCurveType: PHASECurveType, subtree: PHASESoundEventNodeDefinition)](./addrangeforinputvaluesbelow%28value,fullgainatvalue,fadecurvetype,subtree%29.md)
   Adds a child node that blends below a given value.
 
 

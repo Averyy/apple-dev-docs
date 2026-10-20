@@ -1,16 +1,21 @@
 # app_url
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var app_url: es_string_token_t
+```
+
+```c
+es_string_token_t app_url;
 ```
 
 

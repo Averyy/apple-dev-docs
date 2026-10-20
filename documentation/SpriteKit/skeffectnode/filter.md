@@ -1,17 +1,18 @@
 # filter
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Core Image filter to apply.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,15 @@ The Core Image filter to apply.
 var filter: CIFilter? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) CIFilter * filter;
+```
+
 #### Discussion
 
 The Core Image filter must have a single `inputImage` parameter and produce a single `outputImage` parameter. The default value is `nil`. If the value is `nil` and the effect node is enabled, no filtering takes place. However, its children are still rendered in a separate pass and blended to the parent’s framebuffer.
 
-If you wish to use a Core Image filter that doesn’t have an `inputImage` parameter, such as a sunbeams generator, you can subclass [`CIFilter`](https://developer.apple.com/documentation/coreimage/cifilter-swift.class) and add an `inputImage` property. The input image’s extent can be used to define properties such as radius on the filter. The following code creates a filter based on [`CISunbeamsGenerator`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/filter/ci/CISunbeamsGenerator) which can be used as an effect node’s filter:
+If you wish to use a Core Image filter that doesn’t have an `inputImage` parameter, such as a sunbeams generator, you can subclass [`CIFilter`](../../CoreImage/cifilter-swift.class.md) and add an `inputImage` property. The input image’s extent can be used to define properties such as radius on the filter. The following code creates a filter based on [CISunbeamsGenerator](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/filter/ci/CISunbeamsGenerator) which can be used as an effect node’s filter:
 
 ```objc
 class StarGenerator: CIFilter {    
@@ -47,11 +52,12 @@ class StarGenerator: CIFilter {
 
 ## See Also
 
-- [Applying Special Effects to a Node’s Children](applying-special-effects-to-a-node-s-children.md)
+### Applying Core Image Filters with an Effect Node
+- [Applying Special Effects to a Node’s Children](../applying-special-effects-to-a-node-s-children.md)
   Apply the Core Image suite of filters to child nodes of an effect node.
-- [var shouldEnableEffects: Bool](skeffectnode/shouldenableeffects.md)
+- [var shouldEnableEffects: Bool](./shouldenableeffects.md)
   A Boolean value that determines whether the effect node applies the filter to its children as they are drawn.
-- [var shouldCenterFilter: Bool](skeffectnode/shouldcenterfilter.md)
+- [var shouldCenterFilter: Bool](./shouldcenterfilter.md)
   A Boolean value that determines whether the effect node automatically sets the filter’s image center.
 
 

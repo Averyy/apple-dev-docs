@@ -1,7 +1,8 @@
 # canAddControl(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether a capture session add the specified control.
 
@@ -18,17 +19,21 @@ Returns a Boolean value that indicates whether a capture session add the specifi
 func canAddControl(_ control: AVCaptureControl) -> Bool
 ```
 
+```objc
+- (BOOL) canAddControl:(AVCaptureControl *) control;
+```
+
 ## Mentions
 
-- [Enhancing your app experience with the Camera Control](enhancing-your-app-experience-with-the-camera-control.md)
+- [Enhancing your app experience with the Camera Control](../enhancing-your-app-experience-with-the-camera-control.md)
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the capture session can add the control; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the capture session can add the control; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-Call this method to determine whether you can successfully add a control to a capture session using the [`addControl(_:)`](avcapturesession/addcontrol(_:).md) method. A capture session may not be able to add a control due to its current session configuration or if unsupported by the host platform.
+Call this method to determine whether you can successfully add a control to a capture session using the [`addControl(_:)`](./addcontrol%28_%29.md) method. A capture session may not be able to add a control due to its current session configuration or if unsupported by the host platform.
 
 ## Parameters
 
@@ -36,23 +41,24 @@ Call this method to determine whether you can successfully add a control to a ca
 
 ## See Also
 
-- [var supportsControls: Bool](avcapturesession/supportscontrols.md)
+### Configuring capture controls
+- [var supportsControls: Bool](./supportscontrols.md)
   A Boolean value that indicates whether a capture session supports controls.
-- [var maxControlsCount: Int](avcapturesession/maxcontrolscount.md)
+- [var maxControlsCount: Int](./maxcontrolscount.md)
   The maximum number of controls a capture session supports.
-- [var controls: [AVCaptureControl]](avcapturesession/controls.md)
+- [var controls: [AVCaptureControl]](./controls.md)
   The controls that allow configuring the camera system from device hardware.
-- [func addControl(AVCaptureControl)](avcapturesession/addcontrol(_:).md)
+- [func addControl(AVCaptureControl)](./addcontrol%28_%29.md)
   Adds a control to a capture session.
-- [func removeControl(AVCaptureControl)](avcapturesession/removecontrol(_:).md)
+- [func removeControl(AVCaptureControl)](./removecontrol%28_%29.md)
   Removes a control from a capture session.
-- [func setControlsDelegate((any AVCaptureSessionControlsDelegate)?, queue: dispatch_queue_t?)](avcapturesession/setcontrolsdelegate(_:queue:).md)
+- [func setControlsDelegate((any AVCaptureSessionControlsDelegate)?, queue: dispatch_queue_t?)](./setcontrolsdelegate%28_,queue%29.md)
   Sets a delegate object for the system to call when it activates and presents controls.
-- [protocol AVCaptureSessionControlsDelegate](avcapturesessioncontrolsdelegate.md)
+- [protocol AVCaptureSessionControlsDelegate](../avcapturesessioncontrolsdelegate.md)
   A protocol that defines the interface to respond to capture control activation and presentation events.
-- [var controlsDelegate: (any AVCaptureSessionControlsDelegate)?](avcapturesession/controlsdelegate.md)
+- [var controlsDelegate: (any AVCaptureSessionControlsDelegate)?](./controlsdelegate.md)
   A delegate object that observes changes to the state of capture controls.
-- [var controlsDelegateCallbackQueue: dispatch_queue_t?](avcapturesession/controlsdelegatecallbackqueue.md)
+- [var controlsDelegateCallbackQueue: dispatch_queue_t?](./controlsdelegatecallbackqueue.md)
   The dispatch queue on which the system calls controls delegate methods.
 
 

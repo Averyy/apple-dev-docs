@@ -1,7 +1,8 @@
 # kDNSServiceErr_NotPermitted
 
 **Framework**: dnssd  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var kDNSServiceErr_NotPermitted: Int { get }
+```
+
+```c
+kDNSServiceErr_NotPermitted
 ```
 
 

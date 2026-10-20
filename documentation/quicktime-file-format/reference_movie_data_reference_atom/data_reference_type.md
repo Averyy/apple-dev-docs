@@ -1,7 +1,8 @@
 # Data reference type
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 The data reference type.
 
@@ -11,15 +12,16 @@ A value of `'alis'` indicates a file system alias record. A value of `'url '` in
 
 ## See Also
 
-- [Size](reference_movie_data_reference_atom/size.md)
+### Data fields
+- [Size](./size.md)
   The number of bytes in this data reference atom.
-- [Type](reference_movie_data_reference_atom/type.md)
+- [Type](./type.md)
   The type of this atom.
-- [Flags](reference_movie_data_reference_atom/flags.md)
+- [Flags](./flags.md)
   A 32-bit integer containing flags.
-- [Data reference size](reference_movie_data_reference_atom/data_reference_size.md)
+- [Data reference size](./data_reference_size.md)
   The size of the data reference in bytes, expressed as a 32-bit integer.
-- [Data reference](reference_movie_data_reference_atom/data_reference.md)
+- [Data reference](./data_reference.md)
   A data reference to a QuickTime movie, or to a stream or file that QuickTime can play.
 
 

@@ -1,7 +1,8 @@
 # NERelayManagerClientError
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.0+
@@ -17,32 +18,36 @@
 enum NERelayManagerClientError
 ```
 
+```c
+enum NERelayManagerClientError : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [NERelayManagerClientError.certificateExpired](nerelaymanagerclienterror/certificateexpired.md)
-- [NERelayManagerClientError.certificateInvalid](nerelaymanagerclienterror/certificateinvalid.md)
-- [NERelayManagerClientError.certificateMissing](nerelaymanagerclienterror/certificatemissing.md)
-- [NERelayManagerClientError.dnsFailed](nerelaymanagerclienterror/dnsfailed.md)
-- [NERelayManagerClientError.none](nerelaymanagerclienterror/none.md)
-- [NERelayManagerClientError.other](nerelaymanagerclienterror/other.md)
-- [NERelayManagerClientError.pvDConfigurationTruncated](nerelaymanagerclienterror/pvdconfigurationtruncated.md)
-- [NERelayManagerClientError.serverCertificateExpired](nerelaymanagerclienterror/servercertificateexpired.md)
-- [NERelayManagerClientError.serverCertificateInvalid](nerelaymanagerclienterror/servercertificateinvalid.md)
-- [NERelayManagerClientError.serverDisconnected](nerelaymanagerclienterror/serverdisconnected.md)
-- [NERelayManagerClientError.serverUnreachable](nerelaymanagerclienterror/serverunreachable.md)
+- [NERelayManagerClientError.certificateExpired](./nerelaymanagerclienterror/certificateexpired.md)
+- [NERelayManagerClientError.certificateInvalid](./nerelaymanagerclienterror/certificateinvalid.md)
+- [NERelayManagerClientError.certificateMissing](./nerelaymanagerclienterror/certificatemissing.md)
+- [NERelayManagerClientError.dnsFailed](./nerelaymanagerclienterror/dnsfailed.md)
+- [NERelayManagerClientError.none](./nerelaymanagerclienterror/none.md)
+- [NERelayManagerClientError.other](./nerelaymanagerclienterror/other.md)
+- [NERelayManagerClientError.pvDConfigurationTruncated](./nerelaymanagerclienterror/pvdconfigurationtruncated.md)
+- [NERelayManagerClientError.serverCertificateExpired](./nerelaymanagerclienterror/servercertificateexpired.md)
+- [NERelayManagerClientError.serverCertificateInvalid](./nerelaymanagerclienterror/servercertificateinvalid.md)
+- [NERelayManagerClientError.serverDisconnected](./nerelaymanagerclienterror/serverdisconnected.md)
+- [NERelayManagerClientError.serverUnreachable](./nerelaymanagerclienterror/serverunreachable.md)
 ### Initializers
-- [init?(rawValue: Int)](nerelaymanagerclienterror/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nerelaymanagerclienterror/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

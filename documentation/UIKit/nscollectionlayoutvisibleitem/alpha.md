@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The transparency of the item.
@@ -19,9 +20,14 @@ The transparency of the item.
 var alpha: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat alpha;
+```
+
 ## See Also
 
-- [var isHidden: Bool](nscollectionlayoutvisibleitem/ishidden.md)
+### Configuring appearance
+- [var isHidden: Bool](./ishidden.md)
   A Boolean value that determines whether the item is hidden.
 
 

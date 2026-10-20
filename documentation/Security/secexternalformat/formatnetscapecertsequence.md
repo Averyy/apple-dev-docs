@@ -1,7 +1,8 @@
 # SecExternalFormat.formatNetscapeCertSequence
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Set of certificates in the Netscape Certificate Sequence format.
 
@@ -12,6 +13,10 @@ Set of certificates in the Netscape Certificate Sequence format.
 
 ```swift
 case formatNetscapeCertSequence
+```
+
+```c
+kSecFormatNetscapeCertSequence
 ```
 
 

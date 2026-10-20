@@ -1,31 +1,33 @@
 # Accessibility for visionOS
 
-**Framework**: Accessibility
+**Framework**: Accessibility  
+**Role**: API Collection
 
 Make your apps accessible to everyone who uses visionOS.
 
 #### Overview
 
-Design your visionOS app with accessibility in mind. Incorporate the accessibility features in [`SwiftUI`](https://developer.apple.com/documentation/swiftui) and [`UIKit`](https://developer.apple.com/documentation/uikit), and support additional features that are specific to visionOS.
+Design your visionOS app with accessibility in mind. Incorporate the accessibility features in [SwiftUI](../SwiftUI/SwiftUI.md) and [UIKit](../UIKit/UIKit.md), and support additional features that are specific to visionOS.
 
 ## Topics
 
 ### Design
-- [Improving accessibility support in your visionOS app](../visionos/improving-accessibility-support-in-your-app.md)
+- [Improving accessibility support in your visionOS app](../visionOS/improving-accessibility-support-in-your-app.md)
   Update your code to ensure everyone can access your app’s content in visionOS.
 ### Head-anchored content
-- [static var prefersHeadAnchorAlternative: Bool](accessibilitysettings/prefersheadanchoralternative.md)
+- [static var prefersHeadAnchorAlternative: Bool](./accessibilitysettings/prefersheadanchoralternative.md)
   A Boolean value that indicates the person’s preference for content that follows their head position.
-- [static var prefersHeadAnchorAlternativeDidChangeNotification: Notification.Name](accessibilitysettings/prefersheadanchoralternativedidchangenotification.md)
+- [static var prefersHeadAnchorAlternativeDidChangeNotification: Notification.Name](./accessibilitysettings/prefersheadanchoralternativedidchangenotification.md)
   A notification that posts when the system setting for head-anchored content changes.
 
 ## See Also
 
-- [Accessibility fundamentals](../swiftui/accessibility-fundamentals.md)
+### Platforms
+- [Accessibility fundamentals](../SwiftUI/accessibility-fundamentals.md)
   Make your SwiftUI apps accessible to everyone, including people with disabilities.
-- [Accessibility for UIKit](../uikit/accessibility-for-uikit.md)
+- [Accessibility for UIKit](../UIKit/accessibility-for-uikit.md)
   Make your UIKit apps accessible to everyone who uses iOS and tvOS.
-- [Accessibility for AppKit](../appkit/accessibility-for-appkit.md)
+- [Accessibility for AppKit](../AppKit/accessibility-for-appkit.md)
   Make your AppKit apps accessible to everyone who uses macOS.
 
 

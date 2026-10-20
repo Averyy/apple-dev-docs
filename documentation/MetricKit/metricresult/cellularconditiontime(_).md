@@ -1,7 +1,8 @@
 # MetricResult.cellularConditionTime(_:)
 
 **Framework**: MetricKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -15,14 +16,15 @@ case cellularConditionTime(CellularConditionTimeMetric)
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](../analyzing-app-performance-with-metrickit.md)
 
 ## See Also
 
-- [case totalWiFiUpload(TotalWiFiUploadMetric)](metricresult/totalwifiupload(_:).md)
-- [case totalWiFiDownload(TotalWiFiDownloadMetric)](metricresult/totalwifidownload(_:).md)
-- [case totalCellularUpload(TotalCellularUploadMetric)](metricresult/totalcellularupload(_:).md)
-- [case totalCellularDownload(TotalCellularDownloadMetric)](metricresult/totalcellulardownload(_:).md)
+### Network
+- [case totalWiFiUpload(TotalWiFiUploadMetric)](./totalwifiupload%28_%29.md)
+- [case totalWiFiDownload(TotalWiFiDownloadMetric)](./totalwifidownload%28_%29.md)
+- [case totalCellularUpload(TotalCellularUploadMetric)](./totalcellularupload%28_%29.md)
+- [case totalCellularDownload(TotalCellularDownloadMetric)](./totalcellulardownload%28_%29.md)
 
 
 ---

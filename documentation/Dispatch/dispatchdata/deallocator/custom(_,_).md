@@ -1,18 +1,19 @@
 # DispatchData.Deallocator.custom(_:_:)
 
 **Framework**: Dispatch  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Use a custom deallocator.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -23,9 +24,10 @@ case custom(DispatchQueue?, @Sendable () -> Void)
 
 ## See Also
 
-- [DispatchData.Deallocator.free](dispatchdata/deallocator/free.md)
+### Deallocators
+- [DispatchData.Deallocator.free](./free.md)
   Use `free` to deallocate memory.
-- [DispatchData.Deallocator.unmap](dispatchdata/deallocator/unmap.md)
+- [DispatchData.Deallocator.unmap](./unmap.md)
   Use `munmap` to deallocate memory.
 
 

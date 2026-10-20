@@ -1,7 +1,8 @@
 # GameCenterDetailChallengesMinimumPlatformVersionsLinkagesRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The resource linkage data identifying a platform version requirement for Game Center challenges.
 
@@ -10,14 +11,14 @@ The resource linkage data identifying a platform version requirement for Game Ce
 
 ## Declaration
 
-```swift
+```
 object GameCenterDetailChallengesMinimumPlatformVersionsLinkagesRequest.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appStoreVersions`
 
 
 ---

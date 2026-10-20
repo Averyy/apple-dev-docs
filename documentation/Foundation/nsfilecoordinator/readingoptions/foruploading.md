@@ -1,7 +1,8 @@
 # forUploading
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specify this content when reading an item for the purpose of uploading its contents.
 
@@ -20,6 +21,10 @@ Specify this content when reading an item for the purpose of uploading its conte
 static var forUploading: NSFileCoordinator.ReadingOptions { get }
 ```
 
+```c
+NSFileCoordinatorReadingForUploading
+```
+
 #### Discussion
 
 When this option is used, the file coordinator creates a temporary snapshot of the item being read and relinquishes its claim on the original file. This action prevents the read operation from blocking other coordinated writes during a potentially long upload.
@@ -30,9 +35,10 @@ When using this option, you may upload the document outside the accessor block. 
 
 ## See Also
 
-- [static var withoutChanges: NSFileCoordinator.ReadingOptions](nsfilecoordinator/readingoptions/withoutchanges.md)
-- [static var resolvesSymbolicLink: NSFileCoordinator.ReadingOptions](nsfilecoordinator/readingoptions/resolvessymboliclink.md)
-- [static var immediatelyAvailableMetadataOnly: NSFileCoordinator.ReadingOptions](nsfilecoordinator/readingoptions/immediatelyavailablemetadataonly.md)
+### Constants
+- [static var withoutChanges: NSFileCoordinator.ReadingOptions](./withoutchanges.md)
+- [static var resolvesSymbolicLink: NSFileCoordinator.ReadingOptions](./resolvessymboliclink.md)
+- [static var immediatelyAvailableMetadataOnly: NSFileCoordinator.ReadingOptions](./immediatelyavailablemetadataonly.md)
   Specify this constant if you want to read an item’s metadata without triggering a download.
 
 

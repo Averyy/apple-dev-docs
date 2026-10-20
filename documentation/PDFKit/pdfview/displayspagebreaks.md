@@ -1,7 +1,8 @@
 # displaysPageBreaks
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the view is displaying page breaks.
 
@@ -19,9 +20,14 @@ A Boolean value indicating whether the view is displaying page breaks.
 var displaysPageBreaks: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL displaysPageBreaks;
+```
+
 ## See Also
 
-- [var pageBreakMargins: UIEdgeInsets](pdfview/pagebreakmargins.md)
+### Defining Page Breaks
+- [var pageBreakMargins: UIEdgeInsets](./pagebreakmargins.md)
   The spacing between pages as defined by the top, bottom, left, and right margins.
 
 

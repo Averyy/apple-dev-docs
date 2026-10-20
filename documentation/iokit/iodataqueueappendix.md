@@ -1,7 +1,8 @@
 # IODataQueueAppendix
 
 **Framework**: IOKit  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 A struct mapping to the appendix region of a data queue.
 
@@ -16,6 +17,12 @@ A struct mapping to the appendix region of a data queue.
 
 ```swift
 typealias IODataQueueAppendix = _IODataQueueAppendix
+```
+
+```c
+typedef struct _IODataQueueAppendix {
+    ...
+} IODataQueueAppendix;
 ```
 
 #### Discussion

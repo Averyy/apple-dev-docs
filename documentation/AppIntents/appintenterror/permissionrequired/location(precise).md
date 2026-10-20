@@ -1,7 +1,8 @@
 # location(precise:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The person needs to allow the app to access their location.
 

@@ -1,7 +1,8 @@
 # WAError.deviceInvalid(_:)
 
 **Framework**: Wi-Fi Aware  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that occurs if your app specifies a paired device it doesn’t have access to.
 
@@ -18,7 +19,8 @@ case deviceInvalid(WAError.DeviceInvalidDetails)
 
 ## See Also
 
-- [WAError.DeviceInvalidDetails](waerror/deviceinvaliddetails.md)
+### Checking for invalid device
+- [WAError.DeviceInvalidDetails](./deviceinvaliddetails.md)
   The optional details describing the device that’s invalid.
 
 

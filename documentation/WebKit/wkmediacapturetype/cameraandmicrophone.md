@@ -1,7 +1,8 @@
 # WKMediaCaptureType.cameraAndMicrophone
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A media device or devices that can capture audio and video.
 
@@ -18,11 +19,16 @@ A media device or devices that can capture audio and video.
 case cameraAndMicrophone
 ```
 
+```c
+WKMediaCaptureTypeCameraAndMicrophone
+```
+
 ## See Also
 
-- [WKMediaCaptureType.camera](wkmediacapturetype/camera.md)
+### Constants
+- [WKMediaCaptureType.camera](./camera.md)
   A media device that can capture video.
-- [WKMediaCaptureType.microphone](wkmediacapturetype/microphone.md)
+- [WKMediaCaptureType.microphone](./microphone.md)
   A media device that can capture audio.
 
 

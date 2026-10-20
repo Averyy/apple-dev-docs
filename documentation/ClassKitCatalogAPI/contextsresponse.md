@@ -1,7 +1,8 @@
 # ContextsResponse
 
 **Framework**: ClassKit Catalog API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Dictionary
 
 The response you receive after modifying context information.
 
@@ -10,7 +11,7 @@ The response you receive after modifying context information.
 
 ## Declaration
 
-```swift
+```
 object ContextsResponse
 ```
 
@@ -20,17 +21,18 @@ object ContextsResponse
 
 ## See Also
 
-- [Preparing Context Data](preparing-context-data.md)
+### Declaring Contexts
+- [Preparing Context Data](./preparing-context-data.md)
   Adjust how you manage context data when working with the web API.
-- [Create or Replace Contexts](create-or-replace-contexts.md)
+- [Create or Replace Contexts](./create-or-replace-contexts.md)
   Store information about the assignable content that your educational app provides.
-- [Get a Context](get-a-context.md)
+- [Get a Context](./get-a-context.md)
   Fetch information that you previously stored about your app’s assignable activities.
-- [Delete a Context](delete-a-context.md)
+- [Delete a Context](./delete-a-context.md)
   Remove information that you previously stored about your app’s assignable activities.
-- [object Context](context.md)
+- [object Context](./context.md)
   An area of your app that represents an assignable task, like a quiz or a chapter.
-- [object ContextsRequest](contextsrequest.md)
+- [object ContextsRequest](./contextsrequest.md)
   A request that you make when modifying context information.
 
 

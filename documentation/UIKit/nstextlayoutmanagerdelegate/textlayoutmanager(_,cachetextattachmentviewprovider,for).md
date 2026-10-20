@@ -1,7 +1,8 @@
 # textLayoutManager(_:cacheTextAttachmentViewProvider:for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate that a view provider associated with a text attachment is about to be invalidated.
 
@@ -18,6 +19,10 @@ Notifies the delegate that a view provider associated with a text attachment is 
 optional func textLayoutManager(_ textLayoutManager: NSTextLayoutManager, cacheTextAttachmentViewProvider viewProvider: NSTextAttachmentViewProvider, for textAttachment: NSTextAttachment)
 ```
 
+```objc
+- (void) textLayoutManager:(NSTextLayoutManager *) textLayoutManager cacheTextAttachmentViewProvider:(NSTextAttachmentViewProvider *) viewProvider forTextAttachment:(NSTextAttachment *) textAttachment;
+```
+
 #### Discussion
 
 The delegate can use this to cache the view provider.
@@ -30,7 +35,8 @@ The delegate can use this to cache the view provider.
 
 ## See Also
 
-- [func textLayoutManager(NSTextLayoutManager, retrieveCachedTextAttachmentViewProviderFor: NSTextAttachment) -> NSTextAttachmentViewProvider?](nstextlayoutmanagerdelegate/textlayoutmanager(_:retrievecachedtextattachmentviewproviderfor:).md)
+### Reusing text attachment view providers
+- [func textLayoutManager(NSTextLayoutManager, retrieveCachedTextAttachmentViewProviderFor: NSTextAttachment) -> NSTextAttachmentViewProvider?](./textlayoutmanager%28_,retrievecachedtextattachmentviewproviderfor%29.md)
   Returns a cached `NSTextAttachmentViewProvider` to be associated with a particular attachment.
 
 

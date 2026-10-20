@@ -1,7 +1,8 @@
 # unspecified
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 15.4+
@@ -10,6 +11,10 @@
 
 ```swift
 static let unspecified: FSOperationID
+```
+
+```c
+extern const FSOperationID FSOperationIDUnspecified;
 ```
 
 

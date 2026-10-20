@@ -1,7 +1,8 @@
 # undoManager
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The undo manager you use to register undo actions for your app intents.
 
@@ -23,9 +24,9 @@ var undoManager: UndoManager? { get }
 
 #### Discussion
 
-In your app intent’s [`perform()`](appintent/perform().md) method, use this property to get an undo manager suitable for registering undoable actions. The system makes every effort to find a suitable undo manager given the current state of your app or app extension. However, if a suitable undo manager isn’t available, the value of this property is `nil`.
+In your app intent’s [`perform()`](../appintent/perform%28%29.md) method, use this property to get an undo manager suitable for registering undoable actions. The system makes every effort to find a suitable undo manager given the current state of your app or app extension. However, if a suitable undo manager isn’t available, the value of this property is `nil`.
 
-Use the undo manager in this property only to register your undoable actions. App intents don’t initiate calls to the [`undo()`](https://developer.apple.com/documentation/foundation/undomanager/undo()) or [`redo()`](https://developer.apple.com/documentation/foundation/undomanager/redo()) methods of the undo manager. Your app initiates undo and redo operations in response to interactions with its menus or interface.
+Use the undo manager in this property only to register your undoable actions. App intents don’t initiate calls to the [`undo()`](../../Foundation/undomanager/undo%28%29.md) or [`redo()`](../../Foundation/undomanager/redo%28%29.md) methods of the undo manager. Your app initiates undo and redo operations in response to interactions with its menus or interface.
 
 
 ---

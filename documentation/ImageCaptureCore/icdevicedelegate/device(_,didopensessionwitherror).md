@@ -2,6 +2,7 @@
 
 **Framework**: ImageCaptureCore  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate when a session is opened on a device.
@@ -19,6 +20,10 @@ Tells the delegate when a session is opened on a device.
 func device(_ device: ICDevice, didOpenSessionWithError error: (any Error)?)
 ```
 
+```objc
+- (void) device:(ICDevice *) device didOpenSessionWithError:(NSError *) error;
+```
+
 #### Discussion
 
 This message completes the process initiated by the message “requestOpenSession” sent to the device object.
@@ -27,17 +32,18 @@ Execution of the delegate callback occurs on the main thread.
 
 ## See Also
 
-- [func device(ICDevice, didCloseSessionWithError: (any Error)?)](icdevicedelegate/device(_:didclosesessionwitherror:).md)
+### Responding to Device Events
+- [func device(ICDevice, didCloseSessionWithError: (any Error)?)](./device%28_,didclosesessionwitherror%29.md)
   Tells the delegate when a session is closed on a device.
-- [func didRemove(ICDevice)](icdevicedelegate/didremove(_:).md)
+- [func didRemove(ICDevice)](./didremove%28_%29.md)
   Tells the delegate that a device has been removed.
-- [func deviceDidBecomeReady(ICDevice)](icdevicedelegate/devicedidbecomeready(_:).md)
+- [func deviceDidBecomeReady(ICDevice)](./devicedidbecomeready%28_%29.md)
   Tells the delegate when the device is ready to receive requests.
-- [func device(ICDevice, didReceiveStatusInformation: [ICDeviceStatus : Any])](icdevicedelegate/device(_:didreceivestatusinformation:).md)
+- [func device(ICDevice, didReceiveStatusInformation: [ICDeviceStatus : Any])](./device%28_,didreceivestatusinformation%29.md)
   Tells the delegate when status information is received from a device.
-- [func device(ICDevice, didEncounterError: (any Error)?)](icdevicedelegate/device(_:didencountererror:).md)
+- [func device(ICDevice, didEncounterError: (any Error)?)](./device%28_,didencountererror%29.md)
   Tells the delegate when a device encounters an error.
-- [func device(ICDevice, didEjectWithError: (any Error)?)](icdevicedelegate/device(_:didejectwitherror:).md)
+- [func device(ICDevice, didEjectWithError: (any Error)?)](./device%28_,didejectwitherror%29.md)
   Tells the delegate when the ejection is complete.
 
 

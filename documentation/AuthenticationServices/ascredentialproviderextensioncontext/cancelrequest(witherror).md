@@ -1,7 +1,8 @@
 # cancelRequest(withError:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels the request.
 
@@ -18,9 +19,13 @@ Cancels the request.
 func cancelRequest(withError error: any Error)
 ```
 
+```objc
+- (void) cancelRequestWithError:(NSError *) error;
+```
+
 ## Mentions
 
-- [Providing one-time passcodes to AutoFill](providing-one-time-passcodes-to-autofill.md)
+- [Providing one-time passcodes to AutoFill](../providing-one-time-passcodes-to-autofill.md)
 
 #### Discussion
 
@@ -28,7 +33,7 @@ Call this method if the user cancels the action or if a failure occurs. The syst
 
 ## Parameters
 
-- `error`: Use an error domain of [`ASExtensionErrorDomain`](asextensionerrordomain.md) and a code of type [`ASExtensionError.Code`](asextensionerror/code.md).
+- `error`: Use an error domain of [`ASExtensionErrorDomain`](../asextensionerrordomain.md) and a code of type [`ASExtensionError.Code`](../asextensionerror/code.md).
 
 
 ---

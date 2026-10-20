@@ -1,14 +1,15 @@
 # kHIDUsage_GD_ChassisEnclosure
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_GD_ChassisEnclosure = 0xC5
 ```
 

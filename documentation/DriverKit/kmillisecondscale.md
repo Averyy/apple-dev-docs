@@ -1,25 +1,27 @@
 # kMillisecondScale
 
 **Framework**: DriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kMillisecondScale
 ```
 
 ## See Also
 
-- [kMicrosecondScale](kmicrosecondscale.md)
-- [kNanosecondScale](knanosecondscale.md)
-- [kSecondScale](ksecondscale.md)
+### Time Scales
+- [kMicrosecondScale](./kmicrosecondscale.md)
+- [kNanosecondScale](./knanosecondscale.md)
+- [kSecondScale](./ksecondscale.md)
 
 
 ---

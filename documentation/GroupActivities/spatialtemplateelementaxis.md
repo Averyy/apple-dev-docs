@@ -1,7 +1,8 @@
 # SpatialTemplateElementAxis
 
 **Framework**: Group Activities  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An axis to use when aligning elements in a spatial template.
 
@@ -21,22 +22,23 @@ When configuring the elements of a spatial template, you can specify directions 
 ## Topics
 
 ### Type Properties
-- [static let x: SpatialTemplateElementAxis](spatialtemplateelementaxis/x.md)
+- [static let x: SpatialTemplateElementAxis](./spatialtemplateelementaxis/x.md)
   The x-axis of alignment.
-- [static let z: SpatialTemplateElementAxis](spatialtemplateelementaxis/z.md)
+- [static let z: SpatialTemplateElementAxis](./spatialtemplateelementaxis/z.md)
   The z-axis of alignment.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static func alignedWith(appAxis: SpatialTemplateElementAxis) -> SpatialTemplateElementDirection](spatialtemplateelementdirection/alignedwith(appaxis:).md)
+### Looking along an axis
+- [static func alignedWith(appAxis: SpatialTemplateElementAxis) -> SpatialTemplateElementDirection](./spatialtemplateelementdirection/alignedwith%28appaxis%29.md)
   Creates a direction that orients the participant to look along the specified axis in the direction of the app’s content.
 
 

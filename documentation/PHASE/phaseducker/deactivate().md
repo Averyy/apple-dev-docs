@@ -1,7 +1,8 @@
 # deactivate()
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the ducker from altering sound.
 
@@ -19,9 +20,14 @@ Stops the ducker from altering sound.
 func deactivate()
 ```
 
+```objc
+- (void) deactivate;
+```
+
 ## See Also
 
-- [func activate()](phaseducker/activate.md)
+### Altering Sound
+- [func activate()](./activate%28%29.md)
   Instructs the ducker to begin altering sound.
 
 

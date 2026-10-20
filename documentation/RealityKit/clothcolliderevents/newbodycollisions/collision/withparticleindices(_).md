@@ -1,7 +1,8 @@
 # withParticleIndices(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides access to the indices of particles that collided with the collider.
 

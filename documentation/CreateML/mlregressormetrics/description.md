@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the regressor metrics.
 
@@ -21,9 +22,10 @@ var description: String { get }
 
 ## See Also
 
-- [var debugDescription: String](mlregressormetrics/debugdescription.md)
+### Describing metrics
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the regressor metrics that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlregressormetrics/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the regressor metrics shown in a playground.
 
 

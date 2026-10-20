@@ -1,7 +1,8 @@
 # CMSimpleQueueGetCapacity(_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the number of elements that the queue can hold.
 
@@ -20,6 +21,10 @@ Returns the number of elements that the queue can hold.
 func CMSimpleQueueGetCapacity(_ queue: CMSimpleQueue) -> Int32
 ```
 
+```c
+extern int32_t CMSimpleQueueGetCapacity(CMSimpleQueueRef queue);
+```
+
 #### Return Value
 
 The number of elements that the queue can hold. Returns `0` if there is an error.
@@ -30,9 +35,10 @@ The number of elements that the queue can hold. Returns `0` if there is an error
 
 ## See Also
 
-- [func CMSimpleQueueGetHead(CMSimpleQueue) -> UnsafeRawPointer?](cmsimplequeuegethead(_:).md)
+### Inspecting Queues
+- [func CMSimpleQueueGetHead(CMSimpleQueue) -> UnsafeRawPointer?](./cmsimplequeuegethead%28_%29.md)
   Returns the element at the head of the queue.
-- [func CMSimpleQueueGetCount(CMSimpleQueue) -> Int32](cmsimplequeuegetcount(_:).md)
+- [func CMSimpleQueueGetCount(CMSimpleQueue) -> Int32](./cmsimplequeuegetcount%28_%29.md)
   Returns the number of elements currently in the queue.
 
 

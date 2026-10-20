@@ -1,7 +1,8 @@
 # temporaryCNNConvolutionWeightsAndBiasesState(with:cnnConvolutionDescriptor:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 class func temporaryCNNConvolutionWeightsAndBiasesState(with commandBuffer: any MTLCommandBuffer, cnnConvolutionDescriptor descriptor: MPSCNNConvolutionDescriptor) -> Self
+```
+
+```objc
++ (instancetype) temporaryCNNConvolutionWeightsAndBiasesStateWithCommandBuffer:(id<MTLCommandBuffer>) commandBuffer cnnConvolutionDescriptor:(MPSCNNConvolutionDescriptor *) descriptor;
 ```
 
 

@@ -1,7 +1,8 @@
 # CTLineGetImageBounds(_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Calculates the image bounds for a line.
 
@@ -20,9 +21,13 @@ Calculates the image bounds for a line.
 func CTLineGetImageBounds(_ line: CTLine, _ context: CGContext?) -> CGRect
 ```
 
+```c
+extern CGRect CTLineGetImageBounds(CTLineRef line, CGContextRef context);
+```
+
 #### Return Value
 
-A rectangle that tightly encloses the paths of the line’s glyphs, or, if the line or context is invalid, [`CGRectNull`](https://developer.apple.com/documentation/coregraphics/cgrectnull).
+A rectangle that tightly encloses the paths of the line’s glyphs, or, if the line or context is invalid, [`CGRectNull`](../CoreGraphics/cgrectnull.md).
 
 ## Parameters
 
@@ -31,9 +36,10 @@ A rectangle that tightly encloses the paths of the line’s glyphs, or, if the l
 
 ## See Also
 
-- [func CTLineGetTypographicBounds(CTLine, UnsafeMutablePointer<CGFloat>?, UnsafeMutablePointer<CGFloat>?, UnsafeMutablePointer<CGFloat>?) -> Double](ctlinegettypographicbounds(_:_:_:_:).md)
+### Measuring Lines
+- [func CTLineGetTypographicBounds(CTLine, UnsafeMutablePointer<CGFloat>?, UnsafeMutablePointer<CGFloat>?, UnsafeMutablePointer<CGFloat>?) -> Double](./ctlinegettypographicbounds%28_,_,_,_%29.md)
   Calculates the typographic bounds of a line.
-- [func CTLineGetTrailingWhitespaceWidth(CTLine) -> Double](ctlinegettrailingwhitespacewidth(_:).md)
+- [func CTLineGetTrailingWhitespaceWidth(CTLine) -> Double](./ctlinegettrailingwhitespacewidth%28_%29.md)
   Returns the trailing whitespace width for a line.
 
 

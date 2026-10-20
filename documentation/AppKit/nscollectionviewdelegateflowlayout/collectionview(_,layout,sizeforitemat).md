@@ -1,7 +1,8 @@
 # collectionView(_:layout:sizeForItemAt:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for the size of the specified item.
 
@@ -13,6 +14,10 @@ Asks the delegate for the size of the specified item.
 ```swift
 @MainActor
 optional func collectionView(_ collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> NSSize
+```
+
+```objc
+- (NSSize) collectionView:(NSCollectionView *) collectionView layout:(NSCollectionViewLayout *) collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
 #### Return Value
@@ -33,9 +38,10 @@ The size value you return from this method must allow the item to be displayed f
 
 ## See Also
 
-- [var estimatedItemSize: NSSize](nscollectionviewflowlayout/estimateditemsize.md)
+### Related Documentation
+- [var estimatedItemSize: NSSize](../nscollectionviewflowlayout/estimateditemsize.md)
   The estimated size of items in the collection view.
-- [var itemSize: NSSize](nscollectionviewflowlayout/itemsize.md)
+- [var itemSize: NSSize](../nscollectionviewflowlayout/itemsize.md)
   The default size to use for items.
 
 

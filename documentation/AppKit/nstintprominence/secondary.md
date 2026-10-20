@@ -1,7 +1,8 @@
 # NSTintProminence.secondary
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 26.0+
@@ -10,6 +11,10 @@
 
 ```swift
 case secondary
+```
+
+```c
+NSTintProminenceSecondary
 ```
 
 

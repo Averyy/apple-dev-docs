@@ -1,7 +1,8 @@
 # any(keepRank:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes logical OR on elements across all dimensions of a tensor where the scalar type of the tensor is expected to be Boolean.
 
@@ -30,7 +31,8 @@ The reduced tensor.
 
 ## See Also
 
-- [func any(alongAxes:keepRank:)](mltensor/any(alongaxes:keeprank:).md)
+### Performing a logical OR operation
+- [func any(alongAxes:keepRank:)](./any%28alongaxes,keeprank%29.md)
   Computes logical OR on elements across the specified axes of a tensor where the scalar type of the tensor is expected to be Boolean.
 
 

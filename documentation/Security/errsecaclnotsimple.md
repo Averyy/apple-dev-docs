@@ -1,7 +1,8 @@
 # errSecACLNotSimple
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The access control list is not in standard simple form.
 
@@ -18,6 +19,10 @@ The access control list is not in standard simple form.
 
 ```swift
 var errSecACLNotSimple: OSStatus { get }
+```
+
+```c
+errSecACLNotSimple
 ```
 
 

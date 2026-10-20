@@ -1,12 +1,13 @@
 # url
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s URL.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The receiver’s URL.
 var url: URL! { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSURL * URL;
+```
+
 ## See Also
 
-- [var data: Data!](webresource/data.md)
+### Getting attributes
+- [var data: Data!](./data.md)
   The receiver’s data.
-- [var mimeType: String!](webresource/mimetype.md)
+- [var mimeType: String!](./mimetype.md)
   The receiver’s MIME type.
-- [var textEncodingName: String!](webresource/textencodingname.md)
+- [var textEncodingName: String!](./textencodingname.md)
   The receiver’s text encoding name.
-- [var frameName: String!](webresource/framename.md)
+- [var frameName: String!](./framename.md)
   The name of the frame. If the receiver does not represent the contents of an entire HTML frame, this is `nil`.
 
 

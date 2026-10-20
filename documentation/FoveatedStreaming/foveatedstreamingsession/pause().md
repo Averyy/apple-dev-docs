@@ -1,7 +1,8 @@
 # pause()
 
 **Framework**: Foveated Streaming  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Pauses a session without ending it.
 
@@ -17,11 +18,11 @@ final func pause() async throws
 
 #### Discussion
 
-> **Note**: A [`FoveatedStreamingSession.DisconnectReason`](foveatedstreamingsession/disconnectreason.md) error if a disconnection occurs.  Or, a [`CancellationError`](https://developer.apple.com/documentation/swift/cancellationerror) if the task is cancelled.
+> **Throws**: A [`FoveatedStreamingSession.DisconnectReason`](./disconnectreason.md) error if a disconnection occurs.  Or, a [`CancellationError`](../../Swift/cancellationerror.md) if the task is cancelled.
 
-When this function returns successfully without throwing an error the foveated streaming session’s [`status`](foveatedstreamingsession/status-swift.property.md) will equal [`FoveatedStreamingSession.Status.paused`](foveatedstreamingsession/status-swift.enum/paused.md).
+When this function returns successfully without throwing an error the foveated streaming session’s [`status`](./status-swift.property.md) will equal [`FoveatedStreamingSession.Status.paused`](./status-swift.enum/paused.md).
 
-You can resume the session by calling [`resume()`](foveatedstreamingsession/resume().md).
+You can resume the session by calling [`resume()`](./resume%28%29.md).
 
 
 ---

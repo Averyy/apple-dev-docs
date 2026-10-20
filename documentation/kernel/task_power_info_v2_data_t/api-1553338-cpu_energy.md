@@ -1,14 +1,15 @@
 # cpu_energy
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 task_power_info_data_t cpu_energy;
 ```
 

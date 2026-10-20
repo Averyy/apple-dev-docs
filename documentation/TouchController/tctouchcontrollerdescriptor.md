@@ -1,7 +1,8 @@
 # TCTouchControllerDescriptor
 
 **Framework**: Touch Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A descriptor for configuring a touch controller.
 
@@ -16,44 +17,49 @@ A descriptor for configuring a touch controller.
 class TCTouchControllerDescriptor
 ```
 
+```objc
+@interface TCTouchControllerDescriptor : NSObject
+```
+
 ## Topics
 
 ### Creating a touch controller descriptor
-- [init()](tctouchcontrollerdescriptor/init.md)
-- [convenience init(mtkView: MTKView)](tctouchcontrollerdescriptor/init(mtkview:)-7cs6u.md)
+- [init()](./tctouchcontrollerdescriptor/init%28%29.md)
+- [convenience init(mtkView: MTKView)](./tctouchcontrollerdescriptor/init%28mtkview%29-7cs6u.md)
 ### Inspecting the controller descriptor
-- [var colorPixelFormat: MTLPixelFormat](tctouchcontrollerdescriptor/colorpixelformat.md)
+- [var colorPixelFormat: MTLPixelFormat](./tctouchcontrollerdescriptor/colorpixelformat.md)
   The pixel format for the drawable texture.
-- [var depthAttachmentPixelFormat: MTLPixelFormat](tctouchcontrollerdescriptor/depthattachmentpixelformat.md)
+- [var depthAttachmentPixelFormat: MTLPixelFormat](./tctouchcontrollerdescriptor/depthattachmentpixelformat.md)
   The pixel format for the depth attachment.
-- [var device: any MTLDevice](tctouchcontrollerdescriptor/device.md)
+- [var device: any MTLDevice](./tctouchcontrollerdescriptor/device.md)
   The Metal device to use for rendering.
-- [var drawableSize: CGSize](tctouchcontrollerdescriptor/drawablesize.md)
+- [var drawableSize: CGSize](./tctouchcontrollerdescriptor/drawablesize.md)
   The size of the drawable to which the touch controller’s contents be drawn, in native pixels.
-- [var sampleCount: Int](tctouchcontrollerdescriptor/samplecount.md)
+- [var sampleCount: Int](./tctouchcontrollerdescriptor/samplecount.md)
   The number of samples per pixel for multisampling.
-- [var size: CGSize](tctouchcontrollerdescriptor/size.md)
+- [var size: CGSize](./tctouchcontrollerdescriptor/size.md)
   The size of the view the touch controller’s drawable is embedded in, in points.
-- [var stencilAttachmentPixelFormat: MTLPixelFormat](tctouchcontrollerdescriptor/stencilattachmentpixelformat.md)
+- [var stencilAttachmentPixelFormat: MTLPixelFormat](./tctouchcontrollerdescriptor/stencilattachmentpixelformat.md)
   The pixel format for the stencil attachment.
 ### Initializers
-- [convenience init(MTKView: MTKView)](tctouchcontrollerdescriptor/init(mtkview:)-25g2c.md)
+- [convenience init(MTKView: MTKView)](./tctouchcontrollerdescriptor/init%28mtkview%29-25g2c.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [init(descriptor: TCTouchControllerDescriptor)](tctouchcontroller/init(descriptor:).md)
+### Creating a touch controller
+- [init(descriptor: TCTouchControllerDescriptor)](./tctouchcontroller/init%28descriptor%29.md)
   Creates a new instance with the provided descriptor.
 
 

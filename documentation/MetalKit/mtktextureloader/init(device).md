@@ -1,7 +1,8 @@
 # init(device:)
 
 **Framework**: MetalKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new texture loader object.
 
@@ -19,6 +20,10 @@ Initializes a new texture loader object.
 init(device: any MTLDevice)
 ```
 
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device;
+```
+
 #### Return Value
 
 An initialized texture loader object.
@@ -29,7 +34,8 @@ An initialized texture loader object.
 
 ## See Also
 
-- [var device: any MTLDevice](mtktextureloader/device.md)
+### Creating a Texture Loader
+- [var device: any MTLDevice](./device.md)
   The device object that the texture loader uses to create textures.
 
 

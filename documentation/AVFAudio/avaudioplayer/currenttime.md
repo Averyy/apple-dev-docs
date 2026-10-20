@@ -1,7 +1,8 @@
 # currentTime
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current playback time, in seconds, within the audio timeline.
 
@@ -20,15 +21,20 @@ The current playback time, in seconds, within the audio timeline.
 var currentTime: TimeInterval { get set }
 ```
 
+```objc
+@property NSTimeInterval currentTime;
+```
+
 #### Discussion
 
-If the sound is playing, this property value is the offset, in seconds, from the start of the sound. If the sound isn’t playing, this property indicates the offset from where playback starts upon calling the [`play()`](avaudioplayer/play().md) method.
+If the sound is playing, this property value is the offset, in seconds, from the start of the sound. If the sound isn’t playing, this property indicates the offset from where playback starts upon calling the [`play()`](./play%28%29.md) method.
 
 Use this property to seek to a specific time in the audio data or to implement audio fast-forward and rewind functions.
 
 ## See Also
 
-- [var duration: TimeInterval](avaudioplayer/duration.md)
+### Accessing player timing
+- [var duration: TimeInterval](./duration.md)
   The total duration, in seconds, of the player’s audio.
 
 

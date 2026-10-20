@@ -1,7 +1,8 @@
 # LoginItemsManagedItems
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures a device’s login items.
 
@@ -10,7 +11,7 @@ The payload that configures a device’s login items.
 
 ## Declaration
 
-```swift
+```
 object LoginItemsManagedItems
 ```
 
@@ -18,7 +19,7 @@ object LoginItemsManagedItems
 
 Specify `com.apple.loginitems.managed` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.loginitems.managed` as the payload type.
 | Allowed in user enrollment | macOS |
 | Allow multiple payloads | macOS |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -76,7 +77,7 @@ Specify `com.apple.loginitems.managed` as the payload type.
 ## Topics
 
 ### Objects
-- [object LoginItemsManagedItems.LoginItem](loginitemsmanageditems/loginitem.md)
+- [object LoginItemsManagedItems.LoginItem](./loginitemsmanageditems/loginitem.md)
   A dictionary with the details about a login item.
 
 ## Properties
@@ -85,13 +86,14 @@ Specify `com.apple.loginitems.managed` as the payload type.
 
 ## See Also
 
-- [object LoginWindowLoginItems](loginwindowloginitems.md)
+### Login
+- [object LoginWindowLoginItems](./loginwindowloginitems.md)
   The payload that configures login behavior.
-- [object LoginWindow](loginwindow.md)
+- [object LoginWindow](./loginwindow.md)
   The payload that configures Login Window behavior.
-- [object LoginWindowScripts](loginwindowscripts.md)
+- [object LoginWindowScripts](./loginwindowscripts.md)
   The payload that configures scripts to run at login and logout.
-- [object ServiceManagementManagedLoginItems](servicemanagementmanagedloginitems.md)
+- [object ServiceManagementManagedLoginItems](./servicemanagementmanagedloginitems.md)
   This payload that configures managed login items, which auto-enables and auto-allows matched items.
 
 

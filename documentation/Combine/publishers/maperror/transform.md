@@ -1,7 +1,8 @@
 # transform
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The closure that converts the upstream failure into a new error.
 
@@ -22,7 +23,8 @@ let transform: (Upstream.Failure) -> Failure
 
 ## See Also
 
-- [let upstream: Upstream](publishers/maperror/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives elements.
 
 

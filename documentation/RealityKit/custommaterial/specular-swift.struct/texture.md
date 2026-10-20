@@ -1,7 +1,8 @@
 # texture
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The specular value as a UV-mapped image texture.
 
@@ -20,7 +21,8 @@ var texture: CustomMaterial.Texture?
 
 ## See Also
 
-- [var scale: Float](custommaterial/specular-swift.struct/scale.md)
+### Accessing specular values
+- [var scale: Float](./scale.md)
   The specular value for the entire entity or a multiplier for values sampled from the material’s texture.
 
 

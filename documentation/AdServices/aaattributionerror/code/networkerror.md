@@ -1,7 +1,8 @@
 # AAAttributionError.Code.networkError
 
 **Framework**: AdServices  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The server is unable to provide a token because the internet isn’t available.
 
@@ -18,15 +19,20 @@ The server is unable to provide a token because the internet isn’t available.
 case networkError
 ```
 
+```c
+AAAttributionErrorCodeNetworkError
+```
+
 #### Discussion
 
 To receive an attribution token, you must have unimpeded internet access. Make sure you’re not using a simulator when generating a token.
 
 ## See Also
 
-- [AAAttributionError.Code.internalError](aaattributionerror/code/internalerror.md)
+### Determining the cause of an error
+- [AAAttributionError.Code.internalError](./internalerror.md)
   The server is unable to provide a token because of an internal error.
-- [AAAttributionError.Code.platformNotSupported](aaattributionerror/code/platformnotsupported.md)
+- [AAAttributionError.Code.platformNotSupported](./platformnotsupported.md)
   The server is unable to provide a token because of an unsupported operating system.
 
 

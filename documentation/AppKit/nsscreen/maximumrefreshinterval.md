@@ -1,7 +1,8 @@
 # maximumRefreshInterval
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The largest refresh interval that the screen supports.
 
@@ -14,19 +15,24 @@ The largest refresh interval that the screen supports.
 var maximumRefreshInterval: TimeInterval { get }
 ```
 
+```objc
+@property (readonly) NSTimeInterval maximumRefreshInterval;
+```
+
 #### Discussion
 
 This interval represents the maximum amount of time (in seconds) your app has to generate new frames. It corresponds to the lowest refresh rate of the display.
 
 ## See Also
 
-- [var maximumFramesPerSecond: Int](nsscreen/maximumframespersecond.md)
+### Getting Variable Refresh Rate Details
+- [var maximumFramesPerSecond: Int](./maximumframespersecond.md)
   The maximum number of frames per second that the screen supports.
-- [var minimumRefreshInterval: TimeInterval](nsscreen/minimumrefreshinterval.md)
+- [var minimumRefreshInterval: TimeInterval](./minimumrefreshinterval.md)
   The shortest refresh interval that the screen supports.
-- [var displayUpdateGranularity: TimeInterval](nsscreen/displayupdategranularity.md)
+- [var displayUpdateGranularity: TimeInterval](./displayupdategranularity.md)
   The number of seconds between the screen’s supported update rates, for screens that support fixed update rates.
-- [var lastDisplayUpdateTimestamp: TimeInterval](nsscreen/lastdisplayupdatetimestamp.md)
+- [var lastDisplayUpdateTimestamp: TimeInterval](./lastdisplayupdatetimestamp.md)
   The time of the last framebuffer update, expressed as the number of seconds since system startup.
 
 

@@ -1,7 +1,8 @@
 # error
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The error that occurred when attempting to load a model, if any.
 
@@ -16,7 +17,8 @@ var error: (any Error)? { get }
 
 ## See Also
 
-- [var model: ResolvedModel3D?](model3dphase/model.md)
+### Accessing the model
+- [var model: ResolvedModel3D?](./model.md)
   The loaded model, if any.
 
 

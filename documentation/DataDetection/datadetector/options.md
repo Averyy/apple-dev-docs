@@ -1,7 +1,8 @@
 # DataDetector.Options
 
 **Framework**: DataDetection  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of options you can use to refine the behavior of text scanning, and better interpret the semantic domain of the matches.
 
@@ -32,35 +33,36 @@ These properties are only hints, so it’s best to not make assumptions about ho
 ## Topics
 
 ### Hints you can provide to add more context for the matching process
-- [var documentDate: Date?](datadetector/options/documentdate.md)
+- [var documentDate: Date?](./options/documentdate.md)
   The creation date of the scanned string.
-- [var documentLanguageCode: Locale.LanguageCode?](datadetector/options/documentlanguagecode.md)
+- [var documentLanguageCode: Locale.LanguageCode?](./options/documentlanguagecode.md)
   An optional value that represents the language code of a specific locale.
-- [var documentRegion: Locale.Region?](datadetector/options/documentregion.md)
+- [var documentRegion: Locale.Region?](./options/documentregion.md)
   A locale region that’s relevant to the scanned string.
-- [var documentTimeZone: TimeZone?](datadetector/options/documenttimezone.md)
+- [var documentTimeZone: TimeZone?](./options/documenttimezone.md)
   A date that represents the date of the scanned string.
 ### Initializers
-- [init()](datadetector/options/init.md)
+- [init()](./options/init%28%29.md)
   Initializes a new data detector.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [DataDetector.Match](datadetector/match.md)
+### Structures
+- [DataDetector.Match](./match.md)
   A representation of a match that includes common properties and an enumeration that represents the match type and its specific semantic components.
-- [DataDetector.MatchType](datadetector/matchtype.md)
+- [DataDetector.MatchType](./matchtype.md)
   A set of types of matches that the system can find in a string.
 
 

@@ -1,7 +1,8 @@
 # attributes
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attributes for a property state.
 
@@ -15,9 +16,14 @@ The attributes for a property state.
 var attributes: CMIOExtensionPropertyAttributes<ObjectType>? { get }
 ```
 
+```objc
+@property (atomic, strong, readonly, nullable) CMIOExtensionPropertyAttributes<id> * attributes;
+```
+
 ## See Also
 
-- [var value: ObjectType?](cmioextensionpropertystate/value.md)
+### Inspecting a Property State
+- [var value: ObjectType?](./value.md)
   The value for a property state.
 
 

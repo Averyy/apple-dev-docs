@@ -1,7 +1,8 @@
 # kIOUSB30LinkStateSSResumeDeadline
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The SuperSpeed resume deadline.
 
@@ -10,7 +11,7 @@ The SuperSpeed resume deadline.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30LinkStateSSResumeDeadline = (kIOUSB30LinkStateU3WakeupRetryDelay /* accomodation for retimer */ + kIOUSB30LinkStateU3NoLFPSResponseTimeout + kIOUSB30LinkStateRecoveryActiveTimeout + kIOUSB30LinkStateRecoveryConfigurationTimeout + kIOUSB30LinkStateRecoveryIdleTimeout)
 ```
 

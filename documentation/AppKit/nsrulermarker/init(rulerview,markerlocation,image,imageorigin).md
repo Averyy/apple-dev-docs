@@ -1,17 +1,22 @@
 # init(rulerView:markerLocation:image:imageOrigin:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly allocated ruler marker, associating it with (but not adding it to) a specified ruler view and assigning the attributes provided.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init(rulerView ruler: NSRulerView, markerLocation location: CGFloat, image: NSImage, imageOrigin: NSPoint)
+```
+
+```objc
+- (instancetype) initWithRulerView:(NSRulerView *) ruler markerLocation:(CGFloat) location image:(NSImage *) image imageOrigin:(NSPoint) imageOrigin;
 ```
 
 #### Return Value
@@ -22,9 +27,9 @@ An initialized ruler marker object.
 
 The image used to draw the marker must be appropriate for the orientation of the ruler. Markers may need to look different on a horizontal ruler than on a vertical ruler, and the ruler view neither scales nor rotates the images.
 
-To add the new ruler marker to `aRulerView`, use either of NSRulerView’s [`addMarker(_:)`](nsrulerview/addmarker(_:).md) or [`trackMarker(_:withMouseEvent:)`](nsrulerview/trackmarker(_:withmouseevent:).md) methods. [`addMarker(_:)`](nsrulerview/addmarker(_:).md) immediately puts the marker on the ruler, while [`trackMarker(_:withMouseEvent:)`](nsrulerview/trackmarker(_:withmouseevent:).md) allows the client view to intercede in the addition and placement of the marker.
+To add the new ruler marker to `aRulerView`, use either of NSRulerView’s [`addMarker(_:)`](../nsrulerview/addmarker%28_%29.md) or [`trackMarker(_:withMouseEvent:)`](../nsrulerview/trackmarker%28_,withmouseevent%29.md) methods. [`addMarker(_:)`](../nsrulerview/addmarker%28_%29.md) immediately puts the marker on the ruler, while [`trackMarker(_:withMouseEvent:)`](../nsrulerview/trackmarker%28_,withmouseevent%29.md) allows the client view to intercede in the addition and placement of the marker.
 
-A new ruler marker can be moved on its ruler view, but not removed. Use [`isMovable`](nsrulermarker/ismovable.md) and [`isRemovable`](nsrulermarker/isremovable.md) to change these attributes. The new ruler marker also has no represented object; use [`representedObject`](nsrulermarker/representedobject.md) to set one.
+A new ruler marker can be moved on its ruler view, but not removed. Use [`isMovable`](./ismovable.md) and [`isRemovable`](./isremovable.md) to change these attributes. The new ruler marker also has no represented object; use [`representedObject`](./representedobject.md) to set one.
 
 This method is the designated initializer for the NSRulerMarker class.
 
@@ -37,12 +42,13 @@ This method is the designated initializer for the NSRulerMarker class.
 
 ## See Also
 
-- [var image: NSImage](nsrulermarker/image.md)
+### Related Documentation
+- [var image: NSImage](./image.md)
   The receiver’s image.
-- [Ruler and Paragraph Style Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Rulers/Rulers.html#//apple_ref/doc/uid/10000089i)
-- [var markerLocation: CGFloat](nsrulermarker/markerlocation.md)
+- [Ruler and Paragraph Style Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Rulers/Rulers.html#//apple_ref/doc/uid/10000089i)
+- [var markerLocation: CGFloat](./markerlocation.md)
   The location of the receiver in the coordinate system of the ruler view’s client view.
-- [var imageOrigin: NSPoint](nsrulermarker/imageorigin.md)
+- [var imageOrigin: NSPoint](./imageorigin.md)
   The point in the receiver’s image that is positioned at the receiver’s location on the ruler view.
 
 

@@ -1,7 +1,8 @@
 # EPROTOTYPE
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Protocol wrong type for socket.
 

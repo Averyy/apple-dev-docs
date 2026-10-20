@@ -1,7 +1,8 @@
 # contextualStrings
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of phrases that should be recognized, even if they are not in the system vocabulary.
 
@@ -18,6 +19,10 @@ An array of phrases that should be recognized, even if they are not in the syste
 var contextualStrings: [String] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<NSString *> * contextualStrings;
+```
+
 #### Discussion
 
 Use this property to specify short custom phrases that are unique to your app. You might include phrases with the names of characters, products, or places that are specific to your app. You might also include domain-specific terminology or unusual or made-up words. Assigning custom phrases to this property improves the likelihood of those phrases being recognized.
@@ -28,9 +33,10 @@ Limit the total number of phrases to no more than 100.
 
 ## See Also
 
-- [var requiresOnDeviceRecognition: Bool](sfspeechrecognitionrequest/requiresondevicerecognition.md)
+### Configuring a recognition request
+- [var requiresOnDeviceRecognition: Bool](./requiresondevicerecognition.md)
   A Boolean value that determines whether a request must keep its audio data on the device.
-- [var shouldReportPartialResults: Bool](sfspeechrecognitionrequest/shouldreportpartialresults.md)
+- [var shouldReportPartialResults: Bool](./shouldreportpartialresults.md)
   A Boolean value that indicates whether you want intermediate results returned for each utterance.
 
 

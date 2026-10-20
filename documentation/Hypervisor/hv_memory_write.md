@@ -1,12 +1,13 @@
 # HV_MEMORY_WRITE
 
 **Framework**: Hypervisor  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The value that represents the memory-write permission.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ The value that represents the memory-write permission.
 var HV_MEMORY_WRITE: Int { get }
 ```
 
+```c
+HV_MEMORY_WRITE
+```
+
 ## See Also
 
-- [var HV_MEMORY_READ: Int](hv_memory_read.md)
+### Permissions
+- [var HV_MEMORY_READ: Int](./hv_memory_read.md)
   The value that represents the memory-read permission.
-- [var HV_MEMORY_EXEC: Int](hv_memory_exec.md)
+- [var HV_MEMORY_EXEC: Int](./hv_memory_exec.md)
   The value that represents the memory-execute permission.
 
 

@@ -1,7 +1,8 @@
 # maxPublishers
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of concurrent publisher subscriptions
 
@@ -22,9 +23,10 @@ let maxPublishers: Subscribers.Demand
 
 ## See Also
 
-- [let upstream: Upstream](publishers/flatmap/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives elements.
-- [let transform: (Upstream.Output) -> NewPublisher](publishers/flatmap/transform.md)
+- [let transform: (Upstream.Output) -> NewPublisher](./transform.md)
   A closure that takes an element as a parameter and returns a publisher that produces elements of that type.
 
 

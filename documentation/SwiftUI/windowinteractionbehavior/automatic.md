@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The automatic behavior. The associated window behavior will be enabled or disabled depending on the configuration of the enclosing `Scene`.
 

@@ -1,7 +1,8 @@
 # presentationType
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An optional key in the options dictionary that specifies the presentation type of the definition display.
 
@@ -14,9 +15,13 @@ An optional key in the options dictionary that specifies the presentation type o
 static let presentationType: NSView.DefinitionOptionKey
 ```
 
+```c
+extern NSDefinitionOptionKey const NSDefinitionPresentationTypeKey;
+```
+
 #### Discussion
 
-The value of this key is one of the constants in [`NSView.DefinitionPresentationType`](nsview/definitionpresentationtype.md).
+The value of this key is one of the constants in [`NSView.DefinitionPresentationType`](../definitionpresentationtype.md).
 
 
 ---

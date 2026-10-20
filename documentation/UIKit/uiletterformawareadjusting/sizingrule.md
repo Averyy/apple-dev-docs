@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The typographic bounds-sizing behavior that handles text with fonts that contain oversize characters.
@@ -19,21 +20,26 @@ The typographic bounds-sizing behavior that handles text with fonts that contain
 var sizingRule: UILetterformAwareSizingRule { get set }
 ```
 
+```objc
+@property (nonatomic) UILetterformAwareSizingRule sizingRule;
+```
+
 #### Discussion
 
-For more information on sizing behaviors, see [`UILetterformAwareAdjusting`](uiletterformawareadjusting.md).
+For more information on sizing behaviors, see [`UILetterformAwareAdjusting`](../uiletterformawareadjusting.md).
 
 ## See Also
 
-- [var adjustsFontSizeToFitWidth: Bool](uilabel/adjustsfontsizetofitwidth.md)
+### Sizing the label’s text
+- [var adjustsFontSizeToFitWidth: Bool](../uilabel/adjustsfontsizetofitwidth.md)
   A Boolean value that determines whether the label reduces the text’s font size to fit the title string into the label’s bounding rectangle.
-- [var allowsDefaultTighteningForTruncation: Bool](uilabel/allowsdefaulttighteningfortruncation.md)
+- [var allowsDefaultTighteningForTruncation: Bool](../uilabel/allowsdefaulttighteningfortruncation.md)
   A Boolean value that determines whether the label tightens text before truncating.
-- [var baselineAdjustment: UIBaselineAdjustment](uilabel/baselineadjustment.md)
+- [var baselineAdjustment: UIBaselineAdjustment](../uilabel/baselineadjustment.md)
   An option that controls whether the text’s baseline remains fixed when text needs to shrink to fit in the label.
-- [var minimumScaleFactor: CGFloat](uilabel/minimumscalefactor.md)
+- [var minimumScaleFactor: CGFloat](../uilabel/minimumscalefactor.md)
   The minimum scale factor for the label’s text.
-- [var numberOfLines: Int](uilabel/numberoflines.md)
+- [var numberOfLines: Int](../uilabel/numberoflines.md)
   The maximum number of lines for rendering text.
 
 

@@ -1,6 +1,7 @@
 # Testing asynchronous code
 
-**Framework**: Swift Testing
+**Framework**: Swift Testing  
+**Role**: Article
 
 Validate whether your code causes expected events to happen.
 
@@ -15,11 +16,11 @@ The testing library integrates with Swift concurrency, meaning that in many situ
 }
 ```
 
-In more complex situations you can use [`Confirmation`](confirmation.md) to discover whether an expected event happens.
+In more complex situations you can use [`Confirmation`](./confirmation.md) to discover whether an expected event happens.
 
-##### Confirm That an Event Happens
+##### Confirm that an event happens
 
-Call [`confirmation(_:expectedCount:isolation:sourceLocation:_:)`](confirmation(_:expectedcount:isolation:sourcelocation:_:)-5mqz2.md) in your asynchronous test function to create a `Confirmation` for the expected event. In the trailing closure parameter, call the code under test. Swift Testing passes a `Confirmation` as the parameter to the closure, which you call as a function in the event handler for the code under test when the event you’re testing for occurs:
+Call [`confirmation(_:expectedCount:isolation:sourceLocation:_:)`](./confirmation%28_,expectedcount,isolation,sourcelocation,_%29-5mqz2.md) in your asynchronous test function to create a `Confirmation` for the expected event. In the trailing closure parameter, call the code under test. Swift Testing passes a `Confirmation` as the parameter to the closure, which you call as a function in the event handler for the code under test when the event you’re testing for occurs:
 
 ```swift
 @Test("OrderCalculator successfully calculates subtotal for no pizzas")
@@ -34,7 +35,7 @@ func subtotalForNoPizzas() async {
 
 If you expect the event to happen more than once, set the `expectedCount` parameter to the number of expected occurrences. The test passes if the number of occurrences during the test matches the expected count, and fails otherwise.
 
-You can also pass a range to [`confirmation(_:expectedCount:isolation:sourceLocation:_:)`](confirmation(_:expectedcount:isolation:sourcelocation:_:)-l3il.md) if the exact number of times the event occurs may change over time or is random:
+You can also pass a range to [`confirmation(_:expectedCount:isolation:sourceLocation:_:)`](./confirmation%28_,expectedcount,isolation,sourcelocation,_%29-l3il.md) if the exact number of times the event occurs may change over time or is random:
 
 ```swift
 @Test("Customers bought sandwiches")
@@ -51,7 +52,7 @@ func boughtSandwiches() async {
 }
 ```
 
-In this example, there may be zero customers or up to (but not including) 1,000 customers who order sandwiches. Any [`range expression`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/rangeexpression) which includes an explicit lower bound can be used:
+In this example, there may be zero customers or up to (but not including) 1,000 customers who order sandwiches. Any [range expression](../Swift/rangeexpression.md) which includes an explicit lower bound can be used:
 
 | Range Expression | Usage |
 | --- | --- |
@@ -60,7 +61,7 @@ In this example, there may be zero customers or up to (but not including) 1,000 
 | `1 ... 5` | If an event must occur at least once, but not more than five times |
 | `0 ..< 100` | If an event may or may not occur, but *must not* occur more than 99 times |
 
-##### Confirm That an Event Doesnt Happen
+##### Confirm that an event doesn’t happen
 
 To validate that a particular event doesn’t occur during a test, create a `Confirmation` with an expected count of `0`:
 
@@ -76,11 +77,12 @@ To validate that a particular event doesn’t occur during a test, create a `Con
 
 ## See Also
 
-- [func confirmation<R>(Comment?, expectedCount: Int, isolation: isolated (any Actor)?, sourceLocation: SourceLocation, (Confirmation) async throws -> sending R) async rethrows -> R](confirmation(_:expectedcount:isolation:sourcelocation:_:)-5mqz2.md)
+### Confirming that asynchronous events occur
+- [func confirmation<R>(Comment?, expectedCount: Int, isolation: isolated (any Actor)?, sourceLocation: SourceLocation, (Confirmation) async throws -> sending R) async rethrows -> R](./confirmation%28_,expectedcount,isolation,sourcelocation,_%29-5mqz2.md)
   Confirm that some event occurs during the invocation of a function.
-- [func confirmation<R>(Comment?, expectedCount: some RangeExpression<Int> & Sendable & Sequence<Int>, isolation: isolated (any Actor)?, sourceLocation: SourceLocation, (Confirmation) async throws -> sending R) async rethrows -> R](confirmation(_:expectedcount:isolation:sourcelocation:_:)-l3il.md)
+- [func confirmation<R>(Comment?, expectedCount: some RangeExpression<Int> & Sendable & Sequence<Int>, isolation: isolated (any Actor)?, sourceLocation: SourceLocation, (Confirmation) async throws -> sending R) async rethrows -> R](./confirmation%28_,expectedcount,isolation,sourcelocation,_%29-l3il.md)
   Confirm that some event occurs during the invocation of a function.
-- [struct Confirmation](confirmation.md)
+- [struct Confirmation](./confirmation.md)
   A type that can be used to confirm that an event occurs zero or more times.
 
 

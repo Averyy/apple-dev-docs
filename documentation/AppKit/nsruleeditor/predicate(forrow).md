@@ -1,17 +1,22 @@
 # predicate(forRow:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the predicate for a given row.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func predicate(forRow row: Int) -> NSPredicate?
+```
+
+```objc
+- (NSPredicate *) predicateForRow:(NSInteger) row;
 ```
 
 #### Return Value
@@ -28,9 +33,10 @@ You should rarely have a need to call this directly, but you can override this m
 
 ## See Also
 
-- [var predicate: NSPredicate?](nsruleeditor/predicate.md)
+### Working with Predicates
+- [var predicate: NSPredicate?](./predicate.md)
   The rule editor’s predicate.
-- [func reloadPredicate()](nsruleeditor/reloadpredicate.md)
+- [func reloadPredicate()](./reloadpredicate%28%29.md)
   Instructs the receiver to regenerate its predicate by invoking the corresponding delegate method.
 
 

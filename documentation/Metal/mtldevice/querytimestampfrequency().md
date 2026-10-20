@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Queries the frequency of the GPU timestamp in ticks per second.
@@ -18,6 +19,10 @@ Queries the frequency of the GPU timestamp in ticks per second.
 
 ```swift
 func queryTimestampFrequency() -> UInt64
+```
+
+```objc
+- (uint64_t) queryTimestampFrequency;
 ```
 
 #### Return Value

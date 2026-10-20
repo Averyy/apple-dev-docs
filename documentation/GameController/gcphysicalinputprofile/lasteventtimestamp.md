@@ -1,7 +1,8 @@
 # lastEventTimestamp
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time of the most recent change to an element’s value.
 
@@ -19,9 +20,14 @@ The time of the most recent change to an element’s value.
 var lastEventTimestamp: TimeInterval { get }
 ```
 
+```objc
+@property (atomic, readonly) NSTimeInterval lastEventTimestamp;
+```
+
 ## See Also
 
-- [var valueDidChangeHandler: ((GCPhysicalInputProfile, GCControllerElement) -> Void)?](gcphysicalinputprofile/valuedidchangehandler.md)
+### Getting change information
+- [var valueDidChangeHandler: ((GCPhysicalInputProfile, GCControllerElement) -> Void)?](./valuedidchangehandler.md)
   The block that the profile calls when an element’s value changes.
 
 

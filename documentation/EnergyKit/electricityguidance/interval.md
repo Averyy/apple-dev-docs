@@ -1,14 +1,15 @@
 # interval
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time range to which the guidance applies.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,9 +19,10 @@ let interval: DateInterval
 
 ## See Also
 
-- [let energyVenueID: UUID](electricityguidance/energyvenueid.md)
+### Identifying the guidance parameters
+- [let energyVenueID: UUID](./energyvenueid.md)
   An identifier for the physical location to which the guidance applies.
-- [let guidanceToken: UUID](electricityguidance/guidancetoken.md)
+- [let guidanceToken: UUID](./guidancetoken.md)
   A unique token for the guidance that you use to create an electrical load event.
 
 

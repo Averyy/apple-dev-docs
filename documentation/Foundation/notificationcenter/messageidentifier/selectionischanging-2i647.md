@@ -1,7 +1,8 @@
 # selectionIsChanging
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var selectionIsChanging: NotificationCenter.BaseMessageIdentifier<NSComboBox.SelectionIsChangingMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSComboBox.SelectionIsChangingMessage>`.
 
 
 ---

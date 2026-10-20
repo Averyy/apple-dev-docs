@@ -1,7 +1,8 @@
 # generateKey
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 9.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 Promise <any> generateKey(
     AlgorithmIdentifier algorithm, 
     boolean extractable, 

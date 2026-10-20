@@ -1,17 +1,18 @@
 # AVAudioSession.IOType.aggregated
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An I/O type that indicates if audio input and output should be presented in the same realtime I/O callback.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,15 +20,20 @@ An I/O type that indicates if audio input and output should be presented in the 
 case aggregated
 ```
 
+```c
+AVAudioSessionIOTypeAggregated
+```
+
 #### Discussion
 
-Use this value if your session uses [`playAndRecord`](avaudiosession/category-swift.struct/playandrecord.md) and requires input and output audio to be presented in the same realtime I/O callback. For example, if your app uses a Remote I/O with both input and output enabled.
+Use this value if your session uses [`playAndRecord`](../category-swift.struct/playandrecord.md) and requires input and output audio to be presented in the same realtime I/O callback. For example, if your app uses a Remote I/O with both input and output enabled.
 
-An audio session’s preference to use aggregated I/O won’t be honored if it specifies the [`mixWithOthers`](avaudiosession/categoryoptions-swift.struct/mixwithothers.md) option and another app’s audio session was already active with nonmixable, nonaggregated I/O.
+An audio session’s preference to use aggregated I/O won’t be honored if it specifies the [`mixWithOthers`](../categoryoptions-swift.struct/mixwithothers.md) option and another app’s audio session was already active with nonmixable, nonaggregated I/O.
 
 ## See Also
 
-- [AVAudioSession.IOType.notSpecified](avaudiosession/iotype/notspecified.md)
+### Choosing an I/O type
+- [AVAudioSession.IOType.notSpecified](./notspecified.md)
   The default audio session I/O type.
 
 

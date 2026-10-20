@@ -1,7 +1,8 @@
 # subjectAreaDidChangeNotification
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification the system posts when a capture device detects a substantial change to the video subject area.
 
@@ -17,31 +18,36 @@ A notification the system posts when a capture device detects a substantial chan
 class let subjectAreaDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const AVCaptureDeviceSubjectAreaDidChangeNotification;
+```
+
 #### Discussion
 
-The system posts this notification only if the device’s [`isSubjectAreaChangeMonitoringEnabled`](avcapturedevice/issubjectareachangemonitoringenabled.md) property value is [`true`](https://developer.apple.com/documentation/swift/true).
+The system posts this notification only if the device’s [`isSubjectAreaChangeMonitoringEnabled`](./issubjectareachangemonitoringenabled.md) property value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [func lockForConfiguration() throws](avcapturedevice/lockforconfiguration.md)
+### Configuring camera hardware
+- [func lockForConfiguration() throws](./lockforconfiguration%28%29.md)
   Requests exclusive access to configure device hardware properties.
-- [func unlockForConfiguration()](avcapturedevice/unlockforconfiguration.md)
+- [func unlockForConfiguration()](./unlockforconfiguration%28%29.md)
   Releases exclusive control over device hardware properties.
-- [var isSubjectAreaChangeMonitoringEnabled: Bool](avcapturedevice/issubjectareachangemonitoringenabled.md)
+- [var isSubjectAreaChangeMonitoringEnabled: Bool](./issubjectareachangemonitoringenabled.md)
   A Boolean value that indicates whether the device monitors the subject area for changes.
-- [Formats](capture-device-formats.md)
+- [Formats](../capture-device-formats.md)
   Configure capture formats and camera frame rates.
-- [Focus](capture-device-focus.md)
+- [Focus](../capture-device-focus.md)
   Configure the automatic focus behavior of a camera, or manually set its lens position.
-- [Exposure](capture-device-exposure.md)
+- [Exposure](../capture-device-exposure.md)
   Configure the automatic exposure behavior of a camera, or manually control its exposure settings.
-- [White balance](capture-device-white-balance.md)
+- [White balance](../capture-device-white-balance.md)
   Configure the automatic white balance behavior of a camera, or manually control white balance settings.
-- [Lighting](capture-device-lighting.md)
+- [Lighting](../capture-device-lighting.md)
   Configure the device flash, torch, and low light settings.
-- [Color](capture-device-color.md)
+- [Color](../capture-device-color.md)
   Manage HDR and color space settings for a device.
-- [Zoom](capture-device-zoom.md)
+- [Zoom](../capture-device-zoom.md)
   Configure device zooming behavior and inspect hardware capabilities.
 
 

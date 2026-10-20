@@ -1,7 +1,8 @@
 # init(kilowattHours:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates additional route information for battery energy in kilowatt-hours.
 
@@ -14,6 +15,10 @@ Creates additional route information for battery energy in kilowatt-hours.
 
 ```swift
 convenience init(kilowattHours: Measurement<UnitEnergy>)
+```
+
+```objc
++ (instancetype) routeDetailWithKilowattHours:(NSMeasurement<NSUnitEnergy *> *) kilowattHours;
 ```
 
 #### Return Value

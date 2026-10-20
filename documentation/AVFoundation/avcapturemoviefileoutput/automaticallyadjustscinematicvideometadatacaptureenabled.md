@@ -1,7 +1,8 @@
 # automaticallyAdjustsCinematicVideoMetadataCaptureEnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls whether cinematic video metadata capture is automatically managed by the framework.
 
@@ -16,6 +17,10 @@ Controls whether cinematic video metadata capture is automatically managed by th
 
 ```swift
 var automaticallyAdjustsCinematicVideoMetadataCaptureEnabled: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL automaticallyAdjustsCinematicVideoMetadataCaptureEnabled;
 ```
 
 #### Discussion

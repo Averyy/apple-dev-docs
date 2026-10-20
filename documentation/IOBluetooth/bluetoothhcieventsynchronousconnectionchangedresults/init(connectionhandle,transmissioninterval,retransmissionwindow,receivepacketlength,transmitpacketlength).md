@@ -1,10 +1,11 @@
 # init(connectionHandle:transmissionInterval:retransmissionWindow:receivePacketLength:transmitPacketLength:)
 
 **Framework**: IOBluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

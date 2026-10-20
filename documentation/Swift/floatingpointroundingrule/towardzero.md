@@ -1,7 +1,8 @@
 # FloatingPointRoundingRule.towardZero
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Round to the closest allowed value whose magnitude is less than or equal to that of the source.
 
@@ -35,7 +36,7 @@ The following example shows the results of rounding numbers using this rule:
 // -5.0
 ```
 
-This rule is equivalent to the C `trunc` function and implements the `roundToIntegralTowardZero` operation defined by the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
+This rule is equivalent to the C `trunc` function and implements the `roundToIntegralTowardZero` operation defined by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 
 
 ---

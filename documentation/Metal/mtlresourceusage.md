@@ -1,7 +1,8 @@
 # MTLResourceUsage
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that describe how a graphics or compute function uses an argument buffer’s resource.
 
@@ -19,50 +20,55 @@ Options that describe how a graphics or compute function uses an argument buffer
 struct MTLResourceUsage
 ```
 
+```c
+enum MTLResourceUsage : NSUInteger;
+```
+
 ## Mentions
 
-- [Tracking the resource residency of argument buffers](tracking-the-resource-residency-of-argument-buffers.md)
+- [Tracking the resource residency of argument buffers](./tracking-the-resource-residency-of-argument-buffers.md)
 
 #### Overview
 
-You can combine multiple [`MTLResourceUsage`](mtlresourceusage.md) values with a bitwise OR (`|`) if the resource serves multiple purposes over its lifetime. You can enable options for certain resources that indicate whether the Metal driver needs to convert the resource to another format, such as whether it needs to decompress a color render target.
+You can combine multiple [`MTLResourceUsage`](./mtlresourceusage.md) values with a bitwise OR (`|`) if the resource serves multiple purposes over its lifetime. You can enable options for certain resources that indicate whether the Metal driver needs to convert the resource to another format, such as whether it needs to decompress a color render target.
 
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](mtlresourceusage/init(rawvalue:).md)
+- [init(rawValue: UInt)](./mtlresourceusage/init%28rawvalue%29.md)
   Creates a set of resource options from a raw value.
 ### Type Properties
-- [static var read: MTLResourceUsage](mtlresourceusage/read.md)
+- [static var read: MTLResourceUsage](./mtlresourceusage/read.md)
   An option that enables reading from the resource.
-- [static var sample: MTLResourceUsage](mtlresourceusage/sample.md)
+- [static var sample: MTLResourceUsage](./mtlresourceusage/sample.md)
   An option that enables sampling from the resource.
-- [static var write: MTLResourceUsage](mtlresourceusage/write.md)
+- [static var write: MTLResourceUsage](./mtlresourceusage/write.md)
   An option that enables writing to the resource.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [typealias MTLGPUAddress](mtlgpuaddress.md)
+### Common resource functionality
+- [typealias MTLGPUAddress](./mtlgpuaddress.md)
   A 64-bit unsigned integer type appropriate for storing GPU addresses.
-- [protocol MTLAllocation](mtlallocation.md)
+- [protocol MTLAllocation](./mtlallocation.md)
   A memory allocation from a Metal GPU device, such as a memory heap, texture, or data buffer.
-- [protocol MTLResource](mtlresource.md)
+- [protocol MTLResource](./mtlresource.md)
   An allocation of memory accessible to a GPU.
-- [struct MTLResourceOptions](mtlresourceoptions.md)
+- [struct MTLResourceOptions](./mtlresourceoptions.md)
   Optional arguments used to set the behavior of a resource.
-- [struct MTLResourceID](mtlresourceid.md)
+- [struct MTLResourceID](./mtlresourceid.md)
 
 
 ---

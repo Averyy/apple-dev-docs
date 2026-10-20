@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of feature that was discovered.
 
@@ -10,7 +11,7 @@ The type of feature that was discovered.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,9 +20,14 @@ The type of feature that was discovered.
 var type: String { get }
 ```
 
+```objc
+@property (retain, readonly) NSString * type;
+```
+
 ## See Also
 
-- [var bounds: CGRect](cifeature/bounds.md)
+### Feature Properties
+- [var bounds: CGRect](./bounds.md)
   The rectangle that holds discovered feature.
 
 

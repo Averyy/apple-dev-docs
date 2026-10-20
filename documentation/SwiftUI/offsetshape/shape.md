@@ -1,7 +1,8 @@
 # shape
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,7 +21,8 @@ var shape: Content
 
 ## See Also
 
-- [var offset: CGSize](offsetshape/offset.md)
+### Getting the shape’s characteristics
+- [var offset: CGSize](./offset.md)
 
 
 ---

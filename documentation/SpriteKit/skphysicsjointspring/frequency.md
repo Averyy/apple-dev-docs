@@ -1,23 +1,28 @@
 # frequency
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines the frequency or stiffness characteristics of the spring.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var frequency: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic) CGFloat frequency;
 ```
 
 #### Discussion
@@ -26,7 +31,8 @@ The default value is `0.0`, creating a rigid joint between the spring’s two bo
 
 ## See Also
 
-- [var damping: CGFloat](skphysicsjointspring/damping.md)
+### Configuring a Spring Joint
+- [var damping: CGFloat](./damping.md)
   Defines how the spring’s motion should be damped due to the forces of friction.
 
 

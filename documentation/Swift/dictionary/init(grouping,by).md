@@ -1,7 +1,8 @@
 # init(grouping:by:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new dictionary whose keys are the groupings returned by the given closure and whose values are arrays of the elements that returned each key.
 
@@ -41,13 +42,14 @@ The new `studentsByLetter` dictionary has three entries, with students’ names 
 
 ## See Also
 
-- [init()](dictionary/init.md)
+### Creating a Dictionary
+- [init()](./init%28%29.md)
   Creates an empty dictionary.
-- [init(minimumCapacity: Int)](dictionary/init(minimumcapacity:).md)
+- [init(minimumCapacity: Int)](./init%28minimumcapacity%29.md)
   Creates an empty dictionary with preallocated space for at least the specified number of elements.
-- [init<S>(uniqueKeysWithValues: S)](dictionary/init(uniquekeyswithvalues:).md)
+- [init<S>(uniqueKeysWithValues: S)](./init%28uniquekeyswithvalues%29.md)
   Creates a new dictionary from the key-value pairs in the given sequence.
-- [init<S, E>(S, uniquingKeysWith: (Value, Value) throws(E) -> Value) throws(E)](dictionary/init(_:uniquingkeyswith:).md)
+- [init<S, E>(S, uniquingKeysWith: (Value, Value) throws(E) -> Value) throws(E)](./init%28_,uniquingkeyswith%29.md)
   Creates a new dictionary from the key-value pairs in the given sequence, using a combining closure to determine the value for any duplicate keys.
 
 

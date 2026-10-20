@@ -1,7 +1,8 @@
 # kAXRowRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A row.
 
@@ -12,6 +13,10 @@ A row.
 
 ```swift
 var kAXRowRole: String { get }
+```
+
+```c
+#define kAXRowRole
 ```
 
 

@@ -1,7 +1,8 @@
 # TransactionStatus
 
 **Framework**: FinanceKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that describe the status of a transaction.
 
@@ -18,48 +19,49 @@ enum TransactionStatus
 ## Topics
 
 ### Enumeration Cases
-- [TransactionStatus.authorized](transactionstatus/authorized.md)
+- [TransactionStatus.authorized](./transactionstatus/authorized.md)
   The transaction is in an authorized state.
-- [TransactionStatus.booked](transactionstatus/booked.md)
+- [TransactionStatus.booked](./transactionstatus/booked.md)
   The transaction is in a booked state.
-- [TransactionStatus.memo](transactionstatus/memo.md)
+- [TransactionStatus.memo](./transactionstatus/memo.md)
   A memo that provides information about the transaction.
-- [TransactionStatus.pending](transactionstatus/pending.md)
+- [TransactionStatus.pending](./transactionstatus/pending.md)
   The transaction is in a pending state.
-- [TransactionStatus.rejected](transactionstatus/rejected.md)
+- [TransactionStatus.rejected](./transactionstatus/rejected.md)
   The transaction is in a rejected state.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func transactionHistory(forAccountID: UUID, since: FinanceStore.HistoryToken?, isMonitoring: Bool) -> FinanceStore.History<Transaction>](financestore/transactionhistory(foraccountid:since:ismonitoring:).md)
+### Transactions
+- [func transactionHistory(forAccountID: UUID, since: FinanceStore.HistoryToken?, isMonitoring: Bool) -> FinanceStore.History<Transaction>](./financestore/transactionhistory%28foraccountid,since,ismonitoring%29.md)
   Returns the transactions for the specified account ID, optional starting time, and monitoring indicator for long running transaction queries.
-- [func transactions(query: TransactionQuery) async throws -> [Transaction]](financestore/transactions(query:).md)
+- [func transactions(query: TransactionQuery) async throws -> [Transaction]](./financestore/transactions%28query%29.md)
   Returns transactions that match the provided transaction query.
-- [struct AccountQuery](accountquery.md)
+- [struct AccountQuery](./accountquery.md)
   A structure that defines an account query.
-- [struct AccountCreditInformation](accountcreditinformation.md)
+- [struct AccountCreditInformation](./accountcreditinformation.md)
   A structure that describes the credit information associated with an account.
-- [struct CurrencyAmount](currencyamount.md)
+- [struct CurrencyAmount](./currencyamount.md)
   A structure that describes a monetary amount and its currency.
-- [struct Transaction](transaction.md)
+- [struct Transaction](./transaction.md)
   A structure that represents a transaction relating to a specific financial account.
-- [struct TransactionQuery](transactionquery.md)
+- [struct TransactionQuery](./transactionquery.md)
   A structure that describes the parameters to use for a transaction query.
-- [enum TransactionType](transactiontype.md)
+- [enum TransactionType](./transactiontype.md)
   Values that describe kinds of transactions.
 
 

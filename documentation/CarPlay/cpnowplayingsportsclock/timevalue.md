@@ -1,7 +1,8 @@
 # timeValue
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time value in the clock; either elapsed time or time remaining.
 
@@ -14,6 +15,10 @@ The time value in the clock; either elapsed time or time remaining.
 
 ```swift
 var timeValue: TimeInterval { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) NSTimeInterval timeValue;
 ```
 
 

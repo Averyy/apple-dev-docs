@@ -1,7 +1,8 @@
 # systemDefaultSpeeds
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A list of playback speeds the system uses by default.
 
@@ -17,6 +18,10 @@ A list of playback speeds the system uses by default.
 
 ```swift
 class var systemDefaultSpeeds: [AVPlaybackSpeed] { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) NSArray<AVPlaybackSpeed *> * systemDefaultSpeeds;
 ```
 
 

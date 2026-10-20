@@ -1,7 +1,8 @@
 # localizedDescription
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized description of the service.
 
@@ -19,11 +20,16 @@ The localized description of the service.
 var localizedDescription: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * localizedDescription;
+```
+
 ## See Also
 
-- [var serviceType: String](hmservice/servicetype.md)
+### Getting the service type
+- [var serviceType: String](./servicetype.md)
   The type of the service.
-- [Accessory Service Types](accessory-service-types.md)
+- [Accessory Service Types](../accessory-service-types.md)
   The service types supported by HomeKit.
 
 

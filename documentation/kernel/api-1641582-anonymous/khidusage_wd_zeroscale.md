@@ -1,14 +1,15 @@
 # kHIDUsage_WD_ZeroScale
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_WD_ZeroScale = 0x80
 ```
 

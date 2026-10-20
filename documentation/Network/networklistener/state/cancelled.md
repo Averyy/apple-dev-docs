@@ -1,7 +1,8 @@
 # NetworkListener.State.cancelled
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Cancelled listeners have been invalidated by the client and will send no more events
 

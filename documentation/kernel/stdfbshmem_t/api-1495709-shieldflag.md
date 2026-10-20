@@ -1,7 +1,8 @@
 # shieldFlag
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 When this is set to true the cursor will not be displayed in the region specified by shieldRect.
 
@@ -10,7 +11,7 @@ When this is set to true the cursor will not be displayed in the region specifie
 
 ## Declaration
 
-```swift
+```c
 char shieldFlag;
 ```
 

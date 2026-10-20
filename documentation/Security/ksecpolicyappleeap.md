@@ -1,7 +1,8 @@
 # kSecPolicyAppleEAP
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Extensible Authentication Protocol. Functionally identical to SSL policy. A separate OID is provided to facilitate per-policy, per-certificate trust settings using the `SecTrust` mechanism.
 
@@ -18,6 +19,10 @@ Extensible Authentication Protocol. Functionally identical to SSL policy. A sepa
 
 ```swift
 let kSecPolicyAppleEAP: CFString
+```
+
+```c
+extern CFStringRef const kSecPolicyAppleEAP;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(classifications:groundTruth:strategy:labels:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates multi-label classification metrics for classifications and ground truth labels.
 
@@ -33,15 +34,16 @@ The classifications and ground truth sequences are matched element by element in
 
 ## See Also
 
-- [init(some Sequence<(classification: ClassificationDistribution<Label>, labels: Set<Label>)>, strategy: MultiLabelClassificationMetrics<Label>.ThresholdSelectionStrategy) throws](multilabelclassificationmetrics/init(_:strategy:).md)
+### Creating the distribution
+- [init(some Sequence<(classification: ClassificationDistribution<Label>, labels: Set<Label>)>, strategy: MultiLabelClassificationMetrics<Label>.ThresholdSelectionStrategy) throws](./init%28_,strategy%29.md)
   Creates multi-label classification metrics for classifications and ground truth labels.
-- [init(some Sequence<(classification: ClassificationDistribution<Label>, labels: Set<Label>)>, strategy: MultiLabelClassificationMetrics<Label>.ThresholdSelectionStrategy, labels: Set<Label>) throws](multilabelclassificationmetrics/init(_:strategy:labels:).md)
+- [init(some Sequence<(classification: ClassificationDistribution<Label>, labels: Set<Label>)>, strategy: MultiLabelClassificationMetrics<Label>.ThresholdSelectionStrategy, labels: Set<Label>) throws](./init%28_,strategy,labels%29.md)
   Creates multi-label classification metrics for classifications and ground truth labels.
-- [init(classifications: some Sequence<ClassificationDistribution<Label>>, groundTruth: some Sequence<Set<Label>>, strategy: MultiLabelClassificationMetrics<Label>.ThresholdSelectionStrategy) throws](multilabelclassificationmetrics/init(classifications:groundtruth:strategy:).md)
+- [init(classifications: some Sequence<ClassificationDistribution<Label>>, groundTruth: some Sequence<Set<Label>>, strategy: MultiLabelClassificationMetrics<Label>.ThresholdSelectionStrategy) throws](./init%28classifications,groundtruth,strategy%29.md)
   Creates multi-label classification metrics for classifications and ground truth labels.
-- [init(confidenceThresholds: [Label : Float])](multilabelclassificationmetrics/init(confidencethresholds:).md)
+- [init(confidenceThresholds: [Label : Float])](./init%28confidencethresholds%29.md)
   Creates empty multi-label classification metrics.
-- [MultiLabelClassificationMetrics.ThresholdSelectionStrategy](multilabelclassificationmetrics/thresholdselectionstrategy.md)
+- [MultiLabelClassificationMetrics.ThresholdSelectionStrategy](./thresholdselectionstrategy.md)
   A strategy for selecting a confidence threshold.
 
 

@@ -1,7 +1,8 @@
 # minimum
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum threshold for the zone.
 
@@ -25,9 +26,10 @@ If `nil`, the zone has no lower bound.
 
 ## See Also
 
-- [let index: Int](hkworkoutzone/index.md)
+### Accessing zone properties
+- [let index: Int](./index.md)
   The zero-based index of the zone within the containing zone configuration, ordered from lowest to highest threshold.
-- [var maximum: HKQuantity?](hkworkoutzone/maximum.md)
+- [var maximum: HKQuantity?](./maximum.md)
   The maximum threshold for the zone.
 
 

@@ -1,7 +1,8 @@
 # init(previousDFT:count:direction:transformType:ofType:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new discrete Fourier transform structure.
 
@@ -11,7 +12,7 @@ Initializes a new discrete Fourier transform structure.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 - watchOS 26.0+
 
 ## Declaration

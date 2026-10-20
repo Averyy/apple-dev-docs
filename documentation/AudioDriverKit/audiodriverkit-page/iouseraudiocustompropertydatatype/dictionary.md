@@ -1,7 +1,8 @@
 # Dictionary
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A data type that indicates the custom data is a dictionary.
 
@@ -10,13 +11,14 @@ A data type that indicates the custom data is a dictionary.
 
 ## Declaration
 
-```swift
+```c
 Dictionary
 ```
 
 ## See Also
 
-- [String](audiodriverkit/iouseraudiocustompropertydatatype/string.md)
+### Data Types
+- [String](./string.md)
   A data type that indicates the custom data is a string.
 
 

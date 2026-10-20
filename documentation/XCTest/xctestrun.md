@@ -1,7 +1,8 @@
 # XCTestRun
 
 **Framework**: XCTest  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A base class for collecting information about a specific execution of a test.
 
@@ -11,6 +12,10 @@ A base class for collecting information about a specific execution of a test.
 class XCTestRun
 ```
 
+```objc
+@interface XCTestRun : NSObject
+```
+
 #### Overview
 
 `XCTestRun` classifies failures in explicit test assertions as *expected*, and failures from unrelated or uncaught exceptions as *unexpected*.
@@ -18,67 +23,68 @@ class XCTestRun
 ## Topics
 
 ### Creating Test Runs
-- [init(test: XCTest)](xctestrun/init(test:).md)
+- [init(test: XCTest)](./xctestrun/init%28test%29.md)
   Creates a new test run for the provided test.
 ### Performing Test Runs
-- [func start()](xctestrun/start.md)
+- [func start()](./xctestrun/start%28%29.md)
   Starts a test run.
-- [func stop()](xctestrun/stop.md)
+- [func stop()](./xctestrun/stop%28%29.md)
   Stops a test run.
-- [func record(XCTIssue)](xctestrun/record(_:).md)
+- [func record(XCTIssue)](./xctestrun/record%28_%29.md)
   Records an issue during test execution for the test run.
 ### Tracking Test Durations
-- [var startDate: Date?](xctestrun/startdate.md)
+- [var startDate: Date?](./xctestrun/startdate.md)
   The date and time when the test run started, or no value if the test hasn’t run.
-- [var stopDate: Date?](xctestrun/stopdate.md)
+- [var stopDate: Date?](./xctestrun/stopdate.md)
   The date and time when the test run stopped, or no value if the test hasn’t run.
-- [var testDuration: TimeInterval](xctestrun/testduration.md)
+- [var testDuration: TimeInterval](./xctestrun/testduration.md)
   The number of seconds that elapse between when the run starts and when it stops.
-- [var totalDuration: TimeInterval](xctestrun/totalduration.md)
+- [var totalDuration: TimeInterval](./xctestrun/totalduration.md)
   The number of seconds that elapse between when the run starts and when it stops.
 ### Gathering Test Outcomes
-- [var hasSucceeded: Bool](xctestrun/hassucceeded.md)
+- [var hasSucceeded: Bool](./xctestrun/hassucceeded.md)
   A Boolean value that returns true if all tests in the run completed without recording any failures; otherwise, false.
-- [var hasBeenSkipped: Bool](xctestrun/hasbeenskipped.md)
+- [var hasBeenSkipped: Bool](./xctestrun/hasbeenskipped.md)
   A Boolean value that indicates a skipped test.
-- [var executionCount: Int](xctestrun/executioncount.md)
+- [var executionCount: Int](./xctestrun/executioncount.md)
   The number of test executions during the run.
-- [var failureCount: Int](xctestrun/failurecount.md)
+- [var failureCount: Int](./xctestrun/failurecount.md)
   The number of test failures during the run.
-- [var skipCount: Int](xctestrun/skipcount.md)
+- [var skipCount: Int](./xctestrun/skipcount.md)
   The number of skipped tests during the run.
-- [var test: XCTest](xctestrun/test.md)
+- [var test: XCTest](./xctestrun/test.md)
   The test instance for the test run.
-- [var testCaseCount: Int](xctestrun/testcasecount.md)
+- [var testCaseCount: Int](./xctestrun/testcasecount.md)
   The number of tests in the run.
-- [var totalFailureCount: Int](xctestrun/totalfailurecount.md)
+- [var totalFailureCount: Int](./xctestrun/totalfailurecount.md)
   The number of test failures and uncaught exceptions during the run.
-- [var unexpectedExceptionCount: Int](xctestrun/unexpectedexceptioncount.md)
+- [var unexpectedExceptionCount: Int](./xctestrun/unexpectedexceptioncount.md)
   The number of uncaught exceptions during the run.
 ### Deprecated
-- [func recordFailure(withDescription: String, inFile: String?, atLine: Int, expected: Bool)](xctestrun/recordfailure(withdescription:infile:atline:expected:).md)
+- [func recordFailure(withDescription: String, inFile: String?, atLine: Int, expected: Bool)](./xctestrun/recordfailure%28withdescription,infile,atline,expected%29.md)
   Records a failure during test execution for the test run.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [XCTestCaseRun](xctestcaserun.md)
-- [XCTestSuiteRun](xctestsuiterun.md)
+- [XCTestCaseRun](./xctestcaserun.md)
+- [XCTestSuiteRun](./xctestsuiterun.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class XCTestCaseRun](xctestcaserun.md)
+### Test Runs
+- [class XCTestCaseRun](./xctestcaserun.md)
   An object that collects information about a specific execution of a test case.
-- [class XCTestSuiteRun](xctestsuiterun.md)
+- [class XCTestSuiteRun](./xctestsuiterun.md)
   An object that collects information about a specific execution of a test suite.
 
 

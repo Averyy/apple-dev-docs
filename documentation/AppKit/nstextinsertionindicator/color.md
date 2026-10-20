@@ -1,7 +1,8 @@
 # color
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color of this indicator.
 
@@ -15,13 +16,18 @@ The color of this indicator.
 var color: NSColor! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) NSColor * color;
+```
+
 #### Discussion
 
-If set to [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0), returns [`textInsertionPointColor`](nscolor/textinsertionpointcolor.md). Defaults to [`textInsertionPointColor`](nscolor/textinsertionpointcolor.md).
+If set to [`nil`](../../ObjectiveC/nil-227m0.md), returns [`textInsertionPointColor`](../nscolor/textinsertionpointcolor.md). Defaults to [`textInsertionPointColor`](../nscolor/textinsertionpointcolor.md).
 
 ## See Also
 
-- [var effectsViewInserter: ((NSView) -> Void)?](nstextinsertionindicator/effectsviewinserter.md)
+### Configuring indicators
+- [var effectsViewInserter: ((NSView) -> Void)?](./effectsviewinserter.md)
   An optional closure the system calls during dictation.
 
 

@@ -1,7 +1,8 @@
 # DCSGetTermRangeInString(_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Determines the range of the longest word or phrase with respect to an offset.
 
@@ -15,13 +16,17 @@ Determines the range of the longest word or phrase with respect to an offset.
 func DCSGetTermRangeInString(_ dictionary: DCSDictionary?, _ textString: CFString, _ offset: CFIndex) -> CFRange
 ```
 
-#### Return_value
+```c
+CFRange DCSGetTermRangeInString(DCSDictionaryRef dictionary, CFStringRef textString, CFIndex offset);
+```
+
+#### Return Value
 
 The range that specifies the location, around the specified offset, of the word or phrase , or the constant `kCFNotFound`.
 
 #### Discussion
 
-You can use this function to determine the range of text that contains a word or phrase. After you determine the range, you can pass the result to the  functions [`DCSCopyTextDefinition(_:_:_:)`](1446842-dcscopytextdefinition.md) and `HIDictionaryWindowShow(_:_:_:_:_:_:_:)`.
+You can use this function to determine the range of text that contains a word or phrase. After you determine the range, you can pass the result to the  functions [`DCSCopyTextDefinition(_:_:_:)`](./api-1446842-dcscopytextdefinition.md) and `HIDictionaryWindowShow(_:_:_:_:_:_:_:)`.
 
 To see how this works, follow these steps:
 
@@ -33,7 +38,7 @@ Note that the Dictionary window appears with a definition of San Francisco. The 
 
 You can also point the cursor at the word `Francisco` and, without making a selection or clicking, type Command-Control-D.  `DCSGetTermRangeInString` detects the range. 
 
-The function `DCSGetTermRangeInString` only returns the range. You must call [`DCSCopyTextDefinition(_:_:_:)`](1446842-dcscopytextdefinition.md) to copy the definition and `HIDictionaryWindowShow(_:_:_:_:_:_:_:)` to display the definition in a Dictionary window.
+The function `DCSGetTermRangeInString` only returns the range. You must call [`DCSCopyTextDefinition(_:_:_:)`](./api-1446842-dcscopytextdefinition.md) to copy the definition and `HIDictionaryWindowShow(_:_:_:_:_:_:_:)` to display the definition in a Dictionary window.
 
 ## Parameters
 
@@ -43,7 +48,8 @@ The function `DCSGetTermRangeInString` only returns the range. You must call [`D
 
 ## See Also
 
-- [Dictionary Services Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/DictionaryServicesProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40006152)
+### Related Documentation
+- [Dictionary Services Programming Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/DictionaryServicesProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40006152)
 
 
 ---

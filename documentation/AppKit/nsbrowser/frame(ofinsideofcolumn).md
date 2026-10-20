@@ -1,17 +1,22 @@
 # frame(ofInsideOfColumn:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the rectangle containing the specified column, not including borders.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func frame(ofInsideOfColumn column: Int) -> NSRect
+```
+
+```objc
+- (NSRect) frameOfInsideOfColumn:(NSInteger) column;
 ```
 
 #### Return Value
@@ -24,7 +29,8 @@ The rectangle containing the column, not including the column borders.
 
 ## See Also
 
-- [func frame(ofColumn: Int) -> NSRect](nsbrowser/frame(ofcolumn:).md)
+### Getting Column Frames
+- [func frame(ofColumn: Int) -> NSRect](./frame%28ofcolumn%29.md)
   Returns the rectangle containing the given column.
 
 

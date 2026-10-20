@@ -1,7 +1,8 @@
 # VZDiskImageCachingMode
 
 **Framework**: Virtualization  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An integer that describes the disk image caching mode.
 
@@ -14,39 +15,44 @@ An integer that describes the disk image caching mode.
 enum VZDiskImageCachingMode
 ```
 
+```c
+enum VZDiskImageCachingMode : NSInteger;
+```
+
 ## Topics
 
 ### Disk image caching modes
-- [VZDiskImageCachingMode.automatic](vzdiskimagecachingmode/automatic.md)
+- [VZDiskImageCachingMode.automatic](./vzdiskimagecachingmode/automatic.md)
   Allows the virtualization framework to automatically determine whether to enable data caching.
-- [VZDiskImageCachingMode.cached](vzdiskimagecachingmode/cached.md)
+- [VZDiskImageCachingMode.cached](./vzdiskimagecachingmode/cached.md)
   Enables data caching.
-- [VZDiskImageCachingMode.uncached](vzdiskimagecachingmode/uncached.md)
+- [VZDiskImageCachingMode.uncached](./vzdiskimagecachingmode/uncached.md)
   Disables data caching.
 ### Initializers
-- [init?(rawValue: Int)](vzdiskimagecachingmode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./vzdiskimagecachingmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class VZVirtioBlockDeviceConfiguration](vzvirtioblockdeviceconfiguration.md)
+### Configurations
+- [class VZVirtioBlockDeviceConfiguration](./vzvirtioblockdeviceconfiguration.md)
   The configuration object that requests the creation of a virtual storage device in the guest system.
-- [class VZStorageDeviceConfiguration](vzstoragedeviceconfiguration.md)
+- [class VZStorageDeviceConfiguration](./vzstoragedeviceconfiguration.md)
   The common configuration traits for storage device requests.
-- [class VZUSBMassStorageDeviceConfiguration](vzusbmassstoragedeviceconfiguration.md)
+- [class VZUSBMassStorageDeviceConfiguration](./vzusbmassstoragedeviceconfiguration.md)
   The configuration object that represents a USB Mass storage device.
-- [enum VZDiskImageSynchronizationMode](vzdiskimagesynchronizationmode.md)
+- [enum VZDiskImageSynchronizationMode](./vzdiskimagesynchronizationmode.md)
   An integer that describes the disk image synchronization mode.
-- [class VZNVMExpressControllerDeviceConfiguration](vznvmexpresscontrollerdeviceconfiguration.md)
+- [class VZNVMExpressControllerDeviceConfiguration](./vznvmexpresscontrollerdeviceconfiguration.md)
   The configuration object that represents an NVM Express Controller storage device.
 
 

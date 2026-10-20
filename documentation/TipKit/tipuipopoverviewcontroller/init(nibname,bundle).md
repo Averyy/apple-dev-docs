@@ -1,7 +1,8 @@
 # init(nibName:bundle:)
 
 **Framework**: TipKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+

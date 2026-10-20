@@ -1,24 +1,29 @@
 # XCUI_UI_TESTING_AVAILABLE
 
 **Framework**: XCUIAutomation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates whether the current environment supports UI testing.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
 
 ```swift
 var XCUI_UI_TESTING_AVAILABLE: Int32 { get }
+```
+
+```c
+#define XCUI_UI_TESTING_AVAILABLE
 ```
 
 #### Discussion

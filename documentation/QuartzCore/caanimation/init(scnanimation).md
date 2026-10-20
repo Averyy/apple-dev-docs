@@ -1,7 +1,8 @@
 # init(SCNAnimation:)
 
 **Framework**: Core Animation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an animation from a SceneKit animation.
 
@@ -16,7 +17,15 @@ Creates an animation from a SceneKit animation.
 ## Declaration
 
 ```swift
+init(SCNAnimation animation: SCNAnimation)
+```
+
+```swift
 init(scnAnimation animation: SCNAnimation)
+```
+
+```objc
++ (CAAnimation *) animationWithSCNAnimation:(SCNAnimation *) animation;
 ```
 
 

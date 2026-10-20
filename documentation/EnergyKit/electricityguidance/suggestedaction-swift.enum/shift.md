@@ -1,14 +1,15 @@
 # ElectricityGuidance.SuggestedAction.shift
 
 **Framework**: EnergyKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An indication of when to shift energy usage for devices that can’t reduce electricity consumption.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -22,7 +23,8 @@ For example, an electric vehicle has to reach a certain charge, so it shifts to 
 
 ## See Also
 
-- [ElectricityGuidance.SuggestedAction.reduce](electricityguidance/suggestedaction-swift.enum/reduce.md)
+### Suggesting electrical load usage
+- [ElectricityGuidance.SuggestedAction.reduce](./reduce.md)
   An indication of when to reduce electricity usage for devices that can reduce electricity consumption.
 
 

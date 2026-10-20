@@ -1,7 +1,8 @@
 # didMoveToWritableLocationNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that the document posts when copying the file from a readonly location in order to write changes. This notification will be posted on the file presenter queue.
 
@@ -16,6 +17,10 @@ A notification that the document posts when copying the file from a readonly loc
 ```swift
 nonisolated
 class let didMoveToWritableLocationNotification: NSNotification.Name
+```
+
+```c
+extern NSNotificationName const UIDocumentDidMoveToWritableLocationNotification;
 ```
 
 

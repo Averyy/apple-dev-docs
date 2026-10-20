@@ -1,7 +1,8 @@
 # errSecSelfCheckFailed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Self-check failed.
 
@@ -18,6 +19,10 @@ Self-check failed.
 
 ```swift
 var errSecSelfCheckFailed: OSStatus { get }
+```
+
+```c
+errSecSelfCheckFailed
 ```
 
 

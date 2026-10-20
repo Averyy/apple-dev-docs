@@ -1,7 +1,8 @@
 # joined()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the elements of this sequence of sequences, concatenated.
 
@@ -19,6 +20,8 @@ Returns the elements of this sequence of sequences, concatenated.
 ```swift
 func joined() -> FlattenSequence<Self>
 ```
+
+Available when `Element` conforms to `Sequence`.
 
 #### Return Value
 

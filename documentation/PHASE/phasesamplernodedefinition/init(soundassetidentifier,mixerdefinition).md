@@ -1,7 +1,8 @@
 # init(soundAssetIdentifier:mixerDefinition:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sampler node with the given sound asset and mixer.
 
@@ -19,14 +20,19 @@ Creates a sampler node with the given sound asset and mixer.
 init(soundAssetIdentifier: String, mixerDefinition: PHASEMixerDefinition)
 ```
 
+```objc
+- (instancetype) initWithSoundAssetIdentifier:(NSString *) soundAssetIdentifier mixerDefinition:(PHASEMixerDefinition *) mixerDefinition;
+```
+
 ## Parameters
 
-- `soundAssetIdentifier`: A name that refers to the audio data that the node plays. See [`assetIdentifier`](phasesamplernodedefinition/assetidentifier.md).
+- `soundAssetIdentifier`: A name that refers to the audio data that the node plays. See [`assetIdentifier`](./assetidentifier.md).
 - `mixerDefinition`: An object that combines audio layers.
 
 ## See Also
 
-- [convenience init(soundAssetIdentifier: String, mixerDefinition: PHASEMixerDefinition, identifier: String)](phasesamplernodedefinition/init(soundassetidentifier:mixerdefinition:identifier:).md)
+### Creating a Sampler Node
+- [convenience init(soundAssetIdentifier: String, mixerDefinition: PHASEMixerDefinition, identifier: String)](./init%28soundassetidentifier,mixerdefinition,identifier%29.md)
   Creates a named sampler node with the given sound asset and mixer.
 
 

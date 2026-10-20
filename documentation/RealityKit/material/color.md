@@ -1,7 +1,8 @@
 # Material.Color
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An alias for the color type that’s appropriate for the current platform.
 
@@ -11,9 +12,17 @@ An alias for the color type that’s appropriate for the current platform.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+typealias Color = UIColor
+```
+
+*macOS*
 
 ```swift
 typealias Color = NSColor
@@ -21,16 +30,17 @@ typealias Color = NSColor
 
 ## See Also
 
-- [protocol Material](material.md)
+### Material types
+- [protocol Material](../material.md)
   A type that describes the material aspects of a mesh, like color and texture.
-- [typealias Parameters](material/parameters.md)
+- [typealias Parameters](./parameters.md)
   The parameter type that custom materials uses for properties the framework passes to shader functions.
-- [struct MaterialParameterTypes](materialparametertypes.md)
+- [struct MaterialParameterTypes](../materialparametertypes.md)
   A set of types that material parameters can use.
-- [struct MaterialParameters](materialparameters.md)
-- [enum MaterialColorParameter](materialcolorparameter.md)
+- [struct MaterialParameters](../materialparameters.md)
+- [enum MaterialColorParameter](../materialcolorparameter.md)
   The color parameter applied to a material.
-- [enum MaterialScalarParameter](materialscalarparameter.md)
+- [enum MaterialScalarParameter](../materialscalarparameter.md)
   The scalar parameter applied to a material.
 
 

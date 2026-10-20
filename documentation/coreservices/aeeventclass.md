@@ -1,7 +1,8 @@
 # AEEventClass
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Specifies the event class of an Apple event.
 
@@ -15,11 +16,15 @@ Specifies the event class of an Apple event.
 typealias AEEventClass = FourCharCode
 ```
 
+```c
+typedef FourCharCode AEEventClass;
+```
+
 #### Discussion
 
 Apple events are identified by their event class and event ID attributes. The event class is the attribute that identifies a group of related Apple events. When you call the `AEProcessAppleEvent(_:)` function, the Apple Event Manager uses these attributes to identify a handler for a specific Apple event.
 
-For more information on Apple event classes, see [`Event Class Constants`](apple_events/1527210-event_class_constants.md). 
+For more information on Apple event classes, see [Event Class Constants](./apple_events/api-1527210-event_class_constants.md). 
 
 
 ---

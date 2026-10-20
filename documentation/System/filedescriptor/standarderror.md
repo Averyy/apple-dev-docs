@@ -1,7 +1,8 @@
 # standardError
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The standard error file descriptor, with a numeric value of 2.
 

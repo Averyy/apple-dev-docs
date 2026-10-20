@@ -1,7 +1,8 @@
 # isKnownUniquelyReferenced(_:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value indicating whether the given object is known to have a single strong reference.
 
@@ -47,7 +48,8 @@ If the instance passed as `object` is being accessed by multiple threads simulta
 
 ## See Also
 
-- [func isKnownUniquelyReferenced<T>(inout T) -> Bool](isknownuniquelyreferenced(_:)-5kvtu.md)
+### Uniqueness Checking
+- [func isKnownUniquelyReferenced<T>(inout T) -> Bool](./isknownuniquelyreferenced%28_%29-5kvtu.md)
   Returns a Boolean value indicating whether the given object is known to have a single strong reference.
 
 

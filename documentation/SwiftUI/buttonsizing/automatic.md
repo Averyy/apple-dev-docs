@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default button sizing behavior appropriate for the button’s contextual placement and platform.
 

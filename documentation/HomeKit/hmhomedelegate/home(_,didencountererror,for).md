@@ -1,7 +1,8 @@
 # home(_:didEncounterError:for:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a configured accessory encountered an error.
 
@@ -19,6 +20,10 @@ Tells the delegate that a configured accessory encountered an error.
 optional func home(_ home: HMHome, didEncounterError error: any Error, for accessory: HMAccessory)
 ```
 
+```objc
+- (void) home:(HMHome *) home didEncounterError:(NSError *) error forAccessory:(HMAccessory *) accessory;
+```
+
 #### Discussion
 
 The delegate should check whether the accessory is blocked.
@@ -31,7 +36,8 @@ The delegate should check whether the accessory is blocked.
 
 ## See Also
 
-- [func home(HMHome, didUnblockAccessory: HMAccessory)](hmhomedelegate/home(_:didunblockaccessory:).md)
+### Observing Accessories
+- [func home(HMHome, didUnblockAccessory: HMAccessory)](./home%28_,didunblockaccessory%29.md)
   Tells the delegate that an accessory has been unblocked.
 
 

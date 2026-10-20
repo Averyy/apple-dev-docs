@@ -1,7 +1,8 @@
 # greedy
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Use a greedy algorithm. Display a label if it’s not overlapping with other labels.
 

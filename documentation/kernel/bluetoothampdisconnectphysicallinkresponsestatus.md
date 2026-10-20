@@ -1,32 +1,34 @@
 # BluetoothAMPDisconnectPhysicalLinkResponseStatus
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 typedef enum BluetoothAMPDisconnectPhysicalLinkResponseStatus BluetoothAMPDisconnectPhysicalLinkResponseStatus;
 ```
 
 ## Topics
 
 ### Constants
-- [kBluetoothAMPManagerDisconnectPhysicalLinkResponseInvalidControllerID](bluetoothampdisconnectphysicallinkresponsestatus/kbluetoothampmanagerdisconnectphysicallinkresponseinvalidcontrollerid.md)
-- [kBluetoothAMPManagerDisconnectPhysicalLinkResponseNoPhysicalLink](bluetoothampdisconnectphysicallinkresponsestatus/kbluetoothampmanagerdisconnectphysicallinkresponsenophysicallink.md)
-- [kBluetoothAMPManagerDisconnectPhysicalLinkResponseSuccess](bluetoothampdisconnectphysicallinkresponsestatus/kbluetoothampmanagerdisconnectphysicallinkresponsesuccess.md)
+- [kBluetoothAMPManagerDisconnectPhysicalLinkResponseInvalidControllerID](./bluetoothampdisconnectphysicallinkresponsestatus/kbluetoothampmanagerdisconnectphysicallinkresponseinvalidcontrollerid.md)
+- [kBluetoothAMPManagerDisconnectPhysicalLinkResponseNoPhysicalLink](./bluetoothampdisconnectphysicallinkresponsestatus/kbluetoothampmanagerdisconnectphysicallinkresponsenophysicallink.md)
+- [kBluetoothAMPManagerDisconnectPhysicalLinkResponseSuccess](./bluetoothampdisconnectphysicallinkresponsestatus/kbluetoothampmanagerdisconnectphysicallinkresponsesuccess.md)
 
 ## See Also
 
-- [BluetoothAMPCommandRejectReason](bluetoothampcommandrejectreason.md)
-- [BluetoothAMPCreatePhysicalLinkResponseStatus](bluetoothampcreatephysicallinkresponsestatus.md)
-- [BluetoothAMPDiscoverResponseControllerStatus](bluetoothampdiscoverresponsecontrollerstatus.md)
-- [BluetoothAMPGetAssocResponseStatus](bluetoothampgetassocresponsestatus.md)
-- [BluetoothAMPGetInfoResponseStatus](bluetoothampgetinforesponsestatus.md)
-- [BluetoothAMPManagerCode](bluetoothampmanagercode.md)
+### AMP
+- [BluetoothAMPCommandRejectReason](./bluetoothampcommandrejectreason.md)
+- [BluetoothAMPCreatePhysicalLinkResponseStatus](./bluetoothampcreatephysicallinkresponsestatus.md)
+- [BluetoothAMPDiscoverResponseControllerStatus](./bluetoothampdiscoverresponsecontrollerstatus.md)
+- [BluetoothAMPGetAssocResponseStatus](./bluetoothampgetassocresponsestatus.md)
+- [BluetoothAMPGetInfoResponseStatus](./bluetoothampgetinforesponsestatus.md)
+- [BluetoothAMPManagerCode](./bluetoothampmanagercode.md)
 
 
 ---

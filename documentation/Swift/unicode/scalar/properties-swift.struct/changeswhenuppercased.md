@@ -1,7 +1,8 @@
 # changesWhenUppercased
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scalar’s normalized form differs from the `uppercaseMapping` of each constituent scalar.
 
@@ -22,7 +23,7 @@ var changesWhenUppercased: Bool { get }
 
 #### Discussion
 
-This property corresponds to the “Changes_When_Uppercased” property in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Changes_When_Uppercased” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

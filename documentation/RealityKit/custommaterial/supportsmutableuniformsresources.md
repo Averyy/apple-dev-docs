@@ -1,7 +1,8 @@
 # supportsMutableUniformsResources
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Whether the current device supports resource storage within the WithMutableUniforms API.
 

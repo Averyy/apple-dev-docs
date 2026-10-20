@@ -2,6 +2,7 @@
 
 **Framework**: Distributed  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Invoked by the Swift runtime when a distributed remote call is about to be made.
@@ -12,7 +13,7 @@ Invoked by the Swift runtime when a distributed remote call is about to be made.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

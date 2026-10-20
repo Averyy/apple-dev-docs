@@ -5,10 +5,10 @@
 ## Topics
 
 ### Constants
-- [var kATSUStyleContainedBy: Int](katsustylecontainedby.md)
-- [var kATSUStyleContains: Int](katsustylecontains.md)
-- [var kATSUStyleEquals: Int](katsustyleequals.md)
-- [var kATSUStyleUnequal: Int](katsustyleunequal.md)
+- [var kATSUStyleContainedBy: Int](../katsustylecontainedby.md)
+- [var kATSUStyleContains: Int](../katsustylecontains.md)
+- [var kATSUStyleEquals: Int](../katsustyleequals.md)
+- [var kATSUStyleUnequal: Int](../katsustyleunequal.md)
 
 
 ---

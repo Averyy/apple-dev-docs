@@ -1,7 +1,8 @@
 # SRKeyboardMetrics.SentimentCategory.down
 
 **Framework**: SensorKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mood that embodies depression.
 
@@ -16,25 +17,30 @@ A mood that embodies depression.
 case down
 ```
 
+```c
+SRKeyboardMetricsSentimentCategoryDown
+```
+
 ## See Also
 
-- [SRKeyboardMetrics.SentimentCategory.absolutist](srkeyboardmetrics/sentimentcategory/absolutist.md)
+### Sentiments
+- [SRKeyboardMetrics.SentimentCategory.absolutist](./absolutist.md)
   A mood that embodies absolutism.
-- [SRKeyboardMetrics.SentimentCategory.anger](srkeyboardmetrics/sentimentcategory/anger.md)
+- [SRKeyboardMetrics.SentimentCategory.anger](./anger.md)
   A mood that embodies anger.
-- [SRKeyboardMetrics.SentimentCategory.anxiety](srkeyboardmetrics/sentimentcategory/anxiety.md)
+- [SRKeyboardMetrics.SentimentCategory.anxiety](./anxiety.md)
   A mood that embodies worrying.
-- [SRKeyboardMetrics.SentimentCategory.confused](srkeyboardmetrics/sentimentcategory/confused.md)
+- [SRKeyboardMetrics.SentimentCategory.confused](./confused.md)
   A mood that embodies confusion.
-- [SRKeyboardMetrics.SentimentCategory.death](srkeyboardmetrics/sentimentcategory/death.md)
+- [SRKeyboardMetrics.SentimentCategory.death](./death.md)
   A mood that expresses death.
-- [SRKeyboardMetrics.SentimentCategory.health](srkeyboardmetrics/sentimentcategory/health.md)
+- [SRKeyboardMetrics.SentimentCategory.health](./health.md)
   A general concern for health.
-- [SRKeyboardMetrics.SentimentCategory.lowEnergy](srkeyboardmetrics/sentimentcategory/lowenergy.md)
+- [SRKeyboardMetrics.SentimentCategory.lowEnergy](./lowenergy.md)
   A mood that indicates low energy.
-- [SRKeyboardMetrics.SentimentCategory.positive](srkeyboardmetrics/sentimentcategory/positive.md)
+- [SRKeyboardMetrics.SentimentCategory.positive](./positive.md)
   A mood that embodies positivity.
-- [SRKeyboardMetrics.SentimentCategory.sad](srkeyboardmetrics/sentimentcategory/sad.md)
+- [SRKeyboardMetrics.SentimentCategory.sad](./sad.md)
   A mood that embodies sadness.
 
 

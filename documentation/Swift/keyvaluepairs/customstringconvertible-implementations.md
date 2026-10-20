@@ -1,11 +1,12 @@
 # CustomStringConvertible Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var description: String](keyvaluepairs/description.md)
+- [var description: String](./description.md)
   A string that represents the contents of the dictionary.
 
 

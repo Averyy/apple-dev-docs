@@ -1,7 +1,8 @@
 # relyingPartyIdentifier
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Relying Party to register the passkey with, generally a domain name.
 

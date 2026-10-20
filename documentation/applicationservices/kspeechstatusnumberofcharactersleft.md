@@ -1,7 +1,8 @@
 # kSpeechStatusNumberOfCharactersLeft
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The number of characters left in the input string of text.
 
@@ -12,6 +13,10 @@ The number of characters left in the input string of text.
 
 ```swift
 let kSpeechStatusNumberOfCharactersLeft: CFString
+```
+
+```c
+const CFStringRef kSpeechStatusNumberOfCharactersLeft;
 ```
 
 #### Discussion

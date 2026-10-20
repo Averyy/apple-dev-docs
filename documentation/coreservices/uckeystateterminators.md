@@ -1,7 +1,8 @@
 # UCKeyStateTerminators
 
 **Framework**: Core Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Lists the default terminators for each dead-key state handled by a `'uchr'` resource.
 
@@ -15,6 +16,12 @@ Lists the default terminators for each dead-key state handled by a `'uchr'` reso
 struct UCKeyStateTerminators
 ```
 
+```c
+typedef struct UCKeyStateTerminators {
+    ...
+} UCKeyStateTerminators;
+```
+
 #### Overview
 
 The Unicode keyboard-layout ( `'uchr'`) resource contains the data necessary to map virtual key codes to Unicode character codes for a given keyboard layout. The `'uchr'` format consists of a header information section and five key mapping data sections. The `UCKeyStateTerminators` type is used in the fourth key mapping section of the `'uchr ` ' resource. 
@@ -24,14 +31,14 @@ The `UCKeyStateTerminators` structure contains the list of default terminators (
 ## Topics
 
 ### Initializers
-- [init()](uckeystateterminators/1448249-init.md)
-- [init(keyStateTerminatorsFormat: UInt16, keyStateTerminatorCount: UInt16, keyStateTerminators: UCKeyCharSeq)](uckeystateterminators/1443209-init.md)
+- [init()](./uckeystateterminators/api-1448249-init.md)
+- [init(keyStateTerminatorsFormat: UInt16, keyStateTerminatorCount: UInt16, keyStateTerminators: UCKeyCharSeq)](./uckeystateterminators/api-1443209-init.md)
 ### Instance Properties
-- [var keyStateTerminatorCount: UInt16](uckeystateterminators/1390511-keystateterminatorcount.md)
+- [var keyStateTerminatorCount: UInt16](./uckeystateterminators/api-1390511-keystateterminatorcount.md)
   An unsigned 16-bit integer specifying the number of default dead-key state terminators contained in the `keyStateTerminators[]` array.
-- [var keyStateTerminators: UCKeyCharSeq](uckeystateterminators/1390409-keystateterminators.md)
-  An array of default dead-key state terminators, described as values of type [`UCKeyCharSeq`](uckeycharseq.md); the value `keyStateTerminators[0]` is the terminator for state 1, and so on. 
-- [var keyStateTerminatorsFormat: UInt16](uckeystateterminators/1390431-keystateterminatorsformat.md)
+- [var keyStateTerminators: UCKeyCharSeq](./uckeystateterminators/api-1390409-keystateterminators.md)
+  An array of default dead-key state terminators, described as values of type [`UCKeyCharSeq`](./uckeycharseq.md); the value `keyStateTerminators[0]` is the terminator for state 1, and so on. 
+- [var keyStateTerminatorsFormat: UInt16](./uckeystateterminators/api-1390431-keystateterminatorsformat.md)
   An unsigned 16-bit integer identifying the format of the `UCKeyStateTerminators` structure. Set to `kUCKeyStateTerminatorsFormat`.
 
 

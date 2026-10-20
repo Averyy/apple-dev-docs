@@ -1,7 +1,8 @@
 # NetworkBrowser
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Discover advertised services and devices on the network.
 
@@ -27,27 +28,27 @@ Whenever services become available, get modified, or go away, the browser will g
 ## Topics
 
 ### Initializers
-- [init(for: Provider, using: NWParameters?)](networkbrowser/init(for:using:).md)
+- [init(for: Provider, using: NWParameters?)](./networkbrowser/init%28for,using%29.md)
   Create a browser that will browse for the service specified by a BrowserProvider, with parameters.
 ### Instance Methods
-- [func onStateUpdate((NetworkBrowser<Provider>, NetworkBrowser<Provider>.State) -> Void) -> Self](networkbrowser/onstateupdate(_:).md)
+- [func onStateUpdate((NetworkBrowser<Provider>, NetworkBrowser<Provider>.State) -> Void) -> Self](./networkbrowser/onstateupdate%28_%29.md)
   Set a closure to be called when the browser’s state changes.
-- [func run(([Provider.Endpoint]) async throws -> Void) async throws](networkbrowser/run(_:)-31x4b.md)
+- [func run(([Provider.Endpoint]) async throws -> Void) async throws](./networkbrowser/run%28_%29-31x4b.md)
   Run the browser and receive updates when when the set of discovered endpoints change.
-- [func run<Return>(([Provider.Endpoint]) async throws -> NetworkBrowser<Provider>.RunResult<Return>) async throws -> Return](networkbrowser/run(_:)-wqyo.md)
+- [func run<Return>(([Provider.Endpoint]) async throws -> NetworkBrowser<Provider>.RunResult<Return>) async throws -> Return](./networkbrowser/run%28_%29-wqyo.md)
 ### Type Aliases
-- [NetworkBrowser.StateUpdateHandler](networkbrowser/stateupdatehandler.md)
+- [NetworkBrowser.StateUpdateHandler](./networkbrowser/stateupdatehandler.md)
 ### Enumerations
-- [NetworkBrowser.RunResult](networkbrowser/runresult.md)
-- [NetworkBrowser.State](networkbrowser/state.md)
+- [NetworkBrowser.RunResult](./networkbrowser/runresult.md)
+- [NetworkBrowser.State](./networkbrowser/state.md)
   Possible states for the browser to be in.
 
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

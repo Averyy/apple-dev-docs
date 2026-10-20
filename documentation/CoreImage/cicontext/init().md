@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a context without a specific rendering destination, using default options.
 
@@ -10,13 +11,17 @@ Initializes a context without a specific rendering destination, using default op
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 #### Return Value
@@ -27,7 +32,7 @@ An initialized Core Image context.
 
 If you create a context without specifying a rendering destination, Core Image automatically chooses and internally manages a rendering destination based on the current device’s capabilities. You cannot use a context without an explicit destination for the methods listed in Drawing Images. Instead, use the methods listed in Rendering Images.
 
-To specify additional options for the context, use the [`contextWithOptions:`](cicontext/contextwithoptions:.md) initializer instead.
+To specify additional options for the context, use the [`contextWithOptions:`](./contextwithoptions_.md) initializer instead.
 
 
 ---

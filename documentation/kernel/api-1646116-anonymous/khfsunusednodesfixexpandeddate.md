@@ -1,14 +1,15 @@
 # kHFSUnusedNodesFixExpandedDate
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 kHFSUnusedNodesFixExpandedDate = 0x49c97400
 ```
 

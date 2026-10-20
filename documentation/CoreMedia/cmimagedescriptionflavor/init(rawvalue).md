@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an image description flavor.
 
@@ -26,7 +27,8 @@ init(rawValue: CFString)
 
 ## See Also
 
-- [init(CFString)](cmimagedescriptionflavor/init(_:).md)
+### Creating Image Description Flavors
+- [init(CFString)](./init%28_%29.md)
   Creates an image description flavor.
 
 

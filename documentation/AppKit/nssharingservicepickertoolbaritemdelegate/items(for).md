@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asks the delegate for the items to share.
@@ -14,6 +15,10 @@ Asks the delegate for the items to share.
 ```swift
 @MainActor
 func items(for pickerToolbarItem: NSSharingServicePickerToolbarItem) -> [Any]
+```
+
+```objc
+- (NSArray *) itemsForSharingServicePickerToolbarItem:(NSSharingServicePickerToolbarItem *) pickerToolbarItem;
 ```
 
 #### Return Value

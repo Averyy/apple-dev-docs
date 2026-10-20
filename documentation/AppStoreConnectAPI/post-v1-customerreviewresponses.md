@@ -1,7 +1,8 @@
 # Create or update a response to a customer review
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Create a response or replace an existing response you wrote to a customer review.
 
@@ -20,11 +21,25 @@ Responses don’t appear in the App Store instantly. Allow some time for the App
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `CustomerReviewResponseV1CreateRequest`
+
 The request body of the customer review response.
+
+## Responses
+
+- `201` Created (`CustomerReviewResponseV1Response`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `409` Conflict (`ErrorResponse`, `application/json`): The provided resource data isn’t valid.
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Delete a response to a customer review](delete-v1-customerreviewresponses-_id_.md)
+### Creating, Updating, and Deleting Review Responses
+- [Delete a response to a customer review](./delete-v1-customerreviewresponses-_id_.md)
   Delete a specific response you wrote to a customer review.
 
 

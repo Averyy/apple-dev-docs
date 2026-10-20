@@ -1,7 +1,8 @@
 # CKDBPermissionType
 
 **Framework**: CKTool JS  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The participant’s read and write permissions.
 
@@ -10,7 +11,7 @@ The participant’s read and write permissions.
 
 ## Declaration
 
-```swift
+```
 interface CKDBPermissionType {
 	const string NONE;
 	const string READ_ONLY;
@@ -30,22 +31,23 @@ import { CKDBPermissionType } from "@apple/cktool.database";
 ## Topics
 
 ### Enumeration Cases
-- [NONE](ckdbpermissiontype/none.md)
-- [READ_ONLY](ckdbpermissiontype/read_only.md)
-- [READ_WRITE](ckdbpermissiontype/read_write.md)
-- [UNKNOWN](ckdbpermissiontype/unknown.md)
+- [NONE](./ckdbpermissiontype/none.md)
+- [READ_ONLY](./ckdbpermissiontype/read_only.md)
+- [READ_WRITE](./ckdbpermissiontype/read_write.md)
+- [UNKNOWN](./ckdbpermissiontype/unknown.md)
 
 ## See Also
 
-- [CKDBQueryFilterType](ckdbqueryfiltertype.md)
+### Enumerations
+- [CKDBQueryFilterType](./ckdbqueryfiltertype.md)
   An object that represents the type of a filter that indicates the comparison operator when applying the filter.
-- [CKDBQuerySortOrder](ckdbquerysortorder.md)
+- [CKDBQuerySortOrder](./ckdbquerysortorder.md)
   An enumeration that represents the order to use when sorting records.
-- [CKDBRecordReferenceAction](ckdbrecordreferenceaction.md)
+- [CKDBRecordReferenceAction](./ckdbrecordreferenceaction.md)
   An object that represents the action to be performed for the referenced record.
-- [CKDBShareAcceptanceStatus](ckdbshareacceptancestatus.md)
+- [CKDBShareAcceptanceStatus](./ckdbshareacceptancestatus.md)
   An enumeration that indicates the status of accepting the shared record.
-- [CKDBShareParticipantType](ckdbshareparticipanttype.md)
+- [CKDBShareParticipantType](./ckdbshareparticipanttype.md)
   An enumeration that represents the type of a share participant.
 
 

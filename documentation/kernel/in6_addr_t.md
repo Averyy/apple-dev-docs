@@ -1,14 +1,15 @@
 # in6_addr_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 typedef struct in6_addr in6_addr_t;
 ```
 

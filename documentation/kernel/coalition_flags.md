@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum coalition_flags : unsigned int {
     ...
 };
@@ -17,10 +17,10 @@ enum coalition_flags : unsigned int {
 ## Topics
 
 ### Constants
-- [kCoalitionPrivileged](coalition_flags/kcoalitionprivileged.md)
-- [kCoalitionReaped](coalition_flags/kcoalitionreaped.md)
-- [kCoalitionTermRequested](coalition_flags/kcoalitiontermrequested.md)
-- [kCoalitionTerminated](coalition_flags/kcoalitionterminated.md)
+- [kCoalitionPrivileged](./coalition_flags/kcoalitionprivileged.md)
+- [kCoalitionReaped](./coalition_flags/kcoalitionreaped.md)
+- [kCoalitionTermRequested](./coalition_flags/kcoalitiontermrequested.md)
+- [kCoalitionTerminated](./coalition_flags/kcoalitionterminated.md)
 
 
 ---

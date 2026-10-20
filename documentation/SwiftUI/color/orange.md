@@ -1,7 +1,8 @@
 # orange
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A context-dependent orange color suitable for use in UI elements.
 
@@ -22,35 +23,36 @@ static let orange: Color
 
 ## See Also
 
-- [static let black: Color](color/black.md)
+### Getting standard colors
+- [static let black: Color](./black.md)
   A black color suitable for use in UI elements.
-- [static let blue: Color](color/blue.md)
+- [static let blue: Color](./blue.md)
   A context-dependent blue color suitable for use in UI elements.
-- [static let brown: Color](color/brown.md)
+- [static let brown: Color](./brown.md)
   A context-dependent brown color suitable for use in UI elements.
-- [static let clear: Color](color/clear.md)
+- [static let clear: Color](./clear.md)
   A clear color suitable for use in UI elements.
-- [static let cyan: Color](color/cyan.md)
+- [static let cyan: Color](./cyan.md)
   A context-dependent cyan color suitable for use in UI elements.
-- [static let gray: Color](color/gray.md)
+- [static let gray: Color](./gray.md)
   A context-dependent gray color suitable for use in UI elements.
-- [static let green: Color](color/green.md)
+- [static let green: Color](./green.md)
   A context-dependent green color suitable for use in UI elements.
-- [static let indigo: Color](color/indigo.md)
+- [static let indigo: Color](./indigo.md)
   A context-dependent indigo color suitable for use in UI elements.
-- [static let mint: Color](color/mint.md)
+- [static let mint: Color](./mint.md)
   A context-dependent mint color suitable for use in UI elements.
-- [static let pink: Color](color/pink.md)
+- [static let pink: Color](./pink.md)
   A context-dependent pink color suitable for use in UI elements.
-- [static let purple: Color](color/purple.md)
+- [static let purple: Color](./purple.md)
   A context-dependent purple color suitable for use in UI elements.
-- [static let red: Color](color/red.md)
+- [static let red: Color](./red.md)
   A context-dependent red color suitable for use in UI elements.
-- [static let teal: Color](color/teal.md)
+- [static let teal: Color](./teal.md)
   A context-dependent teal color suitable for use in UI elements.
-- [static let white: Color](color/white.md)
+- [static let white: Color](./white.md)
   A white color suitable for use in UI elements.
-- [static let yellow: Color](color/yellow.md)
+- [static let yellow: Color](./yellow.md)
   A context-dependent yellow color suitable for use in UI elements.
 
 

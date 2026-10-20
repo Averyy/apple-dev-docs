@@ -1,7 +1,8 @@
 # writingDirection
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The writing direction of the text.
 
@@ -22,11 +23,11 @@ static let writingDirection: NSAttributedString.Key
 
 #### Discussion
 
-The value of this attribute is an [`NSArray`](nsarray.md) object containing [`NSNumber`](nsnumber.md) objects representing the nested levels of writing direction overrides, in order from outermost to innermost.
+The value of this attribute is an [`NSArray`](../../nsarray.md) object containing [`NSNumber`](../../nsnumber.md) objects representing the nested levels of writing direction overrides, in order from outermost to innermost.
 
-This attribute provides a means to override the default bidirectional text algorithm, equivalent to using the Unicode bidi control characters `LRE`, `RLE`, `LRO`, or `RLO` paired with `PDF`, but as a higher-level attribute. (See [`Unicode Standard Annex #9`](https://developer.apple.comhttp://unicode.org/reports/tr9/) for information about the Unicode bidi formatting codes.) The `NSWritingDirectionAttributeName` constant is a character-level attribute that provides a higher-level alternative to the inclusion of explicit bidirectional control characters in text. It is the `NSAttributedString` equivalent of the HTML markup using `bdo` element with the `dir` attribute.
+This attribute provides a means to override the default bidirectional text algorithm, equivalent to using the Unicode bidi control characters `LRE`, `RLE`, `LRO`, or `RLO` paired with `PDF`, but as a higher-level attribute. (See [Unicode Standard Annex #9](http://unicode.org/reports/tr9/) for information about the Unicode bidi formatting codes.) The `NSWritingDirectionAttributeName` constant is a character-level attribute that provides a higher-level alternative to the inclusion of explicit bidirectional control characters in text. It is the `NSAttributedString` equivalent of the HTML markup using `bdo` element with the `dir` attribute.
 
-The values of the `NSNumber` objects should be `0`, `1`, `2`, or `3`, for `LRE`, `RLE`, `LRO`, or `RLO` respectively, and combinations of [`NSWritingDirection.leftToRight`](https://developer.apple.com/documentation/appkit/nswritingdirection/lefttoright) and [`NSWritingDirection.rightToLeft`](https://developer.apple.com/documentation/appkit/nswritingdirection/righttoleft) with [`NSTextWritingDirectionEmbedding`](https://developer.apple.com/documentation/appkit/nstextwritingdirectionembedding) or `NSTextWritingDirectionOverride`, as shown in the following table.
+The values of the `NSNumber` objects should be `0`, `1`, `2`, or `3`, for `LRE`, `RLE`, `LRO`, or `RLO` respectively, and combinations of [`NSWritingDirection.leftToRight`](../../../AppKit/nswritingdirection/lefttoright.md) and [`NSWritingDirection.rightToLeft`](../../../AppKit/nswritingdirection/righttoleft.md) with [`NSTextWritingDirectionEmbedding`](../../../AppKit/nstextwritingdirectionembedding.md) or `NSTextWritingDirectionOverride`, as shown in the following table.
 
 | Array NSNumber Values | Unicode Control Characters | Writing Direction Constants |
 | --- | --- | --- |
@@ -37,35 +38,36 @@ The values of the `NSNumber` objects should be `0`, `1`, `2`, or `3`, for `LRE`,
 
 ## See Also
 
-- [static let backgroundColor: NSAttributedString.Key](nsattributedstring/key/backgroundcolor.md)
+### Getting rendering attribute keys
+- [static let backgroundColor: NSAttributedString.Key](./backgroundcolor.md)
   The color of the background behind the text.
-- [static let baselineOffset: NSAttributedString.Key](nsattributedstring/key/baselineoffset.md)
+- [static let baselineOffset: NSAttributedString.Key](./baselineoffset.md)
   The vertical offset for the position of the text.
-- [static let font: NSAttributedString.Key](nsattributedstring/key/font.md)
+- [static let font: NSAttributedString.Key](./font.md)
   The font of the text.
-- [static let foregroundColor: NSAttributedString.Key](nsattributedstring/key/foregroundcolor.md)
+- [static let foregroundColor: NSAttributedString.Key](./foregroundcolor.md)
   The color of the text.
-- [static let glyphInfo: NSAttributedString.Key](nsattributedstring/key/glyphinfo.md)
+- [static let glyphInfo: NSAttributedString.Key](./glyphinfo.md)
   The name of a glyph info object.
-- [static let kern: NSAttributedString.Key](nsattributedstring/key/kern.md)
+- [static let kern: NSAttributedString.Key](./kern.md)
   The kerning of the text.
-- [static let ligature: NSAttributedString.Key](nsattributedstring/key/ligature.md)
+- [static let ligature: NSAttributedString.Key](./ligature.md)
   The ligature of the text.
-- [static let paragraphStyle: NSAttributedString.Key](nsattributedstring/key/paragraphstyle.md)
+- [static let paragraphStyle: NSAttributedString.Key](./paragraphstyle.md)
   The paragraph style of the text.
-- [static let strikethroughColor: NSAttributedString.Key](nsattributedstring/key/strikethroughcolor.md)
+- [static let strikethroughColor: NSAttributedString.Key](./strikethroughcolor.md)
   The color of the strikethrough.
-- [static let strikethroughStyle: NSAttributedString.Key](nsattributedstring/key/strikethroughstyle.md)
+- [static let strikethroughStyle: NSAttributedString.Key](./strikethroughstyle.md)
   The strikethrough style of the text.
-- [static let strokeColor: NSAttributedString.Key](nsattributedstring/key/strokecolor.md)
+- [static let strokeColor: NSAttributedString.Key](./strokecolor.md)
   The color of the stroke.
-- [static let strokeWidth: NSAttributedString.Key](nsattributedstring/key/strokewidth.md)
+- [static let strokeWidth: NSAttributedString.Key](./strokewidth.md)
   The width of the stroke.
-- [static let superscript: NSAttributedString.Key](nsattributedstring/key/superscript.md)
+- [static let superscript: NSAttributedString.Key](./superscript.md)
   The superscript of the text.
-- [static let tracking: NSAttributedString.Key](nsattributedstring/key/tracking.md)
+- [static let tracking: NSAttributedString.Key](./tracking.md)
   The amount to modify the default tracking.
-- [static let underlineColor: NSAttributedString.Key](nsattributedstring/key/underlinecolor.md)
+- [static let underlineColor: NSAttributedString.Key](./underlinecolor.md)
   The color of the underline.
 
 

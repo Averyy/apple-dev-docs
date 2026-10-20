@@ -1,7 +1,8 @@
 # polygonApproximation(epsilon:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Simplifies the contour to a polygon using a Ramer-Douglas-Peucker algorithm.
 
@@ -19,6 +20,10 @@ Simplifies the contour to a polygon using a Ramer-Douglas-Peucker algorithm.
 func polygonApproximation(epsilon: Float) throws -> VNContour
 ```
 
+```objc
+- (VNContour *) polygonApproximationWithEpsilon:(float) epsilon error:(NSError **) error;
+```
+
 #### Return Value
 
 A simplified polygon contour from the points of the original contour.
@@ -29,15 +34,16 @@ A simplified polygon contour from the points of the original contour.
 
 ## See Also
 
-- [var aspectRatio: Float](vncontour/aspectratio.md)
+### Inspecting the Contour
+- [var aspectRatio: Float](./aspectratio.md)
   The aspect ratio of the contour.
-- [var indexPath: IndexPath](vncontour/indexpath.md)
+- [var indexPath: IndexPath](./indexpath.md)
   The contour object’s index path.
-- [var normalizedPath: CGPath](vncontour/normalizedpath.md)
+- [var normalizedPath: CGPath](./normalizedpath.md)
   The contour object as a path in normalized coordinates.
-- [var pointCount: Int](vncontour/pointcount.md)
+- [var pointCount: Int](./pointcount.md)
   The contour’s number of points.
-- [var normalizedPoints: [simd_float2]](vncontour/normalizedpoints-8n2s5.md)
+- [var normalizedPoints: [simd_float2]](./normalizedpoints-8n2s5.md)
   The contour’s array of points in normalized coordinates.
 
 

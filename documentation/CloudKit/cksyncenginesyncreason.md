@@ -1,7 +1,8 @@
 # CKSyncEngineSyncReason
 
 **Framework**: CloudKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Describes the reason for a sync operation.
 
@@ -20,25 +21,29 @@ Describes the reason for a sync operation.
 enum CKSyncEngineSyncReason
 ```
 
+```c
+enum CKSyncEngineSyncReason : NSInteger;
+```
+
 ## Topics
 
 ### Sync reasons
-- [CKSyncEngineSyncReason.scheduled](cksyncenginesyncreason/scheduled.md)
+- [CKSyncEngineSyncReason.scheduled](./cksyncenginesyncreason/scheduled.md)
   The sync engine automatically scheduled this sync.
-- [CKSyncEngineSyncReason.manual](cksyncenginesyncreason/manual.md)
+- [CKSyncEngineSyncReason.manual](./cksyncenginesyncreason/manual.md)
   A manual sync operation.
 ### Initializers
-- [init?(rawValue: Int)](cksyncenginesyncreason/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cksyncenginesyncreason/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

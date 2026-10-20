@@ -1,7 +1,8 @@
 # AttributedTextSelection.Indices.ranges(_:)
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The range-set of selected characters.
 

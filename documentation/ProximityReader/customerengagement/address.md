@@ -1,7 +1,8 @@
 # CustomerEngagement.Address
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A customer’s address collected during a customer engagement session.
 
@@ -19,28 +20,29 @@ struct Address
 ## Topics
 
 ### Getting customer details
-- [let emailAddress: String?](customerengagement/address/emailaddress.md)
+- [let emailAddress: String?](./address/emailaddress.md)
   The customer’s email address.
-- [let name: PersonNameComponents](customerengagement/address/name.md)
+- [let name: PersonNameComponents](./address/name.md)
   The customer’s full name.
-- [let phoneNumber: CNPhoneNumber?](customerengagement/address/phonenumber.md)
+- [let phoneNumber: CNPhoneNumber?](./address/phonenumber.md)
   The customer’s phone number.
-- [let postalAddress: CNPostalAddress](customerengagement/address/postaladdress.md)
+- [let postalAddress: CNPostalAddress](./address/postaladdress.md)
   The customer’s postal address.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [CustomerEngagement.CustomerInfo](customerengagement/customerinfo.md)
+### Getting customer information
+- [CustomerEngagement.CustomerInfo](./customerinfo.md)
   A response structure that describes customer information.
-- [CustomerEngagement.SignUp](customerengagement/signup.md)
+- [CustomerEngagement.SignUp](./signup.md)
   Contact information and marketing consent selections a customer provides during a sign-up request.
-- [CustomerEngagement.ShoppingCart](customerengagement/shoppingcart.md)
+- [CustomerEngagement.ShoppingCart](./shoppingcart.md)
   A structure that describes the shopping cart content.
 
 

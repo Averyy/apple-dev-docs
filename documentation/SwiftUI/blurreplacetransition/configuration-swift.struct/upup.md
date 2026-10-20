@@ -1,7 +1,8 @@
 # upUp
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A configuration that requests a transition that scales the view up while both removing and inserting it.
 
@@ -22,7 +23,8 @@ static let upUp: BlurReplaceTransition.Configuration
 
 ## See Also
 
-- [static let downUp: BlurReplaceTransition.Configuration](blurreplacetransition/configuration-swift.struct/downup.md)
+### Getting the transition configuration
+- [static let downUp: BlurReplaceTransition.Configuration](./downup.md)
   A configuration that requests a transition that scales the view down while removing it and up while inserting it.
 
 

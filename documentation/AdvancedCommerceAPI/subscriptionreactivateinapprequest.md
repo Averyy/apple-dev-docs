@@ -1,7 +1,8 @@
 # SubscriptionReactivateInAppRequest
 
 **Framework**: Advanced Commerce API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request your app provides to reactivate a subscription that has automatic renewal turned off.
 
@@ -10,14 +11,14 @@ The request your app provides to reactivate a subscription that has automatic re
 
 ## Declaration
 
-```swift
+```
 object SubscriptionReactivateInAppRequest
 ```
 
 ## Properties
 
 - `items` ([SubscriptionReactivateItem])
-- `operation` (string) *(required)*
+- `operation` (string) *(required)*: **Allowed Values**: `REACTIVATE_SUBSCRIPTION`
 - `requestInfo` (RequestInfo) *(required)*
 - `storefront` (storefront)
 - `transactionId` (transactionId) *(required)*
@@ -25,7 +26,8 @@ object SubscriptionReactivateInAppRequest
 
 ## See Also
 
-- [object SubscriptionReactivateItem](subscriptionreactivateitem.md)
+### Subscription reactivation in the app
+- [object SubscriptionReactivateItem](./subscriptionreactivateitem.md)
   An item in a subscription to reactivate.
 
 

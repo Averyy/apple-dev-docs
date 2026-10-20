@@ -1,14 +1,15 @@
 # BluetoothLEScanFilterWhitelist
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.10+ - Deprecated in 12.0
 
 ## Declaration
 
-```swift
+```c
 BluetoothLEScanFilterWhitelist = BluetoothLEScanFilterSafelist
 ```
 

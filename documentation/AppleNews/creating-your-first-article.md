@@ -1,12 +1,13 @@
 # Creating Your First Article
 
-**Framework**: Apple News
+**Framework**: Apple News  
+**Role**: Article
 
 Create an article with text components and component text styles.
 
 #### Overview
 
-In [`Setting Up the Introductory Tutorial`](setting-up-the-introductory-tutorial.md), you learned how to download the article structure bundle. To create an article, you must add some JSON objects (called *components*) to that bundle.
+In [Setting Up the Introductory Tutorial](./setting-up-the-introductory-tutorial.md), you learned how to download the article structure bundle. To create an article, you must add some JSON objects (called *components*) to that bundle.
 
 **On this page, you’ll learn how to add:**
 
@@ -18,10 +19,10 @@ In [`Setting Up the Introductory Tutorial`](setting-up-the-introductory-tutorial
 
 Components represent the content of your article, including the article’s title, introduction, byline, and body text.
 
-The example code [`Components: Copy This Code`](creating-your-first-article#Components-Copy-This-Code.md) is long, but you don’t need to understand all of it yet. All you’ll do here is copy and paste it.
+The example code [Components: Copy This Code](./creating-your-first-article.md#Components-Copy-This-Code) is long, but you don’t need to understand all of it yet. All you’ll do here is copy and paste it.
 
-1. Open the `article.json` file in the `News_Design_Tutorial_1_Article_Structure` folder that you created in [`Download the Article Bundle Examples`](setting-up-the-introductory-tutorial#Download-the-Article-Bundle-Examples.md).
-2. Copy the example code [`Components: Copy This Code`](creating-your-first-article#Components-Copy-This-Code.md).
+1. Open the `article.json` file in the `News_Design_Tutorial_1_Article_Structure` folder that you created in [Download the Article Bundle Examples](./setting-up-the-introductory-tutorial.md#Download-the-Article-Bundle-Examples).
+2. Copy the example code [Components: Copy This Code](./creating-your-first-article.md#Components-Copy-This-Code).
 3. In your working `article.json` `file`, select this line: `"components": [],`
 4. Paste the copied code into `article.json`, replacing the line that you selected in the previous step.
 
@@ -29,11 +30,11 @@ You have added fifteen components to your article.
 
 After you make this change in your code, you can preview your working `article.json` file in News Preview to see your content on the simulated device, without any added styles or layout.
 
-The body content in the example is in HTML. For details about using HTML tags to format articles, see [`Using HTML with Apple News Format`](using-html-with-apple-news-format.md).
+The body content in the example is in HTML. For details about using HTML tags to format articles, see [Using HTML with Apple News Format](./using-html-with-apple-news-format.md).
 
 > ❗ **Important**:  Make sure to save your `article.json` file. Do not change the file name.
 
-###### Components Copy This Code
+###### Components: Copy This Code
 
 ```json
   "components": [
@@ -110,14 +111,14 @@ The body content in the example is in HTML. For details about using HTML tags to
 
 You should always include a default text style to ensure a consistent appearance for the text components in your article. You can always override the default style, as needed, for one or more components.
 
-1. Copy the example code [`Default Text Style: Copy This Code`](creating-your-first-article#Default-Text-Style-Copy-This-Code.md).
+1. Copy the example code [Default Text Style: Copy This Code](./creating-your-first-article.md#Default-Text-Style-Copy-This-Code).
 2. Paste the code inside the `ArticleDocument.componentTextStyles` object in your `article.json` file, after the opening brace (`{`).
 
-Your code should look like the example code [`Default Text Style: Result`](creating-your-first-article#Default-Text-Style-Result.md).
+Your code should look like the example code [Default Text Style: Result](./creating-your-first-article.md#Default-Text-Style-Result).
 
 After you make this change in your code, you can preview your working `article.json` file in News Preview to see that all of your components are now using the `default` text style. You can tell because the text in the preview is bold and link text is yellow.
 
-###### Default Text Style Copy This Code
+###### Default Text Style: Copy This Code
 
 ```json
     "default": {
@@ -131,7 +132,7 @@ After you make this change in your code, you can preview your working `article.j
     }
 ```
 
-###### Default Text Style Result
+###### Default Text Style: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -152,20 +153,20 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Apply Default Text Styles By Component Role
+##### Apply Default Text Styles by Component Role
 
 Default `role`-specific component text styles ensure a consistent text style across all components with a given `role`, such as all `heading` components or all `body` components. You can always override these default styles, as needed, for one or more components.
 
-1. Copy the example code [`Default Component Text Styles: Copy This Code`](creating-your-first-article#Default-Component-Text-Styles-Copy-This-Code.md).
-2. Paste the code inside the `ArticleDocument.componentTextStyles` object in your `article.json` file, after the closing brace (`}`) for the content that you added in [`Apply a Default Text Style to the Article`](creating-your-first-article#Apply-a-Default-Text-Style-to-the-Article.md).
+1. Copy the example code [Default Component Text Styles: Copy This Code](./creating-your-first-article.md#Default-Component-Text-Styles-Copy-This-Code).
+2. Paste the code inside the `ArticleDocument.componentTextStyles` object in your `article.json` file, after the closing brace (`}`) for the content that you added in [Apply a Default Text Style to the Article](./creating-your-first-article.md#Apply-a-Default-Text-Style-to-the-Article).
 
-Your code should look like the example code [`Default Component Text Styles: Result`](creating-your-first-article#Default-Component-Text-Styles-Result.md).
+Your code should look like the example code [Default Component Text Styles: Result](./creating-your-first-article.md#Default-Component-Text-Styles-Result).
 
 This code adds default text styles for `body`, `title`, and other component types. The properties in these `role`-specific text styles override the same properties in the article’s default text style.
 
 After you make this change in your code, you can preview your working `article.json` file in News Preview to see that your article’s components now use the default component text styles for their types. For example, article body text uses a serif font, and the first four components in your article have gray text instead of black.
 
-###### Default Component Text Styles Copy This Code
+###### Default Component Text Styles: Copy This Code
 
 ```json
 ,
@@ -204,7 +205,7 @@ After you make this change in your code, you can preview your working `article.j
     }
 ```
 
-###### Default Component Text Styles Result
+###### Default Component Text Styles: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -255,12 +256,12 @@ A drop cap changes the size, position, and style of a text component’s first c
 
 > **Note**:  The drop cap text style was named `dropCapStyle` for this tutorial, but when you create your own articles, you can create your own component and style names.
 
-1. Copy the example code [`bodyFirstDropCap: Copy This Code`](creating-your-first-article#bodyFirstDropCap-Copy-This-Code.md).
+1. Copy the example code [bodyFirstDropCap: Copy This Code](./creating-your-first-article.md#bodyFirstDropCap-Copy-This-Code).
 2. Paste the code inside the `ArticleDocument.componentTextStyles` object in your `article.json` file, after the closing brace (`}`) of the last `ComponentTextStyle` object and before the closing brace for the whole `componentTextStyles` property.
 
-Your code should look like the example code [`bodyFirstDropCap: Result`](creating-your-first-article#bodyFirstDropCap-Result.md).
+Your code should look like the example code [bodyFirstDropCap: Result](./creating-your-first-article.md#bodyFirstDropCap-Result).
 
-###### Bodyfirstdropcap Copy This Code
+###### bodyFirstDropCap: Copy This Code
 
 ```json
 ,
@@ -273,7 +274,7 @@ Your code should look like the example code [`bodyFirstDropCap: Result`](creatin
     }
 ```
 
-###### Bodyfirstdropcap Result
+###### bodyFirstDropCap: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -301,11 +302,11 @@ Add this line inside your article’s first body component:
 
 `"textStyle": "bodyFirstDropCap",`
 
-Your code should look like the example code [`Drop Cap Style: Result`](creating-your-first-article#Drop-Cap-Style-Result.md).
+Your code should look like the example code [Drop Cap Style: Result](./creating-your-first-article.md#Drop-Cap-Style-Result).
 
 After you make this change in your code, you can preview your working `article.json` file in News Preview to see a drop cap in your article.
 
-###### Drop Cap Style Result
+###### Drop Cap Style: Result
 
 Ellipses (…) indicate lines of code that have been omitted from this example.
 
@@ -341,41 +342,43 @@ The drop cap in your article now uses the new height that you chose. If you chos
 
 ##### Next
 
-[`Positioning Text Components`](positioning-text-components.md)
+[Positioning Text Components](./positioning-text-components.md)
 
 ## See Also
 
-- [Defining and Applying Text Styles](defining-and-applying-text-styles.md)
+### Related Documentation
+- [Defining and Applying Text Styles](./defining-and-applying-text-styles.md)
   Define and apply custom, default, and inline text styles, or use HTML tags or Markdown syntax to style your text.
-- [Using HTML with Apple News Format](using-html-with-apple-news-format.md)
+- [Using HTML with Apple News Format](./using-html-with-apple-news-format.md)
   Use HTML formatting for text components.
-- [Applying Apple News Format Fonts](applying-apple-news-format-fonts.md)
+- [Applying Apple News Format Fonts](./applying-apple-news-format-fonts.md)
   Choose a font family for Apple News Format that’s supported in iOS, iPadOS, and macOS.
-- [Components](components.md)
+- [Components](./components.md)
   Understand the types of components that can make up an article.
-- [object ComponentTextStyle](../applenewsformat/componenttextstyle.md)
+- [object ComponentTextStyle](https://developer.apple.com/documentation/applenewsformat/componenttextstyle)
   The object for defining the style for a text component, including spacing, alignment, and drop caps.
-- [object DropCapStyle](../applenewsformat/dropcapstyle.md)
+- [object DropCapStyle](https://developer.apple.com/documentation/applenewsformat/dropcapstyle)
   The object for defining the drop cap text style to use in the first paragraph in a text component.
-- [Setting Up the Introductory Tutorial](setting-up-the-introductory-tutorial.md)
+### Introductory Design Tutorial
+- [Setting Up the Introductory Tutorial](./setting-up-the-introductory-tutorial.md)
   Download the tutorial files, and learn about what you’ll create in the introductory tutorial.
-- [Positioning Text Components](positioning-text-components.md)
+- [Positioning Text Components](./positioning-text-components.md)
   Adjust the positions of the text components in your article—for example, place the article body off-center.
-- [Adding a Divider](adding-a-divider.md)
+- [Adding a Divider](./adding-a-divider.md)
   Create a horizontal, styled divider that extends to the right edge of the display.
-- [Adding an Image and Captions](adding-an-image-and-captions.md)
+- [Adding an Image and Captions](./adding-an-image-and-captions.md)
   Create a photo that extends to both edges of the display, with captions that appear in the article layout and in full-screen view.
-- [Adding a Pull Quote](adding-a-pull-quote.md)
+- [Adding a Pull Quote](./adding-a-pull-quote.md)
   Break an existing body component into two components, and then insert a pull quote between them.
-- [Adding a Gallery of Images](adding-a-gallery-of-images.md)
+- [Adding a Gallery of Images](./adding-a-gallery-of-images.md)
   Display three images as a sequential gallery.
-- [Adding a Mosaic of Images](adding-a-mosaic-of-images.md)
+- [Adding a Mosaic of Images](./adding-a-mosaic-of-images.md)
   Display five images as mosaic tiles.
-- [Adding a Tweet](adding-a-tweet.md)
+- [Adding a Tweet](./adding-a-tweet.md)
   Include a tweet in an article.
-- [Adding a Podcast](adding-a-podcast.md)
+- [Adding a Podcast](./adding-a-podcast.md)
   Add a link to a podcast that displays the podcast artwork and the podcast show or episode information.
-- [Viewing the Finished Article for the Introductory Design Tutorial](viewing-the-finished-article-for-the-introductory-design-tutorial.md)
+- [Viewing the Finished Article for the Introductory Design Tutorial](./viewing-the-finished-article-for-the-introductory-design-tutorial.md)
   See the full JSON code from this tutorial.
 
 

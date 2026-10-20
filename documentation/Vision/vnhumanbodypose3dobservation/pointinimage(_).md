@@ -1,7 +1,8 @@
 # pointInImage(_:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a 2D point for the joint name you specify, relative to the input image.
 
@@ -19,9 +20,13 @@ Returns a 2D point for the joint name you specify, relative to the input image.
 func pointInImage(_ jointName: VNHumanBodyPose3DObservation.JointName) throws -> VNPoint
 ```
 
+```objc
+- (VNPoint *) pointInImageForJointName:(VNHumanBodyPose3DObservationJointName) jointName error:(NSError **) error;
+```
+
 ## Mentions
 
-- [Identifying 3D human body poses in images](identifying-3d-human-body-poses-in-images.md)
+- [Identifying 3D human body poses in images](../identifying-3d-human-body-poses-in-images.md)
 
 #### Return Value
 

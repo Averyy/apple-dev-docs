@@ -1,7 +1,8 @@
 # colorFormat
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel format to use for color textures.
 
@@ -23,7 +24,8 @@ Use this value to determine the pixel format for color textures in a frame. At c
 
 ## See Also
 
-- [var colorUsage: MTLTextureUsage](layerrenderer/configuration-swift.struct/colorusage.md)
+### Configuring the color textures
+- [var colorUsage: MTLTextureUsage](./colorusage.md)
   The texture usage value to apply to the layer’s color textures.
 
 

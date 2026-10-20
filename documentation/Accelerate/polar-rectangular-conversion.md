@@ -1,37 +1,39 @@
 # Polar-rectangular conversion
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 Convert each element of a vector between radius-angle and Cartesian pairs.
 
 ## Topics
 
 ### Converting polar coordinates to rectangular coordinates
-- [static func polarToRectangular<U>(U) -> [Float]](vdsp/polartorectangular(_:)-8upqj.md)
+- [static func polarToRectangular<U>(U) -> [Float]](./vdsp/polartorectangular%28_%29-8upqj.md)
   Returns single-precision rectangular coordinates converted from polar coordinates.
-- [static func polarToRectangular<U>(U) -> [Double]](vdsp/polartorectangular(_:)-jgv8.md)
+- [static func polarToRectangular<U>(U) -> [Double]](./vdsp/polartorectangular%28_%29-jgv8.md)
   Returns double-precision rectangular coordinates converted from polar coordinates.
-- [static func convert<U, V>(polarCoordinates: U, toRectangularCoordinates: inout V)](vdsp/convert(polarcoordinates:torectangularcoordinates:)-3vpjf.md)
+- [static func convert<U, V>(polarCoordinates: U, toRectangularCoordinates: inout V)](./vdsp/convert%28polarcoordinates,torectangularcoordinates%29-3vpjf.md)
   Converts single-precision polar coordinates to rectangular coordinates.
-- [static func convert<U, V>(polarCoordinates: U, toRectangularCoordinates: inout V)](vdsp/convert(polarcoordinates:torectangularcoordinates:)-22zz0.md)
+- [static func convert<U, V>(polarCoordinates: U, toRectangularCoordinates: inout V)](./vdsp/convert%28polarcoordinates,torectangularcoordinates%29-22zz0.md)
   Converts double-precision polar coordinates to rectangular coordinates.
 ### Converting rectangular coordinates to polar coordinates
-- [static func rectangularToPolar<U>(U) -> [Float]](vdsp/rectangulartopolar(_:)-5p4kg.md)
+- [static func rectangularToPolar<U>(U) -> [Float]](./vdsp/rectangulartopolar%28_%29-5p4kg.md)
   Returns single-precision polar coordinates converted from rectangular coordinates.
-- [static func rectangularToPolar<U>(U) -> [Double]](vdsp/rectangulartopolar(_:)-3txg1.md)
+- [static func rectangularToPolar<U>(U) -> [Double]](./vdsp/rectangulartopolar%28_%29-3txg1.md)
   Returns double-precision polar coordinates converted from rectangular coordinates.
-- [static func convert<U, V>(rectangularCoordinates: U, toPolarCoordinates: inout V)](vdsp/convert(rectangularcoordinates:topolarcoordinates:)-1zi4t.md)
+- [static func convert<U, V>(rectangularCoordinates: U, toPolarCoordinates: inout V)](./vdsp/convert%28rectangularcoordinates,topolarcoordinates%29-1zi4t.md)
   Converts single-precision rectangular coordinates to polar coordinates.
-- [static func convert<U, V>(rectangularCoordinates: U, toPolarCoordinates: inout V)](vdsp/convert(rectangularcoordinates:topolarcoordinates:)-84131.md)
+- [static func convert<U, V>(rectangularCoordinates: U, toPolarCoordinates: inout V)](./vdsp/convert%28rectangularcoordinates,topolarcoordinates%29-84131.md)
   Converts double-precision rectangular coordinates to polar coordinates.
 
 ## See Also
 
-- [Conversion to decibel equivalents](conversion-to-decibel-equivalents.md)
+### Vector conversion functions
+- [Conversion to decibel equivalents](./conversion-to-decibel-equivalents.md)
   Convert vectors that contain power or amplitude data to decibels.
-- [Type conversion](type-conversion.md)
+- [Type conversion](./type-conversion.md)
   Perform element-wise floating-point to integer and integer to floating-point conversion.
-- [Complex vector conversion](complex-vector-conversion.md)
+- [Complex vector conversion](./complex-vector-conversion.md)
   Perform element-wise split-complex to interleaved and interleaved to split-complex conversion.
 
 

@@ -1791,9 +1791,8 @@
       "hash": "1a6db171bc1e33474db1667a2d276e8096f44bb56d10790ac10e7ed1808f3ec8"
     },
     "https://developer.apple.com/documentation/vision/downloadableassetsrequeststatus/downloading(_:)": {
-      "etag": "W/\"e08821089001206af852f6c611c2114e\"",
       "file_path": "documentation/Vision/downloadableassetsrequeststatus/downloading(_).md",
-      "hash": "8e107df204a7c84ff608f9f06a73d52735eb2b9729def32d1e7a7d232b630568"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/vision/downloadableassetsrequeststatus/error(_:)": {
       "etag": "\"2619-65d55e1260e7a-df\"",
@@ -11116,9 +11115,8 @@
       "hash": "8ec9711fbedcc4b34dbe08faa648ca7225083b03cc978521cc9847b7bcd87b26"
     },
     "https://developer.apple.com/tutorials/data/documentation/vision/downloadableassetsrequeststatus/downloading(_:).json": {
-      "etag": "W/\"e08821089001206af852f6c611c2114e\"",
       "file_path": "documentation/Vision/downloadableassetsrequeststatus/downloading(_).md",
-      "hash": "8e107df204a7c84ff608f9f06a73d52735eb2b9729def32d1e7a7d232b630568"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/vision/downloadableassetsrequeststatus/downloading.json": {
       "etag": "\"23ba-65d55e1260e7a-df\"",
@@ -18662,6 +18660,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 3732
   }
 }

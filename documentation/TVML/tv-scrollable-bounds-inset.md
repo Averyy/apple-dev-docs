@@ -46,7 +46,7 @@ Here’s an example that sets the inset (unscrollable space) at the top to 50 po
 </stackTemplate>
 ```
 
-##### Values for Tv Scrollable Bounds Inset
+##### Values for tv-scrollable-bounds-inset
 
 - **Float**: The amount of unscrollable space, in points, set at  the top, right, bottom, and left of the `stackTemplate`.
 - **Float Float**: The first value determines the amount of unscrollable space in points at both the top and the bottom of the `stackTemplate`. The second value determines the amount of unscrollable space at both the right and left.
@@ -55,35 +55,36 @@ Here’s an example that sets the inset (unscrollable space) at the top to 50 po
 
 > ❗ **Important**: Currently, creating unscrollable regions at the left and right of the `stackTemplate `is not supported and will not have any effect.
 
-##### Elements That Use Tv Scrollable Bounds Inset
+##### Elements That Use tv-scrollable-bounds-inset
 
-- [`stackTemplate`](stacktemplate.md)
+- [stackTemplate](./stacktemplate.md)
 
 ## Topics
 
 ### Specifying Inset Location
-- [tv-scrollable-bounds-inset-top](tv-scrollable-bounds-inset-top.md)
+- [tv-scrollable-bounds-inset-top](./tv-scrollable-bounds-inset-top.md)
   Specifies the size of an unscrollable region only at the top of the stack template.
-- [tv-scrollable-bounds-inset-bottom](tv-scrollable-bounds-inset-bottom.md)
+- [tv-scrollable-bounds-inset-bottom](./tv-scrollable-bounds-inset-bottom.md)
   Specifies the size of an unscrollable region only at the bottom of the stack template.
 
 ## See Also
 
-- [Color Styles](color-styles.md)
+### Styles
+- [Color Styles](./color-styles.md)
   Provide the ability to customize an element’s color.
-- [Text Styles](text-styles.md)
+- [Text Styles](./text-styles.md)
   Change the text characteristics for an element.
-- [Element Shaping](element-shaping.md)
+- [Element Shaping](./element-shaping.md)
   Modify the size and shape of an element.
-- [Element Alignment and Spacing](element-alignment-and-spacing.md)
+- [Element Alignment and Spacing](./element-alignment-and-spacing.md)
   Modify the alignment and spacing between elements.
-- [tv-placeholder](tv-placeholder.md)
+- [tv-placeholder](./tv-placeholder.md)
   Sets a default image for an `img` or `monogram` element.
-- [tv-rating-style](tv-rating-style.md)
+- [tv-rating-style](./tv-rating-style.md)
   Sets the displayed image for rating a product.
-- [tv-transition](tv-transition.md)
+- [tv-transition](./tv-transition.md)
   Specifies how an element transitions on and off the screen.
-- [tv-text-highlight-style](tv-text-highlight-style.md)
+- [tv-text-highlight-style](./tv-text-highlight-style.md)
   Specifies how an element looks when it comes into focus.
 
 

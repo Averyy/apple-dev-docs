@@ -1,7 +1,8 @@
 # CSSM_DB_ATTRIBUTE_FORMAT_UINT32
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_DB_ATTRIBUTE_FORMAT_UINT32: Int { get }
+```
+
+```c
+CSSM_DB_ATTRIBUTE_FORMAT_UINT32
 ```
 
 

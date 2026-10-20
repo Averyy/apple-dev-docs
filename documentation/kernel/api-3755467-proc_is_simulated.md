@@ -1,14 +1,15 @@
 # proc_is_simulated
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 boolean_t proc_is_simulated(const proc_t);
 ```
 

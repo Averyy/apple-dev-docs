@@ -1,7 +1,8 @@
 # JobPriority.RawValue
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 17.0+

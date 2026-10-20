@@ -1,7 +1,8 @@
 # Disassociate Assets
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Disassociate assets from client user IDs and serial numbers.
 
@@ -10,7 +11,7 @@ Disassociate assets from client user IDs and serial numbers.
 
 ## Mentions
 
-- [Upgrading to the new management API](upgrading-to-the-new-management-api.md)
+- [Upgrading to the new management API](./upgrading-to-the-new-management-api.md)
 
 #### Discussion
 
@@ -18,7 +19,7 @@ Disassociate assets from client user IDs and serial numbers.
 
 **Request**:
 
-```None
+```
 {
     "assets": [
         {
@@ -54,11 +55,11 @@ Disassociate assets from client user IDs and serial numbers.
 ## Topics
 
 ### Request and Response
-- [object ManageAssetsRequest](manageassetsrequest.md)
+- [object ManageAssetsRequest](./manageassetsrequest.md)
   The request for asset management.
-- [object EventResponse](eventresponse.md)
+- [object EventResponse](./eventresponse.md)
   The response that contains the event identifier.
-- [object ErrorResponse](errorresponse.md)
+- [object ErrorResponse](./errorresponse.md)
   The response that contains the error that occurs.
 
 ## Endpoint
@@ -67,17 +68,28 @@ Disassociate assets from client user IDs and serial numbers.
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `ManageAssetsRequest`
+
 missing
+
+## Responses
+
+- `200` OK (`EventResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`): The provided token is invalid. It may either be missing or expired.
+- `500` Internal Server Error (`ErrorResponse`, `application/json`): An internal server error occurred. Try again later.
 
 ## See Also
 
-- [Get Assets](get-assets-4ski1.md)
+### Asset management
+- [Get Assets](./get-assets-4ski1.md)
   Get the set of assets that your organization manages.
-- [Associate Assets](associate-assets.md)
+- [Associate Assets](./associate-assets.md)
   Associate assets with client user IDs and serial numbers.
-- [Revoke Assets](revoke-assets.md)
+- [Revoke Assets](./revoke-assets.md)
   Revoke assets from client user IDs and serial numbers.
-- [Get Assignments](get-assignments-9wv1e.md)
+- [Get Assignments](./get-assignments-9wv1e.md)
   Get the set of current assignments for users or devices.
 
 

@@ -1,19 +1,24 @@
 # UICollectionViewUpdateItem.Action.reload
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case reload
+```
+
+```c
+UICollectionUpdateActionReload
 ```
 
 #### Discussion
@@ -22,10 +27,11 @@ Reload the item, which consists of deleting and then inserting the item.
 
 ## See Also
 
-- [UICollectionViewUpdateItem.Action.none](uicollectionviewupdateitem/action/none.md)
-- [UICollectionViewUpdateItem.Action.insert](uicollectionviewupdateitem/action/insert.md)
-- [UICollectionViewUpdateItem.Action.delete](uicollectionviewupdateitem/action/delete.md)
-- [UICollectionViewUpdateItem.Action.move](uicollectionviewupdateitem/action/move.md)
+### Constants
+- [UICollectionViewUpdateItem.Action.none](./none.md)
+- [UICollectionViewUpdateItem.Action.insert](./insert.md)
+- [UICollectionViewUpdateItem.Action.delete](./delete.md)
+- [UICollectionViewUpdateItem.Action.move](./move.md)
 
 
 ---

@@ -1,17 +1,18 @@
 # CISharpenLuminance
 
 **Framework**: Core Image  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The properties you use to configure a sharpen luminance filter.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,26 +20,32 @@ The properties you use to configure a sharpen luminance filter.
 protocol CISharpenLuminance : CIFilterProtocol
 ```
 
+```objc
+@protocol CISharpenLuminance <CIFilter>
+```
+
 ## Topics
 
 ### Instance Properties
-- [var inputImage: CIImage?](cisharpenluminance/inputimage.md)
+- [var inputImage: CIImage?](./cisharpenluminance/inputimage.md)
   The image to use as an input image.
-- [var radius: Float](cisharpenluminance/radius.md)
+- [var radius: Float](./cisharpenluminance/radius.md)
   The distance from the center of the effect.
-- [var sharpness: Float](cisharpenluminance/sharpness.md)
+- [var sharpness: Float](./cisharpenluminance/sharpness.md)
   The amount of sharpening to apply.
 
 ## Relationships
 
 ### Inherits From
-- [CIFilterProtocol](cifilterprotocol.md)
+- [CIFilterProtocol](./cifilterprotocol.md)
 
 ## See Also
 
-- [class func sharpenLuminance() -> any CIFilter & CISharpenLuminance](cifilter-swift.class/sharpenluminance.md)
+### Related Documentation
+- [class func sharpenLuminance() -> any CIFilter & CISharpenLuminance](./cifilter-swift.class/sharpenluminance%28%29.md)
   Applies a sharpening effect to an image.
-- [protocol CIUnsharpMask](ciunsharpmask.md)
+### Protocols
+- [protocol CIUnsharpMask](./ciunsharpmask.md)
   The properties you use to configure an unsharp mask filter.
 
 

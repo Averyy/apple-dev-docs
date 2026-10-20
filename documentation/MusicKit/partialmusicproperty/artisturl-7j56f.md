@@ -1,7 +1,8 @@
 # artistURL
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the extended attribute property that returns the artist’s URL.
 
@@ -19,6 +20,8 @@ An identifier for the extended attribute property that returns the artist’s UR
 ```swift
 static var artistURL: MusicExtendedAttributeProperty<MusicVideo, URL> { get }
 ```
+
+Available when `Root` is `MusicVideo`.
 
 
 ---

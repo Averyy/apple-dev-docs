@@ -1,7 +1,8 @@
 # complexConstant(realPart:imaginaryPart:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a complex constant op with the MPSDataTypeComplexFloat32 data type and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a complex constant op with the MPSDataTypeComplexFloat32 data type and r
 
 ```swift
 func complexConstant(realPart: Double, imaginaryPart: Double) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) constantWithRealPart:(double) realPart imaginaryPart:(double) imaginaryPart;
 ```
 
 #### Return Value

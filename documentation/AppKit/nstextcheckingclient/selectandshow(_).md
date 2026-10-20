@@ -2,10 +2,11 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -13,15 +14,20 @@
 func selectAndShow(_ range: NSRange)
 ```
 
+```objc
+- (void) selectAndShowRange:(NSRange) range;
+```
+
 ## See Also
 
-- [func addAnnotations([NSAttributedString.Key : String], range: NSRange)](nstextcheckingclient/addannotations(_:range:).md)
-- [func annotatedSubstring(forProposedRange: NSRange, actualRange: NSRangePointer?) -> NSAttributedString?](nstextcheckingclient/annotatedsubstring(forproposedrange:actualrange:).md)
-- [func candidateListTouchBarItem() -> NSCandidateListTouchBarItem<AnyObject>?](nstextcheckingclient/candidatelisttouchbaritem.md)
-- [func removeAnnotation(NSAttributedString.Key, range: NSRange)](nstextcheckingclient/removeannotation(_:range:).md)
-- [func replaceCharacters(in: NSRange, withAnnotatedString: NSAttributedString)](nstextcheckingclient/replacecharacters(in:withannotatedstring:).md)
-- [func setAnnotations([NSAttributedString.Key : String], range: NSRange)](nstextcheckingclient/setannotations(_:range:).md)
-- [func view(for: NSRange, firstRect: NSRectPointer?, actualRange: NSRangePointer?) -> NSView?](nstextcheckingclient/view(for:firstrect:actualrange:).md)
+### Instance Methods
+- [func addAnnotations([NSAttributedString.Key : String], range: NSRange)](./addannotations%28_,range%29.md)
+- [func annotatedSubstring(forProposedRange: NSRange, actualRange: NSRangePointer?) -> NSAttributedString?](./annotatedsubstring%28forproposedrange,actualrange%29.md)
+- [func candidateListTouchBarItem() -> NSCandidateListTouchBarItem<AnyObject>?](./candidatelisttouchbaritem%28%29.md)
+- [func removeAnnotation(NSAttributedString.Key, range: NSRange)](./removeannotation%28_,range%29.md)
+- [func replaceCharacters(in: NSRange, withAnnotatedString: NSAttributedString)](./replacecharacters%28in,withannotatedstring%29.md)
+- [func setAnnotations([NSAttributedString.Key : String], range: NSRange)](./setannotations%28_,range%29.md)
+- [func view(for: NSRange, firstRect: NSRectPointer?, actualRange: NSRangePointer?) -> NSView?](./view%28for,firstrect,actualrange%29.md)
 
 
 ---

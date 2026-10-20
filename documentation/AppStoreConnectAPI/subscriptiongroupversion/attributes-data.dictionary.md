@@ -1,7 +1,8 @@
 # SubscriptionGroupVersion.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a subscription group version resource.
 
@@ -10,18 +11,19 @@ Attributes that describe a subscription group version resource.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionGroupVersion.Attributes
 ```
 
 ## Properties
 
 - `version` (integer)
-- `state` (string)
+- `state` (string): **Allowed Values**: `PREPARE_FOR_SUBMISSION`, `READY_FOR_REVIEW`, `WAITING_FOR_REVIEW`, `IN_REVIEW`, `ACCEPTED`, `APPROVED`, `REPLACED_WITH_NEW_VERSION`, `REJECTED`, `DEVELOPER_REJECTED`
 
 ## See Also
 
-- [object SubscriptionGroupVersion.Relationships](subscriptiongroupversion/relationships-data.dictionary.md)
+### Objects and types
+- [object SubscriptionGroupVersion.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

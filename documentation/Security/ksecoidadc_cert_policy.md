@@ -1,7 +1,8 @@
 # kSecOIDADC_CERT_POLICY
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 let kSecOIDADC_CERT_POLICY: CFString
+```
+
+```c
+extern CFStringRef const kSecOIDADC_CERT_POLICY;
 ```
 
 

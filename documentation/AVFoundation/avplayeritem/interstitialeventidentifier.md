@@ -1,7 +1,8 @@
 # interstitialEventIdentifier
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the AVPlayerInterstitialEvent that created this item, or nil if the item was not created from an interstitial event.
 
@@ -19,6 +20,10 @@ The identifier of the AVPlayerInterstitialEvent that created this item, or nil i
 ```swift
 nonisolated
 var interstitialEventIdentifier: String? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSString * interstitialEventIdentifier;
 ```
 
 

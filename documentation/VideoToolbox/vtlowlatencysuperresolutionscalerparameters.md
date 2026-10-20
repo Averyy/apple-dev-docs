@@ -1,7 +1,8 @@
 # VTLowLatencySuperResolutionScalerParameters
 
 **Framework**: Video Toolbox  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains both input and output parameters that the low-latency super-resolution scaler frame processor needs.
 
@@ -19,6 +20,10 @@ An object that contains both input and output parameters that the low-latency su
 class VTLowLatencySuperResolutionScalerParameters
 ```
 
+```objc
+@interface VTLowLatencySuperResolutionScalerParameters : NSObject
+```
+
 #### Overview
 
 Use this object in the `processWithParameters` call of `VTFrameProcessor` class.
@@ -28,28 +33,29 @@ Use this object in the `processWithParameters` call of `VTFrameProcessor` class.
 ## Topics
 
 ### Creating a parameters object
-- [init(sourceFrame: VTFrameProcessorFrame, destinationFrame: VTFrameProcessorFrame)](vtlowlatencysuperresolutionscalerparameters/init(sourceframe:destinationframe:).md)
+- [init(sourceFrame: VTFrameProcessorFrame, destinationFrame: VTFrameProcessorFrame)](./vtlowlatencysuperresolutionscalerparameters/init%28sourceframe,destinationframe%29.md)
   Creates a new low-latency, super-resolution scaler parameters object.
 ### Inspecting the parameters
-- [var sourceFrame: VTFrameProcessorFrame](vtlowlatencysuperresolutionscalerparameters/sourceframe.md)
+- [var sourceFrame: VTFrameProcessorFrame](./vtlowlatencysuperresolutionscalerparameters/sourceframe.md)
   Current source frame, which must be non `nil`.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [VTFrameProcessorParameters](vtframeprocessorparameters.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [VTFrameProcessorParameters](./vtframeprocessorparameters.md)
 
 ## See Also
 
-- [class VTLowLatencySuperResolutionScalerConfiguration](vtlowlatencysuperresolutionscalerconfiguration.md)
+### Low-latency super resolution
+- [class VTLowLatencySuperResolutionScalerConfiguration](./vtlowlatencysuperresolutionscalerconfiguration.md)
   An object you use to configure frame processor for low-latency super-resolution scaler processing.
 
 

@@ -1,14 +1,15 @@
 # msgh_id
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 mach_msg_id_t msgh_id;
 ```
 

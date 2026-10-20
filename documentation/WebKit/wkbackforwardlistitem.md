@@ -1,7 +1,8 @@
 # WKBackForwardListItem
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of a webpage that the web view previously visited.
 
@@ -19,49 +20,54 @@ A representation of a webpage that the web view previously visited.
 class WKBackForwardListItem
 ```
 
+```objc
+@interface WKBackForwardListItem : NSObject
+```
+
 #### Overview
 
-Use a [`WKBackForwardListItem`](wkbackforwardlistitem.md) object to get information about previously visited webpages. This object identifies the page’s title and URL. It also identifes the URL that requested the webpage.
+Use a [`WKBackForwardListItem`](./wkbackforwardlistitem.md) object to get information about previously visited webpages. This object identifies the page’s title and URL. It also identifes the URL that requested the webpage.
 
-You don’t create [`WKBackForwardListItem`](wkbackforwardlistitem.md) objects directly. Instead, a [`WKBackForwardList`](wkbackforwardlist.md) object creates them in conjunction with its associated web view when the web view loads new pages.
+You don’t create [`WKBackForwardListItem`](./wkbackforwardlistitem.md) objects directly. Instead, a [`WKBackForwardList`](./wkbackforwardlist.md) object creates them in conjunction with its associated web view when the web view loads new pages.
 
 ## Topics
 
 ### Getting the Page-Specific Information
-- [var title: String?](wkbackforwardlistitem/title.md)
+- [var title: String?](./wkbackforwardlistitem/title.md)
   The title of the webpage this item represents.
-- [var url: URL](wkbackforwardlistitem/url.md)
+- [var url: URL](./wkbackforwardlistitem/url.md)
   The URL of the webpage this item represents.
 ### Getting the Requesting Page
-- [var initialURL: URL](wkbackforwardlistitem/initialurl.md)
+- [var initialURL: URL](./wkbackforwardlistitem/initialurl.md)
   The source URL that originally asked the web view to load this page.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [protocol WKNavigationDelegate](wknavigationdelegate.md)
+### Navigation
+- [protocol WKNavigationDelegate](./wknavigationdelegate.md)
   Methods for accepting or rejecting navigation changes, and for tracking the progress of navigation requests.
-- [class WKBackForwardList](wkbackforwardlist.md)
+- [class WKBackForwardList](./wkbackforwardlist.md)
   An object that manages the list of previously loaded webpages, which the web view uses for forward and backward navigation.
-- [class WKNavigation](wknavigation.md)
+- [class WKNavigation](./wknavigation.md)
   An object that tracks the loading progress of a webpage.
-- [class WKNavigationAction](wknavigationaction.md)
+- [class WKNavigationAction](./wknavigationaction.md)
   An object that contains information about an action that causes navigation to occur.
-- [class WKNavigationResponse](wknavigationresponse.md)
+- [class WKNavigationResponse](./wknavigationresponse.md)
   An object that contains the response to a navigation request, and which you use to make navigation-related policy decisions.
-- [class WKFormInfo](wkforminfo.md)
+- [class WKFormInfo](./wkforminfo.md)
 
 
 ---

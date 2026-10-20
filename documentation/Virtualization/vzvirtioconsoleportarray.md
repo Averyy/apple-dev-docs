@@ -1,7 +1,8 @@
 # VZVirtioConsolePortArray
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that represents a collection of Virtio console ports.
 
@@ -14,32 +15,38 @@ A class that represents a collection of Virtio console ports.
 class VZVirtioConsolePortArray
 ```
 
+```objc
+@interface VZVirtioConsolePortArray : NSObject
+```
+
 ## Topics
 
 ### Determining the number of ports
-- [var maximumPortCount: UInt32](vzvirtioconsoleportarray/maximumportcount.md)
+- [var maximumPortCount: UInt32](./vzvirtioconsoleportarray/maximumportcount.md)
   An unsigned integer that represents the maximum number of ports allocated by this device.
 ### Accessing a specific port
-- [subscript(Int) -> VZVirtioConsolePort?](vzvirtioconsoleportarray/subscript(_:).md)
+- [subscript(Int) -> VZVirtioConsolePort?](./vzvirtioconsoleportarray/subscript%28_%29.md)
   Returns the Virtio console port at the specified index.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZVirtioConsoleDevice](vzvirtioconsoledevice.md)
+### Related Documentation
+- [class VZVirtioConsoleDevice](./vzvirtioconsoledevice.md)
   A class that represents a Virtio console device in a virtual machine.
-- [class VZVirtioConsolePort](vzvirtioconsoleport.md)
+### Console ports
+- [class VZVirtioConsolePort](./vzvirtioconsoleport.md)
   A class that represents a Virtio console port in a VM.
 
 

@@ -1,7 +1,8 @@
 # AVAudioUnitEQFilterType.bandStop
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A type that represents a band-stop filter, also known as a notch filter.
 
@@ -10,7 +11,7 @@ A type that represents a band-stop filter, also known as a notch filter.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,31 +21,36 @@ A type that represents a band-stop filter, also known as a notch filter.
 case bandStop
 ```
 
+```c
+AVAudioUnitEQFilterTypeBandStop
+```
+
 #### Discussion
 
-The necessary parameters for this type are [`frequency`](avaudiouniteqfilterparameters/frequency.md) (center) and [`bandwidth`](avaudiouniteqfilterparameters/bandwidth.md).
+The necessary parameters for this type are [`frequency`](../avaudiouniteqfilterparameters/frequency.md) (center) and [`bandwidth`](../avaudiouniteqfilterparameters/bandwidth.md).
 
 ## See Also
 
-- [AVAudioUnitEQFilterType.parametric](avaudiouniteqfiltertype/parametric.md)
+### Choosing a filter type
+- [AVAudioUnitEQFilterType.parametric](./parametric.md)
   A type that represents a parametric filter that derives from a Butterworth analog prototype.
-- [AVAudioUnitEQFilterType.lowPass](avaudiouniteqfiltertype/lowpass.md)
+- [AVAudioUnitEQFilterType.lowPass](./lowpass.md)
   A type that represents a simple Butterworth second-order low-pass filter.
-- [AVAudioUnitEQFilterType.highPass](avaudiouniteqfiltertype/highpass.md)
+- [AVAudioUnitEQFilterType.highPass](./highpass.md)
   A type that represents a simple Butterworth second-order high-pass filter.
-- [AVAudioUnitEQFilterType.resonantLowPass](avaudiouniteqfiltertype/resonantlowpass.md)
+- [AVAudioUnitEQFilterType.resonantLowPass](./resonantlowpass.md)
   A type that represents a low-pass filter with resonance support using the bandwidth parameter.
-- [AVAudioUnitEQFilterType.resonantHighPass](avaudiouniteqfiltertype/resonanthighpass.md)
+- [AVAudioUnitEQFilterType.resonantHighPass](./resonanthighpass.md)
   A type that represents a high-pass filter with resonance support using the bandwidth parameter.
-- [AVAudioUnitEQFilterType.bandPass](avaudiouniteqfiltertype/bandpass.md)
+- [AVAudioUnitEQFilterType.bandPass](./bandpass.md)
   A type that represents a bandpass filter.
-- [AVAudioUnitEQFilterType.lowShelf](avaudiouniteqfiltertype/lowshelf.md)
+- [AVAudioUnitEQFilterType.lowShelf](./lowshelf.md)
   A type that represents a low-shelf filter.
-- [AVAudioUnitEQFilterType.highShelf](avaudiouniteqfiltertype/highshelf.md)
+- [AVAudioUnitEQFilterType.highShelf](./highshelf.md)
   A type that represents a high-shelf filter.
-- [AVAudioUnitEQFilterType.resonantLowShelf](avaudiouniteqfiltertype/resonantlowshelf.md)
+- [AVAudioUnitEQFilterType.resonantLowShelf](./resonantlowshelf.md)
   A type that represents a low-shelf filter with resonance support using the bandwidth parameter.
-- [AVAudioUnitEQFilterType.resonantHighShelf](avaudiouniteqfiltertype/resonanthighshelf.md)
+- [AVAudioUnitEQFilterType.resonantHighShelf](./resonanthighshelf.md)
   A type that represents a high-shelf filter with resonance support using the bandwidth parameter.
 
 

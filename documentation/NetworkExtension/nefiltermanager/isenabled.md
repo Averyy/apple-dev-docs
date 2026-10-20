@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean used to toggle the enabled state of the filter.
 
@@ -18,15 +19,20 @@ A Boolean used to toggle the enabled state of the filter.
 var isEnabled: Bool { get set }
 ```
 
+```objc
+@property (getter=isEnabled) BOOL enabled;
+```
+
 #### Discussion
 
-Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) and saving the configuration will disable all other network content filters on the system, and will start the filter’s Filter Provider extensions. Setting this property to false and saving the configuration will disable the filter and stop the filter’s Filter Provider extensions.
+Setting this property to [`true`](../../Swift/true.md) and saving the configuration will disable all other network content filters on the system, and will start the filter’s Filter Provider extensions. Setting this property to false and saving the configuration will disable the filter and stop the filter’s Filter Provider extensions.
 
 ## See Also
 
-- [var providerConfiguration: NEFilterProviderConfiguration?](nefiltermanager/providerconfiguration.md)
-  A [`NEFilterProviderConfiguration`](nefilterproviderconfiguration.md) object containing the filter configuration settings.
-- [var localizedDescription: String?](nefiltermanager/localizeddescription.md)
+### Accessing filter configuration properties
+- [var providerConfiguration: NEFilterProviderConfiguration?](./providerconfiguration.md)
+  A [`NEFilterProviderConfiguration`](../nefilterproviderconfiguration.md) object containing the filter configuration settings.
+- [var localizedDescription: String?](./localizeddescription.md)
   A string containing a description of the filter configuration.
 
 

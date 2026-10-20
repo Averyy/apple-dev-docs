@@ -1,7 +1,8 @@
 # enableFallback
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property to enable the use of cellular data when Wi-Fi connectivity is poor.
 
@@ -15,6 +16,10 @@ A property to enable the use of cellular data when Wi-Fi connectivity is poor.
 
 ```swift
 var enableFallback: Bool { get set }
+```
+
+```objc
+@property BOOL enableFallback;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # copy(_:to:count:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Copies a complex single-precision vector.
 
@@ -11,7 +12,7 @@ Copies a complex single-precision vector.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -54,7 +55,8 @@ The following code copies the complex elements in the source to the destination:
 
 ## See Also
 
-- [static func copy(DSPDoubleSplitComplex, to: inout DSPDoubleSplitComplex, count: Int)](vdsp/copy(_:to:count:)-7zpro.md)
+### Vector copying functions
+- [static func copy(DSPDoubleSplitComplex, to: inout DSPDoubleSplitComplex, count: Int)](./copy%28_,to,count%29-7zpro.md)
   Copies a complex double-precision vector.
 
 

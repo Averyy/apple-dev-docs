@@ -1,6 +1,7 @@
 # Git References
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: API Collection
 
 Read information about the canonical reference for a Git branch or tag.
 
@@ -14,28 +15,29 @@ The `scmGitReferences` resource represents the canonical Git reference for the G
 
 For example, if Xcode Cloud uses the `bug-fix` branch for a build, the canonical Git reference is `refs/heads/bug-fix` and the name is `bug-fix`. If Xcode Cloud starts a build for the `release-1.0` tag, the canonical name is `refs/tags/release-1.0` and the name is `release-1.0`.
 
-> **Note**:  This resource supports JSON web tokens with a lifetime of up to six months. For more information, see [`Determine the Appropriate Token Lifetime`](generating-tokens-for-api-requests#Determine-the-Appropriate-Token-Lifetime.md).
+> **Note**:  This resource supports JSON web tokens with a lifetime of up to six months. For more information, see [Determine the Appropriate Token Lifetime](./generating-tokens-for-api-requests.md#Determine-the-Appropriate-Token-Lifetime).
 
 ## Topics
 
 ### Getting Information About Git References
-- [Read git reference information](get-v1-scmgitreferences-_id_.md)
+- [Read git reference information](./get-v1-scmgitreferences-_id_.md)
   Get information about a specific Git reference.
 ### Objects
-- [object ScmGitReference](scmgitreference.md)
+- [object ScmGitReference](./scmgitreference.md)
   A Git branch, tag, or commit reference in a source code repository connected to Xcode Cloud.
-- [object ScmGitReferenceResponse](scmgitreferenceresponse.md)
+- [object ScmGitReferenceResponse](./scmgitreferenceresponse.md)
   The response body for endpoints that read a single SCM Git reference in Xcode Cloud.
-- [object ScmGitReferencesResponse](scmgitreferencesresponse.md)
+- [object ScmGitReferencesResponse](./scmgitreferencesresponse.md)
   The response body for endpoints that list Git references in an Xcode Cloud repository.
 
 ## See Also
 
-- [Providers](providers.md)
+### Source Code Management
+- [Providers](./providers.md)
   Read information about source code management providers you connected to Xcode Cloud.
-- [Repositories](repositories.md)
+- [Repositories](./repositories.md)
   Read detailed information for each repository Xcode Cloud can access, including Git references and pull requests.
-- [Pull Requests](pull-requests.md)
+- [Pull Requests](./pull-requests.md)
   Read pull request information such as source and destination branches.
 
 

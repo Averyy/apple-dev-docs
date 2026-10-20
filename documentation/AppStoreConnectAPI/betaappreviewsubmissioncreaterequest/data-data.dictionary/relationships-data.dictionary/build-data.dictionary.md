@@ -1,7 +1,8 @@
 # BetaAppReviewSubmissionCreateRequest.Data.Relationships.Build
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships to other resources that you can set with this request.
 
@@ -10,14 +11,14 @@ The relationships to other resources that you can set with this request.
 
 ## Declaration
 
-```swift
+```
 object BetaAppReviewSubmissionCreateRequest.Data.Relationships.Build
 ```
 
 ## Topics
 
 ### Objects
-- [object BetaAppReviewSubmissionCreateRequest.Data.Relationships.Build.Data](betaappreviewsubmissioncreaterequest/data-data.dictionary/relationships-data.dictionary/build-data.dictionary/data-data.dictionary.md)
+- [object BetaAppReviewSubmissionCreateRequest.Data.Relationships.Build.Data](./build-data.dictionary/data-data.dictionary.md)
   The type and ID of the resource that you’re relating with the resource you’re creating.
 
 ## Properties

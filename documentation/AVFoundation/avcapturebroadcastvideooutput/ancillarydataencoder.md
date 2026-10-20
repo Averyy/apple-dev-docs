@@ -1,7 +1,8 @@
 # ancillaryDataEncoder
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The AVCaptureAncillaryDataEncoder that sends per-frame lens/camera/user-defined acquisition data along with the video buffer.
 
@@ -16,6 +17,10 @@ The AVCaptureAncillaryDataEncoder that sends per-frame lens/camera/user-defined 
 
 ```swift
 var ancillaryDataEncoder: AVCaptureAncillaryDataEncoder { get }
+```
+
+```objc
+@property (nonatomic, readonly) AVCaptureAncillaryDataEncoder * ancillaryDataEncoder;
 ```
 
 #### Discussion

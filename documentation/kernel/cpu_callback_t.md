@@ -1,14 +1,15 @@
 # cpu_callback_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef bool (*cpu_callback_t)(void *param, enum cpu_event event, unsigned int cpu_or_cluster);
 ```
 

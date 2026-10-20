@@ -1,7 +1,8 @@
 # errSecUnsupportedQueryLimits
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The query limits are not supported.
 
@@ -18,6 +19,10 @@ The query limits are not supported.
 
 ```swift
 var errSecUnsupportedQueryLimits: OSStatus { get }
+```
+
+```c
+errSecUnsupportedQueryLimits
 ```
 
 

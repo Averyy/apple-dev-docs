@@ -1,7 +1,8 @@
 # Float.SIMDMaskScalar
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 8.0+
@@ -20,17 +21,18 @@ typealias SIMDMaskScalar = Int32
 
 ## See Also
 
-- [struct SIMD2Storage](float/simd2storage.md)
+### SIMD-Supporting Types
+- [struct SIMD2Storage](./simd2storage.md)
   Storage for a vector of two floating-point values.
-- [struct SIMD4Storage](float/simd4storage.md)
+- [struct SIMD4Storage](./simd4storage.md)
   Storage for a vector of four floating-point values.
-- [struct SIMD8Storage](float/simd8storage.md)
+- [struct SIMD8Storage](./simd8storage.md)
   Storage for a vector of eight floating-point values.
-- [struct SIMD16Storage](float/simd16storage.md)
+- [struct SIMD16Storage](./simd16storage.md)
   Storage for a vector of 16 floating-point values.
-- [struct SIMD32Storage](float/simd32storage.md)
+- [struct SIMD32Storage](./simd32storage.md)
   Storage for a vector of 32 floating-point values.
-- [struct SIMD64Storage](float/simd64storage.md)
+- [struct SIMD64Storage](./simd64storage.md)
   Storage for a vector of 64 floating-point values.
 
 

@@ -1,7 +1,8 @@
 # DASessionCreate(_:)
 
 **Framework**: Disk Arbitration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a new session.
 
@@ -15,6 +16,10 @@ Creates a new session.
 func DASessionCreate(_ allocator: CFAllocator?) -> DASession?
 ```
 
+```c
+extern DASessionRefDASessionCreate(CFAllocatorRef allocator);
+```
+
 #### Return Value
 
 A reference to a new DASession.
@@ -25,13 +30,14 @@ The caller of this function receives a reference to the returned object. The cal
 
 ## See Also
 
-- [func DASessionGetTypeID() -> CFTypeID](dasessiongettypeid().md)
+### Miscellaneous
+- [func DASessionGetTypeID() -> CFTypeID](./dasessiongettypeid%28%29.md)
   Returns the type identifier of all DASession instances.
-- [func DASessionScheduleWithRunLoop(DASession, CFRunLoop, CFString)](dasessionschedulewithrunloop(_:_:_:).md)
+- [func DASessionScheduleWithRunLoop(DASession, CFRunLoop, CFString)](./dasessionschedulewithrunloop%28_,_,_%29.md)
   Schedules the session on a run loop.
-- [func DASessionSetDispatchQueue(DASession, dispatch_queue_t?)](dasessionsetdispatchqueue(_:_:).md)
+- [func DASessionSetDispatchQueue(DASession, dispatch_queue_t?)](./dasessionsetdispatchqueue%28_,_%29.md)
   Schedules the session on a dispatch queue.
-- [func DASessionUnscheduleFromRunLoop(DASession, CFRunLoop, CFString)](dasessionunschedulefromrunloop(_:_:_:).md)
+- [func DASessionUnscheduleFromRunLoop(DASession, CFRunLoop, CFString)](./dasessionunschedulefromrunloop%28_,_,_%29.md)
   Unschedules the session from a run loop.
 
 

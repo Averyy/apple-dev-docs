@@ -1,7 +1,8 @@
 # AVCaptureDevice.WhiteBalanceGains
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that defines RGB white balance gain values.
 
@@ -17,40 +18,45 @@ A structure that defines RGB white balance gain values.
 struct WhiteBalanceGains
 ```
 
+```c
+typedef struct { ... } AVCaptureWhiteBalanceGains;
+```
+
 ## Topics
 
 ### Creating white balance gains
-- [init()](avcapturedevice/whitebalancegains/init.md)
+- [init()](./whitebalancegains/init%28%29.md)
   The default initializer for white balance gains.
-- [init(redGain: Float, greenGain: Float, blueGain: Float)](avcapturedevice/whitebalancegains/init(redgain:greengain:bluegain:).md)
+- [init(redGain: Float, greenGain: Float, blueGain: Float)](./whitebalancegains/init%28redgain,greengain,bluegain%29.md)
   Initializes a white balance gain from its red, green, and blue gain components.
 ### Isolating gain by color channel
-- [var blueGain: Float](avcapturedevice/whitebalancegains/bluegain.md)
+- [var blueGain: Float](./whitebalancegains/bluegain.md)
   The blue gain component of the white balance value.
-- [var greenGain: Float](avcapturedevice/whitebalancegains/greengain.md)
+- [var greenGain: Float](./whitebalancegains/greengain.md)
   The green gain component of the white balance value.
-- [var redGain: Float](avcapturedevice/whitebalancegains/redgain.md)
+- [var redGain: Float](./whitebalancegains/redgain.md)
   The red gain component of the white balance value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Sendable](../../Swift/sendable.md)
 
 ## See Also
 
-- [func chromaticityValues(for: AVCaptureDevice.WhiteBalanceGains) -> AVCaptureDevice.WhiteBalanceChromaticityValues](avcapturedevice/chromaticityvalues(for:).md)
+### Performing conversions
+- [func chromaticityValues(for: AVCaptureDevice.WhiteBalanceGains) -> AVCaptureDevice.WhiteBalanceChromaticityValues](./chromaticityvalues%28for%29.md)
   Converts device-specific white balance RGB gain values to device-independent chromaticity values.
-- [func temperatureAndTintValues(for: AVCaptureDevice.WhiteBalanceGains) -> AVCaptureDevice.WhiteBalanceTemperatureAndTintValues](avcapturedevice/temperatureandtintvalues(for:).md)
+- [func temperatureAndTintValues(for: AVCaptureDevice.WhiteBalanceGains) -> AVCaptureDevice.WhiteBalanceTemperatureAndTintValues](./temperatureandtintvalues%28for%29.md)
   Converts device-specific white balance RGB gain values to device-independent temperature and tint values.
-- [func deviceWhiteBalanceGains(for: AVCaptureDevice.WhiteBalanceChromaticityValues) -> AVCaptureDevice.WhiteBalanceGains](avcapturedevice/devicewhitebalancegains(for:)-9gdtw.md)
+- [func deviceWhiteBalanceGains(for: AVCaptureDevice.WhiteBalanceChromaticityValues) -> AVCaptureDevice.WhiteBalanceGains](./devicewhitebalancegains%28for%29-9gdtw.md)
   Converts device-independent chromaticity values to device-specific white balance RGB gain values.
-- [func deviceWhiteBalanceGains(for: AVCaptureDevice.WhiteBalanceTemperatureAndTintValues) -> AVCaptureDevice.WhiteBalanceGains](avcapturedevice/devicewhitebalancegains(for:)-3wtsa.md)
+- [func deviceWhiteBalanceGains(for: AVCaptureDevice.WhiteBalanceTemperatureAndTintValues) -> AVCaptureDevice.WhiteBalanceGains](./devicewhitebalancegains%28for%29-3wtsa.md)
   Converts device-independent temperature and tint values to device-specific white balance RGB gain values.
-- [AVCaptureDevice.WhiteBalanceChromaticityValues](avcapturedevice/whitebalancechromaticityvalues.md)
+- [AVCaptureDevice.WhiteBalanceChromaticityValues](./whitebalancechromaticityvalues.md)
   A structure that defines CIE 1931 xy chromaticity values.
-- [AVCaptureDevice.WhiteBalanceTemperatureAndTintValues](avcapturedevice/whitebalancetemperatureandtintvalues.md)
+- [AVCaptureDevice.WhiteBalanceTemperatureAndTintValues](./whitebalancetemperatureandtintvalues.md)
   A structure that defines temperature and tint values correlated to a white-balance color.
 
 

@@ -1,7 +1,8 @@
 # Product.PurchaseError
 
 **Framework**: StoreKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error information for product purchase errors.
 
@@ -22,56 +23,57 @@ enum PurchaseError
 
 #### Overview
 
-The [`purchase(options:)`](product/purchase(options:).md) function may throw a purchase error.
+The [`purchase(options:)`](./purchase%28options%29.md) function may throw a purchase error.
 
 ## Topics
 
 ### Getting Purchase Error Codes
-- [Product.PurchaseError.invalidOfferIdentifier](product/purchaseerror/invalidofferidentifier.md)
+- [Product.PurchaseError.invalidOfferIdentifier](./purchaseerror/invalidofferidentifier.md)
   The promotional offer identifier provided in the purchase options is invalid.
-- [Product.PurchaseError.productUnavailable](product/purchaseerror/productunavailable.md)
+- [Product.PurchaseError.productUnavailable](./purchaseerror/productunavailable.md)
   The product isn’t available.
-- [Product.PurchaseError.purchaseNotAllowed](product/purchaseerror/purchasenotallowed.md)
+- [Product.PurchaseError.purchaseNotAllowed](./purchaseerror/purchasenotallowed.md)
   The user isn’t allowed to make purchases.
-- [Product.PurchaseError.ineligibleForOffer](product/purchaseerror/ineligibleforoffer.md)
+- [Product.PurchaseError.ineligibleForOffer](./purchaseerror/ineligibleforoffer.md)
   The user isn’t eligible for the offer.
-- [Product.PurchaseError.invalidOfferPrice](product/purchaseerror/invalidofferprice.md)
+- [Product.PurchaseError.invalidOfferPrice](./purchaseerror/invalidofferprice.md)
   The price of the offer isn’t valid.
-- [Product.PurchaseError.invalidOfferSignature](product/purchaseerror/invalidoffersignature.md)
+- [Product.PurchaseError.invalidOfferSignature](./purchaseerror/invalidoffersignature.md)
   The offer signature isn’t valid.
-- [Product.PurchaseError.invalidQuantity](product/purchaseerror/invalidquantity.md)
+- [Product.PurchaseError.invalidQuantity](./purchaseerror/invalidquantity.md)
   The quantity to purchase is invalid.
-- [Product.PurchaseError.missingOfferParameters](product/purchaseerror/missingofferparameters.md)
+- [Product.PurchaseError.missingOfferParameters](./purchaseerror/missingofferparameters.md)
   The offer parameters are missing.
 ### Enumeration Cases
-- [Product.PurchaseError.paymentMethodBindingConfigurationRequired](product/purchaseerror/paymentmethodbindingconfigurationrequired.md)
-  The customer needs to add a payment method to their Apple Account before making a purchase; use [`PaymentMethodBinding`](paymentmethodbinding.md) to prompt the customer and bind the payment method.
+- [Product.PurchaseError.paymentMethodBindingConfigurationRequired](./purchaseerror/paymentmethodbindingconfigurationrequired.md)
+  The customer needs to add a payment method to their Apple Account before making a purchase; use [`PaymentMethodBinding`](../paymentmethodbinding.md) to prompt the customer and bind the payment method.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [LocalizedError](../../Foundation/localizederror.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func purchase(options: Set<Product.PurchaseOption>) async throws -> Product.PurchaseResult](product/purchase(options:).md)
+### Purchasing a product
+- [func purchase(options: Set<Product.PurchaseOption>) async throws -> Product.PurchaseResult](./purchase%28options%29.md)
   Initiates a purchase for the product with the App Store and displays the confirmation sheet.
-- [func purchase(confirmIn: some UIScene, options: Set<Product.PurchaseOption>) async throws -> Product.PurchaseResult](product/purchase(confirmin:options:)-6dj6y.md)
+- [func purchase(confirmIn: some UIScene, options: Set<Product.PurchaseOption>) async throws -> Product.PurchaseResult](./purchase%28confirmin,options%29-6dj6y.md)
   Initiates a purchase for the product with the App Store and displays the confirmation sheet.
-- [func purchase(confirmIn: UIViewController, options: Set<Product.PurchaseOption>) async throws -> Product.PurchaseResult](product/purchase(confirmin:options:)-3bivf.md)
+- [func purchase(confirmIn: UIViewController, options: Set<Product.PurchaseOption>) async throws -> Product.PurchaseResult](./purchase%28confirmin,options%29-3bivf.md)
   Processes a purchase for the product.
-- [func purchase(confirmIn: NSWindow, options: Set<Product.PurchaseOption>) async throws -> Product.PurchaseResult](product/purchase(confirmin:options:)-8eai6.md)
+- [func purchase(confirmIn: NSWindow, options: Set<Product.PurchaseOption>) async throws -> Product.PurchaseResult](./purchase%28confirmin,options%29-8eai6.md)
   Processes a purchase for the product.
-- [Product.PurchaseOption](product/purchaseoption.md)
+- [Product.PurchaseOption](./purchaseoption.md)
   Optional settings for a product purchase that add account information, purchase details, and offers, or that specify behaviors.
-- [Product.PurchaseResult](product/purchaseresult.md)
+- [Product.PurchaseResult](./purchaseresult.md)
   The result of a purchase.
 
 

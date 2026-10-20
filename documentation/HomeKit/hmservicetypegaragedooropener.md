@@ -1,7 +1,8 @@
 # HMServiceTypeGarageDoorOpener
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A garage door opener service.
 
@@ -19,15 +20,20 @@ A garage door opener service.
 let HMServiceTypeGarageDoorOpener: String
 ```
 
+```c
+extern NSString * const HMServiceTypeGarageDoorOpener;
+```
+
 ## See Also
 
-- [let HMServiceTypeDoor: String](hmservicetypedoor.md)
+### Locks and Openers
+- [let HMServiceTypeDoor: String](./hmservicetypedoor.md)
   A door service.
-- [let HMServiceTypeDoorbell: String](hmservicetypedoorbell.md)
+- [let HMServiceTypeDoorbell: String](./hmservicetypedoorbell.md)
   A doorbell service.
-- [let HMServiceTypeLockManagement: String](hmservicetypelockmanagement.md)
+- [let HMServiceTypeLockManagement: String](./hmservicetypelockmanagement.md)
   A lock management service.
-- [let HMServiceTypeLockMechanism: String](hmservicetypelockmechanism.md)
+- [let HMServiceTypeLockMechanism: String](./hmservicetypelockmechanism.md)
   A lock mechanism service.
 
 

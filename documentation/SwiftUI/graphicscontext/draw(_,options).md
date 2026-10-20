@@ -1,7 +1,8 @@
 # draw(_:options:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws `line` into the graphics context.
 
@@ -18,6 +19,16 @@ Draws `line` into the graphics context.
 
 ```swift
 func draw(_ line: Text.Layout.Line, options: Text.Layout.DrawingOptions = .init())
+```
+
+**Other overloads**:
+
+```swift
+func draw(_ run: Text.Layout.Run, options: Text.Layout.DrawingOptions = .init())
+```
+
+```swift
+func draw(_ slice: Text.Layout.RunSlice, options: Text.Layout.DrawingOptions = .init())
 ```
 
 

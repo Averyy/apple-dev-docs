@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Remap shortcuts to their international counterparts, mirrored for right-to-left usage if appropriate.
 
@@ -24,9 +25,10 @@ This is the default configuration.
 
 ## See Also
 
-- [static let custom: KeyboardShortcut.Localization](keyboardshortcut/localization-swift.struct/custom.md)
+### Getting localization strategies
+- [static let custom: KeyboardShortcut.Localization](./custom.md)
   Don’t use automatic shortcut remapping.
-- [static let withoutMirroring: KeyboardShortcut.Localization](keyboardshortcut/localization-swift.struct/withoutmirroring.md)
+- [static let withoutMirroring: KeyboardShortcut.Localization](./withoutmirroring.md)
   Don’t mirror shortcuts.
 
 

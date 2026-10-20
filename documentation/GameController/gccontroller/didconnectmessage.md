@@ -1,7 +1,8 @@
 # GCController.DidConnectMessage
 
 **Framework**: Game Controller  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A message that posts after a game controller accessory connects to the device.
 
@@ -23,7 +24,7 @@ struct DidConnectMessage
 
 Use the `.didConnect` identifier with `NotificationCenter` to listen for this message.
 
-```None
+```
 let observation = NotificationCenter.default.addObserver(of: GCController.self, for: .didConnect) { message in
    let controller = message.controller
 }
@@ -34,16 +35,16 @@ Connections of controller accessories will be reflected in the `controllers` arr
 ## Topics
 
 ### Initializers
-- [init(controller: GCController)](gccontroller/didconnectmessage/init(controller:).md)
+- [init(controller: GCController)](./didconnectmessage/init%28controller%29.md)
 ### Instance Properties
-- [var controller: GCController](gccontroller/didconnectmessage/controller.md)
+- [var controller: GCController](./didconnectmessage/controller.md)
   The controller object that connected to the device.
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

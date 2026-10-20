@@ -1,12 +1,13 @@
 # NSFontDescriptor.TraitKey
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that can be used as keys to retrieve information about a font descriptor from its trait dictionary.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,38 +15,43 @@ Constants that can be used as keys to retrieve information about a font descript
 struct TraitKey
 ```
 
+```c
+typedef NSString * NSFontDescriptorTraitKey;
+```
+
 #### Discussion
 
-These keys are used with [`traits`](nsfontdescriptor/attributename/traits.md).
+These keys are used with [`traits`](./attributename/traits.md).
 
 ## Topics
 
 ### Trait Keys
-- [static let symbolic: NSFontDescriptor.TraitKey](nsfontdescriptor/traitkey/symbolic.md)
+- [static let symbolic: NSFontDescriptor.TraitKey](./traitkey/symbolic.md)
   The symbolic traits value as a number object.
-- [static let weight: NSFontDescriptor.TraitKey](nsfontdescriptor/traitkey/weight.md)
+- [static let weight: NSFontDescriptor.TraitKey](./traitkey/weight.md)
   The normalized weight value as a number object.
-- [static let width: NSFontDescriptor.TraitKey](nsfontdescriptor/traitkey/width.md)
+- [static let width: NSFontDescriptor.TraitKey](./traitkey/width.md)
   The relative inter-glyph spacing value as a number object.
-- [static let slant: NSFontDescriptor.TraitKey](nsfontdescriptor/traitkey/slant.md)
+- [static let slant: NSFontDescriptor.TraitKey](./traitkey/slant.md)
   The relative slant angle value as a number object.
 ### Initializers
-- [init(rawValue: String)](nsfontdescriptor/traitkey/init(rawvalue:).md)
+- [init(rawValue: String)](./traitkey/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var symbolicTraits: NSFontDescriptor.SymbolicTraits](nsfontdescriptor/symbolictraits-swift.property.md)
+### Getting the Font Traits
+- [var symbolicTraits: NSFontDescriptor.SymbolicTraits](./symbolictraits-swift.property.md)
   A bit mask that describes the traits of the receiver.
-- [typealias NSFontSymbolicTraits](nsfontsymbolictraits.md)
+- [typealias NSFontSymbolicTraits](../nsfontsymbolictraits.md)
   A symbolic description of stylistic aspects of a font.
 
 

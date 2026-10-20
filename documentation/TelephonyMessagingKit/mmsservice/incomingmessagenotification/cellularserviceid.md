@@ -1,12 +1,15 @@
 # cellularServiceID
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cellular service identifier associated with the notification.
 
 **Availability**:
-- iOS 26.0+
+- iOS 26.0+ - Deprecated in 26.1
+
+> **Deprecated**: Use message.cellularServiceID instead.
 
 ## Declaration
 
@@ -16,7 +19,8 @@ var cellularServiceID: CellularServiceID { get }
 
 ## See Also
 
-- [var messageID: MMSMessageID](mmsservice/incomingmessagenotification/messageid.md)
+### Deprecated properties
+- [var messageID: MMSMessageID](./messageid.md)
   The identifier of the incoming message.
 
 

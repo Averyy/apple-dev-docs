@@ -1,7 +1,8 @@
 # USDPlayer.MeshData.MeshType
 
 **Framework**: USDKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Distinguishes static and deformable mesh geometries.
 
@@ -22,16 +23,16 @@ enum MeshType
 ## Topics
 
 ### Enumeration Cases
-- [USDPlayer.MeshData.MeshType.deformable(_:)](usdplayer/meshdata/meshtype-swift.enum/deformable(_:).md)
+- [USDPlayer.MeshData.MeshType.deformable(_:)](./meshtype-swift.enum/deformable%28_%29.md)
   A mesh driven by the given deformation resource.
-- [USDPlayer.MeshData.MeshType.rigid](usdplayer/meshdata/meshtype-swift.enum/rigid.md)
+- [USDPlayer.MeshData.MeshType.rigid](./meshtype-swift.enum/rigid.md)
   A mesh with no skeleton or blend shapes.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

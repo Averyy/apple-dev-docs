@@ -1,7 +1,8 @@
 # MTRHEPAFilterMonitoringDegradationDirection
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.6+
@@ -18,23 +19,27 @@
 enum MTRHEPAFilterMonitoringDegradationDirection
 ```
 
+```c
+enum MTRHEPAFilterMonitoringDegradationDirection : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRHEPAFilterMonitoringDegradationDirection.down](mtrhepafiltermonitoringdegradationdirection/down.md)
-- [MTRHEPAFilterMonitoringDegradationDirection.up](mtrhepafiltermonitoringdegradationdirection/up.md)
+- [MTRHEPAFilterMonitoringDegradationDirection.down](./mtrhepafiltermonitoringdegradationdirection/down.md)
+- [MTRHEPAFilterMonitoringDegradationDirection.up](./mtrhepafiltermonitoringdegradationdirection/up.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrhepafiltermonitoringdegradationdirection/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrhepafiltermonitoringdegradationdirection/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

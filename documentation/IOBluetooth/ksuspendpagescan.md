@@ -1,10 +1,11 @@
 # kSuspendPageScan
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kSuspendPageScan: BluetoothHCIHoldModeActivityStates { get }
 ```
 
+```c
+kSuspendPageScan
+```
+
 ## See Also
 
-- [var kMaintainCurrentPowerState: BluetoothHCIHoldModeActivityStates](kmaintaincurrentpowerstate.md)
-- [var kSuspendInquiryScan: BluetoothHCIHoldModeActivityStates](ksuspendinquiryscan.md)
-- [var kSuspendPeriodicInquiries: BluetoothHCIHoldModeActivityStates](ksuspendperiodicinquiries.md)
+### Constants
+- [var kMaintainCurrentPowerState: BluetoothHCIHoldModeActivityStates](./kmaintaincurrentpowerstate.md)
+- [var kSuspendInquiryScan: BluetoothHCIHoldModeActivityStates](./ksuspendinquiryscan.md)
+- [var kSuspendPeriodicInquiries: BluetoothHCIHoldModeActivityStates](./ksuspendperiodicinquiries.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # ASAuthorizationPasswordProvider
 
 **Framework**: Authentication Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A mechanism for generating requests to perform keychain credential sharing.
 
@@ -20,36 +21,41 @@ A mechanism for generating requests to perform keychain credential sharing.
 class ASAuthorizationPasswordProvider
 ```
 
+```objc
+@interface ASAuthorizationPasswordProvider : NSObject
+```
+
 ## Topics
 
 ### Creating Requests
-- [func createRequest() -> ASAuthorizationPasswordRequest](asauthorizationpasswordprovider/createrequest.md)
+- [func createRequest() -> ASAuthorizationPasswordRequest](./asauthorizationpasswordprovider/createrequest%28%29.md)
   Creates a new password authorization request.
-- [class ASAuthorizationPasswordRequest](asauthorizationpasswordrequest.md)
+- [class ASAuthorizationPasswordRequest](./asauthorizationpasswordrequest.md)
   An authorization request that uses credentials stored in the keychain.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [ASAuthorizationProvider](asauthorizationprovider.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ASAuthorizationProvider](./asauthorizationprovider.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Password AutoFill](../security/password-autofill.md)
+### Passwords
+- [Password AutoFill](../Security/password-autofill.md)
   Streamline your app’s login and onboarding procedures.
-- [class ASPasswordCredential](aspasswordcredential.md)
+- [class ASPasswordCredential](./aspasswordcredential.md)
   A password credential.
-- [Password use in web browsers](password-use-in-web-browsers.md)
+- [Password use in web browsers](./password-use-in-web-browsers.md)
   Register and authenticate website users by using passwords.
 
 

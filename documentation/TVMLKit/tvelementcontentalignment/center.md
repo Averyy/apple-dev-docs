@@ -1,12 +1,15 @@
 # TVElementContentAlignment.center
 
 **Framework**: TVMLKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Items are aligned in the center of the element.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,13 +17,18 @@ Items are aligned in the center of the element.
 case center
 ```
 
+```c
+TVElementContentAlignmentCenter
+```
+
 ## See Also
 
-- [TVElementContentAlignmentUndefinded](tvelementcontentalignmentundefinded.md)
+### Constants
+- [TVElementContentAlignmentUndefinded](../tvelementcontentalignmentundefinded.md)
   The alignment has not been defined for the element.
-- [TVElementContentAlignment.top](tvelementcontentalignment/top.md)
+- [TVElementContentAlignment.top](./top.md)
   Items are aligned along the top of the element.
-- [TVElementContentAlignment.bottom](tvelementcontentalignment/bottom.md)
+- [TVElementContentAlignment.bottom](./bottom.md)
   Items are aligned along the bottom of the element.
 
 

@@ -1,7 +1,8 @@
 # controlPoints
 
 **Framework**: Core Haptics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing the curve’s control points.
 
@@ -9,7 +10,7 @@ An array containing the curve’s control points.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- macOS ?+
+- macOS
 - tvOS 14.0+
 - visionOS 1.0+
 
@@ -19,11 +20,16 @@ An array containing the curve’s control points.
 var controlPoints: [CHHapticParameterCurve.ControlPoint] { get }
 ```
 
+```objc
+@property (readonly) NSArray<CHHapticParameterCurveControlPoint *> * controlPoints;
+```
+
 ## See Also
 
-- [var parameterID: CHHapticDynamicParameter.ID](chhapticparametercurve/parameterid.md)
+### Describing the Curve
+- [var parameterID: CHHapticDynamicParameter.ID](./parameterid.md)
   The parameter ID defining the type of parameter that the curve represents.
-- [var relativeTime: TimeInterval](chhapticparametercurve/relativetime.md)
+- [var relativeTime: TimeInterval](./relativetime.md)
   The time at which this parameter curve is applied, relative to the start time of the pattern.
 
 

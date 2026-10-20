@@ -1,7 +1,8 @@
 # isFinishing
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether audio input has stopped.
 
@@ -18,13 +19,18 @@ A Boolean value that indicates whether audio input has stopped.
 var isFinishing: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isFinishing) BOOL finishing;
+```
+
 #### Discussion
 
 By default, the value of this property is `false`.
 
 ## See Also
 
-- [func finish()](sfspeechrecognitiontask/finish.md)
+### Finishing a speech recognition task
+- [func finish()](./finish%28%29.md)
   Stops accepting new audio and finishes processing on the audio input that has already been accepted.
 
 

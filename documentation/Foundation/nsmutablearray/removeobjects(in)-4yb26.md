@@ -1,7 +1,8 @@
 # removeObjects(in:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes from the receiving array the objects in another given array.
 
@@ -20,9 +21,13 @@ Removes from the receiving array the objects in another given array.
 func removeObjects(in otherArray: [Any])
 ```
 
+```objc
+- (void) removeObjectsInArray:(NSArray<id> *) otherArray;
+```
+
 #### Discussion
 
-This method is similar to [`remove(_:)`](nsmutablearray/remove(_:).md), but it allows you to efficiently remove large sets of objects with a single operation. If the receiving array does not contain objects in `otherArray`, the method has no effect (although it does incur the overhead of searching the contents).
+This method is similar to [`remove(_:)`](./remove%28_%29.md), but it allows you to efficiently remove large sets of objects with a single operation. If the receiving array does not contain objects in `otherArray`, the method has no effect (although it does incur the overhead of searching the contents).
 
 This method assumes that all elements in `otherArray` respond to `hash` and `isEqual:`.
 
@@ -32,25 +37,26 @@ This method assumes that all elements in `otherArray` respond to `hash` and `isE
 
 ## See Also
 
-- [func removeAllObjects()](nsmutablearray/removeallobjects.md)
+### Removing Objects
+- [func removeAllObjects()](./removeallobjects%28%29.md)
   Empties the array of all its elements.
-- [func removeLastObject()](nsmutablearray/removelastobject.md)
+- [func removeLastObject()](./removelastobject%28%29.md)
   Removes the object with the highest-valued index in the array
-- [func remove(Any)](nsmutablearray/remove(_:).md)
+- [func remove(Any)](./remove%28_%29.md)
   Removes all occurrences in the array of a given object.
-- [func remove(Any, in: NSRange)](nsmutablearray/remove(_:in:).md)
+- [func remove(Any, in: NSRange)](./remove%28_,in%29.md)
   Removes all occurrences within a specified range in the array of a given object.
-- [func removeObject(at: Int)](nsmutablearray/removeobject(at:).md)
+- [func removeObject(at: Int)](./removeobject%28at%29.md)
   Removes the object at `index` .
-- [func removeObjects(at: IndexSet)](nsmutablearray/removeobjects(at:).md)
+- [func removeObjects(at: IndexSet)](./removeobjects%28at%29.md)
   Removes the objects at the specified indexes from the array.
-- [func removeObject(identicalTo: Any)](nsmutablearray/removeobject(identicalto:).md)
+- [func removeObject(identicalTo: Any)](./removeobject%28identicalto%29.md)
   Removes all occurrences of a given object in the array.
-- [func removeObject(identicalTo: Any, in: NSRange)](nsmutablearray/removeobject(identicalto:in:).md)
+- [func removeObject(identicalTo: Any, in: NSRange)](./removeobject%28identicalto,in%29.md)
   Removes all occurrences of `anObject` within the specified range in the array.
-- [func removeObjects(fromIndices: UnsafeMutablePointer<Int>, numIndices: Int)](nsmutablearray/removeobjects(fromindices:numindices:).md)
+- [func removeObjects(fromIndices: UnsafeMutablePointer<Int>, numIndices: Int)](./removeobjects%28fromindices,numindices%29.md)
   Removes the specified number of objects from the array, beginning at the specified index.
-- [func removeObjects(in: NSRange)](nsmutablearray/removeobjects(in:)-1udmn.md)
+- [func removeObjects(in: NSRange)](./removeobjects%28in%29-1udmn.md)
   Removes from the array each of the objects within a given range.
 
 

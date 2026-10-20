@@ -1,7 +1,8 @@
 # dataReader(for:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a data reader for the attachment.
 
@@ -10,7 +11,7 @@ Returns a data reader for the attachment.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -64,11 +65,12 @@ do {
 
 ## See Also
 
-- [func getAttachments(for: HKObject, completion: ([HKAttachment]?, (any Error)?) -> Void)](hkattachmentstore/getattachments(for:completion:).md)
+### Accessing attachments
+- [func getAttachments(for: HKObject, completion: ([HKAttachment]?, (any Error)?) -> Void)](./getattachments%28for,completion%29.md)
   Returns all the attachments for the specified object.
-- [func getData(for: HKAttachment, completion: (Data?, (any Error)?) -> Void) -> Progress](hkattachmentstore/getdata(for:completion:).md)
+- [func getData(for: HKAttachment, completion: (Data?, (any Error)?) -> Void) -> Progress](./getdata%28for,completion%29.md)
   Returns an attachment’s data.
-- [func streamData(for: HKAttachment, dataHandler: (Data?, (any Error)?, Bool) -> Void) -> Progress](hkattachmentstore/streamdata(for:datahandler:).md)
+- [func streamData(for: HKAttachment, dataHandler: (Data?, (any Error)?, Bool) -> Void) -> Progress](./streamdata%28for,datahandler%29.md)
   Asynchronously returns the attachment’s data.
 
 

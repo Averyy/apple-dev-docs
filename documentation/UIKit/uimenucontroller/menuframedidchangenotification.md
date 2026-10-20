@@ -1,15 +1,18 @@
 # menuFrameDidChangeNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted when the frame of a visible menu changes.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 3.0+ - Deprecated in 16.0
+- iPadOS 3.0+ - Deprecated in 16.0
+- Mac Catalyst 13.1+ - Deprecated in 16.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use [`UIEditMenuInteraction`](../uieditmenuinteraction.md) instead.
 
 ## Declaration
 
@@ -18,19 +21,24 @@ nonisolated
 class let menuFrameDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UIMenuControllerMenuFrameDidChangeNotification;
+```
+
 #### Discussion
 
 There is no `userInfo` dictionary.
 
 ## See Also
 
-- [class let willShowMenuNotification: NSNotification.Name](uimenucontroller/willshowmenunotification.md)
+### Notifications
+- [class let willShowMenuNotification: NSNotification.Name](./willshowmenunotification.md)
   Posted by the menu controller just before it shows the menu.
-- [class let didShowMenuNotification: NSNotification.Name](uimenucontroller/didshowmenunotification.md)
+- [class let didShowMenuNotification: NSNotification.Name](./didshowmenunotification.md)
   Posted by the menu controller just after it shows the menu.
-- [class let willHideMenuNotification: NSNotification.Name](uimenucontroller/willhidemenunotification.md)
+- [class let willHideMenuNotification: NSNotification.Name](./willhidemenunotification.md)
   Posted by the menu controller just before it hides the menu.
-- [class let didHideMenuNotification: NSNotification.Name](uimenucontroller/didhidemenunotification.md)
+- [class let didHideMenuNotification: NSNotification.Name](./didhidemenunotification.md)
   Posted by the menu controller just after it hides the menu.
 
 

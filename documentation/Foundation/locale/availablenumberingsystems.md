@@ -1,7 +1,8 @@
 # availableNumberingSystems
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing all the valid numbering systems for the locale.
 
@@ -32,17 +33,18 @@ print("\(numberingSystems.map{$0.identifier})") // ["latn","arab"]
 
 ## See Also
 
-- [var currency: Locale.Currency?](locale/currency-swift.property.md)
+### Getting measurement and counting components
+- [var currency: Locale.Currency?](./currency-swift.property.md)
   The currency used by the locale.
-- [Locale.Currency](locale/currency-swift.struct.md)
+- [Locale.Currency](./currency-swift.struct.md)
   A type that represents the currency system used by a locale, like dollars or euros.
-- [var measurementSystem: Locale.MeasurementSystem](locale/measurementsystem-swift.property.md)
+- [var measurementSystem: Locale.MeasurementSystem](./measurementsystem-swift.property.md)
   The measurement system used by the locale, like metric or the US system.
-- [Locale.MeasurementSystem](locale/measurementsystem-swift.struct.md)
+- [Locale.MeasurementSystem](./measurementsystem-swift.struct.md)
   A type that represents the measurement system used by a locale, like metric or the US system.
-- [var numberingSystem: Locale.NumberingSystem](locale/numberingsystem-swift.property.md)
+- [var numberingSystem: Locale.NumberingSystem](./numberingsystem-swift.property.md)
   The numbering system used by the locale.
-- [Locale.NumberingSystem](locale/numberingsystem-swift.struct.md)
+- [Locale.NumberingSystem](./numberingsystem-swift.struct.md)
   A type that represents the numbering system used in a locale.
 
 

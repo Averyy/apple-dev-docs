@@ -1,7 +1,8 @@
 # PressureTrend
 
 **Framework**: WeatherKit REST API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The direction of change of the sea level air pressure.
 
@@ -10,9 +11,15 @@ The direction of change of the sea level air pressure.
 
 ## Declaration
 
-```swift
+```
 string PressureTrend
 ```
+
+## Possible Values
+
+- `rising`
+- `falling`
+- `steady`
 
 #### Possible Values
 
@@ -22,11 +29,12 @@ string PressureTrend
 
 ## See Also
 
-- [type UnitsSystem](unitssystem.md)
+### Identifying weather events
+- [type UnitsSystem](./unitssystem.md)
   The system of units that the weather data is reported in.
-- [type MoonPhase](moonphase.md)
+- [type MoonPhase](./moonphase.md)
   The shape of the moon as seen by an observer on the ground at a given time.
-- [type PrecipitationType](precipitationtype.md)
+- [type PrecipitationType](./precipitationtype.md)
   The type of precipitation forecasted to occur during the day.
 
 

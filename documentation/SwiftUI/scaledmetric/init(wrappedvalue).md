@@ -1,7 +1,8 @@
 # init(wrappedValue:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the scaled metric with an unscaled value using the default scaling.
 
@@ -22,7 +23,8 @@ init(wrappedValue: Value)
 
 ## See Also
 
-- [init(wrappedValue: Value, relativeTo: Font.TextStyle)](scaledmetric/init(wrappedvalue:relativeto:).md)
+### Creating the metric
+- [init(wrappedValue: Value, relativeTo: Font.TextStyle)](./init%28wrappedvalue,relativeto%29.md)
   Creates the scaled metric with an unscaled value and a text style to scale relative to.
 
 

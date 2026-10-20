@@ -1,7 +1,8 @@
 # IntentResolutionResult.NeedsValue
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An empty object that indicates the service must have a value for this parameter, but the intent doesn’t include one.
 
@@ -10,15 +11,16 @@ An empty object that indicates the service must have a value for this parameter,
 
 ## Declaration
 
-```swift
+```
 object IntentResolutionResult.NeedsValue
 ```
 
 ## See Also
 
-- [object IntentResolutionResult.NotRequired](intentresolutionresult/notrequired-data.dictionary.md)
+### Providing a Generic Result
+- [object IntentResolutionResult.NotRequired](./notrequired-data.dictionary.md)
   An empty object that indicates the intent doesn’t include a value for this parameter, but the server can proceed without one.
-- [object IntentResolutionResult.Unsupported](intentresolutionresult/unsupported-data.dictionary.md)
+- [object IntentResolutionResult.Unsupported](./unsupported-data.dictionary.md)
   An empty object that indicates the server doesn’t support this parameter.
 
 

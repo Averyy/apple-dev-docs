@@ -1,7 +1,8 @@
 # scrollViewDidEndScrollingAnimation(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when a scrolling animation in the scroll view concludes.
 
@@ -9,7 +10,7 @@ Tells the delegate when a scrolling animation in the scroll view concludes.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Tells the delegate when a scrolling animation in the scroll view concludes.
 optional func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView)
 ```
 
+```objc
+- (void) scrollViewDidEndScrollingAnimation:(UIScrollView *) scrollView;
+```
+
 #### Discussion
 
-The scroll view calls this method at the end of its implementations of the [`setContentOffset(_:animated:)`](uiscrollview/setcontentoffset(_:animated:).md) and [`scrollRectToVisible(_:animated:)`](uiscrollview/scrollrecttovisible(_:animated:).md) methods, but only if animations are requested.
+The scroll view calls this method at the end of its implementations of the [`setContentOffset(_:animated:)`](../uiscrollview/setcontentoffset%28_,animated%29.md) and [`scrollRectToVisible(_:animated:)`](../uiscrollview/scrollrecttovisible%28_,animated%29.md) methods, but only if animations are requested.
 
 ## Parameters
 

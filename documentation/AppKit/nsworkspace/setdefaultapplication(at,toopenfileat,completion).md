@@ -1,7 +1,8 @@
 # setDefaultApplication(at:toOpenFileAt:completion:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the default app to use when opening a specific file.
 
@@ -11,7 +12,15 @@ Sets the default app to use when opening a specific file.
 ## Declaration
 
 ```swift
+func setDefaultApplication(at applicationURL: URL, toOpenFileAt url: URL, completion completionHandler: (@Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 func setDefaultApplication(at applicationURL: URL, toOpenFileAt url: URL) async throws
+```
+
+```objc
+- (void) setDefaultApplicationAtURL:(NSURL *) applicationURL toOpenFileAtURL:(NSURL *) url completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -30,11 +39,12 @@ This function doesn’t apply to non-file URLs.
 
 ## See Also
 
-- [func setDefaultApplication(at: URL, toOpen: UTType, completion: (((any Error)?) -> Void)?)](nsworkspace/setdefaultapplication(at:toopen:completion:).md)
+### Setting Default Application Information
+- [func setDefaultApplication(at: URL, toOpen: UTType, completion: (((any Error)?) -> Void)?)](./setdefaultapplication%28at,toopen,completion%29.md)
   Sets the default app to use when opening files of a specific content type.
-- [func setDefaultApplication(at: URL, toOpenContentTypeOfFileAt: URL, completion: (((any Error)?) -> Void)?)](nsworkspace/setdefaultapplication(at:toopencontenttypeoffileat:completion:).md)
+- [func setDefaultApplication(at: URL, toOpenContentTypeOfFileAt: URL, completion: (((any Error)?) -> Void)?)](./setdefaultapplication%28at,toopencontenttypeoffileat,completion%29.md)
   Sets the default app to use when opening files of a specific content type defined by a file URL.
-- [func setDefaultApplication(at: URL, toOpenURLsWithScheme: String, completion: (((any Error)?) -> Void)?)](nsworkspace/setdefaultapplication(at:toopenurlswithscheme:completion:).md)
+- [func setDefaultApplication(at: URL, toOpenURLsWithScheme: String, completion: (((any Error)?) -> Void)?)](./setdefaultapplication%28at,toopenurlswithscheme,completion%29.md)
   Sets the default app to use when opening files of a specific scheme.
 
 

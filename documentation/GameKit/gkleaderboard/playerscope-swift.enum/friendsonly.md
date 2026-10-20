@@ -1,7 +1,8 @@
 # GKLeaderboard.PlayerScope.friendsOnly
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Loads only data for friends of the local player.
 
@@ -20,13 +21,18 @@ Loads only data for friends of the local player.
 case friendsOnly
 ```
 
+```c
+GKLeaderboardPlayerScopeFriendsOnly
+```
+
 ## Mentions
 
-- [Encourage progress and competition with leaderboards](encourage-progress-and-competition-with-leaderboards.md)
+- [Encourage progress and competition with leaderboards](../../encourage-progress-and-competition-with-leaderboards.md)
 
 ## See Also
 
-- [GKLeaderboard.PlayerScope.global](gkleaderboard/playerscope-swift.enum/global.md)
+### Constants
+- [GKLeaderboard.PlayerScope.global](./global.md)
   Loads data for all players of the game.
 
 

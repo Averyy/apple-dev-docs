@@ -1,9 +1,10 @@
 # startTask(toClear:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Fills the entire destination with black or clear depending on its [`alphaMode`](cirenderdestination/alphamode.md).
+Fills the entire destination with black or clear depending on its [`alphaMode`](../cirenderdestination/alphamode.md).
 
 **Availability**:
 - iOS 11.0+
@@ -19,27 +20,32 @@ Fills the entire destination with black or clear depending on its [`alphaMode`](
 func startTask(toClear destination: CIRenderDestination) throws -> CIRenderTask
 ```
 
+```objc
+- (CIRenderTask *) startTaskToClear:(CIRenderDestination *) destination error:(NSError **) error;
+```
+
 #### Return Value
 
-The asynchronous [`CIRenderTask`](cirendertask.md) for clearing the destination.
+The asynchronous [`CIRenderTask`](../cirendertask.md) for clearing the destination.
 
 #### Discussion
 
-If the destination’s [`alphaMode`](cirenderdestination/alphamode.md) is [`CIRenderDestinationAlphaMode.none`](cirenderdestinationalphamode/none.md), this command fills the entire destination with black `(0, 0, 0, 1)`.
+If the destination’s [`alphaMode`](../cirenderdestination/alphamode.md) is [`CIRenderDestinationAlphaMode.none`](../cirenderdestinationalphamode/none.md), this command fills the entire destination with black `(0, 0, 0, 1)`.
 
-If the destination’s [`alphaMode`](cirenderdestination/alphamode.md) is [`CIRenderDestinationAlphaMode.premultiplied`](cirenderdestinationalphamode/premultiplied.md) or [`CIRenderDestinationAlphaMode.unpremultiplied`](cirenderdestinationalphamode/unpremultiplied.md), this command fills the entire destination with clear `(0, 0, 0, 0)`.
+If the destination’s [`alphaMode`](../cirenderdestination/alphamode.md) is [`CIRenderDestinationAlphaMode.premultiplied`](../cirenderdestinationalphamode/premultiplied.md) or [`CIRenderDestinationAlphaMode.unpremultiplied`](../cirenderdestinationalphamode/unpremultiplied.md), this command fills the entire destination with clear `(0, 0, 0, 0)`.
 
 ## Parameters
 
-- `destination`: The [`CIRenderDestination`](cirenderdestination.md) to clear.
+- `destination`: The [`CIRenderDestination`](../cirenderdestination.md) to clear.
 
 ## See Also
 
-- [func prepareRender(CIImage, from: CGRect, to: CIRenderDestination, at: CGPoint) throws](cicontext/preparerender(_:from:to:at:).md)
-  An optional call to warm up a [`CIContext`](cicontext.md) so that subsequent calls to render with the same arguments run more efficiently.
-- [func startTask(toRender: CIImage, from: CGRect, to: CIRenderDestination, at: CGPoint) throws -> CIRenderTask](cicontext/starttask(torender:from:to:at:).md)
+### Customizing Render Destination
+- [func prepareRender(CIImage, from: CGRect, to: CIRenderDestination, at: CGPoint) throws](./preparerender%28_,from,to,at%29.md)
+  An optional call to warm up a [`CIContext`](../cicontext.md) so that subsequent calls to render with the same arguments run more efficiently.
+- [func startTask(toRender: CIImage, from: CGRect, to: CIRenderDestination, at: CGPoint) throws -> CIRenderTask](./starttask%28torender,from,to,at%29.md)
   Renders a portion of an image to a point in the destination.
-- [func startTask(toRender: CIImage, to: CIRenderDestination) throws -> CIRenderTask](cicontext/starttask(torender:to:).md)
+- [func startTask(toRender: CIImage, to: CIRenderDestination) throws -> CIRenderTask](./starttask%28torender,to%29.md)
   Renders an image to a destination so that point (0, 0) of the image maps to point (0, 0) of the destination.
 
 

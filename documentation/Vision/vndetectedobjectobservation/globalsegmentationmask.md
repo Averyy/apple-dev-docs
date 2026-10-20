@@ -1,7 +1,8 @@
 # globalSegmentationMask
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A resulting pixel buffer from a request to generate a segmentation mask for an image.
 
@@ -17,6 +18,10 @@ A resulting pixel buffer from a request to generate a segmentation mask for an i
 
 ```swift
 var globalSegmentationMask: VNPixelBufferObservation? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) VNPixelBufferObservation * globalSegmentationMask;
 ```
 
 

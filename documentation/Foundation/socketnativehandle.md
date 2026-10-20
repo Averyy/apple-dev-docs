@@ -1,7 +1,8 @@
 # SocketNativeHandle
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Type for the platform-specific native socket handle.
 
@@ -18,6 +19,10 @@ Type for the platform-specific native socket handle.
 
 ```swift
 typealias SocketNativeHandle = Int32
+```
+
+```c
+typedef int NSSocketNativeHandle;
 ```
 
 

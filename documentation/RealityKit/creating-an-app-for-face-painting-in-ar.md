@@ -1,6 +1,8 @@
 # Creating an App for Face-Painting in AR
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: Sample Code  
+**Download**: [CreatingAnAppForFacePaintingInAR.zip](https://docs-assets.developer.apple.com/published/b64a2a8bdc5a/CreatingAnAppForFacePaintingInAR.zip)
 
 Combine RealityKit’s face detection with PencilKit to implement virtual face-painting.
 
@@ -12,7 +14,7 @@ Combine RealityKit’s face detection with PencilKit to implement virtual face-p
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC21 session [`10074: Dive into RealityKit 2`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10074/).
+> **Note**: This sample code project is associated with WWDC21 session [10074: Dive into RealityKit 2](https://developer.apple.com/wwdc21/10074/).
 
 #### Configure the Sample Code Project
 
@@ -20,15 +22,16 @@ This project requires an iPhone or iPad running iOS 15 or iPadOS 15. It doesn’
 
 ## See Also
 
-- [Occluding virtual content with people](../arkit/occluding-virtual-content-with-people.md)
+### Body and face tracking
+- [Occluding virtual content with people](../ARKit/occluding-virtual-content-with-people.md)
   Cover your app’s virtual content with people that ARKit perceives in the camera feed.
-- [Placing entities using head and device transform](../visionos/placing-entities-using-head-and-device-transform.md)
+- [Placing entities using head and device transform](../visionOS/placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
-- [struct BodyTrackingComponent](bodytrackingcomponent.md)
+- [struct BodyTrackingComponent](./bodytrackingcomponent.md)
   A component for tracking people in an AR session.
-- [class BodyTrackedEntity](bodytrackedentity.md)
+- [class BodyTrackedEntity](./bodytrackedentity.md)
   An entity used to animate a virtual character in an AR scene by tracking a real person.
-- [protocol HasBodyTracking](hasbodytracking.md)
+- [protocol HasBodyTracking](./hasbodytracking.md)
   An interface that enables the animation of a virtual character by tracking a real person in AR.
 
 

@@ -1,7 +1,8 @@
 # SearchEntity
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A single geographic location result returned by the geo search endpoints.
 
@@ -10,7 +11,7 @@ A single geographic location result returned by the geo search endpoints.
 
 ## Declaration
 
-```swift
+```
 object SearchEntity
 ```
 
@@ -50,7 +51,7 @@ The `eligibility` field indicates whether you can use the location for ads on th
 ## Topics
 
 ### Dictionaries
-- [object SearchEntity.Eligibility](searchentity/eligibility-data.dictionary.md)
+- [object SearchEntity.Eligibility](./searchentity/eligibility-data.dictionary.md)
   Supply source eligibility restrictions for this search entity.
 
 ## Properties
@@ -63,21 +64,21 @@ The `eligibility` field indicates whether you can use the location for ads on th
 - `adminArea` (string): State or province identifier. Present for `AdminArea`, `Locality`, and `PostalCode` entities. Read-only.
 - `locality` (string): City or locality name. Present for `Locality` entities only. Read-only.
 - `postalCode` (string): Postal code value. Present for `PostalCode` entities only. Read-only.
-- `eligibility` (SearchEntity.Eligibility): Supply source eligibility restrictions scoped to the `supplySource` specified in the request. See [`GeoEligibility`](geoeligibility.md). Absent from the response when no restrictions apply. Read-only.
+- `eligibility` (SearchEntity.Eligibility): Supply source eligibility restrictions scoped to the `supplySource` specified in the request. See [`GeoEligibility`](./geoeligibility.md). Absent from the response when no restrictions apply. Read-only.
 
 ## See Also
 
-- [object GeoRequest](georequest.md)
+- [object GeoRequest](./georequest.md)
   A single geo entity lookup criterion used in a geo location search request.
-- [object GeoSearchPostRequest](geosearchpostrequest.md)
+- [object GeoSearchPostRequest](./geosearchpostrequest.md)
   Request body for querying geo locations.
-- [object GeoSearchResponse](geosearchresponse.md)
+- [object GeoSearchResponse](./geosearchresponse.md)
   Response envelope for the geo location search endpoints.
-- [object GeoSearchPagination](geosearchpagination.md)
+- [object GeoSearchPagination](./geosearchpagination.md)
   Pagination parameters for geo location search requests and responses.
-- [object GeoEligibility](geoeligibility.md)
+- [object GeoEligibility](./geoeligibility.md)
   Eligibility restrictions for a geographic location, scoped to the supply source specified in the request.
-- [object GeoBlockedGroup](geoblockedgroup.md)
+- [object GeoBlockedGroup](./geoblockedgroup.md)
   A blocking rule that names the supply source(s) and reason code(s) restricting a geo location.
 
 

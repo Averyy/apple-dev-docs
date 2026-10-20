@@ -1,7 +1,8 @@
 # ExtAudioFileWrapAudioFileID(_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Wraps an audio file object in an extended audio file object.
 
@@ -17,6 +18,10 @@ Wraps an audio file object in an extended audio file object.
 
 ```swift
 func ExtAudioFileWrapAudioFileID(_ inFileID: AudioFileID, _ inForWriting: Bool, _ outExtAudioFile: UnsafeMutablePointer<ExtAudioFileRef?>) -> OSStatus
+```
+
+```c
+extern OSStatus ExtAudioFileWrapAudioFileID(AudioFileID inFileID, Boolean inForWriting, ExtAudioFileRef*outExtAudioFile);
 ```
 
 #### Return Value
@@ -35,11 +40,12 @@ Allocates a new extended audio file object that wraps an existing audio file obj
 
 ## See Also
 
-- [func ExtAudioFileCreateWithURL(CFURL, AudioFileTypeID, UnsafePointer<AudioStreamBasicDescription>, UnsafePointer<AudioChannelLayout>?, UInt32, UnsafeMutablePointer<ExtAudioFileRef?>) -> OSStatus](extaudiofilecreatewithurl(_:_:_:_:_:_:).md)
+### Managing Extended Audio File Objects
+- [func ExtAudioFileCreateWithURL(CFURL, AudioFileTypeID, UnsafePointer<AudioStreamBasicDescription>, UnsafePointer<AudioChannelLayout>?, UInt32, UnsafeMutablePointer<ExtAudioFileRef?>) -> OSStatus](./extaudiofilecreatewithurl%28_,_,_,_,_,_%29.md)
   Creates a new audio file and associates it with a new extended audio file object.
-- [func ExtAudioFileDispose(ExtAudioFileRef) -> OSStatus](extaudiofiledispose(_:).md)
+- [func ExtAudioFileDispose(ExtAudioFileRef) -> OSStatus](./extaudiofiledispose%28_%29.md)
   Disposes of an extended audio file object and closes the associated file.
-- [func ExtAudioFileOpenURL(CFURL, UnsafeMutablePointer<ExtAudioFileRef?>) -> OSStatus](extaudiofileopenurl(_:_:).md)
+- [func ExtAudioFileOpenURL(CFURL, UnsafeMutablePointer<ExtAudioFileRef?>) -> OSStatus](./extaudiofileopenurl%28_,_%29.md)
   Opens an existing audio file for reading, and associates it with a new extended audio file object.
 
 

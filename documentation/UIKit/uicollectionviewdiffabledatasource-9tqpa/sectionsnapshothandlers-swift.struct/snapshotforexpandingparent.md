@@ -1,7 +1,8 @@
 # snapshotForExpandingParent
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The handler that provides the section snapshot for expanding the parent item.
 
@@ -10,7 +11,7 @@ The handler that provides the section snapshot for expanding the parent item.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,7 @@ var snapshotForExpandingParent: ((ItemIdentifierType, NSDiffableDataSourceSectio
 
 #### Discussion
 
-Use the [`snapshotForExpandingParent`](uicollectionviewdiffabledatasource-9tqpa/sectionsnapshothandlers-swift.struct/snapshotforexpandingparent.md) handler to customize the snapshot that returns when a particular parent item is expanded.
+Use the [`snapshotForExpandingParent`](./snapshotforexpandingparent.md) handler to customize the snapshot that returns when a particular parent item is expanded.
 
 ```swift
 // Allow every item to be collapsed
@@ -35,13 +36,14 @@ dataSource.sectionSnapshotHandlers.snapshotForExpandingParent = {
 
 ## See Also
 
-- [var shouldCollapseItem: ((ItemIdentifierType) -> Bool)?](uicollectionviewdiffabledatasource-9tqpa/sectionsnapshothandlers-swift.struct/shouldcollapseitem.md)
+### Expanding and collapsing items
+- [var shouldCollapseItem: ((ItemIdentifierType) -> Bool)?](./shouldcollapseitem.md)
   The handler that determines whether a particular item is collapsable.
-- [var shouldExpandItem: ((ItemIdentifierType) -> Bool)?](uicollectionviewdiffabledatasource-9tqpa/sectionsnapshothandlers-swift.struct/shouldexpanditem.md)
+- [var shouldExpandItem: ((ItemIdentifierType) -> Bool)?](./shouldexpanditem.md)
   The handler that determines whether a particular item is expandable.
-- [var willCollapseItem: ((ItemIdentifierType) -> Void)?](uicollectionviewdiffabledatasource-9tqpa/sectionsnapshothandlers-swift.struct/willcollapseitem.md)
+- [var willCollapseItem: ((ItemIdentifierType) -> Void)?](./willcollapseitem.md)
   The handler that prepares the diffable data source for collapsing an item.
-- [var willExpandItem: ((ItemIdentifierType) -> Void)?](uicollectionviewdiffabledatasource-9tqpa/sectionsnapshothandlers-swift.struct/willexpanditem.md)
+- [var willExpandItem: ((ItemIdentifierType) -> Void)?](./willexpanditem.md)
   The handler that prepares the diffable data source for expanding an item.
 
 

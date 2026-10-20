@@ -1,7 +1,8 @@
 # overrides
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The override parameters for the camera.
 

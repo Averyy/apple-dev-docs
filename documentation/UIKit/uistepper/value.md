@@ -1,7 +1,8 @@
 # value
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The numeric value of the stepper.
 
@@ -17,11 +18,15 @@ The numeric value of the stepper.
 var value: Double { get set }
 ```
 
+```objc
+@property (nonatomic) double value;
+```
+
 #### Discussion
 
-When the value changes, the stepper sends the [`valueChanged`](uicontrol/event/valuechanged.md) flag to its target (see [`addTarget(_:action:for:)`](uicontrol/addtarget(_:action:for:).md)). Refer to the description of the [`isContinuous`](uistepper/iscontinuous.md) property for information about whether value change events are sent continuously or when user interaction ends.
+When the value changes, the stepper sends the [`valueChanged`](../uicontrol/event/valuechanged.md) flag to its target (see [`addTarget(_:action:for:)`](../uicontrol/addtarget%28_,action,for%29.md)). Refer to the description of the [`isContinuous`](./iscontinuous.md) property for information about whether value change events are sent continuously or when user interaction ends.
 
-The default value for this property is `0`. This property is clamped at its lower extreme to [`minimumValue`](uistepper/minimumvalue.md) and is clamped at its upper extreme to [`maximumValue`](uistepper/maximumvalue.md).
+The default value for this property is `0`. This property is clamped at its lower extreme to [`minimumValue`](./minimumvalue.md) and is clamped at its upper extreme to [`maximumValue`](./maximumvalue.md).
 
 
 ---

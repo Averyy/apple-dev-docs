@@ -1,7 +1,8 @@
 # subtitleVariants
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of subtitle variants for the button.
 
@@ -16,15 +17,20 @@ The array of subtitle variants for the button.
 var subtitleVariants: [String] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSString *> * subtitleVariants;
+```
+
 #### Discussion
 
-An array of subtitle variants for this button in an arrangement from most- to least-preferred. The system selects a subtitle from this array that best fits the available space. You provide the subtitle variants to [`init(titleVariants:subtitleVariants:image:handler:)`](cpdashboardbutton/init(titlevariants:subtitlevariants:image:handler:).md) as localized, displayable content.
+An array of subtitle variants for this button in an arrangement from most- to least-preferred. The system selects a subtitle from this array that best fits the available space. You provide the subtitle variants to [`init(titleVariants:subtitleVariants:image:handler:)`](./init%28titlevariants,subtitlevariants,image,handler%29.md) as localized, displayable content.
 
 ## See Also
 
-- [var titleVariants: [String]](cpdashboardbutton/titlevariants.md)
+### Accessing the Button Configuration
+- [var titleVariants: [String]](./titlevariants.md)
   The array of title variants for the button.
-- [var image: UIImage](cpdashboardbutton/image.md)
+- [var image: UIImage](./image.md)
   The image the button displays.
 
 

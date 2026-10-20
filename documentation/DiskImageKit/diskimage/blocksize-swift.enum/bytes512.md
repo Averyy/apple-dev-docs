@@ -1,7 +1,8 @@
 # DiskImage.BlockSize.bytes512
 
 **Framework**: DiskImageKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that represents a 512 byte block size.
 

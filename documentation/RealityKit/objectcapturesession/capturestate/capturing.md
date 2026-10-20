@@ -1,7 +1,8 @@
 # ObjectCaptureSession.CaptureState.capturing
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Auto-capture is in progress.
 
@@ -19,7 +20,7 @@ case capturing
 
 In this state the user is expected to orbit the device slowly and smoothly around the object in order to fully complete the capture dial.
 
-In this state an app may also manually request captures with a call to [`requestImageCapture()`](objectcapturesession/requestimagecapture().md).
+In this state an app may also manually request captures with a call to [`requestImageCapture()`](../requestimagecapture%28%29.md).
 
 
 ---

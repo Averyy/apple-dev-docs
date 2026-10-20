@@ -1,7 +1,8 @@
 # addRotateYOp(_:inverse:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func addRotateYOp(_ animatedValueName: String, inverse: Bool) -> MDLTransformRotateYOp
+```
+
+```objc
+- (MDLTransformRotateYOp *) addRotateYOp:(NSString *) animatedValueName inverse:(bool) inverse;
 ```
 
 

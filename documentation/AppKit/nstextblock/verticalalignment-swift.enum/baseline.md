@@ -1,7 +1,8 @@
 # NSTextBlock.VerticalAlignment.baseline
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 case baseline
+```
+
+```c
+NSTextBlockVerticalAlignmentBaseline
 ```
 
 

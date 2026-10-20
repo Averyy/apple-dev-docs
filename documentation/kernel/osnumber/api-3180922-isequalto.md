@@ -1,7 +1,8 @@
 # isEqualTo
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Compares the number with an OSNumber.
 
@@ -11,11 +12,19 @@ Compares the number with an OSNumber.
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+bool isEqualTo(const OSNumber *aNumber);
+```
+
+*macOS*
+
+```cpp
 virtual bool isEqualTo(const OSNumber *aNumber);
 ```
 
-#### Return_value
+#### Return Value
 
 true iff the two numbers have the same value.
 
@@ -29,7 +38,8 @@ If the passed OSNumber object has the same value, regardless of size, true is re
 
 ## See Also
 
-- [- isEqualTo](osnumber/3434345-isequalto.md)
+### Comparing Numbers
+- [- isEqualTo](./api-3434345-isequalto.md)
   Compares the string with an OSObject
 
 

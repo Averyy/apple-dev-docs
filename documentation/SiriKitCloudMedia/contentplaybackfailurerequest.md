@@ -1,7 +1,8 @@
 # ContentPlaybackFailureRequest
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A request the client sends to recover from failed content playback.
 
@@ -10,7 +11,7 @@ A request the client sends to recover from failed content playback.
 
 ## Declaration
 
-```swift
+```
 object ContentPlaybackFailureRequest
 ```
 
@@ -20,23 +21,32 @@ If the playback of a queue fails to start, or there’s an error during playback
 
 ## Properties
 
-- `constraints` (Constraints) *(required)*: Limitations on the type and quantity of content to provide in the recovery [`Queue`](queue.md).
+- `constraints` (Constraints) *(required)*: Limitations on the type and quantity of content to provide in the recovery [`Queue`](./queue.md).
 - `contentFailure` (ContentFailure) *(required)*: An object that describes why playback failed.
 - `nextContentUrl` (string): The URL the client uses to request the next queue segment.
+
+  **Minimum Length**: `0`; **Maximum Length**: `2000`
 - `previousContentUrl` (string): The URL the client uses to request the previous queue segment.
+
+  **Minimum Length**: `0`; **Maximum Length**: `2000`
 - `sessionIdentifier` (string) *(required)*: The identifier that associates the requests and  responses of a specific intent.
+
+  **Minimum Length**: `1`; **Maximum Length**: `128`
 - `timestamp` (date-time): The time when the playback failure occurred.
 - `userActivity` (UserActivity): A description of the client’s current playback queue.
 - `version` (string) *(required)*: The version of the client’s `SiriKitMediaAPI` library.
+
+  **Maximum Length**: `25`; **Allowed Values**: `/[0-9]+\.[0-9]+\.[0-9]+/`
 - `whilePlaying` (PlayerContext) *(required)*: The content that failed to play.
 
 ## See Also
 
-- [Recover from Content Playback Failure](contentplaybackfailure.md)
+### Playback Failure
+- [Recover from Content Playback Failure](./contentplaybackfailure.md)
   Provide a recovery queue that allows the client to resume playback after an error.
-- [object ContentFailure](contentfailure.md)
+- [object ContentFailure](./contentfailure.md)
   An object that describes why the client can’t play a specific piece of content.
-- [object ContentPlaybackFailureResponse](contentplaybackfailureresponse.md)
+- [object ContentPlaybackFailureResponse](./contentplaybackfailureresponse.md)
   A response that allows the client to recover from failed content playback.
 
 

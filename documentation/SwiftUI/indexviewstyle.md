@@ -1,7 +1,8 @@
 # IndexViewStyle
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Defines the implementation of all `IndexView` instances within a view hierarchy.
 
@@ -26,46 +27,47 @@ To configure the current `IndexViewStyle` for a view hierarchy, use the `.indexV
 ## Topics
 
 ### Getting built-in index view styles
-- [static var page: PageIndexViewStyle](indexviewstyle/page.md)
+- [static var page: PageIndexViewStyle](./indexviewstyle/page.md)
   An index view style that places a page index view over its content.
-- [static func page(backgroundDisplayMode: PageIndexViewStyle.BackgroundDisplayMode) -> PageIndexViewStyle](indexviewstyle/page(backgrounddisplaymode:).md)
+- [static func page(backgroundDisplayMode: PageIndexViewStyle.BackgroundDisplayMode) -> PageIndexViewStyle](./indexviewstyle/page%28backgrounddisplaymode%29.md)
   An index view style that places a page index view over its content.
 ### Supporting types
-- [struct PageIndexViewStyle](pageindexviewstyle.md)
+- [struct PageIndexViewStyle](./pageindexviewstyle.md)
   An index view style that places a page index view over its content.
 
 ## Relationships
 
 ### Conforming Types
-- [PageIndexViewStyle](pageindexviewstyle.md)
+- [PageIndexViewStyle](./pageindexviewstyle.md)
 
 ## See Also
 
-- [func controlGroupStyle<S>(S) -> some View](view/controlgroupstyle(_:).md)
+### Styling groups
+- [func controlGroupStyle<S>(S) -> some View](./view/controlgroupstyle%28_%29.md)
   Sets the style for control groups within this view.
-- [protocol ControlGroupStyle](controlgroupstyle.md)
+- [protocol ControlGroupStyle](./controlgroupstyle.md)
   Defines the implementation of all control groups within a view hierarchy.
-- [struct ControlGroupStyleConfiguration](controlgroupstyleconfiguration.md)
+- [struct ControlGroupStyleConfiguration](./controlgroupstyleconfiguration.md)
   The properties of a control group.
-- [func formStyle<S>(S) -> some View](view/formstyle(_:).md)
+- [func formStyle<S>(S) -> some View](./view/formstyle%28_%29.md)
   Sets the style for forms in a view hierarchy.
-- [protocol FormStyle](formstyle.md)
+- [protocol FormStyle](./formstyle.md)
   The appearance and behavior of a form.
-- [struct FormStyleConfiguration](formstyleconfiguration.md)
+- [struct FormStyleConfiguration](./formstyleconfiguration.md)
   The properties of a form instance.
-- [func groupBoxStyle<S>(S) -> some View](view/groupboxstyle(_:).md)
+- [func groupBoxStyle<S>(S) -> some View](./view/groupboxstyle%28_%29.md)
   Sets the style for group boxes within this view.
-- [protocol GroupBoxStyle](groupboxstyle.md)
+- [protocol GroupBoxStyle](./groupboxstyle.md)
   A type that specifies the appearance and interaction of all group boxes within a view hierarchy.
-- [struct GroupBoxStyleConfiguration](groupboxstyleconfiguration.md)
+- [struct GroupBoxStyleConfiguration](./groupboxstyleconfiguration.md)
   The properties of a group box instance.
-- [func indexViewStyle<S>(S) -> some View](view/indexviewstyle(_:).md)
+- [func indexViewStyle<S>(S) -> some View](./view/indexviewstyle%28_%29.md)
   Sets the style for the index view within the current environment.
-- [func labeledContentStyle<S>(S) -> some View](view/labeledcontentstyle(_:).md)
+- [func labeledContentStyle<S>(S) -> some View](./view/labeledcontentstyle%28_%29.md)
   Sets a style for labeled content.
-- [protocol LabeledContentStyle](labeledcontentstyle.md)
+- [protocol LabeledContentStyle](./labeledcontentstyle.md)
   The appearance and behavior of a labeled content instance..
-- [struct LabeledContentStyleConfiguration](labeledcontentstyleconfiguration.md)
+- [struct LabeledContentStyleConfiguration](./labeledcontentstyleconfiguration.md)
   The properties of a labeled content instance.
 
 

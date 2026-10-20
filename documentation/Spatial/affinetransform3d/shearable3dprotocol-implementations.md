@@ -1,11 +1,12 @@
 # Shearable3DProtocol Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func sheared(AxisWithFactors) -> AffineTransform3D](affinetransform3d/sheared(_:).md)
+- [func sheared(AxisWithFactors) -> AffineTransform3D](./sheared%28_%29.md)
   Returns an affine transform that results from shearing over an axis by shear factors for the other two axes.
 
 

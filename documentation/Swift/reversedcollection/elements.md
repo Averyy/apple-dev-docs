@@ -1,7 +1,8 @@
 # ReversedCollection.Elements
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A `Sequence` that can contain the same elements as this one, possibly with a simpler type.
 
@@ -19,6 +20,8 @@ A `Sequence` that can contain the same elements as this one, possibly with a sim
 ```swift
 typealias Elements = ReversedCollection<Base>
 ```
+
+Available when `Base` conforms to `BidirectionalCollection` and `LazySequenceProtocol`.
 
 #### Discussion
 

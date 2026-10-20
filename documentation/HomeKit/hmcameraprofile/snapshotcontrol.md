@@ -1,7 +1,8 @@
 # snapshotControl
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls the camera’s snapshot function.
 
@@ -19,9 +20,14 @@ Controls the camera’s snapshot function.
 var snapshotControl: HMCameraSnapshotControl? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) HMCameraSnapshotControl * snapshotControl;
+```
+
 ## See Also
 
-- [class HMCameraSnapshotControl](hmcamerasnapshotcontrol.md)
+### Capturing snapshots
+- [class HMCameraSnapshotControl](../hmcamerasnapshotcontrol.md)
   An object that can take an image snapshot from a camera.
 
 

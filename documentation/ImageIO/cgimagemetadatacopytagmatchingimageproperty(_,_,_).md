@@ -1,7 +1,8 @@
 # CGImageMetadataCopyTagMatchingImageProperty(_:_:_:)
 
 **Framework**: Image I/O  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Searches for the specified image property and, if found, returns the corresponding tag object.
 
@@ -20,29 +21,34 @@ Searches for the specified image property and, if found, returns the correspondi
 func CGImageMetadataCopyTagMatchingImageProperty(_ metadata: CGImageMetadata, _ dictionaryName: CFString, _ propertyName: CFString) -> CGImageMetadataTag?
 ```
 
+```c
+extern CGImageMetadataTagRefCGImageMetadataCopyTagMatchingImageProperty(CGImageMetadataRef metadata, CFStringRef dictionaryName, CFStringRef propertyName);
+```
+
 #### Return Value
 
-The [`CGImageMetadataTag`](cgimagemetadatatag.md) object that corresponds to the specified property, or `NULL` if the property wasn’t found.
+The [`CGImageMetadataTag`](./cgimagemetadatatag.md) object that corresponds to the specified property, or `NULL` if the property wasn’t found.
 
 #### Discussion
 
 Use this function to quickly search the different metadata dictionaries for a specific tag. The returned tag object contains appropriate values for all fields, including the namespace, prefix, and XMP type.
 
-When you request an EXIF or IPTC property, this function fills in the namespace, prefix, and XMP type information by copying information from an appropriate XMP type. For example, when you request the [`kCGImagePropertyExifDateTimeOriginal`](kcgimagepropertyexifdatetimeoriginal.md) property, the function fills in the information using the `photoshop:DateTime` XMP tag. When this bridging occurs, property fields retain their XMP format, rather than the EXIF or IPTC format.
+When you request an EXIF or IPTC property, this function fills in the namespace, prefix, and XMP type information by copying information from an appropriate XMP type. For example, when you request the [`kCGImagePropertyExifDateTimeOriginal`](./kcgimagepropertyexifdatetimeoriginal.md) property, the function fills in the information using the `photoshop:DateTime` XMP tag. When this bridging occurs, property fields retain their XMP format, rather than the EXIF or IPTC format.
 
 ## Parameters
 
 - `metadata`: The metadata object to search.
-- `dictionaryName`: The metadata subdictionary to which the image property belongs. For example, specify [`kCGImagePropertyExifDictionary`](kcgimagepropertyexifdictionary.md) for image properties that are part of the image’s EXIF metadata.
-- `propertyName`: The name of the property. For example, specify [`kCGImagePropertyTIFFOrientation`](kcgimagepropertytifforientation.md), [`kCGImagePropertyExifDateTimeOriginal`](kcgimagepropertyexifdatetimeoriginal.md), or [`kCGImagePropertyIPTCKeywords`](kcgimagepropertyiptckeywords.md). If the specified property is unsupported by the metadata object, this function logs a warning.
+- `dictionaryName`: The metadata subdictionary to which the image property belongs. For example, specify [`kCGImagePropertyExifDictionary`](./kcgimagepropertyexifdictionary.md) for image properties that are part of the image’s EXIF metadata.
+- `propertyName`: The name of the property. For example, specify [`kCGImagePropertyTIFFOrientation`](./kcgimagepropertytifforientation.md), [`kCGImagePropertyExifDateTimeOriginal`](./kcgimagepropertyexifdatetimeoriginal.md), or [`kCGImagePropertyIPTCKeywords`](./kcgimagepropertyiptckeywords.md). If the specified property is unsupported by the metadata object, this function logs a warning.
 
 ## See Also
 
-- [func CGImageMetadataCopyTagWithPath(CGImageMetadata, CGImageMetadataTag?, CFString) -> CGImageMetadataTag?](cgimagemetadatacopytagwithpath(_:_:_:).md)
+### Getting the Metadata Tags
+- [func CGImageMetadataCopyTagWithPath(CGImageMetadata, CGImageMetadataTag?, CFString) -> CGImageMetadataTag?](./cgimagemetadatacopytagwithpath%28_,_,_%29.md)
   Searches for a specific metadata tag within a metadata collection.
-- [func CGImageMetadataCopyTags(CGImageMetadata) -> CFArray?](cgimagemetadatacopytags(_:).md)
+- [func CGImageMetadataCopyTags(CGImageMetadata) -> CFArray?](./cgimagemetadatacopytags%28_%29.md)
   Returns an array of root-level metadata tags from the specified metadata object.
-- [func CGImageMetadataCopyStringValueWithPath(CGImageMetadata, CGImageMetadataTag?, CFString) -> CFString?](cgimagemetadatacopystringvaluewithpath(_:_:_:).md)
+- [func CGImageMetadataCopyStringValueWithPath(CGImageMetadata, CGImageMetadataTag?, CFString) -> CFString?](./cgimagemetadatacopystringvaluewithpath%28_,_,_%29.md)
   Searches the metadata for the specified tag, and returns its string value if it exists.
 
 

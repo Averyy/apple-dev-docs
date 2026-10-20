@@ -1,7 +1,8 @@
 # init(urlRequest:)
 
 **Framework**: MusicKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a data request with a URL request.
 

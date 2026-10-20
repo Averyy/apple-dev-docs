@@ -1,7 +1,8 @@
 # buildEither(first:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a column result for the first of two column content alternatives.
 
@@ -17,6 +18,15 @@ Creates a column result for the first of two column content alternatives.
 ```swift
 @export(implementation)
 static func buildEither<T, F>(first: T) -> _ConditionalContent<T, F> where RowValue == T.TableRowValue, Sort == T.TableColumnSortComparator, T : TableColumnContent, F : TableColumnContent, T.TableColumnSortComparator == F.TableColumnSortComparator, T.TableRowValue == F.TableRowValue
+```
+
+Available when `RowValue` conforms to `Identifiable` and `Sort` conforms to `SortComparator`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+static func buildEither<T, F>(first: T) -> _ConditionalContent<T, F> where RowValue == T.TableRowValue, T : TableColumnContent, F : TableColumnContent, T.TableColumnSortComparator == Never, T.TableRowValue == F.TableRowValue, F.TableColumnSortComparator == Never
 ```
 
 #### Discussion

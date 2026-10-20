@@ -1,7 +1,8 @@
 # Product.SubscriptionInfo.Status
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The renewal status information for an auto-renewable subscription.
 
@@ -22,7 +23,7 @@ struct Status
 
 ## Mentions
 
-- [Choosing a StoreKit API for Apple In-App Purchases](choosing-a-storekit-api-for-in-app-purchases.md)
+- [Choosing a StoreKit API for Apple In-App Purchases](../../choosing-a-storekit-api-for-in-app-purchases.md)
 
 #### Overview
 
@@ -31,42 +32,43 @@ The subscription status provides renewal information signed by the App Store for
 ## Topics
 
 ### Monitoring subscription status changes
-- [static var updates: Product.SubscriptionInfo.Status.Statuses](product/subscriptioninfo/status-swift.struct/updates.md)
+- [static var updates: Product.SubscriptionInfo.Status.Statuses](./status-swift.struct/updates.md)
   The asynchronous sequence that emits status information when a subscription’s status changes.
-- [static var all: AsyncStream<(groupID: String, statuses: [Product.SubscriptionInfo.Status])>](product/subscriptioninfo/status-swift.struct/all.md)
-- [Product.SubscriptionInfo.Status.Statuses](product/subscriptioninfo/status-swift.struct/statuses.md)
+- [static var all: AsyncStream<(groupID: String, statuses: [Product.SubscriptionInfo.Status])>](./status-swift.struct/all.md)
+- [Product.SubscriptionInfo.Status.Statuses](./status-swift.struct/statuses.md)
   An asynchronous sequence that listens for new subscription status information.
 ### Getting subscription status information
-- [let state: Product.SubscriptionInfo.RenewalState](product/subscriptioninfo/status-swift.struct/state.md)
+- [let state: Product.SubscriptionInfo.RenewalState](./status-swift.struct/state.md)
   The renewal state of the auto-renewable subscription.
-- [let renewalInfo: VerificationResult<Product.SubscriptionInfo.RenewalInfo>](product/subscriptioninfo/status-swift.struct/renewalinfo.md)
+- [let renewalInfo: VerificationResult<Product.SubscriptionInfo.RenewalInfo>](./status-swift.struct/renewalinfo.md)
   The signed renewal information for the auto-renewable subscription.
-- [let transaction: VerificationResult<Transaction>](product/subscriptioninfo/status-swift.struct/transaction.md)
+- [let transaction: VerificationResult<Transaction>](./status-swift.struct/transaction.md)
   The latest transaction for the subscription group.
-- [Product.SubscriptionInfo.RenewalInfo](product/subscriptioninfo/renewalinfo.md)
+- [Product.SubscriptionInfo.RenewalInfo](./renewalinfo.md)
   The renewal information for an auto-renewable subscription.
-- [Product.SubscriptionInfo.RenewalState](product/subscriptioninfo/renewalstate.md)
+- [Product.SubscriptionInfo.RenewalState](./renewalstate.md)
   The renewal states of auto-renewable subscriptions.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Product.SubscriptionInfo.RenewalInfo](product/subscriptioninfo/renewalinfo.md)
+### Subscription status and renewal information
+- [Product.SubscriptionInfo.RenewalInfo](./renewalinfo.md)
   The renewal information for an auto-renewable subscription.
-- [typealias SubscriptionRenewalInfo](subscriptionrenewalinfo.md)
+- [typealias SubscriptionRenewalInfo](../../subscriptionrenewalinfo.md)
   Represents the renewal information for an auto-renewable subscription.
-- [Product.SubscriptionInfo.RenewalState](product/subscriptioninfo/renewalstate.md)
+- [Product.SubscriptionInfo.RenewalState](./renewalstate.md)
   The renewal states of auto-renewable subscriptions.
-- [typealias SubscriptionRenewalState](subscriptionrenewalstate.md)
+- [typealias SubscriptionRenewalState](../../subscriptionrenewalstate.md)
   The renewal states of auto-renewable subscriptions.
-- [typealias SubscriptionPeriod](subscriptionperiod.md)
+- [typealias SubscriptionPeriod](../../subscriptionperiod.md)
   Represents the duration of time between subscription renewals.
 
 

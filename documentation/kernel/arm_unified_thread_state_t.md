@@ -1,14 +1,15 @@
 # arm_unified_thread_state_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct arm_unified_thread_state {
     ...
 } arm_unified_thread_state_t;
@@ -17,8 +18,8 @@ typedef struct arm_unified_thread_state {
 ## Topics
 
 ### Instance Properties
-- [ash](arm_unified_thread_state_t/3609642-ash.md)
-- [uts](arm_unified_thread_state_t/3609643-uts.md)
+- [ash](./arm_unified_thread_state_t/api-3609642-ash.md)
+- [uts](./arm_unified_thread_state_t/api-3609643-uts.md)
 
 
 ---

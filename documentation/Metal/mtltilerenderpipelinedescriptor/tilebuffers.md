@@ -1,7 +1,8 @@
 # tileBuffers
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array that contains the buffer mutability options for a render pipeline’s tile function.
 
@@ -19,15 +20,20 @@ An array that contains the buffer mutability options for a render pipeline’s t
 var tileBuffers: MTLPipelineBufferDescriptorArray { get }
 ```
 
+```objc
+@property (readonly) MTLPipelineBufferDescriptorArray * tileBuffers;
+```
+
 #### Discussion
 
-This property returns an array of [`MTLPipelineBufferDescriptor`](mtlpipelinebufferdescriptor.md) objects, with each array index corresponding to the same index in the buffer argument table for the render pipeline’s tile shader.
+This property returns an array of [`MTLPipelineBufferDescriptor`](../mtlpipelinebufferdescriptor.md) objects, with each array index corresponding to the same index in the buffer argument table for the render pipeline’s tile shader.
 
 ## See Also
 
-- [var tileFunction: any MTLFunction](mtltilerenderpipelinedescriptor/tilefunction.md)
+### Specifying graphics functions and associated data
+- [var tileFunction: any MTLFunction](./tilefunction.md)
   The compute kernel or fragment function the pipeline calls.
-- [var maxCallStackDepth: Int](mtltilerenderpipelinedescriptor/maxcallstackdepth.md)
+- [var maxCallStackDepth: Int](./maxcallstackdepth.md)
   The maximum call stack depth for indirect function calls in tile shaders.
 
 

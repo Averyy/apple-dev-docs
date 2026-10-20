@@ -1,7 +1,8 @@
 # AppStoreVersionPhasedReleaseCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships to other resources that you can set with this request.
 
@@ -10,14 +11,14 @@ The relationships to other resources that you can set with this request.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionPhasedReleaseCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreVersionPhasedReleaseCreateRequest.Data.Relationships.AppStoreVersion](appstoreversionphasedreleasecreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversion-data.dictionary.md)
+- [object AppStoreVersionPhasedReleaseCreateRequest.Data.Relationships.AppStoreVersion](./relationships-data.dictionary/appstoreversion-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 ## Properties
@@ -26,7 +27,8 @@ object AppStoreVersionPhasedReleaseCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object AppStoreVersionPhasedReleaseCreateRequest.Data.Attributes](appstoreversionphasedreleasecreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object AppStoreVersionPhasedReleaseCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   Attributes that you set that describe the new resource.
 
 

@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/convert-openelm.html
 
 # Converting an Open Efficient Language Model
 
-**
-
-- [.md](../_sources/source/convert-openelm.md)
-- **
-
-.pdf
-
-**
-
-# Converting an Open Efficient Language Model
-
- Table of contents 
-
-## Contents
-
-# Converting an Open Efficient Language Model
-
 The following example shows how to convert a PyTorch [OpenELM](https://huggingface.co/apple/OpenELM) model to Core ML. OpenELM is a family of Open Efficient Language Models. The small size variants are suitable for mobile and embedded language applications.
 
 In this example you do the following:
@@ -36,7 +19,7 @@ In this example you do the following:
 
 ## Requirements
 
-This example requires macOS Monterey or newer versions, [PyTorch](https://pytorch.org/), [Transformers](https://huggingface.co/transformers/index.md), and Core ML Tools 8.0 or newer versions. Use the following commands:
+This example requires macOS Monterey or newer versions, [PyTorch](https://pytorch.org/), [Transformers](https://huggingface.co/transformers/index.html), and Core ML Tools 8.0 or newer versions. Use the following commands:
 
 ```
 pip install torch
@@ -172,5 +155,3 @@ John's wife, Mary, died suddenly of
 ```
 
 As you can see, the converted Core ML model performs in the same manner as the original model.
-
-** Contents

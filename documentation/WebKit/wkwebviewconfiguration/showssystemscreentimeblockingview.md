@@ -1,7 +1,8 @@
 # showsSystemScreenTimeBlockingView
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var showsSystemScreenTimeBlockingView: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL showsSystemScreenTimeBlockingView;
 ```
 
 #### Discussion

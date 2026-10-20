@@ -1,7 +1,8 @@
 # items
 
 **Framework**: App Intents Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The results that the query returns.
 

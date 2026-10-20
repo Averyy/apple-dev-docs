@@ -1,7 +1,8 @@
 # Transcript.Response
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A response from the model.
 
@@ -22,38 +23,39 @@ struct Response
 ## Topics
 
 ### Creating a response
-- [init(id: String, assetIDs: [String], segments: [Transcript.Segment])](transcript/response/init(id:assetids:segments:).md)
+- [init(id: String, assetIDs: [String], segments: [Transcript.Segment])](./response/init%28id,assetids,segments%29.md)
   Creates a response that contains the segments you provide.
-- [init(id: String, metadata: [String : any ConvertibleToGeneratedContent], segments: [Transcript.Segment])](transcript/response/init(id:metadata:segments:).md)
+- [init(id: String, metadata: [String : any ConvertibleToGeneratedContent], segments: [Transcript.Segment])](./response/init%28id,metadata,segments%29.md)
   Creates a response that contains the metadata and segments you provide.
 ### Inspecting a response
-- [var segments: [Transcript.Segment]](transcript/response/segments.md)
+- [var segments: [Transcript.Segment]](./response/segments.md)
   Ordered response segments.
-- [var assetIDs: [String]](transcript/response/assetids.md)
+- [var assetIDs: [String]](./response/assetids.md)
   Version-aware identifiers for all assets used to generate this response.
-- [var metadata: [String : GeneratedContent]](transcript/response/metadata.md)
+- [var metadata: [String : GeneratedContent]](./response/metadata.md)
   Metadata associated with generating the response.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Identifiable](../../Swift/identifiable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Transcript.Entry](transcript/entry.md)
+### Transcript entries
+- [Transcript.Entry](./entry.md)
   An entry in a transcript.
-- [Transcript.Instructions](transcript/instructions.md)
+- [Transcript.Instructions](./instructions.md)
   Instructions you provide to the model that define its behavior.
-- [Transcript.Prompt](transcript/prompt.md)
+- [Transcript.Prompt](./prompt.md)
   A prompt from the user to the model.
-- [Transcript.Reasoning](transcript/reasoning.md)
+- [Transcript.Reasoning](./reasoning.md)
   A reasoning entry from the model.
 
 

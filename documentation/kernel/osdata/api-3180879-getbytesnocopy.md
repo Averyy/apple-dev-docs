@@ -1,7 +1,8 @@
 # getBytesNoCopy
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Returns a pointer to the OSData object's internal data buffer.
 
@@ -11,17 +12,26 @@ Returns a pointer to the OSData object's internal data buffer.
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+const void * getBytesNoCopy(void);
+```
+
+*macOS*
+
+```cpp
 virtual const void * getBytesNoCopy(void);
 ```
 
-#### Return_value
+#### Return Value
 
 A pointer to the data or NULL if the OSData has zero length.
 
 ## See Also
 
-- [- getBytesNoCopy](osdata/3433842-getbytesnocopy.md)
+### Getting Bytes
+- [- getBytesNoCopy](./api-3433842-getbytesnocopy.md)
   Returns a pointer to the OSData object's internal data buffer.
 
 

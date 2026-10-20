@@ -1,7 +1,8 @@
 # minNumber
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The smallest numerical value allowed by this constraint.
 
@@ -20,11 +21,16 @@ The smallest numerical value allowed by this constraint.
 var minNumber: NSNumber { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSNumber * minNumber;
+```
+
 ## See Also
 
-- [var maxNumber: NSNumber](mlnumericconstraint/maxnumber.md)
+### Numeric Constraints
+- [var maxNumber: NSNumber](./maxnumber.md)
   The largest numerical value allowed by this constraint.
-- [var enumeratedNumbers: Set<NSNumber>?](mlnumericconstraint/enumeratednumbers.md)
+- [var enumeratedNumbers: Set<NSNumber>?](./enumeratednumbers.md)
   A set of the numbers allowed in this constraint.
 
 

@@ -1,14 +1,15 @@
 # CS_SUPPL_SIGNER_TYPE_LOCAL
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 CS_SUPPL_SIGNER_TYPE_LOCAL = 8
 ```
 

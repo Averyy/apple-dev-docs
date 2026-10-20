@@ -1,30 +1,32 @@
 # kDMAOutputSegmentLittle64
 
 **Framework**: SCSIControllerDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A constant representing little-endian 64-bit DMA segments.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 kDMAOutputSegmentLittle64
 ```
 
 ## See Also
 
-- [kDMAOutputSegmentBig32](dmaoutputsegmenttype/kdmaoutputsegmentbig32.md)
+### Segment types
+- [kDMAOutputSegmentBig32](./kdmaoutputsegmentbig32.md)
   A constant representing big-endian 32-bit DMA segments.
-- [kDMAOutputSegmentBig64](dmaoutputsegmenttype/kdmaoutputsegmentbig64.md)
+- [kDMAOutputSegmentBig64](./kdmaoutputsegmentbig64.md)
   A constant representing big-endian 64-bit DMA segments.
-- [kDMAOutputSegmentHost32](dmaoutputsegmenttype/kdmaoutputsegmenthost32.md)
+- [kDMAOutputSegmentHost32](./kdmaoutputsegmenthost32.md)
   A constant representing 32-bit DMA segments with host-native endianness.
-- [kDMAOutputSegmentHost64](dmaoutputsegmenttype/kdmaoutputsegmenthost64.md)
+- [kDMAOutputSegmentHost64](./kdmaoutputsegmenthost64.md)
   A constant representing 64-bit DMA segments with host-native endianness.
-- [kDMAOutputSegmentLittle32](dmaoutputsegmenttype/kdmaoutputsegmentlittle32.md)
+- [kDMAOutputSegmentLittle32](./kdmaoutputsegmentlittle32.md)
   A constant representing little-endian 32-bit DMA segments.
 
 

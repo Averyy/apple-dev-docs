@@ -1,18 +1,19 @@
 # kCFBundleExecutableArchitectureX86_64
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies the 64-bit Intel architecture.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,14 +21,19 @@ Specifies the 64-bit Intel architecture.
 var kCFBundleExecutableArchitectureX86_64: Int { get }
 ```
 
+```c
+kCFBundleExecutableArchitectureX86_64
+```
+
 ## See Also
 
-- [var kCFBundleExecutableArchitectureI386: Int](kcfbundleexecutablearchitecturei386.md)
+### Constants
+- [var kCFBundleExecutableArchitectureI386: Int](./kcfbundleexecutablearchitecturei386.md)
   Specifies the 32-bit Intel architecture.
-- [var kCFBundleExecutableArchitecturePPC: Int](kcfbundleexecutablearchitectureppc.md)
+- [var kCFBundleExecutableArchitecturePPC: Int](./kcfbundleexecutablearchitectureppc.md)
   Specifies the 32-bit PowerPC architecture.
-- [var kCFBundleExecutableArchitectureARM64: Int](kcfbundleexecutablearchitecturearm64.md)
-- [var kCFBundleExecutableArchitecturePPC64: Int](kcfbundleexecutablearchitectureppc64.md)
+- [var kCFBundleExecutableArchitectureARM64: Int](./kcfbundleexecutablearchitecturearm64.md)
+- [var kCFBundleExecutableArchitecturePPC64: Int](./kcfbundleexecutablearchitectureppc64.md)
   Specifies the 64-bit PowerPC architecture.
 
 

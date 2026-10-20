@@ -1,7 +1,8 @@
 # initialURL
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The source URL that originally asked the web view to load this page.
 
@@ -16,6 +17,10 @@ The source URL that originally asked the web view to load this page.
 
 ```swift
 var initialURL: URL { get }
+```
+
+```objc
+@property (copy, readonly) NSURL * initialURL;
 ```
 
 

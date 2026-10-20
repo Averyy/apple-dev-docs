@@ -1,7 +1,8 @@
 # up
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The focus update is heading in the up direction.
 
@@ -18,21 +19,26 @@ The focus update is heading in the up direction.
 static var up: UIFocusHeading { get }
 ```
 
+```c
+UIFocusHeadingUp
+```
+
 ## See Also
 
-- [static var down: UIFocusHeading](uifocusheading/down.md)
+### Constants
+- [static var down: UIFocusHeading](./down.md)
   The focus update is heading in the down direction.
-- [static var left: UIFocusHeading](uifocusheading/left.md)
+- [static var left: UIFocusHeading](./left.md)
   The focus update is heading in the left direction.
-- [static var right: UIFocusHeading](uifocusheading/right.md)
+- [static var right: UIFocusHeading](./right.md)
   The focus update is heading in the right direction.
-- [static var next: UIFocusHeading](uifocusheading/next.md)
+- [static var next: UIFocusHeading](./next.md)
   The focus update is heading to the next item.
-- [static var previous: UIFocusHeading](uifocusheading/previous.md)
+- [static var previous: UIFocusHeading](./previous.md)
   The focus update is heading to the previous item.
-- [static var first: UIFocusHeading](uifocusheading/first.md)
+- [static var first: UIFocusHeading](./first.md)
   The focus update is heading to the first item.
-- [static var last: UIFocusHeading](uifocusheading/last.md)
+- [static var last: UIFocusHeading](./last.md)
   The focus update is heading to the last item.
 
 

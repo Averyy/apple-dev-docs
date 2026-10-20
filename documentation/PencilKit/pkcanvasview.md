@@ -1,7 +1,8 @@
 # PKCanvasView
 
 **Framework**: PencilKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A view that captures Apple Pencil input and displays the rendered results in an iOS app.
 
@@ -17,108 +18,113 @@ A view that captures Apple Pencil input and displays the rendered results in an 
 class PKCanvasView
 ```
 
+```objc
+@interface PKCanvasView : UIScrollView
+```
+
 ## Mentions
 
-- [Importing Bézier path data into PencilKit](importing-external-drawing-data-into-pencilkit.md)
-- [Supporting backward compatibility for ink types](supporting-backward-compatibility-for-ink-types.md)
+- [Importing Bézier path data into PencilKit](./importing-external-drawing-data-into-pencilkit.md)
+- [Supporting backward compatibility for ink types](./supporting-backward-compatibility-for-ink-types.md)
 
 #### Overview
 
-A [`PKCanvasView`](pkcanvasview.md) object captures content drawn using Apple Pencil or the user’s finger and displays it in your app. The canvas view handles all of the touch events and data coming from Apple Pencil, and renders that information using the tool you specify. The canvas stores the captured input in a [`PKDrawingReference`](pkdrawingreference.md) object.
+A [`PKCanvasView`](./pkcanvasview.md) object captures content drawn using Apple Pencil or the user’s finger and displays it in your app. The canvas view handles all of the touch events and data coming from Apple Pencil, and renders that information using the tool you specify. The canvas stores the captured input in a [`PKDrawingReference`](./pkdrawingreference.md) object.
 
-[`PKCanvasView`](pkcanvasview.md) is a scroll view, so you can make the drawable area bigger than the canvas view’s frame rectangle. To do that, set the inherited [`contentSize`](https://developer.apple.com/documentation/uikit/uiscrollview/contentsize) property to the size you want. The canvas view automatically scales its underlying content to match the size you specify. Users scroll around the canvas using a two-finger pan gesture. (If the [`allowsFingerDrawing`](pkcanvasview/allowsfingerdrawing.md) property is `false`, users scroll with only one finger.)
+[`PKCanvasView`](./pkcanvasview.md) is a scroll view, so you can make the drawable area bigger than the canvas view’s frame rectangle. To do that, set the inherited [`contentSize`](../UIKit/uiscrollview/contentsize.md) property to the size you want. The canvas view automatically scales its underlying content to match the size you specify. Users scroll around the canvas using a two-finger pan gesture. (If the [`allowsFingerDrawing`](./pkcanvasview/allowsfingerdrawing.md) property is `false`, users scroll with only one finger.)
 
-A canvas view conforms to the [`PKToolPickerObserver`](pktoolpickerobserver.md) protocol, so you can add it as an observer of the window’s tool picker. The tool picker displays a floating palette of tools that the user can choose from. As the user interacts with items in the palette, such as changing ink colors, or line widths, the canvas automatically updates its drawing environment accordingly.
+A canvas view conforms to the [`PKToolPickerObserver`](./pktoolpickerobserver.md) protocol, so you can add it as an observer of the window’s tool picker. The tool picker displays a floating palette of tools that the user can choose from. As the user interacts with items in the palette, such as changing ink colors, or line widths, the canvas automatically updates its drawing environment accordingly.
 
 ## Topics
 
 ### Responding to drawing-related changes
-- [var delegate: (any PKCanvasViewDelegate)?](pkcanvasview/delegate.md)
+- [var delegate: (any PKCanvasViewDelegate)?](./pkcanvasview/delegate.md)
   The object you use to respond to changes in the drawn content or with the selected tool.
-- [protocol PKCanvasViewDelegate](pkcanvasviewdelegate.md)
+- [protocol PKCanvasViewDelegate](./pkcanvasviewdelegate.md)
   Methods for monitoring drawing related changes in a canvas view.
 ### Configuring the drawing environment
-- [var tool: any PKTool](pkcanvasview/tool-1kj57.md)
+- [var tool: any PKTool](./pkcanvasview/tool-1kj57.md)
   The currently selected tool used for drawing.
-- [var isRulerActive: Bool](pkcanvasview/isruleractive.md)
+- [var isRulerActive: Bool](./pkcanvasview/isruleractive.md)
   A Boolean value that indicates whether a ruler view is visible on the canvas.
-- [var allowsFingerDrawing: Bool](pkcanvasview/allowsfingerdrawing.md)
+- [var allowsFingerDrawing: Bool](./pkcanvasview/allowsfingerdrawing.md)
   A Boolean value that indicates whether the canvas accepts input from the user’s finger in addition to Apple Pencil.
-- [var drawingPolicy: PKCanvasViewDrawingPolicy](pkcanvasview/drawingpolicy.md)
+- [var drawingPolicy: PKCanvasViewDrawingPolicy](./pkcanvasview/drawingpolicy.md)
   The policy that controls the types of touches allowed when drawing on the canvas.
-- [enum PKCanvasViewDrawingPolicy](pkcanvasviewdrawingpolicy.md)
+- [enum PKCanvasViewDrawingPolicy](./pkcanvasviewdrawingpolicy.md)
   Constants that you use to specify the type of drawing gestures your app permits while the user draws on the canvas.
 ### Getting the drawing gesture recognizer
-- [var drawingGestureRecognizer: UIGestureRecognizer](pkcanvasview/drawinggesturerecognizer.md)
+- [var drawingGestureRecognizer: UIGestureRecognizer](./pkcanvasview/drawinggesturerecognizer.md)
   The gesture recognizer that the canvas uses to track touch events.
 ### Getting the captured data
-- [var drawing: PKDrawing](pkcanvasview/drawing.md)
+- [var drawing: PKDrawing](./pkcanvasview/drawing.md)
   The data object that the canvas uses to store drawn content.
 ### Managing stroke selection
-- [var selection: Set<UUID>](pkcanvasview/selection.md)
+- [var selection: Set<UUID>](./pkcanvasview/selection.md)
   The identifiers of the strokes selected on the canvas.
 ### Supporting PencilKit versions
-- [var maximumSupportedContentVersion: PKContentVersion](pkcanvasview/maximumsupportedcontentversion.md)
+- [var maximumSupportedContentVersion: PKContentVersion](./pkcanvasview/maximumsupportedcontentversion.md)
   The maximum version of PencilKit to support.
 ### Instance Properties
-- [var isDrawingEnabled: Bool](pkcanvasview/isdrawingenabled.md)
+- [var isDrawingEnabled: Bool](./pkcanvasview/isdrawingenabled.md)
 
 ## Relationships
 
 ### Inherits From
-- [UIScrollView](../uikit/uiscrollview.md)
+- [UIScrollView](../UIKit/uiscrollview.md)
 ### Conforms To
-- [CALayerDelegate](../quartzcore/calayerdelegate.md)
-- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
-- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [PKToolPickerObserver](pktoolpickerobserver.md)
-- [UIAccessibilityIdentification](../uikit/uiaccessibilityidentification.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UIAppearance](../uikit/uiappearance.md)
-- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
-- [UICoordinateSpace](../uikit/uicoordinatespace.md)
-- [UIDynamicItem](../uikit/uidynamicitem.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIFocusItem](../uikit/uifocusitem.md)
-- [UIFocusItemContainer](../uikit/uifocusitemcontainer.md)
-- [UIFocusItemScrollableContainer](../uikit/uifocusitemscrollablecontainer.md)
-- [UILargeContentViewerItem](../uikit/uilargecontentvieweritem.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIPopoverPresentationControllerSourceItem](../uikit/uipopoverpresentationcontrollersourceitem.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](../uikit/uitraitenvironment.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CALayerDelegate](../QuartzCore/calayerdelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/cmbodyidentifiable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [PKToolPickerObserver](./pktoolpickerobserver.md)
+- [UIAccessibilityIdentification](../UIKit/uiaccessibilityidentification.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearance](../UIKit/uiappearance.md)
+- [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
+- [UICoordinateSpace](../UIKit/uicoordinatespace.md)
+- [UIDynamicItem](../UIKit/uidynamicitem.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIFocusItem](../UIKit/uifocusitem.md)
+- [UIFocusItemContainer](../UIKit/uifocusitemcontainer.md)
+- [UIFocusItemScrollableContainer](../UIKit/uifocusitemscrollablecontainer.md)
+- [UILargeContentViewerItem](../UIKit/uilargecontentvieweritem.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIPopoverPresentationControllerSourceItem](../UIKit/uipopoverpresentationcontrollersourceitem.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UITraitChangeObservable](../UIKit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../UIKit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [Drawing with PencilKit](drawing-with-pencilkit.md)
+### Canvas
+- [Drawing with PencilKit](./drawing-with-pencilkit.md)
   Add expressive, low-latency drawing to your app using PencilKit.
-- [Customizing Scribble with Interactions](customizing-scribble-with-interactions.md)
+- [Customizing Scribble with Interactions](./customizing-scribble-with-interactions.md)
   Enable writing on a non-text-input view by adding interactions.
-- [Inspecting, Modifying, and Constructing PencilKit Drawings](inspecting-modifying-and-constructing-pencilkit-drawings.md)
+- [Inspecting, Modifying, and Constructing PencilKit Drawings](./inspecting-modifying-and-constructing-pencilkit-drawings.md)
   Score users’ ability to match PencilKit drawings generated from text, by accessing the strokes and points inside PencilKit drawings.
-- [Importing Bézier path data into PencilKit](importing-external-drawing-data-into-pencilkit.md)
+- [Importing Bézier path data into PencilKit](./importing-external-drawing-data-into-pencilkit.md)
   Convert existing Bézier-based stroke data into PencilKit drawing strokes.
-- [Controlling stroke rendering for animation and editing](controlling-stroke-rendering-for-animation-and-editing.md)
+- [Controlling stroke rendering for animation and editing](./controlling-stroke-rendering-for-animation-and-editing.md)
   Slice, animate, and blend PencilKit strokes in code, while keeping grain texture and wet ink intact.
-- [struct PKDrawing](pkdrawing-swift.struct.md)
+- [struct PKDrawing](./pkdrawing-swift.struct.md)
   A structure representing the drawing information captured by a canvas view.
-- [struct PKStroke](pkstroke-swift.struct.md)
+- [struct PKStroke](./pkstroke-swift.struct.md)
   A structure that represents the paths, boundaries, and other properties of a stroke drawn on a canvas.
-- [struct PKStrokePath](pkstrokepath-swift.struct.md)
+- [struct PKStrokePath](./pkstrokepath-swift.struct.md)
   A structure that captures the components of a stroke and provides methods to find and interpolate points along the stroke’s path.
-- [struct PKStrokePoint](pkstrokepoint-swift.struct.md)
+- [struct PKStrokePoint](./pkstrokepoint-swift.struct.md)
   A structure that represents the properties of a specific point along a stroke’s path.
-- [struct PKInk](pkink-swift.struct.md)
+- [struct PKInk](./pkink-swift.struct.md)
   A structure that represents an ink that specifies its type, color, and width.
 
 

@@ -1,7 +1,8 @@
 # ASAuthorizationCredential
 
 **Framework**: Authentication Services  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface that all credentials share.
 
@@ -20,33 +21,38 @@ An interface that all credentials share.
 protocol ASAuthorizationCredential : NSCopying, NSSecureCoding, NSObjectProtocol
 ```
 
+```objc
+@protocol ASAuthorizationCredential <NSObject, NSCopying, NSSecureCoding>
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 ### Inherited By
-- [ASAuthorizationPublicKeyCredentialAssertion](asauthorizationpublickeycredentialassertion.md)
-- [ASAuthorizationPublicKeyCredentialRegistration](asauthorizationpublickeycredentialregistration.md)
-- [ASPublicKeyCredential](aspublickeycredential.md)
+- [ASAuthorizationPublicKeyCredentialAssertion](./asauthorizationpublickeycredentialassertion.md)
+- [ASAuthorizationPublicKeyCredentialRegistration](./asauthorizationpublickeycredentialregistration.md)
+- [ASPublicKeyCredential](./aspublickeycredential.md)
 ### Conforming Types
-- [ASAuthorizationAccountCreationPlatformPublicKeyCredential](asauthorizationaccountcreationplatformpublickeycredential.md)
-- [ASAuthorizationAppleIDCredential](asauthorizationappleidcredential.md)
-- [ASAuthorizationPlatformPublicKeyCredentialAssertion](asauthorizationplatformpublickeycredentialassertion.md)
-- [ASAuthorizationPlatformPublicKeyCredentialRegistration](asauthorizationplatformpublickeycredentialregistration.md)
-- [ASAuthorizationSecurityKeyPublicKeyCredentialAssertion](asauthorizationsecuritykeypublickeycredentialassertion.md)
-- [ASAuthorizationSecurityKeyPublicKeyCredentialRegistration](asauthorizationsecuritykeypublickeycredentialregistration.md)
-- [ASAuthorizationSingleSignOnCredential](asauthorizationsinglesignoncredential.md)
-- [ASOneTimeCodeCredential](asonetimecodecredential.md)
-- [ASPasskeyAssertionCredential](aspasskeyassertioncredential.md)
-- [ASPasskeyRegistrationCredential](aspasskeyregistrationcredential.md)
-- [ASPasswordCredential](aspasswordcredential.md)
+- [ASAuthorizationAccountCreationPlatformPublicKeyCredential](./asauthorizationaccountcreationplatformpublickeycredential.md)
+- [ASAuthorizationAppleIDCredential](./asauthorizationappleidcredential.md)
+- [ASAuthorizationPlatformPublicKeyCredentialAssertion](./asauthorizationplatformpublickeycredentialassertion.md)
+- [ASAuthorizationPlatformPublicKeyCredentialRegistration](./asauthorizationplatformpublickeycredentialregistration.md)
+- [ASAuthorizationSecurityKeyPublicKeyCredentialAssertion](./asauthorizationsecuritykeypublickeycredentialassertion.md)
+- [ASAuthorizationSecurityKeyPublicKeyCredentialRegistration](./asauthorizationsecuritykeypublickeycredentialregistration.md)
+- [ASAuthorizationSingleSignOnCredential](./asauthorizationsinglesignoncredential.md)
+- [ASOneTimeCodeCredential](./asonetimecodecredential.md)
+- [ASPasskeyAssertionCredential](./aspasskeyassertioncredential.md)
+- [ASPasskeyRegistrationCredential](./aspasskeyregistrationcredential.md)
+- [ASPasswordCredential](./aspasswordcredential.md)
 
 ## See Also
 
-- [var credential: any ASAuthorizationCredential](asauthorization/credential.md)
+### Getting the Credential
+- [var credential: any ASAuthorizationCredential](./asauthorization/credential.md)
   Information provided about a user after successful authentication.
 
 

@@ -7,12 +7,12 @@ Complete processing of the memory after an I/O transfer finishes.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn complete(
  IODirection forDirection = forDirection);
 ```
 
-#### Return_value
+#### Return Value
 
 An IOReturn code.
 
@@ -26,15 +26,16 @@ This method should not be called unless a prepare was previously issued; the pre
 
 ## See Also
 
-- [getPhysicalSegment](iomultimemorydescriptor/1812610-getphysicalsegment.md)
+### Miscellaneous
+- [getPhysicalSegment](./api-1812610-getphysicalsegment.md)
   Break a memory descriptor into its physically contiguous segments.
-- [initWithDescriptors](iomultimemorydescriptor/1812635-initwithdescriptors.md)
+- [initWithDescriptors](./api-1812635-initwithdescriptors.md)
   Initialize an IOMultiMemoryDescriptor to describe a memory area made up of several other IOMemoryDescriptors.
-- [prepare](iomultimemorydescriptor/1812660-prepare.md)
+- [prepare](./api-1812660-prepare.md)
   Prepare the memory for an I/O transfer.
-- [withDescriptors(IOMemoryDescriptor **, UInt32, IODirection, bool)](iomultimemorydescriptor/1812685-withdescriptors.md)
+- [withDescriptors(IOMemoryDescriptor **, UInt32, IODirection, bool)](./api-1812685-withdescriptors.md)
   Create an IOMultiMemoryDescriptor to describe a memory area made up of several other IOMemoryDescriptors.
-- [withDescriptors(IOMemoryDescriptor **, UInt32, IODirection, bool)](iomultimemorydescriptor/1812714-withdescriptors.md)
+- [withDescriptors(IOMemoryDescriptor **, UInt32, IODirection, bool)](./api-1812714-withdescriptors.md)
   Initialize an IOMultiMemoryDescriptor to describe a memory area made up of several other IOMemoryDescriptors.
 
 

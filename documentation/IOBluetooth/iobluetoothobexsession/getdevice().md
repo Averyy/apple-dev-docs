@@ -1,17 +1,22 @@
 # getDevice()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Get the Bluetooth Device being used by the session object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getDevice() -> IOBluetoothDevice!
+```
+
+```objc
+- (IOBluetoothDevice *) getDevice;
 ```
 
 #### Return Value

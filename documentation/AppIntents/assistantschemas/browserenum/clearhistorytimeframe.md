@@ -1,7 +1,8 @@
 # clearHistoryTimeFrame
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time frame for clearing the browser history
 
@@ -44,7 +45,7 @@ enum ClearHistoryTimeFrame: AppEnum {
 }
 ```
 
-For more information about the `.browser` app intent domain, see [`Browser`](app-schema-domain-browser.md). For general information about app intent domains, see [`Making actions and content discoverable by Apple Intelligence`](making-actions-and-content-discoverable-by-apple-intelligence.md).
+For more information about the `.browser` app intent domain, see [Browser](../../app-schema-domain-browser.md). For general information about app intent domains, see [Making actions and content discoverable by Apple Intelligence](../../making-actions-and-content-discoverable-by-apple-intelligence.md).
 
 
 ---

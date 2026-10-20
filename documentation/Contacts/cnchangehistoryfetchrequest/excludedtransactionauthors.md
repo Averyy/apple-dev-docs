@@ -1,7 +1,8 @@
 # excludedTransactionAuthors
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of strings that identify transaction authors to exclude from the fetch results.
 
@@ -19,21 +20,26 @@ An array of strings that identify transaction authors to exclude from the fetch 
 var excludedTransactionAuthors: [String]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<NSString *> * excludedTransactionAuthors;
+```
+
 #### Discussion
 
-Specify authors using the same string(s) that you use in [`CNSaveRequest`](cnsaverequest.md)’s [`transactionAuthor`](cnsaverequest/transactionauthor.md) to suppress processing changes that you already know about.
+Specify authors using the same string(s) that you use in [`CNSaveRequest`](../cnsaverequest.md)’s [`transactionAuthor`](../cnsaverequest/transactionauthor.md) to suppress processing changes that you already know about.
 
 ## See Also
 
-- [var additionalContactKeyDescriptors: [any CNKeyDescriptor]?](cnchangehistoryfetchrequest/additionalcontactkeydescriptors.md)
+### Configuring the fetch request
+- [var additionalContactKeyDescriptors: [any CNKeyDescriptor]?](./additionalcontactkeydescriptors.md)
   An array of contact property keys or key descriptors from contact objects to fetch in the returned contacts.
-- [var includeGroupChanges: Bool](cnchangehistoryfetchrequest/includegroupchanges.md)
+- [var includeGroupChanges: Bool](./includegroupchanges.md)
   A Boolean value that indicates whether the fetch should also return group changes.
-- [var mutableObjects: Bool](cnchangehistoryfetchrequest/mutableobjects.md)
+- [var mutableObjects: Bool](./mutableobjects.md)
   A Boolean value that indicates whether the fetch should return mutable contacts and groups.
-- [var shouldUnifyResults: Bool](cnchangehistoryfetchrequest/shouldunifyresults.md)
+- [var shouldUnifyResults: Bool](./shouldunifyresults.md)
   A Boolean value that indicates whether the fetch should return contact changes as unified contacts.
-- [var startingToken: Data?](cnchangehistoryfetchrequest/startingtoken.md)
+- [var startingToken: Data?](./startingtoken.md)
   An opaque token that indicates a point in history in the user’s Contacts database.
 
 

@@ -1,7 +1,8 @@
 # uvIndex
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The level of ultraviolet radiation.
 
@@ -22,9 +23,10 @@ var uvIndex: UVIndex
 
 ## See Also
 
-- [var isDaylight: Bool](currentweather/isdaylight.md)
+### Getting daylight and visibility
+- [var isDaylight: Bool](./isdaylight.md)
   A Boolean value indicating whether there is daylight.
-- [var visibility: Measurement<UnitLength>](currentweather/visibility.md)
+- [var visibility: Measurement<UnitLength>](./visibility.md)
   The distance at which terrain is visible.
 
 

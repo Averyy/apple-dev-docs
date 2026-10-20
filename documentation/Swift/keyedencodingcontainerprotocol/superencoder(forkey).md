@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Stores a new nested container for the given key and returns a new encoder instance for encoding `super` into that container.

@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default progress view style in the current context of the view being styled.
 
@@ -21,15 +22,18 @@ The default progress view style in the current context of the view being styled.
 @export(implementation) @preconcurrency static var automatic: DefaultProgressViewStyle { get }
 ```
 
+Available when `Self` is `DefaultProgressViewStyle`.
+
 #### Discussion
 
 The default style represents the recommended style based on the original initialization parameters of the progress view, and the progress view’s context within the view hierarchy.
 
 ## See Also
 
-- [static var circular: CircularProgressViewStyle](progressviewstyle/circular.md)
+### Getting built-in progress view styles
+- [static var circular: CircularProgressViewStyle](./circular.md)
   The style of a progress view that uses a circular gauge to indicate the partial completion of an activity.
-- [static var linear: LinearProgressViewStyle](progressviewstyle/linear.md)
+- [static var linear: LinearProgressViewStyle](./linear.md)
   A progress view that visually indicates its progress using a horizontal bar.
 
 

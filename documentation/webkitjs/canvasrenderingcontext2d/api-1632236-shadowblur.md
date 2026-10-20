@@ -1,7 +1,8 @@
 # shadowBlur
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 A floating-point number that controls the degree of Gaussian blur applied to shadows.
 
@@ -11,7 +12,7 @@ A floating-point number that controls the degree of Gaussian blur applied to sha
 
 ## Declaration
 
-```swift
+```
 attribute unrestricted float shadowBlur;
 ```
 
@@ -23,13 +24,14 @@ Shadows are cast if the value of the `shadowBlur` property is nonzero and the al
 
 ## See Also
 
-- [clearShadow](canvasrenderingcontext2d/1634057-clearshadow.md)
+### Working with Shadows
+- [clearShadow](./api-1634057-clearshadow.md)
   Turns shadows off.
-- [shadowColor](canvasrenderingcontext2d/1629275-shadowcolor.md)
+- [shadowColor](./api-1629275-shadowcolor.md)
   A string that contains the RGBa color value of shadows. 
-- [shadowOffsetX](canvasrenderingcontext2d/1632399-shadowoffsetx.md)
+- [shadowOffsetX](./api-1632399-shadowoffsetx.md)
   A floating-point number that controls the horizontal offset of shadows from the elements casting the shadows.
-- [shadowOffsetY](canvasrenderingcontext2d/1633455-shadowoffsety.md)
+- [shadowOffsetY](./api-1633455-shadowoffsety.md)
   A floating-point number that controls the vertical offset of shadows from the elements casting the shadows.
 
 

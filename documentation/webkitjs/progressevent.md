@@ -1,7 +1,8 @@
 # ProgressEvent
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,16 +10,16 @@
 
 ## Declaration
 
-```swift
+```
 interface ProgressEvent
 ```
 
 ## Topics
 
 ### Instance Properties
-- [lengthComputable](progressevent/1630160-lengthcomputable.md)
-- [loaded](progressevent/1633473-loaded.md)
-- [total](progressevent/1632352-total.md)
+- [lengthComputable](./progressevent/api-1630160-lengthcomputable.md)
+- [loaded](./progressevent/api-1633473-loaded.md)
+- [total](./progressevent/api-1632352-total.md)
 
 ## Relationships
 

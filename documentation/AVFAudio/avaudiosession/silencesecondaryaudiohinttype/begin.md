@@ -1,17 +1,18 @@
 # AVAudioSession.SilenceSecondaryAudioHintType.begin
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates that another application’s primary audio has started.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,9 +20,14 @@ A value that indicates that another application’s primary audio has started.
 case begin
 ```
 
+```c
+AVAudioSessionSilenceSecondaryAudioHintTypeBegin
+```
+
 ## See Also
 
-- [AVAudioSession.SilenceSecondaryAudioHintType.end](avaudiosession/silencesecondaryaudiohinttype/end.md)
+### Identifying hint types
+- [AVAudioSession.SilenceSecondaryAudioHintType.end](./end.md)
   A value that indicates that another application’s primary audio has stopped.
 
 

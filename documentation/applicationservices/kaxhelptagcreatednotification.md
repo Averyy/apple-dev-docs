@@ -1,7 +1,8 @@
 # kAXHelpTagCreatedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A help tag is now visible for this accessibility object.
 
@@ -12,6 +13,10 @@ A help tag is now visible for this accessibility object.
 
 ```swift
 var kAXHelpTagCreatedNotification: String { get }
+```
+
+```c
+#define kAXHelpTagCreatedNotification
 ```
 
 

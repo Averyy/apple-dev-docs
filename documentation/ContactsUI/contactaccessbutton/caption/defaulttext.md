@@ -1,7 +1,8 @@
 # ContactAccessButton.Caption.defaultText
 
 **Framework**: Contacts UI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A caption option that displays a default value.
 
@@ -22,9 +23,10 @@ The default option omits the caption from the contact access button, showing onl
 
 ## See Also
 
-- [ContactAccessButton.Caption.email](contactaccessbutton/caption/email.md)
+### Caption options
+- [ContactAccessButton.Caption.email](./email.md)
   A caption option that displays an email address for the contact.
-- [ContactAccessButton.Caption.phone](contactaccessbutton/caption/phone.md)
+- [ContactAccessButton.Caption.phone](./phone.md)
   A caption option that displays a phone number for the contact.
 
 

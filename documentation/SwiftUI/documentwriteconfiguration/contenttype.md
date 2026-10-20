@@ -1,7 +1,8 @@
 # contentType
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content type of the file being written.
 

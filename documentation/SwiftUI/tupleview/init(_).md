@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -21,7 +22,8 @@ init(_ value: T)
 
 ## See Also
 
-- [var value: T](tupleview/value.md)
+### Creating a tuple view
+- [var value: T](./value.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # MTLDataType.float2
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A two-component vector with 32-bit floating-point values.
 
@@ -10,7 +11,7 @@ A two-component vector with 32-bit floating-point values.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,13 +20,18 @@ A two-component vector with 32-bit floating-point values.
 case float2
 ```
 
+```c
+MTLDataTypeFloat2
+```
+
 ## See Also
 
-- [MTLDataType.float](mtldatatype/float.md)
+### 32-bit floating-point types
+- [MTLDataType.float](./float.md)
   A 32-bit floating-point value.
-- [MTLDataType.float3](mtldatatype/float3.md)
+- [MTLDataType.float3](./float3.md)
   A three-component vector with 32-bit floating-point values.
-- [MTLDataType.float4](mtldatatype/float4.md)
+- [MTLDataType.float4](./float4.md)
   A four-component vector with 32-bit floating-point values.
 
 

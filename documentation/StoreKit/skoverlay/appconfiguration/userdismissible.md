@@ -1,7 +1,8 @@
 # userDismissible
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the user can dismiss the overlay.
 
@@ -15,6 +16,10 @@ A Boolean value that indicates whether the user can dismiss the overlay.
 
 ```swift
 var userDismissible: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL userDismissible;
 ```
 
 

@@ -1,7 +1,8 @@
 # ComputeGraphComponent.SimulationState.paused
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The simulation is frozen; no steps are evaluated.
 

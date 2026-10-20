@@ -1,7 +1,8 @@
 # kSecACLAuthorizationDelete
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Delete this item.
 
@@ -12,6 +13,10 @@ Delete this item.
 
 ```swift
 let kSecACLAuthorizationDelete: CFString
+```
+
+```c
+extern CFStringRef const kSecACLAuthorizationDelete;
 ```
 
 

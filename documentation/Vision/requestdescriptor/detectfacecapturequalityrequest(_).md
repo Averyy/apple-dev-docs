@@ -1,7 +1,8 @@
 # RequestDescriptor.detectFaceCaptureQualityRequest(_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A descriptor that describes a detect face capture quality request.
 
@@ -22,11 +23,12 @@ case detectFaceCaptureQualityRequest(DetectFaceCaptureQualityRequest.Revision)
 
 ## See Also
 
-- [case detectFaceLandmarksRequest(DetectFaceLandmarksRequest.Revision)](requestdescriptor/detectfacelandmarksrequest(_:).md)
+### Getting the face and body detection descriptor
+- [case detectFaceLandmarksRequest(DetectFaceLandmarksRequest.Revision)](./detectfacelandmarksrequest%28_%29.md)
   A descriptor that describes a detect face landmarks request.
-- [case detectFaceRectanglesRequest(DetectFaceRectanglesRequest.Revision)](requestdescriptor/detectfacerectanglesrequest(_:).md)
+- [case detectFaceRectanglesRequest(DetectFaceRectanglesRequest.Revision)](./detectfacerectanglesrequest%28_%29.md)
   A descriptor that describes a detect face rectangles request.
-- [case detectHumanRectanglesRequest(DetectHumanRectanglesRequest.Revision)](requestdescriptor/detecthumanrectanglesrequest(_:).md)
+- [case detectHumanRectanglesRequest(DetectHumanRectanglesRequest.Revision)](./detecthumanrectanglesrequest%28_%29.md)
   A descriptor that describes a detect human rectangles request.
 
 

@@ -1,10 +1,11 @@
 # kFTSFileTypeFolder
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var kFTSFileTypeFolder: FTSFileType { get }
 ```
 
+```c
+kFTSFileTypeFolder
+```
+
 ## See Also
 
-- [var kFTSFileTypeFile: FTSFileType](kftsfiletypefile.md)
+### Constants
+- [var kFTSFileTypeFile: FTSFileType](./kftsfiletypefile.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # dtdKind
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the receiver’s DTD kind.
 
@@ -15,13 +16,17 @@ Returns the receiver’s DTD kind.
 var dtdKind: XMLDTDNode.DTDKind { get set }
 ```
 
+```objc
+@property NSXMLDTDNodeKind DTDKind;
+```
+
 #### Return Value
 
 The receiver’s DTD kind. See Constants for a list of valid NSXMLDTDNodeKind constants.
 
 #### Discussion
 
-The DTD kind is distinct from a `NSXMLDTDNode` object’s node kind (returned by the `NSXMLNode` [`kind`](xmlnode/kind-swift.property.md) method).
+The DTD kind is distinct from a `NSXMLDTDNode` object’s node kind (returned by the `NSXMLNode` [`kind`](../xmlnode/kind-swift.property.md) method).
 
 
 ---

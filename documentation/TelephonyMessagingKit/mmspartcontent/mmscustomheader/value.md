@@ -1,7 +1,8 @@
 # value
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of the custom header.
 
@@ -16,7 +17,8 @@ let value: String
 
 ## See Also
 
-- [let key: String](mmspartcontent/mmscustomheader/key.md)
+### Accessing header properties
+- [let key: String](./key.md)
   The key for the custom header.
 
 

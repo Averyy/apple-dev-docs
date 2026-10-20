@@ -1,7 +1,8 @@
 # tintColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tint color to apply to the bar button items.
 
@@ -17,9 +18,13 @@ The tint color to apply to the bar button items.
 var tintColor: UIColor! { get set }
 ```
 
+```objc
+@property (nonatomic, strong, null_resettable) UIColor * tintColor;
+```
+
 #### Discussion
 
-In iOS 7 and later, all subclasses of [`UIView`](uiview.md) derive their behavior for [`tintColor`](uiview/tintcolor.md) from the base class. See the discussion of [`tintColor`](uiview/tintcolor.md) at the [`UIView`](uiview.md) level for more information.
+In iOS 7 and later, all subclasses of [`UIView`](../uiview.md) derive their behavior for [`tintColor`](../uiview/tintcolor.md) from the base class. See the discussion of [`tintColor`](../uiview/tintcolor.md) at the [`UIView`](../uiview.md) level for more information.
 
 
 ---

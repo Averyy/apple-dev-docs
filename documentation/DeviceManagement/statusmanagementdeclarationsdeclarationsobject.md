@@ -1,7 +1,8 @@
 # StatusManagementDeclarationsDeclarationsObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A collection of the client’s processed declarations.
 
@@ -16,14 +17,14 @@ A collection of the client’s processed declarations.
 
 ## Declaration
 
-```swift
+```
 object StatusManagementDeclarationsDeclarationsObject
 ```
 
 ## Topics
 
 ### Objects
-- [object StatusManagementDeclarationsDeclarationObject](statusmanagementdeclarationsdeclarationobject.md)
+- [object StatusManagementDeclarationsDeclarationObject](./statusmanagementdeclarationsdeclarationobject.md)
   Status for a declaration processed by the client.
 
 ## Properties

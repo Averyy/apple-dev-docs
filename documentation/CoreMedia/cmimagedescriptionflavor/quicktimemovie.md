@@ -1,7 +1,8 @@
 # quickTimeMovie
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An image description that selects the QuickTime format.
 
@@ -20,10 +21,15 @@ An image description that selects the QuickTime format.
 static let quickTimeMovie: CMImageDescriptionFlavor
 ```
 
+```c
+extern CMImageDescriptionFlavor const kCMImageDescriptionFlavor_QuickTimeMovie;
+```
+
 ## See Also
 
-- [static let isoFamily: CMImageDescriptionFlavor](cmimagedescriptionflavor/isofamily.md)
-- [static let mobile3GPFamily: CMImageDescriptionFlavor](cmimagedescriptionflavor/mobile3gpfamily.md)
+### Image Description Flavors
+- [static let isoFamily: CMImageDescriptionFlavor](./isofamily.md)
+- [static let mobile3GPFamily: CMImageDescriptionFlavor](./mobile3gpfamily.md)
   An image description that selects the 3GP family sample format.
 
 

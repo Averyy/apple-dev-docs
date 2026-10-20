@@ -1,7 +1,8 @@
 # MTRThermostatPresetScenario
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.4+
@@ -18,28 +19,32 @@
 enum MTRThermostatPresetScenario
 ```
 
+```c
+enum MTRThermostatPresetScenario : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRThermostatPresetScenario.goingToSleep](mtrthermostatpresetscenario/goingtosleep.md)
-- [MTRThermostatPresetScenario.occupied](mtrthermostatpresetscenario/occupied.md)
-- [MTRThermostatPresetScenario.sleep](mtrthermostatpresetscenario/sleep.md)
-- [MTRThermostatPresetScenario.unoccupied](mtrthermostatpresetscenario/unoccupied.md)
-- [MTRThermostatPresetScenario.userDefined](mtrthermostatpresetscenario/userdefined.md)
-- [MTRThermostatPresetScenario.vacation](mtrthermostatpresetscenario/vacation.md)
-- [MTRThermostatPresetScenario.wake](mtrthermostatpresetscenario/wake.md)
+- [MTRThermostatPresetScenario.goingToSleep](./mtrthermostatpresetscenario/goingtosleep.md)
+- [MTRThermostatPresetScenario.occupied](./mtrthermostatpresetscenario/occupied.md)
+- [MTRThermostatPresetScenario.sleep](./mtrthermostatpresetscenario/sleep.md)
+- [MTRThermostatPresetScenario.unoccupied](./mtrthermostatpresetscenario/unoccupied.md)
+- [MTRThermostatPresetScenario.userDefined](./mtrthermostatpresetscenario/userdefined.md)
+- [MTRThermostatPresetScenario.vacation](./mtrthermostatpresetscenario/vacation.md)
+- [MTRThermostatPresetScenario.wake](./mtrthermostatpresetscenario/wake.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrthermostatpresetscenario/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrthermostatpresetscenario/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

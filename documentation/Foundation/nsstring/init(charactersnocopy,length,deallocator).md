@@ -1,7 +1,8 @@
 # init(charactersNoCopy:length:deallocator:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 convenience init(charactersNoCopy chars: UnsafeMutablePointer<unichar>, length len: Int, deallocator: ((UnsafeMutablePointer<unichar>, Int) -> Void)? = nil)
+```
+
+```objc
+- (instancetype) initWithCharactersNoCopy:(unichar *) chars length:(NSUInteger) len deallocator:(void (^)(unichar *, NSUInteger )) deallocator;
 ```
 
 

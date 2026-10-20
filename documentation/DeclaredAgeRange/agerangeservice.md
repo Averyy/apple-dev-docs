@@ -1,7 +1,8 @@
 # AgeRangeService
 
 **Framework**: Declared Age Range  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A request for the age range of a person logged onto the current device.
 
@@ -88,39 +89,40 @@ The system may override your age gates based on the local regulations of the per
 ## Topics
 
 ### Retrieving the shared instance
-- [static let shared: AgeRangeService](agerangeservice/shared.md)
+- [static let shared: AgeRangeService](./agerangeservice/shared.md)
   The singleton app instance for accessing age range services.
 ### Getting the age range
-- [AgeRangeService.AgeRangeDeclaration](agerangeservice/agerangedeclaration.md)
+- [AgeRangeService.AgeRangeDeclaration](./agerangeservice/agerangedeclaration.md)
   Constants that describe how an adult, parent, or guardian set the age range.
-- [AgeRangeService.AgeRange](agerangeservice/agerange.md)
+- [AgeRangeService.AgeRange](./agerangeservice/agerange.md)
   Information about a person’s age range based on their response to an age range request.
-- [func requestAgeRange(ageGates: Int, Int?, Int?, in: UIViewController) async throws -> AgeRangeService.Response](agerangeservice/requestagerange(agegates:_:_:in:)-2go8c.md)
+- [func requestAgeRange(ageGates: Int, Int?, Int?, in: UIViewController) async throws -> AgeRangeService.Response](./agerangeservice/requestagerange%28agegates,_,_,in%29-2go8c.md)
   Requests an age range for the person signed in to iCloud on the device.
-- [func requestAgeRange(ageGates: Int, Int?, Int?, in: NSWindow) async throws -> AgeRangeService.Response](agerangeservice/requestagerange(agegates:_:_:in:)-4yo3r.md)
+- [func requestAgeRange(ageGates: Int, Int?, Int?, in: NSWindow) async throws -> AgeRangeService.Response](./agerangeservice/requestagerange%28agegates,_,_,in%29-4yo3r.md)
   Requests an age range for the person logged onto iCloud on the device.
-- [AgeRangeService.Response](agerangeservice/response.md)
+- [AgeRangeService.Response](./agerangeservice/response.md)
   A response indicating whether a person shared their age range or declined to share it.
-- [AgeRangeService.ParentalControls](agerangeservice/parentalcontrols.md)
+- [AgeRangeService.ParentalControls](./agerangeservice/parentalcontrols.md)
   An option set to define parental controls enabled and shared as a part of age range declaration.
 ### Accessing regulatory features
-- [var isEligibleForAgeFeatures: Bool](agerangeservice/iseligibleforagefeatures.md)
+- [var isEligibleForAgeFeatures: Bool](./agerangeservice/iseligibleforagefeatures.md)
   A Boolean value that indicates whether an adult, teen, or child is eligible for age-gated features.
 ### Defining regulatory features
-- [AgeRangeService.RegulatoryFeature](agerangeservice/regulatoryfeature.md)
+- [AgeRangeService.RegulatoryFeature](./agerangeservice/regulatoryfeature.md)
   Defines the regulatory features that your app may need to support.
-- [var requiredRegulatoryFeatures: Set<AgeRangeService.RegulatoryFeature>](agerangeservice/requiredregulatoryfeatures.md)
+- [var requiredRegulatoryFeatures: Set<AgeRangeService.RegulatoryFeature>](./agerangeservice/requiredregulatoryfeatures.md)
   A set of regulatory features that are required for the person.
 ### Displaying update acknowledgments
-- [func showSignificantUpdateAcknowledgment(in: UIWindowScene, updateDescription: String) async throws](agerangeservice/showsignificantupdateacknowledgment(in:updatedescription:).md)
+- [func showSignificantUpdateAcknowledgment(in: UIWindowScene, updateDescription: String) async throws](./agerangeservice/showsignificantupdateacknowledgment%28in,updatedescription%29.md)
   Displays a system-provided interface for people to acknowledge a significant app update.
 ### Handling errors
-- [AgeRangeService.Error](agerangeservice/error.md)
+- [AgeRangeService.Error](./agerangeservice/error.md)
   An error that occurs when an age range request fails.
 
 ## See Also
 
-- [struct DeclaredAgeRangeAction](declaredagerangeaction.md)
+### Age range requests
+- [struct DeclaredAgeRangeAction](./declaredagerangeaction.md)
   An action that requests a person’s age range.
 
 

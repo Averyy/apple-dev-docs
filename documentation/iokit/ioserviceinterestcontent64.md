@@ -1,7 +1,8 @@
 # IOServiceInterestContent64
 
 **Framework**: IOKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.4+
@@ -16,14 +17,20 @@
 struct IOServiceInterestContent64
 ```
 
+```c
+struct IOServiceInterestContent64 {
+    ...
+};
+```
+
 ## Topics
 
 ### Instance Properties
-- [var messageArgument: io_user_reference_t](ioserviceinterestcontent64/1455540-messageargument.md)
-- [var messageType: natural_t](ioserviceinterestcontent64/1455516-messagetype.md)
+- [var messageArgument: io_user_reference_t](./ioserviceinterestcontent64/api-1455540-messageargument.md)
+- [var messageType: natural_t](./ioserviceinterestcontent64/api-1455516-messagetype.md)
 ### Initializers
-- [init()](ioserviceinterestcontent64/1514849-init.md)
-- [init(messageType: natural_t, messageArgument: io_user_reference_t)](ioserviceinterestcontent64/1514569-init.md)
+- [init()](./ioserviceinterestcontent64/api-1514849-init.md)
+- [init(messageType: natural_t, messageArgument: io_user_reference_t)](./ioserviceinterestcontent64/api-1514569-init.md)
 
 
 ---

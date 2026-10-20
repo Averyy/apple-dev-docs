@@ -1,7 +1,8 @@
 # peripheral(_:didWriteValueFor:error:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the peripheral successfully set a value for the characteristic.
 
@@ -20,9 +21,13 @@ Tells the delegate that the peripheral successfully set a value for the characte
 optional func peripheral(_ peripheral: CBPeripheral, didWriteValueFor characteristic: CBCharacteristic, error: (any Error)?)
 ```
 
+```objc
+- (void) peripheral:(CBPeripheral *) peripheral didWriteValueForCharacteristic:(CBCharacteristic *) characteristic error:(NSError *) error;
+```
+
 #### Discussion
 
-Core Bluetooth invokes this method only when your app calls the [`writeValue(_:for:type:)`](cbperipheral/writevalue(_:for:type:).md) method with the [`CBCharacteristicWriteType.withResponse`](cbcharacteristicwritetype/withresponse.md) constant specified as the write type. If successful, the `error` parameter is `nil`. If unsuccessful, the `error` parameter returns the cause of the failure.
+Core Bluetooth invokes this method only when your app calls the [`writeValue(_:for:type:)`](../cbperipheral/writevalue%28_,for,type%29.md) method with the [`CBCharacteristicWriteType.withResponse`](../cbcharacteristicwritetype/withresponse.md) constant specified as the write type. If successful, the `error` parameter is `nil`. If unsuccessful, the `error` parameter returns the cause of the failure.
 
 ## Parameters
 
@@ -32,9 +37,10 @@ Core Bluetooth invokes this method only when your app calls the [`writeValue(_:f
 
 ## See Also
 
-- [func peripheral(CBPeripheral, didWriteValueFor: CBDescriptor, error: (any Error)?)](cbperipheraldelegate/peripheral(_:didwritevaluefor:error:)-1ybl3.md)
+### Writing Characteristic and Descriptor Values
+- [func peripheral(CBPeripheral, didWriteValueFor: CBDescriptor, error: (any Error)?)](./peripheral%28_,didwritevaluefor,error%29-1ybl3.md)
   Tells the delegate that the peripheral successfully set a value for the descriptor.
-- [func peripheralIsReady(toSendWriteWithoutResponse: CBPeripheral)](cbperipheraldelegate/peripheralisready(tosendwritewithoutresponse:).md)
+- [func peripheralIsReady(toSendWriteWithoutResponse: CBPeripheral)](./peripheralisready%28tosendwritewithoutresponse%29.md)
   Tells the delegate that a peripheral is again ready to send characteristic updates.
 
 

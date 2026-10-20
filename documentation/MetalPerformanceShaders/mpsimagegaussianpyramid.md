@@ -1,7 +1,8 @@
 # MPSImageGaussianPyramid
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A filter that convolves an image with a Gaussian pyramid.
 
@@ -19,9 +20,13 @@ A filter that convolves an image with a Gaussian pyramid.
 class MPSImageGaussianPyramid
 ```
 
+```objc
+@interface MPSImageGaussianPyramid : MPSImagePyramid
+```
+
 #### Overview
 
-The Gaussian image pyramid kernel is enqueued as an in-place operation using the [`encode(commandBuffer:inPlaceTexture:fallbackCopyAllocator:)`](mpsunaryimagekernel/encode(commandbuffer:inplacetexture:fallbackcopyallocator:).md) method. All mip-map levels (after level 1) present in the provided image are filled using the provided filter kernel. The `fallbackCopyAllocator` parameter is not used. The Gaussian image pyramid kernel ignores the [`clipRect`](mpsunaryimagekernel/cliprect.md) and [`offset`](mpsunaryimagekernel/offset.md) properties, and fills the entirety of the mip-map levels. Recall the size of the nth mip-map level as:
+The Gaussian image pyramid kernel is enqueued as an in-place operation using the [`encode(commandBuffer:inPlaceTexture:fallbackCopyAllocator:)`](./mpsunaryimagekernel/encode%28commandbuffer,inplacetexture,fallbackcopyallocator%29.md) method. All mip-map levels (after level 1) present in the provided image are filled using the provided filter kernel. The `fallbackCopyAllocator` parameter is not used. The Gaussian image pyramid kernel ignores the [`clipRect`](./mpsunaryimagekernel/cliprect.md) and [`offset`](./mpsunaryimagekernel/offset.md) properties, and fills the entirety of the mip-map levels. Recall the size of the nth mip-map level as:
 
 - `w_n = max(1, floor(w_0 / 2^n))`
 - `h_n = max(1, floor(h_0 / 2^n))`
@@ -34,46 +39,47 @@ The Gaussian image pyramid is constructed as follows:
 - Afterwards, the image is down-sampled by removing all odd rows and columns, which defines the next level in the Gaussian image pyramid.
 - This procedure is continued until every mip-map level present in the image is filled with all the pyramid levels.
 
-> **Note**:  Make sure your chosen texture type is compatible with mip-mapping and also supports texture views (i.e. the texture’s usage includes the [`pixelFormatView`](https://developer.apple.com/documentation/metal/mtltextureusage/pixelformatview) option).
+> **Note**:  Make sure your chosen texture type is compatible with mip-mapping and also supports texture views (i.e. the texture’s usage includes the [`pixelFormatView`](../Metal/mtltextureusage/pixelformatview.md) option).
 
 ## Relationships
 
 ### Inherits From
-- [MPSImagePyramid](mpsimagepyramid.md)
+- [MPSImagePyramid](./mpsimagepyramid.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSImageConvolution](mpsimageconvolution.md)
+### Convolution Image Filters
+- [class MPSImageConvolution](./mpsimageconvolution.md)
   A filter that convolves an image with a given kernel of odd width and height.
-- [class MPSImageMedian](mpsimagemedian.md)
+- [class MPSImageMedian](./mpsimagemedian.md)
   A filter that applies a median filter in a square region centered around each pixel in the source image.
-- [class MPSImageBox](mpsimagebox.md)
+- [class MPSImageBox](./mpsimagebox.md)
   A filter that convolves an image with a given kernel of odd width and height.
-- [class MPSImageTent](mpsimagetent.md)
+- [class MPSImageTent](./mpsimagetent.md)
   A filter that convolves an image with a tent filter.
-- [class MPSImageGaussianBlur](mpsimagegaussianblur.md)
+- [class MPSImageGaussianBlur](./mpsimagegaussianblur.md)
   A filter that convolves an image with a Gaussian blur of a given sigma in both the x and y directions.
-- [class MPSImageSobel](mpsimagesobel.md)
+- [class MPSImageSobel](./mpsimagesobel.md)
   A filter that convolves an image with the Sobel operator.
-- [class MPSImageLaplacian](mpsimagelaplacian.md)
+- [class MPSImageLaplacian](./mpsimagelaplacian.md)
   An optimized Laplacian filter, provided for ease of use.
-- [class MPSImageLaplacianPyramid](mpsimagelaplacianpyramid.md)
+- [class MPSImageLaplacianPyramid](./mpsimagelaplacianpyramid.md)
   A filter that convolves an image with a Laplacian filter.
-- [class MPSImageLaplacianPyramidAdd](mpsimagelaplacianpyramidadd.md)
+- [class MPSImageLaplacianPyramidAdd](./mpsimagelaplacianpyramidadd.md)
   A filter that convolves an image with an additive Laplacian pyramid.
-- [class MPSImageLaplacianPyramidSubtract](mpsimagelaplacianpyramidsubtract.md)
+- [class MPSImageLaplacianPyramidSubtract](./mpsimagelaplacianpyramidsubtract.md)
   A filter that convolves an image with a subtractive Laplacian pyramid.
-- [class MPSImagePyramid](mpsimagepyramid.md)
+- [class MPSImagePyramid](./mpsimagepyramid.md)
   A base class for creating different kinds of pyramid images.
 
 

@@ -1,7 +1,8 @@
 # init(retain:release:describe:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 2.0+

@@ -1,7 +1,8 @@
 # HMCharacteristicValueConfigurationState.notConfigured
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The accessory has not been configured.
 
@@ -19,9 +20,14 @@ The accessory has not been configured.
 case notConfigured
 ```
 
+```c
+HMCharacteristicValueConfigurationStateNotConfigured
+```
+
 ## See Also
 
-- [HMCharacteristicValueConfigurationState.configured](hmcharacteristicvalueconfigurationstate/configured.md)
+### Configuration States
+- [HMCharacteristicValueConfigurationState.configured](./configured.md)
   The accessory has been configured.
 
 

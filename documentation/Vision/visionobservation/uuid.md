@@ -2,6 +2,7 @@
 
 **Framework**: Vision  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A unique alphanumeric value that the framework assigns the observation.
@@ -23,15 +24,16 @@ var uuid: UUID { get }
 
 ## See Also
 
-- [var confidence: Float](visionobservation/confidence.md)
+### Inspecting an observation
+- [var confidence: Float](./confidence.md)
   The level of confidence in the observation’s accuracy.
-- [var description: String](visionobservation/description.md)
+- [var description: String](./description.md)
   A textual representation of this instance.
-- [var originatingRequestDescriptor: RequestDescriptor?](visionobservation/originatingrequestdescriptor.md)
+- [var originatingRequestDescriptor: RequestDescriptor?](./originatingrequestdescriptor.md)
   The descriptor of the request that produces the observation.
-- [enum RequestDescriptor](requestdescriptor.md)
+- [enum RequestDescriptor](../requestdescriptor.md)
   A type that describes the request and revision combination.
-- [var timeRange: CMTimeRange?](visionobservation/timerange.md)
+- [var timeRange: CMTimeRange?](./timerange.md)
   The time range of the reported observation.
 
 

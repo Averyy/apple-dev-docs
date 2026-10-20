@@ -1,7 +1,8 @@
 # kSecKeyAlwaysSensitive
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Type uint32; value is nonzero. This key has always been marked sensitive.
 
@@ -12,6 +13,10 @@ Type uint32; value is nonzero. This key has always been marked sensitive.
 
 ```swift
 var kSecKeyAlwaysSensitive: Int32 { get }
+```
+
+```c
+kSecKeyAlwaysSensitive
 ```
 
 

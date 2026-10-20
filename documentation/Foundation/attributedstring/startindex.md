@@ -1,7 +1,8 @@
 # startIndex
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the first character in a nonempty attributed string.
 

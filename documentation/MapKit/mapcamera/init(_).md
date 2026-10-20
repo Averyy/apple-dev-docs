@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a map camera from the given MapKit camera object.
 
@@ -11,7 +12,7 @@ Creates a map camera from the given MapKit camera object.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,11 +23,12 @@ init(_ camera: MKMapCamera)
 
 ## Parameters
 
-- `camera`: An [`MKMapCamera`](mkmapcamera.md) object.
+- `camera`: An [`MKMapCamera`](../mkmapcamera.md) object.
 
 ## See Also
 
-- [init(centerCoordinate: CLLocationCoordinate2D, distance: Double, heading: Double, pitch: Double)](mapcamera/init(centercoordinate:distance:heading:pitch:).md)
+### Creating a map camera
+- [init(centerCoordinate: CLLocationCoordinate2D, distance: Double, heading: Double, pitch: Double)](./init%28centercoordinate,distance,heading,pitch%29.md)
   Creates a camera using the specified distance, pitch, and heading information.
 
 

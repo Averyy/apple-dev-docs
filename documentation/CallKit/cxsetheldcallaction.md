@@ -1,7 +1,8 @@
 # CXSetHeldCallAction
 
 **Framework**: CallKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An encapsulation of the act of placing a call on hold or removing a call from hold.
 
@@ -18,57 +19,62 @@ An encapsulation of the act of placing a call on hold or removing a call from ho
 class CXSetHeldCallAction
 ```
 
+```objc
+@interface CXSetHeldCallAction : CXCallAction
+```
+
 #### Overview
 
-[`CXSetHeldCallAction`](cxsetheldcallaction.md) is a concrete subclass of [`CXCallAction`](cxcallaction.md).
+[`CXSetHeldCallAction`](./cxsetheldcallaction.md) is a concrete subclass of [`CXCallAction`](./cxcallaction.md).
 
 When a caller places a call on hold, callers are unable to communicate with one another until the holding caller removes the call from hold. Placing a call on hold doesn’t end the call.
 
-When the user or the system places a call on hold, the provider sends [`provider(_:perform:)`](cxproviderdelegate/provider(_:perform:)-947b1.md) to its delegate. The provider’s delegate calls the [`fulfill()`](cxaction/fulfill().md) method to indicate that the action was successfully performed.
+When the user or the system places a call on hold, the provider sends [`provider(_:perform:)`](./cxproviderdelegate/provider%28_,perform%29-947b1.md) to its delegate. The provider’s delegate calls the [`fulfill()`](./cxaction/fulfill%28%29.md) method to indicate that the action was successfully performed.
 
 ## Topics
 
 ### Creating New Actions
-- [init(call: UUID, onHold: Bool)](cxsetheldcallaction/init(call:onhold:).md)
+- [init(call: UUID, onHold: Bool)](./cxsetheldcallaction/init%28call,onhold%29.md)
   Initializes a new action for a call identified by a given UUID, as well as whether the call is on hold.
-- [init?(coder: NSCoder)](cxsetheldcallaction/init(coder:).md)
+- [init?(coder: NSCoder)](./cxsetheldcallaction/init%28coder%29.md)
   Creates a new action to place a call on hold with data in an unarchiver.
 ### Accessing Action Information
-- [var isOnHold: Bool](cxsetheldcallaction/isonhold.md)
+- [var isOnHold: Bool](./cxsetheldcallaction/isonhold.md)
   A Boolean value that indicates whether the call is placed on hold.
 ### Initializers
-- [init(callUUID: UUID, onHold: Bool)](cxsetheldcallaction/init(calluuid:onhold:).md)
+- [init(callUUID: UUID, onHold: Bool)](./cxsetheldcallaction/init%28calluuid,onhold%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [CXCallAction](cxcallaction.md)
+- [CXCallAction](./cxcallaction.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class CXAction](cxaction.md)
+### Call-related actions
+- [class CXAction](./cxaction.md)
   An abstract class that declares a programmatic interface for objects that represent a telephony action.
-- [class CXCallAction](cxcallaction.md)
+- [class CXCallAction](./cxcallaction.md)
   A programmatic interface for objects that represent a telephony action associated with a call object.
-- [class CXEndCallAction](cxendcallaction.md)
+- [class CXEndCallAction](./cxendcallaction.md)
   An encapsulation of the act of ending a call.
-- [class CXPlayDTMFCallAction](cxplaydtmfcallaction.md)
+- [class CXPlayDTMFCallAction](./cxplaydtmfcallaction.md)
   An encapsulation of the act of playing a dual tone multifrequency (DTMF) sequence.
-- [class CXSetGroupCallAction](cxsetgroupcallaction.md)
+- [class CXSetGroupCallAction](./cxsetgroupcallaction.md)
   An encapsulation of the act of grouping or ungrouping calls.
-- [class CXSetMutedCallAction](cxsetmutedcallaction.md)
+- [class CXSetMutedCallAction](./cxsetmutedcallaction.md)
   An encapsulation of the act of muting or unmuting a call.
-- [class CXSetTranslatingCallAction](cxsettranslatingcallaction.md)
+- [class CXSetTranslatingCallAction](./cxsettranslatingcallaction.md)
   An encapsulation of the act of translating a call.
 
 

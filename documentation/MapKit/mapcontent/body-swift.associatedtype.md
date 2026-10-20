@@ -2,6 +2,7 @@
 
 **Framework**: MapKit  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The content and behavior of the view.
@@ -12,7 +13,7 @@ The content and behavior of the view.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

@@ -1,7 +1,8 @@
 # CSIdentityQueryCreateForPersistentReference(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -11,6 +12,10 @@
 
 ```swift
 func CSIdentityQueryCreateForPersistentReference(_ allocator: CFAllocator!, _ referenceData: CFData!) -> Unmanaged<CSIdentityQuery>!
+```
+
+```c
+CSIdentityQueryRef CSIdentityQueryCreateForPersistentReference(CFAllocatorRef allocator, CFDataRef referenceData);
 ```
 
 

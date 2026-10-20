@@ -1,6 +1,7 @@
 # Setting Up an Exposure Notifications Express Test Verification Server
 
-**Framework**: Exposure Notification
+**Framework**: Exposure Notification  
+**Role**: Article
 
 Validate positive diagnoses for app-less exposure notifications.
 
@@ -8,7 +9,7 @@ Validate positive diagnoses for app-less exposure notifications.
 
 Exposure Notifications Express requires a Public Health Authority (PHA) to have a test verification server that verifies positive diagnoses received from a test center or other healthcare provider. A test verification server includes a mechanism to request a verification code for users with a positive COVID-19 test result. The test verification server also has APIs that allow Exposure Notifications Express to authenticate the user’s positive diagnosis before uploading exposure keys to the PHA’s key server
 
-Google has created a reference implementation of a [`test verification server`](https://developer.apple.comhttps://github.com/google/exposure-notifications-verification-server) that you can use as a starting point or as a reference while implementing your own test verification server.
+Google has created a reference implementation of a [test verification server](https://github.com/google/exposure-notifications-verification-server) that you can use as a starting point or as a reference while implementing your own test verification server.
 
 ##### Configure the Test Verification Server
 
@@ -20,13 +21,13 @@ Exposure Notifications Express works by reading configuration values for a PHA f
 - **Test Verification API Key**: iOS needs the value in `testVerificationAPIKey` to communicate with your test verification server.
 - **Verification Code Learn More URL**: Exposure Notifications Express presents the `verificationCodeLearnMoreURL` to the user when they have received a positive diagnosis. The link contains information on how to use the verification code and provides way to request help if the user experiences problems.
 
-To see all of the configuration options available with Exposure Notifications Express, see [`Configuring Exposure Notifications`](configuring-exposure-notifications.md).
+To see all of the configuration options available with Exposure Notifications Express, see [Configuring Exposure Notifications](./configuring-exposure-notifications.md).
 
 ##### Generate Verification Codes on Request
 
 PHAs use the test verification server to generate verification codes for positive test results. The verification code may be an 8-digit number that can be read over the phone or a deep link that can be texted or emailed to the user. A test verification server can use any one-time password algorithm to generate a verification code as long as the resulting code uniquely identifies one test result.
 
-> **Note**:  For information on generating deep links that are compatible with Exposure Notifications Express, see [`Exposure Notifications Server Resource Identifier Scheme Documentation`](https://developer.apple.comhttps://github.com/google/exposure-notifications-verification-server/blob/main/docs/ens-spec.md).
+> **Note**:  For information on generating deep links that are compatible with Exposure Notifications Express, see [Exposure Notifications Server Resource Identifier Scheme Documentation](https://github.com/google/exposure-notifications-verification-server/blob/main/docs/ens-spec.md).
 
 ##### Exchange Verification Codes for Tokens
 
@@ -53,7 +54,7 @@ Before uploading keys to the key server, Exposure Notifications Express contacts
 The test verification server expects requests to this URL to contain a JSON dictionary in the body of an HTTP POST request. Here are the keys that dictionary supports:
 
 - **`token`**: String containing the long-term authentication token previously received from the test verification server. **Required**.
-- **`ekeyhmac`**: String containing a hash-based message authentication code Exposure Notifications Express calculated from the keys it will submit to the key server. For information on calculating HMAC, see the [`Public Health Authority Diagnosis Verification Protocol`](https://developer.apple.comhttps://github.com/google/exposure-notifications-server/blob/main/docs/design/verification_protocol.md). **Required**.
+- **`ekeyhmac`**: String containing a hash-based message authentication code Exposure Notifications Express calculated from the keys it will submit to the key server. For information on calculating HMAC, see the [Public Health Authority Diagnosis Verification Protocol](https://github.com/google/exposure-notifications-server/blob/main/docs/design/verification_protocol.md). **Required**.
 
 Requests to this URL must also include a custom HTTP header field called `X-API-Key`, with its value set to the test verification server’s API key. Test verification servers reject requests without this header, or with the wrong value in the header.
 
@@ -65,7 +66,8 @@ The test validation server responds to requests by returning JSON in the body of
 
 ## See Also
 
-- [Configuring a Key Server for Exposure Notifications Express](configuring-a-key-server-for-exposure-notifications-express.md)
+### Server Configuration
+- [Configuring a Key Server for Exposure Notifications Express](./configuring-a-key-server-for-exposure-notifications-express.md)
   Support exposure key upload and download for app-less exposure notifications.
 
 

@@ -1,7 +1,8 @@
 # endTime
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time the framework finishes deleting samples.
 
@@ -16,9 +17,14 @@ The time the framework finishes deleting samples.
 var endTime: SRAbsoluteTime { get }
 ```
 
+```objc
+@property (readonly) SRAbsoluteTime endTime;
+```
+
 ## See Also
 
-- [var startTime: SRAbsoluteTime](srdeletionrecord/starttime.md)
+### Accessing the Deletion Time
+- [var startTime: SRAbsoluteTime](./starttime.md)
   The time the framework begins deleting samples.
 
 

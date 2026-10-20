@@ -1,23 +1,33 @@
 # onContinuousHover(coordinateSpace:perform:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an action to perform when the pointer enters, moves within, and exits the view’s bounds.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- tvOS 16.0+
-- visionOS 1.0+
+- iOS 16.0+ - Deprecated in 27.2
+- iPadOS 16.0+ - Deprecated in 27.2
+- Mac Catalyst 16.0+ - Deprecated in 27.2
+- macOS 13.0+ - Deprecated in 27.2
+- tvOS 16.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`onContinuousHover(coordinateSpace:perform:)`](./oncontinuoushover%28coordinatespace,perform%29-4ehfq.md) instead.
 
 ## Declaration
 
 ```swift
 nonisolated
 func onContinuousHover(coordinateSpace: CoordinateSpace = .local, perform action: @escaping (HoverPhase) -> Void) -> some View
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+func onContinuousHover(coordinateSpace: some CoordinateSpaceProtocol = .local, perform action: @escaping (HoverPhase) -> Void) -> some View
 ```
 
 #### Return Value
@@ -57,8 +67,8 @@ var body: some View {
 
 ## Parameters
 
-- `coordinateSpace`: The coordinate space for the location values. Defaults to [`CoordinateSpace.local`](coordinatespace/local.md).
-- `action`: The action to perform whenever the pointer enters, moves within, or exits the view’s bounds. The `action` closure passes the [`HoverPhase.active(_:)`](hoverphase/active(_:).md) phase with the pointer’s coordinates if the pointer is in the view’s bounds; otherwise, it passes [`HoverPhase.ended`](hoverphase/ended.md).
+- `coordinateSpace`: The coordinate space for the location values. Defaults to [`CoordinateSpace.local`](../coordinatespace/local.md).
+- `action`: The action to perform whenever the pointer enters, moves within, or exits the view’s bounds. The `action` closure passes the [`HoverPhase.active(_:)`](../hoverphase/active%28_%29.md) phase with the pointer’s coordinates if the pointer is in the view’s bounds; otherwise, it passes [`HoverPhase.ended`](../hoverphase/ended.md).
 
 
 ---

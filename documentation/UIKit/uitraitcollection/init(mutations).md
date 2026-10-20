@@ -1,14 +1,15 @@
 # init(mutations:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -18,8 +19,9 @@ convenience init(mutations: UITraitCollection.TraitMutations)
 
 ## See Also
 
-- [func modifyingTraits(UITraitCollection.TraitMutations) -> UITraitCollection](uitraitcollection/modifyingtraits(_:).md)
-- [UITraitCollection.TraitMutations](uitraitcollection/traitmutations.md)
+### Modifying traits
+- [func modifyingTraits(UITraitCollection.TraitMutations) -> UITraitCollection](./modifyingtraits%28_%29.md)
+- [UITraitCollection.TraitMutations](./traitmutations.md)
 
 
 ---

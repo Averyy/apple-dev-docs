@@ -1,7 +1,8 @@
 # cursorMoveHandler
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var cursorMoveHandler: PGDisplayCursorMoveHandler? { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite, nullable) PGDisplayCursorMoveHandler cursorMoveHandler;
 ```
 
 

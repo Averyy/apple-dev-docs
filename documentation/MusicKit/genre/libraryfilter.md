@@ -1,7 +1,8 @@
 # Genre.LibraryFilter
 
 **Framework**: MusicKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The associated type that contains the genre properties your app uses for a library request.
 

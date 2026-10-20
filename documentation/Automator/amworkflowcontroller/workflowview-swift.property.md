@@ -1,7 +1,8 @@
 # workflowView
 
 **Framework**: Automator  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The controller’s workflow view.
 
@@ -14,6 +15,10 @@ The controller’s workflow view.
 ```swift
 @IBOutlet
 var workflowView: AMWorkflowView? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) AMWorkflowView * workflowView;
 ```
 
 

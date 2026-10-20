@@ -1,7 +1,8 @@
 # all
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns all the `AppTransaction`s for this version of the app.
 

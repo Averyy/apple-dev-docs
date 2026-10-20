@@ -1,7 +1,8 @@
 # id
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for the music video.
 

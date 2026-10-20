@@ -1,7 +1,8 @@
 # orientation
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The orientation of the data source relative to the device’s natural orientation.
 
@@ -19,13 +20,18 @@ The orientation of the data source relative to the device’s natural orientatio
 var orientation: AVAudioSession.Orientation? { get }
 ```
 
+```objc
+@property (readonly, nullable) AVAudioSessionOrientation orientation;
+```
+
 #### Discussion
 
 This property returns `nil` if the data source’s orientation isn’t known.
 
 ## See Also
 
-- [AVAudioSession.Orientation](avaudiosession/orientation.md)
+### Retrieving the data source orientation
+- [AVAudioSession.Orientation](../avaudiosession/orientation.md)
   Constants that indicate the directions in which a data source can point, relative to the device’s natural orientation.
 
 

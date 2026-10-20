@@ -1,14 +1,15 @@
 # au_tid_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 typedef struct au_tid {
     ...
 } au_tid_t;
@@ -17,8 +18,8 @@ typedef struct au_tid {
 ## Topics
 
 ### Instance Properties
-- [machine](au_tid_t/1520274-machine.md)
-- [port](au_tid_t/1520194-port.md)
+- [machine](./au_tid_t/api-1520274-machine.md)
+- [port](./au_tid_t/api-1520194-port.md)
 
 
 ---

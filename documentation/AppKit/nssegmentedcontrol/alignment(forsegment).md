@@ -1,7 +1,8 @@
 # alignment(forSegment:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.13+
@@ -12,13 +13,18 @@
 func alignment(forSegment segment: Int) -> NSTextAlignment
 ```
 
+```objc
+- (NSTextAlignment) alignmentForSegment:(NSInteger) segment;
+```
+
 ## See Also
 
-- [func label(forSegment: Int) -> String?](nssegmentedcontrol/label(forsegment:).md)
+### Configuring the segment text
+- [func label(forSegment: Int) -> String?](./label%28forsegment%29.md)
   Returns the label of the specified segment.
-- [func setLabel(String, forSegment: Int)](nssegmentedcontrol/setlabel(_:forsegment:).md)
+- [func setLabel(String, forSegment: Int)](./setlabel%28_,forsegment%29.md)
   Sets the label for the specified segment.
-- [func setAlignment(NSTextAlignment, forSegment: Int)](nssegmentedcontrol/setalignment(_:forsegment:).md)
+- [func setAlignment(NSTextAlignment, forSegment: Int)](./setalignment%28_,forsegment%29.md)
 
 
 ---

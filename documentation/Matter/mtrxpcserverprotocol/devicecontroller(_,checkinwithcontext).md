@@ -1,7 +1,8 @@
 # deviceController(_:checkInWithContext:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.3+
@@ -16,6 +17,10 @@
 
 ```swift
 optional func deviceController(_ controller: UUID, checkInWithContext context: [AnyHashable : Any])
+```
+
+```objc
+- (void) deviceController:(NSUUID *) controller checkInWithContext:(NSDictionary *) context;
 ```
 
 

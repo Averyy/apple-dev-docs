@@ -1,7 +1,8 @@
 # init(name:reason:userInfo:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a newly allocated exception object.
 
@@ -20,6 +21,10 @@ Initializes and returns a newly allocated exception object.
 init(name aName: NSExceptionName, reason aReason: String?, userInfo aUserInfo: [AnyHashable : Any]? = nil)
 ```
 
+```objc
+- (instancetype) initWithName:(NSExceptionName) aName reason:(NSString *) aReason userInfo:(NSDictionary *) aUserInfo;
+```
+
 #### Return Value
 
 The created `NSException` object or `nil` if the object couldn’t be created.
@@ -36,9 +41,10 @@ This is the designated initializer.
 
 ## See Also
 
-- [class func raise(NSExceptionName, format: String, arguments: CVaListPointer)](nsexception/raise(_:format:arguments:).md)
+### Creating and Raising an NSException Object
+- [class func raise(NSExceptionName, format: String, arguments: CVaListPointer)](./raise%28_,format,arguments%29.md)
   Creates and raises an exception with the specified name, reason, and arguments.
-- [func raise()](nsexception/raise.md)
+- [func raise()](./raise%28%29.md)
   Raises the receiver, causing program flow to jump to the local exception handler.
 
 

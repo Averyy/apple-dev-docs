@@ -1,7 +1,8 @@
 # SpeechSynthesisVoice
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,18 +10,18 @@
 
 ## Declaration
 
-```swift
+```
 interface SpeechSynthesisVoice
 ```
 
 ## Topics
 
 ### Instance Properties
-- [boolean](speechsynthesisvoice/1630690-boolean.md)
-- [lang](speechsynthesisvoice/1631118-lang.md)
-- [localService](speechsynthesisvoice/1633926-localservice.md)
-- [name](speechsynthesisvoice/1633129-name.md)
-- [voiceURI](speechsynthesisvoice/1631827-voiceuri.md)
+- [boolean](./speechsynthesisvoice/api-1630690-boolean.md)
+- [lang](./speechsynthesisvoice/api-1631118-lang.md)
+- [localService](./speechsynthesisvoice/api-1633926-localservice.md)
+- [name](./speechsynthesisvoice/api-1633129-name.md)
+- [voiceURI](./speechsynthesisvoice/api-1631827-voiceuri.md)
 
 
 ---

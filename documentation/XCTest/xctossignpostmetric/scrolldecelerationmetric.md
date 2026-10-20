@@ -1,12 +1,15 @@
 # scrollDecelerationMetric
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A metric that records scroll deceleration animations.
 
 **Availability**:
-- xcode 12.0+
+- xcode 12.0+ - Deprecated in 13.0
+
+> **Deprecated**: Use [`scrollingAndDecelerationMetric`](./scrollinganddecelerationmetric.md) instead.
 
 ## Declaration
 
@@ -14,11 +17,16 @@ A metric that records scroll deceleration animations.
 class var scrollDecelerationMetric: any XCTMetric { get }
 ```
 
+```objc
+@property (class, readonly) id<XCTMetric> scrollDecelerationMetric;
+```
+
 ## See Also
 
-- [class var applicationLaunch: XCTOSSignpostMetric](xctossignpostmetric/applicationlaunch.md)
+### Deprecated
+- [class var applicationLaunch: XCTOSSignpostMetric](./applicationlaunch.md)
   A metric that records the time that elapses during app launch.
-- [class var scrollDraggingMetric: any XCTMetric](xctossignpostmetric/scrolldraggingmetric.md)
+- [class var scrollDraggingMetric: any XCTMetric](./scrolldraggingmetric.md)
   A metric that records scroll-dragging animations.
 
 

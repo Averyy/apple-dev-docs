@@ -1,7 +1,8 @@
 # unselectedItemTintColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tint color to apply to unselected tabs.
 
@@ -19,11 +20,16 @@ The tint color to apply to unselected tabs.
 var unselectedItemTintColor: UIColor? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) UIColor * unselectedItemTintColor;
+```
+
 ## See Also
 
-- [var selectionIndicatorImage: UIImage?](uitabbar/selectionindicatorimage.md)
+### Configuring selection appearance
+- [var selectionIndicatorImage: UIImage?](./selectionindicatorimage.md)
   The image to use for the selection indicator.
-- [var selectedImageTintColor: UIColor?](uitabbar/selectedimagetintcolor.md)
+- [var selectedImageTintColor: UIColor?](./selectedimagetintcolor.md)
   The tint color applied to the selected tab bar item.
 
 

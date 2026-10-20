@@ -1,7 +1,8 @@
 # CXCallEndedReason
 
 **Framework**: CallKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The reason that a call ended.
 
@@ -18,51 +19,56 @@ The reason that a call ended.
 enum CXCallEndedReason
 ```
 
+```c
+enum CXCallEndedReason : NSInteger;
+```
+
 #### Overview
 
-Pass these values to the [`reportCall(with:endedAt:reason:)`](cxprovider/reportcall(with:endedat:reason:).md) method.
+Pass these values to the [`reportCall(with:endedAt:reason:)`](./cxprovider/reportcall%28with,endedat,reason%29.md) method.
 
 ## Topics
 
 ### Constants
-- [CXCallEndedReason.failed](cxcallendedreason/failed.md)
+- [CXCallEndedReason.failed](./cxcallendedreason/failed.md)
   An error occurred while attempting to service the call.
-- [CXCallEndedReason.remoteEnded](cxcallendedreason/remoteended.md)
+- [CXCallEndedReason.remoteEnded](./cxcallendedreason/remoteended.md)
   The remote party explicitly ended the call.
-- [CXCallEndedReason.unanswered](cxcallendedreason/unanswered.md)
+- [CXCallEndedReason.unanswered](./cxcallendedreason/unanswered.md)
   The call never started connecting and was never explicitly ended, such as when an outgoing or incoming call times out.
-- [CXCallEndedReason.answeredElsewhere](cxcallendedreason/answeredelsewhere.md)
+- [CXCallEndedReason.answeredElsewhere](./cxcallendedreason/answeredelsewhere.md)
   Another device answered the call.
-- [CXCallEndedReason.declinedElsewhere](cxcallendedreason/declinedelsewhere.md)
+- [CXCallEndedReason.declinedElsewhere](./cxcallendedreason/declinedelsewhere.md)
   Another device declined the call.
 ### Initializers
-- [init?(rawValue: Int)](cxcallendedreason/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cxcallendedreason/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CXError](cxerror.md)
+### Handling Errors
+- [struct CXError](./cxerror.md)
   Error codes for the CallKit errors.
-- [CXError.Code](cxerror/code.md)
+- [CXError.Code](./cxerror/code.md)
   Error codes for the CallKit errors.
-- [struct CXErrorCodeIncomingCallError](cxerrorcodeincomingcallerror-swift.struct.md)
+- [struct CXErrorCodeIncomingCallError](./cxerrorcodeincomingcallerror-swift.struct.md)
   Codes for errors that occur during incoming calls.
-- [CXErrorCodeIncomingCallError.Code](cxerrorcodeincomingcallerror-swift.struct/code.md)
+- [CXErrorCodeIncomingCallError.Code](./cxerrorcodeincomingcallerror-swift.struct/code.md)
   Codes for errors that occur during incoming calls.
-- [struct CXErrorCodeNotificationServiceExtensionError](cxerrorcodenotificationserviceextensionerror-swift.struct.md)
+- [struct CXErrorCodeNotificationServiceExtensionError](./cxerrorcodenotificationserviceextensionerror-swift.struct.md)
   Errors that can occur when reporting new, incoming VoIP calls.
-- [let CXErrorDomain: String](cxerrordomain.md)
+- [let CXErrorDomain: String](./cxerrordomain.md)
   The domain for CallKit errors.
-- [let CXErrorDomainIncomingCall: String](cxerrordomainincomingcall.md)
+- [let CXErrorDomainIncomingCall: String](./cxerrordomainincomingcall.md)
   The domain for errors that occur during incoming calls.
 
 

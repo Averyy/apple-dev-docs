@@ -1,7 +1,8 @@
 # insert(contentsOf:at:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts the elements of a sequence into the collection at the specified position.
 
@@ -35,7 +36,7 @@ print(numbers)
 
 Calling this method may invalidate any existing indices for use with this collection.
 
-> **Note**: O(*n* + *m*), where *n* is length of this collection and *m* is the length of `newElements`. If `i == endIndex`, this method is equivalent to `append(contentsOf:)`.
+> **Complexity**: O(*n* + *m*), where *n* is length of this collection and *m* is the length of `newElements`. If `i == endIndex`, this method is equivalent to `append(contentsOf:)`.
 
 ## Parameters
 

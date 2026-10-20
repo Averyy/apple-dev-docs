@@ -1,7 +1,8 @@
 # element
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 Sets the element of the annotation.
 
@@ -10,7 +11,7 @@ Sets the element of the annotation.
 
 ## Declaration
 
-```swift
+```
 element?: HTMLElement;
 ```
 

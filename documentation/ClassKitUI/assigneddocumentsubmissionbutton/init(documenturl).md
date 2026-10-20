@@ -1,7 +1,8 @@
 # init(documentURL:)
 
 **Framework**: ClassKit UI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a button for document submission.
 

@@ -1,7 +1,8 @@
 # init(id:jointNames:inverseBindPoseMatrices:restPoseTransforms:parentIndices:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a skeleton from arrays which define its joints. Returns `nil` if there was an issue converting the parameters to a valid skeleton.
 

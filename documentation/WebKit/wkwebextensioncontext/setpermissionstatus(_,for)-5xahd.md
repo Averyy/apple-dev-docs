@@ -1,7 +1,8 @@
 # setPermissionStatus(_:for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the permission status of a URL with a distant future expiration date.
 
@@ -18,9 +19,13 @@ Sets the permission status of a URL with a distant future expiration date.
 func setPermissionStatus(_ status: WKWebExtensionContext.PermissionStatus, for url: URL)
 ```
 
+```objc
+- (void) setPermissionStatus:(WKWebExtensionContextPermissionStatus) status forURL:(NSURL *) url;
+```
+
 #### Discussion
 
-The URL is converted into a match pattern and will update [`grantedPermissionMatchPatterns`](wkwebextensioncontext/grantedpermissionmatchpatterns.md) and [`deniedPermissionMatchPatterns`](wkwebextensioncontext/deniedpermissionmatchpatterns.md). Use this method for changing a single URL’s status. Only [`WKWebExtensionContext.PermissionStatus.deniedExplicitly`](wkwebextensioncontext/permissionstatus/deniedexplicitly.md), [`WKWebExtensionContext.PermissionStatus.unknown`](wkwebextensioncontext/permissionstatus/unknown.md), and [`WKWebExtensionContext.PermissionStatus.grantedExplicitly`](wkwebextensioncontext/permissionstatus/grantedexplicitly.md) states are allowed to be set using this method.
+The URL is converted into a match pattern and will update [`grantedPermissionMatchPatterns`](./grantedpermissionmatchpatterns.md) and [`deniedPermissionMatchPatterns`](./deniedpermissionmatchpatterns.md). Use this method for changing a single URL’s status. Only [`WKWebExtensionContext.PermissionStatus.deniedExplicitly`](./permissionstatus/deniedexplicitly.md), [`WKWebExtensionContext.PermissionStatus.unknown`](./permissionstatus/unknown.md), and [`WKWebExtensionContext.PermissionStatus.grantedExplicitly`](./permissionstatus/grantedexplicitly.md) states are allowed to be set using this method.
 
 ## Parameters
 
@@ -29,7 +34,8 @@ The URL is converted into a match pattern and will update [`grantedPermissionMat
 
 ## See Also
 
-- [func setPermissionStatus(WKWebExtensionContext.PermissionStatus, for: URL, expirationDate: Date?)](wkwebextensioncontext/setpermissionstatus(_:for:expirationdate:)-5q9id.md)
+### Related Documentation
+- [func setPermissionStatus(WKWebExtensionContext.PermissionStatus, for: URL, expirationDate: Date?)](./setpermissionstatus%28_,for,expirationdate%29-5q9id.md)
   Sets the permission status of a URL with a distant future expiration date.
 
 

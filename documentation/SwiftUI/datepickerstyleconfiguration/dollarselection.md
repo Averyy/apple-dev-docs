@@ -1,7 +1,8 @@
 # $selection
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -19,7 +20,8 @@ var $selection: Binding<Date> { get }
 
 ## See Also
 
-- [var selection: Date](datepickerstyleconfiguration/selection.md)
+### Selecting the date
+- [var selection: Date](./selection.md)
   The date value being displayed and selected.
 
 

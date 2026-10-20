@@ -1,7 +1,8 @@
 # creationAttributes
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Attributes used for creating this pixel buffer
 

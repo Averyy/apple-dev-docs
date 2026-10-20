@@ -1,7 +1,8 @@
 # deviceName
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The device name or sales staff name to identify the merchant device.
 

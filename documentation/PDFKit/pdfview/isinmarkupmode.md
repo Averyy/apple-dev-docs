@@ -1,7 +1,8 @@
 # isInMarkupMode
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -17,12 +18,17 @@
 var isInMarkupMode: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isInMarkupMode) BOOL inMarkupMode;
+```
+
 ## See Also
 
-- [var findInteraction: UIFindInteraction](pdfview/findinteraction.md)
-- [var isFindInteractionEnabled: Bool](pdfview/isfindinteractionenabled.md)
-- [var pageOverlayViewProvider: (any PDFPageOverlayViewProvider)?](pdfview/pageoverlayviewprovider.md)
-- [var pageShadowsEnabled: Bool](pdfview/pageshadowsenabled.md)
+### Instance Properties
+- [var findInteraction: UIFindInteraction](./findinteraction.md)
+- [var isFindInteractionEnabled: Bool](./isfindinteractionenabled.md)
+- [var pageOverlayViewProvider: (any PDFPageOverlayViewProvider)?](./pageoverlayviewprovider.md)
+- [var pageShadowsEnabled: Bool](./pageshadowsenabled.md)
 
 
 ---

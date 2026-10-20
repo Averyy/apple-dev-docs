@@ -1,7 +1,8 @@
 # CMCameraIntrinsicMatrix
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A matrix that describes the camera’s intrinsic properties.
 
@@ -24,7 +25,7 @@ struct CMCameraIntrinsicMatrix
 
 This matrix has the following content
 
-```None
+```
  fx  0   ox
  0   fy  oy
  0   0   1
@@ -35,17 +36,17 @@ fx and fy are the focal length in pixels. For square pixels, they will have the 
 ## Topics
 
 ### Initializers
-- [init(matrix: simd_float3x3)](cmcameraintrinsicmatrix/init(matrix:).md)
+- [init(matrix: simd_float3x3)](./cmcameraintrinsicmatrix/init%28matrix%29.md)
 ### Instance Properties
-- [var matrix: simd_float3x3](cmcameraintrinsicmatrix/matrix.md)
+- [var matrix: simd_float3x3](./cmcameraintrinsicmatrix/matrix.md)
 
 ## Relationships
 
 ### Conforms To
-- [CVAttachmentValueRepresentable](../corevideo/cvattachmentvaluerepresentable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVAttachmentValueRepresentable](../CoreVideo/cvattachmentvaluerepresentable.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

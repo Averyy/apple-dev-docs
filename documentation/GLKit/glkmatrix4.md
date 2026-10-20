@@ -1,7 +1,8 @@
 # GLKMatrix4
 
 **Framework**: GLKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A `4x4` matrix.
 
@@ -15,6 +16,10 @@ A `4x4` matrix.
 
 ```swift
 typealias GLKMatrix4 = _GLKMatrix4
+```
+
+```c
+typedef union _GLKMatrix4 GLKMatrix4;
 ```
 
 ##### Fields

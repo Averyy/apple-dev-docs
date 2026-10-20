@@ -1,7 +1,8 @@
 # TabletopInteraction.IndirectRotationAlignmentBehavior
 
 **Framework**: TabletopKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An object that represents how the equipment’s orientation should be automatically aligned during the course of the interaction.
 
@@ -17,39 +18,40 @@ enum IndirectRotationAlignmentBehavior
 ## Topics
 
 ### Alignment behaviors
-- [TabletopInteraction.IndirectRotationAlignmentBehavior.alignToInputDevice](tabletopinteraction/indirectrotationalignmentbehavior/aligntoinputdevice.md)
+- [TabletopInteraction.IndirectRotationAlignmentBehavior.alignToInputDevice](./indirectrotationalignmentbehavior/aligntoinputdevice.md)
   Align the equipment so its Z axis points towards the input devices and lays on the horizontal plane.
-- [TabletopInteraction.IndirectRotationAlignmentBehavior.alignToInputDeviceAndAutoFlip](tabletopinteraction/indirectrotationalignmentbehavior/aligntoinputdeviceandautoflip.md)
+- [TabletopInteraction.IndirectRotationAlignmentBehavior.alignToInputDeviceAndAutoFlip](./indirectrotationalignmentbehavior/aligntoinputdeviceandautoflip.md)
   Same as `alignToInputDevice` and also detect when the input device rotates enough to generate a flip of the equipment. When a flip is detected, the equipment will stay horizontal showing its back face.
-- [TabletopInteraction.IndirectRotationAlignmentBehavior.automatic](tabletopinteraction/indirectrotationalignmentbehavior/automatic.md)
+- [TabletopInteraction.IndirectRotationAlignmentBehavior.automatic](./indirectrotationalignmentbehavior/automatic.md)
   Automatically pick an alignment strategy based on the equipment size.
-- [TabletopInteraction.IndirectRotationAlignmentBehavior.disabled](tabletopinteraction/indirectrotationalignmentbehavior/disabled.md)
+- [TabletopInteraction.IndirectRotationAlignmentBehavior.disabled](./indirectrotationalignmentbehavior/disabled.md)
   Use this value to disable the behavior.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [TabletopInteraction.Constants](tabletopinteraction/constants.md)
-- [TabletopInteraction.CollisionTargets](tabletopinteraction/collisiontargets.md)
+### Handling collision behavior
+- [TabletopInteraction.Constants](./constants.md)
+- [TabletopInteraction.CollisionTargets](./collisiontargets.md)
   A set of targets for collision behaviors during an interaction
-- [TabletopInteraction.DirectPickupBehavior](tabletopinteraction/directpickupbehavior.md)
+- [TabletopInteraction.DirectPickupBehavior](./directpickupbehavior.md)
   An object that represents the behavior of the pickup phase of the direct interaction. The pickup phase describes how the object moves from its initial pose to the pose it will have when moving rigidly with the input device.
-- [TabletopInteraction.DirectInteractionConstants](tabletopinteraction/directinteractionconstants.md)
+- [TabletopInteraction.DirectInteractionConstants](./directinteractionconstants.md)
   An object that represents the parameters of a direct interaction that cannot be changed while the interaction is active.
-- [TabletopInteraction.IndirectInteractionConstants](tabletopinteraction/indirectinteractionconstants.md)
+- [TabletopInteraction.IndirectInteractionConstants](./indirectinteractionconstants.md)
   An object that represents the parameters of an indirect interaction that cannot be changed while the interaction is active.
-- [TabletopInteraction.HoverAlignmentBehavior](tabletopinteraction/hoveralignmentbehavior.md)
+- [TabletopInteraction.HoverAlignmentBehavior](./hoveralignmentbehavior.md)
   An object that describes how the controlled equipment should behave when approaching a target.
-- [TabletopInteraction.HoverAlignmentSource](tabletopinteraction/hoveralignmentsource.md)
+- [TabletopInteraction.HoverAlignmentSource](./hoveralignmentsource.md)
   An object representing the types of features that can be auto aligned by the `HoverAlignmentBehavior`
-- [TabletopInteraction.ProgrammaticInteractionConstants](tabletopinteraction/programmaticinteractionconstants.md)
+- [TabletopInteraction.ProgrammaticInteractionConstants](./programmaticinteractionconstants.md)
   An object that represents the parameters of a programmatic interaction that cannot be changed while the interaction is active.
 
 

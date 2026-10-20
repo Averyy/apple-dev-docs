@@ -1,6 +1,7 @@
 # Handling Requests and Responses
 
-**Framework**: Apple Music API
+**Framework**: Apple Music API  
+**Role**: Article
 
 Write a request and handle responses from the API.
 
@@ -31,7 +32,7 @@ GET https://api.music.apple.com/v1/me/ratings/albums/{id}
 
 Every resource has a unique identifier in the Apple Music catalog. Resources in the user’s library have unique identifiers that are different than the Apple Music catalog identifiers. If a user removes an item from their music library but then adds it back later, it will have a new and different identifier.
 
-Most requests return only the requested resource. For information about how to request related resources at the same time, see [`Handling Resource Representation and Relationships`](handling-resource-representation-and-relationships.md).
+Most requests return only the requested resource. For information about how to request related resources at the same time, see [Handling Resource Representation and Relationships](./handling-resource-representation-and-relationships.md).
 
 ##### Handle a Response
 
@@ -54,7 +55,7 @@ GET https://api.music.apple.com/v1/catalog/{storefront}/charts
 GET https://api.music.apple.com/v1/catalog/{storefront}/search
 ```
 
-Error responses contain an array of one or more error objects that indicate any issues while handling the request. The status code of the response reflects the primary error. See [`Error`](error.md) and [`HTTP Status Codes`](http-status-codes.md).
+Error responses contain an array of one or more error objects that indicate any issues while handling the request. The status code of the response reflects the primary error. See [`Error`](./error.md) and [HTTP Status Codes](./http-status-codes.md).
 
 Default responses include:
 
@@ -62,7 +63,7 @@ Default responses include:
 - If the request is for a single resource object that doesn’t exist, the status code is 404 (Not Found) and the response doesn’t contain a `data` array.
 - If the request is for multiple resource objects by ID, the status code is 200 (OK) and the `data` array includes the existing resource objects.
 - If the request is for multiple resource objects by ID and none of the resources exist, the status code is 200 (OK) and the `data` array is empty.
-- A successful response for a resource collection with additional results contains a `next` link to the next page of fetched resources in the collection. See also [`Fetching Resources by Page`](fetching-resources-by-page.md).
+- A successful response for a resource collection with additional results contains a `next` link to the next page of fetched resources in the collection. See also [Fetching Resources by Page](./fetching-resources-by-page.md).
 - A successful response for a relationship request is 200 OK and the `data` array contains a paginated collection of resources contained in the relationship. A `next` link signifies that additional resources may be fetched from the relationship’s resource collection.
 - A successful response for a relationship view request is 200 OK and the `data` array contains a paginated collection of resources contained in the `view`. The relationship view’s `attributes` are included when requested using the `with` parameter. A `next` link signifies that additional resources may be fetched.
 - If the request contains successfully modified or deleted resources, the status code is 204 (No Content) and the body is empty.
@@ -75,32 +76,33 @@ Default responses include:
 ## Topics
 
 ### Related Objects
-- [object EmptyBodyResponse](emptybodyresponse.md)
+- [object EmptyBodyResponse](./emptybodyresponse.md)
   A response object that contains no content.
-- [object ErrorsResponse](errorsresponse.md)
+- [object ErrorsResponse](./errorsresponse.md)
   A response object indicating that an error occurred while processing the request.
-- [object UnauthorizedResponse](unauthorizedresponse.md)
+- [object UnauthorizedResponse](./unauthorizedresponse.md)
   A response object indicating that the request’s authorization is missing or invalid.
-- [object ForbiddenResponse](forbiddenresponse.md)
+- [object ForbiddenResponse](./forbiddenresponse.md)
   A response object indicating that the request wasn’t accepted due to an issue with the authentication.
-- [object ResourceCollectionResponse](resourcecollectionresponse.md)
+- [object ResourceCollectionResponse](./resourcecollectionresponse.md)
   A response object composed of resource objects for the request.
 
 ## See Also
 
-- [Generating Developer Tokens](generating-developer-tokens.md)
+### Essentials
+- [Generating Developer Tokens](./generating-developer-tokens.md)
   Generate a developer token needed to make requests to Apple Music API.
-- [User Authentication for MusicKit](user-authentication-for-musickit.md)
+- [User Authentication for MusicKit](./user-authentication-for-musickit.md)
   Authenticate requests for user data using the Music User Token.
-- [Handling Resource Representation and Relationships](handling-resource-representation-and-relationships.md)
+- [Handling Resource Representation and Relationships](./handling-resource-representation-and-relationships.md)
   Fetch resources with extended attributes and included relationships and relationship views.
-- [Storefronts and Localization](storefronts-and-localization.md)
+- [Storefronts and Localization](./storefronts-and-localization.md)
   Pick a region-specific geographic location from which to retrieve catalog information, or retrieve information from the user’s personal library.
-- [Common Objects](common-objects.md)
+- [Common Objects](./common-objects.md)
   Understand the common JSON objects that framework responses contain.
-- [Managing Content Ratings, Alternate Versions, and Equivalencies](managing-content-ratings-alternate-versions-and-equivalencies.md)
+- [Managing Content Ratings, Alternate Versions, and Equivalencies](./managing-content-ratings-alternate-versions-and-equivalencies.md)
   Handle multiple and alternate versions of content.
-- [Fetching Resources by Page](fetching-resources-by-page.md)
+- [Fetching Resources by Page](./fetching-resources-by-page.md)
   Use pagination to fetch the next set of objects.
 
 

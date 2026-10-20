@@ -1,7 +1,8 @@
 # isAccountLinked(using:)
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A Boolean value that indicates whether the account is already linked.
 
@@ -18,11 +19,11 @@ func isAccountLinked(using token: PaymentCardReader.Token) async throws -> Bool
 
 #### Discussion
 
-Call [`linkAccount(using:)`](paymentcardreader/linkaccount(using:).md) to link an account.
+Call [`linkAccount(using:)`](./linkaccount%28using%29.md) to link an account.
 
-> **Note**: If [`prepare(using:)`](paymentcardreader/prepare(using:).md) throws an [`PaymentCardReaderError.accountNotLinked`](paymentcardreadererror/accountnotlinked.md) error call [`linkAccount(using:)`](paymentcardreader/linkaccount(using:).md) again to relink the account.
+> **Note**: If [`prepare(using:)`](./prepare%28using%29.md) throws an [`PaymentCardReaderError.accountNotLinked`](../paymentcardreadererror/accountnotlinked.md) error call [`linkAccount(using:)`](./linkaccount%28using%29.md) again to relink the account.
 
-> **Note**: [`PaymentCardReaderError`](paymentcardreadererror.md)
+> **Throws**: [`PaymentCardReaderError`](../paymentcardreadererror.md)
 
 ## Parameters
 
@@ -30,11 +31,12 @@ Call [`linkAccount(using:)`](paymentcardreader/linkaccount(using:).md) to link a
 
 ## See Also
 
-- [func linkAccount(using: PaymentCardReader.Token) async throws](paymentcardreader/linkaccount(using:).md)
+### Displaying the Tap to Pay on iPhone’s terms and conditions
+- [func linkAccount(using: PaymentCardReader.Token) async throws](./linkaccount%28using%29.md)
   Presents a sheet for the merchant to accept Tap to Pay on iPhone’s Terms and Conditions on a device.
-- [func relinkAccount(using: PaymentCardReader.Token) async throws](paymentcardreader/relinkaccount(using:).md)
+- [func relinkAccount(using: PaymentCardReader.Token) async throws](./relinkaccount%28using%29.md)
   Presents a sheet for the merchant to re-accept Tap to Pay on iPhone’s Terms and Conditions on a device using a different Apple Account.
-- [PaymentCardReader.Token](paymentcardreader/token.md)
+- [PaymentCardReader.Token](./token.md)
   A secure token that you receive from your participating payment service provider.
 
 

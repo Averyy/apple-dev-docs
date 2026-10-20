@@ -1,7 +1,8 @@
 # accessibilityInputLabels(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets alternate input labels with which users identify a view.
 
@@ -19,6 +20,20 @@ Sets alternate input labels with which users identify a view.
 ```swift
 nonisolated
 func accessibilityInputLabels(_ inputLabelKeys: [LocalizedStringKey]) -> ModifiedContent<Content, Modifier>
+```
+
+Available when `Modifier` is `AccessibilityAttachmentModifier`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+func accessibilityInputLabels(_ inputLabels: [Text]) -> ModifiedContent<Content, Modifier>
+```
+
+```swift
+nonisolated
+func accessibilityInputLabels<S>(_ inputLabels: [S]) -> ModifiedContent<Content, Modifier> where S : StringProtocol
 ```
 
 #### Discussion

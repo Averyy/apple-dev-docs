@@ -1,7 +1,8 @@
 # arm_debug_state64_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 11.0+
@@ -9,11 +10,11 @@
 ## Topics
 
 ### Instance Properties
-- [bcr](arm_debug_state64_t/3609510-bcr.md)
-- [bvr](arm_debug_state64_t/3609511-bvr.md)
-- [mdscr_el1](arm_debug_state64_t/3609512-mdscr_el1.md)
-- [wcr](arm_debug_state64_t/3609513-wcr.md)
-- [wvr](arm_debug_state64_t/3609514-wvr.md)
+- [bcr](./arm_debug_state64_t/api-3609510-bcr.md)
+- [bvr](./arm_debug_state64_t/api-3609511-bvr.md)
+- [mdscr_el1](./arm_debug_state64_t/api-3609512-mdscr_el1.md)
+- [wcr](./arm_debug_state64_t/api-3609513-wcr.md)
+- [wvr](./arm_debug_state64_t/api-3609514-wvr.md)
 
 
 ---

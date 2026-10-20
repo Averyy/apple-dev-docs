@@ -1,7 +1,8 @@
 # isHardenedRuntimeEnforced
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Flag indicating that the process has enabled the Hardened Runtime
 

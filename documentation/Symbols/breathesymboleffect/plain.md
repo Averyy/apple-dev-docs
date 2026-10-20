@@ -1,7 +1,8 @@
 # plain
 
 **Framework**: Symbols  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a copy of the effect requesting an animation that makes the symbol breathe with no additional styling.
 

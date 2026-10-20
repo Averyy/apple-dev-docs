@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Create ML  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the element at the given position.
 
@@ -19,6 +20,24 @@ Accesses the element at the given position.
 subscript(index: Int) -> MLDataValue { get }
 ```
 
+**Other overloads**:
+
+```swift
+subscript(mask: MLDataColumn<Bool>) -> MLUntypedColumn { get }
+```
+
+```swift
+subscript(mask: MLUntypedColumn) -> MLUntypedColumn { get }
+```
+
+```swift
+subscript(slice: Range<Int>) -> MLUntypedColumn { get }
+```
+
+```swift
+subscript<R>(slice: R) -> MLUntypedColumn where R : RangeExpression, R.Bound == Int { get }
+```
+
 #### Return Value
 
 The value at the given index.
@@ -29,9 +48,10 @@ The value at the given index.
 
 ## See Also
 
-- [subscript(MLDataColumn<Bool>) -> MLUntypedColumn](mluntypedcolumn/subscript(_:)-8ot43.md)
+### Masking elements to generate an untyped column
+- [subscript(MLDataColumn<Bool>) -> MLUntypedColumn](./subscript%28_%29-8ot43.md)
   Creates a subset of the column by masking its elements with a data column of Booleans.
-- [subscript(MLUntypedColumn) -> MLUntypedColumn](mluntypedcolumn/subscript(_:)-9hr32.md)
+- [subscript(MLUntypedColumn) -> MLUntypedColumn](./subscript%28_%29-9hr32.md)
   Creates a subset of the column by masking its elements with another untyped column.
 
 

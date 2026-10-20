@@ -1,7 +1,8 @@
 # AVExperienceController.TransitionContext.Status.transitioning
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The transition is in progress.
 
@@ -16,9 +17,10 @@ case transitioning
 
 ## See Also
 
-- [AVExperienceController.TransitionContext.Status.preparing](avexperiencecontroller/transitioncontext/status-swift.enum/preparing.md)
+### Statuses
+- [AVExperienceController.TransitionContext.Status.preparing](./preparing.md)
   The transition is preparing for `toExperience`.
-- [case finished(result: AVExperienceController.TransitionContext.TransitionResult)](avexperiencecontroller/transitioncontext/status-swift.enum/finished(result:).md)
+- [case finished(result: AVExperienceController.TransitionContext.TransitionResult)](./finished%28result%29.md)
   Transition finished. Perform cleanup based on result.
 
 

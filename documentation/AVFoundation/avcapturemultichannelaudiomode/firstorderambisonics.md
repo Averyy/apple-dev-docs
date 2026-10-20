@@ -1,7 +1,8 @@
 # AVCaptureMultichannelAudioMode.firstOrderAmbisonics
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An audio mode that indicates the recording uses first-order ambisonics.
 
@@ -18,15 +19,20 @@ An audio mode that indicates the recording uses first-order ambisonics.
 case firstOrderAmbisonics
 ```
 
+```c
+AVCaptureMultichannelAudioModeFirstOrderAmbisonics
+```
+
 #### Discussion
 
 When recording a QuickTime movie file, the system records a stereo audio track with the first-order ambisonics track for backward playback compatibility.
 
 ## See Also
 
-- [AVCaptureMultichannelAudioMode.none](avcapturemultichannelaudiomode/none.md)
+### Modes
+- [AVCaptureMultichannelAudioMode.none](./none.md)
   A mode that indicates there’s no multichannel audio.
-- [AVCaptureMultichannelAudioMode.stereo](avcapturemultichannelaudiomode/stereo.md)
+- [AVCaptureMultichannelAudioMode.stereo](./stereo.md)
   A mode that indicates the recording uses stereo audio.
 
 

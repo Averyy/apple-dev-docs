@@ -1,7 +1,8 @@
 # toolbarBackgroundVisibility(_:for:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the preferred visibility of backgrounds on a bar managed by SwiftUI.
 
@@ -23,11 +24,11 @@ func toolbarBackgroundVisibility(_ visibility: Visibility, for bars: ToolbarPlac
 
 #### Discussion
 
-The preferred visibility flows up to the nearest container that renders a bar. This could be a [`NavigationView`](navigationview.md) or [`TabView`](tabview.md) in iOS, or the root view of a [`WindowGroup`](windowgroup.md) in macOS.
+The preferred visibility flows up to the nearest container that renders a bar. This could be a [`NavigationView`](../navigationview.md) or [`TabView`](../tabview.md) in iOS, or the root view of a [`WindowGroup`](../windowgroup.md) in macOS.
 
-In iOS, a value of [`automatic`](toolbarplacement/automatic.md) makes the visibility of a tab bar or navigation bar background depend on where a [`List`](list.md) or [`ScrollView`](scrollview.md) settles. For example, when aligned to the bottom edge of of a scroll view’s content, the background of a tab bar becomes transparent.
+In iOS, a value of [`automatic`](../toolbarplacement/automatic.md) makes the visibility of a tab bar or navigation bar background depend on where a [`List`](../list.md) or [`ScrollView`](../scrollview.md) settles. For example, when aligned to the bottom edge of of a scroll view’s content, the background of a tab bar becomes transparent.
 
-Specify a value of [`Visibility.visible`](visibility/visible.md) to ensure that the background of a bar remains visible regardless of where any scroll view or list stops scrolling.
+Specify a value of [`Visibility.visible`](../visibility/visible.md) to ensure that the background of a bar remains visible regardless of where any scroll view or list stops scrolling.
 
 This example shows a view that prefers to always have the tab bar visible when the middle tab is selected:
 
@@ -55,17 +56,18 @@ TabView {
 ## Parameters
 
 - `visibility`: The preferred visibility of the background of the bar.
-- `bars`: The bars to update the color scheme of or [`automatic`](toolbarplacement/automatic.md) if empty.
+- `bars`: The bars to update the color scheme of or [`automatic`](../toolbarplacement/automatic.md) if empty.
 
 ## See Also
 
-- [func toolbarVisibility(Visibility, for: ToolbarPlacement...) -> some View](view/toolbarvisibility(_:for:).md)
+### Setting toolbar visibility
+- [func toolbarVisibility(Visibility, for: ToolbarPlacement...) -> some View](./toolbarvisibility%28_,for%29.md)
   Specifies the visibility of a bar managed by SwiftUI.
-- [struct ToolbarPlacement](toolbarplacement.md)
+- [struct ToolbarPlacement](../toolbarplacement.md)
   The placement of a toolbar.
-- [struct ContentToolbarPlacement](contenttoolbarplacement.md)
+- [struct ContentToolbarPlacement](../contenttoolbarplacement.md)
   A region of the interface that hosts its own toolbar content.
-- [func toolbar(Visibility, for: ToolbarPlacement...) -> some View](view/toolbar(_:for:).md)
+- [func toolbar(Visibility, for: ToolbarPlacement...) -> some View](./toolbar%28_,for%29.md)
   Specifies the visibility of a bar managed by SwiftUI.
 
 

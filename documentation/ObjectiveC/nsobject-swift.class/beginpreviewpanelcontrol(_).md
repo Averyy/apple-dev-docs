@@ -1,15 +1,20 @@
 # beginPreviewPanelControl(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func beginPreviewPanelControl(_ panel: QLPreviewPanel!)
+```
+
+```objc
+- (void) beginPreviewPanelControl:(QLPreviewPanel *) panel;
 ```
 
 

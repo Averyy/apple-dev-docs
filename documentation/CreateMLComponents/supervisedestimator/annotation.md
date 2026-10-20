@@ -2,6 +2,7 @@
 
 **Framework**: Create ML Components  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The annotation type.
@@ -23,11 +24,12 @@ associatedtype Annotation : Equatable
 
 ## See Also
 
-- [func read(from: URL) throws -> Self.Transformer](supervisedestimator/read(from:).md)
+### Reading and writing
+- [func read(from: URL) throws -> Self.Transformer](./read%28from%29.md)
   Reads the encoded transformer from a file.
-- [func write(Self.Transformer, to: URL, overwrite: Bool) throws](supervisedestimator/write(_:to:overwrite:).md)
+- [func write(Self.Transformer, to: URL, overwrite: Bool) throws](./write%28_,to,overwrite%29.md)
   Writes the encoded transformer to a file.
-- [associatedtype Transformer : Transformer](supervisedestimator/transformer.md)
+- [associatedtype Transformer : Transformer](./transformer.md)
   The transformer type created by this estimator.
 
 

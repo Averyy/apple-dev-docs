@@ -1,7 +1,8 @@
 # AVAssetVariant.AudioAttributes
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that defines the audio attributes for an asset variant.
 
@@ -20,37 +21,42 @@ An object that defines the audio attributes for an asset variant.
 class AudioAttributes
 ```
 
+```objc
+@interface AVAssetVariantAudioAttributes : NSObject
+```
+
 ## Topics
 
 ### Inspecting audio attributes
-- [var formatIDs: [AudioFormatID]](avassetvariant/audioattributes-swift.class/formatids.md)
+- [var formatIDs: [AudioFormatID]](./audioattributes-swift.class/formatids.md)
   The audio formats of the renditions present in the variant.
-- [func renditionSpecificAttributes(for: AVMediaSelectionOption) -> AVAssetVariant.AudioAttributes.RenditionSpecificAttributes?](avassetvariant/audioattributes-swift.class/renditionspecificattributes(for:).md)
+- [func renditionSpecificAttributes(for: AVMediaSelectionOption) -> AVAssetVariant.AudioAttributes.RenditionSpecificAttributes?](./audioattributes-swift.class/renditionspecificattributes%28for%29.md)
   Returns specific attributes for the media option.
-- [AVAssetVariant.AudioAttributes.RenditionSpecificAttributes](avassetvariant/audioattributes-swift.class/renditionspecificattributes.md)
+- [AVAssetVariant.AudioAttributes.RenditionSpecificAttributes](./audioattributes-swift.class/renditionspecificattributes.md)
   An object that represents attributes specific to a particular rendition.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var audioAttributes: AVAssetVariant.AudioAttributes?](avassetvariant/audioattributes-swift.property.md)
+### Configuring attributes
+- [var audioAttributes: AVAssetVariant.AudioAttributes?](./audioattributes-swift.property.md)
   The audio rendition attributes for the variant.
-- [var videoAttributes: AVAssetVariant.VideoAttributes?](avassetvariant/videoattributes-swift.property.md)
+- [var videoAttributes: AVAssetVariant.VideoAttributes?](./videoattributes-swift.property.md)
   The video rendition attributes for the variant.
-- [AVAssetVariant.VideoAttributes](avassetvariant/videoattributes-swift.class.md)
+- [AVAssetVariant.VideoAttributes](./videoattributes-swift.class.md)
   An object that defines the video attributes for an asset variant.
 
 

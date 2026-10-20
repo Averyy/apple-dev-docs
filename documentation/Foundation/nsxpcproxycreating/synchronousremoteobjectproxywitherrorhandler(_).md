@@ -1,7 +1,8 @@
 # synchronousRemoteObjectProxyWithErrorHandler(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a proxy that makes a synchronous IPC call instead of the default async behavior.
 
@@ -18,6 +19,10 @@ Returns a proxy that makes a synchronous IPC call instead of the default async b
 
 ```swift
 optional func synchronousRemoteObjectProxyWithErrorHandler(_ handler: @escaping (any Error) -> Void) -> Any
+```
+
+```objc
+- (id) synchronousRemoteObjectProxyWithErrorHandler:(void (^)(NSError *error)) handler;
 ```
 
 #### Discussion

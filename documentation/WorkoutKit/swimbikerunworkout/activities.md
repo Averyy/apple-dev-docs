@@ -1,7 +1,8 @@
 # activities
 
 **Framework**: WorkoutKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An ordered list of activities for the multisport workout.
 
@@ -20,7 +21,8 @@ var activities: [SwimBikeRunWorkout.Activity] { get set }
 
 ## See Also
 
-- [var displayName: String?](swimbikerunworkout/displayname.md)
+### Accessing workout data
+- [var displayName: String?](./displayname.md)
   The name that the system uses when displaying the workout.
 
 

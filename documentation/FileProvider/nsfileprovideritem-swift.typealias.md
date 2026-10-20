@@ -1,7 +1,8 @@
 # NSFileProviderItem
 
 **Framework**: File Provider  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An item the File Provider extension manages.
 
@@ -18,19 +19,24 @@ An item the File Provider extension manages.
 typealias NSFileProviderItem = any NSFileProviderItemProtocol
 ```
 
+```c
+typedef id<NSFileProviderItem> NSFileProviderItem;
+```
+
 #### Discussion
 
-For a list of all the properties defined by [`NSFileProviderItem`](nsfileprovideritem-swift.typealias.md), see [`NSFileProviderItemProtocol`](nsfileprovideritemprotocol.md).
+For a list of all the properties defined by [`NSFileProviderItem`](./nsfileprovideritem-swift.typealias.md), see [`NSFileProviderItemProtocol`](./nsfileprovideritemprotocol.md).
 
 ## See Also
 
-- [protocol NSFileProviderItemProtocol](nsfileprovideritemprotocol.md)
+### Provided items
+- [protocol NSFileProviderItemProtocol](./nsfileprovideritemprotocol.md)
   A protocol that defines the properties of an item managed by the File Provider extension.
-- [struct NSFileProviderItemIdentifier](nsfileprovideritemidentifier.md)
+- [struct NSFileProviderItemIdentifier](./nsfileprovideritemidentifier.md)
   A unique identifier for an item managed by the File Provider extension.
-- [struct NSFileProviderItemCapabilities](nsfileprovideritemcapabilities.md)
+- [struct NSFileProviderItemCapabilities](./nsfileprovideritemcapabilities.md)
   An item’s capabilities, which define the actions that the user can perform in the document browser.
-- [struct NSFileProviderTypeAndCreator](nsfileprovidertypeandcreator.md)
+- [struct NSFileProviderTypeAndCreator](./nsfileprovidertypeandcreator.md)
   A structure that contains the file type and file creator codes for an item.
 
 

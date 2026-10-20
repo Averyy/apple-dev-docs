@@ -1,7 +1,8 @@
 # invalidObject
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The external memory manager failed to initialize the memory object.
 

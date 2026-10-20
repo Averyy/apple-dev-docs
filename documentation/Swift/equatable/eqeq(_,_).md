@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: op  
+**Role**: Operator  
 **Required**: Yes
 
 Returns a Boolean value indicating whether two values are equal.
@@ -30,9 +31,26 @@ Equality is the inverse of inequality. For any values `a` and `b`, `a == b` impl
 - `lhs`: A value to compare.
 - `rhs`: Another value to compare.
 
+## Default Implementations
+
+### DistributedActor Implementations
+- [static func == (Self, Self) -> Bool](../../Distributed/distributedactor/eqeq%28_,_%29.md)
+  A distributed actor’s hash and equality is implemented by directly delegating to its [`id`](../../Distributed/distributedactor/id.md).
+### Equatable Implementations
+- [static func == (Self, Self) -> Bool](./eqeq%28_,_%29-1xq7p.md)
+  Returns a Boolean value indicating whether two values are equal.
+- [static func == (Self, Self) -> Bool](./eqeq%28_,_%29-3ngto.md)
+  Returns a Boolean value indicating whether two values are equal.
+- [static func == (Self, Self) -> Bool](./eqeq%28_,_%29-6673q.md)
+  Returns a Boolean value indicating whether two vectors are equal.
+- [static func == <Other>(Self, Other) -> Bool](./eqeq%28_,_%29-7do7a.md)
+  Returns a Boolean value indicating whether the two given values are equal.
+- [static func == <RHS>(Self, RHS) -> Bool](./eqeq%28_,_%29-7k1nz.md)
+
 ## See Also
 
-- [static func != (borrowing Self, borrowing Self) -> Bool](equatable/!=(_:_:).md)
+### Equatable Requirements
+- [static func != (borrowing Self, borrowing Self) -> Bool](./noteq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are not equal.
 
 

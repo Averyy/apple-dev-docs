@@ -1,7 +1,8 @@
 # warning(_:)
 
 **Framework**: os  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes information about a warning to the log.
 
@@ -11,7 +12,7 @@ Writes information about a warning to the log.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -22,29 +23,30 @@ func warning(_ message: OSLogMessage)
 
 #### Discussion
 
-> ❗ **Important**:  Don’t create an instance of [`OSLogMessage`](oslogmessage.md). Instead, provide an interpolated string as the `message` parameter and the system converts it automatically.
+> ❗ **Important**:  Don’t create an instance of [`OSLogMessage`](../oslogmessage.md). Instead, provide an interpolated string as the `message` parameter and the system converts it automatically.
 
-This method is functionally equivalent to the [`error(_:)`](logger/error(_:).md) method.
+This method is functionally equivalent to the [`error(_:)`](./error%28_%29.md) method.
 
 ## Parameters
 
-- `message`: The interpolated string that the logger writes to the log. Each of the message’s interpolations can specify individual formatting and privacy options. For more information, see [`Message Argument Formatters`](message-argument-formatters.md).
+- `message`: The interpolated string that the logger writes to the log. Each of the message’s interpolations can specify individual formatting and privacy options. For more information, see [Message Argument Formatters](../message-argument-formatters.md).
 
 ## See Also
 
-- [func notice(OSLogMessage)](logger/notice(_:).md)
+### Logging a Scoped Message
+- [func notice(OSLogMessage)](./notice%28_%29.md)
   Writes a message to the log using the default log type.
-- [func debug(OSLogMessage)](logger/debug(_:).md)
+- [func debug(OSLogMessage)](./debug%28_%29.md)
   Writes a debug message to the log.
-- [func trace(OSLogMessage)](logger/trace(_:).md)
+- [func trace(OSLogMessage)](./trace%28_%29.md)
   Writes a trace message to the log.
-- [func info(OSLogMessage)](logger/info(_:).md)
+- [func info(OSLogMessage)](./info%28_%29.md)
   Writes an informative message to the log.
-- [func error(OSLogMessage)](logger/error(_:).md)
+- [func error(OSLogMessage)](./error%28_%29.md)
   Writes information about an error to the log.
-- [func fault(OSLogMessage)](logger/fault(_:).md)
+- [func fault(OSLogMessage)](./fault%28_%29.md)
   Writes a message to the log about a bug that occurs when your app executes.
-- [func critical(OSLogMessage)](logger/critical(_:).md)
+- [func critical(OSLogMessage)](./critical%28_%29.md)
   Writes a message to the log about a critical event in your app’s execution.
 
 

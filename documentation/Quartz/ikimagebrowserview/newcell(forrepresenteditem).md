@@ -1,7 +1,8 @@
 # newCell(forRepresentedItem:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the cell to use for the specified item.
 
@@ -12,6 +13,10 @@ Returns the cell to use for the specified item.
 
 ```swift
 func newCell(forRepresentedItem anItem: Any!) -> IKImageBrowserCell!
+```
+
+```objc
+- (IKImageBrowserCell *) newCellForRepresentedItem:(id) anItem;
 ```
 
 #### Return Value

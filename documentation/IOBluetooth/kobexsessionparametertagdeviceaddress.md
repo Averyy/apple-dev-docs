@@ -1,10 +1,11 @@
 # kOBEXSessionParameterTagDeviceAddress
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,13 +13,18 @@
 var kOBEXSessionParameterTagDeviceAddress: OBEXSessionParameterTags { get }
 ```
 
+```c
+kOBEXSessionParameterTagDeviceAddress
+```
+
 ## See Also
 
-- [var kOBEXSessionParameterTagNextSequenceNumber: OBEXSessionParameterTags](kobexsessionparametertagnextsequencenumber.md)
-- [var kOBEXSessionParameterTagNonce: OBEXSessionParameterTags](kobexsessionparametertagnonce.md)
-- [var kOBEXSessionParameterTagSessionID: OBEXSessionParameterTags](kobexsessionparametertagsessionid.md)
-- [var kOBEXSessionParameterTagSessionOpcode: OBEXSessionParameterTags](kobexsessionparametertagsessionopcode.md)
-- [var kOBEXSessionParameterTagTimeout: OBEXSessionParameterTags](kobexsessionparametertagtimeout.md)
+### Constants
+- [var kOBEXSessionParameterTagNextSequenceNumber: OBEXSessionParameterTags](./kobexsessionparametertagnextsequencenumber.md)
+- [var kOBEXSessionParameterTagNonce: OBEXSessionParameterTags](./kobexsessionparametertagnonce.md)
+- [var kOBEXSessionParameterTagSessionID: OBEXSessionParameterTags](./kobexsessionparametertagsessionid.md)
+- [var kOBEXSessionParameterTagSessionOpcode: OBEXSessionParameterTags](./kobexsessionparametertagsessionopcode.md)
+- [var kOBEXSessionParameterTagTimeout: OBEXSessionParameterTags](./kobexsessionparametertagtimeout.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # XWingMLKEM768X25519.PrivateKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -21,26 +22,27 @@ struct PrivateKey
 ## Topics
 
 ### Creating a private key
-- [init<D>(integrityCheckedRepresentation: D) throws](xwingmlkem768x25519/privatekey/init(integritycheckedrepresentation:).md)
-- [init<D>(seedRepresentation: D, publicKey: XWingMLKEM768X25519.PublicKey?) throws](xwingmlkem768x25519/privatekey/init(seedrepresentation:publickey:).md)
+- [init<D>(integrityCheckedRepresentation: D) throws](./privatekey/init%28integritycheckedrepresentation%29.md)
+- [init<D>(seedRepresentation: D, publicKey: XWingMLKEM768X25519.PublicKey?) throws](./privatekey/init%28seedrepresentation,publickey%29.md)
 ### Inspecting a private key’s properties
-- [var integrityCheckedRepresentation: Data](xwingmlkem768x25519/privatekey/integritycheckedrepresentation.md)
-- [var seedRepresentation: Data](xwingmlkem768x25519/privatekey/seedrepresentation.md)
+- [var integrityCheckedRepresentation: Data](./privatekey/integritycheckedrepresentation.md)
+- [var seedRepresentation: Data](./privatekey/seedrepresentation.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [HPKEKEMPrivateKey](hpkekemprivatekey.md)
-- [HPKEKEMPrivateKeyGeneration](hpkekemprivatekeygeneration.md)
-- [KEMPrivateKey](kemprivatekey.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [HPKEKEMPrivateKey](../hpkekemprivatekey.md)
+- [HPKEKEMPrivateKeyGeneration](../hpkekemprivatekeygeneration.md)
+- [KEMPrivateKey](../kemprivatekey.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [XWingMLKEM768X25519.PublicKey](xwingmlkem768x25519/publickey.md)
+### Keys
+- [XWingMLKEM768X25519.PublicKey](./publickey.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # palette
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A picker style that presents the options as a row of compact elements.
 
@@ -19,13 +20,15 @@ A picker style that presents the options as a row of compact elements.
 static var palette: PalettePickerStyle { get }
 ```
 
+Available when `Self` is `PalettePickerStyle`.
+
 ## Mentions
 
-- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
+- [Populating SwiftUI menus with adaptive controls](../populating-swiftui-menus-with-adaptive-controls.md)
 
 #### Discussion
 
-> **Note**: When used outside of menus, this style is rendered as a segmented picker. If that is the intended usage, consider [`segmented`](pickerstyle/segmented.md) instead.
+> **Note**: When used outside of menus, this style is rendered as a segmented picker. If that is the intended usage, consider [`segmented`](./segmented.md) instead.
 
 For each option’s label, use one symbol per item, if you add more than 6 options, the picker scrolls horizontally on iOS.
 
@@ -57,7 +60,7 @@ var body: some View {
 }
 ```
 
-Palette pickers will display the selection of untinted SF Symbols or template images by applying the system tint. For tinted SF Symbols, a stroke is outlined around the symbol upon selection. If you would like to supply a particular image (or SF Symbol) to signify selection, we suggest using [`custom`](paletteselectioneffect/custom.md). This deactivates any system selection behavior, allowing the provided image to solely indicate selection instead.
+Palette pickers will display the selection of untinted SF Symbols or template images by applying the system tint. For tinted SF Symbols, a stroke is outlined around the symbol upon selection. If you would like to supply a particular image (or SF Symbol) to signify selection, we suggest using [`custom`](../paletteselectioneffect/custom.md). This deactivates any system selection behavior, allowing the provided image to solely indicate selection instead.
 
 The following example creates a palette picker that disables the system selection behaviour:
 
@@ -78,7 +81,7 @@ Menu {
 }
 ```
 
-If a specific SF Symbol variant is preferable instead, use [`symbolVariant(_:)`](paletteselectioneffect/symbolvariant(_:).md):
+If a specific SF Symbol variant is preferable instead, use [`symbolVariant(_:)`](../paletteselectioneffect/symbolvariant%28_%29.md):
 
 ```swift
 Menu {
@@ -96,25 +99,26 @@ Menu {
 }
 ```
 
-To apply this style to a picker, or to a view that contains pickers, use the [`pickerStyle(_:)`](view/pickerstyle(_:).md) modifier.
+To apply this style to a picker, or to a view that contains pickers, use the [`pickerStyle(_:)`](../view/pickerstyle%28_%29.md) modifier.
 
 ## See Also
 
-- [static var automatic: DefaultPickerStyle](pickerstyle/automatic.md)
+### Getting built-in picker styles
+- [static var automatic: DefaultPickerStyle](./automatic.md)
   The default picker style, based on the picker’s context.
-- [static var inline: InlinePickerStyle](pickerstyle/inline.md)
+- [static var inline: InlinePickerStyle](./inline.md)
   A `PickerStyle` where each option is displayed inline with other views in the current container.
-- [static var menu: MenuPickerStyle](pickerstyle/menu.md)
+- [static var menu: MenuPickerStyle](./menu.md)
   A picker style that presents the options as a menu when the user presses a button, or as a submenu when nested within a larger menu.
-- [static var navigationLink: NavigationLinkPickerStyle](pickerstyle/navigationlink.md)
+- [static var navigationLink: NavigationLinkPickerStyle](./navigationlink.md)
   A picker style represented by a navigation link that presents the options by pushing a List-style picker view.
-- [static var radioGroup: RadioGroupPickerStyle](pickerstyle/radiogroup.md)
+- [static var radioGroup: RadioGroupPickerStyle](./radiogroup.md)
   A picker style that presents the options as a group of radio buttons.
-- [static var segmented: SegmentedPickerStyle](pickerstyle/segmented.md)
+- [static var segmented: SegmentedPickerStyle](./segmented.md)
   A picker style that presents the options in a segmented control.
-- [static var tabs: TabsPickerStyle](pickerstyle/tabs.md)
+- [static var tabs: TabsPickerStyle](./tabs.md)
   A picker style that presents options as segmented tabs.
-- [static var wheel: WheelPickerStyle](pickerstyle/wheel.md)
+- [static var wheel: WheelPickerStyle](./wheel.md)
   A picker style that presents the options in a scrollable wheel that shows the selected option and a few neighboring options.
 
 

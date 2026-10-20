@@ -1,7 +1,8 @@
 # MTRError.Code.accessDenied
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Access to some resource was denied.
 
@@ -18,6 +19,10 @@ Access to some resource was denied.
 
 ```swift
 case accessDenied
+```
+
+```c
+MTRErrorCodeAccessDenied
 ```
 
 

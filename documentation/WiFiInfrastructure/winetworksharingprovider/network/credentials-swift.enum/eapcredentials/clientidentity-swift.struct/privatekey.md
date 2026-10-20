@@ -1,7 +1,8 @@
 # privateKey
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The private key of the client.
 

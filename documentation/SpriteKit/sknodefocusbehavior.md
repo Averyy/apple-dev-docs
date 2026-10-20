@@ -1,7 +1,8 @@
 # SKNodeFocusBehavior
 
 **Framework**: SpriteKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options for the focusable states of a SpriteKit node.
 
@@ -19,59 +20,64 @@ Options for the focusable states of a SpriteKit node.
 enum SKNodeFocusBehavior
 ```
 
+```c
+enum SKNodeFocusBehavior : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [SKNodeFocusBehavior.none](sknodefocusbehavior/none.md)
+- [SKNodeFocusBehavior.none](./sknodefocusbehavior/none.md)
   Node is not focusable.
-- [SKNodeFocusBehavior.occluding](sknodefocusbehavior/occluding.md)
+- [SKNodeFocusBehavior.occluding](./sknodefocusbehavior/occluding.md)
   Node is not focusable and prevents nodes that it visually obscures from becoming focusable.
-- [SKNodeFocusBehavior.focusable](sknodefocusbehavior/focusable.md)
+- [SKNodeFocusBehavior.focusable](./sknodefocusbehavior/focusable.md)
   Node is focusable and prevents nodes that it visually obscures from becoming focusable.
 ### Initializers
-- [init?(rawValue: Int)](sknodefocusbehavior/init(rawvalue:).md)
+- [init?(rawValue: Int)](./sknodefocusbehavior/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum SKActionTimingMode](skactiontimingmode.md)
+### Enumerations
+- [enum SKActionTimingMode](./skactiontimingmode.md)
   The modes that an action can use to adjust the apparent timing of the action.
-- [enum SKAttributeType](skattributetype.md)
+- [enum SKAttributeType](./skattributetype.md)
   Options that specify an attribute’s data type.
-- [enum SKBlendMode](skblendmode.md)
+- [enum SKBlendMode](./skblendmode.md)
   The modes that describe how the source and destination pixel colors are used to calculate the new destination color.
-- [enum SKInterpolationMode](skinterpolationmode.md)
+- [enum SKInterpolationMode](./skinterpolationmode.md)
   The modes used to interpolate between keyframes in the sequence.
-- [enum SKLabelHorizontalAlignmentMode](sklabelhorizontalalignmentmode.md)
+- [enum SKLabelHorizontalAlignmentMode](./sklabelhorizontalalignmentmode.md)
   Options for aligning text horizontally.
-- [enum SKLabelVerticalAlignmentMode](sklabelverticalalignmentmode.md)
+- [enum SKLabelVerticalAlignmentMode](./sklabelverticalalignmentmode.md)
   Options for aligning text vertically.
-- [enum SKParticleRenderOrder](skparticlerenderorder.md)
+- [enum SKParticleRenderOrder](./skparticlerenderorder.md)
   The order to use when the emitter’s particles are rendered.
-- [enum SKRepeatMode](skrepeatmode.md)
+- [enum SKRepeatMode](./skrepeatmode.md)
   The modes used to determine how the sequence repeats.
-- [enum SKSceneScaleMode](skscenescalemode.md)
+- [enum SKSceneScaleMode](./skscenescalemode.md)
   The modes that determine how the scene’s area is mapped to the view that presents it.
-- [enum SKTextureFilteringMode](sktexturefilteringmode.md)
+- [enum SKTextureFilteringMode](./sktexturefilteringmode.md)
   Texture filtering modes to use when the texture is drawn in a size other than its native size.
-- [struct SKTileAdjacencyMask](sktileadjacencymask.md)
+- [struct SKTileAdjacencyMask](./sktileadjacencymask.md)
   An enumeration defining how neighboring tiles are automatically placed next to each other.
-- [enum SKTileDefinitionRotation](sktiledefinitionrotation.md)
+- [enum SKTileDefinitionRotation](./sktiledefinitionrotation.md)
   The allowed rotations for a given tile.
-- [enum SKTileSetType](sktilesettype.md)
+- [enum SKTileSetType](./sktilesettype.md)
   An enumeration defining how tiles are arranged.
-- [enum SKTransitionDirection](sktransitiondirection.md)
+- [enum SKTransitionDirection](./sktransitiondirection.md)
   For some transitions, the direction in which the transition is performed.
-- [enum SKUniformType](skuniformtype.md)
+- [enum SKUniformType](./skuniformtype.md)
   An enumerated type to identify the type of a uniform object.
 
 

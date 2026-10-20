@@ -1,7 +1,8 @@
 # errSSLPeerInsufficientSecurity
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 There is insufficient security for this operation.
 
@@ -18,6 +19,10 @@ There is insufficient security for this operation.
 
 ```swift
 var errSSLPeerInsufficientSecurity: OSStatus { get }
+```
+
+```c
+errSSLPeerInsufficientSecurity
 ```
 
 

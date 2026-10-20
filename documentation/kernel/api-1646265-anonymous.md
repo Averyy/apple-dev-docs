@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,7 +18,7 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kMachineTypeUnknown](1646265-anonymous/kmachinetypeunknown.md)
+- [kMachineTypeUnknown](./api-1646265-anonymous/kmachinetypeunknown.md)
 
 
 ---

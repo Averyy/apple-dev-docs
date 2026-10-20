@@ -1,7 +1,8 @@
 # clearCustomDataByKey(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the authored custom data value at the given key path.
 

@@ -1,7 +1,8 @@
 # effectsViewInserter
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional closure the system calls during dictation.
 
@@ -14,9 +15,13 @@ An optional closure the system calls during dictation.
 var effectsViewInserter: ((NSView) -> Void)? { get set }
 ```
 
+```objc
+@property (copy, nullable) void (^effectsViewInserter)(NSView *view);
+```
+
 ## Mentions
 
-- [Adopting the system text cursor in custom text views](adopting-the-system-text-cursor-in-custom-text-views.md)
+- [Adopting the system text cursor in custom text views](../adopting-the-system-text-cursor-in-custom-text-views.md)
 
 #### Discussion
 
@@ -26,7 +31,8 @@ During dictation the indicator displays a glow effect above the text view and be
 
 ## See Also
 
-- [var color: NSColor!](nstextinsertionindicator/color.md)
+### Configuring indicators
+- [var color: NSColor!](./color.md)
   The color of this indicator.
 
 

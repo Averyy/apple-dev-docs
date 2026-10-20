@@ -1,7 +1,8 @@
 # subsampleFactor
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The factor by which to scale down a returned images.
 
@@ -17,6 +18,10 @@ The factor by which to scale down a returned images.
 
 ```swift
 static let subsampleFactor: CIImageOption
+```
+
+```c
+extern CIImageOption const kCIImageSubsampleFactor;
 ```
 
 #### Discussion

@@ -1,12 +1,13 @@
 # objectValueOfSelectedItem
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object corresponding to the last item selected from the pop-up list.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,26 @@ The object corresponding to the last item selected from the pop-up list.
 var objectValueOfSelectedItem: Any? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) id objectValueOfSelectedItem;
+```
+
 #### Discussion
 
 The value of this property is the object from the combo box’s internal item list corresponding to the last item selected from the pop-up list, or `nil` if no item is selected.
 
-Note that nothing is initially selected in a newly initialized combo box cell. Accessing this property logs a warning if [`usesDataSource`](nscomboboxcell/usesdatasource.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+Note that nothing is initially selected in a newly initialized combo box cell. Accessing this property logs a warning if [`usesDataSource`](./usesdatasource.md) is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [func deselectItem(at: Int)](nscomboboxcell/deselectitem(at:).md)
+### Manipulating the Selection
+- [func deselectItem(at: Int)](./deselectitem%28at%29.md)
   Deselects the pop-up list item at the given index if it’s selected.
-- [var indexOfSelectedItem: Int](nscomboboxcell/indexofselecteditem.md)
+- [var indexOfSelectedItem: Int](./indexofselecteditem.md)
   The index of the last item selected from the pop-up list.
-- [func selectItem(at: Int)](nscomboboxcell/selectitem(at:).md)
+- [func selectItem(at: Int)](./selectitem%28at%29.md)
   Selects the pop-up list row at the given index.
-- [func selectItem(withObjectValue: Any?)](nscomboboxcell/selectitem(withobjectvalue:).md)
+- [func selectItem(withObjectValue: Any?)](./selectitem%28withobjectvalue%29.md)
   Selects the first pop-up list item that corresponds to the specified object.
 
 

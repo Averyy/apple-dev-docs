@@ -1,7 +1,8 @@
 # removeAll(keepingCapacity:)
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Remove the contents of the path, keeping the null terminator.
 

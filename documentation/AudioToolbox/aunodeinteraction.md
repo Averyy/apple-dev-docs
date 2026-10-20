@@ -1,22 +1,27 @@
 # AUNodeInteraction
 
 **Framework**: Audio Toolbox  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Describes the interaction between two node objects.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 struct AUNodeInteraction
+```
+
+```c
+struct AUNodeInteraction;
 ```
 
 #### Overview
@@ -32,28 +37,29 @@ Arrays of these structs can be returned, the addition of new members to the node
 ## Topics
 
 ### Initializers
-- [init()](aunodeinteraction/init.md)
-- [init(nodeInteractionType: UInt32, nodeInteraction: AUNodeInteraction.__Unnamed_union_nodeInteraction)](aunodeinteraction/init(nodeinteractiontype:nodeinteraction:).md)
+- [init()](./aunodeinteraction/init%28%29.md)
+- [init(nodeInteractionType: UInt32, nodeInteraction: AUNodeInteraction.__Unnamed_union_nodeInteraction)](./aunodeinteraction/init%28nodeinteractiontype,nodeinteraction%29.md)
 ### Instance Properties
-- [var nodeInteraction: AUNodeInteraction.__Unnamed_union_nodeInteraction](aunodeinteraction/nodeinteraction.md)
+- [var nodeInteraction: AUNodeInteraction.__Unnamed_union_nodeInteraction](./aunodeinteraction/nodeinteraction.md)
   A union providing information about a node interaction.
-- [var nodeInteractionType: UInt32](aunodeinteraction/nodeinteractiontype.md)
+- [var nodeInteractionType: UInt32](./aunodeinteraction/nodeinteractiontype.md)
   The interaction type.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct AudioUnitNodeConnection](audiounitnodeconnection.md)
+### Data Types
+- [struct AudioUnitNodeConnection](./audiounitnodeconnection.md)
   A connection between two node objects in an audio processing graph.
-- [typealias AUGraph](augraph.md)
+- [typealias AUGraph](./augraph.md)
   An opaque type representing an audio processing graph.
-- [typealias AUNode](aunode.md)
+- [typealias AUNode](./aunode.md)
   A member of an audio processing graph, associated with an audio unit.
-- [struct AUNodeRenderCallback](aunoderendercallback.md)
+- [struct AUNodeRenderCallback](./aunoderendercallback.md)
   A callback used to provide input to an audio unit.
 
 

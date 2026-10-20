@@ -1,7 +1,8 @@
 # init(_:children:selection:rowContent:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a hierarchical list that computes its rows on demand from a binding to an underlying collection of identifiable data and allowing users to have exactly one row always selected.
 
@@ -15,6 +16,35 @@ nonisolated
 init<Data, RowContent>(_ data: Binding<Data>, children: WritableKeyPath<Data.Element, Data?>, selection: Binding<SelectionValue>, @ContentBuilder rowContent: @escaping (Binding<Data.Element>) -> RowContent) where Content == OutlineGroup<Binding<Data>, Data.Element.ID, RowContent, RowContent, DisclosureGroup<RowContent, OutlineSubgroupChildren>>, Data : MutableCollection, Data : RandomAccessCollection, RowContent : View, Data.Element : Identifiable
 ```
 
+Available when `SelectionValue` conforms to `Hashable` and `Content` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init<Data, RowContent>(_ data: Binding<Data>, children: WritableKeyPath<Data.Element, Data?>, selection: Binding<SelectionValue?>?, @ContentBuilder rowContent: @escaping (Binding<Data.Element>) -> RowContent) where Content == OutlineGroup<Binding<Data>, Data.Element.ID, RowContent, RowContent, DisclosureGroup<RowContent, OutlineSubgroupChildren>>, Data : MutableCollection, Data : RandomAccessCollection, RowContent : View, Data.Element : Identifiable
+```
+
+```swift
+nonisolated
+init<Data, RowContent>(_ data: Binding<Data>, children: WritableKeyPath<Data.Element, Data?>, selection: Binding<Set<SelectionValue>>?, @ContentBuilder rowContent: @escaping (Binding<Data.Element>) -> RowContent) where Content == OutlineGroup<Binding<Data>, Data.Element.ID, RowContent, RowContent, DisclosureGroup<RowContent, OutlineSubgroupChildren>>, Data : MutableCollection, Data : RandomAccessCollection, RowContent : View, Data.Element : Identifiable
+```
+
+```swift
+nonisolated
+init<Data, RowContent>(_ data: Data, children: KeyPath<Data.Element, Data?>, selection: Binding<SelectionValue>, @ContentBuilder rowContent: @escaping (Data.Element) -> RowContent) where Content == OutlineGroup<Data, Data.Element.ID, RowContent, RowContent, DisclosureGroup<RowContent, OutlineSubgroupChildren>>, Data : RandomAccessCollection, RowContent : View, Data.Element : Identifiable
+```
+
+```swift
+nonisolated
+init<Data, RowContent>(_ data: Data, children: KeyPath<Data.Element, Data?>, selection: Binding<SelectionValue?>?, @ContentBuilder rowContent: @escaping (Data.Element) -> RowContent) where Content == OutlineGroup<Data, Data.Element.ID, RowContent, RowContent, DisclosureGroup<RowContent, OutlineSubgroupChildren>>, Data : RandomAccessCollection, RowContent : View, Data.Element : Identifiable
+```
+
+```swift
+nonisolated
+init<Data, RowContent>(_ data: Data, children: KeyPath<Data.Element, Data?>, selection: Binding<Set<SelectionValue>>?, @ContentBuilder rowContent: @escaping (Data.Element) -> RowContent) where Content == OutlineGroup<Data, Data.Element.ID, RowContent, RowContent, DisclosureGroup<RowContent, OutlineSubgroupChildren>>, Data : RandomAccessCollection, RowContent : View, Data.Element : Identifiable
+```
+
 ## Parameters
 
 - `data`: The identifiable data for computing the list.
@@ -24,11 +54,12 @@ init<Data, RowContent>(_ data: Binding<Data>, children: WritableKeyPath<Data.Ele
 
 ## See Also
 
-- [init(_:children:rowContent:)](list/init(_:children:rowcontent:).md)
+### Creating a list from hierarchical data
+- [init(_:children:rowContent:)](./init%28_,children,rowcontent%29.md)
   Creates a hierarchical list that computes its rows on demand from a binding to an underlying collection of identifiable data.
-- [init(_:id:children:rowContent:)](list/init(_:id:children:rowcontent:).md)
+- [init(_:id:children:rowContent:)](./init%28_,id,children,rowcontent%29.md)
   Creates a hierarchical list that identifies its rows based on a key path to the identifier of the underlying data.
-- [init(_:id:children:selection:rowContent:)](list/init(_:id:children:selection:rowcontent:).md)
+- [init(_:id:children:selection:rowContent:)](./init%28_,id,children,selection,rowcontent%29.md)
   Creates a hierarchical list that identifies its rows based on a key path to the identifier of the underlying data and allowing users to have exactly one row always selected.
 
 

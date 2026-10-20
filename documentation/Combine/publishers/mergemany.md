@@ -1,7 +1,8 @@
 # Publishers.MergeMany
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher created by applying the merge function to an arbitrary number of upstream publishers.
 
@@ -23,60 +24,61 @@ struct MergeMany<Upstream> where Upstream : Publisher
 ## Topics
 
 ### Creating a merge many publisher
-- [init(Upstream...)](publishers/mergemany/init(_:)-1hsqd.md)
+- [init(Upstream...)](./mergemany/init%28_%29-1hsqd.md)
   Creates a publisher created by applying the merge function to an arbitrary number of upstream publishers.
-- [init<S>(S)](publishers/mergemany/init(_:)-3hrmo.md)
+- [init<S>(S)](./mergemany/init%28_%29-3hrmo.md)
   Creates a publisher created by applying the merge function to a sequence of upstream publishers.
 ### Merging elements
-- [func merge(with: Upstream) -> Publishers.MergeMany<Upstream>](publishers/mergemany/merge(with:).md)
+- [func merge(with: Upstream) -> Publishers.MergeMany<Upstream>](./mergemany/merge%28with%29.md)
   Combines elements from this publisher with those from another publisher of the same type, delivering an interleaved sequence of elements.
 ### Declaring supporting types
-- [Publishers.MergeMany.Output](publishers/mergemany/output.md)
+- [Publishers.MergeMany.Output](./mergemany/output.md)
   The kind of values published by this publisher.
-- [Publishers.MergeMany.Failure](publishers/mergemany/failure.md)
+- [Publishers.MergeMany.Failure](./mergemany/failure.md)
   The kind of errors this publisher might publish.
 ### Inspecting publisher properties
-- [let publishers: [Upstream]](publishers/mergemany/publishers.md)
+- [let publishers: [Upstream]](./mergemany/publishers.md)
   The array of upstream publishers that this publisher merges together.
 ### Comparing publishers
-- [static func == (Publishers.MergeMany<Upstream>, Publishers.MergeMany<Upstream>) -> Bool](publishers/mergemany/==(_:_:).md)
+- [static func == (Publishers.MergeMany<Upstream>, Publishers.MergeMany<Upstream>) -> Bool](./mergemany/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
 ### Default Implementations
-- [Equatable Implementations](publishers/mergemany/equatable-implementations.md)
+- [Equatable Implementations](./mergemany/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Publisher](publisher.md)
+- [Equatable](../../Swift/equatable.md)
+- [Publisher](../publisher.md)
 
 ## See Also
 
-- [Publishers.CombineLatest](publishers/combinelatest.md)
+### Combining elements from multiple publishers
+- [Publishers.CombineLatest](./combinelatest.md)
   A publisher that receives and combines the latest elements from two publishers.
-- [Publishers.CombineLatest3](publishers/combinelatest3.md)
+- [Publishers.CombineLatest3](./combinelatest3.md)
   A publisher that receives and combines the latest elements from three publishers.
-- [Publishers.CombineLatest4](publishers/combinelatest4.md)
+- [Publishers.CombineLatest4](./combinelatest4.md)
   A publisher that receives and combines the latest elements from four publishers.
-- [Publishers.Merge](publishers/merge.md)
+- [Publishers.Merge](./merge.md)
   A publisher created by applying the merge function to two upstream publishers.
-- [Publishers.Merge3](publishers/merge3.md)
+- [Publishers.Merge3](./merge3.md)
   A publisher created by applying the merge function to three upstream publishers.
-- [Publishers.Merge4](publishers/merge4.md)
+- [Publishers.Merge4](./merge4.md)
   A publisher created by applying the merge function to four upstream publishers.
-- [Publishers.Merge5](publishers/merge5.md)
+- [Publishers.Merge5](./merge5.md)
   A publisher created by applying the merge function to five upstream publishers.
-- [Publishers.Merge6](publishers/merge6.md)
+- [Publishers.Merge6](./merge6.md)
   A publisher created by applying the merge function to six upstream publishers.
-- [Publishers.Merge7](publishers/merge7.md)
+- [Publishers.Merge7](./merge7.md)
   A publisher created by applying the merge function to seven upstream publishers.
-- [Publishers.Merge8](publishers/merge8.md)
+- [Publishers.Merge8](./merge8.md)
   A publisher created by applying the merge function to eight upstream publishers.
-- [Publishers.Zip](publishers/zip.md)
+- [Publishers.Zip](./zip.md)
   A publisher created by applying the zip function to two upstream publishers.
-- [Publishers.Zip3](publishers/zip3.md)
+- [Publishers.Zip3](./zip3.md)
   A publisher created by applying the zip function to three upstream publishers.
-- [Publishers.Zip4](publishers/zip4.md)
+- [Publishers.Zip4](./zip4.md)
   A publisher created by applying the zip function to four upstream publishers.
 
 

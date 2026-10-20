@@ -1,7 +1,8 @@
 # NSValidationErrorMaximum
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The end of the range of error codes reserved for validation errors.
 
@@ -22,7 +23,8 @@ var NSValidationErrorMaximum: Int { get }
 
 ## See Also
 
-- [var NSValidationErrorMinimum: Int](nsvalidationerrorminimum-swift.var.md)
+### Validation Errors
+- [var NSValidationErrorMinimum: Int](./nsvalidationerrorminimum-swift.var.md)
   The start of the range of error codes reserved for validation errors.
 
 

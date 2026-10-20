@@ -1,7 +1,8 @@
 # replacing(atIndices:with:alongAxis:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces slices along the specified indices with the given replacement values.
 
@@ -50,9 +51,10 @@ let y = x.replacing(with: 99, atIndices: i, alongAxis: 1)
 
 ## See Also
 
-- [func replacing(with: MLTensor, atIndices: MLTensor, alongAxis: Int) -> MLTensor](mltensor/replacing(with:atindices:alongaxis:).md)
+### Replacing the tensor values
+- [func replacing(with: MLTensor, atIndices: MLTensor, alongAxis: Int) -> MLTensor](./replacing%28with,atindices,alongaxis%29.md)
   Replaces slices along the specified indices with the given replacement values.
-- [func replacing(with:where:)](mltensor/replacing(with:where:).md)
+- [func replacing(with:where:)](./replacing%28with,where%29.md)
   Returns a new tensor replacing values from `other` with the corresponding element in `self` where the associated element in `mask` is `true`.
 
 

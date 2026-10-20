@@ -1,7 +1,8 @@
 # needsDisplay()
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean indicating whether the layer has been marked as needing an update.
 
@@ -19,21 +20,26 @@ Returns a Boolean indicating whether the layer has been marked as needing an upd
 func needsDisplay() -> Bool
 ```
 
+```objc
+- (BOOL) needsDisplay;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the layer needs to be updated.
+[`true`](../../Swift/true.md) if the layer needs to be updated.
 
 ## See Also
 
-- [func setNeedsDisplay()](calayer/setneedsdisplay.md)
+### Updating layer display
+- [func setNeedsDisplay()](./setneedsdisplay%28%29.md)
   Marks the layer’s contents as needing to be updated.
-- [func setNeedsDisplay(CGRect)](calayer/setneedsdisplay(_:).md)
+- [func setNeedsDisplay(CGRect)](./setneedsdisplay%28_%29.md)
   Marks the region within the specified rectangle as needing to be updated.
-- [var needsDisplayOnBoundsChange: Bool](calayer/needsdisplayonboundschange.md)
+- [var needsDisplayOnBoundsChange: Bool](./needsdisplayonboundschange.md)
   A Boolean indicating whether the layer contents must be updated when its bounds rectangle changes.
-- [func displayIfNeeded()](calayer/displayifneeded.md)
+- [func displayIfNeeded()](./displayifneeded%28%29.md)
   Initiates the update process for a layer if it is currently marked as needing an update.
-- [class func needsDisplay(forKey: String) -> Bool](calayer/needsdisplay(forkey:).md)
+- [class func needsDisplay(forKey: String) -> Bool](./needsdisplay%28forkey%29.md)
   Returns a Boolean indicating whether changes to the specified key require the layer to be redisplayed.
 
 

@@ -1,7 +1,8 @@
 # supportedRawPhotoCodecTypes(forRawPhotoPixelFormatType:fileType:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -13,6 +14,10 @@
 
 ```swift
 func supportedRawPhotoCodecTypes(forRawPhotoPixelFormatType pixelFormatType: OSType, fileType: AVFileType) -> [AVVideoCodecType]
+```
+
+```objc
+- (NSArray<NSString *> *) supportedRawPhotoCodecTypesForRawPhotoPixelFormatType:(OSType) pixelFormatType fileType:(AVFileType) fileType;
 ```
 
 

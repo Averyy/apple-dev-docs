@@ -2,6 +2,7 @@
 
 **Framework**: MusicKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Fetches and returns a developer token for Apple Music API.
@@ -23,7 +24,7 @@ func developerToken(options: MusicTokenRequestOptions) async throws -> String
 
 #### Discussion
 
-If you opt to create a custom implementation of the [`MusicDeveloperTokenProvider`](musicdevelopertokenprovider.md) protocol, make sure to discard any cached developer token if the `options` parameter contains [`ignoreCache`](musictokenrequestoptions/ignorecache.md).
+If you opt to create a custom implementation of the [`MusicDeveloperTokenProvider`](../musicdevelopertokenprovider.md) protocol, make sure to discard any cached developer token if the `options` parameter contains [`ignoreCache`](../musictokenrequestoptions/ignorecache.md).
 
 You can add the newly generated token to an in-memory or persistent cache for faster access upon subsequent requests for this token.
 

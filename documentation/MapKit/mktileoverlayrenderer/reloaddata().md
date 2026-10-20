@@ -1,7 +1,8 @@
 # reloadData()
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Forces the tile overlay renderer to reload and redisplay the tiles.
 
@@ -17,6 +18,10 @@ Forces the tile overlay renderer to reload and redisplay the tiles.
 
 ```swift
 func reloadData()
+```
+
+```objc
+- (void) reloadData;
 ```
 
 #### Discussion

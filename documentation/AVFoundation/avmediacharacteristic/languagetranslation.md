@@ -1,7 +1,8 @@
 # languageTranslation
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A media characteristic that indicates that a track or media selection option contains a language or dialect translation of the original content.
 
@@ -20,17 +21,22 @@ A media characteristic that indicates that a track or media selection option con
 static let languageTranslation: AVMediaCharacteristic
 ```
 
+```c
+extern AVMediaCharacteristic const AVMediaCharacteristicLanguageTranslation;
+```
+
 ## See Also
 
-- [static let legible: AVMediaCharacteristic](avmediacharacteristic/legible.md)
+### Legible
+- [static let legible: AVMediaCharacteristic](./legible.md)
   A media characteristic that indicates that a track or media selection option includes legible content.
-- [static let easyToRead: AVMediaCharacteristic](avmediacharacteristic/easytoread.md)
+- [static let easyToRead: AVMediaCharacteristic](./easytoread.md)
   A media characteristic that indicates a track or media selection option provides legible content that’s edited for easy reading.
-- [static let describesVideoForAccessibility: AVMediaCharacteristic](avmediacharacteristic/describesvideoforaccessibility.md)
+- [static let describesVideoForAccessibility: AVMediaCharacteristic](./describesvideoforaccessibility.md)
   A media characteristic that indicates the media includes audible content that describes the visual portion of the presentation.
-- [static let containsOnlyForcedSubtitles: AVMediaCharacteristic](avmediacharacteristic/containsonlyforcedsubtitles.md)
+- [static let containsOnlyForcedSubtitles: AVMediaCharacteristic](./containsonlyforcedsubtitles.md)
   A media characteristic that indicates that a track or media selection option presents only forced subtitles.
-- [static let transcribesSpokenDialogForAccessibility: AVMediaCharacteristic](avmediacharacteristic/transcribesspokendialogforaccessibility.md)
+- [static let transcribesSpokenDialogForAccessibility: AVMediaCharacteristic](./transcribesspokendialogforaccessibility.md)
   A media characteristic that indicates that a media selection option includes legible content that transcribes spoken dialog.
 
 

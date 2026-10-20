@@ -1,7 +1,8 @@
 # GCDevicePhysicalInputElementChange.noChange
 
 **Framework**: Game Controller  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 There’s no change to the input value.
 
@@ -19,11 +20,16 @@ There’s no change to the input value.
 case noChange
 ```
 
+```c
+GCDevicePhysicalInputElementNoChange
+```
+
 ## See Also
 
-- [GCDevicePhysicalInputElementChange.unknownChange](gcdevicephysicalinputelementchange/unknownchange.md)
+### States
+- [GCDevicePhysicalInputElementChange.unknownChange](./unknownchange.md)
   It’s unknown whether there’s a change to the input value.
-- [GCDevicePhysicalInputElementChange.changed](gcdevicephysicalinputelementchange/changed.md)
+- [GCDevicePhysicalInputElementChange.changed](./changed.md)
   There’s a change to the input value.
 
 

@@ -1,6 +1,7 @@
 # attributedString
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Article
 
 The text storage object from which the `NSGlyphGenerator` object procures characters for glyph generation.
 
@@ -22,11 +23,12 @@ This property is part of the `NSGlyphStorage` protocol, for use by the glyph gen
 
 ## See Also
 
-- [var hyphenationFactor: CGFloat](nslayoutmanager/hyphenationfactor.md)
+### Deprecated properties
+- [var hyphenationFactor: CGFloat](./nslayoutmanager/hyphenationfactor.md)
   The threshold controlling when hyphenation is done.
-- [layoutOptions](nslayoutmanager-layoutoptions.md)
+- [layoutOptions](./nslayoutmanager-layoutoptions.md)
   The layout manager’s current layout options.
-- [var usesScreenFonts: Bool](../appkit/nslayoutmanager/usesscreenfonts.md)
+- [var usesScreenFonts: Bool](../AppKit/nslayoutmanager/usesscreenfonts.md)
   A Boolean that controls using screen fonts to calculate layout and display text.
 
 

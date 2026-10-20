@@ -1,7 +1,8 @@
 # attributedPlaceholder
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The styled string that displays when there is no other text in the text field.
 
@@ -9,7 +10,7 @@ The styled string that displays when there is no other text in the text field.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,29 +20,34 @@ The styled string that displays when there is no other text in the text field.
 var attributedPlaceholder: NSAttributedString? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSAttributedString * attributedPlaceholder;
+```
+
 #### Discussion
 
-This property is `nil` by default. If set, the placeholder string is drawn using system-defined color and the remaining style information (except the text color) of the attributed string. Assigning a new value to this property also replaces the value of the [`placeholder`](uitextfield/placeholder.md) property with the same string data, albeit without any formatting information. Assigning a new value to this property does not affect any other style-related properties of the text field.
+This property is `nil` by default. If set, the placeholder string is drawn using system-defined color and the remaining style information (except the text color) of the attributed string. Assigning a new value to this property also replaces the value of the [`placeholder`](./placeholder.md) property with the same string data, albeit without any formatting information. Assigning a new value to this property does not affect any other style-related properties of the text field.
 
 ## See Also
 
-- [var text: String?](uitextfield/text.md)
+### Configuring the text attributes
+- [var text: String?](./text.md)
   The text that the text field displays.
-- [var attributedText: NSAttributedString?](uitextfield/attributedtext.md)
+- [var attributedText: NSAttributedString?](./attributedtext.md)
   The styled text that the text field displays.
-- [var placeholder: String?](uitextfield/placeholder.md)
+- [var placeholder: String?](./placeholder.md)
   The string that displays when there is no other text in the text field.
-- [var defaultTextAttributes: [NSAttributedString.Key : Any]](uitextfield/defaulttextattributes.md)
+- [var defaultTextAttributes: [NSAttributedString.Key : Any]](./defaulttextattributes.md)
   The default attributes to apply to the text.
-- [var font: UIFont?](uitextfield/font.md)
+- [var font: UIFont?](./font.md)
   The font of the text.
-- [var textColor: UIColor?](uitextfield/textcolor.md)
+- [var textColor: UIColor?](./textcolor.md)
   The color of the text.
-- [var textAlignment: NSTextAlignment](uitextfield/textalignment.md)
+- [var textAlignment: NSTextAlignment](./textalignment.md)
   The technique for aligning the text.
-- [var typingAttributes: [NSAttributedString.Key : Any]?](uitextfield/typingattributes.md)
+- [var typingAttributes: [NSAttributedString.Key : Any]?](./typingattributes.md)
   The attributes to apply to new text that the user enters.
-- [UITextField.BorderStyle](uitextfield/borderstyle-swift.enum.md)
+- [UITextField.BorderStyle](./borderstyle-swift.enum.md)
   The type of border around the text field.
 
 

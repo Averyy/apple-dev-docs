@@ -1,7 +1,8 @@
 # writingToolsBehavior
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current Writing Tools behavior for text and text input.
 

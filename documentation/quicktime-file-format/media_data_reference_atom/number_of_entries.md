@@ -1,21 +1,23 @@
 # Number of entries
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit integer containing the count of data references that follow.
 
 ## See Also
 
-- [Size](media_data_reference_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this data reference atom.
-- [Type](media_data_reference_atom/type.md)
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
-- [Version](media_data_reference_atom/version.md)
+- [Version](./version.md)
   A 1-byte specification of the version of this data reference atom.
-- [Flags](media_data_reference_atom/flags.md)
+- [Flags](./flags.md)
   A 3-byte space for data reference flags.
-- [Data references](media_data_reference_atom/data_references.md)
+- [Data references](./data_references.md)
   An array of data references.
 
 

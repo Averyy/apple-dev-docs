@@ -1,7 +1,8 @@
 # changeType
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The iCloud account’s change type.
 
@@ -11,7 +12,7 @@ The iCloud account’s change type.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ let changeType: CKSyncEngine.Event.AccountChange.ChangeType
 
 ## See Also
 
-- [CKSyncEngine.Event.AccountChange.ChangeType](cksyncengine-5sie5/event/accountchange/changetype-swift.enum.md)
+### Understanding the change
+- [CKSyncEngine.Event.AccountChange.ChangeType](./changetype-swift.enum.md)
   Describes a change to the device’s iCloud account.
-- [enum CKSyncEngineAccountChangeType](cksyncengineaccountchangetype.md)
+- [enum CKSyncEngineAccountChangeType](../../../cksyncengineaccountchangetype.md)
   Describes a change to the device’s iCloud account.
 
 

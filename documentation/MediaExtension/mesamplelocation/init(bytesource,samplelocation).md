@@ -1,7 +1,8 @@
 # init(byteSource:sampleLocation:)
 
 **Framework**: MediaExtension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sample location object with the byte source and sample location that you specify.
 
@@ -12,6 +13,10 @@ Creates a sample location object with the byte source and sample location that y
 
 ```swift
 init(byteSource: MEByteSource, sampleLocation: AVSampleCursorStorageRange)
+```
+
+```objc
+- (instancetype) initWithByteSource:(MEByteSource *) byteSource sampleLocation:(AVSampleCursorStorageRange) sampleLocation;
 ```
 
 ## Parameters

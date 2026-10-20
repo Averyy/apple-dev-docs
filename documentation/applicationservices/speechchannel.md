@@ -1,7 +1,8 @@
 # SpeechChannel
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Defines a pointer to a speech channel record.
 
@@ -12,6 +13,10 @@ Defines a pointer to a speech channel record.
 
 ```swift
 typealias SpeechChannel = UnsafeMutablePointer<SpeechChannelRecord>
+```
+
+```c
+typedef SpeechChannelRecord *SpeechChannel;
 ```
 
 

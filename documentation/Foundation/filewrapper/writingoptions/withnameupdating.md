@@ -1,9 +1,10 @@
 # withNameUpdating
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-Whether descendant file wrappers’[`filename`](filewrapper/filename.md) properties are set if the writing succeeds.
+Whether descendant file wrappers’[`filename`](../filename.md) properties are set if the writing succeeds.
 
 **Availability**:
 - iOS 4.0+
@@ -20,13 +21,18 @@ Whether descendant file wrappers’[`filename`](filewrapper/filename.md) propert
 static var withNameUpdating: FileWrapper.WritingOptions { get }
 ```
 
+```c
+NSFileWrapperWritingWithNameUpdating
+```
+
 #### Discussion
 
-This option is necessary when your application passes a URL in the `originalContentsURL` parameter to the [`write(to:options:originalContentsURL:)`](filewrapper/write(to:options:originalcontentsurl:).md) method. Without using this option (and reusing child file wrappers properly), subsequent invocations of [`write(to:options:originalContentsURL:)`](filewrapper/write(to:options:originalcontentsurl:).md) would not be able to reliably create hard links in a new file package, because the record of names in the old file package would be out of date.
+This option is necessary when your application passes a URL in the `originalContentsURL` parameter to the [`write(to:options:originalContentsURL:)`](../write%28to,options,originalcontentsurl%29.md) method. Without using this option (and reusing child file wrappers properly), subsequent invocations of [`write(to:options:originalContentsURL:)`](../write%28to,options,originalcontentsurl%29.md) would not be able to reliably create hard links in a new file package, because the record of names in the old file package would be out of date.
 
 ## See Also
 
-- [static var atomic: FileWrapper.WritingOptions](filewrapper/writingoptions/atomic.md)
+### Constants
+- [static var atomic: FileWrapper.WritingOptions](./atomic.md)
   Whether writing is done atomically.
 
 

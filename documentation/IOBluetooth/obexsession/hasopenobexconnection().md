@@ -1,17 +1,22 @@
 # hasOpenOBEXConnection()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Has a successful connect packet been sent and received? This API tells you so.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func hasOpenOBEXConnection() -> Bool
+```
+
+```objc
+- (BOOL) hasOpenOBEXConnection;
 ```
 
 #### Return Value

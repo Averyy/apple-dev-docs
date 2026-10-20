@@ -1,7 +1,8 @@
 # AEEventHandlerUPP
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Defines a data type for the universal procedure pointer for the `AEEventHandlerUPP` callback function pointer.
 
@@ -15,9 +16,13 @@ Defines a data type for the universal procedure pointer for the `AEEventHandlerU
 typealias AEEventHandlerUPP = AEEventHandlerProcPtr
 ```
 
+```c
+typedef AEEventHandlerProcPtr AEEventHandlerUPP;
+```
+
 #### Discussion
 
-For a description of an event handler callback function, see [`AEEventHandlerProcPtr`](aeeventhandlerprocptr.md). 
+For a description of an event handler callback function, see [`AEEventHandlerProcPtr`](./aeeventhandlerprocptr.md). 
 
 
 ---

@@ -1,14 +1,15 @@
 # withBlock
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 static OSPtr<OSSerializer> withBlock(OSSerializerBlock callback);
 ```
 

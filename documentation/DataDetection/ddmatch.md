@@ -1,7 +1,8 @@
 # DDMatch
 
 **Framework**: DataDetection  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A base class for common types of data that the data detection system matches.
 
@@ -20,6 +21,10 @@ A base class for common types of data that the data detection system matches.
 class DDMatch
 ```
 
+```objc
+@interface DDMatch : NSObject
+```
+
 #### Overview
 
 The DataDetection framework returns results in objects that are subclasses of `DDMatch`, which are specific to the type of matching data. Each object contains the matched string.
@@ -27,33 +32,34 @@ The DataDetection framework returns results in objects that are subclasses of `D
 ## Topics
 
 ### Getting matches
-- [var matchedString: String](ddmatch/matchedstring.md)
+- [var matchedString: String](./ddmatch/matchedstring.md)
   A substring that the data detection system identifies from an original string as a common type of data.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [DDMatchCalendarEvent](ddmatchcalendarevent.md)
-- [DDMatchEmailAddress](ddmatchemailaddress.md)
-- [DDMatchFlightNumber](ddmatchflightnumber.md)
-- [DDMatchLink](ddmatchlink.md)
-- [DDMatchMoneyAmount](ddmatchmoneyamount.md)
-- [DDMatchPhoneNumber](ddmatchphonenumber.md)
-- [DDMatchPostalAddress](ddmatchpostaladdress.md)
-- [DDMatchShipmentTrackingNumber](ddmatchshipmenttrackingnumber.md)
+- [DDMatchCalendarEvent](./ddmatchcalendarevent.md)
+- [DDMatchEmailAddress](./ddmatchemailaddress.md)
+- [DDMatchFlightNumber](./ddmatchflightnumber.md)
+- [DDMatchLink](./ddmatchlink.md)
+- [DDMatchMoneyAmount](./ddmatchmoneyamount.md)
+- [DDMatchPhoneNumber](./ddmatchphonenumber.md)
+- [DDMatchPostalAddress](./ddmatchpostaladdress.md)
+- [DDMatchShipmentTrackingNumber](./ddmatchshipmenttrackingnumber.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [enum DataDetector](datadetector.md)
+### Matched strings
+- [enum DataDetector](./datadetector.md)
   An extension to the string protocol that scans strings for semantic entities, such as email addresses, phone numbers, URLs, and flight information.
 
 

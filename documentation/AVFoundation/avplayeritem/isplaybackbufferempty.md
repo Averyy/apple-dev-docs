@@ -1,18 +1,19 @@
 # isPlaybackBufferEmpty
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether playback has consumed all buffered media and that playback will stall or end.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -21,11 +22,16 @@ nonisolated
 var isPlaybackBufferEmpty: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isPlaybackBufferEmpty) BOOL playbackBufferEmpty;
+```
+
 ## See Also
 
-- [var isPlaybackLikelyToKeepUp: Bool](avplayeritem/isplaybacklikelytokeepup.md)
+### Determining buffering status
+- [var isPlaybackLikelyToKeepUp: Bool](./isplaybacklikelytokeepup.md)
   A Boolean value that indicates whether the item will likely play through without stalling.
-- [var isPlaybackBufferFull: Bool](avplayeritem/isplaybackbufferfull.md)
+- [var isPlaybackBufferFull: Bool](./isplaybackbufferfull.md)
   A Boolean value that indicates whether the internal media buffer is full and that further I/O is suspended.
 
 

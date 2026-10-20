@@ -1,7 +1,8 @@
 # data
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The feature print data.
 
@@ -19,13 +20,18 @@ The feature print data.
 var data: Data { get }
 ```
 
+```objc
+@property (atomic, strong, readonly) NSData * data;
+```
+
 #### Discussion
 
-The data is divided into separate elements. Determine the type of element using [`elementType`](vnfeatureprintobservation/elementtype.md), and the number of elements using [`elementCount`](vnfeatureprintobservation/elementcount.md).
+The data is divided into separate elements. Determine the type of element using [`elementType`](./elementtype.md), and the number of elements using [`elementCount`](./elementcount.md).
 
 ## See Also
 
-- [var elementCount: Int](vnfeatureprintobservation/elementcount.md)
+### Fetching Feature Print Data
+- [var elementCount: Int](./elementcount.md)
   The total number of elements in the data.
 
 

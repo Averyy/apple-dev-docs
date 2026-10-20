@@ -1,7 +1,8 @@
 # prepareWithSpecification
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Prepare the memory for an I/O transfer with a new specification.
 
@@ -10,11 +11,11 @@ Prepare the memory for an I/O transfer with a new specification.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn prepareWithSpecification(SegmentFunction outSegFunc, const SegmentOptions *segmentOptions, uint32_t mappingOptions, IOMapper *mapper, uint64_t offset, uint64_t length, bool flushCache, bool synchronize);
 ```
 
-#### Return_value
+#### Return Value
 
 An IOReturn code. Can fail if the mapping type is not recognised, if one of the 3 mandatory parameters are set to 0, if a 32 bit output function is selected when more than 32 bits of address is required or, if kBypassed is requested on a machine that doesn't support bypassing.
 
@@ -35,21 +36,22 @@ Allocate the mapping resources neccessary for this transfer, specifying a sub ra
 
 ## See Also
 
-- [prepare](iodmacommand/1811284-prepare.md)
+### Preparing the Transfer Operation
+- [prepare](./api-1811284-prepare.md)
   Prepare the memory for an I/O transfer.
-- [- prepare](iodmacommand/1547728-prepare.md)
+- [- prepare](./api-1547728-prepare.md)
   Prepare the memory for an I/O transfer.
-- [prepareWithSpecification](iodmacommand/1811291-preparewithspecification.md)
+- [prepareWithSpecification](./api-1811291-preparewithspecification.md)
   Prepare the memory for an I/O transfer with a new specification.
-- [- prepareWithSpecification](iodmacommand/1547733-preparewithspecification.md)
+- [- prepareWithSpecification](./api-1547733-preparewithspecification.md)
   Prepare the memory for an I/O transfer with a new specification.
-- [complete](iodmacommand/1811081-complete.md)
+- [complete](./api-1811081-complete.md)
   Complete processing of DMA mappings after an I/O transfer is finished.
-- [- complete](iodmacommand/1547730-complete.md)
+- [- complete](./api-1547730-complete.md)
   Complete processing of DMA mappings after an I/O transfer is finished.
-- [synchronize](iodmacommand/1811316-synchronize.md)
+- [synchronize](./api-1811316-synchronize.md)
   Bring IOMemoryDescriptor and IODMACommand buffers into sync.
-- [- synchronize](iodmacommand/1547719-synchronize.md)
+- [- synchronize](./api-1547719-synchronize.md)
   Bring IOMemoryDescriptor and IODMACommand buffers into sync.
 
 

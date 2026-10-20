@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 bool settingsChangedSinceUpdate;
 ```
 
@@ -15,7 +15,9 @@ Used by subclasses to determine if any settings have been modified via the acces
 
 ## See Also
 
-- [properties](iopmpowersource/properties.md)
+### Instance Variables
+- [properties](./properties.md)
+### Related Documentation
 - [collectionGroup-1659326](collectionGroup-1659326)
 
 

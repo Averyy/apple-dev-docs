@@ -1,7 +1,8 @@
 # init(nw:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+

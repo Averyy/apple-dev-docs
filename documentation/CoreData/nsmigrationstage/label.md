@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The textual description of the migration stage’s purpose.
 
@@ -18,6 +19,10 @@ The textual description of the migration stage’s purpose.
 
 ```swift
 var label: String! { get set }
+```
+
+```objc
+@property (nonatomic, copy, null_resettable) NSString * label;
 ```
 
 #### Discussion

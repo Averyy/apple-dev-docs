@@ -1,7 +1,8 @@
 # PasteboardGetItemIdentifier(_:_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.3+
@@ -10,6 +11,10 @@
 
 ```swift
 func PasteboardGetItemIdentifier(_ inPasteboard: Pasteboard, _ inIndex: CFIndex, _ outItem: UnsafeMutablePointer<PasteboardItemID?>) -> OSStatus
+```
+
+```c
+OSStatus PasteboardGetItemIdentifier(PasteboardRef inPasteboard, CFIndex inIndex, PasteboardItemID  _Nullable *outItem);
 ```
 
 

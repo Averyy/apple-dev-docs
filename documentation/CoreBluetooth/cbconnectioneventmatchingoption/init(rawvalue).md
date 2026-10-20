@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Bluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a matching option from the provided raw value.
 

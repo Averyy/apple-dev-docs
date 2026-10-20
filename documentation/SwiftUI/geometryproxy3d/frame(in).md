@@ -1,7 +1,8 @@
 # frame(in:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The container view’s bounds rectangle converted to a defined coordinate space.
 
@@ -16,13 +17,14 @@ func frame(in coordinateSpace: some CoordinateSpaceProtocol) -> Rect3D
 
 ## See Also
 
-- [var size: Size3D](geometryproxy3d/size.md)
+### Accessing geometry characteristics
+- [var size: Size3D](./size.md)
   The size of the container view.
-- [var safeAreaInsets: EdgeInsets3D](geometryproxy3d/safeareainsets.md)
+- [var safeAreaInsets: EdgeInsets3D](./safeareainsets.md)
   The safe area inset of the container view.
-- [subscript<T>(Anchor<T>) -> T](geometryproxy3d/subscript(_:).md)
+- [subscript<T>(Anchor<T>) -> T](./subscript%28_%29.md)
   Resolves the value of an anchor to the container view.
-- [func transform(in: some CoordinateSpaceProtocol) -> AffineTransform3D?](geometryproxy3d/transform(in:).md)
+- [func transform(in: some CoordinateSpaceProtocol) -> AffineTransform3D?](./transform%28in%29.md)
   The container view’s 3D transform converted to a defined coordinate space.
 
 

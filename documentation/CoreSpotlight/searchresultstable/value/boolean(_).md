@@ -1,7 +1,8 @@
 # SearchResultsTable.Value.boolean(_:)
 
 **Framework**: Core Spotlight  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+

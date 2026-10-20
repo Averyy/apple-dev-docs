@@ -1,16 +1,17 @@
 # init(rawValue:)
 
 **Framework**: Video Subscriber Account  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new authentication scheme with the specified raw value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -28,7 +29,8 @@ This initializer returns `nil` if the raw value you specify doesn’t correspond
 
 ## See Also
 
-- [init(String)](vsaccountproviderauthenticationscheme/init(_:).md)
+### Creating an Authentication Scheme
+- [init(String)](./init%28_%29.md)
   Creates a new authentication scheme with the specified string.
 
 

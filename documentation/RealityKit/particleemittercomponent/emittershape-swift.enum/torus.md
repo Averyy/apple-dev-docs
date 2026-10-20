@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.EmitterShape.torus
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Particles emit from a torus oriented along the z-axis, centered on the origin.
 

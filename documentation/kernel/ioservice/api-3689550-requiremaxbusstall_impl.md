@@ -1,14 +1,15 @@
 # RequireMaxBusStall_Impl
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t RequireMaxBusStall_Impl(uint64_t maxBusStall);
 ```
 

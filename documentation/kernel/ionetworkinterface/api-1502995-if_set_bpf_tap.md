@@ -1,14 +1,15 @@
 # if_set_bpf_tap
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 static errno_t if_set_bpf_tap(ifnet_t ifp, bpf_tap_mode, bpf_packet_func);
 ```
 

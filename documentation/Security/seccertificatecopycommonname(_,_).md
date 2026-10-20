@@ -1,7 +1,8 @@
 # SecCertificateCopyCommonName(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves the common name of the subject of a certificate.
 
@@ -20,14 +21,18 @@ Retrieves the common name of the subject of a certificate.
 func SecCertificateCopyCommonName(_ certificate: SecCertificate, _ commonName: UnsafeMutablePointer<CFString?>) -> OSStatus
 ```
 
+```c
+OSStatus SecCertificateCopyCommonName(SecCertificateRef certificate, CFStringRef*commonName);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 ## Parameters
 
 - `certificate`: The certificate object from which to retrieve the common name.
-- `commonName`: On return, points to the common name. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release this object when you are finished with it.
+- `commonName`: On return, points to the common name. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to release this object when you are finished with it.
 
 
 ---

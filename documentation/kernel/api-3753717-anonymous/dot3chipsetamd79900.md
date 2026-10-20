@@ -1,14 +1,15 @@
 # dot3ChipSetAMD79900
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 dot3ChipSetAMD79900 = 2
 ```
 

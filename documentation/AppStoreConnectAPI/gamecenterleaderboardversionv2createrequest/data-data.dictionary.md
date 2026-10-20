@@ -1,7 +1,8 @@
 # GameCenterLeaderboardVersionV2CreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represents a Game Center leaderboard version create request resource.
 
@@ -10,7 +11,7 @@ The data structure that represents a Game Center leaderboard version create requ
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardVersionV2CreateRequest.Data
 ```
 
@@ -22,13 +23,13 @@ object GameCenterLeaderboardVersionV2CreateRequest.Data
 ## Topics
 
 ### Dictionaries
-- [object GameCenterLeaderboardVersionV2CreateRequest.Data.Relationships](gamecenterleaderboardversionv2createrequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object GameCenterLeaderboardVersionV2CreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
 - `relationships` (GameCenterLeaderboardVersionV2CreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterLeaderboardVersions`
 
 
 ---

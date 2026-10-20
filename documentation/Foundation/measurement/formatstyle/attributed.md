@@ -1,7 +1,8 @@
 # attributed
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attributed style for the measurement format style.
 

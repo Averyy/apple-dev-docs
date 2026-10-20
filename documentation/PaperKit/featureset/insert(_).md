@@ -1,7 +1,8 @@
 # insert(_:)
 
 **Framework**: PaperKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts the given feature in the set if it is not already present.
 
@@ -24,11 +25,12 @@ mutating func insert(_ newFeature: FeatureSet.Feature)
 
 ## See Also
 
-- [func contains(FeatureSet.Feature) -> Bool](featureset/contains(_:).md)
+### Checking features
+- [func contains(FeatureSet.Feature) -> Bool](./contains%28_%29.md)
   Returns a Boolean value that indicates whether the given feature exists in the set.
-- [func isSubset(of: FeatureSet) -> Bool](featureset/issubset(of:).md)
+- [func isSubset(of: FeatureSet) -> Bool](./issubset%28of%29.md)
   Returns a Boolean value that indicates whether this feature set is a subset of the given feature set.
-- [func remove(FeatureSet.Feature)](featureset/remove(_:).md)
+- [func remove(FeatureSet.Feature)](./remove%28_%29.md)
   Removes the given feature.
 
 

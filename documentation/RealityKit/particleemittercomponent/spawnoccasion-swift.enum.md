@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.SpawnOccasion
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options for when the spawned effect starts, used by the spawnOccasion property.
 
@@ -22,20 +23,20 @@ enum SpawnOccasion
 ## Topics
 
 ### Enumeration Cases
-- [ParticleEmitterComponent.SpawnOccasion.onBirth](particleemittercomponent/spawnoccasion-swift.enum/onbirth.md)
+- [ParticleEmitterComponent.SpawnOccasion.onBirth](./spawnoccasion-swift.enum/onbirth.md)
   The spawned effect starts at the birth time of a main particle.
-- [ParticleEmitterComponent.SpawnOccasion.onDeath](particleemittercomponent/spawnoccasion-swift.enum/ondeath.md)
+- [ParticleEmitterComponent.SpawnOccasion.onDeath](./spawnoccasion-swift.enum/ondeath.md)
   The spawned effect starts at the death of a main particle.
-- [ParticleEmitterComponent.SpawnOccasion.onUpdate](particleemittercomponent/spawnoccasion-swift.enum/onupdate.md)
+- [ParticleEmitterComponent.SpawnOccasion.onUpdate](./spawnoccasion-swift.enum/onupdate.md)
   The spawned effect starts on every tick of the engine.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

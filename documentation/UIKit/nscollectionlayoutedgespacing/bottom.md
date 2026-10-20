@@ -1,7 +1,8 @@
 # bottom
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bottom edge spacing value.
 
@@ -18,13 +19,18 @@ The bottom edge spacing value.
 var bottom: NSCollectionLayoutSpacing? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSCollectionLayoutSpacing * bottom;
+```
+
 ## See Also
 
-- [var leading: NSCollectionLayoutSpacing?](nscollectionlayoutedgespacing/leading.md)
+### Getting the edge spacing
+- [var leading: NSCollectionLayoutSpacing?](./leading.md)
   The leading edge spacing value.
-- [var top: NSCollectionLayoutSpacing?](nscollectionlayoutedgespacing/top.md)
+- [var top: NSCollectionLayoutSpacing?](./top.md)
   The top edge spacing value.
-- [var trailing: NSCollectionLayoutSpacing?](nscollectionlayoutedgespacing/trailing.md)
+- [var trailing: NSCollectionLayoutSpacing?](./trailing.md)
   The trailing edge spacing value.
 
 

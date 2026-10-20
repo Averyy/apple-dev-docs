@@ -1,11 +1,12 @@
 # CustomReflectable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var customMirror: Mirror](string/unicodescalarview/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   Returns a mirror that reflects the Unicode scalars view of a string.
 
 

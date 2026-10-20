@@ -1,21 +1,22 @@
 # xcodeOverview.Categories
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object xcodeOverview.Categories
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object xcodeOverview.Categories.Sections](xcodeoverview/categories-data.dictionary/sections-data.dictionary.md)
+- [object xcodeOverview.Categories.Sections](./categories-data.dictionary/sections-data.dictionary.md)
 
 ## Properties
 

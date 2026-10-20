@@ -1,7 +1,8 @@
 # invalidArchiveOperationException
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The name of the exception raised by `NSKeyedArchiver` if there is a problem creating an archive.
 
@@ -18,6 +19,10 @@ The name of the exception raised by `NSKeyedArchiver` if there is a problem crea
 
 ```swift
 static let invalidArchiveOperationException: NSExceptionName
+```
+
+```c
+extern NSExceptionName const NSInvalidArchiveOperationException;
 ```
 
 

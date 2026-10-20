@@ -1,7 +1,8 @@
 # errSecPublicKeyInconsistent
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The public key is inconsistent.
 
@@ -18,6 +19,10 @@ The public key is inconsistent.
 
 ```swift
 var errSecPublicKeyInconsistent: OSStatus { get }
+```
+
+```c
+errSecPublicKeyInconsistent
 ```
 
 

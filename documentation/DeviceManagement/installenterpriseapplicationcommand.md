@@ -1,7 +1,8 @@
 # InstallEnterpriseApplicationCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to install an enterprise app on a device.
 
@@ -10,14 +11,14 @@ The command to install an enterprise app on a device.
 
 ## Declaration
 
-```swift
+```
 object InstallEnterpriseApplicationCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object InstallEnterpriseApplicationCommand.Command](installenterpriseapplicationcommand/command-data.dictionary.md)
+- [object InstallEnterpriseApplicationCommand.Command](./installenterpriseapplicationcommand/command-data.dictionary.md)
   The command to install an enterprise app on a device.
 
 ## Properties
@@ -27,7 +28,8 @@ object InstallEnterpriseApplicationCommand
 
 ## See Also
 
-- [object InstallEnterpriseApplicationResponse](installenterpriseapplicationresponse.md)
+### Commands and responses
+- [object InstallEnterpriseApplicationResponse](./installenterpriseapplicationresponse.md)
   A response from the device after it processes the command to install an enterprise app on a device.
 
 

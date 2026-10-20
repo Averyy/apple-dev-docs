@@ -1,17 +1,22 @@
 # NSBitmapImageRep.TIFFCompression.ccittfax4
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 CCITT Fax Group 4 compression.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case ccittfax4
+```
+
+```c
+NSTIFFCompressionCCITTFAX4
 ```
 
 #### Discussion
@@ -20,19 +25,20 @@ Used for 1-bit fax images sent over ISDN lines.
 
 ## See Also
 
-- [NSBitmapImageRep.TIFFCompression.none](nsbitmapimagerep/tiffcompression/none.md)
+### Constants
+- [NSBitmapImageRep.TIFFCompression.none](./none.md)
   No compression.
-- [NSBitmapImageRep.TIFFCompression.ccittfax3](nsbitmapimagerep/tiffcompression/ccittfax3.md)
+- [NSBitmapImageRep.TIFFCompression.ccittfax3](./ccittfax3.md)
   CCITT Fax Group 3 compression.
-- [NSBitmapImageRep.TIFFCompression.lzw](nsbitmapimagerep/tiffcompression/lzw.md)
+- [NSBitmapImageRep.TIFFCompression.lzw](./lzw.md)
   LZW compression.
-- [NSBitmapImageRep.TIFFCompression.jpeg](nsbitmapimagerep/tiffcompression/jpeg.md)
+- [NSBitmapImageRep.TIFFCompression.jpeg](./jpeg.md)
   JPEG compression. No longer supported for input or output.
-- [NSBitmapImageRep.TIFFCompression.next](nsbitmapimagerep/tiffcompression/next.md)
+- [NSBitmapImageRep.TIFFCompression.next](./next.md)
   NeXT compressed. Supported for input only.
-- [NSBitmapImageRep.TIFFCompression.packBits](nsbitmapimagerep/tiffcompression/packbits.md)
+- [NSBitmapImageRep.TIFFCompression.packBits](./packbits.md)
   PackBits compression.
-- [NSBitmapImageRep.TIFFCompression.oldJPEG](nsbitmapimagerep/tiffcompression/oldjpeg.md)
+- [NSBitmapImageRep.TIFFCompression.oldJPEG](./oldjpeg.md)
   Old JPEG compression. No longer supported for input or output.
 
 

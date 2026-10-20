@@ -1,14 +1,15 @@
 # initDMAChannel
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn initDMAChannel(IOService *provider, IODMAEventSource *dmaES, UInt32 *dmaIndex, UInt32 reqIndex);
 ```
 

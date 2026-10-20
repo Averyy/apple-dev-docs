@@ -1,7 +1,8 @@
 # PKSecureElementPass.PassActivationState.activating
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The pass isn’t ready to use, but activation is in progress
 
@@ -19,15 +20,20 @@ The pass isn’t ready to use, but activation is in progress
 case activating
 ```
 
+```c
+PKSecureElementPassActivationStateActivating
+```
+
 ## See Also
 
-- [PKSecureElementPass.PassActivationState.requiresActivation](pksecureelementpass/passactivationstate-swift.enum/requiresactivation.md)
+### Activation states
+- [PKSecureElementPass.PassActivationState.requiresActivation](./requiresactivation.md)
   The pass requires activation by the issuer.
-- [PKSecureElementPass.PassActivationState.activated](pksecureelementpass/passactivationstate-swift.enum/activated.md)
+- [PKSecureElementPass.PassActivationState.activated](./activated.md)
   The pass is active and ready to use.
-- [PKSecureElementPass.PassActivationState.suspended](pksecureelementpass/passactivationstate-swift.enum/suspended.md)
+- [PKSecureElementPass.PassActivationState.suspended](./suspended.md)
   The user or the issuer has suspended the pass and it isn’t available to use.
-- [PKSecureElementPass.PassActivationState.deactivated](pksecureelementpass/passactivationstate-swift.enum/deactivated.md)
+- [PKSecureElementPass.PassActivationState.deactivated](./deactivated.md)
   The issuer has deactivated the pass.
 
 

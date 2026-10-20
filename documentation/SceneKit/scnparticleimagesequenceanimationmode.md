@@ -1,18 +1,19 @@
 # SCNParticleImageSequenceAnimationMode
 
 **Framework**: SceneKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Options for animating each particle with a sequence of images, used by the [`imageSequenceAnimationMode`](scnparticlesystem/imagesequenceanimationmode.md) property.
+Options for animating each particle with a sequence of images, used by the [`imageSequenceAnimationMode`](./scnparticlesystem/imagesequenceanimationmode.md) property.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,43 +21,48 @@ Options for animating each particle with a sequence of images, used by the [`ima
 enum SCNParticleImageSequenceAnimationMode
 ```
 
+```c
+enum SCNParticleImageSequenceAnimationMode : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [SCNParticleImageSequenceAnimationMode.repeat](scnparticleimagesequenceanimationmode/repeat.md)
+- [SCNParticleImageSequenceAnimationMode.repeat](./scnparticleimagesequenceanimationmode/repeat.md)
   The animation loops after displaying all of its images.
-- [SCNParticleImageSequenceAnimationMode.clamp](scnparticleimagesequenceanimationmode/clamp.md)
+- [SCNParticleImageSequenceAnimationMode.clamp](./scnparticleimagesequenceanimationmode/clamp.md)
   The animation stops after displaying all of its images.
-- [SCNParticleImageSequenceAnimationMode.autoReverse](scnparticleimagesequenceanimationmode/autoreverse.md)
+- [SCNParticleImageSequenceAnimationMode.autoReverse](./scnparticleimagesequenceanimationmode/autoreverse.md)
   After the animation displays all of its images, it plays again in reverse order.
 ### Initializers
-- [init?(rawValue: Int)](scnparticleimagesequenceanimationmode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./scnparticleimagesequenceanimationmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var imageSequenceRowCount: Int](scnparticlesystem/imagesequencerowcount.md)
+### Animating Particle Images
+- [var imageSequenceRowCount: Int](./scnparticlesystem/imagesequencerowcount.md)
   The number of rows for treating the particle image as a grid of animation frames.
-- [var imageSequenceColumnCount: Int](scnparticlesystem/imagesequencecolumncount.md)
+- [var imageSequenceColumnCount: Int](./scnparticlesystem/imagesequencecolumncount.md)
   The number of columns for treating the particle image as a grid of animation frames.
-- [var imageSequenceInitialFrame: CGFloat](scnparticlesystem/imagesequenceinitialframe.md)
+- [var imageSequenceInitialFrame: CGFloat](./scnparticlesystem/imagesequenceinitialframe.md)
   The index of the first frame in a particle image animation. Animatable.
-- [var imageSequenceInitialFrameVariation: CGFloat](scnparticlesystem/imagesequenceinitialframevariation.md)
+- [var imageSequenceInitialFrameVariation: CGFloat](./scnparticlesystem/imagesequenceinitialframevariation.md)
   The range of randomized initial frames for particle image animation. Animatable.
-- [var imageSequenceFrameRate: CGFloat](scnparticlesystem/imagesequenceframerate.md)
+- [var imageSequenceFrameRate: CGFloat](./scnparticlesystem/imagesequenceframerate.md)
   The rate, in frames per second, of particle image animation. Animatable.
-- [var imageSequenceFrameRateVariation: CGFloat](scnparticlesystem/imagesequenceframeratevariation.md)
+- [var imageSequenceFrameRateVariation: CGFloat](./scnparticlesystem/imagesequenceframeratevariation.md)
   The range, in frames per second, of randomized frame rates for particle image animation. Animatable.
-- [var imageSequenceAnimationMode: SCNParticleImageSequenceAnimationMode](scnparticlesystem/imagesequenceanimationmode.md)
+- [var imageSequenceAnimationMode: SCNParticleImageSequenceAnimationMode](./scnparticlesystem/imagesequenceanimationmode.md)
   The animation mode for particle image animation.
 
 

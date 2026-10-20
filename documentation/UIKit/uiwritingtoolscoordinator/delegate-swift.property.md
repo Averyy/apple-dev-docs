@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that handles Writing Tools interactions for your view.
 
@@ -17,13 +18,18 @@ The object that handles Writing Tools interactions for your view.
 weak var delegate: (any UIWritingToolsCoordinator.Delegate)? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) id<UIWritingToolsCoordinatorDelegate> delegate;
+```
+
 #### Discussion
 
-Specify this object at initialization time when creating your `UIWritingToolsCoordinator` object. The object must adopt the [`UIWritingToolsCoordinator.Delegate`](uiwritingtoolscoordinator/delegate-swift.protocol.md) protocol, and be capable of modifying your view’s text storage and refreshing the view’s layout and appearance.
+Specify this object at initialization time when creating your `UIWritingToolsCoordinator` object. The object must adopt the [`UIWritingToolsCoordinator.Delegate`](./delegate-swift.protocol.md) protocol, and be capable of modifying your view’s text storage and refreshing the view’s layout and appearance.
 
 ## See Also
 
-- [UIWritingToolsCoordinator.Delegate](uiwritingtoolscoordinator/delegate-swift.protocol.md)
+### Managing Writing Tools interactions
+- [UIWritingToolsCoordinator.Delegate](./delegate-swift.protocol.md)
   An interface that you use to manage interactions between Writing Tools and your custom text view.
 
 

@@ -1,7 +1,8 @@
 # values
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The metadata key-value pairs for the entry.
 

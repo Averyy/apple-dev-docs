@@ -1,7 +1,8 @@
 # forType(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the distributed notification center for a particular notification center type.
 
@@ -13,6 +14,10 @@ Returns the distributed notification center for a particular notification center
 
 ```swift
 class func forType(_ notificationCenterType: DistributedNotificationCenter.CenterType) -> DistributedNotificationCenter
+```
+
+```objc
++ (NSDistributedNotificationCenter *) notificationCenterForType:(NSDistributedNotificationCenterType) notificationCenterType;
 ```
 
 #### Return Value
@@ -29,7 +34,8 @@ Currently only one type, `NSLocalNotificationCenterType`, is supported.
 
 ## See Also
 
-- [class func `default`() -> DistributedNotificationCenter](distributednotificationcenter/default.md)
+### Getting Distributed Notification Centers
+- [class func `default`() -> DistributedNotificationCenter](./default%28%29.md)
   Returns the default distributed notification center, representing the local notification center for the computer.
 
 

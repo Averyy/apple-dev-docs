@@ -1,18 +1,19 @@
 # SKPhysicsContact
 
 **Framework**: SpriteKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A description of the contact between two physics bodies.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,47 +21,52 @@ A description of the contact between two physics bodies.
 class SKPhysicsContact
 ```
 
+```objc
+@interface SKPhysicsContact : NSObject
+```
+
 #### Overview
 
-An [`SKPhysicsContact`](skphysicscontact.md) object is created automatically by SpriteKit to describe a contact between two physical bodies in a physics world.To receive contact messages, read the [`physicsWorld`](skscene/physicsworld.md) property of an [`SKScene`](skscene.md) object you are interested in, and assign its [`contactDelegate`](skphysicsworld/contactdelegate.md) property to point to an object that implements the [`SKPhysicsContactDelegate`](skphysicscontactdelegate.md) protocol. Then, for each physics body in your scene, set the [`categoryBitMask`](skphysicsbody/categorybitmask.md) and [`contactTestBitMask`](skphysicsbody/contacttestbitmask.md) properties to define which interactions should generate contact messages.
+An [`SKPhysicsContact`](./skphysicscontact.md) object is created automatically by SpriteKit to describe a contact between two physical bodies in a physics world.To receive contact messages, read the [`physicsWorld`](./skscene/physicsworld.md) property of an [`SKScene`](./skscene.md) object you are interested in, and assign its [`contactDelegate`](./skphysicsworld/contactdelegate.md) property to point to an object that implements the [`SKPhysicsContactDelegate`](./skphysicscontactdelegate.md) protocol. Then, for each physics body in your scene, set the [`categoryBitMask`](./skphysicsbody/categorybitmask.md) and [`contactTestBitMask`](./skphysicsbody/contacttestbitmask.md) properties to define which interactions should generate contact messages.
 
 ## Topics
 
 ### Inspecting the Contact Properties
-- [var bodyA: SKPhysicsBody](skphysicscontact/bodya.md)
+- [var bodyA: SKPhysicsBody](./skphysicscontact/bodya.md)
   The first body in the contact.
-- [var bodyB: SKPhysicsBody](skphysicscontact/bodyb.md)
+- [var bodyB: SKPhysicsBody](./skphysicscontact/bodyb.md)
   The second body in the contact.
-- [var contactPoint: CGPoint](skphysicscontact/contactpoint.md)
+- [var contactPoint: CGPoint](./skphysicscontact/contactpoint.md)
   The contact point between the two physics bodies, in scene coordinates.
-- [var collisionImpulse: CGFloat](skphysicscontact/collisionimpulse.md)
+- [var collisionImpulse: CGFloat](./skphysicscontact/collisionimpulse.md)
   The impulse that specifies how hard these two bodies struck each other in Newton-seconds.
-- [var contactNormal: CGVector](skphysicscontact/contactnormal.md)
+- [var contactNormal: CGVector](./skphysicscontact/contactnormal.md)
   The normal vector specifying the direction of the collision.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Getting Started with Physics](getting-started-with-physics.md)
+### Physics Simulation
+- [Getting Started with Physics](./getting-started-with-physics.md)
   Simulate gravity, acceleration, collision detection, or joints.
-- [class SKPhysicsWorld](skphysicsworld.md)
+- [class SKPhysicsWorld](./skphysicsworld.md)
   The driver of the physics engine in a scene; it exposes the ability for you to configure and query the physics system.
-- [class SKPhysicsBody](skphysicsbody.md)
+- [class SKPhysicsBody](./skphysicsbody.md)
   An object that adds physics simulation to a node.
-- [protocol SKPhysicsContactDelegate](skphysicscontactdelegate.md)
+- [protocol SKPhysicsContactDelegate](./skphysicscontactdelegate.md)
   Methods your app can implement to respond when physics bodies come into contact.
-- [class SKFieldNode](skfieldnode.md)
+- [class SKFieldNode](./skfieldnode.md)
   A node that applies physics effects to nearby nodes.
 
 

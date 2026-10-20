@@ -1,7 +1,8 @@
 # init(dataOfContentType:contentSize:createDataUsing:)
 
 **Framework**: Quick Look  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.0+

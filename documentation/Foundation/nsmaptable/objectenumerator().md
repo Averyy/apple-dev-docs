@@ -1,7 +1,8 @@
 # objectEnumerator()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an enumerator object that lets you access each value in the map table.
 
@@ -18,6 +19,10 @@ Returns an enumerator object that lets you access each value in the map table.
 
 ```swift
 func objectEnumerator() -> NSEnumerator?
+```
+
+```objc
+- (NSEnumerator<id> *) objectEnumerator;
 ```
 
 #### Return Value
@@ -39,15 +44,16 @@ while ((value = [enumerator nextObject])) {
 
 ##### Special Considerations
 
-It is more efficient to use the fast enumeration protocol (see [`NSFastEnumeration`](nsfastenumeration.md)).
+It is more efficient to use the fast enumeration protocol (see [`NSFastEnumeration`](../nsfastenumeration.md)).
 
 ## See Also
 
-- [func object(forKey: KeyType?) -> ObjectType?](nsmaptable/object(forkey:).md)
+### Accessing Content
+- [func object(forKey: KeyType?) -> ObjectType?](./object%28forkey%29.md)
   Returns a the value associated with a given key.
-- [func keyEnumerator() -> NSEnumerator](nsmaptable/keyenumerator.md)
+- [func keyEnumerator() -> NSEnumerator](./keyenumerator%28%29.md)
   Returns an enumerator object that lets you access each key in the map table.
-- [var count: Int](nsmaptable/count.md)
+- [var count: Int](./count.md)
   The number of key-value pairs in the map table.
 
 

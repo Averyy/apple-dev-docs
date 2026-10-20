@@ -1,7 +1,8 @@
 # listSectionIndexVisibility(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the visibility of the list section index.
 
@@ -51,7 +52,8 @@ By hiding section headers of empty sections with an index label, a list section 
 
 ## See Also
 
-- [func sectionIndexLabel(_:)](view/sectionindexlabel(_:).md)
+### Configuring a section index
+- [func sectionIndexLabel(_:)](./sectionindexlabel%28_%29.md)
   Sets the label that is used in a section index to point to this section, typically only a single character long.
 
 

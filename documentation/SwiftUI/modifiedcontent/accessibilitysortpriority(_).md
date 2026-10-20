@@ -1,7 +1,8 @@
 # accessibilitySortPriority(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the sort priority order for this view’s accessibility element, relative to other elements at the same level.
 
@@ -20,6 +21,8 @@ Sets the sort priority order for this view’s accessibility element, relative t
 nonisolated
 func accessibilitySortPriority(_ sortPriority: Double) -> ModifiedContent<Content, Modifier>
 ```
+
+Available when `Modifier` is `AccessibilityAttachmentModifier`.
 
 #### Discussion
 

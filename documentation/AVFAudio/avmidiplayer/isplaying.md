@@ -1,7 +1,8 @@
 # isPlaying
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the sequence is playing.
 
@@ -19,15 +20,20 @@ A Boolean value that indicates whether the sequence is playing.
 var isPlaying: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isPlaying) BOOL playing;
+```
+
 ## See Also
 
-- [func prepareToPlay()](avmidiplayer/preparetoplay.md)
+### Controlling playback
+- [func prepareToPlay()](./preparetoplay%28%29.md)
   Prepares the player to play the sequence by prerolling all events.
-- [func play((() -> Void)?)](avmidiplayer/play(_:).md)
+- [func play((() -> Void)?)](./play%28_%29.md)
   Plays the MIDI sequence.
-- [typealias AVMIDIPlayerCompletionHandler](avmidiplayercompletionhandler.md)
+- [typealias AVMIDIPlayerCompletionHandler](../avmidiplayercompletionhandler.md)
   A callback the system invokes when MIDI playback completes.
-- [func stop()](avmidiplayer/stop.md)
+- [func stop()](./stop%28%29.md)
   Stops playing the sequence.
 
 

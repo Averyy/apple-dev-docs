@@ -1,7 +1,8 @@
 # ASCredentialIdentityStore.IdentityTypes
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The defined identity types for use in retrieving credentials.
 
@@ -18,40 +19,45 @@ The defined identity types for use in retrieving credentials.
 struct IdentityTypes
 ```
 
+```c
+enum ASCredentialIdentityTypes : NSUInteger;
+```
+
 ## Topics
 
 ### Working with identity types
-- [static var passkey: ASCredentialIdentityStore.IdentityTypes](ascredentialidentitystore/identitytypes/passkey.md)
+- [static var passkey: ASCredentialIdentityStore.IdentityTypes](./identitytypes/passkey.md)
   The passkey identity type.
-- [static var password: ASCredentialIdentityStore.IdentityTypes](ascredentialidentitystore/identitytypes/password.md)
+- [static var password: ASCredentialIdentityStore.IdentityTypes](./identitytypes/password.md)
   The password identity type.
-- [static var oneTimeCode: ASCredentialIdentityStore.IdentityTypes](ascredentialidentitystore/identitytypes/onetimecode.md)
+- [static var oneTimeCode: ASCredentialIdentityStore.IdentityTypes](./identitytypes/onetimecode.md)
   The one-time code identity type.
 ### Working with raw values
-- [init(rawValue: UInt)](ascredentialidentitystore/identitytypes/init(rawvalue:).md)
+- [init(rawValue: UInt)](./identitytypes/init%28rawvalue%29.md)
   Creates an instance with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [ASAuthorizationProviderExtensionLoginConfiguration.FederationType](asauthorizationproviderextensionloginconfiguration/federationtype-swift.enum.md)
-- [ASAuthorizationProviderExtensionLoginConfiguration.UserSecureEnclaveKeyBiometricPolicy](asauthorizationproviderextensionloginconfiguration/usersecureenclavekeybiometricpolicy-swift.struct.md)
-- [enum ASAuthorizationProviderExtensionPlatformSSOProtocolVersion](asauthorizationproviderextensionplatformssoprotocolversion.md)
-- [struct ASAuthorizationProviderExtensionSupportedGrantTypes](asauthorizationproviderextensionsupportedgranttypes.md)
-- [enum ASAuthorizationPublicKeyCredentialAttachment](asauthorizationpublickeycredentialattachment.md)
-- [enum ASPublicKeyCredentialClientDataCrossOriginValue](aspublickeycredentialclientdatacrossoriginvalue.md)
-- [enum ASUserAgeRange](asuseragerange.md)
+### Enumerations
+- [ASAuthorizationProviderExtensionLoginConfiguration.FederationType](../asauthorizationproviderextensionloginconfiguration/federationtype-swift.enum.md)
+- [ASAuthorizationProviderExtensionLoginConfiguration.UserSecureEnclaveKeyBiometricPolicy](../asauthorizationproviderextensionloginconfiguration/usersecureenclavekeybiometricpolicy-swift.struct.md)
+- [enum ASAuthorizationProviderExtensionPlatformSSOProtocolVersion](../asauthorizationproviderextensionplatformssoprotocolversion.md)
+- [struct ASAuthorizationProviderExtensionSupportedGrantTypes](../asauthorizationproviderextensionsupportedgranttypes.md)
+- [enum ASAuthorizationPublicKeyCredentialAttachment](../asauthorizationpublickeycredentialattachment.md)
+- [enum ASPublicKeyCredentialClientDataCrossOriginValue](../aspublickeycredentialclientdatacrossoriginvalue.md)
+- [enum ASUserAgeRange](../asuseragerange.md)
 
 
 ---

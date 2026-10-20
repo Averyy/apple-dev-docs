@@ -1,7 +1,8 @@
 # NSDecimalNumber.CalculationError.overflow
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The number is too large to represent.
 
@@ -20,15 +21,20 @@ The number is too large to represent.
 case overflow
 ```
 
+```c
+NSCalculationOverflow
+```
+
 ## See Also
 
-- [NSDecimalNumber.CalculationError.noError](nsdecimalnumber/calculationerror/noerror.md)
+### Constants
+- [NSDecimalNumber.CalculationError.noError](./noerror.md)
   No error occurred.
-- [NSDecimalNumber.CalculationError.lossOfPrecision](nsdecimalnumber/calculationerror/lossofprecision.md)
+- [NSDecimalNumber.CalculationError.lossOfPrecision](./lossofprecision.md)
   The number can’t be represented in 38 significant digits.
-- [NSDecimalNumber.CalculationError.underflow](nsdecimalnumber/calculationerror/underflow.md)
+- [NSDecimalNumber.CalculationError.underflow](./underflow.md)
   The number is too small to represent.
-- [NSDecimalNumber.CalculationError.divideByZero](nsdecimalnumber/calculationerror/dividebyzero.md)
+- [NSDecimalNumber.CalculationError.divideByZero](./dividebyzero.md)
   The caller tried to divide by `0`.
 
 

@@ -1,7 +1,8 @@
 # moveTo
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 void moveTo(
     optional unrestricted float x, 
     optional unrestricted float y

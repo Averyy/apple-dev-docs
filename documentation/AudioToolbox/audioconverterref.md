@@ -1,17 +1,18 @@
 # AudioConverterRef
 
 **Framework**: Audio Toolbox  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A reference to an audio converter object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ A reference to an audio converter object.
 typealias AudioConverterRef = OpaquePointer
 ```
 
+```c
+typedef struct OpaqueAudioConverter * AudioConverterRef;
+```
+
 ## See Also
 
-- [struct AudioConverterPrimeInfo](audioconverterprimeinfo.md)
+### Data Types
+- [struct AudioConverterPrimeInfo](./audioconverterprimeinfo.md)
   Specifies priming information for an audio converter.
-- [typealias AudioConverterPropertyID](audioconverterpropertyid.md)
+- [typealias AudioConverterPropertyID](./audioconverterpropertyid.md)
   An audio converter property identifier.
 
 

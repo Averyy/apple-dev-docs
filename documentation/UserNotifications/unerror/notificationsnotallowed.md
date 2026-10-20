@@ -1,7 +1,8 @@
 # notificationsNotAllowed
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Notifications are not allowed.
 
@@ -26,25 +27,26 @@ This error occurs when you try to submit a notification request and your app or 
 
 ## See Also
 
-- [static var attachmentInvalidURL: UNError.Code](unerror/attachmentinvalidurl.md)
+### Type Properties
+- [static var attachmentInvalidURL: UNError.Code](./attachmentinvalidurl.md)
   The URL for an attachment was invalid.
-- [static var attachmentUnrecognizedType: UNError.Code](unerror/attachmentunrecognizedtype.md)
+- [static var attachmentUnrecognizedType: UNError.Code](./attachmentunrecognizedtype.md)
   The file type of an attachment is not supported.
-- [static var attachmentInvalidFileSize: UNError.Code](unerror/attachmentinvalidfilesize.md)
+- [static var attachmentInvalidFileSize: UNError.Code](./attachmentinvalidfilesize.md)
   An attachment is too large.
-- [static var attachmentNotInDataStore: UNError.Code](unerror/attachmentnotindatastore.md)
+- [static var attachmentNotInDataStore: UNError.Code](./attachmentnotindatastore.md)
   The specified attachment is not in the system data store.
-- [static var attachmentMoveIntoDataStoreFailed: UNError.Code](unerror/attachmentmoveintodatastorefailed.md)
+- [static var attachmentMoveIntoDataStoreFailed: UNError.Code](./attachmentmoveintodatastorefailed.md)
   An error occurred when trying to move an attachment to the system data store.
-- [static var attachmentCorrupt: UNError.Code](unerror/attachmentcorrupt.md)
+- [static var attachmentCorrupt: UNError.Code](./attachmentcorrupt.md)
   The file for an attachment is corrupt.
-- [static var notificationInvalidNoDate: UNError.Code](unerror/notificationinvalidnodate.md)
+- [static var notificationInvalidNoDate: UNError.Code](./notificationinvalidnodate.md)
   The notification does not have an associated date, but should.
-- [static var notificationInvalidNoContent: UNError.Code](unerror/notificationinvalidnocontent.md)
+- [static var notificationInvalidNoContent: UNError.Code](./notificationinvalidnocontent.md)
   The notification has no user-facing content, but should.
-- [static var contentProvidingInvalid: UNError.Code](unerror/contentprovidinginvalid.md)
-- [static var contentProvidingObjectNotAllowed: UNError.Code](unerror/contentprovidingobjectnotallowed.md)
-- [static var badgeInputInvalid: UNError.Code](unerror/badgeinputinvalid.md)
+- [static var contentProvidingInvalid: UNError.Code](./contentprovidinginvalid.md)
+- [static var contentProvidingObjectNotAllowed: UNError.Code](./contentprovidingobjectnotallowed.md)
+- [static var badgeInputInvalid: UNError.Code](./badgeinputinvalid.md)
 
 
 ---

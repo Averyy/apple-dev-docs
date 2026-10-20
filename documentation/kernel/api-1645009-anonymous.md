@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,16 +18,16 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOPMDeviceUsable](1645009-anonymous/kiopmdeviceusable.md)
-- [kIOPMInitialDeviceState](1645009-anonymous/kiopminitialdevicestate.md)
-- [kIOPMLowPower](1645009-anonymous/kiopmlowpower.md)
-- [kIOPMPowerOn](1645009-anonymous/kiopmpoweron.md)
-- [kIOPMPreventIdleSleep](1645009-anonymous/kiopmpreventidlesleep.md)
-- [kIOPMRestart](1645009-anonymous/kiopmrestart.md)
-- [kIOPMRestartCapability](1645009-anonymous/kiopmrestartcapability.md)
-- [kIOPMRootDomainState](1645009-anonymous/kiopmrootdomainstate.md)
-- [kIOPMSleep](1645009-anonymous/kiopmsleep.md)
-- [kIOPMSleepCapability](1645009-anonymous/kiopmsleepcapability.md)
+- [kIOPMDeviceUsable](./api-1645009-anonymous/kiopmdeviceusable.md)
+- [kIOPMInitialDeviceState](./api-1645009-anonymous/kiopminitialdevicestate.md)
+- [kIOPMLowPower](./api-1645009-anonymous/kiopmlowpower.md)
+- [kIOPMPowerOn](./api-1645009-anonymous/kiopmpoweron.md)
+- [kIOPMPreventIdleSleep](./api-1645009-anonymous/kiopmpreventidlesleep.md)
+- [kIOPMRestart](./api-1645009-anonymous/kiopmrestart.md)
+- [kIOPMRestartCapability](./api-1645009-anonymous/kiopmrestartcapability.md)
+- [kIOPMRootDomainState](./api-1645009-anonymous/kiopmrootdomainstate.md)
+- [kIOPMSleep](./api-1645009-anonymous/kiopmsleep.md)
+- [kIOPMSleepCapability](./api-1645009-anonymous/kiopmsleepcapability.md)
 
 
 ---

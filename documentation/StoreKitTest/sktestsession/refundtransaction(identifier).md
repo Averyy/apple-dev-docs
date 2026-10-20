@@ -1,7 +1,8 @@
 # refundTransaction(identifier:)
 
 **Framework**: StoreKit Test  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Simulates a refund for an Apple In-App Purchase that completes outside of the app.
 
@@ -20,19 +21,24 @@ Simulates a refund for an Apple In-App Purchase that completes outside of the ap
 func refundTransaction(identifier: Int) throws
 ```
 
+```objc
+- (BOOL) refundTransactionWithIdentifier:(NSUInteger) identifier error:(NSError **) error;
+```
+
 #### Discussion
 
-In the testing environment, the system always approves refund requests, and processes them immediately. You can choose the reason for the refund by using [`beginRefundRequest(in:)`](https://developer.apple.com/documentation/storekit/transaction/beginrefundrequest(in:)-9k0pj) in your app and selecting a reason. (Your app may also use [`beginRefundRequest(for:in:)`](https://developer.apple.com/documentation/storekit/transaction/beginrefundrequest(for:in:)-65tph), [`beginRefundRequest(in:)`](https://developer.apple.com/documentation/storekit/transaction/beginrefundrequest(in:)-63bvd), or [`beginRefundRequest(in:)`](https://developer.apple.com/documentation/storekit/transaction/beginrefundrequest(in:)-63bvd).  If your app uses SwiftUI, it may use [`refundRequestSheet(for:isPresented:onDismiss:)`](https://developer.apple.com/documentation/swiftui/view/refundrequestsheet(for:ispresented:ondismiss:)).) Otherwise, the refund reason defaults to [`other`](https://developer.apple.com/documentation/storekit/transaction/revocationreason-swift.struct/other).
+In the testing environment, the system always approves refund requests, and processes them immediately. You can choose the reason for the refund by using [`beginRefundRequest(in:)`](../../StoreKit/transaction/beginrefundrequest%28in%29-9k0pj.md) in your app and selecting a reason. (Your app may also use [`beginRefundRequest(for:in:)`](../../StoreKit/transaction/beginrefundrequest%28for,in%29-65tph.md), [`beginRefundRequest(in:)`](../../StoreKit/transaction/beginrefundrequest%28in%29-63bvd.md), or [`beginRefundRequest(in:)`](../../StoreKit/transaction/beginrefundrequest%28in%29-63bvd.md).  If your app uses SwiftUI, it may use [`refundRequestSheet(for:isPresented:onDismiss:)`](../../SwiftUI/view/refundrequestsheet%28for,ispresented,ondismiss%29.md).) Otherwise, the refund reason defaults to [`other`](../../StoreKit/transaction/revocationreason-swift.struct/other.md).
 
-After calling this function, handle the new transaction in [`updates`](https://developer.apple.com/documentation/storekit/transaction/updates) or in your payment queue. Look for the [`revocationDate`](https://developer.apple.com/documentation/storekit/transaction/revocationdate) and [`revocationReason`](https://developer.apple.com/documentation/storekit/transaction/revocationreason-swift.property) properties, which indicate the refund.
+After calling this function, handle the new transaction in [`updates`](../../StoreKit/transaction/updates.md) or in your payment queue. Look for the [`revocationDate`](../../StoreKit/transaction/revocationdate.md) and [`revocationReason`](../../StoreKit/transaction/revocationreason-swift.property.md) properties, which indicate the refund.
 
 ## Parameters
 
-- `identifier`: The transaction [`identifier`](sktesttransaction/identifier.md) of an Apple In-App Purchase to get a refund.
+- `identifier`: The transaction [`identifier`](../sktesttransaction/identifier.md) of an Apple In-App Purchase to get a refund.
 
 ## See Also
 
-- [func buyProduct(productIdentifier: String) throws](sktestsession/buyproduct(productidentifier:).md)
+### Testing externally performed transactions
+- [func buyProduct(productIdentifier: String) throws](./buyproduct%28productidentifier%29.md)
   Simulates buying an Apple In-App Purchase or subscription outside the app.
 
 

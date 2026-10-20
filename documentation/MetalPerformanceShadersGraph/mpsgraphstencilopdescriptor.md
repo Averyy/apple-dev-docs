@@ -1,7 +1,8 @@
 # MPSGraphStencilOpDescriptor
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The class that defines the parameters for a stencil operation.
 
@@ -19,85 +20,90 @@ The class that defines the parameters for a stencil operation.
 class MPSGraphStencilOpDescriptor
 ```
 
+```objc
+@interface MPSGraphStencilOpDescriptor : MPSGraphObject
+```
+
 #### Overview
 
-Use this descriptor with the following [`MPSGraph`](mpsgraph.md) method:
+Use this descriptor with the following [`MPSGraph`](./mpsgraph.md) method:
 
-- [`stencil(withSourceTensor:weightsTensor:descriptor:name:)`](mpsgraph/stencil(withsourcetensor:weightstensor:descriptor:name:).md)
+- [`stencil(withSourceTensor:weightsTensor:descriptor:name:)`](./mpsgraph/stencil%28withsourcetensor,weightstensor,descriptor,name%29.md)
 
 ## Topics
 
 ### Initializers
-- [convenience init?(explicitPadding: [NSNumber])](mpsgraphstencilopdescriptor/init(explicitpadding:).md)
+- [convenience init?(explicitPadding: [NSNumber])](./mpsgraphstencilopdescriptor/init%28explicitpadding%29.md)
   Creates a stencil operation descriptor with default values.
-- [convenience init?(offsets: [NSNumber], explicitPadding: [NSNumber])](mpsgraphstencilopdescriptor/init(offsets:explicitpadding:).md)
+- [convenience init?(offsets: [NSNumber], explicitPadding: [NSNumber])](./mpsgraphstencilopdescriptor/init%28offsets,explicitpadding%29.md)
   Creates a stencil operation descriptor with default values.
-- [convenience init?(paddingStyle: MPSGraphPaddingStyle)](mpsgraphstencilopdescriptor/init(paddingstyle:).md)
+- [convenience init?(paddingStyle: MPSGraphPaddingStyle)](./mpsgraphstencilopdescriptor/init%28paddingstyle%29.md)
   Creates a stencil operation descriptor with default values.
-- [convenience init?(reductionMode: MPSGraphReductionMode, offsets: [NSNumber], strides: [NSNumber], dilationRates: [NSNumber], explicitPadding: [NSNumber], boundaryMode: MPSGraphPaddingMode, paddingStyle: MPSGraphPaddingStyle, paddingConstant: Float)](mpsgraphstencilopdescriptor/init(reductionmode:offsets:strides:dilationrates:explicitpadding:boundarymode:paddingstyle:paddingconstant:).md)
+- [convenience init?(reductionMode: MPSGraphReductionMode, offsets: [NSNumber], strides: [NSNumber], dilationRates: [NSNumber], explicitPadding: [NSNumber], boundaryMode: MPSGraphPaddingMode, paddingStyle: MPSGraphPaddingStyle, paddingConstant: Float)](./mpsgraphstencilopdescriptor/init%28reductionmode,offsets,strides,dilationrates,explicitpadding,boundarymode,paddingstyle,paddingconstant%29.md)
   Creates a stencil operation descriptor with given values.
 ### Instance Properties
-- [var boundaryMode: MPSGraphPaddingMode](mpsgraphstencilopdescriptor/boundarymode.md)
+- [var boundaryMode: MPSGraphPaddingMode](./mpsgraphstencilopdescriptor/boundarymode.md)
   The property that determines which values to use for padding the input tensor.
-- [var dilationRates: [NSNumber]](mpsgraphstencilopdescriptor/dilationrates.md)
+- [var dilationRates: [NSNumber]](./mpsgraphstencilopdescriptor/dilationrates.md)
   The property that defines dilation rates for spatial dimensions.
-- [var explicitPadding: [NSNumber]](mpsgraphstencilopdescriptor/explicitpadding.md)
+- [var explicitPadding: [NSNumber]](./mpsgraphstencilopdescriptor/explicitpadding.md)
   The property that defines padding values for spatial dimensions.
-- [var offsets: [NSNumber]](mpsgraphstencilopdescriptor/offsets.md)
+- [var offsets: [NSNumber]](./mpsgraphstencilopdescriptor/offsets.md)
   An array of length four that determines from which offset to start reading the input tensor.
-- [var paddingConstant: Float](mpsgraphstencilopdescriptor/paddingconstant.md)
+- [var paddingConstant: Float](./mpsgraphstencilopdescriptor/paddingconstant.md)
   The padding value for `boundaryMode = MPSGraphPaddingModeConstant`.
-- [var paddingStyle: MPSGraphPaddingStyle](mpsgraphstencilopdescriptor/paddingstyle.md)
+- [var paddingStyle: MPSGraphPaddingStyle](./mpsgraphstencilopdescriptor/paddingstyle.md)
   The property that defines what kind of padding to apply to the stencil operation.
-- [var reductionMode: MPSGraphReductionMode](mpsgraphstencilopdescriptor/reductionmode.md)
+- [var reductionMode: MPSGraphReductionMode](./mpsgraphstencilopdescriptor/reductionmode.md)
   The reduction mode to use within the stencil window.
-- [var strides: [NSNumber]](mpsgraphstencilopdescriptor/strides.md)
+- [var strides: [NSNumber]](./mpsgraphstencilopdescriptor/strides.md)
   The property that defines strides for spatial dimensions.
 
 ## Relationships
 
 ### Inherits From
-- [MPSGraphObject](mpsgraphobject.md)
+- [MPSGraphObject](./mpsgraphobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSGraph](mpsgraph.md)
+### Classes
+- [class MPSGraph](./mpsgraph.md)
   The optimized representation of a compute graph of operations and tensors.
-- [class MPSGraphCompilationDescriptor](mpsgraphcompilationdescriptor.md)
+- [class MPSGraphCompilationDescriptor](./mpsgraphcompilationdescriptor.md)
   A class that consists of all the levers for compiling graphs.
-- [class MPSGraphConvolution2DOpDescriptor](mpsgraphconvolution2dopdescriptor.md)
+- [class MPSGraphConvolution2DOpDescriptor](./mpsgraphconvolution2dopdescriptor.md)
   A class that describes the properties of a 2D-convolution operator.
-- [class MPSGraphConvolution3DOpDescriptor](mpsgraphconvolution3dopdescriptor.md)
+- [class MPSGraphConvolution3DOpDescriptor](./mpsgraphconvolution3dopdescriptor.md)
   A class that describes the properties of a 3D-convolution operator.
-- [class MPSGraphCreateSparseOpDescriptor](mpsgraphcreatesparseopdescriptor.md)
+- [class MPSGraphCreateSparseOpDescriptor](./mpsgraphcreatesparseopdescriptor.md)
   A class that describes the properties of a create sparse operation.
-- [class MPSGraphDepthwiseConvolution2DOpDescriptor](mpsgraphdepthwiseconvolution2dopdescriptor.md)
+- [class MPSGraphDepthwiseConvolution2DOpDescriptor](./mpsgraphdepthwiseconvolution2dopdescriptor.md)
   A class that defines the parameters for  a 2D-depthwise convolution operation.
-- [class MPSGraphDepthwiseConvolution3DOpDescriptor](mpsgraphdepthwiseconvolution3dopdescriptor.md)
+- [class MPSGraphDepthwiseConvolution3DOpDescriptor](./mpsgraphdepthwiseconvolution3dopdescriptor.md)
   The class that defines the parameters for a 3D-depthwise convolution operation.
-- [class MPSGraphDevice](mpsgraphdevice.md)
+- [class MPSGraphDevice](./mpsgraphdevice.md)
   A class that describes the compute device.
-- [class MPSGraphExecutable](mpsgraphexecutable.md)
+- [class MPSGraphExecutable](./mpsgraphexecutable.md)
   The compiled representation of a compute graph executable.
-- [class MPSGraphExecutableExecutionDescriptor](mpsgraphexecutableexecutiondescriptor.md)
+- [class MPSGraphExecutableExecutionDescriptor](./mpsgraphexecutableexecutiondescriptor.md)
   A class that consists of all the levers  to synchronize and schedule executable execution.
-- [class MPSGraphExecutableSerializationDescriptor](mpsgraphexecutableserializationdescriptor.md)
+- [class MPSGraphExecutableSerializationDescriptor](./mpsgraphexecutableserializationdescriptor.md)
   A class that consists of all the levers  to serialize an executable.
-- [class MPSGraphExecutionDescriptor](mpsgraphexecutiondescriptor.md)
+- [class MPSGraphExecutionDescriptor](./mpsgraphexecutiondescriptor.md)
   A class that consists of all the levers  to synchronize and schedule graph execution.
-- [class MPSGraphFFTDescriptor](mpsgraphfftdescriptor.md)
+- [class MPSGraphFFTDescriptor](./mpsgraphfftdescriptor.md)
   The class that defines the parameters for a fast Fourier transform (FFT) operation.
-- [class MPSGraphGRUDescriptor](mpsgraphgrudescriptor.md)
+- [class MPSGraphGRUDescriptor](./mpsgraphgrudescriptor.md)
   The class that defines the parameters for a gated recurrent unit (GRU) operation.
-- [class MPSGraphImToColOpDescriptor](mpsgraphimtocolopdescriptor.md)
+- [class MPSGraphImToColOpDescriptor](./mpsgraphimtocolopdescriptor.md)
   The class that defines the parameters for an image to column or column to image operation.
 
 

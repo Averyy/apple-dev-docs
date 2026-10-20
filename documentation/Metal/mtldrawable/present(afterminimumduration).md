@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Presents the drawable onscreen as soon as possible after a previous drawable is visible for the specified duration.
@@ -20,11 +21,15 @@ Presents the drawable onscreen as soon as possible after a previous drawable is 
 func present(afterMinimumDuration duration: CFTimeInterval)
 ```
 
+```objc
+- (void) presentAfterMinimumDuration:(CFTimeInterval) duration;
+```
+
 #### Discussion
 
 When a command queue schedules a command buffer for execution, it tracks whether any commands in that command buffer need to render or write to the drawable object. When you call this method, the drawable presents its contents at a future time when all render and write requests for that drawable are complete and a previous drawable has been visible onscreen for the specified duration. Use this method to schedule drawables at a regular interval.
 
-> **Note**:  To avoid presenting a drawable before any work is scheduled, or to avoid holding on to a drawable longer than necessary, call a command buffer’s [`present(_:afterMinimumDuration:)`](mtlcommandbuffer/present(_:afterminimumduration:).md) method instead. The [`present(_:afterMinimumDuration:)`](mtlcommandbuffer/present(_:afterminimumduration:).md) method is a convenience method that calls the given drawable’s [`present(afterMinimumDuration:)`](mtldrawable/present(afterminimumduration:).md) method after the command queue schedules that command buffer for execution.
+> **Note**:  To avoid presenting a drawable before any work is scheduled, or to avoid holding on to a drawable longer than necessary, call a command buffer’s [`present(_:afterMinimumDuration:)`](../mtlcommandbuffer/present%28_,afterminimumduration%29.md) method instead. The [`present(_:afterMinimumDuration:)`](../mtlcommandbuffer/present%28_,afterminimumduration%29.md) method is a convenience method that calls the given drawable’s [`present(afterMinimumDuration:)`](./present%28afterminimumduration%29.md) method after the command queue schedules that command buffer for execution.
 
 ## Parameters
 
@@ -32,9 +37,10 @@ When a command queue schedules a command buffer for execution, it tracks whether
 
 ## See Also
 
-- [func present()](mtldrawable/present.md)
+### Presenting the drawable
+- [func present()](./present%28%29.md)
   Presents the drawable onscreen as soon as possible.
-- [func present(at: CFTimeInterval)](mtldrawable/present(at:).md)
+- [func present(at: CFTimeInterval)](./present%28at%29.md)
   Presents the drawable onscreen at a specific host time.
 
 

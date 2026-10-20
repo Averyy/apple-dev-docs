@@ -1,6 +1,7 @@
 # Compressed movie resources
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Reduce file size and startup latency by compressing movie resources.
 
@@ -10,7 +11,7 @@ Most QuickTime movies have metadata in addition to their media data. Media data 
 
 Compressing movie resources using data compression typically reduces the size of the movie resource by 50% or more. For QuickTime movies that are streamed over the Internet, this can substantially reduce the startup latency of the movie, and therefore has a number of distinct advantages.
 
-#### Allowing Quicktime to Compress the Movie Resource
+#### Allowing QuickTime to Compress the Movie Resource
 
 Most application developers won’t need to know the details of how movie resources are compressed. The Movie Toolbox `FlattenMovie` and `FlattenMovieData` functions compress the movie resource if so requested by the application. To accomplish this, applications only need to set the `flattenCompressMovieResource` flag when calling either function. The QuickTime movie export component also provides users with the option of compressing the movie resource when exporting or creating a new movie through export.
 
@@ -32,9 +33,10 @@ The contents of a complete compressed movie are shown in the table below. The co
 
 ## See Also
 
-- [Reference movies](reference_movies.md)
+### Movie data
+- [Reference movies](./reference_movies.md)
   A movie that contains references to alternate movies is called a reference movie.
-- [Authoring movies with external movie targets](authoring_movies_with_external_movie_targets.md)
+- [Authoring movies with external movie targets](./authoring_movies_with_external_movie_targets.md)
   Specify elements of an external movie in your movie.
 
 

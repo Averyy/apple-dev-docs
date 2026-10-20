@@ -1,7 +1,8 @@
 # text(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A text value to be used with a `URL.Template`.
 

@@ -1,7 +1,8 @@
 # FileProvider
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures file provider settings.
 
@@ -10,7 +11,7 @@ The payload that configures file provider settings.
 
 ## Declaration
 
-```swift
+```
 object FileProvider
 ```
 
@@ -18,7 +19,7 @@ object FileProvider
 
 Specify `com.apple.fileproviderd` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.fileproviderd` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -77,31 +78,54 @@ Specify `com.apple.fileproviderd` as the payload type.
 ## Properties
 
 - `AllowManagedFileProvidersToRequestAttribution` (boolean): If `true`, enables file providers access to the path of the requesting process.
-- `ManagementAllowsExternalVolumeSyncing` (boolean): If `false`, the device only allows File Provider extension volume synchronization for the system “home” volume and any data separated volume, and prevents synchronization with any other volumes. If `true``, the device allows File Provider extension volume synchronization for the system “home” volume, any data separated volume, and any encrypted APFS volumes (on either internal or external media). Available: macOS 26.4+
-- `ManagementAllowsKnownFolderSyncing` (boolean): If `false`, the device prevents the File Provider extension from using desktop and documents synchronization in any app. This doesn’t impact the ability for apps to utilize the File Provider extension for file and folder syncing with remote storage. Available: macOS 15.2+
-- `ManagementAllowsRemoteSyncing` (boolean): If `false`, the device prevents the File Provider extension from using synchronization in any app. Also, none of the other options will be evaluated. Synchronization will be totally disabled for any application. Available: macOS 26.4+
-- `ManagementDomainAutoEnablementList` ([string]): An array of strings representing the composed identifiers of apps. The device automatically enables the File Provider domains for the corresponding apps. The device doesn’t enable existing domains if enrollment happens after they are created. The device doesn’t prevent the user from disabling these File Provider domains. Users need to manually enable File Provider domains in the Finder if their corresponding apps aren’t listed here. The format of the app identifiers is “Bundle-ID (Team-ID)”, for example `com.example.app (ABCD1234)`. Available: macOS 26.4+
-- `ManagementExternalVolumeSyncingAllowList` ([string]): An array of strings representing the composed identifiers of apps. The device allows the corresponding apps to use File Provider extension volume synchronization. If present, and `ManagementAllowsExternalVolumeSyncing` is set to `true`, the device allows only the apps in this list to use volume synchronization. This key is ignored if `ManagementAllowsExternalVolumeSyncing` is set to `false`. The format of the app identifiers is “Bundle-ID (Team-ID)”, for example `com.example.app (ABCD1234)`. Available: macOS 26.4+
-- `ManagementKnownFolderSyncingAllowList` ([string]): An array of strings representing the composed identifiers of apps. The device allows the corresponding apps to use File Provider extension desktop and documents synchronization. If present, and `ManagementAllowsKnownFolderSyncing` is set to `true`, the device allows only the apps in this list to use desktop and documents synchronization. This key is ignored if `ManagementAllowsKnownFolderSyncing` is set to `false`. This setting doesn’t impact the ability for apps to use File Provider extension volume access. The format of the app identifiers is “Bundle-ID (Team-ID)”, for example `com.example.app (ABCD1234)`. Available: macOS 15.2+
-- `ManagementRemoteSyncingAllowList` ([string]): An array of strings representing the composed identifiers of apps. The device allows the corresponding apps to use File Provider extension synchronization. If present, and `ManagementAllowsRemoteSyncing` is set to `true`, the device allows only the apps in this list to use synchronization. This key is ignored if `ManagementAllowsRemoteSyncing` is set to `false`. If present, the other options will only be evaluated for the apps in this list. The format of the app identifiers is “Bundle-ID (Team-ID)”, for example `com.example.app (ABCD1234)`. Available: macOS 26.4+
+
+  **Default**: `false`
+- `ManagementAllowsExternalVolumeSyncing` (boolean): If `false`, the device only allows File Provider extension volume synchronization for the system “home” volume and any data separated volume, and prevents synchronization with any other volumes. If `true``, the device allows File Provider extension volume synchronization for the system “home” volume, any data separated volume, and any encrypted APFS volumes (on either internal or external media).
+
+  Available: macOS 26.4+
+
+  **Default**: `true`
+- `ManagementAllowsKnownFolderSyncing` (boolean): If `false`, the device prevents the File Provider extension from using desktop and documents synchronization in any app. This doesn’t impact the ability for apps to utilize the File Provider extension for file and folder syncing with remote storage.
+
+  Available: macOS 15.2+
+
+  **Default**: `true`
+- `ManagementAllowsRemoteSyncing` (boolean): If `false`, the device prevents the File Provider extension from using synchronization in any app. Also, none of the other options will be evaluated. Synchronization will be totally disabled for any application.
+
+  Available: macOS 26.4+
+
+  **Default**: `true`
+- `ManagementDomainAutoEnablementList` ([string]): An array of strings representing the composed identifiers of apps. The device automatically enables the File Provider domains for the corresponding apps. The device doesn’t enable existing domains if enrollment happens after they are created. The device doesn’t prevent the user from disabling these File Provider domains. Users need to manually enable File Provider domains in the Finder if their corresponding apps aren’t listed here. The format of the app identifiers is “Bundle-ID (Team-ID)”, for example `com.example.app (ABCD1234)`.
+
+  Available: macOS 26.4+
+- `ManagementExternalVolumeSyncingAllowList` ([string]): An array of strings representing the composed identifiers of apps. The device allows the corresponding apps to use File Provider extension volume synchronization. If present, and `ManagementAllowsExternalVolumeSyncing` is set to `true`, the device allows only the apps in this list to use volume synchronization. This key is ignored if `ManagementAllowsExternalVolumeSyncing` is set to `false`. The format of the app identifiers is “Bundle-ID (Team-ID)”, for example `com.example.app (ABCD1234)`.
+
+  Available: macOS 26.4+
+- `ManagementKnownFolderSyncingAllowList` ([string]): An array of strings representing the composed identifiers of apps. The device allows the corresponding apps to use File Provider extension desktop and documents synchronization. If present, and `ManagementAllowsKnownFolderSyncing` is set to `true`, the device allows only the apps in this list to use desktop and documents synchronization. This key is ignored if `ManagementAllowsKnownFolderSyncing` is set to `false`. This setting doesn’t impact the ability for apps to use File Provider extension volume access. The format of the app identifiers is “Bundle-ID (Team-ID)”, for example `com.example.app (ABCD1234)`.
+
+  Available: macOS 15.2+
+- `ManagementRemoteSyncingAllowList` ([string]): An array of strings representing the composed identifiers of apps. The device allows the corresponding apps to use File Provider extension synchronization. If present, and `ManagementAllowsRemoteSyncing` is set to `true`, the device allows only the apps in this list to use synchronization. This key is ignored if `ManagementAllowsRemoteSyncing` is set to `false`. If present, the other options will only be evaluated for the apps in this list. The format of the app identifiers is “Bundle-ID (Team-ID)”, for example `com.example.app (ABCD1234)`.
+
+  Available: macOS 26.4+
 
 ## See Also
 
-- [object Declarations](declarations.md)
+### System configuration
+- [object Declarations](./declarations.md)
   The payload that applies a set of declarations to the device through the Settings app.
-- [object EnergySaver](energysaver.md)
+- [object EnergySaver](./energysaver.md)
   The payload that configures Energy Saver settings.
-- [object Font](font.md)
+- [object Font](./font.md)
   The payload that configures fonts.
-- [object LockScreenMessage](lockscreenmessage.md)
+- [object LockScreenMessage](./lockscreenmessage.md)
   The payload that configures a Lock Screen message.
-- [object Screensaver](screensaver.md)
+- [object Screensaver](./screensaver.md)
   The payload that configures the screen saver.
-- [object SystemExtensions](systemextensions.md)
+- [object SystemExtensions](./systemextensions.md)
   The payload that configures system extensions.
-- [object SystemLogging](systemlogging.md)
+- [object SystemLogging](./systemlogging.md)
   The payload that configures system logging.
-- [object TimeServer](timeserver.md)
+- [object TimeServer](./timeserver.md)
   The payload that configures the time server.
 
 

@@ -1,14 +1,15 @@
 # invalidate_icache64
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 void invalidate_icache64(addr64_t, unsigned int, int);
 ```
 

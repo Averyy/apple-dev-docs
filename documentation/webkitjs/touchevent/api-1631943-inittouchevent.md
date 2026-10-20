@@ -1,7 +1,8 @@
 # initTouchEvent
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Initializes a newly created `TouchEvent` object.
 
@@ -11,7 +12,7 @@ Initializes a newly created `TouchEvent` object.
 
 ## Declaration
 
-```swift
+```
 void initTouchEvent(
     optional DOMString type, 
     optional boolean canBubble, 
@@ -53,9 +54,9 @@ Use this method to programmatically create a `TouchEvent` object.
 - `altKey`: If `true`, the alt key is pressed; otherwise, it is not.
 - `shiftKey`: If `true`, the shift key is pressed; otherwise, it is not.
 - `metaKey`: If `true`, the meta key is pressed; otherwise, it is not.
-- `touches`: A collection of [`Touch`](touch.md) objects representing all touches associated with this event.
-- `targetTouches`: A collection of [`Touch`](touch.md) objects representing all touches associated with this target.
-- `changedTouches`: A collection of [`Touch`](touch.md) objects representing all touches that changed in this event.
+- `touches`: A collection of [`Touch`](../touch.md) objects representing all touches associated with this event.
+- `targetTouches`: A collection of [`Touch`](../touch.md) objects representing all touches associated with this target.
+- `changedTouches`: A collection of [`Touch`](../touch.md) objects representing all touches that changed in this event.
 - `scale`: The distance between two fingers since the start of an event as a multiplier of the initial distance. The initial value is `1.0`. If less than `1.0`, the gesture is pinch close (to zoom out). If greater than `1.0`, the gesture is pinch open (to zoom in).
 - `rotation`: The delta rotation since the start of an event, in degrees, where clockwise is positive and counter-clockwise is negative. The initial value is `0.0`.
 

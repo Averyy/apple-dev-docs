@@ -1,7 +1,8 @@
 # diagnosticReports
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An asynchronous sequence that delivers diagnostic reports as individual events.
 
@@ -20,11 +21,11 @@ final var diagnosticReports: some AsyncSequence<DiagnosticReport, Never> { get }
 
 ## Mentions
 
-- [Monitoring app performance with MetricKit](monitoring-app-performance-with-metrickit.md)
+- [Monitoring app performance with MetricKit](../monitoring-app-performance-with-metrickit.md)
 
 #### Discussion
 
-Iterate `diagnosticReports` in a long-lived `Task` to receive [`DiagnosticReport`](diagnosticreport.md) values. Each iteration yields a single diagnostic event, such as a crash, hang, or CPU exception. The sequence never throws.
+Iterate `diagnosticReports` in a long-lived `Task` to receive [`DiagnosticReport`](../diagnosticreport.md) values. Each iteration yields a single diagnostic event, such as a crash, hang, or CPU exception. The sequence never throws.
 
 ```swift
 Task {
@@ -40,7 +41,8 @@ Task {
 
 ## See Also
 
-- [var metricReports: some AsyncSequence<MetricReport, Never>](metricmanager/metricreports.md)
+### Reports
+- [var metricReports: some AsyncSequence<MetricReport, Never>](./metricreports.md)
   An asynchronous sequence that delivers daily metric reports.
 
 

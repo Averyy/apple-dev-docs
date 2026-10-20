@@ -1,7 +1,8 @@
 # kIOUSB30HubExtStatusRxLaneCount
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The receive lane count.
 
@@ -10,7 +11,7 @@ The receive lane count.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30HubExtStatusRxLaneCount = IOUSBBitRange(8, 11)
 ```
 

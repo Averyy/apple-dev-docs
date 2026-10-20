@@ -1,7 +1,8 @@
 # UISplitViewController.DisplayMode.twoOverSecondary
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Two sidebars are layered on top of the secondary view controller, leaving the secondary view controller partially visible.
 
@@ -17,29 +18,34 @@ Two sidebars are layered on top of the secondary view controller, leaving the se
 case twoOverSecondary
 ```
 
+```c
+UISplitViewControllerDisplayModeTwoOverSecondary
+```
+
 #### Discussion
 
-This display mode is only available for [`UISplitViewController.Style.tripleColumn`](uisplitviewcontroller/style-swift.enum/triplecolumn.md) interfaces.
+This display mode is only available for [`UISplitViewController.Style.tripleColumn`](../style-swift.enum/triplecolumn.md) interfaces.
 
-This display mode shows both sidebars layered on top of the secondary view controller, partially obscuring it. The secondary view controller is dimmed out, preventing interaction with its view. Touching the dimmed view dismisses the overlay and returns the interface to the [`UISplitViewController.DisplayMode.secondaryOnly`](uisplitviewcontroller/displaymode-swift.enum/secondaryonly.md) display mode.
+This display mode shows both sidebars layered on top of the secondary view controller, partially obscuring it. The secondary view controller is dimmed out, preventing interaction with its view. Touching the dimmed view dismisses the overlay and returns the interface to the [`UISplitViewController.DisplayMode.secondaryOnly`](./secondaryonly.md) display mode.
 
-The interactive gesture can move the interface freely through [`UISplitViewController.DisplayMode.oneOverSecondary`](uisplitviewcontroller/displaymode-swift.enum/oneoversecondary.md) to [`UISplitViewController.DisplayMode.secondaryOnly`](uisplitviewcontroller/displaymode-swift.enum/secondaryonly.md) and back, stopping at any of the display modes depending on the user interaction.
+The interactive gesture can move the interface freely through [`UISplitViewController.DisplayMode.oneOverSecondary`](./oneoversecondary.md) to [`UISplitViewController.DisplayMode.secondaryOnly`](./secondaryonly.md) and back, stopping at any of the display modes depending on the user interaction.
 
-This display mode is available for the [`UISplitViewController.SplitBehavior.overlay`](uisplitviewcontroller/splitbehavior-swift.enum/overlay.md) split behavior.
+This display mode is available for the [`UISplitViewController.SplitBehavior.overlay`](../splitbehavior-swift.enum/overlay.md) split behavior.
 
 ## See Also
 
-- [UISplitViewController.DisplayMode.automatic](uisplitviewcontroller/displaymode-swift.enum/automatic.md)
+### Constants
+- [UISplitViewController.DisplayMode.automatic](./automatic.md)
   The split view controller automatically decides the most appropriate display mode based on the device and the current app size.
-- [UISplitViewController.DisplayMode.secondaryOnly](uisplitviewcontroller/displaymode-swift.enum/secondaryonly.md)
+- [UISplitViewController.DisplayMode.secondaryOnly](./secondaryonly.md)
   Only the secondary view controller is shown onscreen.
-- [UISplitViewController.DisplayMode.oneBesideSecondary](uisplitviewcontroller/displaymode-swift.enum/onebesidesecondary.md)
+- [UISplitViewController.DisplayMode.oneBesideSecondary](./onebesidesecondary.md)
   One sidebar appears side-by-side with the secondary view controller.
-- [UISplitViewController.DisplayMode.oneOverSecondary](uisplitviewcontroller/displaymode-swift.enum/oneoversecondary.md)
+- [UISplitViewController.DisplayMode.oneOverSecondary](./oneoversecondary.md)
   One sidebar is layered on top of the secondary view controller, leaving the secondary view controller partially visible.
-- [UISplitViewController.DisplayMode.twoBesideSecondary](uisplitviewcontroller/displaymode-swift.enum/twobesidesecondary.md)
+- [UISplitViewController.DisplayMode.twoBesideSecondary](./twobesidesecondary.md)
   Two sidebars appear side-by-side with the secondary view controller.
-- [UISplitViewController.DisplayMode.twoDisplaceSecondary](uisplitviewcontroller/displaymode-swift.enum/twodisplacesecondary.md)
+- [UISplitViewController.DisplayMode.twoDisplaceSecondary](./twodisplacesecondary.md)
   Two sidebars displace the secondary view controller instead of overlapping it, moving it partially offscreen.
 
 

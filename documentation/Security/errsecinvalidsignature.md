@@ -1,7 +1,8 @@
 # errSecInvalidSignature
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid signature was detected.
 
@@ -18,6 +19,10 @@ An invalid signature was detected.
 
 ```swift
 var errSecInvalidSignature: OSStatus { get }
+```
+
+```c
+errSecInvalidSignature
 ```
 
 

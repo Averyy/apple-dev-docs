@@ -1,7 +1,8 @@
 # Date.FormatString.StringInterpolation
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 15.0+
@@ -21,35 +22,35 @@ struct StringInterpolation
 ## Topics
 
 ### Initializers
-- [init(literalCapacity: Int, interpolationCount: Int)](date/formatstring/stringinterpolation/init(literalcapacity:interpolationcount:).md)
+- [init(literalCapacity: Int, interpolationCount: Int)](./stringinterpolation/init%28literalcapacity,interpolationcount%29.md)
 ### Instance Methods
-- [func appendInterpolation(cyclicYear: Date.FormatStyle.Symbol.CyclicYear)](date/formatstring/stringinterpolation/appendinterpolation(cyclicyear:).md)
-- [func appendInterpolation(day: Date.FormatStyle.Symbol.Day)](date/formatstring/stringinterpolation/appendinterpolation(day:).md)
-- [func appendInterpolation(dayOfYear: Date.FormatStyle.Symbol.DayOfYear)](date/formatstring/stringinterpolation/appendinterpolation(dayofyear:).md)
-- [func appendInterpolation(dayPeriod: Date.FormatStyle.Symbol.DayPeriod)](date/formatstring/stringinterpolation/appendinterpolation(dayperiod:).md)
-- [func appendInterpolation(era: Date.FormatStyle.Symbol.Era)](date/formatstring/stringinterpolation/appendinterpolation(era:).md)
-- [func appendInterpolation(hour: Date.FormatStyle.Symbol.VerbatimHour)](date/formatstring/stringinterpolation/appendinterpolation(hour:).md)
-- [func appendInterpolation(minute: Date.FormatStyle.Symbol.Minute)](date/formatstring/stringinterpolation/appendinterpolation(minute:).md)
-- [func appendInterpolation(month: Date.FormatStyle.Symbol.Month)](date/formatstring/stringinterpolation/appendinterpolation(month:).md)
-- [func appendInterpolation(quarter: Date.FormatStyle.Symbol.Quarter)](date/formatstring/stringinterpolation/appendinterpolation(quarter:).md)
-- [func appendInterpolation(second: Date.FormatStyle.Symbol.Second)](date/formatstring/stringinterpolation/appendinterpolation(second:).md)
-- [func appendInterpolation(secondFraction: Date.FormatStyle.Symbol.SecondFraction)](date/formatstring/stringinterpolation/appendinterpolation(secondfraction:).md)
-- [func appendInterpolation(standaloneMonth: Date.FormatStyle.Symbol.StandaloneMonth)](date/formatstring/stringinterpolation/appendinterpolation(standalonemonth:).md)
-- [func appendInterpolation(standaloneQuarter: Date.FormatStyle.Symbol.StandaloneQuarter)](date/formatstring/stringinterpolation/appendinterpolation(standalonequarter:).md)
-- [func appendInterpolation(standaloneWeekday: Date.FormatStyle.Symbol.StandaloneWeekday)](date/formatstring/stringinterpolation/appendinterpolation(standaloneweekday:).md)
-- [func appendInterpolation(timeZone: Date.FormatStyle.Symbol.TimeZone)](date/formatstring/stringinterpolation/appendinterpolation(timezone:).md)
-- [func appendInterpolation(week: Date.FormatStyle.Symbol.Week)](date/formatstring/stringinterpolation/appendinterpolation(week:).md)
-- [func appendInterpolation(weekday: Date.FormatStyle.Symbol.Weekday)](date/formatstring/stringinterpolation/appendinterpolation(weekday:).md)
-- [func appendInterpolation(year: Date.FormatStyle.Symbol.Year)](date/formatstring/stringinterpolation/appendinterpolation(year:).md)
-- [func appendInterpolation(yearForWeekOfYear: Date.FormatStyle.Symbol.YearForWeekOfYear)](date/formatstring/stringinterpolation/appendinterpolation(yearforweekofyear:).md)
-- [func appendLiteral(String)](date/formatstring/stringinterpolation/appendliteral(_:).md)
+- [func appendInterpolation(cyclicYear: Date.FormatStyle.Symbol.CyclicYear)](./stringinterpolation/appendinterpolation%28cyclicyear%29.md)
+- [func appendInterpolation(day: Date.FormatStyle.Symbol.Day)](./stringinterpolation/appendinterpolation%28day%29.md)
+- [func appendInterpolation(dayOfYear: Date.FormatStyle.Symbol.DayOfYear)](./stringinterpolation/appendinterpolation%28dayofyear%29.md)
+- [func appendInterpolation(dayPeriod: Date.FormatStyle.Symbol.DayPeriod)](./stringinterpolation/appendinterpolation%28dayperiod%29.md)
+- [func appendInterpolation(era: Date.FormatStyle.Symbol.Era)](./stringinterpolation/appendinterpolation%28era%29.md)
+- [func appendInterpolation(hour: Date.FormatStyle.Symbol.VerbatimHour)](./stringinterpolation/appendinterpolation%28hour%29.md)
+- [func appendInterpolation(minute: Date.FormatStyle.Symbol.Minute)](./stringinterpolation/appendinterpolation%28minute%29.md)
+- [func appendInterpolation(month: Date.FormatStyle.Symbol.Month)](./stringinterpolation/appendinterpolation%28month%29.md)
+- [func appendInterpolation(quarter: Date.FormatStyle.Symbol.Quarter)](./stringinterpolation/appendinterpolation%28quarter%29.md)
+- [func appendInterpolation(second: Date.FormatStyle.Symbol.Second)](./stringinterpolation/appendinterpolation%28second%29.md)
+- [func appendInterpolation(secondFraction: Date.FormatStyle.Symbol.SecondFraction)](./stringinterpolation/appendinterpolation%28secondfraction%29.md)
+- [func appendInterpolation(standaloneMonth: Date.FormatStyle.Symbol.StandaloneMonth)](./stringinterpolation/appendinterpolation%28standalonemonth%29.md)
+- [func appendInterpolation(standaloneQuarter: Date.FormatStyle.Symbol.StandaloneQuarter)](./stringinterpolation/appendinterpolation%28standalonequarter%29.md)
+- [func appendInterpolation(standaloneWeekday: Date.FormatStyle.Symbol.StandaloneWeekday)](./stringinterpolation/appendinterpolation%28standaloneweekday%29.md)
+- [func appendInterpolation(timeZone: Date.FormatStyle.Symbol.TimeZone)](./stringinterpolation/appendinterpolation%28timezone%29.md)
+- [func appendInterpolation(week: Date.FormatStyle.Symbol.Week)](./stringinterpolation/appendinterpolation%28week%29.md)
+- [func appendInterpolation(weekday: Date.FormatStyle.Symbol.Weekday)](./stringinterpolation/appendinterpolation%28weekday%29.md)
+- [func appendInterpolation(year: Date.FormatStyle.Symbol.Year)](./stringinterpolation/appendinterpolation%28year%29.md)
+- [func appendInterpolation(yearForWeekOfYear: Date.FormatStyle.Symbol.YearForWeekOfYear)](./stringinterpolation/appendinterpolation%28yearforweekofyear%29.md)
+- [func appendLiteral(String)](./stringinterpolation/appendliteral%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [StringInterpolationProtocol](../swift/stringinterpolationprotocol.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
+- [StringInterpolationProtocol](../../../Swift/stringinterpolationprotocol.md)
 
 
 ---

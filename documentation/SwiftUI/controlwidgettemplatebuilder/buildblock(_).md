@@ -1,7 +1,8 @@
 # buildBlock(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Passes a single control widget template written as a child view through unmodified.
 

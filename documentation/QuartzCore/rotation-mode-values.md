@@ -1,19 +1,21 @@
 # Rotation Mode Values
 
-**Framework**: Core Animation
+**Framework**: Core Animation  
+**Role**: API Collection
 
-These constants are used by the [`rotationMode`](cakeyframeanimation/rotationmode.md) property.
+These constants are used by the [`rotationMode`](./cakeyframeanimation/rotationmode.md) property.
 
 ## Topics
 
 ### Constants
-- [static let rotateAuto: CAAnimationRotationMode](caanimationrotationmode/rotateauto.md)
-- [static let rotateAutoReverse: CAAnimationRotationMode](caanimationrotationmode/rotateautoreverse.md)
+- [static let rotateAuto: CAAnimationRotationMode](./caanimationrotationmode/rotateauto.md)
+- [static let rotateAutoReverse: CAAnimationRotationMode](./caanimationrotationmode/rotateautoreverse.md)
 
 ## See Also
 
-- [Value calculation modes](value-calculation-modes.md)
-  These constants are used by the [`calculationMode`](cakeyframeanimation/calculationmode.md) property.
+### Constants
+- [Value calculation modes](./value-calculation-modes.md)
+  These constants are used by the [`calculationMode`](./cakeyframeanimation/calculationmode.md) property.
 
 
 ---

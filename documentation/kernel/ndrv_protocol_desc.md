@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ndrv_protocol_desc {
     ...
 };
@@ -17,10 +17,10 @@ struct ndrv_protocol_desc {
 ## Topics
 
 ### Instance Properties
-- [demux_count](ndrv_protocol_desc/3753807-demux_count.md)
-- [demux_list](ndrv_protocol_desc/3753808-demux_list.md)
-- [protocol_family](ndrv_protocol_desc/3753809-protocol_family.md)
-- [version](ndrv_protocol_desc/3753810-version.md)
+- [demux_count](./ndrv_protocol_desc/api-3753807-demux_count.md)
+- [demux_list](./ndrv_protocol_desc/api-3753808-demux_list.md)
+- [protocol_family](./ndrv_protocol_desc/api-3753809-protocol_family.md)
+- [version](./ndrv_protocol_desc/api-3753810-version.md)
 
 
 ---

@@ -1,17 +1,22 @@
 # bitmapData
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A pointer to the bitmap data.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var bitmapData: UnsafeMutablePointer<UInt8>? { get }
+```
+
+```objc
+@property (readonly, nullable) unsigned char * bitmapData;
 ```
 
 #### Discussion
@@ -20,9 +25,11 @@ For planar data, the value in this property points to the first plane.
 
 ## See Also
 
-- [func getPixel(UnsafeMutablePointer<Int>, atX: Int, y: Int)](nsbitmapimagerep/getpixel(_:atx:y:).md)
+### Related Documentation
+- [func getPixel(UnsafeMutablePointer<Int>, atX: Int, y: Int)](./getpixel%28_,atx,y%29.md)
   Returns by indirection the pixel data for the specified location in the bitmap image representation.
-- [func getBitmapDataPlanes(UnsafeMutablePointer<UnsafeMutablePointer<UInt8>?>)](nsbitmapimagerep/getbitmapdataplanes(_:).md)
+### Getting the Bitmap Data
+- [func getBitmapDataPlanes(UnsafeMutablePointer<UnsafeMutablePointer<UInt8>?>)](./getbitmapdataplanes%28_%29.md)
   Returns by indirection bitmap data of the bitmap image representation separated into planes.
 
 

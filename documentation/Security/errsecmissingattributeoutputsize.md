@@ -1,7 +1,8 @@
 # errSecMissingAttributeOutputSize
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An output size attribute is missing.
 
@@ -18,6 +19,10 @@ An output size attribute is missing.
 
 ```swift
 var errSecMissingAttributeOutputSize: OSStatus { get }
+```
+
+```c
+errSecMissingAttributeOutputSize
 ```
 
 

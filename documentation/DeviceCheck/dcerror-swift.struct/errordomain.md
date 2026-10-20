@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: DeviceCheck  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The error domain for errors associated with DeviceCheck APIs.
 

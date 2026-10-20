@@ -1,7 +1,8 @@
 # DataDetector.Match.SemanticDetails.paymentIdentifier(_:)
 
 **Framework**: DataDetection  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A match that the data detector determines represents a payment identifier.
 
@@ -22,7 +23,7 @@ case paymentIdentifier(DataDetector.Match.SemanticDetails.PaymentIdentifier)
 
 ## Parameters
 
-- `PaymentIdentifier`: A [`DataDetector.Match.SemanticDetails.PaymentIdentifier`](datadetector/match/semanticdetails/paymentidentifier.md) structure.
+- `PaymentIdentifier`: A [`DataDetector.Match.SemanticDetails.PaymentIdentifier`](./paymentidentifier.md) structure.
 
 
 ---

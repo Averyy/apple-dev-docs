@@ -1,7 +1,8 @@
 # RecognizedItem.Barcode
 
 **Framework**: VisionKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represents a machine-readable code that the scanner recognizes.
 
@@ -19,25 +20,26 @@ struct Barcode
 ## Topics
 
 ### Getting payloads
-- [var payloadStringValue: String?](recognizeditem/barcode/payloadstringvalue.md)
+- [var payloadStringValue: String?](./barcode/payloadstringvalue.md)
   The payload or string representation for the barcode.
 ### Locating barcodes
-- [var bounds: RecognizedItem.Bounds](recognizeditem/barcode/bounds.md)
+- [var bounds: RecognizedItem.Bounds](./barcode/bounds.md)
   The location of the recognized item in the view.
-- [var observation: VNBarcodeObservation](recognizeditem/barcode/observation.md)
+- [var observation: VNBarcodeObservation](./barcode/observation.md)
   A representation of the barcode information.
 ### Identifying barcodes
-- [var id: UUID](recognizeditem/barcode/id.md)
+- [var id: UUID](./barcode/id.md)
   A unique identifier for the recognized item.
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
+- [Identifiable](../../Swift/identifiable.md)
 
 ## See Also
 
-- [case barcode(RecognizedItem.Barcode)](recognizeditem/barcode(_:).md)
+### Machine-readable items
+- [case barcode(RecognizedItem.Barcode)](./barcode%28_%29.md)
   A machine-readable barcode.
 
 

@@ -1,17 +1,22 @@
 # pasteAsRichText(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 This action method inserts the contents of the pasteboard into the receiver’s text as rich text, maintaining its attributes.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func pasteAsRichText(_ sender: Any?)
+```
+
+```objc
+- (void) pasteAsRichText:(id) sender;
 ```
 
 #### Discussion
@@ -24,11 +29,13 @@ The text is inserted at the insertion point if there is one, otherwise replacing
 
 ## See Also
 
-- [func insertText(Any)](nstextview/inserttext(_:).md)
+### Related Documentation
+- [func insertText(Any)](./inserttext%28_%29.md)
   Inserts `aString` into the receiver’s text at the insertion point if there is one, otherwise replacing the selection.
-- [func clicked(onLink: Any, at: Int)](nstextview/clicked(onlink:at:).md)
+### Clicking and pasting
+- [func clicked(onLink: Any, at: Int)](./clicked%28onlink,at%29.md)
   Causes the text view to act as if the user clicked on some text with the given link as the value of a link attribute associated with the text.
-- [func pasteAsPlainText(Any?)](nstextview/pasteasplaintext(_:).md)
+- [func pasteAsPlainText(Any?)](./pasteasplaintext%28_%29.md)
   Inserts the contents of the pasteboard into the receiver’s text as plain text.
 
 

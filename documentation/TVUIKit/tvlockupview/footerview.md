@@ -1,7 +1,8 @@
 # footerView
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A view containing footer information.
 
@@ -14,11 +15,16 @@ A view containing footer information.
 var footerView: TVLockupHeaderFooterView? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) TVLockupHeaderFooterView * footerView;
+```
+
 ## See Also
 
-- [var contentView: UIView](tvlockupview/contentview.md)
+### Adding subviews
+- [var contentView: UIView](./contentview.md)
   The main view for the lockup.
-- [var headerView: TVLockupHeaderFooterView?](tvlockupview/headerview.md)
+- [var headerView: TVLockupHeaderFooterView?](./headerview.md)
   A view containing header information.
 
 

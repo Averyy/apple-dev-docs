@@ -1,7 +1,8 @@
 # JSStringRef
 
 **Framework**: JavaScriptCore  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A UTF-16 character buffer.
 
@@ -19,6 +20,10 @@ A UTF-16 character buffer.
 typealias JSStringRef = OpaquePointer
 ```
 
+```c
+typedef struct OpaqueJSString * JSStringRef;
+```
+
 #### Discussion
 
 This is the fundamental string representation in JavaScript.
@@ -26,45 +31,46 @@ This is the fundamental string representation in JavaScript.
 ## Topics
 
 ### Creating a JavaScript String
-- [func JSStringCreateWithCharacters(UnsafePointer<JSChar>!, Int) -> JSStringRef!](jsstringcreatewithcharacters(_:_:).md)
+- [func JSStringCreateWithCharacters(UnsafePointer<JSChar>!, Int) -> JSStringRef!](./jsstringcreatewithcharacters%28_,_%29.md)
   Creates a JavaScript string from a buffer of Unicode characters.
-- [typealias JSChar](jschar.md)
+- [typealias JSChar](./jschar.md)
   A Unicode character.
-- [func JSStringCreateWithUTF8CString(UnsafePointer<CChar>!) -> JSStringRef!](jsstringcreatewithutf8cstring(_:).md)
+- [func JSStringCreateWithUTF8CString(UnsafePointer<CChar>!) -> JSStringRef!](./jsstringcreatewithutf8cstring%28_%29.md)
   Creates a JavaScript string from a null-terminated UTF-8 string.
-- [func JSStringRetain(JSStringRef!) -> JSStringRef!](jsstringretain(_:).md)
+- [func JSStringRetain(JSStringRef!) -> JSStringRef!](./jsstringretain%28_%29.md)
   Retains a JavaScript string.
-- [func JSStringRelease(JSStringRef!)](jsstringrelease(_:).md)
+- [func JSStringRelease(JSStringRef!)](./jsstringrelease%28_%29.md)
   Releases a JavaScript string.
 ### Accessing JavaScript String Information
-- [func JSStringGetLength(JSStringRef!) -> Int](jsstringgetlength(_:).md)
+- [func JSStringGetLength(JSStringRef!) -> Int](./jsstringgetlength%28_%29.md)
   Returns the number of Unicode characters in a JavaScript string.
-- [func JSStringGetCharactersPtr(JSStringRef!) -> UnsafePointer<JSChar>!](jsstringgetcharactersptr(_:).md)
+- [func JSStringGetCharactersPtr(JSStringRef!) -> UnsafePointer<JSChar>!](./jsstringgetcharactersptr%28_%29.md)
   Returns a pointer to the Unicode character buffer that serves as the backing store for a JavaScript string.
-- [func JSStringGetMaximumUTF8CStringSize(JSStringRef!) -> Int](jsstringgetmaximumutf8cstringsize(_:).md)
+- [func JSStringGetMaximumUTF8CStringSize(JSStringRef!) -> Int](./jsstringgetmaximumutf8cstringsize%28_%29.md)
   Returns the maximum number of bytes a JavaScript string uses when you convert it into a null-terminated UTF-8 string.
-- [func JSStringGetUTF8CString(JSStringRef!, UnsafeMutablePointer<CChar>!, Int) -> Int](jsstringgetutf8cstring(_:_:_:).md)
+- [func JSStringGetUTF8CString(JSStringRef!, UnsafeMutablePointer<CChar>!, Int) -> Int](./jsstringgetutf8cstring%28_,_,_%29.md)
   Converts a JavaScript string into a null-terminated UTF-8 string, and copies the result into an external byte buffer.
 ### Comparing JavaScript Strings
-- [func JSStringIsEqual(JSStringRef!, JSStringRef!) -> Bool](jsstringisequal(_:_:).md)
+- [func JSStringIsEqual(JSStringRef!, JSStringRef!) -> Bool](./jsstringisequal%28_,_%29.md)
   Tests whether two JavaScript strings match.
-- [func JSStringIsEqualToUTF8CString(JSStringRef!, UnsafePointer<CChar>!) -> Bool](jsstringisequaltoutf8cstring(_:_:).md)
+- [func JSStringIsEqualToUTF8CString(JSStringRef!, UnsafePointer<CChar>!) -> Bool](./jsstringisequaltoutf8cstring%28_,_%29.md)
   Tests whether a JavaScript string matches a null-terminated UTF-8 string.
 ### Converting to and from Core Foundation Strings
-- [func JSStringCreateWithCFString(CFString!) -> JSStringRef!](jsstringcreatewithcfstring(_:).md)
+- [func JSStringCreateWithCFString(CFString!) -> JSStringRef!](./jsstringcreatewithcfstring%28_%29.md)
   Creates a JavaScript string from a Core Foundation string.
-- [func JSStringCopyCFString(CFAllocator!, JSStringRef!) -> CFString!](jsstringcopycfstring(_:_:).md)
+- [func JSStringCopyCFString(CFAllocator!, JSStringRef!) -> CFString!](./jsstringcopycfstring%28_,_%29.md)
   Creates a Core Foundation string from a JavaScript string.
 
 ## See Also
 
-- [typealias JSContextGroupRef](jscontextgroupref.md)
+### JavaScriptCore Engine Interface
+- [typealias JSContextGroupRef](./jscontextgroupref.md)
   A group that associates JavaScript contexts with one another.
-- [typealias JSContextRef](jscontextref.md)
+- [typealias JSContextRef](./jscontextref.md)
   A JavaScript execution context.
-- [typealias JSGlobalContextRef](jsglobalcontextref.md)
+- [typealias JSGlobalContextRef](./jsglobalcontextref.md)
   A global JavaScript execution context.
-- [typealias JSClassRef](jsclassref.md)
+- [typealias JSClassRef](./jsclassref.md)
   A JavaScript class.
 
 

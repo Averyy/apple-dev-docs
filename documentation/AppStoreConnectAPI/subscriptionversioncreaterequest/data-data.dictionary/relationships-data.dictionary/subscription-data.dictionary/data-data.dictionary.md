@@ -1,7 +1,8 @@
 # SubscriptionVersionCreateRequest.Data.Relationships.Subscription.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The resource linkage data identifying the subscription associated with this request.
 
@@ -10,14 +11,14 @@ The resource linkage data identifying the subscription associated with this requ
 
 ## Declaration
 
-```swift
+```
 object SubscriptionVersionCreateRequest.Data.Relationships.Subscription.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptions`
 
 
 ---

@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the name of the device type.
 
@@ -18,6 +19,10 @@ Returns the name of the device type.
 
 ```swift
 var name: String { get }
+```
+
+```objc
+@property (nonatomic, retain, readonly) NSString * name;
 ```
 
 

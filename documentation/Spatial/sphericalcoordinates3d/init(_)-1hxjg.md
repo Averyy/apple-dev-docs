@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a double-precision spherical coordinates structure from a single-precision spherical coordinates structure.
 

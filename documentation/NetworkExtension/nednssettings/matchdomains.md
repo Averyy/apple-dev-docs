@@ -1,7 +1,8 @@
 # matchDomains
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of domain strings used to determine which DNS queries will use the DNS resolver settings contained in this object.
 
@@ -19,6 +20,10 @@ A list of domain strings used to determine which DNS queries will use the DNS re
 var matchDomains: [String]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray<NSString *> * matchDomains;
+```
+
 #### Discussion
 
 This property is used to create a “split DNS” configuration, where only hosts in certain domains are resolved using the tunnel’s DNS resolver settings. Hosts not in one of the domains in this list are resolved using the system’s default resolver.
@@ -29,17 +34,18 @@ If the VPN tunnel becomes the network’s default route, the servers listed earl
 
 ## See Also
 
-- [var servers: [String]](nednssettings/servers.md)
+### Accessing DNS properties
+- [var servers: [String]](./servers.md)
   The DNS server IP addresses.
-- [var searchDomains: [String]?](nednssettings/searchdomains.md)
+- [var searchDomains: [String]?](./searchdomains.md)
   A list of domain strings used to fully qualify single-label host names.
-- [var domainName: String?](nednssettings/domainname.md)
+- [var domainName: String?](./domainname.md)
   The primary domain of the tunnel.
-- [var matchDomainsNoSearch: Bool](nednssettings/matchdomainsnosearch.md)
+- [var matchDomainsNoSearch: Bool](./matchdomainsnosearch.md)
   A Boolean that specifies if the domains in the `matchDomains` list should not be appended to the resolver’s list of search domains.
-- [var dnsProtocol: NEDNSProtocol](nednssettings/dnsprotocol.md)
+- [var dnsProtocol: NEDNSProtocol](./dnsprotocol.md)
   The DNS protocol used by the server, such as HTTPS or TLS.
-- [enum NEDNSProtocol](nednsprotocol.md)
+- [enum NEDNSProtocol](../nednsprotocol.md)
 
 
 ---

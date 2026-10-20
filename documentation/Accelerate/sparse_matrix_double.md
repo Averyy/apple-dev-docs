@@ -1,23 +1,28 @@
 # sparse_matrix_double
 
 **Framework**: Accelerate  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Sparse matrix opaque type for double.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 typealias sparse_matrix_double = OpaquePointer
+```
+
+```c
+typedef struct sparse_m_double * sparse_matrix_double;
 ```
 
 #### Discussion
@@ -26,13 +31,14 @@ typealias sparse_matrix_double = OpaquePointer
 
 ## See Also
 
-- [typealias sparse_dimension](sparse_dimension.md)
+### Supporting types
+- [typealias sparse_dimension](./sparse_dimension.md)
   The dimension type.
-- [typealias sparse_index](sparse_index.md)
+- [typealias sparse_index](./sparse_index.md)
   The index type.
-- [typealias sparse_matrix_float](sparse_matrix_float.md)
+- [typealias sparse_matrix_float](./sparse_matrix_float.md)
   Sparse matrix opaque type for float.
-- [struct sparse_status](sparse_status.md)
+- [struct sparse_status](./sparse_status.md)
   The type reflecting the status of an operations.
 
 

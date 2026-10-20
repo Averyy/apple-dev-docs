@@ -1,7 +1,8 @@
 # restoreTrainingSession(sessionParameters:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Recreates an asynchronous hand pose classifier’s training session by restoring its saved state from the file system.
 
@@ -20,19 +21,20 @@ static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameter
 
 #### Return Value
 
-An [`MLTrainingSession`](mltrainingsession.md) that represents the hand pose classifier training session.
+An [`MLTrainingSession`](../mltrainingsession.md) that represents the hand pose classifier training session.
 
 ## Parameters
 
-- `sessionParameters`: The same [`MLTrainingSessionParameters`](mltrainingsessionparameters.md) instance that created an existing training session.
+- `sessionParameters`: The same [`MLTrainingSessionParameters`](../mltrainingsessionparameters.md) instance that created an existing training session.
 
 ## See Also
 
-- [static func train(trainingData: MLHandPoseClassifier.DataSource, parameters: MLHandPoseClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLHandPoseClassifier>](mlhandposeclassifier/train(trainingdata:parameters:sessionparameters:).md)
+### Training a hand pose classifier asynchronously
+- [static func train(trainingData: MLHandPoseClassifier.DataSource, parameters: MLHandPoseClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLHandPoseClassifier>](./train%28trainingdata,parameters,sessionparameters%29.md)
   Begins an asynchronous hand pose classifier’s training session.
-- [static func makeTrainingSession(trainingData: MLHandPoseClassifier.DataSource, parameters: MLHandPoseClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLHandPoseClassifier>](mlhandposeclassifier/maketrainingsession(trainingdata:parameters:sessionparameters:).md)
+- [static func makeTrainingSession(trainingData: MLHandPoseClassifier.DataSource, parameters: MLHandPoseClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLHandPoseClassifier>](./maketrainingsession%28trainingdata,parameters,sessionparameters%29.md)
   Creates an asynchronous hand pose classifier’s training session.
-- [static func resume(MLTrainingSession<MLHandPoseClassifier>) throws -> MLJob<MLHandPoseClassifier>](mlhandposeclassifier/resume(_:).md)
+- [static func resume(MLTrainingSession<MLHandPoseClassifier>) throws -> MLJob<MLHandPoseClassifier>](./resume%28_%29.md)
   Begins or continues an asynchronous hand pose classifier’s training session.
 
 

@@ -1,7 +1,8 @@
 # UIActivityCollaborationMode.sendCopy
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system sends a copy of the item.
 
@@ -15,6 +16,10 @@ The system sends a copy of the item.
 
 ```swift
 case sendCopy
+```
+
+```c
+UIActivityCollaborationModeSendCopy
 ```
 
 

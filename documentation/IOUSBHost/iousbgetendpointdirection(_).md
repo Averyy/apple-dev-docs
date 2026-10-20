@@ -1,7 +1,8 @@
 # IOUSBGetEndpointDirection(_:)
 
 **Framework**: IOUSBHost  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Obtains the direction of an endpoint from an endpoint descriptor.
 
@@ -15,6 +16,10 @@ Obtains the direction of an endpoint from an endpoint descriptor.
 func IOUSBGetEndpointDirection(_ descriptor: UnsafePointer<IOUSBEndpointDescriptor>!) -> UInt8
 ```
 
+```c
+uint8_t IOUSBGetEndpointDirection(const IOUSBEndpointDescriptor *descriptor);
+```
+
 #### Return Value
 
 The endpoint descriptor indicating the direction.
@@ -25,29 +30,30 @@ This method parses an endpoint descriptor to determine its transfer direction.
 
 ## Parameters
 
-- `descriptor`: An endpoint descriptor to parse. Control endpoints return [`kIOUSBEndpointDirectionUnknown`](https://developer.apple.com/documentation/kernel/tiousbendpointdirection/kiousbendpointdirectionunknown).
+- `descriptor`: An endpoint descriptor to parse. Control endpoints return [`kIOUSBEndpointDirectionUnknown`](../kernel/tiousbendpointdirection/kiousbendpointdirectionunknown.md).
 
 ## See Also
 
-- [func IOUSBGetNextEndpointDescriptor(UnsafePointer<IOUSBConfigurationDescriptor>!, UnsafePointer<IOUSBInterfaceDescriptor>!, UnsafePointer<IOUSBDescriptorHeader>!) -> UnsafePointer<IOUSBEndpointDescriptor>!](iousbgetnextendpointdescriptor(_:_:_:).md)
+### Endpoint Descriptor Parsing
+- [func IOUSBGetNextEndpointDescriptor(UnsafePointer<IOUSBConfigurationDescriptor>!, UnsafePointer<IOUSBInterfaceDescriptor>!, UnsafePointer<IOUSBDescriptorHeader>!) -> UnsafePointer<IOUSBEndpointDescriptor>!](./iousbgetnextendpointdescriptor%28_,_,_%29.md)
   Obtains the next endpoint descriptor for an interface descriptor.
-- [func IOUSBGetEndpointAddress(UnsafePointer<IOUSBEndpointDescriptor>!) -> UInt8](iousbgetendpointaddress(_:).md)
+- [func IOUSBGetEndpointAddress(UnsafePointer<IOUSBEndpointDescriptor>!) -> UInt8](./iousbgetendpointaddress%28_%29.md)
   Obtains the direction and number of an endpoint from an endpoint descriptor.
-- [func IOUSBGetEndpointNumber(UnsafePointer<IOUSBEndpointDescriptor>!) -> UInt8](iousbgetendpointnumber(_:).md)
+- [func IOUSBGetEndpointNumber(UnsafePointer<IOUSBEndpointDescriptor>!) -> UInt8](./iousbgetendpointnumber%28_%29.md)
   Obtains the number of an endpoint from an endpoint descriptor.
-- [func IOUSBGetEndpointType(UnsafePointer<IOUSBEndpointDescriptor>!) -> UInt8](iousbgetendpointtype(_:).md)
+- [func IOUSBGetEndpointType(UnsafePointer<IOUSBEndpointDescriptor>!) -> UInt8](./iousbgetendpointtype%28_%29.md)
   Obtains the type of an endpoint from an endpoint descriptor.
-- [func IOUSBGetEndpointMaxPacketSize(UInt32, UnsafePointer<IOUSBEndpointDescriptor>!) -> UInt16](iousbgetendpointmaxpacketsize(_:_:).md)
+- [func IOUSBGetEndpointMaxPacketSize(UInt32, UnsafePointer<IOUSBEndpointDescriptor>!) -> UInt16](./iousbgetendpointmaxpacketsize%28_,_%29.md)
   Obtains the maximum packet size from an endpoint descriptor.
-- [func IOUSBGetEndpointIntervalEncodedMicroframes(UInt32, UnsafePointer<IOUSBEndpointDescriptor>!) -> UInt32](iousbgetendpointintervalencodedmicroframes(_:_:).md)
+- [func IOUSBGetEndpointIntervalEncodedMicroframes(UInt32, UnsafePointer<IOUSBEndpointDescriptor>!) -> UInt32](./iousbgetendpointintervalencodedmicroframes%28_,_%29.md)
   Obtains the interval of an endpoint descriptor.
-- [func IOUSBGetEndpointIntervalMicroframes(UInt32, UnsafePointer<IOUSBEndpointDescriptor>!) -> UInt32](iousbgetendpointintervalmicroframes(_:_:).md)
+- [func IOUSBGetEndpointIntervalMicroframes(UInt32, UnsafePointer<IOUSBEndpointDescriptor>!) -> UInt32](./iousbgetendpointintervalmicroframes%28_,_%29.md)
   Obtains the interval of an endpoint descriptor.
-- [func IOUSBGetEndpointIntervalFrames(UInt32, UnsafePointer<IOUSBEndpointDescriptor>!) -> UInt32](iousbgetendpointintervalframes(_:_:).md)
+- [func IOUSBGetEndpointIntervalFrames(UInt32, UnsafePointer<IOUSBEndpointDescriptor>!) -> UInt32](./iousbgetendpointintervalframes%28_,_%29.md)
   Obtains the interval of an endpoint descriptor.
-- [func IOUSBGetEndpointMaxStreamsEncoded(UInt32, UnsafePointer<IOUSBEndpointDescriptor>!, UnsafePointer<IOUSBSuperSpeedEndpointCompanionDescriptor>!) -> UInt32](iousbgetendpointmaxstreamsencoded(_:_:_:).md)
+- [func IOUSBGetEndpointMaxStreamsEncoded(UInt32, UnsafePointer<IOUSBEndpointDescriptor>!, UnsafePointer<IOUSBSuperSpeedEndpointCompanionDescriptor>!) -> UInt32](./iousbgetendpointmaxstreamsencoded%28_,_,_%29.md)
   Obtains the number of streams that an endpoint supports.
-- [func IOUSBGetEndpointMaxStreams(UInt32, UnsafePointer<IOUSBEndpointDescriptor>!, UnsafePointer<IOUSBSuperSpeedEndpointCompanionDescriptor>!) -> UInt32](iousbgetendpointmaxstreams(_:_:_:).md)
+- [func IOUSBGetEndpointMaxStreams(UInt32, UnsafePointer<IOUSBEndpointDescriptor>!, UnsafePointer<IOUSBSuperSpeedEndpointCompanionDescriptor>!) -> UInt32](./iousbgetendpointmaxstreams%28_,_,_%29.md)
   Obtains the number of supported streams.
 
 

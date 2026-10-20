@@ -1,7 +1,8 @@
 # fetchAllLongLivedOperationIDs(completionHandler:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches the IDs of any long-lived operations that are running.
 
@@ -11,7 +12,7 @@ Fetches the IDs of any long-lived operations that are running.
 - Mac Catalyst 13.1+
 - macOS 10.12+
 - tvOS 9.2+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 - Swift 4.2+
 
@@ -31,7 +32,7 @@ The closure doesn’t return a value and takes the following parameters:
 
 A long-lived operation is one that continues to run after the user closes your app. When a long-lived operation completes, or your app or the system cancels it, it’s no longer active and CloudKit doesn’t include its ID in `outstandingOperationsByIDs`. An operation is complete when the system calls its completion handler.
 
-Use the [`longLivedOperation(for:)`](ckcontainer/longlivedoperation(for:).md) method to fetch the operation for a specific ID.
+Use the [`longLivedOperation(for:)`](./longlivedoperation%28for%29.md) method to fetch the operation for a specific ID.
 
 ## Parameters
 
@@ -39,7 +40,8 @@ Use the [`longLivedOperation(for:)`](ckcontainer/longlivedoperation(for:).md) me
 
 ## See Also
 
-- [func fetchLongLivedOperation(withID: CKOperation.ID, completionHandler: (CKOperation?, (any Error)?) -> Void)](ckcontainer/fetchlonglivedoperation(withid:completionhandler:).md)
+### Fetching Long-Lived Operations
+- [func fetchLongLivedOperation(withID: CKOperation.ID, completionHandler: (CKOperation?, (any Error)?) -> Void)](./fetchlonglivedoperation%28withid,completionhandler%29.md)
   Fetches the long-lived operation for the specified operation ID.
 
 

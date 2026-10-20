@@ -1,12 +1,13 @@
 # printInfo
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The printing information object used when the page layout panel is run.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The printing information object used when the page layout panel is run.
 var printInfo: NSPrintInfo? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) NSPrintInfo * printInfo;
+```
+
 #### Discussion
 
-The NSPrintInfo object is set using the [`beginSheet(with:modalFor:delegate:didEnd:contextInfo:)`](nspagelayout/beginsheet(with:modalfor:delegate:didend:contextinfo:).md) or [`runModal(with:)`](nspagelayout/runmodal(with:).md) method. The shared NSPrintInfo object is used if the receiver is run using [`runModal()`](nspagelayout/runmodal().md).
+The NSPrintInfo object is set using the [`beginSheet(with:modalFor:delegate:didEnd:contextInfo:)`](./beginsheet%28with,modalfor,delegate,didend,contextinfo%29.md) or [`runModal(with:)`](./runmodal%28with%29.md) method. The shared NSPrintInfo object is used if the receiver is run using [`runModal()`](./runmodal%28%29.md).
 
 ## See Also
 
-- [class NSPrintInfo](nsprintinfo.md)
+### Accessing the printing information
+- [class NSPrintInfo](../nsprintinfo.md)
   An object that stores information that’s used to generate printed output.
-- [NSPageLayout.Result](nspagelayout/result.md)
+- [NSPageLayout.Result](./result.md)
 
 
 ---

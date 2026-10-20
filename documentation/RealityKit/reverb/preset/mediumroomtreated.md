@@ -1,7 +1,8 @@
 # mediumRoomTreated
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The reverb of a medium-sized room with acoustical treatment.
 

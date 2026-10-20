@@ -1,7 +1,8 @@
 # AuthorizationRightRemove(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Removes a right from the policy database.
 
@@ -20,9 +21,13 @@ Removes a right from the policy database.
 func AuthorizationRightRemove(_ authRef: AuthorizationRef, _ rightName: UnsafePointer<CChar>) -> OSStatus
 ```
 
+```c
+OSStatus AuthorizationRightRemove(AuthorizationRef authRef, const char *rightName);
+```
+
 #### Return Value
 
-A result code. See [`Authorization Services Result Codes`](authorization-services-result-codes.md).
+A result code. See [Authorization Services Result Codes](./authorization-services-result-codes.md).
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # offlineGPUCount()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the number of GPUs not currently driving a display.
 
@@ -14,23 +15,28 @@ Returns the number of GPUs not currently driving a display.
 class func offlineGPUCount() -> UInt32
 ```
 
+```objc
++ (unsigned int) offlineGPUCount;
+```
+
 #### Return Value
 
 The number of offline GPU devices.
 
 #### Discussion
 
-If this count is greater than zero, the system has attached GPU devices that are not currently driving a display. You can use these devices for Core Image rendering by creating a context with the [`init(forOfflineGPUAtIndex:)`](cicontext/init(forofflinegpuatindex:).md) or[`init(forOfflineGPUAtIndex:colorSpace:options:sharedContext:)`](cicontext/init(forofflinegpuatindex:colorspace:options:sharedcontext:).md) method.
+If this count is greater than zero, the system has attached GPU devices that are not currently driving a display. You can use these devices for Core Image rendering by creating a context with the [`init(forOfflineGPUAtIndex:)`](./init%28forofflinegpuatindex%29.md) or[`init(forOfflineGPUAtIndex:colorSpace:options:sharedContext:)`](./init%28forofflinegpuatindex,colorspace,options,sharedcontext%29.md) method.
 
 ## See Also
 
-- [func clearCaches()](cicontext/clearcaches.md)
+### Managing Resources
+- [func clearCaches()](./clearcaches%28%29.md)
   Frees any cached data, such as temporary images, associated with the context and runs the garbage collector.
-- [func reclaimResources()](cicontext/reclaimresources.md)
+- [func reclaimResources()](./reclaimresources%28%29.md)
   Runs the garbage collector to reclaim any resources that the context no longer requires.
-- [var workingColorSpace: CGColorSpace?](cicontext/workingcolorspace.md)
+- [var workingColorSpace: CGColorSpace?](./workingcolorspace.md)
   The working color space of the Core Image context.
-- [var workingFormat: CIFormat](cicontext/workingformat.md)
+- [var workingFormat: CIFormat](./workingformat.md)
   The working pixel format of the Core Image context.
 
 

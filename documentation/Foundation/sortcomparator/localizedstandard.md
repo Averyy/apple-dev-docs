@@ -1,7 +1,8 @@
 # localizedStandard
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A comparator that compares a string using a localized, numeric comparison in the current locale.
 
@@ -20,15 +21,18 @@ A comparator that compares a string using a localized, numeric comparison in the
 static var localizedStandard: String.Comparator { get }
 ```
 
+Available when `Self` is `String.Comparator`.
+
 #### Discussion
 
-Compares [`String`](https://developer.apple.com/documentation/swift/string) in a manner similar to the Finder.
+Compares [`String`](../../Swift/string.md) in a manner similar to the Finder.
 
 ## See Also
 
-- [var order: SortOrder](sortcomparator/order.md)
+### Inspecting a Comparator
+- [var order: SortOrder](./order.md)
   The sort order that the comparator uses to compare.
-- [static var localized: String.Comparator](sortcomparator/localized.md)
+- [static var localized: String.Comparator](./localized.md)
   A comparator that compares a string using a localized comparison in the current locale.
 
 

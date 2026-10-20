@@ -1,7 +1,8 @@
 # fileURL
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the URL where the screenshot process saves the output.
 
@@ -13,6 +14,10 @@ Specifies the URL where the screenshot process saves the output.
 
 ```swift
 var fileURL: URL? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) NSURL * fileURL;
 ```
 
 #### Discussion

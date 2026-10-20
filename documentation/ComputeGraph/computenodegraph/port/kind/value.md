@@ -1,7 +1,8 @@
 # ComputeNodeGraph.Port.Kind.value
 
 **Framework**: Compute Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Carries a typed data value from source to destination. One-way read, no ordering effect.
 
@@ -12,7 +13,7 @@ Carries a typed data value from source to destination. One-way read, no ordering
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

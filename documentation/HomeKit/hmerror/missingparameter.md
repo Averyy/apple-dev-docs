@@ -1,7 +1,8 @@
 # missingParameter
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error indicating a missing parameter.
 
@@ -21,11 +22,12 @@ static var missingParameter: HMError.Code { get }
 
 ## See Also
 
-- [static var invalidParameter: HMError.Code](hmerror/invalidparameter.md)
+### Detecting parameter errors
+- [static var invalidParameter: HMError.Code](./invalidparameter.md)
   An error indicating the object is invalid for the given operation.
-- [static var nilParameter: HMError.Code](hmerror/nilparameter.md)
+- [static var nilParameter: HMError.Code](./nilparameter.md)
   An error indicating that nil was passed for an operation that does not accept nil.
-- [static var unconfiguredParameter: HMError.Code](hmerror/unconfiguredparameter.md)
+- [static var unconfiguredParameter: HMError.Code](./unconfiguredparameter.md)
   An error indicating an unconfigured parameter.
 
 

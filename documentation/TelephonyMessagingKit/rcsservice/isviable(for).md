@@ -1,7 +1,8 @@
 # isViable(for:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Queries whether the device can perform RCS operations at this time.
 
@@ -24,9 +25,10 @@ final func isViable(for cellularServiceID: CellularServiceID) -> Bool
 
 ## See Also
 
-- [var viabilityNotifications: some AsyncSequence<RCSService.ViabilityNotification, Never>](rcsservice/viabilitynotifications.md)
+### Determining service viabililty
+- [var viabilityNotifications: some AsyncSequence<RCSService.ViabilityNotification, Never>](./viabilitynotifications.md)
   An asynchronous sequence of service viability notifications produced by the service.
-- [RCSService.ViabilityNotification](rcsservice/viabilitynotification.md)
+- [RCSService.ViabilityNotification](./viabilitynotification.md)
   A notification that indicates whether RCS is viable for a given cellular service.
 
 

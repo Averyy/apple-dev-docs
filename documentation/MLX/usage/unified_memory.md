@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/usage/unified_memory.html
 
 # Unified Memory
 
-**
-
-- [.rst](../_sources/usage/unified_memory.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# Unified Memory
-
- Table of contents 
-
-## Contents
-
-# Unified Memory
-
 Apple silicon has a unified memory architecture. The CPU and GPU have direct
 access to the same memory pool. MLX is designed to take advantage of that.
 
@@ -56,7 +29,7 @@ mx.add(a, b, stream=mx.gpu)
 
 In the above, both the CPU and the GPU will perform the same add
 operation. The operations can (and likely will) be run in parallel since
-there are no dependencies between them. See [Using Streams](using_streams.html#using-streams) for more
+there are no dependencies between them. See [Using Streams](using_streams.md#using-streams) for more
 information the semantics of streams in MLX.
 
 In the above `add` example, there are no dependencies between operations, so
@@ -102,5 +75,3 @@ If we time the computation fully on the GPU, we get 2.8 milliseconds. But if we
 run the computation with `d1=mx.gpu` and `d2=mx.cpu`, then the time is only
 about 1.4 milliseconds, about twice as fast. These times were measured on an M1
 Max.
-
-** Contents

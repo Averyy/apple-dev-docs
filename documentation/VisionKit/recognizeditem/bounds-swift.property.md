@@ -1,7 +1,8 @@
 # bounds
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The four corners of the recognized item in view coordinates.
 
@@ -18,7 +19,8 @@ var bounds: RecognizedItem.Bounds { get }
 
 ## See Also
 
-- [RecognizedItem.Bounds](recognizeditem/bounds-swift.struct.md)
+### Item location
+- [RecognizedItem.Bounds](./bounds-swift.struct.md)
   An object that represents the four corners of a recognized item.
 
 

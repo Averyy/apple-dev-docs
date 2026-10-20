@@ -1,7 +1,8 @@
 # priority
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to classify the priority of SMS message content. Specify this option only if your item contains messages.
 
@@ -18,9 +19,14 @@ An option to classify the priority of SMS message content. Specify this option o
 static var priority: CSSearchableItem.UpdateListenerOptions { get }
 ```
 
+```c
+CSSearchableItemUpdateListenerOptionPriority
+```
+
 ## See Also
 
-- [static var summarization: CSSearchableItem.UpdateListenerOptions](cssearchableitem/updatelisteneroptions-swift.struct/summarization.md)
+### Getting the listener options attributes
+- [static var summarization: CSSearchableItem.UpdateListenerOptions](./summarization.md)
   An option to summarize the contents of your searchable item. Specify this option only for items that contain emails, messages, or audio transcripts.
 
 

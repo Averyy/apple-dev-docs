@@ -1,7 +1,8 @@
 # kSecCFErrorResourceMissing
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a URL indicating the location of the missing resource as it is specified in the `CodeResources` file.
 
@@ -13,6 +14,10 @@ A key whose value is a URL indicating the location of the missing resource as it
 
 ```swift
 let kSecCFErrorResourceMissing: CFString
+```
+
+```c
+extern CFStringRef const kSecCFErrorResourceMissing;
 ```
 
 #### Discussion

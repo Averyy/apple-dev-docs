@@ -1,7 +1,8 @@
 # default()
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A convenience method for creating the default IPv4 route.
 
@@ -19,6 +20,10 @@ A convenience method for creating the default IPv4 route.
 class func `default`() -> NEIPv6Route
 ```
 
+```objc
++ (NEIPv6Route * const) defaultRoute;
+```
+
 #### Return Value
 
 A `NEIPv6Route` object containing the default IPv6 route.
@@ -29,7 +34,8 @@ Set this route in the `includedRoutes` array in `NEIPv6Settings` to specify that
 
 ## See Also
 
-- [init(destinationAddress: String, networkPrefixLength: NSNumber)](neipv6route/init(destinationaddress:networkprefixlength:).md)
+### Creating an IPv6 Route
+- [init(destinationAddress: String, networkPrefixLength: NSNumber)](./init%28destinationaddress,networkprefixlength%29.md)
   Initialize the NEIPv6Route
 
 

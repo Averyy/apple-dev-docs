@@ -1,7 +1,8 @@
 # typeIdentifier
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The uniform type identifier for the data asset.
 
@@ -14,15 +15,20 @@ The uniform type identifier for the data asset.
 var typeIdentifier: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * typeIdentifier;
+```
+
 #### Discussion
 
-A uniform type identifier is a string for identifying the type of data. This UTI is the same as the one specified in the asset catalog. For more information, see [`Uniform Type Identifiers Overview`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/understanding_utis/understand_utis_intro/understand_utis_intro.html#//apple_ref/doc/uid/TP40001319).
+A uniform type identifier is a string for identifying the type of data. This UTI is the same as the one specified in the asset catalog. For more information, see [Uniform Type Identifiers Overview](https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/understanding_utis/understand_utis_intro/understand_utis_intro.html#//apple_ref/doc/uid/TP40001319).
 
 ## See Also
 
-- [var name: NSDataAsset.Name](nsdataasset/name-swift.property.md)
+### Getting data asset information
+- [var name: NSDataAsset.Name](./name-swift.property.md)
   The name of the data set in the asset catalog.
-- [NSDataAsset.Name](nsdataasset/name-swift.typealias.md)
+- [NSDataAsset.Name](./name-swift.typealias.md)
   The name of a data asset.
 
 

@@ -1,7 +1,8 @@
 # initialMovieFragmentSequenceNumber
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sequence number of the initial movie fragment.
 
@@ -19,6 +20,10 @@ The sequence number of the initial movie fragment.
 var initialMovieFragmentSequenceNumber: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSInteger initialMovieFragmentSequenceNumber;
+```
+
 #### Discussion
 
 If you combine movie fragments that you create from multiple asset writers, movie fragment sequence numbers need to increase monotonically across the entire combined collection, in temporal order. The default value of this property is `1`.
@@ -27,15 +32,16 @@ You can’t set this property after writing starts.
 
 ## See Also
 
-- [var movieFragmentInterval: CMTime](avassetwriter/moviefragmentinterval.md)
+### Configuring fragment output
+- [var movieFragmentInterval: CMTime](./moviefragmentinterval.md)
   The interval at which to write movie fragments.
-- [var initialMovieFragmentInterval: CMTime](avassetwriter/initialmoviefragmentinterval.md)
+- [var initialMovieFragmentInterval: CMTime](./initialmoviefragmentinterval.md)
   The interval at which to write the initial movie fragment.
-- [var producesCombinableFragments: Bool](avassetwriter/producescombinablefragments.md)
+- [var producesCombinableFragments: Bool](./producescombinablefragments.md)
   A Boolean value that indicates whether the asset writer outputs movie fragments suitable for combining with others.
-- [var overallDurationHint: CMTime](avassetwriter/overalldurationhint.md)
+- [var overallDurationHint: CMTime](./overalldurationhint.md)
   A hint of the final duration of the output file.
-- [var movieTimeScale: CMTimeScale](avassetwriter/movietimescale.md)
+- [var movieTimeScale: CMTimeScale](./movietimescale.md)
   The time scale of the movie.
 
 

@@ -1,7 +1,8 @@
 # UITableView.SelectionDidChangeMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -19,15 +20,15 @@ struct SelectionDidChangeMessage
 ## Topics
 
 ### Initializers
-- [init(tableView: UITableView)](uitableview/selectiondidchangemessage/init(tableview:).md)
+- [init(tableView: UITableView)](./selectiondidchangemessage/init%28tableview%29.md)
 ### Instance Properties
-- [var tableView: UITableView](uitableview/selectiondidchangemessage/tableview.md)
+- [var tableView: UITableView](./selectiondidchangemessage/tableview.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

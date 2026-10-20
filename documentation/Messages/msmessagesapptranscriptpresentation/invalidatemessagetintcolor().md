@@ -2,6 +2,7 @@
 
 **Framework**: Messages  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -13,6 +14,10 @@
 
 ```swift
 func invalidateMessageTintColor()
+```
+
+```objc
+- (void) invalidateMessageTintColor;
 ```
 
 #### Discussion

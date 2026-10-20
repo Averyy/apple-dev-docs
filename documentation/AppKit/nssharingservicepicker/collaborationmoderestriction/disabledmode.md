@@ -1,7 +1,8 @@
 # disabledMode
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of sharing which should be disabled
 
@@ -12,6 +13,10 @@ The type of sharing which should be disabled
 
 ```swift
 var disabledMode: NSSharingCollaborationMode { get }
+```
+
+```objc
+@property (readonly) NSSharingCollaborationMode disabledMode;
 ```
 
 

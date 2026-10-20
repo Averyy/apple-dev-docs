@@ -2,6 +2,7 @@
 
 **Framework**: Media Device  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Called when a user action requires discovered devices to be displayed.
@@ -20,7 +21,7 @@ func startDeviceDiscovery()
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../creating-a-media-device-extension.md)
 
 #### Discussion
 
@@ -28,7 +29,7 @@ Use the `Network`, `WiFiAware`, or `CoreBluetooth` frameworks for service discov
 
 > **Note**: During discovery, your extension will have local area network access, to include direct connections over WiFiAware and Bluetooth. It will not be permitted to connect to the internet or addresses outside the local network.
 
-As devices are found, report them to the system by calling [`foundDevice(_:)`](mediadeviceroutingmanager/founddevice(_:).md) on the routing manager. When a previously discovered device is no longer available, call [`lostDevice(_:)`](mediadeviceroutingmanager/lostdevice(_:).md). If discovery fails unexpectedly, call [`discoveryFailed(_:)`](mediadeviceroutingmanager/discoveryfailed(_:).md).
+As devices are found, report them to the system by calling [`foundDevice(_:)`](../mediadeviceroutingmanager/founddevice%28_%29.md) on the routing manager. When a previously discovered device is no longer available, call [`lostDevice(_:)`](../mediadeviceroutingmanager/lostdevice%28_%29.md). If discovery fails unexpectedly, call [`discoveryFailed(_:)`](../mediadeviceroutingmanager/discoveryfailed%28_%29.md).
 
 
 ---

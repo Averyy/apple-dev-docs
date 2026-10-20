@@ -1,17 +1,18 @@
 # AVAssetReader.Status
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that represent the possible states of an asset reader.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,43 +20,48 @@ Values that represent the possible states of an asset reader.
 enum Status
 ```
 
+```c
+enum AVAssetReaderStatus : NSInteger;
+```
+
 #### Overview
 
-You determine an asset reader’s status using its [`status`](avassetreader/status-swift.property.md) property.
+You determine an asset reader’s status using its [`status`](./status-swift.property.md) property.
 
 ## Topics
 
 ### Status values
-- [AVAssetReader.Status.unknown](avassetreader/status-swift.enum/unknown.md)
+- [AVAssetReader.Status.unknown](./status-swift.enum/unknown.md)
   The asset reader is in an unknown state.
-- [AVAssetReader.Status.reading](avassetreader/status-swift.enum/reading.md)
+- [AVAssetReader.Status.reading](./status-swift.enum/reading.md)
   The asset reader is successfully reading samples from its asset.
-- [AVAssetReader.Status.completed](avassetreader/status-swift.enum/completed.md)
+- [AVAssetReader.Status.completed](./status-swift.enum/completed.md)
   The asset reader completes reading all samples within its specified time range.
-- [AVAssetReader.Status.failed](avassetreader/status-swift.enum/failed.md)
+- [AVAssetReader.Status.failed](./status-swift.enum/failed.md)
   The asset reader can no longer read samples from its asset because of an error.
-- [AVAssetReader.Status.cancelled](avassetreader/status-swift.enum/cancelled.md)
+- [AVAssetReader.Status.cancelled](./status-swift.enum/cancelled.md)
   The asset reader can no longer read samples because you canceled reading.
 ### Initializers
-- [init?(rawValue: Int)](avassetreader/status-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./status-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var timeRange: CMTimeRange](avassetreader/timerange.md)
+### Configuring reading
+- [var timeRange: CMTimeRange](./timerange.md)
   The time range within the asset to read.
-- [var status: AVAssetReader.Status](avassetreader/status-swift.property.md)
+- [var status: AVAssetReader.Status](./status-swift.property.md)
   The status of reading sample buffers from the asset.
-- [var error: (any Error)?](avassetreader/error.md)
+- [var error: (any Error)?](./error.md)
   An error that describes the reason for a failure.
 
 

@@ -1,18 +1,19 @@
 # init(rawValue:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance with the specified raw value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,7 +23,8 @@ init(rawValue: UInt32)
 
 ## See Also
 
-- [init(UInt32)](bnnsgraphmessagelevel/init(_:).md)
+### Graph message levels
+- [init(UInt32)](./init%28_%29.md)
   Creates a new instance.
 
 

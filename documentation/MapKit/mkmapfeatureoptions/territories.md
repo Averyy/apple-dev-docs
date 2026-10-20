@@ -1,7 +1,8 @@
 # territories
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The option that represents territorial boundaries such as a national border, a state boundary, or a neighborhood.
 
@@ -17,11 +18,16 @@ The option that represents territorial boundaries such as a national border, a s
 static var territories: MKMapFeatureOptions { get }
 ```
 
+```c
+MKMapFeatureOptionTerritories
+```
+
 ## See Also
 
-- [static var physicalFeatures: MKMapFeatureOptions](mkmapfeatureoptions/physicalfeatures.md)
+### Selecting interactive map features
+- [static var physicalFeatures: MKMapFeatureOptions](./physicalfeatures.md)
   The option that represents physical map features such as mountain ranges, rivers, and ocean basins.
-- [static var pointsOfInterest: MKMapFeatureOptions](mkmapfeatureoptions/pointsofinterest.md)
+- [static var pointsOfInterest: MKMapFeatureOptions](./pointsofinterest.md)
   The option that represents points of interest such as museums, cafes, parks, or schools.
 
 

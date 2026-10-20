@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Prepare for animations for the content that Writing Tools is evaluating.
@@ -15,20 +16,28 @@ Prepare for animations for the content that Writing Tools is evaluating.
 ## Declaration
 
 ```swift
+func writingToolsCoordinator(_ writingToolsCoordinator: UIWritingToolsCoordinator, prepareFor textAnimation: UIWritingToolsCoordinator.TextAnimation, for range: NSRange, in context: UIWritingToolsCoordinator.Context, completion: @escaping @Sendable () -> Void)
+```
+
+```swift
 func writingToolsCoordinator(_ writingToolsCoordinator: UIWritingToolsCoordinator, prepareFor textAnimation: UIWritingToolsCoordinator.TextAnimation, for range: NSRange, in context: UIWritingToolsCoordinator.Context) async
+```
+
+```objc
+- (void) writingToolsCoordinator:(UIWritingToolsCoordinator *) writingToolsCoordinator prepareForTextAnimation:(UIWritingToolsCoordinatorTextAnimation) textAnimation forRange:(NSRange) range inContext:(UIWritingToolsCoordinatorContext *) context completion:(void (^)()) completion;
 ```
 
 ## Mentions
 
-- [Adding Writing Tools support to a custom UIKit view](adding-writing-tools-support-to-a-custom-uiview.md)
+- [Adding Writing Tools support to a custom UIKit view](../../adding-writing-tools-support-to-a-custom-uiview.md)
 
 #### Discussion
 
-During an interactive evaluation of your view’s text, Writing Tools creates different animations to provide feedback on what’s happening. For example, it creates an [`UIWritingToolsCoordinator.TextAnimation.anticipate`](uiwritingtoolscoordinator/textanimation/anticipate.md) animation to let people know the system is evaluating the text. The `textAnimation` parameter tells you what type of animation to prepare for.
+During an interactive evaluation of your view’s text, Writing Tools creates different animations to provide feedback on what’s happening. For example, it creates an [`UIWritingToolsCoordinator.TextAnimation.anticipate`](../textanimation/anticipate.md) animation to let people know the system is evaluating the text. The `textAnimation` parameter tells you what type of animation to prepare for.
 
-Use this method to prepare for the system-provided animations of your view’s content. For interactive animations, hide the text in the specified range temporarily while the system animations run. For non-interactive animations, dim the text for the duration of the animation to indicate it’s not editable. For animations to remove or insert text, you can also use this method to set up animations to reflow your view’s content to match the changes. At the end of a given animation, use your delegate’s [`writingToolsCoordinator(_:finish:for:in:completion:)`](uiwritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:finish:for:in:completion:).md) method to undo any changes you make to your content.
+Use this method to prepare for the system-provided animations of your view’s content. For interactive animations, hide the text in the specified range temporarily while the system animations run. For non-interactive animations, dim the text for the duration of the animation to indicate it’s not editable. For animations to remove or insert text, you can also use this method to set up animations to reflow your view’s content to match the changes. At the end of a given animation, use your delegate’s [`writingToolsCoordinator(_:finish:for:in:completion:)`](./writingtoolscoordinator%28_,finish,for,in,completion%29.md) method to undo any changes you make to your content.
 
-For a single animation type, the system calls the `writingToolsCoordinator(_:requestsPreviewFor:range:context:completion:)` method, followed sequentially by this method and the [`writingToolsCoordinator(_:finish:for:in:completion:)`](uiwritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:finish:for:in:completion:).md) method. Each method executes asynchronously, but the system calls the next method in the sequence only after you call the completion handler of the previous method. However, multiple animations can run simultaneously, so check the `textAnimation` and `range` parameters to differentiate sequences.
+For a single animation type, the system calls the `writingToolsCoordinator(_:requestsPreviewFor:range:context:completion:)` method, followed sequentially by this method and the [`writingToolsCoordinator(_:finish:for:in:completion:)`](./writingtoolscoordinator%28_,finish,for,in,completion%29.md) method. Each method executes asynchronously, but the system calls the next method in the sequence only after you call the completion handler of the previous method. However, multiple animations can run simultaneously, so check the `textAnimation` and `range` parameters to differentiate sequences.
 
 ## Parameters
 
@@ -40,9 +49,10 @@ For a single animation type, the system calls the `writingToolsCoordinator(_:req
 
 ## See Also
 
-- [func writingToolsCoordinator(UIWritingToolsCoordinator, requestsPreviewFor: UIWritingToolsCoordinator.TextAnimation, of: NSRange, in: UIWritingToolsCoordinator.Context, completion: (UITargetedPreview?) -> Void)](uiwritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:requestspreviewfor:of:in:completion:).md)
+### Animating inline text changes
+- [func writingToolsCoordinator(UIWritingToolsCoordinator, requestsPreviewFor: UIWritingToolsCoordinator.TextAnimation, of: NSRange, in: UIWritingToolsCoordinator.Context, completion: (UITargetedPreview?) -> Void)](./writingtoolscoordinator%28_,requestspreviewfor,of,in,completion%29.md)
   Asks the delegate for a preview image and layout information for the specified text.
-- [func writingToolsCoordinator(UIWritingToolsCoordinator, finish: UIWritingToolsCoordinator.TextAnimation, for: NSRange, in: UIWritingToolsCoordinator.Context, completion: () -> Void)](uiwritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:finish:for:in:completion:).md)
+- [func writingToolsCoordinator(UIWritingToolsCoordinator, finish: UIWritingToolsCoordinator.TextAnimation, for: NSRange, in: UIWritingToolsCoordinator.Context, completion: () -> Void)](./writingtoolscoordinator%28_,finish,for,in,completion%29.md)
   Asks the delegate to clean up any state related to the specified Writing Tools animation.
 
 

@@ -1,7 +1,8 @@
 # loadMetadata(of:)
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Downloads the metadata for the attachment asynchronously and delivers it as the type you specify.
 
@@ -33,7 +34,8 @@ Use this function to retrieve any metadata you included with the attachment. You
 
 ## See Also
 
-- [func load<AttachmentType>(AttachmentType.Type) async throws -> AttachmentType](groupsessionjournal/attachment/load(_:).md)
+### Downloading the attachment data
+- [func load<AttachmentType>(AttachmentType.Type) async throws -> AttachmentType](./load%28_%29.md)
   Downloads the attachment data and asynchronously delivers it as the type you specify.
 
 

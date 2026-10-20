@@ -1,7 +1,8 @@
 # kCVReturnInvalidPoolAttributes
 
 **Framework**: Core Video  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A buffer pool cannot be created with the specified attributes.
 
@@ -20,14 +21,19 @@ A buffer pool cannot be created with the specified attributes.
 var kCVReturnInvalidPoolAttributes: CVReturn { get }
 ```
 
+```c
+kCVReturnInvalidPoolAttributes
+```
+
 ## See Also
 
-- [var kCVReturnRetry: CVReturn](kcvreturnretry.md)
+### Buffer Pool
+- [var kCVReturnRetry: CVReturn](./kcvreturnretry.md)
   A scan hasn’t completely traversed the `CVBufferPool` due to a concurrent operation.
-- [var kCVReturnPoolAllocationFailed: CVReturn](kcvreturnpoolallocationfailed.md)
+- [var kCVReturnPoolAllocationFailed: CVReturn](./kcvreturnpoolallocationfailed.md)
   Allocation for a buffer pool failed, most likely due to a lack of resources. Check to make sure your parameters are in range.
-- [var kCVReturnWouldExceedAllocationThreshold: CVReturn](kcvreturnwouldexceedallocationthreshold.md)
-  Allocation for a pixel buffer failed because the threshold value set for the [`kCVPixelBufferPoolAllocationThresholdKey`](kcvpixelbufferpoolallocationthresholdkey.md) key in the [`CVPixelBufferPoolCreatePixelBufferWithAuxAttributes(_:_:_:_:)`](cvpixelbufferpoolcreatepixelbufferwithauxattributes(_:_:_:_:).md) function would be surpassed.
+- [var kCVReturnWouldExceedAllocationThreshold: CVReturn](./kcvreturnwouldexceedallocationthreshold.md)
+  Allocation for a pixel buffer failed because the threshold value set for the [`kCVPixelBufferPoolAllocationThresholdKey`](./kcvpixelbufferpoolallocationthresholdkey.md) key in the [`CVPixelBufferPoolCreatePixelBufferWithAuxAttributes(_:_:_:_:)`](./cvpixelbufferpoolcreatepixelbufferwithauxattributes%28_,_,_,_%29.md) function would be surpassed.
 
 
 ---

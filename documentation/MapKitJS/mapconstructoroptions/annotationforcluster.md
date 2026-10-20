@@ -1,7 +1,8 @@
 # annotationForCluster
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 Modifies cluster annotations.
 
@@ -10,7 +11,7 @@ Modifies cluster annotations.
 
 ## Declaration
 
-```swift
+```
 annotationForCluster?: (
     clusterAnnotation: ClusterAnnotation,
 ) => Annotation | undefined;
@@ -18,13 +19,14 @@ annotationForCluster?: (
 
 #### Discussion
 
-See [`annotationForCluster`](map/annotationforcluster.md) for more details.
+See [`annotationForCluster`](../map/annotationforcluster.md) for more details.
 
 ## See Also
 
-- [annotations](mapconstructoroptions/annotations.md)
+### Configuring map annotations
+- [annotations](./annotations.md)
   An array holding all the annotations on the map.
-- [selectedAnnotation](mapconstructoroptions/selectedannotation.md)
+- [selectedAnnotation](./selectedannotation.md)
   The selected annotation on the map.
 
 

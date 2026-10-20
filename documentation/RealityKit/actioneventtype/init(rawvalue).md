@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an action event type from a raw value.
 
@@ -25,7 +26,8 @@ init(rawValue: UInt)
 
 ## See Also
 
-- [let rawValue: UInt](actioneventtype/rawvalue.md)
+### Protocol support
+- [let rawValue: UInt](./rawvalue.md)
   The backing storage for action event types.
 
 

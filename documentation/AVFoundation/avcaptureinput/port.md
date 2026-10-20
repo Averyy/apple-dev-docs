@@ -1,7 +1,8 @@
 # AVCaptureInput.Port
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a stream of data that a capture input provides.
 
@@ -18,47 +19,52 @@ An object that represents a stream of data that a capture input provides.
 class Port
 ```
 
+```objc
+@interface AVCaptureInputPort : NSObject
+```
+
 #### Overview
 
-Instances of [`AVCaptureInput`](avcaptureinput.md) have one or more input ports, one for each data stream they can produce. For example, an [`AVCaptureDeviceInput`](avcapturedeviceinput.md) object presenting one video data stream has one port.
+Instances of [`AVCaptureInput`](../avcaptureinput.md) have one or more input ports, one for each data stream they can produce. For example, an [`AVCaptureDeviceInput`](../avcapturedeviceinput.md) object presenting one video data stream has one port.
 
 ## Topics
 
 ### Inspecting an input port
-- [var isEnabled: Bool](avcaptureinput/port/isenabled.md)
+- [var isEnabled: Bool](./port/isenabled.md)
   A Boolean value that indicates whether the port is in an enabled state.
-- [var mediaType: AVMediaType](avcaptureinput/port/mediatype.md)
+- [var mediaType: AVMediaType](./port/mediatype.md)
   The media type of the port.
-- [var formatDescription: CMFormatDescription?](avcaptureinput/port/formatdescription.md)
+- [var formatDescription: CMFormatDescription?](./port/formatdescription.md)
   A description of the port format.
-- [var sourceDeviceType: AVCaptureDevice.DeviceType?](avcaptureinput/port/sourcedevicetype.md)
+- [var sourceDeviceType: AVCaptureDevice.DeviceType?](./port/sourcedevicetype.md)
   The device type of the source camera that provides data to the port.
-- [var sourceDevicePosition: AVCaptureDevice.Position](avcaptureinput/port/sourcedeviceposition.md)
+- [var sourceDevicePosition: AVCaptureDevice.Position](./port/sourcedeviceposition.md)
   The position of the source device providing input through this port.
-- [var clock: CMClock?](avcaptureinput/port/clock.md)
+- [var clock: CMClock?](./port/clock.md)
   An object that represents the capture device’s clock.
 ### Observing format changes
-- [class let formatDescriptionDidChangeNotification: NSNotification.Name](avcaptureinput/port/formatdescriptiondidchangenotification.md)
+- [class let formatDescriptionDidChangeNotification: NSNotification.Name](./port/formatdescriptiondidchangenotification.md)
   A notification the system posts when the capture input port’s format description changes.
 ### Accessing the input
-- [var input: AVCaptureInput](avcaptureinput/port/input.md)
+- [var input: AVCaptureInput](./port/input.md)
   The input object that owns the port.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var ports: [AVCaptureInput.Port]](avcaptureinput/ports.md)
+### Accessing ports
+- [var ports: [AVCaptureInput.Port]](./ports.md)
   The ports available on a capture input.
 
 

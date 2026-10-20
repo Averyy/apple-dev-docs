@@ -1,7 +1,8 @@
 # BrandsReportingRequest
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Request body for brands reporting queries.
 
@@ -10,7 +11,7 @@ Request body for brands reporting queries.
 
 ## Declaration
 
-```swift
+```
 object BrandsReportingRequest
 ```
 
@@ -65,45 +66,47 @@ The `BrandsReportingRequest` object is the request body for all `brands` entity-
 
 ## Properties
 
-- `pagination` (RequestPagination): Pagination settings for the report results. See [`RequestPagination`](requestpagination.md) for details.
-- `sorting` ([Sorting]): Sort entities in ascending or descending order. The default behavior is to sort by ID, ascending. See [`Sorting`](sorting.md) for details.
-- `filters` ([Filter]): Filter field conditions for the report. See [`Filter`](filter.md) for details.
+- `pagination` (RequestPagination): Pagination settings for the report results. See [`RequestPagination`](./requestpagination.md) for details.
+- `sorting` ([Sorting]): Sort entities in ascending or descending order. The default behavior is to sort by ID, ascending. See [`Sorting`](./sorting.md) for details.
+- `filters` ([Filter]): Filter field conditions for the report. See [`Filter`](./filter.md) for details.
 - `fields` ([string]): A list of field names to return in the response. If omitted, all fields are returned.
 - `groupBy` ([string]): Groups responses by selected dimensions. Supported values for `brands` campaign, ad group, and ad entities: `deviceClass`, `locationId`, `supplyPlacement`. Note: `KEYWORD` and `SEARCHTERM` entities exclude both `supplyPlacement` and `locationId`.
-- `timeRange` (TimeRange): The date range, timezone, and granularity for report data. Defines the start and end dates for the reporting period. See [`TimeRange`](timerange.md) for details.
-- `options` (BrandsOptions): Options to include additional rows in the report. Note: EMPTY_METRICS is not supported for any `brands` entity. See [`BrandsOptions`](brandsoptions.md) for details.
+
+  **Allowed Values**: `deviceClass`, `locationId`, `supplyPlacement`
+- `timeRange` (TimeRange): The date range, timezone, and granularity for report data. Defines the start and end dates for the reporting period. See [`TimeRange`](./timerange.md) for details.
+- `options` (BrandsOptions): Options to include additional rows in the report. Note: EMPTY_METRICS is not supported for any `brands` entity. See [`BrandsOptions`](./brandsoptions.md) for details.
 
 ## See Also
 
-- [object BrandsReportingCampaign](brandsreportingcampaign.md)
+- [object BrandsReportingCampaign](./brandsreportingcampaign.md)
   Campaign metadata for Apple Maps report rows.
-- [object BrandsReportingAdGroup](brandsreportingadgroup.md)
+- [object BrandsReportingAdGroup](./brandsreportingadgroup.md)
   Ad group metadata for brands report rows.
-- [object BrandsReportingAd](brandsreportingad.md)
+- [object BrandsReportingAd](./brandsreportingad.md)
   Ad metadata for brands report rows.
-- [object BrandsReportingCreative](brandsreportingcreative.md)
+- [object BrandsReportingCreative](./brandsreportingcreative.md)
   Creative metadata for brands ads.
-- [object BrandsReportingKeyword](brandsreportingkeyword.md)
+- [object BrandsReportingKeyword](./brandsreportingkeyword.md)
   Keyword metadata for brands report rows, extending the base reporting keyword with brands-only internal fields.
-- [object BrandsReportingSearchTerm](brandsreportingsearchterm.md)
+- [object BrandsReportingSearchTerm](./brandsreportingsearchterm.md)
   Search term metadata for brands report rows, extending the base reporting search term with brands-only internal fields.
-- [object BrandsCampaignReportResponse](brandscampaignreportresponse.md)
+- [object BrandsCampaignReportResponse](./brandscampaignreportresponse.md)
   The top-level response envelope for Apple Maps campaign-level reports.
-- [object BrandsCampaignReportRow](brandscampaignreportrow.md)
+- [object BrandsCampaignReportRow](./brandscampaignreportrow.md)
   A single row in an Apple Maps campaign report, containing campaign metadata, total metrics, and optional granular time-series metrics.
-- [object BrandsCampaignReportSummary](brandscampaignreportsummary.md)
+- [object BrandsCampaignReportSummary](./brandscampaignreportsummary.md)
   The grand-total metrics aggregated across all rows in an Apple Maps campaign report.
-- [object BrandsCampaignResultContainer](brandscampaignresultcontainer.md)
+- [object BrandsCampaignResultContainer](./brandscampaignresultcontainer.md)
   Wraps the array of Apple Maps campaign report rows along with a grand-total summary.
-- [object BrandsAdGroupReportResponse](brandsadgroupreportresponse.md)
+- [object BrandsAdGroupReportResponse](./brandsadgroupreportresponse.md)
   The top-level response envelope for brands ad group reports.
-- [object BrandsAdGroupReportRow](brandsadgroupreportrow.md)
+- [object BrandsAdGroupReportRow](./brandsadgroupreportrow.md)
   A single row in a Brands (Apple Maps) ad group report, pairing ad group metadata with total and granular performance metrics.
-- [object BrandsAdGroupReportSummary](brandsadgroupreportsummary.md)
+- [object BrandsAdGroupReportSummary](./brandsadgroupreportsummary.md)
   The grand-total metrics aggregated across all rows in a Brands ad group report.
-- [object BrandsAdGroupResultContainer](brandsadgroupresultcontainer.md)
+- [object BrandsAdGroupResultContainer](./brandsadgroupresultcontainer.md)
   Wraps the array of Brands ad group report rows along with a grand-total summary.
-- [object BrandsAdReportResponse](brandsadreportresponse.md)
+- [object BrandsAdReportResponse](./brandsadreportresponse.md)
   The top-level response envelope for brands ad-level reports.
 
 

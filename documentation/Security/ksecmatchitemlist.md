@@ -1,7 +1,8 @@
 # kSecMatchItemList
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value indicates a list of items to search.
 
@@ -20,19 +21,23 @@ A key whose value indicates a list of items to search.
 let kSecMatchItemList: CFString
 ```
 
+```c
+extern CFStringRef const kSecMatchItemList;
+```
+
 ## Mentions
 
-- [Updating and deleting keychain items](updating-and-deleting-keychain-items.md)
+- [Updating and deleting keychain items](./updating-and-deleting-keychain-items.md)
 
 #### Discussion
 
-To provide your own set of items to be filtered by a search query rather than searching the keychain, specify this search key in a call to the [`SecItemCopyMatching(_:_:)`](secitemcopymatching(_:_:).md) function with a value that consists of an object of type [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) where the array contains either [`SecKeychainItem`](seckeychainitem.md), [`SecKey`](seckey.md), [`SecCertificate`](seccertificate.md), [`SecIdentity`](secidentity.md), or [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) items. The objects in the provided array must all be of the same type.
+To provide your own set of items to be filtered by a search query rather than searching the keychain, specify this search key in a call to the [`SecItemCopyMatching(_:_:)`](./secitemcopymatching%28_,_%29.md) function with a value that consists of an object of type [`CFArray`](../CoreFoundation/cfarray.md) where the array contains either [`SecKeychainItem`](./seckeychainitem.md), [`SecKey`](./seckey.md), [`SecCertificate`](./seccertificate.md), [`SecIdentity`](./secidentity.md), or [`CFData`](../CoreFoundation/cfdata.md) items. The objects in the provided array must all be of the same type.
 
-To convert from persistent item references to normal item references, specify this search key in a call to the [`SecItemCopyMatching(_:_:)`](secitemcopymatching(_:_:).md) function with a value of type [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) where the array contains one or more [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) elements (the persistent references), and a return-type key of [`kSecReturnRef`](ksecreturnref.md) whose value is [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue).
+To convert from persistent item references to normal item references, specify this search key in a call to the [`SecItemCopyMatching(_:_:)`](./secitemcopymatching%28_,_%29.md) function with a value of type [`CFArray`](../CoreFoundation/cfarray.md) where the array contains one or more [`CFData`](../CoreFoundation/cfdata.md) elements (the persistent references), and a return-type key of [`kSecReturnRef`](./ksecreturnref.md) whose value is [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md).
 
-To delete an item identified by a transient reference, specify the [`kSecMatchItemList`](ksecmatchitemlist.md) search key in a call to the [`SecItemDelete(_:)`](secitemdelete(_:).md) function with a reference returned by using the [`kSecReturnRef`](ksecreturnref.md) return type key in a previous call to the [`SecItemCopyMatching(_:_:)`](secitemcopymatching(_:_:).md) or [`SecItemAdd(_:_:)`](secitemadd(_:_:).md) functions.
+To delete an item identified by a transient reference, specify the [`kSecMatchItemList`](./ksecmatchitemlist.md) search key in a call to the [`SecItemDelete(_:)`](./secitemdelete%28_%29.md) function with a reference returned by using the [`kSecReturnRef`](./ksecreturnref.md) return type key in a previous call to the [`SecItemCopyMatching(_:_:)`](./secitemcopymatching%28_,_%29.md) or [`SecItemAdd(_:_:)`](./secitemadd%28_,_%29.md) functions.
 
-To delete an item identified by a persistent reference, specify the [`kSecMatchItemList`](ksecmatchitemlist.md) search key in a call to the [`SecItemDelete(_:)`](secitemdelete(_:).md) function with a persistent reference returned by using the [`kSecReturnPersistentRef`](ksecreturnpersistentref.md) return type key to the [`SecItemCopyMatching(_:_:)`](secitemcopymatching(_:_:).md) or [`SecItemAdd(_:_:)`](secitemadd(_:_:).md) functions.
+To delete an item identified by a persistent reference, specify the [`kSecMatchItemList`](./ksecmatchitemlist.md) search key in a call to the [`SecItemDelete(_:)`](./secitemdelete%28_%29.md) function with a persistent reference returned by using the [`kSecReturnPersistentRef`](./ksecreturnpersistentref.md) return type key to the [`SecItemCopyMatching(_:_:)`](./secitemcopymatching%28_,_%29.md) or [`SecItemAdd(_:_:)`](./secitemadd%28_,_%29.md) functions.
 
 
 ---

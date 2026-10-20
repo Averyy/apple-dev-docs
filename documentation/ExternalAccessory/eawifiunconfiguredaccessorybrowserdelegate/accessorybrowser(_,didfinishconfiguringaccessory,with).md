@@ -2,6 +2,7 @@
 
 **Framework**: External Accessory  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Indicates that the browser has completed configuring the specified accessory.
@@ -18,20 +19,25 @@ Indicates that the browser has completed configuring the specified accessory.
 func accessoryBrowser(_ browser: EAWiFiUnconfiguredAccessoryBrowser, didFinishConfiguringAccessory accessory: EAWiFiUnconfiguredAccessory, with status: EAWiFiUnconfiguredAccessoryConfigurationStatus)
 ```
 
+```objc
+- (void) accessoryBrowser:(EAWiFiUnconfiguredAccessoryBrowser *) browser didFinishConfiguringAccessory:(EAWiFiUnconfiguredAccessory *) accessory withStatus:(EAWiFiUnconfiguredAccessoryConfigurationStatus) status;
+```
+
 #### Discussion
 
 This method is called when the system-provided configuration view has been dismissed, revealing the part of the app’s user interface that was visible before the configuration process began. If the configuration was successful, the app can begin communicating with the accessory.
 
 ## Parameters
 
-- `browser`: The instance of [`EAWiFiUnconfiguredAccessoryBrowser`](eawifiunconfiguredaccessorybrowser.md) that is generating the event.
-- `accessory`: The [`EAWiFiUnconfiguredAccessory`](eawifiunconfiguredaccessory.md) object whose configuration process has completed.
-- `status`: The status of the completed configuration process. See [`EAWiFiUnconfiguredAccessoryConfigurationStatus`](eawifiunconfiguredaccessoryconfigurationstatus.md) for possible values.
+- `browser`: The instance of [`EAWiFiUnconfiguredAccessoryBrowser`](../eawifiunconfiguredaccessorybrowser.md) that is generating the event.
+- `accessory`: The [`EAWiFiUnconfiguredAccessory`](../eawifiunconfiguredaccessory.md) object whose configuration process has completed.
+- `status`: The status of the completed configuration process. See [`EAWiFiUnconfiguredAccessoryConfigurationStatus`](../eawifiunconfiguredaccessoryconfigurationstatus.md) for possible values.
 
 ## See Also
 
-- [enum EAWiFiUnconfiguredAccessoryConfigurationStatus](eawifiunconfiguredaccessoryconfigurationstatus.md)
-  Values that represent the state of the configuration process for an [`EAWiFiUnconfiguredAccessory`](eawifiunconfiguredaccessory.md) object.
+### Getting Updates About the Configuration Process
+- [enum EAWiFiUnconfiguredAccessoryConfigurationStatus](../eawifiunconfiguredaccessoryconfigurationstatus.md)
+  Values that represent the state of the configuration process for an [`EAWiFiUnconfiguredAccessory`](../eawifiunconfiguredaccessory.md) object.
 
 
 ---

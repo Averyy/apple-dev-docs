@@ -1,7 +1,8 @@
 # offset(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Offset this view by the horizontal and vertical amount specified in the offset parameter.
 
@@ -38,7 +39,7 @@ Text("Offset by passing CGSize()")
     .border(Color.gray)
 ```
 
-![A screenshot showing a view that offset from its original position a](/images/com.apple.SwiftUI/SwiftUI-View-offset@2x.png)
+![A screenshot showing a view that offset from its original position a](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-offset@2x.png)
 
 ## Parameters
 
@@ -46,15 +47,16 @@ Text("Offset by passing CGSize()")
 
 ## See Also
 
-- [Making fine adjustments to a view’s position](making-fine-adjustments-to-a-view-s-position.md)
+### Adjusting a view’s position
+- [Making fine adjustments to a view’s position](../making-fine-adjustments-to-a-view-s-position.md)
   Shift the position of a view by applying the offset or position modifier.
-- [func position(CGPoint) -> some View](view/position(_:).md)
+- [func position(CGPoint) -> some View](./position%28_%29.md)
   Positions the center of this view at the specified point in its parent’s coordinate space.
-- [func position(x: CGFloat, y: CGFloat) -> some View](view/position(x:y:).md)
+- [func position(x: CGFloat, y: CGFloat) -> some View](./position%28x,y%29.md)
   Positions the center of this view at the specified coordinates in its parent’s coordinate space.
-- [func offset(x: CGFloat, y: CGFloat) -> some View](view/offset(x:y:).md)
+- [func offset(x: CGFloat, y: CGFloat) -> some View](./offset%28x,y%29.md)
   Offset this view by the specified horizontal and vertical distances.
-- [func offset(z: CGFloat) -> some View](view/offset(z:).md)
+- [func offset(z: CGFloat) -> some View](./offset%28z%29.md)
   Brings a view forward in Z by the provided distance in points.
 
 

@@ -1,21 +1,22 @@
 # BackgroundAsset.Relationships.AppStoreVersion
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object BackgroundAsset.Relationships.AppStoreVersion
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BackgroundAsset.Relationships.AppStoreVersion.Data](backgroundasset/relationships-data.dictionary/appstoreversion-data.dictionary/data-data.dictionary.md)
+- [object BackgroundAsset.Relationships.AppStoreVersion.Data](./appstoreversion-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

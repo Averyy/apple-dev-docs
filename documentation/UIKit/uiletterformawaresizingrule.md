@@ -1,7 +1,8 @@
 # UILetterformAwareSizingRule
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify typographic bounds-sizing behavior to handle text in fonts with oversize characters.
 
@@ -18,33 +19,38 @@ Constants that specify typographic bounds-sizing behavior to handle text in font
 enum UILetterformAwareSizingRule
 ```
 
+```c
+enum UILetterformAwareSizingRule : NSInteger;
+```
+
 #### Overview
 
-For more information on typographic bounds sizing behavior, see [`UILetterformAwareAdjusting`](uiletterformawareadjusting.md).
+For more information on typographic bounds sizing behavior, see [`UILetterformAwareAdjusting`](./uiletterformawareadjusting.md).
 
 ## Topics
 
 ### Setting bounds-sizing behavior
-- [UILetterformAwareSizingRule.oversize](uiletterformawaresizingrule/oversize.md)
+- [UILetterformAwareSizingRule.oversize](./uiletterformawaresizingrule/oversize.md)
   Bounds-sizing behavior that displays oversize characters fully but may negatively impact typographic alignment.
-- [UILetterformAwareSizingRule.typographic](uiletterformawaresizingrule/typographic.md)
+- [UILetterformAwareSizingRule.typographic](./uiletterformawaresizingrule/typographic.md)
   Standard typographic bounds-sizing behavior, which may clip oversize characters.
 ### Initializers
-- [init?(rawValue: Int)](uiletterformawaresizingrule/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uiletterformawaresizingrule/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var sizingRule: UILetterformAwareSizingRule](uiletterformawareadjusting/sizingrule.md)
+### Specifying text-sizing behavior
+- [var sizingRule: UILetterformAwareSizingRule](./uiletterformawareadjusting/sizingrule.md)
   The typographic bounds-sizing behavior that handles text with fonts that contain oversize characters.
 
 

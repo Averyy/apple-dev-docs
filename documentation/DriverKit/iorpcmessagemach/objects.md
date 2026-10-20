@@ -1,24 +1,26 @@
 # objects
 
 **Framework**: DriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 mach_msg_port_descriptor_t objects[0];
 ```
 
 ## See Also
 
-- [msgh](iorpcmessagemach/msgh.md)
-- [msgh_body](iorpcmessagemach/msgh_body.md)
+### Getting the Properties
+- [msgh](./msgh.md)
+- [msgh_body](./msgh_body.md)
 
 
 ---

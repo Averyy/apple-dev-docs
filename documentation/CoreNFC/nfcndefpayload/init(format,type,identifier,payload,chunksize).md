@@ -1,7 +1,8 @@
 # init(format:type:identifier:payload:chunkSize:)
 
 **Framework**: Core NFC  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a payload record with the specified format, type, identifier, payload data, and data chunk size.
 
@@ -14,6 +15,10 @@ Creates a payload record with the specified format, type, identifier, payload da
 
 ```swift
 init(format: NFCTypeNameFormat, type: Data, identifier: Data, payload: Data, chunkSize: Int)
+```
+
+```objc
+- (instancetype) initWithFormat:(NFCTypeNameFormat) format type:(NSData *) type identifier:(NSData *) identifier payload:(NSData *) payload chunkSize:(size_t) chunkSize;
 ```
 
 #### Return Value
@@ -30,15 +35,16 @@ A newly initialized payload record object.
 
 ## See Also
 
-- [class func wellKnownTypeURIPayload(url: URL) -> Self?](nfcndefpayload/wellknowntypeuripayload(url:).md)
+### Creating a Payload Record
+- [class func wellKnownTypeURIPayload(url: URL) -> Self?](./wellknowntypeuripayload%28url%29.md)
   Creates a payload record with a URI specified as a URL.
-- [class func wellKnownTypeURIPayload(string: String) -> Self?](nfcndefpayload/wellknowntypeuripayload(string:).md)
+- [class func wellKnownTypeURIPayload(string: String) -> Self?](./wellknowntypeuripayload%28string%29.md)
   Creates a payload record with a URI specified as a string.
-- [class func wellKnownTypeTextPayload(string: String, locale: Locale) -> Self?](nfcndefpayload/wellknowntypetextpayload(string:locale:).md)
+- [class func wellKnownTypeTextPayload(string: String, locale: Locale) -> Self?](./wellknowntypetextpayload%28string,locale%29.md)
   Creates a payload record with text.
-- [init(format: NFCTypeNameFormat, type: Data, identifier: Data, payload: Data)](nfcndefpayload/init(format:type:identifier:payload:).md)
+- [init(format: NFCTypeNameFormat, type: Data, identifier: Data, payload: Data)](./init%28format,type,identifier,payload%29.md)
   Creates a payload record with the specified format, type, identifier, and payload data.
-- [class func wellKnowTypeTextPayload(string: String, locale: Locale) -> Self?](nfcndefpayload/wellknowtypetextpayload(string:locale:).md)
+- [class func wellKnowTypeTextPayload(string: String, locale: Locale) -> Self?](./wellknowtypetextpayload%28string,locale%29.md)
   Creates a payload record with text.
 
 

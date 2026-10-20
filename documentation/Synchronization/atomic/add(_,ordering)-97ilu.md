@@ -1,7 +1,8 @@
 # add(_:ordering:)
 
 **Framework**: Synchronization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Perform an atomic add operation and return the old and new value, applying the specified memory ordering.
 
@@ -21,13 +22,17 @@ Perform an atomic add operation and return the old and new value, applying the s
 func add(_ operand: Int, ordering: AtomicUpdateOrdering) -> (oldValue: Int, newValue: Int)
 ```
 
+Available when `Value` is `Int`.
+
 #### Return Value
 
 A tuple containing the original value before the operation and the new value after the operation.
 
 #### Discussion
 
-> **Note**: This operation checks for overflow at runtime and will trap if an overflow does occur. In `-Ounchecked` builds, overflow checking is not performed. The need to check for overflow means that this operation is typically compiled into a compare-exchange loop. For use cases that require a direct atomic addition, see the `wrappingAdd` operation: it avoids the loop, but in exchange it allows silent wraps on overflow.
+> **Note**: This operation checks for overflow at runtime and will trap if an overflow does occur. In `-Ounchecked` builds, overflow checking is not performed.
+>
+> The need to check for overflow means that this operation is typically compiled into a compare-exchange loop. For use cases that require a direct atomic addition, see the `wrappingAdd` operation: it avoids the loop, but in exchange it allows silent wraps on overflow.
 
 ## Parameters
 

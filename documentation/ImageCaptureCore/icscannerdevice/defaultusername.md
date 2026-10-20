@@ -1,7 +1,8 @@
 # defaultUsername
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A default username on protected scanners.
 
@@ -12,6 +13,10 @@ A default username on protected scanners.
 
 ```swift
 var defaultUsername: String { get set }
+```
+
+```objc
+@property (copy) NSString * defaultUsername;
 ```
 
 #### Discussion

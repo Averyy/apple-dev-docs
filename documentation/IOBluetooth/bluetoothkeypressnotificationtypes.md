@@ -1,10 +1,11 @@
 # BluetoothKeypressNotificationTypes
 
 **Framework**: IOBluetooth  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,46 +13,51 @@
 struct BluetoothKeypressNotificationTypes
 ```
 
+```c
+enum BluetoothKeypressNotificationTypes : unsigned int;
+```
+
 ## Topics
 
 ### Constants
-- [var kBluetoothKeypressNotificationTypePasskeyCleared: BluetoothKeypressNotificationTypes](kbluetoothkeypressnotificationtypepasskeycleared.md)
-- [var kBluetoothKeypressNotificationTypePasskeyDigitEntered: BluetoothKeypressNotificationTypes](kbluetoothkeypressnotificationtypepasskeydigitentered.md)
-- [var kBluetoothKeypressNotificationTypePasskeyDigitErased: BluetoothKeypressNotificationTypes](kbluetoothkeypressnotificationtypepasskeydigiterased.md)
-- [var kBluetoothKeypressNotificationTypePasskeyEntryCompleted: BluetoothKeypressNotificationTypes](kbluetoothkeypressnotificationtypepasskeyentrycompleted.md)
-- [var kBluetoothKeypressNotificationTypePasskeyEntryStarted: BluetoothKeypressNotificationTypes](kbluetoothkeypressnotificationtypepasskeyentrystarted.md)
+- [var kBluetoothKeypressNotificationTypePasskeyCleared: BluetoothKeypressNotificationTypes](./kbluetoothkeypressnotificationtypepasskeycleared.md)
+- [var kBluetoothKeypressNotificationTypePasskeyDigitEntered: BluetoothKeypressNotificationTypes](./kbluetoothkeypressnotificationtypepasskeydigitentered.md)
+- [var kBluetoothKeypressNotificationTypePasskeyDigitErased: BluetoothKeypressNotificationTypes](./kbluetoothkeypressnotificationtypepasskeydigiterased.md)
+- [var kBluetoothKeypressNotificationTypePasskeyEntryCompleted: BluetoothKeypressNotificationTypes](./kbluetoothkeypressnotificationtypepasskeyentrycompleted.md)
+- [var kBluetoothKeypressNotificationTypePasskeyEntryStarted: BluetoothKeypressNotificationTypes](./kbluetoothkeypressnotificationtypepasskeyentrystarted.md)
 ### Initializers
-- [init(UInt32)](bluetoothkeypressnotificationtypes/init(_:).md)
-- [init(rawValue: UInt32)](bluetoothkeypressnotificationtypes/init(rawvalue:).md)
+- [init(UInt32)](./bluetoothkeypressnotificationtypes/init%28_%29.md)
+- [init(rawValue: UInt32)](./bluetoothkeypressnotificationtypes/init%28rawvalue%29.md)
 ### Instance Properties
-- [var rawValue: UInt32](bluetoothkeypressnotificationtypes/rawvalue.md)
+- [var rawValue: UInt32](./bluetoothkeypressnotificationtypes/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [typealias BluetoothAFHMode](bluetoothafhmode.md)
-- [typealias BluetoothAirMode](bluetoothairmode.md)
-- [typealias BluetoothAllowRoleSwitch](bluetoothallowroleswitch.md)
-- [typealias BluetoothAuthenticationRequirements](bluetoothauthenticationrequirements.md)
-- [struct BluetoothAuthenticationRequirementsValues](bluetoothauthenticationrequirementsvalues.md)
-- [typealias BluetoothClassOfDevice](bluetoothclassofdevice.md)
-- [typealias BluetoothClockOffset](bluetoothclockoffset.md)
-- [struct BluetoothCompanyIdentifers](bluetoothcompanyidentifers.md)
-- [typealias BluetoothConnectionHandle](bluetoothconnectionhandle.md)
-- [typealias BluetoothDeviceClassMajor](bluetoothdeviceclassmajor.md)
-- [typealias BluetoothDeviceClassMinor](bluetoothdeviceclassminor.md)
-- [typealias BluetoothDeviceName](bluetoothdevicename.md)
-- [typealias BluetoothEncryptionEnable](bluetoothencryptionenable.md)
-- [struct BluetoothFeatureBits](bluetoothfeaturebits.md)
-- [typealias BluetoothHCIACLDataByteCount](bluetoothhciacldatabytecount.md)
+### Data Types
+- [typealias BluetoothAFHMode](./bluetoothafhmode.md)
+- [typealias BluetoothAirMode](./bluetoothairmode.md)
+- [typealias BluetoothAllowRoleSwitch](./bluetoothallowroleswitch.md)
+- [typealias BluetoothAuthenticationRequirements](./bluetoothauthenticationrequirements.md)
+- [struct BluetoothAuthenticationRequirementsValues](./bluetoothauthenticationrequirementsvalues.md)
+- [typealias BluetoothClassOfDevice](./bluetoothclassofdevice.md)
+- [typealias BluetoothClockOffset](./bluetoothclockoffset.md)
+- [struct BluetoothCompanyIdentifers](./bluetoothcompanyidentifers.md)
+- [typealias BluetoothConnectionHandle](./bluetoothconnectionhandle.md)
+- [typealias BluetoothDeviceClassMajor](./bluetoothdeviceclassmajor.md)
+- [typealias BluetoothDeviceClassMinor](./bluetoothdeviceclassminor.md)
+- [typealias BluetoothDeviceName](./bluetoothdevicename.md)
+- [typealias BluetoothEncryptionEnable](./bluetoothencryptionenable.md)
+- [struct BluetoothFeatureBits](./bluetoothfeaturebits.md)
+- [typealias BluetoothHCIACLDataByteCount](./bluetoothhciacldatabytecount.md)
 
 
 ---

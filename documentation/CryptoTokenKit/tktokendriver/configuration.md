@@ -1,7 +1,8 @@
 # TKTokenDriver.Configuration
 
 **Framework**: CryptoTokenKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A configuration for one class of token.
 
@@ -20,40 +21,45 @@ A configuration for one class of token.
 class Configuration
 ```
 
+```objc
+@interface TKTokenDriverConfiguration : NSObject
+```
+
 ## Topics
 
 ### Reporting Configuration Information
-- [var classID: TKTokenDriver.ClassID](tktokendriver/configuration/classid.md)
+- [var classID: TKTokenDriver.ClassID](./configuration/classid.md)
   The class identifier of the token driver.
-- [var tokenConfigurations: [TKToken.InstanceID : TKToken.Configuration]](tktokendriver/configuration/tokenconfigurations.md)
+- [var tokenConfigurations: [TKToken.InstanceID : TKToken.Configuration]](./configuration/tokenconfigurations.md)
   A dictionary of all currently configured tokens for this token class, which the token instance identifier keys.
-- [class var driverConfigurations: [TKTokenDriver.ClassID : TKTokenDriver.Configuration]](tktokendriver/configuration/driverconfigurations.md)
+- [class var driverConfigurations: [TKTokenDriver.ClassID : TKTokenDriver.Configuration]](./configuration/driverconfigurations.md)
   A dictionary of token class configurations which the class identifier of the token driver keys.
 ### Adding and Removing Configurations
-- [func addTokenConfiguration(for: TKToken.InstanceID) -> TKToken.Configuration](tktokendriver/configuration/addtokenconfiguration(for:).md)
+- [func addTokenConfiguration(for: TKToken.InstanceID) -> TKToken.Configuration](./configuration/addtokenconfiguration%28for%29.md)
   Creates a configuration object for a token with the token instance identifier you specify.
-- [func removeTokenConfiguration(for: TKToken.InstanceID)](tktokendriver/configuration/removetokenconfiguration(for:).md)
+- [func removeTokenConfiguration(for: TKToken.InstanceID)](./configuration/removetokenconfiguration%28for%29.md)
   Removes a configuration for a token with the token instance identifier you specify.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any TKTokenDriverDelegate)?](tktokendriver/delegate.md)
+### Responding to Token Creation
+- [var delegate: (any TKTokenDriverDelegate)?](./delegate.md)
   The token driver delegate.
-- [protocol TKTokenDriverDelegate](tktokendriverdelegate.md)
+- [protocol TKTokenDriverDelegate](../tktokendriverdelegate.md)
   The interface that a token driver delegate implements to respond to token creation events.
-- [TKTokenDriver.ClassID](tktokendriver/classid.md)
+- [TKTokenDriver.ClassID](./classid.md)
   The type of the class identifier for the token driver.
 
 

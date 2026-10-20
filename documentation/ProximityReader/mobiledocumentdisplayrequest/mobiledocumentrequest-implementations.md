@@ -1,11 +1,12 @@
 # MobileDocumentRequest Implementations
 
-**Framework**: ProximityReader
+**Framework**: ProximityReader  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [MobileDocumentDisplayRequest.Response](mobiledocumentdisplayrequest/response.md)
+- [MobileDocumentDisplayRequest.Response](./response.md)
   A type that contains the response information from a successful mobile document display request.
 
 

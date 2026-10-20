@@ -1,7 +1,8 @@
 # customMirror
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mirror that reflects the `Character` instance.
 
@@ -22,13 +23,14 @@ var customMirror: Mirror { get }
 
 ## See Also
 
-- [var description: String](character/description.md)
+### Describing a Character
+- [var description: String](./description.md)
   A textual representation of this instance.
-- [var debugDescription: String](character/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A textual representation of the character, suitable for debugging.
-- [var customPlaygroundQuickLook: _PlaygroundQuickLook](character/customplaygroundquicklook.md)
+- [var customPlaygroundQuickLook: _PlaygroundQuickLook](./customplaygroundquicklook.md)
   A custom playground Quick Look for the `Character` instance.
-- [func hash(into: inout Hasher)](character/hash(into:).md)
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 
 

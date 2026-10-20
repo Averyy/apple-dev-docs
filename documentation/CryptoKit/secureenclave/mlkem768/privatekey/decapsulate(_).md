@@ -1,7 +1,8 @@
 # decapsulate(_:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Decapsulates the encapsulated shared secret
 

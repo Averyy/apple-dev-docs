@@ -1,7 +1,8 @@
 # subscript(dynamicMember:)
 
 **Framework**: SwiftUI  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Access the value of the attribute to constrain.
 
@@ -20,9 +21,15 @@ Access the value of the attribute to constrain.
 subscript(dynamicMember keyPath: KeyPath<Subscope, Attribute>) -> Attribute.Value? { get set }
 ```
 
+**Other overloads**:
+
+```swift
+subscript<K>(dynamicMember keyPath: KeyPath<Subscope, K>) -> K.Value? where K : AttributedStringKey, K.Value : Sendable { mutating get }
+```
+
 #### Overview
 
-For details on how attribute value constraining works, refer to [`constrain(_:)`](attributedtextvalueconstraint/constrain(_:).md).
+For details on how attribute value constraining works, refer to [`constrain(_:)`](../../../attributedtextvalueconstraint/constrain%28_%29.md).
 
 
 ---

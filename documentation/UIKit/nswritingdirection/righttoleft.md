@@ -1,7 +1,8 @@
 # NSWritingDirection.rightToLeft
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The writing direction is right to left.
 
@@ -19,11 +20,16 @@ The writing direction is right to left.
 case rightToLeft
 ```
 
+```c
+NSWritingDirectionRightToLeft
+```
+
 ## See Also
 
-- [NSWritingDirection.natural](nswritingdirection/natural.md)
+### Constants
+- [NSWritingDirection.natural](./natural.md)
   The writing direction of the current script that the system determines using the Unicode Bidi Algorithm rules P2 and P3.
-- [NSWritingDirection.leftToRight](nswritingdirection/lefttoright.md)
+- [NSWritingDirection.leftToRight](./lefttoright.md)
   The writing direction is left to right.
 
 

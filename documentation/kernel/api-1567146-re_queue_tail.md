@@ -1,7 +1,8 @@
 # re_queue_tail
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - DriverKit 24.4+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 void re_queue_tail(queue_t que, queue_entry_t elt);
 ```
 

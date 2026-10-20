@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The orientation of the selection handle.
@@ -19,15 +20,20 @@ The orientation of the selection handle.
 var direction: NSDirectionalRectEdge { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSDirectionalRectEdge direction;
+```
+
 #### Discussion
 
-Specify [`leading`](nsdirectionalrectedge/leading.md) if this view represents the leading selection handle or [`trailing`](nsdirectionalrectedge/trailing.md) if it represents the trailing selection handle. The system uses this information to determine where to differentiate the selection handles visually.
+Specify [`leading`](../nsdirectionalrectedge/leading.md) if this view represents the leading selection handle or [`trailing`](../nsdirectionalrectedge/trailing.md) if it represents the trailing selection handle. The system uses this information to determine where to differentiate the selection handles visually.
 
 ## See Also
 
-- [var customShape: UIBezierPath?](uitextselectionhandleview/customshape.md)
+### Specifying the handle details
+- [var customShape: UIBezierPath?](./customshape.md)
   The custom shape to draw for the stem of the selection handle.
-- [var isVertical: Bool](uitextselectionhandleview/isvertical.md)
+- [var isVertical: Bool](./isvertical.md)
   Convenience accessor for @c direction calculations.
 
 

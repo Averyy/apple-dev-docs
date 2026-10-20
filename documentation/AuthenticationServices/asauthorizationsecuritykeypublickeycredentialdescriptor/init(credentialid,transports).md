@@ -1,7 +1,8 @@
 # init(credentialID:transports:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the object with the credential ID and the array of transports.
 
@@ -17,6 +18,10 @@ Creates the object with the credential ID and the array of transports.
 init(credentialID: Data, transports allowedTransports: [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport])
 ```
 
+```objc
+- (instancetype) initWithCredentialID:(NSData *) credentialID transports:(NSArray<NSString *> *) allowedTransports;
+```
+
 ## Parameters
 
 - `credentialID`: The credential identifier.
@@ -24,9 +29,10 @@ init(credentialID: Data, transports allowedTransports: [ASAuthorizationSecurityK
 
 ## See Also
 
-- [var transports: [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport]](asauthorizationsecuritykeypublickeycredentialdescriptor/transports.md)
+### Creating the descriptor
+- [var transports: [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport]](./transports.md)
   The array of transport types.
-- [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport](asauthorizationsecuritykeypublickeycredentialdescriptor/transport.md)
+- [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport](./transport.md)
   A structure that defines the security key credential transport type.
 
 

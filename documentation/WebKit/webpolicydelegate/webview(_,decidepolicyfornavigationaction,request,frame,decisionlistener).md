@@ -1,12 +1,13 @@
 # webView(_:decidePolicyForNavigationAction:request:frame:decisionListener:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Routes a navigation action internally or to an external viewer.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,11 +15,15 @@ Routes a navigation action internally or to an external viewer.
 optional func webView(_ webView: WebView!, decidePolicyForNavigationAction actionInformation: [AnyHashable : Any]!, request: URLRequest!, frame: WebFrame!, decisionListener listener: (any WebPolicyDecisionListener)!)
 ```
 
+```objc
+- (void) webView:(WebView *) webView decidePolicyForNavigationAction:(NSDictionary *) actionInformation request:(NSURLRequest *) request frame:(WebFrame *) frame decisionListener:(id<WebPolicyDecisionListener>) listener;
+```
+
 #### Discussion
 
-This method is invoked when a navigation decision needs to be made. The web view implements a policy decision by sending one of the [`WebPolicyDecisionListener`](webpolicydecisionlistener.md) protocol messages to `listener`. This method is invoked whenever a server redirect is encountered, and before loading starts.
+This method is invoked when a navigation decision needs to be made. The web view implements a policy decision by sending one of the [`WebPolicyDecisionListener`](../webpolicydecisionlistener.md) protocol messages to `listener`. This method is invoked whenever a server redirect is encountered, and before loading starts.
 
-If you do not implement this method, the default behavior is used. The listener handles the navigation internally if the request is for an error page or if the [`canHandle(_:)`](https://developer.apple.com/documentation/foundation/nsurlconnection/canhandle(_:)) method of the `NSURLConnection` class returns [`true`](https://developer.apple.com/documentation/swift/true) when passed `request`. Otherwise, the listener ignores the navigation, and it is handled externally.
+If you do not implement this method, the default behavior is used. The listener handles the navigation internally if the request is for an error page or if the [`canHandle(_:)`](../../Foundation/nsurlconnection/canhandle%28_%29.md) method of the `NSURLConnection` class returns [`true`](../../Swift/true.md) when passed `request`. Otherwise, the listener ignores the navigation, and it is handled externally.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # Observations
 
 **Framework**: Observation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence generated from a closure that tracks the transactional changes of `@Observable` types.
 
@@ -27,22 +28,22 @@ struct Observations<Element, Failure> where Element : Sendable, Failure : Error
 ## Topics
 
 ### Structures
-- [Observations.Iterator](observations/iterator.md)
+- [Observations.Iterator](./observations/iterator.md)
 ### Initializers
-- [init(() throws(Failure) -> Element)](observations/init(_:).md)
+- [init(() throws(Failure) -> Element)](./observations/init%28_%29.md)
   Constructs an asynchronous sequence for a given closure by tracking changes of `@Observable` types.
 ### Type Methods
-- [static func untilFinished(() throws(Failure) -> Observations<Element, Failure>.Iteration) -> Observations<Element, Failure>](observations/untilfinished(_:).md)
+- [static func untilFinished(() throws(Failure) -> Observations<Element, Failure>.Iteration) -> Observations<Element, Failure>](./observations/untilfinished%28_%29.md)
   Constructs an asynchronous sequence for a given closure by tracking changes of `@Observable` types.
 ### Enumerations
-- [Observations.Iteration](observations/iteration.md)
+- [Observations.Iteration](./observations/iteration.md)
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AsyncSequence](../Swift/asyncsequence.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

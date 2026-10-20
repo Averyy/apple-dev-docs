@@ -1,7 +1,8 @@
 # wrappingSubtract(_:ordering:)
 
 **Framework**: Synchronization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Perform an atomic wrapping subtract operation and return the old and new value, applying the specified memory ordering.
 
@@ -20,6 +21,8 @@ Perform an atomic wrapping subtract operation and return the old and new value, 
 @discardableResult
 func wrappingSubtract(_ operand: UInt64, ordering: AtomicUpdateOrdering) -> (oldValue: UInt64, newValue: UInt64)
 ```
+
+Available when `Value` is `UInt64`.
 
 #### Return Value
 

@@ -1,7 +1,8 @@
 # withTemporaryAllocation(byteCount:alignment:_:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Provides scoped access to an output raw span with the specified byte count and alignment.
 
@@ -30,7 +31,7 @@ This function is useful for cheaply allocating raw storage for a brief duration.
 
 When `body` is called, it is passed an empty `OutputRawSpan`. `body` may append bytes to the output raw span. After `body` returns, deallocation is automatic.
 
-> **Note**: Whatever is thrown by `body`.
+> **Throws**: Whatever is thrown by `body`.
 
 ## Parameters
 
@@ -40,25 +41,26 @@ When `body` is called, it is passed an empty `OutputRawSpan`. `body` may append 
 
 ## See Also
 
-- [func withUnsafePointer<T, E, Result>(to: inout T, (UnsafePointer<T>) throws(E) -> Result) throws(E) -> Result](withunsafepointer(to:_:)-9fjn6.md)
+### Memory Access
+- [func withUnsafePointer<T, E, Result>(to: inout T, (UnsafePointer<T>) throws(E) -> Result) throws(E) -> Result](./withunsafepointer%28to,_%29-9fjn6.md)
   Invokes the given closure with a pointer to the given argument.
-- [func withUnsafePointer<T, E, Result>(to: borrowing T, (UnsafePointer<T>) throws(E) -> Result) throws(E) -> Result](withunsafepointer(to:_:)-35wrn.md)
+- [func withUnsafePointer<T, E, Result>(to: borrowing T, (UnsafePointer<T>) throws(E) -> Result) throws(E) -> Result](./withunsafepointer%28to,_%29-35wrn.md)
   Invokes the given closure with a pointer to the given argument.
-- [func withUnsafeMutablePointer<T, E, Result>(to: inout T, (UnsafeMutablePointer<T>) throws(E) -> Result) throws(E) -> Result](withunsafemutablepointer(to:_:).md)
+- [func withUnsafeMutablePointer<T, E, Result>(to: inout T, (UnsafeMutablePointer<T>) throws(E) -> Result) throws(E) -> Result](./withunsafemutablepointer%28to,_%29.md)
   Calls the given closure with a mutable pointer to the given argument.
-- [func withUnsafeBytes<T, E, Result>(of: inout T, (UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](withunsafebytes(of:_:)-3ywhh.md)
+- [func withUnsafeBytes<T, E, Result>(of: inout T, (UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](./withunsafebytes%28of,_%29-3ywhh.md)
   Invokes the given closure with a buffer pointer covering the raw bytes of the given argument.
-- [func withUnsafeMutableBytes<T, E, Result>(of: inout T, (UnsafeMutableRawBufferPointer) throws(E) -> Result) throws(E) -> Result](withunsafemutablebytes(of:_:).md)
+- [func withUnsafeMutableBytes<T, E, Result>(of: inout T, (UnsafeMutableRawBufferPointer) throws(E) -> Result) throws(E) -> Result](./withunsafemutablebytes%28of,_%29.md)
   Invokes the given closure with a mutable buffer pointer covering the raw bytes of the given argument.
-- [func withTemporaryAllocation<T, R, E>(of: T.Type, capacity: Int, (inout OutputSpan<T>) throws(E) -> R) throws(E) -> R](withtemporaryallocation(of:capacity:_:).md)
+- [func withTemporaryAllocation<T, R, E>(of: T.Type, capacity: Int, (inout OutputSpan<T>) throws(E) -> R) throws(E) -> R](./withtemporaryallocation%28of,capacity,_%29.md)
   Provides scoped access to an output span of the specified type and capacity.
-- [func withUnsafeTemporaryAllocation<T, R, E>(of: T.Type, capacity: Int, (UnsafeMutableBufferPointer<T>) throws(E) -> R) throws(E) -> R](withunsafetemporaryallocation(of:capacity:_:).md)
+- [func withUnsafeTemporaryAllocation<T, R, E>(of: T.Type, capacity: Int, (UnsafeMutableBufferPointer<T>) throws(E) -> R) throws(E) -> R](./withunsafetemporaryallocation%28of,capacity,_%29.md)
   Provides scoped access to a buffer pointer to memory of the specified type and with the specified capacity.
-- [func withUnsafeTemporaryAllocation<R, E>(byteCount: Int, alignment: Int, (UnsafeMutableRawBufferPointer) throws(E) -> R) throws(E) -> R](withunsafetemporaryallocation(bytecount:alignment:_:).md)
+- [func withUnsafeTemporaryAllocation<R, E>(byteCount: Int, alignment: Int, (UnsafeMutableRawBufferPointer) throws(E) -> R) throws(E) -> R](./withunsafetemporaryallocation%28bytecount,alignment,_%29.md)
   Provides scoped access to a raw buffer pointer with the specified byte count and alignment.
-- [func swap<T>(inout T, inout T)](swap(_:_:).md)
+- [func swap<T>(inout T, inout T)](./swap%28_,_%29.md)
   Exchanges the values of the two arguments.
-- [func exchange<T>(inout T, with: consuming T) -> T](exchange(_:with:).md)
+- [func exchange<T>(inout T, with: consuming T) -> T](./exchange%28_,with%29.md)
   Replaces the value of a mutable value with the supplied new value, returning the original.
 
 

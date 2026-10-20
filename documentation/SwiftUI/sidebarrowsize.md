@@ -1,7 +1,8 @@
 # SidebarRowSize
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The standard sizes of sidebar rows.
 
@@ -31,24 +32,25 @@ This size can be read or written in the environment using `EnvironmentValues.sid
 ## Topics
 
 ### Getting row sizes
-- [SidebarRowSize.small](sidebarrowsize/small.md)
+- [SidebarRowSize.small](./sidebarrowsize/small.md)
   The standard “small” row size
-- [SidebarRowSize.medium](sidebarrowsize/medium.md)
+- [SidebarRowSize.medium](./sidebarrowsize/medium.md)
   The standard “medium” row size
-- [SidebarRowSize.large](sidebarrowsize/large.md)
+- [SidebarRowSize.large](./sidebarrowsize/large.md)
   The standard “large” row size
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var sidebarRowSize: SidebarRowSize](environmentvalues/sidebarrowsize.md)
+### Configuring the sidebar
+- [var sidebarRowSize: SidebarRowSize](./environmentvalues/sidebarrowsize.md)
   The current size of sidebar rows.
 
 

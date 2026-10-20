@@ -1,7 +1,8 @@
 # media
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Media to display within card.
 
@@ -16,15 +17,16 @@ let media: RCSService.Business.Card.Media?
 
 ## See Also
 
-- [RCSService.Business.Card.Media](rcsservice/business/card/media.md)
+### Accessing content properties
+- [RCSService.Business.Card.Media](../media.md)
   Structure containing information about media in a card.
-- [let title: String?](rcsservice/business/card/content-swift.struct/title.md)
+- [let title: String?](./title.md)
   Title of card.
-- [let description: String?](rcsservice/business/card/content-swift.struct/description.md)
+- [let description: String?](./description.md)
   Description of card.
-- [let suggestions: [RCSService.Business.Suggestion]](rcsservice/business/card/content-swift.struct/suggestions.md)
+- [let suggestions: [RCSService.Business.Suggestion]](./suggestions.md)
   Suggestions provided by business.
-- [RCSService.Business.Suggestion](rcsservice/business/suggestion.md)
+- [RCSService.Business.Suggestion](../../suggestion.md)
   Enumeration representing a suggestion from a business.
 
 

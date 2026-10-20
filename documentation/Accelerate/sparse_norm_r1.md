@@ -1,23 +1,28 @@
 # SPARSE_NORM_R1
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Norm R1
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var SPARSE_NORM_R1: sparse_norm { get }
+```
+
+```c
+SPARSE_NORM_R1
 ```
 
 #### Discussion
@@ -29,11 +34,12 @@ var SPARSE_NORM_R1: sparse_norm { get }
 
 ## See Also
 
-- [var SPARSE_NORM_ONE: sparse_norm](sparse_norm_one.md)
+### Constants
+- [var SPARSE_NORM_ONE: sparse_norm](./sparse_norm_one.md)
   Norm One
-- [var SPARSE_NORM_TWO: sparse_norm](sparse_norm_two.md)
+- [var SPARSE_NORM_TWO: sparse_norm](./sparse_norm_two.md)
   Norm Two
-- [var SPARSE_NORM_INF: sparse_norm](sparse_norm_inf.md)
+- [var SPARSE_NORM_INF: sparse_norm](./sparse_norm_inf.md)
   Norm Inf
 
 

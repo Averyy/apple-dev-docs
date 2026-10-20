@@ -1,7 +1,8 @@
 # header
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A short description of what this text represents.
 
@@ -20,7 +21,8 @@ let header: String?
 
 ## See Also
 
-- [let body: String](searchtextresult/body.md)
+### Getting the result details
+- [let body: String](./body.md)
   The text body.
 
 

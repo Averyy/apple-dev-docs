@@ -1,7 +1,8 @@
 # PortalComponent.SurfaceStyle
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The size of the flat plane mesh that RealityKit generates for a portal.
 
@@ -21,28 +22,28 @@ struct SurfaceStyle
 
 #### Overview
 
-The factory entry points [`makePortal(surfaceStyle:boundaryStyle:boundaryMode:)`](portalcomponent/makeportal(surfacestyle:boundarystyle:boundarymode:).md) and [`configure(world:portalEntity:surfaceStyle:boundaryStyle:boundaryMode:)`](portalcomponent/configure(world:portalentity:surfacestyle:boundarystyle:boundarymode:).md) use this value to build a [`ModelComponent`](modelcomponent.md) whose mesh is a plane on the entity’s local XY plane, centered at the entity’s origin.
+The factory entry points [`makePortal(surfaceStyle:boundaryStyle:boundaryMode:)`](./makeportal%28surfacestyle,boundarystyle,boundarymode%29.md) and [`configure(world:portalEntity:surfaceStyle:boundaryStyle:boundaryMode:)`](./configure%28world,portalentity,surfacestyle,boundarystyle,boundarymode%29.md) use this value to build a [`ModelComponent`](../modelcomponent.md) whose mesh is a plane on the entity’s local XY plane, centered at the entity’s origin.
 
-The portal mesh size is independent of the clipping or crossing boundary, which you configure with [`PortalComponent.BoundaryStyle`](portalcomponent/boundarystyle.md).
+The portal mesh size is independent of the clipping or crossing boundary, which you configure with [`PortalComponent.BoundaryStyle`](./boundarystyle.md).
 
 ## Topics
 
 ### Initializers
-- [init(width: Float, height: Float)](portalcomponent/surfacestyle/init(width:height:).md)
+- [init(width: Float, height: Float)](./surfacestyle/init%28width,height%29.md)
   Creates a surface style with the given width and height in meters.
 ### Instance Properties
-- [var height: Float](portalcomponent/surfacestyle/height.md)
+- [var height: Float](./surfacestyle/height.md)
   The height of the portal mesh, in meters, along the entity’s local Y axis.
-- [var width: Float](portalcomponent/surfacestyle/width.md)
+- [var width: Float](./surfacestyle/width.md)
   The width of the portal mesh, in meters, along the entity’s local X axis.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

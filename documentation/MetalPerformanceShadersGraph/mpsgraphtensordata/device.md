@@ -1,7 +1,8 @@
 # device
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The device of the tensor data.
 
@@ -17,6 +18,10 @@ The device of the tensor data.
 
 ```swift
 var device: MPSGraphDevice { get }
+```
+
+```objc
+@property (nonatomic, readonly) MPSGraphDevice * device;
 ```
 
 

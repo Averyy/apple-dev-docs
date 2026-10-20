@@ -1,7 +1,8 @@
 # smartMagnify(with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the receiver that the user performed a smart zoom gesture.
 
@@ -14,6 +15,10 @@ Informs the receiver that the user performed a smart zoom gesture.
 func smartMagnify(with event: NSEvent)
 ```
 
+```objc
+- (void) smartMagnifyWithEvent:(NSEvent *) event;
+```
+
 #### Discussion
 
 The smart zoom gesture is a two-finger double tap on trackpads. In response to this event, you should intelligently magnify the content.
@@ -24,25 +29,26 @@ The smart zoom gesture is a two-finger double tap on trackpads. In response to t
 
 ## See Also
 
-- [func magnify(with: NSEvent)](nsresponder/magnify(with:).md)
+### Touch and Gesture Events
+- [func magnify(with: NSEvent)](./magnify%28with%29.md)
   Informs the receiver that the user has begun a pinch gesture.
-- [func rotate(with: NSEvent)](nsresponder/rotate(with:).md)
+- [func rotate(with: NSEvent)](./rotate%28with%29.md)
   Informs the receiver that the user has begun a rotation gesture.
-- [func swipe(with: NSEvent)](nsresponder/swipe(with:).md)
+- [func swipe(with: NSEvent)](./swipe%28with%29.md)
   Informs the receiver that the user has begun a swipe gesture.
-- [func touchesBegan(with: NSEvent)](nsresponder/touchesbegan(with:).md)
+- [func touchesBegan(with: NSEvent)](./touchesbegan%28with%29.md)
   Informs the receiver that new set of touches has been recognized.
-- [func touchesMoved(with: NSEvent)](nsresponder/touchesmoved(with:).md)
+- [func touchesMoved(with: NSEvent)](./touchesmoved%28with%29.md)
   Informs the receiver that one or more touches has moved.
-- [func touchesCancelled(with: NSEvent)](nsresponder/touchescancelled(with:).md)
+- [func touchesCancelled(with: NSEvent)](./touchescancelled%28with%29.md)
   Informs the receiver that tracking of touches has been cancelled for any reason.
-- [func touchesEnded(with: NSEvent)](nsresponder/touchesended(with:).md)
+- [func touchesEnded(with: NSEvent)](./touchesended%28with%29.md)
   Returns that a set of touches have been removed.
-- [func wantsForwardedScrollEvents(for: NSEvent.GestureAxis) -> Bool](nsresponder/wantsforwardedscrollevents(for:).md)
+- [func wantsForwardedScrollEvents(for: NSEvent.GestureAxis) -> Bool](./wantsforwardedscrollevents%28for%29.md)
   Returns whether to forward elastic scrolling gesture events up the responder.
-- [func wantsScrollEventsForSwipeTracking(on: NSEvent.GestureAxis) -> Bool](nsresponder/wantsscrolleventsforswipetracking(on:).md)
+- [func wantsScrollEventsForSwipeTracking(on: NSEvent.GestureAxis) -> Bool](./wantsscrolleventsforswipetracking%28on%29.md)
   Implement this method to track gesture scroll events such as a swipe.
-- [NSEvent.GestureAxis](nsevent/gestureaxis.md)
+- [NSEvent.GestureAxis](../nsevent/gestureaxis.md)
   Constants that specify the direction of travel for a gesture.
 
 

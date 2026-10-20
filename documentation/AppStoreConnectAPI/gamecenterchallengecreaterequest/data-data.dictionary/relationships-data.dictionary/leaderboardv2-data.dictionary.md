@@ -1,7 +1,8 @@
 # GameCenterChallengeCreateRequest.Data.Relationships.LeaderboardV2
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data that describes the leaderboard of the Game Center challenge.
 
@@ -10,7 +11,7 @@ The data that describes the leaderboard of the Game Center challenge.
 
 ## Declaration
 
-```swift
+```
 object GameCenterChallengeCreateRequest.Data.Relationships.LeaderboardV2
 ```
 
@@ -21,7 +22,7 @@ object GameCenterChallengeCreateRequest.Data.Relationships.LeaderboardV2
 ## Topics
 
 ### Dictionaries
-- [object GameCenterChallengeCreateRequest.Data.Relationships.LeaderboardV2.Data](gamecenterchallengecreaterequest/data-data.dictionary/relationships-data.dictionary/leaderboardv2-data.dictionary/data-data.dictionary.md)
+- [object GameCenterChallengeCreateRequest.Data.Relationships.LeaderboardV2.Data](./leaderboardv2-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties

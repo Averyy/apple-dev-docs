@@ -1,7 +1,8 @@
 # init(named:in:constantValues:uniformsSize:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a descriptor for a surface shader that accepts a custom uniforms argument buffer.
 
@@ -19,7 +20,7 @@ init(named name: String, in library: any MTLLibrary, constantValues: MTLFunction
 
 #### Discussion
 
-Use this initializer when your Metal surface shader function reads per-draw parameters through a custom uniforms argument buffer, using the same mechanism as [`CustomMaterial/withMutableUniforms(ofType:stage:_:)`](https://developer.apple.comhttps://developer.apple.com/documentation/realitykit/custommaterial/withmutableuniforms(oftype:stage:_:)). The function must be `[[stitchable]]` and declare the uniforms as a second `constant T &customParams` parameter:
+Use this initializer when your Metal surface shader function reads per-draw parameters through a custom uniforms argument buffer, using the same mechanism as [CustomMaterial/withMutableUniforms(ofType:stage:_:)](../../../custommaterial/withmutableuniforms%28oftype,stage,_%29.md). The function must be `[[stitchable]]` and declare the uniforms as a second `constant T &customParams` parameter:
 
 ```cpp
 [[stitchable]]
@@ -38,9 +39,10 @@ The renderer sizes the uniforms buffer to `uniformsSize` bytes and configures th
 
 ## See Also
 
-- [init(named: String, in: any MTLLibrary, constantValues: MTLFunctionConstantValues)](lowlevelmaterialresource/surfaceshader/descriptor/init(named:in:constantvalues:).md)
+### Creating a descriptor
+- [init(named: String, in: any MTLLibrary, constantValues: MTLFunctionConstantValues)](./init%28named,in,constantvalues%29.md)
   Creates a descriptor referencing the named function in the given library, with the provided function constant values.
-- [init<UniformsType>(named: String, in: any MTLLibrary, constantValues: MTLFunctionConstantValues, uniformsType: UniformsType.Type)](lowlevelmaterialresource/surfaceshader/descriptor/init(named:in:constantvalues:uniformstype:).md)
+- [init<UniformsType>(named: String, in: any MTLLibrary, constantValues: MTLFunctionConstantValues, uniformsType: UniformsType.Type)](./init%28named,in,constantvalues,uniformstype%29.md)
   Creates a descriptor for a surface shader that accepts a custom uniforms argument buffer, deriving the buffer size from `uniformsType`.
 
 

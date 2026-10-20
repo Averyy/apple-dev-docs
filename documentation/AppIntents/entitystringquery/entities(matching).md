@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Retrieves instances by string.
@@ -12,7 +13,7 @@ Retrieves instances by string.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

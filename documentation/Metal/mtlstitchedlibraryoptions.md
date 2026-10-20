@@ -1,7 +1,8 @@
 # MTLStitchedLibraryOptions
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -17,44 +18,49 @@
 struct MTLStitchedLibraryOptions
 ```
 
+```c
+enum MTLStitchedLibraryOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](mtlstitchedlibraryoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./mtlstitchedlibraryoptions/init%28rawvalue%29.md)
 ### Type Properties
-- [static var failOnBinaryArchiveMiss: MTLStitchedLibraryOptions](mtlstitchedlibraryoptions/failonbinaryarchivemiss.md)
+- [static var failOnBinaryArchiveMiss: MTLStitchedLibraryOptions](./mtlstitchedlibraryoptions/failonbinaryarchivemiss.md)
   An option that instructs the compiler to return an error when a GPU function for a stitched library isn’t in a binary archive.
-- [static var storeLibraryInMetalPipelinesScript: MTLStitchedLibraryOptions](mtlstitchedlibraryoptions/storelibraryinmetalpipelinesscript.md)
+- [static var storeLibraryInMetalPipelinesScript: MTLStitchedLibraryOptions](./mtlstitchedlibraryoptions/storelibraryinmetalpipelinesscript.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [struct MTLTensorError](mtltensorerror-swift.struct.md)
-- [struct MTLBinaryArchiveError](mtlbinaryarchiveerror-swift.struct.md)
+### Structures
+- [struct MTLTensorError](./mtltensorerror-swift.struct.md)
+- [struct MTLBinaryArchiveError](./mtlbinaryarchiveerror-swift.struct.md)
   An error that occurred when creating a binary shader archive.
-- [struct MTLCommandBufferError](mtlcommandbuffererror-swift.struct.md)
+- [struct MTLCommandBufferError](./mtlcommandbuffererror-swift.struct.md)
   The command buffer error codes that indicate why the GPU doesn’t finish executing a command buffer.
-- [struct MTLComponentTransform](mtlcomponenttransform.md)
-- [struct MTLCounterSampleBufferError](mtlcountersamplebuffererror-swift.struct.md)
+- [struct MTLComponentTransform](./mtlcomponenttransform.md)
+- [struct MTLCounterSampleBufferError](./mtlcountersamplebuffererror-swift.struct.md)
   The error codes that indicate why a GPU driver can’t create a counter sample buffer.
-- [struct MTLDynamicLibraryError](mtldynamiclibraryerror-swift.struct.md)
+- [struct MTLDynamicLibraryError](./mtldynamiclibraryerror-swift.struct.md)
   Errors when compiling dynamic libraries.
-- [struct MTLIOError](mtlioerror-swift.struct.md)
+- [struct MTLIOError](./mtlioerror-swift.struct.md)
   The categories of errors for creating an input/output file handle.
-- [struct MTLPackedFloatQuaternion](mtlpackedfloatquaternion.md)
-- [struct NSDeviceCertification](nsdevicecertification.md)
-- [struct NSProcessPerformanceProfile](nsprocessperformanceprofile.md)
+- [struct MTLPackedFloatQuaternion](./mtlpackedfloatquaternion.md)
+- [struct NSDeviceCertification](./nsdevicecertification.md)
+- [struct NSProcessPerformanceProfile](./nsprocessperformanceprofile.md)
   A value describing the device’s performance profile.
 
 

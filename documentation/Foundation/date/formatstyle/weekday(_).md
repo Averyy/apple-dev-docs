@@ -1,7 +1,8 @@
 # weekday(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the date format style to use the specified weekday format style.
 
@@ -26,7 +27,7 @@ A date format style modified to include the specified week format style.
 
 #### Discussion
 
-Possible values of [`Date.FormatStyle.Symbol.Weekday`](date/formatstyle/symbol/weekday.md) include [`abbreviated`](date/formatstyle/symbol/weekday/abbreviated.md), [`narrow`](date/formatstyle/symbol/weekday/narrow.md), [`oneDigit`](date/formatstyle/symbol/weekday/onedigit.md), [`short`](date/formatstyle/symbol/weekday/short.md), [`twoDigits`](date/formatstyle/symbol/weekday/twodigits.md), and [`wide`](date/formatstyle/symbol/weekday/wide.md).
+Possible values of [`Date.FormatStyle.Symbol.Weekday`](./symbol/weekday.md) include [`abbreviated`](./symbol/weekday/abbreviated.md), [`narrow`](./symbol/weekday/narrow.md), [`oneDigit`](./symbol/weekday/onedigit.md), [`short`](./symbol/weekday/short.md), [`twoDigits`](./symbol/weekday/twodigits.md), and [`wide`](./symbol/weekday/wide.md).
 
 ## Parameters
 
@@ -34,21 +35,22 @@ Possible values of [`Date.FormatStyle.Symbol.Weekday`](date/formatstyle/symbol/w
 
 ## See Also
 
-- [func day(Date.FormatStyle.Symbol.Day) -> Date.FormatStyle](date/formatstyle/day(_:).md)
+### Specifying the Date Format
+- [func day(Date.FormatStyle.Symbol.Day) -> Date.FormatStyle](./day%28_%29.md)
   Modifies the date format style to use the specified day format style.
-- [func dayOfYear(Date.FormatStyle.Symbol.DayOfYear) -> Date.FormatStyle](date/formatstyle/dayofyear(_:).md)
+- [func dayOfYear(Date.FormatStyle.Symbol.DayOfYear) -> Date.FormatStyle](./dayofyear%28_%29.md)
   Modifies the date format style to use the specified day of the year format style.
-- [func era(Date.FormatStyle.Symbol.Era) -> Date.FormatStyle](date/formatstyle/era(_:).md)
+- [func era(Date.FormatStyle.Symbol.Era) -> Date.FormatStyle](./era%28_%29.md)
   Modifies the date format style to use the specified era format style.
-- [func month(Date.FormatStyle.Symbol.Month) -> Date.FormatStyle](date/formatstyle/month(_:).md)
+- [func month(Date.FormatStyle.Symbol.Month) -> Date.FormatStyle](./month%28_%29.md)
   Modifies the date format style to use the specified month format style.
-- [func quarter(Date.FormatStyle.Symbol.Quarter) -> Date.FormatStyle](date/formatstyle/quarter(_:).md)
+- [func quarter(Date.FormatStyle.Symbol.Quarter) -> Date.FormatStyle](./quarter%28_%29.md)
   Modifies the date format style to use the specified quarter format style.
-- [func week(Date.FormatStyle.Symbol.Week) -> Date.FormatStyle](date/formatstyle/week(_:).md)
+- [func week(Date.FormatStyle.Symbol.Week) -> Date.FormatStyle](./week%28_%29.md)
   Modifies the date format style to use the specified week format style.
-- [func year(Date.FormatStyle.Symbol.Year) -> Date.FormatStyle](date/formatstyle/year(_:).md)
+- [func year(Date.FormatStyle.Symbol.Year) -> Date.FormatStyle](./year%28_%29.md)
   Modifies the date format style to use the specified year format style.
-- [Date.FormatStyle.DateStyle](date/formatstyle/datestyle.md)
+- [Date.FormatStyle.DateStyle](./datestyle.md)
   Type that defines date styles varied in length or components included.
 
 

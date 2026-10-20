@@ -1,7 +1,8 @@
 # SpotLightComponent.Shadow.ShadowClippingPlane.automatic
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The spotlight component automatically sets the position of the shadow clipping plane.
 
@@ -21,7 +22,8 @@ case automatic
 
 ## See Also
 
-- [SpotLightComponent.Shadow.ShadowClippingPlane.fixed(_:)](spotlightcomponent/shadow/shadowclippingplane/fixed(_:).md)
+### Clipping plane options
+- [SpotLightComponent.Shadow.ShadowClippingPlane.fixed(_:)](./fixed%28_%29.md)
   The shadow clipping plane’s position doesn’t change.
 
 

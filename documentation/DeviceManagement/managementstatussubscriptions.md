@@ -1,7 +1,8 @@
 # ManagementStatusSubscriptions
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The declaration to configure status subscriptions.
 
@@ -16,21 +17,21 @@ The declaration to configure status subscriptions.
 
 ## Declaration
 
-```swift
+```
 object ManagementStatusSubscriptions
 ```
 
 ## Mentions
 
-- [Deploying software updates using declarative management](deploying-software-updates-using-declarative-management.md)
-- [Implementing Platform SSO for unattended device enrollment](implementing-platform-sso-for-unattended-device-enrollment.md)
-- [Leveraging the declarative management data model to scale devices](leveraging-the-declarative-management-data-model-to-scale-devices.md)
+- [Deploying software updates using declarative management](./deploying-software-updates-using-declarative-management.md)
+- [Implementing Platform SSO for unattended device enrollment](./implementing-platform-sso-for-unattended-device-enrollment.md)
+- [Leveraging the declarative management data model to scale devices](./leveraging-the-declarative-management-data-model-to-scale-devices.md)
 
 #### Discussion
 
 Specify `com.apple.configuration.management.status-subscriptions` as the declaration type.
 
-##### Configuration Availability
+##### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -42,7 +43,7 @@ Specify `com.apple.configuration.management.status-subscriptions` as the declara
 | Allowed in user scope | macOS, Shared iPad |
 | Apply | Multiple configurations are combined and applied as a single effective configuration |
 
-##### Configuration Example
+##### Configuration example
 
 This configuration subscribes to a set of device status items.
 
@@ -82,7 +83,7 @@ This configuration subscribes to a set of device status items.
 ## Topics
 
 ### Objects
-- [object ManagementStatusSubscriptionsStatusItemObject](managementstatussubscriptionsstatusitemobject.md)
+- [object ManagementStatusSubscriptionsStatusItemObject](./managementstatussubscriptionsstatusitemobject.md)
   The declaration for configuring a specific status subscription.
 
 ## Properties
@@ -91,35 +92,36 @@ This configuration subscribes to a set of device status items.
 
 ## See Also
 
-- [object AccessibilitySettings](accessibilitysettings.md)
+### Configurations
+- [object AccessibilitySettings](./accessibilitysettings.md)
   The declaration to configure accessibility settings.
-- [object AccountCalDAV](accountcaldav.md)
+- [object AccountCalDAV](./accountcaldav.md)
   The declaration to configure a Calendar account.
-- [object AccountCardDAV](accountcarddav.md)
+- [object AccountCardDAV](./accountcarddav.md)
   The declaration to configure a Contacts account.
-- [object AccountExchange](accountexchange.md)
+- [object AccountExchange](./accountexchange.md)
   The declaration to configure an Exchange account.
-- [object AccountGoogle](accountgoogle.md)
+- [object AccountGoogle](./accountgoogle.md)
   The declaration to configure a Google account.
-- [object AccountLDAP](accountldap.md)
+- [object AccountLDAP](./accountldap.md)
   The declaration to configure a Lightweight Directory Access Protocol (LDAP) account.
-- [object AccountMail](accountmail.md)
+- [object AccountMail](./accountmail.md)
   The declaration to configure a Mail account.
-- [object AccountSettings](accountsettings.md)
+- [object AccountSettings](./accountsettings.md)
   The declaration to configure account settings.
-- [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
+- [object AccountSubscribedCalendar](./accountsubscribedcalendar.md)
   The declaration to configure a subscribed calendar.
-- [object AppManaged](appmanaged.md)
+- [object AppManaged](./appmanaged.md)
   The declaration to configure a managed app.
-- [object AppSettings](appsettings.md)
+- [object AppSettings](./appsettings.md)
   The declaration to configure app settings.
-- [object AudioAccessorySettings](audioaccessorysettings.md)
+- [object AudioAccessorySettings](./audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCaching](./contentcaching.md)
   The declaration to configure the Content Caching service.
-- [object DiskManagementSettings](diskmanagementsettings.md)
+- [object DiskManagementSettings](./diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
-- [object ExtensibleSSO](extensiblesso.md)
+- [object ExtensibleSSO](./extensiblesso.md)
   The declaration to configure Extensible Single Sign-On.
 
 

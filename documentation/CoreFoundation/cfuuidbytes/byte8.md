@@ -1,23 +1,28 @@
 # byte8
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ninth byte.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var byte8: UInt8
+```
+
+```c
+UInt8 byte8;
 ```
 
 

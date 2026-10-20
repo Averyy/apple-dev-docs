@@ -1,7 +1,8 @@
 # decapsulate(_:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Decapsulate a shared secret.
 
@@ -26,7 +27,7 @@ The shared secret.
 
 ## Parameters
 
-- `encapsulated`: An encapsulated shared secret, that you get by calling [`encapsulate()`](mlkem768/publickey/encapsulate().md) on the corresponding public key.
+- `encapsulated`: An encapsulated shared secret, that you get by calling [`encapsulate()`](../publickey/encapsulate%28%29.md) on the corresponding public key.
 
 
 ---

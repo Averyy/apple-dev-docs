@@ -5,10 +5,10 @@
 ## Topics
 
 ### Constants
-- [var kUSBNoDelay: Int](kusbnodelay.md)
-- [var kUSBNoErr: Int](kusbnoerr.md)
-- [var kUSBNoTran: Int](kusbnotran.md)
-- [var kUSBPending: Int](kusbpending.md)
+- [var kUSBNoDelay: Int](../../kusbnodelay.md)
+- [var kUSBNoErr: Int](../../kusbnoerr.md)
+- [var kUSBNoTran: Int](../../kusbnotran.md)
+- [var kUSBPending: Int](../../kusbpending.md)
 
 
 ---

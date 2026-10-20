@@ -1,10 +1,11 @@
 # kBluetoothTransportTypeUART
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,12 +13,17 @@
 var kBluetoothTransportTypeUART: BluetoothTransportTypes { get }
 ```
 
+```c
+kBluetoothTransportTypeUART
+```
+
 ## See Also
 
-- [var kBluetoothTransportTypePCCard: BluetoothTransportTypes](kbluetoothtransporttypepccard.md)
-- [var kBluetoothTransportTypePCICard: BluetoothTransportTypes](kbluetoothtransporttypepcicard.md)
-- [var kBluetoothTransportTypeUSB: BluetoothTransportTypes](kbluetoothtransporttypeusb.md)
-- [var kBluetoothTransportTypePCIe: BluetoothTransportTypes](kbluetoothtransporttypepcie.md)
+### Constants
+- [var kBluetoothTransportTypePCCard: BluetoothTransportTypes](./kbluetoothtransporttypepccard.md)
+- [var kBluetoothTransportTypePCICard: BluetoothTransportTypes](./kbluetoothtransporttypepcicard.md)
+- [var kBluetoothTransportTypeUSB: BluetoothTransportTypes](./kbluetoothtransporttypeusb.md)
+- [var kBluetoothTransportTypePCIe: BluetoothTransportTypes](./kbluetoothtransporttypepcie.md)
 
 
 ---

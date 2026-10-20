@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the accessibility element for the specified cell.
@@ -17,6 +18,10 @@ Returns the accessibility element for the specified cell.
 
 ```swift
 func accessibilityDataTableCellElement(forRow row: Int, column: Int) -> (any UIAccessibilityContainerDataTableCell)?
+```
+
+```objc
+- (id<UIAccessibilityContainerDataTableCell>) accessibilityDataTableCellElementForRow:(NSUInteger) row column:(NSUInteger) column;
 ```
 
 #### Return Value

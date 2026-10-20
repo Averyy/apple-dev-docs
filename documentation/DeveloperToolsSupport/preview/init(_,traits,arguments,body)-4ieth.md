@@ -1,7 +1,8 @@
 # init(_:traits:arguments:body:)
 
 **Framework**: DeveloperToolsSupport  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a group of previews of an NSViewController.
 

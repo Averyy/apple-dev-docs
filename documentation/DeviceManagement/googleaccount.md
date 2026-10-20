@@ -1,7 +1,8 @@
 # GoogleAccount
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures a Google account.
 
@@ -13,7 +14,7 @@ The payload that configures a Google account.
 
 ## Declaration
 
-```swift
+```
 object GoogleAccount
 ```
 
@@ -27,7 +28,7 @@ You can install multiple Google payloads. Each sets up a Google email address an
 
 The payload never contains credentials; the system prompts the user to enter credentials shortly after installation of the payload.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -39,7 +40,7 @@ The payload never contains credentials; the system prompts the user to enter cre
 | Allowed in user enrollment | iOS, visionOS |
 | Allow multiple payloads | iOS, Shared iPad, visionOS |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -82,30 +83,35 @@ The payload never contains credentials; the system prompts the user to enter cre
 ## Topics
 
 ### Objects
-- [object GoogleAccount.CommunicationServiceRules](googleaccount/communicationservicerules-data.dictionary.md)
+- [object GoogleAccount.CommunicationServiceRules](./googleaccount/communicationservicerules-data.dictionary.md)
   The communication service handler rules for this account.
 
 ## Properties
 
 - `AccountDescription` (string): A user-visible description of the Google account, shown in the Mail and Settings apps.
 - `AccountName` (string): The user’s full name for the Google account. This name appears in sent messages.
-- `CommunicationServiceRules` (GoogleAccount.CommunicationServiceRules): The communication service handler rules for this account. Available: iOS 10+ | iPadOS 10+ | visionOS 1.1+
+- `CommunicationServiceRules` (GoogleAccount.CommunicationServiceRules): The communication service handler rules for this account.
+
+  Available: iOS 10+ | iPadOS 10+ | visionOS 1.1+
 - `EmailAddress` (string) *(required)*: The full Google email address for the account.
-- `VPNUUID` (string): The VPNUUID of the per-app VPN the account uses for network communication. Available: iOS 14+ | iPadOS 14+ | visionOS 1.1+
+- `VPNUUID` (string): The VPNUUID of the per-app VPN the account uses for network communication.
+
+  Available: iOS 14+ | iPadOS 14+ | visionOS 1.1+
 
 ## See Also
 
-- [object Accounts](accounts.md)
+### Accounts
+- [object Accounts](./accounts.md)
   The payload that configures guest accounts.
-- [object CalDAV](caldav.md)
+- [object CalDAV](./caldav.md)
   The payload that configures a Calendar account.
-- [object CardDAV](carddav.md)
+- [object CardDAV](./carddav.md)
   The payload that configures a Contacts account.
-- [object LDAP](ldap.md)
+- [object LDAP](./ldap.md)
   The payload that configures a Lightweight Directory Access Protocol (LDAP) account.
-- [object MobileAccounts](mobileaccounts.md)
+- [object MobileAccounts](./mobileaccounts.md)
   The payload that configures mobile accounts on the device.
-- [object SubscribedCalendars](subscribedcalendars.md)
+- [object SubscribedCalendars](./subscribedcalendars.md)
   The payload that configures subscribed calendars.
 
 

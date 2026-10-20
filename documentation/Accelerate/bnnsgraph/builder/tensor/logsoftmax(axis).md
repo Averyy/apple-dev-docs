@@ -1,7 +1,8 @@
 # logSoftmax(axis:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a log-softmax along the given axis operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a log-softmax along the given axis operation to the current graph.
 ```swift
 func logSoftmax(axis: Int) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 ## Parameters
 

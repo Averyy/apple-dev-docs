@@ -1,7 +1,8 @@
 # startOfEncoderSampleIndex
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -17,9 +18,13 @@
 var startOfEncoderSampleIndex: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger startOfEncoderSampleIndex;
+```
+
 ## Mentions
 
-- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](../sampling-gpu-data-into-counter-sample-buffers.md)
 
 
 ---

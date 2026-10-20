@@ -1,7 +1,8 @@
 # kColorSyncDoNotSubstituteProfiles
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An option that, when set to `kCFBooleanTrue`, skips substituting a matching system-provided profile.
 
@@ -20,11 +21,16 @@ An option that, when set to `kCFBooleanTrue`, skips substituting a matching syst
 var kColorSyncDoNotSubstituteProfiles: Unmanaged<CFString>!
 ```
 
+```c
+extern CFStringRef kColorSyncDoNotSubstituteProfiles;
+```
+
 ## See Also
 
-- [var kColorSyncCustomProfiles: Unmanaged<CFString>!](kcolorsynccustomprofiles.md)
+### Accessing custom and factory profiles
+- [var kColorSyncCustomProfiles: Unmanaged<CFString>!](./kcolorsynccustomprofiles.md)
   A key whose value is a `CFDictionary` describing the device’s custom profiles.
-- [var kColorSyncFactoryProfiles: Unmanaged<CFString>!](kcolorsyncfactoryprofiles.md)
+- [var kColorSyncFactoryProfiles: Unmanaged<CFString>!](./kcolorsyncfactoryprofiles.md)
   A key whose value is a `CFDictionary` describing the device’s factory profiles.
 
 

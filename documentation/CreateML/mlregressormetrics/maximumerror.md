@@ -1,7 +1,8 @@
 # maximumError
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The largest absolute difference between the expected values and the model’s predicted values during testing or training.
 
@@ -21,11 +22,12 @@ var maximumError: Double { get }
 
 ## Mentions
 
-- [Improving Your Model’s Accuracy](improving-your-model-s-accuracy.md)
+- [Improving Your Model’s Accuracy](../improving-your-model-s-accuracy.md)
 
 ## See Also
 
-- [var rootMeanSquaredError: Double](mlregressormetrics/rootmeansquarederror.md)
+### Understanding the model
+- [var rootMeanSquaredError: Double](./rootmeansquarederror.md)
   A common metric used to determine the deviation between correct and predicted values.
 
 

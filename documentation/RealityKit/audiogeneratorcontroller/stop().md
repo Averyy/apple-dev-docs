@@ -1,7 +1,8 @@
 # stop()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops playback of the render handler.
 
@@ -22,7 +23,7 @@ func stop()
 
 #### Discussion
 
-Callbacks to the render handler stop after calling [`stop()`](audiogeneratorcontroller/stop().md). There may be a short delay between when you call `stop` and when the callbacks actually stop.
+Callbacks to the render handler stop after calling [`stop()`](./stop%28%29.md). There may be a short delay between when you call `stop` and when the callbacks actually stop.
 
 
 ---

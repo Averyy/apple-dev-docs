@@ -1,14 +1,15 @@
 # lockStreamForIO
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.10
 
 ## Declaration
 
-```swift
+```c
 static void lockStreamForIO(IOAudioStream *stream);
 ```
 

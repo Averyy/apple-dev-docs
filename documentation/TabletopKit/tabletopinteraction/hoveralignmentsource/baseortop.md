@@ -1,7 +1,8 @@
 # TabletopInteraction.HoverAlignmentSource.baseOrTop
 
 **Framework**: TabletopKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Either the top or bottom face (one of the two faces parallel to the XZ plane)
 
@@ -16,7 +17,8 @@ case baseOrTop
 
 ## See Also
 
-- [TabletopInteraction.HoverAlignmentSource.base](tabletopinteraction/hoveralignmentsource/base.md)
+### Alignment sources
+- [TabletopInteraction.HoverAlignmentSource.base](./base.md)
   The bottom face of the object (the face parallel the XZ plane with lowest value of Y)
 
 

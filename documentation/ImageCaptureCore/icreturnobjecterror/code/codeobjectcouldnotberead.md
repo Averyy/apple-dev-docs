@@ -1,21 +1,26 @@
 # ICReturnObjectError.Code.codeObjectCouldNotBeRead
 
 **Framework**: ImageCaptureCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The object could not be read.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case codeObjectCouldNotBeRead
+```
+
+```c
+ICReturnCodeObjectCouldNotBeRead
 ```
 
 

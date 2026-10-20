@@ -1,7 +1,8 @@
 # barometric
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Describes the unit for barometric pressure
 
@@ -19,6 +20,8 @@ Describes the unit for barometric pressure
 ```swift
 static var barometric: MeasurementFormatUnitUsage<UnitPressure> { get }
 ```
+
+Available when `UnitType` is `UnitPressure`.
 
 
 ---

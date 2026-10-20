@@ -1,12 +1,13 @@
 # ABPropertyValueValidationError
 
 **Framework**: Address Book  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The property value is not valid.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The property value is not valid.
 var ABPropertyValueValidationError: Int { get }
 ```
 
+```c
+ABPropertyValueValidationError
+```
+
 ## See Also
 
-- [var ABAddRecordsError: Int](abaddrecordserror.md)
+### Constants
+- [var ABAddRecordsError: Int](./abaddrecordserror.md)
   The records could not be added.
-- [var ABRemoveRecordsError: Int](abremoverecordserror.md)
+- [var ABRemoveRecordsError: Int](./abremoverecordserror.md)
   The records could not be removed.
-- [var ABPropertyUnsupportedBySourceError: Int](abpropertyunsupportedbysourceerror.md)
+- [var ABPropertyUnsupportedBySourceError: Int](./abpropertyunsupportedbysourceerror.md)
   The property is not supported by the source.
-- [var ABPropertyReadOnlyError: Int](abpropertyreadonlyerror.md)
+- [var ABPropertyReadOnlyError: Int](./abpropertyreadonlyerror.md)
   The property is read-only.
 
 

@@ -1,7 +1,8 @@
 # descriptionFunction
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The function used to describe elements.
 
@@ -20,17 +21,22 @@ The function used to describe elements.
 var descriptionFunction: ((UnsafeRawPointer) -> String?)? { get set }
 ```
 
+```objc
+@property (nullable) NSString *(*)(const void *) descriptionFunction;
+```
+
 #### Discussion
 
 This function is used by description methods for hash and map tables.
 
 ## See Also
 
-- [var hashFunction: ((UnsafeRawPointer, ((UnsafeRawPointer) -> Int)?) -> Int)?](nspointerfunctions/hashfunction.md)
+### Personality Functions
+- [var hashFunction: ((UnsafeRawPointer, ((UnsafeRawPointer) -> Int)?) -> Int)?](./hashfunction.md)
   The hash function.
-- [var isEqualFunction: ((UnsafeRawPointer, UnsafeRawPointer, ((UnsafeRawPointer) -> Int)?) -> ObjCBool)?](nspointerfunctions/isequalfunction.md)
+- [var isEqualFunction: ((UnsafeRawPointer, UnsafeRawPointer, ((UnsafeRawPointer) -> Int)?) -> ObjCBool)?](./isequalfunction.md)
   The function used to compare pointers.
-- [var sizeFunction: ((UnsafeRawPointer) -> Int)?](nspointerfunctions/sizefunction.md)
+- [var sizeFunction: ((UnsafeRawPointer) -> Int)?](./sizefunction.md)
   The function used to determine the size of pointers.
 
 

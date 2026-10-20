@@ -1,7 +1,8 @@
 # productAttestationIntermediateCertificate
 
 **Framework**: MatterSupport  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The device’s Product Attestation Intermediate Certificate as defined in the Matter specification.
 
@@ -10,7 +11,7 @@ The device’s Product Attestation Intermediate Certificate as defined in the Ma
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,9 +21,10 @@ var productAttestationIntermediateCertificate: Data
 
 ## See Also
 
-- [var certificationDeclaration: Data](matteradddeviceextensionrequesthandler/devicecredential/certificationdeclaration.md)
+### Getting the properties
+- [var certificationDeclaration: Data](./certificationdeclaration.md)
   The device’s Certification Declaration as defined in the Matter specification.
-- [var deviceAttestationCertificate: Data](matteradddeviceextensionrequesthandler/devicecredential/deviceattestationcertificate.md)
+- [var deviceAttestationCertificate: Data](./deviceattestationcertificate.md)
   The device’s Device Attestation Certificate as defined in the Matter specification.
 
 

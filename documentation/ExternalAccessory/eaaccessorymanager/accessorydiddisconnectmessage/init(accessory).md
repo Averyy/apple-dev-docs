@@ -1,7 +1,8 @@
 # init(accessory:)
 
 **Framework**: External Accessory  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+

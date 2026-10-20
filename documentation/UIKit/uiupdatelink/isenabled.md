@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the UI update link is monitoring UI updates.
 
@@ -18,11 +19,15 @@ A Boolean value that determines whether the UI update link is monitoring UI upda
 var isEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isEnabled) BOOL enabled;
+```
+
 #### Discussion
 
-By default, the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), which means the system invokes the actions of the UI update link for each UI update.
+By default, the value of this property is [`true`](../../Swift/true.md), which means the system invokes the actions of the UI update link for each UI update.
 
-When the value is [`false`](https://developer.apple.com/documentation/swift/false), the UI update link has no effect. Set the value to [`false`](https://developer.apple.com/documentation/swift/false) if you want to temporarily turn off the UI update link.
+When the value is [`false`](../../Swift/false.md), the UI update link has no effect. Set the value to [`false`](../../Swift/false.md) if you want to temporarily turn off the UI update link.
 
 
 ---

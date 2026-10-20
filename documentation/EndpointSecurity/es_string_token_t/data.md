@@ -1,13 +1,14 @@
 # data
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string data.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,14 @@ The string data.
 var data: UnsafePointer<CChar>!
 ```
 
+```c
+const char * data;
+```
+
 ## See Also
 
-- [var length: Int](es_string_token_t/length.md)
+### Inspecting the Token
+- [var length: Int](./length.md)
   The size of the data buffer, in bytes.
 
 

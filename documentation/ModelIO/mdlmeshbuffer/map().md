@@ -2,6 +2,7 @@
 
 **Framework**: Model I/O  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Provides direct, read-only access to the buffer’s contents.
@@ -20,19 +21,24 @@ Provides direct, read-only access to the buffer’s contents.
 func map() -> MDLMeshBufferMap
 ```
 
+```objc
+- (MDLMeshBufferMap *) map;
+```
+
 #### Return Value
 
 A data object mapped to the storage memory for the buffer.
 
 #### Discussion
 
-The buffer’s storage remains mapped for as long as the returned [`MDLMeshBufferMap`](mdlmeshbuffermap.md) object exists, potentially restricting other uses of that storage. For example, if a buffer’s storage is shared with GPU memory, that buffer may be unavailable for use in rendering until the [`MDLMeshBufferMap`](mdlmeshbuffermap.md) object is deallocated.
+The buffer’s storage remains mapped for as long as the returned [`MDLMeshBufferMap`](../mdlmeshbuffermap.md) object exists, potentially restricting other uses of that storage. For example, if a buffer’s storage is shared with GPU memory, that buffer may be unavailable for use in rendering until the [`MDLMeshBufferMap`](../mdlmeshbuffermap.md) object is deallocated.
 
 ## See Also
 
-- [func fill(Data, offset: Int)](mdlmeshbuffer/fill(_:offset:).md)
+### Working with Data in a Buffer
+- [func fill(Data, offset: Int)](./fill%28_,offset%29.md)
   Writes the specified data into the buffer.
-- [var length: Int](mdlmeshbuffer/length.md)
+- [var length: Int](./length.md)
   The data size of the buffer, in bytes.
 
 

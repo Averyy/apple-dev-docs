@@ -1,7 +1,8 @@
 # middleName
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user’s middle name.
 
@@ -10,7 +11,7 @@ The user’s middle name.
 
 ## Declaration
 
-```swift
+```
 attribute string? middleName;
 ```
 

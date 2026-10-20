@@ -1,7 +1,8 @@
 # NSXMLStoreType
 
 **Framework**: Core Data  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The XML store type.
 
@@ -14,13 +15,18 @@ The XML store type.
 let NSXMLStoreType: String
 ```
 
+```c
+extern NSString * const NSXMLStoreType;
+```
+
 ## See Also
 
-- [let NSSQLiteStoreType: String](nssqlitestoretype.md)
+### Constants
+- [let NSSQLiteStoreType: String](./nssqlitestoretype.md)
   The SQLite database store type.
-- [let NSBinaryStoreType: String](nsbinarystoretype.md)
+- [let NSBinaryStoreType: String](./nsbinarystoretype.md)
   The binary store type.
-- [let NSInMemoryStoreType: String](nsinmemorystoretype.md)
+- [let NSInMemoryStoreType: String](./nsinmemorystoretype.md)
   The in-memory store type.
 
 

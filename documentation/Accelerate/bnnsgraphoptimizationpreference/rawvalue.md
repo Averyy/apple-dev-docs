@@ -1,18 +1,19 @@
 # rawValue
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The corresponding value of the raw type.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,9 +23,10 @@ var rawValue: UInt32
 
 ## See Also
 
-- [var BNNSGraphOptimizationPreferenceIRSize: BNNSGraphOptimizationPreference](bnnsgraphoptimizationpreferenceirsize.md)
+### Instance properties
+- [var BNNSGraphOptimizationPreferenceIRSize: BNNSGraphOptimizationPreference](../bnnsgraphoptimizationpreferenceirsize.md)
   A constant that specifies compilation optimization for smallest graph size on disk.
-- [var BNNSGraphOptimizationPreferencePerformance: BNNSGraphOptimizationPreference](bnnsgraphoptimizationpreferenceperformance.md)
+- [var BNNSGraphOptimizationPreferencePerformance: BNNSGraphOptimizationPreference](../bnnsgraphoptimizationpreferenceperformance.md)
   A constant that specifies compilation optimization for best execution performance.
 
 

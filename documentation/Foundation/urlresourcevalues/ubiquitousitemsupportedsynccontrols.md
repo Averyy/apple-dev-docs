@@ -1,7 +1,8 @@
 # ubiquitousItemSupportedSyncControls
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The supported sync controls on the item.
 

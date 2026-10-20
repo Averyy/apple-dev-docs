@@ -1,14 +1,15 @@
 # vsnprintf
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 int vsnprintf(char *, size_t, const char *, va_list);
 ```
 

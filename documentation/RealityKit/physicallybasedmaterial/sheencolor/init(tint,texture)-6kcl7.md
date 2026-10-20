@@ -1,7 +1,8 @@
 # init(tint:texture:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sheen color in macOS.
 
@@ -10,12 +11,18 @@ Creates a sheen color in macOS.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
 ```swift
 init(tint: UIColor = .white, texture: MaterialParameters.Texture? = nil)
+```
+
+**Other overloads**:
+
+```swift
+init(tint: NSColor = .white, texture: MaterialParameters.Texture? = nil)
 ```
 
 #### Discussion
@@ -33,7 +40,8 @@ If you don’t specify `texture`, then RealityKit uses `tint` as the entity’s 
 
 ## See Also
 
-- [init(tint: NSColor, texture: MaterialParameters.Texture?)](physicallybasedmaterial/sheencolor/init(tint:texture:)-12ev9.md)
+### Creating a sheen color
+- [init(tint: NSColor, texture: MaterialParameters.Texture?)](./init%28tint,texture%29-12ev9.md)
   Creates a sheen color in macOS.
 
 

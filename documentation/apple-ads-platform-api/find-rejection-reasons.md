@@ -1,7 +1,8 @@
 # Query Rejection Reasons
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Query ad creative rejection reasons for apps and return why each ad creative failed approval.
 
@@ -10,9 +11,9 @@ Query ad creative rejection reasons for apps and return why each ad creative fai
 
 #### Discussion
 
-This endpoint retrieves a list of ad creative rejection reasons based on filtering and pagination criteria. See [`CreativeRejectionReason`](creativerejectionreason.md) for the full field reference, including `creativeId` and the `reasonLevel` values.
+This endpoint retrieves a list of ad creative rejection reasons based on filtering and pagination criteria. See [`CreativeRejectionReason`](./creativerejectionreason.md) for the full field reference, including `creativeId` and the `reasonLevel` values.
 
-See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
 ##### Filterable Fields
 
@@ -20,7 +21,7 @@ See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supporte
 | --- | --- | --- | --- | --- |
 | `adamId` | integer (int64) | `EQUALS` |  | The Adam ID of the app whose product page triggered the rejection |
 
-Only `adamId` is confirmed filterable; other [`CreativeRejectionReason`](creativerejectionreason.md) fields aren’t documented as query filters. The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
+Only `adamId` is confirmed filterable; other [`CreativeRejectionReason`](./creativerejectionreason.md) fields aren’t documented as query filters. The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
 #### Payload Examples
 
@@ -87,15 +88,33 @@ POST /v1/rejection-reasons/apps/query
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `CreativeRejectionReasonQueryRequest`
+
+## Responses
+
+- `200` OK (`CreativeRejectionReasonQueryResponse`, `application/json`)
+- `400` Bad Request (`Error`, `application/json`)
+- `401` Unauthorized (`Error`, `application/json`)
+- `403` Forbidden (`Error`, `application/json`)
+- `404` Not Found (`Error`, `application/json`)
+- `429` Too Many Requests (`Error`, `application/json`)
+- `500` Internal Server Error (`Error`, `application/json`)
 
 ## See Also
 
-- [App Eligibility Endpoints](app-eligibility-endpoints.md)
+### Related Documentation
+- [App Eligibility Endpoints](./app-eligibility-endpoints.md)
   Check whether apps qualify to run ads and look up rejection reasons for creatives.
-- [Check App Eligibility](find-apps-eligibilities.md)
+- [Check App Eligibility](./find-apps-eligibilities.md)
   Check whether an app is eligible to run on certain Apple Ads placements and in specific countries or regions.
-- [Get Rejection Reasons](gets-rejection-reasons-by-id.md)
+- [Get Rejection Reasons](./gets-rejection-reasons-by-id.md)
   Retrieve the details of an ad creative rejection reason by ID.
 
 

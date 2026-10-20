@@ -1,7 +1,8 @@
 # endEncountered
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The end of the stream has been reached.
 
@@ -20,15 +21,20 @@ The end of the stream has been reached.
 static var endEncountered: Stream.Event { get }
 ```
 
+```c
+NSStreamEventEndEncountered
+```
+
 ## See Also
 
-- [static var openCompleted: Stream.Event](stream/event/opencompleted.md)
+### Constants
+- [static var openCompleted: Stream.Event](./opencompleted.md)
   The open has completed successfully.
-- [static var hasBytesAvailable: Stream.Event](stream/event/hasbytesavailable.md)
+- [static var hasBytesAvailable: Stream.Event](./hasbytesavailable.md)
   The stream has bytes to be read.
-- [static var hasSpaceAvailable: Stream.Event](stream/event/hasspaceavailable.md)
+- [static var hasSpaceAvailable: Stream.Event](./hasspaceavailable.md)
   The stream can accept bytes for writing.
-- [static var errorOccurred: Stream.Event](stream/event/erroroccurred.md)
+- [static var errorOccurred: Stream.Event](./erroroccurred.md)
   An error has occurred on the stream.
 
 

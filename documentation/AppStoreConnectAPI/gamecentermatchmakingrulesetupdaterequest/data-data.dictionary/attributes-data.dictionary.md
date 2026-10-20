@@ -1,7 +1,8 @@
 # GameCenterMatchmakingRuleSetUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes of a rule set that you modify.
 
@@ -10,7 +11,7 @@ The attributes of a rule set that you modify.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingRuleSetUpdateRequest.Data.Attributes
 ```
 

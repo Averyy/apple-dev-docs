@@ -2,6 +2,7 @@
 
 **Framework**: Vision  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Performs the request on image data and produces observations.
@@ -27,20 +28,31 @@ The observation — or list of observations — the request produces.
 
 ## Parameters
 
-- `data`: The input [`Data`](https://developer.apple.com/documentation/foundation/data) on which to perform the request.
+- `data`: The input [`Data`](../../Foundation/data.md) on which to perform the request.
 - `orientation`: The orientation of the input image. Default is `nil`.
+
+## Default Implementations
+
+### ImageProcessingRequest Implementations
+- [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./perform%28on,orientation%29-1mquz.md)
+- [func perform(on: Data, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./perform%28on,orientation%29-2q3hx.md)
+- [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./perform%28on,orientation%29-6hrxe.md)
+- [func perform(on: CMSampleBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./perform%28on,orientation%29-82mjf.md)
+- [func perform(on: CVPixelBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./perform%28on,orientation%29-8wluq.md)
+- [func perform(on: CGImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./perform%28on,orientation%29-967mr.md)
 
 ## See Also
 
-- [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-80bya.md)
+### Performing a request
+- [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./perform%28on,orientation%29-80bya.md)
   Performs the request on an image URL and produces observations.
-- [func perform(on: CGImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-qxxx.md)
+- [func perform(on: CGImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./perform%28on,orientation%29-qxxx.md)
   Performs the request on a Core Graphics image and produces observations.
-- [func perform(on: CVPixelBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-xspx.md)
+- [func perform(on: CVPixelBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./perform%28on,orientation%29-xspx.md)
   Performs the request on a pixel buffer and produces observations.
-- [func perform(on: CMSampleBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-3hddl.md)
+- [func perform(on: CMSampleBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./perform%28on,orientation%29-3hddl.md)
   Performs the request on a Core Media buffer and produces observations.
-- [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-85ex1.md)
+- [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./perform%28on,orientation%29-85ex1.md)
   Performs the request on a Core Image image and produces observations.
 
 

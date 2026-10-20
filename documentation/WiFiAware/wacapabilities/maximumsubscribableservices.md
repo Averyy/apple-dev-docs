@@ -1,7 +1,8 @@
 # maximumSubscribableServices
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The maximum number of unique services your app can simultaneously subscribe to.
 
@@ -18,9 +19,10 @@ static var maximumSubscribableServices: Int { get }
 
 ## See Also
 
-- [static var maximumConnectableDevices: Int](wacapabilities/maximumconnectabledevices.md)
+### Checking for the maximum devices and services
+- [static var maximumConnectableDevices: Int](./maximumconnectabledevices.md)
   The maximum number of unique devices your app can connect to simultaneously.
-- [static var maximumPublishableServices: Int](wacapabilities/maximumpublishableservices.md)
+- [static var maximumPublishableServices: Int](./maximumpublishableservices.md)
   The maximum number of unique services your app can publish simultaneously.
 
 

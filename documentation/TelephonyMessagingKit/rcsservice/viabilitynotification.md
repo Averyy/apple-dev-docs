@@ -1,7 +1,8 @@
 # RCSService.ViabilityNotification
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A notification that indicates whether RCS is viable for a given cellular service.
 
@@ -17,23 +18,24 @@ struct ViabilityNotification
 ## Topics
 
 ### Instance Properties
-- [let cellularServiceID: CellularServiceID](rcsservice/viabilitynotification/cellularserviceid.md)
+- [let cellularServiceID: CellularServiceID](./viabilitynotification/cellularserviceid.md)
   The cellular service identifier associated with this notification.
-- [let isViable: Bool](rcsservice/viabilitynotification/isviable.md)
+- [let isViable: Bool](./viabilitynotification/isviable.md)
   A Boolean value that indicates whether the device can peform RCS operations at this time.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func isViable(for: CellularServiceID) -> Bool](rcsservice/isviable(for:).md)
+### Determining service viabililty
+- [func isViable(for: CellularServiceID) -> Bool](./isviable%28for%29.md)
   Queries whether the device can perform RCS operations at this time.
-- [var viabilityNotifications: some AsyncSequence<RCSService.ViabilityNotification, Never>](rcsservice/viabilitynotifications.md)
+- [var viabilityNotifications: some AsyncSequence<RCSService.ViabilityNotification, Never>](./viabilitynotifications.md)
   An asynchronous sequence of service viability notifications produced by the service.
 
 

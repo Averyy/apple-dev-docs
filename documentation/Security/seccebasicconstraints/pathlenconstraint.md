@@ -1,7 +1,8 @@
 # pathLenConstraint
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var pathLenConstraint: UInt32
+```
+
+```c
+uint32_t pathLenConstraint;
 ```
 
 

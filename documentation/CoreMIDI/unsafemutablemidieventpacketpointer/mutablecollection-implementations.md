@@ -1,11 +1,12 @@
 # MutableCollection Implementations
 
-**Framework**: Core MIDI
+**Framework**: Core MIDI  
+**Role**: API Collection
 
 ## Topics
 
 ### Subscripts
-- [subscript(UnsafeMutableMIDIEventPacketPointer.Index) -> UnsafeMutableMIDIEventPacketPointer.Element](unsafemutablemidieventpacketpointer/subscript(_:).md)
+- [subscript(UnsafeMutableMIDIEventPacketPointer.Index) -> UnsafeMutableMIDIEventPacketPointer.Element](./subscript%28_%29.md)
 
 
 ---

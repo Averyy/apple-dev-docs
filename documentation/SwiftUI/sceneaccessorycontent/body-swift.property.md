@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The composition of content that comprise the accessory content.

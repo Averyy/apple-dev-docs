@@ -1,7 +1,8 @@
 # artists
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the relationship property that returns the associated artists for the song.
 
@@ -19,6 +20,8 @@ An identifier for the relationship property that returns the associated artists 
 ```swift
 static let artists: MusicRelationshipProperty<Song, Artist>
 ```
+
+Available when `Root` is `Song`.
 
 
 ---

@@ -1,7 +1,8 @@
 # CNContactViewControllerDelegate
 
 **Framework**: Contacts UI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Methods you use to respond to user interactions with a contact view controller.
 
@@ -17,26 +18,31 @@ Methods you use to respond to user interactions with a contact view controller.
 protocol CNContactViewControllerDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol CNContactViewControllerDelegate <NSObject>
+```
+
 #### Overview
 
-Implement the methods of this protocol and assign the resulting object to the [`delegate`](cncontactviewcontroller/delegate.md) property of a `CNContactViewController` object.
+Implement the methods of this protocol and assign the resulting object to the [`delegate`](./cncontactviewcontroller/delegate.md) property of a `CNContactViewController` object.
 
 ## Topics
 
 ### Responding to User Events
-- [func contactViewController(CNContactViewController, shouldPerformDefaultActionFor: CNContactProperty) -> Bool](cncontactviewcontrollerdelegate/contactviewcontroller(_:shouldperformdefaultactionfor:).md)
+- [func contactViewController(CNContactViewController, shouldPerformDefaultActionFor: CNContactProperty) -> Bool](./cncontactviewcontrollerdelegate/contactviewcontroller%28_,shouldperformdefaultactionfor%29.md)
   Called when the user selects a property.
-- [func contactViewController(CNContactViewController, didCompleteWith: CNContact?)](cncontactviewcontrollerdelegate/contactviewcontroller(_:didcompletewith:).md)
+- [func contactViewController(CNContactViewController, didCompleteWith: CNContact?)](./cncontactviewcontrollerdelegate/contactviewcontroller%28_,didcompletewith%29.md)
   Called when the view has been presented.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any CNContactViewControllerDelegate)?](cncontactviewcontroller/delegate.md)
+### Handling Interactions with the Interface
+- [var delegate: (any CNContactViewControllerDelegate)?](./cncontactviewcontroller/delegate.md)
   The delegate to be notified.
 
 

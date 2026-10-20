@@ -1,7 +1,8 @@
 # deactivate(options:completionHandler:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deactivates the audio session asynchronously.
 
@@ -16,7 +17,15 @@ Deactivates the audio session asynchronously.
 ## Declaration
 
 ```swift
+func deactivate(options: AVAudioSessionDeactivationOptions = [], completionHandler handler: @escaping @Sendable (Bool, (any Error)?) -> Void)
+```
+
+```swift
 func deactivate(options: AVAudioSessionDeactivationOptions = []) async throws -> Bool
+```
+
+```objc
+- (void) deactivateWithOptions:(AVAudioSessionDeactivationOptions) options completionHandler:(void (^)(BOOL deactivated, NSError *error)) handler;
 ```
 
 #### Discussion
@@ -30,13 +39,14 @@ This method returns immediately without blocking the calling thread. The system 
 
 ## See Also
 
-- [func setActive(Bool, options: AVAudioSession.SetActiveOptions) throws](avaudiosession/setactive(_:options:).md)
+### Activating and deactivating the session
+- [func setActive(Bool, options: AVAudioSession.SetActiveOptions) throws](./setactive%28_,options%29.md)
   Activates or deactivates your app’s audio session using the specified options.
-- [func activate(options: AVAudioSessionActivationOptions, completionHandler: (Bool, (any Error)?) -> Void)](avaudiosession/activate(options:completionhandler:).md)
+- [func activate(options: AVAudioSessionActivationOptions, completionHandler: (Bool, (any Error)?) -> Void)](./activate%28options,completionhandler%29.md)
   Activates an audio session asynchronously.
-- [struct AVAudioSessionActivationOptions](avaudiosessionactivationoptions.md)
+- [struct AVAudioSessionActivationOptions](../avaudiosessionactivationoptions.md)
   Constants that describe the options to pass when activating the audio session.
-- [struct AVAudioSessionDeactivationOptions](avaudiosessiondeactivationoptions.md)
+- [struct AVAudioSessionDeactivationOptions](../avaudiosessiondeactivationoptions.md)
   Options for deactivating an AVAudioSession
 
 

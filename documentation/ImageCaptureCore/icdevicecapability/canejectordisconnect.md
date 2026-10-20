@@ -1,7 +1,8 @@
 # canEjectOrDisconnect
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the camera can eject or disconnect.
 
@@ -16,6 +17,10 @@ Indicates that the camera can eject or disconnect.
 
 ```swift
 static let canEjectOrDisconnect: ICDeviceCapability
+```
+
+```c
+extern ICDeviceCapability const ICDeviceCanEjectOrDisconnect;
 ```
 
 

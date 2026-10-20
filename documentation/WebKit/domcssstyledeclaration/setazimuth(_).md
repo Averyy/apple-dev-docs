@@ -1,7 +1,8 @@
 # setAzimuth(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setAzimuth(_ azimuth: String!)
+```
+
+```objc
+- (void) setAzimuth:(NSString *) azimuth;
 ```
 
 

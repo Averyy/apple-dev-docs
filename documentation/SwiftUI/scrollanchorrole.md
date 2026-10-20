@@ -1,7 +1,8 @@
 # ScrollAnchorRole
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type defining the role of a scroll anchor.
 
@@ -22,7 +23,7 @@ struct ScrollAnchorRole
 
 #### Overview
 
-You can associate a [`UnitPoint`](unitpoint.md) to a [`ScrollView`](scrollview.md) using the [`defaultScrollAnchor(_:)`](view/defaultscrollanchor(_:).md) modifier. By default, the system uses this point for different kinds of behaviors including:
+You can associate a [`UnitPoint`](./unitpoint.md) to a [`ScrollView`](./scrollview.md) using the [`defaultScrollAnchor(_:)`](./view/defaultscrollanchor%28_%29.md) modifier. By default, the system uses this point for different kinds of behaviors including:
 
 - Where the scroll view should initially be scrolled
 - How the scroll view should handle content size or container size changes
@@ -33,32 +34,33 @@ You can further customize this behavior by assigning different unit points for t
 ## Topics
 
 ### Type Properties
-- [static var alignment: ScrollAnchorRole](scrollanchorrole/alignment.md)
+- [static var alignment: ScrollAnchorRole](./scrollanchorrole/alignment.md)
   The role that influences how a scroll view should align its content when the size of its content is smaller than the container size of the scroll view.
-- [static var initialOffset: ScrollAnchorRole](scrollanchorrole/initialoffset.md)
+- [static var initialOffset: ScrollAnchorRole](./scrollanchorrole/initialoffset.md)
   The role that influences where a scroll view should be initially scrolled.
-- [static var sizeChanges: ScrollAnchorRole](scrollanchorrole/sizechanges.md)
+- [static var sizeChanges: ScrollAnchorRole](./scrollanchorrole/sizechanges.md)
   The role that influences how a scroll view should adjust its content offset when the scroll view’s content or container size changes.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func scrollPosition(Binding<ScrollPosition>, anchor: UnitPoint?) -> some View](view/scrollposition(_:anchor:).md)
+### Managing scroll position
+- [func scrollPosition(Binding<ScrollPosition>, anchor: UnitPoint?) -> some View](./view/scrollposition%28_,anchor%29.md)
   Associates a binding to a scroll position with a scroll view within this view.
-- [func scrollPosition(id: Binding<(some Hashable)?>, anchor: UnitPoint?) -> some View](view/scrollposition(id:anchor:).md)
+- [func scrollPosition(id: Binding<(some Hashable)?>, anchor: UnitPoint?) -> some View](./view/scrollposition%28id,anchor%29.md)
   Associates a binding to be updated when a scroll view within this view scrolls.
-- [func defaultScrollAnchor(UnitPoint?) -> some View](view/defaultscrollanchor(_:).md)
+- [func defaultScrollAnchor(UnitPoint?) -> some View](./view/defaultscrollanchor%28_%29.md)
   Associates an anchor to control which part of the scroll view’s content should be rendered by default.
-- [func defaultScrollAnchor(UnitPoint?, for: ScrollAnchorRole) -> some View](view/defaultscrollanchor(_:for:).md)
+- [func defaultScrollAnchor(UnitPoint?, for: ScrollAnchorRole) -> some View](./view/defaultscrollanchor%28_,for%29.md)
   Associates an anchor to control the position of a scroll view in a particular circumstance.
-- [struct ScrollPosition](scrollposition.md)
+- [struct ScrollPosition](./scrollposition.md)
   A type that defines the semantic position of where a scroll view is scrolled within its content.
 
 

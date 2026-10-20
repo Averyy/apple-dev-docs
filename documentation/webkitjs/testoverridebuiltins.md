@@ -1,21 +1,22 @@
 # TestOverrideBuiltins
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Mobile 10.0+
 
 ## Declaration
 
-```swift
+```
 interface TestOverrideBuiltins
 ```
 
 ## Topics
 
 ### Instance Methods
-- [namedItem](testoverridebuiltins/1777973-nameditem.md)
+- [namedItem](./testoverridebuiltins/api-1777973-nameditem.md)
 
 
 ---

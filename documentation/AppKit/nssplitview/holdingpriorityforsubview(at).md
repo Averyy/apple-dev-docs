@@ -1,7 +1,8 @@
 # holdingPriorityForSubview(at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the priority of the subview’s width or height when resizing.
 
@@ -12,6 +13,10 @@ Returns the priority of the subview’s width or height when resizing.
 
 ```swift
 func holdingPriorityForSubview(at subviewIndex: Int) -> NSLayoutConstraint.Priority
+```
+
+```objc
+- (NSLayoutPriority) holdingPriorityForSubviewAtIndex:(NSInteger) subviewIndex;
 ```
 
 #### Return Value
@@ -28,11 +33,12 @@ The priority is the manner that the split view subviews use to maintain their wi
 
 ## See Also
 
-- [func adjustSubviews()](nssplitview/adjustsubviews.md)
+### Managing Subviews
+- [func adjustSubviews()](./adjustsubviews%28%29.md)
   Adjusts the sizes of the split view’s subviews so they (plus the dividers) fill the split view.
-- [func isSubviewCollapsed(NSView) -> Bool](nssplitview/issubviewcollapsed(_:).md)
+- [func isSubviewCollapsed(NSView) -> Bool](./issubviewcollapsed%28_%29.md)
   Returns whether the specified view is in a collapsed state.
-- [func setHoldingPriority(NSLayoutConstraint.Priority, forSubviewAt: Int)](nssplitview/setholdingpriority(_:forsubviewat:).md)
+- [func setHoldingPriority(NSLayoutConstraint.Priority, forSubviewAt: Int)](./setholdingpriority%28_,forsubviewat%29.md)
   Sets the priority for split view subviews to maintain their width or height.
 
 

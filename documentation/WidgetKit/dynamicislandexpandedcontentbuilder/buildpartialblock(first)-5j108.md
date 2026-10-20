@@ -1,7 +1,8 @@
 # buildPartialBlock(first:)
 
 **Framework**: WidgetKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 16.1+

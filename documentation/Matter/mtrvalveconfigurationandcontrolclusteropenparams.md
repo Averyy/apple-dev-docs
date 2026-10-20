@@ -1,7 +1,8 @@
 # MTRValveConfigurationAndControlClusterOpenParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 17.6+
@@ -18,26 +19,30 @@
 class MTRValveConfigurationAndControlClusterOpenParams
 ```
 
+```objc
+@interface MTRValveConfigurationAndControlClusterOpenParams : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var openDuration: NSNumber?](mtrvalveconfigurationandcontrolclusteropenparams/openduration.md)
-- [var serverSideProcessingTimeout: NSNumber?](mtrvalveconfigurationandcontrolclusteropenparams/serversideprocessingtimeout.md)
-- [var targetLevel: NSNumber?](mtrvalveconfigurationandcontrolclusteropenparams/targetlevel.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrvalveconfigurationandcontrolclusteropenparams/timedinvoketimeoutms.md)
+- [var openDuration: NSNumber?](./mtrvalveconfigurationandcontrolclusteropenparams/openduration.md)
+- [var serverSideProcessingTimeout: NSNumber?](./mtrvalveconfigurationandcontrolclusteropenparams/serversideprocessingtimeout.md)
+- [var targetLevel: NSNumber?](./mtrvalveconfigurationandcontrolclusteropenparams/targetlevel.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrvalveconfigurationandcontrolclusteropenparams/timedinvoketimeoutms.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

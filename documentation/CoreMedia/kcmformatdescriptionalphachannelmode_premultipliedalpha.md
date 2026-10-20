@@ -1,7 +1,8 @@
 # kCMFormatDescriptionAlphaChannelMode_PremultipliedAlpha
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 13.0+
@@ -18,13 +19,18 @@
 let kCMFormatDescriptionAlphaChannelMode_PremultipliedAlpha: CFString
 ```
 
+```c
+extern CFStringRef const kCMFormatDescriptionAlphaChannelMode_PremultipliedAlpha;
+```
+
 ## See Also
 
-- [let kCMFormatDescriptionAlphaChannelMode_StraightAlpha: CFString](kcmformatdescriptionalphachannelmode_straightalpha.md)
-- [let kCMFormatDescriptionTransferFunction_ITU_R_2100_HLG: CFString](kcmformatdescriptiontransferfunction_itu_r_2100_hlg.md)
-- [let kCMFormatDescriptionTransferFunction_Linear: CFString](kcmformatdescriptiontransferfunction_linear.md)
-- [let kCMFormatDescriptionTransferFunction_SMPTE_ST_2084_PQ: CFString](kcmformatdescriptiontransferfunction_smpte_st_2084_pq.md)
-- [let kCMFormatDescriptionTransferFunction_sRGB: CFString](kcmformatdescriptiontransferfunction_srgb.md)
+### Description Constants
+- [let kCMFormatDescriptionAlphaChannelMode_StraightAlpha: CFString](./kcmformatdescriptionalphachannelmode_straightalpha.md)
+- [let kCMFormatDescriptionTransferFunction_ITU_R_2100_HLG: CFString](./kcmformatdescriptiontransferfunction_itu_r_2100_hlg.md)
+- [let kCMFormatDescriptionTransferFunction_Linear: CFString](./kcmformatdescriptiontransferfunction_linear.md)
+- [let kCMFormatDescriptionTransferFunction_SMPTE_ST_2084_PQ: CFString](./kcmformatdescriptiontransferfunction_smpte_st_2084_pq.md)
+- [let kCMFormatDescriptionTransferFunction_sRGB: CFString](./kcmformatdescriptiontransferfunction_srgb.md)
 
 
 ---

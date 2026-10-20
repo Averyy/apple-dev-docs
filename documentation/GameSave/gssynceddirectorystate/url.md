@@ -1,7 +1,8 @@
 # url
 
 **Framework**: GameSave  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of a directory to read and write game-save data in.
 
@@ -18,18 +19,23 @@ The URL of a directory to read and write game-save data in.
 var url: URL? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSURL * url;
+```
+
 #### Discussion
 
 This property’s value is `nil` unless the state is `GSSyncStateReady`, `GSSyncStateOffline`, or `GSSyncStateLocal`.
 
 ## See Also
 
-- [enum GSSyncState](gssyncstate.md)
-- [var state: GSSyncState](gssynceddirectorystate/state.md)
+### Directory state information
+- [enum GSSyncState](../gssyncstate.md)
+- [var state: GSSyncState](./state.md)
   Specifies the current state of the directory
-- [var conflictedVersions: [GSSyncedDirectoryVersion]?](gssynceddirectorystate/conflictedversions.md)
+- [var conflictedVersions: [GSSyncedDirectoryVersion]?](./conflictedversions.md)
   The conflicting versions.
-- [var error: (any Error)?](gssynceddirectorystate/error.md)
+- [var error: (any Error)?](./error.md)
   The error preventing you from using the directory.
 
 

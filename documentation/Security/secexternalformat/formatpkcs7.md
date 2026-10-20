@@ -1,7 +1,8 @@
 # SecExternalFormat.formatPKCS7
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Sequence of certificates, no PEM armor. PKCS7 is the Cryptographic Message Syntax Standard from RSA Security, Inc.
 
@@ -12,6 +13,10 @@ Sequence of certificates, no PEM armor. PKCS7 is the Cryptographic Message Synta
 
 ```swift
 case formatPKCS7
+```
+
+```c
+kSecFormatPKCS7
 ```
 
 

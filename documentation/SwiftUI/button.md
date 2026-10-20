@@ -1,7 +1,8 @@
 # Button
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A control that initiates an action.
 
@@ -23,16 +24,16 @@ struct Button<Label> where Label : View
 
 ## Mentions
 
-- [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
-- [Configuring views](configuring-views.md)
-- [Managing search interface activation](managing-search-interface-activation.md)
-- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
+- [Building and customizing the menu bar with SwiftUI](./building-and-customizing-the-menu-bar-with-swiftui.md)
+- [Configuring views](./configuring-views.md)
+- [Managing search interface activation](./managing-search-interface-activation.md)
+- [Populating SwiftUI menus with adaptive controls](./populating-swiftui-menus-with-adaptive-controls.md)
 
 #### Overview
 
 You create a button by providing an action and a label. The action is either a method or closure property that does something when a user clicks or taps the button. The label is a view that describes the button’s action — for example, by showing text, an icon, or both.
 
-The label of a button can be any kind of view, such as a [`Text`](text.md) view for text-only labels:
+The label of a button can be any kind of view, such as a [`Text`](./text.md) view for text-only labels:
 
 ```swift
 Button(action: signIn) {
@@ -40,7 +41,7 @@ Button(action: signIn) {
 }
 ```
 
-Or a [`Label`](label.md) view, for buttons with both a title and an icon:
+Or a [`Label`](./label.md) view, for buttons with both a title and an icon:
 
 ```swift
 Button(action: signIn) {
@@ -48,13 +49,13 @@ Button(action: signIn) {
 }
 ```
 
-For those common cases, you can also use the convenience initializers that take a title string or [`LocalizedStringKey`](localizedstringkey.md) as their first parameter, and optionally a system image name or `ImageResource` as their second parameter, instead of a trailing closure:
+For those common cases, you can also use the convenience initializers that take a title string or [`LocalizedStringKey`](./localizedstringkey.md) as their first parameter, and optionally a system image name or `ImageResource` as their second parameter, instead of a trailing closure:
 
 ```swift
 Button("Sign In", systemImage: "arrow.up", action: signIn)
 ```
 
-Prefer to use these convenience initializers, or a [`Label`](label.md) view, when providing both a title and an icon. This allows the button to dynamically adapt its appearance to render its title and icon correctly in containers such as toolbars and menus. For example, on iOS, buttons only display their icons by default when placed in toolbars, but show both a leading title and trailing icon in menus. Defining labels this way also helps with accessibility — for example, applying the [`labelStyle(_:)`](view/labelstyle(_:).md) modifier with an [`iconOnly`](labelstyle/icononly.md) style to the button will cause it to only visually display its icon, but still use its title to describe the button in accessibility modes like VoiceOver:
+Prefer to use these convenience initializers, or a [`Label`](./label.md) view, when providing both a title and an icon. This allows the button to dynamically adapt its appearance to render its title and icon correctly in containers such as toolbars and menus. For example, on iOS, buttons only display their icons by default when placed in toolbars, but show both a leading title and trailing icon in menus. Defining labels this way also helps with accessibility — for example, applying the [`labelStyle(_:)`](./view/labelstyle%28_%29.md) modifier with an [`iconOnly`](./labelstyle/icononly.md) style to the button will cause it to only visually display its icon, but still use its title to describe the button in accessibility modes like VoiceOver:
 
 ```swift
 Button("Sign In", systemImage: "arrow.up", action: signIn)
@@ -71,9 +72,9 @@ How the user activates the button varies by platform:
 
 The appearance of the button depends on factors like where you place it, whether you assign it a role, and how you style it.
 
-##### Adding Buttons to Containers
+##### Adding buttons to containers
 
-Use buttons for any user interface element that initiates an action. Buttons automatically adapt their visual style to match the expected style within these different containers and contexts. For example, to create a [`List`](list.md) cell that initiates an action when selected by the user, add a button to the list’s content:
+Use buttons for any user interface element that initiates an action. Buttons automatically adapt their visual style to match the expected style within these different containers and contexts. For example, to create a [`List`](./list.md) cell that initiates an action when selected by the user, add a button to the list’s content:
 
 ```swift
 List {
@@ -89,9 +90,9 @@ List {
 }
 ```
 
-![A screenshot of a list of four items. The first three items use a](/images/com.apple.SwiftUI/Button-1@2x.png)
+![A screenshot of a list of four items. The first three items use a](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Button-1@2x.png)
 
-Similarly, to create a context menu item that initiates an action, add a button to the [`contextMenu(_:)`](view/contextmenu(_:).md) modifier’s content closure:
+Similarly, to create a context menu item that initiates an action, add a button to the [`contextMenu(_:)`](./view/contextmenu%28_%29.md) modifier’s content closure:
 
 ```swift
 .contextMenu {
@@ -101,13 +102,13 @@ Similarly, to create a context menu item that initiates an action, add a button 
 }
 ```
 
-![A screenshot of a context menu that contains the three items Cut, Copy,](/images/com.apple.SwiftUI/Button-2@2x.png)
+![A screenshot of a context menu that contains the three items Cut, Copy,](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Button-2@2x.png)
 
-This pattern extends to most other container views in SwiftUI that have customizable, interactive content, like [`Form`](form.md) instances.
+This pattern extends to most other container views in SwiftUI that have customizable, interactive content, like [`Form`](./form.md) instances.
 
-##### Assigning a Role
+##### Assigning a role
 
-You can optionally initialize a button with a [`ButtonRole`](buttonrole.md) that characterizes the button’s purpose. For example, you can create a [`destructive`](buttonrole/destructive.md) button for a deletion action:
+You can optionally initialize a button with a [`ButtonRole`](./buttonrole.md) that characterizes the button’s purpose. For example, you can create a [`destructive`](./buttonrole/destructive.md) button for a deletion action:
 
 ```swift
  Button("Delete", role: .destructive, action: delete)
@@ -115,13 +116,13 @@ You can optionally initialize a button with a [`ButtonRole`](buttonrole.md) that
 
 The system uses the button’s role to style the button appropriately in every context. For example, a destructive button in a contextual menu appears with a red foreground color:
 
-![A screenshot of a context menu that contains the four items Cut, Copy,](/images/com.apple.SwiftUI/Button-3@2x.png)
+![A screenshot of a context menu that contains the four items Cut, Copy,](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Button-3@2x.png)
 
 If you don’t specify a role for a button, the system applies an appropriate default appearance.
 
-##### Styling Buttons
+##### Styling buttons
 
-You can customize a button’s appearance using one of the standard button styles, like [`bordered`](primitivebuttonstyle/bordered.md), and apply the style with the [`buttonStyle(_:)`](view/buttonstyle(_:).md) modifier:
+You can customize a button’s appearance using one of the standard button styles, like [`bordered`](./primitivebuttonstyle/bordered.md), and apply the style with the [`buttonStyle(_:)`](./view/buttonstyle%28_%29.md) modifier:
 
 ```swift
 HStack {
@@ -133,74 +134,75 @@ HStack {
 
 If you apply the style to a container view, as in the example above, all the buttons in the container use the style:
 
-![A screenshot of two buttons, side by side, each with a capsule shaped](/images/com.apple.SwiftUI/Button-4@2x.png)
+![A screenshot of two buttons, side by side, each with a capsule shaped](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Button-4@2x.png)
 
-You can also create custom styles. To add a custom appearance with standard interaction behavior, create a style that conforms to the [`ButtonStyle`](buttonstyle.md) protocol. To customize both appearance and interaction behavior, create a style that conforms to the [`PrimitiveButtonStyle`](primitivebuttonstyle.md) protocol. Custom styles can also read the button’s role and use it to adjust the button’s appearance.
+You can also create custom styles. To add a custom appearance with standard interaction behavior, create a style that conforms to the [`ButtonStyle`](./buttonstyle.md) protocol. To customize both appearance and interaction behavior, create a style that conforms to the [`PrimitiveButtonStyle`](./primitivebuttonstyle.md) protocol. Custom styles can also read the button’s role and use it to adjust the button’s appearance.
 
 ## Topics
 
 ### Creating a button
-- [init(action: () -> Void, label: () -> Label)](button/init(action:label:).md)
+- [init(action: () -> Void, label: () -> Label)](./button/init%28action,label%29.md)
   Creates a button that displays a custom label.
-- [init(_:action:)](button/init(_:action:).md)
+- [init(_:action:)](./button/init%28_,action%29.md)
   Creates a button that generates its label from a localized string resource.
-- [init(_:image:action:)](button/init(_:image:action:).md)
+- [init(_:image:action:)](./button/init%28_,image,action%29.md)
   Creates a button that generates its label from a localized string resource and image resource.
-- [init(_:systemImage:action:)](button/init(_:systemimage:action:).md)
+- [init(_:systemImage:action:)](./button/init%28_,systemimage,action%29.md)
   Creates a button that generates its label from a localized string key and system image name.
 ### Creating a button with a role
-- [init(role: ButtonRole?, action: () -> Void, label: () -> Label)](button/init(role:action:label:).md)
+- [init(role: ButtonRole?, action: () -> Void, label: () -> Label)](./button/init%28role,action,label%29.md)
   Creates a button with a specified role that displays a custom label.
-- [init(_:role:action:)](button/init(_:role:action:).md)
+- [init(_:role:action:)](./button/init%28_,role,action%29.md)
   Creates a button with a specified role that generates its label from a localized string resource.
-- [init(_:image:role:action:)](button/init(_:image:role:action:).md)
+- [init(_:image:role:action:)](./button/init%28_,image,role,action%29.md)
   Creates a button with a specified role that generates its label from a localized string resource and an image resource.
-- [init(_:systemImage:role:action:)](button/init(_:systemimage:role:action:).md)
+- [init(_:systemImage:role:action:)](./button/init%28_,systemimage,role,action%29.md)
   Creates a button with a specified role that generates its label from a localized string key and a system image.
 ### Creating a button from a configuration
-- [init(PrimitiveButtonStyleConfiguration)](button/init(_:).md)
+- [init(PrimitiveButtonStyleConfiguration)](./button/init%28_%29.md)
   Creates a button based on a configuration for a style with a custom appearance and custom interaction behavior.
 ### Creating a button to perform an App Intent
-- [init(_:intent:)](button/init(_:intent:).md)
+- [init(_:intent:)](./button/init%28_,intent%29.md)
   Creates a button that performs an `AppIntent` and generates its label from a localized string key.
-- [init<I>(intent: I, label: () -> Label)](button/init(intent:label:).md)
+- [init<I>(intent: I, label: () -> Label)](./button/init%28intent,label%29.md)
   Creates a button that performs an `AppIntent`.
-- [init(_:role:intent:)](button/init(_:role:intent:).md)
+- [init(_:role:intent:)](./button/init%28_,role,intent%29.md)
   Creates a button with a specified role that performs an `AppIntent` and generates its label from a string.
-- [init(role: ButtonRole?, intent: some AppIntent, label: () -> Label)](button/init(role:intent:label:).md)
+- [init(role: ButtonRole?, intent: some AppIntent, label: () -> Label)](./button/init%28role,intent,label%29.md)
   Creates a button with a specified role that performs an `AppIntent`.
-- [init(_:image:role:intent:)](button/init(_:image:role:intent:).md)
+- [init(_:image:role:intent:)](./button/init%28_,image,role,intent%29.md)
   Creates a button with a specified role that generates its label from a string and an image resource.
-- [init(_:systemImage:role:intent:)](button/init(_:systemimage:role:intent:).md)
+- [init(_:systemImage:role:intent:)](./button/init%28_,systemimage,role,intent%29.md)
   Creates a button with a specified role that generates its label from a string and a system image.
 ### Initializers
-- [init(role: ButtonRole, action: () -> Void)](button/init(role:action:).md)
+- [init(role: ButtonRole, action: () -> Void)](./button/init%28role,action%29.md)
   Creates a button that displays a default label.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [func buttonStyle(_:)](view/buttonstyle(_:).md)
+### Creating buttons
+- [func buttonStyle(_:)](./view/buttonstyle%28_%29.md)
   Sets the style for buttons within this view to a button style with a custom appearance and standard interaction behavior.
-- [func buttonBorderShape(ButtonBorderShape) -> some View](view/buttonbordershape(_:).md)
+- [func buttonBorderShape(ButtonBorderShape) -> some View](./view/buttonbordershape%28_%29.md)
   Sets the border shape for buttons in this view.
-- [struct ButtonBorderShape](buttonbordershape.md)
+- [struct ButtonBorderShape](./buttonbordershape.md)
   A shape used to draw a button’s border.
-- [func buttonRepeatBehavior(ButtonRepeatBehavior) -> some View](view/buttonrepeatbehavior(_:).md)
+- [func buttonRepeatBehavior(ButtonRepeatBehavior) -> some View](./view/buttonrepeatbehavior%28_%29.md)
   Sets whether buttons in this view should repeatedly trigger their actions on prolonged interactions.
-- [struct ButtonRepeatBehavior](buttonrepeatbehavior.md)
+- [struct ButtonRepeatBehavior](./buttonrepeatbehavior.md)
   The options for controlling the repeatability of button actions.
-- [var buttonRepeatBehavior: ButtonRepeatBehavior](environmentvalues/buttonrepeatbehavior.md)
+- [var buttonRepeatBehavior: ButtonRepeatBehavior](./environmentvalues/buttonrepeatbehavior.md)
   Whether buttons with this associated environment should repeatedly trigger their actions on prolonged interactions.
-- [func buttonSizing(ButtonSizing) -> some View](view/buttonsizing(_:).md)
+- [func buttonSizing(ButtonSizing) -> some View](./view/buttonsizing%28_%29.md)
   The preferred sizing behavior of buttons in the view hierarchy.
-- [struct ButtonSizing](buttonsizing.md)
+- [struct ButtonSizing](./buttonsizing.md)
   The sizing behavior of `Button`s and other button-like controls.
-- [struct ButtonRole](buttonrole.md)
+- [struct ButtonRole](./buttonrole.md)
   A value that describes the purpose of a button.
 
 

@@ -1,7 +1,8 @@
 # SecCECR_KeyCompromise
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var SecCECR_KeyCompromise: Int32 { get }
+```
+
+```c
+#define SecCECR_KeyCompromise
 ```
 
 

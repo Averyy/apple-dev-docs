@@ -1,7 +1,8 @@
 # lastRenderTime
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The most recent render time.
 
@@ -18,6 +19,10 @@ The most recent render time.
 
 ```swift
 var lastRenderTime: AVAudioTime? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) AVAudioTime * lastRenderTime;
 ```
 
 #### Discussion

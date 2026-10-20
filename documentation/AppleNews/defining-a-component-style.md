@@ -1,6 +1,7 @@
 # Defining a Component Style
 
-**Framework**: Apple News
+**Framework**: Apple News  
+**Role**: Article
 
 Set style options for the components in your article.
 
@@ -24,17 +25,18 @@ To define a style for multiple components:
 1. In the [`ArticleDocument.componentStyles`](https://developer.apple.com/documentation/applenewsformat/articledocument/componentstyles-data.dictionary) object, include a property with a name that you define and a `ComponentStyle` object value.
 2. Use the name you defined as the value of the individual componentʼs style property.
 
-For more about properties and objects, see [`JSON Concepts and Article Structure`](json-concepts-and-article-structure.md).
+For more about properties and objects, see [JSON Concepts and Article Structure](./json-concepts-and-article-structure.md).
 
 ## See Also
 
-- [object ComponentStyle](../applenewsformat/componentstyle.md)
+### Component Style Basics
+- [object ComponentStyle](https://developer.apple.com/documentation/applenewsformat/componentstyle)
   The object for setting style properties for components, including background color and fill, borders, and table styles.
-- [object CornerMask](../applenewsformat/cornermask.md)
+- [object CornerMask](https://developer.apple.com/documentation/applenewsformat/cornermask)
   The object for creating rounded corners.
-- [object Border](../applenewsformat/border.md)
+- [object Border](https://developer.apple.com/documentation/applenewsformat/border)
   The object for setting borders for component sides or tables.
-- [object StrokeStyle](../applenewsformat/strokestyle.md)
+- [object StrokeStyle](https://developer.apple.com/documentation/applenewsformat/strokestyle)
   The object for defining the color, width, and style of a border or divider.
 
 

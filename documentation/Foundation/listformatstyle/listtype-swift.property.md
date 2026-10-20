@@ -1,7 +1,8 @@
 # listType
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the list.
 
@@ -34,19 +35,20 @@ For example, for en_US:
 // “One, Two, or Three” 
 ```
 
-The default value is [`ListFormatStyle.ListType.and`](listformatstyle/listtype-swift.enum/and.md).
+The default value is [`ListFormatStyle.ListType.and`](./listtype-swift.enum/and.md).
 
 ## See Also
 
-- [var width: ListFormatStyle<Style, Base>.Width](listformatstyle/width-swift.property.md)
+### Modifying a list format style
+- [var width: ListFormatStyle<Style, Base>.Width](./width-swift.property.md)
   The size of the list.
-- [ListFormatStyle.Width](listformatstyle/width-swift.enum.md)
+- [ListFormatStyle.Width](./width-swift.enum.md)
   The type representing the width of a list.
-- [ListFormatStyle.ListType](listformatstyle/listtype-swift.enum.md)
+- [ListFormatStyle.ListType](./listtype-swift.enum.md)
   A type that describes whether the returned list contains cumulative or alternative elements.
-- [var locale: Locale](listformatstyle/locale.md)
+- [var locale: Locale](./locale.md)
   The locale to use when formatting items in the list.
-- [func locale(Locale) -> ListFormatStyle<Style, Base>](listformatstyle/locale(_:).md)
+- [func locale(Locale) -> ListFormatStyle<Style, Base>](./locale%28_%29.md)
   Modifies the list format style to use the specified locale.
 
 

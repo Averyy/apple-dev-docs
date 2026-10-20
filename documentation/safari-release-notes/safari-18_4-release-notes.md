@@ -1,6 +1,7 @@
 # Safari 18.4 Release Notes
 
-**Framework**: Safari Release Notes
+**Framework**: Safari Release Notes  
+**Role**: Article
 
 Released March 31, 2025 — 18.4 (20621.1.15)
 
@@ -42,7 +43,7 @@ Safari 18.4 is available for iOS 18.4, iPadOS 18.4, visionOS 2.4, macOS 15.4, ma
 
 - Removed the lock icon from the Smart Search field for HTTPS connection. (107993392)  (107993392)
 
-##### Css
+##### CSS
 
 ###### New Features
 
@@ -103,7 +104,7 @@ Safari 18.4 is available for iOS 18.4, iPadOS 18.4, visionOS 2.4, macOS 15.4, ma
 
 ###### New Features
 
-- Implemented `ClipboardItem.support()` which gives the page author the ability to understand which formats are [`supported during Clipboard operations`](https://developer.apple.comhttps://w3c.github.io/clipboard-apis/#dom-clipboarditem-supports). It also now returns a TypeError for a new `ClipboardItem()` with an empty Array.  (136008522)
+- Implemented `ClipboardItem.support()` which gives the page author the ability to understand which formats are [supported during Clipboard operations](https://w3c.github.io/clipboard-apis/#dom-clipboarditem-supports). It also now returns a TypeError for a new `ClipboardItem()` with an empty Array.  (136008522)
 
 ###### Resolved Issues
 
@@ -137,7 +138,7 @@ Safari 18.4 is available for iOS 18.4, iPadOS 18.4, visionOS 2.4, macOS 15.4, ma
 
 - Fixed Wake Lock API for Home Screen Web Apps.  (108573133)
 
-##### Html
+##### HTML
 
 ###### New Features
 
@@ -153,11 +154,11 @@ Safari 18.4 is available for iOS 18.4, iPadOS 18.4, visionOS 2.4, macOS 15.4, ma
 
 - Fixed broken WebP images in lockdown mode.  (144224372)
 
-##### Javascript
+##### JavaScript
 
 ###### New Features
 
-- Completed the [`Iterator Helpers proposal`](https://developer.apple.comhttps://github.com/tc39/proposal-iterator-helpers) by implementing `map()`, `filter()`, `take()`, `drop()`, and `flatMap()` methods.  (103171739)
+- Completed the [Iterator Helpers proposal](https://github.com/tc39/proposal-iterator-helpers) by implementing `map()`, `filter()`, `take()`, `drop()`, and `flatMap()` methods.  (103171739)
 - Updated `JSON.parse` to provide the reviver function access to the input source text and extended `JSON.stringify` behavior to support object placeholders.  (131579181)
 - Added support for `Math.sumPrecise`.  (131580043)
 - Added support for `Iterator.prototype.toArray` from Iterator Helpers Proposal.  (135493558)
@@ -234,7 +235,7 @@ Safari 18.4 is available for iOS 18.4, iPadOS 18.4, visionOS 2.4, macOS 15.4, ma
 
 - Changed 3DES cipher to show a warning to users that it is a legacy TLS cipher.  (138948491)
 
-##### Pdf
+##### PDF
 
 ###### Resolved Issues
 
@@ -330,7 +331,7 @@ Safari 18.4 is available for iOS 18.4, iPadOS 18.4, visionOS 2.4, macOS 15.4, ma
 
 - Fixed the Storage Access API to consider `AllExceptPartitioned` as not currently having cookie access, ensuring sites can request access to first-party cookie.  (143508260)
 
-##### Svg
+##### SVG
 
 ###### New Features
 
@@ -375,7 +376,7 @@ Safari 18.4 is available for iOS 18.4, iPadOS 18.4, visionOS 2.4, macOS 15.4, ma
 - Fixed the boundary style calculation when `text-spacing: text-autospace` is applied.  (137153961)
 - Fixed displaying OpenType-SVG color fonts.  (137496217) (FB15426148)
 
-##### Web Api
+##### Web API
 
 ###### New Features
 
@@ -434,7 +435,9 @@ Safari 18.4 is available for iOS 18.4, iPadOS 18.4, visionOS 2.4, macOS 15.4, ma
 
 ###### Resolved Issues
 
-- Fixed CORS for Web Extension pages to respect granted per-site permissions. Developers will need to add a `browser.permissions.request({origins: []})` call before doing any `fetch()` that is blocked by CORS.  (102912898)
+- Fixed CORS for Web Extension pages to respect granted per-site permissions.
+
+  Developers will need to add a `browser.permissions.request({origins: []})` call before doing any `fetch()` that is blocked by CORS.  (102912898)
 - Fixed an issue causing content blockers to not hide content in `about:blank` frames.  (134273470)
 - Fixed a slowdown in applying rulesets and dynamic rules in declarativeNetRequest.  (136394861) (FB15196130)
 - Fixed clicking the “Clear Storage…” button in Safari Extensions Settings.  (137533628)
@@ -469,7 +472,7 @@ Safari 18.4 is available for iOS 18.4, iPadOS 18.4, visionOS 2.4, macOS 15.4, ma
 - Fixed the overview icon to be inverted dark mode in the Graphics tab.  (140602803)
 - Fixed recorded WebGL objects not getting highlighted correctly in the Graphics tab.  (140625113)
 
-##### Webassembly
+##### WebAssembly
 
 ###### New Features
 
@@ -481,19 +484,19 @@ Safari 18.4 is available for iOS 18.4, iPadOS 18.4, visionOS 2.4, macOS 15.4, ma
 
 - Fixed Wasm legacy `catch_all` instruction to correctly catch thrown JS primitives.  (135972897)
 
-##### Webdriver
+##### WebDriver
 
 ###### Resolved Issues
 
 - Fixed a crash that could occur when simulating drag events with the right mouse button.  (137068514)
 
-##### Webkit
+##### WebKit
 
 ###### New Features
 
 - Added support for `WKWebExtension`, `WKWebExtensionContext`, and `WKWebExtensionController` Swift and Objective-C classes to support integrating Web Extensions into WebKit-based browsers.  (121537087)
 
-##### Webrtc
+##### WebRTC
 
 ###### New Features
 
@@ -509,7 +512,7 @@ Safari 18.4 is available for iOS 18.4, iPadOS 18.4, visionOS 2.4, macOS 15.4, ma
 - Fixed AirPods unmuting to not unmute the camera if website muted the camera.  (137065964)
 - Fixed voice search to not re-prompt for camera or microphone permission after a page-initiated same origin navigation.  (138122655)
 
-##### Wkwebview
+##### WKWebView
 
 ###### New Features
 
@@ -523,19 +526,20 @@ Safari 18.4 is available for iOS 18.4, iPadOS 18.4, visionOS 2.4, macOS 15.4, ma
 
 ## See Also
 
-- [Safari 18.6 Release Notes](safari-18_6-release-notes.md)
+### Version 18
+- [Safari 18.6 Release Notes](./safari-18_6-release-notes.md)
   Released July 29, 2025 — 18.6 (20621.3.11)
-- [Safari 18.5 Release Notes](safari-18_5-release-notes.md)
+- [Safari 18.5 Release Notes](./safari-18_5-release-notes.md)
   Released May 12, 2025 — 18.5 (20621.2.5)
-- [Safari 18.3 Release Notes](safari-18_3-release-notes.md)
+- [Safari 18.3 Release Notes](./safari-18_3-release-notes.md)
   Released January 27, 2025 — 18.3 (20620.2.4)
-- [Safari 18.2 Release Notes](safari-18_2-release-notes.md)
+- [Safari 18.2 Release Notes](./safari-18_2-release-notes.md)
   Released December 11, 2024 — 18.2 (20620.1.16)
-- [Safari 18.1 Release Notes](safari-18_1-release-notes.md)
+- [Safari 18.1 Release Notes](./safari-18_1-release-notes.md)
   Released October 28, 2024 — 18.1 (20619.2.8)
-- [Safari 18.0.1 Release Notes](safari-18_0_1-release-notes.md)
+- [Safari 18.0.1 Release Notes](./safari-18_0_1-release-notes.md)
   Released October 3, 2024 — 18.0.1 (20619.1.26.30)
-- [Safari 18 Release Notes](safari-18-release-notes.md)
+- [Safari 18 Release Notes](./safari-18-release-notes.md)
   Released September 16, 2024 — 18.0 (20619.1.26)
 
 

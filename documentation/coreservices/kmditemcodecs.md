@@ -1,7 +1,8 @@
 # kMDItemCodecs
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The codecs used to encode/decode the media. A CFArray of CFStrings.
 
@@ -12,6 +13,10 @@ The codecs used to encode/decode the media. A CFArray of CFStrings.
 
 ```swift
 let kMDItemCodecs: CFString!
+```
+
+```c
+const CFStringRef kMDItemCodecs;
 ```
 
 

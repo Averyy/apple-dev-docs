@@ -1,7 +1,8 @@
 # attributes()
 
 **Framework**: InputMethodKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a dictionary of the style attributes used for the candidates window..
 
@@ -14,17 +15,22 @@ Returns a dictionary of the style attributes used for the candidates window..
 func attributes() -> [AnyHashable : Any]!
 ```
 
+```objc
+- (NSDictionary *) attributes;
+```
+
 #### Return Value
 
 The dictionary that contains the keys and values for the styles.
 
 ## See Also
 
-- [func panelType() -> IMKCandidatePanelType](imkcandidates/paneltype.md)
+### Managing Window Type and Text Attributes
+- [func panelType() -> IMKCandidatePanelType](./paneltype%28%29.md)
   Returns the style of the candidates window.
-- [func setPanelType(IMKCandidatePanelType)](imkcandidates/setpaneltype(_:).md)
+- [func setPanelType(IMKCandidatePanelType)](./setpaneltype%28_%29.md)
   Sets the style of the candidates window.
-- [func setAttributes([AnyHashable : Any]!)](imkcandidates/setattributes(_:).md)
+- [func setAttributes([AnyHashable : Any]!)](./setattributes%28_%29.md)
   Sets the style attributes for the candidates window.
 
 

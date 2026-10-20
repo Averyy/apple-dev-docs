@@ -1,7 +1,8 @@
 # audioLanguages
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.4+
@@ -16,6 +17,10 @@
 
 ```swift
 var audioLanguages: [Any]? { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSArray * audioLanguages;
 ```
 
 

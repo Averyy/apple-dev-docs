@@ -1,7 +1,8 @@
 # subTitle
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key that represents the subtitle.
 
@@ -19,27 +20,32 @@ A key that represents the subtitle.
 static let subTitle: AVAudioSequencer.InfoDictionaryKey
 ```
 
+```c
+extern AVAudioSequencerInfoDictionaryKey AVAudioSequencerInfoDictionaryKeySubTitle;
+```
+
 ## See Also
 
-- [static let album: AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey/album.md)
+### Getting album details
+- [static let album: AVAudioSequencer.InfoDictionaryKey](./album.md)
   A key that represents the album.
-- [static let artist: AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey/artist.md)
+- [static let artist: AVAudioSequencer.InfoDictionaryKey](./artist.md)
   A key that represents the artist.
-- [static let comments: AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey/comments.md)
+- [static let comments: AVAudioSequencer.InfoDictionaryKey](./comments.md)
   A key that represents the comments.
-- [static let composer: AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey/composer.md)
+- [static let composer: AVAudioSequencer.InfoDictionaryKey](./composer.md)
   A key that represents the composer.
-- [static let copyright: AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey/copyright.md)
+- [static let copyright: AVAudioSequencer.InfoDictionaryKey](./copyright.md)
   A key that represents the copyright statement.
-- [static let genre: AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey/genre.md)
+- [static let genre: AVAudioSequencer.InfoDictionaryKey](./genre.md)
   A key that represents the genre.
-- [static let lyricist: AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey/lyricist.md)
+- [static let lyricist: AVAudioSequencer.InfoDictionaryKey](./lyricist.md)
   A key that represents the lyricist.
-- [static let title: AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey/title.md)
+- [static let title: AVAudioSequencer.InfoDictionaryKey](./title.md)
   A key that represents the title.
-- [static let trackNumber: AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey/tracknumber.md)
+- [static let trackNumber: AVAudioSequencer.InfoDictionaryKey](./tracknumber.md)
   A key that represents the track number.
-- [static let year: AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey/year.md)
+- [static let year: AVAudioSequencer.InfoDictionaryKey](./year.md)
   A key that represents the year.
 
 

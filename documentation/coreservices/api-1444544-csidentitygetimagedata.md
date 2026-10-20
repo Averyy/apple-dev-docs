@@ -1,7 +1,8 @@
 # CSIdentityGetImageData(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func CSIdentityGetImageData(_ identity: CSIdentity!) -> Unmanaged<CFData>!
+```
+
+```c
+CFDataRef CSIdentityGetImageData(CSIdentityRef identity);
 ```
 
 

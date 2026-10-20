@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Quick Look  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the interface structure that the platform uses to interface with a Quick Look plug-in.
 
@@ -16,13 +17,14 @@ init()
 
 ## See Also
 
-- [var QueryInterface: ((UnsafeMutableRawPointer?, REFIID, UnsafeMutablePointer<LPVOID?>?) -> HRESULT)!](qlgeneratorinterfacestruct/queryinterface.md)
-- [var AddRef: ((UnsafeMutableRawPointer?) -> ULONG)!](qlgeneratorinterfacestruct/addref.md)
-- [var Release: ((UnsafeMutableRawPointer?) -> ULONG)!](qlgeneratorinterfacestruct/release.md)
-- [var GenerateThumbnailForURL: ((UnsafeMutableRawPointer?, QLThumbnailRequest?, CFURL?, CFString?, CFDictionary?, CGSize) -> OSStatus)!](qlgeneratorinterfacestruct/generatethumbnailforurl.md)
-- [var CancelThumbnailGeneration: ((UnsafeMutableRawPointer?, QLThumbnailRequest?) -> Void)!](qlgeneratorinterfacestruct/cancelthumbnailgeneration.md)
-- [var GeneratePreviewForURL: ((UnsafeMutableRawPointer?, QLPreviewRequest?, CFURL?, CFString?, CFDictionary?) -> OSStatus)!](qlgeneratorinterfacestruct/generatepreviewforurl.md)
-- [var CancelPreviewGeneration: ((UnsafeMutableRawPointer?, QLPreviewRequest?) -> Void)!](qlgeneratorinterfacestruct/cancelpreviewgeneration.md)
+### Creating a Quick Look Plug-In
+- [var QueryInterface: ((UnsafeMutableRawPointer?, REFIID, UnsafeMutablePointer<LPVOID?>?) -> HRESULT)!](./queryinterface.md)
+- [var AddRef: ((UnsafeMutableRawPointer?) -> ULONG)!](./addref.md)
+- [var Release: ((UnsafeMutableRawPointer?) -> ULONG)!](./release.md)
+- [var GenerateThumbnailForURL: ((UnsafeMutableRawPointer?, QLThumbnailRequest?, CFURL?, CFString?, CFDictionary?, CGSize) -> OSStatus)!](./generatethumbnailforurl.md)
+- [var CancelThumbnailGeneration: ((UnsafeMutableRawPointer?, QLThumbnailRequest?) -> Void)!](./cancelthumbnailgeneration.md)
+- [var GeneratePreviewForURL: ((UnsafeMutableRawPointer?, QLPreviewRequest?, CFURL?, CFString?, CFDictionary?) -> OSStatus)!](./generatepreviewforurl.md)
+- [var CancelPreviewGeneration: ((UnsafeMutableRawPointer?, QLPreviewRequest?) -> Void)!](./cancelpreviewgeneration.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # fetchRequestInvalid
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Occurs when the app misconfigures a fetch request.
 
@@ -18,13 +19,14 @@ static var fetchRequestInvalid: SRError.Code { get }
 
 ## See Also
 
-- [static var promptDeclined: SRError.Code](srerror/promptdeclined.md)
+### Identifying an Error Cause
+- [static var promptDeclined: SRError.Code](./promptdeclined.md)
   Occurs when the user cancels the sensor approval workflow.
-- [static var dataInaccessible: SRError.Code](srerror/datainaccessible.md)
+- [static var dataInaccessible: SRError.Code](./datainaccessible.md)
   Occurs when the app can’t access the sensor’s data.
-- [static var invalidEntitlement: SRError.Code](srerror/invalidentitlement.md)
+- [static var invalidEntitlement: SRError.Code](./invalidentitlement.md)
   Occurs when the app lacks the required entitlement.
-- [static var noAuthorization: SRError.Code](srerror/noauthorization.md)
+- [static var noAuthorization: SRError.Code](./noauthorization.md)
   Occurs when the user declines sensor access in the Settings app.
 
 

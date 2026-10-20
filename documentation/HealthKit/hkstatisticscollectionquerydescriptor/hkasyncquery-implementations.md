@@ -1,11 +1,12 @@
 # HKAsyncQuery Implementations
 
-**Framework**: HealthKit
+**Framework**: HealthKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func result(for: HKHealthStore) async throws -> HKStatisticsCollection](hkstatisticscollectionquerydescriptor/result(for:).md)
+- [func result(for: HKHealthStore) async throws -> HKStatisticsCollection](./result%28for%29.md)
   Runs a one-shot query and asynchronously returns statistics calculated from the current matching results.
 
 

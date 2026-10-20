@@ -1,7 +1,8 @@
 # AttributeScopes.FoundationAttributes.ReplacementIndexAttribute
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type for using a replacement index as an attribute.
 
@@ -23,21 +24,22 @@ enum ReplacementIndexAttribute
 
 #### Overview
 
-When you use the [`applyReplacementIndexAttribute`](attributedstring/formattingoptions/applyreplacementindexattribute.md) formatting option, the resulting formatted string uses this attribute to mark the location of replacement strings. This allows you to relate ranges to replacements even if localizers change the word order in format strings.
+When you use the [`applyReplacementIndexAttribute`](../../attributedstring/formattingoptions/applyreplacementindexattribute.md) formatting option, the resulting formatted string uses this attribute to mark the location of replacement strings. This allows you to relate ranges to replacements even if localizers change the word order in format strings.
 
 ## Relationships
 
 ### Conforms To
-- [AttributedStringKey](attributedstringkey.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [DecodableAttributedStringKey](decodableattributedstringkey.md)
-- [EncodableAttributedStringKey](encodableattributedstringkey.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributedStringKey](../../attributedstringkey.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Copyable](../../../Swift/copyable.md)
+- [DecodableAttributedStringKey](../../decodableattributedstringkey.md)
+- [EncodableAttributedStringKey](../../encodableattributedstringkey.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let replacementIndex: AttributeScopes.FoundationAttributes.ReplacementIndexAttribute](attributescopes/foundationattributes/replacementindex.md)
+### Using string formatting attributes
+- [let replacementIndex: AttributeScopes.FoundationAttributes.ReplacementIndexAttribute](./replacementindex.md)
   A property for accessing a replacement index attribute.
 
 

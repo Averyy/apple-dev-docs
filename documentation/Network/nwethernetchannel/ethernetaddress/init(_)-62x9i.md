@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an Ethernet address with data.
 
@@ -16,7 +17,8 @@ init?(_ rawValue: Data)
 
 ## See Also
 
-- [init?(String)](nwethernetchannel/ethernetaddress/init(_:)-1brh7.md)
+### Creating Addresses
+- [init?(String)](./init%28_%29-1brh7.md)
   Initializes an Ethernet address with a string.
 
 

@@ -1,7 +1,8 @@
 # CTLineGetGlyphCount(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the total glyph count for the line object.
 
@@ -20,6 +21,10 @@ Returns the total glyph count for the line object.
 func CTLineGetGlyphCount(_ line: CTLine) -> CFIndex
 ```
 
+```c
+extern CFIndex CTLineGetGlyphCount(CTLineRef line);
+```
+
 #### Return Value
 
 The total glyph count for the line passed in.
@@ -34,11 +39,12 @@ The total glyph count is equal to the sum of all of the glyphs in the glyph runs
 
 ## See Also
 
-- [func CTLineGetGlyphRuns(CTLine) -> CFArray](ctlinegetglyphruns(_:).md)
+### Getting Line Data
+- [func CTLineGetGlyphRuns(CTLine) -> CFArray](./ctlinegetglyphruns%28_%29.md)
   Returns the array of glyph runs that make up the line object.
-- [func CTLineGetStringRange(CTLine) -> CFRange](ctlinegetstringrange(_:).md)
+- [func CTLineGetStringRange(CTLine) -> CFRange](./ctlinegetstringrange%28_%29.md)
   Gets the range of characters that originally spawned the glyphs in the line.
-- [func CTLineGetPenOffsetForFlush(CTLine, CGFloat, Double) -> Double](ctlinegetpenoffsetforflush(_:_:_:).md)
+- [func CTLineGetPenOffsetForFlush(CTLine, CGFloat, Double) -> Double](./ctlinegetpenoffsetforflush%28_,_,_%29.md)
   Gets the pen offset required to draw flush text.
 
 

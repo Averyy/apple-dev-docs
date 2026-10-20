@@ -1,7 +1,8 @@
 # gracePeriodExpiresDate
 
 **Framework**: App Store Server Notifications  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The time when the billing grace period for a subscription renewal expires.
 
@@ -10,17 +11,18 @@ The time when the billing grace period for a subscription renewal expires.
 
 ## Declaration
 
-```swift
+```
 timestamp gracePeriodExpiresDate
 ```
 
 #### Discussion
 
-For more information about billing grace periods, see [`Enable Billing Grace Period for auto-renewable subscriptions`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev58bda3212).
+For more information about billing grace periods, see [Enable Billing Grace Period for auto-renewable subscriptions](https://help.apple.com/app-store-connect/#/dev58bda3212).
 
 ## See Also
 
-- [type isInBillingRetryPeriod](isinbillingretryperiod.md)
+### Billing status
+- [type isInBillingRetryPeriod](./isinbillingretryperiod.md)
   A Boolean value that indicates whether the App Store is attempting to automatically renew a subscription that expired due to a billing issue.
 
 

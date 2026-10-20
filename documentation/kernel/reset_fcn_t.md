@@ -1,14 +1,15 @@
 # reset_fcn_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 typedef int (int) reset_fcn_t;
 ```
 

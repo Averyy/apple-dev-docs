@@ -1,7 +1,8 @@
 # RestrictionsResponse.GlobalRestrictions.Union
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that contains unioned restrictions.
 
@@ -15,14 +16,14 @@ A dictionary that contains unioned restrictions.
 
 ## Declaration
 
-```swift
+```
 object RestrictionsResponse.GlobalRestrictions.Union
 ```
 
 ## Topics
 
 ### Objects
-- [object RestrictionsResponse.GlobalRestrictions.Union.ANY restriction name](restrictionsresponse/globalrestrictions-data.dictionary/union-data.dictionary/any-restriction-name-data.dictionary.md)
+- [object RestrictionsResponse.GlobalRestrictions.Union.ANY restriction name](./union-data.dictionary/any-restriction-name-data.dictionary.md)
   A dictionary that contains unioned restriction parameters.
 
 ## Properties
@@ -31,11 +32,12 @@ object RestrictionsResponse.GlobalRestrictions.Union
 
 ## See Also
 
-- [object RestrictionsResponse.GlobalRestrictions.Intersection](restrictionsresponse/globalrestrictions-data.dictionary/intersection-data.dictionary.md)
+### Objects
+- [object RestrictionsResponse.GlobalRestrictions.Intersection](./intersection-data.dictionary.md)
   A dictionary that contains intersected restrictions.
-- [object RestrictionsResponse.GlobalRestrictions.RestrictedBool](restrictionsresponse/globalrestrictions-data.dictionary/restrictedbool-data.dictionary.md)
+- [object RestrictionsResponse.GlobalRestrictions.RestrictedBool](./restrictedbool-data.dictionary.md)
   A dictionary that contains Boolean restrictions.
-- [object RestrictionsResponse.GlobalRestrictions.RestrictedValue](restrictionsresponse/globalrestrictions-data.dictionary/restrictedvalue-data.dictionary.md)
+- [object RestrictionsResponse.GlobalRestrictions.RestrictedValue](./restrictedvalue-data.dictionary.md)
   A dictionary that contains numeric restrictions.
 
 

@@ -1,7 +1,8 @@
 # infoViewActions
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of actions to present in the Info content view.
 
@@ -15,10 +16,14 @@ An array of actions to present in the Info content view.
 var infoViewActions: [UIAction]! { get set }
 ```
 
+```objc
+@property (nonatomic, copy, null_resettable) NSArray<UIAction *> * infoViewActions;
+```
+
 ## Mentions
 
-- [Adopting the system player interface in visionOS](adopting-the-system-player-interface-in-visionos.md)
-- [Customizing the tvOS playback experience](customizing-the-tvos-playback-experience.md)
+- [Adopting the system player interface in visionOS](../adopting-the-system-player-interface-in-visionos.md)
+- [Customizing the tvOS playback experience](../customizing-the-tvos-playback-experience.md)
 
 #### Discussion
 
@@ -26,23 +31,24 @@ The Info content view can display up to two custom action controls along its tra
 
 ## See Also
 
-- [var playbackControlsIncludeTransportBar: Bool](avplayerviewcontroller/playbackcontrolsincludetransportbar.md)
+### Customizing the tvOS player UI
+- [var playbackControlsIncludeTransportBar: Bool](./playbackcontrolsincludetransportbar.md)
   A Boolean value that indicates whether the player shows the transport bar and related controls.
-- [var playbackControlsIncludeInfoViews: Bool](avplayerviewcontroller/playbackcontrolsincludeinfoviews.md)
+- [var playbackControlsIncludeInfoViews: Bool](./playbackcontrolsincludeinfoviews.md)
   A Boolean value that indicates whether the player presents video metadata, navigation markers, and playback settings views when someone requests them.
-- [var transportBarIncludesTitleView: Bool](avplayerviewcontroller/transportbarincludestitleview.md)
+- [var transportBarIncludesTitleView: Bool](./transportbarincludestitleview.md)
   A Boolean value that indicates whether the player user interface shows the title view above the scrubber.
-- [var transportBarCustomMenuItems: [UIMenuElement]](avplayerviewcontroller/transportbarcustommenuitems.md)
+- [var transportBarCustomMenuItems: [UIMenuElement]](./transportbarcustommenuitems.md)
   An array of actions and menus to display with the default player controls.
-- [var customInfoViewControllers: [UIViewController]](avplayerviewcontroller/custominfoviewcontrollers.md)
+- [var customInfoViewControllers: [UIViewController]](./custominfoviewcontrollers.md)
   An array of view controllers to display as content tabs in the player user interface.
-- [var contextualActions: [UIAction]](avplayerviewcontroller/contextualactions.md)
+- [var contextualActions: [UIAction]](./contextualactions.md)
   An array of action controls to present contextually during playback.
-- [var customOverlayViewController: UIViewController?](avplayerviewcontroller/customoverlayviewcontroller.md)
+- [var customOverlayViewController: UIViewController?](./customoverlayviewcontroller.md)
   A view controller that presents custom content over the player view.
-- [var unobscuredContentGuide: UILayoutGuide](avplayerviewcontroller/unobscuredcontentguide.md)
+- [var unobscuredContentGuide: UILayoutGuide](./unobscuredcontentguide.md)
   A layout guide that represents an area that fixed-position playback controls don’t obscure when visible.
-- [var customInfoViewController: UIViewController?](avplayerviewcontroller/custominfoviewcontroller.md)
+- [var customInfoViewController: UIViewController?](./custominfoviewcontroller.md)
   A view controller that provides client-specific content and controls alongside system-provided information and settings panels.
 
 

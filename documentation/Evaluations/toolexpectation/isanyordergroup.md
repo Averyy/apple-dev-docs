@@ -1,7 +1,8 @@
 # isAnyOrderGroup
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this expectation represents a group of expectations that can be satisfied in any order.
 
@@ -22,9 +23,10 @@ var isAnyOrderGroup: Bool { get }
 
 ## See Also
 
-- [var name: String](toolexpectation/name.md)
+### Accessing expectation details
+- [var name: String](./name.md)
   The name of the tool that the evaluation expects the model to call.
-- [var arguments: [ArgumentMatcher]](toolexpectation/arguments.md)
+- [var arguments: [ArgumentMatcher]](./arguments.md)
   The argument matchers to validate against the tool call.
 
 

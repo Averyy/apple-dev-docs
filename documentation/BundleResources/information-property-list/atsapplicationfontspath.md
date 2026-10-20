@@ -1,16 +1,18 @@
 # ATSApplicationFontsPath
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The location of a font file or folder of fonts in the bundle’s Resources folder.
 
 **Availability**:
 - macOS 10.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `ATSApplicationFontsPath` (Application fonts resource path)
+- **Type**: string
 
 #### Discussion
 
@@ -18,7 +20,8 @@ If you set this key, the system allows the app in the bundle to use the fonts at
 
 ## See Also
 
-- [UIAppFonts](information-property-list/uiappfonts.md)
+### Fonts
+- [UIAppFonts](./uiappfonts.md)
   App-specific font files located in the bundle and that the system loads at runtime.
 
 

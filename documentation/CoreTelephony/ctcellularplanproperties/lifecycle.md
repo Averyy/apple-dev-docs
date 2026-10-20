@@ -1,7 +1,8 @@
 # CTCellularPlanProperties.lifecycle
 
 **Framework**: Core Telephony  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A type that contains lifecycle details for a time-limited cellular plan.
 
@@ -16,6 +17,10 @@ A type that contains lifecycle details for a time-limited cellular plan.
 class lifecycle
 ```
 
+```objc
+@interface CTCellularPlanLifecycleProperties : NSObject
+```
+
 #### Overview
 
 This type contains lifecycle details for a time-limited cellular plan, including information such as when the plan expires. The expiration date determines the installation experience and when the system deactivates the plan.
@@ -23,34 +28,35 @@ This type contains lifecycle details for a time-limited cellular plan, including
 ## Topics
 
 ### Specifying the expiration date
-- [var expirationDate: DateComponents](ctcellularplanproperties/lifecycle/expirationdate.md)
+- [var expirationDate: DateComponents](./lifecycle/expirationdate.md)
   The date when the time-limited cellular plan expires, specified with day-level granularity.
 ### Initializers
-- [init?(coder: NSCoder)](ctcellularplanproperties/lifecycle/init(coder:).md)
+- [init?(coder: NSCoder)](./lifecycle/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCoding](../../Foundation/nscoding.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [var associatedIccid: String?](ctcellularplanproperties/associatediccid.md)
+### Getting the eSIM properties
+- [var associatedIccid: String?](./associatediccid.md)
   The integrated circuit card identifier (ICCID) that identifies a SIM.
-- [var simCapability: CTCellularPlanCapability](ctcellularplanproperties/simcapability.md)
+- [var simCapability: CTCellularPlanCapability](./simcapability.md)
   The available type of cellular plan that your eSIM supports.
-- [var supportedRegionCodes: [Locale.Region]](ctcellularplanproperties/supportedregioncodes-yhu5.md)
+- [var supportedRegionCodes: [Locale.Region]](./supportedregioncodes-yhu5.md)
   The available regions that your eSIM supports.
-- [var lifecycleProperties: CTCellularPlanProperties.lifecycle?](ctcellularplanproperties/lifecycleproperties.md)
+- [var lifecycleProperties: CTCellularPlanProperties.lifecycle?](./lifecycleproperties.md)
   The lifecycle details for a time-limited cellular plan.
 
 

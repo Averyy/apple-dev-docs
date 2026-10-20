@@ -1,25 +1,27 @@
 # requiredMetaCast
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 Internal helper for OSRequiredCast. Not to be called directly.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 static OSMetaClassBase * requiredMetaCast(const OSMetaClassBase *anObject, const OSMetaClass *toMeta);
 ```
 
 ## See Also
 
-- [safeMetaCast](osmetaclassbase/safemetacast.md)
+### Casting to Different Types
+- [safeMetaCast](./safemetacast.md)
   Internal helper for OSDynamicCast. Not to be called directly.
 
 

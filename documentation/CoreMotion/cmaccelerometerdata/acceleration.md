@@ -1,7 +1,8 @@
 # acceleration
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The acceleration measured by the accelerometer.
 
@@ -19,13 +20,18 @@ The acceleration measured by the accelerometer.
 var acceleration: CMAcceleration { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMAcceleration acceleration;
+```
+
 #### Discussion
 
-The description of the [`CMAcceleration`](cmacceleration.md) structure type describes the fields used for measuring acceleration.
+The description of the [`CMAcceleration`](../cmacceleration.md) structure type describes the fields used for measuring acceleration.
 
 ## See Also
 
-- [struct CMAcceleration](cmacceleration.md)
+### Accessing Accelerometer Data
+- [struct CMAcceleration](../cmacceleration.md)
   The type of a structure containing 3-axis acceleration values.
 
 

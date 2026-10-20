@@ -1,7 +1,8 @@
 # requestedOperation
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The OpenID authentication operation you want this request to perform.
 
@@ -20,9 +21,14 @@ The OpenID authentication operation you want this request to perform.
 var requestedOperation: ASAuthorization.OpenIDOperation { get set }
 ```
 
+```objc
+@property (nonatomic, copy) ASAuthorizationOpenIDOperation requestedOperation;
+```
+
 ## See Also
 
-- [ASAuthorization.OpenIDOperation](asauthorization/openidoperation.md)
+### Setting the Operation
+- [ASAuthorization.OpenIDOperation](../asauthorization/openidoperation.md)
   The kinds of operations that you can perform with OpenID authentication.
 
 

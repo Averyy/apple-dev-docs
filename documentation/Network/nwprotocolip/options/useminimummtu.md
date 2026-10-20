@@ -1,7 +1,8 @@
 # useMinimumMTU
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean indicating that the connection uses the  minimum MTU value, which is 1280 bytes for IPv6.
 
@@ -22,11 +23,12 @@ var useMinimumMTU: Bool { get set }
 
 ## See Also
 
-- [var shouldCalculateReceiveTime: Bool](nwprotocolip/options/shouldcalculatereceivetime.md)
+### Customizing IP Behavior
+- [var shouldCalculateReceiveTime: Bool](./shouldcalculatereceivetime.md)
   A Boolean that indicates whether a connection delivers receive timestamps for IP packets.
-- [var hopLimit: UInt8](nwprotocolip/options/hoplimit.md)
+- [var hopLimit: UInt8](./hoplimit.md)
   The default hop limit for packets a connection generates.
-- [var disableFragmentation: Bool](nwprotocolip/options/disablefragmentation.md)
+- [var disableFragmentation: Bool](./disablefragmentation.md)
   A Boolean that indicates whether fragmentation is disabled on outbound packets.
 
 

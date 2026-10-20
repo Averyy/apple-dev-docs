@@ -1,7 +1,8 @@
 # setFragmentTextures(_:range:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Assigns multiple textures to a range of entries in the fragment shader argument table.
 
@@ -11,7 +12,7 @@ Assigns multiple textures to a range of entries in the fragment shader argument 
 - Mac Catalyst 8.0+
 - macOS 10.11+
 - tvOS 8.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,16 +24,17 @@ func setFragmentTextures(_ textures: [(any MTLTexture)?], range: Range<Int>)
 
 By default, the texture at each index is `nil`.
 
-> **Note**:  The Objective-C version of this method is [`setFragmentTextures:withRange:`](mtlrendercommandencoder/setfragmenttextures:withrange:.md).
+> **Note**:  The Objective-C version of this method is [`setFragmentTextures:withRange:`](./setfragmenttextures_withrange_.md).
 
 ## Parameters
 
-- `textures`: An array of [`MTLTexture`](mtltexture.md) instances the command assigns to entries in the fragment shader argument table for textures.
+- `textures`: An array of [`MTLTexture`](../mtltexture.md) instances the command assigns to entries in the fragment shader argument table for textures.
 - `range`: A span of integers that represent the entries in the fragment shader argument table for textures. Each entry stores a record of the corresponding element in `textures`.
 
 ## See Also
 
-- [func setFragmentTexture((any MTLTexture)?, index: Int)](mtlrendercommandencoder/setfragmenttexture(_:index:).md)
+### Assigning textures
+- [func setFragmentTexture((any MTLTexture)?, index: Int)](./setfragmenttexture%28_,index%29.md)
   Assigns a texture to an entry in the fragment shader argument table.
 
 

@@ -1,7 +1,8 @@
 # WACapabilities.Feature.wifiAware
 
 **Framework**: Wi-Fi Aware  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the host supports Wi-Fi Aware.
 

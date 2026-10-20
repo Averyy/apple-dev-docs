@@ -1,7 +1,8 @@
 # kSecPropertyTypeWarning
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a string describing a trust evaluation warning.
 
@@ -12,6 +13,10 @@ A key whose value is a string describing a trust evaluation warning.
 
 ```swift
 let kSecPropertyTypeWarning: CFString
+```
+
+```c
+extern CFStringRef const kSecPropertyTypeWarning;
 ```
 
 

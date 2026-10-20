@@ -1,7 +1,8 @@
 # init(red:green:blue:alpha:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a Core Image color object in the sRGB color space with the specified red, green, blue, and alpha component values.
 
@@ -10,7 +11,7 @@ Initialize a Core Image color object in the sRGB color space with the specified 
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,9 +20,13 @@ Initialize a Core Image color object in the sRGB color space with the specified 
 convenience init(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)
 ```
 
+```objc
+- (instancetype) initWithRed:(CGFloat) red green:(CGFloat) green blue:(CGFloat) blue alpha:(CGFloat) alpha;
+```
+
 #### Return Value
 
- An initialized [`CIColor`](cicolor.md) instance.
+ An initialized [`CIColor`](../cicolor.md) instance.
 
 #### Discussion
 
@@ -36,9 +41,10 @@ On macOS before 10.10, the CIColor’s color space will be Generic RGB.
 
 ## See Also
 
-- [init(cgColor: CGColor)](cicolor/init(cgcolor:)-1hzk4.md)
+### Initializing Color Objects
+- [init(cgColor: CGColor)](./init%28cgcolor%29-1hzk4.md)
   Create a Core Image color object with a Core Graphics color object.
-- [convenience init(color: UIColor)](cicolor/init(color:).md)
+- [convenience init(color: UIColor)](./init%28color%29.md)
 
 
 ---

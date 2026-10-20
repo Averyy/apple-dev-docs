@@ -1,7 +1,8 @@
 # ImageAnalysisInteraction
 
 **Framework**: VisionKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interface that enables people to interact with recognized text, barcodes, and other objects in an image.
 
@@ -20,145 +21,146 @@ An interface that enables people to interact with recognized text, barcodes, and
 
 ## Mentions
 
-- [Enabling Live Text interactions with images](enabling-live-text-interactions-with-images.md)
+- [Enabling Live Text interactions with images](./enabling-live-text-interactions-with-images.md)
 
 #### Overview
 
-This class enables people to interact with specific content types ([`ImageAnalysisInteraction.InteractionTypes`](imageanalysisinteraction/interactiontypes.md)) that the framework identifies in an image. For example:
+This class enables people to interact with specific content types ([`ImageAnalysisInteraction.InteractionTypes`](./imageanalysisinteraction/interactiontypes.md)) that the framework identifies in an image. For example:
 
-- The Live Text interface enables them to select any text present in the image ([`textSelection`](imageanalysisinteraction/interactiontypes/textselection.md)), or invoke a URL ([`dataDetectors`](imageanalysisinteraction/interactiontypes/datadetectors.md)). The text selection UI offers framework-standard buttons for copying selected text, or looking it up on the web for more information.
-- The *subject lift* feature identifies a wide variety of objects, or *subjects*, in images with the [`imageSubject`](imageanalysisinteraction/interactiontypes/imagesubject.md) interaction type, and provides your app with an image of the objects with the background removed. The [`visualLookUp`](imageanalysisinteraction/interactiontypes/visuallookup.md) type supplements this feature by adding a button in the bottom corner of the view that people can click or tap for more information about the recognized subjects.
+- The Live Text interface enables them to select any text present in the image ([`textSelection`](./imageanalysisinteraction/interactiontypes/textselection.md)), or invoke a URL ([`dataDetectors`](./imageanalysisinteraction/interactiontypes/datadetectors.md)). The text selection UI offers framework-standard buttons for copying selected text, or looking it up on the web for more information.
+- The *subject lift* feature identifies a wide variety of objects, or *subjects*, in images with the [`imageSubject`](./imageanalysisinteraction/interactiontypes/imagesubject.md) interaction type, and provides your app with an image of the objects with the background removed. The [`visualLookUp`](./imageanalysisinteraction/interactiontypes/visuallookup.md) type supplements this feature by adding a button in the bottom corner of the view that people can click or tap for more information about the recognized subjects.
 
-#### Configure the Interface and Begin Interaction
+#### Configure the interface and begin interaction
 
-This class conforms to the [`UIInteraction`](https://developer.apple.com/documentation/uikit/uiinteraction) protocol. To connect the interface with an image that your app displays, call [`addInteraction(_:)`](https://developer.apple.com/documentation/uikit/uiview/addinteraction(_:)) on your app’s image view and pass in a new instance of this class.
+This class conforms to the [`UIInteraction`](../UIKit/uiinteraction.md) protocol. To connect the interface with an image that your app displays, call [`addInteraction(_:)`](../UIKit/uiview/addinteraction%28_%29.md) on your app’s image view and pass in a new instance of this class.
 
-Choose the items that the framework recognizes in an image by configuring the  [`preferredInteractionTypes`](imageanalysisinteraction/preferredinteractiontypes.md) property. To recognize all types of content, specify the [`automatic`](imageanalysisinteraction/interactiontypes/automatic.md) option, or choose a combination of types by assigning an array:
+Choose the items that the framework recognizes in an image by configuring the  [`preferredInteractionTypes`](./imageanalysisinteraction/preferredinteractiontypes.md) property. To recognize all types of content, specify the [`automatic`](./imageanalysisinteraction/interactiontypes/automatic.md) option, or choose a combination of types by assigning an array:
 
 ```swift
 interaction.preferredInteractionTypes = [.textSelection, .imageSubject]
 ```
 
-To begin interaction, call one of the [`ImageAnalyzer`](imageanalyzer.md) class’s `analyze` methods, such as [`analyze(_:configuration:)`](imageanalyzer/analyze(_:configuration:).md) and set the result onto this class’s [`analysis`](imageanalysisoverlayview/analysis.md) property.
+To begin interaction, call one of the [`ImageAnalyzer`](./imageanalyzer.md) class’s `analyze` methods, such as [`analyze(_:configuration:)`](./imageanalyzer/analyze%28_,configuration%29.md) and set the result onto this class’s [`analysis`](./imageanalysisoverlayview/analysis.md) property.
 
-You can take more control over the interaction or provide details about your app’s image view by implementing a delegate ([`ImageAnalysisInteractionDelegate`](imageanalysisinteractiondelegate.md)) and assigning it to the [`delegate`](imageanalysisinteraction/delegate.md) property. If your image view isn’t an instance of [`UIImageView`](https://developer.apple.com/documentation/uikit/uiimageview), your app needs to define the interactive area within the image by implementing the [`contentsRect(for:)`](imageanalysisinteractiondelegate/contentsrect(for:).md) method.
+You can take more control over the interaction or provide details about your app’s image view by implementing a delegate ([`ImageAnalysisInteractionDelegate`](./imageanalysisinteractiondelegate.md)) and assigning it to the [`delegate`](./imageanalysisinteraction/delegate.md) property. If your image view isn’t an instance of [`UIImageView`](../UIKit/uiimageview.md), your app needs to define the interactive area within the image by implementing the [`contentsRect(for:)`](./imageanalysisinteractiondelegate/contentsrect%28for%29.md) method.
 
 ## Topics
 
 ### Creating an image interaction
-- [init()](imageanalysisinteraction/init.md)
+- [init()](./imageanalysisinteraction/init%28%29.md)
   Creates an interaction for Live Text actions with items in an image.
-- [convenience init(any ImageAnalysisInteractionDelegate)](imageanalysisinteraction/init(_:).md)
+- [convenience init(any ImageAnalysisInteractionDelegate)](./imageanalysisinteraction/init%28_%29.md)
   Creates an interaction for Live Text actions with the specified delegate.
 ### Configuring an image interaction
-- [var delegate: (any ImageAnalysisInteractionDelegate)?](imageanalysisinteraction/delegate.md)
+- [var delegate: (any ImageAnalysisInteractionDelegate)?](./imageanalysisinteraction/delegate.md)
   The delegate that handles the interaction callbacks.
-- [var analysis: ImageAnalysis?](imageanalysisinteraction/analysis.md)
+- [var analysis: ImageAnalysis?](./imageanalysisinteraction/analysis.md)
   The results of analyzing an image for items that people can interact with.
-- [var view: UIView?](imageanalysisinteraction/view.md)
+- [var view: UIView?](./imageanalysisinteraction/view.md)
   The view that uses this interaction.
-- [var preferredInteractionTypes: ImageAnalysisInteraction.InteractionTypes](imageanalysisinteraction/preferredinteractiontypes.md)
+- [var preferredInteractionTypes: ImageAnalysisInteraction.InteractionTypes](./imageanalysisinteraction/preferredinteractiontypes.md)
   The types of interactions that people can perform with the image.
-- [ImageAnalysisInteraction.InteractionTypes](imageanalysisinteraction/interactiontypes.md)
+- [ImageAnalysisInteraction.InteractionTypes](./imageanalysisinteraction/interactiontypes.md)
   The types of interactions that people can perform with an image.
-- [var activeInteractionTypes: ImageAnalysisInteraction.InteractionTypes](imageanalysisinteraction/activeinteractiontypes.md)
+- [var activeInteractionTypes: ImageAnalysisInteraction.InteractionTypes](./imageanalysisinteraction/activeinteractiontypes.md)
   The types of interactions that a person actively performs.
 ### Responding to view events
-- [func willMove(to: UIView?)](imageanalysisinteraction/willmove(to:).md)
+- [func willMove(to: UIView?)](./imageanalysisinteraction/willmove%28to%29.md)
   Performs an action before the view adds or removes the interaction from its interaction array.
-- [func didMove(to: UIView?)](imageanalysisinteraction/didmove(to:).md)
+- [func didMove(to: UIView?)](./imageanalysisinteraction/didmove%28to%29.md)
   Performs an action after the view adds or removes the interaction from its interaction array.
 ### Accessing text information
-- [var text: String](imageanalysisinteraction/text.md)
+- [var text: String](./imageanalysisinteraction/text.md)
   The text contents of the current image analysis.
-- [var selectedText: String](imageanalysisinteraction/selectedtext.md)
+- [var selectedText: String](./imageanalysisinteraction/selectedtext.md)
   The current selected text.
-- [var selectedAttributedText: AttributedString](imageanalysisinteraction/selectedattributedtext.md)
+- [var selectedAttributedText: AttributedString](./imageanalysisinteraction/selectedattributedtext.md)
   The current selected attributed text.
-- [func hasText(at: CGPoint) -> Bool](imageanalysisinteraction/hastext(at:).md)
+- [func hasText(at: CGPoint) -> Bool](./imageanalysisinteraction/hastext%28at%29.md)
   Returns a Boolean value that indicates whether active text exists at the specified point.
-- [var hasActiveTextSelection: Bool](imageanalysisinteraction/hasactivetextselection.md)
+- [var hasActiveTextSelection: Bool](./imageanalysisinteraction/hasactivetextselection.md)
   A Boolean value that indicates whether a person or the app has text selected within the image.
-- [func analysisHasText(at: CGPoint) -> Bool](imageanalysisinteraction/analysishastext(at:).md)
+- [func analysisHasText(at: CGPoint) -> Bool](./imageanalysisinteraction/analysishastext%28at%29.md)
   Returns a Boolean value that indicates whether the analysis finds text at the specified point.
-- [func hasDataDetector(at: CGPoint) -> Bool](imageanalysisinteraction/hasdatadetector(at:).md)
+- [func hasDataDetector(at: CGPoint) -> Bool](./imageanalysisinteraction/hasdatadetector%28at%29.md)
   Returns a Boolean value that indicates whether the analysis detects data at the specified point.
 ### Managing text selection
-- [var selectedRanges: [Range<String.Index>]](imageanalysisinteraction/selectedranges.md)
+- [var selectedRanges: [Range<String.Index>]](./imageanalysisinteraction/selectedranges.md)
   Sets selected text ranges.
-- [func resetTextSelection()](imageanalysisinteraction/resettextselection.md)
+- [func resetTextSelection()](./imageanalysisinteraction/resettextselection%28%29.md)
   Removes a person’s text selection from the interface.
 ### Accessing image subjects
-- [var subjects: Set<ImageAnalysisInteraction.Subject>](imageanalysisinteraction/subjects.md)
+- [var subjects: Set<ImageAnalysisInteraction.Subject>](./imageanalysisinteraction/subjects.md)
   The set of all subjects the framework identifies in an image.
-- [ImageAnalysisInteraction.Subject](imageanalysisinteraction/subject.md)
+- [ImageAnalysisInteraction.Subject](./imageanalysisinteraction/subject.md)
   An area of interest in an image that the framework identifies as a primary focal point.
-- [func image(for: Set<ImageAnalysisInteraction.Subject>) async throws -> UIImage](imageanalysisinteraction/image(for:).md)
+- [func image(for: Set<ImageAnalysisInteraction.Subject>) async throws -> UIImage](./imageanalysisinteraction/image%28for%29.md)
   Provides an image asynchronously that contains the given subjects with the background removed.
-- [func subject(at: CGPoint) async -> ImageAnalysisInteraction.Subject?](imageanalysisinteraction/subject(at:).md)
+- [func subject(at: CGPoint) async -> ImageAnalysisInteraction.Subject?](./imageanalysisinteraction/subject%28at%29.md)
   Returns the subject at the given point within the interaction’s image, if one exists.
 ### Managing image subjects
-- [var highlightedSubjects: Set<ImageAnalysisInteraction.Subject>](imageanalysisinteraction/highlightedsubjects.md)
+- [var highlightedSubjects: Set<ImageAnalysisInteraction.Subject>](./imageanalysisinteraction/highlightedsubjects.md)
   All highlighted subjects in the interaction image.
 ### Querying the interface state
-- [var liveTextButtonVisible: Bool](imageanalysisinteraction/livetextbuttonvisible.md)
+- [var liveTextButtonVisible: Bool](./imageanalysisinteraction/livetextbuttonvisible.md)
   A Boolean value that indicates whether the Live Text button appears.
-- [var isSupplementaryInterfaceHidden: Bool](imageanalysisinteraction/issupplementaryinterfacehidden.md)
+- [var isSupplementaryInterfaceHidden: Bool](./imageanalysisinteraction/issupplementaryinterfacehidden.md)
   A Boolean value that indicates whether the view hides supplementary interface objects.
-- [func hasInteractiveItem(at: CGPoint) -> Bool](imageanalysisinteraction/hasinteractiveitem(at:).md)
+- [func hasInteractiveItem(at: CGPoint) -> Bool](./imageanalysisinteraction/hasinteractiveitem%28at%29.md)
   Returns a Boolean value that indicates whether active text, data detectors, or supplementary interface objects exist at the specified point.
-- [func hasSupplementaryInterface(at: CGPoint) -> Bool](imageanalysisinteraction/hassupplementaryinterface(at:).md)
+- [func hasSupplementaryInterface(at: CGPoint) -> Bool](./imageanalysisinteraction/hassupplementaryinterface%28at%29.md)
   Returns a Boolean value that indicates whether supplementary interface objects exist at the specified point.
-- [var selectableItemsHighlighted: Bool](imageanalysisinteraction/selectableitemshighlighted.md)
+- [var selectableItemsHighlighted: Bool](./imageanalysisinteraction/selectableitemshighlighted.md)
   A Boolean value that indicates whether the interaction highlights actionable text or data the analyzer detects in text.
 ### Customizing the interface
-- [var allowLongPressForDataDetectorsInTextMode: Bool](imageanalysisinteraction/allowlongpressfordatadetectorsintextmode.md)
+- [var allowLongPressForDataDetectorsInTextMode: Bool](./imageanalysisinteraction/allowlongpressfordatadetectorsintextmode.md)
   A Boolean value that indicates whether people can press and hold text to activate data detectors.
-- [func setSupplementaryInterfaceHidden(Bool, animated: Bool)](imageanalysisinteraction/setsupplementaryinterfacehidden(_:animated:).md)
+- [func setSupplementaryInterfaceHidden(Bool, animated: Bool)](./imageanalysisinteraction/setsupplementaryinterfacehidden%28_,animated%29.md)
   Hides or shows supplementary interface objects, such as the Live Action button and Quick Actions, depending on the item type.
-- [var supplementaryInterfaceContentInsets: UIEdgeInsets](imageanalysisinteraction/supplementaryinterfacecontentinsets.md)
+- [var supplementaryInterfaceContentInsets: UIEdgeInsets](./imageanalysisinteraction/supplementaryinterfacecontentinsets.md)
   The distances the edges of content are inset from the supplementary interface.
-- [var supplementaryInterfaceFont: UIFont?](imageanalysisinteraction/supplementaryinterfacefont.md)
+- [var supplementaryInterfaceFont: UIFont?](./imageanalysisinteraction/supplementaryinterfacefont.md)
   The font to use for the supplementary interface.
 ### Managing custom image views
-- [var contentsRect: CGRect](imageanalysisinteraction/contentsrect.md)
+- [var contentsRect: CGRect](./imageanalysisinteraction/contentsrect.md)
   A rectangle, in unit coordinate space, that describes the content area of the interaction.
-- [func setContentsRectNeedsUpdate()](imageanalysisinteraction/setcontentsrectneedsupdate.md)
+- [func setContentsRectNeedsUpdate()](./imageanalysisinteraction/setcontentsrectneedsupdate%28%29.md)
   Informs the view that contains the image when the layout changes and the view needs to reload its content.
 ### Errors
-- [ImageAnalysisInteraction.SubjectUnavailable](imageanalysisinteraction/subjectunavailable.md)
+- [ImageAnalysisInteraction.SubjectUnavailable](./imageanalysisinteraction/subjectunavailable.md)
   Error conditions that can occur during subject analysis.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIInteraction](../uikit/uiinteraction.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIInteraction](../UIKit/uiinteraction.md)
 
 ## See Also
 
-- [Enabling Live Text interactions with images](enabling-live-text-interactions-with-images.md)
+### Content recognition and interaction in images
+- [Enabling Live Text interactions with images](./enabling-live-text-interactions-with-images.md)
   Add a Live Text interface that enables users to perform actions with text and QR codes that appear in images.
-- [class ImageAnalyzer](imageanalyzer.md)
+- [class ImageAnalyzer](./imageanalyzer.md)
   An object that finds items in images that people can interact with, such as subjects, text, and QR codes.
-- [class ImageAnalysis](imageanalysis.md)
+- [class ImageAnalysis](./imageanalysis.md)
   An object that represents the results of analyzing an image, and provides the input for the Live Text interface object.
-- [protocol ImageAnalysisInteractionDelegate](imageanalysisinteractiondelegate.md)
+- [protocol ImageAnalysisInteractionDelegate](./imageanalysisinteractiondelegate.md)
   A delegate that handles image-analysis and user-interaction callbacks for an interaction object.
-- [class ImageAnalysisOverlayView](imageanalysisoverlayview.md)
+- [class ImageAnalysisOverlayView](./imageanalysisoverlayview.md)
   A view that enables people to interact with recognized text, barcodes, and other objects in an image.
-- [protocol ImageAnalysisOverlayViewDelegate](imageanalysisoverlayviewdelegate.md)
+- [protocol ImageAnalysisOverlayViewDelegate](./imageanalysisoverlayviewdelegate.md)
   A delegate that handles image-analysis and user-interaction callbacks for an overlay view.
-- [struct CameraRegionView](cameraregionview.md)
+- [struct CameraRegionView](./cameraregionview.md)
   This view displays a stabilized region of interest within a person’s view and provides passthrough camera feed for that selected region.
 
 

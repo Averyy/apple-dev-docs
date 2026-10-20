@@ -1,9 +1,10 @@
 # kSpeechErrorCallbackCharacterOffset
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-The character index in the text being synthesized when the error occurred (the string representing the text is in [`kSpeechErrorCallbackSpokenString`](kspeecherrorcallbackspokenstring.md)).
+The character index in the text being synthesized when the error occurred (the string representing the text is in [`kSpeechErrorCallbackSpokenString`](./kspeecherrorcallbackspokenstring.md)).
 
 **Availability**:
 - macOS 10.5+
@@ -12,6 +13,10 @@ The character index in the text being synthesized when the error occurred (the s
 
 ```swift
 let kSpeechErrorCallbackCharacterOffset: CFString
+```
+
+```c
+const CFStringRef kSpeechErrorCallbackCharacterOffset;
 ```
 
 

@@ -1,7 +1,8 @@
 # summaryLines
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of label-value pairs listing taxes, discounts, or other cart-level entries in the summary. These entries apply to the entire cart rather than individual line items.
 

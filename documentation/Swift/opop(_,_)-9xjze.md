@@ -1,7 +1,8 @@
 # ??(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Performs a nil-coalescing operation, returning the wrapped value of an `Optional` instance or a default value.
 
@@ -49,7 +50,8 @@ In this example, `goodNumber` is assigned a value of `100` because `Int("100")` 
 
 ## See Also
 
-- [func ?? <T>(consuming T?, @autoclosure () throws -> T?) rethrows -> T?](__(_:_:)-1fjjj.md)
+### Coalescing Nil Values
+- [func ?? <T>(consuming T?, @autoclosure () throws -> T?) rethrows -> T?](./opop%28_,_%29-1fjjj.md)
   Performs a nil-coalescing operation, returning the wrapped value of an `Optional` instance or a default `Optional` value.
 
 

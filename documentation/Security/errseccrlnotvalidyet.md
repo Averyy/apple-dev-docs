@@ -1,7 +1,8 @@
 # errSecCRLNotValidYet
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The certificate revocation list is not yet valid.
 
@@ -18,6 +19,10 @@ The certificate revocation list is not yet valid.
 
 ```swift
 var errSecCRLNotValidYet: OSStatus { get }
+```
+
+```c
+errSecCRLNotValidYet
 ```
 
 

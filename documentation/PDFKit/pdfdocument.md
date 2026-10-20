@@ -1,7 +1,8 @@
 # PDFDocument
 
 **Framework**: PDFKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents PDF data or a PDF file and defines methods for writing, searching, and selecting PDF data.
 
@@ -19,9 +20,13 @@ An object that represents PDF data or a PDF file and defines methods for writing
 class PDFDocument
 ```
 
+```objc
+@interface PDFDocument : NSObject
+```
+
 ## Mentions
 
-- [Adding Custom Graphics to a PDF](adding-custom-graphics-to-a-pdf.md)
+- [Adding Custom Graphics to a PDF](./adding-custom-graphics-to-a-pdf.md)
 
 #### Overview
 
@@ -32,56 +37,57 @@ You initialize a `PDFDocument` object with PDF data or with a URL to a PDF file.
 ## Topics
 
 ### Initializing Documents
-- [init?(url: URL)](pdfdocument/init(url:)-98jte.md)
+- [init?(url: URL)](./pdfdocument/init%28url%29-98jte.md)
   Initializes a `PDFDocument` object with the contents at the specified URL (if the URL is invalid, this method returns `NULL`).
-- [init?(data: Data)](pdfdocument/init(data:).md)
+- [init?(data: Data)](./pdfdocument/init%28data%29.md)
   Initializes a `PDFDocument` object with the passed-in data.
-- [init()](pdfdocument/init.md)
+- [init()](./pdfdocument/init%28%29.md)
   Initializes a `PDFDocument` object.
 ### Reading and Writing PDFs
-- [Read Operations](read-operations.md)
+- [Read Operations](./read-operations.md)
   Operations that let you access documents and pages, manage document security, and work with searching and selections.
-- [Write Operations](write-operations.md)
+- [Write Operations](./write-operations.md)
   Operations that let you write document data to different locations.
 ### Setting the Delegate
-- [var delegate: (any PDFDocumentDelegate)?](pdfdocument/delegate.md)
+- [var delegate: (any PDFDocumentDelegate)?](./pdfdocument/delegate.md)
   The object acting as the delegate for the `PDFDocument` object.
-- [protocol PDFDocumentDelegate](pdfdocumentdelegate.md)
+- [protocol PDFDocumentDelegate](./pdfdocumentdelegate.md)
   The delegate for the `PDFDocument` object.
 ### Constants
-- [enum PDFDocumentPermissions](pdfdocumentpermissions.md)
+- [enum PDFDocumentPermissions](./pdfdocumentpermissions.md)
   An enumeration that specifies document permissions status.
-- [struct PDFDocumentAttribute](pdfdocumentattribute.md)
+- [struct PDFDocumentAttribute](./pdfdocumentattribute.md)
   A structure that specifies document attributes.
-- [struct PDFDocumentWriteOption](pdfdocumentwriteoption.md)
+- [struct PDFDocumentWriteOption](./pdfdocumentwriteoption.md)
   A structure that specifies file writing options for a document.
 ### Instance Properties
-- [var accessPermissions: PDFAccessPermissions](pdfdocument/accesspermissions.md)
+- [var accessPermissions: PDFAccessPermissions](./pdfdocument/accesspermissions.md)
 ### Initializers
-- [init?(URL: URL)](pdfdocument/init(url:)-7sttu.md)
+- [init?(URL: URL)](./pdfdocument/init%28url%29-7sttu.md)
 ### Instance Methods
-- [func selection(from: PDFPage, at: CGPoint, to: PDFPage, at: CGPoint, with: PDFSelectionGranularity) -> PDFSelection?](pdfdocument/selection(from:at:to:at:with:).md)
+- [func selection(from: PDFPage, at: CGPoint, to: PDFPage, at: CGPoint, with: PDFSelectionGranularity) -> PDFSelection?](./pdfdocument/selection%28from,at,to,at,with%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PDFPage](pdfpage.md)
+### Content Model
+- [class PDFPage](./pdfpage.md)
   `PDFPage`, a subclass of `NSObject`, defines methods used to render PDF pages and work with annotations, text, and selections.
-- [class PDFOutline](pdfoutline.md)
+- [class PDFOutline](./pdfoutline.md)
   A `PDFOutline` object is an element in a tree-structured hierarchy that can represent the structure of a PDF document.
-- [class PDFSelection](pdfselection.md)
+- [class PDFSelection](./pdfselection.md)
   A `PDFSelection` object identifies a contiguous or noncontiguous selection of text in a PDF document.
 
 

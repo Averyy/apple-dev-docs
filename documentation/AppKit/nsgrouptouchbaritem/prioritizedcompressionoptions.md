@@ -1,7 +1,8 @@
 # prioritizedCompressionOptions
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The allowed compression options, in the order they should be applied.
 
@@ -14,6 +15,10 @@ The allowed compression options, in the order they should be applied.
 var prioritizedCompressionOptions: [NSUserInterfaceCompressionOptions] { get set }
 ```
 
+```objc
+@property (copy) NSArray<NSUserInterfaceCompressionOptions *> * prioritizedCompressionOptions;
+```
+
 #### Discussion
 
 Use this property when you want to control the order of the system compression options, or if you want to use custom compression options.
@@ -22,7 +27,8 @@ The default value is an array containing all standard AppKit options, in the App
 
 ## See Also
 
-- [var effectiveCompressionOptions: NSUserInterfaceCompressionOptions](nsgrouptouchbaritem/effectivecompressionoptions.md)
+### Configuring item compression
+- [var effectiveCompressionOptions: NSUserInterfaceCompressionOptions](./effectivecompressionoptions.md)
   The compression options that are currently active on the group.
 
 

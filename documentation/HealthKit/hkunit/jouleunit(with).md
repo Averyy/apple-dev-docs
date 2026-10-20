@@ -1,22 +1,27 @@
 # jouleUnit(with:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a HealthKit unit for measuring energy, using joule units with the provided prefix.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 class func jouleUnit(with prefix: HKMetricPrefix) -> Self
+```
+
+```objc
++ (instancetype) jouleUnitWithMetricPrefix:(HKMetricPrefix) prefix;
 ```
 
 #### Return Value
@@ -41,19 +46,20 @@ HKUnit *kj = [HKUnit jouleUnitWithMetricPrefix:HKMetricPrefixKilo];
 
 ## Parameters
 
-- `prefix`: A valid metric prefix value. For the complete list of prefix values, see [`HKMetricPrefix`](hkmetricprefix.md).
+- `prefix`: A valid metric prefix value. For the complete list of prefix values, see [`HKMetricPrefix`](../hkmetricprefix.md).
 
 ## See Also
 
-- [class func joule() -> Self](hkunit/joule.md)
+### Constructing energy units
+- [class func joule() -> Self](./joule%28%29.md)
   Returns a HealthKit unit for measuring energy in joules.
-- [class func kilocalorie() -> Self](hkunit/kilocalorie.md)
+- [class func kilocalorie() -> Self](./kilocalorie%28%29.md)
   Returns a HealthKit unit for measuring energy in kilocalories.
-- [class func largeCalorie() -> Self](hkunit/largecalorie.md)
+- [class func largeCalorie() -> Self](./largecalorie%28%29.md)
   Returns a HealthKit unit for measuring energy in large calories (Cal).
-- [class func smallCalorie() -> Self](hkunit/smallcalorie.md)
+- [class func smallCalorie() -> Self](./smallcalorie%28%29.md)
   Returns a HealthKit unit for measuring energy in small calories (cal).
-- [class func calorie() -> Self](hkunit/calorie.md)
+- [class func calorie() -> Self](./calorie%28%29.md)
   Returns a HealthKit unit for measuring energy in calories.
 
 

@@ -1,7 +1,8 @@
 # MTLDataType.rgba8Snorm
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An ordinary pixel with four components, each of which is an 8-bit, normalized, signed integer value.
 
@@ -19,21 +20,26 @@ An ordinary pixel with four components, each of which is an 8-bit, normalized, s
 case rgba8Snorm
 ```
 
+```c
+MTLDataTypeRGBA8Snorm
+```
+
 #### Discussion
 
 The color components are in RGBA order, which stands for red, green, blue, and alpha.
 
 ## See Also
 
-- [MTLDataType.rgba8Unorm](mtldatatype/rgba8unorm.md)
+### 32-bit color integer types
+- [MTLDataType.rgba8Unorm](./rgba8unorm.md)
   An ordinary pixel with four components, each of which is an 8-bit, normalized, unsigned integer value.
-- [MTLDataType.rgba8Unorm_srgb](mtldatatype/rgba8unorm_srgb.md)
+- [MTLDataType.rgba8Unorm_srgb](./rgba8unorm_srgb.md)
   An ordinary pixel with four components, each of which is an 8-bit, normalized, unsigned integer value in the sRGB color space.
-- [MTLDataType.rg16Snorm](mtldatatype/rg16snorm.md)
+- [MTLDataType.rg16Snorm](./rg16snorm.md)
   An ordinary pixel with two components, each of which is a 16-bit, normalized, signed integer value.
-- [MTLDataType.rg16Unorm](mtldatatype/rg16unorm.md)
+- [MTLDataType.rg16Unorm](./rg16unorm.md)
   An ordinary pixel with two components, each of which is a 16-bit, normalized, unsigned integer value.
-- [MTLDataType.rgb10a2Unorm](mtldatatype/rgb10a2unorm.md)
+- [MTLDataType.rgb10a2Unorm](./rgb10a2unorm.md)
   A packed 32-bit format with three color components, each of which is a 10-bit, normalized, unsigned integer value.
 
 

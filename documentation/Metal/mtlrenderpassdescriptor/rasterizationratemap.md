@@ -1,7 +1,8 @@
 # rasterizationRateMap
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rasterization rate map to use when executing the render pass.
 
@@ -19,9 +20,13 @@ The rasterization rate map to use when executing the render pass.
 var rasterizationRateMap: (any MTLRasterizationRateMap)? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) id<MTLRasterizationRateMap> rasterizationRateMap;
+```
+
 ## Mentions
 
-- [Rendering with a rasterization rate map](rendering-with-a-rasterization-rate-map.md)
+- [Rendering with a rasterization rate map](../rendering-with-a-rasterization-rate-map.md)
 
 #### Discussion
 

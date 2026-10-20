@@ -1,7 +1,8 @@
 # init(restriction:)
 
 **Framework**: ExtensionFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the scope type with the specified restriction value.
 
@@ -26,7 +27,8 @@ init(restriction: AppExtensionPoint.Scope.Restriction = .application)
 
 ## See Also
 
-- [AppExtensionPoint.Scope.Restriction](appextensionpoint/scope/restriction.md)
+### Creating a scope attribute
+- [AppExtensionPoint.Scope.Restriction](./restriction.md)
   A type that indicates which app extensions may bind to a host app.
 
 

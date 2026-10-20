@@ -1,7 +1,8 @@
 # displaysMap
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 A Boolean value that indicates whether to display the map in the place detail view.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether to display the map in the place detail vi
 
 ## Declaration
 
-```swift
+```
 displaysMap?: boolean;
 ```
 

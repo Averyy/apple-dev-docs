@@ -1,7 +1,8 @@
 # HKMetadataKeyQuantityClampedToUpperBound
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.0+
@@ -17,15 +18,20 @@
 let HKMetadataKeyQuantityClampedToUpperBound: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyQuantityClampedToUpperBound;
+```
+
 ## See Also
 
-- [let HKMetadataKeyExternalUUID: String](hkmetadatakeyexternaluuid.md)
+### General Keys
+- [let HKMetadataKeyExternalUUID: String](./hkmetadatakeyexternaluuid.md)
   A unique identifier for an HKObject that is set by its source.
-- [let HKMetadataKeyTimeZone: String](hkmetadatakeytimezone.md)
+- [let HKMetadataKeyTimeZone: String](./hkmetadatakeytimezone.md)
   The user’s time zone when the HealthKit object was created.
-- [let HKMetadataKeyWasUserEntered: String](hkmetadatakeywasuserentered.md)
+- [let HKMetadataKeyWasUserEntered: String](./hkmetadatakeywasuserentered.md)
   A key that indicates whether the sample was entered by the user.
-- [let HKMetadataKeyQuantityClampedToLowerBound: String](hkmetadatakeyquantityclampedtolowerbound.md)
+- [let HKMetadataKeyQuantityClampedToLowerBound: String](./hkmetadatakeyquantityclampedtolowerbound.md)
 
 
 ---

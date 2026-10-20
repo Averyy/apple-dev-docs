@@ -1,7 +1,8 @@
 # Get Multiple Storefronts
 
 **Framework**: Apple Music API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Fetch one or more storefronts by using their identifiers.
 
@@ -10,13 +11,13 @@ Fetch one or more storefronts by using their identifiers.
 
 #### Discussion
 
-If successful, the HTTP status code is 200 (OK) and the `data` array contains one or more [`Storefronts`](storefronts.md) objects. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array.
+If successful, the HTTP status code is 200 (OK) and the `data` array contains one or more [`Storefronts`](./storefronts.md) objects. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array.
 
 ##### Example
 
 **Request**:
 
-```None
+```
 https://api.music.apple.com/v1/storefronts?ids=us,ca,cn,au,hk
 ```
 
@@ -112,20 +113,30 @@ https://api.music.apple.com/v1/storefronts?ids=us,ca,cn,au,hk
 
 ## Parameters
 
+### Query Parameters
+
 - `ids` ([string]) *(required)*: A list of the identifiers (ISO 3166 alpha-2 country codes) for the storefronts you want to fetch.
 - `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
 - `include` ([string]): Additional relationships to include in the fetch.
 - `extend` ([string]): A list of attribute extensions to apply to resources in the response.
 
+## Responses
+
+- `200` OK (`StorefrontsResponse`, `application/json`): The request was successful.
+- `401` Unauthorized (`UnauthorizedResponse`, `application/json`): A response indicating an incorrect `Authorization` header.
+- `500` Internal Server Error (`ErrorsResponse`, `application/json`): A response indicating an error occurred on the server.
+
 ## See Also
 
-- [object Storefronts](storefronts.md)
+### Related Documentation
+- [object Storefronts](./storefronts.md)
   A resource object that represents a storefront, an Apple Music and iTunes Store territory that the content is available in.
-- [object StorefrontsResponse](storefrontsresponse.md)
+- [object StorefrontsResponse](./storefrontsresponse.md)
   The response to a storefront request.
-- [Get a Storefront](get-a-storefront.md)
+### Requesting a Catalog Storefront
+- [Get a Storefront](./get-a-storefront.md)
   Fetch a single storefront by using its identifier.
-- [Get All Storefronts](get-all-storefronts.md)
+- [Get All Storefronts](./get-all-storefronts.md)
   Fetch all the storefronts in alphabetical order.
 
 

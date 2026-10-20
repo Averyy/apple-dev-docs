@@ -1,7 +1,8 @@
 # MKRoute.Step
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 One portion of an overall route.
 
@@ -20,50 +21,55 @@ One portion of an overall route.
 class Step
 ```
 
+```objc
+@interface MKRouteStep : NSObject
+```
+
 #### Overview
 
 Each `MKRoute.Step` object corresponds to a single instruction that the person needs to follow when navigating between two points. For example, a step might involve following a single road until continuing along the route requires a turn.
 
-You don’t create instances of this class directly. An [`MKRoute`](mkroute.md) object contains the `MKRoute.Step` objects associated with a route. For more information about requesting directions, see [`MKDirections`](mkdirections.md).
+You don’t create instances of this class directly. An [`MKRoute`](../mkroute.md) object contains the `MKRoute.Step` objects associated with a route. For more information about requesting directions, see [`MKDirections`](../mkdirections.md).
 
 ## Topics
 
 ### Getting the step geometry
-- [var polyline: MKPolyline](mkroute/step/polyline.md)
+- [var polyline: MKPolyline](./step/polyline.md)
   The detailed step geometry.
 ### Getting additional step details
-- [var instructions: String](mkroute/step/instructions.md)
+- [var instructions: String](./step/instructions.md)
   The written instructions for following the path that the step represents.
-- [var notice: String?](mkroute/step/notice.md)
+- [var notice: String?](./step/notice.md)
   Additional notices that apply to the step.
-- [var distance: CLLocationDistance](mkroute/step/distance.md)
+- [var distance: CLLocationDistance](./step/distance.md)
   The step distance, in meters.
-- [var transportType: MKDirectionsTransportType](mkroute/step/transporttype.md)
+- [var transportType: MKDirectionsTransportType](./step/transporttype.md)
   The transport type of the step.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MKDirections](mkdirections.md)
+### Directions
+- [class MKDirections](../mkdirections.md)
   A utility object that computes directions and travel-time information based on the route information you provide.
-- [MKDirections.Request](mkdirections/request.md)
+- [MKDirections.Request](../mkdirections/request.md)
   The start and end points of a route, along with the planned mode of transportation.
-- [MKDirections.Response](mkdirections/response.md)
+- [MKDirections.Response](../mkdirections/response.md)
   The route information that Apple servers return in response to your request for directions.
-- [MKDirections.ETAResponse](mkdirections/etaresponse.md)
+- [MKDirections.ETAResponse](../mkdirections/etaresponse.md)
   The travel-time information that Apple servers return.
-- [class MKRoute](mkroute.md)
+- [class MKRoute](../mkroute.md)
   A single route between a requested start and end point.
 
 

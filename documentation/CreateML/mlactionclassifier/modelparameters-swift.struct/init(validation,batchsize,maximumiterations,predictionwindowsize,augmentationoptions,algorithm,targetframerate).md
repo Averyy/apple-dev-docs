@@ -1,7 +1,8 @@
 # init(validation:batchSize:maximumIterations:predictionWindowSize:augmentationOptions:algorithm:targetFrameRate:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new set of training parameters for an action classifier with the validation dataset.
 
@@ -16,7 +17,7 @@ init(validation: MLActionClassifier.ModelParameters.ValidationData = .split(stra
 
 #### Discussion
 
-- validation: A validation dataset represented by an [`MLActionClassifier.ModelParameters.ValidationData`](mlactionclassifier/modelparameters-swift.struct/validationdata.md) instance.
+- validation: A validation dataset represented by an [`MLActionClassifier.ModelParameters.ValidationData`](./validationdata.md) instance.
 - batchSize: The number of videos the training session uses for each of its training iterations.
 - maximumIterations: The largest number of training iterations the training session can use.
 - predictionWindowSize: The number of frames the training session uses to train an action classifier. For example, set to 60 to capture actions that take 2 seconds from videos that have a frame rate of 30 frames per second.

@@ -1,7 +1,8 @@
 # WebPage.JavaScriptPromptResult
 
 **Framework**: WebKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The result of handling a JavaScript confirm invocation.
 
@@ -21,26 +22,27 @@ enum JavaScriptPromptResult
 ## Topics
 
 ### Enumeration Cases
-- [WebPage.JavaScriptPromptResult.cancel](webpage/javascriptpromptresult/cancel.md)
+- [WebPage.JavaScriptPromptResult.cancel](./javascriptpromptresult/cancel.md)
   Signals a negative action was produced by the invocation.
-- [WebPage.JavaScriptPromptResult.ok(_:)](webpage/javascriptpromptresult/ok(_:).md)
+- [WebPage.JavaScriptPromptResult.ok(_:)](./javascriptpromptresult/ok%28_%29.md)
   Signals an affirmative action was produced by the invocation with the specified text.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol DialogPresenting](webpage/dialogpresenting.md)
+### Customizing JavaScript dialogs
+- [protocol DialogPresenting](./dialogpresenting.md)
   Allows providing custom behavior to handle JavaScript actions and provide a response.
-- [WebPage.FileInputPromptResult](webpage/fileinputpromptresult.md)
+- [WebPage.FileInputPromptResult](./fileinputpromptresult.md)
   The result of handling a JavaScript open invocation.
-- [WebPage.JavaScriptConfirmResult](webpage/javascriptconfirmresult.md)
+- [WebPage.JavaScriptConfirmResult](./javascriptconfirmresult.md)
   The result of handling a JavaScript confirm invocation.
 
 

@@ -1,22 +1,23 @@
 # Analyzing the memory usage of your Metal app
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Keep your app alive in the background by managing its memory footprint.
 
 #### Overview
 
-Instruments provides the Game Memory template to help you understand the memory growth in your Metal app. Keeping a small memory footprint allows the system to keep the app alive in the background longer, especially on devices with more constrained memory capacity. For more information, see [`Profile and optimize your game’s memory`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10106/).
+Instruments provides the Game Memory template to help you understand the memory growth in your Metal app. Keeping a small memory footprint allows the system to keep the app alive in the background longer, especially on devices with more constrained memory capacity. For more information, see [Profile and optimize your game’s memory](https://developer.apple.com/videos/play/wwdc2022/10106/).
 
-##### Open the Game Memory Template
+##### Open the Game Memory template
 
 Start the memory analysis from your Xcode project by choosing Product > Profile, or by pressing Command-I. Alternatively, you can launch Instruments and then select the process from the drop-down list.
 
 In the Template Selection window, select Game Memory.
 
-![A screenshot of the Template Selection window with the Game Memory template selected.](/images/com.apple.Xcode/gputools-instruments-game-memory-choose-template@2x.png)
+![A screenshot of the Template Selection window with the Game Memory template selected.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-instruments-game-memory-choose-template@2x.png)
 
-##### Get to Know the Instruments
+##### Get to know the instruments
 
 - **Allocations**: Analyzes the memory life cycle of a process’s allocated blocks, and can record reference-counting events.
 - **Metal Resource Events**: Records Metal GPU resource allocations, such as textures and buffers.
@@ -25,15 +26,15 @@ In the Template Selection window, select Game Memory.
 - **Metal Application**: Records Metal app events.
 - **GPU**: Records GPU events.
 
-##### Record an Instruments Capture
+##### Record an Instruments capture
 
 Begin collecting the data by clicking the Record button.
 
-![A screenshot of the Instruments window highlighting the Record button.](/images/com.apple.Xcode/gputools-instruments-game-memory-record@2x.png)
+![A screenshot of the Instruments window highlighting the Record button.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-instruments-game-memory-record@2x.png)
 
 Within your app, perform the actions that reproduce the memory problem, and then click the Record button to stop recording.
 
-##### Analyze Your Apps Memory Allocations
+##### Analyze your app’s memory allocations
 
 The Game Memory template shows both memory allocations and memory footprint.
 
@@ -43,7 +44,7 @@ The Allocations track provides a detailed view of memory allocations, their size
 
 > **Note**: The Allocations track doesn’t include Metal resources with private storage mode — only managed and shared storage modes.
 
-![A screenshot of Instruments with the Allocations track selected. The bottom details pane displays the statistics from the Allocations track.](/images/com.apple.Xcode/gputools-instruments-game-memory-allocations@2x.png)
+![A screenshot of Instruments with the Allocations track selected. The bottom details pane displays the statistics from the Allocations track.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-instruments-game-memory-allocations@2x.png)
 
 The Statistics view in the bottom detail area displays the categories of memory allocations. At the top of the Category column, there are three umbrella categories that summarize all allocations:
 
@@ -55,23 +56,23 @@ Below them, you can find more detailed categories. Metal resource allocations ar
 
 To inspect the individual allocations in a category, click the arrow button next to the category name in the table.
 
-![A screenshot of the details pane displaying the statistics from the Allocations track.](/images/com.apple.Xcode/gputools-instruments-game-memory-allocations-category-button@2x.png)
+![A screenshot of the details pane displaying the statistics from the Allocations track.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-instruments-game-memory-allocations-category-button@2x.png)
 
 After selecting a category, you can sort the table by the Size column to find the largest memory allocation during the selected time range.
 
-![A screenshot of the details pane displaying the All Heap Allocations statistics from the Allocations track.](/images/com.apple.Xcode/gputools-instruments-game-memory-allocations-all-heap-allocations@2x.png)
+![A screenshot of the details pane displaying the All Heap Allocations statistics from the Allocations track.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-instruments-game-memory-allocations-all-heap-allocations@2x.png)
 
 You can also select an allocation in the list to view its description and stack trace in the inspector on the right.
 
-##### Analyze Metal Resource Allocations
+##### Analyze Metal resource allocations
 
-The Metal Resource Events track displays a history of all Metal-specific resource allocations and deallocations, along with their labels (see [`Naming resources and commands`](naming-resources-and-commands.md)).
+The Metal Resource Events track displays a history of all Metal-specific resource allocations and deallocations, along with their labels (see [Naming resources and commands](./naming-resources-and-commands.md)).
 
-![A screenshot of Instruments with the Metal Resource Events track selected. The bottom details pane displays the list of resource events.](/images/com.apple.Xcode/gputools-instruments-game-memory-metal-resource-events@2x.png)
+![A screenshot of Instruments with the Metal Resource Events track selected. The bottom details pane displays the list of resource events.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-instruments-game-memory-metal-resource-events@2x.png)
 
 The Resource Events view in the bottom detail area lists the resource allocation and deallocation events. It includes events from created or destroyed resources in the selected time range. Not all resources in the list persisted until the end of the time range.
 
-##### Analyze Your Apps Total Virtual Memory Footprint
+##### Analyze your app’s total virtual memory footprint
 
 The Allocations track and the Metal Resource Events track both highlight memory allocations. However, allocations don’t always translate to memory footprint. The VM Tracker track shows the noncompressed and compressed/swapped dirty memory that together make up your app’s memory footprint.
 
@@ -84,7 +85,7 @@ To conserve the amount of physical memory that your app uses, the system may com
 
 > ❗ **Important**: The system charges your app for any compressed/swapped memory based on its orginal size before compression.
 
-![A screenshot of Instruments with the VM Tracker track selected. The bottom details pane displays a summary of the VM regions.](/images/com.apple.Xcode/gputools-instruments-game-memory-vm-tracker@2x.png)
+![A screenshot of Instruments with the VM Tracker track selected. The bottom details pane displays a summary of the VM regions.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-instruments-game-memory-vm-tracker@2x.png)
 
 The center timeline area graphs the following metrics:
 
@@ -94,11 +95,12 @@ The center timeline area graphs the following metrics:
 
 The corresponding columns are also available in the Summary view of the bottom detail area. There, you can expand the VM region types. In the mapped file type in the screenshot below, you can see the memory-mapped file of the bistro scene that the Modern Renderer app loaded:
 
-![A screenshot of the details pane displaying a summary of the VM regions highlighting the largest memory-mapped file.](/images/com.apple.Xcode/gputools-instruments-game-memory-vm-tracker-mapped-file@2x.png)
+![A screenshot of the details pane displaying a summary of the VM regions highlighting the largest memory-mapped file.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-instruments-game-memory-vm-tracker-mapped-file@2x.png)
 
 ## See Also
 
-- [Analyzing the performance of your Metal app](analyzing-the-performance-of-your-metal-app.md)
+### Graphics
+- [Analyzing the performance of your Metal app](./analyzing-the-performance-of-your-metal-app.md)
   Ensure consistent, smooth rendering by profiling your app’s frame time.
 
 

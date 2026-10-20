@@ -1,17 +1,22 @@
 # NSBezierPath.WindingRule.nonZero
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies the non-zero winding rule.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case nonZero
+```
+
+```c
+NSWindingRuleNonZero
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ Count each left-to-right path as +1, and each right-to-left path as -1. If the s
 
 ## See Also
 
-- [NSBezierPath.WindingRule.evenOdd](nsbezierpath/windingrule-swift.enum/evenodd.md)
+### Constants
+- [NSBezierPath.WindingRule.evenOdd](./evenodd.md)
   Specifies the even-odd winding rule.
 
 

@@ -1,7 +1,8 @@
 # RangeCheckingResolver
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface for validating that a value is within a parameter’s defined inclusive range.
 
@@ -11,7 +12,7 @@ An interface for validating that a value is within a parameter’s defined inclu
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,27 +24,28 @@ protocol RangeCheckingResolver : Resolver
 ## Topics
 
 ### Checking the range of a parameter
-- [func checkParameterRangeContains<Value>(value: Value, context: IntentParameterContext<Self.Output>) throws](rangecheckingresolver/checkparameterrangecontains(value:context:).md)
+- [func checkParameterRangeContains<Value>(value: Value, context: IntentParameterContext<Self.Output>) throws](./rangecheckingresolver/checkparameterrangecontains%28value,context%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Resolver](resolver.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Resolver](./resolver.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [DoubleFromIntResolver](doublefromintresolver.md)
-- [DoubleFromStringResolver](doublefromstringresolver.md)
-- [DoubleResolver](doubleresolver.md)
-- [IntFromDoubleResolver](intfromdoubleresolver.md)
-- [IntFromStringResolver](intfromstringresolver.md)
-- [IntResolver](intresolver.md)
+- [DoubleFromIntResolver](./doublefromintresolver.md)
+- [DoubleFromStringResolver](./doublefromstringresolver.md)
+- [DoubleResolver](./doubleresolver.md)
+- [IntFromDoubleResolver](./intfromdoubleresolver.md)
+- [IntFromStringResolver](./intfromstringresolver.md)
+- [IntResolver](./intresolver.md)
 
 ## See Also
 
-- [protocol RangeComparableProperty](rangecomparableproperty.md)
+### Range validation
+- [protocol RangeComparableProperty](./rangecomparableproperty.md)
 
 
 ---

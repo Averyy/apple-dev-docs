@@ -1,7 +1,8 @@
 # CSSM_CRLGROUP_ENCODED_CRL
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_CRLGROUP_ENCODED_CRL: Int { get }
+```
+
+```c
+CSSM_CRLGROUP_ENCODED_CRL
 ```
 
 

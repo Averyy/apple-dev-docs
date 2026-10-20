@@ -1,7 +1,8 @@
 # primaryEdge
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The side on which the primary view controller sits.
 
@@ -18,13 +19,18 @@ The side on which the primary view controller sits.
 var primaryEdge: UISplitViewController.PrimaryEdge { get set }
 ```
 
+```objc
+@property (nonatomic) UISplitViewControllerPrimaryEdge primaryEdge;
+```
+
 #### Discussion
 
-Use this property to change the default arrangement of the child view controllers. The default value of this property is [`UISplitViewController.PrimaryEdge.leading`](uisplitviewcontroller/primaryedge-swift.enum/leading.md).
+Use this property to change the default arrangement of the child view controllers. The default value of this property is [`UISplitViewController.PrimaryEdge.leading`](./primaryedge-swift.enum/leading.md).
 
 ## See Also
 
-- [UISplitViewController.PrimaryEdge](uisplitviewcontroller/primaryedge-swift.enum.md)
+### Positioning the primary view controller
+- [UISplitViewController.PrimaryEdge](./primaryedge-swift.enum.md)
   Constants that indicate the side on which the primary view controller sits.
 
 

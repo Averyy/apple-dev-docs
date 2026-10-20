@@ -1,7 +1,8 @@
 # outputNode
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The node with the output that’s the output of the new stitched function.
 
@@ -19,17 +20,22 @@ The node with the output that’s the output of the new stitched function.
 var outputNode: MTLFunctionStitchingFunctionNode? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, readwrite, nullable) MTLFunctionStitchingFunctionNode * outputNode;
+```
+
 #### Discussion
 
 The output type of the node needs to match the result type in the stitched function’s declaration.
 
 ## See Also
 
-- [var functionName: String](mtlfunctionstitchinggraph/functionname.md)
+### Configuring a function graph
+- [var functionName: String](./functionname.md)
   The name of the new stitched function.
-- [var nodes: [MTLFunctionStitchingFunctionNode]](mtlfunctionstitchinggraph/nodes.md)
+- [var nodes: [MTLFunctionStitchingFunctionNode]](./nodes.md)
   The nodes in the function’s call graph.
-- [var attributes: [any MTLFunctionStitchingAttribute]](mtlfunctionstitchinggraph/attributes.md)
+- [var attributes: [any MTLFunctionStitchingAttribute]](./attributes.md)
   A list of attributes to configure how the Metal device object generates the new stitched function.
 
 

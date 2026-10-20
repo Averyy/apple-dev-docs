@@ -1,10 +1,13 @@
 # init(rawValue:)
 
 **Framework**: TV Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 13.0
+
+> **Deprecated**: TVTopShelfProvider has been replaced by TVTopShelfContent
 
 ## Declaration
 

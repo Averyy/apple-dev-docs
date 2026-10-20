@@ -1,7 +1,8 @@
 # init(handler:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new map button.
 
@@ -14,6 +15,10 @@ Creates a new map button.
 
 ```swift
 init(handler: ((CPMapButton) -> Void)? = nil)
+```
+
+```objc
+- (instancetype) initWithHandler:(void (^)(CPMapButton *mapButton)) handler;
 ```
 
 #### Return Value

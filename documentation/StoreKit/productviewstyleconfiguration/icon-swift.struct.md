@@ -1,7 +1,8 @@
 # ProductViewStyleConfiguration.Icon
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased icon of an Apple In-App Purchase product.
 
@@ -24,13 +25,14 @@ A type-erased icon of an Apple In-App Purchase product.
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [View](../../SwiftUI/view.md)
 
 ## See Also
 
-- [let icon: ProductViewStyleConfiguration.Icon](productviewstyleconfiguration/icon-swift.property.md)
+### Getting a product view’s icon
+- [let icon: ProductViewStyleConfiguration.Icon](./icon-swift.property.md)
   A decorative view for merchandising the product.
 
 

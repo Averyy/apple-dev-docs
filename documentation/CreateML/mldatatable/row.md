@@ -1,7 +1,8 @@
 # MLDataTable.Row
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A row of untyped values in a data table.
 
@@ -22,35 +23,36 @@ struct Row
 ## Topics
 
 ### Accessing parameters
-- [var keys: MLDataTable.Row.Keys](mldatatable/row/keys-swift.property.md)
-- [var values: MLDataTable.Row.Values](mldatatable/row/values-swift.property.md)
-- [MLDataTable.Row.Key](mldatatable/row/key.md)
-- [MLDataTable.Row.Keys](mldatatable/row/keys-swift.typealias.md)
-- [MLDataTable.Row.Value](mldatatable/row/value.md)
-- [MLDataTable.Row.Values](mldatatable/row/values-swift.struct.md)
+- [var keys: MLDataTable.Row.Keys](./row/keys-swift.property.md)
+- [var values: MLDataTable.Row.Values](./row/values-swift.property.md)
+- [MLDataTable.Row.Key](./row/key.md)
+- [MLDataTable.Row.Keys](./row/keys-swift.typealias.md)
+- [MLDataTable.Row.Value](./row/value.md)
+- [MLDataTable.Row.Values](./row/values-swift.struct.md)
 ### Getting a row
-- [func index(forKey: MLDataTable.Row.Key) -> MLDataTable.Row.Index?](mldatatable/row/index(forkey:).md)
+- [func index(forKey: MLDataTable.Row.Key) -> MLDataTable.Row.Index?](./row/index%28forkey%29.md)
 ### Accessing rows
-- [subscript(MLDataTable.Row.Key) -> MLDataTable.Row.Value?](mldatatable/row/subscript(_:).md)
-- [subscript<T>(MLDataTable.Row.Key, T.Type) -> T?](mldatatable/row/subscript(_:_:).md)
+- [subscript(MLDataTable.Row.Key) -> MLDataTable.Row.Value?](./row/subscript%28_%29.md)
+- [subscript<T>(MLDataTable.Row.Key, T.Type) -> T?](./row/subscript%28_,_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Collection](../swift/collection.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sequence](../swift/sequence.md)
+- [Collection](../../Swift/collection.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Sequence](../../Swift/sequence.md)
 
 ## See Also
 
-- [var rows: MLDataTable.Rows](mldatatable/rows-swift.property.md)
+### Getting information about a data table’s rows
+- [var rows: MLDataTable.Rows](./rows-swift.property.md)
   The rows of data in the table.
-- [MLDataTable.Rows](mldatatable/rows-swift.struct.md)
+- [MLDataTable.Rows](./rows-swift.struct.md)
   A collection of rows in a data table.
 
 

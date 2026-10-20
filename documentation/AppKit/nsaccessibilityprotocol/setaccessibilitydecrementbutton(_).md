@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets the decrement button for the stepper accessibility element.
@@ -17,17 +18,18 @@ func setAccessibilityDecrementButton(_ accessibilityDecrementButton: Any?)
 
 ## See Also
 
-- [func accessibilityIncrementButton() -> Any?](nsaccessibilityprotocol/accessibilityincrementbutton.md)
+### Incrementing, decrementing, and deleting values
+- [func accessibilityIncrementButton() -> Any?](./accessibilityincrementbutton%28%29.md)
   Returns the increment button for the stepper accessibility element.
-- [func setAccessibilityIncrementButton(Any?)](nsaccessibilityprotocol/setaccessibilityincrementbutton(_:).md)
+- [func setAccessibilityIncrementButton(Any?)](./setaccessibilityincrementbutton%28_%29.md)
   Sets the increment button for the stepper accessibility element.
-- [func accessibilityDecrementButton() -> Any?](nsaccessibilityprotocol/accessibilitydecrementbutton.md)
+- [func accessibilityDecrementButton() -> Any?](./accessibilitydecrementbutton%28%29.md)
   Returns the decrement button for the stepper accessibility element.
-- [func accessibilityPerformIncrement() -> Bool](nsaccessibilityprotocol/accessibilityperformincrement.md)
+- [func accessibilityPerformIncrement() -> Bool](./accessibilityperformincrement%28%29.md)
   Increments the accessibility element’s value.
-- [func accessibilityPerformDecrement() -> Bool](nsaccessibilityprotocol/accessibilityperformdecrement.md)
+- [func accessibilityPerformDecrement() -> Bool](./accessibilityperformdecrement%28%29.md)
   Decrements the accessibility element’s value.
-- [func accessibilityPerformDelete() -> Bool](nsaccessibilityprotocol/accessibilityperformdelete.md)
+- [func accessibilityPerformDelete() -> Bool](./accessibilityperformdelete%28%29.md)
   Deletes the accessibility element’s value.
 
 

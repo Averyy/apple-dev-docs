@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Adds a scaling pass to a command buffer.
@@ -17,6 +18,10 @@ Adds a scaling pass to a command buffer.
 
 ```swift
 func encode(commandBuffer: any MTL4CommandBuffer)
+```
+
+```objc
+- (void) encodeToCommandBuffer:(id<MTL4CommandBuffer>) commandBuffer;
 ```
 
 ## Parameters

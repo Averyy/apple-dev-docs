@@ -1,14 +1,15 @@
 # kUSBVideoStreamingSubClass
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kUSBVideoStreamingSubClass = 0x02
 ```
 

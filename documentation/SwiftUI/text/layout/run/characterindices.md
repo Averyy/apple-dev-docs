@@ -1,7 +1,8 @@
 # characterIndices
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of character indices corresponding to the glyphs in `self`.
 

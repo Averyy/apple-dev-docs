@@ -1,7 +1,8 @@
 # updateName(_:completionHandler:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the name of the trigger.
 
@@ -14,25 +15,36 @@ Updates the name of the trigger.
 ## Declaration
 
 ```swift
+func updateName(_ name: String, completionHandler completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func updateName(_ name: String) async throws
+```
+
+```objc
+- (void) updateName:(NSString *) name completionHandler:(void (^)(NSError *error)) completion;
 ```
 
 ## Parameters
 
 - `name`: The new name. Must be unique within the home.
-- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
+- `completion`: The block executed after the request is processed.
+
+  - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 
-- [var name: String](hmtrigger/name.md)
+### Managing Triggers
+- [var name: String](./name.md)
   The name of the trigger.
-- [var isEnabled: Bool](hmtrigger/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   State of the trigger.
-- [func enable(Bool, completionHandler: ((any Error)?) -> Void)](hmtrigger/enable(_:completionhandler:).md)
+- [func enable(Bool, completionHandler: ((any Error)?) -> Void)](./enable%28_,completionhandler%29.md)
   Changes the enabled state of the trigger.
-- [var lastFireDate: Date?](hmtrigger/lastfiredate.md)
+- [var lastFireDate: Date?](./lastfiredate.md)
   The last time this trigger fired.
-- [var uniqueIdentifier: UUID](hmtrigger/uniqueidentifier.md)
+- [var uniqueIdentifier: UUID](./uniqueidentifier.md)
   A unique identifier for this trigger.
 
 

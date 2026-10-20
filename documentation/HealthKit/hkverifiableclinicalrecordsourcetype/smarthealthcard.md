@@ -1,7 +1,8 @@
 # smartHealthCard
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value indicating SMART health cards.
 
@@ -19,9 +20,14 @@ A value indicating SMART health cards.
 static let smartHealthCard: HKVerifiableClinicalRecordSourceType
 ```
 
+```c
+extern HKVerifiableClinicalRecordSourceType const HKVerifiableClinicalRecordSourceTypeSMARTHealthCard;
+```
+
 ## See Also
 
-- [static let euDigitalCOVIDCertificate: HKVerifiableClinicalRecordSourceType](hkverifiableclinicalrecordsourcetype/eudigitalcovidcertificate.md)
+### Identifying Source Types
+- [static let euDigitalCOVIDCertificate: HKVerifiableClinicalRecordSourceType](./eudigitalcovidcertificate.md)
   A value indicating EU Digital COVID Certificates.
 
 

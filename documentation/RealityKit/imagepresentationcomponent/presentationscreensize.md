@@ -1,7 +1,8 @@
 # presentationScreenSize
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the screen presenting the image, with the format [width, height] in meters.
 
@@ -22,7 +23,8 @@ This property is expressed relative to the local coordinate space of the entity 
 
 ## See Also
 
-- [var screenHeight: Float](imagepresentationcomponent/screenheight.md)
+### Retrieving the current screen mesh size
+- [var screenHeight: Float](./screenheight.md)
   The height of the screen mesh, in meters, when the image is presented in a non-immersive viewing mode.
 
 

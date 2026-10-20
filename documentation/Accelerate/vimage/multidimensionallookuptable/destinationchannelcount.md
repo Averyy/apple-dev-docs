@@ -1,7 +1,8 @@
 # destinationChannelCount
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of destination channels.
 
@@ -11,7 +12,7 @@ The number of destination channels.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ let destinationChannelCount: Int
 
 ## See Also
 
-- [let entryCountPerSourceChannel: [UInt8]](vimage/multidimensionallookuptable/entrycountpersourcechannel.md)
+### Instance Properties
+- [let entryCountPerSourceChannel: [UInt8]](./entrycountpersourcechannel.md)
   An array that contains the number of table entries for each dimension of the lookup table.
-- [let sourceChannelCount: Int](vimage/multidimensionallookuptable/sourcechannelcount.md)
+- [let sourceChannelCount: Int](./sourcechannelcount.md)
   The number of source channels.
 
 

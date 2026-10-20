@@ -1,7 +1,8 @@
 # reload()
 
 **Framework**: Safari Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells Safari to reload the webpage.
 
@@ -12,6 +13,10 @@ Tells Safari to reload the webpage.
 
 ```swift
 func reload()
+```
+
+```objc
+- (void) reload;
 ```
 
 

@@ -1,7 +1,8 @@
 # URL.FormatStyle.Component.query
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The URL format style query component.
 
@@ -22,19 +23,20 @@ case query
 
 ## See Also
 
-- [URL.FormatStyle.Component.scheme](url/formatstyle/component/scheme.md)
+### URL format style components
+- [URL.FormatStyle.Component.scheme](./scheme.md)
   The URL format style scheme component.
-- [URL.FormatStyle.Component.host](url/formatstyle/component/host.md)
+- [URL.FormatStyle.Component.host](./host.md)
   The URL format style host component.
-- [URL.FormatStyle.Component.port](url/formatstyle/component/port.md)
+- [URL.FormatStyle.Component.port](./port.md)
   The URL format style port component.
-- [URL.FormatStyle.Component.user](url/formatstyle/component/user.md)
+- [URL.FormatStyle.Component.user](./user.md)
   The URL format style user component.
-- [URL.FormatStyle.Component.password](url/formatstyle/component/password.md)
+- [URL.FormatStyle.Component.password](./password.md)
   The URL format style password component.
-- [URL.FormatStyle.Component.path](url/formatstyle/component/path.md)
+- [URL.FormatStyle.Component.path](./path.md)
   The URL format style path component.
-- [URL.FormatStyle.Component.fragment](url/formatstyle/component/fragment.md)
+- [URL.FormatStyle.Component.fragment](./fragment.md)
   The URL format style fragment component.
 
 

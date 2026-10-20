@@ -1,7 +1,8 @@
 # ColumnSlice
 
 **Framework**: TabularData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection that represents a selection of contiguous elements from a typed column.
 
@@ -31,153 +32,154 @@ let slice = column[100 ..< 200]
 ## Topics
 
 ### Creating a Column Slice
-- [init(Column<WrappedElement>)](columnslice/init(_:).md)
+- [init(Column<WrappedElement>)](./columnslice/init%28_%29.md)
   Creates a slice with the contents of a column.
 ### Creating a Slice of Unique Elements
-- [func distinct() -> DiscontiguousColumnSlice<WrappedElement>](columnslice/distinct.md)
+- [func distinct() -> DiscontiguousColumnSlice<WrappedElement>](./columnslice/distinct%28%29.md)
   Generates a discontiguous slice that contains unique elements.
 ### Creating a Type-Erased Slice
-- [func eraseToAnyColumn() -> AnyColumnSlice](columnslice/erasetoanycolumn.md)
+- [func eraseToAnyColumn() -> AnyColumnSlice](./columnslice/erasetoanycolumn%28%29.md)
   Returns a type-erased column slice.
 ### Creating a Column of the Same Type
-- [var prototype: any AnyColumnPrototype](columnslice/prototype.md)
+- [var prototype: any AnyColumnPrototype](./columnslice/prototype.md)
   A prototype that creates type-erased columns with the same underlying type as the column slice.
 ### Creating Transformed Columns
-- [func map<T>((ColumnSlice<WrappedElement>.Element) throws -> T?) rethrows -> Column<T>](columnslice/map(_:).md)
+- [func map<T>((ColumnSlice<WrappedElement>.Element) throws -> T?) rethrows -> Column<T>](./columnslice/map%28_%29.md)
   Creates a new column by applying a transformation to every element.
 ### Inspecting a Column Slice
-- [var name: String](columnslice/name.md)
+- [var name: String](./columnslice/name.md)
   The name of the slice’s parent column.
-- [var count: Int](columnslice/count.md)
+- [var count: Int](./columnslice/count.md)
   The number of elements in the column slice.
-- [var wrappedElementType: any Any.Type](columnslice/wrappedelementtype.md)
+- [var wrappedElementType: any Any.Type](./columnslice/wrappedelementtype.md)
   The underlying type of the column’s elements.
-- [func argmin() -> Int?](columnslice/argmin.md)
+- [func argmin() -> Int?](./columnslice/argmin%28%29.md)
   Returns the index of the element with the lowest value, ignoring missing elements.
-- [func argmax() -> Int?](columnslice/argmax.md)
+- [func argmax() -> Int?](./columnslice/argmax%28%29.md)
   Returns the index of the element with the highest value, ignoring missing elements.
-- [func isNil(at: Int) -> Bool](columnslice/isnil(at:).md)
+- [func isNil(at: Int) -> Bool](./columnslice/isnil%28at%29.md)
   Returns a Boolean that indicates whether the element at an index is missing.
 ### Accessing Elements
-- [subscript(Int) -> ColumnSlice<WrappedElement>.Element](columnslice/subscript(_:)-38hn8.md)
+- [subscript(Int) -> ColumnSlice<WrappedElement>.Element](./columnslice/subscript%28_%29-38hn8.md)
   Accesses an element at an index.
-- [subscript(Range<Int>) -> ColumnSlice<WrappedElement>](columnslice/subscript(_:)-7lrhk.md)
+- [subscript(Range<Int>) -> ColumnSlice<WrappedElement>](./columnslice/subscript%28_%29-7lrhk.md)
   Accesses a contiguous range of elements.
 ### Summarizing a Column Slice
-- [func summary() -> CategoricalSummary<WrappedElement>](columnslice/summary.md)
+- [func summary() -> CategoricalSummary<WrappedElement>](./columnslice/summary%28%29.md)
   Generates a categorical summary of the column slice’s elements.
-- [func numericSummary() -> NumericSummary<Double>](columnslice/numericsummary-68ohj.md)
+- [func numericSummary() -> NumericSummary<Double>](./columnslice/numericsummary%28%29-68ohj.md)
   Generates a numeric summary of the integer column slice’s elements.
-- [func numericSummary() -> NumericSummary<WrappedElement>](columnslice/numericsummary-5swa5.md)
+- [func numericSummary() -> NumericSummary<WrappedElement>](./columnslice/numericsummary%28%29-5swa5.md)
   Generates a numeric summary of the floating-point column slice’s elements.
 ### Getting Statistical Values
-- [func sum() -> WrappedElement](columnslice/sum.md)
+- [func sum() -> WrappedElement](./columnslice/sum%28%29.md)
   Returns the sum of the column slice’s elements, ignoring missing elements.
-- [func min() -> ColumnSlice<WrappedElement>.Element](columnslice/min.md)
+- [func min() -> ColumnSlice<WrappedElement>.Element](./columnslice/min%28%29.md)
   Returns the element with the lowest value, ignoring missing elements.
-- [func max() -> ColumnSlice<WrappedElement>.Element](columnslice/max.md)
+- [func max() -> ColumnSlice<WrappedElement>.Element](./columnslice/max%28%29.md)
   Returns the element with the highest value, ignoring missing elements.
-- [func mean() -> Double?](columnslice/mean-3inzf.md)
+- [func mean() -> Double?](./columnslice/mean%28%29-3inzf.md)
   Returns the mean average of the integer slice’s elements, ignoring missing elements.
-- [func mean() -> ColumnSlice<WrappedElement>.Element](columnslice/mean-7u3i0.md)
+- [func mean() -> ColumnSlice<WrappedElement>.Element](./columnslice/mean%28%29-7u3i0.md)
   Returns the mean average of the floating-point slice’s elements, ignoring missing elements.
-- [func standardDeviation(deltaDegreesOfFreedom: Int) -> Double?](columnslice/standarddeviation(deltadegreesoffreedom:)-1i05i.md)
+- [func standardDeviation(deltaDegreesOfFreedom: Int) -> Double?](./columnslice/standarddeviation%28deltadegreesoffreedom%29-1i05i.md)
   Returns the standard deviation of the integer column slice’s elements, ignoring missing elements.
-- [func standardDeviation(deltaDegreesOfFreedom: Int) -> ColumnSlice<WrappedElement>.Element](columnslice/standarddeviation(deltadegreesoffreedom:)-3d6vo.md)
+- [func standardDeviation(deltaDegreesOfFreedom: Int) -> ColumnSlice<WrappedElement>.Element](./columnslice/standarddeviation%28deltadegreesoffreedom%29-3d6vo.md)
   Returns the standard deviation of the floating-point column slice’s elements, ignoring missing elements.
 ### Describing a Column Slice
-- [var description: String](columnslice/description.md)
+- [var description: String](./columnslice/description.md)
   A text representation of the column slice.
-- [var debugDescription: String](columnslice/debugdescription.md)
+- [var debugDescription: String](./columnslice/debugdescription.md)
   A text representation of the column slice suitable for debugging.
-- [var customMirror: Mirror](columnslice/custommirror.md)
+- [var customMirror: Mirror](./columnslice/custommirror.md)
   A mirror that reflects the column slice.
 ### Comparing Two Column Slices
-- [static func == (ColumnSlice<WrappedElement>, ColumnSlice<WrappedElement>) -> Bool](columnslice/==(_:_:).md)
+- [static func == (ColumnSlice<WrappedElement>, ColumnSlice<WrappedElement>) -> Bool](./columnslice/eqeq%28_,_%29.md)
   Returns a Boolean that indicates whether the column slices are equal.
 ### Modifying a Column Slice with a Value
-- [static func += (inout ColumnSlice<WrappedElement>, WrappedElement)](columnslice/+=(_:_:)-950qi.md)
+- [static func += (inout ColumnSlice<WrappedElement>, WrappedElement)](./columnslice/pluseq%28_,_%29-950qi.md)
   Modifies a column slice by adding a value to each element.
-- [static func -= (inout ColumnSlice<WrappedElement>, WrappedElement)](columnslice/-=(_:_:)-1n1gh.md)
+- [static func -= (inout ColumnSlice<WrappedElement>, WrappedElement)](./columnslice/minuseq%28_,_%29-1n1gh.md)
   Modifies a column slice by subtracting a value from each element.
-- [static func *= (inout ColumnSlice<WrappedElement>, WrappedElement)](columnslice/*=(_:_:)-i6qs.md)
+- [static func *= (inout ColumnSlice<WrappedElement>, WrappedElement)](./columnslice/stareq%28_,_%29-i6qs.md)
   Modifies a column slice by multiplying each element by a value.
-- [static func /= (inout ColumnSlice<WrappedElement>, WrappedElement)](columnslice/_=(_:_:)-8oi36.md)
+- [static func /= (inout ColumnSlice<WrappedElement>, WrappedElement)](./columnslice/opeq%28_,_%29-8oi36.md)
   Modifies an integer column slice by dividing each element by a value.
-- [static func /= (inout ColumnSlice<WrappedElement>, WrappedElement)](columnslice/_=(_:_:)-8pl3f.md)
+- [static func /= (inout ColumnSlice<WrappedElement>, WrappedElement)](./columnslice/opeq%28_,_%29-8pl3f.md)
   Modifies a floating-point column slice by dividing each element by a value.
 ### Modifying a Column Slice with a Collection of Values
-- [static func += <C>(inout ColumnSlice<WrappedElement>, C)](columnslice/+=(_:_:)-47cwm.md)
+- [static func += <C>(inout ColumnSlice<WrappedElement>, C)](./columnslice/pluseq%28_,_%29-47cwm.md)
   Modifies a column slice by adding each value in a collection to the corresponding element in the column.
-- [static func += <C>(inout ColumnSlice<WrappedElement>, C)](columnslice/+=(_:_:)-4bgdt.md)
+- [static func += <C>(inout ColumnSlice<WrappedElement>, C)](./columnslice/pluseq%28_,_%29-4bgdt.md)
   Modifies a column slice by adding each optional value in a collection to the corresponding element in the column.
-- [static func -= <C>(inout ColumnSlice<WrappedElement>, C)](columnslice/-=(_:_:)-3kauw.md)
+- [static func -= <C>(inout ColumnSlice<WrappedElement>, C)](./columnslice/minuseq%28_,_%29-3kauw.md)
   Modifies a column slice by subtracting each value in a collection from the corresponding element in the column.
-- [static func -= <C>(inout ColumnSlice<WrappedElement>, C)](columnslice/-=(_:_:)-1bqy4.md)
+- [static func -= <C>(inout ColumnSlice<WrappedElement>, C)](./columnslice/minuseq%28_,_%29-1bqy4.md)
   Modifies a column slice by subtracting each optional value in a collection from the corresponding element in the column.
-- [static func *= <C>(inout ColumnSlice<WrappedElement>, C)](columnslice/*=(_:_:)-7lz8l.md)
+- [static func *= <C>(inout ColumnSlice<WrappedElement>, C)](./columnslice/stareq%28_,_%29-7lz8l.md)
   Modifies a column slice by multiplying each element in the column by the corresponding value in a collection.
-- [static func *= <C>(inout ColumnSlice<WrappedElement>, C)](columnslice/*=(_:_:)-3v2q0.md)
+- [static func *= <C>(inout ColumnSlice<WrappedElement>, C)](./columnslice/stareq%28_,_%29-3v2q0.md)
   Modifies a column slice by multiplying each element in the column by the corresponding optional value in a collection.
-- [static func /= <C>(inout ColumnSlice<WrappedElement>, C)](columnslice/_=(_:_:)-46jci.md)
+- [static func /= <C>(inout ColumnSlice<WrappedElement>, C)](./columnslice/opeq%28_,_%29-46jci.md)
   Modifies an integer column slice by dividing each element in the column by the corresponding value in a collection.
-- [static func /= <C>(inout ColumnSlice<WrappedElement>, C)](columnslice/_=(_:_:)-8frqe.md)
+- [static func /= <C>(inout ColumnSlice<WrappedElement>, C)](./columnslice/opeq%28_,_%29-8frqe.md)
   Modifies an integer column slice by dividing each element in the column by the corresponding optional value in a collection.
-- [static func /= <C>(inout ColumnSlice<WrappedElement>, C)](columnslice/_=(_:_:)-1fciw.md)
+- [static func /= <C>(inout ColumnSlice<WrappedElement>, C)](./columnslice/opeq%28_,_%29-1fciw.md)
   Modifies a floating-point column slice by dividing each element in the column by the corresponding value in a collection.
-- [static func /= <C>(inout ColumnSlice<WrappedElement>, C)](columnslice/_=(_:_:)-6ujes.md)
+- [static func /= <C>(inout ColumnSlice<WrappedElement>, C)](./columnslice/opeq%28_,_%29-6ujes.md)
   Modifies a floating-point column slice by dividing each element in the column by the corresponding optional value in a collection.
 ### Hashing a Column Slice
-- [func hash(into: inout Hasher)](columnslice/hash(into:).md)
+- [func hash(into: inout Hasher)](./columnslice/hash%28into%29.md)
   Hashes the essential components of the column slice by feeding them into a hasher.
 ### Supporting Types
-- [ColumnSlice.Element](columnslice/element.md)
+- [ColumnSlice.Element](./columnslice/element.md)
   The type of the column slice’s elements, which is an optional type of the parent column’s type.
-- [ColumnSlice.Index](columnslice/index.md)
+- [ColumnSlice.Index](./columnslice/index.md)
   The type that represents a position in the column slice.
 ### Instance Properties
-- [var missingCount: Int](columnslice/missingcount.md)
+- [var missingCount: Int](./columnslice/missingcount.md)
   The number of missing elements in the column slice.
 ### Default Implementations
-- [BidirectionalCollection Implementations](columnslice/bidirectionalcollection-implementations.md)
-- [Collection Implementations](columnslice/collection-implementations.md)
-- [CustomDebugStringConvertible Implementations](columnslice/customdebugstringconvertible-implementations.md)
-- [CustomReflectable Implementations](columnslice/customreflectable-implementations.md)
-- [CustomStringConvertible Implementations](columnslice/customstringconvertible-implementations.md)
-- [Equatable Implementations](columnslice/equatable-implementations.md)
-- [Hashable Implementations](columnslice/hashable-implementations.md)
+- [BidirectionalCollection Implementations](./columnslice/bidirectionalcollection-implementations.md)
+- [Collection Implementations](./columnslice/collection-implementations.md)
+- [CustomDebugStringConvertible Implementations](./columnslice/customdebugstringconvertible-implementations.md)
+- [CustomReflectable Implementations](./columnslice/customreflectable-implementations.md)
+- [CustomStringConvertible Implementations](./columnslice/customstringconvertible-implementations.md)
+- [Equatable Implementations](./columnslice/equatable-implementations.md)
+- [Hashable Implementations](./columnslice/hashable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [ColumnProtocol](columnprotocol.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [MutableCollection](../swift/mutablecollection.md)
-- [OptionalColumnProtocol](optionalcolumnprotocol.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../Swift/bidirectionalcollection.md)
+- [Collection](../Swift/collection.md)
+- [ColumnProtocol](./columnprotocol.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomReflectable](../Swift/customreflectable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [MutableCollection](../Swift/mutablecollection.md)
+- [OptionalColumnProtocol](./optionalcolumnprotocol.md)
+- [RandomAccessCollection](../Swift/randomaccesscollection.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [struct Column](column.md)
+### Typed Columns
+- [struct Column](./column.md)
   A column in a data frame.
-- [struct FilledColumn](filledcolumn.md)
+- [struct FilledColumn](./filledcolumn.md)
   A view on a column that replaces missing elements with a default value.
-- [struct DiscontiguousColumnSlice](discontiguouscolumnslice.md)
+- [struct DiscontiguousColumnSlice](./discontiguouscolumnslice.md)
   A collection that represents a selection, potentially with gaps, of elements from a typed column.
-- [protocol ColumnProtocol](columnprotocol.md)
+- [protocol ColumnProtocol](./columnprotocol.md)
   A type that represents a column.
-- [protocol OptionalColumnProtocol](optionalcolumnprotocol.md)
+- [protocol OptionalColumnProtocol](./optionalcolumnprotocol.md)
   A type that represents a column that has missing values.
 
 

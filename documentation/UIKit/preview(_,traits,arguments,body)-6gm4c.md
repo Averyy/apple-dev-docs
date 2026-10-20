@@ -1,14 +1,15 @@
 # Preview(_:traits:arguments:body:)
 
 **Framework**: UIKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,10 +20,11 @@
 
 ## See Also
 
-- [macro Preview(String?, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> UIView)](preview(_:traits:body:)-c7kr.md)
-- [macro Preview(String?, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> UIViewController)](preview(_:traits:body:)-en9c.md)
-- [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> UIViewController)](preview(_:traits:arguments:body:)-7cbjv.md)
-- [var UIKIT_HAS_UIFOUNDATION_SYMBOLS: Int32](uikit_has_uifoundation_symbols.md)
+### Macros
+- [macro Preview(String?, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> UIView)](./preview%28_,traits,body%29-c7kr.md)
+- [macro Preview(String?, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> UIViewController)](./preview%28_,traits,body%29-en9c.md)
+- [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> UIViewController)](./preview%28_,traits,arguments,body%29-7cbjv.md)
+- [var UIKIT_HAS_UIFOUNDATION_SYMBOLS: Int32](./uikit_has_uifoundation_symbols.md)
 
 
 ---

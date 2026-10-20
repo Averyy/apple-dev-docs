@@ -1,7 +1,8 @@
 # FormatFlagIsBigEndian
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Set for big endian, clear for little endian.
 
@@ -10,15 +11,16 @@ Set for big endian, clear for little endian.
 
 ## Declaration
 
-```swift
+```c
 FormatFlagIsBigEndian
 ```
 
 ## See Also
 
-- [LinearPCMFormatFlagIsBigEndian](videodriverkit/iouservideoformatflags/linearpcmformatflagisbigendian.md)
+### Endianness flags
+- [LinearPCMFormatFlagIsBigEndian](./linearpcmformatflagisbigendian.md)
   Synonym for `FormatFlagIsBigEndian`.
-- [FormatFlagsNativeEndian](videodriverkit/iouservideoformatflags/formatflagsnativeendian.md)
+- [FormatFlagsNativeEndian](./formatflagsnativeendian.md)
 
 
 ---

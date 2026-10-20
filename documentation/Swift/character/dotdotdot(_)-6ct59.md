@@ -1,7 +1,8 @@
 # ...(_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a partial range extending upward from a lower bound.
 
@@ -40,7 +41,7 @@ print(numbers[3...])
 // Prints "[40, 50, 60, 70]"
 ```
 
-> **Note**: `minimum` must compare equal to itself (i.e. cannot be NaN).
+> **Precondition**: `minimum` must compare equal to itself (i.e. cannot be NaN).
 
 ## Parameters
 
@@ -48,9 +49,10 @@ print(numbers[3...])
 
 ## See Also
 
-- [static func ... (Self, Self) -> ClosedRange<Self>](character/'...(_:_:).md)
+### Creating a Range Expression
+- [static func ... (Self, Self) -> ClosedRange<Self>](./dotdotdot%28_,_%29.md)
   Returns a closed range that contains both of its bounds.
-- [static func ... (Self) -> PartialRangeThrough<Self>](character/'...(_:)-4mm4x.md)
+- [static func ... (Self) -> PartialRangeThrough<Self>](./dotdotdot%28_%29-4mm4x.md)
   Returns a partial range up to, and including, its upper bound.
 
 

@@ -1,7 +1,8 @@
 # SwiftSetting.InteroperabilityMode.C
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Emit code compatible with being imported from C and Objective-C.
 

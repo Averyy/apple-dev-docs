@@ -1,7 +1,8 @@
 # init(cursor:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an operation with additional results from a previous search.
 
@@ -10,7 +11,7 @@ Creates an operation with additional results from a previous search.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,19 +21,24 @@ Creates an operation with additional results from a previous search.
 convenience init(cursor: CKQueryOperation.Cursor)
 ```
 
+```objc
+- (instancetype) initWithCursor:(CKQueryCursor *) cursor;
+```
+
 #### Discussion
 
 Use this method to create an operation that retrieves the next batch of results from a previous search. When executing searches for a cursor, don’t cache cursors for a long time before using them. A cursor isn’t a snapshot of the previous search results; it stores a relative offset into the results list. An operation that you create from a cursor performs a new search, sorts the new set of results, and uses the previous offset value to determine where the next batch of results starts.
 
 ## Parameters
 
-- `cursor`: The cursor that identifies the previous search. CloudKit passes this value to the completion handler of the previous search. For more information, see the [`queryCompletionBlock`](ckqueryoperation/querycompletionblock.md) property.
+- `cursor`: The cursor that identifies the previous search. CloudKit passes this value to the completion handler of the previous search. For more information, see the [`queryCompletionBlock`](./querycompletionblock.md) property.
 
 ## See Also
 
-- [convenience init(query: CKQuery)](ckqueryoperation/init(query:).md)
+### Creating a Query Operation
+- [convenience init(query: CKQuery)](./init%28query%29.md)
   Creates an operation that searches for records in the specified record zone.
-- [init()](ckqueryoperation/init.md)
+- [init()](./init%28%29.md)
   Creates an empty query operation.
 
 

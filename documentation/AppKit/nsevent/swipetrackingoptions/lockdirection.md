@@ -1,7 +1,8 @@
 # lockDirection
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Clamp gestureAmount to 0 if the user starts to swipe in the opposite direction than they started.
 
@@ -14,9 +15,14 @@ Clamp gestureAmount to 0 if the user starts to swipe in the opposite direction t
 static var lockDirection: NSEvent.SwipeTrackingOptions { get }
 ```
 
+```c
+NSEventSwipeTrackingLockDirection
+```
+
 ## See Also
 
-- [static var clampGestureAmount: NSEvent.SwipeTrackingOptions](nsevent/swipetrackingoptions/clampgestureamount.md)
+### Constants
+- [static var clampGestureAmount: NSEvent.SwipeTrackingOptions](./clampgestureamount.md)
   Don’t allow gestureAmount to go beyond +/-1.0
 
 

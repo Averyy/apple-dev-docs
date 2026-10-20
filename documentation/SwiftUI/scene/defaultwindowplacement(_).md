@@ -1,7 +1,8 @@
 # defaultWindowPlacement(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Defines a function used for determining the default placement of windows.
 
@@ -18,7 +19,7 @@ func defaultWindowPlacement(_ makePlacement: @escaping (WindowLayoutRoot, Window
 
 #### Discussion
 
-Use this scene modifier to indicate a default initial size and position for a new window that the system creates from a [`Scene`](scene.md) declaration.
+Use this scene modifier to indicate a default initial size and position for a new window that the system creates from a [`Scene`](../scene.md) declaration.
 
 On macOS, you can use the screen’s bounds to place the window. For example, you can specify that the window is always placed 140 points from the bottom of the screen:
 
@@ -45,7 +46,7 @@ struct MyApp: App {
 
 On visionOS, the system always places the first window relative to where the person is looking. The system ignores calls to `defaultWindowPlacement(_:)`.
 
-You can place any subsequent windows relative to existing ones by returning one of the methods defined by [`WindowPlacement.Position`](windowplacement/position.md) with the existing window. For example, you can align the new window with the trailing edge of the `Content` window:
+You can place any subsequent windows relative to existing ones by returning one of the methods defined by [`WindowPlacement.Position`](../windowplacement/position.md) with the existing window. For example, you can align the new window with the trailing edge of the `Content` window:
 
 ```swift
 struct MyApp: App {
@@ -80,28 +81,31 @@ For more information on configuring how scenes behave with state restoration, se
 
 ## Parameters
 
-- `makePlacement`: A closure to generate the default window placement. - **content**: A proxy for the contents of the window.
-- **context**: An instance of a [`WindowPlacementContext`](windowplacementcontext.md) that provides contextual information used to size and position windows.
+- `makePlacement`: A closure to generate the default window placement.
+
+  - **content**: A proxy for the contents of the window.
+  - **context**: An instance of a [`WindowPlacementContext`](../windowplacementcontext.md) that provides contextual information used to size and position windows.
 
 ## See Also
 
-- [func defaultPosition(UnitPoint) -> some Scene](scene/defaultposition(_:).md)
+### Positioning a window
+- [func defaultPosition(UnitPoint) -> some Scene](./defaultposition%28_%29.md)
   Sets a default position for a window.
-- [struct WindowLevel](windowlevel.md)
+- [struct WindowLevel](../windowlevel.md)
   The level of a window.
-- [func windowLevel(WindowLevel) -> some Scene](scene/windowlevel(_:).md)
+- [func windowLevel(WindowLevel) -> some Scene](./windowlevel%28_%29.md)
   Sets the window level of this scene.
-- [struct WindowLayoutRoot](windowlayoutroot.md)
+- [struct WindowLayoutRoot](../windowlayoutroot.md)
   A proxy which represents the root contents of a window.
-- [struct WindowPlacement](windowplacement.md)
+- [struct WindowPlacement](../windowplacement.md)
   A type which represents a preferred size and position for a window.
-- [func windowIdealPlacement((WindowLayoutRoot, WindowPlacementContext) -> WindowPlacement) -> some Scene](scene/windowidealplacement(_:).md)
+- [func windowIdealPlacement((WindowLayoutRoot, WindowPlacementContext) -> WindowPlacement) -> some Scene](./windowidealplacement%28_%29.md)
   Provides a function which determines a placement to use when windows of a scene zoom.
-- [struct WindowPlacementContext](windowplacementcontext.md)
+- [struct WindowPlacementContext](../windowplacementcontext.md)
   A type which represents contextual information used for sizing and positioning windows.
-- [struct WindowProxy](windowproxy.md)
+- [struct WindowProxy](../windowproxy.md)
   The proxy for an open window in the app.
-- [struct DisplayProxy](displayproxy.md)
+- [struct DisplayProxy](../displayproxy.md)
   A type which provides information about display hardware.
 
 

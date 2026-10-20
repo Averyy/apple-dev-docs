@@ -1,7 +1,8 @@
 # WKPageOrientation.horizontal
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A horizontal page-based scrolling orientation.
 
@@ -14,9 +15,14 @@ A horizontal page-based scrolling orientation.
 case horizontal
 ```
 
+```c
+WKPageOrientationHorizontal
+```
+
 ## See Also
 
-- [WKPageOrientation.vertical](wkpageorientation/vertical.md)
+### Enumeration Cases
+- [WKPageOrientation.vertical](./vertical.md)
   A vertical page-based scrolling orientation.
 
 

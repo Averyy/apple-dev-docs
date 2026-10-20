@@ -1,7 +1,8 @@
 # AudioFeaturePrint.FeatureSequence
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An async sequence of audio buffers.
 
@@ -22,23 +23,24 @@ struct FeatureSequence
 ## Topics
 
 ### Getting the count
-- [var count: Int?](audiofeatureprint/featuresequence/count.md)
+- [var count: Int?](./featuresequence/count.md)
   The number of elements in the sequence. For this sequence count is always nil.
 ### Creating an iterator
-- [func makeAsyncIterator() -> AudioFeaturePrint.FeatureSequence.AsyncIterator](audiofeatureprint/featuresequence/makeasynciterator.md)
+- [func makeAsyncIterator() -> AudioFeaturePrint.FeatureSequence.AsyncIterator](./featuresequence/makeasynciterator%28%29.md)
   Constructs an iterator.
-- [AudioFeaturePrint.FeatureSequence.Iterator](audiofeatureprint/featuresequence/iterator.md)
+- [AudioFeaturePrint.FeatureSequence.Iterator](./featuresequence/iterator.md)
   An async iterator of audio buffers.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [TemporalSequence](temporalsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
+- [TemporalSequence](../temporalsequence.md)
 
 ## See Also
 
-- [func applied<S>(to: S, eventHandler: EventHandler?) throws -> AudioFeaturePrint.FeatureSequence](audiofeatureprint/applied(to:eventhandler:).md)
+### Performing the transformation
+- [func applied<S>(to: S, eventHandler: EventHandler?) throws -> AudioFeaturePrint.FeatureSequence](./applied%28to,eventhandler%29.md)
   Extracts audio features from an a sequence of audio buffers
 
 

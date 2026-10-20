@@ -1,7 +1,8 @@
 # UNNotificationSetting.disabled
 
 **Framework**: User Notifications  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The setting is disabled.
 
@@ -20,11 +21,16 @@ The setting is disabled.
 case disabled
 ```
 
+```c
+UNNotificationSettingDisabled
+```
+
 ## See Also
 
-- [UNNotificationSetting.notSupported](unnotificationsetting/notsupported.md)
+### Constants
+- [UNNotificationSetting.notSupported](./notsupported.md)
   The setting is not available to your app.
-- [UNNotificationSetting.enabled](unnotificationsetting/enabled.md)
+- [UNNotificationSetting.enabled](./enabled.md)
   The setting is enabled.
 
 

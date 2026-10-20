@@ -1,7 +1,8 @@
 # init(from:configurations:content:placeholder:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Loads and displays a modifiable model using the provided `ConfigurationCatalog` and configuration choices using a custom placeholder until the model loads.
 
@@ -17,7 +18,7 @@ init<Model, Placeholder>(from catalog: Entity.ConfigurationCatalog, configuratio
 
 #### Discussion
 
-Until the model loads, [`Model3D`](model3d.md) displays the placeholder view that you specify. When the load operation completes successfully, SwiftUI updates the view to show content that you specify, which you create using the loaded model. For example, you can show a green placeholder, followed by a scaled version of the loaded model:
+Until the model loads, [`Model3D`](../model3d.md) displays the placeholder view that you specify. When the load operation completes successfully, SwiftUI updates the view to show content that you specify, which you create using the loaded model. For example, you can show a green placeholder, followed by a scaled version of the loaded model:
 
 ```swift
 Model3D(
@@ -29,7 +30,7 @@ Model3D(
 }
 ```
 
-If the load operation fails, [`Model3D`](model3d.md) continues to display the placeholder. To be able to display a different view on a load error, use the  [`init(from:configurations:transaction:content:)`](model3d/init(from:configurations:transaction:content:).md) initializer instead.
+If the load operation fails, [`Model3D`](../model3d.md) continues to display the placeholder. To be able to display a different view on a load error, use the  [`init(from:configurations:transaction:content:)`](./init%28from,configurations,transaction,content%29.md) initializer instead.
 
 ## Parameters
 

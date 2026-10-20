@@ -1,7 +1,8 @@
 # MPMediaPlaylistCreationMetadata
 
 **Framework**: Media Player  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A set of attributes for describing a playlist when creating it.
 
@@ -17,50 +18,55 @@ A set of attributes for describing a playlist when creating it.
 class MPMediaPlaylistCreationMetadata
 ```
 
+```objc
+@interface MPMediaPlaylistCreationMetadata : NSObject
+```
+
 #### Overview
 
-Use this class when creating a new playlist using the [`getPlaylist(with:creationMetadata:completionHandler:)`](mpmedialibrary/getplaylist(with:creationmetadata:completionhandler:).md) method. The system adds the metadata to the playlist when you create it, however it ignores the metadata if the playlist already exists.
+Use this class when creating a new playlist using the [`getPlaylist(with:creationMetadata:completionHandler:)`](./mpmedialibrary/getplaylist%28with,creationmetadata,completionhandler%29.md) method. The system adds the metadata to the playlist when you create it, however it ignores the metadata if the playlist already exists.
 
 ## Topics
 
 ### Creating metadata for a playlist
-- [init(name: String)](mpmediaplaylistcreationmetadata/init(name:).md)
+- [init(name: String)](./mpmediaplaylistcreationmetadata/init%28name%29.md)
   Creates a new playlist metadata object with the designated name.
 ### Metadata for a playlist
-- [var authorDisplayName: String!](mpmediaplaylistcreationmetadata/authordisplayname.md)
+- [var authorDisplayName: String!](./mpmediaplaylistcreationmetadata/authordisplayname.md)
   App defined display name for the playlist.
-- [var descriptionText: String](mpmediaplaylistcreationmetadata/descriptiontext.md)
+- [var descriptionText: String](./mpmediaplaylistcreationmetadata/descriptiontext.md)
   The descriptive text for the playlist.
-- [var name: String](mpmediaplaylistcreationmetadata/name.md)
+- [var name: String](./mpmediaplaylistcreationmetadata/name.md)
   The playlist’s displayed name.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Providing animated artwork for media items](providing-animated-artwork-for-media-items.md)
+### Media items and playlists
+- [Providing animated artwork for media items](./providing-animated-artwork-for-media-items.md)
   Display animated artwork for your app’s media in system views, such as the lock screen, by providing video assets through your now playing info.
-- [class MPMediaItem](mpmediaitem.md)
+- [class MPMediaItem](./mpmediaitem.md)
   A collection of properties that represents a single item in the media library.
-- [class MPMediaItemArtwork](mpmediaitemartwork.md)
+- [class MPMediaItemArtwork](./mpmediaitemartwork.md)
   A graphical image, such as music album cover art, associated with a media item.
-- [class MPMediaItemAnimatedArtwork](mpmediaitemanimatedartwork.md)
+- [class MPMediaItemAnimatedArtwork](./mpmediaitemanimatedartwork.md)
   An animated image, such as an animated music album cover art, for a media item.
-- [class MPMediaItemCollection](mpmediaitemcollection.md)
+- [class MPMediaItemCollection](./mpmediaitemcollection.md)
   A sorted set of media items from the media library.
-- [class MPMediaPlaylist](mpmediaplaylist.md)
+- [class MPMediaPlaylist](./mpmediaplaylist.md)
   A playable collection of related media items.
-- [class MPMediaEntity](mpmediaentity.md)
+- [class MPMediaEntity](./mpmediaentity.md)
   The abstract superclass for media items, media item collections, and media playlist instances.
 
 

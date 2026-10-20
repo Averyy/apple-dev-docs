@@ -1,7 +1,8 @@
 # kMIDIPropertyConnectionUniqueID
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The unique identifier of an external device attached to this connection.
 
@@ -18,21 +19,26 @@ The unique identifier of an external device attached to this connection.
 let kMIDIPropertyConnectionUniqueID: CFString
 ```
 
+```c
+extern CFStringRef const kMIDIPropertyConnectionUniqueID;
+```
+
 #### Discussion
 
-The value provided may be an integer. To indicate that a driver connects to multiple external objects, pass the array of big-endian `SInt32` values as a [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) object.
+The value provided may be an integer. To indicate that a driver connects to multiple external objects, pass the array of big-endian `SInt32` values as a [`CFData`](../CoreFoundation/cfdata.md) object.
 
 The property is nonexistent or 0 if there’s no connection.
 
 ## See Also
 
-- [let kMIDIPropertyCanRoute: CFString](kmidipropertycanroute.md)
+### Connections
+- [let kMIDIPropertyCanRoute: CFString](./kmidipropertycanroute.md)
   A Boolean value that indicates whether the device or entity can route messages to or from external MIDI devices.
-- [let kMIDIPropertyIsBroadcast: CFString](kmidipropertyisbroadcast.md)
+- [let kMIDIPropertyIsBroadcast: CFString](./kmidipropertyisbroadcast.md)
   A Boolean value that indicates whether the endpoint broadcasts messages to all of the other endpoints in the device.
-- [let kMIDIPropertyIsEmbeddedEntity: CFString](kmidipropertyisembeddedentity.md)
+- [let kMIDIPropertyIsEmbeddedEntity: CFString](./kmidipropertyisembeddedentity.md)
   A Boolean value that indicates whether this entity or endpoint has external MIDI connections.
-- [let kMIDIPropertySingleRealtimeEntity: CFString](kmidipropertysinglerealtimeentity.md)
+- [let kMIDIPropertySingleRealtimeEntity: CFString](./kmidipropertysinglerealtimeentity.md)
   The 0-based index of the entity on which incoming real-time messages from the device appear to have originated.
 
 

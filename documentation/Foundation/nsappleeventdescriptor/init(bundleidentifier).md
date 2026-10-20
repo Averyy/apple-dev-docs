@@ -1,7 +1,8 @@
 # init(bundleIdentifier:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns an application address descriptor using the specified bundle identifier.
 
@@ -12,6 +13,10 @@ Creates and returns an application address descriptor using the specified bundle
 
 ```swift
 init(bundleIdentifier: String)
+```
+
+```objc
++ (NSAppleEventDescriptor *) descriptorWithBundleIdentifier:(NSString *) bundleIdentifier;
 ```
 
 #### Discussion

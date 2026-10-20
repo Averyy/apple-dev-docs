@@ -1,7 +1,8 @@
 # DateComponentsFormatter.UnitsStyle.full
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style that spells out the units of time, but not the quantities.
 
@@ -20,21 +21,26 @@ A style that spells out the units of time, but not the quantities.
 case full
 ```
 
+```c
+NSDateComponentsFormatterUnitsStyleFull
+```
+
 #### Discussion
 
 For example, the quantity of 3 years, 9 months, 26 days, 19 hours, and 17 seconds is displayed in the U.S. English locale as “3 years, 9 months, 26 days, 19 hours, 17 seconds”.
 
 ## See Also
 
-- [DateComponentsFormatter.UnitsStyle.spellOut](datecomponentsformatter/unitsstyle-swift.enum/spellout.md)
+### Styles
+- [DateComponentsFormatter.UnitsStyle.spellOut](./spellout.md)
   A style that spells out the units and quantities of time.
-- [DateComponentsFormatter.UnitsStyle.short](datecomponentsformatter/unitsstyle-swift.enum/short.md)
+- [DateComponentsFormatter.UnitsStyle.short](./short.md)
   A style that uses a shortened spelling for units.
-- [DateComponentsFormatter.UnitsStyle.brief](datecomponentsformatter/unitsstyle-swift.enum/brief.md)
-  A style that uses a shortened spelling for units of time that is shorter than [`DateComponentsFormatter.UnitsStyle.short`](datecomponentsformatter/unitsstyle-swift.enum/short.md).
-- [DateComponentsFormatter.UnitsStyle.abbreviated](datecomponentsformatter/unitsstyle-swift.enum/abbreviated.md)
+- [DateComponentsFormatter.UnitsStyle.brief](./brief.md)
+  A style that uses a shortened spelling for units of time that is shorter than [`DateComponentsFormatter.UnitsStyle.short`](./short.md).
+- [DateComponentsFormatter.UnitsStyle.abbreviated](./abbreviated.md)
   A style that uses the most abbreviated spelling for units of time.
-- [DateComponentsFormatter.UnitsStyle.positional](datecomponentsformatter/unitsstyle-swift.enum/positional.md)
+- [DateComponentsFormatter.UnitsStyle.positional](./positional.md)
   A style that uses the position of a unit of time to identify its value.
 
 

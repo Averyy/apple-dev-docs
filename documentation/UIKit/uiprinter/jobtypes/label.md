@@ -1,7 +1,8 @@
 # label
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The printer supports printing on cut labels.
 
@@ -17,23 +18,28 @@ The printer supports printing on cut labels.
 static var label: UIPrinter.JobTypes { get }
 ```
 
+```c
+UIPrinterJobTypeLabel
+```
+
 ## See Also
 
-- [static var unknown: UIPrinter.JobTypes](uiprinter/jobtypes/unknown.md)
+### Constants
+- [static var unknown: UIPrinter.JobTypes](./unknown.md)
   The printer support is unknown.
-- [static var document: UIPrinter.JobTypes](uiprinter/jobtypes/document.md)
+- [static var document: UIPrinter.JobTypes](./document.md)
   The printer supports standard document printing.
-- [static var envelope: UIPrinter.JobTypes](uiprinter/jobtypes/envelope.md)
+- [static var envelope: UIPrinter.JobTypes](./envelope.md)
   The printer supports printing on envelopes.
-- [static var photo: UIPrinter.JobTypes](uiprinter/jobtypes/photo.md)
+- [static var photo: UIPrinter.JobTypes](./photo.md)
   The printer supports printing with photographic print quality.
-- [static var receipt: UIPrinter.JobTypes](uiprinter/jobtypes/receipt.md)
+- [static var receipt: UIPrinter.JobTypes](./receipt.md)
   The printer supports printing receipts on a continuous roll of paper.
-- [static var roll: UIPrinter.JobTypes](uiprinter/jobtypes/roll.md)
+- [static var roll: UIPrinter.JobTypes](./roll.md)
   The printer supports printing documents or photos on a continuous roll of paper.
-- [static var largeFormat: UIPrinter.JobTypes](uiprinter/jobtypes/largeformat.md)
+- [static var largeFormat: UIPrinter.JobTypes](./largeformat.md)
   The printer supports printing larger than the ISO A3 size.
-- [static var postcard: UIPrinter.JobTypes](uiprinter/jobtypes/postcard.md)
+- [static var postcard: UIPrinter.JobTypes](./postcard.md)
   The printer supports printing on postcards.
 
 

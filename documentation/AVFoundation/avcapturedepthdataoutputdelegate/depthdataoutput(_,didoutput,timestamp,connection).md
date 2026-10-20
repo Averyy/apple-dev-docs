@@ -1,7 +1,8 @@
 # depthDataOutput(_:didOutput:timestamp:connection:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides newly captured depth data to the delegate.
 
@@ -17,11 +18,15 @@ Provides newly captured depth data to the delegate.
 optional func depthDataOutput(_ output: AVCaptureDepthDataOutput, didOutput depthData: AVDepthData, timestamp: CMTime, connection: AVCaptureConnection)
 ```
 
+```objc
+- (void) depthDataOutput:(AVCaptureDepthDataOutput *) output didOutputDepthData:(AVDepthData *) depthData timestamp:(CMTime) timestamp connection:(AVCaptureConnection *) connection;
+```
+
 #### Discussion
 
-The depth data output calls this method whenever it captures and outputs a new depth data object. This method is called on the dispatch queue specified by the output’s [`delegateCallbackQueue`](avcapturedepthdataoutput/delegatecallbackqueue.md) property, and can be called frequently. Your implementation must process the depth data quickly in order to prevent dropped depth data.
+The depth data output calls this method whenever it captures and outputs a new depth data object. This method is called on the dispatch queue specified by the output’s [`delegateCallbackQueue`](../avcapturedepthdataoutput/delegatecallbackqueue.md) property, and can be called frequently. Your implementation must process the depth data quickly in order to prevent dropped depth data.
 
-To maintain optimal performance, the capture pipeline may allocate [`AVDepthData`](avdepthdata.md) pixel buffer maps from a finite memory pool. If you hold on to any [`AVDepthData`](avdepthdata.md) objects for too long, capture inputs cannot copy new depth data into memory, resulting in dropped depth data. If your application is causing depth data drops by holding on to provided depth data objects for too long, consider copying the pixel buffer map data into a new pixel buffer so that the [`AVDepthData`](avdepthdata.md) backing memory can be reused more quickly.
+To maintain optimal performance, the capture pipeline may allocate [`AVDepthData`](../avdepthdata.md) pixel buffer maps from a finite memory pool. If you hold on to any [`AVDepthData`](../avdepthdata.md) objects for too long, capture inputs cannot copy new depth data into memory, resulting in dropped depth data. If your application is causing depth data drops by holding on to provided depth data objects for too long, consider copying the pixel buffer map data into a new pixel buffer so that the [`AVDepthData`](../avdepthdata.md) backing memory can be reused more quickly.
 
 ## Parameters
 
@@ -32,9 +37,10 @@ To maintain optimal performance, the capture pipeline may allocate [`AVDepthData
 
 ## See Also
 
-- [func depthDataOutput(AVCaptureDepthDataOutput, didDrop: AVDepthData, timestamp: CMTime, connection: AVCaptureConnection, reason: AVCaptureOutput.DataDroppedReason)](avcapturedepthdataoutputdelegate/depthdataoutput(_:diddrop:timestamp:connection:reason:).md)
+### Receiving depth data
+- [func depthDataOutput(AVCaptureDepthDataOutput, didDrop: AVDepthData, timestamp: CMTime, connection: AVCaptureConnection, reason: AVCaptureOutput.DataDroppedReason)](./depthdataoutput%28_,diddrop,timestamp,connection,reason%29.md)
   Informs the delegate that captured depth data was not processed.
-- [AVCaptureOutput.DataDroppedReason](avcaptureoutput/datadroppedreason.md)
+- [AVCaptureOutput.DataDroppedReason](../avcaptureoutput/datadroppedreason.md)
   Constants that define reasons for why the system dropped a frame.
 
 

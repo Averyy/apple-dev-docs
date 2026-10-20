@@ -1,7 +1,8 @@
 # KeyResult.KeySignature
 
 **Framework**: Music Understanding  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The set of sharp and flat symbols for the notes.
 
@@ -22,29 +23,30 @@ struct KeySignature
 
 #### Overview
 
-A key signature pairs a root note, [`tonic`](keyresult/keysignature/tonic.md) with a [`mode`](keyresult/keysignature/mode.md), major or minor, to describe the harmonic center of a section of audio.
+A key signature pairs a root note, [`tonic`](./keysignature/tonic.md) with a [`mode`](./keysignature/mode.md), major or minor, to describe the harmonic center of a section of audio.
 
 ## Topics
 
 ### Tonic and mode
-- [let tonic: KeyResult.Tonic](keyresult/keysignature/tonic.md)
+- [let tonic: KeyResult.Tonic](./keysignature/tonic.md)
   The root note of the musical key.
-- [let mode: KeyResult.Mode](keyresult/keysignature/mode.md)
+- [let mode: KeyResult.Mode](./keysignature/mode.md)
   The mode of the musical key.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let tonic: KeyResult.Tonic](keyresult/keysignature/tonic.md)
+### Getting the notes of a key
+- [let tonic: KeyResult.Tonic](./keysignature/tonic.md)
   The root note of the musical key.
 
 

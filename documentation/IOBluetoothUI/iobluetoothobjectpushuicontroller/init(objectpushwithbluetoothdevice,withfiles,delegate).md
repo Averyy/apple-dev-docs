@@ -1,7 +1,8 @@
 # init(objectPushWithBluetoothDevice:withFiles:delegate:)
 
 **Framework**: IOBluetooth UI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 10.2+

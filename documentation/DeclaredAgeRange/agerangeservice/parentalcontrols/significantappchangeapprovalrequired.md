@@ -1,15 +1,18 @@
 # significantAppChangeApprovalRequired
 
 **Framework**: Declared Age Range  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates a notification obligation for significant app updates.
 
 **Availability**:
-- iOS 26.2+
-- iPadOS 26.2+
-- Mac Catalyst 26.2+
-- macOS 26.2+
+- iOS 26.2+ - Deprecated in 26.4
+- iPadOS 26.2+ - Deprecated in 26.4
+- Mac Catalyst 26.2+ - Deprecated in 26.4
+- macOS 26.2+ - Deprecated in 26.4
+
+> **Deprecated**: Use requiredRegulatoryFeatures to check for significantAppChangeRequiresParentalConsent instead
 
 ## Declaration
 
@@ -19,7 +22,7 @@ static let significantAppChangeApprovalRequired: AgeRangeService.ParentalControl
 
 ## Mentions
 
-- [Requesting people’s age range information in your app](requesting-people-share-their-age-range-with-your-app.md)
+- [Requesting people’s age range information in your app](../../requesting-people-share-their-age-range-with-your-app.md)
 
 #### Discussion
 

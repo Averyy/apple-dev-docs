@@ -1,7 +1,8 @@
 # URL.DirectoryHint.checkFileSystem
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A hint that directs a URL call to consult the file system to determine whether the path references a directory.
 
@@ -22,11 +23,12 @@ case checkFileSystem
 
 ## See Also
 
-- [URL.DirectoryHint.isDirectory](url/directoryhint/isdirectory.md)
+### Hints
+- [URL.DirectoryHint.isDirectory](./isdirectory.md)
   A hint that specifies that a given path is a directory.
-- [URL.DirectoryHint.notDirectory](url/directoryhint/notdirectory.md)
+- [URL.DirectoryHint.notDirectory](./notdirectory.md)
   A hint that specifies that a given path isn’t a directory.
-- [URL.DirectoryHint.inferFromPath](url/directoryhint/inferfrompath.md)
+- [URL.DirectoryHint.inferFromPath](./inferfrompath.md)
   A hint that directs a URL call to infer whether a path references a directory based on whether it has a trailing slash.
 
 

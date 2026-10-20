@@ -1,7 +1,8 @@
 # init(_:table:locale:bundle:comment:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a localized string resource from a localization key and its bundle properties.
 
@@ -24,8 +25,8 @@ init(_ keyAndValue: String.LocalizationValue, table: String? = nil, locale: Loca
 
 - `keyAndValue`: The key for an entry in the specified table.
 - `table`: The name of the table containing the key-value pairs. If not provided, `nil`, or an empty string, this value defaults to `Localizable.strings.`
-- `locale`: The locale for the resource to use. By default, the resource uses [`current`](locale/current.md).
-- `bundle`: A [`LocalizedStringResource.BundleDescription`](localizedstringresource/bundledescription.md) that indicates where to locate the table’s strings file. By default, the resource uses the main bundle.
+- `locale`: The locale for the resource to use. By default, the resource uses [`current`](../locale/current.md).
+- `bundle`: A [`LocalizedStringResource.BundleDescription`](./bundledescription.md) that indicates where to locate the table’s strings file. By default, the resource uses the main bundle.
 - `comment`: The comment to place above the key-value pair in the strings file. This parameter provides the translator with some context about the localized string’s presentation to the user.
 
 

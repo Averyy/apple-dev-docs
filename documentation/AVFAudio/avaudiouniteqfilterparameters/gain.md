@@ -1,7 +1,8 @@
 # gain
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The gain of the equalizer filter, in decibels.
 
@@ -20,21 +21,26 @@ The gain of the equalizer filter, in decibels.
 var gain: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float gain;
+```
+
 #### Discussion
 
 The default value is `0 dB`. The valid range of values is `-96 dB` through `24 dB`.
 
 ## See Also
 
-- [var bandwidth: Float](avaudiouniteqfilterparameters/bandwidth.md)
+### Configuring a filter band
+- [var bandwidth: Float](./bandwidth.md)
   The bandwidth of the equalizer filter, in octaves.
-- [var bypass: Bool](avaudiouniteqfilterparameters/bypass.md)
+- [var bypass: Bool](./bypass.md)
   The bypass state of the equalizer filter band.
-- [var filterType: AVAudioUnitEQFilterType](avaudiouniteqfilterparameters/filtertype.md)
+- [var filterType: AVAudioUnitEQFilterType](./filtertype.md)
   The equalizer filter type.
-- [enum AVAudioUnitEQFilterType](avaudiouniteqfiltertype.md)
+- [enum AVAudioUnitEQFilterType](../avaudiouniteqfiltertype.md)
   Filter types available to use with the filter type property.
-- [var frequency: Float](avaudiouniteqfilterparameters/frequency.md)
+- [var frequency: Float](./frequency.md)
   The frequency of the equalizer filter, in hertz.
 
 

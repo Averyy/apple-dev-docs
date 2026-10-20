@@ -1,7 +1,8 @@
 # destinationAlphaBlendFactor
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configures the destination-alpha blend factor.
 
@@ -19,9 +20,13 @@ Configures the destination-alpha blend factor.
 var destinationAlphaBlendFactor: MTLBlendFactor { get set }
 ```
 
+```objc
+@property (nonatomic) MTLBlendFactor destinationAlphaBlendFactor;
+```
+
 #### Discussion
 
-This property defaults to [`MTLBlendFactor.zero`](mtlblendfactor/zero.md).
+This property defaults to [`MTLBlendFactor.zero`](../mtlblendfactor/zero.md).
 
 
 ---

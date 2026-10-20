@@ -1,6 +1,7 @@
 # Enabling enhanced security for your app
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Detect out-of-bounds memory access, use of freed memory, and other potential vulnerabilities.
 
@@ -12,17 +13,17 @@ Adopt the Enhanced Security capability in your Xcode project to enable a collect
 
 > ❗ **Important**:  The Enhanced Security capability enables security checks that can impact the performance and stability of an app that isn’t designed and built with security in mind. Review your app’s threat model, and only adopt the Enhanced Security capability if the protections it enables align with your app’s security goals. Test your app thoroughly to ensure that you address all situations in which Enhanced Security mitigations could lead to your app crashing.
 
-Enhanced Security compiler settings and runtime checks are available for apps and extensions built for iOS, iPadOS, macOS, watchOS, and visionOS; and DriverKit extensions in iPadOS and macOS. Additionally, you can create Enhanced Security helper extensions on iOS, iPadOS, macOS, and watchOS to which the system provides further protections; for more information, see [`Creating enhanced security helper extensions`](creating-enhanced-security-helper-extensions.md).
+Enhanced Security compiler settings and runtime checks are available for apps and extensions built for iOS, iPadOS, macOS, watchOS, and visionOS; and DriverKit extensions in iPadOS and macOS. Additionally, you can create Enhanced Security helper extensions on iOS, iPadOS, macOS, and watchOS to which the system provides further protections; for more information, see [Creating enhanced security helper extensions](./creating-enhanced-security-helper-extensions.md).
 
-##### Adopt the Enhanced Security Capability
+##### Adopt the Enhanced Security capability
 
-Navigate to the Signing and Capabilities editor for your Xcode target, and click the Add Capability button. From the list of capabilities, select Enhanced Security. After you add the Enhanced Security capability to your target, use the checkboxes in the Enhanced Security capability of the Signing and Capabilities editor to adopt specific hardening features. Additionally, select Enable Enhanced Security for All Targets in your project, which turns on certain hardening features including pointer authentication. For more information, see [`Preparing your app to work with pointer authentication`](https://developer.apple.com/documentation/security/preparing-your-app-to-work-with-pointer-authentication).
+Navigate to the Signing and Capabilities editor for your Xcode target, and click the Add Capability button. From the list of capabilities, select Enhanced Security. After you add the Enhanced Security capability to your target, use the checkboxes in the Enhanced Security capability of the Signing and Capabilities editor to adopt specific hardening features. Additionally, select Enable Enhanced Security for All Targets in your project, which turns on certain hardening features including pointer authentication. For more information, see [Preparing your app to work with pointer authentication](../Security/preparing-your-app-to-work-with-pointer-authentication.md).
 
 The sections below describe the individual entitlements and build settings that comprise Enhanced Security, and the steps you can take to adopt the hardening features in your code. Additionally, the sections describe how you can turn off any individual hardening setting, in case you need to do so while you prepare your code to support the additional protections.
 
-> ❗ **Important**:  The Signing and Capabilities editor enforces dependencies between individual entitlements, but if you edit the `.entitlements` file directly, make sure that you add all the necessary entitlements. Any entitlements that begin with `com.apple.security.hardened-process.` require both the [`com.apple.security.hardened-process`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.hardened-process) entitlement and the [`com.apple.security.hardened-process.enhanced-security-version-string`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.hardened-process.enhanced-security-version-string) entitlement. Additionally, any entitlements that begin with `com.apple.security.hardened-process.checked-allocations.` require the [`com.apple.security.hardened-process.checked-allocations`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.hardened-process.checked-allocations) entitlement.
+> ❗ **Important**:  The Signing and Capabilities editor enforces dependencies between individual entitlements, but if you edit the `.entitlements` file directly, make sure that you add all the necessary entitlements. Any entitlements that begin with `com.apple.security.hardened-process.` require both the [`com.apple.security.hardened-process`](../BundleResources/entitlements/com.apple.security.hardened-process.md) entitlement and the [`com.apple.security.hardened-process.enhanced-security-version-string`](../BundleResources/entitlements/com.apple.security.hardened-process.enhanced-security-version-string.md) entitlement. Additionally, any entitlements that begin with `com.apple.security.hardened-process.checked-allocations.` require the [`com.apple.security.hardened-process.checked-allocations`](../BundleResources/entitlements/com.apple.security.hardened-process.checked-allocations.md) entitlement.
 
-##### Prepare Your App for Pointer Authentication
+##### Prepare your app for pointer authentication
 
 The Enhanced Security capability includes additional runtime platform restrictions, which Xcode enables by default for your app. When you adopt the capability by clicking the Enable Enhanced Security for All Targets checkbox, Xcode enables the `ENABLE_POINTER_AUTHENTICATION` build setting. With these additional runtime platform restrictions enabled, Xcode builds your app for the `arm64e` architecture and enables *pointer authentication*, where the system generates signature metadata for pointers that your app creates by allocating memory or constructing C++ objects.
 
@@ -30,39 +31,39 @@ When you enable pointer authentication, the system validates that the signatures
 
 To adopt pointer authentication, use the `__ptrauth` type qualifier to instruct the compiler to generate pointer authentication protection for variables in your code that store data and function pointers.
 
-When a variable uses pointer authentication, the system throws an error if you overwrite its value with a raw pointer in your code, or copy its value to another variable that uses a different pointer authentication schema. If your app does either of these, the system encounters an exception and crashes your app. Instead, sign the pointer before storing it, re-signing it for a different use if necessary. For more information, see [`Improving control flow integrity with pointer authentication`](https://developer.apple.com/documentation/apple-silicon/improving-control-flow-integrity-with-pointer-authentication).
+When a variable uses pointer authentication, the system throws an error if you overwrite its value with a raw pointer in your code, or copy its value to another variable that uses a different pointer authentication schema. If your app does either of these, the system encounters an exception and crashes your app. Instead, sign the pointer before storing it, re-signing it for a different use if necessary. For more information, see [Improving control flow integrity with pointer authentication](../apple-silicon/improving-control-flow-integrity-with-pointer-authentication.md).
 
-##### Adopt Typed Allocator Support
+##### Adopt typed allocator support
 
-When you adopt the Enhanced Security capability, Xcode configures build settings to enable the compiler’s typed allocator in C and C++ code. For more information on the typed allocator and the changes you need to make in your code if you use custom memory-allocator wrapper functions, see [`Adopting type-aware memory allocation`](adopting-type-aware-memory-allocation.md).
+When you adopt the Enhanced Security capability, Xcode configures build settings to enable the compiler’s typed allocator in C and C++ code. For more information on the typed allocator and the changes you need to make in your code if you use custom memory-allocator wrapper functions, see [Adopting type-aware memory allocation](./adopting-type-aware-memory-allocation.md).
 
 To turn off typed allocator support for your target, uncheck the Enable Typed Allocators checkbox in the Signing and Capabilities editor, or set the `CLANG_ENABLE_C_TYPED_ALLOCATOR_SUPPORT` build setting to `No` for C code, and the `CLANG_ENABLE_CPLUSPLUS_TYPED_ALLOCATOR_SUPPORT` build setting to `No` for C++ code.
 
-##### Adopt Memory Integrity Enforcement
+##### Adopt memory integrity enforcement
 
 When you enable hardware memory tagging, each new memory allocation and any pointers to that memory include an embedded value called a *tag*. Accessing to memory through a pointer requires that the pointer’s tag matches the allocation’s tag. If the tags don’t match — for example, because of a use-after-free error or out-of-bounds access — the app crashes instead of performing the unsafe access.
 
-To enable memory tagging, navigate to the Signing and Capabilities editor for your Xcode target. Enable the Enhanced Security capability, then, under Memory Safety, click Enable Hardware Memory Tagging. Xcode adds the [`com.apple.security.hardened-process.checked-allocations`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.hardened-process.checked-allocations) entitlement to your app.
+To enable memory tagging, navigate to the Signing and Capabilities editor for your Xcode target. Enable the Enhanced Security capability, then, under Memory Safety, click Enable Hardware Memory Tagging. Xcode adds the [`com.apple.security.hardened-process.checked-allocations`](../BundleResources/entitlements/com.apple.security.hardened-process.checked-allocations.md) entitlement to your app.
 
 To enable additional diagnostics while debugging, navigate to the Scheme Editor and select the Run action, then select the Diagnostics pane and enable Hardware Memory Tagging.
 
-When you enable memory tagging in Xcode, it also adds the [`com.apple.security.hardened-process.checked-allocations.soft-mode`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.hardened-process.checked-allocations.soft-mode) entitlement. This entitlement makes hardware memory tagging operate in *soft mode*, where the system produces a simulated crash instead of terminating the app if a pointer’s tag doesn’t match the memory allocation’s tag. You can review reports from simulated crashes to help you find memory issues and to help validate that your app doesn’t have memory corruption bugs that would result in crashes when soft mode is disabled. After you’re confident in the stability of your app, disable soft mode to protect your users. To disable soft mode, navigate to the Signing and Capabilities editor for your Xcode target, then, under Memory Safety, deselect Enable Soft Mode for Memory Tagging.
+When you enable memory tagging in Xcode, it also adds the [`com.apple.security.hardened-process.checked-allocations.soft-mode`](../BundleResources/entitlements/com.apple.security.hardened-process.checked-allocations.soft-mode.md) entitlement. This entitlement makes hardware memory tagging operate in *soft mode*, where the system produces a simulated crash instead of terminating the app if a pointer’s tag doesn’t match the memory allocation’s tag. You can review reports from simulated crashes to help you find memory issues and to help validate that your app doesn’t have memory corruption bugs that would result in crashes when soft mode is disabled. After you’re confident in the stability of your app, disable soft mode to protect your users. To disable soft mode, navigate to the Signing and Capabilities editor for your Xcode target, then, under Memory Safety, deselect Enable Soft Mode for Memory Tagging.
 
-You can also enable the [`com.apple.security.hardened-process.checked-allocations.enable-pure-data`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.hardened-process.checked-allocations.enable-pure-data) and [`com.apple.security.hardened-process.checked-allocations.no-tagged-receive`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.hardened-process.checked-allocations.no-tagged-receive) entitlements.
+You can also enable the [`com.apple.security.hardened-process.checked-allocations.enable-pure-data`](../BundleResources/entitlements/com.apple.security.hardened-process.checked-allocations.enable-pure-data.md) and [`com.apple.security.hardened-process.checked-allocations.no-tagged-receive`](../BundleResources/entitlements/com.apple.security.hardened-process.checked-allocations.no-tagged-receive.md) entitlements.
 
 > **Note**: On devices without hardware memory tagging support, this setting has no effect. Supported devices include iPhone and iPad with an A19 chip or later, and Mac and Apple Vision Pro with an M5 chip or later.
 
-##### Initialize Stack Variables to Zero
+##### Initialize stack variables to zero
 
 When you enable the Enhanced Security capability for your target, Xcode sets the `CLANG_ENABLE_STACK_ZERO_INIT` build setting to `Yes`. This build setting configures the compiler to initialize automatic variables in your code with zeroes. Doing so helps to protect against particular types of use-after-free vulnerability, because your app zeroes out previous values in stack memory before it reuses them for other variables.
 
 If you need to turn off zero-initialization of stack variables for your target, set the `CLANG_ENABLE_STACK_ZERO_INIT` build setting to `No`.
 
-##### Adopt Pointer Arithmetic Overflow Checking
+##### Adopt pointer-arithmetic overflow checking
 
-Your app can take advantage of an additional level of memory protection by adopting the [`Check for Overflow of Pointer Arithmetic`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.hardened-process.checked-allocations.enforce-checked-pointer-arithmetic-overflow) entitlement that the `arm64e.x1` architecture slice supports. This is an additional level of pointer checking in addition to the memory integrity enforcement described above — adopting memory integrity enforcement is a prerequisite for adopting the Check for Overflow of Pointer Arithmetic entitlement. For more information, see [`Build settings reference`](build-settings-reference.md).
+Your app can take advantage of an additional level of memory protection by adopting the [`Check for Overflow of Pointer Arithmetic`](../BundleResources/entitlements/com.apple.security.hardened-process.checked-allocations.enforce-checked-pointer-arithmetic-overflow.md) entitlement that the `arm64e.x1` architecture slice supports. This is an additional level of pointer checking in addition to the memory integrity enforcement described above — adopting memory integrity enforcement is a prerequisite for adopting the Check for Overflow of Pointer Arithmetic entitlement. For more information, see [Build settings reference](./build-settings-reference.md).
 
-To test your app with pointer-arithmetic overflow checking, you need to use specific hardware with arm64e.x1 support. For more information, see [`Improving control flow integrity with pointer authentication`](https://developer.apple.com/documentation/apple-silicon/improving-control-flow-integrity-with-pointer-authentication). Note that simulators cannot test this behavior.
+To test your app with pointer-arithmetic overflow checking, you need to use specific hardware with arm64e.x1 support. For more information, see [Improving control flow integrity with pointer authentication](../apple-silicon/improving-control-flow-integrity-with-pointer-authentication.md). Note that simulators cannot test this behavior.
 
 To adopt this capability:
 
@@ -72,7 +73,7 @@ To adopt this capability:
 
 > **Note**: The Xcode build system surfaces a build configuration warning if the `com.apple.security.hardened-process.checked-allocations.enforce-checked-pointer-arithmetic-overflow` entitlement is present but a target dependency for the project doesn’t enable `HARDWARE_CHECKED_POINTER_ARITHMETIC_SLICE`.
 
-##### Address Security Related Compiler Warnings
+##### Address security-related compiler warnings
 
 When you enable the Enhanced Security capability for your target, Xcode configures some compiler warnings that help to identify potentially insecure code. These are:
 
@@ -92,7 +93,7 @@ Xcode additionally sets the `ENABLE_SECURITY_COMPILER_WARNINGS` target build set
 
 If you need to turn off the additional compiler warnings that Enhanced Security configures for your target, set the `ENABLE_SECURITY_COMPILER_WARNINGS` build setting to `No`.
 
-##### Adopt C++ Standard Library Hardening and Compiler Bounds Checking
+##### Adopt C++ standard library hardening and compiler bounds checking
 
 When you enable the Enhanced Security capability for your target, Xcode sets the `ENABLE_CPLUSPLUS_BOUNDS_SAFE_BUFFERS` target build setting to `YES`. This enables a collection of safety checks in the C++ standard library. Specifically, it enables the *fast* hardening mode.
 
@@ -120,35 +121,35 @@ Additionally, setting `ENABLE_CPLUSPLUS_BOUNDS_SAFE_BUFFERS` to `Yes` adds compi
 
 To turn off C++ standard library hardening and compiler bounds checking for your target, set the `ENABLE_CPLUSPLUS_BOUNDS_SAFE_BUFFERS` build setting to `No`.
 
-For more information on C++ standard library hardening, see [`Hardening Modes`](https://developer.apple.comhttps://libcxx.llvm.org/Hardening.html) in the LLVM documentation.
+For more information on C++ standard library hardening, see [Hardening Modes](https://libcxx.llvm.org/Hardening.html) in the LLVM documentation.
 
-##### Adopt Additional Run Time Restrictions
+##### Adopt additional run-time restrictions
 
-When you enable the Enhanced Security capability for your target, Xcode adds the [`com.apple.security.hardened-process.platform-restrictions-string`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.hardened-process.platform-restrictions-string) entitlement to your app. This entitlement informs the system to perform additional checks on dynamic libraries your app or extension loads, and on Mach messages your app or extension receives from other processes.
+When you enable the Enhanced Security capability for your target, Xcode adds the [`com.apple.security.hardened-process.platform-restrictions-string`](../BundleResources/entitlements/com.apple.security.hardened-process.platform-restrictions-string.md) entitlement to your app. This entitlement informs the system to perform additional checks on dynamic libraries your app or extension loads, and on Mach messages your app or extension receives from other processes.
 
-If you use [`XPC`](https://developer.apple.com/documentation/xpc) for inter-process communication (IPC) and don’t use Mach IPC traps, or don’t have any explicit IPC mechanism in your app or extension, enabling additional run-time restrictions turns on protections that are unlikely to require you to make any code changes.
+If you use [XPC](../XPC/XPC.md) for inter-process communication (IPC) and don’t use Mach IPC traps, or don’t have any explicit IPC mechanism in your app or extension, enabling additional run-time restrictions turns on protections that are unlikely to require you to make any code changes.
 
-In apps and extensions that use Mach IPC traps, additional run-time restrictions turn potentially insecure situations into crashes to avoid giving an attacker privileged access to your process via Mach ports. For information on interpreting these crashes and changes to your code that avoid potentially insecure use of Mach messaging APIs, see [`Conforming to Mach IPC security restrictions`](conforming-to-mach-ipc-security-restrictions.md).
+In apps and extensions that use Mach IPC traps, additional run-time restrictions turn potentially insecure situations into crashes to avoid giving an attacker privileged access to your process via Mach ports. For information on interpreting these crashes and changes to your code that avoid potentially insecure use of Mach messaging APIs, see [Conforming to Mach IPC security restrictions](./conforming-to-mach-ipc-security-restrictions.md).
 
 To turn off additional run-time restrictions for your target, uncheck the Enable Additional Runtime Platform Restrictions checkbox in the Signing and Capabilities editor.
 
-##### Adopt Read Only Memory for Internal Platform State
+##### Adopt read-only memory for internal platform state
 
-When you enable the Enhanced Security capability for your target, Xcode adds the [`com.apple.security.hardened-process.dyld-ro`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.hardened-process.dyld-ro) entitlement to your app. This entitlement informs the system to mark regions of memory in your process that the platform uses for its internal state as read-only.
+When you enable the Enhanced Security capability for your target, Xcode adds the [`com.apple.security.hardened-process.dyld-ro`](../BundleResources/entitlements/com.apple.security.hardened-process.dyld-ro.md) entitlement to your app. This entitlement informs the system to mark regions of memory in your process that the platform uses for its internal state as read-only.
 
 In most situations, this additional protection doesn’t require you to make any changes. If your app modifies data in the protected regions — for example, it modifies the value of `const` data sections — the system crashes your app when you adopt this entitlement. To fix the crash, remove the code that modifies the read-only memory regions.
 
 If you need to turn off read-only memory for the dynamic loader, uncheck the Enable Read-Only Platform Memory checkbox in the Signing and Capabilities editor.
 
-##### Adopt Guard Objects
+##### Adopt guard objects
 
-Guard objects defend against use-after-free vulnerabilities by replacing freed memory regions with inaccessible guard regions. When your app accesses one of these regions, it crashes to prevent freed memory from being exploited. This protection is active automatically when you set [`com.apple.security.hardened-process.enhanced-security-version-string`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.hardened-process.enhanced-security-version-string) to `2` or greater. If you don’t set this entitlement, the system automatically applies the latest Enhanced Security version. When your app frees virtual memory mappings and heap allocations — collectively called *objects* — the kernel and the userspace memory allocator can replace them with inaccessible guard regions. Guard placement is dynamic: the system groups objects of similar size and manages their lifetime, shifting guard positions as your app allocates and frees memory.
+Guard objects defend against use-after-free vulnerabilities by replacing freed memory regions with inaccessible guard regions. When your app accesses one of these regions, it crashes to prevent freed memory from being exploited. This protection is active automatically when you set [`com.apple.security.hardened-process.enhanced-security-version-string`](../BundleResources/entitlements/com.apple.security.hardened-process.enhanced-security-version-string.md) to `2` or greater. If you don’t set this entitlement, the system automatically applies the latest Enhanced Security version. When your app frees virtual memory mappings and heap allocations — collectively called *objects* — the kernel and the userspace memory allocator can replace them with inaccessible guard regions. Guard placement is dynamic: the system groups objects of similar size and manages their lifetime, shifting guard positions as your app allocates and frees memory.
 
 > ❗ **Important**:  Guard objects can cause an increase in memory usage or a decrease in execution speed, depending on your app’s workload. Profile your app after adopting Enhanced Security version `2` to measure the impact.
 
-If the memory or performance impact of guard objects is too much, you can turn off guard objects for your target. To turn off guard objects, manually add the [`com.apple.security.hardened-process.no-guard-objects`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.hardened-process.no-guard-objects) entitlement to your target. Then update your provisioning profile. For more information, see [`Edit, download, or delete provisioning profiles`](https://developer.apple.comhttps://developer.apple.com/help/account/provisioning-profiles/edit-download-or-delete-profiles).
+If the memory or performance impact of guard objects is too much, you can turn off guard objects for your target. To turn off guard objects, manually add the [`com.apple.security.hardened-process.no-guard-objects`](../BundleResources/entitlements/com.apple.security.hardened-process.no-guard-objects.md) entitlement to your target. Then update your provisioning profile. For more information, see [Edit, download, or delete provisioning profiles](https://developer.apple.com/help/account/provisioning-profiles/edit-download-or-delete-profiles).
 
-##### Adopt Bounds Checking in C
+##### Adopt bounds checking in C
 
 Optionally, enable bounds checking for your target that complements the security features in Enhanced Security.
 
@@ -169,19 +170,20 @@ To indicate that a pointer identifies a collection of objects that has a particu
 
 To indicate that a pointer refers to a value that you haven’t audited for bounds safety, add the `__unsafe_indexable` annotation.
 
-For more information, see [`-fbounds-safety: Enforcing bounds safety for C`](https://developer.apple.comhttps://clang.llvm.org/docs/BoundsSafety.html) on the LLVM website.
+For more information, see [-fbounds-safety: Enforcing bounds safety for C](https://clang.llvm.org/docs/BoundsSafety.html) on the LLVM website.
 
 To turn off bounds checking in C, set the value of the `ENABLE_C_BOUNDS_SAFETY` build setting to `No`.
 
 ## See Also
 
-- [Verifying the origin of your XCFrameworks](verifying-the-origin-of-your-xcframeworks.md)
+### Security and privacy
+- [Verifying the origin of your XCFrameworks](./verifying-the-origin-of-your-xcframeworks.md)
   Discover who signed a framework, and take action when that changes.
-- [Creating enhanced security helper extensions](creating-enhanced-security-helper-extensions.md)
+- [Creating enhanced security helper extensions](./creating-enhanced-security-helper-extensions.md)
   Reduce opportunities for an attacker to target your app through its extensions.
-- [Adopting type-aware memory allocation](adopting-type-aware-memory-allocation.md)
+- [Adopting type-aware memory allocation](./adopting-type-aware-memory-allocation.md)
   Reduce the opportunities to treat pointers as data in your code.
-- [Conforming to Mach IPC security restrictions](conforming-to-mach-ipc-security-restrictions.md)
+- [Conforming to Mach IPC security restrictions](./conforming-to-mach-ipc-security-restrictions.md)
   Avoid crashes and potentially insecure situations associated with Mach messages.
 
 

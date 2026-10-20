@@ -1,7 +1,8 @@
 # allowedDynamicRange(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new image configured with the specified allowed dynamic range.
 
@@ -37,9 +38,10 @@ Image("hdr-asset").allowedDynamicRange(.high)
 
 ## See Also
 
-- [var allowedDynamicRange: Image.DynamicRange?](environmentvalues/alloweddynamicrange.md)
+### Specifying dynamic range
+- [var allowedDynamicRange: Image.DynamicRange?](../environmentvalues/alloweddynamicrange.md)
   The allowed dynamic range for the view, or nil.
-- [struct DynamicRange](image/dynamicrange.md)
+- [struct DynamicRange](./dynamicrange.md)
   The range of brightness that an image is allowed to draw.
 
 

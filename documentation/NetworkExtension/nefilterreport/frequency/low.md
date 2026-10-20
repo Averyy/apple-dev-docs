@@ -1,7 +1,8 @@
 # NEFilterReport.Frequency.low
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A low frequency of reports, about once every five seconds.
 
@@ -14,13 +15,18 @@ A low frequency of reports, about once every five seconds.
 case low
 ```
 
+```c
+NEFilterReportFrequencyLow
+```
+
 ## See Also
 
-- [NEFilterReport.Frequency.none](nefilterreport/frequency/none.md)
+### Report frequencies
+- [NEFilterReport.Frequency.none](./none.md)
   A frequency value that indicates no report delivery.
-- [NEFilterReport.Frequency.medium](nefilterreport/frequency/medium.md)
+- [NEFilterReport.Frequency.medium](./medium.md)
   A low frequency of reports, about once every second.
-- [NEFilterReport.Frequency.high](nefilterreport/frequency/high.md)
+- [NEFilterReport.Frequency.high](./high.md)
   A low frequency of reports, about once every half-second.
 
 

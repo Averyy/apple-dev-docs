@@ -1,7 +1,8 @@
 # uncached
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A hint indicating the file should not be stored in the file-system caches.
 
@@ -20,15 +21,20 @@ A hint indicating the file should not be stored in the file-system caches.
 static var uncached: NSData.ReadingOptions { get }
 ```
 
+```c
+NSDataReadingUncached
+```
+
 #### Discussion
 
 For data being read once and discarded, this option can improve performance.
 
 ## See Also
 
-- [static var mappedIfSafe: NSData.ReadingOptions](nsdata/readingoptions/mappedifsafe.md)
+### Constants
+- [static var mappedIfSafe: NSData.ReadingOptions](./mappedifsafe.md)
   A hint indicating the file should be mapped into virtual memory, if possible and safe.
-- [static var alwaysMapped: NSData.ReadingOptions](nsdata/readingoptions/alwaysmapped.md)
+- [static var alwaysMapped: NSData.ReadingOptions](./alwaysmapped.md)
   Hint to map the file in if possible.
 
 

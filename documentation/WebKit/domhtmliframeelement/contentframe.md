@@ -1,17 +1,22 @@
 # contentFrame
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content frame of the element.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var contentFrame: WebFrame! { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) WebFrame * contentFrame;
 ```
 
 

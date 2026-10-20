@@ -1,7 +1,8 @@
 # scrollEdgeEffectStyle(_:for:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the scroll edge effect style for scroll views within this hierarchy.
 
@@ -37,11 +38,12 @@ ScrollView {
 
 ## See Also
 
-- [func scrollEdgeEffectHidden(Bool, for: Edge.Set) -> some View](view/scrolledgeeffecthidden(_:for:).md)
+### Configuring scroll edge effects
+- [func scrollEdgeEffectHidden(Bool, for: Edge.Set) -> some View](./scrolledgeeffecthidden%28_,for%29.md)
   Hides any scroll edge effects for scroll views within this hierarchy.
-- [struct ScrollEdgeEffectStyle](scrolledgeeffectstyle.md)
+- [struct ScrollEdgeEffectStyle](../scrolledgeeffectstyle.md)
   A structure that specifies blur transitions between scrolling content and an area with controls, such as toolbars.
-- [func safeAreaBar(edge:alignment:spacing:content:)](view/safeareabar(edge:alignment:spacing:content:).md)
+- [func safeAreaBar(edge:alignment:spacing:content:)](./safeareabar%28edge,alignment,spacing,content%29.md)
   Shows the specified content as a custom bar beside the modified view.
 
 

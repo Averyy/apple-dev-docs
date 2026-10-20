@@ -1,14 +1,15 @@
 # stack_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 typedef struct sigaltstack {
     ...
 } stack_t;
@@ -17,9 +18,9 @@ typedef struct sigaltstack {
 ## Topics
 
 ### Instance Properties
-- [ss_flags](stack_t/1534694-ss_flags.md)
-- [ss_size](stack_t/1534693-ss_size.md)
-- [ss_sp](stack_t/1534696-ss_sp.md)
+- [ss_flags](./stack_t/api-1534694-ss_flags.md)
+- [ss_size](./stack_t/api-1534693-ss_size.md)
+- [ss_sp](./stack_t/api-1534696-ss_sp.md)
 
 
 ---

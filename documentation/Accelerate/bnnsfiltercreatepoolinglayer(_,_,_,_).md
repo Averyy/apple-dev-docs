@@ -1,23 +1,30 @@
 # BNNSFilterCreatePoolingLayer(_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a pooling  filter, initialized with input, output, layer, and filter parameters.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 13.1+
-- macOS 10.12+
-- tvOS 10.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 10.0+ - Deprecated in 14.0 (renamed: BNNSFilterCreateLayerPooling(_:_:))
+- iPadOS 10.0+ - Deprecated in 14.0 (renamed: BNNSFilterCreateLayerPooling(_:_:))
+- Mac Catalyst 13.1+ - Deprecated in 14.0 (renamed: BNNSFilterCreateLayerPooling(_:_:))
+- macOS 10.12+ - Deprecated in 11.0 (renamed: BNNSFilterCreateLayerPooling(_:_:))
+- tvOS 10.0+ - Deprecated in 14.0 (renamed: BNNSFilterCreateLayerPooling(_:_:))
+- visionOS 1.0+ - Deprecated in 1.0 (renamed: BNNSFilterCreateLayerPooling(_:_:))
+- watchOS 3.0+ - Deprecated in 7.0 (renamed: BNNSFilterCreateLayerPooling(_:_:))
+
+> **Deprecated**: Use [`BNNSFilterCreateLayerPooling(_:_:)`](./bnnsfiltercreatelayerpooling%28_,_%29.md) instead.
 
 ## Declaration
 
 ```swift
 func BNNSFilterCreatePoolingLayer(_ in_desc: UnsafePointer<BNNSImageStackDescriptor>, _ out_desc: UnsafePointer<BNNSImageStackDescriptor>, _ layer_params: UnsafePointer<BNNSPoolingLayerParameters>, _ filter_params: UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?
+```
+
+```c
+BNNSFilterBNNSFilterCreatePoolingLayer(const BNNSImageStackDescriptor *in_desc, const BNNSImageStackDescriptor *out_desc, const BNNSPoolingLayerParameters *layer_params, const BNNSFilterParameters *filter_params);
 ```
 
 #### Return Value
@@ -33,25 +40,26 @@ A BNNSFilter object representing a pooling filter configured with the specified 
 
 ## See Also
 
-- [struct BNNSPoolingLayerParameters](bnnspoolinglayerparameters.md)
+### Pooling layers
+- [struct BNNSPoolingLayerParameters](./bnnspoolinglayerparameters.md)
   A structure containing pooling layer parameters.
-- [class PoolingLayer](bnns/poolinglayer.md)
+- [class PoolingLayer](./bnns/poolinglayer.md)
   A layer object that wraps a pooling filter and manages its deinitialization.
-- [struct BNNSPoolingFunction](bnnspoolingfunction.md)
+- [struct BNNSPoolingFunction](./bnnspoolingfunction.md)
   Constants that describe pooling functions.
-- [var BNNSPoolingFunctionAverage: BNNSPoolingFunction](bnnspoolingfunctionaverage.md)
-- [var BNNSPoolingFunctionMax: BNNSPoolingFunction](bnnspoolingfunctionmax.md)
-- [struct BNNSLayerParametersPooling](bnnslayerparameterspooling.md)
+- [var BNNSPoolingFunctionAverage: BNNSPoolingFunction](./bnnspoolingfunctionaverage.md)
+- [var BNNSPoolingFunctionMax: BNNSPoolingFunction](./bnnspoolingfunctionmax.md)
+- [struct BNNSLayerParametersPooling](./bnnslayerparameterspooling.md)
   A structure that contains the parameters of a pooling layer.
-- [func BNNSFilterCreateLayerPooling(UnsafePointer<BNNSLayerParametersPooling>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](bnnsfiltercreatelayerpooling(_:_:).md)
+- [func BNNSFilterCreateLayerPooling(UnsafePointer<BNNSLayerParametersPooling>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](./bnnsfiltercreatelayerpooling%28_,_%29.md)
   Returns a new pooling layer.
-- [func BNNSPoolingFilterApplyBatch(BNNSFilter?, Int, UnsafeRawPointer, Int, UnsafeMutableRawPointer, Int, UnsafeMutablePointer<Int>?, Int) -> Int32](bnnspoolingfilterapplybatch(_:_:_:_:_:_:_:_:).md)
+- [func BNNSPoolingFilterApplyBatch(BNNSFilter?, Int, UnsafeRawPointer, Int, UnsafeMutableRawPointer, Int, UnsafeMutablePointer<Int>?, Int) -> Int32](./bnnspoolingfilterapplybatch%28_,_,_,_,_,_,_,_%29.md)
   Applies a pooling filter to a set of input objects, writing the result to a set of output objects.
-- [func BNNSPoolingFilterApplyBackwardBatch(BNNSFilter?, Int, UnsafeRawPointer?, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>?, Int, UnsafeRawPointer?, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>?, UnsafePointer<Int>?, Int) -> Int32](bnnspoolingfilterapplybackwardbatch(_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func BNNSPoolingFilterApplyBackwardBatch(BNNSFilter?, Int, UnsafeRawPointer?, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>?, Int, UnsafeRawPointer?, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>?, UnsafePointer<Int>?, Int) -> Int32](./bnnspoolingfilterapplybackwardbatch%28_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Applies a pooling filter backward to generate gradients.
-- [func BNNSPoolingFilterApplyBatchEx(BNNSFilter?, Int, UnsafeRawPointer, Int, UnsafeMutableRawPointer, Int, BNNSDataType, UnsafeMutableRawPointer?, Int) -> Int32](bnnspoolingfilterapplybatchex(_:_:_:_:_:_:_:_:_:).md)
+- [func BNNSPoolingFilterApplyBatchEx(BNNSFilter?, Int, UnsafeRawPointer, Int, UnsafeMutableRawPointer, Int, BNNSDataType, UnsafeMutableRawPointer?, Int) -> Int32](./bnnspoolingfilterapplybatchex%28_,_,_,_,_,_,_,_,_%29.md)
   Applies a pooling filter to a set of input objects with support for multiple data types for indices.
-- [func BNNSPoolingFilterApplyBackwardBatchEx(BNNSFilter?, Int, UnsafeRawPointer?, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>?, Int, UnsafeRawPointer?, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>?, BNNSDataType, UnsafeRawPointer?, Int) -> Int32](bnnspoolingfilterapplybackwardbatchex(_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func BNNSPoolingFilterApplyBackwardBatchEx(BNNSFilter?, Int, UnsafeRawPointer?, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>?, Int, UnsafeRawPointer?, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>?, BNNSDataType, UnsafeRawPointer?, Int) -> Int32](./bnnspoolingfilterapplybackwardbatchex%28_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Applies a pooling filter backward to generate gradients with support for multiple data types for indices.
 
 

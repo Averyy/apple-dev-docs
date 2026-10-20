@@ -1,7 +1,8 @@
 # kAUAudioMixProperty_SpatialAudioMixMetadata
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 26.0+
@@ -13,6 +14,10 @@
 
 ```swift
 var kAUAudioMixProperty_SpatialAudioMixMetadata: AudioUnitPropertyID { get }
+```
+
+```c
+kAUAudioMixProperty_SpatialAudioMixMetadata
 ```
 
 

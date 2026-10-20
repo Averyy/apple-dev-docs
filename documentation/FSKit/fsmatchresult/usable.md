@@ -1,7 +1,8 @@
 # FSMatchResult.usable
 
 **Framework**: FSKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The probe recognizes the resource and is ready to use it.
 
@@ -14,13 +15,18 @@ The probe recognizes the resource and is ready to use it.
 case usable
 ```
 
+```c
+FSMatchResultUsable
+```
+
 ## See Also
 
-- [FSMatchResult.usableButLimited](fsmatchresult/usablebutlimited.md)
+### Working with match results
+- [FSMatchResult.usableButLimited](./usablebutlimited.md)
   The probe recognizes the resource and is ready to use it, but only in a limited capacity.
-- [FSMatchResult.recognized](fsmatchresult/recognized.md)
+- [FSMatchResult.recognized](./recognized.md)
   The probe recognizes the resource but can’t use it.
-- [FSMatchResult.notRecognized](fsmatchresult/notrecognized.md)
+- [FSMatchResult.notRecognized](./notrecognized.md)
   The probe doesn’t recognize the resource.
 
 

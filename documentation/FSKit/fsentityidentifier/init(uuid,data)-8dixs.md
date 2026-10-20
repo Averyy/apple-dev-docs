@@ -1,12 +1,13 @@
 # init(uuid:data:)
 
 **Framework**: FSKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an entity identifier with the given UUID and qualifier data.
 
 **Availability**:
-- macOS 15.4+
+- macOS 15.4+ - Deprecated in 27.0
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Creates an entity identifier with the given UUID and qualifier data.
 init(uuid: UUID, data qualifierData: Data)
 ```
 
+```objc
+- (instancetype) initWithUUID:(NSUUID *) uuid data:(NSData *) qualifierData;
+```
+
 #### Discussion
 
-> ⚠️ **Warning**: This initializer is annotated as returning a non-optional value but silently returns `nil` when `qualifierData` is not exactly eight bytes, which can surface as a null value in a non-optional Swift variable. Use [`init(uuid:qualifierData:)`](fsentityidentifier/init(uuid:qualifierdata:)-8xlg1.md) instead, which is explicitly failable.
+> ⚠️ **Warning**: This initializer is annotated as returning a non-optional value but silently returns `nil` when `qualifierData` is not exactly eight bytes, which can surface as a null value in a non-optional Swift variable. Use [`init(uuid:qualifierData:)`](./init%28uuid,qualifierdata%29-8xlg1.md) instead, which is explicitly failable.
 
 ## Parameters
 
@@ -25,11 +30,12 @@ init(uuid: UUID, data qualifierData: Data)
 
 ## See Also
 
-- [init()](fsentityidentifier/init.md)
+### Creating an entity identifier
+- [init()](./init%28%29.md)
   Creates an entity identifier with a random UUID.
-- [init(uuid: UUID)](fsentityidentifier/init(uuid:)-9e20k.md)
+- [init(uuid: UUID)](./init%28uuid%29-9e20k.md)
   Creates an entity identifier with the given UUID.
-- [init(uuid: UUID, qualifier: UInt64)](fsentityidentifier/init(uuid:qualifier:)-9ty70.md)
+- [init(uuid: UUID, qualifier: UInt64)](./init%28uuid,qualifier%29-9ty70.md)
   Creates an entity identifier with the given UUID and qualifier data as a 64-bit unsigned integer.
 
 

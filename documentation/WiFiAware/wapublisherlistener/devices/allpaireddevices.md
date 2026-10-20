@@ -1,7 +1,8 @@
 # allPairedDevices
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The property that includes all paired devices that your app has access to.
 

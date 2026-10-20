@@ -1,7 +1,8 @@
 # pixelFormat
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configures the pixel format.
 
@@ -19,9 +20,13 @@ Configures the pixel format.
 var pixelFormat: MTLPixelFormat { get set }
 ```
 
+```objc
+@property (nonatomic) MTLPixelFormat pixelFormat;
+```
+
 #### Discussion
 
-This property defaults to [`MTLPixelFormat.invalid`](mtlpixelformat/invalid.md).
+This property defaults to [`MTLPixelFormat.invalid`](../mtlpixelformat/invalid.md).
 
 
 ---

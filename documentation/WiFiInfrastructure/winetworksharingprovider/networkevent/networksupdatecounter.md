@@ -1,7 +1,8 @@
 # networksUpdateCounter
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A counter that increments whenever the network data changes.
 
@@ -22,7 +23,8 @@ The counter increments by `1`.
 
 ## See Also
 
-- [let networks: [WINetworkSharingProvider.Network]](winetworksharingprovider/networkevent/networks.md)
+### Getting network data
+- [let networks: [WINetworkSharingProvider.Network]](./networks.md)
   The latest network data, containing a list of all networks shared to the device.
 
 

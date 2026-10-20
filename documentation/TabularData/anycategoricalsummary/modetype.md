@@ -1,9 +1,10 @@
 # modeType
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The underlying type of [`mode`](anycategoricalsummary/mode.md).
+The underlying type of [`mode`](./mode.md).
 
 **Availability**:
 - iOS 15.0+
@@ -22,7 +23,8 @@ var modeType: any Any.Type
 
 ## See Also
 
-- [var mode: [Any]](anycategoricalsummary/mode.md)
+### Getting Mode Information
+- [var mode: [Any]](./mode.md)
   The most common values in a column.
 
 

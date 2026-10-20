@@ -1,7 +1,8 @@
 # results
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of detected trajectory observations.
 
@@ -19,9 +20,14 @@ The array of detected trajectory observations.
 var results: [VNTrajectoryObservation]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSArray<VNTrajectoryObservation *> * results;
+```
+
 ## See Also
 
-- [class VNTrajectoryObservation](vntrajectoryobservation.md)
+### Inspecting the Results
+- [class VNTrajectoryObservation](../vntrajectoryobservation.md)
   An observation that describes a detected trajectory.
 
 

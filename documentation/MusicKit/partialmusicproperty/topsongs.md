@@ -1,7 +1,8 @@
 # topSongs
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the association property that returns a collection of the artist’s top songs.
 
@@ -19,6 +20,8 @@ An identifier for the association property that returns a collection of the arti
 ```swift
 static let topSongs: MusicRelationshipProperty<Artist, Song>
 ```
+
+Available when `Root` is `Artist`.
 
 
 ---

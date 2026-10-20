@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new lightweight texture view of a buffer.
@@ -20,9 +21,13 @@ Creates a new lightweight texture view of a buffer.
 func setTextureView(buffer: any MTLBuffer, descriptor: MTLTextureDescriptor, offset: Int, bytesPerRow: Int, index: Int) -> MTLResourceID
 ```
 
+```objc
+- (MTLResourceID) setTextureViewFromBuffer:(id<MTLBuffer>) buffer descriptor:(MTLTextureDescriptor *) descriptor offset:(NSUInteger) offset bytesPerRow:(NSUInteger) bytesPerRow atIndex:(NSUInteger) index;
+```
+
 #### Return Value
 
-The [`MTLResourceID`](mtlresourceid.md) of a new buffer view in this pool.
+The [`MTLResourceID`](../mtlresourceid.md) of a new buffer view in this pool.
 
 #### Discussion
 
@@ -30,7 +35,7 @@ This method creates a lightweight texture view over a buffer, according to a des
 
 ## Parameters
 
-- `buffer`: An [`MTLBuffer`](mtlbuffer.md) instance for which to create a new texture view.
+- `buffer`: An [`MTLBuffer`](../mtlbuffer.md) instance for which to create a new texture view.
 - `descriptor`: A descriptor specifying properties of the texture view to create.
 - `offset`: A byte offset, within the `buffer` parameter, at which the data for the texture view starts.
 - `bytesPerRow`: The number of bytes between adjacent rows of pixels in the source buffer’s memory.

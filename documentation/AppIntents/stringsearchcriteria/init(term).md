@@ -1,7 +1,8 @@
 # init(term:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the type with the specified search term.
 
@@ -11,7 +12,7 @@ Initializes the type with the specified search term.
 - Mac Catalyst 17.2+
 - macOS 14.2+
 - tvOS 17.2+
-- visionOS ?+
+- visionOS
 - watchOS 10.2+
 
 ## Declaration

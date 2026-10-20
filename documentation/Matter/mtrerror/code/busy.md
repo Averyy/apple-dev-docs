@@ -1,7 +1,8 @@
 # MTRError.Code.busy
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A request was made to some entity, and that entity cannot handle the request right now, but might be able to at a different point in time.
 
@@ -18,6 +19,10 @@ A request was made to some entity, and that entity cannot handle the request rig
 
 ```swift
 case busy
+```
+
+```c
+MTRErrorCodeBusy
 ```
 
 

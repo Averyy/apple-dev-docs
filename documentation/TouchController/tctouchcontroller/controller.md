@@ -1,7 +1,8 @@
 # controller
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The game controller instance associated with this touch controller.
 
@@ -14,6 +15,10 @@ The game controller instance associated with this touch controller.
 
 ```swift
 var controller: GCController { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) GCController * controller;
 ```
 
 

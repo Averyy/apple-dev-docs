@@ -1,7 +1,8 @@
 # init(upstream:transform:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that republishes all non-`nil` results of calling a closure with each received element.
 

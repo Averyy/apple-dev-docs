@@ -1,7 +1,8 @@
 # stop()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops playback of the audio resource and discards the location in the audio stream.
 
@@ -11,7 +12,7 @@ Stops playback of the audio resource and discards the location in the audio stre
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,15 +23,16 @@ Stops playback of the audio resource and discards the location in the audio stre
 
 #### Discussion
 
-The next time you call [`play()`](audioplaybackcontroller/play().md), playback starts at the beginning of the stream.
+The next time you call [`play()`](./play%28%29.md), playback starts at the beginning of the stream.
 
 ## See Also
 
-- [func play()](audioplaybackcontroller/play.md)
+### Starting and stopping audio playback
+- [func play()](./play%28%29.md)
   Plays the audio resource.
-- [func pause()](audioplaybackcontroller/pause.md)
+- [func pause()](./pause%28%29.md)
   Pauses playback of the audio resource while maintaining the position in the audio stream.
-- [var isPlaying: Bool](audioplaybackcontroller/isplaying.md)
+- [var isPlaying: Bool](./isplaying.md)
   A Boolean value that indicates whether playback is currently active.
 
 

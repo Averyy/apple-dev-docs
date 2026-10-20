@@ -1,7 +1,8 @@
 # videoRendition
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -18,17 +19,22 @@
 var videoRendition: AVMetricMediaRendition { get }
 ```
 
+```objc
+@property (readonly) AVMetricMediaRendition * videoRendition;
+```
+
 #### Discussion
 
 Contains information corresponding to the currently selected video rendition.
 
 ## See Also
 
-- [var fromVariant: AVAssetVariant?](avmetricplayeritemvariantswitchstartevent/fromvariant.md)
-- [var loadedTimeRanges: [CMTimeRange]](avmetricplayeritemvariantswitchstartevent/loadedtimeranges-2mbm7.md)
-- [var toVariant: AVAssetVariant](avmetricplayeritemvariantswitchstartevent/tovariant.md)
-- [var audioRendition: AVMetricMediaRendition](avmetricplayeritemvariantswitchstartevent/audiorendition.md)
-- [var subtitleRendition: AVMetricMediaRendition](avmetricplayeritemvariantswitchstartevent/subtitlerendition.md)
+### Inspecting the event
+- [var fromVariant: AVAssetVariant?](./fromvariant.md)
+- [var loadedTimeRanges: [CMTimeRange]](./loadedtimeranges-2mbm7.md)
+- [var toVariant: AVAssetVariant](./tovariant.md)
+- [var audioRendition: AVMetricMediaRendition](./audiorendition.md)
+- [var subtitleRendition: AVMetricMediaRendition](./subtitlerendition.md)
 
 
 ---

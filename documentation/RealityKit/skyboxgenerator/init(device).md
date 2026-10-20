@@ -1,7 +1,8 @@
 # init(device:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+
@@ -13,6 +14,13 @@
 
 ```swift
 init(device: any MTLDevice)
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+(nonsending) init(device: any MTLDevice) async
 ```
 
 

@@ -1,7 +1,8 @@
 # DiscontiguousColumnSlice.Element
 
 **Framework**: TabularData  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of the column slice’s elements.
 
@@ -22,7 +23,8 @@ typealias Element = WrappedElement?
 
 ## See Also
 
-- [DiscontiguousColumnSlice.Index](discontiguouscolumnslice/index.md)
+### Supporting Types
+- [DiscontiguousColumnSlice.Index](./index.md)
   The type that represents a position in the column slice.
 
 

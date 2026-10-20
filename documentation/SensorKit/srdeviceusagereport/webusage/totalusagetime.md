@@ -1,7 +1,8 @@
 # totalUsageTime
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of web usage time that the report spans.
 
@@ -14,6 +15,10 @@ The amount of web usage time that the report spans.
 
 ```swift
 var totalUsageTime: TimeInterval { get }
+```
+
+```objc
+@property (readonly) NSTimeInterval totalUsageTime;
 ```
 
 

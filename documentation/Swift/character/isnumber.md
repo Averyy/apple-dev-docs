@@ -1,7 +1,8 @@
 # isNumber
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether this character represents a number.
 
@@ -32,13 +33,14 @@ For example, the following characters all represent numbers:
 
 ## See Also
 
-- [var isWholeNumber: Bool](character/iswholenumber.md)
+### Checking a Character’s Numeric Properties
+- [var isWholeNumber: Bool](./iswholenumber.md)
   A Boolean value indicating whether this character represents a whole number.
-- [var wholeNumberValue: Int?](character/wholenumbervalue.md)
+- [var wholeNumberValue: Int?](./wholenumbervalue.md)
   The numeric value this character represents, if it represents a whole number.
-- [var isHexDigit: Bool](character/ishexdigit.md)
+- [var isHexDigit: Bool](./ishexdigit.md)
   A Boolean value indicating whether this character represents a hexadecimal digit.
-- [var hexDigitValue: Int?](character/hexdigitvalue.md)
+- [var hexDigitValue: Int?](./hexdigitvalue.md)
   The numeric value this character represents, if it is a hexadecimal digit.
 
 

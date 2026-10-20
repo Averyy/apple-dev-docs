@@ -1,7 +1,8 @@
 # view
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view from which the preview interaction receives touch events.
 
@@ -17,15 +18,20 @@ The view from which the preview interaction receives touch events.
 weak var view: UIView? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly) UIView * view;
+```
+
 #### Discussion
 
 A preview interaction operates on the view that’s provided at initialization time. Use this property to obtain a reference to that same view. Note that this is a weak property — the preview interaction doesn’t retain a reference to the view it’s provided.
 
 ## See Also
 
-- [func cancel()](uipreviewinteraction/cancel.md)
+### Handling preview interactions
+- [func cancel()](./cancel%28%29.md)
   Cancels the current preview interaction.
-- [func location(in: (any UICoordinateSpace)?) -> CGPoint](uipreviewinteraction/location(in:).md)
+- [func location(in: (any UICoordinateSpace)?) -> CGPoint](./location%28in%29.md)
   Returns the location of the touch that started the interaction.
 
 

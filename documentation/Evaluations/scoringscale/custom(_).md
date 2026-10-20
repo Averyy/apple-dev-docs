@@ -1,7 +1,8 @@
 # custom(_:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a scoring scale from a typed score level enum.
 
@@ -22,7 +23,7 @@ static func custom<Level>(_ level: Level.Type) -> ScoringScale where Level : Sco
 
 #### Discussion
 
-The method enumerates all cases and converts them to [`ScaleOption`](scaleoption.md) values.
+The method enumerates all cases and converts them to [`ScaleOption`](../scaleoption.md) values.
 
 ## Parameters
 
@@ -30,11 +31,12 @@ The method enumerates all cases and converts them to [`ScaleOption`](scaleoption
 
 ## See Also
 
-- [static func passFail(passDescription: String, failDescription: String) -> ScoringScale](scoringscale/passfail(passdescription:faildescription:).md)
+### Creating a scale
+- [static func passFail(passDescription: String, failDescription: String) -> ScoringScale](./passfail%28passdescription,faildescription%29.md)
   Creates a binary pass or fail scoring scale.
-- [static func numeric([Double : String]) -> ScoringScale](scoringscale/numeric(_:).md)
+- [static func numeric([Double : String]) -> ScoringScale](./numeric%28_%29.md)
   Creates a scoring scale from a numeric dictionary.
-- [init(options: [ScaleOption])](scoringscale/init(options:).md)
+- [init(options: [ScaleOption])](./init%28options%29.md)
   Creates a scoring scale with explicit options.
 
 

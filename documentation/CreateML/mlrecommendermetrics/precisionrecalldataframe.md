@@ -1,7 +1,8 @@
 # precisionRecallDataFrame
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A data table with the recall and precision for each item.
 
@@ -16,9 +17,10 @@ var precisionRecallDataFrame: DataFrame { get }
 
 ## See Also
 
-- [let excludingObserved: Bool](mlrecommendermetrics/excludingobserved.md)
+### Assessing the model
+- [let excludingObserved: Bool](./excludingobserved.md)
   A Boolean value that indicates whether the recommender omitted training data from the recommendations.
-- [var precisionRecall: MLDataTable](mlrecommendermetrics/precisionrecall.md)
+- [var precisionRecall: MLDataTable](./precisionrecall.md)
   A data table with the recall and precision for each item.
 
 

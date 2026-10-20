@@ -1,7 +1,8 @@
 # init(_:order:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a `StandardComparator` from the given `StandardComparator` with the given new `order`.
 

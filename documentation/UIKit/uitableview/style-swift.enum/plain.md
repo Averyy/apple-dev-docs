@@ -1,21 +1,26 @@
 # UITableView.Style.plain
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A plain table view.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case plain
+```
+
+```c
+UITableViewStylePlain
 ```
 
 #### Discussion
@@ -24,9 +29,10 @@ Section headers and footers are displayed as inline separators and float when th
 
 ## See Also
 
-- [UITableView.Style.grouped](uitableview/style-swift.enum/grouped.md)
+### Styles
+- [UITableView.Style.grouped](./grouped.md)
   A table view where sections have distinct groups of rows.
-- [UITableView.Style.insetGrouped](uitableview/style-swift.enum/insetgrouped.md)
+- [UITableView.Style.insetGrouped](./insetgrouped.md)
   A table view where the grouped sections are inset with rounded corners.
 
 

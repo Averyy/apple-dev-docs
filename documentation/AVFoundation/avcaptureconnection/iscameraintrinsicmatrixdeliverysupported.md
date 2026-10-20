@@ -1,7 +1,8 @@
 # isCameraIntrinsicMatrixDeliverySupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the capture connection currently supports delivering camera intrinsics information.
 
@@ -17,13 +18,18 @@ A Boolean value that indicates whether the capture connection currently supports
 var isCameraIntrinsicMatrixDeliverySupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isCameraIntrinsicMatrixDeliverySupported) BOOL cameraIntrinsicMatrixDeliverySupported;
+```
+
 #### Discussion
 
-A value of [`true`](https://developer.apple.com/documentation/swift/true) means you can set [`isCameraIntrinsicMatrixDeliveryEnabled`](avcaptureconnection/iscameraintrinsicmatrixdeliveryenabled.md) to [`true`](https://developer.apple.com/documentation/swift/true). The property is only [`true`](https://developer.apple.com/documentation/swift/true) if both the connection’s input device format and output type support delivering camera intrinsics. In iOS 11, the [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md) class is the only output type that supports camera intrinsics.
+A value of [`true`](../../Swift/true.md) means you can set [`isCameraIntrinsicMatrixDeliveryEnabled`](./iscameraintrinsicmatrixdeliveryenabled.md) to [`true`](../../Swift/true.md). The property is only [`true`](../../Swift/true.md) if both the connection’s input device format and output type support delivering camera intrinsics. In iOS 11, the [`AVCaptureVideoDataOutput`](../avcapturevideodataoutput.md) class is the only output type that supports camera intrinsics.
 
 ## See Also
 
-- [var isCameraIntrinsicMatrixDeliveryEnabled: Bool](avcaptureconnection/iscameraintrinsicmatrixdeliveryenabled.md)
+### Delivering camera calibration settings
+- [var isCameraIntrinsicMatrixDeliveryEnabled: Bool](./iscameraintrinsicmatrixdeliveryenabled.md)
   A Boolean value that indicates whether the connection can configure the capture pipeline to deliver camera intrinsics information.
 
 

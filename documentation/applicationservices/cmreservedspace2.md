@@ -1,7 +1,8 @@
 # cmReservedSpace2
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 This field is reserved for use by QuickDraw GX.
 

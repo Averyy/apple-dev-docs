@@ -1,7 +1,8 @@
 # CMSampleBuffer.PerSampleAttachmentsDictionary.Key
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 13.0+
@@ -21,28 +22,28 @@ struct Key
 ## Topics
 
 ### Keys
-- [static let audioIndependentSampleDecoderRefreshCount: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](cmsamplebuffer/persampleattachmentsdictionary/key/audioindependentsampledecoderrefreshcount.md)
-- [static let dependsOnOthers: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](cmsamplebuffer/persampleattachmentsdictionary/key/dependsonothers.md)
-- [static let displayImmediately: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](cmsamplebuffer/persampleattachmentsdictionary/key/displayimmediately.md)
-- [static let doNotDisplay: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](cmsamplebuffer/persampleattachmentsdictionary/key/donotdisplay.md)
-- [static let earlierDisplayTimesAllowed: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](cmsamplebuffer/persampleattachmentsdictionary/key/earlierdisplaytimesallowed.md)
-- [static let hasRedundantCoding: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](cmsamplebuffer/persampleattachmentsdictionary/key/hasredundantcoding.md)
-- [static let hevcStepwiseTemporalSubLayerAccess: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](cmsamplebuffer/persampleattachmentsdictionary/key/hevcstepwisetemporalsublayeraccess.md)
-- [static let hevcSyncSampleNALUnitType: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](cmsamplebuffer/persampleattachmentsdictionary/key/hevcsyncsamplenalunittype.md)
-- [static let hevcTemporalLevelInfo: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](cmsamplebuffer/persampleattachmentsdictionary/key/hevctemporallevelinfo.md)
-- [static let hevcTemporalSubLayerAccess: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](cmsamplebuffer/persampleattachmentsdictionary/key/hevctemporalsublayeraccess.md)
-- [static let isDependedOnByOthers: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](cmsamplebuffer/persampleattachmentsdictionary/key/isdependedonbyothers.md)
-- [static let notSync: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](cmsamplebuffer/persampleattachmentsdictionary/key/notsync.md)
-- [static let partialSync: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](cmsamplebuffer/persampleattachmentsdictionary/key/partialsync.md)
+- [static let audioIndependentSampleDecoderRefreshCount: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](./key/audioindependentsampledecoderrefreshcount.md)
+- [static let dependsOnOthers: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](./key/dependsonothers.md)
+- [static let displayImmediately: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](./key/displayimmediately.md)
+- [static let doNotDisplay: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](./key/donotdisplay.md)
+- [static let earlierDisplayTimesAllowed: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](./key/earlierdisplaytimesallowed.md)
+- [static let hasRedundantCoding: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](./key/hasredundantcoding.md)
+- [static let hevcStepwiseTemporalSubLayerAccess: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](./key/hevcstepwisetemporalsublayeraccess.md)
+- [static let hevcSyncSampleNALUnitType: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](./key/hevcsyncsamplenalunittype.md)
+- [static let hevcTemporalLevelInfo: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](./key/hevctemporallevelinfo.md)
+- [static let hevcTemporalSubLayerAccess: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](./key/hevctemporalsublayeraccess.md)
+- [static let isDependedOnByOthers: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](./key/isdependedonbyothers.md)
+- [static let notSync: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](./key/notsync.md)
+- [static let partialSync: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](./key/partialsync.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

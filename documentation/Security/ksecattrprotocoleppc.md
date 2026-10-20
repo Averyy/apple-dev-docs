@@ -1,7 +1,8 @@
 # kSecAttrProtocolEPPC
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Remote Apple Events.
 
@@ -18,6 +19,10 @@ Remote Apple Events.
 
 ```swift
 let kSecAttrProtocolEPPC: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrProtocolEPPC;
 ```
 
 

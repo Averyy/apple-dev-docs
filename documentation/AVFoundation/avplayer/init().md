@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a player object.
 
@@ -21,11 +22,16 @@ nonisolated
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [init(url: URL)](avplayer/init(url:)-87cxx.md)
+### Creating a player
+- [init(url: URL)](./init%28url%29-87cxx.md)
   Creates a new player to play a single audiovisual resource referenced by a given URL.
-- [init(playerItem: AVPlayerItem?)](avplayer/init(playeritem:).md)
+- [init(playerItem: AVPlayerItem?)](./init%28playeritem%29.md)
   Creates a new player to play the specified player item.
 
 

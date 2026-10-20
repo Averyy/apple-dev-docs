@@ -1,7 +1,8 @@
 # Range.Index
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that represents a position in the range.
 
@@ -19,6 +20,8 @@ A type that represents a position in the range.
 ```swift
 typealias Index = Bound
 ```
+
+Available when `Bound` conforms to `Strideable` and `Bound.Stride` conforms to `SignedInteger`.
 
 
 ---

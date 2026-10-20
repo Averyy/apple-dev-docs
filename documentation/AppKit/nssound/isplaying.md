@@ -1,12 +1,13 @@
 # isPlaying
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the sound is playing its audio data.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,26 @@ A Boolean that indicates whether the sound is playing its audio data.
 var isPlaying: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isPlaying) BOOL playing;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the receiver is playing its audio data.
+The value of this property is [`true`](../../Swift/true.md) when the receiver is playing its audio data.
 
 ## See Also
 
-- [static func beep()](nssound/beep.md)
+### Playing Sounds
+- [static func beep()](./beep%28%29.md)
   Plays the system beep.
-- [func pause() -> Bool](nssound/pause.md)
+- [func pause() -> Bool](./pause%28%29.md)
   Pauses audio playback.
-- [func play() -> Bool](nssound/play.md)
+- [func play() -> Bool](./play%28%29.md)
   Initiates audio playback.
-- [func resume() -> Bool](nssound/resume.md)
+- [func resume() -> Bool](./resume%28%29.md)
   Resumes audio playback.
-- [func stop() -> Bool](nssound/stop.md)
+- [func stop() -> Bool](./stop%28%29.md)
   Concludes audio playback.
 
 

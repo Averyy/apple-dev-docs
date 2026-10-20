@@ -1,7 +1,8 @@
 # CMPackingType.none
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Each frame contains only a single image, and isn’t frame-packed.
 
@@ -20,15 +21,20 @@ Each frame contains only a single image, and isn’t frame-packed.
 case none
 ```
 
+```c
+kCMPackingType_None
+```
+
 #### Discussion
 
 This is the default frame-packing type for 3D video.
 
 ## See Also
 
-- [CMPackingType.sideBySide](cmpackingtype/sidebyside.md)
+### Frame Arrangement
+- [CMPackingType.sideBySide](./sidebyside.md)
   The video contains packed frames that have a left eye image on the left and right eye image on the right.
-- [CMPackingType.overUnder](cmpackingtype/overunder.md)
+- [CMPackingType.overUnder](./overunder.md)
   The video contains packed frames that have a left eye image on the top and right eye image on the bottom.
 
 

@@ -1,7 +1,8 @@
 # init(utf16Offset:in:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new index at the specified UTF-16 code unit offset
 

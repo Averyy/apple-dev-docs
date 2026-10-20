@@ -1,7 +1,8 @@
 # genres
 
 **Framework**: ManagedAppDistribution  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app’s localized genres.
 
@@ -20,7 +21,8 @@ let genres: [String]
 
 ## See Also
 
-- [let contentRating: String?](managedapp/contentrating.md)
+### Obtaining rating information
+- [let contentRating: String?](./contentrating.md)
   The app’s content age rating.
 
 

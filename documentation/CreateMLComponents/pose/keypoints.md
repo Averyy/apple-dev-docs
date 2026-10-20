@@ -1,7 +1,8 @@
 # keypoints
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of all keypoints in the pose
 

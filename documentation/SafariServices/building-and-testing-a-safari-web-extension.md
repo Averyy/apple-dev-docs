@@ -1,6 +1,8 @@
 # Building and testing a Safari web extension
 
-**Framework**: Safari Services
+**Framework**: Safari Services  
+**Role**: Sample Code  
+**Download**: [BuildingAndTestingASafariWebExtension.zip](https://docs-assets.developer.apple.com/published/d74fe4c56ae7/BuildingAndTestingASafariWebExtension.zip)
 
 Get started with Safari web extensions by creating one from the ground up, using any code editor.
 
@@ -14,9 +16,9 @@ Get started with Safari web extensions by creating one from the ground up, using
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC26 session 216: [`Create web extensions for Safari`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2026/216).
+> **Note**: This sample code project is associated with WWDC26 session 216: [Create web extensions for Safari](https://developer.apple.com/videos/play/wwdc2026/216).
 
-##### Configure the Sample Code Project Without Xcode
+##### Configure the sample code project without Xcode
 
 1. In Safari, choose Safari > Settings.
 2. Click the Advanced tab and select the “Show features for web developers” checkbox.
@@ -24,7 +26,7 @@ Get started with Safari web extensions by creating one from the ground up, using
 4. Click the Add Temporary Extension button.
 5. Browse to the sample code project’s `Resources` folder and click Select.
 
-##### Configure the Sample Code Project with Xcode
+##### Configure the sample code project with Xcode
 
 1. Perform steps 1–3 from “Configure the sample code project without Xcode” above.
 2. Select the “Allow unsigned extensions” checkbox.
@@ -35,11 +37,12 @@ Get started with Safari web extensions by creating one from the ground up, using
 
 ## See Also
 
-- [Creating a Safari web extension](creating-a-safari-web-extension.md)
+### New extensions
+- [Creating a Safari web extension](./creating-a-safari-web-extension.md)
   Build a Safari web extension in Xcode.
-- [Modernizing Safari Web Extensions](modernizing-safari-web-extensions.md)
+- [Modernizing Safari Web Extensions](./modernizing-safari-web-extensions.md)
   Learn about enhancements to Safari Web Extensions.
-- [Developing a Safari Web Extension](developing-a-safari-web-extension.md)
+- [Developing a Safari Web Extension](./developing-a-safari-web-extension.md)
   Customize and enhance web pages by building a Safari web extension.
 
 

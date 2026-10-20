@@ -1,7 +1,8 @@
 # NSUserActivity.TypedPayloadError.encodingError
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An encoding error that indicates that the content failed to encode into a valid dictionary.
 
@@ -22,11 +23,12 @@ case encodingError
 
 #### Discussion
 
-The [`setTypedPayload(_:)`](nsuseractivity/settypedpayload(_:).md) method throws this error.
+The [`setTypedPayload(_:)`](../settypedpayload%28_%29.md) method throws this error.
 
 ## See Also
 
-- [NSUserActivity.TypedPayloadError.invalidContent](nsuseractivity/typedpayloaderror/invalidcontent.md)
+### Typed payload errors
+- [NSUserActivity.TypedPayloadError.invalidContent](./invalidcontent.md)
   A decoding error that indicates that the user info dictionary is empty or invalid.
 
 

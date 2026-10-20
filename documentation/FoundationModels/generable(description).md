@@ -1,7 +1,8 @@
 # Generable(description:)
 
 **Framework**: Foundation Models  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
 - iOS 26.0+
@@ -20,24 +21,25 @@
 
 ## Mentions
 
-- [Generating Swift data structures with guided generation](generating-swift-data-structures-with-guided-generation.md)
+- [Generating Swift data structures with guided generation](./generating-swift-data-structures-with-guided-generation.md)
 
 ## See Also
 
-- [Generating Swift data structures with guided generation](generating-swift-data-structures-with-guided-generation.md)
+### Structured output
+- [Generating Swift data structures with guided generation](./generating-swift-data-structures-with-guided-generation.md)
   Create robust apps by describing output you want programmatically.
-- [macro Guide(description: String)](guide(description:).md)
-- [protocol Generable](generable.md)
+- [macro Guide(description: String)](./guide%28description%29.md)
+- [protocol Generable](./generable.md)
   A type that the model uses when responding to prompts.
-- [struct GenerationSchema](generationschema.md)
+- [struct GenerationSchema](./generationschema.md)
   A type that describes the properties of an object and any guides on their values.
-- [struct DynamicGenerationSchema](dynamicgenerationschema.md)
+- [struct DynamicGenerationSchema](./dynamicgenerationschema.md)
   The dynamic counterpart to the generation schema type that you use to construct schemas at runtime.
-- [struct GeneratedContent](generatedcontent.md)
+- [struct GeneratedContent](./generatedcontent.md)
   A type that represents structured, generated content.
-- [protocol ConvertibleToGeneratedContent](convertibletogeneratedcontent.md)
+- [protocol ConvertibleToGeneratedContent](./convertibletogeneratedcontent.md)
   A type that can be converted to generated content.
-- [protocol ConvertibleFromGeneratedContent](convertiblefromgeneratedcontent.md)
+- [protocol ConvertibleFromGeneratedContent](./convertiblefromgeneratedcontent.md)
   A type that can be initialized from generated content.
 
 

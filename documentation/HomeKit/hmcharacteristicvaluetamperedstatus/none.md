@@ -1,7 +1,8 @@
 # HMCharacteristicValueTamperedStatus.none
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The accessory has not been tampered with.
 
@@ -19,9 +20,14 @@ The accessory has not been tampered with.
 case none
 ```
 
+```c
+HMCharacteristicValueTamperedStatusNone
+```
+
 ## See Also
 
-- [HMCharacteristicValueTamperedStatus.tampered](hmcharacteristicvaluetamperedstatus/tampered.md)
+### Tampered Status
+- [HMCharacteristicValueTamperedStatus.tampered](./tampered.md)
   The accessory has been tampered with.
 
 

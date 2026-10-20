@@ -1,7 +1,8 @@
 # hitTest(_:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the farthest descendant of the receiver in the layer hierarchy (including itself) that contains the specified point.
 
@@ -19,6 +20,10 @@ Returns the farthest descendant of the receiver in the layer hierarchy (includin
 func hitTest(_ p: CGPoint) -> CALayer?
 ```
 
+```objc
+- (CALayer *) hitTest:(CGPoint) p;
+```
+
 #### Return Value
 
 The layer that contains `thePoint` or `nil` if the point lies outside the receiver’s bounds rectangle.
@@ -29,7 +34,8 @@ The layer that contains `thePoint` or `nil` if the point lies outside the receiv
 
 ## See Also
 
-- [func contains(CGPoint) -> Bool](calayer/contains(_:).md)
+### Hit testing
+- [func contains(CGPoint) -> Bool](./contains%28_%29.md)
   Returns whether the receiver contains a specified point.
 
 

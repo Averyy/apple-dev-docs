@@ -1,7 +1,8 @@
 # constraint(equalToSystemSpacingBelow:multiplier:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a constraint that defines the specific distance at which the current anchor is positioned below the specified anchor.
 
@@ -18,9 +19,13 @@ Returns a constraint that defines the specific distance at which the current anc
 func constraint(equalToSystemSpacingBelow anchor: NSLayoutYAxisAnchor, multiplier: CGFloat) -> NSLayoutConstraint
 ```
 
+```objc
+- (NSLayoutConstraint *) constraintEqualToSystemSpacingBelowAnchor:(NSLayoutYAxisAnchor *) anchor multiplier:(CGFloat) multiplier;
+```
+
 #### Return Value
 
-An [`NSLayoutConstraint`](nslayoutconstraint.md) object that imposes a specific distance between the current anchor and the object in the `anchor` parameter.
+An [`NSLayoutConstraint`](../nslayoutconstraint.md) object that imposes a specific distance between the current anchor and the object in the `anchor` parameter.
 
 #### Discussion
 
@@ -33,11 +38,12 @@ The constraint causes the current anchor to be positioned below the object in th
 
 ## See Also
 
-- [func constraint(greaterThanOrEqualToSystemSpacingBelow: NSLayoutYAxisAnchor, multiplier: CGFloat) -> NSLayoutConstraint](nslayoutyaxisanchor/constraint(greaterthanorequaltosystemspacingbelow:multiplier:).md)
+### Building system spacing constraints
+- [func constraint(greaterThanOrEqualToSystemSpacingBelow: NSLayoutYAxisAnchor, multiplier: CGFloat) -> NSLayoutConstraint](./constraint%28greaterthanorequaltosystemspacingbelow,multiplier%29.md)
   Returns a constraint that defines the minimum distance by which the current anchor is positioned below the specified anchor.
-- [func constraint(lessThanOrEqualToSystemSpacingBelow: NSLayoutYAxisAnchor, multiplier: CGFloat) -> NSLayoutConstraint](nslayoutyaxisanchor/constraint(lessthanorequaltosystemspacingbelow:multiplier:).md)
+- [func constraint(lessThanOrEqualToSystemSpacingBelow: NSLayoutYAxisAnchor, multiplier: CGFloat) -> NSLayoutConstraint](./constraint%28lessthanorequaltosystemspacingbelow,multiplier%29.md)
   Returns a constraint that defines the maximum distance by which the current anchor is positioned below the specified anchor.
-- [Creating self-sizing table view cells](creating-self-sizing-table-view-cells.md)
+- [Creating self-sizing table view cells](../creating-self-sizing-table-view-cells.md)
   Create table view cells that support Dynamic Type and use system spacing constraints to adjust the spacing surrounding text labels.
 
 

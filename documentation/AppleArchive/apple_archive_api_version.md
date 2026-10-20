@@ -1,23 +1,28 @@
 # APPLE_ARCHIVE_API_VERSION
 
 **Framework**: Apple Archive  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The version of the framework at compile time.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var APPLE_ARCHIVE_API_VERSION: Int32 { get }
+```
+
+```c
+#define APPLE_ARCHIVE_API_VERSION
 ```
 
 

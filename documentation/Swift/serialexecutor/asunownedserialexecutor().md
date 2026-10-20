@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Convert this executor value to the optimized form of borrowed executor references.
@@ -20,6 +21,12 @@ Convert this executor value to the optimized form of borrowed executor reference
 ```swift
 func asUnownedSerialExecutor() -> UnownedSerialExecutor
 ```
+
+## Default Implementations
+
+### SerialExecutor Implementations
+- [func asUnownedSerialExecutor() -> UnownedSerialExecutor](./asunownedserialexecutor%28%29-1hjmn.md)
+  Convert this executor value to the optimized form of borrowed executor references.
 
 
 ---

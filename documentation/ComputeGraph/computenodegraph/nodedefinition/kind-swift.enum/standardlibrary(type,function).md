@@ -1,7 +1,8 @@
 # ComputeNodeGraph.NodeDefinition.Kind.standardLibrary(type:function:)
 
 **Framework**: Compute Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A call to a standard library function with the specified data type.
 
@@ -12,7 +13,7 @@ A call to a standard library function with the specified data type.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

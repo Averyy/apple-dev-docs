@@ -1,7 +1,8 @@
 # UIContextMenuInteraction.appearance
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the appearance of the menu.
 
@@ -18,31 +19,36 @@ Constants that describe the appearance of the menu.
 enum appearance
 ```
 
+```c
+enum UIContextMenuInteractionAppearance : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIContextMenuInteraction.appearance.unknown](uicontextmenuinteraction/appearance/unknown.md)
+- [UIContextMenuInteraction.appearance.unknown](./appearance/unknown.md)
   No menu appearance.
-- [UIContextMenuInteraction.appearance.rich](uicontextmenuinteraction/appearance/rich.md)
+- [UIContextMenuInteraction.appearance.rich](./appearance/rich.md)
   A modal menu with an optional preview.
-- [UIContextMenuInteraction.appearance.compact](uicontextmenuinteraction/appearance/compact.md)
+- [UIContextMenuInteraction.appearance.compact](./appearance/compact.md)
   A nonmodal, compact menu with no preview.
 ### Initializers
-- [init?(rawValue: Int)](uicontextmenuinteraction/appearance/init(rawvalue:).md)
+- [init?(rawValue: Int)](./appearance/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var menuAppearance: UIContextMenuInteraction.appearance](uicontextmenuinteraction/menuappearance.md)
+### Getting the menu appearance
+- [var menuAppearance: UIContextMenuInteraction.appearance](./menuappearance.md)
   The appearance of the context menu.
 
 

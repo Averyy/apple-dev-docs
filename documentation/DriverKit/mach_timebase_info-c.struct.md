@@ -1,17 +1,18 @@
 # mach_timebase_info
 
 **Framework**: DriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 struct mach_timebase_info;
 ```
 
@@ -22,26 +23,27 @@ In general prefer to use the <time.h> API clock_gettime_nsec_np(3), which deals 
 ## Topics
 
 ### Instance Properties
-- [denom](mach_timebase_info-c.struct/denom.md)
-- [numer](mach_timebase_info-c.struct/numer.md)
+- [denom](./mach_timebase_info-c.struct/denom.md)
+- [numer](./mach_timebase_info-c.struct/numer.md)
 
 ## See Also
 
-- [IODMACommandSpecification](iodmacommandspecification.md)
-- [IOHistogramReportValues](iohistogramreportvalues.md)
-- [IOHistogramSegmentConfig](iohistogramsegmentconfig.md)
-- [IONormDistReportValues](ionormdistreportvalues.md)
-- [IORPCMessageErrorReturnContent](iorpcmessageerrorreturncontent.md)
-- [IOReportChannel](ioreportchannel.md)
-- [IOReportChannelList](ioreportchannellist.md)
-- [IOReportChannelType](ioreportchanneltype.md)
-- [IOReportElement](ioreportelement.md)
-- [IOReportElementValues](ioreportelementvalues.md)
-- [IOReportInterest](ioreportinterest.md)
-- [IOReportInterestList](ioreportinterestlist.md)
-- [IOSimpleArrayReportValues](iosimplearrayreportvalues.md)
-- [IOSimpleReportValues](iosimplereportvalues.md)
-- [IOStateReportValues](iostatereportvalues.md)
+### Structures
+- [IODMACommandSpecification](./iodmacommandspecification.md)
+- [IOHistogramReportValues](./iohistogramreportvalues.md)
+- [IOHistogramSegmentConfig](./iohistogramsegmentconfig.md)
+- [IONormDistReportValues](./ionormdistreportvalues.md)
+- [IORPCMessageErrorReturnContent](./iorpcmessageerrorreturncontent.md)
+- [IOReportChannel](./ioreportchannel.md)
+- [IOReportChannelList](./ioreportchannellist.md)
+- [IOReportChannelType](./ioreportchanneltype.md)
+- [IOReportElement](./ioreportelement.md)
+- [IOReportElementValues](./ioreportelementvalues.md)
+- [IOReportInterest](./ioreportinterest.md)
+- [IOReportInterestList](./ioreportinterestlist.md)
+- [IOSimpleArrayReportValues](./iosimplearrayreportvalues.md)
+- [IOSimpleReportValues](./iosimplereportvalues.md)
+- [IOStateReportValues](./iostatereportvalues.md)
 
 
 ---

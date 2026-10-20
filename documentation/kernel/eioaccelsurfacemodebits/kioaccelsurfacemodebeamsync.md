@@ -1,14 +1,15 @@
 # kIOAccelSurfaceModeBeamSync
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.1+
 
 ## Declaration
 
-```swift
+```c
 kIOAccelSurfaceModeBeamSync = 0x00008000
 ```
 

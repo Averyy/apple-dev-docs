@@ -1,7 +1,8 @@
 # hevcTemporalLevelInfo
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,18 +21,19 @@ static let hevcTemporalLevelInfo: CMSampleBuffer.PerSampleAttachmentsDictionary.
 
 ## See Also
 
-- [static let audioIndependentSampleDecoderRefreshCount: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](cmsamplebuffer/persampleattachmentsdictionary/key/audioindependentsampledecoderrefreshcount.md)
-- [static let dependsOnOthers: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](cmsamplebuffer/persampleattachmentsdictionary/key/dependsonothers.md)
-- [static let displayImmediately: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](cmsamplebuffer/persampleattachmentsdictionary/key/displayimmediately.md)
-- [static let doNotDisplay: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](cmsamplebuffer/persampleattachmentsdictionary/key/donotdisplay.md)
-- [static let earlierDisplayTimesAllowed: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](cmsamplebuffer/persampleattachmentsdictionary/key/earlierdisplaytimesallowed.md)
-- [static let hasRedundantCoding: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](cmsamplebuffer/persampleattachmentsdictionary/key/hasredundantcoding.md)
-- [static let hevcStepwiseTemporalSubLayerAccess: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](cmsamplebuffer/persampleattachmentsdictionary/key/hevcstepwisetemporalsublayeraccess.md)
-- [static let hevcSyncSampleNALUnitType: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](cmsamplebuffer/persampleattachmentsdictionary/key/hevcsyncsamplenalunittype.md)
-- [static let hevcTemporalSubLayerAccess: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](cmsamplebuffer/persampleattachmentsdictionary/key/hevctemporalsublayeraccess.md)
-- [static let isDependedOnByOthers: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](cmsamplebuffer/persampleattachmentsdictionary/key/isdependedonbyothers.md)
-- [static let notSync: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](cmsamplebuffer/persampleattachmentsdictionary/key/notsync.md)
-- [static let partialSync: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](cmsamplebuffer/persampleattachmentsdictionary/key/partialsync.md)
+### Keys
+- [static let audioIndependentSampleDecoderRefreshCount: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](./audioindependentsampledecoderrefreshcount.md)
+- [static let dependsOnOthers: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](./dependsonothers.md)
+- [static let displayImmediately: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](./displayimmediately.md)
+- [static let doNotDisplay: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](./donotdisplay.md)
+- [static let earlierDisplayTimesAllowed: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](./earlierdisplaytimesallowed.md)
+- [static let hasRedundantCoding: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](./hasredundantcoding.md)
+- [static let hevcStepwiseTemporalSubLayerAccess: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](./hevcstepwisetemporalsublayeraccess.md)
+- [static let hevcSyncSampleNALUnitType: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](./hevcsyncsamplenalunittype.md)
+- [static let hevcTemporalSubLayerAccess: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](./hevctemporalsublayeraccess.md)
+- [static let isDependedOnByOthers: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](./isdependedonbyothers.md)
+- [static let notSync: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](./notsync.md)
+- [static let partialSync: CMSampleBuffer.PerSampleAttachmentsDictionary.Key](./partialsync.md)
 
 
 ---

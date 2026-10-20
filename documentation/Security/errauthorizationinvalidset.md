@@ -1,7 +1,8 @@
 # errAuthorizationInvalidSet
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The set parameter is invalid.
 
@@ -13,6 +14,10 @@ The set parameter is invalid.
 
 ```swift
 var errAuthorizationInvalidSet: OSStatus { get }
+```
+
+```c
+errAuthorizationInvalidSet
 ```
 
 

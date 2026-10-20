@@ -1,7 +1,8 @@
 # mail
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Assistant schema conformance for app intents that offer email functionality.
 
@@ -19,6 +20,8 @@ Assistant schema conformance for app intents that offer email functionality.
 ```swift
 static var mail: some AssistantSchemas.MailIntent { get }
 ```
+
+Available when `Self` is `AssistantSchemas.IntentSchema`.
 
 
 ---

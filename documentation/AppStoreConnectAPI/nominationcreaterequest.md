@@ -1,7 +1,8 @@
 # NominationCreateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a featuring nomination.
 
@@ -10,14 +11,14 @@ The request body you use to create a featuring nomination.
 
 ## Declaration
 
-```swift
+```
 object NominationCreateRequest
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object NominationCreateRequest.Data](nominationcreaterequest/data-data.dictionary.md)
+- [object NominationCreateRequest.Data](./nominationcreaterequest/data-data.dictionary.md)
 
 ## Properties
 
@@ -25,13 +26,14 @@ object NominationCreateRequest
 
 ## See Also
 
-- [object Nomination](nomination.md)
+### Objects
+- [object Nomination](./nomination.md)
   A developer recommendation submitted to Apple proposing an app or in-app event for App Store editorial featuring.
-- [object NominationUpdateRequest](nominationupdaterequest.md)
+- [object NominationUpdateRequest](./nominationupdaterequest.md)
   The request body you use to update a featuring nomination.
-- [object NominationResponse](nominationresponse.md)
+- [object NominationResponse](./nominationresponse.md)
   A response containing a single App Store nomination submission.
-- [object NominationsResponse](nominationsresponse.md)
+- [object NominationsResponse](./nominationsresponse.md)
   A response containing a list of app nominations submitted for App Store editorial featuring consideration.
 
 

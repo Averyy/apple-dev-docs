@@ -1,7 +1,8 @@
 # MTLAccelerationStructureInstanceDescriptorType
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options for specifying different kinds of instance types.
 
@@ -19,37 +20,42 @@ Options for specifying different kinds of instance types.
 enum MTLAccelerationStructureInstanceDescriptorType
 ```
 
+```c
+enum MTLAccelerationStructureInstanceDescriptorType : NSUInteger;
+```
+
 ## Topics
 
 ### Specifying the instance descriptor type
-- [MTLAccelerationStructureInstanceDescriptorType.default](mtlaccelerationstructureinstancedescriptortype/default.md)
+- [MTLAccelerationStructureInstanceDescriptorType.default](./mtlaccelerationstructureinstancedescriptortype/default.md)
   An option specifying that the instance uses the default characteristics.
-- [MTLAccelerationStructureInstanceDescriptorType.userID](mtlaccelerationstructureinstancedescriptortype/userid.md)
+- [MTLAccelerationStructureInstanceDescriptorType.userID](./mtlaccelerationstructureinstancedescriptortype/userid.md)
   An option specifying that the instance contains a user identifier.
-- [MTLAccelerationStructureInstanceDescriptorType.motion](mtlaccelerationstructureinstancedescriptortype/motion.md)
+- [MTLAccelerationStructureInstanceDescriptorType.motion](./mtlaccelerationstructureinstancedescriptortype/motion.md)
   An option specifying that the instance contains motion data.
-- [MTLAccelerationStructureInstanceDescriptorType.indirect](mtlaccelerationstructureinstancedescriptortype/indirect.md)
+- [MTLAccelerationStructureInstanceDescriptorType.indirect](./mtlaccelerationstructureinstancedescriptortype/indirect.md)
   An option that enables an instance descriptor memory layout the GPU can populate.
-- [MTLAccelerationStructureInstanceDescriptorType.indirectMotion](mtlaccelerationstructureinstancedescriptortype/indirectmotion.md)
+- [MTLAccelerationStructureInstanceDescriptorType.indirectMotion](./mtlaccelerationstructureinstancedescriptortype/indirectmotion.md)
   An option specifying that the instance contains motion data, and enables using an instance descriptor memory layout that the GPU can populate.
 ### Initializers
-- [init?(rawValue: UInt)](mtlaccelerationstructureinstancedescriptortype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mtlaccelerationstructureinstancedescriptortype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var instanceDescriptorType: MTLAccelerationStructureInstanceDescriptorType](mtlinstanceaccelerationstructuredescriptor/instancedescriptortype.md)
+### Specifying the instance structures
+- [var instanceDescriptorType: MTLAccelerationStructureInstanceDescriptorType](./mtlinstanceaccelerationstructuredescriptor/instancedescriptortype.md)
   The format of the instance data in the descriptor buffer.
-- [var instancedAccelerationStructures: [any MTLAccelerationStructure]?](mtlinstanceaccelerationstructuredescriptor/instancedaccelerationstructures.md)
+- [var instancedAccelerationStructures: [any MTLAccelerationStructure]?](./mtlinstanceaccelerationstructuredescriptor/instancedaccelerationstructures.md)
   The bottom-level acceleration structures that instances use in the instance acceleration structure .
 
 

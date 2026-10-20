@@ -1,7 +1,8 @@
 # artwork(forMediaFile:)
 
 **Framework**: iTunes Library  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the artwork from a media file that may or may not be in the iTunes library.
 
@@ -15,9 +16,13 @@ Retrieves the artwork from a media file that may or may not be in the iTunes lib
 func artwork(forMediaFile mediaFileURL: URL) -> ITLibArtwork?
 ```
 
+```objc
+- (ITLibArtwork *) artworkForMediaFile:(NSURL *) mediaFileURL;
+```
+
 #### Return Value
 
-An [`ITLibArtwork`](itlibartwork.md) instance representing the media file artwork, or `nil` if the media file doesn’t contain any artwork or the system can’t extract the artwork.
+An [`ITLibArtwork`](../itlibartwork.md) instance representing the media file artwork, or `nil` if the media file doesn’t contain any artwork or the system can’t extract the artwork.
 
 ## Parameters
 

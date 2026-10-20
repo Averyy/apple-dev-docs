@@ -1,7 +1,8 @@
 # colorPrimaries
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The color primaries gamut for the image buffer.
 

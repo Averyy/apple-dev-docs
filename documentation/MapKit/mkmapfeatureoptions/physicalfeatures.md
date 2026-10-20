@@ -1,7 +1,8 @@
 # physicalFeatures
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The option that represents physical map features such as mountain ranges, rivers, and ocean basins.
 
@@ -17,11 +18,16 @@ The option that represents physical map features such as mountain ranges, rivers
 static var physicalFeatures: MKMapFeatureOptions { get }
 ```
 
+```c
+MKMapFeatureOptionPhysicalFeatures
+```
+
 ## See Also
 
-- [static var pointsOfInterest: MKMapFeatureOptions](mkmapfeatureoptions/pointsofinterest.md)
+### Selecting interactive map features
+- [static var pointsOfInterest: MKMapFeatureOptions](./pointsofinterest.md)
   The option that represents points of interest such as museums, cafes, parks, or schools.
-- [static var territories: MKMapFeatureOptions](mkmapfeatureoptions/territories.md)
+- [static var territories: MKMapFeatureOptions](./territories.md)
   The option that represents territorial boundaries such as a national border, a state boundary, or a neighborhood.
 
 

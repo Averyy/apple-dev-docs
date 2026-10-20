@@ -1,7 +1,8 @@
 # assertNoFailure(_:file:line:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Raises a fatal error when its upstream publisher fails, and otherwise republishes all received input.
 
@@ -59,11 +60,12 @@ subject.send(completion: Subscribers.Completion<Error>.failure(SubjectError.gene
 
 ## See Also
 
-- [func `catch`<P>((Self.Failure) -> P) -> Publishers.Catch<Self, P>](publisher/catch(_:).md)
+### Handling errors
+- [func `catch`<P>((Self.Failure) -> P) -> Publishers.Catch<Self, P>](./catch%28_%29.md)
   Handles errors from an upstream publisher by replacing it with another publisher.
-- [func tryCatch<P>((Self.Failure) throws -> P) -> Publishers.TryCatch<Self, P>](publisher/trycatch(_:).md)
+- [func tryCatch<P>((Self.Failure) throws -> P) -> Publishers.TryCatch<Self, P>](./trycatch%28_%29.md)
   Handles errors from an upstream publisher by either replacing it with another publisher or throwing a new error.
-- [func retry(Int) -> Publishers.Retry<Self>](publisher/retry(_:).md)
+- [func retry(Int) -> Publishers.Retry<Self>](./retry%28_%29.md)
   Attempts to recreate a failed subscription with the upstream publisher up to the number of times you specify.
 
 

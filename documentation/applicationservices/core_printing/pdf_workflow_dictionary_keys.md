@@ -1,14 +1,15 @@
 # PDF Workflow Dictionary Keys
 
-**Framework**: Application Services
+**Framework**: Application Services  
+**Role**: API Collection
 
 Constants that specify the keys in a PDF workflow dictionary.
 
 ## Topics
 
 ### Constants
-- [var kPDFWorkflowDisplayNameKey: String](kpdfworkflowdisplaynamekey.md)
-- [var kPDFWorkflowItemsKey: String](kpdfworkflowitemskey.md)
+- [var kPDFWorkflowDisplayNameKey: String](../kpdfworkflowdisplaynamekey.md)
+- [var kPDFWorkflowItemsKey: String](../kpdfworkflowitemskey.md)
 
 
 ---

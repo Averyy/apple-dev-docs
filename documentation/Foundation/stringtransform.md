@@ -1,7 +1,8 @@
 # StringTransform
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants representing an ICU string transform.
 
@@ -20,64 +21,69 @@ Constants representing an ICU string transform.
 struct StringTransform
 ```
 
+```c
+typedef NSString * NSStringTransform;
+```
+
 #### Discussion
 
-These constants are used by the [`NSString`](nsstring.md) method [`applyingTransform(_:reverse:)`](nsstring/applyingtransform(_:reverse:).md).
+These constants are used by the [`NSString`](./nsstring.md) method [`applyingTransform(_:reverse:)`](./nsstring/applyingtransform%28_,reverse%29.md).
 
 ## Topics
 
 ### Transliteration
-- [static let toLatin: StringTransform](stringtransform/tolatin.md)
+- [static let toLatin: StringTransform](./stringtransform/tolatin.md)
   A constant containing the transliteration of a string from any script to Latin script.
-- [static let latinToArabic: StringTransform](stringtransform/latintoarabic.md)
+- [static let latinToArabic: StringTransform](./stringtransform/latintoarabic.md)
   A constant containing the transliteration of a string from Latin script to Arabic script.
-- [static let latinToCyrillic: StringTransform](stringtransform/latintocyrillic.md)
+- [static let latinToCyrillic: StringTransform](./stringtransform/latintocyrillic.md)
   A constant containing the transliteration of a string from Latin script to Cyrillic script.
-- [static let latinToGreek: StringTransform](stringtransform/latintogreek.md)
+- [static let latinToGreek: StringTransform](./stringtransform/latintogreek.md)
   A constant containing the transliteration of a string from Latin script to Greek script.
-- [static let latinToHangul: StringTransform](stringtransform/latintohangul.md)
+- [static let latinToHangul: StringTransform](./stringtransform/latintohangul.md)
   A constant containing the transliteration of a string from Latin script to Hangul script.
-- [static let latinToHebrew: StringTransform](stringtransform/latintohebrew.md)
+- [static let latinToHebrew: StringTransform](./stringtransform/latintohebrew.md)
   A constant containing the transliteration of a string from Latin script to Hebrew script.
-- [static let latinToHiragana: StringTransform](stringtransform/latintohiragana.md)
+- [static let latinToHiragana: StringTransform](./stringtransform/latintohiragana.md)
   A constant containing the transliteration of a string from Latin script to Hiragana script.
-- [static let latinToKatakana: StringTransform](stringtransform/latintokatakana.md)
+- [static let latinToKatakana: StringTransform](./stringtransform/latintokatakana.md)
   A constant containing the transliteration of a string from Latin script to Katakana script.
-- [static let latinToThai: StringTransform](stringtransform/latintothai.md)
+- [static let latinToThai: StringTransform](./stringtransform/latintothai.md)
   A constant containing the transliteration of a string from Latin script to Thai script.
-- [static let hiraganaToKatakana: StringTransform](stringtransform/hiraganatokatakana.md)
+- [static let hiraganaToKatakana: StringTransform](./stringtransform/hiraganatokatakana.md)
   A constant containing the transliteration of a string from Hiragana script to Katakana script.
-- [static let mandarinToLatin: StringTransform](stringtransform/mandarintolatin.md)
+- [static let mandarinToLatin: StringTransform](./stringtransform/mandarintolatin.md)
   A constant containing the transliteration of a string from Han script to Latin.
 ### Diacritic and Combining Mark Removal
-- [static let stripDiacritics: StringTransform](stringtransform/stripdiacritics.md)
+- [static let stripDiacritics: StringTransform](./stringtransform/stripdiacritics.md)
   A constant containing the transformation of a string by removing diacritics.
-- [static let stripCombiningMarks: StringTransform](stringtransform/stripcombiningmarks.md)
+- [static let stripCombiningMarks: StringTransform](./stringtransform/stripcombiningmarks.md)
   A constant containing the transformation of a string by removing combining marks.
 ### Halfwidth and Fullwidth Form Conversion
-- [static let fullwidthToHalfwidth: StringTransform](stringtransform/fullwidthtohalfwidth.md)
+- [static let fullwidthToHalfwidth: StringTransform](./stringtransform/fullwidthtohalfwidth.md)
   A constant containing the transformation of a string from full-width CJK characters to half-width forms.
 ### Character Representation
-- [static let toUnicodeName: StringTransform](stringtransform/tounicodename.md)
+- [static let toUnicodeName: StringTransform](./stringtransform/tounicodename.md)
   An identifier for a transform that converts characters to Unicode names.
-- [static let toXMLHex: StringTransform](stringtransform/toxmlhex.md)
+- [static let toXMLHex: StringTransform](./stringtransform/toxmlhex.md)
   A constant containing the transformation of a string from characters to XML hexadecimal escape codes.
 ### Initializers
-- [init(String)](stringtransform/init(_:).md)
-- [init(rawValue: String)](stringtransform/init(rawvalue:).md)
+- [init(String)](./stringtransform/init%28_%29.md)
+- [init(rawValue: String)](./stringtransform/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func applyingTransform(StringTransform, reverse: Bool) -> String?](nsstring/applyingtransform(_:reverse:).md)
+### Transforming Strings
+- [func applyingTransform(StringTransform, reverse: Bool) -> String?](./nsstring/applyingtransform%28_,reverse%29.md)
   Returns a new string by applying a specified transform to the string.
 
 

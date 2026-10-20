@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the entity scaled by the specified values.

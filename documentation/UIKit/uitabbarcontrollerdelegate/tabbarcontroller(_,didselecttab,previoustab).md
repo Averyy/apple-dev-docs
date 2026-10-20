@@ -1,7 +1,8 @@
 # tabBarController(_:didSelectTab:previousTab:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the user selected the specified @c selectedTab in the tab bar controller.
 
@@ -16,6 +17,10 @@ Tells the delegate that the user selected the specified @c selectedTab in the ta
 
 ```swift
 optional func tabBarController(_ tabBarController: UITabBarController, didSelectTab selectedTab: UITab, previousTab: UITab?)
+```
+
+```objc
+- (void) tabBarController:(UITabBarController *) tabBarController didSelectTab:(UITab *) selectedTab previousTab:(UITab *) previousTab;
 ```
 
 #### Discussion

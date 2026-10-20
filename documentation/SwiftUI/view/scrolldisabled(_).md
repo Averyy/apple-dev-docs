@@ -1,7 +1,8 @@
 # scrollDisabled(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Disables or enables scrolling in scrollable views.
 
@@ -23,7 +24,7 @@ func scrollDisabled(_ disabled: Bool) -> some View
 
 #### Discussion
 
-Use this modifier to control whether a [`ScrollView`](scrollview.md) can scroll:
+Use this modifier to control whether a [`ScrollView`](../scrollview.md) can scroll:
 
 ```swift
 @State private var isScrollDisabled = false
@@ -52,7 +53,7 @@ SwiftUI passes the disabled property through the environment, which means you ca
  .scrollDisabled(true)
 ```
 
-You can also use this modifier to disable scrolling for other kinds of scrollable views, like a [`List`](list.md) or a [`TextEditor`](texteditor.md).
+You can also use this modifier to disable scrolling for other kinds of scrollable views, like a [`List`](../list.md) or a [`TextEditor`](../texteditor.md).
 
 ## Parameters
 
@@ -60,7 +61,8 @@ You can also use this modifier to disable scrolling for other kinds of scrollabl
 
 ## See Also
 
-- [var isScrollEnabled: Bool](environmentvalues/isscrollenabled.md)
+### Disabling scrolling
+- [var isScrollEnabled: Bool](../environmentvalues/isscrollenabled.md)
   A Boolean value that indicates whether any scroll views associated with this environment allow scrolling to occur.
 
 

@@ -1,23 +1,28 @@
 # CFDataGetBytes(_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Copies the byte contents of a CFData object to an external buffer.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFDataGetBytes(_ theData: CFData!, _ range: CFRange, _ buffer: UnsafeMutablePointer<UInt8>!)
+```
+
+```c
+extern void CFDataGetBytes(CFDataRef theData, CFRange range, UInt8 *buffer);
 ```
 
 ## Parameters
@@ -28,11 +33,12 @@ func CFDataGetBytes(_ theData: CFData!, _ range: CFRange, _ buffer: UnsafeMutabl
 
 ## See Also
 
-- [func CFDataGetBytePtr(CFData!) -> UnsafePointer<UInt8>!](cfdatagetbyteptr(_:).md)
+### Examining a CFData Object
+- [func CFDataGetBytePtr(CFData!) -> UnsafePointer<UInt8>!](./cfdatagetbyteptr%28_%29.md)
   Returns a read-only pointer to the bytes of a CFData object.
-- [func CFDataGetLength(CFData!) -> CFIndex](cfdatagetlength(_:).md)
+- [func CFDataGetLength(CFData!) -> CFIndex](./cfdatagetlength%28_%29.md)
   Returns the number of bytes contained by a CFData object.
-- [func CFDataFind(CFData!, CFData!, CFRange, CFDataSearchFlags) -> CFRange](cfdatafind(_:_:_:_:).md)
+- [func CFDataFind(CFData!, CFData!, CFRange, CFDataSearchFlags) -> CFRange](./cfdatafind%28_,_,_,_%29.md)
   Finds and returns the range within a data object of the first occurrence of the given data, within a given range, subject to any given options.
 
 

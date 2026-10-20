@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [alphaStage](1645163-anonymous/alphastage.md)
-- [betaStage](1645163-anonymous/betastage.md)
-- [developStage](1645163-anonymous/developstage.md)
-- [finalStage](1645163-anonymous/finalstage.md)
+- [alphaStage](./api-1645163-anonymous/alphastage.md)
+- [betaStage](./api-1645163-anonymous/betastage.md)
+- [developStage](./api-1645163-anonymous/developstage.md)
+- [finalStage](./api-1645163-anonymous/finalstage.md)
 
 
 ---

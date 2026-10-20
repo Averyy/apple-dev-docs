@@ -1,7 +1,8 @@
 # VSAccountApplicationProvider
 
 **Framework**: Video Subscriber Account  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object to display app-specific providers in your app.
 
@@ -9,7 +10,7 @@ An object to display app-specific providers in your app.
 - iOS 14.2+
 - iPadOS 14.2+
 - Mac Catalyst 14.2+
-- macOS ?+
+- macOS
 - tvOS 14.2+
 - visionOS 1.0+
 
@@ -19,6 +20,10 @@ An object to display app-specific providers in your app.
 class VSAccountApplicationProvider
 ```
 
+```objc
+@interface VSAccountApplicationProvider : NSObject
+```
+
 #### Overview
 
 The `VSAccountApplicationProvider` object represents an app account provider to be added to the list of already available system TV providers in your app.
@@ -26,31 +31,32 @@ The `VSAccountApplicationProvider` object represents an app account provider to 
 ## Topics
 
 ### Creating an application provider
-- [init(localizedDisplayName: String, identifier: String)](vsaccountapplicationprovider/init(localizeddisplayname:identifier:).md)
+- [init(localizedDisplayName: String, identifier: String)](./vsaccountapplicationprovider/init%28localizeddisplayname,identifier%29.md)
   Returns an application provider using a given display name and identifier.
 ### Application provider details
-- [var identifier: String](vsaccountapplicationprovider/identifier.md)
+- [var identifier: String](./vsaccountapplicationprovider/identifier.md)
   A string that identifies a provider.
-- [var localizedDisplayName: String](vsaccountapplicationprovider/localizeddisplayname.md)
+- [var localizedDisplayName: String](./vsaccountapplicationprovider/localizeddisplayname.md)
   The display name of the provider as it will appear in the list of providers.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [struct VSAppleSubscription](vsapplesubscription-swift.struct.md)
+### TV app integration
+- [struct VSAppleSubscription](./vsapplesubscription-swift.struct.md)
   An Apple streaming service customer and their subscriptions.
-- [class VSSubscriptionRegistrationCenter](vssubscriptionregistrationcenter.md)
+- [class VSSubscriptionRegistrationCenter](./vssubscriptionregistrationcenter.md)
   An object that stores subscription information that the system provides to the Apple TV app.
 
 

@@ -1,7 +1,8 @@
 # ResubmissionRequest
 
 **Framework**: Account Data Transfer  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that describes a request to resubmit a recurring download request.
 
@@ -10,13 +11,13 @@ An object that describes a request to resubmit a recurring download request.
 
 ## Declaration
 
-```swift
+```
 object ResubmissionRequest
 ```
 
 #### Overview
 
-Use the `parentRequestId` and `requestId` returned by [`Submit request`](submit-request.md), or your most recent call to [`Resubmit request`](resubmit-request.md).
+Use the `parentRequestId` and `requestId` returned by [`Submit request`](./submit-request.md), or your most recent call to [`Resubmit request`](./resubmit-request.md).
 
 ## Properties
 
@@ -25,15 +26,16 @@ Use the `parentRequestId` and `requestId` returned by [`Submit request`](submit-
 
 ## See Also
 
-- [Submit request](submit-request.md)
+### Request creation
+- [Submit request](./submit-request.md)
   Starts preparing someone’s data for download.
-- [object JobSubmission](jobsubmission.md)
+- [object JobSubmission](./jobsubmission.md)
   An object that describes a submission that requests someone’s data.
-- [object CreatedJob](createdjob.md)
+- [object CreatedJob](./createdjob.md)
   An object that represents a newly created download request.
-- [Resubmit request](resubmit-request.md)
+- [Resubmit request](./resubmit-request.md)
   Enqueue the next instance of a recurring request.
-- [object ResubmissionResponse](resubmissionresponse.md)
+- [object ResubmissionResponse](./resubmissionresponse.md)
   An object that represents a resubmitted recurring download request.
 
 

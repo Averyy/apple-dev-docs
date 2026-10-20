@@ -1,7 +1,8 @@
 # paymentMode
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The offer’s payment mode.
 
@@ -22,11 +23,12 @@ let paymentMode: Product.SubscriptionOffer.PaymentMode
 
 ## See Also
 
-- [let displayPrice: String](product/subscriptionoffer/displayprice.md)
+### Getting price information
+- [let displayPrice: String](./displayprice.md)
   The localized string representation of the discounted price of the subscription offer.
-- [let price: Decimal](product/subscriptionoffer/price.md)
+- [let price: Decimal](./price.md)
   The decimal representation of the discounted price of the subscription offer.
-- [Product.SubscriptionOffer.PaymentMode](product/subscriptionoffer/paymentmode-swift.struct.md)
+- [Product.SubscriptionOffer.PaymentMode](./paymentmode-swift.struct.md)
   The payment modes for subscription offers that apply to a transaction.
 
 

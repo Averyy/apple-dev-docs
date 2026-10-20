@@ -1,7 +1,8 @@
 # MIDIEntityGetNumberOfSources(_:)
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the number of sources in an entity.
 
@@ -18,6 +19,10 @@ Returns the number of sources in an entity.
 func MIDIEntityGetNumberOfSources(_ entity: MIDIEntityRef) -> Int
 ```
 
+```c
+extern ItemCount MIDIEntityGetNumberOfSources(MIDIEntityRef entity);
+```
+
 #### Return Value
 
 The number of sources the entity contains, or 0 if an error occurred.
@@ -28,15 +33,16 @@ The number of sources the entity contains, or 0 if an error occurred.
 
 ## See Also
 
-- [func MIDIEntityGetDevice(MIDIEntityRef, UnsafeMutablePointer<MIDIDeviceRef>?) -> OSStatus](midientitygetdevice(_:_:).md)
+### Entity lookup
+- [func MIDIEntityGetDevice(MIDIEntityRef, UnsafeMutablePointer<MIDIDeviceRef>?) -> OSStatus](./midientitygetdevice%28_,_%29.md)
   Returns an entity’s device.
-- [func MIDIEntityGetSource(MIDIEntityRef, Int) -> MIDIEndpointRef](midientitygetsource(_:_:).md)
+- [func MIDIEntityGetSource(MIDIEntityRef, Int) -> MIDIEndpointRef](./midientitygetsource%28_,_%29.md)
   Returns one of an entity’s sources.
-- [func MIDIEntityGetNumberOfDestinations(MIDIEntityRef) -> Int](midientitygetnumberofdestinations(_:).md)
+- [func MIDIEntityGetNumberOfDestinations(MIDIEntityRef) -> Int](./midientitygetnumberofdestinations%28_%29.md)
   Returns the number of destinations in an entity.
-- [func MIDIEntityGetDestination(MIDIEntityRef, Int) -> MIDIEndpointRef](midientitygetdestination(_:_:).md)
+- [func MIDIEntityGetDestination(MIDIEntityRef, Int) -> MIDIEndpointRef](./midientitygetdestination%28_,_%29.md)
   Returns one of an entity’s destinations.
-- [typealias MIDIEntityRef](midientityref.md)
+- [typealias MIDIEntityRef](./midientityref.md)
   An entity that a device owns and that contains endpoints.
 
 

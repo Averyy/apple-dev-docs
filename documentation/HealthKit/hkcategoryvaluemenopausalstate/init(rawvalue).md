@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes information about menopausal state.
 

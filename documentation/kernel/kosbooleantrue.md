@@ -1,7 +1,8 @@
 # kOSBooleanTrue
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The OSBoolean constant for `true`.
 
@@ -10,7 +11,7 @@ The OSBoolean constant for `true`.
 
 ## Declaration
 
-```swift
+```c
 OSBoolean *const & kOSBooleanTrue;
 ```
 

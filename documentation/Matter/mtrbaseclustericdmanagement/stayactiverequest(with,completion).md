@@ -1,7 +1,8 @@
 # stayActiveRequest(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command StayActiveRequest
 
@@ -17,7 +18,15 @@ Command StayActiveRequest
 ## Declaration
 
 ```swift
+func stayActiveRequest(with params: MTRICDManagementClusterStayActiveRequestParams, completion: @escaping @Sendable (MTRICDManagementClusterStayActiveResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func stayActiveRequest(with params: MTRICDManagementClusterStayActiveRequestParams) async throws -> MTRICDManagementClusterStayActiveResponseParams
+```
+
+```objc
+- (void) stayActiveRequestWithParams:(MTRICDManagementClusterStayActiveRequestParams *) params completion:(void (^)(MTRICDManagementClusterStayActiveResponseParams *data, NSError *error)) completion;
 ```
 
 #### Discussion

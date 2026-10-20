@@ -1,7 +1,8 @@
 # photoCount
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The 1-based index of this photo capture relative to other results from the same capture request.
 
@@ -18,20 +19,25 @@ The 1-based index of this photo capture relative to other results from the same 
 var photoCount: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger photoCount;
+```
+
 ## Mentions
 
-- [Capturing a bracketed photo sequence](capturing-a-bracketed-photo-sequence.md)
-- [Tracking photo capture progress](tracking-photo-capture-progress.md)
+- [Capturing a bracketed photo sequence](../capturing-a-bracketed-photo-sequence.md)
+- [Tracking photo capture progress](../tracking-photo-capture-progress.md)
 
 #### Discussion
 
-The [`expectedPhotoCount`](avcaptureresolvedphotosettings/expectedphotocount.md) property of this capture result’s [`resolvedSettings`](avcapturephoto/resolvedsettings.md) object indicates the total number of images that will be returned for a given capture request. When your delegate’s [`photoOutput(_:didFinishProcessingPhoto:error:)`](avcapturephotocapturedelegate/photooutput(_:didfinishprocessingphoto:error:).md) method receives a photo whose [`photoCount`](avcapturephoto/photocount.md) value  matches the [`expectedPhotoCount`](avcaptureresolvedphotosettings/expectedphotocount.md) value, you know you’ve received the last one for the given capture request.
+The [`expectedPhotoCount`](../avcaptureresolvedphotosettings/expectedphotocount.md) property of this capture result’s [`resolvedSettings`](./resolvedsettings.md) object indicates the total number of images that will be returned for a given capture request. When your delegate’s [`photoOutput(_:didFinishProcessingPhoto:error:)`](../avcapturephotocapturedelegate/photooutput%28_,didfinishprocessingphoto,error%29.md) method receives a photo whose [`photoCount`](./photocount.md) value  matches the [`expectedPhotoCount`](../avcaptureresolvedphotosettings/expectedphotocount.md) value, you know you’ve received the last one for the given capture request.
 
 ## See Also
 
-- [var resolvedSettings: AVCaptureResolvedPhotoSettings](avcapturephoto/resolvedsettings.md)
+### Resolving photo capture requests
+- [var resolvedSettings: AVCaptureResolvedPhotoSettings](./resolvedsettings.md)
   The settings object that was used to request this photo capture.
-- [var timestamp: CMTime](avcapturephoto/timestamp.md)
+- [var timestamp: CMTime](./timestamp.md)
   The time at which the image was captured.
 
 

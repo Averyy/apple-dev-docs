@@ -1,7 +1,8 @@
 # MusicPlayer.PlaybackStatus.playing
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The music player is playing.
 

@@ -1,7 +1,8 @@
 # AVVideoCompositionRenderHint
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Information about upcoming composition requests, such as composition start time and end time.
 
@@ -19,33 +20,38 @@ Information about upcoming composition requests, such as composition start time 
 class AVVideoCompositionRenderHint
 ```
 
+```objc
+@interface AVVideoCompositionRenderHint : NSObject
+```
+
 ## Topics
 
 ### Managing composition timing
-- [var startCompositionTime: CMTime](avvideocompositionrenderhint/startcompositiontime.md)
+- [var startCompositionTime: CMTime](./avvideocompositionrenderhint/startcompositiontime.md)
   The start time of the upcoming composition requests.
-- [var endCompositionTime: CMTime](avvideocompositionrenderhint/endcompositiontime.md)
+- [var endCompositionTime: CMTime](./avvideocompositionrenderhint/endcompositiontime.md)
   The end time of the upcoming composition requests.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func anticipateRendering(using: AVVideoCompositionRenderHint)](avvideocompositing/anticipaterendering(using:).md)
+### Preparing to render frames
+- [func anticipateRendering(using: AVVideoCompositionRenderHint)](./avvideocompositing/anticipaterendering%28using%29.md)
   Informs a custom video compositor about upcoming rendering requests.
-- [func prerollForRendering(using: AVVideoCompositionRenderHint)](avvideocompositing/prerollforrendering(using:).md)
+- [func prerollForRendering(using: AVVideoCompositionRenderHint)](./avvideocompositing/prerollforrendering%28using%29.md)
   Tells a custom video compositor to perform any work in the prerolling phase.
 
 

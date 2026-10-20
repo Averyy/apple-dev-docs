@@ -1,7 +1,8 @@
 # callObserver
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns an observer for active calls.
 
@@ -16,6 +17,10 @@ Returns an observer for active calls.
 
 ```swift
 var callObserver: CXCallObserver { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) CXCallObserver * callObserver;
 ```
 
 

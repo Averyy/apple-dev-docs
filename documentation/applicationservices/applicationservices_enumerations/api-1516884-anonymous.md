@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var kATSNoTracking: Int](katsnotracking.md)
-- [var kATSUseGlyphAdvance: Int](katsuseglyphadvance.md)
-- [var kATSUseLineHeight: Int](katsuselineheight.md)
+- [var kATSNoTracking: Int](../katsnotracking.md)
+- [var kATSUseGlyphAdvance: Int](../katsuseglyphadvance.md)
+- [var kATSUseLineHeight: Int](../katsuselineheight.md)
 
 
 ---

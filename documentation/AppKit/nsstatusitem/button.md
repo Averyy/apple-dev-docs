@@ -1,7 +1,8 @@
 # button
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The button displayed in the status bar.
 
@@ -14,17 +15,22 @@ The button displayed in the status bar.
 var button: NSStatusBarButton? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) NSStatusBarButton * button;
+```
+
 #### Discussion
 
-The status item automatically creates this button by default. Use this property to customize the appearance and behavior of the button, such as its [`image`](nsbutton/image.md), [`target`](nscontrol/target.md), [`action`](nscontrol/action.md), [`toolTip`](nsview/tooltip.md), and so on.
+The status item automatically creates this button by default. Use this property to customize the appearance and behavior of the button, such as its [`image`](../nsbutton/image.md), [`target`](../nscontrol/target.md), [`action`](../nscontrol/action.md), [`toolTip`](../nsview/tooltip.md), and so on.
 
 ## See Also
 
-- [var behavior: NSStatusItem.Behavior](nsstatusitem/behavior-swift.property.md)
+### Managing the status item’s behavior
+- [var behavior: NSStatusItem.Behavior](./behavior-swift.property.md)
   The set of allowed behaviors for the status item.
-- [NSStatusItem.Behavior](nsstatusitem/behavior-swift.struct.md)
+- [NSStatusItem.Behavior](./behavior-swift.struct.md)
   A set of optional status item behaviors.
-- [var menu: NSMenu?](nsstatusitem/menu.md)
+- [var menu: NSMenu?](./menu.md)
   The pull-down menu displayed when the user clicks the status item.
 
 

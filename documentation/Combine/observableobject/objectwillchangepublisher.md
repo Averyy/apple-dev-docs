@@ -2,6 +2,7 @@
 
 **Framework**: Combine  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of publisher that emits before the object has changed.
@@ -23,7 +24,8 @@ associatedtype ObjectWillChangePublisher : Publisher = ObservableObjectPublisher
 
 ## See Also
 
-- [var objectWillChange: Self.ObjectWillChangePublisher](observableobject/objectwillchange.md)
+### Publishing changes
+- [var objectWillChange: Self.ObjectWillChangePublisher](./objectwillchange.md)
   A publisher that emits before the object has changed.
 
 

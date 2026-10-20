@@ -1,7 +1,8 @@
 # details
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the capability presented to teachers.
 
@@ -18,15 +19,20 @@ A description of the capability presented to teachers.
 var details: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * details;
+```
+
 #### Discussion
 
 Localize the string that you assign to this property. Schoolwork presents the string to teachers to help them understand how your app uses this capability.
 
 ## See Also
 
-- [var kind: CLSProgressReportingCapability.Kind](clsprogressreportingcapability/kind-swift.property.md)
+### Characterizing the Capability
+- [var kind: CLSProgressReportingCapability.Kind](./kind-swift.property.md)
   The kind of progress reporting capability.
-- [CLSProgressReportingCapability.Kind](clsprogressreportingcapability/kind-swift.enum.md)
+- [CLSProgressReportingCapability.Kind](./kind-swift.enum.md)
   The available kinds of progress reporting that a context can perform.
 
 

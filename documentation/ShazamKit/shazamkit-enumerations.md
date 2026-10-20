@@ -1,16 +1,18 @@
 # ShazamKit Enumerations
 
-**Framework**: ShazamKit
+**Framework**: ShazamKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Enumerations
-- [SHError.Code](sherror/code.md)
+- [SHError.Code](./sherror/code.md)
   Codes for the errors that Shazam produces.
 
 ## See Also
 
-- [ShazamKit Constants](shazamkit-constants.md)
+### Reference
+- [ShazamKit Constants](./shazamkit-constants.md)
 
 
 ---

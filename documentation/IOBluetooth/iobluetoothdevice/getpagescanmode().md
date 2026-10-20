@@ -1,17 +1,22 @@
 # getPageScanMode()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Get the page scan mode for the device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getPageScanMode() -> BluetoothPageScanMode
+```
+
+```objc
+- (BluetoothPageScanMode) getPageScanMode;
 ```
 
 #### Return Value

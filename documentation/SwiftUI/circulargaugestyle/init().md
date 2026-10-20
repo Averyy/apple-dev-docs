@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a circular gauge.
 
@@ -17,7 +18,8 @@ init()
 
 ## See Also
 
-- [init(tint:)](circulargaugestyle/init(tint:).md)
+### Creating the gauge style
+- [init(tint:)](./init%28tint%29.md)
   Creates a circular gauge that draws with a specified color.
 
 

@@ -1,7 +1,8 @@
 # systemTemperature
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The entire system is under elevated thermal load.
 
@@ -18,13 +19,18 @@ The entire system is under elevated thermal load.
 static var systemTemperature: AVCaptureDevice.SystemPressureState.Factors { get }
 ```
 
+```c
+AVCaptureSystemPressureFactorSystemTemperature
+```
+
 ## See Also
 
-- [static var peakPower: AVCaptureDevice.SystemPressureState.Factors](avcapturedevice/systempressurestate-swift.class/factors-swift.struct/peakpower.md)
+### System pressure factors
+- [static var peakPower: AVCaptureDevice.SystemPressureState.Factors](./peakpower.md)
   The system’s peak power requirements exceed the battery’s current capacity.
-- [static var depthModuleTemperature: AVCaptureDevice.SystemPressureState.Factors](avcapturedevice/systempressurestate-swift.class/factors-swift.struct/depthmoduletemperature.md)
+- [static var depthModuleTemperature: AVCaptureDevice.SystemPressureState.Factors](./depthmoduletemperature.md)
   The module capturing depth information is operating at an elevated temperature.
-- [static var cameraTemperature: AVCaptureDevice.SystemPressureState.Factors](avcapturedevice/systempressurestate-swift.class/factors-swift.struct/cameratemperature.md)
+- [static var cameraTemperature: AVCaptureDevice.SystemPressureState.Factors](./cameratemperature.md)
   The camera module is operating at an elevated temperature.
 
 

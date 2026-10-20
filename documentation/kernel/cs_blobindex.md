@@ -1,14 +1,15 @@
 # CS_BlobIndex
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 typedef struct __BlobIndex {
     ...
 } CS_BlobIndex;
@@ -17,8 +18,8 @@ typedef struct __BlobIndex {
 ## Topics
 
 ### Instance Properties
-- [offset](cs_blobindex/2869975-offset.md)
-- [type](cs_blobindex/2869973-type.md)
+- [offset](./cs_blobindex/api-2869975-offset.md)
+- [type](./cs_blobindex/api-2869973-type.md)
 
 
 ---

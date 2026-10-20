@@ -1,7 +1,8 @@
 # chartProxy
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The chart proxy that you use to access the scales and plot area of the chart.
 

@@ -1,7 +1,8 @@
 # FrameResizeDirection
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The direction in which a rectangular frame can be resized.
 
@@ -18,34 +19,35 @@ enum FrameResizeDirection
 ## Topics
 
 ### Structures
-- [FrameResizeDirection.Set](frameresizedirection/set.md)
+- [FrameResizeDirection.Set](./frameresizedirection/set.md)
   An efficient set of frame resize directions.
 ### Enumeration Cases
-- [FrameResizeDirection.inward](frameresizedirection/inward.md)
+- [FrameResizeDirection.inward](./frameresizedirection/inward.md)
   Indicates that the frame can be resized inwards to be smaller.
-- [FrameResizeDirection.outward](frameresizedirection/outward.md)
+- [FrameResizeDirection.outward](./frameresizedirection/outward.md)
   Indicates that the frame can be resized outwards to be larger.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum HorizontalDirection](horizontaldirection.md)
+### Supporting types
+- [enum HorizontalDirection](./horizontaldirection.md)
   A direction on the horizontal axis.
-- [enum VerticalDirection](verticaldirection.md)
+- [enum VerticalDirection](./verticaldirection.md)
   A direction on the vertical axis.
-- [enum FrameResizePosition](frameresizeposition.md)
+- [enum FrameResizePosition](./frameresizeposition.md)
   The position along the perimeter of a rectangular frame (its edges and corners) from which it’s resized.
 
 

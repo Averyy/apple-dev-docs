@@ -7,7 +7,7 @@ Specifies the maximum length for a path name.
 ## Topics
 
 ### Constants
-- [var CS_MAX_PATH: Int](cs_max_path.md)
+- [var CS_MAX_PATH: Int](../cs_max_path.md)
 
 
 ---

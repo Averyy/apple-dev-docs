@@ -1,7 +1,8 @@
 # willBeginSheet
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var willBeginSheet: NotificationCenter.BaseMessageIdentifier<NSWindow.WillBeginSheetMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSWindow.WillBeginSheetMessage>`.
 
 
 ---

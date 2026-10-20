@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Delegate that receives updates as the camera takes snapshots.
 
@@ -19,9 +20,14 @@ Delegate that receives updates as the camera takes snapshots.
 weak var delegate: (any HMCameraSnapshotControlDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak) id<HMCameraSnapshotControlDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol HMCameraSnapshotControlDelegate](hmcamerasnapshotcontroldelegate.md)
+### Observing snapshot activity
+- [protocol HMCameraSnapshotControlDelegate](../hmcamerasnapshotcontroldelegate.md)
   A set of methods used to observe the camera’s snapshot activity.
 
 

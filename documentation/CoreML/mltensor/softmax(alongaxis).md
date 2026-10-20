@@ -1,7 +1,8 @@
 # softmax(alongAxis:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the softmax of the specified tensor along the specified axis.
 

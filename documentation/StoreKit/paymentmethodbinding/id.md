@@ -1,7 +1,8 @@
 # id
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The in-app binding identifier.
 

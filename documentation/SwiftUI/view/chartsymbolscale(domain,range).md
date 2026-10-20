@@ -1,7 +1,8 @@
 # chartSymbolScale(domain:range:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the symbol style scale for charts.
 
@@ -21,6 +22,13 @@ nonisolated
 func chartSymbolScale<Domain, Range>(domain: Domain, range: Range) -> some View where Domain : ScaleDomain, Range : ScaleRange, Range.VisualValue : ChartSymbolShape
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func chartSymbolScale<Domain>(domain: Domain, range: [any ChartSymbolShape]) -> some View where Domain : ScaleDomain
+```
+
 ## Parameters
 
 - `domain`: The possible data values plotted as symbols in the chart. You can define the domain with an array for categorical values (e.g., `["A", "B", "C"]`)
@@ -28,15 +36,16 @@ func chartSymbolScale<Domain, Range>(domain: Domain, range: Range) -> some View 
 
 ## See Also
 
-- [func chartSymbolScale(_:)](view/chartsymbolscale(_:).md)
+### Symbol scales
+- [func chartSymbolScale(_:)](./chartsymbolscale%28_%29.md)
   Configures the symbol scale for charts.
-- [func chartSymbolScale<Domain>(domain: Domain) -> some View](view/chartsymbolscale(domain:).md)
+- [func chartSymbolScale<Domain>(domain: Domain) -> some View](./chartsymbolscale%28domain%29.md)
   Configures the symbol style scale for charts.
-- [func chartSymbolScale<Domain, S>(domain: Domain, mapping: (Domain.Element) -> S) -> some View](view/chartsymbolscale(domain:mapping:).md)
+- [func chartSymbolScale<Domain, S>(domain: Domain, mapping: (Domain.Element) -> S) -> some View](./chartsymbolscale%28domain,mapping%29.md)
   Configures the symbol scale for charts.
-- [func chartSymbolScale<DataValue, S>(mapping: (DataValue) -> S) -> some View](view/chartsymbolscale(mapping:).md)
+- [func chartSymbolScale<DataValue, S>(mapping: (DataValue) -> S) -> some View](./chartsymbolscale%28mapping%29.md)
   Configures the symbol scale for charts.
-- [func chartSymbolScale(range:)](view/chartsymbolscale(range:).md)
+- [func chartSymbolScale(range:)](./chartsymbolscale%28range%29.md)
   Configures the symbol style scale for charts.
 
 

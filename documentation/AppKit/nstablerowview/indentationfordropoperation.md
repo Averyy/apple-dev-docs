@@ -1,7 +1,8 @@
 # indentationForDropOperation
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines the amount the drag target for a row should be indented.
 
@@ -14,15 +15,20 @@ Defines the amount the drag target for a row should be indented.
 var indentationForDropOperation: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat indentationForDropOperation;
+```
+
 #### Discussion
 
 The default is `0`.
 
 ## See Also
 
-- [var draggingDestinationFeedbackStyle: NSTableView.DraggingDestinationFeedbackStyle](nstablerowview/draggingdestinationfeedbackstyle.md)
+### Drag and Drop
+- [var draggingDestinationFeedbackStyle: NSTableView.DraggingDestinationFeedbackStyle](./draggingdestinationfeedbackstyle.md)
   Specifies the dragging destination feedback style.
-- [var isTargetForDropOperation: Bool](nstablerowview/istargetfordropoperation.md)
+- [var isTargetForDropOperation: Bool](./istargetfordropoperation.md)
   Specifies whether this row will draw a drop indicator based on the current dragging feedback style.
 
 

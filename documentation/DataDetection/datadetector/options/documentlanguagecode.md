@@ -1,7 +1,8 @@
 # documentLanguageCode
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional value that represents the language code of a specific locale.
 
@@ -22,15 +23,16 @@ var documentLanguageCode: Locale.LanguageCode?
 
 #### Discussion
 
-For more information on locales, see [`Locale.LanguageCode`](https://developer.apple.com/documentation/foundation/locale/languagecode-swift.struct).
+For more information on locales, see [`Locale.LanguageCode`](../../../Foundation/locale/languagecode-swift.struct.md).
 
 ## See Also
 
-- [var documentDate: Date?](datadetector/options/documentdate.md)
+### Hints you can provide to add more context for the matching process
+- [var documentDate: Date?](./documentdate.md)
   The creation date of the scanned string.
-- [var documentRegion: Locale.Region?](datadetector/options/documentregion.md)
+- [var documentRegion: Locale.Region?](./documentregion.md)
   A locale region that’s relevant to the scanned string.
-- [var documentTimeZone: TimeZone?](datadetector/options/documenttimezone.md)
+- [var documentTimeZone: TimeZone?](./documenttimezone.md)
   A date that represents the date of the scanned string.
 
 

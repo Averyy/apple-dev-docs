@@ -1,7 +1,8 @@
 # length
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The number of items in the data source.
 
@@ -10,13 +11,14 @@ The number of items in the data source.
 
 ## Declaration
 
-```swift
+```
 readonly attribute int length;
 ```
 
 ## See Also
 
-- [item](datasource/datasource/3192117-item.md)
+### Accessing Elements
+- [item](./api-3192117-item.md)
   Returns the array item at the specified index.
 
 

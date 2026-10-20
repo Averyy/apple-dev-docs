@@ -1,7 +1,8 @@
 # localized(language:pronouns:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a term of address restricted to a specific language for a group of pronouns.
 
@@ -31,9 +32,10 @@ A term of address associating a group of pronouns  to a specific language.
 
 ## See Also
 
-- [var language: Locale.Language?](termofaddress/language.md)
+### Defining your own terms of address
+- [var language: Locale.Language?](./language.md)
   The specific language associated with a term of address.
-- [var pronouns: [Morphology.Pronoun]](termofaddress/pronouns.md)
+- [var pronouns: [Morphology.Pronoun]](./pronouns.md)
   The pronouns associated with a term of address.
 
 

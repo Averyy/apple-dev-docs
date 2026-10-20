@@ -1,7 +1,8 @@
 # mutableBytes
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Exclusively borrow the underlying initialized memory for mutation.
 

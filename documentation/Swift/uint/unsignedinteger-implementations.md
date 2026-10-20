@@ -1,22 +1,23 @@
 # UnsignedInteger Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init<T>(T)](uint/init(_:)-2lidr.md)
+- [init<T>(T)](./init%28_%29-2lidr.md)
   Creates a new instance from the given integer.
-- [init?<T>(exactly: T)](uint/init(exactly:)-568o1.md)
+- [init?<T>(exactly: T)](./init%28exactly%29-568o1.md)
 ### Instance Properties
-- [var magnitude: Self](uint/magnitude-swift.property.md)
+- [var magnitude: Self](./magnitude-swift.property.md)
   The magnitude of this value.
 ### Type Properties
-- [static var isSigned: Bool](uint/issigned.md)
+- [static var isSigned: Bool](./issigned.md)
   A Boolean value indicating whether this type is a signed integer type.
-- [static var max: Self](uint/max.md)
+- [static var max: Self](./max.md)
   The maximum representable integer in this type.
-- [static var min: Self](uint/min.md)
+- [static var min: Self](./min.md)
   The minimum representable integer in this type.
 
 

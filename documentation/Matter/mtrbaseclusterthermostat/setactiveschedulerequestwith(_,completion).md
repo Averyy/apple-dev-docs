@@ -1,7 +1,8 @@
 # setActiveScheduleRequestWith(_:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command SetActiveScheduleRequest
 
@@ -17,7 +18,15 @@ Command SetActiveScheduleRequest
 ## Declaration
 
 ```swift
+func setActiveScheduleRequestWith(_ params: MTRThermostatClusterSetActiveScheduleRequestParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func setActiveScheduleRequestWith(_ params: MTRThermostatClusterSetActiveScheduleRequestParams) async throws
+```
+
+```objc
+- (void) setActiveScheduleRequestWithParams:(MTRThermostatClusterSetActiveScheduleRequestParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

@@ -1,17 +1,18 @@
 # SCNetworkConnectionStatus.disconnecting
 
 **Framework**: System Configuration  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The network connection is disconnecting.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,15 +20,20 @@ The network connection is disconnecting.
 case disconnecting
 ```
 
+```c
+kSCNetworkConnectionDisconnecting
+```
+
 ## See Also
 
-- [SCNetworkConnectionStatus.invalid](scnetworkconnectionstatus/invalid.md)
+### Constants
+- [SCNetworkConnectionStatus.invalid](./invalid.md)
   The network connection refers to an invalid service.
-- [SCNetworkConnectionStatus.disconnected](scnetworkconnectionstatus/disconnected.md)
+- [SCNetworkConnectionStatus.disconnected](./disconnected.md)
   The network connection is disconnected.
-- [SCNetworkConnectionStatus.connecting](scnetworkconnectionstatus/connecting.md)
+- [SCNetworkConnectionStatus.connecting](./connecting.md)
   The network connection is connecting.
-- [SCNetworkConnectionStatus.connected](scnetworkconnectionstatus/connected.md)
+- [SCNetworkConnectionStatus.connected](./connected.md)
   The network connection is connected.
 
 

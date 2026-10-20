@@ -1,7 +1,8 @@
 # BehaviorTreeResource
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An immutable representation of a behavior tree.
 
@@ -21,44 +22,45 @@ class BehaviorTreeResource
 
 #### Overview
 
-A `BehaviorTreeResource` can be produced by compiling a tree definition. Once compiled, assign it to an entity via [`BehaviorTreeComponent`](behaviortreecomponent.md) to begin driving behaviors:
+A `BehaviorTreeResource` can be produced by compiling a tree definition. Once compiled, assign it to an entity via [`BehaviorTreeComponent`](./behaviortreecomponent.md) to begin driving behaviors:
 
 let treeResource1 = try BehaviorTreeResource(definition: Data(behaviorTreeDefinition1.utf8)) let treeResource2 = try BehaviorTreeResource(definition: Data(behaviorTreeDefinition2.utf8)) let treeResources: [String : BehaviorTreeResource] = [“tree1” : treeResource1, “tree2” : treeResource2] entity.components.set(BehaviorTreeComponent(behaviorTree: resource, availableBehaviorTrees: treeResources))
 
 #### Parameters
 
-The tree exposes a set of named parameters that control its behavior at runtime, such as movement speed. Read the available parameters via [`parameterNames`](behaviortreeresource/parameternames.md). To set values at runtime, use the entity’s parameter binding:
+The tree exposes a set of named parameters that control its behavior at runtime, such as movement speed. Read the available parameters via [`parameterNames`](./behaviortreeresource/parameternames.md). To set values at runtime, use the entity’s parameter binding:
 
 entity.parameters[“MoveSpeed”] = BindableValue(Float(1.0))
 
 ## Topics
 
 ### Creating a behavior tree
-- [convenience init(definition: Data) throws](behaviortreeresource/init(definition:).md)
+- [convenience init(definition: Data) throws](./behaviortreeresource/init%28definition%29.md)
   Compile a new resource from data, throws on failure.
 ### Validating a definition
-- [static func validate(definition: Data) -> [String]](behaviortreeresource/validate(definition:).md)
+- [static func validate(definition: Data) -> [String]](./behaviortreeresource/validate%28definition%29.md)
   Run the compiler and return all tree errors without producing a resource.
 ### Accessing parameters
-- [var parameterNames: [String]](behaviortreeresource/parameternames.md)
+- [var parameterNames: [String]](./behaviortreeresource/parameternames.md)
   Returns the names of all parameters in the behavior tree resource.
 
 ## Relationships
 
 ### Conforms To
-- [Resource](resource.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Resource](./resource.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct BehaviorTreeComponent](behaviortreecomponent.md)
+### Behavior trees
+- [struct BehaviorTreeComponent](./behaviortreecomponent.md)
   Manages which behavior tree is active for the component’s entity.
-- [protocol BehaviorTreeAction](behaviortreeaction.md)
+- [protocol BehaviorTreeAction](./behaviortreeaction.md)
   A protocol that defines an action that a behavior tree action node can use.
-- [protocol BehaviorTreeActionHandler](behaviortreeactionhandler.md)
+- [protocol BehaviorTreeActionHandler](./behaviortreeactionhandler.md)
   Behavior Tree-specific event handlers that allow an `ActionResult` to be returned from the handler.
-- [enum ActionResult](actionresult.md)
+- [enum ActionResult](./actionresult.md)
   Status values that an action can report back to the animation system.
 
 

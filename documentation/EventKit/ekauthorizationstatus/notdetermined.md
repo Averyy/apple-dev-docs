@@ -1,7 +1,8 @@
 # EKAuthorizationStatus.notDetermined
 
 **Framework**: EventKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The person hasn’t chosen whether the app may access the service.
 
@@ -19,15 +20,20 @@ The person hasn’t chosen whether the app may access the service.
 case notDetermined
 ```
 
+```c
+EKAuthorizationStatusNotDetermined
+```
+
 ## See Also
 
-- [EKAuthorizationStatus.fullAccess](ekauthorizationstatus/fullaccess.md)
+### Status
+- [EKAuthorizationStatus.fullAccess](./fullaccess.md)
   The app has both read and write access to the requested entity type.
-- [EKAuthorizationStatus.writeOnly](ekauthorizationstatus/writeonly.md)
+- [EKAuthorizationStatus.writeOnly](./writeonly.md)
   The app has write-only access to the requested entity type.
-- [EKAuthorizationStatus.denied](ekauthorizationstatus/denied.md)
+- [EKAuthorizationStatus.denied](./denied.md)
   The person explicitly denied access to the service for the app.
-- [EKAuthorizationStatus.restricted](ekauthorizationstatus/restricted.md)
+- [EKAuthorizationStatus.restricted](./restricted.md)
   The app isn’t authorized to access the service.
 
 

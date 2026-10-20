@@ -1,7 +1,8 @@
 # ManagedPreferences.PayloadContent.ANY
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The dictionary containing app preference domains.
 
@@ -10,14 +11,14 @@ The dictionary containing app preference domains.
 
 ## Declaration
 
-```swift
+```
 object ManagedPreferences.PayloadContent.ANY
 ```
 
 ## Topics
 
 ### Objects
-- [object ManagedPreferences.PayloadContent.ANY.Settings](managedpreferences/payloadcontent-data.dictionary/any-data.dictionary/settings.md)
+- [object ManagedPreferences.PayloadContent.ANY.Settings](./any-data.dictionary/settings.md)
   The dictionary of forced settings.
 
 ## Properties

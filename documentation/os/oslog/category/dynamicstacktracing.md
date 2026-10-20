@@ -1,7 +1,8 @@
 # dynamicStackTracing
 
 **Framework**: os  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The category for dynamic stack tracing.
 
@@ -11,7 +12,7 @@ The category for dynamic stack tracing.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ static let dynamicStackTracing: OSLog.Category
 
 ## See Also
 
-- [static let pointsOfInterest: OSLog.Category](oslog/category/pointsofinterest.md)
+### Logging Signposts
+- [static let pointsOfInterest: OSLog.Category](./pointsofinterest.md)
   The category you use to log signposts.
-- [static let dynamicTracing: OSLog.Category](oslog/category/dynamictracing.md)
+- [static let dynamicTracing: OSLog.Category](./dynamictracing.md)
   The category for dynamic tracing.
 
 

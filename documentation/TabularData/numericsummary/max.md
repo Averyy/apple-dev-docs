@@ -1,7 +1,8 @@
 # max
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The largest value, excluding missing elements.
 
@@ -22,17 +23,18 @@ var max: Element
 
 ## See Also
 
-- [var mean: Element](numericsummary/mean.md)
+### Getting Statistical Values
+- [var mean: Element](./mean.md)
   The arithmetic mean of a column’s values that excludes missing elements.
-- [var median: Element](numericsummary/median.md)
+- [var median: Element](./median.md)
   The midpoint value that’s above half of the non-missing elements’ values and below the other half’s values.
-- [var min: Element](numericsummary/min.md)
+- [var min: Element](./min.md)
   The smallest value, excluding missing elements.
-- [var standardDeviation: Element](numericsummary/standarddeviation.md)
+- [var standardDeviation: Element](./standarddeviation.md)
   The standard deviation of a column’s values that excludes missing elements.
-- [var firstQuartile: Element](numericsummary/firstquartile.md)
+- [var firstQuartile: Element](./firstquartile.md)
   The value that’s above 25% of the non-missing elements’ values.
-- [var thirdQuartile: Element](numericsummary/thirdquartile.md)
+- [var thirdQuartile: Element](./thirdquartile.md)
   The value that’s above 75% of the non-missing elements’ values.
 
 

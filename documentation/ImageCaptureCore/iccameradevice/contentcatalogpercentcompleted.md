@@ -1,7 +1,8 @@
 # contentCatalogPercentCompleted
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The percentage of the camera’s content that has been catalogued.
 
@@ -18,19 +19,24 @@ The percentage of the camera’s content that has been catalogued.
 var contentCatalogPercentCompleted: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger contentCatalogPercentCompleted;
+```
+
 #### Discussion
 
 The value of this property ranges from 0 to 100.
 
 ## See Also
 
-- [var contents: [ICCameraItem]?](iccameradevice/contents.md)
+### Reading Files
+- [var contents: [ICCameraItem]?](./contents.md)
   All image, movie, and audio files stored on the camera, in an order that reflects the camera’s storage folder structure.
-- [var mediaFiles: [ICCameraItem]?](iccameradevice/mediafiles.md)
+- [var mediaFiles: [ICCameraItem]?](./mediafiles.md)
   All image, movie and audio files stored on the camera, without regard to the camera’s storage folder structure.
-- [func files(ofType: String) -> [String]?](iccameradevice/files(oftype:).md)
+- [func files(ofType: String) -> [String]?](./files%28oftype%29.md)
   Returns an array of files of the selected type on the camera.
-- [func requestReadData(from: ICCameraFile, atOffset: off_t, length: off_t, readDelegate: Any, didReadDataSelector: Selector, contextInfo: UnsafeMutableRawPointer?)](iccameradevice/requestreaddata(from:atoffset:length:readdelegate:didreaddataselector:contextinfo:).md)
+- [func requestReadData(from: ICCameraFile, atOffset: off_t, length: off_t, readDelegate: Any, didReadDataSelector: Selector, contextInfo: UnsafeMutableRawPointer?)](./requestreaddata%28from,atoffset,length,readdelegate,didreaddataselector,contextinfo%29.md)
   Asynchronously reads data of a specified length from a specified offset.
 
 

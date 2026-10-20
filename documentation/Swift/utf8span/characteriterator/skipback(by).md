@@ -1,7 +1,8 @@
 # skipBack(by:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Move `currentCodeUnitOffset` to the start of the previous `n` `Character`s, without constructing them.
 

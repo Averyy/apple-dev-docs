@@ -1,7 +1,8 @@
 # AppAssetLibraryImageUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update an app asset library image.
 
@@ -10,19 +11,19 @@ The request body you use to update an app asset library image.
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryImageUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object AppAssetLibraryImageUpdateRequest.Data.Attributes](appassetlibraryimageupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object AppAssetLibraryImageUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   The attributes you set that describe the updated app asset library image resource.
 
 ## Properties
 
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appAssetLibraryImages`
 - `id` (string) *(required)*
 - `attributes` (AppAssetLibraryImageUpdateRequest.Data.Attributes)
 

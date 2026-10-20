@@ -1,7 +1,8 @@
 # default
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The `.default` options is a sentinel value that indicates the user wants whatever scene-understanding features work with the current device and are supported. It overrides other options in the options set.
 

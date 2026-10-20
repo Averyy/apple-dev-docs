@@ -1,7 +1,8 @@
 # primvarMappings
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Maps primvar names used in this graph to texture coordinate channels.
 
@@ -19,7 +20,7 @@ final var primvarMappings: [String : ShaderGraph.TextureCoordinate]
 
 #### Discussion
 
-Primvar nodes reference geometry data by name. Use this dictionary to specify which [`ShaderGraph.TextureCoordinate`](shadergraph/texturecoordinate.md) channel each name resolves to at render time.
+Primvar nodes reference geometry data by name. Use this dictionary to specify which [`ShaderGraph.TextureCoordinate`](./texturecoordinate.md) channel each name resolves to at render time.
 
 
 ---

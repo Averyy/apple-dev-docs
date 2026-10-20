@@ -1,7 +1,8 @@
 # init(from:configuration:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an AudioFileResource from in-memory data asynchronously.
 
@@ -24,7 +25,7 @@ Initializes an AudioFileResource from in-memory data asynchronously.
 
 This API creates a memory-resident audio resource that never writes to disk. The data must contain a valid audio file format (WAV, M4A, etc.).
 
-> **Note**: `AudioFileResource.Error` if the data is invalid or cannot be processed
+> **Throws**: `AudioFileResource.Error` if the data is invalid or cannot be processed
 
 ## Parameters
 

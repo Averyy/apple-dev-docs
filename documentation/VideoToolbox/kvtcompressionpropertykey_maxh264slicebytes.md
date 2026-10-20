@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_MaxH264SliceBytes
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The maximum slice size for H.264 encoding.
 
@@ -19,16 +20,21 @@ The maximum slice size for H.264 encoding.
 let kVTCompressionPropertyKey_MaxH264SliceBytes: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_MaxH264SliceBytes;
+```
+
 #### Discussion
 
 If supported by an H.264 encoder, the value limits the size in bytes of slices produced by the encoder, where possible. By default, no limit is specified.  A value of zero implies default behavior.
 
 ## See Also
 
-- [let kVTCompressionPropertyKey_MaxFrameDelayCount: CFString](kvtcompressionpropertykey_maxframedelaycount.md)
+### Runtime Restrictions
+- [let kVTCompressionPropertyKey_MaxFrameDelayCount: CFString](./kvtcompressionpropertykey_maxframedelaycount.md)
   The maximum number of frames that a compressor is allowed to hold before it must output a compressed frame.
-- [let kVTCompressionPropertyKey_MaximizePowerEfficiency: CFString](kvtcompressionpropertykey_maximizepowerefficiency.md)
-- [let kVTCompressionPropertyKey_RealTime: CFString](kvtcompressionpropertykey_realtime.md)
+- [let kVTCompressionPropertyKey_MaximizePowerEfficiency: CFString](./kvtcompressionpropertykey_maximizepowerefficiency.md)
+- [let kVTCompressionPropertyKey_RealTime: CFString](./kvtcompressionpropertykey_realtime.md)
   A Boolean value indicating whether it’s recommended that the video encoder perform compression in real time.
 
 

@@ -1,7 +1,8 @@
 # startProgress
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates the start point of the receiver as a fraction of the entire transition.
 
@@ -19,14 +20,20 @@ Indicates the start point of the receiver as a fraction of the entire transition
 var startProgress: Float { get set }
 ```
 
+```objc
+@property float startProgress;
+```
+
 #### Discussion
 
 Legal values are numbers between 0.0 and 1.0. For example, to start the transition half way through its progress set `startProgress` to 0.5. The default value is 0.
 
 ## See Also
 
-- [Core Animation Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
-- [var endProgress: Float](catransition/endprogress.md)
+### Related Documentation
+- [Core Animation Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
+### Transition start and end point
+- [var endProgress: Float](./endprogress.md)
   Indicates the end point of the receiver as a fraction of the entire transition.
 
 

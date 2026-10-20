@@ -1,7 +1,8 @@
 # init(_:access:label:fallback:)
 
 **Framework**: DeviceDiscoveryUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a `DevicePairingView` which, when pressed, will display a local device advertiser interface.
 
@@ -21,7 +22,7 @@ Creates a `DevicePairingView` which, when pressed, will display a local device a
 
 For example:
 
-```None
+```
 DevicePairingView(listenerProvider) {
 	Text("Starting advertising to local devices")
 } fallback: {

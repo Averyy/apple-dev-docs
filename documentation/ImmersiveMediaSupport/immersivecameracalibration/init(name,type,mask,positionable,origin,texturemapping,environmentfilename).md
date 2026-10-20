@@ -1,7 +1,8 @@
 # init(name:type:mask:positionable:origin:textureMapping:environmentFilename:)
 
 **Framework**: Immersive Media Support  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a mesh based calibration from USDZ data and a image-based mask.
 

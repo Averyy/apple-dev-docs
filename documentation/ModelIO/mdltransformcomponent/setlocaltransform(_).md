@@ -1,7 +1,8 @@
 # setLocalTransform(_:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a new static transform matrix, overriding any time-based transform information.
 
@@ -19,9 +20,13 @@ Sets a new static transform matrix, overriding any time-based transform informat
 optional func setLocalTransform(_ transform: matrix_float4x4)
 ```
 
+```objc
+- (void) setLocalTransform:(matrix_float4x4) transform;
+```
+
 #### Discussion
 
-Calling this method sets both the [`minimumTime`](mdltransformcomponent/minimumtime.md) and [`maximumTime`](mdltransformcomponent/maximumtime.md) properties to zero.
+Calling this method sets both the [`minimumTime`](./minimumtime.md) and [`maximumTime`](./maximumtime.md) properties to zero.
 
 ## Parameters
 
@@ -29,7 +34,8 @@ Calling this method sets both the [`minimumTime`](mdltransformcomponent/minimumt
 
 ## See Also
 
-- [var matrix: matrix_float4x4](mdltransformcomponent/matrix.md)
+### Working with Static Transforms
+- [var matrix: matrix_float4x4](./matrix.md)
   The transform matrix that defines the local coordinate space relative to a parent coordinate space.
 
 

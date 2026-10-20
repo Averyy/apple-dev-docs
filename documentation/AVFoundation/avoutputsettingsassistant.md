@@ -1,7 +1,8 @@
 # AVOutputSettingsAssistant
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that builds audio and video output settings dictionaries.
 
@@ -19,76 +20,81 @@ An object that builds audio and video output settings dictionaries.
 class AVOutputSettingsAssistant
 ```
 
+```objc
+@interface AVOutputSettingsAssistant : NSObject
+```
+
 #### Overview
 
-Use an output settings assistant to create the audio and video settings that you use to configure instances of [`AVAssetWriter`](avassetwriter.md) and [`AVAssetWriterInput`](avassetwriterinput.md). You create an assistant with a specific preset configuration, such as [`hevc3840x2160WithAlpha`](avoutputsettingspreset/hevc3840x2160withalpha.md) or [`preset1920x1080`](avoutputsettingspreset/preset1920x1080.md). You can accept the settings dictionaries as is to generate a file that conforms to the criteria that the preset implies. You may also use the dictionaries it generates as a base configuration that you can customize as you require.
+Use an output settings assistant to create the audio and video settings that you use to configure instances of [`AVAssetWriter`](./avassetwriter.md) and [`AVAssetWriterInput`](./avassetwriterinput.md). You create an assistant with a specific preset configuration, such as [`hevc3840x2160WithAlpha`](./avoutputsettingspreset/hevc3840x2160withalpha.md) or [`preset1920x1080`](./avoutputsettingspreset/preset1920x1080.md). You can accept the settings dictionaries as is to generate a file that conforms to the criteria that the preset implies. You may also use the dictionaries it generates as a base configuration that you can customize as you require.
 
-Providing the assistant additional details about your source media helps it generate more complete results. For example, setting a value for its [`sourceVideoFormat`](avoutputsettingsassistant/sourcevideoformat.md) property ensures that the assistant generates settings that don’t scale up video frames from a smaller size.
+Providing the assistant additional details about your source media helps it generate more complete results. For example, setting a value for its [`sourceVideoFormat`](./avoutputsettingsassistant/sourcevideoformat.md) property ensures that the assistant generates settings that don’t scale up video frames from a smaller size.
 
 ## Topics
 
 ### Creating an assistant
-- [convenience init?(preset: AVOutputSettingsPreset)](avoutputsettingsassistant/init(preset:).md)
+- [convenience init?(preset: AVOutputSettingsPreset)](./avoutputsettingsassistant/init%28preset%29.md)
   Creates an output setting assistant with a preset configuration.
-- [struct AVOutputSettingsPreset](avoutputsettingspreset.md)
+- [struct AVOutputSettingsPreset](./avoutputsettingspreset.md)
   A structure that defines preset configurations for an output settings assistant.
-- [class func availableOutputSettingsPresets() -> [AVOutputSettingsPreset]](avoutputsettingsassistant/availableoutputsettingspresets.md)
+- [class func availableOutputSettingsPresets() -> [AVOutputSettingsPreset]](./avoutputsettingsassistant/availableoutputsettingspresets%28%29.md)
   Returns an array of preset values to use to initialize an output settings assistant.
 ### Configuring output settings
-- [var outputFileType: AVFileType](avoutputsettingsassistant/outputfiletype.md)
+- [var outputFileType: AVFileType](./avoutputsettingsassistant/outputfiletype.md)
   A uniform type identifier (UTI) that indicates the type of file to write.
-- [var audioSettings: [String : Any]?](avoutputsettingsassistant/audiosettings.md)
+- [var audioSettings: [String : Any]?](./avoutputsettingsassistant/audiosettings.md)
   An audio settings dictionary.
-- [var sourceAudioFormat: CMAudioFormatDescription?](avoutputsettingsassistant/sourceaudioformat.md)
+- [var sourceAudioFormat: CMAudioFormatDescription?](./avoutputsettingsassistant/sourceaudioformat.md)
   The format of the source audio data.
-- [var videoSettings: [String : Any]?](avoutputsettingsassistant/videosettings.md)
+- [var videoSettings: [String : Any]?](./avoutputsettingsassistant/videosettings.md)
   A video settings dictionary.
-- [var sourceVideoFormat: CMVideoFormatDescription?](avoutputsettingsassistant/sourcevideoformat.md)
+- [var sourceVideoFormat: CMVideoFormatDescription?](./avoutputsettingsassistant/sourcevideoformat.md)
   The format of the source video data.
-- [var sourceVideoMinFrameDuration: CMTime](avoutputsettingsassistant/sourcevideominframeduration.md)
+- [var sourceVideoMinFrameDuration: CMTime](./avoutputsettingsassistant/sourcevideominframeduration.md)
   A time value that describes the minimum frame duration of the video data.
-- [var sourceVideoAverageFrameDuration: CMTime](avoutputsettingsassistant/sourcevideoaverageframeduration.md)
+- [var sourceVideoAverageFrameDuration: CMTime](./avoutputsettingsassistant/sourcevideoaverageframeduration.md)
   A time value that describes the average frame duration of the video data.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Converting projected video to Apple Projected Media Profile](converting-projected-video-to-apple-projected-media-profile.md)
+### Media writing
+- [Converting projected video to Apple Projected Media Profile](./converting-projected-video-to-apple-projected-media-profile.md)
   Convert content with equirectangular or half-equirectangular projection to APMP.
-- [Converting side-by-side 3D video to multiview HEVC and spatial video](converting-side-by-side-3d-video-to-multiview-hevc-and-spatial-video.md)
+- [Converting side-by-side 3D video to multiview HEVC and spatial video](./converting-side-by-side-3d-video-to-multiview-hevc-and-spatial-video.md)
   Create video content for visionOS by converting an existing 3D HEVC file to a multiview HEVC format, optionally adding spatial metadata to create a spatial video.
-- [Adding a display mask rectangle metadata track to a movie file](adding-a-display-mask-rectangle-metadata-track-to-a-movie-file.md)
+- [Adding a display mask rectangle metadata track to a movie file](./adding-a-display-mask-rectangle-metadata-track-to-a-movie-file.md)
   Show a specific area of a video by using timed display mask rectangle metadata.
-- [Writing fragmented MPEG-4 files for HTTP Live Streaming](writing-fragmented-mpeg-4-files-for-http-live-streaming.md)
+- [Writing fragmented MPEG-4 files for HTTP Live Streaming](./writing-fragmented-mpeg-4-files-for-http-live-streaming.md)
   Create an HTTP Live Streaming presentation by turning a movie file into a sequence of fragmented MPEG-4 files.
-- [Creating spatial photos and videos with spatial metadata](../imageio/creating-spatial-photos-and-videos-with-spatial-metadata.md)
+- [Creating spatial photos and videos with spatial metadata](../ImageIO/creating-spatial-photos-and-videos-with-spatial-metadata.md)
   Add spatial metadata to stereo photos and videos to create spatial media for viewing on Apple Vision Pro.
-- [Tagging media with video color information](tagging-media-with-video-color-information.md)
+- [Tagging media with video color information](./tagging-media-with-video-color-information.md)
   Inspect and set video color space information when writing and transcoding media.
-- [Evaluating an app’s video color](evaluating-an-app-s-video-color.md)
+- [Evaluating an app’s video color](./evaluating-an-app-s-video-color.md)
   Check color reproduction for a video in your app by using test patterns, video test equipment, and light-measurement instruments.
-- [class AVAssetWriter](avassetwriter.md)
+- [class AVAssetWriter](./avassetwriter.md)
   An object that writes media data to a container file.
-- [class AVAssetWriterInput](avassetwriterinput.md)
+- [class AVAssetWriterInput](./avassetwriterinput.md)
   An object that appends media samples to a track in an asset writer’s output file.
-- [class AVAssetWriterInputPixelBufferAdaptor](avassetwriterinputpixelbufferadaptor.md)
+- [class AVAssetWriterInputPixelBufferAdaptor](./avassetwriterinputpixelbufferadaptor.md)
   An object that appends video samples to an asset writer input.
-- [class AVAssetWriterInputTaggedPixelBufferGroupAdaptor](avassetwriterinputtaggedpixelbuffergroupadaptor.md)
+- [class AVAssetWriterInputTaggedPixelBufferGroupAdaptor](./avassetwriterinputtaggedpixelbuffergroupadaptor.md)
   An object that appends tagged buffer groups to an asset writer input.
-- [class AVAssetWriterInputMetadataAdaptor](avassetwriterinputmetadataadaptor.md)
+- [class AVAssetWriterInputMetadataAdaptor](./avassetwriterinputmetadataadaptor.md)
   An object that appends timed metadata groups to an asset writer input.
-- [class AVAssetWriterInputGroup](avassetwriterinputgroup.md)
+- [class AVAssetWriterInputGroup](./avassetwriterinputgroup.md)
   A group of inputs with tracks that are mutually exclusive to each other for playback or processing.
 
 

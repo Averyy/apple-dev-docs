@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the preferred spacing values of the composite view.
@@ -23,13 +24,13 @@ func spacing(subviews: Self.Subviews, cache: inout Self.Cache) -> ViewSpacing
 
 #### Return Value
 
-A [`ViewSpacing`](viewspacing.md) instance that describes the preferred spacing around the container view.
+A [`ViewSpacing`](../viewspacing.md) instance that describes the preferred spacing around the container view.
 
 #### Discussion
 
 Implement this method to provide custom spacing preferences for a layout container. The value you return affects the spacing around the container, but it doesn’t affect how the container arranges subviews relative to one another inside the container.
 
-Create a custom [`ViewSpacing`](viewspacing.md) instance for your container by initializing one with default values, and then merging that with spacing instances of certain subviews. For example, if you define a basic vertical stack that places subviews in a column, you could use the spacing preferences of the subview edges that make contact with the container’s edges:
+Create a custom [`ViewSpacing`](../viewspacing.md) instance for your container by initializing one with default values, and then merging that with spacing instances of certain subviews. For example, if you define a basic vertical stack that places subviews in a column, you could use the spacing preferences of the subview edges that make contact with the container’s edges:
 
 ```swift
 extension BasicVStack {
@@ -55,13 +56,20 @@ If you don’t implement this method, the protocol provides a default implementa
 ## Parameters
 
 - `subviews`: A collection of proxy instances that represent the views that the container arranges. You can use the proxies in the collection to get information about the subviews as you determine how much spacing the container prefers around it.
-- `cache`: Optional storage for calculated data that you can share among the methods of your custom layout container. See [`makeCache(subviews:)`](layout/makecache(subviews:).md) for details.
+- `cache`: Optional storage for calculated data that you can share among the methods of your custom layout container. See [`makeCache(subviews:)`](./makecache%28subviews%29.md) for details.
+
+## Default Implementations
+
+### Layout Implementations
+- [func spacing(subviews: Self.Subviews, cache: inout Self.Cache) -> ViewSpacing](./spacing%28subviews,cache%29-1z0gt.md)
+  Returns the union of all subview spacing.
 
 ## See Also
 
-- [func explicitAlignment(of:in:proposal:subviews:cache:)](layout/explicitalignment(of:in:proposal:subviews:cache:).md)
+### Reporting layout container characteristics
+- [func explicitAlignment(of:in:proposal:subviews:cache:)](./explicitalignment%28of,in,proposal,subviews,cache%29.md)
   Returns the position of the specified horizontal alignment guide along the x axis.
-- [static var layoutProperties: LayoutProperties](layout/layoutproperties.md)
+- [static var layoutProperties: LayoutProperties](./layoutproperties.md)
   Properties of a layout container.
 
 

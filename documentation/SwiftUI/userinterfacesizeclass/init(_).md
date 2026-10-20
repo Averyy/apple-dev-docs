@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a SwiftUI size class from the specified UIKit size class.
 

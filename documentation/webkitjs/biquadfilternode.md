@@ -1,7 +1,8 @@
 # BiquadFilterNode
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,25 +10,25 @@
 
 ## Declaration
 
-```swift
+```
 interface BiquadFilterNode
 ```
 
 ## Topics
 
 ### Instance Properties
-- [Q](biquadfilternode/1633011-q.md)
-- [detune](biquadfilternode/1633351-detune.md)
-- [frequency](biquadfilternode/1629095-frequency.md)
-- [gain](biquadfilternode/1633049-gain.md)
-- [type](biquadfilternode/1634361-type.md)
+- [Q](./biquadfilternode/api-1633011-q.md)
+- [detune](./biquadfilternode/api-1633351-detune.md)
+- [frequency](./biquadfilternode/api-1629095-frequency.md)
+- [gain](./biquadfilternode/api-1633049-gain.md)
+- [type](./biquadfilternode/api-1634361-type.md)
 ### Instance Methods
-- [getFrequencyResponse](biquadfilternode/1631938-getfrequencyresponse.md)
+- [getFrequencyResponse](./biquadfilternode/api-1631938-getfrequencyresponse.md)
 
 ## Relationships
 
 ### Inherits From
-- [AudioNode](audionode.md)
+- [AudioNode](./audionode.md)
 
 
 ---

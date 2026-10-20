@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Invoked when the plug-in is first loaded and when the application is removed from the Dock.
@@ -13,6 +14,10 @@ Invoked when the plug-in is first loaded and when the application is removed fro
 
 ```swift
 func setDockTile(_ dockTile: NSDockTile?)
+```
+
+```objc
+- (void) setDockTile:(NSDockTile *) dockTile;
 ```
 
 #### Discussion

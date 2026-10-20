@@ -1,7 +1,8 @@
 # LiveCommunicationKit
 
 **Framework**: LiveCommunicationKit  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Initiate and handle VoIP and cellular conversations, coordinate them with other communication apps and the system, and get ready to be a default calling or dialer app.
 
@@ -21,64 +22,64 @@ LiveCommunicationKit allows you to offer VoIP conversation functionalities in yo
 
 Using LiveCommunicationKit in your app allows people to configure their device to use your app as the default dialer or calling app.
 
-##### Manage User Privacy
+##### Manage user privacy
 
-With a person’s permission, an installed health research app that uses [`SensorKit`](https://developer.apple.com/documentation/sensorkit) entitlements may collect Speech Metrics data while your LiveCommunicationKit app is in use. To prevent this, set the [`SRResearchDataGeneration`](https://developer.apple.com/documentation/bundleresources/information-property-list/srresearchdatageneration) information property list key to `NO`.
+With a person’s permission, an installed health research app that uses [SensorKit](../SensorKit/SensorKit.md) entitlements may collect Speech Metrics data while your LiveCommunicationKit app is in use. To prevent this, set the [`SRResearchDataGeneration`](../BundleResources/information-property-list/srresearchdatageneration.md) information property list key to `NO`.
 
-> ❗ **Important**: When someone starts a conversation in your app that uses LiveCommunicationKit, your app provides the contact information of the recipient to the system. The system may use that information to indicate communication with that person as a suggestion in the Journal app, or in other apps that use the [`Journaling Suggestions`](https://developer.apple.com/documentation/journalingsuggestions) framework.
+> ❗ **Important**: When someone starts a conversation in your app that uses LiveCommunicationKit, your app provides the contact information of the recipient to the system. The system may use that information to indicate communication with that person as a suggestion in the Journal app, or in other apps that use the [Journaling Suggestions](../JournalingSuggestions/JournalingSuggestions.md) framework.
 
 ## Topics
 
 ### Essentials
-- [Initiating VoIP conversations with LiveCommunicationKit](initiating-voip-conversations-with-livecommunicationkit.md)
+- [Initiating VoIP conversations with LiveCommunicationKit](./initiating-voip-conversations-with-livecommunicationkit.md)
   Let people initiate and receive VoIP conversations, and configure your app so it can be the default calling app on a person’s device.
-- [Preparing your app to be the default dialer app](preparing-your-app-to-be-the-default-dialer-app.md)
+- [Preparing your app to be the default dialer app](./preparing-your-app-to-be-the-default-dialer-app.md)
   Let people configure their device to set your app as the default dialer app.
-- [LiveCommunicationKit updates](../updates/livecommunicationkit.md)
+- [LiveCommunicationKit updates](../Updates/livecommunicationkit.md)
   Learn about important changes to LiveCommunicationKit.
 ### Cellular network conversations
-- [class TelephonyConversationManager](telephonyconversationmanager.md)
+- [class TelephonyConversationManager](./telephonyconversationmanager.md)
   An interface for initiating cellular network conversations.
-- [struct StartCellularConversationAction](startcellularconversationaction.md)
+- [struct StartCellularConversationAction](./startcellularconversationaction.md)
   The action that starts a cellular conversation using the default calling app.
-- [struct CellularService](cellularservice.md)
+- [struct CellularService](./cellularservice.md)
   A structure that represents the cellular service account to use for starting or joining a conversation.
-- [struct Handle](handle.md)
+- [struct Handle](./handle.md)
   A way to reach a participant, such as a phone number or email address.
 ### VoIP conversations
-- [class ConversationManager](conversationmanager.md)
+- [class ConversationManager](./conversationmanager.md)
   An interface for managing and observing VoIP conversations.
-- [protocol ConversationManagerDelegate](conversationmanagerdelegate.md)
+- [protocol ConversationManagerDelegate](./conversationmanagerdelegate.md)
   Methods for managing conversations and receiving VoIP conversation updates.
-- [class ConversationHistoryManager](conversationhistorymanager.md)
+- [class ConversationHistoryManager](./conversationhistorymanager.md)
   An interface for managing and providing conversation history.
-- [class Conversation](conversation.md)
+- [class Conversation](./conversation.md)
   A type that describes a video or audio conversation.
 ### Conversation actions
-- [class ConversationAction](conversationaction.md)
+- [class ConversationAction](./conversationaction.md)
   A type that represents an action for a conversation.
-- [class EndConversationAction](endconversationaction.md)
+- [class EndConversationAction](./endconversationaction.md)
   An action that removes the local participant from a conversation and stops all audio and video streams.
-- [class JoinConversationAction](joinconversationaction.md)
+- [class JoinConversationAction](./joinconversationaction.md)
   An action for joining an incoming conversation.
-- [class MergeConversationAction](mergeconversationaction.md)
+- [class MergeConversationAction](./mergeconversationaction.md)
   An action that merges two separate conversations into one conversation.
-- [class MuteConversationAction](muteconversationaction.md)
+- [class MuteConversationAction](./muteconversationaction.md)
   An action that mutes or unmutes a conversation.
-- [class PauseConversationAction](pauseconversationaction.md)
+- [class PauseConversationAction](./pauseconversationaction.md)
   An action that stops or restarts all audio and video streams for a conversation.
-- [class PlayToneAction](playtoneaction.md)
+- [class PlayToneAction](./playtoneaction.md)
   An action that plays sequence of tones to indicate that a participant of a conversation interacted with the keypad.
-- [class SetTranslatingAction](settranslatingaction.md)
+- [class SetTranslatingAction](./settranslatingaction.md)
   An action that starts or stops translation.
-- [class StartConversationAction](startconversationaction.md)
+- [class StartConversationAction](./startconversationaction.md)
   An action that starts an outgoing conversation and causes the devices of a remote participant to ring.
-- [class UnmergeConversationAction](unmergeconversationaction.md)
+- [class UnmergeConversationAction](./unmergeconversationaction.md)
   An action that separates two previosuly merged conversations.
 ### Conversation assistance
-- [protocol LiveAssistanceExtension](liveassistanceextension.md)
+- [protocol LiveAssistanceExtension](./liveassistanceextension.md)
   The protocol you extend to provide live assistance services.
-- [enum LiveAssistance](liveassistance.md)
+- [enum LiveAssistance](./liveassistance.md)
   A namespace to collect APIs for use by container apps that provide live assistance services.
 
 

@@ -1,7 +1,8 @@
 # GSS_C_SUPPLEMENTARY_MASK
 
 **Framework**: GSS  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A mask with a width that matches the supplementary information field.
 
@@ -18,21 +19,26 @@ A mask with a width that matches the supplementary information field.
 var GSS_C_SUPPLEMENTARY_MASK: UInt { get }
 ```
 
+```c
+#define GSS_C_SUPPLEMENTARY_MASK
+```
+
 #### Discussion
 
-Shift the mask to the left by [`GSS_C_SUPPLEMENTARY_OFFSET`](gss_c_supplementary_offset.md) to put it in the correct position within the major status code to match the supplementary information field. The [`GSS_SUPPLEMENTARY_INFO`](gss_supplementary_info.md) macro does this for you, before bitwise `AND`ing with its input.
+Shift the mask to the left by [`GSS_C_SUPPLEMENTARY_OFFSET`](./gss_c_supplementary_offset.md) to put it in the correct position within the major status code to match the supplementary information field. The [`GSS_SUPPLEMENTARY_INFO`](./gss_supplementary_info.md) macro does this for you, before bitwise `AND`ing with its input.
 
 ## See Also
 
-- [var GSS_C_CALLING_ERROR_MASK: UInt](gss_c_calling_error_mask.md)
+### Masks and Offsets
+- [var GSS_C_CALLING_ERROR_MASK: UInt](./gss_c_calling_error_mask.md)
   A mask with a width that matches the calling error field.
-- [var GSS_C_CALLING_ERROR_OFFSET: Int32](gss_c_calling_error_offset.md)
+- [var GSS_C_CALLING_ERROR_OFFSET: Int32](./gss_c_calling_error_offset.md)
   The offset of the calling error field within the major status code.
-- [var GSS_C_ROUTINE_ERROR_MASK: UInt](gss_c_routine_error_mask.md)
+- [var GSS_C_ROUTINE_ERROR_MASK: UInt](./gss_c_routine_error_mask.md)
   A mask with a width that matches the routine error field.
-- [var GSS_C_ROUTINE_ERROR_OFFSET: Int32](gss_c_routine_error_offset.md)
+- [var GSS_C_ROUTINE_ERROR_OFFSET: Int32](./gss_c_routine_error_offset.md)
   The offset of the routine error field within the major status code.
-- [var GSS_C_SUPPLEMENTARY_OFFSET: Int32](gss_c_supplementary_offset.md)
+- [var GSS_C_SUPPLEMENTARY_OFFSET: Int32](./gss_c_supplementary_offset.md)
   The offset of the supplementary information field within the major status code.
 
 

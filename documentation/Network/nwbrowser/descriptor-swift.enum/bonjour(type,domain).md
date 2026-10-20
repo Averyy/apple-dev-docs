@@ -1,7 +1,8 @@
 # NWBrowser.Descriptor.bonjour(type:domain:)
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A service descriptor used to discover a Bonjour service.
 
@@ -22,7 +23,8 @@ case bonjour(type: String, domain: String?)
 
 ## See Also
 
-- [case bonjourWithTXTRecord(type: String, domain: String?)](nwbrowser/descriptor-swift.enum/bonjourwithtxtrecord(type:domain:).md)
+### Descriptor Types
+- [case bonjourWithTXTRecord(type: String, domain: String?)](./bonjourwithtxtrecord%28type,domain%29.md)
   A service descriptor used to discover a Bonjour service with associated TXT records.
 
 

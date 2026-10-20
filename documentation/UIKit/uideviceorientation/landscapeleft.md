@@ -1,15 +1,16 @@
 # UIDeviceOrientation.landscapeLeft
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device is in landscape mode, with the device held upright and the front-facing camera on the left side.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -17,19 +18,24 @@ The device is in landscape mode, with the device held upright and the front-faci
 case landscapeLeft
 ```
 
+```c
+UIDeviceOrientationLandscapeLeft
+```
+
 ## See Also
 
-- [UIDeviceOrientation.unknown](uideviceorientation/unknown.md)
+### Device orientations
+- [UIDeviceOrientation.unknown](./unknown.md)
   The orientation of the device can’t be determined.
-- [UIDeviceOrientation.portrait](uideviceorientation/portrait.md)
+- [UIDeviceOrientation.portrait](./portrait.md)
   The device is in portrait mode, with the device held upright and the front-facing camera at the top.
-- [UIDeviceOrientation.portraitUpsideDown](uideviceorientation/portraitupsidedown.md)
+- [UIDeviceOrientation.portraitUpsideDown](./portraitupsidedown.md)
   The device is in portrait mode but upside down, with the device held upright and the front-facing camera at the bottom.
-- [UIDeviceOrientation.landscapeRight](uideviceorientation/landscaperight.md)
+- [UIDeviceOrientation.landscapeRight](./landscaperight.md)
   The device is in landscape mode, with the device held upright and the front-facing camera on the right side.
-- [UIDeviceOrientation.faceUp](uideviceorientation/faceup.md)
+- [UIDeviceOrientation.faceUp](./faceup.md)
   The device is held parallel to the ground with the screen facing upwards.
-- [UIDeviceOrientation.faceDown](uideviceorientation/facedown.md)
+- [UIDeviceOrientation.faceDown](./facedown.md)
   The device is held parallel to the ground with the screen facing downwards.
 
 

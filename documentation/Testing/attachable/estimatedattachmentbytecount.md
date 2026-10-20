@@ -2,6 +2,7 @@
 
 **Framework**: Swift Testing  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An estimate of the number of bytes of memory needed to store this value as an attachment.
@@ -22,7 +23,14 @@ The testing library uses this property to determine if an attachment should be h
 
 The value of this property is approximately equal to the number of bytes that will actually be needed, or `nil` if the value cannot be computed efficiently. The default implementation of this property returns `nil`.
 
-> **Note**: O(1) unless `Self` conforms to `Collection`, in which case up to O(*n*) where *n* is the length of the collection.
+> **Complexity**: O(1) unless `Self` conforms to `Collection`, in which case up to O(*n*) where *n* is the length of the collection.
+
+## Default Implementations
+
+### Attachable Implementations
+- [var estimatedAttachmentByteCount: Int?](./estimatedattachmentbytecount-28nbn.md)
+- [var estimatedAttachmentByteCount: Int?](./estimatedattachmentbytecount-6c2cj.md)
+- [var estimatedAttachmentByteCount: Int?](./estimatedattachmentbytecount-o90w.md)
 
 
 ---

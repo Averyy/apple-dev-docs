@@ -1,7 +1,8 @@
 # NSWritingToolsCoordinator.TextReplacementReason.temporary
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to replace the text in your view when a grammar suggestion is temporarily shown to preview the proposed change in the text.
 
@@ -12,6 +13,10 @@ An option to replace the text in your view when a grammar suggestion is temporar
 
 ```swift
 case temporary
+```
+
+```c
+NSWritingToolsCoordinatorTextReplacementReasonTemporary
 ```
 
 #### Discussion

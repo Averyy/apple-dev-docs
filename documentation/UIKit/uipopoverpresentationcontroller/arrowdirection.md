@@ -1,7 +1,8 @@
 # arrowDirection
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The arrow direction in use by the popover.
 
@@ -17,13 +18,18 @@ The arrow direction in use by the popover.
 var arrowDirection: UIPopoverArrowDirection { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIPopoverArrowDirection arrowDirection;
+```
+
 #### Discussion
 
-When the popover is onscreen, this property reflects the actual arrow direction. Before and after presentation, the value of this property is [`unknown`](uipopoverarrowdirection/unknown.md).
+When the popover is onscreen, this property reflects the actual arrow direction. Before and after presentation, the value of this property is [`unknown`](../uipopoverarrowdirection/unknown.md).
 
 ## See Also
 
-- [var permittedArrowDirections: UIPopoverArrowDirection](uipopoverpresentationcontroller/permittedarrowdirections.md)
+### Configuring the popover arrows
+- [var permittedArrowDirections: UIPopoverArrowDirection](./permittedarrowdirections.md)
   The arrow directions that you allow for the popover.
 
 

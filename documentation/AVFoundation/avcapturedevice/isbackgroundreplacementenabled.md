@@ -1,7 +1,8 @@
 # isBackgroundReplacementEnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A class property that indicates whether a person enables the Background Replacement feature for this app.
 
@@ -18,9 +19,14 @@ A class property that indicates whether a person enables the Background Replacem
 class var isBackgroundReplacementEnabled: Bool { get }
 ```
 
+```objc
+@property (class, readonly, getter=isBackgroundReplacementEnabled) BOOL backgroundReplacementEnabled;
+```
+
 ## See Also
 
-- [var isBackgroundReplacementActive: Bool](avcapturedevice/isbackgroundreplacementactive.md)
+### Configuring background replacement
+- [var isBackgroundReplacementActive: Bool](./isbackgroundreplacementactive.md)
   A Boolean value that indicates whether Background Replacement is currently active on a capture device.
 
 

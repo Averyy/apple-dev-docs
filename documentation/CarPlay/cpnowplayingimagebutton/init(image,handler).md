@@ -1,7 +1,8 @@
 # init(image:handler:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Now Playing button that displays a custom image and invokes a handler.
 
@@ -16,9 +17,13 @@ Creates a Now Playing button that displays a custom image and invokes a handler.
 init(image: UIImage, handler: ((CPNowPlayingButton) -> Void)? = nil)
 ```
 
+```objc
+- (instancetype) initWithImage:(UIImage *) image handler:(void (^)(CPNowPlayingButton *)) handler;
+```
+
 #### Discussion
 
-Provide an image that is display-ready. If necessary, provide light and dark variants using an asset catalog, or use an instance of [`UIImageAsset`](https://developer.apple.com/documentation/uikit/uiimageasset) and register an image for each interface style. To properly size your image, use the display scale of the vehicle’s primary screen—see your interface controller’s [`carTraitCollection`](cpinterfacecontroller/cartraitcollection.md) property—and make sure it is no larger than [`CPNowPlayingButtonMaximumImageSize`](cpnowplayingbuttonmaximumimagesize.md).
+Provide an image that is display-ready. If necessary, provide light and dark variants using an asset catalog, or use an instance of [`UIImageAsset`](../../UIKit/uiimageasset.md) and register an image for each interface style. To properly size your image, use the display scale of the vehicle’s primary screen—see your interface controller’s [`carTraitCollection`](../cpinterfacecontroller/cartraitcollection.md) property—and make sure it is no larger than [`CPNowPlayingButtonMaximumImageSize`](../cpnowplayingbuttonmaximumimagesize.md).
 
 CarPlay doesn’t support animated images. If you provide an animated image, CarPlay uses only the first image in the animation sequence.
 
@@ -29,7 +34,8 @@ CarPlay doesn’t support animated images. If you provide an animated image, Car
 
 ## See Also
 
-- [let CPNowPlayingButtonMaximumImageSize: CGSize](cpnowplayingbuttonmaximumimagesize.md)
+### Creating a Button
+- [let CPNowPlayingButtonMaximumImageSize: CGSize](../cpnowplayingbuttonmaximumimagesize.md)
   The maximum size CarPlay supports for a button’s image.
 
 

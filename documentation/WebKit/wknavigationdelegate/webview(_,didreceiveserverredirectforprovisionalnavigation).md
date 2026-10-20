@@ -1,7 +1,8 @@
 # webView(_:didReceiveServerRedirectForProvisionalNavigation:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the web view received a server redirect for a request.
 
@@ -18,6 +19,10 @@ Tells the delegate that the web view received a server redirect for a request.
 optional func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!)
 ```
 
+```objc
+- (void) webView:(WKWebView *) webView didReceiveServerRedirectForProvisionalNavigation:(WKNavigation *) navigation;
+```
+
 ## Parameters
 
 - `webView`: The web view that is loading the content.
@@ -25,11 +30,12 @@ optional func webView(_ webView: WKWebView, didReceiveServerRedirectForProvision
 
 ## See Also
 
-- [func webView(WKWebView, didStartProvisionalNavigation: WKNavigation!)](wknavigationdelegate/webview(_:didstartprovisionalnavigation:).md)
+### Tracking the load progress of a request
+- [func webView(WKWebView, didStartProvisionalNavigation: WKNavigation!)](./webview%28_,didstartprovisionalnavigation%29.md)
   Tells the delegate that navigation from the main frame has started.
-- [func webView(WKWebView, didCommit: WKNavigation!)](wknavigationdelegate/webview(_:didcommit:).md)
+- [func webView(WKWebView, didCommit: WKNavigation!)](./webview%28_,didcommit%29.md)
   Tells the delegate that the web view has started to receive content for the main frame.
-- [func webView(WKWebView, didFinish: WKNavigation!)](wknavigationdelegate/webview(_:didfinish:).md)
+- [func webView(WKWebView, didFinish: WKNavigation!)](./webview%28_,didfinish%29.md)
   Tells the delegate that navigation is complete.
 
 

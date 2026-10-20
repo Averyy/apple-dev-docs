@@ -9,14 +9,15 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short CLOSED;
 ```
 
 ## See Also
 
-- [CONNECTING](eventsource/1629157-connecting.md)
-- [OPEN](eventsource/1630491-open.md)
+### Miscellaneous
+- [CONNECTING](./api-1629157-connecting.md)
+- [OPEN](./api-1630491-open.md)
 
 
 ---

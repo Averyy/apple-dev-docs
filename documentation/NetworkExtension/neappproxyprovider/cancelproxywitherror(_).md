@@ -1,7 +1,8 @@
 # cancelProxyWithError(_:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stop the network proxy from the App Proxy Provider.
 
@@ -18,19 +19,24 @@ Stop the network proxy from the App Proxy Provider.
 func cancelProxyWithError(_ error: (any Error)?)
 ```
 
+```objc
+- (void) cancelProxyWithError:(NSError *) error;
+```
+
 #### Discussion
 
 The App Proxy Provider should call this method when an unrecoverable error occurs that makes the proxy no longer viable.
 
 ## Parameters
 
-- `error`: An [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object containing the error that caused the proxy to be stopped. The domain and code of this `NSError` object is defined by the caller.
+- `error`: An [`NSError`](../../Foundation/nserror.md) object containing the error that caused the proxy to be stopped. The domain and code of this `NSError` object is defined by the caller.
 
 ## See Also
 
-- [func startProxy(options: [String : Any]?, completionHandler: ((any Error)?) -> Void)](neappproxyprovider/startproxy(options:completionhandler:).md)
+### Managing the app proxy life cycle
+- [func startProxy(options: [String : Any]?, completionHandler: ((any Error)?) -> Void)](./startproxy%28options,completionhandler%29.md)
   Start the network proxy.
-- [func stopProxy(with: NEProviderStopReason, completionHandler: () -> Void)](neappproxyprovider/stopproxy(with:completionhandler:).md)
+- [func stopProxy(with: NEProviderStopReason, completionHandler: () -> Void)](./stopproxy%28with,completionhandler%29.md)
   Stop the network proxy.
 
 

@@ -1,7 +1,8 @@
 # RCSService.Business.MediaEntry.ContentType.logo
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Logo content type.
 
@@ -16,7 +17,8 @@ case logo
 
 ## See Also
 
-- [RCSService.Business.MediaEntry.ContentType.other](rcsservice/business/mediaentry/contenttype-swift.enum/other.md)
+### Determining content type
+- [RCSService.Business.MediaEntry.ContentType.other](./other.md)
   Other content type.
 
 

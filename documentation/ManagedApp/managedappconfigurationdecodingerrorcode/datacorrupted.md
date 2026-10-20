@@ -1,7 +1,8 @@
 # dataCorrupted
 
 **Framework**: ManagedApp  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error code that indicates the decoder encountered corrupt data.
 

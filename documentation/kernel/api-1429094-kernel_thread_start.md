@@ -1,7 +1,8 @@
 # kernel_thread_start
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Create a kernel thread.
 
@@ -10,11 +11,11 @@ Create a kernel thread.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t kernel_thread_start(thread_continue_t continuation, void *parameter, thread_t *new_thread);
 ```
 
-#### Return_value
+#### Return Value
 
 Returns KERN_SUCCESS on success or an appropriate kernel code type.
 

@@ -1,7 +1,8 @@
 # FSVolume.XattrHandler
 
 **Framework**: FSKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Methods and properties implemented by volumes that natively or partially support extended attributes.
 
@@ -14,57 +15,62 @@ Methods and properties implemented by volumes that natively or partially support
 protocol XattrHandler : NSObjectProtocol
 ```
 
+```objc
+@protocol FSVolumeXattrHandler <NSObject>
+```
+
 #### Overview
 
-> ❗ **Important**: This protocol replaces the [`FSVolume.XattrOperations`](fsvolume/xattroperations.md) protocol. It exposes the same functionality, while using [`FSVolumeHandlerResult`](fsvolumehandlerresult.md) objects. These objects add the ability to reply with [`FSItem.Attributes`](fsitem/attributes.md) and free space from the relevant methods.
+> ❗ **Important**: This protocol replaces the [`FSVolume.XattrOperations`](./xattroperations.md) protocol. It exposes the same functionality, while using [`FSVolumeHandlerResult`](../fsvolumehandlerresult.md) objects. These objects add the ability to reply with [`FSItem.Attributes`](../fsitem/attributes.md) and free space from the relevant methods.
 
 ## Topics
 
 ### Reading and writing
-- [func getXattr(named: FSFileName, of: FSItem, context: FSContext, replyHandler: (FSGetXattrResult?, (any Error)?) -> Void)](fsvolume/xattrhandler/getxattr(named:of:context:replyhandler:).md)
+- [func getXattr(named: FSFileName, of: FSItem, context: FSContext, replyHandler: (FSGetXattrResult?, (any Error)?) -> Void)](./xattrhandler/getxattr%28named,of,context,replyhandler%29.md)
   Gets the specified extended attribute of the given item.
-- [class FSGetXattrResult](fsgetxattrresult.md)
+- [class FSGetXattrResult](../fsgetxattrresult.md)
   The result of a get-extended-attributes call.
-- [func listXattrs(of: FSItem, context: FSContext, replyHandler: (FSListXattrsResult?, (any Error)?) -> Void)](fsvolume/xattrhandler/listxattrs(of:context:replyhandler:).md)
+- [func listXattrs(of: FSItem, context: FSContext, replyHandler: (FSListXattrsResult?, (any Error)?) -> Void)](./xattrhandler/listxattrs%28of,context,replyhandler%29.md)
   Gets the list of extended attributes currently set on the given item.
-- [class FSListXattrsResult](fslistxattrsresult.md)
+- [class FSListXattrsResult](../fslistxattrsresult.md)
   The result of a list-extended-attributes call.
-- [func setXattr(named: FSFileName, to: Data?, on: FSItem, policy: FSVolume.SetXattrPolicy, context: FSContext, replyHandler: (FSSetXattrResult?, (any Error)?) -> Void)](fsvolume/xattrhandler/setxattr(named:to:on:policy:context:replyhandler:).md)
+- [func setXattr(named: FSFileName, to: Data?, on: FSItem, policy: FSVolume.SetXattrPolicy, context: FSContext, replyHandler: (FSSetXattrResult?, (any Error)?) -> Void)](./xattrhandler/setxattr%28named,to,on,policy,context,replyhandler%29.md)
   Sets the specified extended attribute data on the given item.
-- [FSVolume.SetXattrPolicy](fsvolume/setxattrpolicy.md)
+- [FSVolume.SetXattrPolicy](./setxattrpolicy.md)
   Flags to specify the policy when setting extended file attributes.
-- [class FSSetXattrResult](fssetxattrresult.md)
+- [class FSSetXattrResult](../fssetxattrresult.md)
   The result of a set-extended-attributes call.
-- [func supportedXattrNames(for: FSItem) -> [FSFileName]](fsvolume/xattrhandler/supportedxattrnames(for:).md)
+- [func supportedXattrNames(for: FSItem) -> [FSFileName]](./xattrhandler/supportedxattrnames%28for%29.md)
   Returns an array that specifies the extended attribute names the given item supports.
 ### Inspecting volume properties
-- [var xattrOperationsInhibited: Bool](fsvolume/xattrhandler/xattroperationsinhibited.md)
+- [var xattrOperationsInhibited: Bool](./xattrhandler/xattroperationsinhibited.md)
   A Boolean value that instructs FSKit not to call this protocol’s methods, even if the volume conforms to it.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [FSVolume.OpenCloseHandler](fsvolume/openclosehandler.md)
+### Implementing optional handlers
+- [FSVolume.OpenCloseHandler](./openclosehandler.md)
   Methods and properties implemented by volumes that want to receive open and close calls for each item.
-- [FSVolume.ReadWriteHandler](fsvolume/readwritehandler.md)
+- [FSVolume.ReadWriteHandler](./readwritehandler.md)
   Methods implemented for read and write operations that deliver data to and from the extension.
-- [FSVolume.AccessCheckHandler](fsvolume/accesscheckhandler.md)
+- [FSVolume.AccessCheckHandler](./accesscheckhandler.md)
   Methods and properties implemented by volumes that want to enforce access check operations.
-- [FSVolume.RenameHandler](fsvolume/renamehandler.md)
+- [FSVolume.RenameHandler](./renamehandler.md)
   Methods and properties implemented by volumes that support renaming the volume.
-- [FSVolume.PreallocateHandler](fsvolume/preallocatehandler.md)
+- [FSVolume.PreallocateHandler](./preallocatehandler.md)
   Methods and properties implemented by volumes that want to offer preallocation functions.
-- [FSVolume.ItemDeactivationHandler](fsvolume/itemdeactivationhandler.md)
+- [FSVolume.ItemDeactivationHandler](./itemdeactivationhandler.md)
   Methods and properties implemented by volumes that support deactivating items.
-- [FSVolume.KernelOffloadedIOHandler](fsvolume/kerneloffloadediohandler.md)
+- [FSVolume.KernelOffloadedIOHandler](./kerneloffloadediohandler.md)
   Methods and properties implemented by volumes that use kernel-offloaded I/O to achieve higher file transfer performance.
-- [FSVolume.DataCacheHandler](fsvolume/datacachehandler.md)
+- [FSVolume.DataCacheHandler](./datacachehandler.md)
   Methods and properties implemented by volumes that coordinate kernel-level data caching.
-- [FSVolume.SeekRegionHandler](fsvolume/seekregionhandler.md)
+- [FSVolume.SeekRegionHandler](./seekregionhandler.md)
   Methods and properties implemented by volumes that support seek operations
 
 

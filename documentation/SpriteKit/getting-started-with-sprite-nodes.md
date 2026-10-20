@@ -1,12 +1,13 @@
 # Getting Started with Sprite Nodes
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Learn the basics about using images, also known as sprites, with SpriteKit.
 
 #### Overview
 
-The simplest way to create a textured sprite node is to have SpriteKit create both the texture and the sprite for you. You store the artwork in the app bundle (ideally in an [`asset catalog`](https://developer.apple.comhttps://developer.apple.com/library/prerelease/content/documentation/Xcode/Reference/xcode_ref-Asset_Catalog_Format/)), and then load it at runtime, as shown in this code:
+The simplest way to create a textured sprite node is to have SpriteKit create both the texture and the sprite for you. You store the artwork in the app bundle (ideally in an [asset catalog](https://developer.apple.com/library/prerelease/content/documentation/Xcode/Reference/xcode_ref-Asset_Catalog_Format/)), and then load it at runtime, as shown in this code:
 
 **Swift**:
 
@@ -29,9 +30,9 @@ spaceship.position = CGPointMake(100,100);
 When you create a sprite as shown in the code above, you get a lot of default behavior for free:
 
 - The sprite node is created with a frame that matches the texture’s size.
-- The node is rendered so that it is centered on its position. The node’s [`frame`](sknode/frame.md) property holds the rectangle that defines the area it covers.
+- The node is rendered so that it is centered on its position. The node’s [`frame`](./sknode/frame.md) property holds the rectangle that defines the area it covers.
 - The texture is alpha blended into the frame buffer.
-- An [`SKTexture`](sktexture.md) object is created and attached to the node. This texture object automatically loads the texture data whenever the sprite node is in the scene, is visible, and is necessary for rendering the scene. Later, if the sprite is removed from the scene or is no longer visible, SpriteKit can delete the texture data if it needs that memory for other purposes. This automatic memory management simplifies but does not eliminate the work you need to do to manage art assets in your game.
+- An [`SKTexture`](./sktexture.md) object is created and attached to the node. This texture object automatically loads the texture data whenever the sprite node is in the scene, is visible, and is necessary for rendering the scene. Later, if the sprite is removed from the scene or is no longer visible, SpriteKit can delete the texture data if it needs that memory for other purposes. This automatic memory management simplifies but does not eliminate the work you need to do to manage art assets in your game.
 
 ##### Textures
 
@@ -44,7 +45,7 @@ Although SpriteKit can create textures for you automatically when a sprite is cr
 - Render a node tree into a texture. For example, you might want to take a screenshot of your gameplay to show to the player after he or she completes the level.
 - Preload textures into memory before presenting a scene.
 
-You do all of these things by working directly with texture objects. For more information, see the [`SKTexture`](sktexture.md) class reference.
+You do all of these things by working directly with texture objects. For more information, see the [`SKTexture`](./sktexture.md) class reference.
 
 ##### Customized Rendering Stages
 
@@ -67,9 +68,10 @@ Here are some of the possible strategies you can follow:
 
 ## See Also
 
-- [convenience init(imageNamed: String)](skspritenode/init(imagenamed:).md)
+### Creating a Sprite from an Image Filename
+- [convenience init(imageNamed: String)](./skspritenode/init%28imagenamed%29.md)
   Initializes a textured sprite using an image file.
-- [convenience init(imageNamed: String, normalMapped: Bool)](skspritenode/init(imagenamed:normalmapped:).md)
+- [convenience init(imageNamed: String, normalMapped: Bool)](./skspritenode/init%28imagenamed,normalmapped%29.md)
   Initializes a textured sprite using an image file, optionally adding a normal map to simulate 3D lighting.
 
 

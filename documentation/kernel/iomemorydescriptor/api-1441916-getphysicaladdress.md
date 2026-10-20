@@ -1,7 +1,8 @@
 # getPhysicalAddress
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Return the physical address of the first byte in the memory.
 
@@ -10,11 +11,11 @@ Return the physical address of the first byte in the memory.
 
 ## Declaration
 
-```swift
+```c
 IOPhysicalAddress getPhysicalAddress(void);
 ```
 
-#### Return_value
+#### Return Value
 
 A physical address.
 
@@ -24,15 +25,16 @@ This method returns the physical address of the first byte in the memory. It is 
 
 ## See Also
 
-- [getPageCounts](iomemorydescriptor/1812787-getpagecounts.md)
+### Getting the Memory Pages
+- [getPageCounts](./api-1812787-getpagecounts.md)
   Retrieve the number of resident and/or dirty pages encompassed by a memory descriptor.
-- [- getPageCounts](iomemorydescriptor/1441992-getpagecounts.md)
+- [- getPageCounts](./api-1441992-getpagecounts.md)
   Retrieve the number of resident and/or dirty pages encompassed by a memory descriptor.
-- [getPhysicalAddress](iomemorydescriptor/1812795-getphysicaladdress.md)
+- [getPhysicalAddress](./api-1812795-getphysicaladdress.md)
   Return the physical address of the first byte in the memory.
-- [getPhysicalSegment](iomemorydescriptor/1812807-getphysicalsegment.md)
+- [getPhysicalSegment](./api-1812807-getphysicalsegment.md)
   Break a memory descriptor into its physically contiguous segments.
-- [- getPhysicalSegment](iomemorydescriptor/1442068-getphysicalsegment.md)
+- [- getPhysicalSegment](./api-1442068-getphysicalsegment.md)
   Break a memory descriptor into its physically contiguous segments.
 
 

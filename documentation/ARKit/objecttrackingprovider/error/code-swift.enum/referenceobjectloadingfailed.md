@@ -1,7 +1,8 @@
 # ObjectTrackingProvider.Error.Code.referenceObjectLoadingFailed
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Values that indicate loading a reference object model failed.
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the elliptic curve identifier.
 
@@ -24,7 +25,8 @@ init(_ rawValue: Int)
 
 ## See Also
 
-- [init(rawValue: Int)](ascoseellipticcurveidentifier/init(rawvalue:).md)
+### Creating the identifier
+- [init(rawValue: Int)](./init%28rawvalue%29.md)
   Creates the elliptic curve identifier.
 
 

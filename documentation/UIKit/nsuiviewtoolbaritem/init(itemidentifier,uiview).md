@@ -1,7 +1,8 @@
 # init(itemIdentifier:uiView:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a toolbar item with the identifier and underlying UIKit view you specify.
 
@@ -12,6 +13,10 @@ Creates a toolbar item with the identifier and underlying UIKit view you specify
 
 ```swift
 init(itemIdentifier identifier: NSToolbarItem.Identifier, uiView: UIView)
+```
+
+```objc
+- (instancetype) initWithItemIdentifier:(NSToolbarItemIdentifier) identifier uiView:(UIView *) uiView;
 ```
 
 ## Parameters

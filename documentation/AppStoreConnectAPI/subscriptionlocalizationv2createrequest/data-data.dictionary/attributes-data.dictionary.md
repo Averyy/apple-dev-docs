@@ -1,7 +1,8 @@
 # SubscriptionLocalizationV2CreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a SubscriptionLocalizationV2CreateRequest resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a SubscriptionLocalizationV2CreateRequest resource.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionLocalizationV2CreateRequest.Data.Attributes
 ```
 
@@ -22,7 +23,8 @@ object SubscriptionLocalizationV2CreateRequest.Data.Attributes
 
 ## See Also
 
-- [object SubscriptionLocalizationV2CreateRequest.Data.Relationships](subscriptionlocalizationv2createrequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object SubscriptionLocalizationV2CreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

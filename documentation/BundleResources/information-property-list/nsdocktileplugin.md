@@ -1,16 +1,18 @@
 # NSDockTilePlugIn
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The name of the app’s plug-in bundle.
 
 **Availability**:
 - macOS 10.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSDockTilePlugIn` (Dock Tile plugin path)
+- **Type**: string
 
 #### Discussion
 

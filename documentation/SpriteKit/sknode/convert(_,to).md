@@ -1,18 +1,19 @@
 # convert(_:to:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts a point in this node’s coordinate system to the coordinate system of another node in the node tree.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,10 +21,14 @@ Converts a point in this node’s coordinate system to the coordinate system of 
 func convert(_ point: CGPoint, to node: SKNode) -> CGPoint
 ```
 
+```objc
+- (CGPoint) convertPoint:(CGPoint) point toNode:(SKNode *) node;
+```
+
 ## Mentions
 
-- [Connecting Bodies with Joints](connecting-bodies-with-joints.md)
-- [Converting Coordinate Spaces](converting-coordinate-spaces.md)
+- [Connecting Bodies with Joints](../connecting-bodies-with-joints.md)
+- [Converting Coordinate Spaces](../converting-coordinate-spaces.md)
 
 #### Return Value
 
@@ -36,9 +41,10 @@ The same point converted to the other node’s coordinate system.
 
 ## See Also
 
-- [Converting Coordinate Spaces](converting-coordinate-spaces.md)
+### Converting Between Coordinate Systems of Different Nodes
+- [Converting Coordinate Spaces](../converting-coordinate-spaces.md)
   Convert positions across the various coordinate spaces in a scene.
-- [func convert(CGPoint, from: SKNode) -> CGPoint](sknode/convert(_:from:).md)
+- [func convert(CGPoint, from: SKNode) -> CGPoint](./convert%28_,from%29.md)
   Converts a point from the coordinate system of another node in the node tree to the coordinate system of this node.
 
 

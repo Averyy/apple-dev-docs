@@ -1,7 +1,8 @@
 # enableRankedResults
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the query sorts results by their relevance.
 
@@ -18,13 +19,18 @@ A Boolean value that indicates whether the query sorts results by their relevanc
 var enableRankedResults: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL enableRankedResults;
+```
+
 #### Discussion
 
 The default value of this property is `true`. Setting the property to `false` causes Spotlight to return results as it finds them instead of ordering them by their relevance or saliency to the search term.
 
 ## See Also
 
-- [var maxRankedResultCount: Int](csuserquerycontext/maxrankedresultcount.md)
+### Configuring the ranked results behavior
+- [var maxRankedResultCount: Int](./maxrankedresultcount.md)
   The maximum number of ranked results to return during the query.
 
 

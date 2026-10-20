@@ -1,7 +1,8 @@
 # stemV
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the thickness of the dominant vertical stems of glyphs in a font.
 
@@ -10,7 +11,7 @@ Returns the thickness of the dominant vertical stems of glyphs in a font.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,23 +21,28 @@ Returns the thickness of the dominant vertical stems of glyphs in a font.
 var stemV: CGFloat { get }
 ```
 
+```c
+extern CGFloat CGFontGetStemV(CGFontRef font);
+```
+
 ## See Also
 
-- [var ascent: Int32](cgfont/ascent.md)
+### Examining Font Metrics
+- [var ascent: Int32](./ascent.md)
   Returns the ascent of a font.
-- [var capHeight: Int32](cgfont/capheight.md)
+- [var capHeight: Int32](./capheight.md)
   Returns the cap height of a font.
-- [var descent: Int32](cgfont/descent.md)
+- [var descent: Int32](./descent.md)
   Returns the descent of a font.
-- [var fontBBox: CGRect](cgfont/fontbbox.md)
+- [var fontBBox: CGRect](./fontbbox.md)
   Returns the bounding box of a font.
-- [var italicAngle: CGFloat](cgfont/italicangle.md)
+- [var italicAngle: CGFloat](./italicangle.md)
   Returns the italic angle of a font.
-- [var leading: Int32](cgfont/leading.md)
+- [var leading: Int32](./leading.md)
   Returns the leading of a font.
-- [var unitsPerEm: Int32](cgfont/unitsperem.md)
+- [var unitsPerEm: Int32](./unitsperem.md)
   Returns the number of glyph space units per em for the provided font.
-- [var xHeight: Int32](cgfont/xheight.md)
+- [var xHeight: Int32](./xheight.md)
   Returns the x-height of a font.
 
 

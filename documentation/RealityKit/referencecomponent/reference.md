@@ -1,7 +1,8 @@
 # reference
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The root entity of the referenced entity file.
 

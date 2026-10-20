@@ -1,16 +1,17 @@
 # init(systemFrame:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new window scene geometry preferences object with the specified window frame.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS
+- iPadOS
 - Mac Catalyst 16.0+
-- tvOS ?+
-- visionOS ?+
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,9 +19,14 @@ Initializes a new window scene geometry preferences object with the specified wi
 convenience init(systemFrame: CGRect)
 ```
 
+```objc
+- (instancetype) initWithSystemFrame:(CGRect) systemFrame;
+```
+
 ## See Also
 
-- [init()](uiwindowscene/geometrypreferences/mac/init.md)
+### Creating a geometry preferences object
+- [init()](./init%28%29.md)
   Initializes a new window scene geometry preferences object.
 
 

@@ -1,7 +1,8 @@
 # maxCommandBufferCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An integer that sets the maximum number of uncompleted command buffers the queue can allow.
 
@@ -17,6 +18,10 @@ An integer that sets the maximum number of uncompleted command buffers the queue
 
 ```swift
 var maxCommandBufferCount: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger maxCommandBufferCount;
 ```
 
 

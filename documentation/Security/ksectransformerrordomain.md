@@ -1,7 +1,8 @@
 # kSecTransformErrorDomain
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain of any error object created by a transform on failure.
 
@@ -15,9 +16,13 @@ The domain of any error object created by a transform on failure.
 let kSecTransformErrorDomain: CFString
 ```
 
+```c
+extern CFStringRef const kSecTransformErrorDomain;
+```
+
 #### Discussion
 
-Use this [`CFError`](https://developer.apple.com/documentation/corefoundation/cferror) object to determine what went wrong.
+Use this [`CFError`](../CoreFoundation/cferror.md) object to determine what went wrong.
 
 
 ---

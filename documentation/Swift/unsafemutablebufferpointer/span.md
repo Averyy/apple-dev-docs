@@ -1,7 +1,8 @@
 # span
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A span over the elements of this buffer.
 
@@ -30,7 +31,7 @@ The lifetime of the returned span matches the lifetime of the binding which retu
 
 > **Note**: This property is unsafe because it cannot guarantee that the underlying memory remains valid and immutable for the lifetime of the returned span.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

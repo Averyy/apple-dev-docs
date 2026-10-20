@@ -1,7 +1,8 @@
 # init(to:by:mode:timing:isAdditive:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a action to animate towards a final value. The starting value is determined by adding the inverse of `by` to the specified final value.
 
@@ -18,6 +19,8 @@ Creates a action to animate towards a final value. The starting value is determi
 ```swift
 init(to: Value, by: Value, mode: FromToByAction<Value>.TransformMode = .default, timing: AnimationTimingFunction = .linear, isAdditive: Bool = false)
 ```
+
+Available when `Value` is `Transform`.
 
 #### Discussion
 

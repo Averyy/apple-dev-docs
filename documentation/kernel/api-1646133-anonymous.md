@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kATADefaultRetries](1646133-anonymous/katadefaultretries.md)
-- [kATAZeroRetries](1646133-anonymous/katazeroretries.md)
+- [kATADefaultRetries](./api-1646133-anonymous/katadefaultretries.md)
+- [kATAZeroRetries](./api-1646133-anonymous/katazeroretries.md)
 
 
 ---

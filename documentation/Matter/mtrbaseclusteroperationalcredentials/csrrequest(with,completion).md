@@ -1,7 +1,8 @@
 # csrRequest(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func csrRequest(with params: MTROperationalCredentialsClusterCSRRequestParams, completion: @escaping @Sendable (MTROperationalCredentialsClusterCSRResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func csrRequest(with params: MTROperationalCredentialsClusterCSRRequestParams) async throws -> MTROperationalCredentialsClusterCSRResponseParams
+```
+
+```objc
+- (void) CSRRequestWithParams:(MTROperationalCredentialsClusterCSRRequestParams *) params completion:(void (^)(MTROperationalCredentialsClusterCSRResponseParams *data, NSError *error)) completion;
 ```
 
 

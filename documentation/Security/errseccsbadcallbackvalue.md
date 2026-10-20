@@ -1,7 +1,8 @@
 # errSecCSBadCallbackValue
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The monitor callback returned invalid value.
 
@@ -13,6 +14,10 @@ The monitor callback returned invalid value.
 
 ```swift
 var errSecCSBadCallbackValue: OSStatus { get }
+```
+
+```c
+errSecCSBadCallbackValue
 ```
 
 

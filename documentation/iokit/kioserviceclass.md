@@ -1,7 +1,8 @@
 # kIOServiceClass
 
 **Framework**: IOKit  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var kIOServiceClass: String { get }
+```
+
+```c
+#define kIOServiceClass
 ```
 
 

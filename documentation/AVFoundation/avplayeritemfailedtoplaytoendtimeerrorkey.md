@@ -1,7 +1,8 @@
 # AVPlayerItemFailedToPlayToEndTimeErrorKey
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key to retrieve the error object from the notification’s user information dictionary.
 
@@ -18,6 +19,10 @@ The key to retrieve the error object from the notification’s user information 
 
 ```swift
 let AVPlayerItemFailedToPlayToEndTimeErrorKey: String
+```
+
+```c
+extern NSString * const AVPlayerItemFailedToPlayToEndTimeErrorKey;
 ```
 
 

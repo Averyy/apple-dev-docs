@@ -1,7 +1,8 @@
 # LegacyProfile
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The declaration to configure a legacy profile.
 
@@ -16,7 +17,7 @@ The declaration to configure a legacy profile.
 
 ## Declaration
 
-```swift
+```
 object LegacyProfile
 ```
 
@@ -33,19 +34,23 @@ The profile may contain any payload type other than the following:
 
 If a user enrollment triggers this configuration: in macOS the system silently ignores any MDMv1 payloads in macOS where the User Enrollment Mode setting is `forbidden`; in iOS, tvOS, watchOS and visionOS, the system rejects the entire profile if any MDMv1 payload has its User Enrollment Mode setting set to `forbidden`.
 
-##### Transition Profiles From Mdm
+##### Transition profiles from MDM
 
 A declarative device management (DDM) legacy profile can take control of profiles installed via MDM. This avoids the need to first remove the MDM profile, before installing the DDM equivalent. DDM cannot take over control of non-MDM-installed profiles.
 
 The rules for transitioning profiles are:
 
-1. An existing MDM-installed profile is present (installed by MDM using the [`Install Profile`](install-profile-command.md)).
+1. An existing MDM-installed profile is present (installed by MDM using the [`Install Profile`](./install-profile-command.md)).
 2. DDM is enabled on the device.
-3. The server sends a legacy profile configuration to the device and ensures it is “activated”. 1. The DDM profile that the configuration applies needs to conform to the following requirements: 1. The DDM profile’s `PayloadIdentifier` and `PayloadUUID` need to match that of the MDM profile.
-2. The DDM profile needs to have the same number of payloads as the MDM profile.
-3. The DDM profile payloads needs to have the same `PayloadType`, `PayloadIdentifier`, and `PayloadUUID`, in the same order as the profile payloads in the MDM profile.
-2. If the DDM profile doesn’t conform to the above requirements, the configuration isn’t applied and its `valid` status is set to `invalid`.
-3. The [`Profile List`](profile-list-command.md) can be used to determine the “structure” of existing MDM profiles to satisfy the above requirements.
+3. The server sends a legacy profile configuration to the device and ensures it is “activated”.
+
+   1. The DDM profile that the configuration applies needs to conform to the following requirements:
+
+      1. The DDM profile’s `PayloadIdentifier` and `PayloadUUID` need to match that of the MDM profile.
+      2. The DDM profile needs to have the same number of payloads as the MDM profile.
+      3. The DDM profile payloads needs to have the same `PayloadType`, `PayloadIdentifier`, and `PayloadUUID`, in the same order as the profile payloads in the MDM profile.
+   2. If the DDM profile doesn’t conform to the above requirements, the configuration isn’t applied and its `valid` status is set to `invalid`.
+   3. The [`Profile List`](./profile-list-command.md) can be used to determine the “structure” of existing MDM profiles to satisfy the above requirements.
 
 When DDM takes control of the MDM profile, the following occurs:
 
@@ -53,7 +58,7 @@ When DDM takes control of the MDM profile, the following occurs:
 2. Any attempt to install, update, or remove the profile using MDM commands fails (using the usual identifier and UUID matching rules). This holds true while the DDM profile is active.
 3. Updates to the DDM configuration result in the system reapplying the profile which updates the system state with any new or changed settings.
 
-##### Configuration Availability
+##### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -65,7 +70,7 @@ When DDM takes control of the MDM profile, the following occurs:
 | Allowed in user scope | macOS, Shared iPad |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration Examples
+##### Configuration examples
 
 **URL**:
 
@@ -99,40 +104,47 @@ Downloads the profile using an asset.
 
 ## Properties
 
-- `ProfileAssetReference` (string): The identifier of an asset declaration containing a reference to the profile data. The corresponding asset needs to be of type `com.apple.asset.data`. The referenced data needs to be a property list file, and the asset’s “ContentType” value set to match the data type. One of `ProfileURL` or `ProfileAssetReference` needs to be present. Available: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+ | visionOS 27+ | watchOS 27+
-- `ProfileURL` (string): The URL of the profile to download and install, which needs to start with `https://`. The request uses MDM semantics, which includes the device-identity certificate, and any user authentication. This is equivalent to an MDM request made to the `CheckInURL` or `ServerURL`. One of `ProfileURL` or `ProfileAssetReference` needs to be present.
+- `ProfileAssetReference` (string): The identifier of an asset declaration containing a reference to the profile data. The corresponding asset needs to be of type `com.apple.asset.data`. The referenced data needs to be a property list file, and the asset’s “ContentType” value set to match the data type.
+
+  One of `ProfileURL` or `ProfileAssetReference` needs to be present.
+
+  Available: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+ | visionOS 27+ | watchOS 27+
+- `ProfileURL` (string): The URL of the profile to download and install, which needs to start with `https://`. The request uses MDM semantics, which includes the device-identity certificate, and any user authentication. This is equivalent to an MDM request made to the `CheckInURL` or `ServerURL`.
+
+  One of `ProfileURL` or `ProfileAssetReference` needs to be present.
 
 ## See Also
 
-- [object AccessibilitySettings](accessibilitysettings.md)
+### Configurations
+- [object AccessibilitySettings](./accessibilitysettings.md)
   The declaration to configure accessibility settings.
-- [object AccountCalDAV](accountcaldav.md)
+- [object AccountCalDAV](./accountcaldav.md)
   The declaration to configure a Calendar account.
-- [object AccountCardDAV](accountcarddav.md)
+- [object AccountCardDAV](./accountcarddav.md)
   The declaration to configure a Contacts account.
-- [object AccountExchange](accountexchange.md)
+- [object AccountExchange](./accountexchange.md)
   The declaration to configure an Exchange account.
-- [object AccountGoogle](accountgoogle.md)
+- [object AccountGoogle](./accountgoogle.md)
   The declaration to configure a Google account.
-- [object AccountLDAP](accountldap.md)
+- [object AccountLDAP](./accountldap.md)
   The declaration to configure a Lightweight Directory Access Protocol (LDAP) account.
-- [object AccountMail](accountmail.md)
+- [object AccountMail](./accountmail.md)
   The declaration to configure a Mail account.
-- [object AccountSettings](accountsettings.md)
+- [object AccountSettings](./accountsettings.md)
   The declaration to configure account settings.
-- [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
+- [object AccountSubscribedCalendar](./accountsubscribedcalendar.md)
   The declaration to configure a subscribed calendar.
-- [object AppManaged](appmanaged.md)
+- [object AppManaged](./appmanaged.md)
   The declaration to configure a managed app.
-- [object AppSettings](appsettings.md)
+- [object AppSettings](./appsettings.md)
   The declaration to configure app settings.
-- [object AudioAccessorySettings](audioaccessorysettings.md)
+- [object AudioAccessorySettings](./audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCaching](./contentcaching.md)
   The declaration to configure the Content Caching service.
-- [object DiskManagementSettings](diskmanagementsettings.md)
+- [object DiskManagementSettings](./diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
-- [object ExtensibleSSO](extensiblesso.md)
+- [object ExtensibleSSO](./extensiblesso.md)
   The declaration to configure Extensible Single Sign-On.
 
 

@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the action is currently enabled.
 
@@ -9,7 +10,7 @@ A Boolean value indicating whether the action is currently enabled.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,20 @@ A Boolean value indicating whether the action is currently enabled.
 var isEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isEnabled) BOOL enabled;
+```
+
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true). Changing the value to [`false`](https://developer.apple.com/documentation/swift/false) causes the action to appear dimmed in the resulting alert. When an action is disabled, taps on the corresponding button have no effect.
+The default value of this property is [`true`](../../Swift/true.md). Changing the value to [`false`](../../Swift/false.md) causes the action to appear dimmed in the resulting alert. When an action is disabled, taps on the corresponding button have no effect.
 
 ## See Also
 
-- [var title: String?](uialertaction/title.md)
+### Getting the action’s attributes
+- [var title: String?](./title.md)
   The title of the action’s button.
-- [var style: UIAlertAction.Style](uialertaction/style-swift.property.md)
+- [var style: UIAlertAction.Style](./style-swift.property.md)
   The style that applies to the action’s button.
 
 

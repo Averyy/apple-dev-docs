@@ -1,7 +1,8 @@
 # kSecAttrKeyTypeECSECPrimeRandom
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Elliptic curve algorithm.
 
@@ -18,6 +19,10 @@ Elliptic curve algorithm.
 
 ```swift
 let kSecAttrKeyTypeECSECPrimeRandom: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrKeyTypeECSECPrimeRandom;
 ```
 
 

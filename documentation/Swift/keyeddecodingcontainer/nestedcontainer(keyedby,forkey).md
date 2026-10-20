@@ -1,7 +1,8 @@
 # nestedContainer(keyedBy:forKey:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the data stored for the given key as represented in a container keyed by the given key type.
 
@@ -26,7 +27,7 @@ A keyed decoding container view into `self`.
 
 #### Discussion
 
-> **Note**: `DecodingError.typeMismatch` if the encountered stored value is not a keyed container.
+> **Throws**: `DecodingError.typeMismatch` if the encountered stored value is not a keyed container.
 
 ## Parameters
 

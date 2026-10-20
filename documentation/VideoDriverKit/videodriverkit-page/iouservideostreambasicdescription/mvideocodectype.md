@@ -1,23 +1,25 @@
 # mVideoCodecType
 
 **Framework**: VideoDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 IOUserVideoFormatID mVideoCodecType;
 ```
 
 ## See Also
 
-- [IOUserVideoFormatID](videodriverkit/iouservideoformatid.md)
+### Identifying the codec
+- [IOUserVideoFormatID](../iouservideoformatid.md)
   Identifiers used for formats of audio data.
-- [mVideoCodecFlags](videodriverkit/iouservideostreambasicdescription/mvideocodecflags.md)
-- [IOUserVideoFormatFlags](videodriverkit/iouservideoformatflags.md)
+- [mVideoCodecFlags](./mvideocodecflags.md)
+- [IOUserVideoFormatFlags](../iouservideoformatflags.md)
   Standard format flags for a basic description.
 
 

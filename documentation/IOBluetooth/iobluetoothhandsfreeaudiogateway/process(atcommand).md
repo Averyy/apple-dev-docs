@@ -1,7 +1,8 @@
 # process(atCommand:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Processes a command from a connected Bluetooth hands-free phone or headset.
 
@@ -14,17 +15,22 @@ Processes a command from a connected Bluetooth hands-free phone or headset.
 func process(atCommand: String!)
 ```
 
+```objc
+- (void) processATCommand:(NSString *) atCommand;
+```
+
 ## Parameters
 
 - `atCommand`: A string containing the AT command sent from the hands-free Bluetooth device.
 
 ## See Also
 
-- [func sendResponse(String!)](iobluetoothhandsfreeaudiogateway/sendresponse(_:).md)
+### Sending and Receiving Commands
+- [func sendResponse(String!)](./sendresponse%28_%29.md)
   Sends data followed by a success message to a connected Bluetooth hands-free phone or headset.
-- [func sendResponse(String!, withOK: Bool)](iobluetoothhandsfreeaudiogateway/sendresponse(_:withok:).md)
+- [func sendResponse(String!, withOK: Bool)](./sendresponse%28_,withok%29.md)
   Sends data followed by an optional success message to a connected Bluetooth hands-free phone or headset.
-- [func sendOKResponse()](iobluetoothhandsfreeaudiogateway/sendokresponse.md)
+- [func sendOKResponse()](./sendokresponse%28%29.md)
   Sends a success message to a connected Bluetooth hands-free phone or headset.
 
 

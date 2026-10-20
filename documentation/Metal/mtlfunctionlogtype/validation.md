@@ -1,7 +1,8 @@
 # MTLFunctionLogType.validation
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A message related to usage validation.
 
@@ -17,6 +18,10 @@ A message related to usage validation.
 
 ```swift
 case validation
+```
+
+```c
+MTLFunctionLogTypeValidation
 ```
 
 

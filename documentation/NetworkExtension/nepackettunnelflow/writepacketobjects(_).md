@@ -1,7 +1,8 @@
 # writePacketObjects(_:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Write multiple IP packets to the TUN interface.
 
@@ -19,13 +20,18 @@ Write multiple IP packets to the TUN interface.
 func writePacketObjects(_ packets: [NEPacket]) -> Bool
 ```
 
+```objc
+- (BOOL) writePacketObjects:(NSArray<NEPacket *> *) packets;
+```
+
 ## See Also
 
-- [func readPacketObjects(completionHandler: ([NEPacket]) -> Void)](nepackettunnelflow/readpacketobjects(completionhandler:).md)
+### Handling IP packets
+- [func readPacketObjects(completionHandler: ([NEPacket]) -> Void)](./readpacketobjects%28completionhandler%29.md)
   Read multiple IP packets from the TUN interface.
-- [func readPackets(completionHandler: ([Data], [NSNumber]) -> Void)](nepackettunnelflow/readpackets(completionhandler:).md)
+- [func readPackets(completionHandler: ([Data], [NSNumber]) -> Void)](./readpackets%28completionhandler%29.md)
   Reads IP packets from the TUN interface.
-- [func writePackets([Data], withProtocols: [NSNumber]) -> Bool](nepackettunnelflow/writepackets(_:withprotocols:).md)
+- [func writePackets([Data], withProtocols: [NSNumber]) -> Bool](./writepackets%28_,withprotocols%29.md)
   Writes IP packets to the TUN interface.
 
 

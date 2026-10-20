@@ -1,7 +1,8 @@
 # addItem(withProductID:completionHandler:)
 
 **Framework**: Media Player  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the designated item to the user’s music library.
 
@@ -14,20 +15,30 @@ Adds the designated item to the user’s music library.
 ## Declaration
 
 ```swift
+func addItem(withProductID productID: String, completionHandler: (@Sendable ([MPMediaEntity], (any Error)?) -> Void)? = nil)
+```
+
+```swift
 func addItem(withProductID productID: String) async throws -> [MPMediaEntity]
+```
+
+```objc
+- (void) addItemWithProductID:(NSString *) productID completionHandler:(void (^)(NSArray<__kindof MPMediaEntity *> *entities, NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-Use this method to add media items to a user’s music library. Use the [`Apple Music API Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/AppleMusicWebServicesReference/index.html#//apple_ref/doc/uid/TP40017625) to search for content contained in the iTunes, App, Book, and Mac App stores.
+Use this method to add media items to a user’s music library. Use the [Apple Music API Reference](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/AppleMusicWebServicesReference/index.html#//apple_ref/doc/uid/TP40017625) to search for content contained in the iTunes, App, Book, and Mac App stores.
 
 > **Note**:  This method only works for 64-bit apps.
 
 ## Parameters
 
 - `productID`: The product identifier for the media item to add.
-- `completionHandler`: A block that the system calls after it plays the media item. - **entities**: An array containing the media items added to the user’s music library.
-- **error**: If an error occurred, this parameter holds the error object that explains the error. Otherwise, the value of this parameter is `nil`.
+- `completionHandler`: A block that the system calls after it plays the media item.
+
+  - **entities**: An array containing the media items added to the user’s music library.
+  - **error**: If an error occurred, this parameter holds the error object that explains the error. Otherwise, the value of this parameter is `nil`.
 
 
 ---

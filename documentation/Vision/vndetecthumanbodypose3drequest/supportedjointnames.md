@@ -1,7 +1,8 @@
 # supportedJointNames
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the joint group names the request supports.
 
@@ -21,11 +22,12 @@ var supportedJointNames: [VNHumanBodyPose3DObservation.JointName] { get throws }
 
 ## Mentions
 
-- [Identifying 3D human body poses in images](identifying-3d-human-body-poses-in-images.md)
+- [Identifying 3D human body poses in images](../identifying-3d-human-body-poses-in-images.md)
 
 ## See Also
 
-- [var supportedJointsGroupNames: [VNHumanBodyPose3DObservation.JointsGroupName]](vndetecthumanbodypose3drequest/supportedjointsgroupnames.md)
+### Determining Supported Joints
+- [var supportedJointsGroupNames: [VNHumanBodyPose3DObservation.JointsGroupName]](./supportedjointsgroupnames.md)
   Returns the joint names the request supports.
 
 

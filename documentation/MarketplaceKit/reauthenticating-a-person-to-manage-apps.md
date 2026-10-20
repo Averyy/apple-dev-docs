@@ -1,6 +1,7 @@
 # Reauthenticating a person to manage apps
 
-**Framework**: MarketplaceKit
+**Framework**: MarketplaceKit  
+**Role**: Article
 
 Renew your app’s authorization when an app needs updating or when a device restores from backup.
 
@@ -11,22 +12,22 @@ If your marketplace app restricts the download of apps according to specific cri
 - Reinstallation of your marketplace app, when a person restores their device from a backup and your alternative app marketplace is one of the apps to restore. This situation differs from the original install because it lacks the context of an existing marketplace website session.
 - App updates, when a person interacts with your marketplace app’s UI, for example, by tapping an app’s Update button. It can also happen, when Automatic Updates are on, as the system periodically checks your server for newer versions of the installed apps.
 
-> **Note**: [`MarketplaceKit`](MarketplaceKit.md) implements the OAuth2.0 specification for reauthentication described in [`RFC 8693`](https://developer.apple.comhttps://www.rfc-editor.org/rfc/rfc8693).
+> **Note**: [MarketplaceKit](./MarketplaceKit.md) implements the OAuth2.0 specification for reauthentication described in [RFC 8693](https://www.rfc-editor.org/rfc/rfc8693).
 
-#### Reinstall an Alternative Marketplace From a Backup
+#### Reinstall an alternative marketplace from a backup
 
-If a person restores their device from a backup, a previously installed alternative marketplace app and its apps display as darkened placeholders on the Home Screen. When the person taps a placeholder, the system attempts to reinstall the apps beginning with the alternative marketplace. The system calls the `restores` endpoint in your `marketplace-kit` configuration file (see [`Installing your app from your website`](installing-your-app-from-your-website.md)) but the communication lacks an access or bearer token. When you restrict your alternative marketplace app’s downloads to qualified users, notice the missing access token and replace it by reauthenticating the person. Respond with `HTTP` code `401` or `403` and the system instructs the person to log in by presenting a Home Screen prompt that reads:
+If a person restores their device from a backup, a previously installed alternative marketplace app and its apps display as darkened placeholders on the Home Screen. When the person taps a placeholder, the system attempts to reinstall the apps beginning with the alternative marketplace. The system calls the `restores` endpoint in your `marketplace-kit` configuration file (see [Installing your app from your website](./installing-your-app-from-your-website.md)) but the communication lacks an access or bearer token. When you restrict your alternative marketplace app’s downloads to qualified users, notice the missing access token and replace it by reauthenticating the person. Respond with `HTTP` code `401` or `403` and the system instructs the person to log in by presenting a Home Screen prompt that reads:
 
-```None
+```
 Verification Required 
 Tap Continue and sign in to install this app.
 ```
 
-The system calls your `authorization_endpoint` endpoint, as specified in your server’s `oauth-authorization-server` configuration. For more information about the `oauth-authorization-server` configuration, see [`Installing your app from your website`](installing-your-app-from-your-website.md).
+The system calls your `authorization_endpoint` endpoint, as specified in your server’s `oauth-authorization-server` configuration. For more information about the `oauth-authorization-server` configuration, see [Installing your app from your website](./installing-your-app-from-your-website.md).
 
 An example `authorization_endpoint` call follows, where “example.com/authorize” is the marketplace server’s authorization endpoint:
 
-```None
+```
 https://example.com/authorize
     ?login_hint=user-name@example.com
     &client_id=D4C1C937-D9B4-4BB6-BCD3-5E0850143EF5
@@ -47,18 +48,20 @@ https://example.com/authorize
 | `state` | A value that enhances security. Return it in your authorization response. |
 | `redirect_uri` | A special URL scheme at which the system confirms authorization. |
 
-> 💡 **Tip**: For more information about: - Login hints, response types, or redirect URI, see [`OpenID Connect Core`](https://developer.apple.comhttps://openid.net/specs/openid-connect-core-1_0.html).
-- Code challenges, see the [`RFC7636 - Proof Key for Code Exchange`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc7636).
+> 💡 **Tip**: For more information about:
+>
+> - Login hints, response types, or redirect URI, see [OpenID Connect Core](https://openid.net/specs/openid-connect-core-1_0.html).
+> - Code challenges, see the [RFC7636 - Proof Key for Code Exchange](https://datatracker.ietf.org/doc/html/rfc7636).
 
 In response to the call, your authorization endpoint provides a login page for the person to enter their credentials. On the login page, display the account based on the `login_hint` request parameter.
 
 After your server validates the person’s credentials, your login page routes to the `redirect_uri` request parameter. Add an authorization code into the call by setting a `code` parameter to a one-time, generated value. For example:
 
-```None
+```
 app-distribution-oauth:?code=sib4eJtJBmkL312KjyoNlSFeDrpCOKnUwheZGip[...]
 ```
 
-For more information on generating an authorization response, see [`OAuth 2.0 Authorization Code Grant`](https://developer.apple.comhttps://oauth.net/2/grant-types/authorization-code).
+For more information on generating an authorization response, see [OAuth 2.0 Authorization Code Grant](https://oauth.net/2/grant-types/authorization-code).
 
 Next, the system calls your `token_endpoint` and provides the authorization code. Here’s an example POST body:
 
@@ -78,7 +81,7 @@ code=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImJvZGVnYS1rZXlpZCJ[...]
 
 In response, your token endpoint sends an access token and an optional refresh token:
 
-```None
+```
 {
     "token_type": "Bearer",
     "issued_token_type": "urn:ietf:params:oauth:token-type:access_token",
@@ -89,11 +92,11 @@ In response, your token endpoint sends an access token and an optional refresh t
 }
 ```
 
-Completion of the authentication flow authorizes the system to reinstall the app on the person’s behalf. Next, the system again calls the marketplace’s `"restores"` endpoint that the `marketplace-kit` configuration specifies. This time, the system provides the access or bearer token in the header. For more information about serving the `"restores"` request, see [`Installing your app from your website`](installing-your-app-from-your-website.md).
+Completion of the authentication flow authorizes the system to reinstall the app on the person’s behalf. Next, the system again calls the marketplace’s `"restores"` endpoint that the `marketplace-kit` configuration specifies. This time, the system provides the access or bearer token in the header. For more information about serving the `"restores"` request, see [Installing your app from your website](./installing-your-app-from-your-website.md).
 
-#### Reinstall an App From a Backup
+#### Reinstall an app from a backup
 
-After the system restores your alternative marketplace app from a backup, it proceeds to reinstall the other apps from your marketplace. The system sends a POST to your `restores` endpoint with a header decorated with the access token. Your marketplace app adds the token to the header by implementing the [`MarketplaceAppExtension`](marketplaceappextension.md) method [`additionalHeaders(for:account:)`](marketplaceappextension/additionalheaders(for:account:).md). Then, your server reads the token in the request and determines the response:
+After the system restores your alternative marketplace app from a backup, it proceeds to reinstall the other apps from your marketplace. The system sends a POST to your `restores` endpoint with a header decorated with the access token. Your marketplace app adds the token to the header by implementing the [`MarketplaceAppExtension`](./marketplaceappextension.md) method [`additionalHeaders(for:account:)`](./marketplaceappextension/additionalheaders%28for,account%29.md). Then, your server reads the token in the request and determines the response:
 
 - If the access token is valid and the apps are available, return the apps for installation.
 - If the token is missing, respond from your marketplace server with an HTTP `401`.
@@ -101,32 +104,33 @@ After the system restores your alternative marketplace app from a backup, it pro
 
 In any of these cases, the system routes the person from the darkened app icon on the Home Screen into your alternative marketplace app to reauthenticate with a prompt that reads:
 
-```None
+```
 Verification Required 
 To install "App 1", you need to verify your account in Megabyte Mart.
 ```
 
-When your marketplace app launches, check for a missing or invalid access token. In either case, you can reauthenticate the person by presenting a webpage with [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession) that enables the person to enter their credentials.
+When your marketplace app launches, check for a missing or invalid access token. In either case, you can reauthenticate the person by presenting a webpage with [`ASWebAuthenticationSession`](../AuthenticationServices/aswebauthenticationsession.md) that enables the person to enter their credentials.
 
-After the person signs in, store the renewed access token locally. Call [`didAuthenticate(account:)`](applibrary/didauthenticate(account:).md), which instructs the system to retry the app installation. This time, your marketplace extension decorates the header of the restores endpoint POST with a renewed access token for the system to complete the reinstallation.
+After the person signs in, store the renewed access token locally. Call [`didAuthenticate(account:)`](./applibrary/didauthenticate%28account%29.md), which instructs the system to retry the app installation. This time, your marketplace extension decorates the header of the restores endpoint POST with a renewed access token for the system to complete the reinstallation.
 
-#### Reauthenticate a Person in Your Marketplace App or Extension
+#### Reauthenticate a person in your marketplace app or extension
 
-If your marketplace app is running while your marketplace server encounters an invalid access token, the system calls your extension’s [`requestFailed(response:)`](marketplaceappextension/requestfailed(response:).md) implementation. In this callback, your marketplace app can correct the issue by reauthenticating the person. For example, you can set a flag to present a webpage in your app with [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession) that enables the person to enter their credentials before retrying the update.
+If your marketplace app is running while your marketplace server encounters an invalid access token, the system calls your extension’s [`requestFailed(response:)`](./marketplaceappextension/requestfailed%28response%29.md) implementation. In this callback, your marketplace app can correct the issue by reauthenticating the person. For example, you can set a flag to present a webpage in your app with [`ASWebAuthenticationSession`](../AuthenticationServices/aswebauthenticationsession.md) that enables the person to enter their credentials before retrying the update.
 
-[`MarketplaceAppExtension`](marketplaceappextension.md) can’t present UI, so if your marketplace isn’t running, you can explore reauthenticating another way, such as by exchanging a refresh token for a renewed access token with your token endpoint.
+[`MarketplaceAppExtension`](./marketplaceappextension.md) can’t present UI, so if your marketplace isn’t running, you can explore reauthenticating another way, such as by exchanging a refresh token for a renewed access token with your token endpoint.
 
-For example, if the system encounters an invalid access token while performing automatic background app updates, reauthorize the device in [`requestFailed(response:)`](marketplaceappextension/requestfailed(response:).md) and return `true` to instruct the system to call your `restores` endpoint again. The system calls your marketplace extension’s [`additionalHeaders(for:account:)`](marketplaceappextension/additionalheaders(for:account:).md) implementation and you supply the renewed access token to complete the update.
+For example, if the system encounters an invalid access token while performing automatic background app updates, reauthorize the device in [`requestFailed(response:)`](./marketplaceappextension/requestfailed%28response%29.md) and return `true` to instruct the system to call your `restores` endpoint again. The system calls your marketplace extension’s [`additionalHeaders(for:account:)`](./marketplaceappextension/additionalheaders%28for,account%29.md) implementation and you supply the renewed access token to complete the update.
 
 ## See Also
 
-- [Providing age-rating appropriate content](providing-age-rating-appropriate-content.md)
+### Authorization
+- [Providing age-rating appropriate content](./providing-age-rating-appropriate-content.md)
   Check for age-rating based content restrictions and enable people to request approval for apps with a rating beyond the maximum allowed for the device.
-- [com.apple.developer.marketplace.app-installation](../bundleresources/entitlements/com.apple.developer.marketplace.app-installation.md)
+- [com.apple.developer.marketplace.app-installation](../BundleResources/entitlements/com.apple.developer.marketplace.app-installation.md)
   An entitlement that enables an app to vend other apps as an alternative app marketplace.
-- [com.apple.developer.browser.app-installation](../bundleresources/entitlements/com.apple.developer.browser.app-installation.md)
+- [com.apple.developer.browser.app-installation](../BundleResources/entitlements/com.apple.developer.browser.app-installation.md)
   An entitlement that enables a browser to install alternative distribution apps from a website.
-- [App License Delivery SDK](../applicensedeliverysdk/applicensedeliverysdk.md)
+- [App License Delivery SDK](../AppLicenseDeliverySDK/AppLicenseDeliverySDK.md)
   Secure the installation of alternative distribution apps on iOS or iPadOS devices by vending licenses from your web server.
 
 

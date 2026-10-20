@@ -1,7 +1,8 @@
 # setWantsNotificationForMarkedText(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Directs the cell’s associated field editor to post text change notifications.
 
@@ -14,13 +15,18 @@ Directs the cell’s associated field editor to post text change notifications.
 func setWantsNotificationForMarkedText(_ flag: Bool)
 ```
 
+```objc
+- (void) setWantsNotificationForMarkedText:(BOOL) flag;
+```
+
 ## Parameters
 
-- `flag`: If [`true`](https://developer.apple.com/documentation/swift/true), the field editor posts text change notifications (NSTextDidChangeNotification) while editing marked text; if [`false`](https://developer.apple.com/documentation/swift/false), notifications are delayed until the marked text confirmation.
+- `flag`: If [`true`](../../Swift/true.md), the field editor posts text change notifications (NSTextDidChangeNotification) while editing marked text; if [`false`](../../Swift/false.md), notifications are delayed until the marked text confirmation.
 
 ## See Also
 
-- [func setUpFieldEditorAttributes(NSText) -> NSText](nstextfieldcell/setupfieldeditorattributes(_:).md)
+### Managing the Field Editor
+- [func setUpFieldEditorAttributes(NSText) -> NSText](./setupfieldeditorattributes%28_%29.md)
   Allows the cell to set up the field editor’s attributes before editing begins.
 
 

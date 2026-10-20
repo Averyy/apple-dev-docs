@@ -1,7 +1,8 @@
 # uv1s
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The uv1s buffer, if the custom deformer author specified it
 
@@ -21,19 +22,20 @@ let uv1s: MeshDeformParameter<InputBuffer, OutputBuffer>.VertexBuffers<Buffer>.D
 
 ## See Also
 
-- [let uvs: MeshDeformParameter<InputBuffer, OutputBuffer>.VertexBuffers<Buffer>.Data?](meshdeformparameter/vertexbuffers/uvs.md)
+### Accessing texture coordinates
+- [let uvs: MeshDeformParameter<InputBuffer, OutputBuffer>.VertexBuffers<Buffer>.Data?](./uvs.md)
   The uvs buffer, if the custom deformer author specified it
-- [let uv2s: MeshDeformParameter<InputBuffer, OutputBuffer>.VertexBuffers<Buffer>.Data?](meshdeformparameter/vertexbuffers/uv2s.md)
+- [let uv2s: MeshDeformParameter<InputBuffer, OutputBuffer>.VertexBuffers<Buffer>.Data?](./uv2s.md)
   The uv2s buffer, if the custom deformer author specified it
-- [let uv3s: MeshDeformParameter<InputBuffer, OutputBuffer>.VertexBuffers<Buffer>.Data?](meshdeformparameter/vertexbuffers/uv3s.md)
+- [let uv3s: MeshDeformParameter<InputBuffer, OutputBuffer>.VertexBuffers<Buffer>.Data?](./uv3s.md)
   The uv3s buffer, if the custom deformer author specified it
-- [let uv4s: MeshDeformParameter<InputBuffer, OutputBuffer>.VertexBuffers<Buffer>.Data?](meshdeformparameter/vertexbuffers/uv4s.md)
+- [let uv4s: MeshDeformParameter<InputBuffer, OutputBuffer>.VertexBuffers<Buffer>.Data?](./uv4s.md)
   The uv4s buffer, if the custom deformer author specified it
-- [let uv5s: MeshDeformParameter<InputBuffer, OutputBuffer>.VertexBuffers<Buffer>.Data?](meshdeformparameter/vertexbuffers/uv5s.md)
+- [let uv5s: MeshDeformParameter<InputBuffer, OutputBuffer>.VertexBuffers<Buffer>.Data?](./uv5s.md)
   The uv5s buffer, if the custom deformer author specified it
-- [let uv6s: MeshDeformParameter<InputBuffer, OutputBuffer>.VertexBuffers<Buffer>.Data?](meshdeformparameter/vertexbuffers/uv6s.md)
+- [let uv6s: MeshDeformParameter<InputBuffer, OutputBuffer>.VertexBuffers<Buffer>.Data?](./uv6s.md)
   The uv6s buffer, if the custom deformer author specified it
-- [let uv7s: MeshDeformParameter<InputBuffer, OutputBuffer>.VertexBuffers<Buffer>.Data?](meshdeformparameter/vertexbuffers/uv7s.md)
+- [let uv7s: MeshDeformParameter<InputBuffer, OutputBuffer>.VertexBuffers<Buffer>.Data?](./uv7s.md)
   The uv7s buffer, if the custom deformer author specified it
 
 

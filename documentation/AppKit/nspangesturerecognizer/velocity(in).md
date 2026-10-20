@@ -1,7 +1,8 @@
 # velocity(in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The velocity of the pan, measured in points per second.
 
@@ -14,6 +15,10 @@ The velocity of the pan, measured in points per second.
 func velocity(in view: NSView?) -> NSPoint
 ```
 
+```objc
+- (NSPoint) velocityInView:(NSView *) view;
+```
+
 #### Return Value
 
 The horizontal and vertical velocity of the pan gesture. These values are relative to the specified view.
@@ -24,9 +29,10 @@ The horizontal and vertical velocity of the pan gesture. These values are relati
 
 ## See Also
 
-- [func translation(in: NSView?) -> NSPoint](nspangesturerecognizer/translation(in:).md)
+### Tracking the location and velocity of the gesture
+- [func translation(in: NSView?) -> NSPoint](./translation%28in%29.md)
   The distance traveled by the mouse during the gesture.
-- [func setTranslation(NSPoint, in: NSView?)](nspangesturerecognizer/settranslation(_:in:).md)
+- [func setTranslation(NSPoint, in: NSView?)](./settranslation%28_,in%29.md)
   Changes the current translation value of the gesture recognizer.
 
 

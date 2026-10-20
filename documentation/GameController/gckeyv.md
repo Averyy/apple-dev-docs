@@ -1,7 +1,8 @@
 # GCKeyV
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The keyboard code for the v or V character.
 
@@ -19,37 +20,42 @@ The keyboard code for the v or V character.
 let GCKeyV: String
 ```
 
+```c
+extern NSString * const GCKeyV;
+```
+
 ## See Also
 
-- [let GCKeyA: String](gckeya.md)
+### Letter and Number Keys
+- [let GCKeyA: String](./gckeya.md)
   The keyboard code for the a or A character.
-- [let GCKeyB: String](gckeyb.md)
+- [let GCKeyB: String](./gckeyb.md)
   The keyboard code for the b or B character.
-- [let GCKeyC: String](gckeyc.md)
+- [let GCKeyC: String](./gckeyc.md)
   The keyboard code for the c or C character.
-- [let GCKeyD: String](gckeyd.md)
+- [let GCKeyD: String](./gckeyd.md)
   The keyboard code for the d or D character.
-- [let GCKeyE: String](gckeye.md)
+- [let GCKeyE: String](./gckeye.md)
   The keyboard code for the e or E character.
-- [let GCKeyF: String](gckeyf.md)
+- [let GCKeyF: String](./gckeyf.md)
   The keyboard code for the f or F character.
-- [let GCKeyG: String](gckeyg.md)
+- [let GCKeyG: String](./gckeyg.md)
   The keyboard code for the g or G character.
-- [let GCKeyH: String](gckeyh.md)
+- [let GCKeyH: String](./gckeyh.md)
   The keyboard code for the h or H character.
-- [let GCKeyI: String](gckeyi.md)
+- [let GCKeyI: String](./gckeyi.md)
   The keyboard code for the i or I character.
-- [let GCKeyJ: String](gckeyj.md)
+- [let GCKeyJ: String](./gckeyj.md)
   The keyboard code for the j or J character.
-- [let GCKeyK: String](gckeyk.md)
+- [let GCKeyK: String](./gckeyk.md)
   The keyboard code for the k or K character.
-- [let GCKeyL: String](gckeyl.md)
+- [let GCKeyL: String](./gckeyl.md)
   The keyboard code for the l or L character.
-- [let GCKeyM: String](gckeym.md)
+- [let GCKeyM: String](./gckeym.md)
   The keyboard code for the m or M character.
-- [let GCKeyN: String](gckeyn.md)
+- [let GCKeyN: String](./gckeyn.md)
   The keyboard code for the n or N character.
-- [let GCKeyO: String](gckeyo.md)
+- [let GCKeyO: String](./gckeyo.md)
   The keyboard code for the o or O character.
 
 

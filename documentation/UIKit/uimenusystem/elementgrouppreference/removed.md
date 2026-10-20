@@ -1,7 +1,8 @@
 # UIMenuSystem.ElementGroupPreference.removed
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Prefer that the element group is removed.
 
@@ -16,6 +17,10 @@ Prefer that the element group is removed.
 
 ```swift
 case removed
+```
+
+```c
+UIMenuSystemElementGroupPreferenceRemoved
 ```
 
 

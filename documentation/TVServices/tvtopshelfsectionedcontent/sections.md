@@ -1,7 +1,8 @@
 # sections
 
 **Framework**: TV Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sections to display in the interface.
 
@@ -12,6 +13,10 @@ The sections to display in the interface.
 
 ```swift
 var sections: [TVTopShelfItemCollection<TVTopShelfSectionedItem>] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<TVTopShelfItemCollection<TVTopShelfSectionedItem *> *> * sections;
 ```
 
 

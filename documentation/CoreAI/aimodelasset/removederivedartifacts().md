@@ -1,7 +1,8 @@
 # removeDerivedArtifacts()
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all derived artifacts for the model’s program.
 
@@ -20,7 +21,8 @@ mutating func removeDerivedArtifacts() throws
 
 ## See Also
 
-- [func updateMetadata((inout AIModelAsset.Metadata) throws -> Void) throws](aimodelasset/updatemetadata(_:).md)
+### Modifying an asset
+- [func updateMetadata((inout AIModelAsset.Metadata) throws -> Void) throws](./updatemetadata%28_%29.md)
   Updates the asset metadata.
 
 

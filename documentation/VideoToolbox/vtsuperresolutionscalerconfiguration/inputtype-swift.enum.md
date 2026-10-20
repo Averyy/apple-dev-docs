@@ -1,7 +1,8 @@
 # VTSuperResolutionScalerConfiguration.InputType
 
 **Framework**: Video Toolbox  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Available super-resolution processor input types.
 
@@ -17,46 +18,51 @@ Available super-resolution processor input types.
 enum InputType
 ```
 
+```c
+enum VTSuperResolutionScalerConfigurationInputType : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [VTSuperResolutionScalerConfiguration.InputType.image](vtsuperresolutionscalerconfiguration/inputtype-swift.enum/image.md)
-- [VTSuperResolutionScalerConfiguration.InputType.video](vtsuperresolutionscalerconfiguration/inputtype-swift.enum/video.md)
+- [VTSuperResolutionScalerConfiguration.InputType.image](./inputtype-swift.enum/image.md)
+- [VTSuperResolutionScalerConfiguration.InputType.video](./inputtype-swift.enum/video.md)
 ### Initializers
-- [init?(rawValue: Int)](vtsuperresolutionscalerconfiguration/inputtype-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./inputtype-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var frameWidth: Int](vtsuperresolutionscalerconfiguration/framewidth.md)
+### Inspecting the configuration
+- [var frameWidth: Int](./framewidth.md)
   Width of source frame in pixels.
-- [var frameHeight: Int](vtsuperresolutionscalerconfiguration/frameheight.md)
+- [var frameHeight: Int](./frameheight.md)
   Height of source frame in pixels.
-- [var scaleFactor: Int](vtsuperresolutionscalerconfiguration/scalefactor.md)
+- [var scaleFactor: Int](./scalefactor.md)
   Indicates the scale factor between input and output.
-- [var inputType: VTSuperResolutionScalerConfiguration.InputType](vtsuperresolutionscalerconfiguration/inputtype-swift.property.md)
+- [var inputType: VTSuperResolutionScalerConfiguration.InputType](./inputtype-swift.property.md)
   Indicates the type of input.
-- [var usesPrecomputedFlow: Bool](vtsuperresolutionscalerconfiguration/usesprecomputedflow.md)
+- [var usesPrecomputedFlow: Bool](./usesprecomputedflow.md)
   Indicates that you provide optical flow.
-- [var usesPrecomputedFlow: Bool](vtsuperresolutionscalerconfiguration/usesprecomputedflow.md)
+- [var usesPrecomputedFlow: Bool](./usesprecomputedflow.md)
   Indicates that you provide optical flow.
-- [var sourcePixelBufferAttributes: [String : any Sendable]](vtsuperresolutionscalerconfiguration/sourcepixelbufferattributes.md)
+- [var sourcePixelBufferAttributes: [String : any Sendable]](./sourcepixelbufferattributes.md)
   Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent source frames and reference frames.
-- [var destinationPixelBufferAttributes: [String : any Sendable]](vtsuperresolutionscalerconfiguration/destinationpixelbufferattributes.md)
+- [var destinationPixelBufferAttributes: [String : any Sendable]](./destinationpixelbufferattributes.md)
   Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent destination frames.
-- [var supportedPixelFormats: [OSType]](vtsuperresolutionscalerconfiguration/supportedpixelformats.md)
-- [var qualityPrioritization: VTSuperResolutionScalerConfiguration.QualityPrioritization](vtsuperresolutionscalerconfiguration/qualityprioritization-swift.property.md)
+- [var supportedPixelFormats: [OSType]](./supportedpixelformats.md)
+- [var qualityPrioritization: VTSuperResolutionScalerConfiguration.QualityPrioritization](./qualityprioritization-swift.property.md)
   A parameter to control quality and performance levels.
-- [VTSuperResolutionScalerConfiguration.QualityPrioritization](vtsuperresolutionscalerconfiguration/qualityprioritization-swift.enum.md)
+- [VTSuperResolutionScalerConfiguration.QualityPrioritization](./qualityprioritization-swift.enum.md)
   Configuration value you set to prioritize quality or performance.
 
 

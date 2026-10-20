@@ -1,7 +1,8 @@
 # TrackableAnchor
 
 **Framework**: ARKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An anchor that can gain and lose its tracking state over the course of a session.
 
@@ -18,40 +19,41 @@ protocol TrackableAnchor : Anchor
 ## Topics
 
 ### Checking an anchor’s tracking state
-- [var isTracked: Bool](trackableanchor/istracked.md)
+- [var isTracked: Bool](./trackableanchor/istracked.md)
   A Boolean value that indicates whether ARKit is tracking an anchor.
 
 ## Relationships
 
 ### Inherits From
-- [Anchor](anchor.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Anchor](./anchor.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [AccessoryAnchor](accessoryanchor.md)
-- [DeviceAnchor](deviceanchor.md)
-- [HandAnchor](handanchor.md)
-- [ImageAnchor](imageanchor.md)
-- [ObjectAnchor](objectanchor.md)
-- [WorldAnchor](worldanchor.md)
+- [AccessoryAnchor](./accessoryanchor.md)
+- [DeviceAnchor](./deviceanchor.md)
+- [HandAnchor](./handanchor.md)
+- [ImageAnchor](./imageanchor.md)
+- [ObjectAnchor](./objectanchor.md)
+- [WorldAnchor](./worldanchor.md)
 
 ## See Also
 
-- [Setting up access to ARKit data](../visionos/setting-up-access-to-arkit-data.md)
+### Setup
+- [Setting up access to ARKit data](../visionOS/setting-up-access-to-arkit-data.md)
   Check whether your app can use ARKit and respect people’s privacy.
-- [class ARKitSession](arkitsession.md)
+- [class ARKitSession](./arkitsession.md)
   The main entry point for receiving data from ARKit.
-- [protocol DataProvider](dataprovider.md)
+- [protocol DataProvider](./dataprovider.md)
   A source of live data from ARKit.
-- [enum DataProviderState](dataproviderstate.md)
+- [enum DataProviderState](./dataproviderstate.md)
   The possible states of a data provider.
-- [protocol Anchor](anchor.md)
+- [protocol Anchor](./anchor.md)
   The identity, location, and orientation of an object in world space.
-- [protocol ARKitCoordinateSpaceProviding](arkitcoordinatespaceproviding.md)
+- [protocol ARKitCoordinateSpaceProviding](./arkitcoordinatespaceproviding.md)
   A type that provides an ARKit coordinate space with an optional correction applied.
-- [struct ARKitCoordinateSpace](arkitcoordinatespace.md)
+- [struct ARKitCoordinateSpace](./arkitcoordinatespace.md)
   An object which represents an ARKit coordinate space.
 
 

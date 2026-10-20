@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create an `UnownedJob` whose lifetime must be managed carefully until it is run exactly once.
 

@@ -1,7 +1,8 @@
 # opaque
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+

@@ -1,15 +1,16 @@
 # HKScoredAssessmentTypeIdentifier
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -17,23 +18,28 @@
 struct HKScoredAssessmentTypeIdentifier
 ```
 
+```c
+typedef NSString * HKScoredAssessmentTypeIdentifier;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: String)](hkscoredassessmenttypeidentifier/init(rawvalue:).md)
+- [init(rawValue: String)](./hkscoredassessmenttypeidentifier/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct HKWorkoutEffortRelationshipQueryDescriptor](hkworkouteffortrelationshipquerydescriptor.md)
+### Data Types
+- [struct HKWorkoutEffortRelationshipQueryDescriptor](./hkworkouteffortrelationshipquerydescriptor.md)
 
 
 ---

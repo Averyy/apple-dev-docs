@@ -1,7 +1,8 @@
 # networkInterfaceName
 
 **Framework**: Core Telephony  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A network interface name associated with the slice.
 
@@ -22,9 +23,10 @@ This property contains the system name of the network interface that handles tra
 
 ## See Also
 
-- [let appCategory: CTSlicingManager.AppCategory](ctslicingmanager/slice/appcategory.md)
+### Representing slice properties
+- [let appCategory: CTSlicingManager.AppCategory](./appcategory.md)
   An application category associated with this network slice.
-- [let trafficClass: CTSlicingManager.TrafficClass?](ctslicingmanager/slice/trafficclass.md)
+- [let trafficClass: CTSlicingManager.TrafficClass?](./trafficclass.md)
   A traffic class that routes traffic through this network slice.
 
 

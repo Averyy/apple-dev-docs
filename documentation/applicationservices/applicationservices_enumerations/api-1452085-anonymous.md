@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kATSUClearAll: UInt32](katsuclearall.md)
-- [var kATSUUseGrafPortPenLoc: UInt32](katsuusegrafportpenloc.md)
+- [var kATSUClearAll: UInt32](../katsuclearall.md)
+- [var kATSUUseGrafPortPenLoc: UInt32](../katsuusegrafportpenloc.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # ASExtensionError.Code.userInteractionRequired
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 User interaction is required.
 
@@ -18,17 +19,22 @@ User interaction is required.
 case userInteractionRequired
 ```
 
+```c
+ASExtensionErrorCodeUserInteractionRequired
+```
+
 ## Mentions
 
-- [Providing one-time passcodes to AutoFill](providing-one-time-passcodes-to-autofill.md)
+- [Providing one-time passcodes to AutoFill](../../providing-one-time-passcodes-to-autofill.md)
 
 ## See Also
 
-- [ASExtensionError.Code.credentialIdentityNotFound](asextensionerror/code/credentialidentitynotfound.md)
+### Codes
+- [ASExtensionError.Code.credentialIdentityNotFound](./credentialidentitynotfound.md)
   The credential identity was not found.
-- [ASExtensionError.Code.failed](asextensionerror/code/failed.md)
+- [ASExtensionError.Code.failed](./failed.md)
   The operation failed.
-- [ASExtensionError.Code.userCanceled](asextensionerror/code/usercanceled.md)
+- [ASExtensionError.Code.userCanceled](./usercanceled.md)
   The user canceled the operation.
 
 

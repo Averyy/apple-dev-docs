@@ -1,7 +1,8 @@
 # ASAccountAuthenticationModificationOptOutOfSecurityPromptsOnSignIn
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates the system shouldn’t show security recommendation prompts when users sign in using the app.
 
@@ -9,13 +10,15 @@ A Boolean value that indicates the system shouldn’t show security recommendati
 - iOS 14.0+
 - iPadOS 14.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `ASAccountAuthenticationModificationOptOutOfSecurityPromptsOnSignIn` (Opt out of showing account security prompts on app sign in)
+- **Type**: boolean
 
 ## See Also
 
-- [ASWebAuthenticationSessionWebBrowserSupportCapabilities](information-property-list/aswebauthenticationsessionwebbrowsersupportcapabilities.md)
+### Authentication
+- [ASWebAuthenticationSessionWebBrowserSupportCapabilities](./aswebauthenticationsessionwebbrowsersupportcapabilities.md)
   A collection of keys that a browser app uses to declare its ability to handle authentication requests from other apps.
 
 

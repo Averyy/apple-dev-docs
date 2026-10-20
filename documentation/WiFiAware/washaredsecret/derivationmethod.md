@@ -1,7 +1,8 @@
 # WASharedSecret.DerivationMethod
 
 **Framework**: Wi-Fi Aware  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An enumeration of methods that can be used to derive a shared secret, as specified in the Wi-Fi Aware standard.
 
@@ -19,16 +20,16 @@ struct DerivationMethod
 ## Topics
 
 ### Type Properties
-- [static let kdfHash256: WASharedSecret.DerivationMethod](washaredsecret/derivationmethod/kdfhash256.md)
+- [static let kdfHash256: WASharedSecret.DerivationMethod](./derivationmethod/kdfhash256.md)
   Derive a shared secret using the KDF-HASH-256 method defined in the WiFi Aware 5.0 draft standard.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,12 +1,13 @@
 # remove(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a Bezier path from an annotation.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
@@ -14,11 +15,17 @@ Removes a Bezier path from an annotation.
 func remove(_ path: NSBezierPath!)
 ```
 
+```objc
+- (void) removeBezierPath:(NSBezierPath *) path;
+```
+
 ## See Also
 
-- [func paths() -> [Any]!](pdfannotationink/paths.md)
+### Related Documentation
+- [func paths() -> [Any]!](./paths%28%29.md)
   Returns an array containing the Bezier paths that make up an annotation.
-- [func add(NSBezierPath!)](pdfannotationink/add(_:).md)
+### Working with Bezier paths
+- [func add(NSBezierPath!)](./add%28_%29.md)
   Adds a Bezier path to an annotation.
 
 

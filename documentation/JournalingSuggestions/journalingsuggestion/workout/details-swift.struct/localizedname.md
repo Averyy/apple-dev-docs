@@ -1,7 +1,8 @@
 # localizedName
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Localized name of workout, like “Indoor Pickleball”.
 

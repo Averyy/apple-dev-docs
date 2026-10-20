@@ -1,7 +1,8 @@
 # parameters
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of parameter names to extract.
 
@@ -27,7 +28,8 @@ For example, setting `parameters` to `["id", "external"]` parses URL `http://exa
 
 ## See Also
 
-- [var excluded: Bool](neurlfiltermanager/parsingconfiguration/queryoptions/excluded.md)
+### Working with query options
+- [var excluded: Bool](./excluded.md)
   A Boolean value that indicates whether to exclude the query component from URL parsing.
 
 

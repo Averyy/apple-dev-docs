@@ -1,7 +1,8 @@
 # storeIdentifier
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the store that contains the associated model.
 
@@ -22,11 +23,12 @@ var storeIdentifier: String? { get }
 
 ## See Also
 
-- [let id: PersistentIdentifier.ID](persistentidentifier/id-swift.property.md)
+### Accessing identity information
+- [let id: PersistentIdentifier.ID](./id-swift.property.md)
   The value that uniquely identifies the associated model within the containing store.
-- [PersistentIdentifier.ID](persistentidentifier/id-swift.struct.md)
+- [PersistentIdentifier.ID](./id-swift.struct.md)
   A type that represents the stable identity of a SwiftData model.
-- [var entityName: String](persistentidentifier/entityname.md)
+- [var entityName: String](./entityname.md)
   The entity name for the associated model.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A reference to the underlying surface instance for the texture, if applicable.
@@ -20,13 +21,18 @@ A reference to the underlying surface instance for the texture, if applicable.
 var iosurface: IOSurfaceRef? { get }
 ```
 
+```objc
+@property (readonly, nullable) IOSurfaceRef iosurface;
+```
+
 #### Discussion
 
-The property’s value is `nil` for textures that don’t come from an [`IOSurface`](https://developer.apple.com/documentation/iosurface/iosurface) instance.
+The property’s value is `nil` for textures that don’t come from an [`IOSurface`](../../IOSurface/iosurface-page.md) instance.
 
 ## See Also
 
-- [var iosurfacePlane: Int](mtltexture/iosurfaceplane.md)
+### Getting information about the IOSurface the texture was created from
+- [var iosurfacePlane: Int](./iosurfaceplane.md)
   The number of a plane within the underlying surface instance for the texture, if applicable.
 
 

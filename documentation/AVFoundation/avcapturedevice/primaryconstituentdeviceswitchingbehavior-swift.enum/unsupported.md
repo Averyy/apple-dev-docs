@@ -1,7 +1,8 @@
 # AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.unsupported
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device doesn’t support constituent device switching.
 
@@ -18,17 +19,22 @@ The device doesn’t support constituent device switching.
 case unsupported
 ```
 
+```c
+AVCapturePrimaryConstituentDeviceSwitchingBehaviorUnsupported
+```
+
 #### Discussion
 
 Switching cameras isn’t supported on devices that don’t have more than one constituent device.
 
 ## See Also
 
-- [AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.auto](avcapturedevice/primaryconstituentdeviceswitchingbehavior-swift.enum/auto.md)
+### Switching behaviors
+- [AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.auto](./auto.md)
   The device automatically selects the best camera for the current scene.
-- [AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.restricted](avcapturedevice/primaryconstituentdeviceswitchingbehavior-swift.enum/restricted.md)
+- [AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.restricted](./restricted.md)
   The device restricts fallback camera selection to certain conditions.
-- [AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.locked](avcapturedevice/primaryconstituentdeviceswitchingbehavior-swift.enum/locked.md)
+- [AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.locked](./locked.md)
   The device locks camera switching to the active primary constituent device.
 
 

@@ -1,7 +1,8 @@
 # words
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Defines an autocapitalizing behavior that will capitalize the first letter of every word.
 
@@ -21,11 +22,12 @@ static var words: TextInputAutocapitalization { get }
 
 ## See Also
 
-- [static var characters: TextInputAutocapitalization](textinputautocapitalization/characters.md)
+### Getting autocapitalization options
+- [static var characters: TextInputAutocapitalization](./characters.md)
   Defines an autocapitalizing behavior that will capitalize every letter.
-- [static var sentences: TextInputAutocapitalization](textinputautocapitalization/sentences.md)
+- [static var sentences: TextInputAutocapitalization](./sentences.md)
   Defines an autocapitalizing behavior that will capitalize the first letter in every sentence.
-- [static var never: TextInputAutocapitalization](textinputautocapitalization/never.md)
+- [static var never: TextInputAutocapitalization](./never.md)
   Defines an autocapitalizing behavior that will not capitalize anything.
 
 

@@ -1,140 +1,141 @@
 # FloatingPoint Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func * (Float, Float) -> Float](float/*(_:_:).md)
+- [static func * (Float, Float) -> Float](./star%28_,_%29.md)
   Multiplies two values and produces their product, rounding to a representable value.
-- [static func *= (inout Float, Float)](float/*=(_:_:).md)
+- [static func *= (inout Float, Float)](./stareq%28_,_%29.md)
   Multiplies two values and stores the result in the left-hand-side variable, rounding to a representable value.
-- [static func + (Float, Float) -> Float](float/+(_:_:).md)
+- [static func + (Float, Float) -> Float](./plus%28_,_%29.md)
   Adds two values and produces their sum, rounded to a representable value.
-- [static func += (inout Float, Float)](float/+=(_:_:).md)
+- [static func += (inout Float, Float)](./pluseq%28_,_%29.md)
   Adds two values and stores the result in the left-hand-side variable, rounded to a representable value.
-- [static func - (Float) -> Float](float/-(_:).md)
+- [static func - (Float) -> Float](./minus%28_%29.md)
   Calculates the additive inverse of a value.
-- [static func - (Float, Float) -> Float](float/-(_:_:).md)
+- [static func - (Float, Float) -> Float](./minus%28_,_%29.md)
   Subtracts one value from another and produces their difference, rounded to a representable value.
-- [static func -= (inout Float, Float)](float/-=(_:_:).md)
+- [static func -= (inout Float, Float)](./minuseq%28_,_%29.md)
   Subtracts the second value from the first and stores the difference in the left-hand-side variable, rounding to a representable value.
-- [static func / (Float, Float) -> Float](float/_(_:_:).md)
+- [static func / (Float, Float) -> Float](./op%28_,_%29.md)
   Returns the quotient of dividing the first value by the second, rounded to a representable value.
-- [static func > (Self, Self) -> Bool](float/_(_:_:)-552jr.md)
-- [static func /= (inout Float, Float)](float/_=(_:_:).md)
+- [static func > (Self, Self) -> Bool](./op%28_,_%29-552jr.md)
+- [static func /= (inout Float, Float)](./opeq%28_,_%29.md)
   Divides the first value by the second and stores the quotient in the left-hand-side variable, rounding to a representable value.
-- [static func <= (Self, Self) -> Bool](float/_=(_:_:)-5yoz5.md)
-- [static func >= (Self, Self) -> Bool](float/_=(_:_:)-9o6ha.md)
+- [static func <= (Self, Self) -> Bool](./opeq%28_,_%29-5yoz5.md)
+- [static func >= (Self, Self) -> Bool](./opeq%28_,_%29-9o6ha.md)
 ### Initializers
-- [init(Int)](float/init(_:)-6cvkq.md)
+- [init(Int)](./init%28_%29-6cvkq.md)
   Creates a new value, rounded to the closest possible representation.
-- [init<Source>(Source)](float/init(_:)-7e965.md)
+- [init<Source>(Source)](./init%28_%29-7e965.md)
   Creates a new value, rounded to the closest possible representation.
-- [init?<Source>(exactly: Source)](float/init(exactly:)-uz92.md)
+- [init?<Source>(exactly: Source)](./init%28exactly%29-uz92.md)
   Creates a new value, if the given integer can be represented exactly.
-- [init(sign: FloatingPointSign, exponent: Int, significand: Float)](float/init(sign:exponent:significand:).md)
+- [init(sign: FloatingPointSign, exponent: Int, significand: Float)](./init%28sign,exponent,significand%29.md)
   Creates a new value from the given sign, exponent, and significand.
-- [init(signOf: Float, magnitudeOf: Float)](float/init(signof:magnitudeof:).md)
+- [init(signOf: Float, magnitudeOf: Float)](./init%28signof,magnitudeof%29.md)
   Creates a new floating-point value using the sign of one value and the magnitude of another.
-- [init(signOf: Self, magnitudeOf: Self)](float/init(signof:magnitudeof:)-6i9uw.md)
+- [init(signOf: Self, magnitudeOf: Self)](./init%28signof,magnitudeof%29-6i9uw.md)
   Creates a new floating-point value using the sign of one value and the magnitude of another.
 ### Instance Properties
-- [var exponent: Int](float/exponent-swift.property.md)
+- [var exponent: Int](./exponent-swift.property.md)
   The exponent of the floating-point value.
-- [var floatingPointClass: FloatingPointClassification](float/floatingpointclass.md)
+- [var floatingPointClass: FloatingPointClassification](./floatingpointclass.md)
   The classification of this value.
-- [var isCanonical: Bool](float/iscanonical.md)
+- [var isCanonical: Bool](./iscanonical.md)
   A Boolean value indicating whether the instance’s representation is in its canonical form.
-- [var isFinite: Bool](float/isfinite.md)
+- [var isFinite: Bool](./isfinite.md)
   A Boolean value indicating whether this instance is finite.
-- [var isInfinite: Bool](float/isinfinite.md)
+- [var isInfinite: Bool](./isinfinite.md)
   A Boolean value indicating whether the instance is infinite.
-- [var isNaN: Bool](float/isnan.md)
+- [var isNaN: Bool](./isnan.md)
   A Boolean value indicating whether the instance is NaN (“not a number”).
-- [var isNormal: Bool](float/isnormal.md)
+- [var isNormal: Bool](./isnormal.md)
   A Boolean value indicating whether this instance is normal.
-- [var isSignalingNaN: Bool](float/issignalingnan.md)
+- [var isSignalingNaN: Bool](./issignalingnan.md)
   A Boolean value indicating whether the instance is a signaling NaN.
-- [var isSubnormal: Bool](float/issubnormal.md)
+- [var isSubnormal: Bool](./issubnormal.md)
   A Boolean value indicating whether the instance is subnormal.
-- [var isZero: Bool](float/iszero.md)
+- [var isZero: Bool](./iszero.md)
   A Boolean value indicating whether the instance is equal to zero.
-- [var nextDown: Self](float/nextdown.md)
+- [var nextDown: Self](./nextdown.md)
   The greatest representable value that compares less than this value.
-- [var nextUp: Float](float/nextup.md)
+- [var nextUp: Float](./nextup.md)
   The least representable value that compares greater than this value.
-- [var sign: FloatingPointSign](float/sign.md)
+- [var sign: FloatingPointSign](./sign.md)
   The sign of the floating-point value.
-- [var significand: Float](float/significand.md)
+- [var significand: Float](./significand.md)
   The significand of the floating-point value.
-- [var ulp: Float](float/ulp.md)
+- [var ulp: Float](./ulp.md)
   The unit in the last place of this value.
 ### Instance Methods
-- [func addProduct(Float, Float)](float/addproduct(_:_:).md)
+- [func addProduct(Float, Float)](./addproduct%28_,_%29.md)
   Adds the product of the two given values to this value in place, computed without intermediate rounding.
-- [func addingProduct(Self, Self) -> Self](float/addingproduct(_:_:).md)
+- [func addingProduct(Self, Self) -> Self](./addingproduct%28_,_%29.md)
   Returns the result of adding the product of the two given values to this value, computed without intermediate rounding.
-- [func formRemainder(dividingBy: Float)](float/formremainder(dividingby:).md)
+- [func formRemainder(dividingBy: Float)](./formremainder%28dividingby%29.md)
   Replaces this value with the remainder of itself divided by the given value.
-- [func formSquareRoot()](float/formsquareroot.md)
+- [func formSquareRoot()](./formsquareroot%28%29.md)
   Replaces this value with its square root, rounded to a representable value.
-- [func formTruncatingRemainder(dividingBy: Float)](float/formtruncatingremainder(dividingby:).md)
+- [func formTruncatingRemainder(dividingBy: Float)](./formtruncatingremainder%28dividingby%29.md)
   Replaces this value with the remainder of itself divided by the given value using truncating division.
-- [func isEqual(to: Float) -> Bool](float/isequal(to:).md)
+- [func isEqual(to: Float) -> Bool](./isequal%28to%29.md)
   Returns a Boolean value indicating whether this instance is equal to the given value.
-- [func isLess(than: Float) -> Bool](float/isless(than:).md)
+- [func isLess(than: Float) -> Bool](./isless%28than%29.md)
   Returns a Boolean value indicating whether this instance is less than the given value.
-- [func isLessThanOrEqualTo(Float) -> Bool](float/islessthanorequalto(_:).md)
+- [func isLessThanOrEqualTo(Float) -> Bool](./islessthanorequalto%28_%29.md)
   Returns a Boolean value indicating whether this instance is less than or equal to the given value.
-- [func isTotallyOrdered(belowOrEqualTo: Self) -> Bool](float/istotallyordered(beloworequalto:).md)
+- [func isTotallyOrdered(belowOrEqualTo: Self) -> Bool](./istotallyordered%28beloworequalto%29.md)
   Returns a Boolean value indicating whether this instance should precede or tie positions with the given value in an ascending sort.
-- [func negate()](float/negate.md)
+- [func negate()](./negate%28%29.md)
   Replaces this value with its additive inverse.
-- [func remainder(dividingBy: Self) -> Self](float/remainder(dividingby:).md)
+- [func remainder(dividingBy: Self) -> Self](./remainder%28dividingby%29.md)
   Returns the remainder of this value divided by the given value.
-- [func round()](float/round.md)
-- [func round(FloatingPointRoundingRule)](float/round(_:).md)
+- [func round()](./round%28%29.md)
+- [func round(FloatingPointRoundingRule)](./round%28_%29.md)
   Rounds the value to an integral value using the specified rounding rule.
-- [func rounded() -> Self](float/rounded.md)
-- [func rounded(FloatingPointRoundingRule) -> Self](float/rounded(_:).md)
+- [func rounded() -> Self](./rounded%28%29.md)
+- [func rounded(FloatingPointRoundingRule) -> Self](./rounded%28_%29.md)
   Returns this value rounded to an integral value using the specified rounding rule.
-- [func squareRoot() -> Self](float/squareroot.md)
+- [func squareRoot() -> Self](./squareroot%28%29.md)
   Returns the square root of the value, rounded to a representable value.
-- [func truncatingRemainder(dividingBy: Self) -> Self](float/truncatingremainder(dividingby:).md)
+- [func truncatingRemainder(dividingBy: Self) -> Self](./truncatingremainder%28dividingby%29.md)
   Returns the remainder of this value divided by the given value using truncating division.
 ### Type Aliases
-- [typealias Exponent](float/exponent-swift.typealias.md)
+- [typealias Exponent](./exponent-swift.typealias.md)
   A type that can represent any written exponent.
 ### Type Properties
-- [static var greatestFiniteMagnitude: Float](float/greatestfinitemagnitude.md)
+- [static var greatestFiniteMagnitude: Float](./greatestfinitemagnitude.md)
   The greatest finite number representable by this type.
-- [static var infinity: Float](float/infinity.md)
+- [static var infinity: Float](./infinity.md)
   Positive infinity.
-- [static var leastNonzeroMagnitude: Float](float/leastnonzeromagnitude.md)
+- [static var leastNonzeroMagnitude: Float](./leastnonzeromagnitude.md)
   The least positive number.
-- [static var leastNormalMagnitude: Float](float/leastnormalmagnitude.md)
+- [static var leastNormalMagnitude: Float](./leastnormalmagnitude.md)
   The least positive normal number.
-- [static var nan: Float](float/nan.md)
+- [static var nan: Float](./nan.md)
   A quiet NaN (“not a number”).
-- [static var pi: Float](float/pi.md)
+- [static var pi: Float](./pi.md)
   The mathematical constant pi (π), approximately equal to 3.14159.
-- [static var radix: Int](float/radix.md)
+- [static var radix: Int](./radix.md)
   The radix, or base of exponentiation, for a floating-point type.
-- [static var signalingNaN: Float](float/signalingnan.md)
+- [static var signalingNaN: Float](./signalingnan.md)
   A signaling NaN (“not a number”).
-- [static var ulpOfOne: Float](float/ulpofone.md)
+- [static var ulpOfOne: Float](./ulpofone.md)
   The unit in the last place of 1.0.
-- [static var ulpOfOne: Self](float/ulpofone-1s81z.md)
+- [static var ulpOfOne: Self](./ulpofone-1s81z.md)
   The unit in the last place of 1.0.
 ### Type Methods
-- [static func maximum(Self, Self) -> Self](float/maximum(_:_:).md)
+- [static func maximum(Self, Self) -> Self](./maximum%28_,_%29.md)
   Returns the greater of the two given values.
-- [static func maximumMagnitude(Self, Self) -> Self](float/maximummagnitude(_:_:).md)
+- [static func maximumMagnitude(Self, Self) -> Self](./maximummagnitude%28_,_%29.md)
   Returns the value with greater magnitude.
-- [static func minimum(Self, Self) -> Self](float/minimum(_:_:).md)
+- [static func minimum(Self, Self) -> Self](./minimum%28_,_%29.md)
   Returns the lesser of the two given values.
-- [static func minimumMagnitude(Self, Self) -> Self](float/minimummagnitude(_:_:).md)
+- [static func minimumMagnitude(Self, Self) -> Self](./minimummagnitude%28_,_%29.md)
   Returns the value with lesser magnitude.
 
 

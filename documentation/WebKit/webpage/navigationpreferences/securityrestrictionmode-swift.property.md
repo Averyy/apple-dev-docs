@@ -1,7 +1,8 @@
 # securityRestrictionMode
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Security restriction mode for this navigation.
 

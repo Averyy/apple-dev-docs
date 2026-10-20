@@ -1,7 +1,8 @@
 # readAttributeTxUnicastCount(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeTxUnicastCount(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeTxUnicastCount() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeTxUnicastCountWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

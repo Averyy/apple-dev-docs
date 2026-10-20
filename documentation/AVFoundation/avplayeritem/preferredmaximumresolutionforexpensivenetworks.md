@@ -1,7 +1,8 @@
 # preferredMaximumResolutionForExpensiveNetworks
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An upper limit on the resolution of video to download when connecting over expensive networks.
 
@@ -20,9 +21,14 @@ nonisolated
 var preferredMaximumResolutionForExpensiveNetworks: CGSize { get set }
 ```
 
+```objc
+@property CGSize preferredMaximumResolutionForExpensiveNetworks;
+```
+
 ## See Also
 
-- [var preferredPeakBitRateForExpensiveNetworks: Double](avplayeritem/preferredpeakbitrateforexpensivenetworks.md)
+### Configuring expensive network behavior
+- [var preferredPeakBitRateForExpensiveNetworks: Double](./preferredpeakbitrateforexpensivenetworks.md)
   A limit of network bandwidth consumption by the item when connecting over expensive networks.
 
 

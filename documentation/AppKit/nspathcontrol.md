@@ -1,7 +1,8 @@
 # NSPathControl
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A display of a file system path or virtual path information.
 
@@ -14,78 +15,82 @@ A display of a file system path or virtual path information.
 class NSPathControl
 ```
 
+```objc
+@interface NSPathControl : NSControl
+```
+
 #### Overview
 
-The [`NSPathControl`](nspathcontrol.md) class uses [`NSPathCell`](nspathcell.md) to implement its user interface. [`NSPathControl`](nspathcontrol.md) provides cover methods for most [`NSPathCell`](nspathcell.md) methods—the cover method simply invokes the corresponding cell method. See also [`NSPathComponentCell`](nspathcomponentcell.md), which represents individual components of the path, and two associated protocols: [`NSPathCellDelegate`](nspathcelldelegate.md) and [`NSPathControlDelegate`](nspathcontroldelegate.md).
+The [`NSPathControl`](./nspathcontrol.md) class uses [`NSPathCell`](./nspathcell.md) to implement its user interface. [`NSPathControl`](./nspathcontrol.md) provides cover methods for most [`NSPathCell`](./nspathcell.md) methods—the cover method simply invokes the corresponding cell method. See also [`NSPathComponentCell`](./nspathcomponentcell.md), which represents individual components of the path, and two associated protocols: [`NSPathCellDelegate`](./nspathcelldelegate.md) and [`NSPathControlDelegate`](./nspathcontroldelegate.md).
 
-[`NSPathControl`](nspathcontrol.md) has three styles represented by the [`NSPathControl.Style`](nspathcontrol/style.md) enumeration constants [`NSPathControl.Style.standard`](nspathcontrol/style/standard.md), [`NSPathStyleNavigationBar`](nspathstyle/nspathstylenavigationbar.md), and [`NSPathControl.Style.popUp`](nspathcontrol/style/popup.md). The represented path can be a file system path or any other type of path leading through a sequence of nodes or components, as defined by the programmer.
+[`NSPathControl`](./nspathcontrol.md) has three styles represented by the [`NSPathControl.Style`](./nspathcontrol/style.md) enumeration constants [`NSPathControl.Style.standard`](./nspathcontrol/style/standard.md), [`NSPathStyleNavigationBar`](./nspathstyle/nspathstylenavigationbar.md), and [`NSPathControl.Style.popUp`](./nspathcontrol/style/popup.md). The represented path can be a file system path or any other type of path leading through a sequence of nodes or components, as defined by the programmer.
 
-[`NSPathControl`](nspathcontrol.md) automatically supports drag and drop, which can be further customized via delegate methods. To accept drag and drop, [`NSPathControl`](nspathcontrol.md) calls [`registerForDraggedTypes(_:)`](nsview/registerfordraggedtypes(_:).md) with [`NSFilenamesPboardType`](nsfilenamespboardtype.md) and [`NSURLPboardType`](nsurlpboardtype.md). When the URL value in the [`NSPathControl`](nspathcontrol.md) object changes because of an automatic drag and drop operation or the user selecting a new path via the open panel, the action is sent. In OS X v10.5 the value returned by [`clickedPathComponentCell()`](nspathcontrol/clickedpathcomponentcell().md) is `nil`, in macOS 10.6 and later, [`clickedPathComponentCell()`](nspathcontrol/clickedpathcomponentcell().md) returns the clicked cell.
+[`NSPathControl`](./nspathcontrol.md) automatically supports drag and drop, which can be further customized via delegate methods. To accept drag and drop, [`NSPathControl`](./nspathcontrol.md) calls [`registerForDraggedTypes(_:)`](./nsview/registerfordraggedtypes%28_%29.md) with [`NSFilenamesPboardType`](./nsfilenamespboardtype.md) and [`NSURLPboardType`](./nsurlpboardtype.md). When the URL value in the [`NSPathControl`](./nspathcontrol.md) object changes because of an automatic drag and drop operation or the user selecting a new path via the open panel, the action is sent. In OS X v10.5 the value returned by [`clickedPathComponentCell()`](./nspathcontrol/clickedpathcomponentcell%28%29.md) is `nil`, in macOS 10.6 and later, [`clickedPathComponentCell()`](./nspathcontrol/clickedpathcomponentcell%28%29.md) returns the clicked cell.
 
 ## Topics
 
 ### Setting the Control Style
-- [var pathStyle: NSPathControl.Style](nspathcontrol/pathstyle.md)
+- [var pathStyle: NSPathControl.Style](./nspathcontrol/pathstyle.md)
   The receiver’s path style.
 ### Setting the Background Color
-- [var backgroundColor: NSColor?](nspathcontrol/backgroundcolor.md)
+- [var backgroundColor: NSColor?](./nspathcontrol/backgroundcolor.md)
   The receiver’s background color.
 ### Setting the Double-Click Action
-- [var doubleAction: Selector?](nspathcontrol/doubleaction.md)
+- [var doubleAction: Selector?](./nspathcontrol/doubleaction.md)
   The receiver’s double-click action method.
 ### Setting the Path
-- [var url: URL?](nspathcontrol/url.md)
+- [var url: URL?](./nspathcontrol/url.md)
   The path value displayed by the receiver.
 ### Setting the Delegate
-- [var delegate: (any NSPathControlDelegate)?](nspathcontrol/delegate.md)
+- [var delegate: (any NSPathControlDelegate)?](./nspathcontrol/delegate.md)
   The receiver’s delegate.
 ### Setting the Drag Operation Mask
-- [func setDraggingSourceOperationMask(NSDragOperation, forLocal: Bool)](nspathcontrol/setdraggingsourceoperationmask(_:forlocal:).md)
+- [func setDraggingSourceOperationMask(NSDragOperation, forLocal: Bool)](./nspathcontrol/setdraggingsourceoperationmask%28_,forlocal%29.md)
   Configures the drag operation mask.
 ### Setting Popup Menu
-- [var menu: NSMenu?](nspathcontrol/menu.md)
+- [var menu: NSMenu?](./nspathcontrol/menu.md)
   The menu that is used for the path control’s cells.
 ### Instance Properties
-- [var allowedTypes: [String]?](nspathcontrol/allowedtypes.md)
-- [var clickedPathItem: NSPathControlItem?](nspathcontrol/clickedpathitem.md)
-- [var isEditable: Bool](nspathcontrol/iseditable.md)
-- [var pathItems: [NSPathControlItem]](nspathcontrol/pathitems.md)
-- [var placeholderAttributedString: NSAttributedString?](nspathcontrol/placeholderattributedstring.md)
-- [var placeholderString: String?](nspathcontrol/placeholderstring.md)
+- [var allowedTypes: [String]?](./nspathcontrol/allowedtypes.md)
+- [var clickedPathItem: NSPathControlItem?](./nspathcontrol/clickedpathitem.md)
+- [var isEditable: Bool](./nspathcontrol/iseditable.md)
+- [var pathItems: [NSPathControlItem]](./nspathcontrol/pathitems.md)
+- [var placeholderAttributedString: NSAttributedString?](./nspathcontrol/placeholderattributedstring.md)
+- [var placeholderString: String?](./nspathcontrol/placeholderstring.md)
 ### Enumerations
-- [NSPathControl.Style](nspathcontrol/style.md)
+- [NSPathControl.Style](./nspathcontrol/style.md)
   `NSPathStyle` constants represent the different visual and behavioral styles an `NSPathControl` or `NSPathCell` object can have.
 ### Deprecated
-- [func clickedPathComponentCell() -> NSPathComponentCell?](nspathcontrol/clickedpathcomponentcell.md)
+- [func clickedPathComponentCell() -> NSPathComponentCell?](./nspathcontrol/clickedpathcomponentcell%28%29.md)
   Returns the clicked cell.
-- [func pathComponentCells() -> [NSPathComponentCell]](nspathcontrol/pathcomponentcells.md)
+- [func pathComponentCells() -> [NSPathComponentCell]](./nspathcontrol/pathcomponentcells%28%29.md)
   Returns an array of the `NSPathComponentCell` objects currently being displayed.
-- [func setPathComponentCells([NSPathComponentCell])](nspathcontrol/setpathcomponentcells(_:).md)
+- [func setPathComponentCells([NSPathComponentCell])](./nspathcontrol/setpathcomponentcells%28_%29.md)
   Sets the array of `NSPathComponentCell` objects currently being displayed.
 
 ## Relationships
 
 ### Inherits From
-- [NSControl](nscontrol.md)
+- [NSControl](./nscontrol.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
-- [NSAnimatablePropertyContainer](nsanimatablepropertycontainer.md)
-- [NSAppearanceCustomization](nsappearancecustomization.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSDraggingDestination](nsdraggingdestination.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](nstouchbarprovider.md)
-- [NSUserActivityRestoring](nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](./nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](./nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](./nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](./nsappearancecustomization.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSDraggingDestination](./nsdraggingdestination.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](./nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](./nstouchbarprovider.md)
+- [NSUserActivityRestoring](./nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](./nsuserinterfaceitemidentification.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,21 +1,22 @@
 # LSInput
 
 **Framework**: TVMLKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - tvOS 14.0+
 
 ## Declaration
 
-```swift
+```
 interface LSInput
 ```
 
 ## Topics
 
 ### Instance Properties
-- [stringData](lsinput/3192146-stringdata.md)
+- [stringData](./lsinput/api-3192146-stringdata.md)
 
 
 ---

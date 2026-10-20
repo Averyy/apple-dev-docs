@@ -1,14 +1,15 @@
 # doI2CRequest
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn doI2CRequest(UInt32 bus, struct IOI2CBusTiming *timing, struct IOI2CRequest *request);
 ```
 

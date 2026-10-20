@@ -1,7 +1,8 @@
 # initialValue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string used as the initial value for a newly inserted item.
 
@@ -14,9 +15,14 @@ The string used as the initial value for a newly inserted item.
 var initialValue: Any { get set }
 ```
 
+```objc
+@property (strong) id initialValue;
+```
+
 ## See Also
 
-- [var initialKey: String](nsdictionarycontroller/initialkey.md)
+### Setting Initial Key and Values
+- [var initialKey: String](./initialkey.md)
   The string used as the initial key name for a newly inserted item.
 
 

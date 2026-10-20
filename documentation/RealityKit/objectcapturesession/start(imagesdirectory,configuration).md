@@ -1,7 +1,8 @@
 # start(imagesDirectory:configuration:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts the session with the provided output image directory and optional checkpoint directory.
 

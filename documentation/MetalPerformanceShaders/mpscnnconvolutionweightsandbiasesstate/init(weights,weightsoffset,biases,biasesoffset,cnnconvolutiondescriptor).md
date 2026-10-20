@@ -1,7 +1,8 @@
 # init(weights:weightsOffset:biases:biasesOffset:cnnConvolutionDescriptor:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(weights: any MTLBuffer, weightsOffset: Int, biases: (any MTLBuffer)?, biasesOffset: Int, cnnConvolutionDescriptor descriptor: MPSCNNConvolutionDescriptor)
+```
+
+```objc
+- (instancetype) initWithWeights:(id<MTLBuffer>) weights weightsOffset:(NSUInteger) weightsOffset biases:(id<MTLBuffer>) biases biasesOffset:(NSUInteger) biasesOffset cnnConvolutionDescriptor:(MPSCNNConvolutionDescriptor *) descriptor;
 ```
 
 

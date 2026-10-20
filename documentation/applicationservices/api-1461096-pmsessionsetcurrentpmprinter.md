@@ -1,7 +1,8 @@
 # PMSessionSetCurrentPMPrinter(_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Changes the current printer for a printing session.
 
@@ -14,13 +15,17 @@ Changes the current printer for a printing session.
 func PMSessionSetCurrentPMPrinter(_ session: PMPrintSession, _ printer: PMPrinter) -> OSStatus
 ```
 
-#### Return_value
+```c
+OSStatus PMSessionSetCurrentPMPrinter(PMPrintSession session, PMPrinter printer);
+```
 
-A result code. See [`Result Codes`](core_printing#1670007.md).
+#### Return Value
+
+A result code. See [Result Codes](./core_printing.md#1670007).
 
 #### Discussion
 
-You must call this function between the creation and release of a printing session. See the function [`PMCreateSession(_:)`](1463247-pmcreatesession.md).
+You must call this function between the creation and release of a printing session. See the function [`PMCreateSession(_:)`](./api-1463247-pmcreatesession.md).
 
 ## Parameters
 
@@ -29,17 +34,18 @@ You must call this function between the creation and release of a printing sessi
 
 ## See Also
 
-- [func PMSessionGetDataFromSession(PMPrintSession, CFString, UnsafeMutablePointer<Unmanaged<CFTypeRef>?>) -> OSStatus](1462964-pmsessiongetdatafromsession.md)
+### Accessing Data in Printing Session Objects
+- [func PMSessionGetDataFromSession(PMPrintSession, CFString, UnsafeMutablePointer<Unmanaged<CFTypeRef>?>) -> OSStatus](./api-1462964-pmsessiongetdatafromsession.md)
   Obtains application-specific data previously stored in a printing session object.
-- [func PMSessionSetDataInSession(PMPrintSession, CFString, CFTypeRef) -> OSStatus](1461902-pmsessionsetdatainsession.md)
+- [func PMSessionSetDataInSession(PMPrintSession, CFString, CFTypeRef) -> OSStatus](./api-1461902-pmsessionsetdatainsession.md)
   Stores your application-specific data in a printing session object.
-- [func PMSessionGetCurrentPrinter(PMPrintSession, UnsafeMutablePointer<PMPrinter?>) -> OSStatus](1458998-pmsessiongetcurrentprinter.md)
+- [func PMSessionGetCurrentPrinter(PMPrintSession, UnsafeMutablePointer<PMPrinter?>) -> OSStatus](./api-1458998-pmsessiongetcurrentprinter.md)
   Obtains the current printer associated with a printing session.
-- [func PMSessionGetCGGraphicsContext(PMPrintSession, UnsafeMutablePointer<Unmanaged<CGContext>?>) -> OSStatus](1461952-pmsessiongetcggraphicscontext.md)
+- [func PMSessionGetCGGraphicsContext(PMPrintSession, UnsafeMutablePointer<Unmanaged<CGContext>?>) -> OSStatus](./api-1461952-pmsessiongetcggraphicscontext.md)
   Obtains the Quartz graphics context for the current page in a printing session.
-- [func PMSessionError(PMPrintSession) -> OSStatus](1460003-pmsessionerror.md)
+- [func PMSessionError(PMPrintSession) -> OSStatus](./api-1460003-pmsessionerror.md)
   Obtains the result code for any error returned by the printing session. 
-- [func PMSessionSetError(PMPrintSession, OSStatus) -> OSStatus](1460216-pmsessionseterror.md)
+- [func PMSessionSetError(PMPrintSession, OSStatus) -> OSStatus](./api-1460216-pmsessionseterror.md)
   Sets the value of the current result code for the specified printing session.
 
 

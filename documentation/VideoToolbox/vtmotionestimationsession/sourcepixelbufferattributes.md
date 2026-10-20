@@ -1,7 +1,8 @@
 # sourcePixelBufferAttributes
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -19,9 +20,10 @@ final var sourcePixelBufferAttributes: [String : any Sendable] { get }
 
 ## See Also
 
-- [var label: String?](vtmotionestimationsession/label.md)
-- [var motionVectorSize: VTMotionEstimationSession.BlockSize](vtmotionestimationsession/motionvectorsize.md)
-- [var useMultiPassSearch: Bool](vtmotionestimationsession/usemultipasssearch.md)
+### Inspecting the session
+- [var label: String?](./label.md)
+- [var motionVectorSize: VTMotionEstimationSession.BlockSize](./motionvectorsize.md)
+- [var useMultiPassSearch: Bool](./usemultipasssearch.md)
 
 
 ---

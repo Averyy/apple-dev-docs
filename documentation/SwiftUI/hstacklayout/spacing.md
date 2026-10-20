@@ -1,7 +1,8 @@
 # spacing
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance between adjacent subviews.
 
@@ -26,7 +27,8 @@ Set this value to `nil` to use default distances between subviews.
 
 ## See Also
 
-- [var alignment: VerticalAlignment](hstacklayout/alignment.md)
+### Getting the stack’s properties
+- [var alignment: VerticalAlignment](./alignment.md)
   The vertical alignment of subviews.
 
 

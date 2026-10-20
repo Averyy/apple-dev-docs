@@ -1,7 +1,8 @@
 # init(spacing:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a glass effect container with the provided spacing, extracting glass shapes from the provided content.
 

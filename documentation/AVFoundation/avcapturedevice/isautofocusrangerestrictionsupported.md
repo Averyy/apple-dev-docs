@@ -1,7 +1,8 @@
 # isAutoFocusRangeRestrictionSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the device supports focus range restrictions.
 
@@ -17,29 +18,34 @@ A Boolean value that indicates whether the device supports focus range restricti
 var isAutoFocusRangeRestrictionSupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isAutoFocusRangeRestrictionSupported) BOOL autoFocusRangeRestrictionSupported;
+```
+
 #### Discussion
 
-Focus range restriction is available only on compatible devices. If this property’s value is [`false`](https://developer.apple.com/documentation/swift/false), setting the value of [`autoFocusRangeRestriction`](avcapturedevice/autofocusrangerestriction-swift.property.md) raises an exception.
+Focus range restriction is available only on compatible devices. If this property’s value is [`false`](../../Swift/false.md), setting the value of [`autoFocusRangeRestriction`](./autofocusrangerestriction-swift.property.md) raises an exception.
 
 ## See Also
 
-- [func isFocusModeSupported(AVCaptureDevice.FocusMode) -> Bool](avcapturedevice/isfocusmodesupported(_:).md)
+### Configuring automatic focus
+- [func isFocusModeSupported(AVCaptureDevice.FocusMode) -> Bool](./isfocusmodesupported%28_%29.md)
   Returns a Boolean value that indicates whether the device supports the specified focus mode.
-- [var focusMode: AVCaptureDevice.FocusMode](avcapturedevice/focusmode-swift.property.md)
+- [var focusMode: AVCaptureDevice.FocusMode](./focusmode-swift.property.md)
   The capture device’s focus mode.
-- [AVCaptureDevice.FocusMode](avcapturedevice/focusmode-swift.enum.md)
+- [AVCaptureDevice.FocusMode](./focusmode-swift.enum.md)
   Constants to specify the focus mode of a capture device.
-- [var isSmoothAutoFocusSupported: Bool](avcapturedevice/issmoothautofocussupported.md)
+- [var isSmoothAutoFocusSupported: Bool](./issmoothautofocussupported.md)
   A Boolean value that indicates whether the device supports smooth autofocus.
-- [var isSmoothAutoFocusEnabled: Bool](avcapturedevice/issmoothautofocusenabled.md)
+- [var isSmoothAutoFocusEnabled: Bool](./issmoothautofocusenabled.md)
   A Boolean value that indicates whether smooth autofocus is in an enabled state on the device.
-- [var isFaceDrivenAutoFocusEnabled: Bool](avcapturedevice/isfacedrivenautofocusenabled.md)
+- [var isFaceDrivenAutoFocusEnabled: Bool](./isfacedrivenautofocusenabled.md)
   A Boolean value that indicates whether the device has face-driven autofocus enabled.
-- [var automaticallyAdjustsFaceDrivenAutoFocusEnabled: Bool](avcapturedevice/automaticallyadjustsfacedrivenautofocusenabled.md)
+- [var automaticallyAdjustsFaceDrivenAutoFocusEnabled: Bool](./automaticallyadjustsfacedrivenautofocusenabled.md)
   A Boolean value that indicates whether the device automatically adjusts face-driven autofocus.
-- [var autoFocusRangeRestriction: AVCaptureDevice.AutoFocusRangeRestriction](avcapturedevice/autofocusrangerestriction-swift.property.md)
+- [var autoFocusRangeRestriction: AVCaptureDevice.AutoFocusRangeRestriction](./autofocusrangerestriction-swift.property.md)
   A value that controls the allowable range for automatic focusing.
-- [AVCaptureDevice.AutoFocusRangeRestriction](avcapturedevice/autofocusrangerestriction-swift.enum.md)
+- [AVCaptureDevice.AutoFocusRangeRestriction](./autofocusrangerestriction-swift.enum.md)
   Constants to specify the autofocus range of a capture device.
 
 

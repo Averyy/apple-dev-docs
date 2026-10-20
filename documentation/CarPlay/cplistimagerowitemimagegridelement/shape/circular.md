@@ -1,7 +1,8 @@
 # CPListImageRowItemImageGridElement.Shape.circular
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The list item will render a row of elements.
 
@@ -14,6 +15,10 @@ The list item will render a row of elements.
 
 ```swift
 case circular
+```
+
+```c
+CPListImageRowItemImageGridElementShapeCircular
 ```
 
 

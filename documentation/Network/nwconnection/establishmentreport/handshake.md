@@ -1,7 +1,8 @@
 # NWConnection.EstablishmentReport.Handshake
 
 **Framework**: Network  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A description of a single protocol handshake.
 
@@ -23,23 +24,24 @@ struct Handshake
 ## Topics
 
 ### Measuring Performance
-- [let handshakeDuration: TimeInterval](nwconnection/establishmentreport/handshake/handshakeduration.md)
+- [let handshakeDuration: TimeInterval](./handshake/handshakeduration.md)
   The duration of the protocol handshake.
-- [let handshakeRTT: TimeInterval](nwconnection/establishmentreport/handshake/handshakertt.md)
+- [let handshakeRTT: TimeInterval](./handshake/handshakertt.md)
   The round-trip time the protocol observed during its handshake.
 ### Identifying Protocols
-- [let definition: NWProtocolDefinition](nwconnection/establishmentreport/handshake/definition.md)
+- [let definition: NWProtocolDefinition](./handshake/definition.md)
   The protocol performing the handshake.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let handshakes: [NWConnection.EstablishmentReport.Handshake]](nwconnection/establishmentreport/handshakes.md)
+### Inspecting Protocol Handshakes
+- [let handshakes: [NWConnection.EstablishmentReport.Handshake]](./handshakes.md)
   The array of protocol handshakes in order from first completed to last completed.
 
 

@@ -1,7 +1,8 @@
 # isTransitioningToCenterIndexPath
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the cell is changing index paths.
 
@@ -14,13 +15,18 @@ A Boolean value that indicates whether the cell is changing index paths.
 var isTransitioningToCenterIndexPath: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isTransitioningToCenterIndexPath) BOOL transitioningToCenterIndexPath;
+```
+
 #### Discussion
 
 Use this property to determine whether the cell is changing focus to another cell.
 
 ## See Also
 
-- [var parallaxFactor: CGFloat](tvcollectionviewfullscreenlayout/parallaxfactor.md)
+### Managing transitions
+- [var parallaxFactor: CGFloat](./parallaxfactor.md)
   A value that specifies how slowly the background should move relative to the foreground.
 
 

@@ -1,7 +1,8 @@
 # TopLevel.ConsentText.ConsentTextItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 A specific pairing of language code and consent text.
 
@@ -16,7 +17,7 @@ A specific pairing of language code and consent text.
 
 ## Declaration
 
-```swift
+```
 object TopLevel.ConsentText.ConsentTextItem
 ```
 

@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The classification label that identifies the type of observation.
 
@@ -26,9 +27,10 @@ An example classification could be a string like ‘cat’ or ‘hotdog’. The 
 
 ## See Also
 
-- [enum RequestDescriptor](requestdescriptor.md)
+### Inspecting an observation
+- [enum RequestDescriptor](../requestdescriptor.md)
   A type that describes the request and revision combination.
-- [var hasPrecisionRecallCurve: Bool](classificationobservation/hasprecisionrecallcurve.md)
+- [var hasPrecisionRecallCurve: Bool](./hasprecisionrecallcurve.md)
   A Boolean value that indicates whether the observation contains precision and recall curves.
 
 

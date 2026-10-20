@@ -1,7 +1,8 @@
 # WeatherAlert
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A weather alert issued for the requested  location by a governmental authority.
 
@@ -27,42 +28,43 @@ Weather alerts often contains severe weather information; however, not all alert
 ## Topics
 
 ### Getting the properties
-- [var metadata: WeatherMetadata](weatheralert/metadata.md)
+- [var metadata: WeatherMetadata](./weatheralert/metadata.md)
   Descriptive information about the weather alert data.
-- [var region: String?](weatheralert/region.md)
+- [var region: String?](./weatheralert/region.md)
   The name of the affected area.
-- [var severity: WeatherSeverity](weatheralert/severity.md)
+- [var severity: WeatherSeverity](./weatheralert/severity.md)
   The severity of the weather alert.
-- [var summary: String](weatheralert/summary.md)
+- [var summary: String](./weatheralert/summary.md)
   The summary of the event type.
 ### Providing attribution
-- [var detailsURL: URL](weatheralert/detailsurl.md)
+- [var detailsURL: URL](./weatheralert/detailsurl.md)
   The site for more details about the weather alert.
-- [var source: String](weatheralert/source.md)
+- [var source: String](./weatheralert/source.md)
   The name of the source issuing the weather alert.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct WeatherAvailability](weatheravailability.md)
+### Alerts and forecasts
+- [struct WeatherAvailability](./weatheravailability.md)
   A structure that indicates the availability of data at the requested location.
-- [struct Forecast](forecast.md)
+- [struct Forecast](./forecast.md)
   A forecast collection for minute, hourly, and daily forecasts.
-- [struct MinuteWeather](minuteweather.md)
+- [struct MinuteWeather](./minuteweather.md)
   A structure that represents the next hour minute forecasts.
-- [struct HourWeather](hourweather.md)
+- [struct HourWeather](./hourweather.md)
   A structure that represents the weather conditions for the hour.
-- [struct DayWeather](dayweather.md)
+- [struct DayWeather](./dayweather.md)
   A structure that represents the weather conditions for the day.
 
 

@@ -1,7 +1,8 @@
 # MLImageClassifier.FeatureExtractorType.scenePrint(revision:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A feature extractor trained on millions of images.
 
@@ -20,7 +21,7 @@ case scenePrint(revision: Int?)
 
 ## Mentions
 
-- [Creating an Image Classifier Model](creating-an-image-classifier-model.md)
+- [Creating an Image Classifier Model](../../creating-an-image-classifier-model.md)
 
 #### Discussion
 
@@ -38,9 +39,10 @@ Typically, scene print works best if the source of your training data matches th
 
 ## See Also
 
-- [case custom(MLImageClassifier.CustomFeatureExtractor)](mlimageclassifier/featureextractortype/custom(_:).md)
+### Selecting a feature extractor type
+- [case custom(MLImageClassifier.CustomFeatureExtractor)](./custom%28_%29.md)
   A feature extractor that you provide as a Core ML model file or a layer within that file.
-- [MLImageClassifier.CustomFeatureExtractor](mlimageclassifier/customfeatureextractor.md)
+- [MLImageClassifier.CustomFeatureExtractor](../customfeatureextractor.md)
   A custom feature extractor a training session uses to train an image classifier.
 
 

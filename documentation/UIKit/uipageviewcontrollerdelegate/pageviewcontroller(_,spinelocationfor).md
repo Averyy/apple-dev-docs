@@ -1,7 +1,8 @@
 # pageViewController(_:spineLocationFor:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the spine location for the given orientation.
 
@@ -17,6 +18,10 @@ Returns the spine location for the given orientation.
 optional func pageViewController(_ pageViewController: UIPageViewController, spineLocationFor orientation: UIInterfaceOrientation) -> UIPageViewController.SpineLocation
 ```
 
+```objc
+- (UIPageViewControllerSpineLocation) pageViewController:(UIPageViewController *) pageViewController spineLocationForInterfaceOrientation:(UIInterfaceOrientation) orientation;
+```
+
 #### Return Value
 
 The spine location.
@@ -25,7 +30,7 @@ The spine location.
 
 Use this method to change the spine location when the device orientation changes, as well as setting new view controllers and changing the double-sided state.
 
-This method is called only if the transition style is [`UIPageViewController.TransitionStyle.pageCurl`](uipageviewcontroller/transitionstyle-swift.enum/pagecurl.md).
+This method is called only if the transition style is [`UIPageViewController.TransitionStyle.pageCurl`](../uipageviewcontroller/transitionstyle-swift.enum/pagecurl.md).
 
 ## Parameters
 
@@ -34,9 +39,10 @@ This method is called only if the transition style is [`UIPageViewController.Tra
 
 ## See Also
 
-- [func pageViewController(UIPageViewController, willTransitionTo: [UIViewController])](uipageviewcontrollerdelegate/pageviewcontroller(_:willtransitionto:).md)
+### Responding to Page View Controller Events
+- [func pageViewController(UIPageViewController, willTransitionTo: [UIViewController])](./pageviewcontroller%28_,willtransitionto%29.md)
   Called before a gesture-driven transition begins.
-- [func pageViewController(UIPageViewController, didFinishAnimating: Bool, previousViewControllers: [UIViewController], transitionCompleted: Bool)](uipageviewcontrollerdelegate/pageviewcontroller(_:didfinishanimating:previousviewcontrollers:transitioncompleted:).md)
+- [func pageViewController(UIPageViewController, didFinishAnimating: Bool, previousViewControllers: [UIViewController], transitionCompleted: Bool)](./pageviewcontroller%28_,didfinishanimating,previousviewcontrollers,transitioncompleted%29.md)
   Called after a gesture-driven transition completes.
 
 

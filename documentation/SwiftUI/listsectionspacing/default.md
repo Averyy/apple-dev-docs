@@ -1,7 +1,8 @@
 # default
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default spacing between sections
 
@@ -20,9 +21,10 @@ static let `default`: ListSectionSpacing
 
 ## See Also
 
-- [static let compact: ListSectionSpacing](listsectionspacing/compact.md)
+### Getting section spacing
+- [static let compact: ListSectionSpacing](./compact.md)
   Compact spacing between sections
-- [static func custom(CGFloat) -> ListSectionSpacing](listsectionspacing/custom(_:).md)
+- [static func custom(CGFloat) -> ListSectionSpacing](./custom%28_%29.md)
   Creates a custom spacing value.
 
 

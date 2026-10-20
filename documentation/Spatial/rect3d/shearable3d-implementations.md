@@ -1,11 +1,12 @@
 # Shearable3D Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func sheared(AxisWithFactors) -> Rect3D](rect3d/sheared(_:).md)
+- [func sheared(AxisWithFactors) -> Rect3D](./sheared%28_%29.md)
   Returns a rectangle that results from shearing over an axis by shear factors for the other two axes.
 
 

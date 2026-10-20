@@ -1,7 +1,8 @@
 # CSUserQuery.UserInteractionKind
 
 **Framework**: Core Spotlight  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate how someone engaged with search-related content.
 
@@ -18,30 +19,35 @@ Constants that indicate how someone engaged with search-related content.
 enum UserInteractionKind
 ```
 
+```c
+enum CSUserInteraction : NSInteger;
+```
+
 ## Topics
 
 ### Getting the interaction types
-- [static var `default`: CSUserQuery.UserInteractionKind](csuserquery/userinteractionkind/default.md)
-- [CSUserQuery.UserInteractionKind.select](csuserquery/userinteractionkind/select.md)
-- [CSUserQuery.UserInteractionKind.focus](csuserquery/userinteractionkind/focus.md)
+- [static var `default`: CSUserQuery.UserInteractionKind](./userinteractionkind/default.md)
+- [CSUserQuery.UserInteractionKind.select](./userinteractionkind/select.md)
+- [CSUserQuery.UserInteractionKind.focus](./userinteractionkind/focus.md)
 ### Creating an interaction kind
-- [init?(rawValue: Int)](csuserquery/userinteractionkind/init(rawvalue:).md)
+- [init?(rawValue: Int)](./userinteractionkind/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func userEngaged(CSUserQuery.Item, visibleItems: [CSUserQuery.Item], interaction: CSUserQuery.UserInteractionKind)](csuserquery/userengaged(_:visibleitems:interaction:).md)
+### Improving the quality of ranked results
+- [func userEngaged(CSUserQuery.Item, visibleItems: [CSUserQuery.Item], interaction: CSUserQuery.UserInteractionKind)](./userengaged%28_,visibleitems,interaction%29.md)
   Notifies the system that someone engaged with a specific search result in your app’s interface.
-- [func userEngaged(CSUserQuery.Suggestion, visibleSuggestions: [CSUserQuery.Suggestion], interaction: CSUserQuery.UserInteractionKind)](csuserquery/userengaged(_:visiblesuggestions:interaction:).md)
+- [func userEngaged(CSUserQuery.Suggestion, visibleSuggestions: [CSUserQuery.Suggestion], interaction: CSUserQuery.UserInteractionKind)](./userengaged%28_,visiblesuggestions,interaction%29.md)
   Notifies the system that someone engaged with a specific text completion in your app’s interface.
 
 

@@ -1,7 +1,8 @@
 # PersonNameComponentsFormatter
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A formatter that provides localized representations of the components of a person’s name.
 
@@ -20,16 +21,20 @@ A formatter that provides localized representations of the components of a perso
 class PersonNameComponentsFormatter
 ```
 
+```objc
+@interface NSPersonNameComponentsFormatter : NSFormatter
+```
+
 #### Overview
 
 Each locale has its own set of rules and conventions for how personal names are structured and represented. These rules vary widely across different locales in a several ways, including the sort and display order of given and family names, the use of salutations and honorifics, and other concerns related to the grammar, spelling, punctuation, and formatting. About the only thing that *is* consistent across all locales is that personal names are significant and meaningful. For this reason, names deserve careful and respectful treatment—perhaps more than any other kind of information your app interacts with.
 
 Formatters can be configured to represent names in a variety of styles, which are described in detail below.
 
-- Default ([`PersonNameComponentsFormatter.Style.default`](personnamecomponentsformatter/style-swift.enum/default.md))
-- Short ([`PersonNameComponentsFormatter.Style.short`](personnamecomponentsformatter/style-swift.enum/short.md))
-- Long ([`PersonNameComponentsFormatter.Style.long`](personnamecomponentsformatter/style-swift.enum/long.md))
-- Abbreviated ([`PersonNameComponentsFormatter.Style.abbreviated`](personnamecomponentsformatter/style-swift.enum/abbreviated.md))
+- Default ([`PersonNameComponentsFormatter.Style.default`](./personnamecomponentsformatter/style-swift.enum/default.md))
+- Short ([`PersonNameComponentsFormatter.Style.short`](./personnamecomponentsformatter/style-swift.enum/short.md))
+- Long ([`PersonNameComponentsFormatter.Style.long`](./personnamecomponentsformatter/style-swift.enum/long.md))
+- Abbreviated ([`PersonNameComponentsFormatter.Style.abbreviated`](./personnamecomponentsformatter/style-swift.enum/abbreviated.md))
 
 When determining how to represent a name in a particular style, a formatter takes a number of factors into consideration, in order of priority:
 
@@ -42,28 +47,28 @@ When the behavior specified in one factor conflicts with any other factors, the 
 
 These considerations extend to the availability of certain formatter styles as well. Because developer-specified configurations have the lowest precedence in determining behavior, the value set for the formatter’s style property can be invalidated if it’s not supported for the locale, user preferences, or script. If the specified style is not available, the next longest valid style is used. For example, a name in Arabic script (for example, “أحمد الراجحي”) does not support the Abbreviated style, so the Short style is used instead. A name that contains more than one script (for example, given name: “John”, family name: “王”) is detected to have “Unknown” script, which has its own set of behaviors and characteristics.
 
-> 💡 **Tip**:  In Swift, you can use [`PersonNameComponents.FormatStyle`](personnamecomponents/formatstyle.md) rather than [`PersonNameComponentsFormatter`](personnamecomponentsformatter.md). The [`FormatStyle`](formatstyle.md) API offers a declarative idiom for customizing the formatting of various types. Also, Foundation caches identical [`FormatStyle`](formatstyle.md) instances, so you don’t need to pass them around your app, or risk wasting memory with duplicate formatters.
+> 💡 **Tip**:  In Swift, you can use [`PersonNameComponents.FormatStyle`](./personnamecomponents/formatstyle.md) rather than [`PersonNameComponentsFormatter`](./personnamecomponentsformatter.md). The [`FormatStyle`](./formatstyle.md) API offers a declarative idiom for customizing the formatting of various types. Also, Foundation caches identical [`FormatStyle`](./formatstyle.md) instances, so you don’t need to pass them around your app, or risk wasting memory with duplicate formatters.
 
 ##### Styles
 
 `NSPersonNameComponentsFormatter` can be configured to format names in the following styles:
 
-- **[`PersonNameComponentsFormatter.Style.default`](personnamecomponentsformatter/style-swift.enum/default.md)**: The minimally necessary features for differentiation in a casual setting. Equivalent to [`PersonNameComponentsFormatter.Style.medium`](personnamecomponentsformatter/style-swift.enum/medium.md).
-- **[`PersonNameComponentsFormatter.Style.short`](personnamecomponentsformatter/style-swift.enum/short.md)**: Relies on user preferences and language defaults to display shortened form appropriate for display in space-constrained settings.
-- **[`PersonNameComponentsFormatter.Style.long`](personnamecomponentsformatter/style-swift.enum/long.md)**: The fully qualified name complete with all known components.
-- **[`PersonNameComponentsFormatter.Style.abbreviated`](personnamecomponentsformatter/style-swift.enum/abbreviated.md)**: The maximally abbreviated form of a name.
+- **[`PersonNameComponentsFormatter.Style.default`](./personnamecomponentsformatter/style-swift.enum/default.md)**: The minimally necessary features for differentiation in a casual setting. Equivalent to [`PersonNameComponentsFormatter.Style.medium`](./personnamecomponentsformatter/style-swift.enum/medium.md).
+- **[`PersonNameComponentsFormatter.Style.short`](./personnamecomponentsformatter/style-swift.enum/short.md)**: Relies on user preferences and language defaults to display shortened form appropriate for display in space-constrained settings.
+- **[`PersonNameComponentsFormatter.Style.long`](./personnamecomponentsformatter/style-swift.enum/long.md)**: The fully qualified name complete with all known components.
+- **[`PersonNameComponentsFormatter.Style.abbreviated`](./personnamecomponentsformatter/style-swift.enum/abbreviated.md)**: The maximally abbreviated form of a name.
 
 |  | `namePrefix` | `givenName` | `middleName` | `familyName` | `nameSuffix` | `nickname` |
 | --- | --- | --- | --- | --- | --- | --- |
-| Arabic ![None](/images/com.apple.foundation/spacer.png) `(ar-SA)` | .د | أحمد |  | محمدالمصري |  |  |
-| Chinese ![None](/images/com.apple.foundation/spacer.png) `(zh-Hans)` | 物理学博士 | 振宁 |  | 杨 | 先生 |  |
-| English ![None](/images/com.apple.foundation/spacer.png) `(en-US)` | Dr. | Jonathan | Maple | Appleseed | Esq. | Johnny |
-| French ![None](/images/com.apple.foundation/spacer.png) `(fr-FR)` | Père | Jean-Philippe |  | de Zélicourt |  | JP |
-| German ![None](/images/com.apple.foundation/spacer.png) `(de-DE)` | Dr. med. | Max |  | Mustermann | junior, M.A. |  |
-| Hindi ![None](/images/com.apple.foundation/spacer.png) `(hi-IN)` | डॉ. | रिय |  | साहिल |  |  |
-| Japanese ![None](/images/com.apple.foundation/spacer.png) `(ja-JP)` |  | 泰夫 |  | 木田 | 先生 |  |
-| Spanish ![None](/images/com.apple.foundation/spacer.png) `(es-ES)` | Dr. | José Ramiro |  | Martín González de Rivera | júnior, PhD | Ramiro |
-| Thai ![None](/images/com.apple.foundation/spacer.png) `(th-TH)` | ฯพณฯ | สมชาย | ปีเตอร์ | รัตนเรืองรองบวรทิพย์ |  |  |
+| Arabic ![](https://developer.apple.com/tutorials/images/com.apple.foundation/spacer.png) `(ar-SA)` | .د | أحمد |  | محمدالمصري |  |  |
+| Chinese ![](https://developer.apple.com/tutorials/images/com.apple.foundation/spacer.png) `(zh-Hans)` | 物理学博士 | 振宁 |  | 杨 | 先生 |  |
+| English ![](https://developer.apple.com/tutorials/images/com.apple.foundation/spacer.png) `(en-US)` | Dr. | Jonathan | Maple | Appleseed | Esq. | Johnny |
+| French ![](https://developer.apple.com/tutorials/images/com.apple.foundation/spacer.png) `(fr-FR)` | Père | Jean-Philippe |  | de Zélicourt |  | JP |
+| German ![](https://developer.apple.com/tutorials/images/com.apple.foundation/spacer.png) `(de-DE)` | Dr. med. | Max |  | Mustermann | junior, M.A. |  |
+| Hindi ![](https://developer.apple.com/tutorials/images/com.apple.foundation/spacer.png) `(hi-IN)` | डॉ. | रिय |  | साहिल |  |  |
+| Japanese ![](https://developer.apple.com/tutorials/images/com.apple.foundation/spacer.png) `(ja-JP)` |  | 泰夫 |  | 木田 | 先生 |  |
+| Spanish ![](https://developer.apple.com/tutorials/images/com.apple.foundation/spacer.png) `(es-ES)` | Dr. | José Ramiro |  | Martín González de Rivera | júnior, PhD | Ramiro |
+| Thai ![](https://developer.apple.com/tutorials/images/com.apple.foundation/spacer.png) `(th-TH)` | ฯพณฯ | สมชาย | ปีเตอร์ | รัตนเรืองรองบวรทิพย์ |  |  |
 
 ###### Default
 
@@ -155,55 +160,56 @@ If the Abbreviated style is unavailable, the Short style is used instead—unles
 ## Topics
 
 ### Configuring Formatter Behavior
-- [var style: PersonNameComponentsFormatter.Style](personnamecomponentsformatter/style-swift.property.md)
+- [var style: PersonNameComponentsFormatter.Style](./personnamecomponentsformatter/style-swift.property.md)
   The formatting style of the receiver.
-- [var isPhonetic: Bool](personnamecomponentsformatter/isphonetic.md)
+- [var isPhonetic: Bool](./personnamecomponentsformatter/isphonetic.md)
   A Boolean value that specifies whether the receiver should use only the phonetic representations of name components.
 ### Converting Between Person Name Components and Strings
-- [class func localizedString(from: PersonNameComponents, style: PersonNameComponentsFormatter.Style, options: PersonNameComponentsFormatter.Options) -> String](personnamecomponentsformatter/localizedstring(from:style:options:).md)
+- [class func localizedString(from: PersonNameComponents, style: PersonNameComponentsFormatter.Style, options: PersonNameComponentsFormatter.Options) -> String](./personnamecomponentsformatter/localizedstring%28from,style,options%29.md)
   Returns a string formatted for a given `NSPersonNameComponents` object using the provided style and options.
-- [func string(from: PersonNameComponents) -> String](personnamecomponentsformatter/string(from:).md)
+- [func string(from: PersonNameComponents) -> String](./personnamecomponentsformatter/string%28from%29.md)
   Returns a string formatted for a given `NSPersonNameComponents` object.
-- [func annotatedString(from: PersonNameComponents) -> NSAttributedString](personnamecomponentsformatter/annotatedstring(from:).md)
+- [func annotatedString(from: PersonNameComponents) -> NSAttributedString](./personnamecomponentsformatter/annotatedstring%28from%29.md)
   Returns an attributed string formatted for a given `NSPersonNameComponents` object, with attribute annotations for each component.
-- [func personNameComponents(from: String) -> PersonNameComponents?](personnamecomponentsformatter/personnamecomponents(from:).md)
+- [func personNameComponents(from: String) -> PersonNameComponents?](./personnamecomponentsformatter/personnamecomponents%28from%29.md)
   Returns a person name components object from a given string.
-- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](personnamecomponentsformatter/getobjectvalue(_:for:errordescription:).md)
+- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](./personnamecomponentsformatter/getobjectvalue%28_,for,errordescription%29.md)
   Returns by reference a person name components object after creating it from a given string.
 ### Constants
-- [PersonNameComponentsFormatter.Style](personnamecomponentsformatter/style-swift.enum.md)
+- [PersonNameComponentsFormatter.Style](./personnamecomponentsformatter/style-swift.enum.md)
   The formatting styles for person name components.
-- [PersonNameComponentsFormatter.Options](personnamecomponentsformatter/options.md)
+- [PersonNameComponentsFormatter.Options](./personnamecomponentsformatter/options.md)
   Options for formatting person name components.
-- [Attributed String Key](attributed-string-key.md)
-  This constant is used as a key for person name component attributes in attributed strings returned by the [`annotatedString(from:)`](personnamecomponentsformatter/annotatedstring(from:).md) method
-- [Attributed String Components](attributed-string-components.md)
-  These constants are used to identify individual components of attributed strings returned by the [`annotatedString(from:)`](personnamecomponentsformatter/annotatedstring(from:).md) method.
-- [Component Delimiter](component-delimiter.md)
+- [Attributed String Key](./attributed-string-key.md)
+  This constant is used as a key for person name component attributes in attributed strings returned by the [`annotatedString(from:)`](./personnamecomponentsformatter/annotatedstring%28from%29.md) method
+- [Attributed String Components](./attributed-string-components.md)
+  These constants are used to identify individual components of attributed strings returned by the [`annotatedString(from:)`](./personnamecomponentsformatter/annotatedstring%28from%29.md) method.
+- [Component Delimiter](./component-delimiter.md)
   This constant defines the delimiter used to separate name components.
 ### Instance Properties
-- [var locale: Locale!](personnamecomponentsformatter/locale.md)
+- [var locale: Locale!](./personnamecomponentsformatter/locale.md)
   Specifies the locale to format names.
 
 ## Relationships
 
 ### Inherits From
-- [Formatter](formatter.md)
+- [Formatter](./formatter.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct PersonNameComponents](personnamecomponents.md)
+### Names
+- [struct PersonNameComponents](./personnamecomponents.md)
   The separate parts of a person’s name, allowing locale-aware formatting.
 
 

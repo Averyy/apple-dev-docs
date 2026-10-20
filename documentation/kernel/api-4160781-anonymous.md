@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOStorageUnmapOptionNone](4160781-anonymous/kiostorageunmapoptionnone.md)
-- [kIOStorageUnmapOptionReserved](../iokit/4160764-anonymous/kiostorageunmapoptionreserved.md)
-- [kIOStorageUnmapOptionWhole](4160781-anonymous/kiostorageunmapoptionwhole.md)
+- [kIOStorageUnmapOptionNone](./api-4160781-anonymous/kiostorageunmapoptionnone.md)
+- [kIOStorageUnmapOptionReserved](../iokit/api-4160764-anonymous/kiostorageunmapoptionreserved.md)
+- [kIOStorageUnmapOptionWhole](./api-4160781-anonymous/kiostorageunmapoptionwhole.md)
 
 
 ---

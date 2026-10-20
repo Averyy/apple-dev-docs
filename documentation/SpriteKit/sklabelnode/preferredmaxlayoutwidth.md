@@ -1,7 +1,8 @@
 # preferredMaxLayoutWidth
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width, in screen points, after which line-break mode should be applied.
 
@@ -20,15 +21,20 @@ The width, in screen points, after which line-break mode should be applied.
 var preferredMaxLayoutWidth: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat preferredMaxLayoutWidth;
+```
+
 #### Discussion
 
 The default value is 0, which means that line break mode will not be applied.
 
 ## See Also
 
-- [var lineBreakMode: NSLineBreakMode](sklabelnode/linebreakmode.md)
+### Defining a Label’s Line-Breaking Behavior
+- [var lineBreakMode: NSLineBreakMode](./linebreakmode.md)
   Determines the line-break mode for multiple lines.
-- [var numberOfLines: Int](sklabelnode/numberoflines.md)
+- [var numberOfLines: Int](./numberoflines.md)
   Determines the number of lines to draw.
 
 

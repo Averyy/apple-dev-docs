@@ -1,7 +1,8 @@
 # readyState
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The current state of the request.
 
@@ -12,7 +13,15 @@ The current state of the request.
 
 ## Declaration
 
-```swift
+*tvOS*
+
+```
+readonly attribute int readyState;
+```
+
+*Safari Desktop, Safari Mobile*
+
+```
 readonly attribute unsigned short readyState;
 ```
 
@@ -28,21 +37,22 @@ This attribute can have the following values:
 
 ## See Also
 
-- [metrics](xmlhttprequest/1627436-metrics.md)
+### Retrieving Request Information
+- [metrics](./api-1627436-metrics.md)
   A dictionary of keys used to request start and response start and end times.
-- [response](xmlhttprequest/1627364-response.md)
+- [response](./api-1627364-response.md)
   The response entity body.
-- [responseCacheIsValid](../webkitjs/xmlhttprequest/2871089-responsecacheisvalid.md)
-- [responseText](xmlhttprequest/1627363-responsetext.md)
+- [responseCacheIsValid](../../webkitjs/xmlhttprequest/api-2871089-responsecacheisvalid.md)
+- [responseText](./api-1627363-responsetext.md)
   The response to the request.
-- [responseType](xmlhttprequest/1627342-responsetype.md)
+- [responseType](./api-1627342-responsetype.md)
   The type of response.
-- [responseURL](../webkitjs/xmlhttprequest/1630664-responseurl.md)
-- [responseXML](xmlhttprequest/1627307-responsexml.md)
+- [responseURL](../../webkitjs/xmlhttprequest/api-1630664-responseurl.md)
+- [responseXML](./api-1627307-responsexml.md)
   The document response entity body.
-- [status](xmlhttprequest/1627403-status.md)
+- [status](./api-1627403-status.md)
   The HTTP status code.
-- [statusText](xmlhttprequest/1627375-statustext.md)
+- [statusText](./api-1627375-statustext.md)
   The HTTP status text.
 
 

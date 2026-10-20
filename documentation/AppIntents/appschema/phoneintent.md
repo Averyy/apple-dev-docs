@@ -1,7 +1,8 @@
 # AppSchema.PhoneIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies intent schemas in the phone domain.
 
@@ -21,19 +22,20 @@ protocol PhoneIntent : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var startCall: some AppSchemaIntent](appschema/phoneintent/startcall.md)
+- [var startCall: some AppSchemaIntent](./phoneintent/startcall.md)
   An intent schema that starts a call to a person, handle, or named group.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Intent](appschema/intent.md)
+- [AppSchema.Intent](./intent.md)
 
 ## See Also
 
-- [var startCall: some AppSchemaIntent](appschema/phoneintent/startcall.md)
+### Actions
+- [var startCall: some AppSchemaIntent](./phoneintent/startcall.md)
   An intent schema that starts a call to a person, handle, or named group.
 
 

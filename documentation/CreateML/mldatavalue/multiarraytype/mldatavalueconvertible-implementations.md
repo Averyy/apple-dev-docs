@@ -1,17 +1,18 @@
 # MLDataValueConvertible Implementations
 
-**Framework**: Create ML
+**Framework**: Create ML  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init?(from: MLDataValue)](mldatavalue/multiarraytype/init(from:).md)
+- [init?(from: MLDataValue)](./init%28from%29.md)
   Creates a data-value multidimensional array from another instance.
 ### Instance Properties
-- [var dataValue: MLDataValue](mldatavalue/multiarraytype/datavalue.md)
+- [var dataValue: MLDataValue](./datavalue.md)
   The multidimensional array wrapped in a data value.
 ### Type Properties
-- [static var dataValueType: MLDataValue.ValueType](mldatavalue/multiarraytype/datavaluetype.md)
+- [static var dataValueType: MLDataValue.ValueType](./datavaluetype.md)
   The underlying type a machine learning multidimensional array uses when it wraps itself in a data value.
 
 

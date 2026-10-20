@@ -1,7 +1,8 @@
 # tableView(_:trailingSwipeActionsConfigurationForRowAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the swipe actions to display on the trailing edge of the row.
 
@@ -15,6 +16,10 @@ Returns the swipe actions to display on the trailing edge of the row.
 
 ```swift
 optional func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
+```
+
+```objc
+- (UISwipeActionsConfiguration *) tableView:(UITableView *) tableView trailingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
 #### Return Value
@@ -32,7 +37,8 @@ Use this method to return a set of actions to display when the user swipes the r
 
 ## See Also
 
-- [func tableView(UITableView, leadingSwipeActionsConfigurationForRowAt: IndexPath) -> UISwipeActionsConfiguration?](uitableviewdelegate/tableview(_:leadingswipeactionsconfigurationforrowat:).md)
+### Responding to row actions
+- [func tableView(UITableView, leadingSwipeActionsConfigurationForRowAt: IndexPath) -> UISwipeActionsConfiguration?](./tableview%28_,leadingswipeactionsconfigurationforrowat%29.md)
   Returns the swipe actions to display on the leading edge of the row.
 
 

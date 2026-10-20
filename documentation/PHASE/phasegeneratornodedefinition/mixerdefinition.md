@@ -1,7 +1,8 @@
 # mixerDefinition
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that combines audio layers for the node’s output.
 
@@ -17,6 +18,10 @@ An object that combines audio layers for the node’s output.
 
 ```swift
 var mixerDefinition: PHASEMixerDefinition { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) PHASEMixerDefinition * mixerDefinition;
 ```
 
 

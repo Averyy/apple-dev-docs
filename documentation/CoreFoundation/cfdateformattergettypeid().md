@@ -1,23 +1,28 @@
 # CFDateFormatterGetTypeID()
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the type identifier for CFDateFormatter.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFDateFormatterGetTypeID() -> CFTypeID
+```
+
+```c
+extern CFTypeID CFDateFormatterGetTypeID();
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # ManagedAppLibrary
 
 **Framework**: ManagedAppDistribution  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of a library of managed apps.
 
@@ -20,29 +21,30 @@ final class ManagedAppLibrary
 
 ## Mentions
 
-- [Fetching and displaying managed apps](fetching-and-displaying-managed-apps.md)
+- [Fetching and displaying managed apps](./fetching-and-displaying-managed-apps.md)
 
 ## Topics
 
 ### Obtaining library information
-- [var availableApps: ManagedAppLibrary.ManagedApps](managedapplibrary/availableapps.md)
+- [var availableApps: ManagedAppLibrary.ManagedApps](./managedapplibrary/availableapps.md)
   The current managed apps available to this device.
-- [ManagedAppLibrary.ManagedApps](managedapplibrary/managedapps.md)
+- [ManagedAppLibrary.ManagedApps](./managedapplibrary/managedapps.md)
   An array of managed apps that updates as apps become available or unavailable.
-- [static let currentDistributor: ManagedAppLibrary](managedapplibrary/currentdistributor.md)
+- [static let currentDistributor: ManagedAppLibrary](./managedapplibrary/currentdistributor.md)
   The library provider for managed apps on this device.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Fetching and displaying managed apps](fetching-and-displaying-managed-apps.md)
+### Essentials
+- [Fetching and displaying managed apps](./fetching-and-displaying-managed-apps.md)
   Provide a consistent app presentation when displaying managed apps.
-- [struct ManagedApp](managedapp.md)
+- [struct ManagedApp](./managedapp.md)
   A representation of a managed app.
 
 

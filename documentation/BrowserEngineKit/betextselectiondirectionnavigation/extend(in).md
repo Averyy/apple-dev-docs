@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Extends text selection in the specified directions, such as in response to an arrow key press while shift is held.
@@ -18,9 +19,14 @@ Extends text selection in the specified directions, such as in response to an ar
 func extend(in direction: UITextLayoutDirection)
 ```
 
+```objc
+- (void) extendInLayoutDirection:(UITextLayoutDirection) direction;
+```
+
 ## See Also
 
-- [func extend(in: UITextStorageDirection, by: UITextGranularity)](betextselectiondirectionnavigation/extend(in:by:).md)
+### Extending the text section
+- [func extend(in: UITextStorageDirection, by: UITextGranularity)](./extend%28in,by%29.md)
   Moves the selection in the specified directions by granularity, in response to different key combinations:
 
 

@@ -1,7 +1,8 @@
 # View.Meta
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Contextual data about the view.
 
@@ -10,13 +11,14 @@ Contextual data about the view.
 
 ## Declaration
 
-```swift
+```
 object View.Meta
 ```
 
 ## See Also
 
-- [object View.Attributes](view/attributes-data.dictionary.md)
+### Objects
+- [object View.Attributes](./attributes-data.dictionary.md)
   The attribute metadata for the view.
 
 

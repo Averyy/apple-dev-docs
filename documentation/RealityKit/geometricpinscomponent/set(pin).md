@@ -1,7 +1,8 @@
 # set(pin:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a pin to the collection.
 

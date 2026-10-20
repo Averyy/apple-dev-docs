@@ -1,20 +1,25 @@
 # kAudioCodecContentSource_AppleMusic_Traditional
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var kAudioCodecContentSource_AppleMusic_Traditional: Int32 { get }
+```
+
+```c
+kAudioCodecContentSource_AppleMusic_Traditional
 ```
 
 

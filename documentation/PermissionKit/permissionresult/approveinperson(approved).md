@@ -1,7 +1,8 @@
 # PermissionResult.approveInPerson(approved:)
 
 **Framework**: PermissionKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user tapped “Approve in Person” and finalized an answer choice.
 

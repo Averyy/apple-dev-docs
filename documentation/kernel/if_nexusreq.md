@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct if_nexusreq {
     ...
 };
@@ -17,11 +17,11 @@ struct if_nexusreq {
 ## Topics
 
 ### Instance Properties
-- [ifnr_flags](if_nexusreq/3943770-ifnr_flags.md)
-- [ifnr_flowswitch](if_nexusreq/3943771-ifnr_flowswitch.md)
-- [ifnr_name](if_nexusreq/3943772-ifnr_name.md)
-- [ifnr_netif](if_nexusreq/3943773-ifnr_netif.md)
-- [ifnr_reserved](if_nexusreq/3943774-ifnr_reserved.md)
+- [ifnr_flags](./if_nexusreq/api-3943770-ifnr_flags.md)
+- [ifnr_flowswitch](./if_nexusreq/api-3943771-ifnr_flowswitch.md)
+- [ifnr_name](./if_nexusreq/api-3943772-ifnr_name.md)
+- [ifnr_netif](./if_nexusreq/api-3943773-ifnr_netif.md)
+- [ifnr_reserved](./if_nexusreq/api-3943774-ifnr_reserved.md)
 
 
 ---

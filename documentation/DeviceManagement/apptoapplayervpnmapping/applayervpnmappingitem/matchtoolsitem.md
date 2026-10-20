@@ -1,7 +1,8 @@
 # AppToAppLayerVPNMapping.AppLayerVPNMappingItem.MatchToolsItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 Specifies a per-app VPN rule to match network traffic that the app’s spawned command-line tool generates.
 
@@ -10,7 +11,7 @@ Specifies a per-app VPN rule to match network traffic that the app’s spawned c
 
 ## Declaration
 
-```swift
+```
 object AppToAppLayerVPNMapping.AppLayerVPNMappingItem.MatchToolsItem
 ```
 

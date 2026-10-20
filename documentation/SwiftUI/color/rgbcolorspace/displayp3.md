@@ -1,7 +1,8 @@
 # Color.RGBColorSpace.displayP3
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The Display P3 color space.
 
@@ -22,13 +23,14 @@ case displayP3
 
 #### Discussion
 
-This color space uses the Digital Cinema Initiatives - Protocol 3 (DCI-P3) primary colors, a D65 white point, and the [`Color.RGBColorSpace.sRGB`](color/rgbcolorspace/srgb.md) transfer function.
+This color space uses the Digital Cinema Initiatives - Protocol 3 (DCI-P3) primary colors, a D65 white point, and the [`Color.RGBColorSpace.sRGB`](./srgb.md) transfer function.
 
 ## See Also
 
-- [Color.RGBColorSpace.sRGB](color/rgbcolorspace/srgb.md)
+### Getting color spaces
+- [Color.RGBColorSpace.sRGB](./srgb.md)
   The extended red, green, blue (sRGB) color space.
-- [Color.RGBColorSpace.sRGBLinear](color/rgbcolorspace/srgblinear.md)
+- [Color.RGBColorSpace.sRGBLinear](./srgblinear.md)
   The extended sRGB color space with a linear transfer function.
 
 

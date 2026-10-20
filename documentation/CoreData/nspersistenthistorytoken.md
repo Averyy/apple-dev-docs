@@ -1,7 +1,8 @@
 # NSPersistentHistoryToken
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A bookmark for keeping track the most recent history that you’ve processed.
 
@@ -20,35 +21,39 @@ A bookmark for keeping track the most recent history that you’ve processed.
 class NSPersistentHistoryToken
 ```
 
+```objc
+@interface NSPersistentHistoryToken : NSObject
+```
+
 ## Mentions
 
-- [Consuming relevant store changes](consuming-relevant-store-changes.md)
+- [Consuming relevant store changes](./consuming-relevant-store-changes.md)
 
 #### Overview
 
-You can save a token to disk and fetch history when your app loads based on that token. See [`Keep track of the most recent history`](consuming-relevant-store-changes#Keep-track-of-the-most-recent-history.md) in [`Consuming relevant store changes`](consuming-relevant-store-changes.md).
+You can save a token to disk and fetch history when your app loads based on that token. See [Keep track of the most recent history](./consuming-relevant-store-changes.md#Keep-track-of-the-most-recent-history) in [Consuming relevant store changes](./consuming-relevant-store-changes.md).
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](nspersistenthistorytoken/init(coder:).md)
+- [init?(coder: NSCoder)](./nspersistenthistorytoken/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

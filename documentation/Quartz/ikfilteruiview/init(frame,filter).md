@@ -1,7 +1,8 @@
 # init(frame:filter:)
 
 **Framework**: Quartz  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a view that contains controls for the input parameters of a filter.
 
@@ -12,6 +13,10 @@ Initializes a view that contains controls for the input parameters of a filter.
 
 ```swift
 init!(frame frameRect: NSRect, filter inFilter: CIFilter!)
+```
+
+```objc
+- (id) initWithFrame:(NSRect) frameRect filter:(CIFilter *) inFilter;
 ```
 
 #### Return Value
@@ -25,7 +30,8 @@ The  `IKFilterUIView` object initialized with controls for the input parameters 
 
 ## See Also
 
-- [class func view(withFrame: NSRect, filter: CIFilter!) -> Any!](ikfilteruiview/view(withframe:filter:).md)
+### Creating and Initializing a Filter UI View
+- [class func view(withFrame: NSRect, filter: CIFilter!) -> Any!](./view%28withframe,filter%29.md)
   Creates a view that contains controls for the input parameters of a filter.
 
 

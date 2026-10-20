@@ -1,7 +1,8 @@
 # reportUnusedPasswordCredential(domain:userName:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Report an unused password credential for a given domain and username. Password managers may remove or hide the password credential. This information is shared with all password managers enabled in the system.
 
@@ -20,7 +21,7 @@ final func reportUnusedPasswordCredential(domain: String, userName: String) asyn
 
 #### Discussion
 
-> **Note**: `ASAuthorizationError` if the system failed to accept the update.
+> **Throws**: `ASAuthorizationError` if the system failed to accept the update.
 
 ## Parameters
 

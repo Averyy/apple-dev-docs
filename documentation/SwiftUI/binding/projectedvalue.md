@@ -1,7 +1,8 @@
 # projectedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A projection of the binding value that returns a binding.
 
@@ -41,9 +42,10 @@ struct PlayerView: View {
 
 ## See Also
 
-- [var wrappedValue: Value](binding/wrappedvalue.md)
+### Getting the value
+- [var wrappedValue: Value](./wrappedvalue.md)
   The underlying value referenced by the binding variable.
-- [subscript<Subject>(dynamicMember _: WritableKeyPath<Value, Subject>) -> Binding<Subject>](binding/subscript(dynamicmember:).md)
+- [subscript<Subject>(dynamicMember _: WritableKeyPath<Value, Subject>) -> Binding<Subject>](./subscript%28dynamicmember%29.md)
   Returns a binding to the resulting value of a given key path.
 
 

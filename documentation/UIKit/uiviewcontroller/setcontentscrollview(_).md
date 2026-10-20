@@ -1,7 +1,8 @@
 # setContentScrollView(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the scroll view that bars observe for all edges of the view.
 
@@ -10,7 +11,7 @@ Sets the scroll view that bars observe for all edges of the view.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,7 @@ Sets the scroll view that bars observe for all edges of the view.
 
 #### Discussion
 
-Calling this convenience method is identical to calling [`setContentScrollView(_:for:)`](uiviewcontroller/setcontentscrollview(_:for:).md) and passing [`all`](nsdirectionalrectedge/all.md) for the `edge` parameter.
+Calling this convenience method is identical to calling [`setContentScrollView(_:for:)`](./setcontentscrollview%28_,for%29.md) and passing [`all`](../nsdirectionalrectedge/all.md) for the `edge` parameter.
 
 ## Parameters
 
@@ -29,9 +30,10 @@ Calling this convenience method is identical to calling [`setContentScrollView(_
 
 ## See Also
 
-- [func setContentScrollView(UIScrollView?, for: NSDirectionalRectEdge)](uiviewcontroller/setcontentscrollview(_:for:).md)
+### Working with scrolling content
+- [func setContentScrollView(UIScrollView?, for: NSDirectionalRectEdge)](./setcontentscrollview%28_,for%29.md)
   Sets the scroll view that bars observe for the specified edge.
-- [func contentScrollView(for: NSDirectionalRectEdge) -> UIScrollView?](uiviewcontroller/contentscrollview(for:).md)
+- [func contentScrollView(for: NSDirectionalRectEdge) -> UIScrollView?](./contentscrollview%28for%29.md)
   Returns the scroll view the view controller observes for the specified edge.
 
 

@@ -1,7 +1,8 @@
 # setVertexVisibleFunctionTables(_:bufferRange:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Assigns multiple visible function tables to a range of entries in the vertex shader argument table.
 
@@ -11,7 +12,7 @@ Assigns multiple visible function tables to a range of entries in the vertex sha
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,16 +24,17 @@ func setVertexVisibleFunctionTables(_ functionTables: [(any MTLVisibleFunctionTa
 
 By default, the visible function table at each index is `nil`.
 
-> **Note**:  The Objective-C version of this method is [`setVertexVisibleFunctionTables:withBufferRange:`](mtlrendercommandencoder/setvertexvisiblefunctiontables:withbufferrange:.md).
+> **Note**:  The Objective-C version of this method is [`setVertexVisibleFunctionTables:withBufferRange:`](./setvertexvisiblefunctiontables_withbufferrange_.md).
 
 ## Parameters
 
-- `functionTables`: An array of [`MTLVisibleFunctionTable`](mtlvisiblefunctiontable.md) instances the command assigns to entries in the vertex shader argument table for visible function tables.
+- `functionTables`: An array of [`MTLVisibleFunctionTable`](../mtlvisiblefunctiontable.md) instances the command assigns to entries in the vertex shader argument table for visible function tables.
 - `bufferRange`: A span of integers that represent the entries in the vertex shader argument table for visible function tables. Each entry stores a record of the corresponding element in `functionTables`.
 
 ## See Also
 
-- [func setVertexVisibleFunctionTable((any MTLVisibleFunctionTable)?, bufferIndex: Int)](mtlrendercommandencoder/setvertexvisiblefunctiontable(_:bufferindex:).md)
+### Assigning visible function tables
+- [func setVertexVisibleFunctionTable((any MTLVisibleFunctionTable)?, bufferIndex: Int)](./setvertexvisiblefunctiontable%28_,bufferindex%29.md)
   Assigns a visible function table to an entry in the vertex shader argument table.
 
 

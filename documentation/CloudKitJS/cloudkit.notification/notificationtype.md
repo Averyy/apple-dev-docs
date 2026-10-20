@@ -1,7 +1,8 @@
 # notificationType
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of notification.
 
@@ -10,19 +11,20 @@ The type of notification.
 
 ## Declaration
 
-```swift
+```
 readonly attribute String notificationType;
 ```
 
 #### Discussion
 
-Possible values are described in [`Notification Types`](notification-types.md).
+Possible values are described in [Notification Types](../notification-types.md).
 
 ## See Also
 
-- [isQueryNotification](cloudkit.notification/isquerynotification.md)
+### Getting the Notification Type
+- [isQueryNotification](./isquerynotification.md)
   A Boolean value indicating whether this push notification is a query notification.
-- [isRecordZoneNotification](cloudkit.notification/isrecordzonenotification.md)
+- [isRecordZoneNotification](./isrecordzonenotification.md)
   A Boolean value indicating whether this notification is a push notification that was sent because of changes to a record zone.
 
 

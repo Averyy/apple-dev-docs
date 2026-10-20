@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a collection view layout object.
 
@@ -9,7 +10,7 @@ Creates a collection view layout object.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ Creates a collection view layout object.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 An initialized collection view layout object.
 
 ## See Also
 
-- [init?(coder: NSCoder)](uicollectionviewlayout/init(coder:).md)
+### Creating the collection view layout
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a collection view layout object from data in a given unarchiver.
 
 

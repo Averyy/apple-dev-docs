@@ -1,26 +1,27 @@
 # IOKit_allocator
 
 **Framework**: DriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 struct IOKit_allocator;
 ```
 
 ## Topics
 
 ### Type Methods
-- [allocate](os_detail/iokit_allocator/allocate.md)
-- [allocate_zero](os_detail/iokit_allocator/allocate_zero.md)
-- [deallocate](os_detail/iokit_allocator/deallocate.md)
+- [allocate](./iokit_allocator/allocate.md)
+- [allocate_zero](./iokit_allocator/allocate_zero.md)
+- [deallocate](./iokit_allocator/deallocate.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: SpriteKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The maximum number of subdivision iterations used to generate the final vertices.
@@ -21,9 +22,14 @@ The maximum number of subdivision iterations used to generate the final vertices
 var subdivisionLevels: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSInteger subdivisionLevels;
+```
+
 ## See Also
 
-- [var warpGeometry: SKWarpGeometry?](skwarpable/warpgeometry.md)
+### Instance Properties
+- [var warpGeometry: SKWarpGeometry?](./warpgeometry.md)
   The warp geometry used to define the distortion.
 
 

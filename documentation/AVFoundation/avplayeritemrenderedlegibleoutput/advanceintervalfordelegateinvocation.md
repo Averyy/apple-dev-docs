@@ -1,7 +1,8 @@
 # advanceIntervalForDelegateInvocation
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Permits advance invocation of the associated delegate, if any.
 
@@ -17,13 +18,18 @@ Permits advance invocation of the associated delegate, if any.
 var advanceIntervalForDelegateInvocation: TimeInterval { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSTimeInterval advanceIntervalForDelegateInvocation;
+```
+
 #### Discussion
 
 Use this property specify the number of seconds early to invoke the delegate object. When possible, an AVPlayerItemLegibleOutput uses this value to call its delegate earlier than it would otherwise.
 
 ## See Also
 
-- [var videoDisplaySize: CGSize](avplayeritemrenderedlegibleoutput/videodisplaysize.md)
+### Configuring an output
+- [var videoDisplaySize: CGSize](./videodisplaysize.md)
   Set the video display size to use for rendering of pixel buffers.
 
 

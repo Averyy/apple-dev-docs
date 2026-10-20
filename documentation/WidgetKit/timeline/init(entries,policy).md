@@ -1,7 +1,8 @@
 # init(entries:policy:)
 
 **Framework**: WidgetKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a timeline for when you want WidgetKit to update a widget’s view.
 

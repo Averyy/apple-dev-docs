@@ -1,7 +1,8 @@
 # userReferencesOverflow
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Operation would overflow limit on user-references.
 

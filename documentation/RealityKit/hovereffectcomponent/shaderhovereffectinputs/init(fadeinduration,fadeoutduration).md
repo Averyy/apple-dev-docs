@@ -1,7 +1,8 @@
 # init(fadeInDuration:fadeOutDuration:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+

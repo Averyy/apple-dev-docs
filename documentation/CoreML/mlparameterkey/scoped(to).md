@@ -1,7 +1,8 @@
 # scoped(to:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a copy of a parameter key and adds the scope to it.
 
@@ -20,6 +21,10 @@ Creates a copy of a parameter key and adds the scope to it.
 func scoped(to scope: String) -> MLParameterKey
 ```
 
+```objc
+- (MLParameterKey *) scopedTo:(NSString *) scope;
+```
+
 #### Return Value
 
 A new parameter key.
@@ -32,7 +37,7 @@ Use this method to target:
 - A specific model within a pipeline model
 - A specific layer of a model within a pipeline model
 
-For example, to target an [`MLParameterKey`](mlparameterkey.md) to a layer in a model, scope the key with the layer’s name.
+For example, to target an [`MLParameterKey`](../mlparameterkey.md) to a layer in a model, scope the key with the layer’s name.
 
 ```swift
 let weightsKey = MLParameterKey.weights
@@ -44,7 +49,7 @@ let fullyConnectedWeights = weightsKey.scoped(to: "FullyConnected")
 print("Key 1: \(fullyConnectedWeights)")
 ```
 
-To target a model within a pipeline model, scope the [`MLParameterKey`](mlparameterkey.md) with the model’s name.
+To target a model within a pipeline model, scope the [`MLParameterKey`](../mlparameterkey.md) with the model’s name.
 
 ```swift
 // Number-of-neighbors key scoped to the first model in a pipeline model.
@@ -54,7 +59,7 @@ let firstModelNumberOfNeighbors = MLParameterKey.numberOfNeighbors.scoped(to: "m
 print("Key 2: \(firstModelNumberOfNeighbors)")
 ```
 
-To target a layer of a model within a pipeline model, start with an [`MLParameterKey`](mlparameterkey.md) you’ve already scoped to the model, and add an additional scope with the layer’s name.
+To target a layer of a model within a pipeline model, start with an [`MLParameterKey`](../mlparameterkey.md) you’ve already scoped to the model, and add an additional scope with the layer’s name.
 
 ```swift
 let model1Biases = MLParameterKey.biases.scoped(to: "model1")

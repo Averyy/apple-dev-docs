@@ -1,7 +1,8 @@
 # CiBuildAction.Relationships.BuildRun.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a related Build Runs resource.
 
@@ -10,7 +11,7 @@ The type and ID of a related Build Runs resource.
 
 ## Declaration
 
-```swift
+```
 object CiBuildAction.Relationships.BuildRun.Data
 ```
 
@@ -18,6 +19,8 @@ object CiBuildAction.Relationships.BuildRun.Data
 
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Build Runs resource.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `ciBuildRuns`
 
 
 ---

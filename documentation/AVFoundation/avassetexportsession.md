@@ -1,7 +1,8 @@
 # AVAssetExportSession
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that exports assets in a format that you specify using an export preset.
 
@@ -19,111 +20,116 @@ An object that exports assets in a format that you specify using an export prese
 class AVAssetExportSession
 ```
 
+```objc
+@interface AVAssetExportSession : NSObject
+```
+
 ## Mentions
 
-- [Exporting video to alternative formats](exporting-video-to-alternative-formats.md)
+- [Exporting video to alternative formats](./exporting-video-to-alternative-formats.md)
 
 #### Overview
 
-You configure this object to export an instance of [`AVAsset`](avasset.md) by setting an export preset, an output file type, and an output URL.
+You configure this object to export an instance of [`AVAsset`](./avasset.md) by setting an export preset, an output file type, and an output URL.
 
 ## Topics
 
 ### Creating an export session
-- [init?(asset: AVAsset, presetName: String)](avassetexportsession/init(asset:presetname:).md)
+- [init?(asset: AVAsset, presetName: String)](./avassetexportsession/init%28asset,presetname%29.md)
   Creates an export session with a preset configuration.
-- [Export presets](export-presets.md)
+- [Export presets](./export-presets.md)
   Configure an export session to output media in standard sizes and formats.
 ### Accessing export presets
-- [var presetName: String](avassetexportsession/presetname.md)
+- [var presetName: String](./avassetexportsession/presetname.md)
   The name of the preset that the asset export session uses.
-- [func determineCompatibleFileTypes(completionHandler: ([AVFileType]) -> Void)](avassetexportsession/determinecompatiblefiletypes(completionhandler:).md)
+- [func determineCompatibleFileTypes(completionHandler: ([AVFileType]) -> Void)](./avassetexportsession/determinecompatiblefiletypes%28completionhandler%29.md)
   Determines the output file types an asset export session supports writing in its current configuration.
-- [class func allExportPresets() -> [String]](avassetexportsession/allexportpresets.md)
+- [class func allExportPresets() -> [String]](./avassetexportsession/allexportpresets%28%29.md)
   Returns all available export preset names.
-- [class func determineCompatibility(ofExportPreset: String, with: AVAsset, outputFileType: AVFileType?, completionHandler: (Bool) -> Void)](avassetexportsession/determinecompatibility(ofexportpreset:with:outputfiletype:completionhandler:).md)
+- [class func determineCompatibility(ofExportPreset: String, with: AVAsset, outputFileType: AVFileType?, completionHandler: (Bool) -> Void)](./avassetexportsession/determinecompatibility%28ofexportpreset,with,outputfiletype,completionhandler%29.md)
   Determines an export preset’s compatibility to export the asset in a container of the output file type.
 ### Configuring output
-- [var supportedFileTypes: [AVFileType]](avassetexportsession/supportedfiletypes.md)
+- [var supportedFileTypes: [AVFileType]](./avassetexportsession/supportedfiletypes.md)
   An array containing the types of files the session can write.
-- [var allowsParallelizedExport: Bool](avassetexportsession/allowsparallelizedexport.md)
+- [var allowsParallelizedExport: Bool](./avassetexportsession/allowsparallelizedexport.md)
   A Boolean value that indicates whether the session can parallelize its export operation.
-- [var shouldOptimizeForNetworkUse: Bool](avassetexportsession/shouldoptimizefornetworkuse.md)
+- [var shouldOptimizeForNetworkUse: Bool](./avassetexportsession/shouldoptimizefornetworkuse.md)
   A Boolean value that indicates whether to optimize the movie for network use.
-- [var canPerformMultiplePassesOverSourceMediaData: Bool](avassetexportsession/canperformmultiplepassesoversourcemediadata.md)
+- [var canPerformMultiplePassesOverSourceMediaData: Bool](./avassetexportsession/canperformmultiplepassesoversourcemediadata.md)
   A Boolean value that indicates whether the export session can perform multiple passes over the source media to achieve better results.
-- [var timeRange: CMTimeRange](avassetexportsession/timerange.md)
+- [var timeRange: CMTimeRange](./avassetexportsession/timerange.md)
   The time range of the source asset to export.
-- [var fileLengthLimit: Int64](avassetexportsession/filelengthlimit.md)
+- [var fileLengthLimit: Int64](./avassetexportsession/filelengthlimit.md)
   The file length that the output of the session must not exceed.
-- [var directoryForTemporaryFiles: URL?](avassetexportsession/directoryfortemporaryfiles.md)
+- [var directoryForTemporaryFiles: URL?](./avassetexportsession/directoryfortemporaryfiles.md)
   A directory suitable to store temporary files that the export process generates.
 ### Configuring metadata
-- [var metadata: [AVMetadataItem]?](avassetexportsession/metadata.md)
+- [var metadata: [AVMetadataItem]?](./avassetexportsession/metadata.md)
   The metadata an export session writes to the output container file.
-- [var metadataItemFilter: AVMetadataItemFilter?](avassetexportsession/metadataitemfilter.md)
+- [var metadataItemFilter: AVMetadataItemFilter?](./avassetexportsession/metadataitemfilter.md)
   An object the export session uses to filter the metadata items it transfers to the output asset.
 ### Configuring video output
-- [var videoComposition: AVVideoComposition?](avassetexportsession/videocomposition.md)
+- [var videoComposition: AVVideoComposition?](./avassetexportsession/videocomposition.md)
   An optional object that provides instructions for how to composite frames of video.
-- [var customVideoCompositor: (any AVVideoCompositing)?](avassetexportsession/customvideocompositor.md)
+- [var customVideoCompositor: (any AVVideoCompositing)?](./avassetexportsession/customvideocompositor.md)
   An optional custom object to use when compositing video frames.
 ### Configuring track groups
-- [var audioTrackGroupHandling: AVAssetTrackGroupOutputHandling](avassetexportsession/audiotrackgrouphandling.md)
+- [var audioTrackGroupHandling: AVAssetTrackGroupOutputHandling](./avassetexportsession/audiotrackgrouphandling.md)
   A policy that defines how the session exports alternate audio tracks.
-- [struct AVAssetTrackGroupOutputHandling](avassettrackgroupoutputhandling.md)
+- [struct AVAssetTrackGroupOutputHandling](./avassettrackgroupoutputhandling.md)
   A type that specifies policies for how an export session processes alternate tracks in a track group.
 ### Configuring audio output
-- [var audioMix: AVAudioMix?](avassetexportsession/audiomix.md)
+- [var audioMix: AVAudioMix?](./avassetexportsession/audiomix.md)
   The parameters for audio mixing and an indication of whether to enable nondefault audio mixing for export.
-- [var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm](avassetexportsession/audiotimepitchalgorithm.md)
+- [var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm](./avassetexportsession/audiotimepitchalgorithm.md)
   A processing algorithm for managing audio pitch for scaled audio edits.
 ### Exporting media
-- [func export(to: URL, as: AVFileType, isolation: isolated (any Actor)?) async throws](avassetexportsession/export(to:as:isolation:).md)
+- [func export(to: URL, as: AVFileType, isolation: isolated (any Actor)?) async throws](./avassetexportsession/export%28to,as,isolation%29.md)
   Exports the asset to the output location in the specified file type.
 ### Monitoring export progress
 - [func states(updateInterval: TimeInterval) -> some Sendable & AsyncSequence<AVAssetExportSession.State, Never>
-](avassetexportsession/states(updateinterval:).md)
+](./avassetexportsession/states%28updateinterval%29.md)
   Monitors the progress state of an export operation.
-- [AVAssetExportSession.State](avassetexportsession/state.md)
+- [AVAssetExportSession.State](./avassetexportsession/state.md)
   Constants that indicate the state of an export operation.
-- [AVAssetExportSession.Status](avassetexportsession/status-swift.enum.md)
+- [AVAssetExportSession.Status](./avassetexportsession/status-swift.enum.md)
   Values that indicate the state of an export session.
 ### Estimating file length and duration
-- [func estimateOutputFileLength(completionHandler: (Int64, (any Error)?) -> Void)](avassetexportsession/estimateoutputfilelength(completionhandler:).md)
+- [func estimateOutputFileLength(completionHandler: (Int64, (any Error)?) -> Void)](./avassetexportsession/estimateoutputfilelength%28completionhandler%29.md)
   Starts estimating the output file length of the export while considering the asset, preset, and time range configuration of the export session.
 ### Estimating duration
-- [func estimateMaximumDuration(completionHandler: (CMTime, (any Error)?) -> Void)](avassetexportsession/estimatemaximumduration(completionhandler:).md)
+- [func estimateMaximumDuration(completionHandler: (CMTime, (any Error)?) -> Void)](./avassetexportsession/estimatemaximumduration%28completionhandler%29.md)
   Starts estimating the maximum duration of the export while considering the asset, preset, and time range configuration of the export session.
 ### Accessing the asset
-- [var asset: AVAsset](avassetexportsession/asset.md)
+- [var asset: AVAsset](./avassetexportsession/asset.md)
   An asset that a session exports.
 ### Configuring resumable export
-- [func configureForResumableExport() async -> AVAssetExportSession.ResumptionState](avassetexportsession/configureforresumableexport.md)
+- [func configureForResumableExport() async -> AVAssetExportSession.ResumptionState](./avassetexportsession/configureforresumableexport%28%29.md)
   Configures the export session for resumable export.
-- [AVAssetExportSession.ResumptionState](avassetexportsession/resumptionstate.md)
+- [AVAssetExportSession.ResumptionState](./avassetexportsession/resumptionstate.md)
   Represents the resumption state of the export session.
-- [AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason.md)
+- [AVAssetExportSession.ResumptionFailureReason](./avassetexportsession/resumptionfailurereason.md)
   The reason that configuring the export session for resumption failed.
 ### Deprecated
-- [Deprecated symbols](avassetexportsession-deprecated-symbols.md)
+- [Deprecated symbols](./avassetexportsession-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Exporting video to alternative formats](exporting-video-to-alternative-formats.md)
+### Media export
+- [Exporting video to alternative formats](./exporting-video-to-alternative-formats.md)
   Convert an existing movie file to a different format.
 
 

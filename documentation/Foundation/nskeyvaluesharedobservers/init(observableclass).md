@@ -1,7 +1,8 @@
 # init(observableClass:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 A new collection of observables for an observable object of the given class
 
@@ -18,6 +19,10 @@ A new collection of observables for an observable object of the given class
 
 ```swift
 init(observableClass: AnyClass)
+```
+
+```objc
+- (id) initWithObservableClass:(Class) observableClass;
 ```
 
 

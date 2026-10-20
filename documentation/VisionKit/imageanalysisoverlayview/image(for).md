@@ -1,7 +1,8 @@
 # image(for:)
 
 **Framework**: VisionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides an image asynchronously that contains the given subjects with the background removed.
 
@@ -17,7 +18,7 @@ final func image(for subjects: Set<ImageAnalysisOverlayView.Subject>) async thro
 
 #### Discussion
 
-If one or more subjects fail to produce an image, the method throws [`ImageAnalysisOverlayView.SubjectUnavailable.imageUnavailable`](imageanalysisoverlayview/subjectunavailable/imageunavailable.md).
+If one or more subjects fail to produce an image, the method throws [`ImageAnalysisOverlayView.SubjectUnavailable.imageUnavailable`](./subjectunavailable/imageunavailable.md).
 
 ## Parameters
 
@@ -25,11 +26,12 @@ If one or more subjects fail to produce an image, the method throws [`ImageAnaly
 
 ## See Also
 
-- [var subjects: Set<ImageAnalysisOverlayView.Subject>](imageanalysisoverlayview/subjects.md)
+### Accessing image subjects
+- [var subjects: Set<ImageAnalysisOverlayView.Subject>](./subjects.md)
   The set of all subjects the framework identifies in an image.
-- [ImageAnalysisOverlayView.Subject](imageanalysisoverlayview/subject.md)
+- [ImageAnalysisOverlayView.Subject](./subject.md)
   An area of interest in an image that the framework identifies as a primary focal point.
-- [func subject(at: CGPoint) async -> ImageAnalysisOverlayView.Subject?](imageanalysisoverlayview/subject(at:).md)
+- [func subject(at: CGPoint) async -> ImageAnalysisOverlayView.Subject?](./subject%28at%29.md)
   Returns the subject at the given point within the overlay view’s image, if one exists.
 
 

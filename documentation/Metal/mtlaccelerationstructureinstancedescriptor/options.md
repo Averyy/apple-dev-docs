@@ -1,7 +1,8 @@
 # options
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The options for the instance.
 
@@ -19,11 +20,16 @@ The options for the instance.
 var options: MTLAccelerationStructureInstanceOptions
 ```
 
+```c
+MTLAccelerationStructureInstanceOptions options;
+```
+
 ## See Also
 
-- [var intersectionFunctionTableOffset: UInt32](mtlaccelerationstructureinstancedescriptor/intersectionfunctiontableoffset.md)
+### Customizing intersection and hit tests for the instance
+- [var intersectionFunctionTableOffset: UInt32](./intersectionfunctiontableoffset.md)
   An offset for determining which function in the intersection function table Metal needs to call when testing a ray against the instance.
-- [var mask: UInt32](mtlaccelerationstructureinstancedescriptor/mask.md)
+- [var mask: UInt32](./mask.md)
   A mask to use for the instance when testing a ray against the geometry.
 
 

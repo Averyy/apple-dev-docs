@@ -1,7 +1,8 @@
 # HKMetadataKeyAppleDeviceCalibrated
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key for metadata indicating whether the system had data from a sufficient amount of calibrated sensors when recording the sample.
 
@@ -19,29 +20,34 @@ The key for metadata indicating whether the system had data from a sufficient am
 let HKMetadataKeyAppleDeviceCalibrated: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyAppleDeviceCalibrated;
+```
+
 #### Discussion
 
-This key takes a Boolean value. If it’s [`true`](https://developer.apple.com/documentation/swift/true), the system has enough high-quality data to make an accurate estimate. If it’s [`false`](https://developer.apple.com/documentation/swift/false), the system provides an estimate based on data that may be less accurate.
+This key takes a Boolean value. If it’s [`true`](../Swift/true.md), the system has enough high-quality data to make an accurate estimate. If it’s [`false`](../Swift/false.md), the system provides an estimate based on data that may be less accurate.
 
 The key is read-only.
 
 ## See Also
 
-- [let HKMetadataKeyDeviceSerialNumber: String](hkmetadatakeydeviceserialnumber.md)
+### Device Information Keys
+- [let HKMetadataKeyDeviceSerialNumber: String](./hkmetadatakeydeviceserialnumber.md)
   The key for the serial number of the device that generated the data.
-- [let HKMetadataKeyUDIDeviceIdentifier: String](hkmetadatakeyudideviceidentifier.md)
+- [let HKMetadataKeyUDIDeviceIdentifier: String](./hkmetadatakeyudideviceidentifier.md)
   The device identifier portion of a device’s UDI (unique device identifier).
-- [let HKMetadataKeyUDIProductionIdentifier: String](hkmetadatakeyudiproductionidentifier.md)
+- [let HKMetadataKeyUDIProductionIdentifier: String](./hkmetadatakeyudiproductionidentifier.md)
   The production identifier portion of a device’s UDI (unique device identifier).
-- [let HKMetadataKeyDigitalSignature: String](hkmetadatakeydigitalsignature.md)
+- [let HKMetadataKeyDigitalSignature: String](./hkmetadatakeydigitalsignature.md)
   A digital signature that can be used to validate the origin of the HealthKit object.
-- [let HKMetadataKeyDeviceName: String](hkmetadatakeydevicename.md)
+- [let HKMetadataKeyDeviceName: String](./hkmetadatakeydevicename.md)
   The name of the device that took this reading.
-- [let HKMetadataKeyDeviceManufacturerName: String](hkmetadatakeydevicemanufacturername.md)
+- [let HKMetadataKeyDeviceManufacturerName: String](./hkmetadatakeydevicemanufacturername.md)
   The name of the manufacturer of the device that took this reading.
-- [let HKMetadataKeyDevicePlacementSide: String](hkmetadatakeydeviceplacementside.md)
+- [let HKMetadataKeyDevicePlacementSide: String](./hkmetadatakeydeviceplacementside.md)
   The key for metadata indicating the placement of the device that measured a sample.
-- [enum HKDevicePlacementSide](hkdeviceplacementside.md)
+- [enum HKDevicePlacementSide](./hkdeviceplacementside.md)
   Values that indicate the placement of the device that measured a sample.
 
 

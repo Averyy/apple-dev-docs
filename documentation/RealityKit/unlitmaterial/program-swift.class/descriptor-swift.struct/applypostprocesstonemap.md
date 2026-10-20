@@ -1,7 +1,8 @@
 # applyPostProcessToneMap
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether RealityKit will tonemap the output of this material.
 

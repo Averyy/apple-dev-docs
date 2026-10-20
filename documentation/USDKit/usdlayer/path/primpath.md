@@ -1,7 +1,8 @@
 # primPath
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The containing prim path, stripped of any property, target, or variant selection elements.
 

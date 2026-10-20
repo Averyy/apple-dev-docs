@@ -1,7 +1,8 @@
 # BuildBundle.Attributes.Entitlements.Any Key
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A string that represents the path to an executable in the build bundle.
 
@@ -10,7 +11,7 @@ A string that represents the path to an executable in the build bundle.
 
 ## Declaration
 
-```swift
+```
 object BuildBundle.Attributes.Entitlements.Any Key
 ```
 

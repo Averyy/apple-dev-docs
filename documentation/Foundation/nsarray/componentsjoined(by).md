@@ -1,7 +1,8 @@
 # componentsJoined(by:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Constructs and returns an `NSString` object that is the result of interposing a given separator between the elements of the array.
 
@@ -18,6 +19,10 @@ Constructs and returns an `NSString` object that is the result of interposing a 
 
 ```swift
 func componentsJoined(by separator: String) -> String
+```
+
+```objc
+- (NSString *) componentsJoinedByString:(NSString *) separator;
 ```
 
 #### Return Value
@@ -43,7 +48,8 @@ Each element in the array must handle `description`.
 
 ## See Also
 
-- [func components(separatedBy: String) -> [String]](nsstring/components(separatedby:)-238fy.md)
+### Related Documentation
+- [func components(separatedBy: String) -> [String]](../nsstring/components%28separatedby%29-238fy.md)
   Returns an array containing substrings from the receiver that have been divided by a given separator.
 
 

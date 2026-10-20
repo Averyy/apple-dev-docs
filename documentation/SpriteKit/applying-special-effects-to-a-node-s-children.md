@@ -1,6 +1,7 @@
 # Applying Special Effects to a Node’s Children
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Apply the Core Image suite of filters to child nodes of an effect node.
 
@@ -10,7 +11,7 @@ In the example image below, the effect node’s children are two sprites that pr
 
 > ❗ **Important**:  Any Core Image filter that you use must be able to produce a single output image from a single input image.
 
-![None](/images/com.apple.spritekit/media-3111373@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.spritekit/media-3111373@2x.png)
 
 Hereʼs how the scene generates this lighting effect:
 
@@ -39,11 +40,12 @@ lightingNode.blendMode = .multiply
 
 ## See Also
 
-- [var filter: CIFilter?](skeffectnode/filter.md)
+### Applying Core Image Filters with an Effect Node
+- [var filter: CIFilter?](./skeffectnode/filter.md)
   The Core Image filter to apply.
-- [var shouldEnableEffects: Bool](skeffectnode/shouldenableeffects.md)
+- [var shouldEnableEffects: Bool](./skeffectnode/shouldenableeffects.md)
   A Boolean value that determines whether the effect node applies the filter to its children as they are drawn.
-- [var shouldCenterFilter: Bool](skeffectnode/shouldcenterfilter.md)
+- [var shouldCenterFilter: Bool](./skeffectnode/shouldcenterfilter.md)
   A Boolean value that determines whether the effect node automatically sets the filter’s image center.
 
 

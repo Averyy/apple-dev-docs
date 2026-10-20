@@ -1,7 +1,8 @@
 # init(regionID:size:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a shared memory region with a shared memory region ID and size.
 
@@ -14,9 +15,13 @@ Initializes a shared memory region with a shared memory region ID and size.
 init(regionID: UInt8, size: UInt64)
 ```
 
+```objc
+- (instancetype) initWithRegionID:(uint8_t) regionID size:(uint64_t) size;
+```
+
 #### Return Value
 
-An initialized [`VZVirtioSharedMemoryRegionConfiguration`](vzvirtiosharedmemoryregionconfiguration.md).
+An initialized [`VZVirtioSharedMemoryRegionConfiguration`](../vzvirtiosharedmemoryregionconfiguration.md).
 
 ## Parameters
 

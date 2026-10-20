@@ -1,7 +1,8 @@
 # init(configuration:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new content-unavailable view with the specified configuration.
 
@@ -10,7 +11,7 @@ Creates a new content-unavailable view with the specified configuration.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

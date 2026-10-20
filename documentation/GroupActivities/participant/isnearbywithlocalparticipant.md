@@ -1,7 +1,8 @@
 # isNearbyWithLocalParticipant
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the participant is physically nearby with the local participant.
 
@@ -18,13 +19,13 @@ var isNearbyWithLocalParticipant: Bool { get }
 
 ## Mentions
 
-- [Configure your visionOS app for sharing with people nearby](configure-your-app-for-sharing-with-people-nearby.md)
+- [Configure your visionOS app for sharing with people nearby](../configure-your-app-for-sharing-with-people-nearby.md)
 
 #### Discussion
 
 This property is always true for the local participant.
 
-You can observe which remote participants are nearby with the [`$activeParticipants`](groupsession/$activeparticipants.md) publisher.
+You can observe which remote participants are nearby with the [`$activeParticipants`](../groupsession/dollaractiveparticipants.md) publisher.
 
 ```swift
 for await activeParticipants in session.$activeParticipants.values {

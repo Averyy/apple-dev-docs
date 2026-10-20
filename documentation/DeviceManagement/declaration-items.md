@@ -1,27 +1,33 @@
 # Get Server Supported Declarations
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get a list of the declarations available on the server.
 
 ## Topics
 
 ### Response
-- [object DeclarationItemsResponse](declarationitemsresponse.md)
+- [object DeclarationItemsResponse](./declarationitemsresponse.md)
   The set of available declarations on the server.
 
 ## Endpoint
 
 `PUT https://yourmdmhost.example.com/checkin`
 
+## Responses
+
+- `200` OK (`DeclarationItemsResponse`, `application/json`)
+
 ## See Also
 
-- [Declarative Management](declarative-management.md)
+### Declarative management
+- [Declarative Management](./declarative-management.md)
   Sends declarative management requests to the server.
-- [Get the Device Status](status.md)
+- [Get the Device Status](./status.md)
   The request for getting the status of a device.
-- [Get the Device Token](tokens.md)
+- [Get the Device Token](./tokens.md)
   The request for sending the device token details.
 
 

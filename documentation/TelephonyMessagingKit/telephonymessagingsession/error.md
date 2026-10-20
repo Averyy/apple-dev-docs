@@ -1,7 +1,8 @@
 # TelephonyMessagingSession.Error
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of errors that can result from operations on a messaging session.
 
@@ -17,28 +18,28 @@ enum Error
 ## Topics
 
 ### Inspecting errors
-- [TelephonyMessagingSession.Error.invalidSession](telephonymessagingsession/error/invalidsession.md)
+- [TelephonyMessagingSession.Error.invalidSession](./error/invalidsession.md)
   The session is invalid.
-- [TelephonyMessagingSession.Error.serviceUnavailable](telephonymessagingsession/error/serviceunavailable.md)
+- [TelephonyMessagingSession.Error.serviceUnavailable](./error/serviceunavailable.md)
   The service is unavailable.
-- [TelephonyMessagingSession.Error.invalidArgument](telephonymessagingsession/error/invalidargument.md)
+- [TelephonyMessagingSession.Error.invalidArgument](./error/invalidargument.md)
   A call used an invalid argument.
-- [TelephonyMessagingSession.Error.internalError](telephonymessagingsession/error/internalerror.md)
+- [TelephonyMessagingSession.Error.internalError](./error/internalerror.md)
   The session encountered an internal service error.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [LocalizedError](../../Foundation/localizederror.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

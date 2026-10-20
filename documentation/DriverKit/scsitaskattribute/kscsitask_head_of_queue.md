@@ -1,17 +1,18 @@
 # kSCSITask_HEAD_OF_QUEUE
 
 **Framework**: DriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kSCSITask_HEAD_OF_QUEUE
 ```
 
@@ -21,9 +22,10 @@ The task has a head-of-queue attribute.
 
 ## See Also
 
-- [kSCSITask_SIMPLE](scsitaskattribute/kscsitask_simple.md)
-- [kSCSITask_ORDERED](scsitaskattribute/kscsitask_ordered.md)
-- [kSCSITask_ACA](scsitaskattribute/kscsitask_aca.md)
+### Constants
+- [kSCSITask_SIMPLE](./kscsitask_simple.md)
+- [kSCSITask_ORDERED](./kscsitask_ordered.md)
+- [kSCSITask_ACA](./kscsitask_aca.md)
 
 
 ---

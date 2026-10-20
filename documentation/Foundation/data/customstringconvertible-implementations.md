@@ -1,11 +1,12 @@
 # CustomStringConvertible Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var description: String](data/description.md)
+- [var description: String](./description.md)
   A human-readable description for the data.
 
 

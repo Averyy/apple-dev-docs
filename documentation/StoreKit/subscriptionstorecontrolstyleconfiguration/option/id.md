@@ -1,7 +1,8 @@
 # id
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The product ID of the auto-renewable subscription.
 
@@ -22,9 +23,10 @@ var id: Product.ID { get }
 
 ## See Also
 
-- [var subscription: Product](subscriptionstorecontrolstyleconfiguration/option/subscription.md)
+### Getting the subscription product and offer
+- [var subscription: Product](./subscription.md)
   The auto-renewable subscription to merchandise.
-- [var activeOffer: Product.SubscriptionOffer?](subscriptionstorecontrolstyleconfiguration/option/activeoffer.md)
+- [var activeOffer: Product.SubscriptionOffer?](./activeoffer.md)
   The subscription offer the customer is eligible for, and that applies to the subscription option.
 
 

@@ -1,7 +1,8 @@
 # colorEvolutionPower
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 How quickly the color evolves from its start to its end color — a value of 1 is a linear transition, values below 1 transition quicker, values over 1 transition slower.
 

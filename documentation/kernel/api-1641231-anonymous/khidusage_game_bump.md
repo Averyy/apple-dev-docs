@@ -1,14 +1,15 @@
 # kHIDUsage_Game_Bump
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Game_Bump = 0x2C
 ```
 

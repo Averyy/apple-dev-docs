@@ -1,7 +1,8 @@
 # NEURLFilterManager.Error.extensionNotFound
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system can’t find the app extension.
 
@@ -19,9 +20,10 @@ case extensionNotFound
 
 ## See Also
 
-- [NEURLFilterManager.Error.extensionCancelled](neurlfiltermanager/error/extensioncancelled.md)
+### Extension errors
+- [NEURLFilterManager.Error.extensionCancelled](./extensioncancelled.md)
   The app extension cancelled the feature bring up.
-- [NEURLFilterManager.Error.extensionFailedToLoad](neurlfiltermanager/error/extensionfailedtoload.md)
+- [NEURLFilterManager.Error.extensionFailedToLoad](./extensionfailedtoload.md)
   The app extension failed to load.
 
 

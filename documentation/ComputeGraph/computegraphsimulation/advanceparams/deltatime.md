@@ -1,7 +1,8 @@
 # deltaTime
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time interval, in seconds, to advance the simulation.
 
@@ -12,7 +13,7 @@ The time interval, in seconds, to advance the simulation.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -22,7 +23,7 @@ var deltaTime: Float
 
 #### Discussion
 
-When [`mode`](computegraphsimulation/simulationrate-swift.struct/mode-swift.property.md) is [`ComputeGraphSimulation.SimulationRate.Mode.fixedFrequency`](computegraphsimulation/simulationrate-swift.struct/mode-swift.enum/fixedfrequency.md) or [`ComputeGraphSimulation.SimulationRate.Mode.fixedTime`](computegraphsimulation/simulationrate-swift.struct/mode-swift.enum/fixedtime.md), the simulation takes between zero and [`maxSteps`](computegraphsimulation/advanceparams/maxsteps.md) fixed-size steps to consume this interval. Any remaining time is accumulated and carried into the next advance.
+When [`mode`](../simulationrate-swift.struct/mode-swift.property.md) is [`ComputeGraphSimulation.SimulationRate.Mode.fixedFrequency`](../simulationrate-swift.struct/mode-swift.enum/fixedfrequency.md) or [`ComputeGraphSimulation.SimulationRate.Mode.fixedTime`](../simulationrate-swift.struct/mode-swift.enum/fixedtime.md), the simulation takes between zero and [`maxSteps`](./maxsteps.md) fixed-size steps to consume this interval. Any remaining time is accumulated and carried into the next advance.
 
 
 ---

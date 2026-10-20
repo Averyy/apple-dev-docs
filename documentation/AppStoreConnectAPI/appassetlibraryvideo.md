@@ -1,7 +1,8 @@
 # AppAssetLibraryVideo
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A video asset uploaded to an app’s asset library that you can reuse across App Store surfaces through placements.
 
@@ -10,39 +11,40 @@ A video asset uploaded to an app’s asset library that you can reuse across App
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryVideo
 ```
 
 ## Mentions
 
-- [Placing assets on your App Store surfaces](placing-assets-on-your-app-store-surfaces.md)
+- [Placing assets on your App Store surfaces](./placing-assets-on-your-app-store-surfaces.md)
 
 ## Topics
 
 ### Objects
-- [object AppAssetLibraryVideo.Relationships](appassetlibraryvideo/relationships-data.dictionary.md)
+- [object AppAssetLibraryVideo.Relationships](./appassetlibraryvideo/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appAssetLibraryVideos`
 - `id` (string) *(required)*
-- `attributes` (*)
+- `attributes` (*): **Allowed Types**: `AppAssetLibraryVideoAwaitingUploadAttributes`, `AppAssetLibraryVideoUploadCompleteAttributes`, `AppAssetLibraryVideoFailedAttributes`, `AppAssetLibraryVideoCommonAttributes`, `AppAssetLibraryVideoCommonAttributes`, `AppAssetLibraryVideoReadyForReviewAttributes`, `AppAssetLibraryVideoWaitingForReviewAttributes`, `AppAssetLibraryVideoInReviewAttributes`, `AppAssetLibraryVideoAcceptedAttributes`, `AppAssetLibraryVideoApprovedAttributes`, `AppAssetLibraryVideoRejectedAttributes`, `AppAssetLibraryVideoArchivedAttributes`
 - `relationships` (AppAssetLibraryVideo.Relationships)
 - `links` (ResourceLinks)
 
 ## See Also
 
-- [type AppAssetLibraryMediaType](appassetlibrarymediatype.md)
+### Objects and types
+- [type AppAssetLibraryMediaType](./appassetlibrarymediatype.md)
   String that represents the media type of an app asset library asset.
-- [object AppAssetLibraryVideoCreateRequest](appassetlibraryvideocreaterequest.md)
+- [object AppAssetLibraryVideoCreateRequest](./appassetlibraryvideocreaterequest.md)
   The request body you use to create an app asset library video.
-- [object AppAssetLibraryVideoUpdateRequest](appassetlibraryvideoupdaterequest.md)
+- [object AppAssetLibraryVideoUpdateRequest](./appassetlibraryvideoupdaterequest.md)
   The request body you use to update an app asset library video.
-- [object AppAssetLibraryVideoResponse](appassetlibraryvideoresponse.md)
+- [object AppAssetLibraryVideoResponse](./appassetlibraryvideoresponse.md)
   The response body for endpoints that create, read, or modify an app asset library video.
-- [object AppAssetLibraryVideoPlacementsLinkagesResponse](appassetlibraryvideoplacementslinkagesresponse.md)
+- [object AppAssetLibraryVideoPlacementsLinkagesResponse](./appassetlibraryvideoplacementslinkagesresponse.md)
   A response body that contains a list of related resource IDs.
 
 

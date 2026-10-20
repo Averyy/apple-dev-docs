@@ -1,7 +1,8 @@
 # kSecRevocationPreferCRL
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Prefer CRL revocation checking over OCSP; by default, OCSP is preferred.
 
@@ -18,6 +19,10 @@ Prefer CRL revocation checking over OCSP; by default, OCSP is preferred.
 
 ```swift
 var kSecRevocationPreferCRL: CFOptionFlags { get }
+```
+
+```c
+kSecRevocationPreferCRL
 ```
 
 

@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct nfs_export_stat_desc {
     ...
 };
@@ -17,8 +17,8 @@ struct nfs_export_stat_desc {
 ## Topics
 
 ### Instance Properties
-- [rec_count](nfs_export_stat_desc/3944816-rec_count.md)
-- [rec_vers](nfs_export_stat_desc/3944817-rec_vers.md)
+- [rec_count](./nfs_export_stat_desc/api-3944816-rec_count.md)
+- [rec_vers](./nfs_export_stat_desc/api-3944817-rec_vers.md)
 
 
 ---

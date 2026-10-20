@@ -1,7 +1,8 @@
 # merchantCapabilities
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that represents the payment-processing capabilities of the merchant.
 
@@ -18,11 +19,16 @@ A value that represents the payment-processing capabilities of the merchant.
 var merchantCapabilities: PKMerchantCapability { get set }
 ```
 
+```objc
+@property (nonatomic, assign) PKMerchantCapability merchantCapabilities;
+```
+
 ## See Also
 
-- [var merchantIdentifier: String](pkdisbursementrequest/merchantidentifier.md)
+### Setting the merchant information
+- [var merchantIdentifier: String](./merchantidentifier.md)
   A string that identifies the merchant.
-- [var supportedNetworks: [PKPaymentNetwork]](pkdisbursementrequest/supportednetworks.md)
+- [var supportedNetworks: [PKPaymentNetwork]](./supportednetworks.md)
   An array of payment networks the merchant supports.
 
 

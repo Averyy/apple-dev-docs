@@ -1,7 +1,8 @@
 # ASAuthorizationError.Code.failed
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The authorization attempt failed.
 
@@ -20,21 +21,26 @@ The authorization attempt failed.
 case failed
 ```
 
+```c
+ASAuthorizationErrorFailed
+```
+
 ## See Also
 
-- [ASAuthorizationError.Code.canceled](asauthorizationerror-swift.struct/code/canceled.md)
+### Codes
+- [ASAuthorizationError.Code.canceled](./canceled.md)
   The user canceled the authorization attempt.
-- [ASAuthorizationError.Code.invalidResponse](asauthorizationerror-swift.struct/code/invalidresponse.md)
+- [ASAuthorizationError.Code.invalidResponse](./invalidresponse.md)
   The authorization request received an invalid response.
-- [ASAuthorizationError.Code.notHandled](asauthorizationerror-swift.struct/code/nothandled.md)
+- [ASAuthorizationError.Code.notHandled](./nothandled.md)
   The authorization request wasn’t handled.
-- [ASAuthorizationError.Code.unknown](asauthorizationerror-swift.struct/code/unknown.md)
+- [ASAuthorizationError.Code.unknown](./unknown.md)
   The authorization attempt failed for an unknown reason.
-- [ASAuthorizationError.Code.notInteractive](asauthorizationerror-swift.struct/code/notinteractive.md)
+- [ASAuthorizationError.Code.notInteractive](./notinteractive.md)
   The authorization request isn’t interactive.
-- [ASAuthorizationError.Code.credentialExport](asauthorizationerror-swift.struct/code/credentialexport.md)
+- [ASAuthorizationError.Code.credentialExport](./credentialexport.md)
   The credential export request failed.
-- [ASAuthorizationError.Code.credentialImport](asauthorizationerror-swift.struct/code/credentialimport.md)
+- [ASAuthorizationError.Code.credentialImport](./credentialimport.md)
   The credential import request failed.
 
 

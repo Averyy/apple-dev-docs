@@ -1,12 +1,13 @@
 # Collaborating and sharing copies of your data
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Article
 
 Share data and collaborate with people from your app.
 
 #### Overview
 
-You can share data from your app using a [`UIActivityViewController`](uiactivityviewcontroller.md) object. There are numerous options for packaging your data and instantiating the activity view controller. One approach is to create one or more [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) objects for the data you want to share. Use the item providers to create a [`UIActivityItemsConfiguration`](uiactivityitemsconfiguration.md), and then use the configuration to create your activity view controller. You can then present the view controller.
+You can share data from your app using a [`UIActivityViewController`](./uiactivityviewcontroller.md) object. There are numerous options for packaging your data and instantiating the activity view controller. One approach is to create one or more [`NSItemProvider`](../Foundation/nsitemprovider.md) objects for the data you want to share. Use the item providers to create a [`UIActivityItemsConfiguration`](./uiactivityitemsconfiguration.md), and then use the configuration to create your activity view controller. You can then present the view controller.
 
 ```swift
 // Create an item provider for your data.
@@ -26,19 +27,19 @@ present(shareSheet, animated: true) {}
 
 This displays the share sheet, letting someone share a copy of the data with other apps on the device. The options that appear in the share sheet vary depending on the type of data that you’re sharing. The example above shares a UTF-8 string, so the share sheet shows apps that can accept text, like Messages, Mail, and Notes.
 
-![An iPhone screenshot showing the share sheet for a plain UTF-8 text file.](/images/com.apple.uikit/media-4403929@2x.png)
+![An iPhone screenshot showing the share sheet for a plain UTF-8 text file.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-4403929@2x.png)
 
-##### Enable Collaboration for Icloud Documents
+##### Enable collaboration for iCloud documents
 
 The example above shares a copy of your app’s data. You can also enable collaboration so that the recipients can see an updated view of the data, and even make their own changes to it, depending on the permissions in your app.
 
 To enable collaboration, you need shareable content, such as:
 
-- A URL to an iCloud document (see [`url(forUbiquityContainerIdentifier:)`](https://developer.apple.com/documentation/foundation/filemanager/url(forubiquitycontaineridentifier:)))
-- Data stored in [`CloudKit`](https://developer.apple.com/documentation/cloudkit)
-- A custom collaboration architecture that supports universal links (see [`Integrate your custom collaboration app in Messages`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10093))
+- A URL to an iCloud document (see [`url(forUbiquityContainerIdentifier:)`](../Foundation/filemanager/url%28forubiquitycontaineridentifier%29.md))
+- Data stored in [CloudKit](../CloudKit/CloudKit.md)
+- A custom collaboration architecture that supports universal links (see [Integrate your custom collaboration app in Messages](https://developer.apple.com/videos/play/wwdc2022/10093))
 
-For example, to enable collaboration for an iCloud document, you need a URL to a file in your app’s iCloud container. Create an [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) object, and call its [`registerFileRepresentation(for:visibility:openInPlace:loadHandler:)`](https://developer.apple.com/documentation/foundation/nsitemprovider/registerfilerepresentation(for:visibility:openinplace:loadhandler:)) method, passing the URL as the `for:` parameter and [`true`](https://developer.apple.com/documentation/swift/true) as the `openInPlace:` parameter.
+For example, to enable collaboration for an iCloud document, you need a URL to a file in your app’s iCloud container. Create an [`NSItemProvider`](../Foundation/nsitemprovider.md) object, and call its [`registerFileRepresentation(for:visibility:openInPlace:loadHandler:)`](../Foundation/nsitemprovider/registerfilerepresentation%28for,visibility,openinplace,loadhandler%29.md) method, passing the URL as the `for:` parameter and [`true`](../Swift/true.md) as the `openInPlace:` parameter.
 
 ```swift
 // Create an empty item provider.
@@ -55,13 +56,13 @@ itemProvider
 
 Then create and display the activity view controller as in the first code example. This time, the share sheet has a pop-up menu for selecting a sharing mode.
 
-![An iPhone screenshot of the share sheet showing the options to either send a copy or to collaborate.](/images/com.apple.uikit/media-4403933@2x.png)
+![An iPhone screenshot of the share sheet showing the options to either send a copy or to collaborate.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-4403933@2x.png)
 
-##### Enable the Copying and Collaboration of Cloudkit Data
+##### Enable the copying and collaboration of CloudKit data
 
-Because CloudKit doesn’t store its data as files, it requires a different approach for both sharing copies and collaborating. To share a copy of CloudKit data, you need to create a shareable representation of the data. Then register that data with an [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider). For example, if you want to share your app’s data as UTF-8 text, you can use the previous example to create an item provider for your text.
+Because CloudKit doesn’t store its data as files, it requires a different approach for both sharing copies and collaborating. To share a copy of CloudKit data, you need to create a shareable representation of the data. Then register that data with an [`NSItemProvider`](../Foundation/nsitemprovider.md). For example, if you want to share your app’s data as UTF-8 text, you can use the previous example to create an item provider for your text.
 
-To enable collaboration, create a [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) when collaboration starts. You also need your [`CKContainer`](https://developer.apple.com/documentation/cloudkit/ckcontainer) and the [`CKAllowedSharingOptions`](https://developer.apple.com/documentation/cloudkit/ckallowedsharingoptions) that define the permissions you’re granting to collaborators.
+To enable collaboration, create a [`CKShare`](../CloudKit/ckshare.md) when collaboration starts. You also need your [`CKContainer`](../CloudKit/ckcontainer.md) and the [`CKAllowedSharingOptions`](../CloudKit/ckallowedsharingoptions.md) that define the permissions you’re granting to collaborators.
 
 ```swift
 // Create an item provider.
@@ -97,13 +98,13 @@ itemProvider
     )
 ```
 
-For more information about collaboration in CloudKit, see [`Sharing CloudKit Data with Other iCloud Users`](https://developer.apple.com/documentation/cloudkit/sharing-cloudkit-data-with-other-icloud-users).
+For more information about collaboration in CloudKit, see [Sharing CloudKit Data with Other iCloud Users](../CloudKit/sharing-cloudkit-data-with-other-icloud-users.md).
 
-##### Restrict the Sharing Mode
+##### Restrict the sharing mode
 
 By default, if your item provider supports both copying and collaborating, the share sheet shows a pop-up menu, letting people select a sharing mode. In iOS 18 and later, you can restrict sharing to only one of the two modes.
 
-To restrict the sharing mode, create a [`UIActivityViewController.CollaborationModeRestriction`](uiactivityviewcontroller/collaborationmoderestriction.md) and assign it to your configuration’s metadata. You can access the metadata using the configuration’s [`perItemMetadataProvider`](uiactivityitemsconfiguration/peritemmetadataprovider.md) property.
+To restrict the sharing mode, create a [`UIActivityViewController.CollaborationModeRestriction`](./uiactivityviewcontroller/collaborationmoderestriction.md) and assign it to your configuration’s metadata. You can access the metadata using the configuration’s [`perItemMetadataProvider`](./uiactivityitemsconfiguration/peritemmetadataprovider.md) property.
 
 ```swift
 // Iterate through the metadata keys.
@@ -124,7 +125,7 @@ configuration.perItemMetadataProvider = { _, key in
 
 Then, create and present the share sheet as before. This produces a share sheet that displays only the allowed sharing mode.
 
-![Two iPhone screenshots. The left screenshot shows the share sheet for copying only, the right for sharing only.](/images/com.apple.uikit/media-4413126@2x.png)
+![Two iPhone screenshots. The left screenshot shows the share sheet for copying only, the right for sharing only.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-4413126@2x.png)
 
 Alternatively, you can show both sharing options, but display an alert when someone selects the restricted mode. This alert can also include a recovery suggestion to help people enable the restricted mode.
 
@@ -150,9 +151,9 @@ configuration.perItemMetadataProvider = { _, key in
 }
 ```
 
-In this case, the share sheet shows the pop-up menu with the allowed sharing mode already selected. When someone tries to change the sharing mode to the restricted mode, the system displays an alert. If they then tap the recovery button, it calls your scene delegate’s [`scene(_:openURLContexts:)`](uiscenedelegate/scene(_:openurlcontexts:).md) method, passing in the provided URL. For more information about using launch URLs, see [`Defining a custom URL scheme for your app`](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app).
+In this case, the share sheet shows the pop-up menu with the allowed sharing mode already selected. When someone tries to change the sharing mode to the restricted mode, the system displays an alert. If they then tap the recovery button, it calls your scene delegate’s [`scene(_:openURLContexts:)`](./uiscenedelegate/scene%28_,openurlcontexts%29.md) method, passing in the provided URL. For more information about using launch URLs, see [Defining a custom URL scheme for your app](../Xcode/defining-a-custom-url-scheme-for-your-app.md).
 
-##### Specify the People to Share with
+##### Specify the people to share with
 
 In iOS 18 and later, you can also specify recipients for the shared data. Create an [`INPerson`](https://developer.apple.com/documentation/intents/inperson) instance for each recipient and add them to your activity configuration’s metadata.
 
@@ -189,11 +190,11 @@ configuration.perItemMetadataProvider = { _, key in
 
 The share sheet then populates the recipient’s data in apps that accept recipients, such as Mail and Messages.
 
-![An iPhone screenshot of a new email with the recipient and content automatically populated.](/images/com.apple.uikit/media-4413127@2x.png)
+![An iPhone screenshot of a new email with the recipient and content automatically populated.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-4413127@2x.png)
 
 If a person selects a different recipient from the share sheet, that selection overrides your specified recipients. If they select an app that doesn’t accept recipients, the system ignores your recipient.
 
-You can also hide the other recipients from the share sheet by setting the activity view controller’s [`excludedActivitySectionTypes`](uiactivityviewcontroller/excludedactivitysectiontypes.md) property to [`peopleSuggestions`](uiactivitysectiontypes/peoplesuggestions.md).
+You can also hide the other recipients from the share sheet by setting the activity view controller’s [`excludedActivitySectionTypes`](./uiactivityviewcontroller/excludedactivitysectiontypes.md) property to [`peopleSuggestions`](./uiactivitysectiontypes/peoplesuggestions.md).
 
 ```swift
 // Hide the suggested recipients.
@@ -202,15 +203,16 @@ shareSheet.excludedActivitySectionTypes = .peopleSuggestions
 
 ## See Also
 
-- [class UIActivityViewController](uiactivityviewcontroller.md)
+### Activities interface
+- [class UIActivityViewController](./uiactivityviewcontroller.md)
   A view controller that you use to offer standard services from your app.
-- [class UIActivityItemProvider](uiactivityitemprovider.md)
+- [class UIActivityItemProvider](./uiactivityitemprovider.md)
   A proxy for data that passes to an activity view controller.
-- [protocol UIActivityItemSource](uiactivityitemsource.md)
+- [protocol UIActivityItemSource](./uiactivityitemsource.md)
   A set of methods that an activity view controller uses to retrieve the data items to act on.
-- [class UIActivity](uiactivity.md)
+- [class UIActivity](./uiactivity.md)
   An abstract class that you subclass to implement app-specific services.
-- [protocol UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
+- [protocol UIActivityItemsConfigurationProviding](./uiactivityitemsconfigurationproviding.md)
   An interface that provides a source for shareable content to fulfill user requests to share current content.
 
 

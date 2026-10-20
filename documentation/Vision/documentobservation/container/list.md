@@ -1,7 +1,8 @@
 # DocumentObservation.Container.List
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents a list of items within a document.
 
@@ -22,32 +23,33 @@ struct List
 ## Topics
 
 ### Accessing a list
-- [DocumentObservation.Container.List.Item](documentobservation/container/list/item.md)
+- [DocumentObservation.Container.List.Item](./list/item.md)
   A single element of a list.
 ### Inspecting a list
-- [var boundingRegion: NormalizedRegion](documentobservation/container/list/boundingregion.md)
+- [var boundingRegion: NormalizedRegion](./list/boundingregion.md)
   A polygon that defines the boundary of the list.
-- [var items: [DocumentObservation.Container.List.Item]](documentobservation/container/list/items.md)
+- [var items: [DocumentObservation.Container.List.Item]](./list/items.md)
   The elements of the list.
-- [DocumentObservation.Container.List.Marker](documentobservation/container/list/marker.md)
+- [DocumentObservation.Container.List.Marker](./list/marker.md)
   The symbol or character at the beginning of each list item.
 
 ## Relationships
 
 ### Conforms To
-- [BoundingRegionProviding](boundingregionproviding.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BoundingRegionProviding](../../boundingregionproviding.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [DocumentObservation.Container.Table](documentobservation/container/table.md)
+### Getting the sections in a document
+- [DocumentObservation.Container.Table](./table.md)
   A structure that represents a table within a document.
-- [DocumentObservation.Container.Text](documentobservation/container/text-swift.struct.md)
+- [DocumentObservation.Container.Text](./text-swift.struct.md)
   A structure that represents a region of text in a document.
 
 

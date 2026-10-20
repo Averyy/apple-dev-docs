@@ -1,7 +1,8 @@
 # kMDAttributeMultiValued
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A boolean that indicates if the metadataattribute value is multi-valued. If this is `TRUE`,the metadata attribute value is an array of the types specifiedin `kMDAttributeType`.
 
@@ -12,6 +13,10 @@ A boolean that indicates if the metadataattribute value is multi-valued. If this
 
 ```swift
 let kMDAttributeMultiValued: CFString!
+```
+
+```c
+const CFStringRef kMDAttributeMultiValued;
 ```
 
 

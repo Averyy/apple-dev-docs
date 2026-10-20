@@ -1,7 +1,8 @@
 # bnns_graph_execute_message_fn_t
 
 **Framework**: Accelerate  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The graph execute-message logging callback function.
 
@@ -20,13 +21,18 @@ The graph execute-message logging callback function.
 typealias bnns_graph_execute_message_fn_t = (BNNSGraphMessageLevel, UnsafePointer<CChar>, UnsafePointer<CChar>?, UnsafeMutablePointer<bnns_user_message_data_t>?) -> Void
 ```
 
+```c
+typedef void (*)(BNNSGraphMessageLevel, const char *, const char *, bnns_user_message_data_t *) bnns_graph_execute_message_fn_t;
+```
+
 ## See Also
 
-- [func BNNSGraphContextSetMessageLogCallback(bnns_graph_context_t, bnns_graph_execute_message_fn_t, UnsafeMutablePointer<bnns_user_message_data_t>?) -> Int32](bnnsgraphcontextsetmessagelogcallback(_:_:_:).md)
+### Specifying a context’s execute-time message callback
+- [func BNNSGraphContextSetMessageLogCallback(bnns_graph_context_t, bnns_graph_execute_message_fn_t, UnsafeMutablePointer<bnns_user_message_data_t>?) -> Int32](./bnnsgraphcontextsetmessagelogcallback%28_,_,_%29.md)
   Specifies a customized callback function that reports execution-time messages.
-- [struct BNNSGraphMessageLevel](bnnsgraphmessagelevel.md)
+- [struct BNNSGraphMessageLevel](./bnnsgraphmessagelevel.md)
   Constants that specify the mask for compile-time messages.
-- [struct bnns_user_message_data_t](bnns_user_message_data_t.md)
+- [struct bnns_user_message_data_t](./bnns_user_message_data_t.md)
   Additional user-defined logging argument for message-logging callbacks.
 
 

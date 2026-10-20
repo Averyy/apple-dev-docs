@@ -1,6 +1,7 @@
 # Using content script and style sheet keys
 
-**Framework**: Safari Services
+**Framework**: Safari Services  
+**Role**: Article
 
 Learn about controlling style sheet and script injection with information property list keys.
 
@@ -24,7 +25,7 @@ The following table describes the `SFSafariStyleSheet` subkeys:
 | `Allowed URL Patterns` | Array | Optional. An array of URL patterns that describe which pages Safari can inject the style sheet into. |
 | `Excluded URL Patterns` | Array | Optional. An array of URL patterns that describe which pages Safari can’t inject the style sheet into. |
 
-To adjust permissions for scripts and style sheets, see [`Using permissions for scripts and style sheets`](using-permissions-for-scripts-and-style-sheets.md).
+To adjust permissions for scripts and style sheets, see [Using permissions for scripts and style sheets](./using-permissions-for-scripts-and-style-sheets.md).
 
 
 ---

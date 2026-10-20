@@ -1,14 +1,15 @@
 # kGUARD_EXC_SEND_INVALID_REPLY
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 kGUARD_EXC_SEND_INVALID_REPLY = 1u << 16
 ```
 

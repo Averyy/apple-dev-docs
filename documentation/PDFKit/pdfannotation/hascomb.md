@@ -1,7 +1,8 @@
 # hasComb
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the annotation divides the text widget’s bounds into equally spaced segments, such as in a form entry field.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether the annotation divides the text widget’
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,17 +20,22 @@ A Boolean value that indicates whether the annotation divides the text widget’
 var hasComb: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=hasComb) BOOL comb;
+```
+
 #### Discussion
 
-The [`maximumLength`](pdfannotation/maximumlength.md) property specifies the number of spaces the text widget divides the bounds into.
+The [`maximumLength`](./maximumlength.md) property specifies the number of spaces the text widget divides the bounds into.
 
 ## See Also
 
-- [var isMultiline: Bool](pdfannotation/ismultiline.md)
+### Configuring Text Widget Annotations
+- [var isMultiline: Bool](./ismultiline.md)
   A Boolean value that indicates whether the text widget annotation displays multiple lines.
-- [var isPasswordField: Bool](pdfannotation/ispasswordfield.md)
+- [var isPasswordField: Bool](./ispasswordfield.md)
   A Boolean value that indicates whether the text widget annotation displays a password field using bullet characters.
-- [var maximumLength: Int](pdfannotation/maximumlength.md)
+- [var maximumLength: Int](./maximumlength.md)
   The maximum number of characters the text widget annotation allows.
 
 

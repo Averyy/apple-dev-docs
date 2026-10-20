@@ -1,7 +1,8 @@
 # MTRDoorLockDlRemoteOperationEventMask
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.1+
@@ -18,30 +19,34 @@
 struct MTRDoorLockDlRemoteOperationEventMask
 ```
 
+```c
+enum MTRDoorLockDlRemoteOperationEventMask : uint16_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt16)](mtrdoorlockdlremoteoperationeventmask/init(rawvalue:).md)
+- [init(rawValue: UInt16)](./mtrdoorlockdlremoteoperationeventmask/init%28rawvalue%29.md)
 ### Type Properties
-- [static var lock: MTRDoorLockDlRemoteOperationEventMask](mtrdoorlockdlremoteoperationeventmask/lock.md)
-- [static var lockInvalidCode: MTRDoorLockDlRemoteOperationEventMask](mtrdoorlockdlremoteoperationeventmask/lockinvalidcode.md)
-- [static var lockInvalidSchedule: MTRDoorLockDlRemoteOperationEventMask](mtrdoorlockdlremoteoperationeventmask/lockinvalidschedule.md)
-- [static var unknown: MTRDoorLockDlRemoteOperationEventMask](mtrdoorlockdlremoteoperationeventmask/unknown.md)
-- [static var unlock: MTRDoorLockDlRemoteOperationEventMask](mtrdoorlockdlremoteoperationeventmask/unlock.md)
-- [static var unlockInvalidCode: MTRDoorLockDlRemoteOperationEventMask](mtrdoorlockdlremoteoperationeventmask/unlockinvalidcode.md)
-- [static var unlockInvalidSchedule: MTRDoorLockDlRemoteOperationEventMask](mtrdoorlockdlremoteoperationeventmask/unlockinvalidschedule.md)
+- [static var lock: MTRDoorLockDlRemoteOperationEventMask](./mtrdoorlockdlremoteoperationeventmask/lock.md)
+- [static var lockInvalidCode: MTRDoorLockDlRemoteOperationEventMask](./mtrdoorlockdlremoteoperationeventmask/lockinvalidcode.md)
+- [static var lockInvalidSchedule: MTRDoorLockDlRemoteOperationEventMask](./mtrdoorlockdlremoteoperationeventmask/lockinvalidschedule.md)
+- [static var unknown: MTRDoorLockDlRemoteOperationEventMask](./mtrdoorlockdlremoteoperationeventmask/unknown.md)
+- [static var unlock: MTRDoorLockDlRemoteOperationEventMask](./mtrdoorlockdlremoteoperationeventmask/unlock.md)
+- [static var unlockInvalidCode: MTRDoorLockDlRemoteOperationEventMask](./mtrdoorlockdlremoteoperationeventmask/unlockinvalidcode.md)
+- [static var unlockInvalidSchedule: MTRDoorLockDlRemoteOperationEventMask](./mtrdoorlockdlremoteoperationeventmask/unlockinvalidschedule.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

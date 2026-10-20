@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default level of emphasis.
 
@@ -11,7 +12,7 @@ The default level of emphasis.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ static var automatic: MapStyle.StandardEmphasis { get }
 
 ## See Also
 
-- [static var muted: MapStyle.StandardEmphasis](mapstyle/standardemphasis/muted.md)
+### Controlling the map’s emphasis
+- [static var muted: MapStyle.StandardEmphasis](./muted.md)
   A muted emphasis style, that deemphasizes the map’s imagery.
 
 

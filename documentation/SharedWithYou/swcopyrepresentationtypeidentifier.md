@@ -1,7 +1,8 @@
 # SWCopyRepresentationTypeIdentifier
 
 **Framework**: Shared with You  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 27.0+
@@ -16,13 +17,17 @@
 let SWCopyRepresentationTypeIdentifier: String
 ```
 
+```c
+extern NSString * const SWCopyRepresentationTypeIdentifier;
+```
+
 #### Discussion
 
 Type identifier for copy representation that signals the system to use the app’s local document version.
 
 Register this as the first open-in-place type identifier on an NSItemProvider when you want the system to load the document’s file URL directly from your app rather than from the file provider. This ensures that users share the most current version of their document, including any unsynced local edits.
 
-```None
+```
         When this type identifier is registered first, also register a "public.file-url" representation
         that provides the local file URL.
 ```

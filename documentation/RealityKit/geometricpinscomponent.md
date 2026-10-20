@@ -1,7 +1,8 @@
 # GeometricPinsComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that stores a sequence of geometric pins.
 
@@ -21,43 +22,44 @@ struct GeometricPinsComponent
 
 #### Overview
 
-Add, inspect, and remove geometric pins that belong to the entity that owns an instance of `GeometricPinsComponent` by accessing its [`pins`](entity/pins.md) property.
+Add, inspect, and remove geometric pins that belong to the entity that owns an instance of `GeometricPinsComponent` by accessing its [`pins`](./entity/pins.md) property.
 
 ## Topics
 
 ### Initializers
-- [init()](geometricpinscomponent/init.md)
+- [init()](./geometricpinscomponent/init%28%29.md)
   Creates a geometric pins component with an empty sequence of pins.
 ### Instance Properties
-- [var pins: Set<GeometricPin>](geometricpinscomponent/pins.md)
+- [var pins: Set<GeometricPin>](./geometricpinscomponent/pins.md)
   The sequence of geometric pins the component owns.
 ### Instance Methods
-- [func removePin(named: String) -> GeometricPin?](geometricpinscomponent/removepin(named:).md)
+- [func removePin(named: String) -> GeometricPin?](./geometricpinscomponent/removepin%28named%29.md)
   Removes the pin associated with the name.
-- [func set(pin: GeometricPin)](geometricpinscomponent/set(pin:).md)
+- [func set(pin: GeometricPin)](./geometricpinscomponent/set%28pin%29.md)
   Adds a pin to the collection.
 ### Subscripts
-- [subscript(String) -> GeometricPin?](geometricpinscomponent/subscript(_:).md)
+- [subscript(String) -> GeometricPin?](./geometricpinscomponent/subscript%28_%29.md)
   Retrieves the pin by its name.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
+- [Component](./component.md)
 
 ## See Also
 
-- [Simulating physics joints in your RealityKit app](simulating-physics-joints-in-your-realitykit-app.md)
+### Pin and joint components
+- [Simulating physics joints in your RealityKit app](./simulating-physics-joints-in-your-realitykit-app.md)
   Create realistic, connected motion using physics joints.
-- [struct GeometricPin](geometricpin.md)
+- [struct GeometricPin](./geometricpin.md)
   A structure that identifies a local transform relative to an entity or entity’s animating skeletal joint.
-- [protocol PhysicsJoint](physicsjoint.md)
+- [protocol PhysicsJoint](./physicsjoint.md)
   A type that describes physics joints.
-- [struct PhysicsJointsComponent](physicsjointscomponent.md)
+- [struct PhysicsJointsComponent](./physicsjointscomponent.md)
   A component that stores physics joints which RealityKit simulates.
-- [struct EntityGeometricPins](entitygeometricpins.md)
+- [struct EntityGeometricPins](./entitygeometricpins.md)
   A structure that wraps all geometric pins an entity owns.
-- [struct AttachedTransformComponent](attachedtransformcomponent.md)
+- [struct AttachedTransformComponent](./attachedtransformcomponent.md)
   A component that stores an optional source pin owned by this entity and a target pin which this entity is attached to
 
 

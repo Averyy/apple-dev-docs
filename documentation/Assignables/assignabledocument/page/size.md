@@ -1,7 +1,8 @@
 # size
 
 **Framework**: Assignables  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dimensions of the page in this document.
 
@@ -9,7 +10,7 @@ The dimensions of the page in this document.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,12 @@ var size: CGSize { get }
 
 ## See Also
 
-- [AssignableDocument.Page.ID](assignabledocument/page/id-swift.struct.md)
+### Inspecting a page
+- [AssignableDocument.Page.ID](./id-swift.struct.md)
   A type representing the stable identity of this page.
-- [var id: AssignableDocument.Page.ID](assignabledocument/page/id-swift.property.md)
+- [var id: AssignableDocument.Page.ID](./id-swift.property.md)
   The stable identity of this page.
-- [AssignableDocument.Page.Document](assignabledocument/page/document.md)
+- [AssignableDocument.Page.Document](./document.md)
   The document type this element is for.
 
 

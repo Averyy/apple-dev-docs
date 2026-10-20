@@ -1,7 +1,8 @@
 # ProcessCapability.mediaPlaybackAndCapture(environment:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The helper extension process may access media hardware required for media capture and playback.
 
@@ -17,17 +18,18 @@ case mediaPlaybackAndCapture(environment: MediaEnvironment)
 
 #### Discussion
 
-> ❗ **Important**:  You need to call [`activate()`](mediaenvironment/activate().md) on the media environment before you grant this capability to an extension.
+> ❗ **Important**:  You need to call [`activate()`](../mediaenvironment/activate%28%29.md) on the media environment before you grant this capability to an extension.
 
 ## See Also
 
-- [ProcessCapability.background](processcapability/background.md)
+### Granting capabilities
+- [ProcessCapability.background](./background.md)
   A process capability for work in the background.
-- [ProcessCapability.foreground](processcapability/foreground.md)
+- [ProcessCapability.foreground](./foreground.md)
   A process capability for work in the foreground.
-- [ProcessCapability.suspended](processcapability/suspended.md)
+- [ProcessCapability.suspended](./suspended.md)
   A process capability that grants residency in a suspended state.
-- [ProcessCapability.Grant](processcapability/grant.md)
+- [ProcessCapability.Grant](./grant.md)
   An object that represents the provision of a capability.
 
 

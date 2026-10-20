@@ -1,18 +1,19 @@
 # transform
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of transformation to apply to the event values.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ The type of transformation to apply to the event values.
 var transform: MIDITransformType
 ```
 
+```c
+MIDITransformType transform;
+```
+
 ## See Also
 
-- [var param: Int16](miditransform/param.md)
+### Configuring a Transform
+- [var param: Int16](./param.md)
   An argument to the transformation method (see description of MIDITransformType).
 
 

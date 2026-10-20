@@ -1,22 +1,24 @@
 # setInRange
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```c
 void setInRange(bool inRange);
 ```
 
 ## See Also
 
-- [getType](iohiddigitizercollection/gettype.md)
-- [getInRange](iohiddigitizercollection/getinrange.md)
+### Getting the Collection Attributes
+- [getType](./gettype.md)
+- [getInRange](./getinrange.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # PREVENT_ALLOW_MEDIUM_REMOVAL
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool PREVENT_ALLOW_MEDIUM_REMOVAL(SCSITaskIdentifier request, SCSICmdField2Bit PREVENT, SCSICmdField1Byte CONTROL);
 ```
 

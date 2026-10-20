@@ -1,7 +1,8 @@
 # errSecNoPolicyModule
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 There is no policy module available.
 
@@ -18,6 +19,10 @@ There is no policy module available.
 
 ```swift
 var errSecNoPolicyModule: OSStatus { get }
+```
+
+```c
+errSecNoPolicyModule
 ```
 
 

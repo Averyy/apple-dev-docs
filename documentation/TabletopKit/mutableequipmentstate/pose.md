@@ -2,6 +2,7 @@
 
 **Framework**: TabletopKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The 2D position and rotation of the equipment relative to the parent equipment, or table.
@@ -15,9 +16,15 @@ The 2D position and rotation of the equipment relative to the parent equipment, 
 override var pose: TableVisualState.Pose2D { get set }
 ```
 
+## Default Implementations
+
+### EquipmentState Implementations
+- [var pose: TableVisualState.Pose2D](../equipmentstate/pose-93dxm.md)
+
 ## See Also
 
-- [var boundingBox: Rect3D](mutableequipmentstate/boundingbox.md)
+### Rendering the quipment
+- [var boundingBox: Rect3D](./boundingbox.md)
   A 3D bounding box that encloses the equipment.
 
 

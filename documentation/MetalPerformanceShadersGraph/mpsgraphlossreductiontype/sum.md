@@ -1,7 +1,8 @@
 # MPSGraphLossReductionType.sum
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Reduces the loss down to a scalar with a sum operation.
 
@@ -17,6 +18,10 @@ Reduces the loss down to a scalar with a sum operation.
 
 ```swift
 case sum
+```
+
+```c
+MPSGraphLossReductionTypeSum
 ```
 
 

@@ -1,7 +1,8 @@
 # locale
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The locale to use when scanning.
 
@@ -20,17 +21,22 @@ The locale to use when scanning.
 var locale: Any? { get set }
 ```
 
+```objc
+@property (retain, nullable) id locale;
+```
+
 #### Discussion
 
 A scanner’s locale affects the way it interprets numeric values from the string. In particular, a scanner uses the locale’s decimal separator to distinguish the integer and fractional parts of floating-point representations. A scanner with no locale set uses non-localized values. New scanners have no locale by default.
 
 ## See Also
 
-- [var scanLocation: Int](scanner/scanlocation.md)
+### Configuring a Scanner
+- [var scanLocation: Int](./scanlocation.md)
   The character position at which the receiver will begin its next scanning operation.
-- [var caseSensitive: Bool](scanner/casesensitive.md)
+- [var caseSensitive: Bool](./casesensitive.md)
   Flag that indicates whether the receiver distinguishes case in the characters it scans.
-- [var charactersToBeSkipped: CharacterSet?](scanner/characterstobeskipped.md)
+- [var charactersToBeSkipped: CharacterSet?](./characterstobeskipped.md)
   Character set containing the characters the scanner ignores when looking for a scannable element.
 
 

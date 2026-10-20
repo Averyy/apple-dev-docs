@@ -2,12 +2,13 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Inserts the given string into the receiver, replacing the specified content.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,13 @@ Inserts the given string into the receiver, replacing the specified content.
 func insertText(_ string: Any, replacementRange: NSRange)
 ```
 
+```objc
+- (void) insertText:(id) string replacementRange:(NSRange) replacementRange;
+```
+
 ## Mentions
 
-- [Supporting Writing Tools via the pasteboard](supporting-writing-tools-via-the-pasteboard.md)
+- [Supporting Writing Tools via the pasteboard](../supporting-writing-tools-via-the-pasteboard.md)
 
 #### Discussion
 
@@ -30,9 +35,10 @@ This method is the entry point for inserting text typed by the user and is gener
 
 ## See Also
 
-- [func attributedString() -> NSAttributedString](nstextinputclient/attributedstring.md)
+### Storing text
+- [func attributedString() -> NSAttributedString](./attributedstring%28%29.md)
   Returns an attributed string representing the receiver’s text storage.
-- [func attributedSubstring(forProposedRange: NSRange, actualRange: NSRangePointer?) -> NSAttributedString?](nstextinputclient/attributedsubstring(forproposedrange:actualrange:).md)
+- [func attributedSubstring(forProposedRange: NSRange, actualRange: NSRangePointer?) -> NSAttributedString?](./attributedsubstring%28forproposedrange,actualrange%29.md)
   Returns an attributed string derived from the given range in the receiver’s text storage.
 
 

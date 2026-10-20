@@ -1,7 +1,8 @@
 # queueName
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the queue that Game Center places the match request in.
 
@@ -20,18 +21,22 @@ The name of the queue that Game Center places the match request in.
 var queueName: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * queueName;
+```
+
 ## Mentions
 
-- [Finding players using matchmaking rules](finding-players-using-matchmaking-rules.md)
-- [Finding players with similar skill levels](finding-players-with-similar-skill-levels.md)
-- [Assigning players to teams using rules](assigning-players-to-teams-using-rules.md)
-- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
-- [Finding players for custom server-based games](finding-players-for-custom-server-based-games.md)
-- [Troubleshooting matchmaking rules using metrics](troubleshooting-matchmaking-rules-using-metrics.md)
+- [Finding players using matchmaking rules](../finding-players-using-matchmaking-rules.md)
+- [Finding players with similar skill levels](../finding-players-with-similar-skill-levels.md)
+- [Assigning players to teams using rules](../assigning-players-to-teams-using-rules.md)
+- [Finding multiple players for a game](../finding-multiple-players-for-a-game.md)
+- [Finding players for custom server-based games](../finding-players-for-custom-server-based-games.md)
+- [Troubleshooting matchmaking rules using metrics](../troubleshooting-matchmaking-rules-using-metrics.md)
 
 #### Discussion
 
-To use matchmaking rules, set the [`queueName`](gkmatchrequest/queuename.md) property to a queue name that you configure in App Store Connect. Then set [`properties`](gkmatchrequest/properties.md) and optionally [`recipientProperties`](gkmatchrequest/recipientproperties.md) to game-specific criteria.
+To use matchmaking rules, set the [`queueName`](./queuename.md) property to a queue name that you configure in App Store Connect. Then set [`properties`](./properties.md) and optionally [`recipientProperties`](./recipientproperties.md) to game-specific criteria.
 
 A *queue name* is a uniform type identifier (UTI) that contains only alphanumeric characters (A-Z, a-z, 0-9), hyphens (-), or periods (.). The string should be in reverse-DNS format. Queue names are case sensitive.
 
@@ -39,15 +44,17 @@ Matchmaking rules evaluate the properties of match requests in the same queue to
 
 If this property is `nil`, Game Center doesn’t use matchmaking rules to find other players.
 
-For more information, see [`Matchmaking rules`](matchmaking-rules.md).
+For more information, see [Matchmaking rules](../matchmaking-rules.md).
 
 ## See Also
 
-- [Create a Queue](../appstoreconnectapi/post-v1-gamecentermatchmakingqueues.md)
+### Related Documentation
+- [Create a Queue](../../AppStoreConnectAPI/post-v1-gamecentermatchmakingqueues.md)
   Create a queue and add it to a rule set.
-- [var properties: [String : Any]?](gkmatchrequest/properties.md)
+### Matching players using rules
+- [var properties: [String : Any]?](./properties.md)
   The criteria for the local player that Game Center uses to find other players when using matchmaking rules.
-- [var recipientProperties: [GKPlayer : [String : Any]]?](gkmatchrequest/recipientproperties.md)
+- [var recipientProperties: [GKPlayer : [String : Any]]?](./recipientproperties.md)
   The criteria for recipients of the match request that Game Center uses to find other players when using matchmaking rules.
 
 

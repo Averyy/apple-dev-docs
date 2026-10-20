@@ -1,7 +1,8 @@
 # payload
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The output data your custom stage produced.
 
@@ -20,7 +21,8 @@ let payload: SearchPipelineData.Payload
 
 ## See Also
 
-- [SearchPipelineData.Payload](searchpipelinedata/payload-swift.enum.md)
+### Getting the pipeline data
+- [SearchPipelineData.Payload](./payload-swift.enum.md)
   The typed variants of data a pipeline stage can produce.
 
 

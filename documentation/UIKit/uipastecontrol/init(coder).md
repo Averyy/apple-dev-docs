@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a paste button by deserializing the specified coder.
 
@@ -17,15 +18,20 @@ Creates a paste button by deserializing the specified coder.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## Parameters
 
 - `coder`: An object that contains a serialized paste button.
 
 ## See Also
 
-- [init(configuration: UIPasteControl.Configuration)](uipastecontrol/init(configuration:).md)
+### Creating a paste button
+- [init(configuration: UIPasteControl.Configuration)](./init%28configuration%29.md)
   Creates a paste button that conforms to the specified configuration.
-- [init(frame: CGRect)](uipastecontrol/init(frame:).md)
+- [init(frame: CGRect)](./init%28frame%29.md)
   Creates a paste button with the specified size and position.
 
 

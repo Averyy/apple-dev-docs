@@ -1,7 +1,8 @@
 # changePasswordWithoutUserInteraction(for:existingCredential:newPassword:userInfo:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Upgrades a user’s weak password to a strong password.
 
@@ -17,13 +18,17 @@ Upgrades a user’s weak password to a strong password.
 func changePasswordWithoutUserInteraction(for serviceIdentifier: ASCredentialServiceIdentifier, existingCredential: ASPasswordCredential, newPassword: String, userInfo: [AnyHashable : Any]? = nil)
 ```
 
+```objc
+- (void) changePasswordWithoutUserInteractionForServiceIdentifier:(ASCredentialServiceIdentifier *) serviceIdentifier existingCredential:(ASPasswordCredential *) existingCredential newPassword:(NSString *) newPassword userInfo:(NSDictionary *) userInfo;
+```
+
 ## Mentions
 
-- [Upgrading Account Security With an Account Authentication Modification Extension](upgrading-account-security-with-an-account-authentication-modification-extension.md)
+- [Upgrading Account Security With an Account Authentication Modification Extension](../upgrading-account-security-with-an-account-authentication-modification-extension.md)
 
 #### Discussion
 
-If the extension’s `Info.plist` file includes the [`ASAccountAuthenticationModificationPasswordGenerationRequirements`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/asaccountauthenticationmodificationpasswordgenerationrequirements) key, the value of `newPassword` satisfies the specified requirements.
+If the extension’s `Info.plist` file includes the [`ASAccountAuthenticationModificationPasswordGenerationRequirements`](../../BundleResources/information-property-list/nsextension/asaccountauthenticationmodificationpasswordgenerationrequirements.md) key, the value of `newPassword` satisfies the specified requirements.
 
 ## Parameters
 
@@ -34,13 +39,14 @@ If the extension’s `Info.plist` file includes the [`ASAccountAuthenticationMod
 
 ## See Also
 
-- [func prepareInterfaceToChangePassword(for: ASCredentialServiceIdentifier, existingCredential: ASPasswordCredential, newPassword: String, userInfo: [AnyHashable : Any]?)](asaccountauthenticationmodificationviewcontroller/prepareinterfacetochangepassword(for:existingcredential:newpassword:userinfo:).md)
+### Upgrading to Strong Passwords
+- [func prepareInterfaceToChangePassword(for: ASCredentialServiceIdentifier, existingCredential: ASPasswordCredential, newPassword: String, userInfo: [AnyHashable : Any]?)](./prepareinterfacetochangepassword%28for,existingcredential,newpassword,userinfo%29.md)
   Prepares the view controller’s interface that displays when upgrading from a weak password to a strong password.
-- [ASAccountAuthenticationModificationSupportsStrongPasswordChange](../bundleresources/information-property-list/nsextension/asaccountauthenticationmodificationsupportsstrongpasswordchange.md)
+- [ASAccountAuthenticationModificationSupportsStrongPasswordChange](../../BundleResources/information-property-list/nsextension/asaccountauthenticationmodificationsupportsstrongpasswordchange.md)
   A Boolean value that indicates whether the extension supports upgrading a user’s password to a strong password.
-- [ASAccountAuthenticationModificationPasswordGenerationRequirements](../bundleresources/information-property-list/nsextension/asaccountauthenticationmodificationpasswordgenerationrequirements.md)
+- [ASAccountAuthenticationModificationPasswordGenerationRequirements](../../BundleResources/information-property-list/nsextension/asaccountauthenticationmodificationpasswordgenerationrequirements.md)
   The rules the system satisfies when generating a strong password for your extension during an automatic upgrade.
-- [ASAccountAuthenticationModificationOptOutOfSecurityPromptsOnSignIn](../bundleresources/information-property-list/asaccountauthenticationmodificationoptoutofsecuritypromptsonsignin.md)
+- [ASAccountAuthenticationModificationOptOutOfSecurityPromptsOnSignIn](../../BundleResources/information-property-list/asaccountauthenticationmodificationoptoutofsecuritypromptsonsignin.md)
   A Boolean value that indicates the system shouldn’t show security recommendation prompts when users sign in using the app.
 
 

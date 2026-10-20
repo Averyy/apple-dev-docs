@@ -1,7 +1,8 @@
 # replaceTextualPortion(of:with:at:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts text in a search field into a search token.
 
@@ -17,11 +18,15 @@ Converts text in a search field into a search token.
 func replaceTextualPortion(of textRange: UITextRange, with token: UISearchToken, at tokenIndex: Int)
 ```
 
+```objc
+- (void) replaceTextualPortionOfRange:(UITextRange *) textRange withToken:(UISearchToken *) token atIndex:(NSUInteger) tokenIndex;
+```
+
 #### Discussion
 
-This method removes any text in the specified range, inserts the provided token at the specified index, and selects the newly inserted token. Prefer using this convenience method over performing each step with other methods. When your app calls [`replaceTextualPortion(of:with:at:)`](uisearchtextfield/replacetextualportion(of:with:at:).md), UIKit commits any marked text before modifying the text, and creates a single undo group.
+This method removes any text in the specified range, inserts the provided token at the specified index, and selects the newly inserted token. Prefer using this convenience method over performing each step with other methods. When your app calls [`replaceTextualPortion(of:with:at:)`](./replacetextualportion%28of,with,at%29.md), UIKit commits any marked text before modifying the text, and creates a single undo group.
 
-This method doesn’t remove any tokens in the `textRange`, so you don’t have to manually trim the [`selectedTextRange`](uitextinput/selectedtextrange.md) before you use it in this method.
+This method doesn’t remove any tokens in the `textRange`, so you don’t have to manually trim the [`selectedTextRange`](../uitextinput/selectedtextrange.md) before you use it in this method.
 
 ## Parameters
 
@@ -31,7 +36,8 @@ This method doesn’t remove any tokens in the `textRange`, so you don’t have 
 
 ## See Also
 
-- [var textualRange: UITextRange](uisearchtextfield/textualrange.md)
+### Converting text into tokens
+- [var textualRange: UITextRange](./textualrange.md)
   The range of the field’s text content.
 
 

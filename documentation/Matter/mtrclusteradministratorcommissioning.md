@@ -1,7 +1,8 @@
 # MTRClusterAdministratorCommissioning
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,40 +19,44 @@
 class MTRClusterAdministratorCommissioning
 ```
 
+```objc
+@interface MTRClusterAdministratorCommissioning : MTRGenericCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRDevice, endpoint: UInt16, queue: dispatch_queue_t)](mtrclusteradministratorcommissioning/init(device:endpoint:queue:).md)
-- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclusteradministratorcommissioning/init(device:endpointid:queue:).md)
+- [init?(device: MTRDevice, endpoint: UInt16, queue: dispatch_queue_t)](./mtrclusteradministratorcommissioning/init%28device,endpoint,queue%29.md)
+- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrclusteradministratorcommissioning/init%28device,endpointid,queue%29.md)
 ### Instance Methods
-- [func openBasicCommissioningWindow(with: MTRAdministratorCommissioningClusterOpenBasicCommissioningWindowParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusteradministratorcommissioning/openbasiccommissioningwindow(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func openBasicCommissioningWindow(with: MTRAdministratorCommissioningClusterOpenBasicCommissioningWindowParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusteradministratorcommissioning/openbasiccommissioningwindow(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func openWindow(with: MTRAdministratorCommissioningClusterOpenCommissioningWindowParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusteradministratorcommissioning/openwindow(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func openWindow(with: MTRAdministratorCommissioningClusterOpenCommissioningWindowParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusteradministratorcommissioning/openwindow(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusteradministratorcommissioning/readattributeacceptedcommandlist(with:).md)
-- [func readAttributeAdminFabricIndex(with: MTRReadParams?) -> [String : Any]?](mtrclusteradministratorcommissioning/readattributeadminfabricindex(with:).md)
-- [func readAttributeAdminVendorId(with: MTRReadParams?) -> [String : Any]?](mtrclusteradministratorcommissioning/readattributeadminvendorid(with:).md)
-- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclusteradministratorcommissioning/readattributeattributelist(with:).md)
-- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclusteradministratorcommissioning/readattributeclusterrevision(with:).md)
-- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclusteradministratorcommissioning/readattributefeaturemap(with:).md)
-- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusteradministratorcommissioning/readattributegeneratedcommandlist(with:).md)
-- [func readAttributeWindowStatus(with: MTRReadParams?) -> [String : Any]?](mtrclusteradministratorcommissioning/readattributewindowstatus(with:).md)
-- [func revokeCommissioning(with: MTRAdministratorCommissioningClusterRevokeCommissioningParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusteradministratorcommissioning/revokecommissioning(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func revokeCommissioning(with: MTRAdministratorCommissioningClusterRevokeCommissioningParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusteradministratorcommissioning/revokecommissioning(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func revokeCommissioning(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusteradministratorcommissioning/revokecommissioning(withexpectedvalues:expectedvalueinterval:completion:).md)
-- [func revokeCommissioning(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusteradministratorcommissioning/revokecommissioning(withexpectedvalues:expectedvalueinterval:completionhandler:).md)
+- [func openBasicCommissioningWindow(with: MTRAdministratorCommissioningClusterOpenBasicCommissioningWindowParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusteradministratorcommissioning/openbasiccommissioningwindow%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func openBasicCommissioningWindow(with: MTRAdministratorCommissioningClusterOpenBasicCommissioningWindowParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](./mtrclusteradministratorcommissioning/openbasiccommissioningwindow%28with,expectedvalues,expectedvalueinterval,completionhandler%29.md)
+- [func openWindow(with: MTRAdministratorCommissioningClusterOpenCommissioningWindowParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusteradministratorcommissioning/openwindow%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func openWindow(with: MTRAdministratorCommissioningClusterOpenCommissioningWindowParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](./mtrclusteradministratorcommissioning/openwindow%28with,expectedvalues,expectedvalueinterval,completionhandler%29.md)
+- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusteradministratorcommissioning/readattributeacceptedcommandlist%28with%29.md)
+- [func readAttributeAdminFabricIndex(with: MTRReadParams?) -> [String : Any]?](./mtrclusteradministratorcommissioning/readattributeadminfabricindex%28with%29.md)
+- [func readAttributeAdminVendorId(with: MTRReadParams?) -> [String : Any]?](./mtrclusteradministratorcommissioning/readattributeadminvendorid%28with%29.md)
+- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](./mtrclusteradministratorcommissioning/readattributeattributelist%28with%29.md)
+- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](./mtrclusteradministratorcommissioning/readattributeclusterrevision%28with%29.md)
+- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](./mtrclusteradministratorcommissioning/readattributefeaturemap%28with%29.md)
+- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusteradministratorcommissioning/readattributegeneratedcommandlist%28with%29.md)
+- [func readAttributeWindowStatus(with: MTRReadParams?) -> [String : Any]?](./mtrclusteradministratorcommissioning/readattributewindowstatus%28with%29.md)
+- [func revokeCommissioning(with: MTRAdministratorCommissioningClusterRevokeCommissioningParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusteradministratorcommissioning/revokecommissioning%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func revokeCommissioning(with: MTRAdministratorCommissioningClusterRevokeCommissioningParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](./mtrclusteradministratorcommissioning/revokecommissioning%28with,expectedvalues,expectedvalueinterval,completionhandler%29.md)
+- [func revokeCommissioning(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusteradministratorcommissioning/revokecommissioning%28withexpectedvalues,expectedvalueinterval,completion%29.md)
+- [func revokeCommissioning(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](./mtrclusteradministratorcommissioning/revokecommissioning%28withexpectedvalues,expectedvalueinterval,completionhandler%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericCluster](mtrgenericcluster.md)
+- [MTRGenericCluster](./mtrgenericcluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

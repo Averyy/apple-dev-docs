@@ -1,7 +1,8 @@
 # WKWebView.FullscreenState.inFullscreen
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.0+
@@ -16,11 +17,16 @@
 case inFullscreen
 ```
 
+```c
+WKFullscreenStateInFullscreen
+```
+
 ## See Also
 
-- [WKWebView.FullscreenState.enteringFullscreen](wkwebview/fullscreenstate-swift.enum/enteringfullscreen.md)
-- [WKWebView.FullscreenState.exitingFullscreen](wkwebview/fullscreenstate-swift.enum/exitingfullscreen.md)
-- [WKWebView.FullscreenState.notInFullscreen](wkwebview/fullscreenstate-swift.enum/notinfullscreen.md)
+### Constants
+- [WKWebView.FullscreenState.enteringFullscreen](./enteringfullscreen.md)
+- [WKWebView.FullscreenState.exitingFullscreen](./exitingfullscreen.md)
+- [WKWebView.FullscreenState.notInFullscreen](./notinfullscreen.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # type(named:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The type corresponding to the given type name.
 

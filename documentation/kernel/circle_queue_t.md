@@ -1,14 +1,15 @@
 # circle_queue_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 typedef struct circle_queue_head *circle_queue_t;
 ```
 

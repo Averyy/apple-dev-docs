@@ -1,7 +1,8 @@
 # LiveActivityForwarding.Session
 
 **Framework**: Accessory Live Activities  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents the active connection between your data provider extension and the system.
 
@@ -17,28 +18,29 @@ final class Session
 
 ## Mentions
 
-- [Receiving Live Activity updates and alerts on an accessory](receiving-live-activities-on-an-accessory.md)
+- [Receiving Live Activity updates and alerts on an accessory](../receiving-live-activities-on-an-accessory.md)
 
 #### Overview
 
-Each `Session` has one corresponding [`LiveActivityForwarding.AccessoryLiveActivitiesHandler`](liveactivityforwarding/accessoryliveactivitieshandler.md).
+Each `Session` has one corresponding [`LiveActivityForwarding.AccessoryLiveActivitiesHandler`](./accessoryliveactivitieshandler.md).
 
 ## Topics
 
 ### Working with Live Activities
-- [var liveActivities: [AccessoryLiveActivity]](liveactivityforwarding/session/liveactivities.md)
+- [var liveActivities: [AccessoryLiveActivity]](./session/liveactivities.md)
   The currently active Live Activities that the accessory is authorized to receive.
 
 ## Relationships
 
 ### Conforms To
-- [AccessoryFeatureSession](../accessorytransportextension/accessoryfeaturesession.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AccessoryFeatureSession](../../AccessoryTransportExtension/accessoryfeaturesession.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [LiveActivityForwarding.AccessoryLiveActivitiesHandler](liveactivityforwarding/accessoryliveactivitieshandler.md)
+### Live Activity forwarding
+- [LiveActivityForwarding.AccessoryLiveActivitiesHandler](./accessoryliveactivitieshandler.md)
   A protocol that defines methods for handling Live Activity life cycle events in your accessory’s data provider extension.
 
 

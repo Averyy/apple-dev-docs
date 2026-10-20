@@ -1,23 +1,28 @@
 # CFTreeSortChildren(_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sorts the immediate children of a tree using a specified comparator function.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFTreeSortChildren(_ tree: CFTree!, _ comparator: CFComparatorFunction!, _ context: UnsafeMutableRawPointer!)
+```
+
+```c
+extern void CFTreeSortChildren(CFTreeRef tree, CFComparatorFunction comparator, void *context);
 ```
 
 #### Discussion

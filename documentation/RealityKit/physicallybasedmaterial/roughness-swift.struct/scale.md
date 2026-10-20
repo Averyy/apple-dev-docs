@@ -1,7 +1,8 @@
 # scale
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The roughness value for the entire entity.
 
@@ -11,7 +12,7 @@ The roughness value for the entire entity.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ var scale: Float
 
 ## See Also
 
-- [var texture: PhysicallyBasedMaterial.Texture?](physicallybasedmaterial/roughness-swift.struct/texture.md)
+### Accessing roughness data
+- [var texture: PhysicallyBasedMaterial.Texture?](./texture.md)
   The roughness values as a UV-mapped image texture.
-- [static let textureSemantic: TextureResource.Semantic](physicallybasedmaterial/roughness-swift.struct/texturesemantic.md)
+- [static let textureSemantic: TextureResource.Semantic](./texturesemantic.md)
   The intended use of the object’s texture property.
 
 

@@ -1,7 +1,8 @@
 # kUSBHostConnectionSpeedHigh
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The high speed connection.
 
@@ -10,7 +11,7 @@ The high speed connection.
 
 ## Declaration
 
-```swift
+```c
 kUSBHostConnectionSpeedHigh = 2
 ```
 

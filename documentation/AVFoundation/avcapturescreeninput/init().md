@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a capture screen input that provides media data from the main screen.
 
@@ -14,13 +15,18 @@ Initializes a capture screen input that provides media data from the main screen
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Discussion
 
-Using this initializer is equivalent to calling [`init(displayID:)`](avcapturescreeninput/init(displayid:).md) with the result of the [`CGMainDisplayID()`](https://developer.apple.com/documentation/coregraphics/cgmaindisplayid()) function.
+Using this initializer is equivalent to calling [`init(displayID:)`](./init%28displayid%29.md) with the result of the [`CGMainDisplayID()`](../../CoreGraphics/cgmaindisplayid%28%29.md) function.
 
 ## See Also
 
-- [init?(displayID: CGDirectDisplayID)](avcapturescreeninput/init(displayid:).md)
+### Initializing a capture screen input
+- [init?(displayID: CGDirectDisplayID)](./init%28displayid%29.md)
   Initializes a capture screen input that provides media data from the specified display.
 
 

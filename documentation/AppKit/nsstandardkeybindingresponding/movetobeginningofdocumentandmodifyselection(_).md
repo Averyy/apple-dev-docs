@@ -1,10 +1,11 @@
 # moveToBeginningOfDocumentAndModifySelection(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 optional func moveToBeginningOfDocumentAndModifySelection(_ sender: Any?)
 ```
 
+```objc
+- (void) moveToBeginningOfDocumentAndModifySelection:(id) sender;
+```
+
 ## See Also
 
-- [func moveToBeginningOfDocument(Any?)](nsstandardkeybindingresponding/movetobeginningofdocument(_:).md)
-- [func moveToEndOfDocument(Any?)](nsstandardkeybindingresponding/movetoendofdocument(_:).md)
-- [func moveToEndOfDocumentAndModifySelection(Any?)](nsstandardkeybindingresponding/movetoendofdocumentandmodifyselection(_:).md)
+### Moving the Selection in Documents
+- [func moveToBeginningOfDocument(Any?)](./movetobeginningofdocument%28_%29.md)
+- [func moveToEndOfDocument(Any?)](./movetoendofdocument%28_%29.md)
+- [func moveToEndOfDocumentAndModifySelection(Any?)](./movetoendofdocumentandmodifyselection%28_%29.md)
 
 
 ---

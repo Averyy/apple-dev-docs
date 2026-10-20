@@ -1,7 +1,8 @@
 # CMStillImageLensStabilization.unavailable
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The lens stabilization module was unavailable for use.
 

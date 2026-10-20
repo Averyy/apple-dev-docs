@@ -1,7 +1,8 @@
 # UISceneError.Code
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes for issues with scenes.
 
@@ -18,35 +19,40 @@ Error codes for issues with scenes.
 enum Code
 ```
 
+```c
+enum UISceneErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Error codes
-- [UISceneError.Code.multipleScenesNotSupported](uisceneerror/code/multiplescenesnotsupported.md)
+- [UISceneError.Code.multipleScenesNotSupported](./code/multiplescenesnotsupported.md)
   An error that indicates multiple scenes aren’t supported.
-- [UISceneError.Code.requestDenied](uisceneerror/code/requestdenied.md)
+- [UISceneError.Code.requestDenied](./code/requestdenied.md)
   An error that indicates the request was denied.
-- [UISceneError.Code.geometryRequestUnsupported](uisceneerror/code/geometryrequestunsupported.md)
+- [UISceneError.Code.geometryRequestUnsupported](./code/geometryrequestunsupported.md)
   An error that indicates the geometry request is invalid or unsupported.
-- [UISceneError.Code.geometryRequestDenied](uisceneerror/code/geometryrequestdenied.md)
+- [UISceneError.Code.geometryRequestDenied](./code/geometryrequestdenied.md)
   An error that indicates the geometry request is valid but the system denied the request.
 ### Initializers
-- [init?(rawValue: Int)](uisceneerror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct UISceneError](uisceneerror.md)
+### Errors
+- [struct UISceneError](../uisceneerror.md)
   Errors returned during the creation or management of a scene.
-- [let UISceneErrorDomain: String](uisceneerrordomain.md)
+- [let UISceneErrorDomain: String](../uisceneerrordomain.md)
   The domain for scene-related errors.
 
 

@@ -1,7 +1,8 @@
 # xcodeMetrics.ProductData.MetricCategories.Metrics.Datasets.FilterCriteria
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The device and percentile criteria by which the system filters a metrics dataset.
 
@@ -10,7 +11,7 @@ The device and percentile criteria by which the system filters a metrics dataset
 
 ## Declaration
 
-```swift
+```
 object xcodeMetrics.ProductData.MetricCategories.Metrics.Datasets.FilterCriteria
 ```
 
@@ -22,7 +23,8 @@ object xcodeMetrics.ProductData.MetricCategories.Metrics.Datasets.FilterCriteria
 
 ## See Also
 
-- [object xcodeMetrics.ProductData.MetricCategories.Metrics.Datasets.Points](xcodemetrics/productdata-data.dictionary/metriccategories-data.dictionary/metrics-data.dictionary/datasets-data.dictionary/points-data.dictionary.md)
+### Objects
+- [object xcodeMetrics.ProductData.MetricCategories.Metrics.Datasets.Points](./points-data.dictionary.md)
   A metric value of a goal for a specific app version, with a breakdown by metric subtypes.
 
 

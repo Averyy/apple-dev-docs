@@ -1,7 +1,8 @@
 # ComputeStage.postProcessing
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A stage that represents where the system performs additional analysis after the main compute stage.
 
@@ -22,7 +23,8 @@ case postProcessing
 
 ## See Also
 
-- [ComputeStage.main](computestage/main.md)
+### Getting the compute stages
+- [ComputeStage.main](./main.md)
   A stage that represents where the system performs the main functionality.
 
 

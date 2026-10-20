@@ -1,7 +1,8 @@
 # streamDidBecomeActive(_:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 optional func streamDidBecomeActive(_ stream: SCStream)
+```
+
+```objc
+- (void) streamDidBecomeActive:(SCStream *) stream;
 ```
 
 #### Discussion

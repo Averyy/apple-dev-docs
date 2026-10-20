@@ -1,7 +1,8 @@
 # readAttributeSystemMode(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeSystemMode(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeSystemMode() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeSystemModeWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

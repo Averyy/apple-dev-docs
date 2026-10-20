@@ -2,6 +2,7 @@
 
 **Framework**: AVKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate when the system Picture in Picture window changes size.
@@ -20,9 +21,13 @@ Tells the delegate when the system Picture in Picture window changes size.
 func pictureInPictureController(_ pictureInPictureController: AVPictureInPictureController, didTransitionToRenderSize newRenderSize: CMVideoDimensions)
 ```
 
+```objc
+- (void) pictureInPictureController:(AVPictureInPictureController *) pictureInPictureController didTransitionToRenderSize:(CMVideoDimensions) newRenderSize;
+```
+
 #### Discussion
 
-Take the new render size and the [`isPictureInPictureActive`](avpictureinpicturecontroller/ispictureinpictureactive.md) state into account when choosing media variants to avoid uncessary decoding overhead.
+Take the new render size and the [`isPictureInPictureActive`](../avpictureinpicturecontroller/ispictureinpictureactive.md) state into account when choosing media variants to avoid uncessary decoding overhead.
 
 ## Parameters
 
@@ -31,15 +36,16 @@ Take the new render size and the [`isPictureInPictureActive`](avpictureinpicture
 
 ## See Also
 
-- [func pictureInPictureController(AVPictureInPictureController, setPlaying: Bool)](avpictureinpicturesamplebufferplaybackdelegate/pictureinpicturecontroller(_:setplaying:).md)
+### Responding to playback events
+- [func pictureInPictureController(AVPictureInPictureController, setPlaying: Bool)](./pictureinpicturecontroller%28_,setplaying%29.md)
   Tells the delegate that the user requested to begin or pause playback.
-- [func pictureInPictureControllerTimeRangeForPlayback(AVPictureInPictureController) -> CMTimeRange](avpictureinpicturesamplebufferplaybackdelegate/pictureinpicturecontrollertimerangeforplayback(_:).md)
+- [func pictureInPictureControllerTimeRangeForPlayback(AVPictureInPictureController) -> CMTimeRange](./pictureinpicturecontrollertimerangeforplayback%28_%29.md)
   Asks the delegate for the current playable time range.
-- [func pictureInPictureControllerIsPlaybackPaused(AVPictureInPictureController) -> Bool](avpictureinpicturesamplebufferplaybackdelegate/pictureinpicturecontrollerisplaybackpaused(_:).md)
+- [func pictureInPictureControllerIsPlaybackPaused(AVPictureInPictureController) -> Bool](./pictureinpicturecontrollerisplaybackpaused%28_%29.md)
   Asks delegate to indicate whether the playback UI reflects a playing or paused state, regardless of the current playback rate.
-- [func pictureInPictureController(AVPictureInPictureController, skipByInterval: CMTime, completion: () -> Void)](avpictureinpicturesamplebufferplaybackdelegate/pictureinpicturecontroller(_:skipbyinterval:completion:).md)
+- [func pictureInPictureController(AVPictureInPictureController, skipByInterval: CMTime, completion: () -> Void)](./pictureinpicturecontroller%28_,skipbyinterval,completion%29.md)
   Tells the delegate that the user has requested skipping forward or backward by the indicated time interval.
-- [func pictureInPictureControllerShouldProhibitBackgroundAudioPlayback(AVPictureInPictureController) -> Bool](avpictureinpicturesamplebufferplaybackdelegate/pictureinpicturecontrollershouldprohibitbackgroundaudioplayback(_:).md)
+- [func pictureInPictureControllerShouldProhibitBackgroundAudioPlayback(AVPictureInPictureController) -> Bool](./pictureinpicturecontrollershouldprohibitbackgroundaudioplayback%28_%29.md)
   Asks the delegate whether to always prohibit background audio playback.
 
 

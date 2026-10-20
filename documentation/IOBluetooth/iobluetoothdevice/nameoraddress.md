@@ -1,17 +1,22 @@
 # nameOrAddress
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Get the human readable name of the remote device. If the name is not present, it will return a string containing the device’s address.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var nameOrAddress: String! { get }
+```
+
+```objc
+@property (readonly) NSString * nameOrAddress;
 ```
 
 #### Discussion

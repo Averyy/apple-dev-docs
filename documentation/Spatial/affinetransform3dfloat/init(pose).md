@@ -1,7 +1,8 @@
 # init(pose:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new transform from the specified pose.
 

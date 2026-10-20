@@ -1,7 +1,8 @@
 # updateName(_:completionHandler:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the name of the action set.
 
@@ -14,19 +15,30 @@ Updates the name of the action set.
 ## Declaration
 
 ```swift
+func updateName(_ name: String, completionHandler completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func updateName(_ name: String) async throws
+```
+
+```objc
+- (void) updateName:(NSString *) name completionHandler:(HMErrorBlock) completion;
 ```
 
 ## Parameters
 
 - `name`: The new name; must not be `nil`.
-- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
+- `completion`: The block executed after the request is processed.
+
+  - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 
-- [var uniqueIdentifier: UUID](hmactionset/uniqueidentifier.md)
+### Identifiying an action set
+- [var uniqueIdentifier: UUID](./uniqueidentifier.md)
   The action set’s unique identifier.
-- [var name: String](hmactionset/name.md)
+- [var name: String](./name.md)
   The name of the action set.
 
 

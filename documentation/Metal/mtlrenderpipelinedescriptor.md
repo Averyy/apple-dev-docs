@@ -1,7 +1,8 @@
 # MTLRenderPipelineDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An argument of options you pass to a GPU device to get a render pipeline state.
 
@@ -10,7 +11,7 @@ An argument of options you pass to a GPU device to get a render pipeline state.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,32 +20,36 @@ An argument of options you pass to a GPU device to get a render pipeline state.
 class MTLRenderPipelineDescriptor
 ```
 
+```objc
+@interface MTLRenderPipelineDescriptor : NSObject
+```
+
 ## Mentions
 
-- [Compiling binary archives from a custom configuration script](compiling-binary-archives-from-a-custom-configuration-script.md)
-- [Creating binary archives from device-built pipeline state objects](creating-binary-archives-from-device-built-pipeline-state-objects.md)
-- [Improving rendering performance with vertex amplification](improving-rendering-performance-with-vertex-amplification.md)
-- [Rendering to multiple texture slices in a draw command](rendering-to-multiple-texture-slices-in-a-draw-command.md)
+- [Compiling binary archives from a custom configuration script](./compiling-binary-archives-from-a-custom-configuration-script.md)
+- [Creating binary archives from device-built pipeline state objects](./creating-binary-archives-from-device-built-pipeline-state-objects.md)
+- [Improving rendering performance with vertex amplification](./improving-rendering-performance-with-vertex-amplification.md)
+- [Rendering to multiple texture slices in a draw command](./rendering-to-multiple-texture-slices-in-a-draw-command.md)
 
 #### Overview
 
-An [`MTLRenderPipelineDescriptor`](mtlrenderpipelinedescriptor.md) instance configures the state of the pipeline to use during a rendering pass, including rasterization (such as multisampling), visibility, blending, tessellation, and graphics function state. Use standard allocation and initialization techniques to create an [`MTLRenderPipelineDescriptor`](mtlrenderpipelinedescriptor.md) object. Then configure and use the descriptor to create an [`MTLRenderPipelineState`](mtlrenderpipelinestate.md) object.
+An [`MTLRenderPipelineDescriptor`](./mtlrenderpipelinedescriptor.md) instance configures the state of the pipeline to use during a rendering pass, including rasterization (such as multisampling), visibility, blending, tessellation, and graphics function state. Use standard allocation and initialization techniques to create an [`MTLRenderPipelineDescriptor`](./mtlrenderpipelinedescriptor.md) object. Then configure and use the descriptor to create an [`MTLRenderPipelineState`](./mtlrenderpipelinestate.md) object.
 
-To specify the vertex or fragment function in the rendering pipeline descriptor, set the [`vertexFunction`](mtlrenderpipelinedescriptor/vertexfunction.md) or [`fragmentFunction`](mtlrenderpipelinedescriptor/fragmentfunction.md) property, respectively, to the desired [`MTLFunction`](mtlfunction.md) object. The system ignores the tessellation stage properties if you don’t set the [`vertexFunction`](mtlrenderpipelinedescriptor/vertexfunction.md) property to a post-tessellation vertex function. A vertex function is a post-tessellation vertex function if the `[[ patch(patch-type, N) ]]` attribute precedes the function’s signature in your Metal Shading Language source. See the “Post-Tessellation Vertex Functions” section of [`Metal Shading Language Specification`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) for more information.
+To specify the vertex or fragment function in the rendering pipeline descriptor, set the [`vertexFunction`](./mtlrenderpipelinedescriptor/vertexfunction.md) or [`fragmentFunction`](./mtlrenderpipelinedescriptor/fragmentfunction.md) property, respectively, to the desired [`MTLFunction`](./mtlfunction.md) object. The system ignores the tessellation stage properties if you don’t set the [`vertexFunction`](./mtlrenderpipelinedescriptor/vertexfunction.md) property to a post-tessellation vertex function. A vertex function is a post-tessellation vertex function if the `[[ patch(patch-type, N) ]]` attribute precedes the function’s signature in your Metal Shading Language source. See the “Post-Tessellation Vertex Functions” section of [Metal Shading Language Specification](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) for more information.
 
-Setting the [`fragmentFunction`](mtlrenderpipelinedescriptor/fragmentfunction.md) property to `nil` disables the rasterization of pixels into the color attachment. This action is typically for outputting vertex function data into a buffer object, or for depth-only rendering.
+Setting the [`fragmentFunction`](./mtlrenderpipelinedescriptor/fragmentfunction.md) property to `nil` disables the rasterization of pixels into the color attachment. This action is typically for outputting vertex function data into a buffer object, or for depth-only rendering.
 
-If the vertex shader has an argument with per-vertex input attributes, set the [`vertexDescriptor`](mtlrenderpipelinedescriptor/vertexdescriptor.md) property to an [`MTLVertexDescriptor`](mtlvertexdescriptor.md) object that describes the organization of that vertex data.
+If the vertex shader has an argument with per-vertex input attributes, set the [`vertexDescriptor`](./mtlrenderpipelinedescriptor/vertexdescriptor.md) property to an [`MTLVertexDescriptor`](./mtlvertexdescriptor.md) object that describes the organization of that vertex data.
 
-##### Multisampling and the Render Pipeline
+##### Multisampling and the render pipeline
 
-If a color attachment supports multisampling (essentially, the attachment is an [`MTLTextureType.type2DMultisample`](mtltexturetype/type2dmultisample.md) type color texture), you can create multiple samples per fragment, and the following rendering pipeline descriptor properties determine coverage:
+If a color attachment supports multisampling (essentially, the attachment is an [`MTLTextureType.type2DMultisample`](./mtltexturetype/type2dmultisample.md) type color texture), you can create multiple samples per fragment, and the following rendering pipeline descriptor properties determine coverage:
 
-- [`rasterSampleCount`](mtlrenderpipelinedescriptor/rastersamplecount.md) is the number of samples for each pixel.
-- If [`isAlphaToCoverageEnabled`](mtlrenderpipelinedescriptor/isalphatocoverageenabled.md) is [`true`](https://developer.apple.com/documentation/swift/true), the GPU uses the alpha channel fragment output for [`colorAttachments`](mtlrenderpipelinedescriptor/colorattachments.md) to compute a coverage mask that affects the values the GPU writes to all attachments (color, depth, and stencil).
-- If [`isAlphaToOneEnabled`](mtlrenderpipelinedescriptor/isalphatooneenabled.md) is [`true`](https://developer.apple.com/documentation/swift/true), the GPU changes alpha channel fragment values for [`colorAttachments`](mtlrenderpipelinedescriptor/colorattachments.md) to `1.0`, which is the largest representable value.
+- [`rasterSampleCount`](./mtlrenderpipelinedescriptor/rastersamplecount.md) is the number of samples for each pixel.
+- If [`isAlphaToCoverageEnabled`](./mtlrenderpipelinedescriptor/isalphatocoverageenabled.md) is [`true`](../Swift/true.md), the GPU uses the alpha channel fragment output for [`colorAttachments`](./mtlrenderpipelinedescriptor/colorattachments.md) to compute a coverage mask that affects the values the GPU writes to all attachments (color, depth, and stencil).
+- If [`isAlphaToOneEnabled`](./mtlrenderpipelinedescriptor/isalphatooneenabled.md) is [`true`](../Swift/true.md), the GPU changes alpha channel fragment values for [`colorAttachments`](./mtlrenderpipelinedescriptor/colorattachments.md) to `1.0`, which is the largest representable value.
 
-If [`isAlphaToCoverageEnabled`](mtlrenderpipelinedescriptor/isalphatocoverageenabled.md) is [`true`](https://developer.apple.com/documentation/swift/true), an implementation-defined `coverageToMask` function uses the alpha channel fragment output from [`colorAttachments`](mtlrenderpipelinedescriptor/colorattachments.md) to create an intermediate coverage mask, which sets a number of bits in its output proportionally to the value of the floating-point input. For example, if the input is `0.0f`, the function sets the output to `0x0`. If the input is `1.0f`, the function sets all output bits (in effect, `~0x0`). If the input is `0.5f`, the function sets half of the bits, according to the implementation, which often uses dither patterns.
+If [`isAlphaToCoverageEnabled`](./mtlrenderpipelinedescriptor/isalphatocoverageenabled.md) is [`true`](../Swift/true.md), an implementation-defined `coverageToMask` function uses the alpha channel fragment output from [`colorAttachments`](./mtlrenderpipelinedescriptor/colorattachments.md) to create an intermediate coverage mask, which sets a number of bits in its output proportionally to the value of the floating-point input. For example, if the input is `0.0f`, the function sets the output to `0x0`. If the input is `1.0f`, the function sets all output bits (in effect, `~0x0`). If the input is `0.5f`, the function sets half of the bits, according to the implementation, which often uses dither patterns.
 
 To determine a final coverage mask, the function performs a logical `AND` on the resulting coverage mask `alphaCoverageMask` with the masks from the rasterizer and fragment shader, as the following code shows:
 
@@ -60,140 +65,141 @@ finalCoverageMask = originalRasterizerCoverageMask
 ## Topics
 
 ### Identifying the render pipeline state object
-- [var label: String?](mtlrenderpipelinedescriptor/label.md)
+- [var label: String?](./mtlrenderpipelinedescriptor/label.md)
   A string that identifies the render pipeline descriptor.
 ### Specifying graphics functions and associated data
-- [var vertexFunction: (any MTLFunction)?](mtlrenderpipelinedescriptor/vertexfunction.md)
+- [var vertexFunction: (any MTLFunction)?](./mtlrenderpipelinedescriptor/vertexfunction.md)
   The vertex function the pipeline calls to process vertices.
-- [var fragmentFunction: (any MTLFunction)?](mtlrenderpipelinedescriptor/fragmentfunction.md)
+- [var fragmentFunction: (any MTLFunction)?](./mtlrenderpipelinedescriptor/fragmentfunction.md)
   The fragment function the pipeline calls to process fragments.
-- [var maxVertexCallStackDepth: Int](mtlrenderpipelinedescriptor/maxvertexcallstackdepth.md)
+- [var maxVertexCallStackDepth: Int](./mtlrenderpipelinedescriptor/maxvertexcallstackdepth.md)
   The maximum function call depth from the top-most vertex shader function.
-- [var maxFragmentCallStackDepth: Int](mtlrenderpipelinedescriptor/maxfragmentcallstackdepth.md)
+- [var maxFragmentCallStackDepth: Int](./mtlrenderpipelinedescriptor/maxfragmentcallstackdepth.md)
   The maximum function call depth from the top-most fragment shader function.
 ### Specifying buffer layouts and fetch behavior
-- [var vertexDescriptor: MTLVertexDescriptor?](mtlrenderpipelinedescriptor/vertexdescriptor.md)
+- [var vertexDescriptor: MTLVertexDescriptor?](./mtlrenderpipelinedescriptor/vertexdescriptor.md)
   The organization of vertex data in an attribute’s argument table.
 ### Specifying buffer mutability
-- [var vertexBuffers: MTLPipelineBufferDescriptorArray](mtlrenderpipelinedescriptor/vertexbuffers.md)
+- [var vertexBuffers: MTLPipelineBufferDescriptorArray](./mtlrenderpipelinedescriptor/vertexbuffers.md)
   An array that contains the buffer mutability options for a render pipeline’s vertex function.
-- [var fragmentBuffers: MTLPipelineBufferDescriptorArray](mtlrenderpipelinedescriptor/fragmentbuffers.md)
+- [var fragmentBuffers: MTLPipelineBufferDescriptorArray](./mtlrenderpipelinedescriptor/fragmentbuffers.md)
   An array that contains the buffer mutability options for a render pipeline’s fragment function.
 ### Specifying rendering pipeline state
-- [func reset()](mtlrenderpipelinedescriptor/reset.md)
+- [func reset()](./mtlrenderpipelinedescriptor/reset%28%29.md)
   Specifies the default rendering pipeline state values for the descriptor.
-- [var colorAttachments: MTLRenderPipelineColorAttachmentDescriptorArray](mtlrenderpipelinedescriptor/colorattachments.md)
+- [var colorAttachments: MTLRenderPipelineColorAttachmentDescriptorArray](./mtlrenderpipelinedescriptor/colorattachments.md)
   An array of attachments that store color data.
-- [var depthAttachmentPixelFormat: MTLPixelFormat](mtlrenderpipelinedescriptor/depthattachmentpixelformat.md)
+- [var depthAttachmentPixelFormat: MTLPixelFormat](./mtlrenderpipelinedescriptor/depthattachmentpixelformat.md)
   The pixel format of the attachment that stores depth data.
-- [var stencilAttachmentPixelFormat: MTLPixelFormat](mtlrenderpipelinedescriptor/stencilattachmentpixelformat.md)
+- [var stencilAttachmentPixelFormat: MTLPixelFormat](./mtlrenderpipelinedescriptor/stencilattachmentpixelformat.md)
   The pixel format of the attachment that stores stencil data.
 ### Specifying rasterization and visibility state
-- [var isAlphaToCoverageEnabled: Bool](mtlrenderpipelinedescriptor/isalphatocoverageenabled.md)
+- [var isAlphaToCoverageEnabled: Bool](./mtlrenderpipelinedescriptor/isalphatocoverageenabled.md)
   A Boolean value that indicates whether to read and use the alpha channel fragment output for color attachments to compute a sample coverage mask.
-- [var isAlphaToOneEnabled: Bool](mtlrenderpipelinedescriptor/isalphatooneenabled.md)
+- [var isAlphaToOneEnabled: Bool](./mtlrenderpipelinedescriptor/isalphatooneenabled.md)
   A Boolean value that indicates whether to force alpha channel values for color attachments to the largest representable value.
-- [var isRasterizationEnabled: Bool](mtlrenderpipelinedescriptor/israsterizationenabled.md)
+- [var isRasterizationEnabled: Bool](./mtlrenderpipelinedescriptor/israsterizationenabled.md)
   A Boolean value that determines whether the pipeline rasterizes primitives.
-- [var inputPrimitiveTopology: MTLPrimitiveTopologyClass](mtlrenderpipelinedescriptor/inputprimitivetopology.md)
+- [var inputPrimitiveTopology: MTLPrimitiveTopologyClass](./mtlrenderpipelinedescriptor/inputprimitivetopology.md)
   The type of primitive topology the pipeline renders.
-- [var rasterSampleCount: Int](mtlrenderpipelinedescriptor/rastersamplecount.md)
+- [var rasterSampleCount: Int](./mtlrenderpipelinedescriptor/rastersamplecount.md)
   The number of samples the pipeline applies for each fragment.
-- [enum MTLPrimitiveTopologyClass](mtlprimitivetopologyclass.md)
+- [enum MTLPrimitiveTopologyClass](./mtlprimitivetopologyclass.md)
   The primitive topologies available for rendering.
-- [var sampleCount: Int](mtlrenderpipelinedescriptor/samplecount.md)
+- [var sampleCount: Int](./mtlrenderpipelinedescriptor/samplecount.md)
   The number of samples the pipeline applies for each fragment.
 ### Specifying tessellation state
-- [var maxTessellationFactor: Int](mtlrenderpipelinedescriptor/maxtessellationfactor.md)
+- [var maxTessellationFactor: Int](./mtlrenderpipelinedescriptor/maxtessellationfactor.md)
   The maximum tessellation factor that the tessellator uses when tessellating patches.
-- [var isTessellationFactorScaleEnabled: Bool](mtlrenderpipelinedescriptor/istessellationfactorscaleenabled.md)
+- [var isTessellationFactorScaleEnabled: Bool](./mtlrenderpipelinedescriptor/istessellationfactorscaleenabled.md)
   A Boolean value that determines whether the pipeline scales the tessellation factor.
-- [var tessellationFactorFormat: MTLTessellationFactorFormat](mtlrenderpipelinedescriptor/tessellationfactorformat.md)
+- [var tessellationFactorFormat: MTLTessellationFactorFormat](./mtlrenderpipelinedescriptor/tessellationfactorformat.md)
   The format of the tessellation factors in the tessellation factor buffer.
-- [var tessellationControlPointIndexType: MTLTessellationControlPointIndexType](mtlrenderpipelinedescriptor/tessellationcontrolpointindextype.md)
+- [var tessellationControlPointIndexType: MTLTessellationControlPointIndexType](./mtlrenderpipelinedescriptor/tessellationcontrolpointindextype.md)
   The size of the control point indices in a control point index buffer.
-- [var tessellationFactorStepFunction: MTLTessellationFactorStepFunction](mtlrenderpipelinedescriptor/tessellationfactorstepfunction.md)
+- [var tessellationFactorStepFunction: MTLTessellationFactorStepFunction](./mtlrenderpipelinedescriptor/tessellationfactorstepfunction.md)
   The step function for determining the tessellation factors for a patch from the tessellation factor buffer.
-- [var tessellationOutputWindingOrder: MTLWinding](mtlrenderpipelinedescriptor/tessellationoutputwindingorder.md)
+- [var tessellationOutputWindingOrder: MTLWinding](./mtlrenderpipelinedescriptor/tessellationoutputwindingorder.md)
   The winding order of triangles from the tessellator.
-- [var tessellationPartitionMode: MTLTessellationPartitionMode](mtlrenderpipelinedescriptor/tessellationpartitionmode.md)
+- [var tessellationPartitionMode: MTLTessellationPartitionMode](./mtlrenderpipelinedescriptor/tessellationpartitionmode.md)
   The partitioning mode that the tessellator uses to derive the number and spacing of segments for subdividing a corresponding edge.
-- [enum MTLTessellationFactorFormat](mtltessellationfactorformat.md)
+- [enum MTLTessellationFactorFormat](./mtltessellationfactorformat.md)
   Options for specifying the format of the tessellation factors in a tessellation factor buffer.
-- [enum MTLTessellationControlPointIndexType](mtltessellationcontrolpointindextype.md)
+- [enum MTLTessellationControlPointIndexType](./mtltessellationcontrolpointindextype.md)
   Options for specifying the size of the control point indices in a control point index buffer.
-- [enum MTLTessellationFactorStepFunction](mtltessellationfactorstepfunction.md)
+- [enum MTLTessellationFactorStepFunction](./mtltessellationfactorstepfunction.md)
   Options for specifying the step function that determines the tessellation factors for a patch from the tessellation factor buffer.
-- [enum MTLTessellationPartitionMode](mtltessellationpartitionmode.md)
+- [enum MTLTessellationPartitionMode](./mtltessellationpartitionmode.md)
   Options for choosing the partition mode that the tessellator applies when deriving the number and spacing of segments for subdividing a corresponding edge.
 ### Specifying indirect command buffers usage
-- [var supportIndirectCommandBuffers: Bool](mtlrenderpipelinedescriptor/supportindirectcommandbuffers.md)
+- [var supportIndirectCommandBuffers: Bool](./mtlrenderpipelinedescriptor/supportindirectcommandbuffers.md)
   A Boolean value that determines whether you can encode commands into an indirect command buffer using the render pipeline.
 ### Specifying the maximum vertex amplification count
-- [var maxVertexAmplificationCount: Int](mtlrenderpipelinedescriptor/maxvertexamplificationcount.md)
+- [var maxVertexAmplificationCount: Int](./mtlrenderpipelinedescriptor/maxvertexamplificationcount.md)
   The maximum vertex amplification count you can set when encoding render commands.
 ### Specifying precompiled shader binaries
-- [var supportAddingVertexBinaryFunctions: Bool](mtlrenderpipelinedescriptor/supportaddingvertexbinaryfunctions.md)
+- [var supportAddingVertexBinaryFunctions: Bool](./mtlrenderpipelinedescriptor/supportaddingvertexbinaryfunctions.md)
   A Boolean value that indicates whether you can use the pipeline to create new pipelines by adding binary functions to the vertex shader’s callable functions list.
-- [var supportAddingFragmentBinaryFunctions: Bool](mtlrenderpipelinedescriptor/supportaddingfragmentbinaryfunctions.md)
+- [var supportAddingFragmentBinaryFunctions: Bool](./mtlrenderpipelinedescriptor/supportaddingfragmentbinaryfunctions.md)
   A Boolean value that indicates whether you can use the pipeline to create new pipelines by adding binary functions to the fragment shader’s callable functions list.
-- [var binaryArchives: [any MTLBinaryArchive]?](mtlrenderpipelinedescriptor/binaryarchives.md)
+- [var binaryArchives: [any MTLBinaryArchive]?](./mtlrenderpipelinedescriptor/binaryarchives.md)
   An array of binary archives to search for precompiled versions of the shader.
 ### Specifying callable functions for the pipeline
-- [var vertexLinkedFunctions: MTLLinkedFunctions!](mtlrenderpipelinedescriptor/vertexlinkedfunctions.md)
+- [var vertexLinkedFunctions: MTLLinkedFunctions!](./mtlrenderpipelinedescriptor/vertexlinkedfunctions.md)
   Functions that you can specify as function arguments for the vertex shader when encoding commands that use the pipeline.
-- [var fragmentLinkedFunctions: MTLLinkedFunctions!](mtlrenderpipelinedescriptor/fragmentlinkedfunctions.md)
+- [var fragmentLinkedFunctions: MTLLinkedFunctions!](./mtlrenderpipelinedescriptor/fragmentlinkedfunctions.md)
   Functions that you can specify as function arguments for the fragment shader when encoding commands that use the pipeline.
 ### Specifying shader validation
-- [var shaderValidation: MTLShaderValidation](mtlrenderpipelinedescriptor/shadervalidation.md)
+- [var shaderValidation: MTLShaderValidation](./mtlrenderpipelinedescriptor/shadervalidation.md)
   A value that enables or disables shader validation for the pipeline.
 ### Instance Properties
-- [var fragmentPreloadedLibraries: [any MTLDynamicLibrary]](mtlrenderpipelinedescriptor/fragmentpreloadedlibraries.md)
-- [var vertexPreloadedLibraries: [any MTLDynamicLibrary]](mtlrenderpipelinedescriptor/vertexpreloadedlibraries.md)
+- [var fragmentPreloadedLibraries: [any MTLDynamicLibrary]](./mtlrenderpipelinedescriptor/fragmentpreloadedlibraries.md)
+- [var vertexPreloadedLibraries: [any MTLDynamicLibrary]](./mtlrenderpipelinedescriptor/vertexpreloadedlibraries.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol MTLRenderPipelineState](mtlrenderpipelinestate.md)
+### Render pipeline states
+- [protocol MTLRenderPipelineState](./mtlrenderpipelinestate.md)
   An interface that represents a graphics pipeline configuration for a render pass, which the pass applies to the draw commands you encode.
-- [class MTL4RenderPipelineDescriptor](mtl4renderpipelinedescriptor.md)
+- [class MTL4RenderPipelineDescriptor](./mtl4renderpipelinedescriptor.md)
   Groups together properties to create a render pipeline state object.
-- [class MTLRenderPipelineFunctionsDescriptor](mtlrenderpipelinefunctionsdescriptor.md)
+- [class MTLRenderPipelineFunctionsDescriptor](./mtlrenderpipelinefunctionsdescriptor.md)
   A collection of functions for updating a render pipeline.
-- [class MTL4MeshRenderPipelineDescriptor](mtl4meshrenderpipelinedescriptor.md)
+- [class MTL4MeshRenderPipelineDescriptor](./mtl4meshrenderpipelinedescriptor.md)
   Groups together properties you use to create a mesh render pipeline state object.
-- [class MTLMeshRenderPipelineDescriptor](mtlmeshrenderpipelinedescriptor.md)
+- [class MTLMeshRenderPipelineDescriptor](./mtlmeshrenderpipelinedescriptor.md)
   An object that configures new render pipeline state objects for mesh shading.
-- [class MTLPipelineBufferDescriptor](mtlpipelinebufferdescriptor.md)
+- [class MTLPipelineBufferDescriptor](./mtlpipelinebufferdescriptor.md)
   The mutability options for a buffer that a render or compute pipeline uses.
-- [class MTLPipelineBufferDescriptorArray](mtlpipelinebufferdescriptorarray.md)
+- [class MTLPipelineBufferDescriptorArray](./mtlpipelinebufferdescriptorarray.md)
   An array of pipeline buffer descriptors.
-- [class MTL4RenderPipelineColorAttachmentDescriptor](mtl4renderpipelinecolorattachmentdescriptor.md)
-- [class MTLRenderPipelineColorAttachmentDescriptor](mtlrenderpipelinecolorattachmentdescriptor.md)
+- [class MTL4RenderPipelineColorAttachmentDescriptor](./mtl4renderpipelinecolorattachmentdescriptor.md)
+- [class MTLRenderPipelineColorAttachmentDescriptor](./mtlrenderpipelinecolorattachmentdescriptor.md)
   A color render target that specifies the color configuration and color operations for a render pipeline.
-- [class MTLRenderPipelineColorAttachmentDescriptorArray](mtlrenderpipelinecolorattachmentdescriptorarray.md)
+- [class MTLRenderPipelineColorAttachmentDescriptorArray](./mtlrenderpipelinecolorattachmentdescriptorarray.md)
   An array of render pipeline color attachment descriptor objects.
-- [class MTL4TileRenderPipelineDescriptor](mtl4tilerenderpipelinedescriptor.md)
+- [class MTL4TileRenderPipelineDescriptor](./mtl4tilerenderpipelinedescriptor.md)
   Groups together properties you use to create a tile render pipeline state object.
-- [class MTLTileRenderPipelineDescriptor](mtltilerenderpipelinedescriptor.md)
+- [class MTLTileRenderPipelineDescriptor](./mtltilerenderpipelinedescriptor.md)
   An object that configures new render pipeline state objects for tile shading.
-- [class MTLTileRenderPipelineColorAttachmentDescriptor](mtltilerenderpipelinecolorattachmentdescriptor.md)
+- [class MTLTileRenderPipelineColorAttachmentDescriptor](./mtltilerenderpipelinecolorattachmentdescriptor.md)
   A description of a tile-shading render pipeline’s color render target.
-- [struct MTLPipelineOption](mtlpipelineoption.md)
+- [struct MTLPipelineOption](./mtlpipelineoption.md)
   Options that determine how Metal prepares the pipeline.
-- [class MTL4RenderPipelineBinaryFunctionsDescriptor](mtl4renderpipelinebinaryfunctionsdescriptor.md)
+- [class MTL4RenderPipelineBinaryFunctionsDescriptor](./mtl4renderpipelinebinaryfunctionsdescriptor.md)
   Allows you to specify additional binary functions to link to each stage of a render pipeline.
 
 

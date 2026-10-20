@@ -1,7 +1,8 @@
 # ecdsaSignatureMessageX962SHA1
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 static let ecdsaSignatureMessageX962SHA1: SecKeyAlgorithm
+```
+
+```c
+extern SecKeyAlgorithm const kSecKeyAlgorithmECDSASignatureMessageX962SHA1;
 ```
 
 

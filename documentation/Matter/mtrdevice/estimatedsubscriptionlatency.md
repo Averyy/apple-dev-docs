@@ -1,7 +1,8 @@
 # estimatedSubscriptionLatency
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.6+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var estimatedSubscriptionLatency: NSNumber? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSNumber * estimatedSubscriptionLatency;
 ```
 
 

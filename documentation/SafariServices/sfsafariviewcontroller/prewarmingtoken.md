@@ -1,7 +1,8 @@
 # SFSafariViewController.PrewarmingToken
 
 **Framework**: Safari Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 15.0+
@@ -14,27 +15,32 @@
 class PrewarmingToken
 ```
 
+```objc
+@interface SFSafariViewControllerPrewarmingToken : NSObject
+```
+
 ## Topics
 
 ### Instance Methods
-- [func invalidate()](sfsafariviewcontroller/prewarmingtoken/invalidate.md)
+- [func invalidate()](./prewarmingtoken/invalidate%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [SFSafariViewController.ActivityButton](sfsafariviewcontroller/activitybutton.md)
-- [SFSafariViewController.DataStore](sfsafariviewcontroller/datastore.md)
+### Classes
+- [SFSafariViewController.ActivityButton](./activitybutton.md)
+- [SFSafariViewController.DataStore](./datastore.md)
 
 
 ---

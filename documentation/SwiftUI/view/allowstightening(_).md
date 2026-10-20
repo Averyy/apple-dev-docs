@@ -1,7 +1,8 @@
 # allowsTightening(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets whether text in this view can compress the space between characters when necessary to fit text in a line.
 
@@ -47,7 +48,7 @@ VStack {
 }
 ```
 
-![A screenshot showing the effect of enabling text tightening in a](/images/com.apple.SwiftUI/SwiftUI-view-allowsTightening@2x.png)
+![A screenshot showing the effect of enabling text tightening in a](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-view-allowsTightening@2x.png)
 
 ## Parameters
 
@@ -55,11 +56,12 @@ VStack {
 
 ## See Also
 
-- [func contentShape<S>(S, eoFill: Bool) -> some View](view/contentshape(_:eofill:).md)
+### Controlling hit testing
+- [func contentShape<S>(S, eoFill: Bool) -> some View](./contentshape%28_,eofill%29.md)
   Defines the content shape for hit testing.
-- [func contentShape<S>(ContentShapeKinds, S, eoFill: Bool) -> some View](view/contentshape(_:_:eofill:).md)
+- [func contentShape<S>(ContentShapeKinds, S, eoFill: Bool) -> some View](./contentshape%28_,_,eofill%29.md)
   Sets the content shape for this view.
-- [struct ContentShapeKinds](contentshapekinds.md)
+- [struct ContentShapeKinds](../contentshapekinds.md)
   A kind for the content shape of a view.
 
 

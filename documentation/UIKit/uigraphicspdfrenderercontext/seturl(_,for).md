@@ -1,7 +1,8 @@
 # setURL(_:for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a link to an external resource defined by a URL
 
@@ -18,13 +19,17 @@ Creates a link to an external resource defined by a URL
 func setURL(_ url: URL, for rect: CGRect)
 ```
 
+```objc
+- (void) setURL:(NSURL *) url forRect:(CGRect) rect;
+```
+
 #### Discussion
 
 Use this method to create links to external resources in the current page of a PDF. The URL is interpreted by the PDF viewer.
 
-> **Note**:  Specify the `rect` value in the PDF coordinate space, not the Core Graphics context coordinate space. This means that the origin is in the bottom-left rather than the top-left, and the y-axis increases in an upwards direction. Use the [`userSpaceToDeviceSpaceTransform`](https://developer.apple.com/documentation/coregraphics/cgcontext/userspacetodevicespacetransform) property on [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) to map between the two.
+> **Note**:  Specify the `rect` value in the PDF coordinate space, not the Core Graphics context coordinate space. This means that the origin is in the bottom-left rather than the top-left, and the y-axis increases in an upwards direction. Use the [`userSpaceToDeviceSpaceTransform`](../../CoreGraphics/cgcontext/userspacetodevicespacetransform.md) property on [`CGContext`](../../CoreGraphics/cgcontext.md) to map between the two.
 
-To create internal links within the current PDF document, use [`addDestination(withName:at:)`](uigraphicspdfrenderercontext/adddestination(withname:at:).md) and [`setDestinationWithName(_:for:)`](uigraphicspdfrenderercontext/setdestinationwithname(_:for:).md).
+To create internal links within the current PDF document, use [`addDestination(withName:at:)`](./adddestination%28withname,at%29.md) and [`setDestinationWithName(_:for:)`](./setdestinationwithname%28_,for%29.md).
 
 ## Parameters
 
@@ -33,9 +38,10 @@ To create internal links within the current PDF document, use [`addDestination(w
 
 ## See Also
 
-- [func addDestination(withName: String, at: CGPoint)](uigraphicspdfrenderercontext/adddestination(withname:at:).md)
+### Managing destinations
+- [func addDestination(withName: String, at: CGPoint)](./adddestination%28withname,at%29.md)
   Creates a named destination point in the current PDF page.
-- [func setDestinationWithName(String, for: CGRect)](uigraphicspdfrenderercontext/setdestinationwithname(_:for:).md)
+- [func setDestinationWithName(String, for: CGRect)](./setdestinationwithname%28_,for%29.md)
   Creates a link rectangle in the current page that jumps the PDF viewer to the named destination when clicked.
 
 

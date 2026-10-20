@@ -1,7 +1,8 @@
 # init(importing:)
 
 **Framework**: Core Transferable  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a transfer representation that’s imported by proxy through another transfer representation.
 

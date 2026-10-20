@@ -1,7 +1,8 @@
 # createWeightGradientMatrices(_:dataType:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func createWeightGradientMatrices(_ matricesOut: NSMutableArray, dataType: MPSDataType)
+```
+
+```objc
+- (void) createWeightGradientMatrices:(NSMutableArray<MPSMatrix *> *) matricesOut dataType:(MPSDataType) dataType;
 ```
 
 

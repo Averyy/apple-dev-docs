@@ -1,7 +1,8 @@
 # removeDevice(_:)
 
 **Framework**: Core Media I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a device from a provider.
 
@@ -15,15 +16,20 @@ Removes a device from a provider.
 func removeDevice(_ device: CMIOExtensionDevice) throws
 ```
 
+```objc
+- (BOOL) removeDevice:(CMIOExtensionDevice *) device error:(NSError **) outError;
+```
+
 ## Parameters
 
 - `device`: A device to remove from a provider.
 
 ## See Also
 
-- [var devices: [CMIOExtensionDevice]](cmioextensionprovider/devices.md)
+### Managing Devices
+- [var devices: [CMIOExtensionDevice]](./devices.md)
   An array of connected devices.
-- [func addDevice(CMIOExtensionDevice) throws](cmioextensionprovider/adddevice(_:).md)
+- [func addDevice(CMIOExtensionDevice) throws](./adddevice%28_%29.md)
   Adds a device to a provider.
 
 

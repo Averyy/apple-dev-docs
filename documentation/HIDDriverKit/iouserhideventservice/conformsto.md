@@ -1,17 +1,18 @@
 # conformsTo
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the service conforms to the specified HID usage and page information.
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool conformsTo(uint32_t usagePage, uint32_t usage);
 ```
 

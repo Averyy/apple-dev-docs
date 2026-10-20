@@ -1,7 +1,8 @@
 # FinancialConnectionUIExtensionProviding
 
 **Framework**: FinanceKitUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 17.0+
@@ -17,12 +18,12 @@ protocol FinancialConnectionUIExtensionProviding
 ## Topics
 
 ### Instance Methods
-- [func authorize(FinancialConnectionExtensionAuthorizationRequest)](financialconnectionuiextensionproviding/authorize(_:).md)
+- [func authorize(FinancialConnectionExtensionAuthorizationRequest)](./financialconnectionuiextensionproviding/authorize%28_%29.md)
 
 ## Relationships
 
 ### Inherited By
-- [FinancialConnectionUIExtension](financialconnectionuiextension.md)
+- [FinancialConnectionUIExtension](./financialconnectionuiextension.md)
 
 
 ---

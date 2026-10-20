@@ -1,17 +1,22 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the token field’s delegate.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 weak var delegate: (any NSTokenFieldDelegate)? { get set }
+```
+
+```objc
+@property (weak, nullable) id<NSTokenFieldDelegate> delegate;
 ```
 
 #### Return Value

@@ -1,21 +1,26 @@
 # UIForceTouchCapability.unknown
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The availability of 3D Touch is unknown.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case unknown
+```
+
+```c
+UIForceTouchCapabilityUnknown
 ```
 
 #### Discussion
@@ -24,9 +29,10 @@ A view has this trait after you create it but before you add it your app’s vie
 
 ## See Also
 
-- [UIForceTouchCapability.available](uiforcetouchcapability/available.md)
+### Availability options
+- [UIForceTouchCapability.available](./available.md)
   3D Touch is available on the device.
-- [UIForceTouchCapability.unavailable](uiforcetouchcapability/unavailable.md)
+- [UIForceTouchCapability.unavailable](./unavailable.md)
   3D Touch isn’t available on the device.
 
 

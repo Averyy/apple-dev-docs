@@ -1,14 +1,15 @@
 # vnode_ismonitored
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 int vnode_ismonitored(vnode_t vp);
 ```
 

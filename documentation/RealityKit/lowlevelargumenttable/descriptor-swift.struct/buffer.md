@@ -1,7 +1,8 @@
 # LowLevelArgumentTable.Descriptor.Buffer
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A buffer slot descriptor in an argument table.
 
@@ -20,25 +21,26 @@ struct Buffer
 ## Topics
 
 ### Creating a buffer descriptor
-- [init(size: Int)](lowlevelargumenttable/descriptor-swift.struct/buffer/init(size:).md)
+- [init(size: Int)](./buffer/init%28size%29.md)
   Creates a buffer slot descriptor with the given size.
-- [var size: Int](lowlevelargumenttable/descriptor-swift.struct/buffer/size.md)
+- [var size: Int](./buffer/size.md)
   The minimum size, in bytes, that a buffer slice must have to be bound to this slot.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var buffers: [LowLevelArgumentTable.Descriptor.Buffer]](lowlevelargumenttable/descriptor-swift.struct/buffers.md)
+### Specifying resources
+- [var buffers: [LowLevelArgumentTable.Descriptor.Buffer]](./buffers.md)
   The ordered list of buffer slots in this table.
-- [var textures: [LowLevelArgumentTable.Descriptor.Texture]](lowlevelargumenttable/descriptor-swift.struct/textures.md)
+- [var textures: [LowLevelArgumentTable.Descriptor.Texture]](./textures.md)
   The ordered list of texture slots in this table.
-- [LowLevelArgumentTable.Descriptor.Texture](lowlevelargumenttable/descriptor-swift.struct/texture.md)
+- [LowLevelArgumentTable.Descriptor.Texture](./texture.md)
   A texture slot descriptor in an argument table.
 
 

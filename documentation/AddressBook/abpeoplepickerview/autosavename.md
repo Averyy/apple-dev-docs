@@ -1,7 +1,8 @@
 # autosaveName
 
 **Framework**: Address Book  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name under which the column positions and the filter selection are saved.
 
@@ -12,6 +13,10 @@ The name under which the column positions and the filter selection are saved.
 
 ```swift
 var autosaveName: String! { get set }
+```
+
+```objc
+@property (nonatomic, retain) NSString * autosaveName;
 ```
 
 

@@ -1,7 +1,8 @@
 # exifCreationDate
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The `EXIF` creation date of the file.
 
@@ -18,13 +19,18 @@ The `EXIF` creation date of the file.
 var exifCreationDate: Date? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSDate * exifCreationDate;
+```
+
 ## See Also
 
-- [var orientation: ICEXIFOrientationType](iccamerafile/orientation.md)
+### Inspecting a File’s EXIF Data
+- [var orientation: ICEXIFOrientationType](./orientation.md)
   The orientation to use when downloading the image.
-- [enum ICEXIFOrientationType](icexiforientationtype.md)
+- [enum ICEXIFOrientationType](../icexiforientationtype.md)
   The file’s orientation type.
-- [var exifModificationDate: Date?](iccamerafile/exifmodificationdate.md)
+- [var exifModificationDate: Date?](./exifmodificationdate.md)
   The `EXIF` modification date of the file.
 
 

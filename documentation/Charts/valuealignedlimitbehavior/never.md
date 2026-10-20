@@ -1,7 +1,8 @@
 # never
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The never limit behavior.
 

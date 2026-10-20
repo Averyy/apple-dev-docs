@@ -1,14 +1,15 @@
 # kPCI2PCIBridgeControl
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kPCI2PCIBridgeControl = 0x3e
 ```
 

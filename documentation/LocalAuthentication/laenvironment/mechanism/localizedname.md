@@ -1,7 +1,8 @@
 # localizedName
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized name of the authentication mechanism, e.g. “Touch ID”, “Face ID” etc.
 
@@ -17,6 +18,10 @@ The localized name of the authentication mechanism, e.g. “Touch ID”, “Face
 
 ```swift
 var localizedName: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * localizedName;
 ```
 
 

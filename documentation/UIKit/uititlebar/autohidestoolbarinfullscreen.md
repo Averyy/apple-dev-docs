@@ -1,7 +1,8 @@
 # autoHidesToolbarInFullScreen
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the toolbar automatically hides in full-screen windows.
 
@@ -14,19 +15,24 @@ A Boolean value that determines whether the toolbar automatically hides in full-
 var autoHidesToolbarInFullScreen: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL autoHidesToolbarInFullScreen;
+```
+
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/swift/true) to automatically hide the toolbar when the window enters full-screen mode. While hidden, the user can view the toolbar and menu bar by moving the pointer to the top of the screen. Moving the pointer away from the top of the screen hides the toolbar and menu bar.
+Set this property to [`true`](../../Swift/true.md) to automatically hide the toolbar when the window enters full-screen mode. While hidden, the user can view the toolbar and menu bar by moving the pointer to the top of the screen. Moving the pointer away from the top of the screen hides the toolbar and menu bar.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var toolbar: NSToolbar?](uititlebar/toolbar.md)
+### Configuring the toolbar
+- [var toolbar: NSToolbar?](./toolbar.md)
   The toolbar displayed beneath or integrated with the title bar.
-- [var toolbarStyle: UITitlebarToolbarStyle](uititlebar/toolbarstyle.md)
+- [var toolbarStyle: UITitlebarToolbarStyle](./toolbarstyle.md)
   The style of the toolbar determining its appearance and location related to the title bar.
-- [enum UITitlebarToolbarStyle](uititlebartoolbarstyle.md)
+- [enum UITitlebarToolbarStyle](../uititlebartoolbarstyle.md)
   Styles that determine the toolbar’s appearance and location related to the title bar.
 
 

@@ -1,7 +1,8 @@
 # isSCOConnected()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determine if there is a SCO connection to the device
 
@@ -12,6 +13,10 @@ Determine if there is a SCO connection to the device
 
 ```swift
 func isSCOConnected() -> Bool
+```
+
+```objc
+- (BOOL) isSCOConnected;
 ```
 
 #### Return Value

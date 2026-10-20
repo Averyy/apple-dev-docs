@@ -1,7 +1,8 @@
 # init(frameWidth:frameHeight:numberOfInterpolatedFrames:)
 
 **Framework**: Video Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new low-latency frame interpolation configuration for frame-rate conversion.
 
@@ -19,6 +20,10 @@ Creates a new low-latency frame interpolation configuration for frame-rate conve
 init?(frameWidth: Int, frameHeight: Int, numberOfInterpolatedFrames: Int)
 ```
 
+```objc
+- (instancetype) initWithFrameWidth:(NSInteger) frameWidth frameHeight:(NSInteger) frameHeight numberOfInterpolatedFrames:(NSInteger) numberOfInterpolatedFrames;
+```
+
 #### Discussion
 
 The available interpolation points are the equal to the value of (2^x - 1), where x is equal to `numberOfInterpolatedFrames`. For example,
@@ -34,7 +39,8 @@ The available interpolation points are the equal to the value of (2^x - 1), wher
 
 ## See Also
 
-- [init?(frameWidth: Int, frameHeight: Int, spatialScaleFactor: Int)](vtlowlatencyframeinterpolationconfiguration/init(framewidth:frameheight:spatialscalefactor:).md)
+### Creating a frame interpolation configuration
+- [init?(frameWidth: Int, frameHeight: Int, spatialScaleFactor: Int)](./init%28framewidth,frameheight,spatialscalefactor%29.md)
   Creates a new low-latency frame interpolation configuration for spatial scaling and temporal scaling.
 
 

@@ -1,7 +1,8 @@
 # birthdateYear
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A property that defines the content in a text input area as the year component of a birthdate.
 
@@ -18,13 +19,18 @@ A property that defines the content in a text input area as the year component o
 static let birthdateYear: UITextContentType
 ```
 
+```c
+extern UITextContentType const UITextContentTypeBirthdateYear;
+```
+
 ## See Also
 
-- [static let birthdate: UITextContentType](uitextcontenttype/birthdate.md)
+### Getting birthday information
+- [static let birthdate: UITextContentType](./birthdate.md)
   A property that defines the content in a text input area as a date of birth.
-- [static let birthdateDay: UITextContentType](uitextcontenttype/birthdateday.md)
+- [static let birthdateDay: UITextContentType](./birthdateday.md)
   A property that defines the content in a text input area as the day component of a birthdate.
-- [static let birthdateMonth: UITextContentType](uitextcontenttype/birthdatemonth.md)
+- [static let birthdateMonth: UITextContentType](./birthdatemonth.md)
   A property that defines the content in a text input area as the month component of a birthdate.
 
 

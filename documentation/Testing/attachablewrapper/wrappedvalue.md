@@ -2,6 +2,7 @@
 
 **Framework**: Swift Testing  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The underlying value represented by this instance.

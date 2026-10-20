@@ -1,7 +1,8 @@
 # sourceText
 
 **Framework**: Translation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The plain text input to translate.
 
@@ -19,7 +20,8 @@ var sourceText: String
 
 ## See Also
 
-- [var attributedSourceText: AttributedString?](translationsession/request/attributedsourcetext.md)
+### Specifying text to translate
+- [var attributedSourceText: AttributedString?](./attributedsourcetext.md)
   The text to translate, including styling like bold text, italics, and hyperlink data for linking between data sources.
 
 

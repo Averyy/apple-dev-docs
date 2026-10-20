@@ -1,6 +1,8 @@
 # Training a Create ML Model to Classify Flowers
 
-**Framework**: Vision
+**Framework**: Vision  
+**Role**: Sample Code  
+**Download**: [TrainingACreateMLModelToClassifyFlowers.zip](https://docs-assets.developer.apple.com/published/9050e3bd4a2b/TrainingACreateMLModelToClassifyFlowers.zip)
 
 Train a flower classifier using Create ML in Swift Playgrounds, and apply the resulting model to real-time image classification using Vision.
 
@@ -14,9 +16,9 @@ Train a flower classifier using Create ML in Swift Playgrounds, and apply the re
 
 To classify images in real time, you need a classification model with the categories you’d like identified, and a way to capture images to feed to the classifier.
 
-![Block diagram showing how images used to train a Create ML model help classify images in a Vision app.](/images/Vision/VisionCreateML_2x.png)
+![Block diagram showing how images used to train a Create ML model help classify images in a Vision app.](https://developer.apple.com/tutorials/images/Vision/VisionCreateML_2x.png)
 
-This sample code project contains two components: a Create ML model you train in Swift Playgrounds, and the iOS app, FlowerShop, which you use to classify different flower types. This project uses the same code as the robot shop demo in the WWDC 2018 session [`Vision with Core ML`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2018/717/).
+This sample code project contains two components: a Create ML model you train in Swift Playgrounds, and the iOS app, FlowerShop, which you use to classify different flower types. This project uses the same code as the robot shop demo in the WWDC 2018 session [Vision with Core ML](https://developer.apple.com/videos/play/wwdc2018/717/).
 
 ##### Getting Started
 
@@ -47,11 +49,11 @@ If you’re using photos taken on an iOS device to train your model, you can use
 3. Place the training images you’d like to use into named folders (such as *Agapanthus*).
 4. Drag the set of folders into the Assistant Editor to perform image training.
 
-For more information about configuring the resultant model, as well as screenshots of the Create ML UI, see [`Creating an Image Classifier Model`](https://developer.apple.comhttps://developer.apple.com/documentation/createml/creating-an-image-classifier-model).
+For more information about configuring the resultant model, as well as screenshots of the Create ML UI, see [Creating an Image Classifier Model](../CreateML/creating-an-image-classifier-model.md).
 
 Create ML exports its trained results as a `.mlmodel` file, which you can import into your app in Xcode. After importing the model, you can examine  the prototypical image size by opening the model file in Xcode’s navigation menu. For example, a parameter such as “Color 299 x 299” indicates the size of the training image. You can also confirm the size of the model.
 
-##### Build an Ios App Around the Classifier
+##### Build an iOS App Around the Classifier
 
 The app leverages the trained model and uses Vision for both registration and classification:
 
@@ -63,7 +65,7 @@ The app leverages the trained model and uses Vision for both registration and cl
 
 Registration takes and aligns two images to determine the relative difference. Vision’s registration operation uses an inexpensive, fast algorithm that tells the app if the subject is still and stable. Theoretically, the app could make a classification request on every frame buffer, but classification is a computationally expensive operation—so attempting to classify every frame could result in delays and poor performance with the UI. Classify the scene in a frame only if the registration algorithm determines that the scene and camera are still, indicating the user’s intent to classify an object.
 
-The FlowerShop app uses [`VNSequenceRequestHandler`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnsequencerequesthandler) with [`VNTranslationalImageRegistrationRequest`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vntranslationalimageregistrationrequest) objects to compare consecutive frames, keeping a history of 15 frames. This amount of history amounts to half a second of capture at 30 frames per second and carries no special significance beyond empirical tuning. It takes the result of a request as `alignmentObservation.alignmentTransform` to determine if the scene is stable enough to perform classification. Check for scene stability by performing a request on the sequence request handler:
+The FlowerShop app uses [VNSequenceRequestHandler](./vnsequencerequesthandler.md) with [VNTranslationalImageRegistrationRequest](./vntranslationalimageregistrationrequest.md) objects to compare consecutive frames, keeping a history of 15 frames. This amount of history amounts to half a second of capture at 30 frames per second and carries no special significance beyond empirical tuning. It takes the result of a request as `alignmentObservation.alignmentTransform` to determine if the scene is stable enough to perform classification. Check for scene stability by performing a request on the sequence request handler:
 
 ```swift
 let registrationRequest = VNTranslationalImageRegistrationRequest(targetedCVPixelBuffer: pixelBuffer)
@@ -113,7 +115,7 @@ Classification contains a setup stage and a performance stage. The setup stage i
 
 The sample code sets up both a classification request and a barcode detection request. FlowerShop uses barcode identification to label an object—fertilizer—for which it has no training data. For example, the curator of a museum exhibit or owner of a flower shop can place the barcode beside or in place of an actual item, so that scanning the barcode classifies the item.
 
-By using it as a proxy for the actual item, the app can still provide a confident classification even if the user doesn’t scan the actual item. This kind of proxy works particularly well for items that Create ML may have trouble training through images, such as fertilizer, gasoline, transparent gases, and clear liquids. Set up this kind of barcode detection using a [`VNDetectBarcodesRequest`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vndetectbarcodesrequest) object:
+By using it as a proxy for the actual item, the app can still provide a confident classification even if the user doesn’t scan the actual item. This kind of proxy works particularly well for items that Create ML may have trouble training through images, such as fertilizer, gasoline, transparent gases, and clear liquids. Set up this kind of barcode detection using a [VNDetectBarcodesRequest](./vndetectbarcodesrequest.md) object:
 
 ```swift
 let barcodeDetection = VNDetectBarcodesRequest(completionHandler: { (request, error) in
@@ -137,14 +139,14 @@ guard let objectRecognition = createClassificationRequest(modelURL: modelURL) el
 self.analysisRequests.append(objectRecognition)
 ```
 
-The sample appends the normal model-based classification request to the same array. You can create both requests at once, but the sample code staggers the classification request to guard against failure to load the Core ML model. The classification request loads the Core ML classifier into a [`VNCoreMLRequest`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vncoremlrequest) object:
+The sample appends the normal model-based classification request to the same array. You can create both requests at once, but the sample code staggers the classification request to guard against failure to load the Core ML model. The classification request loads the Core ML classifier into a [VNCoreMLRequest](./vncoremlrequest.md) object:
 
 ```swift
 let objectClassifier = try VNCoreMLModel(for: MLModel(contentsOf: modelURL))
 let classificationRequest = VNCoreMLRequest(model: objectClassifier, completionHandler: { (request, error) in
 ```
 
-Defining the requests and completion handlers concludes the setup stage; the second stage performs identification in real time. The sample sends the stable frame to the classifier and tells Vision to perform classification by calling [`perform`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnimagerequesthandler/2880297-perform):
+Defining the requests and completion handlers concludes the setup stage; the second stage performs identification in real time. The sample sends the stable frame to the classifier and tells Vision to perform classification by calling [perform](./vnimagerequesthandler/api-2880297-perform.md):
 
 ```swift
 private func analyzeCurrentImage() {
@@ -199,15 +201,16 @@ self.currentlyAnalyzedPixelBuffer = nil
 
 ## See Also
 
-- [Classifying Images with Vision and Core ML](../coreml/classifying-images-with-vision-and-core-ml.md)
+### Machine learning image analysis
+- [Classifying Images with Vision and Core ML](../CoreML/classifying-images-with-vision-and-core-ml.md)
   Crop and scale photos using the Vision framework and classify them with a Core ML model.
-- [class VNCoreMLRequest](vncoremlrequest.md)
+- [class VNCoreMLRequest](./vncoremlrequest.md)
   An image-analysis request that uses a Core ML model to process images.
-- [class VNClassificationObservation](vnclassificationobservation.md)
+- [class VNClassificationObservation](./vnclassificationobservation.md)
   An object that represents classification information that an image-analysis request produces.
-- [class VNPixelBufferObservation](vnpixelbufferobservation.md)
+- [class VNPixelBufferObservation](./vnpixelbufferobservation.md)
   An object that represents an image that an image-analysis request produces.
-- [class VNCoreMLFeatureValueObservation](vncoremlfeaturevalueobservation.md)
+- [class VNCoreMLFeatureValueObservation](./vncoremlfeaturevalueobservation.md)
   An object that represents a collection of key-value information that a Core ML image-analysis request produces.
 
 

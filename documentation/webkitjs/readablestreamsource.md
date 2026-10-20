@@ -1,7 +1,8 @@
 # ReadableStreamSource
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,18 +10,18 @@
 
 ## Declaration
 
-```swift
+```
 interface ReadableStreamSource
 ```
 
 ## Topics
 
 ### Instance Properties
-- [controller](readablestreamsource/1777852-controller.md)
+- [controller](./readablestreamsource/api-1777852-controller.md)
 ### Instance Methods
-- [cancel](readablestreamsource/1777994-cancel.md)
-- [pull](readablestreamsource/2871333-pull.md)
-- [start](readablestreamsource/1777747-start.md)
+- [cancel](./readablestreamsource/api-1777994-cancel.md)
+- [pull](./readablestreamsource/api-2871333-pull.md)
+- [start](./readablestreamsource/api-1777747-start.md)
 
 
 ---

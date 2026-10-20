@@ -1,7 +1,8 @@
 # environment
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Snapshot of the system environment variables.
 

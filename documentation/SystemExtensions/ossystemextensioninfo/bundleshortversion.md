@@ -1,7 +1,8 @@
 # bundleShortVersion
 
 **Framework**: System Extensions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.1+
@@ -10,6 +11,10 @@
 
 ```swift
 var bundleShortVersion: String { get }
+```
+
+```objc
+@property (copy, readonly) NSString * bundleShortVersion;
 ```
 
 #### Discussion

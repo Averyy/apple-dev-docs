@@ -1,14 +1,15 @@
 # IOEthernetControllerAVBStateEvent
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.13.1+
 
 ## Declaration
 
-```swift
+```c
 typedef enum IOEthernetControllerAVBStateEvent : unsigned int {
     ...
 } IOEthernetControllerAVBStateEvent;
@@ -17,12 +18,12 @@ typedef enum IOEthernetControllerAVBStateEvent : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOEthernetControllerAVBStateEventDisable](ioethernetcontrolleravbstateevent/kioethernetcontrolleravbstateeventdisable.md)
-- [kIOEthernetControllerAVBStateEventEnable](ioethernetcontrolleravbstateevent/kioethernetcontrolleravbstateeventenable.md)
-- [kIOEthernetControllerAVBStateEventStartStreaming](ioethernetcontrolleravbstateevent/kioethernetcontrolleravbstateeventstartstreaming.md)
-- [kIOEthernetControllerAVBStateEventStartTimeSync](ioethernetcontrolleravbstateevent/kioethernetcontrolleravbstateeventstarttimesync.md)
-- [kIOEthernetControllerAVBStateEventStopStreaming](ioethernetcontrolleravbstateevent/kioethernetcontrolleravbstateeventstopstreaming.md)
-- [kIOEthernetControllerAVBStateEventStopTimeSync](ioethernetcontrolleravbstateevent/kioethernetcontrolleravbstateeventstoptimesync.md)
+- [kIOEthernetControllerAVBStateEventDisable](./ioethernetcontrolleravbstateevent/kioethernetcontrolleravbstateeventdisable.md)
+- [kIOEthernetControllerAVBStateEventEnable](./ioethernetcontrolleravbstateevent/kioethernetcontrolleravbstateeventenable.md)
+- [kIOEthernetControllerAVBStateEventStartStreaming](./ioethernetcontrolleravbstateevent/kioethernetcontrolleravbstateeventstartstreaming.md)
+- [kIOEthernetControllerAVBStateEventStartTimeSync](./ioethernetcontrolleravbstateevent/kioethernetcontrolleravbstateeventstarttimesync.md)
+- [kIOEthernetControllerAVBStateEventStopStreaming](./ioethernetcontrolleravbstateevent/kioethernetcontrolleravbstateeventstopstreaming.md)
+- [kIOEthernetControllerAVBStateEventStopTimeSync](./ioethernetcontrolleravbstateevent/kioethernetcontrolleravbstateeventstoptimesync.md)
 
 
 ---

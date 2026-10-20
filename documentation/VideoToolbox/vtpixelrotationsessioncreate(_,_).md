@@ -1,7 +1,8 @@
 # VTPixelRotationSessionCreate(_:_:)
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a session to rotate images between pixel buffers.
 
@@ -19,6 +20,10 @@ Creates a session to rotate images between pixel buffers.
 func VTPixelRotationSessionCreate(_ allocator: CFAllocator?, _ pixelRotationSessionOut: UnsafeMutablePointer<VTPixelRotationSession?>) -> OSStatus
 ```
 
+```c
+extern OSStatus VTPixelRotationSessionCreate(CFAllocatorRef allocator, VTPixelRotationSessionRef*pixelRotationSessionOut);
+```
+
 ## Parameters
 
 - `allocator`: An allocator for the session. Specify `NULL` to use the default allocator.
@@ -26,7 +31,8 @@ func VTPixelRotationSessionCreate(_ allocator: CFAllocator?, _ pixelRotationSess
 
 ## See Also
 
-- [func VTPixelRotationSessionInvalidate(VTPixelRotationSession)](vtpixelrotationsessioninvalidate(_:).md)
+### Managing a Session
+- [func VTPixelRotationSessionInvalidate(VTPixelRotationSession)](./vtpixelrotationsessioninvalidate%28_%29.md)
   Tears down a pixel rotation session.
 
 

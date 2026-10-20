@@ -1,7 +1,8 @@
 # showWhileTracking
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies whether the insertion indicator shows during a tracking loop.
 
@@ -14,17 +15,22 @@ Specifies whether the insertion indicator shows during a tracking loop.
 static var showWhileTracking: NSTextInsertionIndicator.AutomaticModeOptions { get }
 ```
 
+```c
+NSTextInsertionIndicatorAutomaticModeOptionsShowWhileTracking
+```
+
 ## Mentions
 
-- [Adopting the system text cursor in custom text views](adopting-the-system-text-cursor-in-custom-text-views.md)
+- [Adopting the system text cursor in custom text views](../../adopting-the-system-text-cursor-in-custom-text-views.md)
 
 #### Discussion
 
-When set, the insertion indicator hides during an [`NSEventTrackingRunLoopMode`](nseventtrackingrunloopmode.md) such as while actively scrolling a view.
+When set, the insertion indicator hides during an [`NSEventTrackingRunLoopMode`](../../nseventtrackingrunloopmode.md) such as while actively scrolling a view.
 
 ## See Also
 
-- [static var showEffectsView: NSTextInsertionIndicator.AutomaticModeOptions](nstextinsertionindicator/automaticmodeoptions-swift.struct/showeffectsview.md)
+### Configuring automatic mode options
+- [static var showEffectsView: NSTextInsertionIndicator.AutomaticModeOptions](./showeffectsview.md)
   Specifies whether a trailing glow displays during dictation.
 
 

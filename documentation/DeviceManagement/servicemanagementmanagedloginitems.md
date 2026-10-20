@@ -1,7 +1,8 @@
 # ServiceManagementManagedLoginItems
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 This payload that configures managed login items, which auto-enables and auto-allows matched items.
 
@@ -10,7 +11,7 @@ This payload that configures managed login items, which auto-enables and auto-al
 
 ## Declaration
 
-```swift
+```
 object ServiceManagementManagedLoginItems
 ```
 
@@ -18,7 +19,7 @@ object ServiceManagementManagedLoginItems
 
 Specify `com.apple.servicemanagement` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.servicemanagement` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -108,7 +109,7 @@ Specify `com.apple.servicemanagement` as the payload type.
 ## Topics
 
 ### Objects
-- [object ServiceManagementManagedLoginItems.Rule](servicemanagementmanagedloginitems/rule.md)
+- [object ServiceManagementManagedLoginItems.Rule](./servicemanagementmanagedloginitems/rule.md)
   A dictionary that configures a service management rule.
 
 ## Properties
@@ -117,13 +118,14 @@ Specify `com.apple.servicemanagement` as the payload type.
 
 ## See Also
 
-- [object LoginItemsManagedItems](loginitemsmanageditems.md)
+### Login
+- [object LoginItemsManagedItems](./loginitemsmanageditems.md)
   The payload that configures a device’s login items.
-- [object LoginWindowLoginItems](loginwindowloginitems.md)
+- [object LoginWindowLoginItems](./loginwindowloginitems.md)
   The payload that configures login behavior.
-- [object LoginWindow](loginwindow.md)
+- [object LoginWindow](./loginwindow.md)
   The payload that configures Login Window behavior.
-- [object LoginWindowScripts](loginwindowscripts.md)
+- [object LoginWindowScripts](./loginwindowscripts.md)
   The payload that configures scripts to run at login and logout.
 
 

@@ -1,7 +1,8 @@
 # blendedTranslation
 
 **Framework**: hvf  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 After rendering, the blended translation applied to the part
 

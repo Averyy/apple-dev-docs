@@ -1,7 +1,8 @@
 # showsContentTypes
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether or not to show a popup list for selecting the type of the saved file.
 
@@ -12,6 +13,10 @@ Whether or not to show a popup list for selecting the type of the saved file.
 
 ```swift
 var showsContentTypes: Bool { get set }
+```
+
+```objc
+@property BOOL showsContentTypes;
 ```
 
 #### Discussion

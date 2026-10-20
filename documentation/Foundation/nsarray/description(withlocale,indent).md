@@ -1,7 +1,8 @@
 # description(withLocale:indent:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a string that represents the contents of the array, formatted as a property list.
 
@@ -20,18 +21,22 @@ Returns a string that represents the contents of the array, formatted as a prope
 func description(withLocale locale: Any?, indent level: Int) -> String
 ```
 
+```objc
+- (NSString *) descriptionWithLocale:(id) locale indent:(NSUInteger) level;
+```
+
 #### Return Value
 
 A string that represents the contents of the array, formatted as a property list.
 
 #### Discussion
 
-The returned `NSString` object contains the string representations of each of the array’s elements, in order, from first to last. To obtain the string representation of a given element, [`description(withLocale:indent:)`](nsarray/description(withlocale:indent:).md) proceeds as follows:
+The returned `NSString` object contains the string representations of each of the array’s elements, in order, from first to last. To obtain the string representation of a given element, [`description(withLocale:indent:)`](./description%28withlocale,indent%29.md) proceeds as follows:
 
 - If the element is an `NSString` object, it is used as is.
-- If the element responds to [`description(withLocale:indent:)`](nsarray/description(withlocale:indent:).md), that method is invoked to obtain the element’s string representation.
-- If the element responds to [`description(withLocale:)`](nsarray/description(withlocale:).md), that method is invoked to obtain the element’s string representation.
-- If none of the above conditions is met, the element’s string representation is obtained by invoking its [`description`](nsarray/description.md) method.
+- If the element responds to [`description(withLocale:indent:)`](./description%28withlocale,indent%29.md), that method is invoked to obtain the element’s string representation.
+- If the element responds to [`description(withLocale:)`](./description%28withlocale%29.md), that method is invoked to obtain the element’s string representation.
+- If none of the above conditions is met, the element’s string representation is obtained by invoking its [`description`](./description.md) method.
 
 ## Parameters
 
@@ -40,9 +45,10 @@ The returned `NSString` object contains the string representations of each of th
 
 ## See Also
 
-- [var description: String](nsarray/description.md)
+### Creating a Description
+- [var description: String](./description.md)
   A string that represents the contents of the array, formatted as a property list.
-- [func description(withLocale: Any?) -> String](nsarray/description(withlocale:).md)
+- [func description(withLocale: Any?) -> String](./description%28withlocale%29.md)
   Returns a string that represents the contents of the array, formatted as a property list.
 
 

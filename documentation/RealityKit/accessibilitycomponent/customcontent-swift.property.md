@@ -1,7 +1,8 @@
 # customContent
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of custom content objects that deliver accessibility information.
 
@@ -11,7 +12,7 @@ An array of custom content objects that deliver accessibility information.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,7 +26,8 @@ Use the Custom Content API to leverage assistive technologies to deliver complex
 
 ## See Also
 
-- [var customActions: [LocalizedStringResource]](accessibilitycomponent/customactions.md)
+### Specifying custom data
+- [var customActions: [LocalizedStringResource]](./customactions.md)
   An array of custom actions supported by the entity, identified by their localized string key.
 
 

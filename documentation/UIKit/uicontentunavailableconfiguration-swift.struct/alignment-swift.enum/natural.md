@@ -1,7 +1,8 @@
 # UIContentUnavailableConfiguration.Alignment.natural
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default alignment for the current locale.
 
@@ -10,7 +11,7 @@ The default alignment for the current locale.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

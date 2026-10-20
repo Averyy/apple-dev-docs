@@ -1,7 +1,8 @@
 # personNameComponent
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for accessing a person name component attribute.
 
@@ -22,7 +23,8 @@ let personNameComponent: AttributeScopes.FoundationAttributes.PersonNameComponen
 
 ## See Also
 
-- [AttributeScopes.FoundationAttributes.PersonNameComponentAttribute](attributescopes/foundationattributes/personnamecomponentattribute.md)
+### Using person name component attributes
+- [AttributeScopes.FoundationAttributes.PersonNameComponentAttribute](./personnamecomponentattribute.md)
   A type for using a person name component as an attribute.
 
 

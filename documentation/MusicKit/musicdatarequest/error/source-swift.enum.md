@@ -1,7 +1,8 @@
 # MusicDataRequest.Error.Source
 
 **Framework**: MusicKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A representation of the source of an error from Apple Music API.
 
@@ -23,18 +24,18 @@ enum Source
 ## Topics
 
 ### Enumeration Cases
-- [MusicDataRequest.Error.Source.parameter(_:)](musicdatarequest/error/source-swift.enum/parameter(_:).md)
+- [MusicDataRequest.Error.Source.parameter(_:)](./source-swift.enum/parameter%28_%29.md)
   The URI query parameter that causes the error.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

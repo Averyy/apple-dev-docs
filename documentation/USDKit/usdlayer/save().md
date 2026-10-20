@@ -1,7 +1,8 @@
 # save()
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Saves the layer to its source if it has unsaved changes.
 
@@ -21,14 +22,15 @@ func save() throws
 
 #### Discussion
 
-> **Note**: An error if the layer cannot be saved.
+> **Throws**: An error if the layer cannot be saved.
 
 ## See Also
 
-- [func reload() throws](usdlayer/reload.md)
+### Saving and reloading
+- [func reload() throws](./reload%28%29.md)
   Reloads the layer from its source, discarding any unsaved changes.
-- [func clear()](usdlayer/clear.md)
-  Removes all in-memory content from the layer. The file on disk is unaffected until [`save()`](usdlayer/save().md) is called.
+- [func clear()](./clear%28%29.md)
+  Removes all in-memory content from the layer. The file on disk is unaffected until [`save()`](./save%28%29.md) is called.
 
 
 ---

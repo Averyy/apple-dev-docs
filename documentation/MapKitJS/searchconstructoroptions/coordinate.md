@@ -1,7 +1,8 @@
 # coordinate
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 A map coordinate that provides a hint for the geographic area to search.
 
@@ -10,7 +11,7 @@ A map coordinate that provides a hint for the geographic area to search.
 
 ## Declaration
 
-```swift
+```
 coordinate?: CoordinateData;
 ```
 
@@ -24,11 +25,12 @@ This property supplies coordinates as a reference for a search.
 
 ## See Also
 
-- [getsUserLocation](serviceconstructoroptions/getsuserlocation.md)
+### Search Initialization
+- [getsUserLocation](../serviceconstructoroptions/getsuserlocation.md)
   A Boolean value that indicates whether to limit the results to the user’s location, according to the web browser.
-- [language](serviceconstructoroptions/language.md)
+- [language](../serviceconstructoroptions/language.md)
   A language identifier that determines the language for the service results text.
-- [region](searchconstructoroptions/region.md)
+- [region](./region.md)
   A map region that provides a hint for the geographic area to search.
 
 

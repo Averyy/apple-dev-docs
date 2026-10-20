@@ -1,14 +1,15 @@
 # Apple Pay JS change log
 
-**Framework**: Apple Pay on the Web
+**Framework**: Apple Pay on the Web  
+**Role**: Article
 
 Learn about new features and updates in the Apple Pay JS SDK.
 
 #### Overview
 
-With the Apple Pay JS SDK, you can accept Apple Pay payments from customers on your website. Use this changelog to learn about feature updates, deprecations, and removals. You can learn more about Apple Pay JS version numbers and how to automatically link the latest available version in [`Loading the latest version of the Apple Pay JS SDK`](loading-the-latest-version-of-apple-pay-js.md).
+With the Apple Pay JS SDK, you can accept Apple Pay payments from customers on your website. Use this changelog to learn about feature updates, deprecations, and removals. You can learn more about Apple Pay JS version numbers and how to automatically link the latest available version in [Loading the latest version of the Apple Pay JS SDK](./loading-the-latest-version-of-apple-pay-js.md).
 
-#### 138
+#### 1.3.8
 
 **Fixed**
 
@@ -25,10 +26,14 @@ With the Apple Pay JS SDK, you can accept Apple Pay payments from customers on y
 <script src="https://applepay.cdn-apple.com/jsapi/v1.3.8/apple-pay-sdk.js" integrity="sha384-u/9mOkmShCO0v+dqCAZFhiutJuORfzvuyM5i+676iy7mLSWS6rlllHrIt15f/mqH" crossorigin="anonymous"></script>
 ```
 
-- Added the URL for the Apple Pay JS SDK version 1.3.8: - `https://applepay.cdn-apple.com/jsapi/v1.3.8/apple-pay-sdk.js`
-- Added the hash for the Apple Pay JS SDK version 1.3.8: - `sha384-u/9mOkmShCO0v+dqCAZFhiutJuORfzvuyM5i+676iy7mLSWS6rlllHrIt15f/mqH`
+- Added the URL for the Apple Pay JS SDK version 1.3.8:
 
-#### 137
+  - `https://applepay.cdn-apple.com/jsapi/v1.3.8/apple-pay-sdk.js`
+- Added the hash for the Apple Pay JS SDK version 1.3.8:
+
+  - `sha384-u/9mOkmShCO0v+dqCAZFhiutJuORfzvuyM5i+676iy7mLSWS6rlllHrIt15f/mqH`
+
+#### 1.3.7
 
 **Fixed**
 
@@ -46,10 +51,14 @@ With the Apple Pay JS SDK, you can accept Apple Pay payments from customers on y
 <script src="https://applepay.cdn-apple.com/jsapi/v1.3.7/apple-pay-sdk.js" integrity="sha384-m79g5rSF+8ObiCeY5RGEXjDpxURj/6A4rz0xXbEY/UEzLITgAWZ0+x3gcYjVEuVe" crossorigin="anonymous"></script>
 ```
 
-- Added the URL for the Apple Pay JS SDK version 1.3.7: - `https://applepay.cdn-apple.com/jsapi/v1.3.7/apple-pay-sdk.js`
-- Added the hash for the Apple Pay JS SDK version 1.3.7: - `sha384-m79g5rSF+8ObiCeY5RGEXjDpxURj/6A4rz0xXbEY/UEzLITgAWZ0+x3gcYjVEuVe`
+- Added the URL for the Apple Pay JS SDK version 1.3.7:
 
-#### 136
+  - `https://applepay.cdn-apple.com/jsapi/v1.3.7/apple-pay-sdk.js`
+- Added the hash for the Apple Pay JS SDK version 1.3.7:
+
+  - `sha384-m79g5rSF+8ObiCeY5RGEXjDpxURj/6A4rz0xXbEY/UEzLITgAWZ0+x3gcYjVEuVe`
+
+#### 1.3.6
 
 **Fixed**
 
@@ -65,10 +74,14 @@ With the Apple Pay JS SDK, you can accept Apple Pay payments from customers on y
 <script src="https://applepay.cdn-apple.com/jsapi/v1.3.6/apple-pay-sdk.js" integrity="sha384-7KJIkGT+8p0K2rhsEQcz7zZ+nYUFUbN573ZKSgwp9YKN7uUC+h5TAhEIdOAZgo6R" crossorigin="anonymous"></script>
 ```
 
-- Added the URL for the Apple Pay JS SDK version 1.3.6: - `https://applepay.cdn-apple.com/jsapi/v1.3.6/apple-pay-sdk.js`
-- Added the hash for the Apple Pay JS SDK version 1.3.6: - `sha384-7KJIkGT+8p0K2rhsEQcz7zZ+nYUFUbN573ZKSgwp9YKN7uUC+h5TAhEIdOAZgo6R`
+- Added the URL for the Apple Pay JS SDK version 1.3.6:
 
-#### 135
+  - `https://applepay.cdn-apple.com/jsapi/v1.3.6/apple-pay-sdk.js`
+- Added the hash for the Apple Pay JS SDK version 1.3.6:
+
+  - `sha384-7KJIkGT+8p0K2rhsEQcz7zZ+nYUFUbN573ZKSgwp9YKN7uUC+h5TAhEIdOAZgo6R`
+
+#### 1.3.5
 
 **Fixed**
 
@@ -83,10 +96,14 @@ With the Apple Pay JS SDK, you can accept Apple Pay payments from customers on y
 <script src="https://applepay.cdn-apple.com/jsapi/v1.3.5/apple-pay-sdk.js" integrity="sha384-PXB7Px9JgKaXn/a7SomvCNcHbTae7QLO5r9Icn2tfMy2SRslUQUeNZGUIYgKCRux" crossorigin="anonymous"></script>
 ```
 
-- Added the URL for the Apple Pay JS SDK version 1.3.5: - `https://applepay.cdn-apple.com/jsapi/v1.3.5/apple-pay-sdk.js`
-- Added the hash for the Apple Pay JS SDK version 1.3.5: - `sha384-PXB7Px9JgKaXn/a7SomvCNcHbTae7QLO5r9Icn2tfMy2SRslUQUeNZGUIYgKCRux`
+- Added the URL for the Apple Pay JS SDK version 1.3.5:
 
-#### 134
+  - `https://applepay.cdn-apple.com/jsapi/v1.3.5/apple-pay-sdk.js`
+- Added the hash for the Apple Pay JS SDK version 1.3.5:
+
+  - `sha384-PXB7Px9JgKaXn/a7SomvCNcHbTae7QLO5r9Icn2tfMy2SRslUQUeNZGUIYgKCRux`
+
+#### 1.3.4
 
 **Fixed**
 
@@ -101,10 +118,14 @@ With the Apple Pay JS SDK, you can accept Apple Pay payments from customers on y
 <script src="https://applepay.cdn-apple.com/jsapi/v1.3.4/apple-pay-sdk.js" integrity="sha384-EkOwSYjCfsPDaNshCOrDCVP+66slBQUaEZtukKqIp2ew8lWUsPaKO/JJGxGays+y" crossorigin="anonymous"></script>
 ```
 
-- Added the URL for the Apple Pay JS SDK version 1.3.4: - `https://applepay.cdn-apple.com/jsapi/v1.3.4/apple-pay-sdk.js`
-- Added the hash for the Apple Pay JS SDK version 1.3.4: - `sha384-EkOwSYjCfsPDaNshCOrDCVP+66slBQUaEZtukKqIp2ew8lWUsPaKO/JJGxGays+y`
+- Added the URL for the Apple Pay JS SDK version 1.3.4:
 
-#### 133
+  - `https://applepay.cdn-apple.com/jsapi/v1.3.4/apple-pay-sdk.js`
+- Added the hash for the Apple Pay JS SDK version 1.3.4:
+
+  - `sha384-EkOwSYjCfsPDaNshCOrDCVP+66slBQUaEZtukKqIp2ew8lWUsPaKO/JJGxGays+y`
+
+#### 1.3.3
 
 **Fixed**
 
@@ -120,10 +141,14 @@ With the Apple Pay JS SDK, you can accept Apple Pay payments from customers on y
 <script src="https://applepay.cdn-apple.com/jsapi/v1.3.3/apple-pay-sdk.js" integrity="sha384-SmrWHrJWbmqUdhs1oyfLOcLtZZZAd9vm5D0NUvBlI4OhI2BjxZyxtcSfujdb885p" crossorigin="anonymous"></script>
 ```
 
-- Added the URL for the Apple Pay JS SDK version 1.3.3: - `https://applepay.cdn-apple.com/jsapi/v1.3.3/apple-pay-sdk.js`
-- Added the hash for the Apple Pay JS SDK version 1.3.3: - `sha384-SmrWHrJWbmqUdhs1oyfLOcLtZZZAd9vm5D0NUvBlI4OhI2BjxZyxtcSfujdb885p`
+- Added the URL for the Apple Pay JS SDK version 1.3.3:
 
-#### 132
+  - `https://applepay.cdn-apple.com/jsapi/v1.3.3/apple-pay-sdk.js`
+- Added the hash for the Apple Pay JS SDK version 1.3.3:
+
+  - `sha384-SmrWHrJWbmqUdhs1oyfLOcLtZZZAd9vm5D0NUvBlI4OhI2BjxZyxtcSfujdb885p`
+
+#### 1.3.2
 
 **Fixed**
 
@@ -139,14 +164,18 @@ With the Apple Pay JS SDK, you can accept Apple Pay payments from customers on y
 <script src="https://applepay.cdn-apple.com/jsapi/v1.3.2/apple-pay-sdk.js" integrity="sha384-DZRWMZLyVXr+7shJfal8pIG2v4KisLoSWFjZQMUv0+GWaCwoa82qeHsWrbBIUDPU" crossorigin="anonymous"></script>
 ```
 
-- Added the URL for the Apple Pay JS SDK version 1.3.2: - `https://applepay.cdn-apple.com/jsapi/v1.3.2/apple-pay-sdk.js`
-- Added the hash for the Apple Pay JS SDK version 1.3.2: - `sha384-DZRWMZLyVXr+7shJfal8pIG2v4KisLoSWFjZQMUv0+GWaCwoa82qeHsWrbBIUDP`
+- Added the URL for the Apple Pay JS SDK version 1.3.2:
 
-#### 131
+  - `https://applepay.cdn-apple.com/jsapi/v1.3.2/apple-pay-sdk.js`
+- Added the hash for the Apple Pay JS SDK version 1.3.2:
+
+  - `sha384-DZRWMZLyVXr+7shJfal8pIG2v4KisLoSWFjZQMUv0+GWaCwoa82qeHsWrbBIUDP`
+
+#### 1.3.1
 
 **Fixed**
 
-- Fixed the [`oncancel`](applepaysession/oncancel.md) callback that wasn’t triggered when closing a modal before a scan.
+- Fixed the [`oncancel`](./applepaysession/oncancel.md) callback that wasn’t triggered when closing a modal before a scan.
 
 **Added**
 
@@ -157,8 +186,12 @@ With the Apple Pay JS SDK, you can accept Apple Pay payments from customers on y
 
 ```
 
-- Added the URL for the Apple Pay JS SDK version 1.3.1: - `https://applepay.cdn-apple.com/jsapi/v1.3.1/apple-pay-sdk.js`
-- Added the hash for the Apple Pay JS SDK version 1.3.1: - `sha384-kVWHV5PiZFlm9mRpZgyyprD3/PPkKg9gZ7z9TCHnvEkrYmFg/7nfpvTztecxMZvw`
+- Added the URL for the Apple Pay JS SDK version 1.3.1:
+
+  - `https://applepay.cdn-apple.com/jsapi/v1.3.1/apple-pay-sdk.js`
+- Added the hash for the Apple Pay JS SDK version 1.3.1:
+
+  - `sha384-kVWHV5PiZFlm9mRpZgyyprD3/PPkKg9gZ7z9TCHnvEkrYmFg/7nfpvTztecxMZvw`
 
 
 ---

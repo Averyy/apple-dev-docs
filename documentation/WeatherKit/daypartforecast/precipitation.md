@@ -1,7 +1,8 @@
 # precipitation
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The description of precipitation for the day part.
 

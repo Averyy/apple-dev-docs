@@ -1,7 +1,8 @@
 # setColorByTemperature(_:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the light’s color based on a black-body temperature.
 
@@ -17,6 +18,10 @@ Sets the light’s color based on a black-body temperature.
 
 ```swift
 func setColorByTemperature(_ temperature: Float)
+```
+
+```objc
+- (void) setColorByTemperature:(float) temperature;
 ```
 
 #### Discussion
@@ -36,9 +41,10 @@ Real-world light sources often measure color of illumination based on a black-bo
 
 ## See Also
 
-- [var color: CGColor?](mdlphysicallyplausiblelight/color.md)
+### Managing Light Color and Intensity
+- [var color: CGColor?](./color.md)
   The color of the light source.
-- [var lumens: Float](mdlphysicallyplausiblelight/lumens.md)
+- [var lumens: Float](./lumens.md)
   The total visible intensity of the light source, in lumens.
 
 

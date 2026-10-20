@@ -1,9 +1,10 @@
 # CodeDirectoryHash.OutType
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
-The type of this constraint: [`CodeDirectoryHash`](codedirectoryhash.md)
+The type of this constraint: [`CodeDirectoryHash`](../codedirectoryhash.md)
 
 **Availability**:
 - iOS 17.4+

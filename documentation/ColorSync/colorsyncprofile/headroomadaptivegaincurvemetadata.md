@@ -1,7 +1,8 @@
 # headroomAdaptiveGainCurveMetadata
 
 **Framework**: ColorSync  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw Headroom Adaptive Gain Curve data embedded in this profile, or `nil` if it carries no HAGC tag.
 
@@ -22,15 +23,16 @@ var headroomAdaptiveGainCurveMetadata: Data? { get }
 
 ## Mentions
 
-- [Authoring Headroom Adaptive Gain Curve metadata](authoring-headroom-adaptive-gain-curve-metadata.md)
+- [Authoring Headroom Adaptive Gain Curve metadata](../authoring-headroom-adaptive-gain-curve-metadata.md)
 
 #### Discussion
 
-This is equivalent to the serialized SMPTE ST 2094-50. Embed it in another profile with [`adding(headroomAdaptiveGainCurveMetadata:options:)`](colorsyncprofile/adding(headroomadaptivegaincurvemetadata:options:).md), or read the decoded form from [`headroomAdaptiveGainCurve`](colorsyncprofile/headroomadaptivegaincurve-swift.property.md).
+This is equivalent to the serialized SMPTE ST 2094-50. Embed it in another profile with [`adding(headroomAdaptiveGainCurveMetadata:options:)`](./adding%28headroomadaptivegaincurvemetadata,options%29.md), or read the decoded form from [`headroomAdaptiveGainCurve`](./headroomadaptivegaincurve-swift.property.md).
 
 ## See Also
 
-- [var headroomAdaptiveGainCurve: ColorSyncProfile.HeadroomAdaptiveGainCurve?](colorsyncprofile/headroomadaptivegaincurve-swift.property.md)
+### Reading a curve in Swift
+- [var headroomAdaptiveGainCurve: ColorSyncProfile.HeadroomAdaptiveGainCurve?](./headroomadaptivegaincurve-swift.property.md)
   The Headroom Adaptive Gain Curve embedded in this profile, or `nil` if it carries no HAGC tag.
 
 

@@ -1,18 +1,19 @@
 # init(rawValue:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a metadata key with the specified raw value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -26,7 +27,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](avmetadatakey/init(_:).md)
+### Initializers
+- [init(String)](./init%28_%29.md)
   Creates a metadata key.
 
 

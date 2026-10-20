@@ -1,18 +1,19 @@
 # CFTimeZoneCreateWithTimeIntervalFromGMT(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a time zone object for the specified time interval offset from Greenwich Mean Time (GMT).
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Returns a time zone object for the specified time interval offset from Greenwich
 func CFTimeZoneCreateWithTimeIntervalFromGMT(_ allocator: CFAllocator!, _ ti: CFTimeInterval) -> CFTimeZone!
 ```
 
+```c
+extern CFTimeZoneRefCFTimeZoneCreateWithTimeIntervalFromGMT(CFAllocatorRef allocator, CFTimeInterval ti);
+```
+
 #### Return Value
 
-A new time zone whose offset from GMT is given by the interval `ti`. The name of the new time zone is GMT +/- the offset, in hours and minutes. Time zones created with this function never have daylight savings, and the offset is constant no matter what the date. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A new time zone whose offset from GMT is given by the interval `ti`. The name of the new time zone is GMT +/- the offset, in hours and minutes. Time zones created with this function never have daylight savings, and the offset is constant no matter what the date. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## Parameters
 
@@ -31,9 +36,10 @@ A new time zone whose offset from GMT is given by the interval `ti`. The name of
 
 ## See Also
 
-- [func CFTimeZoneCreateWithName(CFAllocator!, CFString!, Bool) -> CFTimeZone!](cftimezonecreatewithname(_:_:_:).md)
+### Creating a Time Zone
+- [func CFTimeZoneCreateWithName(CFAllocator!, CFString!, Bool) -> CFTimeZone!](./cftimezonecreatewithname%28_,_,_%29.md)
   Returns the time zone object identified by a given name or abbreviation.
-- [func CFTimeZoneCreate(CFAllocator!, CFString!, CFData!) -> CFTimeZone!](cftimezonecreate(_:_:_:).md)
+- [func CFTimeZoneCreate(CFAllocator!, CFString!, CFData!) -> CFTimeZone!](./cftimezonecreate%28_,_,_%29.md)
   Creates a time zone with a given name and data.
 
 

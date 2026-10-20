@@ -1,7 +1,8 @@
 # CMSampleBuffer.Content
 
 **Framework**: Core Media  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 All buffer types that can be carried by sample buffer are marked by this protocol.
 
@@ -27,15 +28,15 @@ Note: This protocol is a marker protocol sealed to CoreMedia framework. Any type
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 ### Inherited By
-- [CMSampleBuffer.ContentWithFormatDescription](cmsamplebuffer/contentwithformatdescription.md)
-- [CMSampleBuffer.MultiSampleContent](cmsamplebuffer/multisamplecontent.md)
+- [CMSampleBuffer.ContentWithFormatDescription](./contentwithformatdescription.md)
+- [CMSampleBuffer.MultiSampleContent](./multisamplecontent.md)
 ### Conforming Types
-- [CMReadOnlyDataBlockBuffer](cmreadonlydatablockbuffer.md)
-- [CMSampleBuffer.DynamicContent](cmsamplebuffer/dynamiccontent.md)
-- [CMSampleDataReference](cmsampledatareference.md)
+- [CMReadOnlyDataBlockBuffer](../cmreadonlydatablockbuffer.md)
+- [CMSampleBuffer.DynamicContent](./dynamiccontent.md)
+- [CMSampleDataReference](../cmsampledatareference.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops receiving network path updates.
 

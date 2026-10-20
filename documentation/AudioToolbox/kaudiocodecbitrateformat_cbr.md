@@ -1,15 +1,16 @@
 # kAudioCodecBitRateFormat_CBR
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,10 +18,15 @@
 var kAudioCodecBitRateFormat_CBR: UInt32 { get }
 ```
 
+```c
+kAudioCodecBitRateFormat_CBR
+```
+
 ## See Also
 
-- [var kAudioCodecBitRateFormat_ABR: UInt32](kaudiocodecbitrateformat_abr.md)
-- [var kAudioCodecBitRateFormat_VBR: UInt32](kaudiocodecbitrateformat_vbr.md)
+### Constants
+- [var kAudioCodecBitRateFormat_ABR: UInt32](./kaudiocodecbitrateformat_abr.md)
+- [var kAudioCodecBitRateFormat_VBR: UInt32](./kaudiocodecbitrateformat_vbr.md)
 
 
 ---

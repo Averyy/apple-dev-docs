@@ -1,15 +1,20 @@
 # deviceInquiryComplete(_:error:aborted:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional func deviceInquiryComplete(_ sender: IOBluetoothDeviceInquiry!, error: IOReturn, aborted: Bool)
+```
+
+```objc
+- (void) deviceInquiryComplete:(IOBluetoothDeviceInquiry *) sender error:(IOReturn) error aborted:(BOOL) aborted;
 ```
 
 #### Discussion

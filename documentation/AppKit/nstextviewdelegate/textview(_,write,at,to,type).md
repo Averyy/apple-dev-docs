@@ -1,12 +1,13 @@
 # textView(_:write:at:to:type:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether data of the specified type for the given cell could be written to the specified pasteboard.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,13 @@ Returns whether data of the specified type for the given cell could be written t
 optional func textView(_ view: NSTextView, write cell: any NSTextAttachmentCellProtocol, at charIndex: Int, to pboard: NSPasteboard, type: NSPasteboard.PasteboardType) -> Bool
 ```
 
+```objc
+- (BOOL) textView:(NSTextView *) view writeCell:(id<NSTextAttachmentCell>) cell atIndex:(NSUInteger) charIndex toPasteboard:(NSPasteboard *) pboard type:(NSPasteboardType) type;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the write succeeded, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the write succeeded, [`false`](../../Swift/false.md) otherwise.
 
 #### Discussion
 
@@ -33,7 +38,8 @@ The receiver should attempt to write the `cell` to `pboard` with the given `type
 
 ## See Also
 
-- [func textView(NSTextView, writablePasteboardTypesFor: any NSTextAttachmentCellProtocol, at: Int) -> [NSPasteboard.PasteboardType]](nstextviewdelegate/textview(_:writablepasteboardtypesfor:at:).md)
+### Managing the Pasteboard
+- [func textView(NSTextView, writablePasteboardTypesFor: any NSTextAttachmentCellProtocol, at: Int) -> [NSPasteboard.PasteboardType]](./textview%28_,writablepasteboardtypesfor,at%29.md)
   Returns the writable pasteboard types for a given cell.
 
 

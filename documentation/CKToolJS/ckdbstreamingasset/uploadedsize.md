@@ -1,7 +1,8 @@
 # uploadedSize
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The uploaded size of streaming asset.
 
@@ -10,7 +11,7 @@ The uploaded size of streaming asset.
 
 ## Declaration
 
-```swift
+```
 attribute Int64? uploadedSize;
 ```
 

@@ -1,7 +1,8 @@
 # callAudioUnit(_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends an audio unit a custom data message.
 
@@ -16,6 +17,10 @@ Sends an audio unit a custom data message.
 
 ```swift
 optional func callAudioUnit(_ message: [AnyHashable : Any]) -> [AnyHashable : Any]
+```
+
+```objc
+- (NSDictionary *) callAudioUnit:(NSDictionary *) message;
 ```
 
 #### Return Value

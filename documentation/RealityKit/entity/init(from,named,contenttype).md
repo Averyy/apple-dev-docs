@@ -1,7 +1,8 @@
 # init(from:named:contentType:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an entity by asynchronously loading it from the in-memory contents of a file stored in a Data object.
 
@@ -26,7 +27,7 @@ The root entity of the loaded file.
 
 #### Discussion
 
-RealityKit supports loading entities from USD (`.usd`, `.usda`, `.usdc`, `.usdz`) and Reality (`.reality`) files. Pass the data’s format as the `contentType` so RealityKit selects a parser directly instead of guessing the file type from the data. Prefer this initializer over [`init(from:named:)`](entity/init(from:named:).md) when the format is already known — for example from a server’s `Content-Type` or a MIME type.
+RealityKit supports loading entities from USD (`.usd`, `.usda`, `.usdc`, `.usdz`) and Reality (`.reality`) files. Pass the data’s format as the `contentType` so RealityKit selects a parser directly instead of guessing the file type from the data. Prefer this initializer over [`init(from:named:)`](./init%28from,named%29.md) when the format is already known — for example from a server’s `Content-Type` or a MIME type.
 
 The supported content types are:
 
@@ -41,9 +42,9 @@ let contentType = UTType(filenameExtension: url.pathExtension) ?? .usd
 let entity = try await Entity(from: data, contentType: contentType)
 ```
 
-For more information on loading entities, see [`Loading entities from a file`](loading-entities-from-a-file.md).
+For more information on loading entities, see [Loading entities from a file](../loading-entities-from-a-file.md).
 
-See [`init(named:in:)`](entity/init(named:in:).md) for an example of optimally loading content.
+See [`init(named:in:)`](./init%28named,in%29.md) for an example of optimally loading content.
 
 ## Parameters
 

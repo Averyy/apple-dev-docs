@@ -1,7 +1,8 @@
 # errSecMissingAttributeDLDBHandle
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A database handle attribute is missing.
 
@@ -18,6 +19,10 @@ A database handle attribute is missing.
 
 ```swift
 var errSecMissingAttributeDLDBHandle: OSStatus { get }
+```
+
+```c
+errSecMissingAttributeDLDBHandle
 ```
 
 

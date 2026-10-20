@@ -1,7 +1,8 @@
 # childContour(at:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the child contour object at the specified index.
 
@@ -19,6 +20,10 @@ Retrieves the child contour object at the specified index.
 func childContour(at childContourIndex: Int) throws -> VNContour
 ```
 
+```objc
+- (VNContour *) childContourAtIndex:(NSUInteger) childContourIndex error:(NSError **) error;
+```
+
 #### Return Value
 
 The child contour object.
@@ -29,9 +34,10 @@ The child contour object.
 
 ## See Also
 
-- [var childContourCount: Int](vncontour/childcontourcount.md)
+### Accessing Child Contours
+- [var childContourCount: Int](./childcontourcount.md)
   The total number of detected child contours.
-- [var childContours: [VNContour]](vncontour/childcontours.md)
+- [var childContours: [VNContour]](./childcontours.md)
   An array of contours that this contour encloses.
 
 

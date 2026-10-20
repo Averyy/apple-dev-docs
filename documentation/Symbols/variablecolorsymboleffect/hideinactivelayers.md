@@ -1,7 +1,8 @@
 # hideInactiveLayers
 
 **Framework**: Symbols  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An effect that hides inactive layers in a symbol-based image.
 
@@ -26,7 +27,8 @@ This effect hides inactive layers completely, rather than drawing them with redu
 
 ## See Also
 
-- [var dimInactiveLayers: VariableColorSymbolEffect](variablecolorsymboleffect/diminactivelayers.md)
+### Affecting inactive layers
+- [var dimInactiveLayers: VariableColorSymbolEffect](./diminactivelayers.md)
   An effect that dims inactive layers in a symbol-based image.
 
 

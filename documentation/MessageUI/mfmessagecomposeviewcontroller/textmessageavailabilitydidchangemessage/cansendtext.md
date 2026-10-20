@@ -1,7 +1,8 @@
 # canSendText
 
 **Framework**: Message UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether text messages can be sent on this device
 

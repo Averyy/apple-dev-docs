@@ -1,7 +1,8 @@
 # currency(code:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 15.0+
@@ -17,6 +18,8 @@
 ```swift
 static func currency(code: String) -> Self
 ```
+
+Available when `Self` is `Decimal.FormatStyle.Currency`.
 
 
 ---

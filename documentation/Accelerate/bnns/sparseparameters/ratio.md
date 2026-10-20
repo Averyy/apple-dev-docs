@@ -1,7 +1,8 @@
 # ratio
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sparsity ratio expressed as the numerator and the denominator.
 
@@ -11,8 +12,10 @@ The sparsity ratio expressed as the numerator and the denominator.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,9 +25,10 @@ let ratio: (numerator: UInt32, denominator: UInt32)
 
 ## See Also
 
-- [let targetSystem: BNNSTargetSystem](bnns/sparseparameters/targetsystem.md)
+### Inspecting the Properties of a Sparse Parameters Structure
+- [let targetSystem: BNNSTargetSystem](./targetsystem.md)
   The target system.
-- [let type: BNNS.SparsityType](bnns/sparseparameters/type.md)
+- [let type: BNNS.SparsityType](./type.md)
   An enumeration that specifies special patterns, if any, in the sparsity.
 
 

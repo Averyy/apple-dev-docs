@@ -1,7 +1,8 @@
 # macro(name:dependencies:path:exclude:sources:packageAccess:swiftSettings:linkerSettings:plugins:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - SwiftPM 5.9+

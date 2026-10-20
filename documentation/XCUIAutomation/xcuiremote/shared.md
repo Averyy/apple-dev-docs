@@ -1,18 +1,23 @@
 # shared
 
 **Framework**: XCUIAutomation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The simulated physical remote control.
 
 **Availability**:
-- tvOS ?+
+- tvOS
 - Xcode 16.3+
 
 ## Declaration
 
 ```swift
 class var shared: XCUIRemote { get }
+```
+
+```objc
+@property (class, readonly) XCUIRemote * sharedRemote;
 ```
 
 

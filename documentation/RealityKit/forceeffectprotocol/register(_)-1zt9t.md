@@ -1,7 +1,8 @@
 # register(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Registers the custom effect.
 
@@ -20,6 +21,13 @@ Registers the custom effect.
 @preconcurrency static func register(_ updateHandler: (@MainActor (inout ForceEffectEvent<Self>) -> Void)? = nil)
 ```
 
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency static func register(_ updateHandler: (@MainActor (inout ForceEffectEvent<Self>) -> Void)? = nil)
+```
+
 #### Discussion
 
 If a handler is specified, the physics system calls the handler and ignores the update function.
@@ -30,15 +38,16 @@ If a handler is specified, the physics system calls the handler and ignores the 
 
 ## See Also
 
-- [func update(parameters: inout ForceEffectParameters)](forceeffectprotocol/update(parameters:).md)
+### Updating effects
+- [func update(parameters: inout ForceEffectParameters)](./update%28parameters%29.md)
   Defines how the custom force effect computes forces at each physics simulation step.
-- [struct PhysicsBodyParameterTypes](physicsbodyparametertypes.md)
+- [struct PhysicsBodyParameterTypes](../physicsbodyparametertypes.md)
   Defines which rigid body inputs are required by a force effect’s update handler.
-- [struct ForceEffectParameters](forceeffectparameters.md)
+- [struct ForceEffectParameters](../forceeffectparameters.md)
   The force effect input data to the effect’s update handler or closure.
-- [struct ForceEffectEvent](forceeffectevent.md)
+- [struct ForceEffectEvent](../forceeffectevent.md)
   A struct that defines the arguments to the custom force effect update closure.
-- [struct UnsafeForceEffectBuffer](unsafeforceeffectbuffer.md)
+- [struct UnsafeForceEffectBuffer](../unsafeforceeffectbuffer.md)
   Provides access to physics body parameters from the effect’s update function or event handler.
 
 

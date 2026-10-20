@@ -1,7 +1,8 @@
 # init(huberDelta:gridColumnCount:gridRowsCount:anchorBoxCount:anchorBoxSize:rescore:xyScale:whScale:objectScale:noObjectScale:classificationScale:objectMinimumIoU:noObjectMaximumIoU:anchorsData:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.0+
@@ -9,8 +10,10 @@
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 

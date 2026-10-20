@@ -1,7 +1,8 @@
 # minimum(_:_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the lesser of the two given values.
 
@@ -33,7 +34,7 @@ Double.minimum(.nan, .nan)
 // nan
 ```
 
-The `minimum` method implements the `minNum` operation defined by the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
+The `minimum` method implements the `minNum` operation defined by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 
 ## Parameters
 

@@ -1,17 +1,18 @@
 # bodyLandmarkRegionKeyLeftArm
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A group key identifying the landmarks of the left arm.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
+- iOS 14.0+ - Deprecated in 14.0 (renamed: VNHumanBodyPoseObservation.JointsGroupName.leftArm)
+- iPadOS 14.0+ - Deprecated in 14.0 (renamed: VNHumanBodyPoseObservation.JointsGroupName.leftArm)
+- Mac Catalyst 14.0+ - Deprecated in 14.0 (renamed: VNHumanBodyPoseObservation.JointsGroupName.leftArm)
+- macOS 11.0+ - Deprecated in 11.0 (renamed: VNHumanBodyPoseObservation.JointsGroupName.leftArm)
+- tvOS 14.0+ - Deprecated in 14.0 (renamed: VNHumanBodyPoseObservation.JointsGroupName.leftArm)
+- visionOS 1.0+ - Deprecated in 1.0 (renamed: VNHumanBodyPoseObservation.JointsGroupName.leftArm)
 
 ## Declaration
 
@@ -19,17 +20,22 @@ A group key identifying the landmarks of the left arm.
 static let bodyLandmarkRegionKeyLeftArm: VNRecognizedPointGroupKey
 ```
 
+```c
+extern VNRecognizedPointGroupKey const VNBodyLandmarkRegionKeyLeftArm;
+```
+
 ## See Also
 
-- [static let bodyLandmarkRegionKeyFace: VNRecognizedPointGroupKey](vnrecognizedpointgroupkey/bodylandmarkregionkeyface.md)
+### Body Regions
+- [static let bodyLandmarkRegionKeyFace: VNRecognizedPointGroupKey](./bodylandmarkregionkeyface.md)
   A group key identifying the face, which includes the eyes, ears, and nose.
-- [static let bodyLandmarkRegionKeyTorso: VNRecognizedPointGroupKey](vnrecognizedpointgroupkey/bodylandmarkregionkeytorso.md)
+- [static let bodyLandmarkRegionKeyTorso: VNRecognizedPointGroupKey](./bodylandmarkregionkeytorso.md)
   A group key identifying the torso, which includes the neck, shoulders, hips, and root.
-- [static let bodyLandmarkRegionKeyRightArm: VNRecognizedPointGroupKey](vnrecognizedpointgroupkey/bodylandmarkregionkeyrightarm.md)
+- [static let bodyLandmarkRegionKeyRightArm: VNRecognizedPointGroupKey](./bodylandmarkregionkeyrightarm.md)
   A group key identifying the landmarks of the right arm.
-- [static let bodyLandmarkRegionKeyRightLeg: VNRecognizedPointGroupKey](vnrecognizedpointgroupkey/bodylandmarkregionkeyrightleg.md)
+- [static let bodyLandmarkRegionKeyRightLeg: VNRecognizedPointGroupKey](./bodylandmarkregionkeyrightleg.md)
   A group key identifying the landmarks of the right leg.
-- [static let bodyLandmarkRegionKeyLeftLeg: VNRecognizedPointGroupKey](vnrecognizedpointgroupkey/bodylandmarkregionkeyleftleg.md)
+- [static let bodyLandmarkRegionKeyLeftLeg: VNRecognizedPointGroupKey](./bodylandmarkregionkeyleftleg.md)
   A group key identifying the landmarks of the left leg.
 
 

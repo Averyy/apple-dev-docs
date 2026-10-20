@@ -1,7 +1,8 @@
 # FullyConnectedNetworkRegressorModel.Target
 
 **Framework**: Create ML Components  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 16.0+
@@ -20,7 +21,8 @@ typealias Target = Float
 
 ## See Also
 
-- [func applied(to: MLShapedArray<Scalar>, eventHandler: EventHandler?) async throws -> FullyConnectedNetworkRegressorModel<Scalar>.Target](fullyconnectednetworkregressormodel/applied(to:eventhandler:).md)
+### Performing a regression
+- [func applied(to: MLShapedArray<Scalar>, eventHandler: EventHandler?) async throws -> FullyConnectedNetworkRegressorModel<Scalar>.Target](./applied%28to,eventhandler%29.md)
   Performs regression on a shaped array.
 
 

@@ -1,7 +1,8 @@
 # pixelFormatInfo
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 12.0+
@@ -18,12 +19,17 @@
 var pixelFormatInfo: CGImagePixelFormatInfo { get }
 ```
 
+```c
+extern CGImagePixelFormatInfo CGImageGetPixelFormatInfo(CGImageRef image);
+```
+
 ## See Also
 
-- [var byteOrderInfo: CGImageByteOrderInfo](cgimage/byteorderinfo.md)
-- [var containsImageSpecificToneMappingMetadata: Bool](cgimage/containsimagespecifictonemappingmetadata.md)
-- [var contentHeadroom: Float](cgimage/contentheadroom.md)
-- [var shouldToneMap: Bool](cgimage/shouldtonemap.md)
+### Instance properties
+- [var byteOrderInfo: CGImageByteOrderInfo](./byteorderinfo.md)
+- [var containsImageSpecificToneMappingMetadata: Bool](./containsimagespecifictonemappingmetadata.md)
+- [var contentHeadroom: Float](./contentheadroom.md)
+- [var shouldToneMap: Bool](./shouldtonemap.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 specify which `deform` function will be called, default implementation is provided
@@ -19,6 +20,14 @@ specify which `deform` function will be called, default implementation is provid
 ```swift
 var mode: MeshDeformerExecutionMode { get }
 ```
+
+## Default Implementations
+
+### MeshDeformer Implementations
+- [static var mode: MeshDeformerExecutionMode](./mode-61otn.md)
+  defaults to `.gpu`
+- [var mode: MeshDeformerExecutionMode](./mode-99czy.md)
+  defaults to returning static mode
 
 
 ---

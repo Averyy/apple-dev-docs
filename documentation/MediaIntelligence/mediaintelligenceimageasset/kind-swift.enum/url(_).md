@@ -1,7 +1,8 @@
 # MediaIntelligenceImageAsset.Kind.url(_:)
 
 **Framework**: Media Intelligence  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An image located at the specified URL.
 

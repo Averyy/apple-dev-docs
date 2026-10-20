@@ -1,7 +1,8 @@
 # resourceViewCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configures the number of resource views with which Metal creates the resource view pool.
 
@@ -17,6 +18,10 @@ Configures the number of resource views with which Metal creates the resource vi
 
 ```swift
 var resourceViewCount: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger resourceViewCount;
 ```
 
 

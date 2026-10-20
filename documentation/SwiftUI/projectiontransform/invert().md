@@ -1,7 +1,8 @@
 # invert()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -20,8 +21,9 @@ mutating func invert() -> Bool
 
 ## See Also
 
-- [func inverted() -> ProjectionTransform](projectiontransform/inverted.md)
-- [func concatenating(ProjectionTransform) -> ProjectionTransform](projectiontransform/concatenating(_:).md)
+### Manipulating transforms
+- [func inverted() -> ProjectionTransform](./inverted%28%29.md)
+- [func concatenating(ProjectionTransform) -> ProjectionTransform](./concatenating%28_%29.md)
 
 
 ---

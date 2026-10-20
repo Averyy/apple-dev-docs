@@ -1,27 +1,28 @@
 # Comparable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func ... (Self) -> PartialRangeThrough<Self>](lazyprefixwhilesequence/index/'...(_:)-8ba8y.md)
+- [static func ... (Self) -> PartialRangeThrough<Self>](./dotdotdot%28_%29-8ba8y.md)
   Returns a partial range up to, and including, its upper bound.
-- [static func ... (Self) -> PartialRangeFrom<Self>](lazyprefixwhilesequence/index/'...(_:)-9mz14.md)
+- [static func ... (Self) -> PartialRangeFrom<Self>](./dotdotdot%28_%29-9mz14.md)
   Returns a partial range extending upward from a lower bound.
-- [static func ... (Self, Self) -> ClosedRange<Self>](lazyprefixwhilesequence/index/'...(_:_:).md)
+- [static func ... (Self, Self) -> ClosedRange<Self>](./dotdotdot%28_,_%29.md)
   Returns a closed range that contains both of its bounds.
-- [static func ..< (Self) -> PartialRangeUpTo<Self>](lazyprefixwhilesequence/index/'.._(_:).md)
+- [static func ..< (Self) -> PartialRangeUpTo<Self>](./dotdotop%28_%29.md)
   Returns a partial range up to, but not including, its upper bound.
-- [static func ..< (Self, Self) -> Range<Self>](lazyprefixwhilesequence/index/'.._(_:_:).md)
+- [static func ..< (Self, Self) -> Range<Self>](./dotdotop%28_,_%29.md)
   Returns a half-open range that contains its lower bound but not its upper bound.
-- [static func < (LazyPrefixWhileCollection<Base>.Index, LazyPrefixWhileCollection<Base>.Index) -> Bool](lazyprefixwhilesequence/index/_(_:_:).md)
+- [static func < (LazyPrefixWhileCollection<Base>.Index, LazyPrefixWhileCollection<Base>.Index) -> Bool](./op%28_,_%29.md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func > (borrowing Self, borrowing Self) -> Bool](lazyprefixwhilesequence/index/_(_:_:)-3x5po.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](./op%28_,_%29-3x5po.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func <= (borrowing Self, borrowing Self) -> Bool](lazyprefixwhilesequence/index/_=(_:_:)-3vwue.md)
+- [static func <= (borrowing Self, borrowing Self) -> Bool](./opeq%28_,_%29-3vwue.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
-- [static func >= (borrowing Self, borrowing Self) -> Bool](lazyprefixwhilesequence/index/_=(_:_:)-69pbk.md)
+- [static func >= (borrowing Self, borrowing Self) -> Bool](./opeq%28_,_%29-69pbk.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 
 

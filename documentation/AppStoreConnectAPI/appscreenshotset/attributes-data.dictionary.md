@@ -1,7 +1,8 @@
 # AppScreenshotSet.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an App Screenshot Sets resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an App Screenshot Sets resource.
 
 ## Declaration
 
-```swift
+```
 object AppScreenshotSet.Attributes
 ```
 
@@ -20,7 +21,8 @@ object AppScreenshotSet.Attributes
 
 ## See Also
 
-- [object AppScreenshotSet.Relationships](appscreenshotset/relationships-data.dictionary.md)
+### Objects
+- [object AppScreenshotSet.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

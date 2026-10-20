@@ -1,14 +1,15 @@
 # kmod_start_func_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef kern_return_t (struct kmod_info *, void *) kmod_start_func_t;
 ```
 

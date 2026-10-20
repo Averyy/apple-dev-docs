@@ -1,7 +1,8 @@
 # kSMErrorServiceUnavailable
 
 **Framework**: Service Management  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The service necessary to perform this operation is unavailable or is no longer accepting requests.
 
@@ -15,25 +16,30 @@ The service necessary to perform this operation is unavailable or is no longer a
 var kSMErrorServiceUnavailable: Int { get }
 ```
 
+```c
+kSMErrorServiceUnavailable
+```
+
 ## See Also
 
-- [var kSMErrorAlreadyRegistered: Int](ksmerroralreadyregistered.md)
+### Constants
+- [var kSMErrorAlreadyRegistered: Int](./ksmerroralreadyregistered.md)
   The application is already registered.
-- [var kSMErrorAuthorizationFailure: Int](ksmerrorauthorizationfailure.md)
+- [var kSMErrorAuthorizationFailure: Int](./ksmerrorauthorizationfailure.md)
   The authorization requested failed.
-- [var kSMErrorInternalFailure: Int](ksmerrorinternalfailure.md)
+- [var kSMErrorInternalFailure: Int](./ksmerrorinternalfailure.md)
   An internal failure has occurred.
-- [var kSMErrorInvalidPlist: Int](ksmerrorinvalidplist.md)
+- [var kSMErrorInvalidPlist: Int](./ksmerrorinvalidplist.md)
   The app’s property list is invalid.
-- [var kSMErrorInvalidSignature: Int](ksmerrorinvalidsignature.md)
+- [var kSMErrorInvalidSignature: Int](./ksmerrorinvalidsignature.md)
   The app’s code signature doesn’t meet the requirements to perform the operation.
-- [var kSMErrorJobMustBeEnabled: Int](ksmerrorjobmustbeenabled.md)
-- [var kSMErrorJobNotFound: Int](ksmerrorjobnotfound.md)
+- [var kSMErrorJobMustBeEnabled: Int](./ksmerrorjobmustbeenabled.md)
+- [var kSMErrorJobNotFound: Int](./ksmerrorjobnotfound.md)
   The system can’t find the specified job.
-- [var kSMErrorJobPlistNotFound: Int](ksmerrorjobplistnotfound.md)
-- [var kSMErrorLaunchDeniedByUser: Int](ksmerrorlaunchdeniedbyuser.md)
+- [var kSMErrorJobPlistNotFound: Int](./ksmerrorjobplistnotfound.md)
+- [var kSMErrorLaunchDeniedByUser: Int](./ksmerrorlaunchdeniedbyuser.md)
   The user denied the app’s launch request.
-- [var kSMErrorToolNotValid: Int](ksmerrortoolnotvalid.md)
+- [var kSMErrorToolNotValid: Int](./ksmerrortoolnotvalid.md)
   The specified path doesn’t exist or the helper tool at the specified path isn’t valid.
 
 

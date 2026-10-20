@@ -1,7 +1,8 @@
 # maximumDistance
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance beyond which the node applies no further attenuation, in meters.
 
@@ -20,17 +21,22 @@ The distance beyond which the node applies no further attenuation, in meters.
 var maximumDistance: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float maximumDistance;
+```
+
 #### Discussion
 
 The default value is `100000.0` meters.
 
-This property is relevant for [`AVAudioEnvironmentDistanceAttenuationModel.inverse`](avaudioenvironmentdistanceattenuationmodel/inverse.md).
+This property is relevant for [`AVAudioEnvironmentDistanceAttenuationModel.inverse`](../avaudioenvironmentdistanceattenuationmodel/inverse.md).
 
 ## See Also
 
-- [var referenceDistance: Float](avaudioenvironmentdistanceattenuationparameters/referencedistance.md)
+### Configuring distance attenuation
+- [var referenceDistance: Float](./referencedistance.md)
   The minimum distance at which the node applies attenuation, in meters.
-- [var rolloffFactor: Float](avaudioenvironmentdistanceattenuationparameters/rollofffactor.md)
+- [var rolloffFactor: Float](./rollofffactor.md)
   A factor that determines the attenuation curve.
 
 

@@ -1,14 +1,15 @@
 # kSCSIParallelMessage_INITIATOR_DETECTED_ERROR
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kSCSIParallelMessage_INITIATOR_DETECTED_ERROR = 0x05
 ```
 

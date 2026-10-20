@@ -1,14 +1,15 @@
 # mach_port_guard_info_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct mach_port_guard_info {
     ...
 } mach_port_guard_info_t;
@@ -17,7 +18,7 @@ typedef struct mach_port_guard_info {
 ## Topics
 
 ### Instance Properties
-- [mpgi_guard](mach_port_guard_info_t/3786113-mpgi_guard.md)
+- [mpgi_guard](./mach_port_guard_info_t/api-3786113-mpgi_guard.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # SymbolColorRenderingMode
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A method of filling a layer in a symbol image.
 
@@ -23,27 +24,28 @@ struct SymbolColorRenderingMode
 ## Topics
 
 ### Type Properties
-- [static let flat: SymbolColorRenderingMode](symbolcolorrenderingmode/flat.md)
+- [static let flat: SymbolColorRenderingMode](./symbolcolorrenderingmode/flat.md)
   The symbol image layer should be filled with a solid color.
-- [static let gradient: SymbolColorRenderingMode](symbolcolorrenderingmode/gradient.md)
+- [static let gradient: SymbolColorRenderingMode](./symbolcolorrenderingmode/gradient.md)
   The symbol image layer should be filled with an axial gradient.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func symbolRenderingMode(SymbolRenderingMode?) -> some View](view/symbolrenderingmode(_:).md)
+### Setting symbol rendering modes
+- [func symbolRenderingMode(SymbolRenderingMode?) -> some View](./view/symbolrenderingmode%28_%29.md)
   Sets the rendering mode for symbol images within this view.
-- [var symbolRenderingMode: SymbolRenderingMode?](environmentvalues/symbolrenderingmode.md)
+- [var symbolRenderingMode: SymbolRenderingMode?](./environmentvalues/symbolrenderingmode.md)
   The current symbol rendering mode, or `nil` denoting that the mode is picked automatically using the current image and foreground style as parameters.
-- [struct SymbolRenderingMode](symbolrenderingmode.md)
+- [struct SymbolRenderingMode](./symbolrenderingmode.md)
   A symbol rendering mode.
-- [struct SymbolVariableValueMode](symbolvariablevaluemode.md)
+- [struct SymbolVariableValueMode](./symbolvariablevaluemode.md)
   A method of rendering the variable value of a symbol image.
 
 

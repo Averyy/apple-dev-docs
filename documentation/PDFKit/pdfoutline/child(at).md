@@ -1,7 +1,8 @@
 # child(at:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the child outline object at the specified index.
 
@@ -19,6 +20,10 @@ Returns the child outline object at the specified index.
 func child(at index: Int) -> PDFOutline?
 ```
 
+```objc
+- (PDFOutline *) childAtIndex:(NSUInteger) index;
+```
+
 #### Discussion
 
 The index is zero-based. This method throws an exception if `index` is out of range.
@@ -27,13 +32,14 @@ The index is zero-based. This method throws an exception if `index` is out of ra
 
 ## See Also
 
-- [var document: PDFDocument?](pdfoutline/document.md)
+### Getting Information About an Outline
+- [var document: PDFDocument?](./document.md)
   Returns the document with which the outline is associated.
-- [var numberOfChildren: Int](pdfoutline/numberofchildren.md)
+- [var numberOfChildren: Int](./numberofchildren.md)
   Returns the number of child outline objects in the outline.
-- [var parent: PDFOutline?](pdfoutline/parent.md)
+- [var parent: PDFOutline?](./parent.md)
   Returns the parent outline object of the outline (returns `NULL` if called on the root outline object).
-- [var index: Int](pdfoutline/index.md)
+- [var index: Int](./index.md)
   Returns the index of the outline.
 
 

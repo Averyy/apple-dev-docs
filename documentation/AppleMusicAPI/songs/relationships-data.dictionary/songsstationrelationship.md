@@ -1,7 +1,8 @@
 # Songs.Relationships.SongsStationRelationship
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A relationship from the song to its station.
 
@@ -10,7 +11,7 @@ A relationship from the song to its station.
 
 ## Declaration
 
-```swift
+```
 object Songs.Relationships.SongsStationRelationship
 ```
 
@@ -22,17 +23,18 @@ object Songs.Relationships.SongsStationRelationship
 
 ## See Also
 
-- [object Songs.Relationships.SongsAlbumsRelationship](songs/relationships-data.dictionary/songsalbumsrelationship.md)
+### Related Objects
+- [object Songs.Relationships.SongsAlbumsRelationship](./songsalbumsrelationship.md)
   A relationship from the song to its albums.
-- [object Songs.Relationships.SongsArtistsRelationship](songs/relationships-data.dictionary/songsartistsrelationship.md)
+- [object Songs.Relationships.SongsArtistsRelationship](./songsartistsrelationship.md)
   A relationship from the song to its artists.
-- [object Songs.Relationships.SongsGenresRelationship](songs/relationships-data.dictionary/songsgenresrelationship.md)
+- [object Songs.Relationships.SongsGenresRelationship](./songsgenresrelationship.md)
   A relationship from the song to its genres.
-- [object Songs.Relationships.SongsComposersRelationship](songs/relationships-data.dictionary/songscomposersrelationship.md)
+- [object Songs.Relationships.SongsComposersRelationship](./songscomposersrelationship.md)
   A relationship from the song to its composers.
-- [object Songs.Relationships.SongsLibraryRelationship](songs/relationships-data.dictionary/songslibraryrelationship.md)
+- [object Songs.Relationships.SongsLibraryRelationship](./songslibraryrelationship.md)
   A relationship from the song to its library.
-- [object Songs.Relationships.SongsMusicVideosRelationship](songs/relationships-data.dictionary/songsmusicvideosrelationship.md)
+- [object Songs.Relationships.SongsMusicVideosRelationship](./songsmusicvideosrelationship.md)
   A relationship from the song to its music videos.
 
 

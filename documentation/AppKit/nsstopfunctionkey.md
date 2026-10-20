@@ -1,17 +1,22 @@
 # NSStopFunctionKey
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The stop key.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var NSStopFunctionKey: Int { get }
+```
+
+```c
+NSStopFunctionKey
 ```
 
 #### Discussion
@@ -20,35 +25,36 @@ This key is unavailable on most Macintosh keyboards.
 
 ## See Also
 
-- [var NSBeginFunctionKey: Int](nsbeginfunctionkey.md)
+### Getting Special Behavior Keys
+- [var NSBeginFunctionKey: Int](./nsbeginfunctionkey.md)
   The begin key.
-- [var NSBreakFunctionKey: Int](nsbreakfunctionkey.md)
+- [var NSBreakFunctionKey: Int](./nsbreakfunctionkey.md)
   The break key.
-- [var NSClearDisplayFunctionKey: Int](nscleardisplayfunctionkey.md)
+- [var NSClearDisplayFunctionKey: Int](./nscleardisplayfunctionkey.md)
   The clear display key.
-- [var NSClearLineFunctionKey: Int](nsclearlinefunctionkey.md)
+- [var NSClearLineFunctionKey: Int](./nsclearlinefunctionkey.md)
   The clear or num lock key.
-- [var NSDeleteCharFunctionKey: Int](nsdeletecharfunctionkey.md)
+- [var NSDeleteCharFunctionKey: Int](./nsdeletecharfunctionkey.md)
   The delete character key.
-- [var NSDeleteLineFunctionKey: Int](nsdeletelinefunctionkey.md)
+- [var NSDeleteLineFunctionKey: Int](./nsdeletelinefunctionkey.md)
   The delete line key.
-- [var NSExecuteFunctionKey: Int](nsexecutefunctionkey.md)
+- [var NSExecuteFunctionKey: Int](./nsexecutefunctionkey.md)
   The execute key.
-- [var NSFindFunctionKey: Int](nsfindfunctionkey.md)
+- [var NSFindFunctionKey: Int](./nsfindfunctionkey.md)
   The find key.
-- [var NSHelpFunctionKey: Int](nshelpfunctionkey.md)
+- [var NSHelpFunctionKey: Int](./nshelpfunctionkey.md)
   The help key.
-- [var NSInsertFunctionKey: Int](nsinsertfunctionkey.md)
+- [var NSInsertFunctionKey: Int](./nsinsertfunctionkey.md)
   The insert key.
-- [var NSInsertCharFunctionKey: Int](nsinsertcharfunctionkey.md)
+- [var NSInsertCharFunctionKey: Int](./nsinsertcharfunctionkey.md)
   The insert character key.
-- [var NSInsertLineFunctionKey: Int](nsinsertlinefunctionkey.md)
+- [var NSInsertLineFunctionKey: Int](./nsinsertlinefunctionkey.md)
   The insert line key.
-- [var NSMenuFunctionKey: Int](nsmenufunctionkey.md)
+- [var NSMenuFunctionKey: Int](./nsmenufunctionkey.md)
   The menu key.
-- [var NSModeSwitchFunctionKey: Int](nsmodeswitchfunctionkey.md)
+- [var NSModeSwitchFunctionKey: Int](./nsmodeswitchfunctionkey.md)
   The mode switch key.
-- [var NSPauseFunctionKey: Int](nspausefunctionkey.md)
+- [var NSPauseFunctionKey: Int](./nspausefunctionkey.md)
   The pause key.
 
 

@@ -1,7 +1,8 @@
 # supportedJointsGroupNames
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The joint group names the request supports.
 
@@ -21,9 +22,10 @@ var supportedJointsGroupNames: [HumanBodyPoseObservation.JointsGroupName] { get 
 
 ## See Also
 
-- [var detectsHands: Bool](detecthumanbodyposerequest/detectshands.md)
+### Configuring a request
+- [var detectsHands: Bool](./detectshands.md)
   A Boolean value that detects hands of the body in the results, if they’re visible.
-- [var supportedJointNames: [HumanBodyPoseObservation.JointName]](detecthumanbodyposerequest/supportedjointnames.md)
+- [var supportedJointNames: [HumanBodyPoseObservation.JointName]](./supportedjointnames.md)
   The joint names the request supports.
 
 

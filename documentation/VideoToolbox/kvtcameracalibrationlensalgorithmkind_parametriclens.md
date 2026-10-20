@@ -1,7 +1,8 @@
 # kVTCameraCalibrationLensAlgorithmKind_ParametricLens
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,10 @@
 
 ```swift
 let kVTCameraCalibrationLensAlgorithmKind_ParametricLens: CFString
+```
+
+```c
+extern CFStringRef const kVTCameraCalibrationLensAlgorithmKind_ParametricLens;
 ```
 
 

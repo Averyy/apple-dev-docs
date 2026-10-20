@@ -5,12 +5,12 @@
 ## Topics
 
 ### Constants
-- [var launchAllow24Bit: Int](launchallow24bit.md)
-- [var launchContinue: Int](launchcontinue.md)
-- [var launchDontSwitch: Int](launchdontswitch.md)
-- [var launchInhibitDaemon: Int](launchinhibitdaemon.md)
-- [var launchNoFileFlags: Int](launchnofileflags.md)
-- [var launchUseMinimum: Int](launchuseminimum.md)
+- [var launchAllow24Bit: Int](../launchallow24bit.md)
+- [var launchContinue: Int](../launchcontinue.md)
+- [var launchDontSwitch: Int](../launchdontswitch.md)
+- [var launchInhibitDaemon: Int](../launchinhibitdaemon.md)
+- [var launchNoFileFlags: Int](../launchnofileflags.md)
+- [var launchUseMinimum: Int](../launchuseminimum.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value indicating whether the collection is empty.
@@ -35,7 +36,13 @@ if horseName.isEmpty {
 // Prints "Hi ho, Silver!"
 ```
 
-> **Note**: O(1)
+> **Complexity**: O(1)
+
+## Default Implementations
+
+### Collection Implementations
+- [var isEmpty: Bool](./isempty-17zoy.md)
+  A Boolean value indicating whether the collection is empty.
 
 
 ---

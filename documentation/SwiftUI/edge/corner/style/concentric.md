@@ -1,7 +1,8 @@
 # concentric
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A rounded corner style where the corner’s radius shares a center point with the container shape’s corner radius.
 

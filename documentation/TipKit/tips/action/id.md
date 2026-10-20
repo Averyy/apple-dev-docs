@@ -1,7 +1,8 @@
 # id
 
 **Framework**: TipKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier for a tip’s action.
 

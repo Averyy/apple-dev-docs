@@ -1,7 +1,8 @@
 # canAccept(_:)
 
 **Framework**: MediaExtension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the extension whether the decoder can decode frames with the format description that you specify.
 
@@ -14,15 +15,20 @@ Asks the extension whether the decoder can decode frames with the format descrip
 optional func canAccept(_ formatDescription: CMFormatDescription) -> Bool
 ```
 
+```objc
+- (BOOL) canAcceptFormatDescription:(CMFormatDescriptionRef) formatDescription;
+```
+
 ## Parameters
 
 - `formatDescription`: The new format description to evaluate.
 
 ## See Also
 
-- [func decodeFrame(from: CMSampleBuffer, options: MEDecodeFrameOptions, completionHandler: (CVImageBuffer?, MEDecodeFrameStatus, (any Error)?) -> Void)](mevideodecoder/decodeframe(from:options:completionhandler:).md)
+### Decoding frames
+- [func decodeFrame(from: CMSampleBuffer, options: MEDecodeFrameOptions, completionHandler: (CVImageBuffer?, MEDecodeFrameStatus, (any Error)?) -> Void)](./decodeframe%28from,options,completionhandler%29.md)
   Requests the extension to decode a video frame.
-- [struct MEDecodeFrameStatus](medecodeframestatus.md)
+- [struct MEDecodeFrameStatus](../medecodeframestatus.md)
   A type that represents a non-error status related to a frame decode operation.
 
 

@@ -1,7 +1,8 @@
 # isOpaque
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns YES if the image is known to have and alpha value of `1.0` over the entire image extent.
 
@@ -10,7 +11,7 @@ Returns YES if the image is known to have and alpha value of `1.0` over the enti
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,11 +20,16 @@ Returns YES if the image is known to have and alpha value of `1.0` over the enti
 var isOpaque: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isOpaque) BOOL opaque;
+```
+
 ## See Also
 
-- [var contentHeadroom: Float](ciimage/contentheadroom.md)
+### Instance Properties
+- [var contentHeadroom: Float](./contentheadroom.md)
   Returns the content headroom of the image.
-- [var metalTexture: (any MTLTexture)?](ciimage/metaltexture.md)
+- [var metalTexture: (any MTLTexture)?](./metaltexture.md)
 
 
 ---

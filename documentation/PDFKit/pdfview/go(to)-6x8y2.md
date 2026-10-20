@@ -1,7 +1,8 @@
 # go(to:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scrolls to the specified page.
 
@@ -19,17 +20,22 @@ Scrolls to the specified page.
 func go(to page: PDFPage)
 ```
 
+```objc
+- (void) goToPage:(PDFPage *) page;
+```
+
 #### Discussion
 
 PDF Kit records the move in its page history.
 
 ## See Also
 
-- [func go(to: PDFDestination)](pdfview/go(to:)-5lh5d.md)
+### Using Seek in a Document
+- [func go(to: PDFDestination)](./go%28to%29-5lh5d.md)
   Navigates to the specified destination.
-- [func go(to: PDFSelection)](pdfview/go(to:)-3t5go.md)
+- [func go(to: PDFSelection)](./go%28to%29-3t5go.md)
   Scrolls to the first character of the specified selection.
-- [func go(to: CGRect, on: PDFPage)](pdfview/go(to:on:).md)
+- [func go(to: CGRect, on: PDFPage)](./go%28to,on%29.md)
   Navigates to the specified rectangle on the specified page.
 
 

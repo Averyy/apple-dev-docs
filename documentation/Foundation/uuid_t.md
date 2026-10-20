@@ -1,7 +1,8 @@
 # uuid_t
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 2.0+
@@ -20,7 +21,8 @@ typealias uuid_t = (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt
 
 ## See Also
 
-- [typealias uuid_string_t](uuid_string_t.md)
+### Type Aliases
+- [typealias uuid_string_t](./uuid_string_t.md)
 
 
 ---

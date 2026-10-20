@@ -1,18 +1,20 @@
 # Objective-C Garbage Collection
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 Interface with the legacy garbage collection system.
 
 ## Topics
 
 ### Legacy
-- [Memory Allocation Options](1539826-memory-allocation-options.md)
+- [Memory Allocation Options](./api-1539826-memory-allocation-options.md)
   Constants used to control behavior when allocating or reallocating collectible memory.
 
 ## See Also
 
-- [Distributed Objects Support](distributed-objects-support.md)
+### Legacy
+- [Distributed Objects Support](./distributed-objects-support.md)
   Enable communication among objects in different processes, both locally and on remote systems.
 
 

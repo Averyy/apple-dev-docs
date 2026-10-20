@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (RotationAxis3DFloat, RotationAxis3DFloat) -> Bool](rotationaxis3dfloat/==(_:_:).md)
+- [static func == (RotationAxis3DFloat, RotationAxis3DFloat) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two rotation axes are equal.
 
 

@@ -1,7 +1,8 @@
 # dateTimeISO8601
 
 **Framework**: Siri Event Suggestions Markup  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A time and date in the ISO-8601 format.
 
@@ -10,9 +11,13 @@ A time and date in the ISO-8601 format.
 
 ## Declaration
 
-```swift
+```
 date-time dateTimeISO8601
 ```
+
+## Possible Values
+
+- `/^\d{4}-\d{2}-\d{2}(?:T\d{2}:\d{2}:\d{2}(?:\.\d{1,6})?(?:Z|[-\+]\d{2}:?\d{2})?)?$//`
 
 #### Overview
 
@@ -20,15 +25,16 @@ Event start and end times must use the ISO-8601 format. Provide the most relevan
 
 ## See Also
 
-- [type @context](@context.md)
+### Basic Data Types
+- [type @context](./atcontext.md)
   The open standard reference for interpreting the markup contents.
-- [type reservationId](reservationid.md)
+- [type reservationId](./reservationid.md)
   A stable, unique identifier for the reservation.
-- [type reservationStatus](reservationstatus.md)
+- [type reservationStatus](./reservationstatus.md)
   A string indicating that the reservation has been confirmed or canceled.
-- [type URL](url.md)
+- [type URL](./url.md)
   The address of a webpage.
-- [type telephone](telephone.md)
+- [type telephone](./telephone.md)
   A phone number.
 
 

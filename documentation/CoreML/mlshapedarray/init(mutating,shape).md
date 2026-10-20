@@ -1,7 +1,8 @@
 # init(mutating:shape:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new `MLShapedArray` using a pixel buffer as the backing storage.
 
@@ -73,9 +74,10 @@ It is undefined behavior to mutate the pixel buffer directly without using `.wit
 
 ## See Also
 
-- [init(scalar: Scalar)](mlshapedarray/init(scalar:).md)
+### Creating a shaped array
+- [init(scalar: Scalar)](./init%28scalar%29.md)
   Creates a shaped array with exactly one value and zero dimensions.
-- [init<S>(scalars: S, shape: [Int])](mlshapedarray/init(scalars:shape:).md)
+- [init<S>(scalars: S, shape: [Int])](./init%28scalars,shape%29.md)
   Initialize with a sequence and the shape.
 
 

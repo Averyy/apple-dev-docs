@@ -1,7 +1,8 @@
 # fetchItems(forIdentityVerificationSignature:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a signature that you can use to authenticate the local player on your own server.
 
@@ -17,13 +18,21 @@ Generates a signature that you can use to authenticate the local player on your 
 ## Declaration
 
 ```swift
+func fetchItems(forIdentityVerificationSignature completionHandler: (@Sendable (URL?, Data?, Data?, UInt64, (any Error)?) -> Void)? = nil)
+```
+
+```swift
 func fetchItemsForIdentityVerificationSignature() async throws -> (URL, Data, Data, UInt64)
+```
+
+```objc
+- (void) fetchItemsForIdentityVerificationSignature:(void (^)(NSURL *publicKeyURL, NSData *signature, NSData *salt, uint64_t timestamp, NSError *error)) completionHandler;
 ```
 
 ## Mentions
 
-- [Authenticating a player](authenticating-a-player.md)
-- [Initializing and configuring Game Center](initializing-and-configuring-game-center.md)
+- [Authenticating a player](../authenticating-a-player.md)
+- [Initializing and configuring Game Center](../initializing-and-configuring-game-center.md)
 
 #### Discussion
 
@@ -31,17 +40,17 @@ Use this method when you need to authenticate with your server. To generate a si
 
 In your game, follow these steps:
 
-1. Call the [`fetchItems(forIdentityVerificationSignature:)`](gklocalplayer/fetchitems(foridentityverificationsignature:).md) method.
+1. Call the [`fetchItems(forIdentityVerificationSignature:)`](./fetchitems%28foridentityverificationsignature%29.md) method.
 2. Send the completion handler `publicKeyURL`, `signature`, `salt`, and `timestamp` parameters to your authentication server.
-3. Share the [`teamPlayerID`](gkplayer/teamplayerid.md) and the bundle ID (see [`CFBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier)) with the server. For Apple Arcade games, share the [`gamePlayerID`](gkplayer/gameplayerid.md) instead of the [`teamPlayerID`](gkplayer/teamplayerid.md).
+3. Share the [`teamPlayerID`](../gkplayer/teamplayerid.md) and the bundle ID (see [`CFBundleIdentifier`](../../BundleResources/information-property-list/cfbundleidentifier.md)) with the server. For Apple Arcade games, share the [`gamePlayerID`](../gkplayer/gameplayerid.md) instead of the [`teamPlayerID`](../gkplayer/teamplayerid.md).
 
 On the server, perform these steps:
 
 1. To mitigate replay attacks, make sure the `timestamp` parameter is recent, and to avoid high network overhead, respect the cache expiration headers.
 2. Download the public key using the `publicKeyURL` parameter.
 3. Verify with the appropriate signing authority that Apple signed the public key.
-4. Concatenate the following information into a data buffer in this order: the [`teamPlayerID`](gkplayer/teamplayerid.md) (or [`gamePlayerID`](gkplayer/gameplayerid.md) for Apple Arcade) property in UTF-8 format, the bundle ID in UTF-8 format, the `timestamp` parameter in big-endian UInt64 format, and the `salt` parameter.
-5. Use the public key to verify the signature of the concatenated data buffer using the [`RSASSA-PKCS1-v1_5`](https://developer.apple.comhttps://www.rfc-editor.org/rfc/rfc8017#section-8.2) algorithm.
+4. Concatenate the following information into a data buffer in this order: the [`teamPlayerID`](../gkplayer/teamplayerid.md) (or [`gamePlayerID`](../gkplayer/gameplayerid.md) for Apple Arcade) property in UTF-8 format, the bundle ID in UTF-8 format, the `timestamp` parameter in big-endian UInt64 format, and the `salt` parameter.
+5. Use the public key to verify the signature of the concatenated data buffer using the [RSASSA-PKCS1-v1_5](https://www.rfc-editor.org/rfc/rfc8017#section-8.2) algorithm.
 
 If the generated and retrieved signatures match, GameKit authenticates the local player.
 
@@ -49,19 +58,24 @@ If the generated and retrieved signatures match, GameKit authenticates the local
 
 ## Parameters
 
-- `completionHandler`: A block that GameKit calls when the request completes. The block receives the following parameters: - **publicKeyURL**: The URL for the public encryption key.
-- **signature**: The verification signature data that GameKit generates.
-- **salt**: A random `NSString` that GameKit uses to compute the hash and randomize it.
-- **timestamp**: The signature’s creation date and time.
-- **error**: If an error occurs, this parameter holds an error object that explains the error. Otherwise, the value of this parameter is `nil`.
+- `completionHandler`: A block that GameKit calls when the request completes.
+
+  The block receives the following parameters:
+
+  - **publicKeyURL**: The URL for the public encryption key.
+  - **signature**: The verification signature data that GameKit generates.
+  - **salt**: A random `NSString` that GameKit uses to compute the hash and randomize it.
+  - **timestamp**: The signature’s creation date and time.
+  - **error**: If an error occurs, this parameter holds an error object that explains the error. Otherwise, the value of this parameter is `nil`.
 
 ## See Also
 
-- [var authenticateHandler: ((UIViewController?, (any Error)?) -> Void)?](gklocalplayer/authenticatehandler.md)
+### Authenticating the Local Player
+- [var authenticateHandler: ((UIViewController?, (any Error)?) -> Void)?](./authenticatehandler.md)
   A handler that GameKit calls while initializing the local player.
-- [var isAuthenticated: Bool](gklocalplayer/isauthenticated.md)
+- [var isAuthenticated: Bool](./isauthenticated.md)
   A Boolean value that indicates whether a local player has signed in to Game Center.
-- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gkplayerauthenticationdidchangenotificationname.md)
+- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/gkplayerauthenticationdidchangenotificationname.md)
   A notification that posts after GameKit authenticates the local player.
 
 

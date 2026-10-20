@@ -1,7 +1,8 @@
 # ARSkeleton
 
 **Framework**: ARKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The interface for the skeleton of a tracked body.
 
@@ -15,52 +16,57 @@ The interface for the skeleton of a tracked body.
 class ARSkeleton
 ```
 
+```objc
+@interface ARSkeleton : NSObject
+```
+
 #### Overview
 
 As a collection of joints, this protocol describes the state of a human body whose movements ARKit can track.
 
-The [`ARSkeleton3D`](arskeleton3d.md) subclass provides you with the position of a tracked body’s joints in 3D space, specifically with its [`jointLocalTransforms`](arskeleton3d/jointlocaltransforms-1m5a1.md) and [`jointModelTransforms`](arskeleton3d/jointmodeltransforms-dno4.md) properties.
+The [`ARSkeleton3D`](./arskeleton3d.md) subclass provides you with the position of a tracked body’s joints in 3D space, specifically with its [`jointLocalTransforms`](./arskeleton3d/jointlocaltransforms-1m5a1.md) and [`jointModelTransforms`](./arskeleton3d/jointmodeltransforms-dno4.md) properties.
 
-The [`ARSkeleton2D`](arskeleton2d.md) subclass provides you with the position of a tracked body’s joints in 2D space, by way of its [`jointLandmarks`](arskeleton2d/jointlandmarks-3en0x.md) property.
+The [`ARSkeleton2D`](./arskeleton2d.md) subclass provides you with the position of a tracked body’s joints in 2D space, by way of its [`jointLandmarks`](./arskeleton2d/jointlandmarks-3en0x.md) property.
 
 ## Topics
 
 ### Getting Joint Information
-- [var definition: ARSkeletonDefinition](arskeleton/definition.md)
+- [var definition: ARSkeletonDefinition](./arskeleton/definition.md)
   The particular configuration of joints that define a body’s current state.
-- [func isJointTracked(Int) -> Bool](arskeleton/isjointtracked(_:).md)
+- [func isJointTracked(Int) -> Bool](./arskeleton/isjointtracked%28_%29.md)
   Tells you whether ARKit tracks a joint at a particular index.
-- [ARSkeleton.JointName](arskeleton/jointname.md)
+- [ARSkeleton.JointName](./arskeleton/jointname.md)
   A name identifier for a joint.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [ARSkeleton2D](arskeleton2d.md)
-- [ARSkeleton3D](arskeleton3d.md)
+- [ARSkeleton2D](./arskeleton2d.md)
+- [ARSkeleton3D](./arskeleton3d.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Capturing Body Motion in 3D](capturing-body-motion-in-3d.md)
+### Body Data
+- [Capturing Body Motion in 3D](./capturing-body-motion-in-3d.md)
   Track a person in the physical environment and visualize their motion by applying the same body movements to a virtual character.
-- [class ARBody2D](arbody2d.md)
+- [class ARBody2D](./arbody2d.md)
   The screen-space representation of a person ARKit recognizes in the camera feed.
-- [class ARSkeleton3D](arskeleton3d.md)
+- [class ARSkeleton3D](./arskeleton3d.md)
   The skeleton of a human body that ARKit tracks in 3D space.
-- [class ARSkeleton2D](arskeleton2d.md)
+- [class ARSkeleton2D](./arskeleton2d.md)
   An object that describes the locations of a body’s joints in the camera feed.
-- [class ARSkeletonDefinition](arskeletondefinition.md)
+- [class ARSkeletonDefinition](./arskeletondefinition.md)
   The hierarchy of joints and their names.
 
 

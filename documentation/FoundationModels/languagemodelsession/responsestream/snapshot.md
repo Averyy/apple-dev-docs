@@ -1,7 +1,8 @@
 # LanguageModelSession.ResponseStream.Snapshot
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A snapshot of partially generated content.
 
@@ -19,17 +20,19 @@ A snapshot of partially generated content.
 struct Snapshot
 ```
 
+Available when `Content` conforms to `Generable`.
+
 ## Topics
 
 ### Inspecting a snapshot
-- [var content: Content.PartiallyGenerated](languagemodelsession/responsestream/snapshot/content.md)
+- [var content: Content.PartiallyGenerated](./snapshot/content.md)
   The content of the response.
-- [var rawContent: GeneratedContent](languagemodelsession/responsestream/snapshot/rawcontent.md)
+- [var rawContent: GeneratedContent](./snapshot/rawcontent.md)
   The raw content of the response.
-- [var transcriptEntries: ArraySlice<Transcript.Entry>](languagemodelsession/responsestream/snapshot/transcriptentries.md)
+- [var transcriptEntries: ArraySlice<Transcript.Entry>](./snapshot/transcriptentries.md)
   The list of transcript entries.
 ### Inspecting the token usage
-- [var usage: LanguageModelSession.Usage](languagemodelsession/responsestream/snapshot/usage.md)
+- [var usage: LanguageModelSession.Usage](./snapshot/usage.md)
   Information about how many tokens were used by this response.
 
 

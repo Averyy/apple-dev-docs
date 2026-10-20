@@ -1,7 +1,8 @@
 # DataDetector.Match.SemanticDetails.measurement(_:)
 
 **Framework**: DataDetection  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A match that the data detector determines represents a measurement.
 
@@ -22,7 +23,7 @@ case measurement(DataDetector.Match.SemanticDetails.Measurement)
 
 ## Parameters
 
-- `Measurement`: A [`DataDetector.Match.SemanticDetails.Measurement`](datadetector/match/semanticdetails/measurement.md) structure.
+- `Measurement`: A [`DataDetector.Match.SemanticDetails.Measurement`](./measurement.md) structure.
 
 
 ---

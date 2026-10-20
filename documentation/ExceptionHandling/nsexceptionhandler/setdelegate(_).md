@@ -1,7 +1,8 @@
 # setDelegate(_:)
 
 **Framework**: Exception Handling  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the delegate of the `NSExceptionHandler` object.
 
@@ -15,13 +16,18 @@ Sets the delegate of the `NSExceptionHandler` object.
 func setDelegate(_ anObject: Any!)
 ```
 
+```objc
+- (void) setDelegate:(id) anObject;
+```
+
 ## Parameters
 
-- `anObject`: The object to receive the delegation messages described in [`NSExceptionHandlerDelegate`](nsexceptionhandlerdelegate.md)
+- `anObject`: The object to receive the delegation messages described in [NSExceptionHandlerDelegate](../nsexceptionhandlerdelegate.md)
 
 ## See Also
 
-- [func delegate() -> Any!](nsexceptionhandler/delegate.md)
+### Getting and setting the delegate
+- [func delegate() -> Any!](./delegate%28%29.md)
   Returns the delegate of the `NSExceptionHandler` object.
 
 

@@ -1,7 +1,8 @@
 # init(unit:by:range:calendar:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates uniform bins covering the given range.
 

@@ -9,7 +9,7 @@
 
 ## Declaration
 
-```swift
+```cpp
 struct libkern::adopt_memory_t;
 ```
 

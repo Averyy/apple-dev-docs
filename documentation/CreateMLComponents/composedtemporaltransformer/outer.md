@@ -1,7 +1,8 @@
 # outer
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The outer transformer.
 
@@ -22,7 +23,8 @@ var outer: Outer
 
 ## See Also
 
-- [var inner: Inner](composedtemporaltransformer/inner.md)
+### Getting the properties
+- [var inner: Inner](./inner.md)
   The inner transformer.
 
 

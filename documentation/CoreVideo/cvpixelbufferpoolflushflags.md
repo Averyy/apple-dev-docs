@@ -1,7 +1,8 @@
 # CVPixelBufferPoolFlushFlags
 
 **Framework**: Core Video  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The flags to pass to flush the pool.
 
@@ -20,30 +21,35 @@ The flags to pass to flush the pool.
 struct CVPixelBufferPoolFlushFlags
 ```
 
+```c
+enum CVPixelBufferPoolFlushFlags : CVOptionFlags;
+```
+
 ## Topics
 
 ### Type Properties
-- [static var excessBuffers: CVPixelBufferPoolFlushFlags](cvpixelbufferpoolflushflags/excessbuffers.md)
+- [static var excessBuffers: CVPixelBufferPoolFlushFlags](./cvpixelbufferpoolflushflags/excessbuffers.md)
   The value to pass to flush all unused buffers regardless of age.
 ### Initializers
-- [init(rawValue: CVOptionFlags)](cvpixelbufferpoolflushflags/init(rawvalue:).md)
+- [init(rawValue: CVOptionFlags)](./cvpixelbufferpoolflushflags/init%28rawvalue%29.md)
   Creates a pixel buffer pool flush flags set with the options flags that you specify.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [class CVPixelBufferPool](cvpixelbufferpool.md)
+### Data types
+- [class CVPixelBufferPool](./cvpixelbufferpool.md)
   A reference to a pixel buffer pool object.
 
 

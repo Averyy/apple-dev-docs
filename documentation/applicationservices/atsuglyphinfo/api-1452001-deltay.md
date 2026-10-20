@@ -1,7 +1,8 @@
 # deltaY
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var deltaY: Float32
+```
+
+```c
+Float32 deltaY;
 ```
 
 

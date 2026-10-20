@@ -1,7 +1,8 @@
 # advanceIntervalForDelegateInvocation
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time interval, in seconds, the player item metadata output object messages its delegate earlier than normal.
 
@@ -20,19 +21,24 @@ The time interval, in seconds, the player item metadata output object messages i
 var advanceIntervalForDelegateInvocation: TimeInterval { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSTimeInterval advanceIntervalForDelegateInvocation;
+```
+
 #### Discussion
 
 If  possible, an `AVPlayerItemMetadataOutput` will message its delegate `advanceIntervalForDelegateInvocation` seconds earlier than otherwise. If the value you provide is large, effectively requesting provision of samples earlier than the `AVPlayerItemMetadataOutput` is prepared to act on them, the delegate will be invoked as soon as possible.
 
 ## See Also
 
-- [var delegate: (any AVPlayerItemMetadataOutputPushDelegate)?](avplayeritemmetadataoutput/delegate.md)
+### Configuring the delegate
+- [var delegate: (any AVPlayerItemMetadataOutputPushDelegate)?](./delegate.md)
   The delegate object.
-- [protocol AVPlayerItemMetadataOutputPushDelegate](avplayeritemmetadataoutputpushdelegate.md)
+- [protocol AVPlayerItemMetadataOutputPushDelegate](../avplayeritemmetadataoutputpushdelegate.md)
   Methods you can implement to provide additional metadata.
-- [var delegateQueue: dispatch_queue_t?](avplayeritemmetadataoutput/delegatequeue.md)
+- [var delegateQueue: dispatch_queue_t?](./delegatequeue.md)
   The dispatch queue on which messages are sent to the delegate.
-- [func setDelegate((any AVPlayerItemMetadataOutputPushDelegate)?, queue: dispatch_queue_t?)](avplayeritemmetadataoutput/setdelegate(_:queue:).md)
+- [func setDelegate((any AVPlayerItemMetadataOutputPushDelegate)?, queue: dispatch_queue_t?)](./setdelegate%28_,queue%29.md)
   Sets the delegate and a dispatch queue on which the delegate is called.
 
 

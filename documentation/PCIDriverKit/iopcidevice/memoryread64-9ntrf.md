@@ -1,17 +1,18 @@
 # MemoryRead64
 
 **Framework**: PCIDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reads a 64-bit value synchronously from the PCI device’s aperture at the specified memory index.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 void MemoryRead64(uint8_t memoryIndex, uint64_t offset, uint64_t *readData);
 ```
 
@@ -23,35 +24,36 @@ void MemoryRead64(uint8_t memoryIndex, uint64_t offset, uint64_t *readData);
 
 ## See Also
 
-- [MemoryRead8](iopcidevice/memoryread8-1edw0.md)
+### Reading and Writing Memory Locations
+- [MemoryRead8](./memoryread8-1edw0.md)
   Reads a 8-bit value synchronously from the PCI device’s aperture at the specified memory index.
-- [MemoryRead8](iopcidevice/memoryread8-7b2zp.md)
+- [MemoryRead8](./memoryread8-7b2zp.md)
   Reads a 8-bit value synchronously from the PCI device’s aperture at the specified memory index.
-- [MemoryRead16](iopcidevice/memoryread16-9qkdh.md)
+- [MemoryRead16](./memoryread16-9qkdh.md)
   Reads a 16-bit value synchronously from the PCI device’s aperture at the specified memory index.
-- [MemoryRead16](iopcidevice/memoryread16-50bq8.md)
+- [MemoryRead16](./memoryread16-50bq8.md)
   Reads a 16-bit value synchronously from the PCI device’s aperture at the specified memory index.
-- [MemoryRead32](iopcidevice/memoryread32-60hg9.md)
+- [MemoryRead32](./memoryread32-60hg9.md)
   Reads a 32-bit value synchronously from the PCI device’s aperture at the specified memory index.
-- [MemoryRead32](iopcidevice/memoryread32-84jap.md)
+- [MemoryRead32](./memoryread32-84jap.md)
   Reads a 32-bit value synchronously from the PCI device’s aperture at the specified memory index.
-- [MemoryRead64](iopcidevice/memoryread64-37uob.md)
+- [MemoryRead64](./memoryread64-37uob.md)
   Reads a 64-bit value synchronously from the PCI device’s aperture at the specified memory index.
-- [MemoryWrite8](iopcidevice/memorywrite8-1uey6.md)
+- [MemoryWrite8](./memorywrite8-1uey6.md)
   Writes an 8-bit value to the PCI device’s aperture at the specified memory index.
-- [MemoryWrite8](iopcidevice/memorywrite8-fzh6.md)
+- [MemoryWrite8](./memorywrite8-fzh6.md)
   Writes an 8-bit value to the PCI device’s aperture at the specified memory index.
-- [MemoryWrite16](iopcidevice/memorywrite16-8k6ch.md)
+- [MemoryWrite16](./memorywrite16-8k6ch.md)
   Writes an 16-bit value to the PCI device’s aperture at the specified memory index.
-- [MemoryWrite16](iopcidevice/memorywrite16-534yk.md)
+- [MemoryWrite16](./memorywrite16-534yk.md)
   Writes an 16-bit value to the PCI device’s aperture at the specified memory index.
-- [MemoryWrite32](iopcidevice/memorywrite32-4pmh.md)
+- [MemoryWrite32](./memorywrite32-4pmh.md)
   Writes an 32-bit value to the PCI device’s aperture at the specified memory index.
-- [MemoryWrite32](iopcidevice/memorywrite32-ow7r.md)
+- [MemoryWrite32](./memorywrite32-ow7r.md)
   Writes an 32-bit value to the PCI device’s aperture at the specified memory index.
-- [MemoryWrite64](iopcidevice/memorywrite64-8qyob.md)
+- [MemoryWrite64](./memorywrite64-8qyob.md)
   Writes an 64-bit value to the PCI device’s aperture at the specified memory index.
-- [MemoryWrite64](iopcidevice/memorywrite64-nvpu.md)
+- [MemoryWrite64](./memorywrite64-nvpu.md)
   Writes an 64-bit value to the PCI device’s aperture at the specified memory index.
 
 

@@ -1,14 +1,15 @@
 # registerNotificationPort
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.10
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn registerNotificationPort(mach_port_t port, UInt32 type, UInt32 refCon);
 ```
 

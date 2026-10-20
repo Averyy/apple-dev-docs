@@ -1,7 +1,8 @@
 # setSession(_:showVideoPreview:showAudioPreview:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the view’s capture session.
 
@@ -12,6 +13,10 @@ Sets the view’s capture session.
 
 ```swift
 func setSession(_ session: AVCaptureSession?, showVideoPreview: Bool, showAudioPreview: Bool)
+```
+
+```objc
+- (void) setSession:(AVCaptureSession *) session showVideoPreview:(BOOL) showVideoPreview showAudioPreview:(BOOL) showAudioPreview;
 ```
 
 #### Discussion
@@ -28,7 +33,8 @@ The capture view automatically starts and stops the default session. If you set 
 
 ## See Also
 
-- [var session: AVCaptureSession?](avcaptureview/session.md)
+### Configuring the capture session
+- [var session: AVCaptureSession?](./session.md)
   The view’s associated capture session.
 
 

@@ -1,7 +1,8 @@
 # UIPrintInfo.Duplex.shortEdge
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Duplex print that flips the back page along the short edge of the paper.
 
@@ -17,11 +18,16 @@ Duplex print that flips the back page along the short edge of the paper.
 case shortEdge
 ```
 
+```c
+UIPrintInfoDuplexShortEdge
+```
+
 ## See Also
 
-- [UIPrintInfo.Duplex.none](uiprintinfo/duplex-swift.enum/none.md)
+### Constants
+- [UIPrintInfo.Duplex.none](./none.md)
   No double-sided (duplex) printing; single-sided printing only.
-- [UIPrintInfo.Duplex.longEdge](uiprintinfo/duplex-swift.enum/longedge.md)
+- [UIPrintInfo.Duplex.longEdge](./longedge.md)
   Duplex printing that flips the back page along the long edge of the paper.
 
 

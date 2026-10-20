@@ -1,7 +1,8 @@
 # AppSchema.BooksIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies intent schemas in the books domain.
 
@@ -21,47 +22,48 @@ protocol BooksIntent : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var navigatePage: some AppSchemaIntent](appschema/booksintent/navigatepage.md)
+- [var navigatePage: some AppSchemaIntent](./booksintent/navigatepage.md)
   An intent schema that navigates to the next or previous page.
-- [var openBook: some AppSchemaIntent](appschema/booksintent/openbook.md)
+- [var openBook: some AppSchemaIntent](./booksintent/openbook.md)
   An intent schema that opens the specified book.
-- [var playAudiobook: some AppSchemaIntent](appschema/booksintent/playaudiobook.md)
+- [var playAudiobook: some AppSchemaIntent](./booksintent/playaudiobook.md)
   An intent schema that plays an audiobook.
-- [var search: some AppSchemaIntent](appschema/booksintent/search.md)
+- [var search: some AppSchemaIntent](./booksintent/search.md)
   An intent schema that opens the app and searches for the given term.
-- [var updateCharacterSpacing: some AppSchemaIntent](appschema/booksintent/updatecharacterspacing.md)
+- [var updateCharacterSpacing: some AppSchemaIntent](./booksintent/updatecharacterspacing.md)
   An intent schema that updates the character spacing for a book.
-- [var updateFontSize: some AppSchemaIntent](appschema/booksintent/updatefontsize.md)
+- [var updateFontSize: some AppSchemaIntent](./booksintent/updatefontsize.md)
   An intent schema that updates the font size for a book.
-- [var updateLineSpacing: some AppSchemaIntent](appschema/booksintent/updatelinespacing.md)
+- [var updateLineSpacing: some AppSchemaIntent](./booksintent/updatelinespacing.md)
   An intent schema that updates the line spacing for a book.
-- [var updateSettings: some AppSchemaIntent](appschema/booksintent/updatesettings.md)
+- [var updateSettings: some AppSchemaIntent](./booksintent/updatesettings.md)
   An intent schema that updates the settings for a book.
-- [var updateWordSpacing: some AppSchemaIntent](appschema/booksintent/updatewordspacing.md)
+- [var updateWordSpacing: some AppSchemaIntent](./booksintent/updatewordspacing.md)
   An intent schema that updates the word spacing for a book.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Intent](appschema/intent.md)
+- [AppSchema.Intent](./intent.md)
 
 ## See Also
 
-- [var navigatePage: some AppSchemaIntent](appschema/booksintent/navigatepage.md)
+### Actions
+- [var navigatePage: some AppSchemaIntent](./booksintent/navigatepage.md)
   An intent schema that navigates to the next or previous page.
-- [var openBook: some AppSchemaIntent](appschema/booksintent/openbook.md)
+- [var openBook: some AppSchemaIntent](./booksintent/openbook.md)
   An intent schema that opens the specified book.
-- [var updateCharacterSpacing: some AppSchemaIntent](appschema/booksintent/updatecharacterspacing.md)
+- [var updateCharacterSpacing: some AppSchemaIntent](./booksintent/updatecharacterspacing.md)
   An intent schema that updates the character spacing for a book.
-- [var updateFontSize: some AppSchemaIntent](appschema/booksintent/updatefontsize.md)
+- [var updateFontSize: some AppSchemaIntent](./booksintent/updatefontsize.md)
   An intent schema that updates the font size for a book.
-- [var updateLineSpacing: some AppSchemaIntent](appschema/booksintent/updatelinespacing.md)
+- [var updateLineSpacing: some AppSchemaIntent](./booksintent/updatelinespacing.md)
   An intent schema that updates the line spacing for a book.
-- [var updateSettings: some AppSchemaIntent](appschema/booksintent/updatesettings.md)
+- [var updateSettings: some AppSchemaIntent](./booksintent/updatesettings.md)
   An intent schema that updates the settings for a book.
-- [var updateWordSpacing: some AppSchemaIntent](appschema/booksintent/updatewordspacing.md)
+- [var updateWordSpacing: some AppSchemaIntent](./booksintent/updatewordspacing.md)
   An intent schema that updates the word spacing for a book.
 
 

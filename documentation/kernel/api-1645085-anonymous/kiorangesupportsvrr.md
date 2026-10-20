@@ -1,14 +1,15 @@
 # kIORangeSupportsVRR
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 kIORangeSupportsVRR = 0x00000010
 ```
 

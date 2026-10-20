@@ -19,52 +19,53 @@ If a QuickTime VR movie contains any panoramic nodes, that movie also contains a
 ## Topics
 
 ### Storing QuickTime VR files
-- [Single-node panoramic movies](single-node_panoramic_movies.md)
+- [Single-node panoramic movies](./single-node_panoramic_movies.md)
   Store a QTVR track, a panorama track, and a panorama image track in a single-node panoramic movie.
-- [Single-node object movies](single-node_object_movies.md)
+- [Single-node object movies](./single-node_object_movies.md)
   Store a QTVR track, an object track, and an object image track in a single-node object movie.
-- [Multinode movies](multinode_movies.md)
+- [Multinode movies](./multinode_movies.md)
   Store any number of object and panoramic nodes in a multinode QuickTime VR movie.
-- [Getting the name of a QuickTime VR node](getting_the_name_of_a_quicktime_vr_node.md)
+- [Getting the name of a QuickTime VR node](./getting_the_name_of_a_quicktime_vr_node.md)
   Retrieve information from a QuickTime VR node with QuickTime atom container functions.
-- [Adding custom atoms in a QuickTime VR movie](adding_custom_atoms_in_a_quicktime_vr_movie.md)
+- [Adding custom atoms in a QuickTime VR movie](./adding_custom_atoms_in_a_quicktime_vr_movie.md)
   Provide additional information about a QuickTime VR movie using custom atoms.
-- [Adding atom containers in a QuickTime VR Movie](adding_atom_containers_in_a_quicktime_vr_movie.md)
+- [Adding atom containers in a QuickTime VR Movie](./adding_atom_containers_in_a_quicktime_vr_movie.md)
   Add node information to your QuickTime VR world.
-- [Optimizing QuickTime VR movies for web playback](optimizing_quicktime_vr_movies_for_web_playback.md)
+- [Optimizing QuickTime VR movies for web playback](./optimizing_quicktime_vr_movies_for_web_playback.md)
   Prevent having to download an entire movie before starting playback.
 
 ## See Also
 
-- [Sprite media](sprite_media.md)
+### Media data atom types
+- [Sprite media](./sprite_media.md)
   Sprite media is used to store character-based animation data in QuickTime movies.
-- [Sprite track properties](sprite_track_properties.md)
+- [Sprite track properties](./sprite_track_properties.md)
   Define properties that apply to an entire sprite track.
-- [Sprite track media format](sprite_track_media_format.md)
+- [Sprite track media format](./sprite_track_media_format.md)
   A media format for that stores sprite track information in atoms.
-- [Sprite media atom and data types](sprite_media_atom_and_data_types.md)
+- [Sprite media atom and data types](./sprite_media_atom_and_data_types.md)
   Atoms that represent sprite media and data types.
-- [Sprite button behaviors](sprite_button_behaviors.md)
+- [Sprite button behaviors](./sprite_button_behaviors.md)
   Specify simple button behaviors for sprites in a sprite track.
-- [QT atom container description key](qt_atom_container_description_key.md)
+- [QT atom container description key](./qt_atom_container_description_key.md)
   Build QT atom container-based data structures.
-- [Sprite media handler track properties QT atom container format](sprite_media_handler_track_properties_qt_atom_container_format.md)
+- [Sprite media handler track properties QT atom container format](./sprite_media_handler_track_properties_qt_atom_container_format.md)
   Set sprite media handler track properties in a QT atom container.
-- [Sprite media handler sample QT atom container formats](sprite_media_handler_sample_qt_atom_container_formats.md)
+- [Sprite media handler sample QT atom container formats](./sprite_media_handler_sample_qt_atom_container_formats.md)
   Set sprite media handlers in QT atom containers.
-- [Wired action grammar](wired_action_grammar.md)
+- [Wired action grammar](./wired_action_grammar.md)
   Embed QT event handlers in their media samples.
-- [Tween media](tween_media.md)
+- [Tween media](./tween_media.md)
   Store pairs of values to be interpolated between in QuickTime movies using tween media.
-- [3D media](3d_media.md)
+- [3D media](./api-3d_media.md)
   Store 3D image data in a base media in QuickTime movies.
-- [VR media](vr_media.md)
+- [VR media](./vr_media.md)
   Atoms that describe the QuickTime VR world.
-- [Node parent atom](node_parent_atom.md)
+- [Node parent atom](./node_parent_atom.md)
   An atom that is the parent of one or more node ID atoms.
-- [Node location atom structure ('nloc')](node_location_atom_structure.md)
+- [Node location atom structure ('nloc')](./node_location_atom_structure.md)
   An atom that describes the type of a node and its location.
-- [Custom cursor atom](custom_cursor_atom.md)
+- [Custom cursor atom](./custom_cursor_atom.md)
   An atom you use to replace the default cursors used by QuickTime VR.
 
 

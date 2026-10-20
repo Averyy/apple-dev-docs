@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the node is casting light.
 
@@ -20,13 +21,18 @@ A Boolean value that indicates whether the node is casting light.
 var isEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isEnabled) BOOL enabled;
+```
+
 #### Discussion
 
-If the value is [`true`](https://developer.apple.com/documentation/swift/true), the light is enabled and affects sprite nodes in the scene. The default is [`true`](https://developer.apple.com/documentation/swift/true).
+If the value is [`true`](../../Swift/true.md), the light is enabled and affects sprite nodes in the scene. The default is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var categoryBitMask: UInt32](sklightnode/categorybitmask.md)
+### Determining Whether a Light Node Is Active
+- [var categoryBitMask: UInt32](./categorybitmask.md)
   A mask that defines which categories this light belongs to.
 
 

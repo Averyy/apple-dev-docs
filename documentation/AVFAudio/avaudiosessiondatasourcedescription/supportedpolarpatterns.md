@@ -1,7 +1,8 @@
 # supportedPolarPatterns
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of directivity configurations supported by the data source.
 
@@ -18,19 +19,24 @@ The set of directivity configurations supported by the data source.
 var supportedPolarPatterns: [AVAudioSession.PolarPattern]? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSArray<NSString *> * supportedPolarPatterns;
+```
+
 #### Discussion
 
-This property returns an array of one or more polar patterns, or [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if the data source doesn’t support directivity configuration. This feature is available only on the built-in microphone port for certain devices.
+This property returns an array of one or more polar patterns, or [`nil`](../../ObjectiveC/nil-227m0.md) if the data source doesn’t support directivity configuration. This feature is available only on the built-in microphone port for certain devices.
 
 ## See Also
 
-- [var selectedPolarPattern: AVAudioSession.PolarPattern?](avaudiosessiondatasourcedescription/selectedpolarpattern.md)
+### Configuring microphone directivity
+- [var selectedPolarPattern: AVAudioSession.PolarPattern?](./selectedpolarpattern.md)
   The data source’s active polar pattern.
-- [var preferredPolarPattern: AVAudioSession.PolarPattern?](avaudiosessiondatasourcedescription/preferredpolarpattern.md)
+- [var preferredPolarPattern: AVAudioSession.PolarPattern?](./preferredpolarpattern.md)
   The preferred directivity configuration for the data source.
-- [func setPreferredPolarPattern(AVAudioSession.PolarPattern?) throws](avaudiosessiondatasourcedescription/setpreferredpolarpattern(_:).md)
+- [func setPreferredPolarPattern(AVAudioSession.PolarPattern?) throws](./setpreferredpolarpattern%28_%29.md)
   Selects the preferred directivity configuration for the data source.
-- [AVAudioSession.PolarPattern](avaudiosession/polarpattern.md)
+- [AVAudioSession.PolarPattern](../avaudiosession/polarpattern.md)
   Constants that describe the possible polar patterns of the data source on an iOS device.
 
 

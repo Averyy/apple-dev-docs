@@ -1,7 +1,8 @@
 # positionX(_:y:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a constraint that restricts both coordinates of a node’s position.
 
@@ -10,7 +11,7 @@ Creates a constraint that restricts both coordinates of a node’s position.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Creates a constraint that restricts both coordinates of a node’s position.
 class func positionX(_ xRange: SKRange, y yRange: SKRange) -> Self
 ```
 
+```objc
++ (instancetype) positionX:(SKRange *) xRange Y:(SKRange *) yRange;
+```
+
 ## Mentions
 
-- [Creating Position Constraints](creating-position-constraints.md)
+- [Creating Position Constraints](../creating-position-constraints.md)
 
 #### Return Value
 
@@ -30,7 +35,7 @@ A new constraint.
 
 #### Discussion
 
-Each time constraints are applied, the node’s [`position`](sknode/position.md) property is clamped so that both coordinates lie inside the specified ranges.
+Each time constraints are applied, the node’s [`position`](../sknode/position.md) property is clamped so that both coordinates lie inside the specified ranges.
 
 ## Parameters
 
@@ -39,11 +44,12 @@ Each time constraints are applied, the node’s [`position`](sknode/position.md)
 
 ## See Also
 
-- [Creating Position Constraints](creating-position-constraints.md)
+### Creating Position Constraints
+- [Creating Position Constraints](../creating-position-constraints.md)
   Create a position constraint and add it to a node.
-- [class func positionX(SKRange) -> Self](skconstraint/positionx(_:).md)
+- [class func positionX(SKRange) -> Self](./positionx%28_%29.md)
   Creates a constraint that restricts the x-coordinate of a node’s position.
-- [class func positionY(SKRange) -> Self](skconstraint/positiony(_:).md)
+- [class func positionY(SKRange) -> Self](./positiony%28_%29.md)
   Creates a constraint that restricts the y-coordinate of a node’s position.
 
 

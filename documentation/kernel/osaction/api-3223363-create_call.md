@@ -1,14 +1,15 @@
 # Create_Call
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t Create_Call(OSObject *target, uint64_t targetmsgid, uint64_t msgid, size_t referenceSize, OSAction **action);
 ```
 

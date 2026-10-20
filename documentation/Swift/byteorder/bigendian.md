@@ -1,7 +1,8 @@
 # ByteOrder.bigEndian
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Bytes are ordered with the most significant bits starting at the lowest memory address.
 

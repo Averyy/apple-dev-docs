@@ -1,7 +1,8 @@
 # kCMTextMarkupGenericFontName_ProportionalSansSerif
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A proportional font without serifs.
 
@@ -20,29 +21,34 @@ A proportional font without serifs.
 let kCMTextMarkupGenericFontName_ProportionalSansSerif: CFString
 ```
 
+```c
+extern CFStringRef const kCMTextMarkupGenericFontName_ProportionalSansSerif;
+```
+
 ## See Also
 
-- [let kCMTextMarkupGenericFontName_Default: CFString](kcmtextmarkupgenericfontname_default.md)
+### Font Names
+- [let kCMTextMarkupGenericFontName_Default: CFString](./kcmtextmarkupgenericfontname_default.md)
   The default font.
-- [let kCMTextMarkupGenericFontName_Serif: CFString](kcmtextmarkupgenericfontname_serif.md)
+- [let kCMTextMarkupGenericFontName_Serif: CFString](./kcmtextmarkupgenericfontname_serif.md)
   A font with serifs.
-- [let kCMTextMarkupGenericFontName_SansSerif: CFString](kcmtextmarkupgenericfontname_sansserif.md)
+- [let kCMTextMarkupGenericFontName_SansSerif: CFString](./kcmtextmarkupgenericfontname_sansserif.md)
   A font without serifs.
-- [let kCMTextMarkupGenericFontName_Monospace: CFString](kcmtextmarkupgenericfontname_monospace.md)
+- [let kCMTextMarkupGenericFontName_Monospace: CFString](./kcmtextmarkupgenericfontname_monospace.md)
   A monospaced font with or without serifs.
-- [let kCMTextMarkupGenericFontName_MonospaceSerif: CFString](kcmtextmarkupgenericfontname_monospaceserif.md)
+- [let kCMTextMarkupGenericFontName_MonospaceSerif: CFString](./kcmtextmarkupgenericfontname_monospaceserif.md)
   A monospaced font with serifs.
-- [let kCMTextMarkupGenericFontName_MonospaceSansSerif: CFString](kcmtextmarkupgenericfontname_monospacesansserif.md)
+- [let kCMTextMarkupGenericFontName_MonospaceSansSerif: CFString](./kcmtextmarkupgenericfontname_monospacesansserif.md)
   A monospaced font without serifs.
-- [let kCMTextMarkupGenericFontName_ProportionalSerif: CFString](kcmtextmarkupgenericfontname_proportionalserif.md)
+- [let kCMTextMarkupGenericFontName_ProportionalSerif: CFString](./kcmtextmarkupgenericfontname_proportionalserif.md)
   A proportional font with serifs.
-- [let kCMTextMarkupGenericFontName_SmallCapital: CFString](kcmtextmarkupgenericfontname_smallcapital.md)
+- [let kCMTextMarkupGenericFontName_SmallCapital: CFString](./kcmtextmarkupgenericfontname_smallcapital.md)
   A font with lowercase letters set as small capital letters.
-- [let kCMTextMarkupGenericFontName_Casual: CFString](kcmtextmarkupgenericfontname_casual.md)
+- [let kCMTextMarkupGenericFontName_Casual: CFString](./kcmtextmarkupgenericfontname_casual.md)
   A casual font.
-- [let kCMTextMarkupGenericFontName_Cursive: CFString](kcmtextmarkupgenericfontname_cursive.md)
+- [let kCMTextMarkupGenericFontName_Cursive: CFString](./kcmtextmarkupgenericfontname_cursive.md)
   A cursive font.
-- [let kCMTextMarkupGenericFontName_Fantasy: CFString](kcmtextmarkupgenericfontname_fantasy.md)
+- [let kCMTextMarkupGenericFontName_Fantasy: CFString](./kcmtextmarkupgenericfontname_fantasy.md)
   A fantasy font.
 
 

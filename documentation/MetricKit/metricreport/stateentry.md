@@ -1,7 +1,8 @@
 # MetricReport.StateEntry
 
 **Framework**: MetricKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A metric entry scoped to a specific recorded app state.
 
@@ -19,28 +20,28 @@ struct StateEntry
 
 #### Discussion
 
-`StateEntry` is only present when state reporting is enabled via [`init(enabledStateReportingDomains:)`](metricmanager/init(enabledstatereportingdomains:).md). Access state entries through [`stateEntries`](metricreport/stateentries.md).
+`StateEntry` is only present when state reporting is enabled via [`init(enabledStateReportingDomains:)`](../metricmanager/init%28enabledstatereportingdomains%29.md). Access state entries through [`stateEntries`](./stateentries.md).
 
-Each entry corresponds to one [`MetricManager.ReportedState`](metricmanager/reportedstate.md) and contains the metric values aggregated while the app was in that state. Only a subset of metrics appear in state entries, including hang time, hitch time, app termination counts, signpost intervals, location activity time, and app runtime metrics.
+Each entry corresponds to one [`MetricManager.ReportedState`](../metricmanager/reportedstate.md) and contains the metric values aggregated while the app was in that state. Only a subset of metrics appear in state entries, including hang time, hitch time, app termination counts, signpost intervals, location activity time, and app runtime metrics.
 
 ## Topics
 
 ### State details
-- [let state: MetricManager.ReportedState](metricreport/stateentry/state.md)
+- [let state: MetricManager.ReportedState](./stateentry/state.md)
   StateReporting information during which this entry was collected.
 ### Metric values
-- [let values: [MetricResult]](metricreport/stateentry/values.md)
+- [let values: [MetricResult]](./stateentry/values.md)
   The metric values for this entry.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

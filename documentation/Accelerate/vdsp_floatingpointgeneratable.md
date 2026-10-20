@@ -1,7 +1,8 @@
 # vDSP_FloatingPointGeneratable
 
 **Framework**: Accelerate  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Types that support vectorized window generation.
 
@@ -11,7 +12,7 @@ Types that support vectorized window generation.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -23,17 +24,17 @@ protocol vDSP_FloatingPointGeneratable : BinaryFloatingPoint
 ## Relationships
 
 ### Inherits From
-- [AdditiveArithmetic](../swift/additivearithmetic.md)
-- [BinaryFloatingPoint](../swift/binaryfloatingpoint.md)
-- [Comparable](../swift/comparable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByFloatLiteral](../swift/expressiblebyfloatliteral.md)
-- [ExpressibleByIntegerLiteral](../swift/expressiblebyintegerliteral.md)
-- [FloatingPoint](../swift/floatingpoint.md)
-- [Hashable](../swift/hashable.md)
-- [Numeric](../swift/numeric.md)
-- [SignedNumeric](../swift/signednumeric.md)
-- [Strideable](../swift/strideable.md)
+- [AdditiveArithmetic](../Swift/additivearithmetic.md)
+- [BinaryFloatingPoint](../Swift/binaryfloatingpoint.md)
+- [Comparable](../Swift/comparable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByFloatLiteral](../Swift/expressiblebyfloatliteral.md)
+- [ExpressibleByIntegerLiteral](../Swift/expressiblebyintegerliteral.md)
+- [FloatingPoint](../Swift/floatingpoint.md)
+- [Hashable](../Swift/hashable.md)
+- [Numeric](../Swift/numeric.md)
+- [SignedNumeric](../Swift/signednumeric.md)
+- [Strideable](../Swift/strideable.md)
 
 
 ---

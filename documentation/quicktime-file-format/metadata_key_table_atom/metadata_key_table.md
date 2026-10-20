@@ -1,15 +1,17 @@
 # Metadata key table
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 An array of metadata key atoms.
 
 ## See Also
 
-- [Size](metadata_key_table_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit unsigned integer that indicates the size in bytes of the atom structure.
-- [Type](metadata_key_table_atom/type.md)
+- [Type](./type.md)
   A 32-bit unsigned integer value.
 
 

@@ -1,7 +1,8 @@
 # CTCellularPlanProperties
 
 **Framework**: Core Telephony  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object you use for an eSIM.
 
@@ -16,6 +17,10 @@ An object you use for an eSIM.
 class CTCellularPlanProperties
 ```
 
+```objc
+@interface CTCellularPlanProperties : NSObject
+```
+
 #### Overview
 
 Use `CTCellularPlanProperties` to set the capabilities of your eSIMs.
@@ -23,40 +28,41 @@ Use `CTCellularPlanProperties` to set the capabilities of your eSIMs.
 ## Topics
 
 ### Getting the eSIM properties
-- [var associatedIccid: String?](ctcellularplanproperties/associatediccid.md)
+- [var associatedIccid: String?](./ctcellularplanproperties/associatediccid.md)
   The integrated circuit card identifier (ICCID) that identifies a SIM.
-- [var simCapability: CTCellularPlanCapability](ctcellularplanproperties/simcapability.md)
+- [var simCapability: CTCellularPlanCapability](./ctcellularplanproperties/simcapability.md)
   The available type of cellular plan that your eSIM supports.
-- [var supportedRegionCodes: [Locale.Region]](ctcellularplanproperties/supportedregioncodes-yhu5.md)
+- [var supportedRegionCodes: [Locale.Region]](./ctcellularplanproperties/supportedregioncodes-yhu5.md)
   The available regions that your eSIM supports.
-- [CTCellularPlanProperties.lifecycle](ctcellularplanproperties/lifecycle.md)
+- [CTCellularPlanProperties.lifecycle](./ctcellularplanproperties/lifecycle.md)
   A type that contains lifecycle details for a time-limited cellular plan.
-- [var lifecycleProperties: CTCellularPlanProperties.lifecycle?](ctcellularplanproperties/lifecycleproperties.md)
+- [var lifecycleProperties: CTCellularPlanProperties.lifecycle?](./ctcellularplanproperties/lifecycleproperties.md)
   The lifecycle details for a time-limited cellular plan.
 ### Initializers
-- [init?(coder: NSCoder)](ctcellularplanproperties/init(coder:).md)
+- [init?(coder: NSCoder)](./ctcellularplanproperties/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class CTCellularPlanProvisioning](ctcellularplanprovisioning.md)
+### eSIM
+- [class CTCellularPlanProvisioning](./ctcellularplanprovisioning.md)
   An object you use to download and install a carrier eSIM.
-- [class CTCellularPlanProvisioningRequest](ctcellularplanprovisioningrequest.md)
+- [class CTCellularPlanProvisioningRequest](./ctcellularplanprovisioningrequest.md)
   A request specifying an eSIM to download and install.
-- [enum CTCellularPlanCapability](ctcellularplancapability.md)
+- [enum CTCellularPlanCapability](./ctcellularplancapability.md)
   The type of cellular plan available for an eSIM.
 
 

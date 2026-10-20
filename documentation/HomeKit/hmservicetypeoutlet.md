@@ -1,7 +1,8 @@
 # HMServiceTypeOutlet
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An outlet service.
 
@@ -19,15 +20,20 @@ An outlet service.
 let HMServiceTypeOutlet: String
 ```
 
+```c
+extern NSString * const HMServiceTypeOutlet;
+```
+
 ## See Also
 
-- [let HMServiceTypeSwitch: String](hmservicetypeswitch.md)
+### Power and Switches
+- [let HMServiceTypeSwitch: String](./hmservicetypeswitch.md)
   A switch service.
-- [let HMServiceTypeBattery: String](hmservicetypebattery.md)
+- [let HMServiceTypeBattery: String](./hmservicetypebattery.md)
   A battery service.
-- [let HMServiceTypeStatefulProgrammableSwitch: String](hmservicetypestatefulprogrammableswitch.md)
+- [let HMServiceTypeStatefulProgrammableSwitch: String](./hmservicetypestatefulprogrammableswitch.md)
   A stateful programmable switch service.
-- [let HMServiceTypeStatelessProgrammableSwitch: String](hmservicetypestatelessprogrammableswitch.md)
+- [let HMServiceTypeStatelessProgrammableSwitch: String](./hmservicetypestatelessprogrammableswitch.md)
   A stateless programmable switch service.
 
 

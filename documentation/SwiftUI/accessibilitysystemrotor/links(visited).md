@@ -1,7 +1,8 @@
 # links(visited:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 System Rotors allowing users to iterate through links or visited links.
 
@@ -22,7 +23,8 @@ static func links(visited: Bool) -> AccessibilitySystemRotor
 
 ## See Also
 
-- [static var links: AccessibilitySystemRotor](accessibilitysystemrotor/links.md)
+### Iterating through links
+- [static var links: AccessibilitySystemRotor](./links.md)
   System Rotor allowing users to iterate through all links.
 
 

@@ -1,7 +1,8 @@
 # notationName
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the name of the notation associated with the receiver.
 
@@ -15,6 +16,10 @@ Returns the name of the notation associated with the receiver.
 var notationName: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * notationName;
+```
+
 #### Return Value
 
 The name of the notation associated with the receiver.
@@ -25,11 +30,12 @@ Notations are applicable to unparsed external entities, processing instructions,
 
 ## See Also
 
-- [var isExternal: Bool](xmldtdnode/isexternal.md)
+### Managing DTD Identifiers
+- [var isExternal: Bool](./isexternal.md)
   True if the system id is set. Valid for entities and notations.
-- [var publicID: String?](xmldtdnode/publicid.md)
+- [var publicID: String?](./publicid.md)
   Returns the public identifier associated with the receiver.
-- [var systemID: String?](xmldtdnode/systemid.md)
+- [var systemID: String?](./systemid.md)
   Returns the system identifier associated with the receiver.
 
 

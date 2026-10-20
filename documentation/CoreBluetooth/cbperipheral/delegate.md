@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate object specified to receive peripheral events.
 
@@ -20,13 +21,18 @@ The delegate object specified to receive peripheral events.
 weak var delegate: (any CBPeripheralDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<CBPeripheralDelegate> delegate;
+```
+
 #### Discussion
 
-For information about how to implement your peripheral delegate, see [`CBPeripheralDelegate`](cbperipheraldelegate.md).
+For information about how to implement your peripheral delegate, see [`CBPeripheralDelegate`](../cbperipheraldelegate.md).
 
 ## See Also
 
-- [var name: String?](cbperipheral/name.md)
+### Identifying a Peripheral
+- [var name: String?](./name.md)
   The name of the peripheral.
 
 

@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stored temporal feature count.
 
@@ -22,7 +23,8 @@ var count: Int? { get }
 
 ## See Also
 
-- [var features: [TemporalFeature<Feature>]](preprocessedfeaturesequence/features.md)
+### Getting the properties
+- [var features: [TemporalFeature<Feature>]](./features.md)
   The stored temporal features.
 
 

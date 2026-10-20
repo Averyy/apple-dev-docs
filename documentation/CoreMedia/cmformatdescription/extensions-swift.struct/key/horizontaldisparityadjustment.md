@@ -1,7 +1,8 @@
 # horizontalDisparityAdjustment
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates a relative shift of the left and right images, which changes the zero parallax plane.
 

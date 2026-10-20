@@ -1,7 +1,8 @@
 # init(metalLayer:)
 
 **Framework**: Core Animation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a display link for Metal from a Core Animation layer.
 
@@ -17,6 +18,10 @@ Creates a display link for Metal from a Core Animation layer.
 
 ```swift
 init(metalLayer layer: CAMetalLayer)
+```
+
+```objc
+- (instancetype) initWithMetalLayer:(CAMetalLayer *) layer;
 ```
 
 ## Parameters

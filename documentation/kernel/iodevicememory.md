@@ -1,7 +1,8 @@
 # IODeviceMemory
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 An IOMemoryDescriptor used for device physical memory ranges.
 
@@ -10,7 +11,7 @@ An IOMemoryDescriptor used for device physical memory ranges.
 
 ## Declaration
 
-```swift
+```cpp
 class IODeviceMemory : IOMemoryDescriptor
 ```
 
@@ -21,38 +22,39 @@ The IODeviceMemory class is a simple subclass of IOMemoryDescriptor that uses it
 ## Topics
 
 ### Miscellaneous
-- [arrayFromList](iodevicememory/1811066-arrayfromlist.md)
+- [arrayFromList](./iodevicememory/api-1811066-arrayfromlist.md)
   Constructs an OSArray of IODeviceMemory instances, each describing one physical range, and a tag value.
-- [withRange](iodevicememory/1811085-withrange.md)
+- [withRange](./iodevicememory/api-1811085-withrange.md)
   Constructs an IODeviceMemory instance, describing one physical range.
-- [withSubRange](iodevicememory/1811112-withsubrange.md)
+- [withSubRange](./iodevicememory/api-1811112-withsubrange.md)
   Constructs an IODeviceMemory instance, describing a subset of an existing IODeviceMemory range.
 ### DataTypes
-- [InitElement](iodevicememory/initelement.md)
+- [InitElement](./iodevicememory/initelement.md)
 ### Instance Methods
-- [- getMetaClass](iodevicememory/1392267-getmetaclass.md)
+- [- getMetaClass](./iodevicememory/api-1392267-getmetaclass.md)
 ### Type Methods
-- [+ arrayFromList](iodevicememory/1392273-arrayfromlist.md)
-- [+ withRange](iodevicememory/1392276-withrange.md)
-- [+ withSubRange](iodevicememory/1392269-withsubrange.md)
+- [+ arrayFromList](./iodevicememory/api-1392273-arrayfromlist.md)
+- [+ withRange](./iodevicememory/api-1392276-withrange.md)
+- [+ withSubRange](./iodevicememory/api-1392269-withsubrange.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOMemoryDescriptor](iomemorydescriptor.md)
+- [IOMemoryDescriptor](./iomemorydescriptor.md)
 
 ## See Also
 
-- [IOBufferMemoryDescriptor](iobuffermemorydescriptor.md)
+### Descriptors
+- [IOBufferMemoryDescriptor](./iobuffermemorydescriptor.md)
   A simple memory descriptor that allocates its own buffer memory.
-- [IOGeneralMemoryDescriptor](iogeneralmemorydescriptor.md)
-- [IOInterleavedMemoryDescriptor](iointerleavedmemorydescriptor.md)
+- [IOGeneralMemoryDescriptor](./iogeneralmemorydescriptor.md)
+- [IOInterleavedMemoryDescriptor](./iointerleavedmemorydescriptor.md)
   The IOInterleavedMemoryDescriptor object describes a memory area made up of portions of several other IOMemoryDescriptors.
-- [IOMultiMemoryDescriptor](iomultimemorydescriptor.md)
+- [IOMultiMemoryDescriptor](./iomultimemorydescriptor.md)
   The IOMultiMemoryDescriptor object describes a memory area made up of several other IOMemoryDescriptors.
-- [IOSubMemoryDescriptor](iosubmemorydescriptor.md)
+- [IOSubMemoryDescriptor](./iosubmemorydescriptor.md)
   The IOSubMemoryDescriptor object describes a memory area made up of a portion of another IOMemoryDescriptor.
-- [IOMemoryDescriptor](iomemorydescriptor.md)
+- [IOMemoryDescriptor](./iomemorydescriptor.md)
   An abstract base class that defines common methods for describing physical or virtual memory.
 
 

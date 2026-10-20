@@ -1,7 +1,8 @@
 # WidgetBundle
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A container used to expose multiple widgets from a single widget extension.
 
@@ -37,35 +38,36 @@ struct GameWidgets: WidgetBundle {
 ## Topics
 
 ### Implementing a widget bundle
-- [var body: Self.Body](widgetbundle/body-swift.property.md)
+- [var body: Self.Body](./widgetbundle/body-swift.property.md)
   Declares the group of widgets that an app supports.
-- [associatedtype Body : Widget](widgetbundle/body-swift.associatedtype.md)
+- [associatedtype Body : Widget](./widgetbundle/body-swift.associatedtype.md)
   The type of widget that represents the content of the bundle.
-- [struct WidgetBundleBuilder](widgetbundlebuilder.md)
+- [struct WidgetBundleBuilder](./widgetbundlebuilder.md)
   A custom attribute that constructs a widget bundle’s body.
 ### Running a widget bundle
-- [init()](widgetbundle/init.md)
+- [init()](./widgetbundle/init%28%29.md)
   Creates a widget bundle using the bundle’s body as its content.
-- [static func main()](widgetbundle/main.md)
+- [static func main()](./widgetbundle/main%28%29.md)
   Initializes and runs the widget bundle.
 
 ## See Also
 
-- [Building Widgets Using WidgetKit and SwiftUI](../widgetkit/building-widgets-using-widgetkit-and-swiftui.md)
+### Creating widgets
+- [Building Widgets Using WidgetKit and SwiftUI](../WidgetKit/building-widgets-using-widgetkit-and-swiftui.md)
   Create widgets to show your app’s content on the Home screen, with custom intents for user-customizable settings.
-- [Creating a widget extension](../widgetkit/creating-a-widget-extension.md)
+- [Creating a widget extension](../WidgetKit/creating-a-widget-extension.md)
   Display your app’s content in a convenient, informative widget on various devices.
-- [Keeping a widget up to date](../widgetkit/keeping-a-widget-up-to-date.md)
+- [Keeping a widget up to date](../WidgetKit/keeping-a-widget-up-to-date.md)
   Plan your widget’s timeline to show timely, relevant information using dynamic views, and update the timeline when things change.
-- [Making a configurable widget](../widgetkit/making-a-configurable-widget.md)
+- [Making a configurable widget](../WidgetKit/making-a-configurable-widget.md)
   Give people the option to customize their widgets by adding a custom app intent to your project.
-- [protocol Widget](widget.md)
+- [protocol Widget](./widget.md)
   The configuration and content of a widget to display on the Home screen or in Notification Center.
-- [struct LimitedAvailabilityConfiguration](limitedavailabilityconfiguration.md)
+- [struct LimitedAvailabilityConfiguration](./limitedavailabilityconfiguration.md)
   A type-erased widget configuration.
-- [protocol WidgetConfiguration](widgetconfiguration.md)
+- [protocol WidgetConfiguration](./widgetconfiguration.md)
   A type that describes a widget’s content.
-- [struct EmptyWidgetConfiguration](emptywidgetconfiguration.md)
+- [struct EmptyWidgetConfiguration](./emptywidgetconfiguration.md)
   An empty widget configuration.
 
 

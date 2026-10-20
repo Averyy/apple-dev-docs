@@ -1,7 +1,8 @@
 # visionOS(_:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Configure the minimum deployment target version for the visionOS platform.
 
@@ -20,7 +21,7 @@ A `SupportedPlatform` instance.
 
 #### Discussion
 
-> **Note**: First available in PackageDescription 5.9
+> **Since**: First available in PackageDescription 5.9
 
 ## Parameters
 
@@ -28,11 +29,12 @@ A `SupportedPlatform` instance.
 
 ## See Also
 
-- [static func visionOS(String) -> SupportedPlatform](supportedplatform/visionos(_:)-6ur2u.md)
+### Supporting visionOS
+- [static func visionOS(String) -> SupportedPlatform](./visionos%28_%29-6ur2u.md)
   Configure the minimum deployment target version for the visionOS platform using a custom version string.
-- [static let visionOS: Platform](platform/visionos.md)
+- [static let visionOS: Platform](../platform/visionos.md)
   The visionOS platform.
-- [SupportedPlatform.VisionOSVersion](supportedplatform/visionosversion.md)
+- [SupportedPlatform.VisionOSVersion](./visionosversion.md)
   The supported visionOS version.
 
 

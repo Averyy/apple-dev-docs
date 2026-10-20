@@ -1,18 +1,19 @@
 # stop
 
 **Framework**: Dispatch  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Stop any in-progress read/write operations when closed.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 

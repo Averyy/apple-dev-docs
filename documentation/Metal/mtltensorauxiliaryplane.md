@@ -1,7 +1,8 @@
 # MTLTensorAuxiliaryPlane
 
 **Framework**: Metal  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that represents the configuration and storage of an auxiliary plane in a multi-plane tensor.
 
@@ -19,24 +20,28 @@ A type that represents the configuration and storage of an auxiliary plane in a 
 protocol MTLTensorAuxiliaryPlane : NSObjectProtocol
 ```
 
+```objc
+@protocol MTLTensorAuxiliaryPlane <NSObject>
+```
+
 ## Topics
 
 ### Instance Properties
-- [var blockFactors: MTLTensorExtents](mtltensorauxiliaryplane/blockfactors.md)
+- [var blockFactors: MTLTensorExtents](./mtltensorauxiliaryplane/blockfactors.md)
   The number of data plane elements that correspond to one element in this auxiliary plane.
-- [var buffer: (any MTLBuffer)?](mtltensorauxiliaryplane/buffer.md)
+- [var buffer: (any MTLBuffer)?](./mtltensorauxiliaryplane/buffer.md)
   The buffer that provides the underlying storage for this plane, or `nil` if no buffer was provided at initialization.
-- [var bufferOffset: Int](mtltensorauxiliaryplane/bufferoffset.md)
-  The byte offset into [`buffer`](mtltensorauxiliaryplane/buffer.md) where this plane’s data begins, or `0` if no buffer was provided at initialization.
-- [var dataType: MTLTensorDataType](mtltensorauxiliaryplane/datatype.md)
+- [var bufferOffset: Int](./mtltensorauxiliaryplane/bufferoffset.md)
+  The byte offset into [`buffer`](./mtltensorauxiliaryplane/buffer.md) where this plane’s data begins, or `0` if no buffer was provided at initialization.
+- [var dataType: MTLTensorDataType](./mtltensorauxiliaryplane/datatype.md)
   The data format of all elements in the plane.
-- [var planeType: MTLTensorPlaneType](mtltensorauxiliaryplane/planetype.md)
+- [var planeType: MTLTensorPlaneType](./mtltensorauxiliaryplane/planetype.md)
   The type of information this plane stores.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

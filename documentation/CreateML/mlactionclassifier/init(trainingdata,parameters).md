@@ -1,7 +1,8 @@
 # init(trainingData:parameters:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an action classifier with a training dataset represented by a data source.
 
@@ -17,7 +18,7 @@ init(trainingData: MLActionClassifier.DataSource, parameters: MLActionClassifier
 ## Parameters
 
 - `trainingData`: A collection of labeled images represented by a data source.
-- `parameters`: An [`MLActionClassifier.ModelParameters`](mlactionclassifier/modelparameters-swift.struct.md) instance you use to configure the model for the training session.
+- `parameters`: An [`MLActionClassifier.ModelParameters`](./modelparameters-swift.struct.md) instance you use to configure the model for the training session.
 
 
 ---

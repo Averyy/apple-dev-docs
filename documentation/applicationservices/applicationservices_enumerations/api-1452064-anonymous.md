@@ -5,11 +5,11 @@
 ## Topics
 
 ### Constants
-- [var kATSUCenterTab: Int](katsucentertab.md)
-- [var kATSUDecimalTab: Int](katsudecimaltab.md)
-- [var kATSULeftTab: Int](katsulefttab.md)
-- [var kATSUNumberTabTypes: Int](katsunumbertabtypes.md)
-- [var kATSURightTab: Int](katsurighttab.md)
+- [var kATSUCenterTab: Int](../katsucentertab.md)
+- [var kATSUDecimalTab: Int](../katsudecimaltab.md)
+- [var kATSULeftTab: Int](../katsulefttab.md)
+- [var kATSUNumberTabTypes: Int](../katsunumbertabtypes.md)
+- [var kATSURightTab: Int](../katsurighttab.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # availableLivePhotoVideoCodecTypes
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of video codecs currently available for Live Photo movie captures.
 
@@ -17,25 +18,30 @@ An array of video codecs currently available for Live Photo movie captures.
 var availableLivePhotoVideoCodecTypes: [AVVideoCodecType] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSString *> * availableLivePhotoVideoCodecTypes;
+```
+
 #### Discussion
 
-By default, Live Photo capture encodes the movie portion of a Live Photo using the H.264 codec. To use a different codec, set the [`livePhotoVideoCodecType`](avcapturephotosettings/livephotovideocodectype.md) property of your photo settings object to one of the values in this array.
+By default, Live Photo capture encodes the movie portion of a Live Photo using the H.264 codec. To use a different codec, set the [`livePhotoVideoCodecType`](../avcapturephotosettings/livephotovideocodectype.md) property of your photo settings object to one of the values in this array.
 
-The system always presents its default video codec first. If you haven’t added the photo output to an [`AVCaptureSession`](avcapturesession.md) with a video source, no codecs are available.
+The system always presents its default video codec first. If you haven’t added the photo output to an [`AVCaptureSession`](../avcapturesession.md) with a video source, no codecs are available.
 
 This property is key-value observable.
 
 ## See Also
 
-- [var isLivePhotoCaptureSupported: Bool](avcapturephotooutput/islivephotocapturesupported.md)
+### Configuring Live Photo capture
+- [var isLivePhotoCaptureSupported: Bool](./islivephotocapturesupported.md)
   A Boolean value that indicates whether the capture output currently supports Live Photo capture.
-- [var isLivePhotoCaptureEnabled: Bool](avcapturephotooutput/islivephotocaptureenabled.md)
+- [var isLivePhotoCaptureEnabled: Bool](./islivephotocaptureenabled.md)
   A Boolean value that indicates whether to configure the capture pipeline for Live Photo capture.
-- [var isLivePhotoCaptureSuspended: Bool](avcapturephotooutput/islivephotocapturesuspended.md)
+- [var isLivePhotoCaptureSuspended: Bool](./islivephotocapturesuspended.md)
   A Boolean value that indicates whether Live Photo capture is currently in a suspended state.
-- [var preservesLivePhotoCaptureSuspendedOnSessionStop: Bool](avcapturephotooutput/preserveslivephotocapturesuspendedonsessionstop.md)
+- [var preservesLivePhotoCaptureSuspendedOnSessionStop: Bool](./preserveslivephotocapturesuspendedonsessionstop.md)
   A Boolean value that indicates whether to preserve the suspended state of Live Photo capture when the session stops.
-- [var isLivePhotoAutoTrimmingEnabled: Bool](avcapturephotooutput/islivephotoautotrimmingenabled.md)
+- [var isLivePhotoAutoTrimmingEnabled: Bool](./islivephotoautotrimmingenabled.md)
   A Boolean value that indicates whether to automatically trim Live Photo movie captures to avoid excessive movement.
 
 

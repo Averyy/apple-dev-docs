@@ -1,7 +1,8 @@
 # current
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A token that informs a context to use the current generation.
 
@@ -20,9 +21,13 @@ A token that informs a context to use the current generation.
 class var current: NSQueryGenerationToken { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSQueryGenerationToken * currentQueryGenerationToken;
+```
+
 ## Mentions
 
-- [Accessing data when the store changes](accessing-data-when-the-store-changes.md)
+- [Accessing data when the store changes](../accessing-data-when-the-store-changes.md)
 
 
 ---

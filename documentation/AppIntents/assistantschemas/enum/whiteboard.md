@@ -1,7 +1,8 @@
 # whiteboard
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Assistant schema conformance for whiteboard types.
 
@@ -19,6 +20,8 @@ Assistant schema conformance for whiteboard types.
 ```swift
 static var whiteboard: some AssistantSchemas.WhiteboardEnum { get }
 ```
+
+Available when `Self` is `AssistantSchemas.EnumSchema`.
 
 
 ---

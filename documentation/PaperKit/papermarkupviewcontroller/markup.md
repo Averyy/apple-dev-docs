@@ -1,7 +1,8 @@
 # markup
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The paper data that this view controller displays.
 
@@ -25,11 +26,12 @@ Observe `markup` to watch for markup changes.
 
 ## See Also
 
-- [var contentView: UIView?](papermarkupviewcontroller/contentview-4aeda.md)
+### Displaying markup
+- [var contentView: UIView?](./contentview-4aeda.md)
   The content that markup appears on top of.
-- [var contentView: NSView?](papermarkupviewcontroller/contentview-4hbkf.md)
+- [var contentView: NSView?](./contentview-4hbkf.md)
   The content that markup appears on top of.
-- [var supportedFeatureSet: FeatureSet](papermarkupviewcontroller/supportedfeatureset.md)
+- [var supportedFeatureSet: FeatureSet](./supportedfeatureset.md)
   The supported PaperKit features on this canvas.
 
 

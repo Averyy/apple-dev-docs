@@ -1,17 +1,18 @@
 # CharType
 
 **Framework**: DriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 typedef detail::detail::copy_cv_t<T, char> CharType;
 ```
 

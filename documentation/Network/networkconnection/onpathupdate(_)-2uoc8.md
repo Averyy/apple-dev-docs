@@ -1,7 +1,8 @@
 # onPathUpdate(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set a closure to be called when the connection’s path has changed, which may be called multiple times until the connection is cancelled.
 
@@ -20,6 +21,8 @@ Set a closure to be called when the connection’s path has changed, which may b
 @discardableResult
 final func onPathUpdate(_ handler: @escaping @isolated(any) @Sendable (NetworkConnection<ApplicationProtocol>, NWPath) -> Void) -> Self
 ```
+
+Available when `ApplicationProtocol` conforms to `MultiplexProtocol`.
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # NSWindow.AnimationBehavior.documentWindow
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The animation behavior that’s appropriate to the document window style.
 
@@ -14,15 +15,20 @@ The animation behavior that’s appropriate to the document window style.
 case documentWindow
 ```
 
+```c
+NSWindowAnimationBehaviorDocumentWindow
+```
+
 ## See Also
 
-- [NSWindow.AnimationBehavior.default](nswindow/animationbehavior-swift.enum/default.md)
+### Constants
+- [NSWindow.AnimationBehavior.default](./default.md)
   The automatic animation that’s appropriate to the window type. This is the default.
-- [NSWindow.AnimationBehavior.none](nswindow/animationbehavior-swift.enum/none.md)
+- [NSWindow.AnimationBehavior.none](./none.md)
   No automatic animation used. This may be useful when you perform your own window animation.
-- [NSWindow.AnimationBehavior.utilityWindow](nswindow/animationbehavior-swift.enum/utilitywindow.md)
+- [NSWindow.AnimationBehavior.utilityWindow](./utilitywindow.md)
   The animation behavior that’s appropriate to the utility window style.
-- [NSWindow.AnimationBehavior.alertPanel](nswindow/animationbehavior-swift.enum/alertpanel.md)
+- [NSWindow.AnimationBehavior.alertPanel](./alertpanel.md)
   The animation behavior that’s appropriate to the alert window style.
 
 

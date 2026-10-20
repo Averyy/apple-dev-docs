@@ -1,7 +1,8 @@
 # MPMediaItemPropertyLyrics
 
 **Framework**: Media Player  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The lyrics for the media item.
 
@@ -20,37 +21,42 @@ The lyrics for the media item.
 let MPMediaItemPropertyLyrics: String
 ```
 
+```c
+extern NSString * const MPMediaItemPropertyLyrics;
+```
+
 #### Discussion
 
-This value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
+This value is an [`NSString`](../Foundation/nsstring.md) object.
 
 ## See Also
 
-- [let MPMediaItemPropertyPlaybackDuration: String](mpmediaitempropertyplaybackduration.md)
+### Property keys
+- [let MPMediaItemPropertyPlaybackDuration: String](./mpmediaitempropertyplaybackduration.md)
   The playback duration of the media item.
-- [let MPMediaItemPropertyAlbumTrackNumber: String](mpmediaitempropertyalbumtracknumber.md)
+- [let MPMediaItemPropertyAlbumTrackNumber: String](./mpmediaitempropertyalbumtracknumber.md)
   The track number of the media item, for a media item that is part of an album.
-- [let MPMediaItemPropertyAlbumTrackCount: String](mpmediaitempropertyalbumtrackcount.md)
+- [let MPMediaItemPropertyAlbumTrackCount: String](./mpmediaitempropertyalbumtrackcount.md)
   The number of tracks for the album that contains the media item.
-- [let MPMediaItemPropertyDiscNumber: String](mpmediaitempropertydiscnumber.md)
+- [let MPMediaItemPropertyDiscNumber: String](./mpmediaitempropertydiscnumber.md)
   The disc number of the media item, for a media item that is part of a multidisc album.
-- [let MPMediaItemPropertyDiscCount: String](mpmediaitempropertydisccount.md)
+- [let MPMediaItemPropertyDiscCount: String](./mpmediaitempropertydisccount.md)
   The number of discs for the album that contains the media item.
-- [let MPMediaItemPropertyArtwork: String](mpmediaitempropertyartwork.md)
+- [let MPMediaItemPropertyArtwork: String](./mpmediaitempropertyartwork.md)
   The artwork image for the media item.
-- [let MPMediaItemPropertyReleaseDate: String](mpmediaitempropertyreleasedate.md)
+- [let MPMediaItemPropertyReleaseDate: String](./mpmediaitempropertyreleasedate.md)
   The date of the media item’s first public release.
-- [let MPMediaItemPropertyBeatsPerMinute: String](mpmediaitempropertybeatsperminute.md)
+- [let MPMediaItemPropertyBeatsPerMinute: String](./mpmediaitempropertybeatsperminute.md)
   The number of musical beats per minute for the media item.
-- [let MPMediaItemPropertyComments: String](mpmediaitempropertycomments.md)
+- [let MPMediaItemPropertyComments: String](./mpmediaitempropertycomments.md)
   Textual information about the media item.
-- [let MPMediaItemPropertyAssetURL: String](mpmediaitempropertyasseturl.md)
+- [let MPMediaItemPropertyAssetURL: String](./mpmediaitempropertyasseturl.md)
   A URL that points to the media item.
-- [let MPMediaItemPropertyIsExplicit: String](mpmediaitempropertyisexplicit.md)
+- [let MPMediaItemPropertyIsExplicit: String](./mpmediaitempropertyisexplicit.md)
   A Boolean value that indicates whether the media item contains explicit (adult) lyrics or language.
-- [let MPMediaItemPropertyIsPreorder: String](mpmediaitempropertyispreorder.md)
+- [let MPMediaItemPropertyIsPreorder: String](./mpmediaitempropertyispreorder.md)
   A Boolean value that indicates whether the media item is a preorder.
-- [let MPMediaItemPropertyPlaybackStoreID: String](mpmediaitempropertyplaybackstoreid.md)
+- [let MPMediaItemPropertyPlaybackStoreID: String](./mpmediaitempropertyplaybackstoreid.md)
   The identifier for enqueueing store tracks.
 
 

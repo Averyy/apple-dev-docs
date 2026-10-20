@@ -1,7 +1,8 @@
 # kCGImagePropertyOpenEXRAspectRatio
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The aspect ratio of the image.
 
@@ -20,13 +21,18 @@ The aspect ratio of the image.
 let kCGImagePropertyOpenEXRAspectRatio: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyOpenEXRAspectRatio;
+```
+
 #### Discussion
 
-The value of this property is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber).
+The value of this property is a [`CFNumber`](../CoreFoundation/cfnumber.md).
 
 ## See Also
 
-- [let kCGImagePropertyOpenEXRDictionary: CFString](kcgimagepropertyopenexrdictionary.md)
+### Open EXR Properties
+- [let kCGImagePropertyOpenEXRDictionary: CFString](./kcgimagepropertyopenexrdictionary.md)
   A dictionary of properties specific to the OpenEXR metadata standard.
 
 

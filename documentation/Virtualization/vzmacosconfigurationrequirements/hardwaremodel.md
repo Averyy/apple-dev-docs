@@ -1,7 +1,8 @@
 # hardwareModel
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The hardware model for this configuration.
 
@@ -15,25 +16,31 @@ The hardware model for this configuration.
 var hardwareModel: VZMacHardwareModel { get }
 ```
 
+```objc
+@property (copy, readonly) VZMacHardwareModel * hardwareModel;
+```
+
 ## Mentions
 
-- [Installing macOS on a Virtual Machine](installing-macos-on-a-virtual-machine.md)
+- [Installing macOS on a Virtual Machine](../installing-macos-on-a-virtual-machine.md)
 
 #### Discussion
 
 Use a hardware model to configure a new VM that meets a set of specific requirements.
 
-After creating the hardware model, use `VZMacPlatformConfiguration` [`hardwareModel`](vzmacplatformconfiguration/hardwaremodel.md) to configure the Mac platform, and [`init(creatingStorageAt:hardwareModel:options:)`](vzmacauxiliarystorage/init(creatingstorageat:hardwaremodel:options:).md) to create its auxiliary storage.
+After creating the hardware model, use `VZMacPlatformConfiguration` [`hardwareModel`](../vzmacplatformconfiguration/hardwaremodel.md) to configure the Mac platform, and [`init(creatingStorageAt:hardwareModel:options:)`](../vzmacauxiliarystorage/init%28creatingstorageat,hardwaremodel,options%29.md) to create its auxiliary storage.
 
 ## See Also
 
-- [class VZMacPlatformConfiguration](vzmacplatformconfiguration.md)
+### Related Documentation
+- [class VZMacPlatformConfiguration](../vzmacplatformconfiguration.md)
   The platform configuration for booting macOS on Apple silicon.
-- [class VZMacAuxiliaryStorage](vzmacauxiliarystorage.md)
+- [class VZMacAuxiliaryStorage](../vzmacauxiliarystorage.md)
   An object that contains information the boot loader needs for booting macOS as a guest operating system.
-- [var minimumSupportedCPUCount: Int](vzmacosconfigurationrequirements/minimumsupportedcpucount.md)
+### Configuration Requirements
+- [var minimumSupportedCPUCount: Int](./minimumsupportedcpucount.md)
   The minimum supported number of CPUs for this configuration.
-- [var minimumSupportedMemorySize: UInt64](vzmacosconfigurationrequirements/minimumsupportedmemorysize.md)
+- [var minimumSupportedMemorySize: UInt64](./minimumsupportedmemorysize.md)
   The minimum supported memory size for this configuration.
 
 

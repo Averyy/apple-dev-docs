@@ -1,13 +1,14 @@
 # lastUsedBarcodeIdentifier
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 7.0+
 
@@ -17,9 +18,14 @@
 var lastUsedBarcodeIdentifier: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * lastUsedBarcodeIdentifier;
+```
+
 ## See Also
 
-- [var deviceAccountIdentifier: String](pkbarcodeeventmetadatarequest/deviceaccountidentifier.md)
+### Getting QR Purchase Metadata
+- [var deviceAccountIdentifier: String](./deviceaccountidentifier.md)
 
 
 ---

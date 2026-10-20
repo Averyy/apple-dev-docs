@@ -1,21 +1,23 @@
 # cbrtf
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 float cbrtf(float);
 ```
 
 ## See Also
 
-- [cbrt](1557257-cbrt.md)
-- [cbrtl](1557373-cbrtl.md)
+### Cube Root
+- [cbrt](./api-1557257-cbrt.md)
+- [cbrtl](./api-1557373-cbrtl.md)
 
 
 ---

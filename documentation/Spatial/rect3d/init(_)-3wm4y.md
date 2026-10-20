@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a double-precision rectangle from a single-precision rectangle.
 

@@ -1,7 +1,8 @@
 # read(using:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieve the current contents of the buffer, for GPU reading.
 

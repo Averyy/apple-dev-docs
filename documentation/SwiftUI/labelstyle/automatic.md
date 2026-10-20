@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A label style that resolves its appearance automatically based on the current context.
 
@@ -21,13 +22,16 @@ A label style that resolves its appearance automatically based on the current co
 @export(implementation) @preconcurrency static var automatic: DefaultLabelStyle { get }
 ```
 
+Available when `Self` is `DefaultLabelStyle`.
+
 ## See Also
 
-- [static var iconOnly: IconOnlyLabelStyle](labelstyle/icononly.md)
+### Getting built-in label styles
+- [static var iconOnly: IconOnlyLabelStyle](./icononly.md)
   A label style that only displays the icon of the label.
-- [static var titleAndIcon: TitleAndIconLabelStyle](labelstyle/titleandicon.md)
+- [static var titleAndIcon: TitleAndIconLabelStyle](./titleandicon.md)
   A label style that shows both the title and icon of the label using a system-standard layout.
-- [static var titleOnly: TitleOnlyLabelStyle](labelstyle/titleonly.md)
+- [static var titleOnly: TitleOnlyLabelStyle](./titleonly.md)
   A label style that only displays the title of the label.
 
 

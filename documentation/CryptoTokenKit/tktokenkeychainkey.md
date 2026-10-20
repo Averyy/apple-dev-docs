@@ -1,7 +1,8 @@
 # TKTokenKeychainKey
 
 **Framework**: CryptoTokenKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A token’s key as stored in the keychain.
 
@@ -20,55 +21,60 @@ A token’s key as stored in the keychain.
 class TKTokenKeychainKey
 ```
 
+```objc
+@interface TKTokenKeychainKey : TKTokenKeychainItem
+```
+
 ## Topics
 
 ### Creating Token Keychain Keys
-- [init?(certificate: SecCertificate?, objectID: TKToken.ObjectID)](tktokenkeychainkey/init(certificate:objectid:).md)
+- [init?(certificate: SecCertificate?, objectID: TKToken.ObjectID)](./tktokenkeychainkey/init%28certificate,objectid%29.md)
   Initializes a token keychain key with data from the specified certificate reference and a given object ID.
 ### Accessing Key Attributes
-- [var keyType: String](tktokenkeychainkey/keytype.md)
-  The type of the key. Currently, only [`kSecAttrKeyTypeRSA`](https://developer.apple.com/documentation/security/ksecattrkeytypersa) and `kSecAttrKeyTypeECSECPrimeRandom` are supported values.
-- [var keySizeInBits: Int](tktokenkeychainkey/keysizeinbits.md)
-- [var applicationTag: Data?](tktokenkeychainkey/applicationtag.md)
+- [var keyType: String](./tktokenkeychainkey/keytype.md)
+  The type of the key. Currently, only [`kSecAttrKeyTypeRSA`](../Security/ksecattrkeytypersa.md) and `kSecAttrKeyTypeECSECPrimeRandom` are supported values.
+- [var keySizeInBits: Int](./tktokenkeychainkey/keysizeinbits.md)
+- [var applicationTag: Data?](./tktokenkeychainkey/applicationtag.md)
   The private tag data.
-- [var publicKeyData: Data?](tktokenkeychainkey/publickeydata.md)
+- [var publicKeyData: Data?](./tktokenkeychainkey/publickeydata.md)
   The public key data.
-- [var publicKeyHash: Data?](tktokenkeychainkey/publickeyhash.md)
+- [var publicKeyHash: Data?](./tktokenkeychainkey/publickeyhash.md)
   The SHA1 hash of the raw public key.
-- [var canDecrypt: Bool](tktokenkeychainkey/candecrypt.md)
+- [var canDecrypt: Bool](./tktokenkeychainkey/candecrypt.md)
   Whether the key can be used to decrypt data.
-- [var canSign: Bool](tktokenkeychainkey/cansign.md)
+- [var canSign: Bool](./tktokenkeychainkey/cansign.md)
   Whether the key can be used to sign data.
-- [var canPerformKeyExchange: Bool](tktokenkeychainkey/canperformkeyexchange.md)
+- [var canPerformKeyExchange: Bool](./tktokenkeychainkey/canperformkeyexchange.md)
   Whether the key can be used to perform Diffie-Hellman style cryptographic key exchange.
-- [var isSuitableForLogin: Bool](tktokenkeychainkey/issuitableforlogin.md)
+- [var isSuitableForLogin: Bool](./tktokenkeychainkey/issuitableforlogin.md)
   Whether the key can be used for system login.
 
 ## Relationships
 
 ### Inherits From
-- [TKTokenKeychainItem](tktokenkeychainitem.md)
+- [TKTokenKeychainItem](./tktokenkeychainitem.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var keychainContents: TKTokenKeychainContents?](tktoken/keychaincontents.md)
+### Accessing Keychain Items
+- [var keychainContents: TKTokenKeychainContents?](./tktoken/keychaincontents.md)
   The contents of the keychain for this token.
-- [class TKTokenKeychainContents](tktokenkeychaincontents.md)
+- [class TKTokenKeychainContents](./tktokenkeychaincontents.md)
   A representation of the state of the keychain for a particular token.
-- [class TKTokenKeychainItem](tktokenkeychainitem.md)
+- [class TKTokenKeychainItem](./tktokenkeychainitem.md)
   An abstract base class for managing a token’s contents as keychain items.
-- [class TKTokenKeychainCertificate](tktokenkeychaincertificate.md)
+- [class TKTokenKeychainCertificate](./tktokenkeychaincertificate.md)
   A token’s certificate as stored in the keychain.
-- [typealias ObjectID](tktoken/objectid.md)
+- [typealias ObjectID](./tktoken/objectid.md)
   A unique and persistent identifier of a particular token object.
-- [typealias ObjectID](tktoken/objectid.md)
+- [typealias ObjectID](./tktoken/objectid.md)
   A unique and persistent identifier of a particular token object.
 
 

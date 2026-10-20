@@ -1,7 +1,8 @@
 # init(prompt:label:onSubmit:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a TextFieldLink which when pressed will request text input from the user.
 
@@ -15,6 +16,8 @@ nonisolated
 init(prompt: Text? = nil, @ContentBuilder label: () -> Label, onSubmit: @escaping (String) -> Void)
 ```
 
+Available when `Label` conforms to `View`.
+
 ## Parameters
 
 - `prompt`: Text which describes the reason for requesting text input.
@@ -23,7 +26,8 @@ init(prompt: Text? = nil, @ContentBuilder label: () -> Label, onSubmit: @escapin
 
 ## See Also
 
-- [init(_:prompt:onSubmit:)](textfieldlink/init(_:prompt:onsubmit:).md)
+### Creating a text field link
+- [init(_:prompt:onSubmit:)](./init%28_,prompt,onsubmit%29.md)
   Creates a TextFieldLink which when pressed will request text input from the user.
 
 

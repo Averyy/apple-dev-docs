@@ -1,14 +1,15 @@
 # BEGINS_WITH
 
 **Framework**: CKTool JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - CKTool JS 1.2.15+
 
 ## Declaration
 
-```swift
+```
 const string BEGINS_WITH;
 ```
 

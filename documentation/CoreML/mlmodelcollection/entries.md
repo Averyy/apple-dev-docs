@@ -1,15 +1,18 @@
 # entries
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of model entries keyed to the models’ identifiers.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- visionOS 1.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- visionOS 1.0+ - Deprecated in 1.1
+
+> **Deprecated**: Use [Background Assets](../../BackgroundAssets/BackgroundAssets.md) or [`URLSession`](../../Foundation/urlsession.md) instead.
 
 ## Declaration
 
@@ -17,9 +20,14 @@ A dictionary of model entries keyed to the models’ identifiers.
 var entries: [String : MLModelCollection.Entry] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSDictionary<NSString *,MLModelCollectionEntry *> * entries;
+```
+
 ## See Also
 
-- [MLModelCollection.Entry](mlmodelcollection/entry.md)
+### Retreiving models from a collection
+- [MLModelCollection.Entry](./entry.md)
   A model and its identifier within a model collection.
 
 

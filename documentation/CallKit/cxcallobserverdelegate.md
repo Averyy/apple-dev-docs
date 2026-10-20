@@ -1,7 +1,8 @@
 # CXCallObserverDelegate
 
 **Framework**: CallKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A collection of methods the system calls when a call changes state.
 
@@ -18,24 +19,29 @@ A collection of methods the system calls when a call changes state.
 protocol CXCallObserverDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol CXCallObserverDelegate <NSObject>
+```
+
 ## Topics
 
 ### Responding to Changes in Call State
-- [func callObserver(CXCallObserver, callChanged: CXCall)](cxcallobserverdelegate/callobserver(_:callchanged:).md)
+- [func callObserver(CXCallObserver, callChanged: CXCall)](./cxcallobserverdelegate/callobserver%28_,callchanged%29.md)
   Called when a call is changed.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CXCall](cxcall.md)
+### Call information
+- [class CXCall](./cxcall.md)
   A telephony call.
-- [class CXCallObserver](cxcallobserver.md)
+- [class CXCallObserver](./cxcallobserver.md)
   A programmatic interface for an object that manages a list of active calls and observes call changes.
-- [class CXHandle](cxhandle.md)
+- [class CXHandle](./cxhandle.md)
   A way to reach a call recipient, such as a phone number or email address.
 
 

@@ -1,7 +1,8 @@
 # AVAudioUnitVarispeed
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that allows control of the playback rate.
 
@@ -19,31 +20,36 @@ An object that allows control of the playback rate.
 class AVAudioUnitVarispeed
 ```
 
+```objc
+@interface AVAudioUnitVarispeed : AVAudioUnitTimeEffect
+```
+
 ## Topics
 
 ### Adjusting the playback rate
-- [var rate: Float](avaudiounitvarispeed/rate.md)
+- [var rate: Float](./avaudiounitvarispeed/rate.md)
   The audio playback rate.
 
 ## Relationships
 
 ### Inherits From
-- [AVAudioUnitTimeEffect](avaudiounittimeeffect.md)
+- [AVAudioUnitTimeEffect](./avaudiounittimeeffect.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVAudioUnitTimePitch](avaudiounittimepitch.md)
+### Time effects
+- [class AVAudioUnitTimePitch](./avaudiounittimepitch.md)
   An object that provides a good-quality playback rate and pitch shifting independently of each other.
-- [class AVAudioUnitTimeEffect](avaudiounittimeeffect.md)
+- [class AVAudioUnitTimeEffect](./avaudiounittimeeffect.md)
   An object that processes audio in nonreal time.
 
 

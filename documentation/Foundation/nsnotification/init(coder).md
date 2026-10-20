@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a notification with the data from an unarchiver.
 
@@ -20,13 +21,18 @@ Initializes a notification with the data from an unarchiver.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [convenience init(name: NSNotification.Name, object: Any?)](nsnotification/init(name:object:).md)
+### Creating Notifications
+- [convenience init(name: NSNotification.Name, object: Any?)](./init%28name,object%29.md)
   Returns a new notification object with a specified name and object.
-- [init(name: NSNotification.Name, object: Any?, userInfo: [AnyHashable : Any]?)](nsnotification/init(name:object:userinfo:).md)
+- [init(name: NSNotification.Name, object: Any?, userInfo: [AnyHashable : Any]?)](./init%28name,object,userinfo%29.md)
   Initializes a notification with a specified name, object, and user information.
-- [NSNotification.Name](nsnotification/name-swift.struct.md)
+- [NSNotification.Name](./name-swift.struct.md)
   A structure that defines the name of a notification.
 
 

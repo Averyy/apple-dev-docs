@@ -1,7 +1,8 @@
 # SegmentBlendType.corner
 
 **Framework**: hvf  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Segment is a corner segment
 

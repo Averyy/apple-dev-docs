@@ -1,7 +1,8 @@
 # AudioQueueStart(_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Begins playing or recording audio.
 
@@ -19,6 +20,10 @@ Begins playing or recording audio.
 func AudioQueueStart(_ inAQ: AudioQueueRef, _ inStartTime: UnsafePointer<AudioTimeStamp>?) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioQueueStart(AudioQueueRef inAQ, const AudioTimeStamp *inStartTime);
+```
+
 #### Return Value
 
 A result code. See Result Codes.
@@ -30,19 +35,22 @@ If the associated audio device is not already running, this function starts it.
 ## Parameters
 
 - `inAQ`: The audio queue to start.
-- `inStartTime`: The time at which the audio queue should start. To specify a start time relative to the timeline of the associated audio device, use the `mSampleTime` field of the `AudioTimeStamp` structure. Use `NULL` to indicate that the audio queue should start as soon as possible.
+- `inStartTime`: The time at which the audio queue should start.
+
+  To specify a start time relative to the timeline of the associated audio device, use the `mSampleTime` field of the `AudioTimeStamp` structure. Use `NULL` to indicate that the audio queue should start as soon as possible.
 
 ## See Also
 
-- [func AudioQueuePrime(AudioQueueRef, UInt32, UnsafeMutablePointer<UInt32>?) -> OSStatus](audioqueueprime(_:_:_:).md)
+### Controlling Audio Queues
+- [func AudioQueuePrime(AudioQueueRef, UInt32, UnsafeMutablePointer<UInt32>?) -> OSStatus](./audioqueueprime%28_,_,_%29.md)
   Decodes enqueued buffers in preparation for playback.
-- [func AudioQueueFlush(AudioQueueRef) -> OSStatus](audioqueueflush(_:).md)
+- [func AudioQueueFlush(AudioQueueRef) -> OSStatus](./audioqueueflush%28_%29.md)
   Resets an audio queue’s decoder state.
-- [func AudioQueueStop(AudioQueueRef, Bool) -> OSStatus](audioqueuestop(_:_:).md)
+- [func AudioQueueStop(AudioQueueRef, Bool) -> OSStatus](./audioqueuestop%28_,_%29.md)
   Stops playing or recording audio.
-- [func AudioQueuePause(AudioQueueRef) -> OSStatus](audioqueuepause(_:).md)
+- [func AudioQueuePause(AudioQueueRef) -> OSStatus](./audioqueuepause%28_%29.md)
   Pauses audio playback or recording.
-- [func AudioQueueReset(AudioQueueRef) -> OSStatus](audioqueuereset(_:).md)
+- [func AudioQueueReset(AudioQueueRef) -> OSStatus](./audioqueuereset%28_%29.md)
   Resets an audio queue.
 
 

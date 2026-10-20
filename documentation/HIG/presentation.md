@@ -16,7 +16,6 @@ framework: HIG
 - [Sheets](/design/human-interface-guidelines/sheets) - A sheet helps people perform a scoped task that’s closely related to their current context.
 - [Windows](/design/human-interface-guidelines/windows) - A window presents UI views and components in your app or game.
 
-
 ## Topics
 
 - [Action sheets](action-sheets.md) - An action sheet is a modal view that presents choices related to an action people initiate.
@@ -27,8 +26,6 @@ framework: HIG
 - [Scroll views](scroll-views.md) - A scroll view lets people view content that’s larger than the view’s boundaries by moving the content vertically or horizontally.
 - [Sheets](sheets.md) - A sheet helps people perform a scoped task that’s closely related to their current context.
 - [Windows](windows.md) - A window presents UI views and components in your app or game.
-
-
 
 ---
 *Source: [https://developer.apple.com/design/human-interface-guidelines/presentation](https://developer.apple.com/design/human-interface-guidelines/presentation)*

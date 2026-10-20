@@ -1,7 +1,8 @@
 # Anchor.Source
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased geometry value that produces an anchored value of a given type.
 
@@ -23,48 +24,48 @@ struct Source
 
 #### Overview
 
-SwiftUI passes anchored geometry values around the view tree via preference keys. It then converts them back into the local coordinate space using a [`GeometryProxy`](geometryproxy.md) value.
+SwiftUI passes anchored geometry values around the view tree via preference keys. It then converts them back into the local coordinate space using a [`GeometryProxy`](../geometryproxy.md) value.
 
 ## Topics
 
 ### Getting point anchor sources
-- [static point(_:)](anchor/source/point(_:).md)
-- [static unitPoint(_:)](anchor/source/unitpoint(_:).md)
+- [static point(_:)](./source/point%28_%29.md)
+- [static unitPoint(_:)](./source/unitpoint%28_%29.md)
 ### Getting rectangle anchor sources
-- [static func rect(CGRect) -> Anchor<Value>.Source](anchor/source/rect(_:).md)
+- [static func rect(CGRect) -> Anchor<Value>.Source](./source/rect%28_%29.md)
   Returns an anchor source rect defined by `r` in the current view.
-- [static var bounds: Anchor<CGRect>.Source](anchor/source/bounds.md)
+- [static var bounds: Anchor<CGRect>.Source](./source/bounds.md)
   An anchor source rect defined as the entire bounding rect of the current view.
 ### Getting top anchor sources
-- [static var topLeading: Anchor<CGPoint>.Source](anchor/source/topleading.md)
-- [static var top: Anchor<CGPoint>.Source](anchor/source/top.md)
-- [static var topTrailing: Anchor<CGPoint>.Source](anchor/source/toptrailing.md)
+- [static var topLeading: Anchor<CGPoint>.Source](./source/topleading.md)
+- [static var top: Anchor<CGPoint>.Source](./source/top.md)
+- [static var topTrailing: Anchor<CGPoint>.Source](./source/toptrailing.md)
 ### Getting middle anchor sources
-- [static var leading: Anchor<CGPoint>.Source](anchor/source/leading.md)
-- [static var center: Anchor<CGPoint>.Source](anchor/source/center-869al.md)
-- [static var trailing: Anchor<CGPoint>.Source](anchor/source/trailing.md)
+- [static var leading: Anchor<CGPoint>.Source](./source/leading.md)
+- [static var center: Anchor<CGPoint>.Source](./source/center-869al.md)
+- [static var trailing: Anchor<CGPoint>.Source](./source/trailing.md)
 ### Getting bottom anchor sources
-- [static var bottomTrailing: Anchor<CGPoint>.Source](anchor/source/bottomtrailing.md)
-- [static var bottom: Anchor<CGPoint>.Source](anchor/source/bottom.md)
-- [static var bottomLeading: Anchor<CGPoint>.Source](anchor/source/bottomleading.md)
+- [static var bottomTrailing: Anchor<CGPoint>.Source](./source/bottomtrailing.md)
+- [static var bottom: Anchor<CGPoint>.Source](./source/bottom.md)
+- [static var bottomLeading: Anchor<CGPoint>.Source](./source/bottomleading.md)
 ### Creating an anchor source
-- [init(_:)](anchor/source/init(_:).md)
+- [init(_:)](./source/init%28_%29.md)
 ### Type Properties
-- [static var bounds3D: Anchor<Rect3D>.Source](anchor/source/bounds3d.md)
+- [static var bounds3D: Anchor<Rect3D>.Source](./source/bounds3d.md)
   An anchor source rect defined as the entire bounding rect of the current element.
-- [static var center: Anchor<Point3D>.Source](anchor/source/center-6w6ww.md)
-- [static var center3D: Anchor<Point3D>.Source](anchor/source/center3d.md)
+- [static var center: Anchor<Point3D>.Source](./source/center-6w6ww.md)
+- [static var center3D: Anchor<Point3D>.Source](./source/center3d.md)
 ### Type Methods
-- [static func point3D(Point3D) -> Anchor<Value>.Source](anchor/source/point3d(_:).md)
-- [static func rect3D(Rect3D) -> Anchor<Value>.Source](anchor/source/rect3d(_:).md)
+- [static func point3D(Point3D) -> Anchor<Value>.Source](./source/point3d%28_%29.md)
+- [static func rect3D(Rect3D) -> Anchor<Value>.Source](./source/rect3d%28_%29.md)
   Returns an anchor source rect defined by `r` in the current element.
-- [static func unitPoint3D(UnitPoint3D) -> Anchor<Value>.Source](anchor/source/unitpoint3d(_:).md)
+- [static func unitPoint3D(UnitPoint3D) -> Anchor<Value>.Source](./source/unitpoint3d%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

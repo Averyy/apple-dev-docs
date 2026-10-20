@@ -1,7 +1,8 @@
 # encapsulated
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The encapsulated representation of the shared secret.
 

@@ -1,7 +1,8 @@
 # IKRig.Constraint.IKOrientationDemand.Mode.absoluteLookAt(targetAxis:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode which computes the rotation target as absolute look-at.
 
@@ -19,12 +20,12 @@ A mode which computes the rotation target as absolute look-at.
 case absoluteLookAt(targetAxis: SIMD3<Float>)
 ```
 
-##### Demand Target
+##### Demand target
 
 - **Source**: The model space orientation of the constrained joint from the FK demands pose.
-- **Target**: The model space orientation aligning the associated `targetAxis` with the direction from the current model space joint position to [`lookAtTargetPosition`](ikcomponent/constraint/lookattargetposition.md).
+- **Target**: The model space orientation aligning the associated `targetAxis` with the direction from the current model space joint position to [`lookAtTargetPosition`](../../../../ikcomponent/constraint/lookattargetposition.md).
 
-The rotation weight of [`animationOverrideWeight`](ikcomponent/constraint/animationoverrideweight.md) determines how the rotation target is calculated:
+The rotation weight of [`animationOverrideWeight`](../../../../ikcomponent/constraint/animationoverrideweight.md) determines how the rotation target is calculated:
 
 - A weight of **`0`** uses the `Source`.
 - A weight of **`1`** uses the `Target`.

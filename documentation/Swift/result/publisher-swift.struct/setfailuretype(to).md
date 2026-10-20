@@ -1,7 +1,8 @@
 # setFailureType(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -17,6 +18,8 @@
 ```swift
 func setFailureType<E>(to failureType: E.Type) -> Result<Result<Success, Failure>.Publisher.Output, E>.Publisher where E : Error
 ```
+
+Available when `Failure` is `Never`.
 
 
 ---

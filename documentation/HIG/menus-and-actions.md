@@ -20,7 +20,6 @@ framework: HIG
 - [The menu bar](/design/human-interface-guidelines/the-menu-bar) - On a Mac or an iPad, the menu bar at the top of the screen displays the top-level menus in your app or game.
 - [Toolbars](/design/human-interface-guidelines/toolbars) - A toolbar provides convenient access to frequently used commands, controls, navigation, and search.
 
-
 ## Topics
 
 - [Activity views](activity-views.md) - An activity view — often called a *share sheet* — presents a range of tasks that people can perform in the current context.
@@ -35,8 +34,6 @@ framework: HIG
 - [Pull-down buttons](pull-down-buttons.md) - A pull-down button displays a menu of items or actions that directly relate to the button’s purpose.
 - [The menu bar](the-menu-bar.md) - On a Mac or an iPad, the menu bar at the top of the screen displays the top-level menus in your app or game.
 - [Toolbars](toolbars.md) - A toolbar provides convenient access to frequently used commands, controls, navigation, and search.
-
-
 
 ---
 *Source: [https://developer.apple.com/design/human-interface-guidelines/menus-and-actions](https://developer.apple.com/design/human-interface-guidelines/menus-and-actions)*

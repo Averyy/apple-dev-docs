@@ -1,7 +1,8 @@
 # init(submesh:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 9.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(submesh: MDLSubmesh)
+```
+
+```objc
+- (instancetype) initWithSubmesh:(MDLSubmesh *) submesh;
 ```
 
 

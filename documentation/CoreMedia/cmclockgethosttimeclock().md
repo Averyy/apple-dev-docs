@@ -1,7 +1,8 @@
 # CMClockGetHostTimeClock()
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a reference to the singleton clock that reflects the host time.
 
@@ -18,6 +19,10 @@ Returns a reference to the singleton clock that reflects the host time.
 
 ```swift
 func CMClockGetHostTimeClock() -> CMClock
+```
+
+```c
+extern CMClockRefCMClockGetHostTimeClock();
 ```
 
 #### Discussion

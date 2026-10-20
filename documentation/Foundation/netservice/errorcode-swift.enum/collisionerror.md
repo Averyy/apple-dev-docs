@@ -1,7 +1,8 @@
 # NetService.ErrorCode.collisionError
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The service could not be published because the name is already in use. The name could be in use locally or on another system.
 
@@ -19,21 +20,26 @@ The service could not be published because the name is already in use. The name 
 case collisionError
 ```
 
+```c
+NSNetServicesCollisionError
+```
+
 ## See Also
 
-- [NetService.ErrorCode.unknownError](netservice/errorcode-swift.enum/unknownerror.md)
+### Constants
+- [NetService.ErrorCode.unknownError](./unknownerror.md)
   An unknown error occurred.
-- [NetService.ErrorCode.notFoundError](netservice/errorcode-swift.enum/notfounderror.md)
+- [NetService.ErrorCode.notFoundError](./notfounderror.md)
   The service could not be found on the network.
-- [NetService.ErrorCode.activityInProgress](netservice/errorcode-swift.enum/activityinprogress.md)
+- [NetService.ErrorCode.activityInProgress](./activityinprogress.md)
   The net service cannot process the request at this time. No additional information about the network state is known.
-- [NetService.ErrorCode.badArgumentError](netservice/errorcode-swift.enum/badargumenterror.md)
+- [NetService.ErrorCode.badArgumentError](./badargumenterror.md)
   An invalid argument was used when creating the `NSNetService` object.
-- [NetService.ErrorCode.cancelledError](netservice/errorcode-swift.enum/cancellederror.md)
+- [NetService.ErrorCode.cancelledError](./cancellederror.md)
   The client canceled the action.
-- [NetService.ErrorCode.invalidError](netservice/errorcode-swift.enum/invaliderror.md)
+- [NetService.ErrorCode.invalidError](./invaliderror.md)
   The net service was improperly configured.
-- [NetService.ErrorCode.timeoutError](netservice/errorcode-swift.enum/timeouterror.md)
+- [NetService.ErrorCode.timeoutError](./timeouterror.md)
   The net service has timed out.
 
 

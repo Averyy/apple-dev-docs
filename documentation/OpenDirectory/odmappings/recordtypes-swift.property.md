@@ -1,16 +1,21 @@
 # recordTypes
 
 **Framework**: Open Directory  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 10.9+
 
 ## Declaration
 
 ```swift
 var recordTypes: [Any]! { get }
+```
+
+```objc
+@property (copy, readonly) NSArray * recordTypes;
 ```
 
 

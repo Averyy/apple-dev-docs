@@ -1,54 +1,56 @@
 # Command buffer debugging
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: API Collection
 
 Properties and methods for programmatically debugging runtime issues with a command buffer.
 
 ## Topics
 
 ### Identifying the command buffer
-- [var label: String?](mtlcommandbuffer/label.md)
+- [var label: String?](./mtlcommandbuffer/label.md)
   An optional name that can help you identify the command buffer.
-- [var commandQueue: any MTLCommandQueue](mtlcommandbuffer/commandqueue.md)
+- [var commandQueue: any MTLCommandQueue](./mtlcommandbuffer/commandqueue.md)
   The command queue that creates the command buffer.
-- [var device: any MTLDevice](mtlcommandbuffer/device.md)
+- [var device: any MTLDevice](./mtlcommandbuffer/device.md)
   The GPU device that indirectly owns the command buffer because you create it from a command queue the device also owns.
 ### Grouping commands within a GPU frame capture
-- [func pushDebugGroup(String)](mtlcommandbuffer/pushdebuggroup(_:).md)
+- [func pushDebugGroup(String)](./mtlcommandbuffer/pushdebuggroup%28_%29.md)
   Marks the beginning of a debug group and gives it an identifying label, which temporarily replaces the previous group, if applicable.
-- [func popDebugGroup()](mtlcommandbuffer/popdebuggroup.md)
+- [func popDebugGroup()](./mtlcommandbuffer/popdebuggroup%28%29.md)
   Marks the end of a debug group and, if applicable, restores the previous group from a stack.
 ### Getting error details
-- [var error: (any Error)?](mtlcommandbuffer/error.md)
+- [var error: (any Error)?](./mtlcommandbuffer/error.md)
   A description of an error when the GPU encounters an issue as it runs the command buffer.
-- [var errorOptions: MTLCommandBufferErrorOption](mtlcommandbuffer/erroroptions.md)
+- [var errorOptions: MTLCommandBufferErrorOption](./mtlcommandbuffer/erroroptions.md)
   Settings that determine which information the command buffer records about execution errors, and how it does it.
-- [protocol MTLCommandBufferEncoderInfo](mtlcommandbufferencoderinfo.md)
+- [protocol MTLCommandBufferEncoderInfo](./mtlcommandbufferencoderinfo.md)
   A container that provides additional information about a runtime failure a GPU encounters as it runs the commands in a command buffer.
-- [let MTLCommandBufferEncoderInfoErrorKey: String](mtlcommandbufferencoderinfoerrorkey.md)
+- [let MTLCommandBufferEncoderInfoErrorKey: String](./mtlcommandbufferencoderinfoerrorkey.md)
   A key to a command buffer error’s user information dictionary that retrieves additional information about a GPU’s runtime error.
 ### Reading the runtime message logs
-- [var logs: MTLLogContainer](mtlcommandbuffer/logs-518l2.md)
+- [var logs: MTLLogContainer](./mtlcommandbuffer/logs-518l2.md)
   The messages the command buffer records as the GPU runs its commands.
 ### Checking scheduling times on the CPU
-- [var kernelStartTime: CFTimeInterval](mtlcommandbuffer/kernelstarttime.md)
+- [var kernelStartTime: CFTimeInterval](./mtlcommandbuffer/kernelstarttime.md)
   The host time, in seconds, when the CPU begins to schedule the command buffer.
-- [var kernelEndTime: CFTimeInterval](mtlcommandbuffer/kernelendtime.md)
+- [var kernelEndTime: CFTimeInterval](./mtlcommandbuffer/kernelendtime.md)
   The host time, in seconds, when the CPU finishes scheduling the command buffer.
 ### Checking execution times on the GPU
-- [var gpuStartTime: CFTimeInterval](mtlcommandbuffer/gpustarttime.md)
+- [var gpuStartTime: CFTimeInterval](./mtlcommandbuffer/gpustarttime.md)
   The host time, in seconds, when the GPU starts command buffer execution.
-- [var gpuEndTime: CFTimeInterval](mtlcommandbuffer/gpuendtime.md)
+- [var gpuEndTime: CFTimeInterval](./mtlcommandbuffer/gpuendtime.md)
   The host time, in seconds, when the GPU finishes execution of the command buffer.
 ### Determining whether to maintain strong references
-- [var retainedReferences: Bool](mtlcommandbuffer/retainedreferences.md)
+- [var retainedReferences: Bool](./mtlcommandbuffer/retainedreferences.md)
   A Boolean value that indicates whether the command buffer maintains strong references to the resources it uses.
 
 ## See Also
 
-- [var status: MTLCommandBufferStatus](mtlcommandbuffer/status.md)
+### Troubleshooting a command buffer
+- [var status: MTLCommandBufferStatus](./mtlcommandbuffer/status.md)
   The command buffer’s current state.
-- [enum MTLCommandBufferStatus](mtlcommandbufferstatus.md)
+- [enum MTLCommandBufferStatus](./mtlcommandbufferstatus.md)
   The discrete states for a command buffer that represent its life cycle stages.
 
 

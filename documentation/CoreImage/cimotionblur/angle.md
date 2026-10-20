@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The angle of the motion, in radians, that determines which direction the blur smears.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ The angle of the motion, in radians, that determines which direction the blur sm
 var angle: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float angle;
+```
+
 ## See Also
 
-- [var inputImage: CIImage?](cimotionblur/inputimage.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var radius: Float](cimotionblur/radius.md)
+- [var radius: Float](./radius.md)
   The radius of the blur, in pixels.
 
 

@@ -1,17 +1,18 @@
 # kAudioFormatUnknownFormatError
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The specified data format is not a known format.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,16 +20,21 @@ The specified data format is not a known format.
 var kAudioFormatUnknownFormatError: OSStatus { get }
 ```
 
+```c
+kAudioFormatUnknownFormatError
+```
+
 ## See Also
 
-- [Audio Format Error Codes](1577851-audio-format-error-codes.md)
-- [var kAudioFormatUnspecifiedError: OSStatus](kaudioformatunspecifiederror.md)
+### Result Codes
+- [Audio Format Error Codes](./api-1577851-audio-format-error-codes.md)
+- [var kAudioFormatUnspecifiedError: OSStatus](./kaudioformatunspecifiederror.md)
   An unspecified error.
-- [var kAudioFormatUnsupportedPropertyError: OSStatus](kaudioformatunsupportedpropertyerror.md)
+- [var kAudioFormatUnsupportedPropertyError: OSStatus](./kaudioformatunsupportedpropertyerror.md)
   The specified property is not supported.
-- [var kAudioFormatBadPropertySizeError: OSStatus](kaudioformatbadpropertysizeerror.md)
-- [var kAudioFormatBadSpecifierSizeError: OSStatus](kaudioformatbadspecifiersizeerror.md)
-- [var kAudioFormatUnsupportedDataFormatError: OSStatus](kaudioformatunsupporteddataformaterror.md)
+- [var kAudioFormatBadPropertySizeError: OSStatus](./kaudioformatbadpropertysizeerror.md)
+- [var kAudioFormatBadSpecifierSizeError: OSStatus](./kaudioformatbadspecifiersizeerror.md)
+- [var kAudioFormatUnsupportedDataFormatError: OSStatus](./kaudioformatunsupporteddataformaterror.md)
   The playback data format is unsupported (declared in `AudioFormat.h`).
 
 

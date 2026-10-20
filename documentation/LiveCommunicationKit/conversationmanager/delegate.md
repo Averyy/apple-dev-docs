@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: LiveCommunicationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that acts as the delegate of the conversation manager.
 
@@ -20,9 +21,10 @@ weak final var delegate: (any ConversationManagerDelegate)?
 
 ## See Also
 
-- [var conversations: [Conversation]](conversationmanager/conversations.md)
+### Configuring the manager
+- [var conversations: [Conversation]](./conversations.md)
   Currently active conversations.
-- [var pendingActions: [ConversationAction]](conversationmanager/pendingactions.md)
+- [var pendingActions: [ConversationAction]](./pendingactions.md)
   All unfinished conversation actions.
 
 

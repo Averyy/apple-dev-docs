@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The UUID associated with the peer.
 
@@ -20,11 +21,15 @@ The UUID associated with the peer.
 var identifier: UUID { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUUID * identifier;
+```
+
 #### Discussion
 
-The value of this property represents the unique identifier of the peer. The first time a local manager encounters a peer, the system assigns the peer a UUID, represented by a new [`UUID`](https://developer.apple.com/documentation/foundation/uuid) object. Peers use [`UUID`](https://developer.apple.com/documentation/foundation/uuid) instances to identify themselves, instead of by the [`CBUUID`](cbuuid.md) objects that identify a peripheral’s services, characteristics, and descriptors.
+The value of this property represents the unique identifier of the peer. The first time a local manager encounters a peer, the system assigns the peer a UUID, represented by a new [`UUID`](../../Foundation/uuid.md) object. Peers use [`UUID`](../../Foundation/uuid.md) instances to identify themselves, instead of by the [`CBUUID`](../cbuuid.md) objects that identify a peripheral’s services, characteristics, and descriptors.
 
-For more information, see [`Core Bluetooth Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/AboutCoreBluetooth/Introduction.html#//apple_ref/doc/uid/TP40013257).
+For more information, see [Core Bluetooth Programming Guide](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/AboutCoreBluetooth/Introduction.html#//apple_ref/doc/uid/TP40013257).
 
 
 ---

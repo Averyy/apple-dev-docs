@@ -1,7 +1,8 @@
 # init(vendorID:productID:deviceClass:deviceSubClass:deviceProtocol:speed:)
 
 **Framework**: Accessory Access  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new device matching criteria structure with the provided values.
 

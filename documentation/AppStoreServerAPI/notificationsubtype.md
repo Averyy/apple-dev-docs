@@ -1,7 +1,8 @@
 # notificationSubtype
 
 **Framework**: App Store Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A notification subtype value that App Store Server Notifications 2 uses.
 
@@ -10,23 +11,24 @@ A notification subtype value that App Store Server Notifications 2 uses.
 
 ## Declaration
 
-```swift
+```
 string notificationSubtype
 ```
 
 #### Discussion
 
-For the list of notification subtypes available in [`App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications), see [`subtype`](https://developer.apple.com/documentation/appstoreservernotifications/subtype).
+For the list of notification subtypes available in [App Store Server Notifications](../AppStoreServerNotifications/AppStoreServerNotifications.md), see [`subtype`](../AppStoreServerNotifications/subtype.md).
 
 ## See Also
 
-- [type startDate](startdate.md)
+### Data types
+- [type startDate](./startdate.md)
   The start date of a timespan, expressed in UNIX time, in milliseconds.
-- [type endDate](enddate.md)
+- [type endDate](./enddate.md)
   The end date of a timespan, expressed in UNIX time, in milliseconds.
-- [type notificationType](notificationtype.md)
+- [type notificationType](./notificationtype.md)
   A notification type value that App Store Server Notifications 2 uses.
-- [type onlyFailures](onlyfailures.md)
+- [type onlyFailures](./onlyfailures.md)
   A Boolean value that indicates whether the response includes only notifications that failed to reach your server.
 
 

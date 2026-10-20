@@ -1,14 +1,15 @@
 # backtrace_user_copy_fn
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 typedef errno_t (*backtrace_user_copy_fn)(void *ctx, void *dst, user_addr_t src, size_t size);
 ```
 

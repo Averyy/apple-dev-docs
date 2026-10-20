@@ -1,7 +1,8 @@
 # configurationsByBinaryExecutable
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection of executable participants available during an assessment, along with their associated configurations.
 
@@ -15,11 +16,15 @@ The collection of executable participants available during an assessment, along 
 var configurationsByBinaryExecutable: [AEAssessmentBinaryExecutable : AEAssessmentBinaryExecutableConfiguration] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSDictionary<AEAssessmentBinaryExecutable *,AEAssessmentBinaryExecutableConfiguration *> * configurationsByBinaryExecutable;
+```
+
 #### Discussion
 
-Add executables with [`setConfiguration(_:for:)`](aeassessmentconfiguration/setconfiguration(_:for:)-16sed.md) and remove them with `AEAssessmentConfiguration/removeBinaryExecutable(_:)`.
+Add executables with [`setConfiguration(_:for:)`](./setconfiguration%28_,for%29-16sed.md) and remove them with `AEAssessmentConfiguration/removeBinaryExecutable(_:)`.
 
-> **Note**: [`AEAssessmentBinaryExecutable`](aeassessmentbinaryexecutable.md)
+> **See Also**: [`AEAssessmentBinaryExecutable`](../aeassessmentbinaryexecutable.md)
 
 
 ---

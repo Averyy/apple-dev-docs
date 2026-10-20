@@ -1,14 +1,15 @@
 # kBluetoothHCICommandCreateConnection
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCICommandCreateConnection = 0x0005
 ```
 

@@ -1,7 +1,8 @@
 # TableColumnContent
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type used to represent columns within a table.
 
@@ -69,47 +70,48 @@ extension MyCustomType: Transition {
 ## Topics
 
 ### Getting the column body
-- [var tableColumnBody: Self.TableColumnBody](tablecolumncontent/tablecolumnbody-swift.property.md)
+- [var tableColumnBody: Self.TableColumnBody](./tablecolumncontent/tablecolumnbody-swift.property.md)
   The composition of content that comprise the table column content.
-- [associatedtype TableColumnBody : TableColumnContent](tablecolumncontent/tablecolumnbody-swift.associatedtype.md)
+- [associatedtype TableColumnBody : TableColumnContent](./tablecolumncontent/tablecolumnbody-swift.associatedtype.md)
   The type of content representing the body of this table column content.
 ### Defining the row value
-- [associatedtype TableRowValue : Identifiable = Self.TableColumnBody.TableRowValue](tablecolumncontent/tablerowvalue.md)
+- [associatedtype TableRowValue : Identifiable = Self.TableColumnBody.TableRowValue](./tablecolumncontent/tablerowvalue.md)
   The type of value of rows presented by this column content.
 ### Defining the comparator
-- [associatedtype TableColumnSortComparator : SortComparator = Self.TableColumnBody.TableColumnSortComparator](tablecolumncontent/tablecolumnsortcomparator.md)
+- [associatedtype TableColumnSortComparator : SortComparator = Self.TableColumnBody.TableColumnSortComparator](./tablecolumncontent/tablecolumnsortcomparator.md)
   The type of sort comparator associated with this table column content.
 ### Configuring the content
 - [func alignment(TableColumnAlignment) -> some TableColumnContent<Self.TableRowValue, Self.TableColumnSortComparator>
-](tablecolumncontent/alignment(_:).md)
+](./tablecolumncontent/alignment%28_%29.md)
   Sets the alignment of the column, applying to both its column header label and the row view content for that column.
 - [func customizationID(String) -> some TableColumnContent<Self.TableRowValue, Self.TableColumnSortComparator>
-](tablecolumncontent/customizationid(_:).md)
+](./tablecolumncontent/customizationid%28_%29.md)
   Sets the identifier to be associated with a column when persisting its state with `TableColumnCustomization`.
 - [func defaultVisibility(Visibility) -> some TableColumnContent<Self.TableRowValue, Self.TableColumnSortComparator>
-](tablecolumncontent/defaultvisibility(_:).md)
+](./tablecolumncontent/defaultvisibility%28_%29.md)
   Sets the default visibility of a table column.
 - [func disabledCustomizationBehavior(TableColumnCustomizationBehavior) -> some TableColumnContent<Self.TableRowValue, Self.TableColumnSortComparator>
-](tablecolumncontent/disabledcustomizationbehavior(_:).md)
+](./tablecolumncontent/disabledcustomizationbehavior%28_%29.md)
   Sets the disabled customization behavior for a table column.
 
 ## Relationships
 
 ### Conforming Types
-- [Group](group.md)
-- [TableColumn](tablecolumn.md)
-- [TableColumnForEach](tablecolumnforeach.md)
-- [TupleTableColumnContent](tupletablecolumncontent.md)
+- [Group](./group.md)
+- [TableColumn](./tablecolumn.md)
+- [TableColumnForEach](./tablecolumnforeach.md)
+- [TupleTableColumnContent](./tupletablecolumncontent.md)
 
 ## See Also
 
-- [struct TableColumn](tablecolumn.md)
+### Creating columns
+- [struct TableColumn](./tablecolumn.md)
   A column that displays a view for each row in a table.
-- [struct TableColumnAlignment](tablecolumnalignment.md)
+- [struct TableColumnAlignment](./tablecolumnalignment.md)
   Describes the alignment of the content of a table column.
-- [struct TableColumnBuilder](tablecolumnbuilder.md)
+- [struct TableColumnBuilder](./tablecolumnbuilder.md)
   A result builder that creates table column content from closures.
-- [struct TableColumnForEach](tablecolumnforeach.md)
+- [struct TableColumnForEach](./tablecolumnforeach.md)
   A structure that computes columns on demand from an underlying collection of identified data.
 
 

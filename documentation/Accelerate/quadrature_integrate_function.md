@@ -1,21 +1,26 @@
 # quadrature_integrate_function
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 struct quadrature_integrate_function
+```
+
+```c
+typedef struct { ... } quadrature_integrate_function;
 ```
 
 #### Overview
@@ -27,20 +32,21 @@ Describes a real function Y=F(X). Since most of the integration time is spent ev
 ## Topics
 
 ### Initializers
-- [init(fun: quadrature_function_array, fun_arg: UnsafeMutableRawPointer!)](quadrature_integrate_function/init(fun:fun_arg:).md)
+- [init(fun: quadrature_function_array, fun_arg: UnsafeMutableRawPointer!)](./quadrature_integrate_function/init%28fun,fun_arg%29.md)
 ### Instance Properties
-- [var fun: quadrature_function_array](quadrature_integrate_function/fun.md)
-- [var fun_arg: UnsafeMutableRawPointer!](quadrature_integrate_function/fun_arg.md)
+- [var fun: quadrature_function_array](./quadrature_integrate_function/fun.md)
+- [var fun_arg: UnsafeMutableRawPointer!](./quadrature_integrate_function/fun_arg.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [typealias quadrature_function_array](quadrature_function_array.md)
-- [struct quadrature_integrate_options](quadrature_integrate_options.md)
+### Type Aliases
+- [typealias quadrature_function_array](./quadrature_function_array.md)
+- [struct quadrature_integrate_options](./quadrature_integrate_options.md)
 
 
 ---

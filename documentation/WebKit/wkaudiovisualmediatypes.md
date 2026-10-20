@@ -1,7 +1,8 @@
 # WKAudiovisualMediaTypes
 
 **Framework**: WebKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The media types that require a user gesture to begin playing.
 
@@ -18,6 +19,10 @@ The media types that require a user gesture to begin playing.
 struct WKAudiovisualMediaTypes
 ```
 
+```c
+enum WKAudiovisualMediaTypes : NSUInteger;
+```
+
 #### Overview
 
 To indicate that no user gestures are required to play media, use an empty set of audio/visual media types, indicated by the empty array literal, `[]`. For example, `let myAudiovisualMediaType: WKAudiovisualMediaTypes = []`.
@@ -25,36 +30,37 @@ To indicate that no user gestures are required to play media, use an empty set o
 ## Topics
 
 ### Media Types
-- [static var audio: WKAudiovisualMediaTypes](wkaudiovisualmediatypes/audio.md)
+- [static var audio: WKAudiovisualMediaTypes](./wkaudiovisualmediatypes/audio.md)
   Media types that contain audio require a user gesture to begin playing.
-- [static var video: WKAudiovisualMediaTypes](wkaudiovisualmediatypes/video.md)
+- [static var video: WKAudiovisualMediaTypes](./wkaudiovisualmediatypes/video.md)
   Media types that contain video require a user gesture to begin playing.
-- [static var all: WKAudiovisualMediaTypes](wkaudiovisualmediatypes/all.md)
+- [static var all: WKAudiovisualMediaTypes](./wkaudiovisualmediatypes/all.md)
   All media types require a user gesture to begin playing.
 ### Initializers
-- [init(rawValue: UInt)](wkaudiovisualmediatypes/init(rawvalue:).md)
+- [init(rawValue: UInt)](./wkaudiovisualmediatypes/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [var allowsInlineMediaPlayback: Bool](wkwebviewconfiguration/allowsinlinemediaplayback.md)
+### Setting media playback preferences
+- [var allowsInlineMediaPlayback: Bool](./wkwebviewconfiguration/allowsinlinemediaplayback.md)
   A Boolean value that indicates whether HTML5 videos play inline or use the native full-screen controller.
-- [var allowsAirPlayForMediaPlayback: Bool](wkwebviewconfiguration/allowsairplayformediaplayback.md)
+- [var allowsAirPlayForMediaPlayback: Bool](./wkwebviewconfiguration/allowsairplayformediaplayback.md)
   A Boolean value that indicates whether the web view allows media playback over AirPlay.
-- [var allowsPictureInPictureMediaPlayback: Bool](wkwebviewconfiguration/allowspictureinpicturemediaplayback.md)
+- [var allowsPictureInPictureMediaPlayback: Bool](./wkwebviewconfiguration/allowspictureinpicturemediaplayback.md)
   A Boolean value that indicates whether HTML5 videos can play Picture in Picture.
-- [var mediaTypesRequiringUserActionForPlayback: WKAudiovisualMediaTypes](wkwebviewconfiguration/mediatypesrequiringuseractionforplayback.md)
+- [var mediaTypesRequiringUserActionForPlayback: WKAudiovisualMediaTypes](./wkwebviewconfiguration/mediatypesrequiringuseractionforplayback.md)
   The media types that require a user gesture to begin playing.
 
 

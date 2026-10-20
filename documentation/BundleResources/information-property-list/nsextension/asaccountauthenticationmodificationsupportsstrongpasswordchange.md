@@ -1,7 +1,8 @@
 # ASAccountAuthenticationModificationSupportsStrongPasswordChange
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether the extension supports upgrading a userâ€™s password to a strong password.
 
@@ -10,15 +11,17 @@ A Boolean value that indicates whether the extension supports upgrading a userâ€
 - iPadOS 14.0+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `ASAccountAuthenticationModificationSupportsStrongPasswordChange`
+- **Type**: boolean
 
 ## See Also
 
-- [ASAccountAuthenticationModificationPasswordGenerationRequirements](information-property-list/nsextension/asaccountauthenticationmodificationpasswordgenerationrequirements.md)
+### Authentication
+- [ASAccountAuthenticationModificationPasswordGenerationRequirements](./asaccountauthenticationmodificationpasswordgenerationrequirements.md)
   The rules the system satisfies when generating a strong password for your extension during an automatic upgrade.
-- [ASAccountAuthenticationModificationSupportsUpgradeToSignInWithApple](information-property-list/nsextension/asaccountauthenticationmodificationsupportsupgradetosigninwithapple.md)
+- [ASAccountAuthenticationModificationSupportsUpgradeToSignInWithApple](./asaccountauthenticationmodificationsupportsupgradetosigninwithapple.md)
   A Boolean value that indicates whether the extension supports upgrading from using password authentication to using Sign in with Apple.
 
 

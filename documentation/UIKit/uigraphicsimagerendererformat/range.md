@@ -1,7 +1,8 @@
 # UIGraphicsImageRendererFormat.Range
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the color range of the image renderer context.
 
@@ -18,39 +19,44 @@ Constants that specify the color range of the image renderer context.
 enum Range
 ```
 
+```c
+enum UIGraphicsImageRendererFormatRange : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIGraphicsImageRendererFormat.Range.automatic](uigraphicsimagerendererformat/range/automatic.md)
+- [UIGraphicsImageRendererFormat.Range.automatic](./range/automatic.md)
   The system automatically chooses the image renderer context’s pixel format according to the color range of its content.
-- [UIGraphicsImageRendererFormat.Range.extended](uigraphicsimagerendererformat/range/extended.md)
+- [UIGraphicsImageRendererFormat.Range.extended](./range/extended.md)
   The image renderer context supports wide color.
-- [UIGraphicsImageRendererFormat.Range.standard](uigraphicsimagerendererformat/range/standard.md)
+- [UIGraphicsImageRendererFormat.Range.standard](./range/standard.md)
   The image renderer context doesn’t support extended colors.
-- [UIGraphicsImageRendererFormat.Range.unspecified](uigraphicsimagerendererformat/range/unspecified.md)
+- [UIGraphicsImageRendererFormat.Range.unspecified](./range/unspecified.md)
   The image renderer context doesn’t specify a color range.
 ### Initializers
-- [init?(rawValue: Int)](uigraphicsimagerendererformat/range/init(rawvalue:).md)
+- [init?(rawValue: Int)](./range/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var opaque: Bool](uigraphicsimagerendererformat/opaque.md)
+### Configuring the renderer attributes
+- [var opaque: Bool](./opaque.md)
   A Boolean value that indicates whether the underlying Core Graphics context has an alpha channel.
-- [var scale: CGFloat](uigraphicsimagerendererformat/scale.md)
+- [var scale: CGFloat](./scale.md)
   The display scale of the image renderer context.
-- [var preferredRange: UIGraphicsImageRendererFormat.Range](uigraphicsimagerendererformat/preferredrange.md)
+- [var preferredRange: UIGraphicsImageRendererFormat.Range](./preferredrange.md)
   The preferred color range of the image renderer context.
-- [var prefersExtendedRange: Bool](uigraphicsimagerendererformat/prefersextendedrange.md)
+- [var prefersExtendedRange: Bool](./prefersextendedrange.md)
   A Boolean value that specifies whether the bitmap context uses extended color.
 
 

@@ -1,7 +1,8 @@
 # OCRTool
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A tool that recognizes text in an image.
 
@@ -36,24 +37,25 @@ let customTool = OCRTool(
 )
 ```
 
-> **Note**:  [`OCRTool`](ocrtool.md) isn’t available in Simulator.
+> **Note**:  [`OCRTool`](./ocrtool.md) isn’t available in Simulator.
 
 ## Topics
 
 ### Creating a tool
-- [init(name: String?, description: String?)](ocrtool/init(name:description:).md)
+- [init(name: String?, description: String?)](./ocrtool/init%28name,description%29.md)
   Creates a tool for recognizing text in images.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Tool](../foundationmodels/tool.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Tool](../FoundationModels/tool.md)
 
 ## See Also
 
-- [struct BarcodeReaderTool](barcodereadertool.md)
+### Foundation Models integration
+- [struct BarcodeReaderTool](./barcodereadertool.md)
   A tool that scans machine-readable codes in an image.
 
 

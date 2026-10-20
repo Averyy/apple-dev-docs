@@ -1,7 +1,8 @@
 # CSSM_ALGID_3DES_1KEY_EEE
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_ALGID_3DES_1KEY_EEE: UInt32 { get }
+```
+
+```c
+CSSM_ALGID_3DES_1KEY_EEE
 ```
 
 

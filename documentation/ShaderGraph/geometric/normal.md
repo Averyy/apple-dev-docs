@@ -1,7 +1,8 @@
 # Normal
 
 **Framework**: ShaderGraph  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: ShaderGraph Node
 
 The geometric normal of the currently-processed data in a given coordinate space.
 
@@ -15,7 +16,15 @@ The geometric normal of the currently-processed data in a given coordinate space
 
 #### Parameter Types
 
-#### Parameter Description
+| Input | Type |
+| --- | --- |
+| `Space` | String |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector3f |
+
+#### Parameter description
 
 - **`Space`**: The coordinate space in which the shader defines the normal vector. The default value is `object`.
 
@@ -29,21 +38,22 @@ Valid values for the `Space` parameter include the following:
 
 ## See Also
 
-- [Position](geometric/position.md)
+### Nodes
+- [Position](./position.md)
   The coordinates of the currently-processed data in a given coordinate space.
-- [Tangent](geometric/tangent.md)
+- [Tangent](./tangent.md)
   The geometric tangent of the currently-processed data in a given coordinate space.
-- [Bitangent](geometric/bitangent.md)
+- [Bitangent](./bitangent.md)
   The geometric bitangent vector of the currently-processed data in a given coordinate space.
-- [Texture Coordinates](geometric/texture-coordinates.md)
+- [Texture Coordinates](./texture-coordinates.md)
   The 2D or 3D texture coordinates of the currently-processed data.
-- [Geometry Color](geometric/geometry-color.md)
+- [Geometry Color](./geometry-color.md)
   The color associated with the geometry at the currently-processed geometric position, typically defined by vertex color.
-- [Geometric Property](geometric/geometric-property.md)
+- [Geometric Property](./geometric-property.md)
   The value of the specified geometric property (defined using ) of the currently-bound geometry.
-- [Reflect (RealityKit)](geometric/reflect-(realitykit).md)
+- [Reflect (RealityKit)](./reflect-%28realitykit%29.md)
   Reflects a vector about another vector.
-- [Refract (RealityKit)](geometric/refract-(realitykit).md)
+- [Refract (RealityKit)](./refract-%28realitykit%29.md)
   Refracts a vector using a given normal and index of refraction (eta).
 
 

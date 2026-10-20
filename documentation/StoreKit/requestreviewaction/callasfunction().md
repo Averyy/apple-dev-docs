@@ -1,7 +1,8 @@
 # callAsFunction()
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells StoreKit to ask the user to rate or review your app, if appropriate.
 
@@ -21,9 +22,9 @@ func callAsFunction()
 
 #### Discussion
 
-Don’t call this method directly. SwiftUI calls it when you call the [`RequestReviewAction`](requestreviewaction.md) instance that you get from the [`requestReview`](https://developer.apple.com/documentation/swiftui/environmentvalues/requestreview) environment value.
+Don’t call this method directly. SwiftUI calls it when you call the [`RequestReviewAction`](../requestreviewaction.md) instance that you get from the [`requestReview`](../../SwiftUI/environmentvalues/requestreview.md) environment value.
 
-For information about how Swift uses the [`callAsFunction()`](requestreviewaction/callasfunction().md)method to simplify call site syntax, see [`Methods with Special Names`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*.
+For information about how Swift uses the [`callAsFunction()`](./callasfunction%28%29.md)method to simplify call site syntax, see [Methods with Special Names](https://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*.
 
 
 ---

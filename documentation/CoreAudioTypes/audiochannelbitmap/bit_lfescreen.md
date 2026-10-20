@@ -1,7 +1,8 @@
 # bit_LFEScreen
 
 **Framework**: Core Audio Types  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Low Frequency Effects (LFE) screen channel.
 
@@ -18,6 +19,10 @@ The Low Frequency Effects (LFE) screen channel.
 
 ```swift
 static var bit_LFEScreen: AudioChannelBitmap { get }
+```
+
+```c
+kAudioChannelBit_LFEScreen
 ```
 
 

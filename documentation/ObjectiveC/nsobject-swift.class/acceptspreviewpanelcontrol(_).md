@@ -1,15 +1,20 @@
 # acceptsPreviewPanelControl(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func acceptsPreviewPanelControl(_ panel: QLPreviewPanel!) -> Bool
+```
+
+```objc
+- (BOOL) acceptsPreviewPanelControl:(QLPreviewPanel *) panel;
 ```
 
 

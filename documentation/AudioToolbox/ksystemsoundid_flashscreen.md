@@ -1,12 +1,13 @@
 # kSystemSoundID_FlashScreen
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-On the desktop, use this constant with the [`AudioServicesPlayAlertSound(_:)`](audioservicesplayalertsound(_:).md) function to display a flash of light on the screen.
+On the desktop, use this constant with the [`AudioServicesPlayAlertSound(_:)`](./audioservicesplayalertsound%28_%29.md) function to display a flash of light on the screen.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ On the desktop, use this constant with the [`AudioServicesPlayAlertSound(_:)`](a
 var kSystemSoundID_FlashScreen: SystemSoundID { get }
 ```
 
+```c
+kSystemSoundID_FlashScreen
+```
+
 ## See Also
 
-- [var kSystemSoundID_UserPreferredAlert: SystemSoundID](ksystemsoundid_userpreferredalert.md)
-  On the desktop, use this constant with the [`AudioServicesPlayAlertSound(_:)`](audioservicesplayalertsound(_:).md) function to play the alert specified in the Sound preference pane.
-- [var kUserPreferredAlert: SystemSoundID](kuserpreferredalert.md)
+### Constants
+- [var kSystemSoundID_UserPreferredAlert: SystemSoundID](./ksystemsoundid_userpreferredalert.md)
+  On the desktop, use this constant with the [`AudioServicesPlayAlertSound(_:)`](./audioservicesplayalertsound%28_%29.md) function to play the alert specified in the Sound preference pane.
+- [var kUserPreferredAlert: SystemSoundID](./kuserpreferredalert.md)
   A deprecated sound identifier.
 
 

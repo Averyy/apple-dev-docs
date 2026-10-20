@@ -1,7 +1,8 @@
 # page(backgroundDisplayMode:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 An index view style that places a page index view over its content.
 
@@ -20,13 +21,16 @@ An index view style that places a page index view over its content.
 static func page(backgroundDisplayMode: PageIndexViewStyle.BackgroundDisplayMode) -> PageIndexViewStyle
 ```
 
+Available when `Self` is `PageIndexViewStyle`.
+
 ## Parameters
 
 - `backgroundDisplayMode`: The display mode of the background of any page index views receiving this style
 
 ## See Also
 
-- [static var page: PageIndexViewStyle](indexviewstyle/page.md)
+### Getting built-in index view styles
+- [static var page: PageIndexViewStyle](./page.md)
   An index view style that places a page index view over its content.
 
 

@@ -1,7 +1,8 @@
 # InAppPurchaseVersionCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a draft version of an In-App Purchase.
 
@@ -10,19 +11,19 @@ The request body you use to create a draft version of an In-App Purchase.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseVersionCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object InAppPurchaseVersionCreateRequest.Data.Relationships](inapppurchaseversioncreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object InAppPurchaseVersionCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `inAppPurchaseVersions`
 - `relationships` (InAppPurchaseVersionCreateRequest.Data.Relationships) *(required)*
 
 

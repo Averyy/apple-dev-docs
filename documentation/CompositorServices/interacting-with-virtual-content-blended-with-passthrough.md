@@ -1,6 +1,8 @@
 # Interacting with virtual content blended with passthrough
 
-**Framework**: Compositor Services
+**Framework**: Compositor Services  
+**Role**: Sample Code  
+**Download**: [InteractingWithVirtualContentBlendedWithPassthrough.zip](https://docs-assets.developer.apple.com/published/0096f3314c24/InteractingWithVirtualContentBlendedWithPassthrough.zip)
 
 Present a mixed immersion style space to draw content in a person’s surroundings, and choose how upper limbs appear with respect to rendered content.
 
@@ -10,19 +12,20 @@ Present a mixed immersion style space to draw content in a person’s surroundin
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC24 session 10092: [`Render Metal with passthrough in visionOS`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10092/).
+> **Note**: This sample code project is associated with WWDC24 session 10092: [Render Metal with passthrough in visionOS](https://developer.apple.com/wwdc24/10092/).
 
 ## See Also
 
-- [Drawing fully immersive content using Metal](drawing-fully-immersive-content-using-metal.md)
+### App integration
+- [Drawing fully immersive content using Metal](./drawing-fully-immersive-content-using-metal.md)
   Create a fully immersive experience in visionOS using a custom Metal-based rendering engine.
-- [Rendering hover effects in Metal immersive apps](rendering_hover_effects_in_metal_immersive_apps.md)
+- [Rendering hover effects in Metal immersive apps](./rendering_hover_effects_in_metal_immersive_apps.md)
   Change the appearance of a rendered onscreen element when a player gazes at it.
-- [struct CompositorLayer](compositorlayer.md)
+- [struct CompositorLayer](./compositorlayer.md)
   A type that you use with an immersive space to display fully immersive content using Metal.
-- [protocol CompositorLayerConfiguration](compositorlayerconfiguration.md)
+- [protocol CompositorLayerConfiguration](./compositorlayerconfiguration.md)
   An interface for specifying the texture configurations and rendering behaviors to use with your Metal rendering engine.
-- [struct DefaultCompositorLayerConfiguration](defaultcompositorlayerconfiguration.md)
+- [struct DefaultCompositorLayerConfiguration](./defaultcompositorlayerconfiguration.md)
   A type that configures the layer with the default texture configurations and rendering behaviors for the current device.
 
 

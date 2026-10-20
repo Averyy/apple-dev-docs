@@ -1,7 +1,8 @@
 # fileURL
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL that locates a file saved to disk.
 

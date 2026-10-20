@@ -1,7 +1,8 @@
 # appLaunch
 
 **Framework**: Media Device  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Capable of launching an application and providing an application-to-application data channel.
 

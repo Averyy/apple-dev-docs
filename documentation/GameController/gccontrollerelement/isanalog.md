@@ -1,7 +1,8 @@
 # isAnalog
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the element provides analog data.
 
@@ -19,13 +20,17 @@ A Boolean value that indicates whether the element provides analog data.
 var isAnalog: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isAnalog) BOOL analog;
+```
+
 ## Mentions
 
-- [Letting players use their second-generation Siri Remote as a game controller](letting-players-use-their-second-generation-siri-remote-as-a-game-controller.md)
+- [Letting players use their second-generation Siri Remote as a game controller](../letting-players-use-their-second-generation-siri-remote-as-a-game-controller.md)
 
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), the input value defined by the element can return a range (from a minimum to maximum) of possible values. For example, this element might be a pressure-sensitive button or an axis of a thumbstick that allows for a range of physical movement. If this property is [`false`](https://developer.apple.com/documentation/swift/false), the input value is a discrete value, such as `0` if the element is off, and `1` if the element is on.
+If this property is [`true`](../../Swift/true.md), the input value defined by the element can return a range (from a minimum to maximum) of possible values. For example, this element might be a pressure-sensitive button or an axis of a thumbstick that allows for a range of physical movement. If this property is [`false`](../../Swift/false.md), the input value is a discrete value, such as `0` if the element is off, and `1` if the element is on.
 
 
 ---

@@ -1,7 +1,8 @@
 # NSStringFromGCPoint2(_:)
 
 **Framework**: Game Controller  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a string representation of a point.
 
@@ -19,6 +20,10 @@ Returns a string representation of a point.
 func NSStringFromGCPoint2(_ point: GCPoint2) -> String
 ```
 
+```c
+extern NSString *NSStringFromGCPoint2(GCPoint2 point);
+```
+
 #### Return Value
 
 A string of the form `{a, b}`, where `a` and `b` are the x and y coordinates of `point`.
@@ -29,7 +34,8 @@ A string of the form `{a, b}`, where `a` and `b` are the x and y coordinates of 
 
 ## See Also
 
-- [func GCPoint2Equal(GCPoint2, GCPoint2) -> Bool](gcpoint2equal(_:_:).md)
+### Comparing and converting points
+- [func GCPoint2Equal(GCPoint2, GCPoint2) -> Bool](./gcpoint2equal%28_,_%29.md)
   Returns whether two points are equal.
 
 

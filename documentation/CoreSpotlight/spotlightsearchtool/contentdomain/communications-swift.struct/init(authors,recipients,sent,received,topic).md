@@ -1,7 +1,8 @@
 # init(authors:recipients:sent:received:topic:)
 
 **Framework**: Core Spotlight  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+

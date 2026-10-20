@@ -1,7 +1,8 @@
 # UIViewAnimatingPosition
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating positions within the animation.
 
@@ -18,31 +19,36 @@ Constants indicating positions within the animation.
 enum UIViewAnimatingPosition
 ```
 
+```c
+enum UIViewAnimatingPosition : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIViewAnimatingPosition.end](uiviewanimatingposition/end.md)
+- [UIViewAnimatingPosition.end](./uiviewanimatingposition/end.md)
   The end point of the animation. Use this constant when you want the final values for any animatable properties—that is, you want to refer to the values you specified in your animation blocks.
-- [UIViewAnimatingPosition.start](uiviewanimatingposition/start.md)
+- [UIViewAnimatingPosition.start](./uiviewanimatingposition/start.md)
   The beginning of the animation. Use this constant when you want the starting values for any animatable properties—that is, the values of the properties before you applied any animations.
-- [UIViewAnimatingPosition.current](uiviewanimatingposition/current.md)
+- [UIViewAnimatingPosition.current](./uiviewanimatingposition/current.md)
   The current position. Use this constant when you want the most recent value set by an animator object.
 ### Initializers
-- [init?(rawValue: Int)](uiviewanimatingposition/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uiviewanimatingposition/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum UIViewAnimatingState](uiviewanimatingstate.md)
+### Constants
+- [enum UIViewAnimatingState](./uiviewanimatingstate.md)
   Constants indicating the current state of the animation.
 
 

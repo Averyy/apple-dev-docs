@@ -1,7 +1,8 @@
 # recordName
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the record that was created, deleted, or updated.
 
@@ -10,17 +11,18 @@ The name of the record that was created, deleted, or updated.
 
 ## Declaration
 
-```swift
+```
 readonly attribute String recordName;
 ```
 
 ## See Also
 
-- [queryNotificationReason](cloudkit.querynotification/querynotificationreason.md)
+### Getting Record Changes
+- [queryNotificationReason](./querynotificationreason.md)
   The reason for the query notification.
-- [recordFields](cloudkit.querynotification/recordfields.md)
+- [recordFields](./recordfields.md)
   A dictionary representation of the fields that changed in the record.
-- [isPublicDatabase](cloudkit.querynotification/ispublicdatabase.md)
+- [isPublicDatabase](./ispublicdatabase.md)
   Boolean value indicating whether the notification is from the public database.
 
 

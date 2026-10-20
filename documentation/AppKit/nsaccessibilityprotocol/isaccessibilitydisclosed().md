@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a Boolean value that determines whether the row is disclosing other rows.
@@ -17,19 +18,20 @@ func isAccessibilityDisclosed() -> Bool
 
 ## See Also
 
-- [func setAccessibilityDisclosed(Bool)](nsaccessibilityprotocol/setaccessibilitydisclosed(_:).md)
+### Configuring outline rows
+- [func setAccessibilityDisclosed(Bool)](./setaccessibilitydisclosed%28_%29.md)
   Sets a Boolean value that determines whether the row is disclosing other rows.
-- [func accessibilityDisclosedByRow() -> Any?](nsaccessibilityprotocol/accessibilitydisclosedbyrow.md)
+- [func accessibilityDisclosedByRow() -> Any?](./accessibilitydisclosedbyrow%28%29.md)
   Returns the row disclosing the current row.
-- [func setAccessibilityDisclosedByRow(Any?)](nsaccessibilityprotocol/setaccessibilitydisclosedbyrow(_:).md)
+- [func setAccessibilityDisclosedByRow(Any?)](./setaccessibilitydisclosedbyrow%28_%29.md)
   Sets the row disclosing the current row.
-- [func accessibilityDisclosedRows() -> Any?](nsaccessibilityprotocol/accessibilitydisclosedrows.md)
+- [func accessibilityDisclosedRows() -> Any?](./accessibilitydisclosedrows%28%29.md)
   Returns the rows that the current row discloses.
-- [func setAccessibilityDisclosedRows(Any?)](nsaccessibilityprotocol/setaccessibilitydisclosedrows(_:).md)
+- [func setAccessibilityDisclosedRows(Any?)](./setaccessibilitydisclosedrows%28_%29.md)
   Sets the rows that the current row discloses.
-- [func accessibilityDisclosureLevel() -> Int](nsaccessibilityprotocol/accessibilitydisclosurelevel.md)
+- [func accessibilityDisclosureLevel() -> Int](./accessibilitydisclosurelevel%28%29.md)
   Returns the indention level for the row.
-- [func setAccessibilityDisclosureLevel(Int)](nsaccessibilityprotocol/setaccessibilitydisclosurelevel(_:).md)
+- [func setAccessibilityDisclosureLevel(Int)](./setaccessibilitydisclosurelevel%28_%29.md)
   Sets the indention level for the row.
 
 

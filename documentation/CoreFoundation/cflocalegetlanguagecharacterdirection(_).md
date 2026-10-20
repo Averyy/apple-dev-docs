@@ -1,7 +1,8 @@
 # CFLocaleGetLanguageCharacterDirection(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the character direction for the specified ISO language code.
 
@@ -20,9 +21,13 @@ Returns the character direction for the specified ISO language code.
 func CFLocaleGetLanguageCharacterDirection(_ isoLangCode: CFString!) -> CFLocaleLanguageDirection
 ```
 
+```c
+extern CFLocaleLanguageDirection CFLocaleGetLanguageCharacterDirection(CFStringRef isoLangCode);
+```
+
 #### Return Value
 
-The character direction for the language. See [`CFLocaleLanguageDirection`](cflocalelanguagedirection.md) for possible values. If the appropriate direction can’t be determined, [`CFLocaleLanguageDirection.unknown`](cflocalelanguagedirection/unknown.md) is returned.
+The character direction for the language. See [`CFLocaleLanguageDirection`](./cflocalelanguagedirection.md) for possible values. If the appropriate direction can’t be determined, [`CFLocaleLanguageDirection.unknown`](./cflocalelanguagedirection/unknown.md) is returned.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ The character direction for the language. See [`CFLocaleLanguageDirection`](cflo
 
 ## See Also
 
-- [func CFLocaleGetLanguageLineDirection(CFString!) -> CFLocaleLanguageDirection](cflocalegetlanguagelinedirection(_:).md)
+### Getting Line and Character Direction for a Language
+- [func CFLocaleGetLanguageLineDirection(CFString!) -> CFLocaleLanguageDirection](./cflocalegetlanguagelinedirection%28_%29.md)
   Returns the line direction for the specified ISO language code.
 
 

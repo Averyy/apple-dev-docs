@@ -1,7 +1,8 @@
 # allocate(byteCount:alignment:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Allocates uninitialized memory with the specified size and alignment.
 

@@ -1,7 +1,8 @@
 # adaptiveWithSingularities(maxIntervals:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Globally adaptive integrator that is based on 21-point or 15-point Gauss–Kronrod quadrature within each subinterval.
 
@@ -11,7 +12,7 @@ Globally adaptive integrator that is based on 21-point or 15-point Gauss–Kronr
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,15 +23,16 @@ static func adaptiveWithSingularities(maxIntervals: Int) -> Quadrature.Integrato
 
 ## See Also
 
-- [Quadrature.Integrator.qng](quadrature/integrator/qng.md)
+### Integrators
+- [Quadrature.Integrator.qng](./qng.md)
   Non-adaptive automatic integrator that uses Gauss-Kronrod-Patterson quadrature coefficients.
-- [static let nonAdaptive: Quadrature.Integrator](quadrature/integrator/nonadaptive.md)
+- [static let nonAdaptive: Quadrature.Integrator](./nonadaptive.md)
   Non-adaptive automatic integrator that uses Gauss-Kronrod-Patterson quadrature coefficients.
-- [case qag(pointsPerInterval: Quadrature.QAGPointsPerInterval, maxIntervals: Int)](quadrature/integrator/qag(pointsperinterval:maxintervals:).md)
+- [case qag(pointsPerInterval: Quadrature.QAGPointsPerInterval, maxIntervals: Int)](./qag%28pointsperinterval,maxintervals%29.md)
   Globally adaptive integrator.
-- [static func adaptive(pointsPerInterval: Quadrature.QAGPointsPerInterval, maxIntervals: Int) -> Quadrature.Integrator](quadrature/integrator/adaptive(pointsperinterval:maxintervals:).md)
+- [static func adaptive(pointsPerInterval: Quadrature.QAGPointsPerInterval, maxIntervals: Int) -> Quadrature.Integrator](./adaptive%28pointsperinterval,maxintervals%29.md)
   Globally adaptive integrator.
-- [Quadrature.Integrator.qags(maxIntervals:)](quadrature/integrator/qags(maxintervals:).md)
+- [Quadrature.Integrator.qags(maxIntervals:)](./qags%28maxintervals%29.md)
   Globally adaptive integrator that is based on 21-point or 15-point Gauss–Kronrod quadrature within each subinterval.
 
 

@@ -1,14 +1,15 @@
 # WeatherAlert.WeatherAlertData.Area
 
 **Framework**: WeatherKit REST API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - Weather API 1.0.0+
 
 ## Declaration
 
-```swift
+```
 object WeatherAlert.WeatherAlertData.Area
 ```
 

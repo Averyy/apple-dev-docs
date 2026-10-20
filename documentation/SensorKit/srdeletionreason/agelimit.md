@@ -1,7 +1,8 @@
 # SRDeletionReason.ageLimit
 
 **Framework**: SensorKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the sample outlived the framework’s retention limit.
 
@@ -16,15 +17,20 @@ Indicates that the sample outlived the framework’s retention limit.
 case ageLimit
 ```
 
+```c
+SRDeletionReasonAgeLimit
+```
+
 ## See Also
 
-- [SRDeletionReason.lowDiskSpace](srdeletionreason/lowdiskspace.md)
+### Reasons
+- [SRDeletionReason.lowDiskSpace](./lowdiskspace.md)
   Indicates that the system’s disk space is low.
-- [SRDeletionReason.noInterestedClients](srdeletionreason/nointerestedclients.md)
+- [SRDeletionReason.noInterestedClients](./nointerestedclients.md)
   Indicates that the sensor has no active stakeholders.
-- [SRDeletionReason.systemInitiated](srdeletionreason/systeminitiated.md)
+- [SRDeletionReason.systemInitiated](./systeminitiated.md)
   Indicates that the system requests deletion.
-- [SRDeletionReason.userInitiated](srdeletionreason/userinitiated.md)
+- [SRDeletionReason.userInitiated](./userinitiated.md)
   Indicates that the user requests deletion.
 
 

@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: os  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the signposter can emit signposts.
 
@@ -11,7 +12,7 @@ A Boolean value that indicates whether the signposter can emit signposts.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a collision group from a raw value.
 
@@ -11,7 +12,7 @@ Creates a collision group from a raw value.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,7 @@ init(rawValue: UInt32)
 
 #### Discussion
 
-This initializer succeeds even if the value passed as `rawValue` exceeds the static properties declared as part of the option set. Usually, you will want to create each collision groups setting a different bit flag for each value, so that multiple individual groups can be combined using [`OptionSet`](https://developer.apple.com/documentation/swift/optionset) methods.
+This initializer succeeds even if the value passed as `rawValue` exceeds the static properties declared as part of the option set. Usually, you will want to create each collision groups setting a different bit flag for each value, so that multiple individual groups can be combined using [`OptionSet`](../../Swift/optionset.md) methods.
 
 Here is an example of creating four collision groups using different bitflag values for each one.
 

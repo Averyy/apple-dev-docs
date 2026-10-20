@@ -1,17 +1,22 @@
 # titleOfSelectedItem
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title of the item last selected by the user.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var titleOfSelectedItem: String? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) NSString * titleOfSelectedItem;
 ```
 
 #### Discussion
@@ -20,11 +25,13 @@ The value of this property is the title of the selected menu item, or an empty s
 
 ## See Also
 
-- [func selectItem(withTitle: String)](nspopupbuttoncell/selectitem(withtitle:).md)
+### Related Documentation
+- [func selectItem(withTitle: String)](./selectitem%28withtitle%29.md)
   Selects the item with the specified title.
-- [func itemTitle(at: Int) -> String](nspopupbuttoncell/itemtitle(at:).md)
+### Title conveniences
+- [func itemTitle(at: Int) -> String](./itemtitle%28at%29.md)
   Returns the title of the item at the specified index.
-- [var itemTitles: [String]](nspopupbuttoncell/itemtitles.md)
+- [var itemTitles: [String]](./itemtitles.md)
   An array of `NSString` objects containing the titles of every item in the menu.
 
 

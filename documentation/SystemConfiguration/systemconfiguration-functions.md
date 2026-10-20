@@ -1,24 +1,26 @@
 # SystemConfiguration Functions
 
-**Framework**: System Configuration
+**Framework**: System Configuration  
+**Role**: API Collection
 
 ## See Also
 
-- [SCDynamicStore](scdynamicstore-gb2.md)
-- [SCDynamicStoreCopySpecific](scdynamicstorecopyspecific.md)
-- [SCDynamicStoreKey](scdynamicstorekey.md)
-- [SCNetwork](scnetwork.md)
-- [SCNetworkConfiguration](scnetworkconfiguration.md)
-- [SCNetworkConnection](scnetworkconnection-g7e.md)
-- [SCNetworkReachability](scnetworkreachability-g7d.md)
-- [SCPreferences](scpreferences-ft8.md)
-- [SCPreferencesPath](scpreferencespath.md)
-- [SCPreferencesSetSpecific](scpreferencessetspecific.md)
-- [SCSchemaDefinitions](scschemadefinitions.md)
-- [System Configuration](system-configuration.md)
-- [SystemConfiguration Enumerations](systemconfiguration-enumerations.md)
-- [SystemConfiguration Constants](systemconfiguration-constants.md)
-- [SystemConfiguration Data Types](systemconfiguration-data-types.md)
+### Reference
+- [SCDynamicStore](./scdynamicstore-gb2.md)
+- [SCDynamicStoreCopySpecific](./scdynamicstorecopyspecific.md)
+- [SCDynamicStoreKey](./scdynamicstorekey.md)
+- [SCNetwork](./scnetwork.md)
+- [SCNetworkConfiguration](./scnetworkconfiguration.md)
+- [SCNetworkConnection](./scnetworkconnection-g7e.md)
+- [SCNetworkReachability](./scnetworkreachability-g7d.md)
+- [SCPreferences](./scpreferences-ft8.md)
+- [SCPreferencesPath](./scpreferencespath.md)
+- [SCPreferencesSetSpecific](./scpreferencessetspecific.md)
+- [SCSchemaDefinitions](./scschemadefinitions.md)
+- [System Configuration](./system-configuration.md)
+- [SystemConfiguration Enumerations](./systemconfiguration-enumerations.md)
+- [SystemConfiguration Constants](./systemconfiguration-constants.md)
+- [SystemConfiguration Data Types](./systemconfiguration-data-types.md)
 
 
 ---

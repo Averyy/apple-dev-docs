@@ -1,7 +1,8 @@
 # HKWorkoutActivityType.taiChi
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The constant for tai chi.
 
@@ -19,19 +20,24 @@ The constant for tai chi.
 case taiChi
 ```
 
+```c
+HKWorkoutActivityTypeTaiChi
+```
+
 #### Discussion
 
 HealthKit provides optimized calorie calculations for this activity based on the data from Apple Watch’s sensors.
 
 ## See Also
 
-- [HKWorkoutActivityType.boxing](hkworkoutactivitytype/boxing.md)
+### Martial arts
+- [HKWorkoutActivityType.boxing](./boxing.md)
   The constant for boxing.
-- [HKWorkoutActivityType.kickboxing](hkworkoutactivitytype/kickboxing.md)
+- [HKWorkoutActivityType.kickboxing](./kickboxing.md)
   The constant for kickboxing.
-- [HKWorkoutActivityType.martialArts](hkworkoutactivitytype/martialarts.md)
+- [HKWorkoutActivityType.martialArts](./martialarts.md)
   The constant for practicing martial arts.
-- [HKWorkoutActivityType.wrestling](hkworkoutactivitytype/wrestling.md)
+- [HKWorkoutActivityType.wrestling](./wrestling.md)
   The constant for wrestling.
 
 

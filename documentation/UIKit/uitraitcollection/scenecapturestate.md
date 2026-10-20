@@ -1,7 +1,8 @@
 # sceneCaptureState
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Scene capture state represents whether a scene is currently being mirrored or recorded.
 
@@ -18,9 +19,14 @@ Scene capture state represents whether a scene is currently being mirrored or re
 var sceneCaptureState: UISceneCaptureState { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UISceneCaptureState sceneCaptureState;
+```
+
 ## See Also
 
-- [enum UISceneCaptureState](uiscenecapturestate.md)
+### Retrieving scene capture state
+- [enum UISceneCaptureState](../uiscenecapturestate.md)
 
 
 ---

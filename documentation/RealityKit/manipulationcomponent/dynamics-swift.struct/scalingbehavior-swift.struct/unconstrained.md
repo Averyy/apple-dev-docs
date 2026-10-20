@@ -1,7 +1,8 @@
 # unconstrained
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Scale is unconstrained.
 

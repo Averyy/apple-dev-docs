@@ -1,16 +1,19 @@
 # UIWindowScene.PresentationStyle.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system determines the most appropriate style.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- tvOS 15.0+
-- visionOS 1.0+
+- iOS 15.0+ - Deprecated in 17.0
+- iPadOS 15.0+ - Deprecated in 17.0
+- Mac Catalyst 15.0+ - Deprecated in 17.0
+- tvOS 15.0+ - Deprecated in 17.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: For more information, see [`UIWindowScene.PresentationStyle`](../presentationstyle.md).
 
 ## Declaration
 
@@ -18,11 +21,16 @@ The system determines the most appropriate style.
 case automatic
 ```
 
+```c
+UIWindowScenePresentationStyleAutomatic
+```
+
 ## See Also
 
-- [UIWindowScene.PresentationStyle.prominent](uiwindowscene/presentationstyle/prominent.md)
+### Constants
+- [UIWindowScene.PresentationStyle.prominent](./prominent.md)
   Presents prominently above others in the current space.
-- [UIWindowScene.PresentationStyle.standard](uiwindowscene/presentationstyle/standard.md)
+- [UIWindowScene.PresentationStyle.standard](./standard.md)
   The default style of the system.
 
 

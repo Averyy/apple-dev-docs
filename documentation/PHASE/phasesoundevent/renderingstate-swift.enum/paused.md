@@ -1,17 +1,18 @@
 # PHASESoundEvent.RenderingState.paused
 
 **Framework**: PHASE  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state in which sound event playback pauses.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ A state in which sound event playback pauses.
 case paused
 ```
 
+```c
+PHASERenderingStatePaused
+```
+
 ## See Also
 
-- [PHASESoundEvent.RenderingState.started](phasesoundevent/renderingstate-swift.enum/started.md)
+### States
+- [PHASESoundEvent.RenderingState.started](./started.md)
   A state in which sound event playback starts.
-- [PHASESoundEvent.RenderingState.stopped](phasesoundevent/renderingstate-swift.enum/stopped.md)
+- [PHASESoundEvent.RenderingState.stopped](./stopped.md)
   A state in which sound event playback stops.
 
 

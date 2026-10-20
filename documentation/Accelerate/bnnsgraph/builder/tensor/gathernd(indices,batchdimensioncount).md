@@ -1,7 +1,8 @@
 # gatherND(indices:batchDimensionCount:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a gather-nd operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a gather-nd operation to the current graph.
 ```swift
 func gatherND(indices: some BNNSGraph.Builder.OperationParameter<Int32>, batchDimensionCount: Int) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 #### Discussion
 

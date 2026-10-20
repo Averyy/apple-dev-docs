@@ -1,7 +1,8 @@
 # value
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The main accessor for the bind value.
 
@@ -11,7 +12,7 @@ The main accessor for the bind value.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,15 +22,16 @@ var value: T { get set }
 
 #### Discussion
 
-This property returns the animated value ([`animatedValue`](bindablevalue/animatedvalue.md)) if an animation is active. Otherwise, this property returns the base value ([`baseValue`](bindablevalue/basevalue.md)).
+This property returns the animated value ([`animatedValue`](./animatedvalue.md)) if an animation is active. Otherwise, this property returns the base value ([`baseValue`](./basevalue.md)).
 
-When you assign a value to this property, the setter assigns the value you provide to [`baseValue`](bindablevalue/basevalue.md).
+When you assign a value to this property, the setter assigns the value you provide to [`baseValue`](./basevalue.md).
 
 ## See Also
 
-- [var baseValue: T](bindablevalue/basevalue.md)
+### Accessing the value
+- [var baseValue: T](./basevalue.md)
   A value that reflects the state of the animated property before or after an animation.
-- [var animatedValue: T?](bindablevalue/animatedvalue.md)
+- [var animatedValue: T?](./animatedvalue.md)
   A value that represents the state of the animated property as an animation progresses.
 
 

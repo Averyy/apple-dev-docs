@@ -1,7 +1,8 @@
 # vfs_fsprivate
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Get filesystem-private mount data.
 
@@ -10,11 +11,11 @@ Get filesystem-private mount data.
 
 ## Declaration
 
-```swift
+```c
 void * vfs_fsprivate(mount_t mp);
 ```
 
-#### Return_value
+#### Return Value
 
 Private data.
 

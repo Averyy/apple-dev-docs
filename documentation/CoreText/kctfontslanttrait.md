@@ -1,7 +1,8 @@
 # kCTFontSlantTrait
 
 **Framework**: Core Text  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The normalized slant angle from the font traits dictionary.
 
@@ -20,17 +21,22 @@ The normalized slant angle from the font traits dictionary.
 let kCTFontSlantTrait: CFString
 ```
 
+```c
+extern CFStringRef const kCTFontSlantTrait;
+```
+
 #### Discussion
 
-The value returned is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object representing a float value between `-1.0` and `1.0` for normalized slant angle. The value of `0.0` corresponds to 0 degrees clockwise rotation from the vertical and `1.0` corresponds to 30 degrees clockwise rotation.
+The value returned is a [`CFNumber`](../CoreFoundation/cfnumber.md) object representing a float value between `-1.0` and `1.0` for normalized slant angle. The value of `0.0` corresponds to 0 degrees clockwise rotation from the vertical and `1.0` corresponds to 30 degrees clockwise rotation.
 
 ## See Also
 
-- [let kCTFontSymbolicTrait: CFString](kctfontsymbolictrait.md)
+### Font Trait Keys
+- [let kCTFontSymbolicTrait: CFString](./kctfontsymbolictrait.md)
   The symbolic traits value from the font traits dictionary.
-- [let kCTFontWeightTrait: CFString](kctfontweighttrait.md)
+- [let kCTFontWeightTrait: CFString](./kctfontweighttrait.md)
   The normalized weight trait from the font traits dictionary.
-- [let kCTFontWidthTrait: CFString](kctfontwidthtrait.md)
+- [let kCTFontWidthTrait: CFString](./kctfontwidthtrait.md)
   The normalized proportion (width condense or expand) trait from the font traits dictionary.
 
 

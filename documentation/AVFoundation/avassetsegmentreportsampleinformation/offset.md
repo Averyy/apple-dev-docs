@@ -1,7 +1,8 @@
 # offset
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The offset of a sample in the segment.
 
@@ -19,13 +20,18 @@ The offset of a sample in the segment.
 var offset: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger offset;
+```
+
 ## See Also
 
-- [var presentationTimeStamp: CMTime](avassetsegmentreportsampleinformation/presentationtimestamp.md)
+### Inspecting the information
+- [var presentationTimeStamp: CMTime](./presentationtimestamp.md)
   The presentation timestamp (PTS) of a sample.
-- [var length: Int](avassetsegmentreportsampleinformation/length.md)
+- [var length: Int](./length.md)
   The length of the sample data.
-- [var isSyncSample: Bool](avassetsegmentreportsampleinformation/issyncsample.md)
+- [var isSyncSample: Bool](./issyncsample.md)
   A Boolean value that indicates whether the sample is a key frame.
 
 

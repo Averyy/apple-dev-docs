@@ -1,7 +1,8 @@
 # run()
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs the generator and returns a stream of newly synthesized samples.
 
@@ -27,7 +28,7 @@ An async throwing stream of individual samples.
 
 #### Discussion
 
-Each element the stream yields is a newly generated sample. After iteration completes, access [`samples`](samplegenerator/samples.md) to retrieve the full dataset (initial + generated), or [`invalidSamples`](samplegenerator/invalidsamples.md) to see samples the validator rejected.
+Each element the stream yields is a newly generated sample. After iteration completes, access [`samples`](./samples.md) to retrieve the full dataset (initial + generated), or [`invalidSamples`](./invalidsamples.md) to see samples the validator rejected.
 
 
 ---

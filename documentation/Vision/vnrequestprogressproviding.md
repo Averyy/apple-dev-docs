@@ -1,7 +1,8 @@
 # VNRequestProgressProviding
 
 **Framework**: Vision  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for providing progress information on long-running tasks in Vision.
 
@@ -19,30 +20,35 @@ A protocol for providing progress information on long-running tasks in Vision.
 protocol VNRequestProgressProviding : NSObjectProtocol
 ```
 
+```objc
+@protocol VNRequestProgressProviding <NSObject>
+```
+
 #### Overview
 
-Adopt this protocol for potentially long-running Vision requests to provide information about progress throughout processing. For example, you can use the optional [`progressHandler`](vnrequestprogressproviding/progresshandler.md) to update the user interface, provide a percentage of completion, or process partial results.
+Adopt this protocol for potentially long-running Vision requests to provide information about progress throughout processing. For example, you can use the optional [`progressHandler`](./vnrequestprogressproviding/progresshandler.md) to update the user interface, provide a percentage of completion, or process partial results.
 
 > **Note**:  The Vision framework may call the progress handler on a different dispatch queue from the thread on which you initiated the original request, so ensure that your handler can execute asynchronously, in a thread-safe manner.
 
 ## Topics
 
 ### Tracking Progress
-- [var progressHandler: VNRequestProgressHandler](vnrequestprogressproviding/progresshandler.md)
+- [var progressHandler: VNRequestProgressHandler](./vnrequestprogressproviding/progresshandler.md)
   A block of code executed periodically during a Vision request to report progress on long-running tasks.
-- [var indeterminate: Bool](vnrequestprogressproviding/indeterminate.md)
+- [var indeterminate: Bool](./vnrequestprogressproviding/indeterminate.md)
   A Boolean set to true when a request can’t determine its progress in fractions completed.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [VNRecognizeTextRequest](vnrecognizetextrequest.md)
+- [VNRecognizeTextRequest](./vnrecognizetextrequest.md)
 
 ## See Also
 
-- [typealias VNRequestProgressHandler](vnrequestprogresshandler.md)
+### Request progress tracking
+- [typealias VNRequestProgressHandler](./vnrequestprogresshandler.md)
   A block executed at intervals during the processing of a Vision request.
 
 

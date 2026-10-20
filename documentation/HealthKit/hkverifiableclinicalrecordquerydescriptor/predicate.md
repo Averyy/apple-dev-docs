@@ -1,7 +1,8 @@
 # predicate
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A predicate that limits the results returned by the query.
 
@@ -10,7 +11,7 @@ A predicate that limits the results returned by the query.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,9 +25,10 @@ If this property is `nil`, the query returns all records of the specified type.
 
 ## See Also
 
-- [var recordTypes: [HKVerifiableClinicalRecordCredentialType]](hkverifiableclinicalrecordquerydescriptor/recordtypes.md)
+### Accessing Query Properties
+- [var recordTypes: [HKVerifiableClinicalRecordCredentialType]](./recordtypes.md)
   The types of records returned by this query.
-- [var sourceTypes: [HKVerifiableClinicalRecordSourceType]](hkverifiableclinicalrecordquerydescriptor/sourcetypes.md)
+- [var sourceTypes: [HKVerifiableClinicalRecordSourceType]](./sourcetypes.md)
   The source for the verifiable clinical records, for example from a SMART Health Card or an EU Digital COVID Certificate.
 
 

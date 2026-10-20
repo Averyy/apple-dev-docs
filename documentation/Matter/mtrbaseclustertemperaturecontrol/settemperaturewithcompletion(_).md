@@ -1,7 +1,8 @@
 # setTemperatureWithCompletion(_:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func setTemperatureWithCompletion(_ completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func setTemperature() async throws
+```
+
+```objc
+- (void) setTemperatureWithCompletion:(MTRStatusCompletion) completion;
 ```
 
 

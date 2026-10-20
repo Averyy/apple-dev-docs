@@ -1,7 +1,8 @@
 # outputChannel
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The surface output channel the shader writes to.
 
@@ -19,9 +20,10 @@ var outputChannel: LowLevelMaterialResource.SimpleSurfaceDescriptor.OutputChanne
 
 ## See Also
 
-- [LowLevelMaterialResource.SimpleSurfaceDescriptor.OutputChannel](lowlevelmaterialresource/simplesurfacedescriptor/outputchannel-swift.enum.md)
+### Configuring the output
+- [LowLevelMaterialResource.SimpleSurfaceDescriptor.OutputChannel](./outputchannel-swift.enum.md)
   The output channel that the simple surface shader writes to.
-- [var outputOpacity: Bool](lowlevelmaterialresource/simplesurfacedescriptor/outputopacity.md)
+- [var outputOpacity: Bool](./outputopacity.md)
   A Boolean value that indicates whether the shader also writes the computed alpha to the surface opacity output.
 
 

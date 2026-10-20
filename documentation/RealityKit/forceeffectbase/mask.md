@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Controls which collision groups will be affected by this force effect.

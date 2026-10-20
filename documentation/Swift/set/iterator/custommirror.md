@@ -1,7 +1,8 @@
 # customMirror
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mirror that reflects the iterator.
 
@@ -19,6 +20,8 @@ A mirror that reflects the iterator.
 ```swift
 var customMirror: Mirror { get }
 ```
+
+Available when `Element` conforms to `Hashable`.
 
 
 ---

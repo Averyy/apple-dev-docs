@@ -1,21 +1,28 @@
 # broadcastAnnotated(withApplicationInfo:)
 
 **Framework**: ReplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Perform any required actions after starting a live broadcast.
 
 **Availability**:
-- iOS 11.2+
-- iPadOS 11.2+
-- Mac Catalyst 13.1+
-- macOS 11.0+
-- visionOS 1.0+
+- iOS 11.2+ - Deprecated in 27.0
+- iPadOS 11.2+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 11.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported
 
 ## Declaration
 
 ```swift
 func broadcastAnnotated(withApplicationInfo applicationInfo: [AnyHashable : Any])
+```
+
+```objc
+- (void) broadcastAnnotatedWithApplicationInfo:(NSDictionary *) applicationInfo;
 ```
 
 ## Parameters
@@ -24,21 +31,22 @@ func broadcastAnnotated(withApplicationInfo applicationInfo: [AnyHashable : Any]
 
 ## See Also
 
-- [func broadcastStarted(withSetupInfo: [String : NSObject]?)](rpbroadcastsamplehandler/broadcaststarted(withsetupinfo:).md)
+### Handling Sample Buffer Clips
+- [func broadcastStarted(withSetupInfo: [String : NSObject]?)](./broadcaststarted%28withsetupinfo%29.md)
   Perform any required actions after starting a live broadcast.
-- [func broadcastPaused()](rpbroadcastsamplehandler/broadcastpaused.md)
+- [func broadcastPaused()](./broadcastpaused%28%29.md)
   Perform any required actions after a live broadcast is paused.
-- [func broadcastResumed()](rpbroadcastsamplehandler/broadcastresumed.md)
+- [func broadcastResumed()](./broadcastresumed%28%29.md)
   Perform any required actions after a live broadcast is resumed.
-- [func broadcastFinished()](rpbroadcastsamplehandler/broadcastfinished.md)
+- [func broadcastFinished()](./broadcastfinished%28%29.md)
   Perform any required actions after a live broadcast is finished.
-- [let RPApplicationInfoBundleIdentifierKey: String](rpapplicationinfobundleidentifierkey.md)
+- [let RPApplicationInfoBundleIdentifierKey: String](../rpapplicationinfobundleidentifierkey.md)
   The key to retrieve the app’s bundle identifier from the user-information dictionary.
-- [func processSampleBuffer(CMSampleBuffer, with: RPSampleBufferType)](rpbroadcastsamplehandler/processsamplebuffer(_:with:).md)
+- [func processSampleBuffer(CMSampleBuffer, with: RPSampleBufferType)](./processsamplebuffer%28_,with%29.md)
   Processes video and audio data as it becomes available during a live broadcast.
-- [let RPVideoSampleOrientationKey: String](rpvideosampleorientationkey.md)
+- [let RPVideoSampleOrientationKey: String](../rpvideosampleorientationkey.md)
   The sample attachment key that describes the video orientation.
-- [func finishBroadcastWithError(any Error)](rpbroadcastsamplehandler/finishbroadcastwitherror(_:).md)
+- [func finishBroadcastWithError(any Error)](./finishbroadcastwitherror%28_%29.md)
   Stops the broadcast and passes an error back to the broadcasting app.
 
 

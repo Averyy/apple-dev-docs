@@ -1,7 +1,8 @@
 # bundleIdentifier
 
 **Framework**: AppMigrationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app’s bundle identifier.
 

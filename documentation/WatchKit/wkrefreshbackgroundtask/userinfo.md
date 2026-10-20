@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Custom information associated with the background task.
 
@@ -12,6 +13,10 @@ Custom information associated with the background task.
 
 ```swift
 var userInfo: (any NSSecureCoding & NSObjectProtocol)? { get }
+```
+
+```objc
+@property (readonly, nullable) id<NSObject,NSSecureCoding> userInfo;
 ```
 
 #### Discussion

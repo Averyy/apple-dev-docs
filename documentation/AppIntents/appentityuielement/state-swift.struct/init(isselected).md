@@ -1,7 +1,8 @@
 # init(isSelected:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the state that describes if a UI element is selected.
 

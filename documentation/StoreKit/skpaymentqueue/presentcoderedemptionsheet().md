@@ -1,15 +1,18 @@
 # presentCodeRedemptionSheet()
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays a sheet that enables customers to redeem offer codes that you configure in App Store Connect.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- visionOS 1.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use [`presentOfferCodeRedeemSheet(in:)`](../appstore/presentoffercoderedeemsheet%28in%29.md) or [`offerCodeRedemption(isPresented:onCompletion:)`](../../SwiftUI/view/offercoderedemption%28ispresented,oncompletion%29.md) instead. For more information, see [Supporting offer codes in your app](../supporting-offer-codes-in-your-app.md).
 
 ## Declaration
 
@@ -17,26 +20,30 @@ Displays a sheet that enables customers to redeem offer codes that you configure
 func presentCodeRedemptionSheet()
 ```
 
+```objc
+- (void) presentCodeRedemptionSheet;
+```
+
 ## Mentions
 
-- [Implementing offer codes in your app](implementing-offer-codes-in-your-app.md)
-- [Testing Apple In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
-- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
-- [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
+- [Implementing offer codes in your app](../implementing-offer-codes-in-your-app.md)
+- [Testing Apple In-App Purchases in Xcode](../testing-in-app-purchases-in-xcode.md)
+- [Supporting offer codes in your app](../supporting-offer-codes-in-your-app.md)
+- [Supporting subscription offer codes in your app](../supporting-subscription-offer-codes-in-your-app.md)
 
 #### Discussion
 
-The [`presentCodeRedemptionSheet()`](skpaymentqueue/presentcoderedemptionsheet().md) function displays a system sheet where customers can enter and redeem offer codes. If you generate offer codes in App Store Connect, call this function to enable customers to redeem the offer. For information on implementing offer codes, see [`Implementing offer codes in your app`](implementing-offer-codes-in-your-app.md).
+The [`presentCodeRedemptionSheet()`](./presentcoderedemptionsheet%28%29.md) function displays a system sheet where customers can enter and redeem offer codes. If you generate offer codes in App Store Connect, call this function to enable customers to redeem the offer. For information on implementing offer codes, see [Implementing offer codes in your app](../implementing-offer-codes-in-your-app.md).
 
-> **Note**:  For apps with more than one scene, and on iOS 16 or later and iPadOS 16 or later, use [`offerCodeRedemption(isPresented:onCompletion:)`](https://developer.apple.com/documentation/swiftui/view/offercoderedemption(ispresented:oncompletion:)) or [`presentOfferCodeRedeemSheet(in:)`](appstore/presentoffercoderedeemsheet(in:).md) instead.
+> **Note**:  For apps with more than one scene, and on iOS 16 or later and iPadOS 16 or later, use [`offerCodeRedemption(isPresented:onCompletion:)`](../../SwiftUI/view/offercoderedemption%28ispresented,oncompletion%29.md) or [`presentOfferCodeRedeemSheet(in:)`](../appstore/presentoffercoderedeemsheet%28in%29.md) instead.
 
-When your app calls [`presentCodeRedemptionSheet()`](skpaymentqueue/presentcoderedemptionsheet().md), the system determines where to display the screen. Use [`presentCodeRedemptionSheet()`](skpaymentqueue/presentcoderedemptionsheet().md) to support devices running iOS 14 through iOS 15, and iPadOS 14 through iPadOS 15.
+When your app calls [`presentCodeRedemptionSheet()`](./presentcoderedemptionsheet%28%29.md), the system determines where to display the screen. Use [`presentCodeRedemptionSheet()`](./presentcoderedemptionsheet%28%29.md) to support devices running iOS 14 through iOS 15, and iPadOS 14 through iPadOS 15.
 
 > ❗ **Important**:  Set up offer codes in App Store Connect before calling this API. Customers can only redeem these offers in your app through the redemption sheet; don’t use a custom UI.
 
-For information on configuring and generating offer codes, see [`Set up offer codes`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev6a098e4b1).
+For information on configuring and generating offer codes, see [Set up offer codes](https://help.apple.com/app-store-connect/#/dev6a098e4b1).
 
-This method applies to offer codes only; it doesn’t apply to promo codes for apps or Apple In-App Purchases. For more information on promo codes, see [`Request and manage promo codes`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev50869de4a).
+This method applies to offer codes only; it doesn’t apply to promo codes for apps or Apple In-App Purchases. For more information on promo codes, see [Request and manage promo codes](https://help.apple.com/app-store-connect/#/dev50869de4a).
 
 This function doesn’t affect Mac apps built with Mac Catalyst.
 

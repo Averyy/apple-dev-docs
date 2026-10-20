@@ -1,7 +1,8 @@
 # toDataURL
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Returns a data URL containing an image of the canvas.
 
@@ -11,13 +12,13 @@ Returns a data URL containing an image of the canvas.
 
 ## Declaration
 
-```swift
+```
 DOMString toDataURL(
     optional DOMString? type
 );
 ```
 
-#### Return_value
+#### Return Value
 
 Returns a data URL containing image data of a snapshot of the canvas. The image data is in `.png` format unless otherwise specified.
 
@@ -25,7 +26,7 @@ Returns a data URL containing image data of a snapshot of the canvas. The image 
 
 Use this method to record an image of the canvas’ contents as `.png` or `.jpg` file. The method returns the image as a data URL. The image can be drawn back to the canvas later using the drawing context’s `drawImage` method.
 
-##### 1676703
+##### Special Considerations
 
 The HTML5 specification currently requires `toDataURL()` to support the `.png` format. Safari also supports the `image/jpeg` type, but other HTML5-savvy browsers may not.
 

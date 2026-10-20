@@ -1,7 +1,8 @@
 # init(upstream:retries:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that attempts to recreate its subscription to a failed upstream publisher.
 

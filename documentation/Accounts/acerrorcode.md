@@ -1,7 +1,8 @@
 # ACErrorCode
 
 **Framework**: Accounts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Codes for errors that may occur.
 
@@ -17,76 +18,81 @@ Codes for errors that may occur.
 struct ACErrorCode
 ```
 
+```c
+typedef enum ACErrorCode : unsigned int { ... } ACErrorCode;
+```
+
 ## Topics
 
 ### Errors
-- [var ACErrorUnknown: ACErrorCode](acerrorunknown.md)
+- [var ACErrorUnknown: ACErrorCode](./acerrorunknown.md)
   Error code that indicates an unknown error occurred.
-- [var ACErrorAccountMissingRequiredProperty: ACErrorCode](acerroraccountmissingrequiredproperty.md)
+- [var ACErrorAccountMissingRequiredProperty: ACErrorCode](./acerroraccountmissingrequiredproperty.md)
   Error code that indicates an account wasn’t saved because a required property is missing.
-- [var ACErrorAccountAuthenticationFailed: ACErrorCode](acerroraccountauthenticationfailed.md)
+- [var ACErrorAccountAuthenticationFailed: ACErrorCode](./acerroraccountauthenticationfailed.md)
   Error code that indicates an account wasn’t saved because authentication of its credential failed.
-- [var ACErrorAccountTypeInvalid: ACErrorCode](acerroraccounttypeinvalid.md)
+- [var ACErrorAccountTypeInvalid: ACErrorCode](./acerroraccounttypeinvalid.md)
   Error code that indicates an account wasn’t saved because its account type is invalid.
-- [var ACErrorAccountAlreadyExists: ACErrorCode](acerroraccountalreadyexists.md)
+- [var ACErrorAccountAlreadyExists: ACErrorCode](./acerroraccountalreadyexists.md)
   Error code that indicates an account wasn’t added because it already exists.
-- [var ACErrorAccountNotFound: ACErrorCode](acerroraccountnotfound.md)
+- [var ACErrorAccountNotFound: ACErrorCode](./acerroraccountnotfound.md)
   Error code that indicates an account wasn’t deleted because it couldn’t be found.
-- [var ACErrorPermissionDenied: ACErrorCode](acerrorpermissiondenied.md)
+- [var ACErrorPermissionDenied: ACErrorCode](./acerrorpermissiondenied.md)
   Error code that indicates the operation failed because the application doesn’t have permission to perform the operation.
-- [var ACErrorAccessInfoInvalid: ACErrorCode](acerroraccessinfoinvalid.md)
+- [var ACErrorAccessInfoInvalid: ACErrorCode](./acerroraccessinfoinvalid.md)
   Error code that indicates the client’s access info dictionary has incorrect or missing values.
-- [var ACErrorClientPermissionDenied: ACErrorCode](acerrorclientpermissiondenied.md)
+- [var ACErrorClientPermissionDenied: ACErrorCode](./acerrorclientpermissiondenied.md)
   Error code that indicates the client doesn’t have access to the requested data.
-- [var ACErrorAccessDeniedByProtectionPolicy: ACErrorCode](acerroraccessdeniedbyprotectionpolicy.md)
+- [var ACErrorAccessDeniedByProtectionPolicy: ACErrorCode](./acerroraccessdeniedbyprotectionpolicy.md)
   Error code that indicates due to the current protection policy, the credentials couldn’t be fetched.
-- [var ACErrorCredentialNotFound: ACErrorCode](acerrorcredentialnotfound.md)
+- [var ACErrorCredentialNotFound: ACErrorCode](./acerrorcredentialnotfound.md)
   Error code that indicates no credentials were found.
-- [var ACErrorFetchCredentialFailed: ACErrorCode](acerrorfetchcredentialfailed.md)
+- [var ACErrorFetchCredentialFailed: ACErrorCode](./acerrorfetchcredentialfailed.md)
   Error code that indicates the credentials couldn’t be fetched from Keychain.
-- [var ACErrorStoreCredentialFailed: ACErrorCode](acerrorstorecredentialfailed.md)
+- [var ACErrorStoreCredentialFailed: ACErrorCode](./acerrorstorecredentialfailed.md)
   Error code that indicates the credentials couldn’t be stored in Keychain.
-- [var ACErrorRemoveCredentialFailed: ACErrorCode](acerrorremovecredentialfailed.md)
+- [var ACErrorRemoveCredentialFailed: ACErrorCode](./acerrorremovecredentialfailed.md)
   Error code that indicates the credentials couldn’t be removed from Keychain.
-- [var ACErrorUpdatingNonexistentAccount: ACErrorCode](acerrorupdatingnonexistentaccount.md)
+- [var ACErrorUpdatingNonexistentAccount: ACErrorCode](./acerrorupdatingnonexistentaccount.md)
   Error code that indicates an account save failed because the account being updated has been removed.
-- [var ACErrorInvalidClientBundleID: ACErrorCode](acerrorinvalidclientbundleid.md)
+- [var ACErrorInvalidClientBundleID: ACErrorCode](./acerrorinvalidclientbundleid.md)
   Error code that indicates the client making the request doesn’t have a valid bundle ID.
-- [var ACErrorDeniedByPlugin: ACErrorCode](acerrordeniedbyplugin.md)
+- [var ACErrorDeniedByPlugin: ACErrorCode](./acerrordeniedbyplugin.md)
   Error code that indicates a plugin prevented the expected action from occurring.
-- [var ACErrorCoreDataSaveFailed: ACErrorCode](acerrorcoredatasavefailed.md)
+- [var ACErrorCoreDataSaveFailed: ACErrorCode](./acerrorcoredatasavefailed.md)
   Error code that indicates an error occurred while trying to save to a Core Data store.
-- [var ACErrorFailedSerializingAccountInfo: ACErrorCode](acerrorfailedserializingaccountinfo.md)
+- [var ACErrorFailedSerializingAccountInfo: ACErrorCode](./acerrorfailedserializingaccountinfo.md)
   Error code that indicates an account’s information couldn’t be serialized.
-- [var ACErrorInvalidCommand: ACErrorCode](acerrorinvalidcommand.md)
+- [var ACErrorInvalidCommand: ACErrorCode](./acerrorinvalidcommand.md)
   Error code that indicates an invalid command was attempted.
-- [var ACErrorMissingTransportMessageID: ACErrorCode](acerrormissingtransportmessageid.md)
+- [var ACErrorMissingTransportMessageID: ACErrorCode](./acerrormissingtransportmessageid.md)
   Error code that indicates an expected message identifier wasn’t found while performing a command.
-- [var ACErrorCredentialItemNotFound: ACErrorCode](acerrorcredentialitemnotfound.md)
+- [var ACErrorCredentialItemNotFound: ACErrorCode](./acerrorcredentialitemnotfound.md)
   Error code that indicates a credential item wasn’t saved because it couldn’t be found.
-- [var ACErrorCredentialItemNotExpired: ACErrorCode](acerrorcredentialitemnotexpired.md)
+- [var ACErrorCredentialItemNotExpired: ACErrorCode](./acerrorcredentialitemnotexpired.md)
   Error code that indicates a credential item wasn’t removed because it hasn’t yet expired.
 ### Initializers
-- [init(UInt32)](acerrorcode/init(_:).md)
+- [init(UInt32)](./acerrorcode/init%28_%29.md)
   Initializes a new error code structure.
-- [init(rawValue: UInt32)](acerrorcode/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./acerrorcode/init%28rawvalue%29.md)
   Initializes a new error code structure.
 ### Instance Properties
-- [var rawValue: UInt32](acerrorcode/rawvalue.md)
+- [var rawValue: UInt32](./acerrorcode/rawvalue.md)
   The raw integer value of the error code.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [let ACErrorDomain: String](acerrordomain.md)
+### Errors
+- [let ACErrorDomain: String](./acerrordomain.md)
   The error domain for the Accounts framework.
 
 

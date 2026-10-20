@@ -1,7 +1,8 @@
 # parse(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Parses an integer string in accordance with this strategy and returns the parsed value.
 
@@ -20,13 +21,15 @@ Parses an integer string in accordance with this strategy and returns the parsed
 func parse(_ value: String) throws -> Format.FormatInput
 ```
 
+Available when `Format` conforms to `FormatStyle` and `Format.FormatInput` conforms to `BinaryInteger`.
+
 #### Return Value
 
 The parsed integer value.
 
 #### Discussion
 
-Use this method to repeatedly parse integer strings with the same [`IntegerParseStrategy`](integerparsestrategy.md). To parse a single integer string, use the initializers inherited from [`BinaryInteger`](https://developer.apple.com/documentation/swift/binaryinteger) that take a [`String`](https://developer.apple.com/documentation/swift/string) and a [`FormatStyle`](formatstyle.md) as parameters.
+Use this method to repeatedly parse integer strings with the same [`IntegerParseStrategy`](../integerparsestrategy.md). To parse a single integer string, use the initializers inherited from [`BinaryInteger`](../../Swift/binaryinteger.md) that take a [`String`](../../Swift/string.md) and a [`FormatStyle`](../formatstyle.md) as parameters.
 
 This method throws an error if the parse strategy can’t parse the provided string.
 

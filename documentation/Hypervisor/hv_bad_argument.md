@@ -1,12 +1,13 @@
 # HV_BAD_ARGUMENT
 
 **Framework**: Hypervisor  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The operation was unsuccessful because the function call had an invalid argument.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ The operation was unsuccessful because the function call had an invalid argument
 var HV_BAD_ARGUMENT: Int { get }
 ```
 
+```c
+HV_BAD_ARGUMENT
+```
+
 ## See Also
 
-- [var HV_SUCCESS: Int](hv_success.md)
+### Return Values
+- [var HV_SUCCESS: Int](./hv_success.md)
   The operation completed successfully.
-- [var HV_ERROR: Int](hv_error.md)
+- [var HV_ERROR: Int](./hv_error.md)
   The operation was unsuccessful.
-- [var HV_BUSY: Int](hv_busy.md)
+- [var HV_BUSY: Int](./hv_busy.md)
   The operation was unsuccessful because the owning resource was busy.
-- [var HV_NO_RESOURCES: Int](hv_no_resources.md)
+- [var HV_NO_RESOURCES: Int](./hv_no_resources.md)
   The operation was unsuccessful because the host had no resources available to complete the request.
-- [var HV_NO_DEVICE: Int](hv_no_device.md)
+- [var HV_NO_DEVICE: Int](./hv_no_device.md)
   The operation was unsuccessful because no VM or vCPU was available.
-- [var HV_UNSUPPORTED: Int](hv_unsupported.md)
+- [var HV_UNSUPPORTED: Int](./hv_unsupported.md)
   The operation requested isn’t supported by the hypervisor.
 
 

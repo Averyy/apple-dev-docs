@@ -1,14 +1,15 @@
 # init(wasFollowingGuidance:guidanceToken:)
 
 **Framework**: EnergyKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Initialize the GuidanceState for the [`ElectricVehicleLoadEvent`](electricvehicleloadevent.md)
+Initialize the GuidanceState for the [`ElectricVehicleLoadEvent`](../../../electricvehicleloadevent.md)
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,8 +19,8 @@ init(wasFollowingGuidance: Bool, guidanceToken: UUID)
 
 ## Parameters
 
-- `wasFollowingGuidance`: Whether the device was applying [`ElectricityGuidance`](electricityguidance.md) for its energy use at the time of the event.
-- `guidanceToken`: The token provided at time of [`ElectricityGuidance`](electricityguidance.md) fetch.
+- `wasFollowingGuidance`: Whether the device was applying [`ElectricityGuidance`](../../../electricityguidance.md) for its energy use at the time of the event.
+- `guidanceToken`: The token provided at time of [`ElectricityGuidance`](../../../electricityguidance.md) fetch.
 
 
 ---

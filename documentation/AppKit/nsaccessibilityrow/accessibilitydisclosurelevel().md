@@ -1,17 +1,22 @@
 # accessibilityDisclosureLevel()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the indention level for the row.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional func accessibilityDisclosureLevel() -> Int
+```
+
+```objc
+- (NSInteger) accessibilityDisclosureLevel;
 ```
 
 #### Return Value
@@ -20,11 +25,12 @@ The disclosure level for the row.
 
 #### Discussion
 
-This method is the getter for the [`NSAccessibilityProtocol`](nsaccessibilityprotocol.md) protocol’s [`accessibilityDisclosureLevel`](nsaccessibility-c.protocol/accessibilitydisclosurelevel.md) property.
+This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilityDisclosureLevel`](../nsaccessibility-c.protocol/accessibilitydisclosurelevel.md) property.
 
 ## See Also
 
-- [func accessibilityIndex() -> Int](nsaccessibilityrow/accessibilityindex.md)
+### Supporting Accessibility
+- [func accessibilityIndex() -> Int](./accessibilityindex%28%29.md)
   Returns the index for the row.
 
 

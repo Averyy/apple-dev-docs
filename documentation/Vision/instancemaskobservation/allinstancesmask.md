@@ -1,7 +1,8 @@
 # allInstancesMask
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The resulting mask that represents all instances.
 
@@ -26,11 +27,12 @@ A pixel can only correspond to one instance. A `0` represents the background, an
 
 ## See Also
 
-- [func instanceAtPoint(NormalizedPoint) -> IndexSet](instancemaskobservation/instanceatpoint(_:).md)
+### Getting instances
+- [func instanceAtPoint(NormalizedPoint) -> IndexSet](./instanceatpoint%28_%29.md)
   Returns an instance at the point you specify.
-- [let allInstances: IndexSet](instancemaskobservation/allinstances.md)
+- [let allInstances: IndexSet](./allinstances.md)
   The collection that contains all instances, excluding the background.
-- [struct PixelBufferObservation](pixelbufferobservation.md)
+- [struct PixelBufferObservation](../pixelbufferobservation.md)
   An object that represents an image that an image-analysis request produces.
 
 

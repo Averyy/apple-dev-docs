@@ -1,7 +1,8 @@
 # defaultTarget
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the joint transforms representing the default target value.
 
@@ -19,9 +20,11 @@ Returns the joint transforms representing the default target value.
 var defaultTarget: JointTransforms? { get }
 ```
 
+Available when `Value` is `JointTransforms`.
+
 #### Discussion
 
-See: [`defaultTarget`](animationstateprotocol/defaulttarget.md)
+See: [`defaultTarget`](../animationstateprotocol/defaulttarget.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # kAXCheckBoxRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A check box.
 
@@ -12,6 +13,10 @@ A check box.
 
 ```swift
 var kAXCheckBoxRole: String { get }
+```
+
+```c
+#define kAXCheckBoxRole
 ```
 
 

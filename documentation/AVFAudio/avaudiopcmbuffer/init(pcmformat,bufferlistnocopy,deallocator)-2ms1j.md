@@ -1,7 +1,8 @@
 # init(PCMFormat:bufferListNoCopy:deallocator:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.0+

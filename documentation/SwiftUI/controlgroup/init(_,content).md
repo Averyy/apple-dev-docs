@@ -1,7 +1,8 @@
 # init(_:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new control group with the specified content that generates its label from a string.
 
@@ -20,6 +21,20 @@ Creates a new control group with the specified content that generates its label 
 nonisolated init<C, S>(_ title: S, @ContentBuilder content: () -> C) where Content == LabeledControlGroupContent<C, Text>, C : View, S : StringProtocol
 ```
 
+Available when `Content` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+nonisolated init<C>(_ titleKey: LocalizedStringKey, @ContentBuilder content: () -> C) where Content == LabeledControlGroupContent<C, Text>, C : View
+```
+
+```swift
+@export(implementation)
+nonisolated init<C>(_ titleResource: LocalizedStringResource, @ContentBuilder content: () -> C) where Content == LabeledControlGroupContent<C, Text>, C : View
+```
+
 ## Parameters
 
 - `title`: A string that describes the contents of the group.
@@ -27,9 +42,10 @@ nonisolated init<C, S>(_ title: S, @ContentBuilder content: () -> C) where Conte
 
 ## See Also
 
-- [init(content: () -> Content)](controlgroup/init(content:).md)
+### Creating a control group
+- [init(content: () -> Content)](./init%28content%29.md)
   Creates a new ControlGroup with the specified children
-- [init<C, L>(content: () -> C, label: () -> L)](controlgroup/init(content:label:).md)
+- [init<C, L>(content: () -> C, label: () -> L)](./init%28content,label%29.md)
   Creates a new control group with the specified content and a label.
 
 

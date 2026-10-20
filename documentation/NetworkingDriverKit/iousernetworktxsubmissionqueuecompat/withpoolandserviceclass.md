@@ -1,14 +1,15 @@
 # withPoolAndServiceClass
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 static IOUserNetworkTxSubmissionQueueCompat * withPoolAndServiceClass(IOUserNetworkPacketBufferPool *pool, IOUserNetworkServiceClass serviceClass, uint32_t capacity, IOUserNetworkPacketQueueCompatId queueId, OSObject *target, QueryFreeSpaceActionCompat freeSpaceAction, DequeueActionCompat dequeueAction, void *refCon, IOOptionBits options);
 ```
 

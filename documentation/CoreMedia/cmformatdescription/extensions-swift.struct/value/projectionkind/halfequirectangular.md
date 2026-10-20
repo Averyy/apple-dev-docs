@@ -1,7 +1,8 @@
 # halfEquirectangular
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates half equirectangular projection of a 180 degree hemisphere to a rectangular plane, where longitude and latitude of the sphere are mapped linearly to the x,y axes of the plane
 

@@ -2,6 +2,7 @@
 
 **Framework**: Assignables  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Given a set of part identifiers, return a dictionary of part ID to part data.
@@ -10,7 +11,7 @@ Given a set of part identifiers, return a dictionary of part ID to part data.
 - iOS 17.5+
 - iPadOS 17.5+
 - Mac Catalyst 17.5+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

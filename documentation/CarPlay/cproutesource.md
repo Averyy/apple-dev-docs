@@ -1,7 +1,8 @@
 # CPRouteSource
 
 **Framework**: CarPlay  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.4+
@@ -14,6 +15,10 @@
 enum CPRouteSource
 ```
 
+```c
+enum CPRouteSource : NSUInteger;
+```
+
 #### Overview
 
 Specifies the destination and modification status of route information displayed to the user
@@ -21,30 +26,30 @@ Specifies the destination and modification status of route information displayed
 ## Topics
 
 ### Enumeration Cases
-- [CPRouteSource.sourceInactive](cproutesource/sourceinactive.md)
+- [CPRouteSource.sourceInactive](./cproutesource/sourceinactive.md)
   No current route source.
-- [CPRouteSource.sourceVehicle](cproutesource/sourcevehicle.md)
+- [CPRouteSource.sourceVehicle](./cproutesource/sourcevehicle.md)
   Route and destination(s) being used by the vehicle is from the vehicle’s system.
-- [CPRouteSource.sourceiOSDestinationsOnly](cproutesource/sourceiosdestinationsonly.md)
+- [CPRouteSource.sourceiOSDestinationsOnly](./cproutesource/sourceiosdestinationsonly.md)
   Only the destination(s) from the device are being used, routes are not.
-- [CPRouteSource.sourceiOSRouteDestinationsModified](cproutesource/sourceiosroutedestinationsmodified.md)
+- [CPRouteSource.sourceiOSRouteDestinationsModified](./cproutesource/sourceiosroutedestinationsmodified.md)
   Route and destination(s) from the device are being used but both have been modified.
-- [CPRouteSource.sourceiOSRouteModified](cproutesource/sourceiosroutemodified.md)
+- [CPRouteSource.sourceiOSRouteModified](./cproutesource/sourceiosroutemodified.md)
   Route is from the device and being used by the vehicle but has been modified. The destination(s)/waypoints have not been changed.
-- [CPRouteSource.sourceiOSUnchanged](cproutesource/sourceiosunchanged.md)
+- [CPRouteSource.sourceiOSUnchanged](./cproutesource/sourceiosunchanged.md)
   Route is from the device and being used by the vehicle unmodified.
 ### Initializers
-- [init?(rawValue: UInt)](cproutesource/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./cproutesource/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

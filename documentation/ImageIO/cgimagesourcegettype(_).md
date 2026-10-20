@@ -1,7 +1,8 @@
 # CGImageSourceGetType(_:)
 
 **Framework**: Image I/O  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the uniform type identifier of the source container.
 
@@ -20,6 +21,10 @@ Returns the uniform type identifier of the source container.
 func CGImageSourceGetType(_ isrc: CGImageSource) -> CFString?
 ```
 
+```c
+extern CFStringRefCGImageSourceGetType(CGImageSourceRef isrc);
+```
+
 #### Return Value
 
 The uniform type identifier of the image source container.
@@ -28,7 +33,7 @@ The uniform type identifier of the image source container.
 
 The uniform type identifier of the source container can be different from the type of the images in the container. For example, the `.icns` format supports embedded `JPEG2000`. The type of the source container is `"com.apple.icns"`, but type of the images is `JPEG2000`.
 
-For a list of system-declared and third-party identifiers, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/uniformtypeidentifiers).
+For a list of system-declared and third-party identifiers, see [Uniform Type Identifiers](../UniformTypeIdentifiers/UniformTypeIdentifiers.md).
 
 ## Parameters
 
@@ -36,17 +41,18 @@ For a list of system-declared and third-party identifiers, see [`Uniform Type Id
 
 ## See Also
 
-- [func CGImageSourceGetTypeID() -> CFTypeID](cgimagesourcegettypeid().md)
+### Getting Information From an Image Source
+- [func CGImageSourceGetTypeID() -> CFTypeID](./cgimagesourcegettypeid%28%29.md)
   Returns the unique type identifier of an image source opaque type.
-- [func CGImageSourceCopyTypeIdentifiers() -> CFArray](cgimagesourcecopytypeidentifiers().md)
+- [func CGImageSourceCopyTypeIdentifiers() -> CFArray](./cgimagesourcecopytypeidentifiers%28%29.md)
   Returns an array of uniform type identifiers that are supported for image sources.
-- [func CGImageSourceGetCount(CGImageSource) -> Int](cgimagesourcegetcount(_:).md)
+- [func CGImageSourceGetCount(CGImageSource) -> Int](./cgimagesourcegetcount%28_%29.md)
   Returns the number of images (not including thumbnails) in the image source.
-- [func CGImageSourceCopyProperties(CGImageSource, CFDictionary?) -> CFDictionary?](cgimagesourcecopyproperties(_:_:).md)
+- [func CGImageSourceCopyProperties(CGImageSource, CFDictionary?) -> CFDictionary?](./cgimagesourcecopyproperties%28_,_%29.md)
   Returns the properties of the image source.
-- [func CGImageSourceCopyPropertiesAtIndex(CGImageSource, Int, CFDictionary?) -> CFDictionary?](cgimagesourcecopypropertiesatindex(_:_:_:).md)
+- [func CGImageSourceCopyPropertiesAtIndex(CGImageSource, Int, CFDictionary?) -> CFDictionary?](./cgimagesourcecopypropertiesatindex%28_,_,_%29.md)
   Returns the properties of the image at a specified location in an image source.
-- [func CGImageSourceCopyAuxiliaryDataInfoAtIndex(CGImageSource, Int, CFString) -> CFDictionary?](cgimagesourcecopyauxiliarydatainfoatindex(_:_:_:).md)
+- [func CGImageSourceCopyAuxiliaryDataInfoAtIndex(CGImageSource, Int, CFString) -> CFDictionary?](./cgimagesourcecopyauxiliarydatainfoatindex%28_,_,_%29.md)
   Returns auxiliary data, such as mattes and depth information, that accompany the image.
 
 

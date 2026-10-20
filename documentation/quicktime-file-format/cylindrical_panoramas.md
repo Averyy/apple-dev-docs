@@ -1,6 +1,7 @@
 # Cylindrical panoramas
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Store cylindrical panoramas with horizontal orientation.
 
@@ -14,9 +15,10 @@ One consequence of reorienting the panorama horizontally is that, when the panor
 
 ## See Also
 
-- [Panorama sample atom ('pdat')](panorama_sample_atom.md)
+### Storing panorama tracks
+- [Panorama sample atom ('pdat')](./panorama_sample_atom.md)
   An atom that describes a single panorama.
-- [Panorama image track](panorama_image_track.md)
+- [Panorama image track](./panorama_image_track.md)
   Store the panoramic image for a panoramic node.
 
 

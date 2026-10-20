@@ -1,17 +1,18 @@
 # AVAudioSession.RenderingMode.dolbyAtmos
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that represents Dolby Atmos.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,17 +20,22 @@ A mode that represents Dolby Atmos.
 case dolbyAtmos
 ```
 
+```c
+AVAudioSessionRenderingModeDolbyAtmos
+```
+
 ## See Also
 
-- [AVAudioSession.RenderingMode.monoStereo](avaudiosession/renderingmode-swift.enum/monostereo.md)
+### Getting the rendering modes
+- [AVAudioSession.RenderingMode.monoStereo](./monostereo.md)
   A mode that represents non multi-channel audio.
-- [AVAudioSession.RenderingMode.surround](avaudiosession/renderingmode-swift.enum/surround.md)
+- [AVAudioSession.RenderingMode.surround](./surround.md)
   A mode that represents general multi-channel audio.
-- [AVAudioSession.RenderingMode.spatialAudio](avaudiosession/renderingmode-swift.enum/spatialaudio.md)
+- [AVAudioSession.RenderingMode.spatialAudio](./spatialaudio.md)
   A mode that represents a fallback for when hardware capabilities don’t support Dolby.
-- [AVAudioSession.RenderingMode.dolbyAudio](avaudiosession/renderingmode-swift.enum/dolbyaudio.md)
+- [AVAudioSession.RenderingMode.dolbyAudio](./dolbyaudio.md)
   A mode that represents Dolby audio.
-- [AVAudioSession.RenderingMode.notApplicable](avaudiosession/renderingmode-swift.enum/notapplicable.md)
+- [AVAudioSession.RenderingMode.notApplicable](./notapplicable.md)
   A mode that represents there’s no asset in a loading or playing state.
 
 

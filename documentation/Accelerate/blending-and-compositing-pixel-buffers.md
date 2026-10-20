@@ -1,73 +1,75 @@
 # Blending and compositing pixel buffers
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 Composite two pixel buffers to create a single image.
 
 ## Topics
 
 ### Alpha compositing
-- [func alphaComposite(vImage.CompositeMode<Pixel_8>, topLayer: vImage.PixelBuffer<Format>, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/alphacomposite(_:toplayer:destination:)-fybo.md)
+- [func alphaComposite(vImage.CompositeMode<Pixel_8>, topLayer: vImage.PixelBuffer<Format>, destination: vImage.PixelBuffer<Format>)](./vimage/pixelbuffer/alphacomposite%28_,toplayer,destination%29-fybo.md)
   Performs alpha compositing of two 4-channel interleaved ARGB 8-bit pixel buffers using the specified composite mode.
-- [func alphaComposite(vImage.CompositeMode<Pixel_F>, topLayer: vImage.PixelBuffer<Format>, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/alphacomposite(_:toplayer:destination:)-w1zc.md)
+- [func alphaComposite(vImage.CompositeMode<Pixel_F>, topLayer: vImage.PixelBuffer<Format>, destination: vImage.PixelBuffer<Format>)](./vimage/pixelbuffer/alphacomposite%28_,toplayer,destination%29-w1zc.md)
   Performs alpha compositing of two 4-channel interleaved ARGB 32-bit pixel buffers using the specified composite mode.
-- [vImage.CompositeMode](vimage/compositemode.md)
+- [vImage.CompositeMode](./vimage/compositemode.md)
   Constants that specify whether the format of layers is premultiplied or nonpremultiplied.
 ### Alpha blending
-- [func premultipliedAlphaBlend(vImage.BlendMode, topLayer: vImage.PixelBuffer<Format>, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/premultipliedalphablend(_:toplayer:destination:).md)
+- [func premultipliedAlphaBlend(vImage.BlendMode, topLayer: vImage.PixelBuffer<Format>, destination: vImage.PixelBuffer<Format>)](./vimage/pixelbuffer/premultipliedalphablend%28_,toplayer,destination%29.md)
   Performs alpha compositing of two 4-channel interleaved RGBA 8-bit pixel buffers using the specified blend mode to produce a premultiplied result.
-- [vImage.BlendMode](vimage/blendmode.md)
+- [vImage.BlendMode](./vimage/blendmode.md)
   Constants that specify an alpha blending mode.
 ### Premultiply
-- [func premultiply(alpha: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/premultiply(alpha:)-11gly.md)
+- [func premultiply(alpha: vImage.PixelBuffer<Format>)](./vimage/pixelbuffer/premultiply%28alpha%29-11gly.md)
   Transforms an 8-bit planar pixel buffer in-place from nonpremultiplied alpha format to premultiplied alpha format.
-- [func premultiply(alpha: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/premultiply(alpha:)-76rr.md)
+- [func premultiply(alpha: vImage.PixelBuffer<Format>)](./vimage/pixelbuffer/premultiply%28alpha%29-76rr.md)
   Transforms a 32-bit planar pixel buffer in-place from nonpremultiplied alpha format to premultiplied alpha format.
-- [func premultiply(channelOrdering: vImage.ChannelOrdering)](vimage/pixelbuffer/premultiply(channelordering:)-4xpq9.md)
+- [func premultiply(channelOrdering: vImage.ChannelOrdering)](./vimage/pixelbuffer/premultiply%28channelordering%29-4xpq9.md)
   Transforms an 8-bit ARGB or RGBA pixel buffer in-place from nonpremultiplied alpha format to premultiplied alpha format.
-- [func premultiply(channelOrdering: vImage.ChannelOrdering)](vimage/pixelbuffer/premultiply(channelordering:)-302ci.md)
+- [func premultiply(channelOrdering: vImage.ChannelOrdering)](./vimage/pixelbuffer/premultiply%28channelordering%29-302ci.md)
   Transforms an unsigned 16-bit ARGB or RGBA pixel buffer in-place from nonpremultiplied alpha format to premultiplied alpha format.
-- [func premultiply()](vimage/pixelbuffer/premultiply.md)
+- [func premultiply()](./vimage/pixelbuffer/premultiply%28%29.md)
   Transforms a floating-point 16-bit RGBA pixel buffer in-place from nonpremultiplied alpha format to premultiplied alpha format.
-- [func premultiply(channelOrdering: vImage.ChannelOrdering)](vimage/pixelbuffer/premultiply(channelordering:)-fzwd.md)
+- [func premultiply(channelOrdering: vImage.ChannelOrdering)](./vimage/pixelbuffer/premultiply%28channelordering%29-fzwd.md)
   Transforms a floating-point 32-bit ARGB or RGBA pixel buffer in-place from nonpremultiplied alpha format to premultiplied alpha format.
 ### Unpremultiply
-- [func unpremultiply(alpha: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/unpremultiply(alpha:)-xnog.md)
+- [func unpremultiply(alpha: vImage.PixelBuffer<Format>)](./vimage/pixelbuffer/unpremultiply%28alpha%29-xnog.md)
   Transforms an 8-bit planar pixel buffer in-place from premultiplied alpha format to nonpremultiplied alpha format.
-- [func unpremultiply(alpha: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/unpremultiply(alpha:)-i0ri.md)
+- [func unpremultiply(alpha: vImage.PixelBuffer<Format>)](./vimage/pixelbuffer/unpremultiply%28alpha%29-i0ri.md)
   Transforms a 32-bit planar pixel buffer in-place from premultiplied alpha format to nonpremultiplied alpha format.
-- [func unpremultiply(channelOrdering: vImage.ChannelOrdering)](vimage/pixelbuffer/unpremultiply(channelordering:)-1pkat.md)
+- [func unpremultiply(channelOrdering: vImage.ChannelOrdering)](./vimage/pixelbuffer/unpremultiply%28channelordering%29-1pkat.md)
   Transforms an 8-bit ARGB or RGBA pixel buffer in-place from premultiplied alpha format to nonpremultiplied alpha format.
-- [func unpremultiply(channelOrdering: vImage.ChannelOrdering)](vimage/pixelbuffer/unpremultiply(channelordering:)-19l0s.md)
+- [func unpremultiply(channelOrdering: vImage.ChannelOrdering)](./vimage/pixelbuffer/unpremultiply%28channelordering%29-19l0s.md)
   Transforms an unsigned 16-bit ARGB or RGBA pixel buffer in-place from premultiplied alpha format to nonpremultiplied alpha format.
-- [func unpremultiply()](vimage/pixelbuffer/unpremultiply.md)
+- [func unpremultiply()](./vimage/pixelbuffer/unpremultiply%28%29.md)
   Transforms a floating-point 16-bit RGBA pixel buffer in-place from premultiplied alpha format to nonpremultiplied alpha format.
-- [func unpremultiply(channelOrdering: vImage.ChannelOrdering)](vimage/pixelbuffer/unpremultiply(channelordering:)-82uq3.md)
+- [func unpremultiply(channelOrdering: vImage.ChannelOrdering)](./vimage/pixelbuffer/unpremultiply%28channelordering%29-82uq3.md)
   Transforms a 32-bit ARGB or RGBA pixel buffer in-place from premultiplied alpha format to nonpremultiplied alpha format.
 ### Linear interpolation
-- [func linearInterpolate(bufferB: vImage.PixelBuffer<Format>, interpolationConstant: Float, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/linearinterpolate(bufferb:interpolationconstant:destination:).md)
+- [func linearInterpolate(bufferB: vImage.PixelBuffer<Format>, interpolationConstant: Float, destination: vImage.PixelBuffer<Format>)](./vimage/pixelbuffer/linearinterpolate%28bufferb,interpolationconstant,destination%29.md)
 
 ## See Also
 
-- [Applying geometric operations to pixel buffers](applying-geometric-operations-to-pixel-buffers.md)
+### Pixel buffer operations
+- [Applying geometric operations to pixel buffers](./applying-geometric-operations-to-pixel-buffers.md)
   Reflect, shear, rotate, scale, and apply affine transforms to image data.
-- [Applying color transforms to pixel buffers](applying-color-transforms-to-pixel-buffers.md)
+- [Applying color transforms to pixel buffers](./applying-color-transforms-to-pixel-buffers.md)
   Adjust the colors of an image by applying gamma, polynomials, or multidimensional lookup.
-- [Convolving and applying morphology](convolving-and-applying-morphology.md)
+- [Convolving and applying morphology](./convolving-and-applying-morphology.md)
   Apply convolution, dilation, or erosion to a pixel buffer.
-- [Thresholding and clipping pixel buffer values](thresholding-and-clipping-pixel-buffer-values.md)
+- [Thresholding and clipping pixel buffer values](./thresholding-and-clipping-pixel-buffer-values.md)
   Limit the values in a pixel buffer to a threshold or a range.
-- [Calculating and transforming histograms](calculating-and-transforming-histograms.md)
+- [Calculating and transforming histograms](./calculating-and-transforming-histograms.md)
   Enhance and adjust the contrast of an image with histogram equalization, contrast stretching, and specification.
-- [Converting pixel buffers](converting-pixel-buffers.md)
+- [Converting pixel buffers](./converting-pixel-buffers.md)
   Convert pixel buffer data between different bit-depths.
-- [Interleaving and deinterleaving pixel buffers](interleaving-and-deinterleaving-pixel-buffers.md)
+- [Interleaving and deinterleaving pixel buffers](./interleaving-and-deinterleaving-pixel-buffers.md)
   Convert pixel buffer data between interleaved and planar formats.
-- [Cropping and working with regions of interest](cropping-and-working-with-regions-of-interest.md)
+- [Cropping and working with regions of interest](./cropping-and-working-with-regions-of-interest.md)
   Crop images and apply operations to regions of interest.
-- [Applying channel operations](applying-channel-operations.md)
+- [Applying channel operations](./applying-channel-operations.md)
   Extract, flatten, permute, and overwrite the individual color channels of a pixel buffer.
-- [Applying arithmetic operations](applying-arithmetic-operations.md)
+- [Applying arithmetic operations](./applying-arithmetic-operations.md)
   Multiply the pixel values of a buffer by scalar values or matrices.
 
 

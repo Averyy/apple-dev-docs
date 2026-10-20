@@ -1,7 +1,8 @@
 # mailComposeDelegate
 
 **Framework**: Message UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mail composition view controller’s delegate.
 
@@ -17,13 +18,18 @@ The mail composition view controller’s delegate.
 weak var mailComposeDelegate: (any MFMailComposeViewControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<MFMailComposeViewControllerDelegate> mailComposeDelegate;
+```
+
 #### Discussion
 
-The delegate object is responsible for dismissing the view presented by this view controller at the appropriate time. Therefore, you should always provide a delegate, and that object should implement the methods of the [`MFMailComposeViewControllerDelegate`](mfmailcomposeviewcontrollerdelegate.md) protocol.
+The delegate object is responsible for dismissing the view presented by this view controller at the appropriate time. Therefore, you should always provide a delegate, and that object should implement the methods of the [`MFMailComposeViewControllerDelegate`](../mfmailcomposeviewcontrollerdelegate.md) protocol.
 
 ## See Also
 
-- [protocol MFMailComposeViewControllerDelegate](mfmailcomposeviewcontrollerdelegate.md)
+### Responding to the view controller dismissal
+- [protocol MFMailComposeViewControllerDelegate](../mfmailcomposeviewcontrollerdelegate.md)
   An interface for responding to user interactions with a mail compose view controller.
 
 

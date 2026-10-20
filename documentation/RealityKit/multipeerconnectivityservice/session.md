@@ -1,7 +1,8 @@
 # session
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The multipeer connectivity session used by the service.
 

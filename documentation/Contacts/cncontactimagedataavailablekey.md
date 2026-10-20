@@ -1,7 +1,8 @@
 # CNContactImageDataAvailableKey
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Image data availability for a contact.
 
@@ -19,15 +20,20 @@ Image data availability for a contact.
 let CNContactImageDataAvailableKey: String
 ```
 
+```c
+extern NSString * const CNContactImageDataAvailableKey;
+```
+
 #### Discussion
 
 This key takes a string value. This is a validation check of image data availability.
 
 ## See Also
 
-- [let CNContactImageDataKey: String](cncontactimagedatakey.md)
+### Images
+- [let CNContactImageDataKey: String](./cncontactimagedatakey.md)
   Image data for a contact.
-- [let CNContactThumbnailImageDataKey: String](cncontactthumbnailimagedatakey.md)
+- [let CNContactThumbnailImageDataKey: String](./cncontactthumbnailimagedatakey.md)
   Thumbnail data for a contact.
 
 

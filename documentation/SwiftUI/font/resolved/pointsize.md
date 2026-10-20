@@ -1,7 +1,8 @@
 # pointSize
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The point size of a resolved font.
 

@@ -1,7 +1,8 @@
 # Opus
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The Opus codec format.
 
@@ -10,7 +11,7 @@ The Opus codec format.
 
 ## Declaration
 
-```swift
+```c
 Opus
 ```
 
@@ -20,7 +21,8 @@ This format uses no flags.
 
 ## See Also
 
-- [iLBC](audiodriverkit/iouseraudioformatid/ilbc.md)
+### Open-Source Formats
+- [iLBC](./ilbc.md)
   The internet Low Bitrate Codec (iLBC) narrowband speech format.
 
 

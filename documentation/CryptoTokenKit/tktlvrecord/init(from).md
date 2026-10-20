@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a TLV record from by parsing the specified data.
 
@@ -20,6 +21,10 @@ Creates and returns a TLV record from by parsing the specified data.
 convenience init?(from data: Data)
 ```
 
+```objc
++ (instancetype) recordFromData:(NSData *) data;
+```
+
 #### Return Value
 
 A TLV record, or `nil` if `data` does not specify a valid record.
@@ -30,7 +35,8 @@ A TLV record, or `nil` if `data` does not specify a valid record.
 
 ## See Also
 
-- [class func sequenceOfRecords(from: Data) -> [TKTLVRecord]?](tktlvrecord/sequenceofrecords(from:).md)
+### Creating Records
+- [class func sequenceOfRecords(from: Data) -> [TKTLVRecord]?](./sequenceofrecords%28from%29.md)
   Creates and returns an array of TLV records from the specified data.
 
 

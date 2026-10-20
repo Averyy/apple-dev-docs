@@ -2,12 +2,13 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Displays the accessibility element’s alternative UI.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,13 @@ Displays the accessibility element’s alternative UI.
 func accessibilityPerformShowAlternateUI() -> Bool
 ```
 
+```objc
+- (BOOL) accessibilityPerformShowAlternateUI;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the action was successfully triggered; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). This method does not indicate the success or failure of the action, just the fact that the action was successfully triggered.
+[`true`](../../Swift/true.md) if the action was successfully triggered; otherwise, [`false`](../../Swift/false.md). This method does not indicate the success or failure of the action, just the fact that the action was successfully triggered.
 
 #### Discussion
 
@@ -25,9 +30,10 @@ Use this method to trigger changes to the UI due to a mouse-hover or similar eve
 
 ## See Also
 
-- [func accessibilityPerformShowDefaultUI() -> Bool](nsaccessibilitycontainstransientui/accessibilityperformshowdefaultui.md)
+### Supporting Accessibility
+- [func accessibilityPerformShowDefaultUI() -> Bool](./accessibilityperformshowdefaultui%28%29.md)
   Returns to the accessibility element’s original UI.
-- [func isAccessibilityAlternateUIVisible() -> Bool](nsaccessibilitycontainstransientui/isaccessibilityalternateuivisible.md)
+- [func isAccessibilityAlternateUIVisible() -> Bool](./isaccessibilityalternateuivisible%28%29.md)
   Returns a Boolean value that determines whether the accessibility element’s alternative UI is currently visible.
 
 

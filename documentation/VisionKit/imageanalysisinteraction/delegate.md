@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate that handles the interaction callbacks.
 
@@ -20,15 +21,16 @@ weak final var delegate: (any ImageAnalysisInteractionDelegate)? { get set }
 
 ## See Also
 
-- [var analysis: ImageAnalysis?](imageanalysisinteraction/analysis.md)
+### Configuring an image interaction
+- [var analysis: ImageAnalysis?](./analysis.md)
   The results of analyzing an image for items that people can interact with.
-- [var view: UIView?](imageanalysisinteraction/view.md)
+- [var view: UIView?](./view.md)
   The view that uses this interaction.
-- [var preferredInteractionTypes: ImageAnalysisInteraction.InteractionTypes](imageanalysisinteraction/preferredinteractiontypes.md)
+- [var preferredInteractionTypes: ImageAnalysisInteraction.InteractionTypes](./preferredinteractiontypes.md)
   The types of interactions that people can perform with the image.
-- [ImageAnalysisInteraction.InteractionTypes](imageanalysisinteraction/interactiontypes.md)
+- [ImageAnalysisInteraction.InteractionTypes](./interactiontypes.md)
   The types of interactions that people can perform with an image.
-- [var activeInteractionTypes: ImageAnalysisInteraction.InteractionTypes](imageanalysisinteraction/activeinteractiontypes.md)
+- [var activeInteractionTypes: ImageAnalysisInteraction.InteractionTypes](./activeinteractiontypes.md)
   The types of interactions that a person actively performs.
 
 

@@ -1,14 +1,15 @@
 # init(rawValue:)
 
 **Framework**: EnergyKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an option set with the given raw value.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -22,7 +23,8 @@ init(rawValue: UInt)
 
 ## See Also
 
-- [let rawValue: UInt](electricityinsightquery/options-swift.struct/rawvalue.md)
+### Creating an option set
+- [let rawValue: UInt](./rawvalue.md)
   The raw value of the option set.
 
 

@@ -1,7 +1,8 @@
 # NSToolbarItemGroup.ControlRepresentation.automatic
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.0+
@@ -13,6 +14,10 @@
 
 ```swift
 case automatic
+```
+
+```c
+NSToolbarItemGroupControlRepresentationAutomatic
 ```
 
 

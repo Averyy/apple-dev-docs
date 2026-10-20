@@ -1,12 +1,13 @@
 # drawBar(inside:flipped:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the slider’s bar—but not its bezel or knob—inside the specified rectangle.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Draws the slider’s bar—but not its bezel or knob—inside the specified rect
 func drawBar(inside rect: NSRect, flipped: Bool)
 ```
 
+```objc
+- (void) drawBarInside:(NSRect) rect flipped:(BOOL) flipped;
+```
+
 ## Mentions
 
-- [Updating views automatically with observation tracking in AppKit](updating-views-automatically-with-observation-tracking-in-appkit.md)
+- [Updating views automatically with observation tracking in AppKit](../updating-views-automatically-with-observation-tracking-in-appkit.md)
 
 #### Discussion
 
@@ -29,15 +34,16 @@ You should not call this method explicitly. It’s included so you can override 
 
 ## See Also
 
-- [func barRect(flipped: Bool) -> NSRect](nsslidercell/barrect(flipped:).md)
+### Displaying the Cell
+- [func barRect(flipped: Bool) -> NSRect](./barrect%28flipped%29.md)
   Returns the rectangle in which the bar is drawn.
-- [func drawTickMarks()](nsslidercell/drawtickmarks.md)
+- [func drawTickMarks()](./drawtickmarks%28%29.md)
   Draws the slider’s tick marks.
-- [func knobRect(flipped: Bool) -> NSRect](nsslidercell/knobrect(flipped:).md)
+- [func knobRect(flipped: Bool) -> NSRect](./knobrect%28flipped%29.md)
   Returns the rectangle in which the slider knob is drawn.
-- [func drawKnob()](nsslidercell/drawknob.md)
-  Calculates the rectangle in which the knob should be drawn, then calls [`drawKnob(_:)`](nsslidercell/drawknob(_:).md) to actually draw the knob.
-- [func drawKnob(NSRect)](nsslidercell/drawknob(_:).md)
+- [func drawKnob()](./drawknob%28%29.md)
+  Calculates the rectangle in which the knob should be drawn, then calls [`drawKnob(_:)`](./drawknob%28_%29.md) to actually draw the knob.
+- [func drawKnob(NSRect)](./drawknob%28_%29.md)
   Draws the slider knob in the given rectangle.
 
 

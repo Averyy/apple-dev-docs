@@ -1,7 +1,8 @@
 # source
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Assigns an optional string containing the source code of the shader language program to compile into a Metal library.
 
@@ -17,6 +18,10 @@ Assigns an optional string containing the source code of the shader language pro
 
 ```swift
 var source: String? { get set }
+```
+
+```objc
+@property (atomic, copy, nullable) NSString * source;
 ```
 
 

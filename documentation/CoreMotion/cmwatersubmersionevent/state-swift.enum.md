@@ -1,7 +1,8 @@
 # CMWaterSubmersionEvent.State
 
 **Framework**: Core Motion  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The device’s submersion state.
 
@@ -18,33 +19,38 @@ The device’s submersion state.
 enum State
 ```
 
+```c
+enum CMWaterSubmersionState : NSInteger;
+```
+
 ## Topics
 
 ### Submersion states
-- [CMWaterSubmersionEvent.State.notSubmerged](cmwatersubmersionevent/state-swift.enum/notsubmerged.md)
+- [CMWaterSubmersionEvent.State.notSubmerged](./state-swift.enum/notsubmerged.md)
   The device isn’t submerged in water.
-- [CMWaterSubmersionEvent.State.submerged](cmwatersubmersionevent/state-swift.enum/submerged.md)
+- [CMWaterSubmersionEvent.State.submerged](./state-swift.enum/submerged.md)
   The device is submerged in water.
-- [CMWaterSubmersionEvent.State.unknown](cmwatersubmersionevent/state-swift.enum/unknown.md)
+- [CMWaterSubmersionEvent.State.unknown](./state-swift.enum/unknown.md)
   The submersion state is unknown.
 ### Initializers
-- [init?(rawValue: Int)](cmwatersubmersionevent/state-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./state-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var date: Date](cmwatersubmersionevent/date.md)
+### Accessing event data
+- [var date: Date](./date.md)
   The time and date of the event.
-- [var state: CMWaterSubmersionEvent.State](cmwatersubmersionevent/state-swift.property.md)
+- [var state: CMWaterSubmersionEvent.State](./state-swift.property.md)
   The new submersion state.
 
 

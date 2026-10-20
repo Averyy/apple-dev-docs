@@ -1,7 +1,8 @@
 # clusteringIdentifier
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier that determines whether the annotation view participates in clustering.
 
@@ -19,6 +20,10 @@ An identifier that determines whether the annotation view participates in cluste
 var clusteringIdentifier: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * clusteringIdentifier;
+```
+
 #### Discussion
 
 The default value of this property is `nil`, which prevents MapKit from clustering the annotation view with other annotation views. Setting the property to a non-`nil` value enables it to participate in clustering.
@@ -27,9 +32,10 @@ Clustering occurs when there’s a collision between multiple annotation views w
 
 ## See Also
 
-- [Decluttering a Map with MapKit Annotation Clustering](decluttering-a-map-with-mapkit-annotation-clustering.md)
+### Clustering annotation views
+- [Decluttering a Map with MapKit Annotation Clustering](../decluttering-a-map-with-mapkit-annotation-clustering.md)
   Enhance the readability of a map by replacing overlapping annotations with a clustering annotation view.
-- [var cluster: MKAnnotationView?](mkannotationview/cluster.md)
+- [var cluster: MKAnnotationView?](./cluster.md)
   The clustering annotation view that replaces the annotation view.
 
 

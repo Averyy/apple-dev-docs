@@ -1,7 +1,8 @@
 # headerSubtitle
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that the header displays as a subtitle.
 
@@ -16,11 +17,16 @@ A string that the header displays as a subtitle.
 var headerSubtitle: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * headerSubtitle;
+```
+
 ## See Also
 
-- [var headerButton: CPButton?](cplistsection/headerbutton.md)
+### Configuring Section Headers
+- [var headerButton: CPButton?](./headerbutton.md)
   A button that the section header displays.
-- [var headerImage: UIImage?](cplistsection/headerimage.md)
+- [var headerImage: UIImage?](./headerimage.md)
   An image that the section header displays.
 
 

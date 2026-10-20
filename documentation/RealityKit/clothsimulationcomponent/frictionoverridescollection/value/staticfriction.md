@@ -1,7 +1,8 @@
 # staticFriction
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The static friction to use between the material pair.
 
@@ -22,7 +23,8 @@ Must be non-negative; negative values are clamped to zero.
 
 ## See Also
 
-- [var kineticFriction: Float](clothsimulationcomponent/frictionoverridescollection/value/kineticfriction.md)
+### Accessing friction values
+- [var kineticFriction: Float](./kineticfriction.md)
   The kinetic friction to use between the material pair.
 
 

@@ -1,7 +1,8 @@
 # Update a Budget Order
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Updates mutable fields of an existing budget order by its unique identifier.
 
@@ -12,7 +13,7 @@ Updates mutable fields of an existing budget order by its unique identifier.
 
 This endpoint updates one or more mutable fields on an existing budget order. Only include the fields you want to change. Fields you don’t include remain unchanged. Pass the budget order `id` as a URL path parameter. You don’t need to include it in the request body. End date changes on active budget orders can only shorten the period, not extend it, except that you can set `endTime` to `null` to remove the expiration date entirely and make the budget open-ended.
 
-Omit the `X-AP-Context` header. This endpoint requires organization-level permissions, and the API returns `403 Forbidden` if you send an ad account header. See [`Budget Orders Endpoints`](budget-orders-endpoints.md).
+Omit the `X-AP-Context` header. This endpoint requires organization-level permissions, and the API returns `403 Forbidden` if you send an ad account header. See [Budget Orders Endpoints](./budget-orders-endpoints.md).
 
 #### Payload Examples
 
@@ -106,17 +107,34 @@ PUT /v1/shared-budgets/{id}
 
 ## Parameters
 
+### Path Parameters
+
 - `id` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `SharedBudgetUpdate`
+
+## Responses
+
+- `200` OK (`SharedBudgetResponse`, `application/json`): Successful operation. Returns [`SharedBudgetResponse`](./sharedbudgetresponse.md) (`result`: [`SharedBudget`](./sharedbudget.md)).
+- `400` Bad Request (`ErrorResponse`, `application/json`): Bad Request. Returns [`ErrorResponse`](./errorresponse.md).
+- `401` Unauthorized (`ErrorResponse`, `application/json`): Unauthorized.
+- `403` Forbidden (`ErrorResponse`, `application/json`): Forbidden. See [Budget Orders Endpoints](./budget-orders-endpoints.md) for `X-AP-Context` requirements.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found. Returns [`ErrorResponse`](./errorresponse.md).
+- `429` Too Many Requests (`ErrorResponse`, `application/json`): Rate Limit Exceeded. See [Applying Rate Limits](./rate-limits.md).
+- `500` Internal Server Error (`ErrorResponse`, `application/json`): Internal Server Error. Returns [`ErrorResponse`](./errorresponse.md).
 
 ## See Also
 
-- [Get a Budget Order by ID](get-shared-budgets-_id_.md)
+- [Get a Budget Order by ID](./get-shared-budgets-_id_.md)
   Retrieves a single budget order by its ID.
-- [Create a Budget Order](post-shared-budgets.md)
+- [Create a Budget Order](./post-shared-budgets.md)
   Creates a budget order that can be assigned to campaigns within an ad account.
-- [Query Budget Orders](post-shared-budgets-query.md)
+- [Query Budget Orders](./post-shared-budgets-query.md)
   Returns a filtered, sorted, and paginated list of budget orders.
-- [Delete a Budget Order](delete-shared-budgets-_id_.md)
+- [Delete a Budget Order](./delete-shared-budgets-_id_.md)
   Soft-deletes a budget order by its unique identifier.
 
 

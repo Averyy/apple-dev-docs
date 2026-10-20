@@ -1,7 +1,8 @@
 # SKTestSession.TimeRate
 
 **Framework**: StoreKit Test  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The values for rates of time passing in the test environment.
 
@@ -20,83 +21,88 @@ The values for rates of time passing in the test environment.
 enum TimeRate
 ```
 
+```c
+enum SKTestTimeRate : NSInteger;
+```
+
 #### Overview
 
 The time rates that affect subscription renewals in the test environment match those in the sandbox environment with these exceptions:
 
-- Only the test environment supports the [`SKTestSession.TimeRate.monthlyRenewalEveryThirtySeconds`](sktestsession/timerate-swift.enum/monthlyrenewaleverythirtyseconds.md) time rate.
-- Only the test environment supports the fixed time rate options: [`SKTestSession.TimeRate.oneRenewalEveryFifteenMinutes`](sktestsession/timerate-swift.enum/onerenewaleveryfifteenminutes.md), [`SKTestSession.TimeRate.oneRenewalEveryFiveMinutes`](sktestsession/timerate-swift.enum/onerenewaleveryfiveminutes.md), [`SKTestSession.TimeRate.oneRenewalEveryMinute`](sktestsession/timerate-swift.enum/onerenewaleveryminute.md), [`SKTestSession.TimeRate.oneRenewalEveryThirtySeconds`](sktestsession/timerate-swift.enum/onerenewaleverythirtyseconds.md), [`SKTestSession.TimeRate.oneRenewalEveryTenSeconds`](sktestsession/timerate-swift.enum/onerenewaleverytenseconds.md), and [`SKTestSession.TimeRate.oneRenewalEveryTwoSeconds`](sktestsession/timerate-swift.enum/onerenewaleverytwoseconds.md).
+- Only the test environment supports the [`SKTestSession.TimeRate.monthlyRenewalEveryThirtySeconds`](./timerate-swift.enum/monthlyrenewaleverythirtyseconds.md) time rate.
+- Only the test environment supports the fixed time rate options: [`SKTestSession.TimeRate.oneRenewalEveryFifteenMinutes`](./timerate-swift.enum/onerenewaleveryfifteenminutes.md), [`SKTestSession.TimeRate.oneRenewalEveryFiveMinutes`](./timerate-swift.enum/onerenewaleveryfiveminutes.md), [`SKTestSession.TimeRate.oneRenewalEveryMinute`](./timerate-swift.enum/onerenewaleveryminute.md), [`SKTestSession.TimeRate.oneRenewalEveryThirtySeconds`](./timerate-swift.enum/onerenewaleverythirtyseconds.md), [`SKTestSession.TimeRate.oneRenewalEveryTenSeconds`](./timerate-swift.enum/onerenewaleverytenseconds.md), and [`SKTestSession.TimeRate.oneRenewalEveryTwoSeconds`](./timerate-swift.enum/onerenewaleverytwoseconds.md).
 - Only the sandbox environment supports a monthly renewal in 3 minutes.
 
-For more information about time rates in the sandbox environment, see [`Test Apple In-App Purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/test-in-app-purchases-main/test-in-app-purchases).
+For more information about time rates in the sandbox environment, see [Test Apple In-App Purchases](https://developer.apple.com/help/app-store-connect/test-in-app-purchases-main/test-in-app-purchases).
 
 The time rates also affect the lengths of the billing retry period and the billing grace period in the testing environment. See the individual enumeration cases for the actual time values of the subscription renewal rates, billing retry periods, and billing grace periods.
 
 ## Topics
 
 ### Fixed time rates for subscription renewals
-- [SKTestSession.TimeRate.oneRenewalEveryFifteenMinutes](sktestsession/timerate-swift.enum/onerenewaleveryfifteenminutes.md)
+- [SKTestSession.TimeRate.oneRenewalEveryFifteenMinutes](./timerate-swift.enum/onerenewaleveryfifteenminutes.md)
   A rate of time in the test environment in which subscriptions of any time length renew every 15 minutes.
-- [SKTestSession.TimeRate.oneRenewalEveryFiveMinutes](sktestsession/timerate-swift.enum/onerenewaleveryfiveminutes.md)
+- [SKTestSession.TimeRate.oneRenewalEveryFiveMinutes](./timerate-swift.enum/onerenewaleveryfiveminutes.md)
   A rate of time in the test environment in which subscriptions of any time length renew every 5 minutes.
-- [SKTestSession.TimeRate.oneRenewalEveryMinute](sktestsession/timerate-swift.enum/onerenewaleveryminute.md)
+- [SKTestSession.TimeRate.oneRenewalEveryMinute](./timerate-swift.enum/onerenewaleveryminute.md)
   A rate of time in the test environment in which subscriptions of any time length renew every minute.
-- [SKTestSession.TimeRate.oneRenewalEveryThirtySeconds](sktestsession/timerate-swift.enum/onerenewaleverythirtyseconds.md)
+- [SKTestSession.TimeRate.oneRenewalEveryThirtySeconds](./timerate-swift.enum/onerenewaleverythirtyseconds.md)
   A rate of time in the test environment in which subscriptions of any time length renew every 30 seconds.
-- [SKTestSession.TimeRate.oneRenewalEveryTenSeconds](sktestsession/timerate-swift.enum/onerenewaleverytenseconds.md)
+- [SKTestSession.TimeRate.oneRenewalEveryTenSeconds](./timerate-swift.enum/onerenewaleverytenseconds.md)
   A rate of time in the test environment in which subscriptions of any time length renew every 10 seconds.
-- [SKTestSession.TimeRate.oneRenewalEveryTwoSeconds](sktestsession/timerate-swift.enum/onerenewaleverytwoseconds.md)
+- [SKTestSession.TimeRate.oneRenewalEveryTwoSeconds](./timerate-swift.enum/onerenewaleverytwoseconds.md)
   A rate of time in the test environment in which subscriptions of any time length renew every 2 seconds.
 ### Scaled time rates for subscription renewals
-- [SKTestSession.TimeRate.realTime](sktestsession/timerate-swift.enum/realtime.md)
+- [SKTestSession.TimeRate.realTime](./timerate-swift.enum/realtime.md)
   A rate of time in which the test environment runs in real time.
-- [SKTestSession.TimeRate.monthlyRenewalEveryHour](sktestsession/timerate-swift.enum/monthlyrenewaleveryhour.md)
+- [SKTestSession.TimeRate.monthlyRenewalEveryHour](./timerate-swift.enum/monthlyrenewaleveryhour.md)
   A rate of time in the test environment in which monthly subscriptions renew every hour.
-- [SKTestSession.TimeRate.monthlyRenewalEveryThirtyMinutes](sktestsession/timerate-swift.enum/monthlyrenewaleverythirtyminutes.md)
+- [SKTestSession.TimeRate.monthlyRenewalEveryThirtyMinutes](./timerate-swift.enum/monthlyrenewaleverythirtyminutes.md)
   A rate of time in the test environment in which monthly subscriptions renew every 30 minutes.
-- [SKTestSession.TimeRate.monthlyRenewalEveryFifteenMinutes](sktestsession/timerate-swift.enum/monthlyrenewaleveryfifteenminutes.md)
+- [SKTestSession.TimeRate.monthlyRenewalEveryFifteenMinutes](./timerate-swift.enum/monthlyrenewaleveryfifteenminutes.md)
   A rate of time in the test environment in which monthly subscriptions renew every 15 minutes.
-- [SKTestSession.TimeRate.monthlyRenewalEveryFiveMinutes](sktestsession/timerate-swift.enum/monthlyrenewaleveryfiveminutes.md)
+- [SKTestSession.TimeRate.monthlyRenewalEveryFiveMinutes](./timerate-swift.enum/monthlyrenewaleveryfiveminutes.md)
   A rate of time in the test environment in which monthly subscriptions renew every 5 minutes.
-- [SKTestSession.TimeRate.monthlyRenewalEveryThirtySeconds](sktestsession/timerate-swift.enum/monthlyrenewaleverythirtyseconds.md)
+- [SKTestSession.TimeRate.monthlyRenewalEveryThirtySeconds](./timerate-swift.enum/monthlyrenewaleverythirtyseconds.md)
   A rate of time in the test environment in which monthly subscriptions renew every 30 seconds.
 ### Deprecated
-- [SKTestSession.TimeRate.oneHourIsOneDay](sktestsession/timerate-swift.enum/onehourisoneday.md)
+- [SKTestSession.TimeRate.oneHourIsOneDay](./timerate-swift.enum/onehourisoneday.md)
   A rate of time in which 1 hour in the test environment represents one day.
-- [SKTestSession.TimeRate.thirtyMinutesIsOneDay](sktestsession/timerate-swift.enum/thirtyminutesisoneday.md)
+- [SKTestSession.TimeRate.thirtyMinutesIsOneDay](./timerate-swift.enum/thirtyminutesisoneday.md)
   A rate of time in which 30 minutes in the test environment represents one day.
-- [SKTestSession.TimeRate.fiveMinutesIsOneDay](sktestsession/timerate-swift.enum/fiveminutesisoneday.md)
+- [SKTestSession.TimeRate.fiveMinutesIsOneDay](./timerate-swift.enum/fiveminutesisoneday.md)
   A rate of time in which 5 minutes in the test environment represents one day.
-- [SKTestSession.TimeRate.oneMinuteIsOneDay](sktestsession/timerate-swift.enum/oneminuteisoneday.md)
+- [SKTestSession.TimeRate.oneMinuteIsOneDay](./timerate-swift.enum/oneminuteisoneday.md)
   A rate of time in which 1 minute in the test environment represents one day.
-- [SKTestSession.TimeRate.thirtySecondsIsOneDay](sktestsession/timerate-swift.enum/thirtysecondsisoneday.md)
+- [SKTestSession.TimeRate.thirtySecondsIsOneDay](./timerate-swift.enum/thirtysecondsisoneday.md)
   A rate of time in which 30 seconds in the test environment represents one day.
-- [SKTestSession.TimeRate.oneSecondIsOneDay](sktestsession/timerate-swift.enum/onesecondisoneday.md)
+- [SKTestSession.TimeRate.oneSecondIsOneDay](./timerate-swift.enum/onesecondisoneday.md)
   A rate of time in which 1 second in the test environment represents one day.
 ### Initializers
-- [init?(rawValue: Int)](sktestsession/timerate-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./timerate-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var timeRate: SKTestSession.TimeRate](sktestsession/timerate-swift.property.md)
+### Testing subscription renewals
+- [var timeRate: SKTestSession.TimeRate](./timerate-swift.property.md)
   The rate at which time passes for subscriptions in the test environment as compared to real time.
-- [func enableAutoRenewForTransaction(identifier: Int) throws](sktestsession/enableautorenewfortransaction(identifier:).md)
+- [func enableAutoRenewForTransaction(identifier: Int) throws](./enableautorenewfortransaction%28identifier%29.md)
   Enables auto-renewing for an auto-renewable subscription in the test environment.
-- [func disableAutoRenewForTransaction(identifier: Int) throws](sktestsession/disableautorenewfortransaction(identifier:).md)
+- [func disableAutoRenewForTransaction(identifier: Int) throws](./disableautorenewfortransaction%28identifier%29.md)
   Disables auto-renewing for an auto-renewable subscription in the test environment.
-- [func forceRenewalOfSubscription(productIdentifier: String) throws](sktestsession/forcerenewalofsubscription(productidentifier:).md)
+- [func forceRenewalOfSubscription(productIdentifier: String) throws](./forcerenewalofsubscription%28productidentifier%29.md)
   Ends the previous subscription period and begins the next period in the test environment.
-- [func expireSubscription(productIdentifier: String) throws](sktestsession/expiresubscription(productidentifier:).md)
+- [func expireSubscription(productIdentifier: String) throws](./expiresubscription%28productidentifier%29.md)
   Causes the identified auto-renewable subscription to expire immediately in the test environment.
 
 

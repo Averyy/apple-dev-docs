@@ -1,7 +1,8 @@
 # WritableStream
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface WritableStream
 ```
 
 ## Topics
 
 ### Instance Properties
-- [closed](writablestream/1777932-closed.md)
-- [ready](writablestream/1777815-ready.md)
-- [state](writablestream/1777874-state.md)
+- [closed](./writablestream/api-1777932-closed.md)
+- [ready](./writablestream/api-1777815-ready.md)
+- [state](./writablestream/api-1777874-state.md)
 ### Instance Methods
-- [abort](writablestream/1777851-abort.md)
-- [close](writablestream/1777772-close.md)
-- [write](writablestream/1777931-write.md)
+- [abort](./writablestream/api-1777851-abort.md)
+- [close](./writablestream/api-1777772-close.md)
+- [write](./writablestream/api-1777931-write.md)
 
 
 ---

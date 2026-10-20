@@ -1,17 +1,18 @@
 # EKParticipantStatus.unknown
 
 **Framework**: EventKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The participant’s attendance status is unknown.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,21 +20,26 @@ The participant’s attendance status is unknown.
 case unknown
 ```
 
+```c
+EKParticipantStatusUnknown
+```
+
 ## See Also
 
-- [EKParticipantStatus.pending](ekparticipantstatus/pending.md)
+### Constants
+- [EKParticipantStatus.pending](./pending.md)
   The participant has yet to respond to the event.
-- [EKParticipantStatus.accepted](ekparticipantstatus/accepted.md)
+- [EKParticipantStatus.accepted](./accepted.md)
   The participant has accepted the event.
-- [EKParticipantStatus.declined](ekparticipantstatus/declined.md)
+- [EKParticipantStatus.declined](./declined.md)
   The participant has declined the event.
-- [EKParticipantStatus.tentative](ekparticipantstatus/tentative.md)
+- [EKParticipantStatus.tentative](./tentative.md)
   The participant’s attendance status is tentative.
-- [EKParticipantStatus.delegated](ekparticipantstatus/delegated.md)
+- [EKParticipantStatus.delegated](./delegated.md)
   The participant has delegated attendance to another participant.
-- [EKParticipantStatus.completed](ekparticipantstatus/completed.md)
+- [EKParticipantStatus.completed](./completed.md)
   The participant’s event has completed.
-- [EKParticipantStatus.inProcess](ekparticipantstatus/inprocess.md)
+- [EKParticipantStatus.inProcess](./inprocess.md)
   The participant’s event is currently in process.
 
 

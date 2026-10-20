@@ -1,14 +1,15 @@
 # in6addr_linklocal_allnodes
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 const struct in6_addr in6addr_linklocal_allnodes;
 ```
 

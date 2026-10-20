@@ -1,7 +1,8 @@
 # VTPixelTransferSessionCreate(allocator:pixelTransferSessionOut:)
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a session for transferring images between Core Video image buffers that hold pixels in main memory.
 
@@ -19,9 +20,13 @@ Creates a session for transferring images between Core Video image buffers that 
 func VTPixelTransferSessionCreate(allocator: CFAllocator?, pixelTransferSessionOut: UnsafeMutablePointer<VTPixelTransferSession?>) -> OSStatus
 ```
 
+```c
+extern OSStatus VTPixelTransferSessionCreate(CFAllocatorRef allocator, VTPixelTransferSessionRef*pixelTransferSessionOut);
+```
+
 #### Discussion
 
-The function creates a session for transferring images between [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer-q2e) objects.
+The function creates a session for transferring images between [CVPixelBuffer](../CoreVideo/cvpixelbuffer-q2e.md) objects.
 
 ## Parameters
 

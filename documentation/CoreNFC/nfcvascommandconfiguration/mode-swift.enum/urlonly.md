@@ -1,7 +1,8 @@
 # NFCVASCommandConfiguration.Mode.urlOnly
 
 **Framework**: Core NFC  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.0+
@@ -12,6 +13,10 @@
 
 ```swift
 case urlOnly
+```
+
+```c
+NFCVASModeURLOnly
 ```
 
 

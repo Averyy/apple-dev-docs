@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The time that has elapsed since the most recent evaluation, or 0 if animation is paused.

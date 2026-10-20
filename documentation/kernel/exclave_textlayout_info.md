@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct exclave_textlayout_info {
     ...
 };
@@ -17,8 +17,8 @@ struct exclave_textlayout_info {
 ## Topics
 
 ### Instance Properties
-- [etl_flags](exclave_textlayout_info/4316363-etl_flags.md)
-- [layout_id](exclave_textlayout_info/4316364-layout_id.md)
+- [etl_flags](./exclave_textlayout_info/api-4316363-etl_flags.md)
+- [layout_id](./exclave_textlayout_info/api-4316364-layout_id.md)
 
 
 ---

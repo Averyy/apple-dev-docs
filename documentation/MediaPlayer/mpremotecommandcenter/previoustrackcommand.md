@@ -1,7 +1,8 @@
 # previousTrackCommand
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The command object for selecting the previous track.
 
@@ -20,17 +21,22 @@ The command object for selecting the previous track.
 var previousTrackCommand: MPRemoteCommand { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MPRemoteCommand * previousTrackCommand;
+```
+
 #### Discussion
 
 Use the object in this property to register your app’s handler for selecting the previous track. In your handler, select the media item that precedes the current media item. You can disable the command if your app does not support it.
 
 ## See Also
 
-- [var nextTrackCommand: MPRemoteCommand](mpremotecommandcenter/nexttrackcommand.md)
+### Navigating between tracks
+- [var nextTrackCommand: MPRemoteCommand](./nexttrackcommand.md)
   The command object for selecting the next track.
-- [var changeRepeatModeCommand: MPChangeRepeatModeCommand](mpremotecommandcenter/changerepeatmodecommand.md)
+- [var changeRepeatModeCommand: MPChangeRepeatModeCommand](./changerepeatmodecommand.md)
   The command object for changing the repeat mode.
-- [var changeShuffleModeCommand: MPChangeShuffleModeCommand](mpremotecommandcenter/changeshufflemodecommand.md)
+- [var changeShuffleModeCommand: MPChangeShuffleModeCommand](./changeshufflemodecommand.md)
   The command object for changing the shuffle mode.
 
 

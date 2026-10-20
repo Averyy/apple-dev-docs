@@ -1,21 +1,22 @@
 # LSSerializer
 
 **Framework**: TVMLKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - tvOS 14.0+
 
 ## Declaration
 
-```swift
+```
 interface LSSerializer
 ```
 
 ## Topics
 
 ### Instance Methods
-- [writeToString](lsserializer/3192156-writetostring.md)
+- [writeToString](./lsserializer/api-3192156-writetostring.md)
 
 
 ---

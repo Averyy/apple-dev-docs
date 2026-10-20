@@ -1,7 +1,8 @@
 # device
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,14 +18,19 @@
 var device: any MTLDevice { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly, nonnull) id<MTLDevice> device;
+```
+
 ## See Also
 
-- [var data: any MTLBuffer](mpsvector/data.md)
-- [var dataType: MPSDataType](mpsvector/datatype.md)
-- [var length: Int](mpsvector/length.md)
-- [var vectorBytes: Int](mpsvector/vectorbytes.md)
-- [var vectors: Int](mpsvector/vectors.md)
-- [var offset: Int](mpsvector/offset.md)
+### Instance Properties
+- [var data: any MTLBuffer](./data.md)
+- [var dataType: MPSDataType](./datatype.md)
+- [var length: Int](./length.md)
+- [var vectorBytes: Int](./vectorbytes.md)
+- [var vectors: Int](./vectors.md)
+- [var offset: Int](./offset.md)
 
 
 ---

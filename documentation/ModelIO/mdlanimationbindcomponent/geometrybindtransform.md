@@ -1,7 +1,8 @@
 # geometryBindTransform
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var geometryBindTransform: matrix_double4x4 { get set }
+```
+
+```objc
+@property (nonatomic) matrix_double4x4 geometryBindTransform;
 ```
 
 

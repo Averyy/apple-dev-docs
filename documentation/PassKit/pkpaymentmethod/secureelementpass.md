@@ -1,7 +1,8 @@
 # secureElementPass
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The accompanying Secure Element pass.
 
@@ -20,6 +21,10 @@ The accompanying Secure Element pass.
 var secureElementPass: PKSecureElementPass? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) PKSecureElementPass * secureElementPass;
+```
+
 #### Discussion
 
 If your app has an association with the pass that is funding the payment, this property contains information about that pass; otherwise, it’s `nil`.
@@ -30,7 +35,8 @@ Use this property to detect your brand of credit and debit cards. For example, y
 
 ## See Also
 
-- [var paymentPass: PKPaymentPass?](pkpaymentmethod/paymentpass.md)
+### Getting the pass
+- [var paymentPass: PKPaymentPass?](./paymentpass.md)
   The accompanying payment pass.
 
 

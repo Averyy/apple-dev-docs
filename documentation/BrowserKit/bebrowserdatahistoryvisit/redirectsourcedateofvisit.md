@@ -1,7 +1,8 @@
 # redirectSourceDateOfVisit
 
 **Framework**: BrowserKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date of the redirect source visit.
 
@@ -15,13 +16,18 @@ The date of the redirect source visit.
 var redirectSourceDateOfVisit: Date? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSDate * redirectSourceDateOfVisit;
+```
+
 ## See Also
 
-- [var redirectDestinationDateOfVisit: Date?](bebrowserdatahistoryvisit/redirectdestinationdateofvisit.md)
+### Managing redirect information
+- [var redirectDestinationDateOfVisit: Date?](./redirectdestinationdateofvisit.md)
   The date of the redirect destination visit.
-- [var redirectDestinationURL: URL?](bebrowserdatahistoryvisit/redirectdestinationurl.md)
+- [var redirectDestinationURL: URL?](./redirectdestinationurl.md)
   A URL to which the visit redirects.
-- [var redirectSourceURL: URL?](bebrowserdatahistoryvisit/redirectsourceurl.md)
+- [var redirectSourceURL: URL?](./redirectsourceurl.md)
   A URL that redirects to the visited page.
 
 

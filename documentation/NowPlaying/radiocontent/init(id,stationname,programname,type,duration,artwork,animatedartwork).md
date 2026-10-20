@@ -1,7 +1,8 @@
 # init(id:stationName:programName:type:duration:artwork:animatedArtwork:)
 
 **Framework**: Now Playing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates radio station content with static and animated artwork.
 

@@ -1,7 +1,8 @@
 # domain
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The domain associated with the code, if one exists.
 
@@ -20,7 +21,7 @@ var domain: String?
 
 #### Discussion
 
-> **Note**: https://github.com/WICG/sms-one-time-codes
+> **See Also**: https://github.com/WICG/sms-one-time-codes
 
 
 ---

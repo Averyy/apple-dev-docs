@@ -1,7 +1,8 @@
 # FoveatedStreamingSession.MessageChannel.ChannelStatus
 
 **Framework**: Foveated Streaming  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The status of a message channel.
 
@@ -17,18 +18,18 @@ enum ChannelStatus
 ## Topics
 
 ### Enumeration Cases
-- [FoveatedStreamingSession.MessageChannel.ChannelStatus.closed](foveatedstreamingsession/messagechannel/channelstatus-swift.enum/closed.md)
+- [FoveatedStreamingSession.MessageChannel.ChannelStatus.closed](./channelstatus-swift.enum/closed.md)
   The message channel is closed and can no longer send or receive messages.
-- [FoveatedStreamingSession.MessageChannel.ChannelStatus.ready](foveatedstreamingsession/messagechannel/channelstatus-swift.enum/ready.md)
+- [FoveatedStreamingSession.MessageChannel.ChannelStatus.ready](./channelstatus-swift.enum/ready.md)
   The message channel is ready to send and receive messages.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

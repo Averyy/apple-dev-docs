@@ -1,7 +1,8 @@
 # NSPointFromString(_:)
 
 **Framework**: Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a point from a text-based representation.
 
@@ -13,6 +14,10 @@ Returns a point from a text-based representation.
 
 ```swift
 func NSPointFromString(_ aString: String) -> NSPoint
+```
+
+```c
+extern NSPoint NSPointFromString(NSString *aString);
 ```
 
 #### Return Value
@@ -29,15 +34,16 @@ If `aString` only contains a single number, it is used as the x coordinate. If `
 
 ## See Also
 
-- [func NSEqualPoints(NSPoint, NSPoint) -> Bool](nsequalpoints(_:_:).md)
+### Managing Points
+- [func NSEqualPoints(NSPoint, NSPoint) -> Bool](./nsequalpoints%28_,_%29.md)
   Returns a Boolean value that indicates whether two points are equal.
-- [func NSMakePoint(Double, Double) -> NSPoint](nsmakepoint(_:_:).md)
+- [func NSMakePoint(Double, Double) -> NSPoint](./nsmakepoint%28_,_%29.md)
   Creates a new `NSPoint` from the specified values.
-- [func NSStringFromPoint(NSPoint) -> String](nsstringfrompoint(_:).md)
+- [func NSStringFromPoint(NSPoint) -> String](./nsstringfrompoint%28_%29.md)
   Returns a string representation of a point.
-- [func NSPointFromCGPoint(CGPoint) -> NSPoint](nspointfromcgpoint(_:).md)
+- [func NSPointFromCGPoint(CGPoint) -> NSPoint](./nspointfromcgpoint%28_%29.md)
   Returns an `NSPoint` typecast from a `CGPoint`.
-- [func NSPointToCGPoint(NSPoint) -> CGPoint](nspointtocgpoint(_:).md)
+- [func NSPointToCGPoint(NSPoint) -> CGPoint](./nspointtocgpoint%28_%29.md)
   Returns a `CGPoint` typecast from an `NSPoint`.
 
 

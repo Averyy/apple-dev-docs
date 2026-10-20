@@ -1,7 +1,8 @@
 # init(ink:strokePath:transform:mask:)
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a stroke with the line properties, path, transform, and mask that you specify.
 
@@ -14,20 +15,41 @@ Creates a stroke with the line properties, path, transform, and mask that you sp
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+init(ink: PKInk, strokePath: PKStrokePath, transform: CGAffineTransform, mask: UIBezierPath?)
+```
+
+*macOS*
+
 ```swift
 init(ink: PKInk, strokePath: PKStrokePath, transform: CGAffineTransform, mask: NSBezierPath?)
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```objc
+- (instancetype) initWithInk:(PKInk *) ink strokePath:(PKStrokePath *) strokePath transform:(CGAffineTransform) transform mask:(UIBezierPath *) mask;
+```
+
+*macOS*
+
+```objc
+- (instancetype) initWithInk:(PKInk *) ink strokePath:(PKStrokePath *) strokePath transform:(CGAffineTransform) transform mask:(NSBezierPath *) mask;
+```
+
 ## Parameters
 
-- `ink`: The [`PKInkReference`](pkinkreference.md) the class uses to render this stroke.
+- `ink`: The [`PKInkReference`](../pkinkreference.md) the class uses to render this stroke.
 - `strokePath`: The B-spline path that describes this stroke.
-- `transform`: The [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) to apply to this stroke. Defaults to [`CGAffineTransformIdentity`](https://developer.apple.com/documentation/coregraphics/cgaffinetransformidentity).
+- `transform`: The [`CGAffineTransform`](../../CoreFoundation/cgaffinetransform.md) to apply to this stroke. Defaults to [`CGAffineTransformIdentity`](../../CoreGraphics/cgaffinetransformidentity.md).
 - `mask`: The pretransform mask the class uses to clip the rendering of the stroke.
 
 ## See Also
 
-- [init(ink: PKInk, strokePath: PKStrokePath, transform: CGAffineTransform, mask: UIBezierPath?, randomSeed: UInt32)](pkstrokereference/init(ink:strokepath:transform:mask:randomseed:).md)
+### Creating a stroke object
+- [init(ink: PKInk, strokePath: PKStrokePath, transform: CGAffineTransform, mask: UIBezierPath?, randomSeed: UInt32)](./init%28ink,strokepath,transform,mask,randomseed%29.md)
   Creates a stroke with the line properties, path, transform, mask, and random seed that you specify.
 
 

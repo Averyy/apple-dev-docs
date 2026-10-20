@@ -1,14 +1,15 @@
 # memory_object_attr_info_data_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct memory_object_attr_info {
     ...
 } memory_object_attr_info_data_t;
@@ -17,10 +18,10 @@ typedef struct memory_object_attr_info {
 ## Topics
 
 ### Instance Properties
-- [cluster_size](memory_object_attr_info_data_t/1562478-cluster_size.md)
-- [copy_strategy](memory_object_attr_info_data_t/1562498-copy_strategy.md)
-- [may_cache_object](memory_object_attr_info_data_t/1562591-may_cache_object.md)
-- [temporary](memory_object_attr_info_data_t/1562480-temporary.md)
+- [cluster_size](./memory_object_attr_info_data_t/api-1562478-cluster_size.md)
+- [copy_strategy](./memory_object_attr_info_data_t/api-1562498-copy_strategy.md)
+- [may_cache_object](./memory_object_attr_info_data_t/api-1562591-may_cache_object.md)
+- [temporary](./memory_object_attr_info_data_t/api-1562480-temporary.md)
 
 
 ---

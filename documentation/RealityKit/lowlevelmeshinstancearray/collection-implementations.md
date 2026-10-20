@@ -1,11 +1,12 @@
 # Collection Implementations
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Subscripts
-- [subscript(Int) -> LowLevelMeshInstance?](lowlevelmeshinstancearray/subscript(_:).md)
+- [subscript(Int) -> LowLevelMeshInstance?](./subscript%28_%29.md)
   Returns the mesh instance at the given index, or `nil` if the slot is unoccupied.
 
 

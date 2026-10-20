@@ -1,7 +1,8 @@
 # setDeviceControllerDelegate(_:queue:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -18,9 +19,13 @@
 func setDeviceControllerDelegate(_ delegate: any MTRDeviceControllerDelegate, queue: dispatch_queue_t)
 ```
 
+```objc
+- (void) setDeviceControllerDelegate:(id<MTRDeviceControllerDelegate>) delegate queue:(dispatch_queue_t) queue;
+```
+
 ## Mentions
 
-- [Onboarding a Matter device](onboarding-a-matter-device.md)
+- [Onboarding a Matter device](../onboarding-a-matter-device.md)
 
 
 ---

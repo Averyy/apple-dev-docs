@@ -1,7 +1,8 @@
 # IconAssetType
 
 **Framework**: App Store Connect API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 String that represents the type of icon contained in the build.
 
@@ -10,9 +11,18 @@ String that represents the type of icon contained in the build.
 
 ## Declaration
 
-```swift
+```
 string IconAssetType
 ```
+
+## Possible Values
+
+- `APP_STORE`
+- `MESSAGES_APP_STORE`
+- `WATCH_APP_STORE`
+- `TV_OS_HOME_SCREEN`
+- `TV_OS_TOP_SHELF`
+- `ALTERNATE_EXPERIMENT`
 
 #### Discussion
 
@@ -20,13 +30,14 @@ string IconAssetType
 
 ## See Also
 
-- [object BuildIcon](buildicon.md)
+### Objects and types
+- [object BuildIcon](./buildicon.md)
   A PNG icon image extracted from a build, used for display in App Store Connect and TestFlight.
-- [object BuildIconsResponse](buildiconsresponse.md)
+- [object BuildIconsResponse](./buildiconsresponse.md)
   A response containing a list of icon images for a build.
-- [object BuildIconsWithoutIncludesResponse](buildiconswithoutincludesresponse.md)
+- [object BuildIconsWithoutIncludesResponse](./buildiconswithoutincludesresponse.md)
   A response containing a list of build icons, without related resources.
-- [object ImageAsset](imageasset.md)
+- [object ImageAsset](./imageasset.md)
   An image asset, including its height, width, and template URL.
 
 

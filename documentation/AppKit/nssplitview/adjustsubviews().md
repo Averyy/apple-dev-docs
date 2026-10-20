@@ -1,17 +1,22 @@
 # adjustSubviews()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adjusts the sizes of the split view’s subviews so they (plus the dividers) fill the split view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func adjustSubviews()
+```
+
+```objc
+- (void) adjustSubviews;
 ```
 
 #### Discussion
@@ -26,11 +31,12 @@ This method invalidates the cursor when it is over a divider, ensuring the curso
 
 ## See Also
 
-- [func isSubviewCollapsed(NSView) -> Bool](nssplitview/issubviewcollapsed(_:).md)
+### Managing Subviews
+- [func isSubviewCollapsed(NSView) -> Bool](./issubviewcollapsed%28_%29.md)
   Returns whether the specified view is in a collapsed state.
-- [func holdingPriorityForSubview(at: Int) -> NSLayoutConstraint.Priority](nssplitview/holdingpriorityforsubview(at:).md)
+- [func holdingPriorityForSubview(at: Int) -> NSLayoutConstraint.Priority](./holdingpriorityforsubview%28at%29.md)
   Returns the priority of the subview’s width or height when resizing.
-- [func setHoldingPriority(NSLayoutConstraint.Priority, forSubviewAt: Int)](nssplitview/setholdingpriority(_:forsubviewat:).md)
+- [func setHoldingPriority(NSLayoutConstraint.Priority, forSubviewAt: Int)](./setholdingpriority%28_,forsubviewat%29.md)
   Sets the priority for split view subviews to maintain their width or height.
 
 

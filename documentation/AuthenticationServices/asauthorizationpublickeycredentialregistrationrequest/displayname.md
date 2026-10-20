@@ -2,6 +2,7 @@
 
 **Framework**: Authentication Services  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A user-visible name for the credential, such as the account’s user name.
@@ -20,19 +21,24 @@ A user-visible name for the credential, such as the account’s user name.
 var displayName: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * displayName;
+```
+
 ## See Also
 
-- [var attestationPreference: ASAuthorizationPublicKeyCredentialAttestationKind](asauthorizationpublickeycredentialregistrationrequest/attestationpreference.md)
+### Getting the properties
+- [var attestationPreference: ASAuthorizationPublicKeyCredentialAttestationKind](./attestationpreference.md)
   The type of attestation you’re requesting.
-- [var challenge: Data](asauthorizationpublickeycredentialregistrationrequest/challenge.md)
+- [var challenge: Data](./challenge.md)
   Arbitrary data that the client signs as proof of a valid registration or attestation.
-- [var name: String](asauthorizationpublickeycredentialregistrationrequest/name.md)
+- [var name: String](./name.md)
   A user-visible name that identifies a credential.
-- [var relyingPartyIdentifier: String](asauthorizationpublickeycredentialregistrationrequest/relyingpartyidentifier.md)
+- [var relyingPartyIdentifier: String](./relyingpartyidentifier.md)
   The domain name of the website for the credential.
-- [var userID: Data](asauthorizationpublickeycredentialregistrationrequest/userid.md)
+- [var userID: Data](./userid.md)
   Data that the relying party associates with the credential.
-- [var userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference](asauthorizationpublickeycredentialregistrationrequest/userverificationpreference.md)
+- [var userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference](./userverificationpreference.md)
   A preference for whether the authenticator attempts to verify the user at the time of sign-in.
 
 

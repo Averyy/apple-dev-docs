@@ -1,7 +1,8 @@
 # unit
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -18,12 +19,15 @@
 final var unit: IntentParameter<Value>.ElectricPotentialDifference? { get }
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitElectricPotentialDifference>`.
+
 ## See Also
 
-- [IntentParameter.ElectricPotentialDifference](intentparameter/electricpotentialdifference.md)
-- [var defaultUnit: IntentParameter<Value>.ElectricPotentialDifference?](intentparameter/defaultunit-2uqct.md)
-- [var supportsNegativeNumbers: Bool?](intentparameter/supportsnegativenumbers-4hoq0.md)
-- [var unitAdjustForLocale: Bool?](intentparameter/unitadjustforlocale-7e0ti.md)
+### Accessing unit details
+- [IntentParameter.ElectricPotentialDifference](./electricpotentialdifference.md)
+- [var defaultUnit: IntentParameter<Value>.ElectricPotentialDifference?](./defaultunit-2uqct.md)
+- [var supportsNegativeNumbers: Bool?](./supportsnegativenumbers-4hoq0.md)
+- [var unitAdjustForLocale: Bool?](./unitadjustforlocale-7e0ti.md)
 
 
 ---

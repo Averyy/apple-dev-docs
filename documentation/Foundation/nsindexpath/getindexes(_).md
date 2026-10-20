@@ -1,23 +1,30 @@
 # getIndexes(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies the objects contained in the index path into indexes.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- macOS 10.0+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 2.0+ - Deprecated in 27.2
+- iPadOS 2.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.2
+- macOS 10.0+ - Deprecated in 27.2
+- tvOS 9.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`getIndexes(_:range:)`](./getindexes%28_,range%29.md) instead.
 
 ## Declaration
 
 ```swift
 func getIndexes(_ indexes: UnsafeMutablePointer<Int>)
+```
+
+```objc
+- (void) getIndexes:(NSUInteger *) indexes;
 ```
 
 #### Discussion
@@ -30,9 +37,10 @@ You must allocate the memory for the C array.
 
 ## See Also
 
-- [func index(atPosition: Int) -> Int](nsindexpath/index(atposition:).md)
+### Working with Indexes
+- [func index(atPosition: Int) -> Int](./index%28atposition%29.md)
   Provides the value at a particular node in the index path.
-- [func getIndexes(UnsafeMutablePointer<Int>, range: NSRange)](nsindexpath/getindexes(_:range:).md)
+- [func getIndexes(UnsafeMutablePointer<Int>, range: NSRange)](./getindexes%28_,range%29.md)
   Copies the indexes stored in the index path from the positions specified by the position range into the specified indexes.
 
 

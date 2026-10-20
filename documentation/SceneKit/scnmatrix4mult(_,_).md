@@ -1,23 +1,28 @@
 # SCNMatrix4Mult(_:_:)
 
 **Framework**: SceneKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the product of two matrices.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 func SCNMatrix4Mult(_ a: SCNMatrix4, _ b: SCNMatrix4) -> SCNMatrix4
+```
+
+```c
+extern SCNMatrix4 SCNMatrix4Mult(SCNMatrix4 a, SCNMatrix4 b);
 ```
 
 #### Return Value
@@ -35,13 +40,14 @@ Matrix multiplication is not commutative. As a transformation, the result of mul
 
 ## See Also
 
-- [func SCNMatrix4Translate(SCNMatrix4, Float, Float, Float) -> SCNMatrix4](scnmatrix4translate(_:_:_:_:).md)
+### Performing Matrix Operations
+- [func SCNMatrix4Translate(SCNMatrix4, Float, Float, Float) -> SCNMatrix4](./scnmatrix4translate%28_,_,_,_%29.md)
   Returns a new matrix created by concatenating the specified matrix with a translation transformation.
-- [func SCNMatrix4Rotate(SCNMatrix4, Float, Float, Float, Float) -> SCNMatrix4](scnmatrix4rotate(_:_:_:_:_:).md)
+- [func SCNMatrix4Rotate(SCNMatrix4, Float, Float, Float, Float) -> SCNMatrix4](./scnmatrix4rotate%28_,_,_,_,_%29.md)
   Returns a new matrix created by concatenating the specified matrix with a rotation transformation.
-- [func SCNMatrix4Scale(SCNMatrix4, Float, Float, Float) -> SCNMatrix4](scnmatrix4scale(_:_:_:_:).md)
+- [func SCNMatrix4Scale(SCNMatrix4, Float, Float, Float) -> SCNMatrix4](./scnmatrix4scale%28_,_,_,_%29.md)
   Returns a new matrix created by concatenating the specified matrix with a scale transformation.
-- [func SCNMatrix4Invert(SCNMatrix4) -> SCNMatrix4](scnmatrix4invert(_:).md)
+- [func SCNMatrix4Invert(SCNMatrix4) -> SCNMatrix4](./scnmatrix4invert%28_%29.md)
   Returns the inverse of the specified matrix.
 
 

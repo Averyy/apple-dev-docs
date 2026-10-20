@@ -1,7 +1,8 @@
 # PrivateCloudComputeLanguageModel.QuotaUsage.Status.LimitReached
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about usage that has reached the usage limit.
 
@@ -22,16 +23,17 @@ struct LimitReached
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case belowLimit(PrivateCloudComputeLanguageModel.QuotaUsage.Status.BelowLimit)](privatecloudcomputelanguagemodel/quotausage-swift.struct/status-swift.enum/belowlimit(_:).md)
+### Quota status
+- [case belowLimit(PrivateCloudComputeLanguageModel.QuotaUsage.Status.BelowLimit)](./belowlimit%28_%29.md)
   The model’s usage is below its usage limit.
-- [PrivateCloudComputeLanguageModel.QuotaUsage.Status.BelowLimit](privatecloudcomputelanguagemodel/quotausage-swift.struct/status-swift.enum/belowlimit.md)
+- [PrivateCloudComputeLanguageModel.QuotaUsage.Status.BelowLimit](./belowlimit.md)
   Information about usage that hasn’t yet reached the usage limit.
-- [case limitReached(PrivateCloudComputeLanguageModel.QuotaUsage.Status.LimitReached)](privatecloudcomputelanguagemodel/quotausage-swift.struct/status-swift.enum/limitreached(_:).md)
+- [case limitReached(PrivateCloudComputeLanguageModel.QuotaUsage.Status.LimitReached)](./limitreached%28_%29.md)
   The model’s usage has reached its usage limit.
 
 

@@ -1,7 +1,8 @@
 # suffix(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a subsequence, up to the given maximum length, containing the final elements of the sequence.
 
@@ -32,7 +33,7 @@ print(numbers.suffix(10))
 // Prints "[1, 2, 3, 4, 5]"
 ```
 
-> **Note**: O(*n*), where *n* is the length of the sequence.
+> **Complexity**: O(*n*), where *n* is the length of the sequence.
 
 ## Parameters
 
@@ -40,9 +41,10 @@ print(numbers.suffix(10))
 
 ## See Also
 
-- [func prefix(Int) -> PrefixSequence<Self>](sequence/prefix(_:).md)
+### Selecting Elements
+- [func prefix(Int) -> PrefixSequence<Self>](./prefix%28_%29.md)
   Returns a sequence, up to the specified maximum length, containing the initial elements of the sequence.
-- [func prefix(while: (Self.Element) throws -> Bool) rethrows -> [Self.Element]](sequence/prefix(while:).md)
+- [func prefix(while: (Self.Element) throws -> Bool) rethrows -> [Self.Element]](./prefix%28while%29.md)
   Returns a sequence containing the initial, consecutive elements that satisfy the given predicate.
 
 

@@ -1,7 +1,8 @@
 # flatMap(maxPublishers:_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Transforms all elements from an upstream publisher into a new publisher up to a maximum number of publishers you specify.
 
@@ -20,30 +21,33 @@ Transforms all elements from an upstream publisher into a new publisher up to a 
 func flatMap<P>(maxPublishers: Subscribers.Demand = .unlimited, _ transform: @escaping (Self.Output) -> P) -> Publishers.FlatMap<P, Publishers.SetFailureType<Self, P.Failure>> where P : Publisher
 ```
 
+Available when `Failure` is `Never`.
+
 #### Return Value
 
 A publisher that transforms elements from an upstream  publisher into a publisher of that element’s type.
 
 ## Parameters
 
-- `maxPublishers`: Specifies the maximum number of concurrent publisher subscriptions, or [`unlimited`](subscribers/demand/unlimited.md) if unspecified.
+- `maxPublishers`: Specifies the maximum number of concurrent publisher subscriptions, or [`unlimited`](../subscribers/demand/unlimited.md) if unspecified.
 - `transform`: A closure that takes an element as a parameter and returns a publisher that produces elements of that type.
 
 ## See Also
 
-- [func flatMap<T, P>(maxPublishers: Subscribers.Demand, (Self.Output) -> P) -> Publishers.FlatMap<P, Self>](publisher/flatmap(maxpublishers:_:)-3k7z5.md)
+### Republishing elements by subscribing to new publishers
+- [func flatMap<T, P>(maxPublishers: Subscribers.Demand, (Self.Output) -> P) -> Publishers.FlatMap<P, Self>](./flatmap%28maxpublishers,_%29-3k7z5.md)
   Transforms all elements from an upstream publisher into a new publisher up to a maximum number of publishers you specify.
-- [func flatMap<P>(maxPublishers: Subscribers.Demand, (Self.Output) -> P) -> Publishers.FlatMap<P, Self>](publisher/flatmap(maxpublishers:_:)-hyb0.md)
+- [func flatMap<P>(maxPublishers: Subscribers.Demand, (Self.Output) -> P) -> Publishers.FlatMap<P, Self>](./flatmap%28maxpublishers,_%29-hyb0.md)
   Transforms all elements from an upstream publisher into a new publisher up to a maximum number of publishers you specify.
-- [func flatMap<P>(maxPublishers: Subscribers.Demand, (Self.Output) -> P) -> Publishers.FlatMap<Publishers.SetFailureType<P, Self.Failure>, Self>](publisher/flatmap(maxpublishers:_:)-4of8w.md)
+- [func flatMap<P>(maxPublishers: Subscribers.Demand, (Self.Output) -> P) -> Publishers.FlatMap<Publishers.SetFailureType<P, Self.Failure>, Self>](./flatmap%28maxpublishers,_%29-4of8w.md)
   Transforms all elements from an upstream publisher into a new publisher up to a maximum number of publishers you specify.
-- [func switchToLatest() -> Publishers.SwitchToLatest<Self.Output, Self>](publisher/switchtolatest-453ht.md)
+- [func switchToLatest() -> Publishers.SwitchToLatest<Self.Output, Self>](./switchtolatest%28%29-453ht.md)
   Republishes elements sent by the most recently received publisher.
-- [func switchToLatest() -> Publishers.SwitchToLatest<Self.Output, Publishers.SetFailureType<Self, Self.Output.Failure>>](publisher/switchtolatest-1c51y.md)
+- [func switchToLatest() -> Publishers.SwitchToLatest<Self.Output, Publishers.SetFailureType<Self, Self.Output.Failure>>](./switchtolatest%28%29-1c51y.md)
   Republishes elements sent by the most recently received publisher.
-- [func switchToLatest() -> Publishers.SwitchToLatest<Publishers.SetFailureType<Self.Output, Self.Failure>, Publishers.Map<Self, Publishers.SetFailureType<Self.Output, Self.Failure>>>](publisher/switchtolatest-20v3t.md)
+- [func switchToLatest() -> Publishers.SwitchToLatest<Publishers.SetFailureType<Self.Output, Self.Failure>, Publishers.Map<Self, Publishers.SetFailureType<Self.Output, Self.Failure>>>](./switchtolatest%28%29-20v3t.md)
   Republishes elements sent by the most recently received publisher.
-- [func switchToLatest() -> Publishers.SwitchToLatest<Self.Output, Self>](publisher/switchtolatest-9eb3r.md)
+- [func switchToLatest() -> Publishers.SwitchToLatest<Self.Output, Self>](./switchtolatest%28%29-9eb3r.md)
   Republishes elements sent by the most recently received publisher.
 
 

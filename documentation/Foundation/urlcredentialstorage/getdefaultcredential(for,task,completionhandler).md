@@ -1,7 +1,8 @@
 # getDefaultCredential(for:task:completionHandler:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the default credential for the specified protection space, which is being accessed by the given task, and passes it to the provided completion handler.
 
@@ -17,7 +18,15 @@ Gets the default credential for the specified protection space, which is being a
 ## Declaration
 
 ```swift
+func getDefaultCredential(for space: URLProtectionSpace, task: URLSessionTask, completionHandler: @escaping @Sendable (URLCredential?) -> Void)
+```
+
+```swift
 func defaultCredential(for space: URLProtectionSpace, task: URLSessionTask) async -> URLCredential?
+```
+
+```objc
+- (void) getDefaultCredentialForProtectionSpace:(NSURLProtectionSpace *) space task:(NSURLSessionTask *) task completionHandler:(void (^)(NSURLCredential *credential)) completionHandler;
 ```
 
 ## Parameters
@@ -28,11 +37,12 @@ func defaultCredential(for space: URLProtectionSpace, task: URLSessionTask) asyn
 
 ## See Also
 
-- [func defaultCredential(for: URLProtectionSpace) -> URLCredential?](urlcredentialstorage/defaultcredential(for:).md)
+### Getting and setting default credentials
+- [func defaultCredential(for: URLProtectionSpace) -> URLCredential?](./defaultcredential%28for%29.md)
   Returns the default credential for the specified protection space.
-- [func setDefaultCredential(URLCredential, for: URLProtectionSpace)](urlcredentialstorage/setdefaultcredential(_:for:).md)
+- [func setDefaultCredential(URLCredential, for: URLProtectionSpace)](./setdefaultcredential%28_,for%29.md)
   Sets the default credential for a specified protection space.
-- [func setDefaultCredential(URLCredential, for: URLProtectionSpace, task: URLSessionTask)](urlcredentialstorage/setdefaultcredential(_:for:task:).md)
+- [func setDefaultCredential(URLCredential, for: URLProtectionSpace, task: URLSessionTask)](./setdefaultcredential%28_,for,task%29.md)
   Sets the default credential for a given protection space, which is being accessed by the given task.
 
 

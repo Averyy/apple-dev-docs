@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kSOAP1999Schema: Int](../coreservices/ksoap1999schema.md)
-- [var kSOAP2001Schema: Int](../coreservices/ksoap2001schema.md)
+- [var kSOAP1999Schema: Int](../../coreservices/ksoap1999schema.md)
+- [var kSOAP2001Schema: Int](../../coreservices/ksoap2001schema.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(rotorType:itemSearchDelegate:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a custom rotor with the specified rotor type and item search delegate.
 
@@ -14,9 +15,14 @@ Creates a custom rotor with the specified rotor type and item search delegate.
 init(rotorType: NSAccessibilityCustomRotor.RotorType, itemSearchDelegate: any NSAccessibilityCustomRotorItemSearchDelegate)
 ```
 
+```objc
+- (instancetype) initWithRotorType:(NSAccessibilityCustomRotorType) rotorType itemSearchDelegate:(id<NSAccessibilityCustomRotorItemSearchDelegate>) itemSearchDelegate;
+```
+
 ## See Also
 
-- [init(label: String, itemSearchDelegate: any NSAccessibilityCustomRotorItemSearchDelegate)](nsaccessibilitycustomrotor/init(label:itemsearchdelegate:).md)
+### Creating a Rotor
+- [init(label: String, itemSearchDelegate: any NSAccessibilityCustomRotorItemSearchDelegate)](./init%28label,itemsearchdelegate%29.md)
   Creates a custom rotor with the specified label and item search delegate.
 
 

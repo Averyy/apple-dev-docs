@@ -1,7 +1,8 @@
 # BarcodeDetectionProvider
 
 **Framework**: ARKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides the real-time position of barcodes the framework detects in a person’s environment.
 
@@ -16,37 +17,38 @@ final class BarcodeDetectionProvider
 
 #### Overview
 
-Use this provider to receive updates about barcodes that ARKit detect in a person’s surroundings, This provider returns the results in the form of an asynchronous sequence of [`BarcodeAnchor`](barcodeanchor.md) structures. Your app needs to include the [`Spatial barcode and QR code scanning`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.arkit.barcode-detection.allow) entitlement to use this capability; otherwise, it has no effect.
+Use this provider to receive updates about barcodes that ARKit detect in a person’s surroundings, This provider returns the results in the form of an asynchronous sequence of [`BarcodeAnchor`](./barcodeanchor.md) structures. Your app needs to include the [`Spatial barcode and QR code scanning`](../BundleResources/entitlements/com.apple.developer.arkit.barcode-detection.allow.md) entitlement to use this capability; otherwise, it has no effect.
 
 ## Topics
 
 ### Creating a barcode detection provider
-- [init(symbologies: [BarcodeAnchor.Symbology])](barcodedetectionprovider/init(symbologies:).md)
+- [init(symbologies: [BarcodeAnchor.Symbology])](./barcodedetectionprovider/init%28symbologies%29.md)
   Creates a barcode detection provider that looks for the specified symbologies.
 ### Inspecting a barcode detection provider
-- [var anchorUpdates: AnchorUpdateSequence<BarcodeAnchor>](barcodedetectionprovider/anchorupdates.md)
+- [var anchorUpdates: AnchorUpdateSequence<BarcodeAnchor>](./barcodedetectionprovider/anchorupdates.md)
   An asynchronous sequence of anchor updates that describe the anchors in a person’s surroundings.
-- [var description: String](barcodedetectionprovider/description.md)
+- [var description: String](./barcodedetectionprovider/description.md)
   A textual representation of this barcode detection provider.
-- [var state: DataProviderState](barcodedetectionprovider/state.md)
+- [var state: DataProviderState](./barcodedetectionprovider/state.md)
   The state of a barcode detection provider.
 ### Type properties
-- [static var isSupported: Bool](barcodedetectionprovider/issupported.md)
+- [static var isSupported: Bool](./barcodedetectionprovider/issupported.md)
   A Boolean value that determines whether a device supports the barcode detection provider.
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](barcodedetectionprovider/requiredauthorizations.md)
+- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./barcodedetectionprovider/requiredauthorizations.md)
   The authorization types you need to use the barcode detection provider.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [DataProvider](dataprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [DataProvider](./dataprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct BarcodeAnchor](barcodeanchor.md)
+### Barcode detection
+- [struct BarcodeAnchor](./barcodeanchor.md)
   A barcode’s position in a person’s surroundings.
 
 

@@ -1,7 +1,8 @@
 # notify_register_dispatch(_:_:_:_:)
 
 **Framework**: Darwin Notify  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Request notification delivery to a dispatch queue.
 
@@ -10,7 +11,7 @@ Request notification delivery to a dispatch queue.
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
 - macOS 10.6+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Request notification delivery to a dispatch queue.
 
 ```swift
 func notify_register_dispatch(_ name: UnsafePointer<CChar>!, _ out_token: UnsafeMutablePointer<Int32>!, _ queue: dispatch_queue_t!, _ handler: notify_handler_t!) -> UInt32
+```
+
+```c
+extern uint32_t notify_register_dispatch(const char *name, int *out_token, dispatch_queue_t queue, notify_handler_t handler);
 ```
 
 #### Return Value
@@ -37,16 +42,17 @@ When notifications are received by the process, the notify subsystem will delive
 
 ## See Also
 
-- [func notify_cancel(Int32) -> UInt32](notify_cancel(_:).md)
-- [func notify_check(Int32, UnsafeMutablePointer<Int32>!) -> UInt32](notify_check(_:_:).md)
-- [func notify_get_state(Int32, UnsafeMutablePointer<UInt64>!) -> UInt32](notify_get_state(_:_:).md)
-- [func notify_post(UnsafePointer<CChar>!) -> UInt32](notify_post(_:).md)
-- [func notify_register_check(UnsafePointer<CChar>!, UnsafeMutablePointer<Int32>!) -> UInt32](notify_register_check(_:_:).md)
-- [func notify_register_mach_port(UnsafePointer<CChar>!, UnsafeMutablePointer<mach_port_t>!, Int32, UnsafeMutablePointer<Int32>!) -> UInt32](notify_register_mach_port(_:_:_:_:).md)
-- [func notify_register_signal(UnsafePointer<CChar>!, Int32, UnsafeMutablePointer<Int32>!) -> UInt32](notify_register_signal(_:_:_:).md)
-- [func notify_resume(Int32) -> UInt32](notify_resume(_:).md)
-- [func notify_set_state(Int32, UInt64) -> UInt32](notify_set_state(_:_:).md)
-- [func notify_suspend(Int32) -> UInt32](notify_suspend(_:).md)
+### Miscellaneous
+- [func notify_cancel(Int32) -> UInt32](./notify_cancel%28_%29.md)
+- [func notify_check(Int32, UnsafeMutablePointer<Int32>!) -> UInt32](./notify_check%28_,_%29.md)
+- [func notify_get_state(Int32, UnsafeMutablePointer<UInt64>!) -> UInt32](./notify_get_state%28_,_%29.md)
+- [func notify_post(UnsafePointer<CChar>!) -> UInt32](./notify_post%28_%29.md)
+- [func notify_register_check(UnsafePointer<CChar>!, UnsafeMutablePointer<Int32>!) -> UInt32](./notify_register_check%28_,_%29.md)
+- [func notify_register_mach_port(UnsafePointer<CChar>!, UnsafeMutablePointer<mach_port_t>!, Int32, UnsafeMutablePointer<Int32>!) -> UInt32](./notify_register_mach_port%28_,_,_,_%29.md)
+- [func notify_register_signal(UnsafePointer<CChar>!, Int32, UnsafeMutablePointer<Int32>!) -> UInt32](./notify_register_signal%28_,_,_%29.md)
+- [func notify_resume(Int32) -> UInt32](./notify_resume%28_%29.md)
+- [func notify_set_state(Int32, UInt64) -> UInt32](./notify_set_state%28_,_%29.md)
+- [func notify_suspend(Int32) -> UInt32](./notify_suspend%28_%29.md)
 
 
 ---

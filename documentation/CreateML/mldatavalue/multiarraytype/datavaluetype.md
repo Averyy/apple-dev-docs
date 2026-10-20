@@ -1,7 +1,8 @@
 # dataValueType
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The underlying type a machine learning multidimensional array uses when it wraps itself in a data value.
 
@@ -21,7 +22,7 @@ static var dataValueType: MLDataValue.ValueType { get }
 
 #### Discussion
 
-A machine learning multidimensional array is an [`MLDataValue.ValueType.multiArray`](mldatavalue/valuetype/multiarray.md).
+A machine learning multidimensional array is an [`MLDataValue.ValueType.multiArray`](../valuetype/multiarray.md).
 
 
 ---

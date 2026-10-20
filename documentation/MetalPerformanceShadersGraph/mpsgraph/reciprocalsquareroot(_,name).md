@@ -1,7 +1,8 @@
 # reciprocalSquareRoot(_:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the reciprocal square root operation to the input tensor elements.
 
@@ -17,6 +18,10 @@ Applies the reciprocal square root operation to the input tensor elements.
 
 ```swift
 func reciprocalSquareRoot(_ tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) reciprocalSquareRootWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

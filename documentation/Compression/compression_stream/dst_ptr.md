@@ -1,18 +1,19 @@
 # dst_ptr
 
 **Framework**: Compression  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A pointer to the first byte of the destination buffer.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ A pointer to the first byte of the destination buffer.
 var dst_ptr: UnsafeMutablePointer<UInt8>
 ```
 
+```c
+uint8_t * dst_ptr;
+```
+
 ## See Also
 
-- [var dst_size: Int](compression_stream/dst_size.md)
+### Compression Stream Properties
+- [var dst_size: Int](./dst_size.md)
   The size, in bytes, of the destination buffer.
-- [var src_ptr: UnsafePointer<UInt8>](compression_stream/src_ptr.md)
+- [var src_ptr: UnsafePointer<UInt8>](./src_ptr.md)
   A pointer to the first byte of the source buffer.
-- [var src_size: Int](compression_stream/src_size.md)
+- [var src_size: Int](./src_size.md)
   The size, in bytes, of the source buffer.
-- [var state: UnsafeMutableRawPointer?](compression_stream/state.md)
+- [var state: UnsafeMutableRawPointer?](./state.md)
   The stream state object of the compression stream.
 
 

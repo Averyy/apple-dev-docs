@@ -1,7 +1,8 @@
 # RoomBuilder.BuildError.exceedSceneSizeLimit
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates when the scene size grows past the framework’s limitations.
 
@@ -18,13 +19,14 @@ case exceedSceneSizeLimit
 
 ## See Also
 
-- [RoomBuilder.BuildError.insufficientInput](roombuilder/builderror/insufficientinput.md)
+### Interpreting the error cause
+- [RoomBuilder.BuildError.insufficientInput](./insufficientinput.md)
   An error that indicates the framework expects more captured room data.
-- [RoomBuilder.BuildError.invalidInput](roombuilder/builderror/invalidinput.md)
+- [RoomBuilder.BuildError.invalidInput](./invalidinput.md)
   An error that indicates the framework encounters invalid captured room data.
-- [RoomBuilder.BuildError.internalError](roombuilder/builderror/internalerror.md)
+- [RoomBuilder.BuildError.internalError](./internalerror.md)
   An error that indicates when the framework encounters an unexpected error case.
-- [RoomBuilder.BuildError.deviceNotSupported](roombuilder/builderror/devicenotsupported.md)
+- [RoomBuilder.BuildError.deviceNotSupported](./devicenotsupported.md)
   An error that indicates that the framework doesn’t support the user’s device.
 
 

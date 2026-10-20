@@ -1,7 +1,8 @@
 # NextHourForecast.NextHourForecastData
 
 **Framework**: WeatherKit REST API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The next hour forecast information.
 
@@ -10,7 +11,7 @@ The next hour forecast information.
 
 ## Declaration
 
-```swift
+```
 object NextHourForecast.NextHourForecastData
 ```
 
@@ -24,7 +25,7 @@ object NextHourForecast.NextHourForecastData
 ## Relationships
 
 ### Inherited By
-- [NextHourForecast](nexthourforecast.md)
+- [NextHourForecast](../nexthourforecast.md)
 
 
 ---

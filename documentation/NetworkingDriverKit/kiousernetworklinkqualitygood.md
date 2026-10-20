@@ -1,23 +1,25 @@
 # kIOUserNetworkLinkQualityGood
 
 **Framework**: NetworkingDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 kIOUserNetworkLinkQualityGood
 ```
 
 ## See Also
 
-- [kIOUserNetworkLinkQualityOff](kiousernetworklinkqualityoff.md)
-- [kIOUserNetworkLinkQualityUnknown](kiousernetworklinkqualityunknown.md)
-- [kIOUserNetworkLinkQualityBad](kiousernetworklinkqualitybad.md)
-- [kIOUserNetworkLinkQualityPoor](kiousernetworklinkqualitypoor.md)
+### Getting the Link Quality
+- [kIOUserNetworkLinkQualityOff](./kiousernetworklinkqualityoff.md)
+- [kIOUserNetworkLinkQualityUnknown](./kiousernetworklinkqualityunknown.md)
+- [kIOUserNetworkLinkQualityBad](./kiousernetworklinkqualitybad.md)
+- [kIOUserNetworkLinkQualityPoor](./kiousernetworklinkqualitypoor.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # suggestedBatchSize
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The batch size that the system recommends.
 
@@ -18,6 +19,10 @@ The batch size that the system recommends.
 optional var suggestedBatchSize: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger suggestedBatchSize;
+```
+
 #### Discussion
 
 The system suggests the batch size to optimize performance based on the context of the pending changes. The system can request the enumeration of a container for various reasons, such as if the user has the directory open in Finder, or the file open in an application. Each case has its own performance profile.
@@ -28,13 +33,14 @@ While using the suggested batch size helps ensure the best user experience, the 
 
 ## See Also
 
-- [func didDeleteItems(withIdentifiers: [NSFileProviderItemIdentifier])](nsfileproviderchangeobserver/diddeleteitems(withidentifiers:).md)
+### Observing Changes
+- [func didDeleteItems(withIdentifiers: [NSFileProviderItemIdentifier])](./diddeleteitems%28withidentifiers%29.md)
   Tells the observer that the specified items have been deleted.
-- [func didUpdate([any NSFileProviderItemProtocol])](nsfileproviderchangeobserver/didupdate(_:).md)
+- [func didUpdate([any NSFileProviderItemProtocol])](./didupdate%28_%29.md)
   Tells the observer that the specified items have been updated.
-- [func finishEnumeratingChanges(upTo: NSFileProviderSyncAnchor, moreComing: Bool)](nsfileproviderchangeobserver/finishenumeratingchanges(upto:morecoming:).md)
+- [func finishEnumeratingChanges(upTo: NSFileProviderSyncAnchor, moreComing: Bool)](./finishenumeratingchanges%28upto,morecoming%29.md)
   Tells the observer that all of the changes have been enumerated up to the specified sync anchor.
-- [func finishEnumeratingWithError(any Error)](nsfileproviderchangeobserver/finishenumeratingwitherror(_:).md)
+- [func finishEnumeratingWithError(any Error)](./finishenumeratingwitherror%28_%29.md)
   Tells the observer that an error occurred during change notification.
 
 

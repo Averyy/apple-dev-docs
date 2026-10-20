@@ -1,7 +1,8 @@
 # stationary
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An event phase is in progress but hasn’t moved since the previous event.
 
@@ -14,17 +15,22 @@ An event phase is in progress but hasn’t moved since the previous event.
 static var stationary: NSEvent.Phase { get }
 ```
 
+```c
+NSEventPhaseStationary
+```
+
 ## See Also
 
-- [static var began: NSEvent.Phase](nsevent/phase-swift.struct/began.md)
+### Constants
+- [static var began: NSEvent.Phase](./began.md)
   An event phase has begun.
-- [static var changed: NSEvent.Phase](nsevent/phase-swift.struct/changed.md)
+- [static var changed: NSEvent.Phase](./changed.md)
   An event phase has changed.
-- [static var ended: NSEvent.Phase](nsevent/phase-swift.struct/ended.md)
+- [static var ended: NSEvent.Phase](./ended.md)
   The event phase ended.
-- [static var cancelled: NSEvent.Phase](nsevent/phase-swift.struct/cancelled.md)
+- [static var cancelled: NSEvent.Phase](./cancelled.md)
   The system canceled the event phase.
-- [static var mayBegin: NSEvent.Phase](nsevent/phase-swift.struct/maybegin.md)
+- [static var mayBegin: NSEvent.Phase](./maybegin.md)
   The system event phase may begin.
 
 

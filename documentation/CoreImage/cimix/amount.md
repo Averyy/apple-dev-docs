@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The amount of the effect.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ The amount of the effect.
 var amount: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float amount;
+```
+
 ## See Also
 
-- [var backgroundImage: CIImage?](cimix/backgroundimage.md)
+### Instance Properties
+- [var backgroundImage: CIImage?](./backgroundimage.md)
   The image to use as a background image.
-- [var inputImage: CIImage?](cimix/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as a foreground image.
 
 

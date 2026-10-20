@@ -1,7 +1,8 @@
 # unavailabilityLatencyCeiling
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The highest forecasted packet latency due to this device’s unavailability.
 

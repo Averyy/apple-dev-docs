@@ -1,14 +1,15 @@
 # PE_arm_debug_panic_hook
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void (*const)(const char *) PE_arm_debug_panic_hook;
 ```
 

@@ -1,7 +1,8 @@
 # SecProtocolType.HTTPS
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates HTTP over TLS/SSL.
 
@@ -13,6 +14,10 @@ Indicates HTTP over TLS/SSL.
 
 ```swift
 case HTTPS
+```
+
+```c
+kSecProtocolTypeHTTPS
 ```
 
 

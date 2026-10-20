@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new vector by decoding scalars from the given decoder.
 

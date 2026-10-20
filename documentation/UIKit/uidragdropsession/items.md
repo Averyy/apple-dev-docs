@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An array of drag items in the drag session or drop session.
@@ -18,15 +19,20 @@ An array of drag items in the drag session or drop session.
 var items: [UIDragItem] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<UIDragItem *> * items;
+```
+
 #### Discussion
 
-The drag item’s [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) object doesn’t load the data for the item until the drop interaction happens. However, before the interaction happens, you can get the item’s registered type identifiers and metadata. The data is available to you only in the drop interaction delegate’s [`dropInteraction(_:performDrop:)`](uidropinteractiondelegate/dropinteraction(_:performdrop:).md) method.
+The drag item’s [`NSItemProvider`](../../Foundation/nsitemprovider.md) object doesn’t load the data for the item until the drop interaction happens. However, before the interaction happens, you can get the item’s registered type identifiers and metadata. The data is available to you only in the drop interaction delegate’s [`dropInteraction(_:performDrop:)`](../uidropinteractiondelegate/dropinteraction%28_,performdrop%29.md) method.
 
 ## See Also
 
-- [func canLoadObjects(ofClass: any NSItemProviderReading.Type) -> Bool](uidragdropsession/canloadobjects(ofclass:).md)
+### Checking for drag items
+- [func canLoadObjects(ofClass: any NSItemProviderReading.Type) -> Bool](./canloadobjects%28ofclass%29.md)
   Returns a Boolean value that indicates whether at least one drag item in the session can create an instance of the specified class.
-- [func hasItemsConforming(toTypeIdentifiers: [String]) -> Bool](uidragdropsession/hasitemsconforming(totypeidentifiers:).md)
+- [func hasItemsConforming(toTypeIdentifiers: [String]) -> Bool](./hasitemsconforming%28totypeidentifiers%29.md)
   Returns a Boolean value that indicates whether at least one drag item in the session conforms to at least one of the specified UTIs.
 
 

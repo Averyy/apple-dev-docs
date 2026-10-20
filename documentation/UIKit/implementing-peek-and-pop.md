@@ -1,6 +1,8 @@
 # Implementing Peek and Pop
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Sample Code  
+**Download**: [ImplementingPeekAndPop.zip](https://docs-assets.developer.apple.com/published/22fe32e34c3a/ImplementingPeekAndPop.zip)
 
 Accelerate actions in your app by providing shortcuts to preview content in detail view controllers.
 
@@ -20,13 +22,13 @@ The app uses a tab bar controller to demonstrate two different methods for imple
 
 Both `ColorsViewControllerStoryboard` and `ColorsViewControllerCode` are subclasses of `ColorsViewControllerBase`, which contains the implementation of everything necessary to display the table view and handle the standard segue.
 
-##### Peek and Pop From a Storyboard
+##### Peek and Pop from a storyboard
 
 The storyboard uses a Show segue with Peek and Pop enabled to navigate from the `ColorViewControllerStoryboard` to `ColorItemViewController`. This is done by selecting the Show segue, and turning on “Preview & Commit Segues” next to Peek & Pop in the Attributes inspector.
 
 When configuring the `ColorItemViewController`, enable the “Use Preferred Explicit Size” option in the View Controller section of the Attributes inspector. Set the “Content Size” to have 0 width and an appropriate height. Zero width configures the view controller to automatically resize to the device width when the user peeks at the content.
 
-When implementing the `ColorsViewControllerBase` view controller, resist the temptation of using either [`indexPathForSelectedRow`](uitableview/indexpathforselectedrow.md) or [`indexPathsForSelectedRows`](uitableview/indexpathsforselectedrows.md) when preparing to execute a segue. If you configure the storyboard with the default implementation of Peek and Pop, these methods return `nil` at the time of segue execution. Instead, use the segue’s `sender` property to access the cell initiating the peek.
+When implementing the `ColorsViewControllerBase` view controller, resist the temptation of using either [`indexPathForSelectedRow`](./uitableview/indexpathforselectedrow.md) or [`indexPathsForSelectedRows`](./uitableview/indexpathsforselectedrows.md) when preparing to execute a segue. If you configure the storyboard with the default implementation of Peek and Pop, these methods return `nil` at the time of segue execution. Instead, use the segue’s `sender` property to access the cell initiating the peek.
 
 ```swift
 override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -43,9 +45,9 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 }
 ```
 
-##### Peek and Pop in Code
+##### Peek and Pop in code
 
-The `ColorsViewControllerCode` view controller adds code to manually register for Peek and Pop instead of using the storyboard to customize the segue. Call [`registerForPreviewing(with:sourceView:)`](uiviewcontroller/registerforpreviewing(with:sourceview:).md) to register a class which implements the [`UIViewControllerPreviewingDelegate`](uiviewcontrollerpreviewingdelegate.md) protocol, and then pass in a view which responds to the 3D Touch.
+The `ColorsViewControllerCode` view controller adds code to manually register for Peek and Pop instead of using the storyboard to customize the segue. Call [`registerForPreviewing(with:sourceView:)`](./uiviewcontroller/registerforpreviewing%28with,sourceview%29.md) to register a class which implements the [`UIViewControllerPreviewingDelegate`](./uiviewcontrollerpreviewingdelegate.md) protocol, and then pass in a view which responds to the 3D Touch.
 
 ```swift
 override func viewDidLoad() {
@@ -55,7 +57,7 @@ override func viewDidLoad() {
 }
 ```
 
-The protocol requires the implementation of two methods. When the system detects the 3D Touch, it calls [`previewingContext(_:viewControllerForLocation:)`](uiviewcontrollerpreviewingdelegate/previewingcontext(_:viewcontrollerforlocation:).md), passing a `previewingContext` object that conforms to the [`UIViewControllerPreviewing`](uiviewcontrollerpreviewing.md) protocol. Use this method to configure and pass back a view controller for the peek.
+The protocol requires the implementation of two methods. When the system detects the 3D Touch, it calls [`previewingContext(_:viewControllerForLocation:)`](./uiviewcontrollerpreviewingdelegate/previewingcontext%28_,viewcontrollerforlocation%29.md), passing a `previewingContext` object that conforms to the [`UIViewControllerPreviewing`](./uiviewcontrollerpreviewing.md) protocol. Use this method to configure and pass back a view controller for the peek.
 
 ```swift
 func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
@@ -79,7 +81,7 @@ func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewCont
 }
 ```
 
-When the system detects enough pressure in the 3D Touch to pop the view controller, it calls [`previewingContext(_:commit:)`](uiviewcontrollerpreviewingdelegate/previewingcontext(_:commit:).md). Take the passed-in view controller and present it to the user.
+When the system detects enough pressure in the 3D Touch to pop the view controller, it calls [`previewingContext(_:commit:)`](./uiviewcontrollerpreviewingdelegate/previewingcontext%28_,commit%29.md). Take the passed-in view controller and present it to the user.
 
 ```swift
 func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
@@ -90,7 +92,7 @@ func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit v
 
 ##### Implement Peek Quick Actions
 
-To enable Peek Quick Actions for the `ColorItemViewController`, you must override the default implementation of the [`previewActionItems`](uiviewcontroller/previewactionitems.md) property to return an array of [`UIPreviewAction`](uipreviewaction.md) or [`UIPreviewActionGroup`](uipreviewactiongroup.md) objects.
+To enable Peek Quick Actions for the `ColorItemViewController`, you must override the default implementation of the [`previewActionItems`](./uiviewcontroller/previewactionitems.md) property to return an array of [`UIPreviewAction`](./uipreviewaction.md) or [`UIPreviewActionGroup`](./uipreviewactiongroup.md) objects.
 
 Both a star/unstar action and a delete action are available as quick actions using the following code:
 

@@ -1,7 +1,8 @@
 # SFViewTypeCredentials
 
 **Framework**: Security Interface  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates a view that contains controls for credentials was requested by the authorization plug-in.
 
@@ -14,9 +15,14 @@ Indicates a view that contains controls for credentials was requested by the aut
 var SFViewTypeCredentials: SFViewType { get }
 ```
 
+```c
+SFViewTypeCredentials
+```
+
 ## See Also
 
-- [var SFViewTypeIdentityAndCredentials: SFViewType](sfviewtypeidentityandcredentials.md)
+### Constants
+- [var SFViewTypeIdentityAndCredentials: SFViewType](./sfviewtypeidentityandcredentials.md)
   Indicates a view that contains controls for identity and credentials was requested by the authorization plug-in.
 
 

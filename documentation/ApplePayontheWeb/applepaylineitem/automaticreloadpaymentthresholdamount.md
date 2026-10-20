@@ -1,7 +1,8 @@
 # automaticReloadPaymentThresholdAmount
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The balance an account reaches before the merchant applies the automatic reload amount.
 
@@ -11,7 +12,7 @@ The balance an account reaches before the merchant applies the automatic reload 
 
 ## Declaration
 
-```swift
+```
 DOMString automaticReloadPaymentThresholdAmount;
 ```
 

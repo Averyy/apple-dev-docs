@@ -1,7 +1,8 @@
 # transcript
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The complete text as a string.
 
@@ -21,11 +22,12 @@ var transcript: String { get }
 
 ## See Also
 
-- [var detectedData: [DocumentObservation.Container.DataDetectorMatch]](documentobservation/container/text-swift.struct/detecteddata.md)
+### Accessing the text
+- [var detectedData: [DocumentObservation.Container.DataDetectorMatch]](./detecteddata.md)
   Detected content in the document matched to a specific type of data, such as emails, phone numbers, addresses, and so on.
-- [var lines: [RecognizedTextObservation]](documentobservation/container/text-swift.struct/lines.md)
+- [var lines: [RecognizedTextObservation]](./lines.md)
   The text grouped by line.
-- [var words: [RecognizedTextObservation]?](documentobservation/container/text-swift.struct/words.md)
+- [var words: [RecognizedTextObservation]?](./words.md)
   An instance property that returns individual words in a text container.
 
 

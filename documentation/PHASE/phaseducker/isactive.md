@@ -1,7 +1,8 @@
 # isActive
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the ducker reduces sound.
 
@@ -19,19 +20,24 @@ A Boolean value that determines whether the ducker reduces sound.
 var isActive: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isActive) BOOL active;
+```
+
 ## See Also
 
-- [var gain: Double](phaseducker/gain.md)
+### Configuring Volume Reduction
+- [var gain: Double](./gain.md)
   The amount of volume reduction.
-- [var identifier: String](phaseducker/identifier.md)
+- [var identifier: String](./identifier.md)
   A unique value for the ducker.
-- [var attackTime: Double](phaseducker/attacktime.md)
+- [var attackTime: Double](./attacktime.md)
   The amount of time for sound reduction to reach maximum strength.
-- [var attackCurve: PHASECurveType](phaseducker/attackcurve.md)
+- [var attackCurve: PHASECurveType](./attackcurve.md)
   A mathematical curve that shapes transition progress as sound reduction begins.
-- [var releaseTime: Double](phaseducker/releasetime.md)
+- [var releaseTime: Double](./releasetime.md)
   The amount of time to transition from maximum sound reduction to no reduction.
-- [var releaseCurve: PHASECurveType](phaseducker/releasecurve.md)
+- [var releaseCurve: PHASECurveType](./releasecurve.md)
   A mathematical curve that shapes transition progress as sound reduction ends.
 
 

@@ -1,6 +1,7 @@
 # Detecting Human Body Poses in Images
 
-**Framework**: Vision
+**Framework**: Vision  
+**Role**: Article
 
 Add the capability to detect human body poses to your app using the Vision framework.
 
@@ -8,13 +9,13 @@ Add the capability to detect human body poses to your app using the Vision frame
 
 A primary goal of Vision is to provide you with tools to help you better identify and understand people in your visual data. Starting in iOS 14 and macOS 11, Vision adds the powerful new ability to identify human body poses. It does so by detecting up to 19 unique body points, as shown in the figure below.
 
-![An illustration depicting a model of the human body. The body points that Vision detects are the right and left wrists, elbows, shoulders, ears, eyes, hips, knees, and ankles; and the nose, neck, and root, or center point.](/images/Vision/media-3625688@2x.png)
+![An illustration depicting a model of the human body. The body points that Vision detects are the right and left wrists, elbows, shoulders, ears, eyes, hips, knees, and ankles; and the nose, neck, and root, or center point.](https://developer.apple.com/tutorials/images/Vision/media-3625688@2x.png)
 
 You can use Vision’s capability for detecting human body poses on its own or with Core ML. Combining Vision with the power of machine learning enables a wide variety of feature possibilities. For example, a safety-training app could help employees use correct ergonomics, a fitness app could automatically track the exercise a user performs, and a media-editing app could find photos or videos based on pose similarity.
 
 ##### Perform a Body Pose Request
 
-Vision provides its body pose-detection capabilities through [`VNDetectHumanBodyPoseRequest`](vndetecthumanbodyposerequest.md), an image-based request type that detects key body points. The following example shows how to use [`VNImageRequestHandler`](vnimagerequesthandler.md) to perform a [`VNDetectHumanBodyPoseRequest`](vndetecthumanbodyposerequest.md) for detecting body points in the specified [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage).
+Vision provides its body pose-detection capabilities through [`VNDetectHumanBodyPoseRequest`](./vndetecthumanbodyposerequest.md), an image-based request type that detects key body points. The following example shows how to use [`VNImageRequestHandler`](./vnimagerequesthandler.md) to perform a [`VNDetectHumanBodyPoseRequest`](./vndetecthumanbodyposerequest.md) for detecting body points in the specified [`CGImage`](../CoreGraphics/cgimage.md).
 
 ```swift
 // Get the CGImage on which to perform requests.
@@ -34,11 +35,11 @@ do {
 }
 ```
 
-> **Note**:  If you have a known region of interest (ROI) in an image, you can specify it using the request’s [`regionOfInterest`](vnimagebasedrequest/regionofinterest.md) property. Setting an ROI reduces the region in the image where the request performs its analysis, which generally results in more accurate pose estimation.
+> **Note**:  If you have a known region of interest (ROI) in an image, you can specify it using the request’s [`regionOfInterest`](./vnimagebasedrequest/regionofinterest.md) property. Setting an ROI reduces the region in the image where the request performs its analysis, which generally results in more accurate pose estimation.
 
 ##### Process the Results
 
-After the request handler processes the request, it calls the request’s completion closure, passing it the request and any errors that occurred. Retrieve the observations by querying the request object for its [`results`](vnrequest/results.md), which it returns as an array of [`VNHumanBodyPoseObservation`](vnhumanbodyposeobservation.md) objects. The request returns a unique observation for each detected human body pose, with each containing the recognized points and a confidence score indicating the accuracy of the observation.
+After the request handler processes the request, it calls the request’s completion closure, passing it the request and any errors that occurred. Retrieve the observations by querying the request object for its [`results`](./vnrequest/results.md), which it returns as an array of [`VNHumanBodyPoseObservation`](./vnhumanbodyposeobservation.md) objects. The request returns a unique observation for each detected human body pose, with each containing the recognized points and a confidence score indicating the accuracy of the observation.
 
 ```swift
 func bodyPoseHandler(request: VNRequest, error: Error?) {
@@ -54,9 +55,9 @@ func bodyPoseHandler(request: VNRequest, error: Error?) {
 
 ##### Retrieve the Points
 
-Retrieve the points of interest from the observation by calling its [`recognizedPoints(_:)`](vnhumanbodyposeobservation/recognizedpoints(_:).md) method. The argument you pass to this method is a key that identifies all of the points for a particular body region (see [`VNHumanBodyPoseObservation.JointsGroupName`](vnhumanbodyposeobservation/jointsgroupname.md) for supported values). This method returns the recognized points for the region as a dictionary of [`VNRecognizedPoint`](vnrecognizedpoint.md) objects keyed by joint name. Each instance of [`VNRecognizedPoint`](vnrecognizedpoint.md) provides the `X` and `Y` coordinates, in normalized space, and a confidence score for the point. Ignore any recognized points with a [`confidence`](vndetectedpoint/confidence.md) value of 0, because they’re invalid.
+Retrieve the points of interest from the observation by calling its [`recognizedPoints(_:)`](./vnhumanbodyposeobservation/recognizedpoints%28_%29.md) method. The argument you pass to this method is a key that identifies all of the points for a particular body region (see [`VNHumanBodyPoseObservation.JointsGroupName`](./vnhumanbodyposeobservation/jointsgroupname.md) for supported values). This method returns the recognized points for the region as a dictionary of [`VNRecognizedPoint`](./vnrecognizedpoint.md) objects keyed by joint name. Each instance of [`VNRecognizedPoint`](./vnrecognizedpoint.md) provides the `X` and `Y` coordinates, in normalized space, and a confidence score for the point. Ignore any recognized points with a [`confidence`](./vndetectedpoint/confidence.md) value of 0, because they’re invalid.
 
-The following code example retrieves all of the recognized points for the torso and maps them to an array of [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) objects. The example first retrieves the recognized points of the torso by calling [`recognizedPoints(_:)`](vnhumanbodyposeobservation/recognizedpoints(_:).md)with the [`torso`](vnhumanbodyposeobservation/jointsgroupname/torso.md) key. It then iterates over the specific point keys of the torso and retrieves their associated [`VNRecognizedPoint`](vnrecognizedpoint.md) object. Finally, if a point’s [`confidence`](vndetectedpoint/confidence.md) score is greater than 0, it extracts the point’s coordinates as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
+The following code example retrieves all of the recognized points for the torso and maps them to an array of [`CGPoint`](../CoreFoundation/cgpoint.md) objects. The example first retrieves the recognized points of the torso by calling [`recognizedPoints(_:)`](./vnhumanbodyposeobservation/recognizedpoints%28_%29.md)with the [`torso`](./vnhumanbodyposeobservation/jointsgroupname/torso.md) key. It then iterates over the specific point keys of the torso and retrieves their associated [`VNRecognizedPoint`](./vnrecognizedpoint.md) object. Finally, if a point’s [`confidence`](./vndetectedpoint/confidence.md) score is greater than 0, it extracts the point’s coordinates as a [`CGPoint`](../CoreFoundation/cgpoint.md).
 
 ```swift
 func processObservation(_ observation: VNHumanBodyPoseObservation) {
@@ -90,11 +91,11 @@ func processObservation(_ observation: VNHumanBodyPoseObservation) {
 }
 ```
 
-> **Note**:  The points the [`recognizedPoints(_:)`](vnhumanbodyposeobservation/recognizedpoints(_:).md) method returns are in normalized coordinates (0.0 to 1.0), with the origin at the bottom-left. Use the [`VNImagePointForNormalizedPoint(_:_:_:)`](vnimagepointfornormalizedpoint(_:_:_:).md) function to translate the normalized points to the input image coordinates.
+> **Note**:  The points the [`recognizedPoints(_:)`](./vnhumanbodyposeobservation/recognizedpoints%28_%29.md) method returns are in normalized coordinates (0.0 to 1.0), with the origin at the bottom-left. Use the [`VNImagePointForNormalizedPoint(_:_:_:)`](./vnimagepointfornormalizedpoint%28_,_,_%29.md) function to translate the normalized points to the input image coordinates.
 
-For an example of how you can use and visualize recognized body points, see the [`Building a feature-rich app for sports analysis`](building-a-feature-rich-app-for-sports-analysis.md) sample app.
+For an example of how you can use and visualize recognized body points, see the [Building a feature-rich app for sports analysis](./building-a-feature-rich-app-for-sports-analysis.md) sample app.
 
-##### Improve Pose Detection Accuracy
+##### Improve Pose-Detection Accuracy
 
 To achieve the most accurate results from Vision’s human body pose-detection capabilities, consider the following points:
 
@@ -105,27 +106,28 @@ To achieve the most accurate results from Vision’s human body pose-detection c
 
 ## See Also
 
-- [Detecting Hand Poses with Vision](detecting-hand-poses-with-vision.md)
+### Body and hand pose detection
+- [Detecting Hand Poses with Vision](./detecting-hand-poses-with-vision.md)
   Create a virtual drawing app by using Vision’s capability to detect hand poses.
-- [class VNDetectHumanBodyPoseRequest](vndetecthumanbodyposerequest.md)
+- [class VNDetectHumanBodyPoseRequest](./vndetecthumanbodyposerequest.md)
   A request that detects a human body pose.
-- [class VNDetectHumanHandPoseRequest](vndetecthumanhandposerequest.md)
+- [class VNDetectHumanHandPoseRequest](./vndetecthumanhandposerequest.md)
   A request that detects a human hand pose.
-- [class VNRecognizedPointsObservation](vnrecognizedpointsobservation.md)
+- [class VNRecognizedPointsObservation](./vnrecognizedpointsobservation.md)
   An observation that provides the points the analysis recognized.
-- [class VNHumanBodyPoseObservation](vnhumanbodyposeobservation.md)
+- [class VNHumanBodyPoseObservation](./vnhumanbodyposeobservation.md)
   An observation that provides the body points the analysis recognized.
-- [class VNHumanHandPoseObservation](vnhumanhandposeobservation.md)
+- [class VNHumanHandPoseObservation](./vnhumanhandposeobservation.md)
   An observation that provides the hand points the analysis recognized.
-- [class VNPoint](vnpoint.md)
+- [class VNPoint](./vnpoint.md)
   An immutable object that represents a single 2D point in an image.
-- [class VNDetectedPoint](vndetectedpoint.md)
+- [class VNDetectedPoint](./vndetectedpoint.md)
   An object that represents a normalized point in an image, along with a confidence value.
-- [class VNRecognizedPoint](vnrecognizedpoint.md)
+- [class VNRecognizedPoint](./vnrecognizedpoint.md)
   An object that represents a normalized point in an image, along with an identifier label and a confidence value.
-- [struct VNRecognizedPointKey](vnrecognizedpointkey.md)
+- [struct VNRecognizedPointKey](./vnrecognizedpointkey.md)
   The data type for all recognized point keys.
-- [struct VNRecognizedPointGroupKey](vnrecognizedpointgroupkey.md)
+- [struct VNRecognizedPointGroupKey](./vnrecognizedpointgroupkey.md)
   The data type for all recognized-point group keys.
 
 

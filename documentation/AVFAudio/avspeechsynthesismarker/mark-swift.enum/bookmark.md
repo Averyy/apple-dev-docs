@@ -1,7 +1,8 @@
 # AVSpeechSynthesisMarker.Mark.bookmark
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A Speech Synthesis Markup Language (SSML) mark tag.
 
@@ -20,15 +21,20 @@ A Speech Synthesis Markup Language (SSML) mark tag.
 case bookmark
 ```
 
+```c
+AVSpeechSynthesisMarkerMarkBookmark
+```
+
 ## See Also
 
-- [AVSpeechSynthesisMarker.Mark.word](avspeechsynthesismarker/mark-swift.enum/word.md)
+### Identifying marker types
+- [AVSpeechSynthesisMarker.Mark.word](./word.md)
   A type of text that represents a word.
-- [AVSpeechSynthesisMarker.Mark.sentence](avspeechsynthesismarker/mark-swift.enum/sentence.md)
+- [AVSpeechSynthesisMarker.Mark.sentence](./sentence.md)
   A type of text that represents a sentence.
-- [AVSpeechSynthesisMarker.Mark.paragraph](avspeechsynthesismarker/mark-swift.enum/paragraph.md)
+- [AVSpeechSynthesisMarker.Mark.paragraph](./paragraph.md)
   A type of text that represents a paragraph.
-- [AVSpeechSynthesisMarker.Mark.phoneme](avspeechsynthesismarker/mark-swift.enum/phoneme.md)
+- [AVSpeechSynthesisMarker.Mark.phoneme](./phoneme.md)
   A type of text that represents a phoneme.
 
 

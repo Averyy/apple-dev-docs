@@ -1,14 +1,15 @@
 # efi_aurr_reset_log_len
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 uint32_t efi_aurr_reset_log_len;
 ```
 

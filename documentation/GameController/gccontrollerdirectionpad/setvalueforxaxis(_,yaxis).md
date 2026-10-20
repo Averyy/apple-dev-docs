@@ -1,7 +1,8 @@
 # setValueForXAxis(_:yAxis:)
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the input values of a snapshot of a directional pad.
 
@@ -19,9 +20,13 @@ Sets the input values of a snapshot of a directional pad.
 func setValueForXAxis(_ xAxis: Float, yAxis: Float)
 ```
 
+```objc
+- (void) setValueForXAxis:(float) xAxis yAxis:(float) yAxis;
+```
+
 #### Discussion
 
-This method does nothing if the associated controller isn’t a snapshot (its [`isSnapshot`](gccontroller/issnapshot.md) property is [`false`](https://developer.apple.com/documentation/swift/false)`)`. Otherwise, this method sets the value of the direction pad’s buttons as well.
+This method does nothing if the associated controller isn’t a snapshot (its [`isSnapshot`](../gccontroller/issnapshot.md) property is [`false`](../../Swift/false.md)`)`. Otherwise, this method sets the value of the direction pad’s buttons as well.
 
 ## Parameters
 

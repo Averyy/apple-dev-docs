@@ -1,7 +1,8 @@
 # safariViewControllerWillOpenInBrowser(_:)
 
 **Framework**: Safari Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 14.0+
@@ -14,9 +15,14 @@
 optional func safariViewControllerWillOpenInBrowser(_ controller: SFSafariViewController)
 ```
 
+```objc
+- (void) safariViewControllerWillOpenInBrowser:(SFSafariViewController *) controller;
+```
+
 ## See Also
 
-- [func safariViewController(SFSafariViewController, initialLoadDidRedirectTo: URL)](sfsafariviewcontrollerdelegate/safariviewcontroller(_:initialloaddidredirectto:).md)
+### Instance Methods
+- [func safariViewController(SFSafariViewController, initialLoadDidRedirectTo: URL)](./safariviewcontroller%28_,initialloaddidredirectto%29.md)
 
 
 ---

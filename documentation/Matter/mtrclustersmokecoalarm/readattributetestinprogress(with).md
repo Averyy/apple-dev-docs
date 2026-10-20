@@ -1,7 +1,8 @@
 # readAttributeTestInProgress(with:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 func readAttributeTestInProgress(with params: MTRReadParams?) -> [String : Any]?
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) readAttributeTestInProgressWithParams:(MTRReadParams *) params;
 ```
 
 

@@ -1,7 +1,8 @@
 # Get all beta tester ids in a beta group
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get a list of the beta tester resource IDs in a specific beta group.
 
@@ -14,15 +15,33 @@ Get a list of the beta tester resource IDs in a specific beta group.
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+
+### Query Parameters
+
 - `limit` (integer): Number of resources to return.
+
+  **Maximum**: `200`
+
+## Responses
+
+- `200` OK (`BetaGroupBetaTestersLinkagesResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List all builds for a beta group](get-v1-betagroups-_id_-builds.md)
+### Reading Build and Beta Tester Information
+- [List all builds for a beta group](./get-v1-betagroups-_id_-builds.md)
   Get a list of builds associated with a specific beta group.
-- [Get all build ids in a beta group](get-v1-betagroups-_id_-relationships-builds.md)
+- [Get all build ids in a beta group](./get-v1-betagroups-_id_-relationships-builds.md)
   Get a list of build resource IDs in a specific beta group.
-- [List all beta testers in a beta group](get-v1-betagroups-_id_-betatesters.md)
+- [List all beta testers in a beta group](./get-v1-betagroups-_id_-betatesters.md)
   Get a list of beta testers contained in a specific beta group.
 
 

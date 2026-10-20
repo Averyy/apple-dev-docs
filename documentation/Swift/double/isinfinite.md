@@ -1,7 +1,8 @@
 # isInfinite
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the instance is infinite.
 
@@ -26,21 +27,22 @@ For NaN, both `isFinite` and `isInfinite` are false.
 
 ## See Also
 
-- [var isZero: Bool](double/iszero.md)
+### Querying a Double’s State
+- [var isZero: Bool](./iszero.md)
   A Boolean value indicating whether the instance is equal to zero.
-- [var isFinite: Bool](double/isfinite.md)
+- [var isFinite: Bool](./isfinite.md)
   A Boolean value indicating whether this instance is finite.
-- [var isNaN: Bool](double/isnan.md)
+- [var isNaN: Bool](./isnan.md)
   A Boolean value indicating whether the instance is NaN (“not a number”).
-- [var isSignalingNaN: Bool](double/issignalingnan.md)
+- [var isSignalingNaN: Bool](./issignalingnan.md)
   A Boolean value indicating whether the instance is a signaling NaN.
-- [var isNormal: Bool](double/isnormal.md)
+- [var isNormal: Bool](./isnormal.md)
   A Boolean value indicating whether this instance is normal.
-- [var isSubnormal: Bool](double/issubnormal.md)
+- [var isSubnormal: Bool](./issubnormal.md)
   A Boolean value indicating whether the instance is subnormal.
-- [var isCanonical: Bool](double/iscanonical.md)
+- [var isCanonical: Bool](./iscanonical.md)
   A Boolean value indicating whether the instance’s representation is in its canonical form.
-- [var floatingPointClass: FloatingPointClassification](double/floatingpointclass.md)
+- [var floatingPointClass: FloatingPointClassification](./floatingpointclass.md)
   The classification of this value.
 
 

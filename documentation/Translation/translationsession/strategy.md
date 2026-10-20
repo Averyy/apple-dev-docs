@@ -1,7 +1,8 @@
 # TranslationSession.Strategy
 
 **Framework**: Translation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The preferred model to handle translations in your app.
 
@@ -24,15 +25,15 @@ This determines which model your app uses for translating content. The framework
 ## Topics
 
 ### Choosing a translation strategy
-- [static let highFidelity: TranslationSession.Strategy](translationsession/strategy/highfidelity.md)
+- [static let highFidelity: TranslationSession.Strategy](./strategy/highfidelity.md)
   A translation strategy that provides more fluent translations using Apple Intelligence.
-- [static let lowLatency: TranslationSession.Strategy](translationsession/strategy/lowlatency.md)
+- [static let lowLatency: TranslationSession.Strategy](./strategy/lowlatency.md)
   A translation strategy that provides fast translations using traditional models.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../Swift/equatable.md)
 
 
 ---

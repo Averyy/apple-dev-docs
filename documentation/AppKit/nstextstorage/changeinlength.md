@@ -1,7 +1,8 @@
 # changeInLength
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The difference between the current length of the edited range and its length before editing.
 
@@ -14,17 +15,22 @@ The difference between the current length of the edited range and its length bef
 var changeInLength: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger changeInLength;
+```
+
 #### Discussion
 
-This property reflects difference between the current length of the edited range and its length before editing began—that is, before the first call to the [`beginEditing()`](https://developer.apple.com/documentation/foundation/nsmutableattributedstring/beginediting()) method or a single call to the[`edited(_:range:changeInLength:)`](nstextstorage/edited(_:range:changeinlength:).md) method. This difference is accumulated with each call to the [`edited(_:range:changeInLength:)`](nstextstorage/edited(_:range:changeinlength:).md) method, until the changes are finally processed.
+This property reflects difference between the current length of the edited range and its length before editing began—that is, before the first call to the [`beginEditing()`](../../Foundation/nsmutableattributedstring/beginediting%28%29.md) method or a single call to the[`edited(_:range:changeInLength:)`](./edited%28_,range,changeinlength%29.md) method. This difference is accumulated with each call to the [`edited(_:range:changeInLength:)`](./edited%28_,range,changeinlength%29.md) method, until the changes are finally processed.
 
 The text storage object’s delegate and layout managers can use this information to determine the nature of edits in their respective notification methods.
 
 ## See Also
 
-- [var editedMask: NSTextStorageEditActions](nstextstorage/editedmask.md)
+### Determining the nature of changes
+- [var editedMask: NSTextStorageEditActions](./editedmask.md)
   A mask that describes the kinds of edits pending for the text storage object.
-- [var editedRange: NSRange](nstextstorage/editedrange.md)
+- [var editedRange: NSRange](./editedrange.md)
   The range of text that contains changes.
 
 

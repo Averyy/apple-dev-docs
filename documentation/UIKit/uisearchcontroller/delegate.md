@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The search controller’s delegate.
 
@@ -9,7 +10,7 @@ The search controller’s delegate.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ The search controller’s delegate.
 weak var delegate: (any UISearchControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UISearchControllerDelegate> delegate;
+```
+
 #### Discussion
 
 Use the delegate object to receive notifications when the search results controller is presented and dismissed. You might use these notifications to customize the search interface or perform related actions.
 
 ## See Also
 
-- [protocol UISearchControllerDelegate](uisearchcontrollerdelegate.md)
+### Responding to presentation and dismissal
+- [protocol UISearchControllerDelegate](../uisearchcontrollerdelegate.md)
   A set of delegate methods for search controller objects.
 
 

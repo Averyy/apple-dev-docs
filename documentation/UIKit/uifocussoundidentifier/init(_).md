@@ -1,16 +1,17 @@
 # init(_:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an identifier for a focus sound.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ init(_ rawValue: String)
 
 ## See Also
 
-- [init(rawValue: String)](uifocussoundidentifier/init(rawvalue:).md)
+### Initializers
+- [init(rawValue: String)](./init%28rawvalue%29.md)
   Creates an identifier for a focus sound with the specified raw value.
 
 

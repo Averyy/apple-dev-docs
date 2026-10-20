@@ -1,7 +1,8 @@
 # kCGImagePropertyExifVersion
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The EXIF version.
 
@@ -18,6 +19,10 @@ The EXIF version.
 
 ```swift
 let kCGImagePropertyExifVersion: CFString
+```
+
+```c
+extern CFStringRef const kCGImagePropertyExifVersion;
 ```
 
 

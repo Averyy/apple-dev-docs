@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw value of the handle
 
@@ -16,7 +17,8 @@ let rawValue: String
 
 ## See Also
 
-- [init(rawValue: String)](rcshandle/uri/init(rawvalue:).md)
+### Working with raw values
+- [init(rawValue: String)](./init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
 
 

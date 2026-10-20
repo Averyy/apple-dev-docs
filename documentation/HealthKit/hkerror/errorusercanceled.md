@@ -1,7 +1,8 @@
 # errorUserCanceled
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The user canceled the operation.
 
@@ -21,29 +22,30 @@ static var errorUserCanceled: HKError.Code { get }
 
 ## See Also
 
-- [HKError.Code](hkerror/code.md)
+### Accessing errors
+- [HKError.Code](./code.md)
   Error codes returned by HealthKit.
-- [static var noError: HKError.Code](hkerror/noerror.md)
+- [static var noError: HKError.Code](./noerror.md)
   No error occurred.
-- [static var errorHealthDataUnavailable: HKError.Code](hkerror/errorhealthdataunavailable.md)
+- [static var errorHealthDataUnavailable: HKError.Code](./errorhealthdataunavailable.md)
   The user accessed HealthKit on an unsupported device.
-- [static var errorHealthDataRestricted: HKError.Code](hkerror/errorhealthdatarestricted.md)
+- [static var errorHealthDataRestricted: HKError.Code](./errorhealthdatarestricted.md)
   A Mobile Device Management (MDM) profile restricts the use of HealthKit on this device.
-- [static var errorInvalidArgument: HKError.Code](hkerror/errorinvalidargument.md)
+- [static var errorInvalidArgument: HKError.Code](./errorinvalidargument.md)
   The app passed an invalid argument to the HealthKit API.
-- [static var errorAuthorizationDenied: HKError.Code](hkerror/errorauthorizationdenied.md)
+- [static var errorAuthorizationDenied: HKError.Code](./errorauthorizationdenied.md)
   The user hasn’t given the app permission to save data.
-- [static var errorAuthorizationNotDetermined: HKError.Code](hkerror/errorauthorizationnotdetermined.md)
+- [static var errorAuthorizationNotDetermined: HKError.Code](./errorauthorizationnotdetermined.md)
   The app hasn’t yet asked the user for the authorization required to complete the task.
-- [static var errorRequiredAuthorizationDenied: HKError.Code](hkerror/errorrequiredauthorizationdenied.md)
+- [static var errorRequiredAuthorizationDenied: HKError.Code](./errorrequiredauthorizationdenied.md)
   The user hasn’t granted the application authorization to access all the required clinical record types.
-- [static var errorDatabaseInaccessible: HKError.Code](hkerror/errordatabaseinaccessible.md)
+- [static var errorDatabaseInaccessible: HKError.Code](./errordatabaseinaccessible.md)
   The HealthKit data is unavailable because it’s protected and the device is locked.
-- [static var errorAnotherWorkoutSessionStarted: HKError.Code](hkerror/erroranotherworkoutsessionstarted.md)
+- [static var errorAnotherWorkoutSessionStarted: HKError.Code](./erroranotherworkoutsessionstarted.md)
   Another app started a workout session.
-- [static var errorUserExitedWorkoutSession: HKError.Code](hkerror/erroruserexitedworkoutsession.md)
+- [static var errorUserExitedWorkoutSession: HKError.Code](./erroruserexitedworkoutsession.md)
   The user exited your application while a workout session was running.
-- [static var errorNoData: HKError.Code](hkerror/errornodata.md)
+- [static var errorNoData: HKError.Code](./errornodata.md)
   Data is unavailable for the requested query and predicate.
 
 

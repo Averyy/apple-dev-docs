@@ -1,7 +1,8 @@
 # Mirror.AncestorRepresentation.customized(_:)
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Uses the nearest ancestor’s implementation of `customMirror` to create a mirror for that ancestor.
 

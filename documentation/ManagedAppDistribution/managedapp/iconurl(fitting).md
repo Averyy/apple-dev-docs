@@ -1,7 +1,8 @@
 # iconURL(fitting:)
 
 **Framework**: ManagedAppDistribution  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A URL for the icon of the app.
 
@@ -32,15 +33,16 @@ The icon scales to fit the given size.
 
 ## See Also
 
-- [let name: String](managedapp/name.md)
+### Obtaining general information
+- [let name: String](./name.md)
   The app’s localized name.
-- [let subtitle: String?](managedapp/subtitle.md)
+- [let subtitle: String?](./subtitle.md)
   The app’s localized subtitle.
-- [let description: String?](managedapp/description.md)
+- [let description: String?](./description.md)
   The app’s localized description.
-- [let fileSize: Measurement<UnitInformationStorage>?](managedapp/filesize.md)
+- [let fileSize: Measurement<UnitInformationStorage>?](./filesize.md)
   The size of the app in bytes.
-- [func screenshotURLs(fitting: CGSize) -> [URL]](managedapp/screenshoturls(fitting:).md)
+- [func screenshotURLs(fitting: CGSize) -> [URL]](./screenshoturls%28fitting%29.md)
   An array of the app’s screenshot URLs.
 
 

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Observation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance of the observation registrar.
 
@@ -22,7 +23,7 @@ init()
 
 #### Discussion
 
-You don’t need to create an instance of [`ObservationRegistrar`](observationregistrar.md) when using the [`Observable()`](observable().md) macro to indicate observably of a type.
+You don’t need to create an instance of [`ObservationRegistrar`](../observationregistrar.md) when using the [`Observable()`](../observable%28%29.md) macro to indicate observably of a type.
 
 
 ---

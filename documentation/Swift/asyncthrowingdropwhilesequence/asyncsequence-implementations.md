@@ -1,62 +1,63 @@
 # AsyncSequence Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func allSatisfy((Self.Element) async throws -> Bool) async rethrows -> Bool](asyncthrowingdropwhilesequence/allsatisfy(_:).md)
+- [func allSatisfy((Self.Element) async throws -> Bool) async rethrows -> Bool](./allsatisfy%28_%29.md)
   Returns a Boolean value that indicates whether all elements produced by the asynchronous sequence satisfy the given predicate.
-- [func compactMap<ElementOfResult>((Self.Element) async -> ElementOfResult?) -> AsyncCompactMapSequence<Self, ElementOfResult>](asyncthrowingdropwhilesequence/compactmap(_:)-11hbc.md)
+- [func compactMap<ElementOfResult>((Self.Element) async -> ElementOfResult?) -> AsyncCompactMapSequence<Self, ElementOfResult>](./compactmap%28_%29-11hbc.md)
   Creates an asynchronous sequence that maps the given closure over the asynchronous sequence’s elements, omitting results that don’t return a value.
-- [func compactMap<ElementOfResult>((Self.Element) async throws -> ElementOfResult?) -> AsyncThrowingCompactMapSequence<Self, ElementOfResult>](asyncthrowingdropwhilesequence/compactmap(_:)-1pl3p.md)
+- [func compactMap<ElementOfResult>((Self.Element) async throws -> ElementOfResult?) -> AsyncThrowingCompactMapSequence<Self, ElementOfResult>](./compactmap%28_%29-1pl3p.md)
   Creates an asynchronous sequence that maps an error-throwing closure over the base sequence’s elements, omitting results that don’t return a value.
-- [func contains(Self.Element) async rethrows -> Bool](asyncthrowingdropwhilesequence/contains(_:).md)
+- [func contains(Self.Element) async rethrows -> Bool](./contains%28_%29.md)
   Returns a Boolean value that indicates whether the asynchronous sequence contains the given element.
-- [func contains(where: (Self.Element) async throws -> Bool) async rethrows -> Bool](asyncthrowingdropwhilesequence/contains(where:).md)
+- [func contains(where: (Self.Element) async throws -> Bool) async rethrows -> Bool](./contains%28where%29.md)
   Returns a Boolean value that indicates whether the asynchronous sequence contains an element that satisfies the given predicate.
-- [func drop(while: (Self.Element) async -> Bool) -> AsyncDropWhileSequence<Self>](asyncthrowingdropwhilesequence/drop(while:).md)
+- [func drop(while: (Self.Element) async -> Bool) -> AsyncDropWhileSequence<Self>](./drop%28while%29.md)
   Omits elements from the base asynchronous sequence until a given closure returns false, after which it passes through all remaining elements.
-- [func dropFirst(Int) -> AsyncDropFirstSequence<Self>](asyncthrowingdropwhilesequence/dropfirst(_:).md)
+- [func dropFirst(Int) -> AsyncDropFirstSequence<Self>](./dropfirst%28_%29.md)
   Omits a specified number of elements from the base asynchronous sequence, then passes through all remaining elements.
-- [func filter((Self.Element) async -> Bool) -> AsyncFilterSequence<Self>](asyncthrowingdropwhilesequence/filter(_:).md)
+- [func filter((Self.Element) async -> Bool) -> AsyncFilterSequence<Self>](./filter%28_%29.md)
   Creates an asynchronous sequence that contains, in order, the elements of the base sequence that satisfy the given predicate.
-- [func first(where: (Self.Element) async throws -> Bool) async rethrows -> Self.Element?](asyncthrowingdropwhilesequence/first(where:).md)
+- [func first(where: (Self.Element) async throws -> Bool) async rethrows -> Self.Element?](./first%28where%29.md)
   Returns the first element of the sequence that satisfies the given predicate.
-- [func flatMap<SegmentOfResult>((Self.Element) async -> SegmentOfResult) -> AsyncFlatMapSequence<Self, SegmentOfResult>](asyncthrowingdropwhilesequence/flatmap(_:)-1kre6.md)
+- [func flatMap<SegmentOfResult>((Self.Element) async -> SegmentOfResult) -> AsyncFlatMapSequence<Self, SegmentOfResult>](./flatmap%28_%29-1kre6.md)
   Creates an asynchronous sequence that concatenates the results of calling the given transformation with each element of this sequence.
-- [func flatMap<SegmentOfResult>((Self.Element) async -> SegmentOfResult) -> AsyncFlatMapSequence<Self, SegmentOfResult>](asyncthrowingdropwhilesequence/flatmap(_:)-3m83p.md)
+- [func flatMap<SegmentOfResult>((Self.Element) async -> SegmentOfResult) -> AsyncFlatMapSequence<Self, SegmentOfResult>](./flatmap%28_%29-3m83p.md)
   Creates an asynchronous sequence that concatenates the results of calling the given transformation with each element of this sequence.
-- [func flatMap<SegmentOfResult>((Self.Element) async -> SegmentOfResult) -> AsyncFlatMapSequence<Self, SegmentOfResult>](asyncthrowingdropwhilesequence/flatmap(_:)-5gwyv.md)
+- [func flatMap<SegmentOfResult>((Self.Element) async -> SegmentOfResult) -> AsyncFlatMapSequence<Self, SegmentOfResult>](./flatmap%28_%29-5gwyv.md)
   Creates an asynchronous sequence that concatenates the results of calling the given transformation with each element of this sequence.
-- [func flatMap<SegmentOfResult>((Self.Element) async throws -> SegmentOfResult) -> AsyncThrowingFlatMapSequence<Self, SegmentOfResult>](asyncthrowingdropwhilesequence/flatmap(_:)-86tec.md)
+- [func flatMap<SegmentOfResult>((Self.Element) async throws -> SegmentOfResult) -> AsyncThrowingFlatMapSequence<Self, SegmentOfResult>](./flatmap%28_%29-86tec.md)
   Creates an asynchronous sequence that concatenates the results of calling the given error-throwing transformation with each element of this sequence.
-- [func makeAsyncIterator() -> AsyncThrowingDropWhileSequence<Base>.Iterator](asyncthrowingdropwhilesequence/makeasynciterator.md)
+- [func makeAsyncIterator() -> AsyncThrowingDropWhileSequence<Base>.Iterator](./makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces elements of this asynchronous sequence.
-- [func map<Transformed>((Self.Element) async throws -> Transformed) -> AsyncThrowingMapSequence<Self, Transformed>](asyncthrowingdropwhilesequence/map(_:)-2zjn.md)
+- [func map<Transformed>((Self.Element) async throws -> Transformed) -> AsyncThrowingMapSequence<Self, Transformed>](./map%28_%29-2zjn.md)
   Creates an asynchronous sequence that maps the given error-throwing closure over the asynchronous sequence’s elements.
-- [func map<Transformed>((Self.Element) async -> Transformed) -> AsyncMapSequence<Self, Transformed>](asyncthrowingdropwhilesequence/map(_:)-8i9r9.md)
+- [func map<Transformed>((Self.Element) async -> Transformed) -> AsyncMapSequence<Self, Transformed>](./map%28_%29-8i9r9.md)
   Creates an asynchronous sequence that maps the given closure over the asynchronous sequence’s elements.
-- [func max() async rethrows -> Self.Element?](asyncthrowingdropwhilesequence/max.md)
+- [func max() async rethrows -> Self.Element?](./max%28%29.md)
   Returns the maximum element in an asynchronous sequence of comparable elements.
-- [func max(by: (Self.Element, Self.Element) async throws -> Bool) async rethrows -> Self.Element?](asyncthrowingdropwhilesequence/max(by:).md)
+- [func max(by: (Self.Element, Self.Element) async throws -> Bool) async rethrows -> Self.Element?](./max%28by%29.md)
   Returns the maximum element in the asynchronous sequence, using the given predicate as the comparison between elements.
-- [func min() async rethrows -> Self.Element?](asyncthrowingdropwhilesequence/min.md)
+- [func min() async rethrows -> Self.Element?](./min%28%29.md)
   Returns the minimum element in an asynchronous sequence of comparable elements.
-- [func min(by: (Self.Element, Self.Element) async throws -> Bool) async rethrows -> Self.Element?](asyncthrowingdropwhilesequence/min(by:).md)
+- [func min(by: (Self.Element, Self.Element) async throws -> Bool) async rethrows -> Self.Element?](./min%28by%29.md)
   Returns the minimum element in the asynchronous sequence, using the given predicate as the comparison between elements.
-- [func prefix(Int) -> AsyncPrefixSequence<Self>](asyncthrowingdropwhilesequence/prefix(_:).md)
+- [func prefix(Int) -> AsyncPrefixSequence<Self>](./prefix%28_%29.md)
   Returns an asynchronous sequence, up to the specified maximum length, containing the initial elements of the base asynchronous sequence.
-- [func prefix(while: (Self.Element) async -> Bool) rethrows -> AsyncPrefixWhileSequence<Self>](asyncthrowingdropwhilesequence/prefix(while:).md)
+- [func prefix(while: (Self.Element) async -> Bool) rethrows -> AsyncPrefixWhileSequence<Self>](./prefix%28while%29.md)
   Returns an asynchronous sequence, containing the initial, consecutive elements of the base sequence that satisfy the given predicate.
-- [func reduce<Result>(Result, (Result, Self.Element) async throws -> Result) async rethrows -> Result](asyncthrowingdropwhilesequence/reduce(_:_:).md)
+- [func reduce<Result>(Result, (Result, Self.Element) async throws -> Result) async rethrows -> Result](./reduce%28_,_%29.md)
   Returns the result of combining the elements of the asynchronous sequence using the given closure.
-- [func reduce<Result>(into: Result, (inout Result, Self.Element) async throws -> Void) async rethrows -> Result](asyncthrowingdropwhilesequence/reduce(into:_:).md)
+- [func reduce<Result>(into: Result, (inout Result, Self.Element) async throws -> Void) async rethrows -> Result](./reduce%28into,_%29.md)
   Returns the result of combining the elements of the asynchronous sequence using the given closure, given a mutable initial value.
 ### Type Aliases
-- [AsyncThrowingDropWhileSequence.AsyncIterator](asyncthrowingdropwhilesequence/asynciterator.md)
+- [AsyncThrowingDropWhileSequence.AsyncIterator](./asynciterator.md)
   The type of iterator that produces elements of the sequence.
-- [AsyncThrowingDropWhileSequence.Element](asyncthrowingdropwhilesequence/element.md)
+- [AsyncThrowingDropWhileSequence.Element](./element.md)
   The type of element produced by this asynchronous sequence.
 
 

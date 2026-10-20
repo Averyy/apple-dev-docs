@@ -1,7 +1,8 @@
 # stopBrowseForCommissionables()
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func stopBrowseForCommissionables() -> Bool
+```
+
+```objc
+- (BOOL) stopBrowseForCommissionables;
 ```
 
 

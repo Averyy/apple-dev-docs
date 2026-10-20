@@ -1,7 +1,8 @@
 # historyToken
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The persistent history token representing the index state.
 
@@ -10,7 +11,7 @@ The persistent history token representing the index state.
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

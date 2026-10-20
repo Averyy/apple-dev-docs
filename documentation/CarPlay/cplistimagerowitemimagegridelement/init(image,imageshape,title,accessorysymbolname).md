@@ -1,7 +1,8 @@
 # init(image:imageShape:title:accessorySymbolName:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an element that is constituted of an image and an image shape.
 
@@ -14,6 +15,10 @@ Initialize an element that is constituted of an image and an image shape.
 
 ```swift
 init(image: UIImage, imageShape: CPListImageRowItemImageGridElement.Shape, title: String, accessorySymbolName: String?)
+```
+
+```objc
+- (instancetype) initWithImage:(UIImage *) image imageShape:(CPListImageRowItemImageGridElementShape) imageShape title:(NSString *) title accessorySymbolName:(NSString *) accessorySymbolName;
 ```
 
 #### Discussion

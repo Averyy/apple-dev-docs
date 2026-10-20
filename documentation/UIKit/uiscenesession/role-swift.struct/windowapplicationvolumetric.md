@@ -1,7 +1,8 @@
 # windowApplicationVolumetric
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - visionOS 1.0+
@@ -12,9 +13,14 @@
 static let windowApplicationVolumetric: UISceneSession.Role
 ```
 
+```c
+extern UISceneSessionRole const UIWindowSceneSessionRoleVolumetricApplication;
+```
+
 ## See Also
 
-- [static let immersiveSpaceApplication: UISceneSession.Role](uiscenesession/role-swift.struct/immersivespaceapplication.md)
+### Type Properties
+- [static let immersiveSpaceApplication: UISceneSession.Role](./immersivespaceapplication.md)
 
 
 ---

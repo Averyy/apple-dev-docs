@@ -1,7 +1,8 @@
 # NSSharingServicePicker.CollaborationModeRestriction
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Specifies whether a specific type of sharing should be disabled in the share picker, and if so, whether a reason should be provided for the disablement.
 
@@ -14,6 +15,10 @@ Specifies whether a specific type of sharing should be disabled in the share pic
 class CollaborationModeRestriction
 ```
 
+```objc
+@interface NSSharingCollaborationModeRestriction : NSObject
+```
+
 #### Overview
 
 If a reason is provided, the corresponding mode will show up as an option, but an alert explaining why it is disabled will show if it is chosen, and the mode will switch back to the supported one. Optionally, an extra alert button can be provided for a “recovery suggestion”. This can give a user a way to fix whatever is causing this type of sharing to be disabled. If no reason is provided, the corresponding mode will not show up as an option.
@@ -21,40 +26,40 @@ If a reason is provided, the corresponding mode will show up as an option, but a
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](nssharingservicepicker/collaborationmoderestriction/init(coder:).md)
-- [init(disabledMode: NSSharingCollaborationMode)](nssharingservicepicker/collaborationmoderestriction/init(disabledmode:).md)
-- [init(disabledMode: NSSharingCollaborationMode, alertTitle: String, alertMessage: String)](nssharingservicepicker/collaborationmoderestriction/init(disabledmode:alerttitle:alertmessage:).md)
-- [init(disabledMode: NSSharingCollaborationMode, alertTitle: String, alertMessage: String, alertDismissButtonTitle: String)](nssharingservicepicker/collaborationmoderestriction/init(disabledmode:alerttitle:alertmessage:alertdismissbuttontitle:).md)
-- [init(disabledMode: NSSharingCollaborationMode, alertTitle: String, alertMessage: String, alertDismissButtonTitle: String, alertRecoverySuggestionButtonTitle: String, alertRecoverySuggestionButtonLaunch: URL)](nssharingservicepicker/collaborationmoderestriction/init(disabledmode:alerttitle:alertmessage:alertdismissbuttontitle:alertrecoverysuggestionbuttontitle:alertrecoverysuggestionbuttonlaunch:).md)
-- [init(disabledMode: NSSharingCollaborationMode, alertTitle: String, alertMessage: String, alertDismissButtonTitle: String, alertRecoverySuggestionButtonTitle: String, alertRecoverySuggestionButtonLaunchURL: URL)](nssharingservicepicker/collaborationmoderestriction/init(disabledmode:alerttitle:alertmessage:alertdismissbuttontitle:alertrecoverysuggestionbuttontitle:alertrecoverysuggestionbuttonlaunchurl:).md)
+- [init?(coder: NSCoder)](./collaborationmoderestriction/init%28coder%29.md)
+- [init(disabledMode: NSSharingCollaborationMode)](./collaborationmoderestriction/init%28disabledmode%29.md)
+- [init(disabledMode: NSSharingCollaborationMode, alertTitle: String, alertMessage: String)](./collaborationmoderestriction/init%28disabledmode,alerttitle,alertmessage%29.md)
+- [init(disabledMode: NSSharingCollaborationMode, alertTitle: String, alertMessage: String, alertDismissButtonTitle: String)](./collaborationmoderestriction/init%28disabledmode,alerttitle,alertmessage,alertdismissbuttontitle%29.md)
+- [init(disabledMode: NSSharingCollaborationMode, alertTitle: String, alertMessage: String, alertDismissButtonTitle: String, alertRecoverySuggestionButtonTitle: String, alertRecoverySuggestionButtonLaunch: URL)](./collaborationmoderestriction/init%28disabledmode,alerttitle,alertmessage,alertdismissbuttontitle,alertrecoverysuggestionbuttontitle,alertrecoverysuggestionbuttonlaunch%29.md)
+- [init(disabledMode: NSSharingCollaborationMode, alertTitle: String, alertMessage: String, alertDismissButtonTitle: String, alertRecoverySuggestionButtonTitle: String, alertRecoverySuggestionButtonLaunchURL: URL)](./collaborationmoderestriction/init%28disabledmode,alerttitle,alertmessage,alertdismissbuttontitle,alertrecoverysuggestionbuttontitle,alertrecoverysuggestionbuttonlaunchurl%29.md)
 ### Instance Properties
-- [var alertDismissButtonTitle: String?](nssharingservicepicker/collaborationmoderestriction/alertdismissbuttontitle.md)
+- [var alertDismissButtonTitle: String?](./collaborationmoderestriction/alertdismissbuttontitle.md)
   The label on the alert button which will simply confirm that the alert was viewed and dismiss it Defaults to “OK”
-- [var alertMessage: String?](nssharingservicepicker/collaborationmoderestriction/alertmessage.md)
+- [var alertMessage: String?](./collaborationmoderestriction/alertmessage.md)
   The message of the alert if a reason for disabling is provided
-- [var alertRecoverySuggestionButtonLaunchURL: URL?](nssharingservicepicker/collaborationmoderestriction/alertrecoverysuggestionbuttonlaunchurl.md)
+- [var alertRecoverySuggestionButtonLaunchURL: URL?](./collaborationmoderestriction/alertrecoverysuggestionbuttonlaunchurl.md)
   The URL that is opened when the user selects the recovery suggestion, if any
-- [var alertRecoverySuggestionButtonTitle: String?](nssharingservicepicker/collaborationmoderestriction/alertrecoverysuggestionbuttontitle.md)
+- [var alertRecoverySuggestionButtonTitle: String?](./collaborationmoderestriction/alertrecoverysuggestionbuttontitle.md)
   The label on the recovery suggestion button if it is provided
-- [var alertTitle: String?](nssharingservicepicker/collaborationmoderestriction/alerttitle.md)
+- [var alertTitle: String?](./collaborationmoderestriction/alerttitle.md)
   The title of the alert if a reason for disabling is provided
-- [var disabledMode: NSSharingCollaborationMode](nssharingservicepicker/collaborationmoderestriction/disabledmode.md)
+- [var disabledMode: NSSharingCollaborationMode](./collaborationmoderestriction/disabledmode.md)
   The type of sharing which should be disabled
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCoding](../../Foundation/nscoding.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../../Foundation/nssecurecoding.md)
 
 
 ---

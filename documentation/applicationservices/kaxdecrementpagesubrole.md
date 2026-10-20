@@ -1,7 +1,8 @@
 # kAXDecrementPageSubrole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The decrement area in the scroll track of a scroll bar.
 
@@ -12,6 +13,10 @@ The decrement area in the scroll track of a scroll bar.
 
 ```swift
 var kAXDecrementPageSubrole: String { get }
+```
+
+```c
+#define kAXDecrementPageSubrole
 ```
 
 

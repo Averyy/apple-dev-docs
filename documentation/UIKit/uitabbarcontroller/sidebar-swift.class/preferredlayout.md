@@ -1,7 +1,8 @@
 # preferredLayout
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred layout for how the sidebar lays out with the tab bar controller’s content. Default is `.automatic`
 
@@ -17,12 +18,17 @@ The preferred layout for how the sidebar lays out with the tab bar controller’
 var preferredLayout: UITabBarController.Sidebar.Layout { get set }
 ```
 
+```objc
+@property (nonatomic, assign) UITabBarControllerSidebarLayout preferredLayout;
+```
+
 ## See Also
 
-- [var isHidden: Bool](uitabbarcontroller/sidebar-swift.class/ishidden.md)
+### Managing customization
+- [var isHidden: Bool](./ishidden.md)
   Determines if the sidebar is currently hidden.
-- [UITabBarController.Sidebar.Layout](uitabbarcontroller/sidebar-swift.class/layout.md)
-- [func reconfigureItem(for: UITab)](uitabbarcontroller/sidebar-swift.class/reconfigureitem(for:).md)
+- [UITabBarController.Sidebar.Layout](./layout.md)
+- [func reconfigureItem(for: UITab)](./reconfigureitem%28for%29.md)
   Requests the sidebar reconfigure the item representing the specified tab. This method has no effect if the `tab` is not currently displayed in the sidebar.
 
 

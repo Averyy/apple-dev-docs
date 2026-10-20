@@ -1,7 +1,8 @@
 # CGImageDestinationCopyTypeIdentifiers()
 
 **Framework**: Image I/O  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns an array of the uniform type identifiers that are supported for image destinations.
 
@@ -20,13 +21,18 @@ Returns an array of the uniform type identifiers that are supported for image de
 func CGImageDestinationCopyTypeIdentifiers() -> CFArray
 ```
 
+```c
+extern CFArrayRefCGImageDestinationCopyTypeIdentifiers();
+```
+
 #### Return Value
 
-Returns an array of the uniform type identifiers that image destinations support. For a list of system-declared and third-party identifiers, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/uniformtypeidentifiers).
+Returns an array of the uniform type identifiers that image destinations support. For a list of system-declared and third-party identifiers, see [Uniform Type Identifiers](../UniformTypeIdentifiers/UniformTypeIdentifiers.md).
 
 ## See Also
 
-- [func CGImageDestinationGetTypeID() -> CFTypeID](cgimagedestinationgettypeid().md)
+### Getting the Image Types
+- [func CGImageDestinationGetTypeID() -> CFTypeID](./cgimagedestinationgettypeid%28%29.md)
   Returns the unique type identifier of an image destination opaque type.
 
 

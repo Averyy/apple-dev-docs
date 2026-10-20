@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an item to the user’s music library.
 

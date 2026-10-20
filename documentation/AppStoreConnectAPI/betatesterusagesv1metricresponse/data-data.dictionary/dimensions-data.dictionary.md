@@ -1,7 +1,8 @@
 # BetaTesterUsagesV1MetricResponse.Data.Dimensions
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The dimensional breakdown for the beta tester usage metric, organized by app.
 
@@ -10,14 +11,14 @@ The dimensional breakdown for the beta tester usage metric, organized by app.
 
 ## Declaration
 
-```swift
+```
 object BetaTesterUsagesV1MetricResponse.Data.Dimensions
 ```
 
 ## Topics
 
 ### Objects
-- [object BetaTesterUsagesV1MetricResponse.Data.Dimensions.Apps](betatesterusagesv1metricresponse/data-data.dictionary/dimensions-data.dictionary/apps-data.dictionary.md)
+- [object BetaTesterUsagesV1MetricResponse.Data.Dimensions.Apps](./dimensions-data.dictionary/apps-data.dictionary.md)
   The app dimension entries within the beta tester usage metric response.
 
 ## Properties
@@ -26,7 +27,8 @@ object BetaTesterUsagesV1MetricResponse.Data.Dimensions
 
 ## See Also
 
-- [object BetaTesterUsagesV1MetricResponse.Data.DataPoints](betatesterusagesv1metricresponse/data-data.dictionary/datapoints-data.dictionary.md)
+### Objects
+- [object BetaTesterUsagesV1MetricResponse.Data.DataPoints](./datapoints-data.dictionary.md)
   The time-series data points for the beta tester usage metric, each representing a time interval with usage counts.
 
 

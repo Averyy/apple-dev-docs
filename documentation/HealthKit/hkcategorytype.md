@@ -1,7 +1,8 @@
 # HKCategoryType
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A type that identifies samples that contain a value from a small set of possible values.
 
@@ -19,13 +20,17 @@ A type that identifies samples that contain a value from a small set of possible
 class HKCategoryType
 ```
 
+```objc
+@interface HKCategoryType : HKSampleType
+```
+
 ## Mentions
 
-- [Recording and querying menopausal state](recording-and-querying-menopausal-state.md)
+- [Recording and querying menopausal state](./recording-and-querying-menopausal-state.md)
 
 #### Overview
 
-The [`HKCategoryType`](hkcategorytype.md) class is a concrete subclass of the HKObjectType class. To create a category type instance, use the [`init(_:)`](hkcategorytype/init(_:).md) convenience method.  For example, the following code creates a category sample type for handwashing events.
+The [`HKCategoryType`](./hkcategorytype.md) class is a concrete subclass of the HKObjectType class. To create a category type instance, use the [`init(_:)`](./hkcategorytype/init%28_%29.md) convenience method.  For example, the following code creates a category sample type for handwashing events.
 
 ```swift
 let handwashingCategoryType = HKCategoryType(.handwashingEvent)
@@ -37,58 +42,60 @@ Use category types to:
 - Create and share matching category samples.
 - Query for matching category samples.
 
-For a complete list of category types, refer to [`HKCategoryTypeIdentifier`](hkcategorytypeidentifier.md).
+For a complete list of category types, refer to [`HKCategoryTypeIdentifier`](./hkcategorytypeidentifier.md).
 
 ## Topics
 
 ### Creating Category Types
-- [convenience init(HKCategoryTypeIdentifier)](hkcategorytype/init(_:).md)
+- [convenience init(HKCategoryTypeIdentifier)](./hkcategorytype/init%28_%29.md)
   Creates a category type using the provided identifier.
 
 ## Relationships
 
 ### Inherits From
-- [HKSampleType](hksampletype.md)
+- [HKSampleType](./hksampletype.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct HKCategoryTypeIdentifier](hkcategorytypeidentifier.md)
+### Related Documentation
+- [struct HKCategoryTypeIdentifier](./hkcategorytypeidentifier.md)
   Identifiers for creating category types.
-- [class HKCategorySample](hkcategorysample.md)
+- [class HKCategorySample](./hkcategorysample.md)
   A sample with values from a short list of possible values.
-- [class HKCharacteristicType](hkcharacteristictype.md)
+### Object type subclasses
+- [class HKCharacteristicType](./hkcharacteristictype.md)
   A type that represents data that doesn’t typically change over time.
-- [class HKQuantityType](hkquantitytype.md)
+- [class HKQuantityType](./hkquantitytype.md)
   A type that identifies samples that store numerical values.
-- [class HKCorrelationType](hkcorrelationtype.md)
+- [class HKCorrelationType](./hkcorrelationtype.md)
   A type that identifies samples that group multiple subsamples.
-- [class HKActivitySummaryType](hkactivitysummarytype.md)
+- [class HKActivitySummaryType](./hkactivitysummarytype.md)
   A type that identifies activity summary objects.
-- [class HKAudiogramSampleType](hkaudiogramsampletype.md)
+- [class HKAudiogramSampleType](./hkaudiogramsampletype.md)
   A type that identifies samples that contain audiogram data.
-- [class HKElectrocardiogramType](hkelectrocardiogramtype.md)
+- [class HKElectrocardiogramType](./hkelectrocardiogramtype.md)
   A type that identifies samples containing electrocardiogram data.
-- [class HKSeriesType](hkseriestype.md)
+- [class HKSeriesType](./hkseriestype.md)
   A type that indicates the data stored in a series sample.
-- [class HKClinicalType](hkclinicaltype.md)
+- [class HKClinicalType](./hkclinicaltype.md)
   A type that identifies samples that contain clinical record data.
-- [class HKWorkoutType](hkworkouttype.md)
+- [class HKWorkoutType](./hkworkouttype.md)
   A type that identifies samples that store information about a workout.
-- [class HKObjectType](hkobjecttype.md)
+- [class HKObjectType](./hkobjecttype.md)
   An abstract superclass with subclasses that identify a specific type of data for the HealthKit store.
-- [class HKSampleType](hksampletype.md)
+- [class HKSampleType](./hksampletype.md)
   An abstract superclass for all classes that identify a specific type of sample when working with the HealthKit store.
 
 

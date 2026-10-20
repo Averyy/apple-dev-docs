@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that acts as the template’s delegate.
 
@@ -16,13 +17,18 @@ The object that acts as the template’s delegate.
 weak var delegate: (any CPTabBarTemplateDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<CPTabBarTemplateDelegate> delegate;
+```
+
 #### Discussion
 
-The delegate must conform to the [`CPTabBarTemplateDelegate`](cptabbartemplatedelegate.md) protocol.
+The delegate must conform to the [`CPTabBarTemplateDelegate`](../cptabbartemplatedelegate.md) protocol.
 
 ## See Also
 
-- [protocol CPTabBarTemplateDelegate](cptabbartemplatedelegate.md)
+### Managing Tab Bar Interactions
+- [protocol CPTabBarTemplateDelegate](../cptabbartemplatedelegate.md)
   The methods an object implements to act as the delegate for a tab bar template.
 
 

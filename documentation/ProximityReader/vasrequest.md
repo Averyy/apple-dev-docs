@@ -1,7 +1,8 @@
 # VASRequest
 
 **Framework**: ProximityReader  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A request to read a contactless loyalty card and retrieve loyalty program identifiers for the person.
 
@@ -18,39 +19,40 @@ class VASRequest
 
 ## Mentions
 
-- [Accepting loyalty passes from Wallet](accepting-loyalty-passes-from-wallet.md)
+- [Accepting loyalty passes from Wallet](./accepting-loyalty-passes-from-wallet.md)
 
 #### Overview
 
-Create a `VASRequest` object to obtain details from someone’s loyalty card so that you can process associated transactions. After you create this object, pass it to the [`readVAS(_:)`](paymentcardreadersession/readvas(_:).md)or [`readPaymentCard(_:vasRequest:stopOnVASResult:)`](paymentcardreadersession/readpaymentcard(_:vasrequest:stoponvasresult:).md) method of [`PaymentCardReaderSession`](paymentcardreadersession.md).
+Create a `VASRequest` object to obtain details from someone’s loyalty card so that you can process associated transactions. After you create this object, pass it to the [`readVAS(_:)`](./paymentcardreadersession/readvas%28_%29.md)or [`readPaymentCard(_:vasRequest:stopOnVASResult:)`](./paymentcardreadersession/readpaymentcard%28_,vasrequest,stoponvasresult%29.md) method of [`PaymentCardReaderSession`](./paymentcardreadersession.md).
 
 ## Topics
 
 ### Creating a loyalty card request
-- [init(vasMerchants: [VASRequest.Merchant], localizedVASType: String)](vasrequest/init(vasmerchants:localizedvastype:).md)
+- [init(vasMerchants: [VASRequest.Merchant], localizedVASType: String)](./vasrequest/init%28vasmerchants,localizedvastype%29.md)
   Creates a request to read loyalty card service information.
 ### Getting the loyalty card details
-- [let localizedVASType: String](vasrequest/localizedvastype.md)
+- [let localizedVASType: String](./vasrequest/localizedvastype.md)
   The localized name of the loyalty program.
-- [let vasMerchants: [VASRequest.Merchant]](vasrequest/vasmerchants.md)
+- [let vasMerchants: [VASRequest.Merchant]](./vasrequest/vasmerchants.md)
   The list of merchants to match against the user’s Wallet content or loyalty card.
-- [VASRequest.Merchant](vasrequest/merchant.md)
+- [VASRequest.Merchant](./vasrequest/merchant.md)
   The identity of a merchant that offers a loyalty program.
 ### Setting the user interface language
-- [var userInterfaceLanguage: Locale.Language?](vasrequest/userinterfacelanguage.md)
+- [var userInterfaceLanguage: Locale.Language?](./vasrequest/userinterfacelanguage.md)
   The language to use when localizing the user interface.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Accepting loyalty passes from Wallet](accepting-loyalty-passes-from-wallet.md)
+### Loyalty card requests
+- [Accepting loyalty passes from Wallet](./accepting-loyalty-passes-from-wallet.md)
   Set up the necessary components so your app can begin using Tap to Pay on iPhone to read and issue loyalty passes.
-- [struct VASReadResult](vasreadresult.md)
+- [struct VASReadResult](./vasreadresult.md)
   The result of a request to read loyalty card information.
 
 

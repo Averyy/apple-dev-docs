@@ -1,7 +1,8 @@
 # currentActivity
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The activity available for recording progress.
 
@@ -18,19 +19,24 @@ The activity available for recording progress.
 var currentActivity: CLSActivity? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) CLSActivity * currentActivity;
+```
+
 ## Mentions
 
-- [Recording student progress](recording-student-progress.md)
+- [Recording student progress](../recording-student-progress.md)
 
 #### Discussion
 
-You add an activity to a context by calling the [`createNewActivity()`](clscontext/createnewactivity().md) method when a person makes a new attempt at a task. You then use the context’s [`currentActivity`](clscontext/currentactivity.md) property to access the newly created activity. If the context has an existing activity from a previous attempt, it ceases to be available to your app as a result of creating a new one. However, the network still retains its data for reporting purposes.
+You add an activity to a context by calling the [`createNewActivity()`](./createnewactivity%28%29.md) method when a person makes a new attempt at a task. You then use the context’s [`currentActivity`](./currentactivity.md) property to access the newly created activity. If the context has an existing activity from a previous attempt, it ceases to be available to your app as a result of creating a new one. However, the network still retains its data for reporting purposes.
 
-Don’t store a reference to the current activity. Always use the [`currentActivity`](clscontext/currentactivity.md) property to get it. The object returned to you might change from time to time because of network synchronization, even when the underlying task is the same.
+Don’t store a reference to the current activity. Always use the [`currentActivity`](./currentactivity.md) property to get it. The object returned to you might change from time to time because of network synchronization, even when the underlying task is the same.
 
 ## See Also
 
-- [func createNewActivity() -> CLSActivity](clscontext/createnewactivity.md)
+### Creating activities
+- [func createNewActivity() -> CLSActivity](./createnewactivity%28%29.md)
   Creates and returns a new activity instance for the context.
 
 

@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: Assignables  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hashes the essential components of this value by feeding them into the given hasher.
 
@@ -9,7 +10,7 @@ Hashes the essential components of this value by feeding them into the given has
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,7 +24,8 @@ func hash(into hasher: inout Hasher)
 
 ## See Also
 
-- [func encode(to: any Encoder) throws](anyuseridentity/encode(to:).md)
+### Instance Methods
+- [func encode(to: any Encoder) throws](./encode%28to%29.md)
   Encodes this value into the given encoder.
 
 

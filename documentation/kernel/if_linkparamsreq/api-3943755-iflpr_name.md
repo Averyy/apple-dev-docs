@@ -1,14 +1,15 @@
 # iflpr_name
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 char iflpr_name[16];
 ```
 

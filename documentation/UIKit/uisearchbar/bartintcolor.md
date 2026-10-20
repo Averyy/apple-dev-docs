@@ -1,7 +1,8 @@
 # barTintColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tint color to apply to the search bar background.
 
@@ -9,7 +10,7 @@ The tint color to apply to the search bar background.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,25 +19,30 @@ The tint color to apply to the search bar background.
 var barTintColor: UIColor? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIColor * barTintColor;
+```
+
 #### Discussion
 
-This color is made translucent by default unless you set the [`isTranslucent`](uisearchbar/istranslucent.md) property to [`false`](https://developer.apple.com/documentation/swift/false).
+This color is made translucent by default unless you set the [`isTranslucent`](./istranslucent.md) property to [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var isEnabled: Bool](uisearchbar/isenabled.md)
+### Configuring the search bar
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value indicating whether the search bar is in the enabled state.
-- [var searchBarStyle: UISearchBar.Style](uisearchbar/searchbarstyle.md)
+- [var searchBarStyle: UISearchBar.Style](./searchbarstyle.md)
   A search bar style that specifies the search bar’s appearance.
-- [UISearchBar.Style](uisearchbar/style.md)
+- [UISearchBar.Style](./style.md)
   Specifies whether the search bar has a background.
-- [var tintColor: UIColor!](uisearchbar/tintcolor.md)
+- [var tintColor: UIColor!](./tintcolor.md)
   The tint color to apply to key elements in the search bar.
-- [var isTranslucent: Bool](uisearchbar/istranslucent.md)
+- [var isTranslucent: Bool](./istranslucent.md)
   A Boolean value that indicates whether the search bar is translucent (true) or not (false).
-- [var barStyle: UIBarStyle](uisearchbar/barstyle.md)
+- [var barStyle: UIBarStyle](./barstyle.md)
   A bar style that specifies the search bar’s appearance.
-- [enum UIBarStyle](uibarstyle.md)
+- [enum UIBarStyle](../uibarstyle.md)
   Defines the stylistic appearance of different types of views.
 
 

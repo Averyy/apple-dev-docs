@@ -1,7 +1,8 @@
 # sceneBridgingOptions
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The options for which aspects of the window will be managed by this hosting view.
 

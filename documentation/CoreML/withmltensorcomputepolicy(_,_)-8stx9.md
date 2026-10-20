@@ -1,7 +1,8 @@
 # withMLTensorComputePolicy(_:_:)
 
 **Framework**: Core ML  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Calls the given closure within a task-local context using the specified compute policy to influence what compute device tensor operations are executed on.
 
@@ -20,6 +21,12 @@ Calls the given closure within a task-local context using the specified compute 
 func withMLTensorComputePolicy<R>(_ computePolicy: MLComputePolicy, _ body: () async throws -> R) async rethrows -> R
 ```
 
+**Other overloads**:
+
+```swift
+func withMLTensorComputePolicy<Result>(_ computePolicy: MLComputePolicy, _ body: () throws -> Result) rethrows -> Result
+```
+
 #### Return Value
 
 The return value, if any, of the `body` closure.
@@ -31,13 +38,14 @@ The return value, if any, of the `body` closure.
 
 ## See Also
 
-- [class MLComputePlan](mlcomputeplan-1w21n.md)
+### Compute plan
+- [class MLComputePlan](./mlcomputeplan-1w21n.md)
   A class representing the compute plan of a model.
-- [enum MLModelStructure](mlmodelstructure-swift.enum.md)
+- [enum MLModelStructure](./mlmodelstructure-swift.enum.md)
   An enum representing the structure of a model.
-- [struct MLComputePolicy](mlcomputepolicy.md)
+- [struct MLComputePolicy](./mlcomputepolicy.md)
   The compute policy determining what compute device, or compute devices, to execute ML workloads on.
-- [func withMLTensorComputePolicy<Result>(MLComputePolicy, () throws -> Result) rethrows -> Result](withmltensorcomputepolicy(_:_:)-6z33x.md)
+- [func withMLTensorComputePolicy<Result>(MLComputePolicy, () throws -> Result) rethrows -> Result](./withmltensorcomputepolicy%28_,_%29-6z33x.md)
   Calls the given closure within a task-local context using the specified compute policy to influence what compute device tensor operations are executed on.
 
 

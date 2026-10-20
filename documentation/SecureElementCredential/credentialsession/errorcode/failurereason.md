@@ -1,7 +1,8 @@
 # failureReason
 
 **Framework**: SecureElementCredential  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string representation of the error code.
 

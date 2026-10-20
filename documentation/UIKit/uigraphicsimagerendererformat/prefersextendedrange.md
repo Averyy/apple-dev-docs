@@ -1,15 +1,18 @@
 # prefersExtendedRange
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that specifies whether the bitmap context uses extended color.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 13.1+
-- tvOS 10.0+
+- iOS 10.0+ - Deprecated in 12.0
+- iPadOS 10.0+ - Deprecated in 12.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- tvOS 10.0+ - Deprecated in 12.0
+
+> **Deprecated**: Use [`preferredRange`](./preferredrange.md) instead.
 
 ## Declaration
 
@@ -17,21 +20,26 @@ A Boolean value that specifies whether the bitmap context uses extended color.
 var prefersExtendedRange: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL prefersExtendedRange;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the underlying Core Graphics context is configured to support wide color; if [`false`](https://developer.apple.com/documentation/swift/false), the context is not.
+If [`true`](../../Swift/true.md), the underlying Core Graphics context is configured to support wide color; if [`false`](../../Swift/false.md), the context is not.
 
-The default is [`true`](https://developer.apple.com/documentation/swift/true) on devices that natively support wide color, and [`false`](https://developer.apple.com/documentation/swift/false) on those that do not.
+The default is [`true`](../../Swift/true.md) on devices that natively support wide color, and [`false`](../../Swift/false.md) on those that do not.
 
 ## See Also
 
-- [var opaque: Bool](uigraphicsimagerendererformat/opaque.md)
+### Configuring the renderer attributes
+- [var opaque: Bool](./opaque.md)
   A Boolean value that indicates whether the underlying Core Graphics context has an alpha channel.
-- [var scale: CGFloat](uigraphicsimagerendererformat/scale.md)
+- [var scale: CGFloat](./scale.md)
   The display scale of the image renderer context.
-- [var preferredRange: UIGraphicsImageRendererFormat.Range](uigraphicsimagerendererformat/preferredrange.md)
+- [var preferredRange: UIGraphicsImageRendererFormat.Range](./preferredrange.md)
   The preferred color range of the image renderer context.
-- [UIGraphicsImageRendererFormat.Range](uigraphicsimagerendererformat/range.md)
+- [UIGraphicsImageRendererFormat.Range](./range.md)
   Constants that specify the color range of the image renderer context.
 
 

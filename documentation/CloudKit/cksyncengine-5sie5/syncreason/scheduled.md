@@ -1,7 +1,8 @@
 # CKSyncEngine.SyncReason.scheduled
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The sync engine automatically scheduled this sync.
 
@@ -11,7 +12,7 @@ The sync engine automatically scheduled this sync.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ case scheduled
 
 ## See Also
 
-- [CKSyncEngine.SyncReason.manual](cksyncengine-5sie5/syncreason/manual.md)
+### Sync reasons
+- [CKSyncEngine.SyncReason.manual](./manual.md)
   A manual sync operation.
 
 

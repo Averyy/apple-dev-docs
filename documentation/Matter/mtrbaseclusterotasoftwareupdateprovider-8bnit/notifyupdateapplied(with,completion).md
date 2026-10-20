@@ -1,7 +1,8 @@
 # notifyUpdateApplied(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func notifyUpdateApplied(with params: MTROTASoftwareUpdateProviderClusterNotifyUpdateAppliedParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func notifyUpdateApplied(with params: MTROTASoftwareUpdateProviderClusterNotifyUpdateAppliedParams) async throws
+```
+
+```objc
+- (void) notifyUpdateAppliedWithParams:(MTROTASoftwareUpdateProviderClusterNotifyUpdateAppliedParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The index path of the item.
@@ -13,6 +14,10 @@ The index path of the item.
 
 ```swift
 var indexPath: IndexPath { get }
+```
+
+```objc
+@property (readonly) NSIndexPath * indexPath;
 ```
 
 

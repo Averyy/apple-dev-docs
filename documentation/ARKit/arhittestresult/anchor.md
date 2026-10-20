@@ -1,13 +1,16 @@
 # anchor
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The anchor representing the detected surface, if any.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
+- iOS 11.0+ - Deprecated in 14.0
+- iPadOS 11.0+ - Deprecated in 14.0
+
+> **Deprecated**: Use raycasting
 
 ## Declaration
 
@@ -15,15 +18,20 @@ The anchor representing the detected surface, if any.
 var anchor: ARAnchor? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) ARAnchor * anchor;
+```
+
 #### Discussion
 
-Results of the [`featurePoint`](arhittestresult/resulttype/featurepoint.md) type do not include an anchor.
+Results of the [`featurePoint`](./resulttype/featurepoint.md) type do not include an anchor.
 
 ## See Also
 
-- [var type: ARHitTestResult.ResultType](arhittestresult/type.md)
+### Identifying Results
+- [var type: ARHitTestResult.ResultType](./type.md)
   The kind of detected feature the search result represents.
-- [ARHitTestResult.ResultType](arhittestresult/resulttype.md)
+- [ARHitTestResult.ResultType](./resulttype.md)
   Possible types for specifying a hit-test search, or for the result of a hit-test search.
 
 

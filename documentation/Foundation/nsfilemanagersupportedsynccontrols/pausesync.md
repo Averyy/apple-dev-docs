@@ -1,7 +1,8 @@
 # pauseSync
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The file provider supports pausing the sync on the item.
 
@@ -20,9 +21,14 @@ The file provider supports pausing the sync on the item.
 static var pauseSync: NSFileManagerSupportedSyncControls { get }
 ```
 
+```c
+NSFileManagerSupportedSyncControlsPauseSync
+```
+
 ## See Also
 
-- [static var failUploadOnConflict: NSFileManagerSupportedSyncControls](nsfilemanagersupportedsynccontrols/failuploadonconflict.md)
+### Inspecting supported sync controls
+- [static var failUploadOnConflict: NSFileManagerSupportedSyncControls](./failuploadonconflict.md)
   The file provider supports failing an upload if the local and server versions conflict.
 
 

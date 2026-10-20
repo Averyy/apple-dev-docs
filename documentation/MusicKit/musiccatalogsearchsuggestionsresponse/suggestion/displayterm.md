@@ -1,7 +1,8 @@
 # displayTerm
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A term to display to the user to select from.
 
@@ -22,7 +23,7 @@ let displayTerm: String
 
 #### Discussion
 
-Use the [`searchTerm`](musiccatalogsearchsuggestionsresponse/suggestion/searchterm.md) value for the actual search.
+Use the [`searchTerm`](./searchterm.md) value for the actual search.
 
 
 ---

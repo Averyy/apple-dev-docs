@@ -1,7 +1,8 @@
 # DateIntervalFormatter.Style.none
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No information for the date or time. Use this style when you do not want to include date or time information in the resulting string.
 
@@ -20,15 +21,20 @@ No information for the date or time. Use this style when you do not want to incl
 case none
 ```
 
+```c
+NSDateIntervalFormatterNoStyle
+```
+
 ## See Also
 
-- [DateIntervalFormatter.Style.short](dateintervalformatter/style/short.md)
+### Constants
+- [DateIntervalFormatter.Style.short](./short.md)
   An abbreviated date or time format.
-- [DateIntervalFormatter.Style.medium](dateintervalformatter/style/medium.md)
+- [DateIntervalFormatter.Style.medium](./medium.md)
   A medium length date or time format.
-- [DateIntervalFormatter.Style.long](dateintervalformatter/style/long.md)
+- [DateIntervalFormatter.Style.long](./long.md)
   A long length date or time format.
-- [DateIntervalFormatter.Style.full](dateintervalformatter/style/full.md)
+- [DateIntervalFormatter.Style.full](./full.md)
   A fully spelled out date or time format.
 
 

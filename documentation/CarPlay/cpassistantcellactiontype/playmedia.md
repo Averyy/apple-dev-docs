@@ -1,7 +1,8 @@
 # CPAssistantCellActionType.playMedia
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Provides an action that uses Siri to prompt the user for media playback.
 
@@ -16,15 +17,20 @@ Provides an action that uses Siri to prompt the user for media playback.
 case playMedia
 ```
 
+```c
+CPAssistantCellActionTypePlayMedia
+```
+
 #### Discussion
 
-> **Note**:  This action is only available in audio apps that include an Intents Extension capable of handling [`INSearchCallHistoryIntent`](https://developer.apple.com/documentation/intents/insearchcallhistoryintent). For more information, see [`Creating an Intents App Extension`](https://developer.apple.com/documentation/sirikit/creating-an-intents-app-extension).
+> **Note**:  This action is only available in audio apps that include an Intents Extension capable of handling [`INSearchCallHistoryIntent`](https://developer.apple.com/documentation/intents/insearchcallhistoryintent). For more information, see [Creating an Intents App Extension](../../SiriKit/creating-an-intents-app-extension.md).
 
-The system provides the user’s response to your app’s Intents Extension. Your app must respond by searching for the requested media and, if it’s available, start its playback and display a [`CPNowPlayingTemplate`](cpnowplayingtemplate.md).
+The system provides the user’s response to your app’s Intents Extension. Your app must respond by searching for the requested media and, if it’s available, start its playback and display a [`CPNowPlayingTemplate`](../cpnowplayingtemplate.md).
 
 ## See Also
 
-- [CPAssistantCellActionType.startCall](cpassistantcellactiontype/startcall.md)
+### Siri Actions
+- [CPAssistantCellActionType.startCall](./startcall.md)
   Provides an action that uses Siri to prompt the user for a person, group, or business to call.
 
 

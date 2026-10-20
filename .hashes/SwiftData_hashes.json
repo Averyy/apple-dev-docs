@@ -2431,9 +2431,8 @@
       "hash": "9692da0231a295e5839764ea7b24b0a101651c01b9a33c0ecc46814bc1dafe21"
     },
     "https://developer.apple.com/documentation/swiftdata/schema/version-swift.struct/!=(_:_:)": {
-      "etag": "W/\"7fefe6dc15352493c53cd4534dc71497\"",
       "file_path": "documentation/SwiftData/schema/version-swift.struct/noteq(_,_).md",
-      "hash": "d82cfdf51f754a3c2358d35f22d14edaa31768aa860b4c02cd1919499ab45a74"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/swiftdata/schema/version-swift.struct/==(_:_:)": {
       "etag": "\"231d-65d55e61e294c-df\"",
@@ -2586,14 +2585,12 @@
       "hash": "6e703cb8308c2e887f25e4481318164c6a06454adc0c6bd6eee92b77831e8518"
     },
     "https://developer.apple.com/documentation/swiftdata/swiftdataerror/!=(_:_:)": {
-      "etag": "W/\"acd66293bd27a3643b83eaa26b4276ce\"",
       "file_path": "documentation/SwiftData/swiftdataerror/noteq(_,_).md",
-      "hash": "3c6a684a32de3a88e9f98c87564ef43134cc49e0be3f722300dd5cafbbcd328d"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/swiftdata/swiftdataerror/==(_:_:)": {
-      "etag": "W/\"51c1cb8ea8d5ba27441bd01c192834fe\"",
       "file_path": "documentation/SwiftData/swiftdataerror/eqeq(_,_).md",
-      "hash": "53f9256953580f6730e433458ebe543429696a11d9f28085c46c27ed1815be54"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/swiftdata/swiftdataerror/backwardmigration": {
       "etag": "\"1560-65d55e6194b9c-df\"",
@@ -5186,9 +5183,8 @@
       "hash": "9692da0231a295e5839764ea7b24b0a101651c01b9a33c0ecc46814bc1dafe21"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftdata/schema/version-swift.struct/!=(_:_:).json": {
-      "etag": "W/\"7fefe6dc15352493c53cd4534dc71497\"",
       "file_path": "documentation/SwiftData/schema/version-swift.struct/noteq(_,_).md",
-      "hash": "d82cfdf51f754a3c2358d35f22d14edaa31768aa860b4c02cd1919499ab45a74"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftdata/schema/version-swift.struct/...(_:)-1hasx.json": {
       "error": "HTTP 403",
@@ -5361,14 +5357,12 @@
       "hash": "6e703cb8308c2e887f25e4481318164c6a06454adc0c6bd6eee92b77831e8518"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftdata/swiftdataerror/!=(_:_:).json": {
-      "etag": "W/\"acd66293bd27a3643b83eaa26b4276ce\"",
       "file_path": "documentation/SwiftData/swiftdataerror/noteq(_,_).md",
-      "hash": "3c6a684a32de3a88e9f98c87564ef43134cc49e0be3f722300dd5cafbbcd328d"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftdata/swiftdataerror/==(_:_:).json": {
-      "etag": "W/\"51c1cb8ea8d5ba27441bd01c192834fe\"",
       "file_path": "documentation/SwiftData/swiftdataerror/eqeq(_,_).md",
-      "hash": "53f9256953580f6730e433458ebe543429696a11d9f28085c46c27ed1815be54"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftdata/swiftdataerror/backwardmigration.json": {
       "etag": "\"1560-65d55e6194b9c-df\"",
@@ -5492,6 +5486,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 1101
   }
 }

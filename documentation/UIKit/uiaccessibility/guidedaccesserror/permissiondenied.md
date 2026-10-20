@@ -1,7 +1,8 @@
 # permissionDenied
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error that indicates the app isn’t authorized to perform the requested action.
 
@@ -23,9 +24,10 @@ For example, this error might indicate that your app is requesting a configurati
 
 ## See Also
 
-- [static var failed: UIAccessibility.GuidedAccessError.Code](uiaccessibility/guidedaccesserror/failed.md)
+### Accessing error codes
+- [static var failed: UIAccessibility.GuidedAccessError.Code](./failed.md)
   An error that indicates a failure for an unspecified reason.
-- [UIAccessibility.GuidedAccessError.Code](uiaccessibility/guidedaccesserror/code.md)
+- [UIAccessibility.GuidedAccessError.Code](./code.md)
   Error codes for Guided Access.
 
 

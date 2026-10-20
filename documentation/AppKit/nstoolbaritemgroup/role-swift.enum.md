@@ -1,7 +1,8 @@
 # NSToolbarItemGroup.Role
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -15,35 +16,40 @@
 enum Role
 ```
 
+```c
+enum NSToolbarItemGroupRole : NSInteger;
+```
+
 ## Topics
 
 ### Getting role values
-- [NSToolbarItemGroup.Role.automatic](nstoolbaritemgroup/role-swift.enum/automatic.md)
-- [NSToolbarItemGroup.Role.tabs](nstoolbaritemgroup/role-swift.enum/tabs.md)
-- [NSToolbarItemGroup.Role.valueSelection](nstoolbaritemgroup/role-swift.enum/valueselection.md)
+- [NSToolbarItemGroup.Role.automatic](./role-swift.enum/automatic.md)
+- [NSToolbarItemGroup.Role.tabs](./role-swift.enum/tabs.md)
+- [NSToolbarItemGroup.Role.valueSelection](./role-swift.enum/valueselection.md)
 ### Initializers
-- [init?(rawValue: Int)](nstoolbaritemgroup/role-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./role-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var controlRepresentation: NSToolbarItemGroup.ControlRepresentation](nstoolbaritemgroup/controlrepresentation-swift.property.md)
+### Configuring grouped toolbar items
+- [var controlRepresentation: NSToolbarItemGroup.ControlRepresentation](./controlrepresentation-swift.property.md)
   A value that represents how a toolbar displays a grouped toolbar item.
-- [NSToolbarItemGroup.ControlRepresentation](nstoolbaritemgroup/controlrepresentation-swift.enum.md)
-- [var selectionMode: NSToolbarItemGroup.SelectionMode](nstoolbaritemgroup/selectionmode-swift.property.md)
+- [NSToolbarItemGroup.ControlRepresentation](./controlrepresentation-swift.enum.md)
+- [var selectionMode: NSToolbarItemGroup.SelectionMode](./selectionmode-swift.property.md)
   The selection mode of the grouped toolbar item.
-- [NSToolbarItemGroup.SelectionMode](nstoolbaritemgroup/selectionmode-swift.enum.md)
+- [NSToolbarItemGroup.SelectionMode](./selectionmode-swift.enum.md)
   A value that indicates how a grouped toolbar item selects its subitems.
-- [var role: NSToolbarItemGroup.Role](nstoolbaritemgroup/role-swift.property.md)
+- [var role: NSToolbarItemGroup.Role](./role-swift.property.md)
   The semantic role of the item. Defaults to `NSToolbarItemGroupRoleAutomatic`.
 
 

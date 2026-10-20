@@ -1,7 +1,8 @@
 # HKWorkoutRouteQueryDescriptor.Results
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence that emits data about individual locations from a workout route sample.
 
@@ -10,7 +11,7 @@ An asynchronous sequence that emits data about individual locations from a worko
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -22,17 +23,18 @@ struct Results
 ## Topics
 
 ### Creating an Iterator
-- [HKWorkoutRouteQueryDescriptor.Results.Iterator](hkworkoutroutequerydescriptor/results/iterator.md)
+- [HKWorkoutRouteQueryDescriptor.Results.Iterator](./results/iterator.md)
   An iterator for accessing individual locations from the workout route.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
 
 ## See Also
 
-- [func results(for: HKHealthStore) -> HKWorkoutRouteQueryDescriptor.Results](hkworkoutroutequerydescriptor/results(for:).md)
+### Running queries
+- [func results(for: HKHealthStore) -> HKWorkoutRouteQueryDescriptor.Results](./results%28for%29.md)
   Runs a one-shot query that returns an asynchronous sequence of data representing individual locations.
 
 

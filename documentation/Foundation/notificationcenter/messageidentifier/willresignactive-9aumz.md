@@ -1,7 +1,8 @@
 # willResignActive
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var willResignActive: NotificationCenter.BaseMessageIdentifier<NSApplication.WillResignActiveMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSApplication.WillResignActiveMessage>`.
 
 
 ---

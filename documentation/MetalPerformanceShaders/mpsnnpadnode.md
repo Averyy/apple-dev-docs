@@ -1,7 +1,8 @@
 # MPSNNPadNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 12.1+
@@ -17,24 +18,28 @@
 class MPSNNPadNode
 ```
 
+```objc
+@interface MPSNNPadNode : MPSNNFilterNode
+```
+
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, paddingSizeBefore: MPSImageCoordinate, paddingSizeAfter: MPSImageCoordinate, edgeMode: MPSImageEdgeMode)](mpsnnpadnode/init(source:paddingsizebefore:paddingsizeafter:edgemode:).md)
+- [init(source: MPSNNImageNode, paddingSizeBefore: MPSImageCoordinate, paddingSizeAfter: MPSImageCoordinate, edgeMode: MPSImageEdgeMode)](./mpsnnpadnode/init%28source,paddingsizebefore,paddingsizeafter,edgemode%29.md)
 ### Instance Properties
-- [var fillValue: Float](mpsnnpadnode/fillvalue.md)
+- [var fillValue: Float](./mpsnnpadnode/fillvalue.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNNFilterNode](mpsnnfilternode.md)
+- [MPSNNFilterNode](./mpsnnfilternode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

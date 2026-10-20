@@ -1,15 +1,16 @@
 # Macros & Global Variables
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Deprecated global variables
-- [let x: Axis3D](x.md)
+- [let x: Axis3D](./x.md)
   The operation is along the x-axis.
-- [let y: Axis3D](y.md)
+- [let y: Axis3D](./y.md)
   The operation is along the y-axis.
-- [let z: Axis3D](z.md)
+- [let z: Axis3D](./z.md)
   The operation is along the z-axis.
 
 

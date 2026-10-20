@@ -1,7 +1,8 @@
 # PMCGImageCreateWithEPSDataProvider(_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an image that references both the PostScript contents of EPS data and a preview (proxy) image for the data.
 
@@ -14,7 +15,11 @@ Creates an image that references both the PostScript contents of EPS data and a 
 func PMCGImageCreateWithEPSDataProvider(_ epsDataProvider: CGDataProvider?, _ epsPreview: CGImage) -> Unmanaged<CGImage>?
 ```
 
-#### Return_value
+```c
+CGImageRef PMCGImageCreateWithEPSDataProvider(CGDataProviderRef epsDataProvider, CGImageRef epsPreview);
+```
+
+#### Return Value
 
 An image capable of rendering either the EPS content or the proxy image, depending upon the capabilities of the destination printer.
 
@@ -31,7 +36,8 @@ Note that in macOS 10.3 and later, Quartz can convert EPS data into PDF data. Us
 
 ## See Also
 
-- [func PMPrinterWritePostScriptToURL(PMPrinter, PMPrintSettings, PMPageFormat?, CFString?, CFURL, CFURL) -> OSStatus](1459729-pmprinterwritepostscripttourl.md)
+### Printing with PostScript Data
+- [func PMPrinterWritePostScriptToURL(PMPrinter, PMPrintSettings, PMPageFormat?, CFString?, CFURL, CFURL) -> OSStatus](./api-1459729-pmprinterwritepostscripttourl.md)
   Converts an input file of the specified MIME type to printer-ready PostScript for a destination printer.
 
 

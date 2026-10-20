@@ -1,7 +1,8 @@
 # NSPrivacyAccessedAPITypes
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 A list of dictionaries that report the privacy accessed API your app or third-party SDK uses.
 
@@ -14,24 +15,25 @@ A list of dictionaries that report the privacy accessed API your app or third-pa
 - visionOS 1.0+
 - watchOS 10.0+
 
+## Details
+
+- **Name**: `NSPrivacyAccessedAPITypes` (Privacy Accessed API Types)
+- **Type**: array of dictionary 
+
 ## Mentions
 
-- [Describing use of required reason API](describing-use-of-required-reason-api.md)
-
-
-
-**Type**: dictionary 
+- [Describing use of required reason API](../describing-use-of-required-reason-api.md)
 
 #### Overview
 
-For more information, see [`Describing use of required reason API`](describing-use-of-required-reason-api.md).
+For more information, see [Describing use of required reason API](../describing-use-of-required-reason-api.md).
 
 ## Topics
 
 ### Reporting privacy accessed API usage
-- [NSPrivacyAccessedAPIType](app-privacy-configuration/nsprivacyaccessedapitypes/nsprivacyaccessedapitype.md)
+- [NSPrivacyAccessedAPIType](./nsprivacyaccessedapitypes/nsprivacyaccessedapitype.md)
   A string that describes a category of required reason API your app or third-party SDK uses.
-- [NSPrivacyAccessedAPITypeReasons](app-privacy-configuration/nsprivacyaccessedapitypes/nsprivacyaccessedapitypereasons.md)
+- [NSPrivacyAccessedAPITypeReasons](./nsprivacyaccessedapitypes/nsprivacyaccessedapitypereasons.md)
   An array of strings that identifies the reasons your app or third-party SDK uses required reason API.
 
 

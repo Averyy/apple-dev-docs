@@ -1,7 +1,8 @@
 # GKSphereObstacle
 
 **Framework**: GameplayKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A spherical impassable volume to be avoided by agents.
 
@@ -19,42 +20,47 @@ A spherical impassable volume to be avoided by agents.
 class GKSphereObstacle
 ```
 
+```objc
+@interface GKSphereObstacle : GKObstacle
+```
+
 #### Overview
 
-To make agents ([`GKAgent`](gkagent.md) objects) avoid obstacles, create a goal with the [`init(toAvoid:maxPredictionTime:)`](gkgoal/init(toavoid:maxpredictiontime:)-7oslq.md) method. Agents affected by an avoid-obstacles goal will attempt to move such that their radius never overlaps that of a spherical obstacle.
+To make agents ([`GKAgent`](./gkagent.md) objects) avoid obstacles, create a goal with the [`init(toAvoid:maxPredictionTime:)`](./gkgoal/init%28toavoid,maxpredictiontime%29-7oslq.md) method. Agents affected by an avoid-obstacles goal will attempt to move such that their radius never overlaps that of a spherical obstacle.
 
-To learn more about using goals and agents, see [`Agents, Goals, and Behaviors`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/Agent.html#//apple_ref/doc/uid/TP40015172-CH8) in [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
+To learn more about using goals and agents, see [Agents, Goals, and Behaviors](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/Agent.html#//apple_ref/doc/uid/TP40015172-CH8) in [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 ## Topics
 
 ### Creating an Obstacle
-- [init(radius: Float)](gksphereobstacle/init(radius:).md)
+- [init(radius: Float)](./gksphereobstacle/init%28radius%29.md)
   Initializes a spherical obstacle with the specified radius.
 ### Placing an Obstacle
-- [var position: vector_float3](gksphereobstacle/position.md)
+- [var position: vector_float3](./gksphereobstacle/position.md)
   The position of the obstacle.
-- [var radius: Float](gksphereobstacle/radius.md)
+- [var radius: Float](./gksphereobstacle/radius.md)
   The radius of the obstacle.
 
 ## Relationships
 
 ### Inherits From
-- [GKObstacle](gkobstacle.md)
+- [GKObstacle](./gkobstacle.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class GKObstacle](gkobstacle.md)
+### Obstacles
+- [class GKObstacle](./gkobstacle.md)
   The abstract base class for objects representing impassable areas in a game world.
-- [class GKCircleObstacle](gkcircleobstacle.md)
+- [class GKCircleObstacle](./gkcircleobstacle.md)
   A circular impassable area to be avoided by agents.
-- [class GKPolygonObstacle](gkpolygonobstacle.md)
+- [class GKPolygonObstacle](./gkpolygonobstacle.md)
   A polygon-shaped impassable area in a 2D game world.
 
 

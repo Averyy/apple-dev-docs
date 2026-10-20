@@ -1,7 +1,8 @@
 # length
 
 **Framework**: GSS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The length of the key data.
 
@@ -18,11 +19,16 @@ The length of the key data.
 var length: OM_uint32
 ```
 
+```c
+OM_uint32 length;
+```
+
 ## See Also
 
-- [var data: UnsafeMutableRawPointer?](gss_krb5_lucid_key/data.md)
+### Key Members
+- [var data: UnsafeMutableRawPointer?](./data.md)
   The actual key data.
-- [var type: OM_uint32](gss_krb5_lucid_key/type.md)
+- [var type: OM_uint32](./type.md)
   The key encryption type.
 
 

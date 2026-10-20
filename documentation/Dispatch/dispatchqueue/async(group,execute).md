@@ -1,7 +1,8 @@
 # async(group:execute:)
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Schedules a work item asynchronously for execution and associates it with the specified dispatch group.
 
@@ -10,9 +11,9 @@ Schedules a work item asynchronously for execution and associates it with the sp
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
 - macOS 10.10+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -27,11 +28,12 @@ This method adds the work item to the group before scheduling it on the current 
 ## Parameters
 
 - `group`: The dispatch group to associate with the work item. This parameter cannot be `NULL`.
-- `workItem`: The work item containing the task to execute. For information on how to create this work item, see [`DispatchWorkItem`](dispatchworkitem.md).
+- `workItem`: The work item containing the task to execute. For information on how to create this work item, see [`DispatchWorkItem`](../dispatchworkitem.md).
 
 ## See Also
 
-- [func async(group: DispatchGroup?, qos: DispatchQoS, flags: DispatchWorkItemFlags, execute: () -> Void)](dispatchqueue/async(group:qos:flags:execute:).md)
+### Dispatching Work to Groups
+- [func async(group: DispatchGroup?, qos: DispatchQoS, flags: DispatchWorkItemFlags, execute: () -> Void)](./async%28group,qos,flags,execute%29.md)
   Schedules a block asynchronously for execution and optionally associates it with a dispatch group.
 
 

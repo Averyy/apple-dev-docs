@@ -1,7 +1,8 @@
 # isExecuting
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The execution status of the action set.
 
@@ -19,13 +20,18 @@ The execution status of the action set.
 var isExecuting: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isExecuting) BOOL executing;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) while executing, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) while executing, otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var lastExecutionDate: Date?](hmactionset/lastexecutiondate.md)
+### Keeping track of execution
+- [var lastExecutionDate: Date?](./lastexecutiondate.md)
   The last execution date of the action set.
 
 

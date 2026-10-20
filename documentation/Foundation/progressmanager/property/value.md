@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type used for individual values of this property.

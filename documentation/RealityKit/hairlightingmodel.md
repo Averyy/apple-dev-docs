@@ -1,7 +1,8 @@
 # HairLightingModel
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Configuration for RealityKit’s hair lighting model.
 
@@ -21,7 +22,7 @@ struct HairLightingModel
 
 ## Mentions
 
-- [Rendering high-fidelity characters](rendering-high-fidelity-characters.md)
+- [Rendering high-fidelity characters](./rendering-high-fidelity-characters.md)
 
 #### Overview
 
@@ -29,7 +30,7 @@ struct HairLightingModel
 
 To render with the hair lighting model, set a `ShaderGraphMaterial.Program.Descriptor`’s `lightingModel` to `.hair()`:
 
-```None
+```
 let descriptor = ShaderGraphMaterial.Program.Descriptor(shaderGraph: graph, lightingModel: .hair())
 let program = try await ShaderGraphMaterial.Program(descriptor: descriptor)
 ```
@@ -39,23 +40,24 @@ The surface output node in the descriptor’s `ShaderGraph` must produce hair-sh
 ## Topics
 
 ### Initializers
-- [init()](hairlightingmodel/init.md)
+- [init()](./hairlightingmodel/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum LightingModel](lightingmodel.md)
-  The lighting model used by a [`ShaderGraphMaterial.Program`](shadergraphmaterial/program-swift.struct.md).
-- [struct LitLightingModel](litlightingmodel.md)
+### Lighting models
+- [enum LightingModel](./lightingmodel.md)
+  The lighting model used by a [`ShaderGraphMaterial.Program`](./shadergraphmaterial/program-swift.struct.md).
+- [struct LitLightingModel](./litlightingmodel.md)
   Configuration for RealityKit’s physically based lighting model.
-- [struct UnlitLightingModel](unlitlightingmodel.md)
+- [struct UnlitLightingModel](./unlitlightingmodel.md)
   Configuration for an unlit lighting model, which renders without any light interaction.
 
 

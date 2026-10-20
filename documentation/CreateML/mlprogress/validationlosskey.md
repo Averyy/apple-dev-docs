@@ -1,7 +1,8 @@
 # validationLossKey
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key that accesses the validation loss value.
 
@@ -21,11 +22,12 @@ static let validationLossKey: ProgressUserInfoKey
 
 ## See Also
 
-- [static let accuracyKey: ProgressUserInfoKey](mlprogress/accuracykey.md)
+### Accessing assessment metrics
+- [static let accuracyKey: ProgressUserInfoKey](./accuracykey.md)
   The key that accesses the training accuracy value.
-- [static let lossKey: ProgressUserInfoKey](mlprogress/losskey.md)
+- [static let lossKey: ProgressUserInfoKey](./losskey.md)
   The key that accesses the training loss value.
-- [static let validationAccuracyKey: ProgressUserInfoKey](mlprogress/validationaccuracykey.md)
+- [static let validationAccuracyKey: ProgressUserInfoKey](./validationaccuracykey.md)
   The key that accesses the validation accuracy value.
 
 

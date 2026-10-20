@@ -1,7 +1,8 @@
 # text
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text that the text view displays.
 
@@ -9,7 +10,7 @@ The text that the text view displays.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ The text that the text view displays.
 var text: String! { get set }
 ```
 
+```objc
+@property (nonatomic, copy, null_resettable) NSString * text;
+```
+
 #### Discussion
 
-In iOS 6 and later, assigning a new value to this property also replaces the value of the [`attributedText`](uitextview/attributedtext.md) property with the same text, albeit without any inherent style attributes. Instead the text view styles the new string using the [`font`](uitextview/font.md), [`textColor`](uitextview/textcolor.md), and other style-related properties of the class.
+In iOS 6 and later, assigning a new value to this property also replaces the value of the [`attributedText`](./attributedtext.md) property with the same text, albeit without any inherent style attributes. Instead the text view styles the new string using the [`font`](./font.md), [`textColor`](./textcolor.md), and other style-related properties of the class.
 
 ## See Also
 
-- [var attributedText: NSAttributedString!](uitextview/attributedtext.md)
+### Specifying the text content
+- [var attributedText: NSAttributedString!](./attributedtext.md)
   The styled text that the text view displays.
 
 

@@ -1,7 +1,8 @@
 # evaluatePolynomial(usingCoefficients:withVariables:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a double-precision evaluated polynomial using specified coefficients and variables.
 
@@ -11,7 +12,7 @@ Returns a double-precision evaluated polynomial using specified coefficients and
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ static func evaluatePolynomial<U>(usingCoefficients coefficients: [Double], with
 
 ## Mentions
 
-- [Finding an interpolating polynomial using the Vandermonde method](finding-an-interpolating-polynomial-using-the-vandermonde-method.md)
+- [Finding an interpolating polynomial using the Vandermonde method](../finding-an-interpolating-polynomial-using-the-vandermonde-method.md)
 
 #### Discussion
 
@@ -48,9 +49,11 @@ For example, the following code evaluates the polynomial with the coefficients `
 
 ## See Also
 
-- [vDSP_vpoly](vdsp_vpoly.md)
+### Related Documentation
+- [vDSP_vpoly](../vdsp_vpoly.md)
   Evaluates a single-precision polynomial using specified coefficients, variables, and strides.
-- [static func evaluatePolynomial<U, V>(usingCoefficients: [Double], withVariables: U, result: inout V)](vdsp/evaluatepolynomial(usingcoefficients:withvariables:result:)-2ncdh.md)
+### Double-precision polynomial evaluation
+- [static func evaluatePolynomial<U, V>(usingCoefficients: [Double], withVariables: U, result: inout V)](./evaluatepolynomial%28usingcoefficients,withvariables,result%29-2ncdh.md)
   Evaluates a double-precision polynomial using specified coefficients and variables.
 
 

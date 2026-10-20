@@ -1,7 +1,8 @@
 # AudioServicesCreateSystemSoundID(_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a system sound object.
 
@@ -19,6 +20,10 @@ Creates a system sound object.
 func AudioServicesCreateSystemSoundID(_ inFileURL: CFURL, _ outSystemSoundID: UnsafeMutablePointer<SystemSoundID>) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioServicesCreateSystemSoundID(CFURLRef inFileURL, SystemSoundID *outSystemSoundID);
+```
+
 #### Return Value
 
 A result code.
@@ -30,13 +35,14 @@ A result code.
 
 ## See Also
 
-- [func AudioServicesDisposeSystemSoundID(SystemSoundID) -> OSStatus](audioservicesdisposesystemsoundid(_:).md)
+### Creating and Disposing of System Sound Objects
+- [func AudioServicesDisposeSystemSoundID(SystemSoundID) -> OSStatus](./audioservicesdisposesystemsoundid%28_%29.md)
   Disposes of a system sound object and associated resources.
-- [typealias SystemSoundID](systemsoundid.md)
+- [typealias SystemSoundID](./systemsoundid.md)
   A system sound object, identified with a sound file you want to play.
-- [System Sounds](1405222-system-sounds.md)
-- [Alert Sound Identifiers](1618202-alert-sound-identifiers.md)
-  Identifiers for alert sounds and alternatives to sounds, for use with the [`AudioServicesPlayAlertSound(_:)`](audioservicesplayalertsound(_:).md) function.
+- [System Sounds](./api-1405222-system-sounds.md)
+- [Alert Sound Identifiers](./api-1618202-alert-sound-identifiers.md)
+  Identifiers for alert sounds and alternatives to sounds, for use with the [`AudioServicesPlayAlertSound(_:)`](./audioservicesplayalertsound%28_%29.md) function.
 
 
 ---

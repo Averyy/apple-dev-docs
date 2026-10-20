@@ -1,7 +1,8 @@
 # IOUSBPlatformCapabilityDescriptor
 
 **Framework**: USBDriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The structure for the platform capability descriptor.
 
@@ -10,7 +11,7 @@ The structure for the platform capability descriptor.
 
 ## Declaration
 
-```swift
+```c
 struct IOUSBPlatformCapabilityDescriptor;
 ```
 
@@ -21,39 +22,40 @@ See USB 3.1 9.6.2.4: Platform Descriptor.
 ## Topics
 
 ### Accessing the Descriptor Properties
-- [bLength](iousbplatformcapabilitydescriptor/blength.md)
-- [bDescriptorType](iousbplatformcapabilitydescriptor/bdescriptortype.md)
-- [bDevCapabilityType](iousbplatformcapabilitydescriptor/bdevcapabilitytype.md)
-- [bReserved](iousbplatformcapabilitydescriptor/breserved.md)
-- [PlatformCapabilityUUID](iousbplatformcapabilitydescriptor/platformcapabilityuuid.md)
+- [bLength](./iousbplatformcapabilitydescriptor/blength.md)
+- [bDescriptorType](./iousbplatformcapabilitydescriptor/bdescriptortype.md)
+- [bDevCapabilityType](./iousbplatformcapabilitydescriptor/bdevcapabilitytype.md)
+- [bReserved](./iousbplatformcapabilitydescriptor/breserved.md)
+- [PlatformCapabilityUUID](./iousbplatformcapabilitydescriptor/platformcapabilityuuid.md)
 
 ## See Also
 
-- [IOUSBBOSDescriptor](iousbbosdescriptor.md)
+### Capability Descriptors
+- [IOUSBBOSDescriptor](./iousbbosdescriptor.md)
   The structure for storing a binary object store (BOS) descriptor.
-- [IOUSBDeviceCapabilityDescriptorHeader](iousbdevicecapabilitydescriptorheader.md)
+- [IOUSBDeviceCapabilityDescriptorHeader](./iousbdevicecapabilitydescriptorheader.md)
   The device capability descriptor header.
-- [IOUSBDeviceCapabilityBillboard](iousbdevicecapabilitybillboard.md)
+- [IOUSBDeviceCapabilityBillboard](./iousbdevicecapabilitybillboard.md)
   The structure for the billboard device capability.
-- [IOUSBDeviceCapabilityBillboardAltConfig](iousbdevicecapabilitybillboardaltconfig.md)
+- [IOUSBDeviceCapabilityBillboardAltConfig](./iousbdevicecapabilitybillboardaltconfig.md)
   The structure for the billboard alternative configuration device capability.
-- [IOUSBDeviceCapabilityBillboardAltConfigCompatibility](iousbdevicecapabilitybillboardaltconfigcompatibility.md)
+- [IOUSBDeviceCapabilityBillboardAltConfigCompatibility](./iousbdevicecapabilitybillboardaltconfigcompatibility.md)
   The structure for the billboard alternative configuration compatibility device capability.
-- [IOUSBDeviceCapabilityBillboardAltMode](iousbdevicecapabilitybillboardaltmode.md)
+- [IOUSBDeviceCapabilityBillboardAltMode](./iousbdevicecapabilitybillboardaltmode.md)
   The structure for the billboard alternative mode device capability.
-- [IOUSBDeviceCapabilityContainerID](iousbdevicecapabilitycontainerid.md)
+- [IOUSBDeviceCapabilityContainerID](./iousbdevicecapabilitycontainerid.md)
   The structure for the container ID device capability.
-- [IOUSBDeviceCapabilitySuperSpeedUSB](iousbdevicecapabilitysuperspeedusb.md)
+- [IOUSBDeviceCapabilitySuperSpeedUSB](./iousbdevicecapabilitysuperspeedusb.md)
   The structure for the super-speed USB device capability.
-- [IOUSBDeviceCapabilitySuperSpeedPlusUSB](iousbdevicecapabilitysuperspeedplususb.md)
+- [IOUSBDeviceCapabilitySuperSpeedPlusUSB](./iousbdevicecapabilitysuperspeedplususb.md)
   The structure for the super-speed plus USB device capability.
-- [IOUSBDeviceCapabilityUSB2Extension](iousbdevicecapabilityusb2extension.md)
+- [IOUSBDeviceCapabilityUSB2Extension](./iousbdevicecapabilityusb2extension.md)
   The structure for the USB 2 extension device capability.
-- [tIOUSBDeviceCapabilityType](tiousbdevicecapabilitytype.md)
+- [tIOUSBDeviceCapabilityType](./tiousbdevicecapabilitytype.md)
   Constants for the device capability types.
-- [SuperSpeed Device Capabilities](superspeed_device_capabilities-enum.md)
+- [SuperSpeed Device Capabilities](./superspeed_device_capabilities-enum.md)
   Constants for configuring super-speed device capabilities.
-- [SuperSpeedPlus Device Capabilities](superspeedplus_device_capabiliti-enum.md)
+- [SuperSpeedPlus Device Capabilities](./superspeedplus_device_capabiliti-enum.md)
   Constants for configuring super-speed plus device capabilities.
 
 

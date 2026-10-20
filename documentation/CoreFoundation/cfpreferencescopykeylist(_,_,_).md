@@ -1,18 +1,19 @@
 # CFPreferencesCopyKeyList(_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Constructs and returns the list of all keys set in the specified domain.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,27 +21,32 @@ Constructs and returns the list of all keys set in the specified domain.
 func CFPreferencesCopyKeyList(_ applicationID: CFString, _ userName: CFString, _ hostName: CFString) -> CFArray?
 ```
 
+```c
+extern CFArrayRefCFPreferencesCopyKeyList(CFStringRef applicationID, CFStringRef userName, CFStringRef hostName);
+```
+
 #### Return Value
 
-The list of keys. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+The list of keys. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## Parameters
 
 - `applicationID`: The ID of the application whose preferences to search. Takes the form of a Java package name, `com.foosoft`.
-- `userName`: [`kCFPreferencesCurrentUser`](kcfpreferencescurrentuser.md) to search the current-user domain, otherwise [`kCFPreferencesAnyUser`](kcfpreferencesanyuser.md) to search the any-user domain.
-- `hostName`: [`kCFPreferencesCurrentHost`](kcfpreferencescurrenthost.md) to search the current-host domain, otherwise [`kCFPreferencesAnyHost`](kcfpreferencesanyhost.md) to search the any-host domain.
+- `userName`: [`kCFPreferencesCurrentUser`](./kcfpreferencescurrentuser.md) to search the current-user domain, otherwise [`kCFPreferencesAnyUser`](./kcfpreferencesanyuser.md) to search the any-user domain.
+- `hostName`: [`kCFPreferencesCurrentHost`](./kcfpreferencescurrenthost.md) to search the current-host domain, otherwise [`kCFPreferencesAnyHost`](./kcfpreferencesanyhost.md) to search the any-host domain.
 
 ## See Also
 
-- [func CFPreferencesCopyAppValue(CFString, CFString) -> CFPropertyList?](cfpreferencescopyappvalue(_:_:).md)
+### Getting Preference Values
+- [func CFPreferencesCopyAppValue(CFString, CFString) -> CFPropertyList?](./cfpreferencescopyappvalue%28_,_%29.md)
   Obtains a preference value for the specified key and application.
-- [func CFPreferencesCopyMultiple(CFArray?, CFString, CFString, CFString) -> CFDictionary](cfpreferencescopymultiple(_:_:_:_:).md)
+- [func CFPreferencesCopyMultiple(CFArray?, CFString, CFString, CFString) -> CFDictionary](./cfpreferencescopymultiple%28_,_,_,_%29.md)
   Returns a dictionary containing preference values for multiple keys.
-- [func CFPreferencesCopyValue(CFString, CFString, CFString, CFString) -> CFPropertyList?](cfpreferencescopyvalue(_:_:_:_:).md)
+- [func CFPreferencesCopyValue(CFString, CFString, CFString, CFString) -> CFPropertyList?](./cfpreferencescopyvalue%28_,_,_,_%29.md)
   Returns a preference value for a given domain.
-- [func CFPreferencesGetAppBooleanValue(CFString, CFString, UnsafeMutablePointer<DarwinBoolean>?) -> Bool](cfpreferencesgetappbooleanvalue(_:_:_:).md)
+- [func CFPreferencesGetAppBooleanValue(CFString, CFString, UnsafeMutablePointer<DarwinBoolean>?) -> Bool](./cfpreferencesgetappbooleanvalue%28_,_,_%29.md)
   Convenience function that directly obtains a Boolean preference value for the specified key.
-- [func CFPreferencesGetAppIntegerValue(CFString, CFString, UnsafeMutablePointer<DarwinBoolean>?) -> CFIndex](cfpreferencesgetappintegervalue(_:_:_:).md)
+- [func CFPreferencesGetAppIntegerValue(CFString, CFString, UnsafeMutablePointer<DarwinBoolean>?) -> CFIndex](./cfpreferencesgetappintegervalue%28_,_,_%29.md)
   Convenience function that directly obtains an integer preference value for the specified key.
 
 

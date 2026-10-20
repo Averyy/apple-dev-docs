@@ -1,18 +1,21 @@
 # requestToContinueInForeground(_:continuation:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A method you call to ask a person to continue an action in the foreground.
 
 **Availability**:
-- iOS 16.4+
-- iPadOS 16.4+
-- Mac Catalyst 16.4+
-- macOS 13.3+
-- tvOS 16.4+
-- visionOS ?+
-- watchOS 9.4+
+- iOS 16.4+ - Deprecated in 26.0
+- iPadOS 16.4+ - Deprecated in 26.0
+- Mac Catalyst 16.4+ - Deprecated in 26.0
+- macOS 13.3+ - Deprecated in 26.0
+- tvOS 16.4+ - Deprecated in 26.0
+- visionOS
+- watchOS 9.4+ - Deprecated in 26.0
+
+> **Deprecated**: Please include '.foreground(.dynamic)' in the 'supportedModes' of your app intent instead
 
 ## Declaration
 

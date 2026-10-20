@@ -1,7 +1,8 @@
 # sec_protocol_options_set_tls_server_name(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 12.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func sec_protocol_options_set_tls_server_name(_ options: sec_protocol_options_t, _ server_name: UnsafePointer<CChar>)
+```
+
+```c
+void sec_protocol_options_set_tls_server_name(sec_protocol_options_t options, const char *server_name);
 ```
 
 #### Discussion

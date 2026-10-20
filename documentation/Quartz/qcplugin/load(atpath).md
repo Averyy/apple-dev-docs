@@ -1,12 +1,15 @@
 # load(atPath:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Loads a Quartz Composer plug-in bundle from the specified path.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Loads a Quartz Composer plug-in bundle from the specified path.
 class func load(atPath path: String!) -> Bool
 ```
 
+```objc
++ (BOOL) loadPlugInAtPath:(NSString *) path;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successful.
+[`true`](../../Swift/true.md) if successful.
 
 #### Discussion
 
@@ -35,7 +42,8 @@ The bundle can contain more than one `QCPlugIn` subclass. After the bundle is lo
 
 ## See Also
 
-- [class func registerClass(AnyClass!)](qcplugin/registerclass(_:).md)
+### Loading Bundle and Custom Patches Manually
+- [class func registerClass(AnyClass!)](./registerclass%28_%29.md)
   Registers a `QCPlugIn` subclass.
 
 

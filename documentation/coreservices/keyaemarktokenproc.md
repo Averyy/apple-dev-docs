@@ -1,9 +1,10 @@
 # keyAEMarkTokenProc
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-Mark token function. See [`OSLGetMarkTokenProcPtr`](oslgetmarktokenprocptr.md).
+Mark token function. See [`OSLGetMarkTokenProcPtr`](./oslgetmarktokenprocptr.md).
 
 **Availability**:
 - Mac Catalyst 13.0+

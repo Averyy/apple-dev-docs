@@ -1,17 +1,18 @@
 # EKEntityMask
 
 **Framework**: EventKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A bitmask of `EKEntityType` for specifying multiple entities at once.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,28 +20,32 @@ A bitmask of `EKEntityType` for specifying multiple entities at once.
 struct EKEntityMask
 ```
 
+```c
+enum EKEntityMask : NSUInteger;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](ekentitymask/init(rawvalue:).md)
+- [init(rawValue: UInt)](./ekentitymask/init%28rawvalue%29.md)
   Creates an entity mask with the specified raw value.
 ### Constants
-- [static var event: EKEntityMask](ekentitymask/event.md)
+- [static var event: EKEntityMask](./ekentitymask/event.md)
   Represents an event.
-- [static var reminder: EKEntityMask](ekentitymask/reminder.md)
+- [static var reminder: EKEntityMask](./ekentitymask/reminder.md)
   Represents a reminder.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

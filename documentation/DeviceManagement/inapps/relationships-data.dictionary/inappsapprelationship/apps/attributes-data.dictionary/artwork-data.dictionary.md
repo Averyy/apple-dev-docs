@@ -1,18 +1,19 @@
 # InApps.Relationships.InAppsAppRelationship.Apps.Attributes.Artwork
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.Artwork
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.Artwork.Gradient](inapps/relationships-data.dictionary/inappsapprelationship/apps/attributes-data.dictionary/artwork-data.dictionary/gradient-data.dictionary.md)
+- [object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.Artwork.Gradient](./artwork-data.dictionary/gradient-data.dictionary.md)
 
 ## Properties
 

@@ -1,12 +1,15 @@
 # SecKeychainSetUserInteractionAllowed(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Enables or disables the user interface for keychain services functions that automatically display a user interface.
 
 **Availability**:
-- macOS 10.2+
+- macOS 10.2+ - Deprecated in 10.10
+
+> **Deprecated**: SecKeychain is deprecated
 
 ## Declaration
 
@@ -14,15 +17,19 @@ Enables or disables the user interface for keychain services functions that auto
 func SecKeychainSetUserInteractionAllowed(_ state: Bool) -> OSStatus
 ```
 
+```c
+OSStatus SecKeychainSetUserInteractionAllowed(Boolean state);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
-Certain keychain services functions that require the presence of a keychain automatically display a *Keychain Not Found* dialog if there is none. Functions that require the keychain to be unlocked automatically display the *Unlock Keychain* dialog. The [`SecKeychainSetUserInteractionAllowed(_:)`](seckeychainsetuserinteractionallowed(_:).md) function enables you to control whether these functions display a user interface. By default, user interaction is permitted.
+Certain keychain services functions that require the presence of a keychain automatically display a *Keychain Not Found* dialog if there is none. Functions that require the keychain to be unlocked automatically display the *Unlock Keychain* dialog. The [`SecKeychainSetUserInteractionAllowed(_:)`](./seckeychainsetuserinteractionallowed%28_%29.md) function enables you to control whether these functions display a user interface. By default, user interaction is permitted.
 
-If you are writing an application that must run unattended on a server, you may wish to disable the user interface so that any subsequent keychain calls that normally bring up the unlock UI will instead return immediately with an [`errSecInteractionRequired`](errsecinteractionrequired.md) result). In this case you must programmatically create a keychain or unlock the keychain when necessary.
+If you are writing an application that must run unattended on a server, you may wish to disable the user interface so that any subsequent keychain calls that normally bring up the unlock UI will instead return immediately with an [`errSecInteractionRequired`](./errsecinteractionrequired.md) result). In this case you must programmatically create a keychain or unlock the keychain when necessary.
 
 ##### Special Considerations
 
@@ -30,7 +37,7 @@ If you disable user interaction before calling a Keychain Services function, be 
 
 ## Parameters
 
-- `state`: A flag that indicates whether the keychain services will display a user interface. If you pass [`true`](https://developer.apple.com/documentation/swift/true), user interaction is allowed. This is the default value. If [`false`](https://developer.apple.com/documentation/swift/false), keychain services functions that normally display a user interface will instead return an error.
+- `state`: A flag that indicates whether the keychain services will display a user interface. If you pass [`true`](../Swift/true.md), user interaction is allowed. This is the default value. If [`false`](../Swift/false.md), keychain services functions that normally display a user interface will instead return an error.
 
 
 ---

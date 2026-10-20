@@ -1,7 +1,8 @@
 # ignore(rationale:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a metric with an ignored result, excluded from aggregation.
 
@@ -28,11 +29,12 @@ let ignoredResult = metric.ignore()
 
 ## See Also
 
-- [func passing(rationale: String?) -> Metric](metric/passing(rationale:).md)
+### Producing results
+- [func passing(rationale: String?) -> Metric](./passing%28rationale%29.md)
   Returns a metric with a passing result.
-- [func failing(rationale: String?) -> Metric](metric/failing(rationale:).md)
+- [func failing(rationale: String?) -> Metric](./failing%28rationale%29.md)
   Returns a metric with a failing result.
-- [func scoring(Double, rationale: String?) -> Metric](metric/scoring(_:rationale:).md)
+- [func scoring(Double, rationale: String?) -> Metric](./scoring%28_,rationale%29.md)
   Returns a metric with a numeric result.
 
 

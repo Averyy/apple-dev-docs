@@ -1,14 +1,15 @@
 # gpu_descriptor
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 typedef struct gpu_descriptor {
     ...
 } gpu_descriptor;
@@ -17,8 +18,8 @@ typedef struct gpu_descriptor {
 ## Topics
 
 ### Instance Properties
-- [gpu_id](gpu_descriptor/1478480-gpu_id.md)
-- [gpu_max_domains](gpu_descriptor/1478486-gpu_max_domains.md)
+- [gpu_id](./gpu_descriptor/api-1478480-gpu_id.md)
+- [gpu_max_domains](./gpu_descriptor/api-1478486-gpu_max_domains.md)
 
 
 ---

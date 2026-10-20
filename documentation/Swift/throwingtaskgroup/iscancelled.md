@@ -1,7 +1,8 @@
 # isCancelled
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the group was canceled.
 
@@ -26,15 +27,16 @@ To cancel a group, call the `ThrowingTaskGroup.cancelAll()` method.
 
 If the task that’s currently running this group is canceled, the group is also implicitly canceled, which is also reflected in this property’s value.
 
-##### Interaction with Task Cancellation Shields
+##### Interaction with task cancellation shields
 
 Cancellation may be suppressed by an active task cancellation shield (`withTaskCancellationShield(operation:)-(()->Value)`), which may cause `isCancelled` to return `false` even though the task has been cancelled externally.
 
-> **Note**: `withTaskCancellationShield(operation:)-(()->Value)`
+> **See Also**: `withTaskCancellationShield(operation:)-(()->Value)`
 
 ## See Also
 
-- [func cancelAll()](throwingtaskgroup/cancelall.md)
+### Canceling Tasks
+- [func cancelAll()](./cancelall%28%29.md)
   Cancel all of the remaining tasks in the group.
 
 

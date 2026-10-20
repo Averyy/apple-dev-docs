@@ -1,7 +1,8 @@
 # source
 
 **Framework**: Translation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The language to translate content from.
 
@@ -23,7 +24,8 @@ If left to its default value of `nil`, the session tries to identify the source 
 
 ## See Also
 
-- [var target: Locale.Language?](translationsession/configuration/target.md)
+### Specifying translation languages
+- [var target: Locale.Language?](./target.md)
   The language to translate content into.
 
 

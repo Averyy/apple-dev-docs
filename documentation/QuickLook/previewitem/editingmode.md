@@ -1,7 +1,8 @@
 # editingMode
 
 **Framework**: Quick Look  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The editingMode for the preview item.
 

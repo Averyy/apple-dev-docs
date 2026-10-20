@@ -5,16 +5,16 @@
 ## Topics
 
 ### Constants
-- [var textParserBadParamErr: Int](textparserbadparamerr.md)
-- [var textParserBadParserObjectErr: Int](textparserbadparserobjecterr.md)
-- [var textParserBadTextEncodingErr: Int](textparserbadtextencodingerr.md)
-- [var textParserBadTextLanguageErr: Int](textparserbadtextlanguageerr.md)
-- [var textParserBadTokenValueErr: Int](textparserbadtokenvalueerr.md)
-- [var textParserNoMoreTextErr: Int](textparsernomoretexterr.md)
-- [var textParserNoMoreTokensErr: Int](textparsernomoretokenserr.md)
-- [var textParserNoSuchTokenFoundErr: Int](textparsernosuchtokenfounderr.md)
-- [var textParserObjectNotFoundErr: Int](textparserobjectnotfounderr.md)
-- [var textParserParamErr: Int](textparserparamerr.md)
+- [var textParserBadParamErr: Int](../../textparserbadparamerr.md)
+- [var textParserBadParserObjectErr: Int](../../textparserbadparserobjecterr.md)
+- [var textParserBadTextEncodingErr: Int](../../textparserbadtextencodingerr.md)
+- [var textParserBadTextLanguageErr: Int](../../textparserbadtextlanguageerr.md)
+- [var textParserBadTokenValueErr: Int](../../textparserbadtokenvalueerr.md)
+- [var textParserNoMoreTextErr: Int](../../textparsernomoretexterr.md)
+- [var textParserNoMoreTokensErr: Int](../../textparsernomoretokenserr.md)
+- [var textParserNoSuchTokenFoundErr: Int](../../textparsernosuchtokenfounderr.md)
+- [var textParserObjectNotFoundErr: Int](../../textparserobjectnotfounderr.md)
+- [var textParserParamErr: Int](../../textparserparamerr.md)
 
 
 ---

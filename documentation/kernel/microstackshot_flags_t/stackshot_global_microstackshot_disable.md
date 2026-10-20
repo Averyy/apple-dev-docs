@@ -1,14 +1,15 @@
 # STACKSHOT_GLOBAL_MICROSTACKSHOT_DISABLE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 STACKSHOT_GLOBAL_MICROSTACKSHOT_DISABLE
 ```
 

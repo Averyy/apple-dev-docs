@@ -1,7 +1,8 @@
 # decodeCString(_:as:repairingInvalidCodeUnits:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 8.0+

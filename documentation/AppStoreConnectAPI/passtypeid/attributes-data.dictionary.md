@@ -1,7 +1,8 @@
 # PassTypeId.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The configurable attributes of a pass type identifier, including its identifier string and description.
 
@@ -10,7 +11,7 @@ The configurable attributes of a pass type identifier, including its identifier 
 
 ## Declaration
 
-```swift
+```
 object PassTypeId.Attributes
 ```
 

@@ -1,12 +1,13 @@
 # matchesRecord(_:)
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tests whether or not a record matches a search element.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Tests whether or not a record matches a search element.
 func matchesRecord(_ record: ABRecord!) -> Bool
 ```
 
+```objc
+- (BOOL) matchesRecord:(ABRecord *) record;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the `record` argument satisfies the conditions in the search element; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the `record` argument satisfies the conditions in the search element; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 

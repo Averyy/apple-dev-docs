@@ -1,7 +1,8 @@
 # isActive
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The active state of the constraint.
 
@@ -18,17 +19,22 @@ The active state of the constraint.
 var isActive: Bool { get set }
 ```
 
+```objc
+@property (getter=isActive) BOOL active;
+```
+
 #### Discussion
 
-You can activate or deactivate a constraint by changing this property. Note that only active constraints affect the calculated layout. If you try to activate a constraint whose items have no common ancestor, an exception is thrown. For newly created constraints, the [`isActive`](nslayoutconstraint/isactive.md) property is [`false`](https://developer.apple.com/documentation/swift/false) by default.
+You can activate or deactivate a constraint by changing this property. Note that only active constraints affect the calculated layout. If you try to activate a constraint whose items have no common ancestor, an exception is thrown. For newly created constraints, the [`isActive`](./isactive.md) property is [`false`](../../Swift/false.md) by default.
 
-Activating or deactivating the constraint calls [`addConstraint(_:)`](uiview/addconstraint(_:).md) and [`removeConstraint(_:)`](uiview/removeconstraint(_:).md) on the view that is the closest common ancestor of the items managed by this constraint. Use this property instead of calling [`addConstraint(_:)`](uiview/addconstraint(_:).md) or [`removeConstraint(_:)`](uiview/removeconstraint(_:).md) directly.
+Activating or deactivating the constraint calls [`addConstraint(_:)`](../uiview/addconstraint%28_%29.md) and [`removeConstraint(_:)`](../uiview/removeconstraint%28_%29.md) on the view that is the closest common ancestor of the items managed by this constraint. Use this property instead of calling [`addConstraint(_:)`](../uiview/addconstraint%28_%29.md) or [`removeConstraint(_:)`](../uiview/removeconstraint%28_%29.md) directly.
 
 ## See Also
 
-- [class func activate([NSLayoutConstraint])](nslayoutconstraint/activate(_:).md)
+### Activating and deactivating constraints
+- [class func activate([NSLayoutConstraint])](./activate%28_%29.md)
   Activates each constraint in the specified array.
-- [class func deactivate([NSLayoutConstraint])](nslayoutconstraint/deactivate(_:).md)
+- [class func deactivate([NSLayoutConstraint])](./deactivate%28_%29.md)
   Deactivates each constraint in the specified array.
 
 

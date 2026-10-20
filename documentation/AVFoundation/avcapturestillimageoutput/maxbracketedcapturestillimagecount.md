@@ -1,19 +1,26 @@
 # maxBracketedCaptureStillImageCount
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the maximum number of still images that may be taken in a single bracket.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
+- iOS 8.0+ - Deprecated in 10.0
+- iPadOS 8.0+ - Deprecated in 10.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use AVCapturePhotoOutput maxBracketedCapturePhotoCount instead.
 
 ## Declaration
 
 ```swift
 var maxBracketedCaptureStillImageCount: Int { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSUInteger maxBracketedCaptureStillImageCount;
 ```
 
 #### Discussion
@@ -24,15 +31,17 @@ The maximum number of still images that may be taken in a single bracket depends
 
 ## See Also
 
-- [func captureStillImageAsynchronously(from: AVCaptureConnection, completionHandler: (CMSampleBuffer?, (any Error)?) -> Void)](avcapturestillimageoutput/capturestillimageasynchronously(from:completionhandler:).md)
+### Related Documentation
+- [func captureStillImageAsynchronously(from: AVCaptureConnection, completionHandler: (CMSampleBuffer?, (any Error)?) -> Void)](./capturestillimageasynchronously%28from,completionhandler%29.md)
   Initiates a still image capture and returns immediately.
-- [func captureStillImageBracketAsynchronously(from: AVCaptureConnection, withSettingsArray: [AVCaptureBracketedStillImageSettings], completionHandler: (CMSampleBuffer?, AVCaptureBracketedStillImageSettings?, (any Error)?) -> Void)](avcapturestillimageoutput/capturestillimagebracketasynchronously(from:withsettingsarray:completionhandler:).md)
+### Still image bracketed capture
+- [func captureStillImageBracketAsynchronously(from: AVCaptureConnection, withSettingsArray: [AVCaptureBracketedStillImageSettings], completionHandler: (CMSampleBuffer?, AVCaptureBracketedStillImageSettings?, (any Error)?) -> Void)](./capturestillimagebracketasynchronously%28from,withsettingsarray,completionhandler%29.md)
   Captures a still image bracket.
-- [func prepareToCaptureStillImageBracket(from: AVCaptureConnection, withSettingsArray: [AVCaptureBracketedStillImageSettings], completionHandler: (Bool, (any Error)?) -> Void)](avcapturestillimageoutput/preparetocapturestillimagebracket(from:withsettingsarray:completionhandler:).md)
+- [func prepareToCaptureStillImageBracket(from: AVCaptureConnection, withSettingsArray: [AVCaptureBracketedStillImageSettings], completionHandler: (Bool, (any Error)?) -> Void)](./preparetocapturestillimagebracket%28from,withsettingsarray,completionhandler%29.md)
   Allows the receiver to prepare resources in advance of capturing a still image bracket.
-- [var isLensStabilizationDuringBracketedCaptureSupported: Bool](avcapturestillimageoutput/islensstabilizationduringbracketedcapturesupported.md)
+- [var isLensStabilizationDuringBracketedCaptureSupported: Bool](./islensstabilizationduringbracketedcapturesupported.md)
   A Boolean value that indicates whether the capture output supports lens stabilization across the duration of a bracketed capture.
-- [var isLensStabilizationDuringBracketedCaptureEnabled: Bool](avcapturestillimageoutput/islensstabilizationduringbracketedcaptureenabled.md)
+- [var isLensStabilizationDuringBracketedCaptureEnabled: Bool](./islensstabilizationduringbracketedcaptureenabled.md)
   A Boolean value that specifies whether to stabilize the lens across the duration of a bracketed capture.
 
 

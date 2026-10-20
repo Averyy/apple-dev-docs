@@ -1,7 +1,8 @@
 # JointTransforms.Element
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An individual joint transform in the collection.
 
@@ -11,7 +12,7 @@ An individual joint transform in the collection.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

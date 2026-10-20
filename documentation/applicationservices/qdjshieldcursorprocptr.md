@@ -1,7 +1,8 @@
 # QDJShieldCursorProcPtr
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias QDJShieldCursorProcPtr = (Int16, Int16, Int16, Int16) -> Void
+```
+
+```c
+typedef void (*QDJShieldCursorProcPtr)(short left, short top, short right, short bottom);
 ```
 
 

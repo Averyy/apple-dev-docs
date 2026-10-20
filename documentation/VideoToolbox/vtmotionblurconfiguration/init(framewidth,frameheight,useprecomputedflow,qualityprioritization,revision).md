@@ -1,7 +1,8 @@
 # init(frameWidth:frameHeight:usePrecomputedFlow:qualityPrioritization:revision:)
 
 **Framework**: Video Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new motion blur configuration with specified flow width and height.
 
@@ -15,6 +16,10 @@ Creates a new motion blur configuration with specified flow width and height.
 
 ```swift
 init?(frameWidth: Int, frameHeight: Int, usePrecomputedFlow: Bool, qualityPrioritization: VTMotionBlurConfiguration.QualityPrioritization, revision: VTMotionBlurConfiguration.Revision)
+```
+
+```objc
+- (instancetype) initWithFrameWidth:(NSInteger) frameWidth frameHeight:(NSInteger) frameHeight usePrecomputedFlow:(BOOL) usePrecomputedFlow qualityPrioritization:(VTMotionBlurConfigurationQualityPrioritization) qualityPrioritization revision:(VTMotionBlurConfigurationRevision) revision;
 ```
 
 #### Discussion

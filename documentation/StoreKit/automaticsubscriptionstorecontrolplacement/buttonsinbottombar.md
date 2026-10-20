@@ -1,7 +1,8 @@
 # buttonsInBottomBar
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A hybrid placement that positions subscription controls within the main scroll view, and places auxiliary buttons in the bottom bar.
 
@@ -20,17 +21,18 @@ static var buttonsInBottomBar: AutomaticSubscriptionStoreControlPlacement { get 
 
 ## See Also
 
-- [static var automatic: AutomaticSubscriptionStoreControlPlacement](automaticsubscriptionstorecontrolplacement/automatic.md)
+### Getting automatic placements
+- [static var automatic: AutomaticSubscriptionStoreControlPlacement](./automatic.md)
   A context-appropriate placement that the system determines automatically.
-- [static var bottomBar: AutomaticSubscriptionStoreControlPlacement](automaticsubscriptionstorecontrolplacement/bottombar.md)
+- [static var bottomBar: AutomaticSubscriptionStoreControlPlacement](./bottombar.md)
   A placement that locates the subscription controls in a bar near the bottom of the main scroll view in a subscription store view.
-- [static var scrollView: AutomaticSubscriptionStoreControlPlacement](automaticsubscriptionstorecontrolplacement/scrollview.md)
+- [static var scrollView: AutomaticSubscriptionStoreControlPlacement](./scrollview.md)
   A placement that locates the subscription controls within the main scroll view of a subscription store view.
-- [static var bottom: AutomaticSubscriptionStoreControlPlacement](automaticsubscriptionstorecontrolplacement/bottom.md)
+- [static var bottom: AutomaticSubscriptionStoreControlPlacement](./bottom.md)
   A placement that anchors the subscription controls to the bottom edge of the view.
-- [static var leading: AutomaticSubscriptionStoreControlPlacement](automaticsubscriptionstorecontrolplacement/leading.md)
+- [static var leading: AutomaticSubscriptionStoreControlPlacement](./leading.md)
   A placement that anchors the subscription controls to the leading edge of the view.
-- [static var trailing: AutomaticSubscriptionStoreControlPlacement](automaticsubscriptionstorecontrolplacement/trailing.md)
+- [static var trailing: AutomaticSubscriptionStoreControlPlacement](./trailing.md)
   A placement that anchors the subscription controls to the trailing edge of the view.
 
 

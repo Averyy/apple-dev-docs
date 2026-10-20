@@ -1,7 +1,8 @@
 # nw_ws_version_invalid
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid version.
 
@@ -20,9 +21,14 @@ An invalid version.
 var nw_ws_version_invalid: nw_ws_version_t { get }
 ```
 
+```c
+nw_ws_version_invalid
+```
+
 ## See Also
 
-- [var nw_ws_version_13: nw_ws_version_t](nw_ws_version_13.md)
+### Versions
+- [var nw_ws_version_13: nw_ws_version_t](./nw_ws_version_13.md)
   Version 13 of the WebSocket protocol.
 
 

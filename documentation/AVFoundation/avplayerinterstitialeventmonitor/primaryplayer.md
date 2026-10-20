@@ -1,7 +1,8 @@
 # primaryPlayer
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that plays primary content.
 
@@ -20,9 +21,14 @@ An object that plays primary content.
 weak var primaryPlayer: AVPlayer? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly) AVPlayer * primaryPlayer;
+```
+
 ## See Also
 
-- [var interstitialPlayer: AVQueuePlayer](avplayerinterstitialeventmonitor/interstitialplayer.md)
+### Accessing the players
+- [var interstitialPlayer: AVQueuePlayer](./interstitialplayer.md)
   An object that plays interstitial content.
 
 

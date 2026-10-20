@@ -1,7 +1,8 @@
 # NEOnDemandRuleIgnore
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A VPN On Demand rule that doesn’t change the status of the VPN.
 
@@ -19,6 +20,10 @@ A VPN On Demand rule that doesn’t change the status of the VPN.
 class NEOnDemandRuleIgnore
 ```
 
+```objc
+@interface NEOnDemandRuleIgnore : NEOnDemandRule
+```
+
 #### Overview
 
 When rules of this class match, the VPN connection is not started, and the current status of the VPN connection is left unchanged.
@@ -26,27 +31,28 @@ When rules of this class match, the VPN connection is not started, and the curre
 ## Relationships
 
 ### Inherits From
-- [NEOnDemandRule](neondemandrule.md)
+- [NEOnDemandRule](./neondemandrule.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class NEOnDemandRuleConnect](neondemandruleconnect.md)
+### Settings
+- [class NEOnDemandRuleConnect](./neondemandruleconnect.md)
   A VPN On Demand rule that connects the VPN.
-- [class NEOnDemandRuleDisconnect](neondemandruledisconnect.md)
+- [class NEOnDemandRuleDisconnect](./neondemandruledisconnect.md)
   A VPN On Demand rule that disconnects the VPN.
-- [class NEOnDemandRuleEvaluateConnection](neondemandruleevaluateconnection.md)
+- [class NEOnDemandRuleEvaluateConnection](./neondemandruleevaluateconnection.md)
   A VPN On Demand rule that evaluate the app’s connection to determine whether to run its action.
-- [class NEOnDemandRule](neondemandrule.md)
+- [class NEOnDemandRule](./neondemandrule.md)
   A base class shared by all VPN On Demand rules.
 
 

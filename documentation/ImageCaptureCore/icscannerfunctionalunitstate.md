@@ -1,7 +1,8 @@
 # ICScannerFunctionalUnitState
 
 **Framework**: ImageCaptureCore  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Flags to indicate the state of the scanner functional unit.
 
@@ -14,37 +15,42 @@ Flags to indicate the state of the scanner functional unit.
 enum ICScannerFunctionalUnitState
 ```
 
+```c
+enum ICScannerFunctionalUnitState : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [ICScannerFunctionalUnitState.ready](icscannerfunctionalunitstate/ready.md)
+- [ICScannerFunctionalUnitState.ready](./icscannerfunctionalunitstate/ready.md)
   A flag indicating that the functional unit is ready for operation.
-- [ICScannerFunctionalUnitState.overviewScanInProgress](icscannerfunctionalunitstate/overviewscaninprogress.md)
+- [ICScannerFunctionalUnitState.overviewScanInProgress](./icscannerfunctionalunitstate/overviewscaninprogress.md)
   A flag indicating that the functional unit is performing an overview scan.
-- [ICScannerFunctionalUnitState.scanInProgress](icscannerfunctionalunitstate/scaninprogress.md)
+- [ICScannerFunctionalUnitState.scanInProgress](./icscannerfunctionalunitstate/scaninprogress.md)
   A flag indicating that the functional unit is performing a scan.
 ### Initializers
-- [init?(rawValue: UInt)](icscannerfunctionalunitstate/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./icscannerfunctionalunitstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var availableFunctionalUnitTypes: [NSNumber]](icscannerdevice/availablefunctionalunittypes.md)
+### Selecting a Functional Unit
+- [var availableFunctionalUnitTypes: [NSNumber]](./icscannerdevice/availablefunctionalunittypes.md)
   An array of functional unit types available on this scanner.
-- [var selectedFunctionalUnit: ICScannerFunctionalUnit](icscannerdevice/selectedfunctionalunit.md)
+- [var selectedFunctionalUnit: ICScannerFunctionalUnit](./icscannerdevice/selectedfunctionalunit.md)
   The currently selected functional unit on the scanner.
-- [func requestSelect(ICScannerFunctionalUnitType)](icscannerdevice/requestselect(_:).md)
+- [func requestSelect(ICScannerFunctionalUnitType)](./icscannerdevice/requestselect%28_%29.md)
   Requests to select a functional unit on the scanner.
-- [enum ICScannerFunctionalUnitType](icscannerfunctionalunittype.md)
+- [enum ICScannerFunctionalUnitType](./icscannerfunctionalunittype.md)
   The types of scanner functional units.
 
 

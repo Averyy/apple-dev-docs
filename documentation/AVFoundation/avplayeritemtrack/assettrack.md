@@ -1,7 +1,8 @@
 # assetTrack
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An asset track that provides the media for the player item track.
 
@@ -18,6 +19,10 @@ An asset track that provides the media for the player item track.
 
 ```swift
 var assetTrack: AVAssetTrack? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) AVAssetTrack * assetTrack;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # supportedIdentifiers()
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the identifiers of the animals that the request detects.
 
@@ -19,15 +20,20 @@ Returns the identifiers of the animals that the request detects.
 func supportedIdentifiers() throws -> [VNAnimalIdentifier]
 ```
 
+```objc
+- (NSArray<NSString *> *) supportedIdentifiersAndReturnError:(NSError **) error;
+```
+
 #### Return Value
 
 The animal identifiers.
 
 ## See Also
 
-- [struct VNAnimalIdentifier](vnanimalidentifier.md)
+### Identifying Animals
+- [struct VNAnimalIdentifier](../vnanimalidentifier.md)
   An animal identifier string.
-- [class func knownAnimalIdentifiers(forRevision: Int) throws -> [VNAnimalIdentifier]](vnrecognizeanimalsrequest/knownanimalidentifiers(forrevision:).md)
+- [class func knownAnimalIdentifiers(forRevision: Int) throws -> [VNAnimalIdentifier]](./knownanimalidentifiers%28forrevision%29.md)
   Returns a list of animal identifiers the recognition algorithm supports for the specified revision.
 
 

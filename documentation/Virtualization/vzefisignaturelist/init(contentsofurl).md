@@ -1,7 +1,8 @@
 # init(contentsOfURL:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 27.0+

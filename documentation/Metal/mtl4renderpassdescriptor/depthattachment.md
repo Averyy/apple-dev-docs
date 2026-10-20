@@ -1,7 +1,8 @@
 # depthAttachment
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Accesses state information for a render attachment that stores depth data.
 
@@ -18,6 +19,10 @@ Accesses state information for a render attachment that stores depth data.
 ```swift
 @NSCopying
 var depthAttachment: MTLRenderPassDepthAttachmentDescriptor! { get set }
+```
+
+```objc
+@property (nonatomic, copy, null_resettable) MTLRenderPassDepthAttachmentDescriptor * depthAttachment;
 ```
 
 

@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The corresponding value of the raw type.
 
@@ -11,7 +12,7 @@ The corresponding value of the raw type.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

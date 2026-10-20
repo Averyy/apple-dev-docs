@@ -1,7 +1,8 @@
 # XPC
 
 **Framework**: XPC  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Access a low-level interprocess communication mechanism.
 
@@ -29,51 +30,51 @@ The type of XPC service you build depends on the requirements of the work it per
 | Launch Daemon | One systemwide process that runs at a higher privilege level, as the `root` user. LaunchDaemons can’t initiate connections to user processes but can respond to requests from them. |
 | XPC Service | One process per client of the service, tied to the lifetime of the client. When a client process connects to the service, `launchd` starts a process for the XPC service. When the client process exits, so does the XPC service. You bundle this type of service inside of an app or framework. |
 
-> **Note**:  The LaunchAgent and LaunchDaemon types require special installation and configuration. Prior to macOS 13, apps typically used installation scripts to configure these service types. In macOS 13 and later, the [`Service Management`](https://developer.apple.com/documentation/servicemanagement) framework provides a new structure for packaging and installing these service types.
+> **Note**:  The LaunchAgent and LaunchDaemon types require special installation and configuration. Prior to macOS 13, apps typically used installation scripts to configure these service types. In macOS 13 and later, the [Service Management](../ServiceManagement/ServiceManagement.md) framework provides a new structure for packaging and installing these service types.
 
-You can build an XPC service using C, Swift, or Objective-C. There are both high- and low-level APIs for using XPC. If your project uses the Foundation framework, [`NSXPCConnection`](https://developer.apple.com/documentation/foundation/nsxpcconnection) provides a high-level object-oriented API that enables a transparent remote method dispatch mechanism between processes. Using [`NSXPCConnection`](https://developer.apple.com/documentation/foundation/nsxpcconnection) in the Foundation framework lets you design a well-defined protocol for clients to use. If your project doesn’t or can’t link against Foundation, use the lower-level `libSystem` APIs in the XPC framework.
+You can build an XPC service using C, Swift, or Objective-C. There are both high- and low-level APIs for using XPC. If your project uses the Foundation framework, [`NSXPCConnection`](../Foundation/nsxpcconnection.md) provides a high-level object-oriented API that enables a transparent remote method dispatch mechanism between processes. Using [`NSXPCConnection`](../Foundation/nsxpcconnection.md) in the Foundation framework lets you design a well-defined protocol for clients to use. If your project doesn’t or can’t link against Foundation, use the lower-level `libSystem` APIs in the XPC framework.
 
 ## Topics
 
 ### Essentials
-- [XPC updates](../updates/xpc.md)
+- [XPC updates](../Updates/xpc.md)
   Learn about important changes to XPC.
 ### Interprocess communication
-- [Creating XPC services](creating-xpc-services.md)
+- [Creating XPC services](./creating-xpc-services.md)
   Configure a listener, establish a client session, and exchange messages between processes.
-- [class XPCListener](xpclistener.md)
+- [class XPCListener](./xpclistener.md)
   A type that performs tasks for clients across process boundaries.
-- [class XPCSession](xpcsession.md)
+- [class XPCSession](./xpcsession.md)
   A type that sends messages to a server process.
-- [struct XPCReceivedMessage](xpcreceivedmessage.md)
+- [struct XPCReceivedMessage](./xpcreceivedmessage.md)
   A type that represents a message sent between a session and a listener.
-- [typealias xpc_listener_t](xpc_listener_t.md)
+- [typealias xpc_listener_t](./xpc_listener_t.md)
   A C type that performs tasks for clients across process boundaries.
-- [typealias xpc_session_t](xpc_session_t-10if0.md)
+- [typealias xpc_session_t](./xpc_session_t-10if0.md)
   A C type that sends messages to a server process.
 ### Tasks
-- [XPC activities](xpc-activities.md)
+- [XPC activities](./xpc-activities.md)
   Schedule background activities for the system to execute.
 ### Events
-- [XPC events](xpc-events.md)
+- [XPC events](./xpc-events.md)
   Respond on demand to IOKit events and notifications.
 ### Additional Types
-- [XPC objects](xpc-objects.md)
+- [XPC objects](./xpc-objects.md)
   Encapsulate data in objects that represent primitive types, collections, and more.
-- [Utilities](utilities.md)
+- [Utilities](./utilities.md)
   Browse debugging utilities and constants to use with the XPC APIs.
-- [XPC connections](xpc-connections.md)
+- [XPC connections](./xpc-connections.md)
   Create and manage connections to services using connection-based APIs.
 ### Classes
-- [class OS_xpc_session](os_xpc_session-swift.class.md)
+- [class OS_xpc_session](./os_xpc_session-swift.class.md)
 ### Structures
-- [struct XPCEndpoint](xpcendpoint.md)
+- [struct XPCEndpoint](./xpcendpoint.md)
   A connection in serialized form.
-- [struct XPCLiteralValue](xpcliteralvalue.md)
+- [struct XPCLiteralValue](./xpcliteralvalue.md)
   A type that bridges Swift literal values to XPC objects for use in dictionary literals.
-- [struct XPCPeerRequirement](xpcpeerrequirement.md)
+- [struct XPCPeerRequirement](./xpcpeerrequirement.md)
 ### Type Aliases
-- [typealias xpc_peer_requirement_t](xpc_peer_requirement_t.md)
+- [typealias xpc_peer_requirement_t](./xpc_peer_requirement_t.md)
 
 
 ---

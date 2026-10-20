@@ -1,7 +1,8 @@
 # kIOUSBHostPortTypeExpressCard
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A port containing an expansion card.
 
@@ -10,19 +11,20 @@ A port containing an expansion card.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBHostPortTypeExpressCard
 ```
 
 ## See Also
 
-- [kIOUSBHostPortTypeStandard](tiousbhostporttype/kiousbhostporttypestandard.md)
+### Getting the Port Types
+- [kIOUSBHostPortTypeStandard](./kiousbhostporttypestandard.md)
   A general-purpose USB port.
-- [kIOUSBHostPortTypeCaptive](tiousbhostporttype/kiousbhostporttypecaptive.md)
+- [kIOUSBHostPortTypeCaptive](./kiousbhostporttypecaptive.md)
   A port for which the device cannot be physically disconnected.
-- [kIOUSBHostPortTypeInternal](tiousbhostporttype/kiousbhostporttypeinternal.md)
+- [kIOUSBHostPortTypeInternal](./kiousbhostporttypeinternal.md)
   A port that cannot be physically disconnected from the host machine.
-- [kIOUSBHostPortTypeAccessory](tiousbhostporttype/kiousbhostporttypeaccessory.md)
+- [kIOUSBHostPortTypeAccessory](./kiousbhostporttypeaccessory.md)
   A port for which the device might require additional authentication before a driver can access it.
 
 

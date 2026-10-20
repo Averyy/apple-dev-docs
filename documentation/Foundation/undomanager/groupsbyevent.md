@@ -1,7 +1,8 @@
 # groupsByEvent
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the manager automatically creates undo groups around each pass of the run loop.
 
@@ -20,19 +21,24 @@ A Boolean value that indicates whether the manager automatically creates undo gr
 var groupsByEvent: Bool { get set }
 ```
 
+```objc
+@property BOOL groupsByEvent;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the manager automatically creates undo groups around each pass of the run loop, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the manager automatically creates undo groups around each pass of the run loop, otherwise [`false`](../../Swift/false.md).
 
-The default is [`true`](https://developer.apple.com/documentation/swift/true). If you turn automatic grouping off, you must close groups explicitly before invoking either [`undo()`](undomanager/undo().md) or [`undoNestedGroup()`](undomanager/undonestedgroup().md).
+The default is [`true`](../../Swift/true.md). If you turn automatic grouping off, you must close groups explicitly before invoking either [`undo()`](./undo%28%29.md) or [`undoNestedGroup()`](./undonestedgroup%28%29.md).
 
 ## See Also
 
-- [func beginUndoGrouping()](undomanager/beginundogrouping.md)
+### Creating undo groups
+- [func beginUndoGrouping()](./beginundogrouping%28%29.md)
   Marks the beginning of an undo group.
-- [func endUndoGrouping()](undomanager/endundogrouping.md)
+- [func endUndoGrouping()](./endundogrouping%28%29.md)
   Marks the end of an undo group.
-- [var groupingLevel: Int](undomanager/groupinglevel.md)
+- [var groupingLevel: Int](./groupinglevel.md)
   The number of nested undo groups (or redo groups, if redo is the most recent operation) in the current event loop.
 
 

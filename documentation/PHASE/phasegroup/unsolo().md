@@ -1,7 +1,8 @@
 # unsolo()
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Restores the other groups’ volume.
 
@@ -19,17 +20,22 @@ Restores the other groups’ volume.
 func unsolo()
 ```
 
+```objc
+- (void) unsolo;
+```
+
 ## See Also
 
-- [func mute()](phasegroup/mute.md)
+### Silencing Sounds
+- [func mute()](./mute%28%29.md)
   Silences the group.
-- [func unmute()](phasegroup/unmute.md)
+- [func unmute()](./unmute%28%29.md)
   Restores the group’s volume.
-- [var isMuted: Bool](phasegroup/ismuted.md)
+- [var isMuted: Bool](./ismuted.md)
   A Boolean value that indicates whether the app silences the group.
-- [func solo()](phasegroup/solo.md)
+- [func solo()](./solo%28%29.md)
   Silences all other groups.
-- [var isSoloed: Bool](phasegroup/issoloed.md)
+- [var isSoloed: Bool](./issoloed.md)
   A Boolean value that indicates whether the app silences all groups other than this group.
 
 

@@ -1,21 +1,26 @@
 # CFLocaleLanguageDirection.topToBottom
 
 **Framework**: Core Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 case topToBottom
+```
+
+```c
+kCFLocaleLanguageDirectionTopToBottom
 ```
 
 #### Discussion
@@ -24,10 +29,11 @@ The language direction is from top to bottom.
 
 ## See Also
 
-- [CFLocaleLanguageDirection.unknown](cflocalelanguagedirection/unknown.md)
-- [CFLocaleLanguageDirection.leftToRight](cflocalelanguagedirection/lefttoright.md)
-- [CFLocaleLanguageDirection.rightToLeft](cflocalelanguagedirection/righttoleft.md)
-- [CFLocaleLanguageDirection.bottomToTop](cflocalelanguagedirection/bottomtotop.md)
+### Constants
+- [CFLocaleLanguageDirection.unknown](./unknown.md)
+- [CFLocaleLanguageDirection.leftToRight](./lefttoright.md)
+- [CFLocaleLanguageDirection.rightToLeft](./righttoleft.md)
+- [CFLocaleLanguageDirection.bottomToTop](./bottomtotop.md)
 
 
 ---

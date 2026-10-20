@@ -1,14 +1,15 @@
 # UIAccessibility.ButtonShapesEnabledStatusDidChangeMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
-- tvOS 26.0+
-- visionOS 26.0+
+- iOS 26.0+ - Deprecated in 26.1
+- iPadOS 26.0+ - Deprecated in 26.1
+- Mac Catalyst 26.0+ - Deprecated in 26.1
+- tvOS 26.0+ - Deprecated in 26.1
+- visionOS 26.0+ - Deprecated in 26.1
 
 ## Declaration
 
@@ -19,19 +20,20 @@ struct ButtonShapesEnabledStatusDidChangeMessage
 ## Topics
 
 ### Initializers
-- [init()](uiaccessibility/buttonshapesenabledstatusdidchangemessage/init.md)
+- [init()](./buttonshapesenabledstatusdidchangemessage/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static var buttonShapesEnabled: Bool](uiaccessibility/buttonshapesenabled.md)
+### Deprecated
+- [static var buttonShapesEnabled: Bool](./buttonshapesenabled.md)
   A Boolean value that indicates whether the Button Shapes setting is in an enabled state.
-- [static let buttonShapesEnabledStatusDidChangeNotification: NSNotification.Name](uiaccessibility/buttonshapesenabledstatusdidchangenotification.md)
+- [static let buttonShapesEnabledStatusDidChangeNotification: NSNotification.Name](./buttonshapesenabledstatusdidchangenotification.md)
   A notification that UIKit posts when the system’s Button Shapes setting changes.
 
 

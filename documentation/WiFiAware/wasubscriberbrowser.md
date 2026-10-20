@@ -1,7 +1,8 @@
 # WASubscriberBrowser
 
 **Framework**: Wi-Fi Aware  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The structure that configures a network browser to subscribe to a Wi-Fi Aware service and make outgoing connections to paired devices.
 
@@ -18,7 +19,7 @@ struct WASubscriberBrowser
 
 #### Overview
 
-Devices can subscribe to services provided by other Wi-Fi Aware devices by creating a `NetworkBrowser` object from the [`Network`](https://developer.apple.comhttps://developer.apple.com/documentation/Network) framework, and passing in a `.wifiAware()` instruction indicating the `WASubscribableService` to look for, and the set of `WAPairedDevice` to find it on.
+Devices can subscribe to services provided by other Wi-Fi Aware devices by creating a `NetworkBrowser` object from the [Network](../Network/Network.md) framework, and passing in a `.wifiAware()` instruction indicating the `WASubscribableService` to look for, and the set of `WAPairedDevice` to find it on.
 
 The code below configures the `NetworkBrowser` as a Wi-Fi Aware subscriber by passing in a `.wifiAware()` instruction:
 
@@ -29,33 +30,34 @@ NetworkBrowser(for: .wifiAware( .connecting(to:.selected(devices),  from:service
 ## Topics
 
 ### Configuring a browser
-- [WASubscriberBrowser.Action](wasubscriberbrowser/action.md)
+- [WASubscriberBrowser.Action](./wasubscriberbrowser/action.md)
   The structure that configures the Wi-Fi Aware subscriber operation the network browser performs.
-- [WASubscriberBrowser.Devices](wasubscriberbrowser/devices.md)
+- [WASubscriberBrowser.Devices](./wasubscriberbrowser/devices.md)
   The structure that determines the devices to connect to.
 ### Processing Wi-Fi Aware subscribe results
-- [WASubscriberBrowser.Endpoint](wasubscriberbrowser/endpoint.md)
+- [WASubscriberBrowser.Endpoint](./wasubscriberbrowser/endpoint.md)
   A result for each discovered Wi-Fi Aware device.
 ### Creating browser implementation details
-- [func makeDescriptor() -> NWBrowser.Descriptor](wasubscriberbrowser/makedescriptor.md)
+- [func makeDescriptor() -> NWBrowser.Descriptor](./wasubscriberbrowser/makedescriptor%28%29.md)
   Makes a descriptor that can create a network browser for a Wi-Fi Aware subscribe operation.
-- [func configureParameters(NWParameters?) -> NWParameters](wasubscriberbrowser/configureparameters(_:).md)
+- [func configureParameters(NWParameters?) -> NWParameters](./wasubscriberbrowser/configureparameters%28_%29.md)
   Returns the parameters to use to configure the Wi-Fi Aware subscriber and the subsequent connection.
-- [func makeEndpoint(from: NWBrowser.Result) throws -> WASubscriberBrowser.Endpoint?](wasubscriberbrowser/makeendpoint(from:).md)
+- [func makeEndpoint(from: NWBrowser.Result) throws -> WASubscriberBrowser.Endpoint?](./wasubscriberbrowser/makeendpoint%28from%29.md)
   Creates a connectable Wi-Fi Aware endpoint from a browse result.
 
 ## Relationships
 
 ### Conforms To
-- [BrowserProvider](../network/browserprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BrowserProvider](../Network/browserprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [WASubscriberBrowser.Action](wasubscriberbrowser/action.md)
+### Subscriber
+- [WASubscriberBrowser.Action](./wasubscriberbrowser/action.md)
   The structure that configures the Wi-Fi Aware subscriber operation the network browser performs.
-- [WASubscriberBrowser.Devices](wasubscriberbrowser/devices.md)
+- [WASubscriberBrowser.Devices](./wasubscriberbrowser/devices.md)
   The structure that determines the devices to connect to.
 
 

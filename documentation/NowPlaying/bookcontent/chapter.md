@@ -1,7 +1,8 @@
 # chapter
 
 **Framework**: Now Playing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current chapter information, if applicable.
 

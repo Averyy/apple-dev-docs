@@ -1,7 +1,8 @@
 # pixelFormat
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The way the pixels are arranged; see `k4444YpCbCrA8PixelFormat`.
 
@@ -12,6 +13,10 @@ The way the pixels are arranged; see `k4444YpCbCrA8PixelFormat`.
 
 ```swift
 var pixelFormat: OSType
+```
+
+```c
+OSType pixelFormat;
 ```
 
 

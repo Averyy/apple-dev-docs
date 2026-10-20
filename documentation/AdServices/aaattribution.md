@@ -1,7 +1,8 @@
 # AAAttribution
 
 **Framework**: AdServices  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The parent class that the framework uses to request a token.
 
@@ -18,23 +19,27 @@ The parent class that the framework uses to request a token.
 class AAAttribution
 ```
 
+```objc
+@interface AAAttribution : NSObject
+```
+
 ## Topics
 
 ### Getting a token
-- [class func attributionToken() throws -> String](aaattribution/attributiontoken.md)
+- [class func attributionToken() throws -> String](./aaattribution/attributiontoken%28%29.md)
   Generates a token.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

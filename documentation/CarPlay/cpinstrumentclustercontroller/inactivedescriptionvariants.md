@@ -1,7 +1,8 @@
 # inactiveDescriptionVariants
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.4+
@@ -14,13 +15,18 @@
 var inactiveDescriptionVariants: [String] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<NSString *> * inactiveDescriptionVariants;
+```
+
 ## See Also
 
-- [var attributedInactiveDescriptionVariants: [NSAttributedString]](cpinstrumentclustercontroller/attributedinactivedescriptionvariants.md)
-- [var compassSetting: CPInstrumentClusterSetting](cpinstrumentclustercontroller/compasssetting.md)
-- [var delegate: (any CPInstrumentClusterControllerDelegate)?](cpinstrumentclustercontroller/delegate.md)
-- [var instrumentClusterWindow: UIWindow?](cpinstrumentclustercontroller/instrumentclusterwindow.md)
-- [var speedLimitSetting: CPInstrumentClusterSetting](cpinstrumentclustercontroller/speedlimitsetting.md)
+### Instance Properties
+- [var attributedInactiveDescriptionVariants: [NSAttributedString]](./attributedinactivedescriptionvariants.md)
+- [var compassSetting: CPInstrumentClusterSetting](./compasssetting.md)
+- [var delegate: (any CPInstrumentClusterControllerDelegate)?](./delegate.md)
+- [var instrumentClusterWindow: UIWindow?](./instrumentclusterwindow.md)
+- [var speedLimitSetting: CPInstrumentClusterSetting](./speedlimitsetting.md)
 
 
 ---

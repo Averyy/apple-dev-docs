@@ -1,7 +1,8 @@
 # KeyResult
 
 **Framework**: Music Understanding  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A value describing the musical key detected over a time range.
 
@@ -27,43 +28,44 @@ A key is the central note that organizes a piece of music. The tonic can be any 
 ## Topics
 
 ### Getting key result ranges
-- [let ranges: [MusicUnderstandingSession.RangedValue<KeyResult.KeySignature>]](keyresult/ranges.md)
+- [let ranges: [MusicUnderstandingSession.RangedValue<KeyResult.KeySignature>]](./keyresult/ranges.md)
   The detected key for each time range.
 ### Getting the mode of the musical key
-- [let mode: KeyResult.Mode](keyresult/keysignature/mode.md)
+- [let mode: KeyResult.Mode](./keyresult/keysignature/mode.md)
   The mode of the musical key.
 ### Getting the notes of a key
-- [KeyResult.KeySignature](keyresult/keysignature.md)
+- [KeyResult.KeySignature](./keyresult/keysignature.md)
   The set of sharp and flat symbols for the notes.
-- [let tonic: KeyResult.Tonic](keyresult/keysignature/tonic.md)
+- [let tonic: KeyResult.Tonic](./keyresult/keysignature/tonic.md)
   The root note of the musical key.
 ### Enumerations
-- [KeyResult.Mode](keyresult/mode.md)
+- [KeyResult.Mode](./keyresult/mode.md)
   The mode of a musical key.
-- [KeyResult.Tonic](keyresult/tonic.md)
+- [KeyResult.Tonic](./keyresult/tonic.md)
   The root note of a musical key.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MusicUnderstandingSession.SessionResult](musicunderstandingsession/sessionresult.md)
+### Content results
+- [MusicUnderstandingSession.SessionResult](./musicunderstandingsession/sessionresult.md)
   The aggregated results for all analysis types that a music understanding session performs.
-- [struct RhythmResult](rhythmresult.md)
+- [struct RhythmResult](./rhythmresult.md)
   A structure that describes a song’s rhythm results in terms of beats, bars, and beats per minute (BPM).
-- [struct LoudnessResult](loudnessresult.md)
+- [struct LoudnessResult](./loudnessresult.md)
   A structure that contains perceptual loudness measurements for a song, including integrated, momentary, short-term, and peak values.
-- [struct PaceResult](paceresult.md)
+- [struct PaceResult](./paceresult.md)
   A pace analysis results for the song.
-- [struct StructureResult](structureresult.md)
+- [struct StructureResult](./structureresult.md)
   A song’s structural boundary information, including sections, segments, and phrases.
-- [struct InstrumentActivityResult](instrumentactivityresult.md)
+- [struct InstrumentActivityResult](./instrumentactivityresult.md)
   A structure containing the activity levels and detected time ranges for instruments in a song.
 
 

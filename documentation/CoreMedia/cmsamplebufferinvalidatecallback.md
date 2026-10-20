@@ -1,9 +1,10 @@
 # CMSampleBufferInvalidateCallback
 
 **Framework**: Core Media  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
-Client callback called by [`CMSampleBufferInvalidate(_:)`](cmsamplebufferinvalidate(_:).md).
+Client callback called by [`CMSampleBufferInvalidate(_:)`](./cmsamplebufferinvalidate%28_%29.md).
 
 **Availability**:
 - iOS 4.0+
@@ -18,6 +19,10 @@ Client callback called by [`CMSampleBufferInvalidate(_:)`](cmsamplebufferinvalid
 
 ```swift
 typealias CMSampleBufferInvalidateCallback = (CMSampleBuffer, UInt64) -> Void
+```
+
+```c
+typedef void (*)(struct opaqueCMSampleBuffer *, unsigned long long) CMSampleBufferInvalidateCallback;
 ```
 
 ## Parameters

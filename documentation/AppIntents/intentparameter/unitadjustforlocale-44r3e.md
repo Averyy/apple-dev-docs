@@ -1,7 +1,8 @@
 # unitAdjustForLocale
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -18,12 +19,15 @@
 final var unitAdjustForLocale: Bool? { get }
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitElectricCurrent>`.
+
 ## See Also
 
-- [var unit: IntentParameter<Value>.ElectricCurrent?](intentparameter/unit-5prj2.md)
-- [IntentParameter.ElectricCurrent](intentparameter/electriccurrent.md)
-- [var defaultUnit: IntentParameter<Value>.ElectricCurrent?](intentparameter/defaultunit-m6h5.md)
-- [var supportsNegativeNumbers: Bool?](intentparameter/supportsnegativenumbers-4hant.md)
+### Accessing unit details
+- [var unit: IntentParameter<Value>.ElectricCurrent?](./unit-5prj2.md)
+- [IntentParameter.ElectricCurrent](./electriccurrent.md)
+- [var defaultUnit: IntentParameter<Value>.ElectricCurrent?](./defaultunit-m6h5.md)
+- [var supportsNegativeNumbers: Bool?](./supportsnegativenumbers-4hant.md)
 
 
 ---

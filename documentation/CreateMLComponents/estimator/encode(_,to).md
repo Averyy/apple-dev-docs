@@ -2,6 +2,7 @@
 
 **Framework**: Create ML Components  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a fitted transformer.
@@ -21,9 +22,16 @@ Encodes a fitted transformer.
 func encode(_ transformer: Self.Transformer, to encoder: inout any EstimatorEncoder) throws
 ```
 
+## Default Implementations
+
+### Estimator Implementations
+- [func encode(Self.Transformer, to: inout any EstimatorEncoder) throws](./encode%28_,to%29-2ayb4.md)
+  Encodes a fitted encodable transformer.
+
 ## See Also
 
-- [func decode(from: inout any EstimatorDecoder) throws -> Self.Transformer](estimator/decode(from:).md)
+### Encoding and decoding
+- [func decode(from: inout any EstimatorDecoder) throws -> Self.Transformer](./decode%28from%29.md)
   Decodes a previously fitted transformer.
 
 

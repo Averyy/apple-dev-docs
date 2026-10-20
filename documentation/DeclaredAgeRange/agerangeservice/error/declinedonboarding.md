@@ -1,7 +1,8 @@
 # AgeRangeService.Error.declinedOnboarding
 
 **Framework**: Declared Age Range  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the person declined the age range onboarding flow.
 

@@ -1,13 +1,14 @@
 # CGPSConverterProgressCallback
 
 **Framework**: Core Graphics  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Reports progress periodically during a PostScript conversion process.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,13 @@ Reports progress periodically during a PostScript conversion process.
 typealias CGPSConverterProgressCallback = (UnsafeMutableRawPointer?) -> Void
 ```
 
+```c
+typedef void (*)(void *) CGPSConverterProgressCallback;
+```
+
 ## Parameters
 
-- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to [`init(info:callbacks:options:)`](cgpsconverter/init(info:callbacks:options:).md).
+- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to [`init(info:callbacks:options:)`](./cgpsconverter/init%28info,callbacks,options%29.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the accessor’s account.
 

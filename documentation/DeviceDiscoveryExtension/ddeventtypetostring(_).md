@@ -1,7 +1,8 @@
 # DDEventTypeToString(_:)
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns human-readable text for the specified event identifier.
 
@@ -9,13 +10,17 @@ Returns human-readable text for the specified event identifier.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func DDEventTypeToString(_ inValue: DDDeviceEvent.EventType) -> String
+```
+
+```c
+extern NSString *DDEventTypeToString(DDEventType inValue);
 ```
 
 #### Return Value
@@ -32,11 +37,12 @@ Your extension can use this function for logging.
 
 ## See Also
 
-- [class DDDeviceEvent](dddeviceevent.md)
+### Life cycle
+- [class DDDeviceEvent](./dddeviceevent.md)
   An object that provides a device or communicates its change in status.
-- [DDDeviceEvent.EventType](dddeviceevent/eventtype-swift.enum.md)
+- [DDDeviceEvent.EventType](./dddeviceevent/eventtype-swift.enum.md)
   Identifiers for the types of events that occur in the device discovery life cycle.
-- [typealias DDEventHandler](ddeventhandler.md)
+- [typealias DDEventHandler](./ddeventhandler.md)
   A function that the extension invokes to signal an event.
 
 

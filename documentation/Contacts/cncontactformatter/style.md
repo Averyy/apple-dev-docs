@@ -1,7 +1,8 @@
 # style
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The formatting style for the contact name.
 
@@ -19,13 +20,26 @@ The formatting style for the contact name.
 var style: CNContactFormatterStyle { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic) CNContactFormatterStyle style;
+```
+
+*macOS*
+
+```objc
+@property (atomic) CNContactFormatterStyle style;
+```
+
 #### Discussion
 
-The default value for this property is [`CNContactFormatterStyle.fullName`](cncontactformatterstyle/fullname.md). For more information on formatting styles, see [`CNContactFormatterStyle`](cncontactformatterstyle.md).
+The default value for this property is [`CNContactFormatterStyle.fullName`](../cncontactformatterstyle/fullname.md). For more information on formatting styles, see [`CNContactFormatterStyle`](../cncontactformatterstyle.md).
 
 ## See Also
 
-- [enum CNContactFormatterStyle](cncontactformatterstyle.md)
+### Specifying the formatting style
+- [enum CNContactFormatterStyle](../cncontactformatterstyle.md)
   The formatting styles for contact names.
 
 

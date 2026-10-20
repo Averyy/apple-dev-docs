@@ -1,12 +1,13 @@
 # NSControl.ControlSize.mini
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The smallest control size.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The smallest control size.
 case mini
 ```
 
+```c
+NSControlSizeMini
+```
+
 ## See Also
 
-- [NSControl.ControlSize.small](nscontrol/controlsize-swift.enum/small.md)
+### Sizing Controls
+- [NSControl.ControlSize.small](./small.md)
   A size smaller than the default control size.
-- [NSControl.ControlSize.regular](nscontrol/controlsize-swift.enum/regular.md)
+- [NSControl.ControlSize.regular](./regular.md)
   The default control size.
-- [NSControl.ControlSize.large](nscontrol/controlsize-swift.enum/large.md)
+- [NSControl.ControlSize.large](./large.md)
   A size larger than the default control size.
 
 

@@ -1,7 +1,8 @@
 # attributedString
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns an `NSAttributedString` object representing the text contained in the selection (may contain linefeed characters).
 
@@ -19,17 +20,22 @@ Returns an `NSAttributedString` object representing the text contained in the se
 var attributedString: NSAttributedString? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSAttributedString * attributedString;
+```
+
 ## See Also
 
-- [var pages: [PDFPage]](pdfselection/pages.md)
+### Getting Information About a Selection
+- [var pages: [PDFPage]](./pages.md)
   Returns the array of pages contained in the selection.
-- [var string: String?](pdfselection/string.md)
+- [var string: String?](./string.md)
   Returns an `NSString` object representing the text contained in the selection (may contain linefeed characters).
-- [func bounds(for: PDFPage) -> CGRect](pdfselection/bounds(for:).md)
+- [func bounds(for: PDFPage) -> CGRect](./bounds%28for%29.md)
   Returns the bounds of the selection on the specified page.
-- [func selectionsByLine() -> [PDFSelection]](pdfselection/selectionsbyline.md)
+- [func selectionsByLine() -> [PDFSelection]](./selectionsbyline%28%29.md)
   Returns an array of selections, one for each line of text covered by the receiver.
-- [var color: UIColor?](pdfselection/color.md)
+- [var color: UIColor?](./color.md)
   Sets the color used for the drawing of a selection in both active and inactive states.
 
 

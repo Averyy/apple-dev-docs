@@ -1,34 +1,36 @@
 # DiskArbitration Data Types
 
-**Framework**: Disk Arbitration
+**Framework**: Disk Arbitration  
+**Role**: API Collection
 
 ## Topics
 
 ### Data Types
-- [typealias DADiskClaimOptions](dadiskclaimoptions.md)
+- [typealias DADiskClaimOptions](./dadiskclaimoptions.md)
   Options for DADiskClaim().
-- [typealias DADiskEjectOptions](dadiskejectoptions.md)
+- [typealias DADiskEjectOptions](./dadiskejectoptions.md)
   Options for DADiskEject().
-- [typealias DADiskMountOptions](dadiskmountoptions.md)
+- [typealias DADiskMountOptions](./dadiskmountoptions.md)
   Options for DADiskMount().
-- [typealias DADiskOptions](dadiskoptions.md)
+- [typealias DADiskOptions](./dadiskoptions.md)
   Options for DADiskGetOptions() and DADiskSetOptions().
-- [typealias DADiskRenameOptions](dadiskrenameoptions.md)
+- [typealias DADiskRenameOptions](./dadiskrenameoptions.md)
   Options for DADiskRename().
-- [typealias DADiskUnmountOptions](dadiskunmountoptions.md)
+- [typealias DADiskUnmountOptions](./dadiskunmountoptions.md)
   Options for DADiskUnmount().
-- [typealias DAReturn](dareturn.md)
+- [typealias DAReturn](./dareturn.md)
   A return code.
 
 ## See Also
 
-- [DADisk.h](dadisk-h.md)
-- [DADissenter.h](dadissenter-h.md)
-- [DASession.h](dasession-h.md)
-- [DiskArbitration.h](diskarbitration-h.md)
+### Reference
+- [DADisk.h](./dadisk-h.md)
+- [DADissenter.h](./dadissenter-h.md)
+- [DASession.h](./dasession-h.md)
+- [DiskArbitration.h](./diskarbitration-h.md)
   Register for mount/unmount notifications, and block mount/unmount events.
-- [DiskArbitration Enumerations](diskarbitration-enumerations.md)
-- [DiskArbitration Constants](diskarbitration-constants.md)
+- [DiskArbitration Enumerations](./diskarbitration-enumerations.md)
+- [DiskArbitration Constants](./diskarbitration-constants.md)
 
 
 ---

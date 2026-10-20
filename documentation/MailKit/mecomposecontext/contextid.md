@@ -1,7 +1,8 @@
 # contextID
 
 **Framework**: MailKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
@@ -12,14 +13,19 @@
 var contextID: UUID { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSUUID * contextID;
+```
+
 ## See Also
 
-- [var action: MEComposeUserAction](mecomposecontext/action.md)
-- [var isEncrypted: Bool](mecomposecontext/isencrypted.md)
-- [var isSigned: Bool](mecomposecontext/issigned.md)
-- [var originalMessage: MEMessage?](mecomposecontext/originalmessage.md)
-- [var shouldEncrypt: Bool](mecomposecontext/shouldencrypt.md)
-- [var shouldSign: Bool](mecomposecontext/shouldsign.md)
+### Instance Properties
+- [var action: MEComposeUserAction](./action.md)
+- [var isEncrypted: Bool](./isencrypted.md)
+- [var isSigned: Bool](./issigned.md)
+- [var originalMessage: MEMessage?](./originalmessage.md)
+- [var shouldEncrypt: Bool](./shouldencrypt.md)
+- [var shouldSign: Bool](./shouldsign.md)
 
 
 ---

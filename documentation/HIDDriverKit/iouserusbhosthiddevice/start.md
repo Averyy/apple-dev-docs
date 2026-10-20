@@ -1,43 +1,45 @@
 # Start
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts the current device service and associates it with the specified provider object.
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t Start(IOService *provider);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
 After successfully matching the specified provider to your device, the system instantiates your device object and calls this method. This method configures the USB device and sets up the pipes needed for communication.
 
-Don’t override this method directly. Instead, implement your custom initialization code in the [`handleStart`](iouserhiddevice/handlestart.md) method.
+Don’t override this method directly. Instead, implement your custom initialization code in the [`handleStart`](../iouserhiddevice/handlestart.md) method.
 
 ## Parameters
 
-- `provider`: The provider object that matches the current service. This method requires that the provider be an [`IOUSBHostInterface`](https://developer.apple.com/documentation/usbdriverkit/iousbhostinterface) object, and returns an error if it isn’t. The system retains this object for the duration of the `Start` method. The system continues to retain the object if your service starts successfully, releasing it only after calling your service’s [`Stop`](iouserhideventservice/stop.md) method.
+- `provider`: The provider object that matches the current service. This method requires that the provider be an [`IOUSBHostInterface`](../../USBDriverKit/iousbhostinterface.md) object, and returns an error if it isn’t. The system retains this object for the duration of the `Start` method. The system continues to retain the object if your service starts successfully, releasing it only after calling your service’s [`Stop`](../iouserhideventservice/stop.md) method.
 
 ## See Also
 
-- [init](iouserusbhosthiddevice/init.md)
+### Running the Service
+- [init](./init.md)
   Handles the basic initialization of the event service.
-- [handleStart](iouserusbhosthiddevice/handlestart.md)
+- [handleStart](./handlestart.md)
   Performs any custom initialization associated with starting the device service.
-- [Stop](iouserusbhosthiddevice/stop.md)
+- [Stop](./stop.md)
   Stops the device service associated with the specified provider.
-- [free](iouserusbhosthiddevice/free.md)
+- [free](./free.md)
   Performs any final cleanup for the service.
 
 

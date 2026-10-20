@@ -1,7 +1,8 @@
 # dismissPopover(_:)
 
 **Framework**: Shared with You  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dismisses the popover.
 
@@ -15,7 +16,15 @@ Dismisses the popover.
 ## Declaration
 
 ```swift
+func dismissPopover(_ completion: (() -> Void)? = nil)
+```
+
+```swift
 func dismissPopover() async
+```
+
+```objc
+- (void) dismissPopover:(void (^)()) completion;
 ```
 
 ## Parameters

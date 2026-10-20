@@ -1,7 +1,8 @@
 # definition
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system definition of the User Datagram Protocol.
 
@@ -22,7 +23,8 @@ static let definition: NWProtocolDefinition
 
 ## See Also
 
-- [NWProtocolUDP.Options](nwprotocoludp/options.md)
+### Creating UDP Connections
+- [NWProtocolUDP.Options](./options.md)
   A container of options for configuring how UDP is used on a connection.
 
 

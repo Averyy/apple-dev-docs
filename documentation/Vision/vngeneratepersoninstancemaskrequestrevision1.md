@@ -1,7 +1,8 @@
 # VNGeneratePersonInstanceMaskRequestRevision1
 
 **Framework**: Vision  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant for specifying revision 1 of the person instance mask request.
 
@@ -17,6 +18,10 @@ A constant for specifying revision 1 of the person instance mask request.
 
 ```swift
 var VNGeneratePersonInstanceMaskRequestRevision1: Int { get }
+```
+
+```c
+static const NSUInteger VNGeneratePersonInstanceMaskRequestRevision1;
 ```
 
 

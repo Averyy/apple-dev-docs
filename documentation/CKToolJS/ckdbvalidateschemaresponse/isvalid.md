@@ -1,7 +1,8 @@
 # isValid
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The status of the schema string validation.
 
@@ -10,7 +11,7 @@ The status of the schema string validation.
 
 ## Declaration
 
-```swift
+```
 attribute boolean isValid;
 ```
 

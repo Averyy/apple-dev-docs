@@ -1,6 +1,8 @@
 # Customizing and resizing sheets in UIKit
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Sample Code  
+**Download**: [CustomizingAndResizingSheetsInUIKit.zip](https://docs-assets.developer.apple.com/published/9f8e34adc2d3/CustomizingAndResizingSheetsInUIKit.zip)
 
 Discover how to create a layered and customized sheet experience in UIKit.
 
@@ -12,25 +14,26 @@ Discover how to create a layered and customized sheet experience in UIKit.
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC22 session [`10068: What’s new in UIKit`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10068/).
+> **Note**: This sample code project is associated with WWDC22 session [10068: What’s new in UIKit](https://developer.apple.com/wwdc22/10068/).
 
 ## See Also
 
-- [var transitioningDelegate: (any UIViewControllerTransitioningDelegate)?](uiviewcontroller/transitioningdelegate.md)
+### Adding a custom transition or presentation
+- [var transitioningDelegate: (any UIViewControllerTransitioningDelegate)?](./uiviewcontroller/transitioningdelegate.md)
   The delegate object that provides transition animator, interactive controller, and custom presentation controller objects.
-- [var transitionCoordinator: (any UIViewControllerTransitionCoordinator)?](uiviewcontroller/transitioncoordinator.md)
+- [var transitionCoordinator: (any UIViewControllerTransitionCoordinator)?](./uiviewcontroller/transitioncoordinator.md)
   Returns the active transition coordinator object.
-- [func targetViewController(forAction: Selector, sender: Any?) -> UIViewController?](uiviewcontroller/targetviewcontroller(foraction:sender:).md)
+- [func targetViewController(forAction: Selector, sender: Any?) -> UIViewController?](./uiviewcontroller/targetviewcontroller%28foraction,sender%29.md)
   Returns the view controller that responds to the action.
-- [var presentationController: UIPresentationController?](uiviewcontroller/presentationcontroller.md)
+- [var presentationController: UIPresentationController?](./uiviewcontroller/presentationcontroller.md)
   The presentation controller that’s managing the current view controller.
-- [var popoverPresentationController: UIPopoverPresentationController?](uiviewcontroller/popoverpresentationcontroller.md)
+- [var popoverPresentationController: UIPopoverPresentationController?](./uiviewcontroller/popoverpresentationcontroller.md)
   The nearest popover presentation controller that is managing the current view controller.
-- [var sheetPresentationController: UISheetPresentationController?](uiviewcontroller/sheetpresentationcontroller.md)
+- [var sheetPresentationController: UISheetPresentationController?](./uiviewcontroller/sheetpresentationcontroller.md)
   The sheet presentation controller for the view controller.
-- [var activePresentationController: UIPresentationController?](uiviewcontroller/activepresentationcontroller.md)
+- [var activePresentationController: UIPresentationController?](./uiviewcontroller/activepresentationcontroller.md)
   The presentation controller that’s managing the view controller.
-- [var restoresFocusAfterTransition: Bool](uiviewcontroller/restoresfocusaftertransition.md)
+- [var restoresFocusAfterTransition: Bool](./uiviewcontroller/restoresfocusaftertransition.md)
   A Boolean value that indicates whether an item that previously was focused should again become focused when the item’s view controller becomes visible and focusable.
 
 

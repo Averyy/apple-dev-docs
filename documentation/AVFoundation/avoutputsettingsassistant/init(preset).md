@@ -1,7 +1,8 @@
 # init(preset:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an output setting assistant with a preset configuration.
 
@@ -19,15 +20,20 @@ Creates an output setting assistant with a preset configuration.
 convenience init?(preset presetIdentifier: AVOutputSettingsPreset)
 ```
 
+```objc
++ (instancetype) outputSettingsAssistantWithPreset:(AVOutputSettingsPreset) presetIdentifier;
+```
+
 #### Discussion
 
 - presetIdentifier: A preset configuration for the object.
 
 ## See Also
 
-- [struct AVOutputSettingsPreset](avoutputsettingspreset.md)
+### Creating an assistant
+- [struct AVOutputSettingsPreset](../avoutputsettingspreset.md)
   A structure that defines preset configurations for an output settings assistant.
-- [class func availableOutputSettingsPresets() -> [AVOutputSettingsPreset]](avoutputsettingsassistant/availableoutputsettingspresets.md)
+- [class func availableOutputSettingsPresets() -> [AVOutputSettingsPreset]](./availableoutputsettingspresets%28%29.md)
   Returns an array of preset values to use to initialize an output settings assistant.
 
 

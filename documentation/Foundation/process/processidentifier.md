@@ -1,7 +1,8 @@
 # processIdentifier
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s process identifier.
 
@@ -13,6 +14,10 @@ The receiver’s process identifier.
 
 ```swift
 var processIdentifier: Int32 { get }
+```
+
+```objc
+@property (readonly) int processIdentifier;
 ```
 
 #### Return Value

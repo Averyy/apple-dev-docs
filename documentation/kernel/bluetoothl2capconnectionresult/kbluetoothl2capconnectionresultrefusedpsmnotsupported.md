@@ -1,14 +1,15 @@
 # kBluetoothL2CAPConnectionResultRefusedPSMNotSupported
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothL2CAPConnectionResultRefusedPSMNotSupported = 0x0002
 ```
 

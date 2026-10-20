@@ -1,7 +1,8 @@
 # performWithoutUserInteractionIfPossible(savePasswordRequest:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempt to save a password credential.
 
@@ -17,15 +18,19 @@ Attempt to save a password credential.
 func performWithoutUserInteractionIfPossible(savePasswordRequest: ASSavePasswordRequest)
 ```
 
+```objc
+- (void) performSavePasswordRequestWithoutUserInteractionIfPossible:(ASSavePasswordRequest *) savePasswordRequest;
+```
+
 #### Discussion
 
-To return results, you must call  [`completeSavePasswordRequest(completionHandler:)`](ascredentialproviderextensioncontext/completesavepasswordrequest(completionhandler:).md).
+To return results, you must call  [`completeSavePasswordRequest(completionHandler:)`](../ascredentialproviderextensioncontext/completesavepasswordrequest%28completionhandler%29.md).
 
-> **Note**: When this method is called, your extension’s view controller is not present on the screen. You can request user interaction by calling `ASCredentialProviderExtensionContext/cancelRequest(with:)`, using [`userInteractionRequired`](asextensionerror/userinteractionrequired.md).
+> **Note**: When this method is called, your extension’s view controller is not present on the screen. You can request user interaction by calling `ASCredentialProviderExtensionContext/cancelRequest(with:)`, using [`userInteractionRequired`](../asextensionerror/userinteractionrequired.md).
 
 To indicate support for this feature, add `SupportsSavePasswordCredentials` under the `ASCredentialProviderExtensionCapabilities` dictionary.
 
-```None
+```
 Info.plist
 ├─ NSExtension
     ├─ NSExtensionAttributes

@@ -1,7 +1,8 @@
 # NSSharingService.SharingContentScope
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The sharing scope constants specify the nature of the things you are sharing.
 
@@ -14,35 +15,40 @@ The sharing scope constants specify the nature of the things you are sharing.
 enum SharingContentScope
 ```
 
+```c
+enum NSSharingContentScope : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSSharingService.SharingContentScope.item](nssharingservice/sharingcontentscope/item.md)
+- [NSSharingService.SharingContentScope.item](./sharingcontentscope/item.md)
   Used when sharing a clearly identified item, for example, a file represented by its icon.
-- [NSSharingService.SharingContentScope.partial](nssharingservice/sharingcontentscope/partial.md)
+- [NSSharingService.SharingContentScope.partial](./sharingcontentscope/partial.md)
   Used when sharing a portion of a more global content, for example, part of a webpage.
-- [NSSharingService.SharingContentScope.full](nssharingservice/sharingcontentscope/full.md)
+- [NSSharingService.SharingContentScope.full](./sharingcontentscope/full.md)
   Used when sharing the whole content of the current document, for example, the URL of the webpage.
 ### Initializers
-- [init?(rawValue: Int)](nssharingservice/sharingcontentscope/init(rawvalue:).md)
+- [init?(rawValue: Int)](./sharingcontentscope/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func sharingService(NSSharingService, sourceFrameOnScreenForShareItem: Any) -> NSRect](nssharingservicedelegate/sharingservice(_:sourceframeonscreenforshareitem:).md)
+### Customizing Transition Animation
+- [func sharingService(NSSharingService, sourceFrameOnScreenForShareItem: Any) -> NSRect](../nssharingservicedelegate/sharingservice%28_,sourceframeonscreenforshareitem%29.md)
   Invoked when the sharing service is performed and the sharing window is displayed, to present a transition between the original items and the sharing window.
-- [func sharingService(NSSharingService, transitionImageForShareItem: Any, contentRect: UnsafeMutablePointer<NSRect>) -> NSImage?](nssharingservicedelegate/sharingservice(_:transitionimageforshareitem:contentrect:).md)
+- [func sharingService(NSSharingService, transitionImageForShareItem: Any, contentRect: UnsafeMutablePointer<NSRect>) -> NSImage?](../nssharingservicedelegate/sharingservice%28_,transitionimageforshareitem,contentrect%29.md)
   Invoked to allow returning a custom transition image when sharing an item.
-- [func sharingService(NSSharingService, sourceWindowForShareItems: [Any], sharingContentScope: UnsafeMutablePointer<NSSharingService.SharingContentScope>) -> NSWindow?](nssharingservicedelegate/sharingservice(_:sourcewindowforshareitems:sharingcontentscope:).md)
+- [func sharingService(NSSharingService, sourceWindowForShareItems: [Any], sharingContentScope: UnsafeMutablePointer<NSSharingService.SharingContentScope>) -> NSWindow?](../nssharingservicedelegate/sharingservice%28_,sourcewindowforshareitems,sharingcontentscope%29.md)
   Returns the window that contained the share items.
 
 

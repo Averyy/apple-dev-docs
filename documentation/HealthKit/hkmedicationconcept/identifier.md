@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for the specific medication concept.
 
@@ -18,6 +19,10 @@ The unique identifier for the specific medication concept.
 ```swift
 @NSCopying
 var identifier: HKHealthConceptIdentifier { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) HKHealthConceptIdentifier * identifier;
 ```
 
 #### Discussion

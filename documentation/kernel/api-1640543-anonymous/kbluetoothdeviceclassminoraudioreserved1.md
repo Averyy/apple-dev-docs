@@ -1,14 +1,15 @@
 # kBluetoothDeviceClassMinorAudioReserved1
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothDeviceClassMinorAudioReserved1 = 0x03
 ```
 

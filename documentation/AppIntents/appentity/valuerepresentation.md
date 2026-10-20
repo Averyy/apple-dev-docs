@@ -1,7 +1,8 @@
 # AppEntity.ValueRepresentation
 
 **Framework**: App Intents  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type alias for `IntentValueRepresentation`, providing a convenient way to define transfer representations that convert between app entities and system intent values.
 

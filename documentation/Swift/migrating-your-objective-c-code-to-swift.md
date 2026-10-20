@@ -1,6 +1,7 @@
 # Migrating Your Objective-C Code to Swift
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Article
 
 Learn the recommended steps to migrate your code.
 
@@ -24,7 +25,7 @@ The most effective approach for migrating code to Swift is on a per-file basis�
 ###### As You Work
 
 1. You can set up your Swift class to integrate Objective-C behavior by subclassing Objective-C classes, adopting Objective-C protocols, and more.
-2. As you work with Objective-C APIs, you’ll need to know how Swift translates certain Objective-C language features. For more information, see [`Objective-C and C Code Customization`](objective-c-and-c-code-customization.md).
+2. As you work with Objective-C APIs, you’ll need to know how Swift translates certain Objective-C language features. For more information, see [Objective-C and C Code Customization](./objective-c-and-c-code-customization.md).
 3. Use the `@objc(`*name*`)` attribute to provide Objective-C names for properties and methods when necessary.
 4. Denote instance (`-`) and class (`+`) methods with `func` and `class func`, respectively.
 5. Declare simple macros as global constants, and translate complex macros into functions.
@@ -47,17 +48,18 @@ Migration experiences differ depending on your existing codebase, but here are s
 
 ## See Also
 
-- [Objective-C and C Code Customization](objective-c-and-c-code-customization.md)
+### Language Interoperability with Objective-C and C
+- [Objective-C and C Code Customization](./objective-c-and-c-code-customization.md)
   Apply macros to your Objective-C APIs to customize how they’re imported into Swift.
-- [Cocoa Design Patterns](cocoa-design-patterns.md)
+- [Cocoa Design Patterns](./cocoa-design-patterns.md)
   Adopt and interoperate with Cocoa design patterns in your Swift apps.
-- [Handling Dynamically Typed Methods and Objects in Swift](handling-dynamically-typed-methods-and-objects-in-swift.md)
+- [Handling Dynamically Typed Methods and Objects in Swift](./handling-dynamically-typed-methods-and-objects-in-swift.md)
   Cast instances of the Objective-C `id` type to a specific Swift type.
-- [Using Objective-C Runtime Features in Swift](using-objective-c-runtime-features-in-swift.md)
+- [Using Objective-C Runtime Features in Swift](./using-objective-c-runtime-features-in-swift.md)
   Use selectors and key paths to interact with dynamic Objective-C APIs.
-- [Imported C and Objective-C APIs](imported-c-and-objective-c-apis.md)
+- [Imported C and Objective-C APIs](./imported-c-and-objective-c-apis.md)
   Use native Swift syntax to interoperate with types and functions in C and Objective-C.
-- [Calling Objective-C APIs Asynchronously](calling-objective-c-apis-asynchronously.md)
+- [Calling Objective-C APIs Asynchronously](./calling-objective-c-apis-asynchronously.md)
   Learn how functions and methods that take a completion handler are converted to Swift asynchronous functions.
 
 

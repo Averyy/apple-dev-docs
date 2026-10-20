@@ -1,7 +1,8 @@
 # ManifestURL.ItemsItem.AssetsItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An array of dictionaries that describe an item to install.
 
@@ -16,13 +17,15 @@ An array of dictionaries that describe an item to install.
 
 ## Declaration
 
-```swift
+```
 object ManifestURL.ItemsItem.AssetsItem
 ```
 
 ## Properties
 
 - `kind` (string) *(required)*: The kind of manifest item to install. Use `software-package` for apps and macOS packages.
+
+  **Allowed Values**: `asset-pack-manifest`, `display-image`, `full-size-image`, `software-package`
 - `md5` (string): The MD5 hash value the device uses when verifying the hash of the manifest item data. When this key is present, the device ignores the `md5-size` and `md5s` keys.
 - `md5-size` (integer): The data chunk size the device uses when verifying the hash of the manifest item data. The device requires this key when the `md5s` key is present.
 - `md5s` ([string]): An array of strings representing a set of MD5 hash values. The device uses these values to verify the integrity of the downloaded manifest item data. The device requires this key when the `md5-size` key is present.
@@ -33,7 +36,8 @@ object ManifestURL.ItemsItem.AssetsItem
 
 ## See Also
 
-- [object ManifestURL.ItemsItem.Metadata](manifesturl/itemsitem/metadata-data.dictionary.md)
+### Objects
+- [object ManifestURL.ItemsItem.Metadata](./metadata-data.dictionary.md)
   The metadata for an application or package manifest item.
 
 

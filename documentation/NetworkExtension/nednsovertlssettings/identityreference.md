@@ -1,7 +1,8 @@
 # identityReference
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A persistent keychain reference to a keychain item containing the certificate and private key components of the DNS client credential.
 
@@ -19,9 +20,13 @@ A persistent keychain reference to a keychain item containing the certificate an
 var identityReference: Data? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSData * identityReference;
+```
+
 #### Discussion
 
-The keychain item must have the [`kSecClassIdentity`](https://developer.apple.com/documentation/security/ksecclassidentity) class.
+The keychain item must have the [`kSecClassIdentity`](../../Security/ksecclassidentity.md) class.
 
 
 ---

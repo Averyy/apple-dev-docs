@@ -1,7 +1,8 @@
 # setDouble2(_:atTime:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func setDouble2(_ value: vector_double2, atTime time: TimeInterval)
+```
+
+```objc
+- (void) setDouble2:(vector_double2) value atTime:(NSTimeInterval) time;
 ```
 
 

@@ -1,7 +1,8 @@
 # ICErrorDomain
 
 **Framework**: ImageCaptureCore  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An error returned by the ImageCaptureCore framework.
 
@@ -16,6 +17,10 @@ An error returned by the ImageCaptureCore framework.
 
 ```swift
 let ICErrorDomain: String
+```
+
+```c
+extern NSErrorDomain const ICErrorDomain;
 ```
 
 

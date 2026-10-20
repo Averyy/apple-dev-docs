@@ -1,7 +1,8 @@
 # projectiveTransform
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The matrix as a Spatial projective transform.
 

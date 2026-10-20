@@ -1,7 +1,8 @@
 # init(platformString:)
 
 **Framework**: System  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a file path by copying bytes from a null-terminated platform string.
 

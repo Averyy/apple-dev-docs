@@ -1,7 +1,8 @@
 # NSFileProviderError.Code
 
 **Framework**: File Provider  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The error codes for the File Provider extension.
 
@@ -18,80 +19,85 @@ The error codes for the File Provider extension.
 enum Code
 ```
 
+```c
+enum NSFileProviderErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Error codes
-- [NSFileProviderError.Code.filenameCollision](nsfileprovidererror/code/filenamecollision.md)
+- [NSFileProviderError.Code.filenameCollision](./code/filenamecollision.md)
   An error indicating that an item with the same name already exists in the same directory.
-- [NSFileProviderError.Code.insufficientQuota](nsfileprovidererror/code/insufficientquota.md)
+- [NSFileProviderError.Code.insufficientQuota](./code/insufficientquota.md)
   An error indicating that the File Provider extension can’t upload the item because it would push the account over its quota.
-- [NSFileProviderError.Code.noSuchItem](nsfileprovidererror/code/nosuchitem.md)
+- [NSFileProviderError.Code.noSuchItem](./code/nosuchitem.md)
   An error indicating that the specified item doesn’t exist.
-- [NSFileProviderError.Code.notAuthenticated](nsfileprovidererror/code/notauthenticated.md)
+- [NSFileProviderError.Code.notAuthenticated](./code/notauthenticated.md)
   An error indicating that you can’t verify the user’s credentials.
-- [NSFileProviderError.Code.serverUnreachable](nsfileprovidererror/code/serverunreachable.md)
+- [NSFileProviderError.Code.serverUnreachable](./code/serverunreachable.md)
   An error indicating that the File Provider extension can’t reach the remote server.
-- [NSFileProviderError.Code.syncAnchorExpired](nsfileprovidererror/code/syncanchorexpired.md)
+- [NSFileProviderError.Code.syncAnchorExpired](./code/syncanchorexpired.md)
   An error indicating that the sync anchor is too old, and that the system must restart the sync operation from the beginning.
-- [static var pageExpired: NSFileProviderError.Code](nsfileprovidererror/code/pageexpired.md)
+- [static var pageExpired: NSFileProviderError.Code](./code/pageexpired.md)
   An error indicating that the page is too old, and that the system must restart the enumeration operation from the beginning.
-- [NSFileProviderError.Code.directoryNotEmpty](nsfileprovidererror/code/directorynotempty.md)
+- [NSFileProviderError.Code.directoryNotEmpty](./code/directorynotempty.md)
   An error indicating an attempt to nonrecursively delete a directory that isn’t empty.
-- [NSFileProviderError.Code.providerNotFound](nsfileprovidererror/code/providernotfound.md)
+- [NSFileProviderError.Code.providerNotFound](./code/providernotfound.md)
   An error indicating that the File Provider manager can’t find the specified provider.
-- [NSFileProviderError.Code.providerTranslocated](nsfileprovidererror/code/providertranslocated.md)
+- [NSFileProviderError.Code.providerTranslocated](./code/providertranslocated.md)
   An error indicating the File Provider extension is in a disabled state due to Gatekeeper’s restrictions for apps from outside the App Store.
-- [NSFileProviderError.Code.olderExtensionVersionRunning](nsfileprovidererror/code/olderextensionversionrunning.md)
+- [NSFileProviderError.Code.olderExtensionVersionRunning](./code/olderextensionversionrunning.md)
   An error indicating that the registered provider in the system is an older version than the one the app uses.
-- [NSFileProviderError.Code.newerExtensionVersionFound](nsfileprovidererror/code/newerextensionversionfound.md)
+- [NSFileProviderError.Code.newerExtensionVersionFound](./code/newerextensionversionfound.md)
   An error indicating that the registered provider in the system is a newer version than the one the app uses.
-- [NSFileProviderError.Code.nonEvictable](nsfileprovidererror/code/nonevictable.md)
+- [NSFileProviderError.Code.nonEvictable](./code/nonevictable.md)
   An error indicating that the File Provider extension can’t evict an item.
-- [NSFileProviderError.Code.nonEvictableChildren](nsfileprovidererror/code/nonevictablechildren.md)
+- [NSFileProviderError.Code.nonEvictableChildren](./code/nonevictablechildren.md)
   An error indicating that the File Provider extension can’t evict a directory because it contains nonevictable items.
-- [NSFileProviderError.Code.unsyncedEdits](nsfileprovidererror/code/unsyncededits.md)
+- [NSFileProviderError.Code.unsyncedEdits](./code/unsyncededits.md)
   An error indicating that the item contains unsynced changes.
-- [NSFileProviderError.Code.cannotSynchronize](nsfileprovidererror/code/cannotsynchronize.md)
+- [NSFileProviderError.Code.cannotSynchronize](./code/cannotsynchronize.md)
   An error indicating a failed sync attempt.
-- [NSFileProviderError.Code.deletionRejected](nsfileprovidererror/code/deletionrejected.md)
+- [NSFileProviderError.Code.deletionRejected](./code/deletionrejected.md)
   An error indicating a failed deletion action.
-- [NSFileProviderError.Code.versionNoLongerAvailable](nsfileprovidererror/code/versionnolongeravailable.md)
+- [NSFileProviderError.Code.versionNoLongerAvailable](./code/versionnolongeravailable.md)
   An error indicating that the specified version is no longer available.
-- [NSFileProviderError.Code.domainDisabled](nsfileprovidererror/code/domaindisabled.md)
-- [NSFileProviderError.Code.excludedFromSync](nsfileprovidererror/code/excludedfromsync.md)
-- [NSFileProviderError.Code.applicationExtensionNotFound](nsfileprovidererror/code/applicationextensionnotfound.md)
+- [NSFileProviderError.Code.domainDisabled](./code/domaindisabled.md)
+- [NSFileProviderError.Code.excludedFromSync](./code/excludedfromsync.md)
+- [NSFileProviderError.Code.applicationExtensionNotFound](./code/applicationextensionnotfound.md)
   An error indicating that there isn’t an app extension within the app bundle.
-- [NSFileProviderError.Code.providerDomainNotFound](nsfileprovidererror/code/providerdomainnotfound.md)
+- [NSFileProviderError.Code.providerDomainNotFound](./code/providerdomainnotfound.md)
   An error indicating that there isn’t a registered domain for the corresponding identifier.
-- [NSFileProviderError.Code.providerDomainTemporarilyUnavailable](nsfileprovidererror/code/providerdomaintemporarilyunavailable.md)
+- [NSFileProviderError.Code.providerDomainTemporarilyUnavailable](./code/providerdomaintemporarilyunavailable.md)
   An error indicating that the system is unable to service requests for the domain temporarily, and you can try again later.
 ### Enumeration Cases
-- [NSFileProviderError.Code.localVersionConflictingWithServer](nsfileprovidererror/code/localversionconflictingwithserver.md)
+- [NSFileProviderError.Code.localVersionConflictingWithServer](./code/localversionconflictingwithserver.md)
   Returned by createItemBasedOnTemplate or modifyItem if the provider does not wish to sync the item.
 ### Initializers
-- [init?(rawValue: Int)](nsfileprovidererror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct NSFileProviderError](nsfileprovidererror.md)
+### Errors
+- [struct NSFileProviderError](../nsfileprovidererror.md)
   A structure that contains information about File Provider extension errors.
-- [let NSFileProviderErrorDomain: String](nsfileprovidererrordomain.md)
+- [let NSFileProviderErrorDomain: String](../nsfileprovidererrordomain.md)
   The error domain for the File Provider extension.
-- [let NSFileProviderErrorItemKey: String](nsfileprovidererroritemkey.md)
+- [let NSFileProviderErrorItemKey: String](../nsfileprovidererroritemkey.md)
   The key for accessing information about sync-related errors.
-- [let NSFileProviderErrorNonExistentItemIdentifierKey: String](nsfileprovidererrornonexistentitemidentifierkey.md)
+- [let NSFileProviderErrorNonExistentItemIdentifierKey: String](../nsfileprovidererrornonexistentitemidentifierkey.md)
   The key for accessing the specified item’s identifier when the item doesn’t exist.
-- [let NSFileProviderErrorCollidingItemKey: String](nsfileprovidererrorcollidingitemkey.md)
+- [let NSFileProviderErrorCollidingItemKey: String](../nsfileprovidererrorcollidingitemkey.md)
   The key for accessing the existing item from a filename collision error’s user info dictionary.
 
 

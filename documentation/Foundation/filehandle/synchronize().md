@@ -1,7 +1,8 @@
 # synchronize()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Causes all in-memory data and attributes of the file represented by the file handle to write to permanent storage.
 
@@ -20,15 +21,20 @@ Causes all in-memory data and attributes of the file represented by the file han
 func synchronize() throws
 ```
 
+```objc
+- (BOOL) synchronizeAndReturnError:(NSError **) error;
+```
+
 #### Discussion
 
 Programs that require the file to always be in a known state should call this method. An invocation of this method doesn’t return until memory is flushed.
 
 ## See Also
 
-- [func close() throws](filehandle/close.md)
+### Operating on a file
+- [func close() throws](./close%28%29.md)
   Disallows further access to the represented file or communications channel and signals end of file on communications channels that permit writing.
-- [func truncate(atOffset: UInt64) throws](filehandle/truncate(atoffset:).md)
+- [func truncate(atOffset: UInt64) throws](./truncate%28atoffset%29.md)
   Truncates or extends the file represented by the file handle to a specified offset within the file and puts the file pointer at that position.
 
 

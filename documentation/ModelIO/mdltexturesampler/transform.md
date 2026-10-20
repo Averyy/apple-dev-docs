@@ -1,7 +1,8 @@
 # transform
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transformation to be applied to texture coordinate data before sampling from the texture.
 
@@ -19,15 +20,20 @@ The transformation to be applied to texture coordinate data before sampling from
 var transform: MDLTransform? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) MDLTransform * transform;
+```
+
 #### Discussion
 
 Use this property to translate, scale, or rotate a texture relative to the surfaces it’s rendered on.
 
 ## See Also
 
-- [var texture: MDLTexture?](mdltexturesampler/texture.md)
+### Working with Texture Parameters
+- [var texture: MDLTexture?](./texture.md)
   The texture object that provides image data for sampling.
-- [var hardwareFilter: MDLTextureFilter?](mdltexturesampler/hardwarefilter.md)
+- [var hardwareFilter: MDLTextureFilter?](./hardwarefilter.md)
   An object that describes filtering modes for sampling from the texture.
 
 

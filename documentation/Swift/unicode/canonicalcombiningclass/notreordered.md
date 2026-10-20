@@ -1,7 +1,8 @@
 # notReordered
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Base glyphs that occupy their own space and do not combine with others.
 

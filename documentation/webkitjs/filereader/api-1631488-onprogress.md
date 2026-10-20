@@ -1,7 +1,8 @@
 # onprogress
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 **Availability**:
 - Safari Desktop 5.1+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 attribute EventHandler onprogress;
 ```
 

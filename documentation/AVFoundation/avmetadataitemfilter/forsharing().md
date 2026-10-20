@@ -1,7 +1,8 @@
 # forSharing()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a metadata filter to use for sharing assets.
 
@@ -18,6 +19,10 @@ Returns a metadata filter to use for sharing assets.
 
 ```swift
 class func forSharing() -> AVMetadataItemFilter
+```
+
+```objc
++ (AVMetadataItemFilter *) metadataItemFilterForSharing;
 ```
 
 #### Return Value

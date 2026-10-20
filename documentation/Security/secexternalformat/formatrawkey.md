@@ -1,7 +1,8 @@
 # SecExternalFormat.formatRawKey
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Format for symmetric keys. Raw, unformatted key bits. This is the default for symmetric keys.
 
@@ -12,6 +13,10 @@ Format for symmetric keys. Raw, unformatted key bits. This is the default for sy
 
 ```swift
 case formatRawKey
+```
+
+```c
+kSecFormatRawKey
 ```
 
 

@@ -1,7 +1,8 @@
 # replaceFormatDescription(_:with:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces a format description with another or cancels a previous replacement.
 
@@ -18,6 +19,10 @@ Replaces a format description with another or cancels a previous replacement.
 
 ```swift
 func replaceFormatDescription(_ originalFormatDescription: CMFormatDescription, with replacementFormatDescription: CMFormatDescription?)
+```
+
+```objc
+- (void) replaceFormatDescription:(CMFormatDescriptionRef) originalFormatDescription withFormatDescription:(CMFormatDescriptionRef) replacementFormatDescription;
 ```
 
 ## Parameters

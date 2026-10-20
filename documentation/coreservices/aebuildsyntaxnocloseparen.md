@@ -1,7 +1,8 @@
 # aeBuildSyntaxNoCloseParen
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A data value was missing a closing parenthesis.
 

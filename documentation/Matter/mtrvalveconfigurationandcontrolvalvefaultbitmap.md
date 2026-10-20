@@ -1,7 +1,8 @@
 # MTRValveConfigurationAndControlValveFaultBitmap
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.6+
@@ -18,29 +19,33 @@
 struct MTRValveConfigurationAndControlValveFaultBitmap
 ```
 
+```c
+enum MTRValveConfigurationAndControlValveFaultBitmap : uint16_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt16)](mtrvalveconfigurationandcontrolvalvefaultbitmap/init(rawvalue:).md)
+- [init(rawValue: UInt16)](./mtrvalveconfigurationandcontrolvalvefaultbitmap/init%28rawvalue%29.md)
 ### Type Properties
-- [static var blocked: MTRValveConfigurationAndControlValveFaultBitmap](mtrvalveconfigurationandcontrolvalvefaultbitmap/blocked.md)
-- [static var currentExceeded: MTRValveConfigurationAndControlValveFaultBitmap](mtrvalveconfigurationandcontrolvalvefaultbitmap/currentexceeded.md)
-- [static var generalFault: MTRValveConfigurationAndControlValveFaultBitmap](mtrvalveconfigurationandcontrolvalvefaultbitmap/generalfault.md)
-- [static var leaking: MTRValveConfigurationAndControlValveFaultBitmap](mtrvalveconfigurationandcontrolvalvefaultbitmap/leaking.md)
-- [static var notConnected: MTRValveConfigurationAndControlValveFaultBitmap](mtrvalveconfigurationandcontrolvalvefaultbitmap/notconnected.md)
-- [static var shortCircuit: MTRValveConfigurationAndControlValveFaultBitmap](mtrvalveconfigurationandcontrolvalvefaultbitmap/shortcircuit.md)
+- [static var blocked: MTRValveConfigurationAndControlValveFaultBitmap](./mtrvalveconfigurationandcontrolvalvefaultbitmap/blocked.md)
+- [static var currentExceeded: MTRValveConfigurationAndControlValveFaultBitmap](./mtrvalveconfigurationandcontrolvalvefaultbitmap/currentexceeded.md)
+- [static var generalFault: MTRValveConfigurationAndControlValveFaultBitmap](./mtrvalveconfigurationandcontrolvalvefaultbitmap/generalfault.md)
+- [static var leaking: MTRValveConfigurationAndControlValveFaultBitmap](./mtrvalveconfigurationandcontrolvalvefaultbitmap/leaking.md)
+- [static var notConnected: MTRValveConfigurationAndControlValveFaultBitmap](./mtrvalveconfigurationandcontrolvalvefaultbitmap/notconnected.md)
+- [static var shortCircuit: MTRValveConfigurationAndControlValveFaultBitmap](./mtrvalveconfigurationandcontrolvalvefaultbitmap/shortcircuit.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # customView(configuration:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a custom view accessory.
 
@@ -10,7 +11,7 @@ Creates a custom view accessory.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -28,7 +29,8 @@ A configured custom cell accessory.
 
 ## See Also
 
-- [UICellAccessory.CustomViewConfiguration](uicellaccessory-swift.struct/customviewconfiguration.md)
+### Creating a custom accessory
+- [UICellAccessory.CustomViewConfiguration](./customviewconfiguration.md)
   Configuration options for a custom accessory.
 
 

@@ -1,7 +1,8 @@
 # wTotalLength
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The total length of the descriptor, including the length of all related interface, endpoint, and vendor-specific descriptors.
 
@@ -10,15 +11,16 @@ The total length of the descriptor, including the length of all related interfac
 
 ## Declaration
 
-```swift
+```c
 uint16_t wTotalLength;
 ```
 
 ## See Also
 
-- [bLength](iousbconfigurationdescheader/1546382-blength.md)
+### Getting the Properties
+- [bLength](./api-1546382-blength.md)
   The size of the descriptor.
-- [bDescriptorType](iousbconfigurationdescheader/1546140-bdescriptortype.md)
+- [bDescriptorType](./api-1546140-bdescriptortype.md)
   The type of the descriptor.
 
 

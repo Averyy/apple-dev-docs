@@ -1,17 +1,22 @@
 # NSPopover.Behavior.applicationDefined
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Your application assumes responsibility for closing the popover.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case applicationDefined
+```
+
+```c
+NSPopoverBehaviorApplicationDefined
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ The system will still close the popover in a limited number of circumstances. Fo
 
 ## See Also
 
-- [NSPopover.Behavior.transient](nspopover/behavior-swift.enum/transient.md)
+### Constants
+- [NSPopover.Behavior.transient](./transient.md)
   The system will close the popover when the user interacts with a user interface element outside the popover.
-- [NSPopover.Behavior.semitransient](nspopover/behavior-swift.enum/semitransient.md)
+- [NSPopover.Behavior.semitransient](./semitransient.md)
   The system will close the popover when the user interacts with user interface elements in the window containing the popover’s positioning view.
 
 

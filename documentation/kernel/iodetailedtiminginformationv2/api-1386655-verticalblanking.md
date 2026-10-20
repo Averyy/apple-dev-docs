@@ -1,7 +1,8 @@
 # verticalBlanking
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Blanking lines per frame.
 
@@ -10,7 +11,7 @@ Blanking lines per frame.
 
 ## Declaration
 
-```swift
+```c
 UInt32 verticalBlanking;
 ```
 

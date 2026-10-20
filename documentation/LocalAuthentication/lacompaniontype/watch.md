@@ -1,7 +1,8 @@
 # LACompanionType.watch
 
 **Framework**: Local Authentication  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Paired Apple Watch
 
@@ -12,6 +13,10 @@ Paired Apple Watch
 
 ```swift
 case watch
+```
+
+```c
+LACompanionTypeWatch
 ```
 
 

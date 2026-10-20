@@ -1,7 +1,8 @@
 # NEAppPushManager
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that configures a push provider and manages its life cycle.
 
@@ -17,82 +18,87 @@ An object that configures a push provider and manages its life cycle.
 class NEAppPushManager
 ```
 
+```objc
+@interface NEAppPushManager : NSObject
+```
+
 ## Mentions
 
-- [Maintaining a Reliable Network Connection](maintaining-a-reliable-network-connection.md)
+- [Maintaining a Reliable Network Connection](./maintaining-a-reliable-network-connection.md)
 
 #### Overview
 
-Your app can create as many [`NEAppPushManager`](neapppushmanager.md) instances as you need. Load your managers from the persistent store and set up their delegates immediately after the app launches, so they’re ready to handle incoming calls.
+Your app can create as many [`NEAppPushManager`](./neapppushmanager.md) instances as you need. Load your managers from the persistent store and set up their delegates immediately after the app launches, so they’re ready to handle incoming calls.
 
 ## Topics
 
 ### Matching Wi-Fi networks
-- [var matchSSIDs: [String]](neapppushmanager/matchssids.md)
+- [var matchSSIDs: [String]](./neapppushmanager/matchssids.md)
   An array of Wi-Fi SSID strings that the system matches for local push activation.
-- [var matchPrivateLTENetworks: [NEPrivateLTENetwork]](neapppushmanager/matchprivateltenetworks.md)
+- [var matchPrivateLTENetworks: [NEPrivateLTENetwork]](./neapppushmanager/matchprivateltenetworks.md)
   An array of private LTE networks that the system matches for local push activation.
-- [class NEPrivateLTENetwork](neprivateltenetwork.md)
+- [class NEPrivateLTENetwork](./neprivateltenetwork.md)
   The parameters of a private LTE network.
 ### Persisting manager settings
-- [func loadFromPreferences(completionHandler: ((any Error)?) -> Void)](neapppushmanager/loadfrompreferences(completionhandler:).md)
+- [func loadFromPreferences(completionHandler: ((any Error)?) -> Void)](./neapppushmanager/loadfrompreferences%28completionhandler%29.md)
   Loads the manager’s saved configuration from the persistent store.
-- [class func loadAllFromPreferences(completionHandler: ([NEAppPushManager]?, (any Error)?) -> Void)](neapppushmanager/loadallfrompreferences(completionhandler:).md)
+- [class func loadAllFromPreferences(completionHandler: ([NEAppPushManager]?, (any Error)?) -> Void)](./neapppushmanager/loadallfrompreferences%28completionhandler%29.md)
   Loads all saved manager configurations asynchronously.
-- [func saveToPreferences(completionHandler: ((any Error)?) -> Void)](neapppushmanager/savetopreferences(completionhandler:).md)
+- [func saveToPreferences(completionHandler: ((any Error)?) -> Void)](./neapppushmanager/savetopreferences%28completionhandler%29.md)
   Saves the manager’s configuration in the persistent store.
-- [func removeFromPreferences(completionHandler: ((any Error)?) -> Void)](neapppushmanager/removefrompreferences(completionhandler:).md)
+- [func removeFromPreferences(completionHandler: ((any Error)?) -> Void)](./neapppushmanager/removefrompreferences%28completionhandler%29.md)
   Removes the manager’s configuration from the persistent store.
 ### Working with a delegate
-- [var delegate: (any NEAppPushDelegate)?](neapppushmanager/delegate.md)
+- [var delegate: (any NEAppPushDelegate)?](./neapppushmanager/delegate.md)
   A delegate that receives incoming call information from the provider.
-- [protocol NEAppPushDelegate](neapppushdelegate.md)
+- [protocol NEAppPushDelegate](./neapppushdelegate.md)
   A protocol that defines how an app push manager instance interacts with the framework.
 ### Inspecting manager properties
-- [var isActive: Bool](neapppushmanager/isactive.md)
+- [var isActive: Bool](./neapppushmanager/isactive.md)
   A Boolean value that indicates whether a configuration is in use.
-- [var isEnabled: Bool](neapppushmanager/isenabled.md)
+- [var isEnabled: Bool](./neapppushmanager/isenabled.md)
   A property you use to toggle enabling the configuration.
-- [var localizedDescription: String?](neapppushmanager/localizeddescription.md)
+- [var localizedDescription: String?](./neapppushmanager/localizeddescription.md)
   A string that contains the localized description of the app push manager.
 ### Inspecting provider properties
-- [var providerConfiguration: [String : Any]](neapppushmanager/providerconfiguration.md)
+- [var providerConfiguration: [String : Any]](./neapppushmanager/providerconfiguration.md)
   A dictionary that contains vendor-specific key-value pairs, that you use to configure a provider.
-- [var providerBundleIdentifier: String?](neapppushmanager/providerbundleidentifier.md)
+- [var providerBundleIdentifier: String?](./neapppushmanager/providerbundleidentifier.md)
   A string that contains the bundle identifier of the push provider.
 ### Operating over Ethernet
-- [var matchEthernet: Bool](neapppushmanager/matchethernet.md)
+- [var matchEthernet: Bool](./neapppushmanager/matchethernet.md)
   A property that indicates Ethernet support for Local Push Connectivity.
 ### Supporting 3GPP Mission Critical Services
-- [var matchMissionCriticalService: Bool](neapppushmanager/matchmissioncriticalservice.md)
+- [var matchMissionCriticalService: Bool](./neapppushmanager/matchmissioncriticalservice.md)
   A property that indicates support for Mission Critical Services.
 ### Handling errors
-- [struct NEAppPushManagerError](neapppushmanagererror-swift.struct.md)
+- [struct NEAppPushManagerError](./neapppushmanagererror-swift.struct.md)
   An error that the push manager encounters.
-- [let NEAppPushErrorDomain: String](neapppusherrordomain.md)
+- [let NEAppPushErrorDomain: String](./neapppusherrordomain.md)
   The error domain string for local push errors.
-- [NEAppPushManagerError.Code](neapppushmanagererror-swift.struct/code.md)
+- [NEAppPushManagerError.Code](./neapppushmanagererror-swift.struct/code.md)
   Error codes that the local push API declares.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NEAppPushProvider](neapppushprovider.md)
+### Essentials
+- [class NEAppPushProvider](./neapppushprovider.md)
   An object that creates and maintains a persistent network connection to a local push server.
-- [Maintaining a Reliable Network Connection](maintaining-a-reliable-network-connection.md)
+- [Maintaining a Reliable Network Connection](./maintaining-a-reliable-network-connection.md)
   Implement your Local Push Connectivity app to ensure delivery of notifications.
-- [Receiving Voice and Text Communications on a Local Network](receiving-voice-and-text-communications-on-a-local-network.md)
+- [Receiving Voice and Text Communications on a Local Network](./receiving-voice-and-text-communications-on-a-local-network.md)
   Provide voice and text communication on a local network isolated from Apple Push Notification service by adopting Local Push Connectivity.
 
 

@@ -1,7 +1,8 @@
 # targets
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The names of the targets in this product.
 
@@ -13,9 +14,10 @@ final let targets: [String]
 
 ## See Also
 
-- [let type: Product.Library.LibraryType?](product/library/type.md)
+### Describing a Library Product
+- [let type: Product.Library.LibraryType?](./type.md)
   The type of the library.
-- [Product.Library.LibraryType](product/library/librarytype.md)
+- [Product.Library.LibraryType](./librarytype.md)
   The different types of a library product.
 
 

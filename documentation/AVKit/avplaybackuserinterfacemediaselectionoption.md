@@ -1,7 +1,8 @@
 # AVPlaybackUserInterfaceMediaSelectionOption
 
 **Framework**: AVKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Represents a media selection option for audio tracks or subtitle tracks.
 
@@ -16,6 +17,10 @@ Represents a media selection option for audio tracks or subtitle tracks.
 class AVPlaybackUserInterfaceMediaSelectionOption
 ```
 
+```objc
+@interface AVPlaybackUserInterfaceMediaSelectionOption : NSObject
+```
+
 #### Overview
 
 This class represents individual media options (such as audio tracks or subtitle tracks) that can be selected by the user in media playback interfaces. Each option provides display information and metadata for user selection.
@@ -23,39 +28,40 @@ This class represents individual media options (such as audio tracks or subtitle
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](avplaybackuserinterfacemediaselectionoption/init(coder:).md)
-- [convenience init(displayName: String, identifier: String, language: Locale.Language?, mediaCharacteristics: [AVMediaCharacteristic])](avplaybackuserinterfacemediaselectionoption/init(displayname:identifier:language:mediacharacteristics:).md)
+- [init?(coder: NSCoder)](./avplaybackuserinterfacemediaselectionoption/init%28coder%29.md)
+- [convenience init(displayName: String, identifier: String, language: Locale.Language?, mediaCharacteristics: [AVMediaCharacteristic])](./avplaybackuserinterfacemediaselectionoption/init%28displayname,identifier,language,mediacharacteristics%29.md)
   Creates a new media selection option.
 ### Instance Properties
-- [var displayName: String](avplaybackuserinterfacemediaselectionoption/displayname.md)
+- [var displayName: String](./avplaybackuserinterfacemediaselectionoption/displayname.md)
   Human-readable name for this media option displayed in user interfaces (e.g., “English”, “Spanish (Latin America)”, “Director’s Commentary”).
-- [var identifier: String](avplaybackuserinterfacemediaselectionoption/identifier.md)
+- [var identifier: String](./avplaybackuserinterfacemediaselectionoption/identifier.md)
   Unique system identifier for this media option, used for programmatic selection and persistence across sessions.
-- [var language: Locale.Language?](avplaybackuserinterfacemediaselectionoption/language.md)
+- [var language: Locale.Language?](./avplaybackuserinterfacemediaselectionoption/language.md)
   The language of this media selection option.
-- [var mediaCharacteristics: [AVMediaCharacteristic]](avplaybackuserinterfacemediaselectionoption/mediacharacteristics.md)
+- [var mediaCharacteristics: [AVMediaCharacteristic]](./avplaybackuserinterfacemediaselectionoption/mediacharacteristics.md)
   The media characteristics describing accessibility features and content properties of this option. Common values include `AVMediaCharacteristicContainsOnlyForcedSubtitles`, `AVMediaCharacteristicTranscribesSpokenDialogForAccessibility`, and `AVMediaCharacteristicDescribesMusicAndSoundForAccessibility`. May be empty if no characteristics apply.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol AVPlaybackUserInterfaceMediaSelectionControllable](avplaybackuserinterfacemediaselectioncontrollable-8ee5z.md)
+### Media selection
+- [protocol AVPlaybackUserInterfaceMediaSelectionControllable](./avplaybackuserinterfacemediaselectioncontrollable-8ee5z.md)
   Provides audio and subtitle selection capabilities for media content.
 
 

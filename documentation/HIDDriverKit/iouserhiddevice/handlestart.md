@@ -1,17 +1,18 @@
 # handleStart
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs any custom initialization associated with starting the device service.
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool handleStart(IOService *provider);
 ```
 
@@ -23,7 +24,7 @@ virtual bool handleStart(IOService *provider);
 
 When defining a custom service, override this method and use it to perform any custom initialization. For example, you might allocate memory for your service’s instance variables and store a reference to the provider object for later use. The default implementation of this method returns `true`, and performs no other actions.
 
-Don’t call this method yourself. The [`Start`](iouserhiddevice/start.md) method calls it when starting up the service.
+Don’t call this method yourself. The [`Start`](./start.md) method calls it when starting up the service.
 
 ## Parameters
 
@@ -31,7 +32,8 @@ Don’t call this method yourself. The [`Start`](iouserhiddevice/start.md) metho
 
 ## See Also
 
-- [Start](iouserhiddevice/start.md)
+### Running the Service
+- [Start](./start.md)
   Starts the device service and associates it with the specified provider object.
 
 

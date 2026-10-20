@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: Media Intelligence  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared video analyzer.
 
@@ -21,15 +22,16 @@ static let shared: VideoAnalyzer
 
 ## Mentions
 
-- [Finding the best moments in a video](finding-the-best-moments-in-a-video.md)
+- [Finding the best moments in a video](../finding-the-best-moments-in-a-video.md)
 
 ## See Also
 
-- [VideoAnalyzer.Request](videoanalyzer/request.md)
+### Analyzing a video asset
+- [VideoAnalyzer.Request](./request.md)
   A type that describes a video analysis operation.
-- [VideoAnalyzer.Result](videoanalyzer/result.md)
+- [VideoAnalyzer.Result](./result.md)
   A type that represents the output of a video analysis operation.
-- [func analyze<each T>(MediaIntelligenceVideoAsset, for: repeat each T) async throws -> (repeat Result<(each T).Result, any Error>)](videoanalyzer/analyze(_:for:).md)
+- [func analyze<each T>(MediaIntelligenceVideoAsset, for: repeat each T) async throws -> (repeat Result<(each T).Result, any Error>)](./analyze%28_,for%29.md)
   Analyzes a video asset using the specified requests.
 
 

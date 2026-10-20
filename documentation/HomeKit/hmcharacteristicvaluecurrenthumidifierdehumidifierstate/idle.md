@@ -1,7 +1,8 @@
 # HMCharacteristicValueCurrentHumidifierDehumidifierState.idle
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The accessory is idle.
 
@@ -19,13 +20,18 @@ The accessory is idle.
 case idle
 ```
 
+```c
+HMCharacteristicValueCurrentHumidifierDehumidifierStateIdle
+```
+
 ## See Also
 
-- [HMCharacteristicValueCurrentHumidifierDehumidifierState.inactive](hmcharacteristicvaluecurrenthumidifierdehumidifierstate/inactive.md)
+### Current States
+- [HMCharacteristicValueCurrentHumidifierDehumidifierState.inactive](./inactive.md)
   The accesory is off.
-- [HMCharacteristicValueCurrentHumidifierDehumidifierState.humidifying](hmcharacteristicvaluecurrenthumidifierdehumidifierstate/humidifying.md)
+- [HMCharacteristicValueCurrentHumidifierDehumidifierState.humidifying](./humidifying.md)
   The accessory is adding water to the air.
-- [HMCharacteristicValueCurrentHumidifierDehumidifierState.dehumidifying](hmcharacteristicvaluecurrenthumidifierdehumidifierstate/dehumidifying.md)
+- [HMCharacteristicValueCurrentHumidifierDehumidifierState.dehumidifying](./dehumidifying.md)
   The accessory is removing water from the air.
 
 

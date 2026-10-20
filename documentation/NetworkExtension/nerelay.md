@@ -1,7 +1,8 @@
 # NERelay
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A single relay server configuration that you can chain together with other relays.
 
@@ -19,51 +20,56 @@ A single relay server configuration that you can chain together with other relay
 class NERelay
 ```
 
+```objc
+@interface NERelay : NSObject
+```
+
 #### Overview
 
-Relay servers are secure HTTP proxies that allow proxying TCP traffic using the `CONNECT` method and UDP traffic using the `connect-udp` protocol defined in [`RFC 9298`](https://developer.apple.comhttps://www.rfc-editor.org/rfc/rfc9298.html).
+Relay servers are secure HTTP proxies that allow proxying TCP traffic using the `CONNECT` method and UDP traffic using the `connect-udp` protocol defined in [RFC 9298](https://www.rfc-editor.org/rfc/rfc9298.html).
 
 ## Topics
 
 ### Configuring server properties
-- [var http3RelayURL: URL?](nerelay/http3relayurl.md)
+- [var http3RelayURL: URL?](./nerelay/http3relayurl.md)
   A URL identifying the relay server accessible using HTTP/3.
-- [var http2RelayURL: URL?](nerelay/http2relayurl.md)
+- [var http2RelayURL: URL?](./nerelay/http2relayurl.md)
   A URL identifying the relay server accessible using HTTP/2.
-- [var dnsOverHTTPSURL: URL?](nerelay/dnsoverhttpsurl.md)
+- [var dnsOverHTTPSURL: URL?](./nerelay/dnsoverhttpsurl.md)
   The URL of a DNS-over-HTTPS (DoH) resolver accessible from the relay.
-- [var rawPublicKeys: [Data]?](nerelay/rawpublickeys.md)
+- [var rawPublicKeys: [Data]?](./nerelay/rawpublickeys.md)
   An array of TLS raw public keys that the relay server can present during the TLS handshake.
 ### Configuring client properties
-- [var additionalHTTPHeaderFields: [String : String]](nerelay/additionalhttpheaderfields.md)
+- [var additionalHTTPHeaderFields: [String : String]](./nerelay/additionalhttpheaderfields.md)
   A dictionary of additional HTTP headers to send as part of `CONNECT` requests to the relay.
-- [var identityData: Data?](nerelay/identitydata.md)
+- [var identityData: Data?](./nerelay/identitydata.md)
   The PKCS12 data for the relay client authentication.
-- [var identityDataPassword: String?](nerelay/identitydatapassword.md)
+- [var identityDataPassword: String?](./nerelay/identitydatapassword.md)
   The password the relay uses to decrypt the PKCS12 identity data.
-- [var syntheticDNSAnswerIPv4Prefix: String?](nerelay/syntheticdnsansweripv4prefix.md)
+- [var syntheticDNSAnswerIPv4Prefix: String?](./nerelay/syntheticdnsansweripv4prefix.md)
   An IPv4 address prefix the relay uses to handle address info requests.
-- [var syntheticDNSAnswerIPv6Prefix: String?](nerelay/syntheticdnsansweripv6prefix.md)
+- [var syntheticDNSAnswerIPv6Prefix: String?](./nerelay/syntheticdnsansweripv6prefix.md)
   An IPv6 address prefix the relay uses to handle address info requests.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class NERelayManager](nerelaymanager.md)
+### Relay configuration
+- [class NERelayManager](./nerelaymanager.md)
   An object you use to create and manage a network relay configuration.
 
 

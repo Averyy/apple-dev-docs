@@ -1,7 +1,8 @@
 # identity
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default camera texture matrix for the immersive camera.
 

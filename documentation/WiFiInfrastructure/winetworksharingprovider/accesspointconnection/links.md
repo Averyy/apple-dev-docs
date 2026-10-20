@@ -1,7 +1,8 @@
 # links
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of active data links with the Access Point.
 

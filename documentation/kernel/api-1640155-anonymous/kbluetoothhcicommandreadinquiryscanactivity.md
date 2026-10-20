@@ -1,14 +1,15 @@
 # kBluetoothHCICommandReadInquiryScanActivity
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCICommandReadInquiryScanActivity = 0x001D
 ```
 

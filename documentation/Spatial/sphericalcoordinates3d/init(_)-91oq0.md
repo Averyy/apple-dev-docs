@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Spatial spherical coordinates structure from a simd packed vector.
 

@@ -1,7 +1,8 @@
 # AVCaptureDevice.AutoFocusRangeRestriction.far
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device primarily attempts to focus on subjects far away from the camera.
 
@@ -17,11 +18,16 @@ The device primarily attempts to focus on subjects far away from the camera.
 case far
 ```
 
+```c
+AVCaptureAutoFocusRangeRestrictionFar
+```
+
 ## See Also
 
-- [AVCaptureDevice.AutoFocusRangeRestriction.none](avcapturedevice/autofocusrangerestriction-swift.enum/none.md)
+### Constants
+- [AVCaptureDevice.AutoFocusRangeRestriction.none](./none.md)
   The device attempts to focus on objects at any range.
-- [AVCaptureDevice.AutoFocusRangeRestriction.near](avcapturedevice/autofocusrangerestriction-swift.enum/near.md)
+- [AVCaptureDevice.AutoFocusRangeRestriction.near](./near.md)
   The device primarily attempts to focus on subjects near the camera.
 
 

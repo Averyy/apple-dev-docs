@@ -1,7 +1,8 @@
 # MTRDeviceEnergyManagementModeClusterChangeToModeResponseParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.4+
@@ -18,27 +19,31 @@
 class MTRDeviceEnergyManagementModeClusterChangeToModeResponseParams
 ```
 
+```objc
+@interface MTRDeviceEnergyManagementModeClusterChangeToModeResponseParams : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(responseValue: [String : Any]) throws](mtrdeviceenergymanagementmodeclusterchangetomoderesponseparams/init(responsevalue:).md)
+- [init(responseValue: [String : Any]) throws](./mtrdeviceenergymanagementmodeclusterchangetomoderesponseparams/init%28responsevalue%29.md)
   Initialize an MTRDeviceEnergyManagementModeClusterChangeToModeResponseParams with a response-value dictionary of the sort that MTRDeviceResponseHandler would receive.
 ### Instance Properties
-- [var status: NSNumber](mtrdeviceenergymanagementmodeclusterchangetomoderesponseparams/status.md)
-- [var statusText: String?](mtrdeviceenergymanagementmodeclusterchangetomoderesponseparams/statustext.md)
+- [var status: NSNumber](./mtrdeviceenergymanagementmodeclusterchangetomoderesponseparams/status.md)
+- [var statusText: String?](./mtrdeviceenergymanagementmodeclusterchangetomoderesponseparams/statustext.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

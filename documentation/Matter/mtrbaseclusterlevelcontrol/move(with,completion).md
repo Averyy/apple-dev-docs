@@ -1,7 +1,8 @@
 # move(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func move(with params: MTRLevelControlClusterMoveParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func move(with params: MTRLevelControlClusterMoveParams) async throws
+```
+
+```objc
+- (void) moveWithParams:(MTRLevelControlClusterMoveParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

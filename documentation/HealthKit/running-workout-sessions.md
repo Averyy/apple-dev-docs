@@ -1,6 +1,7 @@
 # Running workout sessions
 
-**Framework**: HealthKit
+**Framework**: HealthKit  
+**Role**: Article
 
 Track a workout on Apple Watch.
 
@@ -8,11 +9,11 @@ Track a workout on Apple Watch.
 
 Use workout sessions to track a user’s activity on Apple Watch. While the session runs, the system fine-tunes the watch’s sensors for the specified activity. For example, all workout sessions generate high-frequency heart rate samples; however, an outdoor cycling activity generates accurate location data, while an indoor cycling activity doesn’t.
 
-To track workouts on Apple Watch, you must set up, start, and save a workout session. Make starting and stopping workouts on Apple Watch as easy and obvious as possible. The app must clearly indicate when a workout session is in progress, and either automatically save workout data for the user, or provide a clear option to explicitly save or discard workout data. Finally, the watchOS app should provide clear feedback when a workout is successfully saved. For more information, see [`Health and Fitness`](https://developer.apple.comhttps://developer.apple.com/watchos/human-interface-guidelines/system-capabilities/health-and-fitness/) in [`watchOS Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/watchos/human-interface-guidelines/overview/themes/).
+To track workouts on Apple Watch, you must set up, start, and save a workout session. Make starting and stopping workouts on Apple Watch as easy and obvious as possible. The app must clearly indicate when a workout session is in progress, and either automatically save workout data for the user, or provide a clear option to explicitly save or discard workout data. Finally, the watchOS app should provide clear feedback when a workout is successfully saved. For more information, see [Health and Fitness](https://developer.apple.com/watchos/human-interface-guidelines/system-capabilities/health-and-fitness/) in [watchOS Human Interface Guidelines](https://developer.apple.com/watchos/human-interface-guidelines/overview/themes/).
 
-##### Set Up the App
+##### Set up the app
 
-Before creating a workout session, you must set up HealthKit and request permission to read and share any health data your app intends to use. For step-by-step instructions, see [`Setting up HealthKit`](setting-up-healthkit.md).
+Before creating a workout session, you must set up HealthKit and request permission to read and share any health data your app intends to use. For step-by-step instructions, see [Setting up HealthKit](./setting-up-healthkit.md).
 
 For workout sessions, you must request permission to share workout types. You may also want to read any data types automatically recorded by Apple Watch as part of the session.
 
@@ -37,19 +38,19 @@ healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { (su
 }
 ```
 
-> **Note**:  In watchOS 6 and later, users can authorize reading and sharing data on Apple Watch. As a result, you must add usage descriptions to your WatchKit App Extension. Use the [`NSHealthShareUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nshealthshareusagedescription) key to describe why your app needs to read the requested data. Use [`NSHealthUpdateUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nshealthupdateusagedescription) for the data your app intends to write. For projects created using Xcode 13 or later, set these keys in the Target Properties list on the app’s Info tab. For projects created with Xcode 12 or earlier, set these keys in the apps `Info.plist` file. For more information, see [`Information Property List`](https://developer.apple.com/documentation/bundleresources/information-property-list).
+> **Note**:  In watchOS 6 and later, users can authorize reading and sharing data on Apple Watch. As a result, you must add usage descriptions to your WatchKit App Extension. Use the [`NSHealthShareUsageDescription`](../BundleResources/information-property-list/nshealthshareusagedescription.md) key to describe why your app needs to read the requested data. Use [`NSHealthUpdateUsageDescription`](../BundleResources/information-property-list/nshealthupdateusagedescription.md) for the data your app intends to write. For projects created using Xcode 13 or later, set these keys in the Target Properties list on the app’s Info tab. For projects created with Xcode 12 or earlier, set these keys in the apps `Info.plist` file. For more information, see [`Information Property List`](../BundleResources/information-property-list.md).
 
 Apps with an active workout session can run in the background, so you need to add the background modes capability to your WatchKit App Extension.
 
 Workout sessions require the Workout processing background mode. If your app plays audio or provides haptic feedback during the workout session, you must also add the Audio background mode.
 
-![A screenshot showing the Audio and Workout processing background modes added to the WatchKit App Extension.](/images/com.apple.healthkit/media-3384924@2x.png)
+![A screenshot showing the Audio and Workout processing background modes added to the WatchKit App Extension.](https://developer.apple.com/tutorials/images/com.apple.healthkit/media-3384924@2x.png)
 
-Use the [`AVAudioPlayer`](https://developer.apple.com/documentation/avfaudio/avaudioplayer) class to play short audio clips. To play long form audio in the background, see [`Playing Background Audio`](https://developer.apple.com/documentation/watchkit/playing-background-audio).
+Use the [`AVAudioPlayer`](../AVFAudio/avaudioplayer.md) class to play short audio clips. To play long form audio in the background, see [Playing Background Audio](../WatchKit/playing-background-audio.md).
 
 > **Note**:  Workout apps can use the AVFoundation framework to play short audio clips in the background, such as coaching or notifications. In order to play an audio clip, an active workout session must be running; any attempt to play background audio outside a workout session are invalid.
 
-##### Start a Session
+##### Start a session
 
 To start a workout session, begin by creating a configuration object for the workout.
 
@@ -63,7 +64,7 @@ Use the configuration to set the type of activity and the location for the worko
 
 For example, while the session runs, Apple Watch automatically saves active energy-burned samples to the HealthKit store. HealthKit provides optimized calorie calculations for some activities. These include, but are not limited to, run, walk, cycle, stair-climbing, elliptical, and rowing activities. Furthermore, the calculations for activities may differ between indoor and outdoor locations. For all other activities, the system estimates calories based on the data from Apple Watch’s sensors. Depending on the activity, this rate is either never lower than the brisk walk burn rate or never lower than the brisk walk burn rate when moving.
 
-Next, use the configuration to create your workout session and get a reference to the session’s [`HKLiveWorkoutBuilder`](hkliveworkoutbuilder.md) object.
+Next, use the configuration to create your workout session and get a reference to the session’s [`HKLiveWorkoutBuilder`](./hkliveworkoutbuilder.md) object.
 
 ```swift
 do {
@@ -75,16 +76,16 @@ do {
 }
 ```
 
-The [`HKWorkoutSession`](hkworkoutsession.md) class’s initializer can throw an exception if the configuration is invalid, so you need to wrap the initializer in a `do-catch` block.
+The [`HKWorkoutSession`](./hkworkoutsession.md) class’s initializer can throw an exception if the configuration is invalid, so you need to wrap the initializer in a `do-catch` block.
 
-Then, create an [`HKLiveWorkoutDataSource`](hkliveworkoutdatasource.md) object and assign it to the workout builder.
+Then, create an [`HKLiveWorkoutDataSource`](./hkliveworkoutdatasource.md) object and assign it to the workout builder.
 
 ```swift
 builder.dataSource = HKLiveWorkoutDataSource(healthStore: healthStore,
                                              workoutConfiguration: configuration)
 ```
 
-Use the same configuration object for the workout session and the live data source. While the session runs, Apple Watch automatically collects data about the workout, and saves samples to the HealthKit store. For example, an outdoor running session collects and saves [`activeEnergyBurned`](hkquantitytypeidentifier/activeenergyburned.md), [`basalEnergyBurned`](hkquantitytypeidentifier/basalenergyburned.md), [`heartRate`](hkquantitytypeidentifier/heartrate.md), and [`distanceWalkingRunning`](hkquantitytypeidentifier/distancewalkingrunning.md) samples.
+Use the same configuration object for the workout session and the live data source. While the session runs, Apple Watch automatically collects data about the workout, and saves samples to the HealthKit store. For example, an outdoor running session collects and saves [`activeEnergyBurned`](./hkquantitytypeidentifier/activeenergyburned.md), [`basalEnergyBurned`](./hkquantitytypeidentifier/basalenergyburned.md), [`heartRate`](./hkquantitytypeidentifier/heartrate.md), and [`distanceWalkingRunning`](./hkquantitytypeidentifier/distancewalkingrunning.md) samples.
 
 You can assign delegates to monitor both the workout session and the workout builder.
 
@@ -93,9 +94,9 @@ session.delegate = self
 builder.delegate = self
 ```
 
-Your [`HKWorkoutSessionDelegate`](hkworkoutsessiondelegate.md) receives updates whenever the session’s state changes, an event occurs, or the session fails due to an error. Your [`HKLiveWorkoutBuilderDelegate`](hkliveworkoutbuilderdelegate.md) receives updates when either Apple Watch or your app adds a new sample or event to the builder.
+Your [`HKWorkoutSessionDelegate`](./hkworkoutsessiondelegate.md) receives updates whenever the session’s state changes, an event occurs, or the session fails due to an error. Your [`HKLiveWorkoutBuilderDelegate`](./hkliveworkoutbuilderdelegate.md) receives updates when either Apple Watch or your app adds a new sample or event to the builder.
 
-By default, the workout session automatically forwards all events to the builder, so both delegates should receive the same set of events. However, you can set the builder’s [`shouldCollectWorkoutEvents`](hkliveworkoutbuilder/shouldcollectworkoutevents.md) property to [`false`](https://developer.apple.com/documentation/swift/false) if you want to control the events set to the builder.
+By default, the workout session automatically forwards all events to the builder, so both delegates should receive the same set of events. However, you can set the builder’s [`shouldCollectWorkoutEvents`](./hkliveworkoutbuilder/shouldcollectworkoutevents.md) property to [`false`](../Swift/false.md) if you want to control the events set to the builder.
 
 Finally, start the session and the builder.
 
@@ -111,13 +112,13 @@ builder.beginCollection(withStart: Date()) { (success, error) in
 }
 ```
 
-Your app’s user interface should clearly indicate that a workout session is running. Use data passed to your [`HKLiveWorkoutBuilderDelegate`](hkliveworkoutbuilderdelegate.md) to update information about the session.
+Your app’s user interface should clearly indicate that a workout session is running. Use data passed to your [`HKLiveWorkoutBuilderDelegate`](./hkliveworkoutbuilderdelegate.md) to update information about the session.
 
-##### Handle Samples and Events
+##### Handle samples and events
 
-While the session runs, Apple Watch automatically collects and adds samples and events based on the workout configuration. You can record additional information by adding your own events and samples to the workout. To add samples, call the builder’s [`add(_:completion:)`](hkworkoutbuilder/add(_:completion:).md) method. To add events, call the [`addWorkoutEvents(_:completion:)`](hkworkoutbuilder/addworkoutevents(_:completion:).md) method.
+While the session runs, Apple Watch automatically collects and adds samples and events based on the workout configuration. You can record additional information by adding your own events and samples to the workout. To add samples, call the builder’s [`add(_:completion:)`](./hkworkoutbuilder/add%28_,completion%29.md) method. To add events, call the [`addWorkoutEvents(_:completion:)`](./hkworkoutbuilder/addworkoutevents%28_,completion%29.md) method.
 
-Typically, you should update your app’s user interface whenever the builder receives a new sample or event. To respond to new samples, implement your [`HKLiveWorkoutBuilderDelegate`](hkliveworkoutbuilderdelegate.md) delegate’s [`workoutBuilder(_:didCollectDataOf:)`](hkliveworkoutbuilderdelegate/workoutbuilder(_:didcollectdataof:).md) method.
+Typically, you should update your app’s user interface whenever the builder receives a new sample or event. To respond to new samples, implement your [`HKLiveWorkoutBuilderDelegate`](./hkliveworkoutbuilderdelegate.md) delegate’s [`workoutBuilder(_:didCollectDataOf:)`](./hkliveworkoutbuilderdelegate/workoutbuilder%28_,didcollectdataof%29.md) method.
 
 ```swift
 func workoutBuilder(_ workoutBuilder: HKLiveWorkoutBuilder, didCollectDataOf collectedTypes: Set<HKSampleType>) {
@@ -137,9 +138,9 @@ func workoutBuilder(_ workoutBuilder: HKLiveWorkoutBuilder, didCollectDataOf col
 }
 ```
 
-HealthKit calls this method whenever the builder receives a new sample. Your implementation should examine the samples and update your app’s user interface—for example, by updating the current distance traveled, calories burned, and pace during a run. Use the workout builder’s [`statistics(for:)`](hkworkoutbuilder/statistics(for:).md) method to calculate statistics, such as the total, average, minimum, or maximum, for any types that have new data.
+HealthKit calls this method whenever the builder receives a new sample. Your implementation should examine the samples and update your app’s user interface—for example, by updating the current distance traveled, calories burned, and pace during a run. Use the workout builder’s [`statistics(for:)`](./hkworkoutbuilder/statistics%28for%29.md) method to calculate statistics, such as the total, average, minimum, or maximum, for any types that have new data.
 
-To respond to new events, implement your [`HKLiveWorkoutBuilderDelegate`](hkliveworkoutbuilderdelegate.md) delegate’s [`workoutBuilderDidCollectEvent(_:)`](hkliveworkoutbuilderdelegate/workoutbuilderdidcollectevent(_:).md) method.
+To respond to new events, implement your [`HKLiveWorkoutBuilderDelegate`](./hkliveworkoutbuilderdelegate.md) delegate’s [`workoutBuilderDidCollectEvent(_:)`](./hkliveworkoutbuilderdelegate/workoutbuilderdidcollectevent%28_%29.md) method.
 
 ```swift
 func workoutBuilderDidCollectEvent(_ workoutBuilder: HKLiveWorkoutBuilder) {
@@ -152,9 +153,9 @@ func workoutBuilderDidCollectEvent(_ workoutBuilder: HKLiveWorkoutBuilder) {
 }
 ```
 
-HealthKit calls this method whenever the builder receives a new event. Use the builder’s [`workoutEvents`](hkworkoutbuilder/workoutevents.md) property to examine the last event, and update your user interface as needed. For example, when a [`HKWorkoutEventType.lap`](hkworkouteventtype/lap.md) event occurs, you can increment the number of laps shown.
+HealthKit calls this method whenever the builder receives a new event. Use the builder’s [`workoutEvents`](./hkworkoutbuilder/workoutevents.md) property to examine the last event, and update your user interface as needed. For example, when a [`HKWorkoutEventType.lap`](./hkworkouteventtype/lap.md) event occurs, you can increment the number of laps shown.
 
-##### Run in the Background
+##### Run in the background
 
 When your app has an active workout session, it continues to run in the background. Background execution grants your app the following abilities:
 
@@ -165,23 +166,23 @@ When your app has an active workout session, it continues to run in the backgrou
 
 To maintain high performance on Apple Watch, you must limit the amount of work your app performs in the background. If your app uses an excessive amount of CPU while in the background, watchOS may suspend it. Use Xcode’s CPU report tool or the time profiler in Instruments to test your app’s CPU usage. The system also generates a log with a backtrace whenever it terminates your app.
 
-##### Coordinate with the Companion App
+##### Coordinate with the companion app
 
 If the watchOS app has an iOS companion, be sure to keep both apps in sync. This is particularly important if the user can start workouts on either device.
 
 - If the user starts the workout in your watchOS app, and then tries to end it in the iOS companion, the iOS app should instruct the user to end the workout in your watchOS app. Otherwise, Apple Watch workout continues to run, which can lead to accidentally saving invalid data to the HealthKit store.
-- If the user starts a workout in the iOS companion, and then opens your watchOS app, the watchOS app should automatically start a workout session for the workout in progress. If you save the workout in the watchOS app, you can incorporate data from the iOS workout. For example, you should set the workout’s [`startDate`](hksample/startdate.md) to the iOS workout’s start. Also, if your app calculates its own calories, you can retroactively give credit for the calories burned before the workout session began.
+- If the user starts a workout in the iOS companion, and then opens your watchOS app, the watchOS app should automatically start a workout session for the workout in progress. If you save the workout in the watchOS app, you can incorporate data from the iOS workout. For example, you should set the workout’s [`startDate`](./hksample/startdate.md) to the iOS workout’s start. Also, if your app calculates its own calories, you can retroactively give credit for the calories burned before the workout session began.
 - If the user doesn’t start and stop a workout session in your watchOS app, don’t try to retroactively create a workout session on Apple Watch.
 
-##### End a Session
+##### End a session
 
-After the user finishes the workout, stop the session by calling [`stopActivity(with:)`](hkworkoutsession/stopactivity(with:).md).
+After the user finishes the workout, stop the session by calling [`stopActivity(with:)`](./hkworkoutsession/stopactivity%28with%29.md).
 
 ```swift
 session.stopActivity(with: Date())
 ```
 
-After the session has transitioned to the `.stopped` state, call the builder’s [`endCollection(withEnd:completion:)`](hkworkoutbuilder/endcollection(withend:completion:).md) and [`finishWorkout(completion:)`](hkworkoutbuilder/finishworkout(completion:).md) methods. Finally, call [`end()`](hkworkoutsession/end().md) to end the session.
+After the session has transitioned to the `.stopped` state, call the builder’s [`endCollection(withEnd:completion:)`](./hkworkoutbuilder/endcollection%28withend,completion%29.md) and [`finishWorkout(completion:)`](./hkworkoutbuilder/finishworkout%28completion%29.md) methods. Finally, call [`end()`](./hkworkoutsession/end%28%29.md) to end the session.
 
 ```swift
 func workoutSession(_ workoutSession: HKWorkoutSession, didChangeTo toState: HKWorkoutSessionState,
@@ -213,33 +214,34 @@ func workoutSession(_ workoutSession: HKWorkoutSession, didChangeTo toState: HKW
 }
 ```
 
-The [`endCollection(withEnd:completion:)`](hkworkoutbuilder/endcollection(withend:completion:).md) method sets the workout’s end date and deactivates the builder. The [`finishWorkout(completion:)`](hkworkoutbuilder/finishworkout(completion:).md) method saves the workout and its associated data to the HealthKit store.
+The [`endCollection(withEnd:completion:)`](./hkworkoutbuilder/endcollection%28withend,completion%29.md) method sets the workout’s end date and deactivates the builder. The [`finishWorkout(completion:)`](./hkworkoutbuilder/finishworkout%28completion%29.md) method saves the workout and its associated data to the HealthKit store.
 
-##### Recover From Crashes
+##### Recover from crashes
 
-If your app crashes during a workout session, the system calls your extension delegate’s [`handleActiveWorkoutRecovery()`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/handleactiveworkoutrecovery()) method when the app relaunches. In your implementation of this method, call the HealthKit store’s [`recoverActiveWorkoutSession(completion:)`](hkhealthstore/recoveractiveworkoutsession(completion:).md) method. HealthKit attempts to restore the previous workout session, returning either a new session object or an error to the completion block.
+If your app crashes during a workout session, the system calls your extension delegate’s [`handleActiveWorkoutRecovery()`](../WatchKit/wkextensiondelegate/handleactiveworkoutrecovery%28%29.md) method when the app relaunches. In your implementation of this method, call the HealthKit store’s [`recoverActiveWorkoutSession(completion:)`](./hkhealthstore/recoveractiveworkoutsession%28completion%29.md) method. HealthKit attempts to restore the previous workout session, returning either a new session object or an error to the completion block.
 
 As soon as you receive the session object, you must access its builder and set up your data source and delegates again.
 
 ## See Also
 
-- [Build a workout app for Apple Watch](build-a-workout-app-for-apple-watch.md)
+### Sessions
+- [Build a workout app for Apple Watch](./build-a-workout-app-for-apple-watch.md)
   Create your own workout app, quickly and easily, with HealthKit and SwiftUI.
-- [Building a multidevice workout app](building-a-multidevice-workout-app.md)
+- [Building a multidevice workout app](./building-a-multidevice-workout-app.md)
   Mirror a workout from a watchOS app to its companion iOS app, and perform bidirectional communication between them.
-- [Building a workout app for iPhone and iPad](building-a-workout-app-for-iphone-and-ipad.md)
+- [Building a workout app for iPhone and iPad](./building-a-workout-app-for-iphone-and-ipad.md)
   Start a workout in iOS, control it from the Lock Screen with App Intents, and present the workout status with Live Activities.
-- [class HKWorkoutSession](hkworkoutsession.md)
+- [class HKWorkoutSession](./hkworkoutsession.md)
   A session that tracks a person’s workout.
-- [class HKWorkoutConfiguration](hkworkoutconfiguration.md)
+- [class HKWorkoutConfiguration](./hkworkoutconfiguration.md)
   An object that contains configuration information about a workout session.
-- [enum HKWorkoutSessionState](hkworkoutsessionstate.md)
+- [enum HKWorkoutSessionState](./hkworkoutsessionstate.md)
   A workout session’s state.
-- [class HKLiveWorkoutBuilder](hkliveworkoutbuilder.md)
+- [class HKLiveWorkoutBuilder](./hkliveworkoutbuilder.md)
   A builder object that constructs a workout incrementally based on live data from an active workout session.
-- [protocol HKLiveWorkoutBuilderDelegate](hkliveworkoutbuilderdelegate.md)
+- [protocol HKLiveWorkoutBuilderDelegate](./hkliveworkoutbuilderdelegate.md)
   A protocol that defines methods for receiving updates from a live workout builder.
-- [class HKLiveWorkoutDataSource](hkliveworkoutdatasource.md)
+- [class HKLiveWorkoutDataSource](./hkliveworkoutdatasource.md)
   A data source that automatically provides live data from an active workout session.
 
 

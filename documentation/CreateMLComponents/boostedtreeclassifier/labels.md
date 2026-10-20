@@ -1,7 +1,8 @@
 # labels
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of possible labels.
 
@@ -22,11 +23,12 @@ var labels: Set<Label?>
 
 ## See Also
 
-- [var annotationColumnID: ColumnID<Label>](boostedtreeclassifier/annotationcolumnid.md)
+### Getting the properties
+- [var annotationColumnID: ColumnID<Label>](./annotationcolumnid.md)
   The annotation column identifier.
-- [var featureColumnNames: [String]](boostedtreeclassifier/featurecolumnnames.md)
+- [var featureColumnNames: [String]](./featurecolumnnames.md)
   The names of the columns containing feature values.
-- [var configuration: BoostedTreeConfiguration](boostedtreeclassifier/configuration.md)
+- [var configuration: BoostedTreeConfiguration](./configuration.md)
   Boosted tree configuration.
 
 

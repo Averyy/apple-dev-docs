@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a gesture component with the provided UI gesture.
 

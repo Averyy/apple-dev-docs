@@ -1,14 +1,15 @@
 # microtime_with_abstime
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 void microtime_with_abstime(struct timeval *tv, uint64_t *abstime);
 ```
 

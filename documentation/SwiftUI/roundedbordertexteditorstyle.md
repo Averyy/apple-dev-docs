@@ -1,7 +1,8 @@
 # RoundedBorderTextEditorStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A text editor style with a system-defined rounded border.
 
@@ -17,23 +18,24 @@ struct RoundedBorderTextEditorStyle
 
 #### Overview
 
-You can also use [`roundedBorder`](texteditorstyle/roundedborder.md) to construct this style.
+You can also use [`roundedBorder`](./texteditorstyle/roundedborder.md) to construct this style.
 
 ## Topics
 
 ### Creating the text editor style
-- [init()](roundedbordertexteditorstyle/init.md)
+- [init()](./roundedbordertexteditorstyle/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [TextEditorStyle](texteditorstyle.md)
+- [TextEditorStyle](./texteditorstyle.md)
 
 ## See Also
 
-- [struct AutomaticTextEditorStyle](automatictexteditorstyle.md)
+### Supporting types
+- [struct AutomaticTextEditorStyle](./automatictexteditorstyle.md)
   The default text editor style, based on the text editor’s context.
-- [struct PlainTextEditorStyle](plaintexteditorstyle.md)
+- [struct PlainTextEditorStyle](./plaintexteditorstyle.md)
   A text editor style with no decoration.
 
 

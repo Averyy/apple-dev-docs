@@ -1,7 +1,8 @@
 # totalUnlockDuration
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration of time the device is in an unlocked state.
 
@@ -16,13 +17,18 @@ The duration of time the device is in an unlocked state.
 var totalUnlockDuration: TimeInterval { get }
 ```
 
+```objc
+@property (readonly) NSTimeInterval totalUnlockDuration;
+```
+
 ## See Also
 
-- [var duration: TimeInterval](srdeviceusagereport/duration.md)
+### Summarizing Device Use
+- [var duration: TimeInterval](./duration.md)
   The duration that the report spans.
-- [var totalScreenWakes: Int](srdeviceusagereport/totalscreenwakes.md)
+- [var totalScreenWakes: Int](./totalscreenwakes.md)
   The total number of screen wakes for the device.
-- [var totalUnlocks: Int](srdeviceusagereport/totalunlocks.md)
+- [var totalUnlocks: Int](./totalunlocks.md)
   The total number of unlocks for the device.
 
 

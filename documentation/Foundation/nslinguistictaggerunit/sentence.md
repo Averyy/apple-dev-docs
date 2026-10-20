@@ -1,7 +1,8 @@
 # NSLinguisticTaggerUnit.sentence
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An individual sentence.
 
@@ -20,13 +21,18 @@ An individual sentence.
 case sentence
 ```
 
+```c
+NSLinguisticTaggerUnitSentence
+```
+
 ## See Also
 
-- [NSLinguisticTaggerUnit.document](nslinguistictaggerunit/document.md)
+### Constants
+- [NSLinguisticTaggerUnit.document](./document.md)
   The document in its entirety.
-- [NSLinguisticTaggerUnit.paragraph](nslinguistictaggerunit/paragraph.md)
+- [NSLinguisticTaggerUnit.paragraph](./paragraph.md)
   An individual paragraph.
-- [NSLinguisticTaggerUnit.word](nslinguistictaggerunit/word.md)
+- [NSLinguisticTaggerUnit.word](./word.md)
   An individual word.
 
 

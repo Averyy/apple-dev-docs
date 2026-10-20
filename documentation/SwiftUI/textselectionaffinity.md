@@ -1,7 +1,8 @@
 # TextSelectionAffinity
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A representation of the direction or association of a selection or cursor relative to a text character. This concept becomes much more prominent when dealing with bidirectional text (text that contains both LTR and RTL scripts, like English and Arabic combined).
 
@@ -31,7 +32,7 @@ Given the scenario `hello|مرحبا`, where `|` represents the cursor & `مرح
 
 `TextSelectionAffinity` helps resolve this ambiguity by determining the direction or association of the cursor relative to the surrounding text.
 
-You can configure the selection affinity on a given hierarchy by using the [`textSelectionAffinity(_:)`](view/textselectionaffinity(_:).md) modifier:
+You can configure the selection affinity on a given hierarchy by using the [`textSelectionAffinity(_:)`](./view/textselectionaffinity%28_%29.md) modifier:
 
 ```swift
 struct SuggestionTextEditor: View {
@@ -61,34 +62,35 @@ struct SuggestionsView: View { ... }
 ## Topics
 
 ### Enumeration Cases
-- [TextSelectionAffinity.automatic](textselectionaffinity/automatic.md)
+- [TextSelectionAffinity.automatic](./textselectionaffinity/automatic.md)
   A selection affinity determined by the framework based on the current context.
-- [TextSelectionAffinity.downstream](textselectionaffinity/downstream.md)
+- [TextSelectionAffinity.downstream](./textselectionaffinity/downstream.md)
   An downstream selection affinity. In this case, the cursor is associated with the character immediately after it.
-- [TextSelectionAffinity.upstream](textselectionaffinity/upstream.md)
+- [TextSelectionAffinity.upstream](./textselectionaffinity/upstream.md)
   An upstream selection affinity. In this case, the cursor is associated with the character immediately before it.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func textSelection<S>(S) -> some View](view/textselection(_:).md)
+### Selecting text
+- [func textSelection<S>(S) -> some View](./view/textselection%28_%29.md)
   Controls whether people can select text within this view.
-- [protocol TextSelectability](textselectability.md)
+- [protocol TextSelectability](./textselectability.md)
   A type that describes the ability to select text.
-- [struct TextSelection](textselection.md)
+- [struct TextSelection](./textselection.md)
   Represents a selection of text.
-- [func textSelectionAffinity(TextSelectionAffinity) -> some View](view/textselectionaffinity(_:).md)
+- [func textSelectionAffinity(TextSelectionAffinity) -> some View](./view/textselectionaffinity%28_%29.md)
   Sets the direction of a selection or cursor relative to a text character.
-- [var textSelectionAffinity: TextSelectionAffinity](environmentvalues/textselectionaffinity.md)
+- [var textSelectionAffinity: TextSelectionAffinity](./environmentvalues/textselectionaffinity.md)
   A representation of the direction or association of a selection or cursor relative to a text character. This concept becomes much more prominent when dealing with bidirectional text (text that contains both LTR and RTL scripts, like English and Arabic combined).
-- [struct AttributedTextSelection](attributedtextselection.md)
+- [struct AttributedTextSelection](./attributedtextselection.md)
   Represents a selection of attributed text.
 
 

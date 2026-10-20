@@ -1,7 +1,8 @@
 # label
 
 **Framework**: CoreLocationUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text of the button label.
 
@@ -14,6 +15,10 @@ The text of the button label.
 
 ```swift
 var label: CLLocationButtonLabel { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) CLLocationButtonLabel label;
 ```
 
 

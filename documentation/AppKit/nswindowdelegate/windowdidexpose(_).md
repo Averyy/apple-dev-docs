@@ -1,7 +1,8 @@
 # windowDidExpose(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the window has been exposed.
 
@@ -15,13 +16,17 @@ Tells the delegate that the window has been exposed.
 optional func windowDidExpose(_ notification: Notification)
 ```
 
+```objc
+- (void) windowDidExpose:(NSNotification *) notification;
+```
+
 #### Discussion
 
-You can retrieve the window object in question by sending [`object`](https://developer.apple.com/documentation/foundation/nsnotification/object) to `notification`.
+You can retrieve the window object in question by sending [`object`](../../Foundation/nsnotification/object.md) to `notification`.
 
 ## Parameters
 
-- `notification`: A notification named [`didExposeNotification`](nswindow/didexposenotification.md).
+- `notification`: A notification named [`didExposeNotification`](../nswindow/didexposenotification.md).
 
 
 ---

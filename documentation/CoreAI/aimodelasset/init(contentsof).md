@@ -1,7 +1,8 @@
 # init(contentsOf:)
 
 **Framework**: Core AI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a model asset from the contents of the specified URL.
 
@@ -24,7 +25,8 @@ init(contentsOf url: URL) throws
 
 ## See Also
 
-- [static func isValid(at: URL) -> Bool](aimodelasset/isvalid(at:).md)
+### Loading an asset
+- [static func isValid(at: URL) -> Bool](./isvalid%28at%29.md)
   Returns a Boolean value that indicates whether the URL contains a valid model asset.
 
 

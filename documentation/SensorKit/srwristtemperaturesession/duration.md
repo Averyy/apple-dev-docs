@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of seconds that the device records the temperature.
 
@@ -16,11 +17,16 @@ The number of seconds that the device records the temperature.
 var duration: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval duration;
+```
+
 ## See Also
 
-- [var startDate: Date](srwristtemperaturesession/startdate.md)
+### Getting session information
+- [var startDate: Date](./startdate.md)
   The time that the device records the wrist temperature.
-- [var version: String](srwristtemperaturesession/version.md)
+- [var version: String](./version.md)
   The version of the algorithm that analyzes the temperature.
 
 

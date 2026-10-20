@@ -1,7 +1,8 @@
 # eventDefinitions
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The event interval definitions, and their associated parameter data.
 

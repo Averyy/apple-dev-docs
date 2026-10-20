@@ -1,7 +1,8 @@
 # OneTimeChargeCreateRequest
 
 **Framework**: Advanced Commerce API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request data your app provides when a customer purchases a one-time-charge product.
 
@@ -10,14 +11,14 @@ The request data your app provides when a customer purchases a one-time-charge p
 
 ## Declaration
 
-```swift
+```
 object OneTimeChargeCreateRequest
 ```
 
 ## Mentions
 
-- [Creating SKUs for the Mini Apps Partner Program](creating-skus-for-the-mini-app-partner-program.md)
-- [Creating SKUs for your Apple In-App Purchases](creating-your-purchases.md)
+- [Creating SKUs for the Mini Apps Partner Program](./creating-skus-for-the-mini-app-partner-program.md)
+- [Creating SKUs for your Apple In-App Purchases](./creating-your-purchases.md)
 
 ##### Example
 
@@ -45,6 +46,8 @@ object OneTimeChargeCreateRequest
 - `currency` (currency) *(required)*: The currency of the price of the product.
 - `item` (OneTimeChargeItem) *(required)*: The details of the product for purchase.
 - `operation` (string) *(required)*: The constant that represents the operation of this request.
+
+  **Allowed Values**: `CREATE_ONE_TIME_CHARGE`
 - `requestInfo` (RequestInfo) *(required)*: The metadata of the request.
 - `storefront` (storefront): The storefront for the transaction.
 - `taxCode` (taxCode) *(required)*: The tax code for this product.
@@ -52,7 +55,8 @@ object OneTimeChargeCreateRequest
 
 ## See Also
 
-- [object OneTimeChargeItem](onetimechargeitem.md)
+### One-time charge creation in the app
+- [object OneTimeChargeItem](./onetimechargeitem.md)
   The details of a one-time charge product, including its display name, price, SKU, and metadata.
 
 

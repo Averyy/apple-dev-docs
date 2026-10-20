@@ -1,7 +1,8 @@
 # SRElectrocardiogramSample
 
 **Framework**: SensorKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The sample electrocardiogram sensor data.
 
@@ -16,46 +17,50 @@ The sample electrocardiogram sensor data.
 class SRElectrocardiogramSample
 ```
 
+```objc
+@interface SRElectrocardiogramSample : NSObject
+```
+
 #### Overview
 
-The electrocardiogram (ECG) sensor provides an array of these objects as its [`sample`](srfetchresult/sample.md) type.
+The electrocardiogram (ECG) sensor provides an array of these objects as its [`sample`](./srfetchresult/sample.md) type.
 
 ## Topics
 
 ### Accessing ECG data
-- [var date: Date](srelectrocardiogramsample/date.md)
+- [var date: Date](./srelectrocardiogramsample/date.md)
   The start date of the ECG sensor data recording, not the start of the session.
-- [var frequency: Measurement<UnitFrequency>](srelectrocardiogramsample/frequency.md)
+- [var frequency: Measurement<UnitFrequency>](./srelectrocardiogramsample/frequency.md)
   The frequency in hertz that the ECG sensor records the data.
-- [var lead: SRElectrocardiogramSample.Lead](srelectrocardiogramsample/lead-swift.property.md)
+- [var lead: SRElectrocardiogramSample.Lead](./srelectrocardiogramsample/lead-swift.property.md)
   The lead used to record the ECG data.
-- [SRElectrocardiogramSample.Lead](srelectrocardiogramsample/lead-swift.enum.md)
+- [SRElectrocardiogramSample.Lead](./srelectrocardiogramsample/lead-swift.enum.md)
   The location of the lead that a person uses to record the ECG data.
-- [var session: SRElectrocardiogramSession](srelectrocardiogramsample/session.md)
+- [var session: SRElectrocardiogramSession](./srelectrocardiogramsample/session.md)
   The session where this sample occurs.
-- [class SRElectrocardiogramSession](srelectrocardiogramsession.md)
+- [class SRElectrocardiogramSession](./srelectrocardiogramsession.md)
   An object that represents ECG data that a device records during a period of time.
-- [var data: [SRElectrocardiogramData]](srelectrocardiogramsample/data.md)
+- [var data: [SRElectrocardiogramData]](./srelectrocardiogramsample/data.md)
   The data that the sensor records.
-- [class SRElectrocardiogramData](srelectrocardiogramdata.md)
+- [class SRElectrocardiogramData](./srelectrocardiogramdata.md)
   A representation of the ECG data that the sensor records.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

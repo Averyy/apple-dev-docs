@@ -1,15 +1,16 @@
 # keyboardWillShowNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that posts immediately prior to displaying the keyboard.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -18,37 +19,42 @@ nonisolated
 class let keyboardWillShowNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UIKeyboardWillShowNotification;
+```
+
 #### Discussion
 
-In iOS 16.1 and later, the notification object is the [`UIScreen`](uiscreen.md) that the keyboard appears on. In earlier versions of iOS, the notification object is `nil`.
+In iOS 16.1 and later, the notification object is the [`UIScreen`](../uiscreen.md) that the keyboard appears on. In earlier versions of iOS, the notification object is `nil`.
 
-The `userInfo` dictionary contains information about the keyboard. To get the location and size of the keyboard from the `userInfo` dictionary, use [`keyboardFrameBeginUserInfoKey`](uiresponder/keyboardframebeginuserinfokey.md) and [`keyboardFrameEndUserInfoKey`](uiresponder/keyboardframeenduserinfokey.md).
+The `userInfo` dictionary contains information about the keyboard. To get the location and size of the keyboard from the `userInfo` dictionary, use [`keyboardFrameBeginUserInfoKey`](./keyboardframebeginuserinfokey.md) and [`keyboardFrameEndUserInfoKey`](./keyboardframeenduserinfokey.md).
 
-The keyboard’s frame uses the screen’s coordinate space, which is different than the coordinate space of your views. Although they might sometimes match, such as when your app is full screen, they might be different when your app isn’t full screen, such as in Split View, Slide Over, and Stage Manager. This means you need to account for this difference by converting the keyboard’s frame from the screen’s coordinate space to that of your views. For an example of how to handle this conversion, see [`keyboardFrameEndUserInfoKey`](uiresponder/keyboardframeenduserinfokey.md).
+The keyboard’s frame uses the screen’s coordinate space, which is different than the coordinate space of your views. Although they might sometimes match, such as when your app is full screen, they might be different when your app isn’t full screen, such as in Split View, Slide Over, and Stage Manager. This means you need to account for this difference by converting the keyboard’s frame from the screen’s coordinate space to that of your views. For an example of how to handle this conversion, see [`keyboardFrameEndUserInfoKey`](./keyboardframeenduserinfokey.md).
 
 The system posts this notification on the main actor. An app running in visionOS never receives this notification. The system displays the keyboard in a separate window, leaving the app’s window unaffected by the keyboard’s appearance and disappearance.
 
 ## See Also
 
-- [class let keyboardAnimationCurveUserInfoKey: String](uiresponder/keyboardanimationcurveuserinfokey.md)
+### Constants
+- [class let keyboardAnimationCurveUserInfoKey: String](./keyboardanimationcurveuserinfokey.md)
   A user info key to retrieve the animation curve that the system uses to animate the keyboard onto or off the screen.
-- [class let keyboardAnimationDurationUserInfoKey: String](uiresponder/keyboardanimationdurationuserinfokey.md)
+- [class let keyboardAnimationDurationUserInfoKey: String](./keyboardanimationdurationuserinfokey.md)
   A user info key to retrieve the duration of the keyboard animation in seconds.
-- [class let keyboardDidChangeFrameNotification: NSNotification.Name](uiresponder/keyboarddidchangeframenotification.md)
+- [class let keyboardDidChangeFrameNotification: NSNotification.Name](./keyboarddidchangeframenotification.md)
   A notification that posts immediately after a change in the keyboard’s frame.
-- [class let keyboardDidHideNotification: NSNotification.Name](uiresponder/keyboarddidhidenotification.md)
+- [class let keyboardDidHideNotification: NSNotification.Name](./keyboarddidhidenotification.md)
   A notification that posts immediately after dismissing the keyboard.
-- [class let keyboardDidShowNotification: NSNotification.Name](uiresponder/keyboarddidshownotification.md)
+- [class let keyboardDidShowNotification: NSNotification.Name](./keyboarddidshownotification.md)
   A notification that posts immediately after displaying the keyboard.
-- [class let keyboardFrameBeginUserInfoKey: String](uiresponder/keyboardframebeginuserinfokey.md)
+- [class let keyboardFrameBeginUserInfoKey: String](./keyboardframebeginuserinfokey.md)
   A user info key to retrieve the keyboard’s frame at the beginning of its animation.
-- [class let keyboardFrameEndUserInfoKey: String](uiresponder/keyboardframeenduserinfokey.md)
+- [class let keyboardFrameEndUserInfoKey: String](./keyboardframeenduserinfokey.md)
   A user info key to retrieve the keyboard’s frame at the end of its animation.
-- [class let keyboardIsLocalUserInfoKey: String](uiresponder/keyboardislocaluserinfokey.md)
+- [class let keyboardIsLocalUserInfoKey: String](./keyboardislocaluserinfokey.md)
   A user info key to retrieve a Boolean value that indicates whether the keyboard belongs to the current app.
-- [class let keyboardWillChangeFrameNotification: NSNotification.Name](uiresponder/keyboardwillchangeframenotification.md)
+- [class let keyboardWillChangeFrameNotification: NSNotification.Name](./keyboardwillchangeframenotification.md)
   A notification that posts immediately prior to a change in the keyboard’s frame.
-- [class let keyboardWillHideNotification: NSNotification.Name](uiresponder/keyboardwillhidenotification.md)
+- [class let keyboardWillHideNotification: NSNotification.Name](./keyboardwillhidenotification.md)
   A notification that posts immediately prior to dismissing the keyboard.
 
 

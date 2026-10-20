@@ -1,7 +1,8 @@
 # UIStatusBarManager
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes the configuration of the status bar.
 
@@ -18,43 +19,48 @@ An object that describes the configuration of the status bar.
 class UIStatusBarManager
 ```
 
+```objc
+@interface UIStatusBarManager : NSObject
+```
+
 #### Overview
 
-Use a [`UIStatusBarManager`](uistatusbarmanager.md) object to get the current configuration of the status bar for its associated scene. You don’t create [`UIStatusBarManager`](uistatusbarmanager.md) objects directly. Instead, you retrieve an existing object from the [`statusBarManager`](uiwindowscene/statusbarmanager.md) property of a [`UIWindowScene`](uiwindowscene.md) object.
+Use a [`UIStatusBarManager`](./uistatusbarmanager.md) object to get the current configuration of the status bar for its associated scene. You don’t create [`UIStatusBarManager`](./uistatusbarmanager.md) objects directly. Instead, you retrieve an existing object from the [`statusBarManager`](./uiwindowscene/statusbarmanager.md) property of a [`UIWindowScene`](./uiwindowscene.md) object.
 
-You don’t use this object to modify the configuration of the status bar. Instead, you set the status bar configuration individually for each of your [`UIViewController`](uiviewcontroller.md) objects. For example, to modify the default visibility of the status bar, override the [`prefersStatusBarHidden`](uiviewcontroller/prefersstatusbarhidden.md) property of your view controller.
+You don’t use this object to modify the configuration of the status bar. Instead, you set the status bar configuration individually for each of your [`UIViewController`](./uiviewcontroller.md) objects. For example, to modify the default visibility of the status bar, override the [`prefersStatusBarHidden`](./uiviewcontroller/prefersstatusbarhidden.md) property of your view controller.
 
 ## Topics
 
 ### Getting the status bar configuration
-- [var isStatusBarHidden: Bool](uistatusbarmanager/isstatusbarhidden.md)
+- [var isStatusBarHidden: Bool](./uistatusbarmanager/isstatusbarhidden.md)
   A Boolean value that indicates whether the status bar is currently hidden.
-- [var statusBarStyle: UIStatusBarStyle](uistatusbarmanager/statusbarstyle.md)
+- [var statusBarStyle: UIStatusBarStyle](./uistatusbarmanager/statusbarstyle.md)
   The current appearance of the status bar.
 ### Getting the frame rectangle
-- [var statusBarFrame: CGRect](uistatusbarmanager/statusbarframe.md)
+- [var statusBarFrame: CGRect](./uistatusbarmanager/statusbarframe.md)
   The frame rectangle of the status bar.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class UIDevice](uidevice.md)
+### Device environment
+- [class UIDevice](./uidevice.md)
   A representation of the current device.
-- [class UIHinge](uihinge.md)
+- [class UIHinge](./uihinge.md)
   An object encapsulating the state of a single hinge.
-- [class UIHingeInteraction](uihingeinteraction.md)
+- [class UIHingeInteraction](./uihingeinteraction.md)
   An interaction for observing the hinge state associated with the view’s hierarchy.
 
 

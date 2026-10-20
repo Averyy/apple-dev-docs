@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Additional information about the failure, keyed by name.
 
@@ -21,11 +22,12 @@ var metadata: [String : any Sendable]
 
 ## See Also
 
-- [var tokenCount: Int](languagemodelerror/contextsizeexceeded/tokencount.md)
+### Inspecting context size errors
+- [var tokenCount: Int](./tokencount.md)
   The number of tokens in the transcript that exceeded the model’s context size.
-- [var contextSize: Int](languagemodelerror/contextsizeexceeded/contextsize.md)
+- [var contextSize: Int](./contextsize.md)
   The model’s maximum context size, in tokens.
-- [var debugDescription: String](languagemodelerror/contextsizeexceeded/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A debug description to help developers diagnose issues during development.
 
 

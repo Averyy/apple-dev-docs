@@ -1,7 +1,8 @@
 # additionalActions
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A dictionary or PDF action object that represents additional actions an annotation can perform, such as when it receives input focus.
 
@@ -19,11 +20,16 @@ A dictionary or PDF action object that represents additional actions an annotati
 static let additionalActions: PDFAnnotationKey
 ```
 
+```c
+extern PDFAnnotationKey PDFAnnotationKeyAdditionalActions;
+```
+
 ## See Also
 
-- [static let destination: PDFAnnotationKey](pdfannotationkey/destination.md)
+### Configuring Actions
+- [static let destination: PDFAnnotationKey](./destination.md)
   An array, name, or string that represents the destination of an action.
-- [static let action: PDFAnnotationKey](pdfannotationkey/action.md)
+- [static let action: PDFAnnotationKey](./action.md)
   A dictionary or PDF action object that represents an action to take, such as when the user clicks or taps a button.
 
 

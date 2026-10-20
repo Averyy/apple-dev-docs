@@ -1,7 +1,8 @@
 # bodyDetection
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that indicates that 2D body detection is enabled.
 
@@ -15,9 +16,13 @@ An option that indicates that 2D body detection is enabled.
 static var bodyDetection: ARConfiguration.FrameSemantics { get }
 ```
 
+```c
+ARFrameSemanticBodyDetection
+```
+
 #### Discussion
 
-When you set this option in your configuration’s [`frameSemantics`](arconfiguration/framesemantics-swift.property.md) property, ARKit describes the joint positions of a body it detects in the camera image, using normalized coordinates. See [`detectedBody`](arframe/detectedbody.md) for more information.
+When you set this option in your configuration’s [`frameSemantics`](../framesemantics-swift.property.md) property, ARKit describes the joint positions of a body it detects in the camera image, using normalized coordinates. See [`detectedBody`](../../arframe/detectedbody.md) for more information.
 
 
 ---

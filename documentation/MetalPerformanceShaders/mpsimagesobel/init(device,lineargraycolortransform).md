@@ -1,7 +1,8 @@
 # init(device:linearGrayColorTransform:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a Sobel filter on a given device using a specific color transform.
 
@@ -19,6 +20,10 @@ Initializes a Sobel filter on a given device using a specific color transform.
 init(device: any MTLDevice, linearGrayColorTransform transform: UnsafePointer<Float>)
 ```
 
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device linearGrayColorTransform:(const float *) transform;
+```
+
 #### Return Value
 
 An initialized Sobel filter object.
@@ -26,11 +31,14 @@ An initialized Sobel filter object.
 ## Parameters
 
 - `device`: The Metal device the filter will run on.
-- `transform`: The color transform to use. This matrix is an array of 3 floats that describes the RGB-to-grayscale color transform: `Luminance = transform[0] * pixel.x + transform[1] * pixel.y + transform[2] * pixel.z`
+- `transform`: The color transform to use. This matrix is an array of 3 floats that describes the RGB-to-grayscale color transform:
+
+  `Luminance = transform[0] * pixel.x + transform[1] * pixel.y + transform[2] * pixel.z`
 
 ## See Also
 
-- [convenience init(device: any MTLDevice)](mpsimagesobel/init(device:).md)
+### Methods
+- [convenience init(device: any MTLDevice)](./init%28device%29.md)
   Initializes a Sobel filter on a given device using the default color transform.
 
 

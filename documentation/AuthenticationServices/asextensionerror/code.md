@@ -1,7 +1,8 @@
 # ASExtensionError.Code
 
 **Framework**: Authentication Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The codes for a credential provider extension error.
 
@@ -18,38 +19,43 @@ The codes for a credential provider extension error.
 enum Code
 ```
 
+```c
+enum ASExtensionErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Codes
-- [ASExtensionError.Code.credentialIdentityNotFound](asextensionerror/code/credentialidentitynotfound.md)
+- [ASExtensionError.Code.credentialIdentityNotFound](./code/credentialidentitynotfound.md)
   The credential identity was not found.
-- [ASExtensionError.Code.failed](asextensionerror/code/failed.md)
+- [ASExtensionError.Code.failed](./code/failed.md)
   The operation failed.
-- [ASExtensionError.Code.userCanceled](asextensionerror/code/usercanceled.md)
+- [ASExtensionError.Code.userCanceled](./code/usercanceled.md)
   The user canceled the operation.
-- [ASExtensionError.Code.userInteractionRequired](asextensionerror/code/userinteractionrequired.md)
+- [ASExtensionError.Code.userInteractionRequired](./code/userinteractionrequired.md)
   User interaction is required.
 ### Enumeration Cases
-- [ASExtensionError.Code.matchedExcludedCredential](asextensionerror/code/matchedexcludedcredential.md)
+- [ASExtensionError.Code.matchedExcludedCredential](./code/matchedexcludedcredential.md)
   This error should only be used for a passkey registration request, if the @c excludedCredentials property matches a known passkey.
 ### Initializers
-- [init?(rawValue: Int)](asextensionerror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ASExtensionError](asextensionerror.md)
+### Recognizing errors
+- [struct ASExtensionError](../asextensionerror.md)
   A credential provider extension error.
-- [let ASExtensionErrorDomain: String](asextensionerrordomain.md)
+- [let ASExtensionErrorDomain: String](../asextensionerrordomain.md)
   The domain for a credential provider extension error.
 
 

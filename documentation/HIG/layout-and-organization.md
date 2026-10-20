@@ -18,7 +18,6 @@ framework: HIG
 - [Split views](/design/human-interface-guidelines/split-views) - A split view manages the presentation of multiple adjacent panes of content, each of which can contain a variety of components, including tables, collections, images, and custom views.
 - [Tab views](/design/human-interface-guidelines/tab-views) - A tab view presents multiple mutually exclusive panes of content in the same area, which people can switch between using a tabbed control.
 
-
 ## Topics
 
 - [Boxes](boxes.md) - A box creates a visually distinct group of logically related information and components.
@@ -31,8 +30,6 @@ framework: HIG
 - [Outline views](outline-views.md) - An outline view presents hierarchical data in a scrolling list of cells that are organized into columns and rows.
 - [Split views](split-views.md) - A split view manages the presentation of multiple adjacent panes of content, each of which can contain a variety of components, including tables, collections, images, and custom views.
 - [Tab views](tab-views.md) - A tab view presents multiple mutually exclusive panes of content in the same area, which people can switch between using a tabbed control.
-
-
 
 ---
 *Source: [https://developer.apple.com/design/human-interface-guidelines/layout-and-organization](https://developer.apple.com/design/human-interface-guidelines/layout-and-organization)*

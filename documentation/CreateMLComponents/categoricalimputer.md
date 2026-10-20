@@ -1,7 +1,8 @@
 # CategoricalImputer
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An estimator that replaces missing values in the categorical input.
 
@@ -23,46 +24,47 @@ struct CategoricalImputer<Element> where Element : Decodable, Element : Encodabl
 ## Topics
 
 ### Creating an estimator
-- [init(CategoricalImputer<Element>.Strategy)](categoricalimputer/init(_:).md)
+- [init(CategoricalImputer<Element>.Strategy)](./categoricalimputer/init%28_%29.md)
   Creates an imputer with a strategy.
-- [init(constant: Element)](categoricalimputer/init(constant:).md)
+- [init(constant: Element)](./categoricalimputer/init%28constant%29.md)
   Creates an imputer with a constant value to use when replacing missing values.
 ### Getting the properties
-- [var strategy: CategoricalImputer<Element>.Strategy](categoricalimputer/strategy-swift.property.md)
+- [var strategy: CategoricalImputer<Element>.Strategy](./categoricalimputer/strategy-swift.property.md)
   The imputation strategy.
 ### Fitting
-- [func fitted<S>(to: S, eventHandler: EventHandler?) -> CategoricalImputer<Element>.Transformer](categoricalimputer/fitted(to:eventhandler:).md)
+- [func fitted<S>(to: S, eventHandler: EventHandler?) -> CategoricalImputer<Element>.Transformer](./categoricalimputer/fitted%28to,eventhandler%29.md)
   Fits a categorical imputer to a sequence of elements.
-- [protocol Transformer](transformer.md)
+- [protocol Transformer](./transformer.md)
   A transformer that takes an input and produces an output.
-- [CategoricalImputer.Strategy](categoricalimputer/strategy-swift.enum.md)
+- [CategoricalImputer.Strategy](./categoricalimputer/strategy-swift.enum.md)
   An imputation strategy.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Estimator](estimator.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
+- [Estimator](./estimator.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct LinearTransformer](lineartransformer.md)
+### Preprocessors
+- [struct LinearTransformer](./lineartransformer.md)
   A transformer that runs an input through a scale and offset.
-- [struct ImputeTransformer](imputetransformer.md)
+- [struct ImputeTransformer](./imputetransformer.md)
   A transformer that replaces missing values with a pre-defined value.
-- [struct OneHotEncoder](onehotencoder.md)
+- [struct OneHotEncoder](./onehotencoder.md)
   An estimator that encodes categorical values to an integer array.
-- [struct OrdinalEncoder](ordinalencoder.md)
+- [struct OrdinalEncoder](./ordinalencoder.md)
   An ordinal encoder estimator encodes categorical values to ordinal integer values.
-- [struct NumericImputer](numericimputer.md)
+- [struct NumericImputer](./numericimputer.md)
   An estimator that replaces missing values in the numeric input.
-- [struct Reshaper](reshaper.md)
+- [struct Reshaper](./reshaper.md)
   A transformer that reshapes a shaped array.
-- [struct OptionalUnwrapper](optionalunwrapper.md)
+- [struct OptionalUnwrapper](./optionalunwrapper.md)
   A transformer that unwraps optional elements and throws when encountering missing values.
 
 

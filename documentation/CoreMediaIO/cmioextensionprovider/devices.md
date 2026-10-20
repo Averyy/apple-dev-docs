@@ -1,7 +1,8 @@
 # devices
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of connected devices.
 
@@ -15,15 +16,20 @@ An array of connected devices.
 var devices: [CMIOExtensionDevice] { get }
 ```
 
+```objc
+@property (atomic, copy, readonly) NSArray<CMIOExtensionDevice *> * devices;
+```
+
 #### Discussion
 
 This property isn’t key-value observable.
 
 ## See Also
 
-- [func addDevice(CMIOExtensionDevice) throws](cmioextensionprovider/adddevice(_:).md)
+### Managing Devices
+- [func addDevice(CMIOExtensionDevice) throws](./adddevice%28_%29.md)
   Adds a device to a provider.
-- [func removeDevice(CMIOExtensionDevice) throws](cmioextensionprovider/removedevice(_:).md)
+- [func removeDevice(CMIOExtensionDevice) throws](./removedevice%28_%29.md)
   Removes a device from a provider.
 
 

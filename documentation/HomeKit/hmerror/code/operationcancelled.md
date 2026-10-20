@@ -1,7 +1,8 @@
 # HMError.Code.operationCancelled
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating the user canceled the operation.
 
@@ -19,11 +20,16 @@ An error indicating the user canceled the operation.
 case operationCancelled
 ```
 
+```c
+HMErrorCodeOperationCancelled
+```
+
 ## See Also
 
-- [HMError.Code.operationInProgress](hmerror/code/operationinprogress.md)
+### Operation errors
+- [HMError.Code.operationInProgress](./operationinprogress.md)
   An error indicating the operation is already in progress.
-- [HMError.Code.operationTimedOut](hmerror/code/operationtimedout.md)
+- [HMError.Code.operationTimedOut](./operationtimedout.md)
   An error indicating the operation timed out.
 
 

@@ -1,7 +1,8 @@
 # AskPermissionAction
 
 **Framework**: PermissionKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An action that sends a permission question to a parent or guardian.
 
@@ -20,7 +21,7 @@ struct AskPermissionAction
 
 #### Overview
 
-Use the `EnvironmentValues/askPermission` environment value to get an instance of this action, then call the instance to send a permission question. You can call the instance directly because it defines a [`callAsFunction(_:)`](askpermissionaction/callasfunction(_:).md) method.
+Use the `EnvironmentValues/askPermission` environment value to get an instance of this action, then call the instance to send a permission question. You can call the instance directly because it defines a [`callAsFunction(_:)`](./askpermissionaction/callasfunction%28_%29.md) method.
 
 For example:
 
@@ -39,7 +40,7 @@ struct MyView: View {
 ## Topics
 
 ### Instance Methods
-- [func callAsFunction<Topic>(PermissionQuestion<Topic>) async throws](askpermissionaction/callasfunction(_:).md)
+- [func callAsFunction<Topic>(PermissionQuestion<Topic>) async throws](./askpermissionaction/callasfunction%28_%29.md)
   Sends a permission question to a parent or guardian.
 
 

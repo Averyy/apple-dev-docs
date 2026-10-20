@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Core Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create an instance initialized to zero.
 
@@ -11,7 +12,7 @@ Create an instance initialized to zero.
 - Mac Catalyst 13.0+
 - macOS 10.0+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 - watchOS 1.0+
 
 ## Declaration

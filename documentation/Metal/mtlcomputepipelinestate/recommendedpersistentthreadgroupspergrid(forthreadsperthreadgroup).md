@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,6 +17,10 @@
 
 ```swift
 func recommendedPersistentThreadgroupsPerGrid(forThreadsPerThreadgroup threadsPerThreadgroup: MTLSize) -> Int
+```
+
+```objc
+- (NSUInteger) recommendedPersistentThreadgroupsPerGridForThreadsPerThreadgroup:(MTLSize) threadsPerThreadgroup;
 ```
 
 

@@ -1,20 +1,21 @@
 # PassTypeId.Relationships
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represents the relationships of a pass type ID.
 
 ## Declaration
 
-```swift
+```
 object PassTypeId.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object PassTypeId.Relationships.Certificates](passtypeid/relationships-data.dictionary/certificates-data.dictionary.md)
+- [object PassTypeId.Relationships.Certificates](./relationships-data.dictionary/certificates-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 ## Properties
@@ -23,7 +24,8 @@ object PassTypeId.Relationships
 
 ## See Also
 
-- [object PassTypeId.Attributes](passtypeid/attributes-data.dictionary.md)
+### Objects
+- [object PassTypeId.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a PassTypeId resource.
 
 

@@ -1,7 +1,8 @@
 # SVGPathSegCurvetoCubicRel
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,24 +10,24 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGPathSegCurvetoCubicRel
 ```
 
 ## Topics
 
 ### Instance Properties
-- [x](svgpathsegcurvetocubicrel/1631925-x.md)
-- [x1](svgpathsegcurvetocubicrel/1629573-x1.md)
-- [x2](svgpathsegcurvetocubicrel/1628858-x2.md)
-- [y](svgpathsegcurvetocubicrel/1631773-y.md)
-- [y1](svgpathsegcurvetocubicrel/1631106-y1.md)
-- [y2](svgpathsegcurvetocubicrel/1634052-y2.md)
+- [x](./svgpathsegcurvetocubicrel/api-1631925-x.md)
+- [x1](./svgpathsegcurvetocubicrel/api-1629573-x1.md)
+- [x2](./svgpathsegcurvetocubicrel/api-1628858-x2.md)
+- [y](./svgpathsegcurvetocubicrel/api-1631773-y.md)
+- [y1](./svgpathsegcurvetocubicrel/api-1631106-y1.md)
+- [y2](./svgpathsegcurvetocubicrel/api-1634052-y2.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGPathSeg](svgpathseg.md)
+- [SVGPathSeg](./svgpathseg.md)
 
 
 ---

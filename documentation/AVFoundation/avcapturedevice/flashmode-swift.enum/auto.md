@@ -1,7 +1,8 @@
 # AVCaptureDevice.FlashMode.auto
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that indicates the device continuously monitors light levels and uses the flash when necessary.
 
@@ -18,15 +19,20 @@ A mode that indicates the device continuously monitors light levels and uses the
 case auto
 ```
 
+```c
+AVCaptureFlashModeAuto
+```
+
 ## Mentions
 
-- [Tracking photo capture progress](tracking-photo-capture-progress.md)
+- [Tracking photo capture progress](../../tracking-photo-capture-progress.md)
 
 ## See Also
 
-- [AVCaptureDevice.FlashMode.off](avcapturedevice/flashmode-swift.enum/off.md)
+### Flash modes
+- [AVCaptureDevice.FlashMode.off](./off.md)
   A mode that indicates the flash is off.
-- [AVCaptureDevice.FlashMode.on](avcapturedevice/flashmode-swift.enum/on.md)
+- [AVCaptureDevice.FlashMode.on](./on.md)
   A mode that indicates the flash is on.
 
 

@@ -2,18 +2,19 @@
 
 **Framework**: SceneKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Searches the renderer’s scene for objects corresponding to a point in the rendered image.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -21,9 +22,13 @@ Searches the renderer’s scene for objects corresponding to a point in the rend
 func hitTest(_ point: CGPoint, options: [SCNHitTestOption : Any]? = nil) -> [SCNHitTestResult]
 ```
 
+```objc
+- (NSArray<SCNHitTestResult *> *) hitTest:(CGPoint) point options:(NSDictionary<NSString *,id> *) options;
+```
+
 #### Return Value
 
-An array of [`SCNHitTestResult`](scnhittestresult.md) objects representing search results.
+An array of [`SCNHitTestResult`](../scnhittestresult.md) objects representing search results.
 
 #### Discussion
 
@@ -36,15 +41,16 @@ A 2D point in the rendered screen coordinate space can refer to any point along 
 
 ## See Also
 
-- [struct SCNHitTestOption](scnhittestoption.md)
+### Working With Projected Scene Contents
+- [struct SCNHitTestOption](../scnhittestoption.md)
   Options affecting the behavior of SceneKit hit-testing methods.
-- [func isNode(SCNNode, insideFrustumOf: SCNNode) -> Bool](scnscenerenderer/isnode(_:insidefrustumof:).md)
+- [func isNode(SCNNode, insideFrustumOf: SCNNode) -> Bool](./isnode%28_,insidefrustumof%29.md)
   Returns a Boolean value indicating whether a node might be visible from a specified point of view.
-- [func nodesInsideFrustum(of: SCNNode) -> [SCNNode]](scnscenerenderer/nodesinsidefrustum(of:).md)
+- [func nodesInsideFrustum(of: SCNNode) -> [SCNNode]](./nodesinsidefrustum%28of%29.md)
   Returns all nodes that might be visible from a specified point of view.
-- [func projectPoint(SCNVector3) -> SCNVector3](scnscenerenderer/projectpoint(_:).md)
+- [func projectPoint(SCNVector3) -> SCNVector3](./projectpoint%28_%29.md)
   Projects a point from the 3D world coordinate system of the scene to the 2D pixel coordinate system of the renderer.
-- [func unprojectPoint(SCNVector3) -> SCNVector3](scnscenerenderer/unprojectpoint(_:).md)
+- [func unprojectPoint(SCNVector3) -> SCNVector3](./unprojectpoint%28_%29.md)
   Unprojects a point from the 2D pixel coordinate system of the renderer to the 3D world coordinate system of the scene.
 
 

@@ -1,7 +1,8 @@
 # kSecACLAuthorizationChangeACL
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Change an access control list entry.
 
@@ -12,6 +13,10 @@ Change an access control list entry.
 
 ```swift
 let kSecACLAuthorizationChangeACL: CFString
+```
+
+```c
+extern CFStringRef const kSecACLAuthorizationChangeACL;
 ```
 
 

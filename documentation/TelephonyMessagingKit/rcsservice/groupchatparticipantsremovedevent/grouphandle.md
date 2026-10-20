@@ -1,7 +1,8 @@
 # groupHandle
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The group handle from which participants were removed.
 
@@ -16,13 +17,14 @@ let groupHandle: RCSHandle.Group
 
 ## See Also
 
-- [let cellularServiceID: CellularServiceID](rcsservice/groupchatparticipantsremovedevent/cellularserviceid.md)
+### Accessing event properties
+- [let cellularServiceID: CellularServiceID](./cellularserviceid.md)
   Cellular service identifier associated with this event.
-- [let removedParticipants: [RCSHandle.URI]](rcsservice/groupchatparticipantsremovedevent/removedparticipants.md)
+- [let removedParticipants: [RCSHandle.URI]](./removedparticipants.md)
   Array of handles indicating the participants that were removed.
-- [let removedBy: RCSHandle.URI](rcsservice/groupchatparticipantsremovedevent/removedby.md)
+- [let removedBy: RCSHandle.URI](./removedby.md)
   Handle of device that performed the operation.
-- [let removedCurrentUser: Bool](rcsservice/groupchatparticipantsremovedevent/removedcurrentuser.md)
+- [let removedCurrentUser: Bool](./removedcurrentuser.md)
   Whether the current user was removed from the group.
 
 

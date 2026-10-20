@@ -1,7 +1,8 @@
 # XCTFail(_:file:line:)
 
 **Framework**: XCTest  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 This function generates a failure immediately and unconditionally.
 

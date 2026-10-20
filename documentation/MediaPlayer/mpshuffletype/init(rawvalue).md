@@ -1,14 +1,15 @@
 # init(rawValue:)
 
 **Framework**: Media Player  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.12.2+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 5.0+
 

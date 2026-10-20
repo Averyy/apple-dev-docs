@@ -1,7 +1,8 @@
 # formSymmetricDifference(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value to an exclusive or of the `CharacterSet` with another `CharacterSet`.
 
@@ -22,27 +23,28 @@ mutating func formSymmetricDifference(_ other: CharacterSet)
 
 ## See Also
 
-- [func formIntersection(CharacterSet)](characterset/formintersection(_:).md)
+### Combining Character Sets
+- [func formIntersection(CharacterSet)](./formintersection%28_%29.md)
   Sets the value to an intersection of the `CharacterSet` with another `CharacterSet`.
-- [func formUnion(CharacterSet)](characterset/formunion(_:).md)
+- [func formUnion(CharacterSet)](./formunion%28_%29.md)
   Sets the value to a union of the `CharacterSet` with another `CharacterSet`.
-- [func hasMember(inPlane: UInt8) -> Bool](characterset/hasmember(inplane:).md)
+- [func hasMember(inPlane: UInt8) -> Bool](./hasmember%28inplane%29.md)
   Returns true if the `CharacterSet` has a member in the specified plane.
-- [func insert(charactersIn: String)](characterset/insert(charactersin:)-2syuj.md)
+- [func insert(charactersIn: String)](./insert%28charactersin%29-2syuj.md)
   Insert the values from the specified string into the `CharacterSet`.
-- [func intersection(CharacterSet) -> CharacterSet](characterset/intersection(_:).md)
+- [func intersection(CharacterSet) -> CharacterSet](./intersection%28_%29.md)
   Returns an intersection of the `CharacterSet` with another `CharacterSet`.
-- [func invert()](characterset/invert.md)
+- [func invert()](./invert%28%29.md)
   Invert the contents of the `CharacterSet`.
-- [func isSuperset(of: CharacterSet) -> Bool](characterset/issuperset(of:).md)
+- [func isSuperset(of: CharacterSet) -> Bool](./issuperset%28of%29.md)
   Returns true if `self` is a superset of `other`.
-- [func remove(charactersIn: String)](characterset/remove(charactersin:)-3sayw.md)
+- [func remove(charactersIn: String)](./remove%28charactersin%29-3sayw.md)
   Remove the values from the specified string from the `CharacterSet`.
-- [func subtracting(CharacterSet) -> CharacterSet](characterset/subtracting(_:).md)
+- [func subtracting(CharacterSet) -> CharacterSet](./subtracting%28_%29.md)
   Returns a `CharacterSet` created by removing elements in `other` from `self`.
-- [func symmetricDifference(CharacterSet) -> CharacterSet](characterset/symmetricdifference(_:).md)
+- [func symmetricDifference(CharacterSet) -> CharacterSet](./symmetricdifference%28_%29.md)
   Returns an exclusive or of the `CharacterSet` with another `CharacterSet`.
-- [func union(CharacterSet) -> CharacterSet](characterset/union(_:).md)
+- [func union(CharacterSet) -> CharacterSet](./union%28_%29.md)
   Returns a union of the `CharacterSet` with another `CharacterSet`.
 
 

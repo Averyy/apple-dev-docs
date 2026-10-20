@@ -1,7 +1,8 @@
 # navigationTitleAlignment
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The alignment the navigation bar resolved for its title.
 
@@ -16,6 +17,10 @@ The alignment the navigation bar resolved for its title.
 
 ```swift
 var navigationTitleAlignment: UINavigationItem.TitleAlignment { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) UINavigationItemTitleAlignment navigationTitleAlignment;
 ```
 
 #### Discussion

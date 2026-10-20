@@ -1,7 +1,8 @@
 # kSecUseAuthenticationUI
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value indicates whether the user is prompted for authentication.
 
@@ -20,9 +21,13 @@ A key whose value indicates whether the user is prompted for authentication.
 let kSecUseAuthenticationUI: CFString
 ```
 
+```c
+extern CFStringRef const kSecUseAuthenticationUI;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) and contains one of the values listed in [`UI authentication values`](search-attribute-keys-and-values#UI-authentication-values.md). The value specifies whether or not the user is prompted for authentication, if needed. A default value of [`kSecUseAuthenticationUIAllow`](ksecuseauthenticationuiallow.md) is assumed when this key is not present.
+The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md) and contains one of the values listed in [UI authentication values](./search-attribute-keys-and-values.md#UI-authentication-values). The value specifies whether or not the user is prompted for authentication, if needed. A default value of [`kSecUseAuthenticationUIAllow`](./ksecuseauthenticationuiallow.md) is assumed when this key is not present.
 
 
 ---

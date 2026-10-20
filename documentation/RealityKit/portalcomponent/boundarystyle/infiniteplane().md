@@ -1,7 +1,8 @@
 # infinitePlane()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a boundary style that uses an infinite plane.
 
@@ -23,7 +24,7 @@ static func infinitePlane() -> PortalComponent.BoundaryStyle
 
 The boundary is the entity’s local XY plane. RealityKit clips portal world content behind the surface and lets crossing entities pass through it freely.
 
-This boundary corresponds to [`PortalComponent.ClippingMode.plane(_:)`](portalcomponent/clippingmode-swift.enum/plane(_:).md) and [`PortalComponent.CrossingMode.plane(_:)`](portalcomponent/crossingmode-swift.enum/plane(_:).md) configured with [`positiveZ`](portalcomponent/plane/positivez.md).
+This boundary corresponds to [`PortalComponent.ClippingMode.plane(_:)`](../clippingmode-swift.enum/plane%28_%29.md) and [`PortalComponent.CrossingMode.plane(_:)`](../crossingmode-swift.enum/plane%28_%29.md) configured with [`positiveZ`](../plane/positivez.md).
 
 
 ---

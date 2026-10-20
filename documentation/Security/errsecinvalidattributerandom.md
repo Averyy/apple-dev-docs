@@ -1,7 +1,8 @@
 # errSecInvalidAttributeRandom
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A random number attribute is not valid.
 
@@ -18,6 +19,10 @@ A random number attribute is not valid.
 
 ```swift
 var errSecInvalidAttributeRandom: OSStatus { get }
+```
+
+```c
+errSecInvalidAttributeRandom
 ```
 
 

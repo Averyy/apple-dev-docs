@@ -1,7 +1,8 @@
 # TabletopInteraction.Constants.programmatic(_:)
 
 **Framework**: TabletopKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - visionOS 26.0+
@@ -14,8 +15,9 @@ case programmatic(TabletopInteraction.ProgrammaticInteractionConstants)
 
 ## See Also
 
-- [case direct(TabletopInteraction.DirectInteractionConstants)](tabletopinteraction/constants/direct(_:).md)
-- [case indirect(TabletopInteraction.IndirectInteractionConstants)](tabletopinteraction/constants/indirect(_:).md)
+### Table interactions
+- [case direct(TabletopInteraction.DirectInteractionConstants)](./direct%28_%29.md)
+- [case indirect(TabletopInteraction.IndirectInteractionConstants)](./indirect%28_%29.md)
 
 
 ---

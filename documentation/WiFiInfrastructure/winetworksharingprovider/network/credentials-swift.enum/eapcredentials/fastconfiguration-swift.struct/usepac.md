@@ -1,7 +1,8 @@
 # usePAC
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the device uses an existing Protected Access Credential (PAC).
 

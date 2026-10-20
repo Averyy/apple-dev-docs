@@ -1,7 +1,8 @@
 # none
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Show no partners
 

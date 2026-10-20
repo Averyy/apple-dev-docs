@@ -1,7 +1,8 @@
 # CSSM_X509_OPTION
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias CSSM_X509_OPTION = CSSM_BOOL
+```
+
+```c
+typedef CSSM_BOOL CSSM_X509_OPTION;
 ```
 
 

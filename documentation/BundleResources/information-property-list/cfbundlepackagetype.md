@@ -1,7 +1,8 @@
 # CFBundlePackageType
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The type of bundle.
 
@@ -13,9 +14,10 @@ The type of bundle.
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `CFBundlePackageType` (Bundle OS Type code)
+- **Type**: string
 
 #### Discussion
 
@@ -23,7 +25,8 @@ This key consists of a four-letter code for the bundle type. For apps, the code 
 
 ## See Also
 
-- [LSApplicationCategoryType](information-property-list/lsapplicationcategorytype.md)
+### Categorization
+- [LSApplicationCategoryType](./lsapplicationcategorytype.md)
   The category that best describes your app for the App Store.
 
 

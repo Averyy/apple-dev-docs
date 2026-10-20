@@ -1,7 +1,8 @@
 # UICellAccessory.CustomViewConfiguration
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Configuration options for a custom accessory.
 
@@ -10,7 +11,7 @@ Configuration options for a custom accessory.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,25 +22,26 @@ struct CustomViewConfiguration
 ## Topics
 
 ### Creating configuration options
-- [init(customView: UIView, placement: UICellAccessory.Placement, isHidden: Bool?, reservedLayoutWidth: UICellAccessory.LayoutDimension?, tintColor: UIColor?, maintainsFixedSize: Bool?)](uicellaccessory-swift.struct/customviewconfiguration/init(customview:placement:ishidden:reservedlayoutwidth:tintcolor:maintainsfixedsize:).md)
+- [init(customView: UIView, placement: UICellAccessory.Placement, isHidden: Bool?, reservedLayoutWidth: UICellAccessory.LayoutDimension?, tintColor: UIColor?, maintainsFixedSize: Bool?)](./customviewconfiguration/init%28customview,placement,ishidden,reservedlayoutwidth,tintcolor,maintainsfixedsize%29.md)
   Creates a custom accessory options structure.
 ### Accessing configuration options
-- [var isHidden: Bool](uicellaccessory-swift.struct/customviewconfiguration/ishidden.md)
+- [var isHidden: Bool](./customviewconfiguration/ishidden.md)
   A Boolean value that determines whether the cell hides the accessory.
-- [let customView: UIView](uicellaccessory-swift.struct/customviewconfiguration/customview.md)
+- [let customView: UIView](./customviewconfiguration/customview.md)
   The custom view to display for the accessory.
-- [let placement: UICellAccessory.Placement](uicellaccessory-swift.struct/customviewconfiguration/placement.md)
+- [let placement: UICellAccessory.Placement](./customviewconfiguration/placement.md)
   The placement for the accessory.
-- [var reservedLayoutWidth: UICellAccessory.LayoutDimension](uicellaccessory-swift.struct/customviewconfiguration/reservedlayoutwidth.md)
+- [var reservedLayoutWidth: UICellAccessory.LayoutDimension](./customviewconfiguration/reservedlayoutwidth.md)
   The layout width that the system reserves for the accessory, and then centers the accessory within.
-- [var tintColor: UIColor?](uicellaccessory-swift.struct/customviewconfiguration/tintcolor.md)
+- [var tintColor: UIColor?](./customviewconfiguration/tintcolor.md)
   The tint color to apply to the accessory.
-- [var maintainsFixedSize: Bool](uicellaccessory-swift.struct/customviewconfiguration/maintainsfixedsize.md)
+- [var maintainsFixedSize: Bool](./customviewconfiguration/maintainsfixedsize.md)
   A Boolean value that determines whether to preserve the frame size of the custom view.
 
 ## See Also
 
-- [static func customView(configuration: UICellAccessory.CustomViewConfiguration) -> UICellAccessory](uicellaccessory-swift.struct/customview(configuration:).md)
+### Creating a custom accessory
+- [static func customView(configuration: UICellAccessory.CustomViewConfiguration) -> UICellAccessory](./customview%28configuration%29.md)
   Creates a custom view accessory.
 
 

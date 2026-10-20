@@ -1,7 +1,8 @@
 # rate
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio playback rate.
 
@@ -17,6 +18,10 @@ The audio playback rate.
 
 ```swift
 var rate: Float { get set }
+```
+
+```objc
+@property (nonatomic) float rate;
 ```
 
 #### Discussion

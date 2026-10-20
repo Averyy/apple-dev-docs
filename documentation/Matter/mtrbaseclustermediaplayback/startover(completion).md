@@ -1,7 +1,8 @@
 # startOver(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func startOver(completion: @escaping @Sendable (MTRMediaPlaybackClusterPlaybackResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func startOver() async throws -> MTRMediaPlaybackClusterPlaybackResponseParams
+```
+
+```objc
+- (void) startOverWithCompletion:(void (^)(MTRMediaPlaybackClusterPlaybackResponseParams *data, NSError *error)) completion;
 ```
 
 

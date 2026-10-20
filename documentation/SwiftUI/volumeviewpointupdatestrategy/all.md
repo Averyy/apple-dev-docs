@@ -1,7 +1,8 @@
 # all
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The action should be run for all viewpoint changes.
 

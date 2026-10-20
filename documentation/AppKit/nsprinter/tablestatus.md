@@ -1,12 +1,13 @@
 # NSPrinter.TableStatus
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the state of a printer information table stored by a printer object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,35 +15,40 @@ Constants that describe the state of a printer information table stored by a pri
 enum TableStatus
 ```
 
+```c
+enum NSPrinterTableStatus : NSUInteger;
+```
+
 #### Overview
 
-These constants are used by [`statusForTable:`](nsprinter/statusfortable:.md).
+These constants are used by [`statusForTable:`](./statusfortable_.md).
 
 ## Topics
 
 ### Constants
-- [NSPrinter.TableStatus.ok](nsprinter/tablestatus/ok.md)
+- [NSPrinter.TableStatus.ok](./tablestatus/ok.md)
   Printer table was found and is valid.
-- [NSPrinter.TableStatus.notFound](nsprinter/tablestatus/notfound.md)
+- [NSPrinter.TableStatus.notFound](./tablestatus/notfound.md)
   Printer table was not found.
-- [NSPrinter.TableStatus.error](nsprinter/tablestatus/error.md)
+- [NSPrinter.TableStatus.error](./tablestatus/error.md)
   Printer table is not valid.
 ### Initializers
-- [init?(rawValue: UInt)](nsprinter/tablestatus/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./tablestatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Deprecated symbols](nsprinter-deprecated-symbols.md)
+### Deprecated
+- [Deprecated symbols](../nsprinter-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
 
 

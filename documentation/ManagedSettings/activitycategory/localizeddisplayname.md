@@ -1,7 +1,8 @@
 # localizedDisplayName
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized display name for the category.
 
@@ -22,7 +23,8 @@ In an extension that provides shield configurations, this property provides the 
 
 ## See Also
 
-- [let token: ActivityCategoryToken?](activitycategory/token.md)
+### Accessing category identifiers
+- [let token: ActivityCategoryToken?](./token.md)
   An opaque representation of a category of activities.
 
 

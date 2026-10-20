@@ -1,7 +1,8 @@
 # PasswordHash
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A dictionary that contains the password hash for the account.
 
@@ -10,14 +11,14 @@ A dictionary that contains the password hash for the account.
 
 ## Declaration
 
-```swift
+```
 object PasswordHash
 ```
 
 ## Topics
 
 ### Objects
-- [object PasswordHash.SALTED-SHA512-PBKDF2](passwordhash/salted-sha512-pbkdf2-data.dictionary.md)
+- [object PasswordHash.SALTED-SHA512-PBKDF2](./passwordhash/salted-sha512-pbkdf2-data.dictionary.md)
   A dictionary that contains the elements to create the password hash.
 
 ## Properties
@@ -26,7 +27,8 @@ object PasswordHash
 
 ## See Also
 
-- [object ManifestURL](manifesturl.md)
+### Miscellaneous data formats
+- [object ManifestURL](./manifesturl.md)
   The URL to the app manifest.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Exchanges the values at the specified indices of the collection.
@@ -25,12 +26,18 @@ mutating func swapAt(_ i: Self.Index, _ j: Self.Index)
 
 Both parameters must be valid indices of the collection and not equal to `endIndex`. Passing the same index as both `i` and `j` has no effect.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 
 - `i`: The index of the first value to swap.
 - `j`: The index of the second value to swap.
+
+## Default Implementations
+
+### MutableCollection Implementations
+- [func swapAt(Self.Index, Self.Index)](./swapat%28_,_%29-479dx.md)
+  Exchanges the values at the specified indices of the collection.
 
 
 ---

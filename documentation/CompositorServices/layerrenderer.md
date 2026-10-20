@@ -1,7 +1,8 @@
 # LayerRenderer
 
 **Framework**: Compositor Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A type that provides the Metal types and timing information you need to draw your content.
 
@@ -15,89 +16,94 @@ A type that provides the Metal types and timing information you need to draw you
 class LayerRenderer
 ```
 
+```objc
+@interface CP_OBJECT_cp_layer_renderer : NSObject
+```
+
 ## Mentions
 
-- [Drawing fully immersive content using Metal](drawing-fully-immersive-content-using-metal.md)
+- [Drawing fully immersive content using Metal](./drawing-fully-immersive-content-using-metal.md)
 
 #### Overview
 
-A layer renderer type creates a bridge between a SwiftUI scene and the Metal code you use to draw fully immersive experiences. When you present an immersive space with [`CompositorLayer`](compositorlayer.md) content, the system creates a `LayerRenderer` type and makes it available to the content’s closure. Use the information in the layer renderer to set up your app’s rendering loop, and to start drawing frames of content.
+A layer renderer type creates a bridge between a SwiftUI scene and the Metal code you use to draw fully immersive experiences. When you present an immersive space with [`CompositorLayer`](./compositorlayer.md) content, the system creates a `LayerRenderer` type and makes it available to the content’s closure. Use the information in the layer renderer to set up your app’s rendering loop, and to start drawing frames of content.
 
-Each layer renderer has information that tells the system how to configure the Metal textures and data types your app needs. Compositor Services provides a default configuration for layers, but you can customize the configuration as needed. Specify your custom configuration details using the [`CompositorLayerConfiguration`](compositorlayerconfiguration.md) protocol and pass a type with those details to the initializer for your immersive space’s content. Use the layer renderer’s capability information to validate any configuration choices you make.
+Each layer renderer has information that tells the system how to configure the Metal textures and data types your app needs. Compositor Services provides a default configuration for layers, but you can customize the configuration as needed. Specify your custom configuration details using the [`CompositorLayerConfiguration`](./compositorlayerconfiguration.md) protocol and pass a type with those details to the initializer for your immersive space’s content. Use the layer renderer’s capability information to validate any configuration choices you make.
 
-For information about how to create and configure a layer renderer and use it to run your rendering loop, see [`Drawing fully immersive content using Metal`](drawing-fully-immersive-content-using-metal.md).
+For information about how to create and configure a layer renderer and use it to run your rendering loop, see [Drawing fully immersive content using Metal](./drawing-fully-immersive-content-using-metal.md).
 
 ## Topics
 
 ### Configuring the layer renderer
-- [var configuration: LayerRenderer.Configuration](layerrenderer/configuration-swift.property.md)
+- [var configuration: LayerRenderer.Configuration](./layerrenderer/configuration-swift.property.md)
   The configuration details for the specified layer.
-- [LayerRenderer.Configuration](layerrenderer/configuration-swift.struct.md)
+- [LayerRenderer.Configuration](./layerrenderer/configuration-swift.struct.md)
   A type that stores the texture formats, layout information, and other details you use to configure your rendering loop code.
-- [LayerRenderer.Capabilities](layerrenderer/capabilities.md)
+- [LayerRenderer.Capabilities](./layerrenderer/capabilities.md)
   The color formats, depth formats, and features that you can use to configure your rendering engine.
 ### Getting the layer renderer properties
-- [var properties: LayerRenderer.Properties](layerrenderer/properties-swift.property.md)
+- [var properties: LayerRenderer.Properties](./layerrenderer/properties-swift.property.md)
   The configured properties of the layer renderer.
-- [LayerRenderer.Properties](layerrenderer/properties-swift.struct.md)
+- [LayerRenderer.Properties](./layerrenderer/properties-swift.struct.md)
   A type that describes the organization of the layer renderer’s textures and the relationships between those textures and the views you use for drawing.
 ### Getting the GPU device
-- [var device: any MTLDevice](layerrenderer/device.md)
+- [var device: any MTLDevice](./layerrenderer/device.md)
   The GPU device that the layer renderer uses for drawing operations
 ### Managing the rendering loop
-- [var state: LayerRenderer.State](layerrenderer/state-swift.property.md)
+- [var state: LayerRenderer.State](./layerrenderer/state-swift.property.md)
   A value that indicates whether the layer renderer is currently visible and ready for you to draw content.
-- [func waitUntilRunning()](layerrenderer/waituntilrunning.md)
+- [func waitUntilRunning()](./layerrenderer/waituntilrunning%28%29.md)
   Stops further execution of your code until the layer renderer leaves the paused state.
-- [LayerRenderer.State](layerrenderer/state-swift.enum.md)
+- [LayerRenderer.State](./layerrenderer/state-swift.enum.md)
   The states of the layer renderer, which tell you how to proceed with drawing operations.
-- [LayerRenderer.Clock](layerrenderer/clock.md)
+- [LayerRenderer.Clock](./layerrenderer/clock.md)
   A type that supports operations that require a precise time measurement.
 ### Drawing a frame of content
-- [func queryNextFrame() -> LayerRenderer.Frame?](layerrenderer/querynextframe.md)
+- [func queryNextFrame() -> LayerRenderer.Frame?](./layerrenderer/querynextframe%28%29.md)
   Returns the next frame to use for drawing.
-- [LayerRenderer.Frame](layerrenderer/frame.md)
+- [LayerRenderer.Frame](./layerrenderer/frame.md)
   A type that provides access to the timing information and data types you need to render a single frame of content.
-- [LayerRenderer.Drawable](layerrenderer/drawable.md)
+- [LayerRenderer.Drawable](./layerrenderer/drawable.md)
   A type that provides the textures and information you need to draw a frame of content.
 ### Configuring the frame update rate
-- [var minimumFrameRepeatCount: Int32](layerrenderer/minimumframerepeatcount.md)
+- [var minimumFrameRepeatCount: Int32](./layerrenderer/minimumframerepeatcount.md)
   The number of additional frames for which the system displays the same content.
 ### Defining quality level
-- [var renderQuality: LayerRenderer.RenderQuality](layerrenderer/renderquality-swift.property.md)
+- [var renderQuality: LayerRenderer.RenderQuality](./layerrenderer/renderquality-swift.property.md)
   Get the render quality to be used by the drawables.
-- [var defaultRenderQuality: LayerRenderer.RenderQuality](layerrenderer/capabilities/defaultrenderquality.md)
+- [var defaultRenderQuality: LayerRenderer.RenderQuality](./layerrenderer/capabilities/defaultrenderquality.md)
   The default render quality used on this platform.
-- [var maxRenderQuality: LayerRenderer.RenderQuality](layerrenderer/configuration-swift.struct/maxrenderquality.md)
+- [var maxRenderQuality: LayerRenderer.RenderQuality](./layerrenderer/configuration-swift.struct/maxrenderquality.md)
   The max render quality the layer can use when drawing to the drawables.
-- [Defining layer renderer quality](defining-layer-renderer-quality.md)
+- [Defining layer renderer quality](./defining-layer-renderer-quality.md)
   Declare the render quality of your textures to enable high-quality rendering.
 ### Structures
-- [LayerRenderer.RenderQuality](layerrenderer/renderquality-swift.struct.md)
+- [LayerRenderer.RenderQuality](./layerrenderer/renderquality-swift.struct.md)
   Render quality controls the quality which drawing happens at.
 ### Instance Properties
-- [var commandQueue: any MTL4CommandQueue](layerrenderer/commandqueue.md)
+- [var commandQueue: any MTL4CommandQueue](./layerrenderer/commandqueue.md)
   Returns the command queue that the layer uses for drawing operations.
-- [var onSpatialEvent: (SpatialEventCollection) -> Void](layerrenderer/onspatialevent-2jg60.md)
+- [var onSpatialEvent: (SpatialEventCollection) -> Void](./layerrenderer/onspatialevent-2jg60.md)
   A closure that receives the spatial events updates from the LayerRenderer
-- [var onSpatialEvent: (SpatialEventCollection) -> Void](layerrenderer/onspatialevent-inq8.md)
+- [var onSpatialEvent: (SpatialEventCollection) -> Void](./layerrenderer/onspatialevent-inq8.md)
   A closure that receives the spatial events updates from the LayerRenderer
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [LayerRenderer.Frame](layerrenderer/frame.md)
+### Render-loop setup
+- [LayerRenderer.Frame](./layerrenderer/frame.md)
   A type that provides access to the timing information and data types you need to render a single frame of content.
 
 

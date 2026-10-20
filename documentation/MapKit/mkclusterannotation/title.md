@@ -1,7 +1,8 @@
 # title
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title string to display for the group of annotations.
 
@@ -19,13 +20,18 @@ The title string to display for the group of annotations.
 var title: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * title;
+```
+
 #### Discussion
 
 The cluster annotation object automatically sets this string to the title of one of the annotations in its group.
 
 ## See Also
 
-- [var subtitle: String?](mkclusterannotation/subtitle.md)
+### Getting the cluster attributes
+- [var subtitle: String?](./subtitle.md)
   The subtitle string to display for the group of annotations.
 
 

@@ -1,7 +1,8 @@
 # portrait
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The picture of the mobile national ID card holder on record with the issuer.
 

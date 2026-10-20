@@ -1,7 +1,8 @@
 # AdGroupQueryResponse
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response object for an ad group query, containing matched results and pagination metadata.
 
@@ -10,7 +11,7 @@ The response object for an ad group query, containing matched results and pagina
 
 ## Declaration
 
-```swift
+```
 object AdGroupQueryResponse
 ```
 
@@ -65,41 +66,41 @@ Use the `QueryRequest` body with `filters` to scope results to a specific campai
 
 ## Properties
 
-- `result` ([AdGroup]): The filtered, sorted, and paginated set of matching `AdGroup` objects. See [`AdGroup`](adgroup.md). Read-only.
-- `pagination` (QueryPaginationResult): Pagination metadata for the response, including `offset`, `pageSize`, and `totalCount`, to support offset-based navigation through large result sets. See [`QueryPaginationResult`](querypaginationresult.md). Read-only.
-- `error` (Error): Error information if the request encountered an error. See [`Error`](error.md). Read-only.
+- `result` ([AdGroup]): The filtered, sorted, and paginated set of matching `AdGroup` objects. See [`AdGroup`](./adgroup.md). Read-only.
+- `pagination` (QueryPaginationResult): Pagination metadata for the response, including `offset`, `pageSize`, and `totalCount`, to support offset-based navigation through large result sets. See [`QueryPaginationResult`](./querypaginationresult.md). Read-only.
+- `error` (Error): Error information if the request encountered an error. See [`Error`](./error.md). Read-only.
 
 ## See Also
 
-- [object AdGroup](adgroup.md)
+- [object AdGroup](./adgroup.md)
   Primary unit governing targeting, bid strategy, pricing model, and scheduling within a campaign.
-- [object AdGroupCreate](adgroupcreate.md)
+- [object AdGroupCreate](./adgroupcreate.md)
   The request body for creating a new ad group.
-- [object AdGroupUpdate](adgroupupdate.md)
+- [object AdGroupUpdate](./adgroupupdate.md)
   The request body for updating an existing ad group.
-- [object AdGroupResponse](adgroupresponse.md)
+- [object AdGroupResponse](./adgroupresponse.md)
   The response object for an ad group operation.
-- [object AdGroupTargeting](adgrouptargeting.md)
+- [object AdGroupTargeting](./adgrouptargeting.md)
   The comprehensive audience and placement configuration for an ad group.
-- [object AdGroupTargetingCreate](adgrouptargetingcreate.md)
+- [object AdGroupTargetingCreate](./adgrouptargetingcreate.md)
   The targeting configuration for creating a new ad group, specifying audience dimensions to include or exclude.
-- [object AdGroupTargetingUpdate](adgrouptargetingupdate.md)
+- [object AdGroupTargetingUpdate](./adgrouptargetingupdate.md)
   The targeting configuration for updating an existing ad group, specifying audience dimensions to include or exclude.
-- [object BidStrategy](bidstrategy.md)
+- [object BidStrategy](./bidstrategy.md)
   Defines how an ad group or campaign competes in auctions, including bid type, optimization goal, and bid amount.
-- [object BidStrategyCreate](bidstrategycreate.md)
+- [object BidStrategyCreate](./bidstrategycreate.md)
   The creation payload for configuring a bid strategy on an ad group or campaign.
-- [object BidStrategyUpdate](bidstrategyupdate.md)
+- [object BidStrategyUpdate](./bidstrategyupdate.md)
   The request body for updating a bid strategy on an ad group or campaign.
-- [object CPAGoal](cpagoal.md)
+- [object CPAGoal](./cpagoal.md)
   A deprecated cost-per-acquisition goal value. Use `bidStrategy` with `MAX_CONVERSIONS` instead.
-- [object CPAGoalCreate](cpagoalcreate.md)
+- [object CPAGoalCreate](./cpagoalcreate.md)
   The deprecated request payload for setting a cost-per-acquisition goal. Use `bidStrategy` with `MAX_CONVERSIONS` instead.
-- [object CPAGoalUpdate](cpagoalupdate.md)
+- [object CPAGoalUpdate](./cpagoalupdate.md)
   The deprecated request payload for updating a cost-per-acquisition goal. Use `bidStrategy` with `MAX_CONVERSIONS` instead.
-- [object TargetingData](targetingdata.md)
+- [object TargetingData](./targetingdata.md)
   The shared include and exclude pattern for all ad group and campaign targeting dimensions.
-- [object TargetingDataCreate](targetingdatacreate.md)
+- [object TargetingDataCreate](./targetingdatacreate.md)
   A targeting dimension value set for creating ad group or campaign targeting, specifying values to include or exclude.
 
 

@@ -27,34 +27,35 @@ Here’s an example that shows the director and main actors for a movie.
 </infoList>
 ```
 
-##### Subelements of Infolist
+##### Subelements of infoList
 
-- [`info`](info.md)
+- [info](./info.md)
 
-##### Elements That Use Infolist
+##### Elements that Use infoList
 
-- [`banner`](banner.md)
+- [banner](./banner.md)
 
 ## Topics
 
 ### Valid TVML Styles
-- [height](element-shaping-height.md)
+- [height](./element-shaping-height.md)
   Specifies the height of an element.
-- [margin](margin.md)
+- [margin](./margin.md)
   Specifies the spacing around an element.
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [collectionList](collectionlist.md)
+### List Elements
+- [collectionList](./collectionlist.md)
   Contains other layout elements.
-- [list](list.md)
+- [list](./list.md)
   Creates a generic container.
 
 

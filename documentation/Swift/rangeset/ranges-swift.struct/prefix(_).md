@@ -1,7 +1,8 @@
 # prefix(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a subsequence, up to the specified maximum length, containing the initial elements of the collection.
 
@@ -36,7 +37,7 @@ print(numbers.prefix(10))
 // Prints "[1, 2, 3, 4, 5]"
 ```
 
-> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is the number of elements to select from the beginning of the collection.
+> **Complexity**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is the number of elements to select from the beginning of the collection.
 
 ## Parameters
 

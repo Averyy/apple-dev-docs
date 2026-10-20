@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Metal  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns the descriptor object for the specified sample buffer attachment.
 
@@ -19,9 +20,13 @@ Returns the descriptor object for the specified sample buffer attachment.
 subscript(attachmentIndex: Int) -> MTLComputePassSampleBufferAttachmentDescriptor! { get set }
 ```
 
+```objc
+- (MTLComputePassSampleBufferAttachmentDescriptor *) objectAtIndexedSubscript:(NSUInteger) attachmentIndex;
+```
+
 #### Return Value
 
-The requested  [`MTLComputePassSampleBufferAttachmentDescriptor`](mtlcomputepasssamplebufferattachmentdescriptor.md) object.
+The requested  [`MTLComputePassSampleBufferAttachmentDescriptor`](../mtlcomputepasssamplebufferattachmentdescriptor.md) object.
 
 ## Parameters
 

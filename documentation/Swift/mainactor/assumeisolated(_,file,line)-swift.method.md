@@ -1,7 +1,8 @@
 # assumeIsolated(_:file:line:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Assume that the current task is executing on this actor’s serial executor, or stop program execution otherwise.
 
@@ -31,15 +32,15 @@ You call this method to *assume and verify* that the currently executing synchro
 
 If that is the case, the operation is invoked with an `isolated` version of the actor, allowing synchronous access to actor local state without hopping through asynchronous boundaries.
 
-If the current context is not running on the actor’s serial executor, or if the actor is a reference to a remote actor, this method will crash with a fatal error (similar to [`preconditionIsolated(_:file:line:)`](mainactor/preconditionisolated(_:file:line:).md)).
+If the current context is not running on the actor’s serial executor, or if the actor is a reference to a remote actor, this method will crash with a fatal error (similar to [`preconditionIsolated(_:file:line:)`](./preconditionisolated%28_,file,line%29.md)).
 
-Note that this check is performed against the passed in actor’s serial executor, meaning that if another actor uses the same serial executor–by using that actor’s [`unownedExecutor`](actor/unownedexecutor.md) as its own [`unownedExecutor`](actor/unownedexecutor.md)–this check will succeed, as from a concurrency safety perspective, the serial executor guarantees mutual exclusion of those two actors.
+Note that this check is performed against the passed in actor’s serial executor, meaning that if another actor uses the same serial executor–by using that actor’s [`unownedExecutor`](../actor/unownedexecutor.md) as its own [`unownedExecutor`](../actor/unownedexecutor.md)–this check will succeed, as from a concurrency safety perspective, the serial executor guarantees mutual exclusion of those two actors.
 
 This method can only be used from synchronous functions, as asynchronous functions should instead perform a normal method call to the actor, which will hop task execution to the target actor if necessary.
 
-> **Note**: This check is performed against the actor’s serial executor, meaning that / if another actor uses the same serial executor–by using another actor’s executor as its own [`unownedExecutor`](actor/unownedexecutor.md) –this check will succeed , as from a concurrency safety perspective, the serial executor guarantees mutual exclusion of those two actors.
+> **Note**: This check is performed against the actor’s serial executor, meaning that / if another actor uses the same serial executor–by using another actor’s executor as its own [`unownedExecutor`](../actor/unownedexecutor.md) –this check will succeed , as from a concurrency safety perspective, the serial executor guarantees mutual exclusion of those two actors.
 
-> **Note**: Rethrows the `Error` thrown by the operation if it threw
+> **Throws**: Rethrows the `Error` thrown by the operation if it threw
 
 ## Parameters
 

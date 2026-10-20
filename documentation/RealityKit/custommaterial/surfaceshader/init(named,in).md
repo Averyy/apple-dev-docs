@@ -1,7 +1,8 @@
 # init(named:in:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a surface shader object from a named function in a Metal library.
 
@@ -59,7 +60,7 @@ let surfaceShader = CustomMaterial.SurfaceShader(
 
 > ❗ **Important**: RealityKit loads surface shader functions by name, so name your surface shader uniquely and to exactly match the `named` parameter.
 
-For more information on creating custom materials and writing shader functions, see [`Modifying RealityKit rendering using custom materials`](modifying-realitykit-rendering-using-custom-materials.md).
+For more information on creating custom materials and writing shader functions, see [Modifying RealityKit rendering using custom materials](../../modifying-realitykit-rendering-using-custom-materials.md).
 
 ## Parameters
 

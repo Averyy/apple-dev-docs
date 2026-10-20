@@ -1,7 +1,8 @@
 # font
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The font of the menu and its submenus.
 
@@ -12,6 +13,10 @@ The font of the menu and its submenus.
 
 ```swift
 var font: NSFont! { get set }
+```
+
+```objc
+@property (strong, null_resettable) NSFont * font;
 ```
 
 #### Discussion

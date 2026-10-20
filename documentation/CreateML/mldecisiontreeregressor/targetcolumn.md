@@ -1,7 +1,8 @@
 # targetColumn
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the column you selected at initialization to define which feature the regressor predicts.
 
@@ -25,9 +26,10 @@ Changing the value of this property doesn’t retrain the model or affect its be
 
 ## See Also
 
-- [init(trainingData:targetColumn:featureColumns:parameters:)](mldecisiontreeregressor/init(trainingdata:targetcolumn:featurecolumns:parameters:).md)
+### Training a decision tree regressor synchronously
+- [init(trainingData:targetColumn:featureColumns:parameters:)](./init%28trainingdata,targetcolumn,featurecolumns,parameters%29.md)
   Creates a decision tree regressor.
-- [var featureColumns: [String]](mldecisiontreeregressor/featurecolumns.md)
+- [var featureColumns: [String]](./featurecolumns.md)
   The names of the columns you selected at initialization to train the regressor.
 
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,12 +18,12 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kUSB20ExtensionLPMSupported](1643531-anonymous/kusb20extensionlpmsupported.md)
-- [kUSBSuperSpeedLTMCapable](1643531-anonymous/kusbsuperspeedltmcapable.md)
-- [kUSBSuperSpeedSupportsFS](1643531-anonymous/kusbsuperspeedsupportsfs.md)
-- [kUSBSuperSpeedSupportsHS](1643531-anonymous/kusbsuperspeedsupportshs.md)
-- [kUSBSuperSpeedSupportsLS](1643531-anonymous/kusbsuperspeedsupportsls.md)
-- [kUSBSuperSpeedSupportsSS](1643531-anonymous/kusbsuperspeedsupportsss.md)
+- [kUSB20ExtensionLPMSupported](./api-1643531-anonymous/kusb20extensionlpmsupported.md)
+- [kUSBSuperSpeedLTMCapable](./api-1643531-anonymous/kusbsuperspeedltmcapable.md)
+- [kUSBSuperSpeedSupportsFS](./api-1643531-anonymous/kusbsuperspeedsupportsfs.md)
+- [kUSBSuperSpeedSupportsHS](./api-1643531-anonymous/kusbsuperspeedsupportshs.md)
+- [kUSBSuperSpeedSupportsLS](./api-1643531-anonymous/kusbsuperspeedsupportsls.md)
+- [kUSBSuperSpeedSupportsSS](./api-1643531-anonymous/kusbsuperspeedsupportsss.md)
 
 
 ---

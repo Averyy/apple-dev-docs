@@ -1,6 +1,7 @@
 # Frame processing
 
-**Framework**: Video Toolbox
+**Framework**: Video Toolbox  
+**Role**: API Collection
 
 An interface for accessing a range of different video-processing features.
 
@@ -11,57 +12,57 @@ A `Configuration` object defines each processor implementation by passing initia
 ## Topics
 
 ### Frame processor
-- [Enhancing your app with machine learning-based video effects](enhancing-your-app-with-machine-learning-based-video-effects.md)
+- [Enhancing your app with machine learning-based video effects](./enhancing-your-app-with-machine-learning-based-video-effects.md)
   Add powerful effects to your videos using the VideoToolbox VTFrameProcessor API.
-- [class VTFrameProcessor](vtframeprocessor.md)
+- [class VTFrameProcessor](./vtframeprocessor.md)
   A class that creates a new frame processor for the configured video effect.
-- [protocol VTFrameProcessorConfiguration](vtframeprocessorconfiguration.md)
+- [protocol VTFrameProcessorConfiguration](./vtframeprocessorconfiguration.md)
   A protocol that describes the configuration of a processor to use during a video processing session.
-- [class VTFrameProcessorFrame](vtframeprocessorframe.md)
+- [class VTFrameProcessorFrame](./vtframeprocessorframe.md)
   An object that wraps video frames to send to the processor, as source, reference, or output frames.
-- [protocol VTFrameProcessorParameters](vtframeprocessorparameters.md)
+- [protocol VTFrameProcessorParameters](./vtframeprocessorparameters.md)
   The base protocol for input and output processing parameters for a frame processor implementation.
 ### Frame rate conversion
-- [class VTFrameRateConversionConfiguration](vtframerateconversionconfiguration.md)
+- [class VTFrameRateConversionConfiguration](./vtframerateconversionconfiguration.md)
   An object that enables the frame rate conversion on a frame processing session.
-- [class VTFrameRateConversionParameters](vtframerateconversionparameters.md)
+- [class VTFrameRateConversionParameters](./vtframerateconversionparameters.md)
   An object that contains the required input and output parameters to run a frame rate conversion processor on a frame.
 ### Low-latency frame interpolation
-- [class VTLowLatencyFrameInterpolationConfiguration](vtlowlatencyframeinterpolationconfiguration.md)
+- [class VTLowLatencyFrameInterpolationConfiguration](./vtlowlatencyframeinterpolationconfiguration.md)
   Configuration that you use to program Video Toolbox frame processor for low-latency frame interpolation.
-- [class VTLowLatencyFrameInterpolationParameters](vtlowlatencyframeinterpolationparameters.md)
+- [class VTLowLatencyFrameInterpolationParameters](./vtlowlatencyframeinterpolationparameters.md)
   An object that contains both input and output parameters that the low-latency frame interpolation processor needs.
 ### Low-latency super resolution
-- [class VTLowLatencySuperResolutionScalerConfiguration](vtlowlatencysuperresolutionscalerconfiguration.md)
+- [class VTLowLatencySuperResolutionScalerConfiguration](./vtlowlatencysuperresolutionscalerconfiguration.md)
   An object you use to configure frame processor for low-latency super-resolution scaler processing.
-- [class VTLowLatencySuperResolutionScalerParameters](vtlowlatencysuperresolutionscalerparameters.md)
+- [class VTLowLatencySuperResolutionScalerParameters](./vtlowlatencysuperresolutionscalerparameters.md)
   An object that contains both input and output parameters that the low-latency super-resolution scaler frame processor needs.
 ### Motion blur
-- [class VTMotionBlurConfiguration](vtmotionblurconfiguration.md)
+- [class VTMotionBlurConfiguration](./vtmotionblurconfiguration.md)
   A configuration object to enable motion blur on a frame processing session.
-- [class VTMotionBlurParameters](vtmotionblurparameters.md)
+- [class VTMotionBlurParameters](./vtmotionblurparameters.md)
   This object contains both input and output parameters necessary to run the motion blur processor on a frame.
 ### Optical flow
-- [class VTFrameProcessorOpticalFlow](vtframeprocessoropticalflow.md)
+- [class VTFrameProcessorOpticalFlow](./vtframeprocessoropticalflow.md)
   A class to wrap bidirectional optical flow to send to the processor.
-- [class VTOpticalFlowConfiguration](vtopticalflowconfiguration.md)
+- [class VTOpticalFlowConfiguration](./vtopticalflowconfiguration.md)
   A configuration object that enables optical flow on a frame processing session.
-- [class VTOpticalFlowParameters](vtopticalflowparameters.md)
+- [class VTOpticalFlowParameters](./vtopticalflowparameters.md)
   An object that describes frame-level optical flow parameters.
 ### Super resolution
-- [class VTSuperResolutionScalerConfiguration](vtsuperresolutionscalerconfiguration.md)
+- [class VTSuperResolutionScalerConfiguration](./vtsuperresolutionscalerconfiguration.md)
   Configuration that you use to set up the super-resolution processor.
-- [class VTSuperResolutionScalerParameters](vtsuperresolutionscalerparameters.md)
+- [class VTSuperResolutionScalerParameters](./vtsuperresolutionscalerparameters.md)
   An object that contains both input and output parameters that the super-resolution processor needs to run on a frame.
 ### Temporal noise filter
-- [class VTTemporalNoiseFilterConfiguration](vttemporalnoisefilterconfiguration.md)
+- [class VTTemporalNoiseFilterConfiguration](./vttemporalnoisefilterconfiguration.md)
   A configuration object to initiate a frame processor and use temporal noise-filter processor.
-- [class VTTemporalNoiseFilterParameters](vttemporalnoisefilterparameters.md)
+- [class VTTemporalNoiseFilterParameters](./vttemporalnoisefilterparameters.md)
   Encapsulates the frame-level parameters necessary for processing a source frame using temporal noise-filter processor.
 ### Errors
-- [struct VTFrameProcessorError](vtframeprocessorerror-swift.struct.md)
+- [struct VTFrameProcessorError](./vtframeprocessorerror-swift.struct.md)
   Error codes generated by a frame processor.
-- [let VTFrameProcessorErrorDomain: String](vtframeprocessorerrordomain.md)
+- [let VTFrameProcessorErrorDomain: String](./vtframeprocessorerrordomain.md)
   The error domain of Video Toolbox errors.
 
 

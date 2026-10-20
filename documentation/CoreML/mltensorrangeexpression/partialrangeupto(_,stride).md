@@ -1,7 +1,8 @@
 # partialRangeUpTo(_:stride:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Slice the tensor at the specified dimension.
 
@@ -20,6 +21,14 @@ Slice the tensor at the specified dimension.
 static func partialRangeUpTo(_ range: PartialRangeThrough<Int>, stride: Int = 1) -> any MLTensorRangeExpression
 ```
 
+Available when `Self` is `_MLTensorRange`.
+
+**Other overloads**:
+
+```swift
+static func partialRangeUpTo(_ range: PartialRangeUpTo<Int>, stride: Int = 1) -> any MLTensorRangeExpression
+```
+
 #### Discussion
 
 For example:
@@ -32,13 +41,14 @@ y.shape // is [1, 3, 28, 4]
 
 ## See Also
 
-- [static func closedRange(ClosedRange<Int>, stride: Int) -> any MLTensorRangeExpression](mltensorrangeexpression/closedrange(_:stride:).md)
+### Slicing the tensor
+- [static func closedRange(ClosedRange<Int>, stride: Int) -> any MLTensorRangeExpression](./closedrange%28_,stride%29.md)
   Slice the tensor at the specified dimension.
-- [static func index(Int) -> any MLTensorRangeExpression](mltensorrangeexpression/index(_:).md)
+- [static func index(Int) -> any MLTensorRangeExpression](./index%28_%29.md)
   Slice the tensor at the specified dimension.
-- [static func partialRangeFrom(PartialRangeFrom<Int>, stride: Int) -> any MLTensorRangeExpression](mltensorrangeexpression/partialrangefrom(_:stride:).md)
+- [static func partialRangeFrom(PartialRangeFrom<Int>, stride: Int) -> any MLTensorRangeExpression](./partialrangefrom%28_,stride%29.md)
   Slice the tensor at the specified dimension.
-- [static func range(Range<Int>, stride: Int) -> any MLTensorRangeExpression](mltensorrangeexpression/range(_:stride:).md)
+- [static func range(Range<Int>, stride: Int) -> any MLTensorRangeExpression](./range%28_,stride%29.md)
   Slice the tensor at the specified dimension.
 
 

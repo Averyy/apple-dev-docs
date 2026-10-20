@@ -1,7 +1,8 @@
 # init(top:leading:bottom:trailing:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a directional edge insets structure that contains the specified values.
 
@@ -32,9 +33,10 @@ An initialized inset structure.
 
 ## See Also
 
-- [init()](nsdirectionaledgeinsets/init.md)
+### Creating directional edge insets
+- [init()](./init%28%29.md)
   Creates a directional edge insets structure that contains default values.
-- [init(EdgeInsets)](nsdirectionaledgeinsets/init(_:).md)
+- [init(EdgeInsets)](./init%28_%29.md)
   Creates a directional edge insets structure from a SwiftUI edge insets structure.
 
 

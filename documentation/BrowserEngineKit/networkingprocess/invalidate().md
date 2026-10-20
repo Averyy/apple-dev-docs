@@ -1,7 +1,8 @@
 # invalidate()
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the networking process.
 
@@ -24,7 +25,8 @@ After you call this method, other method calls on the networking process throw e
 
 ## See Also
 
-- [init(bundleIdentifier: String?, onInterruption: () -> Void) async throws](networkingprocess/init(bundleidentifier:oninterruption:).md)
+### Creating and invalidating extension processes
+- [init(bundleIdentifier: String?, onInterruption: () -> Void) async throws](./init%28bundleidentifier,oninterruption%29.md)
   Launches a networking extension process asynchronously.
 
 

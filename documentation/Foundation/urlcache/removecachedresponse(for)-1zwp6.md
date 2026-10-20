@@ -1,7 +1,8 @@
 # removeCachedResponse(for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the cached URL response for a specified data task.
 
@@ -20,17 +21,22 @@ Removes the cached URL response for a specified data task.
 func removeCachedResponse(for dataTask: URLSessionDataTask)
 ```
 
+```objc
+- (void) removeCachedResponseForDataTask:(NSURLSessionDataTask *) dataTask;
+```
+
 ## Parameters
 
 - `dataTask`: A task whose URL request’s corresponding cached URL response should be removed. If there is no corresponding cached URL response, no action is taken.
 
 ## See Also
 
-- [func removeCachedResponse(for: URLRequest)](urlcache/removecachedresponse(for:)-1dh89.md)
+### Removing cached objects
+- [func removeCachedResponse(for: URLRequest)](./removecachedresponse%28for%29-1dh89.md)
   Removes the cached URL response for a specified URL request.
-- [func removeCachedResponses(since: Date)](urlcache/removecachedresponses(since:).md)
+- [func removeCachedResponses(since: Date)](./removecachedresponses%28since%29.md)
   Clears the given cache of any cached responses since the provided date.
-- [func removeAllCachedResponses()](urlcache/removeallcachedresponses.md)
+- [func removeAllCachedResponses()](./removeallcachedresponses%28%29.md)
   Clears the receiver’s cache, removing all stored cached URL responses.
 
 

@@ -1,7 +1,8 @@
 # applied(to:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Extracts audio features from an a sequence of audio buffers
 
@@ -34,7 +35,8 @@ You can call this method multiple times to process multiple streams.
 
 ## See Also
 
-- [AudioFeaturePrint.FeatureSequence](audiofeatureprint/featuresequence.md)
+### Performing the transformation
+- [AudioFeaturePrint.FeatureSequence](./featuresequence.md)
   An async sequence of audio buffers.
 
 

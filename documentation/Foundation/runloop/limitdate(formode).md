@@ -1,7 +1,8 @@
 # limitDate(forMode:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs one pass through the run loop in the specified mode and returns the date at which the next timer is scheduled to fire.
 
@@ -20,6 +21,10 @@ Performs one pass through the run loop in the specified mode and returns the dat
 func limitDate(forMode mode: RunLoop.Mode) -> Date?
 ```
 
+```objc
+- (NSDate *) limitDateForMode:(NSRunLoopMode) mode;
+```
+
 #### Return Value
 
 The date at which the next timer is scheduled to fire, or `nil` if there are no input sources for this mode.
@@ -34,15 +39,16 @@ The run loop is entered with an immediate timeout, so the run loop does not bloc
 
 ## See Also
 
-- [class var current: RunLoop](runloop/current.md)
+### Accessing Run Loops and Modes
+- [class var current: RunLoop](./current.md)
   Returns the run loop for the current thread.
-- [var currentMode: RunLoop.Mode?](runloop/currentmode.md)
+- [var currentMode: RunLoop.Mode?](./currentmode.md)
   The receiver’s current input mode.
-- [class var main: RunLoop](runloop/main.md)
+- [class var main: RunLoop](./main.md)
   Returns the run loop of the main thread.
-- [func getCFRunLoop() -> CFRunLoop](runloop/getcfrunloop.md)
+- [func getCFRunLoop() -> CFRunLoop](./getcfrunloop%28%29.md)
   Returns the receiver’s underlying run loop object.
-- [RunLoop.Mode](runloop/mode.md)
+- [RunLoop.Mode](./mode.md)
   Modes that a run loop operates in.
 
 

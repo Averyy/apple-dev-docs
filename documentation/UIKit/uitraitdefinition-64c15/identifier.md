@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 **Availability**:
@@ -9,7 +10,7 @@
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -17,11 +18,17 @@
 static var identifier: String { get }
 ```
 
+## Default Implementations
+
+### UITraitDefinition Implementations
+- [static var identifier: String](./identifier-302h7.md)
+
 ## See Also
 
-- [static var affectsColorAppearance: Bool](uitraitdefinition-64c15/affectscolorappearance.md)
-- [static var defaultValue: Self.Value](uitraitdefinition-64c15/defaultvalue.md)
-- [static var name: String](uitraitdefinition-64c15/name.md)
+### Type Properties
+- [static var affectsColorAppearance: Bool](./affectscolorappearance.md)
+- [static var defaultValue: Self.Value](./defaultvalue.md)
+- [static var name: String](./name.md)
 
 
 ---

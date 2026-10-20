@@ -1,7 +1,8 @@
 # TitleAndIconLabelStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A label style that shows both the title and icon of the label using a system-standard layout.
 
@@ -23,26 +24,27 @@ struct TitleAndIconLabelStyle
 
 #### Overview
 
-You can also use [`titleAndIcon`](labelstyle/titleandicon.md) to construct this style.
+You can also use [`titleAndIcon`](./labelstyle/titleandicon.md) to construct this style.
 
 ## Topics
 
 ### Creating the label style
-- [init()](titleandiconlabelstyle/init.md)
+- [init()](./titleandiconlabelstyle/init%28%29.md)
   Creates a label style that shows both the title and icon of the label using a system-standard layout.
 
 ## Relationships
 
 ### Conforms To
-- [LabelStyle](labelstyle.md)
+- [LabelStyle](./labelstyle.md)
 
 ## See Also
 
-- [struct DefaultLabelStyle](defaultlabelstyle.md)
+### Supporting types
+- [struct DefaultLabelStyle](./defaultlabelstyle.md)
   The default label style in the current context.
-- [struct IconOnlyLabelStyle](icononlylabelstyle.md)
+- [struct IconOnlyLabelStyle](./icononlylabelstyle.md)
   A label style that only displays the icon of the label.
-- [struct TitleOnlyLabelStyle](titleonlylabelstyle.md)
+- [struct TitleOnlyLabelStyle](./titleonlylabelstyle.md)
   A label style that only displays the title of the label.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a queue you use to submit rendering and computation commands to a GPU.
@@ -11,7 +12,7 @@ Creates a queue you use to submit rendering and computation commands to a GPU.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,13 +21,17 @@ Creates a queue you use to submit rendering and computation commands to a GPU.
 func makeCommandQueue() -> (any MTLCommandQueue)?
 ```
 
+```objc
+- (id<MTLCommandQueue>) newCommandQueue;
+```
+
 ## Mentions
 
-- [Setting up a command structure](setting-up-a-command-structure.md)
+- [Setting up a command structure](../setting-up-a-command-structure.md)
 
 #### Return Value
 
-A new [`MTLCommandQueue`](mtlcommandqueue.md) instance if the method completed successfully; otherwise `nil`.
+A new [`MTLCommandQueue`](../mtlcommandqueue.md) instance if the method completed successfully; otherwise `nil`.
 
 #### Discussion
 
@@ -34,7 +39,7 @@ A command queue can only submit commands to the GPU device instance that created
 
 > ❗ **Important**:  The command queues you create with this method allow up to 64 uncompleted command buffers at time.
 
-This method is the equivalent of passing `64` to the [`makeCommandQueue(maxCommandBufferCount:)`](mtldevice/makecommandqueue(maxcommandbuffercount:).md) method.
+This method is the equivalent of passing `64` to the [`makeCommandQueue(maxCommandBufferCount:)`](./makecommandqueue%28maxcommandbuffercount%29.md) method.
 
 **Swift**:
 
@@ -53,7 +58,8 @@ commandQueue = [device newCommandQueueWithMaxCommandBufferCount:capacity];
 
 ## See Also
 
-- [func makeCommandQueue(maxCommandBufferCount: Int) -> (any MTLCommandQueue)?](mtldevice/makecommandqueue(maxcommandbuffercount:).md)
+### Creating command queues
+- [func makeCommandQueue(maxCommandBufferCount: Int) -> (any MTLCommandQueue)?](./makecommandqueue%28maxcommandbuffercount%29.md)
   Creates a queue you use to submit rendering and computation commands to a GPU that has a fixed number of uncompleted command buffers.
 
 

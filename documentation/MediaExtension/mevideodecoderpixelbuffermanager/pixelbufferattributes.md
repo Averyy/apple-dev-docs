@@ -1,7 +1,8 @@
 # pixelBufferAttributes
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary that contains the attributes Video Toolbox uses to create a pixel buffer for the decoder.
 
@@ -14,13 +15,18 @@ A dictionary that contains the attributes Video Toolbox uses to create a pixel b
 var pixelBufferAttributes: [String : Any] { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) NSDictionary<NSString *,id> * pixelBufferAttributes;
+```
+
 #### Discussion
 
 The decoder can update this dictionary before it requests a new pixel buffer.
 
 ## See Also
 
-- [func makePixelBuffer() throws -> CVPixelBuffer](mevideodecoderpixelbuffermanager/makepixelbuffer.md)
+### Creating a pixel buffer
+- [func makePixelBuffer() throws -> CVPixelBuffer](./makepixelbuffer%28%29.md)
   Generates a pixel buffer using the session’s pixel buffer pool.
 
 

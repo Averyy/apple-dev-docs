@@ -1,7 +1,8 @@
 # sportsOverlay
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional sports overlay for the thumbnail.
 
@@ -14,6 +15,10 @@ An optional sports overlay for the thumbnail.
 
 ```swift
 var sportsOverlay: CPSportsOverlay? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) CPSportsOverlay * sportsOverlay;
 ```
 
 

@@ -1,7 +1,8 @@
 # blending
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transparency of an entity.
 
@@ -20,7 +21,8 @@ var blending: CustomMaterial.Blending { get set }
 
 ## See Also
 
-- [var opacityThreshold: Float?](custommaterial/opacitythreshold.md)
+### Controlling opacity
+- [var opacityThreshold: Float?](./opacitythreshold.md)
   The minimum opacity value to treat as fully opaque.
 
 

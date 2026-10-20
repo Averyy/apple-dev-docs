@@ -1,11 +1,12 @@
 # CustomDebugStringConvertible Implementations
 
-**Framework**: System
+**Framework**: System  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var debugDescription: String](filepath/component/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A textual representation of the path component, suitable for debugging.
 
 

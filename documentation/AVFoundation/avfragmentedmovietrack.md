@@ -1,7 +1,8 @@
 # AVFragmentedMovieTrack
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a track in a fragmented movie.
 
@@ -19,29 +20,34 @@ An object that represents a track in a fragmented movie.
 class AVFragmentedMovieTrack
 ```
 
+```objc
+@interface AVFragmentedMovieTrack : AVMovieTrack
+```
+
 ## Relationships
 
 ### Inherits From
-- [AVMovieTrack](avmovietrack.md)
+- [AVMovieTrack](./avmovietrack.md)
 ### Conforms To
-- [AVAsynchronousKeyValueLoading](avasynchronouskeyvalueloading.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AVAsynchronousKeyValueLoading](./avasynchronouskeyvalueloading.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVFragmentedMovie](avfragmentedmovie.md)
+### Fragmented movies
+- [class AVFragmentedMovie](./avfragmentedmovie.md)
   An object that represents a fragmented movie file.
-- [class AVFragmentedMovieMinder](avfragmentedmovieminder.md)
+- [class AVFragmentedMovieMinder](./avfragmentedmovieminder.md)
   An object that checks whether a fragmented movie appends additional movie fragments.
-- [protocol AVFragmentMinding](avfragmentminding.md)
+- [protocol AVFragmentMinding](./avfragmentminding.md)
   A protocol that defines whether an asset supports fragment minding.
 
 

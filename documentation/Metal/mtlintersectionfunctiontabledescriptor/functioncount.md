@@ -1,7 +1,8 @@
 # functionCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of entries in the intersection function table.
 
@@ -17,6 +18,10 @@ The number of entries in the intersection function table.
 
 ```swift
 var functionCount: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger functionCount;
 ```
 
 

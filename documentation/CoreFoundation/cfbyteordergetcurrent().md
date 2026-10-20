@@ -1,18 +1,19 @@
 # CFByteOrderGetCurrent()
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the byte order of the current computer.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,41 +21,46 @@ Returns the byte order of the current computer.
 func CFByteOrderGetCurrent() -> CFByteOrder
 ```
 
+```c
+static CFByteOrder CFByteOrderGetCurrent();
+```
+
 #### Return Value
 
-The byte order of the current computer. See [`CFByteOrder`](cfbyteorder.md) for the list of possible return values.
+The byte order of the current computer. See [`CFByteOrder`](./cfbyteorder.md) for the list of possible return values.
 
 ## See Also
 
-- [func CFConvertDoubleHostToSwapped(Double) -> CFSwappedFloat64](cfconvertdoublehosttoswapped(_:).md)
+### Core Foundation Byte Order Utilities Miscellaneous Functions
+- [func CFConvertDoubleHostToSwapped(Double) -> CFSwappedFloat64](./cfconvertdoublehosttoswapped%28_%29.md)
   Converts a 64-bit double from the host’s native byte order to a platform-independent format.
-- [func CFConvertDoubleSwappedToHost(CFSwappedFloat64) -> Double](cfconvertdoubleswappedtohost(_:).md)
+- [func CFConvertDoubleSwappedToHost(CFSwappedFloat64) -> Double](./cfconvertdoubleswappedtohost%28_%29.md)
   Converts a 64-bit double from a platform-independent format to the host’s native byte order.
-- [func CFConvertFloat32HostToSwapped(Float32) -> CFSwappedFloat32](cfconvertfloat32hosttoswapped(_:).md)
+- [func CFConvertFloat32HostToSwapped(Float32) -> CFSwappedFloat32](./cfconvertfloat32hosttoswapped%28_%29.md)
   Converts a 32-bit float from the host’s native byte order to a platform-independent format.
-- [func CFConvertFloat32SwappedToHost(CFSwappedFloat32) -> Float32](cfconvertfloat32swappedtohost(_:).md)
+- [func CFConvertFloat32SwappedToHost(CFSwappedFloat32) -> Float32](./cfconvertfloat32swappedtohost%28_%29.md)
   Converts a 32-bit float from a platform-independent format to the host’s native byte order.
-- [func CFConvertFloat64HostToSwapped(Float64) -> CFSwappedFloat64](cfconvertfloat64hosttoswapped(_:).md)
+- [func CFConvertFloat64HostToSwapped(Float64) -> CFSwappedFloat64](./cfconvertfloat64hosttoswapped%28_%29.md)
   Converts a 64-bit float from the host’s native byte order to a platform-independent format.
-- [func CFConvertFloat64SwappedToHost(CFSwappedFloat64) -> Float64](cfconvertfloat64swappedtohost(_:).md)
+- [func CFConvertFloat64SwappedToHost(CFSwappedFloat64) -> Float64](./cfconvertfloat64swappedtohost%28_%29.md)
   Converts a 64-bit float from a platform-independent format to the host’s native byte order.
-- [func CFConvertFloatHostToSwapped(Float) -> CFSwappedFloat32](cfconvertfloathosttoswapped(_:).md)
+- [func CFConvertFloatHostToSwapped(Float) -> CFSwappedFloat32](./cfconvertfloathosttoswapped%28_%29.md)
   Converts a 32-bit float from the host’s native byte order to a platform-independent format.
-- [func CFConvertFloatSwappedToHost(CFSwappedFloat32) -> Float](cfconvertfloatswappedtohost(_:).md)
+- [func CFConvertFloatSwappedToHost(CFSwappedFloat32) -> Float](./cfconvertfloatswappedtohost%28_%29.md)
   Converts a 32-bit float from a platform-independent format to the host’s native byte order.
-- [func CFSwapInt16(UInt16) -> UInt16](cfswapint16(_:).md)
+- [func CFSwapInt16(UInt16) -> UInt16](./cfswapint16%28_%29.md)
   Swaps the bytes of a 16-bit integer.
-- [func CFSwapInt16BigToHost(UInt16) -> UInt16](cfswapint16bigtohost(_:).md)
+- [func CFSwapInt16BigToHost(UInt16) -> UInt16](./cfswapint16bigtohost%28_%29.md)
   Converts a 16-bit integer from big-endian format to the host’s native byte order.
-- [func CFSwapInt16HostToBig(UInt16) -> UInt16](cfswapint16hosttobig(_:).md)
+- [func CFSwapInt16HostToBig(UInt16) -> UInt16](./cfswapint16hosttobig%28_%29.md)
   Converts a 16-bit integer from the host’s native byte order to big-endian format.
-- [func CFSwapInt16HostToLittle(UInt16) -> UInt16](cfswapint16hosttolittle(_:).md)
+- [func CFSwapInt16HostToLittle(UInt16) -> UInt16](./cfswapint16hosttolittle%28_%29.md)
   Converts a 16-bit integer from the host’s native byte order to little-endian format.
-- [func CFSwapInt16LittleToHost(UInt16) -> UInt16](cfswapint16littletohost(_:).md)
+- [func CFSwapInt16LittleToHost(UInt16) -> UInt16](./cfswapint16littletohost%28_%29.md)
   Converts a 16-bit integer from little-endian format to the host’s native byte order.
-- [func CFSwapInt32(UInt32) -> UInt32](cfswapint32(_:).md)
+- [func CFSwapInt32(UInt32) -> UInt32](./cfswapint32%28_%29.md)
   Swaps the bytes of a 32-bit integer.
-- [func CFSwapInt32BigToHost(UInt32) -> UInt32](cfswapint32bigtohost(_:).md)
+- [func CFSwapInt32BigToHost(UInt32) -> UInt32](./cfswapint32bigtohost%28_%29.md)
   Converts a 32-bit integer from big-endian format to the host’s native byte order.
 
 

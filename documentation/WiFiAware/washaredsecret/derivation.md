@@ -1,7 +1,8 @@
 # derivation
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The method used to derive the shared secret on both sides of the connection, as per the Wi-Fi Aware standard.
 

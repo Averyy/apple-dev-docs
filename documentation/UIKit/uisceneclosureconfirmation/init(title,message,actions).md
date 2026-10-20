@@ -1,7 +1,8 @@
 # init(title:message:actions:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a scene closure confirmation with the provided parameters.
 
@@ -14,6 +15,10 @@ Creates a scene closure confirmation with the provided parameters.
 
 ```swift
 convenience init(title: String?, message: String?, actions: [UIAlertAction])
+```
+
+```objc
++ (instancetype) confirmationWithTitle:(NSString *) title message:(NSString *) message actions:(NSArray<UIAlertAction *> *) actions;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # init(request:PASK:encryptionCert:signingCert:signingKey:)
 
 **Framework**: App License Delivery SDK  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a ALDSession with a license request. Call generateLicense() to create a license.
 

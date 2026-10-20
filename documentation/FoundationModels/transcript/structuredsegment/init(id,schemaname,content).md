@@ -1,7 +1,8 @@
 # init(id:schemaName:content:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a structured segment that contains the generated content you provide.
 
@@ -27,7 +28,8 @@ init(id: String = UUID().uuidString, schemaName: String, content: GeneratedConte
 
 ## See Also
 
-- [init(id: String, source: String, content: GeneratedContent)](transcript/structuredsegment/init(id:source:content:).md)
+### Creating a structured segment
+- [init(id: String, source: String, content: GeneratedContent)](./init%28id,source,content%29.md)
 
 
 ---

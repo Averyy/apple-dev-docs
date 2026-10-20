@@ -1,7 +1,8 @@
 # remoteIdleTimeout
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Access the idle_timeout value in milliseconds received from the peer in the transport parameters.
 
@@ -19,6 +20,8 @@ Access the idle_timeout value in milliseconds received from the peer in the tran
 ```swift
 final var remoteIdleTimeout: Int { get }
 ```
+
+Available when `ApplicationProtocol` is `QUIC`.
 
 
 ---

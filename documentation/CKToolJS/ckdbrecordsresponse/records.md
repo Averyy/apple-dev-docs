@@ -1,7 +1,8 @@
 # records
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of fetched records.
 
@@ -10,7 +11,7 @@ The array of fetched records.
 
 ## Declaration
 
-```swift
+```
 attribute CKDBRecord[] records;
 ```
 

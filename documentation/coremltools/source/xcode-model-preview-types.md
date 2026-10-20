@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/xcode-model-preview-
 
 # Xcode Model Preview Types
 
-**
-
-- [.md](../_sources/source/xcode-model-preview-types.md)
-- **
-
-.pdf
-
-**
-
-# Xcode Model Preview Types
-
- Table of contents 
-
-## Contents
-
-# Xcode Model Preview Types
-
 After converting models to the Core ML format, you can set up the Xcode preview of certain models by adding preview metadata and parameters.
 
 ## Overview
@@ -35,13 +18,13 @@ Some model architecture types, such as Neural Network Classifier, don’t requir
 
 | Architecture/Preview type | model.preview.type | model.preview.parameters | Input | Output |
 | --- | --- | --- | --- | --- |
-| Segmentation | imageSegmenter | {'labels':['LABEL',...],'colors':['HEXCODE',...]} | Image | MultiArray |
-| BERT QA | bertQA |  | MultiArray | MultiArray |
-| Pose Estimation | poseEstimation | {"width_multiplier":FLOAT,"output_stride":INT} | Image | MultiArray |
-| Image Classifier |  | imageClassifier | Image | Dict, string |
-| Depth Estimation | depthEstimation |  | Image | MultiArray |
+| [Segmentation](#segmentation-example) | `imageSegmenter` | `{'labels': ['LABEL', ...], 'colors': ['HEXCODE', ...]}` | Image | MultiArray |
+| [BERT QA](convert-tensorflow-2-bert-transformer-models.md#convert-the-tf-hub-bert-transformer-model) | `bertQA` |  | MultiArray | MultiArray |
+| [Pose Estimation](#body-pose-example) | `poseEstimation` | `{"width_multiplier": FLOAT, "output_stride": INT}` | Image | MultiArray |
+| [Image Classifier](introductory-quickstart.md) |  | `imageClassifier` | Image | Dict, string |
+| Depth Estimation | `depthEstimation` |  | Image | MultiArray |
 
-For an example of previewing an Image Classifier, see [Getting Started](introductory-quickstart.md). For an example of previewing a BERT QA model, see [Converting TensorFlow 2 BERT Transformer Models](convert-tensorflow-2-bert-transformer-models.html#convert-the-tf-hub-bert-transformer-model).
+For an example of previewing an Image Classifier, see [Getting Started](introductory-quickstart.md). For an example of previewing a BERT QA model, see [Converting TensorFlow 2 BERT Transformer Models](convert-tensorflow-2-bert-transformer-models.md#convert-the-tf-hub-bert-transformer-model).
 
 ## Segmentation Example
 
@@ -73,7 +56,11 @@ For the full code to convert the model, see [Converting a PyTorch Segmentation M
 
 To launch Xcode and open the model information pane, double-click the saved `SegmentationModel_with_metadata.mlmodel` file in the Mac Finder.
 
+![SegmentationModel_with_metadata.mlpackage](https://apple.github.io/coremltools/docs-guides/_images/xcode-segment-metadata3.png)
+
 Click the **Predictions** tab to see the model’s input and output.
+
+![Predictions tab](https://apple.github.io/coremltools/docs-guides/_images/xcode-segment-predictions.png)
 
 ### Preview the Model in Xcode
 
@@ -85,6 +72,10 @@ The preview for a segmentation model is available in Xcode 12.3 or newer.
 
 1. Click the **Preview** tab.
 2. Drag an image into the image well on the left side of the model preview. The result appears in the preview pane:
+
+![Preview pane](https://apple.github.io/coremltools/docs-guides/_images/xcode-deeplab-model5-preview-drag.png)
+
+![Cropped preview](https://apple.github.io/coremltools/docs-guides/_images/xcode-deeplab-model5-preview-drag2.png)
 
 Note
 
@@ -114,13 +105,17 @@ Learn more about the preview parameters in [posenet_model.ts in Pre-trained Tens
 
 Double-click the `posenet_with_preview_type.mlmodel` file in the Mac Finder to launch Xcode and open the model information pane:
 
+![Model information pane for PoseNet model](https://apple.github.io/coremltools/docs-guides/_images/xcode-bodypose-posenet-metadata.png)
+
 Click the **Predictions** tab to see the model’s input and output.
+
+![PoseNet model input and output](https://apple.github.io/coremltools/docs-guides/_images/xcode-bodypose-posenet-predictions.png)
 
 ### Preview the Model in Xcode
 
 To preview the model’s output for a given input, follow these steps using the following sample image:
 
-![Standing man (standing-man.jpeg)](../_images/standing-man.jpeg)
+![Standing man (standing-man.jpeg)](https://apple.github.io/coremltools/docs-guides/_images/standing-man.jpeg)
 
 Right-click and choose **Save Image** to download this test image. (“Figure from a Crèche: Standing Man” is in the public domain, available from [creativecommons.org](https://creativecommons.org).)
 
@@ -130,6 +125,6 @@ Right-click and choose **Save Image** to download this test image. (“Figure fr
 
 The result appears in the preview pane:
 
-The result shows a single pose estimation (the key points of the body pose) under the **Single** tab, and estimates of multiple poses under the **Multiple** tab.
+![Preview of result](https://apple.github.io/coremltools/docs-guides/_images/xcode-bodypose-posenet-preview.png)
 
-** Contents
+The result shows a single pose estimation (the key points of the body pose) under the **Single** tab, and estimates of multiple poses under the **Multiple** tab.

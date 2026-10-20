@@ -1,7 +1,8 @@
 # CSSMERR_CSSM_ATTRIBUTE_NOT_IN_CONTEXT
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSMERR_CSSM_ATTRIBUTE_NOT_IN_CONTEXT: Int { get }
+```
+
+```c
+CSSMERR_CSSM_ATTRIBUTE_NOT_IN_CONTEXT
 ```
 
 

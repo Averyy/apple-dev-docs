@@ -1,7 +1,8 @@
 # altitude
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 altitude is the coordinate’s elevation above sea level in meters. If no altitude is available, use CLLocationDistanceMax.
 
@@ -14,6 +15,10 @@ altitude is the coordinate’s elevation above sea level in meters. If no altitu
 
 ```swift
 var altitude: CLLocationDistance
+```
+
+```c
+CLLocationDistance altitude;
 ```
 
 

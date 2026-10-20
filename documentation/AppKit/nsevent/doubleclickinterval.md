@@ -1,7 +1,8 @@
 # doubleClickInterval
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The maximum number of seconds in which a second mouse click must occur for an event to be a double-click event.
 
@@ -14,6 +15,10 @@ The maximum number of seconds in which a second mouse click must occur for an ev
 class var doubleClickInterval: TimeInterval { get }
 ```
 
+```objc
+@property (class, readonly) NSTimeInterval doubleClickInterval;
+```
+
 #### Return Value
 
 The double-click time interval, in seconds.
@@ -24,15 +29,16 @@ This is a system setting. You can’t change the value by overriding this method
 
 ## See Also
 
-- [class var pressedMouseButtons: Int](nsevent/pressedmousebuttons.md)
+### Getting mouse event information
+- [class var pressedMouseButtons: Int](./pressedmousebuttons.md)
   The indices of the currently pressed mouse buttons.
-- [class var mouseLocation: NSPoint](nsevent/mouselocation.md)
+- [class var mouseLocation: NSPoint](./mouselocation.md)
   Reports the current mouse position in screen coordinates.
-- [var buttonNumber: Int](nsevent/buttonnumber.md)
+- [var buttonNumber: Int](./buttonnumber.md)
   The button number for a mouse event.
-- [var clickCount: Int](nsevent/clickcount.md)
+- [var clickCount: Int](./clickcount.md)
   The number of mouse clicks associated with a mouse-down or mouse-up event.
-- [var associatedEventsMask: NSEvent.EventTypeMask](nsevent/associatedeventsmask.md)
+- [var associatedEventsMask: NSEvent.EventTypeMask](./associatedeventsmask.md)
   The associated events mask of a mouse event.
 
 

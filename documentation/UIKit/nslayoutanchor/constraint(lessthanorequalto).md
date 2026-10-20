@@ -1,7 +1,8 @@
 # constraint(lessThanOrEqualTo:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a constraint that defines one item’s attribute as less than or equal to another.
 
@@ -18,9 +19,13 @@ Returns a constraint that defines one item’s attribute as less than or equal t
 func constraint(lessThanOrEqualTo anchor: NSLayoutAnchor<AnchorType>) -> NSLayoutConstraint
 ```
 
+```objc
+- (NSLayoutConstraint *) constraintLessThanOrEqualToAnchor:(NSLayoutAnchor<id> *) anchor;
+```
+
 #### Return Value
 
-An [`NSLayoutConstraint`](nslayoutconstraint.md) object that defines the attribute represented by this layout anchor as less than or equal to the attribute represented by the `anchor` parameter.
+An [`NSLayoutConstraint`](../nslayoutconstraint.md) object that defines the attribute represented by this layout anchor as less than or equal to the attribute represented by the `anchor` parameter.
 
 #### Discussion
 
@@ -28,8 +33,8 @@ This method defines the relationship `first attribute <= second attribute`. Wher
 
 - For leading or trailing anchors, the values increase as you move in the current language’s reading direction. For English, values increase as you move to the right.
 - For left and right anchors, the values increase as you move to the right.
-- For [`NSLayoutYAxisAnchor`](nslayoutyaxisanchor.md) objects, the values increase as you move down.
-- For [`NSLayoutDimension`](nslayoutdimension.md) objects, the values increase as the items increase in size.
+- For [`NSLayoutYAxisAnchor`](../nslayoutyaxisanchor.md) objects, the values increase as you move down.
+- For [`NSLayoutDimension`](../nslayoutdimension.md) objects, the values increase as the items increase in size.
 
 The constraints produced by the following two examples are identical.
 
@@ -70,19 +75,20 @@ UILayoutGuide *margin = self.view.layoutMarginsGuide;
 
 ## Parameters
 
-- `anchor`: A layout anchor from a [`UIView`](uiview.md), [`NSView`](https://developer.apple.com/documentation/appkit/nsview), or [`UILayoutGuide`](uilayoutguide.md) object. You must use a subclass of [`NSLayoutAnchor`](nslayoutanchor.md) that matches the current anchor. For example, if you call this method on an [`NSLayoutXAxisAnchor`](nslayoutxaxisanchor.md) object, this parameter must be another [`NSLayoutXAxisAnchor`](nslayoutxaxisanchor.md).
+- `anchor`: A layout anchor from a [`UIView`](../uiview.md), [`NSView`](../../AppKit/nsview.md), or [`UILayoutGuide`](../uilayoutguide.md) object. You must use a subclass of [`NSLayoutAnchor`](../nslayoutanchor.md) that matches the current anchor. For example, if you call this method on an [`NSLayoutXAxisAnchor`](../nslayoutxaxisanchor.md) object, this parameter must be another [`NSLayoutXAxisAnchor`](../nslayoutxaxisanchor.md).
 
 ## See Also
 
-- [func constraint(equalTo: NSLayoutAnchor<AnchorType>) -> NSLayoutConstraint](nslayoutanchor/constraint(equalto:).md)
+### Building constraints
+- [func constraint(equalTo: NSLayoutAnchor<AnchorType>) -> NSLayoutConstraint](./constraint%28equalto%29.md)
   Returns a constraint that defines one item’s attribute as equal to another.
-- [func constraint(equalTo: NSLayoutAnchor<AnchorType>, constant: CGFloat) -> NSLayoutConstraint](nslayoutanchor/constraint(equalto:constant:).md)
+- [func constraint(equalTo: NSLayoutAnchor<AnchorType>, constant: CGFloat) -> NSLayoutConstraint](./constraint%28equalto,constant%29.md)
   Returns a constraint that defines one item’s attribute as equal to another item’s attribute plus a constant offset.
-- [func constraint(greaterThanOrEqualTo: NSLayoutAnchor<AnchorType>) -> NSLayoutConstraint](nslayoutanchor/constraint(greaterthanorequalto:).md)
+- [func constraint(greaterThanOrEqualTo: NSLayoutAnchor<AnchorType>) -> NSLayoutConstraint](./constraint%28greaterthanorequalto%29.md)
   Returns a constraint that defines one item’s attribute as greater than or equal to another.
-- [func constraint(greaterThanOrEqualTo: NSLayoutAnchor<AnchorType>, constant: CGFloat) -> NSLayoutConstraint](nslayoutanchor/constraint(greaterthanorequalto:constant:).md)
+- [func constraint(greaterThanOrEqualTo: NSLayoutAnchor<AnchorType>, constant: CGFloat) -> NSLayoutConstraint](./constraint%28greaterthanorequalto,constant%29.md)
   Returns a constraint that defines one item’s attribute as greater than or equal to another item’s attribute plus a constant offset.
-- [func constraint(lessThanOrEqualTo: NSLayoutAnchor<AnchorType>, constant: CGFloat) -> NSLayoutConstraint](nslayoutanchor/constraint(lessthanorequalto:constant:).md)
+- [func constraint(lessThanOrEqualTo: NSLayoutAnchor<AnchorType>, constant: CGFloat) -> NSLayoutConstraint](./constraint%28lessthanorequalto,constant%29.md)
   Returns a constraint that defines one item’s attribute as less than or equal to another item’s attribute plus a constant offset.
 
 

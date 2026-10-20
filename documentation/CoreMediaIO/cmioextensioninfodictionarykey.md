@@ -1,7 +1,8 @@
 # CMIOExtensionInfoDictionaryKey
 
 **Framework**: Core Media I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that specifies the extension information dictionary.
 
@@ -15,15 +16,20 @@ A key that specifies the extension information dictionary.
 let CMIOExtensionInfoDictionaryKey: String
 ```
 
+```c
+extern NSString * const CMIOExtensionInfoDictionaryKey;
+```
+
 ## See Also
 
-- [struct CMIOExtensionProperty](cmioextensionproperty.md)
+### Properties
+- [struct CMIOExtensionProperty](./cmioextensionproperty.md)
   A structure that defines the properties that providers, devices, and streams support.
-- [class CMIOExtensionPropertyState](cmioextensionpropertystate.md)
+- [class CMIOExtensionPropertyState](./cmioextensionpropertystate.md)
   An object that describes the state of a property.
-- [class CMIOExtensionPropertyAttributes](cmioextensionpropertyattributes.md)
+- [class CMIOExtensionPropertyAttributes](./cmioextensionpropertyattributes.md)
   An object that describes the attributes of a property.
-- [let CMIOExtensionMachServiceNameKey: String](cmioextensionmachservicenamekey.md)
+- [let CMIOExtensionMachServiceNameKey: String](./cmioextensionmachservicenamekey.md)
   A key that specifies the mach service name.
 
 

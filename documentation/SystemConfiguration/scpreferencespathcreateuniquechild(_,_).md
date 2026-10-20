@@ -1,7 +1,8 @@
 # SCPreferencesPathCreateUniqueChild(_:_:)
 
 **Framework**: System Configuration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a new path component rooted at the specified path in the dictionary hierarchy.
 
@@ -12,6 +13,10 @@ Creates a new path component rooted at the specified path in the dictionary hier
 
 ```swift
 func SCPreferencesPathCreateUniqueChild(_ prefs: SCPreferences, _ prefix: CFString) -> CFString?
+```
+
+```c
+CFStringRefSCPreferencesPathCreateUniqueChild(SCPreferencesRef prefs, CFStringRef prefix);
 ```
 
 #### Return Value

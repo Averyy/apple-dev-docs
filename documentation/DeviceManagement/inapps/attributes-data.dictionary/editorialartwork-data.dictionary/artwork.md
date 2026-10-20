@@ -1,25 +1,26 @@
 # InApps.Attributes.EditorialArtwork.Artwork
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object InApps.Attributes.EditorialArtwork.Artwork
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object InApps.Attributes.EditorialArtwork.Artwork.Gradient](inapps/attributes-data.dictionary/editorialartwork-data.dictionary/artwork/gradient-data.dictionary.md)
+- [object InApps.Attributes.EditorialArtwork.Artwork.Gradient](./artwork/gradient-data.dictionary.md)
 
 ## Properties
 
 - `alt` (string)
 - `assetToken` (string)
 - `bgColor` (string)
-- `bgGradientKind` (string)
+- `bgGradientKind` (string): **Allowed Values**: `RTL`
 - `checksum` (string)
 - `gradient` (InApps.Attributes.EditorialArtwork.Artwork.Gradient)
 - `hasAlpha` (boolean)

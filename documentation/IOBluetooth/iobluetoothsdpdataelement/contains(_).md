@@ -1,17 +1,22 @@
 # contains(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks to see if the target data element is the same as the dataElement parameter or if it contains the dataElement parameter (if its a sequence type).
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func contains(_ dataElement: IOBluetoothSDPDataElement!) -> Bool
+```
+
+```objc
+- (BOOL) containsDataElement:(IOBluetoothSDPDataElement *) dataElement;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # isHighlighted
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the control draws a highlight.
 
@@ -9,7 +10,7 @@ A Boolean value indicating whether the control draws a highlight.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,21 +19,26 @@ A Boolean value indicating whether the control draws a highlight.
 var isHighlighted: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isHighlighted) BOOL highlighted;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the control draws a highlight; otherwise, the control doesn’t draw a highlight. Controls automatically set and clear this state in response to appropriate touch events. You can change the value of this property as needed to apply or remove a highlight programmatically
+When the value of this property is [`true`](../../Swift/true.md), the control draws a highlight; otherwise, the control doesn’t draw a highlight. Controls automatically set and clear this state in response to appropriate touch events. You can change the value of this property as needed to apply or remove a highlight programmatically
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false) for a newly created control. You can set a control’s initial selected state in your storyboard file.
+The default value of this property is [`false`](../../Swift/false.md) for a newly created control. You can set a control’s initial selected state in your storyboard file.
 
 ## See Also
 
-- [var state: UIControl.State](uicontrol/state-swift.property.md)
+### Managing state
+- [var state: UIControl.State](./state-swift.property.md)
   The state of the control, specified as a bit mask value.
-- [UIControl.State](uicontrol/state-swift.struct.md)
+- [UIControl.State](./state-swift.struct.md)
   Constants describing the state of a control.
-- [var isEnabled: Bool](uicontrol/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value indicating whether the control is in the enabled state.
-- [var isSelected: Bool](uicontrol/isselected.md)
+- [var isSelected: Bool](./isselected.md)
   A Boolean value indicating whether the control is in the selected state.
 
 

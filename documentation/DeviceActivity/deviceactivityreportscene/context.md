@@ -2,6 +2,7 @@
 
 **Framework**: Device Activity  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The context of the scene.

@@ -1,7 +1,8 @@
 # inset(by:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func inset(by dXYZ: Size3DFloat) -> Rect3DFloat
+```
+
+```c
+static SPRect3DFloat SPRect3DFloatInset(SPRect3DFloat rect, SPSize3DFloat dXYZ);
 ```
 
 #### Discussion

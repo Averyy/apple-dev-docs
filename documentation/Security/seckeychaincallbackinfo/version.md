@@ -1,7 +1,8 @@
 # version
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The version of this structure.
 
@@ -12,6 +13,10 @@ The version of this structure.
 
 ```swift
 var version: UInt32
+```
+
+```c
+UInt32 version;
 ```
 
 #### Discussion

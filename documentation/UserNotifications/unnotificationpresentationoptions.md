@@ -1,7 +1,8 @@
 # UNNotificationPresentationOptions
 
 **Framework**: User Notifications  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants indicating how to present a notification in a foreground app.
 
@@ -20,38 +21,43 @@ Constants indicating how to present a notification in a foreground app.
 struct UNNotificationPresentationOptions
 ```
 
+```c
+enum UNNotificationPresentationOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [static var badge: UNNotificationPresentationOptions](unnotificationpresentationoptions/badge.md)
+- [static var badge: UNNotificationPresentationOptions](./unnotificationpresentationoptions/badge.md)
   Apply the notification’s badge value to the app’s icon.
-- [static var banner: UNNotificationPresentationOptions](unnotificationpresentationoptions/banner.md)
+- [static var banner: UNNotificationPresentationOptions](./unnotificationpresentationoptions/banner.md)
   Present the notification as a banner.
-- [static var list: UNNotificationPresentationOptions](unnotificationpresentationoptions/list.md)
+- [static var list: UNNotificationPresentationOptions](./unnotificationpresentationoptions/list.md)
   Show the notification in Notification Center.
-- [static var sound: UNNotificationPresentationOptions](unnotificationpresentationoptions/sound.md)
+- [static var sound: UNNotificationPresentationOptions](./unnotificationpresentationoptions/sound.md)
   Play the sound associated with the notification.
-- [static var alert: UNNotificationPresentationOptions](unnotificationpresentationoptions/alert.md)
+- [static var alert: UNNotificationPresentationOptions](./unnotificationpresentationoptions/alert.md)
   Display the alert using the content provided by the notification.
 ### Initializers
-- [init(rawValue: UInt)](unnotificationpresentationoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./unnotificationpresentationoptions/init%28rawvalue%29.md)
   Initializes a notification presentation options object using the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [func userNotificationCenter(UNUserNotificationCenter, willPresent: UNNotification, withCompletionHandler: (UNNotificationPresentationOptions) -> Void)](unusernotificationcenterdelegate/usernotificationcenter(_:willpresent:withcompletionhandler:).md)
+### Receiving Notifications
+- [func userNotificationCenter(UNUserNotificationCenter, willPresent: UNNotification, withCompletionHandler: (UNNotificationPresentationOptions) -> Void)](./unusernotificationcenterdelegate/usernotificationcenter%28_,willpresent,withcompletionhandler%29.md)
   Asks the delegate how to handle a notification that arrived while the app was running in the foreground.
 
 

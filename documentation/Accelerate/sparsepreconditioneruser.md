@@ -1,18 +1,19 @@
 # SparsePreconditionerUser
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A user-provided preconditioner.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ A user-provided preconditioner.
 var SparsePreconditionerUser: SparsePreconditioner_t { get }
 ```
 
+```c
+SparsePreconditionerUser
+```
+
 ## See Also
 
-- [var SparsePreconditionerDiagScaling: SparsePreconditioner_t](sparsepreconditionerdiagscaling.md)
+### Constants
+- [var SparsePreconditionerDiagScaling: SparsePreconditioner_t](./sparsepreconditionerdiagscaling.md)
   A diagonal scaling preconditioner.
-- [var SparsePreconditionerDiagonal: SparsePreconditioner_t](sparsepreconditionerdiagonal.md)
+- [var SparsePreconditionerDiagonal: SparsePreconditioner_t](./sparsepreconditionerdiagonal.md)
   A Jacobi preconditioner.
-- [var SparsePreconditionerNone: SparsePreconditioner_t](sparsepreconditionernone.md)
+- [var SparsePreconditionerNone: SparsePreconditioner_t](./sparsepreconditionernone.md)
   No preconditioner.
 
 

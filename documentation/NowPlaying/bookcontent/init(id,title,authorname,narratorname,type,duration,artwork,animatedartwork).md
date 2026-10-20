@@ -1,7 +1,8 @@
 # init(id:title:authorName:narratorName:type:duration:artwork:animatedArtwork:)
 
 **Framework**: Now Playing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates audiobook content with static and animated artwork.
 

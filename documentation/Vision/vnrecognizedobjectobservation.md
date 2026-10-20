@@ -1,7 +1,8 @@
 # VNRecognizedObjectObservation
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A detected object observation with an array of classification labels that classify the recognized object.
 
@@ -19,6 +20,10 @@ A detected object observation with an array of classification labels that classi
 class VNRecognizedObjectObservation
 ```
 
+```objc
+@interface VNRecognizedObjectObservation : VNDetectedObjectObservation
+```
+
 #### Overview
 
 The confidence of the classifications sum up to `1.0.` Multiply the classification confidence with the confidence of this observation.
@@ -26,32 +31,33 @@ The confidence of the classifications sum up to `1.0.` Multiply the classificati
 ## Topics
 
 ### Classifying a Recognized Object
-- [var labels: [VNClassificationObservation]](vnrecognizedobjectobservation/labels.md)
+- [var labels: [VNClassificationObservation]](./vnrecognizedobjectobservation/labels.md)
   An array of observations that classify the recognized object.
-- [class VNClassificationObservation](vnclassificationobservation.md)
+- [class VNClassificationObservation](./vnclassificationobservation.md)
   An object that represents classification information that an image-analysis request produces.
 
 ## Relationships
 
 ### Inherits From
-- [VNDetectedObjectObservation](vndetectedobjectobservation.md)
+- [VNDetectedObjectObservation](./vndetectedobjectobservation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [VNRequestRevisionProviding](vnrequestrevisionproviding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [VNRequestRevisionProviding](./vnrequestrevisionproviding.md)
 
 ## See Also
 
-- [Recognizing Objects in Live Capture](recognizing-objects-in-live-capture.md)
+### Object recognition
+- [Recognizing Objects in Live Capture](./recognizing-objects-in-live-capture.md)
   Apply Vision algorithms to identify objects in real-time video.
-- [Understanding a Dice Roll with Vision and Object Detection](../coreml/understanding-a-dice-roll-with-vision-and-object-detection.md)
+- [Understanding a Dice Roll with Vision and Object Detection](../CoreML/understanding-a-dice-roll-with-vision-and-object-detection.md)
   Detect dice position and values shown in a camera frame, and determine the end of a roll by leveraging a dice detection model.
 
 

@@ -1,7 +1,8 @@
 # *(_:_:)
 
 **Framework**: Spatial  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns the point that results from applying the pose to the ray.
 

@@ -1,7 +1,8 @@
 # parameters
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Represents a reference to the parameters for a particular entity.
 
@@ -11,7 +12,7 @@ Represents a reference to the parameters for a particular entity.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,9 +23,10 @@ Represents a reference to the parameters for a particular entity.
 
 ## See Also
 
-- [Entity.ChildCollection](entity/childcollection.md)
+### Relating entities
+- [Entity.ChildCollection](./childcollection.md)
   A collection of child entities.
-- [protocol HasHierarchy](hashierarchy.md)
+- [protocol HasHierarchy](../hashierarchy.md)
   An interface that provides access to a parent entity and child entities.
 
 

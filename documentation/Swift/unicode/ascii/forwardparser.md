@@ -1,7 +1,8 @@
 # Unicode.ASCII.ForwardParser
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that can be used to parse `CodeUnits` into `EncodedScalar`s.
 

@@ -1,7 +1,8 @@
 # VTDecompressionSessionCreate(allocator:formatDescription:decoderSpecification:imageBufferAttributes:outputCallback:decompressionSessionOut:)
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a session for decompressing video frames.
 
@@ -19,6 +20,10 @@ Creates a session for decompressing video frames.
 func VTDecompressionSessionCreate(allocator: CFAllocator?, formatDescription videoFormatDescription: CMVideoFormatDescription, decoderSpecification videoDecoderSpecification: CFDictionary?, imageBufferAttributes destinationImageBufferAttributes: CFDictionary?, outputCallback: UnsafePointer<VTDecompressionOutputCallbackRecord>?, decompressionSessionOut: UnsafeMutablePointer<VTDecompressionSession?>) -> OSStatus
 ```
 
+```c
+extern OSStatus VTDecompressionSessionCreate(CFAllocatorRef allocator, CMVideoFormatDescriptionRef videoFormatDescription, CFDictionaryRef videoDecoderSpecification, CFDictionaryRef destinationImageBufferAttributes, const VTDecompressionOutputCallbackRecord *outputCallback, VTDecompressionSessionRef*decompressionSessionOut);
+```
+
 #### Discussion
 
 Decompressed frames are emitted through calls to `outputCallback`.
@@ -29,12 +34,13 @@ Decompressed frames are emitted through calls to `outputCallback`.
 - `videoFormatDescription`: The description of the source video frames.
 - `videoDecoderSpecification`: The particular video decoder that must be used. Pass `NULL` to let VideoToolbox choose a decoder.
 - `destinationImageBufferAttributes`: Requirements for the emitted pixel buffers. Pass `NULL` to set no requirements.
-- `outputCallback`: The callback to be called with decompressed frames. Pass `NULL` only if you’ll be calling [`VTDecompressionSessionDecodeFrame(_:sampleBuffer:flags:infoFlagsOut:outputHandler:)`](vtdecompressionsessiondecodeframe(_:samplebuffer:flags:infoflagsout:outputhandler:).md) for decoding frames.
+- `outputCallback`: The callback to be called with decompressed frames. Pass `NULL` only if you’ll be calling [`VTDecompressionSessionDecodeFrame(_:sampleBuffer:flags:infoFlagsOut:outputHandler:)`](./vtdecompressionsessiondecodeframe%28_,samplebuffer,flags,infoflagsout,outputhandler%29.md) for decoding frames.
 - `decompressionSessionOut`: A pointer to a variable to receive the new decompression session.
 
 ## See Also
 
-- [func VTDecompressionSessionCreate(allocator: CFAllocator?, formatDescription: CMVideoFormatDescription, decoderSpecification: CFDictionary?, imageBufferAttributes: CFDictionary?, decompressionSessionOut: UnsafeMutablePointer<VTDecompressionSession?>) -> OSStatus](vtdecompressionsessioncreate(allocator:formatdescription:decoderspecification:imagebufferattributes:decompressionsessionout:).md)
+### Creating a Session
+- [func VTDecompressionSessionCreate(allocator: CFAllocator?, formatDescription: CMVideoFormatDescription, decoderSpecification: CFDictionary?, imageBufferAttributes: CFDictionary?, decompressionSessionOut: UnsafeMutablePointer<VTDecompressionSession?>) -> OSStatus](./vtdecompressionsessioncreate%28allocator,formatdescription,decoderspecification,imagebufferattributes,decompressionsessionout%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(count:blockSource:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a block buffer with `count` number of bytes.
 

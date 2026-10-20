@@ -1,20 +1,25 @@
 # TN3106: Customizing the appearance of UINavigationBar
 
-**Framework**: Technotes
+**Framework**: Technotes  
+**Role**: Technote
 
 Adopt UINavigationBarAppearance for a navigation bar background color that’s consistent on iOS 13 through 18.
 
 #### Overview
 
-[`UINavigationBar`](https://developer.apple.comhttps://developer.apple.com/documentation/uikit/uinavigationbar) in iOS 15 introduces changes to its appearance settings. It extends the usage of its [`scrollEdgeAppearance`](https://developer.apple.comhttps://developer.apple.com/documentation/uikit/uinavigationbar/3198027-scrolledgeappearance), which by default produces a transparent background, to all navigation bar styles.
+[UINavigationBar](../UIKit/uinavigationbar.md) in iOS 15 introduces changes to its appearance settings. It extends the usage of its [scrollEdgeAppearance](../UIKit/uinavigationbar/api-3198027-scrolledgeappearance.md), which by default produces a transparent background, to all navigation bar styles.
 
-The iOS 13 SDK introduced an appearance settings class [`UINavigationBarAppearance`](https://developer.apple.comhttps://developer.apple.com/documentation/uikit/uinavigationbarappearance). If you’re seeing a view controller with appearance issues like a black navigation bar or incorrect status bar content color when building with Xcode 13 and running on iOS 15, adopt `UINavigationBarAppearance`. For a view controller that scrolls its content, use it to apply both `standardAppearance` and `scrollEdgeAppearance` to the `UINavigationBar`.
+The iOS 13 SDK introduced an appearance settings class [UINavigationBarAppearance](../UIKit/uinavigationbarappearance.md). If you’re seeing a view controller with appearance issues like a black navigation bar or incorrect status bar content color when building with Xcode 13 and running on iOS 15, adopt `UINavigationBarAppearance`. For a view controller that scrolls its content, use it to apply both `standardAppearance` and `scrollEdgeAppearance` to the `UINavigationBar`.
 
-> ❗ **Important**: Starting in iOS 26, reduce your use of custom backgrounds in navigation elements and controls. While the techniques in this document remain valid for iOS 18 and earlier, prefer to remove custom effects and let the system determine the navigation bar background appearance. Any custom backgrounds and appearances you use in the navigation bar might overlay or interfere with Liquid Glass or other effects that the system provides, such as the scroll edge effect. To learn how to update your app to adopt Liquid Glass, see the following resources: - [`Adopting Liquid Glass`](https://developer.apple.comhttps://developer.apple.com/documentation/technologyoverviews/adopting-liquid-glass)
-- WWDC25 session 356: [`Get to know the new design system`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/356/)
-- WWDC25 session 284: [`Build a UIKit app with the new design`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/284/).
+> ❗ **Important**: Starting in iOS 26, reduce your use of custom backgrounds in navigation elements and controls. While the techniques in this document remain valid for iOS 18 and earlier, prefer to remove custom effects and let the system determine the navigation bar background appearance. Any custom backgrounds and appearances you use in the navigation bar might overlay or interfere with Liquid Glass or other effects that the system provides, such as the scroll edge effect.
+>
+> To learn how to update your app to adopt Liquid Glass, see the following resources:
+>
+> - [Adopting Liquid Glass](../TechnologyOverviews/adopting-liquid-glass.md)
+> - WWDC25 session 356: [Get to know the new design system](https://developer.apple.com/videos/play/wwdc2025/356/)
+> - WWDC25 session 284: [Build a UIKit app with the new design](https://developer.apple.com/videos/play/wwdc2025/284/).
 
-#### Configure the Uinavigationbarappearance
+#### Configure the UINavigationBarAppearance
 
 Consider an app that uses `UITableViewController`, and has the following code in `application(_ :didFinishLaunchingWithOptions:)`:
 
@@ -54,7 +59,7 @@ func customNavBarAppearance() -> UINavigationBarAppearance {
 }
 ```
 
-#### Configure the Entire App
+#### Configure the entire app
 
 To apply this appearance to the navigation bar throughout the entire app:
 
@@ -74,7 +79,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
-#### Configure a View Controller
+#### Configure a view controller
 
 To apply this appearance to the navigation bar of an individual view controller:
 

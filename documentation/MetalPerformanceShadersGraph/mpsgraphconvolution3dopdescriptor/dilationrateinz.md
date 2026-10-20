@@ -1,7 +1,8 @@
 # dilationRateInZ
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount by which weights tensor expands in the `z`-direction.
 
@@ -17,6 +18,10 @@ The amount by which weights tensor expands in the `z`-direction.
 
 ```swift
 var dilationRateInZ: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger dilationRateInZ;
 ```
 
 #### Discussion

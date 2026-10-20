@@ -1,7 +1,8 @@
 # PermissionChoice.Answer
 
 **Framework**: PermissionKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An answer to the permission request.
 
@@ -21,26 +22,27 @@ enum Answer
 ## Topics
 
 ### Determining the permission request response
-- [PermissionChoice.Answer.approval](permissionchoice/answer-swift.enum/approval.md)
+- [PermissionChoice.Answer.approval](./answer-swift.enum/approval.md)
   An approved permission response.
-- [PermissionChoice.Answer.denial](permissionchoice/answer-swift.enum/denial.md)
+- [PermissionChoice.Answer.denial](./answer-swift.enum/denial.md)
   A denied permission response.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [var answer: PermissionChoice.Answer](permissionchoice/answer-swift.property.md)
+### Accessing answers
+- [var answer: PermissionChoice.Answer](./answer-swift.property.md)
   The type of answer this choice represents.
-- [static let approve: PermissionChoice](permissionchoice/approve.md)
+- [static let approve: PermissionChoice](./approve.md)
   The system-preferred choice to approve a permission request.
-- [static let decline: PermissionChoice](permissionchoice/decline.md)
+- [static let decline: PermissionChoice](./decline.md)
   The system-preferred choice to decline a permission request.
 
 

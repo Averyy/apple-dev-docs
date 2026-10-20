@@ -1,7 +1,8 @@
 # MKDirections.RoutePreference.any
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The option that specifies any available route.
 
@@ -20,9 +21,14 @@ The option that specifies any available route.
 case any
 ```
 
+```c
+MKDirectionsRoutePreferenceAny
+```
+
 ## See Also
 
-- [MKDirections.RoutePreference.avoid](mkdirections/routepreference/avoid.md)
+### Route selection options
+- [MKDirections.RoutePreference.avoid](./avoid.md)
   The option that requests the framework avoid certain routes.
 
 

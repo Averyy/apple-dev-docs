@@ -1,7 +1,8 @@
 # topCandidates(_:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests the *n* top candidates for a recognized text string.
 
@@ -19,6 +20,10 @@ Requests the *n* top candidates for a recognized text string.
 func topCandidates(_ maxCandidateCount: Int) -> [VNRecognizedText]
 ```
 
+```objc
+- (NSArray<VNRecognizedText *> *) topCandidates:(NSUInteger) maxCandidateCount;
+```
+
 #### Return Value
 
 An array of the *n* top candidates, sorted by decreasing confidence score.
@@ -33,7 +38,8 @@ This function returns no more than *n* candidates, but it may return fewer than 
 
 ## See Also
 
-- [class VNRecognizedText](vnrecognizedtext.md)
+### Obtaining Recognized Text
+- [class VNRecognizedText](../vnrecognizedtext.md)
   Text recognized in an image through a text recognition request.
 
 

@@ -1,7 +1,8 @@
 # Destination
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Post-tap destination entity embedded in a Creative.
 
@@ -10,7 +11,7 @@ Post-tap destination entity embedded in a Creative.
 
 ## Declaration
 
-```swift
+```
 object Destination
 ```
 
@@ -36,47 +37,47 @@ For Ads on Apple Maps, `LOCAL_ADS_PLACECARD` is the supported `destinationType`,
 ## Topics
 
 ### Dictionaries
-- [object Destination.Parameters](destination/parameters-data.dictionary.md)
+- [object Destination.Parameters](./destination/parameters-data.dictionary.md)
   Destination-specific parameters for the post-tap experience.
 ### Type Aliases
-- [type Destination.DestinationType](destination/destinationtype-data.typealias.md)
+- [type Destination.DestinationType](./destination/destinationtype-data.typealias.md)
   The type of post-tap destination.
 
 ## Properties
 
-- `destinationType` (Destination.DestinationType): The type of post-tap destination. See [`DestinationType`](destinationtype.md). Immutable after creation.
+- `destinationType` (Destination.DestinationType): The type of post-tap destination. See [`DestinationType`](./destinationtype.md). Immutable after creation.
 - `parameters` (Destination.Parameters): Destination-specific parameters. Sub-fields: adamId (App Store app identifier, required), productPageId (UUID of a Custom Product Page created in App Store Connect, nullable string UUID, omit to use the default product page). Immutable after creation.
 - `url` (string): The resolved destination URL. Read-only, computed by the system from `destinationType` and `parameters`.
 
 ## See Also
 
-- [object Creative](creative.md)
+- [object Creative](./creative.md)
   Ad creative containing all data for visually rendering an ad.
-- [object CreativeCreate](creativecreate.md)
+- [object CreativeCreate](./creativecreate.md)
   The request body for creating a new Creative object.
-- [object CreativeUpdate](creativeupdate.md)
+- [object CreativeUpdate](./creativeupdate.md)
   The request body for updating an existing Creative object.
-- [object CreativeResponse](creativeresponse.md)
+- [object CreativeResponse](./creativeresponse.md)
   The response object for an ad creative operation.
-- [object CreativeQueryResponse](creativequeryresponse.md)
+- [object CreativeQueryResponse](./creativequeryresponse.md)
   The response object for a Creative query, containing matched results and pagination metadata.
-- [object CreativeEligibility](creativeeligibility.md)
+- [object CreativeEligibility](./creativeeligibility.md)
   Eligibility state for an ad creative across supply sources and placements.
-- [object AssetReference](assetreference.md)
+- [object AssetReference](./assetreference.md)
   A reference to an asset by its UUID.
-- [object AssetImage](assetimage.md)
+- [object AssetImage](./assetimage.md)
   Image-specific asset detail fields.
-- [object DestinationCreate](destinationcreate.md)
+- [object DestinationCreate](./destinationcreate.md)
   Request payload for specifying the post-tap destination when creating an ad creative.
-- [object DestinationParameter](destinationparameter.md)
+- [object DestinationParameter](./destinationparameter.md)
   Destination-specific identifiers used when linking an ad creative to an App Store product page.
-- [object CreativeRejectionReason](creativerejectionreason.md)
+- [object CreativeRejectionReason](./creativerejectionreason.md)
   Detailed rejection reason for an ad creative that failed Apple review.
-- [object CreativeRejectionReasonQueryRequest](creativerejectionreasonqueryrequest.md)
+- [object CreativeRejectionReasonQueryRequest](./creativerejectionreasonqueryrequest.md)
   The request body for querying ad creative rejection reasons.
-- [object CreativeRejectionReasonQueryResponse](creativerejectionreasonqueryresponse.md)
+- [object CreativeRejectionReasonQueryResponse](./creativerejectionreasonqueryresponse.md)
   The response object for a creative rejection reason query, containing matched results and pagination metadata.
-- [object LocaleInfo](localeinfo.md)
+- [object LocaleInfo](./localeinfo.md)
   Represents a specific language and its corresponding language code.
 
 

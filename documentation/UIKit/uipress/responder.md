@@ -1,7 +1,8 @@
 # responder
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A responder object.
 
@@ -18,9 +19,13 @@ A responder object.
 var responder: UIResponder? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) UIResponder * responder;
+```
+
 #### Discussion
 
-This property is a [`UIResponder`](uiresponder.md) object that either is focused or is the [`isFirstResponder`](uiresponder/isfirstresponder.md) object in the window when [`UIApplication`](uiapplication.md) originally dispatched the press event.
+This property is a [`UIResponder`](../uiresponder.md) object that either is focused or is the [`isFirstResponder`](../uiresponder/isfirstresponder.md) object in the window when [`UIApplication`](../uiapplication.md) originally dispatched the press event.
 
 
 ---

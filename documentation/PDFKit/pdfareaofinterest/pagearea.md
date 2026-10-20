@@ -1,7 +1,8 @@
 # pageArea
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The mouse is over a page.
 
@@ -19,23 +20,28 @@ The mouse is over a page.
 static var pageArea: PDFAreaOfInterest { get }
 ```
 
+```c
+kPDFPageArea
+```
+
 ## See Also
 
-- [static var textArea: PDFAreaOfInterest](pdfareaofinterest/textarea.md)
+### Constants
+- [static var textArea: PDFAreaOfInterest](./textarea.md)
   The mouse is over text.
-- [static var annotationArea: PDFAreaOfInterest](pdfareaofinterest/annotationarea.md)
+- [static var annotationArea: PDFAreaOfInterest](./annotationarea.md)
   The mouse is over an annotation.
-- [static var linkArea: PDFAreaOfInterest](pdfareaofinterest/linkarea.md)
+- [static var linkArea: PDFAreaOfInterest](./linkarea.md)
   The mouse is over a link.
-- [static var controlArea: PDFAreaOfInterest](pdfareaofinterest/controlarea.md)
+- [static var controlArea: PDFAreaOfInterest](./controlarea.md)
   The mouse is over a control.
-- [static var textFieldArea: PDFAreaOfInterest](pdfareaofinterest/textfieldarea.md)
+- [static var textFieldArea: PDFAreaOfInterest](./textfieldarea.md)
   The mouse is over a text field.
-- [static var iconArea: PDFAreaOfInterest](pdfareaofinterest/iconarea.md)
+- [static var iconArea: PDFAreaOfInterest](./iconarea.md)
   The mouse is over an icon.
-- [static var popupArea: PDFAreaOfInterest](pdfareaofinterest/popuparea.md)
+- [static var popupArea: PDFAreaOfInterest](./popuparea.md)
   The mouse is over a popup menu.
-- [static var imageArea: PDFAreaOfInterest](pdfareaofinterest/imagearea.md)
+- [static var imageArea: PDFAreaOfInterest](./imagearea.md)
   The mouse is over an image.
 
 

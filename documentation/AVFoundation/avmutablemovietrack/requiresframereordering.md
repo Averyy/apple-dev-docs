@@ -1,7 +1,8 @@
 # requiresFrameReordering
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether samples in the track may have different presentation and decode timestamps.
 
@@ -21,9 +22,10 @@ var requiresFrameReordering: Bool { get }
 
 ## See Also
 
-- [var nominalFrameRate: Float](avmutablemovietrack/nominalframerate.md)
+### Accessing frame-based characteristics
+- [var nominalFrameRate: Float](./nominalframerate.md)
   The frame rate of the track, in frames per second.
-- [var minFrameDuration: CMTime](avmutablemovietrack/minframeduration.md)
+- [var minFrameDuration: CMTime](./minframeduration.md)
   The minimum duration of the track’s frames.
 
 

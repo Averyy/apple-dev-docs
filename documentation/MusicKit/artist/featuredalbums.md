@@ -1,7 +1,8 @@
 # featuredAlbums
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of featured albums of the artist.
 

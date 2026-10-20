@@ -1,7 +1,8 @@
 # reset(roundingForwardsFrom:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reset to the nearest scalar-aligned code unit offset `>= i`.
 
@@ -22,7 +23,7 @@ mutating func reset(roundingForwardsFrom i: Int)
 
 #### Discussion
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

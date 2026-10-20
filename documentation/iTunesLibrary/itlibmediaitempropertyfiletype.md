@@ -1,7 +1,8 @@
 # ITLibMediaItemPropertyFileType
 
 **Framework**: iTunes Library  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The file type of the media item.
 
@@ -15,11 +16,16 @@ The file type of the media item.
 let ITLibMediaItemPropertyFileType: String
 ```
 
+```c
+extern NSString * const ITLibMediaItemPropertyFileType;
+```
+
 ## See Also
 
-- [var fileType: Int](itlibmediaitem/filetype.md)
+### Deprecated
+- [var fileType: Int](./itlibmediaitem/filetype.md)
   The file type of the media item.
-- [var size: Int](itlibmediaitem/size.md)
+- [var size: Int](./itlibmediaitem/size.md)
   The size in bytes of the media item on disk.
 
 

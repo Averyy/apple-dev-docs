@@ -1,7 +1,8 @@
 # removeTrack(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the specified track from the target movie.
 
@@ -19,17 +20,22 @@ Removes the specified track from the target movie.
 func removeTrack(_ track: AVMovieTrack)
 ```
 
+```objc
+- (void) removeTrack:(AVMovieTrack *) track;
+```
+
 ## Parameters
 
 - `track`: The movie to be removed.
 
 ## See Also
 
-- [func mutableTrack(compatibleWith: AVAssetTrack) -> AVMutableMovieTrack?](avmutablemovie/mutabletrack(compatiblewith:).md)
+### Managing tracks
+- [func mutableTrack(compatibleWith: AVAssetTrack) -> AVMutableMovieTrack?](./mutabletrack%28compatiblewith%29.md)
   Provides a reference to a track from a mutable movie into which you can insert any time range.
-- [func addMutableTrack(withMediaType: AVMediaType, copySettingsFrom: AVAssetTrack?, options: [String : Any]?) -> AVMutableMovieTrack?](avmutablemovie/addmutabletrack(withmediatype:copysettingsfrom:options:).md)
+- [func addMutableTrack(withMediaType: AVMediaType, copySettingsFrom: AVAssetTrack?, options: [String : Any]?) -> AVMutableMovieTrack?](./addmutabletrack%28withmediatype,copysettingsfrom,options%29.md)
   Adds an empty track to the target movie.
-- [func addMutableTracksCopyingSettings(from: [AVAssetTrack], options: [String : Any]?) -> [AVMutableMovieTrack]](avmutablemovie/addmutabletrackscopyingsettings(from:options:).md)
+- [func addMutableTracksCopyingSettings(from: [AVAssetTrack], options: [String : Any]?) -> [AVMutableMovieTrack]](./addmutabletrackscopyingsettings%28from,options%29.md)
   Adds one or more empty tracks to the target movie and copies the track settings from the source tracks.
 
 

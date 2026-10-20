@@ -1,7 +1,8 @@
 # webView
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The web view that sent the message.
 
@@ -18,11 +19,16 @@ The web view that sent the message.
 weak var webView: WKWebView? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) WKWebView * webView;
+```
+
 ## See Also
 
-- [var frameInfo: WKFrameInfo](wkscriptmessage/frameinfo.md)
+### Getting Message-Related Information
+- [var frameInfo: WKFrameInfo](./frameinfo.md)
   The frame that sent the message.
-- [var world: WKContentWorld](wkscriptmessage/world.md)
+- [var world: WKContentWorld](./world.md)
   The namespace in which the JavaScript code executes.
 
 

@@ -1,7 +1,8 @@
 # exported(as:)
 
 **Framework**: App Intents Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports this transient entity as a system intent value type.
 
@@ -26,7 +27,7 @@ An instance of the requested type.
 
 #### Discussion
 
-> **Note**: If the entity does not support the requested value conversion.
+> **Throws**: If the entity does not support the requested value conversion.
 
 ## Parameters
 

@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 IOThread workThread;
 ```
 
@@ -15,13 +15,14 @@ Work loop thread.
 
 ## See Also
 
-- [workToDoLock](ioworkloop/worktodolock.md)
-- [workToDo](ioworkloop/worktodo.md)
-- [reserved](ioworkloop/reserved.md)
-- [loopRestart](ioworkloop/looprestart.md)
-- [gateLock](ioworkloop/gatelock.md)
-- [eventChain](ioworkloop/eventchain.md)
-- [controlG](ioworkloop/controlg.md)
+### Instance Variables
+- [workToDoLock](./worktodolock.md)
+- [workToDo](./worktodo.md)
+- [reserved](./reserved.md)
+- [loopRestart](./looprestart.md)
+- [gateLock](./gatelock.md)
+- [eventChain](./eventchain.md)
+- [controlG](./controlg.md)
 
 
 ---

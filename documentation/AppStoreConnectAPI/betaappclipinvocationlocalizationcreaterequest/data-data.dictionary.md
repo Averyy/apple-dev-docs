@@ -1,7 +1,8 @@
 # BetaAppClipInvocationLocalizationCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request body.
 
@@ -10,16 +11,16 @@ The data element of the request body.
 
 ## Declaration
 
-```swift
+```
 object BetaAppClipInvocationLocalizationCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object BetaAppClipInvocationLocalizationCreateRequest.Data.Attributes](betaappclipinvocationlocalizationcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object BetaAppClipInvocationLocalizationCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   The attributes you set that describe the new Beta App Clip Invocation Localizations resource.
-- [object BetaAppClipInvocationLocalizationCreateRequest.Data.Relationships](betaappclipinvocationlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object BetaAppClipInvocationLocalizationCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 ## Properties
@@ -27,6 +28,8 @@ object BetaAppClipInvocationLocalizationCreateRequest.Data
 - `attributes` (BetaAppClipInvocationLocalizationCreateRequest.Data.Attributes) *(required)*: The attributes that describes the request that creates a Beta App Clip Invocation Localizations resource.
 - `relationships` (BetaAppClipInvocationLocalizationCreateRequest.Data.Relationships) *(required)*: The navigational links to related data and included resource types and IDs.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `betaAppClipInvocationLocalizations`
 
 
 ---

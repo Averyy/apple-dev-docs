@@ -1,7 +1,8 @@
 # PurchaseIntent.PurchaseIntents
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence of purchase intents for purchases that customers initiate outside of the app.
 
@@ -20,11 +21,12 @@ struct PurchaseIntents
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
 
 ## See Also
 
-- [static var intents: PurchaseIntent.PurchaseIntents](purchaseintent/intents.md)
+### Getting purchase intents
+- [static var intents: PurchaseIntent.PurchaseIntents](./intents.md)
   The asynchronous sequence that emits a purchase intent when customers initiate a purchase outside of the app.
 
 

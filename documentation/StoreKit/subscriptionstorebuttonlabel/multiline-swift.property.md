@@ -1,7 +1,8 @@
 # multiline
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -18,10 +19,11 @@ var multiline: SubscriptionStoreButtonLabel { get }
 
 ## See Also
 
-- [var action: SubscriptionStoreButtonLabel](subscriptionstorebuttonlabel/action-swift.property.md)
-- [var displayName: SubscriptionStoreButtonLabel](subscriptionstorebuttonlabel/displayname-swift.property.md)
-- [var price: SubscriptionStoreButtonLabel](subscriptionstorebuttonlabel/price-swift.property.md)
-- [var singleLine: SubscriptionStoreButtonLabel](subscriptionstorebuttonlabel/singleline-swift.property.md)
+### Instance Properties
+- [var action: SubscriptionStoreButtonLabel](./action-swift.property.md)
+- [var displayName: SubscriptionStoreButtonLabel](./displayname-swift.property.md)
+- [var price: SubscriptionStoreButtonLabel](./price-swift.property.md)
+- [var singleLine: SubscriptionStoreButtonLabel](./singleline-swift.property.md)
 
 
 ---

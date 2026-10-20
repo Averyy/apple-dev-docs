@@ -1,7 +1,8 @@
 # readAttributeEnableOneTouchLocking(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeEnableOneTouchLocking(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeEnableOneTouchLocking() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeEnableOneTouchLockingWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

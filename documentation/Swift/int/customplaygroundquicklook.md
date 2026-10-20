@@ -1,7 +1,8 @@
 # customPlaygroundQuickLook
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A custom playground Quick Look for the `Int` instance.
 
@@ -14,6 +15,8 @@ A custom playground Quick Look for the `Int` instance.
 - visionOS 1.0+
 - watchOS 2.0+
 
+> **Deprecated**: Int.customPlaygroundQuickLook will be removed in a future Swift version
+
 ## Declaration
 
 ```swift
@@ -22,7 +25,8 @@ var customPlaygroundQuickLook: _PlaygroundQuickLook { get }
 
 ## See Also
 
-- [init(NSNumber)](int/init(_:)-3mb3q.md)
+### Deprecated
+- [init(NSNumber)](./init%28_%29-3mb3q.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # standard
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Stack marks starting at zero.
 

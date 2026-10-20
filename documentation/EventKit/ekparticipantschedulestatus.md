@@ -1,17 +1,18 @@
 # EKParticipantScheduleStatus
 
 **Framework**: EventKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The participant’s scheduled status.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,47 +20,52 @@ The participant’s scheduled status.
 enum EKParticipantScheduleStatus
 ```
 
+```c
+enum EKParticipantScheduleStatus : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [EKParticipantScheduleStatus.none](ekparticipantschedulestatus/none.md)
+- [EKParticipantScheduleStatus.none](./ekparticipantschedulestatus/none.md)
   The invitation hasn’t been sent yet.
-- [EKParticipantScheduleStatus.pending](ekparticipantschedulestatus/pending.md)
+- [EKParticipantScheduleStatus.pending](./ekparticipantschedulestatus/pending.md)
   The invitation is in the process of being sent.
-- [EKParticipantScheduleStatus.sent](ekparticipantschedulestatus/sent.md)
+- [EKParticipantScheduleStatus.sent](./ekparticipantschedulestatus/sent.md)
   The invitation has been sent, but it’s unclear if it was successfully delivered.
-- [EKParticipantScheduleStatus.delivered](ekparticipantschedulestatus/delivered.md)
+- [EKParticipantScheduleStatus.delivered](./ekparticipantschedulestatus/delivered.md)
   The invitation has been sent and successfully delivered.
-- [EKParticipantScheduleStatus.recipientNotRecognized](ekparticipantschedulestatus/recipientnotrecognized.md)
+- [EKParticipantScheduleStatus.recipientNotRecognized](./ekparticipantschedulestatus/recipientnotrecognized.md)
   The invitation wasn’t delivered because the source doesn’t recognize the recipient.
-- [EKParticipantScheduleStatus.noPrivileges](ekparticipantschedulestatus/noprivileges.md)
+- [EKParticipantScheduleStatus.noPrivileges](./ekparticipantschedulestatus/noprivileges.md)
   The invitation wasn’t delivered because of insufficient privileges.
-- [EKParticipantScheduleStatus.deliveryFailed](ekparticipantschedulestatus/deliveryfailed.md)
+- [EKParticipantScheduleStatus.deliveryFailed](./ekparticipantschedulestatus/deliveryfailed.md)
   The invitation wasn’t delivered due to a temporary failure.
-- [EKParticipantScheduleStatus.cannotDeliver](ekparticipantschedulestatus/cannotdeliver.md)
+- [EKParticipantScheduleStatus.cannotDeliver](./ekparticipantschedulestatus/cannotdeliver.md)
   The invitation wasn’t delivered because the system is unsure of how to deliver it.
-- [EKParticipantScheduleStatus.recipientNotAllowed](ekparticipantschedulestatus/recipientnotallowed.md)
+- [EKParticipantScheduleStatus.recipientNotAllowed](./ekparticipantschedulestatus/recipientnotallowed.md)
   The invitation wasn’t delivered because scheduling with the participant isn’t allowed.
 ### Initializers
-- [init?(rawValue: Int)](ekparticipantschedulestatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./ekparticipantschedulestatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum EKParticipantRole](ekparticipantrole.md)
+### Defining Participants
+- [enum EKParticipantRole](./ekparticipantrole.md)
   The participant’s role for an event.
-- [enum EKParticipantType](ekparticipanttype.md)
+- [enum EKParticipantType](./ekparticipanttype.md)
   The type of participant.
-- [enum EKParticipantStatus](ekparticipantstatus.md)
+- [enum EKParticipantStatus](./ekparticipantstatus.md)
   The participant’s attendance status for an event.
 
 

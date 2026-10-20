@@ -1,7 +1,8 @@
 # hand
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The anchor capability that enables hand tracking.
 

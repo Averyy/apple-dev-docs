@@ -1,7 +1,8 @@
 # RadioNodeList
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,16 +10,16 @@
 
 ## Declaration
 
-```swift
+```
 interface RadioNodeList
 ```
 
 ## Topics
 
 ### Instance Properties
-- [value](radionodelist/1630562-value.md)
+- [value](./radionodelist/api-1630562-value.md)
 ### Instance Methods
-- [HTMLElement](radionodelist/1777830-htmlelement.md)
+- [HTMLElement](./radionodelist/api-1777830-htmlelement.md)
 
 ## Relationships
 

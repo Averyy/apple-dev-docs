@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The width of a tile.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The width of a tile.
 var width: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float width;
+```
+
 ## See Also
 
-- [var acuteAngle: Float](cifourfoldreflectedtile/acuteangle.md)
+### Instance Properties
+- [var acuteAngle: Float](./acuteangle.md)
   The primary angle for the repeating reflected tile.
-- [var angle: Float](cifourfoldreflectedtile/angle.md)
+- [var angle: Float](./angle.md)
   The angle, in radians, of the tiled pattern.
-- [var center: CGPoint](cifourfoldreflectedtile/center.md)
+- [var center: CGPoint](./center.md)
   The x and y position to use as the center of the effect.
-- [var inputImage: CIImage?](cifourfoldreflectedtile/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
 
 

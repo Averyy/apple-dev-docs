@@ -1,7 +1,8 @@
 # CKSyncEngineAccountChangeType.switchAccounts
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A change indicating a switch between two iCloud accounts.
 
@@ -20,15 +21,20 @@ A change indicating a switch between two iCloud accounts.
 case switchAccounts
 ```
 
+```c
+CKSyncEngineAccountChangeTypeSwitchAccounts
+```
+
 #### Discussion
 
 You should delete any locally-stored data for the previous account.
 
 ## See Also
 
-- [CKSyncEngineAccountChangeType.signIn](cksyncengineaccountchangetype/signin.md)
+### Account change types
+- [CKSyncEngineAccountChangeType.signIn](./signin.md)
   A change indicating a sign-in to an iCloud account.
-- [CKSyncEngineAccountChangeType.signOut](cksyncengineaccountchangetype/signout.md)
+- [CKSyncEngineAccountChangeType.signOut](./signout.md)
   A change indicating a sign-out of an iCloud account.
 
 

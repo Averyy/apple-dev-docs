@@ -1,7 +1,8 @@
 # vImageConvert_AnyToAny(_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Converts the pixels in a vImage buffer to another format, using the specified converter.
 
@@ -20,19 +21,23 @@ Converts the pixels in a vImage buffer to another format, using the specified co
 func vImageConvert_AnyToAny(_ converter: vImageConverter, _ srcs: UnsafePointer<vImage_Buffer>, _ dests: UnsafePointer<vImage_Buffer>, _ tempBuffer: UnsafeMutableRawPointer!, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageConvert_AnyToAny(vImageConverterRef const converter, const vImage_Buffer *srcs, const vImage_Buffer *dests, void *tempBuffer, vImage_Flags flags);
+```
+
 ## Mentions
 
-- [Building a basic image conversion workflow](building-a-basic-image-conversion-workflow.md)
+- [Building a basic image conversion workflow](./building-a-basic-image-conversion-workflow.md)
 
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [`Data Types and Constants`](data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
 
 #### Discussion
 
 With an appropriately configured vImage converter, convert the image channels found in `srcs` to the image channels found in `dests`. Whenever possible, conversion passes are vectorized and multithreaded to reduce the time and energy cost of the function.
 
-Use [`vImageConverter_MustOperateOutOfPlace(_:_:_:_:)`](vimageconverter_mustoperateoutofplace(_:_:_:_:).md) to determine whether a particular conversion can operate in place. For an in-place conversion to work, you must ensure that `srcs[i].data = dests[i].data` and `srcs[i].rowBytes = dests[i].rowBytes`.
+Use [`vImageConverter_MustOperateOutOfPlace(_:_:_:_:)`](./vimageconverter_mustoperateoutofplace%28_,_,_,_%29.md) to determine whether a particular conversion can operate in place. For an in-place conversion to work, you must ensure that `srcs[i].data = dests[i].data` and `srcs[i].rowBytes = dests[i].rowBytes`.
 
 All scanlines must start at a byte-aligned address. Some formats have 1, 2, 4, or 12 bits per channel/pixel and might not start at a byte-aligned address. A single byte can’t span multiple rows of data.
 
@@ -40,7 +45,7 @@ Some formats, particularly YUV422 and YUV420, and those with a pixel size that�
 
 When reading incomplete chunks, vImage touches only the unused parts of the chunk when it knows it to be safe to do so. When writing incomplete chunks, vImage copies the rightmost valid pixel color into the unused part of the chunk. Thus, on reading, the entire chunk doesn’t have to be there, but on writing, it does. Conventions vary among chunk-using imaging pipelines, and this conservative approach should interoperate with most. However, be careful when writing to chunk-based formats (not to be confused with chunky formats, which merely have several channels interleaved) to make sure that the buffer is large enough to tolerate the write policy.  If you’re tiling chunk-based data, be careful not to run tile boundaries through the middle of a chunk.  Chunks are assumed to be indivisible.
 
-##### Optimize Performance with Temporary Buffers
+##### Optimize performance with temporary buffers
 
 This function uses a multiple-pass algorithm that saves intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional storage.
 
@@ -56,19 +61,22 @@ You can use the same workspace memory for a group of images that are different s
 
 ## Parameters
 
-- `converter`: A valid [`vImageConverter`](vimageconverter.md) instance indicating the conversion to perform. You can use the same converter concurrently in multiple threads. To create a converter, you can use [`vImageConverter_CreateWithCGImageFormat(_:_:_:_:_:)`](vimageconverter_createwithcgimageformat(_:_:_:_:_:).md), [`vImageConverter_CreateWithColorSyncCodeFragment(_:_:_:_:_:_:)`](vimageconverter_createwithcolorsynccodefragment(_:_:_:_:_:_:).md), [`vImageConverter_CreateForCGToCVImageFormat(_:_:_:_:_:)`](vimageconverter_createforcgtocvimageformat(_:_:_:_:_:).md), or [`vImageConverter_CreateForCVToCGImageFormat(_:_:_:_:_:)`](vimageconverter_createforcvtocgimageformat(_:_:_:_:_:).md).
-- `srcs`: A pointer to an array of vImage buffer structures that describe the color planes that make up the input image. For the order and number of input buffers, see the description of the function that creates the [`vImageConverter`](vimageconverter.md) instance. You can also determine the order manually using [`vImageConverter_GetSourceBufferOrder(_:)`](vimageconverter_getsourcebufferorder(_:).md).
-- `dests`: A pointer to an array of vImage buffer structures that describe the color planes that make up the result image. For the order and number of input buffers, see the description of the function that creates the [`vImageConverter`](vimageconverter.md) instance. You can also determine the order manually using [`vImageConverter_GetDestinationBufferOrder(_:)`](vimageconverter_getdestinationbufferorder(_:).md). The destination buffer may only alias the `srcs` buffers if [`vImageConverter_MustOperateOutOfPlace(_:_:_:_:)`](vimageconverter_mustoperateoutofplace(_:_:_:_:).md) returns 0 and the respective scanlines of the aliasing buffers start at the same address.
+- `converter`: A valid [`vImageConverter`](./vimageconverter.md) instance indicating the conversion to perform. You can use the same converter concurrently in multiple threads. To create a converter, you can use [`vImageConverter_CreateWithCGImageFormat(_:_:_:_:_:)`](./vimageconverter_createwithcgimageformat%28_,_,_,_,_%29.md), [`vImageConverter_CreateWithColorSyncCodeFragment(_:_:_:_:_:_:)`](./vimageconverter_createwithcolorsynccodefragment%28_,_,_,_,_,_%29.md), [`vImageConverter_CreateForCGToCVImageFormat(_:_:_:_:_:)`](./vimageconverter_createforcgtocvimageformat%28_,_,_,_,_%29.md), or [`vImageConverter_CreateForCVToCGImageFormat(_:_:_:_:_:)`](./vimageconverter_createforcvtocgimageformat%28_,_,_,_,_%29.md).
+- `srcs`: A pointer to an array of vImage buffer structures that describe the color planes that make up the input image. For the order and number of input buffers, see the description of the function that creates the [`vImageConverter`](./vimageconverter.md) instance. You can also determine the order manually using [`vImageConverter_GetSourceBufferOrder(_:)`](./vimageconverter_getsourcebufferorder%28_%29.md).
+- `dests`: A pointer to an array of vImage buffer structures that describe the color planes that make up the result image. For the order and number of input buffers, see the description of the function that creates the [`vImageConverter`](./vimageconverter.md) instance. You can also determine the order manually using [`vImageConverter_GetDestinationBufferOrder(_:)`](./vimageconverter_getdestinationbufferorder%28_%29.md). The destination buffer may only alias the `srcs` buffers if [`vImageConverter_MustOperateOutOfPlace(_:_:_:_:)`](./vimageconverter_mustoperateoutofplace%28_,_,_,_%29.md) returns 0 and the respective scanlines of the aliasing buffers start at the same address.
 - `tempBuffer`: A pointer to workspace memory the function uses as it operates on an image. Pass `nil` to instruct the function to allocate, use, and then free its own temporary buffer.
-- `flags`: The options to use when performing this operation. The following flags are supported: | [`kvImagePrintDiagnosticsToConsole`](kvimageprintdiagnosticstoconsole.md) | Prints a debug message if the operation fails. |
-| --- | --- |
-| [`kvImageGetTempBufferSize`](kvimagegettempbuffersize.md) | No image conversion work is done. If the value returned by the function is less than 0, it represents an error code. A value of 0 or greater represents the size of `tempBuffer` to be passed into the function. |
-| [`kvImageDoNotTile`](kvimagedonottile.md) | Disables internal multithreading.  Pass this flag if you’re doing your own threading and think it might conflict when vImage attempts to do the same. |
-| [`kvImageNoFlags`](kvimagenoflags.md) | Default behavior. |
+- `flags`: The options to use when performing this operation. The following flags are supported:
+
+  | [`kvImagePrintDiagnosticsToConsole`](./kvimageprintdiagnosticstoconsole.md) | Prints a debug message if the operation fails. |
+  | --- | --- |
+  | [`kvImageGetTempBufferSize`](./kvimagegettempbuffersize.md) | No image conversion work is done. If the value returned by the function is less than 0, it represents an error code. A value of 0 or greater represents the size of `tempBuffer` to be passed into the function. |
+  | [`kvImageDoNotTile`](./kvimagedonottile.md) | Disables internal multithreading.  Pass this flag if you’re doing your own threading and think it might conflict when vImage attempts to do the same. |
+  | [`kvImageNoFlags`](./kvimagenoflags.md) | Default behavior. |
 
 ## See Also
 
-- [vImage Buffer Type Codes](1399056-vimage-buffer-type-codes.md)
+### Performing a conversion
+- [vImage Buffer Type Codes](./api-1399056-vimage-buffer-type-codes.md)
   Constants that specify the contents of vImage buffers.
 
 

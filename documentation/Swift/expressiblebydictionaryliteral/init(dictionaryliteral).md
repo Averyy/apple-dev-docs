@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates an instance initialized with the given key-value pairs.

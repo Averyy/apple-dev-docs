@@ -1,7 +1,8 @@
 # Create a New Library Playlist
 
 **Framework**: Apple Music API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Create a new playlist in a user’s library.
 
@@ -12,7 +13,7 @@ Create a new playlist in a user’s library.
 
 If successful, the HTTP status code is 201 (Created) and a new resource created as a result. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array.
 
-This endpoint requires a music user token. For more information, see [`User Authentication for MusicKit`](user-authentication-for-musickit.md).
+This endpoint requires a music user token. For more information, see [User Authentication for MusicKit](./user-authentication-for-musickit.md).
 
 > **Note**:  There may be a delay before a new resource appears in a user’s library.
 
@@ -22,7 +23,7 @@ You can include an optional `tracks` relationship in this request.
 
 **Request**:
 
-```None
+```
 https://api.music.apple.com/v1/me/library/playlists
 
 {
@@ -86,25 +87,39 @@ https://api.music.apple.com/v1/me/library/playlists
 
 ## Parameters
 
+### Query Parameters
+
 - `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `LibraryPlaylistCreationRequest`
+
 The `POST` request containing the `name`**,** `tracks` and `parent` playlist folder for the playlist to be added.
+
+## Responses
+
+- `201` Created (`LibraryPlaylistsResponse`, `application/json`): The request was successful.
+- `401` Unauthorized (`UnauthorizedResponse`, `application/json`): A response indicating an incorrect `Authorization` header.
+- `403` Forbidden (`ForbiddenResponse`, `application/json`): A response indicating invalid or insufficient authentication.
+- `500` Internal Server Error (`ErrorsResponse`, `application/json`): A response indicating an error occurred on the server.
 
 ## See Also
 
-- [object LibraryPlaylists](libraryplaylists.md)
+### Related Documentation
+- [object LibraryPlaylists](./libraryplaylists.md)
   A resource object that represents a library playlist.
-- [object LibraryPlaylistsResponse](libraryplaylistsresponse.md)
+- [object LibraryPlaylistsResponse](./libraryplaylistsresponse.md)
   The response to a library playlists request.
-- [Add Tracks to a Library Playlist](add-tracks-to-a-library-playlist.md)
+### Creating and Modifying User Playlists
+- [Add Tracks to a Library Playlist](./add-tracks-to-a-library-playlist.md)
   Add new tracks to the end of a library playlist.
-- [Add a Resource to a Library](add-a-resource-to-a-library.md)
+- [Add a Resource to a Library](./add-a-resource-to-a-library.md)
   Add a catalog resource to a user’s iCloud Music Library.
-- [object LibraryPlaylistCreationRequest](libraryplaylistcreationrequest.md)
+- [object LibraryPlaylistCreationRequest](./libraryplaylistcreationrequest.md)
   A request to create a new playlist in a user’s library.
-- [object LibraryPlaylistTracksRequest](libraryplaylisttracksrequest.md)
+- [object LibraryPlaylistTracksRequest](./libraryplaylisttracksrequest.md)
   A request to add tracks to a library playlist.
 
 

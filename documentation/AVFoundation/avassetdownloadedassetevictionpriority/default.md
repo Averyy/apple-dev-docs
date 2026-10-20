@@ -1,7 +1,8 @@
 # default
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default eviction priority.
 
@@ -18,9 +19,14 @@ The default eviction priority.
 static let `default`: AVAssetDownloadedAssetEvictionPriority
 ```
 
+```c
+extern AVAssetDownloadedAssetEvictionPriority const AVAssetDownloadedAssetEvictionPriorityDefault;
+```
+
 ## See Also
 
-- [static let important: AVAssetDownloadedAssetEvictionPriority](avassetdownloadedassetevictionpriority/important.md)
+### Eviction priorities
+- [static let important: AVAssetDownloadedAssetEvictionPriority](./important.md)
   An eviction priority that indicates that this asset is important and the system should evict lower-priority assets first.
 
 

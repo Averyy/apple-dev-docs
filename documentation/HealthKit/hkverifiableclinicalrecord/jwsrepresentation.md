@@ -1,21 +1,28 @@
 # jwsRepresentation
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A raw representation of the SMART Health Card’s contents.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
+- iOS 15.0+ - Deprecated in 15.4
+- iPadOS 15.0+ - Deprecated in 15.4
+- Mac Catalyst 15.0+ - Deprecated in 15.4
 - macOS 13.0+
-- visionOS 1.0+
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use [`dataRepresentation`](./datarepresentation.md) instead.
 
 ## Declaration
 
 ```swift
 var jwsRepresentation: Data { get }
+```
+
+```objc
+@property (copy, readonly) NSData * JWSRepresentation;
 ```
 
 #### Discussion
@@ -26,7 +33,8 @@ This property contains a JSON Web Signature (JWS) Compact Serialization of the c
 
 ## See Also
 
-- [var dataRepresentation: Data](hkverifiableclinicalrecord/datarepresentation.md)
+### Accessing the Raw Payload
+- [var dataRepresentation: Data](./datarepresentation.md)
   A raw representation of the record’s data.
 
 

@@ -1,7 +1,8 @@
 # parts
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Updated mesh parts.
 

@@ -1,7 +1,8 @@
 # MTLBlitPassDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A configuration you create to customize a blit command encoder, which affects the runtime behavior of the blit pass you encode with it.
 
@@ -19,38 +20,43 @@ A configuration you create to customize a blit command encoder, which affects th
 class MTLBlitPassDescriptor
 ```
 
+```objc
+@interface MTLBlitPassDescriptor : NSObject
+```
+
 ## Mentions
 
-- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](./sampling-gpu-data-into-counter-sample-buffers.md)
 
 #### Overview
 
-You can customize an encoder for a blit pass by creating and configuring an [`MTLBlitPassDescriptor`](mtlblitpassdescriptor.md) instance and passing it to [`makeBlitCommandEncoder(descriptor:)`](mtlcommandbuffer/makeblitcommandencoder(descriptor:).md).
+You can customize an encoder for a blit pass by creating and configuring an [`MTLBlitPassDescriptor`](./mtlblitpassdescriptor.md) instance and passing it to [`makeBlitCommandEncoder(descriptor:)`](./mtlcommandbuffer/makeblitcommandencoder%28descriptor%29.md).
 
 ## Topics
 
 ### Configuring sample buffer attachment descriptors for a blit pass
-- [var sampleBufferAttachments: MTLBlitPassSampleBufferAttachmentDescriptorArray](mtlblitpassdescriptor/samplebufferattachments.md)
+- [var sampleBufferAttachments: MTLBlitPassSampleBufferAttachmentDescriptorArray](./mtlblitpassdescriptor/samplebufferattachments.md)
   An array of counter sample buffer attachments that you configure for a blit pass.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTLBlitPassSampleBufferAttachmentDescriptor](mtlblitpasssamplebufferattachmentdescriptor.md)
+### Configuring a blit command encoder
+- [class MTLBlitPassSampleBufferAttachmentDescriptor](./mtlblitpasssamplebufferattachmentdescriptor.md)
   A configuration that instructs the GPU where to store counter data from the beginning and end of a blit pass.
-- [class MTLBlitPassSampleBufferAttachmentDescriptorArray](mtlblitpasssamplebufferattachmentdescriptorarray.md)
+- [class MTLBlitPassSampleBufferAttachmentDescriptorArray](./mtlblitpasssamplebufferattachmentdescriptorarray.md)
   A container that stores an array of sample buffer attachments for a blit pass.
 
 

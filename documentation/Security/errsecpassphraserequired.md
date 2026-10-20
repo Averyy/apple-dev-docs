@@ -1,7 +1,8 @@
 # errSecPassphraseRequired
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A password is required for import or export.
 
@@ -18,6 +19,10 @@ A password is required for import or export.
 
 ```swift
 var errSecPassphraseRequired: OSStatus { get }
+```
+
+```c
+errSecPassphraseRequired
 ```
 
 

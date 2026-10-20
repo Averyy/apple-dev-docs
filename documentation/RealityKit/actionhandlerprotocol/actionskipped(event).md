@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 The function used to respond to action skipped events.
@@ -23,6 +24,13 @@ mutating func actionSkipped(event: Self.EventType)
 #### Discussion
 
 The animation system can skip over an event interval due to scrubbing or choppy frame rate.
+
+## Default Implementations
+
+### ActionHandlerProtocol Implementations
+- [func actionSkipped(event: Self.EventType)](./actionskipped%28event%29-937ws.md)
+  The function used to respond to action skipped events.
+- [func actionSkipped(event: Self.EventType)](./actionskipped%28event%29-wy3k.md)
 
 
 ---

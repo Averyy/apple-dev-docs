@@ -1,7 +1,8 @@
 # size
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the image.
 
@@ -22,13 +23,14 @@ var size: CGSize { get }
 
 ## See Also
 
-- [enum RequestDescriptor](requestdescriptor.md)
+### Inspecting an observation
+- [enum RequestDescriptor](../requestdescriptor.md)
   A type that describes the request and revision combination.
-- [var cgImage: CGImage](pixelbufferobservation/cgimage.md)
+- [var cgImage: CGImage](./cgimage.md)
   A Core Graphics image created from the pixel buffer observation.
-- [var pixelFormat: OSType](pixelbufferobservation/pixelformat.md)
+- [var pixelFormat: OSType](./pixelformat.md)
   The four-character code that identifies the pixel format.
-- [var pixelBuffer: CVReadOnlyPixelBuffer](pixelbufferobservation/pixelbuffer.md)
+- [var pixelBuffer: CVReadOnlyPixelBuffer](./pixelbuffer.md)
 
 
 ---

@@ -7,11 +7,11 @@ Provides the localized string in the installation package for the current locale
 
 ## Declaration
 
-```swift
+```
 localizedString(stringKey)
 ```
 
-#### Return_value
+#### Return Value
 
 The localized string, if found in the installation package; `null` otherwise.
 
@@ -21,7 +21,8 @@ The localized string, if found in the installation package; `null` otherwise.
 
 ## See Also
 
-- [localizedStringWithFormat](system/1812327-localizedstringwithformat.md)
+### Internationalizing Distributions
+- [localizedStringWithFormat](./api-1812327-localizedstringwithformat.md)
   Provides the formatted localized string in the installation package for the current locale, for a given key and a set of additional arguments.
 
 

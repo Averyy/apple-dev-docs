@@ -1,7 +1,8 @@
 # radialGradient(_:startCenter:startRadius:endCenter:endRadius:options:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a shading that fills a two-point radial gradient.
 
@@ -20,13 +21,19 @@ Returns a shading that fills a two-point radial gradient.
 static func radialGradient(_ gradient: AnyGradient, startCenter: CGPoint, startRadius: CGFloat, endCenter: CGPoint, endRadius: CGFloat, options: GraphicsContext.GradientOptions = GradientOptions()) -> GraphicsContext.Shading
 ```
 
+**Other overloads**:
+
+```swift
+static func radialGradient(_ gradient: Gradient, startCenter: CGPoint, startRadius: CGFloat, endCenter: CGPoint, endRadius: CGFloat, options: GraphicsContext.GradientOptions = GradientOptions()) -> GraphicsContext.Shading
+```
+
 #### Return Value
 
 A shading instance filled with a radial gradient.
 
 ## Parameters
 
-- `gradient`: An [`AnyGradient`](anygradient.md) instance that defines the colors of the gradient.
+- `gradient`: An [`AnyGradient`](../../anygradient.md) instance that defines the colors of the gradient.
 - `startCenter`: The strat point in the current user space on which SwiftUI centers the gradient.
 - `startRadius`: The distance from the center where the gradient starts.
 - `endCenter`: The end point in the current user space on which SwiftUI centers the gradient.

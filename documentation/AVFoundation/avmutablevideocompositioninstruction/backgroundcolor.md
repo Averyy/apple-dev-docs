@@ -1,22 +1,29 @@
 # backgroundColor
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The background color of the composition.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 13.1+
-- macOS 10.7+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 4.0+ - Deprecated in 26.0
+- iPadOS 4.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.7+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+
+> **Deprecated**: Use AVVideoCompositionInstruction.Configuration instead
 
 ## Declaration
 
 ```swift
 var backgroundColor: CGColor? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) CGColorRef backgroundColor;
 ```
 
 #### Discussion
@@ -27,11 +34,12 @@ If the background color is `NULL`, the video compositor uses a default backgroun
 
 ## See Also
 
-- [var layerInstructions: [AVVideoCompositionLayerInstruction]](avmutablevideocompositioninstruction/layerinstructions.md)
+### Configuring the instructions
+- [var layerInstructions: [AVVideoCompositionLayerInstruction]](./layerinstructions.md)
   Instructions that specify how to layer and compose video frames from source tracks.
-- [var timeRange: CMTimeRange](avmutablevideocompositioninstruction/timerange.md)
+- [var timeRange: CMTimeRange](./timerange.md)
   The time range to which the instruction applies.
-- [var enablePostProcessing: Bool](avmutablevideocompositioninstruction/enablepostprocessing.md)
+- [var enablePostProcessing: Bool](./enablepostprocessing.md)
   A Boolean value that indicates whether the instruction requires post processing.
 
 

@@ -1,7 +1,8 @@
 # breakpoint(receiveSubscription:receiveOutput:receiveCompletion:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Raises a debugger signal when a provided closure needs to stop the process in the debugger.
 
@@ -26,9 +27,9 @@ A publisher that raises a debugger signal when one of the provided closures retu
 
 #### Discussion
 
-Use [`breakpoint(receiveSubscription:receiveOutput:receiveCompletion:)`](publisher/breakpoint(receivesubscription:receiveoutput:receivecompletion:).md) to examine one or more stages of the subscribe/publish/completion process and stop in the debugger, based on conditions you specify. When any of the provided closures returns `true`, this operator raises the `SIGTRAP` signal to stop the process in the debugger. Otherwise, this publisher passes through values and completions as-is.
+Use [`breakpoint(receiveSubscription:receiveOutput:receiveCompletion:)`](./breakpoint%28receivesubscription,receiveoutput,receivecompletion%29.md) to examine one or more stages of the subscribe/publish/completion process and stop in the debugger, based on conditions you specify. When any of the provided closures returns `true`, this operator raises the `SIGTRAP` signal to stop the process in the debugger. Otherwise, this publisher passes through values and completions as-is.
 
-In the example below, a [`PassthroughSubject`](passthroughsubject.md) publishes strings to a breakpoint republisher. When the breakpoint receives the string “`DEBUGGER`”, it returns `true`, which stops the app in the debugger.
+In the example below, a [`PassthroughSubject`](../passthroughsubject.md) publishes strings to a breakpoint republisher. When the breakpoint receives the string “`DEBUGGER`”, it returns `true`, which stops the app in the debugger.
 
 ```swift
 let publisher = PassthroughSubject<String?, Never>()
@@ -53,11 +54,12 @@ publisher.send("DEBUGGER")
 
 ## See Also
 
-- [func breakpointOnError() -> Publishers.Breakpoint<Self>](publisher/breakpointonerror.md)
+### Debugging
+- [func breakpointOnError() -> Publishers.Breakpoint<Self>](./breakpointonerror%28%29.md)
   Raises a debugger signal upon receiving a failure.
-- [func handleEvents(receiveSubscription: ((any Subscription) -> Void)?, receiveOutput: ((Self.Output) -> Void)?, receiveCompletion: ((Subscribers.Completion<Self.Failure>) -> Void)?, receiveCancel: (() -> Void)?, receiveRequest: ((Subscribers.Demand) -> Void)?) -> Publishers.HandleEvents<Self>](publisher/handleevents(receivesubscription:receiveoutput:receivecompletion:receivecancel:receiverequest:).md)
+- [func handleEvents(receiveSubscription: ((any Subscription) -> Void)?, receiveOutput: ((Self.Output) -> Void)?, receiveCompletion: ((Subscribers.Completion<Self.Failure>) -> Void)?, receiveCancel: (() -> Void)?, receiveRequest: ((Subscribers.Demand) -> Void)?) -> Publishers.HandleEvents<Self>](./handleevents%28receivesubscription,receiveoutput,receivecompletion,receivecancel,receiverequest%29.md)
   Performs the specified closures when publisher events occur.
-- [func print(String, to: (any TextOutputStream)?) -> Publishers.Print<Self>](publisher/print(_:to:).md)
+- [func print(String, to: (any TextOutputStream)?) -> Publishers.Print<Self>](./print%28_,to%29.md)
   Prints log messages for all publishing events.
 
 

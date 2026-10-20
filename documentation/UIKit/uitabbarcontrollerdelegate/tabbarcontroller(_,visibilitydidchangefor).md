@@ -1,7 +1,8 @@
 # tabBarController(_:visibilityDidChangeFor:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate when editing has ended and the specified tabs have had their `isHidden` values changed by the user.
 
@@ -17,9 +18,13 @@ Notifies the delegate when editing has ended and the specified tabs have had the
 optional func tabBarController(_ tabBarController: UITabBarController, visibilityDidChangeFor tabs: [UITab])
 ```
 
+```objc
+- (void) tabBarController:(UITabBarController *) tabBarController visibilityDidChangeForTabs:(NSArray<UITab *> *) tabs;
+```
+
 ## Mentions
 
-- [Elevating your iPad app with a tab bar and sidebar](elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
+- [Elevating your iPad app with a tab bar and sidebar](../elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
 
 
 ---

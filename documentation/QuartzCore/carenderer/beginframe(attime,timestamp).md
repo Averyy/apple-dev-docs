@@ -1,7 +1,8 @@
 # beginFrame(atTime:timeStamp:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begin rendering a frame at the specified time.
 
@@ -19,6 +20,10 @@ Begin rendering a frame at the specified time.
 func beginFrame(atTime t: CFTimeInterval, timeStamp ts: UnsafeMutablePointer<CVTimeStamp>?)
 ```
 
+```objc
+- (void) beginFrameAtTime:(CFTimeInterval) t timeStamp:(CVTimeStamp *) ts;
+```
+
 ## Parameters
 
 - `t`: The layer time.
@@ -26,15 +31,16 @@ func beginFrame(atTime t: CFTimeInterval, timeStamp ts: UnsafeMutablePointer<CVT
 
 ## See Also
 
-- [func updateBounds() -> CGRect](carenderer/updatebounds.md)
+### Rendering a Frame
+- [func updateBounds() -> CGRect](./updatebounds%28%29.md)
   Returns the bounds of the update region that contains all pixels that will be rendered by the current frame.
-- [func addUpdate(CGRect)](carenderer/addupdate(_:).md)
+- [func addUpdate(CGRect)](./addupdate%28_%29.md)
   Adds the rectangle to the update region of the current frame.
-- [func render()](carenderer/render.md)
+- [func render()](./render%28%29.md)
   Render the update region of the current frame to the target context.
-- [func nextFrameTime() -> CFTimeInterval](carenderer/nextframetime.md)
+- [func nextFrameTime() -> CFTimeInterval](./nextframetime%28%29.md)
   Returns the time at which the next update should happen.
-- [func endFrame()](carenderer/endframe.md)
+- [func endFrame()](./endframe%28%29.md)
   Release any data associated with the current frame.
 
 

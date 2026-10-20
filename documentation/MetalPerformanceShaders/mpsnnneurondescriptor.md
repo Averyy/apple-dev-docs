@@ -1,7 +1,8 @@
 # MPSNNNeuronDescriptor
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that specifies properties used by a neuron kernel.
 
@@ -19,67 +20,72 @@ An object that specifies properties used by a neuron kernel.
 class MPSNNNeuronDescriptor
 ```
 
+```objc
+@interface MPSNNNeuronDescriptor : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var a: Float](mpsnnneurondescriptor/a.md)
-- [var b: Float](mpsnnneurondescriptor/b.md)
-- [var c: Float](mpsnnneurondescriptor/c.md)
-- [var data: Data?](mpsnnneurondescriptor/data.md)
-- [var neuronType: MPSCNNNeuronType](mpsnnneurondescriptor/neurontype.md)
+- [var a: Float](./mpsnnneurondescriptor/a.md)
+- [var b: Float](./mpsnnneurondescriptor/b.md)
+- [var c: Float](./mpsnnneurondescriptor/c.md)
+- [var data: Data?](./mpsnnneurondescriptor/data.md)
+- [var neuronType: MPSCNNNeuronType](./mpsnnneurondescriptor/neurontype.md)
 ### Type Methods
-- [class func cnnNeuronDescriptor(with: MPSCNNNeuronType) -> MPSNNNeuronDescriptor](mpsnnneurondescriptor/cnnneurondescriptor(with:).md)
-- [class func cnnNeuronDescriptor(with: MPSCNNNeuronType, a: Float) -> MPSNNNeuronDescriptor](mpsnnneurondescriptor/cnnneurondescriptor(with:a:).md)
-- [class func cnnNeuronDescriptor(with: MPSCNNNeuronType, a: Float, b: Float) -> MPSNNNeuronDescriptor](mpsnnneurondescriptor/cnnneurondescriptor(with:a:b:).md)
-- [class func cnnNeuronDescriptor(with: MPSCNNNeuronType, a: Float, b: Float, c: Float) -> MPSNNNeuronDescriptor](mpsnnneurondescriptor/cnnneurondescriptor(with:a:b:c:).md)
-- [class func cnnNeuronPReLUDescriptor(with: Data, noCopy: Bool) -> MPSNNNeuronDescriptor](mpsnnneurondescriptor/cnnneuronpreludescriptor(with:nocopy:).md)
+- [class func cnnNeuronDescriptor(with: MPSCNNNeuronType) -> MPSNNNeuronDescriptor](./mpsnnneurondescriptor/cnnneurondescriptor%28with%29.md)
+- [class func cnnNeuronDescriptor(with: MPSCNNNeuronType, a: Float) -> MPSNNNeuronDescriptor](./mpsnnneurondescriptor/cnnneurondescriptor%28with,a%29.md)
+- [class func cnnNeuronDescriptor(with: MPSCNNNeuronType, a: Float, b: Float) -> MPSNNNeuronDescriptor](./mpsnnneurondescriptor/cnnneurondescriptor%28with,a,b%29.md)
+- [class func cnnNeuronDescriptor(with: MPSCNNNeuronType, a: Float, b: Float, c: Float) -> MPSNNNeuronDescriptor](./mpsnnneurondescriptor/cnnneurondescriptor%28with,a,b,c%29.md)
+- [class func cnnNeuronPReLUDescriptor(with: Data, noCopy: Bool) -> MPSNNNeuronDescriptor](./mpsnnneurondescriptor/cnnneuronpreludescriptor%28with,nocopy%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSCNNNeuronAbsolute](mpscnnneuronabsolute.md)
+### Neuron Layers
+- [class MPSCNNNeuronAbsolute](./mpscnnneuronabsolute.md)
   An absolute neuron filter.
-- [class MPSCNNNeuronELU](mpscnnneuronelu.md)
+- [class MPSCNNNeuronELU](./mpscnnneuronelu.md)
   A parametric ELU neuron filter.
-- [class MPSCNNNeuronHardSigmoid](mpscnnneuronhardsigmoid.md)
+- [class MPSCNNNeuronHardSigmoid](./mpscnnneuronhardsigmoid.md)
   A hard sigmoid neuron filter.
-- [class MPSCNNNeuronLinear](mpscnnneuronlinear.md)
+- [class MPSCNNNeuronLinear](./mpscnnneuronlinear.md)
   A linear neuron filter.
-- [class MPSCNNNeuronPReLU](mpscnnneuronprelu.md)
+- [class MPSCNNNeuronPReLU](./mpscnnneuronprelu.md)
   A parametric ReLU (Rectified Linear Unit) neuron filter.
-- [class MPSCNNNeuronReLUN](mpscnnneuronrelun.md)
+- [class MPSCNNNeuronReLUN](./mpscnnneuronrelun.md)
   A ReLUN neuron filter.
-- [class MPSCNNNeuronReLU](mpscnnneuronrelu.md)
+- [class MPSCNNNeuronReLU](./mpscnnneuronrelu.md)
   A ReLU (Rectified Linear Unit) neuron filter.
-- [class MPSCNNNeuronSigmoid](mpscnnneuronsigmoid.md)
+- [class MPSCNNNeuronSigmoid](./mpscnnneuronsigmoid.md)
   A sigmoid neuron filter.
-- [class MPSCNNNeuronSoftPlus](mpscnnneuronsoftplus.md)
+- [class MPSCNNNeuronSoftPlus](./mpscnnneuronsoftplus.md)
   A parametric softplus neuron filter.
-- [class MPSCNNNeuronSoftSign](mpscnnneuronsoftsign.md)
+- [class MPSCNNNeuronSoftSign](./mpscnnneuronsoftsign.md)
   A softsign neuron filter.
-- [class MPSCNNNeuronTanH](mpscnnneurontanh.md)
+- [class MPSCNNNeuronTanH](./mpscnnneurontanh.md)
   A hyperbolic tangent neuron filter.
-- [class MPSCNNNeuron](mpscnnneuron.md)
+- [class MPSCNNNeuron](./mpscnnneuron.md)
   A filter that applies a neuron activation function.
-- [class MPSCNNNeuronExponential](mpscnnneuronexponential.md)
+- [class MPSCNNNeuronExponential](./mpscnnneuronexponential.md)
   An exponential neuron filter.
-- [class MPSCNNNeuronGradient](mpscnnneurongradient.md)
+- [class MPSCNNNeuronGradient](./mpscnnneurongradient.md)
   A gradient neuron filter.
-- [class MPSCNNNeuronLogarithm](mpscnnneuronlogarithm.md)
+- [class MPSCNNNeuronLogarithm](./mpscnnneuronlogarithm.md)
   A logarithm neuron filter.
 
 

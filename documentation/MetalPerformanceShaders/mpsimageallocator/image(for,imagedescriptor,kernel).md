@@ -2,6 +2,7 @@
 
 **Framework**: Metal Performance Shaders  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -18,9 +19,14 @@
 func image(for cmdBuf: any MTLCommandBuffer, imageDescriptor descriptor: MPSImageDescriptor, kernel: MPSKernel) -> MPSImage
 ```
 
+```objc
+- (MPSImage *) imageForCommandBuffer:(id<MTLCommandBuffer>) cmdBuf imageDescriptor:(MPSImageDescriptor *) descriptor kernel:(MPSKernel *) kernel;
+```
+
 ## See Also
 
-- [func imageBatch(for: any MTLCommandBuffer, imageDescriptor: MPSImageDescriptor, kernel: MPSKernel, count: Int) -> [MPSImage]](mpsimageallocator/imagebatch(for:imagedescriptor:kernel:count:).md)
+### Instance Methods
+- [func imageBatch(for: any MTLCommandBuffer, imageDescriptor: MPSImageDescriptor, kernel: MPSKernel, count: Int) -> [MPSImage]](./imagebatch%28for,imagedescriptor,kernel,count%29.md)
 
 
 ---

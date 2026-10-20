@@ -1,7 +1,8 @@
 # PerformanceEntry
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,17 +10,17 @@
 
 ## Declaration
 
-```swift
+```
 interface PerformanceEntry
 ```
 
 ## Topics
 
 ### Instance Properties
-- [duration](performanceentry/1634062-duration.md)
-- [entryType](performanceentry/1629024-entrytype.md)
-- [name](performanceentry/1634471-name.md)
-- [startTime](performanceentry/1629922-starttime.md)
+- [duration](./performanceentry/api-1634062-duration.md)
+- [entryType](./performanceentry/api-1629024-entrytype.md)
+- [name](./performanceentry/api-1634471-name.md)
+- [startTime](./performanceentry/api-1629922-starttime.md)
 
 
 ---

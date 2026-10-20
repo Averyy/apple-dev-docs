@@ -1,7 +1,8 @@
 # indexCount
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of indices to use for this part.
 
@@ -21,13 +22,14 @@ var indexCount: Int
 
 ## See Also
 
-- [var indexOffset: Int](lowlevelmesh/part/indexoffset.md)
+### Describing a low-level mesh part
+- [var indexOffset: Int](./indexoffset.md)
   The offset, in bytes, of the first index.
-- [var topology: MTLPrimitiveType](lowlevelmesh/part/topology.md)
+- [var topology: MTLPrimitiveType](./topology.md)
   The geometric primitive to use when rendering this part.
-- [var materialIndex: Int](lowlevelmesh/part/materialindex.md)
+- [var materialIndex: Int](./materialindex.md)
   The material index this part associates with.
-- [var bounds: BoundingBox](lowlevelmesh/part/bounds.md)
+- [var bounds: BoundingBox](./bounds.md)
   The model-space bounding box of this part.
 
 

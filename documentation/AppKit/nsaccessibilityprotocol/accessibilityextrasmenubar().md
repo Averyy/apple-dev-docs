@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the icon for the app’s menu bar extra.
@@ -17,27 +18,28 @@ func accessibilityExtrasMenuBar() -> Any?
 
 ## See Also
 
-- [func setAccessibilityExtrasMenuBar(Any?)](nsaccessibilityprotocol/setaccessibilityextrasmenubar(_:).md)
+### Managing apps
+- [func setAccessibilityExtrasMenuBar(Any?)](./setaccessibilityextrasmenubar%28_%29.md)
   Sets the icon for the app’s menu bar extra.
-- [func isAccessibilityFrontmost() -> Bool](nsaccessibilityprotocol/isaccessibilityfrontmost.md)
+- [func isAccessibilityFrontmost() -> Bool](./isaccessibilityfrontmost%28%29.md)
   Returns a Boolean value that determines whether the app is the frontmost app.
-- [func setAccessibilityFrontmost(Bool)](nsaccessibilityprotocol/setaccessibilityfrontmost(_:).md)
+- [func setAccessibilityFrontmost(Bool)](./setaccessibilityfrontmost%28_%29.md)
   Sets a Boolean value that determines whether the app is the frontmost app.
-- [func isAccessibilityHidden() -> Bool](nsaccessibilityprotocol/isaccessibilityhidden.md)
+- [func isAccessibilityHidden() -> Bool](./isaccessibilityhidden%28%29.md)
   Returns a Boolean value that determines whether the app is in a hidden state.
-- [func setAccessibilityHidden(Bool)](nsaccessibilityprotocol/setaccessibilityhidden(_:).md)
+- [func setAccessibilityHidden(Bool)](./setaccessibilityhidden%28_%29.md)
   Sets a Boolean value that determines whether the app is in a hidden state.
-- [func accessibilityMainWindow() -> Any?](nsaccessibilityprotocol/accessibilitymainwindow.md)
+- [func accessibilityMainWindow() -> Any?](./accessibilitymainwindow%28%29.md)
   Returns the app’s main window.
-- [func setAccessibilityMainWindow(Any?)](nsaccessibilityprotocol/setaccessibilitymainwindow(_:).md)
+- [func setAccessibilityMainWindow(Any?)](./setaccessibilitymainwindow%28_%29.md)
   Sets the app’s main window.
-- [func accessibilityMenuBar() -> Any?](nsaccessibilityprotocol/accessibilitymenubar.md)
+- [func accessibilityMenuBar() -> Any?](./accessibilitymenubar%28%29.md)
   Returns the app’s menu bar.
-- [func setAccessibilityMenuBar(Any?)](nsaccessibilityprotocol/setaccessibilitymenubar(_:).md)
+- [func setAccessibilityMenuBar(Any?)](./setaccessibilitymenubar%28_%29.md)
   Sets the app’s menu bar.
-- [func accessibilityWindows() -> [Any]?](nsaccessibilityprotocol/accessibilitywindows.md)
+- [func accessibilityWindows() -> [Any]?](./accessibilitywindows%28%29.md)
   Returns an array that contains all the app’s windows.
-- [func setAccessibilityWindows([Any]?)](nsaccessibilityprotocol/setaccessibilitywindows(_:).md)
+- [func setAccessibilityWindows([Any]?)](./setaccessibilitywindows%28_%29.md)
   Sets the array that contains all the app’s windows.
 
 

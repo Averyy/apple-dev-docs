@@ -1,7 +1,8 @@
 # navigationType
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of action that triggered the navigation.
 

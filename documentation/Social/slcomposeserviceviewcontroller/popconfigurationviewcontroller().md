@@ -1,7 +1,8 @@
 # popConfigurationViewController()
 
 **Framework**: Social  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dismisses the current configuration view controller.
 
@@ -16,13 +17,18 @@ Dismisses the current configuration view controller.
 func popConfigurationViewController()
 ```
 
+```objc
+- (void) popConfigurationViewController;
+```
+
 #### Discussion
 
 You can call this method to dismiss the configuration view controller in response to a user action.
 
 ## See Also
 
-- [func pushConfigurationViewController(UIViewController!)](slcomposeserviceviewcontroller/pushconfigurationviewcontroller(_:).md)
+### Presenting the View Controller
+- [func pushConfigurationViewController(UIViewController!)](./pushconfigurationviewcontroller%28_%29.md)
   Presents a configuration view controller that lets the user configure the post.
 
 

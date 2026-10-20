@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance of the expired DNS behavior structure.
 
@@ -26,7 +27,8 @@ init(_ rawValue: UInt32)
 
 ## See Also
 
-- [init(rawValue: UInt32)](nw_parameters_expired_dns_behavior_t/init(rawvalue:).md)
+### Creating an expired DNS behavior instance
+- [init(rawValue: UInt32)](./init%28rawvalue%29.md)
   Creates an instance of the expired DNS behavior structure.
 
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Natural Language  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an embedding key with the given string as its raw value.
 
@@ -30,7 +31,8 @@ An embedding key instance if the raw value is valid, or `nil` if the value doesn
 
 ## See Also
 
-- [init(String)](nlcontextualembeddingkey/init(_:).md)
+### Creating embedding keys
+- [init(String)](./init%28_%29.md)
   Creates an embedding key with the given string.
 
 

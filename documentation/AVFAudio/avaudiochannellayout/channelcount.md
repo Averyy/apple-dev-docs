@@ -1,7 +1,8 @@
 # channelCount
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of channels of audio data.
 
@@ -20,15 +21,20 @@ The number of channels of audio data.
 var channelCount: AVAudioChannelCount { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVAudioChannelCount channelCount;
+```
+
 ## See Also
 
-- [typealias AVAudioChannelCount](avaudiochannelcount.md)
+### Getting audio channel layout properties
+- [typealias AVAudioChannelCount](../avaudiochannelcount.md)
   The number of audio channels.
-- [var layout: UnsafePointer<AudioChannelLayout>](avaudiochannellayout/layout.md)
+- [var layout: UnsafePointer<AudioChannelLayout>](./layout.md)
   The underlying audio channel layout.
-- [var layoutTag: AudioChannelLayoutTag](avaudiochannellayout/layouttag.md)
+- [var layoutTag: AudioChannelLayoutTag](./layouttag.md)
   The audio channel’s underlying layout tag.
-- [func isEqual(Any) -> Bool](avaudiochannellayout/isequal(_:).md)
+- [func isEqual(Any) -> Bool](./isequal%28_%29.md)
   Indicates whether another audio channel layout is exactly equal to the current layout.
 
 

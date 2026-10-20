@@ -1,7 +1,8 @@
 # init(delegate:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a drop interaction object with a custom delegate object.
 
@@ -17,13 +18,17 @@ Initializes a drop interaction object with a custom delegate object.
 init(delegate: any UIDropInteractionDelegate)
 ```
 
+```objc
+- (instancetype) initWithDelegate:(id<UIDropInteractionDelegate>) delegate;
+```
+
 #### Return Value
 
 A drop interaction that has a delegate.
 
 ## Parameters
 
-- `delegate`: An object that conforms to the [`UIDropInteractionDelegate`](uidropinteractiondelegate.md) protocol.
+- `delegate`: An object that conforms to the [`UIDropInteractionDelegate`](../uidropinteractiondelegate.md) protocol.
 
 
 ---

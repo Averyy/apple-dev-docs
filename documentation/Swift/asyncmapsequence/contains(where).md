@@ -1,7 +1,8 @@
 # contains(where:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the asynchronous sequence contains an element that satisfies the given predicate.
 

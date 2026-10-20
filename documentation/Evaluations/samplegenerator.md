@@ -1,7 +1,8 @@
 # SampleGenerator
 
 **Framework**: Evaluations  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An actor that generates evaluation samples using a language model.
 
@@ -22,54 +23,55 @@ actor SampleGenerator<SampleType> where SampleType : ModelSampleProtocol
 
 ## Mentions
 
-- [Designing datasets to test your feature](designing-evaluation-datasets.md)
-- [Generating synthetic datasets](generating-synthetic-evaluation-datasets.md)
-- [Designing effective evaluations](designing-effective-evaluations.md)
+- [Designing datasets to test your feature](./designing-evaluation-datasets.md)
+- [Generating synthetic datasets](./generating-synthetic-evaluation-datasets.md)
+- [Designing effective evaluations](./designing-effective-evaluations.md)
 
 #### Overview
 
-To produce new samples, create an instance, configure its properties, and call [`run()`](samplegenerator/run().md). After iteration completes, access [`samples`](samplegenerator/samples.md) for the full dataset, or [`invalidSamples`](samplegenerator/invalidsamples.md) for any samples the validator rejected.
+To produce new samples, create an instance, configure its properties, and call [`run()`](./samplegenerator/run%28%29.md). After iteration completes, access [`samples`](./samplegenerator/samples.md) for the full dataset, or [`invalidSamples`](./samplegenerator/invalidsamples.md) for any samples the validator rejected.
 
 ## Topics
 
 ### Creating a generator
-- [init(Prompt, samples: [SampleType], targetCount: Int, sessionProvider: (() -> LanguageModelSession)?, samplingStrategy: SampleGenerator<SampleType>.SamplingStrategy?, validator: ((SampleType) async throws -> Bool)?)](samplegenerator/init(_:samples:targetcount:sessionprovider:samplingstrategy:validator:)-2804x.md)
+- [init(Prompt, samples: [SampleType], targetCount: Int, sessionProvider: (() -> LanguageModelSession)?, samplingStrategy: SampleGenerator<SampleType>.SamplingStrategy?, validator: ((SampleType) async throws -> Bool)?)](./samplegenerator/init%28_,samples,targetcount,sessionprovider,samplingstrategy,validator%29-2804x.md)
   Creates a generator for custom, generable evaluation samples.
-- [init<T>(Prompt, samples: [SampleType], targetCount: Int, sessionProvider: (() -> LanguageModelSession)?, samplingStrategy: SampleGenerator<SampleType>.SamplingStrategy?, validator: ((SampleType) async throws -> Bool)?)](samplegenerator/init(_:samples:targetcount:sessionprovider:samplingstrategy:validator:)-8t01x.md)
+- [init<T>(Prompt, samples: [SampleType], targetCount: Int, sessionProvider: (() -> LanguageModelSession)?, samplingStrategy: SampleGenerator<SampleType>.SamplingStrategy?, validator: ((SampleType) async throws -> Bool)?)](./samplegenerator/init%28_,samples,targetcount,sessionprovider,samplingstrategy,validator%29-8t01x.md)
   Creates a generator for sample values with a generable-expected value type.
 ### Configuring generation
-- [var samplingStrategy: SampleGenerator<SampleType>.SamplingStrategy?](samplegenerator/samplingstrategy-swift.property.md)
+- [var samplingStrategy: SampleGenerator<SampleType>.SamplingStrategy?](./samplegenerator/samplingstrategy-swift.property.md)
   The strategy for selecting existing samples as examples in the prompt.
-- [var validator: ((SampleType) async throws -> Bool)?](samplegenerator/validator.md)
+- [var validator: ((SampleType) async throws -> Bool)?](./samplegenerator/validator.md)
   An optional closure that decides whether a generated sample is valid.
-- [SampleGenerator.SamplingStrategy](samplegenerator/samplingstrategy-swift.enum.md)
+- [SampleGenerator.SamplingStrategy](./samplegenerator/samplingstrategy-swift.enum.md)
   The values that define how the generator selects existing samples as examples in the generation prompt.
 ### Running generation
 - [func run() -> some AsyncSequence<SampleType, any Error>
-](samplegenerator/run.md)
+](./samplegenerator/run%28%29.md)
   Runs the generator and returns a stream of newly synthesized samples.
 ### Accessing results
-- [var samples: [SampleType]](samplegenerator/samples.md)
+- [var samples: [SampleType]](./samplegenerator/samples.md)
   All initial and generated samples from the most recent run.
-- [var invalidSamples: [SampleType]](samplegenerator/invalidsamples.md)
+- [var invalidSamples: [SampleType]](./samplegenerator/invalidsamples.md)
   Samples that the validator rejected during the most recent run.
 
 ## Relationships
 
 ### Conforms To
-- [Actor](../swift/actor.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Actor](../Swift/actor.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Generating synthetic datasets](generating-synthetic-evaluation-datasets.md)
+### Datasets
+- [Generating synthetic datasets](./generating-synthetic-evaluation-datasets.md)
   Expand a small set of manually written evaluation samples into a larger dataset.
-- [Designing datasets to test your feature](designing-evaluation-datasets.md)
+- [Designing datasets to test your feature](./designing-evaluation-datasets.md)
   Build categorized test datasets that reflect the full range of real-world use of your feature.
-- [struct ModelSample](modelsample.md)
+- [struct ModelSample](./modelsample.md)
   A general-purpose language model evaluation sample.
-- [protocol Loader](loader.md)
+- [protocol Loader](./loader.md)
   A protocol for types that supply a dataset for evaluation.
 
 

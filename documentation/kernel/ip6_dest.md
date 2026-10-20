@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ip6_dest {
     ...
 };
@@ -17,8 +17,8 @@ struct ip6_dest {
 ## Topics
 
 ### Instance Properties
-- [ip6d_len](ip6_dest/3754483-ip6d_len.md)
-- [ip6d_nxt](ip6_dest/3754484-ip6d_nxt.md)
+- [ip6d_len](./ip6_dest/api-3754483-ip6d_len.md)
+- [ip6d_nxt](./ip6_dest/api-3754484-ip6d_nxt.md)
 
 
 ---

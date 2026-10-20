@@ -1,7 +1,8 @@
 # brightnessDidChangeNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that posts when a screen’s brightness changes.
 
@@ -9,7 +10,7 @@ A notification that posts when a screen’s brightness changes.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 
 ## Declaration
 
@@ -18,17 +19,22 @@ nonisolated
 class let brightnessDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UIScreenBrightnessDidChangeNotification;
+```
+
 #### Discussion
 
-The object of the notification is the [`UIScreen`](uiscreen.md) object whose [`brightness`](uiscreen/brightness.md) property changed. There is no `userInfo` dictionary.
+The object of the notification is the [`UIScreen`](../uiscreen.md) object whose [`brightness`](./brightness.md) property changed. There is no `userInfo` dictionary.
 
 ## See Also
 
-- [class let modeDidChangeNotification: NSNotification.Name](uiscreen/modedidchangenotification.md)
+### Notifications
+- [class let modeDidChangeNotification: NSNotification.Name](./modedidchangenotification.md)
   A notification that posts when a screen’s mode changes.
-- [class let capturedDidChangeNotification: NSNotification.Name](uiscreen/captureddidchangenotification.md)
+- [class let capturedDidChangeNotification: NSNotification.Name](./captureddidchangenotification.md)
   A notification that posts when the capture status of a screen changes.
-- [class let referenceDisplayModeStatusDidChangeNotification: NSNotification.Name](uiscreen/referencedisplaymodestatusdidchangenotification.md)
+- [class let referenceDisplayModeStatusDidChangeNotification: NSNotification.Name](./referencedisplaymodestatusdidchangenotification.md)
   A notification that posts when there’s a change to a screen’s reference display mode status.
 
 

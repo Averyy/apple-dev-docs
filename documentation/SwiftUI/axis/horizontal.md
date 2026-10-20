@@ -1,7 +1,8 @@
 # Axis.horizontal
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The horizontal dimension.
 
@@ -22,7 +23,8 @@ case horizontal
 
 ## See Also
 
-- [Axis.vertical](axis/vertical.md)
+### Getting axes
+- [Axis.vertical](./vertical.md)
   The vertical dimension.
 
 

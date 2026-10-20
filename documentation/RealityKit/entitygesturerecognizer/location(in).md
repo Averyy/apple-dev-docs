@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the unprojected location of the gesture represented by the receiver in the space of the given entity.
@@ -30,9 +31,16 @@ The location is typically the result of a centroid of touches for a gesture, unp
 
 - `entity`: An entity in whose space the location is computed. A `nil` entity will result in world space.
 
+## Default Implementations
+
+### EntityGestureRecognizer Implementations
+- [func location(in: Entity?) -> SIMD3<Float>?](./location%28in%29-2aecy.md)
+  Returns the unprojected location of the gesture represented by the receiver in the space of the given entity.
+
 ## See Also
 
-- [var entity: (any HasCollision)?](entitygesturerecognizer/entity.md)
+### Using the gesture recognizer
+- [var entity: (any HasCollision)?](./entity.md)
   The entity the receiver is associated with
 
 

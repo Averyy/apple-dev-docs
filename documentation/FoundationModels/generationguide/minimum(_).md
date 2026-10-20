@@ -1,7 +1,8 @@
 # minimum(_:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Enforces a minimum value.
 
@@ -17,6 +18,22 @@ Enforces a minimum value.
 
 ```swift
 static func minimum(_ value: Decimal) -> GenerationGuide<Decimal>
+```
+
+Available when `Value` is `Decimal`.
+
+**Other overloads**:
+
+```swift
+static func minimum(_ value: Double) -> GenerationGuide<Double>
+```
+
+```swift
+static func minimum(_ value: Float) -> GenerationGuide<Float>
+```
+
+```swift
+static func minimum(_ value: Int) -> GenerationGuide<Int>
 ```
 
 #### Discussion
@@ -36,7 +53,8 @@ struct GameCharacter {
 
 ## See Also
 
-- [static func minimumCount<Element>(Int) -> GenerationGuide<[Element]>](generationguide/minimumcount(_:).md)
+### Getting the minimum value
+- [static func minimumCount<Element>(Int) -> GenerationGuide<[Element]>](./minimumcount%28_%29.md)
   Enforces a minimum number of elements in the array.
 
 

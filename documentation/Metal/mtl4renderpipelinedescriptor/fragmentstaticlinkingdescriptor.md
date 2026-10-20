@@ -1,7 +1,8 @@
 # fragmentStaticLinkingDescriptor
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides static linking information for the fragment stage of the render pipeline.
 
@@ -18,6 +19,10 @@ Provides static linking information for the fragment stage of the render pipelin
 ```swift
 @NSCopying
 var fragmentStaticLinkingDescriptor: MTL4StaticLinkingDescriptor! { get set }
+```
+
+```objc
+@property (nonatomic, copy, null_resettable) MTL4StaticLinkingDescriptor * fragmentStaticLinkingDescriptor;
 ```
 
 #### Discussion

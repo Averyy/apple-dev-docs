@@ -1,7 +1,8 @@
 # NetworkVPNVPNPluginVendorConfigObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The vendor-specific configuration dictionary, which the system reads only when `SubType` has a value.
 
@@ -15,7 +16,7 @@ The vendor-specific configuration dictionary, which the system reads only when `
 
 ## Declaration
 
-```swift
+```
 object NetworkVPNVPNPluginVendorConfigObject
 ```
 
@@ -28,19 +29,20 @@ object NetworkVPNVPNPluginVendorConfigObject
 
 ## See Also
 
-- [object NetworkVPNVPNPluginAuthenticationObject](networkvpnvpnpluginauthenticationobject.md)
+### Objects
+- [object NetworkVPNVPNPluginAuthenticationObject](./networkvpnvpnpluginauthenticationobject.md)
   Settings that control authentication.
-- [object NetworkVPNVPNPluginDNSObject](networkvpnvpnplugindnsobject.md)
+- [object NetworkVPNVPNPluginDNSObject](./networkvpnvpnplugindnsobject.md)
   A dictionary to use for all VPN types.
-- [object NetworkVPNVPNPluginIdleObject](networkvpnvpnpluginidleobject.md)
+- [object NetworkVPNVPNPluginIdleObject](./networkvpnvpnpluginidleobject.md)
   Specifies details about how the system handles idle VPN connections.
-- [object NetworkVPNVPNPluginNetworkRoutingObject](networkvpnvpnpluginnetworkroutingobject.md)
+- [object NetworkVPNVPNPluginNetworkRoutingObject](./networkvpnvpnpluginnetworkroutingobject.md)
   Specifies details about how the VPN routes different types of network traffic.
-- [object NetworkVPNVPNPluginOnDemandObject](networkvpnvpnpluginondemandobject.md)
+- [object NetworkVPNVPNPluginOnDemandObject](./networkvpnvpnpluginondemandobject.md)
   Specifies details about how the system controls on-demand VPN.
-- [object NetworkVPNVPNPluginProviderObject](networkvpnvpnpluginproviderobject.md)
+- [object NetworkVPNVPNPluginProviderObject](./networkvpnvpnpluginproviderobject.md)
   Specifies details about the provider.
-- [object NetworkVPNVPNPluginProxiesObject](networkvpnvpnpluginproxiesobject.md)
+- [object NetworkVPNVPNPluginProxiesObject](./networkvpnvpnpluginproxiesobject.md)
   The dictionary to use to configure `Proxies` for use with `VPN`.
 
 

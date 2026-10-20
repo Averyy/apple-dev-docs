@@ -1,7 +1,8 @@
 # semibold
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,14 +21,15 @@ static let semibold: Font.Weight
 
 ## See Also
 
-- [static let black: Font.Weight](font/weight/black.md)
-- [static let bold: Font.Weight](font/weight/bold.md)
-- [static let heavy: Font.Weight](font/weight/heavy.md)
-- [static let light: Font.Weight](font/weight/light.md)
-- [static let medium: Font.Weight](font/weight/medium.md)
-- [static let regular: Font.Weight](font/weight/regular.md)
-- [static let thin: Font.Weight](font/weight/thin.md)
-- [static let ultraLight: Font.Weight](font/weight/ultralight.md)
+### Getting font weights
+- [static let black: Font.Weight](./black.md)
+- [static let bold: Font.Weight](./bold.md)
+- [static let heavy: Font.Weight](./heavy.md)
+- [static let light: Font.Weight](./light.md)
+- [static let medium: Font.Weight](./medium.md)
+- [static let regular: Font.Weight](./regular.md)
+- [static let thin: Font.Weight](./thin.md)
+- [static let ultraLight: Font.Weight](./ultralight.md)
 
 
 ---

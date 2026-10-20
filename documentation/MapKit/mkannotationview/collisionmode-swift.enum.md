@@ -1,7 +1,8 @@
 # MKAnnotationView.CollisionMode
 
 **Framework**: MapKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicates how to interpret the collision frame rectangle of an annotation view.
 
@@ -19,37 +20,42 @@ Constants that indicates how to interpret the collision frame rectangle of an an
 enum CollisionMode
 ```
 
+```c
+enum MKAnnotationViewCollisionMode : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MKAnnotationView.CollisionMode.rectangle](mkannotationview/collisionmode-swift.enum/rectangle.md)
+- [MKAnnotationView.CollisionMode.rectangle](./collisionmode-swift.enum/rectangle.md)
   A constant that indicates that the annotation view uses the full collision frame rectangle for detecting collisions.
-- [MKAnnotationView.CollisionMode.circle](mkannotationview/collisionmode-swift.enum/circle.md)
+- [MKAnnotationView.CollisionMode.circle](./collisionmode-swift.enum/circle.md)
   A constant that indicates that the annotation view uses an inscribed circle in the collision frame rectangle to determine collisions.
-- [MKAnnotationView.CollisionMode.none](mkannotationview/collisionmode-swift.enum/none.md)
+- [MKAnnotationView.CollisionMode.none](./collisionmode-swift.enum/none.md)
   A constant indicating that collisions can’t occur.
-- [MKAnnotationView.CollisionMode.rectangle](mkannotationview/collisionmode-swift.enum/rectangle.md)
+- [MKAnnotationView.CollisionMode.rectangle](./collisionmode-swift.enum/rectangle.md)
   A constant that indicates that the annotation view uses the full collision frame rectangle for detecting collisions.
-- [MKAnnotationView.CollisionMode.circle](mkannotationview/collisionmode-swift.enum/circle.md)
+- [MKAnnotationView.CollisionMode.circle](./collisionmode-swift.enum/circle.md)
   A constant that indicates that the annotation view uses an inscribed circle in the collision frame rectangle to determine collisions.
-- [MKAnnotationView.CollisionMode.none](mkannotationview/collisionmode-swift.enum/none.md)
+- [MKAnnotationView.CollisionMode.none](./collisionmode-swift.enum/none.md)
   A constant indicating that collisions can’t occur.
 ### Initializers
-- [init?(rawValue: Int)](mkannotationview/collisionmode-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./collisionmode-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var collisionMode: MKAnnotationView.CollisionMode](mkannotationview/collisionmode-swift.property.md)
+### Managing collisions between annotation views
+- [var collisionMode: MKAnnotationView.CollisionMode](./collisionmode-swift.property.md)
   The collision mode to use when interpreting the collision frame rectangle.
 
 

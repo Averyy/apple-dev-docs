@@ -1,7 +1,8 @@
 # options
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Options for how to handle notifications of this type.
 
@@ -19,9 +20,22 @@ Options for how to handle notifications of this type.
 var options: UNNotificationCategoryOptions { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly) UNNotificationCategoryOptions options;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) UNNotificationCategoryOptions options;
+```
+
 ## See Also
 
-- [struct UNNotificationCategoryOptions](unnotificationcategoryoptions.md)
+### Getting the Options
+- [struct UNNotificationCategoryOptions](../unnotificationcategoryoptions.md)
   Constants indicating how to handle notifications associated with this category.
 
 

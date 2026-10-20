@@ -1,7 +1,8 @@
 # LandCover
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Prioritizes loading of the map land cover and borders, without POIs or labels.
 
@@ -10,7 +11,7 @@ Prioritizes loading of the map land cover and borders, without POIs or labels.
 
 ## Declaration
 
-```swift
+```
 readonly LandCover: "LandCover";
 ```
 
@@ -20,9 +21,10 @@ This value is the default when you don’t provide a prioritization.
 
 ## See Also
 
-- [PointsOfInterest](maploadpriority/pointsofinterest.md)
+### Prioritizations
+- [PointsOfInterest](./pointsofinterest.md)
   Prioritizes loading of the full standard map, with rendered POIs.
-- [None](maploadpriority/none.md)
+- [None](./none.md)
   Signifies no preference for what to prioritize when loading the map.
 
 

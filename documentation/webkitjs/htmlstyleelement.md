@@ -1,7 +1,8 @@
 # HTMLStyleElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,23 +10,23 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLStyleElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [disabled](htmlstyleelement/1630744-disabled.md)
-- [media](htmlstyleelement/1634491-media.md)
-- [nonce](htmlstyleelement/1777764-nonce.md)
-- [sheet](htmlstyleelement/1631045-sheet.md)
-- [type](htmlstyleelement/1629381-type.md)
+- [disabled](./htmlstyleelement/api-1630744-disabled.md)
+- [media](./htmlstyleelement/api-1634491-media.md)
+- [nonce](./htmlstyleelement/api-1777764-nonce.md)
+- [sheet](./htmlstyleelement/api-1631045-sheet.md)
+- [type](./htmlstyleelement/api-1629381-type.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

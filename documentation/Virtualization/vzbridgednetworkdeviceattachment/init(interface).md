@@ -1,7 +1,8 @@
 # init(interface:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the attachment from a bridged network interface object.
 
@@ -14,13 +15,17 @@ Creates the attachment from a bridged network interface object.
 init(interface: VZBridgedNetworkInterface)
 ```
 
+```objc
+- (instancetype) initWithInterface:(VZBridgedNetworkInterface *) interface;
+```
+
 #### Return Value
 
 An attachment object for the specified network interface.
 
 ## Parameters
 
-- `interface`: An existing network interface of the host computer. Get a list of available interfaces from the [`networkInterfaces`](vzbridgednetworkinterface/networkinterfaces.md) property of [`VZBridgedNetworkInterface`](vzbridgednetworkinterface.md).
+- `interface`: An existing network interface of the host computer. Get a list of available interfaces from the [`networkInterfaces`](../vzbridgednetworkinterface/networkinterfaces.md) property of [`VZBridgedNetworkInterface`](../vzbridgednetworkinterface.md).
 
 
 ---

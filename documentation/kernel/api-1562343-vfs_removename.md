@@ -1,7 +1,8 @@
 # vfs_removename
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Deprecated
 
@@ -10,7 +11,7 @@ Deprecated
 
 ## Declaration
 
-```swift
+```c
 int vfs_removename(const char *name);
 ```
 

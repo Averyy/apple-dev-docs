@@ -1,6 +1,7 @@
 # Configuring a source app
 
-**Framework**: StoreKit
+**Framework**: StoreKit  
+**Role**: Article
 
 Set up a source app to participate in ad campaigns.
 
@@ -12,10 +13,10 @@ Only ads from ad networks that have an entry in the app’s `Info.plist` file ar
 
 1. Select `Info.plist` in the Project navigator in Xcode.
 2. Click the Add button (+) beside a key in the property list editor and press Return.
-3. Type the key name [`SKAdNetworkItems`](https://developer.apple.com/documentation/bundleresources/information-property-list/skadnetworkitems).
+3. Type the key name [`SKAdNetworkItems`](../BundleResources/information-property-list/skadnetworkitems.md).
 4. Choose Array from the pop-up menu in the Type column.
 
-Create an array that contains one dictionary for each allowed ad network, using the single key [`SKAdNetworkIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/skadnetworkitems/skadnetworkidentifier). The string value for the key is the ad network ID.
+Create an array that contains one dictionary for each allowed ad network, using the single key [`SKAdNetworkIdentifier`](../BundleResources/information-property-list/skadnetworkitems/skadnetworkidentifier.md). The string value for the key is the ad network ID.
 
 > ❗ **Important**:  Lowercase the ad network ID string; otherwise, the system doesn’t recognize it as valid.
 
@@ -34,17 +35,18 @@ The following example shows an array with two dictionaries that represent the ex
 </array>
 ```
 
-For more information about property lists, see [`Edit property lists`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev3f399a2a6).
+For more information about property lists, see [Edit property lists](https://help.apple.com/xcode/mac/current/#/dev3f399a2a6).
 
 ## See Also
 
-- [Registering an ad network](registering-an-ad-network.md)
+### Registering ad networks and configuring apps
+- [Registering an ad network](./registering-an-ad-network.md)
   Use the install-validation APIs for your ad campaigns after registering your ad network with Apple.
-- [Configuring an advertised app](configuring-an-advertised-app.md)
+- [Configuring an advertised app](./configuring-an-advertised-app.md)
   Prepare an advertised app to participate in ad campaigns.
-- [SKAdNetworkItems](../bundleresources/information-property-list/skadnetworkitems.md)
+- [SKAdNetworkItems](../BundleResources/information-property-list/skadnetworkitems.md)
   An array of dictionaries containing a list of ad network IDs.
-- [NSAdvertisingAttributionReportEndpoint](../bundleresources/information-property-list/nsadvertisingattributionreportendpoint.md)
+- [NSAdvertisingAttributionReportEndpoint](../BundleResources/information-property-list/nsadvertisingattributionreportendpoint.md)
   The URL where Private Click Measurement and SKAdNetwork send attribution information.
 
 

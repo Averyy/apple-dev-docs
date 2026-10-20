@@ -1,7 +1,8 @@
 # HIDDeviceClient.UnsafeProperty
 
 **Framework**: Core HID  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A wrapper around an object to facilitate working with subscripts.
 
@@ -21,14 +22,14 @@ Note that this is unchecked Sendable, and therefore unsafe. The contained object
 ## Topics
 
 ### Instance Properties
-- [let unsafeObject: AnyObject](hiddeviceclient/unsafeproperty/unsafeobject.md)
+- [let unsafeObject: AnyObject](./unsafeproperty/unsafeobject.md)
   An object may not be safe to use concurrently.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

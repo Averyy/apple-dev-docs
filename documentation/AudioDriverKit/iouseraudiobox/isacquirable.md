@@ -1,7 +1,8 @@
 # IsAcquirable
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates the box’s acquirabilty state.
 
@@ -10,7 +11,7 @@ Returns a Boolean value that indicates the box’s acquirabilty state.
 
 ## Declaration
 
-```swift
+```c
 bool IsAcquirable();
 ```
 
@@ -24,17 +25,18 @@ This method synchronizes by using the work queue created by the object.
 
 ## See Also
 
-- [HandleChangeAcquireBox](iouseraudiobox/handlechangeacquirebox.md)
+### Managing Acquirability
+- [HandleChangeAcquireBox](./handlechangeacquirebox.md)
   Informs the box of a change to its acquisition state.
-- [SetIsAcquired](iouseraudiobox/setisacquired.md)
+- [SetIsAcquired](./setisacquired.md)
   Set the box’s acquisition state.
-- [IsAcquired](iouseraudiobox/isacquired.md)
+- [IsAcquired](./isacquired.md)
   Returns a Boolean value that indicates the box’s acquisition state.
-- [SetIsAcquirable](iouseraudiobox/setisacquirable.md)
+- [SetIsAcquirable](./setisacquirable.md)
   Set the box’s acquirability state.
-- [SetAcquisitionFailure](iouseraudiobox/setacquisitionfailure.md)
+- [SetAcquisitionFailure](./setacquisitionfailure.md)
   Sets the error code to return when box acquisition fails.
-- [GetAcquisitionFailure](iouseraudiobox/getacquisitionfailure.md)
+- [GetAcquisitionFailure](./getacquisitionfailure.md)
   Returns the error code for use when box acquisition fails.
 
 

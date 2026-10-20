@@ -1,18 +1,19 @@
 # mbuf_pulldown
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 errno_t mbuf_pulldown(mbuf_t src, size_t *offset, size_t length, mbuf_t *location);
 ```
 
-#### Return_value
+#### Return Value
 
 0 upon success otherwise the errno error.
 

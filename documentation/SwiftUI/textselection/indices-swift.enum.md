@@ -1,7 +1,8 @@
 # TextSelection.Indices
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The indices of the current selection.
 
@@ -23,16 +24,16 @@ enum Indices
 ## Topics
 
 ### Enumeration Cases
-- [case multiSelection(RangeSet<String.Index>)](textselection/indices-swift.enum/multiselection(_:).md)
+- [case multiSelection(RangeSet<String.Index>)](./indices-swift.enum/multiselection%28_%29.md)
   The range-set of the selections.
-- [TextSelection.Indices.selection(_:)](textselection/indices-swift.enum/selection(_:).md)
+- [TextSelection.Indices.selection(_:)](./indices-swift.enum/selection%28_%29.md)
   The range of the single selection. This may also an represent insertion points if `range.lowerBound == range.upperBound`.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

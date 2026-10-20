@@ -1,7 +1,8 @@
 # init(configuration:)
 
 **Framework**: Game Controller  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new virtual controller using the configuration you specify.
 
@@ -16,13 +17,18 @@ Creates a new virtual controller using the configuration you specify.
 init(configuration: GCVirtualController.Configuration)
 ```
 
+```objc
+- (instancetype) initWithConfiguration:(GCVirtualControllerConfiguration *) configuration;
+```
+
 ## Parameters
 
 - `configuration`: The configuration for the new virtual controller.
 
 ## See Also
 
-- [GCVirtualController.Configuration](gcvirtualcontroller/configuration.md)
+### Creating virtual controllers
+- [GCVirtualController.Configuration](./configuration.md)
   The configuration of a virtual controller.
 
 

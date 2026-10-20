@@ -1,7 +1,8 @@
 # UITextDropProposal.ProgressMode
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The text drop progress styles for user-visible progress indication.
 
@@ -17,35 +18,40 @@ The text drop progress styles for user-visible progress indication.
 enum ProgressMode
 ```
 
+```c
+enum UITextDropProgressMode : NSUInteger;
+```
+
 ## Topics
 
 ### Progress modes
-- [UITextDropProposal.ProgressMode.custom](uitextdropproposal/progressmode/custom.md)
+- [UITextDropProposal.ProgressMode.custom](./progressmode/custom.md)
   A text drop progress mode that indicates that you will provide custom progress indicator during the loading of dropped items.
-- [UITextDropProposal.ProgressMode.system](uitextdropproposal/progressmode/system.md)
+- [UITextDropProposal.ProgressMode.system](./progressmode/system.md)
   A text drop progress mode indicating that the system will show the progress indicator.
 ### Initializers
-- [init?(rawValue: UInt)](uitextdropproposal/progressmode/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./progressmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol UITextDropRequest](uitextdroprequest.md)
+### Drop management
+- [protocol UITextDropRequest](../uitextdroprequest.md)
   The interface for specifying the attributes of a drop request for a text view.
-- [class UITextDropProposal](uitextdropproposal.md)
+- [class UITextDropProposal](../uitextdropproposal.md)
   A proposed configuration for the behavior of a text drop interaction.
-- [UITextDropProposal.Action](uitextdropproposal/action.md)
+- [UITextDropProposal.Action](./action.md)
   The text drop action styles for text views.
-- [UITextDropProposal.Performer](uitextdropproposal/performer.md)
+- [UITextDropProposal.Performer](./performer.md)
   The performers that are responsible for handling the drop operation.
 
 

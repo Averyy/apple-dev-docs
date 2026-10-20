@@ -1,7 +1,8 @@
 # CertificateListResponse.ErrorChainItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that describes an error chain item.
 
@@ -16,7 +17,7 @@ A dictionary that describes an error chain item.
 
 ## Declaration
 
-```swift
+```
 object CertificateListResponse.ErrorChainItem
 ```
 
@@ -29,7 +30,8 @@ object CertificateListResponse.ErrorChainItem
 
 ## See Also
 
-- [object CertificateListResponse.CertificateListItem](certificatelistresponse/certificatelistitem.md)
+### Objects
+- [object CertificateListResponse.CertificateListItem](./certificatelistitem.md)
   A dictionary that contains information about a certificate list item.
 
 

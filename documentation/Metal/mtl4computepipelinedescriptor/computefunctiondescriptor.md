@@ -1,7 +1,8 @@
 # computeFunctionDescriptor
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A descriptor representing the compute pipeline’s function.
 
@@ -20,9 +21,13 @@ A descriptor representing the compute pipeline’s function.
 var computeFunctionDescriptor: MTL4FunctionDescriptor? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) MTL4FunctionDescriptor * computeFunctionDescriptor;
+```
+
 #### Discussion
 
-You don’t assign instances of [`MTL4FunctionDescriptor`](mtl4functiondescriptor.md) to this property directly, instead assign an instance of one of its subclasses, such as [`MTL4LibraryFunctionDescriptor`](mtl4libraryfunctiondescriptor.md), which represents a function from a Metal library.
+You don’t assign instances of [`MTL4FunctionDescriptor`](../mtl4functiondescriptor.md) to this property directly, instead assign an instance of one of its subclasses, such as [`MTL4LibraryFunctionDescriptor`](../mtl4libraryfunctiondescriptor.md), which represents a function from a Metal library.
 
 
 ---

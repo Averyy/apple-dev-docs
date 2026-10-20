@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.D
 
 # mlx.nn.Dropout
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.Dropout.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.Dropout
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.Dropout
-
 **class Dropout(*p: float = 0.5*)**
 : Randomly zero a portion of the elements during training.
 The remaining elements are multiplied with \(\frac{1}{1-p}\) where
@@ -43,5 +16,3 @@ Parameters:
 **p** ([float](https://docs.python.org/3/builtins/functions.html#float)) – The probability to zero an element. Default: `0.5`.
 
 Methods
-
-** Contents

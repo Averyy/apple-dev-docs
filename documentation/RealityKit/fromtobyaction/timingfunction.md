@@ -1,7 +1,8 @@
 # timingFunction
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A timing function that controls the progress of the animation.
 

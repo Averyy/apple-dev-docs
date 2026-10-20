@@ -1,7 +1,8 @@
 # level
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mipmap level of the texture to use. Corresponds to `MTLRenderPassAttachmentDescriptor.level`.
 
@@ -19,9 +20,10 @@ var level: Int { get set }
 
 ## See Also
 
-- [var slice: Int](lowlevelrenderer/output-swift.struct/texture/slice.md)
+### Addressing the texture
+- [var slice: Int](./slice.md)
   The slice of the texture to use. Corresponds to `MTLRenderPassAttachmentDescriptor.slice`.
-- [var depthPlane: Int](lowlevelrenderer/output-swift.struct/texture/depthplane.md)
+- [var depthPlane: Int](./depthplane.md)
   The depth plane of the texture to use. Corresponds to `MTLRenderPassAttachmentDescriptor.depthPlane`.
 
 

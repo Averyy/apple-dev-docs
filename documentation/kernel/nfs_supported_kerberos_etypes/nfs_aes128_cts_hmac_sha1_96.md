@@ -1,14 +1,15 @@
 # NFS_AES128_CTS_HMAC_SHA1_96
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 NFS_AES128_CTS_HMAC_SHA1_96 = 17
 ```
 

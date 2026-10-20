@@ -1,7 +1,8 @@
 # zoomIn(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Zooms in by increasing the scaling factor.
 
@@ -20,17 +21,22 @@ Zooms in by increasing the scaling factor.
 func zoomIn(_ sender: Any?)
 ```
 
+```objc
+- (void) zoomIn:(id) sender;
+```
+
 #### Discussion
 
 Each invocation of `zoomIn` muliplies the scaling factor by the square root of 2.
 
 ## See Also
 
-- [var canZoomIn: Bool](pdfview/canzoomin.md)
+### Zooming in a PDF View
+- [var canZoomIn: Bool](./canzoomin.md)
   Returns a Boolean value indicating whether the user can magnify the view and zoom in.
-- [func zoomOut(Any?)](pdfview/zoomout(_:).md)
+- [func zoomOut(Any?)](./zoomout%28_%29.md)
   Zooms out by decreasing the scaling factor.
-- [var canZoomOut: Bool](pdfview/canzoomout.md)
+- [var canZoomOut: Bool](./canzoomout.md)
   Returns a Boolean value indicating whether the user can view an expanded area and zoom out.
 
 

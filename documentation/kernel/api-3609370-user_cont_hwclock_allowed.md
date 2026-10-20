@@ -1,14 +1,15 @@
 # user_cont_hwclock_allowed
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 boolean_t user_cont_hwclock_allowed(void);
 ```
 

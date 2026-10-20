@@ -1,7 +1,8 @@
 # segmentControlPointCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Declares the number of control points per curve segment.
 
@@ -17,6 +18,10 @@ Declares the number of control points per curve segment.
 
 ```swift
 var segmentControlPointCount: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger segmentControlPointCount;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # buttonA
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Creates a pre-configured label for the “A” button.
 
@@ -16,35 +17,40 @@ Creates a pre-configured label for the “A” button.
 class var buttonA: TCControlLabel { get }
 ```
 
+```objc
+@property (class, nonatomic, strong, readonly) TCControlLabel * buttonA;
+```
+
 ## See Also
 
-- [class var buttonB: TCControlLabel](tccontrollabel/buttonb.md)
+### Accessing the controls
+- [class var buttonB: TCControlLabel](./buttonb.md)
   Creates a pre-configured label for the “B” button.
-- [class var buttonLeftShoulder: TCControlLabel](tccontrollabel/buttonleftshoulder.md)
+- [class var buttonLeftShoulder: TCControlLabel](./buttonleftshoulder.md)
   Creates a pre-configured label for the left shoulder button.
-- [class var buttonLeftTrigger: TCControlLabel](tccontrollabel/buttonlefttrigger.md)
+- [class var buttonLeftTrigger: TCControlLabel](./buttonlefttrigger.md)
   Creates a pre-configured label for the left trigger button.
-- [class var buttonMenu: TCControlLabel](tccontrollabel/buttonmenu.md)
+- [class var buttonMenu: TCControlLabel](./buttonmenu.md)
   Creates a pre-configured label for the “Menu” button.
-- [class var buttonOptions: TCControlLabel](tccontrollabel/buttonoptions.md)
+- [class var buttonOptions: TCControlLabel](./buttonoptions.md)
   Creates a pre-configured label for the “Options” button.
-- [class var buttonRightShoulder: TCControlLabel](tccontrollabel/buttonrightshoulder.md)
+- [class var buttonRightShoulder: TCControlLabel](./buttonrightshoulder.md)
   Creates a pre-configured label for the right shoulder button.
-- [class var buttonRightTrigger: TCControlLabel](tccontrollabel/buttonrighttrigger.md)
+- [class var buttonRightTrigger: TCControlLabel](./buttonrighttrigger.md)
   Creates a pre-configured label for the right trigger button.
-- [class var buttonX: TCControlLabel](tccontrollabel/buttonx.md)
+- [class var buttonX: TCControlLabel](./buttonx.md)
   Creates a pre-configured label for the “X” button.
-- [class var buttonY: TCControlLabel](tccontrollabel/buttony.md)
+- [class var buttonY: TCControlLabel](./buttony.md)
   Creates a pre-configured label for the “Y” button.
-- [class var directionPad: TCControlLabel](tccontrollabel/directionpad.md)
+- [class var directionPad: TCControlLabel](./directionpad.md)
   Creates a pre-configured label for the direction pad.
-- [class var leftThumbstick: TCControlLabel](tccontrollabel/leftthumbstick.md)
+- [class var leftThumbstick: TCControlLabel](./leftthumbstick.md)
   Creates a pre-configured label for the left thumbstick.
-- [class var leftThumbstickButton: TCControlLabel](tccontrollabel/leftthumbstickbutton.md)
+- [class var leftThumbstickButton: TCControlLabel](./leftthumbstickbutton.md)
   Creates a pre-configured label for the left thumbstick button.
-- [class var rightThumbstick: TCControlLabel](tccontrollabel/rightthumbstick.md)
+- [class var rightThumbstick: TCControlLabel](./rightthumbstick.md)
   Creates a pre-configured label for the right thumbstick.
-- [class var rightThumbstickButton: TCControlLabel](tccontrollabel/rightthumbstickbutton.md)
+- [class var rightThumbstickButton: TCControlLabel](./rightthumbstickbutton.md)
   Creates a pre-configured label for the right thumbstick button.
 
 

@@ -1,14 +1,15 @@
 # MIDICIDeviceManager.DictionaryKey
 
 **Framework**: Core MIDI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -16,22 +17,26 @@
 struct DictionaryKey
 ```
 
+```c
+typedef NSString * const MIDICIDeviceManagerDictionaryKey;
+```
+
 ## Topics
 
 ### Type Properties
-- [static let deviceObject: MIDICIDeviceManager.DictionaryKey](midicidevicemanager/dictionarykey/deviceobject.md)
-- [static let profileObject: MIDICIDeviceManager.DictionaryKey](midicidevicemanager/dictionarykey/profileobject.md)
+- [static let deviceObject: MIDICIDeviceManager.DictionaryKey](./dictionarykey/deviceobject.md)
+- [static let profileObject: MIDICIDeviceManager.DictionaryKey](./dictionarykey/profileobject.md)
 ### Initializers
-- [init(rawValue: String)](midicidevicemanager/dictionarykey/init(rawvalue:).md)
+- [init(rawValue: String)](./dictionarykey/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

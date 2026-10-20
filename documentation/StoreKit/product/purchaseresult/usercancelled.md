@@ -1,7 +1,8 @@
 # Product.PurchaseResult.userCancelled
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user canceled the purchase.
 
@@ -22,9 +23,10 @@ case userCancelled
 
 ## See Also
 
-- [case success(VerificationResult<Transaction>)](product/purchaseresult/success(_:).md)
+### Getting the Purchase Results
+- [case success(VerificationResult<Transaction>)](./success%28_%29.md)
   The purchase succeeded and results in a transaction.
-- [Product.PurchaseResult.pending](product/purchaseresult/pending.md)
+- [Product.PurchaseResult.pending](./pending.md)
   The purchase is pending, and requires action from the customer.
 
 

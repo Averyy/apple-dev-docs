@@ -1,7 +1,8 @@
 # value
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The selection of the given tag value.
 

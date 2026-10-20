@@ -2,6 +2,7 @@
 
 **Framework**: Create ML  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The visualization for a machine learning type as an image.

@@ -1,7 +1,8 @@
 # MTRClusterIdentify
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,37 +19,41 @@
 class MTRClusterIdentify
 ```
 
+```objc
+@interface MTRClusterIdentify : MTRGenericCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRDevice, endpoint: UInt16, queue: dispatch_queue_t)](mtrclusteridentify/init(device:endpoint:queue:).md)
-- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclusteridentify/init(device:endpointid:queue:).md)
+- [init?(device: MTRDevice, endpoint: UInt16, queue: dispatch_queue_t)](./mtrclusteridentify/init%28device,endpoint,queue%29.md)
+- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrclusteridentify/init%28device,endpointid,queue%29.md)
 ### Instance Methods
-- [func identify(with: MTRIdentifyClusterIdentifyParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusteridentify/identify(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func identify(with: MTRIdentifyClusterIdentifyParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusteridentify/identify(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusteridentify/readattributeacceptedcommandlist(with:).md)
-- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclusteridentify/readattributeattributelist(with:).md)
-- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclusteridentify/readattributeclusterrevision(with:).md)
-- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclusteridentify/readattributefeaturemap(with:).md)
-- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusteridentify/readattributegeneratedcommandlist(with:).md)
-- [func readAttributeIdentifyTime(with: MTRReadParams?) -> [String : Any]?](mtrclusteridentify/readattributeidentifytime(with:).md)
-- [func readAttributeIdentifyType(with: MTRReadParams?) -> [String : Any]?](mtrclusteridentify/readattributeidentifytype(with:).md)
-- [func triggerEffect(with: MTRIdentifyClusterTriggerEffectParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusteridentify/triggereffect(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func triggerEffect(with: MTRIdentifyClusterTriggerEffectParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusteridentify/triggereffect(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func writeAttributeIdentifyTime(withValue: [String : Any], expectedValueInterval: NSNumber)](mtrclusteridentify/writeattributeidentifytime(withvalue:expectedvalueinterval:).md)
-- [func writeAttributeIdentifyTime(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](mtrclusteridentify/writeattributeidentifytime(withvalue:expectedvalueinterval:params:).md)
+- [func identify(with: MTRIdentifyClusterIdentifyParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusteridentify/identify%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func identify(with: MTRIdentifyClusterIdentifyParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](./mtrclusteridentify/identify%28with,expectedvalues,expectedvalueinterval,completionhandler%29.md)
+- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusteridentify/readattributeacceptedcommandlist%28with%29.md)
+- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](./mtrclusteridentify/readattributeattributelist%28with%29.md)
+- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](./mtrclusteridentify/readattributeclusterrevision%28with%29.md)
+- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](./mtrclusteridentify/readattributefeaturemap%28with%29.md)
+- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusteridentify/readattributegeneratedcommandlist%28with%29.md)
+- [func readAttributeIdentifyTime(with: MTRReadParams?) -> [String : Any]?](./mtrclusteridentify/readattributeidentifytime%28with%29.md)
+- [func readAttributeIdentifyType(with: MTRReadParams?) -> [String : Any]?](./mtrclusteridentify/readattributeidentifytype%28with%29.md)
+- [func triggerEffect(with: MTRIdentifyClusterTriggerEffectParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusteridentify/triggereffect%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func triggerEffect(with: MTRIdentifyClusterTriggerEffectParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](./mtrclusteridentify/triggereffect%28with,expectedvalues,expectedvalueinterval,completionhandler%29.md)
+- [func writeAttributeIdentifyTime(withValue: [String : Any], expectedValueInterval: NSNumber)](./mtrclusteridentify/writeattributeidentifytime%28withvalue,expectedvalueinterval%29.md)
+- [func writeAttributeIdentifyTime(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](./mtrclusteridentify/writeattributeidentifytime%28withvalue,expectedvalueinterval,params%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericCluster](mtrgenericcluster.md)
+- [MTRGenericCluster](./mtrgenericcluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

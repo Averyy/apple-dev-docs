@@ -1,7 +1,8 @@
 # init(preferredPresentation:playbackAction:elapsedTime:duration:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a description of the playable media content that is represented by template items.
 
@@ -14,6 +15,10 @@ Initialize a description of the playable media content that is represented by te
 
 ```swift
 init(preferredPresentation: CPPlaybackConfiguration.Presentation, playbackAction: CPPlaybackConfiguration.Action, elapsedTime: CMTime, duration: CMTime)
+```
+
+```objc
+- (instancetype) initWithPreferredPresentation:(CPPlaybackPresentation) preferredPresentation playbackAction:(CPPlaybackAction) playbackAction elapsedTime:(CMTime) elapsedTime duration:(CMTime) duration;
 ```
 
 #### Discussion

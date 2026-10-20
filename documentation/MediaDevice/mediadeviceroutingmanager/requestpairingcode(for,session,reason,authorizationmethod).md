@@ -1,7 +1,8 @@
 # requestPairingCode(for:session:reason:authorizationMethod:)
 
 **Framework**: Media Device  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a pairing user interface so the user can enter authorization credentials for a device.
 
@@ -19,7 +20,7 @@ final func requestPairingCode(for device: MediaOutputDevice, session: MediaOutpu
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../creating-a-media-device-extension.md)
 
 #### Discussion
 

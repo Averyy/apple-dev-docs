@@ -1,7 +1,8 @@
 # NSDiffableDataSourceSectionSnapshotReference
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of the state of the data in a layout section at a specific point in time.
 
@@ -18,11 +19,15 @@ A representation of the state of the data in a layout section at a specific poin
 class NSDiffableDataSourceSectionSnapshotReference
 ```
 
+```objc
+@interface NSDiffableDataSourceSectionSnapshot : NSObject
+```
+
 #### Overview
 
 A section snapshot represents the data for a single section in a collection view. Through a section snapshot, you set up the initial state of the data that displays in an individual section of your view, and later update that data.
 
-You can use section snapshots with or instead of an [`NSDiffableDataSourceSnapshotReference`](nsdiffabledatasourcesnapshotreference.md), which represents the data in the entire view. Use a section snapshot when you need precise management of the data in a section of your layout, such as when the sections of your layout acquire their data from different sources. You can also use a section snapshot to represent data with a hierarchical structure, such as an outline with expandable items.
+You can use section snapshots with or instead of an [`NSDiffableDataSourceSnapshotReference`](./nsdiffabledatasourcesnapshotreference.md), which represents the data in the entire view. Use a section snapshot when you need precise management of the data in a section of your layout, such as when the sections of your layout acquire their data from different sources. You can also use a section snapshot to represent data with a hierarchical structure, such as an outline with expandable items.
 
 The following example creates a section snapshot with one root item that contains three child items:
 
@@ -42,7 +47,7 @@ for (NSNumber *section in sections) {
 }
 ```
 
-> ❗ **Important**: If you’re working in a Swift codebase, always use [`NSDiffableDataSourceSectionSnapshot`](nsdiffabledatasourcesectionsnapshot-swift.struct.md) instead.
+> ❗ **Important**: If you’re working in a Swift codebase, always use [`NSDiffableDataSourceSectionSnapshot`](./nsdiffabledatasourcesectionsnapshot-swift.struct.md) instead.
 
 Avoid using this type in Swift code. Only use this type to bridge from Objective-C code to Swift code by typecasting from a section snapshot reference to a section snapshot:
 
@@ -53,77 +58,77 @@ let sectionSnapshot = sectionSnapshotRef as NSDiffableDataSourceSectionSnapshot<
 ## Topics
 
 ### Creating a section snapshot
-- [init()](nsdiffabledatasourcesectionsnapshotreference/init.md)
+- [init()](./nsdiffabledatasourcesectionsnapshotreference/init%28%29.md)
   Creates an empty section snapshot.
-- [func ofParentItem(Any) -> NSDiffableDataSourceSectionSnapshotReference](nsdiffabledatasourcesectionsnapshotreference/ofparentitem(_:).md)
+- [func ofParentItem(Any) -> NSDiffableDataSourceSectionSnapshotReference](./nsdiffabledatasourcesectionsnapshotreference/ofparentitem%28_%29.md)
   Creates a section snapshot containing the child items of the specified parent item, excluding the parent item.
-- [func ofParentItem(Any, includingParentItem: Bool) -> NSDiffableDataSourceSectionSnapshotReference](nsdiffabledatasourcesectionsnapshotreference/ofparentitem(_:includingparentitem:).md)
+- [func ofParentItem(Any, includingParentItem: Bool) -> NSDiffableDataSourceSectionSnapshotReference](./nsdiffabledatasourcesectionsnapshotreference/ofparentitem%28_,includingparentitem%29.md)
   Creates a section snapshot containing the child items of the specified parent item, including the parent item.
-- [func appendItems([Any])](nsdiffabledatasourcesectionsnapshotreference/appenditems(_:).md)
+- [func appendItems([Any])](./nsdiffabledatasourcesectionsnapshotreference/appenditems%28_%29.md)
   Adds the specified items to the section snapshot.
-- [func appendItems([Any], intoParentItem: Any?)](nsdiffabledatasourcesectionsnapshotreference/appenditems(_:intoparentitem:).md)
+- [func appendItems([Any], intoParentItem: Any?)](./nsdiffabledatasourcesectionsnapshotreference/appenditems%28_,intoparentitem%29.md)
   Adds the specified items as child items of the specified parent item in the section snapshot.
 ### Accessing items
-- [var items: [Any]](nsdiffabledatasourcesectionsnapshotreference/items.md)
+- [var items: [Any]](./nsdiffabledatasourcesectionsnapshotreference/items.md)
   The identifiers of all items in the section snapshot.
-- [var rootItems: [Any]](nsdiffabledatasourcesectionsnapshotreference/rootitems.md)
+- [var rootItems: [Any]](./nsdiffabledatasourcesectionsnapshotreference/rootitems.md)
   The identifiers of the items at the top level of the section snapshot’s hierarchy.
-- [var visibleItems: [Any]](nsdiffabledatasourcesectionsnapshotreference/visibleitems.md)
+- [var visibleItems: [Any]](./nsdiffabledatasourcesectionsnapshotreference/visibleitems.md)
   The identifiers of the currently visible items in the section snapshot.
 ### Getting item metrics
-- [func index(ofItem: Any) -> Int](nsdiffabledatasourcesectionsnapshotreference/index(ofitem:).md)
+- [func index(ofItem: Any) -> Int](./nsdiffabledatasourcesectionsnapshotreference/index%28ofitem%29.md)
   Finds the index of the specified item in the section snapshot.
-- [func level(ofItem: Any) -> Int](nsdiffabledatasourcesectionsnapshotreference/level(ofitem:).md)
+- [func level(ofItem: Any) -> Int](./nsdiffabledatasourcesectionsnapshotreference/level%28ofitem%29.md)
   Finds the hierarchical level of the specified item in the section snapshot.
-- [func parent(ofChildItem: Any) -> Any?](nsdiffabledatasourcesectionsnapshotreference/parent(ofchilditem:).md)
+- [func parent(ofChildItem: Any) -> Any?](./nsdiffabledatasourcesectionsnapshotreference/parent%28ofchilditem%29.md)
   Finds the parent item of the specified item in the section snapshot.
-- [func containsItem(Any) -> Bool](nsdiffabledatasourcesectionsnapshotreference/containsitem(_:).md)
+- [func containsItem(Any) -> Bool](./nsdiffabledatasourcesectionsnapshotreference/containsitem%28_%29.md)
   Indicates whether the section snapshot contains the specified item.
-- [func isVisible(Any) -> Bool](nsdiffabledatasourcesectionsnapshotreference/isvisible(_:).md)
+- [func isVisible(Any) -> Bool](./nsdiffabledatasourcesectionsnapshotreference/isvisible%28_%29.md)
   Indicates whether the specified item is currently visible onscreen.
 ### Inserting items
-- [func insert(NSDiffableDataSourceSectionSnapshotReference, afterItem: Any) -> Any](nsdiffabledatasourcesectionsnapshotreference/insert(_:afteritem:).md)
+- [func insert(NSDiffableDataSourceSectionSnapshotReference, afterItem: Any) -> Any](./nsdiffabledatasourcesectionsnapshotreference/insert%28_,afteritem%29.md)
   Inserts the provided section snapshot immediately after the item with the specified identifier in the section snapshot.
-- [func insertItems([Any], afterItem: Any)](nsdiffabledatasourcesectionsnapshotreference/insertitems(_:afteritem:).md)
+- [func insertItems([Any], afterItem: Any)](./nsdiffabledatasourcesectionsnapshotreference/insertitems%28_,afteritem%29.md)
   Inserts the provided items immediately after the item with the specified identifier in the section snapshot.
-- [func insert(NSDiffableDataSourceSectionSnapshotReference, beforeItem: Any)](nsdiffabledatasourcesectionsnapshotreference/insert(_:beforeitem:).md)
+- [func insert(NSDiffableDataSourceSectionSnapshotReference, beforeItem: Any)](./nsdiffabledatasourcesectionsnapshotreference/insert%28_,beforeitem%29.md)
   Inserts the provided section snapshot immediately before the item with the specified identifier in the section snapshot.
-- [func insertItems([Any], beforeItem: Any)](nsdiffabledatasourcesectionsnapshotreference/insertitems(_:beforeitem:).md)
+- [func insertItems([Any], beforeItem: Any)](./nsdiffabledatasourcesectionsnapshotreference/insertitems%28_,beforeitem%29.md)
   Inserts the provided items immediately before the item with the specified identifier in the section snapshot.
 ### Removing items
-- [func deleteItems([Any])](nsdiffabledatasourcesectionsnapshotreference/deleteitems(_:).md)
+- [func deleteItems([Any])](./nsdiffabledatasourcesectionsnapshotreference/deleteitems%28_%29.md)
   Deletes the items with the specified identifiers, and any of their child items, from the section snapshot.
-- [func deleteAllItems()](nsdiffabledatasourcesectionsnapshotreference/deleteallitems.md)
+- [func deleteAllItems()](./nsdiffabledatasourcesectionsnapshotreference/deleteallitems%28%29.md)
   Deletes all of the items from the section snapshot.
 ### Replacing items
-- [func replaceChildren(ofParentItem: Any, with: NSDiffableDataSourceSectionSnapshotReference)](nsdiffabledatasourcesectionsnapshotreference/replacechildren(ofparentitem:with:).md)
+- [func replaceChildren(ofParentItem: Any, with: NSDiffableDataSourceSectionSnapshotReference)](./nsdiffabledatasourcesectionsnapshotreference/replacechildren%28ofparentitem,with%29.md)
   Replaces all child items of the specified parent item with the provided section snapshot.
 ### Expanding and collapsing items
-- [func isExpanded(Any) -> Bool](nsdiffabledatasourcesectionsnapshotreference/isexpanded(_:).md)
+- [func isExpanded(Any) -> Bool](./nsdiffabledatasourcesectionsnapshotreference/isexpanded%28_%29.md)
   Indicates whether the item with the specified identifier is in an expanded state.
-- [func expandItems([Any])](nsdiffabledatasourcesectionsnapshotreference/expanditems(_:).md)
+- [func expandItems([Any])](./nsdiffabledatasourcesectionsnapshotreference/expanditems%28_%29.md)
   Expands the specified items in the section snapshot.
-- [func collapseItems([Any])](nsdiffabledatasourcesectionsnapshotreference/collapseitems(_:).md)
+- [func collapseItems([Any])](./nsdiffabledatasourcesectionsnapshotreference/collapseitems%28_%29.md)
   Collapses the specified items in the section snapshot.
 ### Debugging section snapshots
-- [func visualDescription() -> String](nsdiffabledatasourcesectionsnapshotreference/visualdescription.md)
+- [func visualDescription() -> String](./nsdiffabledatasourcesectionsnapshotreference/visualdescription%28%29.md)
   Returns a string with an ASCII representation of the section snapshot.
 ### Instance Methods
-- [func expandedItems() -> [Any]](nsdiffabledatasourcesectionsnapshotreference/expandeditems.md)
+- [func expandedItems() -> [Any]](./nsdiffabledatasourcesectionsnapshotreference/expandeditems%28%29.md)
   The identifiers of all expanded items in the section snapshot.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

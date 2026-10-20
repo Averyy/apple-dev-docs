@@ -1,7 +1,8 @@
 # IOCommandGate
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 Single-threaded work-loop client request mechanism.
 
@@ -10,7 +11,7 @@ Single-threaded work-loop client request mechanism.
 
 ## Declaration
 
-```swift
+```cpp
 class IOCommandGate : IOEventSource
 ```
 
@@ -25,65 +26,66 @@ CAUTION: The runAction, runCommand, and attemptCommand functions cannot be calle
 ## Topics
 
 ### Miscellaneous
-- [attemptAction](iocommandgate/1811105-attemptaction.md)
+- [attemptAction](./iocommandgate/api-1811105-attemptaction.md)
   Single thread a call to an action with the target work-loop.
-- [attemptCommand](iocommandgate/1811141-attemptcommand.md)
+- [attemptCommand](./iocommandgate/api-1811141-attemptcommand.md)
   Single thread a command with the target work-loop.
-- [commandGate](iocommandgate/1811293-commandgate.md)
+- [commandGate](./iocommandgate/api-1811293-commandgate.md)
   Factory method to create and initialise an IOCommandGate, See $link init.
-- [commandSleep(void *, AbsoluteTime, UInt32)](iocommandgate/1811482-commandsleep.md)
+- [commandSleep(void *, AbsoluteTime, UInt32)](./iocommandgate/api-1811482-commandsleep.md)
   Put a thread that is currently holding the command gate to sleep.
-- [commandSleep(void *, UInt32)](iocommandgate/1811498-commandsleep.md)
+- [commandSleep(void *, UInt32)](./iocommandgate/api-1811498-commandsleep.md)
   Put a thread that is currently holding the command gate to sleep.
-- [commandWakeup](iocommandgate/1811517-commandwakeup.md)
+- [commandWakeup](./iocommandgate/api-1811517-commandwakeup.md)
   Wakeup one or more threads that are asleep on an event.
-- [disable](iocommandgate/1811531-disable.md)
+- [disable](./iocommandgate/api-1811531-disable.md)
   Disable the command gate
-- [enable](iocommandgate/1811547-enable.md)
+- [enable](./iocommandgate/api-1811547-enable.md)
   Enable command gate, this will unblock any blocked Commands and Actions.
-- [init](iocommandgate/1811560-init.md)
+- [init](./iocommandgate/api-1811560-init.md)
   Class initialiser.
-- [runAction](iocommandgate/1811576-runaction.md)
+- [runAction](./iocommandgate/api-1811576-runaction.md)
   Single thread a call to an action with the target work-loop.
-- [runCommand](iocommandgate/1811585-runcommand.md)
+- [runCommand](./iocommandgate/api-1811585-runcommand.md)
   Single thread a command with the target work-loop.
 ### Callbacks
-- [Action](ioworkloop/action.md)
+- [Action](./ioworkloop/action.md)
 ### DataTypes
-- [ExpansionData](ioservice/expansiondata.md)
+- [ExpansionData](./ioservice/expansiondata.md)
 ### Instance Variables
-- [reserved](iocommandgate/reserved.md)
+- [reserved](./iocommandgate/reserved.md)
 ### Instance Methods
-- [- attemptAction](iocommandgate/1573823-attemptaction.md)
-- [- attemptCommand](iocommandgate/1573825-attemptcommand.md)
-- [- commandSleep](iocommandgate/1573818-commandsleep.md)
-- [- commandSleep](iocommandgate/3516447-commandsleep.md)
-- [- commandWakeup](iocommandgate/1573826-commandwakeup.md)
-- [- disable](iocommandgate/1573828-disable.md)
-- [- enable](iocommandgate/1573822-enable.md)
-- [- free](iocommandgate/1573821-free.md)
-- [- getMetaClass](iocommandgate/1573820-getmetaclass.md)
-- [- init](iocommandgate/1573817-init.md)
-- [- runAction](iocommandgate/1573816-runaction.md)
-- [- runActionBlock](iocommandgate/2967266-runactionblock.md)
-- [- runCommand](iocommandgate/1573824-runcommand.md)
-- [- setWorkLoop](iocommandgate/1573827-setworkloop.md)
+- [- attemptAction](./iocommandgate/api-1573823-attemptaction.md)
+- [- attemptCommand](./iocommandgate/api-1573825-attemptcommand.md)
+- [- commandSleep](./iocommandgate/api-1573818-commandsleep.md)
+- [- commandSleep](./iocommandgate/api-3516447-commandsleep.md)
+- [- commandWakeup](./iocommandgate/api-1573826-commandwakeup.md)
+- [- disable](./iocommandgate/api-1573828-disable.md)
+- [- enable](./iocommandgate/api-1573822-enable.md)
+- [- free](./iocommandgate/api-1573821-free.md)
+- [- getMetaClass](./iocommandgate/api-1573820-getmetaclass.md)
+- [- init](./iocommandgate/api-1573817-init.md)
+- [- runAction](./iocommandgate/api-1573816-runaction.md)
+- [- runActionBlock](./iocommandgate/api-2967266-runactionblock.md)
+- [- runCommand](./iocommandgate/api-1573824-runcommand.md)
+- [- setWorkLoop](./iocommandgate/api-1573827-setworkloop.md)
 ### Type Methods
-- [+ commandGate](iocommandgate/1573819-commandgate.md)
+- [+ commandGate](./iocommandgate/api-1573819-commandgate.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOEventSource](ioeventsource.md)
+- [IOEventSource](./ioeventsource.md)
 
 ## See Also
 
-- [IOCommandPool](iocommandpool.md)
+### Base Types
+- [IOCommandPool](./iocommandpool.md)
   Manipulates a pool of commands which inherit from IOCommand.
-- [IOCommand](iocommand.md)
+- [IOCommand](./iocommand.md)
   This class is an abstract class which represents an I/O command.
-- [IODispatchSource](iodispatchsource.md)
-- [IOEventSource](ioeventsource.md)
+- [IODispatchSource](./iodispatchsource.md)
+- [IOEventSource](./ioeventsource.md)
   Abstract class for all work-loop event sources.
 
 

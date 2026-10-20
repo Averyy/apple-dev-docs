@@ -1,7 +1,8 @@
 # credentials
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The credentials associated with this item.
 
@@ -20,17 +21,18 @@ var credentials: [ASImportableCredential]
 
 ## See Also
 
-- [var id: Data](asimportableitem/id.md)
+### Accessing item properties
+- [var id: Data](./id.md)
   A unique identifier for the item.
-- [var created: Date?](asimportableitem/created.md)
+- [var created: Date?](./created.md)
   The item’s creation date and time.
-- [var lastModified: Date?](asimportableitem/lastmodified.md)
+- [var lastModified: Date?](./lastmodified.md)
   The item’s last modified date and time.
-- [var subtitle: String?](asimportableitem/subtitle.md)
+- [var subtitle: String?](./subtitle.md)
   A subtitle or description of this item, if any.
-- [enum ASImportableCredential](asimportablecredential.md)
+- [enum ASImportableCredential](../asimportablecredential.md)
   A credential for use in import and export.
-- [var tags: [String]](asimportableitem/tags.md)
+- [var tags: [String]](./tags.md)
   The user-defined tags associated with this item, if any.
 
 

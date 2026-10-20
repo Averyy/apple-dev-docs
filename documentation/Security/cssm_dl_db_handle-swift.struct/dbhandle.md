@@ -1,7 +1,8 @@
 # DBHandle
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var DBHandle: CSSM_DB_HANDLE
+```
+
+```c
+CSSM_DB_HANDLE DBHandle;
 ```
 
 

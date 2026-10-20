@@ -1,7 +1,8 @@
 # UIPencilInteraction.Phase.cancelled
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A continuous gesture on the pencil was cancelled
 
@@ -17,13 +18,18 @@ A continuous gesture on the pencil was cancelled
 case cancelled
 ```
 
+```c
+UIPencilInteractionPhaseCancelled
+```
+
 ## See Also
 
-- [UIPencilInteraction.Phase.began](uipencilinteraction/phase/began.md)
+### Phases
+- [UIPencilInteraction.Phase.began](./began.md)
   A continuous gesture on the pencil began
-- [UIPencilInteraction.Phase.changed](uipencilinteraction/phase/changed.md)
+- [UIPencilInteraction.Phase.changed](./changed.md)
   A continuous gesture on the pencil changed
-- [UIPencilInteraction.Phase.ended](uipencilinteraction/phase/ended.md)
+- [UIPencilInteraction.Phase.ended](./ended.md)
   A continuous gesture on the pencil ended, or a discrete gesture on the pencil recognized
 
 

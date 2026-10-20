@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance without a base color.
 

@@ -1,7 +1,8 @@
 # UnsignedInteger
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An integer type that can represent only nonnegative values.
 
@@ -23,40 +24,41 @@ protocol UnsignedInteger : BinaryInteger
 ## Topics
 
 ### Instance Methods
-- [func dividingFullWidth((high: Self, low: Self.Magnitude)) -> (quotient: Self, remainder: Self)](unsignedinteger/dividingfullwidth(_:).md)
+- [func dividingFullWidth((high: Self, low: Self.Magnitude)) -> (quotient: Self, remainder: Self)](./unsignedinteger/dividingfullwidth%28_%29.md)
 ### Type Properties
-- [static var max: Self](unsignedinteger/max.md)
+- [static var max: Self](./unsignedinteger/max.md)
   The maximum representable integer in this type.
-- [static var min: Self](unsignedinteger/min.md)
+- [static var min: Self](./unsignedinteger/min.md)
   The minimum representable integer in this type.
 
 ## Relationships
 
 ### Inherits From
-- [AdditiveArithmetic](additivearithmetic.md)
-- [BinaryInteger](binaryinteger.md)
-- [Comparable](comparable.md)
-- [CustomStringConvertible](customstringconvertible.md)
-- [Equatable](equatable.md)
-- [ExpressibleByIntegerLiteral](expressiblebyintegerliteral.md)
-- [Hashable](hashable.md)
-- [Numeric](numeric.md)
-- [Strideable](strideable.md)
+- [AdditiveArithmetic](./additivearithmetic.md)
+- [BinaryInteger](./binaryinteger.md)
+- [Comparable](./comparable.md)
+- [CustomStringConvertible](./customstringconvertible.md)
+- [Equatable](./equatable.md)
+- [ExpressibleByIntegerLiteral](./expressiblebyintegerliteral.md)
+- [Hashable](./hashable.md)
+- [Numeric](./numeric.md)
+- [Strideable](./strideable.md)
 ### Conforming Types
-- [UInt](uint.md)
-- [UInt128](uint128.md)
-- [UInt16](uint16.md)
-- [UInt32](uint32.md)
-- [UInt64](uint64.md)
-- [UInt8](uint8.md)
+- [UInt](./uint.md)
+- [UInt128](./uint128.md)
+- [UInt16](./uint16.md)
+- [UInt32](./uint32.md)
+- [UInt64](./uint64.md)
+- [UInt8](./uint8.md)
 
 ## See Also
 
-- [protocol BinaryInteger](binaryinteger.md)
+### Integer
+- [protocol BinaryInteger](./binaryinteger.md)
   An integer type with a binary representation.
-- [protocol FixedWidthInteger](fixedwidthinteger.md)
+- [protocol FixedWidthInteger](./fixedwidthinteger.md)
   An integer type that uses a fixed size for every instance.
-- [protocol SignedInteger](signedinteger.md)
+- [protocol SignedInteger](./signedinteger.md)
   An integer type that can represent both positive and negative values.
 
 

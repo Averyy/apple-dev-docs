@@ -1,7 +1,8 @@
 # TrainStation
 
 **Framework**: Siri Event Suggestions Markup  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The name and location of a train station.
 
@@ -10,19 +11,20 @@ The name and location of a train station.
 
 ## Declaration
 
-```swift
+```
 object TrainStation
 ```
 
 ## Properties
 
-- `@type` (string) *(required)*
+- `@type` (string) *(required)*: **Allowed Values**: `TrainStation`
 - `address` (PostalAddress) *(required)*: The location of the train station.
 - `name` (string) *(required)*: The name of the train station.
 
 ## See Also
 
-- [object TrainTrip](traintrip.md)
+### Defining a Train Reservation
+- [object TrainTrip](./traintrip.md)
   Location and scheduling information for a train trip.
 
 

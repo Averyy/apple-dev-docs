@@ -1,7 +1,8 @@
 # relativeVolume(onIncrement:onDecrement:)
 
 **Framework**: Now Playing  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a capability that lets the device increase or decrease its volume incrementally.
 
@@ -19,7 +20,7 @@ static func relativeVolume(onIncrement: @escaping @Sendable () async throws -> V
 
 ## Mentions
 
-- [Publishing remote media sessions](publishing-remote-media-sessions.md)
+- [Publishing remote media sessions](../../publishing-remote-media-sessions.md)
 
 #### Discussion
 

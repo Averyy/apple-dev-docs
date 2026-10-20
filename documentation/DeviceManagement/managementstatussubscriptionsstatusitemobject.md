@@ -1,7 +1,8 @@
 # ManagementStatusSubscriptionsStatusItemObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The declaration for configuring a specific status subscription.
 
@@ -16,7 +17,7 @@ The declaration for configuring a specific status subscription.
 
 ## Declaration
 
-```swift
+```
 object ManagementStatusSubscriptionsStatusItemObject
 ```
 

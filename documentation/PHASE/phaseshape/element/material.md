@@ -1,7 +1,8 @@
 # material
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A surface characteristic that determines the acoustic properties of an object.
 
@@ -17,6 +18,10 @@ A surface characteristic that determines the acoustic properties of an object.
 
 ```swift
 var material: PHASEMaterial? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) PHASEMaterial * material;
 ```
 
 

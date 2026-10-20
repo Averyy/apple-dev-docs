@@ -1,7 +1,8 @@
 # oddPageOrientation
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 var oddPageOrientation: ICEXIFOrientationType { get set }
+```
+
+```objc
+@property (readwrite) ICEXIFOrientationType oddPageOrientation;
 ```
 
 

@@ -1,7 +1,8 @@
 # trailing
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Markers on the trailing edge of the chart.
 

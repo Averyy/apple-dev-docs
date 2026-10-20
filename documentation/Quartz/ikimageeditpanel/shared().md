@@ -1,7 +1,8 @@
 # shared()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a shared instance of an image editing panel.
 
@@ -12,6 +13,10 @@ Creates a shared instance of an image editing panel.
 
 ```swift
 class func shared() -> IKImageEditPanel!
+```
+
+```objc
++ (IKImageEditPanel *) sharedImageEditPanel;
 ```
 
 #### Return Value

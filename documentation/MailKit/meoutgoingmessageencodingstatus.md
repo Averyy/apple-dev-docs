@@ -1,7 +1,8 @@
 # MEOutgoingMessageEncodingStatus
 
 **Framework**: MailKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains information about security measures the user can apply when composing a message.
 
@@ -14,9 +15,13 @@ An object that contains information about security measures the user can apply w
 class MEOutgoingMessageEncodingStatus
 ```
 
+```objc
+@interface MEOutgoingMessageEncodingStatus : NSObject
+```
+
 #### Overview
 
-As a user composes a new message, MailKit requests the encoding status from your message security handler. The handler provides an [`MEOutgoingMessageEncodingStatus`](meoutgoingmessageencodingstatus.md) that contains:
+As a user composes a new message, MailKit requests the encoding status from your message security handler. The handler provides an [`MEOutgoingMessageEncodingStatus`](./meoutgoingmessageencodingstatus.md) that contains:
 
 - Boolean values that indicate if the handler can sign or encrypt the message
 - An error if verifying the security status fails
@@ -25,40 +30,41 @@ As a user composes a new message, MailKit requests the encoding status from your
 ## Topics
 
 ### Providing Encoding Status
-- [init(canSign: Bool, canEncrypt: Bool, securityError: (any Error)?, addressesFailingEncryption: [MEEmailAddress])](meoutgoingmessageencodingstatus/init(cansign:canencrypt:securityerror:addressesfailingencryption:).md)
+- [init(canSign: Bool, canEncrypt: Bool, securityError: (any Error)?, addressesFailingEncryption: [MEEmailAddress])](./meoutgoingmessageencodingstatus/init%28cansign,canencrypt,securityerror,addressesfailingencryption%29.md)
   Creates an object that describes whether the message security handler can encrypt or sign an outgoing message.
-- [var canSign: Bool](meoutgoingmessageencodingstatus/cansign.md)
+- [var canSign: Bool](./meoutgoingmessageencodingstatus/cansign.md)
   A Boolean value that indicates the message security handler can digitally sign the outgoing message.
-- [var canEncrypt: Bool](meoutgoingmessageencodingstatus/canencrypt.md)
+- [var canEncrypt: Bool](./meoutgoingmessageencodingstatus/canencrypt.md)
   A Boolean value that indicates the message security handler can encrypt the outgoing message.
-- [var securityError: (any Error)?](meoutgoingmessageencodingstatus/securityerror.md)
+- [var securityError: (any Error)?](./meoutgoingmessageencodingstatus/securityerror.md)
   An error that the message encoder encountered while determining the encoding status for the outgoing message.
-- [var addressesFailingEncryption: [MEEmailAddress]](meoutgoingmessageencodingstatus/addressesfailingencryption.md)
+- [var addressesFailingEncryption: [MEEmailAddress]](./meoutgoingmessageencodingstatus/addressesfailingencryption.md)
   An array of email addresses that prevent the message security handler from signing the message.
 ### Initializers
-- [init?(coder: NSCoder)](meoutgoingmessageencodingstatus/init(coder:).md)
+- [init?(coder: NSCoder)](./meoutgoingmessageencodingstatus/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [protocol MEMessageEncoder](memessageencoder.md)
+### Encrypting and Signing Messages
+- [protocol MEMessageEncoder](./memessageencoder.md)
   An object that encrypts or digitally signs outgoing messages.
-- [class MEEncodedOutgoingMessage](meencodedoutgoingmessage.md)
+- [class MEEncodedOutgoingMessage](./meencodedoutgoingmessage.md)
   An object that contains the signed or encrypted representation of a message’s RFC 2822 data.
-- [class MEMessageEncodingResult](memessageencodingresult.md)
+- [class MEMessageEncodingResult](./memessageencodingresult.md)
   An object that contains a signed or encrypted message, or errors that indicate failure to encode the message.
 
 

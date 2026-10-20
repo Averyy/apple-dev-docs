@@ -1,7 +1,8 @@
 # MTRCommissionableBrowserDelegate
 
 **Framework**: Matter  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 17.0+
@@ -18,16 +19,20 @@
 protocol MTRCommissionableBrowserDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol MTRCommissionableBrowserDelegate <NSObject>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func controller(MTRDeviceController, didFindCommissionableDevice: MTRCommissionableBrowserResult)](mtrcommissionablebrowserdelegate/controller(_:didfindcommissionabledevice:).md)
-- [func controller(MTRDeviceController, didRemoveCommissionableDevice: MTRCommissionableBrowserResult)](mtrcommissionablebrowserdelegate/controller(_:didremovecommissionabledevice:).md)
+- [func controller(MTRDeviceController, didFindCommissionableDevice: MTRCommissionableBrowserResult)](./mtrcommissionablebrowserdelegate/controller%28_,didfindcommissionabledevice%29.md)
+- [func controller(MTRDeviceController, didRemoveCommissionableDevice: MTRCommissionableBrowserResult)](./mtrcommissionablebrowserdelegate/controller%28_,didremovecommissionabledevice%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

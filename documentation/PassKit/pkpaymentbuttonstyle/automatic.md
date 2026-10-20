@@ -1,7 +1,8 @@
 # PKPaymentButtonStyle.automatic
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A button that automatically changes its appearance when the user switches between Light Mode and Dark Mode.
 
@@ -19,17 +20,22 @@ A button that automatically changes its appearance when the user switches betwee
 case automatic
 ```
 
+```c
+PKPaymentButtonStyleAutomatic
+```
+
 #### Discussion
 
-The button uses the [`PKPaymentButtonStyle.white`](pkpaymentbuttonstyle/white.md) style in Dark Mode and the [`PKPaymentButtonStyle.black`](pkpaymentbuttonstyle/black.md) style in Light Mode.
+The button uses the [`PKPaymentButtonStyle.white`](./white.md) style in Dark Mode and the [`PKPaymentButtonStyle.black`](./black.md) style in Light Mode.
 
 ## See Also
 
-- [PKPaymentButtonStyle.white](pkpaymentbuttonstyle/white.md)
+### Payment button styles
+- [PKPaymentButtonStyle.white](./white.md)
   A white button with black lettering.
-- [PKPaymentButtonStyle.whiteOutline](pkpaymentbuttonstyle/whiteoutline.md)
+- [PKPaymentButtonStyle.whiteOutline](./whiteoutline.md)
   A white button with black lettering and a black outline.
-- [PKPaymentButtonStyle.black](pkpaymentbuttonstyle/black.md)
+- [PKPaymentButtonStyle.black](./black.md)
   A black button with white lettering.
 
 

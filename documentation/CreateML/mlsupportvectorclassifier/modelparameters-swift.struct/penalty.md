@@ -1,10 +1,11 @@
 # penalty
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS 10.14+
+- macOS 10.14+ - Deprecated in 14.0
 
 ## Declaration
 
@@ -14,12 +15,13 @@ var penalty: Double
 
 ## See Also
 
-- [var convergenceThreshold: Double](mlsupportvectorclassifier/modelparameters-swift.struct/convergencethreshold.md)
-- [var featureRescaling: Bool](mlsupportvectorclassifier/modelparameters-swift.struct/featurerescaling.md)
-- [var maxIterations: Int](mlsupportvectorclassifier/modelparameters-swift.struct/maxiterations.md)
-- [var validationData: MLDataTable?](mlsupportvectorclassifier/modelparameters-swift.struct/validationdata-swift.property.md)
+### Accessing parameters
+- [var convergenceThreshold: Double](./convergencethreshold.md)
+- [var featureRescaling: Bool](./featurerescaling.md)
+- [var maxIterations: Int](./maxiterations.md)
+- [var validationData: MLDataTable?](./validationdata-swift.property.md)
   Validation data represented as a `MLDataTable`.
-- [var validation: MLSupportVectorClassifier.ModelParameters.ValidationData](mlsupportvectorclassifier/modelparameters-swift.struct/validation.md)
+- [var validation: MLSupportVectorClassifier.ModelParameters.ValidationData](./validation.md)
   Validation data.
 
 

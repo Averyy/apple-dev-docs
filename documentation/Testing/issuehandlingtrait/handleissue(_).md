@@ -1,7 +1,8 @@
 # handleIssue(_:)
 
 **Framework**: Swift Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handle a specified issue.
 

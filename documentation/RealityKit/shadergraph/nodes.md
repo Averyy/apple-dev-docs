@@ -1,7 +1,8 @@
 # nodes
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All nodes in the graph, keyed by node name.
 
@@ -19,7 +20,7 @@ final var nodes: [String : ShaderGraph.Node] { get }
 
 #### Discussion
 
-Includes the virtual [`arguments`](shadergraph/arguments.md) and [`results`](shadergraph/results.md) nodes.
+Includes the virtual [`arguments`](./arguments.md) and [`results`](./results.md) nodes.
 
 
 ---

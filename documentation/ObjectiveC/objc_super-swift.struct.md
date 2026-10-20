@@ -1,23 +1,28 @@
 # objc_super
 
 **Framework**: Objective-C Runtime  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Specifies the superclass of an instance.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 struct objc_super
+```
+
+```c
+struct objc_super;
 ```
 
 #### Discussion
@@ -27,26 +32,27 @@ The compiler generates an `objc_super` data structure when it encounters the `su
 ## Topics
 
 ### Fields
-- [var receiver: Unmanaged<AnyObject>](objc_super-swift.struct/receiver.md)
-  A pointer of type [`objc_object`](objc_object.md). Specifies an instance of a class.
-- [var super_class: AnyClass](objc_super-swift.struct/super_class.md)
-  A pointer to a [`Class`](class.md) data structure. Specifies the particular superclass of the instance to message.
+- [var receiver: Unmanaged<AnyObject>](./objc_super-swift.struct/receiver.md)
+  A pointer of type [`objc_object`](./objc_object.md). Specifies an instance of a class.
+- [var super_class: AnyClass](./objc_super-swift.struct/super_class.md)
+  A pointer to a [`Class`](./class.md) data structure. Specifies the particular superclass of the instance to message.
 ### Instance Properties
-- [var receiver: Unmanaged<AnyObject>](objc_super-swift.struct/receiver.md)
-  A pointer of type [`objc_object`](objc_object.md). Specifies an instance of a class.
-- [var super_class: AnyClass](objc_super-swift.struct/super_class.md)
-  A pointer to a [`Class`](class.md) data structure. Specifies the particular superclass of the instance to message.
+- [var receiver: Unmanaged<AnyObject>](./objc_super-swift.struct/receiver.md)
+  A pointer of type [`objc_object`](./objc_object.md). Specifies an instance of a class.
+- [var super_class: AnyClass](./objc_super-swift.struct/super_class.md)
+  A pointer to a [`Class`](./class.md) data structure. Specifies the particular superclass of the instance to message.
 ### Initializers
-- [init(receiver: Unmanaged<AnyObject>, super_class: AnyClass)](objc_super-swift.struct/init(receiver:super_class:).md)
+- [init(receiver: Unmanaged<AnyObject>, super_class: AnyClass)](./objc_super-swift.struct/init%28receiver,super_class%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [struct objc_object](objc_object.md)
+### Instance Data Types
+- [struct objc_object](./objc_object.md)
   Represents an instance of a class.
 
 

@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Accessory Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A structure that uniquely identifies the notification.
 
@@ -16,15 +17,16 @@ let identifier: AccessoryNotification.Identifier
 
 #### Discussion
 
-This structure combines the source app’s bundle identifier ([`sourceIdentifier`](accessorynotification/identifier-swift.struct/sourceidentifier.md)) with an app-provided notification identifier ([`notificationIdentifier`](accessorynotification/identifier-swift.struct/notificationidentifier.md)).
+This structure combines the source app’s bundle identifier ([`sourceIdentifier`](./identifier-swift.struct/sourceidentifier.md)) with an app-provided notification identifier ([`notificationIdentifier`](./identifier-swift.struct/notificationidentifier.md)).
 
 ## See Also
 
-- [AccessoryNotification.Identifier](accessorynotification/identifier-swift.struct.md)
+### Identifying and grouping notifications
+- [AccessoryNotification.Identifier](./identifier-swift.struct.md)
   A structure that uniquely identifies a notification.
-- [let threadIdentifier: String?](accessorynotification/threadidentifier.md)
+- [let threadIdentifier: String?](./threadidentifier.md)
   An identifier that groups notifications that belong to the same thread.
-- [let sourceName: String](accessorynotification/sourcename.md)
+- [let sourceName: String](./sourcename.md)
   A display name for the bundle that sent the notification.
 
 

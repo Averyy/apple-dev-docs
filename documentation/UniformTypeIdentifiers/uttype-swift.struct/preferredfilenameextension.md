@@ -1,7 +1,8 @@
 # preferredFilenameExtension
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred filename extension for the type.
 
@@ -22,7 +23,7 @@ var preferredFilenameExtension: String? { get }
 
 #### Discussion
 
-If available, the preferred (first available) tag of class [`filenameExtension`](uttagclass/filenameextension.md).
+If available, the preferred (first available) tag of class [`filenameExtension`](../uttagclass/filenameextension.md).
 
 Many types require the generation of a filename; for example, when saving a file to disk. If not `nil`, the value of this property is the best available filename extension for this type.
 
@@ -34,9 +35,10 @@ type.tags[.filenameExtension]?.first
 
 ## See Also
 
-- [var preferredMIMEType: String?](uttype-swift.struct/preferredmimetype.md)
+### Obtaining tags
+- [var preferredMIMEType: String?](./preferredmimetype.md)
   The preferred MIME type for the type.
-- [var tags: [UTTagClass : [String]]](uttype-swift.struct/tags.md)
+- [var tags: [UTTagClass : [String]]](./tags.md)
   The tag specification dictionary of the type.
 
 

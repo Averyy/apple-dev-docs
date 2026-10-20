@@ -1,7 +1,8 @@
 # ManipulationComponent.AudioConfiguration
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A configuration for audio playback during an interaction.
 
@@ -17,17 +18,17 @@ struct AudioConfiguration
 ## Topics
 
 ### Type Properties
-- [static var `default`: ManipulationComponent.AudioConfiguration](manipulationcomponent/audioconfiguration-swift.struct/default.md)
+- [static var `default`: ManipulationComponent.AudioConfiguration](./audioconfiguration-swift.struct/default.md)
   The default configuration. The system will apply default sounds as the user interacts with the object.
-- [static var none: ManipulationComponent.AudioConfiguration](manipulationcomponent/audioconfiguration-swift.struct/none.md)
+- [static var none: ManipulationComponent.AudioConfiguration](./audioconfiguration-swift.struct/none.md)
   The system will not apply any sounds.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

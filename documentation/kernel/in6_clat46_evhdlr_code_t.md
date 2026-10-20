@@ -1,14 +1,15 @@
 # in6_clat46_evhdlr_code_t
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum in6_clat46_evhdlr_code_t : unsigned int {
     ...
 } in6_clat46_evhdlr_code_t;
@@ -17,8 +18,8 @@ typedef enum in6_clat46_evhdlr_code_t : unsigned int {
 ## Topics
 
 ### Constants
-- [IN6_CLAT46_EVENT_V4_FLOW](in6_clat46_evhdlr_code_t/in6_clat46_event_v4_flow.md)
-- [IN6_CLAT46_EVENT_V6_ADDR_CONFFAIL](in6_clat46_evhdlr_code_t/in6_clat46_event_v6_addr_conffail.md)
+- [IN6_CLAT46_EVENT_V4_FLOW](./in6_clat46_evhdlr_code_t/in6_clat46_event_v4_flow.md)
+- [IN6_CLAT46_EVENT_V6_ADDR_CONFFAIL](./in6_clat46_evhdlr_code_t/in6_clat46_event_v6_addr_conffail.md)
 
 
 ---

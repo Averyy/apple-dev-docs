@@ -1,7 +1,8 @@
 # init(x:y:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a point mark with fixed x position and plots values with y.
 
@@ -33,9 +34,9 @@ Chart(data) {
 }
 ```
 
-![Vertical point chart with weight plotted to the y-axis. There are 9 points at: 22, 24, 18, 22, 30, 27, 20, 14, 29.](/images/com.apple.Charts/PointMarkSwift.PointMarkVerticalPointChart@2x.png)
+![Vertical point chart with weight plotted to the y-axis. There are 9 points at: 22, 24, 18, 22, 30, 27, 20, 14, 29.](https://developer.apple.com/tutorials/images/com.apple.Charts/PointMarkSwift.PointMarkVerticalPointChart@2x.png)
 
-For more background, see the first example used in [`PointMark`](pointmark.md) which shows the structure that contains the `weight` property.
+For more background, see the first example used in [`PointMark`](../pointmark.md) which shows the structure that contains the `weight` property.
 
 ## Parameters
 
@@ -44,11 +45,12 @@ For more background, see the first example used in [`PointMark`](pointmark.md) w
 
 ## See Also
 
-- [init<X, Y>(x: PlottableValue<X>, y: PlottableValue<Y>)](pointmark/init(x:y:)-44ke9.md)
+### Creating a point mark
+- [init<X, Y>(x: PlottableValue<X>, y: PlottableValue<Y>)](./init%28x,y%29-44ke9.md)
   Creates a point mark that plots values to x and y.
-- [init<X>(x: PlottableValue<X>, y: CGFloat?)](pointmark/init(x:y:)-9hppd.md)
+- [init<X>(x: PlottableValue<X>, y: CGFloat?)](./init%28x,y%29-9hppd.md)
   Creates a point mark that plots a value on x with fixed y position.
-- [init(x: PlottableValue<some Plottable>, y: PlottableValue<some Plottable>, z: PlottableValue<some Plottable>)](pointmark/init(x:y:z:).md)
+- [init(x: PlottableValue<some Plottable>, y: PlottableValue<some Plottable>, z: PlottableValue<some Plottable>)](./init%28x,y,z%29.md)
   Creates a 3D point mark that plots values to x, y and z.
 
 

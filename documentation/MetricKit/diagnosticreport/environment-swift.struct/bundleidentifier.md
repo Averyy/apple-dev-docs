@@ -1,7 +1,8 @@
 # bundleIdentifier
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 String representation of the bundle ID of the process.
 
@@ -20,7 +21,7 @@ let bundleIdentifier: String
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](../../analyzing-app-performance-with-metrickit.md)
 
 
 ---

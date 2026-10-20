@@ -1,7 +1,8 @@
 # CNContactIdentifierKey
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The contact’s unique identifier.
 
@@ -19,15 +20,20 @@ The contact’s unique identifier.
 let CNContactIdentifierKey: String
 ```
 
+```c
+extern NSString * const CNContactIdentifierKey;
+```
+
 #### Discussion
 
 This key takes a string value.
 
 ## See Also
 
-- [let CNContactTypeKey: String](cncontacttypekey.md)
+### Contact Identification
+- [let CNContactTypeKey: String](./cncontacttypekey.md)
   The type of contact.
-- [let CNContactPropertyAttribute: String](cncontactpropertyattribute.md)
+- [let CNContactPropertyAttribute: String](./cncontactpropertyattribute.md)
   The contact’s name component property key.
 
 

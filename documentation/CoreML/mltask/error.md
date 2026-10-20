@@ -1,7 +1,8 @@
 # error
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying error if the task is in a failed state.
 
@@ -20,11 +21,16 @@ The underlying error if the task is in a failed state.
 var error: (any Error)? { get }
 ```
 
+```objc
+@property (atomic, copy, readonly, nullable) NSError * error;
+```
+
 ## See Also
 
-- [var state: MLTaskState](mltask/state.md)
+### Checking the state of a task
+- [var state: MLTaskState](./state.md)
   The current state of the machine learning task.
-- [enum MLTaskState](mltaskstate.md)
+- [enum MLTaskState](../mltaskstate.md)
   The state of a machine learning task.
 
 

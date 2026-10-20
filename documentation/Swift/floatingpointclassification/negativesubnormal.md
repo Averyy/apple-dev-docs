@@ -1,7 +1,8 @@
 # FloatingPointClassification.negativeSubnormal
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A negative, nonzero number that does not use the full precision of the floating-point type.
 

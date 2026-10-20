@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates set of corners containing only the specified corner.
 

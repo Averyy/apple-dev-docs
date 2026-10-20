@@ -1,13 +1,14 @@
 # init(rawValue:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.2+
 - iPadOS 18.2+
 - Mac Catalyst 18.2+
-- macOS ?+
+- macOS
 - visionOS 2.2+
 
 ## Declaration

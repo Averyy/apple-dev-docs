@@ -1,7 +1,8 @@
 # provisionPACAnonymously
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to provision the device anonymously.
 

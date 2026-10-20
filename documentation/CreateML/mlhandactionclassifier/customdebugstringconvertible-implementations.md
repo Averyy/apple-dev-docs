@@ -1,11 +1,12 @@
 # CustomDebugStringConvertible Implementations
 
-**Framework**: Create ML
+**Framework**: Create ML  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var debugDescription: String](mlhandactionclassifier/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the hand action classifier suitable for debugging.
 
 

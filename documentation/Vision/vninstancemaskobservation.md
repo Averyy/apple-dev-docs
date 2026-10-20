@@ -1,7 +1,8 @@
 # VNInstanceMaskObservation
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An observation that contains an instance mask that labels instances in the mask.
 
@@ -19,44 +20,49 @@ An observation that contains an instance mask that labels instances in the mask.
 class VNInstanceMaskObservation
 ```
 
+```objc
+@interface VNInstanceMaskObservation : VNObservation
+```
+
 ## Topics
 
 ### Accessing Instances
-- [var allInstances: IndexSet](vninstancemaskobservation/allinstances.md)
+- [var allInstances: IndexSet](./vninstancemaskobservation/allinstances.md)
   The collection that contains all instances, excluding the background.
-- [var instanceMask: CVPixelBuffer](vninstancemaskobservation/instancemask.md)
+- [var instanceMask: CVPixelBuffer](./vninstancemaskobservation/instancemask.md)
   The resulting mask that represents all instances.
 ### Creating a Mask
-- [func generateMask(forInstances: IndexSet) throws -> CVPixelBuffer](vninstancemaskobservation/generatemask(forinstances:).md)
+- [func generateMask(forInstances: IndexSet) throws -> CVPixelBuffer](./vninstancemaskobservation/generatemask%28forinstances%29.md)
   Creates a low-resolution mask from the instances you specify.
-- [func generateMaskedImage(ofInstances: IndexSet, from: VNImageRequestHandler, croppedToInstancesExtent: Bool) throws -> CVPixelBuffer](vninstancemaskobservation/generatemaskedimage(ofinstances:from:croppedtoinstancesextent:).md)
+- [func generateMaskedImage(ofInstances: IndexSet, from: VNImageRequestHandler, croppedToInstancesExtent: Bool) throws -> CVPixelBuffer](./vninstancemaskobservation/generatemaskedimage%28ofinstances,from,croppedtoinstancesextent%29.md)
   Creates a high-resolution image where everything becomes transparent black, except for the instances you specify.
-- [func generateScaledMaskForImage(forInstances: IndexSet, from: VNImageRequestHandler) throws -> CVPixelBuffer](vninstancemaskobservation/generatescaledmaskforimage(forinstances:from:).md)
+- [func generateScaledMaskForImage(forInstances: IndexSet, from: VNImageRequestHandler) throws -> CVPixelBuffer](./vninstancemaskobservation/generatescaledmaskforimage%28forinstances,from%29.md)
   Creates a high-resolution mask where everything becomes transparent black, except for the instances you specify.
 
 ## Relationships
 
 ### Inherits From
-- [VNObservation](vnobservation.md)
+- [VNObservation](./vnobservation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [VNRequestRevisionProviding](vnrequestrevisionproviding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [VNRequestRevisionProviding](./vnrequestrevisionproviding.md)
 
 ## See Also
 
-- [Applying visual effects to foreground subjects](applying-visual-effects-to-foreground-subjects.md)
+### Image background removal
+- [Applying visual effects to foreground subjects](./applying-visual-effects-to-foreground-subjects.md)
   Segment the foreground subjects of an image and composite them to a new background with visual effects.
-- [class VNGenerateForegroundInstanceMaskRequest](vngenerateforegroundinstancemaskrequest.md)
+- [class VNGenerateForegroundInstanceMaskRequest](./vngenerateforegroundinstancemaskrequest.md)
   A request that generates an instance mask of noticable objects to separate from the background.
-- [var VNGenerateForegroundInstanceMaskRequestRevision1: Int](vngenerateforegroundinstancemaskrequestrevision1.md)
+- [var VNGenerateForegroundInstanceMaskRequestRevision1: Int](./vngenerateforegroundinstancemaskrequestrevision1.md)
   A constant for specifying the first revision of the foreground instance mask request.
 
 

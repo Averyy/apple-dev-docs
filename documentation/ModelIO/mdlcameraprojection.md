@@ -1,9 +1,10 @@
 # MDLCameraProjection
 
 **Framework**: Model I/O  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Options for camera projection styles, used by the [`projection`](mdlcamera/projection.md) property.
+Options for camera projection styles, used by the [`projection`](./mdlcamera/projection.md) property.
 
 **Availability**:
 - iOS 9.0+
@@ -19,41 +20,46 @@ Options for camera projection styles, used by the [`projection`](mdlcamera/proje
 enum MDLCameraProjection
 ```
 
+```c
+enum MDLCameraProjection : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [MDLCameraProjection.orthographic](mdlcameraprojection/orthographic.md)
+- [MDLCameraProjection.orthographic](./mdlcameraprojection/orthographic.md)
   An orthographic projection.
-- [MDLCameraProjection.perspective](mdlcameraprojection/perspective.md)
+- [MDLCameraProjection.perspective](./mdlcameraprojection/perspective.md)
   A perspective projection.
 ### Initializers
-- [init?(rawValue: UInt)](mdlcameraprojection/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mdlcameraprojection/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var projectionMatrix: matrix_float4x4](mdlcamera/projectionmatrix.md)
+### Managing Camera Perspective
+- [var projectionMatrix: matrix_float4x4](./mdlcamera/projectionmatrix.md)
   A transformation matrix that determines the extent of a scene visible to the camera.
-- [var projection: MDLCameraProjection](mdlcamera/projection.md)
+- [var projection: MDLCameraProjection](./mdlcamera/projection.md)
   The style of projection transform used by the camera.
-- [var nearVisibilityDistance: Float](mdlcamera/nearvisibilitydistance.md)
+- [var nearVisibilityDistance: Float](./mdlcamera/nearvisibilitydistance.md)
   The camera’s near depth limit.
-- [var farVisibilityDistance: Float](mdlcamera/farvisibilitydistance.md)
+- [var farVisibilityDistance: Float](./mdlcamera/farvisibilitydistance.md)
   The camera’s far depth limit.
-- [var fieldOfView: Float](mdlcamera/fieldofview.md)
+- [var fieldOfView: Float](./mdlcamera/fieldofview.md)
   The camera’s field of view, in degrees.
-- [func ray(to: vector_int2, forViewPort: vector_int2) -> vector_float3](mdlcamera/ray(to:forviewport:).md)
+- [func ray(to: vector_int2, forViewPort: vector_int2) -> vector_float3](./mdlcamera/ray%28to,forviewport%29.md)
   Returns a point, in 3D world coordinates, corresponding to the specified 2D view coordinates.
-- [var worldToMetersConversionScale: Float](mdlcamera/worldtometersconversionscale.md)
+- [var worldToMetersConversionScale: Float](./mdlcamera/worldtometersconversionscale.md)
   The scale factor to meters from the world coordinate system containing the camera.
 
 

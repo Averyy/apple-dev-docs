@@ -1,7 +1,8 @@
 # versionID
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The business’ application version.
 

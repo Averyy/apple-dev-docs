@@ -1,7 +1,8 @@
 # CFStringTokenizerCopyBestStringLanguage(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Guesses a language of a given string and returns the guess as a BCP 47 string.
 
@@ -20,9 +21,13 @@ Guesses a language of a given string and returns the guess as a BCP 47 string.
 func CFStringTokenizerCopyBestStringLanguage(_ string: CFString!, _ range: CFRange) -> CFString!
 ```
 
+```c
+extern CFStringRefCFStringTokenizerCopyBestStringLanguage(CFStringRef string, CFRange range);
+```
+
 #### Return Value
 
-A language in BCP 47 form, or `NULL` if the language in `string` could not be identified. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A language in BCP 47 form, or `NULL` if the language in `string` could not be identified. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 #### Discussion
 

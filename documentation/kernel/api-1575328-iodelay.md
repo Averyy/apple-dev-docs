@@ -1,7 +1,8 @@
 # IODelay
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Spin delay for a number of microseconds.
 
@@ -10,7 +11,7 @@ Spin delay for a number of microseconds.
 
 ## Declaration
 
-```swift
+```c
 void IODelay(unsigned int microseconds);
 ```
 
@@ -24,11 +25,12 @@ This function spins to delay for at least the number of specified microseconds. 
 
 ## See Also
 
-- [IOPause](1575333-iopause.md)
+### Sleep
+- [IOPause](./api-1575333-iopause.md)
   Spin delay for a number of nanoseconds.
-- [IOSleep](1575320-iosleep.md)
+- [IOSleep](./api-1575320-iosleep.md)
   Sleep the calling thread for a number of milliseconds.
-- [IOSleepWithLeeway](1575303-iosleepwithleeway.md)
+- [IOSleepWithLeeway](./api-1575303-iosleepwithleeway.md)
 
 
 ---

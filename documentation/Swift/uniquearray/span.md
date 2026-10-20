@@ -1,7 +1,8 @@
 # span
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A span over the elements of this array, providing direct read-only access.
 
@@ -22,7 +23,7 @@ var span: Span<Element> { get }
 
 #### Discussion
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

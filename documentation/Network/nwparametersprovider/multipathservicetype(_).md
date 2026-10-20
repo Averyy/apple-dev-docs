@@ -2,6 +2,7 @@
 
 **Framework**: Network  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Set the multipath service to use for connections.
@@ -24,6 +25,12 @@ func multipathServiceType(_ type: NWParameters.MultipathServiceType) -> Self
 ## Parameters
 
 - `type`: The multipath service type to use.
+
+## Default Implementations
+
+### NWParametersProvider Implementations
+- [func multipathServiceType(NWParameters.MultipathServiceType) -> Self](./multipathservicetype%28_%29-11gez.md)
+  Set the multipath service to use for connections.
 
 
 ---

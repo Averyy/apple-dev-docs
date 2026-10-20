@@ -1,7 +1,8 @@
 # SubscriptionAvailability.Relationships.AvailableTerritories.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a subscription availability.
 
@@ -10,14 +11,14 @@ The request body you use to update a subscription availability.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionAvailability.Relationships.AvailableTerritories.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `territories`
 
 
 ---

@@ -1,7 +1,8 @@
 # body
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized text that provides the notification’s main content.
 
@@ -19,6 +20,18 @@ The localized text that provides the notification’s main content.
 var body: String { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readwrite) NSString * body;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readwrite) NSString * body;
+```
+
 #### Discussion
 
 Use this property to specify the body of the notification alert. If your app isn’t authorized to display alert-based notifications, the system ignores this property.
@@ -27,9 +40,10 @@ The body text should contain the final text that you want to display, and should
 
 ## See Also
 
-- [var title: String](unmutablenotificationcontent/title.md)
+### Providing the primary content
+- [var title: String](./title.md)
   The localized text that provides the notification’s primary description.
-- [var subtitle: String](unmutablenotificationcontent/subtitle.md)
+- [var subtitle: String](./subtitle.md)
   The localized text that provides the notification’s secondary description.
 
 

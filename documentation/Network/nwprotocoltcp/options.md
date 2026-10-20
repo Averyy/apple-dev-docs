@@ -1,7 +1,8 @@
 # NWProtocolTCP.Options
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container of options for configuring how TCP is used on a connection.
 
@@ -23,52 +24,53 @@ class Options
 ## Topics
 
 ### Customizing TCP Options
-- [init()](nwprotocoltcp/options/init.md)
+- [init()](./options/init%28%29.md)
   Initializes a default set of TCP connection options.
-- [var enableFastOpen: Bool](nwprotocoltcp/options/enablefastopen.md)
+- [var enableFastOpen: Bool](./options/enablefastopen.md)
   A Boolean that enables TCP Fast Open on a connection.
-- [var maximumSegmentSize: Int](nwprotocoltcp/options/maximumsegmentsize.md)
+- [var maximumSegmentSize: Int](./options/maximumsegmentsize.md)
   TCP’s maximum segment size in bytes.
-- [var noDelay: Bool](nwprotocoltcp/options/nodelay.md)
+- [var noDelay: Bool](./options/nodelay.md)
   A Boolean that disables Nagle’s algorithm for TCP.
-- [var noOptions: Bool](nwprotocoltcp/options/nooptions.md)
+- [var noOptions: Bool](./options/nooptions.md)
   A Boolean that sets TCP into no-options mode.
-- [var noPush: Bool](nwprotocoltcp/options/nopush.md)
+- [var noPush: Bool](./options/nopush.md)
   A Boolean that sets TCP into no-push mode.
-- [var retransmitFinDrop: Bool](nwprotocoltcp/options/retransmitfindrop.md)
+- [var retransmitFinDrop: Bool](./options/retransmitfindrop.md)
   A Boolean that causes TCP to drop its connection after not receiving an ACK packet after a FIN packet.
-- [var disableAckStretching: Bool](nwprotocoltcp/options/disableackstretching.md)
+- [var disableAckStretching: Bool](./options/disableackstretching.md)
   A Boolean that disables TCP acknowledgment stretching.
-- [var disableECN: Bool](nwprotocoltcp/options/disableecn.md)
+- [var disableECN: Bool](./options/disableecn.md)
   A Boolean that disables negotiation of Explicit Congestion Notification markings.
 ### Configuring Keepalives
-- [var enableKeepalive: Bool](nwprotocoltcp/options/enablekeepalive.md)
+- [var enableKeepalive: Bool](./options/enablekeepalive.md)
   A Boolean that enables TCP keepalives.
-- [var keepaliveIdle: Int](nwprotocoltcp/options/keepaliveidle.md)
+- [var keepaliveIdle: Int](./options/keepaliveidle.md)
   The number of seconds of idleness that TCP waits before sending keepalive probes.
-- [var keepaliveCount: Int](nwprotocoltcp/options/keepalivecount.md)
+- [var keepaliveCount: Int](./options/keepalivecount.md)
   The number of keepalive probes that TCP sends before terminating the connection.
-- [var keepaliveInterval: Int](nwprotocoltcp/options/keepaliveinterval.md)
+- [var keepaliveInterval: Int](./options/keepaliveinterval.md)
   The number of seconds that TCP waits between sending keepalive probes.
 ### Setting Timeouts
-- [var connectionTimeout: Int](nwprotocoltcp/options/connectiontimeout.md)
+- [var connectionTimeout: Int](./options/connectiontimeout.md)
   The number of seconds that TCP waits before timing out its handshake.
-- [var connectionDropTime: Int](nwprotocoltcp/options/connectiondroptime.md)
+- [var connectionDropTime: Int](./options/connectiondroptime.md)
   The timeout, in seconds, for TCP retransmission attempts.
-- [var persistTimeout: Int](nwprotocoltcp/options/persisttimeout.md)
+- [var persistTimeout: Int](./options/persisttimeout.md)
   The TCP persist timeout, in seconds, as defined by RFC 6429.
 
 ## Relationships
 
 ### Inherits From
-- [NWProtocolOptions](nwprotocoloptions.md)
+- [NWProtocolOptions](../nwprotocoloptions.md)
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static let definition: NWProtocolDefinition](nwprotocoltcp/definition.md)
+### Creating TCP Connections
+- [static let definition: NWProtocolDefinition](./definition.md)
   The system definition of the Transport Control Protocol.
 
 

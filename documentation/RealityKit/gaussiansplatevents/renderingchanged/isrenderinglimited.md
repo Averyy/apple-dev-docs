@@ -1,7 +1,8 @@
 # isRenderingLimited
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the framework is currently limiting the entity’s splat rendering.
 

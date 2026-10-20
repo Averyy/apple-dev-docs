@@ -1,7 +1,8 @@
 # y
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The y-coordinate.
 
@@ -22,9 +23,10 @@ var y: CGFloat { get }
 
 ## See Also
 
-- [let cgPoint: CGPoint](normalizedpoint/cgpoint.md)
+### Inspecting a normalized point
+- [let cgPoint: CGPoint](./cgpoint.md)
   The Core Graphics point for this point.
-- [var x: CGFloat](normalizedpoint/x.md)
+- [var x: CGFloat](./x.md)
   The x-coordinate.
 
 

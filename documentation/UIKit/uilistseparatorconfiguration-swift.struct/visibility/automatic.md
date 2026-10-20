@@ -1,7 +1,8 @@
 # UIListSeparatorConfiguration.Visibility.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The collection view list section automatically determines the visibility of the separator.
 
@@ -9,7 +10,7 @@ The collection view list section automatically determines the visibility of the 
 - iOS 14.5+
 - iPadOS 14.5+
 - Mac Catalyst 14.5+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,10 @@ case automatic
 
 ## See Also
 
-- [UIListSeparatorConfiguration.Visibility.hidden](uilistseparatorconfiguration-swift.struct/visibility/hidden.md)
+### Constants
+- [UIListSeparatorConfiguration.Visibility.hidden](./hidden.md)
   The list separator is hidden.
-- [UIListSeparatorConfiguration.Visibility.visible](uilistseparatorconfiguration-swift.struct/visibility/visible.md)
+- [UIListSeparatorConfiguration.Visibility.visible](./visible.md)
   The list separator is visible.
 
 

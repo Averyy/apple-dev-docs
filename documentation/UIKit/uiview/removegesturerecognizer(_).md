@@ -1,7 +1,8 @@
 # removeGestureRecognizer(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Detaches a gesture recognizer from the receiving view.
 
@@ -9,7 +10,7 @@ Detaches a gesture recognizer from the receiving view.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,21 +19,26 @@ Detaches a gesture recognizer from the receiving view.
 func removeGestureRecognizer(_ gestureRecognizer: UIGestureRecognizer)
 ```
 
+```objc
+- (void) removeGestureRecognizer:(UIGestureRecognizer *) gestureRecognizer;
+```
+
 #### Discussion
 
 This method releases `gestureRecognizer` in addition to detaching it from the view.
 
 ## Parameters
 
-- `gestureRecognizer`: An object whose class descends from the [`UIGestureRecognizer`](uigesturerecognizer.md) class.
+- `gestureRecognizer`: An object whose class descends from the [`UIGestureRecognizer`](../uigesturerecognizer.md) class.
 
 ## See Also
 
-- [func addGestureRecognizer(UIGestureRecognizer)](uiview/addgesturerecognizer(_:).md)
+### Managing gesture recognizers
+- [func addGestureRecognizer(UIGestureRecognizer)](./addgesturerecognizer%28_%29.md)
   Attaches a gesture recognizer to the view.
-- [var gestureRecognizers: [UIGestureRecognizer]?](uiview/gesturerecognizers.md)
+- [var gestureRecognizers: [UIGestureRecognizer]?](./gesturerecognizers.md)
   The gesture-recognizer objects currently attached to the view.
-- [func gestureRecognizerShouldBegin(UIGestureRecognizer) -> Bool](uiview/gesturerecognizershouldbegin(_:).md)
+- [func gestureRecognizerShouldBegin(UIGestureRecognizer) -> Bool](./gesturerecognizershouldbegin%28_%29.md)
   Asks the view if the gesture recognizer should continue tracking touch events.
 
 

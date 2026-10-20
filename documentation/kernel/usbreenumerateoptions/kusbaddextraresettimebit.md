@@ -1,7 +1,8 @@
 # kUSBAddExtraResetTimeBit
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 Request extra time after reset.
 
@@ -10,7 +11,7 @@ Request extra time after reset.
 
 ## Declaration
 
-```swift
+```c
 kUSBAddExtraResetTimeBit = 31
 ```
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Represents the state of the input/output command buffer.
@@ -20,9 +21,14 @@ Represents the state of the input/output command buffer.
 var status: MTLIOStatus { get }
 ```
 
+```objc
+@property (readonly) MTLIOStatus status;
+```
+
 ## See Also
 
-- [var error: (any Error)?](mtliocommandbuffer/error.md)
+### Checking the state of a command buffer
+- [var error: (any Error)?](./error.md)
   Stores the details of an error when the GPU experienced a problem with the input/output command buffer.
 
 

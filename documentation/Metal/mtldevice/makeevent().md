@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new event instance that you can use to synchronize commands and resources within the same GPU device.
@@ -20,13 +21,18 @@ Creates a new event instance that you can use to synchronize commands and resour
 func makeEvent() -> (any MTLEvent)?
 ```
 
+```objc
+- (id<MTLEvent>) newEvent;
+```
+
 ## See Also
 
-- [func makeFence() -> (any MTLFence)?](mtldevice/makefence.md)
+### Creating fences and events
+- [func makeFence() -> (any MTLFence)?](./makefence%28%29.md)
   Creates a new memory fence instance.
-- [func makeSharedEvent() -> (any MTLSharedEvent)?](mtldevice/makesharedevent.md)
+- [func makeSharedEvent() -> (any MTLSharedEvent)?](./makesharedevent%28%29.md)
   Creates a new shared event instance that you can use to synchronize commands and resources across different GPU devices.
-- [func makeSharedEvent(handle: MTLSharedEventHandle) -> (any MTLSharedEvent)?](mtldevice/makesharedevent(handle:).md)
+- [func makeSharedEvent(handle: MTLSharedEventHandle) -> (any MTLSharedEvent)?](./makesharedevent%28handle%29.md)
   Recreates a shared event from a handle.
 
 

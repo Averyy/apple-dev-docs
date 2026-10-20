@@ -1,7 +1,8 @@
 # ControlWidgetToggle
 
 **Framework**: WidgetKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A control template representing a toggle.
 
@@ -26,40 +27,41 @@ Toggles are controls that have two states, “off” and “on”.
 ## Topics
 
 ### Initializers
-- [init(isOn: Bool, action: Action, label: () -> Label)](controlwidgettoggle/init(ison:action:label:).md)
+- [init(isOn: Bool, action: Action, label: () -> Label)](./controlwidgettoggle/init%28ison,action,label%29.md)
   Creates a toggle template for a control.
-- [init(isOn: Bool, action: Action, label: () -> Label, valueLabel: (Bool) -> ValueLabel)](controlwidgettoggle/init(ison:action:label:valuelabel:).md)
+- [init(isOn: Bool, action: Action, label: () -> Label, valueLabel: (Bool) -> ValueLabel)](./controlwidgettoggle/init%28ison,action,label,valuelabel%29.md)
   Creates a toggle template for a control.
-- [init(some StringProtocol, isOn: Bool, action: Action, valueLabel: (Bool) -> ValueLabel)](controlwidgettoggle/init(_:ison:action:valuelabel:)-33wfq.md)
+- [init(some StringProtocol, isOn: Bool, action: Action, valueLabel: (Bool) -> ValueLabel)](./controlwidgettoggle/init%28_,ison,action,valuelabel%29-33wfq.md)
   Creates a toggle template for a control.
-- [init(LocalizedStringKey, isOn: Bool, action: Action, valueLabel: (Bool) -> ValueLabel)](controlwidgettoggle/init(_:ison:action:valuelabel:)-5o6bn.md)
+- [init(LocalizedStringKey, isOn: Bool, action: Action, valueLabel: (Bool) -> ValueLabel)](./controlwidgettoggle/init%28_,ison,action,valuelabel%29-5o6bn.md)
   Creates a toggle template for a control.
-- [init(LocalizedStringResource, isOn: Bool, action: Action, valueLabel: (Bool) -> ValueLabel)](controlwidgettoggle/init(_:ison:action:valuelabel:)-4lk32.md)
+- [init(LocalizedStringResource, isOn: Bool, action: Action, valueLabel: (Bool) -> ValueLabel)](./controlwidgettoggle/init%28_,ison,action,valuelabel%29-4lk32.md)
   Creates a toggle template for a control.
 ### Default action label
-- [struct ControlWidgetToggleDefaultLabel](controlwidgettoggledefaultlabel.md)
+- [struct ControlWidgetToggleDefaultLabel](./controlwidgettoggledefaultlabel.md)
   A view that represents the default label for a toggle control if you don’t provide a label.
 
 ## Relationships
 
 ### Conforms To
-- [ControlWidgetTemplate](../swiftui/controlwidgettemplate.md)
+- [ControlWidgetTemplate](../SwiftUI/controlwidgettemplate.md)
 
 ## See Also
 
-- [Creating controls to perform actions across the system](creating-controls-to-perform-actions-across-the-system.md)
+### Setup and configuration
+- [Creating controls to perform actions across the system](./creating-controls-to-perform-actions-across-the-system.md)
   Perform your app’s actions from Control Center, the Lock Screen, and the Action button.
-- [Adding refinements and configuration to controls](adding-refinements-and-configuration-to-controls.md)
+- [Adding refinements and configuration to controls](./adding-refinements-and-configuration-to-controls.md)
   Customize the way controls display across the system and offer people the ability to configure them.
-- [struct StaticControlConfiguration](staticcontrolconfiguration.md)
+- [struct StaticControlConfiguration](./staticcontrolconfiguration.md)
   The description of a control that has no user-configurable options.
-- [struct AppIntentControlConfiguration](appintentcontrolconfiguration.md)
+- [struct AppIntentControlConfiguration](./appintentcontrolconfiguration.md)
   The description of a control that uses a custom app intent to provide user-configurable options.
-- [class ControlCenter](controlcenter.md)
+- [class ControlCenter](./controlcenter.md)
   An object you use to access configuration information for controls and reload them.
-- [struct ControlInfo](controlinfo.md)
+- [struct ControlInfo](./controlinfo.md)
   A structure that contains information about user-configured controls.
-- [struct ControlWidgetButton](controlwidgetbutton.md)
+- [struct ControlWidgetButton](./controlwidgetbutton.md)
   A control template representing a button.
 
 

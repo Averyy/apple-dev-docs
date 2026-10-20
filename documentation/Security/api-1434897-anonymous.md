@@ -1,11 +1,12 @@
 # Anonymous
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [var CSSMERR_APPLETP_CA_PIN_MISMATCH: Int](cssmerr_appletp_ca_pin_mismatch.md)
+- [var CSSMERR_APPLETP_CA_PIN_MISMATCH: Int](./cssmerr_appletp_ca_pin_mismatch.md)
 
 
 ---

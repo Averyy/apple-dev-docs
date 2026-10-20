@@ -1,18 +1,19 @@
 # inet_arp_lookup
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 errno_t inet_arp_lookup(ifnet_t interface, const struct sockaddr_in *ip_dest, struct sockaddr_dl *ll_dest, size_t ll_dest_len, route_t hint, mbuf_t packet);
 ```
 
-#### Return_value
+#### Return Value
 
 May return an error such as EHOSTDOWN or ENETUNREACH. If this function returns EJUSTRETURN, the packet has been queued and will be sent when an arp response is received. If any other value is returned, the caller is responsible for disposing of the packet.
 
@@ -33,8 +34,9 @@ Arp entries are stored in the routing table. This function will lookup the ip de
 
 ## See Also
 
-- [inet_arp_handle_input](1584164-inet_arp_handle_input.md)
-- [inet_arp_init_ifaddr](1584163-inet_arp_init_ifaddr.md)
+### Address Resolution
+- [inet_arp_handle_input](./api-1584164-inet_arp_handle_input.md)
+- [inet_arp_init_ifaddr](./api-1584163-inet_arp_init_ifaddr.md)
 
 
 ---

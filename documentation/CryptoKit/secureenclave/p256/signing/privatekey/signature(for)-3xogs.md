@@ -1,7 +1,8 @@
 # signature(for:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates an Elliptic Curve Digital Signature Algorithm (ECDSA) signature of the digest you provide over the P-256 elliptic curve.
 
@@ -30,7 +31,8 @@ The signature corresponding to the digest. The signing algorithm employs randomi
 
 ## See Also
 
-- [func signature<D>(for: D) throws -> P256.Signing.ECDSASignature](secureenclave/p256/signing/privatekey/signature(for:)-76j0u.md)
+### Generating a signature
+- [func signature<D>(for: D) throws -> P256.Signing.ECDSASignature](./signature%28for%29-76j0u.md)
   Generates an elliptic curve digital signature algorithm (ECDSA) signature of the given data over the P-256 elliptic curve, using SHA-256 as the hash function.
 
 

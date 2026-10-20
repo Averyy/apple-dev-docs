@@ -1,7 +1,8 @@
 # disableAction(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func disableAction(with params: MTRActionsClusterDisableActionParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func disableAction(with params: MTRActionsClusterDisableActionParams) async throws
+```
+
+```objc
+- (void) disableActionWithParams:(MTRActionsClusterDisableActionParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # EISDIR
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Is a directory.
 

@@ -1,17 +1,22 @@
 # getEncryptionMode()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Get the encryption mode for the baseband connection.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getEncryptionMode() -> BluetoothHCIEncryptionMode
+```
+
+```objc
+- (BluetoothHCIEncryptionMode) getEncryptionMode;
 ```
 
 #### Return Value

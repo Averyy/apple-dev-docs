@@ -1,7 +1,8 @@
 # NWProtocolUDP.Metadata
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container representing UDP when sending and receiving packets.
 
@@ -23,16 +24,16 @@ class Metadata
 ## Topics
 
 ### Creating UDP Messages
-- [init()](nwprotocoludp/metadata/init.md)
+- [init()](./metadata/init%28%29.md)
   Initializes a default UDP message.
 
 ## Relationships
 
 ### Inherits From
-- [NWProtocolMetadata](nwprotocolmetadata.md)
+- [NWProtocolMetadata](../nwprotocolmetadata.md)
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

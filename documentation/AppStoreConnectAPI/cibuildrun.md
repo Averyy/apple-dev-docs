@@ -1,7 +1,8 @@
 # CiBuildRun
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A single execution of an Xcode Cloud workflow, capturing the trigger, commit, status, and artifacts produced.
 
@@ -10,16 +11,16 @@ A single execution of an Xcode Cloud workflow, capturing the trigger, commit, st
 
 ## Declaration
 
-```swift
+```
 object CiBuildRun
 ```
 
 ## Topics
 
 ### Objects
-- [object CiBuildRun.Attributes](cibuildrun/attributes-data.dictionary.md)
+- [object CiBuildRun.Attributes](./cibuildrun/attributes-data.dictionary.md)
   The attributes that describe a Build Runs resource.
-- [object CiBuildRun.Relationships](cibuildrun/relationships-data.dictionary.md)
+- [object CiBuildRun.Relationships](./cibuildrun/relationships-data.dictionary.md)
   The relationships of the Build Runs resource you included in the request and those on which you can operate.
 
 ## Properties
@@ -30,16 +31,19 @@ object CiBuildRun
 - `relationships` (CiBuildRun.Relationships): The navigational links to related data and included resource types and IDs.
 - `type` (string) *(required)*: The resource type.
 
+  **Allowed Values**: `ciBuildRuns`
+
 ## See Also
 
-- [object CiBuildRunCreateRequest](cibuildruncreaterequest.md)
+### Objects
+- [object CiBuildRunCreateRequest](./cibuildruncreaterequest.md)
   The request body you use to start a new Xcode Cloud build.
-- [object CiBuildRunResponse](cibuildrunresponse.md)
+- [object CiBuildRunResponse](./cibuildrunresponse.md)
   The response body for endpoints that start or read a single Xcode Cloud build run.
-- [object CiBuildActionsResponse](cibuildactionsresponse.md)
+- [object CiBuildActionsResponse](./cibuildactionsresponse.md)
   The response body for endpoints that list actions for an Xcode Cloud build run.
-- [object CiBuildRunActionsLinkagesResponse](cibuildrunactionslinkagesresponse.md)
-- [object CiBuildRunBuildsLinkagesResponse](cibuildrunbuildslinkagesresponse.md)
+- [object CiBuildRunActionsLinkagesResponse](./cibuildrunactionslinkagesresponse.md)
+- [object CiBuildRunBuildsLinkagesResponse](./cibuildrunbuildslinkagesresponse.md)
 
 
 ---

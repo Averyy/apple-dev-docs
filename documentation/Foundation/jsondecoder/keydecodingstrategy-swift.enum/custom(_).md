@@ -1,7 +1,8 @@
 # JSONDecoder.KeyDecodingStrategy.custom(_:)
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A key decoding strategy defined by the closure you supply.
 
@@ -23,7 +24,7 @@ case custom(@Sendable ([any CodingKey]) -> any CodingKey)
 
 #### Discussion
 
-The value associated with this case is a closure you use to map names of keys from the decoded JSON object to the names of your type’s coding keys. During decoding, the closure executes once for each key in the [`Decodable`](https://developer.apple.com/documentation/swift/decodable) value. When called, the closure receives an array of [`CodingKey`](https://developer.apple.com/documentation/swift/codingkey) instances representing the sequence of keys needed to reach the value the decoder is currently decoding.
+The value associated with this case is a closure you use to map names of keys from the decoded JSON object to the names of your type’s coding keys. During decoding, the closure executes once for each key in the [`Decodable`](../../../Swift/decodable.md) value. When called, the closure receives an array of [`CodingKey`](../../../Swift/codingkey.md) instances representing the sequence of keys needed to reach the value the decoder is currently decoding.
 
 The example below shows how to decode the properties of the nested `A`, `B`, and `C` structures with custom logic that you specify in the closure value associated with the custom case.
 

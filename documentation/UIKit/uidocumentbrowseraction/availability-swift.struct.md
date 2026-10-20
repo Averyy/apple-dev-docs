@@ -1,7 +1,8 @@
 # UIDocumentBrowserAction.Availability
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Values that determine where the action can appear in the document browser.
 
@@ -17,36 +18,41 @@ Values that determine where the action can appear in the document browser.
 struct Availability
 ```
 
+```c
+enum UIDocumentBrowserActionAvailability : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [static var menu: UIDocumentBrowserAction.Availability](uidocumentbrowseraction/availability-swift.struct/menu.md)
+- [static var menu: UIDocumentBrowserAction.Availability](./availability-swift.struct/menu.md)
   An action that appears in the Edit Menu when the user long presses a supported document.
-- [static var navigationBar: UIDocumentBrowserAction.Availability](uidocumentbrowseraction/availability-swift.struct/navigationbar.md)
+- [static var navigationBar: UIDocumentBrowserAction.Availability](./availability-swift.struct/navigationbar.md)
   An action that appears in the navigation bar when the user puts the document browser in Select mode.
 ### Initializers
-- [init(rawValue: Int)](uidocumentbrowseraction/availability-swift.struct/init(rawvalue:).md)
+- [init(rawValue: Int)](./availability-swift.struct/init%28rawvalue%29.md)
   Returns a newly instantiated availability instance.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var identifier: String](uidocumentbrowseraction/identifier.md)
+### Accessing activity data
+- [var identifier: String](./identifier.md)
   The action’s unique identifier.
-- [var localizedTitle: String](uidocumentbrowseraction/localizedtitle.md)
+- [var localizedTitle: String](./localizedtitle.md)
   The title that appears in the menu or navigation bar.
-- [var availability: UIDocumentBrowserAction.Availability](uidocumentbrowseraction/availability-swift.property.md)
+- [var availability: UIDocumentBrowserAction.Availability](./availability-swift.property.md)
   A value that defines where the action can appear (in the Edit Menu, the navigation bar, or both).
 
 

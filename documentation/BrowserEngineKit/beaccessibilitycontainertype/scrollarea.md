@@ -1,14 +1,15 @@
 # scrollArea
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A scroll area that contains the element.
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- macOS ?+
+- macOS
 - tvOS 18.0+
 - visionOS 2.0+
 
@@ -18,13 +19,18 @@ A scroll area that contains the element.
 static var scrollArea: BEAccessibilityContainerType { get }
 ```
 
+```c
+BEAccessibilityContainerTypeScrollArea
+```
+
 ## See Also
 
-- [static var landmark: BEAccessibilityContainerType](beaccessibilitycontainertype/landmark.md)
+### Layout and navigation
+- [static var landmark: BEAccessibilityContainerType](./landmark.md)
   A website accessibility landmark that contains the element.
-- [static var frame: BEAccessibilityContainerType](beaccessibilitycontainertype/frame.md)
+- [static var frame: BEAccessibilityContainerType](./frame.md)
   A frame that contains the element.
-- [static var semanticGroup: BEAccessibilityContainerType](beaccessibilitycontainertype/semanticgroup.md)
+- [static var semanticGroup: BEAccessibilityContainerType](./semanticgroup.md)
   A semantic group that contains the element.
 
 

@@ -1,7 +1,8 @@
 # init(coefficients:labels:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a logistic regression model.
 

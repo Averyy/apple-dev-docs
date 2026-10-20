@@ -1,7 +1,8 @@
 # isAnyDisplaySynchronizedToLockedGenlockSignal
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether at least one display is synchronized to a locked external genlock signal.
 

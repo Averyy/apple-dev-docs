@@ -1,15 +1,20 @@
 # NSBox.BoxType.separator
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case separator
+```
+
+```c
+NSBoxSeparator
 ```
 
 #### Discussion
@@ -18,10 +23,11 @@ Specifies that the box is a separator.
 
 ## See Also
 
-- [NSBox.BoxType.primary](nsbox/boxtype-swift.enum/primary.md)
-- [NSBox.BoxType.custom](nsbox/boxtype-swift.enum/custom.md)
-- [static var secondary: NSBox.BoxType](nsbox/boxtype-swift.enum/secondary.md)
-- [static var oldStyle: NSBox.BoxType](nsbox/boxtype-swift.enum/oldstyle.md)
+### Constants
+- [NSBox.BoxType.primary](./primary.md)
+- [NSBox.BoxType.custom](./custom.md)
+- [static var secondary: NSBox.BoxType](./secondary.md)
+- [static var oldStyle: NSBox.BoxType](./oldstyle.md)
 
 
 ---

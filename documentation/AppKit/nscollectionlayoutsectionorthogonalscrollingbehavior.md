@@ -1,7 +1,8 @@
 # NSCollectionLayoutSectionOrthogonalScrollingBehavior
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The scrolling behavior of the layout’s sections in relation to the main layout axis.
 
@@ -14,59 +15,64 @@ The scrolling behavior of the layout’s sections in relation to the main layout
 enum NSCollectionLayoutSectionOrthogonalScrollingBehavior
 ```
 
+```c
+enum NSCollectionLayoutSectionOrthogonalScrollingBehavior : NSInteger;
+```
+
 #### Overview
 
-By default, each section lays out its content along the main axis of its layout, defined by the layout configuration’s [`scrollDirection`](nscollectionviewcompositionallayoutconfiguration/scrolldirection.md) property. You can change this behavior for a particular section by setting its [`orthogonalScrollingBehavior`](nscollectionlayoutsection/orthogonalscrollingbehavior.md) property to a different value than its default [`NSCollectionLayoutSectionOrthogonalScrollingBehavior.none`](nscollectionlayoutsectionorthogonalscrollingbehavior/none.md). Setting any other value for this property makes the section lay out its content orthogonally to the main layout axis.
+By default, each section lays out its content along the main axis of its layout, defined by the layout configuration’s [`scrollDirection`](./nscollectionviewcompositionallayoutconfiguration/scrolldirection.md) property. You can change this behavior for a particular section by setting its [`orthogonalScrollingBehavior`](./nscollectionlayoutsection/orthogonalscrollingbehavior.md) property to a different value than its default [`NSCollectionLayoutSectionOrthogonalScrollingBehavior.none`](./nscollectionlayoutsectionorthogonalscrollingbehavior/none.md). Setting any other value for this property makes the section lay out its content orthogonally to the main layout axis.
 
 ## Topics
 
 ### Enumeration Cases
-- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.none](nscollectionlayoutsectionorthogonalscrollingbehavior/none.md)
+- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.none](./nscollectionlayoutsectionorthogonalscrollingbehavior/none.md)
   The section does not allow users to scroll its content orthogonally.
-- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.continuous](nscollectionlayoutsectionorthogonalscrollingbehavior/continuous.md)
+- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.continuous](./nscollectionlayoutsectionorthogonalscrollingbehavior/continuous.md)
   The section allows users to scroll its content orthogonally with continuous scrolling.
-- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.continuousGroupLeadingBoundary](nscollectionlayoutsectionorthogonalscrollingbehavior/continuousgroupleadingboundary.md)
+- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.continuousGroupLeadingBoundary](./nscollectionlayoutsectionorthogonalscrollingbehavior/continuousgroupleadingboundary.md)
   The section allows users to scroll its content orthogonally, coming to a natural stop at the leading boundary of the visible group.
-- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.paging](nscollectionlayoutsectionorthogonalscrollingbehavior/paging.md)
+- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.paging](./nscollectionlayoutsectionorthogonalscrollingbehavior/paging.md)
   The section allows users to page its content orthogonally.
-- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.groupPaging](nscollectionlayoutsectionorthogonalscrollingbehavior/grouppaging.md)
+- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.groupPaging](./nscollectionlayoutsectionorthogonalscrollingbehavior/grouppaging.md)
   The section allows users to page its content orthogonally one group at a time.
-- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.groupPagingCentered](nscollectionlayoutsectionorthogonalscrollingbehavior/grouppagingcentered.md)
+- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.groupPagingCentered](./nscollectionlayoutsectionorthogonalscrollingbehavior/grouppagingcentered.md)
   The section allows users to page its content orthogonally one group at a time, centering each group.
 ### Initializers
-- [init?(rawValue: Int)](nscollectionlayoutsectionorthogonalscrollingbehavior/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nscollectionlayoutsectionorthogonalscrollingbehavior/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Implementing modern collection views](../uikit/implementing-modern-collection-views.md)
+### Layouts
+- [Implementing modern collection views](../UIKit/implementing-modern-collection-views.md)
   Bring compositional layouts to your app and simplify updating your user interface with diffable data sources.
-- [class NSCollectionViewFlowLayout](nscollectionviewflowlayout.md)
+- [class NSCollectionViewFlowLayout](./nscollectionviewflowlayout.md)
   A layout that organizes items into a flexible and configurable arrangement.
-- [protocol NSCollectionViewDelegateFlowLayout](nscollectionviewdelegateflowlayout.md)
+- [protocol NSCollectionViewDelegateFlowLayout](./nscollectionviewdelegateflowlayout.md)
   A set of methods that a delegate implements to provide layout information to a flow layout object in a collection view.
-- [class NSCollectionViewGridLayout](nscollectionviewgridlayout.md)
+- [class NSCollectionViewGridLayout](./nscollectionviewgridlayout.md)
   A layout that displays a single section of items in a row and column grid.
-- [class NSCollectionViewTransitionLayout](nscollectionviewtransitionlayout.md)
+- [class NSCollectionViewTransitionLayout](./nscollectionviewtransitionlayout.md)
   An object that implements custom behaviors when changing from one layout to another in a collection view.
-- [class NSCollectionViewLayoutAttributes](nscollectionviewlayoutattributes.md)
+- [class NSCollectionViewLayoutAttributes](./nscollectionviewlayoutattributes.md)
   An object that contains layout-related attributes for an element in a collection view.
-- [class NSCollectionViewLayout](nscollectionviewlayout.md)
+- [class NSCollectionViewLayout](./nscollectionviewlayout.md)
   An abstract base class that you subclass and use to generate layout information for a collection view.
-- [class NSCollectionViewCompositionalLayout](nscollectionviewcompositionallayout.md)
+- [class NSCollectionViewCompositionalLayout](./nscollectionviewcompositionallayout.md)
   A layout object that lets you combine items in highly adaptive and flexible visual arrangements.
-- [class NSCollectionViewCompositionalLayoutConfiguration](nscollectionviewcompositionallayoutconfiguration.md)
+- [class NSCollectionViewCompositionalLayoutConfiguration](./nscollectionviewcompositionallayoutconfiguration.md)
   An object that defines scroll direction, section spacing, and headers or footers for the layout.
-- [typealias NSCollectionViewCompositionalLayoutSectionProvider](nscollectionviewcompositionallayoutsectionprovider.md)
+- [typealias NSCollectionViewCompositionalLayoutSectionProvider](./nscollectionviewcompositionallayoutsectionprovider.md)
   A closure that creates and returns each of the layout’s sections.
 
 

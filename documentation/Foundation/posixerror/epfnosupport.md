@@ -1,7 +1,8 @@
 # EPFNOSUPPORT
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Protocol family not supported.
 

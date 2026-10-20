@@ -1,7 +1,8 @@
 # kIOCatalogueKey
 
 **Framework**: IOKit  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var kIOCatalogueKey: String { get }
+```
+
+```c
+#define kIOCatalogueKey
 ```
 
 

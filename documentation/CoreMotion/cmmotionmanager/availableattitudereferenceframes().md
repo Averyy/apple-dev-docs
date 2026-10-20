@@ -1,7 +1,8 @@
 # availableAttitudeReferenceFrames()
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a bitmask of the available reference frames for reporting the attitude of the current device.
 
@@ -18,15 +19,19 @@ Returns a bitmask of the available reference frames for reporting the attitude o
 class func availableAttitudeReferenceFrames() -> CMAttitudeReferenceFrame
 ```
 
+```objc
++ (CMAttitudeReferenceFrame) availableAttitudeReferenceFrames;
+```
+
 #### Return Value
 
-A bitmask that you can bitwise-AND with the `enum` constants of the [`CMAttitudeReferenceFrame`](cmattitudereferenceframe.md) type.
+A bitmask that you can bitwise-AND with the `enum` constants of the [`CMAttitudeReferenceFrame`](../cmattitudereferenceframe.md) type.
 
 #### Discussion
 
 When starting a service that allows you to specify a reference frame, it’s your responsibility to specify a reference frame that’s available on the current device. Some reference frames might be unavailable because the required hardware isn’t present or not currently available.
 
-The following example shows how to call this method and test for the availability of the [`xMagneticNorthZVertical`](cmattitudereferenceframe/xmagneticnorthzvertical.md) value.
+The following example shows how to call this method and test for the availability of the [`xMagneticNorthZVertical`](../cmattitudereferenceframe/xmagneticnorthzvertical.md) value.
 
 ```objc
 if ([CMMotionManager availableAttitudeReferenceFrames] & CMAttitudeReferenceFrameXMagneticNorthZVertical) {
@@ -36,7 +41,8 @@ if ([CMMotionManager availableAttitudeReferenceFrames] & CMAttitudeReferenceFram
 
 ## See Also
 
-- [var attitudeReferenceFrame: CMAttitudeReferenceFrame](cmmotionmanager/attitudereferenceframe.md)
+### Accessing Attitude Reference Frames
+- [var attitudeReferenceFrame: CMAttitudeReferenceFrame](./attitudereferenceframe.md)
   Returns either the reference frame currently being used or the default attitude reference frame.
 
 

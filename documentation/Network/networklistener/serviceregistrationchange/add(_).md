@@ -1,7 +1,8 @@
 # NetworkListener.ServiceRegistrationChange.add(_:)
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An event when a Bonjour service has been registered, with the endpoint being advertised
 

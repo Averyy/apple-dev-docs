@@ -1,7 +1,8 @@
 # init(key:relativeLocation:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a location sort descriptor using the specified key and relative location.
 
@@ -10,7 +11,7 @@ Creates a location sort descriptor using the specified key and relative location
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,18 +21,23 @@ Creates a location sort descriptor using the specified key and relative location
 init(key: String, relativeLocation: CLLocation)
 ```
 
+```objc
+- (instancetype) initWithKey:(NSString *) key relativeLocation:(CLLocation *) relativeLocation;
+```
+
 #### Discussion
 
 During sorting, the sort descriptor computes the distance between the value in the `relativeLocation` parameter and the location value in the specified key of each record. It then sorts the records in ascending order using the distance between the two points. You can’t change the sort order.
 
 ## Parameters
 
-- `key`: The name of the key with a [`CLLocation`](https://developer.apple.com/documentation/corelocation/cllocation) object as its value. The key must belong to the records you’re sorting. The sort descriptor uses this key to retrieve the corresponding value from the record.
+- `key`: The name of the key with a [`CLLocation`](../../CoreLocation/cllocation.md) object as its value. The key must belong to the records you’re sorting. The sort descriptor uses this key to retrieve the corresponding value from the record.
 - `relativeLocation`: The reference location when sorting. CloudKit sorts records according to their distance from this location.
 
 ## See Also
 
-- [init(coder: NSCoder)](cklocationsortdescriptor/init(coder:).md)
+### Creating a Location Sort Descriptor
+- [init(coder: NSCoder)](./init%28coder%29.md)
   Creates a location sort descriptor from a serialized instance.
 
 

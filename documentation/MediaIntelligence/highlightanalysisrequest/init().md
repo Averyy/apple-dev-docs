@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Media Intelligence  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a highlight analysis request.
 

@@ -1,17 +1,18 @@
 # IO_NULL_VM_TASK
 
 **Framework**: DriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 #define IO_NULL_VM_TASK
 ```
 

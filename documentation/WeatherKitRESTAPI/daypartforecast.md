@@ -1,7 +1,8 @@
 # DayPartForecast
 
 **Framework**: WeatherKit REST API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A summary forecast for a daytime or overnight period.
 
@@ -10,7 +11,7 @@ A summary forecast for a daytime or overnight period.
 
 ## Declaration
 
-```swift
+```
 object DayPartForecast
 ```
 
@@ -30,9 +31,10 @@ object DayPartForecast
 
 ## See Also
 
-- [object DayWeatherConditions](dayweatherconditions.md)
+### Obtaining daily weather information
+- [object DayWeatherConditions](./dayweatherconditions.md)
   The historical or forecasted weather conditions for a specified day.
-- [object DailyForecast](dailyforecast.md)
+- [object DailyForecast](./dailyforecast.md)
   A collection of day forecasts for a specified range of days.
 
 

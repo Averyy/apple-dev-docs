@@ -1,7 +1,8 @@
 # vImageUnpremultiplyData_PlanarF(_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Transforms a 32-bit planar buffer from premultiplied alpha format to nonpremultiplied alpha format.
 
@@ -20,9 +21,13 @@ Transforms a 32-bit planar buffer from premultiplied alpha format to nonpremulti
 func vImageUnpremultiplyData_PlanarF(_ src: UnsafePointer<vImage_Buffer>, _ alpha: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageUnpremultiplyData_PlanarF(const vImage_Buffer *src, const vImage_Buffer *alpha, const vImage_Buffer *dest, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
@@ -36,32 +41,34 @@ float destColor = destColor / alpha;
 
 - `src`: The source vImage buffer.
 - `alpha`: The vImage buffer that provides the source alpha.
-- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](./vimage_buffer/height.md), [`width`](./vimage_buffer/width.md), and [`rowBytes`](./vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 ## See Also
 
-- [Compositing images with alpha blending](compositing-images-with-alpha-blending.md)
+### Related Documentation
+- [Compositing images with alpha blending](./compositing-images-with-alpha-blending.md)
   Combine two images by using alpha blending to create a single output.
-- [func vImageUnpremultiplyData_Planar8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimageunpremultiplydata_planar8(_:_:_:_:).md)
+### Converting from premultiplied to unpremultiplied format
+- [func vImageUnpremultiplyData_Planar8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimageunpremultiplydata_planar8%28_,_,_,_%29.md)
   Transforms an 8-bit planar buffer from premultiplied alpha format to nonpremultiplied alpha format.
-- [func vImageUnpremultiplyData_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimageunpremultiplydata_argb8888(_:_:_:).md)
+- [func vImageUnpremultiplyData_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimageunpremultiplydata_argb8888%28_,_,_%29.md)
   Transforms an 8-bit-per-channel, 4-channel ARGB buffer from premultiplied alpha format to nonpremultiplied alpha format.
-- [func vImageUnpremultiplyData_RGBA8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimageunpremultiplydata_rgba8888(_:_:_:).md)
+- [func vImageUnpremultiplyData_RGBA8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimageunpremultiplydata_rgba8888%28_,_,_%29.md)
   Transforms an 8-bit-per-channel, 4-channel RGBA buffer from premultiplied alpha format to nonpremultiplied alpha format.
-- [func vImageUnpremultiplyData_ARGB16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimageunpremultiplydata_argb16u(_:_:_:).md)
+- [func vImageUnpremultiplyData_ARGB16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimageunpremultiplydata_argb16u%28_,_,_%29.md)
   Transforms an unsigned 16-bit-per-channel, 4-channel ARGB buffer from premultiplied alpha format to nonpremultiplied alpha format.
-- [func vImageUnpremultiplyData_RGBA16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimageunpremultiplydata_rgba16u(_:_:_:).md)
+- [func vImageUnpremultiplyData_RGBA16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimageunpremultiplydata_rgba16u%28_,_,_%29.md)
   Transforms an unsigned 16-bit-per-channel, 4-channel RGBA buffer from premultiplied alpha format to nonpremultiplied alpha format.
-- [func vImageUnpremultiplyData_RGBA16F(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimageunpremultiplydata_rgba16f(_:_:_:).md)
+- [func vImageUnpremultiplyData_RGBA16F(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimageunpremultiplydata_rgba16f%28_,_,_%29.md)
   Transforms a floating-point 16-bit-per-channel, 4-channel RGBA buffer from premultiplied alpha format to nonpremultiplied alpha format.
-- [func vImageUnpremultiplyData_ARGB16Q12(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimageunpremultiplydata_argb16q12(_:_:_:).md)
+- [func vImageUnpremultiplyData_ARGB16Q12(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimageunpremultiplydata_argb16q12%28_,_,_%29.md)
   Transforms a fixed-point 16-bit-per-channel, 4-channel ARGB buffer from premultiplied alpha format to nonpremultiplied alpha format.
-- [func vImageUnpremultiplyData_RGBA16Q12(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimageunpremultiplydata_rgba16q12(_:_:_:).md)
+- [func vImageUnpremultiplyData_RGBA16Q12(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimageunpremultiplydata_rgba16q12%28_,_,_%29.md)
   Transforms a fixed-point 16-bit-per-channel, 4-channel RGBA buffer from premultiplied alpha format to nonpremultiplied alpha format.
-- [func vImageUnpremultiplyData_ARGBFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimageunpremultiplydata_argbffff(_:_:_:).md)
+- [func vImageUnpremultiplyData_ARGBFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimageunpremultiplydata_argbffff%28_,_,_%29.md)
   Transforms a 32-bit-per-channel, 4-channel ARGB buffer from premultiplied alpha format to nonpremultiplied alpha format.
-- [func vImageUnpremultiplyData_RGBAFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimageunpremultiplydata_rgbaffff(_:_:_:).md)
+- [func vImageUnpremultiplyData_RGBAFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimageunpremultiplydata_rgbaffff%28_,_,_%29.md)
   Transforms a 32-bit-per-channel, 4-channel RGBA buffer from premultiplied alpha format to nonpremultiplied alpha format.
 
 

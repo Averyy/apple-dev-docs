@@ -1,17 +1,22 @@
 # rootInterfaceController
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app’s root interface controller.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 9.2 (renamed: WKApplication)
 
 ## Declaration
 
 ```swift
 var rootInterfaceController: WKInterfaceController? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) WKInterfaceController * rootInterfaceController;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ The root interface controller is located in the app’s main storyboard and has 
 
 ## See Also
 
-- [var visibleInterfaceController: WKInterfaceController?](wkextension/visibleinterfacecontroller.md)
+### Getting the interface controllers
+- [var visibleInterfaceController: WKInterfaceController?](./visibleinterfacecontroller.md)
   Returns the last visible interface controller.
 
 

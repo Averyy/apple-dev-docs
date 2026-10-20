@@ -1,7 +1,8 @@
 # AVAudioSessionCapability
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Describes whether a specific capability is supported and if that capability is currently enabled
 
@@ -20,33 +21,38 @@ Describes whether a specific capability is supported and if that capability is c
 class AVAudioSessionCapability
 ```
 
+```objc
+@interface AVAudioSessionCapability : NSObject
+```
+
 ## Topics
 
 ### Inspecting a capability
-- [var isEnabled: Bool](avaudiosessioncapability/isenabled.md)
+- [var isEnabled: Bool](./avaudiosessioncapability/isenabled.md)
   A Boolean value that indicates whether the capability is enabled.
-- [var isSupported: Bool](avaudiosessioncapability/issupported.md)
+- [var isSupported: Bool](./avaudiosessioncapability/issupported.md)
   A Boolean value that indicates whether the capability is supported.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var bluetoothMicrophoneExtension: AVAudioSessionPortExtensionBluetoothMicrophone?](avaudiosessionportdescription/bluetoothmicrophoneextension.md)
+### Accessing the port extension
+- [var bluetoothMicrophoneExtension: AVAudioSessionPortExtensionBluetoothMicrophone?](./avaudiosessionportdescription/bluetoothmicrophoneextension.md)
   An optional port extension that describes capabilities relevant to Bluetooth microphone ports.
-- [class AVAudioSessionPortExtensionBluetoothMicrophone](avaudiosessionportextensionbluetoothmicrophone.md)
+- [class AVAudioSessionPortExtensionBluetoothMicrophone](./avaudiosessionportextensionbluetoothmicrophone.md)
   An object that describes capabilities of Bluetooth microphone ports.
 
 

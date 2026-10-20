@@ -1,12 +1,13 @@
 # init(rawValue:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new notification object with a specified name and object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

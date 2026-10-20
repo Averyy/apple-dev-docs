@@ -1,7 +1,8 @@
 # HMCharacteristicValueBatteryStatus.low
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The battery level is low.
 
@@ -19,9 +20,14 @@ The battery level is low.
 case low
 ```
 
+```c
+HMCharacteristicValueBatteryStatusLow
+```
+
 ## See Also
 
-- [HMCharacteristicValueBatteryStatus.normal](hmcharacteristicvaluebatterystatus/normal.md)
+### Battery Status
+- [HMCharacteristicValueBatteryStatus.normal](./normal.md)
   The battery level is normal.
 
 

@@ -1,14 +1,15 @@
 # kThreadWaitMemoryBlocked
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 kThreadWaitMemoryBlocked = 0x1b
 ```
 

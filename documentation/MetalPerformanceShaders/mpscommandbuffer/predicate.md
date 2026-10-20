@@ -1,7 +1,8 @@
 # predicate
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var predicate: MPSPredicate? { get set }
+```
+
+```objc
+@property (nonatomic, retain, readwrite, nullable) MPSPredicate * predicate;
 ```
 
 

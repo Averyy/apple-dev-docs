@@ -1,23 +1,28 @@
 # SCNPhysicsBodyType.dynamic
 
 **Framework**: SceneKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A physics body that can be affected by forces and collisions.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 case dynamic
+```
+
+```c
+SCNPhysicsBodyTypeDynamic
 ```
 
 #### Discussion
@@ -26,9 +31,10 @@ Use dynamic bodies for the elements of your scene that are moved by the physics 
 
 ## See Also
 
-- [SCNPhysicsBodyType.static](scnphysicsbodytype/static.md)
+### Constants
+- [SCNPhysicsBodyType.static](./static.md)
   A physics body that is unaffected by forces or collisions and cannot move.
-- [SCNPhysicsBodyType.kinematic](scnphysicsbodytype/kinematic.md)
+- [SCNPhysicsBodyType.kinematic](./kinematic.md)
   A physics body that is unaffected by forces or collisions but that can cause collisions affecting other bodies when moved.
 
 

@@ -1,7 +1,8 @@
 # attachments
 
 **Framework**: Quick Look  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Attachments for HTML data previews. The keys of the dictionary are the attachment identifiers (eg foo) that can be referenced with the cid:id URL (eg cid:foo).
 
@@ -15,6 +16,10 @@ Attachments for HTML data previews. The keys of the dictionary are the attachmen
 
 ```swift
 var attachments: [String : QLPreviewReplyAttachment] { get set }
+```
+
+```objc
+@property (copy) NSDictionary<NSString *,QLPreviewReplyAttachment *> * attachments;
 ```
 
 

@@ -1,14 +1,15 @@
 # evaluateObject
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn evaluateObject(IOACPIPlatformDevice *device, const OSSymbol *objectName, OSObject **result, OSObject *params[], IOItemCount paramCount, IOOptionBits options);
 ```
 

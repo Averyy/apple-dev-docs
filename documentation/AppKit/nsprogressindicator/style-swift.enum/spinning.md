@@ -1,17 +1,22 @@
 # NSProgressIndicator.Style.spinning
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A small circular indicator that can be determinate or indeterminate.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case spinning
+```
+
+```c
+NSProgressIndicatorStyleSpinning
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ The appearance of a determinate spinning style indicator is similar to an animat
 
 ## See Also
 
-- [NSProgressIndicator.Style.bar](nsprogressindicator/style-swift.enum/bar.md)
+### Constants
+- [NSProgressIndicator.Style.bar](./bar.md)
   A rectangular indicator that can be determinate or indeterminate.
 
 

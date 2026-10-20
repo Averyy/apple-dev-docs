@@ -1,7 +1,8 @@
 # graphs
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of pathfinding graph objects managed by the scene.
 
@@ -19,13 +20,18 @@ The list of pathfinding graph objects managed by the scene.
 var graphs: [String : GKGraph] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDictionary<NSString *,GKGraph *> * graphs;
+```
+
 #### Discussion
 
 When you define pathfinding graphs in the Xcode SpriteKit scene editor, Xcode automatically adds them to this array.
 
 ## See Also
 
-- [func removeGraph(String)](gkscene/removegraph(_:).md)
+### Managing Pathfinding Graphs
+- [func removeGraph(String)](./removegraph%28_%29.md)
   Removes a pathfinding graph from the list of graphs managed by the scene.
 
 

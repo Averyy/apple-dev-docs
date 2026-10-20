@@ -1,7 +1,8 @@
 # OSLogPosition
 
 **Framework**: OSLog  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of a point in a sequence of entries in the unified logging system.
 
@@ -20,25 +21,30 @@ A representation of a point in a sequence of entries in the unified logging syst
 class OSLogPosition
 ```
 
+```objc
+@interface OSLogPosition : NSObject
+```
+
 #### Overview
 
-Generate positions with [`OSLogStore`](oslogstore.md) instance methods and use them to view entries from a particular starting point.
+Generate positions with [`OSLogStore`](./oslogstore.md) instance methods and use them to view entries from a particular starting point.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class OSLogMessageComponent](oslogmessagecomponent.md)
+### Entry Data
+- [class OSLogMessageComponent](./oslogmessagecomponent.md)
   The message arguments for a particular entry.
 
 

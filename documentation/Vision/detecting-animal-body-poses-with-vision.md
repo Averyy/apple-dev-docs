@@ -1,6 +1,8 @@
 # Detecting animal body poses with Vision
 
-**Framework**: Vision
+**Framework**: Vision  
+**Role**: Sample Code  
+**Download**: [DetectingAnimalBodyPosesWithVision.zip](https://docs-assets.developer.apple.com/published/22ccd8a7f68a/DetectingAnimalBodyPosesWithVision.zip)
 
 Draw the skeleton of an animal by using Vision’s capability to detect animal body poses.
 
@@ -12,17 +14,18 @@ Draw the skeleton of an animal by using Vision’s capability to detect animal b
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC23 session 10045: [`Detect animal poses in Vision`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10045).
+> **Note**: This sample code project is associated with WWDC23 session 10045: [Detect animal poses in Vision](https://developer.apple.com/wwdc23/10045).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 This sample app doesn’t run in Simulator, so you need to run it on a physical device with iOS 17 or later, or iPadOS 17 or later. To run the app, start a live video feed from the back camera.
 
 ## See Also
 
-- [class VNDetectAnimalBodyPoseRequest](vndetectanimalbodyposerequest.md)
+### Animal body pose detection
+- [class VNDetectAnimalBodyPoseRequest](./vndetectanimalbodyposerequest.md)
   A request that detects an animal body pose.
-- [class VNAnimalBodyPoseObservation](vnanimalbodyposeobservation.md)
+- [class VNAnimalBodyPoseObservation](./vnanimalbodyposeobservation.md)
   An observation that provides the animal body points the analysis recognizes.
 
 

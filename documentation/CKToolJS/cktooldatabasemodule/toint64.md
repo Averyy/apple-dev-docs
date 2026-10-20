@@ -1,7 +1,8 @@
 # toInt64
 
 **Framework**: CKTool JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts a number or numeric string to a `Int64`.
 
@@ -10,7 +11,7 @@ Converts a number or numeric string to a `Int64`.
 
 ## Declaration
 
-```swift
+```
 static Int64 toInt64();
 ```
 

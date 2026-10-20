@@ -1,7 +1,8 @@
 # session
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The AR session that supports the view’s rendering.
 
@@ -19,17 +20,18 @@ The AR session that supports the view’s rendering.
 
 #### Discussion
 
-RealityKit automatically creates a default session that the view manages. If you have an existing or custom session, setting it as the view’s session replaces the default session. If you replace the default session, you need to start it by calling [`run(_:options:)`](https://developer.apple.com/documentation/arkit/arsession/run(_:options:)). See [`automaticallyConfigureSession`](arview/automaticallyconfiguresession.md) for more details.
+RealityKit automatically creates a default session that the view manages. If you have an existing or custom session, setting it as the view’s session replaces the default session. If you replace the default session, you need to start it by calling [`run(_:options:)`](../../ARKit/arsession/run%28_,options%29.md). See [`automaticallyConfigureSession`](./automaticallyconfiguresession.md) for more details.
 
-When [`automaticallyConfigureSession`](arview/automaticallyconfiguresession.md) is [`true`](https://developer.apple.com/documentation/swift/true), the default value is an [`ARWorldTrackingConfiguration`](https://developer.apple.com/documentation/arkit/arworldtrackingconfiguration).
+When [`automaticallyConfigureSession`](./automaticallyconfiguresession.md) is [`true`](../../Swift/true.md), the default value is an [`ARWorldTrackingConfiguration`](../../ARKit/arworldtrackingconfiguration.md).
 
 ## See Also
 
-- [var automaticallyConfigureSession: Bool](arview/automaticallyconfiguresession.md)
+### Configuring the AR session
+- [var automaticallyConfigureSession: Bool](./automaticallyconfiguresession.md)
   An indication of whether to use an automatically configured AR session.
-- [var renderOptions: ARView.RenderOptions](arview/renderoptions-swift.property.md)
+- [var renderOptions: ARView.RenderOptions](./renderoptions-swift.property.md)
   The render options that configure the view’s AR session.
-- [var renderCallbacks: ARView.RenderCallbacks](arview/rendercallbacks-swift.property.md)
+- [var renderCallbacks: ARView.RenderCallbacks](./rendercallbacks-swift.property.md)
   A container that holds the view’s render callbacks.
 
 

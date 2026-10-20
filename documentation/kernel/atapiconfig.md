@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum atapiConfig : unsigned int {
     ...
 };
@@ -17,20 +17,21 @@ enum atapiConfig : unsigned int {
 ## Topics
 
 ### Constants
-- [kATAPIDRQFast](atapiconfig/katapidrqfast.md)
-- [kATAPIDRQSlow](atapiconfig/katapidrqslow.md)
-- [kATAPIIRQPacket](atapiconfig/katapiirqpacket.md)
-- [kATAPIUnknown](atapiconfig/katapiunknown.md)
+- [kATAPIDRQFast](./atapiconfig/katapidrqfast.md)
+- [kATAPIDRQSlow](./atapiconfig/katapidrqslow.md)
+- [kATAPIIRQPacket](./atapiconfig/katapiirqpacket.md)
+- [kATAPIUnknown](./atapiconfig/katapiunknown.md)
 
 ## See Also
 
-- [ataDeviceType](atadevicetype.md)
-- [ataEventCode](ataeventcode.md)
-- [ataFlags](ataflags.md)
-- [ataOpcode](ataopcode.md)
-- [ataRegMask](ataregmask.md)
-- [ataSocketType](atasockettype.md)
-- [ataUnitID](ataunitid.md)
+### Additional Types
+- [ataDeviceType](./atadevicetype.md)
+- [ataEventCode](./ataeventcode.md)
+- [ataFlags](./ataflags.md)
+- [ataOpcode](./ataopcode.md)
+- [ataRegMask](./ataregmask.md)
+- [ataSocketType](./atasockettype.md)
+- [ataUnitID](./ataunitid.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # isStudioLightActive
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether Studio Light is active on a device.
 
@@ -18,13 +19,18 @@ A Boolean value that indicates whether Studio Light is active on a device.
 var isStudioLightActive: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isStudioLightActive) BOOL studioLightActive;
+```
+
 #### Discussion
 
-When the value is [`true`](https://developer.apple.com/documentation/swift/true), the system artificially lights the subject’s face to simulate the presence of a studio light near the camera.
+When the value is [`true`](../../Swift/true.md), the system artificially lights the subject’s face to simulate the presence of a studio light near the camera.
 
 ## See Also
 
-- [class var isStudioLightEnabled: Bool](avcapturedevice/isstudiolightenabled.md)
+### Configuring Studio Light
+- [class var isStudioLightEnabled: Bool](./isstudiolightenabled.md)
   A Boolean value that indicates whether a user enabled Studio Light on a device.
 
 

@@ -1,7 +1,8 @@
 # transcript
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The structured transcript from the model session.
 
@@ -22,11 +23,12 @@ var transcript: StructuredTranscript?
 
 #### Discussion
 
-This transcript is required when using [`ToolCallEvaluator`](toolcallevaluator.md). If `nil`, [`ToolCallEvaluator`](toolcallevaluator.md) throws [`EvaluationError.missingTranscript(evaluatorType:)`](evaluationerror/missingtranscript(evaluatortype:).md).
+This transcript is required when using [`ToolCallEvaluator`](../toolcallevaluator.md). If `nil`, [`ToolCallEvaluator`](../toolcallevaluator.md) throws [`EvaluationError.missingTranscript(evaluatorType:)`](../evaluationerror/missingtranscript%28evaluatortype%29.md).
 
 ## See Also
 
-- [var value: Value](modelsubject/value.md)
+### Accessing the content
+- [var value: Value](./value.md)
   The typed value the model produces.
 
 

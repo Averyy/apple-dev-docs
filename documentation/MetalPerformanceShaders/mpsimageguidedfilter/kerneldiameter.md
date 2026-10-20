@@ -1,7 +1,8 @@
 # kernelDiameter
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 var kernelDiameter: Int { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSUInteger kernelDiameter;
 ```
 
 

@@ -1,7 +1,8 @@
 # verifyRemoteServerTrust(for:)
 
 **Framework**: Foveated Streaming  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Verifies the server certificate presented in a TLS authentication challenge.
 

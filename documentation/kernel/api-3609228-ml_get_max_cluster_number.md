@@ -1,14 +1,15 @@
 # ml_get_max_cluster_number
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 int ml_get_max_cluster_number(void);
 ```
 

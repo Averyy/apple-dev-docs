@@ -1,14 +1,15 @@
 # kBluetoothDeviceClassMinorToyController
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothDeviceClassMinorToyController = 0x04
 ```
 

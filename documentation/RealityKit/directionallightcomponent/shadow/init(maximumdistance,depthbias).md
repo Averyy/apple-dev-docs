@@ -1,7 +1,8 @@
 # init(maximumDistance:depthBias:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a directional light shadow with a maximum distance and depth bias.
 
@@ -21,7 +22,7 @@ init(maximumDistance: Float = 5.0, depthBias: Float = 1.0)
 
 #### Discussion
 
-The `maximumDistance` parameter in this initializer is equivalent to setting [`shadowProjection`](directionallightcomponent/shadow/shadowprojection.md) to `.automatic(maximumDistance: maximumDistance)`.
+The `maximumDistance` parameter in this initializer is equivalent to setting [`shadowProjection`](./shadowprojection.md) to `.automatic(maximumDistance: maximumDistance)`.
 
 ## Parameters
 
@@ -30,11 +31,12 @@ The `maximumDistance` parameter in this initializer is equivalent to setting [`s
 
 ## See Also
 
-- [init()](directionallightcomponent/shadow/init.md)
+### Creating the shadow
+- [init()](./init%28%29.md)
   Creates a directional light shadow using default values.
-- [init(shadowProjection: DirectionalLightComponent.Shadow.ShadowProjectionType, depthBias: Float, cullMode: DirectionalLightComponent.Shadow.ShadowMapCullMode?)](directionallightcomponent/shadow/init(shadowprojection:depthbias:cullmode:).md)
+- [init(shadowProjection: DirectionalLightComponent.Shadow.ShadowProjectionType, depthBias: Float, cullMode: DirectionalLightComponent.Shadow.ShadowMapCullMode?)](./init%28shadowprojection,depthbias,cullmode%29.md)
   Creates a directional light shadow with a shadow projection, depth bias and cull mode.
-- [init(layers: RenderLayer.Set?)](directionallightcomponent/shadow/init(layers:).md)
+- [init(layers: RenderLayer.Set?)](./init%28layers%29.md)
   Creates a directional light shadow that accepts shadow casters from the specified layers.
 
 

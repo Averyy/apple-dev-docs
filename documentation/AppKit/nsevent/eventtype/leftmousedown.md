@@ -1,12 +1,13 @@
 # NSEvent.EventType.leftMouseDown
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user pressed the left mouse button.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,29 +15,34 @@ The user pressed the left mouse button.
 case leftMouseDown
 ```
 
+```c
+NSEventTypeLeftMouseDown
+```
+
 ## See Also
 
-- [NSEvent.EventType.leftMouseDragged](nsevent/eventtype/leftmousedragged.md)
+### Getting Mouse-Related Event Types
+- [NSEvent.EventType.leftMouseDragged](./leftmousedragged.md)
   The user moved the mouse while holding down the left mouse button.
-- [NSEvent.EventType.leftMouseUp](nsevent/eventtype/leftmouseup.md)
+- [NSEvent.EventType.leftMouseUp](./leftmouseup.md)
   The user released the left mouse button.
-- [NSEvent.EventType.rightMouseDown](nsevent/eventtype/rightmousedown.md)
+- [NSEvent.EventType.rightMouseDown](./rightmousedown.md)
   The user pressed the right mouse button.
-- [NSEvent.EventType.rightMouseUp](nsevent/eventtype/rightmouseup.md)
+- [NSEvent.EventType.rightMouseUp](./rightmouseup.md)
   The user released the right mouse button.
-- [NSEvent.EventType.rightMouseDragged](nsevent/eventtype/rightmousedragged.md)
+- [NSEvent.EventType.rightMouseDragged](./rightmousedragged.md)
   The user moved the mouse while holding down the right mouse button.
-- [NSEvent.EventType.otherMouseDown](nsevent/eventtype/othermousedown.md)
+- [NSEvent.EventType.otherMouseDown](./othermousedown.md)
   The user pressed a tertiary mouse button.
-- [NSEvent.EventType.otherMouseDragged](nsevent/eventtype/othermousedragged.md)
+- [NSEvent.EventType.otherMouseDragged](./othermousedragged.md)
   The user moved the mouse while holding down a tertiary mouse button.
-- [NSEvent.EventType.otherMouseUp](nsevent/eventtype/othermouseup.md)
+- [NSEvent.EventType.otherMouseUp](./othermouseup.md)
   The user released a tertiary mouse button.
-- [NSEvent.EventType.mouseMoved](nsevent/eventtype/mousemoved.md)
+- [NSEvent.EventType.mouseMoved](./mousemoved.md)
   The user moved the mouse in a way that caused the cursor to move onscreen.
-- [NSEvent.EventType.mouseEntered](nsevent/eventtype/mouseentered.md)
+- [NSEvent.EventType.mouseEntered](./mouseentered.md)
   The cursor entered a well-defined area, such as a view.
-- [NSEvent.EventType.mouseExited](nsevent/eventtype/mouseexited.md)
+- [NSEvent.EventType.mouseExited](./mouseexited.md)
   The cursor exited a well-defined area, such as a view.
 
 

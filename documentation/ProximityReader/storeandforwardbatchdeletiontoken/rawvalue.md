@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw token string your payment service provider supplies.
 

@@ -1,7 +1,8 @@
 # transform(inputReal:inputImaginary:outputReal:outputImaginary:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes an out-of-place discrete Fourier transform.
 
@@ -11,8 +12,10 @@ Computes an out-of-place discrete Fourier transform.
 - Mac Catalyst 13.0+ - Deprecated
 - macOS 10.15+ - Deprecated
 - tvOS 13.0+ - Deprecated
-- visionOS ?+
+- visionOS
 - watchOS 6.0+ - Deprecated
+
+> **Deprecated**: Use `vDSP.DiscreteFourierTransform`.
 
 ## Declaration
 
@@ -22,7 +25,8 @@ func transform<U, V>(inputReal: U, inputImaginary: U, outputReal: inout V, outpu
 
 ## See Also
 
-- [func transform<U>(inputReal: U, inputImaginary: U) -> (real: [T], imaginary: [T])](vdsp/dft/transform(inputreal:inputimaginary:).md)
+### Instance Methods
+- [func transform<U>(inputReal: U, inputImaginary: U) -> (real: [T], imaginary: [T])](./transform%28inputreal,inputimaginary%29.md)
   Returns a discrete Fourier transform.
 
 

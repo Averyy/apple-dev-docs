@@ -1,7 +1,8 @@
 # convert(interleavedComplexVector:toSplitComplexVector:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts the contents of an interleaved double-precision complex vector to a split complex vector.
 
@@ -11,7 +12,7 @@ Converts the contents of an interleaved double-precision complex vector to a spl
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -27,7 +28,8 @@ static func convert(interleavedComplexVector: [DSPDoubleComplex], toSplitComplex
 
 ## See Also
 
-- [static func convert(interleavedComplexVector: [DSPComplex], toSplitComplexVector: inout DSPSplitComplex)](vdsp/convert(interleavedcomplexvector:tosplitcomplexvector:)-4lnrf.md)
+### Converting interleaved-complex vectors to split-complex vectors
+- [static func convert(interleavedComplexVector: [DSPComplex], toSplitComplexVector: inout DSPSplitComplex)](./convert%28interleavedcomplexvector,tosplitcomplexvector%29-4lnrf.md)
   Converts the contents of an interleaved single-precision complex vector to a split complex vector.
 
 

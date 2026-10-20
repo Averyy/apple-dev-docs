@@ -1,14 +1,15 @@
 # ss_non_paging_size
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 uint64_t ss_non_paging_size;
 ```
 

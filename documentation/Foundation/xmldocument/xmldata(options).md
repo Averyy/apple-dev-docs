@@ -1,7 +1,8 @@
 # xmlData(options:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the XML string representation of the receiver—that is, the entire document—encapsulated in a data object.
 
@@ -15,9 +16,13 @@ Returns the XML string representation of the receiver—that is, the entire docu
 func xmlData(options: XMLNode.Options = []) -> Data
 ```
 
+```objc
+- (NSData *) XMLDataWithOptions:(NSXMLNodeOptions) options;
+```
+
 #### Discussion
 
-The encoding used is based on the value returned from [`characterEncoding`](xmldocument/characterencoding.md).
+The encoding used is based on the value returned from [`characterEncoding`](./characterencoding.md).
 
 ## Parameters
 
@@ -25,7 +30,8 @@ The encoding used is based on the value returned from [`characterEncoding`](xmld
 
 ## See Also
 
-- [var xmlData: Data](xmldocument/xmldata.md)
+### Writing a Document as XML Data
+- [var xmlData: Data](./xmldata.md)
   Returns the XML string representation of the receiver—that is, the entire document—encapsulated in a data object.
 
 

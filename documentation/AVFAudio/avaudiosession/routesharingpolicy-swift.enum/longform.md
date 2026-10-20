@@ -1,22 +1,29 @@
 # longForm
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A policy that routes output to the shared long-form audio output.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.1+
-- tvOS 11.0+
-- visionOS 1.0+
-- watchOS 4.0+
+- iOS 11.0+ - Deprecated in 13.0 (renamed: AVAudioSession.RouteSharingPolicy.longFormAudio)
+- iPadOS 11.0+ - Deprecated in 13.0 (renamed: AVAudioSession.RouteSharingPolicy.longFormAudio)
+- Mac Catalyst 13.1+ - Deprecated in 13.1 (renamed: AVAudioSession.RouteSharingPolicy.longFormAudio)
+- tvOS 11.0+ - Deprecated in 13.0 (renamed: AVAudioSession.RouteSharingPolicy.longFormAudio)
+- visionOS 1.0+ - Deprecated in 1.0 (renamed: AVAudioSession.RouteSharingPolicy.longFormAudio)
+- watchOS 4.0+ - Deprecated in 6.0 (renamed: AVAudioSession.RouteSharingPolicy.longFormAudio)
+
+> **Deprecated**: Use [`AVAudioSession.RouteSharingPolicy.longFormAudio`](./longformaudio.md) instead.
 
 ## Declaration
 
 ```swift
 static var longForm: AVAudioSession.RouteSharingPolicy { get }
+```
+
+```c
+AVAudioSessionRouteSharingPolicyLongForm
 ```
 
 #### Discussion
@@ -25,13 +32,14 @@ An audio session whose primary use case is as a music or podcast player may use 
 
 ## See Also
 
-- [AVAudioSession.RouteSharingPolicy.default](avaudiosession/routesharingpolicy-swift.enum/default.md)
+### Choosing a route-sharing policy
+- [AVAudioSession.RouteSharingPolicy.default](./default.md)
   A policy that follows standard rules for routing audio output.
-- [AVAudioSession.RouteSharingPolicy.longFormAudio](avaudiosession/routesharingpolicy-swift.enum/longformaudio.md)
+- [AVAudioSession.RouteSharingPolicy.longFormAudio](./longformaudio.md)
   A policy that routes output to the shared long-form audio output.
-- [AVAudioSession.RouteSharingPolicy.longFormVideo](avaudiosession/routesharingpolicy-swift.enum/longformvideo.md)
+- [AVAudioSession.RouteSharingPolicy.longFormVideo](./longformvideo.md)
   A policy that routes output to the shared long-form video output.
-- [AVAudioSession.RouteSharingPolicy.independent](avaudiosession/routesharingpolicy-swift.enum/independent.md)
+- [AVAudioSession.RouteSharingPolicy.independent](./independent.md)
   A policy in which the route picker UI directs videos to a wireless route.
 
 

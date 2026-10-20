@@ -1,7 +1,8 @@
 # CancelEnhancedLogCollectionCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to cancel enhanced log collection on the device.
 
@@ -14,14 +15,14 @@ The command to cancel enhanced log collection on the device.
 
 ## Declaration
 
-```swift
+```
 object CancelEnhancedLogCollectionCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object CancelEnhancedLogCollectionCommand.Command](cancelenhancedlogcollectioncommand/command-data.dictionary.md)
+- [object CancelEnhancedLogCollectionCommand.Command](./cancelenhancedlogcollectioncommand/command-data.dictionary.md)
   The command to cancel enhanced log collection on the device.
 
 ## Properties
@@ -31,7 +32,8 @@ object CancelEnhancedLogCollectionCommand
 
 ## See Also
 
-- [object CancelEnhancedLogCollectionResponse](cancelenhancedlogcollectionresponse.md)
+### Commands and responses
+- [object CancelEnhancedLogCollectionResponse](./cancelenhancedlogcollectionresponse.md)
   A response from the device after it processes the command to cancel enhanced log collection on the device.
 
 

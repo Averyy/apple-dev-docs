@@ -1,7 +1,8 @@
 # concatTensors(_:dimension:interleave:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a concatenation operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a concatenation operation and returns the result tensor.
 
 ```swift
 func concatTensors(_ tensors: [MPSGraphTensor], dimension dimensionIndex: Int, interleave: Bool, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) concatTensors:(NSArray<MPSGraphTensor *> *) tensors dimension:(NSInteger) dimensionIndex interleave:(BOOL) interleave name:(NSString *) name;
 ```
 
 #### Return Value

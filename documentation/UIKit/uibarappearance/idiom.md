@@ -1,7 +1,8 @@
 # idiom
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The idiom targeted by this bar appearance object.
 
@@ -16,6 +17,10 @@ The idiom targeted by this bar appearance object.
 
 ```swift
 var idiom: UIUserInterfaceIdiom { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) UIUserInterfaceIdiom idiom;
 ```
 
 

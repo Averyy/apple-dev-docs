@@ -1,7 +1,8 @@
 # encryptionState
 
 **Framework**: MailKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var encryptionState: MEMessageEncryptionState { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) MEMessageEncryptionState encryptionState;
 ```
 
 

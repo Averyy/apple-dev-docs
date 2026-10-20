@@ -1,7 +1,8 @@
 # voiceAnalytics
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An analysis of the transcription segment’s vocal properties.
 
@@ -16,6 +17,10 @@ An analysis of the transcription segment’s vocal properties.
 
 ```swift
 var voiceAnalytics: SFVoiceAnalytics? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) SFVoiceAnalytics * voiceAnalytics;
 ```
 
 

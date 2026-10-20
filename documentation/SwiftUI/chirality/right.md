@@ -1,7 +1,8 @@
 # Chirality.right
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a right-handed pose.
 

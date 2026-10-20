@@ -1,21 +1,22 @@
 # Phoneme Symbols Keys
 
-**Framework**: Application Services
+**Framework**: Application Services  
+**Role**: API Collection
 
 Keys used with the `kSpeechPhonemeSymbolsProperty` property to provide information about the phoneme being processed.
 
 ## Topics
 
 ### Constants
-- [let kSpeechPhonemeInfoOpcode: CFString](kspeechphonemeinfoopcode.md)
+- [let kSpeechPhonemeInfoOpcode: CFString](../kspeechphonemeinfoopcode.md)
   The opcode of the phoneme.
-- [let kSpeechPhonemeInfoSymbol: CFString](kspeechphonemeinfosymbol.md)
+- [let kSpeechPhonemeInfoSymbol: CFString](../kspeechphonemeinfosymbol.md)
   The symbol used to represent the phoneme.
-- [let kSpeechPhonemeInfoExample: CFString](kspeechphonemeinfoexample.md)
+- [let kSpeechPhonemeInfoExample: CFString](../kspeechphonemeinfoexample.md)
   An example word that illustrates the use of the phoneme.
-- [let kSpeechPhonemeInfoHiliteStart: CFString](kspeechphonemeinfohilitestart.md)
+- [let kSpeechPhonemeInfoHiliteStart: CFString](../kspeechphonemeinfohilitestart.md)
   The character offset into the example word that identifies the location of the beginning of the phoneme.
-- [let kSpeechPhonemeInfoHiliteEnd: CFString](kspeechphonemeinfohiliteend.md)
+- [let kSpeechPhonemeInfoHiliteEnd: CFString](../kspeechphonemeinfohiliteend.md)
   The character offset into the example word that identifies the location of the end of the phoneme.
 
 

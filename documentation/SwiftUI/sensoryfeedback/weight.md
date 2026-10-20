@@ -1,7 +1,8 @@
 # SensoryFeedback.Weight
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The weight to be represented by a type of feedback.
 
@@ -27,29 +28,30 @@ struct Weight
 ## Topics
 
 ### Getting flexibility values
-- [static let light: SensoryFeedback.Weight](sensoryfeedback/weight/light.md)
+- [static let light: SensoryFeedback.Weight](./weight/light.md)
   Indicates a collision between small or lightweight UI objects.
-- [static let medium: SensoryFeedback.Weight](sensoryfeedback/weight/medium.md)
+- [static let medium: SensoryFeedback.Weight](./weight/medium.md)
   Indicates a collision between medium-sized or medium-weight UI objects.
-- [static let heavy: SensoryFeedback.Weight](sensoryfeedback/weight/heavy.md)
+- [static let heavy: SensoryFeedback.Weight](./weight/heavy.md)
   Indicates a collision between large or heavyweight UI objects.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static let impact: SensoryFeedback](sensoryfeedback/impact.md)
+### Producing a physical impact
+- [static let impact: SensoryFeedback](./impact.md)
   Provides a physical metaphor you can use to complement a visual experience.
-- [static func impact(weight: SensoryFeedback.Weight, intensity: Double) -> SensoryFeedback](sensoryfeedback/impact(weight:intensity:).md)
+- [static func impact(weight: SensoryFeedback.Weight, intensity: Double) -> SensoryFeedback](./impact%28weight,intensity%29.md)
   Provides a physical metaphor you can use to complement a visual experience.
-- [static func impact(flexibility: SensoryFeedback.Flexibility, intensity: Double) -> SensoryFeedback](sensoryfeedback/impact(flexibility:intensity:).md)
+- [static func impact(flexibility: SensoryFeedback.Flexibility, intensity: Double) -> SensoryFeedback](./impact%28flexibility,intensity%29.md)
   Provides a physical metaphor you can use to complement a visual experience.
-- [SensoryFeedback.Flexibility](sensoryfeedback/flexibility.md)
+- [SensoryFeedback.Flexibility](./flexibility.md)
   The flexibility to be represented by a type of feedback.
 
 

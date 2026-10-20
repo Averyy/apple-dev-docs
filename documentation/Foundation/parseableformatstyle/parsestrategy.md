@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A `ParseStrategy` that can be used to parse this `FormatStyle`’s output
@@ -23,7 +24,8 @@ var parseStrategy: Self.Strategy { get }
 
 ## See Also
 
-- [associatedtype Strategy : ParseStrategy](parseableformatstyle/strategy.md)
+### Declaring Parse Strategy
+- [associatedtype Strategy : ParseStrategy](./strategy.md)
 
 
 ---

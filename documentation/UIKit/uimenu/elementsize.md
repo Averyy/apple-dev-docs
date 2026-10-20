@@ -1,7 +1,8 @@
 # UIMenu.ElementSize
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that determine the size of an element in a menu.
 
@@ -18,34 +19,39 @@ Constants that determine the size of an element in a menu.
 enum ElementSize
 ```
 
+```c
+enum UIMenuElementSize : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIMenu.ElementSize.small](uimenu/elementsize/small.md)
+- [UIMenu.ElementSize.small](./elementsize/small.md)
   A constant that represents a small menu element size.
-- [UIMenu.ElementSize.medium](uimenu/elementsize/medium.md)
+- [UIMenu.ElementSize.medium](./elementsize/medium.md)
   A constant that represents a medium menu element size.
-- [UIMenu.ElementSize.large](uimenu/elementsize/large.md)
+- [UIMenu.ElementSize.large](./elementsize/large.md)
   A constant that represents a large menu element size.
 ### Enumeration Cases
-- [UIMenu.ElementSize.automatic](uimenu/elementsize/automatic.md)
+- [UIMenu.ElementSize.automatic](./elementsize/automatic.md)
   Automatically determine the appropriate element size for the current context.
 ### Initializers
-- [init?(rawValue: Int)](uimenu/elementsize/init(rawvalue:).md)
+- [init?(rawValue: Int)](./elementsize/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var preferredElementSize: UIMenu.ElementSize](uimenu/preferredelementsize.md)
+### Specifying size of menu elements
+- [var preferredElementSize: UIMenu.ElementSize](./preferredelementsize.md)
   The size of the menu’s child elements.
 
 

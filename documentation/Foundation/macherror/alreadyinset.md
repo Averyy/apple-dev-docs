@@ -1,7 +1,8 @@
 # alreadyInSet
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The receive right is already a member of the portset.
 

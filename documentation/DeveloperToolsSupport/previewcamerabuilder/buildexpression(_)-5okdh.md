@@ -1,7 +1,8 @@
 # buildExpression(_:)
 
 **Framework**: DeveloperToolsSupport  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Builds a partial result from a single camera.
 
@@ -16,13 +17,14 @@ static func buildExpression(_ camera: PreviewCamera) -> [PreviewCamera]
 
 ## See Also
 
-- [static func buildArray([[PreviewCamera]]) -> [PreviewCamera]](previewcamerabuilder/buildarray(_:).md)
+### Building a preview camera
+- [static func buildArray([[PreviewCamera]]) -> [PreviewCamera]](./buildarray%28_%29.md)
   Builds a partial result from an array of partial results.
-- [static func buildExpression([PreviewCamera]) -> [PreviewCamera]](previewcamerabuilder/buildexpression(_:)-5t9d2.md)
+- [static func buildExpression([PreviewCamera]) -> [PreviewCamera]](./buildexpression%28_%29-5t9d2.md)
   Builds a partial result from an array of cameras.
-- [static func buildPartialBlock(accumulated: [PreviewCamera], next: [PreviewCamera]) -> [PreviewCamera]](previewcamerabuilder/buildpartialblock(accumulated:next:).md)
+- [static func buildPartialBlock(accumulated: [PreviewCamera], next: [PreviewCamera]) -> [PreviewCamera]](./buildpartialblock%28accumulated,next%29.md)
   Combines an accumulated component with a new component.
-- [static func buildPartialBlock(first: [PreviewCamera]) -> [PreviewCamera]](previewcamerabuilder/buildpartialblock(first:).md)
+- [static func buildPartialBlock(first: [PreviewCamera]) -> [PreviewCamera]](./buildpartialblock%28first%29.md)
   Builds a partial result component from the first component.
 
 

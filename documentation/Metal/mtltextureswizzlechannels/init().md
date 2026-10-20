@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a default swizzle pattern.
 
@@ -21,7 +22,8 @@ init()
 
 ## See Also
 
-- [init(red: MTLTextureSwizzle, green: MTLTextureSwizzle, blue: MTLTextureSwizzle, alpha: MTLTextureSwizzle)](mtltextureswizzlechannels/init(red:green:blue:alpha:).md)
+### Creating a swizzle pattern
+- [init(red: MTLTextureSwizzle, green: MTLTextureSwizzle, blue: MTLTextureSwizzle, alpha: MTLTextureSwizzle)](./init%28red,green,blue,alpha%29.md)
   Creates a swizzle pattern.
 
 

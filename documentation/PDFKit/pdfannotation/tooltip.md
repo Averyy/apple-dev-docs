@@ -1,17 +1,22 @@
 # toolTip
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns text for display as a help tag.
 
 **Availability**:
-- macOS 10.5+
+- macOS 10.5+ - Deprecated in 10.12
 
 ## Declaration
 
 ```swift
 var toolTip: String? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSString * toolTip;
 ```
 
 #### Return Value
@@ -24,7 +29,8 @@ This method is equivalent to sending the message `[self contents]`. PDF Kit’s 
 
 ## See Also
 
-- [var mouseUpAction: PDFAction?](pdfannotation/mouseupaction.md)
+### Deprecated Properties
+- [var mouseUpAction: PDFAction?](./mouseupaction.md)
   The action to perform when a user releases the mouse button within an annotation.
 
 

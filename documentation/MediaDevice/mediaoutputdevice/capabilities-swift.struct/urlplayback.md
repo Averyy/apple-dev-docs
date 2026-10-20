@@ -1,7 +1,8 @@
 # urlPlayback
 
 **Framework**: Media Device  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Capable of receiving a media URL and providing a playback experience.
 

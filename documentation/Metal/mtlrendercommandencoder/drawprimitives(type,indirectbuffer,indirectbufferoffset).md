@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a draw command that renders multiple instances of a geometric primitive with indirect arguments.
@@ -20,25 +21,34 @@ Encodes a draw command that renders multiple instances of a geometric primitive 
 func drawPrimitives(type primitiveType: MTLPrimitiveType, indirectBuffer: any MTLBuffer, indirectBufferOffset: Int)
 ```
 
+```objc
+- (void) drawPrimitives:(MTLPrimitiveType) primitiveType indirectBuffer:(id<MTLBuffer>) indirectBuffer indirectBufferOffset:(NSUInteger) indirectBufferOffset;
+```
+
 #### Discussion
 
-Indirect drawing methods may help your app avoid expensive latency costs. This is because the command reads arguments from an [`MTLBuffer`](mtlbuffer.md) instance instead of using the CPU to pass parameters to the command.
+Indirect drawing methods may help your app avoid expensive latency costs. This is because the command reads arguments from an [`MTLBuffer`](../mtlbuffer.md) instance instead of using the CPU to pass parameters to the command.
 
-The method records the encoder’s current rendering state and resources the command needs as it runs. You can safely change the encoder’s render pipeline state to encode other commands after calling this method. Subsequent changes to the state don’t affect the commands already in the encoder’s [`MTLCommandBuffer`](mtlcommandbuffer.md).
+The method records the encoder’s current rendering state and resources the command needs as it runs. You can safely change the encoder’s render pipeline state to encode other commands after calling this method. Subsequent changes to the state don’t affect the commands already in the encoder’s [`MTLCommandBuffer`](../mtlcommandbuffer.md).
 
 ## Parameters
 
-- `primitiveType`: An [`MTLPrimitiveType`](mtlprimitivetype.md) instance that represents how the command interprets vertex argument data. See the [`setVertexBuffer(_:offset:index:)`](mtlrendercommandencoder/setvertexbuffer(_:offset:index:).md) method and its siblings for more information about setting an entry in the vertex shader argument table for buffers.
-- `indirectBuffer`: An [`MTLBuffer`](mtlbuffer.md) instance with data that matches the layout of the [`MTLDrawPrimitivesIndirectArguments`](mtldrawprimitivesindirectarguments.md) structure.
-- `indirectBufferOffset`: An integer that represents the location, in bytes, from the start of `indirectBuffer` where the indirect arguments structure begins. See the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) to check for offset alignment requirements for buffers in `device` and `constant` address space.
+- `primitiveType`: An [`MTLPrimitiveType`](../mtlprimitivetype.md) instance that represents how the command interprets vertex argument data.
+
+  See the [`setVertexBuffer(_:offset:index:)`](./setvertexbuffer%28_,offset,index%29.md) method and its siblings for more information about setting an entry in the vertex shader argument table for buffers.
+- `indirectBuffer`: An [`MTLBuffer`](../mtlbuffer.md) instance with data that matches the layout of the [`MTLDrawPrimitivesIndirectArguments`](../mtldrawprimitivesindirectarguments.md) structure.
+- `indirectBufferOffset`: An integer that represents the location, in bytes, from the start of `indirectBuffer` where the indirect arguments structure begins.
+
+  See the [Metal feature set tables (PDF)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) to check for offset alignment requirements for buffers in `device` and `constant` address space.
 
 ## See Also
 
-- [func drawPrimitives(type: MTLPrimitiveType, vertexStart: Int, vertexCount: Int)](mtlrendercommandencoder/drawprimitives(type:vertexstart:vertexcount:).md)
+### Drawing with vertices
+- [func drawPrimitives(type: MTLPrimitiveType, vertexStart: Int, vertexCount: Int)](./drawprimitives%28type,vertexstart,vertexcount%29.md)
   Encodes a draw command that renders an instance of a geometric primitive.
-- [func drawPrimitives(type: MTLPrimitiveType, vertexStart: Int, vertexCount: Int, instanceCount: Int)](mtlrendercommandencoder/drawprimitives(type:vertexstart:vertexcount:instancecount:).md)
+- [func drawPrimitives(type: MTLPrimitiveType, vertexStart: Int, vertexCount: Int, instanceCount: Int)](./drawprimitives%28type,vertexstart,vertexcount,instancecount%29.md)
   Encodes a draw command that renders multiple instances of a geometric primitive.
-- [func drawPrimitives(type: MTLPrimitiveType, vertexStart: Int, vertexCount: Int, instanceCount: Int, baseInstance: Int)](mtlrendercommandencoder/drawprimitives(type:vertexstart:vertexcount:instancecount:baseinstance:).md)
+- [func drawPrimitives(type: MTLPrimitiveType, vertexStart: Int, vertexCount: Int, instanceCount: Int, baseInstance: Int)](./drawprimitives%28type,vertexstart,vertexcount,instancecount,baseinstance%29.md)
   Encodes a draw command that renders multiple instances of a geometric primitive that starts with a custom instance identification number.
 
 

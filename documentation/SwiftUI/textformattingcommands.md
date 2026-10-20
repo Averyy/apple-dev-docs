@@ -1,7 +1,8 @@
 # TextFormattingCommands
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A built-in set of commands for transforming the styles applied to selections of text.
 
@@ -21,7 +22,7 @@ struct TextFormattingCommands
 
 ## Mentions
 
-- [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
+- [Building and customizing the menu bar with SwiftUI](./building-and-customizing-the-menu-bar-with-swiftui.md)
 
 #### Overview
 
@@ -30,27 +31,28 @@ These commands are optional and can be explicitly requested by passing a value o
 ## Topics
 
 ### Creating the command group
-- [init()](textformattingcommands/init.md)
+- [init()](./textformattingcommands/init%28%29.md)
   A new value describing the built-in text-formatting commands.
 
 ## Relationships
 
 ### Conforms To
-- [Commands](commands.md)
+- [Commands](./commands.md)
 
 ## See Also
 
-- [struct SidebarCommands](sidebarcommands.md)
+### Getting built-in command groups
+- [struct SidebarCommands](./sidebarcommands.md)
   A built-in set of commands for manipulating window sidebars.
-- [struct TextEditingCommands](texteditingcommands.md)
+- [struct TextEditingCommands](./texteditingcommands.md)
   A built-in group of commands for searching, editing, and transforming selections of text.
-- [struct ToolbarCommands](toolbarcommands.md)
+- [struct ToolbarCommands](./toolbarcommands.md)
   A built-in set of commands for manipulating window toolbars.
-- [struct ImportFromDevicesCommands](importfromdevicescommands.md)
+- [struct ImportFromDevicesCommands](./importfromdevicescommands.md)
   A built-in set of commands that enables importing content from nearby devices.
-- [struct InspectorCommands](inspectorcommands.md)
+- [struct InspectorCommands](./inspectorcommands.md)
   A built-in set of commands for manipulating inspectors.
-- [struct EmptyCommands](emptycommands.md)
+- [struct EmptyCommands](./emptycommands.md)
   An empty group of commands.
 
 

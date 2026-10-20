@@ -1,12 +1,15 @@
 # setPageCacheSize(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the maximum number of pages the receiver can cache.
 
 **Availability**:
-- macOS ?+
+- macOS
+
+> **Deprecated**: Use the [`usesPageCache`](../webpreferences/usespagecache.md) method in [`WebPreferences`](../webpreferences.md) instead.
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Sets the maximum number of pages the receiver can cache.
 func setPageCacheSize(_ size: Int)
 ```
 
+```objc
+- (void) setPageCacheSize:(NSUInteger) size;
+```
+
 #### Discussion
 
-The default page cache size can vary depending on the computer’s configuration. Use [`pageCacheSize()`](webbackforwardlist/pagecachesize().md) to get the current setting.
+The default page cache size can vary depending on the computer’s configuration. Use [`pageCacheSize()`](./pagecachesize%28%29.md) to get the current setting.
 
 ## Parameters
 
@@ -24,7 +31,8 @@ The default page cache size can vary depending on the computer’s configuration
 
 ## See Also
 
-- [func pageCacheSize() -> Int](webbackforwardlist/pagecachesize.md)
+### Page Caching
+- [func pageCacheSize() -> Int](./pagecachesize%28%29.md)
   Returns the maximum number of pages that the receiver can cache.
 
 

@@ -1,7 +1,8 @@
 # init(ssidPrefix:passphrase:isWEP:)
 
 **Framework**: Network Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new hotspot configuration, identified by an SSID prefix string, for a protected WEP or WPA/WPA2 personal Wi-Fi network.
 
@@ -18,6 +19,10 @@ Creates a new hotspot configuration, identified by an SSID prefix string, for a 
 init(ssidPrefix SSIDPrefix: String, passphrase: String, isWEP: Bool)
 ```
 
+```objc
+- (instancetype) initWithSSIDPrefix:(NSString *) SSIDPrefix passphrase:(NSString *) passphrase isWEP:(BOOL) isWEP;
+```
+
 #### Discussion
 
 Use this initializer when you want to match a known SSID prefix, but don’t have a full SSID. If the system finds multiple Wi-Fi networks whose SSID string matches the given prefix, it selects the network with the greatest signal strength.
@@ -26,19 +31,20 @@ Use this initializer when you want to match a known SSID prefix, but don’t hav
 
 - `SSIDPrefix`: A prefix string to match the SSID of a WPA/WPA2 enterprise Wi-Fi network. This value must be between 3 and 32 characters.
 - `passphrase`: The network’s passphrase credential: for WPA or WPA2 personal networks, 8-63 characters; for static 64-bit WEP, 10 hexadecimal digits; for static 128-bit WEP, 26 hexadecimal digits.
-- `isWEP`: If [`true`](https://developer.apple.com/documentation/swift/true), the network is WEP Wi-Fi; otherwise it is a WPA or WPA2 personal Wi-Fi network.
+- `isWEP`: If [`true`](../../Swift/true.md), the network is WEP Wi-Fi; otherwise it is a WPA or WPA2 personal Wi-Fi network.
 
 ## See Also
 
-- [init(ssid: String)](nehotspotconfiguration/init(ssid:)-9apfi.md)
+### Initializing a configuration
+- [init(ssid: String)](./init%28ssid%29-9apfi.md)
   Creates a new hotspot configuration, identified by an SSID, for an open Wi-Fi network.
-- [init(ssid: String, passphrase: String, isWEP: Bool)](nehotspotconfiguration/init(ssid:passphrase:iswep:)-3ll1v.md)
+- [init(ssid: String, passphrase: String, isWEP: Bool)](./init%28ssid,passphrase,iswep%29-3ll1v.md)
   Creates a new hotspot configuration, identified by an SSID, for a protected WEP or WPA/WPA2 personal Wi-Fi network.
-- [init(ssid: String, eapSettings: NEHotspotEAPSettings)](nehotspotconfiguration/init(ssid:eapsettings:)-53cpf.md)
+- [init(ssid: String, eapSettings: NEHotspotEAPSettings)](./init%28ssid,eapsettings%29-53cpf.md)
   Creates a new hotspot configuration, identified by an SSID, for a WPA/WPA2 enterprise Wi-Fi network with EAP settings.
-- [init(hs20Settings: NEHotspotHS20Settings, eapSettings: NEHotspotEAPSettings)](nehotspotconfiguration/init(hs20settings:eapsettings:)-291m2.md)
+- [init(hs20Settings: NEHotspotHS20Settings, eapSettings: NEHotspotEAPSettings)](./init%28hs20settings,eapsettings%29-291m2.md)
   Creates a new hotspot configuration, identified by a domain name, for a Hotspot 2.0 Wi-Fi network with HS 2.0 and EAP settings.
-- [init(ssidPrefix: String)](nehotspotconfiguration/init(ssidprefix:)-1v8bx.md)
+- [init(ssidPrefix: String)](./init%28ssidprefix%29-1v8bx.md)
   Creates a new hotspot configuration, identified by an SSID prefix string, for an open Wi-Fi network.
 
 

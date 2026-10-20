@@ -1,7 +1,8 @@
 # setStrideInPixelsY(_:at:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func setStrideInPixelsY(_ stride: Int, at index: Int)
+```
+
+```objc
+- (void) setStrideInPixelsY:(NSUInteger) stride atIndex:(NSUInteger) index;
 ```
 
 

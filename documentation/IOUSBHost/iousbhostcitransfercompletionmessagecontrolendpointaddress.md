@@ -1,7 +1,8 @@
 # IOUSBHostCITransferCompletionMessageControlEndpointAddress
 
 **Framework**: IOUSBHost  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,17 +14,22 @@
 var IOUSBHostCITransferCompletionMessageControlEndpointAddress: UInt32 { get }
 ```
 
+```c
+IOUSBHostCITransferCompletionMessageControlEndpointAddress
+```
+
 ## See Also
 
-- [var IOUSBHostCITransferCompletionMessageControlDeviceAddress: UInt32](iousbhostcitransfercompletionmessagecontroldeviceaddress.md)
-- [var IOUSBHostCITransferCompletionMessageControlDeviceAddressPhase: UInt32](iousbhostcitransfercompletionmessagecontroldeviceaddressphase.md)
-- [var IOUSBHostCITransferCompletionMessageControlEndpointAddressPhase: UInt32](iousbhostcitransfercompletionmessagecontrolendpointaddressphase.md)
-- [var IOUSBHostCITransferCompletionMessageControlStatus: UInt32](iousbhostcitransfercompletionmessagecontrolstatus.md)
-- [var IOUSBHostCITransferCompletionMessageControlStatusPhase: UInt32](iousbhostcitransfercompletionmessagecontrolstatusphase.md)
-- [var IOUSBHostCITransferCompletionMessageData0TransferLength: Int](iousbhostcitransfercompletionmessagedata0transferlength.md)
-- [var IOUSBHostCITransferCompletionMessageData0TransferLengthPhase: Int](iousbhostcitransfercompletionmessagedata0transferlengthphase.md)
-- [var IOUSBHostCITransferCompletionMessageData1TransferStructure: UInt](iousbhostcitransfercompletionmessagedata1transferstructure.md)
-- [var IOUSBHostCITransferCompletionMessageData1TransferStructurePhase: UInt](iousbhostcitransfercompletionmessagedata1transferstructurephase.md)
+### Constants
+- [var IOUSBHostCITransferCompletionMessageControlDeviceAddress: UInt32](./iousbhostcitransfercompletionmessagecontroldeviceaddress.md)
+- [var IOUSBHostCITransferCompletionMessageControlDeviceAddressPhase: UInt32](./iousbhostcitransfercompletionmessagecontroldeviceaddressphase.md)
+- [var IOUSBHostCITransferCompletionMessageControlEndpointAddressPhase: UInt32](./iousbhostcitransfercompletionmessagecontrolendpointaddressphase.md)
+- [var IOUSBHostCITransferCompletionMessageControlStatus: UInt32](./iousbhostcitransfercompletionmessagecontrolstatus.md)
+- [var IOUSBHostCITransferCompletionMessageControlStatusPhase: UInt32](./iousbhostcitransfercompletionmessagecontrolstatusphase.md)
+- [var IOUSBHostCITransferCompletionMessageData0TransferLength: Int](./iousbhostcitransfercompletionmessagedata0transferlength.md)
+- [var IOUSBHostCITransferCompletionMessageData0TransferLengthPhase: Int](./iousbhostcitransfercompletionmessagedata0transferlengthphase.md)
+- [var IOUSBHostCITransferCompletionMessageData1TransferStructure: UInt](./iousbhostcitransfercompletionmessagedata1transferstructure.md)
+- [var IOUSBHostCITransferCompletionMessageData1TransferStructurePhase: UInt](./iousbhostcitransfercompletionmessagedata1transferstructurephase.md)
 
 
 ---

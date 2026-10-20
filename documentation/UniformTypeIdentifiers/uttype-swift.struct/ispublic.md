@@ -1,7 +1,8 @@
 # isPublic
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the type is in the public domain.
 
@@ -26,13 +27,14 @@ Types in the public domain have identifiers starting with `public`, and are gene
 
 ## See Also
 
-- [var isDeclared: Bool](uttype-swift.struct/isdeclared.md)
+### Obtaining additional type information
+- [var isDeclared: Bool](./isdeclared.md)
   A Boolean value that indicates whether the system declares the type.
-- [var isDynamic: Bool](uttype-swift.struct/isdynamic.md)
+- [var isDynamic: Bool](./isdynamic.md)
   A Boolean value that indicates whether the system generates the type.
-- [var referenceURL: URL?](uttype-swift.struct/referenceurl.md)
+- [var referenceURL: URL?](./referenceurl.md)
   The reference URL for the type.
-- [var version: Int?](uttype-swift.struct/version.md)
+- [var version: Int?](./version.md)
   The type’s version, if available.
 
 

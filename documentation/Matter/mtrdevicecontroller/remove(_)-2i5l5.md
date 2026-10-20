@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Remove the given server endpoint without being notified when the removal completes.
 
@@ -18,6 +19,10 @@ Remove the given server endpoint without being notified when the removal complet
 
 ```swift
 func remove(_ endpoint: MTRServerEndpoint)
+```
+
+```objc
+- (void) removeServerEndpoint:(MTRServerEndpoint *) endpoint;
 ```
 
 

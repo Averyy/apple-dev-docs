@@ -1,7 +1,8 @@
 # CSSM_APPLEFILEDL_ROLLBACK
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_APPLEFILEDL_ROLLBACK: Int { get }
+```
+
+```c
+CSSM_APPLEFILEDL_ROLLBACK
 ```
 
 

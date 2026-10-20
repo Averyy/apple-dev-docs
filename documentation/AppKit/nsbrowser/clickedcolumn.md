@@ -1,7 +1,8 @@
 # clickedColumn
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The column number of the cell that the user clicked to display a context menu.
 
@@ -14,17 +15,22 @@ The column number of the cell that the user clicked to display a context menu.
 var clickedColumn: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger clickedColumn;
+```
+
 #### Discussion
 
 The value of this property is `-1` if no context menu is active.
 
 ## See Also
 
-- [func doClick(Any?)](nsbrowser/doclick(_:).md)
+### Handling Mouse-Click Events
+- [func doClick(Any?)](./doclick%28_%29.md)
   Responds to (single) mouse clicks in a column of the browser.
-- [func doDoubleClick(Any?)](nsbrowser/dodoubleclick(_:).md)
+- [func doDoubleClick(Any?)](./dodoubleclick%28_%29.md)
   Responds to double clicks in a column of the browser.
-- [var clickedRow: Int](nsbrowser/clickedrow.md)
+- [var clickedRow: Int](./clickedrow.md)
   The row number of the cell that the user clicked to display a context menu.
 
 

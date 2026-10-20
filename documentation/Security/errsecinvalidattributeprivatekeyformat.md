@@ -1,7 +1,8 @@
 # errSecInvalidAttributePrivateKeyFormat
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A private key format attribute is not valid.
 
@@ -18,6 +19,10 @@ A private key format attribute is not valid.
 
 ```swift
 var errSecInvalidAttributePrivateKeyFormat: OSStatus { get }
+```
+
+```c
+errSecInvalidAttributePrivateKeyFormat
 ```
 
 

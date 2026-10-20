@@ -1,18 +1,20 @@
 # Anonymous
 
-**Framework**: IOBluetooth UI
+**Framework**: IOBluetooth UI  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [var kIOBluetoothServiceBrowserControllerOptionsAutoStartInquiry: Int](kiobluetoothservicebrowsercontrolleroptionsautostartinquiry.md)
-- [var kIOBluetoothServiceBrowserControllerOptionsDisconnectWhenDone: Int](kiobluetoothservicebrowsercontrolleroptionsdisconnectwhendone.md)
-- [var kIOBluetoothServiceBrowserControllerOptionsNone: Int](kiobluetoothservicebrowsercontrolleroptionsnone.md)
+- [var kIOBluetoothServiceBrowserControllerOptionsAutoStartInquiry: Int](./kiobluetoothservicebrowsercontrolleroptionsautostartinquiry.md)
+- [var kIOBluetoothServiceBrowserControllerOptionsDisconnectWhenDone: Int](./kiobluetoothservicebrowsercontrolleroptionsdisconnectwhendone.md)
+- [var kIOBluetoothServiceBrowserControllerOptionsNone: Int](./kiobluetoothservicebrowsercontrolleroptionsnone.md)
 
 ## See Also
 
-- [Anonymous](1411865-anonymous.md)
-- [struct BluetoothKeyboardReturnType](bluetoothkeyboardreturntype.md)
+### Enumerations
+- [Anonymous](./api-1411865-anonymous.md)
+- [struct BluetoothKeyboardReturnType](./bluetoothkeyboardreturntype.md)
 
 
 ---

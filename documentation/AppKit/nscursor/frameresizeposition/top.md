@@ -1,7 +1,8 @@
 # NSCursor.FrameResizePosition.top
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The top edge of the frame.
 
@@ -13,6 +14,10 @@ The top edge of the frame.
 
 ```swift
 case top
+```
+
+```c
+NSCursorFrameResizePositionTop
 ```
 
 

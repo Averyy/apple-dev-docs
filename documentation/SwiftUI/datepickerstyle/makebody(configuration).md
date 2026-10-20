@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the appearance and interaction content for a `DatePicker`.
@@ -23,7 +24,7 @@ Returns the appearance and interaction content for a `DatePicker`.
 
 #### Discussion
 
-The system calls this method for each [`DatePicker`](datepicker.md) instance in a view hierarchy where this style is the current date picker style.
+The system calls this method for each [`DatePicker`](../datepicker.md) instance in a view hierarchy where this style is the current date picker style.
 
 ## Parameters
 
@@ -31,11 +32,12 @@ The system calls this method for each [`DatePicker`](datepicker.md) instance in 
 
 ## See Also
 
-- [struct DatePickerStyleConfiguration](datepickerstyleconfiguration.md)
+### Creating custom date picker styles
+- [struct DatePickerStyleConfiguration](../datepickerstyleconfiguration.md)
   The properties of a `DatePicker`.
-- [DatePickerStyle.Configuration](datepickerstyle/configuration.md)
+- [DatePickerStyle.Configuration](./configuration.md)
   A type alias for the properties of a `DatePicker`.
-- [associatedtype Body : View](datepickerstyle/body.md)
+- [associatedtype Body : View](./body.md)
   A view representing the appearance and interaction of a `DatePicker`.
 
 

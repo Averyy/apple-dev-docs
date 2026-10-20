@@ -1,7 +1,8 @@
 # AVAssetExportSession.State.pending
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An export operation is currently pending.
 
@@ -21,9 +22,10 @@ case pending
 
 ## See Also
 
-- [AVAssetExportSession.State.exporting(progress:)](avassetexportsession/state/exporting(progress:).md)
+### States
+- [AVAssetExportSession.State.exporting(progress:)](./exporting%28progress%29.md)
   An export session is currently exporting media.
-- [AVAssetExportSession.State.waiting](avassetexportsession/state/waiting.md)
+- [AVAssetExportSession.State.waiting](./waiting.md)
   An export session is currently waiting.
 
 

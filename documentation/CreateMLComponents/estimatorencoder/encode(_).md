@@ -2,6 +2,7 @@
 
 **Framework**: Create ML Components  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a value.
@@ -23,7 +24,8 @@ mutating func encode<T>(_ value: T) throws where T : Encodable
 
 ## See Also
 
-- [func encodeOptimizer<T>(T) throws](estimatorencoder/encodeoptimizer(_:).md)
+### Encoding values
+- [func encodeOptimizer<T>(T) throws](./encodeoptimizer%28_%29.md)
   Encodes an estimator optimizer.
 
 

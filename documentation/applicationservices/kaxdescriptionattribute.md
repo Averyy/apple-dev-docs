@@ -1,7 +1,8 @@
 # kAXDescriptionAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 var kAXDescriptionAttribute: String { get }
+```
+
+```c
+#define kAXDescriptionAttribute
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The label of the labeled value of the property array.
 
@@ -19,17 +20,30 @@ The label of the labeled value of the property array.
 var label: String? { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * label;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly, nullable) NSString * label;
+```
+
 #### Discussion
 
 Labeled property is used only for properties that are in labeled arrays. If the property is not an array of labeled values, the value of the label is `nil`.
 
 ## See Also
 
-- [var key: String](cncontactproperty/key.md)
+### Getting the Property Information
+- [var key: String](./key.md)
   The key of the contact property.
-- [var value: Any?](cncontactproperty/value.md)
+- [var value: Any?](./value.md)
   The value of the property.
-- [var identifier: String?](cncontactproperty/identifier.md)
+- [var identifier: String?](./identifier.md)
   The identifier of the labeled value in the array of labeled.
 
 

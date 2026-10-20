@@ -1,12 +1,15 @@
 # TVColor
 
 **Framework**: TVMLKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The color data used by styles.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,38 +17,43 @@ The color data used by styles.
 class TVColor
 ```
 
+```objc
+@interface TVColor : NSObject
+```
+
 ## Topics
 
 ### Getting Color Properties
-- [var color: UIColor?](tvcolor/color.md)
-  A [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) object used to color an element.
-- [var colorType: TVColorType](tvcolor/colortype.md)
+- [var color: UIColor?](./tvcolor/color.md)
+  A [`UIColor`](../UIKit/uicolor.md) object used to color an element.
+- [var colorType: TVColorType](./tvcolor/colortype.md)
   The color type for an element.
-- [enum TVColorType](tvcolortype.md)
+- [enum TVColorType](./tvcolortype.md)
   Designates how color for an element is to be displayed.
-- [var gradientColors: [UIColor]?](tvcolor/gradientcolors.md)
+- [var gradientColors: [UIColor]?](./tvcolor/gradientcolors.md)
   An array of colors used to create a gradient for an element.
-- [var gradientPoints: [NSNumber]?](tvcolor/gradientpoints.md)
+- [var gradientPoints: [NSNumber]?](./tvcolor/gradientpoints.md)
   An array of points used to determine gradient color changes.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class TVViewElementStyle](tvviewelementstyle.md)
+### Custom Styles
+- [class TVViewElementStyle](./tvviewelementstyle.md)
   A style applied to a view element.
-- [class TVStyleFactory](tvstylefactory.md)
+- [class TVStyleFactory](./tvstylefactory.md)
   An object used to register custom style properties.
 
 

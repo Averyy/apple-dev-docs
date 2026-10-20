@@ -1,7 +1,8 @@
 # init(column:ranges:)
 
 **Framework**: TabularData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a slice with the contents of a column.
 
@@ -27,7 +28,8 @@ init(column: Column<WrappedElement>, ranges: [Range<Int>])
 
 ## See Also
 
-- [init(Column<WrappedElement>)](discontiguouscolumnslice/init(_:).md)
+### Creating a Column Slice
+- [init(Column<WrappedElement>)](./init%28_%29.md)
   Creates a slice with the contents of a column.
 
 

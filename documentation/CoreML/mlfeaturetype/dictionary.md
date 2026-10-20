@@ -1,7 +1,8 @@
 # MLFeatureType.dictionary
 
 **Framework**: Core ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The type for dictionary features and feature values.
 
@@ -20,23 +21,28 @@ The type for dictionary features and feature values.
 case dictionary
 ```
 
+```c
+MLFeatureTypeDictionary
+```
+
 ## See Also
 
-- [MLFeatureType.int64](mlfeaturetype/int64.md)
+### Feature types
+- [MLFeatureType.int64](./int64.md)
   The type for integer features and feature values.
-- [MLFeatureType.double](mlfeaturetype/double.md)
+- [MLFeatureType.double](./double.md)
   The type for double features and feature values.
-- [MLFeatureType.image](mlfeaturetype/image.md)
+- [MLFeatureType.image](./image.md)
   The type for image features and feature values.
-- [MLFeatureType.multiArray](mlfeaturetype/multiarray.md)
+- [MLFeatureType.multiArray](./multiarray.md)
   The type for multidimensional array features and feature values.
-- [MLFeatureType.string](mlfeaturetype/string.md)
+- [MLFeatureType.string](./string.md)
   The type for string features and feature values.
-- [MLFeatureType.sequence](mlfeaturetype/sequence.md)
+- [MLFeatureType.sequence](./sequence.md)
   The type for sequence features and feature values.
-- [MLFeatureType.state](mlfeaturetype/state.md)
+- [MLFeatureType.state](./state.md)
   MLState. Represents a model state that may be updated in each inference.
-- [MLFeatureType.invalid](mlfeaturetype/invalid.md)
+- [MLFeatureType.invalid](./invalid.md)
   The type for invalid feature values.
 
 

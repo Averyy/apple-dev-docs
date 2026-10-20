@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the configuration is enabled.
 
@@ -23,9 +24,10 @@ The system starts the providers only when this property is `true`.
 
 ## See Also
 
-- [var evaluationProviderBundleIdentifier: String?](nehotspotmanager/evaluationproviderbundleidentifier.md)
+### Accessing provider properties
+- [var evaluationProviderBundleIdentifier: String?](./evaluationproviderbundleidentifier.md)
   The bundle identifier of the hotspot evaluation provider.
-- [var authenticationProviderBundleIdentifier: String?](nehotspotmanager/authenticationproviderbundleidentifier.md)
+- [var authenticationProviderBundleIdentifier: String?](./authenticationproviderbundleidentifier.md)
   The bundle identifier of the hotspot authentication provider.
 
 

@@ -1,7 +1,8 @@
 # kMDItemDirector
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Directory of the movie. A CFString.
 
@@ -12,6 +13,10 @@ Directory of the movie. A CFString.
 
 ```swift
 let kMDItemDirector: CFString!
+```
+
+```c
+const CFStringRef kMDItemDirector;
 ```
 
 

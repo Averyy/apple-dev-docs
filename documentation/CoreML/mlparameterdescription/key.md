@@ -1,7 +1,8 @@
 # key
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key for this parameter description value.
 
@@ -20,9 +21,14 @@ The key for this parameter description value.
 var key: MLParameterKey { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MLParameterKey * key;
+```
+
 ## See Also
 
-- [var defaultValue: Any](mlparameterdescription/defaultvalue.md)
+### Describing the model parameter
+- [var defaultValue: Any](./defaultvalue.md)
   The default value for the parameter.
 
 

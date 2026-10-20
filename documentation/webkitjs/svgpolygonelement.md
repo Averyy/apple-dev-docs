@@ -1,7 +1,8 @@
 # SVGPolygonElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGPolygonElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [animatedPoints](svgpolygonelement/1630798-animatedpoints.md)
-- [points](svgpolygonelement/1630283-points.md)
+- [animatedPoints](./svgpolygonelement/api-1630798-animatedpoints.md)
+- [points](./svgpolygonelement/api-1630283-points.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGGraphicsElement](svggraphicselement.md)
+- [SVGGraphicsElement](./svggraphicselement.md)
 
 
 ---

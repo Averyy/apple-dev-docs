@@ -1,7 +1,8 @@
 # kCVPixelBufferPoolMaximumBufferAgeKey
 
 **Framework**: Core Video  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key that sets how long the pool keeps an unused buffer before it ages out.
 
@@ -20,17 +21,22 @@ The key that sets how long the pool keeps an unused buffer before it ages out.
 let kCVPixelBufferPoolMaximumBufferAgeKey: CFString
 ```
 
+```c
+extern CFStringRef const kCVPixelBufferPoolMaximumBufferAgeKey;
+```
+
 #### Discussion
 
-Include this key in the pool attributes dictionary you pass to [`CVPixelBufferPoolCreate(_:_:_:_:)`](cvpixelbufferpoolcreate(_:_:_:_:).md).
+Include this key in the pool attributes dictionary you pass to [`CVPixelBufferPoolCreate(_:_:_:_:)`](./cvpixelbufferpoolcreate%28_,_,_,_%29.md).
 
 By default, buffers age out after one second. Set an age of zero to turn off the age-out mechanism.
 
 ## See Also
 
-- [let kCVPixelBufferPoolMinimumBufferCountKey: CFString](kcvpixelbufferpoolminimumbuffercountkey.md)
+### Constants
+- [let kCVPixelBufferPoolMinimumBufferCountKey: CFString](./kcvpixelbufferpoolminimumbuffercountkey.md)
   The key that sets the minimum number of pixel buffers in the pool.
-- [let kCVPixelBufferPoolAllocationThresholdKey: CFString](kcvpixelbufferpoolallocationthresholdkey.md)
+- [let kCVPixelBufferPoolAllocationThresholdKey: CFString](./kcvpixelbufferpoolallocationthresholdkey.md)
   The key that limits the number of pixel buffers the pool allocates.
 
 

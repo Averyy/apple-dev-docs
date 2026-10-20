@@ -1,7 +1,8 @@
 # stopCapture()
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops capturing Metal commands.
 
@@ -19,11 +20,15 @@ Stops capturing Metal commands.
 func stopCapture()
 ```
 
+```objc
+- (void) stopCapture;
+```
+
 #### Discussion
 
-Calling this method stops a capture that was started manually in Xcode or programmatically by calling one of the methods on [`MTLCaptureManager`](mtlcapturemanager.md).
+Calling this method stops a capture that was started manually in Xcode or programmatically by calling one of the methods on [`MTLCaptureManager`](../mtlcapturemanager.md).
 
-When using a custom capture scope, calling this function preempts any [`end()`](mtlcapturescope/end().md) demarcations of the capture scope.
+When using a custom capture scope, calling this function preempts any [`end()`](../mtlcapturescope/end%28%29.md) demarcations of the capture scope.
 
 
 ---

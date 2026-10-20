@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL for the response.
 
@@ -20,15 +21,20 @@ The URL for the response.
 var url: URL? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSURL * URL;
+```
+
 ## See Also
 
-- [var expectedContentLength: Int64](urlresponse/expectedcontentlength.md)
+### Getting the response properties
+- [var expectedContentLength: Int64](./expectedcontentlength.md)
   The expected length of the response’s content.
-- [var suggestedFilename: String?](urlresponse/suggestedfilename.md)
+- [var suggestedFilename: String?](./suggestedfilename.md)
   A suggested filename for the response data.
-- [var mimeType: String?](urlresponse/mimetype.md)
+- [var mimeType: String?](./mimetype.md)
   The MIME type of the response.
-- [var textEncodingName: String?](urlresponse/textencodingname.md)
+- [var textEncodingName: String?](./textencodingname.md)
   The name of the text encoding provided by the response’s originating source.
 
 

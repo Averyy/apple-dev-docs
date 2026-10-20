@@ -1,7 +1,8 @@
 # GCStylus.DidConnectMessage
 
 **Framework**: Game Controller  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A message that posts after a stylus accessory connects to the device.
 
@@ -18,7 +19,7 @@ struct DidConnectMessage
 
 Use the `.didConnect` identifier with `NotificationCenter` to listen for this message.
 
-```None
+```
 let observation = NotificationCenter.default.addObserver(of: GCStylus.self, for: .didCnnect) { message in
    let stylus = message.stylus
 }
@@ -29,16 +30,16 @@ Connections of stylus accessories will be reflected in the `styli` array of the 
 ## Topics
 
 ### Initializers
-- [init(stylus: GCStylus)](gcstylus/didconnectmessage/init(stylus:).md)
+- [init(stylus: GCStylus)](./didconnectmessage/init%28stylus%29.md)
 ### Instance Properties
-- [var stylus: GCStylus](gcstylus/didconnectmessage/stylus.md)
+- [var stylus: GCStylus](./didconnectmessage/stylus.md)
   The stylus object that connected to the device.
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # handle
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,10 +18,15 @@
 var handle: (any MPSHandle)? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) id<MPSHandle> handle;
+```
+
 ## See Also
 
-- [var exportFromGraph: Bool](mpsnnstatenode/exportfromgraph.md)
-- [var synchronizeResource: Bool](mpsnnstatenode/synchronizeresource.md)
+### Instance Properties
+- [var exportFromGraph: Bool](./exportfromgraph.md)
+- [var synchronizeResource: Bool](./synchronizeresource.md)
 
 
 ---

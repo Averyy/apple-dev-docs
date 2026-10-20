@@ -1,12 +1,13 @@
 # fadeIn
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies a fade-in type of effect.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ Specifies a fade-in type of effect.
 static let fadeIn: NSViewAnimation.EffectName
 ```
 
+```c
+extern NSViewAnimationEffectName NSViewAnimationFadeInEffect;
+```
+
 ## See Also
 
-- [static let fadeOut: NSViewAnimation.EffectName](nsviewanimation/effectname/fadeout.md)
+### Effect Names
+- [static let fadeOut: NSViewAnimation.EffectName](./fadeout.md)
   Specifies a fade-out type of effect.
 
 

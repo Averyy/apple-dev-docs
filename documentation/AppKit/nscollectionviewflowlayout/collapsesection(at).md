@@ -1,7 +1,8 @@
 # collapseSection(at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.12+
@@ -12,10 +13,15 @@
 func collapseSection(at sectionIndex: Int)
 ```
 
+```objc
+- (void) collapseSectionAtIndex:(NSUInteger) sectionIndex;
+```
+
 ## See Also
 
-- [func expandSection(at: Int)](nscollectionviewflowlayout/expandsection(at:).md)
-- [func section(atIndexIsCollapsed: Int) -> Bool](nscollectionviewflowlayout/section(atindexiscollapsed:).md)
+### Instance Methods
+- [func expandSection(at: Int)](./expandsection%28at%29.md)
+- [func section(atIndexIsCollapsed: Int) -> Bool](./section%28atindexiscollapsed%29.md)
 
 
 ---

@@ -1,22 +1,29 @@
 # urlSession(_:assetDownloadTask:didFinishDownloadingTo:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a download task finished downloading the requested asset.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 13.1+
-- macOS 10.15+
-- visionOS 1.0+
-- watchOS 10.0+
+- iOS 10.0+ - Deprecated in 27.0
+- iPadOS 10.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.15+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+- watchOS 10.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use URLSession:assetDownloadTask:willDownloadToURL: instead
 
 ## Declaration
 
 ```swift
 optional func urlSession(_ session: URLSession, assetDownloadTask: AVAssetDownloadTask, didFinishDownloadingTo location: URL)
+```
+
+```objc
+- (void) URLSession:(NSURLSession *) session assetDownloadTask:(AVAssetDownloadTask *) assetDownloadTask didFinishDownloadingToURL:(NSURL *) location;
 ```
 
 #### Discussion
@@ -31,15 +38,16 @@ Don’t move the downloaded asset from this location. Downloaded assets must rem
 
 ## See Also
 
-- [func urlSession(URLSession, assetDownloadTask: AVAssetDownloadTask, didResolve: AVMediaSelection)](avassetdownloaddelegate/urlsession(_:assetdownloadtask:didresolve:).md)
+### Responding to download events
+- [func urlSession(URLSession, assetDownloadTask: AVAssetDownloadTask, didResolve: AVMediaSelection)](./urlsession%28_,assetdownloadtask,didresolve%29.md)
   Tells the delegate that a download task resolved the media selection to download, including any automatic selections.
-- [func urlSession(URLSession, assetDownloadTask: AVAssetDownloadTask, didLoad: CMTimeRange, totalTimeRangesLoaded: [NSValue], timeRangeExpectedToLoad: CMTimeRange)](avassetdownloaddelegate/urlsession(_:assetdownloadtask:didload:totaltimerangesloaded:timerangeexpectedtoload:).md)
+- [func urlSession(URLSession, assetDownloadTask: AVAssetDownloadTask, didLoad: CMTimeRange, totalTimeRangesLoaded: [NSValue], timeRangeExpectedToLoad: CMTimeRange)](./urlsession%28_,assetdownloadtask,didload,totaltimerangesloaded,timerangeexpectedtoload%29.md)
   Tells the delegate that a download task loaded a new time range.
-- [func urlSession(URLSession, assetDownloadTask: AVAssetDownloadTask, willDownloadVariants: [AVAssetVariant])](avassetdownloaddelegate/urlsession(_:assetdownloadtask:willdownloadvariants:).md)
+- [func urlSession(URLSession, assetDownloadTask: AVAssetDownloadTask, willDownloadVariants: [AVAssetVariant])](./urlsession%28_,assetdownloadtask,willdownloadvariants%29.md)
   Tells the delegate that a download task completed variant selection.
-- [func urlSession(URLSession, assetDownloadTask: AVAssetDownloadTask, willDownloadTo: URL)](avassetdownloaddelegate/urlsession(_:assetdownloadtask:willdownloadto:).md)
+- [func urlSession(URLSession, assetDownloadTask: AVAssetDownloadTask, willDownloadTo: URL)](./urlsession%28_,assetdownloadtask,willdownloadto%29.md)
   Tells the delegate when a download task determines its download location.
-- [func urlSession(URLSession, assetDownloadTask: AVAssetDownloadTask, didReceive: AVMetricEvent)](avassetdownloaddelegate/urlsession(_:assetdownloadtask:didreceive:).md)
+- [func urlSession(URLSession, assetDownloadTask: AVAssetDownloadTask, didReceive: AVMetricEvent)](./urlsession%28_,assetdownloadtask,didreceive%29.md)
   Sent when a download task receives an AVMetricEvent.
 
 

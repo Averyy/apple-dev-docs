@@ -1,7 +1,8 @@
 # duckers
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of objects that reduce the volume of simultaneously playing sounds.
 
@@ -19,11 +20,16 @@ An array of objects that reduce the volume of simultaneously playing sounds.
 var duckers: [PHASEDucker] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<PHASEDucker *> * duckers;
+```
+
 ## See Also
 
-- [var groups: [String : PHASEGroup]](phaseengine/groups.md)
+### Managing Groups of Sounds
+- [var groups: [String : PHASEGroup]](./groups.md)
   A list of named groups that contain sounds the app operates on collectively.
-- [var activeGroupPreset: PHASEGroupPreset?](phaseengine/activegrouppreset.md)
+- [var activeGroupPreset: PHASEGroupPreset?](./activegrouppreset.md)
   The settings that define playback for a group of sounds.
 
 

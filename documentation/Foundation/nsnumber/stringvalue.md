@@ -1,7 +1,8 @@
 # stringValue
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number object’s value expressed as a human-readable string.
 
@@ -20,13 +21,18 @@ The number object’s value expressed as a human-readable string.
 var stringValue: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * stringValue;
+```
+
 #### Discussion
 
-The string is created by invoking [`description(withLocale:)`](nsnumber/description(withlocale:).md) where locale is `nil`.
+The string is created by invoking [`description(withLocale:)`](./description%28withlocale%29.md) where locale is `nil`.
 
 ## See Also
 
-- [func description(withLocale: Any?) -> String](nsnumber/description(withlocale:).md)
+### Retrieving String Representations
+- [func description(withLocale: Any?) -> String](./description%28withlocale%29.md)
   Returns a string that represents the contents of the number object for a given locale.
 
 

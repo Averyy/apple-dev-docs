@@ -1,12 +1,13 @@
 # kABAddressCityKey
 
 **Framework**: Address Book  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 City.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,18 +15,23 @@ City.
 let kABAddressCityKey: String
 ```
 
+```c
+extern NSString * const kABAddressCityKey;
+```
+
 ## See Also
 
-- [let kABAddressStreetKey: String](kabaddressstreetkey.md)
+### Constants
+- [let kABAddressStreetKey: String](./kabaddressstreetkey.md)
   Street.
-- [let kABAddressStateKey: String](kabaddressstatekey.md)
+- [let kABAddressStateKey: String](./kabaddressstatekey.md)
   State.
-- [let kABAddressZIPKey: String](kabaddresszipkey.md)
+- [let kABAddressZIPKey: String](./kabaddresszipkey.md)
   Zip.
-- [let kABAddressCountryKey: String](kabaddresscountrykey.md)
+- [let kABAddressCountryKey: String](./kabaddresscountrykey.md)
   Country name.
-- [let kABAddressCountryCodeKey: String](kabaddresscountrycodekey.md)
-  Country, identified by ISO country code. For a list of these codes, see [`ABPerson`](abperson.md).
+- [let kABAddressCountryCodeKey: String](./kabaddresscountrycodekey.md)
+  Country, identified by ISO country code. For a list of these codes, see [`ABPerson`](./abperson.md).
 
 
 ---

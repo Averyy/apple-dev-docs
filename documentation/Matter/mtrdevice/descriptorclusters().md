@@ -1,7 +1,8 @@
 # descriptorClusters()
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Read all known attributes from descriptor clusters on all known endpoints.
 
@@ -18,6 +19,10 @@ Read all known attributes from descriptor clusters on all known endpoints.
 
 ```swift
 func descriptorClusters() -> [MTRAttributePath : [String : Any]]
+```
+
+```objc
+- (NSDictionary<MTRAttributePath *,NSDictionary<NSString *,id> *> *) descriptorClusters;
 ```
 
 #### Return Value

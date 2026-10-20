@@ -1,7 +1,8 @@
 # moonset
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time of moonset.
 
@@ -26,9 +27,10 @@ Moonset occurs when the moon sets below Earth’s horizon.
 
 ## See Also
 
-- [var moonrise: Date?](moonevents/moonrise.md)
+### Getting the moon events
+- [var moonrise: Date?](./moonrise.md)
   The time of moonrise.
-- [var phase: MoonPhase](moonevents/phase.md)
+- [var phase: MoonPhase](./phase.md)
   The moon phase.
 
 

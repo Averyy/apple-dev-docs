@@ -1,7 +1,8 @@
 # attributes
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of key-value pairs that describe the filter.
 
@@ -10,7 +11,7 @@ A dictionary of key-value pairs that describe the filter.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,12 +20,16 @@ A dictionary of key-value pairs that describe the filter.
 var attributes: [String : Any] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDictionary<NSString *,id> * attributes;
+```
+
 #### Discussion
 
 This dictionary contains two kinds of key-value pairs:
 
-- Keys listed in [`Filter Attribute Keys`](filter-attribute-keys.md) describe the filter, providing information such as a human-readable name and categories you can use to organize filters in your app’s UI.
-- Other keys, including those listed in [`Filter Parameter Keys`](filter-parameter-keys.md) and those starting with “input” or “output”, describe parameters that control the filter’s behavior. For each parameter key, the corresponding value is another dictionary describing possible values for that parameter, such as the value class and minimum/maximum values. You can use this information to build a UI to control the filter.
+- Keys listed in [Filter Attribute Keys](../filter-attribute-keys.md) describe the filter, providing information such as a human-readable name and categories you can use to organize filters in your app’s UI.
+- Other keys, including those listed in [Filter Parameter Keys](../filter-parameter-keys.md) and those starting with “input” or “output”, describe parameters that control the filter’s behavior. For each parameter key, the corresponding value is another dictionary describing possible values for that parameter, such as the value class and minimum/maximum values. You can use this information to build a UI to control the filter.
 
 For example, the attributes dictionary for the `CIColorControls` filter contains the following information:
 
@@ -75,16 +80,17 @@ CIColorControls:
 
 ## See Also
 
-- [var name: String](cifilter-swift.class/name.md)
+### Getting filter parameters and attributes
+- [var name: String](./name.md)
   A name associated with a filter.
-- [var isEnabled: Bool](cifilter-swift.class/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that determines whether the filter is enabled. Animatable.
-- [var inputKeys: [String]](cifilter-swift.class/inputkeys.md)
+- [var inputKeys: [String]](./inputkeys.md)
   The names of all input parameters to the filter.
-- [var outputKeys: [String]](cifilter-swift.class/outputkeys.md)
+- [var outputKeys: [String]](./outputkeys.md)
   The names of all output parameters from the filter.
-- [var outputImage: CIImage?](cifilter-swift.class/outputimage.md)
-  Returns a [`CIImage`](ciimage.md) object that encapsulates the operations configured in the filter.
+- [var outputImage: CIImage?](./outputimage.md)
+  Returns a [`CIImage`](../ciimage.md) object that encapsulates the operations configured in the filter.
 
 
 ---

@@ -1,7 +1,8 @@
 # setContent(_:)
 
 **Framework**: Shared with You  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the content view.
 
@@ -14,8 +15,28 @@ Sets the content view.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+func setContent(_ detailViewListContentView: UIView)
+```
+
+*macOS*
+
 ```swift
 func setContent(_ detailViewListContentView: NSView)
+```
+
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```objc
+- (void) setContentView:(UIView *) detailViewListContentView;
+```
+
+*macOS*
+
+```objc
+- (void) setContentView:(NSView *) detailViewListContentView;
 ```
 
 ## Parameters
@@ -24,11 +45,12 @@ func setContent(_ detailViewListContentView: NSView)
 
 ## See Also
 
-- [func setDetailViewListContent<ListContent>(ListContent)](swcollaborationview/setdetailviewlistcontent(_:)-88gy5.md)
+### Setting view attributes
+- [func setDetailViewListContent<ListContent>(ListContent)](./setdetailviewlistcontent%28_%29-88gy5.md)
   Sets the detail view for the list content.
-- [func setDetailViewListContent<ListContent>(() -> ListContent)](swcollaborationview/setdetailviewlistcontent(_:)-8ml1c.md)
+- [func setDetailViewListContent<ListContent>(() -> ListContent)](./setdetailviewlistcontent%28_%29-8ml1c.md)
   Sets the detail view for the list content from view builder closures.
-- [func setShowManageButton(Bool)](swcollaborationview/setshowmanagebutton(_:).md)
+- [func setShowManageButton(Bool)](./setshowmanagebutton%28_%29.md)
   A Boolean value the system uses to show or hide the default manage-participants button in the collaboration popover.
 
 

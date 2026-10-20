@@ -1,7 +1,8 @@
 # magnitudeSquared
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dot-product of this animated pair with itself.
 

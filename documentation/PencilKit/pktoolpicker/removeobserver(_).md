@@ -1,7 +1,8 @@
 # removeObserver(_:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the specified object from the list of objects to notify when the picker configuration changes.
 
@@ -17,15 +18,20 @@ Removes the specified object from the list of objects to notify when the picker 
 func removeObserver(_ observer: any PKToolPickerObserver)
 ```
 
+```objc
+- (void) removeObserver:(id<PKToolPickerObserver>) observer;
+```
+
 ## Parameters
 
 - `observer`: The object to stop sending notifications to.
 
 ## See Also
 
-- [func addObserver(any PKToolPickerObserver)](pktoolpicker/addobserver(_:).md)
+### Detecting changes to the picker
+- [func addObserver(any PKToolPickerObserver)](./addobserver%28_%29.md)
   Adds the specified object to the list of objects to notify when the picker configuration changes.
-- [protocol PKToolPickerObserver](pktoolpickerobserver.md)
+- [protocol PKToolPickerObserver](../pktoolpickerobserver.md)
   An interface you use to detect when the user changes the selected tools and drawing characteristics of a tool picker object.
 
 

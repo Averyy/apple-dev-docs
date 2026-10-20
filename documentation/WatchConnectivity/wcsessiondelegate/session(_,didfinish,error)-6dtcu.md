@@ -1,7 +1,8 @@
 # session(_:didFinish:error:)
 
 **Framework**: Watch Connectivity  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a file transfer has finished successfully or ended because of an error.
 
@@ -18,6 +19,10 @@ Tells the delegate that a file transfer has finished successfully or ended becau
 optional func session(_ session: WCSession, didFinish fileTransfer: WCSessionFileTransfer, error: (any Error)?)
 ```
 
+```objc
+- (void) session:(WCSession *) session didFinishFileTransfer:(WCSessionFileTransfer *) fileTransfer error:(NSError *) error;
+```
+
 #### Discussion
 
 The session object calls this method when a file transfer initiated by the current app finished, either successfully or unsuccessfully. Use this method to note that the transfer completed or to respond to errors, perhaps by trying to send the file again at a later time.
@@ -32,7 +37,8 @@ This method is called on a background thread of your app.
 
 ## See Also
 
-- [func session(WCSession, didReceive: WCSessionFile)](wcsessiondelegate/session(_:didreceive:).md)
+### Managing File Transfers
+- [func session(WCSession, didReceive: WCSessionFile)](./session%28_,didreceive%29.md)
   Tells the delegate that the session successfully received a file from its counterpart.
 
 

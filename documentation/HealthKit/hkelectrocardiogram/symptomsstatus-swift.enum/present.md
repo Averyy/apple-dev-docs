@@ -1,7 +1,8 @@
 # HKElectrocardiogram.SymptomsStatus.present
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user added a symptom when they recorded the ECG.
 
@@ -19,15 +20,20 @@ The user added a symptom when they recorded the ECG.
 case present
 ```
 
+```c
+HKElectrocardiogramSymptomsStatusPresent
+```
+
 #### Discussion
 
-To access the symptoms, query for the [`HKCategorySample`](hkcategorysample.md) samples associated with the electrocardiogram sample.
+To access the symptoms, query for the [`HKCategorySample`](../../hkcategorysample.md) samples associated with the electrocardiogram sample.
 
 ## See Also
 
-- [HKElectrocardiogram.SymptomsStatus.none](hkelectrocardiogram/symptomsstatus-swift.enum/none.md)
+### Status
+- [HKElectrocardiogram.SymptomsStatus.none](./none.md)
   The user didn’t experience any symptoms during the duration of the electrocardiogram reading.
-- [HKElectrocardiogram.SymptomsStatus.notSet](hkelectrocardiogram/symptomsstatus-swift.enum/notset.md)
+- [HKElectrocardiogram.SymptomsStatus.notSet](./notset.md)
   The user didn’t specify whether or not they experienced symptoms.
 
 

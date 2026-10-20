@@ -1,7 +1,8 @@
 # createSession(clientRequest:)
 
 **Framework**: App License Delivery SDK  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an ALD Session
 
@@ -13,7 +14,7 @@ func createSession(clientRequest: [UInt8]) throws -> ALDSession
 
 ## Mentions
 
-- [Licensing alternative distribution apps](licensing-alternative-distribution-apps.md)
+- [Licensing alternative distribution apps](../licensing-alternative-distribution-apps.md)
 
 #### Return Value
 

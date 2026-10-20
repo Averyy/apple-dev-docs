@@ -1,7 +1,8 @@
 # SecStaticCode
 
 **Framework**: Security  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A static code object representing signed code on disk.
 
@@ -15,15 +16,19 @@ A static code object representing signed code on disk.
 class SecStaticCode
 ```
 
+```c
+typedef const struct __SecCode * SecStaticCodeRef;
+```
+
 #### Discussion
 
-Compare with [`SecCode`](seccode.md).
+Compare with [`SecCode`](./seccode.md).
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

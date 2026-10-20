@@ -1,7 +1,8 @@
 # expire()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the session expired as the result of normal, intentional processes.
 
@@ -20,13 +21,18 @@ Tells the delegate that the session expired as the result of normal, intentional
 func expire()
 ```
 
+```objc
+- (void) expire;
+```
+
 ## See Also
 
-- [func makeSecureTokenForExpirationDate(ofPersistableContentKey: Data, completionHandler: (Data?, (any Error)?) -> Void)](avcontentkeysession/makesecuretokenforexpirationdate(ofpersistablecontentkey:completionhandler:).md)
+### Managing expiration
+- [func makeSecureTokenForExpirationDate(ofPersistableContentKey: Data, completionHandler: (Data?, (any Error)?) -> Void)](./makesecuretokenforexpirationdate%28ofpersistablecontentkey,completionhandler%29.md)
   Creates a secure server playback context that the client sends to the key server to get an expiration date for the given persistable content key data.
-- [func renewExpiringResponseData(for: AVContentKeyRequest)](avcontentkeysession/renewexpiringresponsedata(for:).md)
+- [func renewExpiringResponseData(for: AVContentKeyRequest)](./renewexpiringresponsedata%28for%29.md)
   Tells the delegate that previously provided response data for a content key request is about to expire.
-- [var contentProtectionSessionIdentifier: Data?](avcontentkeysession/contentprotectionsessionidentifier.md)
+- [var contentProtectionSessionIdentifier: Data?](./contentprotectionsessionidentifier.md)
   The identifier for the current content protection session.
 
 

@@ -1,7 +1,8 @@
 # kColorSyncByteOrderDefault
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The default (host) byte order.
 
@@ -20,18 +21,23 @@ The default (host) byte order.
 var kColorSyncByteOrderDefault: Int { get }
 ```
 
+```c
+kColorSyncByteOrderDefault
+```
+
 ## See Also
 
-- [var kColorSyncByteOrder16Big: Int](kcolorsyncbyteorder16big.md)
+### Setting byte order
+- [var kColorSyncByteOrder16Big: Int](./kcolorsyncbyteorder16big.md)
   16-bit, big-endian byte order.
-- [var kColorSyncByteOrder16Little: Int](kcolorsyncbyteorder16little.md)
+- [var kColorSyncByteOrder16Little: Int](./kcolorsyncbyteorder16little.md)
   16-bit, little-endian byte order.
-- [var kColorSyncByteOrder32Big: Int](kcolorsyncbyteorder32big.md)
+- [var kColorSyncByteOrder32Big: Int](./kcolorsyncbyteorder32big.md)
   32-bit, big-endian byte order.
-- [var kColorSyncByteOrder32Little: Int](kcolorsyncbyteorder32little.md)
+- [var kColorSyncByteOrder32Little: Int](./kcolorsyncbyteorder32little.md)
   32-bit, little-endian byte order.
-- [var kColorSyncByteOrderMask: Int](kcolorsyncbyteordermask.md)
-  The mask for extracting the byte-order value from a [`ColorSyncDataLayout`](colorsyncdatalayout.md).
+- [var kColorSyncByteOrderMask: Int](./kcolorsyncbyteordermask.md)
+  The mask for extracting the byte-order value from a [`ColorSyncDataLayout`](./colorsyncdatalayout.md).
 
 
 ---

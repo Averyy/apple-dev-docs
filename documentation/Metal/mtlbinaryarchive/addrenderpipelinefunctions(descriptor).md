@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Adds a description of a render pipeline to the archive.
@@ -20,17 +21,22 @@ Adds a description of a render pipeline to the archive.
 func addRenderPipelineFunctions(descriptor: MTLRenderPipelineDescriptor) throws
 ```
 
+```objc
+- (BOOL) addRenderPipelineFunctionsWithDescriptor:(MTLRenderPipelineDescriptor *) descriptor error:(NSError **) error;
+```
+
 ## Parameters
 
 - `descriptor`: A description of the render pipeline to archive.
 
 ## See Also
 
-- [func addComputePipelineFunctions(descriptor: MTLComputePipelineDescriptor) throws](mtlbinaryarchive/addcomputepipelinefunctions(descriptor:).md)
+### Adding pipeline descriptors
+- [func addComputePipelineFunctions(descriptor: MTLComputePipelineDescriptor) throws](./addcomputepipelinefunctions%28descriptor%29.md)
   Adds a description of a compute pipeline to the archive.
-- [func addTileRenderPipelineFunctions(descriptor: MTLTileRenderPipelineDescriptor) throws](mtlbinaryarchive/addtilerenderpipelinefunctions(descriptor:).md)
+- [func addTileRenderPipelineFunctions(descriptor: MTLTileRenderPipelineDescriptor) throws](./addtilerenderpipelinefunctions%28descriptor%29.md)
   Adds a description of a tile renderer pipeline to the archive.
-- [func addFunction(descriptor: MTLFunctionDescriptor, library: any MTLLibrary) throws](mtlbinaryarchive/addfunction(descriptor:library:).md)
+- [func addFunction(descriptor: MTLFunctionDescriptor, library: any MTLLibrary) throws](./addfunction%28descriptor,library%29.md)
   Adds a description of a function to the archive.
 
 

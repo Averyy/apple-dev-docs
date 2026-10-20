@@ -1,11 +1,12 @@
 # CGScrollPhase.ended
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,12 +14,17 @@
 case ended
 ```
 
+```c
+kCGScrollPhaseEnded
+```
+
 ## See Also
 
-- [CGScrollPhase.began](cgscrollphase/began.md)
-- [CGScrollPhase.cancelled](cgscrollphase/cancelled.md)
-- [CGScrollPhase.changed](cgscrollphase/changed.md)
-- [CGScrollPhase.mayBegin](cgscrollphase/maybegin.md)
+### Constants
+- [CGScrollPhase.began](./began.md)
+- [CGScrollPhase.cancelled](./cancelled.md)
+- [CGScrollPhase.changed](./changed.md)
+- [CGScrollPhase.mayBegin](./maybegin.md)
 
 
 ---

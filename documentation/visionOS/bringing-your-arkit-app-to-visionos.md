@@ -1,6 +1,7 @@
 # Bringing your ARKit app to visionOS
 
-**Framework**: visionOS
+**Framework**: visionOS  
+**Role**: Article
 
 Update an iPadOS or iOS app that uses ARKit, and provide an equivalent experience in visionOS.
 
@@ -12,25 +13,25 @@ In visionOS, you don’t need a special view to display an augmented reality int
 
 When migrating your app to visionOS, reuse as much of your app’s existing content as you can. visionOS supports most of the same technologies as iOS, so you can reuse project assets, 3D models, and most custom views. Don’t reuse your app’s ARKit code or any code that relies on technologies visionOS doesn’t support.
 
-For general guidance on how to port apps to visionOS, see [`Bringing your existing apps to visionOS`](bringing-your-app-to-visionos.md).
+For general guidance on how to port apps to visionOS, see [Bringing your existing apps to visionOS](./bringing-your-app-to-visionos.md).
 
-##### Adopt Technologies Available in Both Ios and Visionos
+##### Adopt technologies available in both iOS and visionOS
 
 To create a single app that runs in both iOS and visionOS, use technologies that are available on both platforms. While ARKit in iOS lets you create your interface using several different technologies, the preferred technologies in visionOS are SwiftUI and RealityKit. If you’re not currently using RealityKit for 3D content, consider switching to it before you start adding visionOS support. If you retain code that uses older technologies in your iOS app, you might need to re-create much of that code using RealityKit when migrating to visionOS.
 
-If you use [`Metal`](https://developer.apple.com/documentation/metal) to draw your app’s content, you can bring your code to visionOS to create content for 2D views or to create fully immersive experiences. You can’t use Metal to create 3D content that integrates with the person’s surroundings. This restriction prevents apps from sampling pixels of the person’s surroundings, which might contain sensitive information. For information on how to create a fully immersive experience with Metal, see [`Drawing fully immersive content using Metal`](https://developer.apple.com/documentation/compositorservices/drawing-fully-immersive-content-using-metal).
+If you use [Metal](../Metal/Metal.md) to draw your app’s content, you can bring your code to visionOS to create content for 2D views or to create fully immersive experiences. You can’t use Metal to create 3D content that integrates with the person’s surroundings. This restriction prevents apps from sampling pixels of the person’s surroundings, which might contain sensitive information. For information on how to create a fully immersive experience with Metal, see [Drawing fully immersive content using Metal](../CompositorServices/drawing-fully-immersive-content-using-metal.md).
 
-> **Note**: In visionOS 2.0 and later, you can create a mixed immersive experience with Metal as well. Watch [`Render Metal with passthrough in visionOS`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/10092) for more information and sample code.
+> **Note**: In visionOS 2.0 and later, you can create a mixed immersive experience with Metal as well. Watch [Render Metal with passthrough in visionOS](https://developer.apple.com/videos/play/wwdc2024/10092) for more information and sample code.
 
-##### Convert 3d Assets to the Usdz Format
+##### Convert 3D assets to the USDZ format
 
 The recommended format for 3D assets in iOS and visionOS is USDZ. This format offers a compact single file for everything, including your models, textures, behaviors, physics, anchoring, and more. If you have assets that don’t use this format, use the Reality Converter tool that comes with Xcode to convert them for your project.
 
 When building 3D scenes for visionOS, use Reality Composer Pro to create your scenes that incorporate your USDZ assets. With Reality Composer Pro, you can import your USD files and edit them in place, nondestructively. If your iOS app applies custom materials to your assets, convert those materials to shader graphs in the app.
 
-Although you can bring models and materials to your project using USDZ files, you can’t bring custom shaders you wrote using Metal. Replace any custom shader code with MaterialX shaders. Many digital content creation tools support the MaterialX standard, and let you create dynamic shaders and save them with your USDZ files. Reality Composer Pro and RealityKit support MaterialX shaders, and incorporate them with your other USDZ asset content. See the [`MaterialX`](https://developer.apple.comhttps://materialx.org/) site for more information.
+Although you can bring models and materials to your project using USDZ files, you can’t bring custom shaders you wrote using Metal. Replace any custom shader code with MaterialX shaders. Many digital content creation tools support the MaterialX standard, and let you create dynamic shaders and save them with your USDZ files. Reality Composer Pro and RealityKit support MaterialX shaders, and incorporate them with your other USDZ asset content. See the [MaterialX](https://materialx.org/) site for more information.
 
-##### Update Your Interface to Support Visionos
+##### Update your interface to support visionOS
 
 In visionOS, you manage your app’s content, and the system handles the integration of that content with the person’s surroundings. This approach differs from iOS, where you use a special ARKit view to blend your content and the live camera content. Bringing your interface to visionOS therefore means you need to remove this special ARKit view and focus only on your content.
 
@@ -38,17 +39,17 @@ If you can display your app’s content using SwiftUI or UIKit views, build a wi
 
 | If you create your AR experience using: | Update to: |
 | --- | --- |
-| RealityKit and [`ARView`](https://developer.apple.com/documentation/realitykit/arview) | [`RealityKit`](https://developer.apple.com/documentation/realitykit) and [`RealityView`](https://developer.apple.com/documentation/realitykit/realityview) |
-| SceneKit and [`ARSCNView`](https://developer.apple.com/documentation/arkit/arscnview) | [`RealityKit`](https://developer.apple.com/documentation/realitykit) and [`RealityView`](https://developer.apple.com/documentation/realitykit/realityview) |
-| SpriteKit and [`ARSKView`](https://developer.apple.com/documentation/arkit/arskview) | [`RealityKit`](https://developer.apple.com/documentation/realitykit) or [`SwiftUI`](https://developer.apple.com/documentation/swiftui) |
+| RealityKit and [`ARView`](../RealityKit/arview.md) | [RealityKit](../RealityKit/RealityKit.md) and [`RealityView`](../RealityKit/realityview.md) |
+| SceneKit and [`ARSCNView`](../ARKit/arscnview.md) | [RealityKit](../RealityKit/RealityKit.md) and [`RealityView`](../RealityKit/realityview.md) |
+| SpriteKit and [`ARSKView`](../ARKit/arskview.md) | [RealityKit](../RealityKit/RealityKit.md) or [SwiftUI](../SwiftUI/SwiftUI.md) |
 
-A [`RealityView`](https://developer.apple.com/documentation/realitykit/realityview) is a SwiftUI view that manages the content and animations you create using RealityKit and Reality Composer Pro. You can add a `RealityView` to any of your app’s windows to display 2D or 3D content. You can also add the view to an [`ImmersiveSpace`](https://developer.apple.com/documentation/swiftui/immersivespace) scene, which you use to integrate your RealityKit content into the person’s surroundings.
+A [`RealityView`](../RealityKit/realityview.md) is a SwiftUI view that manages the content and animations you create using RealityKit and Reality Composer Pro. You can add a `RealityView` to any of your app’s windows to display 2D or 3D content. You can also add the view to an [`ImmersiveSpace`](../SwiftUI/immersivespace.md) scene, which you use to integrate your RealityKit content into the person’s surroundings.
 
 > **Note**: You can load iOS storyboards into a visionOS app, but you can’t customize your interface for visionOS or include 3D content. If you want to share interface files between iOS and visionOS, adopt SwiftUI views or create your interface programmatically.
 
-For more information about how to use `RealityView` and respond to interactions with your content, see [`Adding 3D content to your app`](adding-3d-content-to-your-app.md).
+For more information about how to use `RealityView` and respond to interactions with your content, see [Adding 3D content to your app](./adding-3d-content-to-your-app.md).
 
-##### Replace Your Arkit Code
+##### Replace your ARKit code
 
 ARKit provides different APIs for iOS and visionOS, and the way you use ARKit services on the platforms is also different. In iOS, you must use ARKit to put your content onscreen, and you can also use it to manage interactions between your content and a person’s surroundings. In visionOS, the system puts your content onscreen, so you only use ARKit to manage interactions with the surroundings. Because of this more limited usage, some apps don’t need ARKit at all in visionOS.
 
@@ -62,9 +63,9 @@ The only time you use ARKit in visionOS is when you need one of the following se
 
 Use plane detection, image tracking, and scene reconstruction to facilitate interactions between your app’s virtual content and real-world items. For example, use plane detection to detect a tabletop on which to place your content. Use world tracking to record anchors that you want to persist between launches of your app. Use hand tracking if your app requires custom hand-based input.
 
-> ❗ **Important**: In visionOS 2.0 and later, use [`SpatialTrackingSession`](https://developer.apple.com/documentation/realitykit/spatialtrackingsession) for available AR data instead.
+> ❗ **Important**: In visionOS 2.0 and later, use [`SpatialTrackingSession`](../RealityKit/spatialtrackingsession.md) for available AR data instead.
 
-To start ARKit services in your app, create an [`ARKitSession`](https://developer.apple.com/documentation/arkit/arkitsession) object and run it with the data providers for each service. Unlike ARKit in iOS, services in visionOS are independent of one another, and you can start and stop each one at any time. The following example shows how to detect horizontal and vertical planes. Data providers deliver new information using an asynchronous sequence.
+To start ARKit services in your app, create an [`ARKitSession`](../ARKit/arkitsession.md) object and run it with the data providers for each service. Unlike ARKit in iOS, services in visionOS are independent of one another, and you can start and stop each one at any time. The following example shows how to detect horizontal and vertical planes. Data providers deliver new information using an asynchronous sequence.
 
 ```swift
 let session = ARKitSession()
@@ -88,9 +89,9 @@ Task {
 
 If you use the world-tracking data provider in visionOS, ARKit automatically persists the anchors you add to your app’s content. You don’t need to persist these anchors yourself.
 
-For more information about how to use ARKit, see [`ARKit`](https://developer.apple.com/documentation/arkit).
+For more information about how to use ARKit, see [ARKit](../ARKit/ARKit.md).
 
-##### Isolate Arkit Features Not Available in Visionos
+##### Isolate ARKit features not available in visionOS
 
 If your app uses ARKit features that aren’t present in visionOS, isolate that code to the iOS version of your app. The following features are available in iOS, but don’t have an equivalent in visionOS:
 
@@ -107,11 +108,12 @@ If you use ARKit raycasting in iOS to detect interactions with objects in the pe
 
 ## See Also
 
-- [Determining whether to bring your app to visionOS](determining-whether-to-bring-your-app-to-visionos.md)
+### iOS migration and compatibility
+- [Determining whether to bring your app to visionOS](./determining-whether-to-bring-your-app-to-visionos.md)
   Decide whether to bring your existing iPadOS or iOS app to visionOS.
-- [Bringing your existing apps to visionOS](bringing-your-app-to-visionos.md)
+- [Bringing your existing apps to visionOS](./bringing-your-app-to-visionos.md)
   Build a version of your iPadOS or iOS app using the visionOS SDK, and update your code for platform differences.
-- [Making your existing app compatible with visionOS](making-your-app-compatible-with-visionos.md)
+- [Making your existing app compatible with visionOS](./making-your-app-compatible-with-visionos.md)
   Modify your iPadOS or iOS app to run successfully in visionOS as a compatible app.
 
 

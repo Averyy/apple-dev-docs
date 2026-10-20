@@ -1,7 +1,8 @@
 # status
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The completion status for this individual frame.
 
@@ -10,7 +11,7 @@ The completion status for this individual frame.
 
 ## Declaration
 
-```swift
+```c
 IOReturn status;
 ```
 
@@ -20,13 +21,14 @@ The system initializes this field to `kIOReturnInvalid` and updates it with a va
 
 ## See Also
 
-- [requestCount](iousbisochronousframe/requestcount.md)
+### Getting the Frame Properties
+- [requestCount](./requestcount.md)
   The number of bytes to transfer for this frame.
-- [completeCount](iousbisochronousframe/completecount.md)
+- [completeCount](./completecount.md)
   The number of bytes actually transferred for this frame.
-- [reserved](iousbisochronousframe/reserved.md)
+- [reserved](./reserved.md)
   Reserved for future use.
-- [timeStamp](iousbisochronousframe/timestamp.md)
+- [timeStamp](./timestamp.md)
   The frame’s observed completion time.
 
 

@@ -1,7 +1,8 @@
 # totalActivityDuration
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Access the total activity time for this category.
 

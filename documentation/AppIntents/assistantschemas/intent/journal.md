@@ -1,7 +1,8 @@
 # journal
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Assistant schema conformance for app intents that offer journaling functionality.
 
@@ -19,6 +20,8 @@ Assistant schema conformance for app intents that offer journaling functionality
 ```swift
 static var journal: some AssistantSchemas.JournalIntent { get }
 ```
+
+Available when `Self` is `AssistantSchemas.IntentSchema`.
 
 
 ---

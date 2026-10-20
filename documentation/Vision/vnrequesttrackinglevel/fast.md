@@ -1,7 +1,8 @@
 # VNRequestTrackingLevel.fast
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Tracking level that favors speed over location accuracy.
 
@@ -11,13 +12,18 @@ Tracking level that favors speed over location accuracy.
 case fast
 ```
 
+```c
+VNRequestTrackingLevelFast
+```
+
 #### Discussion
 
 This is the default option used by trackers.
 
 ## See Also
 
-- [VNRequestTrackingLevel.accurate](vnrequesttrackinglevel/accurate.md)
+### Enumeration Cases
+- [VNRequestTrackingLevel.accurate](./accurate.md)
   Tracking level that favors location accuracy over speed.
 
 

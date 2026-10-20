@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.R
 
 # mlx.nn.RNN
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.RNN.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.RNN
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.RNN
-
 **class RNN(*input_size: int*, *hidden_size: int*, *bias: bool = True*, *nonlinearity: Callable | None = None*)**
 : An Elman recurrent layer.
 The input is a sequence of shape `NLD` or `LD` where:
@@ -55,8 +28,6 @@ Parameters:
 **hidden_size** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Dimension of the hidden state, `H`.
 **bias** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – Whether to use a bias. Default: `True`.
 **nonlinearity** (*callable**, **optional*) – Non-linearity to use. If `None`,
-then [tanh()](../_autosummary_functions/mlx.nn.tanh.html#mlx.nn.tanh) is used. Default: `None`.
+then [tanh()](../_autosummary_functions/mlx.nn.tanh.md#mlx.nn.tanh) is used. Default: `None`.
 
 Methods
-
-** Contents

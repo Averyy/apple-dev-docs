@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a text-drag options structure with the specified raw value.
 

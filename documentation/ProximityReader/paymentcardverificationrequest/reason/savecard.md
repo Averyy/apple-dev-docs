@@ -1,7 +1,8 @@
 # PaymentCardVerificationRequest.Reason.saveCard
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Save the card information for later.
 
@@ -22,11 +23,12 @@ If your application saves card data, it’s your responsibility to ensure that t
 
 ## See Also
 
-- [PaymentCardVerificationRequest.Reason.lookUp](paymentcardverificationrequest/reason/lookup.md)
+### Getting the verification reason
+- [PaymentCardVerificationRequest.Reason.lookUp](./lookup.md)
   Verify the payment card to look up a past transaction.
-- [PaymentCardVerificationRequest.Reason.openTab](paymentcardverificationrequest/reason/opentab.md)
+- [PaymentCardVerificationRequest.Reason.openTab](./opentab.md)
   Check if the card is valid.
-- [PaymentCardVerificationRequest.Reason.other](paymentcardverificationrequest/reason/other.md)
+- [PaymentCardVerificationRequest.Reason.other](./other.md)
   Verify the card information.
 
 

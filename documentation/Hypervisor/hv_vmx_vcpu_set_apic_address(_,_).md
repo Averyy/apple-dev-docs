@@ -1,7 +1,8 @@
 # hv_vmx_vcpu_set_apic_address(_:_:)
 
 **Framework**: Hypervisor  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the address of the guest Advanced Programmable Interrupt Controller (APIC) for a vCPU in the guest physical address space of the VM.
 
@@ -14,9 +15,13 @@ Sets the address of the guest Advanced Programmable Interrupt Controller (APIC) 
 func hv_vmx_vcpu_set_apic_address(_ vcpu: hv_vcpuid_t, _ gpa: hv_gpaddr_t) -> hv_return_t
 ```
 
+```c
+extern hv_return_t hv_vmx_vcpu_set_apic_address(hv_vcpuid_t vcpu, hv_gpaddr_t gpa);
+```
+
 #### Return Value
 
-[`HV_SUCCESS`](hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](hv_return_t.md).
+[`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 
 #### Discussion
 
@@ -29,15 +34,16 @@ func hv_vmx_vcpu_set_apic_address(_ vcpu: hv_vcpuid_t, _ gpa: hv_gpaddr_t) -> hv
 
 ## See Also
 
-- [Virtual Machine Control Structure (VMCS) Field IDs](virtual-machine-control-structure-vmcs-field-ids.md)
+### Field management
+- [Virtual Machine Control Structure (VMCS) Field IDs](./virtual-machine-control-structure-vmcs-field-ids.md)
   Fields you can read or change using the Hypervisor framework’s read and write functions.
-- [func hv_vmx_vcpu_read_vmcs(hv_vcpuid_t, UInt32, UnsafeMutablePointer<UInt64>) -> hv_return_t](hv_vmx_vcpu_read_vmcs(_:_:_:).md)
+- [func hv_vmx_vcpu_read_vmcs(hv_vcpuid_t, UInt32, UnsafeMutablePointer<UInt64>) -> hv_return_t](./hv_vmx_vcpu_read_vmcs%28_,_,_%29.md)
   Returns, by reference, the current value of a virtual machine control structure (VMCS) field of a vCPU.
-- [func hv_vmx_vcpu_write_vmcs(hv_vcpuid_t, UInt32, UInt64) -> hv_return_t](hv_vmx_vcpu_write_vmcs(_:_:_:).md)
+- [func hv_vmx_vcpu_write_vmcs(hv_vcpuid_t, UInt32, UInt64) -> hv_return_t](./hv_vmx_vcpu_write_vmcs%28_,_,_%29.md)
   Sets the value of a virtual machine control structure (VMCS) field of a vCPU.
-- [func hv_vmx_vcpu_get_cap_write_vmcs(hv_vcpuid_t, UInt32, UnsafeMutablePointer<UInt64>, UnsafeMutablePointer<UInt64>) -> hv_return_t](hv_vmx_vcpu_get_cap_write_vmcs(_:_:_:_:).md)
+- [func hv_vmx_vcpu_get_cap_write_vmcs(hv_vcpuid_t, UInt32, UnsafeMutablePointer<UInt64>, UnsafeMutablePointer<UInt64>) -> hv_return_t](./hv_vmx_vcpu_get_cap_write_vmcs%28_,_,_,_%29.md)
   Returns the allowed_0 and allowed_1 masks for a VMCS field of a vCPU.
-- [Virtual Machine control structure (VMCS) Field IDs](1469436-virtual_machine_control_structur-enum.md)
+- [Virtual Machine control structure (VMCS) Field IDs](./api-1469436-virtual_machine_control_structur-enum.md)
   Identify the fields of the virtual machine control structure.
 
 

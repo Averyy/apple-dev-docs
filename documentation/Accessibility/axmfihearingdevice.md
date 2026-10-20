@@ -1,7 +1,8 @@
 # AXMFiHearingDevice
 
 **Framework**: Accessibility  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A namespace for hearing device accessibility symbols in Swift.
 
@@ -23,25 +24,25 @@ struct AXMFiHearingDevice
 ## Topics
 
 ### Streaming status
-- [static func streamingEar() -> AXMFiHearingDevice.Ear](axmfihearingdevice/streamingear.md)
+- [static func streamingEar() -> AXMFiHearingDevice.Ear](./axmfihearingdevice/streamingear%28%29.md)
   Returns which ears enable streaming.
-- [AXMFiHearingDevice.Ear](axmfihearingdevice/ear.md)
+- [AXMFiHearingDevice.Ear](./axmfihearingdevice/ear.md)
   Constants that represent a hearing device ear.
-- [static let streamingEarDidChangeNotification: NSNotification.Name](axmfihearingdevice/streamingeardidchangenotification.md)
+- [static let streamingEarDidChangeNotification: NSNotification.Name](./axmfihearingdevice/streamingeardidchangenotification.md)
   A notification that the system posts when there’s a change to which ears enable streaming.
 ### Streaming type
-- [static func supportsBidirectionalStreaming() -> Bool](axmfihearingdevice/supportsbidirectionalstreaming.md)
+- [static func supportsBidirectionalStreaming() -> Bool](./axmfihearingdevice/supportsbidirectionalstreaming%28%29.md)
   Returns a Boolean value that indicates whether the iOS device supports bidirectional streaming.
 ### Paired hearing devices
-- [static func pairedDeviceIdentifiers() -> [UUID]](axmfihearingdevice/paireddeviceidentifiers.md)
+- [static func pairedDeviceIdentifiers() -> [UUID]](./axmfihearingdevice/paireddeviceidentifiers%28%29.md)
   Returns the UUIDs of the hearing device peripherals.
-- [static let pairedUUIDsDidChangeNotification: NSNotification.Name](axmfihearingdevice/paireduuidsdidchangenotification.md)
+- [static let pairedUUIDsDidChangeNotification: NSNotification.Name](./axmfihearingdevice/paireduuidsdidchangenotification.md)
   A notification that the system posts when there’s a change to the UUIDs of the hearing device peripherals.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 
 ---

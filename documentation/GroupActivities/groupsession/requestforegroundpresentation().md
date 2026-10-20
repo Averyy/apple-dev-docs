@@ -1,7 +1,8 @@
 # requestForegroundPresentation()
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the system that your app needs to be in the foreground to continue an activity.
 
@@ -25,7 +26,7 @@ Call this method if your app is in the background and can’t start the activity
 
 To create a smoother user experience, the system might launch your app in the background when starting an activity. Apps can start activities in either the foreground or background, but you might configure your app differently when in the background. For example, when in the background, you play media files in a picture-in-picture window instead of a fullscreen interface. This method lets you notify the user when a background solution isn’t possible.
 
-The session must be in the [`GroupSession.State.waiting`](groupsession/state-swift.enum/waiting.md) or [`GroupSession.State.joined`](groupsession/state-swift.enum/joined.md) state when you call this method. If it isn’t, this method does nothing.
+The session must be in the [`GroupSession.State.waiting`](./state-swift.enum/waiting.md) or [`GroupSession.State.joined`](./state-swift.enum/joined.md) state when you call this method. If it isn’t, this method does nothing.
 
 
 ---

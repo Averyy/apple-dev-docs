@@ -1,7 +1,8 @@
 # add(_:queue:interestedPathsForAttributes:interestedPathsForEvents:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a delegate to receive asynchronous callbacks about the device, and limit attribute and/or event reports to a specific set of paths.
 
@@ -18,6 +19,10 @@ Adds a delegate to receive asynchronous callbacks about the device, and limit at
 
 ```swift
 func add(_ delegate: any MTRDeviceDelegate, queue: dispatch_queue_t, interestedPathsForAttributes: [Any]?, interestedPathsForEvents: [Any]?)
+```
+
+```objc
+- (void) addDelegate:(id<MTRDeviceDelegate>) delegate queue:(dispatch_queue_t) queue interestedPathsForAttributes:(NSArray *) interestedPathsForAttributes interestedPathsForEvents:(NSArray *) interestedPathsForEvents;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # immersiveSpaceDisplacement
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The displacement that the system applies to the immersive space when moving the space away from its default position, in meters.
 
@@ -18,7 +19,7 @@ var immersiveSpaceDisplacement: Pose3D { get }
 
 By default, the system places the origin of the immersive space at floor level, at the person’s feet. When joining a shared activity, the system moves the immersive space to an appropriate location for all participants. As participants join and leave the activity, the location of participants and the immersive space can update. Read this property to get the current offset of the immersive space relative to its default position.
 
-If you access this property outside of an open immersive space, it contains the value [`identity`](https://developer.apple.com/documentation/spatial/pose3d/identity).
+If you access this property outside of an open immersive space, it contains the value [`identity`](../../Spatial/pose3d/identity.md).
 
 If you display participant-specific views or entities in your shared activity, use the inverse of this displacement value to position those views and entities in the immersive space. Applying the inverse value positions them as if they were in a single-participant immersive space.
 
@@ -52,17 +53,18 @@ struct ImmersiveGameView: View {
 
 ## See Also
 
-- [struct ImmersiveSpace](immersivespace.md)
+### Creating an immersive space
+- [struct ImmersiveSpace](../immersivespace.md)
   A scene that presents its content in an unbounded space.
-- [struct ImmersiveSpaceContentBuilder](immersivespacecontentbuilder.md)
+- [struct ImmersiveSpaceContentBuilder](../immersivespacecontentbuilder.md)
   A result builder for composing a collection of immersive space elements.
-- [func immersionStyle(selection: Binding<any ImmersionStyle>, in: any ImmersionStyle...) -> some Scene](scene/immersionstyle(selection:in:).md)
+- [func immersionStyle(selection: Binding<any ImmersionStyle>, in: any ImmersionStyle...) -> some Scene](../scene/immersionstyle%28selection,in%29.md)
   Sets the style for an immersive space.
-- [protocol ImmersionStyle](immersionstyle.md)
+- [protocol ImmersionStyle](../immersionstyle.md)
   The styles that an immersive space can have.
-- [struct ImmersiveEnvironmentBehavior](immersiveenvironmentbehavior.md)
+- [struct ImmersiveEnvironmentBehavior](../immersiveenvironmentbehavior.md)
   The behavior of the system-provided immersive environments when a scene is opened by your app.
-- [struct ProgressiveImmersionAspectRatio](progressiveimmersionaspectratio.md)
+- [struct ProgressiveImmersionAspectRatio](../progressiveimmersionaspectratio.md)
   The shape of the portal that a progressive immersion style opens.
 
 

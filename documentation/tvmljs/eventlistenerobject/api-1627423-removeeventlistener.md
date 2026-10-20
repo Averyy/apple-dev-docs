@@ -1,7 +1,8 @@
 # removeEventListener
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Removes the designated event listener.
 
@@ -10,7 +11,7 @@ Removes the designated event listener.
 
 ## Declaration
 
-```swift
+```
 void removeEventListener(
     in String type, 
     in Object listener
@@ -24,7 +25,8 @@ void removeEventListener(
 
 ## See Also
 
-- [addEventListener](eventlistenerobject/1627408-addeventlistener.md)
+### Adding and Removing Event Listeners
+- [addEventListener](./api-1627408-addeventlistener.md)
   Creates an event listener.
 
 

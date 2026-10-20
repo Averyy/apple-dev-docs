@@ -1,7 +1,8 @@
 # shaderGraph
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The shader graph that describes the shading logic for this program.
 
@@ -21,9 +22,10 @@ var shaderGraph: ShaderGraph
 
 ## See Also
 
-- [var inputValues: [String : MaterialParameters.Value]](shadergraphmaterial/program-swift.struct/descriptor-swift.struct/inputvalues.md)
+### Specifying the shader graph
+- [var inputValues: [String : MaterialParameters.Value]](./inputvalues.md)
   Initial values for the inputs declared in `shaderNodeGraph`.
-- [var constantValues: MTLFunctionConstantValues](shadergraphmaterial/program-swift.struct/descriptor-swift.struct/constantvalues.md)
+- [var constantValues: MTLFunctionConstantValues](./constantvalues.md)
   Values for the function constant inputs declared in `shaderNodeGraph`.
 
 

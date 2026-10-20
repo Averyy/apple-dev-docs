@@ -1,21 +1,22 @@
 # LSException
 
 **Framework**: TVMLKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - tvOS 14.0+
 
 ## Declaration
 
-```swift
+```
 interface LSException
 ```
 
 ## Topics
 
 ### Instance Properties
-- [code](lsexception/3192144-code.md)
+- [code](./lsexception/api-3192144-code.md)
 
 
 ---

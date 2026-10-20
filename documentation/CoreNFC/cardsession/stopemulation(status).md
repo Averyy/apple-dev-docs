@@ -1,7 +1,8 @@
 # stopEmulation(status:)
 
 **Framework**: Core NFC  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stop card emulation and display a status.
 
@@ -22,13 +23,14 @@ func stopEmulation(status: CardSession.EmulationUIStatus) async
 
 ## See Also
 
-- [func startEmulation() async throws](cardsession/startemulation.md)
+### Managing card emulation
+- [func startEmulation() async throws](./startemulation%28%29.md)
   Start the card emulation and present a modal user interface to the person using the app.
-- [CardSession.Error](cardsession/error.md)
+- [CardSession.Error](./error.md)
   An error type that indicates problems with a card session.
-- [CardSession.EmulationUIStatus](cardsession/emulationuistatus.md)
+- [CardSession.EmulationUIStatus](./emulationuistatus.md)
   The final status to show in the user interface when ending card emulation.
-- [var isEmulationInProgress: Bool](cardsession/isemulationinprogress.md)
+- [var isEmulationInProgress: Bool](./isemulationinprogress.md)
   A Boolean value that indicates whether emulation is currently active.
 
 

@@ -1,6 +1,7 @@
 # Migrating Your Audio Unit Host to the AUv3 API
 
-**Framework**: Audio Toolbox
+**Framework**: Audio Toolbox  
+**Role**: Article
 
 Update your Audio Unit (AU) host app to take advantage of the new features and capabilities of AUv3.
 
@@ -10,13 +11,13 @@ The latest Audio Unit standard, AUv3, provides a robust plug-in model built on a
 
 You can adopt the new API while still retaining your ability to host AUv2 audio units. The framework’s bridging layer enables this capability by automatically translating AUv3 calls into their AUv2 equivalents, which means you can use a single API and work with both new and legacy audio units.
 
-![A component diagram that shows the bridging support provided by the framework.](/images/com.apple.audiotoolbox/media-3531569@2x.png)
+![A component diagram that shows the bridging support provided by the framework.](https://developer.apple.com/tutorials/images/com.apple.audiotoolbox/media-3531569@2x.png)
 
-For a downloadable sample app that uses the core features of the AUv3 API, see [`Incorporating Audio Effects and Instruments`](incorporating-audio-effects-and-instruments.md).
+For a downloadable sample app that uses the core features of the AUv3 API, see [Incorporating Audio Effects and Instruments](./incorporating-audio-effects-and-instruments.md).
 
 ##### Find Audio Units
 
-The AVFoundation framework’s [`AVAudioUnitComponentManager`](https://developer.apple.com/documentation/avfaudio/avaudiounitcomponentmanager) class provides a convenient way to find audio components registered with the host system. You use it to search for audio units by description, predicate, or test case, and the component manager returns an array of [`AVAudioUnitComponent`](https://developer.apple.com/documentation/avfaudio/avaudiounitcomponent) objects matching your search criteria. The following code example shows how to use each approach to find all audio effects available on the system.
+The AVFoundation framework’s [`AVAudioUnitComponentManager`](../AVFAudio/avaudiounitcomponentmanager.md) class provides a convenient way to find audio components registered with the host system. You use it to search for audio units by description, predicate, or test case, and the component manager returns an array of [`AVAudioUnitComponent`](../AVFAudio/avaudiounitcomponent.md) objects matching your search criteria. The following code example shows how to use each approach to find all audio effects available on the system.
 
 ```swift
 // Access the singleton AVAudioUnitComponentManager instance.
@@ -43,7 +44,7 @@ let componentsByTest = manager.components { component, _ in
 
 ##### Instantiate Audio Units
 
-Once you’ve found the list of available audio components, the next step is to instantiate the component you want to use. To instantiate the audio unit, use the [`AVAudioUnit`](https://developer.apple.com/documentation/avfaudio/avaudiounit) class’s [`instantiate(with:options:completionHandler:)`](https://developer.apple.com/documentation/avfaudio/avaudiounit/instantiate(with:options:completionhandler:)) method as shown below.
+Once you’ve found the list of available audio components, the next step is to instantiate the component you want to use. To instantiate the audio unit, use the [`AVAudioUnit`](../AVFAudio/avaudiounit.md) class’s [`instantiate(with:options:completionHandler:)`](../AVFAudio/avaudiounit/instantiate%28with,options,completionhandler%29.md) method as shown below.
 
 ```swift
 func selectAudioUnit(at index: Int) {
@@ -62,7 +63,7 @@ func selectAudioUnit(at index: Int) {
 }
 ```
 
-> ❗ **Important**:  A key difference between the two audio unit API versions is that AUv2 audio units are loaded into the host’s process, whereas AUv3 audio units are loaded out-of-process by default. In macOS only, if supported by the AUv3 audio unit, you can request loading it in-process by passing the [`loadInProcess`](audiocomponentinstantiationoptions/loadinprocess.md) option in the `options` argument. To verify that the audio unit was successfully loaded in-process, query its [`isLoadedInProcess`](auaudiounit/isloadedinprocess.md) property.
+> ❗ **Important**:  A key difference between the two audio unit API versions is that AUv2 audio units are loaded into the host’s process, whereas AUv3 audio units are loaded out-of-process by default. In macOS only, if supported by the AUv3 audio unit, you can request loading it in-process by passing the [`loadInProcess`](./audiocomponentinstantiationoptions/loadinprocess.md) option in the `options` argument. To verify that the audio unit was successfully loaded in-process, query its [`isLoadedInProcess`](./auaudiounit/isloadedinprocess.md) property.
 
 ##### Interact with an Audio Unit
 
@@ -94,17 +95,17 @@ The following table lists the AUv2 function and its AUv3 method or property equi
 
 | AUv2 API | AUv3 API | Description |
 | --- | --- | --- |
-| [`AudioUnitInitialize(_:)`](audiounitinitialize(_:).md) | [`allocateRenderResources()`](auaudiounit/allocaterenderresources().md) | Allocates the audio unit’s needed resources. |
-| [`AudioUnitUninitialize(_:)`](audiounituninitialize(_:).md) | [`deallocateRenderResources()`](auaudiounit/deallocaterenderresources().md) | Frees the audio unit’s rendering resources. |
-| [`AudioUnitRender(_:_:_:_:_:_:)`](audiounitrender(_:_:_:_:_:_:).md) | [`renderBlock`](auaudiounit/renderblock.md) | Renders audio samples in a real-time context. |
-| [`AudioUnitReset(_:_:_:)`](audiounitreset(_:_:_:).md) | [`reset()`](auaudiounit/reset().md) | Resets the audio unit’s state. |
-| [`AudioUnitScheduleParameters(_:_:_:)`](audiounitscheduleparameters(_:_:_:).md) | [`scheduleParameterBlock`](auaudiounit/scheduleparameterblock.md) | Schedules a change to an audio unit parameter value. |
-| [`AudioUnitGetProperty(_:_:_:_:_:_:)`](audiounitgetproperty(_:_:_:_:_:_:).md) ![None](/images/com.apple.audiotoolbox/spacer.png) [`AudioUnitSetProperty(_:_:_:_:_:_:)`](audiounitsetproperty(_:_:_:_:_:_:).md) | `audioUnit.propertyName` | Modifies an audio unit property value. |
-| [`AudioUnitGetParameter(_:_:_:_:_:)`](audiounitgetparameter(_:_:_:_:_:).md) ![None](/images/com.apple.audiotoolbox/spacer.png) [`AudioUnitSetParameter(_:_:_:_:_:_:)`](audiounitsetparameter(_:_:_:_:_:_:).md) | [`parameterTree`](auaudiounit/parametertree.md) | Accesses the parameter tree object that’s used to get and set parameter values. |
+| [`AudioUnitInitialize(_:)`](./audiounitinitialize%28_%29.md) | [`allocateRenderResources()`](./auaudiounit/allocaterenderresources%28%29.md) | Allocates the audio unit’s needed resources. |
+| [`AudioUnitUninitialize(_:)`](./audiounituninitialize%28_%29.md) | [`deallocateRenderResources()`](./auaudiounit/deallocaterenderresources%28%29.md) | Frees the audio unit’s rendering resources. |
+| [`AudioUnitRender(_:_:_:_:_:_:)`](./audiounitrender%28_,_,_,_,_,_%29.md) | [`renderBlock`](./auaudiounit/renderblock.md) | Renders audio samples in a real-time context. |
+| [`AudioUnitReset(_:_:_:)`](./audiounitreset%28_,_,_%29.md) | [`reset()`](./auaudiounit/reset%28%29.md) | Resets the audio unit’s state. |
+| [`AudioUnitScheduleParameters(_:_:_:)`](./audiounitscheduleparameters%28_,_,_%29.md) | [`scheduleParameterBlock`](./auaudiounit/scheduleparameterblock.md) | Schedules a change to an audio unit parameter value. |
+| [`AudioUnitGetProperty(_:_:_:_:_:_:)`](./audiounitgetproperty%28_,_,_,_,_,_%29.md) ![](https://developer.apple.com/tutorials/images/com.apple.audiotoolbox/spacer.png) [`AudioUnitSetProperty(_:_:_:_:_:_:)`](./audiounitsetproperty%28_,_,_,_,_,_%29.md) | `audioUnit.propertyName` | Modifies an audio unit property value. |
+| [`AudioUnitGetParameter(_:_:_:_:_:)`](./audiounitgetparameter%28_,_,_,_,_%29.md) ![](https://developer.apple.com/tutorials/images/com.apple.audiotoolbox/spacer.png) [`AudioUnitSetParameter(_:_:_:_:_:_:)`](./audiounitsetparameter%28_,_,_,_,_,_%29.md) | [`parameterTree`](./auaudiounit/parametertree.md) | Accesses the parameter tree object that’s used to get and set parameter values. |
 
-##### Present the Audio Units User Interface
+##### Present the Audio Unit’s User Interface
 
-To present the audio unit’s user interface, call its [`requestViewController(completionHandler:)`](auaudiounit/requestviewcontroller(completionhandler:).md) method. This method asynchronously retrieves the audio unit’s view controller instance and returns it in a callback closure. The callback is invoked on a background thread, so you need to dispatch control back to the main queue before adding the audio unit’s user interface into your app’s view hierarchy.
+To present the audio unit’s user interface, call its [`requestViewController(completionHandler:)`](./auaudiounit/requestviewcontroller%28completionhandler%29.md) method. This method asynchronously retrieves the audio unit’s view controller instance and returns it in a callback closure. The callback is invoked on a background thread, so you need to dispatch control back to the main queue before adding the audio unit’s user interface into your app’s view hierarchy.
 
 ```swift
 audioUnit.requestViewController { viewController in
@@ -116,7 +117,8 @@ audioUnit.requestViewController { viewController in
 
 ## See Also
 
-- [Hosting Audio Unit Extensions Using the AUv2 API](hosting-audio-unit-extensions-using-the-auv2-api.md)
+### Host App
+- [Hosting Audio Unit Extensions Using the AUv2 API](./hosting-audio-unit-extensions-using-the-auv2-api.md)
   Update your existing Audio Unit v2 host app to load and use Audio Unit extensions.
 
 

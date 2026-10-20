@@ -1,7 +1,8 @@
 # strokeID
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identity of the stroke.
 
@@ -16,6 +17,10 @@ The unique identity of the stroke.
 
 ```swift
 var strokeID: UUID { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSUUID * strokeID;
 ```
 
 

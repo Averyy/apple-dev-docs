@@ -1,14 +1,15 @@
 # CS_LAUNCH_TYPE_SYSDIAGNOSE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 CS_LAUNCH_TYPE_SYSDIAGNOSE
 ```
 

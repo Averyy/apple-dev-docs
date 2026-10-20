@@ -1,7 +1,8 @@
 # kCGImagePropertyExifDictionary
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A dictionary of key-value pairs for an image that uses Exchangeable Image File Format (EXIF).
 
@@ -20,9 +21,14 @@ A dictionary of key-value pairs for an image that uses Exchangeable Image File F
 let kCGImagePropertyExifDictionary: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyExifDictionary;
+```
+
 ## See Also
 
-- [let kCGImagePropertyExifAuxDictionary: CFString](kcgimagepropertyexifauxdictionary.md)
+### Dictionaries
+- [let kCGImagePropertyExifAuxDictionary: CFString](./kcgimagepropertyexifauxdictionary.md)
   An auxiliary dictionary of key-value pairs for an image that uses Exchangeable Image File Format (EXIF).
 
 

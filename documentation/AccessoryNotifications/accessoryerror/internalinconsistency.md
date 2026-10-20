@@ -1,7 +1,8 @@
 # AccessoryError.internalInconsistency
 
 **Framework**: Accessory Notifications  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates an internal inconsistency.
 

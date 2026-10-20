@@ -1,7 +1,8 @@
 # AppClipDefaultExperienceLocalizationCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships to other resources that you can set with this request.
 
@@ -10,14 +11,14 @@ The relationships to other resources that you can set with this request.
 
 ## Declaration
 
-```swift
+```
 object AppClipDefaultExperienceLocalizationCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppClipDefaultExperienceLocalizationCreateRequest.Data.Relationships.AppClipDefaultExperience](appclipdefaultexperiencelocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/appclipdefaultexperience-data.dictionary.md)
+- [object AppClipDefaultExperienceLocalizationCreateRequest.Data.Relationships.AppClipDefaultExperience](./relationships-data.dictionary/appclipdefaultexperience-data.dictionary.md)
   The relationship to the Default App Clip Experiences resource you set with the request that creates a Default App Clip Experience Localizations resource.
 
 ## Properties
@@ -26,7 +27,8 @@ object AppClipDefaultExperienceLocalizationCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object AppClipDefaultExperienceLocalizationCreateRequest.Data.Attributes](appclipdefaultexperiencelocalizationcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object AppClipDefaultExperienceLocalizationCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   The attributes you set that describe the Default App Clip Experience Localizations resource.
 
 

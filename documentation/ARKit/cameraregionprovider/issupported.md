@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Determines whether this device supports the camera region provider.
 

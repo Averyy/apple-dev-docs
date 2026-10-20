@@ -1,7 +1,8 @@
 # BetaGroup.Relationships.BetaRecruitmentCriteria.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a beta group.
 
@@ -10,14 +11,14 @@ The request body you use to update a beta group.
 
 ## Declaration
 
-```swift
+```
 object BetaGroup.Relationships.BetaRecruitmentCriteria.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `betaRecruitmentCriteria`
 
 
 ---

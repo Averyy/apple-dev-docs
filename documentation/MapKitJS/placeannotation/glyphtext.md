@@ -1,7 +1,8 @@
 # glyphText
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The glyph text for the place.
 
@@ -10,7 +11,7 @@ The glyph text for the place.
 
 ## Declaration
 
-```swift
+```
 get glyphText(): string | null;
 ```
 

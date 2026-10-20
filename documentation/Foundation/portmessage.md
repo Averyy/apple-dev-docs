@@ -1,7 +1,8 @@
 # PortMessage
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A low-level, operating system-independent type for inter-application (and inter-thread) messages.
 
@@ -15,61 +16,66 @@ A low-level, operating system-independent type for inter-application (and inter-
 class PortMessage
 ```
 
+```objc
+@interface NSPortMessage : NSObject
+```
+
 #### Overview
 
-Port messages are used primarily by the distributed objects system. You should implement inter-application communication using distributed objects whenever possible and use [`PortMessage`](portmessage.md) only when necessary.
+Port messages are used primarily by the distributed objects system. You should implement inter-application communication using distributed objects whenever possible and use [`PortMessage`](./portmessage.md) only when necessary.
 
-An [`PortMessage`](portmessage.md) object has three major parts: the send and receive ports, which are [`Port`](port.md) objects that link the sender of the message to the receiver, and the components, which form the body of the message. The components are held as an [`NSArray`](nsarray.md) object containing [`NSData`](nsdata.md) and [`Port`](port.md) objects. The [`send(before:)`](portmessage/send(before:).md) message sends the components out through the send port; any replies to the message arrive on the receive port. See the [`Port`](port.md) class specification for information on handling incoming messages.
+An [`PortMessage`](./portmessage.md) object has three major parts: the send and receive ports, which are [`Port`](./port.md) objects that link the sender of the message to the receiver, and the components, which form the body of the message. The components are held as an [`NSArray`](./nsarray.md) object containing [`NSData`](./nsdata.md) and [`Port`](./port.md) objects. The [`send(before:)`](./portmessage/send%28before%29.md) message sends the components out through the send port; any replies to the message arrive on the receive port. See the [`Port`](./port.md) class specification for information on handling incoming messages.
 
-An [`PortMessage`](portmessage.md) instance can be initialized with a pair of [`Port`](port.md) objects and an array of components. A port message’s body can contain only [`Port`](port.md) objects or [`NSData`](nsdata.md) objects. In the distributed objects system the byte/character arrays are usually encoded [`NSInvocation`](nsinvocation.md) objects that are being forwarded from a proxy to the corresponding real object.
+An [`PortMessage`](./portmessage.md) instance can be initialized with a pair of [`Port`](./port.md) objects and an array of components. A port message’s body can contain only [`Port`](./port.md) objects or [`NSData`](./nsdata.md) objects. In the distributed objects system the byte/character arrays are usually encoded [`NSInvocation`](./nsinvocation.md) objects that are being forwarded from a proxy to the corresponding real object.
 
-An [`PortMessage`](portmessage.md) object also maintains a message identifier, which can be used to indicate the class of a message, such as an Objective-C method invocation, a connection request, an error, and so on. Use the [`msgid`](portmessage/msgid.md) and [`msgid`](portmessage/msgid.md) methods to access the identifier.
+An [`PortMessage`](./portmessage.md) object also maintains a message identifier, which can be used to indicate the class of a message, such as an Objective-C method invocation, a connection request, an error, and so on. Use the [`msgid`](./portmessage/msgid.md) and [`msgid`](./portmessage/msgid.md) methods to access the identifier.
 
 ## Topics
 
 ### Creating Instances
-- [init(send: Port?, receive: Port?, components: [Any]?)](portmessage/init(send:receive:components:).md)
+- [init(send: Port?, receive: Port?, components: [Any]?)](./portmessage/init%28send,receive,components%29.md)
   Initializes a newly allocated `NSPortMessage` object to send given data on a given port and to receiver replies on another given port.
 ### Sending the Message
-- [func send(before: Date) -> Bool](portmessage/send(before:).md)
+- [func send(before: Date) -> Bool](./portmessage/send%28before%29.md)
   Attempts to send the message before the specified date.
 ### Getting the Components
-- [var components: [Any]?](portmessage/components.md)
+- [var components: [Any]?](./portmessage/components.md)
   Returns the data components of the receiver.
 ### Getting the Ports
-- [var receivePort: Port?](portmessage/receiveport.md)
+- [var receivePort: Port?](./portmessage/receiveport.md)
   For an outgoing message, returns the port on which replies to the receiver will arrive. For an incoming message, returns the port the receiver did arrive on.
-- [var sendPort: Port?](portmessage/sendport.md)
+- [var sendPort: Port?](./portmessage/sendport.md)
   For an outgoing message, returns the port the receiver will send itself through. For an incoming message, returns the port replies to the receiver should be sent through.
 ### Accessing the Message ID
-- [var msgid: UInt32](portmessage/msgid.md)
+- [var msgid: UInt32](./portmessage/msgid.md)
   Returns the identifier for the receiver.
 ### Initializers
-- [init(sendPort: Port?, receivePort: Port?, components: [Any]?)](portmessage/init(sendport:receiveport:components:).md)
+- [init(sendPort: Port?, receivePort: Port?, components: [Any]?)](./portmessage/init%28sendport,receiveport,components%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol NSMachPortDelegate](nsmachportdelegate.md)
+### Legacy
+- [protocol NSMachPortDelegate](./nsmachportdelegate.md)
   An interface for handling incoming Mach messages.
-- [class NSMachPort](nsmachport.md)
+- [class NSMachPort](./nsmachport.md)
   A port that can be used as an endpoint for distributed object connections (or raw messaging).
-- [class MessagePort](messageport.md)
+- [class MessagePort](./messageport.md)
   A port that can be used as an endpoint for distributed object connections (or raw messaging).
-- [protocol PortDelegate](portdelegate.md)
+- [protocol PortDelegate](./portdelegate.md)
   An interface for handling incoming messages.
-- [class NSProtocolChecker](nsprotocolchecker.md)
+- [class NSProtocolChecker](./nsprotocolchecker.md)
   An object that restricts the messages that can be sent to another object (referred to as the checker’s delegate).
 
 

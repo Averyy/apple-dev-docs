@@ -1,7 +1,8 @@
 # wholeSymbol
 
 **Framework**: Symbols  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An effect that scales all layers simultaneously.
 
@@ -22,7 +23,8 @@ var wholeSymbol: ScaleSymbolEffect { get }
 
 ## See Also
 
-- [var byLayer: ScaleSymbolEffect](scalesymboleffect/bylayer.md)
+### Determining effect scope
+- [var byLayer: ScaleSymbolEffect](./bylayer.md)
   An effect that scales each layer separately.
 
 

@@ -1,7 +1,8 @@
 # arguments
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The argument matchers to validate against the tool call.
 
@@ -22,13 +23,14 @@ var arguments: [ArgumentMatcher] { get }
 
 #### Discussion
 
-Returns an empty array for [`anyOrder(_:)`](toolexpectation/anyorder(_:).md) groups.
+Returns an empty array for [`anyOrder(_:)`](./anyorder%28_%29.md) groups.
 
 ## See Also
 
-- [var name: String](toolexpectation/name.md)
+### Accessing expectation details
+- [var name: String](./name.md)
   The name of the tool that the evaluation expects the model to call.
-- [var isAnyOrderGroup: Bool](toolexpectation/isanyordergroup.md)
+- [var isAnyOrderGroup: Bool](./isanyordergroup.md)
   A Boolean value that indicates whether this expectation represents a group of expectations that can be satisfied in any order.
 
 

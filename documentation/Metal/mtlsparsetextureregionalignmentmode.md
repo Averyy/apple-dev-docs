@@ -1,7 +1,8 @@
 # MTLSparseTextureRegionAlignmentMode
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options used when converting between a pixel-based region within a texture to a tile-based region.
 
@@ -19,41 +20,46 @@ Options used when converting between a pixel-based region within a texture to a 
 enum MTLSparseTextureRegionAlignmentMode
 ```
 
+```c
+enum MTLSparseTextureRegionAlignmentMode : NSUInteger;
+```
+
 ## Topics
 
 ### Specifying the alignment mode
-- [MTLSparseTextureRegionAlignmentMode.outward](mtlsparsetextureregionalignmentmode/outward.md)
+- [MTLSparseTextureRegionAlignmentMode.outward](./mtlsparsetextureregionalignmentmode/outward.md)
   The tile region includes any partially covered tiles.
-- [MTLSparseTextureRegionAlignmentMode.inward](mtlsparsetextureregionalignmentmode/inward.md)
+- [MTLSparseTextureRegionAlignmentMode.inward](./mtlsparsetextureregionalignmentmode/inward.md)
   The tile region ignores partially covered tiles.
 ### Initializers
-- [init?(rawValue: UInt)](mtlsparsetextureregionalignmentmode/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mtlsparsetextureregionalignmentmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func sparseTileSize(textureType: MTLTextureType, pixelFormat: MTLPixelFormat, sampleCount: Int, sparsePageSize: MTLSparsePageSize) -> MTLSize](mtldevice/sparsetilesize(texturetype:pixelformat:samplecount:sparsepagesize:).md)
+### Working with sparse textures
+- [func sparseTileSize(textureType: MTLTextureType, pixelFormat: MTLPixelFormat, sampleCount: Int, sparsePageSize: MTLSparsePageSize) -> MTLSize](./mtldevice/sparsetilesize%28texturetype,pixelformat,samplecount,sparsepagesize%29.md)
   Returns the dimensions of a sparse tile for a texture that has a specific sparse page size.
-- [func sparseTileSize(with: MTLTextureType, pixelFormat: MTLPixelFormat, sampleCount: Int) -> MTLSize](mtldevice/sparsetilesize(with:pixelformat:samplecount:).md)
+- [func sparseTileSize(with: MTLTextureType, pixelFormat: MTLPixelFormat, sampleCount: Int) -> MTLSize](./mtldevice/sparsetilesize%28with,pixelformat,samplecount%29.md)
   Returns the dimensions of a sparse tile for a texture.
-- [func sparseTileSizeInBytes(sparsePageSize: MTLSparsePageSize) -> Int](mtldevice/sparsetilesizeinbytes(sparsepagesize:).md)
+- [func sparseTileSizeInBytes(sparsePageSize: MTLSparsePageSize) -> Int](./mtldevice/sparsetilesizeinbytes%28sparsepagesize%29.md)
   Returns the size, in bytes, of a sparse tile the GPU device creates with a specific page size.
-- [var sparseTileSizeInBytes: Int](mtldevice/sparsetilesizeinbytes.md)
+- [var sparseTileSizeInBytes: Int](./mtldevice/sparsetilesizeinbytes.md)
   Returns the size, in bytes, of a sparse tile the GPU device creates using a default page size.
-- [func convertSparsePixelRegions(UnsafePointer<MTLRegion>, toTileRegions: UnsafeMutablePointer<MTLRegion>, withTileSize: MTLSize, alignmentMode: MTLSparseTextureRegionAlignmentMode, numRegions: Int)](mtldevice/convertsparsepixelregions(_:totileregions:withtilesize:alignmentmode:numregions:).md)
+- [func convertSparsePixelRegions(UnsafePointer<MTLRegion>, toTileRegions: UnsafeMutablePointer<MTLRegion>, withTileSize: MTLSize, alignmentMode: MTLSparseTextureRegionAlignmentMode, numRegions: Int)](./mtldevice/convertsparsepixelregions%28_,totileregions,withtilesize,alignmentmode,numregions%29.md)
   Converts a list of sparse pixel regions to tile regions.
-- [func convertSparseTileRegions(UnsafePointer<MTLRegion>, toPixelRegions: UnsafeMutablePointer<MTLRegion>, withTileSize: MTLSize, numRegions: Int)](mtldevice/convertsparsetileregions(_:topixelregions:withtilesize:numregions:).md)
+- [func convertSparseTileRegions(UnsafePointer<MTLRegion>, toPixelRegions: UnsafeMutablePointer<MTLRegion>, withTileSize: MTLSize, numRegions: Int)](./mtldevice/convertsparsetileregions%28_,topixelregions,withtilesize,numregions%29.md)
   Converts a list of sparse tile regions to pixel regions.
-- [enum MTLSparsePageSize](mtlsparsepagesize.md)
+- [enum MTLSparsePageSize](./mtlsparsepagesize.md)
   The page size options, in kilobytes, for sparse textures.
 
 

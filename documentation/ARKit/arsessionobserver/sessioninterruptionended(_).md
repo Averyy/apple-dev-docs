@@ -1,7 +1,8 @@
 # sessionInterruptionEnded(_:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the session has resumed processing frames and tracking device position.
 
@@ -15,11 +16,15 @@ Tells the delegate that the session has resumed processing frames and tracking d
 optional func sessionInterruptionEnded(_ session: ARSession)
 ```
 
+```objc
+- (void) sessionInterruptionEnded:(ARSession *) session;
+```
+
 #### Discussion
 
-After a session has been interrupted (see the [`sessionWasInterrupted(_:)`](arsessionobserver/sessionwasinterrupted(_:).md) delegate method), it automatically resumes running whenever the conditions that caused the interruption improve.
+After a session has been interrupted (see the [`sessionWasInterrupted(_:)`](./sessionwasinterrupted%28_%29.md) delegate method), it automatically resumes running whenever the conditions that caused the interruption improve.
 
-When a session resumes, it continues tracking from its last known state. However, if the device has moved since the interruption began, the ARKit world coordinate system and anchor positions no longer match their original real-world frame of reference. To attempt recovery of world tracking from before the interruption, implement the [`sessionShouldAttemptRelocalization(_:)`](arsessionobserver/sessionshouldattemptrelocalization(_:).md) delegate method.
+When a session resumes, it continues tracking from its last known state. However, if the device has moved since the interruption began, the ARKit world coordinate system and anchor positions no longer match their original real-world frame of reference. To attempt recovery of world tracking from before the interruption, implement the [`sessionShouldAttemptRelocalization(_:)`](./sessionshouldattemptrelocalization%28_%29.md) delegate method.
 
 ## Parameters
 
@@ -27,9 +32,10 @@ When a session resumes, it continues tracking from its last known state. However
 
 ## See Also
 
-- [func sessionWasInterrupted(ARSession)](arsessionobserver/sessionwasinterrupted(_:).md)
+### Handling Interruptions
+- [func sessionWasInterrupted(ARSession)](./sessionwasinterrupted%28_%29.md)
   Tells the delegate that the session has temporarily stopped processing frames and tracking device position.
-- [func sessionShouldAttemptRelocalization(ARSession) -> Bool](arsessionobserver/sessionshouldattemptrelocalization(_:).md)
+- [func sessionShouldAttemptRelocalization(ARSession) -> Bool](./sessionshouldattemptrelocalization%28_%29.md)
   Asks the delegate whether to attempt recovery of world-tracking state after an interruption.
 
 

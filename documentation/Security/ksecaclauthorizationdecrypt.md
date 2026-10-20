@@ -1,7 +1,8 @@
 # kSecACLAuthorizationDecrypt
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Decrypt data.
 
@@ -12,6 +13,10 @@ Decrypt data.
 
 ```swift
 let kSecACLAuthorizationDecrypt: CFString
+```
+
+```c
+extern CFStringRef const kSecACLAuthorizationDecrypt;
 ```
 
 

@@ -1,15 +1,20 @@
 # setEndAfter(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 func setEndAfter(_ refNode: DOMNode!)
+```
+
+```objc
+- (void) setEndAfter:(DOMNode *) refNode;
 ```
 
 

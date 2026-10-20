@@ -1,7 +1,8 @@
 # duplicate(_:completionHandler:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Duplicates the specified URLS asynchronously in the same manner as the Finder.
 
@@ -11,7 +12,15 @@ Duplicates the specified URLS asynchronously in the same manner as the Finder.
 ## Declaration
 
 ```swift
+func duplicate(_ URLs: [URL], completionHandler handler: (@Sendable ([URL : URL], (any Error)?) -> Void)? = nil)
+```
+
+```swift
 func duplicate(_ URLs: [URL]) async throws -> [URL : URL]
+```
+
+```objc
+- (void) duplicateURLs:(NSArray<NSURL *> *) URLs completionHandler:(void (^)(NSDictionary<NSURL *,NSURL *> *newURLs, NSError *error)) handler;
 ```
 
 #### Discussion
@@ -22,17 +31,22 @@ In macOS 10.6, this method requires the app to run its main run loop in a common
 
 ## Parameters
 
-- `URLs`: An array of [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) objects representing the files to duplicate. This parameter must not be `nil`.
-- `handler`: The completion handler block object to call when the operation completes. You may specify `nil` for this parameter. If this parameter is not `nil`, you must call the [`duplicate(_:completionHandler:)`](nsworkspace/duplicate(_:completionhandler:).md) method from a block running on an active dispatch queue; your completion handler block is subsequently executed on the same dispatch queue. This block takes two parameters: - **newURLs**: A dictionary parameter whose keys and values are [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) objects. Each key is a URL from the `URLs` parameter. The value of each key is a URL representing the location of the duplicated file. If this method could not duplicate a file, the corresponding URL is not included in the dictionary.
-- **error**: If the operation succeeded for every file, this parameter is `nil`. If the operation failed for one or more files, the parameter contains an error object describing the overall result of the operation in a manner suitable for presentation to the user.
+- `URLs`: An array of [`NSURL`](../../Foundation/nsurl.md) objects representing the files to duplicate. This parameter must not be `nil`.
+- `handler`: The completion handler block object to call when the operation completes. You may specify `nil` for this parameter. If this parameter is not `nil`, you must call the [`duplicate(_:completionHandler:)`](./duplicate%28_,completionhandler%29.md) method from a block running on an active dispatch queue; your completion handler block is subsequently executed on the same dispatch queue.
+
+  This block takes two parameters:
+
+  - **newURLs**: A dictionary parameter whose keys and values are [`NSURL`](../../Foundation/nsurl.md) objects. Each key is a URL from the `URLs` parameter. The value of each key is a URL representing the location of the duplicated file. If this method could not duplicate a file, the corresponding URL is not included in the dictionary.
+  - **error**: If the operation succeeded for every file, this parameter is `nil`. If the operation failed for one or more files, the parameter contains an error object describing the overall result of the operation in a manner suitable for presentation to the user.
 
 ## See Also
 
-- [func recycle([URL], completionHandler: (([URL : URL], (any Error)?) -> Void)?)](nsworkspace/recycle(_:completionhandler:).md)
+### Manipulating Files
+- [func recycle([URL], completionHandler: (([URL : URL], (any Error)?) -> Void)?)](./recycle%28_,completionhandler%29.md)
   Moves the specified URLs to the trash in the same manner as the Finder.
-- [func activateFileViewerSelecting([URL])](nsworkspace/activatefileviewerselecting(_:).md)
+- [func activateFileViewerSelecting([URL])](./activatefileviewerselecting%28_%29.md)
   Activates the Finder, and opens one or more windows selecting the specified files.
-- [func selectFile(String?, inFileViewerRootedAtPath: String) -> Bool](nsworkspace/selectfile(_:infileviewerrootedatpath:).md)
+- [func selectFile(String?, inFileViewerRootedAtPath: String) -> Bool](./selectfile%28_,infileviewerrootedatpath%29.md)
   Selects the file at the specified path.
 
 

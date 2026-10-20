@@ -1,7 +1,8 @@
 # sidebarToggle
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The sidebar toggle toolbar item a `NavigationSplitView` adds by default.
 

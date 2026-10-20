@@ -2,18 +2,19 @@
 
 **Framework**: XCUIAutomation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The value displayed when the element has no value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -22,13 +23,18 @@ The value displayed when the element has no value.
 var placeholderValue: String? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSString * placeholderValue;
+```
+
 ## See Also
 
-- [var value: Any?](xcuielementattributes/value.md)
+### Value
+- [var value: Any?](./value.md)
   The raw value attribute of the element.
-- [var title: String](xcuielementattributes/title.md)
+- [var title: String](./title.md)
   The title attribute of the element.
-- [var label: String](xcuielementattributes/label.md)
+- [var label: String](./label.md)
   The label attribute of the element.
 
 

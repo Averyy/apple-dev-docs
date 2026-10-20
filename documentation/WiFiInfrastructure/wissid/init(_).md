@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an SSID from raw binary data.
 
@@ -30,7 +31,8 @@ Use this initializer when working with SSID data received from Wi-Fi enabled acc
 
 ## See Also
 
-- [let data: Data](wissid/data.md)
+### Working with raw SSID data
+- [let data: Data](./data.md)
   The raw binary data of the SSID as transmitted over-the-air.
 
 

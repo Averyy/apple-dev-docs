@@ -1,7 +1,8 @@
 # currentSegment
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current route segment.
 
@@ -14,6 +15,10 @@ The current route segment.
 
 ```swift
 var currentSegment: CPRouteSegment { get set }
+```
+
+```objc
+@property (nonatomic) CPRouteSegment * currentSegment;
 ```
 
 

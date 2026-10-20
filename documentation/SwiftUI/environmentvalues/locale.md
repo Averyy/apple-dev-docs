@@ -1,7 +1,8 @@
 # locale
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current locale that views should use.
 
@@ -22,13 +23,14 @@ var locale: Locale { get set }
 
 ## See Also
 
-- [Preparing views for localization](preparing-views-for-localization.md)
+### Localizing text
+- [Preparing views for localization](../preparing-views-for-localization.md)
   Specify hints and add strings to localize your SwiftUI views.
-- [struct LocalizedStringKey](localizedstringkey.md)
+- [struct LocalizedStringKey](../localizedstringkey.md)
   The key used to look up an entry in a strings file or strings dictionary file.
-- [func typesettingLanguage(_:isEnabled:)](view/typesettinglanguage(_:isenabled:).md)
+- [func typesettingLanguage(_:isEnabled:)](../view/typesettinglanguage%28_,isenabled%29.md)
   Specifies the language for typesetting.
-- [struct TypesettingLanguage](typesettinglanguage.md)
+- [struct TypesettingLanguage](../typesettinglanguage.md)
   Defines how typesetting language is determined for text.
 
 

@@ -1,7 +1,8 @@
 # borderColor()
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func borderColor() -> String!
+```
+
+```objc
+- (NSString *) borderColor;
 ```
 
 

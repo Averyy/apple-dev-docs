@@ -1,7 +1,8 @@
 # HKMetadataKeyCyclingFunctionalThresholdPowerTestType
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 17.0+
@@ -17,10 +18,14 @@
 let HKMetadataKeyCyclingFunctionalThresholdPowerTestType: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyCyclingFunctionalThresholdPowerTestType;
+```
+
 ## Topics
 
 ### Valid test types
-- [enum HKCyclingFunctionalThresholdPowerTestType](hkcyclingfunctionalthresholdpowertesttype.md)
+- [enum HKCyclingFunctionalThresholdPowerTestType](./hkcyclingfunctionalthresholdpowertesttype.md)
 
 
 ---

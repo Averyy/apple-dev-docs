@@ -1,15 +1,16 @@
 # conformsTo
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 21.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool conformsTo(uint32_t usagePage, uint32_t usage);
 ```
 

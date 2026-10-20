@@ -2,6 +2,7 @@
 
 **Framework**: Matter  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,7 +17,15 @@
 ## Declaration
 
 ```swift
+func deviceController(_ controller: UUID, nodeID: NSNumber, readAttributePaths attributePaths: [MTRAttributeRequestPath], withReply reply: @escaping @Sendable ([[String : Any]]) -> Void)
+```
+
+```swift
 func deviceController(_ controller: UUID, nodeID: NSNumber, readAttributePaths attributePaths: [MTRAttributeRequestPath]) async -> [[String : Any]]
+```
+
+```objc
+- (void) deviceController:(NSUUID *) controller nodeID:(NSNumber *) nodeID readAttributePaths:(NSArray<MTRAttributeRequestPath *> *) attributePaths withReply:(void (^)(NSArray<NSDictionary<NSString *,id> *> *)) reply;
 ```
 
 

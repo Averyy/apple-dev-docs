@@ -1,22 +1,27 @@
 # predicateForObjects(from:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a predicate that matches all the objects that were created by the provided source.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 class func predicateForObjects(from source: HKSource) -> NSPredicate
+```
+
+```objc
++ (NSPredicate *) predicateForObjectsFromSource:(HKSource *) source;
 ```
 
 #### Return Value
@@ -52,29 +57,31 @@ NSPredicate *explicitFromSource = [NSPredicate predicateWithFormat:@"%K == %@",
 
 ## See Also
 
-- [var source: HKSource](hkobject/source.md)
+### Related Documentation
+- [var source: HKSource](../hkobject/source.md)
   A HealthKit source, representing the app or device that created this object.
-- [class HKSourceQuery](hksourcequery.md)
+- [class HKSourceQuery](../hksourcequery.md)
   A query that returns a list of sources, such as apps and devices, that have saved matching queries to the HealthKit store.
-- [class func predicateForObject(with: UUID) -> NSPredicate](hkquery/predicateforobject(with:).md)
+### Creating object predicates
+- [class func predicateForObject(with: UUID) -> NSPredicate](./predicateforobject%28with%29.md)
   Returns a predicate that matches an object with the specified universally unique identifier (UUID).
-- [class func predicateForObjects(with: Set<UUID>) -> NSPredicate](hkquery/predicateforobjects(with:).md)
+- [class func predicateForObjects(with: Set<UUID>) -> NSPredicate](./predicateforobjects%28with%29.md)
   Returns a predicate that matches the objects with the specified  universally unique identifiers (UUIDs).
-- [class func predicateForObjects(from: Set<HKSource>) -> NSPredicate](hkquery/predicateforobjects(from:)-89b4t.md)
+- [class func predicateForObjects(from: Set<HKSource>) -> NSPredicate](./predicateforobjects%28from%29-89b4t.md)
   Returns a predicate that matches all the objects that were created by any of the provided sources.
-- [class func predicateForObjects(from: Set<HKDevice>) -> NSPredicate](hkquery/predicateforobjects(from:)-9h87f.md)
+- [class func predicateForObjects(from: Set<HKDevice>) -> NSPredicate](./predicateforobjects%28from%29-9h87f.md)
   Returns a predicate that matches all the objects that were created by any of the provided devices.
-- [class func predicateForObjects(withDeviceProperty: String, allowedValues: Set<String>) -> NSPredicate](hkquery/predicateforobjects(withdeviceproperty:allowedvalues:).md)
+- [class func predicateForObjects(withDeviceProperty: String, allowedValues: Set<String>) -> NSPredicate](./predicateforobjects%28withdeviceproperty,allowedvalues%29.md)
   Returns a predicate that matches all objects created by devices with the specified properties.
-- [class func predicateForObjects(from: Set<HKSourceRevision>) -> NSPredicate](hkquery/predicateforobjects(from:)-1ar4g.md)
+- [class func predicateForObjects(from: Set<HKSourceRevision>) -> NSPredicate](./predicateforobjects%28from%29-1ar4g.md)
   Returns a predicate that matches all the objects that were created by any of the provided source revisions.
-- [class func predicateForObjects(withMetadataKey: String) -> NSPredicate](hkquery/predicateforobjects(withmetadatakey:).md)
+- [class func predicateForObjects(withMetadataKey: String) -> NSPredicate](./predicateforobjects%28withmetadatakey%29.md)
   Returns a predicate that matches any object whose metadata contains the provided key.
-- [class func predicateForObjects(withMetadataKey: String, allowedValues: [Any]) -> NSPredicate](hkquery/predicateforobjects(withmetadatakey:allowedvalues:).md)
+- [class func predicateForObjects(withMetadataKey: String, allowedValues: [Any]) -> NSPredicate](./predicateforobjects%28withmetadatakey,allowedvalues%29.md)
   Returns a predicate that matches objects based on the provided metadata key and an array of target values.
-- [class func predicateForObjects(withMetadataKey: String, operatorType: NSComparisonPredicate.Operator, value: Any) -> NSPredicate](hkquery/predicateforobjects(withmetadatakey:operatortype:value:).md)
+- [class func predicateForObjects(withMetadataKey: String, operatorType: NSComparisonPredicate.Operator, value: Any) -> NSPredicate](./predicateforobjects%28withmetadatakey,operatortype,value%29.md)
   Returns a predicate that matches objects based on the provided metadata key, value, and operator.
-- [class func predicateForObjectsWithNoCorrelation() -> NSPredicate](hkquery/predicateforobjectswithnocorrelation.md)
+- [class func predicateForObjectsWithNoCorrelation() -> NSPredicate](./predicateforobjectswithnocorrelation%28%29.md)
   Returns a predicate that matches all objects that are not associated with a HealthKit correlation.
 
 

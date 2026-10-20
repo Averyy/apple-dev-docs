@@ -1,7 +1,8 @@
 # kDNSServiceErr_Invalid
 
 **Framework**: dnssd  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var kDNSServiceErr_Invalid: Int { get }
+```
+
+```c
+kDNSServiceErr_Invalid
 ```
 
 #### Discussion

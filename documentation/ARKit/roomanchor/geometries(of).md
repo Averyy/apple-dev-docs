@@ -1,12 +1,15 @@
 # geometries(of:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the disjoint mesh geometries of a given classification.
 
 **Availability**:
-- visionOS 2.0+
+- visionOS 2.0+ - Deprecated in 26.0
+
+> **Deprecated**: Use geometries(classifiedAs: SurfaceClassification) instead.
 
 ## Declaration
 
@@ -16,11 +19,11 @@ func geometries(of classification: MeshAnchor.MeshClassification) -> [MeshAnchor
 
 #### Return Value
 
-An array of [`MeshAnchor.Geometry`](meshanchor/geometry-swift.struct.md) structures that match the provided classification.
+An array of [`MeshAnchor.Geometry`](../meshanchor/geometry-swift.struct.md) structures that match the provided classification.
 
 #### Discussion
 
-`RoomAnchor.geometries(of:)` supports the [`ARMeshClassification.floor`](armeshclassification/floor.md) and [`ARMeshClassification.wall`](armeshclassification/wall.md) mesh classifications.
+`RoomAnchor.geometries(of:)` supports the [`ARMeshClassification.floor`](../armeshclassification/floor.md) and [`ARMeshClassification.wall`](../armeshclassification/wall.md) mesh classifications.
 
 ## Parameters
 
@@ -28,9 +31,10 @@ An array of [`MeshAnchor.Geometry`](meshanchor/geometry-swift.struct.md) structu
 
 ## See Also
 
-- [func contains(SIMD3<Float>) -> Bool](roomanchor/contains(_:).md)
+### Inspecting a room anchor
+- [func contains(SIMD3<Float>) -> Bool](./contains%28_%29.md)
   Returns a Boolean value that indicates whether a room contains the provided point.
-- [var description: String](roomanchor/description.md)
+- [var description: String](./description.md)
   A textual representation of this anchor.
 
 

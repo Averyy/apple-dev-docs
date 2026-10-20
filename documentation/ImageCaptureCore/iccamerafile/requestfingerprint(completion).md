@@ -1,7 +1,8 @@
 # requestFingerprint(completion:)
 
 **Framework**: ImageCaptureCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -13,7 +14,15 @@
 ## Declaration
 
 ```swift
+func requestFingerprint(completion: @escaping @Sendable (String?, (any Error)?) -> Void)
+```
+
+```swift
 func requestFingerprint() async throws -> String
+```
+
+```objc
+- (void) requestFingerprintWithCompletion:(void (^)(NSString *, NSError *)) completion;
 ```
 
 

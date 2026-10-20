@@ -1,7 +1,8 @@
 # UIBackgroundModes
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 Services provided by an app that require it to run in the background.
 
@@ -11,21 +12,40 @@ Services provided by an app that require it to run in the background.
 - visionOS 1.0+
 - watchOS 4.0+
 
+## Details
 
+- **Name**: `UIBackgroundModes` (Required background modes)
+- **Type**: array of string 
 
-**Type**: string 
+## Possible Values
+
+- `audio`
+- `bluetooth-central`
+- `bluetooth-peripheral`
+- `external-accessory`
+- `fetch`
+- `location`
+- `nearby-interaction`
+- `network-authentication`
+- `newsstand-content`
+- `processing`
+- `push-to-talk`
+- `remote-notification`
+- `screen-capture`
+- `voip`
 
 #### Discussion
 
-To add this key to your Information Property List, enable the Background Modes capability in Xcode. For information on configuring background execution modes and the platforms that support them, see [`Configuring background execution modes`](https://developer.apple.com/documentation/xcode/configuring-background-execution-modes).
+To add this key to your Information Property List, enable the Background Modes capability in Xcode. For information on configuring background execution modes and the platforms that support them, see [Configuring background execution modes](../../Xcode/configuring-background-execution-modes.md).
 
 ## See Also
 
-- [WKBackgroundModes](information-property-list/wkbackgroundmodes.md)
+### Background execution
+- [WKBackgroundModes](./wkbackgroundmodes.md)
   The services a watchOS app provides that require it to continue running in the background.
-- [BGTaskSchedulerPermittedIdentifiers](information-property-list/bgtaskschedulerpermittedidentifiers.md)
+- [BGTaskSchedulerPermittedIdentifiers](./bgtaskschedulerpermittedidentifiers.md)
   An array of strings containing developer-specified task identifiers in reverse URL notation.
-- [LSBackgroundOnly](information-property-list/lsbackgroundonly.md)
+- [LSBackgroundOnly](./lsbackgroundonly.md)
   A Boolean value indicating whether the app runs only in the background.
 
 

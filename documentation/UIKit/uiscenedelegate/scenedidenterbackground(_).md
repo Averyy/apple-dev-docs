@@ -1,7 +1,8 @@
 # sceneDidEnterBackground(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the scene is running in the background and is no longer onscreen.
 
@@ -18,21 +19,25 @@ Tells the delegate that the scene is running in the background and is no longer 
 optional func sceneDidEnterBackground(_ scene: UIScene)
 ```
 
+```objc
+- (void) sceneDidEnterBackground:(UIScene *) scene;
+```
+
 ## Mentions
 
-- [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
+- [Transitioning to the UIKit scene-based life cycle](../transitioning-to-the-uikit-scene-based-life-cycle.md)
 
 #### Discussion
 
-To use this method, you must implement the [`UISceneDelegate`](uiscenedelegate.md) protocol and configure scenes for your app (see [`Specifying the scenes your app supports`](specifying-the-scenes-your-app-supports.md)).
+To use this method, you must implement the [`UISceneDelegate`](../uiscenedelegate.md) protocol and configure scenes for your app (see [Specifying the scenes your app supports](../specifying-the-scenes-your-app-supports.md)).
 
 Use this method to reduce your scene’s memory usage, free up any shared resources, and clean up your scene’s user interface. Shortly after this method returns, UIKit takes a snapshot of your scene’s interface for display in the app switcher. Make sure your interface doesn’t contain sensitive user information.
 
-In addition to calling this method, UIKit posts a [`didEnterBackgroundNotification`](uiscene/didenterbackgroundnotification.md) notification from [`UIApplication`](uiapplication.md) and [`UIScene`](uiscene.md).
+In addition to calling this method, UIKit posts a [`didEnterBackgroundNotification`](../uiscene/didenterbackgroundnotification.md) notification from [`UIApplication`](../uiapplication.md) and [`UIScene`](../uiscene.md).
 
-For more information about what to do when your app enters the background, see [`Preparing your UI to run in the background`](preparing-your-ui-to-run-in-the-background.md).
+For more information about what to do when your app enters the background, see [Preparing your UI to run in the background](../preparing-your-ui-to-run-in-the-background.md).
 
-> **Note**:  When you implement this method and enable scenes, UIKit calls this method but does not call the [`applicationDidEnterBackground(_:)`](uiapplicationdelegate/applicationdidenterbackground(_:).md) method on [`UIApplicationDelegate`](uiapplicationdelegate.md).
+> **Note**:  When you implement this method and enable scenes, UIKit calls this method but does not call the [`applicationDidEnterBackground(_:)`](../uiapplicationdelegate/applicationdidenterbackground%28_%29.md) method on [`UIApplicationDelegate`](../uiapplicationdelegate.md).
 
 ## Parameters
 
@@ -40,7 +45,8 @@ For more information about what to do when your app enters the background, see [
 
 ## See Also
 
-- [func sceneWillResignActive(UIScene)](uiscenedelegate/scenewillresignactive(_:).md)
+### Transitioning to the background
+- [func sceneWillResignActive(UIScene)](./scenewillresignactive%28_%29.md)
   Tells the delegate that the scene is about to resign the active state and stop responding to user events.
 
 

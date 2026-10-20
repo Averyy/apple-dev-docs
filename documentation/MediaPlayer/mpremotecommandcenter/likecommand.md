@@ -1,7 +1,8 @@
 # likeCommand
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The command object for indicating that a user likes what is currently playing.
 
@@ -20,6 +21,10 @@ The command object for indicating that a user likes what is currently playing.
 var likeCommand: MPFeedbackCommand { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MPFeedbackCommand * likeCommand;
+```
+
 #### Discussion
 
 Use the object in this property to register your app’s handler for liking an item. Use your handler to register the user’s preference for a track, artist, or whatever is appropriate for your app. You can disable the command if your app does not support it.
@@ -28,9 +33,10 @@ In addition to registering a handler, you can use the command object to provide 
 
 ## See Also
 
-- [var ratingCommand: MPRatingCommand](mpremotecommandcenter/ratingcommand.md)
+### Rating a media item
+- [var ratingCommand: MPRatingCommand](./ratingcommand.md)
   The command object for rating a media item.
-- [var dislikeCommand: MPFeedbackCommand](mpremotecommandcenter/dislikecommand.md)
+- [var dislikeCommand: MPFeedbackCommand](./dislikecommand.md)
   The command object for indicating that a user dislikes what is currently playing.
 
 

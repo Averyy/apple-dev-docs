@@ -1,7 +1,8 @@
 # expectsReply
 
 **Framework**: XPC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates if the client that sent the message expects a reply.
 
@@ -11,7 +12,7 @@ A Boolean value that indicates if the client that sent the message expects a rep
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ var expectsReply: Bool { get }
 
 ## See Also
 
-- [func reply<Message>(Message)](xpcreceivedmessage/reply(_:).md)
+### Replying to messages
+- [func reply<Message>(Message)](./reply%28_%29.md)
   Sends a reply to the originator of the message.
-- [func handoffReply(to: DispatchQueue, () -> Void) -> (any Encodable)?](xpcreceivedmessage/handoffreply(to:_:).md)
+- [func handoffReply(to: DispatchQueue, () -> Void) -> (any Encodable)?](./handoffreply%28to,_%29.md)
   Informs the system when message processing and response continues in a separate dispatch queue.
 
 

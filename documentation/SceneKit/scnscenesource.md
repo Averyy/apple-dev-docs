@@ -1,18 +1,19 @@
 # SCNSceneSource
 
 **Framework**: SceneKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that manages the data-reading tasks associated with loading scene contents from a file or data.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,88 +21,92 @@ An object that manages the data-reading tasks associated with loading scene cont
 class SCNSceneSource
 ```
 
+```objc
+@interface SCNSceneSource : NSObject
+```
+
 ## Mentions
 
-- [Animating SceneKit Content](animating-scenekit-content.md)
+- [Animating SceneKit Content](./animating-scenekit-content.md)
 
 #### Overview
 
 You can also use a scene source to examine the contents of a scene file or to selectively extract certain elements of a scene without keeping the entire scene and all the assets it contains.
 
-SceneKit can read scene contents from a file in a supported format, or from an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object holding the contents of such a file. Supported formats include the following:
+SceneKit can read scene contents from a file in a supported format, or from an [`NSData`](../Foundation/nsdata.md) object holding the contents of such a file. Supported formats include the following:
 
 | Format | Filename Extension | Supported in |
 | --- | --- | --- |
 | Digital Asset Exchange | `.dae` | macOS 10.8 and later |
 | Alembic | `.abc` | macOS 10.10 and later |
-| SceneKit compressed scene | `.dae` or `.abc` | macOS 10.10 and later ![None](/images/com.apple.scenekit/spacer.png) iOS 8.0 and later |
-| SceneKit archive | `.scn` | macOS 10.10 and later ![None](/images/com.apple.scenekit/spacer.png) iOS 8.0 and later |
+| SceneKit compressed scene | `.dae` or `.abc` | macOS 10.10 and later ![](https://developer.apple.com/tutorials/images/com.apple.scenekit/spacer.png) iOS 8.0 and later |
+| SceneKit archive | `.scn` | macOS 10.10 and later ![](https://developer.apple.com/tutorials/images/com.apple.scenekit/spacer.png) iOS 8.0 and later |
 
 When you include a scene file in DAE or Alembic format in your Xcode project, Xcode automatically converts the file to SceneKit’s compressed scene format for use in the built app. The compressed file retains its original `.dae` or `.abc` extension.
 
-The [`SCNSceneSource`](scnscenesource.md) class can also load SceneKit archive files, which you create in the Xcode scene editor or programmatically by using the [`NSKeyedArchiver`](https://developer.apple.com/documentation/foundation/nskeyedarchiver) class to serialize an [`SCNScene`](scnscene.md) object and the scene graph it contains.
+The [`SCNSceneSource`](./scnscenesource.md) class can also load SceneKit archive files, which you create in the Xcode scene editor or programmatically by using the [`NSKeyedArchiver`](../Foundation/nskeyedarchiver.md) class to serialize an [`SCNScene`](./scnscene.md) object and the scene graph it contains.
 
 > **Note**:  For best results, place scene files that ship in your app bundle in a folder with the `.scnassets` extension, and place image files referenced as textures from those scenes in an Asset Catalog. Xcode then optimizes the scene and texture resources for best performance on each target device, and prepares your texture resources for delivery features such as App Thinning and On-Demand Resources.
 
 ## Topics
 
 ### Creating a Scene Source
-- [init?(url: URL, options: [SCNSceneSource.LoadingOption : Any]?)](scnscenesource/init(url:options:)-rw0y.md)
+- [init?(url: URL, options: [SCNSceneSource.LoadingOption : Any]?)](./scnscenesource/init%28url,options%29-rw0y.md)
   Initializes a scene source for reading the scene graph from a specified file.
-- [init?(data: Data, options: [SCNSceneSource.LoadingOption : Any]?)](scnscenesource/init(data:options:).md)
+- [init?(data: Data, options: [SCNSceneSource.LoadingOption : Any]?)](./scnscenesource/init%28data,options%29.md)
   Initializes a scene source for reading the scene graph contained in an `NSData` object.
 ### Loading a Complete Scene
-- [func scene(options: [SCNSceneSource.LoadingOption : Any]?, statusHandler: SCNSceneSourceStatusHandler?) -> SCNScene?](scnscenesource/scene(options:statushandler:).md)
+- [func scene(options: [SCNSceneSource.LoadingOption : Any]?, statusHandler: SCNSceneSourceStatusHandler?) -> SCNScene?](./scnscenesource/scene%28options,statushandler%29.md)
   Loads the entire scene graph from the scene source and calls the specified block to provide progress information.
-- [func scene(options: [SCNSceneSource.LoadingOption : Any]?) throws -> SCNScene](scnscenesource/scene(options:).md)
+- [func scene(options: [SCNSceneSource.LoadingOption : Any]?) throws -> SCNScene](./scnscenesource/scene%28options%29.md)
   Instantiates a scene from the scene source with the specified options.
 ### Loading and Inspecting Scene Elements
-- [func identifiersOfEntries(withClass: AnyClass) -> [String]](scnscenesource/identifiersofentries(withclass:).md)
+- [func identifiersOfEntries(withClass: AnyClass) -> [String]](./scnscenesource/identifiersofentries%28withclass%29.md)
   Returns the identifiers for all objects in the scene source of the specified class.
-- [func entryWithIdentifier<T>(String, withClass: T.Type) -> T?](scnscenesource/entrywithidentifier(_:withclass:).md)
+- [func entryWithIdentifier<T>(String, withClass: T.Type) -> T?](./scnscenesource/entrywithidentifier%28_,withclass%29.md)
   Loads and returns a specific object in the scene source.
-- [func entries(passingTest: (Any, String, UnsafeMutablePointer<ObjCBool>) -> Bool) -> [Any]](scnscenesource/entries(passingtest:).md)
+- [func entries(passingTest: (Any, String, UnsafeMutablePointer<ObjCBool>) -> Bool) -> [Any]](./scnscenesource/entries%28passingtest%29.md)
   Loads and returns all objects in the scene source that pass the test in a given block.
 ### Getting Information about the Scene
-- [var url: URL?](scnscenesource/url.md)
+- [var url: URL?](./scnscenesource/url.md)
   The URL identifying the file from which the scene source was created.
-- [var data: Data?](scnscenesource/data.md)
+- [var data: Data?](./scnscenesource/data.md)
   The data object from which the scene source loads scene content.
-- [func property(forKey: String) -> Any?](scnscenesource/property(forkey:).md)
+- [func property(forKey: String) -> Any?](./scnscenesource/property%28forkey%29.md)
   Returns metadata about the scene.
 ### Constants
-- [SCNSceneSource.LoadingOption](scnscenesource/loadingoption.md)
+- [SCNSceneSource.LoadingOption](./scnscenesource/loadingoption.md)
   Options for creating scene sources and loading the scenes they contain.
-- [Scene Source Properties](scene-source-properties.md)
-  The metadata properties associated with a scene file, used by the [`property(forKey:)`](scnscenesource/property(forkey:).md) method.
-- [Contributor Keys](contributor-keys.md)
-  Metadata identifying the user and authoring tool that created a scene file, used with the [`SCNSceneSourceAssetContributorsKey`](scnscenesourceassetcontributorskey.md) key.
-- [Unit Dictionary Keys](unit-dictionary-keys.md)
-  Metadata describing the unit of measurement used in a scene file, used with the [`SCNSceneSourceAssetUnitKey`](scnscenesourceassetunitkey.md) key.
-- [Scene Loading Error Keys](scene-loading-error-keys.md)
-- [Scene File Consistency Error Keys](scene-file-consistency-error-keys.md)
+- [Scene Source Properties](./scene-source-properties.md)
+  The metadata properties associated with a scene file, used by the [`property(forKey:)`](./scnscenesource/property%28forkey%29.md) method.
+- [Contributor Keys](./contributor-keys.md)
+  Metadata identifying the user and authoring tool that created a scene file, used with the [`SCNSceneSourceAssetContributorsKey`](./scnscenesourceassetcontributorskey.md) key.
+- [Unit Dictionary Keys](./unit-dictionary-keys.md)
+  Metadata describing the unit of measurement used in a scene file, used with the [`SCNSceneSourceAssetUnitKey`](./scnscenesourceassetunitkey.md) key.
+- [Scene Loading Error Keys](./scene-loading-error-keys.md)
+- [Scene File Consistency Error Keys](./scene-file-consistency-error-keys.md)
   Keys identifying errors found during a scene-file-format consistency check.
-- [Scene File Consistency Check Error Codes](1573761-scene-file-consistency-check-err.md)
+- [Scene File Consistency Check Error Codes](./api-1573761-scene-file-consistency-check-err.md)
   Error codes that identify errors found during a scene-file-format consistency check.
-- [typealias SCNSceneSourceStatusHandler](scnscenesourcestatushandler.md)
+- [typealias SCNSceneSourceStatusHandler](./scnscenesourcestatushandler.md)
   The signature for the block that SceneKit calls periodically to report progress while loading a scene.
-- [enum SCNSceneSourceStatus](scnscenesourcestatus.md)
-  Constants identifying phases of SceneKit’s scene loading process, used in a [`SCNSceneSourceStatusHandler`](scnscenesourcestatushandler.md) block.
+- [enum SCNSceneSourceStatus](./scnscenesourcestatus.md)
+  Constants identifying phases of SceneKit’s scene loading process, used in a [`SCNSceneSourceStatusHandler`](./scnscenesourcestatushandler.md) block.
 ### Initializers
-- [convenience init?(URL: URL, options: [SCNSceneSource.LoadingOption : Any]?)](scnscenesource/init(url:options:)-46vsm.md)
-- [init?(URL: URL, options: [SCNSceneSource.LoadingOption : Any]?)](scnscenesource/init(url:options:)-5xjuk.md)
+- [convenience init?(URL: URL, options: [SCNSceneSource.LoadingOption : Any]?)](./scnscenesource/init%28url,options%29-46vsm.md)
+- [init?(URL: URL, options: [SCNSceneSource.LoadingOption : Any]?)](./scnscenesource/init%28url,options%29-5xjuk.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

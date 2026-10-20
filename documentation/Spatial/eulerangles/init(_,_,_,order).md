@@ -1,7 +1,8 @@
 # init(_:_:_:order:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new Euler angles structure from the specified angle structures and order.
 
@@ -11,7 +12,7 @@ Creates a new Euler angles structure from the specified angle structures and ord
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ init(_ x: Angle2D, _ y: Angle2D, _ z: Angle2D, order: EulerAngles.Order)
 
 #### Discussion
 
-> **Note**: In Swift, use [`EulerAngles.Order`](https://developer.apple.comhttps://developer.apple.com/documentation/spatial/eulerangles/order-swift.typealias) in place of `__SPEulerAngleOrder`.
+> **Note**: In Swift, use [EulerAngles.Order](./order-swift.typealias.md) in place of `__SPEulerAngleOrder`.
 
 ## Parameters
 
@@ -33,15 +34,16 @@ init(_ x: Angle2D, _ y: Angle2D, _ z: Angle2D, order: EulerAngles.Order)
 
 ## See Also
 
-- [init(eye: Point3D, target: Point3D, up: Vector3D)](rotation3d/init(eye:target:up:).md)
+### Deprecated symbols
+- [init(eye: Point3D, target: Point3D, up: Vector3D)](../rotation3d/init%28eye,target,up%29.md)
   Creates a rotation structure that’s the look-at direction from a position to a target.
-- [init(axis: RotationAxis3D, angle: Angle2D)](rotation3d/init(axis:angle:).md)
+- [init(axis: RotationAxis3D, angle: Angle2D)](../rotation3d/init%28axis,angle%29.md)
   Creates a rotation structure with the specified axis and the specified angle from Spatial structures.
-- [init(quaternion: simd_quatf)](rotation3d/init(quaternion:)-6ajmn.md)
+- [init(quaternion: simd_quatf)](../rotation3d/init%28quaternion%29-6ajmn.md)
   Creates a rotation axis from the specified single-precision quaternion.
-- [static let zero: Rotation3D](rotation3d/zero.md)
+- [static let zero: Rotation3D](../rotation3d/zero.md)
   The rotation with the zero value.
-- [var isZero: Bool](rotation3d/iszero.md)
+- [var isZero: Bool](../rotation3d/iszero.md)
   A Boolean value that indicates whether the rotation is zero.
 
 

@@ -1,7 +1,8 @@
 # CBL2CAPChannel
 
 **Framework**: Core Bluetooth  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A live L2CAP connection to a remote device.
 
@@ -20,37 +21,42 @@ A live L2CAP connection to a remote device.
 class CBL2CAPChannel
 ```
 
+```objc
+@interface CBL2CAPChannel : NSObject
+```
+
 ## Topics
 
 ### Accessing Streams
-- [var inputStream: InputStream!](cbl2capchannel/inputstream.md)
+- [var inputStream: InputStream!](./cbl2capchannel/inputstream.md)
   The stream used for reading data from the remote peer.
-- [var outputStream: OutputStream!](cbl2capchannel/outputstream.md)
+- [var outputStream: OutputStream!](./cbl2capchannel/outputstream.md)
   The stream used for writing data to the peer.
 ### Accessing the Peer
-- [var peer: CBPeer!](cbl2capchannel/peer.md)
+- [var peer: CBPeer!](./cbl2capchannel/peer.md)
   The peer connected to the channel.
 ### Accessing the Protocol/Service Multiplexer
-- [var psm: CBL2CAPPSM](cbl2capchannel/psm.md)
+- [var psm: CBL2CAPPSM](./cbl2capchannel/psm.md)
   The PSM of the channel.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func openL2CAPChannel(CBL2CAPPSM)](cbperipheral/openl2capchannel(_:).md)
+### Working with L2CAP Channels
+- [func openL2CAPChannel(CBL2CAPPSM)](./cbperipheral/openl2capchannel%28_%29.md)
   Attempts to open an L2CAP channel to the peripheral using the supplied Protocol/Service Multiplexer (PSM).
-- [typealias CBL2CAPPSM](cbl2cappsm.md)
+- [typealias CBL2CAPPSM](./cbl2cappsm.md)
   The type of PSM identifiers.
 
 

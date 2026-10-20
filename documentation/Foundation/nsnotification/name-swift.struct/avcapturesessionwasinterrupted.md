@@ -1,15 +1,16 @@
 # AVCaptureSessionWasInterrupted
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-- macOS 10.14+
-- tvOS 17.0+
-- visionOS 1.0+
+- iOS 4.0+ - Deprecated in 18.0 (renamed: AVCaptureSession.wasInterruptedNotification)
+- iPadOS 4.0+ - Deprecated in 18.0 (renamed: AVCaptureSession.wasInterruptedNotification)
+- Mac Catalyst 14.0+ - Deprecated in 18.0 (renamed: AVCaptureSession.wasInterruptedNotification)
+- macOS 10.14+ - Deprecated in 15.0 (renamed: AVCaptureSession.wasInterruptedNotification)
+- tvOS 17.0+ - Deprecated in 18.0 (renamed: AVCaptureSession.wasInterruptedNotification)
+- visionOS 1.0+ - Deprecated in 2.0 (renamed: AVCaptureSession.wasInterruptedNotification)
 
 ## Declaration
 

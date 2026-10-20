@@ -1,7 +1,8 @@
 # tracksVelocity
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether this transaction will track the velocity of any animatable properties that change.
 
@@ -44,11 +45,12 @@ func receiveChange(change: ChangeInfo) {
 
 ## See Also
 
-- [var isContinuous: Bool](transaction/iscontinuous.md)
+### Getting information about a transaction
+- [var isContinuous: Bool](./iscontinuous.md)
   A Boolean value that indicates whether the transaction originated from an action that produces a sequence of values.
-- [var scrollTargetAnchor: UnitPoint?](transaction/scrolltargetanchor.md)
+- [var scrollTargetAnchor: UnitPoint?](./scrolltargetanchor.md)
   The preferred alignment of the view within a scroll view’s visible region when scrolling to a view.
-- [subscript<K>(K.Type) -> K.Value](transaction/subscript(_:).md)
+- [subscript<K>(K.Type) -> K.Value](./subscript%28_%29.md)
   Accesses the transaction value associated with a custom key.
 
 

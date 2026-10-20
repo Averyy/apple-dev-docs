@@ -1,7 +1,8 @@
 # SystemDependency.after(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An update order that requests RealityKit update this system after it updates another specified system.
 
@@ -11,7 +12,7 @@ An update order that requests RealityKit update this system after it updates ano
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,7 @@ case after(any System.Type)
 
 ## Mentions
 
-- [Implementing systems for entities in a scene](implementing-systems-for-entities-in-a-scene.md)
+- [Implementing systems for entities in a scene](../implementing-systems-for-entities-in-a-scene.md)
 
 ## Parameters
 
@@ -29,7 +30,8 @@ case after(any System.Type)
 
 ## See Also
 
-- [case before(any System.Type)](systemdependency/before(_:).md)
+### Update order
+- [case before(any System.Type)](./before%28_%29.md)
   An update order that requests RealityKit update this system before it updates another specified system.
 
 

@@ -1,14 +1,15 @@
 # FndrFileInfo
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 typedef struct FndrFileInfo {
     ...
 } FndrFileInfo;
@@ -17,11 +18,11 @@ typedef struct FndrFileInfo {
 ## Topics
 
 ### Instance Properties
-- [fdCreator](fndrfileinfo/1578029-fdcreator.md)
-- [fdFlags](fndrfileinfo/1577945-fdflags.md)
-- [fdLocation](fndrfileinfo/1577921-fdlocation.md)
-- [fdType](fndrfileinfo/1578189-fdtype.md)
-- [opaque](fndrfileinfo/1578168-opaque.md)
+- [fdCreator](./fndrfileinfo/api-1578029-fdcreator.md)
+- [fdFlags](./fndrfileinfo/api-1577945-fdflags.md)
+- [fdLocation](./fndrfileinfo/api-1577921-fdlocation.md)
+- [fdType](./fndrfileinfo/api-1578189-fdtype.md)
+- [opaque](./fndrfileinfo/api-1578168-opaque.md)
 
 
 ---

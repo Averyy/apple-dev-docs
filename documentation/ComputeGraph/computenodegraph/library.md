@@ -1,7 +1,8 @@
 # ComputeNodeGraph.Library
 
 **Framework**: Compute Graph  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class defining a library of node definitions that can be added to a ComputeNodeGraph
 
@@ -12,7 +13,7 @@ A class defining a library of node definitions that can be added to a ComputeNod
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -29,48 +30,49 @@ These nodes are functions implemented using the Metal Shading Language and annot
 ## Topics
 
 ### Initializers
-- [init()](computenodegraph/library/init.md)
+- [init()](./library/init%28%29.md)
   Creates a new empty library.
-- [convenience init?(bundle: Bundle)](computenodegraph/library/init(bundle:).md)
+- [convenience init?(bundle: Bundle)](./library/init%28bundle%29.md)
   Creates a library from the Metal default library in the given bundle, if available.
-- [convenience init(from: any MTLLibrary, bundleIdentifier: String?)](computenodegraph/library/init(from:bundleidentifier:).md)
+- [convenience init(from: any MTLLibrary, bundleIdentifier: String?)](./library/init%28from,bundleidentifier%29.md)
   Creates a library by extracting node definitions from a Metal library.
 ### Instance Properties
-- [var definitions: [ComputeNodeGraph.NodeDefinition]](computenodegraph/library/definitions.md)
+- [var definitions: [ComputeNodeGraph.NodeDefinition]](./library/definitions.md)
   The collection of all node definitions available in this library.
 ### Instance Methods
-- [func definition(named: String, in: String?) -> ComputeNodeGraph.NodeDefinition?](computenodegraph/library/definition(named:in:).md)
+- [func definition(named: String, in: String?) -> ComputeNodeGraph.NodeDefinition?](./library/definition%28named,in%29.md)
   Returns the first node definition with the given name, or `nil` if none is found.
-- [func definition(stage: ComputeNodeGraph.Stage) -> ComputeNodeGraph.NodeDefinition?](computenodegraph/library/definition(stage:).md)
+- [func definition(stage: ComputeNodeGraph.Stage) -> ComputeNodeGraph.NodeDefinition?](./library/definition%28stage%29.md)
   Returns a definition for the given stage.
-- [func definitionsMatching(input: ComputeNodeGraph.ValueType) -> [ComputeNodeGraph.NodeDefinition]](computenodegraph/library/definitionsmatching(input:).md)
+- [func definitionsMatching(input: ComputeNodeGraph.ValueType) -> [ComputeNodeGraph.NodeDefinition]](./library/definitionsmatching%28input%29.md)
   Returns all definitions that have at least one input matching the given value type.
-- [func definitionsMatching(inputs: [ComputeNodeGraph.ValueType]) -> [ComputeNodeGraph.NodeDefinition]](computenodegraph/library/definitionsmatching(inputs:).md)
+- [func definitionsMatching(inputs: [ComputeNodeGraph.ValueType]) -> [ComputeNodeGraph.NodeDefinition]](./library/definitionsmatching%28inputs%29.md)
   Returns all definitions whose user-editable inputs, in order, match the given value types.
-- [func definitionsMatching(output: ComputeNodeGraph.ValueType) -> [ComputeNodeGraph.NodeDefinition]](computenodegraph/library/definitionsmatching(output:).md)
+- [func definitionsMatching(output: ComputeNodeGraph.ValueType) -> [ComputeNodeGraph.NodeDefinition]](./library/definitionsmatching%28output%29.md)
   Returns all definitions that have at least one output matching the given value type.
-- [func merge(contentsOf: ComputeNodeGraph.Library)](computenodegraph/library/merge(contentsof:).md)
+- [func merge(contentsOf: ComputeNodeGraph.Library)](./library/merge%28contentsof%29.md)
   Merges nodes from specified library into this library.
 ### Type Properties
-- [static let shared: ComputeNodeGraph.Library](computenodegraph/library/shared.md)
+- [static let shared: ComputeNodeGraph.Library](./library/shared.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ComputeNodeGraph](computenodegraph.md)
-- [ComputeNodeGraph.Assembly](computenodegraph/assembly.md)
+### Graph definition and assembly
+- [struct ComputeNodeGraph](../computenodegraph.md)
+- [ComputeNodeGraph.Assembly](./assembly.md)
   Fully assembled configuration of compute graph nodes.
-- [ComputeNodeGraph.Pipelines](computenodegraph/pipelines.md)
+- [ComputeNodeGraph.Pipelines](./pipelines.md)
   Fully-compiled shaders for a compute graph.
-- [ComputeNodeGraph.PipelinesDescriptor](computenodegraph/pipelinesdescriptor.md)
+- [ComputeNodeGraph.PipelinesDescriptor](./pipelinesdescriptor.md)
   Specifies the configuration used to compile a set of compute pipelines for a compute graph effect.
-- [ComputeNodeGraph.NodeDefinition](computenodegraph/nodedefinition.md)
-- [ComputeNodeGraph.LibraryReference](computenodegraph/libraryreference.md)
+- [ComputeNodeGraph.NodeDefinition](./nodedefinition.md)
+- [ComputeNodeGraph.LibraryReference](./libraryreference.md)
   A Metal library and an optional bundle identifier that locates shader functions.
 
 

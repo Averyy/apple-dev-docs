@@ -1,7 +1,8 @@
 # BNNS.FusedTernaryArithmeticParameters
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains the parameters for a fused ternary arithmetic layer.
 
@@ -11,8 +12,10 @@ A structure that contains the parameters for a fused ternary arithmetic layer.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -23,40 +26,41 @@ struct FusedTernaryArithmeticParameters
 ## Topics
 
 ### Creating a Fused Arithmetic Parameters Structure
-- [init(inputADescriptorType: BNNS.DescriptorType, inputBDescriptorType: BNNS.DescriptorType, inputCDescriptorType: BNNS.DescriptorType, outputDescriptorType: BNNS.DescriptorType, function: BNNS.ArithmeticTernaryFunction)](bnns/fusedternaryarithmeticparameters/init(inputadescriptortype:inputbdescriptortype:inputcdescriptortype:outputdescriptortype:function:).md)
+- [init(inputADescriptorType: BNNS.DescriptorType, inputBDescriptorType: BNNS.DescriptorType, inputCDescriptorType: BNNS.DescriptorType, outputDescriptorType: BNNS.DescriptorType, function: BNNS.ArithmeticTernaryFunction)](./fusedternaryarithmeticparameters/init%28inputadescriptortype,inputbdescriptortype,inputcdescriptortype,outputdescriptortype,function%29.md)
   Returns a new fused ternary arithmetic parameters structure.
 ### Inspecting the Properties of a Fused Arithmetic Parameters Structure
-- [var function: BNNS.ArithmeticTernaryFunction](bnns/fusedternaryarithmeticparameters/function.md)
+- [var function: BNNS.ArithmeticTernaryFunction](./fusedternaryarithmeticparameters/function.md)
   The arithmetic function.
-- [var inputADescriptorType: BNNS.DescriptorType](bnns/fusedternaryarithmeticparameters/inputadescriptortype.md)
+- [var inputADescriptorType: BNNS.DescriptorType](./fusedternaryarithmeticparameters/inputadescriptortype.md)
   The descriptor type of the first input.
-- [var inputBDescriptorType: BNNS.DescriptorType](bnns/fusedternaryarithmeticparameters/inputbdescriptortype.md)
+- [var inputBDescriptorType: BNNS.DescriptorType](./fusedternaryarithmeticparameters/inputbdescriptortype.md)
   The descriptor type of the second input.
-- [var inputCDescriptorType: BNNS.DescriptorType](bnns/fusedternaryarithmeticparameters/inputcdescriptortype.md)
+- [var inputCDescriptorType: BNNS.DescriptorType](./fusedternaryarithmeticparameters/inputcdescriptortype.md)
   The descriptor type of the third input.
-- [var outputDescriptorType: BNNS.DescriptorType](bnns/fusedternaryarithmeticparameters/outputdescriptortype.md)
+- [var outputDescriptorType: BNNS.DescriptorType](./fusedternaryarithmeticparameters/outputdescriptortype.md)
   The descriptor type of the output.
 
 ## Relationships
 
 ### Conforms To
-- [FusableLayerParameters](fusablelayerparameters.md)
+- [FusableLayerParameters](../fusablelayerparameters.md)
 
 ## See Also
 
-- [struct FusedUnaryArithmeticParameters](bnns/fusedunaryarithmeticparameters.md)
+### Specifying a Layer Parameter
+- [struct FusedUnaryArithmeticParameters](./fusedunaryarithmeticparameters.md)
   A structure that contains the parameters for a fused unary arithmetic layer.
-- [struct FusedBinaryArithmeticParameters](bnns/fusedbinaryarithmeticparameters.md)
+- [struct FusedBinaryArithmeticParameters](./fusedbinaryarithmeticparameters.md)
   A structure that contains the parameters for a fused binary arithmetic layer.
-- [struct FusedConvolutionParameters](bnns/fusedconvolutionparameters.md)
+- [struct FusedConvolutionParameters](./fusedconvolutionparameters.md)
   A structure that contains the parameters for a fused convolution layer.
-- [struct FusedQuantizationParameters](bnns/fusedquantizationparameters.md)
+- [struct FusedQuantizationParameters](./fusedquantizationparameters.md)
   A structure that contains the parameters for a fused quantization layer.
-- [struct FusedDequantizationParameters](bnns/fuseddequantizationparameters.md)
+- [struct FusedDequantizationParameters](./fuseddequantizationparameters.md)
   A structure that contains the parameters for a fused dequantization layer.
-- [struct FusedFullyConnectedParameters](bnns/fusedfullyconnectedparameters.md)
+- [struct FusedFullyConnectedParameters](./fusedfullyconnectedparameters.md)
   A structure that contains the parameters for a fused fully connected layer.
-- [struct FusedNormalizationParameters](bnns/fusednormalizationparameters.md)
+- [struct FusedNormalizationParameters](./fusednormalizationparameters.md)
   A structure that contains the parameters for a fused normalization layer.
 
 

@@ -1,7 +1,8 @@
 # makeSampleCursor(presentationTimeStamp:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a sample cursor and positions it at or near the specified presentation timestamp.
 
@@ -20,15 +21,19 @@ Creates a sample cursor and positions it at or near the specified presentation t
 func makeSampleCursor(presentationTimeStamp: CMTime) -> AVSampleCursor?
 ```
 
+```objc
+- (AVSampleCursor *) makeSampleCursorWithPresentationTimeStamp:(CMTime) presentationTimeStamp;
+```
+
 #### Return Value
 
-An instance of [`AVSampleCursor`](avsamplecursor.md).
+An instance of [`AVSampleCursor`](../avsamplecursor.md).
 
 #### Discussion
 
-If the track’s [`asset`](avassettrack/asset.md) property value for [`providesPreciseDurationAndTiming`](avasset/providesprecisedurationandtiming.md) is [`true`](https://developer.apple.com/documentation/swift/true), the sample cursor is accurately positioned at the track’slast media sample with a presentation timestamp less than or equal to the desired timestamp, or, if there are no such samples, the first sample in presentation order.
+If the track’s [`asset`](./asset.md) property value for [`providesPreciseDurationAndTiming`](../avasset/providesprecisedurationandtiming.md) is [`true`](../../Swift/true.md), the sample cursor is accurately positioned at the track’slast media sample with a presentation timestamp less than or equal to the desired timestamp, or, if there are no such samples, the first sample in presentation order.
 
-If the track’s [`asset`](avassettrack/asset.md) property value for [`providesPreciseDurationAndTiming`](avasset/providesprecisedurationandtiming.md) is [`false`](https://developer.apple.com/documentation/swift/false), and it’s prohibitively expensive to locate the precise sample at the desired timestamp, the sample cursor may be approximately positioned.
+If the track’s [`asset`](./asset.md) property value for [`providesPreciseDurationAndTiming`](../avasset/providesprecisedurationandtiming.md) is [`false`](../../Swift/false.md), and it’s prohibitively expensive to locate the precise sample at the desired timestamp, the sample cursor may be approximately positioned.
 
 ## Parameters
 
@@ -36,9 +41,10 @@ If the track’s [`asset`](avassettrack/asset.md) property value for [`providesP
 
 ## See Also
 
-- [func makeSampleCursorAtFirstSampleInDecodeOrder() -> AVSampleCursor?](avassettrack/makesamplecursoratfirstsampleindecodeorder.md)
+### Creating sample cursors
+- [func makeSampleCursorAtFirstSampleInDecodeOrder() -> AVSampleCursor?](./makesamplecursoratfirstsampleindecodeorder%28%29.md)
   Creates a sample cursor and positions it at the track’s first media sample in decode order.
-- [func makeSampleCursorAtLastSampleInDecodeOrder() -> AVSampleCursor?](avassettrack/makesamplecursoratlastsampleindecodeorder.md)
+- [func makeSampleCursorAtLastSampleInDecodeOrder() -> AVSampleCursor?](./makesamplecursoratlastsampleindecodeorder%28%29.md)
   Creates a sample cursor and positions it at the track’s last media sample in decode order.
 
 

@@ -1,7 +1,8 @@
 # kSecPropertyTypeTitle
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies a key whose value is a string containing the title (display name) of the certificate.
 
@@ -18,6 +19,10 @@ Specifies a key whose value is a string containing the title (display name) of t
 
 ```swift
 let kSecPropertyTypeTitle: CFString
+```
+
+```c
+extern CFStringRef const kSecPropertyTypeTitle;
 ```
 
 

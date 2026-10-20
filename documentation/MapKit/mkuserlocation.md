@@ -1,7 +1,8 @@
 # MKUserLocation
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An annotation that reflects the user’s location on the map.
 
@@ -19,47 +20,52 @@ An annotation that reflects the user’s location on the map.
 class MKUserLocation
 ```
 
+```objc
+@interface MKUserLocation : NSObject
+```
+
 ## Mentions
 
-- [Converting a user’s location to a descriptive placemark](converting-a-user-s-location-to-a-descriptive-placemark.md)
+- [Converting a user’s location to a descriptive placemark](./converting-a-user-s-location-to-a-descriptive-placemark.md)
 
 #### Overview
 
-You don’t create instances of this class directly. Instead, you retrieve an existing `MKUserLocation` object from the [`userLocation`](mkmapview/userlocation.md) property of the map view that displays in your app.
+You don’t create instances of this class directly. Instead, you retrieve an existing `MKUserLocation` object from the [`userLocation`](./mkmapview/userlocation.md) property of the map view that displays in your app.
 
 ## Topics
 
 ### Determining the user’s location
-- [var location: CLLocation?](mkuserlocation/location.md)
+- [var location: CLLocation?](./mkuserlocation/location.md)
   The location of the device.
-- [var isUpdating: Bool](mkuserlocation/isupdating.md)
+- [var isUpdating: Bool](./mkuserlocation/isupdating.md)
   A Boolean value that indicates whether the map view is updating the user’s location.
-- [var heading: CLHeading?](mkuserlocation/heading.md)
+- [var heading: CLHeading?](./mkuserlocation/heading.md)
   The heading of the user’s location.
 ### Accessing the user’s location annotation
-- [var title: String?](mkuserlocation/title.md)
+- [var title: String?](./mkuserlocation/title.md)
   The title to display for the user’s location annotation.
-- [var subtitle: String?](mkuserlocation/subtitle.md)
+- [var subtitle: String?](./mkuserlocation/subtitle.md)
   The subtitle to display for the user’s location annotation.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MKAnnotation](mkannotation.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MKAnnotation](./mkannotation.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Converting a user’s location to a descriptive placemark](converting-a-user-s-location-to-a-descriptive-placemark.md)
+### User location
+- [Converting a user’s location to a descriptive placemark](./converting-a-user-s-location-to-a-descriptive-placemark.md)
   Transform the user’s location that displays on a map into an informative textual description by reverse geocoding.
-- [class MKUserLocationView](mkuserlocationview.md)
+- [class MKUserLocationView](./mkuserlocationview.md)
   A configurable annotation that shows the user’s location using the default MapKit style.
 
 

@@ -1,7 +1,8 @@
 # interstitials
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 An array of `interstitial` objects.
 
@@ -10,13 +11,13 @@ An array of `interstitial` objects.
 
 ## Declaration
 
-```swift
+```
 attribute Array interstitials;
 ```
 
 #### Discussion
 
-An interstitial object defines a point within a `MediaItem` object where you can insert another media item; for example, a short ad. Each interstitial object in the array contains two keys: `starttime` and `duration`. The `starttime` is the length of time from the beginning of a media item, in seconds. The `duration` is the length of the interstitial, in seconds. Both keys are required. A common use for these objects is to define when and where ads are to be played during a stream. [`Listing 1`](mediaitem/1627341-interstitials#1943545.md) shows a complete TVMLKit JS example for incorporating interstitials. A single interstitial is defined. In addition, an event listener is created that prevents users from fast-forwarding or rewinding during the duration of the interstitial.
+An interstitial object defines a point within a `MediaItem` object where you can insert another media item; for example, a short ad. Each interstitial object in the array contains two keys: `starttime` and `duration`. The `starttime` is the length of time from the beginning of a media item, in seconds. The `duration` is the length of the interstitial, in seconds. Both keys are required. A common use for these objects is to define when and where ads are to be played during a stream. [Listing 1](./api-1627341-interstitials.md#1943545) shows a complete TVMLKit JS example for incorporating interstitials. A single interstitial is defined. In addition, an event listener is created that prevents users from fast-forwarding or rewinding during the duration of the interstitial.
 
 ```javascript
 var baseURL;
@@ -50,9 +51,10 @@ App.onExit = function() {
 
 ## See Also
 
-- [highlightGroups](mediaitem/1627413-highlightgroups.md)
+### Setting Timing Options
+- [highlightGroups](./api-1627413-highlightgroups.md)
   An array of highlight groups, with each group containing a list of highlights.
-- [resumeTime](mediaitem/1627400-resumetime.md)
+- [resumeTime](./api-1627400-resumetime.md)
   The number of seconds from the beginning of the item at which the item begins playing.
 
 

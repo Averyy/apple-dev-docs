@@ -1,7 +1,8 @@
 # minValue
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 var minValue: CGFloat { get }
+```
+
+```objc
+@property (readonly) CGFloat minValue;
 ```
 
 

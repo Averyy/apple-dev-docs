@@ -1,11 +1,12 @@
 # init(item_type:legacy:managed:uid:item_url:app_url:)
 
 **Framework**: Endpoint Security  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 

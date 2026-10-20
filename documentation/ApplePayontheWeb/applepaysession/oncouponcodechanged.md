@@ -1,7 +1,8 @@
 # oncouponcodechanged
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An event handler called by the system when the user enters or updates a coupon code.
 
@@ -11,13 +12,13 @@ An event handler called by the system when the user enters or updates a coupon c
 
 ## Declaration
 
-```swift
+```
 attribute EventHandler oncouponcodechanged;
 ```
 
 #### Discussion
 
-Set this attribute to a function with one parameter that contains an [`ApplePayCouponCodeChangedEvent`](applepaycouponcodechangedevent.md). This function processes the coupon code update, and then calls [`completeCouponCodeChange`](applepaysession/completecouponcodechange.md) with the results.
+Set this attribute to a function with one parameter that contains an [`ApplePayCouponCodeChangedEvent`](../applepaycouponcodechangedevent.md). This function processes the coupon code update, and then calls [`completeCouponCodeChange`](./completecouponcodechange.md) with the results.
 
 The code below shows adding a listener for the coupon code changed event to the Apple Pay session:
 
@@ -41,11 +42,12 @@ session.addEventListener("couponcodechanged", function(event) {
 
 ## See Also
 
-- [completeCouponCodeChange](applepaysession/completecouponcodechange.md)
+### Handling coupons
+- [completeCouponCodeChange](./completecouponcodechange.md)
   Completes the entry of a coupon code with an update.
-- [ApplePayCouponCodeChangedEvent](applepaycouponcodechangedevent.md)
+- [ApplePayCouponCodeChangedEvent](../applepaycouponcodechangedevent.md)
   An event object that contains the coupon code entered by the user.
-- [ApplePayCouponCodeUpdate](applepaycouponcodeupdate.md)
+- [ApplePayCouponCodeUpdate](../applepaycouponcodeupdate.md)
   A dictionary that contains the updated transaction details for responding to a coupon changed event.
 
 

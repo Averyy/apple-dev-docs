@@ -1,12 +1,13 @@
 # browserAccessibilityDetailsElements
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- macOS ?+
+- macOS
 - tvOS 27.0+
 - visionOS 27.0+
 - watchOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var browserAccessibilityDetailsElements: [NSObject] { get set }
+```
+
+```objc
+@property (nonatomic, strong) NSArray<NSObject *> * browserAccessibilityDetailsElements;
 ```
 
 #### Discussion

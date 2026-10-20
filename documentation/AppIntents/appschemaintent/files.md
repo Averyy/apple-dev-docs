@@ -1,7 +1,8 @@
 # files
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of intent schemas in the files domain.
 
@@ -17,6 +18,8 @@ The collection of intent schemas in the files domain.
 ```swift
 static var files: some AppSchema.FilesIntent { get }
 ```
+
+Available when `Self` is `AppSchema.Intent`.
 
 
 ---

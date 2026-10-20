@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct nfs_exphandle {
     ...
 };
@@ -17,12 +17,12 @@ struct nfs_exphandle {
 ## Topics
 
 ### Instance Properties
-- [nxh_expid](nfs_exphandle/3944795-nxh_expid.md)
-- [nxh_fidlen](nfs_exphandle/3944796-nxh_fidlen.md)
-- [nxh_flags](nfs_exphandle/3944797-nxh_flags.md)
-- [nxh_fsid](nfs_exphandle/3944798-nxh_fsid.md)
-- [nxh_reserved](nfs_exphandle/3944799-nxh_reserved.md)
-- [nxh_version](nfs_exphandle/3944800-nxh_version.md)
+- [nxh_expid](./nfs_exphandle/api-3944795-nxh_expid.md)
+- [nxh_fidlen](./nfs_exphandle/api-3944796-nxh_fidlen.md)
+- [nxh_flags](./nfs_exphandle/api-3944797-nxh_flags.md)
+- [nxh_fsid](./nfs_exphandle/api-3944798-nxh_fsid.md)
+- [nxh_reserved](./nfs_exphandle/api-3944799-nxh_reserved.md)
+- [nxh_version](./nfs_exphandle/api-3944800-nxh_version.md)
 
 
 ---

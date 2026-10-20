@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns true only if `corner` is a member of the calling set.
 

@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 9.3+
@@ -20,11 +21,12 @@ static var errorDomain: String { get }
 
 ## See Also
 
-- [let MPErrorDomain: String](mperrordomain.md)
+### Inspecting an error
+- [let MPErrorDomain: String](../mperrordomain.md)
   The Media Player framework error domain.
-- [MPError.Code](mperror/code.md)
+- [MPError.Code](./code.md)
   An enumeration that represents error codes for framework operations.
-- [Error constants](error-constants.md)
+- [Error constants](../error-constants.md)
   Error code constants for framework operations.
 
 

@@ -1,24 +1,26 @@
 # ctl_getenqueuereadable
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 errno_t ctl_getenqueuereadable(kern_ctl_ref kctlref, u_int32_t unit, u_int32_t *difference);
 ```
 
 ## See Also
 
-- [ctl_deregister](1809161-ctl_deregister.md)
-- [ctl_enqueuedata](1809168-ctl_enqueuedata.md)
-- [ctl_enqueuembuf](1809171-ctl_enqueuembuf.md)
-- [ctl_getenqueuespace](1809173-ctl_getenqueuespace.md)
-- [ctl_register](1809176-ctl_register.md)
+### control
+- [ctl_deregister](./api-1809161-ctl_deregister.md)
+- [ctl_enqueuedata](./api-1809168-ctl_enqueuedata.md)
+- [ctl_enqueuembuf](./api-1809171-ctl_enqueuembuf.md)
+- [ctl_getenqueuespace](./api-1809173-ctl_getenqueuespace.md)
+- [ctl_register](./api-1809176-ctl_register.md)
 
 
 ---

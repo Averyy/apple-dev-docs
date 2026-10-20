@@ -1,25 +1,27 @@
 # OSDataGetLength
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 size_t OSDataGetLength(OSDataPtr obj);
 ```
 
 ## See Also
 
-- [getCapacity](osdata/getcapacity.md)
+### Inspecting a Data Object
+- [getCapacity](./osdata/getcapacity.md)
   Returns length of preallocated capacity.
-- [getLength](osdata/getlength.md)
+- [getLength](./osdata/getlength.md)
   Returns length of data present.
 
 

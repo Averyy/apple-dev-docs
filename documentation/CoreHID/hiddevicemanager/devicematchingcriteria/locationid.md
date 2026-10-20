@@ -1,7 +1,8 @@
 # locationID
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location ID for the device.
 

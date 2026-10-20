@@ -1,7 +1,8 @@
 # storeLibraryInMetalPipelinesScript
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 static var storeLibraryInMetalPipelinesScript: MTLStitchedLibraryOptions { get }
+```
+
+```c
+MTLStitchedLibraryOptionStoreLibraryInMetalPipelinesScript
 ```
 
 

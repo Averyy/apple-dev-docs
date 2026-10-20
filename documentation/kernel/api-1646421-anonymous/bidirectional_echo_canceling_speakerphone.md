@@ -1,14 +1,15 @@
 # BIDIRECTIONAL_ECHO_CANCELING_SPEAKERPHONE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 BIDIRECTIONAL_ECHO_CANCELING_SPEAKERPHONE = 0x0405
 ```
 

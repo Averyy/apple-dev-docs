@@ -1,7 +1,8 @@
 # AUGenericView
 
 **Framework**: CoreAudioKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A view that provides a generic user interface for a Cocoa audio unit.
 
@@ -14,54 +15,59 @@ A view that provides a generic user interface for a Cocoa audio unit.
 class AUGenericView
 ```
 
+```objc
+@interface AUGenericView : NSView
+```
+
 ## Topics
 
 ### Creating a Generic View
-- [init(audioUnit: AudioUnit)](augenericview/init(audiounit:).md)
+- [init(audioUnit: AudioUnit)](./augenericview/init%28audiounit%29.md)
   Creates a generic view for an audio unit, setting all display flags.
-- [init(audioUnit: AudioUnit, displayFlags: AUGenericViewDisplayFlags)](augenericview/init(audiounit:displayflags:).md)
+- [init(audioUnit: AudioUnit, displayFlags: AUGenericViewDisplayFlags)](./augenericview/init%28audiounit,displayflags%29.md)
   Initializes a generic view for an audio unit, setting specific display flags.
 ### Configuring a View
-- [var showsExpertParameters: Bool](augenericview/showsexpertparameters.md)
+- [var showsExpertParameters: Bool](./augenericview/showsexpertparameters.md)
   Indicates whether or not controls for expert audio unit parameters are displayed in the generic view.
 ### Accessing the Audio Unit
-- [var audioUnit: AudioUnit](augenericview/audiounit.md)
+- [var audioUnit: AudioUnit](./augenericview/audiounit.md)
   The audio unit associated with the generic view.
 
 ## Relationships
 
 ### Inherits From
-- [NSView](../appkit/nsview.md)
+- [NSView](../AppKit/nsview.md)
 ### Conforms To
-- [AUCustomViewPersistentData](aucustomviewpersistentdata.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
-- [NSAnimatablePropertyContainer](../appkit/nsanimatablepropertycontainer.md)
-- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSDraggingDestination](../appkit/nsdraggingdestination.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AUCustomViewPersistentData](./aucustomviewpersistentdata.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](../AppKit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../AppKit/nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](../AppKit/nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](../AppKit/nsappearancecustomization.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSDraggingDestination](../AppKit/nsdraggingdestination.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../AppKit/nsuserinterfaceitemidentification.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AUViewController](auviewcontroller.md)
+### Audio Units
+- [class AUViewController](./auviewcontroller.md)
   The base class to extend when creating a custom user interface for an audio unit.
-- [class AUAudioUnitViewConfiguration](auaudiounitviewconfiguration.md)
+- [class AUAudioUnitViewConfiguration](./auaudiounitviewconfiguration.md)
   A configuration object that describes how to present the audio unit’s user interface.
-- [class AUPannerView](aupannerview.md)
+- [class AUPannerView](./aupannerview.md)
   A view that provides a specialized user interface for a Cocoa-based panner audio unit.
-- [protocol AUCustomViewPersistentData](aucustomviewpersistentdata.md)
+- [protocol AUCustomViewPersistentData](./aucustomviewpersistentdata.md)
   A protocol that defines the methods an Audio Unit host calls to manage view data.
 
 

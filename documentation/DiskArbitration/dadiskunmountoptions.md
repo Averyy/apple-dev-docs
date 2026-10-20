@@ -1,7 +1,8 @@
 # DADiskUnmountOptions
 
 **Framework**: Disk Arbitration  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Options for DADiskUnmount().
 
@@ -15,27 +16,32 @@ Options for DADiskUnmount().
 typealias DADiskUnmountOptions = UInt32
 ```
 
+```c
+typedef UInt32 DADiskUnmountOptions;
+```
+
 ## Topics
 
 ### Constants
-- [var kDADiskUnmountOptionForce: Int](kdadiskunmountoptionforce.md)
+- [var kDADiskUnmountOptionForce: Int](./kdadiskunmountoptionforce.md)
   Unmount the volume even if files are still active.
-- [var kDADiskUnmountOptionWhole: Int](kdadiskunmountoptionwhole.md)
+- [var kDADiskUnmountOptionWhole: Int](./kdadiskunmountoptionwhole.md)
   Unmount the volumes tied to the whole disk object.
 
 ## See Also
 
-- [typealias DADiskClaimOptions](dadiskclaimoptions.md)
+### Data Types
+- [typealias DADiskClaimOptions](./dadiskclaimoptions.md)
   Options for DADiskClaim().
-- [typealias DADiskEjectOptions](dadiskejectoptions.md)
+- [typealias DADiskEjectOptions](./dadiskejectoptions.md)
   Options for DADiskEject().
-- [typealias DADiskMountOptions](dadiskmountoptions.md)
+- [typealias DADiskMountOptions](./dadiskmountoptions.md)
   Options for DADiskMount().
-- [typealias DADiskOptions](dadiskoptions.md)
+- [typealias DADiskOptions](./dadiskoptions.md)
   Options for DADiskGetOptions() and DADiskSetOptions().
-- [typealias DADiskRenameOptions](dadiskrenameoptions.md)
+- [typealias DADiskRenameOptions](./dadiskrenameoptions.md)
   Options for DADiskRename().
-- [typealias DAReturn](dareturn.md)
+- [typealias DAReturn](./dareturn.md)
   A return code.
 
 

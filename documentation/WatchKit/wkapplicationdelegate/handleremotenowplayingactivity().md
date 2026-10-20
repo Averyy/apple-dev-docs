@@ -1,7 +1,8 @@
 # handleRemoteNowPlayingActivity()
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the user plays audio in the corresponding iOS app.
 
@@ -14,6 +15,10 @@ Tells the delegate when the user plays audio in the corresponding iOS app.
 optional func handleRemoteNowPlayingActivity()
 ```
 
+```objc
+- (void) handleRemoteNowPlayingActivity;
+```
+
 #### Discussion
 
 Use this method to update your user interface and display information about the iOS app’s content.
@@ -22,7 +27,7 @@ When the user begins playing audio content on the corresponding iOS app, your wa
 
 To opt out of this autolaunch behavior, set the Opt out of Auto-launch Audio App (`PUICAutoLaunchAudioOptOut`) key in your watchOS app’s `Info.plist` file.
 
-![A screenshot showing the Opt out of Auto-launch Audio App key in the Info.plist editor.](/images/com.apple.watchkit/media-4024617@2x.png)
+![A screenshot showing the Opt out of Auto-launch Audio App key in the Info.plist editor.](https://developer.apple.com/tutorials/images/com.apple.watchkit/media-4024617@2x.png)
 
 
 ---

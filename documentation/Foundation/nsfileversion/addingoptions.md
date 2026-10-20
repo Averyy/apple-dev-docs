@@ -1,7 +1,8 @@
 # NSFileVersion.AddingOptions
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for adding a new file version.
 
@@ -20,28 +21,33 @@ Options for adding a new file version.
 struct AddingOptions
 ```
 
+```c
+enum NSFileVersionAddingOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [static var byMoving: NSFileVersion.AddingOptions](nsfileversion/addingoptions/bymoving.md)
+- [static var byMoving: NSFileVersion.AddingOptions](./addingoptions/bymoving.md)
 ### Initializers
-- [init(rawValue: UInt)](nsfileversion/addingoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./addingoptions/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [NSFileVersion.ReplacingOptions](nsfileversion/replacingoptions.md)
+### Constants
+- [NSFileVersion.ReplacingOptions](./replacingoptions.md)
   Options for replacing a file version.
 
 

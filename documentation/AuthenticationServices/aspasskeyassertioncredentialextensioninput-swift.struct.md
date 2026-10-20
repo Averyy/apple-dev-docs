@@ -1,7 +1,8 @@
 # ASPasskeyAssertionCredentialExtensionInput
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that encapsulates input for various WebAuthn extensions during passkey assertion.
 
@@ -21,21 +22,22 @@ struct ASPasskeyAssertionCredentialExtensionInput
 ## Topics
 
 ### Creating an assertion input
-- [init(largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput?, prf: ASAuthorizationPublicKeyCredentialPRFAssertionInput?)](aspasskeyassertioncredentialextensioninput-swift.struct/init(largeblob:prf:).md)
+- [init(largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput?, prf: ASAuthorizationPublicKeyCredentialPRFAssertionInput?)](./aspasskeyassertioncredentialextensioninput-swift.struct/init%28largeblob,prf%29.md)
   Creates a passkey assertion input.
-- [struct ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput](asauthorizationpublickeycredentiallargeblobassertioninput-swift.struct.md)
+- [struct ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput](./asauthorizationpublickeycredentiallargeblobassertioninput-swift.struct.md)
   A type that represents input for the binary large object extension in passkey assertion requests.
-- [struct ASAuthorizationPublicKeyCredentialPRFAssertionInput](asauthorizationpublickeycredentialprfassertioninput-swift.struct.md)
+- [struct ASAuthorizationPublicKeyCredentialPRFAssertionInput](./asauthorizationpublickeycredentialprfassertioninput-swift.struct.md)
   A type that represents input for the web authentication PRF extension in passkey assertion requests.
 ### Using inputs
-- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput?](aspasskeyassertioncredentialextensioninput-swift.struct/largeblob.md)
+- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput?](./aspasskeyassertioncredentialextensioninput-swift.struct/largeblob.md)
   Input for the WebAuthn large binary object extension in passkey assertion requests.
-- [var prf: ASAuthorizationPublicKeyCredentialPRFAssertionInput?](aspasskeyassertioncredentialextensioninput-swift.struct/prf.md)
+- [var prf: ASAuthorizationPublicKeyCredentialPRFAssertionInput?](./aspasskeyassertioncredentialextensioninput-swift.struct/prf.md)
   Input for the WebAuthn PRF extension in passkey assertion requests.
 
 ## See Also
 
-- [var extensionInput: ASPasskeyAssertionCredentialExtensionInput?](aspasskeycredentialrequestparameters/extensioninput-2edlv.md)
+### Working with WebAuthn extensions
+- [var extensionInput: ASPasskeyAssertionCredentialExtensionInput?](./aspasskeycredentialrequestparameters/extensioninput-2edlv.md)
   An input for WebAuthn extensions.
 
 

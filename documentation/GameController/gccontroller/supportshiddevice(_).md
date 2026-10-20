@@ -1,7 +1,8 @@
 # supportsHIDDevice(_:)
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether the framework supports the specified human interface device.
 
@@ -14,9 +15,13 @@ Returns a Boolean value that indicates whether the framework supports the specif
 class func supportsHIDDevice(_ device: IOHIDDevice) -> Bool
 ```
 
+```objc
++ (BOOL) supportsHIDDevice:(IOHIDDeviceRef) device;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the framework supports the device; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the framework supports the device; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -28,9 +33,10 @@ If the Game Controller framework supports the input device, you can use the Game
 
 ## See Also
 
-- [var isAttachedToDevice: Bool](gccontroller/isattachedtodevice.md)
+### Inspecting a controller
+- [var isAttachedToDevice: Bool](./isattachedtodevice.md)
   A Boolean value that indicates whether the controller closely integrates with the device.
-- [class var shouldMonitorBackgroundEvents: Bool](gccontroller/shouldmonitorbackgroundevents.md)
+- [class var shouldMonitorBackgroundEvents: Bool](./shouldmonitorbackgroundevents.md)
   A Boolean value that indicates whether the app needs to respond to controller events when it isn’t the frontmost app.
 
 

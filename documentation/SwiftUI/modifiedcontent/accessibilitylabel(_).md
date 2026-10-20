@@ -1,7 +1,8 @@
 # accessibilityLabel(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a label to the view that describes its contents.
 
@@ -19,6 +20,25 @@ Adds a label to the view that describes its contents.
 ```swift
 @export(implementation)
 nonisolated func accessibilityLabel(_ label: LocalizedStringResource) -> ModifiedContent<Content, Modifier>
+```
+
+Available when `Modifier` is `AccessibilityAttachmentModifier`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+func accessibilityLabel(_ label: Text) -> ModifiedContent<Content, Modifier>
+```
+
+```swift
+nonisolated
+func accessibilityLabel(_ labelKey: LocalizedStringKey) -> ModifiedContent<Content, Modifier>
+```
+
+```swift
+nonisolated
+func accessibilityLabel<S>(_ label: S) -> ModifiedContent<Content, Modifier> where S : StringProtocol
 ```
 
 #### Discussion

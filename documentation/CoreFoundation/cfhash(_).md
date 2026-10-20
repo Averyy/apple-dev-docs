@@ -1,18 +1,19 @@
 # CFHash(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a code that can be used to identify an object in a hashing structure.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,17 @@ Returns a code that can be used to identify an object in a hashing structure.
 func CFHash(_ cf: CFTypeRef!) -> CFHashCode
 ```
 
+```c
+extern CFHashCode CFHash(CFTypeRef cf);
+```
+
 #### Return Value
 
-An integer of type [`CFHashCode`](cfhashcode.md) that represents a hashing value for `cf`.
+An integer of type [`CFHashCode`](./cfhashcode.md) that represents a hashing value for `cf`.
 
 #### Discussion
 
-Two objects that are equal (as determined by the [`CFEqual(_:_:)`](cfequal(_:_:).md) function) have the same hashing value. However, the converse is not true: two objects with the same hashing value might not be equal. That is, hashing values are not necessarily unique.
+Two objects that are equal (as determined by the [`CFEqual(_:_:)`](./cfequal%28_,_%29.md) function) have the same hashing value. However, the converse is not true: two objects with the same hashing value might not be equal. That is, hashing values are not necessarily unique.
 
 The hashing value for an object might change from release to release or from platform to platform.
 

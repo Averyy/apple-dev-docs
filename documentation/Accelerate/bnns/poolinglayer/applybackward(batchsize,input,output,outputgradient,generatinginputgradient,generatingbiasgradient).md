@@ -1,7 +1,8 @@
 # applyBackward(batchSize:input:output:outputGradient:generatingInputGradient:generatingBiasGradient:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the layer backward to generate input gradients.
 
@@ -11,8 +12,10 @@ Applies the layer backward to generate input gradients.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -31,7 +34,8 @@ func applyBackward(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDA
 
 ## See Also
 
-- [func apply(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor) throws](bnns/poolinglayer/apply(batchsize:input:output:).md)
+### Applying a Pooling Layer
+- [func apply(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor) throws](./apply%28batchsize,input,output%29.md)
   Applies the layer to a set of input objects, writing the result to a set of output objects.
 
 

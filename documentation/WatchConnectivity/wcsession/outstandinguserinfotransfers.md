@@ -1,7 +1,8 @@
 # outstandingUserInfoTransfers
 
 **Framework**: Watch Connectivity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of in-progress data transfers.
 
@@ -18,13 +19,18 @@ An array of in-progress data transfers.
 var outstandingUserInfoTransfers: [WCSessionUserInfoTransfer] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<WCSessionUserInfoTransfer *> * outstandingUserInfoTransfers;
+```
+
 #### Discussion
 
-This property contains the [`WCSessionUserInfoTransfer`](wcsessionuserinfotransfer.md) objects representing the data that you queued using the [`transferUserInfo(_:)`](wcsession/transferuserinfo(_:).md) or [`transferCurrentComplicationUserInfo(_:)`](wcsession/transfercurrentcomplicationuserinfo(_:).md) methods. Use the objects in this array to cancel specific data transfers.
+This property contains the [`WCSessionUserInfoTransfer`](../wcsessionuserinfotransfer.md) objects representing the data that you queued using the [`transferUserInfo(_:)`](./transferuserinfo%28_%29.md) or [`transferCurrentComplicationUserInfo(_:)`](./transfercurrentcomplicationuserinfo%28_%29.md) methods. Use the objects in this array to cancel specific data transfers.
 
 ## See Also
 
-- [func transferUserInfo([String : Any]) -> WCSessionUserInfoTransfer](wcsession/transferuserinfo(_:).md)
+### Transferring Data in the Background
+- [func transferUserInfo([String : Any]) -> WCSessionUserInfoTransfer](./transferuserinfo%28_%29.md)
   Sends the specified data dictionary to the counterpart.
 
 

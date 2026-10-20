@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The localized name for the element.
@@ -18,6 +19,10 @@ The localized name for the element.
 
 ```swift
 var localizedName: String? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) NSString * localizedName;
 ```
 
 

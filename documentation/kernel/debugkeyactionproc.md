@@ -1,14 +1,15 @@
 # DebugKeyActionProc
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.12.2+
 
 ## Declaration
 
-```swift
+```c
 typedef void (*DebugKeyActionProc)(IOHIDEventService *self, void *parameter);
 ```
 

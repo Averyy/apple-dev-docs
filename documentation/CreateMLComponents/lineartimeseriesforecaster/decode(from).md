@@ -1,7 +1,8 @@
 # decode(from:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Decodes a previously fitted model.
 
@@ -19,6 +20,8 @@ Decodes a previously fitted model.
 ```swift
 func decode(from decoder: inout any EstimatorDecoder) throws -> LinearTimeSeriesForecaster<Scalar>.Transformer
 ```
+
+Available when `Scalar` conforms to `MLShapedArrayScalar` and `BinaryFloatingPoint`.
 
 
 ---

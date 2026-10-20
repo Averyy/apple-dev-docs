@@ -1,7 +1,8 @@
 # kIOUSBDeviceRequestRecipientEndpoint
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The recipient endpoint.
 
@@ -10,7 +11,7 @@ The recipient endpoint.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBDeviceRequestRecipientEndpoint = (kIOUSBDeviceRequestRecipientValueEndpoint << kIOUSBDeviceRequestRecipientPhase)
 ```
 

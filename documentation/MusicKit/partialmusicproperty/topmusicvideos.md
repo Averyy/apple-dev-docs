@@ -1,7 +1,8 @@
 # topMusicVideos
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the association property that returns a collection of the artist’s top music videos.
 
@@ -19,6 +20,8 @@ An identifier for the association property that returns a collection of the arti
 ```swift
 static let topMusicVideos: MusicRelationshipProperty<Artist, MusicVideo>
 ```
+
+Available when `Root` is `Artist`.
 
 
 ---

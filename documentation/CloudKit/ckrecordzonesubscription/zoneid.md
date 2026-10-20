@@ -1,7 +1,8 @@
 # zoneID
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ID of the record zone that the subscription queries.
 
@@ -21,6 +22,10 @@ The ID of the record zone that the subscription queries.
 var zoneID: CKRecordZone.ID { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) CKRecordZoneID * zoneID;
+```
+
 #### Discussion
 
 This property applies to query-based subscriptions and zone-based subscriptions. Specifying a record zone ID limits the scope of the query to only the records in that zone. For zone-based subscriptions, the query includes all records in the specified record zone. For a query-based subscription, the query includes only records of a specific type in the specified record zone.
@@ -29,7 +34,8 @@ For zone-based subscriptions, CloudKit sets this property’s value automaticall
 
 ## See Also
 
-- [var recordType: CKRecord.RecordType?](ckrecordzonesubscription/recordtype-1fuqo.md)
+### Accessing the Subscription Metadata
+- [var recordType: CKRecord.RecordType?](./recordtype-1fuqo.md)
   The type of record that the subscription queries.
 
 

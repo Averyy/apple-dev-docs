@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/optimizers/_autosummary/
 
 # mlx.optimizers.Muon
 
-**
-
-- [.rst](../../../_sources/python/optimizers/_autosummary/mlx.optimizers.Muon.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.optimizers.Muon
-
- Table of contents 
-
-## Contents
-
-# mlx.optimizers.Muon
-
 **class Muon(*learning_rate: float | Callable[[array], array]*, *momentum: float = 0.95*, *weight_decay: float = 0.01*, *nesterov: bool = True*, *ns_steps: int = 5*)**
 : The Muon optimizer.
 Our Muon (MomentUm Orthogonalized by Newton-schulz) optimizer follows the
@@ -43,7 +16,7 @@ Note
 
 Muon may be sub-optimal for the embedding layer, the final fully
 connected layer, or any 0D/1D parameters. Those should be optimized
-by a different method (e.g., [AdamW](mlx.optimizers.AdamW.html#mlx.optimizers.AdamW)).
+by a different method (e.g., [AdamW](mlx.optimizers.AdamW.md#mlx.optimizers.AdamW)).
 For 4D convolutional filters, it works by flattening their last
 dimensions.
 
@@ -67,5 +40,3 @@ Performs the Muon parameter update
 
 `init_single`(parameter, state)
 Initialize optimizer state
-
-** Contents

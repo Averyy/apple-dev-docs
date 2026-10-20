@@ -1,7 +1,8 @@
 # SetTransportType
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the transport type of the IOUserVideoBox.
 
@@ -10,7 +11,7 @@ Sets the transport type of the IOUserVideoBox.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetTransportType(IOUserVideoTransportType in_transport_type);
 ```
 
@@ -24,9 +25,10 @@ Drivers can change the transport type of the box dynamically. The object sends a
 
 ## See Also
 
-- [GetTransportType](iouservideobox/gettransporttype.md)
+### Working with transport types
+- [GetTransportType](./gettransporttype.md)
   Gets the transport type of the video box.
-- [IOUserVideoTransportType](videodriverkit/iouservideotransporttype.md)
+- [IOUserVideoTransportType](../videodriverkit-page/iouservideotransporttype.md)
   The transport type of a video stream.
 
 

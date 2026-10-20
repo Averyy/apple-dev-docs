@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var nmTypErr: Int](nmtyperr.md)
+- [var nmTypErr: Int](../../nmtyperr.md)
 
 
 ---

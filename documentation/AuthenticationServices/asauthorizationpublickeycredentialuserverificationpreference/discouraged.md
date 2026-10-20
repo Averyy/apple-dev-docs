@@ -1,7 +1,8 @@
 # discouraged
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The relying party discourages user verification.
 
@@ -19,11 +20,16 @@ The relying party discourages user verification.
 static let discouraged: ASAuthorizationPublicKeyCredentialUserVerificationPreference
 ```
 
+```c
+extern ASAuthorizationPublicKeyCredentialUserVerificationPreference const ASAuthorizationPublicKeyCredentialUserVerificationPreferenceDiscouraged;
+```
+
 ## See Also
 
-- [static let preferred: ASAuthorizationPublicKeyCredentialUserVerificationPreference](asauthorizationpublickeycredentialuserverificationpreference/preferred.md)
+### Getting preferences
+- [static let preferred: ASAuthorizationPublicKeyCredentialUserVerificationPreference](./preferred.md)
   The relying party prefers user verification.
-- [static let required: ASAuthorizationPublicKeyCredentialUserVerificationPreference](asauthorizationpublickeycredentialuserverificationpreference/required.md)
+- [static let required: ASAuthorizationPublicKeyCredentialUserVerificationPreference](./required.md)
   The relying party requires user verification.
 
 

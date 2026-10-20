@@ -1,7 +1,8 @@
 # HMCharacteristicValuePositionState
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the position states of an accessory like a door, window, awning, or window covering.
 
@@ -19,27 +20,31 @@ Possible values for the position states of an accessory like a door, window, awn
 enum HMCharacteristicValuePositionState
 ```
 
+```c
+enum HMCharacteristicValuePositionState : NSInteger;
+```
+
 ## Topics
 
 ### Position States
-- [HMCharacteristicValuePositionState.closing](hmcharacteristicvaluepositionstate/closing.md)
+- [HMCharacteristicValuePositionState.closing](./hmcharacteristicvaluepositionstate/closing.md)
   The position is moving towards minimum value.
-- [HMCharacteristicValuePositionState.opening](hmcharacteristicvaluepositionstate/opening.md)
+- [HMCharacteristicValuePositionState.opening](./hmcharacteristicvaluepositionstate/opening.md)
   The position is moving towards maximum value.
-- [HMCharacteristicValuePositionState.stopped](hmcharacteristicvaluepositionstate/stopped.md)
+- [HMCharacteristicValuePositionState.stopped](./hmcharacteristicvaluepositionstate/stopped.md)
   The accessory isn’t moving.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluepositionstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluepositionstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

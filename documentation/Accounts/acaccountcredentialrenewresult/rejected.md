@@ -1,7 +1,8 @@
 # ACAccountCredentialRenewResult.rejected
 
 **Framework**: Accounts  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Renewal failed because the user revoked your access to their account.
 
@@ -17,11 +18,16 @@ Renewal failed because the user revoked your access to their account.
 case rejected
 ```
 
+```c
+ACAccountCredentialRenewResultRejected
+```
+
 ## See Also
 
-- [ACAccountCredentialRenewResult.renewed](acaccountcredentialrenewresult/renewed.md)
+### Constants
+- [ACAccountCredentialRenewResult.renewed](./renewed.md)
   The account’s credentials have been renewed and are now associated with the account.
-- [ACAccountCredentialRenewResult.failed](acaccountcredentialrenewresult/failed.md)
+- [ACAccountCredentialRenewResult.failed](./failed.md)
   A non-user-initiated cancel of the prompt.
 
 

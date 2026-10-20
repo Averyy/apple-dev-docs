@@ -1,7 +1,8 @@
 # clusterUnitTestingAttributeInt32sID
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 static var clusterUnitTestingAttributeInt32sID: MTRAttributeIDType { get }
+```
+
+```c
+MTRAttributeIDTypeClusterUnitTestingAttributeInt32sID
 ```
 
 

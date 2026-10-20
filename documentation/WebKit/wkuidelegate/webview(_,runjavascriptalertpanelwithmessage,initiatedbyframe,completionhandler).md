@@ -1,7 +1,8 @@
 # webView(_:runJavaScriptAlertPanelWithMessage:initiatedByFrame:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays a JavaScript alert panel.
 
@@ -15,7 +16,15 @@ Displays a JavaScript alert panel.
 ## Declaration
 
 ```swift
+optional func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping @MainActor @Sendable () -> Void)
+```
+
+```swift
 optional func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo) async
+```
+
+```objc
+- (void) webView:(WKWebView *) webView runJavaScriptAlertPanelWithMessage:(NSString *) message initiatedByFrame:(WKFrameInfo *) frame completionHandler:(void (^)(void)) completionHandler;
 ```
 
 #### Discussion
@@ -31,13 +40,14 @@ For user security, implementations of this method should call attention to the f
 
 ## See Also
 
-- [func webView(WKWebView, runJavaScriptConfirmPanelWithMessage: String, initiatedByFrame: WKFrameInfo, completionHandler: (Bool) -> Void)](wkuidelegate/webview(_:runjavascriptconfirmpanelwithmessage:initiatedbyframe:completionhandler:).md)
+### Displaying UI panels
+- [func webView(WKWebView, runJavaScriptConfirmPanelWithMessage: String, initiatedByFrame: WKFrameInfo, completionHandler: (Bool) -> Void)](./webview%28_,runjavascriptconfirmpanelwithmessage,initiatedbyframe,completionhandler%29.md)
   Displays a JavaScript confirm panel.
-- [func webView(WKWebView, runJavaScriptTextInputPanelWithPrompt: String, defaultText: String?, initiatedByFrame: WKFrameInfo, completionHandler: (String?) -> Void)](wkuidelegate/webview(_:runjavascripttextinputpanelwithprompt:defaulttext:initiatedbyframe:completionhandler:).md)
+- [func webView(WKWebView, runJavaScriptTextInputPanelWithPrompt: String, defaultText: String?, initiatedByFrame: WKFrameInfo, completionHandler: (String?) -> Void)](./webview%28_,runjavascripttextinputpanelwithprompt,defaulttext,initiatedbyframe,completionhandler%29.md)
   Displays a JavaScript text input panel.
-- [func webView(WKWebView, showLockdownModeFirstUseMessage: String, completionHandler: (WKDialogResult) -> Void)](wkuidelegate/webview(_:showlockdownmodefirstusemessage:completionhandler:).md)
+- [func webView(WKWebView, showLockdownModeFirstUseMessage: String, completionHandler: (WKDialogResult) -> Void)](./webview%28_,showlockdownmodefirstusemessage,completionhandler%29.md)
   Displays a custom Lockdown Mode first use message.
-- [enum WKDialogResult](wkdialogresult.md)
+- [enum WKDialogResult](../wkdialogresult.md)
   An enumeration that lists the possible ways a delegate handled displaying a custom Lockdown Mode first use dialog.
 
 

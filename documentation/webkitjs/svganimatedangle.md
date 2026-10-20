@@ -1,7 +1,8 @@
 # SVGAnimatedAngle
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,15 +10,15 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGAnimatedAngle
 ```
 
 ## Topics
 
 ### Instance Properties
-- [animVal](svganimatedangle/1633392-animval.md)
-- [baseVal](svganimatedangle/1634019-baseval.md)
+- [animVal](./svganimatedangle/api-1633392-animval.md)
+- [baseVal](./svganimatedangle/api-1634019-baseval.md)
 
 
 ---

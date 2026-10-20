@@ -1,7 +1,8 @@
 # init(MLModel:)
 
 **Framework**: Sound Analysis  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+

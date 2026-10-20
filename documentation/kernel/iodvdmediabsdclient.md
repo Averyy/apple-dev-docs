@@ -1,40 +1,42 @@
 # IODVDMediaBSDClient
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```cpp
 class IODVDMediaBSDClient : IOMediaBSDClient
 ```
 
 ## Topics
 
 ### Instance Methods
-- [- getMetaClass](iodvdmediabsdclient/1563326-getmetaclass.md)
-- [- getProvider](iodvdmediabsdclient/1563354-getprovider.md)
-- [- ioctl](iodvdmediabsdclient/1563348-ioctl.md)
+- [- getMetaClass](./iodvdmediabsdclient/api-1563326-getmetaclass.md)
+- [- getProvider](./iodvdmediabsdclient/api-1563354-getprovider.md)
+- [- ioctl](./iodvdmediabsdclient/api-1563348-ioctl.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOMediaBSDClient](iomediabsdclient.md)
+- [IOMediaBSDClient](./iomediabsdclient.md)
 
 ## See Also
 
-- [IOCDMedia](iocdmedia.md)
+### Data Storage
+- [IOCDMedia](./iocdmedia.md)
   The IOCDMedia class is a random-access disk device abstraction for CDs.
-- [IOBDMedia](iobdmedia.md)
+- [IOBDMedia](./iobdmedia.md)
   The IOBDMedia class is a random-access disk device abstraction for BDs.
-- [IOMedia](iomedia.md)
+- [IOMedia](./iomedia.md)
   A random-access disk device abstraction.
-- [IOCDMediaBSDClient](iocdmediabsdclient.md)
-- [IOCDPartitionScheme](iocdpartitionscheme.md)
-- [IODVDMedia](iodvdmedia.md)
+- [IOCDMediaBSDClient](./iocdmediabsdclient.md)
+- [IOCDPartitionScheme](./iocdpartitionscheme.md)
+- [IODVDMedia](./iodvdmedia.md)
   The IODVDMedia class is a random-access disk device abstraction for DVDs.
 
 

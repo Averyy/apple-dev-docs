@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/updatable-tiny-drawi
 
 # Pipeline Classifier
 
-**
-
-- [.md](../_sources/source/updatable-tiny-drawing-classifier-pipeline-model.md)
-- **
-
-.pdf
-
-**
-
-# Pipeline Classifier
-
- Table of contents 
-
-## Contents
-
-# Pipeline Classifier
-
 This example creates a model which can be used to train a simple drawing or sketch classifier based on user examples. The model is a pipeline composed of a drawing-embedding model and a nearest-neighbor classifier.
 
 The model is updatable and starts off empty, meaning that the nearest-neighbor classifier has no examples or labels. Before updating with training examples, the model predicts “unknown” for all input.
@@ -30,8 +13,11 @@ The model is updatable and starts off empty, meaning that the nearest-neighbor c
 The input to the model is a 28 x 28 grayscale drawing. The background is expected to be black (`0`), while the strokes of the drawing should be rendered as white (`255`). Right-click these 28 x 28 images for the following example:
 
 - Drawing of a star:
+![Drawing of a star](https://apple.github.io/coremltools/docs-guides/_images/star28x28.png)
 - Drawing of a heart:
+![Drawing of a heart](https://apple.github.io/coremltools/docs-guides/_images/heart28x28.png)
 - Drawing of 5:
+![Drawing of 5](https://apple.github.io/coremltools/docs-guides/_images/five28x28.png)
 
 ## Get the Embedding Model
 
@@ -114,40 +100,59 @@ knn_spec.description.output[1].shortDescription = 'Probabilities / score for eac
 The last step is to create the pipeline model and insert the feature extractor and the nearest-neighbor classifier. The model will be set to be updatable. Follow these steps:
 
 1. Create the spec, set it to be updatable, and set the specification version:
-pipeline_spec = coremltools.proto.Model_pb2.Model()
-pipeline_spec.specificationVersion = coremltools._MINIMUM_UPDATABLE_SPEC_VERSION
-pipeline_spec.isUpdatable = True
+
+   ```
+   pipeline_spec = coremltools.proto.Model_pb2.Model()
+   pipeline_spec.specificationVersion = coremltools._MINIMUM_UPDATABLE_SPEC_VERSION
+   pipeline_spec.isUpdatable = True
+   ```
 2. Set the inputs to the inputs from the embedding model:
-# Inputs are the inputs from the embedding model
-pipeline_spec.description.input.extend(embedding_spec.description.input[:])
+
+   ```
+   # Inputs are the inputs from the embedding model
+   pipeline_spec.description.input.extend(embedding_spec.description.input[:])
+   ```
 3. Set the outputs to the outputs from the classification model:
-# Outputs are the outputs from the classification model
-pipeline_spec.description.output.extend(knn_spec.description.output[:])
-pipeline_spec.description.predictedFeatureName = knn_spec.description.predictedFeatureName
-pipeline_spec.description.predictedProbabilitiesName = knn_spec.description.predictedProbabilitiesName
+
+   ```
+   # Outputs are the outputs from the classification model
+   pipeline_spec.description.output.extend(knn_spec.description.output[:])
+   pipeline_spec.description.predictedFeatureName = knn_spec.description.predictedFeatureName
+   pipeline_spec.description.predictedProbabilitiesName = knn_spec.description.predictedProbabilitiesName
+   ```
 4. Set the training inputs:
-# Training inputs
-pipeline_spec.description.trainingInput.extend([embedding_spec.description.input[0]])
-pipeline_spec.description.trainingInput[0].shortDescription = 'Example sketch'
-pipeline_spec.description.trainingInput.extend([knn_spec.description.output[0]])
-pipeline_spec.description.trainingInput[1].shortDescription = 'Associated true label of example sketch'
+
+   ```
+   # Training inputs
+   pipeline_spec.description.trainingInput.extend([embedding_spec.description.input[0]])
+   pipeline_spec.description.trainingInput[0].shortDescription = 'Example sketch'
+   pipeline_spec.description.trainingInput.extend([knn_spec.description.output[0]])
+   pipeline_spec.description.trainingInput[1].shortDescription = 'Associated true label of example sketch'
+   ```
 5. Provide the metadata:
-# Provide metadata
-pipeline_spec.description.metadata.author = 'Core ML Tools'
-pipeline_spec.description.metadata.license = 'MIT'
-pipeline_spec.description.metadata.shortDescription = ('An updatable model which can be used to train a tiny 28 x 28 drawing classifier based on user examples.'
-													   ' It uses a drawing embedding trained on the Quick, Draw! dataset (https://github.com/googlecreativelab/quickdraw-dataset)')
+
+   ```
+   # Provide metadata
+   pipeline_spec.description.metadata.author = 'Core ML Tools'
+   pipeline_spec.description.metadata.license = 'MIT'
+   pipeline_spec.description.metadata.shortDescription = ('An updatable model which can be used to train a tiny 28 x 28 drawing classifier based on user examples.'
+   													   ' It uses a drawing embedding trained on the Quick, Draw! dataset (https://github.com/googlecreativelab/quickdraw-dataset)')
+   ```
 6. Construct the pipeline by adding the embedding and the nearest-neighbor classifier:
-# Construct pipeline by adding the embedding and then the nearest neighbor classifier
-pipeline_spec.pipelineClassifier.pipeline.models.add().CopyFrom(embedding_spec)
-pipeline_spec.pipelineClassifier.pipeline.models.add().CopyFrom(knn_spec)
+
+   ```
+   # Construct pipeline by adding the embedding and then the nearest neighbor classifier
+   pipeline_spec.pipelineClassifier.pipeline.models.add().CopyFrom(embedding_spec)
+   pipeline_spec.pipelineClassifier.pipeline.models.add().CopyFrom(knn_spec)
+   ```
 7. Save the updated spec:
-# Save the updated spec.
-from coremltools.models import MLModel
-mlmodel = MLModel(pipeline_spec)
 
-output_path = './TinyDrawingClassifier.mlmodel'
-from coremltools.models.utils import save_spec
-mlmodel.save(output_path)
+   ```
+   # Save the updated spec.
+   from coremltools.models import MLModel
+   mlmodel = MLModel(pipeline_spec)
 
-** Contents
+   output_path = './TinyDrawingClassifier.mlmodel'
+   from coremltools.models.utils import save_spec
+   mlmodel.save(output_path)
+   ```

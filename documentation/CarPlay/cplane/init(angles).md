@@ -1,7 +1,8 @@
 # init(angles:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -12,6 +13,10 @@
 
 ```swift
 init(angles: [Measurement<UnitAngle>])
+```
+
+```objc
+- (instancetype) initWithAngles:(NSArray<NSMeasurement<NSUnitAngle *> *> *) angles;
 ```
 
 

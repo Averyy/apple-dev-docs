@@ -1,7 +1,8 @@
 # requiredSourceTrackIDs
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifiers of source video tracks that the compositor requires to compose frames for the instruction.
 
@@ -19,11 +20,16 @@ The identifiers of source video tracks that the compositor requires to compose f
 var requiredSourceTrackIDs: [NSValue] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSValue *> * requiredSourceTrackIDs;
+```
+
 ## See Also
 
-- [var requiredSourceSampleDataTrackIDs: [NSNumber]](avvideocompositioninstruction-swift.class/requiredsourcesampledatatrackids.md)
+### Identifying source tracks
+- [var requiredSourceSampleDataTrackIDs: [NSNumber]](./requiredsourcesampledatatrackids.md)
   The identifiers of source sample data tracks that the compositor requires to compose frames for the instruction.
-- [var passthroughTrackID: CMPersistentTrackID](avvideocompositioninstruction-swift.class/passthroughtrackid.md)
+- [var passthroughTrackID: CMPersistentTrackID](./passthroughtrackid.md)
   The track identifier from an instruction source frame.
 
 

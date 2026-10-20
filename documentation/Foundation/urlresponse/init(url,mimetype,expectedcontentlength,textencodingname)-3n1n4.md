@@ -1,7 +1,8 @@
 # init(URL:MIMEType:expectedContentLength:textEncodingName:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 2.0+

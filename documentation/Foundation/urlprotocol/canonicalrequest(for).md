@@ -1,7 +1,8 @@
 # canonicalRequest(for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a canonical version of the specified request.
 
@@ -20,6 +21,10 @@ Returns a canonical version of the specified request.
 class func canonicalRequest(for request: URLRequest) -> URLRequest
 ```
 
+```objc
++ (NSURLRequest *) canonicalRequestForRequest:(NSURLRequest *) request;
+```
+
 #### Return Value
 
 The canonical form of `request`.
@@ -28,7 +33,7 @@ The canonical form of `request`.
 
 It is up to each concrete protocol implementation to define what “canonical” means. A protocol should guarantee that the same input request always yields the same canonical form.
 
-Special consideration should be given when implementing this method, because the canonical form of a request is used to lookup objects in the URL cache, a process which performs equality checks between [`URLRequest`](urlrequest.md) instances.
+Special consideration should be given when implementing this method, because the canonical form of a request is used to lookup objects in the URL cache, a process which performs equality checks between [`URLRequest`](../urlrequest.md) instances.
 
 This is an abstract method and subclasses must provide an implementation.
 

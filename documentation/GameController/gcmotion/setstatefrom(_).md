@@ -1,7 +1,8 @@
 # setStateFrom(_:)
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies the input values from a specified motion profile to a snapshot of a motion profile.
 
@@ -19,21 +20,26 @@ Copies the input values from a specified motion profile to a snapshot of a motio
 func setStateFrom(_ motion: GCMotion)
 ```
 
+```objc
+- (void) setStateFromMotion:(GCMotion *) motion;
+```
+
 ## Parameters
 
 - `motion`: The motion profile to copy the input values from.
 
 ## See Also
 
-- [func setAttitude(GCQuaternion)](gcmotion/setattitude(_:).md)
+### Setting Snapshot Values
+- [func setAttitude(GCQuaternion)](./setattitude%28_%29.md)
   Sets the controller’s attitude.
-- [func setRotationRate(GCRotationRate)](gcmotion/setrotationrate(_:).md)
+- [func setRotationRate(GCRotationRate)](./setrotationrate%28_%29.md)
   Sets the controller’s rotation rate.
-- [func setAcceleration(GCAcceleration)](gcmotion/setacceleration(_:).md)
+- [func setAcceleration(GCAcceleration)](./setacceleration%28_%29.md)
   Sets the total acceleration of the controller that includes gravity and the user’s acceleration.
-- [func setGravity(GCAcceleration)](gcmotion/setgravity(_:).md)
+- [func setGravity(GCAcceleration)](./setgravity%28_%29.md)
   Sets the controller’s gravity data.
-- [func setUserAcceleration(GCAcceleration)](gcmotion/setuseracceleration(_:).md)
+- [func setUserAcceleration(GCAcceleration)](./setuseracceleration%28_%29.md)
   Sets the acceleration the user applies to the controller.
 
 

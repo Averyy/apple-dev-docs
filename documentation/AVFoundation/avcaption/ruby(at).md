@@ -1,7 +1,8 @@
 # ruby(at:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the ruby text at the index position.
 
@@ -28,11 +29,12 @@ A tuple that contains the ruby text and range to which it applies.
 
 ## See Also
 
-- [AVCaption.Ruby](avcaption/ruby.md)
+### Accessing advanced typography
+- [AVCaption.Ruby](./ruby.md)
   An object that presents ruby characters.
-- [func textCombine(at: String.Index) -> (AVCaption.TextCombine, Range<String.Index>)](avcaption/textcombine(at:).md)
+- [func textCombine(at: String.Index) -> (AVCaption.TextCombine, Range<String.Index>)](./textcombine%28at%29.md)
   Returns the text combine at the index position.
-- [AVCaption.TextCombine](avcaption/textcombine.md)
+- [AVCaption.TextCombine](./textcombine.md)
   The caption’s supported rendering policy options.
 
 

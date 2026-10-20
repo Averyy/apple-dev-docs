@@ -1,7 +1,8 @@
 # description
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of the path root.
 

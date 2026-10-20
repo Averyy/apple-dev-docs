@@ -1,7 +1,8 @@
 # asin(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the inverse sine operation to the input tensor elements.
 
@@ -17,6 +18,10 @@ Applies the inverse sine operation to the input tensor elements.
 
 ```swift
 func asin(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) asinWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

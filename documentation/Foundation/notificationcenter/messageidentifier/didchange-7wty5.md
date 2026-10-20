@@ -1,7 +1,8 @@
 # didChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -14,6 +15,8 @@
 ```swift
 static var didChange: NotificationCenter.BaseMessageIdentifier<UIPointerLockState.DidChangeMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<UIPointerLockState.DidChangeMessage>`.
 
 
 ---

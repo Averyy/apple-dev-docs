@@ -1,7 +1,8 @@
 # removeDependency(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the receiver’s dependence on the specified operation.
 
@@ -20,6 +21,10 @@ Removes the receiver’s dependence on the specified operation.
 func removeDependency(_ op: Operation)
 ```
 
+```objc
+- (void) removeDependency:(NSOperation *) op;
+```
+
 #### Discussion
 
 This method may change the `isReady` and `dependencies` properties of the receiver.
@@ -30,9 +35,10 @@ This method may change the `isReady` and `dependencies` properties of the receiv
 
 ## See Also
 
-- [func addDependency(Operation)](operation/adddependency(_:).md)
+### Managing Dependencies
+- [func addDependency(Operation)](./adddependency%28_%29.md)
   Makes the receiver dependent on the completion of the specified operation.
-- [var dependencies: [Operation]](operation/dependencies.md)
+- [var dependencies: [Operation]](./dependencies.md)
   An array of the operation objects that must finish executing before the current object can begin executing.
 
 

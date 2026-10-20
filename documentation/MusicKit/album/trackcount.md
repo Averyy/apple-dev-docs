@@ -1,7 +1,8 @@
 # trackCount
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of tracks for the album.
 

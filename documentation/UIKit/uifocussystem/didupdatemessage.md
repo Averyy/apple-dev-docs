@@ -1,7 +1,8 @@
 # UIFocusSystem.DidUpdateMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -19,17 +20,17 @@ struct DidUpdateMessage
 ## Topics
 
 ### Initializers
-- [init(updateContext: UIFocusUpdateContext?, animationCoordinator: UIFocusAnimationCoordinator?, focusSystem: UIFocusSystem)](uifocussystem/didupdatemessage/init(updatecontext:animationcoordinator:focussystem:).md)
+- [init(updateContext: UIFocusUpdateContext?, animationCoordinator: UIFocusAnimationCoordinator?, focusSystem: UIFocusSystem)](./didupdatemessage/init%28updatecontext,animationcoordinator,focussystem%29.md)
 ### Instance Properties
-- [var animationCoordinator: UIFocusAnimationCoordinator?](uifocussystem/didupdatemessage/animationcoordinator.md)
-- [var focusSystem: UIFocusSystem](uifocussystem/didupdatemessage/focussystem.md)
-- [var updateContext: UIFocusUpdateContext?](uifocussystem/didupdatemessage/updatecontext.md)
+- [var animationCoordinator: UIFocusAnimationCoordinator?](./didupdatemessage/animationcoordinator.md)
+- [var focusSystem: UIFocusSystem](./didupdatemessage/focussystem.md)
+- [var updateContext: UIFocusUpdateContext?](./didupdatemessage/updatecontext.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

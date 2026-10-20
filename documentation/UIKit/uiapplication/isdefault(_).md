@@ -1,7 +1,8 @@
 # isDefault(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reports whether this app is the person’s default app in the given category.
 
@@ -22,10 +23,10 @@ If the system determines the status of the app, this method returns `true` if th
 
 #### Discussion
 
-To reduce the likelihood that users face continuous requests to set a browser as their default, this API only tells the browser app if it’s the default up to four times in a year. If you call the method too frequently, it throws an error with the domain [`UIApplicationCategoryDefaultErrorDomain`](uiapplicationcategorydefaulterrordomain.md) and the code [`rateLimited`](uiapplication/categorydefaulterror/ratelimited.md). The error’s user information dictionary contains these keys:
+To reduce the likelihood that users face continuous requests to set a browser as their default, this API only tells the browser app if it’s the default up to four times in a year. If you call the method too frequently, it throws an error with the domain [`UIApplicationCategoryDefaultErrorDomain`](../uiapplicationcategorydefaulterrordomain.md) and the code [`rateLimited`](./categorydefaulterror/ratelimited.md). The error’s user information dictionary contains these keys:
 
-- **[`statusLastProvidedDateErrorKey`](uiapplication/categorydefaulterror/statuslastprovideddateerrorkey.md)**: The date at which the app most recently received a `true` or `false` response from this method.
-- **[`retryAvailableDateErrorKey`](uiapplication/categorydefaulterror/retryavailabledateerrorkey.md)**: The date at which the app can next request an updated response.
+- **[`statusLastProvidedDateErrorKey`](./categorydefaulterror/statuslastprovideddateerrorkey.md)**: The date at which the app most recently received a `true` or `false` response from this method.
+- **[`retryAvailableDateErrorKey`](./categorydefaulterror/retryavailabledateerrorkey.md)**: The date at which the app can next request an updated response.
 
 ## Parameters
 
@@ -33,9 +34,10 @@ To reduce the likelihood that users face continuous requests to set a browser as
 
 ## See Also
 
-- [UIApplication.Category](uiapplication/category.md)
+### Discovering if your app is the default app in a category
+- [UIApplication.Category](./category.md)
   Constants that describe the types of apps in the system.
-- [UIApplication.CategoryDefaultError](uiapplication/categorydefaulterror.md)
+- [UIApplication.CategoryDefaultError](./categorydefaulterror.md)
   Errors that can happen when the system checks if your app is the default app in a category.
 
 

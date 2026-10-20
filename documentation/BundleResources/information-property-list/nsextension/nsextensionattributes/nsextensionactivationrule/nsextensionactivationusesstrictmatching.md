@@ -1,7 +1,8 @@
 # NSExtensionActivationUsesStrictMatching
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value indicating whether strict or fuzzy matching is used when determining the asset types an app extension handles.
 
@@ -11,13 +12,15 @@ A Boolean value indicating whether strict or fuzzy matching is used when determi
 - macOS 10.11+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `NSExtensionActivationUsesStrictMatching`
+- **Type**: boolean
 
 ## See Also
 
-- [NSExtensionActivationDictionaryVersion](information-property-list/nsextension/nsextensionattributes/nsextensionactivationrule/nsextensionactivationdictionaryversion.md)
+### Configuration
+- [NSExtensionActivationDictionaryVersion](./nsextensionactivationdictionaryversion.md)
   The version of the parent extension-activation rule dictionary.
 
 

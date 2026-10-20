@@ -1,7 +1,8 @@
 # PromisesApi
 
 **Framework**: CKTool JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a `PromisesApi` object.
 
@@ -10,7 +11,7 @@ Creates a `PromisesApi` object.
 
 ## Declaration
 
-```swift
+```
 new defaultOptions(
 	PromisesApiOptions defaultOptions
 );
@@ -48,9 +49,10 @@ dictionary PromisesApiOptions {
 
 ## See Also
 
-- [PromisesApiOptions](promisesapioptions.md)
+### Initialization
+- [PromisesApiOptions](../promisesapioptions.md)
   A dictionary of options for promises API classes.
-- [Security](security.md)
+- [Security](../security.md)
   A dictionary of your authorization tokens.
 
 

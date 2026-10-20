@@ -1,7 +1,8 @@
 # backgroundColor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The canvas’s background color.
 

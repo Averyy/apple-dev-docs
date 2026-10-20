@@ -1,7 +1,8 @@
 # allWebsiteDataTypes()
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the set of all the available data types.
 
@@ -18,13 +19,18 @@ Returns the set of all the available data types.
 class func allWebsiteDataTypes() -> Set<String>
 ```
 
+```objc
++ (NSSet<NSString *> *) allWebsiteDataTypes;
+```
+
 #### Discussion
 
-Potential values in the set are [`WKWebsiteDataRecord`](wkwebsitedatarecord.md) constants.
+Potential values in the set are [`WKWebsiteDataRecord`](../wkwebsitedatarecord.md) constants.
 
 ## See Also
 
-- [func fetchDataRecords(ofTypes: Set<String>, completionHandler: ([WKWebsiteDataRecord]) -> Void)](wkwebsitedatastore/fetchdatarecords(oftypes:completionhandler:).md)
+### Retrieving specific types of data
+- [func fetchDataRecords(ofTypes: Set<String>, completionHandler: ([WKWebsiteDataRecord]) -> Void)](./fetchdatarecords%28oftypes,completionhandler%29.md)
   Fetches the specified types of records from the data store.
 
 

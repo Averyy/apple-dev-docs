@@ -1,7 +1,8 @@
 # NSFileProviderReplicatedExtension
 
 **Framework**: File Provider  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A File Provider extension in which the system replicates the contents on disk.
 
@@ -18,68 +19,73 @@ A File Provider extension in which the system replicates the contents on disk.
 protocol NSFileProviderReplicatedExtension : NSFileProviderEnumerating
 ```
 
+```objc
+@protocol NSFileProviderReplicatedExtension <NSObject, NSFileProviderEnumerating>
+```
+
 ## Mentions
 
-- [Using push notifications to signal changes](using-push-notifications-to-signal-changes.md)
+- [Using push notifications to signal changes](./using-push-notifications-to-signal-changes.md)
 
 ## Topics
 
 ### Creating and Removing File Providers
-- [init(domain: NSFileProviderDomain)](nsfileproviderreplicatedextension/init(domain:).md)
+- [init(domain: NSFileProviderDomain)](./nsfileproviderreplicatedextension/init%28domain%29.md)
   Creates an instance of the file provider for the specified domain.
-- [func invalidate()](nsfileproviderreplicatedextension/invalidate.md)
+- [func invalidate()](./nsfileproviderreplicatedextension/invalidate%28%29.md)
   Tells the file provider to perform any necessary cleanup so that the system can deallocate it.
 ### Accessing Remote Content
-- [func item(for: NSFileProviderItemIdentifier, request: NSFileProviderRequest, completionHandler: (NSFileProviderItem?, (any Error)?) -> Void) -> Progress](nsfileproviderreplicatedextension/item(for:request:completionhandler:).md)
+- [func item(for: NSFileProviderItemIdentifier, request: NSFileProviderRequest, completionHandler: (NSFileProviderItem?, (any Error)?) -> Void) -> Progress](./nsfileproviderreplicatedextension/item%28for,request,completionhandler%29.md)
   Asks the file provider for the metadata of the provided item.
-- [func fetchContents(for: NSFileProviderItemIdentifier, version: NSFileProviderItemVersion?, request: NSFileProviderRequest, completionHandler: (URL?, NSFileProviderItem?, (any Error)?) -> Void) -> Progress](nsfileproviderreplicatedextension/fetchcontents(for:version:request:completionhandler:).md)
+- [func fetchContents(for: NSFileProviderItemIdentifier, version: NSFileProviderItemVersion?, request: NSFileProviderRequest, completionHandler: (URL?, NSFileProviderItem?, (any Error)?) -> Void) -> Progress](./nsfileproviderreplicatedextension/fetchcontents%28for,version,request,completionhandler%29.md)
   Tells the file provider to download the requested item from remote storage.
 ### Managing Items
-- [func createItem(basedOn: NSFileProviderItem, fields: NSFileProviderItemFields, contents: URL?, options: NSFileProviderCreateItemOptions, request: NSFileProviderRequest, completionHandler: (NSFileProviderItem?, NSFileProviderItemFields, Bool, (any Error)?) -> Void) -> Progress](nsfileproviderreplicatedextension/createitem(basedon:fields:contents:options:request:completionhandler:).md)
+- [func createItem(basedOn: NSFileProviderItem, fields: NSFileProviderItemFields, contents: URL?, options: NSFileProviderCreateItemOptions, request: NSFileProviderRequest, completionHandler: (NSFileProviderItem?, NSFileProviderItemFields, Bool, (any Error)?) -> Void) -> Progress](./nsfileproviderreplicatedextension/createitem%28basedon,fields,contents,options,request,completionhandler%29.md)
   Tells the file provider to create or import an item based on a template.
-- [struct NSFileProviderCreateItemOptions](nsfileprovidercreateitemoptions.md)
+- [struct NSFileProviderCreateItemOptions](./nsfileprovidercreateitemoptions.md)
   Options for creating items.
-- [func modifyItem(NSFileProviderItem, baseVersion: NSFileProviderItemVersion, changedFields: NSFileProviderItemFields, contents: URL?, options: NSFileProviderModifyItemOptions, request: NSFileProviderRequest, completionHandler: (NSFileProviderItem?, NSFileProviderItemFields, Bool, (any Error)?) -> Void) -> Progress](nsfileproviderreplicatedextension/modifyitem(_:baseversion:changedfields:contents:options:request:completionhandler:).md)
+- [func modifyItem(NSFileProviderItem, baseVersion: NSFileProviderItemVersion, changedFields: NSFileProviderItemFields, contents: URL?, options: NSFileProviderModifyItemOptions, request: NSFileProviderRequest, completionHandler: (NSFileProviderItem?, NSFileProviderItemFields, Bool, (any Error)?) -> Void) -> Progress](./nsfileproviderreplicatedextension/modifyitem%28_,baseversion,changedfields,contents,options,request,completionhandler%29.md)
   Tells the file provider that an item’s content or metadata changed.
-- [struct NSFileProviderModifyItemOptions](nsfileprovidermodifyitemoptions.md)
+- [struct NSFileProviderModifyItemOptions](./nsfileprovidermodifyitemoptions.md)
   Options for modifying items.
-- [func deleteItem(identifier: NSFileProviderItemIdentifier, baseVersion: NSFileProviderItemVersion, options: NSFileProviderDeleteItemOptions, request: NSFileProviderRequest, completionHandler: ((any Error)?) -> Void) -> Progress](nsfileproviderreplicatedextension/deleteitem(identifier:baseversion:options:request:completionhandler:).md)
+- [func deleteItem(identifier: NSFileProviderItemIdentifier, baseVersion: NSFileProviderItemVersion, options: NSFileProviderDeleteItemOptions, request: NSFileProviderRequest, completionHandler: ((any Error)?) -> Void) -> Progress](./nsfileproviderreplicatedextension/deleteitem%28identifier,baseversion,options,request,completionhandler%29.md)
   Tells the file provider to delete an item forever.
-- [struct NSFileProviderDeleteItemOptions](nsfileproviderdeleteitemoptions.md)
+- [struct NSFileProviderDeleteItemOptions](./nsfileproviderdeleteitemoptions.md)
   Options for deleting items.
 ### Tracking Materialized Items
-- [func materializedItemsDidChange(completionHandler: () -> Void)](nsfileproviderreplicatedextension/materializeditemsdidchange(completionhandler:).md)
+- [func materializedItemsDidChange(completionHandler: () -> Void)](./nsfileproviderreplicatedextension/materializeditemsdidchange%28completionhandler%29.md)
   Tells the file provider that the set of materialized items changed.
 ### Tracking Pending Items
-- [func pendingItemsDidChange(completionHandler: () -> Void)](nsfileproviderreplicatedextension/pendingitemsdidchange(completionhandler:).md)
+- [func pendingItemsDidChange(completionHandler: () -> Void)](./nsfileproviderreplicatedextension/pendingitemsdidchange%28completionhandler%29.md)
   Tells the file provider extension that the set of pending items has changed.
 ### Importing Domains
-- [func importDidFinish(completionHandler: () -> Void)](nsfileproviderreplicatedextension/importdidfinish(completionhandler:).md)
+- [func importDidFinish(completionHandler: () -> Void)](./nsfileproviderreplicatedextension/importdidfinish%28completionhandler%29.md)
   Tells the File Provider extension that the system finished importing items.
 
 ## Relationships
 
 ### Inherits From
-- [NSFileProviderEnumerating](nsfileproviderenumerating.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSFileProviderEnumerating](./nsfileproviderenumerating.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol NSFileProviderEnumerating](nsfileproviderenumerating.md)
+### File Provider protocols
+- [protocol NSFileProviderEnumerating](./nsfileproviderenumerating.md)
   Support for enumerating the file provider’s contents.
-- [protocol NSFileProviderIncrementalContentFetching](nsfileproviderincrementalcontentfetching.md)
+- [protocol NSFileProviderIncrementalContentFetching](./nsfileproviderincrementalcontentfetching.md)
   Support for fetching changes to the item’s content.
-- [protocol NSFileProviderPartialContentFetching](nsfileproviderpartialcontentfetching.md)
+- [protocol NSFileProviderPartialContentFetching](./nsfileproviderpartialcontentfetching.md)
   Support for fetching part of a file’s content.
-- [protocol NSFileProviderServicing](nsfileproviderservicing.md)
+- [protocol NSFileProviderServicing](./nsfileproviderservicing.md)
   Support for providing a custom service source.
-- [protocol NSFileProviderCustomAction](nsfileprovidercustomaction.md)
+- [protocol NSFileProviderCustomAction](./nsfileprovidercustomaction.md)
   Support for custom actions.
-- [struct NSFileProviderExtensionActionIdentifier](nsfileproviderextensionactionidentifier.md)
+- [struct NSFileProviderExtensionActionIdentifier](./nsfileproviderextensionactionidentifier.md)
   An identifier for custom actions.
-- [protocol NSFileProviderThumbnailing](nsfileproviderthumbnailing.md)
+- [protocol NSFileProviderThumbnailing](./nsfileproviderthumbnailing.md)
   Support for item thumbnails.
-- [protocol NSFileProviderPendingSetEnumerator](nsfileproviderpendingsetenumerator.md)
+- [protocol NSFileProviderPendingSetEnumerator](./nsfileproviderpendingsetenumerator.md)
   A protocol for enumerating pending items.
 
 

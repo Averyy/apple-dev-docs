@@ -1,7 +1,8 @@
 # SAEmergencyResponseManager
 
 **Framework**: SafetyKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Provides actions in response to a Crash Detection event.
 
@@ -18,37 +19,42 @@ Provides actions in response to a Crash Detection event.
 class SAEmergencyResponseManager
 ```
 
+```objc
+@interface SAEmergencyResponseManager : NSObject
+```
+
 #### Overview
 
-Use the manager to place a voice call to an emergency contact upon receipt of a Crash Detection event. Provide an object that adopts [`SAEmergencyResponseDelegate`](saemergencyresponsedelegate.md) in order to respond to the status of the voice call.
+Use the manager to place a voice call to an emergency contact upon receipt of a Crash Detection event. Provide an object that adopts [`SAEmergencyResponseDelegate`](./saemergencyresponsedelegate.md) in order to respond to the status of the voice call.
 
 ## Topics
 
 ### Placing a voice call
-- [SAEmergencyResponseManager.VoiceCallStatus](saemergencyresponsemanager/voicecallstatus.md)
+- [SAEmergencyResponseManager.VoiceCallStatus](./saemergencyresponsemanager/voicecallstatus.md)
   An enumeration that defines the status of a requested voice call.
-- [func dialVoiceCall(toPhoneNumber: String, completionHandler: (Bool, (any Error)?) -> Void)](saemergencyresponsemanager/dialvoicecall(tophonenumber:completionhandler:).md)
+- [func dialVoiceCall(toPhoneNumber: String, completionHandler: (Bool, (any Error)?) -> Void)](./saemergencyresponsemanager/dialvoicecall%28tophonenumber,completionhandler%29.md)
   Request the system to dial a voice call on behalf of someone involved in a crash.
-- [var delegate: (any SAEmergencyResponseDelegate)?](saemergencyresponsemanager/delegate.md)
+- [var delegate: (any SAEmergencyResponseDelegate)?](./saemergencyresponsemanager/delegate.md)
   The object that receives voice call status updates and requested emergency response actions.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol SAEmergencyResponseDelegate](saemergencyresponsedelegate.md)
+### Responding to a crash
+- [protocol SAEmergencyResponseDelegate](./saemergencyresponsedelegate.md)
   The interface for receiving updates about a requested emergency response action.
-- [SACrashDetectionEvent.Response](sacrashdetectionevent/response-swift.enum.md)
+- [SACrashDetectionEvent.Response](./sacrashdetectionevent/response-swift.enum.md)
   An enumeration that defines possible emergency responses to a Crash Detection event.
 
 

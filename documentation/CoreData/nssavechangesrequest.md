@@ -1,7 +1,8 @@
 # NSSaveChangesRequest
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An encapsulation of a collection of changes to be made by an object store in response to a save operation on a managed object context.
 
@@ -10,7 +11,7 @@ An encapsulation of a collection of changes to be made by an object store in res
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,57 +21,62 @@ An encapsulation of a collection of changes to be made by an object store in res
 class NSSaveChangesRequest
 ```
 
+```objc
+@interface NSSaveChangesRequest : NSPersistentStoreRequest
+```
+
 ## Topics
 
 ### Initializing a Request
-- [init(inserted: Set<NSManagedObject>?, updated: Set<NSManagedObject>?, deleted: Set<NSManagedObject>?, locked: Set<NSManagedObject>?)](nssavechangesrequest/init(inserted:updated:deleted:locked:).md)
+- [init(inserted: Set<NSManagedObject>?, updated: Set<NSManagedObject>?, deleted: Set<NSManagedObject>?, locked: Set<NSManagedObject>?)](./nssavechangesrequest/init%28inserted,updated,deleted,locked%29.md)
   Initializes a save changes request with collections of given changes.
 ### Getting Information about a Request
-- [var insertedObjects: Set<NSManagedObject>?](nssavechangesrequest/insertedobjects.md)
+- [var insertedObjects: Set<NSManagedObject>?](./nssavechangesrequest/insertedobjects.md)
   The objects that were inserted into the calling context.
-- [var updatedObjects: Set<NSManagedObject>?](nssavechangesrequest/updatedobjects.md)
+- [var updatedObjects: Set<NSManagedObject>?](./nssavechangesrequest/updatedobjects.md)
   The objects that were modified in the calling context.
-- [var deletedObjects: Set<NSManagedObject>?](nssavechangesrequest/deletedobjects.md)
+- [var deletedObjects: Set<NSManagedObject>?](./nssavechangesrequest/deletedobjects.md)
   The objects that were deleted in the calling context.
-- [var lockedObjects: Set<NSManagedObject>?](nssavechangesrequest/lockedobjects.md)
+- [var lockedObjects: Set<NSManagedObject>?](./nssavechangesrequest/lockedobjects.md)
   The objects that were flagged for optimistic locking on the calling context.
 ### Initializers
-- [init(insertedObjects: Set<NSManagedObject>?, updatedObjects: Set<NSManagedObject>?, deletedObjects: Set<NSManagedObject>?, lockedObjects: Set<NSManagedObject>?)](nssavechangesrequest/init(insertedobjects:updatedobjects:deletedobjects:lockedobjects:).md)
+- [init(insertedObjects: Set<NSManagedObject>?, updatedObjects: Set<NSManagedObject>?, deletedObjects: Set<NSManagedObject>?, lockedObjects: Set<NSManagedObject>?)](./nssavechangesrequest/init%28insertedobjects,updatedobjects,deletedobjects,lockedobjects%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSPersistentStoreRequest](nspersistentstorerequest.md)
+- [NSPersistentStoreRequest](./nspersistentstorerequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSPersistentStoreCoordinator](nspersistentstorecoordinator.md)
+### Store Coordination
+- [class NSPersistentStoreCoordinator](./nspersistentstorecoordinator.md)
   An object that enables an app’s contexts and the underlying persistent stores to work together.
-- [class NSPersistentStore](nspersistentstore.md)
+- [class NSPersistentStore](./nspersistentstore.md)
   The abstract base class for all Core Data persistent stores.
-- [class NSPersistentStoreDescription](nspersistentstoredescription.md)
+- [class NSPersistentStoreDescription](./nspersistentstoredescription.md)
   A description object used to create and load a persistent store.
-- [class NSPersistentStoreRequest](nspersistentstorerequest.md)
+- [class NSPersistentStoreRequest](./nspersistentstorerequest.md)
   Criteria used to retrieve data from or save data to a persistent store.
-- [class NSPersistentStoreResult](nspersistentstoreresult.md)
+- [class NSPersistentStoreResult](./nspersistentstoreresult.md)
   The abstract base class for results returned from a persistent store coordinator.
-- [class NSPersistentStoreAsynchronousResult](nspersistentstoreasynchronousresult.md)
+- [class NSPersistentStoreAsynchronousResult](./nspersistentstoreasynchronousresult.md)
   A concrete class used to represent the results of an asynchronous request.
-- [class NSAtomicStore](nsatomicstore.md)
+- [class NSAtomicStore](./nsatomicstore.md)
   An abstract superclass that you subclass to create a Core Data atomic store.
-- [class NSAtomicStoreCacheNode](nsatomicstorecachenode.md)
+- [class NSAtomicStoreCacheNode](./nsatomicstorecachenode.md)
   A concrete class that you use to represent basic nodes in a Core Data atomic store.
-- [class NSIncrementalStore](nsincrementalstore.md)
+- [class NSIncrementalStore](./nsincrementalstore.md)
   An abstract superclass defining the API through which Core Data communicates with a store.
-- [class NSIncrementalStoreNode](nsincrementalstorenode.md)
+- [class NSIncrementalStoreNode](./nsincrementalstorenode.md)
   A concrete class used to represent basic nodes in a Core Data incremental store.
 
 

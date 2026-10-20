@@ -1,7 +1,8 @@
 # NSDocument.ChangeType.changeRedone
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A single change has been redone.
 
@@ -14,23 +15,28 @@ A single change has been redone.
 case changeRedone
 ```
 
+```c
+NSChangeRedone
+```
+
 #### Discussion
 
-For example, the built-in undo support of [`NSDocument`](nsdocument.md) passes this value whenever a document receives an [`NSUndoManagerDidRedoChange`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/nsundomanagerdidredochange) from its own undo manager.
+For example, the built-in undo support of [`NSDocument`](../../nsdocument.md) passes this value whenever a document receives an [`NSUndoManagerDidRedoChange`](../../../Foundation/nsnotification/name-swift.struct/nsundomanagerdidredochange.md) from its own undo manager.
 
 ## See Also
 
-- [NSDocument.ChangeType.changeDone](nsdocument/changetype/changedone.md)
+### Constants
+- [NSDocument.ChangeType.changeDone](./changedone.md)
   Increment change count.
-- [NSDocument.ChangeType.changeUndone](nsdocument/changetype/changeundone.md)
+- [NSDocument.ChangeType.changeUndone](./changeundone.md)
   Decrement change count.
-- [NSDocument.ChangeType.changeCleared](nsdocument/changetype/changecleared.md)
+- [NSDocument.ChangeType.changeCleared](./changecleared.md)
   Set change count to 0.
-- [NSDocument.ChangeType.changeReadOtherContents](nsdocument/changetype/changereadothercontents.md)
+- [NSDocument.ChangeType.changeReadOtherContents](./changereadothercontents.md)
   The document has been initialized with the contents of a file or file package other than the one whose location is in the `fileURL` property, and therefore can’t possibly be synchronized with its persistent representation.
-- [NSDocument.ChangeType.changeAutosaved](nsdocument/changetype/changeautosaved.md)
+- [NSDocument.ChangeType.changeAutosaved](./changeautosaved.md)
   The document’s contents have been autosaved.
-- [NSDocument.ChangeType.changeDiscardable](nsdocument/changetype/changediscardable.md)
+- [NSDocument.ChangeType.changeDiscardable](./changediscardable.md)
   A discardable change has been done.
 
 

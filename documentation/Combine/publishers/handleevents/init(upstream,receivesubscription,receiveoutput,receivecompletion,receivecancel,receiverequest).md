@@ -1,7 +1,8 @@
 # init(upstream:receiveSubscription:receiveOutput:receiveCompletion:receiveCancel:receiveRequest:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that performs the specified closures when publisher events occur.
 

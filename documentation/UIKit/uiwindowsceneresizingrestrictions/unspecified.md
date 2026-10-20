@@ -1,7 +1,8 @@
 # UIWindowSceneResizingRestrictions.unspecified
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 App has no preference on user resize
 
@@ -12,6 +13,10 @@ App has no preference on user resize
 
 ```swift
 case unspecified
+```
+
+```c
+UIWindowSceneResizingRestrictionsUnspecified
 ```
 
 

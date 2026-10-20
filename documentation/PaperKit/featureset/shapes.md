@@ -1,7 +1,8 @@
 # shapes
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The supported shape types.
 
@@ -24,15 +25,16 @@ Default is all shapes. Set to an empty set to disable all shapes.
 
 ## See Also
 
-- [var features: Set<FeatureSet.Feature>](featureset/features.md)
+### Configuring features
+- [var features: Set<FeatureSet.Feature>](./features.md)
   The supported features.
-- [var inks: Set<PKInkingTool.InkType>](featureset/inks.md)
+- [var inks: Set<PKInkingTool.InkType>](./inks.md)
   The supported ink types.
-- [var contentVersion: FeatureSet.ContentVersion](featureset/contentversion-swift.property.md)
+- [var contentVersion: FeatureSet.ContentVersion](./contentversion-swift.property.md)
   The PaperKit version the feature set supports.
-- [var lineMarkerPositions: FeatureSet.LineMarkerPositions](featureset/linemarkerpositions-swift.property.md)
+- [var lineMarkerPositions: FeatureSet.LineMarkerPositions](./linemarkerpositions-swift.property.md)
   The allowed ends of line for arrows.
-- [var colorMaximumLinearExposure: CGFloat](featureset/colormaximumlinearexposure.md)
+- [var colorMaximumLinearExposure: CGFloat](./colormaximumlinearexposure.md)
   The maximum exposure to allow for choosing colors.
 
 

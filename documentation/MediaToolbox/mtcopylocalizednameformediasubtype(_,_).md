@@ -1,7 +1,8 @@
 # MTCopyLocalizedNameForMediaSubType(_:_:)
 
 **Framework**: Media Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a localized name for the specified media type and subtype.
 
@@ -19,9 +20,14 @@ Returns a localized name for the specified media type and subtype.
 func MTCopyLocalizedNameForMediaSubType(_ mediaType: CMMediaType, _ mediaSubType: FourCharCode) -> CFString?
 ```
 
+```c
+extern CFStringRefMTCopyLocalizedNameForMediaSubType(CMMediaType mediaType, FourCharCode mediaSubType);
+```
+
 ## See Also
 
-- [func MTCopyLocalizedNameForMediaType(CMMediaType) -> CFString?](mtcopylocalizednameformediatype(_:).md)
+### Utility
+- [func MTCopyLocalizedNameForMediaType(CMMediaType) -> CFString?](./mtcopylocalizednameformediatype%28_%29.md)
   Returns a localized name for the specified media type.
 
 

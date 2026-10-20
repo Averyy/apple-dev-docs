@@ -1,7 +1,8 @@
 # gelu()
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a Gaussian Error Linear Unit (GELU) activation operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a Gaussian Error Linear Unit (GELU) activation operation to the current gra
 ```swift
 func gelu() -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 
 ---

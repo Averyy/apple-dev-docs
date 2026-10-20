@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```cpp
 enum StandardUSB30::tHubPortStatusCode : unsigned int {
     ...
 };
@@ -17,10 +17,10 @@ enum StandardUSB30::tHubPortStatusCode : unsigned int {
 ## Topics
 
 ### Constants
-- [StandardUSB30::tHubPortStatusCodeCount](standardusb30_thubportstatuscode/standardusb30_thubportstatuscodecount.md)
-- [StandardUSB30::tHubPortStatusCodeExt](standardusb30_thubportstatuscode/standardusb30_thubportstatuscodeext.md)
-- [StandardUSB30::tHubPortStatusCodePD](standardusb30_thubportstatuscode/standardusb30_thubportstatuscodepd.md)
-- [StandardUSB30::tHubPortStatusCodeStandard](standardusb30_thubportstatuscode/standardusb30_thubportstatuscodestandard.md)
+- [StandardUSB30::tHubPortStatusCodeCount](./standardusb30_thubportstatuscode/standardusb30_thubportstatuscodecount.md)
+- [StandardUSB30::tHubPortStatusCodeExt](./standardusb30_thubportstatuscode/standardusb30_thubportstatuscodeext.md)
+- [StandardUSB30::tHubPortStatusCodePD](./standardusb30_thubportstatuscode/standardusb30_thubportstatuscodepd.md)
+- [StandardUSB30::tHubPortStatusCodeStandard](./standardusb30_thubportstatuscode/standardusb30_thubportstatuscodestandard.md)
 
 
 ---

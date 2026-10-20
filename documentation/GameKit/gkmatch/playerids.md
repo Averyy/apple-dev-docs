@@ -1,21 +1,28 @@
 # playerIDs
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The player identifiers for remote players in the match.
 
 **Availability**:
-- iOS 4.1+
-- iPadOS 4.1+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- visionOS 1.0+
+- iOS 4.1+ - Deprecated in 8.0
+- iPadOS 4.1+ - Deprecated in 8.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.8+ - Deprecated in 10.10
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use the [`players`](./players.md) property instead.
 
 ## Declaration
 
 ```swift
 var playerIDs: [String]? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSArray<NSString *> * playerIDs;
 ```
 
 #### Discussion
@@ -24,11 +31,13 @@ The `playerIDs` property initially includes the player identifiers for any remot
 
 ## See Also
 
-- [var expectedPlayerCount: Int](gkmatch/expectedplayercount.md)
+### Related Documentation
+- [var expectedPlayerCount: Int](./expectedplayercount.md)
   The remaining number of players invited but not yet connected to the match.
-- [func chooseBestHostPlayer(completionHandler: (String?) -> Void)](gkmatch/choosebesthostplayer(completionhandler:).md)
+### Deprecated Methods and Properties
+- [func chooseBestHostPlayer(completionHandler: (String?) -> Void)](./choosebesthostplayer%28completionhandler%29.md)
   Determines the best player in the game to act as the server for a client-server match.
-- [func send(Data, toPlayers: [String], with: GKMatch.SendDataMode) throws](gkmatch/send(_:toplayers:with:).md)
+- [func send(Data, toPlayers: [String], with: GKMatch.SendDataMode) throws](./send%28_,toplayers,with%29.md)
   Transmits data to a list of connected players.
 
 

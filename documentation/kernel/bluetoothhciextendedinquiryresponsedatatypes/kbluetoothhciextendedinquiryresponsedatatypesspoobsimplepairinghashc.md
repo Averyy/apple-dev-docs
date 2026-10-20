@@ -1,14 +1,15 @@
 # kBluetoothHCIExtendedInquiryResponseDataTypeSSPOOBSimplePairingHashC
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCIExtendedInquiryResponseDataTypeSSPOOBSimplePairingHashC = 0x0E
 ```
 

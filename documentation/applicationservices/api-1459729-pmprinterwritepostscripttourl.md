@@ -1,7 +1,8 @@
 # PMPrinterWritePostScriptToURL(_:_:_:_:_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Converts an input file of the specified MIME type to printer-ready PostScript for a destination printer.
 
@@ -14,7 +15,11 @@ Converts an input file of the specified MIME type to printer-ready PostScript fo
 func PMPrinterWritePostScriptToURL(_ printer: PMPrinter, _ settings: PMPrintSettings, _ format: PMPageFormat?, _ mimeType: CFString?, _ sourceFileURL: CFURL, _ destinationFileURL: CFURL) -> OSStatus
 ```
 
-#### Return_value
+```c
+OSStatus PMPrinterWritePostScriptToURL(PMPrinter printer, PMPrintSettings settings, PMPageFormat format, CFStringRef mimeType, CFURLRef sourceFileURL, CFURLRef destinationFileURL);
+```
+
+#### Return Value
 
 A result code. If the printing system cannot convert the input MIME type to PostScript, this function fails and returns an error.
 
@@ -27,13 +32,14 @@ This function is synchronous; the conversion of the input file to PostScript is 
 - `printer`: The destination printer for which printer-ready PostScript will be generated.
 - `settings`: The print settings for the print job.
 - `format`: The page format specifying the physical page size and orientation on which the document should be printed.
-- `mimeType`: The MIME type of the file to be printed. If you pass `NULL`, the file is typed automatically. You can obtain a list of the MIME types supported by a given printer using the function [`PMPrinterGetMimeTypes(_:_:_:)`](1460125-pmprintergetmimetypes.md).
+- `mimeType`: The MIME type of the file to be printed. If you pass `NULL`, the file is typed automatically. You can obtain a list of the MIME types supported by a given printer using the function [`PMPrinterGetMimeTypes(_:_:_:)`](./api-1460125-pmprintergetmimetypes.md).
 - `sourceFileURL`: A URL specifying the input file to be converted to printer-ready PostScript data. Only file-based URLs are supported.
 - `destinationFileURL`: A URL specifying the destination file to be created. If the file already exists, it will be overwritten. Only file-based URLs are supported.
 
 ## See Also
 
-- [func PMCGImageCreateWithEPSDataProvider(CGDataProvider?, CGImage) -> Unmanaged<CGImage>?](1462361-pmcgimagecreatewithepsdataprovid.md)
+### Printing with PostScript Data
+- [func PMCGImageCreateWithEPSDataProvider(CGDataProvider?, CGImage) -> Unmanaged<CGImage>?](./api-1462361-pmcgimagecreatewithepsdataprovid.md)
   Creates an image that references both the PostScript contents of EPS data and a preview (proxy) image for the data.
 
 

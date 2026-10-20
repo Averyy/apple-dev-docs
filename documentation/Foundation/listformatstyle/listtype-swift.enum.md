@@ -1,7 +1,8 @@
 # ListFormatStyle.ListType
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that describes whether the returned list contains cumulative or alternative elements.
 
@@ -22,40 +23,41 @@ enum ListType
 
 #### Overview
 
-The possible values of a [`listType`](listformatstyle/listtype-swift.property.md) are `and` and `or`.
+The possible values of a [`listType`](./listtype-swift.property.md) are `and` and `or`.
 
 ## Topics
 
 ### List types
-- [ListFormatStyle.ListType.and](listformatstyle/listtype-swift.enum/and.md)
+- [ListFormatStyle.ListType.and](./listtype-swift.enum/and.md)
   Specifies an *and* list type.
-- [ListFormatStyle.ListType.or](listformatstyle/listtype-swift.enum/or.md)
+- [ListFormatStyle.ListType.or](./listtype-swift.enum/or.md)
   Specifies an *or* list type.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var width: ListFormatStyle<Style, Base>.Width](listformatstyle/width-swift.property.md)
+### Modifying a list format style
+- [var width: ListFormatStyle<Style, Base>.Width](./width-swift.property.md)
   The size of the list.
-- [ListFormatStyle.Width](listformatstyle/width-swift.enum.md)
+- [ListFormatStyle.Width](./width-swift.enum.md)
   The type representing the width of a list.
-- [var listType: ListFormatStyle<Style, Base>.ListType](listformatstyle/listtype-swift.property.md)
+- [var listType: ListFormatStyle<Style, Base>.ListType](./listtype-swift.property.md)
   The type of the list.
-- [var locale: Locale](listformatstyle/locale.md)
+- [var locale: Locale](./locale.md)
   The locale to use when formatting items in the list.
-- [func locale(Locale) -> ListFormatStyle<Style, Base>](listformatstyle/locale(_:).md)
+- [func locale(Locale) -> ListFormatStyle<Style, Base>](./locale%28_%29.md)
   Modifies the list format style to use the specified locale.
 
 

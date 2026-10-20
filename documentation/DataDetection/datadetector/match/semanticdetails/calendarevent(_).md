@@ -1,7 +1,8 @@
 # DataDetector.Match.SemanticDetails.calendarEvent(_:)
 
 **Framework**: DataDetection  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A match that the data detector determines represents a calendar event.
 
@@ -22,7 +23,7 @@ case calendarEvent(DataDetector.Match.SemanticDetails.CalendarEvent)
 
 ## Parameters
 
-- `CalendarEvent`: A [`DataDetector.Match.SemanticDetails.CalendarEvent`](datadetector/match/semanticdetails/calendarevent.md) structure.
+- `CalendarEvent`: A [`DataDetector.Match.SemanticDetails.CalendarEvent`](./calendarevent.md) structure.
 
 
 ---

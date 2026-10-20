@@ -1,15 +1,16 @@
 # kRandomParam_BoundA
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,10 +18,15 @@
 var kRandomParam_BoundA: AudioUnitParameterID { get }
 ```
 
+```c
+kRandomParam_BoundA
+```
+
 ## See Also
 
-- [var kRandomParam_BoundB: AudioUnitParameterID](krandomparam_boundb.md)
-- [var kRandomParam_Curve: AudioUnitParameterID](krandomparam_curve.md)
+### Constants
+- [var kRandomParam_BoundB: AudioUnitParameterID](./krandomparam_boundb.md)
+- [var kRandomParam_Curve: AudioUnitParameterID](./krandomparam_curve.md)
 
 
 ---

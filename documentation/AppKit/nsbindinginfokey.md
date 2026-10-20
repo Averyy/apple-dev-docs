@@ -1,10 +1,11 @@
 # NSBindingInfoKey
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,34 +13,39 @@
 struct NSBindingInfoKey
 ```
 
+```c
+typedef NSString * NSBindingInfoKey;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: String)](nsbindinginfokey/init(rawvalue:).md)
+- [init(rawValue: String)](./nsbindinginfokey/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSDictionaryController](nsdictionarycontroller.md)
+### Key-Value Data
+- [class NSDictionaryController](./nsdictionarycontroller.md)
   A bindings-compatible controller that manages the display and editing of a dictionary of key-value pairs.
-- [class NSDictionaryControllerKeyValuePair](nsdictionarycontrollerkeyvaluepair.md)
+- [class NSDictionaryControllerKeyValuePair](./nsdictionarycontrollerkeyvaluepair.md)
   A set of methods implemented by arranged objects to give access to information about those objects.
-- [struct NSBindingName](nsbindingname.md)
+- [struct NSBindingName](./nsbindingname.md)
   Values that specify a binding for certain methods.
-- [struct NSBindingOption](nsbindingoption.md)
-- [func NSIsControllerMarker(Any?) -> Bool](nsiscontrollermarker(_:).md)
+- [struct NSBindingOption](./nsbindingoption.md)
+- [func NSIsControllerMarker(Any?) -> Bool](./nsiscontrollermarker%28_%29.md)
   Tests whether a given object is special marker object used for indicating the state of a selection in relation to a key.
-- [NSKeyValueBindingCreation](../objectivec/nskeyvaluebindingcreation.md)
+- [NSKeyValueBindingCreation](../ObjectiveC/nskeyvaluebindingcreation.md)
   A set of methods that you can use to create and remove bindings between view objects and controllers, or between controllers and model objects.
-- [Binding dictionary keys](binding-dictionary-keys.md)
+- [Binding dictionary keys](./binding-dictionary-keys.md)
   These constants define keys in the binding information dictionary.
 
 

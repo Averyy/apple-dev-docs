@@ -1,7 +1,8 @@
 # VZXHCIControllerConfiguration
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The configuration object for the USB Extensible Host Controller Interface (XHCI) controller.
 
@@ -14,6 +15,10 @@ The configuration object for the USB Extensible Host Controller Interface (XHCI)
 class VZXHCIControllerConfiguration
 ```
 
+```objc
+@interface VZXHCIControllerConfiguration : VZUSBControllerConfiguration
+```
+
 #### Overview
 
 Use this configuration to create a USB XHCI controller device for the guest.
@@ -21,27 +26,28 @@ Use this configuration to create a USB XHCI controller device for the guest.
 ## Topics
 
 ### Initializers
-- [init()](vzxhcicontrollerconfiguration/init.md)
+- [init()](./vzxhcicontrollerconfiguration/init%28%29.md)
   Creates a USB Extensible Host Controller Interface (XHCI) configuration.
 
 ## Relationships
 
 ### Inherits From
-- [VZUSBControllerConfiguration](vzusbcontrollerconfiguration.md)
+- [VZUSBControllerConfiguration](./vzusbcontrollerconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZUSBControllerConfiguration](vzusbcontrollerconfiguration.md)
+### Configurations
+- [class VZUSBControllerConfiguration](./vzusbcontrollerconfiguration.md)
   The base class for a USB controller configuration.
-- [class VZUSBPassthroughDeviceConfiguration](vzusbpassthroughdeviceconfiguration.md)
+- [class VZUSBPassthroughDeviceConfiguration](./vzusbpassthroughdeviceconfiguration.md)
 
 
 ---

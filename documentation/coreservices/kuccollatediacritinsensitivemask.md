@@ -1,7 +1,8 @@
 # kUCCollateDiacritInsensitiveMask
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 If the corresponding bit is set, then characters with diacritics are treated as equivalent to the corresponding characters without diacritics.
 

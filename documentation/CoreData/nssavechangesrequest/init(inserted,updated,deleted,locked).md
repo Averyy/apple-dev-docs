@@ -1,7 +1,8 @@
 # init(inserted:updated:deleted:locked:)
 
 **Framework**: Core Data  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a save changes request with collections of given changes.
 
@@ -10,7 +11,7 @@ Initializes a save changes request with collections of given changes.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Initializes a save changes request with collections of given changes.
 
 ```swift
 init(inserted insertedObjects: Set<NSManagedObject>?, updated updatedObjects: Set<NSManagedObject>?, deleted deletedObjects: Set<NSManagedObject>?, locked lockedObjects: Set<NSManagedObject>?)
+```
+
+```objc
+- (instancetype) initWithInsertedObjects:(NSSet<NSManagedObject *> *) insertedObjects updatedObjects:(NSSet<NSManagedObject *> *) updatedObjects deletedObjects:(NSSet<NSManagedObject *> *) deletedObjects lockedObjects:(NSSet<NSManagedObject *> *) lockedObjects;
 ```
 
 #### Return Value

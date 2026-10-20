@@ -1,24 +1,26 @@
 # strlen
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 size_t strlen(const char *s);
 ```
 
 ## See Also
 
-- [strchr](1579345-strchr.md)
-- [strnlen](1579340-strnlen.md)
-- [strnstr](1579346-strnstr.md)
-- [strprefix](1579348-strprefix.md)
-- [strsep](1441093-strsep.md)
+### String Contents
+- [strchr](./api-1579345-strchr.md)
+- [strnlen](./api-1579340-strnlen.md)
+- [strnstr](./api-1579346-strnstr.md)
+- [strprefix](./api-1579348-strprefix.md)
+- [strsep](./api-1441093-strsep.md)
 
 
 ---

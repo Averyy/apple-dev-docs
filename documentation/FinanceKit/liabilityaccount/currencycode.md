@@ -1,7 +1,8 @@
 # currencyCode
 
 **Framework**: FinanceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An ISO 4217 currency code that identifies the currency in which the account is held.
 
@@ -17,17 +18,18 @@ let currencyCode: String
 
 ## See Also
 
-- [let accountDescription: String?](liabilityaccount/accountdescription.md)
+### Instance Properties
+- [let accountDescription: String?](./accountdescription.md)
   A description of the account.
-- [let creditInformation: AccountCreditInformation](liabilityaccount/creditinformation.md)
+- [let creditInformation: AccountCreditInformation](./creditinformation.md)
   Information regarding credits to the account.
-- [let displayName: String](liabilityaccount/displayname.md)
+- [let displayName: String](./displayname.md)
   The name for the account given by an individual.
-- [let id: UUID](liabilityaccount/id.md)
+- [let id: UUID](./id.md)
   A unique account ID.
-- [let institutionName: String](liabilityaccount/institutionname.md)
+- [let institutionName: String](./institutionname.md)
   The name of the institution that holds the account.
-- [let openingDate: Date?](liabilityaccount/openingdate.md)
+- [let openingDate: Date?](./openingdate.md)
   The date the account was opened, if known.
 
 

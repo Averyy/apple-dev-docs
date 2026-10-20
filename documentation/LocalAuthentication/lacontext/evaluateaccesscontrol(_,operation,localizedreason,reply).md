@@ -1,7 +1,8 @@
 # evaluateAccessControl(_:operation:localizedReason:reply:)
 
 **Framework**: Local Authentication  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Evaluates an access control for a given operation.
 
@@ -16,14 +17,26 @@ Evaluates an access control for a given operation.
 ## Declaration
 
 ```swift
+func evaluateAccessControl(_ accessControl: SecAccessControl, operation: LAAccessControlOperation, localizedReason: String, reply: @escaping @Sendable (Bool, (any Error)?) -> Void)
+```
+
+```swift
 func evaluateAccessControl(_ accessControl: SecAccessControl, operation: LAAccessControlOperation, localizedReason: String) async throws -> Bool
+```
+
+```objc
+- (void) evaluateAccessControl:(SecAccessControlRef) accessControl operation:(LAAccessControlOperation) operation localizedReason:(NSString *) localizedReason reply:(void (^)(BOOL success, NSError *error)) reply;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func evaluateAccessControl(_ accessControl: SecAccessControl, operation: LAAccessControlOperation, localizedReason: String) async throws -> Bool
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func evaluateAccessControl(_ accessControl: SecAccessControl, operation: LAAccessControlOperation, localizedReason: String) async throws -> Bool
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 This method asynchronously evaluates an access control. Evaluating an access control may involve prompting the user for various kinds of interaction or authentication. The actual behavior is dependent on the access control and device type. It can also be affected by installed configuration profiles.
 
@@ -34,16 +47,19 @@ You should not assume that a previous successful evaluation of an access control
 ## Parameters
 
 - `accessControl`: The access control to be evaluated.
-- `operation`: The operation for the access control to be evaluated. For possible values, see [`LAAccessControlOperation`](laaccesscontroloperation.md).
+- `operation`: The operation for the access control to be evaluated. For possible values, see [`LAAccessControlOperation`](../laaccesscontroloperation.md).
 - `localizedReason`: The app-provided reason for requesting authentication, which displays in the authentication dialog presented to the user.
-- `reply`: A block that is executed when access control evaluation finishes. This block is evaluated on a private queue internal to the framework in an unspecified threading context. - **success**: `true` if policy evaluation succeeded, otherwise `false`.
-- **error**: `nil` if policy evaluation succeeded, an error object that should be presented to the user otherwise. See [`LAError.Code`](laerror-swift.struct/code.md) for possible error codes
+- `reply`: A block that is executed when access control evaluation finishes. This block is evaluated on a private queue internal to the framework in an unspecified threading context.
+
+  - **success**: `true` if policy evaluation succeeded, otherwise `false`.
+  - **error**: `nil` if policy evaluation succeeded, an error object that should be presented to the user otherwise. See [`LAError.Code`](../laerror-swift.struct/code.md) for possible error codes
 
 ## See Also
 
-- [enum LAAccessControlOperation](laaccesscontroloperation.md)
+### Evaluating access controls
+- [enum LAAccessControlOperation](../laaccesscontroloperation.md)
   Operations to be evaluated for access control.
-- [var interactionNotAllowed: Bool](lacontext/interactionnotallowed.md)
+- [var interactionNotAllowed: Bool](./interactionnotallowed.md)
   A Boolean value indicating whether authentication can be interactive.
 
 

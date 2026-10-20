@@ -1,7 +1,8 @@
 # cornerRadius
 
 **Framework**: TipKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Corner radius for the tip view.
 

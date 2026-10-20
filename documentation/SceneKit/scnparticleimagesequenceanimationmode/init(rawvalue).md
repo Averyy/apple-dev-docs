@@ -1,16 +1,17 @@
 # init(rawValue:)
 
 **Framework**: SceneKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS
+- iPadOS
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 

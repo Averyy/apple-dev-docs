@@ -1,7 +1,8 @@
 # preloadedLibraries
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var preloadedLibraries: [any MTLDynamicLibrary] { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite, nonnull) NSArray<id<MTLDynamicLibrary>> * preloadedLibraries;
 ```
 
 

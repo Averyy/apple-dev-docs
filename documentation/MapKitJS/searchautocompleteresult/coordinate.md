@@ -1,7 +1,8 @@
 # coordinate
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The coordinate of the result when it corresponds to a single place.
 
@@ -10,7 +11,7 @@ The coordinate of the result when it corresponds to a single place.
 
 ## Declaration
 
-```swift
+```
 coordinate: Coordinate | null;
 ```
 
@@ -20,7 +21,8 @@ The coordinate may not be available for all results, and can return `null`. The 
 
 ## See Also
 
-- [displayLines](searchautocompleteresult/displaylines.md)
+### Autocomplete results
+- [displayLines](./displaylines.md)
   Lines of text to display to the user in an autocomplete menu.
 
 

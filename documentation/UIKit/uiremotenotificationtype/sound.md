@@ -1,14 +1,17 @@
 # sound
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The app accepts alert sounds as notifications.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 13.1+
+- iOS 3.0+ - Deprecated in 8.0
+- iPadOS 3.0+ - Deprecated in 8.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use [`requestAuthorization(options:completionHandler:)`](../../UserNotifications/unusernotificationcenter/requestauthorization%28options,completionhandler%29.md) and [`setNotificationCategories(_:)`](../../UserNotifications/unusernotificationcenter/setnotificationcategories%28_%29.md) instead.
 
 ## Declaration
 
@@ -16,13 +19,18 @@ The app accepts alert sounds as notifications.
 static var sound: UIRemoteNotificationType { get }
 ```
 
+```c
+UIRemoteNotificationTypeSound
+```
+
 ## See Also
 
-- [static var badge: UIRemoteNotificationType](uiremotenotificationtype/badge.md)
+### Constants
+- [static var badge: UIRemoteNotificationType](./badge.md)
   The app accepts notifications that badge the app icon.
-- [static var alert: UIRemoteNotificationType](uiremotenotificationtype/alert.md)
+- [static var alert: UIRemoteNotificationType](./alert.md)
   The app accepts alert messages as notifications.
-- [static var newsstandContentAvailability: UIRemoteNotificationType](uiremotenotificationtype/newsstandcontentavailability.md)
+- [static var newsstandContentAvailability: UIRemoteNotificationType](./newsstandcontentavailability.md)
   The app accepts notifications that start the downloading of issue assets for Newsstand apps.
 
 

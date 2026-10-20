@@ -1,14 +1,15 @@
 # IOCoreAnalyticsSendEventProc
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 typedef kern_return_t (*IOCoreAnalyticsSendEventProc)(uint64_t options, OSString *eventName, OSDictionary *eventPayload);
 ```
 

@@ -1,7 +1,8 @@
 # isJitteredMotionVectorsEnabled
 
 **Framework**: MetalFX  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the motion vectors include the jittering pattern.
 
@@ -18,11 +19,15 @@ A Boolean value that indicates whether the motion vectors include the jittering 
 var isJitteredMotionVectorsEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite, getter=isJitteredMotionVectorsEnabled) BOOL jitteredMotionVectorsEnabled;
+```
+
 #### Discussion
 
-When you set this property to [`true`](https://developer.apple.com/documentation/swift/true), the scaler internally subtracts the jitter from the motion vectors using the jitter offset values provided each frame via [`jitterOffsetX`](mtlfxtemporalscalerbase/jitteroffsetx.md) and [`jitterOffsetY`](mtlfxtemporalscalerbase/jitteroffsety.md).
+When you set this property to [`true`](../../Swift/true.md), the scaler internally subtracts the jitter from the motion vectors using the jitter offset values provided each frame via [`jitterOffsetX`](../mtlfxtemporalscalerbase/jitteroffsetx.md) and [`jitterOffsetY`](../mtlfxtemporalscalerbase/jitteroffsety.md).
 
-When [`false`](https://developer.apple.com/documentation/swift/false) (the default), the scaler uses the motion vectors directly without any adjustment.
+When [`false`](../../Swift/false.md) (the default), the scaler uses the motion vectors directly without any adjustment.
 
 
 ---

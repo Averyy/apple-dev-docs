@@ -1,7 +1,8 @@
 # MTRBaseDevice
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,44 +19,48 @@
 class MTRBaseDevice
 ```
 
+```objc
+@interface MTRBaseDevice : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(nodeID: NSNumber, controller: MTRDeviceController)](mtrbasedevice/init(nodeid:controller:).md)
+- [init(nodeID: NSNumber, controller: MTRDeviceController)](./mtrbasedevice/init%28nodeid,controller%29.md)
 ### Instance Properties
-- [var sessionTransportType: MTRTransportType](mtrbasedevice/sessiontransporttype.md)
+- [var sessionTransportType: MTRTransportType](./mtrbasedevice/sessiontransporttype.md)
 ### Instance Methods
-- [func deregisterReportHandlers(with: dispatch_queue_t, completion: () -> Void)](mtrbasedevice/deregisterreporthandlers(with:completion:).md)
-- [func deregisterReportHandlers(withClientQueue: dispatch_queue_t, completion: () -> Void)](mtrbasedevice/deregisterreporthandlers(withclientqueue:completion:).md)
-- [func downloadLog(of: MTRDiagnosticLogType, timeout: TimeInterval, queue: dispatch_queue_t, completion: (URL?, (any Error)?) -> Void)](mtrbasedevice/downloadlog(of:timeout:queue:completion:).md)
-- [func invokeCommand(withEndpointID: NSNumber, clusterID: NSNumber, commandID: NSNumber, commandFields: Any, timedInvokeTimeout: NSNumber?, queue: dispatch_queue_t, completion: ([[String : Any]]?, (any Error)?) -> Void)](mtrbasedevice/invokecommand(withendpointid:clusterid:commandid:commandfields:timedinvoketimeout:queue:completion:).md)
-- [func invokeCommand(withEndpointId: NSNumber, clusterId: NSNumber, commandId: NSNumber, commandFields: Any, timedInvokeTimeout: NSNumber?, clientQueue: dispatch_queue_t, completion: ([[String : Any]]?, (any Error)?) -> Void)](mtrbasedevice/invokecommand(withendpointid:clusterid:commandid:commandfields:timedinvoketimeout:clientqueue:completion:).md)
-- [func openCommissioningWindow(withDiscriminator: NSNumber, duration: NSNumber, queue: dispatch_queue_t, completion: (MTRSetupPayload?, (any Error)?) -> Void)](mtrbasedevice/opencommissioningwindow(withdiscriminator:duration:queue:completion:).md)
-- [func openCommissioningWindow(withSetupPasscode: NSNumber, discriminator: NSNumber, duration: NSNumber, queue: dispatch_queue_t, completion: (MTRSetupPayload?, (any Error)?) -> Void)](mtrbasedevice/opencommissioningwindow(withsetuppasscode:discriminator:duration:queue:completion:).md)
-- [func readAttribute(withEndpointId: NSNumber?, clusterId: NSNumber?, attributeId: NSNumber?, params: MTRReadParams?, clientQueue: dispatch_queue_t, completion: ([[String : Any]]?, (any Error)?) -> Void)](mtrbasedevice/readattribute(withendpointid:clusterid:attributeid:params:clientqueue:completion:).md)
-- [func readAttributePaths([MTRAttributeRequestPath]?, eventPaths: [MTREventRequestPath]?, params: MTRReadParams?, queue: dispatch_queue_t, completion: ([[String : Any]]?, (any Error)?) -> Void)](mtrbasedevice/readattributepaths(_:eventpaths:params:queue:completion:).md)
-- [func readAttributes(withEndpointID: NSNumber?, clusterID: NSNumber?, attributeID: NSNumber?, params: MTRReadParams?, queue: dispatch_queue_t, completion: ([[String : Any]]?, (any Error)?) -> Void)](mtrbasedevice/readattributes(withendpointid:clusterid:attributeid:params:queue:completion:).md)
-- [func readEvents(withEndpointID: NSNumber?, clusterID: NSNumber?, eventID: NSNumber?, params: MTRReadParams?, queue: dispatch_queue_t, completion: ([[String : Any]]?, (any Error)?) -> Void)](mtrbasedevice/readevents(withendpointid:clusterid:eventid:params:queue:completion:).md)
-- [func subscribe(toAttributePaths: [MTRAttributeRequestPath]?, eventPaths: [MTREventRequestPath]?, params: MTRSubscribeParams?, queue: dispatch_queue_t, reportHandler: MTRDeviceResponseHandler, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, resubscriptionScheduled: MTRDeviceResubscriptionScheduledHandler?)](mtrbasedevice/subscribe(toattributepaths:eventpaths:params:queue:reporthandler:subscriptionestablished:resubscriptionscheduled:).md)
-- [func subscribe(with: dispatch_queue_t, minInterval: UInt16, maxInterval: UInt16, params: MTRSubscribeParams?, cacheContainer: MTRAttributeCacheContainer?, attributeReportHandler: MTRDeviceReportHandler?, eventReportHandler: MTRDeviceReportHandler?, errorHandler: MTRDeviceErrorHandler, subscriptionEstablished: (() -> Void)?, resubscriptionScheduled: MTRDeviceResubscriptionScheduledHandler?)](mtrbasedevice/subscribe(with:mininterval:maxinterval:params:cachecontainer:attributereporthandler:eventreporthandler:errorhandler:subscriptionestablished:resubscriptionscheduled:).md)
-- [func subscribe(with: dispatch_queue_t, params: MTRSubscribeParams, clusterStateCacheContainer: MTRClusterStateCacheContainer?, attributeReportHandler: MTRDeviceReportHandler?, eventReportHandler: MTRDeviceReportHandler?, errorHandler: MTRDeviceErrorHandler, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, resubscriptionScheduled: MTRDeviceResubscriptionScheduledHandler?)](mtrbasedevice/subscribe(with:params:clusterstatecachecontainer:attributereporthandler:eventreporthandler:errorhandler:subscriptionestablished:resubscriptionscheduled:).md)
-- [func subscribeAttribute(withEndpointId: NSNumber?, clusterId: NSNumber?, attributeId: NSNumber?, minInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, clientQueue: dispatch_queue_t, reportHandler: MTRDeviceResponseHandler, subscriptionEstablished: (() -> Void)?)](mtrbasedevice/subscribeattribute(withendpointid:clusterid:attributeid:mininterval:maxinterval:params:clientqueue:reporthandler:subscriptionestablished:).md)
-- [func subscribeToAttributes(withEndpointID: NSNumber?, clusterID: NSNumber?, attributeID: NSNumber?, params: MTRSubscribeParams?, queue: dispatch_queue_t, reportHandler: MTRDeviceResponseHandler, subscriptionEstablished: MTRSubscriptionEstablishedHandler?)](mtrbasedevice/subscribetoattributes(withendpointid:clusterid:attributeid:params:queue:reporthandler:subscriptionestablished:).md)
-- [func subscribeToEvents(withEndpointID: NSNumber?, clusterID: NSNumber?, eventID: NSNumber?, params: MTRSubscribeParams?, queue: dispatch_queue_t, reportHandler: MTRDeviceResponseHandler, subscriptionEstablished: MTRSubscriptionEstablishedHandler?)](mtrbasedevice/subscribetoevents(withendpointid:clusterid:eventid:params:queue:reporthandler:subscriptionestablished:).md)
-- [func writeAttribute(withEndpointID: NSNumber, clusterID: NSNumber, attributeID: NSNumber, value: Any, timedWriteTimeout: NSNumber?, queue: dispatch_queue_t, completion: ([[String : Any]]?, (any Error)?) -> Void)](mtrbasedevice/writeattribute(withendpointid:clusterid:attributeid:value:timedwritetimeout:queue:completion:).md)
-- [func writeAttribute(withEndpointId: NSNumber, clusterId: NSNumber, attributeId: NSNumber, value: Any, timedWriteTimeout: NSNumber?, clientQueue: dispatch_queue_t, completion: ([[String : Any]]?, (any Error)?) -> Void)](mtrbasedevice/writeattribute(withendpointid:clusterid:attributeid:value:timedwritetimeout:clientqueue:completion:).md)
+- [func deregisterReportHandlers(with: dispatch_queue_t, completion: () -> Void)](./mtrbasedevice/deregisterreporthandlers%28with,completion%29.md)
+- [func deregisterReportHandlers(withClientQueue: dispatch_queue_t, completion: () -> Void)](./mtrbasedevice/deregisterreporthandlers%28withclientqueue,completion%29.md)
+- [func downloadLog(of: MTRDiagnosticLogType, timeout: TimeInterval, queue: dispatch_queue_t, completion: (URL?, (any Error)?) -> Void)](./mtrbasedevice/downloadlog%28of,timeout,queue,completion%29.md)
+- [func invokeCommand(withEndpointID: NSNumber, clusterID: NSNumber, commandID: NSNumber, commandFields: Any, timedInvokeTimeout: NSNumber?, queue: dispatch_queue_t, completion: ([[String : Any]]?, (any Error)?) -> Void)](./mtrbasedevice/invokecommand%28withendpointid,clusterid,commandid,commandfields,timedinvoketimeout,queue,completion%29.md)
+- [func invokeCommand(withEndpointId: NSNumber, clusterId: NSNumber, commandId: NSNumber, commandFields: Any, timedInvokeTimeout: NSNumber?, clientQueue: dispatch_queue_t, completion: ([[String : Any]]?, (any Error)?) -> Void)](./mtrbasedevice/invokecommand%28withendpointid,clusterid,commandid,commandfields,timedinvoketimeout,clientqueue,completion%29.md)
+- [func openCommissioningWindow(withDiscriminator: NSNumber, duration: NSNumber, queue: dispatch_queue_t, completion: (MTRSetupPayload?, (any Error)?) -> Void)](./mtrbasedevice/opencommissioningwindow%28withdiscriminator,duration,queue,completion%29.md)
+- [func openCommissioningWindow(withSetupPasscode: NSNumber, discriminator: NSNumber, duration: NSNumber, queue: dispatch_queue_t, completion: (MTRSetupPayload?, (any Error)?) -> Void)](./mtrbasedevice/opencommissioningwindow%28withsetuppasscode,discriminator,duration,queue,completion%29.md)
+- [func readAttribute(withEndpointId: NSNumber?, clusterId: NSNumber?, attributeId: NSNumber?, params: MTRReadParams?, clientQueue: dispatch_queue_t, completion: ([[String : Any]]?, (any Error)?) -> Void)](./mtrbasedevice/readattribute%28withendpointid,clusterid,attributeid,params,clientqueue,completion%29.md)
+- [func readAttributePaths([MTRAttributeRequestPath]?, eventPaths: [MTREventRequestPath]?, params: MTRReadParams?, queue: dispatch_queue_t, completion: ([[String : Any]]?, (any Error)?) -> Void)](./mtrbasedevice/readattributepaths%28_,eventpaths,params,queue,completion%29.md)
+- [func readAttributes(withEndpointID: NSNumber?, clusterID: NSNumber?, attributeID: NSNumber?, params: MTRReadParams?, queue: dispatch_queue_t, completion: ([[String : Any]]?, (any Error)?) -> Void)](./mtrbasedevice/readattributes%28withendpointid,clusterid,attributeid,params,queue,completion%29.md)
+- [func readEvents(withEndpointID: NSNumber?, clusterID: NSNumber?, eventID: NSNumber?, params: MTRReadParams?, queue: dispatch_queue_t, completion: ([[String : Any]]?, (any Error)?) -> Void)](./mtrbasedevice/readevents%28withendpointid,clusterid,eventid,params,queue,completion%29.md)
+- [func subscribe(toAttributePaths: [MTRAttributeRequestPath]?, eventPaths: [MTREventRequestPath]?, params: MTRSubscribeParams?, queue: dispatch_queue_t, reportHandler: MTRDeviceResponseHandler, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, resubscriptionScheduled: MTRDeviceResubscriptionScheduledHandler?)](./mtrbasedevice/subscribe%28toattributepaths,eventpaths,params,queue,reporthandler,subscriptionestablished,resubscriptionscheduled%29.md)
+- [func subscribe(with: dispatch_queue_t, minInterval: UInt16, maxInterval: UInt16, params: MTRSubscribeParams?, cacheContainer: MTRAttributeCacheContainer?, attributeReportHandler: MTRDeviceReportHandler?, eventReportHandler: MTRDeviceReportHandler?, errorHandler: MTRDeviceErrorHandler, subscriptionEstablished: (() -> Void)?, resubscriptionScheduled: MTRDeviceResubscriptionScheduledHandler?)](./mtrbasedevice/subscribe%28with,mininterval,maxinterval,params,cachecontainer,attributereporthandler,eventreporthandler,errorhandler,subscriptionestablished,resubscriptionscheduled%29.md)
+- [func subscribe(with: dispatch_queue_t, params: MTRSubscribeParams, clusterStateCacheContainer: MTRClusterStateCacheContainer?, attributeReportHandler: MTRDeviceReportHandler?, eventReportHandler: MTRDeviceReportHandler?, errorHandler: MTRDeviceErrorHandler, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, resubscriptionScheduled: MTRDeviceResubscriptionScheduledHandler?)](./mtrbasedevice/subscribe%28with,params,clusterstatecachecontainer,attributereporthandler,eventreporthandler,errorhandler,subscriptionestablished,resubscriptionscheduled%29.md)
+- [func subscribeAttribute(withEndpointId: NSNumber?, clusterId: NSNumber?, attributeId: NSNumber?, minInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, clientQueue: dispatch_queue_t, reportHandler: MTRDeviceResponseHandler, subscriptionEstablished: (() -> Void)?)](./mtrbasedevice/subscribeattribute%28withendpointid,clusterid,attributeid,mininterval,maxinterval,params,clientqueue,reporthandler,subscriptionestablished%29.md)
+- [func subscribeToAttributes(withEndpointID: NSNumber?, clusterID: NSNumber?, attributeID: NSNumber?, params: MTRSubscribeParams?, queue: dispatch_queue_t, reportHandler: MTRDeviceResponseHandler, subscriptionEstablished: MTRSubscriptionEstablishedHandler?)](./mtrbasedevice/subscribetoattributes%28withendpointid,clusterid,attributeid,params,queue,reporthandler,subscriptionestablished%29.md)
+- [func subscribeToEvents(withEndpointID: NSNumber?, clusterID: NSNumber?, eventID: NSNumber?, params: MTRSubscribeParams?, queue: dispatch_queue_t, reportHandler: MTRDeviceResponseHandler, subscriptionEstablished: MTRSubscriptionEstablishedHandler?)](./mtrbasedevice/subscribetoevents%28withendpointid,clusterid,eventid,params,queue,reporthandler,subscriptionestablished%29.md)
+- [func writeAttribute(withEndpointID: NSNumber, clusterID: NSNumber, attributeID: NSNumber, value: Any, timedWriteTimeout: NSNumber?, queue: dispatch_queue_t, completion: ([[String : Any]]?, (any Error)?) -> Void)](./mtrbasedevice/writeattribute%28withendpointid,clusterid,attributeid,value,timedwritetimeout,queue,completion%29.md)
+- [func writeAttribute(withEndpointId: NSNumber, clusterId: NSNumber, attributeId: NSNumber, value: Any, timedWriteTimeout: NSNumber?, clientQueue: dispatch_queue_t, completion: ([[String : Any]]?, (any Error)?) -> Void)](./mtrbasedevice/writeattribute%28withendpointid,clusterid,attributeid,value,timedwritetimeout,clientqueue,completion%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

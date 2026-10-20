@@ -1,26 +1,28 @@
 # IOUserMIDIObjectID
 
 **Framework**: MIDIDriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - DriverKit 24.0+
 
 ## Declaration
 
-```swift
+```c
 typedef uint32_t IOUserMIDIObjectID;
 ```
 
 ## See Also
 
-- [IOUserMIDIClassID](mididriverkit/iousermidiclassid.md)
-- [IOUserMIDIProperty](mididriverkit/iousermidiproperty.md)
-- [IOUserMIDIPropertySelector](mididriverkit/iousermidipropertyselector.md)
-- [IOUserMIDIPropertyType](mididriverkit/iousermidipropertytype.md)
-- [IOUserMIDIProtocolID](mididriverkit/iousermidiprotocolid.md)
-- [IOUserMIDIUMPWord](mididriverkit/iousermidiumpword.md)
-- [MIDIIOBlock](mididriverkit/midiioblock.md)
+### Data Types
+- [IOUserMIDIClassID](./iousermidiclassid.md)
+- [IOUserMIDIProperty](./iousermidiproperty.md)
+- [IOUserMIDIPropertySelector](./iousermidipropertyselector.md)
+- [IOUserMIDIPropertyType](./iousermidipropertytype.md)
+- [IOUserMIDIProtocolID](./iousermidiprotocolid.md)
+- [IOUserMIDIUMPWord](./iousermidiumpword.md)
+- [MIDIIOBlock](./midiioblock.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # MTL4ComputePipelineDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Describes a compute pipeline state.
 
@@ -19,56 +20,61 @@ Describes a compute pipeline state.
 class MTL4ComputePipelineDescriptor
 ```
 
+```objc
+@interface MTL4ComputePipelineDescriptor : MTL4PipelineDescriptor
+```
+
 ## Topics
 
 ### Instance Properties
-- [var computeFunctionDescriptor: MTL4FunctionDescriptor?](mtl4computepipelinedescriptor/computefunctiondescriptor.md)
+- [var computeFunctionDescriptor: MTL4FunctionDescriptor?](./mtl4computepipelinedescriptor/computefunctiondescriptor.md)
   A descriptor representing the compute pipeline’s function.
-- [var contentionRelief: MTLContentionRelief](mtl4computepipelinedescriptor/contentionrelief.md)
-- [var forwardProgressUsage: MTLForwardProgressUsage](mtl4computepipelinedescriptor/forwardprogressusage.md)
-- [var maxTotalThreadsPerThreadgroup: Int](mtl4computepipelinedescriptor/maxtotalthreadsperthreadgroup.md)
+- [var contentionRelief: MTLContentionRelief](./mtl4computepipelinedescriptor/contentionrelief.md)
+- [var forwardProgressUsage: MTLForwardProgressUsage](./mtl4computepipelinedescriptor/forwardprogressusage.md)
+- [var maxTotalThreadsPerThreadgroup: Int](./mtl4computepipelinedescriptor/maxtotalthreadsperthreadgroup.md)
   The maximum total number of threads that Metal can execute in a single threadgroup for the compute function.
-- [var optimizeForPersistentKernel: Bool](mtl4computepipelinedescriptor/optimizeforpersistentkernel.md)
-- [var requiredThreadsPerThreadgroup: MTLSize](mtl4computepipelinedescriptor/requiredthreadsperthreadgroup.md)
+- [var optimizeForPersistentKernel: Bool](./mtl4computepipelinedescriptor/optimizeforpersistentkernel.md)
+- [var requiredThreadsPerThreadgroup: MTLSize](./mtl4computepipelinedescriptor/requiredthreadsperthreadgroup.md)
   The required number of threads per threadgroup for compute dispatches.
-- [var staticLinkingDescriptor: MTL4StaticLinkingDescriptor?](mtl4computepipelinedescriptor/staticlinkingdescriptor.md)
+- [var staticLinkingDescriptor: MTL4StaticLinkingDescriptor?](./mtl4computepipelinedescriptor/staticlinkingdescriptor.md)
   An object that contains information about functions to link to the compute pipeline.
-- [var supportBinaryLinking: Bool](mtl4computepipelinedescriptor/supportbinarylinking.md)
+- [var supportBinaryLinking: Bool](./mtl4computepipelinedescriptor/supportbinarylinking.md)
   A boolean value indicating whether the compute pipeline supports linking binary functions.
-- [var supportIndirectCommandBuffers: MTL4IndirectCommandBufferSupportState](mtl4computepipelinedescriptor/supportindirectcommandbuffers.md)
+- [var supportIndirectCommandBuffers: MTL4IndirectCommandBufferSupportState](./mtl4computepipelinedescriptor/supportindirectcommandbuffers.md)
   A value indicating whether the pipeline supports Metal indirect command buffers.
-- [var threadGroupSizeIsMultipleOfThreadExecutionWidth: Bool](mtl4computepipelinedescriptor/threadgroupsizeismultipleofthreadexecutionwidth.md)
+- [var threadGroupSizeIsMultipleOfThreadExecutionWidth: Bool](./mtl4computepipelinedescriptor/threadgroupsizeismultipleofthreadexecutionwidth.md)
   A boolean value indicating whether each dimension of the threadgroup size is a multiple of its corresponding thread execution width.
 ### Instance Methods
-- [func reset()](mtl4computepipelinedescriptor/reset.md)
+- [func reset()](./mtl4computepipelinedescriptor/reset%28%29.md)
   Resets the descriptor to its default values.
 
 ## Relationships
 
 ### Inherits From
-- [MTL4PipelineDescriptor](mtl4pipelinedescriptor.md)
+- [MTL4PipelineDescriptor](./mtl4pipelinedescriptor.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTLComputePipelineDescriptor](mtlcomputepipelinedescriptor.md)
+### Configuring a compute pipeline state
+- [class MTLComputePipelineDescriptor](./mtlcomputepipelinedescriptor.md)
   An instance describing the desired GPU state for a kernel call in a compute pass.
-- [protocol MTLComputePipelineState](mtlcomputepipelinestate.md)
+- [protocol MTLComputePipelineState](./mtlcomputepipelinestate.md)
   An interface that represents a GPU pipeline configuration for running kernels in a compute pass.
-- [class MTLStageInputOutputDescriptor](mtlstageinputoutputdescriptor.md)
+- [class MTLStageInputOutputDescriptor](./mtlstageinputoutputdescriptor.md)
   A description of the input and output data of a function.
-- [class MTLPipelineBufferDescriptor](mtlpipelinebufferdescriptor.md)
+- [class MTLPipelineBufferDescriptor](./mtlpipelinebufferdescriptor.md)
   The mutability options for a buffer that a render or compute pipeline uses.
-- [class MTLPipelineBufferDescriptorArray](mtlpipelinebufferdescriptorarray.md)
+- [class MTLPipelineBufferDescriptorArray](./mtlpipelinebufferdescriptorarray.md)
   An array of pipeline buffer descriptors.
-- [struct MTLPipelineOption](mtlpipelineoption.md)
+- [struct MTLPipelineOption](./mtlpipelineoption.md)
   Options that determine how Metal prepares the pipeline.
 
 

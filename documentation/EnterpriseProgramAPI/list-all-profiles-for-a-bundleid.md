@@ -1,7 +1,8 @@
 # List All Profiles for a BundleId
 
 **Framework**: Enterprise Program API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get a list of all profiles for a specific bundle ID.
 
@@ -11,12 +12,27 @@ Get a list of all profiles for a specific bundle ID.
 
 ## Parameters
 
-- `fields[profiles]` ([string])
-- `limit` (integer)
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Query Parameters
+
+- `fields[profiles]` ([string]): **Allowed Values**: `bundleId`, `certificates`, `createdDate`, `devices`, `expirationDate`, `name`, `platform`, `profileContent`, `profileState`, `profileType`, `uuid`
+- `limit` (integer): **Maximum**: `200`
+
+## Responses
+
+- `200` OK (`ProfilesWithoutIncludesResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
 
 ## See Also
 
-- [List All Bundle Id Capabilities for a BundleId](list-all-bundle-id-capabilities-for-a-bundleid.md)
+### Getting Related Data
+- [List All Bundle Id Capabilities for a BundleId](./list-all-bundle-id-capabilities-for-a-bundleid.md)
   Get a list of all capabilities for a specific bundle ID.
 
 

@@ -1,7 +1,8 @@
 # invalidate()
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the rendering process.
 
@@ -24,7 +25,8 @@ After you call this method, other method calls on the rendering process throw er
 
 ## See Also
 
-- [init(bundleIdentifier: String?, onInterruption: () -> Void) async throws](renderingprocess/init(bundleidentifier:oninterruption:).md)
+### Creating and invalidating extension processes
+- [init(bundleIdentifier: String?, onInterruption: () -> Void) async throws](./init%28bundleidentifier,oninterruption%29.md)
   Launches a rendering extension process asynchronously.
 
 

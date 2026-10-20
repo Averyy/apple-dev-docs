@@ -1,7 +1,8 @@
 # description
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of this environment light estimation provider.
 
@@ -16,9 +17,10 @@ final var description: String { get }
 
 ## See Also
 
-- [var anchorUpdates: AnchorUpdateSequence<EnvironmentProbeAnchor>](environmentlightestimationprovider/anchorupdates.md)
+### Inspecting the environment light estimation provider
+- [var anchorUpdates: AnchorUpdateSequence<EnvironmentProbeAnchor>](./anchorupdates.md)
   An asynchronous sequence of all anchor updates.
-- [var state: DataProviderState](environmentlightestimationprovider/state.md)
+- [var state: DataProviderState](./state.md)
   The state of an environment light estimation provider.
 
 

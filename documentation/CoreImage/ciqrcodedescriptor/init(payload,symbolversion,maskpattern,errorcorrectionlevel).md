@@ -1,7 +1,8 @@
 # init(payload:symbolVersion:maskPattern:errorCorrectionLevel:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a QR code descriptor for the given payload and parameters.
 
@@ -19,9 +20,13 @@ Initializes a QR code descriptor for the given payload and parameters.
 init?(payload errorCorrectedPayload: Data, symbolVersion: Int, maskPattern: UInt8, errorCorrectionLevel: CIQRCodeDescriptor.ErrorCorrectionLevel)
 ```
 
+```objc
+- (instancetype) initWithPayload:(NSData *) errorCorrectedPayload symbolVersion:(NSInteger) symbolVersion maskPattern:(uint8_t) maskPattern errorCorrectionLevel:(CIQRCodeErrorCorrectionLevel) errorCorrectionLevel;
+```
+
 #### Return Value
 
- An initialized [`CIAztecCodeDescriptor`](ciazteccodedescriptor.md) instance or `nil` if the parameters are invalid
+ An initialized [`CIAztecCodeDescriptor`](../ciazteccodedescriptor.md) instance or `nil` if the parameters are invalid
 
 ## Parameters
 

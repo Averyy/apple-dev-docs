@@ -1,14 +1,15 @@
 # ace_rights
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 kauth_ace_rights_t ace_rights;
 ```
 

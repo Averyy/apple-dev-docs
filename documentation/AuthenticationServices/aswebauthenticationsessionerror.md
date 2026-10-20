@@ -1,7 +1,8 @@
 # ASWebAuthenticationSessionError
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Errors that a web authentication session can generate.
 
@@ -23,34 +24,35 @@ struct ASWebAuthenticationSessionError
 ## Topics
 
 ### Error Domain
-- [let ASWebAuthenticationSessionErrorDomain: String](aswebauthenticationsessionerrordomain.md)
+- [let ASWebAuthenticationSessionErrorDomain: String](./aswebauthenticationsessionerrordomain.md)
   The error domain for a web authentication session.
-- [static var errorDomain: String](aswebauthenticationsessionerror/errordomain.md)
+- [static var errorDomain: String](./aswebauthenticationsessionerror/errordomain.md)
 ### Error Codes
-- [static var canceledLogin: ASWebAuthenticationSessionError.Code](aswebauthenticationsessionerror/canceledlogin.md)
+- [static var canceledLogin: ASWebAuthenticationSessionError.Code](./aswebauthenticationsessionerror/canceledlogin.md)
   The login has been canceled.
-- [static var presentationContextNotProvided: ASWebAuthenticationSessionError.Code](aswebauthenticationsessionerror/presentationcontextnotprovided.md)
+- [static var presentationContextNotProvided: ASWebAuthenticationSessionError.Code](./aswebauthenticationsessionerror/presentationcontextnotprovided.md)
   A context wasn’t provided.
-- [static var presentationContextInvalid: ASWebAuthenticationSessionError.Code](aswebauthenticationsessionerror/presentationcontextinvalid.md)
+- [static var presentationContextInvalid: ASWebAuthenticationSessionError.Code](./aswebauthenticationsessionerror/presentationcontextinvalid.md)
   The context was invalid.
-- [ASWebAuthenticationSessionError.Code](aswebauthenticationsessionerror/code.md)
+- [ASWebAuthenticationSessionError.Code](./aswebauthenticationsessionerror/code.md)
   The error code for a web authentication session error.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let ASWebAuthenticationSessionErrorDomain: String](aswebauthenticationsessionerrordomain.md)
+### Recognizing Errors
+- [let ASWebAuthenticationSessionErrorDomain: String](./aswebauthenticationsessionerrordomain.md)
   The error domain for a web authentication session.
-- [ASWebAuthenticationSessionError.Code](aswebauthenticationsessionerror/code.md)
+- [ASWebAuthenticationSessionError.Code](./aswebauthenticationsessionerror/code.md)
   The error code for a web authentication session error.
 
 

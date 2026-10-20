@@ -1,7 +1,8 @@
 # overrideNewTabPageURL
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL to use as an alternative to the default new tab page, if the extension has one.
 
@@ -18,6 +19,10 @@ The URL to use as an alternative to the default new tab page, if the extension h
 var overrideNewTabPageURL: URL? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSURL * overrideNewTabPageURL;
+```
+
 #### Discussion
 
 Provides the URL for a new tab page, if provided by the extension; otherwise `nil` if no page is defined.
@@ -28,7 +33,8 @@ The app should prompt the user for permission to use the extension’s new tab p
 
 ## See Also
 
-- [var webViewConfiguration: WKWebViewConfiguration?](wkwebextensioncontext/webviewconfiguration.md)
+### Related Documentation
+- [var webViewConfiguration: WKWebViewConfiguration?](./webviewconfiguration.md)
   The web view configuration to use for web views that load pages from this extension.
 
 

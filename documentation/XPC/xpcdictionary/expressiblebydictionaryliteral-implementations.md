@@ -1,11 +1,12 @@
 # ExpressibleByDictionaryLiteral Implementations
 
-**Framework**: XPC
+**Framework**: XPC  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(dictionaryLiteral: (String, XPCLiteralValue)...)](xpcdictionary/init(dictionaryliteral:).md)
+- [init(dictionaryLiteral: (String, XPCLiteralValue)...)](./init%28dictionaryliteral%29.md)
   Creates an `XPCDictionary` initialized with the given key-value pairs.
 
 

@@ -1,7 +1,8 @@
 # searchBar(_:selectedScopeButtonIndexDidChange:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the scope button selection changed.
 
@@ -9,7 +10,7 @@ Tells the delegate that the scope button selection changed.
 - iOS 3.0+
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,10 +19,14 @@ Tells the delegate that the scope button selection changed.
 optional func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int)
 ```
 
+```objc
+- (void) searchBar:(UISearchBar *) searchBar selectedScopeButtonIndexDidChange:(NSInteger) selectedScope;
+```
+
 ## Parameters
 
 - `searchBar`: The search bar that was tapped.
-- `selectedScope`: The index of the selected scope button (see [`selectedScopeButtonIndex`](uisearchbar/selectedscopebuttonindex.md)).
+- `selectedScope`: The index of the selected scope button (see [`selectedScopeButtonIndex`](../uisearchbar/selectedscopebuttonindex.md)).
 
 
 ---

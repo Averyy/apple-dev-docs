@@ -1,7 +1,8 @@
 # PKPaymentMethod
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains information about payment methods.
 
@@ -19,44 +20,49 @@ An object that contains information about payment methods.
 class PKPaymentMethod
 ```
 
+```objc
+@interface PKPaymentMethod : NSObject
+```
+
 ## Topics
 
 ### Getting the pass
-- [var secureElementPass: PKSecureElementPass?](pkpaymentmethod/secureelementpass.md)
+- [var secureElementPass: PKSecureElementPass?](./pkpaymentmethod/secureelementpass.md)
   The accompanying Secure Element pass.
-- [var paymentPass: PKPaymentPass?](pkpaymentmethod/paymentpass.md)
+- [var paymentPass: PKPaymentPass?](./pkpaymentmethod/paymentpass.md)
   The accompanying payment pass.
 ### Getting the payment method’s attributes
-- [var type: PKPaymentMethodType](pkpaymentmethod/type.md)
+- [var type: PKPaymentMethodType](./pkpaymentmethod/type.md)
   A value that represents the card’s type.
-- [enum PKPaymentMethodType](pkpaymentmethodtype.md)
+- [enum PKPaymentMethodType](./pkpaymentmethodtype.md)
   The type of cards available in Apple Pay.
-- [var displayName: String?](pkpaymentmethod/displayname.md)
+- [var displayName: String?](./pkpaymentmethod/displayname.md)
   A string, suitable for display, that describes the card.
-- [var network: PKPaymentNetwork?](pkpaymentmethod/network.md)
+- [var network: PKPaymentNetwork?](./pkpaymentmethod/network.md)
   A string, suitable for display, that describes the payment network for the card.
-- [var billingAddress: CNContact?](pkpaymentmethod/billingaddress.md)
+- [var billingAddress: CNContact?](./pkpaymentmethod/billingaddress.md)
   The user’s billing address.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var paymentData: Data](pkpaymenttoken/paymentdata.md)
+### Working with payment tokens
+- [var paymentData: Data](./pkpaymenttoken/paymentdata.md)
   The payment data as a UTF-8 encoded serialization of a JSON dictionary.
-- [var paymentMethod: PKPaymentMethod](pkpaymenttoken/paymentmethod.md)
+- [var paymentMethod: PKPaymentMethod](./pkpaymenttoken/paymentmethod.md)
   Information about the card used in the transaction.
-- [var transactionIdentifier: String](pkpaymenttoken/transactionidentifier.md)
+- [var transactionIdentifier: String](./pkpaymenttoken/transactionidentifier.md)
   A unique identifier for this payment.
 
 

@@ -1,7 +1,8 @@
 # kSpeechVoiceID
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The voice ID of the voice for the synthesizer (every voice on a synthesizer has a unique ID).
 
@@ -12,6 +13,10 @@ The voice ID of the voice for the synthesizer (every voice on a synthesizer has 
 
 ```swift
 let kSpeechVoiceID: CFString
+```
+
+```c
+const CFStringRef kSpeechVoiceID;
 ```
 
 

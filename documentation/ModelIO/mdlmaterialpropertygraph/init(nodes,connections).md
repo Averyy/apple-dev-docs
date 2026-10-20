@@ -1,7 +1,8 @@
 # init(nodes:connections:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 10.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(nodes: [MDLMaterialPropertyNode], connections: [MDLMaterialPropertyConnection])
+```
+
+```objc
+- (instancetype) initWithNodes:(NSArray<MDLMaterialPropertyNode *> *) nodes connections:(NSArray<MDLMaterialPropertyConnection *> *) connections;
 ```
 
 

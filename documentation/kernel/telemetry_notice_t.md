@@ -1,14 +1,15 @@
 # telemetry_notice_t
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 typedef enum telemetry_notice_t : uint32_t {
     ...
 } telemetry_notice_t;
@@ -17,8 +18,8 @@ typedef enum telemetry_notice_t : uint32_t {
 ## Topics
 
 ### Constants
-- [TELEMETRY_NOTICE_BASE](telemetry_notice_t/telemetry_notice_base.md)
-- [TELEMETRY_NOTICE_KERNEL_MICROSTACKSHOT](telemetry_notice_t/telemetry_notice_kernel_microstackshot.md)
+- [TELEMETRY_NOTICE_BASE](./telemetry_notice_t/telemetry_notice_base.md)
+- [TELEMETRY_NOTICE_KERNEL_MICROSTACKSHOT](./telemetry_notice_t/telemetry_notice_kernel_microstackshot.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # download(for:)
 
 **Framework**: Background Assets  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a download object for the asset pack that you schedule using a download manager.
 
@@ -29,7 +30,8 @@ A download object.
 
 ## See Also
 
-- [let downloadSize: Int](assetpack/downloadsize.md)
+### Downloading assets
+- [let downloadSize: Int](./downloadsize.md)
   The size of the download file containing the asset pack in bytes.
 
 

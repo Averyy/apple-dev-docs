@@ -1,7 +1,8 @@
 # CompositeSubpartTranslation
 
 **Framework**: hvf  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A subpart translation in a Composite part
 
@@ -23,16 +24,16 @@ struct CompositeSubpartTranslation
 ## Topics
 
 ### Initializers
-- [init(dx: Float, dy: Float)](compositesubparttranslation/init(dx:dy:).md)
+- [init(dx: Float, dy: Float)](./compositesubparttranslation/init%28dx,dy%29.md)
 ### Instance Properties
-- [var dx: Float](compositesubparttranslation/dx.md)
-- [var dy: Float](compositesubparttranslation/dy.md)
+- [var dx: Float](./compositesubparttranslation/dx.md)
+- [var dy: Float](./compositesubparttranslation/dy.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

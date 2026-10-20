@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The device object that created the argument encoder.
@@ -20,13 +21,18 @@ The device object that created the argument encoder.
 var device: any MTLDevice { get }
 ```
 
+```objc
+@property (readonly) id<MTLDevice> device;
+```
+
 #### Discussion
 
 You can only use the encoder to encode data into buffers created by the same Metal device object.
 
 ## See Also
 
-- [var label: String?](mtlargumentencoder/label.md)
+### Identifying the argument encoder
+- [var label: String?](./label.md)
   A string that identifies the argument buffer.
 
 

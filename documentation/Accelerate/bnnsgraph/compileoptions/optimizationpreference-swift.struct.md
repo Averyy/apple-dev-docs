@@ -1,7 +1,8 @@
 # BNNSGraph.CompileOptions.OptimizationPreference
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that describe the compilation-optimization preference.
 
@@ -11,7 +12,7 @@ Constants that describe the compilation-optimization preference.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -27,15 +28,15 @@ Use the constants that this structure defines to specify whether the BNNS librar
 ## Topics
 
 ### Optimization preferences
-- [static var internalRepresentationSize: BNNSGraph.CompileOptions.OptimizationPreference](bnnsgraph/compileoptions/optimizationpreference-swift.struct/internalrepresentationsize.md)
+- [static var internalRepresentationSize: BNNSGraph.CompileOptions.OptimizationPreference](./optimizationpreference-swift.struct/internalrepresentationsize.md)
   A constant that specifies compilation optimization for smallest graph size on disk.
-- [static var performance: BNNSGraph.CompileOptions.OptimizationPreference](bnnsgraph/compileoptions/optimizationpreference-swift.struct/performance.md)
+- [static var performance: BNNSGraph.CompileOptions.OptimizationPreference](./optimizationpreference-swift.struct/performance.md)
   A constant that specifies compilation optimization for best execution performance.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../../Swift/equatable.md)
 
 
 ---

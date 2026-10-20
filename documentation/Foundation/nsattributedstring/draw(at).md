@@ -1,7 +1,8 @@
 # draw(at:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the attributed string starting at the specified point in the current graphics context.
 
@@ -20,6 +21,10 @@ Draws the attributed string starting at the specified point in the current graph
 func draw(at point: CGPoint)
 ```
 
+```objc
+- (void) drawAtPoint:(CGPoint) point;
+```
+
 #### Discussion
 
 This method draws the entire string starting at the specified point. This method draws the line using the attributes specified in the attributed string itself. If newline characters are present in the string, those characters are honored and cause subsequent text to be placed on the next line underneath the starting point.
@@ -32,13 +37,15 @@ There must be either a focused view or an active graphics context when you call 
 
 ## See Also
 
-- [func size() -> CGSize](nsattributedstring/size.md)
+### Related Documentation
+- [func size() -> CGSize](./size%28%29.md)
   Returns the size necessary to draw the string.
-- [func lockFocus()](../appkit/nsview/lockfocus.md)
+- [func lockFocus()](../../AppKit/nsview/lockfocus%28%29.md)
   Locks the focus on the view, so subsequent commands take effect in the view’s window and coordinate system.
-- [func draw(in: CGRect)](nsattributedstring/draw(in:).md)
+### Drawing the attributed string
+- [func draw(in: CGRect)](./draw%28in%29.md)
   Draws the attributed string inside the specified bounding rectangle in the current graphics context.
-- [func draw(with: CGRect, options: NSStringDrawingOptions, context: NSStringDrawingContext?)](nsattributedstring/draw(with:options:context:).md)
+- [func draw(with: CGRect, options: NSStringDrawingOptions, context: NSStringDrawingContext?)](./draw%28with,options,context%29.md)
   Draws the attributed string in the specified bounding rectangle using the provided options.
 
 

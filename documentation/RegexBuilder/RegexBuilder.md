@@ -1,7 +1,8 @@
 # RegexBuilder
 
 **Framework**: RegexBuilder  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Use an expressive domain-specific language to build regular expressions, for operations like searching and replacing in text.
 
@@ -49,45 +50,45 @@ if let match = text.firstMatch(of: emailPattern) {
 ## Topics
 
 ### Components
-- [struct CharacterClass](characterclass.md)
+- [struct CharacterClass](./characterclass.md)
   A class of characters that match in a regex.
-- [struct Anchor](anchor.md)
+- [struct Anchor](./anchor.md)
   A regex component that matches a specific condition at a particular position in an input string.
-- [struct Lookahead](lookahead.md)
+- [struct Lookahead](./lookahead.md)
   A regex component that allows a match to continue only if its contents match at the given location.
-- [struct NegativeLookahead](negativelookahead.md)
+- [struct NegativeLookahead](./negativelookahead.md)
   A regex component that allows a match to continue only if its contents do not match at the given location.
-- [struct ChoiceOf](choiceof.md)
+- [struct ChoiceOf](./choiceof.md)
   A regex component that chooses exactly one of its constituent regex components when matching.
 ### Quantifiers
-- [struct One](one.md)
+- [struct One](./one.md)
   A regex component that matches exactly one occurrence of its underlying component.
-- [struct Optionally](optionally.md)
+- [struct Optionally](./optionally.md)
   A regex component that matches zero or one occurrences of its underlying component.
-- [struct ZeroOrMore](zeroormore.md)
+- [struct ZeroOrMore](./zeroormore.md)
   A regex component that matches zero or more occurrences of its underlying component.
-- [struct OneOrMore](oneormore.md)
+- [struct OneOrMore](./oneormore.md)
   A regex component that matches one or more occurrences of its underlying component.
-- [struct Repeat](repeat.md)
+- [struct Repeat](./repeat.md)
   A regex component that matches a selectable number of occurrences of its underlying component.
-- [struct Local](local.md)
+- [struct Local](./local.md)
   A regex component that represents an atomic group.
 ### Captures
-- [struct Capture](capture.md)
+- [struct Capture](./capture.md)
   A regex component that saves the matched substring, or a transformed result, for access in a regex match.
-- [struct TryCapture](trycapture.md)
+- [struct TryCapture](./trycapture.md)
   A regex component that attempts to transform a matched substring, saving the result if successful and backtracking if the transformation fails.
-- [struct Reference](reference.md)
+- [struct Reference](./reference.md)
   A reference to a captured portion of a regular expression.
 ### Builders
-- [enum RegexComponentBuilder](regexcomponentbuilder.md)
+- [enum RegexComponentBuilder](./regexcomponentbuilder.md)
   A custom parameter attribute that constructs regular expressions from closures.
-- [struct AlternationBuilder](alternationbuilder.md)
+- [struct AlternationBuilder](./alternationbuilder.md)
   A custom parameter attribute that constructs regular expression alternations from closures.
 ### Operators
-- [func ... (Character, Character) -> CharacterClass]('...(_:_:)-16g2a.md)
+- [func ... (Character, Character) -> CharacterClass](./dotdotdot%28_,_%29-16g2a.md)
   Returns a character class that includes the characters in the given range.
-- [func ... (UnicodeScalar, UnicodeScalar) -> CharacterClass]('...(_:_:)-629xh.md)
+- [func ... (UnicodeScalar, UnicodeScalar) -> CharacterClass](./dotdotdot%28_,_%29-629xh.md)
   Returns a character class that includes the Unicode scalars in the given range.
 
 

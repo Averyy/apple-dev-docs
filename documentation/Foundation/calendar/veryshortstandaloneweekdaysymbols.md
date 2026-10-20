@@ -1,7 +1,8 @@
 # veryShortStandaloneWeekdaySymbols
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of very-shortly-named weekdays in this calendar, localized to the Calendar’s `locale`.
 
@@ -30,15 +31,16 @@ For example, for English in the Gregorian calendar, returns `["S", "M", "T", "W"
 
 ## See Also
 
-- [var weekdaySymbols: [String]](calendar/weekdaysymbols.md)
+### Getting Weekday Symbols
+- [var weekdaySymbols: [String]](./weekdaysymbols.md)
   A list of weekdays in this calendar, localized to the Calendar’s `locale`.
-- [var shortWeekdaySymbols: [String]](calendar/shortweekdaysymbols.md)
+- [var shortWeekdaySymbols: [String]](./shortweekdaysymbols.md)
   A list of shorter-named weekdays in this calendar, localized to the Calendar’s `locale`.
-- [var veryShortWeekdaySymbols: [String]](calendar/veryshortweekdaysymbols.md)
+- [var veryShortWeekdaySymbols: [String]](./veryshortweekdaysymbols.md)
   A list of very-shortly-named weekdays in this calendar, localized to the Calendar’s `locale`.
-- [var standaloneWeekdaySymbols: [String]](calendar/standaloneweekdaysymbols.md)
+- [var standaloneWeekdaySymbols: [String]](./standaloneweekdaysymbols.md)
   A list of standalone weekday names in this calendar, localized to the Calendar’s `locale`.
-- [var shortStandaloneWeekdaySymbols: [String]](calendar/shortstandaloneweekdaysymbols.md)
+- [var shortStandaloneWeekdaySymbols: [String]](./shortstandaloneweekdaysymbols.md)
   A list of shorter-named standalone weekdays in this calendar, localized to the Calendar’s `locale`.
 
 

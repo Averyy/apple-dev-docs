@@ -1,17 +1,18 @@
 # operator=
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Method Template
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 template <typename U, typename = std::std::enable_if_t<std::is_convertible_v<U *, T *>>> OSSharedPtr<T> & operator=(const OSSharedPtr<U> & other);
 ```
 

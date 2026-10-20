@@ -1,7 +1,8 @@
 # activityMoveMode()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the activity move mode for the current user.
 
@@ -19,9 +20,14 @@ Returns the activity move mode for the current user.
 func activityMoveMode() throws -> HKActivityMoveModeObject
 ```
 
+```objc
+- (HKActivityMoveModeObject *) activityMoveModeWithError:(NSError **) error;
+```
+
 ## See Also
 
-- [static let HKUserPreferencesDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/hkuserpreferencesdidchange.md)
+### Accessing the move mode
+- [static let HKUserPreferencesDidChange: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/hkuserpreferencesdidchange.md)
   Notifies observers whenever the user changes his or her preferred units.
 
 

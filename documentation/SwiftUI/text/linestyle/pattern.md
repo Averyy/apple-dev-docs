@@ -1,7 +1,8 @@
 # Text.LineStyle.Pattern
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The pattern, that the line has.
 
@@ -23,27 +24,28 @@ struct Pattern
 ## Topics
 
 ### Getting line style patterns
-- [static let solid: Text.LineStyle.Pattern](text/linestyle/pattern/solid.md)
+- [static let solid: Text.LineStyle.Pattern](./pattern/solid.md)
   Draw a solid line.
-- [static let dot: Text.LineStyle.Pattern](text/linestyle/pattern/dot.md)
+- [static let dot: Text.LineStyle.Pattern](./pattern/dot.md)
   Draw a line of dots.
-- [static let dash: Text.LineStyle.Pattern](text/linestyle/pattern/dash.md)
+- [static let dash: Text.LineStyle.Pattern](./pattern/dash.md)
   Draw a line of dashes.
-- [static let dashDot: Text.LineStyle.Pattern](text/linestyle/pattern/dashdot.md)
-- [static let dashDotDot: Text.LineStyle.Pattern](text/linestyle/pattern/dashdotdot.md)
+- [static let dashDot: Text.LineStyle.Pattern](./pattern/dashdot.md)
+- [static let dashDotDot: Text.LineStyle.Pattern](./pattern/dashdotdot.md)
   Draw a line of alternating dashes and two dots.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init?(nsUnderlineStyle: NSUnderlineStyle)](text/linestyle/init(nsunderlinestyle:).md)
+### Creating a text line style
+- [init?(nsUnderlineStyle: NSUnderlineStyle)](./init%28nsunderlinestyle%29.md)
   Creates a `Text.LineStyle` from `NSUnderlineStyle`.
-- [init(pattern: Text.LineStyle.Pattern, color: Color?)](text/linestyle/init(pattern:color:).md)
+- [init(pattern: Text.LineStyle.Pattern, color: Color?)](./init%28pattern,color%29.md)
   Creates a line style.
 
 

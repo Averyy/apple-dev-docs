@@ -1,7 +1,8 @@
 # startAnimating()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts the animation of the progress indicator.
 
@@ -9,7 +10,7 @@ Starts the animation of the progress indicator.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ Starts the animation of the progress indicator.
 func startAnimating()
 ```
 
+```objc
+- (void) startAnimating;
+```
+
 #### Discussion
 
-When the progress indicator is animated, the gear spins to indicate indeterminate progress. The indicator is animated until [`stopAnimating()`](uiactivityindicatorview/stopanimating().md) is called.
+When the progress indicator is animated, the gear spins to indicate indeterminate progress. The indicator is animated until [`stopAnimating()`](./stopanimating%28%29.md) is called.
 
 ## See Also
 
-- [func stopAnimating()](uiactivityindicatorview/stopanimating.md)
+### Managing an activity indicator
+- [func stopAnimating()](./stopanimating%28%29.md)
   Stops the animation of the progress indicator.
-- [var isAnimating: Bool](uiactivityindicatorview/isanimating.md)
+- [var isAnimating: Bool](./isanimating.md)
   A Boolean value indicating whether the activity indicator is currently running its animation.
-- [var hidesWhenStopped: Bool](uiactivityindicatorview/hideswhenstopped.md)
+- [var hidesWhenStopped: Bool](./hideswhenstopped.md)
   A Boolean value that controls whether the activity indicator is hidden when the animation is stopped.
 
 

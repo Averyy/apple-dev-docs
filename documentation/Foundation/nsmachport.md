@@ -1,7 +1,8 @@
 # NSMachPort
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A port that can be used as an endpoint for distributed object connections (or raw messaging).
 
@@ -20,69 +21,74 @@ A port that can be used as an endpoint for distributed object connections (or ra
 class NSMachPort
 ```
 
+```objc
+@interface NSMachPort : NSPort
+```
+
 #### Overview
 
-[`NSMachPort`](nsmachport.md) is a subclass of [`Port`](port.md) that wraps a Mach port, the fundamental communication port in macOS. [`NSMachPort`](nsmachport.md) allows for local (on the same machine) communication only. A companion class, [`SocketPort`](socketport.md), allows for both local and remote distributed object communication, but may be more expensive than [`NSMachPort`](nsmachport.md) for the local case.
+[`NSMachPort`](./nsmachport.md) is a subclass of [`Port`](./port.md) that wraps a Mach port, the fundamental communication port in macOS. [`NSMachPort`](./nsmachport.md) allows for local (on the same machine) communication only. A companion class, [`SocketPort`](./socketport.md), allows for both local and remote distributed object communication, but may be more expensive than [`NSMachPort`](./nsmachport.md) for the local case.
 
-To use [`NSMachPort`](nsmachport.md) effectively, you should be familiar with Mach ports, port access rights, and Mach messages. See the Mach OS documentation for more information.
+To use [`NSMachPort`](./nsmachport.md) effectively, you should be familiar with Mach ports, port access rights, and Mach messages. See the Mach OS documentation for more information.
 
-> **Note**:  [`NSMachPort`](nsmachport.md) conforms to the [`NSCoding`](nscoding.md) protocol, but only supports coding by an [`NSPortCoder`](nsportcoder.md). [`Port`](port.md) and its subclasses do not support archiving.
+> **Note**:  [`NSMachPort`](./nsmachport.md) conforms to the [`NSCoding`](./nscoding.md) protocol, but only supports coding by an [`NSPortCoder`](./nsportcoder.md). [`Port`](./port.md) and its subclasses do not support archiving.
 
 ## Topics
 
 ### Creating and Initializing
-- [class func port(withMachPort: UInt32) -> Port](nsmachport/port(withmachport:).md)
+- [class func port(withMachPort: UInt32) -> Port](./nsmachport/port%28withmachport%29.md)
   Creates and returns a port object configured with the given Mach port.
-- [class func port(withMachPort: UInt32, options: NSMachPort.Options) -> Port](nsmachport/port(withmachport:options:).md)
+- [class func port(withMachPort: UInt32, options: NSMachPort.Options) -> Port](./nsmachport/port%28withmachport,options%29.md)
   Creates and returns a port object configured with the specified options and the given Mach port.
-- [init(machPort: UInt32)](nsmachport/init(machport:).md)
+- [init(machPort: UInt32)](./nsmachport/init%28machport%29.md)
   Initializes a newly allocated `NSMachPort` object with a given Mach port.
-- [init(machPort: UInt32, options: NSMachPort.Options)](nsmachport/init(machport:options:).md)
+- [init(machPort: UInt32, options: NSMachPort.Options)](./nsmachport/init%28machport,options%29.md)
   Initializes a newly allocated `NSMachPort` object with a given Mach port and the specified options.
 ### Getting the Mach Port
-- [var machPort: UInt32](nsmachport/machport.md)
+- [var machPort: UInt32](./nsmachport/machport.md)
   The Mach port used by the receiver, represented as an integer.
 ### Scheduling the Port on a Run Loop
-- [func remove(from: RunLoop, forMode: RunLoop.Mode)](nsmachport/remove(from:formode:).md)
+- [func remove(from: RunLoop, forMode: RunLoop.Mode)](./nsmachport/remove%28from,formode%29.md)
   Removes the receiver from the run loop mode `mode` of `runLoop`.
-- [func schedule(in: RunLoop, forMode: RunLoop.Mode)](nsmachport/schedule(in:formode:).md)
+- [func schedule(in: RunLoop, forMode: RunLoop.Mode)](./nsmachport/schedule%28in,formode%29.md)
   Schedules the receiver into the run loop mode `mode` of `runLoop`.
 ### Getting and Setting the Delegate
-- [func delegate() -> (any NSMachPortDelegate)?](nsmachport/delegate.md)
+- [func delegate() -> (any NSMachPortDelegate)?](./nsmachport/delegate%28%29.md)
   Returns the receiver’s delegate.
-- [func setDelegate((any NSMachPortDelegate)?)](nsmachport/setdelegate(_:).md)
+- [func setDelegate((any NSMachPortDelegate)?)](./nsmachport/setdelegate%28_%29.md)
   Sets the receiver’s delegate to a given object.
 ### Constants
-- [NSMachPort.Options](nsmachport/options.md)
+- [NSMachPort.Options](./nsmachport/options.md)
   Used to remove access rights to a mach port when the `NSMachPort` object is invalidated or destroyed.
 
 ## Relationships
 
 ### Inherits From
-- [Port](port.md)
+- [Port](./port.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol NSMachPortDelegate](nsmachportdelegate.md)
+### Legacy
+- [protocol NSMachPortDelegate](./nsmachportdelegate.md)
   An interface for handling incoming Mach messages.
-- [class MessagePort](messageport.md)
+- [class MessagePort](./messageport.md)
   A port that can be used as an endpoint for distributed object connections (or raw messaging).
-- [protocol PortDelegate](portdelegate.md)
+- [protocol PortDelegate](./portdelegate.md)
   An interface for handling incoming messages.
-- [class PortMessage](portmessage.md)
+- [class PortMessage](./portmessage.md)
   A low-level, operating system-independent type for inter-application (and inter-thread) messages.
-- [class NSProtocolChecker](nsprotocolchecker.md)
+- [class NSProtocolChecker](./nsprotocolchecker.md)
   An object that restricts the messages that can be sent to another object (referred to as the checker’s delegate).
 
 

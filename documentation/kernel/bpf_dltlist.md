@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct bpf_dltlist {
     ...
 };
@@ -17,8 +17,8 @@ struct bpf_dltlist {
 ## Topics
 
 ### Instance Properties
-- [bfl_len](bpf_dltlist/1589519-bfl_len.md)
-- [bfl_u](bpf_dltlist/1589556-bfl_u.md)
+- [bfl_len](./bpf_dltlist/api-1589519-bfl_len.md)
+- [bfl_u](./bpf_dltlist/api-1589556-bfl_u.md)
 
 
 ---

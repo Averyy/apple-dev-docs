@@ -1,14 +1,15 @@
 # getNearestStartTime
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.10
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn getNearestStartTime(IOAudioStream *audioStream, IOAudioTimeStamp *ioTimeStamp, bool isInput);
 ```
 

@@ -1,7 +1,8 @@
 # init(jointNames:name:isScaleAnimated:isRotationAnimated:isTranslationAnimated:from:to:by:duration:timing:isAdditive:bindTarget:blendLayer:repeatMode:fillMode:trimStart:trimEnd:trimDuration:offset:delay:speed:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an animation that interpolates between two configurations of the given joints.
 
@@ -11,13 +12,15 @@ Creates an animation that interpolates between two configurations of the given j
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
 ```swift
 init(jointNames: [String], name: String = "", isScaleAnimated: Bool = true, isRotationAnimated: Bool = true, isTranslationAnimated: Bool = true, from: Value? = nil, to: Value? = nil, by: Value? = nil, duration: TimeInterval = 1.0, timing: AnimationTimingFunction = .linear, isAdditive: Bool = false, bindTarget: BindTarget? = nil, blendLayer: Int32 = 0, repeatMode: AnimationRepeatMode = .none, fillMode: AnimationFillMode = [], trimStart: TimeInterval? = nil, trimEnd: TimeInterval? = nil, trimDuration: TimeInterval? = nil, offset: TimeInterval = 0, delay: TimeInterval = 0, speed: Float = 1.0)
 ```
+
+Available when `Value` is `JointTransforms`.
 
 ## Parameters
 
@@ -45,7 +48,8 @@ init(jointNames: [String], name: String = "", isScaleAnimated: Bool = true, isRo
 
 ## See Also
 
-- [init(name: String, from: Value?, to: Value?, by: Value?, duration: TimeInterval, timing: AnimationTimingFunction, isAdditive: Bool, bindTarget: BindTarget?, blendLayer: Int32, repeatMode: AnimationRepeatMode, fillMode: AnimationFillMode, trimStart: TimeInterval?, trimEnd: TimeInterval?, trimDuration: TimeInterval?, offset: TimeInterval, delay: TimeInterval, speed: Float)](fromtobyanimation/init(name:from:to:by:duration:timing:isadditive:bindtarget:blendlayer:repeatmode:fillmode:trimstart:trimend:trimduration:offset:delay:speed:).md)
+### Creating an animation
+- [init(name: String, from: Value?, to: Value?, by: Value?, duration: TimeInterval, timing: AnimationTimingFunction, isAdditive: Bool, bindTarget: BindTarget?, blendLayer: Int32, repeatMode: AnimationRepeatMode, fillMode: AnimationFillMode, trimStart: TimeInterval?, trimEnd: TimeInterval?, trimDuration: TimeInterval?, offset: TimeInterval, delay: TimeInterval, speed: Float)](./init%28name,from,to,by,duration,timing,isadditive,bindtarget,blendlayer,repeatmode,fillmode,trimstart,trimend,trimduration,offset,delay,speed%29.md)
   Creates an animation that interpolates between two values for a property of the target entity.
 
 

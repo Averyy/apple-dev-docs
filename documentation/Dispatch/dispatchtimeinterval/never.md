@@ -1,18 +1,19 @@
 # DispatchTimeInterval.never
 
 **Framework**: Dispatch  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No interval.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -26,13 +27,14 @@ Use this case to specify a time interval that never occurs. For example, specify
 
 ## See Also
 
-- [DispatchTimeInterval.seconds(_:)](dispatchtimeinterval/seconds(_:).md)
+### Enumeration Cases
+- [DispatchTimeInterval.seconds(_:)](./seconds%28_%29.md)
   A number of seconds.
-- [DispatchTimeInterval.milliseconds(_:)](dispatchtimeinterval/milliseconds(_:).md)
+- [DispatchTimeInterval.milliseconds(_:)](./milliseconds%28_%29.md)
   A number of milliseconds.
-- [DispatchTimeInterval.microseconds(_:)](dispatchtimeinterval/microseconds(_:).md)
+- [DispatchTimeInterval.microseconds(_:)](./microseconds%28_%29.md)
   A number of microseconds.
-- [DispatchTimeInterval.nanoseconds(_:)](dispatchtimeinterval/nanoseconds(_:).md)
+- [DispatchTimeInterval.nanoseconds(_:)](./nanoseconds%28_%29.md)
   A number of nanoseconds.
 
 

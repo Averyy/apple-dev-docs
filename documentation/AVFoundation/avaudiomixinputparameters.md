@@ -1,7 +1,8 @@
 # AVAudioMixInputParameters
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents the parameters that you apply when adding an audio track to a mix.
 
@@ -20,11 +21,15 @@ An object that represents the parameters that you apply when adding an audio tra
 class AVAudioMixInputParameters
 ```
 
+```objc
+@interface AVAudioMixInputParameters : NSObject
+```
+
 #### Overview
 
-You use an instance `AVAudioMixInputParameters` to apply audio volume ramps for an input to an audio mix. Mix parameters are associated with audio tracks via the [`trackID`](avaudiomixinputparameters/trackid.md) property.
+You use an instance `AVAudioMixInputParameters` to apply audio volume ramps for an input to an audio mix. Mix parameters are associated with audio tracks via the [`trackID`](./avaudiomixinputparameters/trackid.md) property.
 
-Audio volume is currently supported as a time-varying parameter. `AVAudioMixInputParameters` has a mutable subclass, [`AVMutableAudioMixInputParameters`](avmutableaudiomixinputparameters.md).
+Audio volume is currently supported as a time-varying parameter. `AVAudioMixInputParameters` has a mutable subclass, [`AVMutableAudioMixInputParameters`](./avmutableaudiomixinputparameters.md).
 
 Before the first time at which a volume is set, a volume of 1.0 used; after the last time for which a volume has been set, the last volume is used. Within the time range of a volume ramp, the volume is interpolated between the start volume and end volume of the ramp. For example, setting the volume to 1.0 at time 0 and also setting a volume ramp from a volume of 0.5 to 0.2 with a timeRange of [4.0, 5.0] results in an audio volume parameters that hold the volume constant at 1.0 from 0.0 sec to 4.0 sec, then cause it to jump to 0.5 and descend to 0.2 from 4.0 sec to 9.0 sec, holding constant at 0.2 thereafter.
 
@@ -33,45 +38,46 @@ Given that this is an immutable variant of the object, you should not allocate a
 ## Topics
 
 ### Getting the track ID
-- [var trackID: CMPersistentTrackID](avaudiomixinputparameters/trackid.md)
+- [var trackID: CMPersistentTrackID](./avaudiomixinputparameters/trackid.md)
   The identifier of the audio track to which the parameters should be applied.
 ### Getting volume ramps
-- [func getVolumeRamp(for: CMTime, startVolume: UnsafeMutablePointer<Float>?, endVolume: UnsafeMutablePointer<Float>?, timeRange: UnsafeMutablePointer<CMTimeRange>?) -> Bool](avaudiomixinputparameters/getvolumeramp(for:startvolume:endvolume:timerange:).md)
+- [func getVolumeRamp(for: CMTime, startVolume: UnsafeMutablePointer<Float>?, endVolume: UnsafeMutablePointer<Float>?, timeRange: UnsafeMutablePointer<CMTimeRange>?) -> Bool](./avaudiomixinputparameters/getvolumeramp%28for,startvolume,endvolume,timerange%29.md)
   Retrieves the volume ramp that includes the specified time.
 ### Getting an audio tap
-- [var audioTapProcessor: MTAudioProcessingTap?](avaudiomixinputparameters/audiotapprocessor.md)
+- [var audioTapProcessor: MTAudioProcessingTap?](./avaudiomixinputparameters/audiotapprocessor.md)
   The audio processing tap associated with the track.
 ### Getting the time pitch algorithm setting
-- [var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm?](avaudiomixinputparameters/audiotimepitchalgorithm.md)
+- [var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm?](./avaudiomixinputparameters/audiotimepitchalgorithm.md)
   The processing algorithm used to manage audio pitch for scaled audio edits.
-- [struct AVAudioTimePitchAlgorithm](avaudiotimepitchalgorithm.md)
+- [struct AVAudioTimePitchAlgorithm](./avaudiotimepitchalgorithm.md)
   An algorithm used to set the audio pitch as the rate changes.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [AVMutableAudioMixInputParameters](avmutableaudiomixinputparameters.md)
+- [AVMutableAudioMixInputParameters](./avmutableaudiomixinputparameters.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVAudioMix](avaudiomix.md)
+### Mixing
+- [class AVAudioMix](./avaudiomix.md)
   An object that manages the input parameters for mixing audio tracks.
-- [enum AVAudioMixInputParametersTrackID](avaudiomixinputparameterstrackid.md)
+- [enum AVAudioMixInputParametersTrackID](./avaudiomixinputparameterstrackid.md)
   Special value for the trackID property of AVAudioMixInputParameters.
-- [class AVMutableAudioMix](avmutableaudiomix.md)
+- [class AVMutableAudioMix](./avmutableaudiomix.md)
   An object that manages the input parameters for mixing audio tracks.
-- [class AVMutableAudioMixInputParameters](avmutableaudiomixinputparameters.md)
+- [class AVMutableAudioMixInputParameters](./avmutableaudiomixinputparameters.md)
   The parameters you use when adding an audio track to a mix.
 
 

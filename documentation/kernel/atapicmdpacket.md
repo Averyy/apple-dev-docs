@@ -1,14 +1,15 @@
 # ATAPICmdPacket
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct ATAPICmdPacket {
     ...
 } ATAPICmdPacket;
@@ -17,14 +18,15 @@ typedef struct ATAPICmdPacket {
 ## Topics
 
 ### Instance Properties
-- [atapiCommandByte](atapicmdpacket/1513700-atapicommandbyte.md)
-- [atapiPacketSize](atapicmdpacket/1513742-atapipacketsize.md)
+- [atapiCommandByte](./atapicmdpacket/api-1513700-atapicommandbyte.md)
+- [atapiPacketSize](./atapicmdpacket/api-1513742-atapipacketsize.md)
 
 ## See Also
 
-- [IOATAPIProtocolTransport](ioatapiprotocoltransport.md)
+### ATAPI
+- [IOATAPIProtocolTransport](./ioatapiprotocoltransport.md)
   SCSI Protocol Driver Family for ATAPI Devices.
-- [ATAPIClientData](atapiclientdata.md)
+- [ATAPIClientData](./atapiclientdata.md)
 
 
 ---

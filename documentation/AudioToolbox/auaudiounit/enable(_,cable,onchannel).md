@@ -1,7 +1,8 @@
 # enable(_:cable:onChannel:)
 
 **Framework**: Audio Toolbox  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 12.0+
@@ -16,14 +17,19 @@
 func enable(_ profile: MIDICIProfile, cable: UInt8, onChannel channel: MIDIChannelNumber) throws
 ```
 
+```objc
+- (BOOL) enableProfile:(MIDICIProfile *) profile cable:(uint8_t) cable onChannel:(MIDIChannelNumber) channel error:(NSError **) outError;
+```
+
 ## See Also
 
-- [var channelCapabilities: [NSNumber]?](auaudiounit/channelcapabilities.md)
+### Configuring the Channel Capabilities
+- [var channelCapabilities: [NSNumber]?](./channelcapabilities.md)
   Expresses valid combinations of input and output channels.
-- [var channelMap: [NSNumber]?](auaudiounit/channelmap.md)
-- [func profileState(forCable: UInt8, channel: MIDIChannelNumber) -> MIDICIProfileState](auaudiounit/profilestate(forcable:channel:).md)
-- [func disableProfile(MIDICIProfile, cable: UInt8, onChannel: MIDIChannelNumber) throws](auaudiounit/disableprofile(_:cable:onchannel:).md)
-- [var profileChangedBlock: AUMIDICIProfileChangedBlock?](auaudiounit/profilechangedblock.md)
+- [var channelMap: [NSNumber]?](./channelmap.md)
+- [func profileState(forCable: UInt8, channel: MIDIChannelNumber) -> MIDICIProfileState](./profilestate%28forcable,channel%29.md)
+- [func disableProfile(MIDICIProfile, cable: UInt8, onChannel: MIDIChannelNumber) throws](./disableprofile%28_,cable,onchannel%29.md)
+- [var profileChangedBlock: AUMIDICIProfileChangedBlock?](./profilechangedblock.md)
 
 
 ---

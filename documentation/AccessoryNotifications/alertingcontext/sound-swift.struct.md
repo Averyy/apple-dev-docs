@@ -1,7 +1,8 @@
 # AlertingContext.Sound
 
 **Framework**: Accessory Notifications  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes sound characteristics for a notification.
 
@@ -17,19 +18,20 @@ struct Sound
 ## Topics
 
 ### Sound behavior
-- [var shouldIgnoreSilentMode: Bool](alertingcontext/sound-swift.struct/shouldignoresilentmode.md)
+- [var shouldIgnoreSilentMode: Bool](./sound-swift.struct/shouldignoresilentmode.md)
   A Boolean value that indicates whether the sound ignores local silent mode.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
 
 ## See Also
 
-- [var sound: AlertingContext.Sound?](alertingcontext/sound-swift.property.md)
+### Configuring notification sound
+- [var sound: AlertingContext.Sound?](./sound-swift.property.md)
   An optional sound configuration for the notification.
 
 

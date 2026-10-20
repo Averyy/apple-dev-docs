@@ -1,14 +1,15 @@
 # options
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The additional factors that influence the weight of a value.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -22,11 +23,12 @@ A person’s utility rate plan is an example of an additional factor that influe
 
 ## See Also
 
-- [ElectricityGuidance.Value](electricityguidance/value.md)
+### Getting the electrical load weight
+- [ElectricityGuidance.Value](./value.md)
   A normalized weighting value associated with a period of time, describing when to shift or reduce electricity use.
-- [let values: [ElectricityGuidance.Value]](electricityguidance/values.md)
+- [let values: [ElectricityGuidance.Value]](./values.md)
   A series of weighted values for intervals of time, describing when to shift or reduce electricity use.
-- [ElectricityGuidance.Options](electricityguidance/options-swift.enum.md)
+- [ElectricityGuidance.Options](./options-swift.enum.md)
   An enumeration that describes additional factors that influence the weight of a value.
 
 

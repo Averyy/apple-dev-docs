@@ -1,7 +1,8 @@
 # contentKeySpecifier
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -18,11 +19,16 @@
 var contentKeySpecifier: AVContentKeySpecifier { get }
 ```
 
+```objc
+@property (readonly) AVContentKeySpecifier * contentKeySpecifier;
+```
+
 ## See Also
 
-- [var isClientInitiated: Bool](avmetriccontentkeyrequestevent/isclientinitiated.md)
-- [var mediaResourceRequestEvent: AVMetricMediaResourceRequestEvent?](avmetriccontentkeyrequestevent/mediaresourcerequestevent.md)
-- [var mediaType: AVMediaType](avmetriccontentkeyrequestevent/mediatype.md)
+### Inspecting the event
+- [var isClientInitiated: Bool](./isclientinitiated.md)
+- [var mediaResourceRequestEvent: AVMetricMediaResourceRequestEvent?](./mediaresourcerequestevent.md)
+- [var mediaType: AVMediaType](./mediatype.md)
 
 
 ---

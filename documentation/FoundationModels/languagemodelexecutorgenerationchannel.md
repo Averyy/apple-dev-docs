@@ -1,7 +1,8 @@
 # LanguageModelExecutorGenerationChannel
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type you use to send model output deltas and updates to the framework.
 
@@ -62,56 +63,57 @@ func respond(
 ## Topics
 
 ### Creating a channel instance
-- [init()](languagemodelexecutorgenerationchannel/init.md)
+- [init()](./languagemodelexecutorgenerationchannel/init%28%29.md)
   Creates a generation channel instance.
 ### Sending an event
-- [func send(LanguageModelExecutorGenerationChannel.Event) async](languagemodelexecutorgenerationchannel/send(_:).md)
+- [func send(LanguageModelExecutorGenerationChannel.Event) async](./languagemodelexecutorgenerationchannel/send%28_%29.md)
   Sends a generation event on the channel.
-- [LanguageModelExecutorGenerationChannel.Event](languagemodelexecutorgenerationchannel/event.md)
+- [LanguageModelExecutorGenerationChannel.Event](./languagemodelexecutorgenerationchannel/event.md)
   A generation event sent on a generation channel.
 ### Accessing the event types
-- [LanguageModelExecutorGenerationChannel.Metadata](languagemodelexecutorgenerationchannel/metadata.md)
+- [LanguageModelExecutorGenerationChannel.Metadata](./languagemodelexecutorgenerationchannel/metadata.md)
   Snapshot of an entry’s metadata dictionary.
-- [LanguageModelExecutorGenerationChannel.Reasoning](languagemodelexecutorgenerationchannel/reasoning.md)
+- [LanguageModelExecutorGenerationChannel.Reasoning](./languagemodelexecutorgenerationchannel/reasoning.md)
   A reasoning event.
-- [LanguageModelExecutorGenerationChannel.ReasoningSignature](languagemodelexecutorgenerationchannel/reasoningsignature.md)
+- [LanguageModelExecutorGenerationChannel.ReasoningSignature](./languagemodelexecutorgenerationchannel/reasoningsignature.md)
   Payload for a reasoning entry’s signature update.
-- [LanguageModelExecutorGenerationChannel.TextFragment](languagemodelexecutorgenerationchannel/textfragment.md)
+- [LanguageModelExecutorGenerationChannel.TextFragment](./languagemodelexecutorgenerationchannel/textfragment.md)
   Text appended to a streaming entry’s current text segment.
-- [LanguageModelExecutorGenerationChannel.TextSegmentReplacement](languagemodelexecutorgenerationchannel/textsegmentreplacement.md)
+- [LanguageModelExecutorGenerationChannel.TextSegmentReplacement](./languagemodelexecutorgenerationchannel/textsegmentreplacement.md)
   A replacement for a streaming entry’s current text segment.
-- [LanguageModelExecutorGenerationChannel.Response](languagemodelexecutorgenerationchannel/response.md)
+- [LanguageModelExecutorGenerationChannel.Response](./languagemodelexecutorgenerationchannel/response.md)
   A model-generated response event: text, segment replacements, citations, advisories, custom segments, metadata, or usage.
-- [LanguageModelExecutorGenerationChannel.ToolCalls](languagemodelexecutorgenerationchannel/toolcalls.md)
+- [LanguageModelExecutorGenerationChannel.ToolCalls](./languagemodelexecutorgenerationchannel/toolcalls.md)
   A tool-call lifecycle event, including per-call argument streaming, reasoning, metadata, usage, or retraction.
-- [LanguageModelExecutorGenerationChannel.Usage](languagemodelexecutorgenerationchannel/usage.md)
+- [LanguageModelExecutorGenerationChannel.Usage](./languagemodelexecutorgenerationchannel/usage.md)
   Snapshot of an entry’s token totals.
 ### Structures
-- [LanguageModelExecutorGenerationChannel.DataEntry](languagemodelexecutorgenerationchannel/dataentry.md)
+- [LanguageModelExecutorGenerationChannel.DataEntry](./languagemodelexecutorgenerationchannel/dataentry.md)
   A top-level data-entry event addressed to a transcript entry.
 ### Default Implementations
-- [AsyncSequence Implementations](languagemodelexecutorgenerationchannel/asyncsequence-implementations.md)
+- [AsyncSequence Implementations](./languagemodelexecutorgenerationchannel/asyncsequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AsyncSequence](../Swift/asyncsequence.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Running a Core AI model in a Foundation Models session](running-a-core-ai-model-in-a-foundation-models-session.md)
+### Custom language model provider
+- [Running a Core AI model in a Foundation Models session](./running-a-core-ai-model-in-a-foundation-models-session.md)
   Send requests on device to an open source model you export with Core AI to get a consistent API experience.
-- [Optimizing key-value caching in language model sessions](optimizing-key-value-caching-in-language-model-sessions.md)
+- [Optimizing key-value caching in language model sessions](./optimizing-key-value-caching-in-language-model-sessions.md)
   Prevent repeated token processing by preserving the cached state across turns.
-- [protocol LanguageModel](languagemodel.md)
+- [protocol LanguageModel](./languagemodel.md)
   A protocol that you use to interface with a model.
-- [struct LanguageModelCapabilities](languagemodelcapabilities.md)
+- [struct LanguageModelCapabilities](./languagemodelcapabilities.md)
   A set of capabilities that a language model provides.
-- [protocol LanguageModelExecutor](languagemodelexecutor.md)
+- [protocol LanguageModelExecutor](./languagemodelexecutor.md)
   A protocol that defines the interface for responding to session requests.
-- [struct LanguageModelExecutorGenerationRequest](languagemodelexecutorgenerationrequest.md)
+- [struct LanguageModelExecutorGenerationRequest](./languagemodelexecutorgenerationrequest.md)
   A type that contains the details for a generation request.
 
 

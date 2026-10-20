@@ -1,7 +1,8 @@
 # MTL4AccelerationStructureBoundingBoxGeometryDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Describes bounding-box geometry suitable for ray tracing.
 
@@ -19,53 +20,58 @@ Describes bounding-box geometry suitable for ray tracing.
 class MTL4AccelerationStructureBoundingBoxGeometryDescriptor
 ```
 
+```objc
+@interface MTL4AccelerationStructureBoundingBoxGeometryDescriptor : MTL4AccelerationStructureGeometryDescriptor
+```
+
 #### Overview
 
 You use bounding boxes to implement procedural geometry for ray tracing, such as spheres or any other shape you define by using intersection functions.
 
-Use a [`MTLResidencySet`](mtlresidencyset.md) to mark residency of all buffers this descriptor references when you build this acceleration structure.
+Use a [`MTLResidencySet`](./mtlresidencyset.md) to mark residency of all buffers this descriptor references when you build this acceleration structure.
 
 ## Topics
 
 ### Instance Properties
-- [var boundingBoxBuffer: MTL4BufferRange](mtl4accelerationstructureboundingboxgeometrydescriptor/boundingboxbuffer.md)
+- [var boundingBoxBuffer: MTL4BufferRange](./mtl4accelerationstructureboundingboxgeometrydescriptor/boundingboxbuffer.md)
   References a buffer containing bounding box data in `MTLAxisAlignedBoundingBoxes` format.
-- [var boundingBoxCount: Int](mtl4accelerationstructureboundingboxgeometrydescriptor/boundingboxcount.md)
+- [var boundingBoxCount: Int](./mtl4accelerationstructureboundingboxgeometrydescriptor/boundingboxcount.md)
   Describes the number of bounding boxes the `boundingBoxBuffer` contains.
-- [var boundingBoxStride: Int](mtl4accelerationstructureboundingboxgeometrydescriptor/boundingboxstride.md)
+- [var boundingBoxStride: Int](./mtl4accelerationstructureboundingboxgeometrydescriptor/boundingboxstride.md)
   Assigns the stride, in bytes, between bounding boxes in the bounding box buffer `boundingBoxBuffer` references.
 
 ## Relationships
 
 ### Inherits From
-- [MTL4AccelerationStructureGeometryDescriptor](mtl4accelerationstructuregeometrydescriptor.md)
+- [MTL4AccelerationStructureGeometryDescriptor](./mtl4accelerationstructuregeometrydescriptor.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTL4AccelerationStructureGeometryDescriptor](mtl4accelerationstructuregeometrydescriptor.md)
+### Geometry descriptors
+- [class MTL4AccelerationStructureGeometryDescriptor](./mtl4accelerationstructuregeometrydescriptor.md)
   Base class for all Metal 4 acceleration structure geometry descriptors.
-- [class MTLAccelerationStructureGeometryDescriptor](mtlaccelerationstructuregeometrydescriptor.md)
+- [class MTLAccelerationStructureGeometryDescriptor](./mtlaccelerationstructuregeometrydescriptor.md)
   A base class for descriptors that contain geometry data to convert into a ray-tracing acceleration structure.
-- [class MTL4AccelerationStructureTriangleGeometryDescriptor](mtl4accelerationstructuretrianglegeometrydescriptor.md)
+- [class MTL4AccelerationStructureTriangleGeometryDescriptor](./mtl4accelerationstructuretrianglegeometrydescriptor.md)
   Describes triangle geometry suitable for ray tracing.
-- [class MTLAccelerationStructureTriangleGeometryDescriptor](mtlaccelerationstructuretrianglegeometrydescriptor.md)
+- [class MTLAccelerationStructureTriangleGeometryDescriptor](./mtlaccelerationstructuretrianglegeometrydescriptor.md)
   A description of a list of triangle primitives to turn into an acceleration structure.
-- [class MTL4AccelerationStructureCurveGeometryDescriptor](mtl4accelerationstructurecurvegeometrydescriptor.md)
+- [class MTL4AccelerationStructureCurveGeometryDescriptor](./mtl4accelerationstructurecurvegeometrydescriptor.md)
   Describes curve geometry suitable for ray tracing.
-- [class MTLAccelerationStructureCurveGeometryDescriptor](mtlaccelerationstructurecurvegeometrydescriptor.md)
+- [class MTLAccelerationStructureCurveGeometryDescriptor](./mtlaccelerationstructurecurvegeometrydescriptor.md)
   A descriptor you configure with curve geometry for building acceleration structures.
-- [enum MTLCurveType](mtlcurvetype.md)
-- [enum MTLCurveBasis](mtlcurvebasis.md)
-- [enum MTLCurveEndCaps](mtlcurveendcaps.md)
-- [class MTLAccelerationStructureBoundingBoxGeometryDescriptor](mtlaccelerationstructureboundingboxgeometrydescriptor.md)
+- [enum MTLCurveType](./mtlcurvetype.md)
+- [enum MTLCurveBasis](./mtlcurvebasis.md)
+- [enum MTLCurveEndCaps](./mtlcurveendcaps.md)
+- [class MTLAccelerationStructureBoundingBoxGeometryDescriptor](./mtlaccelerationstructureboundingboxgeometrydescriptor.md)
   A description of a list of bounding boxes to turn into an acceleration structure.
 
 

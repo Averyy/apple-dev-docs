@@ -1,7 +1,8 @@
 # ScmProviderResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that read a single SCM provider connected to Xcode Cloud.
 
@@ -10,7 +11,7 @@ The response body for endpoints that read a single SCM provider connected to Xco
 
 ## Declaration
 
-```swift
+```
 object ScmProviderResponse
 ```
 
@@ -21,11 +22,12 @@ object ScmProviderResponse
 
 ## See Also
 
-- [object ScmProvider](scmprovider.md)
+### Objects
+- [object ScmProvider](./scmprovider.md)
   A source code management provider, such as GitHub or Bitbucket, connected to Xcode Cloud for accessing repositories.
-- [object ScmProvidersResponse](scmprovidersresponse.md)
+- [object ScmProvidersResponse](./scmprovidersresponse.md)
   The response body for endpoints that list SCM providers connected to Xcode Cloud.
-- [object ScmProviderRepositoriesLinkagesResponse](scmproviderrepositorieslinkagesresponse.md)
+- [object ScmProviderRepositoriesLinkagesResponse](./scmproviderrepositorieslinkagesresponse.md)
 
 
 ---

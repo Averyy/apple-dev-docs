@@ -1,18 +1,19 @@
 # default
 
 **Framework**: XCUIAutomation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value representing a default gesture velocity.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -21,11 +22,16 @@ A value representing a default gesture velocity.
 static let `default`: XCUIGestureVelocity
 ```
 
+```c
+extern const XCUIGestureVelocity XCUIGestureVelocityDefault;
+```
+
 ## See Also
 
-- [static let fast: XCUIGestureVelocity](xcuigesturevelocity/fast.md)
+### Using typical gesture velocities
+- [static let fast: XCUIGestureVelocity](./fast.md)
   A value representing a fast gesture velocity.
-- [static let slow: XCUIGestureVelocity](xcuigesturevelocity/slow.md)
+- [static let slow: XCUIGestureVelocity](./slow.md)
   A value representing a slow gesture velocity.
 
 

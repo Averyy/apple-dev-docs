@@ -1,7 +1,8 @@
 # CTFontGetAdvancesForGlyphs(_:_:_:_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Calculates the advances for an array of glyphs and returns the summed advance.
 
@@ -20,6 +21,10 @@ Calculates the advances for an array of glyphs and returns the summed advance.
 func CTFontGetAdvancesForGlyphs(_ font: CTFont, _ orientation: CTFontOrientation, _ glyphs: UnsafePointer<CGGlyph>, _ advances: UnsafeMutablePointer<CGSize>?, _ count: CFIndex) -> Double
 ```
 
+```c
+extern double CTFontGetAdvancesForGlyphs(CTFontRef font, CTFontOrientation orientation, const CGGlyph glyphs[], CGSize advances[], CFIndex count);
+```
+
 #### Return Value
 
 The summed glyph advance of an array of glyphs.
@@ -33,20 +38,21 @@ Individual glyph advances are passed back via the `advances` parameter. These ar
 - `font`: The font reference.
 - `orientation`: The intended drawing orientation of the glyphs. Used to determined which glyph metrics to return.
 - `glyphs`: An array of `count` number of glyphs.
-- `advances`: An array of `count` number of [`CGSize`](https://developer.apple.com/documentation/corefoundation/cgsize) objects to receive the computed glyph advances. If `NULL`, only the overall advance is calculated.
+- `advances`: An array of `count` number of [`CGSize`](../CoreFoundation/cgsize.md) objects to receive the computed glyph advances. If `NULL`, only the overall advance is calculated.
 - `count`: The capacity of the `glyphs` and `advances` buffers.
 
 ## See Also
 
-- [func CTFontCreatePathForGlyph(CTFont, CGGlyph, UnsafePointer<CGAffineTransform>?) -> CGPath?](ctfontcreatepathforglyph(_:_:_:).md)
+### Getting Glyph Data
+- [func CTFontCreatePathForGlyph(CTFont, CGGlyph, UnsafePointer<CGAffineTransform>?) -> CGPath?](./ctfontcreatepathforglyph%28_,_,_%29.md)
   Creates a path for the specified glyph.
-- [func CTFontGetGlyphWithName(CTFont, CFString) -> CGGlyph](ctfontgetglyphwithname(_:_:).md)
+- [func CTFontGetGlyphWithName(CTFont, CFString) -> CGGlyph](./ctfontgetglyphwithname%28_,_%29.md)
   Returns the glyph for the specified name.
-- [func CTFontGetBoundingRectsForGlyphs(CTFont, CTFontOrientation, UnsafePointer<CGGlyph>, UnsafeMutablePointer<CGRect>?, CFIndex) -> CGRect](ctfontgetboundingrectsforglyphs(_:_:_:_:_:).md)
+- [func CTFontGetBoundingRectsForGlyphs(CTFont, CTFontOrientation, UnsafePointer<CGGlyph>, UnsafeMutablePointer<CGRect>?, CFIndex) -> CGRect](./ctfontgetboundingrectsforglyphs%28_,_,_,_,_%29.md)
   Calculates the bounding rects for an array of glyphs and returns the overall bounding rectangle for the glyph run.
-- [func CTFontGetOpticalBoundsForGlyphs(CTFont, UnsafePointer<CGGlyph>, UnsafeMutablePointer<CGRect>?, CFIndex, CFOptionFlags) -> CGRect](ctfontgetopticalboundsforglyphs(_:_:_:_:_:).md)
+- [func CTFontGetOpticalBoundsForGlyphs(CTFont, UnsafePointer<CGGlyph>, UnsafeMutablePointer<CGRect>?, CFIndex, CFOptionFlags) -> CGRect](./ctfontgetopticalboundsforglyphs%28_,_,_,_,_%29.md)
   Calculates the optical bounds for an array of glyphs and returns the overall optical bounds for the run.
-- [func CTFontGetVerticalTranslationsForGlyphs(CTFont, UnsafePointer<CGGlyph>, UnsafeMutablePointer<CGSize>, CFIndex)](ctfontgetverticaltranslationsforglyphs(_:_:_:_:).md)
+- [func CTFontGetVerticalTranslationsForGlyphs(CTFont, UnsafePointer<CGGlyph>, UnsafeMutablePointer<CGSize>, CFIndex)](./ctfontgetverticaltranslationsforglyphs%28_,_,_,_%29.md)
   Calculates the offset from the default (horizontal) origin to the vertical origin for an array of glyphs.
 
 

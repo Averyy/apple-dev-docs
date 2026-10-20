@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Nearby Interaction  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a discovery method from a raw value.
 

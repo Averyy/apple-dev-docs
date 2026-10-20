@@ -2,6 +2,7 @@
 
 **Framework**: Vision  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Hashes the essential components of this value by feeding them into the given hasher.
@@ -30,6 +31,12 @@ Implement this method to conform to the `Hashable` protocol. The components used
 ## Parameters
 
 - `hasher`: The hasher to use when combining the components of this instance.
+
+## Default Implementations
+
+### VisionObservation Implementations
+- [func hash(into: inout Hasher)](./hash%28into%29-8aqw6.md)
+  Hashes the essential components of this value by feeding them into the given hasher.
 
 
 ---

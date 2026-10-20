@@ -1,6 +1,7 @@
 # Atoms
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 The basic data unit in a QuickTime file is the atom.
 
@@ -20,17 +21,17 @@ An atom that does not contain other atoms is called a *leaf atom*, and typically
 
 The format of the data stored within a given atom cannot always be determined by the type field of the atom alone; the type of the parent atom may also be significant. In other words, a given atom type can contain different kinds of information depending on its parent atom. For example, the profile atom inside a movie atom contains information about the movie, while the profile atom inside a track atom contains information about the track. This means that all QuickTime file readers must take into consideration not only the atom type, but also the atom’s containment hierarchy.
 
-#### Atom Layout
+#### Atom layout
 
 The following figure shows the layout of a sample atom. Each atom carries its own size and type information as well as its data. Leaf atoms contain data, usually in the form of tables.
 
-![A container atom with an atom size and atom type, that contains another container atom with an atom size and atom type. The inner container atom contains a leaf atom, with an atom size, atom type, and atom data.](/images/com.apple.qtff/sample-atom@2x.png)
+![A container atom with an atom size and atom type, that contains another container atom with an atom size and atom type. The inner container atom contains a leaf atom, with an atom size, atom type, and atom data.](https://developer.apple.com/tutorials/images/com.apple.qtff/sample-atom@2x.png)
 
 A leaf atom, as shown in the preceeding figure, simply contains a series of data fields accessible by offsets.
 
 Atoms within container atoms do not generally have to be in any particular order, unless such an order is specifically called out in this documentation. One such example is the handler description atom, which must come before the data being handled. For example, a media handler description atom must come before a media information atom, and a data handler description atom must come before a data information atom.
 
-#### Atom Structure
+#### Atom structure
 
 Atoms consist of a header, followed by atom data. The header contains the atom’s size and type fields, giving the size of the atom in bytes and its type. It may also contain an extended size field, giving the size of a large atom as a 64-bit integer. If an extended size field is present, the size field is set to 1. The actual size of an atom cannot be less than 8 bytes (the minimum size of the type and size fields).
 
@@ -47,7 +48,7 @@ Two special values are valid for the `size` field:
 
 The following figure shows how to calculate the size of an atom.
 
-![A diagram that illustrates three different scenarios to determine atom size. Each scenario is a group of vertically stacked boxes, where each box contains a label indicating the data field, or is blank for a general data field. Each stack of boxes has a line to the immediate right of the stack, that stretches from the top of the stack to the bottom of the stack, and each line has a label for the size data field that indicates the size of the atom. The first scenario shows an atom represented by four vertically stacked boxes. The first box is labeled Size, the second box is labeled Type, and the remaining boxes are not labeled. The line to the right of the boxes is labeled Size, meaning the value of the data field Size is the size of the atom. The second scenario shows an atom represented by five vertically stacked boxes. The first box is labeled Size and has the value 1, the second box is labeled Type, the third box is labeled Extended Size (if size = 1), and the remaining boxes are not labeled. The line to the right of the boxes is labeled Extended Size, meaning the value of the data field Extended Size is the size of the atom. The third scenario shows an atom represented by four vertically stacked boxes. The first box is labeled Size and has the value 0, the second box is labeled Type, and the remaining boxes are not labeled. The line to the right of the boxes is labeled Size, meaning that QuickTime interprets the value 0 to mean that the atom’s size is the same as the remaining data size to the end of the file.](/images/com.apple.qtff/calculating-atom-sizes@2x.png)
+![A diagram that illustrates three different scenarios to determine atom size. Each scenario is a group of vertically stacked boxes, where each box contains a label indicating the data field, or is blank for a general data field. Each stack of boxes has a line to the immediate right of the stack, that stretches from the top of the stack to the bottom of the stack, and each line has a label for the size data field that indicates the size of the atom. The first scenario shows an atom represented by four vertically stacked boxes. The first box is labeled Size, the second box is labeled Type, and the remaining boxes are not labeled. The line to the right of the boxes is labeled Size, meaning the value of the data field Size is the size of the atom. The second scenario shows an atom represented by five vertically stacked boxes. The first box is labeled Size and has the value 1, the second box is labeled Type, the third box is labeled Extended Size (if size = 1), and the remaining boxes are not labeled. The line to the right of the boxes is labeled Extended Size, meaning the value of the data field Extended Size is the size of the atom. The third scenario shows an atom represented by four vertically stacked boxes. The first box is labeled Size and has the value 0, the second box is labeled Type, and the remaining boxes are not labeled. The line to the right of the boxes is labeled Size, meaning that QuickTime interprets the value 0 to mean that the atom’s size is the same as the remaining data size to the end of the file.](https://developer.apple.com/tutorials/images/com.apple.qtff/calculating-atom-sizes@2x.png)
 
 - **Type**: A 32-bit integer that contains the type of the atom. This can often be usefully treated as a four-character field with a mnemonic value, such as `'moov'` (`0x6D6F6F76`) for a movie atom, or `'trak'` (`0x7472616B`) for a track atom, but non-ASCII values (such as `0x00000001`) are also used. Knowing an atom’s type allows you to interpret its data. An atom’s data can be arranged as any arbitrary collection of fields, tables, or other atoms. The data structure is specific to the atom type. An atom of a given type has a defined data structure. If your application encounters an atom of an unknown type, it should not attempt to interpret the atom’s data. Use the atom’s `size` field to skip this atom and all of its contents. This allows a degree of forward compatibility with extensions to the QuickTime file format.
 
@@ -67,11 +68,12 @@ The `'wide'` atom is exactly 8 bytes in size, and consists solely of its `size` 
 
 ## See Also
 
-- [QT atoms and atom containers](qt_atoms_and_atom_containers.md)
+### Building in QuickTime
+- [QT atoms and atom containers](./qt_atoms_and_atom_containers.md)
   An enhanced data structure that provide a more general-purpose storage format.
-- [Creating, copying, and disposing of atom containers](creating_copying_and_disposing_of_atom_containers.md)
+- [Creating, copying, and disposing of atom containers](./creating_copying_and_disposing_of_atom_containers.md)
   Manage atoms in atom containers.
-- [QuickTime movie files](quicktime_movie_files.md)
+- [QuickTime movie files](./quicktime_movie_files.md)
   The QuickTime file format describes the characteristics of QuickTime movie files.
 
 

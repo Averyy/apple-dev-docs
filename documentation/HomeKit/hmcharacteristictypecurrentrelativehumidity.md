@@ -1,7 +1,8 @@
 # HMCharacteristicTypeCurrentRelativeHumidity
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The current relative humidity measured by the accessory.
 
@@ -19,21 +20,26 @@ The current relative humidity measured by the accessory.
 let HMCharacteristicTypeCurrentRelativeHumidity: String
 ```
 
+```c
+extern NSString * const HMCharacteristicTypeCurrentRelativeHumidity;
+```
+
 #### Discussion
 
 The corresponding value is a floating point percentage representing the current relative humidity. This is a measure of the amount of water in the air relative to the maximum it can hold at the current temperature.
 
 ## See Also
 
-- [let HMCharacteristicTypeTargetRelativeHumidity: String](hmcharacteristictypetargetrelativehumidity.md)
+### Humidity
+- [let HMCharacteristicTypeTargetRelativeHumidity: String](./hmcharacteristictypetargetrelativehumidity.md)
   The target relative humidity for the accessory to achieve.
-- [let HMCharacteristicTypeCurrentHumidifierDehumidifierState: String](hmcharacteristictypecurrenthumidifierdehumidifierstate.md)
+- [let HMCharacteristicTypeCurrentHumidifierDehumidifierState: String](./hmcharacteristictypecurrenthumidifierdehumidifierstate.md)
   The current state of a humidifier or dehumidifier accessory.
-- [let HMCharacteristicTypeTargetHumidifierDehumidifierState: String](hmcharacteristictypetargethumidifierdehumidifierstate.md)
+- [let HMCharacteristicTypeTargetHumidifierDehumidifierState: String](./hmcharacteristictypetargethumidifierdehumidifierstate.md)
   The state that a humidifier or dehumidifier accessory should try to achieve.
-- [let HMCharacteristicTypeHumidifierThreshold: String](hmcharacteristictypehumidifierthreshold.md)
+- [let HMCharacteristicTypeHumidifierThreshold: String](./hmcharacteristictypehumidifierthreshold.md)
   The humidity below which a humidifier should begin to work.
-- [let HMCharacteristicTypeDehumidifierThreshold: String](hmcharacteristictypedehumidifierthreshold.md)
+- [let HMCharacteristicTypeDehumidifierThreshold: String](./hmcharacteristictypedehumidifierthreshold.md)
   The humidity above which a dehumidifier should begin to work.
 
 

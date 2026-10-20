@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The constant values to use when RealityKit creates your function. These correspond to constants defined in your metal code.

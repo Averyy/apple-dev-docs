@@ -1,7 +1,8 @@
 # fullName
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A person’s full name to configure for the macOS virtual machine.
 
@@ -12,6 +13,10 @@ A person’s full name to configure for the macOS virtual machine.
 
 ```swift
 var fullName: String { get set }
+```
+
+```objc
+@property (copy, readwrite) NSString * fullName;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new signature description from a specified raw value.
 

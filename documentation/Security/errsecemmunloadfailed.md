@@ -1,7 +1,8 @@
 # errSecEMMUnloadFailed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The elective module manager unload has failed.
 
@@ -18,6 +19,10 @@ The elective module manager unload has failed.
 
 ```swift
 var errSecEMMUnloadFailed: OSStatus { get }
+```
+
+```c
+errSecEMMUnloadFailed
 ```
 
 

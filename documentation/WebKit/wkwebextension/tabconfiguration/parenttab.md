@@ -1,7 +1,8 @@
 # parentTab
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates the parent tab with which the tab should be related.
 
@@ -16,6 +17,10 @@ Indicates the parent tab with which the tab should be related.
 
 ```swift
 var parentTab: (any WKWebExtensionTab)? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) id<WKWebExtensionTab> parentTab;
 ```
 
 #### Discussion

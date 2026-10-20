@@ -1,7 +1,8 @@
 # CGImageSourceRemoveCacheAtIndex(_:_:)
 
 **Framework**: Image I/O  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 7.0+
@@ -18,12 +19,17 @@
 func CGImageSourceRemoveCacheAtIndex(_ isrc: CGImageSource, _ index: Int)
 ```
 
+```c
+extern void CGImageSourceRemoveCacheAtIndex(CGImageSourceRef isrc, size_t index);
+```
+
 ## See Also
 
-- [func CGImageDestinationAddImageAndMetadata(CGImageDestination, CGImage, CGImageMetadata?, CFDictionary?)](cgimagedestinationaddimageandmetadata(_:_:_:_:).md)
-- [func CGImageDestinationCopyImageSource(CGImageDestination, CGImageSource, CFDictionary?, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Bool](cgimagedestinationcopyimagesource(_:_:_:_:).md)
-- [func CGImageSourceCopyMetadataAtIndex(CGImageSource, Int, CFDictionary?) -> CGImageMetadata?](cgimagesourcecopymetadataatindex(_:_:_:).md)
-- [func CGImageSourceSetAllowableTypes(CFArray) -> OSStatus](cgimagesourcesetallowabletypes(_:).md)
+### Functions
+- [func CGImageDestinationAddImageAndMetadata(CGImageDestination, CGImage, CGImageMetadata?, CFDictionary?)](./cgimagedestinationaddimageandmetadata%28_,_,_,_%29.md)
+- [func CGImageDestinationCopyImageSource(CGImageDestination, CGImageSource, CFDictionary?, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Bool](./cgimagedestinationcopyimagesource%28_,_,_,_%29.md)
+- [func CGImageSourceCopyMetadataAtIndex(CGImageSource, Int, CFDictionary?) -> CGImageMetadata?](./cgimagesourcecopymetadataatindex%28_,_,_%29.md)
+- [func CGImageSourceSetAllowableTypes(CFArray) -> OSStatus](./cgimagesourcesetallowabletypes%28_%29.md)
   Restricts which image formats can be decoded in the current process.
 
 

@@ -13,15 +13,15 @@ Before using HealthKit, you must perform the following steps:
 3. Create your app’s HealthKit store.
 4. Request permission to read and share data.
 
-The following sections describe the first three steps in detail. For more information on requesting authorization, see [`Authorizing access to health data`](authorizing-access-to-health-data.md). For a practical example of how to set up and use HealthKit, see [`Build a workout app for Apple Watch`](build-a-workout-app-for-apple-watch.md).
+The following sections describe the first three steps in detail. For more information on requesting authorization, see [Authorizing access to health data](./authorizing-access-to-health-data.md). For a practical example of how to set up and use HealthKit, see [Build a workout app for Apple Watch](./build-a-workout-app-for-apple-watch.md).
 
-##### Enable Healthkit
+##### Enable HealthKit
 
-Before you can use HealthKit, you must enable the HealthKit capabilities for your app. In Xcode, select the project and add the HealthKit capability. Only select the Clinical Health Records checkbox if your app needs to access the user’s clinical records. App Review may reject apps that enable the Clinical Health Records capability if the app doesn’t actually use the health record data. For more information, see [`Accessing Health Records`](accessing-health-records.md).
+Before you can use HealthKit, you must enable the HealthKit capabilities for your app. In Xcode, select the project and add the HealthKit capability. Only select the Clinical Health Records checkbox if your app needs to access the user’s clinical records. App Review may reject apps that enable the Clinical Health Records capability if the app doesn’t actually use the health record data. For more information, see [Accessing Health Records](./accessing-health-records.md).
 
-![A screenshot of Xcode’s Signing & Capabilities tab showing the HealthKit capabilities. The Clinical Health Records and Background Delivery checkboxes aren’t selected.](/images/com.apple.healthkit/media-3874041@2x.png)
+![A screenshot of Xcode’s Signing & Capabilities tab showing the HealthKit capabilities. The Clinical Health Records and Background Delivery checkboxes aren’t selected.](https://developer.apple.com/tutorials/images/com.apple.healthkit/media-3874041@2x.png)
 
-For a detailed discussion about enabling capabilities, see [`Configuring HealthKit access`](https://developer.apple.com/documentation/xcode/configuring-healthkit-access).
+For a detailed discussion about enabling capabilities, see [Configuring HealthKit access](../Xcode/configuring-healthkit-access.md).
 
 When you enable the HealthKit capabilities on an iOS app, Xcode adds HealthKit to the list of required device capabilities, which prevents users from purchasing or installing the app on devices that don’t support HealthKit.
 
@@ -29,11 +29,11 @@ If HealthKit isn’t required for the correct operation of your app, delete the 
 
 > **Note**:  The `healthkit` entry isn’t used by watchOS apps.
 
-For more information on required device capabilities, see the [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/bundleresources/information-property-list/uirequireddevicecapabilities).
+For more information on required device capabilities, see the [`UIRequiredDeviceCapabilities`](../BundleResources/information-property-list/uirequireddevicecapabilities.md).
 
-##### Ensure Healthkits Availability
+##### Ensure HealthKit’s availability
 
-Call the [`isHealthDataAvailable()`](hkhealthstore/ishealthdataavailable().md) method to confirm that HealthKit is available on the user’s device.
+Call the [`isHealthDataAvailable()`](./hkhealthstore/ishealthdataavailable%28%29.md) method to confirm that HealthKit is available on the user’s device.
 
 ```swift
 if HKHealthStore.isHealthDataAvailable() {
@@ -41,11 +41,11 @@ if HKHealthStore.isHealthDataAvailable() {
 }
 ```
 
-Call this method before calling any other HealthKit methods. If HealthKit isn’t available on the device (for example, on iPadOS 16 or earlier, or macOS), other HealthKit methods fail with an [`errorHealthDataUnavailable`](hkerror/errorhealthdataunavailable.md) error. If HealthKit is restricted (for example, in an enterprise environment), the methods fail with an [`errorHealthDataRestricted`](hkerror/errorhealthdatarestricted.md) error.
+Call this method before calling any other HealthKit methods. If HealthKit isn’t available on the device (for example, on iPadOS 16 or earlier, or macOS), other HealthKit methods fail with an [`errorHealthDataUnavailable`](./hkerror/errorhealthdataunavailable.md) error. If HealthKit is restricted (for example, in an enterprise environment), the methods fail with an [`errorHealthDataRestricted`](./hkerror/errorhealthdatarestricted.md) error.
 
-##### Create the Healthkit Store
+##### Create the HealthKit store
 
-If HealthKit is both enabled and available, instantiate an [`HKHealthStore`](hkhealthstore.md) object for your app as shown:
+If HealthKit is both enabled and available, instantiate an [`HKHealthStore`](./hkhealthstore.md) object for your app as shown:
 
 ```swift
 let healthStore = HKHealthStore()
@@ -56,31 +56,32 @@ You need only a single HealthKit store per app. These are long-lived objects; yo
 ## Topics
 
 ### Entitlements
-- [HealthKit Entitlement](../bundleresources/entitlements/com.apple.developer.healthkit.md)
+- [HealthKit Entitlement](../BundleResources/entitlements/com.apple.developer.healthkit.md)
   A Boolean value that indicates whether the app may request user authorization to access health and activity data that appears in the Health app.
-- [HealthKit Capabilities Entitlement](../bundleresources/entitlements/com.apple.developer.healthkit.access.md)
+- [HealthKit Capabilities Entitlement](../BundleResources/entitlements/com.apple.developer.healthkit.access.md)
   Health data types that require additional permission.
 ### Information property list keys
-- [NSHealthUpdateUsageDescription](../bundleresources/information-property-list/nshealthupdateusagedescription.md)
+- [NSHealthUpdateUsageDescription](../BundleResources/information-property-list/nshealthupdateusagedescription.md)
   A message to the user that explains why the app requested permission to save samples to the HealthKit store.
-- [NSHealthShareUsageDescription](../bundleresources/information-property-list/nshealthshareusagedescription.md)
+- [NSHealthShareUsageDescription](../BundleResources/information-property-list/nshealthshareusagedescription.md)
   A message that explains to people why the app requests permission to read samples from the HealthKit store.
-- [NSHealthRequiredReadAuthorizationTypeIdentifiers](../bundleresources/information-property-list/nshealthrequiredreadauthorizationtypeidentifiers.md)
+- [NSHealthRequiredReadAuthorizationTypeIdentifiers](../BundleResources/information-property-list/nshealthrequiredreadauthorizationtypeidentifiers.md)
   The clinical record data types that your app must get permission to read.
-- [NSHealthClinicalHealthRecordsShareUsageDescription](../bundleresources/information-property-list/nshealthclinicalhealthrecordsshareusagedescription.md)
+- [NSHealthClinicalHealthRecordsShareUsageDescription](../BundleResources/information-property-list/nshealthclinicalhealthrecordsshareusagedescription.md)
   A message to the user that explains why the app requested permission to read clinical records.
 
 ## See Also
 
-- [About the HealthKit framework](about-the-healthkit-framework.md)
+### Essentials
+- [About the HealthKit framework](./about-the-healthkit-framework.md)
   Learn about the architecture and design of the HealthKit framework.
-- [Authorizing access to health data](authorizing-access-to-health-data.md)
+- [Authorizing access to health data](./authorizing-access-to-health-data.md)
   Request permission to read and share data in your app.
-- [Protecting user privacy](protecting-user-privacy.md)
+- [Protecting user privacy](./protecting-user-privacy.md)
   Respect and safeguard your user’s privacy.
-- [HealthKit updates](../updates/healthkit.md)
+- [HealthKit updates](../Updates/healthkit.md)
   Learn about important changes to HealthKit.
-- [HealthKitUI](../healthkitui/healthkitui.md)
+- [HealthKitUI](https://developer.apple.com/documentation/healthkitui)
   Display user interface that enables a person to view and interact with their health data.
 
 

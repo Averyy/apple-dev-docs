@@ -2,6 +2,7 @@
 
 **Framework**: MediaExtension  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The presentation timestamp (PTS) of the sample at the current position of the cursor.
@@ -15,21 +16,26 @@ The presentation timestamp (PTS) of the sample at the current position of the cu
 var presentationTimeStamp: CMTime { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMTime presentationTimeStamp;
+```
+
 ## See Also
 
-- [var decodeTimeStamp: CMTime](mesamplecursor/decodetimestamp.md)
+### Inspecting a sample cursor
+- [var decodeTimeStamp: CMTime](./decodetimestamp.md)
   The decode timestamp (DTS) of the sample at the current position of the cursor.
-- [var currentSampleDuration: CMTime](mesamplecursor/currentsampleduration.md)
+- [var currentSampleDuration: CMTime](./currentsampleduration.md)
   The decode duration of the sample at the current position.
-- [var currentSampleFormatDescription: CMFormatDescription?](mesamplecursor/currentsampleformatdescription.md)
+- [var currentSampleFormatDescription: CMFormatDescription?](./currentsampleformatdescription.md)
   The format description for the sample at the current position of the cursor.
-- [var syncInfo: AVSampleCursorSyncInfo](mesamplecursor/syncinfo.md)
+- [var syncInfo: AVSampleCursorSyncInfo](./syncinfo.md)
   Decoder synchronization information about the sample the cursor points to.
-- [var dependencyInfo: AVSampleCursorDependencyInfo](mesamplecursor/dependencyinfo.md)
+- [var dependencyInfo: AVSampleCursorDependencyInfo](./dependencyinfo.md)
   Dependency information about the sample the cursor points to.
-- [var hevcDependencyInfo: MEHEVCDependencyInfo](mesamplecursor/hevcdependencyinfo.md)
+- [var hevcDependencyInfo: MEHEVCDependencyInfo](./hevcdependencyinfo.md)
   Additional information that’s necessary to recover complete sample dependency information.
-- [var decodeTimeOfLastSampleReachableByForwardSteppingThatIsAlreadyLoadedByByteSource: CMTime](mesamplecursor/decodetimeoflastsamplereachablebyforwardsteppingthatisalreadyloadedbybytesource.md)
+- [var decodeTimeOfLastSampleReachableByForwardSteppingThatIsAlreadyLoadedByByteSource: CMTime](./decodetimeoflastsamplereachablebyforwardsteppingthatisalreadyloadedbybytesource.md)
   The duration of the playable content starting from the cursor position.
 
 

@@ -1,14 +1,15 @@
 # flags
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 14.2+
 
 ## Declaration
 
-```swift
+```c
 ecc_flags_t flags;
 ```
 

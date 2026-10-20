@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: TVMLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that acts as the delegate and handles callbacks for the browser view.
 
@@ -14,9 +15,14 @@ The object that acts as the delegate and handles callbacks for the browser view.
 weak var delegate: (any TVBrowserViewControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak) id<TVBrowserViewControllerDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol TVBrowserViewControllerDelegate](tvbrowserviewcontrollerdelegate.md)
+### Managing Interactions with the Browser
+- [protocol TVBrowserViewControllerDelegate](../tvbrowserviewcontrollerdelegate.md)
   Methods for detecting events and performing actions on the browser view.
 
 

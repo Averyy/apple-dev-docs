@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The maximum number of threads along each dimension of a threadgroup.
@@ -20,18 +21,23 @@ The maximum number of threads along each dimension of a threadgroup.
 var maxThreadsPerThreadgroup: MTLSize { get }
 ```
 
+```objc
+@property (readonly) MTLSize maxThreadsPerThreadgroup;
+```
+
 #### Discussion
 
-This property reports the maximum thread group size the device can support for a trivial shader. This size isn’t guaranteed for all shaders. For the actual thread group size of a specific compute shader, see the [`maxTotalThreadsPerThreadgroup`](mtlcomputepipelinestate/maxtotalthreadsperthreadgroup.md) property of your compute pipeline state.
+This property reports the maximum thread group size the device can support for a trivial shader. This size isn’t guaranteed for all shaders. For the actual thread group size of a specific compute shader, see the [`maxTotalThreadsPerThreadgroup`](../mtlcomputepipelinestate/maxtotalthreadsperthreadgroup.md) property of your compute pipeline state.
 
 For more information on the specific threadgroup limits of each GPU family, see the Metal feature set tables:
 
-- [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf)
-- [`Metal feature set tables (Numbers)`](https://developer.apple.comhttps://developer.apple.com/metal/metal-feature-set-tables.zip)
+- [Metal feature set tables (PDF)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf)
+- [Metal feature set tables (Numbers)](https://developer.apple.com/metal/metal-feature-set-tables.zip)
 
 ## See Also
 
-- [var maxThreadgroupMemoryLength: Int](mtldevice/maxthreadgroupmemorylength.md)
+### Checking compute support
+- [var maxThreadgroupMemoryLength: Int](./maxthreadgroupmemorylength.md)
   The maximum threadgroup memory available to a compute kernel, in bytes.
 
 

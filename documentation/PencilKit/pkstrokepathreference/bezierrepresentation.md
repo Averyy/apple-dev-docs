@@ -1,7 +1,8 @@
 # bezierRepresentation
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Bézier path representation of the path’s curve, computed in linear time.
 
@@ -16,6 +17,10 @@ A Bézier path representation of the path’s curve, computed in linear time.
 
 ```swift
 var bezierRepresentation: CGPath { get }
+```
+
+```objc
+@property (nonatomic, readonly) CGPathRef bezierRepresentation;
 ```
 
 

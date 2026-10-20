@@ -1,7 +1,8 @@
 # effectiveCompressionOptions
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The compression options that are currently active on the group.
 
@@ -14,9 +15,14 @@ The compression options that are currently active on the group.
 var effectiveCompressionOptions: NSUserInterfaceCompressionOptions { get }
 ```
 
+```objc
+@property (readonly) NSUserInterfaceCompressionOptions * effectiveCompressionOptions;
+```
+
 ## See Also
 
-- [var prioritizedCompressionOptions: [NSUserInterfaceCompressionOptions]](nsgrouptouchbaritem/prioritizedcompressionoptions.md)
+### Configuring item compression
+- [var prioritizedCompressionOptions: [NSUserInterfaceCompressionOptions]](./prioritizedcompressionoptions.md)
   The allowed compression options, in the order they should be applied.
 
 

@@ -1,7 +1,8 @@
 # CVOpenGLESTextureCache
 
 **Framework**: Core Video  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 4.0+
@@ -15,6 +16,10 @@
 class CVOpenGLESTextureCache
 ```
 
+```c
+typedef struct __CVOpenGLESTextureCache * CVOpenGLESTextureCacheRef;
+```
+
 #### Overview
 
 CoreVideo OpenGLES Texture Cache
@@ -24,13 +29,14 @@ A reference to a Core Video OpenGLES texture cache.
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [typealias CVEAGLContext](cveaglcontext.md)
-  A type that resolves to an [`EAGLContext`](https://developer.apple.com/documentation/opengles/eaglcontext) pointer when appropriate.
+### Data Types
+- [typealias CVEAGLContext](./cveaglcontext.md)
+  A type that resolves to an [`EAGLContext`](../OpenGLES/eaglcontext.md) pointer when appropriate.
 
 
 ---

@@ -1,7 +1,8 @@
 # CGImagePropertyOrientation
 
 **Framework**: Image I/O  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value describing the intended display orientation for an image.
 
@@ -21,17 +22,21 @@ A value describing the intended display orientation for an image.
 enum CGImagePropertyOrientation
 ```
 
+```c
+enum CGImagePropertyOrientation : uint32_t;
+```
+
 #### Overview
 
 Values of this type define the position of the pixel coordinate origin point (`0,0`) and the directions of the coordinate axes relative to the intended display orientation of the image. Orientation values are commonly found in image metadata, and specifying image orientation correctly can be important both for displaying the image and for certain image processing tasks such as face recognition.
 
-For example, the pixel data for an image captured by an iOS device camera is encoded in the camera sensor’s native landscape orientation. When the user captures a photo while holding the device in portrait orientation, iOS writes an orientation value of [`CGImagePropertyOrientation.right`](cgimagepropertyorientation/right.md) in the resulting image file. Software displaying the image can then, after reading that value from the file’s metadata, apply a 90° clockwise rotation to the image data so that the image appears in the photographer’s intended orientation.
+For example, the pixel data for an image captured by an iOS device camera is encoded in the camera sensor’s native landscape orientation. When the user captures a photo while holding the device in portrait orientation, iOS writes an orientation value of [`CGImagePropertyOrientation.right`](./cgimagepropertyorientation/right.md) in the resulting image file. Software displaying the image can then, after reading that value from the file’s metadata, apply a 90° clockwise rotation to the image data so that the image appears in the photographer’s intended orientation.
 
-![To correct an image with right orientation for display, rotate it 90° clockwise.](/images/com.apple.imageio/media-2948298@2x.png)
+![To correct an image with right orientation for display, rotate it 90° clockwise.](https://developer.apple.com/tutorials/images/com.apple.imageio/media-2948298@2x.png)
 
-##### Compatibility with Uiimageorientation
+##### Compatibility with UIImageOrientation
 
-The [`CGImagePropertyOrientation`](cgimagepropertyorientation.md) type covers the same set of orientation names available in from the [`UIImage.Orientation`](https://developer.apple.com/documentation/uikit/uiimage/orientation) type, but the underlying numeric values of each type do not match. (For example, the “left mirrored” orientation has an underlying value of 5 in [`CGImagePropertyOrientation`](cgimagepropertyorientation.md), but an underlying value of 7 in [`UIImage.Orientation`](https://developer.apple.com/documentation/uikit/uiimage/orientation).) If you have an orientation value in one type and need a semantically equivalent value in the other, use a function such as those below to produce the same-named value in the other type:
+The [`CGImagePropertyOrientation`](./cgimagepropertyorientation.md) type covers the same set of orientation names available in from the [`UIImage.Orientation`](../UIKit/uiimage/orientation.md) type, but the underlying numeric values of each type do not match. (For example, the “left mirrored” orientation has an underlying value of 5 in [`CGImagePropertyOrientation`](./cgimagepropertyorientation.md), but an underlying value of 7 in [`UIImage.Orientation`](../UIKit/uiimage/orientation.md).) If you have an orientation value in one type and need a semantically equivalent value in the other, use a function such as those below to produce the same-named value in the other type:
 
 **Swift**:
 
@@ -99,58 +104,59 @@ UIImageOrientation UIImageOrientationForCGImagePropertyOrientation(CGImageProper
 }
 ```
 
-##### Working with Raw Tiffexif Numeric Values
+##### Working with Raw TIFF/Exif Numeric Values
 
-Some APIs describe image orientation with basic integer values, intended for interpretation according to the TIFF and Exif specifications. The [`CGImagePropertyOrientation`](cgimagepropertyorientation.md) type simply defines symbolic names for those values, so you can convert to and from the raw numeric type with C type-cast syntax or the inherited [`init(rawValue:)`](https://developer.apple.com/documentation/swift/rawrepresentable/init(rawvalue:)) initializer and [`rawValue`](https://developer.apple.com/documentation/swift/rawrepresentable/rawvalue-swift.property) property in Swift.
+Some APIs describe image orientation with basic integer values, intended for interpretation according to the TIFF and Exif specifications. The [`CGImagePropertyOrientation`](./cgimagepropertyorientation.md) type simply defines symbolic names for those values, so you can convert to and from the raw numeric type with C type-cast syntax or the inherited [`init(rawValue:)`](../Swift/rawrepresentable/init%28rawvalue%29.md) initializer and [`rawValue`](../Swift/rawrepresentable/rawvalue-swift.property.md) property in Swift.
 
 ## Topics
 
 ### Image Orientations
-- [CGImagePropertyOrientation.up](cgimagepropertyorientation/up.md)
+- [CGImagePropertyOrientation.up](./cgimagepropertyorientation/up.md)
   The encoded image data matches the image’s intended display orientation.
-- [CGImagePropertyOrientation.upMirrored](cgimagepropertyorientation/upmirrored.md)
+- [CGImagePropertyOrientation.upMirrored](./cgimagepropertyorientation/upmirrored.md)
   The encoded image data is horizontally flipped from the image’s intended display orientation.
-- [CGImagePropertyOrientation.down](cgimagepropertyorientation/down.md)
+- [CGImagePropertyOrientation.down](./cgimagepropertyorientation/down.md)
   The encoded image data is rotated 180° from the image’s intended display orientation.
-- [CGImagePropertyOrientation.downMirrored](cgimagepropertyorientation/downmirrored.md)
+- [CGImagePropertyOrientation.downMirrored](./cgimagepropertyorientation/downmirrored.md)
   The encoded image data is vertically flipped from the image’s intended display orientation.
-- [CGImagePropertyOrientation.leftMirrored](cgimagepropertyorientation/leftmirrored.md)
+- [CGImagePropertyOrientation.leftMirrored](./cgimagepropertyorientation/leftmirrored.md)
   The encoded image data is horizontally flipped and rotated 90° counter-clockwise from the image’s intended display orientation.
-- [CGImagePropertyOrientation.right](cgimagepropertyorientation/right.md)
+- [CGImagePropertyOrientation.right](./cgimagepropertyorientation/right.md)
   The encoded image data is rotated 90° counter-clockwise from the image’s intended display orientation.
-- [CGImagePropertyOrientation.rightMirrored](cgimagepropertyorientation/rightmirrored.md)
+- [CGImagePropertyOrientation.rightMirrored](./cgimagepropertyorientation/rightmirrored.md)
   The encoded image data is horizontally flipped and rotated 90° clockwise from the image’s intended display orientation.
-- [CGImagePropertyOrientation.left](cgimagepropertyorientation/left.md)
+- [CGImagePropertyOrientation.left](./cgimagepropertyorientation/left.md)
   The encoded image data is rotated 90° clockwise from the image’s intended display orientation.
 ### Initializers
-- [init?(rawValue: UInt32)](cgimagepropertyorientation/init(rawvalue:).md)
+- [init?(rawValue: UInt32)](./cgimagepropertyorientation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let kCGImagePropertyImageCount: CFString](kcgimagepropertyimagecount.md)
+### Image Information
+- [let kCGImagePropertyImageCount: CFString](./kcgimagepropertyimagecount.md)
   The number of images in the file.
-- [let kCGImagePropertyIsIndexed: CFString](kcgimagepropertyisindexed.md)
+- [let kCGImagePropertyIsIndexed: CFString](./kcgimagepropertyisindexed.md)
   A Boolean value that indicates whether the image contains indexed pixel samples.
-- [let kCGImagePropertyImages: CFString](kcgimagepropertyimages.md)
+- [let kCGImagePropertyImages: CFString](./kcgimagepropertyimages.md)
   An array of dictionaries, each of which contains metadata for one of the images in the file.
-- [let kCGImagePropertyThumbnailImages: CFString](kcgimagepropertythumbnailimages.md)
-- [let kCGImagePropertyPrimaryImage: CFString](kcgimagepropertyprimaryimage.md)
+- [let kCGImagePropertyThumbnailImages: CFString](./kcgimagepropertythumbnailimages.md)
+- [let kCGImagePropertyPrimaryImage: CFString](./kcgimagepropertyprimaryimage.md)
   The index of the primary image in the file.
-- [let kCGImagePropertyIsFloat: CFString](kcgimagepropertyisfloat.md)
+- [let kCGImagePropertyIsFloat: CFString](./kcgimagepropertyisfloat.md)
   A Boolean value that indicates whether the image contains floating-point pixel samples.
-- [let kCGImagePropertyOrientation: CFString](kcgimagepropertyorientation.md)
+- [let kCGImagePropertyOrientation: CFString](./kcgimagepropertyorientation.md)
   The intended display orientation of the image.
-- [Individual Image Properties](individual-image-properties.md)
+- [Individual Image Properties](./individual-image-properties.md)
   Properties that apply to an individual image in an image source.
 
 

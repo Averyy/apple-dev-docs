@@ -1,17 +1,22 @@
 # contentDescription
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual description of the element type.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var contentDescription: Unmanaged<CFString>!
+```
+
+```c
+CFStringRef contentDescription;
 ```
 
 

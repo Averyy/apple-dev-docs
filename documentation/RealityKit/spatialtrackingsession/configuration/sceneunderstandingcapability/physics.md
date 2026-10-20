@@ -1,7 +1,8 @@
 # physics
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The capability that allows the system to use scene-understanding data for physics simulation.
 
@@ -18,7 +19,7 @@ static let physics: SpatialTrackingSession.Configuration.SceneUnderstandingCapab
 
 ## Mentions
 
-- [Implementing scene understanding and reconstruction in your RealityKit app](realitykit-scene-understanding.md)
+- [Implementing scene understanding and reconstruction in your RealityKit app](../../../realitykit-scene-understanding.md)
 
 
 ---

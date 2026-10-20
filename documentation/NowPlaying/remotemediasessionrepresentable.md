@@ -1,7 +1,8 @@
 # RemoteMediaSessionRepresentable
 
 **Framework**: Now Playing  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A session that plays remotely, potentially across multiple devices.
 
@@ -20,7 +21,7 @@ protocol RemoteMediaSessionRepresentable : Identifiable
 
 ## Mentions
 
-- [Publishing remote media sessions](publishing-remote-media-sessions.md)
+- [Publishing remote media sessions](./publishing-remote-media-sessions.md)
 
 #### Overview
 
@@ -28,13 +29,13 @@ Conform to this protocol to represent playback happening outside of the current 
 
 Your session provides metadata and supported commands, as well as the list of devices playing in this session. It also handles volume changes and commands targeting the remote session.
 
-> ❗ **Important**: The system may request updates about this session via [`update(_:)`](remotemediasessionrepresentable/update(_:).md), where an instance of a `Codable` type your app defines passes into the function. Your implementation uses the passed [`Attributes`](remotemediasessionrepresentable/attributes.md) instance to update the model objects from your session, which informs the system of any metadata or command changes.
+> ❗ **Important**: The system may request updates about this session via [`update(_:)`](./remotemediasessionrepresentable/update%28_%29.md), where an instance of a `Codable` type your app defines passes into the function. Your implementation uses the passed [`Attributes`](./remotemediasessionrepresentable/attributes.md) instance to update the model objects from your session, which informs the system of any metadata or command changes.
 
 Your app donates remote sessions to the system in two ways: from the main app, or through push notifications.
 
-See [`RemoteMediaSession`](remotemediasession.md) for the in-app API to donate a remote session.
+See [`RemoteMediaSession`](./remotemediasession.md) for the in-app API to donate a remote session.
 
-To start, update, or end remote sessions using push notifications, see: [`Publishing remote media sessions`](publishing-remote-media-sessions.md)
+To start, update, or end remote sessions using push notifications, see: [Publishing remote media sessions](./publishing-remote-media-sessions.md)
 
 The following example shows a basic implementation:
 
@@ -144,47 +145,48 @@ class MySession: RemoteMediaSessionRepresentable {
 ## Topics
 
 ### Associated Types
-- [associatedtype Attributes : RemoteMediaSessionAttributes](remotemediasessionrepresentable/attributes.md)
+- [associatedtype Attributes : RemoteMediaSessionAttributes](./remotemediasessionrepresentable/attributes.md)
   A `Codable` type you define to identify this session and carry its remote state.
 ### Instance Properties
-- [var commands: [MediaCommand]](remotemediasessionrepresentable/commands.md)
+- [var commands: [MediaCommand]](./remotemediasessionrepresentable/commands.md)
   The commands supported by this session.
-- [var content: (any MediaContentRepresentable)?](remotemediasessionrepresentable/content.md)
+- [var content: (any MediaContentRepresentable)?](./remotemediasessionrepresentable/content.md)
   The content being played in this session.
-- [var devices: [MediaDevice]](remotemediasessionrepresentable/devices.md)
+- [var devices: [MediaDevice]](./remotemediasessionrepresentable/devices.md)
   The devices currently playing as part of this session.
-- [var id: String](remotemediasessionrepresentable/id.md)
+- [var id: String](./remotemediasessionrepresentable/id.md)
   The unique identifier for this session.
-- [var playbackSnapshot: MediaPlaybackSnapshot?](remotemediasessionrepresentable/playbacksnapshot.md)
+- [var playbackSnapshot: MediaPlaybackSnapshot?](./remotemediasessionrepresentable/playbacksnapshot.md)
   The current playback state of this session.
-- [var pushToken: Data?](remotemediasessionrepresentable/pushtoken.md)
+- [var pushToken: Data?](./remotemediasessionrepresentable/pushtoken.md)
   The token you use to send push notifications to update this remote session.
-- [var pushTokenUpdates: AsyncStream<Data>](remotemediasessionrepresentable/pushtokenupdates.md)
+- [var pushTokenUpdates: AsyncStream<Data>](./remotemediasessionrepresentable/pushtokenupdates.md)
   An asynchronous sequence you use to observe changes to the push token of this remote session.
 ### Instance Methods
-- [func update(Self.Attributes)](remotemediasessionrepresentable/update(_:).md)
+- [func update(Self.Attributes)](./remotemediasessionrepresentable/update%28_%29.md)
   Updates the session state from new attributes.
 
 ## Relationships
 
 ### Inherits From
-- [Identifiable](../swift/identifiable.md)
+- [Identifiable](../Swift/identifiable.md)
 
 ## See Also
 
-- [Publishing remote media sessions](publishing-remote-media-sessions.md)
+### Remote sessions
+- [Publishing remote media sessions](./publishing-remote-media-sessions.md)
   Show media from an external device on the Lock Screen and Control Center.
-- [class RemoteMediaSession](remotemediasession.md)
+- [class RemoteMediaSession](./remotemediasession.md)
   A session that manages remote media playback across devices.
-- [protocol RemoteMediaSessionExtension](remotemediasessionextension.md)
+- [protocol RemoteMediaSessionExtension](./remotemediasessionextension.md)
   An app extension that provides remote media sessions.
-- [class RemoteMediaSessionExtensionConfiguration](remotemediasessionextensionconfiguration.md)
+- [class RemoteMediaSessionExtensionConfiguration](./remotemediasessionextensionconfiguration.md)
   The configuration object for a remote playback extension.
-- [protocol RemoteMediaSessionAttributes](remotemediasessionattributes.md)
+- [protocol RemoteMediaSessionAttributes](./remotemediasessionattributes.md)
   A type that represents attributes for remote sessions.
-- [enum RemoteMediaSessionError](remotemediasessionerror.md)
+- [enum RemoteMediaSessionError](./remotemediasessionerror.md)
   Errors that can occur during remote session operations.
-- [struct MediaDevice](mediadevice.md)
+- [struct MediaDevice](./mediadevice.md)
   A device that plays media in a remote session.
 
 

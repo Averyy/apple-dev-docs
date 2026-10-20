@@ -1,7 +1,8 @@
 # entry
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app entity describes a journal entry.
 
@@ -54,7 +55,7 @@ struct JournalEntity: AppEntity {
 }
 ```
 
-For more information about the `.journal` app intent domain, see [`Journaling`](app-schema-domain-journaling.md). For general information about app intent domains, see [`Making actions and content discoverable by Apple Intelligence`](making-actions-and-content-discoverable-by-apple-intelligence.md).
+For more information about the `.journal` app intent domain, see [Journaling](../../app-schema-domain-journaling.md). For general information about app intent domains, see [Making actions and content discoverable by Apple Intelligence](../../making-actions-and-content-discoverable-by-apple-intelligence.md).
 
 
 ---

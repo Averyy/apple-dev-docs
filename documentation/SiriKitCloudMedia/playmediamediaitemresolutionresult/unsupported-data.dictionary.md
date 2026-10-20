@@ -1,7 +1,8 @@
 # PlayMediaMediaItemResolutionResult.Unsupported
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The reason your service can’t play the requested media item.
 
@@ -10,7 +11,7 @@ The reason your service can’t play the requested media item.
 
 ## Declaration
 
-```swift
+```
 object PlayMediaMediaItemResolutionResult.Unsupported
 ```
 
@@ -24,11 +25,12 @@ If you can’t find the media item the user specifies, don’t provide a reason.
 
 ## See Also
 
-- [object PlayMediaMediaItemResolutionResult.Success](playmediamediaitemresolutionresult/success-data.dictionary.md)
+### Specifying a Result
+- [object PlayMediaMediaItemResolutionResult.Success](./success-data.dictionary.md)
   A media item that successfully matches the intent.
-- [object PlayMediaMediaItemResolutionResult.Disambiguation](playmediamediaitemresolutionresult/disambiguation-data.dictionary.md)
+- [object PlayMediaMediaItemResolutionResult.Disambiguation](./disambiguation-data.dictionary.md)
   A result that requires the user to choose from multiple media items before proceeding.
-- [object PlayMediaMediaItemResolutionResult.ConfirmationRequired](playmediamediaitemresolutionresult/confirmationrequired-data.dictionary.md)
+- [object PlayMediaMediaItemResolutionResult.ConfirmationRequired](./confirmationrequired-data.dictionary.md)
   A result that requires the user to confirm the media item before proceeding.
 
 

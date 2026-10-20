@@ -1,7 +1,8 @@
 # ComputeNodeGraph.Port.Kind.state
 
 **Framework**: Compute Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Carries a read/write binding to named external storage (element, emitter, group, output attribute, threadgroup memory). Type is always `.state(definition:)`. No ordering effect.
 
@@ -12,7 +13,7 @@ Carries a read/write binding to named external storage (element, emitter, group,
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

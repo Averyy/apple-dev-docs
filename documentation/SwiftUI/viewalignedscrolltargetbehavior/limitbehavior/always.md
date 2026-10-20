@@ -1,7 +1,8 @@
 # always
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The always limit behavior.
 
@@ -26,9 +27,10 @@ Always limit the amount of views that can be scrolled.
 
 ## See Also
 
-- [static var automatic: ViewAlignedScrollTargetBehavior.LimitBehavior](viewalignedscrolltargetbehavior/limitbehavior/automatic.md)
+### Getting the limit behavior
+- [static var automatic: ViewAlignedScrollTargetBehavior.LimitBehavior](./automatic.md)
   The automatic limit behavior.
-- [static var never: ViewAlignedScrollTargetBehavior.LimitBehavior](viewalignedscrolltargetbehavior/limitbehavior/never.md)
+- [static var never: ViewAlignedScrollTargetBehavior.LimitBehavior](./never.md)
   The never limit behavior.
 
 

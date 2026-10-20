@@ -1,7 +1,8 @@
 # action
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the action performed when users click the outline.
 
@@ -19,15 +20,20 @@ Returns the action performed when users click the outline.
 var action: PDFAction? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) PDFAction * action;
+```
+
 #### Discussion
 
 The root outline serves only as a container for the outlines it owns; it does not have an action. Note that a `PDFOutline` object can have either an action or a destination, not both.
 
-If the `PDFOutline` object has a destination, instead of an action,  `action` returns a [`PDFActionGoTo`](pdfactiongoto.md) object (this is equivalent to calling [`destination`](pdfoutline/destination.md) on the `PDFOutline` object). For other action types, `action` returns the appropriate PDF Kit action type object, such as [`PDFActionURL`](pdfactionurl.md).
+If the `PDFOutline` object has a destination, instead of an action,  `action` returns a [`PDFActionGoTo`](../pdfactiongoto.md) object (this is equivalent to calling [`destination`](./destination.md) on the `PDFOutline` object). For other action types, `action` returns the appropriate PDF Kit action type object, such as [`PDFActionURL`](../pdfactionurl.md).
 
 ## See Also
 
-- [var destination: PDFDestination?](pdfoutline/destination.md)
+### Managing Actions and Destinations
+- [var destination: PDFDestination?](./destination.md)
   Returns the destination associated with the outline.
 
 

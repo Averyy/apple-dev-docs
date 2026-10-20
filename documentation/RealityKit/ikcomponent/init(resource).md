@@ -1,7 +1,8 @@
 # init(resource:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new component value referencing the specified resource.
 

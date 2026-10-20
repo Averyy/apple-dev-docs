@@ -1,7 +1,8 @@
 # maximumCount
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The maximum number of heartbeats you can add to the sample.
 
@@ -19,13 +20,18 @@ The maximum number of heartbeats you can add to the sample.
 class var maximumCount: Int { get }
 ```
 
+```objc
+@property (class, readonly) NSUInteger maximumCount;
+```
+
 #### Discussion
 
-After reaching the maximum count, any attempt to call the [`addHeartbeatWithTimeInterval(sinceSeriesStartDate:precededByGap:completion:)`](hkheartbeatseriesbuilder/addheartbeatwithtimeinterval(sinceseriesstartdate:precededbygap:completion:).md) method fails.
+After reaching the maximum count, any attempt to call the [`addHeartbeatWithTimeInterval(sinceSeriesStartDate:precededByGap:completion:)`](./addheartbeatwithtimeinterval%28sinceseriesstartdate,precededbygap,completion%29.md) method fails.
 
 ## See Also
 
-- [init(healthStore: HKHealthStore, device: HKDevice?, start: Date)](hkheartbeatseriesbuilder/init(healthstore:device:start:).md)
+### Creating a Heartbeat Series Builder
+- [init(healthStore: HKHealthStore, device: HKDevice?, start: Date)](./init%28healthstore,device,start%29.md)
   Creates a new heartbeat series builder.
 
 

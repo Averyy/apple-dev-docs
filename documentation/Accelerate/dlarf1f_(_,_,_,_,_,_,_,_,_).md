@@ -1,7 +1,8 @@
 # dlarf1f_(_:_:_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 27.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func dlarf1f_(_ side: UnsafePointer<CChar>, _ m: UnsafePointer<__LAPACK_int>, _ n: UnsafePointer<__LAPACK_int>, _ v: UnsafePointer<Double>?, _ incv: UnsafePointer<__LAPACK_int>, _ tau: UnsafePointer<Double>, _ c: UnsafeMutablePointer<Double>?, _ ldc: UnsafePointer<__LAPACK_int>, _ work: UnsafeMutablePointer<Double>?)
+```
+
+```c
+void dlarf1f_(const char *side, const __LAPACK_int *m, const __LAPACK_int *n, const double *v, const __LAPACK_int *incv, const double *tau, double *c, const __LAPACK_int *ldc, double *work);
 ```
 
 

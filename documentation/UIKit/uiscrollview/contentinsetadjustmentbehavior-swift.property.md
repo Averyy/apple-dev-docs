@@ -1,7 +1,8 @@
 # contentInsetAdjustmentBehavior
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The behavior for determining the adjusted content offsets.
 
@@ -18,19 +19,24 @@ The behavior for determining the adjusted content offsets.
 var contentInsetAdjustmentBehavior: UIScrollView.ContentInsetAdjustmentBehavior { get set }
 ```
 
+```objc
+@property (nonatomic) UIScrollViewContentInsetAdjustmentBehavior contentInsetAdjustmentBehavior;
+```
+
 #### Discussion
 
-This property specifies how the safe area insets are used to modify the content area of the scroll view. The default value of this property is [`UIScrollView.ContentInsetAdjustmentBehavior.automatic`](uiscrollview/contentinsetadjustmentbehavior-swift.enum/automatic.md).
+This property specifies how the safe area insets are used to modify the content area of the scroll view. The default value of this property is [`UIScrollView.ContentInsetAdjustmentBehavior.automatic`](./contentinsetadjustmentbehavior-swift.enum/automatic.md).
 
 ## See Also
 
-- [var adjustedContentInset: UIEdgeInsets](uiscrollview/adjustedcontentinset.md)
+### Managing the content inset behavior
+- [var adjustedContentInset: UIEdgeInsets](./adjustedcontentinset.md)
   The insets derived from the content insets and the safe area of the scroll view.
-- [var contentInset: UIEdgeInsets](uiscrollview/contentinset.md)
+- [var contentInset: UIEdgeInsets](./contentinset.md)
   The custom distance that the content view is inset from the safe area or scroll view edges.
-- [UIScrollView.ContentInsetAdjustmentBehavior](uiscrollview/contentinsetadjustmentbehavior-swift.enum.md)
+- [UIScrollView.ContentInsetAdjustmentBehavior](./contentinsetadjustmentbehavior-swift.enum.md)
   Constants indicating how safe area insets are added to the adjusted content inset.
-- [func adjustedContentInsetDidChange()](uiscrollview/adjustedcontentinsetdidchange.md)
+- [func adjustedContentInsetDidChange()](./adjustedcontentinsetdidchange%28%29.md)
   Notifies the scroll view when the adjusted content insets of the scroll view change.
 
 

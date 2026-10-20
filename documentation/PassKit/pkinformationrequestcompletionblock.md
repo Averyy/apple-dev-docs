@@ -1,15 +1,16 @@
 # PKInformationRequestCompletionBlock
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -17,13 +18,18 @@
 typealias PKInformationRequestCompletionBlock = (PKBarcodeEventMetadataResponse) -> Void
 ```
 
+```c
+typedef void (^)(PKBarcodeEventMetadataResponse *) PKInformationRequestCompletionBlock;
+```
+
 ## See Also
 
-- [func handle(PKBarcodeEventConfigurationRequest, completion: () -> Void)](pkpaymentinformationrequesthandling/handle(_:completion:)-3cth8.md)
-- [func handleInformationRequest(PKBarcodeEventMetadataRequest, completion: (PKBarcodeEventMetadataResponse) -> Void)](pkpaymentinformationrequesthandling/handleinformationrequest(_:completion:).md)
-- [class PKBarcodeEventConfigurationRequest](pkbarcodeeventconfigurationrequest.md)
-- [class PKBarcodeEventMetadataRequest](pkbarcodeeventmetadatarequest.md)
-- [class PKBarcodeEventMetadataResponse](pkbarcodeeventmetadataresponse.md)
+### Getting the transaction information
+- [func handle(PKBarcodeEventConfigurationRequest, completion: () -> Void)](./pkpaymentinformationrequesthandling/handle%28_,completion%29-3cth8.md)
+- [func handleInformationRequest(PKBarcodeEventMetadataRequest, completion: (PKBarcodeEventMetadataResponse) -> Void)](./pkpaymentinformationrequesthandling/handleinformationrequest%28_,completion%29.md)
+- [class PKBarcodeEventConfigurationRequest](./pkbarcodeeventconfigurationrequest.md)
+- [class PKBarcodeEventMetadataRequest](./pkbarcodeeventmetadatarequest.md)
+- [class PKBarcodeEventMetadataResponse](./pkbarcodeeventmetadataresponse.md)
 
 
 ---

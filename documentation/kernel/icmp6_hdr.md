@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct icmp6_hdr {
     ...
 };
@@ -17,10 +17,10 @@ struct icmp6_hdr {
 ## Topics
 
 ### Instance Properties
-- [icmp6_cksum](icmp6_hdr/3754021-icmp6_cksum.md)
-- [icmp6_code](icmp6_hdr/3754022-icmp6_code.md)
-- [icmp6_dataun](icmp6_hdr/3754023-icmp6_dataun.md)
-- [icmp6_type](icmp6_hdr/3754024-icmp6_type.md)
+- [icmp6_cksum](./icmp6_hdr/api-3754021-icmp6_cksum.md)
+- [icmp6_code](./icmp6_hdr/api-3754022-icmp6_code.md)
+- [icmp6_dataun](./icmp6_hdr/api-3754023-icmp6_dataun.md)
+- [icmp6_type](./icmp6_hdr/api-3754024-icmp6_type.md)
 
 
 ---

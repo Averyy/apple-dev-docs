@@ -2,6 +2,7 @@
 
 **Framework**: Core NFC  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -13,6 +14,10 @@
 
 ```swift
 func sendCustomCommand(commandConfiguration: NFCISO15693CustomCommandConfiguration, completionHandler: @escaping (Data, (any Error)?) -> Void)
+```
+
+```objc
+- (void) sendCustomCommandWithConfiguration:(NFCISO15693CustomCommandConfiguration *) commandConfiguration completionHandler:(void (^)(NSData *customResponseParameters, NSError *error)) completionHandler;
 ```
 
 #### Discussion

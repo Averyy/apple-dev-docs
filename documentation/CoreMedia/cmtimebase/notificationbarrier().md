@@ -1,7 +1,8 @@
 # notificationBarrier()
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests that the timebase wait until it isn’t posting notifications.
 

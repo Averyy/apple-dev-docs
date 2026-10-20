@@ -1,7 +1,8 @@
 # AVPlayerAudiovisualBackgroundPlaybackPolicy
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Policies that describe playback behavior when an app transitions to the background while playing video.
 
@@ -20,31 +21,36 @@ Policies that describe playback behavior when an app transitions to the backgrou
 enum AVPlayerAudiovisualBackgroundPlaybackPolicy
 ```
 
+```c
+enum AVPlayerAudiovisualBackgroundPlaybackPolicy : NSInteger;
+```
+
 ## Topics
 
 ### Policies
-- [AVPlayerAudiovisualBackgroundPlaybackPolicy.automatic](avplayeraudiovisualbackgroundplaybackpolicy/automatic.md)
+- [AVPlayerAudiovisualBackgroundPlaybackPolicy.automatic](./avplayeraudiovisualbackgroundplaybackpolicy/automatic.md)
   The system decides whether playback continues.
-- [AVPlayerAudiovisualBackgroundPlaybackPolicy.continuesIfPossible](avplayeraudiovisualbackgroundplaybackpolicy/continuesifpossible.md)
+- [AVPlayerAudiovisualBackgroundPlaybackPolicy.continuesIfPossible](./avplayeraudiovisualbackgroundplaybackpolicy/continuesifpossible.md)
   The app continues playback, if possible.
-- [AVPlayerAudiovisualBackgroundPlaybackPolicy.pauses](avplayeraudiovisualbackgroundplaybackpolicy/pauses.md)
+- [AVPlayerAudiovisualBackgroundPlaybackPolicy.pauses](./avplayeraudiovisualbackgroundplaybackpolicy/pauses.md)
   The app pauses playback.
 ### Initializers
-- [init?(rawValue: Int)](avplayeraudiovisualbackgroundplaybackpolicy/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avplayeraudiovisualbackgroundplaybackpolicy/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var audiovisualBackgroundPlaybackPolicy: AVPlayerAudiovisualBackgroundPlaybackPolicy](avplayer/audiovisualbackgroundplaybackpolicy.md)
+### Configuring background playback
+- [var audiovisualBackgroundPlaybackPolicy: AVPlayerAudiovisualBackgroundPlaybackPolicy](./avplayer/audiovisualbackgroundplaybackpolicy.md)
   A policy that determines how playback of audiovisual media continues when the app transitions to the background.
 
 

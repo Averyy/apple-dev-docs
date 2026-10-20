@@ -1,7 +1,8 @@
 # share
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A reference to the share object that determines the share status of the record.
 
@@ -21,9 +22,13 @@ A reference to the share object that determines the share status of the record.
 var share: CKRecord.Reference? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) CKReference * share;
+```
+
 #### Discussion
 
-CloudKit clears this property’s value when it deletes the corresponding [`CKShare`](ckshare.md) object on the server. Send this record in the same batch operation as the share object you’re deleting, and this property updates accordingly.
+CloudKit clears this property’s value when it deletes the corresponding [`CKShare`](../ckshare.md) object on the server. Send this record in the same batch operation as the share object you’re deleting, and this property updates accordingly.
 
 CloudKit only supports sharing in zones with the `CKRecordZoneCapabilitySharing` capability. The default zone doesn’t support sharing.
 
@@ -33,15 +38,16 @@ If any records have a parent reference to this record, CloudKit implicitly share
 
 ## See Also
 
-- [var parent: CKRecord.Reference?](ckrecord/parent.md)
+### Sharing Records
+- [var parent: CKRecord.Reference?](./parent.md)
   A reference to the record’s parent record.
-- [CKRecord.Reference](ckrecord/reference.md)
+- [CKRecord.Reference](./reference.md)
   A relationship between two records in a record zone.
-- [func setParent(CKRecord?)](ckrecord/setparent(_:)-23du1.md)
+- [func setParent(CKRecord?)](./setparent%28_%29-23du1.md)
   Creates and sets a reference object for a parent from its record.
-- [func setParent(CKRecord.ID?)](ckrecord/setparent(_:)-7egcx.md)
+- [func setParent(CKRecord.ID?)](./setparent%28_%29-7egcx.md)
   Creates and sets a reference object for a parent from the parent’s record ID.
-- [CKRecord.SystemFieldKey](ckrecord/systemfieldkey.md)
+- [CKRecord.SystemFieldKey](./systemfieldkey.md)
   Possible values for types of system field keys on records.
 
 

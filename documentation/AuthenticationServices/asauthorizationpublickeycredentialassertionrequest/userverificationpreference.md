@@ -2,6 +2,7 @@
 
 **Framework**: Authentication Services  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A preference that indicates whether the authenticator attempts to verify the user at the time of sign-in.
@@ -20,13 +21,18 @@ A preference that indicates whether the authenticator attempts to verify the use
 var userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference { get set }
 ```
 
+```objc
+@property (nonatomic) ASAuthorizationPublicKeyCredentialUserVerificationPreference userVerificationPreference;
+```
+
 ## See Also
 
-- [var challenge: Data](asauthorizationpublickeycredentialassertionrequest/challenge.md)
+### Getting the properties
+- [var challenge: Data](./challenge.md)
   The challenge to sign.
-- [var relyingPartyIdentifier: String](asauthorizationpublickeycredentialassertionrequest/relyingpartyidentifier.md)
+- [var relyingPartyIdentifier: String](./relyingpartyidentifier.md)
   The domain name of the website for the credential.
-- [var allowedCredentials: [any ASAuthorizationPublicKeyCredentialDescriptor]](asauthorizationpublickeycredentialassertionrequest/allowedcredentials.md)
+- [var allowedCredentials: [any ASAuthorizationPublicKeyCredentialDescriptor]](./allowedcredentials.md)
   A list of allowed credential descriptors the user attempts to sign in with.
 
 

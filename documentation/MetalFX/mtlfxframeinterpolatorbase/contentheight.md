@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The height, in pixels, of the content region within the input textures to process.
@@ -19,9 +20,13 @@ The height, in pixels, of the content region within the input textures to proces
 var contentHeight: Int { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSUInteger contentHeight;
+```
+
 #### Discussion
 
-Use this property together with [`contentWidth`](mtlfxframeinterpolatorbase/contentwidth.md) to specify a subrectangle of the input textures for the frame interpolator to process.
+Use this property together with [`contentWidth`](./contentwidth.md) to specify a subrectangle of the input textures for the frame interpolator to process.
 
 
 ---

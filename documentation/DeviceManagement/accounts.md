@@ -1,7 +1,8 @@
 # Accounts
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures guest accounts.
 
@@ -10,7 +11,7 @@ The payload that configures guest accounts.
 
 ## Declaration
 
-```swift
+```
 object Accounts
 ```
 
@@ -18,7 +19,7 @@ object Accounts
 
 Specify `com.apple.MCX` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.MCX` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -69,21 +70,26 @@ Specify `com.apple.MCX` as the payload type.
 ## Properties
 
 - `DisableGuestAccount` (boolean): If `true`, the system disables the guest account. This property has no effect if `EnableGuestAccount` is `true`.
+
+  **Default**: `false`
 - `EnableGuestAccount` (boolean): If `true`, the system enables the guest account.
+
+  **Default**: `false`
 
 ## See Also
 
-- [object CalDAV](caldav.md)
+### Accounts
+- [object CalDAV](./caldav.md)
   The payload that configures a Calendar account.
-- [object CardDAV](carddav.md)
+- [object CardDAV](./carddav.md)
   The payload that configures a Contacts account.
-- [object GoogleAccount](googleaccount.md)
+- [object GoogleAccount](./googleaccount.md)
   The payload that configures a Google account.
-- [object LDAP](ldap.md)
+- [object LDAP](./ldap.md)
   The payload that configures a Lightweight Directory Access Protocol (LDAP) account.
-- [object MobileAccounts](mobileaccounts.md)
+- [object MobileAccounts](./mobileaccounts.md)
   The payload that configures mobile accounts on the device.
-- [object SubscribedCalendars](subscribedcalendars.md)
+- [object SubscribedCalendars](./subscribedcalendars.md)
   The payload that configures subscribed calendars.
 
 

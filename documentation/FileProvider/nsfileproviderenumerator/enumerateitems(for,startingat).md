@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Requests the next batch of items, starting at the specified page.
@@ -19,9 +20,13 @@ Requests the next batch of items, starting at the specified page.
 func enumerateItems(for observer: any NSFileProviderEnumerationObserver, startingAt page: NSFileProviderPage)
 ```
 
+```objc
+- (void) enumerateItemsForObserver:(id<NSFileProviderEnumerationObserver>) observer startingAtPage:(NSFileProviderPage) page;
+```
+
 ## Mentions
 
-- [Defining Your File Provider’s Content](defining-your-file-provider-s-content.md)
+- [Defining Your File Provider’s Content](../defining-your-file-provider-s-content.md)
 
 #### Discussion
 
@@ -31,19 +36,20 @@ The system requests an enumerator in the following situations:
 - **For files.** The system requests an enumerator when a file presenter begins managing an item. The enumerator is invalidated after the file presenter is removed.
 - **For the working set.** The system requests an enumerator when it begins indexing the working set. It invalidates the enumerator after the indexing operation has completed.
 
-Once requested, an enumerator is used to provide both the content and any changes for an item. When the system is finished with the item, it calls the enumerator’s [`invalidate()`](nsfileproviderenumerator/invalidate().md) method. For example, if you return an enumerator that provides the content of a directory, as long as the enumerator is active, the system also uses it to enumerate changes to the directory.
+Once requested, an enumerator is used to provide both the content and any changes for an item. When the system is finished with the item, it calls the enumerator’s [`invalidate()`](./invalidate%28%29.md) method. For example, if you return an enumerator that provides the content of a directory, as long as the enumerator is active, the system also uses it to enumerate changes to the directory.
 
 The system may have multiple, active enumerators for a number of different items. Some of these may represent items that are currently displayed on screen. Others may be items that are no longer displayed, but the enumerator is retained for performance reasons. You need to inform the system of any changes to the content managed by any of the active enumerators, as well as any changes to the working set (whether or not it has an active enumerator).
 
-For more information on enumerating items, see [`Defining Your File Provider’s Content`](defining-your-file-provider-s-content.md). For more information on tracking changes, see [`Tracking Your File Provider’s Changes`](tracking-your-file-provider-s-changes.md).
+For more information on enumerating items, see [Defining Your File Provider’s Content](../defining-your-file-provider-s-content.md). For more information on tracking changes, see [Tracking Your File Provider’s Changes](../tracking-your-file-provider-s-changes.md).
 
 ## See Also
 
-- [func enumerateChanges(for: any NSFileProviderChangeObserver, from: NSFileProviderSyncAnchor)](nsfileproviderenumerator/enumeratechanges(for:from:).md)
+### Enumerating Items and Changes
+- [func enumerateChanges(for: any NSFileProviderChangeObserver, from: NSFileProviderSyncAnchor)](./enumeratechanges%28for,from%29.md)
   Requests the next batch of changes after the specified sync anchor.
-- [func currentSyncAnchor(completionHandler: (NSFileProviderSyncAnchor?) -> Void)](nsfileproviderenumerator/currentsyncanchor(completionhandler:).md)
+- [func currentSyncAnchor(completionHandler: (NSFileProviderSyncAnchor?) -> Void)](./currentsyncanchor%28completionhandler%29.md)
   Returns the current sync anchor.
-- [func invalidate()](nsfileproviderenumerator/invalidate.md)
+- [func invalidate()](./invalidate%28%29.md)
   Stops the enumeration of items and changes.
 
 

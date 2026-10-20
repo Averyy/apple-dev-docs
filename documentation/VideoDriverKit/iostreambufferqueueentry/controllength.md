@@ -1,23 +1,25 @@
 # controlLength
 
 **Framework**: VideoDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 uint32_t controlLength;
 ```
 
 ## See Also
 
-- [bufferID](iostreambufferqueueentry/bufferid.md)
-- [dataOffset](iostreambufferqueueentry/dataoffset.md)
-- [dataLength](iostreambufferqueueentry/datalength.md)
-- [controlOffset](iostreambufferqueueentry/controloffset.md)
+### Accessing buffer queue entry properties
+- [bufferID](./bufferid.md)
+- [dataOffset](./dataoffset.md)
+- [dataLength](./datalength.md)
+- [controlOffset](./controloffset.md)
 
 
 ---

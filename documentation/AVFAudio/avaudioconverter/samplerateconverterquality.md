@@ -1,7 +1,8 @@
 # sampleRateConverterQuality
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A sample rate converter algorithm key value.
 
@@ -20,17 +21,22 @@ A sample rate converter algorithm key value.
 var sampleRateConverterQuality: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSInteger sampleRateConverterQuality;
+```
+
 #### Discussion
 
-For information about possible key values, see [`AVSampleRateConverterAlgorithmKey`](avsamplerateconverteralgorithmkey.md).
+For information about possible key values, see [`AVSampleRateConverterAlgorithmKey`](../avsamplerateconverteralgorithmkey.md).
 
 ## See Also
 
-- [var sampleRateConverterAlgorithm: String?](avaudioconverter/samplerateconverteralgorithm.md)
+### Getting sample rate properties
+- [var sampleRateConverterAlgorithm: String?](./samplerateconverteralgorithm.md)
   The priming method the sample rate converter or decoder uses.
-- [var applicableEncodeSampleRates: [NSNumber]?](avaudioconverter/applicableencodesamplerates.md)
+- [var applicableEncodeSampleRates: [NSNumber]?](./applicableencodesamplerates.md)
   An array of output sample rates that the converter applies according to the current formats and settings, when encoding.
-- [var availableEncodeSampleRates: [NSNumber]?](avaudioconverter/availableencodesamplerates.md)
+- [var availableEncodeSampleRates: [NSNumber]?](./availableencodesamplerates.md)
   An array of all output sample rates the codec provides when encoding.
 
 

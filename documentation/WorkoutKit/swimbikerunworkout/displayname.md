@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: WorkoutKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name that the system uses when displaying the workout.
 
@@ -20,7 +21,8 @@ var displayName: String?
 
 ## See Also
 
-- [var activities: [SwimBikeRunWorkout.Activity]](swimbikerunworkout/activities.md)
+### Accessing workout data
+- [var activities: [SwimBikeRunWorkout.Activity]](./activities.md)
   An ordered list of activities for the multisport workout.
 
 

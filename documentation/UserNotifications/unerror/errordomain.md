@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 10.0+
@@ -20,9 +21,10 @@ static var errorDomain: String { get }
 
 ## See Also
 
-- [let UNErrorDomain: String](unerrordomain.md)
+### Error Information
+- [let UNErrorDomain: String](../unerrordomain.md)
   The error domain for notifications.
-- [UNError.Code](unerror/code.md)
+- [UNError.Code](./code.md)
   Constants that identify notification errors.
 
 

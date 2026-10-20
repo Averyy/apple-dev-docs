@@ -1,7 +1,8 @@
 # RemoteKeylessEntryConfigurableEnduringAction.EnduringExecutionRequest.Event
 
 **Framework**: CarKey  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.0+
@@ -19,7 +20,7 @@ enum Event
 ## Topics
 
 ### Enumeration Cases
-- [case receivedContinuationRequest(RemoteKeylessEntryConfigurableEnduringAction.EnduringExecutionRequest.ContinuationRequest)](remotekeylessentryconfigurableenduringaction/enduringexecutionrequest/event/receivedcontinuationrequest(_:).md)
+- [case receivedContinuationRequest(RemoteKeylessEntryConfigurableEnduringAction.EnduringExecutionRequest.ContinuationRequest)](./event/receivedcontinuationrequest%28_%29.md)
   Received continuation request from the Vehicle executing the Enduring Action The enduring action may time out on the vehicle side if continuationRequest.continue() or stop() is not invoked promptly upon the receipt of this event.
 
 

@@ -1,7 +1,8 @@
 # application(_:userDidAcceptCloudKitShareWith:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the user accepts a CloudKit sharing invitation.
 
@@ -15,14 +16,18 @@ Tells the delegate when the user accepts a CloudKit sharing invitation.
 optional func application(_ application: NSApplication, userDidAcceptCloudKitShareWith metadata: CKShareMetadata)
 ```
 
+```objc
+- (void) application:(NSApplication *) application userDidAcceptCloudKitShareWithMetadata:(CKShareMetadata *) metadata;
+```
+
 #### Discussion
 
-Use the provided metadata to begin sharing the specified content with the current user. For more information, see [`CloudKit`](https://developer.apple.com/documentation/cloudkit).
+Use the provided metadata to begin sharing the specified content with the current user. For more information, see [CloudKit](../../CloudKit/CloudKit.md).
 
 ## Parameters
 
 - `application`: The shared app object.
-- `metadata`: The metadata associated with the invitation. Use the URL of the metadata’s [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) object and the [`containerIdentifier`](https://developer.apple.com/documentation/cloudkit/ckshare/metadata/containeridentifier) property to schedule a [`CKAcceptSharesOperation`](https://developer.apple.com/documentation/cloudkit/ckacceptsharesoperation) object.
+- `metadata`: The metadata associated with the invitation. Use the URL of the metadata’s [`CKShare`](../../CloudKit/ckshare.md) object and the [`containerIdentifier`](../../CloudKit/ckshare/metadata/containeridentifier.md) property to schedule a [`CKAcceptSharesOperation`](../../CloudKit/ckacceptsharesoperation.md) object.
 
 
 ---

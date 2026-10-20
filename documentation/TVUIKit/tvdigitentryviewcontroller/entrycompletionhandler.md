@@ -1,7 +1,8 @@
 # entryCompletionHandler
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A completion handler that cues the app that the user has entered the required number of digits for the digit entry view.
 
@@ -14,6 +15,10 @@ A completion handler that cues the app that the user has entered the required nu
 var entryCompletionHandler: (String) -> Void { get set }
 ```
 
+```objc
+@property (nonatomic, copy) void (^entryCompletionHandler)(NSString *entry);
+```
+
 #### Discussion
 
 Your app should respond with any required actions in response to the user’s entry.
@@ -24,7 +29,8 @@ Your app should respond with any required actions in response to the user’s en
 
 ## See Also
 
-- [func clearEntry(animated: Bool)](tvdigitentryviewcontroller/clearentry(animated:).md)
+### Entering Information
+- [func clearEntry(animated: Bool)](./clearentry%28animated%29.md)
   Removes all digits from the digit entry view.
 
 

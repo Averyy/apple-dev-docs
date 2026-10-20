@@ -1,7 +1,8 @@
 # condition
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The condition under which the package manager enables the dependency.
 

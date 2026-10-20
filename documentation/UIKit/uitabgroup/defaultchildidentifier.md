@@ -1,7 +1,8 @@
 # defaultChildIdentifier
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier for the default subitem.
 
@@ -18,13 +19,18 @@ The identifier for the default subitem.
 var defaultChildIdentifier: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * defaultChildIdentifier;
+```
+
 ## See Also
 
-- [var children: [UITab]](uitabgroup/children.md)
+### Accessing tabs
+- [var children: [UITab]](./children.md)
   The tabs within a tab group.
-- [func tab(forIdentifier: String) -> UITab?](uitabgroup/tab(foridentifier:).md)
+- [func tab(forIdentifier: String) -> UITab?](./tab%28foridentifier%29.md)
   Returns a tab with a matching identifier, if any.
-- [var selectedChild: UITab?](uitabgroup/selectedchild.md)
+- [var selectedChild: UITab?](./selectedchild.md)
   The currently selected tab.
 
 

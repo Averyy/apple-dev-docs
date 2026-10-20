@@ -1,7 +1,8 @@
 # CGContext.AuxiliaryInfo
 
 **Framework**: Core Graphics  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -21,18 +22,18 @@ struct AuxiliaryInfo
 ## Topics
 
 ### Initializers
-- [init()](cgcontext/auxiliaryinfo/init.md)
-- [init(maximumBitDepth: CGComponent)](cgcontext/auxiliaryinfo/init(maximumbitdepth:).md)
+- [init()](./auxiliaryinfo/init%28%29.md)
+- [init(maximumBitDepth: CGComponent)](./auxiliaryinfo/init%28maximumbitdepth%29.md)
 ### Instance Properties
-- [var maximumBitDepth: CGComponent](cgcontext/auxiliaryinfo/maximumbitdepth.md)
+- [var maximumBitDepth: CGComponent](./auxiliaryinfo/maximumbitdepth.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

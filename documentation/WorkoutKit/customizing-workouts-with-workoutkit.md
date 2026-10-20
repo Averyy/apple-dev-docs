@@ -1,6 +1,8 @@
 # Customizing workouts with WorkoutKit
 
-**Framework**: WorkoutKit
+**Framework**: WorkoutKit  
+**Role**: Sample Code  
+**Download**: [CustomizingWorkoutsWithWorkoutKit.zip](https://docs-assets.developer.apple.com/published/26f5bfb855ed/CustomizingWorkoutsWithWorkoutKit.zip)
 
 Create, preview, and sync workouts for use in the Workout app on Apple Watch.
 
@@ -12,9 +14,9 @@ Create, preview, and sync workouts for use in the Workout app on Apple Watch.
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC23 session 10016: [`Build custom workouts with WorkoutKit`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10016) and WWDC24 session 10084: [`Build custom swimming workouts with WorkoutKit`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10084).
+> **Note**: This sample code project is associated with WWDC23 session 10016: [Build custom workouts with WorkoutKit](https://developer.apple.com/wwdc23/10016) and WWDC24 session 10084: [Build custom swimming workouts with WorkoutKit](https://developer.apple.com/wwdc24/10084).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 Before you run the sample code project in Xcode:
 
@@ -22,7 +24,7 @@ Before you run the sample code project in Xcode:
 2. Select the top-level project.
 3. Click the target and select a team in the Signing & Capabilities pane.
 
-##### Plan a Workout and Track Its Progress
+##### Plan a workout and track its progress
 
 To run the sample code project in Xcode:
 

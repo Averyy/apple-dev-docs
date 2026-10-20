@@ -1,7 +1,8 @@
 # presentFriendRequestCreator(from:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a view controller with a Messages sheet for the player to request friends.
 
@@ -17,9 +18,21 @@ Presents a view controller with a Messages sheet for the player to request frien
 func presentFriendRequestCreator(from viewController: UIViewController) throws
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+- (BOOL) presentFriendRequestCreatorFromViewController:(UIViewController *) viewController error:(NSError **) error;
+```
+
+*macOS*
+
+```objc
+- (BOOL) presentFriendRequestCreatorFromViewController:(NSViewController *) viewController error:(NSError **) error;
+```
+
 ## Mentions
 
-- [Connecting players with their friends in your game](connecting-players-with-their-friends-in-your-game.md)
+- [Connecting players with their friends in your game](../connecting-players-with-their-friends-in-your-game.md)
 
 #### Discussion
 
@@ -31,9 +44,10 @@ If this method throws an exception, it doesn’t present the view controller.
 
 ## See Also
 
-- [var isPresentingFriendRequestViewController: Bool](gklocalplayer/ispresentingfriendrequestviewcontroller.md)
+### Adding Friends
+- [var isPresentingFriendRequestViewController: Bool](./ispresentingfriendrequestviewcontroller.md)
   A Boolean value that indicates whether your game presents the friends request view controller.
-- [func presentFriendRequestCreator(from: NSWindow?) throws](gklocalplayer/presentfriendrequestcreator(from:)-7clh6.md)
+- [func presentFriendRequestCreator(from: NSWindow?) throws](./presentfriendrequestcreator%28from%29-7clh6.md)
   Opens the Messages app with a sheet for the player to request friends.
 
 

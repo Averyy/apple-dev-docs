@@ -1,7 +1,8 @@
 # style
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style of the table view.
 
@@ -9,7 +10,7 @@ The style of the table view.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,19 +19,24 @@ The style of the table view.
 var style: UITableView.Style { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UITableViewStyle style;
+```
+
 #### Discussion
 
-See [`UITableView.Style`](uitableview/style-swift.enum.md) for descriptions of the constants used to specify table-view style.
+See [`UITableView.Style`](./style-swift.enum.md) for descriptions of the constants used to specify table-view style.
 
 ## See Also
 
-- [UITableView.Style](uitableview/style-swift.enum.md)
+### Configuring the table’s appearance
+- [UITableView.Style](./style-swift.enum.md)
   Constants for the table view styles.
-- [var tableHeaderView: UIView?](uitableview/tableheaderview.md)
+- [var tableHeaderView: UIView?](./tableheaderview.md)
   The view that displays above the table’s content.
-- [var tableFooterView: UIView?](uitableview/tablefooterview.md)
+- [var tableFooterView: UIView?](./tablefooterview.md)
   The view that displays below the table’s content.
-- [var backgroundView: UIView?](uitableview/backgroundview.md)
+- [var backgroundView: UIView?](./backgroundview.md)
   The background view of the table view.
 
 

@@ -1,7 +1,8 @@
 # init(symbol:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new unit with the specified symbol.
 
@@ -18,6 +19,10 @@ Initializes a new unit with the specified symbol.
 
 ```swift
 init(symbol: String)
+```
+
+```objc
+- (instancetype) initWithSymbol:(NSString *) symbol;
 ```
 
 #### Return Value

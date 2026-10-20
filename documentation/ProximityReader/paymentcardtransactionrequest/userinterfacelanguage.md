@@ -1,7 +1,8 @@
 # userInterfaceLanguage
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The language the framework uses when localizing the user interface.
 

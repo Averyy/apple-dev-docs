@@ -1,7 +1,8 @@
 # init(mapView:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a pitch control and associates it with the specified map view.
 
@@ -13,6 +14,10 @@ Creates a pitch control and associates it with the specified map view.
 
 ```swift
 convenience init(mapView: MKMapView?)
+```
+
+```objc
++ (instancetype) pitchControlWithMapView:(MKMapView *) mapView;
 ```
 
 ## Parameters

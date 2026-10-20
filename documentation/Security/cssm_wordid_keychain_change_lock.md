@@ -1,7 +1,8 @@
 # CSSM_WORDID_KEYCHAIN_CHANGE_LOCK
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_WORDID_KEYCHAIN_CHANGE_LOCK: Int { get }
+```
+
+```c
+CSSM_WORDID_KEYCHAIN_CHANGE_LOCK
 ```
 
 

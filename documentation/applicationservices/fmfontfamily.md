@@ -1,7 +1,8 @@
 # FMFontFamily
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias FMFontFamily = Int16
+```
+
+```c
+typedef SInt16 FMFontFamily;
 ```
 
 

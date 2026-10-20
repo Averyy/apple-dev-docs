@@ -1,7 +1,8 @@
 # viewAnnotations()
 
 **Framework**: App Intents Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides the currently visible onscreen entities.
 
@@ -22,7 +23,7 @@ func viewAnnotations() async throws -> [ViewAnnotation]
 
 ## Mentions
 
-- [Testing your App Intents code](testing-your-app-intents-code.md)
+- [Testing your App Intents code](../testing-your-app-intents-code.md)
 
 #### Return Value
 
@@ -30,7 +31,7 @@ An array of view annotations, with selection state and entity data.
 
 #### Discussion
 
-> **Note**: An error if the view annotations query fails.
+> **Throws**: An error if the view annotations query fails.
 
 
 ---

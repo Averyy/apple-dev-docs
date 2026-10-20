@@ -1,7 +1,8 @@
 # JSValueUnprotect(_:_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Unprotects a JavaScript value from garbage collection.
 
@@ -19,6 +20,10 @@ Unprotects a JavaScript value from garbage collection.
 func JSValueUnprotect(_ ctx: JSContextRef!, _ value: JSValueRef!)
 ```
 
+```c
+void JSValueUnprotect(JSContextRef ctx, JSValueRef value);
+```
+
 #### Discussion
 
 You can protect a value multiple times and must unprotect it an equal number of times before it becomes eligible for garbage collection.
@@ -26,11 +31,12 @@ You can protect a value multiple times and must unprotect it an equal number of 
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `value`: The [`JSValueRef`](jsvalueref.md) to unprotect.
+- `value`: The [`JSValueRef`](./jsvalueref.md) to unprotect.
 
 ## See Also
 
-- [func JSValueProtect(JSContextRef!, JSValueRef!)](jsvalueprotect(_:_:).md)
+### Supporting Garbage Collection
+- [func JSValueProtect(JSContextRef!, JSValueRef!)](./jsvalueprotect%28_,_%29.md)
   Protects a JavaScript value from garbage collection.
 
 

@@ -1,7 +1,8 @@
 # Get the asset library ID for an app
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get the asset library resource ID for a specific app.
 
@@ -14,7 +15,7 @@ Get the asset library resource ID for a specific app.
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/apps/1234567890/relationships/assetLibrary
 ```
 
@@ -39,11 +40,23 @@ https://api.appstoreconnect.apple.com/v1/apps/1234567890/relationships/assetLibr
 
 ## Parameters
 
+### Path Parameters
+
 - `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+
+## Responses
+
+- `200` OK (`AppAssetLibraryLinkageResponse`, `application/json`): The request completed successfully.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Read related asset library](get-v1-apps-_id_-assetlibrary.md)
+### Getting asset library information
+- [Read related asset library](./get-v1-apps-_id_-assetlibrary.md)
   Get the asset library for an app.
 
 

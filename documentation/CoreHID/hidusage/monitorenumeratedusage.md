@@ -1,7 +1,8 @@
 # HIDUsage.MonitorEnumeratedUsage
 
 **Framework**: Core HID  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 15.0+
@@ -15,13 +16,13 @@ enum MonitorEnumeratedUsage
 ## Topics
 
 ### Type Properties
-- [static let page: UInt16](hidusage/monitorenumeratedusage/page.md)
+- [static let page: UInt16](./monitorenumeratedusage/page.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

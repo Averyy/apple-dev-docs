@@ -1,7 +1,8 @@
 # includesTextListMarkers
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 26.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var includesTextListMarkers: Bool { get set }
+```
+
+```objc
+@property BOOL includesTextListMarkers;
 ```
 
 

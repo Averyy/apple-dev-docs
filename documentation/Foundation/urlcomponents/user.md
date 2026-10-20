@@ -1,7 +1,8 @@
 # user
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user subcomponent of the URL.
 
@@ -28,23 +29,24 @@ Warning: IETF STD 66 (rfc3986) says the use of the format “user:password” in
 
 ## See Also
 
-- [var fragment: String?](urlcomponents/fragment.md)
+### Accessing components in native format
+- [var fragment: String?](./fragment.md)
   The fragment subcomponent.
-- [var host: String?](urlcomponents/host.md)
+- [var host: String?](./host.md)
   The host subcomponent.
-- [var encodedHost: String?](urlcomponents/encodedhost.md)
+- [var encodedHost: String?](./encodedhost.md)
   The host subcomponent, percent-encoded.
-- [var password: String?](urlcomponents/password.md)
+- [var password: String?](./password.md)
   The password subcomponent of the URL.
-- [var path: String](urlcomponents/path.md)
+- [var path: String](./path.md)
   The path subcomponent.
-- [var port: Int?](urlcomponents/port.md)
+- [var port: Int?](./port.md)
   The port subcomponent.
-- [var query: String?](urlcomponents/query.md)
+- [var query: String?](./query.md)
   The query subcomponent.
-- [var queryItems: [URLQueryItem]?](urlcomponents/queryitems.md)
+- [var queryItems: [URLQueryItem]?](./queryitems.md)
   An array of query items for the URL in the order in which they appear in the original query string.
-- [var scheme: String?](urlcomponents/scheme.md)
+- [var scheme: String?](./scheme.md)
   The scheme subcomponent of the URL.
 
 

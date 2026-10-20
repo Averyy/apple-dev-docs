@@ -1,7 +1,8 @@
 # AuthorizationFree(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Frees the memory associated with an authorization reference.
 
@@ -15,18 +16,22 @@ Frees the memory associated with an authorization reference.
 func AuthorizationFree(_ authorization: AuthorizationRef, _ flags: AuthorizationFlags) -> OSStatus
 ```
 
+```c
+OSStatus AuthorizationFree(AuthorizationRef authorization, AuthorizationFlags flags);
+```
+
 #### Return Value
 
-A result code. See [`Authorization Services Result Codes`](authorization-services-result-codes.md).
+A result code. See [Authorization Services Result Codes](./authorization-services-result-codes.md).
 
 #### Discussion
 
-Call this function when your application no longer needs the authorization reference you created using the function [`AuthorizationCreate(_:_:_:_:)`](authorizationcreate(_:_:_:_:).md).
+Call this function when your application no longer needs the authorization reference you created using the function [`AuthorizationCreate(_:_:_:_:)`](./authorizationcreate%28_,_,_,_%29.md).
 
 ## Parameters
 
 - `authorization`: The authorization reference to free.
-- `flags`: A bit mask. In most cases, pass the constant [`kAuthorizationFlagDefaults`](authorizationflags/kauthorizationflagdefaults.md). To remove all shared and non-shared authorizations, pass the constant [`destroyRights`](authorizationflags/destroyrights.md).
+- `flags`: A bit mask. In most cases, pass the constant [`kAuthorizationFlagDefaults`](./authorizationflags/kauthorizationflagdefaults.md). To remove all shared and non-shared authorizations, pass the constant [`destroyRights`](./authorizationflags/destroyrights.md).
 
 
 ---

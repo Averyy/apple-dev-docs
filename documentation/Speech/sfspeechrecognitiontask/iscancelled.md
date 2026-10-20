@@ -1,7 +1,8 @@
 # isCancelled
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the speech recognition task was canceled.
 
@@ -18,13 +19,18 @@ A Boolean value that indicates whether the speech recognition task was canceled.
 var isCancelled: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isCancelled) BOOL cancelled;
+```
+
 #### Discussion
 
 By default, the value of this property is `false`.
 
 ## See Also
 
-- [func cancel()](sfspeechrecognitiontask/cancel.md)
+### Canceling a speech recognition task
+- [func cancel()](./cancel%28%29.md)
   Cancels the current speech recognition task.
 
 

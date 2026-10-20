@@ -1,12 +1,13 @@
 # Storing a DER-Encoded X.509 Certificate
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: Article
 
 Import and export a certificate from a file.
 
 #### Overview
 
-Certificates are not secret and you often want to share them to disseminate a public key, but [`SecCertificate`](seccertificate.md) is an opaque type that you can’t distribute directly. Instead, you create a Distinguished Encoding Rules (DER) encoded data representation of the certificate using the [`SecCertificateCopyData(_:)`](seccertificatecopydata(_:).md) function:
+Certificates are not secret and you often want to share them to disseminate a public key, but [`SecCertificate`](./seccertificate.md) is an opaque type that you can’t distribute directly. Instead, you create a Distinguished Encoding Rules (DER) encoded data representation of the certificate using the [`SecCertificateCopyData(_:)`](./seccertificatecopydata%28_%29.md) function:
 
 **Swift**:
 
@@ -38,7 +39,7 @@ certData.write(to: <# a URL #>)
 [certData writeToURL:<# a URL #> atomically:YES];
 ```
 
-When you receive such a data object, you use the [`SecCertificateCreateWithData(_:_:)`](seccertificatecreatewithdata(_:_:).md) function to reverse the process:
+When you receive such a data object, you use the [`SecCertificateCreateWithData(_:_:)`](./seccertificatecreatewithdata%28_,_%29.md) function to reverse the process:
 
 **Swift**:
 
@@ -55,7 +56,7 @@ SecCertificateRef certificate =
 if (certificate)  { CFRelease(certificate); } // After you are done with it
 ```
 
-By leaving the first argument empty, you rely on the default allocator to allocate memory for the certificate. Note that in Objective-C, you call [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) to free the certificate’s memory when you are done with it. In Swift, the system manages the object’s memory automatically.
+By leaving the first argument empty, you rely on the default allocator to allocate memory for the certificate. Note that in Objective-C, you call [`CFRelease`](../CoreFoundation/cfrelease.md) to free the certificate’s memory when you are done with it. In Swift, the system manages the object’s memory automatically.
 
 
 ---

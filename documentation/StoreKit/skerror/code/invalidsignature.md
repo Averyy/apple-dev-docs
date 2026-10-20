@@ -1,7 +1,8 @@
 # SKError.Code.invalidSignature
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Error code indicating that the signature in a payment discount isn’t valid.
 
@@ -20,41 +21,46 @@ Error code indicating that the signature in a payment discount isn’t valid.
 case invalidSignature
 ```
 
+```c
+SKErrorInvalidSignature
+```
+
 #### Discussion
 
-The [`signature`](skpaymentdiscount/signature.md) is not valid.
+The [`signature`](../../skpaymentdiscount/signature.md) is not valid.
 
 ## See Also
 
-- [SKError.Code.unknown](skerror/code/unknown.md)
+### Enumeration Cases
+- [SKError.Code.unknown](./unknown.md)
   Error code indicating that an unknown or unexpected error occurred.
-- [SKError.Code.clientInvalid](skerror/code/clientinvalid.md)
+- [SKError.Code.clientInvalid](./clientinvalid.md)
   Error code indicating that the client is not allowed to perform the attempted action.
-- [SKError.Code.paymentCancelled](skerror/code/paymentcancelled.md)
+- [SKError.Code.paymentCancelled](./paymentcancelled.md)
   Error code indicating that the user canceled a payment request.
-- [SKError.Code.paymentInvalid](skerror/code/paymentinvalid.md)
+- [SKError.Code.paymentInvalid](./paymentinvalid.md)
   Error code indicating that one of the payment parameters wasn’t recognized by the App Store.
-- [SKError.Code.paymentNotAllowed](skerror/code/paymentnotallowed.md)
+- [SKError.Code.paymentNotAllowed](./paymentnotallowed.md)
   Error code indicating that the user is not allowed to authorize payments.
-- [SKError.Code.storeProductNotAvailable](skerror/code/storeproductnotavailable.md)
+- [SKError.Code.storeProductNotAvailable](./storeproductnotavailable.md)
   Error code indicating that the requested product is not available in the store.
-- [SKError.Code.cloudServicePermissionDenied](skerror/code/cloudservicepermissiondenied.md)
+- [SKError.Code.cloudServicePermissionDenied](./cloudservicepermissiondenied.md)
   Error code indicating that the user has not allowed access to Cloud service information.
-- [SKError.Code.cloudServiceNetworkConnectionFailed](skerror/code/cloudservicenetworkconnectionfailed.md)
+- [SKError.Code.cloudServiceNetworkConnectionFailed](./cloudservicenetworkconnectionfailed.md)
   Error code indicating that the device could not connect to the network.
-- [SKError.Code.cloudServiceRevoked](skerror/code/cloudservicerevoked.md)
+- [SKError.Code.cloudServiceRevoked](./cloudservicerevoked.md)
   Error code indicating that the user has revoked permission to use this cloud service.
-- [SKError.Code.privacyAcknowledgementRequired](skerror/code/privacyacknowledgementrequired.md)
+- [SKError.Code.privacyAcknowledgementRequired](./privacyacknowledgementrequired.md)
   Error code indicating that the user has not yet acknowledged Apple’s privacy policy for Apple Music.
-- [SKError.Code.unauthorizedRequestData](skerror/code/unauthorizedrequestdata.md)
+- [SKError.Code.unauthorizedRequestData](./unauthorizedrequestdata.md)
   Error code indicating that the app is attempting to use a property for which it does not have the required entitlement.
-- [SKError.Code.invalidOfferIdentifier](skerror/code/invalidofferidentifier.md)
+- [SKError.Code.invalidOfferIdentifier](./invalidofferidentifier.md)
   Error code indicating that the offer identifier is invalid.
-- [SKError.Code.invalidOfferPrice](skerror/code/invalidofferprice.md)
+- [SKError.Code.invalidOfferPrice](./invalidofferprice.md)
   Error code indicating that the price you specified in App Store Connect is no longer valid.
-- [SKError.Code.missingOfferParams](skerror/code/missingofferparams.md)
+- [SKError.Code.missingOfferParams](./missingofferparams.md)
   Error code indicating that parameters are missing in a payment discount.
-- [SKError.Code.ineligibleForOffer](skerror/code/ineligibleforoffer.md)
+- [SKError.Code.ineligibleForOffer](./ineligibleforoffer.md)
   An error code that indicates the user is ineligible for the subscription offer.
 
 

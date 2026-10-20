@@ -1,7 +1,8 @@
 # miter
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies a miter line shape of the joints between connected segments of a stroked path.
 
@@ -19,11 +20,16 @@ Specifies a miter line shape of the joints between connected segments of a strok
 static let miter: CAShapeLayerLineJoin
 ```
 
+```c
+extern CAShapeLayerLineJoin const kCALineJoinMiter;
+```
+
 ## See Also
 
-- [static let round: CAShapeLayerLineJoin](cashapelayerlinejoin/round.md)
+### Constants
+- [static let round: CAShapeLayerLineJoin](./round.md)
   Specifies a round line shape of the joints between connected segments of a stroked path.
-- [static let bevel: CAShapeLayerLineJoin](cashapelayerlinejoin/bevel.md)
+- [static let bevel: CAShapeLayerLineJoin](./bevel.md)
   Specifies a bevel line shape of the joints between connected segments of a stroked path.
 
 

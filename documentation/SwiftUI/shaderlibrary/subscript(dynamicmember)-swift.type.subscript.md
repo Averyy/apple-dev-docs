@@ -1,7 +1,8 @@
 # subscript(dynamicMember:)
 
 **Framework**: SwiftUI  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Type Subscript
 
 Returns a new shader function representing the stitchable MSL function called `name` in the default shader library.
 

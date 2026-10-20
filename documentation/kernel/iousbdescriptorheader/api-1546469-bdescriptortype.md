@@ -1,7 +1,8 @@
 # bDescriptorType
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The type of the descriptor.
 
@@ -10,17 +11,18 @@ The type of the descriptor.
 
 ## Declaration
 
-```swift
+```c
 uint8_t bDescriptorType;
 ```
 
 #### Discussion
 
-For a list of possible values, see [`tIOUSBDescriptorType`](https://developer.apple.com/documentation/iokit/tiousbdescriptortype).
+For a list of possible values, see [`tIOUSBDescriptorType`](../../iokit/tiousbdescriptortype.md).
 
 ## See Also
 
-- [bLength](iousbdescriptorheader/1546043-blength.md)
+### Getting the Descriptor Properties
+- [bLength](./api-1546043-blength.md)
   The size of the descriptor.
 
 

@@ -1,7 +1,8 @@
 # invertColors
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Smart Invert accessibility feature.
 
@@ -17,15 +18,20 @@ The Smart Invert accessibility feature.
 static var invertColors: UIGuidedAccessAccessibilityFeature { get }
 ```
 
+```c
+UIGuidedAccessAccessibilityFeatureInvertColors
+```
+
 ## See Also
 
-- [static var assistiveTouch: UIGuidedAccessAccessibilityFeature](uiguidedaccessaccessibilityfeature/assistivetouch.md)
+### Constants
+- [static var assistiveTouch: UIGuidedAccessAccessibilityFeature](./assistivetouch.md)
   The AssistiveTouch accessibility feature.
-- [static var grayscaleDisplay: UIGuidedAccessAccessibilityFeature](uiguidedaccessaccessibilityfeature/grayscaledisplay.md)
+- [static var grayscaleDisplay: UIGuidedAccessAccessibilityFeature](./grayscaledisplay.md)
   The Grayscale accessibility feature.
-- [static var voiceOver: UIGuidedAccessAccessibilityFeature](uiguidedaccessaccessibilityfeature/voiceover.md)
+- [static var voiceOver: UIGuidedAccessAccessibilityFeature](./voiceover.md)
   The VoiceOver assistive app.
-- [static var zoom: UIGuidedAccessAccessibilityFeature](uiguidedaccessaccessibilityfeature/zoom.md)
+- [static var zoom: UIGuidedAccessAccessibilityFeature](./zoom.md)
   The Zoom accessibility feature.
 
 

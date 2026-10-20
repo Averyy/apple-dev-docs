@@ -1,7 +1,8 @@
 # set(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces all reference arcs with the specified list.
 
@@ -21,7 +22,7 @@ func set(_ references: [USDPrim.Reference]) throws
 
 #### Discussion
 
-> **Note**: An error if the references cannot be set.
+> **Throws**: An error if the references cannot be set.
 
 ## Parameters
 

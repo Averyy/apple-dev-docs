@@ -1,7 +1,8 @@
 # DNSServiceBrowse(_:_:_:_:_:_:_:)
 
 **Framework**: dnssd  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Browses for available services.
 
@@ -20,13 +21,17 @@ Browses for available services.
 func DNSServiceBrowse(_ sdRef: UnsafeMutablePointer<DNSServiceRef?>!, _ flags: DNSServiceFlags, _ interfaceIndex: UInt32, _ regtype: UnsafePointer<CChar>!, _ domain: UnsafePointer<CChar>!, _ callBack: DNSServiceBrowseReply!, _ context: UnsafeMutableRawPointer!) -> DNSServiceErrorType
 ```
 
+```c
+DNSServiceErrorType DNSServiceBrowse(DNSServiceRef*sdRef, DNSServiceFlags flags, uint32_t interfaceIndex, const char *regtype, const char *domain, DNSServiceBrowseReply callBack, void *context);
+```
+
 #### Return Value
 
-Returns [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md) on success (any subsequent, asynchronous errors are delivered to the callback), otherwise returns an error code indicating the error that occurred (the callback is not invoked and the DNSServiceRef is not initialized).
+Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) on success (any subsequent, asynchronous errors are delivered to the callback), otherwise returns an error code indicating the error that occurred (the callback is not invoked and the DNSServiceRef is not initialized).
 
 ## Parameters
 
-- `sdRef`: A pointer to an uninitialized DNSServiceRef. If the call succeeds then it initializes the DNSServiceRef, returns [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md), and the browse operation will run indefinitely until the client terminates it by passing this DNSServiceRef to [`DNSServiceRefDeallocate(_:)`](dnsservicerefdeallocate(_:).md).
+- `sdRef`: A pointer to an uninitialized DNSServiceRef. If the call succeeds then it initializes the DNSServiceRef, returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md), and the browse operation will run indefinitely until the client terminates it by passing this DNSServiceRef to [`DNSServiceRefDeallocate(_:)`](./dnsservicerefdeallocate%28_%29.md).
 - `flags`: Currently ignored, reserved for future use.
 - `interfaceIndex`: If non-zero, specifies the interface on which to browse for services (the index for a given interface is determined via the if_nametoindex() family of calls.) Most applications will pass 0 to browse on all available interfaces. See “Constants for specifying an interface index” for more details.
 - `regtype`: The service type being browsed for followed by the protocol, separated by a dot (e.g. “_ftp._tcp”). The transport protocol must be “_tcp” or “_udp”. A client may optionally specify a single subtype to perform filtered browsing: e.g. browsing for “_primarytype._tcp,_subtype” will discover only those instances of “_primarytype._tcp” that were registered specifying “_subtype” in their list of registered subtypes. Additionally, a group identifier may also be specified before the subtype e.g., _primarytype._tcp:GroupID, which will discover only the members that register the service with GroupID. See DNSServiceRegister for more details.
@@ -36,7 +41,8 @@ Returns [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md) on success (any su
 
 ## See Also
 
-- [func DNSServiceResolve(UnsafeMutablePointer<DNSServiceRef?>!, DNSServiceFlags, UInt32, UnsafePointer<CChar>!, UnsafePointer<CChar>!, UnsafePointer<CChar>!, DNSServiceResolveReply!, UnsafeMutableRawPointer!) -> DNSServiceErrorType](dnsserviceresolve(_:_:_:_:_:_:_:_:).md)
+### Service Discovery
+- [func DNSServiceResolve(UnsafeMutablePointer<DNSServiceRef?>!, DNSServiceFlags, UInt32, UnsafePointer<CChar>!, UnsafePointer<CChar>!, UnsafePointer<CChar>!, DNSServiceResolveReply!, UnsafeMutableRawPointer!) -> DNSServiceErrorType](./dnsserviceresolve%28_,_,_,_,_,_,_,_%29.md)
 
 
 ---

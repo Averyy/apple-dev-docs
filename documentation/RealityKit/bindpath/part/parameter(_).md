@@ -1,7 +1,8 @@
 # BindPath.Part.parameter(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A path component to animate a named parameter.
 
@@ -11,7 +12,7 @@ A path component to animate a named parameter.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,15 +26,16 @@ This path component terminates an array of paths, and at the same time specifies
 
 ## See Also
 
-- [BindPath.Part.anchorEntity(_:)](bindpath/part/anchorentity(_:).md)
+### Choosing the path component
+- [BindPath.Part.anchorEntity(_:)](./anchorentity%28_%29.md)
   A path component for the scene’s anchor entity.
-- [BindPath.Part.entity(_:)](bindpath/part/entity(_:).md)
+- [BindPath.Part.entity(_:)](./entity%28_%29.md)
   A path component for a nested entity.
-- [BindPath.Part.jointTransforms](bindpath/part/jointtransforms.md)
+- [BindPath.Part.jointTransforms](./jointtransforms.md)
   A path component to animate joint transforms.
-- [BindPath.Part.scene(_:)](bindpath/part/scene(_:).md)
+- [BindPath.Part.scene(_:)](./scene%28_%29.md)
   A path component for a nested scene.
-- [BindPath.Part.transform](bindpath/part/transform.md)
+- [BindPath.Part.transform](./transform.md)
   A path component to animate a transform.
 
 

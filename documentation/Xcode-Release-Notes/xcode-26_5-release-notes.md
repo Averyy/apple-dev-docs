@@ -1,6 +1,7 @@
 # Xcode 26.5 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -18,7 +19,9 @@ Xcode 26.5 includes Swift 6.3 and SDKs for iOS 26.5, iPadOS 26.5, tvOS 26.5, wat
 
 ###### Known Issues
 
-- The system may incorrectly determine an app’s eligibility for development overrides in simulator environments.  (173742496) **Workaround:** Test your app on a physical device.
+- The system may incorrectly determine an app’s eligibility for development overrides in simulator environments.  (173742496)
+
+  **Workaround:** Test your app on a physical device.
 
 ##### Coding Intelligence
 
@@ -57,50 +60,70 @@ Xcode 26.5 includes Swift 6.3 and SDKs for iOS 26.5, iPadOS 26.5, tvOS 26.5, wat
 
 - Fixed: Pasteboard Synchronization within Simulator.app is currently not functioning.  (173403967) (FB22340739)
 
-##### Storekit Testing in Xcode
+##### StoreKit Testing in Xcode
 
 ###### New Features
 
-- New billing plan APIs can be tested using [`StoreKit Testing in Xcode`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode). Configure a monthly with 12-month commitment billing plan for your auto-renewable subscriptions in the StoreKit Configuration, and simulate subscribing to the billing plan through the Transaction Manager in Xcode.  (168522699)
+- New billing plan APIs can be tested using [StoreKit Testing in Xcode](../Xcode/setting-up-storekit-testing-in-xcode.md). Configure a monthly with 12-month commitment billing plan for your auto-renewable subscriptions in the StoreKit Configuration, and simulate subscribing to the billing plan through the Transaction Manager in Xcode.  (168522699)
 
 ##### Swift
 
 ###### Known Issues
 
-- When a closure with explicit captures is passed as an argument to a `nonisolated(nonsending)` parameter or converted to a `nonisolated(nonsending)` type, its isolation was inferred from the parent context instead of being directly set to `nonisolated(nonsending)`. The difference in isolation wasn’t observable by callers until Swift 6.3.2, which introduced a bug fix for an actor hop optimization that previously didn’t work when a `nonisolated(nonsending)` function value came from a parameter position. In particular, this affects projects that have enabled the `NonisolatedNonsendingByDefault` feature (via `ApproachableConcurrency` or directly). For example: ```swift
- @MainActor
- func compute(_ fn: nonisolated(nonsending) @Sendable () async -> Void) async {
-   await fn()
- }
- 
- func performComputation() async {
-   let x: Int = 42
-   await compute { [x] in // closure isolation is inferred to be @concurrent
-     print(x)
-   }
- }
-``` In this example, the Swift compiler would no longer hop back to `@MainActor` after `await fn()` returns because `fn` is `nonisolated(nonsending)` and should have executed on `@MainActor` already, but because the closure isolation was incorrectly inferred to be `@concurrent`, any *synchronous* calls that follow `fn` one are going to be executed in a `@concurrent` isolation context instead of the `@MainActor` one.  (176582055) **Workaround:** There are multiple ways to work around this issue. ```None
-  1. Remove explicit captures when values could be captured implicitly.
+- When a closure with explicit captures is passed as an argument to a `nonisolated(nonsending)` parameter or converted to a `nonisolated(nonsending)` type, its isolation was inferred from the parent context instead of being directly set to `nonisolated(nonsending)`. The difference in isolation wasn’t observable by callers until Swift 6.3.2, which introduced a bug fix for an actor hop optimization that previously didn’t work when a `nonisolated(nonsending)` function value came from a parameter position.
 
-  The example from Description becomes:	
-``` ```swift
- func performComputation() async {
-   let x: Int = ...
-   await compute {
-     print(x)
+  In particular, this affects projects that have enabled the `NonisolatedNonsendingByDefault` feature (via `ApproachableConcurrency` or directly).
+
+  For example:
+
+  ```swift
+   @MainActor
+   func compute(_ fn: nonisolated(nonsending) @Sendable () async -> Void) async {
+     await fn()
    }
- }
-``` 1. Convert a closure into a local function that is explicitly `nonisolated(nonsending)`: The example from Description becomes: ```swift
- func performComputation() async {
-   let x: Int = ...
- 
-   @Sendable nonisolated(nonsending) func performAction() async {
-     print(x)
+   
+   func performComputation() async {
+     let x: Int = 42
+     await compute { [x] in // closure isolation is inferred to be @concurrent
+       print(x)
+     }
    }
- 
-   await compute(performAction)
- }
-```
+  ```
+
+  In this example, the Swift compiler would no longer hop back to `@MainActor` after `await fn()` returns because `fn` is `nonisolated(nonsending)` and should have executed on `@MainActor` already, but because the closure isolation was incorrectly inferred to be `@concurrent`, any *synchronous* calls that follow `fn` one are going to be executed in a `@concurrent` isolation context instead of the `@MainActor` one.  (176582055)
+
+  **Workaround:** There are multiple ways to work around this issue.
+
+  ```
+    1. Remove explicit captures when values could be captured implicitly.
+
+    The example from Description becomes:	
+  ```
+
+  ```swift
+   func performComputation() async {
+     let x: Int = ...
+     await compute {
+       print(x)
+     }
+   }
+  ```
+
+  1. Convert a closure into a local function that is explicitly `nonisolated(nonsending)`:
+
+     The example from Description becomes:
+
+  ```swift
+   func performComputation() async {
+     let x: Int = ...
+   
+     @Sendable nonisolated(nonsending) func performAction() async {
+       print(x)
+     }
+   
+     await compute(performAction)
+   }
+  ```
 
 ##### Testing
 
@@ -110,21 +133,22 @@ Xcode 26.5 includes Swift 6.3 and SDKs for iOS 26.5, iPadOS 26.5, tvOS 26.5, wat
 
 ## See Also
 
-- [Xcode 26.6 Release Notes](xcode-26_6-release-notes.md)
+### Xcode 26
+- [Xcode 26.6 Release Notes](./xcode-26_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 26.4.1 Release Notes](xcode-26_4_1-release-notes.md)
+- [Xcode 26.4.1 Release Notes](./xcode-26_4_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 26.4 Release Notes](xcode-26_4-release-notes.md)
+- [Xcode 26.4 Release Notes](./xcode-26_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 26.3 Release Notes](xcode-26_3-release-notes.md)
+- [Xcode 26.3 Release Notes](./xcode-26_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 26.2 Release Notes](xcode-26_2-release-notes.md)
+- [Xcode 26.2 Release Notes](./xcode-26_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 26.1.1 Release Notes](xcode-26_1-release-notes.md)
+- [Xcode 26.1.1 Release Notes](./xcode-26_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 26.0.1 Release Notes](xcode-26_0_1-release-notes.md)
+- [Xcode 26.0.1 Release Notes](./xcode-26_0_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 26 Release Notes](xcode-26-release-notes.md)
+- [Xcode 26 Release Notes](./xcode-26-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

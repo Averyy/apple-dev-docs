@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hash the executor identity into the given hasher.
 

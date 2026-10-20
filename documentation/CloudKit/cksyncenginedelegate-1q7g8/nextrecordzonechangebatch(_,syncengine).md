@@ -2,6 +2,7 @@
 
 **Framework**: CloudKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asks the delegate to provide the next set of record changes to send to the server.
@@ -12,7 +13,7 @@ Asks the delegate to provide the next set of record changes to send to the serve
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -27,7 +28,7 @@ If there are pending record changes, a batch of those changes for the sync engin
 
 #### Discussion
 
-In your implementation, ask the sync engine’s state for any pending record zone changes and then return a change batch containing a [`CKRecord`](ckrecord.md) instance for each record identifier the state provides, as the following example shows:
+In your implementation, ask the sync engine’s state for any pending record zone changes and then return a change batch containing a [`CKRecord`](../ckrecord.md) instance for each record identifier the state provides, as the following example shows:
 
 ```swift
 func nextRecordZoneChangeBatch(
@@ -45,7 +46,7 @@ func nextRecordZoneChangeBatch(
 }
 ```
 
-When syncing, you must make sure to only return a batch for the scope specified in the callback. You can do this by checking the [`scope`](cksyncengine-5sie5/sendchangesoptions/scope-swift.property.md) property in [`options`](cksyncengine-5sie5/sendchangescontext/options.md). If you do not do this, you may encounter a [`invalidArguments`](ckerror/invalidarguments.md) error.
+When syncing, you must make sure to only return a batch for the scope specified in the callback. You can do this by checking the [`scope`](../cksyncengine-5sie5/sendchangesoptions/scope-swift.property.md) property in [`options`](../cksyncengine-5sie5/sendchangescontext/options.md). If you do not do this, you may encounter a [`invalidArguments`](../ckerror/invalidarguments.md) error.
 
 For both scheduled and manual send operations, the sync engine calls this method repeatedly until your app has no more changes and returns `nil`.
 
@@ -56,9 +57,10 @@ For both scheduled and manual send operations, the sync engine calls this method
 
 ## See Also
 
-- [CKSyncEngine.SendChangesContext](cksyncengine-5sie5/sendchangescontext.md)
+### Sending changes
+- [CKSyncEngine.SendChangesContext](../cksyncengine-5sie5/sendchangescontext.md)
   The context of an attempt to send changes to the server.
-- [CKSyncEngine.RecordZoneChangeBatch](cksyncengine-5sie5/recordzonechangebatch.md)
+- [CKSyncEngine.RecordZoneChangeBatch](../cksyncengine-5sie5/recordzonechangebatch.md)
   A type that contains the record changes for a single send operation.
 
 

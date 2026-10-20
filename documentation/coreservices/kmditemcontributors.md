@@ -1,7 +1,8 @@
 # kMDItemContributors
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The entities responsible for making contributions to the content of the resource. A CFArray of CFStrings.
 
@@ -12,6 +13,10 @@ The entities responsible for making contributions to the content of the resource
 
 ```swift
 let kMDItemContributors: CFString!
+```
+
+```c
+const CFStringRef kMDItemContributors;
 ```
 
 #### Discussion

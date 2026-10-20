@@ -1,7 +1,8 @@
 # geometryBindTransform
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The geometry bind transform applied to vertex positions before the joint skinning math.
 

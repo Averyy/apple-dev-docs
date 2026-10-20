@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A parse strategy for URLs.
 
@@ -20,15 +21,18 @@ A parse strategy for URLs.
 static var url: URL.ParseStrategy { get }
 ```
 
+Available when `Self` is `URL.ParseStrategy`.
+
 #### Discussion
 
-Use the dot-notation form of this type property when the call point allows the use of [`URL.ParseStrategy`](url/parsestrategy.md). Typically, you use this with the URL initializer [`init(_:strategy:)`](url/init(_:strategy:).md).
+Use the dot-notation form of this type property when the call point allows the use of [`URL.ParseStrategy`](../url/parsestrategy.md). Typically, you use this with the URL initializer [`init(_:strategy:)`](../url/init%28_,strategy%29.md).
 
 ## See Also
 
-- [static func fixed(format: Date.FormatString, timeZone: TimeZone, locale: Locale?) -> Self](parsestrategy/fixed(format:timezone:locale:).md)
+### Commonly-used parsers
+- [static func fixed(format: Date.FormatString, timeZone: TimeZone, locale: Locale?) -> Self](./fixed%28format,timezone,locale%29.md)
   A fixed-format date parse strategy.
-- [static var name: PersonNameComponents.ParseStrategy](parsestrategy/name.md)
+- [static var name: PersonNameComponents.ParseStrategy](./name.md)
   A parse strategy for person name components.
 
 

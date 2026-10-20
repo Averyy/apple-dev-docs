@@ -1,7 +1,8 @@
 # init(urlRepresentable:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Configures the app intent using an app entity with a URL representation.
 

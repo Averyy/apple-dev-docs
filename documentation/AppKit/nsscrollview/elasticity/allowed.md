@@ -1,7 +1,8 @@
 # NSScrollView.Elasticity.allowed
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Allow content to be scrolled past its bounds on this axis in an elastic fashion.
 
@@ -14,11 +15,16 @@ Allow content to be scrolled past its bounds on this axis in an elastic fashion.
 case allowed
 ```
 
+```c
+NSScrollElasticityAllowed
+```
+
 ## See Also
 
-- [NSScrollView.Elasticity.automatic](nsscrollview/elasticity/automatic.md)
+### Constants
+- [NSScrollView.Elasticity.automatic](./automatic.md)
   Automatically determine whether to allow elasticity on this axis.
-- [NSScrollView.Elasticity.none](nsscrollview/elasticity/none.md)
+- [NSScrollView.Elasticity.none](./none.md)
   Disallow scrolling beyond document bounds on this axis.
 
 

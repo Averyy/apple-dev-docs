@@ -1,7 +1,8 @@
 # settingContentAverageLightLevel(_:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Create an image by changing the receiver’s contentAverageLightLevel property.
 
@@ -19,15 +20,19 @@ Create an image by changing the receiver’s contentAverageLightLevel property.
 func settingContentAverageLightLevel(_ average: Float) -> CIImage
 ```
 
+```objc
+- (CIImage *) imageBySettingContentAverageLightLevel:(float) average;
+```
+
 #### Return Value
 
- An autoreleased [`CIImage`](ciimage.md).
+ An autoreleased [`CIImage`](../ciimage.md).
 
 #### Discussion
 
 Changing this value will alter the behavior of the `CIToneMapHeadroom` and `CISystemToneMap` filters.
 
-- If the value is set to 0.0 or less then the returned image’s [`contentAverageLightLevel`](ciimage/contentaveragelightlevel.md) is unknown.
+- If the value is set to 0.0 or less then the returned image’s [`contentAverageLightLevel`](./contentaveragelightlevel.md) is unknown.
 
 
 ---

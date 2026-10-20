@@ -1,7 +1,8 @@
 # addPlayers(to:matchRequest:completionHandler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invites additional players to an existing match.
 
@@ -16,12 +17,20 @@ Invites additional players to an existing match.
 ## Declaration
 
 ```swift
+func addPlayers(to match: GKMatch, matchRequest: GKMatchRequest, completionHandler: (@Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 func addPlayers(to match: GKMatch, matchRequest: GKMatchRequest) async throws
+```
+
+```objc
+- (void) addPlayersToMatch:(GKMatch *) match matchRequest:(GKMatchRequest *) matchRequest completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 ## Mentions
 
-- [Finding players for custom server-based games](finding-players-for-custom-server-based-games.md)
+- [Finding players for custom server-based games](../finding-players-for-custom-server-based-games.md)
 
 #### Discussion
 
@@ -33,23 +42,28 @@ Use this method to add more players to an existing match that doesn’t have eno
 
 - `match`: The match to which GameKit adds the players.
 - `matchRequest`: The configuration for the match.
-- `completionHandler`: The block that GameKit calls when it completes the request. This block receives the following parameters: - **`error`**: Describes an error if it occurs, or `nil` if the operation completes.
+- `completionHandler`: The block that GameKit calls when it completes the request.
+
+  This block receives the following parameters:
+
+  - **`error`**: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 
-- [func findMatch(for: GKMatchRequest, withCompletionHandler: ((GKMatch?, (any Error)?) -> Void)?)](gkmatchmaker/findmatch(for:withcompletionhandler:).md)
+### Matching players
+- [func findMatch(for: GKMatchRequest, withCompletionHandler: ((GKMatch?, (any Error)?) -> Void)?)](./findmatch%28for,withcompletionhandler%29.md)
   Initiates a request to find players for a peer-to-peer match.
-- [func findPlayers(forHostedRequest: GKMatchRequest, withCompletionHandler: (([GKPlayer]?, (any Error)?) -> Void)?)](gkmatchmaker/findplayers(forhostedrequest:withcompletionhandler:).md)
+- [func findPlayers(forHostedRequest: GKMatchRequest, withCompletionHandler: (([GKPlayer]?, (any Error)?) -> Void)?)](./findplayers%28forhostedrequest,withcompletionhandler%29.md)
   Initiates a request to find players for a hosted match.
-- [func findMatchedPlayers(GKMatchRequest, withCompletionHandler: (GKMatchedPlayers?, (any Error)?) -> Void)](gkmatchmaker/findmatchedplayers(_:withcompletionhandler:).md)
+- [func findMatchedPlayers(GKMatchRequest, withCompletionHandler: (GKMatchedPlayers?, (any Error)?) -> Void)](./findmatchedplayers%28_,withcompletionhandler%29.md)
   Initiates a request to find players for a hosted match that uses matchmaking rules.
-- [class GKMatchedPlayers](gkmatchedplayers.md)
+- [class GKMatchedPlayers](../gkmatchedplayers.md)
   An object that represents matchmaking results, including the players that join the match and their properties that matchmaking rules uses.
-- [func finishMatchmaking(for: GKMatch)](gkmatchmaker/finishmatchmaking(for:).md)
+- [func finishMatchmaking(for: GKMatch)](./finishmatchmaking%28for%29.md)
   Informs the server when programmatic matchmaking finishes.
-- [func cancel()](gkmatchmaker/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Cancels a matchmaking request.
-- [func cancelPendingInvite(to: GKPlayer)](gkmatchmaker/cancelpendinginvite(to:).md)
+- [func cancelPendingInvite(to: GKPlayer)](./cancelpendinginvite%28to%29.md)
   Cancels a pending invitation to another player.
 
 

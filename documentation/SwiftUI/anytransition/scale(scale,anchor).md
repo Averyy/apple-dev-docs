@@ -1,7 +1,8 @@
 # scale(scale:anchor:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a transition that scales the view by the specified amount.
 
@@ -22,19 +23,20 @@ static func scale(scale: CGFloat, anchor: UnitPoint = .center) -> AnyTransition
 
 ## See Also
 
-- [static var identity: AnyTransition](anytransition/identity.md)
+### Getting built-in transitions
+- [static var identity: AnyTransition](./identity.md)
   A transition that returns the input view, unmodified, as the output view.
-- [static func move(edge: Edge) -> AnyTransition](anytransition/move(edge:).md)
+- [static func move(edge: Edge) -> AnyTransition](./move%28edge%29.md)
   Returns a transition that moves the view away, towards the specified edge of the view.
-- [static func offset(CGSize) -> AnyTransition](anytransition/offset(_:).md)
-- [static func offset(x: CGFloat, y: CGFloat) -> AnyTransition](anytransition/offset(x:y:).md)
-- [static let opacity: AnyTransition](anytransition/opacity.md)
+- [static func offset(CGSize) -> AnyTransition](./offset%28_%29.md)
+- [static func offset(x: CGFloat, y: CGFloat) -> AnyTransition](./offset%28x,y%29.md)
+- [static let opacity: AnyTransition](./opacity.md)
   A transition from transparent to opaque on insertion, and from opaque to transparent on removal.
-- [static func push(from: Edge) -> AnyTransition](anytransition/push(from:).md)
+- [static func push(from: Edge) -> AnyTransition](./push%28from%29.md)
   Creates a transition that when added to a view will animate the view’s insertion by moving it in from the specified edge while fading it in, and animate its removal by moving it out towards the opposite edge and fading it out.
-- [static var scale: AnyTransition](anytransition/scale.md)
+- [static var scale: AnyTransition](./scale.md)
   Returns a transition that scales the view.
-- [static var slide: AnyTransition](anytransition/slide.md)
+- [static var slide: AnyTransition](./slide.md)
   A transition that inserts by moving in from the leading edge, and removes by moving out towards the trailing edge.
 
 

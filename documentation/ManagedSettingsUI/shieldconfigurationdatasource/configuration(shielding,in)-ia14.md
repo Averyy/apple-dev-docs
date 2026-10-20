@@ -1,7 +1,8 @@
 # configuration(shielding:in:)
 
 **Framework**: Managed Settings UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests a configuration to use for a shield that covers an application because of its category.
 
@@ -27,7 +28,8 @@ The shield to display.
 
 ## See Also
 
-- [func configuration(shielding: Application) -> ShieldConfiguration](shieldconfigurationdatasource/configuration(shielding:)-5uqm1.md)
+### Styling an application shield
+- [func configuration(shielding: Application) -> ShieldConfiguration](./configuration%28shielding%29-5uqm1.md)
   Requests a configuration to use for a shield that covers an application.
 
 

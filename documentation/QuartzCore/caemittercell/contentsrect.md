@@ -1,9 +1,10 @@
 # contentsRect
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-A rectangle (in the unit coordinate space) that specifies the portion of [`contents`](caemittercell/contents.md) that the receiver should draw. Animatable.
+A rectangle (in the unit coordinate space) that specifies the portion of [`contents`](./contents.md) that the receiver should draw. Animatable.
 
 **Availability**:
 - iOS 5.0+
@@ -19,6 +20,10 @@ A rectangle (in the unit coordinate space) that specifies the portion of [`conte
 var contentsRect: CGRect { get set }
 ```
 
+```objc
+@property CGRect contentsRect;
+```
+
 #### Discussion
 
 By default, this property is set to the unit rectangle (0.0,0.0,1.0,1.0), which results in all of the layer’s contents being drawn.
@@ -29,9 +34,10 @@ If you assign an empty rectangle to this property, the results are undefined.
 
 ## See Also
 
-- [var contents: Any?](caemittercell/contents.md)
+### Providing Emitter Cell Content
+- [var contents: Any?](./contents.md)
   An object that provides the contents of the layer. Animatable.
-- [var emitterCells: [CAEmitterCell]?](caemittercell/emittercells.md)
+- [var emitterCells: [CAEmitterCell]?](./emittercells.md)
   An optional array containing the sub-cells of this cell.
 
 

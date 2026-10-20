@@ -1,7 +1,8 @@
 # value
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string value.
 
@@ -10,7 +11,7 @@ A string value.
 
 ## Declaration
 
-```swift
+```
 attribute string? value;
 ```
 

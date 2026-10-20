@@ -1,7 +1,8 @@
 # isDynamicIslandLimitedInWidth
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the Dynamic Island appears with reduced width.
 

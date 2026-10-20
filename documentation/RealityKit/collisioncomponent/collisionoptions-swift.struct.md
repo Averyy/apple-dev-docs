@@ -1,7 +1,8 @@
 # CollisionComponent.CollisionOptions
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The options set that defines how a collision object reports collisions.
 
@@ -22,21 +23,21 @@ struct CollisionOptions
 ## Topics
 
 ### Type Properties
-- [static let fullContactInformation: CollisionComponent.CollisionOptions](collisioncomponent/collisionoptions-swift.struct/fullcontactinformation.md)
+- [static let fullContactInformation: CollisionComponent.CollisionOptions](./collisionoptions-swift.struct/fullcontactinformation.md)
   Reports full contact information for collision events.
-- [static let none: CollisionComponent.CollisionOptions](collisioncomponent/collisionoptions-swift.struct/none.md)
+- [static let none: CollisionComponent.CollisionOptions](./collisionoptions-swift.struct/none.md)
   An option that reports the default collision information with dynamic collision objects.
-- [static let `static`: CollisionComponent.CollisionOptions](collisioncomponent/collisionoptions-swift.struct/static.md)
+- [static let `static`: CollisionComponent.CollisionOptions](./collisionoptions-swift.struct/static.md)
   Omits reporting collisions with static collision objects.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 
 ---

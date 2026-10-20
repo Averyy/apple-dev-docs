@@ -1,7 +1,8 @@
 # removeSubrange(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the specified subrange of elements from the collection.
 
@@ -20,6 +21,8 @@ Removes the specified subrange of elements from the collection.
 mutating func removeSubrange(_ bounds: Range<Slice<Base>.Index>)
 ```
 
+Available when `Base` conforms to `RangeReplaceableCollection`.
+
 #### Discussion
 
 ```swift
@@ -31,7 +34,7 @@ print(bugs)
 
 Calling this method may invalidate any existing indices for use with this collection.
 
-> **Note**: O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 

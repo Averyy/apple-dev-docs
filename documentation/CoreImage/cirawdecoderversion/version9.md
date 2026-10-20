@@ -1,7 +1,8 @@
 # version9
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 static let version9: CIRAWDecoderVersion
+```
+
+```c
+extern CIRAWDecoderVersion const CIRAWDecoderVersion9;
 ```
 
 

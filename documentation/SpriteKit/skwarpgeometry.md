@@ -1,9 +1,10 @@
 # SKWarpGeometry
 
 **Framework**: SpriteKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
-A definition for a deformation of nodes that conform to [`SKWarpable`](skwarpable.md).
+A definition for a deformation of nodes that conform to [`SKWarpable`](./skwarpable.md).
 
 **Availability**:
 - iOS 10.0+
@@ -20,38 +21,43 @@ A definition for a deformation of nodes that conform to [`SKWarpable`](skwarpabl
 class SKWarpGeometry
 ```
 
+```objc
+@interface SKWarpGeometry : NSObject
+```
+
 ## Mentions
 
-- [Warping SpriteKit Content By Using an Effect Node](warping-spritekit-content-by-using-an-effect-node.md)
+- [Warping SpriteKit Content By Using an Effect Node](./warping-spritekit-content-by-using-an-effect-node.md)
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](skwarpgeometry/init(coder:).md)
+- [init?(coder: NSCoder)](./skwarpgeometry/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [SKWarpGeometryGrid](skwarpgeometrygrid.md)
+- [SKWarpGeometryGrid](./skwarpgeometrygrid.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class SKWarpGeometryGrid](skwarpgeometrygrid.md)
-  A definition for a grid-based deformation of nodes that conform to [`SKWarpable`](skwarpable.md).
-- [protocol SKWarpable](skwarpable.md)
-  A protocol for objects that can be warped and animated by an [`SKWarpGeometry`](skwarpgeometry.md).
+### Warping
+- [class SKWarpGeometryGrid](./skwarpgeometrygrid.md)
+  A definition for a grid-based deformation of nodes that conform to [`SKWarpable`](./skwarpable.md).
+- [protocol SKWarpable](./skwarpable.md)
+  A protocol for objects that can be warped and animated by an [`SKWarpGeometry`](./skwarpgeometry.md).
 
 
 ---

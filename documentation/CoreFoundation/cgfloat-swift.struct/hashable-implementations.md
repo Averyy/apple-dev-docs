@@ -1,14 +1,15 @@
 # Hashable Implementations
 
-**Framework**: Core Foundation
+**Framework**: Core Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var hashValue: Int](cgfloat-swift.struct/hashvalue.md)
+- [var hashValue: Int](./hashvalue.md)
   The hash value.
 ### Instance Methods
-- [func hash(into: inout Hasher)](cgfloat-swift.struct/hash(into:).md)
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
 
 
 ---

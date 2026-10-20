@@ -1,22 +1,29 @@
 # init(displayName:)
 
 **Framework**: Multipeer Connectivity  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a peer.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS 10.0+
-- visionOS 1.0+
+- iOS 7.0+ - Deprecated in 27.0
+- iPadOS 7.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.10+ - Deprecated in 27.0
+- tvOS 10.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use Network Framework instead
 
 ## Declaration
 
 ```swift
 init(displayName myDisplayName: String)
+```
+
+```objc
+- (instancetype) initWithDisplayName:(NSString *) myDisplayName;
 ```
 
 #### Return Value
@@ -33,11 +40,14 @@ Each call to this method produces a unique peer ID, even for the same display na
 
 ## Parameters
 
-- `myDisplayName`: The display name for the local peer. If you use the multipeer browser view controller, this name is shown. The display name is intended for use in UI elements, and should be short and descriptive of the local peer. The maximum allowable length is 63 bytes in UTF-8 encoding. The `displayName` parameter may not be `nil` or an empty string.
+- `myDisplayName`: The display name for the local peer. If you use the multipeer browser view controller, this name is shown.
+
+  The display name is intended for use in UI elements, and should be short and descriptive of the local peer. The maximum allowable length is 63 bytes in UTF-8 encoding. The `displayName` parameter may not be `nil` or an empty string.
 
 ## See Also
 
-- [var displayName: String](mcpeerid/displayname.md)
+### Peer Methods
+- [var displayName: String](./displayname.md)
   The display name for this peer.
 
 

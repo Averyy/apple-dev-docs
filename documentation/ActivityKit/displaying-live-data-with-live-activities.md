@@ -1,6 +1,7 @@
 # Displaying live data with Live Activities
 
-**Framework**: ActivityKit
+**Framework**: ActivityKit  
+**Role**: Article
 
 Display up-to-date data and offer quick interactions in the Dynamic Island, on the Lock Screen, in CarPlay, and on a paired Mac or Apple Watch.
 
@@ -8,45 +9,45 @@ Display up-to-date data and offer quick interactions in the Dynamic Island, on t
 
 Live Activities display your app’s current data on the Lock Screen, in the Dynamic Island, in CarPlay, and on a paired Mac or Apple Watch, giving people access to information at a glance and allowing them to perform quick actions that are related to the displayed information.
 
-To offer Live Activities, add code to your existing widget extension or create a new widget extension if your app doesn’t already include one. Live Activities use [`WidgetKit`](https://developer.apple.com/documentation/widgetkit) functionality and [`SwiftUI`](https://developer.apple.com/documentation/swiftui) for their user interface. ActivityKit handles the life cycle of each Live Activity: You use its API to request, schedule, update, and end a Live Activity and to receive ActivityKit push notifications.
+To offer Live Activities, add code to your existing widget extension or create a new widget extension if your app doesn’t already include one. Live Activities use [WidgetKit](../WidgetKit/WidgetKit.md) functionality and [SwiftUI](../SwiftUI/SwiftUI.md) for their user interface. ActivityKit handles the life cycle of each Live Activity: You use its API to request, schedule, update, and end a Live Activity and to receive ActivityKit push notifications.
 
-For design guidance, refer to [`Human Interface Guidelines > Live Activities`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/components/system-experiences/live-activities).
+For design guidance, refer to [Human Interface Guidelines > Live Activities](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/live-activities).
 
-#### Review Live Activity Presentations on Iphone and Ipad
+#### Review Live Activity presentations on iPhone and iPad
 
 Live Activities come in different presentations that appear in various highly visible places. To add support for Live Activities to your iOS or iPadOS app, you must support all presentations. The system automatically chooses the best presentation for each location across a person’s devices.
 
 The Lock Screen presentation appears on the Lock Screen of iPhone and iPad. On an unlocked device that doesn’t support the Dynamic Island, the Lock Screen presentation appears as a banner for Live Activity updates that include an alert configuration. For example, if your app’s Live Activity receives an update with an alert configuration for a person who uses Mail on a device that doesn’t support the Dynamic Island, the system displays the Lock Screen presentation as a banner at the top of the screen so the person notices the update.
 
-![Two screenshots of an iPhone that doesn’t support the Dynamic Island and shows a Live Activity for a delivery app. They show the Live Activity on the Lock Screen and the same presentation on the Home Screen as a banner.](/images/com.apple.activitykit/live-activity-notch@2x.png)
+![Two screenshots of an iPhone that doesn’t support the Dynamic Island and shows a Live Activity for a delivery app. They show the Live Activity on the Lock Screen and the same presentation on the Home Screen as a banner.](https://developer.apple.com/tutorials/images/com.apple.activitykit/live-activity-notch@2x.png)
 
 Devices that support the Dynamic Island display Live Activities in the Dynamic Island using several presentations. When there’s only one ongoing Live Activity, the system uses the compact presentation. It’s composed of two elements: one that displays on the leading side of the TrueDepth camera, and one that displays on the trailing side. Although the leading and trailing elements are separate views, they form a cohesive view in the Dynamic Island, representing a single piece of information from your app. People can tap a compact Live Activity to open the app and get more details about the event or task.
 
-![An illustration of the Dynamic Island with a Live Activity that appears in the compact leading and trailing presentations.](/images/com.apple.activitykit/type-compact@2x.png)
+![An illustration of the Dynamic Island with a Live Activity that appears in the compact leading and trailing presentations.](https://developer.apple.com/tutorials/images/com.apple.activitykit/type-compact@2x.png)
 
 When Live Activities from several apps are active, the number of visible Live Activities depends on the device. For example, iPhone 18 Pro displays two simultaneous Live Activities in the Dynamic Island that use the compact leading and trailing presentations with reduced width. On other devices, both activities appear in the minimal presentation. One active Live Activity appears attached to the Dynamic Island, and the activity from another app appears detached from it.
 
-![An illustration of the Dynamic Island with a Live Activity that appears in the minimal presentation.](/images/com.apple.activitykit/type-minimal@2x.png)
+![An illustration of the Dynamic Island with a Live Activity that appears in the minimal presentation.](https://developer.apple.com/tutorials/images/com.apple.activitykit/type-minimal@2x.png)
 
 People tap a compact or minimal Live Activity in the Dynamic Island to open its associated app and get more details about the event or task. When people touch and hold a Live Activity in a compact or minimal presentation, the system displays it in an expanded presentation.
 
-![An illustration of the Dynamic Island with a Live Activity that appears in the expanded presentation.](/images/com.apple.activitykit/type-expanded@2x.png)
+![An illustration of the Dynamic Island with a Live Activity that appears in the expanded presentation.](https://developer.apple.com/tutorials/images/com.apple.activitykit/type-expanded@2x.png)
 
-The minimal presentation also appears at the top of the iPhone Lock Screen in StandBy. In StandBy, tapping the Live Activity expands it to fill the whole display using the Lock Screen presentation. Additionally, Live Activities people start on iPhone may appear on paired devices. For more information on making sure your Live Activities look great on paired devices, refer to [`Creating custom views for Live Activities`](creating-custom-views-for-live-activities.md).
+The minimal presentation also appears at the top of the iPhone Lock Screen in StandBy. In StandBy, tapping the Live Activity expands it to fill the whole display using the Lock Screen presentation. Additionally, Live Activities people start on iPhone may appear on paired devices. For more information on making sure your Live Activities look great on paired devices, refer to [Creating custom views for Live Activities](./creating-custom-views-for-live-activities.md).
 
-#### Plan for Live Activity Duration and Asset Constraints
+#### Plan for Live Activity duration and asset constraints
 
 A Live Activity can be active for up to eight hours unless its app or a person ends it before this limit. After the eight-hour limit, the system automatically ends the Live Activity, and immediately removes it from the Dynamic Island. However, the Live Activity remains on the Lock Screen until a person removes it or for up to four additional hours before the system removes it — whichever comes first. As a result, a Live Activity remains on the Lock Screen for a maximum of 12 hours.
 
-For more information about ending a Live Activity, see [`End the Live Activity`](displaying-live-data-with-live-activities#End-the-Live-Activity.md).
+For more information about ending a Live Activity, see [End the Live Activity](./displaying-live-data-with-live-activities.md#End-the-Live-Activity).
 
-The system requires image assets for a Live Activity to use a resolution that’s smaller or equal to the size of the presentation for a device. If you use an image asset that’s larger than the size of the Live Activity presentation, the system might fail to start the Live Activity. For size guidance of Live Activity presentations, refer to [`Human Interface Guidelines > Live Activities`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/live-activities#Specifications).
+The system requires image assets for a Live Activity to use a resolution that’s smaller or equal to the size of the presentation for a device. If you use an image asset that’s larger than the size of the Live Activity presentation, the system might fail to start the Live Activity. For size guidance of Live Activity presentations, refer to [Human Interface Guidelines > Live Activities](https://developer.apple.com/design/human-interface-guidelines/live-activities#Specifications).
 
-Each Live Activity runs in its own sandbox, and, unlike a widget, a Live Activity can’t access the network or receive location updates. To update the dynamic data of an active Live Activity, use ActivityKit in your app or allow your Live Activities to receive ActivityKit push notifications as described in [`Starting and updating Live Activities with ActivityKit push notifications`](starting-and-updating-live-activities-with-activitykit-push-notifications.md).
+Each Live Activity runs in its own sandbox, and, unlike a widget, a Live Activity can’t access the network or receive location updates. To update the dynamic data of an active Live Activity, use ActivityKit in your app or allow your Live Activities to receive ActivityKit push notifications as described in [Starting and updating Live Activities with ActivityKit push notifications](./starting-and-updating-live-activities-with-activitykit-push-notifications.md).
 
 > ❗ **Important**: Static and dynamic data for a Live Activity, including data for ActivityKit updates and ActivityKit push notifications, can’t exceed a combined size of 4 KB.
 
-#### Add Support for Live Activities to Your App
+#### Add support for Live Activities to your app
 
 The code that describes the user interface of your Live Activity is part of your app’s widget extension. If you already offer widgets in your app, add code for the Live Activity to your existing widget extension and reuse code between your widgets and Live Activities. However, although Live Activities leverage WidgetKit’s functionality, they aren’t widgets. In contrast to the timeline mechanism you use to update your widgets’ user interface, you start and update a Live Activity from your app with ActivityKit or with ActivityKit push notifications.
 
@@ -54,17 +55,17 @@ The code that describes the user interface of your Live Activity is part of your
 
 To support Live Activities:
 
-1. Create a widget extension if you haven’t already added one to your project and make sure to select “Include Live Activity” when you add a widget extension target to your Xcode project. For more information on creating a widget extension, refer to [`WidgetKit`](https://developer.apple.com/documentation/widgetkit) and [`Creating a widget extension`](https://developer.apple.com/documentation/widgetkit/creating-a-widget-extension).
-2. If your project includes an `Info.plist` file, add the Supports Live Activities entry to it, and set its Boolean value to `YES`. Alternatively, open the `Info.plist` file as source code, add the [`NSSupportsLiveActivities`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssupportsliveactivities) key, then set the type to `Boolean` and its value to `YES`. If your project doesn’t have an `Info.plist` file, add the Supports Live Activities entry to the list of custom iOS target properties for your iOS app target and set its value to `YES`.
-3. Add code that defines an [`ActivityAttributes`](activityattributes.md)  structure to describe the static and dynamic data of your Live Activity.
-4. Use the `ActivityAttributes` you defined to create the [`ActivityConfiguration`](https://developer.apple.com/documentation/widgetkit/activityconfiguration).
+1. Create a widget extension if you haven’t already added one to your project and make sure to select “Include Live Activity” when you add a widget extension target to your Xcode project. For more information on creating a widget extension, refer to [WidgetKit](../WidgetKit/WidgetKit.md) and [Creating a widget extension](../WidgetKit/creating-a-widget-extension.md).
+2. If your project includes an `Info.plist` file, add the Supports Live Activities entry to it, and set its Boolean value to `YES`. Alternatively, open the `Info.plist` file as source code, add the [`NSSupportsLiveActivities`](../BundleResources/information-property-list/nssupportsliveactivities.md) key, then set the type to `Boolean` and its value to `YES`. If your project doesn’t have an `Info.plist` file, add the Supports Live Activities entry to the list of custom iOS target properties for your iOS app target and set its value to `YES`.
+3. Add code that defines an [`ActivityAttributes`](./activityattributes.md)  structure to describe the static and dynamic data of your Live Activity.
+4. Use the `ActivityAttributes` you defined to create the [`ActivityConfiguration`](../WidgetKit/activityconfiguration.md).
 5. Add code to configure, start, update, and end your Live Activities.
-6. Make your Live Activity interactive with [`Button`](https://developer.apple.com/documentation/swiftui/button) or [`Toggle`](https://developer.apple.com/documentation/swiftui/toggle) as described in [`Adding interactivity to widgets and Live Activities`](https://developer.apple.com/documentation/widgetkit/adding-interactivity-to-widgets-and-live-activities).
-7. Add animations to bring attention to content updates as described in [`Animating data updates in widgets and Live Activities`](https://developer.apple.com/documentation/widgetkit/animating-data-updates-in-widgets-and-live-activities).
+6. Make your Live Activity interactive with [`Button`](../SwiftUI/button.md) or [`Toggle`](../SwiftUI/toggle.md) as described in [Adding interactivity to widgets and Live Activities](../WidgetKit/adding-interactivity-to-widgets-and-live-activities.md).
+7. Add animations to bring attention to content updates as described in [Animating data updates in widgets and Live Activities](../WidgetKit/animating-data-updates-in-widgets-and-live-activities.md).
 
-#### Define a Set of Static and Dynamic Data
+#### Define a set of static and dynamic data
 
-After you add a widget extension target that includes Live Activities to your Xcode project, describe the data that your Live Activity displays by implementing [`ActivityAttributes`](activityattributes.md). The [`ActivityAttributes`](activityattributes.md) inform the system about static data that appears in the Live Activity. You also use [`ActivityAttributes`](activityattributes.md) to declare the required custom [`Activity.ContentState`](activity/contentstate-swift.typealias.md) type that describes the dynamic data of your Live Activity. In the example below from the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](https://developer.apple.com/documentation/widgetkit/emoji-rangers-supporting-live-activities-interactivity-and-animations) sample code project, `AdventureAttributes` describes the hero information as static data using `let hero: EmojiRanger`. Note how the code defines the [`Activity.ContentState`](activity/contentstate-swift.typealias.md) to encapsulate dynamic data: the current health level of the hero and a string that describes what happens to the hero.
+After you add a widget extension target that includes Live Activities to your Xcode project, describe the data that your Live Activity displays by implementing [`ActivityAttributes`](./activityattributes.md). The [`ActivityAttributes`](./activityattributes.md) inform the system about static data that appears in the Live Activity. You also use [`ActivityAttributes`](./activityattributes.md) to declare the required custom [`Activity.ContentState`](./activity/contentstate-swift.typealias.md) type that describes the dynamic data of your Live Activity. In the example below from the [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md) sample code project, `AdventureAttributes` describes the hero information as static data using `let hero: EmojiRanger`. Note how the code defines the [`Activity.ContentState`](./activity/contentstate-swift.typealias.md) to encapsulate dynamic data: the current health level of the hero and a string that describes what happens to the hero.
 
 ```swift
 import ActivityKit
@@ -81,9 +82,9 @@ struct AdventureAttributes: ActivityAttributes {
 
 > 💡 **Tip**: To make your code more descriptive and easy to read, you can define a type alias for the `ContentState`; for example: `public typealias HeroStatus = ContentState`.
 
-#### Add Live Activities to the Widget Extension
+#### Add Live Activities to the widget extension
 
-Live Activities leverage WidgetKit. After you add code to describe the data that appears in the Live Activity with the [`ActivityAttributes`](activityattributes.md) structure, add code to return an [`ActivityConfiguration`](https://developer.apple.com/documentation/widgetkit/activityconfiguration) in your widget implementation.
+Live Activities leverage WidgetKit. After you add code to describe the data that appears in the Live Activity with the [`ActivityAttributes`](./activityattributes.md) structure, add code to return an [`ActivityConfiguration`](../WidgetKit/activityconfiguration.md) in your widget implementation.
 
 The following example uses the `AdventureAttributes` structure from the previous example:
 
@@ -108,11 +109,11 @@ struct AdventureActivityConfiguration: Widget {
 
 > 💡 **Tip**: If you select “Include Live Activities” when you add a new widget extension target to your project, Xcode automatically creates a widget bundle for you that includes a widget and a Live Activity.
 
-If your app already offers widgets, add the Live Activity to your [`WidgetBundle`](https://developer.apple.com/documentation/swiftui/widgetbundle). If you don’t have a [`WidgetBundle`](https://developer.apple.com/documentation/swiftui/widgetbundle) — for example, if you only offer one widget — create a widget bundle as described in [`Creating a widget extension`](https://developer.apple.com/documentation/widgetkit/creating-a-widget-extension) and then add the Live Activity to it.
+If your app already offers widgets, add the Live Activity to your [`WidgetBundle`](../SwiftUI/widgetbundle.md). If you don’t have a [`WidgetBundle`](../SwiftUI/widgetbundle.md) — for example, if you only offer one widget — create a widget bundle as described in [Creating a widget extension](../WidgetKit/creating-a-widget-extension.md) and then add the Live Activity to it.
 
-#### Create the Lock Screen Presentation
+#### Create the Lock Screen presentation
 
-To create the user interface of the Live Activity, you use [`SwiftUI`](https://developer.apple.com/documentation/swiftui) in the widget extension you created earlier. Similar to widgets, you don’t provide the size of the user interface for your Live Activity but let the system determine the appropriate dimensions.
+To create the user interface of the Live Activity, you use [SwiftUI](../SwiftUI/SwiftUI.md) in the widget extension you created earlier. Similar to widgets, you don’t provide the size of the user interface for your Live Activity but let the system determine the appropriate dimensions.
 
 Start with the presentation that appears on the Lock Screen. The following code displays the information that the `AdventureAttributes` struct describes using the custom `AdventureLiveActivityView`:
 
@@ -142,21 +143,21 @@ struct AdventureActivityConfiguration: Widget {
 On a device that doesn’t support the Dynamic Island, the system displays the Lock Screen presentation as a banner for a Live Activity update if:
 
 - The device is unlocked and its app isn’t in use
-- You pass an [`AlertConfiguration`](alertconfiguration.md) to the [`update(_:alertConfiguration:)`](activity/update(_:alertconfiguration:).md) function
+- You pass an [`AlertConfiguration`](./alertconfiguration.md) to the [`update(_:alertConfiguration:)`](./activity/update%28_,alertconfiguration%29.md) function
 
-On iPhone in StandBy, the Lock Screen presentation appears scaled to fill the screen of the device. Make sure your assets offer a high-enough resolution for StandBy. Additionally, consider updating the Lock Screen presentation to make use of the additional space. To detect Standby, use the [`isActivityFullscreen`](https://developer.apple.com/documentation/swiftui/environmentvalues/isactivityfullscreen) environment variable.
+On iPhone in StandBy, the Lock Screen presentation appears scaled to fill the screen of the device. Make sure your assets offer a high-enough resolution for StandBy. Additionally, consider updating the Lock Screen presentation to make use of the additional space. To detect Standby, use the [`isActivityFullscreen`](../SwiftUI/environmentvalues/isactivityfullscreen.md) environment variable.
 
-#### Create the Compact and Minimal Presentations
+#### Create the compact and minimal presentations
 
 Live Activities appear in the Dynamic Island of devices that support it. When you start one or more Live Activities and no other app starts a Live Activity, the compact leading and trailing presentations appear together to form a cohesive presentation in the Dynamic Island for one Live Activity.
 
-![An illustration that shows compact leading and trailing presentations for a Live Activity of a food delivery app. ](/images/com.apple.activitykit/compact-view@2x.png)
+![An illustration that shows compact leading and trailing presentations for a Live Activity of a food delivery app. ](https://developer.apple.com/tutorials/images/com.apple.activitykit/compact-view@2x.png)
 
 When several Live Activities are active, the system chooses how to present them. The number of visible Live Activities depends on the device, and the system renders each one to best fit — attached to or detached from the Dynamic Island, and in the compact presentation, the compact presentation with reduced width, or the minimal presentation. The following example shows two Live Activities from separate apps in the minimal presentation:
 
-![An illustration of the Dynamic Island with a Live Activity that appears in the minimal presentation.](/images/com.apple.activitykit/minimal-view@2x.png)
+![An illustration of the Dynamic Island with a Live Activity that appears in the minimal presentation.](https://developer.apple.com/tutorials/images/com.apple.activitykit/minimal-view@2x.png)
 
-The following example shows how the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](https://developer.apple.com/documentation/widgetkit/emoji-rangers-supporting-live-activities-interactivity-and-animations) app provides compact and minimal presentations. For the leading presentation, it reuses the custom SwiftUI view `Avatar`. For the trailing presentation, it uses a [`ProgressView`](https://developer.apple.com/documentation/swiftui/progressview).
+The following example shows how the [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md) app provides compact and minimal presentations. For the leading presentation, it reuses the custom SwiftUI view `Avatar`. For the trailing presentation, it uses a [`ProgressView`](../SwiftUI/progressview.md).
 
 ```swift
 import SwiftUI
@@ -196,11 +197,11 @@ struct AdventureActivityConfiguration: Widget {
 }
 ```
 
-If your app starts more than one Live Activity at the same time, you can tell the system which one it should display by setting a relevance score. For more information, refer to [`Configure the Live Activity`](displaying-live-data-with-live-activities#Configure-the-Live-Activity.md).
+If your app starts more than one Live Activity at the same time, you can tell the system which one it should display by setting a relevance score. For more information, refer to [Configure the Live Activity](./displaying-live-data-with-live-activities.md#Configure-the-Live-Activity).
 
-#### Support Presentations with Reduced Width
+#### Support presentations with reduced width
 
-Sometimes the system renders compact and minimal Live Activities with a limited width, for example, on iPhone in landscape orientation, on iPhone Duo, or on iPhone 18 Pro with two or more active Live Activities. Use the [`isDynamicIslandLimitedInWidth`](https://developer.apple.com/documentation/swiftui/environmentvalues/isdynamicislandlimitedinwidth) environment value to adapt your views to the reduced width of the Dynamic Island as shown in the following example:
+Sometimes the system renders compact and minimal Live Activities with a limited width, for example, on iPhone in landscape orientation, on iPhone Duo, or on iPhone 18 Pro with two or more active Live Activities. Use the [`isDynamicIslandLimitedInWidth`](../SwiftUI/environmentvalues/isdynamicislandlimitedinwidth.md) environment value to adapt your views to the reduced width of the Dynamic Island as shown in the following example:
 
 ```swift
 struct CompactLeadingView: View {
@@ -218,15 +219,15 @@ struct CompactLeadingView: View {
 
 To avoid truncated text, adapt your compact presentation to the limited width by fitting it inside a circle that’s 28 points in diameter, and use a short abbreviation or graphic representation instead of a full text string. If you can’t find a solution to display views for leading and trailing compact presentations with limited width, provide a compact leading presentation that best represents your Live Activity, such as the view you use for the minimal presentation, and an empty view for the trailing compact presentation. The system hides the empty trailing view automatically.
 
-For additional design guidance, see [`Human Interface Guidelines > Live Activities`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/live-activities).
+For additional design guidance, see [Human Interface Guidelines > Live Activities](https://developer.apple.com/design/human-interface-guidelines/live-activities).
 
-#### Create the Expanded Presentation
+#### Create the expanded presentation
 
 In addition to the compact and minimal presentations, you must support the expanded presentation. It appears when a person touches and holds a compact or minimal presentation, and it also appears briefly for Live Activity updates.
 
-![An illustration of the Dynamic Island with a Live Activity that appears in the expanded presentation.](/images/com.apple.activitykit/expanded-view@2x.png)
+![An illustration of the Dynamic Island with a Live Activity that appears in the expanded presentation.](https://developer.apple.com/tutorials/images/com.apple.activitykit/expanded-view@2x.png)
 
-Use the [`DynamicIslandExpandedRegionPosition`](https://developer.apple.com/documentation/widgetkit/dynamicislandexpandedregionposition) to specify detailed instructions where you want SwiftUI to position your content. The following example shows how the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](https://developer.apple.com/documentation/widgetkit/emoji-rangers-supporting-live-activities-interactivity-and-animations) app creates its expanded presentation using a [`DynamicIslandExpandedContentBuilder`](https://developer.apple.com/documentation/widgetkit/dynamicislandexpandedcontentbuilder):
+Use the [`DynamicIslandExpandedRegionPosition`](../WidgetKit/dynamicislandexpandedregionposition.md) to specify detailed instructions where you want SwiftUI to position your content. The following example shows how the [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md) app creates its expanded presentation using a [`DynamicIslandExpandedContentBuilder`](../WidgetKit/dynamicislandexpandedcontentbuilder.md):
 
 ```swift
 struct AdventureActivityConfiguration: Widget {
@@ -285,58 +286,58 @@ struct AdventureActivityConfiguration: Widget {
 }
 ```
 
-To render views that appear in the expanded Live Activity, the system divides the expanded presentation into different areas. Note how the example returns a [`DynamicIsland`](https://developer.apple.com/documentation/widgetkit/dynamicisland) that specifies several [`DynamicIslandExpandedRegion`](https://developer.apple.com/documentation/widgetkit/dynamicislandexpandedregion) objects. Pass the following [`DynamicIslandExpandedRegionPosition`](https://developer.apple.com/documentation/widgetkit/dynamicislandexpandedregionposition) values to lay out your content at a specified position in the expanded presentation:
+To render views that appear in the expanded Live Activity, the system divides the expanded presentation into different areas. Note how the example returns a [`DynamicIsland`](../WidgetKit/dynamicisland.md) that specifies several [`DynamicIslandExpandedRegion`](../WidgetKit/dynamicislandexpandedregion.md) objects. Pass the following [`DynamicIslandExpandedRegionPosition`](../WidgetKit/dynamicislandexpandedregionposition.md) values to lay out your content at a specified position in the expanded presentation:
 
-- [`center`](https://developer.apple.com/documentation/widgetkit/dynamicislandexpandedregionposition/center) places content below the TrueDepth camera.
-- [`leading`](https://developer.apple.com/documentation/widgetkit/dynamicislandexpandedregionposition/leading) places content along the leading edge of the expanded Live Activity next to the TrueDepth camera and wraps additional content below it.
-- [`trailing`](https://developer.apple.com/documentation/widgetkit/dynamicislandexpandedregionposition/trailing) places content along the trailing edge of the expanded Live Activity next to the TrueDepth camera and wraps additional content below it.
-- [`bottom`](https://developer.apple.com/documentation/widgetkit/dynamicislandexpandedregionposition/bottom) places content below the leading, trailing, and center content.
+- [`center`](../WidgetKit/dynamicislandexpandedregionposition/center.md) places content below the TrueDepth camera.
+- [`leading`](../WidgetKit/dynamicislandexpandedregionposition/leading.md) places content along the leading edge of the expanded Live Activity next to the TrueDepth camera and wraps additional content below it.
+- [`trailing`](../WidgetKit/dynamicislandexpandedregionposition/trailing.md) places content along the trailing edge of the expanded Live Activity next to the TrueDepth camera and wraps additional content below it.
+- [`bottom`](../WidgetKit/dynamicislandexpandedregionposition/bottom.md) places content below the leading, trailing, and center content.
 
-![An illustration that shows the center, leading, trailing, and bottom positions for content for the expanded presentation in the Dynamic Island.](/images/com.apple.activitykit/expanded-layout@2x.png)
+![An illustration that shows the center, leading, trailing, and bottom positions for content for the expanded presentation in the Dynamic Island.](https://developer.apple.com/tutorials/images/com.apple.activitykit/expanded-layout@2x.png)
 
 To render content that appears in the expanded Live Activity, the system first determines the width of the center content while taking into account the minimal width of the leading and trailing content. The system then places and sizes the leading and trailing content based on its vertical position. By default, leading and trailing positions receive an equal amount of horizontal space.
 
-You can tell the system to prioritize one of the `DynamicIslandExpandedRegion` views by passing a `priority` to the [`init(_:priority:content:)`](https://developer.apple.com/documentation/widgetkit/dynamicislandexpandedregion/init(_:priority:content:)) initializer. The system renders the highest-priority view at the full width of the Dynamic Island. The following illustration shows leading and trailing positions in an expanded presentation with higher priority to render them below the TrueDepth camera.
+You can tell the system to prioritize one of the `DynamicIslandExpandedRegion` views by passing a `priority` to the [`init(_:priority:content:)`](../WidgetKit/dynamicislandexpandedregion/init%28_,priority,content%29.md) initializer. The system renders the highest-priority view at the full width of the Dynamic Island. The following illustration shows leading and trailing positions in an expanded presentation with higher priority to render them below the TrueDepth camera.
 
-![An illustration that shows the leading and trailing positions in an expanded presentation with higher priority to render them below the TrueDepth camera.](/images/com.apple.activitykit/expanded-sections@2x.png)
+![An illustration that shows the leading and trailing positions in an expanded presentation with higher priority to render them below the TrueDepth camera.](https://developer.apple.com/tutorials/images/com.apple.activitykit/expanded-sections@2x.png)
 
-> **Note**: If content is too wide to appear in a leading position next to the TrueDepth camera, use the [`belowIfTooWide`](https://developer.apple.com/documentation/widgetkit/dynamicislandexpandedregionverticalplacement/belowiftoowide) modifier to render leading content below the TrueDepth camera.
+> **Note**: If content is too wide to appear in a leading position next to the TrueDepth camera, use the [`belowIfTooWide`](../WidgetKit/dynamicislandexpandedregionverticalplacement/belowiftoowide.md) modifier to render leading content below the TrueDepth camera.
 
-#### Configure How Your Live Activity Launches Your App
+#### Configure how your Live Activity launches your app
 
-People tap your Live Activity to launch your app. Use deep links to take them to the scene in your app that matches the activity’s information. On Apple Watch, choose if people can open your app on iPhone or its watchOS companion by tapping your Live Activity on Apple Watch. For more information, refer to [`Launching your app from a Live Activity`](launching-your-app-from-a-live-activity.md).
+People tap your Live Activity to launch your app. Use deep links to take them to the scene in your app that matches the activity’s information. On Apple Watch, choose if people can open your app on iPhone or its watchOS companion by tapping your Live Activity on Apple Watch. For more information, refer to [Launching your app from a Live Activity](./launching-your-app-from-a-live-activity.md).
 
-#### Add Buttons or Toggles
+#### Add buttons or toggles
 
 Like widgets, Live Activities can contain SwiftUI buttons and toggles to provide quick actions. For example, a food-ordering app might show a button in its Live Activity that people tap to check in at a restaurant when they pick up a takeout order.
 
-To add a toggle or button to a Live Activity, adopt the [`App Intents`](https://developer.apple.com/documentation/appintents) framework and use the initializers for [`Button`](https://developer.apple.com/documentation/swiftui/button) and [`Toggle`](https://developer.apple.com/documentation/swiftui/toggle) that take an app intent. For more information about using toggles and buttons in widget extensions, including for Live Activities, refer to [`WidgetKit`](https://developer.apple.com/documentation/widgetkit).
+To add a toggle or button to a Live Activity, adopt the [App Intents](../AppIntents/AppIntents.md) framework and use the initializers for [`Button`](../SwiftUI/button.md) and [`Toggle`](../SwiftUI/toggle.md) that take an app intent. For more information about using toggles and buttons in widget extensions, including for Live Activities, refer to [WidgetKit](../WidgetKit/WidgetKit.md).
 
 > **Note**: Buttons and toggles on Live Activities don’t perform actions in CarPlay.
 
-#### Provide Accessibility Labels
+#### Provide accessibility labels
 
-Designing with accessibility in mind is a foundational principle when creating an app. It also applies to Live Activities. To allow people to customize how they interact with your Live Activity and to make sure VoiceOver for your Live Activity works correctly, add accessibility labels for the SwiftUI views you create for each Live Activity presentation. For more information, refer to [`Adding accessible descriptions to widgets and Live Activities`](adding-accessible-descriptions-to-widgets-and-live-activities.md).
+Designing with accessibility in mind is a foundational principle when creating an app. It also applies to Live Activities. To allow people to customize how they interact with your Live Activity and to make sure VoiceOver for your Live Activity works correctly, add accessibility labels for the SwiftUI views you create for each Live Activity presentation. For more information, refer to [Adding accessible descriptions to widgets and Live Activities](./adding-accessible-descriptions-to-widgets-and-live-activities.md).
 
-#### Make Sure Live Activities Are Available
+#### Make sure Live Activities are available
 
 Live Activities are available on iPhone and iPad. If your app is available on additional platforms and offers a widget extension, make sure Live Activities are available at runtime. Additionally, people can choose to deactivate Live Activities for an app in the Settings app.
 
 To determine whether Live Activities are available and whether a person authorized your app to use them:
 
-- Use [`areActivitiesEnabled`](activityauthorizationinfo/areactivitiesenabled.md) to synchronously determine whether to show a user interface in your app for starting a Live Activity.
-- Receive asynchronous user authorization updates by observing any user authorization changes with the [`activityEnablementUpdates`](activityauthorizationinfo/activityenablementupdates-swift.property.md) stream and respond to them accordingly.
+- Use [`areActivitiesEnabled`](./activityauthorizationinfo/areactivitiesenabled.md) to synchronously determine whether to show a user interface in your app for starting a Live Activity.
+- Receive asynchronous user authorization updates by observing any user authorization changes with the [`activityEnablementUpdates`](./activityauthorizationinfo/activityenablementupdates-swift.property.md) stream and respond to them accordingly.
 
 > **Note**: An app can start or schedule several Live Activities, and a device can run Live Activities from several apps — the exact number may depend on a variety of factors. Scheduled Live Activities count towards the limit of simultanious activities. In addition to making sure Live Activities are available, always handle any errors gracefully when starting, updating, or ending a Live Activity. For example, starting a Live Activity may fail because a person’s device may have reached its limit of active and scheduled Live Activities.
 
 #### Configure the Live Activity
 
-Before you can start a Live Activity in your app, configure it with an [`ActivityContent`](activitycontent.md) structure. The activity content encapsulates the [`ActivityAttributes`](activityattributes.md) and additional configuration information:
+Before you can start a Live Activity in your app, configure it with an [`ActivityContent`](./activitycontent.md) structure. The activity content encapsulates the [`ActivityAttributes`](./activityattributes.md) and additional configuration information:
 
-- The [`staleDate`](activitycontent/staledate.md) tells the system when the Live Activity content becomes outdated.
-- The [`relevanceScore`](activitycontent/relevancescore.md) determines which of your Live Activities appears in the Dynamic Island and the order of your Live Activities on the Lock Screen.
+- The [`staleDate`](./activitycontent/staledate.md) tells the system when the Live Activity content becomes outdated.
+- The [`relevanceScore`](./activitycontent/relevancescore.md) determines which of your Live Activities appears in the Dynamic Island and the order of your Live Activities on the Lock Screen.
 
-While setting the [`staleDate`](activitycontent/staledate.md) is optional, it’s helpful when you want to ensure your Live Activity doesn’t display outdated content. At the specified date, the [`activityState`](activity/activitystate.md) changes to [`ActivityState.stale`](activitystate/stale.md) and [`isStale`](https://developer.apple.com/documentation/widgetkit/activityviewcontext/isstale) changes to `true`. Access [`isStale`](https://developer.apple.com/documentation/widgetkit/activityviewcontext/isstale) to monitor the activity state and respond to outdated Live Activities that haven’t received updates. For example, while a person has network connectivity, a sports app could update the Live Activity with the latest game information and advance the stale date. If a person enters an area without network connectivity, the app can’t update the Live Activity with new information and an advanced stale date. Eventually, the Live Activity becomes stale and displays text to indicate that the displayed information is outdated. On the next app launch or when it performs background tasks, the app can also respond to the [`ActivityState.stale`](activitystate/stale.md) state.
+While setting the [`staleDate`](./activitycontent/staledate.md) is optional, it’s helpful when you want to ensure your Live Activity doesn’t display outdated content. At the specified date, the [`activityState`](./activity/activitystate.md) changes to [`ActivityState.stale`](./activitystate/stale.md) and [`isStale`](../WidgetKit/activityviewcontext/isstale.md) changes to `true`. Access [`isStale`](../WidgetKit/activityviewcontext/isstale.md) to monitor the activity state and respond to outdated Live Activities that haven’t received updates. For example, while a person has network connectivity, a sports app could update the Live Activity with the latest game information and advance the stale date. If a person enters an area without network connectivity, the app can’t update the Live Activity with new information and an advanced stale date. Eventually, the Live Activity becomes stale and displays text to indicate that the displayed information is outdated. On the next app launch or when it performs background tasks, the app can also respond to the [`ActivityState.stale`](./activitystate/stale.md) state.
 
 If your app starts more than one Live Activity, provide a relevance score to determine the order of your Live Activities on the Lock Screen and which of your Live Activities appears in the Dynamic Island:
 
@@ -349,9 +350,9 @@ The system expects relative values for the relevance score. Assign a higher valu
 
 #### Start the Live Activity
 
-You start a Live Activity in your app’s code while the app is in the foreground with the [`request(attributes:content:pushType:)`](activity/request(attributes:content:pushtype:).md) function. Pass the [`ActivityAttributes`](activityattributes.md) and [`ActivityContent`](activitycontent.md) objects you created to it and, if you implement ActivityKit push notifications, the `pushType` parameter.
+You start a Live Activity in your app’s code while the app is in the foreground with the [`request(attributes:content:pushType:)`](./activity/request%28attributes,content,pushtype%29.md) function. Pass the [`ActivityAttributes`](./activityattributes.md) and [`ActivityContent`](./activitycontent.md) objects you created to it and, if you implement ActivityKit push notifications, the `pushType` parameter.
 
-The following example from the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](https://developer.apple.com/documentation/widgetkit/emoji-rangers-supporting-live-activities-interactivity-and-animations) app creates the initial attributes and content state for the Emoji Rangers Live Activity.
+The following example from the [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md) app creates the initial attributes and content state for the Emoji Rangers Live Activity.
 
 ```swift
 if ActivityAuthorizationInfo().areActivitiesEnabled {
@@ -381,29 +382,29 @@ if ActivityAuthorizationInfo().areActivitiesEnabled {
 }
 ```
 
-In general, your app needs to be in the foreground to start a Live Activity. You can update or end a Live Activity from your app while it runs in the background — for example, by using [`Background Tasks`](https://developer.apple.com/documentation/backgroundtasks). However, you can start a Live Activity while your app is in the background by using an app intent that conforms to [`LiveActivityIntent`](https://developer.apple.com/documentation/appintents/liveactivityintent). For example, you might create a control that people place in Control Center. The control could use a `LiveActivityIntent` and starts the Live Activity in the intent’s `perform()` method. For more information about app intents, refer to [`App Intents`](https://developer.apple.com/documentation/appintents) and [`Getting started with the App Intents framework`](https://developer.apple.com/documentation/appintents/getting-started-with-the-app-intents-framework).
+In general, your app needs to be in the foreground to start a Live Activity. You can update or end a Live Activity from your app while it runs in the background — for example, by using [Background Tasks](../BackgroundTasks/BackgroundTasks.md). However, you can start a Live Activity while your app is in the background by using an app intent that conforms to [`LiveActivityIntent`](../AppIntents/liveactivityintent.md). For example, you might create a control that people place in Control Center. The control could use a `LiveActivityIntent` and starts the Live Activity in the intent’s `perform()` method. For more information about app intents, refer to [App Intents](../AppIntents/AppIntents.md) and [Getting started with the App Intents framework](../AppIntents/getting-started-with-the-app-intents-framework.md).
 
-#### Schedule a Live Activity at a Specific Date
+#### Schedule a Live Activity at a specific date
 
-You can schedule a Live Activity for a specific date using the [`request(attributes:content:pushType:style:alertConfiguration:startDate:)`](activity/request(attributes:content:pushtype:style:alertconfiguration:startdate:).md) function. For example, an app that allows people to watch or follow sports matches might want to schedule a Live Activity for an upcoming game. If you allow people to schedule a Live Activity, you must pass an [`AlertConfiguration`](alertconfiguration.md) to make sure they know when your app starts a Live Activity.
+You can schedule a Live Activity for a specific date using the [`request(attributes:content:pushType:style:alertConfiguration:startDate:)`](./activity/request%28attributes,content,pushtype,style,alertconfiguration,startdate%29.md) function. For example, an app that allows people to watch or follow sports matches might want to schedule a Live Activity for an upcoming game. If you allow people to schedule a Live Activity, you must pass an [`AlertConfiguration`](./alertconfiguration.md) to make sure they know when your app starts a Live Activity.
 
-#### Start a Transient Live Activity
+#### Start a transient Live Activity
 
 Live Activities can appear temporarily in the extended presentation in the Dynamic Island to allow interactions and status updates while a person is actively performing a task. Locking the device, collapsing the extended presentation in the Dynamic Island, or tapping outside the Dynamic Island ends the Live Activity. For example, the Music app displays an extended presentation in the Dynamic Island when a person starts playing audio in the app, allowing people to choose to move the audio to a HomePod that’s on the same Wi-Fi network with AirPlay. The Live Activity ends automatically when the person leaves the app.
 
-To start a transient Live Activity, use [`request(attributes:content:pushType:style:)`](activity/request(attributes:content:pushtype:style:).md) and pass [`ActivityStyle.transient`](activitystyle/transient.md) as the `style` parameter.
+To start a transient Live Activity, use [`request(attributes:content:pushType:style:)`](./activity/request%28attributes,content,pushtype,style%29.md) and pass [`ActivityStyle.transient`](./activitystyle/transient.md) as the `style` parameter.
 
-#### Start Update and End a Live Activity with Push Notifications
+#### Start, update, and end a Live Activity with push notifications
 
 In addition to updating and ending a Live Activity from your app with ActivityKit, start, update, or end a Live Activity with an ActivityKit push notification that you send from your server to the Apple Push Notification service (APNs).
 
-To learn more about using ActivityKit push notifications, refer to [`Starting and updating Live Activities with ActivityKit push notifications`](starting-and-updating-live-activities-with-activitykit-push-notifications.md).
+To learn more about using ActivityKit push notifications, refer to [Starting and updating Live Activities with ActivityKit push notifications](./starting-and-updating-live-activities-with-activitykit-push-notifications.md).
 
 #### Update the Live Activity
 
-When you start a Live Activity from your app, update the data that appears in the Live Activity using the [`update(_:)`](activity/update(_:).md) function of the [`Activity`](activity.md) object you received when you started the Live Activity. To retrieve your app’s active Live Activities, use [`activities`](activity/activities.md).
+When you start a Live Activity from your app, update the data that appears in the Live Activity using the [`update(_:)`](./activity/update%28_%29.md) function of the [`Activity`](./activity.md) object you received when you started the Live Activity. To retrieve your app’s active Live Activities, use [`activities`](./activity/activities.md).
 
-For important updates, use the [`update(_:alertConfiguration:)`](activity/update(_:alertconfiguration:).md) function to display an alert on iPhone, iPad, and a paired Apple Watch that tells a person about new Live Activity content. For example, the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](https://developer.apple.com/documentation/widgetkit/emoji-rangers-supporting-live-activities-interactivity-and-animations) app updates its Live Activity using an alert configuration to tell people that the hero has been knocked down:
+For important updates, use the [`update(_:alertConfiguration:)`](./activity/update%28_,alertconfiguration%29.md) function to display an alert on iPhone, iPad, and a paired Apple Watch that tells a person about new Live Activity content. For example, the [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md) app updates its Live Activity using an alert configuration to tell people that the hero has been knocked down:
 
 ```swift
 guard let activity = currentActivity else {
@@ -446,19 +447,19 @@ await activity.update(
 
 On Apple Watch, the system uses the `title` and `body` attributes for the alert. On iPhone and iPad, the system doesn’t show a regular alert but instead shows the expanded Live Activity in the Dynamic Island or the Lock Screen presentation as a banner on devices without the Dynamic Island.
 
-#### Animate Content Updates
+#### Animate content updates
 
-When you define the user interface of your Live Activity, the system ignores any animation modifiers — for example, [`withAnimation(_:_:)`](https://developer.apple.com/documentation/swiftui/withanimation(_:_:)) and [`animation(_:value:)`](https://developer.apple.com/documentation/swiftui/view/animation(_:value:)) — and uses the system’s animation timing instead. However, the system performs some animation when the dynamic content of the Live Activity changes. Text views animate content changes with blurred content transitions, and the system animates content transitions for images and SF Symbols. If you add or remove views from the user interface based on content or state changes, views fade in and out. Use the following view transitions to configure these built-in transitions: [`opacity`](https://developer.apple.com/documentation/swiftui/anytransition/opacity), [`move(edge:)`](https://developer.apple.com/documentation/swiftui/anytransition/move(edge:)), [`slide`](https://developer.apple.com/documentation/swiftui/anytransition/slide), [`push(from:)`](https://developer.apple.com/documentation/swiftui/anytransition/push(from:)), or combinations of them. Additionally, request animations for timer text with [`numericText(countsDown:)`](https://developer.apple.com/documentation/swiftui/contenttransition/numerictext(countsdown:)).
+When you define the user interface of your Live Activity, the system ignores any animation modifiers — for example, [`withAnimation(_:_:)`](../SwiftUI/withanimation%28_,_%29.md) and [`animation(_:value:)`](../SwiftUI/view/animation%28_,value%29.md) — and uses the system’s animation timing instead. However, the system performs some animation when the dynamic content of the Live Activity changes. Text views animate content changes with blurred content transitions, and the system animates content transitions for images and SF Symbols. If you add or remove views from the user interface based on content or state changes, views fade in and out. Use the following view transitions to configure these built-in transitions: [`opacity`](../SwiftUI/anytransition/opacity.md), [`move(edge:)`](../SwiftUI/anytransition/move%28edge%29.md), [`slide`](../SwiftUI/anytransition/slide.md), [`push(from:)`](../SwiftUI/anytransition/push%28from%29.md), or combinations of them. Additionally, request animations for timer text with [`numericText(countsDown:)`](../SwiftUI/contenttransition/numerictext%28countsdown%29.md).
 
-You can animate data changes in your Live Activity with functions that give you more control over animation timing. For example, you can use [`timingCurve(_:duration:)`](https://developer.apple.com/documentation/swiftui/animation/timingcurve(_:duration:)) to create an animation with a custom timing curve. For more information on SwiftUI animations, refer to [`Animation`](https://developer.apple.com/documentation/swiftui/animation).
+You can animate data changes in your Live Activity with functions that give you more control over animation timing. For example, you can use [`timingCurve(_:duration:)`](../SwiftUI/animation/timingcurve%28_,duration%29.md) to create an animation with a custom timing curve. For more information on SwiftUI animations, refer to [`Animation`](../SwiftUI/animation.md).
 
-> **Note**: On devices that include an Always-On display, the system doesn’t perform animations to preserve battery life in Always On. Make sure to use SwiftUI’s [`isLuminanceReduced`](https://developer.apple.com/documentation/swiftui/environmentvalues/isluminancereduced) environment value to detect reduced luminance before animating content changes.
+> **Note**: On devices that include an Always-On display, the system doesn’t perform animations to preserve battery life in Always On. Make sure to use SwiftUI’s [`isLuminanceReduced`](../SwiftUI/environmentvalues/isluminancereduced.md) environment value to detect reduced luminance before animating content changes.
 
 #### End the Live Activity
 
-Always end a Live Activity after the associated task or live event ends. A Live Activity that has ended remains on the Lock Screen until the person removes it, or the system removes it automatically. The automatic removal depends on the dismissal policy you provide to the [`end(_:dismissalPolicy:)`](activity/end(_:dismissalpolicy:).md) function. Always include an updated [`Activity.ContentState`](activity/contentstate-swift.typealias.md) to ensure the Live Activity shows the latest and final content update after it ends. This is important because the Live Activity can remain visible on the Lock Screen for some time after it ends.
+Always end a Live Activity after the associated task or live event ends. A Live Activity that has ended remains on the Lock Screen until the person removes it, or the system removes it automatically. The automatic removal depends on the dismissal policy you provide to the [`end(_:dismissalPolicy:)`](./activity/end%28_,dismissalpolicy%29.md) function. Always include an updated [`Activity.ContentState`](./activity/contentstate-swift.typealias.md) to ensure the Live Activity shows the latest and final content update after it ends. This is important because the Live Activity can remain visible on the Lock Screen for some time after it ends.
 
-The following example shows how the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](https://developer.apple.com/documentation/widgetkit/emoji-rangers-supporting-live-activities-interactivity-and-animations) app ends its Live Activity and sets a custom dismissal policy based on a setting in the app:
+The following example shows how the [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md) app ends its Live Activity and sets a custom dismissal policy based on a setting in the app:
 
 ```swift
 func endActivity(dismissTimeInterval: Double?) async {
@@ -488,24 +489,24 @@ func endActivity(dismissTimeInterval: Double?) async {
 }
 ```
 
-With the [`default`](activityuidismissalpolicy/default.md) dismissal policy, the Live Activity appears on the Lock Screen for some time after it ends to allow a person to glance at their phone to refer to the latest information. A person can choose to remove the Live Activity at any time, or the system removes it automatically four hours after it ended.
+With the [`default`](./activityuidismissalpolicy/default.md) dismissal policy, the Live Activity appears on the Lock Screen for some time after it ends to allow a person to glance at their phone to refer to the latest information. A person can choose to remove the Live Activity at any time, or the system removes it automatically four hours after it ended.
 
-To immediately remove the Live Activity that ended from the Lock Screen, use [`immediate`](activityuidismissalpolicy/immediate.md). Alternatively, use [`after(_:)`](activityuidismissalpolicy/after(_:).md) to specify a date within a four-hour window. While you can provide any date, the system removes the ended Live Activity after the given date or after four hours from the moment the Live Activity ends — whichever comes first.
+To immediately remove the Live Activity that ended from the Lock Screen, use [`immediate`](./activityuidismissalpolicy/immediate.md). Alternatively, use [`after(_:)`](./activityuidismissalpolicy/after%28_%29.md) to specify a date within a four-hour window. While you can provide any date, the system removes the ended Live Activity after the given date or after four hours from the moment the Live Activity ends — whichever comes first.
 
 A person can remove your Live Activity from their Lock Screen at any time. This ends the Live Activity, but it doesn’t end or cancel the person’s action that started it. For example, a person may remove the Live Activity for their pizza delivery from the Lock Screen, but this doesn’t cancel the pizza order.
 
-> **Note**: When a person or the system removes a Live Activity, its [`ActivityState`](activitystate.md) changes to [`ActivityState.dismissed`](activitystate/dismissed.md).
+> **Note**: When a person or the system removes a Live Activity, its [`ActivityState`](./activitystate.md) changes to [`ActivityState.dismissed`](./activitystate/dismissed.md).
 
-#### Keep Track of Updates
+#### Keep track of updates
 
-When you start a Live Activity, ActivityKit returns an [`Activity`](activity.md) object. In addition to the [`id`](activity/id.md) that uniquely identifies each activity, the [`Activity`](activity.md) offers sequences to observe content, activity state, and push token updates. Use the corresponding sequence to receive updates in your app, keep your app and Live Activities in sync, and respond to changed data:
+When you start a Live Activity, ActivityKit returns an [`Activity`](./activity.md) object. In addition to the [`id`](./activity/id.md) that uniquely identifies each activity, the [`Activity`](./activity.md) offers sequences to observe content, activity state, and push token updates. Use the corresponding sequence to receive updates in your app, keep your app and Live Activities in sync, and respond to changed data:
 
-- To observe changes to ongoing Live Activities and to asynchronously access a Live Activity when you start it, use [`activityUpdates`](activity/activityupdates-swift.type.property.md).
-- To observe the state of an ongoing Live Activity — for example, to determine whether it’s active or has ended — use [`activityStateUpdates`](activity/activitystateupdates-swift.property.md).
-- To observe changes to the dynamic content of a Live Activity, use [`contentUpdates`](activity/contentupdates-swift.property.md).
-- To observe changes to the push token of a Live Activity, use [`pushTokenUpdates`](activity/pushtokenupdates-swift.property.md).
+- To observe changes to ongoing Live Activities and to asynchronously access a Live Activity when you start it, use [`activityUpdates`](./activity/activityupdates-swift.type.property.md).
+- To observe the state of an ongoing Live Activity — for example, to determine whether it’s active or has ended — use [`activityStateUpdates`](./activity/activitystateupdates-swift.property.md).
+- To observe changes to the dynamic content of a Live Activity, use [`contentUpdates`](./activity/contentupdates-swift.property.md).
+- To observe changes to the push token of a Live Activity, use [`pushTokenUpdates`](./activity/pushtokenupdates-swift.property.md).
 
-The following example shows how the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](https://developer.apple.com/documentation/widgetkit/emoji-rangers-supporting-live-activities-interactivity-and-animations) app tracks content updates for ongoing Live Activities and updates its adventure view accordingly:
+The following example shows how the [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md) app tracks content updates for ongoing Live Activities and updates its adventure view accordingly:
 
 ```swift
 // Observe updates for ongoing Live Activities.
@@ -516,31 +517,32 @@ Task {
 }
 ```
 
-#### Observe Active Live Activities
+#### Observe active Live Activities
 
-Your app can start more than one Live Activity. For example, a sports app may allow a person to start a Live Activity for each live sports game they’re interested in. If your app starts multiple Live Activities, keep track of ongoing Live Activities for your app using the [`activities`](activity/activities.md) property to make sure your app is aware of all ongoing Live Activities that ActivityKit tracks. Another use case for fetching all activities is to maintain Live Activities that are in progress and make sure you don’t keep any activities running for longer than needed. For example, the system may stop your app, or your app may crash while a Live Activity is active. When the app launches the next time, check if any activities are still active, update your app’s stored Live Activity data, and end any Live Activity that’s no longer relevant.
+Your app can start more than one Live Activity. For example, a sports app may allow a person to start a Live Activity for each live sports game they’re interested in. If your app starts multiple Live Activities, keep track of ongoing Live Activities for your app using the [`activities`](./activity/activities.md) property to make sure your app is aware of all ongoing Live Activities that ActivityKit tracks. Another use case for fetching all activities is to maintain Live Activities that are in progress and make sure you don’t keep any activities running for longer than needed. For example, the system may stop your app, or your app may crash while a Live Activity is active. When the app launches the next time, check if any activities are still active, update your app’s stored Live Activity data, and end any Live Activity that’s no longer relevant.
 
-#### Start and Stop Live Activities From App Intents
+#### Start and stop Live Activities from App Intents
 
-The [`App Intents`](https://developer.apple.com/documentation/appintents) framework enables you to extend your app’s custom functionality to support system-level services like Siri and the Shortcuts app, as well as the functionality to start a Live Activity. For example, a sports app could expose functionality to start a Live Activity for a person’s favorite sports team with the Shortcuts app or Siri.
+The [App Intents](../AppIntents/AppIntents.md) framework enables you to extend your app’s custom functionality to support system-level services like Siri and the Shortcuts app, as well as the functionality to start a Live Activity. For example, a sports app could expose functionality to start a Live Activity for a person’s favorite sports team with the Shortcuts app or Siri.
 
-Starting a Live Activity from an app intent is almost the same as adopting [`App Intents`](https://developer.apple.com/documentation/appintents) to expose other functionality in your app:
+Starting a Live Activity from an app intent is almost the same as adopting [App Intents](../AppIntents/AppIntents.md) to expose other functionality in your app:
 
-1. Adopt the App Intents framework as described in [`Getting started with the App Intents framework`](https://developer.apple.com/documentation/appintents/getting-started-with-the-app-intents-framework).
-2. When you implement your app intent that starts the Live Activity, make sure it inherits from [`LiveActivityIntent`](https://developer.apple.com/documentation/appintents/liveactivityintent).
+1. Adopt the App Intents framework as described in [Getting started with the App Intents framework](../AppIntents/getting-started-with-the-app-intents-framework.md).
+2. When you implement your app intent that starts the Live Activity, make sure it inherits from [`LiveActivityIntent`](../AppIntents/liveactivityintent.md).
 3. In your `LiveActivityIntent` implementation, add code to the `perform()` implementation that starts the Live Activity.
 
 ## See Also
 
-- [Starting and updating Live Activities with ActivityKit push notifications](starting-and-updating-live-activities-with-activitykit-push-notifications.md)
+### Starting a Live Activity
+- [Starting and updating Live Activities with ActivityKit push notifications](./starting-and-updating-live-activities-with-activitykit-push-notifications.md)
   Use ActivityKit to receive push tokens and to remotely start, update, and end your Live Activity with ActivityKit notifications.
-- [class Activity](activity.md)
+- [class Activity](./activity.md)
   The object you use to start, update, and end a Live Activity.
-- [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../widgetkit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
+- [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
   Offer Live Activities, controls, animate data updates, and add interactivity to widgets.
-- [NSSupportsLiveActivities](../bundleresources/information-property-list/nssupportsliveactivities.md)
+- [NSSupportsLiveActivities](../BundleResources/information-property-list/nssupportsliveactivities.md)
   A Boolean value that indicates whether an app supports Live Activities.
-- [NSSupportsLiveActivitiesFrequentUpdates](../bundleresources/information-property-list/nssupportsliveactivitiesfrequentupdates.md)
+- [NSSupportsLiveActivitiesFrequentUpdates](../BundleResources/information-property-list/nssupportsliveactivitiesfrequentupdates.md)
   A Boolean value that indicates whether an app can update its Live Activities frequently.
 
 

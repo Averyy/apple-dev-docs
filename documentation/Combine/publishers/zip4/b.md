@@ -1,7 +1,8 @@
 # b
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A second publisher to zip.
 
@@ -22,11 +23,12 @@ let b: B
 
 ## See Also
 
-- [let a: A](publishers/zip4/a.md)
+### Inspecting publisher properties
+- [let a: A](./a.md)
   A publisher to zip.
-- [let c: C](publishers/zip4/c.md)
+- [let c: C](./c.md)
   A third publisher to zip.
-- [let d: D](publishers/zip4/d.md)
+- [let d: D](./d.md)
   A fourth publisher to zip.
 
 

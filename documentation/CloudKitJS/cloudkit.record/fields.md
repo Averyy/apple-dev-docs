@@ -1,7 +1,8 @@
 # fields
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Names of the fields or field-value pairs.
 
@@ -10,13 +11,13 @@ Names of the fields or field-value pairs.
 
 ## Declaration
 
-```swift
+```
 attribute Object<string, CloudKit.RecordField> fields;
 ```
 
 #### Discussion
 
-For details see [`CloudKit JS Data Types`](cloudkit-js-data-types.md).
+For details see [CloudKit JS Data Types](../cloudkit-js-data-types.md).
 
 
 ---

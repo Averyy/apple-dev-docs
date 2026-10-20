@@ -1,13 +1,14 @@
 # PassTypeId.Attributes
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a PassTypeId resource.
 
 ## Declaration
 
-```swift
+```
 object PassTypeId.Attributes
 ```
 
@@ -18,7 +19,8 @@ object PassTypeId.Attributes
 
 ## See Also
 
-- [object PassTypeId.Relationships](passtypeid/relationships-data.dictionary.md)
+### Objects
+- [object PassTypeId.Relationships](./relationships-data.dictionary.md)
   The data structure that represents the relationships of a pass type ID.
 
 

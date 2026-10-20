@@ -1,10 +1,11 @@
 # init(date:relativeToDate:style:units:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
 
 ## Declaration
 

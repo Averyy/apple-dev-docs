@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOMemoryClearEncrypted](1643336-anonymous/kiomemoryclearencrypted.md)
-- [kIOMemoryIncoherentIOFlush](1643336-anonymous/kiomemoryincoherentioflush.md)
-- [kIOMemoryIncoherentIOStore](1643336-anonymous/kiomemoryincoherentiostore.md)
-- [kIOMemorySetEncrypted](1643336-anonymous/kiomemorysetencrypted.md)
+- [kIOMemoryClearEncrypted](./api-1643336-anonymous/kiomemoryclearencrypted.md)
+- [kIOMemoryIncoherentIOFlush](./api-1643336-anonymous/kiomemoryincoherentioflush.md)
+- [kIOMemoryIncoherentIOStore](./api-1643336-anonymous/kiomemoryincoherentiostore.md)
+- [kIOMemorySetEncrypted](./api-1643336-anonymous/kiomemorysetencrypted.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # zoomFactor
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates the zoom factor changed.
 
@@ -16,6 +17,10 @@ Indicates the zoom factor changed.
 
 ```swift
 static var zoomFactor: WKWebExtension.TabChangedProperties { get }
+```
+
+```c
+WKWebExtensionTabChangedPropertiesZoomFactor
 ```
 
 

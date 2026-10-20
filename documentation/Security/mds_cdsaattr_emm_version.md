@@ -1,7 +1,8 @@
 # MDS_CDSAATTR_EMM_VERSION
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var MDS_CDSAATTR_EMM_VERSION: Int32 { get }
+```
+
+```c
+#define MDS_CDSAATTR_EMM_VERSION
 ```
 
 

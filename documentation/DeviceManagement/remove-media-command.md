@@ -1,7 +1,8 @@
 # Remove Media
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Remove a previously installed book from a device.
 
@@ -14,7 +15,7 @@ Remove a previously installed book from a device.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -24,7 +25,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | iOS |
 | Required access right | AllowAppInstallation |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -63,9 +64,9 @@ Refer to the following sections to determine supported channels and requirements
 ## Topics
 
 ### Commands and responses
-- [object RemoveMediaCommand](removemediacommand.md)
+- [object RemoveMediaCommand](./removemediacommand.md)
   The command to remove a previously installed book from a device.
-- [object RemoveMediaResponse](removemediaresponse.md)
+- [object RemoveMediaResponse](./removemediaresponse.md)
   A response from the device after it processes the command to remove a previously installed book from a device.
 
 ## Endpoint
@@ -74,13 +75,21 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `RemoveMediaCommand`
+
 The request object the server returns for the Remove Media Command.
+
+## Responses
+
+- `200` OK (`RemoveMediaResponse`, `application/xml`): The response object the system returns for the Remove Media Command.
 
 ## See Also
 
-- [Install Media](install-media-command.md)
+### Managed media
+- [Install Media](./install-media-command.md)
   Install a book on a device.
-- [Managed Media List](managed-media-list-command.md)
+- [Managed Media List](./managed-media-list-command.md)
   Get a list of the managed books on a device.
 
 

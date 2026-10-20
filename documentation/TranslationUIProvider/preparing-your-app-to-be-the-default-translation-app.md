@@ -1,6 +1,7 @@
 # Preparing your app to be the default translation app
 
-**Framework**: TranslationUIProvider
+**Framework**: TranslationUIProvider  
+**Role**: Article
 
 Configure your app so people can set it as the default translation app on their device.
 
@@ -10,11 +11,11 @@ In iOS and iPadOS 18.4 and later, a person can select an app other than Translat
 
 If your app provides translation service and you want it to optionally become the default translation app, you need to add an entitlement, access key, app extension, and a UI.
 
-##### Add the Default Translation App Entitlement to Your Project
+##### Add the Default Translation App entitlement to your project
 
-Add the `com.apple.developer.translation-app` entitlement to the `.entitlements` file in your app’s Xcode project. For instructions on how to add this entitlement, see [`Translation`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.translation-app).
+Add the `com.apple.developer.translation-app` entitlement to the `.entitlements` file in your app’s Xcode project. For instructions on how to add this entitlement, see [`Translation`](../BundleResources/entitlements/com.apple.developer.translation-app.md).
 
-##### Add the Translation Provider Network Access Key to Your Apps Infoplist
+##### Add the translation provider network access key to your app’s Info.plist
 
 If your app needs to access the network in order to provide its translation services, you need to add the `com.apple.developer.translation-ui-provider.network-access` key to your app’s `Info.plist`.
 
@@ -25,11 +26,11 @@ To do this, perform these steps:
 3. Set the key type to Boolean.
 4. Set the key’s value to `true`.
 
-##### Add a Translationuiproviderextension in Your App
+##### Add a TranslationUIProviderExtension in your app
 
 In the Xcode navigator, in your app’s target list, click the plus (+) and  search for Translation. Click next and follow the prompts to add the app extension for Translation to your project.
 
-##### Provide a Translation Ui to Your App
+##### Provide a translation UI to your app
 
 The following example shows a typical workflow an app might adopt to present the translation UI to a person using their app:
 

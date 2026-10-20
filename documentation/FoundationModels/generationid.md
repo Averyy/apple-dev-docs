@@ -1,7 +1,8 @@
 # GenerationID
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A unique identifier that is stable for the duration of a response, but not across responses.
 
@@ -21,7 +22,7 @@ struct GenerationID
 
 #### Overview
 
-The framework guarantees a `GenerationID` to be both present and stable when you receive it from a [`LanguageModelSession`](languagemodelsession.md). When you create an instance of `GenerationID` there is no guarantee an identifier is present or stable.
+The framework guarantees a `GenerationID` to be both present and stable when you receive it from a [`LanguageModelSession`](./languagemodelsession.md). When you create an instance of `GenerationID` there is no guarantee an identifier is present or stable.
 
 ```swift
 @Generable struct Person: Equatable {
@@ -65,20 +66,21 @@ struct PeopleView: View {
 ## Topics
 
 ### Creating an identifier
-- [init()](generationid/init.md)
+- [init()](./generationid/init%28%29.md)
   Creates a unique identifier.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var id: GenerationID?](generatedcontent/id.md)
+### Identifying a generation
+- [var id: GenerationID?](./generatedcontent/id.md)
   A unique id that is stable for the duration of a generated response.
 
 

@@ -1,7 +1,8 @@
 # cameraRelativePosition(for:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a position relative to the camera for the body joint you specify.
 

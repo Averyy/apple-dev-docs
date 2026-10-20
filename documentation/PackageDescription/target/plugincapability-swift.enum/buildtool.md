@@ -1,7 +1,8 @@
 # Target.PluginCapability.buildTool
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that the plug-in provides a build tool capability.
 

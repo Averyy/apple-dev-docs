@@ -1,7 +1,8 @@
 # retryInterval
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time between retries, in seconds.
 
@@ -16,13 +17,18 @@ The time between retries, in seconds.
 var retryInterval: TimeInterval { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSTimeInterval retryInterval;
+```
+
 #### Discussion
 
 By default, the value of this parameter is `0`.
 
 ## See Also
 
-- [var maximumRetries: Int](nfctagcommandconfiguration/maximumretries.md)
+### Configuring a Tag Command
+- [var maximumRetries: Int](./maximumretries.md)
   The maximum number of retries.
 
 

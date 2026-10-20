@@ -1,7 +1,8 @@
 # atomic
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A capability that allows atomic changes of multiple records.
 
@@ -10,7 +11,7 @@ A capability that allows atomic changes of multiple records.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,17 +21,22 @@ A capability that allows atomic changes of multiple records.
 static var atomic: CKRecordZone.Capabilities { get }
 ```
 
+```c
+CKRecordZoneCapabilityAtomic
+```
+
 #### Discussion
 
-When you use a [`CKModifyRecordsOperation`](ckmodifyrecordsoperation.md) object to save records, if the server is unable to save the changes for one record, it doesn’t save the changes for any of the records. Combining this capability with the [`CKModifyRecordsOperation.RecordSavePolicy.ifServerRecordUnchanged`](ckmodifyrecordsoperation/recordsavepolicy/ifserverrecordunchanged.md) policy of the operation object prevents your app from overwriting changes to a group of records if one or more of the records on the server has recent changes.
+When you use a [`CKModifyRecordsOperation`](../../ckmodifyrecordsoperation.md) object to save records, if the server is unable to save the changes for one record, it doesn’t save the changes for any of the records. Combining this capability with the [`CKModifyRecordsOperation.RecordSavePolicy.ifServerRecordUnchanged`](../../ckmodifyrecordsoperation/recordsavepolicy/ifserverrecordunchanged.md) policy of the operation object prevents your app from overwriting changes to a group of records if one or more of the records on the server has recent changes.
 
 ## See Also
 
-- [static var fetchChanges: CKRecordZone.Capabilities](ckrecordzone/capabilities-swift.struct/fetchchanges.md)
+### Zone Capabilities
+- [static var fetchChanges: CKRecordZone.Capabilities](./fetchchanges.md)
   A capability for fetching only the changed records from a zone.
-- [static var sharing: CKRecordZone.Capabilities](ckrecordzone/capabilities-swift.struct/sharing.md)
+- [static var sharing: CKRecordZone.Capabilities](./sharing.md)
   A capability for sharing a specific hierarchy of records.
-- [static var zoneWideSharing: CKRecordZone.Capabilities](ckrecordzone/capabilities-swift.struct/zonewidesharing.md)
+- [static var zoneWideSharing: CKRecordZone.Capabilities](./zonewidesharing.md)
   A capability for sharing the entire contents of a record zone.
 
 

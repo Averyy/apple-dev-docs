@@ -1,7 +1,8 @@
 # init(barButtonItems:representativeItem:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a fixed group with the specified items.
 
@@ -18,15 +19,19 @@ Creates a fixed group with the specified items.
 init(barButtonItems: [UIBarButtonItem], representativeItem: UIBarButtonItem?)
 ```
 
+```objc
+- (instancetype) initWithBarButtonItems:(NSArray<UIBarButtonItem *> *) barButtonItems representativeItem:(UIBarButtonItem *) representativeItem;
+```
+
 #### Return Value
 
 An initialized bar button item group.
 
 #### Discussion
 
-When you use this initializer to create a group for a navigation bar, it produces the same result as [`fixedGroup(representativeItem:items:)`](uibarbuttonitemgroup/fixedgroup(representativeitem:items:).md) (Swift) or [`fixedGroupWithRepresentativeItem:items:`](uibarbuttonitemgroup/fixedgroupwithrepresentativeitem:items:.md) (Objective-C).
+When you use this initializer to create a group for a navigation bar, it produces the same result as [`fixedGroup(representativeItem:items:)`](./fixedgroup%28representativeitem,items%29.md) (Swift) or [`fixedGroupWithRepresentativeItem:items:`](./fixedgroupwithrepresentativeitem_items_.md) (Objective-C).
 
-When you use this initializer to create a group for the shortcuts bar, use the resulting group object to configure the [`leadingBarButtonGroups`](uitextinputassistantitem/leadingbarbuttongroups.md) or [`trailingBarButtonGroups`](uitextinputassistantitem/trailingbarbuttongroups.md) property of a [`UITextInputAssistantItem`](uitextinputassistantitem.md) object.
+When you use this initializer to create a group for the shortcuts bar, use the resulting group object to configure the [`leadingBarButtonGroups`](../uitextinputassistantitem/leadingbarbuttongroups.md) or [`trailingBarButtonGroups`](../uitextinputassistantitem/trailingbarbuttongroups.md) property of a [`UITextInputAssistantItem`](../uitextinputassistantitem.md) object.
 
 ## Parameters
 
@@ -35,13 +40,14 @@ When you use this initializer to create a group for the shortcuts bar, use the r
 
 ## See Also
 
-- [class func fixedGroup(representativeItem: UIBarButtonItem?, items: [UIBarButtonItem]) -> UIBarButtonItemGroup](uibarbuttonitemgroup/fixedgroup(representativeitem:items:).md)
+### Creating a group
+- [class func fixedGroup(representativeItem: UIBarButtonItem?, items: [UIBarButtonItem]) -> UIBarButtonItemGroup](./fixedgroup%28representativeitem,items%29.md)
   Creates a fixed group that a person can’t move or remove from the navigation bar during layout customization.
-- [class func movableGroup(customizationIdentifier: String, representativeItem: UIBarButtonItem?, items: [UIBarButtonItem]) -> UIBarButtonItemGroup](uibarbuttonitemgroup/movablegroup(customizationidentifier:representativeitem:items:).md)
+- [class func movableGroup(customizationIdentifier: String, representativeItem: UIBarButtonItem?, items: [UIBarButtonItem]) -> UIBarButtonItemGroup](./movablegroup%28customizationidentifier,representativeitem,items%29.md)
   Creates a movable group that a person can move but can’t remove from the navigation bar during layout customization.
-- [class func optionalGroup(customizationIdentifier: String, isInDefaultCustomization: Bool, representativeItem: UIBarButtonItem?, items: [UIBarButtonItem]) -> UIBarButtonItemGroup](uibarbuttonitemgroup/optionalgroup(customizationidentifier:isindefaultcustomization:representativeitem:items:).md)
+- [class func optionalGroup(customizationIdentifier: String, isInDefaultCustomization: Bool, representativeItem: UIBarButtonItem?, items: [UIBarButtonItem]) -> UIBarButtonItemGroup](./optionalgroup%28customizationidentifier,isindefaultcustomization,representativeitem,items%29.md)
   Creates an optional group that a person can move, add to, or remove from the navigation bar during layout customization.
-- [init?(coder: NSCoder)](uibarbuttonitemgroup/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a bar button item group from data in an unarchiver.
 
 

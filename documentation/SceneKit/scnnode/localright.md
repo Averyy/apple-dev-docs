@@ -1,23 +1,28 @@
 # localRight
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The direction SceneKit treats as “right” in local space for all nodes.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 class var localRight: SCNVector3 { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) SCNVector3 localRight;
 ```
 
 #### Discussion
@@ -28,17 +33,19 @@ This vector is always `(1, 0, 0)` for all nodes, but you can use this class prop
 
 ## See Also
 
-- [class var simdLocalRight: simd_float3](scnnode/simdlocalright.md)
+### Related Documentation
+- [class var simdLocalRight: simd_float3](./simdlocalright.md)
   The direction SceneKit treats as “right” in local space for all nodes.
-- [class var localUp: SCNVector3](scnnode/localup.md)
+### Calculating Node-Relative Transforms (SceneKit Types)
+- [class var localUp: SCNVector3](./localup.md)
   The direction SceneKit treats as “up” in local space for all nodes.
-- [class var localFront: SCNVector3](scnnode/localfront.md)
+- [class var localFront: SCNVector3](./localfront.md)
   The unit vector SceneKit treats as “forward” in local space for all nodes.
-- [var worldRight: SCNVector3](scnnode/worldright.md)
+- [var worldRight: SCNVector3](./worldright.md)
   The “right” (+X) direction vector relative to the node, expressed in world space.
-- [var worldUp: SCNVector3](scnnode/worldup.md)
+- [var worldUp: SCNVector3](./worldup.md)
   The “up” (+Y) direction vector relative to the node, expressed in world space.
-- [var worldFront: SCNVector3](scnnode/worldfront.md)
+- [var worldFront: SCNVector3](./worldfront.md)
   The “forward” (-Z) direction vector relative to the node, expressed in world space.
 
 

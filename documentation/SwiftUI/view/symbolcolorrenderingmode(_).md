@@ -1,7 +1,8 @@
 # symbolColorRenderingMode(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the color rendering mode for symbol images.
 
@@ -31,11 +32,12 @@ A view that specifies the color rendering mode for symbol images.
 
 ## See Also
 
-- [func symbolRenderingMode(SymbolRenderingMode?) -> some View](view/symbolrenderingmode(_:).md)
+### Symbol appearance
+- [func symbolRenderingMode(SymbolRenderingMode?) -> some View](./symbolrenderingmode%28_%29.md)
   Sets the rendering mode for symbol images within this view.
-- [func symbolVariableValueMode(SymbolVariableValueMode?) -> some View](view/symbolvariablevaluemode(_:).md)
+- [func symbolVariableValueMode(SymbolVariableValueMode?) -> some View](./symbolvariablevaluemode%28_%29.md)
   Sets the variable value mode mode for symbol images within this view.
-- [func symbolVariant(SymbolVariants) -> some View](view/symbolvariant(_:).md)
+- [func symbolVariant(SymbolVariants) -> some View](./symbolvariant%28_%29.md)
   Makes symbols within the view show a particular variant.
 
 

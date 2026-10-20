@@ -2,6 +2,7 @@
 
 **Framework**: Accessory Notifications  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Establishes a notification session for communication with the system.
@@ -25,7 +26,8 @@ Store the session reference to use across multiple notification life cycle event
 
 ## See Also
 
-- [func didInvalidate()](notificationsforwarding/accessorynotificationshandler/didinvalidate.md)
+### Managing the session life cycle
+- [func didInvalidate()](./didinvalidate%28%29.md)
   Handles notification session termination.
 
 

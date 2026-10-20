@@ -1,7 +1,8 @@
 # Mach.Port
 
 **Framework**: System  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.4+
@@ -21,39 +22,39 @@ struct Port<RightType> where RightType : MachPortRight
 ## Topics
 
 ### Initializers
-- [init()](mach/port/init.md)
+- [init()](./port/init%28%29.md)
   Allocate a new Mach port with a receive right, creating a Mach.Port<Mach.ReceiveRight> to manage it.
-- [init(name: mach_port_name_t)](mach/port/init(name:).md)
+- [init(name: mach_port_name_t)](./port/init%28name%29.md)
   Transfer ownership of an existing unmanaged Mach port right into a `Mach.Port` by name.
-- [init(name: mach_port_name_t, context: mach_port_context_t)](mach/port/init(name:context:)-14mp9.md)
+- [init(name: mach_port_name_t, context: mach_port_context_t)](./port/init%28name,context%29-14mp9.md)
   Transfer ownership of an existing, unmanaged, but already guarded, Mach port right into a Mach.Port by name.
-- [init(name: mach_port_name_t, context: mach_port_context_t)](mach/port/init(name:context:)-oyjl.md)
+- [init(name: mach_port_name_t, context: mach_port_context_t)](./port/init%28name,context%29-oyjl.md)
   Transfer ownership of an existing, unmanaged, but already guarded, Mach port right into a Mach.Port by name.
 ### Instance Properties
-- [var makeSendCount: mach_port_mscount_t](mach/port/makesendcount.md)
+- [var makeSendCount: mach_port_mscount_t](./port/makesendcount.md)
   Access the make-send count.
 ### Instance Methods
-- [func copySendRight() throws -> Mach.Port<Mach.SendRight>](mach/port/copysendright.md)
+- [func copySendRight() throws -> Mach.Port<Mach.SendRight>](./port/copysendright%28%29.md)
   Create another send right from a given send right.
-- [func makeSendOnceRight() -> Mach.Port<Mach.SendOnceRight>](mach/port/makesendonceright.md)
+- [func makeSendOnceRight() -> Mach.Port<Mach.SendOnceRight>](./port/makesendonceright%28%29.md)
   Create a send-once right for a given receive right.
-- [func makeSendRight() -> Mach.Port<Mach.SendRight>](mach/port/makesendright.md)
+- [func makeSendRight() -> Mach.Port<Mach.SendRight>](./port/makesendright%28%29.md)
   Create a send right for a given receive right.
-- [func relinquish() -> mach_port_name_t](mach/port/relinquish-241tg.md)
+- [func relinquish() -> mach_port_name_t](./port/relinquish%28%29-241tg.md)
   Transfer ownership of the underlying port right to the caller.
-- [func relinquish() -> (name: mach_port_name_t, context: mach_port_context_t)](mach/port/relinquish-70vbe.md)
+- [func relinquish() -> (name: mach_port_name_t, context: mach_port_context_t)](./port/relinquish%28%29-70vbe.md)
   Transfer ownership of the underlying port right to the caller.
-- [func relinquish() -> mach_port_name_t](mach/port/relinquish-74amu.md)
+- [func relinquish() -> mach_port_name_t](./port/relinquish%28%29-74amu.md)
   Transfer ownership of the underlying port right to the caller.
-- [func relinquish() -> (name: mach_port_name_t, context: mach_port_context_t)](mach/port/relinquish-9lm56.md)
+- [func relinquish() -> (name: mach_port_name_t, context: mach_port_context_t)](./port/relinquish%28%29-9lm56.md)
   Transfer ownership of the underlying port right to the caller.
-- [func unguardAndRelinquish() -> mach_port_name_t](mach/port/unguardandrelinquish.md)
+- [func unguardAndRelinquish() -> mach_port_name_t](./port/unguardandrelinquish%28%29.md)
   Remove guard and transfer ownership of the underlying port right to the caller.
-- [func withBorrowedName<ReturnType>(body: (mach_port_name_t, mach_port_context_t) -> ReturnType) -> ReturnType](mach/port/withborrowedname(body:)-4d4iq.md)
+- [func withBorrowedName<ReturnType>(body: (mach_port_name_t, mach_port_context_t) -> ReturnType) -> ReturnType](./port/withborrowedname%28body%29-4d4iq.md)
   Borrow access to the port name in a block that can perform non-consuming operations.
-- [func withBorrowedName<ReturnType>(body: (mach_port_name_t, mach_port_context_t) -> ReturnType) -> ReturnType](mach/port/withborrowedname(body:)-8402i.md)
+- [func withBorrowedName<ReturnType>(body: (mach_port_name_t, mach_port_context_t) -> ReturnType) -> ReturnType](./port/withborrowedname%28body%29-8402i.md)
   Borrow access to the port name in a block that can perform non-consuming operations.
-- [func withBorrowedName<ReturnType>(body: (mach_port_name_t) -> ReturnType) -> ReturnType](mach/port/withborrowedname(body:)-9v68k.md)
+- [func withBorrowedName<ReturnType>(body: (mach_port_name_t) -> ReturnType) -> ReturnType](./port/withborrowedname%28body%29-9v68k.md)
   Borrow access to the port name in a block that can perform non-consuming operations.
 
 

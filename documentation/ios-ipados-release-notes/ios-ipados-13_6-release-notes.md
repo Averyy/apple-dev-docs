@@ -1,14 +1,15 @@
 # iOS & iPadOS 13.6 Release Notes
 
-**Framework**: iOS & iPadOS Release Notes
+**Framework**: iOS & iPadOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 13.6 SDK provides support to develop apps for iPhone, iPad, and iPod touch devices running iOS & iPadOS 13.6. The SDK comes bundled with Xcode 11.6. For information on the compatibility requirements for Xcode 11.6, see [`Xcode 11.6 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-11_6-release-notes).
+The iOS & iPadOS 13.6 SDK provides support to develop apps for iPhone, iPad, and iPod touch devices running iOS & iPadOS 13.6. The SDK comes bundled with Xcode 11.6. For information on the compatibility requirements for Xcode 11.6, see [Xcode 11.6 Release Notes](../Xcode-Release-Notes/xcode-11_6-release-notes.md).
 
-##### Healthkit
+##### HealthKit
 
 ###### New Features
 
@@ -22,21 +23,22 @@ The iOS & iPadOS 13.6 SDK provides support to develop apps for iPhone, iPad, and
 
 ## See Also
 
-- [iOS & iPadOS 13.7 Release Notes](ios-ipados-13_7-release-notes.md)
+### iOS & iPadOS 13
+- [iOS & iPadOS 13.7 Release Notes](./ios-ipados-13_7-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 13.5 Release Notes](ios-ipados-13_5-release-notes.md)
+- [iOS & iPadOS 13.5 Release Notes](./ios-ipados-13_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 13.4 Release Notes](ios-ipados-13_4-release-notes.md)
+- [iOS & iPadOS 13.4 Release Notes](./ios-ipados-13_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 13.3.1 Release Notes](ios-ipados-13_3_1-release-notes.md)
+- [iOS & iPadOS 13.3.1 Release Notes](./ios-ipados-13_3_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 13.3 Release Notes](ios-ipados-13_3-release-notes.md)
+- [iOS & iPadOS 13.3 Release Notes](./ios-ipados-13_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 13.2 Release Notes](ios-ipados-13_2-release-notes.md)
+- [iOS & iPadOS 13.2 Release Notes](./ios-ipados-13_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 13.1 Release Notes](ios-ipados-13_1-release-notes.md)
+- [iOS & iPadOS 13.1 Release Notes](./ios-ipados-13_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS 13 Release Notes](ios-13-release-notes.md)
+- [iOS 13 Release Notes](./ios-13-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

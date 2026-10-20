@@ -1,7 +1,8 @@
 # browser
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The app entity describes a data for web browsing functionality.
 
@@ -19,6 +20,8 @@ The app entity describes a data for web browsing functionality.
 ```swift
 static var browser: some AssistantSchemas.BrowserEntity { get }
 ```
+
+Available when `Self` is `AssistantSchemas.EntitySchema`.
 
 
 ---

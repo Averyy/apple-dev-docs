@@ -1,7 +1,8 @@
 # MPSNNRegularizationType
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 12.0+
@@ -17,50 +18,55 @@
 enum MPSNNRegularizationType
 ```
 
+```c
+enum MPSNNRegularizationType : NSUInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MPSNNRegularizationType.L1](mpsnnregularizationtype/l1.md)
-- [MPSNNRegularizationType.L2](mpsnnregularizationtype/l2.md)
-- [MPSNNRegularizationType.None](mpsnnregularizationtype/none.md)
+- [MPSNNRegularizationType.L1](./mpsnnregularizationtype/l1.md)
+- [MPSNNRegularizationType.L2](./mpsnnregularizationtype/l2.md)
+- [MPSNNRegularizationType.None](./mpsnnregularizationtype/none.md)
 ### Initializers
-- [init?(rawValue: UInt)](mpsnnregularizationtype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mpsnnregularizationtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum MPSAccelerationStructureStatus](mpsaccelerationstructurestatus.md)
+### Enumerations
+- [enum MPSAccelerationStructureStatus](./mpsaccelerationstructurestatus.md)
   Constants that indicate an acceleration structure build state.
-- [struct MPSAccelerationStructureUsage](mpsaccelerationstructureusage.md)
+- [struct MPSAccelerationStructureUsage](./mpsaccelerationstructureusage.md)
   Options that describe how an acceleration structure will be used.
-- [struct MPSAliasingStrategy](mpsaliasingstrategy.md)
-- [enum MPSBoundingBoxIntersectionTestType](mpsboundingboxintersectiontesttype.md)
+- [struct MPSAliasingStrategy](./mpsaliasingstrategy.md)
+- [enum MPSBoundingBoxIntersectionTestType](./mpsboundingboxintersectiontesttype.md)
   Options for the intersection test type for a ray intersector bounding box.
-- [struct MPSCNNBatchNormalizationFlags](mpscnnbatchnormalizationflags.md)
+- [struct MPSCNNBatchNormalizationFlags](./mpscnnbatchnormalizationflags.md)
   Options that define how statistics are calculated during batch normalization.
-- [struct MPSCNNConvolutionGradientOption](mpscnnconvolutiongradientoption.md)
+- [struct MPSCNNConvolutionGradientOption](./mpscnnconvolutiongradientoption.md)
   Options that control which gradient to compute during backward propagation.
-- [enum MPSCNNConvolutionWeightsLayout](mpscnnconvolutionweightslayout.md)
-- [enum MPSCNNLossType](mpscnnlosstype.md)
+- [enum MPSCNNConvolutionWeightsLayout](./mpscnnconvolutionweightslayout.md)
+- [enum MPSCNNLossType](./mpscnnlosstype.md)
   Constants that indicate supported loss filter types.
-- [enum MPSCNNReductionType](mpscnnreductiontype.md)
+- [enum MPSCNNReductionType](./mpscnnreductiontype.md)
   Constants that indicate supported reduction types.
-- [enum MPSCNNWeightsQuantizationType](mpscnnweightsquantizationtype.md)
+- [enum MPSCNNWeightsQuantizationType](./mpscnnweightsquantizationtype.md)
   Options that specify the type of quantization used to generate unsigned integer weights.
-- [struct MPSCustomKernelIndex](mpscustomkernelindex.md)
-- [struct MPSDeviceCapsValues](mpsdevicecapsvalues.md)
-- [struct MPSDeviceOptions](mpsdeviceoptions.md)
-- [enum MPSFloatDataTypeBit](mpsfloatdatatypebit.md)
-- [enum MPSFloatDataTypeShift](mpsfloatdatatypeshift.md)
+- [struct MPSCustomKernelIndex](./mpscustomkernelindex.md)
+- [struct MPSDeviceCapsValues](./mpsdevicecapsvalues.md)
+- [struct MPSDeviceOptions](./mpsdeviceoptions.md)
+- [enum MPSFloatDataTypeBit](./mpsfloatdatatypebit.md)
+- [enum MPSFloatDataTypeShift](./mpsfloatdatatypeshift.md)
 
 
 ---

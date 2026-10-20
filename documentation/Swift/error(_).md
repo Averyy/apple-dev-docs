@@ -1,7 +1,8 @@
 # error(_:)
 
 **Framework**: Swift  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Emits the given message as a fatal error and terminates the compilation process.
 
@@ -27,7 +28,8 @@ Emits the given message as a fatal error and terminates the compilation process.
 
 ## See Also
 
-- [macro warning(String)](warning(_:).md)
+### Generating Compile-Time Diagnostics
+- [macro warning(String)](./warning%28_%29.md)
   Produces the given warning message during compilation.
 
 

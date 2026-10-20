@@ -1,7 +1,8 @@
 # style
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The appearance setting that determines how the button presents its menu .
 
@@ -14,19 +15,24 @@ The appearance setting that determines how the button presents its menu .
 var style: NSComboButton.Style { get set }
 ```
 
+```objc
+@property NSComboButtonStyle style;
+```
+
 #### Discussion
 
-The default value of this property is [`NSComboButton.Style.split`](nscombobutton/style-swift.enum/split.md).
+The default value of this property is [`NSComboButton.Style.split`](./style-swift.enum/split.md).
 
 ## See Also
 
-- [NSComboButton.Style](nscombobutton/style-swift.enum.md)
+### Configuring the Button Appearance
+- [NSComboButton.Style](./style-swift.enum.md)
   Constants that indicate how a combo button presents its menu.
-- [var title: String](nscombobutton/title.md)
+- [var title: String](./title.md)
   The localized string that the button displays.
-- [var image: NSImage?](nscombobutton/image.md)
+- [var image: NSImage?](./image.md)
   The image that the button displays.
-- [var imageScaling: NSImageScaling](nscombobutton/imagescaling.md)
+- [var imageScaling: NSImageScaling](./imagescaling.md)
   The scaling behavior to apply to the button’s image.
 
 

@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the peripheral.
 
@@ -20,6 +21,10 @@ The name of the peripheral.
 var name: String? { get }
 ```
 
+```objc
+@property (retain, readonly, nullable) NSString * name;
+```
+
 #### Discussion
 
 Use this property to retrieve a human-readable name of the peripheral. A peripheral may have two different name types: one that the device advertises and another that the device publishes in its database as its Bluetooth low energy Generic Access Profile (GAP) device name. If a peripheral has both types of names, this property returns its GAP device name.
@@ -27,12 +32,13 @@ Use this property to retrieve a human-readable name of the peripheral. A periphe
 ## Topics
 
 ### Related Documentation
-- [func peripheralDidUpdateName(CBPeripheral)](cbperipheraldelegate/peripheraldidupdatename(_:).md)
+- [func peripheralDidUpdateName(CBPeripheral)](../cbperipheraldelegate/peripheraldidupdatename%28_%29.md)
   Tells the delegate that a peripheral’s name changed.
 
 ## See Also
 
-- [var delegate: (any CBPeripheralDelegate)?](cbperipheral/delegate.md)
+### Identifying a Peripheral
+- [var delegate: (any CBPeripheralDelegate)?](./delegate.md)
   The delegate object specified to receive peripheral events.
 
 

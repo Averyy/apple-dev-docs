@@ -1,58 +1,60 @@
 # Extra large circular templates
 
-**Framework**: ClockKit
+**Framework**: ClockKit  
+**Role**: API Collection
 
 Display large, easy-to-read content on the X-Large watch face.
 
 #### Overview
 
-These templates are larger versions of the [`Circular complication templates`](circular-complication-templates.md).
+These templates are larger versions of the [Circular complication templates](./circular-complication-templates.md).
 
-![Examples of the graphic extra-large complications. In order, they are the closed-gauge image, open-gauge image, circular image, open-gauge range, and closed-gauge text complications.](/images/com.apple.clockkit/media-3905617@2x.png)
+![Examples of the graphic extra-large complications. In order, they are the closed-gauge image, open-gauge image, circular image, open-gauge range, and closed-gauge text complications.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-3905617@2x.png)
 
-If your app supports both the [`CLKComplicationFamily.extraLarge`](clkcomplicationfamily/extralarge.md) and [`CLKComplicationFamily.graphicExtraLarge`](clkcomplicationfamily/graphicextralarge.md) families, ClockKit prefers the graphic extra large templates on Apple Watch series 4 or later.
+If your app supports both the [`CLKComplicationFamily.extraLarge`](./clkcomplicationfamily/extralarge.md) and [`CLKComplicationFamily.graphicExtraLarge`](./clkcomplicationfamily/graphicextralarge.md) families, ClockKit prefers the graphic extra large templates on Apple Watch series 4 or later.
 
 ## Topics
 
 ### Text and images
-- [class CLKComplicationTemplateGraphicExtraLargeCircularImage](clkcomplicationtemplategraphicextralargecircularimage.md)
+- [class CLKComplicationTemplateGraphicExtraLargeCircularImage](./clkcomplicationtemplategraphicextralargecircularimage.md)
   A template for displaying an extra-large, full-color circular image.
-- [class CLKComplicationTemplateGraphicExtraLargeCircularView](clkcomplicationtemplategraphicextralargecircularview.md)
+- [class CLKComplicationTemplateGraphicExtraLargeCircularView](./clkcomplicationtemplategraphicextralargecircularview.md)
   A template for displaying a circular SwiftUI view.
-- [class CLKComplicationTemplateGraphicExtraLargeCircularStackImage](clkcomplicationtemplategraphicextralargecircularstackimage.md)
+- [class CLKComplicationTemplateGraphicExtraLargeCircularStackImage](./clkcomplicationtemplategraphicextralargecircularstackimage.md)
   A template for displaying an extra-large, full-color circular image and text.
-- [class CLKComplicationTemplateGraphicExtraLargeCircularStackViewText](clkcomplicationtemplategraphicextralargecircularstackviewtext.md)
+- [class CLKComplicationTemplateGraphicExtraLargeCircularStackViewText](./clkcomplicationtemplategraphicextralargecircularstackviewtext.md)
   A template for displaying a SwiftUI view and text.
-- [class CLKComplicationTemplateGraphicExtraLargeCircularStackText](clkcomplicationtemplategraphicextralargecircularstacktext.md)
+- [class CLKComplicationTemplateGraphicExtraLargeCircularStackText](./clkcomplicationtemplategraphicextralargecircularstacktext.md)
   A template for displaying two rows of text in an extra-large, circular complication.
 ### Open and closed gauges
-- [class CLKComplicationTemplateGraphicExtraLargeCircularOpenGaugeImage](clkcomplicationtemplategraphicextralargecircularopengaugeimage.md)
+- [class CLKComplicationTemplateGraphicExtraLargeCircularOpenGaugeImage](./clkcomplicationtemplategraphicextralargecircularopengaugeimage.md)
   A template for displaying an extra-large, full-color circular image, an open gauge, and text.
-- [class CLKComplicationTemplateGraphicExtraLargeCircularOpenGaugeView](clkcomplicationtemplategraphicextralargecircularopengaugeview.md)
+- [class CLKComplicationTemplateGraphicExtraLargeCircularOpenGaugeView](./clkcomplicationtemplategraphicextralargecircularopengaugeview.md)
   A template for displaying a SwiftUI view, an open gauge, and text.
-- [class CLKComplicationTemplateGraphicExtraLargeCircularOpenGaugeSimpleText](clkcomplicationtemplategraphicextralargecircularopengaugesimpletext.md)
+- [class CLKComplicationTemplateGraphicExtraLargeCircularOpenGaugeSimpleText](./clkcomplicationtemplategraphicextralargecircularopengaugesimpletext.md)
   A template for displaying text inside an open gauge, with additional text at the bottom of the gauge.
-- [class CLKComplicationTemplateGraphicExtraLargeCircularOpenGaugeRangeText](clkcomplicationtemplategraphicextralargecircularopengaugerangetext.md)
+- [class CLKComplicationTemplateGraphicExtraLargeCircularOpenGaugeRangeText](./clkcomplicationtemplategraphicextralargecircularopengaugerangetext.md)
   A template for displaying text inside an open gauge, with additional leading and trailing text.
-- [class CLKComplicationTemplateGraphicExtraLargeCircularClosedGaugeImage](clkcomplicationtemplategraphicextralargecircularclosedgaugeimage.md)
+- [class CLKComplicationTemplateGraphicExtraLargeCircularClosedGaugeImage](./clkcomplicationtemplategraphicextralargecircularclosedgaugeimage.md)
   A template for displaying an extra-large, full-color circular image inside a closed circular gauge.
-- [class CLKComplicationTemplateGraphicExtraLargeCircularClosedGaugeView](clkcomplicationtemplategraphicextralargecircularclosedgaugeview.md)
+- [class CLKComplicationTemplateGraphicExtraLargeCircularClosedGaugeView](./clkcomplicationtemplategraphicextralargecircularclosedgaugeview.md)
   A template for displaying an extra-large SwiftUI view inside a closed circular gauge.
-- [class CLKComplicationTemplateGraphicExtraLargeCircularClosedGaugeText](clkcomplicationtemplategraphicextralargecircularclosedgaugetext.md)
+- [class CLKComplicationTemplateGraphicExtraLargeCircularClosedGaugeText](./clkcomplicationtemplategraphicextralargecircularclosedgaugetext.md)
   A template for displaying text inside an extra-large closed circular gauge.
 ### Abstract superclass
-- [class CLKComplicationTemplateGraphicExtraLargeCircular](clkcomplicationtemplategraphicextralargecircular.md)
+- [class CLKComplicationTemplateGraphicExtraLargeCircular](./clkcomplicationtemplategraphicextralargecircular.md)
   An abstract superclass for all the extra-large circular graphic templates.
 
 ## See Also
 
-- [Circular complication templates](circular-complication-templates.md)
+### Graphic template families
+- [Circular complication templates](./circular-complication-templates.md)
   Display graphical data in a compact circle.
-- [Corner complication templates](corner-complication-templates.md)
+- [Corner complication templates](./corner-complication-templates.md)
   Display graphically rich data in the watch face’s corner.
-- [Rectangular complication templates.](rectangular-complication-templates.md)
+- [Rectangular complication templates.](./rectangular-complication-templates.md)
   Displays large, rectangular complications for charts, images, or multiple lines of text.
-- [class CLKComplicationTemplateGraphicBezelCircularText](clkcomplicationtemplategraphicbezelcirculartext.md)
+- [class CLKComplicationTemplateGraphicBezelCircularText](./clkcomplicationtemplategraphicbezelcirculartext.md)
   A template for displaying a circular complication with text along the bezel.
 
 

@@ -1,7 +1,8 @@
 # world
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The map rectangle that represents the world in the two-dimensional map projection.
 
@@ -20,9 +21,14 @@ The map rectangle that represents the world in the two-dimensional map projectio
 static let world: MKMapRect
 ```
 
+```c
+extern const MKMapRect MKMapRectWorld;
+```
+
 ## See Also
 
-- [static let null: MKMapRect](mkmaprect/null.md)
+### Getting standard map rectangles
+- [static let null: MKMapRect](./null.md)
   The null map rectangle.
 
 

@@ -1,7 +1,8 @@
 # List
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A container that presents rows of data arranged in a single column, optionally providing the ability to select one or more members.
 
@@ -23,12 +24,12 @@ struct List<SelectionValue, Content> where SelectionValue : Hashable, Content : 
 
 ## Mentions
 
-- [Picking container views for your content](picking-container-views-for-your-content.md)
-- [Displaying data in lists](displaying-data-in-lists.md)
-- [Grouping data with lazy stack views](grouping-data-with-lazy-stack-views.md)
-- [Making a view into a drag source](making-a-view-into-a-drag-source.md)
-- [Migrating to new navigation types](migrating-to-new-navigation-types.md)
-- [Performing a search operation](performing-a-search-operation.md)
+- [Picking container views for your content](./picking-container-views-for-your-content.md)
+- [Displaying data in lists](./displaying-data-in-lists.md)
+- [Grouping data with lazy stack views](./grouping-data-with-lazy-stack-views.md)
+- [Making a view into a drag source](./making-a-view-into-a-drag-source.md)
+- [Migrating to new navigation types](./migrating-to-new-navigation-types.md)
+- [Performing a search operation](./performing-a-search-operation.md)
 
 #### Overview
 
@@ -44,9 +45,9 @@ var body: some View {
 }
 ```
 
-![A vertical list with three text views.](/images/com.apple.SwiftUI/List-1-iOS@2x.png)
+![A vertical list with three text views.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/List-1-iOS@2x.png)
 
-More commonly, you create lists dynamically from an underlying collection of data. The following example shows how to create a simple list from an array of an `Ocean` type which conforms to [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable):
+More commonly, you create lists dynamically from an underlying collection of data. The following example shows how to create a simple list from an array of an `Ocean` type which conforms to [`Identifiable`](../Swift/identifiable.md):
 
 ```swift
 struct Ocean: Identifiable {
@@ -69,11 +70,11 @@ var body: some View {
 }
 ```
 
-![A vertical list with five text views, each with the name of an](/images/com.apple.SwiftUI/List-2-iOS@2x.png)
+![A vertical list with five text views, each with the name of an](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/List-2-iOS@2x.png)
 
-##### Supporting Selection in Lists
+##### Supporting selection in lists
 
-To make members of a list selectable, provide a binding to a selection variable. Binding to a single instance of the list data’s `Identifiable.ID` type creates a single-selection list. Binding to a [`Set`](https://developer.apple.com/documentation/swift/set) with a type that matches the list data’s `Identifiable.ID` type creates a list that supports multiple selections. The following example shows how to add multiselect to the previous example:
+To make members of a list selectable, provide a binding to a selection variable. Binding to a single instance of the list data’s `Identifiable.ID` type creates a single-selection list. Binding to a [`Set`](../Swift/set.md) with a type that matches the list data’s `Identifiable.ID` type creates a list that supports multiple selections. The following example shows how to add multiselect to the previous example:
 
 ```swift
 struct Ocean: Identifiable, Hashable {
@@ -103,15 +104,15 @@ var body: some View {
 }
 ```
 
-When people make a single selection by tapping or clicking, the selected cell changes its appearance to indicate the selection. To enable multiple selections with tap gestures, put the list into edit mode by either modifying the [`editMode`](environmentvalues/editmode.md) value, or adding an [`EditButton`](editbutton.md) to your app’s interface. When you put the list into edit mode, the list shows a circle next to each list item. The circle contains a checkmark when the user selects the associated item. The example above uses an Edit button, which changes its title to Done while in edit mode:
+When people make a single selection by tapping or clicking, the selected cell changes its appearance to indicate the selection. To enable multiple selections with tap gestures, put the list into edit mode by either modifying the [`editMode`](./environmentvalues/editmode.md) value, or adding an [`EditButton`](./editbutton.md) to your app’s interface. When you put the list into edit mode, the list shows a circle next to each list item. The circle contains a checkmark when the user selects the associated item. The example above uses an Edit button, which changes its title to Done while in edit mode:
 
-![A navigation view with the title Oceans and a vertical list that contains](/images/com.apple.SwiftUI/List-3-iOS@2x.png)
+![A navigation view with the title Oceans and a vertical list that contains](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/List-3-iOS@2x.png)
 
 People can make multiple selections without needing to enter edit mode on devices that have a keyboard and mouse or trackpad, like Mac and iPad.
 
-##### Refreshing the List Content
+##### Refreshing the list content
 
-To make the content of the list refreshable using the standard refresh control, use the [`refreshable(action:)`](view/refreshable(action:).md) modifier.
+To make the content of the list refreshable using the standard refresh control, use the [`refreshable(action:)`](./view/refreshable%28action%29.md) modifier.
 
 The following example shows how to add a standard refresh control to a list. When the user drags the top of the list downward, SwiftUI reveals the refresh control and executes the specified action. Use an `await` expression inside the `action` closure to refresh your data. The refresh indicator remains visible for the duration of the awaited operation.
 
@@ -152,9 +153,9 @@ struct Ocean: Identifiable, Hashable {
  }
 ```
 
-##### Supporting Multidimensional Lists
+##### Supporting multidimensional lists
 
-To create two-dimensional lists, group items inside [`Section`](section.md) instances. The following example creates sections named after the world’s oceans, each of which has [`Text`](text.md) views named for major seas attached to those oceans. The example also allows for selection of a single list item, identified by the `id` of the example’s `Sea` type.
+To create two-dimensional lists, group items inside [`Section`](./section.md) instances. The following example creates sections named after the world’s oceans, each of which has [`Text`](./text.md) views named for major seas attached to those oceans. The example also allows for selection of a single list item, identified by the `id` of the example’s `Sea` type.
 
 ```swift
 struct ContentView: View {
@@ -208,11 +209,11 @@ struct ContentView: View {
 
 Because this example uses single selection, people can make selections outside of edit mode on all platforms.
 
-![A vertical list split into sections titled Major Pacific Ocean Seas,](/images/com.apple.SwiftUI/List-4-iOS@2x.png)
+![A vertical list split into sections titled Major Pacific Ocean Seas,](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/List-4-iOS@2x.png)
 
 > **Note**: In iOS 15, iPadOS 15, and tvOS 15 and earlier, lists support selection only in edit mode, even for single selections.
 
-##### Creating Hierarchical Lists
+##### Creating hierarchical lists
 
 You can also create a hierarchical list of arbitrary depth by providing tree-structured data and a `children` parameter that provides a key path to get the child nodes at any level. The following example uses a deeply-nested collection of a custom `FileItem` type to simulate the contents of a file system. The list created from this data uses collapsing cells to allow the user to navigate the tree structure.
 
@@ -255,62 +256,63 @@ struct ContentView: View {
 }
 ```
 
-![A list providing an expanded view of a tree structure. Some rows have a](/images/com.apple.SwiftUI/List-5-iOS@2x.png)
+![A list providing an expanded view of a tree structure. Some rows have a](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/List-5-iOS@2x.png)
 
-##### Styling Lists
+##### Styling lists
 
-SwiftUI chooses a display style for a list based on the platform and the view type in which it appears. Use the [`listStyle(_:)`](view/liststyle(_:).md) modifier to apply a different [`ListStyle`](liststyle.md) to all lists within a view. For example, adding `.listStyle(.plain)` to the example shown in the “Creating Multidimensional Lists” topic applies the [`plain`](liststyle/plain.md) style, the following screenshot shows:
+SwiftUI chooses a display style for a list based on the platform and the view type in which it appears. Use the [`listStyle(_:)`](./view/liststyle%28_%29.md) modifier to apply a different [`ListStyle`](./liststyle.md) to all lists within a view. For example, adding `.listStyle(.plain)` to the example shown in the “Creating Multidimensional Lists” topic applies the [`plain`](./liststyle/plain.md) style, the following screenshot shows:
 
-![A vertical list split into sections titled Major Pacific Ocean Seas,](/images/com.apple.SwiftUI/List-6-iOS@2x.png)
+![A vertical list split into sections titled Major Pacific Ocean Seas,](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/List-6-iOS@2x.png)
 
 ## Topics
 
 ### Creating a list from a set of views
-- [init(content: () -> Content)](list/init(content:).md)
+- [init(content: () -> Content)](./list/init%28content%29.md)
   Creates a list with the given content.
-- [init(selection:content:)](list/init(selection:content:).md)
+- [init(selection:content:)](./list/init%28selection,content%29.md)
   Creates a list with the given content that supports selecting a single row that cannot be deselected.
 ### Creating a list from enumerated data
-- [init(_:rowContent:)](list/init(_:rowcontent:).md)
+- [init(_:rowContent:)](./list/init%28_,rowcontent%29.md)
   Creates a list that computes its rows on demand from an underlying collection of identifiable data.
-- [init(_:selection:rowContent:)](list/init(_:selection:rowcontent:).md)
+- [init(_:selection:rowContent:)](./list/init%28_,selection,rowcontent%29.md)
   Creates a list that computes its rows on demand from an underlying collection of identifiable data, optionally allowing users to select a single row.
-- [init(_:id:rowContent:)](list/init(_:id:rowcontent:).md)
+- [init(_:id:rowContent:)](./list/init%28_,id,rowcontent%29.md)
   Creates a list that identifies its rows based on a key path to the identifier of the underlying data.
-- [init(_:id:selection:rowContent:)](list/init(_:id:selection:rowcontent:).md)
+- [init(_:id:selection:rowContent:)](./list/init%28_,id,selection,rowcontent%29.md)
   Creates a list that identifies its rows based on a key path to the identifier of the underlying data, optionally allowing users to select a single row.
 ### Creating a list from hierarchical data
-- [init(_:children:rowContent:)](list/init(_:children:rowcontent:).md)
+- [init(_:children:rowContent:)](./list/init%28_,children,rowcontent%29.md)
   Creates a hierarchical list that computes its rows on demand from a binding to an underlying collection of identifiable data.
-- [init(_:children:selection:rowContent:)](list/init(_:children:selection:rowcontent:).md)
+- [init(_:children:selection:rowContent:)](./list/init%28_,children,selection,rowcontent%29.md)
   Creates a hierarchical list that computes its rows on demand from a binding to an underlying collection of identifiable data and allowing users to have exactly one row always selected.
-- [init(_:id:children:rowContent:)](list/init(_:id:children:rowcontent:).md)
+- [init(_:id:children:rowContent:)](./list/init%28_,id,children,rowcontent%29.md)
   Creates a hierarchical list that identifies its rows based on a key path to the identifier of the underlying data.
-- [init(_:id:children:selection:rowContent:)](list/init(_:id:children:selection:rowcontent:).md)
+- [init(_:id:children:selection:rowContent:)](./list/init%28_,id,children,selection,rowcontent%29.md)
   Creates a hierarchical list that identifies its rows based on a key path to the identifier of the underlying data and allowing users to have exactly one row always selected.
 ### Creating a list from editable data
-- [init<Data, RowContent>(Binding<Data>, editActions: EditActions<Data>, rowContent: (Binding<Data.Element>) -> RowContent)](list/init(_:editactions:rowcontent:).md)
+- [init<Data, RowContent>(Binding<Data>, editActions: EditActions<Data>, rowContent: (Binding<Data.Element>) -> RowContent)](./list/init%28_,editactions,rowcontent%29.md)
   Creates a list that computes its rows on demand from an underlying collection of identifiable data and enables editing the collection.
-- [init(_:editActions:selection:rowContent:)](list/init(_:editactions:selection:rowcontent:).md)
+- [init(_:editActions:selection:rowContent:)](./list/init%28_,editactions,selection,rowcontent%29.md)
   Creates a list that computes its rows on demand from an underlying collection of identifiable data, enables editing the collection, and requires a selection of a single row.
-- [init<Data, ID, RowContent>(Binding<Data>, id: KeyPath<Data.Element, ID>, editActions: EditActions<Data>, rowContent: (Binding<Data.Element>) -> RowContent)](list/init(_:id:editactions:rowcontent:).md)
+- [init<Data, ID, RowContent>(Binding<Data>, id: KeyPath<Data.Element, ID>, editActions: EditActions<Data>, rowContent: (Binding<Data.Element>) -> RowContent)](./list/init%28_,id,editactions,rowcontent%29.md)
   Creates a list that computes its rows on demand from an underlying collection of identifiable data and enables editing the collection.
-- [init(_:id:editActions:selection:rowContent:)](list/init(_:id:editactions:selection:rowcontent:).md)
+- [init(_:id:editActions:selection:rowContent:)](./list/init%28_,id,editactions,selection,rowcontent%29.md)
   Creates a list that computes its rows on demand from an underlying collection of identifiable data, enables editing the collection, and requires a selection of a single row.
 ### Supporting types
-- [var body: some View](list/body.md)
+- [var body: some View](./list/body.md)
   The content of the list.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [Displaying data in lists](displaying-data-in-lists.md)
+### Creating a list
+- [Displaying data in lists](./displaying-data-in-lists.md)
   Visualize collections of data with platform-appropriate appearance.
-- [func listStyle<S>(S) -> some View](view/liststyle(_:).md)
+- [func listStyle<S>(S) -> some View](./view/liststyle%28_%29.md)
   Sets the style for lists within this view.
 
 

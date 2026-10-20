@@ -1,7 +1,8 @@
 # mSelector
 
 **Framework**: VideoDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The property selector of the custom property.
 
@@ -10,15 +11,16 @@ The property selector of the custom property.
 
 ## Declaration
 
-```swift
+```c
 IOUserVideoObjectPropertySelector mSelector;
 ```
 
 ## See Also
 
-- [mPropertyDataType](videodriverkit/iouservideocustompropertyinfo/mpropertydatatype.md)
+### Property metadata
+- [mPropertyDataType](./mpropertydatatype.md)
   The data type of the data of the custom property.
-- [mQualifierDataType](videodriverkit/iouservideocustompropertyinfo/mqualifierdatatype.md)
+- [mQualifierDataType](./mqualifierdatatype.md)
   The data type of the qualifier data of the custom property.
 
 

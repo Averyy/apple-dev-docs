@@ -1,7 +1,8 @@
 # Unicode.GeneralCategory.unassigned
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A reserved unassigned code point or a non-character.
 
@@ -22,7 +23,7 @@ case unassigned
 
 #### Discussion
 
-This value corresponds to the category `Unassigned` (abbreviated `Cn`) in the [`Unicode Standard`](https://developer.apple.comhttps://unicode.org/reports/tr44/#General_Category_Values).
+This value corresponds to the category `Unassigned` (abbreviated `Cn`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 
 
 ---

@@ -1,6 +1,7 @@
 # Assistive technologies
 
-**Framework**: Accessibility
+**Framework**: Accessibility  
+**Role**: Overview
 
 Make sure your app provides a great experience for people who use assistive technologies.
 
@@ -13,13 +14,13 @@ Learn more about building and testing your app with assistive technologies to cr
 ## Topics
 
 ### Assistive technologies
-- [VoiceOver](voiceover.md)
+- [VoiceOver](./voiceover.md)
   A gesture-based screen reader that provides an auditory description of the content onscreen.
-- [Voice Control](voice-control.md)
+- [Voice Control](./voice-control.md)
   An interface for navigating a device using voice commands to tap, swipe, type, and more.
-- [Switch Control](switch-control.md)
+- [Switch Control](./switch-control.md)
   An interface for navigating a device with a variety of adaptive switch hardware, wireless game controllers, or sounds such as a click or a pop.
-- [Assistive Access](assistive-access.md)
+- [Assistive Access](./assistive-access.md)
   A mode that tailors the iOS and iPadOS experience for people with cognitive disabilities.
 
 

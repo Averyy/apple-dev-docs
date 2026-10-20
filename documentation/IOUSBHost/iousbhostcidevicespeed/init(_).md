@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: IOUSBHost  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -15,7 +16,8 @@ init(_ rawValue: UInt32)
 
 ## See Also
 
-- [init(rawValue: UInt32)](iousbhostcidevicespeed/init(rawvalue:).md)
+### Initializers
+- [init(rawValue: UInt32)](./init%28rawvalue%29.md)
 
 
 ---

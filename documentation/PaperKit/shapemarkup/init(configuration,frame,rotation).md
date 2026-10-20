@@ -1,7 +1,8 @@
 # init(configuration:frame:rotation:)
 
 **Framework**: PaperKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a new shape markup from the specified parameters.
 
@@ -26,7 +27,8 @@ init(configuration: ShapeConfiguration, frame: CGRect, rotation: CGFloat = 0.0)
 
 ## See Also
 
-- [init(shape: ShapeMarkup.Shape, frame: CGRect, rotation: CGFloat, fillColor: CGColor?, strokeColor: CGColor?, lineWidth: CGFloat, opacity: CGFloat, startLineMarker: ShapeMarkup.LineMarker, endLineMarker: ShapeMarkup.LineMarker, attributedText: AttributedString, allowedInteractions: MarkupInteractions, autoresizing: MarkupAutoresizing, id: MarkupID<ShapeMarkup>)](shapemarkup/init(shape:frame:rotation:fillcolor:strokecolor:linewidth:opacity:startlinemarker:endlinemarker:attributedtext:allowedinteractions:autoresizing:id:).md)
+### Creating a shape
+- [init(shape: ShapeMarkup.Shape, frame: CGRect, rotation: CGFloat, fillColor: CGColor?, strokeColor: CGColor?, lineWidth: CGFloat, opacity: CGFloat, startLineMarker: ShapeMarkup.LineMarker, endLineMarker: ShapeMarkup.LineMarker, attributedText: AttributedString, allowedInteractions: MarkupInteractions, autoresizing: MarkupAutoresizing, id: MarkupID<ShapeMarkup>)](./init%28shape,frame,rotation,fillcolor,strokecolor,linewidth,opacity,startlinemarker,endlinemarker,attributedtext,allowedinteractions,autoresizing,id%29.md)
   Initializes and returns a new shape markup from the specified parameters.
 
 

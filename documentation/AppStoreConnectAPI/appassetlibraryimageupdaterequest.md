@@ -1,7 +1,8 @@
 # AppAssetLibraryImageUpdateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update an app asset library image.
 
@@ -10,14 +11,14 @@ The request body you use to update an app asset library image.
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryImageUpdateRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object AppAssetLibraryImageUpdateRequest.Data](appassetlibraryimageupdaterequest/data-data.dictionary.md)
+- [object AppAssetLibraryImageUpdateRequest.Data](./appassetlibraryimageupdaterequest/data-data.dictionary.md)
   The request body you use to update an app asset library image.
 
 ## Properties
@@ -26,15 +27,16 @@ object AppAssetLibraryImageUpdateRequest
 
 ## See Also
 
-- [object AppAssetLibraryImage](appassetlibraryimage.md)
+### Objects and types
+- [object AppAssetLibraryImage](./appassetlibraryimage.md)
   An image asset uploaded to an app’s asset library that you can reuse across App Store surfaces through placements.
-- [object AppAssetLibraryImageCreateRequest](appassetlibraryimagecreaterequest.md)
+- [object AppAssetLibraryImageCreateRequest](./appassetlibraryimagecreaterequest.md)
   The request body you use to create an app asset library image.
-- [object AppAssetLibraryImageResponse](appassetlibraryimageresponse.md)
+- [object AppAssetLibraryImageResponse](./appassetlibraryimageresponse.md)
   The response body for endpoints that create, read, or modify an app asset library image.
-- [object AppAssetLibraryImagePlacementsLinkagesResponse](appassetlibraryimageplacementslinkagesresponse.md)
+- [object AppAssetLibraryImagePlacementsLinkagesResponse](./appassetlibraryimageplacementslinkagesresponse.md)
   A response body that contains a list of related resource IDs.
-- [type AppAssetLibraryMediaType](appassetlibrarymediatype.md)
+- [type AppAssetLibraryMediaType](./appassetlibrarymediatype.md)
   String that represents the media type of an app asset library asset.
 
 

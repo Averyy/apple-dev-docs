@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a Boolean value that indicates whether the set is a subset of another set.
@@ -39,6 +40,12 @@ print(attendees.isSubset(of: employees))
 ## Parameters
 
 - `other`: A set of the same type as the current set.
+
+## Default Implementations
+
+### SetAlgebra Implementations
+- [func isSubset(of: Self) -> Bool](./issubset%28of%29-5y3lj.md)
+  Returns a Boolean value that indicates whether the set is a subset of another set.
 
 
 ---

@@ -1,7 +1,8 @@
 # NSTextLayoutFragment.EnumerationOptions
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Values that describe options for enumerating text layout fragments.
 
@@ -14,40 +15,45 @@ Values that describe options for enumerating text layout fragments.
 struct EnumerationOptions
 ```
 
+```c
+enum NSTextLayoutFragmentEnumerationOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Creating a layout fragment enumeration
-- [init(rawValue: UInt)](nstextlayoutfragment/enumerationoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./enumerationoptions/init%28rawvalue%29.md)
   Creates an instance of the enumeration with the provided unsigned integer value.
 ### Layout fragment characteristics
-- [static var ensuresExtraLineFragment: NSTextLayoutFragment.EnumerationOptions](nstextlayoutfragment/enumerationoptions/ensuresextralinefragment.md)
+- [static var ensuresExtraLineFragment: NSTextLayoutFragment.EnumerationOptions](./enumerationoptions/ensuresextralinefragment.md)
   Synthesize the extra line fragment when necessary.
-- [static var ensuresLayout: NSTextLayoutFragment.EnumerationOptions](nstextlayoutfragment/enumerationoptions/ensureslayout.md)
+- [static var ensuresLayout: NSTextLayoutFragment.EnumerationOptions](./enumerationoptions/ensureslayout.md)
   When enumerating, tell the layout fragments to layout their contents.
-- [static var estimatesSize: NSTextLayoutFragment.EnumerationOptions](nstextlayoutfragment/enumerationoptions/estimatessize.md)
+- [static var estimatesSize: NSTextLayoutFragment.EnumerationOptions](./enumerationoptions/estimatessize.md)
   When enumerating, tell the layout fragments to estimate their size.
-- [static var reverse: NSTextLayoutFragment.EnumerationOptions](nstextlayoutfragment/enumerationoptions/reverse.md)
+- [static var reverse: NSTextLayoutFragment.EnumerationOptions](./enumerationoptions/reverse.md)
   Causes the enumeration to start from the last element.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [func enumerateTextElements(from: (any NSTextLocation)?, options: NSTextContentManager.EnumerationOptions, using: (NSTextElement) -> Bool) -> (any NSTextLocation)?](nstextelementprovider/enumeratetextelements(from:options:using:).md)
+### Accessing and updating the text
+- [func enumerateTextElements(from: (any NSTextLocation)?, options: NSTextContentManager.EnumerationOptions, using: (NSTextElement) -> Bool) -> (any NSTextLocation)?](../nstextelementprovider/enumeratetextelements%28from,options,using%29.md)
   Enumerates text elements starting at the text location you provide.
-- [func location(any NSTextLocation, offsetBy: Int) -> (any NSTextLocation)?](nstextelementprovider/location(_:offsetby:).md)
+- [func location(any NSTextLocation, offsetBy: Int) -> (any NSTextLocation)?](../nstextelementprovider/location%28_,offsetby%29.md)
   Returns a new location from location with offset you provide.
-- [func replaceContents(in: NSTextRange, with: [NSTextElement]?)](nstextelementprovider/replacecontents(in:with:).md)
+- [func replaceContents(in: NSTextRange, with: [NSTextElement]?)](../nstextelementprovider/replacecontents%28in,with%29.md)
   Replaces the characters specified by range with the text elements you provide.
 
 

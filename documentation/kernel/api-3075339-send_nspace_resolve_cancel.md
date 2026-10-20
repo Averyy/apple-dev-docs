@@ -1,14 +1,15 @@
 # send_nspace_resolve_cancel
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t send_nspace_resolve_cancel(mach_port_t nspace_handler_port, uint32_t req_id);
 ```
 

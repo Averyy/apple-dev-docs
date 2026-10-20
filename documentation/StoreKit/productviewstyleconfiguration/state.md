@@ -1,7 +1,8 @@
 # state
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The product task state that indicates the product’s loading phase.
 
@@ -22,9 +23,10 @@ let state: Product.TaskState
 
 ## See Also
 
-- [var product: Product?](productviewstyleconfiguration/product.md)
+### Getting a product’s information
+- [var product: Product?](./product.md)
   The Apple In-App Purchase product to merchandise.
-- [let hasCurrentEntitlement: Bool](productviewstyleconfiguration/hascurrententitlement.md)
+- [let hasCurrentEntitlement: Bool](./hascurrententitlement.md)
   A Boolean value that indicates whether an Apple In-App Purchase transaction exists for the product.
 
 

@@ -1,7 +1,8 @@
 # contour(at:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the contour object at the specified index, irrespective of hierarchy.
 
@@ -19,27 +20,32 @@ Retrieves the contour object at the specified index, irrespective of hierarchy.
 func contour(at contourIndex: Int) throws -> VNContour
 ```
 
+```objc
+- (VNContour *) contourAtIndex:(NSInteger) contourIndex error:(NSError **) error;
+```
+
 #### Return Value
 
 The contour object at the specified index.
 
 ## Parameters
 
-- `contourIndex`: The index of the contour to retrieve. Valid values are in the range of 0 to [`contourCount`](vncontoursobservation/contourcount.md) - 1.
+- `contourIndex`: The index of the contour to retrieve. Valid values are in the range of 0 to [`contourCount`](./contourcount.md) - 1.
 
 ## See Also
 
-- [var contourCount: Int](vncontoursobservation/contourcount.md)
+### Inspecting the Observation
+- [var contourCount: Int](./contourcount.md)
   The total number of detected contours.
-- [var normalizedPath: CGPath](vncontoursobservation/normalizedpath.md)
+- [var normalizedPath: CGPath](./normalizedpath.md)
   The detected contours as a path object in normalized coordinates.
-- [var topLevelContours: [VNContour]](vncontoursobservation/toplevelcontours.md)
+- [var topLevelContours: [VNContour]](./toplevelcontours.md)
   An array of contours that don’t have another contour enclosing them.
-- [var topLevelContourCount: Int](vncontoursobservation/toplevelcontourcount.md)
+- [var topLevelContourCount: Int](./toplevelcontourcount.md)
   The total number of detected top-level contours.
-- [func contour(at: IndexPath) throws -> VNContour](vncontoursobservation/contour(at:)-52odo.md)
+- [func contour(at: IndexPath) throws -> VNContour](./contour%28at%29-52odo.md)
   Retrieves the contour object at the specified index path.
-- [class VNContour](vncontour.md)
+- [class VNContour](../vncontour.md)
   A class that represents a detected contour in an image.
 
 

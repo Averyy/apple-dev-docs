@@ -1,7 +1,8 @@
 # NSPressGestureRecognizer
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A discrete gesture recognizer that tracks whether the user holds down a mouse button for a minimum amount of time before releasing it.
 
@@ -14,46 +15,51 @@ A discrete gesture recognizer that tracks whether the user holds down a mouse bu
 class NSPressGestureRecognizer
 ```
 
+```objc
+@interface NSPressGestureRecognizer : NSGestureRecognizer
+```
+
 #### Overview
 
 Use a press gesture recognizer to configure which button the user must hold and the length of time they must hold it. You can also specify how far the mouse can move for a valid gesture.
 
-Upon creation, the gesture recognizer recognizes press gestures involving only the primary button. It also delays sending primary button events to the view by setting the [`delaysPrimaryMouseButtonEvents`](nsgesturerecognizer/delaysprimarymousebuttonevents.md) property to [`true`](https://developer.apple.com/documentation/swift/true). To change the set of buttons to track, modify the [`buttonMask`](nspressgesturerecognizer/buttonmask.md) property.
+Upon creation, the gesture recognizer recognizes press gestures involving only the primary button. It also delays sending primary button events to the view by setting the [`delaysPrimaryMouseButtonEvents`](./nsgesturerecognizer/delaysprimarymousebuttonevents.md) property to [`true`](../Swift/true.md). To change the set of buttons to track, modify the [`buttonMask`](./nspressgesturerecognizer/buttonmask.md) property.
 
 ## Topics
 
 ### Configuring the gesture recognizer
-- [var allowableMovement: CGFloat](nspressgesturerecognizer/allowablemovement.md)
+- [var allowableMovement: CGFloat](./nspressgesturerecognizer/allowablemovement.md)
   The maximum movement of the mouse in the view before the gesture fails.
-- [var buttonMask: Int](nspressgesturerecognizer/buttonmask.md)
+- [var buttonMask: Int](./nspressgesturerecognizer/buttonmask.md)
   A bit mask of the buttons required to recognize this press.
-- [var minimumPressDuration: TimeInterval](nspressgesturerecognizer/minimumpressduration.md)
+- [var minimumPressDuration: TimeInterval](./nspressgesturerecognizer/minimumpressduration.md)
   The minimum time (in seconds) that the user must hold the mouse button in the view for a valid gesture.
-- [var numberOfTouchesRequired: Int](nspressgesturerecognizer/numberoftouchesrequired.md)
+- [var numberOfTouchesRequired: Int](./nspressgesturerecognizer/numberoftouchesrequired.md)
   The number of necessary touches on a Touch Bar for the gesture recognizer to match.
 
 ## Relationships
 
 ### Inherits From
-- [NSGestureRecognizer](nsgesturerecognizer.md)
+- [NSGestureRecognizer](./nsgesturerecognizer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSClickGestureRecognizer](nsclickgesturerecognizer.md)
+### Standard Gestures
+- [class NSClickGestureRecognizer](./nsclickgesturerecognizer.md)
   A discrete gesture recognizer that tracks a specified number of mouse clicks.
-- [class NSPanGestureRecognizer](nspangesturerecognizer.md)
+- [class NSPanGestureRecognizer](./nspangesturerecognizer.md)
   A continuous gesture recognizer for panning gestures.
-- [class NSRotationGestureRecognizer](nsrotationgesturerecognizer.md)
+- [class NSRotationGestureRecognizer](./nsrotationgesturerecognizer.md)
   A continuous gesture recognizer that tracks two trackpad touches moving opposite each other in a circular motion.
-- [class NSMagnificationGestureRecognizer](nsmagnificationgesturerecognizer.md)
+- [class NSMagnificationGestureRecognizer](./nsmagnificationgesturerecognizer.md)
   A continuous gesture recognizer that tracks a pinch gesture that magnifies content.
 
 

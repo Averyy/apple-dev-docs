@@ -1,7 +1,8 @@
 # ARWorldMap
 
 **Framework**: ARKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The state in a world-tracking AR session during which a device maps the user’s position in physical space and proximity to anchor objects.
 
@@ -15,17 +16,21 @@ The state in a world-tracking AR session during which a device maps the user’s
 class ARWorldMap
 ```
 
+```objc
+@interface ARWorldMap : NSObject
+```
+
 ## Mentions
 
-- [Managing Session Life Cycle and Tracking Quality](managing-session-life-cycle-and-tracking-quality.md)
+- [Managing Session Life Cycle and Tracking Quality](./managing-session-life-cycle-and-tracking-quality.md)
 
 #### Overview
 
-The session state in a world map includes ARKit’s awareness of the physical space in which the user moves the device. ARKit uses the details of the user’s physical space to determine the device’s position and orientation, as well as any [`ARAnchor`](aranchor.md) objects added to the session that can represent detected real-world features or virtual content placed by your app.
+The session state in a world map includes ARKit’s awareness of the physical space in which the user moves the device. ARKit uses the details of the user’s physical space to determine the device’s position and orientation, as well as any [`ARAnchor`](./aranchor.md) objects added to the session that can represent detected real-world features or virtual content placed by your app.
 
 ##### Serialize and Deserialize a World Map
 
-When your app quits, you can save the current world map (acquired using [`getCurrentWorldMap(completionHandler:)`](arsession/getcurrentworldmap(completionhandler:).md)). Because [`ARWorldMap`](arworldmap.md) conforms to [`NSSecureCoding`](https://developer.apple.com/documentation/foundation/nssecurecoding), you serialize it using [`NSKeyedArchiver`](https://developer.apple.com/documentation/foundation/nskeyedarchiver).
+When your app quits, you can save the current world map (acquired using [`getCurrentWorldMap(completionHandler:)`](./arsession/getcurrentworldmap%28completionhandler%29.md)). Because [`ARWorldMap`](./arworldmap.md) conforms to [`NSSecureCoding`](../Foundation/nssecurecoding.md), you serialize it using [`NSKeyedArchiver`](../Foundation/nskeyedarchiver.md).
 
 ```swift
 func writeWorldMap(_ worldMap: ARWorldMap, to url: URL) throws {
@@ -34,7 +39,7 @@ func writeWorldMap(_ worldMap: ARWorldMap, to url: URL) throws {
 }
 ```
 
-To restore the world map the next time your app launches, use [`NSKeyedUnarchiver`](https://developer.apple.com/documentation/foundation/nskeyedunarchiver).
+To restore the world map the next time your app launches, use [`NSKeyedUnarchiver`](../Foundation/nskeyedunarchiver.md).
 
 ```swift
 func loadWorldMap(from url: URL) throws -> ARWorldMap {
@@ -47,55 +52,56 @@ func loadWorldMap(from url: URL) throws -> ARWorldMap {
 
 You can use anchors from a resumed world map to place the same virtual content at the same positions from the saved session, if the app launches in the same physical environment.
 
-For more information, see [`Saving and loading world data`](saving-and-loading-world-data.md).
+For more information, see [Saving and loading world data](./saving-and-loading-world-data.md).
 
 ##### Share a Saved World Map
 
-With two devices tracking the same world map, you can build a networked experience in which both users can see and interact with the same virtual content. To send an [`ARWorldMap`](arworldmap.md) to another device:
+With two devices tracking the same world map, you can build a networked experience in which both users can see and interact with the same virtual content. To send an [`ARWorldMap`](./arworldmap.md) to another device:
 
-1. On one device, use [`NSKeyedArchiver`](https://developer.apple.com/documentation/foundation/nskeyedarchiver) to convert the world map to a data object. You don’t need to write the data to a file to send it over the network.
-2. Use the networking technology of your choice to send the resulting data to another device. For example, in a [`Multipeer Connectivity`](https://developer.apple.com/documentation/multipeerconnectivity) session, call [`send(_:toPeers:with:)`](https://developer.apple.com/documentation/multipeerconnectivity/mcsession/send(_:topeers:with:)) to send data, and implement [`MCSessionDelegate`](https://developer.apple.com/documentation/multipeerconnectivity/mcsessiondelegate) methods on the other device to receive data.
-3. On the receiving device, use [`NSKeyedUnarchiver`](https://developer.apple.com/documentation/foundation/nskeyedunarchiver) to instantiate an [`ARWorldMap`](arworldmap.md) from the data.
+1. On one device, use [`NSKeyedArchiver`](../Foundation/nskeyedarchiver.md) to convert the world map to a data object. You don’t need to write the data to a file to send it over the network.
+2. Use the networking technology of your choice to send the resulting data to another device. For example, in a [Multipeer Connectivity](../MultipeerConnectivity/MultipeerConnectivity.md) session, call [`send(_:toPeers:with:)`](../MultipeerConnectivity/mcsession/send%28_,topeers,with%29.md) to send data, and implement [`MCSessionDelegate`](../MultipeerConnectivity/mcsessiondelegate.md) methods on the other device to receive data.
+3. On the receiving device, use [`NSKeyedUnarchiver`](../Foundation/nskeyedunarchiver.md) to instantiate an [`ARWorldMap`](./arworldmap.md) from the data.
 
-For more information, see [`Creating a multiuser AR experience`](creating-a-multiuser-ar-experience.md).
+For more information, see [Creating a multiuser AR experience](./creating-a-multiuser-ar-experience.md).
 
 ##### Run a Deserialized World Map
 
-To begin a new session from an existing [`ARWorldMap`](arworldmap.md), set a world-tracking configuration’s [`initialWorldMap`](arworldtrackingconfiguration/initialworldmap.md) property and use [`run(_:options:)`](arsession/run(_:options:).md). This starts a new session using the same spatial awareness and anchors loaded from the saved world map.
+To begin a new session from an existing [`ARWorldMap`](./arworldmap.md), set a world-tracking configuration’s [`initialWorldMap`](./arworldtrackingconfiguration/initialworldmap.md) property and use [`run(_:options:)`](./arsession/run%28_,options%29.md). This starts a new session using the same spatial awareness and anchors loaded from the saved world map.
 
 ## Topics
 
 ### Examining a World Map
-- [var anchors: [ARAnchor]](arworldmap/anchors.md)
+- [var anchors: [ARAnchor]](./arworldmap/anchors.md)
   The set of anchors recorded in the world map.
-- [var center: simd_float3](arworldmap/center.md)
+- [var center: simd_float3](./arworldmap/center.md)
   The center point of the world map’s space-mapping data, relative to the world coordinate origin of the session the map was recorded in.
-- [var extent: simd_float3](arworldmap/extent.md)
+- [var extent: simd_float3](./arworldmap/extent.md)
   The size of the world map’s space-mapping data, relative to the world coordinate origin of the session the map was recorded in.
 ### Debugging a World Map
-- [var rawFeaturePoints: ARPointCloud](arworldmap/rawfeaturepoints.md)
+- [var rawFeaturePoints: ARPointCloud](./arworldmap/rawfeaturepoints.md)
   A coarse representation of the space-mapping data recorded in the world map.
 ### Initializers
-- [init?(coder: NSCoder)](arworldmap/init(coder:).md)
+- [init?(coder: NSCoder)](./arworldmap/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Saving and loading world data](saving-and-loading-world-data.md)
+### World Data
+- [Saving and loading world data](./saving-and-loading-world-data.md)
   Serialize a world-tracking session to resume it later on.
 
 

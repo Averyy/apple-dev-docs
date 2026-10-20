@@ -1,7 +1,8 @@
 # openMode
 
 **Framework**: DiskImageKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The open mode of the disk image, read-only or read-write.
 

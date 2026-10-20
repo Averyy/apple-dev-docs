@@ -1,7 +1,8 @@
 # finishRunningWithError(_:)
 
 **Framework**: Automator  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Causes the action to stop running and return an error, which, in turn, causes the workflow to stop.
 
@@ -15,9 +16,13 @@ Causes the action to stop running and return an error, which, in turn, causes th
 func finishRunningWithError(_ error: (any Error)?)
 ```
 
+```objc
+- (void) finishRunningWithError:(NSError *) error;
+```
+
 #### Discussion
 
-Call this method on any action that overrides [`runAsynchronously(withInput:)`](amaction/runasynchronously(withinput:).md) in order to make asynchronous calls. When [`finishRunningWithError(_:)`](amaction/finishrunningwitherror(_:).md) is invoked, it immediately calls [`willFinishRunning()`](amaction/willfinishrunning().md).
+Call this method on any action that overrides [`runAsynchronously(withInput:)`](./runasynchronously%28withinput%29.md) in order to make asynchronous calls. When [`finishRunningWithError(_:)`](./finishrunningwitherror%28_%29.md) is invoked, it immediately calls [`willFinishRunning()`](./willfinishrunning%28%29.md).
 
 ## Parameters
 
@@ -25,15 +30,16 @@ Call this method on any action that overrides [`runAsynchronously(withInput:)`](
 
 ## See Also
 
-- [func run(withInput: Any?) throws -> Any](amaction/run(withinput:).md)
+### Controlling the Action
+- [func run(withInput: Any?) throws -> Any](./run%28withinput%29.md)
   Requests the action to perform its task using the specified input.
-- [func runAsynchronously(withInput: Any?)](amaction/runasynchronously(withinput:).md)
+- [func runAsynchronously(withInput: Any?)](./runasynchronously%28withinput%29.md)
   Causes Automator to wait for notification that the action has completed execution, which allows the action to perform an asynchronous operation.
-- [func willFinishRunning()](amaction/willfinishrunning.md)
+- [func willFinishRunning()](./willfinishrunning%28%29.md)
   Provides an opportunity for an action to perform cleanup operations, such as closing windows and deallocating memory.
-- [func stop()](amaction/stop.md)
+- [func stop()](./stop%28%29.md)
   Stops the action from running.
-- [func reset()](amaction/reset.md)
+- [func reset()](./reset%28%29.md)
   Resets the action to its initial state.
 
 

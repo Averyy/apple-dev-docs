@@ -1,7 +1,8 @@
 # doubleQuaternionValue(atTime:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func doubleQuaternionValue(atTime time: TimeInterval) -> simd_quatd
+```
+
+```objc
+- (simd_quatd) doubleQuaternionAtTime:(NSTimeInterval) time;
 ```
 
 

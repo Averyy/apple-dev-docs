@@ -1,7 +1,8 @@
 # defaultBackgroundConfiguration()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves a background configuration with system default values.
 
@@ -10,7 +11,7 @@ Retrieves a background configuration with system default values.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,11 +26,12 @@ A default background configuration. The system determines default values for the
 
 ## See Also
 
-- [var backgroundConfiguration: UIBackgroundConfiguration?](uitableviewheaderfooterview/backgroundconfiguration-52wng.md)
+### Configuring the background
+- [var backgroundConfiguration: UIBackgroundConfiguration?](./backgroundconfiguration-52wng.md)
   The current background configuration of the view.
-- [var automaticallyUpdatesBackgroundConfiguration: Bool](uitableviewheaderfooterview/automaticallyupdatesbackgroundconfiguration.md)
+- [var automaticallyUpdatesBackgroundConfiguration: Bool](./automaticallyupdatesbackgroundconfiguration.md)
   A Boolean value that determines whether the view automatically updates its background configuration when its state changes.
-- [var backgroundView: UIView?](uitableviewheaderfooterview/backgroundview.md)
+- [var backgroundView: UIView?](./backgroundview.md)
   The background view of the header or footer.
 
 

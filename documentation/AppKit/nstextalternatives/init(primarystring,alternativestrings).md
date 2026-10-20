@@ -1,7 +1,8 @@
 # init(primaryString:alternativeStrings:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an `NSTextAlternatives` instance.
 
@@ -12,6 +13,10 @@ Initializes an `NSTextAlternatives` instance.
 
 ```swift
 init(primaryString: String, alternativeStrings: [String])
+```
+
+```objc
+- (instancetype) initWithPrimaryString:(NSString *) primaryString alternativeStrings:(NSArray<NSString *> *) alternativeStrings;
 ```
 
 #### Return Value

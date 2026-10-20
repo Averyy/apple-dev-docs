@@ -1,7 +1,8 @@
 # provider
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The provider servicing the request.
 
@@ -20,9 +21,14 @@ The provider servicing the request.
 var provider: any ASAuthorizationProvider { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) id<ASAuthorizationProvider> provider;
+```
+
 ## See Also
 
-- [protocol ASAuthorizationProvider](asauthorizationprovider.md)
+### Inspecting the Provider
+- [protocol ASAuthorizationProvider](../asauthorizationprovider.md)
   An interface that authorization providers must implement.
 
 

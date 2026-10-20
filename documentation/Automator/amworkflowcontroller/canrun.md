@@ -1,7 +1,8 @@
 # canRun
 
 **Framework**: Automator  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the controller’s workflow is able to run.
 
@@ -15,9 +16,13 @@ A Boolean value that indicates whether the controller’s workflow is able to ru
 var canRun: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL canRun;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the controller’s workflow is able to run; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the controller’s workflow is able to run; [`false`](../../Swift/false.md) otherwise.
 
 #### Discussion
 
@@ -25,9 +30,10 @@ You might use this method to determine when to enable a “Run” button or othe
 
 ## See Also
 
-- [var isPaused: Bool](amworkflowcontroller/ispaused.md)
+### Getting Workflow Information
+- [var isPaused: Bool](./ispaused.md)
   A Boolean value that indicates whether the controller’s workflow is currently paused.
-- [var isRunning: Bool](amworkflowcontroller/isrunning.md)
+- [var isRunning: Bool](./isrunning.md)
   A Boolean value that indicates whether the controller’s workflow is currently running.
 
 

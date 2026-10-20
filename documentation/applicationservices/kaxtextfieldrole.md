@@ -1,7 +1,8 @@
 # kAXTextFieldRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A text field.
 
@@ -12,6 +13,10 @@ A text field.
 
 ```swift
 var kAXTextFieldRole: String { get }
+```
+
+```c
+#define kAXTextFieldRole
 ```
 
 

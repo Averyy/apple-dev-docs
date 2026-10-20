@@ -1,7 +1,8 @@
 # CardState
 
 **Framework**: TabletopKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A state for cards that contains face up and down information.
 
@@ -17,70 +18,71 @@ struct CardState
 ## Topics
 
 ### Creating a card state
-- [init(faceUp: Bool, parentID: EquipmentIdentifier, seatControl: ControllingSeats, pose: TableVisualState.Pose2D, boundingBox: Rect3D)](cardstate/init(faceup:parentid:seatcontrol:pose:boundingbox:).md)
+- [init(faceUp: Bool, parentID: EquipmentIdentifier, seatControl: ControllingSeats, pose: TableVisualState.Pose2D, boundingBox: Rect3D)](./cardstate/init%28faceup,parentid,seatcontrol,pose,boundingbox%29.md)
   Creates the state of a card using its visibility, location, and player interactions.
-- [init(faceUp: Bool, parentID: EquipmentIdentifier, seatControl: ControllingSeats, pose: TableVisualState.Pose2D, entity: Entity)](cardstate/init(faceup:parentid:seatcontrol:pose:entity:).md)
+- [init(faceUp: Bool, parentID: EquipmentIdentifier, seatControl: ControllingSeats, pose: TableVisualState.Pose2D, entity: Entity)](./cardstate/init%28faceup,parentid,seatcontrol,pose,entity%29.md)
   Creates a card state with the given faceUp value, parent, controlling seats, pose, and associated entity providing the bounding box.
-- [static func faceDown(parentID: EquipmentIdentifier, seatControl: ControllingSeats, pose: TableVisualState.Pose2D, boundingBox: Rect3D) -> CardState](cardstate/facedown(parentid:seatcontrol:pose:boundingbox:).md)
-- [static func faceDown(parentID: EquipmentIdentifier, seatControl: ControllingSeats, pose: TableVisualState.Pose2D, entity: Entity) -> CardState](cardstate/facedown(parentid:seatcontrol:pose:entity:).md)
-- [static func faceUp(parentID: EquipmentIdentifier, seatControl: ControllingSeats, pose: TableVisualState.Pose2D, boundingBox: Rect3D) -> CardState](cardstate/faceup(parentid:seatcontrol:pose:boundingbox:).md)
-- [static func faceUp(parentID: EquipmentIdentifier, seatControl: ControllingSeats, pose: TableVisualState.Pose2D, entity: Entity) -> CardState](cardstate/faceup(parentid:seatcontrol:pose:entity:).md)
+- [static func faceDown(parentID: EquipmentIdentifier, seatControl: ControllingSeats, pose: TableVisualState.Pose2D, boundingBox: Rect3D) -> CardState](./cardstate/facedown%28parentid,seatcontrol,pose,boundingbox%29.md)
+- [static func faceDown(parentID: EquipmentIdentifier, seatControl: ControllingSeats, pose: TableVisualState.Pose2D, entity: Entity) -> CardState](./cardstate/facedown%28parentid,seatcontrol,pose,entity%29.md)
+- [static func faceUp(parentID: EquipmentIdentifier, seatControl: ControllingSeats, pose: TableVisualState.Pose2D, boundingBox: Rect3D) -> CardState](./cardstate/faceup%28parentid,seatcontrol,pose,boundingbox%29.md)
+- [static func faceUp(parentID: EquipmentIdentifier, seatControl: ControllingSeats, pose: TableVisualState.Pose2D, entity: Entity) -> CardState](./cardstate/faceup%28parentid,seatcontrol,pose,entity%29.md)
 ### Getting the card data
-- [var faceUp: Bool](cardstate/faceup.md)
+- [var faceUp: Bool](./cardstate/faceup.md)
   A Boolean value that indicates whether the card is oriented face up, revealing its contents.
 ### Getting the parent equipment
-- [var parentID: EquipmentIdentifier](cardstate/parentid.md)
+- [var parentID: EquipmentIdentifier](./cardstate/parentid.md)
   The identifier for the parent equipment that holds or contains this equipment.
 ### Rendering the equipment
-- [var boundingBox: Rect3D](cardstate/boundingbox.md)
+- [var boundingBox: Rect3D](./cardstate/boundingbox.md)
   A 3D bounding box that encloses the card.
-- [var pose: TableVisualState.Pose2D](cardstate/pose.md)
+- [var pose: TableVisualState.Pose2D](./cardstate/pose.md)
   The 2D position and rotation of the equipment relative to the equipment parent, or table.
 ### Controlling the equipment
-- [var lockedBy: PlayerIdentifier?](cardstate/lockedby.md)
+- [var lockedBy: PlayerIdentifier?](./cardstate/lockedby.md)
   The identifier for the player who exclusively controls the equipment.
-- [var seatControl: ControllingSeats](cardstate/seatcontrol.md)
+- [var seatControl: ControllingSeats](./cardstate/seatcontrol.md)
   The seats that can manipulate or interact with the equipment.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [EquipmentState](equipmentstate.md)
-- [Escapable](../swift/escapable.md)
-- [MutableEquipmentState](mutableequipmentstate.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [EquipmentState](./equipmentstate.md)
+- [Escapable](../Swift/escapable.md)
+- [MutableEquipmentState](./mutableequipmentstate.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Implementing playing card overlap and physical characteristics](implementing-playing-card-overlap-and-physical-characteristics.md)
+### Equipment
+- [Implementing playing card overlap and physical characteristics](./implementing-playing-card-overlap-and-physical-characteristics.md)
   Add interactive card game behavior for a pile of playing cards with physically realistic stacking and overlapping.
-- [protocol Equipment](equipment.md)
+- [protocol Equipment](./equipment.md)
   A protocol for equipment that players directly interact with in a game.
-- [struct EquipmentCollection](equipmentcollection.md)
+- [struct EquipmentCollection](./equipmentcollection.md)
   A collection of equipment whose state can be inspected and modified.
-- [protocol EntityEquipment](entityequipment.md)
+- [protocol EntityEquipment](./entityequipment.md)
   A protocol for equipment in a game that you render using RealityKit.
-- [struct EquipmentIdentifier](equipmentidentifier.md)
+- [struct EquipmentIdentifier](./equipmentidentifier.md)
   A unique identifier for equipment.
-- [protocol EquipmentState](equipmentstate.md)
+- [protocol EquipmentState](./equipmentstate.md)
   A protocol for the equipment data that TabletopKit syncs between players.
-- [struct EquipmentStateCollection](equipmentstatecollection.md)
+- [struct EquipmentStateCollection](./equipmentstatecollection.md)
   A collection of equipment states that can be inspected and modified.
-- [struct BaseEquipmentState](baseequipmentstate.md)
+- [struct BaseEquipmentState](./baseequipmentstate.md)
   A state for equipment that contains no equipment-specific data.
-- [protocol CustomEquipmentState](customequipmentstate.md)
+- [protocol CustomEquipmentState](./customequipmentstate.md)
   A specialized protocol for the equipment state that allows to accommodate custom data that TabletopKit syncs between players.
-- [protocol MutableEquipmentState](mutableequipmentstate.md)
+- [protocol MutableEquipmentState](./mutableequipmentstate.md)
   A protocol for equipment data that TabletopKit syncs between players, and that can be mutated.
-- [struct DieState](diestate.md)
+- [struct DieState](./diestate.md)
   A state for dice that contains the current value.
-- [struct RawValueState](rawvaluestate.md)
+- [struct RawValueState](./rawvaluestate.md)
   A state for equipment that contains a game-specific value.
-- [enum ControllingSeats](controllingseats.md)
+- [enum ControllingSeats](./controllingseats.md)
   The seats that can manipulate or interact with the equipment.
 
 

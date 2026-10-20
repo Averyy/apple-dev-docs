@@ -1,7 +1,8 @@
 # AlarmManager.AlarmAuthorizationStateUpdates.Element
 
 **Framework**: AlarmKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type representing the sequence’s elements.
 
@@ -18,9 +19,10 @@ typealias Element = AlarmManager.AuthorizationState
 
 ## See Also
 
-- [AlarmManager.AlarmAuthorizationStateUpdates.Iterator](alarmmanager/alarmauthorizationstateupdates/iterator.md)
+### Iterating an update
+- [AlarmManager.AlarmAuthorizationStateUpdates.Iterator](./iterator.md)
   A nested type that iterates over the elements of this sequence.
-- [func makeAsyncIterator() -> AlarmManager.AlarmAuthorizationStateUpdates.Iterator](alarmmanager/alarmauthorizationstateupdates/makeasynciterator.md)
+- [func makeAsyncIterator() -> AlarmManager.AlarmAuthorizationStateUpdates.Iterator](./makeasynciterator%28%29.md)
   Returns an asynchronous iterator over the elements of this sequence.
 
 

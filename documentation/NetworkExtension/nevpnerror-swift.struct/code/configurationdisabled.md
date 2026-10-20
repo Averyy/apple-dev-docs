@@ -1,7 +1,8 @@
 # NEVPNError.Code.configurationDisabled
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error code indicating the VPN configuration associated with the VPN manager isn’t enabled.
 
@@ -19,21 +20,26 @@ An error code indicating the VPN configuration associated with the VPN manager i
 case configurationDisabled
 ```
 
+```c
+NEVPNErrorConfigurationDisabled
+```
+
 #### Discussion
 
 This error can occur when trying to start the VPN connection.
 
 ## See Also
 
-- [NEVPNError.Code.configurationInvalid](nevpnerror-swift.struct/code/configurationinvalid.md)
+### Error codes
+- [NEVPNError.Code.configurationInvalid](./configurationinvalid.md)
   An error code indicating the VPN configuration associated with the VPN manager object is invalid.
-- [NEVPNError.Code.connectionFailed](nevpnerror-swift.struct/code/connectionfailed.md)
+- [NEVPNError.Code.connectionFailed](./connectionfailed.md)
   The connection to the VPN server failed.
-- [NEVPNError.Code.configurationStale](nevpnerror-swift.struct/code/configurationstale.md)
+- [NEVPNError.Code.configurationStale](./configurationstale.md)
   An error code that indicates another process modfied the VPN configuration since the last time the app loaded the configuration.
-- [NEVPNError.Code.configurationReadWriteFailed](nevpnerror-swift.struct/code/configurationreadwritefailed.md)
+- [NEVPNError.Code.configurationReadWriteFailed](./configurationreadwritefailed.md)
   An error code that indicates an error occurred while reading or writing the Network Extension preferences.
-- [NEVPNError.Code.configurationUnknown](nevpnerror-swift.struct/code/configurationunknown.md)
+- [NEVPNError.Code.configurationUnknown](./configurationunknown.md)
   An error code that indicates that unspecified error occurred.
 
 

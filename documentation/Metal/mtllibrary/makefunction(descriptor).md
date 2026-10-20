@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Synchronously creates an object representing a shader function, using the specified descriptor.
@@ -20,9 +21,13 @@ Synchronously creates an object representing a shader function, using the specif
 func makeFunction(descriptor: MTLFunctionDescriptor) throws -> any MTLFunction
 ```
 
+```objc
+- (id<MTLFunction>) newFunctionWithDescriptor:(MTLFunctionDescriptor *) descriptor error:(NSError **) error;
+```
+
 #### Return Value
 
-A new [`MTLFunction`](mtlfunction.md) instance if the method finds the function in the library; otherwise Swift throws an error and Objective-C returns `nil`.
+A new [`MTLFunction`](../mtlfunction.md) instance if the method finds the function in the library; otherwise Swift throws an error and Objective-C returns `nil`.
 
 ## Parameters
 
@@ -30,13 +35,14 @@ A new [`MTLFunction`](mtlfunction.md) instance if the method finds the function 
 
 ## See Also
 
-- [func makeFunction(name: String) -> (any MTLFunction)?](mtllibrary/makefunction(name:).md)
+### Creating shader function instances
+- [func makeFunction(name: String) -> (any MTLFunction)?](./makefunction%28name%29.md)
   Creates an instance that represents a shader function in the library.
-- [func makeFunction(name: String, constantValues: MTLFunctionConstantValues, completionHandler: ((any MTLFunction)?, (any Error)?) -> Void)](mtllibrary/makefunction(name:constantvalues:completionhandler:).md)
+- [func makeFunction(name: String, constantValues: MTLFunctionConstantValues, completionHandler: ((any MTLFunction)?, (any Error)?) -> Void)](./makefunction%28name,constantvalues,completionhandler%29.md)
   Asynchronously creates a specialized shader function.
-- [func makeFunction(name: String, constantValues: MTLFunctionConstantValues) throws -> any MTLFunction](mtllibrary/makefunction(name:constantvalues:).md)
+- [func makeFunction(name: String, constantValues: MTLFunctionConstantValues) throws -> any MTLFunction](./makefunction%28name,constantvalues%29.md)
   Synchronously creates a specialized shader function.
-- [func makeFunction(descriptor: MTLFunctionDescriptor, completionHandler: ((any MTLFunction)?, (any Error)?) -> Void)](mtllibrary/makefunction(descriptor:completionhandler:).md)
+- [func makeFunction(descriptor: MTLFunctionDescriptor, completionHandler: ((any MTLFunction)?, (any Error)?) -> Void)](./makefunction%28descriptor,completionhandler%29.md)
   Asynchronously creates an object representing a shader function, using the specified descriptor.
 
 

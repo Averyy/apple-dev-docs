@@ -1,7 +1,8 @@
 # fileDescriptor
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The POSIX file descriptor associated with the receiver.
 
@@ -20,13 +21,18 @@ The POSIX file descriptor associated with the receiver.
 var fileDescriptor: Int32 { get }
 ```
 
+```objc
+@property (readonly) int fileDescriptor;
+```
+
 #### Discussion
 
-You can use this method to retrieve the file descriptor while it is open. If the file handle object owns the file descriptor, you must not close it yourself. However, you can use the [`closeFile()`](filehandle/closefile().md) method to close the file descriptor programmatically. If you do call the [`closeFile()`](filehandle/closefile().md) method, subsequent calls to this method raise an exception.
+You can use this method to retrieve the file descriptor while it is open. If the file handle object owns the file descriptor, you must not close it yourself. However, you can use the [`closeFile()`](./closefile%28%29.md) method to close the file descriptor programmatically. If you do call the [`closeFile()`](./closefile%28%29.md) method, subsequent calls to this method raise an exception.
 
 ## See Also
 
-- [convenience init(fileDescriptor: Int32)](filehandle/init(filedescriptor:).md)
+### Related Documentation
+- [convenience init(fileDescriptor: Int32)](./init%28filedescriptor%29.md)
   Creates and returns a file handle object associated with the specified file descriptor.
 
 

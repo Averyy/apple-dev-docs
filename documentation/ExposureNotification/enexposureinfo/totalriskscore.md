@@ -1,14 +1,17 @@
 # totalRiskScore
 
 **Framework**: Exposure Notification  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value that represents the total risk score the framework calculates for this exposure incident.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
@@ -16,33 +19,38 @@ The value that represents the total risk score the framework calculates for this
 var totalRiskScore: ENRiskScore { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) ENRiskScore totalRiskScore;
+```
+
 #### Discussion
 
-This value is limited by [`ENRiskScoreMax`](enriskscoremax.md).
+This value is limited by [`ENRiskScoreMax`](../enriskscoremax.md).
 
 ## See Also
 
-- [var attenuationDurations: [NSNumber]](enexposureinfo/attenuationdurations.md)
+### Exposure Criteria
+- [var attenuationDurations: [NSNumber]](./attenuationdurations.md)
   An array of durations at specific radio signal attenuations.
-- [var attenuationValue: ENAttenuation](enexposureinfo/attenuationvalue.md)
+- [var attenuationValue: ENAttenuation](./attenuationvalue.md)
   The attenutation risk level value for the exposure.
-- [var date: Date](enexposureinfo/date.md)
+- [var date: Date](./date.md)
   The date the exposure occurred.
-- [var duration: TimeInterval](enexposureinfo/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The length of time that the contact was in proximity to the user.
-- [var totalRiskScoreFullRange: Double](enexposureinfo/totalriskscorefullrange.md)
+- [var totalRiskScoreFullRange: Double](./totalriskscorefullrange.md)
   The value that represents the full-range total risk score the framework calculates for this exposure incident.
-- [var transmissionRiskLevel: ENRiskLevel](enexposureinfo/transmissionrisklevel.md)
+- [var transmissionRiskLevel: ENRiskLevel](./transmissionrisklevel.md)
   The transmission risk associated with a diagnosis key.
-- [typealias ENAttenuation](enattenuation.md)
+- [typealias ENAttenuation](../enattenuation.md)
   The signal strength value.
-- [var metadata: [AnyHashable : Any]?](enexposureinfo/metadata.md)
+- [var metadata: [AnyHashable : Any]?](./metadata.md)
   The metadata associated with the exposure information.
-- [var daysSinceOnsetOfSymptoms: Int](enexposureinfo/dayssinceonsetofsymptoms.md)
+- [var daysSinceOnsetOfSymptoms: Int](./dayssinceonsetofsymptoms.md)
   The number of days since the onset of symptoms.
-- [var diagnosisReportType: ENDiagnosisReportType](enexposureinfo/diagnosisreporttype.md)
+- [var diagnosisReportType: ENDiagnosisReportType](./diagnosisreporttype.md)
   The method used to report the positive diagnosis.
-- [var ENDaysSinceOnsetOfSymptomsUnknown: Int](endayssinceonsetofsymptomsunknown.md)
+- [var ENDaysSinceOnsetOfSymptomsUnknown: Int](../endayssinceonsetofsymptomsunknown.md)
   A value used when the number of days since onset of symptoms is unknown.
 
 

@@ -1,18 +1,25 @@
 # type
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The kind of detected feature the search result represents.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
+- iOS 11.0+ - Deprecated in 14.0
+- iPadOS 11.0+ - Deprecated in 14.0
+
+> **Deprecated**: Use raycasting
 
 ## Declaration
 
 ```swift
 var type: ARHitTestResult.ResultType { get }
+```
+
+```objc
+@property (nonatomic, readonly) ARHitTestResultType type;
 ```
 
 #### Discussion
@@ -21,9 +28,10 @@ You specify one or more result types to search for when calling a hit-testing me
 
 ## See Also
 
-- [ARHitTestResult.ResultType](arhittestresult/resulttype.md)
+### Identifying Results
+- [ARHitTestResult.ResultType](./resulttype.md)
   Possible types for specifying a hit-test search, or for the result of a hit-test search.
-- [var anchor: ARAnchor?](arhittestresult/anchor.md)
+- [var anchor: ARAnchor?](./anchor.md)
   The anchor representing the detected surface, if any.
 
 

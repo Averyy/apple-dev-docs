@@ -1,7 +1,8 @@
 # subelements
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subelements of the paper markup.
 
@@ -24,16 +25,17 @@ Includes shapes, images, strokes, etc.
 
 ## See Also
 
-- [var id: MarkupID<PaperMarkup>](papermarkup/id.md)
+### Accessing elements
+- [var id: MarkupID<PaperMarkup>](./id.md)
   The unique identifier of the markup.
-- [var bounds: CGRect](papermarkup/bounds.md)
+- [var bounds: CGRect](./bounds.md)
   The bounds of the paper.
-- [var contentsRenderFrame: CGRect](papermarkup/contentsrenderframe.md)
+- [var contentsRenderFrame: CGRect](./contentsrenderframe.md)
   The frame that tightly fits the rendered contents on the paper.
-- [var featureSet: FeatureSet](papermarkup/featureset.md)
+- [var featureSet: FeatureSet](./featureset.md)
   The set of features used by this data model.
-- [var indexableContent: String?](papermarkup/indexablecontent.md)
-- [var backgroundColor: CGColor?](papermarkup/backgroundcolor.md)
+- [var indexableContent: String?](./indexablecontent.md)
+- [var backgroundColor: CGColor?](./backgroundcolor.md)
   The background color of the paper.
 
 

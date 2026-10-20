@@ -1,7 +1,8 @@
 # accessibilityIdentifier(_:isEnabled:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Uses the string you specify to identify the view. Use this value for testing. It isn’t visible to the user.
 
@@ -28,13 +29,14 @@ func accessibilityIdentifier(_ identifier: String, isEnabled: Bool = true) -> so
 
 ## See Also
 
-- [func accessibilityHint(_:isEnabled:)](tabcontent/accessibilityhint(_:isenabled:).md)
+### Configuring tab accessibility
+- [func accessibilityHint(_:isEnabled:)](./accessibilityhint%28_,isenabled%29.md)
   Communicates to the user what happens after selecting the tab.
-- [func accessibilityInputLabels(_:isEnabled:)](tabcontent/accessibilityinputlabels(_:isenabled:).md)
+- [func accessibilityInputLabels(_:isEnabled:)](./accessibilityinputlabels%28_,isenabled%29.md)
   Sets alternate input labels with which users identify a tab.
-- [func accessibilityLabel(_:isEnabled:)](tabcontent/accessibilitylabel(_:isenabled:).md)
+- [func accessibilityLabel(_:isEnabled:)](./accessibilitylabel%28_,isenabled%29.md)
   Adds a label to the tab that describes its contents.
-- [func accessibilityValue(_:isEnabled:)](tabcontent/accessibilityvalue(_:isenabled:).md)
+- [func accessibilityValue(_:isEnabled:)](./accessibilityvalue%28_,isenabled%29.md)
   Adds a textual description of the value that the tab contains.
 
 

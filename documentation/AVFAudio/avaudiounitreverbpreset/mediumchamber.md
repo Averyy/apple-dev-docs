@@ -1,7 +1,8 @@
 # AVAudioUnitReverbPreset.mediumChamber
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A preset that represents a reverb with the acoustic characteristics of a medium-sized chamber environment.
 
@@ -10,7 +11,7 @@ A preset that represents a reverb with the acoustic characteristics of a medium-
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,15 +21,20 @@ A preset that represents a reverb with the acoustic characteristics of a medium-
 case mediumChamber
 ```
 
+```c
+AVAudioUnitReverbPresetMediumChamber
+```
+
 ## See Also
 
-- [AVAudioUnitReverbPreset.plate](avaudiounitreverbpreset/plate.md)
+### Choosing other presets
+- [AVAudioUnitReverbPreset.plate](./plate.md)
   A preset that represents a reverb with the acoustic characteristics of a plate environment.
-- [AVAudioUnitReverbPreset.largeChamber](avaudiounitreverbpreset/largechamber.md)
+- [AVAudioUnitReverbPreset.largeChamber](./largechamber.md)
   A preset that represents a reverb with the acoustic characteristics of a large-sized chamber environment.
-- [AVAudioUnitReverbPreset.cathedral](avaudiounitreverbpreset/cathedral.md)
+- [AVAudioUnitReverbPreset.cathedral](./cathedral.md)
   A preset that represents a reverb with the acoustic characteristics of a cathedral environment.
-- [AVAudioUnitReverbPreset.outdoorGeneral](avaudiounitreverbpreset/outdoorgeneral.md)
+- [AVAudioUnitReverbPreset.outdoorGeneral](./outdoorgeneral.md)
 
 
 ---

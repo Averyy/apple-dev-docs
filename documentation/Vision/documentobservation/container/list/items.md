@@ -1,7 +1,8 @@
 # items
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The elements of the list.
 
@@ -21,9 +22,10 @@ var items: [DocumentObservation.Container.List.Item] { get }
 
 ## See Also
 
-- [var boundingRegion: NormalizedRegion](documentobservation/container/list/boundingregion.md)
+### Inspecting a list
+- [var boundingRegion: NormalizedRegion](./boundingregion.md)
   A polygon that defines the boundary of the list.
-- [DocumentObservation.Container.List.Marker](documentobservation/container/list/marker.md)
+- [DocumentObservation.Container.List.Marker](./marker.md)
   The symbol or character at the beginning of each list item.
 
 

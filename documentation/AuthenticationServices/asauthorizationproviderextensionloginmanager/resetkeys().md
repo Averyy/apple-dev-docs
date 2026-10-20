@@ -1,7 +1,8 @@
 # resetKeys()
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates new encryption, signing, and Secure Enclave keys.
 
@@ -14,15 +15,20 @@ Creates new encryption, signing, and Secure Enclave keys.
 func resetKeys()
 ```
 
+```objc
+- (void) resetKeys;
+```
+
 #### Discussion
 
 This call permanently destroys the keys and you can’t undo it.
 
 ## See Also
 
-- [func userRegistrationsNeedsRepair()](asauthorizationproviderextensionloginmanager/userregistrationsneedsrepair.md)
+### Repairing registrations
+- [func userRegistrationsNeedsRepair()](./userregistrationsneedsrepair%28%29.md)
   Invokes the user registration to run again so the current user can repair it.
-- [func deviceRegistrationsNeedsRepair()](asauthorizationproviderextensionloginmanager/deviceregistrationsneedsrepair.md)
+- [func deviceRegistrationsNeedsRepair()](./deviceregistrationsneedsrepair%28%29.md)
   Invokes the device registration to run again so the current user can repair it.
 
 

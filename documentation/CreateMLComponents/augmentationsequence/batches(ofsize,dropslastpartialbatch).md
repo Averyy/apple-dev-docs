@@ -1,7 +1,8 @@
 # batches(ofSize:dropsLastPartialBatch:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Batches a augmentation sequence.
 
@@ -20,6 +21,8 @@ Batches a augmentation sequence.
 func batches(ofSize size: Int, dropsLastPartialBatch: Bool) -> AugmentationSequence<Base, RandomTransformer, RandomNumberGenerator, Annotation>.BatchedSequence
 ```
 
+Available when `Base` conforms to `Sequence`, `RandomTransformer` conforms to `RandomTransformer`, `RandomNumberGenerator` conforms to `RandomNumberGenerator`, `Base.Element` is `AnnotatedFeature<RandomTransformer.Input, Annotation>`, and `RandomTransformer.Input` is `RandomTransformer.Output`.
+
 #### Return Value
 
 An async sequence of batches.
@@ -31,7 +34,8 @@ An async sequence of batches.
 
 ## See Also
 
-- [AugmentationSequence.BatchedSequence](augmentationsequence/batchedsequence.md)
+### Batching an augmentation sequence
+- [AugmentationSequence.BatchedSequence](./batchedsequence.md)
   An async sequence that batches an augmentation sequence.
 
 

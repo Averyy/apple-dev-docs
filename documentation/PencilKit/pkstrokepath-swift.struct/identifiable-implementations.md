@@ -1,11 +1,12 @@
 # Identifiable Implementations
 
-**Framework**: PencilKit
+**Framework**: PencilKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var id: UUID](pkstrokepath-swift.struct/id.md)
+- [var id: UUID](./id.md)
   The unique identity of the stroke path.
 
 

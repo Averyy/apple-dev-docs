@@ -1,7 +1,8 @@
 # MLClassifier
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A model you train to classify data into discrete categories.
 
@@ -16,98 +17,99 @@ enum MLClassifier
 
 ## Mentions
 
-- [Improving Your Model’s Accuracy](improving-your-model-s-accuracy.md)
+- [Improving Your Model’s Accuracy](./improving-your-model-s-accuracy.md)
 
 #### Overview
 
-Use an [`MLClassifier`](mlclassifier.md) to train a general-purpose model to recognize categories.
+Use an [`MLClassifier`](./mlclassifier.md) to train a general-purpose model to recognize categories.
 
 For example, you can create a classifier that predicts whether a sports team is likely to win or lose its next game by training it with these inputs:
 
 - The team’s win-loss ratio
 - The team’s game locations
 
-> ❗ **Important**: When working with image or natural language data, don’t use [`MLClassifier`](mlclassifier.md). Instead, use the `MLImageClassifierBuilder` or one of the Natural Language models ([`MLTextClassifier`](mltextclassifier.md) or [`MLWordTagger`](mlwordtagger.md)).
+> ❗ **Important**: When working with image or natural language data, don’t use [`MLClassifier`](./mlclassifier.md). Instead, use the `MLImageClassifierBuilder` or one of the Natural Language models ([`MLTextClassifier`](./mltextclassifier.md) or [`MLWordTagger`](./mlwordtagger.md)).
 
-When you create an [`MLClassifier`](mlclassifier.md), Create ML inspects your data and automatically chooses a specific classifier (see *Supporting Classifier Types*).
+When you create an [`MLClassifier`](./mlclassifier.md), Create ML inspects your data and automatically chooses a specific classifier (see *Supporting Classifier Types*).
 
 ## Topics
 
 ### Creating and training a classifier
-- [init(trainingData:targetColumn:featureColumns:)](mlclassifier/init(trainingdata:targetcolumn:featurecolumns:).md)
+- [init(trainingData:targetColumn:featureColumns:)](./mlclassifier/init%28trainingdata,targetcolumn,featurecolumns%29.md)
   Creates a classifier.
-- [var targetColumn: String](mlclassifier/targetcolumn.md)
+- [var targetColumn: String](./mlclassifier/targetcolumn.md)
   The name of the column you selected at initialization to define which categories the classifier predicts.
-- [var featureColumns: [String]](mlclassifier/featurecolumns.md)
+- [var featureColumns: [String]](./mlclassifier/featurecolumns.md)
   The names of the columns you selected at initialization to train the classifier.
 ### Evaluating a classifier
-- [func evaluation(on:)](mlclassifier/evaluation(on:).md)
+- [func evaluation(on:)](./mlclassifier/evaluation%28on%29.md)
   Evaluates the classifier on the provided labeled data.
-- [var trainingMetrics: MLClassifierMetrics](mlclassifier/trainingmetrics.md)
+- [var trainingMetrics: MLClassifierMetrics](./mlclassifier/trainingmetrics.md)
   Measurements of the classifier’s performance on the training data set.
-- [var validationMetrics: MLClassifierMetrics](mlclassifier/validationmetrics.md)
+- [var validationMetrics: MLClassifierMetrics](./mlclassifier/validationmetrics.md)
   Measurements of the classifier’s performance on the validation data set.
 ### Testing a classifier
-- [func predictions(from:)](mlclassifier/predictions(from:).md)
+- [func predictions(from:)](./mlclassifier/predictions%28from%29.md)
 ### Saving a classifier
-- [func write(to: URL, metadata: MLModelMetadata?) throws](mlclassifier/write(to:metadata:).md)
+- [func write(to: URL, metadata: MLModelMetadata?) throws](./mlclassifier/write%28to,metadata%29.md)
   Exports a Core ML model file for use in your app.
-- [func write(toFile: String, metadata: MLModelMetadata?) throws](mlclassifier/write(tofile:metadata:).md)
+- [func write(toFile: String, metadata: MLModelMetadata?) throws](./mlclassifier/write%28tofile,metadata%29.md)
   Exports a Core ML model file for use in your app.
 ### Describing a model
-- [var model: MLModel](mlclassifier/model.md)
+- [var model: MLModel](./mlclassifier/model.md)
   The underlying Core ML model stored in memory.
-- [var description: String](mlclassifier/description.md)
+- [var description: String](./mlclassifier/description.md)
   A text representation of the classifier.
-- [var debugDescription: String](mlclassifier/debugdescription.md)
+- [var debugDescription: String](./mlclassifier/debugdescription.md)
   A text representation of the classifier that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlclassifier/playgrounddescription.md)
+- [var playgroundDescription: Any](./mlclassifier/playgrounddescription.md)
   A description of the classifier shown in a playground.
 ### Classifier cases
-- [case decisionTree(MLDecisionTreeClassifier)](mlclassifier/decisiontree(_:).md)
+- [case decisionTree(MLDecisionTreeClassifier)](./mlclassifier/decisiontree%28_%29.md)
   A classifier that predicts the target by creating rules to split the data.
-- [case randomForest(MLRandomForestClassifier)](mlclassifier/randomforest(_:).md)
+- [case randomForest(MLRandomForestClassifier)](./mlclassifier/randomforest%28_%29.md)
   A classifier based on a collection of decision trees trained on subsets of the data.
-- [case boostedTree(MLBoostedTreeClassifier)](mlclassifier/boostedtree(_:).md)
+- [case boostedTree(MLBoostedTreeClassifier)](./mlclassifier/boostedtree%28_%29.md)
   A classifier based on a collection of decision trees combined with gradient boosting.
-- [case logisticRegression(MLLogisticRegressionClassifier)](mlclassifier/logisticregression(_:).md)
+- [case logisticRegression(MLLogisticRegressionClassifier)](./mlclassifier/logisticregression%28_%29.md)
   A classifier that predicts a discrete target value as a function of data features.
-- [case supportVector(MLSupportVectorClassifier)](mlclassifier/supportvector(_:).md)
+- [case supportVector(MLSupportVectorClassifier)](./mlclassifier/supportvector%28_%29.md)
   A classifier that predicts a binary target value by maximizing the separation between categories.
 ### Supporting classifier types
-- [struct MLDecisionTreeClassifier](mldecisiontreeclassifier.md)
+- [struct MLDecisionTreeClassifier](./mldecisiontreeclassifier.md)
   A classifier that predicts the target by creating rules to split the data.
-- [struct MLRandomForestClassifier](mlrandomforestclassifier.md)
+- [struct MLRandomForestClassifier](./mlrandomforestclassifier.md)
   A classifier based on a collection of decision trees trained on subsets of the data.
-- [struct MLBoostedTreeClassifier](mlboostedtreeclassifier.md)
+- [struct MLBoostedTreeClassifier](./mlboostedtreeclassifier.md)
   A classifier based on a collection of decision trees combined with gradient boosting.
-- [struct MLLogisticRegressionClassifier](mllogisticregressionclassifier.md)
+- [struct MLLogisticRegressionClassifier](./mllogisticregressionclassifier.md)
   A classifier that predicts a discrete target value as a function of data features.
-- [struct MLSupportVectorClassifier](mlsupportvectorclassifier.md)
+- [struct MLSupportVectorClassifier](./mlsupportvectorclassifier.md)
   A classifier that predicts a binary target value by maximizing the separation between categories.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mlclassifier/customdebugstringconvertible-implementations.md)
-- [CustomPlaygroundDisplayConvertible Implementations](mlclassifier/customplaygrounddisplayconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mlclassifier/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./mlclassifier/customdebugstringconvertible-implementations.md)
+- [CustomPlaygroundDisplayConvertible Implementations](./mlclassifier/customplaygrounddisplayconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./mlclassifier/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Creating a model from tabular data](creating-a-model-from-tabular-data.md)
+### Tabular models
+- [Creating a model from tabular data](./creating-a-model-from-tabular-data.md)
   Train a machine learning model by using Core ML to import and manage tabular data.
-- [enum MLRegressor](mlregressor.md)
+- [enum MLRegressor](./mlregressor.md)
   A model you train to estimate continuous values.
-- [struct MLRecommender](mlrecommender.md)
+- [struct MLRecommender](./mlrecommender.md)
   A model you train to make recommendations based on item similarity, grouping, and, optionally, item ratings.
 
 

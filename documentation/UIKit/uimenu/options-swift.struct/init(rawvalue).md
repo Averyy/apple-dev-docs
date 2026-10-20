@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a menu options structure from data in an unarchiver.
 

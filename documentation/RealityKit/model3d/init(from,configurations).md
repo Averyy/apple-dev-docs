@@ -1,7 +1,8 @@
 # init(from:configurations:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Loads and displays a model using the provided `ConfigurationCatalog` and configuration choices.
 
@@ -26,7 +27,7 @@ Model3D(from: myConfigurationCatalog,
         configurations: ["size": "small", "color": "red"])
 ```
 
-If you want to customize the placeholder or apply [`ResolvedModel3D`](resolvedmodel3d.md)-specific modifiers — like `ResolvedModel3D/resizable()` — to the loaded model, use the [`init(from:configurations:content:placeholder:)`](model3d/init(from:configurations:content:placeholder:).md) initializer instead.
+If you want to customize the placeholder or apply [`ResolvedModel3D`](../resolvedmodel3d.md)-specific modifiers — like `ResolvedModel3D/resizable()` — to the loaded model, use the [`init(from:configurations:content:placeholder:)`](./init%28from,configurations,content,placeholder%29.md) initializer instead.
 
 ## Parameters
 

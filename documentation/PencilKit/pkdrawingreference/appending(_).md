@@ -1,7 +1,8 @@
 # appending(_:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new drawing created by appending the current drawing with another drawing you provide.
 
@@ -18,6 +19,10 @@ Returns a new drawing created by appending the current drawing with another draw
 func appending(_ drawing: PKDrawing) -> PKDrawing
 ```
 
+```objc
+- (PKDrawing *) drawingByAppendingDrawing:(PKDrawing *) drawing;
+```
+
 #### Return Value
 
 A new drawing created by merging the content from the current object with the content in the `drawing` parameter.
@@ -28,9 +33,10 @@ A new drawing created by merging the content from the current object with the co
 
 ## See Also
 
-- [func applying(CGAffineTransform) -> PKDrawing](pkdrawingreference/applying(_:).md)
+### Modifying the drawing
+- [func applying(CGAffineTransform) -> PKDrawing](./applying%28_%29.md)
   Returns a new drawing object by applying the specified transform to a copy of the current object’s contents.
-- [func appendingStrokes([PKStroke]) -> PKDrawing](pkdrawingreference/appendingstrokes(_:).md)
+- [func appendingStrokes([PKStroke]) -> PKDrawing](./appendingstrokes%28_%29.md)
   Returns a copy of the current drawing with the strokes you provide appended.
 
 

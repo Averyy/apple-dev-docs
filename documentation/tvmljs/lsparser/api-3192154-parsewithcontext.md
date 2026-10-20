@@ -1,14 +1,15 @@
 # parseWithContext
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - tvOS 14.0+
 
 ## Declaration
 
-```swift
+```
 Node parseWithContext(
     in LSInput input, 
     in optional Node contextArg, 

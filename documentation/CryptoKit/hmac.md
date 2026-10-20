@@ -1,7 +1,8 @@
 # HMAC
 
 **Framework**: Apple CryptoKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A hash-based message authentication algorithm.
 
@@ -24,55 +25,56 @@ struct HMAC<H> where H : HashFunction
 
 Use hash-based message authentication to create a code with a value that’s dependent on both a block of data and a symmetric cryptographic key. Another party with access to the data and the same secret key can compute the code again and compare it to the original to detect whether the data changed. This serves a purpose similar to digital signing and verification, but depends on a shared symmetric key instead of public-key cryptography.
 
-As with digital signing, the data isn’t hidden by this process. When you need to encrypt the data as well as authenticate it, use a cipher like [`AES`](aes.md) or [`ChaChaPoly`](chachapoly.md) to put the data into a sealed box (an instance of [`AES.GCM.SealedBox`](aes/gcm/sealedbox.md) or [`ChaChaPoly.SealedBox`](chachapoly/sealedbox.md)).
+As with digital signing, the data isn’t hidden by this process. When you need to encrypt the data as well as authenticate it, use a cipher like [`AES`](./aes.md) or [`ChaChaPoly`](./chachapoly.md) to put the data into a sealed box (an instance of [`AES.GCM.SealedBox`](./aes/gcm/sealedbox.md) or [`ChaChaPoly.SealedBox`](./chachapoly/sealedbox.md)).
 
 ## Topics
 
 ### Getting a key
-- [typealias Key](hmac/key.md)
+- [typealias Key](./hmac/key.md)
   An alias for the symmetric key type used to compute or verify a message authentication code.
-- [struct SymmetricKey](symmetrickey.md)
+- [struct SymmetricKey](./symmetrickey.md)
   A symmetric cryptographic key.
 ### Working with codes
-- [typealias MAC](hmac/mac.md)
+- [typealias MAC](./hmac/mac.md)
   An alias for a hash-based message authentication code.
-- [struct HashedAuthenticationCode](hashedauthenticationcode.md)
+- [struct HashedAuthenticationCode](./hashedauthenticationcode.md)
   A hash-based message authentication code.
-- [protocol MessageAuthenticationCode](messageauthenticationcode.md)
+- [protocol MessageAuthenticationCode](./messageauthenticationcode.md)
   A type that represents a message authentication code.
 ### Creating an authentication code iteratively
-- [init(key: SymmetricKey)](hmac/init(key:).md)
+- [init(key: SymmetricKey)](./hmac/init%28key%29.md)
   Creates a message authentication code generator.
-- [func update<D>(data: D)](hmac/update(data:).md)
+- [func update<D>(data: D)](./hmac/update%28data%29.md)
   Updates the message authentication code computation with a block of data.
-- [func finalize() -> HMAC<H>.MAC](hmac/finalize.md)
+- [func finalize() -> HMAC<H>.MAC](./hmac/finalize%28%29.md)
   Finalizes the message authentication computation and returns the computed code.
 ### Checking an authentication code
-- [static func isValidAuthenticationCode<D>(HMAC<H>.MAC, authenticating: D, using: SymmetricKey) -> Bool](hmac/isvalidauthenticationcode(_:authenticating:using:)-8ezmw.md)
+- [static func isValidAuthenticationCode<D>(HMAC<H>.MAC, authenticating: D, using: SymmetricKey) -> Bool](./hmac/isvalidauthenticationcode%28_,authenticating,using%29-8ezmw.md)
   Returns a Boolean value indicating whether the given message authentication code is valid for a block of data.
-- [static func isValidAuthenticationCode(HMAC<H>.MAC, authenticating: UnsafeRawBufferPointer, using: SymmetricKey) -> Bool](hmac/isvalidauthenticationcode(_:authenticating:using:)-5jbc8.md)
+- [static func isValidAuthenticationCode(HMAC<H>.MAC, authenticating: UnsafeRawBufferPointer, using: SymmetricKey) -> Bool](./hmac/isvalidauthenticationcode%28_,authenticating,using%29-5jbc8.md)
   Returns a Boolean value indicating whether the given message authentication code is valid for a block of data stored in a buffer.
-- [static func isValidAuthenticationCode<C, D>(C, authenticating: D, using: SymmetricKey) -> Bool](hmac/isvalidauthenticationcode(_:authenticating:using:)-5ilt9.md)
+- [static func isValidAuthenticationCode<C, D>(C, authenticating: D, using: SymmetricKey) -> Bool](./hmac/isvalidauthenticationcode%28_,authenticating,using%29-5ilt9.md)
   Returns a Boolean value indicating whether the given message authentication code represented as contiguous bytes is valid for a block of data.
 ### Instance Methods
-- [func update(bytes: RawSpan)](hmac/update(bytes:).md)
+- [func update(bytes: RawSpan)](./hmac/update%28bytes%29.md)
 ### Type Methods
-- [static func authenticationCode<D>(for: D, using: SymmetricKey) -> HMAC<H>.MAC](hmac/authenticationcode(for:using:)-737ab.md)
+- [static func authenticationCode<D>(for: D, using: SymmetricKey) -> HMAC<H>.MAC](./hmac/authenticationcode%28for,using%29-737ab.md)
   Computes a message authentication code for the given data.
-- [static func authenticationCode(for: RawSpan, using: SymmetricKey) -> HMAC<H>.MAC](hmac/authenticationcode(for:using:)-heea.md)
+- [static func authenticationCode(for: RawSpan, using: SymmetricKey) -> HMAC<H>.MAC](./hmac/authenticationcode%28for,using%29-heea.md)
   Computes a message authentication code for the given data.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct SymmetricKey](symmetrickey.md)
+### Message authentication codes
+- [struct SymmetricKey](./symmetrickey.md)
   A symmetric cryptographic key.
-- [struct SymmetricKeySize](symmetrickeysize.md)
+- [struct SymmetricKeySize](./symmetrickeysize.md)
   The sizes that a symmetric cryptographic key can take.
 
 

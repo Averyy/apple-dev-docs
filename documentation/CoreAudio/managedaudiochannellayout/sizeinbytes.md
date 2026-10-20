@@ -1,7 +1,8 @@
 # sizeInBytes
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size, in bytes, of the backing `AudioChannelLayout`.
 
@@ -11,7 +12,7 @@ The size, in bytes, of the backing `AudioChannelLayout`.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

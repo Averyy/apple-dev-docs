@@ -1,7 +1,8 @@
 # lockOnSleep
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var lockOnSleep: uint8
+```
+
+```c
+uint8 lockOnSleep;
 ```
 
 

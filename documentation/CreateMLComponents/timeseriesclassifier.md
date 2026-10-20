@@ -1,7 +1,8 @@
 # TimeSeriesClassifier
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -20,60 +21,61 @@ struct TimeSeriesClassifier<Scalar, Label> where Scalar : MLShapedArrayScalar, S
 ## Topics
 
 ### Creating a time series classifier
-- [init(labels: Set<Label>, configuration: TimeSeriesClassifierConfiguration)](timeseriesclassifier/init(labels:configuration:).md)
+- [init(labels: Set<Label>, configuration: TimeSeriesClassifierConfiguration)](./timeseriesclassifier/init%28labels,configuration%29.md)
   Creates a time series classifier.
 ### Inspecting a time series classifier
-- [var configuration: TimeSeriesClassifierConfiguration](timeseriesclassifier/configuration-swift.property.md)
+- [var configuration: TimeSeriesClassifierConfiguration](./timeseriesclassifier/configuration-swift.property.md)
   The configuration.
-- [var labels: Set<Label>](timeseriesclassifier/labels.md)
+- [var labels: Set<Label>](./timeseriesclassifier/labels.md)
   The set of possible labels.
 ### Fitting a time series classifier
-- [func fitted(to: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, Label>>, eventHandler: EventHandler?) async throws -> TimeSeriesClassifier<Scalar, Label>.Model](timeseriesclassifier/fitted(to:eventhandler:).md)
+- [func fitted(to: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, Label>>, eventHandler: EventHandler?) async throws -> TimeSeriesClassifier<Scalar, Label>.Model](./timeseriesclassifier/fitted%28to,eventhandler%29.md)
   Fits a time series classifier model to a sequence of examples.
-- [func fitted(to: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, Label>>, validateOn: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, Label>>, eventHandler: EventHandler?) async throws -> TimeSeriesClassifier<Scalar, Label>.Model](timeseriesclassifier/fitted(to:validateon:eventhandler:).md)
+- [func fitted(to: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, Label>>, validateOn: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, Label>>, eventHandler: EventHandler?) async throws -> TimeSeriesClassifier<Scalar, Label>.Model](./timeseriesclassifier/fitted%28to,validateon,eventhandler%29.md)
   Fits a time series classifier model to a sequence of examples.
 ### Supporting types
-- [TimeSeriesClassifier.Configuration](timeseriesclassifier/configuration-swift.typealias.md)
-- [TimeSeriesClassifier.Model](timeseriesclassifier/model.md)
+- [TimeSeriesClassifier.Configuration](./timeseriesclassifier/configuration-swift.typealias.md)
+- [TimeSeriesClassifier.Model](./timeseriesclassifier/model.md)
   A time-series classifier model.
 ### Default Implementations
-- [UpdatableSupervisedEstimator Implementations](timeseriesclassifier/updatablesupervisedestimator-implementations.md)
+- [UpdatableSupervisedEstimator Implementations](./timeseriesclassifier/updatablesupervisedestimator-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SupervisedEstimator](supervisedestimator.md)
-- [UpdatableSupervisedEstimator](updatablesupervisedestimator.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SupervisedEstimator](./supervisedestimator.md)
+- [UpdatableSupervisedEstimator](./updatablesupervisedestimator.md)
 
 ## See Also
 
-- [protocol Classifier](classifier.md)
+### Classifiers
+- [protocol Classifier](./classifier.md)
   An estimator that predicts classification probabilities.
-- [struct LogisticRegressionClassifier](logisticregressionclassifier.md)
+- [struct LogisticRegressionClassifier](./logisticregressionclassifier.md)
   A logistic regression classifier.
-- [struct LogisticRegressionClassifierModel](logisticregressionclassifiermodel.md)
+- [struct LogisticRegressionClassifierModel](./logisticregressionclassifiermodel.md)
   A trained logistic regression classifier model.
-- [struct BoostedTreeClassifier](boostedtreeclassifier.md)
+- [struct BoostedTreeClassifier](./boostedtreeclassifier.md)
   A gradient boosted decision tree classifier.
-- [struct BoostedTreeConfiguration](boostedtreeconfiguration.md)
+- [struct BoostedTreeConfiguration](./boostedtreeconfiguration.md)
   A boosted tree configuration.
-- [struct FullyConnectedNetworkClassifier](fullyconnectednetworkclassifier.md)
+- [struct FullyConnectedNetworkClassifier](./fullyconnectednetworkclassifier.md)
   A classifier that uses a fully connected network.
-- [struct FullyConnectedNetworkClassifierModel](fullyconnectednetworkclassifiermodel.md)
+- [struct FullyConnectedNetworkClassifierModel](./fullyconnectednetworkclassifiermodel.md)
   A classifier model that uses a fully connected network.
-- [struct FullyConnectedNetworkMultiLabelClassifier](fullyconnectednetworkmultilabelclassifier.md)
+- [struct FullyConnectedNetworkMultiLabelClassifier](./fullyconnectednetworkmultilabelclassifier.md)
   A classifier that uses a multi-label fully-connected network.
-- [struct FullyConnectedNetworkMultiLabelClassifierModel](fullyconnectednetworkmultilabelclassifiermodel.md)
+- [struct FullyConnectedNetworkMultiLabelClassifierModel](./fullyconnectednetworkmultilabelclassifiermodel.md)
   A multi-label classifier model that uses a fully-connected network.
-- [struct FullyConnectedNetworkConfiguration](fullyconnectednetworkconfiguration.md)
+- [struct FullyConnectedNetworkConfiguration](./fullyconnectednetworkconfiguration.md)
   A fully connected network configuration.
-- [struct TreeClassifierModel](treeclassifiermodel.md)
+- [struct TreeClassifierModel](./treeclassifiermodel.md)
   A trained tree classifier model.
-- [struct TimeSeriesClassifierConfiguration](timeseriesclassifierconfiguration.md)
+- [struct TimeSeriesClassifierConfiguration](./timeseriesclassifierconfiguration.md)
   The configuration for a time-series classifier.
 
 

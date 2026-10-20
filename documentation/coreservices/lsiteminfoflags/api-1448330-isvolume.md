@@ -1,7 +1,8 @@
 # isVolume
 
 **Framework**: Core Services  
-**Kind**: structdata
+**Kind**: structdata  
+**Role**: Type Property
 
 Item is the root directory of a volume or mount point.
 

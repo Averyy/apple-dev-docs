@@ -1,7 +1,8 @@
 # BundleIdWithoutIncludesResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response containing a single bundle ID, without including capability and profile details.
 
@@ -10,7 +11,7 @@ A response containing a single bundle ID, without including capability and profi
 
 ## Declaration
 
-```swift
+```
 object BundleIdWithoutIncludesResponse
 ```
 
@@ -21,21 +22,22 @@ object BundleIdWithoutIncludesResponse
 
 ## See Also
 
-- [object BundleId](bundleid.md)
+### Objects and types
+- [object BundleId](./bundleid.md)
   An App ID registered with Apple, associating a specific bundle identifier with capabilities and provisioning profiles.
-- [type BundleIdPlatform](bundleidplatform.md)
+- [type BundleIdPlatform](./bundleidplatform.md)
   Strings that represent the operating system intended for the bundle.
-- [object BundleIdCreateRequest](bundleidcreaterequest.md)
+- [object BundleIdCreateRequest](./bundleidcreaterequest.md)
   The request body you use to create a Bundle ID.
-- [object BundleIdUpdateRequest](bundleidupdaterequest.md)
+- [object BundleIdUpdateRequest](./bundleidupdaterequest.md)
   The request body you use to update a Bundle ID.
-- [object BundleIdResponse](bundleidresponse.md)
+- [object BundleIdResponse](./bundleidresponse.md)
   The response body for endpoints that create, read, or modify a single bundle ID.
-- [object BundleIdsResponse](bundleidsresponse.md)
+- [object BundleIdsResponse](./bundleidsresponse.md)
   The response body for endpoints that list bundle IDs.
-- [object BundleIdAppLinkageResponse](bundleidapplinkageresponse.md)
-- [object BundleIdBundleIdCapabilitiesLinkagesResponse](bundleidbundleidcapabilitieslinkagesresponse.md)
-- [object BundleIdProfilesLinkagesResponse](bundleidprofileslinkagesresponse.md)
+- [object BundleIdAppLinkageResponse](./bundleidapplinkageresponse.md)
+- [object BundleIdBundleIdCapabilitiesLinkagesResponse](./bundleidbundleidcapabilitieslinkagesresponse.md)
+- [object BundleIdProfilesLinkagesResponse](./bundleidprofileslinkagesresponse.md)
 
 
 ---

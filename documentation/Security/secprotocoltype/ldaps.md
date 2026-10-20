@@ -1,7 +1,8 @@
 # SecProtocolType.LDAPS
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates LDAP over TLS/SSL.
 
@@ -13,6 +14,10 @@ Indicates LDAP over TLS/SSL.
 
 ```swift
 case LDAPS
+```
+
+```c
+kSecProtocolTypeLDAPS
 ```
 
 

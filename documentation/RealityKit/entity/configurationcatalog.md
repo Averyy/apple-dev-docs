@@ -1,7 +1,8 @@
 # Entity.ConfigurationCatalog
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of alternative representations of an entity you can choose from.
 
@@ -25,7 +26,7 @@ A configuration catalog allows you to create an entity from alternative configur
 
 You can load a configuration catalog from a USD file with variant sets or a `.reality` file with a configuration catalog.
 
-##### Create a Configuration Catalog
+##### Create a configuration catalog
 
 To create a configuration catalog with RealityKit, first set up a configuration set for each category you want to represent. A configuration set consists of a name and an array of alternative representations for that category. For example, a configuration set can include different levels of detail or different material representations of an entity.
 
@@ -89,7 +90,7 @@ Save the catalog to a `.reality` file that your RealityKit app can load.
 try await configurableEntity.write(to: url)
 ```
 
-##### Load an Entity with a Configuration
+##### Load an entity with a configuration
 
 The following code example loads a small, red entity from the configuration catalog in the preceding example. The entity initializer looks for the catalog to have configuration sets named `size` and `color`, and the sets to contain configurations named `small` and `red`, respectively.
 
@@ -106,41 +107,42 @@ func loadSmallRedEntity(from url: URL) async throws -> Entity {
 ## Topics
 
 ### Opening a catalog from a file
-- [init(from: URL) async throws](entity/configurationcatalog/init(from:).md)
+- [init(from: URL) async throws](./configurationcatalog/init%28from%29.md)
   Loads a configuration catalog from a USD or reality file.
 ### Defining configuration choices
-- [Entity.ConfigurationCatalog.Configuration](entity/configurationcatalog/configuration.md)
+- [Entity.ConfigurationCatalog.Configuration](./configurationcatalog/configuration.md)
   A type that represents an alternative that you can choose.
-- [Entity.ConfigurationCatalog.ConfigurationSet](entity/configurationcatalog/configurationset.md)
+- [Entity.ConfigurationCatalog.ConfigurationSet](./configurationcatalog/configurationset.md)
   A collection of alternatives to choose from.
-- [Entity.ConfigurationCatalog.ConfigurationCombination](entity/configurationcatalog/configurationcombination.md)
+- [Entity.ConfigurationCatalog.ConfigurationCombination](./configurationcatalog/configurationcombination.md)
   A type that associates an entity with a combination of configurations.
 ### Querying available configuration choices
-- [var configurationSets: [String : Entity.ConfigurationCatalog.ConfigurationSet]](entity/configurationcatalog/configurationsets.md)
+- [var configurationSets: [String : Entity.ConfigurationCatalog.ConfigurationSet]](./configurationcatalog/configurationsets.md)
   The configuration sets that configure the default prim or entity.
 ### Creating a configuration catalog from entities
-- [init(configurationSets: [Entity.ConfigurationCatalog.ConfigurationSet], combinations: [Entity.ConfigurationCatalog.ConfigurationCombination]) throws](entity/configurationcatalog/init(configurationsets:combinations:)-1difa.md)
+- [init(configurationSets: [Entity.ConfigurationCatalog.ConfigurationSet], combinations: [Entity.ConfigurationCatalog.ConfigurationCombination]) throws](./configurationcatalog/init%28configurationsets,combinations%29-1difa.md)
   Creates a configuration catalog from in-memory entities and an array of configuration sets.
-- [init(configurationSets: [Entity.ConfigurationCatalog.ConfigurationSet], combinations: [Entity.ConfigurationCatalog.ConfigurationCombination]) throws](entity/configurationcatalog/init(configurationsets:combinations:)-1difa.md)
+- [init(configurationSets: [Entity.ConfigurationCatalog.ConfigurationSet], combinations: [Entity.ConfigurationCatalog.ConfigurationCombination]) throws](./configurationcatalog/init%28configurationsets,combinations%29-1difa.md)
   Creates a configuration catalog from in-memory entities and an array of configuration sets.
 ### Saving a configuration catalog to a file
-- [func write(to: URL) async throws](entity/configurationcatalog/write(to:).md)
+- [func write(to: URL) async throws](./configurationcatalog/write%28to%29.md)
   Writes the configurations of the configuration catalog to a reality file.
 ### Writing to a file
-- [func write(to: URL, options: Entity.WriteOptions) async throws](entity/configurationcatalog/write(to:options:).md)
+- [func write(to: URL, options: Entity.WriteOptions) async throws](./configurationcatalog/write%28to,options%29.md)
   Writes the configurations of the configuration catalog to a reality file.
 ### Initializers
-- [init(configurationSets:combinations:)](entity/configurationcatalog/init(configurationsets:combinations:).md)
+- [init(configurationSets:combinations:)](./configurationcatalog/init%28configurationsets,combinations%29.md)
   Creates a configuration catalog from in-memory entities and an array of configuration sets.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../Swift/equatable.md)
 
 ## See Also
 
-- [convenience init(from: Entity.ConfigurationCatalog, configurations: [String : String]?) async throws](entity/init(from:configurations:).md)
+### Loading an entity from a configuration catalog
+- [convenience init(from: Entity.ConfigurationCatalog, configurations: [String : String]?) async throws](./init%28from,configurations%29.md)
   Loads an entity from a configuration catalog and a dictionary of configuration choices.
 
 

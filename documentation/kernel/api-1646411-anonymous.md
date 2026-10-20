@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOAudioControlUsageCoreAudioProperty](1646411-anonymous/kioaudiocontrolusagecoreaudioproperty.md)
-- [kIOAudioControlUsageInput](1646411-anonymous/kioaudiocontrolusageinput.md)
-- [kIOAudioControlUsageOutput](1646411-anonymous/kioaudiocontrolusageoutput.md)
-- [kIOAudioControlUsagePassThru](1646411-anonymous/kioaudiocontrolusagepassthru.md)
+- [kIOAudioControlUsageCoreAudioProperty](./api-1646411-anonymous/kioaudiocontrolusagecoreaudioproperty.md)
+- [kIOAudioControlUsageInput](./api-1646411-anonymous/kioaudiocontrolusageinput.md)
+- [kIOAudioControlUsageOutput](./api-1646411-anonymous/kioaudiocontrolusageoutput.md)
+- [kIOAudioControlUsagePassThru](./api-1646411-anonymous/kioaudiocontrolusagepassthru.md)
 
 
 ---

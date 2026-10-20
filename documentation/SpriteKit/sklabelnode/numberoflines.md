@@ -1,7 +1,8 @@
 # numberOfLines
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines the number of lines to draw.
 
@@ -20,15 +21,20 @@ Determines the number of lines to draw.
 var numberOfLines: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSInteger numberOfLines;
+```
+
 #### Discussion
 
 The default value is 1 (a single line). A value of 0 in interpreted as an unlimited number of lines. If the height of the text reaches the number of lines, the text will be truncated using the line break mode.
 
 ## See Also
 
-- [var preferredMaxLayoutWidth: CGFloat](sklabelnode/preferredmaxlayoutwidth.md)
+### Defining a Label’s Line-Breaking Behavior
+- [var preferredMaxLayoutWidth: CGFloat](./preferredmaxlayoutwidth.md)
   The width, in screen points, after which line-break mode should be applied.
-- [var lineBreakMode: NSLineBreakMode](sklabelnode/linebreakmode.md)
+- [var lineBreakMode: NSLineBreakMode](./linebreakmode.md)
   Determines the line-break mode for multiple lines.
 
 

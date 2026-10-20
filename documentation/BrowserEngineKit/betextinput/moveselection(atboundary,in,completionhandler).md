@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Moves the text-selection caret relative to the current position.
@@ -15,16 +16,24 @@ Moves the text-selection caret relative to the current position.
 ## Declaration
 
 ```swift
+func moveSelection(atBoundary granularity: UITextGranularity, in direction: UITextStorageDirection, completionHandler: @escaping @Sendable () -> Void)
+```
+
+```swift
 func moveSelection(atBoundary granularity: UITextGranularity, in direction: UITextStorageDirection) async
+```
+
+```objc
+- (void) moveSelectionAtBoundary:(UITextGranularity) granularity inStorageDirection:(UITextStorageDirection) direction completionHandler:(void (^)()) completionHandler;
 ```
 
 ## Mentions
 
-- [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
+- [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
 #### Discussion
 
-If you return `false` from [`textInteractionGesture(_:shouldBeginAt:)`](betextinput/textinteractiongesture(_:shouldbeginat:).md) for the gesture that moves the caret, then the text system doesn’t call this method.
+If you return `false` from [`textInteractionGesture(_:shouldBeginAt:)`](./textinteractiongesture%28_,shouldbeginat%29.md) for the gesture that moves the caret, then the text system doesn’t call this method.
 
 ## Parameters
 

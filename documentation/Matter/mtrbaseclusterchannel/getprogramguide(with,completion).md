@@ -1,7 +1,8 @@
 # getProgramGuide(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command GetProgramGuide
 
@@ -17,7 +18,15 @@ Command GetProgramGuide
 ## Declaration
 
 ```swift
+func getProgramGuide(with params: MTRChannelClusterGetProgramGuideParams?, completion: @escaping @Sendable (MTRChannelClusterProgramGuideResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func programGuide(with params: MTRChannelClusterGetProgramGuideParams?) async throws -> MTRChannelClusterProgramGuideResponseParams
+```
+
+```objc
+- (void) getProgramGuideWithParams:(MTRChannelClusterGetProgramGuideParams *) params completion:(void (^)(MTRChannelClusterProgramGuideResponseParams *data, NSError *error)) completion;
 ```
 
 #### Discussion

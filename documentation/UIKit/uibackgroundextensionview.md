@@ -1,7 +1,8 @@
 # UIBackgroundExtensionView
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A view that extends content to fill its own bounds.
 
@@ -18,6 +19,10 @@ A view that extends content to fill its own bounds.
 class UIBackgroundExtensionView
 ```
 
+```objc
+@interface UIBackgroundExtensionView : UIView
+```
+
 #### Overview
 
 A background extension view can be laid out to extend outside the safe area, such as under a sidebar or an inspector. By default, the view lays out its content to stay within the safe area, and uses modifications of the content along the edges to fill the container view.
@@ -25,49 +30,50 @@ A background extension view can be laid out to extend outside the safe area, suc
 ## Topics
 
 ### Instance Properties
-- [var automaticallyPlacesContentView: Bool](uibackgroundextensionview/automaticallyplacescontentview.md)
+- [var automaticallyPlacesContentView: Bool](./uibackgroundextensionview/automaticallyplacescontentview.md)
   Controls the automatic safe area placement of the `contentView` within the container.
-- [var contentView: UIView?](uibackgroundextensionview/contentview.md)
+- [var contentView: UIView?](./uibackgroundextensionview/contentview.md)
   The content view to extend to fill the `UIBackgroundExtensionView`.
 
 ## Relationships
 
 ### Inherits From
-- [UIView](uiview.md)
+- [UIView](./uiview.md)
 ### Conforms To
-- [CALayerDelegate](../quartzcore/calayerdelegate.md)
-- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
-- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIAccessibilityIdentification](uiaccessibilityidentification.md)
-- [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
-- [UIAppearance](uiappearance.md)
-- [UIAppearanceContainer](uiappearancecontainer.md)
-- [UICoordinateSpace](uicoordinatespace.md)
-- [UIDynamicItem](uidynamicitem.md)
-- [UIFocusEnvironment](uifocusenvironment.md)
-- [UIFocusItem](uifocusitem.md)
-- [UIFocusItemContainer](uifocusitemcontainer.md)
-- [UILargeContentViewerItem](uilargecontentvieweritem.md)
-- [UIPasteConfigurationSupporting](uipasteconfigurationsupporting.md)
-- [UIPopoverPresentationControllerSourceItem](uipopoverpresentationcontrollersourceitem.md)
-- [UIResponderStandardEditActions](uiresponderstandardeditactions.md)
-- [UITraitChangeObservable](uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](uitraitenvironment.md)
-- [UIUserActivityRestoring](uiuseractivityrestoring.md)
+- [CALayerDelegate](../QuartzCore/calayerdelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/cmbodyidentifiable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIAccessibilityIdentification](./uiaccessibilityidentification.md)
+- [UIActivityItemsConfigurationProviding](./uiactivityitemsconfigurationproviding.md)
+- [UIAppearance](./uiappearance.md)
+- [UIAppearanceContainer](./uiappearancecontainer.md)
+- [UICoordinateSpace](./uicoordinatespace.md)
+- [UIDynamicItem](./uidynamicitem.md)
+- [UIFocusEnvironment](./uifocusenvironment.md)
+- [UIFocusItem](./uifocusitem.md)
+- [UIFocusItemContainer](./uifocusitemcontainer.md)
+- [UILargeContentViewerItem](./uilargecontentvieweritem.md)
+- [UIPasteConfigurationSupporting](./uipasteconfigurationsupporting.md)
+- [UIPopoverPresentationControllerSourceItem](./uipopoverpresentationcontrollersourceitem.md)
+- [UIResponderStandardEditActions](./uiresponderstandardeditactions.md)
+- [UITraitChangeObservable](./uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](./uitraitenvironment.md)
+- [UIUserActivityRestoring](./uiuseractivityrestoring.md)
 
 ## See Also
 
-- [class UIScrollEdgeElementContainerInteraction](uiscrolledgeelementcontainerinteraction.md)
+### Interacting with adjacent views
+- [class UIScrollEdgeElementContainerInteraction](./uiscrolledgeelementcontainerinteraction.md)
   Add this interaction to a container view of views that overlay the edge of a scroll view. Any descendants of this view that should affect the shape of the edge effect, such as labels, images, glass views, and controls, will automatically do so.
 
 

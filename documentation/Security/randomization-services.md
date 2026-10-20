@@ -1,6 +1,7 @@
 # Randomization Services
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: API Collection
 
 Generate cryptographically secure random numbers.
 
@@ -10,16 +11,16 @@ Many security operations rely on randomization to avoid reproducibility. This is
 
 But the strength of such a password depends on the quality of the randomization. True randomization is not possible in a deterministic system, such as one where software instructions from a bounded set are executed according to well-defined rules. But even “good” randomization (in a statistical sense) is difficult to produce under these conditions. If an attacker can infer patterns in insufficiently randomized data, your system becomes compromised. Use randomization services to generate a cryptographically secure set of random numbers.
 
-![Diagram showing random number generation.](/images/com.apple.security/media-2903623@2x.png)
+![Diagram showing random number generation.](https://developer.apple.com/tutorials/images/com.apple.security/media-2903623@2x.png)
 
 ## Topics
 
 ### Random Numbers
-- [func SecRandomCopyBytes(SecRandomRef?, Int, UnsafeMutableRawPointer) -> Int32](secrandomcopybytes(_:_:_:).md)
+- [func SecRandomCopyBytes(SecRandomRef?, Int, UnsafeMutableRawPointer) -> Int32](./secrandomcopybytes%28_,_,_%29.md)
   Generates an array of cryptographically secure random bytes.
-- [typealias SecRandomRef](secrandomref.md)
+- [typealias SecRandomRef](./secrandomref.md)
   An abstract Core Foundation-type object containing information about a random number generator.
-- [let kSecRandomDefault: SecRandomRef](ksecrandomdefault.md)
+- [let kSecRandomDefault: SecRandomRef](./ksecrandomdefault.md)
   An alias for the default random number generator.
 
 

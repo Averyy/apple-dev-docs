@@ -1,7 +1,8 @@
 # IP
 
 **Framework**: Network  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The system definition of the Internet Protocol (IP).
 
@@ -29,25 +30,25 @@ Can be used to insert IP into a protocol stack.
 ## Topics
 
 ### Initializers
-- [init()](ip/init.md)
+- [init()](./ip/init%28%29.md)
 ### Instance Methods
-- [func fragmentationDisabled(Bool) -> IP](ip/fragmentationdisabled(_:).md)
+- [func fragmentationDisabled(Bool) -> IP](./ip/fragmentationdisabled%28_%29.md)
   Configure IP to disable fragmentation on outgoing packets.
-- [func hopLimit(UInt8) -> IP](ip/hoplimit(_:).md)
+- [func hopLimit(UInt8) -> IP](./ip/hoplimit%28_%29.md)
   Configure the IP hop limit.
-- [func localAddressPreference(NWProtocolIP.Options.AddressPreference) -> IP](ip/localaddresspreference(_:).md)
-- [func minimumMTU(Bool) -> IP](ip/minimummtu(_:).md)
+- [func localAddressPreference(NWProtocolIP.Options.AddressPreference) -> IP](./ip/localaddresspreference%28_%29.md)
+- [func minimumMTU(Bool) -> IP](./ip/minimummtu%28_%29.md)
   Configure IP to use the minimum MTU value.
-- [func multicastLoopbackDisabled(Bool) -> IP](ip/multicastloopbackdisabled(_:).md)
+- [func multicastLoopbackDisabled(Bool) -> IP](./ip/multicastloopbackdisabled%28_%29.md)
   Specify if multicast packets should be looped back for local delivery.
-- [func receiveTimeCalculated(Bool) -> IP](ip/receivetimecalculated(_:).md)
+- [func receiveTimeCalculated(Bool) -> IP](./ip/receivetimecalculated%28_%29.md)
   Configure IP to calculate receive time for inbound packets.
-- [func version(NWProtocolIP.Options.Version) -> IP](ip/version(_:).md)
+- [func version(NWProtocolIP.Options.Version) -> IP](./ip/version%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [NetworkProtocolOptions](networkprotocoloptions.md)
+- [NetworkProtocolOptions](./networkprotocoloptions.md)
 
 
 ---

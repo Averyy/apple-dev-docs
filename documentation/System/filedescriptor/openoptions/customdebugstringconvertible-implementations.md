@@ -1,11 +1,12 @@
 # CustomDebugStringConvertible Implementations
 
-**Framework**: System
+**Framework**: System  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var debugDescription: String](filedescriptor/openoptions/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A textual representation of the open options, suitable for debugging.
 
 

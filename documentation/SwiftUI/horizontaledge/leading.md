@@ -1,7 +1,8 @@
 # HorizontalEdge.leading
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The leading edge.
 
@@ -22,7 +23,8 @@ case leading
 
 ## See Also
 
-- [HorizontalEdge.trailing](horizontaledge/trailing.md)
+### Getting the edges
+- [HorizontalEdge.trailing](./trailing.md)
   The trailing edge.
 
 

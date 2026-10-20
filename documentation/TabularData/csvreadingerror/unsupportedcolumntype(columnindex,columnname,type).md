@@ -1,7 +1,8 @@
 # CSVReadingError.unsupportedColumnType(columnIndex:columnName:type:)
 
 **Framework**: TabularData  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates that a column type is not one of the types supported by CSV.
 

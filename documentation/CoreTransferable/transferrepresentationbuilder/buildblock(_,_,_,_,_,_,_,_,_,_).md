@@ -1,7 +1,8 @@
 # buildBlock(_:_:_:_:_:_:_:_:_:_:)
 
 **Framework**: Core Transferable  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Combines multiple transfer representations into a single transfer representation.
 
@@ -22,21 +23,22 @@ static func buildBlock<C1, C2, C3, C4, C5, C6, C7, C8, C9, C10>(_ content1: C1, 
 
 ## See Also
 
-- [static func buildBlock<C1, C2>(C1, C2) -> TupleTransferRepresentation<Item, (C1, C2)>](transferrepresentationbuilder/buildblock(_:_:).md)
+### Combining transfer representations
+- [static func buildBlock<C1, C2>(C1, C2) -> TupleTransferRepresentation<Item, (C1, C2)>](./buildblock%28_,_%29.md)
   Combines multiple transfer representations into a single transfer representation.
-- [static func buildBlock<C1, C2, C3>(C1, C2, C3) -> TupleTransferRepresentation<Item, (C1, C2, C3)>](transferrepresentationbuilder/buildblock(_:_:_:).md)
+- [static func buildBlock<C1, C2, C3>(C1, C2, C3) -> TupleTransferRepresentation<Item, (C1, C2, C3)>](./buildblock%28_,_,_%29.md)
   Combines multiple transfer representations into a single transfer representation.
-- [static func buildBlock<C1, C2, C3, C4>(C1, C2, C3, C4) -> TupleTransferRepresentation<Item, (C1, C2, C3, C4)>](transferrepresentationbuilder/buildblock(_:_:_:_:).md)
+- [static func buildBlock<C1, C2, C3, C4>(C1, C2, C3, C4) -> TupleTransferRepresentation<Item, (C1, C2, C3, C4)>](./buildblock%28_,_,_,_%29.md)
   Combines multiple transfer representations into a single transfer representation.
-- [static func buildBlock<C1, C2, C3, C4, C5>(C1, C2, C3, C4, C5) -> TupleTransferRepresentation<Item, (C1, C2, C3, C4, C5)>](transferrepresentationbuilder/buildblock(_:_:_:_:_:).md)
+- [static func buildBlock<C1, C2, C3, C4, C5>(C1, C2, C3, C4, C5) -> TupleTransferRepresentation<Item, (C1, C2, C3, C4, C5)>](./buildblock%28_,_,_,_,_%29.md)
   Combines multiple transfer representations into a single transfer representation.
-- [static func buildBlock<C1, C2, C3, C4, C5, C6>(C1, C2, C3, C4, C5, C6) -> TupleTransferRepresentation<Item, (C1, C2, C3, C4, C5, C6)>](transferrepresentationbuilder/buildblock(_:_:_:_:_:_:).md)
+- [static func buildBlock<C1, C2, C3, C4, C5, C6>(C1, C2, C3, C4, C5, C6) -> TupleTransferRepresentation<Item, (C1, C2, C3, C4, C5, C6)>](./buildblock%28_,_,_,_,_,_%29.md)
   Combines multiple transfer representations into a single transfer representation.
-- [static func buildBlock<C1, C2, C3, C4, C5, C6, C7>(C1, C2, C3, C4, C5, C6, C7) -> TupleTransferRepresentation<Item, (C1, C2, C3, C4, C5, C6, C7)>](transferrepresentationbuilder/buildblock(_:_:_:_:_:_:_:).md)
+- [static func buildBlock<C1, C2, C3, C4, C5, C6, C7>(C1, C2, C3, C4, C5, C6, C7) -> TupleTransferRepresentation<Item, (C1, C2, C3, C4, C5, C6, C7)>](./buildblock%28_,_,_,_,_,_,_%29.md)
   Combines multiple transfer representations into a single transfer representation.
-- [static func buildBlock<C1, C2, C3, C4, C5, C6, C7, C8>(C1, C2, C3, C4, C5, C6, C7, C8) -> TupleTransferRepresentation<Item, (C1, C2, C3, C4, C5, C6, C7, C8)>](transferrepresentationbuilder/buildblock(_:_:_:_:_:_:_:_:).md)
+- [static func buildBlock<C1, C2, C3, C4, C5, C6, C7, C8>(C1, C2, C3, C4, C5, C6, C7, C8) -> TupleTransferRepresentation<Item, (C1, C2, C3, C4, C5, C6, C7, C8)>](./buildblock%28_,_,_,_,_,_,_,_%29.md)
   Combines multiple transfer representations into a single transfer representation.
-- [static func buildBlock<C1, C2, C3, C4, C5, C6, C7, C8, C9>(C1, C2, C3, C4, C5, C6, C7, C8, C9) -> TupleTransferRepresentation<Item, (C1, C2, C3, C4, C5, C6, C7, C8, C9)>](transferrepresentationbuilder/buildblock(_:_:_:_:_:_:_:_:_:).md)
+- [static func buildBlock<C1, C2, C3, C4, C5, C6, C7, C8, C9>(C1, C2, C3, C4, C5, C6, C7, C8, C9) -> TupleTransferRepresentation<Item, (C1, C2, C3, C4, C5, C6, C7, C8, C9)>](./buildblock%28_,_,_,_,_,_,_,_,_%29.md)
   Combines multiple transfer representations into a single transfer representation.
 
 

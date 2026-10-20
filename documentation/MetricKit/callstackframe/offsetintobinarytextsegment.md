@@ -1,7 +1,8 @@
 # offsetIntoBinaryTextSegment
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Offset into binary text segment
 
@@ -24,11 +25,12 @@ This may be nil if the offset information is unavailable.
 
 ## See Also
 
-- [let binaryUUID: UUID?](callstackframe/binaryuuid.md)
+### Frame details
+- [let binaryUUID: UUID?](./binaryuuid.md)
   Binary UUID (references CallStackTree.binaryInfo)
-- [let address: UInt64?](callstackframe/address.md)
+- [let address: UInt64?](./address.md)
   Absolute address
-- [let sampleCount: Int?](callstackframe/samplecount.md)
+- [let sampleCount: Int?](./samplecount.md)
   Sample count (for sampled stack traces)
 
 

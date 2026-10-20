@@ -1,7 +1,8 @@
 # value(atAngle:as:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the data value at the given angle, or `nil` if the angle does not correspond to a valid data value.
 

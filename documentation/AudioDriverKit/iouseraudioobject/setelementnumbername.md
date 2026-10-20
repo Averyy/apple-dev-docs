@@ -1,14 +1,15 @@
 # SetElementNumberName
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 21.0+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetElementNumberName(IOUserAudioObjectPropertyElement in_element, IOUserAudioObjectPropertyScope in_scope, OSString *in_number_name);
 ```
 

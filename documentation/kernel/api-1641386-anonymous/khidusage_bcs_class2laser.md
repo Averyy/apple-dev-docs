@@ -1,14 +1,15 @@
 # kHIDUsage_BCS_Class2Laser
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_BCS_Class2Laser = 0x33
 ```
 

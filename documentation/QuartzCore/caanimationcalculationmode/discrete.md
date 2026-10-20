@@ -1,7 +1,8 @@
 # discrete
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Each keyframe value is used in turn, no interpolated values are calculated.
 
@@ -19,11 +20,15 @@ Each keyframe value is used in turn, no interpolated values are calculated.
 static let discrete: CAAnimationCalculationMode
 ```
 
+```c
+extern CAAnimationCalculationMode const kCAAnimationDiscrete;
+```
+
 #### Discussion
 
-Keyframe animations based on discrete calculation interpolation require one less element in the [`values`](cakeyframeanimation/values.md) array than the [`keyTimes`](cakeyframeanimation/keytimes.md) array. Each `value / keyTime` pair represents the value from the specified time until the next keyframe.
+Keyframe animations based on discrete calculation interpolation require one less element in the [`values`](../cakeyframeanimation/values.md) array than the [`keyTimes`](../cakeyframeanimation/keytimes.md) array. Each `value / keyTime` pair represents the value from the specified time until the next keyframe.
 
-For example, given the [`CAKeyframeAnimation`](cakeyframeanimation.md) created in the following code, the penultimate keyTime, `0.75`, has a related value of `60`. The value of `position.y` will remain at `60` until the animation completes.
+For example, given the [`CAKeyframeAnimation`](../cakeyframeanimation.md) created in the following code, the penultimate keyTime, `0.75`, has a related value of `60`. The value of `position.y` will remain at `60` until the animation completes.
 
 ```swift
 let keyframeAnimation = CAKeyframeAnimation(keyPath: "position.y")
@@ -36,17 +41,18 @@ keyframeAnimation.values = [310, 60, 120, 60]
 
 A layer animated with the keyframe animation created by the code above and with linearly interpolated horizontal movement would describe a path similar to the following figure.
 
-![Tracing the path of an animation using discrete keyframes](/images/com.apple.quartzcore/media-2776786@2x.png)
+![Tracing the path of an animation using discrete keyframes](https://developer.apple.com/tutorials/images/com.apple.quartzcore/media-2776786@2x.png)
 
 ## See Also
 
-- [static let linear: CAAnimationCalculationMode](caanimationcalculationmode/linear.md)
+### Constants
+- [static let linear: CAAnimationCalculationMode](./linear.md)
   Simple linear calculation between keyframe values.
-- [static let paced: CAAnimationCalculationMode](caanimationcalculationmode/paced.md)
+- [static let paced: CAAnimationCalculationMode](./paced.md)
   Linear keyframe values are interpolated to produce an even pace throughout the animation.
-- [static let cubic: CAAnimationCalculationMode](caanimationcalculationmode/cubic.md)
+- [static let cubic: CAAnimationCalculationMode](./cubic.md)
   Smooth spline calculation between keyframe values.
-- [static let cubicPaced: CAAnimationCalculationMode](caanimationcalculationmode/cubicpaced.md)
+- [static let cubicPaced: CAAnimationCalculationMode](./cubicpaced.md)
   Cubic keyframe values are interpolated to produce an even pace throughout the animation.
 
 

@@ -1,7 +1,8 @@
 # authorDisplayName
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The display name for the playlist defined in the app.
 
@@ -17,25 +18,30 @@ The display name for the playlist defined in the app.
 var authorDisplayName: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * authorDisplayName;
+```
+
 #### Discussion
 
 The system requires this property for 3rd party apps. Defaults to the app display name when not defined.
 
 ## See Also
 
-- [var descriptionText: String?](mpmediaplaylist/descriptiontext.md)
+### Retrieving information about a playlist
+- [var descriptionText: String?](./descriptiontext.md)
   User supplied text that describes the playlist.
-- [var name: String?](mpmediaplaylist/name.md)
+- [var name: String?](./name.md)
   The name of the playlist.
-- [var persistentID: MPMediaEntityPersistentID](mpmediaplaylist/persistentid.md)
+- [var persistentID: MPMediaEntityPersistentID](./persistentid.md)
   The persistent identifier for the playlist.
-- [var cloudGlobalID: String?](mpmediaplaylist/cloudglobalid.md)
+- [var cloudGlobalID: String?](./cloudglobalid.md)
   The cloud identifier for the playlist.
-- [var playlistAttributes: MPMediaPlaylistAttribute](mpmediaplaylist/playlistattributes.md)
+- [var playlistAttributes: MPMediaPlaylistAttribute](./playlistattributes.md)
   The attributes associated with the playlist.
-- [struct MPMediaPlaylistAttribute](mpmediaplaylistattribute.md)
+- [struct MPMediaPlaylistAttribute](../mpmediaplaylistattribute.md)
   Attributes define the type of playlist.
-- [var seedItems: [MPMediaItem]?](mpmediaplaylist/seeditems.md)
+- [var seedItems: [MPMediaItem]?](./seeditems.md)
   The items seeded to generate the playlist; applies only to Genius playlists.
 
 

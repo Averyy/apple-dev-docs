@@ -1,7 +1,8 @@
 # mapTemplate(_:didFailToShareDestinationFor:error:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when a vehicle failed to handle a shared trip’s destination
 
@@ -14,6 +15,10 @@ Called when a vehicle failed to handle a shared trip’s destination
 
 ```swift
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, didFailToShareDestinationFor trip: CPTrip, error: any Error)
+```
+
+```objc
+- (void) mapTemplate:(CPMapTemplate *) mapTemplate didFailToShareDestinationForTrip:(CPTrip *) trip error:(NSError *) error;
 ```
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Create ML  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether the stream has provided its final iteration.
@@ -17,11 +18,12 @@ var hasFinishedStreaming: Bool { get }
 
 #### Discussion
 
-This method updates [`cgImage`](mlvisualizable/cgimage.md) to the next iteration.
+This method updates [`cgImage`](../mlvisualizable/cgimage.md) to the next iteration.
 
 ## See Also
 
-- [func nextIteration()](mlstreamingvisualizable/nextiteration.md)
+### Seeing the next visualization
+- [func nextIteration()](./nextiteration%28%29.md)
   Advances the visualization stream to the next iteration.
 
 

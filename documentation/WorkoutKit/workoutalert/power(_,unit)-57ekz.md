@@ -1,7 +1,8 @@
 # power(_:unit:)
 
 **Framework**: WorkoutKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new power alert for the target range.
 
@@ -18,6 +19,8 @@ Creates a new power alert for the target range.
 static func power(_ range: ClosedRange<Double>, unit: UnitPower) -> Self
 ```
 
+Available when `Self` is `PowerRangeAlert`.
+
 ## Parameters
 
 - `range`: A closed range of power values.
@@ -25,15 +28,16 @@ static func power(_ range: ClosedRange<Double>, unit: UnitPower) -> Self
 
 ## See Also
 
-- [struct PowerRangeAlert](powerrangealert.md)
+### Creating power alerts
+- [struct PowerRangeAlert](../powerrangealert.md)
   An alert for a range of power values.
-- [static func power(Double, unit: UnitPower) -> Self](workoutalert/power(_:unit:)-289mz.md)
+- [static func power(Double, unit: UnitPower) -> Self](./power%28_,unit%29-289mz.md)
   Creates an alert for the specified power threshold.
-- [struct PowerThresholdAlert](powerthresholdalert.md)
+- [struct PowerThresholdAlert](../powerthresholdalert.md)
   An alert for a power threshold.
-- [static func power(zone: Int) -> Self](workoutalert/power(zone:).md)
+- [static func power(zone: Int) -> Self](./power%28zone%29.md)
   Creates a new alert for the specified power zone.
-- [struct PowerZoneAlert](powerzonealert.md)
+- [struct PowerZoneAlert](../powerzonealert.md)
   An alert for a power zone.
 
 

@@ -1,14 +1,15 @@
 # gIOAVCUnitType
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 const OSSymbol *gIOAVCUnitType;
 ```
 

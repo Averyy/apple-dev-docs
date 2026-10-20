@@ -1,7 +1,8 @@
 # OSSystemExtensionRequest.Result.willCompleteAfterReboot
 
 **Framework**: System Extensions  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The request requires a restart to complete successfully.
 
@@ -14,9 +15,14 @@ The request requires a restart to complete successfully.
 case willCompleteAfterReboot
 ```
 
+```c
+OSSystemExtensionRequestWillCompleteAfterReboot
+```
+
 ## See Also
 
-- [OSSystemExtensionRequest.Result.completed](ossystemextensionrequest/result/completed.md)
+### Results
+- [OSSystemExtensionRequest.Result.completed](./completed.md)
   The request completed successfully.
 
 

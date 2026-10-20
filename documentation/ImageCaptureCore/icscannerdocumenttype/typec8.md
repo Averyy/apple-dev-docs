@@ -1,7 +1,8 @@
 # ICScannerDocumentType.typeC8
 
 **Framework**: ImageCaptureCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 10.4+
@@ -12,23 +13,28 @@
 case typeC8
 ```
 
+```c
+ICScannerDocumentTypeC8
+```
+
 ## See Also
 
-- [ICScannerDocumentType.type10](icscannerdocumenttype/type10.md)
-- [ICScannerDocumentType.type10R](icscannerdocumenttype/type10r.md)
-- [ICScannerDocumentType.type110](icscannerdocumenttype/type110.md)
-- [ICScannerDocumentType.type11R](icscannerdocumenttype/type11r.md)
-- [ICScannerDocumentType.type12R](icscannerdocumenttype/type12r.md)
-- [ICScannerDocumentType.type135](icscannerdocumenttype/type135.md)
-- [ICScannerDocumentType.type2A0](icscannerdocumenttype/type2a0.md)
-- [ICScannerDocumentType.type3R](icscannerdocumenttype/type3r.md)
-- [ICScannerDocumentType.type4A0](icscannerdocumenttype/type4a0.md)
-- [ICScannerDocumentType.type4R](icscannerdocumenttype/type4r.md)
-- [ICScannerDocumentType.type5R](icscannerdocumenttype/type5r.md)
-- [ICScannerDocumentType.type6R](icscannerdocumenttype/type6r.md)
-- [ICScannerDocumentType.type8R](icscannerdocumenttype/type8r.md)
-- [ICScannerDocumentType.typeA0](icscannerdocumenttype/typea0.md)
-- [ICScannerDocumentType.typeA1](icscannerdocumenttype/typea1.md)
+### Constants
+- [ICScannerDocumentType.type10](./type10.md)
+- [ICScannerDocumentType.type10R](./type10r.md)
+- [ICScannerDocumentType.type110](./type110.md)
+- [ICScannerDocumentType.type11R](./type11r.md)
+- [ICScannerDocumentType.type12R](./type12r.md)
+- [ICScannerDocumentType.type135](./type135.md)
+- [ICScannerDocumentType.type2A0](./type2a0.md)
+- [ICScannerDocumentType.type3R](./type3r.md)
+- [ICScannerDocumentType.type4A0](./type4a0.md)
+- [ICScannerDocumentType.type4R](./type4r.md)
+- [ICScannerDocumentType.type5R](./type5r.md)
+- [ICScannerDocumentType.type6R](./type6r.md)
+- [ICScannerDocumentType.type8R](./type8r.md)
+- [ICScannerDocumentType.typeA0](./typea0.md)
+- [ICScannerDocumentType.typeA1](./typea1.md)
 
 
 ---

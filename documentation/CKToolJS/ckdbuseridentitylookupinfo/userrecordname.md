@@ -1,7 +1,8 @@
 # userRecordName
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The record name field in the associated user’s record.
 
@@ -10,7 +11,7 @@ The record name field in the associated user’s record.
 
 ## Declaration
 
-```swift
+```
 attribute string? userRecordName;
 ```
 

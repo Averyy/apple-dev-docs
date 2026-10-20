@@ -1,7 +1,8 @@
 # durationInSeconds
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The segment duration in seconds.
 
@@ -22,13 +23,14 @@ var durationInSeconds: TimeInterval { get }
 
 ## See Also
 
-- [var range: Range<Int>](temporalsegmentidentifier/range.md)
+### Getting the properties
+- [var range: Range<Int>](./range.md)
   The segment’s timestamp range.
-- [var rangeInSeconds: Range<TimeInterval>](temporalsegmentidentifier/rangeinseconds.md)
+- [var rangeInSeconds: Range<TimeInterval>](./rangeinseconds.md)
   The time range in seconds.
-- [var source: String](temporalsegmentidentifier/source.md)
+- [var source: String](./source.md)
   The segment source. For files use the full path or URL of the file.
-- [var timescale: Int](temporalsegmentidentifier/timescale.md)
+- [var timescale: Int](./timescale.md)
   The identifier’s timescale is the number of uniquely identifiable timestamps in a second.
 
 

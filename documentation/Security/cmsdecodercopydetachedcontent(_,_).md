@@ -1,7 +1,8 @@
 # CMSDecoderCopyDetachedContent(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Obtains the detached content specified with the `CMSDecoderSetDetachedContent` function.
 
@@ -14,9 +15,13 @@ Obtains the detached content specified with the `CMSDecoderSetDetachedContent` f
 func CMSDecoderCopyDetachedContent(_ cmsDecoder: CMSDecoder, _ detachedContentOut: UnsafeMutablePointer<CFData?>) -> OSStatus
 ```
 
+```c
+OSStatus CMSDecoderCopyDetachedContent(CMSDecoderRef cmsDecoder, CFDataRef*detachedContentOut);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 ## Parameters
 
@@ -25,7 +30,8 @@ A result code. See [`Security Framework Result Codes`](security-framework-result
 
 ## See Also
 
-- [func CMSDecoderCreate(UnsafeMutablePointer<CMSDecoder?>) -> OSStatus](cmsdecodercreate(_:).md)
+### Related Documentation
+- [func CMSDecoderCreate(UnsafeMutablePointer<CMSDecoder?>) -> OSStatus](./cmsdecodercreate%28_%29.md)
   Creates a CMSDecoder reference.
 
 

@@ -1,7 +1,8 @@
 # specificName(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the specific, non-location representation of a timezone.
 
@@ -26,7 +27,7 @@ A timezone format style appropriate for the locale and specified width.
 
 #### Discussion
 
-The value falls back to the value of [`localizedGMT(_:)`](date/formatstyle/symbol/timezone/localizedgmt(_:).md) with a `short` width if unavailable. For example, `PDT` ([`Date.FormatStyle.Symbol.TimeZone.Width.short`](date/formatstyle/symbol/timezone/width/short.md)), or `Pacific Daylight Time` ([`Date.FormatStyle.Symbol.TimeZone.Width.long`](date/formatstyle/symbol/timezone/width/long.md)).
+The value falls back to the value of [`localizedGMT(_:)`](./localizedgmt%28_%29.md) with a `short` width if unavailable. For example, `PDT` ([`Date.FormatStyle.Symbol.TimeZone.Width.short`](./width/short.md)), or `Pacific Daylight Time` ([`Date.FormatStyle.Symbol.TimeZone.Width.long`](./width/long.md)).
 
 ## Parameters
 
@@ -34,17 +35,18 @@ The value falls back to the value of [`localizedGMT(_:)`](date/formatstyle/symbo
 
 ## See Also
 
-- [static func genericName(Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone](date/formatstyle/symbol/timezone/genericname(_:).md)
+### Modifying a Time Zone
+- [static func genericName(Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone](./genericname%28_%29.md)
   Returns the generic, non-location representation of a timezone.
-- [static func iso8601(Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone](date/formatstyle/symbol/timezone/iso8601(_:).md)
+- [static func iso8601(Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone](./iso8601%28_%29.md)
   Creates the ISO 8601 representation of the timezone with hours, minutes, and optional seconds.
-- [static func localizedGMT(Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone](date/formatstyle/symbol/timezone/localizedgmt(_:).md)
+- [static func localizedGMT(Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone](./localizedgmt%28_%29.md)
   Returns the localized GMT format representation of a timezone.
-- [static func identifier(Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone](date/formatstyle/symbol/timezone/identifier(_:).md)
+- [static func identifier(Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone](./identifier%28_%29.md)
   Returns the timezone identifier.
-- [static var exemplarLocation: Date.FormatStyle.Symbol.TimeZone](date/formatstyle/symbol/timezone/exemplarlocation.md)
+- [static var exemplarLocation: Date.FormatStyle.Symbol.TimeZone](./exemplarlocation.md)
   The exemplar city for a timezone.
-- [static var genericLocation: Date.FormatStyle.Symbol.TimeZone](date/formatstyle/symbol/timezone/genericlocation.md)
+- [static var genericLocation: Date.FormatStyle.Symbol.TimeZone](./genericlocation.md)
   The generic location representation of a timezone.
 
 

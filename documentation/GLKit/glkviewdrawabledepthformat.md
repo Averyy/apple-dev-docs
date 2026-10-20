@@ -1,7 +1,8 @@
 # GLKViewDrawableDepthFormat
 
 **Framework**: GLKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The format of the depth renderbuffer.
 
@@ -16,35 +17,40 @@ The format of the depth renderbuffer.
 enum GLKViewDrawableDepthFormat
 ```
 
+```c
+enum GLKViewDrawableDepthFormat : GLint;
+```
+
 ## Topics
 
 ### Constants
-- [GLKViewDrawableDepthFormat.formatNone](glkviewdrawabledepthformat/formatnone.md)
+- [GLKViewDrawableDepthFormat.formatNone](./glkviewdrawabledepthformat/formatnone.md)
   The underlying framebuffer object has no depth buffer.
-- [GLKViewDrawableDepthFormat.format16](glkviewdrawabledepthformat/format16.md)
+- [GLKViewDrawableDepthFormat.format16](./glkviewdrawabledepthformat/format16.md)
   A 16-bit depth entry for each pixel.
-- [GLKViewDrawableDepthFormat.format24](glkviewdrawabledepthformat/format24.md)
+- [GLKViewDrawableDepthFormat.format24](./glkviewdrawabledepthformat/format24.md)
   A 24-bit depth entry for each pixel.
 ### Initializers
-- [init?(rawValue: GLint)](glkviewdrawabledepthformat/init(rawvalue:).md)
+- [init?(rawValue: GLint)](./glkviewdrawabledepthformat/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum GLKViewDrawableColorFormat](glkviewdrawablecolorformat.md)
+### Constants
+- [enum GLKViewDrawableColorFormat](./glkviewdrawablecolorformat.md)
   The format of the color renderbuffer.
-- [enum GLKViewDrawableStencilFormat](glkviewdrawablestencilformat.md)
+- [enum GLKViewDrawableStencilFormat](./glkviewdrawablestencilformat.md)
   The format of the stencil renderbuffer.
-- [enum GLKViewDrawableMultisample](glkviewdrawablemultisample.md)
+- [enum GLKViewDrawableMultisample](./glkviewdrawablemultisample.md)
   The format of the multisampling buffer.
 
 

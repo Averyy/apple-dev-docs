@@ -1,7 +1,8 @@
 # HKDeletedObject
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a sample that has been deleted from the HealthKit store.
 
@@ -19,41 +20,45 @@ An object that represents a sample that has been deleted from the HealthKit stor
 class HKDeletedObject
 ```
 
+```objc
+@interface HKDeletedObject : NSObject
+```
+
 ## Mentions
 
-- [About the HealthKit framework](about-the-healthkit-framework.md)
+- [About the HealthKit framework](./about-the-healthkit-framework.md)
 
 #### Overview
 
-Use [`HKAnchoredObjectQuery`](hkanchoredobjectquery.md) queries to generate a list of recently deleted objects. Create a query using the [`init(type:predicate:anchor:limit:resultsHandler:)`](hkanchoredobjectquery/init(type:predicate:anchor:limit:resultshandler:).md)method. When the system calls the result handler, it passes the `deletedObject` parameter an array of [`HKDeletedObject`](hkdeletedobject.md) instances matching the query.
+Use [`HKAnchoredObjectQuery`](./hkanchoredobjectquery.md) queries to generate a list of recently deleted objects. Create a query using the [`init(type:predicate:anchor:limit:resultsHandler:)`](./hkanchoredobjectquery/init%28type,predicate,anchor,limit,resultshandler%29.md)method. When the system calls the result handler, it passes the `deletedObject` parameter an array of [`HKDeletedObject`](./hkdeletedobject.md) instances matching the query.
 
-Deleted objects are temporary; the system may remove them from the HealthKit store at any time to free up space. To guarantee that you receive notifications for all deleted objects, create an [`HKObserverQuery`](hkobserverquery.md) and register it for background delivery. The system then wakes your app and calls the observer query’s update handler whenever the matching objects change—including deletions. However, the query does not provide a list of deleted objects. To determine which objects were deleted, use the observer query’s update handler to create an anchored object query for the newly deleted objects.
+Deleted objects are temporary; the system may remove them from the HealthKit store at any time to free up space. To guarantee that you receive notifications for all deleted objects, create an [`HKObserverQuery`](./hkobserverquery.md) and register it for background delivery. The system then wakes your app and calls the observer query’s update handler whenever the matching objects change—including deletions. However, the query does not provide a list of deleted objects. To determine which objects were deleted, use the observer query’s update handler to create an anchored object query for the newly deleted objects.
 
 ## Topics
 
 ### Identifying Deleted Objects
-- [var uuid: UUID](hkdeletedobject/uuid.md)
+- [var uuid: UUID](./hkdeletedobject/uuid.md)
   The universally unique identifier (UUID) for the HealthKit object that was deleted from the store.
-- [var metadata: [String : Any]?](hkdeletedobject/metadata.md)
+- [var metadata: [String : Any]?](./hkdeletedobject/metadata.md)
   The metadata associated with the deleted object.
 ### Initializers
-- [init?(coder: NSCoder)](hkdeletedobject/init(coder:).md)
+- [init?(coder: NSCoder)](./hkdeletedobject/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # topReleases
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of top releases for the record label.
 

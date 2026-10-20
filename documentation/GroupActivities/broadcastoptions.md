@@ -1,7 +1,8 @@
 # BroadcastOptions
 
 **Framework**: Group Activities  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for how to broadcast media on the shared communications channel.
 
@@ -26,30 +27,31 @@ Use these options to alter how the system presents audio and video associated wi
 ## Topics
 
 ### Getting the broadcast options
-- [static let mirroredVideo: BroadcastOptions](broadcastoptions/mirroredvideo.md)
+- [static let mirroredVideo: BroadcastOptions](./broadcastoptions/mirroredvideo.md)
   An option to mirror video on its vertical axis.
 ### Creating options from a raw value
-- [init(rawValue: Int)](broadcastoptions/init(rawvalue:).md)
+- [init(rawValue: Int)](./broadcastoptions/init%28rawvalue%29.md)
   Creates a set of options from a raw value.
-- [let rawValue: Int](broadcastoptions/rawvalue.md)
+- [let rawValue: Int](./broadcastoptions/rawvalue.md)
   The raw value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [var supportsContinuationOnTV: Bool](groupactivitymetadata/supportscontinuationontv.md)
+### Specifying media-related behavior
+- [var supportsContinuationOnTV: Bool](./groupactivitymetadata/supportscontinuationontv.md)
   A Boolean value that indicates whether your app supports activity continuation on an Apple TV.
-- [var preferredBroadcastOptions: BroadcastOptions](groupactivitymetadata/preferredbroadcastoptions.md)
+- [var preferredBroadcastOptions: BroadcastOptions](./groupactivitymetadata/preferredbroadcastoptions.md)
   Preferences for how to present audio and video on the main communication channel.
 
 

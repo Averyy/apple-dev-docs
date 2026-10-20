@@ -1,7 +1,8 @@
 # Subprogress
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Subprogress is used to establish parent-child relationship between two instances of `ProgressManager`.
 
@@ -27,14 +28,14 @@ Subprogress is returned from a call to `subprogress(assigningCount:)` by a paren
 ## Topics
 
 ### Instance Methods
-- [func start(totalCount: Int?) -> ProgressManager](subprogress/start(totalcount:).md)
+- [func start(totalCount: Int?) -> ProgressManager](./subprogress/start%28totalcount%29.md)
   Instantiates a ProgressManager which is a child to the parent from which `self` is returned.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # btui_async_start_index
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 unsigned int btui_async_start_index;
 ```
 

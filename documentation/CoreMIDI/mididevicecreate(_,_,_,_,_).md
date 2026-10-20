@@ -1,7 +1,8 @@
 # MIDIDeviceCreate(_:_:_:_:_:)
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a new device object that corresponds to the available hardware.
 
@@ -16,6 +17,10 @@ Creates a new device object that corresponds to the available hardware.
 
 ```swift
 func MIDIDeviceCreate(_ owner: MIDIDriverRef?, _ name: CFString, _ manufacturer: CFString, _ model: CFString, _ outDevice: UnsafeMutablePointer<MIDIDeviceRef>) -> OSStatus
+```
+
+```c
+extern OSStatus MIDIDeviceCreate(MIDIDriverRef owner, CFStringRef name, CFStringRef manufacturer, CFStringRef model, MIDIDeviceRef *outDevice);
 ```
 
 #### Return Value
@@ -36,9 +41,10 @@ Nondrivers may call this function to create external devices.
 
 ## See Also
 
-- [func MIDIDeviceDispose(MIDIDeviceRef) -> OSStatus](mididevicedispose(_:).md)
+### Managing Device Lifecyle
+- [func MIDIDeviceDispose(MIDIDeviceRef) -> OSStatus](./mididevicedispose%28_%29.md)
   Disposes of a MIDI device.
-- [typealias MIDIDeviceRef](midideviceref.md)
+- [typealias MIDIDeviceRef](./midideviceref.md)
   A MIDI device that contains entities.
 
 

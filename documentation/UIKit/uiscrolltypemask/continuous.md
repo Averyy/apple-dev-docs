@@ -1,7 +1,8 @@
 # continuous
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A continuous scroll type from a device, like a trackpad.
 
@@ -17,11 +18,16 @@ A continuous scroll type from a device, like a trackpad.
 static var continuous: UIScrollTypeMask { get }
 ```
 
+```c
+UIScrollTypeMaskContinuous
+```
+
 ## See Also
 
-- [static var all: UIScrollTypeMask](uiscrolltypemask/all.md)
+### Scroll types
+- [static var all: UIScrollTypeMask](./all.md)
   A scroll type that’s either discrete or continuous.
-- [static var discrete: UIScrollTypeMask](uiscrolltypemask/discrete.md)
+- [static var discrete: UIScrollTypeMask](./discrete.md)
   A discrete scroll type from a device, like a mouse.
 
 

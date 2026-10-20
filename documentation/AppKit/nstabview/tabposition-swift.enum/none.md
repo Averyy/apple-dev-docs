@@ -1,7 +1,8 @@
 # NSTabView.TabPosition.none
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 10.12+
@@ -12,12 +13,17 @@
 case none
 ```
 
+```c
+NSTabPositionNone
+```
+
 ## See Also
 
-- [NSTabView.TabPosition.bottom](nstabview/tabposition-swift.enum/bottom.md)
-- [NSTabView.TabPosition.left](nstabview/tabposition-swift.enum/left.md)
-- [NSTabView.TabPosition.right](nstabview/tabposition-swift.enum/right.md)
-- [NSTabView.TabPosition.top](nstabview/tabposition-swift.enum/top.md)
+### Tab Positions
+- [NSTabView.TabPosition.bottom](./bottom.md)
+- [NSTabView.TabPosition.left](./left.md)
+- [NSTabView.TabPosition.right](./right.md)
+- [NSTabView.TabPosition.top](./top.md)
 
 
 ---

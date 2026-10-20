@@ -1,7 +1,8 @@
 # init(accessAllowed:)
 
 **Framework**: FSKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a result for an access-checking operation.
 
@@ -12,6 +13,10 @@ Creates a result for an access-checking operation.
 
 ```swift
 init?(accessAllowed: Bool)
+```
+
+```objc
+- (instancetype) initWithAccessAllowed:(BOOL) accessAllowed;
 ```
 
 #### Return Value

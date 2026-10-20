@@ -1,7 +1,8 @@
 # matchDomains
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The hostname domains that match the rule.
 
@@ -18,19 +19,24 @@ The hostname domains that match the rule.
 var matchDomains: [Any]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray * matchDomains;
+```
+
 #### Discussion
 
 If this property is set to a nonempty array, then only connections to destinations in the domains specified in the array will use the VPN.
 
 ## See Also
 
-- [var matchSigningIdentifier: String](neapprule/matchsigningidentifier.md)
+### Accessing app rule properties
+- [var matchSigningIdentifier: String](./matchsigningidentifier.md)
   The signing identifier of the app that matches the rule.
-- [var matchDesignatedRequirement: String](neapprule/matchdesignatedrequirement.md)
+- [var matchDesignatedRequirement: String](./matchdesignatedrequirement.md)
   The designated requirement of the app that matches the rule.
-- [var matchPath: String?](neapprule/matchpath.md)
+- [var matchPath: String?](./matchpath.md)
   The file system path of the app that matches the rule.
-- [var matchTools: [NEAppRule]?](neapprule/matchtools.md)
+- [var matchTools: [NEAppRule]?](./matchtools.md)
   An array of app rule objects that restrict the rule so it only matches network traffic generated from helper processes.
 
 

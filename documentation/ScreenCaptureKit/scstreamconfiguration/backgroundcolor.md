@@ -1,7 +1,8 @@
 # backgroundColor
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A background color for the output.
 
@@ -15,13 +16,18 @@ A background color for the output.
 unowned(unsafe) var backgroundColor: CGColor { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CGColorRef backgroundColor;
+```
+
 ## See Also
 
-- [var pixelFormat: OSType](scstreamconfiguration/pixelformat.md)
+### Configuring colors
+- [var pixelFormat: OSType](./pixelformat.md)
   A pixel format for sample buffers that a stream outputs.
-- [var colorMatrix: CFString](scstreamconfiguration/colormatrix.md)
+- [var colorMatrix: CFString](./colormatrix.md)
   A color matrix to apply to the output surface.
-- [var colorSpaceName: CFString](scstreamconfiguration/colorspacename.md)
+- [var colorSpaceName: CFString](./colorspacename.md)
   A color space to use for the output buffer.
 
 

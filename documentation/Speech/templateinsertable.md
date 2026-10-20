@@ -1,7 +1,8 @@
 # TemplateInsertable
 
 **Framework**: Speech  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol supporting the custom language model training data result builder.
 
@@ -22,19 +23,20 @@ protocol TemplateInsertable
 ## Topics
 
 ### Protocol requirements
-- [func insert(generator: SFCustomLanguageModelData.TemplatePhraseCountGenerator)](templateinsertable/insert(generator:).md)
+- [func insert(generator: SFCustomLanguageModelData.TemplatePhraseCountGenerator)](./templateinsertable/insert%28generator%29.md)
 
 ## Relationships
 
 ### Conforming Types
-- [SFCustomLanguageModelData.CompoundTemplate](sfcustomlanguagemodeldata/compoundtemplate.md)
-- [SFCustomLanguageModelData.TemplatePhraseCountGenerator.Template](sfcustomlanguagemodeldata/templatephrasecountgenerator/template.md)
+- [SFCustomLanguageModelData.CompoundTemplate](./sfcustomlanguagemodeldata/compoundtemplate.md)
+- [SFCustomLanguageModelData.TemplatePhraseCountGenerator.Template](./sfcustomlanguagemodeldata/templatephrasecountgenerator/template.md)
 
 ## See Also
 
-- [SFCustomLanguageModelData.CompoundTemplate](sfcustomlanguagemodeldata/compoundtemplate.md)
+### Result builder support
+- [SFCustomLanguageModelData.CompoundTemplate](./sfcustomlanguagemodeldata/compoundtemplate.md)
   A class supporting the custom language model training data result builder. You are not intended to use this directly.
-- [protocol DataInsertable](datainsertable.md)
+- [protocol DataInsertable](./datainsertable.md)
   A protocol supporting the custom language model training data result builder.
 
 

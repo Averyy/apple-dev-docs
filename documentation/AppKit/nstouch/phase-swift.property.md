@@ -1,7 +1,8 @@
 # phase
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current phase of the touch.
 
@@ -14,19 +15,24 @@ The current phase of the touch.
 var phase: NSTouch.Phase { get }
 ```
 
+```objc
+@property (readonly) NSTouchPhase phase;
+```
+
 #### Discussion
 
-See [`NSTouch.Phase`](nstouch/phase-swift.struct.md) for possible values.
+See [`NSTouch.Phase`](./phase-swift.struct.md) for possible values.
 
 ## See Also
 
-- [var identity: any NSCopying & NSObjectProtocol](nstouch/identity.md)
+### Using Touch Properties
+- [var identity: any NSCopying & NSObjectProtocol](./identity.md)
   The changes to a particular touch during its lifetime.
-- [NSTouch.Phase](nstouch/phase-swift.struct.md)
+- [NSTouch.Phase](./phase-swift.struct.md)
   The possible phases of a touch.
-- [var normalizedPosition: NSPoint](nstouch/normalizedposition.md)
+- [var normalizedPosition: NSPoint](./normalizedposition.md)
   The normalized position of the touch.
-- [var isResting: Bool](nstouch/isresting.md)
+- [var isResting: Bool](./isresting.md)
   The indicator for a resting touch.
 
 

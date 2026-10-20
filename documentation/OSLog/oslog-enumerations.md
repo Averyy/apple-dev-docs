@@ -1,11 +1,12 @@
 # OSLog Enumerations
 
-**Framework**: OSLog
+**Framework**: OSLog  
+**Role**: API Collection
 
 ## Topics
 
 ### Enumerations
-- [OSLogStore.Scope](oslogstore/scope.md)
+- [OSLogStore.Scope](./oslogstore/scope.md)
 
 
 ---

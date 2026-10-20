@@ -7,7 +7,7 @@ The set of timer events in use by the device.
 
 ## Declaration
 
-```swift
+```c
 OSDictionary * timerEvents;
 ```
 
@@ -17,18 +17,19 @@ The key for the dictionary is the target of the event. This means that a single 
 
 ## See Also
 
-- [workLoop](ioaudiodevice/workloop.md)
-- [timerEventSource](ioaudiodevice/timereventsource.md)
-- [pendingPowerState](ioaudiodevice/pendingpowerstate.md)
-- [numRunningAudioEngines](ioaudiodevice/numrunningaudioengines.md)
-- [minimumInterval](ioaudiodevice/minimuminterval.md)
-- [familyManagePower](ioaudiodevice/familymanagepower.md)
-- [duringStartup](ioaudiodevice/duringstartup.md)
-- [currentPowerState](ioaudiodevice/currentpowerstate.md)
-- [commandGate](ioaudiodevice/commandgate.md)
-- [audioPorts](ioaudiodevice/audioports.md)
-- [audioEngines](ioaudiodevice/audioengines.md)
-- [asyncPowerStateChangeInProgress](ioaudiodevice/asyncpowerstatechangeinprogress.md)
+### Instance Variables
+- [workLoop](./workloop.md)
+- [timerEventSource](./timereventsource.md)
+- [pendingPowerState](./pendingpowerstate.md)
+- [numRunningAudioEngines](./numrunningaudioengines.md)
+- [minimumInterval](./minimuminterval.md)
+- [familyManagePower](./familymanagepower.md)
+- [duringStartup](./duringstartup.md)
+- [currentPowerState](./currentpowerstate.md)
+- [commandGate](./commandgate.md)
+- [audioPorts](./audioports.md)
+- [audioEngines](./audioengines.md)
+- [asyncPowerStateChangeInProgress](./asyncpowerstatechangeinprogress.md)
 
 
 ---

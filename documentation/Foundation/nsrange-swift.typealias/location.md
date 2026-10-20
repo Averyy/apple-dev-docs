@@ -1,7 +1,8 @@
 # location
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the first member of the range.
 
@@ -26,7 +27,8 @@ The minimum first index is `0`, as in C arrays. For type compatibility with the 
 
 ## See Also
 
-- [var length: Int](nsrange-swift.typealias/length.md)
+### Accessing range properties
+- [var length: Int](./length.md)
   The number of items in the range.
 
 

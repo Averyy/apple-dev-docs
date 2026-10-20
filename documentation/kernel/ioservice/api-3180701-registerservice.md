@@ -1,7 +1,8 @@
 # RegisterService
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Starts the registration process for the service and performs any additional matching.
 
@@ -11,25 +12,34 @@ Starts the registration process for the service and performs any additional matc
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+virtual kern_return_t RegisterService(void);
+```
+
+*macOS*
+
+```cpp
 kern_return_t RegisterService(OSDispatchMethod supermethod);
 ```
 
-#### Return_value
+#### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes). 
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md). 
 
 #### Discussion
 
-After setting up your service in your custom [`Start`](ioservice/3180710-start.md) method, call this method to let the system know your service is running. 
+After setting up your service in your custom [`Start`](./api-3180710-start.md) method, call this method to let the system know your service is running. 
 
 ## See Also
 
-- [- SetName](../driverkit/ioservice/setname.md)
+### Registering the Service with IOKit
+- [- SetName](../../DriverKit/ioservice/setname.md)
   Sets the name of the service in the system's registry.
-- [- GetRegistryEntryID](ioservice/3180698-getregistryentryid.md)
+- [- GetRegistryEntryID](./api-3180698-getregistryentryid.md)
   Returns the registry ID for the current service. 
-- [IOServiceName](../driverkit/ioservicename.md)
+- [IOServiceName](../../DriverKit/ioservicename.md)
   A string type for setting the name of the service in the system's registry. 
 
 

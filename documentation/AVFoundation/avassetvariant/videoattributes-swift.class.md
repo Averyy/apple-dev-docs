@@ -1,7 +1,8 @@
 # AVAssetVariant.VideoAttributes
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that defines the video attributes for an asset variant.
 
@@ -20,45 +21,50 @@ An object that defines the video attributes for an asset variant.
 class VideoAttributes
 ```
 
+```objc
+@interface AVAssetVariantVideoAttributes : NSObject
+```
+
 ## Topics
 
 ### Inspecting the attributes
-- [var codecTypes: [CMVideoCodecType]](avassetvariant/videoattributes-swift.class/codectypes.md)
+- [var codecTypes: [CMVideoCodecType]](./videoattributes-swift.class/codectypes.md)
   The video sample codec types present in the variant’s renditions.
-- [var nominalFrameRate: Double?](avassetvariant/videoattributes-swift.class/nominalframerate.md)
+- [var nominalFrameRate: Double?](./videoattributes-swift.class/nominalframerate.md)
   The nominal frame rate of the variant’s renditions.
-- [var presentationSize: CGSize](avassetvariant/videoattributes-swift.class/presentationsize.md)
+- [var presentationSize: CGSize](./videoattributes-swift.class/presentationsize.md)
   The presentation size of the variant’s renditions.
-- [var videoRange: AVVideoRange](avassetvariant/videoattributes-swift.class/videorange.md)
+- [var videoRange: AVVideoRange](./videoattributes-swift.class/videorange.md)
   The video range of the variant.
-- [struct AVVideoRange](avvideorange.md)
+- [struct AVVideoRange](../avvideorange.md)
   Constants that describe a video variant’s dynamic range.
-- [var videoLayoutAttributes: [AVAssetVariant.VideoAttributes.LayoutAttributes]](avassetvariant/videoattributes-swift.class/videolayoutattributes.md)
+- [var videoLayoutAttributes: [AVAssetVariant.VideoAttributes.LayoutAttributes]](./videoattributes-swift.class/videolayoutattributes.md)
   Attributes that describe the layout of the video content.
-- [AVAssetVariant.VideoAttributes.LayoutAttributes](avassetvariant/videoattributes-swift.class/layoutattributes.md)
+- [AVAssetVariant.VideoAttributes.LayoutAttributes](./videoattributes-swift.class/layoutattributes.md)
   Attributes that describe the layout of video content.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var audioAttributes: AVAssetVariant.AudioAttributes?](avassetvariant/audioattributes-swift.property.md)
+### Configuring attributes
+- [var audioAttributes: AVAssetVariant.AudioAttributes?](./audioattributes-swift.property.md)
   The audio rendition attributes for the variant.
-- [AVAssetVariant.AudioAttributes](avassetvariant/audioattributes-swift.class.md)
+- [AVAssetVariant.AudioAttributes](./audioattributes-swift.class.md)
   An object that defines the audio attributes for an asset variant.
-- [var videoAttributes: AVAssetVariant.VideoAttributes?](avassetvariant/videoattributes-swift.property.md)
+- [var videoAttributes: AVAssetVariant.VideoAttributes?](./videoattributes-swift.property.md)
   The video rendition attributes for the variant.
 
 

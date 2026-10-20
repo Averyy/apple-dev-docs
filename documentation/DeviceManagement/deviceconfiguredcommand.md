@@ -1,7 +1,8 @@
 # DeviceConfiguredCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to inform the device that it can allow the user to continue in Setup Assistant.
 
@@ -15,14 +16,14 @@ The command to inform the device that it can allow the user to continue in Setup
 
 ## Declaration
 
-```swift
+```
 object DeviceConfiguredCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object DeviceConfiguredCommand.Command](deviceconfiguredcommand/command-data.dictionary.md)
+- [object DeviceConfiguredCommand.Command](./deviceconfiguredcommand/command-data.dictionary.md)
   The command to inform the device that it can allow the user to continue in Setup Assistant.
 
 ## Properties
@@ -32,7 +33,8 @@ object DeviceConfiguredCommand
 
 ## See Also
 
-- [object DeviceConfiguredResponse](deviceconfiguredresponse.md)
+### Commands and responses
+- [object DeviceConfiguredResponse](./deviceconfiguredresponse.md)
   A response from the device after it processes the command to inform the device that it can allow the user to continue in Setup Assistant.
 
 

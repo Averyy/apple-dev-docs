@@ -1,7 +1,8 @@
 # HTTPURLResponse
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The metadata associated with the response to an HTTP protocol URL load request.
 
@@ -20,54 +21,59 @@ The metadata associated with the response to an HTTP protocol URL load request.
 class HTTPURLResponse
 ```
 
+```objc
+@interface NSHTTPURLResponse : NSURLResponse
+```
+
 #### Overview
 
-The [`HTTPURLResponse`](httpurlresponse.md) class is a subclass of [`URLResponse`](urlresponse.md) that provides methods for accessing information specific to HTTP protocol responses. Whenever you make HTTP URL load requests, any response objects you get back from the [`URLSession`](urlsession.md), [`NSURLConnection`](nsurlconnection.md), or [`NSURLDownload`](nsurldownload.md) class are instances of the [`HTTPURLResponse`](httpurlresponse.md) class.
+The [`HTTPURLResponse`](./httpurlresponse.md) class is a subclass of [`URLResponse`](./urlresponse.md) that provides methods for accessing information specific to HTTP protocol responses. Whenever you make HTTP URL load requests, any response objects you get back from the [`URLSession`](./urlsession.md), [`NSURLConnection`](./nsurlconnection.md), or [`NSURLDownload`](./nsurldownload.md) class are instances of the [`HTTPURLResponse`](./httpurlresponse.md) class.
 
 ## Topics
 
 ### Initializing a response object
-- [init?(url: URL, statusCode: Int, httpVersion: String?, headerFields: [String : String]?)](httpurlresponse/init(url:statuscode:httpversion:headerfields:)-21j4x.md)
+- [init?(url: URL, statusCode: Int, httpVersion: String?, headerFields: [String : String]?)](./httpurlresponse/init%28url,statuscode,httpversion,headerfields%29-21j4x.md)
   Initializes an HTTP URL response object with a status code, protocol version, and response headers.
 ### Getting HTTP response headers
-- [var allHeaderFields: [AnyHashable : Any]](httpurlresponse/allheaderfields.md)
+- [var allHeaderFields: [AnyHashable : Any]](./httpurlresponse/allheaderfields.md)
   All HTTP header fields of the response.
-- [func value(forHTTPHeaderField: String) -> String?](httpurlresponse/value(forhttpheaderfield:).md)
+- [func value(forHTTPHeaderField: String) -> String?](./httpurlresponse/value%28forhttpheaderfield%29.md)
   Returns the value that corresponds to the given header field.
 ### Getting response status codes
-- [class func localizedString(forStatusCode: Int) -> String](httpurlresponse/localizedstring(forstatuscode:).md)
+- [class func localizedString(forStatusCode: Int) -> String](./httpurlresponse/localizedstring%28forstatuscode%29.md)
   Returns a localized string corresponding to a specified HTTP status code.
-- [var statusCode: Int](httpurlresponse/statuscode.md)
+- [var statusCode: Int](./httpurlresponse/statuscode.md)
   The response’s HTTP status code.
 ### Initializers
-- [init?(URL: URL, statusCode: Int, HTTPVersion: String?, headerFields: [String : String]?)](httpurlresponse/init(url:statuscode:httpversion:headerfields:)-3kiww.md)
+- [init?(URL: URL, statusCode: Int, HTTPVersion: String?, headerFields: [String : String]?)](./httpurlresponse/init%28url,statuscode,httpversion,headerfields%29-3kiww.md)
 
 ## Relationships
 
 ### Inherits From
-- [URLResponse](urlresponse.md)
+- [URLResponse](./urlresponse.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct URLRequest](urlrequest.md)
+### Requests and responses
+- [struct URLRequest](./urlrequest.md)
   A URL load request that is independent of protocol or URL scheme.
-- [class NSURLRequest](nsurlrequest.md)
+- [class NSURLRequest](./nsurlrequest.md)
   A URL load request that is independent of protocol or URL scheme.
-- [class NSMutableURLRequest](nsmutableurlrequest.md)
+- [class NSMutableURLRequest](./nsmutableurlrequest.md)
   A mutable URL load request that is independent of protocol or URL scheme.
-- [class URLResponse](urlresponse.md)
+- [class URLResponse](./urlresponse.md)
   The metadata associated with the response to a URL load request, independent of protocol and URL scheme.
 
 

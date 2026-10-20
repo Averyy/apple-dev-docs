@@ -1,7 +1,8 @@
 # HKHeartbeatSeriesBuilder
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A builder object for incrementally building a heartbeat series.
 
@@ -19,43 +20,48 @@ A builder object for incrementally building a heartbeat series.
 class HKHeartbeatSeriesBuilder
 ```
 
+```objc
+@interface HKHeartbeatSeriesBuilder : HKSeriesBuilder
+```
+
 ## Topics
 
 ### Creating a Heartbeat Series Builder
-- [init(healthStore: HKHealthStore, device: HKDevice?, start: Date)](hkheartbeatseriesbuilder/init(healthstore:device:start:).md)
+- [init(healthStore: HKHealthStore, device: HKDevice?, start: Date)](./hkheartbeatseriesbuilder/init%28healthstore,device,start%29.md)
   Creates a new heartbeat series builder.
-- [class var maximumCount: Int](hkheartbeatseriesbuilder/maximumcount.md)
+- [class var maximumCount: Int](./hkheartbeatseriesbuilder/maximumcount.md)
   The maximum number of heartbeats you can add to the sample.
 ### Adding Data
-- [func addHeartbeatWithTimeInterval(sinceSeriesStartDate: TimeInterval, precededByGap: Bool, completion: (Bool, (any Error)?) -> Void)](hkheartbeatseriesbuilder/addheartbeatwithtimeinterval(sinceseriesstartdate:precededbygap:completion:).md)
+- [func addHeartbeatWithTimeInterval(sinceSeriesStartDate: TimeInterval, precededByGap: Bool, completion: (Bool, (any Error)?) -> Void)](./hkheartbeatseriesbuilder/addheartbeatwithtimeinterval%28sinceseriesstartdate,precededbygap,completion%29.md)
   Adds a heartbeat to the series.
-- [func addMetadata([String : Any], completion: (Bool, (any Error)?) -> Void)](hkheartbeatseriesbuilder/addmetadata(_:completion:).md)
+- [func addMetadata([String : Any], completion: (Bool, (any Error)?) -> Void)](./hkheartbeatseriesbuilder/addmetadata%28_,completion%29.md)
   Adds metadata to the sample.
 ### Ending the Collection
-- [func finishSeries(completion: (HKHeartbeatSeriesSample?, (any Error)?) -> Void)](hkheartbeatseriesbuilder/finishseries(completion:).md)
+- [func finishSeries(completion: (HKHeartbeatSeriesSample?, (any Error)?) -> Void)](./hkheartbeatseriesbuilder/finishseries%28completion%29.md)
   Finalizes the series and returns the resulting heartbeat series sample.
 ### Initializers
-- [init(healthStore: HKHealthStore, device: HKDevice?, startDate: Date)](hkheartbeatseriesbuilder/init(healthstore:device:startdate:).md)
+- [init(healthStore: HKHealthStore, device: HKDevice?, startDate: Date)](./hkheartbeatseriesbuilder/init%28healthstore,device,startdate%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [HKSeriesBuilder](hkseriesbuilder.md)
+- [HKSeriesBuilder](./hkseriesbuilder.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HKQuantitySeriesSampleBuilder](hkquantityseriessamplebuilder.md)
+### Series data
+- [class HKQuantitySeriesSampleBuilder](./hkquantityseriessamplebuilder.md)
   A builder object for incrementally building a sample that contains multiple quantities.
-- [class HKHeartbeatSeriesSample](hkheartbeatseriessample.md)
+- [class HKHeartbeatSeriesSample](./hkheartbeatseriessample.md)
   A sample that represents a series of heartbeats.
 
 

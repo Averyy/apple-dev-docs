@@ -1,7 +1,8 @@
 # trailing
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A guide that marks the trailing edge of the view.
 
@@ -22,15 +23,16 @@ static let trailing: Alignment
 
 #### Discussion
 
-This alignment combines the [`trailing`](horizontalalignment/trailing.md) horizontal guide and the [`center`](verticalalignment/center.md) vertical guide:
+This alignment combines the [`trailing`](../horizontalalignment/trailing.md) horizontal guide and the [`center`](../verticalalignment/center.md) vertical guide:
 
-![A square that’s divided into four equal quadrants. The upper-](/images/com.apple.SwiftUI/Alignment-trailing-1-iOS@2x.png)
+![A square that’s divided into four equal quadrants. The upper-](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Alignment-trailing-1-iOS@2x.png)
 
 ## See Also
 
-- [static let leading: Alignment](alignment/leading.md)
+### Getting middle guides
+- [static let leading: Alignment](./leading.md)
   A guide that marks the leading edge of the view.
-- [static let center: Alignment](alignment/center.md)
+- [static let center: Alignment](./center.md)
   A guide that marks the center of the view.
 
 

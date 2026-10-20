@@ -1,7 +1,8 @@
 # navigationBarNSToolbarSection(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate which section of the toolbar to host the navigation bar in.
 
@@ -17,19 +18,23 @@ Asks the delegate which section of the toolbar to host the navigation bar in.
 optional func navigationBarNSToolbarSection(_ navigationBar: UINavigationBar) -> UINavigationBar.NSToolbarSection
 ```
 
+```objc
+- (UINavigationBarNSToolbarSection) navigationBarNSToolbarSection:(UINavigationBar *) navigationBar;
+```
+
 #### Return Value
 
-An [`NSToolbar`](https://developer.apple.com/documentation/appkit/nstoolbar) section that determines which section to place the navigation bar in, and how to present the navigation bar in that section. Return [`UINavigationBar.NSToolbarSection.none`](uinavigationbar/nstoolbarsection/none.md) to disable [`NSToolbar`](https://developer.apple.com/documentation/appkit/nstoolbar) hosting, which is equivalent to setting [`preferredBehavioralStyle`](uinavigationbar/preferredbehavioralstyle.md) to [`UIBehavioralStyle.pad`](uibehavioralstyle/pad.md).
+An [`NSToolbar`](../../AppKit/nstoolbar.md) section that determines which section to place the navigation bar in, and how to present the navigation bar in that section. Return [`UINavigationBar.NSToolbarSection.none`](../uinavigationbar/nstoolbarsection/none.md) to disable [`NSToolbar`](../../AppKit/nstoolbar.md) hosting, which is equivalent to setting [`preferredBehavioralStyle`](../uinavigationbar/preferredbehavioralstyle.md) to [`UIBehavioralStyle.pad`](../uibehavioralstyle/pad.md).
 
 #### Discussion
 
-The system calls this method to determine how to render your [`UINavigationBar`](uinavigationbar.md) when you build your app with Mac Catalyst.
+The system calls this method to determine how to render your [`UINavigationBar`](../uinavigationbar.md) when you build your app with Mac Catalyst.
 
-> **Note**:  Not every navigation item property is supported in every toolbar section. For more information, see [`Display content in a toolbar on Mac`](uinavigationitem/title#Display-content-in-a-toolbar-on-Mac.md).
+> **Note**:  Not every navigation item property is supported in every toolbar section. For more information, see [Display content in a toolbar on Mac](../uinavigationitem/title.md#Display-content-in-a-toolbar-on-Mac).
 
 ## Parameters
 
-- `navigationBar`: The navigation bar to host in an [`NSToolbar`](https://developer.apple.com/documentation/appkit/nstoolbar).
+- `navigationBar`: The navigation bar to host in an [`NSToolbar`](../../AppKit/nstoolbar.md).
 
 
 ---

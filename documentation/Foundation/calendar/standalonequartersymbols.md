@@ -1,7 +1,8 @@
 # standaloneQuarterSymbols
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of standalone quarter names in this calendar, localized to the Calendar’s `locale`.
 
@@ -30,11 +31,12 @@ For example, for English in the Gregorian calendar, returns `["1st quarter", "2n
 
 ## See Also
 
-- [var quarterSymbols: [String]](calendar/quartersymbols.md)
+### Getting Quarter Symbols
+- [var quarterSymbols: [String]](./quartersymbols.md)
   A list of quarter names in this calendar, localized to the Calendar’s `locale`.
-- [var shortQuarterSymbols: [String]](calendar/shortquartersymbols.md)
+- [var shortQuarterSymbols: [String]](./shortquartersymbols.md)
   A list of shorter-named quarters in this calendar, localized to the Calendar’s `locale`.
-- [var shortStandaloneQuarterSymbols: [String]](calendar/shortstandalonequartersymbols.md)
+- [var shortStandaloneQuarterSymbols: [String]](./shortstandalonequartersymbols.md)
   A list of shorter-named standalone quarters in this calendar, localized to the Calendar’s `locale`.
 
 

@@ -1,7 +1,8 @@
 # topK(_:k:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a TopK operation and returns the value and indices tensors
 
@@ -17,6 +18,10 @@ Creates a TopK operation and returns the value and indices tensors
 
 ```swift
 func topK(_ source: MPSGraphTensor, k: Int, name: String?) -> [MPSGraphTensor]
+```
+
+```objc
+- (NSArray<MPSGraphTensor *> *) topKWithSourceTensor:(MPSGraphTensor *) source k:(NSUInteger) k name:(NSString *) name;
 ```
 
 #### Return Value

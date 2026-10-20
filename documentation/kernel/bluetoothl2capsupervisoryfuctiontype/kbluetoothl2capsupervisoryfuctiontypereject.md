@@ -1,14 +1,15 @@
 # kBluetoothL2CAPSupervisoryFuctionTypeReject
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothL2CAPSupervisoryFuctionTypeReject = 0x1
 ```
 

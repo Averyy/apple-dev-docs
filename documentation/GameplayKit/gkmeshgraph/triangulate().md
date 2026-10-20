@@ -1,7 +1,8 @@
 # triangulate()
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates or updates the graph with a network of nodes that describes the open space around its obstacles.
 
@@ -19,19 +20,24 @@ Creates or updates the graph with a network of nodes that describes the open spa
 func triangulate()
 ```
 
+```objc
+- (void) triangulate;
+```
+
 #### Discussion
 
-The [`GKMeshGraph`](gkmeshgraph.md) class adds, removes, and arranges nodes to describe the navigable areas around obstacles *only* when you call this method. Typically, you add or remove several obstacles, then call the [`triangulate()`](gkmeshgraph/triangulate().md) method to update the graph. You should also call this method after changing the [`triangulationMode`](gkmeshgraph/triangulationmode.md) property.
+The [`GKMeshGraph`](../gkmeshgraph.md) class adds, removes, and arranges nodes to describe the navigable areas around obstacles *only* when you call this method. Typically, you add or remove several obstacles, then call the [`triangulate()`](./triangulate%28%29.md) method to update the graph. You should also call this method after changing the [`triangulationMode`](./triangulationmode.md) property.
 
-After triangulating, the graph reflects the navigability of open space around its obstacles and can be used for any number of [`findPath(from:to:)`](gkgraph/findpath(from:to:).md) calls. Changing the list of obstacles requires retriangulating the graph.
+After triangulating, the graph reflects the navigability of open space around its obstacles and can be used for any number of [`findPath(from:to:)`](../gkgraph/findpath%28from,to%29.md) calls. Changing the list of obstacles requires retriangulating the graph.
 
 ## See Also
 
-- [var triangulationMode: GKMeshGraphTriangulationMode](gkmeshgraph/triangulationmode.md)
+### Managing the Mesh
+- [var triangulationMode: GKMeshGraphTriangulationMode](./triangulationmode.md)
   A set of options for how to place graph nodes when triangulating the graph.
-- [func triangle(at: Int) -> GKTriangle](gkmeshgraph/triangle(at:).md)
+- [func triangle(at: Int) -> GKTriangle](./triangle%28at%29.md)
   The triangle definition at the specified index.
-- [var triangleCount: Int](gkmeshgraph/trianglecount.md)
+- [var triangleCount: Int](./trianglecount.md)
   The number of triangles in the mesh.
 
 

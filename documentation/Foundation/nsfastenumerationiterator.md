@@ -1,7 +1,8 @@
 # NSFastEnumerationIterator
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 8.0+
@@ -21,24 +22,25 @@ struct NSFastEnumerationIterator
 ## Topics
 
 ### Initializers
-- [init(any NSFastEnumeration)](nsfastenumerationiterator/init(_:).md)
+- [init(any NSFastEnumeration)](./nsfastenumerationiterator/init%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [IteratorProtocol](../swift/iteratorprotocol.md)
+- [IteratorProtocol](../Swift/iteratorprotocol.md)
 
 ## See Also
 
-- [class NSEnumerator](nsenumerator.md)
+### Iteration
+- [class NSEnumerator](./nsenumerator.md)
   An abstract class whose subclasses enumerate collections of objects, such as arrays and dictionaries.
-- [protocol NSFastEnumeration](nsfastenumeration.md)
+- [protocol NSFastEnumeration](./nsfastenumeration.md)
   A protocol that objects adopt to support fast enumeration.
-- [struct NSIndexSetIterator](nsindexsetiterator.md)
+- [struct NSIndexSetIterator](./nsindexsetiterator.md)
   An iterator suitable for enumerating the elements of an index set.
-- [struct NSEnumerationOptions](nsenumerationoptions.md)
+- [struct NSEnumerationOptions](./nsenumerationoptions.md)
   Options for block enumeration operations.
-- [struct NSSortOptions](nssortoptions.md)
+- [struct NSSortOptions](./nssortoptions.md)
   Options for block sorting operations.
 
 

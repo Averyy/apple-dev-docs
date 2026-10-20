@@ -1,7 +1,8 @@
 # circular
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Masks each content view with a circle.
 
@@ -16,9 +17,10 @@ static let circular: AccessoryWidgetGroupStyle
 
 ## See Also
 
-- [static let automatic: AccessoryWidgetGroupStyle](accessorywidgetgroupstyle/automatic.md)
+### Getting styles
+- [static let automatic: AccessoryWidgetGroupStyle](./automatic.md)
   The default style that is set to circular.
-- [static let roundedSquare: AccessoryWidgetGroupStyle](accessorywidgetgroupstyle/roundedsquare.md)
+- [static let roundedSquare: AccessoryWidgetGroupStyle](./roundedsquare.md)
   Masks each content view with a rounded square.
 
 

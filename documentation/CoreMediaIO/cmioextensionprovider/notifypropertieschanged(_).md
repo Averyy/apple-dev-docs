@@ -1,7 +1,8 @@
 # notifyPropertiesChanged(_:)
 
 **Framework**: Core Media I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies connected clients of device property changes.
 
@@ -15,13 +16,18 @@ Notifies connected clients of device property changes.
 func notifyPropertiesChanged(_ propertyStates: [CMIOExtensionProperty : CMIOExtensionPropertyState<AnyObject>])
 ```
 
+```objc
+- (void) notifyPropertiesChanged:(NSDictionary<NSString *,CMIOExtensionPropertyState *> *) propertyStates;
+```
+
 ## Parameters
 
 - `propertyStates`: A dictionary of properties with changes.
 
 ## See Also
 
-- [var connectedClients: [CMIOExtensionClient]](cmioextensionprovider/connectedclients.md)
+### Managing Clients
+- [var connectedClients: [CMIOExtensionClient]](./connectedclients.md)
   An array of connected clients.
 
 

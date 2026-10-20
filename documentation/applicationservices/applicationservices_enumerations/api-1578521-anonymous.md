@@ -5,10 +5,10 @@
 ## Topics
 
 ### Constants
-- [var kAEFetchURL: Int](kaefetchurl.md)
-- [var kAEGetURL: Int](kaegeturl.md)
-- [var kInternetEventClass: Int](kinterneteventclass.md)
-- [var keyAEAttaching: Int](keyaeattaching.md)
+- [var kAEFetchURL: Int](../kaefetchurl.md)
+- [var kAEGetURL: Int](../kaegeturl.md)
+- [var kInternetEventClass: Int](../kinterneteventclass.md)
+- [var keyAEAttaching: Int](../keyaeattaching.md)
 
 
 ---

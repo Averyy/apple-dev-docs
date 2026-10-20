@@ -1,7 +1,8 @@
 # MTRDeviceTypeIDType.laundryDryerID
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.2+
@@ -16,6 +17,10 @@
 
 ```swift
 case laundryDryerID
+```
+
+```c
+MTRDeviceTypeIDTypeLaundryDryerID
 ```
 
 

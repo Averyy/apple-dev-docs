@@ -1,22 +1,27 @@
 # inputToOutputCallback
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The callback function that provides input-to-output sample mapping for an audio unit.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var inputToOutputCallback: AUInputSamplesInOutputCallback
+```
+
+```c
+AUInputSamplesInOutputCallback inputToOutputCallback;
 ```
 
 

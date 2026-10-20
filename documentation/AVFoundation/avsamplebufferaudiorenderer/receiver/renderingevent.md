@@ -1,7 +1,8 @@
 # AVSampleBufferAudioRenderer.Receiver.RenderingEvent
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Events that might require intervention after there are no more samples to enqueue, but before rendering has finished.
 
@@ -23,22 +24,23 @@ enum RenderingEvent
 ## Topics
 
 ### Rendering events
-- [AVSampleBufferAudioRenderer.Receiver.RenderingEvent.outputConfigurationChanged](avsamplebufferaudiorenderer/receiver/renderingevent/outputconfigurationchanged.md)
+- [AVSampleBufferAudioRenderer.Receiver.RenderingEvent.outputConfigurationChanged](./renderingevent/outputconfigurationchanged.md)
   Indicates that the audio output configuration has changed.
-- [AVSampleBufferAudioRenderer.Receiver.RenderingEvent.wasFlushedAutomatically(at:)](avsamplebufferaudiorenderer/receiver/renderingevent/wasflushedautomatically(at:).md)
+- [AVSampleBufferAudioRenderer.Receiver.RenderingEvent.wasFlushedAutomatically(at:)](./renderingevent/wasflushedautomatically%28at%29.md)
   The enqueued media data has been flushed for a reason other than a call to the `flush()` method.
-- [AVSampleBufferAudioRenderer.Receiver.RenderingEvent.failed(_:)](avsamplebufferaudiorenderer/receiver/renderingevent/failed(_:).md)
+- [AVSampleBufferAudioRenderer.Receiver.RenderingEvent.failed(_:)](./renderingevent/failed%28_%29.md)
   Indicates that the receiver cannot currently enqueue or render sample buffers because of the associated error.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var renderingEventsAfterFinishedEnqueuing: some Sendable & AsyncSequence<AVSampleBufferAudioRenderer.Receiver.RenderingEvent, Never>](avsamplebufferaudiorenderer/receiver/renderingeventsafterfinishedenqueuing.md)
+### Observing rendering events
+- [var renderingEventsAfterFinishedEnqueuing: some Sendable & AsyncSequence<AVSampleBufferAudioRenderer.Receiver.RenderingEvent, Never>](./renderingeventsafterfinishedenqueuing.md)
   A sequence of events that may occur when rendering after enqueuing samples has finished.
 
 

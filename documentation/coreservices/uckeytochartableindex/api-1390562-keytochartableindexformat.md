@@ -1,7 +1,8 @@
 # keyToCharTableIndexFormat
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An unsigned 16-bit integer identifying the format of the `UCKeyToCharTableIndex` structure. Set to `kUCKeyToCharTableIndexFormat`.
 
@@ -13,6 +14,10 @@ An unsigned 16-bit integer identifying the format of the `UCKeyToCharTableIndex`
 
 ```swift
 var keyToCharTableIndexFormat: UInt16
+```
+
+```c
+UInt16 keyToCharTableIndexFormat;
 ```
 
 

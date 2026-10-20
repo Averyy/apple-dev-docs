@@ -1,7 +1,8 @@
 # provider(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the responder for an element provider to fulfill the given focus-based deferred element. Check the `identifier` of the deferred element to identify which deferred element this is. By default, this returns nil. Return a non-nil `provider` to make this responder responsible for providing elements for this fulfillment of the deferred element.
 
@@ -16,6 +17,10 @@ Asks the responder for an element provider to fulfill the given focus-based defe
 
 ```swift
 func provider(for deferredElement: UIDeferredMenuElement) -> UIDeferredMenuElement.Provider?
+```
+
+```objc
+- (UIDeferredMenuElementProvider *) providerForDeferredMenuElement:(UIDeferredMenuElement *) deferredElement;
 ```
 
 

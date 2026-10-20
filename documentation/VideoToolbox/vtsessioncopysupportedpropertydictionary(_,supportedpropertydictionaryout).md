@@ -1,7 +1,8 @@
 # VTSessionCopySupportedPropertyDictionary(_:supportedPropertyDictionaryOut:)
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves a dictionary enumerating all the supported properties of a video toolbox session.
 
@@ -19,32 +20,37 @@ Retrieves a dictionary enumerating all the supported properties of a video toolb
 func VTSessionCopySupportedPropertyDictionary(_ session: VTSession, supportedPropertyDictionaryOut: UnsafeMutablePointer<CFDictionary?>) -> OSStatus
 ```
 
+```c
+extern OSStatus VTSessionCopySupportedPropertyDictionary(VTSessionRef session, CFDictionaryRef*supportedPropertyDictionaryOut);
+```
+
 #### Discussion
 
 The keys of the returned dictionary are the supported property keys.
 
 The values are themselves dictionaries, each containing the following optional fields:
 
-- The type of value ([`kVTPropertyTypeKey`](kvtpropertytypekey.md))
-- The read/write status of the property ([`kVTPropertyReadWriteStatusKey`](kvtpropertyreadwritestatuskey.md))
-- Whether the property is suitable for serialization ([`kVTPropertyShouldBeSerializedKey`](kvtpropertyshouldbeserializedkey.md))
+- The type of value ([`kVTPropertyTypeKey`](./kvtpropertytypekey.md))
+- The read/write status of the property ([`kVTPropertyReadWriteStatusKey`](./kvtpropertyreadwritestatuskey.md))
+- Whether the property is suitable for serialization ([`kVTPropertyShouldBeSerializedKey`](./kvtpropertyshouldbeserializedkey.md))
 - A range or list of the supported values, if appropriate
-- Developer-level documentation for the property ([`kVTPropertyDocumentationKey`](kvtpropertydocumentationkey.md))
+- Developer-level documentation for the property ([`kVTPropertyDocumentationKey`](./kvtpropertydocumentationkey.md))
 
 The caller must release the returned dictionary.
 
 ## Parameters
 
 - `session`: The session object.
-- `supportedPropertyDictionaryOut`: A pointer to a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary).
+- `supportedPropertyDictionaryOut`: A pointer to a [`CFDictionary`](../CoreFoundation/cfdictionary.md).
 
 ## See Also
 
-- [func VTSessionCopyProperty(VTSession, key: CFString, allocator: CFAllocator?, valueOut: UnsafeMutableRawPointer?) -> OSStatus](vtsessioncopyproperty(_:key:allocator:valueout:).md)
+### Getting Properties
+- [func VTSessionCopyProperty(VTSession, key: CFString, allocator: CFAllocator?, valueOut: UnsafeMutableRawPointer?) -> OSStatus](./vtsessioncopyproperty%28_,key,allocator,valueout%29.md)
   Retrieves a property on a Video Toolbox session.
-- [func VTSessionCopySerializableProperties(VTSession, allocator: CFAllocator?, dictionaryOut: UnsafeMutablePointer<CFDictionary?>) -> OSStatus](vtsessioncopyserializableproperties(_:allocator:dictionaryout:).md)
+- [func VTSessionCopySerializableProperties(VTSession, allocator: CFAllocator?, dictionaryOut: UnsafeMutablePointer<CFDictionary?>) -> OSStatus](./vtsessioncopyserializableproperties%28_,allocator,dictionaryout%29.md)
   Retrieves the set of serializable property keys and their current values.
-- [Supported Property Dictionary Constants](supported-dictionary-constants.md)
+- [Supported Property Dictionary Constants](./supported-dictionary-constants.md)
   Property dictionary key and constant values.
 
 

@@ -1,7 +1,8 @@
 # allocate(count:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 8.0+

@@ -1,7 +1,8 @@
 # build_Arithmetic(lhs:rhs:op:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 17.0+

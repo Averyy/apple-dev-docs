@@ -1,7 +1,8 @@
 # CMHeadphoneActivityManager.ActivityHandler
 
 **Framework**: Core Motion  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type for a handler to be invoked when headphone motion activity data is available.
 
@@ -18,11 +19,16 @@ The type for a handler to be invoked when headphone motion activity data is avai
 typealias ActivityHandler = (CMMotionActivity?, (any Error)?) -> Void
 ```
 
+```c
+typedef void (^)(CMMotionActivity *, NSError *) CMHeadphoneActivityHandler;
+```
+
 ## See Also
 
-- [CMHeadphoneActivityManager.Status](cmheadphoneactivitymanager/status.md)
+### Supporting Types
+- [CMHeadphoneActivityManager.Status](./status.md)
   Headphone connection status updates.
-- [CMHeadphoneActivityManager.StatusHandler](cmheadphoneactivitymanager/statushandler.md)
+- [CMHeadphoneActivityManager.StatusHandler](./statushandler.md)
   The type for a handler to be invoked with status updates.
 
 

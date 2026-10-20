@@ -1,7 +1,8 @@
 # ShapeConfiguration.Shape.regularPolygon
 
 **Framework**: PaperKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A n-sided polygon shape.
 
@@ -20,19 +21,20 @@ case regularPolygon
 
 ## See Also
 
-- [ShapeConfiguration.Shape.rectangle](shapeconfiguration/shape/rectangle.md)
+### Choosing a shape
+- [ShapeConfiguration.Shape.rectangle](./rectangle.md)
   A rectangle shape.
-- [ShapeConfiguration.Shape.ellipse](shapeconfiguration/shape/ellipse.md)
+- [ShapeConfiguration.Shape.ellipse](./ellipse.md)
   An ellipse shape.
-- [ShapeConfiguration.Shape.line](shapeconfiguration/shape/line.md)
+- [ShapeConfiguration.Shape.line](./line.md)
   A line shape.
-- [ShapeConfiguration.Shape.chatBubble](shapeconfiguration/shape/chatbubble.md)
+- [ShapeConfiguration.Shape.chatBubble](./chatbubble.md)
   A chat bubble shape.
-- [ShapeConfiguration.Shape.roundedRectangle](shapeconfiguration/shape/roundedrectangle.md)
+- [ShapeConfiguration.Shape.roundedRectangle](./roundedrectangle.md)
   A rounded rectangle.
-- [ShapeConfiguration.Shape.star](shapeconfiguration/shape/star.md)
+- [ShapeConfiguration.Shape.star](./star.md)
   A n-pointed star shape.
-- [ShapeConfiguration.Shape.arrowShape](shapeconfiguration/shape/arrowshape.md)
+- [ShapeConfiguration.Shape.arrowShape](./arrowshape.md)
   A filled arrow shape.
 
 

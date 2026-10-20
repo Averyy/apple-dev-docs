@@ -1,7 +1,8 @@
 # setLocalizableMessageWithKey(_:arguments:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a localized message from the current participant to all other participants when you end a turn, forfeit a match, or end a match.
 
@@ -20,17 +21,21 @@ Sends a localized message from the current participant to all other participants
 func setLocalizableMessageWithKey(_ key: String, arguments: [String]?)
 ```
 
+```objc
+- (void) setLocalizableMessageWithKey:(NSString *) key arguments:(NSArray<NSString *> *) arguments;
+```
+
 ## Mentions
 
-- [Sending messages to players in turn-based games](sending-messages-to-players-in-turn-based-games.md)
+- [Sending messages to players in turn-based games](../sending-messages-to-players-in-turn-based-games.md)
 
 #### Discussion
 
 Invoke this method only when the local player is the current participant and before you invoke a method that generates a turn-based event.
 
-If your game isn’t running or is running in the background on other participant devices, a notification containing the localized message appears immediately at the top of the screen. If the game is in the foreground, use the [`message`](gkturnbasedmatch/message.md) property to get the localized message when handling the turn-based event.
+If your game isn’t running or is running in the background on other participant devices, a notification containing the localized message appears immediately at the top of the screen. If the game is in the foreground, use the [`message`](./message.md) property to get the localized message when handling the turn-based event.
 
-GameKit uses the recipient’s language and region to localize the message. If the recipient doesn’t have the game installed on their device, GameKit uses the sender’s localization settings instead. See [`Sending messages to players in turn-based games`](sending-messages-to-players-in-turn-based-games.md).
+GameKit uses the recipient’s language and region to localize the message. If the recipient doesn’t have the game installed on their device, GameKit uses the sender’s localization settings instead. See [Sending messages to players in turn-based games](../sending-messages-to-players-in-turn-based-games.md).
 
 ## Parameters
 
@@ -39,9 +44,10 @@ GameKit uses the recipient’s language and region to localize the message. If t
 
 ## See Also
 
-- [var message: String?](gkturnbasedmatch/message.md)
+### Sending Messages Between Participants
+- [var message: String?](./message.md)
   A message from the current participant to all other participants when you end a turn, forfeit a match, or end a match.
-- [func sendReminder(to: [GKTurnBasedParticipant], localizableMessageKey: String, arguments: [String], completionHandler: (((any Error)?) -> Void)?)](gkturnbasedmatch/sendreminder(to:localizablemessagekey:arguments:completionhandler:).md)
+- [func sendReminder(to: [GKTurnBasedParticipant], localizableMessageKey: String, arguments: [String], completionHandler: (((any Error)?) -> Void)?)](./sendreminder%28to,localizablemessagekey,arguments,completionhandler%29.md)
   Sends a reminder from one participant to a specific set of other participants.
 
 

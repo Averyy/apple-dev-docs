@@ -1,7 +1,8 @@
 # textScaling
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The text-scaling mode to use when displaying the text.
 
@@ -22,11 +23,12 @@ static let textScaling: NSAttributedString.DocumentAttributeKey
 
 #### Discussion
 
-The value of this property is one of the options of the [`NSTextScalingType`](https://developer.apple.com/documentation/uikit/nstextscalingtype) type. Some platforms scale fonts to improve their appearance. When saving a document, include this attribute to specify the type of scaling to apply to the text at display time.
+The value of this property is one of the options of the [`NSTextScalingType`](../../../UIKit/nstextscalingtype.md) type. Some platforms scale fonts to improve their appearance. When saving a document, include this attribute to specify the type of scaling to apply to the text at display time.
 
 ## See Also
 
-- [static let sourceTextScaling: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/sourcetextscaling.md)
+### Getting the font-scaling options
+- [static let sourceTextScaling: NSAttributedString.DocumentAttributeKey](./sourcetextscaling.md)
   The text-scaling mode you used when creating the text.
 
 

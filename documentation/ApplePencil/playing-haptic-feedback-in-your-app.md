@@ -1,6 +1,7 @@
 # Playing haptic feedback in your app
 
-**Framework**: Apple Pencil
+**Framework**: Apple Pencil  
+**Role**: Article
 
 Provide tactile feedback when people perform certain actions in your app.
 
@@ -8,7 +9,7 @@ Provide tactile feedback when people perform certain actions in your app.
 
 Haptic feedback provides a tactile response, such as a tap, that draws attention and reinforces both actions and events. While many system-provided interface elements (for example, pickers, switches, and sliders) automatically provide haptic feedback, you can add feedback to custom views and controls in your app when it’s suitable.
 
-##### Use Feedback Intentionally
+##### Use feedback intentionally
 
 When providing feedback:
 
@@ -16,26 +17,26 @@ When providing feedback:
 - The source of the feedback must be clear to the user. For example, the feedback must match a visual change in the user interface, or must be in response to a user action. Feedback should never come as a surprise.
 - Don’t overuse feedback. Overuse can cause confusion and diminish the feedback’s significance.
 
-For design guidance, read Human Interface Guidelines > [`Playing haptics`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/playing-haptics).
+For design guidance, read Human Interface Guidelines > [Playing haptics](https://developer.apple.com/design/human-interface-guidelines/playing-haptics).
 
-##### Choose the Type of Feedback
+##### Choose the type of feedback
 
 SwiftUI and UIKit have different APIs for providing haptic feedback. Learn more about each style of haptic feedback and choose what makes sense for your app.
 
 **SwiftUI**:
 
-To learn more about different types of feedback in SwiftUI, read [`SensoryFeedback`](https://developer.apple.com/documentation/swiftui/sensoryfeedback).
+To learn more about different types of feedback in SwiftUI, read [`SensoryFeedback`](../SwiftUI/sensoryfeedback.md).
 
 **UIKit**:
 
 To learn more about different types of feedback in UIKit, read:
 
-- [`UICanvasFeedbackGenerator`](https://developer.apple.com/documentation/uikit/uicanvasfeedbackgenerator)
-- [`UIImpactFeedbackGenerator`](https://developer.apple.com/documentation/uikit/uiimpactfeedbackgenerator)
-- [`UISelectionFeedbackGenerator`](https://developer.apple.com/documentation/uikit/uiselectionfeedbackgenerator)
-- [`UINotificationFeedbackGenerator`](https://developer.apple.com/documentation/uikit/uinotificationfeedbackgenerator)
+- [`UICanvasFeedbackGenerator`](../UIKit/uicanvasfeedbackgenerator.md)
+- [`UIImpactFeedbackGenerator`](../UIKit/uiimpactfeedbackgenerator.md)
+- [`UISelectionFeedbackGenerator`](../UIKit/uiselectionfeedbackgenerator.md)
+- [`UINotificationFeedbackGenerator`](../UIKit/uinotificationfeedbackgenerator.md)
 
-##### Associate the Feedback with a View
+##### Associate the feedback with a view
 
 To play haptic feedback in your app, you need to add the feedback to a view.
 
@@ -43,7 +44,7 @@ To play haptic feedback in your app, you need to add the feedback to a view.
 
 The following SwiftUI code example shows how to associate selection feedback with a view.
 
-Add a [`sensoryFeedback(_:trigger:)`](https://developer.apple.com/documentation/swiftui/view/sensoryfeedback(_:trigger:)) view modifier to your view. For the `trigger` parameter, pass a value to monitor for changes.
+Add a [`sensoryFeedback(_:trigger:)`](../SwiftUI/view/sensoryfeedback%28_,trigger%29.md) view modifier to your view. For the `trigger` parameter, pass a value to monitor for changes.
 
 ```swift
 @State private var showAccessory = false
@@ -56,13 +57,13 @@ ContentView()
 
 The following UIKit code example shows how to associate impact feedback with a view.
 
-Create a [`UIImpactFeedbackGenerator`](https://developer.apple.com/documentation/uikit/uiimpactfeedbackgenerator) object. For the `view` parameter, pass the view to associate your feedback with.
+Create a [`UIImpactFeedbackGenerator`](../UIKit/uiimpactfeedbackgenerator.md) object. For the `view` parameter, pass the view to associate your feedback with.
 
 ```swift
 feedback = UIImpactFeedbackGenerator(view: view)
 ```
 
-##### Define When to Play Feedback
+##### Define when to play feedback
 
 Haptic feedback occurs in response to something, like an action or event. You need to define what to trigger feedback in response to.
 
@@ -76,7 +77,7 @@ For example, haptic feedback plays only:
 
 Not all types of haptic feedback play on every type of device. As a general rule, trust the system to determine whether it should play feedback. Don’t check the device type or app state to conditionally trigger feedback. After you decide how you want to use feedback, always trigger it when the appropriate events occur. The system ignores any requests that it can’t fulfill.
 
-##### Play Feedback for Selection Events
+##### Play feedback for selection events
 
 Use selection feedback to communicate movement through a series of discrete values. For example, you might trigger selection feedback to indicate that a UI element’s values are changing.
 
@@ -133,7 +134,7 @@ private func longPress(_ sender: UILongPressGestureRecognizer) {
 }
 ```
 
-##### Play Feedback for Canvas Events
+##### Play feedback for canvas events
 
 Use canvas feedback to indicate when a drawing event occurs, such as an object snapping to a guide or ruler. When using Apple Pencil Pro with a compatible iPad, this type of feedback can provide a tactile response.
 
@@ -186,7 +187,7 @@ var body: some View {
 
 The following UIKit code example shows how to use a pan gesture to drag a square, playing haptic feedback to indicate when the square aligns with a gridline on the canvas.
 
-Optionally, you can call the [`prepare()`](https://developer.apple.com/documentation/uikit/uifeedbackgenerator/prepare()) method to put the feedback generator in a prepared state, which can reduce latency when triggering feedback.
+Optionally, you can call the [`prepare()`](../UIKit/uifeedbackgenerator/prepare%28%29.md) method to put the feedback generator in a prepared state, which can reduce latency when triggering feedback.
 
 ```swift
 var gridlines: [Gridline] = []
@@ -233,9 +234,31 @@ private func dragSquare(_ sender: UIPanGestureRecognizer) {
 }
 ```
 
-###### Related Reference in Swiftui
+#### See Also
 
-###### Related Reference in Uikit
+###### Related reference in SwiftUI
+
+- [`sensoryFeedback(_:trigger:)`](../SwiftUI/view/sensoryfeedback%28_,trigger%29.md)
+  Plays the specified `feedback` when the provided `trigger` value changes.
+- [`sensoryFeedback(trigger:_:)`](../SwiftUI/view/sensoryfeedback%28trigger,_%29.md)
+  Plays feedback when returned from the `feedback` closure after the provided `trigger` value changes.
+- [`sensoryFeedback(_:trigger:condition:)`](../SwiftUI/view/sensoryfeedback%28_,trigger,condition%29.md)
+  Plays the specified `feedback` when the provided `trigger` value changes and the `condition` closure returns `true`.
+- [`SensoryFeedback`](../SwiftUI/sensoryfeedback.md)
+  Represents a type of haptic and/or audio feedback that can be played.
+
+###### Related reference in UIKit
+
+- [`UIFeedbackGenerator`](../UIKit/uifeedbackgenerator.md)
+  The abstract superclass for all feedback generators.
+- [`UICanvasFeedbackGenerator`](../UIKit/uicanvasfeedbackgenerator.md)
+  A concrete feedback generator subclass that creates haptics to indicate events on a drawing canvas.
+- [`UIImpactFeedbackGenerator`](../UIKit/uiimpactfeedbackgenerator.md)
+  A concrete feedback generator subclass that creates haptics to simulate physical impacts.
+- [`UISelectionFeedbackGenerator`](../UIKit/uiselectionfeedbackgenerator.md)
+  A concrete feedback generator subclass that creates haptics to indicate a change in selection.
+- [`UINotificationFeedbackGenerator`](../UIKit/uinotificationfeedbackgenerator.md)
+  A concrete feedback generator subclass that creates haptics to communicate successes, failures, and warnings.
 
 
 ---

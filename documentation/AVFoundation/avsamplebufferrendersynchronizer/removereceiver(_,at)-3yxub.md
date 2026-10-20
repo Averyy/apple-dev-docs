@@ -1,7 +1,8 @@
 # removeReceiver(_:at:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a receiver and its renderer from the synchronizer.
 

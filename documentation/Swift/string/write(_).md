@@ -1,7 +1,8 @@
 # write(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends the given string to this string.
 
@@ -26,7 +27,8 @@ mutating func write(_ other: String)
 
 ## See Also
 
-- [func write<Target>(to: inout Target)](string/write(to:).md)
+### Writing to a File or URL
+- [func write<Target>(to: inout Target)](./write%28to%29.md)
   Writes the string into the given output stream.
 
 

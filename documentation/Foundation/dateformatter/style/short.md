@@ -1,7 +1,8 @@
 # DateFormatter.Style.short
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 2.0+
@@ -18,6 +19,10 @@
 case short
 ```
 
+```c
+NSDateFormatterShortStyle
+```
+
 #### Discussion
 
 Specifies a short style, typically numeric only, such as “11/23/37” or “3:30 PM”.
@@ -26,10 +31,11 @@ Equal to `kCFDateFormatterShortStyle`.
 
 ## See Also
 
-- [DateFormatter.Style.none](dateformatter/style/none.md)
-- [DateFormatter.Style.medium](dateformatter/style/medium.md)
-- [DateFormatter.Style.long](dateformatter/style/long.md)
-- [DateFormatter.Style.full](dateformatter/style/full.md)
+### Constants
+- [DateFormatter.Style.none](./none.md)
+- [DateFormatter.Style.medium](./medium.md)
+- [DateFormatter.Style.long](./long.md)
+- [DateFormatter.Style.full](./full.md)
 
 
 ---

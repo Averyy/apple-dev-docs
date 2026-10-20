@@ -1,7 +1,8 @@
 # BNNS.InterpolationMethod.linear
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Interpolation that is linear or bilinear depending on the number of resized dimensions.
 
@@ -11,8 +12,10 @@ Interpolation that is linear or bilinear depending on the number of resized dime
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,7 +25,8 @@ case linear
 
 ## See Also
 
-- [BNNS.InterpolationMethod.nearestNeighbor](bnns/interpolationmethod/nearestneighbor.md)
+### Interpolation Methods
+- [BNNS.InterpolationMethod.nearestNeighbor](./nearestneighbor.md)
   Nearest-neighbor interpolation.
 
 

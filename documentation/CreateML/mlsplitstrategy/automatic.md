@@ -1,7 +1,8 @@
 # MLSplitStrategy.automatic
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Create ML automatically decides how much of your training dataset it uses for a validation dataset.
 
@@ -31,9 +32,10 @@ Create ML creates a validation dataset by partitioning up to 10% from the traini
 
 ## See Also
 
-- [case fixed(ratio: Double, seed: Int?)](mlsplitstrategy/fixed(ratio:seed:).md)
+### Partitioning data
+- [case fixed(ratio: Double, seed: Int?)](./fixed%28ratio,seed%29.md)
   Create ML uses a portion of your training dataset to create a validation dataset based on the ratio.
-- [func resolve(count: Int) -> (ratio: Double, seed: Int)](mlsplitstrategy/resolve(count:).md)
+- [func resolve(count: Int) -> (ratio: Double, seed: Int)](./resolve%28count%29.md)
   Resolves this split strategy for a specific element count.
 
 

@@ -1,7 +1,8 @@
 # init(size:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Generates a new random key of the given size.
 
@@ -22,11 +23,12 @@ init(size: SymmetricKeySize)
 
 ## Parameters
 
-- `size`: The size of the key to generate. You can use one of the standard sizes, like [`bits256`](symmetrickeysize/bits256.md), or you can create a key of custom length by initializing a [`SymmetricKeySize`](symmetrickeysize.md) instance with a non-standard value.
+- `size`: The size of the key to generate. You can use one of the standard sizes, like [`bits256`](../symmetrickeysize/bits256.md), or you can create a key of custom length by initializing a [`SymmetricKeySize`](../symmetrickeysize.md) instance with a non-standard value.
 
 ## See Also
 
-- [init<D>(data: D)](symmetrickey/init(data:).md)
+### Creating a key
+- [init<D>(data: D)](./init%28data%29.md)
   Creates a key from the given data.
 
 

@@ -1,7 +1,8 @@
 # AVAudioSessionRouteChangeReasonKey
 
 **Framework**: AVFAudio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A user info key that’s used to retrieve the route change reason.
 
@@ -19,13 +20,18 @@ A user info key that’s used to retrieve the route change reason.
 let AVAudioSessionRouteChangeReasonKey: String
 ```
 
+```c
+extern NSString * const AVAudioSessionRouteChangeReasonKey;
+```
+
 #### Discussion
 
-The associated value is an unsigned integer, provided as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object, that identifies the reason why the route changed. For a list of possible values, see [`AVAudioSession.RouteChangeReason`](avaudiosession/routechangereason.md).
+The associated value is an unsigned integer, provided as an [`NSNumber`](../Foundation/nsnumber.md) object, that identifies the reason why the route changed. For a list of possible values, see [`AVAudioSession.RouteChangeReason`](./avaudiosession/routechangereason.md).
 
 ## See Also
 
-- [let AVAudioSessionRouteChangePreviousRouteKey: String](avaudiosessionroutechangepreviousroutekey.md)
+### User info keys
+- [let AVAudioSessionRouteChangePreviousRouteKey: String](./avaudiosessionroutechangepreviousroutekey.md)
   A user info key that’s used to retrieve the previously active audio session route.
 
 

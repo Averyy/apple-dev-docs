@@ -1,7 +1,8 @@
 # buildPartialBlock(accumulated:next:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 18.0+
@@ -17,6 +18,8 @@
 ```swift
 static func buildPartialBlock<each Accumulated, R>(accumulated: ResolverSpecificationBuilder<Property>.Specification<Property, repeat each Accumulated>, next: R) -> ResolverSpecificationBuilder<Property>.Specification<Property, repeat each Accumulated, R> where repeat each Accumulated : Resolver, R : Resolver
 ```
+
+Available when `Property` conforms to `_IntentValue`.
 
 
 ---

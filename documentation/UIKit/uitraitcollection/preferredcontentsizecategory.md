@@ -1,7 +1,8 @@
 # preferredContentSizeCategory
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The font sizing option preferred by the user.
 
@@ -18,13 +19,18 @@ The font sizing option preferred by the user.
 var preferredContentSizeCategory: UIContentSizeCategory { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) UIContentSizeCategory preferredContentSizeCategory;
+```
+
 #### Discussion
 
-With Dynamic Type, users can ask that apps display text using fonts that are larger or smaller than the normal font size defined by the system. For example, a user with a visual impairment might request a larger default font size to make it easier to read text. Use the value of this property to request a [`UIFont`](uifont.md) object that matches the user’s requested size.
+With Dynamic Type, users can ask that apps display text using fonts that are larger or smaller than the normal font size defined by the system. For example, a user with a visual impairment might request a larger default font size to make it easier to read text. Use the value of this property to request a [`UIFont`](../uifont.md) object that matches the user’s requested size.
 
 ## See Also
 
-- [struct UIContentSizeCategory](uicontentsizecategory.md)
+### Retrieving content size category information
+- [struct UIContentSizeCategory](../uicontentsizecategory.md)
   Constants that indicate the preferred size of your content.
 
 

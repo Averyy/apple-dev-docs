@@ -1,14 +1,15 @@
 # IOUSBHostCISetupTransferData1bmRequestType
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 IOUSBHostCISetupTransferData1bmRequestType = IOUSBBitRange64(0, 7)
 ```
 

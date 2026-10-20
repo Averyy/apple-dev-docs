@@ -1,7 +1,8 @@
 # webArchive
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents WebKit web archive data.
 
@@ -24,15 +25,16 @@ static var webArchive: UTType { get }
 
 The identifier for this type is `com.apple.webarchive`.
 
-This type conforms to [`UTTypeData`](uttypedata.md) and [`UTTypeCompositeContent`](uttypecompositecontent.md).
+This type conforms to [`UTTypeData`](../uttypedata.md) and [`UTTypeCompositeContent`](../uttypecompositecontent.md).
 
 ## See Also
 
-- [static var html: UTType](uttype-swift.struct/html.md)
+### Internet-specific
+- [static var html: UTType](./html.md)
   A type that represents any version of HTML.
-- [static var internetLocation: UTType](uttype-swift.struct/internetlocation.md)
+- [static var internetLocation: UTType](./internetlocation.md)
   A base type that represents an Apple internet location file.
-- [static var internetShortcut: UTType](uttype-swift.struct/internetshortcut.md)
+- [static var internetShortcut: UTType](./internetshortcut.md)
   A type that represents a Microsoft internet shortcut file.
 
 

@@ -1,7 +1,8 @@
 # in(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Maps a shape style’s unit-space coordinates to the absolute coordinates of a given rectangle.
 
@@ -26,7 +27,7 @@ A new shape style mapped to the coordinates given by `rect`.
 
 #### Discussion
 
-Some shape styles have colors or patterns that vary with position based on [`UnitPoint`](unitpoint.md) coordinates. For example, you can create a [`LinearGradient`](lineargradient.md) using [`top`](unitpoint/top.md) and [`bottom`](unitpoint/bottom.md) as the start and end points:
+Some shape styles have colors or patterns that vary with position based on [`UnitPoint`](../unitpoint.md) coordinates. For example, you can create a [`LinearGradient`](../lineargradient.md) using [`top`](../unitpoint/top.md) and [`bottom`](../unitpoint/bottom.md) as the start and end points:
 
 ```swift
 let gradient = LinearGradient(
@@ -49,13 +50,13 @@ HStack {
 .animation(.easeInOut)
 ```
 
-When `isBig` is true — defined elsewhere as a private [`State`](state.md) variable — the rectangles look the same, because their heights match that of the modified gradient:
+When `isBig` is true — defined elsewhere as a private [`State`](../state.md) variable — the rectangles look the same, because their heights match that of the modified gradient:
 
-![Two identical, tall rectangles, with a gradient that starts red at](/images/com.apple.SwiftUI/ShapeStyle-in-1@2x.png)
+![Two identical, tall rectangles, with a gradient that starts red at](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ShapeStyle-in-1@2x.png)
 
-When the user toggles `isBig` by tapping the [`HStack`](hstack.md), the rectangles shrink, but the gradients each react in a different way:
+When the user toggles `isBig` by tapping the [`HStack`](../hstack.md), the rectangles shrink, but the gradients each react in a different way:
 
-![Two short rectangles with different coloration. The first has a](/images/com.apple.SwiftUI/ShapeStyle-in-2@2x.png)
+![Two short rectangles with different coloration. The first has a](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ShapeStyle-in-2@2x.png)
 
 SwiftUI remaps the gradient of the first rectangle to the new frame height, so that you continue to see the full range of colors in a smaller area. For the second rectangle, the modified gradient retains a mapping to the full height, so you instead see only a small part of the overall gradient. Animation helps to visualize the difference.
 

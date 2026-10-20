@@ -1,7 +1,8 @@
 # recognizedPoint(_:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the recognized point for a joint name.
 
@@ -19,6 +20,10 @@ Retrieves the recognized point for a joint name.
 func recognizedPoint(_ jointName: VNHumanHandPoseObservation.JointName) throws -> VNRecognizedPoint
 ```
 
+```objc
+- (VNRecognizedPoint *) recognizedPointForJointName:(VNHumanHandPoseObservationJointName) jointName error:(NSError **) error;
+```
+
 #### Return Value
 
 The point for the joint name.
@@ -29,15 +34,16 @@ The point for the joint name.
 
 ## See Also
 
-- [var availableJointNames: [VNHumanHandPoseObservation.JointName]](vnhumanhandposeobservation/availablejointnames.md)
+### Retrieving Points
+- [var availableJointNames: [VNHumanHandPoseObservation.JointName]](./availablejointnames.md)
   The names of the available joints in the observation.
-- [VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname.md)
+- [VNHumanHandPoseObservation.JointName](./jointname.md)
   The supported joint names for the hand pose.
-- [var availableJointsGroupNames: [VNHumanHandPoseObservation.JointsGroupName]](vnhumanhandposeobservation/availablejointsgroupnames.md)
+- [var availableJointsGroupNames: [VNHumanHandPoseObservation.JointsGroupName]](./availablejointsgroupnames.md)
   The joint group names available in the observation.
-- [VNHumanHandPoseObservation.JointsGroupName](vnhumanhandposeobservation/jointsgroupname.md)
+- [VNHumanHandPoseObservation.JointsGroupName](./jointsgroupname.md)
   The supported joint group names for the hand pose.
-- [func recognizedPoints(VNHumanHandPoseObservation.JointsGroupName) throws -> [VNHumanHandPoseObservation.JointName : VNRecognizedPoint]](vnhumanhandposeobservation/recognizedpoints(_:).md)
+- [func recognizedPoints(VNHumanHandPoseObservation.JointsGroupName) throws -> [VNHumanHandPoseObservation.JointName : VNRecognizedPoint]](./recognizedpoints%28_%29.md)
   Retrieves the recognized points associated with the joint group name.
 
 

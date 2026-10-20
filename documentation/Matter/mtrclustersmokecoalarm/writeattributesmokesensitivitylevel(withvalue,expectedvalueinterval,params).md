@@ -1,7 +1,8 @@
 # writeAttributeSmokeSensitivityLevel(withValue:expectedValueInterval:params:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 func writeAttributeSmokeSensitivityLevel(withValue dataValueDictionary: [String : Any], expectedValueInterval expectedValueIntervalMs: NSNumber, params: MTRWriteParams?)
+```
+
+```objc
+- (void) writeAttributeSmokeSensitivityLevelWithValue:(NSDictionary<NSString *,id> *) dataValueDictionary expectedValueInterval:(NSNumber *) expectedValueIntervalMs params:(MTRWriteParams *) params;
 ```
 
 

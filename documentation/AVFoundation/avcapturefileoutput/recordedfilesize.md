@@ -1,7 +1,8 @@
 # recordedFileSize
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates the size, in bytes, of the data recorded to the current output file.
 
@@ -18,27 +19,32 @@ Indicates the size, in bytes, of the data recorded to the current output file.
 var recordedFileSize: Int64 { get }
 ```
 
+```objc
+@property (nonatomic, readonly) int64_t recordedFileSize;
+```
+
 #### Discussion
 
 If a recording is in progress, this property returns the size in bytes of the data recorded so far.
 
 ## See Also
 
-- [var delegate: (any AVCaptureFileOutputDelegate)?](avcapturefileoutput/delegate.md)
+### Setting file output properties
+- [var delegate: (any AVCaptureFileOutputDelegate)?](./delegate.md)
   The delegate object for the capture file output.
-- [var maxRecordedDuration: CMTime](avcapturefileoutput/maxrecordedduration.md)
+- [var maxRecordedDuration: CMTime](./maxrecordedduration.md)
   The longest duration allowed for the recording.
-- [var maxRecordedFileSize: Int64](avcapturefileoutput/maxrecordedfilesize.md)
+- [var maxRecordedFileSize: Int64](./maxrecordedfilesize.md)
   The maximum size, in bytes, of the data that should be recorded by the receiver.
-- [var minFreeDiskSpaceLimit: Int64](avcapturefileoutput/minfreediskspacelimit.md)
+- [var minFreeDiskSpaceLimit: Int64](./minfreediskspacelimit.md)
   The minimum amount of free space, in bytes, required for recording to continue on a given volume.
-- [var outputFileURL: URL?](avcapturefileoutput/outputfileurl.md)
+- [var outputFileURL: URL?](./outputfileurl.md)
   The URL to which output is directed.
-- [var recordedDuration: CMTime](avcapturefileoutput/recordedduration.md)
+- [var recordedDuration: CMTime](./recordedduration.md)
   Indicates the duration of the media recorded to the current output file.
-- [var isRecording: Bool](avcapturefileoutput/isrecording.md)
+- [var isRecording: Bool](./isrecording.md)
   Indicates whether recording is in progress.
-- [var isRecordingPaused: Bool](avcapturefileoutput/isrecordingpaused.md)
+- [var isRecordingPaused: Bool](./isrecordingpaused.md)
   Indicates whether recording to the current output file is paused.
 
 

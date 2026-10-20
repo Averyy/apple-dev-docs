@@ -1,7 +1,8 @@
 # dismiss
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Dismisses a currently running slideshow.
 
@@ -10,15 +11,16 @@ Dismisses a currently running slideshow.
 
 ## Declaration
 
-```swift
+```
 void dismiss();
 ```
 
 ## See Also
 
-- [append](slideshow/1657228-append.md)
+### Creating and Modifying a Slideshow
+- [append](./api-1657228-append.md)
   Add additional images to a currently running slideshow.
-- [start](slideshow/1657265-start.md)
+- [start](./api-1657265-start.md)
   Starts a slideshow with the given set of images.
 
 

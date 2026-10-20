@@ -2,6 +2,7 @@
 
 **Framework**: TipKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Buttons that help people get started or learn more about your feature.
@@ -28,7 +29,8 @@ Use actions to provide primary and secondary buttons to help people get started 
 
 ## See Also
 
-- [typealias Action](tip/action.md)
+### Providing actions
+- [typealias Action](./action.md)
   A type that describes a control associated with a tip.
 
 

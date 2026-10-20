@@ -1,7 +1,8 @@
 # MPSGraphWhileAfterBlock
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The block that executes after the condition evaluates for each iteration.
 
@@ -17,6 +18,10 @@ The block that executes after the condition evaluates for each iteration.
 
 ```swift
 typealias MPSGraphWhileAfterBlock = ([MPSGraphTensor]) -> [MPSGraphTensor]
+```
+
+```c
+typedef NSArray<MPSGraphTensor *> *(^)(NSArray<MPSGraphTensor *> *) MPSGraphWhileAfterBlock;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # init(transform:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the receiver’s matrix using another transform object.
 
@@ -11,8 +12,20 @@ Initializes the receiver’s matrix using another transform object.
 
 ## Declaration
 
+*Mac Catalyst*
+
+```swift
+convenience init(transform: NSAffineTransform)
+```
+
+*macOS*
+
 ```swift
 convenience init(transform: AffineTransform)
+```
+
+```objc
+- (instancetype) initWithTransform:(NSAffineTransform *) transform;
 ```
 
 #### Return Value
@@ -25,7 +38,8 @@ A new transform object initialized with the matrix values of `aTransform`.
 
 ## See Also
 
-- [init()](nsaffinetransform/init.md)
+### Creating an Affine Transform
+- [init()](./init%28%29.md)
   Initializes an affine transform matrix to the identity matrix.
 
 

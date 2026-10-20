@@ -1,7 +1,8 @@
 # GridItem.Size.flexible(minimum:maximum:)
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A single flexible item.
 
@@ -26,9 +27,10 @@ The size of this item is the size of the grid with spacing and inflexible items 
 
 ## See Also
 
-- [case adaptive(minimum: CGFloat, maximum: CGFloat)](griditem/size-swift.enum/adaptive(minimum:maximum:).md)
+### Getting the sizes
+- [case adaptive(minimum: CGFloat, maximum: CGFloat)](./adaptive%28minimum,maximum%29.md)
   Multiple items in the space of a single flexible item.
-- [GridItem.Size.fixed(_:)](griditem/size-swift.enum/fixed(_:).md)
+- [GridItem.Size.fixed(_:)](./fixed%28_%29.md)
   A single item with the specified fixed size.
 
 

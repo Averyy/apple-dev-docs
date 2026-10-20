@@ -6,34 +6,5 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.swapaxes
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.array.swapaxes.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.array.swapaxes
-
- Table of contents 
-
-## Contents
-
-# mlx.core.array.swapaxes
-
-**array.swapaxes(*self*, *axis1: int*, *axis2: int*, ***, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
-: See [swapaxes()](mlx.core.swapaxes.html#mlx.core.swapaxes).
-
-** Contents
+**array.swapaxes(*self*, *axis1: int*, *axis2: int*, ***, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.md#mlx.core.array)**
+: See [swapaxes()](mlx.core.swapaxes.md#mlx.core.swapaxes).

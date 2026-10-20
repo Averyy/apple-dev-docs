@@ -1,7 +1,8 @@
 # subscribeAttributePhaseList(with:subscriptionEstablished:reportHandler:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.4+
@@ -16,6 +17,10 @@
 
 ```swift
 func subscribeAttributePhaseList(with params: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: @escaping ([Any]?, (any Error)?) -> Void)
+```
+
+```objc
+- (void) subscribeAttributePhaseListWithParams:(MTRSubscribeParams *) params subscriptionEstablished:(MTRSubscriptionEstablishedHandler) subscriptionEstablished reportHandler:(void (^)(NSArray *value, NSError *error)) reportHandler;
 ```
 
 

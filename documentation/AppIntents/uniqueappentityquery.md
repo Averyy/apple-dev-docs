@@ -1,7 +1,8 @@
 # UniqueAppEntityQuery
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A query designed for only returning a single possible value, provided by `uniqueEntity`. Protocol extensions will provide the other required query methods based on that.
 
@@ -23,25 +24,26 @@ protocol UniqueAppEntityQuery : EnumerableEntityQuery where Self.Entity : Unique
 ## Topics
 
 ### Associated Types
-- [associatedtype Unique](uniqueappentityquery/unique.md)
+- [associatedtype Unique](./uniqueappentityquery/unique.md)
 ### Instance Methods
-- [func uniqueEntity() async throws -> Self.Unique](uniqueappentityquery/uniqueentity.md)
+- [func uniqueEntity() async throws -> Self.Unique](./uniqueappentityquery/uniqueentity%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [DynamicOptionsProvider](dynamicoptionsprovider.md)
-- [EntityQuery](entityquery.md)
-- [EnumerableEntityQuery](enumerableentityquery.md)
-- [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [DynamicOptionsProvider](./dynamicoptionsprovider.md)
+- [EntityQuery](./entityquery.md)
+- [EnumerableEntityQuery](./enumerableentityquery.md)
+- [PersistentlyIdentifiable](./persistentlyidentifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [UniqueAppEntityProvider](uniqueappentityprovider.md)
+- [UniqueAppEntityProvider](./uniqueappentityprovider.md)
 
 ## See Also
 
-- [struct UniqueAppEntityProvider](uniqueappentityprovider.md)
+### Unique entity queries
+- [struct UniqueAppEntityProvider](./uniqueappentityprovider.md)
   A simplified query type conforming to `UniqueAppEntityQuery`.  Use this as the value of the `defaultQuery` of an entity conforming to `UniqueAppEntity`.
 
 

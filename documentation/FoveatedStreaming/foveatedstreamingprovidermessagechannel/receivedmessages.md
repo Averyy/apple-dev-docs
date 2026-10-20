@@ -1,7 +1,8 @@
 # receivedMessages
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The messages the host app has sent to the extension.
 
@@ -19,7 +20,7 @@ final var receivedMessages: some AsyncSequence<Data, Never> { get }
 
 The sequence yields each message as the host sends it and finishes when the channel closes.
 
-> **Note**: Intended for a single consumer.  Iterate [`receivedMessages`](foveatedstreamingprovidermessagechannel/receivedmessages.md) from one place only; consuming it concurrently from multiple tasks is not supported.
+> **Note**: Intended for a single consumer.  Iterate [`receivedMessages`](./receivedmessages.md) from one place only; consuming it concurrently from multiple tasks is not supported.
 
 
 ---

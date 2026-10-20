@@ -1,7 +1,8 @@
 # default
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default shader library of the main (i.e. app) bundle.
 
@@ -21,7 +22,8 @@ static let `default`: ShaderLibrary
 
 ## See Also
 
-- [static func bundle(Bundle) -> ShaderLibrary](shaderlibrary/bundle(_:).md)
+### Getting the default shader library
+- [static func bundle(Bundle) -> ShaderLibrary](./bundle%28_%29.md)
   Returns the default shader library of the specified bundle.
 
 

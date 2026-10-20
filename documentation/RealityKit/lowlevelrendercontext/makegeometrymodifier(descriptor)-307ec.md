@@ -2,9 +2,10 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
-Synchronous variant of [`makeGeometryModifier(descriptor:)`](lowlevelrendercontext/makegeometrymodifier(descriptor:)-307ec.md). Blocks the current thread until compilation completes.
+Synchronous variant of [`makeGeometryModifier(descriptor:)`](./makegeometrymodifier%28descriptor%29-307ec.md). Blocks the current thread until compilation completes.
 
 **Availability**:
 - iOS 27.0+
@@ -18,11 +19,19 @@ Synchronous variant of [`makeGeometryModifier(descriptor:)`](lowlevelrenderconte
 func makeGeometryModifier(descriptor: LowLevelMaterialResource.GeometryModifier.Descriptor) throws -> sending LowLevelMaterialResource.GeometryModifier
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+(nonsending) func makeGeometryModifier(descriptor: LowLevelMaterialResource.GeometryModifier.Descriptor) async throws -> sending LowLevelMaterialResource.GeometryModifier
+```
+
 ## See Also
 
-- [func makeGeometryModifier(descriptor: LowLevelMaterialResource.GeometryModifier.Descriptor) async throws -> sending LowLevelMaterialResource.GeometryModifier](lowlevelrendercontext/makegeometrymodifier(descriptor:)-9tq7q.md)
+### Creating geometry modifiers
+- [func makeGeometryModifier(descriptor: LowLevelMaterialResource.GeometryModifier.Descriptor) async throws -> sending LowLevelMaterialResource.GeometryModifier](./makegeometrymodifier%28descriptor%29-9tq7q.md)
   Asynchronously creates a geometry modifier from a user-authored Metal function described by the given descriptor.
-- [func makeDefaultGeometryModifier() -> sending LowLevelMaterialResource.GeometryModifier](lowlevelrendercontext/makedefaultgeometrymodifier.md)
+- [func makeDefaultGeometryModifier() -> sending LowLevelMaterialResource.GeometryModifier](./makedefaultgeometrymodifier%28%29.md)
   Returns a pass-through geometry modifier that performs no vertex transformation.
 
 

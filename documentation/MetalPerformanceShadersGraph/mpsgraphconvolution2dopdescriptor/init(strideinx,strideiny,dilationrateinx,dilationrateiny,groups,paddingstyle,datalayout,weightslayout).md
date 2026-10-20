@@ -1,7 +1,8 @@
 # init(strideInX:strideInY:dilationRateInX:dilationRateInY:groups:paddingStyle:dataLayout:weightsLayout:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a convolution descriptor with given values for parameters.
 
@@ -19,20 +20,24 @@ Creates a convolution descriptor with given values for parameters.
 convenience init?(strideInX: Int, strideInY: Int, dilationRateInX: Int, dilationRateInY: Int, groups: Int, paddingStyle: MPSGraphPaddingStyle, dataLayout: MPSGraphTensorNamedDataLayout, weightsLayout: MPSGraphTensorNamedDataLayout)
 ```
 
+```objc
++ (instancetype) descriptorWithStrideInX:(NSUInteger) strideInX strideInY:(NSUInteger) strideInY dilationRateInX:(NSUInteger) dilationRateInX dilationRateInY:(NSUInteger) dilationRateInY groups:(NSUInteger) groups paddingStyle:(MPSGraphPaddingStyle) paddingStyle dataLayout:(MPSGraphTensorNamedDataLayout) dataLayout weightsLayout:(MPSGraphTensorNamedDataLayout) weightsLayout;
+```
+
 #### Return Value
 
 The `MPSGraphConvolution2DOpDescriptor` on autoreleasepool.
 
 ## Parameters
 
-- `strideInX`: See [`strideInX`](mpsgraphconvolution2dopdescriptor/strideinx.md) property.
-- `strideInY`: See [`strideInY`](mpsgraphconvolution2dopdescriptor/strideiny.md) property.
-- `dilationRateInX`: See [`dilationRateInX`](mpsgraphconvolution2dopdescriptor/dilationrateinx.md) property.
-- `dilationRateInY`: See [`dilationRateInY`](mpsgraphconvolution2dopdescriptor/dilationrateiny.md) property.
-- `groups`: See [`groups`](mpsgraphconvolution2dopdescriptor/groups.md) property.
-- `paddingStyle`: See [`paddingStyle`](mpsgraphconvolution2dopdescriptor/paddingstyle.md) property.
-- `dataLayout`: See [`dataLayout`](mpsgraphconvolution2dopdescriptor/datalayout.md) property.
-- `weightsLayout`: See [`weightsLayout`](mpsgraphconvolution2dopdescriptor/weightslayout.md) property.
+- `strideInX`: See [`strideInX`](./strideinx.md) property.
+- `strideInY`: See [`strideInY`](./strideiny.md) property.
+- `dilationRateInX`: See [`dilationRateInX`](./dilationrateinx.md) property.
+- `dilationRateInY`: See [`dilationRateInY`](./dilationrateiny.md) property.
+- `groups`: See [`groups`](./groups.md) property.
+- `paddingStyle`: See [`paddingStyle`](./paddingstyle.md) property.
+- `dataLayout`: See [`dataLayout`](./datalayout.md) property.
+- `weightsLayout`: See [`weightsLayout`](./weightslayout.md) property.
 
 
 ---

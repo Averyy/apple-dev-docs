@@ -1,7 +1,8 @@
 # connected
 
 **Framework**: RelevanceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A person’s headphones are connected to the device.
 

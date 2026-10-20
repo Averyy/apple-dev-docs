@@ -1,7 +1,8 @@
 # stampName
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the stamp, a text or graphics annotation that emulates a rubber stamp effect.
 
@@ -10,13 +11,17 @@ The name of the stamp, a text or graphics annotation that emulates a rubber stam
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var stampName: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * stampName;
 ```
 
 #### Discussion

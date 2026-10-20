@@ -1,7 +1,8 @@
 # handsFree(_:unhandledResultCode:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate the phone sent an unknown code.
 
@@ -14,6 +15,10 @@ Tells the delegate the phone sent an unknown code.
 optional func handsFree(_ device: IOBluetoothHandsFreeDevice!, unhandledResultCode resultCode: String!)
 ```
 
+```objc
+- (void) handsFree:(IOBluetoothHandsFreeDevice *) device unhandledResultCode:(NSString *) resultCode;
+```
+
 ## Parameters
 
 - `device`: The connected Bluetooth hands-free phone or headset.
@@ -21,9 +26,10 @@ optional func handsFree(_ device: IOBluetoothHandsFreeDevice!, unhandledResultCo
 
 ## See Also
 
-- [func handsFree(IOBluetoothHandsFreeDevice!, subscriberNumber: String!)](iobluetoothhandsfreedevicedelegate/handsfree(_:subscribernumber:).md)
+### Receiving Other Information
+- [func handsFree(IOBluetoothHandsFreeDevice!, subscriberNumber: String!)](./handsfree%28_,subscribernumber%29.md)
   Tells the delegate the subscriber number of a call.
-- [func handsFree(IOBluetoothHandsFreeDevice!, ringAttempt: NSNumber!)](iobluetoothhandsfreedevicedelegate/handsfree(_:ringattempt:).md)
+- [func handsFree(IOBluetoothHandsFreeDevice!, ringAttempt: NSNumber!)](./handsfree%28_,ringattempt%29.md)
   Tells the delegate the phone is ringing.
 
 

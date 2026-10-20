@@ -1,7 +1,8 @@
 # isDiacritic
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scalar is a diacritic.
 
@@ -24,7 +25,7 @@ var isDiacritic: Bool { get }
 
 Diacritics are scalars that linguistically modify the meaning of another scalar to which they apply. Scalars for which this property is `true` are frequently, but not always, combining marks or modifiers.
 
-This property corresponds to the “Diacritic” property in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Diacritic” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

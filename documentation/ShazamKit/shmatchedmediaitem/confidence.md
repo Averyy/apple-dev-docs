@@ -1,7 +1,8 @@
 # confidence
 
 **Framework**: ShazamKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The level of confidence in the match result.
 
@@ -18,6 +19,18 @@ The level of confidence in the match result.
 
 ```swift
 var confidence: Float { get }
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, assign, readonly) float confidence;
+```
+
+*macOS*
+
+```objc
+@property (atomic, assign, readonly) float confidence;
 ```
 
 #### Discussion

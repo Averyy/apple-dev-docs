@@ -1,7 +1,8 @@
 # PMServerLaunchPrinterBrowser(_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Launches the printer browser to browse the printers available for a print server.
 
@@ -14,9 +15,13 @@ Launches the printer browser to browse the printers available for a print server
 func PMServerLaunchPrinterBrowser(_ server: PMServer?, _ options: CFDictionary?) -> OSStatus
 ```
 
-#### Return_value
+```c
+OSStatus PMServerLaunchPrinterBrowser(PMServer server, CFDictionaryRef options);
+```
 
-A result code. See [`Result Codes`](core_printing#1670007.md).  If you specify a server whose printers cannot be browsed, this function returns the error code `kPMInvalidParameter`.
+#### Return Value
+
+A result code. See [Result Codes](./core_printing.md#1670007).  If you specify a server whose printers cannot be browsed, this function returns the error code `kPMInvalidParameter`.
 
 #### Discussion
 
@@ -29,13 +34,14 @@ This function displays the standard printer browser to allow the user to create 
 
 ## See Also
 
-- [func PMServerCreatePrinterList(PMServer?, UnsafeMutablePointer<Unmanaged<CFArray>?>) -> OSStatus](1459953-pmservercreateprinterlist.md)
+### Creating Printer Objects
+- [func PMServerCreatePrinterList(PMServer?, UnsafeMutablePointer<Unmanaged<CFArray>?>) -> OSStatus](./api-1459953-pmservercreateprinterlist.md)
   Creates a list of printers available to a print server.
-- [func PMSessionCreatePrinterList(PMPrintSession, UnsafeMutablePointer<Unmanaged<CFArray>?>, UnsafeMutablePointer<CFIndex>?, UnsafeMutablePointer<PMPrinter?>?) -> OSStatus](1460119-pmsessioncreateprinterlist.md)
+- [func PMSessionCreatePrinterList(PMPrintSession, UnsafeMutablePointer<Unmanaged<CFArray>?>, UnsafeMutablePointer<CFIndex>?, UnsafeMutablePointer<PMPrinter?>?) -> OSStatus](./api-1460119-pmsessioncreateprinterlist.md)
   Creates a list of printers available in the specified printing session.
-- [func PMPrinterCreateFromPrinterID(CFString) -> PMPrinter?](1461363-pmprintercreatefromprinterid.md)
+- [func PMPrinterCreateFromPrinterID(CFString) -> PMPrinter?](./api-1461363-pmprintercreatefromprinterid.md)
   Creates a printer object from a print queue identifier.
-- [func PMCreateGenericPrinter(UnsafeMutablePointer<PMPrinter?>) -> OSStatus](1461960-pmcreategenericprinter.md)
+- [func PMCreateGenericPrinter(UnsafeMutablePointer<PMPrinter?>) -> OSStatus](./api-1461960-pmcreategenericprinter.md)
   Creates a generic printer object.
 
 

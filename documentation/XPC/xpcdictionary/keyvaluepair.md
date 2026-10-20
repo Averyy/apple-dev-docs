@@ -1,7 +1,8 @@
 # XPCDictionary.KeyValuePair
 
 **Framework**: XPC  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that contains a dictionary’s key-value pair.
 
@@ -11,7 +12,7 @@ A type that contains a dictionary’s key-value pair.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ typealias KeyValuePair = (key: String, value: xpc_object_t)
 
 #### Discussion
 
-[`XPCDictionary`](xpcdictionary.md) exposes its values as instances of [`xpc_object_t`](xpc_object_t.md) even if they were originally set with other types.
+[`XPCDictionary`](../xpcdictionary.md) exposes its values as instances of [`xpc_object_t`](../xpc_object_t.md) even if they were originally set with other types.
 
 
 ---

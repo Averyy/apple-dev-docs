@@ -1,7 +1,8 @@
 # url
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates the initial URL for the tab.
 
@@ -16,6 +17,10 @@ Indicates the initial URL for the tab.
 
 ```swift
 var url: URL? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSURL * url;
 ```
 
 #### Discussion

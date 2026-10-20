@@ -1,17 +1,20 @@
 # contextMenu(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a context menu to the view.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.0+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 6.0+ - Deprecated in 7.0
+
+> **Deprecated**: Use [`contextMenu(menuItems:)`](./contextmenu%28menuitems%29.md) instead.
 
 ## Declaration
 
@@ -28,7 +31,7 @@ A view that can show a context menu.
 
 Use this method to attach a specified context menu to a view. You can make the context menu unavailable by conditionally passing `nil` as the value for the `contextMenu`.
 
-The example below creates a [`ContextMenu`](contextmenu.md) that contains two items and passes them into the modifier. The Boolean value `shouldShowMenu`, which defaults to `true`, controls the context menu availability:
+The example below creates a [`ContextMenu`](../contextmenu.md) that contains two items and passes them into the modifier. The Boolean value `shouldShowMenu`, which defaults to `true`, controls the context menu availability:
 
 ```swift
 private let menuItems = ContextMenu {
@@ -54,7 +57,7 @@ private struct ContextMenuMenuItems: View {
 }
 ```
 
-![A screenshot of a context menu showing two menu items: Add to Favorites, and Show in Maps.](/images/com.apple.SwiftUI/View-contextMenu-1-iOS@2x.png)
+![A screenshot of a context menu showing two menu items: Add to Favorites, and Show in Maps.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-contextMenu-1-iOS@2x.png)
 
 ## Parameters
 
@@ -62,19 +65,20 @@ private struct ContextMenuMenuItems: View {
 
 ## See Also
 
-- [func navigationBarTitle(_:)](view/navigationbartitle(_:).md)
+### Auxiliary view modifiers
+- [func navigationBarTitle(_:)](./navigationbartitle%28_%29.md)
   Sets the title in the navigation bar for this view.
-- [func navigationBarTitle(_:displayMode:)](view/navigationbartitle(_:displaymode:).md)
+- [func navigationBarTitle(_:displayMode:)](./navigationbartitle%28_,displaymode%29.md)
   Sets the title and display mode in the navigation bar for this view.
-- [func navigationBarItems<L>(leading: L) -> some View](view/navigationbaritems(leading:).md)
+- [func navigationBarItems<L>(leading: L) -> some View](./navigationbaritems%28leading%29.md)
   Sets the navigation bar items for this view.
-- [func navigationBarItems<L, T>(leading: L, trailing: T) -> some View](view/navigationbaritems(leading:trailing:).md)
+- [func navigationBarItems<L, T>(leading: L, trailing: T) -> some View](./navigationbaritems%28leading,trailing%29.md)
   Sets the navigation bar items for this view.
-- [func navigationBarItems<T>(trailing: T) -> some View](view/navigationbaritems(trailing:).md)
+- [func navigationBarItems<T>(trailing: T) -> some View](./navigationbaritems%28trailing%29.md)
   Configures the navigation bar items for this view.
-- [func navigationBarHidden(Bool) -> some View](view/navigationbarhidden(_:).md)
+- [func navigationBarHidden(Bool) -> some View](./navigationbarhidden%28_%29.md)
   Hides the navigation bar for this view.
-- [func statusBar(hidden: Bool) -> some View](view/statusbar(hidden:).md)
+- [func statusBar(hidden: Bool) -> some View](./statusbar%28hidden%29.md)
   Sets the visibility of the status bar.
 
 

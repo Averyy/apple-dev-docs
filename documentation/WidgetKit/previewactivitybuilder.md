@@ -1,7 +1,8 @@
 # PreviewActivityBuilder
 
 **Framework**: WidgetKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -17,16 +18,17 @@ struct PreviewActivityBuilder<A> where A : ActivityAttributes
 ## Topics
 
 ### Previewing Live Activities
-- [static func buildArray([[A.ContentState]]) -> [A.ContentState]](previewactivitybuilder/buildarray(_:).md)
-- [static func buildExpression(A.ContentState) -> [A.ContentState]](previewactivitybuilder/buildexpression(_:).md)
-- [static func buildPartialBlock(accumulated: [A.ContentState], next: [A.ContentState]) -> [A.ContentState]](previewactivitybuilder/buildpartialblock(accumulated:next:).md)
-- [static func buildPartialBlock(first: [A.ContentState]) -> [A.ContentState]](previewactivitybuilder/buildpartialblock(first:).md)
+- [static func buildArray([[A.ContentState]]) -> [A.ContentState]](./previewactivitybuilder/buildarray%28_%29.md)
+- [static func buildExpression(A.ContentState) -> [A.ContentState]](./previewactivitybuilder/buildexpression%28_%29.md)
+- [static func buildPartialBlock(accumulated: [A.ContentState], next: [A.ContentState]) -> [A.ContentState]](./previewactivitybuilder/buildpartialblock%28accumulated,next%29.md)
+- [static func buildPartialBlock(first: [A.ContentState]) -> [A.ContentState]](./previewactivitybuilder/buildpartialblock%28first%29.md)
 
 ## See Also
 
-- [struct PreviewRelevanceEntryBuilder](previewrelevanceentrybuilder.md)
+### Generated structures
+- [struct PreviewRelevanceEntryBuilder](./previewrelevanceentrybuilder.md)
   A builder that allows you to construct a list of relevance entries to preview your widget.
-- [struct PreviewTimelineBuilder](previewtimelinebuilder.md)
+- [struct PreviewTimelineBuilder](./previewtimelinebuilder.md)
 
 
 ---

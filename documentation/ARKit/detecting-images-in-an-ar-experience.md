@@ -1,6 +1,8 @@
 # Detecting Images in an AR Experience
 
-**Framework**: ARKit
+**Framework**: ARKit  
+**Role**: Sample Code  
+**Download**: [DetectingImagesInAnARExperience.zip](https://docs-assets.developer.apple.com/published/438a277b1a05/DetectingImagesInAnARExperience.zip)
 
 React to known 2D images in the user’s environment, and use their positions to place AR content.
 
@@ -19,13 +21,13 @@ This example app looks for any of the several reference images included in the a
 
 ##### Enable Image Detection
 
-Image detection is an add-on feature for world-tracking AR sessions. (For more details on world tracking, see [`Tracking and visualizing planes`](tracking-and-visualizing-planes.md).)
+Image detection is an add-on feature for world-tracking AR sessions. (For more details on world tracking, see [Tracking and visualizing planes](./tracking-and-visualizing-planes.md).)
 
 To enable image detection:
 
-1. Load one or more [`ARReferenceImage`](arreferenceimage.md) resources from your app’s asset catalog.
-2. Create a world-tracking configuration and pass those reference images to its [`detectionImages`](arworldtrackingconfiguration/detectionimages.md) property.
-3. Use the [`run(_:options:)`](arsession/run(_:options:).md) method to run a session with your configuration.
+1. Load one or more [`ARReferenceImage`](./arreferenceimage.md) resources from your app’s asset catalog.
+2. Create a world-tracking configuration and pass those reference images to its [`detectionImages`](./arworldtrackingconfiguration/detectionimages.md) property.
+3. Use the [`run(_:options:)`](./arsession/run%28_,options%29.md) method to run a session with your configuration.
 
 The code below shows how the sample app performs these steps when starting or restarting the AR experience.
 
@@ -42,9 +44,9 @@ session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
 
 ##### Visualize Image Detection Results
 
-When ARKit detects one of your reference images, the session automatically adds a corresponding [`ARImageAnchor`](arimageanchor.md) to its list of anchors. To respond to an image being detected, implement an appropriate [`ARSessionDelegate`](arsessiondelegate.md), [`ARSKViewDelegate`](arskviewdelegate.md), or [`ARSCNViewDelegate`](arscnviewdelegate.md) method that reports the new anchor being added to the session. (This example app uses the [`renderer(_:didAdd:for:)`](arscnviewdelegate/renderer(_:didadd:for:).md) method for the code shown below.)
+When ARKit detects one of your reference images, the session automatically adds a corresponding [`ARImageAnchor`](./arimageanchor.md) to its list of anchors. To respond to an image being detected, implement an appropriate [`ARSessionDelegate`](./arsessiondelegate.md), [`ARSKViewDelegate`](./arskviewdelegate.md), or [`ARSCNViewDelegate`](./arscnviewdelegate.md) method that reports the new anchor being added to the session. (This example app uses the [`renderer(_:didAdd:for:)`](./arscnviewdelegate/renderer%28_,didadd,for%29.md) method for the code shown below.)
 
-To use the detected image as a trigger for AR content, you’ll need to know its position and orientation, its size, and which reference image it is. The anchor’s inherited [`transform`](aranchor/transform.md) property provides position and orientation, and its [`referenceImage`](arimageanchor/referenceimage.md) property tells you which [`ARReferenceImage`](arreferenceimage.md) object was detected. If your AR content depends on the extent of the image in the scene, you can then use the reference image’s [`physicalSize`](arreferenceimage/physicalsize.md) to set up your content, as shown in the code below.
+To use the detected image as a trigger for AR content, you’ll need to know its position and orientation, its size, and which reference image it is. The anchor’s inherited [`transform`](./aranchor/transform.md) property provides position and orientation, and its [`referenceImage`](./arimageanchor/referenceimage.md) property tells you which [`ARReferenceImage`](./arreferenceimage.md) object was detected. If your AR content depends on the extent of the image in the scene, you can then use the reference image’s [`physicalSize`](./arreferenceimage/physicalsize.md) to set up your content, as shown in the code below.
 
 ```swift
 func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
@@ -94,7 +96,7 @@ To use your own images for detection (in this sample or in your own project), yo
 
 **Be aware of image detection capabilities.** Choose, design, and configure reference images for optimal reliability and performance:
 
-- Enter the physical size of the image in Xcode as accurately as possible. ARKit relies on this information to determine the distance of the image from the camera. Entering an incorrect physical size will result in an [`ARImageAnchor`](arimageanchor.md) that’s the wrong distance from the camera.
+- Enter the physical size of the image in Xcode as accurately as possible. ARKit relies on this information to determine the distance of the image from the camera. Entering an incorrect physical size will result in an [`ARImageAnchor`](./arimageanchor.md) that’s the wrong distance from the camera.
 - When you add reference images to your asset catalog in Xcode, pay attention to the quality estimation warnings Xcode provides. Images with high contrast work best for image detection.
 - Use only images on flat surfaces for detection. If an image to be detected is on a nonplanar surface, like a label on a wine bottle, ARKit might not detect it at all, or might create an image anchor at the wrong location.
 - Consider how your image appears under different lighting conditions. If an image is printed on glossy paper or displayed on a device screen, reflections on those surfaces can interfere with detection.
@@ -105,11 +107,11 @@ This example app simply visualizes where ARKit detects each reference image in t
 
 **Use detected images to set a frame of reference for the AR scene.** Instead of requiring the user to choose a place for virtual content, or arbitrarily placing content in the user’s environment, use detected images to anchor the virtual scene. You can even use multiple detected images. For example, an app for a retail store could make a virtual character appear to emerge from a store’s front door by detecting posters placed on either side of the door and then calculating a position for the character directly between the posters.
 
-> **Note**: Use the [`setWorldOrigin(relativeTransform:)`](arsession/setworldorigin(relativetransform:).md) method to redefine the world coordinate system so that you can place all anchors and other content relative to the reference point you choose.
+> **Note**: Use the [`setWorldOrigin(relativeTransform:)`](./arsession/setworldorigin%28relativetransform%29.md) method to redefine the world coordinate system so that you can place all anchors and other content relative to the reference point you choose.
 
 **Design your AR experience to use detected images as a starting point for virtual content.** ARKit doesn’t track changes to the position or orientation of each detected image. If you try to place virtual content that stays attached to a detected image, that content may not appear to stay in place correctly. Instead, use detected images as a frame of reference for starting a dynamic scene. For example, your app might detect theater posters for a sci-fi film and then have virtual spaceships appear to emerge from the posters and fly around the environment.
 
-**Consider when to allow detection of each image to trigger (or repeat) AR interactions.** ARKit adds an image anchor to a session exactly once for each reference image in the session configuration’s [`detectionImages`](arworldtrackingconfiguration/detectionimages.md) array. If your AR experience adds virtual content to the scene when an image is detected, that action will by default happen only once. To allow the user to experience that content again without restarting your app, call the session’s [`remove(anchor:)`](arsession/remove(anchor:).md) method to remove the corresponding [`ARImageAnchor`](arimageanchor.md). After the anchor is removed, ARKit will add a new anchor the next time it detects the image.
+**Consider when to allow detection of each image to trigger (or repeat) AR interactions.** ARKit adds an image anchor to a session exactly once for each reference image in the session configuration’s [`detectionImages`](./arworldtrackingconfiguration/detectionimages.md) array. If your AR experience adds virtual content to the scene when an image is detected, that action will by default happen only once. To allow the user to experience that content again without restarting your app, call the session’s [`remove(anchor:)`](./arsession/remove%28anchor%29.md) method to remove the corresponding [`ARImageAnchor`](./arimageanchor.md). After the anchor is removed, ARKit will add a new anchor the next time it detects the image.
 
 For example, in the case described above, where spaceships appear to fly out of a movie poster, you might not want an extra copy of that animation to appear while the first one is still playing. Wait until the animation ends to remove the anchor, so that the user can trigger it again by pointing their device at the image.
 

@@ -1,7 +1,8 @@
 # IntegerFormatStyle.Currency.Configuration
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type the format style uses for configuration settings.
 
@@ -22,27 +23,28 @@ typealias Configuration = CurrencyFormatStyleConfiguration
 
 #### Discussion
 
-[`IntegerFormatStyle.Currency`](integerformatstyle/currency.md) uses [`CurrencyFormatStyleConfiguration`](currencyformatstyleconfiguration.md) for its configuration type.
+[`IntegerFormatStyle.Currency`](../currency.md) uses [`CurrencyFormatStyleConfiguration`](../../currencyformatstyleconfiguration.md) for its configuration type.
 
 ## See Also
 
-- [func decimalSeparator(strategy: IntegerFormatStyle<Value>.Currency.Configuration.DecimalSeparatorDisplayStrategy) -> IntegerFormatStyle<Value>.Currency](integerformatstyle/currency/decimalseparator(strategy:).md)
+### Customizing style behavior
+- [func decimalSeparator(strategy: IntegerFormatStyle<Value>.Currency.Configuration.DecimalSeparatorDisplayStrategy) -> IntegerFormatStyle<Value>.Currency](./decimalseparator%28strategy%29.md)
   Modifies the format style to use the specified decimal separator display strategy.
-- [func grouping(IntegerFormatStyle<Value>.Currency.Configuration.Grouping) -> IntegerFormatStyle<Value>.Currency](integerformatstyle/currency/grouping(_:).md)
+- [func grouping(IntegerFormatStyle<Value>.Currency.Configuration.Grouping) -> IntegerFormatStyle<Value>.Currency](./grouping%28_%29.md)
   Modifies the format style to use the specified grouping.
-- [func locale(Locale) -> IntegerFormatStyle<Value>.Currency](integerformatstyle/currency/locale(_:).md)
+- [func locale(Locale) -> IntegerFormatStyle<Value>.Currency](./locale%28_%29.md)
   Modifies the format style to use the specified locale.
-- [func precision(IntegerFormatStyle<Value>.Currency.Configuration.Precision) -> IntegerFormatStyle<Value>.Currency](integerformatstyle/currency/precision(_:).md)
+- [func precision(IntegerFormatStyle<Value>.Currency.Configuration.Precision) -> IntegerFormatStyle<Value>.Currency](./precision%28_%29.md)
   Modifies the format style to use the specified precision.
-- [func presentation(IntegerFormatStyle<Value>.Currency.Configuration.Presentation) -> IntegerFormatStyle<Value>.Currency](integerformatstyle/currency/presentation(_:).md)
+- [func presentation(IntegerFormatStyle<Value>.Currency.Configuration.Presentation) -> IntegerFormatStyle<Value>.Currency](./presentation%28_%29.md)
   Modifies the format style to use the specified presentation.
-- [func rounded(rule: IntegerFormatStyle<Value>.Currency.Configuration.RoundingRule, increment: Int?) -> IntegerFormatStyle<Value>.Currency](integerformatstyle/currency/rounded(rule:increment:).md)
+- [func rounded(rule: IntegerFormatStyle<Value>.Currency.Configuration.RoundingRule, increment: Int?) -> IntegerFormatStyle<Value>.Currency](./rounded%28rule,increment%29.md)
   Modifies the format style to use the specified rounding rule and increment.
-- [func scale(Double) -> IntegerFormatStyle<Value>.Currency](integerformatstyle/currency/scale(_:).md)
+- [func scale(Double) -> IntegerFormatStyle<Value>.Currency](./scale%28_%29.md)
   Modifies the format style to use the specified scale.
-- [func sign(strategy: IntegerFormatStyle<Value>.Currency.Configuration.SignDisplayStrategy) -> IntegerFormatStyle<Value>.Currency](integerformatstyle/currency/sign(strategy:).md)
+- [func sign(strategy: IntegerFormatStyle<Value>.Currency.Configuration.SignDisplayStrategy) -> IntegerFormatStyle<Value>.Currency](./sign%28strategy%29.md)
   Modifies the format style to use the specified sign display strategy.
-- [enum CurrencyFormatStyleConfiguration](currencyformatstyleconfiguration.md)
+- [enum CurrencyFormatStyleConfiguration](../../currencyformatstyleconfiguration.md)
   Configuration settings for formatting currency values.
 
 

@@ -1,7 +1,8 @@
 # Assignable
 
 **Framework**: Assignables  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Documents conforming to this protocol can be assigned to a user.
 
@@ -9,7 +10,7 @@ Documents conforming to this protocol can be assigned to a user.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,26 +21,27 @@ protocol Assignable
 ## Topics
 
 ### Assigning a document
-- [func assign(to: AnyUserIdentity) throws -> AssignedWorkDocument](assignable/assign(to:)-4jnsl.md)
+- [func assign(to: AnyUserIdentity) throws -> AssignedWorkDocument](./assignable/assign%28to%29-4jnsl.md)
   Assign this document to a user.
-- [func assign(to: some UserIdentity) throws -> AssignedWorkDocument](assignable/assign(to:)-4mit8.md)
+- [func assign(to: some UserIdentity) throws -> AssignedWorkDocument](./assignable/assign%28to%29-4mit8.md)
   Assign this document to a user.
 ### Instance Methods
-- [func makeAssignedWorkDocument() throws -> AssignedWorkDocument](assignable/makeassignedworkdocument.md)
-  Create a new instance of an [`AssignedWorkDocument`](assignedworkdocument.md).
-- [func makeAssignedWorkDocument(id: String) throws -> AssignedWorkDocument](assignable/makeassignedworkdocument(id:).md)
-  Create a new instance of an [`AssignedWorkDocument`](assignedworkdocument.md).
+- [func makeAssignedWorkDocument() throws -> AssignedWorkDocument](./assignable/makeassignedworkdocument%28%29.md)
+  Create a new instance of an [`AssignedWorkDocument`](./assignedworkdocument.md).
+- [func makeAssignedWorkDocument(id: String) throws -> AssignedWorkDocument](./assignable/makeassignedworkdocument%28id%29.md)
+  Create a new instance of an [`AssignedWorkDocument`](./assignedworkdocument.md).
 
 ## Relationships
 
 ### Conforming Types
-- [AssignableDocument](assignabledocument.md)
+- [AssignableDocument](./assignabledocument.md)
 
 ## See Also
 
-- [struct AssignableDocument](assignabledocument.md)
+### Assignable document
+- [struct AssignableDocument](./assignabledocument.md)
   An assignable document is an augmented PDF that allows teachers to mark up the PDF with the intention of students taking the assessment.
-- [struct AssignedWorkDocument](assignedworkdocument.md)
+- [struct AssignedWorkDocument](./assignedworkdocument.md)
   An assigned work document is a document that contains taker and scorer markup specific to a taker. It also contains a copy of the assignable document upon which it is based.
 
 

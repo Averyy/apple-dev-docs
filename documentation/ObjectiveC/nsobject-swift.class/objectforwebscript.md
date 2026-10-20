@@ -1,17 +1,22 @@
 # objectForWebScript
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns an object that exposes the plug-in’s scripting interface.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var objectForWebScript: Any! { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) id objectForWebScript;
 ```
 
 #### Return Value

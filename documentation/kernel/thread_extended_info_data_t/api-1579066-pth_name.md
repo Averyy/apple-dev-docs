@@ -1,14 +1,15 @@
 # pth_name
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 char pth_name[64];
 ```
 

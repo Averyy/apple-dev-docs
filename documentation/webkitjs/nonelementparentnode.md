@@ -1,7 +1,8 @@
 # NonElementParentNode
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface NonElementParentNode
 ```
 
 ## Topics
 
 ### Instance Methods
-- [getElementById](nonelementparentnode/1630326-getelementbyid.md)
+- [getElementById](./nonelementparentnode/api-1630326-getelementbyid.md)
 
 
 ---

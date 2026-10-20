@@ -1,23 +1,28 @@
 # triangle
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A flag to indicate which triangle of a matrix is used.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var triangle: SparseTriangle_t { get set }
+```
+
+```c
+SparseTriangle_t triangle;
 ```
 
 #### Discussion

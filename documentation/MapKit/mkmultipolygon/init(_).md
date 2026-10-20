@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a multipolygon object using the provided polygons.
 
@@ -18,6 +19,10 @@ Creates a multipolygon object using the provided polygons.
 
 ```swift
 init(_ polygons: [MKPolygon])
+```
+
+```objc
+- (instancetype) initWithPolygons:(NSArray<MKPolygon *> *) polygons;
 ```
 
 ## Parameters

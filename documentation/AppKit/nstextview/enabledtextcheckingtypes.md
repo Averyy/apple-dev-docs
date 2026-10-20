@@ -1,7 +1,8 @@
 # enabledTextCheckingTypes
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default text checking types.
 
@@ -14,33 +15,38 @@ The default text checking types.
 var enabledTextCheckingTypes: NSTextCheckingTypes { get set }
 ```
 
+```objc
+@property NSTextCheckingTypes enabledTextCheckingTypes;
+```
+
 ## See Also
 
-- [func checkTextInDocument(Any?)](nstextview/checktextindocument(_:).md)
+### Checking and substituting text
+- [func checkTextInDocument(Any?)](./checktextindocument%28_%29.md)
   Performs the default text checking on the entire document.
-- [func checkTextInSelection(Any?)](nstextview/checktextinselection(_:).md)
+- [func checkTextInSelection(Any?)](./checktextinselection%28_%29.md)
   Performs the default text checking on the current selection.
-- [func checkText(in: NSRange, types: NSTextCheckingTypes, options: [NSSpellChecker.OptionKey : Any])](nstextview/checktext(in:types:options:).md)
+- [func checkText(in: NSRange, types: NSTextCheckingTypes, options: [NSSpellChecker.OptionKey : Any])](./checktext%28in,types,options%29.md)
   Check and replace the text in the range using the specified checking types and options.
-- [func handleTextCheckingResults([NSTextCheckingResult], forRange: NSRange, types: NSTextCheckingTypes, options: [NSSpellChecker.OptionKey : Any], orthography: NSOrthography, wordCount: Int)](nstextview/handletextcheckingresults(_:forrange:types:options:orthography:wordcount:).md)
+- [func handleTextCheckingResults([NSTextCheckingResult], forRange: NSRange, types: NSTextCheckingTypes, options: [NSSpellChecker.OptionKey : Any], orthography: NSOrthography, wordCount: Int)](./handletextcheckingresults%28_,forrange,types,options,orthography,wordcount%29.md)
   Handles the text checking results returned by the text view
-- [var isAutomaticDashSubstitutionEnabled: Bool](nstextview/isautomaticdashsubstitutionenabled.md)
+- [var isAutomaticDashSubstitutionEnabled: Bool](./isautomaticdashsubstitutionenabled.md)
   A Boolean value that indicates whether automatic dash substitution is enabled.
-- [func toggleAutomaticDashSubstitution(Any?)](nstextview/toggleautomaticdashsubstitution(_:).md)
+- [func toggleAutomaticDashSubstitution(Any?)](./toggleautomaticdashsubstitution%28_%29.md)
   Toggles the state of the automatic dash substitution.
-- [var isAutomaticDataDetectionEnabled: Bool](nstextview/isautomaticdatadetectionenabled.md)
+- [var isAutomaticDataDetectionEnabled: Bool](./isautomaticdatadetectionenabled.md)
   A Boolean value that indicates whether automatic data detection is enabled.
-- [func toggleAutomaticDataDetection(Any?)](nstextview/toggleautomaticdatadetection(_:).md)
+- [func toggleAutomaticDataDetection(Any?)](./toggleautomaticdatadetection%28_%29.md)
   Toggles the state of the automatic data detection.
-- [var isAutomaticSpellingCorrectionEnabled: Bool](nstextview/isautomaticspellingcorrectionenabled.md)
+- [var isAutomaticSpellingCorrectionEnabled: Bool](./isautomaticspellingcorrectionenabled.md)
   A Boolean value that indicates whether automatic spelling correction is enabled.
-- [func toggleAutomaticSpellingCorrection(Any?)](nstextview/toggleautomaticspellingcorrection(_:).md)
+- [func toggleAutomaticSpellingCorrection(Any?)](./toggleautomaticspellingcorrection%28_%29.md)
   Toggles the state of the automatic spelling correction.
-- [var isAutomaticTextReplacementEnabled: Bool](nstextview/isautomatictextreplacementenabled.md)
+- [var isAutomaticTextReplacementEnabled: Bool](./isautomatictextreplacementenabled.md)
   A Boolean value that indicates whether automatic text replacement is enabled.
-- [func toggleAutomaticTextReplacement(Any?)](nstextview/toggleautomatictextreplacement(_:).md)
+- [func toggleAutomaticTextReplacement(Any?)](./toggleautomatictextreplacement%28_%29.md)
   Toggles the state of the automatic text replacement.
-- [func performValidatedReplacement(in: NSRange, with: NSAttributedString) -> Bool](nstextview/performvalidatedreplacement(in:with:).md)
+- [func performValidatedReplacement(in: NSRange, with: NSAttributedString) -> Bool](./performvalidatedreplacement%28in,with%29.md)
   Replaces text in the range you specify with the attributed string you provide.
 
 

@@ -1,7 +1,8 @@
 # init(device:lower:order:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, lower: Bool, order: Int)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device lower:(BOOL) lower order:(NSUInteger) order;
 ```
 
 

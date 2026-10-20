@@ -1,7 +1,8 @@
 # AutomaticProductViewStyle
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -22,23 +23,24 @@
 ## Topics
 
 ### Creating automatic product view styles
-- [init()](automaticproductviewstyle/init.md)
+- [init()](./automaticproductviewstyle/init%28%29.md)
   Creates an automatic product view style.
 
 ## Relationships
 
 ### Conforms To
-- [ProductViewStyle](productviewstyle.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ProductViewStyle](./productviewstyle.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CompactProductViewStyle](compactproductviewstyle.md)
+### Supporting types
+- [struct CompactProductViewStyle](./compactproductviewstyle.md)
   A style for a product view that’s suitable for layouts with less available space, or for displaying more items in a small amount of space.
-- [struct RegularProductViewStyle](regularproductviewstyle.md)
+- [struct RegularProductViewStyle](./regularproductviewstyle.md)
   A style for a product view that uses a standard, platform-appropriate layout.
-- [struct LargeProductViewStyle](largeproductviewstyle.md)
+- [struct LargeProductViewStyle](./largeproductviewstyle.md)
   A style for a product view that’s suitable for layouts where the Apple In-App Purchase content is prominent.
 
 

@@ -1,14 +1,15 @@
 # main_device_port
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 mach_port_t main_device_port;
 ```
 

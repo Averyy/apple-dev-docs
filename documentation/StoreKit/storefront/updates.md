@@ -1,7 +1,8 @@
 # updates
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The asynchronous sequence that emits storefront information when the system updates the storefront.
 
@@ -22,13 +23,14 @@ static var updates: Storefront.Storefronts { get }
 
 #### Discussion
 
-The storefront value can change at any time. Use [`updates`](storefront/updates.md) to listen for changes in this value. Respond to storefront changes by refreshing the list of your available products.
+The storefront value can change at any time. Use [`updates`](./updates.md) to listen for changes in this value. Respond to storefront changes by refreshing the list of your available products.
 
 ## See Also
 
-- [struct Storefront](storefront.md)
+### Storefront information
+- [struct Storefront](../storefront.md)
   The region and unique identifier of the App Store storefront for the device.
-- [static var current: Storefront?](storefront/current.md)
+- [static var current: Storefront?](./current.md)
   The current App Store storefront for product purchases.
 
 

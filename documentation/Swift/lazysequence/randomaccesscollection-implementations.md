@@ -1,11 +1,12 @@
 # RandomAccessCollection Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func index(Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Self.Index?](lazysequence/index(_:offsetby:limitedby:)-617va.md)
+- [func index(Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Self.Index?](./index%28_,offsetby,limitedby%29-617va.md)
   Returns an index that is the specified distance from the given index, unless that distance is beyond a given limiting index.
 
 

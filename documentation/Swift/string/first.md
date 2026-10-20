@@ -1,7 +1,8 @@
 # first
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The first element of the collection.
 
@@ -34,13 +35,14 @@ if let firstNumber = numbers.first {
 
 ## See Also
 
-- [subscript(String.Index) -> Character](string/subscript(_:)-lc0v.md)
+### Getting Characters and Bytes
+- [subscript(String.Index) -> Character](./subscript%28_%29-lc0v.md)
   Accesses the character at the given position.
-- [var last: Self.Element?](string/last.md)
+- [var last: Self.Element?](./last.md)
   The last element of the collection.
-- [func randomElement() -> Self.Element?](string/randomelement.md)
+- [func randomElement() -> Self.Element?](./randomelement%28%29.md)
   Returns a random element of the collection.
-- [func randomElement<T>(using: inout T) -> Self.Element?](string/randomelement(using:).md)
+- [func randomElement<T>(using: inout T) -> Self.Element?](./randomelement%28using%29.md)
   Returns a random element of the collection, using the given generator as a source for randomness.
 
 

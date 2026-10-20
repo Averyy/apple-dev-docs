@@ -1,7 +1,8 @@
 # reserve(locale:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Add an asset locale to the app’s current reservations.
 
@@ -26,17 +27,18 @@ static func reserve(locale: Locale) async throws -> Bool
 
 #### Discussion
 
-If an asset that supports the input locale exists, adds that asset’s locale to [`reservedLocales`](assetinventory/reservedlocales.md).
+If an asset that supports the input locale exists, adds that asset’s locale to [`reservedLocales`](./reservedlocales.md).
 
-> **Note**: An error if the number of locales would exceed [`maximumReservedLocales`](assetinventory/maximumreservedlocales.md) or if there is no asset that can support the locale.
+> **Throws**: An error if the number of locales would exceed [`maximumReservedLocales`](./maximumreservedlocales.md) or if there is no asset that can support the locale.
 
 ## See Also
 
-- [static func release(reservedLocale: Locale) async -> Bool](assetinventory/release(reservedlocale:).md)
+### Managing allocations
+- [static func release(reservedLocale: Locale) async -> Bool](./release%28reservedlocale%29.md)
   Removes an asset locale reservation.
-- [static var reservedLocales: [Locale]](assetinventory/reservedlocales.md)
+- [static var reservedLocales: [Locale]](./reservedlocales.md)
   The app’s current asset locale reservations.
-- [static var maximumReservedLocales: Int](assetinventory/maximumreservedlocales.md)
+- [static var maximumReservedLocales: Int](./maximumreservedlocales.md)
   The number of locale reservations permitted to an app.
 
 

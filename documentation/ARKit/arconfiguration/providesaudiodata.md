@@ -1,7 +1,8 @@
 # providesAudioData
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that specifies whether to capture audio during the AR session.
 
@@ -15,9 +16,13 @@ A Boolean value that specifies whether to capture audio during the AR session.
 var providesAudioData: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL providesAudioData;
+```
+
 #### Discussion
 
-To receive and handle captured audio data, your session delegate must implement the [`session(_:didOutputAudioSampleBuffer:)`](arsessionobserver/session(_:didoutputaudiosamplebuffer:).md) method.
+To receive and handle captured audio data, your session delegate must implement the [`session(_:didOutputAudioSampleBuffer:)`](../arsessionobserver/session%28_,didoutputaudiosamplebuffer%29.md) method.
 
 
 ---

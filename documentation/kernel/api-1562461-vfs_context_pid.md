@@ -1,7 +1,8 @@
 # vfs_context_pid
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Get the process id of the BSD process associated with a vfs_context_t.
 
@@ -10,11 +11,11 @@ Get the process id of the BSD process associated with a vfs_context_t.
 
 ## Declaration
 
-```swift
+```c
 int vfs_context_pid(vfs_context_t ctx);
 ```
 
-#### Return_value
+#### Return Value
 
 Process id.
 

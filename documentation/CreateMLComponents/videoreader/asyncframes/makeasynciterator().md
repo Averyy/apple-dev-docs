@@ -1,7 +1,8 @@
 # makeAsyncIterator()
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Constructs an iterator.
 
@@ -21,7 +22,8 @@ func makeAsyncIterator() -> VideoReader.AsyncFrames.Iterator
 
 ## See Also
 
-- [VideoReader.AsyncFrames.Iterator](videoreader/asyncframes/iterator.md)
+### Creating an iterator
+- [VideoReader.AsyncFrames.Iterator](./iterator.md)
   An async iterator of video frames.
 
 

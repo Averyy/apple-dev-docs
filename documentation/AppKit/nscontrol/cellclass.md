@@ -1,17 +1,22 @@
 # cellClass
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the type of cell used by the receiver.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class var cellClass: AnyClass? { get set }
+```
+
+```objc
+@property (class, nullable) Class cellClass;
 ```
 
 #### Return Value
@@ -20,7 +25,8 @@ The class of the cell used to manage the receiver’s contents, or `nil` if no c
 
 ## See Also
 
-- [var cell: NSCell?](nscontrol/cell.md)
+### Deprecated properties
+- [var cell: NSCell?](./cell.md)
   The receiver’s cell object.
 
 

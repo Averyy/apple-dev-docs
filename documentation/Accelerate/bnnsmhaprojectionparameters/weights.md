@@ -1,18 +1,19 @@
 # weights
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptor of the initial projection’s weights.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ The descriptor of the initial projection’s weights.
 var weights: BNNSNDArrayDescriptor
 ```
 
+```c
+BNNSNDArrayDescriptor weights;
+```
+
 ## See Also
 
-- [var target_desc: BNNSNDArrayDescriptor](bnnsmhaprojectionparameters/target_desc.md)
+### Instance Properties
+- [var target_desc: BNNSNDArrayDescriptor](./target_desc.md)
   The descriptor—which is either an input query, key, or value, or an output—of the main target of the operation.
-- [var bias: BNNSNDArrayDescriptor](bnnsmhaprojectionparameters/bias.md)
+- [var bias: BNNSNDArrayDescriptor](./bias.md)
   The descriptor of the initial projection’s bias.
 
 

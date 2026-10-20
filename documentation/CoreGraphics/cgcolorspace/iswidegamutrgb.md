@@ -1,7 +1,8 @@
 # isWideGamutRGB
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns whether the RGB color space covers a significant portion of the NTSC color gamut.
 
@@ -20,27 +21,32 @@ Returns whether the RGB color space covers a significant portion of the NTSC col
 var isWideGamutRGB: Bool { get }
 ```
 
+```c
+extern bool CGColorSpaceIsWideGamutRGB(CGColorSpaceRef );
+```
+
 ## See Also
 
-- [var baseColorSpace: CGColorSpace?](cgcolorspace/basecolorspace.md)
+### Examining a Color Space
+- [var baseColorSpace: CGColorSpace?](./basecolorspace.md)
   Returns the base color space of a pattern or indexed color space.
-- [var numberOfComponents: Int](cgcolorspace/numberofcomponents.md)
+- [var numberOfComponents: Int](./numberofcomponents.md)
   Returns the number of color components in a color space.
-- [var model: CGColorSpaceModel](cgcolorspace/model.md)
+- [var model: CGColorSpaceModel](./model.md)
   Returns the color space model of the provided color space.
-- [enum CGColorSpaceModel](cgcolorspacemodel.md)
+- [enum CGColorSpaceModel](../cgcolorspacemodel.md)
   Models for color spaces.
-- [var colorTable: [UInt8]?](cgcolorspace/colortable.md)
+- [var colorTable: [UInt8]?](./colortable.md)
   The entries in the color table of an indexed color space.
-- [func copyICCData() -> CFData?](cgcolorspace/copyiccdata.md)
+- [func copyICCData() -> CFData?](./copyiccdata%28%29.md)
   Returns a copy of the ICC profile data of the provided color space.
-- [func copyPropertyList() -> CFPropertyList?](cgcolorspace/copypropertylist.md)
+- [func copyPropertyList() -> CFPropertyList?](./copypropertylist%28%29.md)
   Returns a copy of the color space’s properties.
-- [var iccData: CFData?](cgcolorspace/iccdata.md)
+- [var iccData: CFData?](./iccdata.md)
   Returns a copy of the ICC profile of the provided color space.
-- [var name: CFString?](cgcolorspace/name.md)
+- [var name: CFString?](./name.md)
   Returns the name used to create the specified color space.
-- [var supportsOutput: Bool](cgcolorspace/supportsoutput.md)
+- [var supportsOutput: Bool](./supportsoutput.md)
   Returns a Boolean indicating whether the color space can be used as a destination color space.
 
 

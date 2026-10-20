@@ -1,7 +1,8 @@
 # sizeVariation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines a plus/minus range from which a value is randomly selected to offset `size`.
 

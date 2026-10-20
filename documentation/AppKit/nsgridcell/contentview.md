@@ -1,7 +1,8 @@
 # contentView
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12+
@@ -12,11 +13,16 @@
 var contentView: NSView? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSView * contentView;
+```
+
 ## See Also
 
-- [var column: NSGridColumn?](nsgridcell/column.md)
-- [var row: NSGridRow?](nsgridcell/row.md)
-- [class var emptyContentView: NSView](nsgridcell/emptycontentview.md)
+### Getting the Cell Containers
+- [var column: NSGridColumn?](./column.md)
+- [var row: NSGridRow?](./row.md)
+- [class var emptyContentView: NSView](./emptycontentview.md)
 
 
 ---

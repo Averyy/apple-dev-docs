@@ -1,19 +1,20 @@
 # IOVMPageSize
 
 **Framework**: DriverKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The number of bytes in a virtual memory page.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 extern uint64_t IOVMPageSize;
 ```
 

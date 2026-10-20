@@ -1,7 +1,8 @@
 # xpc_connection_send_barrier(_:_:)
 
 **Framework**: XPC  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Issues a barrier against the connection’s message-send activity.
 
@@ -10,7 +11,7 @@ Issues a barrier against the connection’s message-send activity.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,11 +21,15 @@ Issues a barrier against the connection’s message-send activity.
 func xpc_connection_send_barrier(_ connection: xpc_connection_t, _ barrier: @escaping () -> Void)
 ```
 
+```c
+extern void xpc_connection_send_barrier(xpc_connection_t connection, dispatch_block_t barrier);
+```
+
 #### Discussion
 
 XPC guarantees that, even if the connection’s target queue is a concurrent queue, there are no other messages being sent concurrently while the barrier block is executing. XPC does not guarantee that the receipt of messages (either through the connection’s event handler or through reply handlers) will be suspended while the barrier is executing.
 
-A barrier is issued relative to the message-send queue. So, if you call [`xpc_connection_send_message(_:_:)`](xpc_connection_send_message(_:_:).md) five times and then call [`xpc_connection_send_barrier(_:_:)`](xpc_connection_send_barrier(_:_:).md), the barrier will be invoked after the fifth message has been sent and its memory disposed of. You may safely cancel a connection from within a barrier block.
+A barrier is issued relative to the message-send queue. So, if you call [`xpc_connection_send_message(_:_:)`](./xpc_connection_send_message%28_,_%29.md) five times and then call [`xpc_connection_send_barrier(_:_:)`](./xpc_connection_send_barrier%28_,_%29.md), the barrier will be invoked after the fifth message has been sent and its memory disposed of. You may safely cancel a connection from within a barrier block.
 
 If a barrier is issued after sending a message which expects a reply, the behavior is the same as described above. The receipt of a reply message will not influence when the barrier runs.
 
@@ -32,7 +37,7 @@ A barrier block can be useful for throttling resource consumption on the connect
 
 If a barrier is issued on a canceled connection, it will be invoked immediately. If a connection has been canceled and still has outstanding barriers, those barriers will be invoked as part of the connection’s unwinding process.
 
-It is important to note that a barrier block’s execution order is not guaranteed with respect to other blocks that have been scheduled on the target queue of the connection. Or said differently, [`xpc_connection_send_barrier(_:_:)`](xpc_connection_send_barrier(_:_:).md) is not equivalent to [`dispatch_async`](https://developer.apple.com/documentation/dispatch/dispatch_async).
+It is important to note that a barrier block’s execution order is not guaranteed with respect to other blocks that have been scheduled on the target queue of the connection. Or said differently, [`xpc_connection_send_barrier(_:_:)`](./xpc_connection_send_barrier%28_,_%29.md) is not equivalent to [`dispatch_async`](../Dispatch/dispatch_async.md).
 
 ## Parameters
 
@@ -41,13 +46,14 @@ It is important to note that a barrier block’s execution order is not guarante
 
 ## See Also
 
-- [func xpc_connection_send_message(xpc_connection_t, xpc_object_t)](xpc_connection_send_message(_:_:).md)
+### Messages
+- [func xpc_connection_send_message(xpc_connection_t, xpc_object_t)](./xpc_connection_send_message%28_,_%29.md)
   Sends a message over the connection to the destination service.
-- [func xpc_connection_send_message_with_reply(xpc_connection_t, xpc_object_t, dispatch_queue_t?, (xpc_object_t) -> Void)](xpc_connection_send_message_with_reply(_:_:_:_:).md)
+- [func xpc_connection_send_message_with_reply(xpc_connection_t, xpc_object_t, dispatch_queue_t?, (xpc_object_t) -> Void)](./xpc_connection_send_message_with_reply%28_,_,_,_%29.md)
   Sends a message over the connection to the destination service and associates a handler to invoke when the remote service sends a reply message.
-- [func xpc_connection_send_message_with_reply_sync(xpc_connection_t, xpc_object_t) -> xpc_object_t](xpc_connection_send_message_with_reply_sync(_:_:).md)
+- [func xpc_connection_send_message_with_reply_sync(xpc_connection_t, xpc_object_t) -> xpc_object_t](./xpc_connection_send_message_with_reply_sync%28_,_%29.md)
   Sends a message over the connection and blocks the caller until it receives a reply.
-- [func xpc_main(xpc_connection_handler_t) -> Never](xpc_main(_:).md)
+- [func xpc_main(xpc_connection_handler_t) -> Never](./xpc_main%28_%29.md)
   Starts listening for incoming connections and processes them with the specified event handler.
 
 

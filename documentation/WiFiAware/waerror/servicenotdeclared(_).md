@@ -1,7 +1,8 @@
 # WAError.serviceNotDeclared(_:)
 
 **Framework**: Wi-Fi Aware  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that occurs if your app didn’t declare the necessary services.
 
@@ -22,7 +23,8 @@ This error indicates that your app declares services in the `Info.plist`.
 
 ## See Also
 
-- [WAError.ServiceNotDeclaredDetails](waerror/servicenotdeclareddetails.md)
+### Checking for undeclared services
+- [WAError.ServiceNotDeclaredDetails](./servicenotdeclareddetails.md)
   The optional details that describe the app service wasn’t declared.
 
 

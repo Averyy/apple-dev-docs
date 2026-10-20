@@ -1,7 +1,8 @@
 # id
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier string for the requested read operation.
 

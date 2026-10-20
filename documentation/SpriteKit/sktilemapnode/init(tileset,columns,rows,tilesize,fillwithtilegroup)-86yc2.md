@@ -1,7 +1,8 @@
 # init(tileSet:columns:rows:tileSize:fillWithTileGroup:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 10.0+

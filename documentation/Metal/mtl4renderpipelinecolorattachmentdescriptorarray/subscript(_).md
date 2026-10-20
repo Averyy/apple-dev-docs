@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Metal  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses a color attachment at a specific index.
 
@@ -17,6 +18,10 @@ Accesses a color attachment at a specific index.
 
 ```swift
 subscript(attachmentIndex: Int) -> MTL4RenderPipelineColorAttachmentDescriptor! { get set }
+```
+
+```objc
+- (MTL4RenderPipelineColorAttachmentDescriptor *) objectAtIndexedSubscript:(NSUInteger) attachmentIndex;
 ```
 
 ## Parameters

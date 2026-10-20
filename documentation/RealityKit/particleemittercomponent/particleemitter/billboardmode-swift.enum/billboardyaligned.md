@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.ParticleEmitter.BillboardMode.billboardYAligned
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Each particle is oriented to face the camera but remains fixed about the y-axis
 

@@ -1,14 +1,15 @@
 # mpis_wired_rxbytes
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 uint64_t mpis_wired_rxbytes;
 ```
 

@@ -1,15 +1,18 @@
 # SSLSetClientSideAuthenticate(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Specifies the requirements for client-side authentication.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 13.1+
-- macOS 10.2+
+- iOS 5.0+ - Deprecated in 13.0
+- iPadOS 5.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.2+ - Deprecated in 10.15
+
+> **Deprecated**: No longer supported. Use Network.framework.
 
 ## Declaration
 
@@ -17,18 +20,22 @@ Specifies the requirements for client-side authentication.
 func SSLSetClientSideAuthenticate(_ context: SSLContext, _ auth: SSLAuthenticate) -> OSStatus
 ```
 
+```c
+OSStatus SSLSetClientSideAuthenticate(SSLContextRef context, SSLAuthenticate auth);
+```
+
 #### Return Value
 
-A result code. See [`Secure Transport Result Codes`](secure-transport-result-codes.md).
+A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
 #### Discussion
 
-This function can be called only by servers. Use of this function is optional. The default authentication requirement is [`SSLAuthenticate.neverAuthenticate`](sslauthenticate/neverauthenticate.md). This function may be called only when no session is active.
+This function can be called only by servers. Use of this function is optional. The default authentication requirement is [`SSLAuthenticate.neverAuthenticate`](./sslauthenticate/neverauthenticate.md). This function may be called only when no session is active.
 
 ## Parameters
 
 - `context`: An SSL session context reference.
-- `auth`: A flag setting the requirements for client-side authentication. See [`SSLAuthenticate`](sslauthenticate.md) for possible values.
+- `auth`: A flag setting the requirements for client-side authentication. See [`SSLAuthenticate`](./sslauthenticate.md) for possible values.
 
 
 ---

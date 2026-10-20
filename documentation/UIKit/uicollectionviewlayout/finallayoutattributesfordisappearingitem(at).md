@@ -1,21 +1,26 @@
 # finalLayoutAttributesForDisappearingItem(at:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the final layout information for an item that is about to be removed from the collection view.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 func finalLayoutAttributesForDisappearingItem(at itemIndexPath: IndexPath) -> UICollectionViewLayoutAttributes?
+```
+
+```objc
+- (UICollectionViewLayoutAttributes *) finalLayoutAttributesForDisappearingItemAtIndexPath:(NSIndexPath *) itemIndexPath;
 ```
 
 #### Return Value
@@ -24,7 +29,7 @@ A layout attributes object that describes the position of the cell to use as the
 
 #### Discussion
 
-This method is called after the [`prepare(forCollectionViewUpdates:)`](uicollectionviewlayout/prepare(forcollectionviewupdates:).md) method and before the [`finalizeCollectionViewUpdates()`](uicollectionviewlayout/finalizecollectionviewupdates().md) method for any items that are about to be deleted. Your implementation should return the layout information that describes the final position and state of the item. The collection view uses this information as the end point for any animations. (The starting point of the animation is the item’s current location.) If you return `nil`, the layout object uses the same attributes for both the start and end points of the animation.
+This method is called after the [`prepare(forCollectionViewUpdates:)`](./prepare%28forcollectionviewupdates%29.md) method and before the [`finalizeCollectionViewUpdates()`](./finalizecollectionviewupdates%28%29.md) method for any items that are about to be deleted. Your implementation should return the layout information that describes the final position and state of the item. The collection view uses this information as the end point for any animations. (The starting point of the animation is the item’s current location.) If you return `nil`, the layout object uses the same attributes for both the start and end points of the animation.
 
 The default implementation of this method returns `nil`.
 
@@ -34,29 +39,30 @@ The default implementation of this method returns `nil`.
 
 ## See Also
 
-- [func prepare(forCollectionViewUpdates: [UICollectionViewUpdateItem])](uicollectionviewlayout/prepare(forcollectionviewupdates:).md)
+### Responding to collection view updates
+- [func prepare(forCollectionViewUpdates: [UICollectionViewUpdateItem])](./prepare%28forcollectionviewupdates%29.md)
   Notifies the layout object that the contents of the collection view are about to change.
-- [func finalizeCollectionViewUpdates()](uicollectionviewlayout/finalizecollectionviewupdates.md)
+- [func finalizeCollectionViewUpdates()](./finalizecollectionviewupdates%28%29.md)
   Performs any additional animations or clean up needed during a collection view update.
-- [func indexPathsToInsertForSupplementaryView(ofKind: String) -> [IndexPath]](uicollectionviewlayout/indexpathstoinsertforsupplementaryview(ofkind:).md)
+- [func indexPathsToInsertForSupplementaryView(ofKind: String) -> [IndexPath]](./indexpathstoinsertforsupplementaryview%28ofkind%29.md)
   Retrieves an array of index paths for the supplementary views you want to add to the layout.
-- [func indexPathsToInsertForDecorationView(ofKind: String) -> [IndexPath]](uicollectionviewlayout/indexpathstoinsertfordecorationview(ofkind:).md)
+- [func indexPathsToInsertForDecorationView(ofKind: String) -> [IndexPath]](./indexpathstoinsertfordecorationview%28ofkind%29.md)
   Retrieves an array of index paths representing the decoration views to add.
-- [func initialLayoutAttributesForAppearingItem(at: IndexPath) -> UICollectionViewLayoutAttributes?](uicollectionviewlayout/initiallayoutattributesforappearingitem(at:).md)
+- [func initialLayoutAttributesForAppearingItem(at: IndexPath) -> UICollectionViewLayoutAttributes?](./initiallayoutattributesforappearingitem%28at%29.md)
   Retrieves the starting layout information for an item being inserted into the collection view.
-- [func initialLayoutAttributesForAppearingSupplementaryElement(ofKind: String, at: IndexPath) -> UICollectionViewLayoutAttributes?](uicollectionviewlayout/initiallayoutattributesforappearingsupplementaryelement(ofkind:at:).md)
+- [func initialLayoutAttributesForAppearingSupplementaryElement(ofKind: String, at: IndexPath) -> UICollectionViewLayoutAttributes?](./initiallayoutattributesforappearingsupplementaryelement%28ofkind,at%29.md)
   Retrieves the starting layout information for a supplementary view being inserted into the collection view.
-- [func initialLayoutAttributesForAppearingDecorationElement(ofKind: String, at: IndexPath) -> UICollectionViewLayoutAttributes?](uicollectionviewlayout/initiallayoutattributesforappearingdecorationelement(ofkind:at:).md)
+- [func initialLayoutAttributesForAppearingDecorationElement(ofKind: String, at: IndexPath) -> UICollectionViewLayoutAttributes?](./initiallayoutattributesforappearingdecorationelement%28ofkind,at%29.md)
   Retrieves the starting layout information for a decoration view being inserted into the collection view.
-- [func indexPathsToDeleteForSupplementaryView(ofKind: String) -> [IndexPath]](uicollectionviewlayout/indexpathstodeleteforsupplementaryview(ofkind:).md)
+- [func indexPathsToDeleteForSupplementaryView(ofKind: String) -> [IndexPath]](./indexpathstodeleteforsupplementaryview%28ofkind%29.md)
   Retrieves an array of index paths representing the supplementary views to remove.
-- [func indexPathsToDeleteForDecorationView(ofKind: String) -> [IndexPath]](uicollectionviewlayout/indexpathstodeletefordecorationview(ofkind:).md)
+- [func indexPathsToDeleteForDecorationView(ofKind: String) -> [IndexPath]](./indexpathstodeletefordecorationview%28ofkind%29.md)
   Retrieves an array of index paths representing the decoration views to remove.
-- [func finalLayoutAttributesForDisappearingSupplementaryElement(ofKind: String, at: IndexPath) -> UICollectionViewLayoutAttributes?](uicollectionviewlayout/finallayoutattributesfordisappearingsupplementaryelement(ofkind:at:).md)
+- [func finalLayoutAttributesForDisappearingSupplementaryElement(ofKind: String, at: IndexPath) -> UICollectionViewLayoutAttributes?](./finallayoutattributesfordisappearingsupplementaryelement%28ofkind,at%29.md)
   Retrieves the final layout information for a supplementary view that is about to be removed from the collection view.
-- [func finalLayoutAttributesForDisappearingDecorationElement(ofKind: String, at: IndexPath) -> UICollectionViewLayoutAttributes?](uicollectionviewlayout/finallayoutattributesfordisappearingdecorationelement(ofkind:at:).md)
+- [func finalLayoutAttributesForDisappearingDecorationElement(ofKind: String, at: IndexPath) -> UICollectionViewLayoutAttributes?](./finallayoutattributesfordisappearingdecorationelement%28ofkind,at%29.md)
   Retrieves the final layout information for a decoration view that is about to be removed from the collection view.
-- [func targetIndexPath(forInteractivelyMovingItem: IndexPath, withPosition: CGPoint) -> IndexPath](uicollectionviewlayout/targetindexpath(forinteractivelymovingitem:withposition:).md)
+- [func targetIndexPath(forInteractivelyMovingItem: IndexPath, withPosition: CGPoint) -> IndexPath](./targetindexpath%28forinteractivelymovingitem,withposition%29.md)
   Retrieves the index path to for an item when it is at the specified location in the collection view’s bounds.
 
 

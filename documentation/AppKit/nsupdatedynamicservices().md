@@ -1,17 +1,22 @@
 # NSUpdateDynamicServices()
 
 **Framework**: AppKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Causes the services information for the system to be updated.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func NSUpdateDynamicServices()
+```
+
+```c
+extern void NSUpdateDynamicServices();
 ```
 
 #### Discussion
@@ -22,11 +27,12 @@ It is only necessary to call this function if your program adds dynamic services
 
 ## See Also
 
-- [func NSRegisterServicesProvider(Any?, NSServiceProviderName)](nsregisterservicesprovider(_:_:).md)
+### Registering Services
+- [func NSRegisterServicesProvider(Any?, NSServiceProviderName)](./nsregisterservicesprovider%28_,_%29.md)
   Registers a service provider.
-- [func NSUnregisterServicesProvider(NSServiceProviderName)](nsunregisterservicesprovider(_:).md)
+- [func NSUnregisterServicesProvider(NSServiceProviderName)](./nsunregisterservicesprovider%28_%29.md)
   Unregisters a service provider.
-- [typealias NSServiceProviderName](nsserviceprovidername.md)
+- [typealias NSServiceProviderName](./nsserviceprovidername.md)
 
 
 ---

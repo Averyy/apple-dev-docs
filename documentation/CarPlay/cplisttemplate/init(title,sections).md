@@ -1,7 +1,8 @@
 # init(title:sections:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a list template with an array of list sections and optional title.
 
@@ -16,6 +17,10 @@ Creates a list template with an array of list sections and optional title.
 init(title: String?, sections: [CPListSection])
 ```
 
+```objc
+- (instancetype) initWithTitle:(NSString *) title sections:(NSArray<CPListSection *> *) sections;
+```
+
 #### Return Value
 
 A newly initialized list template.
@@ -27,7 +32,8 @@ A newly initialized list template.
 
 ## See Also
 
-- [init(title: String?, sections: [CPListSection], assistantCellConfiguration: CPAssistantCellConfiguration?)](cplisttemplate/init(title:sections:assistantcellconfiguration:).md)
+### Creating a List Template
+- [init(title: String?, sections: [CPListSection], assistantCellConfiguration: CPAssistantCellConfiguration?)](./init%28title,sections,assistantcellconfiguration%29.md)
   Creates a sectioned list template that optionally displays the assistant cell.
 
 

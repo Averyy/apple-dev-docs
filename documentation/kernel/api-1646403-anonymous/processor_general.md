@@ -1,14 +1,15 @@
 # PROCESSOR_GENERAL
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 PROCESSOR_GENERAL = 0x0801
 ```
 

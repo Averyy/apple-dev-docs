@@ -1,7 +1,8 @@
 # NSData.SearchOptions
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for method used to search data objects.
 
@@ -20,37 +21,42 @@ Options for method used to search data objects.
 struct SearchOptions
 ```
 
+```c
+enum NSDataSearchOptions : NSUInteger;
+```
+
 #### Overview
 
-These options are used with the [`range(of:options:in:)`](nsdata/range(of:options:in:).md) method.
+These options are used with the [`range(of:options:in:)`](./range%28of,options,in%29.md) method.
 
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](nsdata/searchoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./searchoptions/init%28rawvalue%29.md)
 ### Constants
-- [static var backwards: NSData.SearchOptions](nsdata/searchoptions/backwards.md)
+- [static var backwards: NSData.SearchOptions](./searchoptions/backwards.md)
   Search from the end of the data object.
-- [static var anchored: NSData.SearchOptions](nsdata/searchoptions/anchored.md)
+- [static var anchored: NSData.SearchOptions](./searchoptions/anchored.md)
   Search is limited to start (or end, if searching backwards) of the data object.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [func subdata(with: NSRange) -> Data](nsdata/subdata(with:).md)
+### Finding Data
+- [func subdata(with: NSRange) -> Data](./subdata%28with%29.md)
   Returns a new data object containing the data object’s bytes that fall within the limits specified by a given range.
-- [func range(of: Data, options: NSData.SearchOptions, in: NSRange) -> NSRange](nsdata/range(of:options:in:).md)
+- [func range(of: Data, options: NSData.SearchOptions, in: NSRange) -> NSRange](./range%28of,options,in%29.md)
   Finds and returns the range of the first occurrence of the given data, within the given range, subject to given options.
 
 

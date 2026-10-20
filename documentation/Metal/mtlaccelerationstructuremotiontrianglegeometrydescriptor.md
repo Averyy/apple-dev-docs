@@ -1,7 +1,8 @@
 # MTLAccelerationStructureMotionTriangleGeometryDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A description of a list of triangle primitives, as motion keyframe data, to turn into an acceleration structure.
 
@@ -19,58 +20,63 @@ A description of a list of triangle primitives, as motion keyframe data, to turn
 class MTLAccelerationStructureMotionTriangleGeometryDescriptor
 ```
 
+```objc
+@interface MTLAccelerationStructureMotionTriangleGeometryDescriptor : MTLAccelerationStructureGeometryDescriptor
+```
+
 ## Mentions
 
-- [Improving ray-tracing data access using per-primitive data](improving-ray-tracing-data-access-using-per-primitive-data.md)
+- [Improving ray-tracing data access using per-primitive data](./improving-ray-tracing-data-access-using-per-primitive-data.md)
 
 ## Topics
 
 ### Specifying the number of triangles
-- [var triangleCount: Int](mtlaccelerationstructuremotiontrianglegeometrydescriptor/trianglecount.md)
+- [var triangleCount: Int](./mtlaccelerationstructuremotiontrianglegeometrydescriptor/trianglecount.md)
   The number of triangles in the buffers.
 ### Specifying index data
-- [var indexBuffer: (any MTLBuffer)?](mtlaccelerationstructuremotiontrianglegeometrydescriptor/indexbuffer.md)
+- [var indexBuffer: (any MTLBuffer)?](./mtlaccelerationstructuremotiontrianglegeometrydescriptor/indexbuffer.md)
   A buffer that contains indices for the vertices that compose the triangle list.
-- [var indexType: MTLIndexType](mtlaccelerationstructuremotiontrianglegeometrydescriptor/indextype.md)
+- [var indexType: MTLIndexType](./mtlaccelerationstructuremotiontrianglegeometrydescriptor/indextype.md)
   The data type of indices in the index buffer.
-- [var indexBufferOffset: Int](mtlaccelerationstructuremotiontrianglegeometrydescriptor/indexbufferoffset.md)
+- [var indexBufferOffset: Int](./mtlaccelerationstructuremotiontrianglegeometrydescriptor/indexbufferoffset.md)
   The offset, in bytes, to the first index in the buffer.
 ### Specifying vertex data
-- [var vertexBuffers: [MTLMotionKeyframeData]](mtlaccelerationstructuremotiontrianglegeometrydescriptor/vertexbuffers.md)
+- [var vertexBuffers: [MTLMotionKeyframeData]](./mtlaccelerationstructuremotiontrianglegeometrydescriptor/vertexbuffers.md)
   An array of motion keyframes, each containing triangle data.
-- [var vertexStride: Int](mtlaccelerationstructuremotiontrianglegeometrydescriptor/vertexstride.md)
+- [var vertexStride: Int](./mtlaccelerationstructuremotiontrianglegeometrydescriptor/vertexstride.md)
   The stride, in bytes, between vertices in each vertex buffer.
 ### Instance Properties
-- [var transformationMatrixBuffer: (any MTLBuffer)?](mtlaccelerationstructuremotiontrianglegeometrydescriptor/transformationmatrixbuffer.md)
-- [var transformationMatrixBufferOffset: Int](mtlaccelerationstructuremotiontrianglegeometrydescriptor/transformationmatrixbufferoffset.md)
-- [var transformationMatrixLayout: MTLMatrixLayout](mtlaccelerationstructuremotiontrianglegeometrydescriptor/transformationmatrixlayout.md)
-- [var vertexFormat: MTLAttributeFormat](mtlaccelerationstructuremotiontrianglegeometrydescriptor/vertexformat.md)
+- [var transformationMatrixBuffer: (any MTLBuffer)?](./mtlaccelerationstructuremotiontrianglegeometrydescriptor/transformationmatrixbuffer.md)
+- [var transformationMatrixBufferOffset: Int](./mtlaccelerationstructuremotiontrianglegeometrydescriptor/transformationmatrixbufferoffset.md)
+- [var transformationMatrixLayout: MTLMatrixLayout](./mtlaccelerationstructuremotiontrianglegeometrydescriptor/transformationmatrixlayout.md)
+- [var vertexFormat: MTLAttributeFormat](./mtlaccelerationstructuremotiontrianglegeometrydescriptor/vertexformat.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTLAccelerationStructureGeometryDescriptor](mtlaccelerationstructuregeometrydescriptor.md)
+- [MTLAccelerationStructureGeometryDescriptor](./mtlaccelerationstructuregeometrydescriptor.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTL4AccelerationStructureMotionTriangleGeometryDescriptor](mtl4accelerationstructuremotiontrianglegeometrydescriptor.md)
+### Motion geometry descriptors
+- [class MTL4AccelerationStructureMotionTriangleGeometryDescriptor](./mtl4accelerationstructuremotiontrianglegeometrydescriptor.md)
   Describes motion triangle geometry, suitable for motion ray tracing.
-- [class MTL4AccelerationStructureMotionCurveGeometryDescriptor](mtl4accelerationstructuremotioncurvegeometrydescriptor.md)
+- [class MTL4AccelerationStructureMotionCurveGeometryDescriptor](./mtl4accelerationstructuremotioncurvegeometrydescriptor.md)
   Describes motion curve geometry, suitable for motion ray tracing.
-- [class MTLAccelerationStructureMotionCurveGeometryDescriptor](mtlaccelerationstructuremotioncurvegeometrydescriptor.md)
-- [class MTL4AccelerationStructureMotionBoundingBoxGeometryDescriptor](mtl4accelerationstructuremotionboundingboxgeometrydescriptor.md)
+- [class MTLAccelerationStructureMotionCurveGeometryDescriptor](./mtlaccelerationstructuremotioncurvegeometrydescriptor.md)
+- [class MTL4AccelerationStructureMotionBoundingBoxGeometryDescriptor](./mtl4accelerationstructuremotionboundingboxgeometrydescriptor.md)
   Describes motion bounding box geometry, suitable for motion ray tracing.
-- [class MTLAccelerationStructureMotionBoundingBoxGeometryDescriptor](mtlaccelerationstructuremotionboundingboxgeometrydescriptor.md)
+- [class MTLAccelerationStructureMotionBoundingBoxGeometryDescriptor](./mtlaccelerationstructuremotionboundingboxgeometrydescriptor.md)
   A description of a list of bounding boxes, as motion keyframe data, to turn into an acceleration structure.
-- [class MTLMotionKeyframeData](mtlmotionkeyframedata.md)
+- [class MTLMotionKeyframeData](./mtlmotionkeyframedata.md)
   Geometry data for a specific keyframe to use in a moving instance.
 
 

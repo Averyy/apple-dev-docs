@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a reference-library view controller from data in an unarchiver.
 
@@ -17,11 +18,16 @@ Creates a reference-library view controller from data in an unarchiver.
 init(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [class func dictionaryHasDefinition(forTerm: String) -> Bool](uireferencelibraryviewcontroller/dictionaryhasdefinition(forterm:).md)
+### Creating a reference-library view controller
+- [class func dictionaryHasDefinition(forTerm: String) -> Bool](./dictionaryhasdefinition%28forterm%29.md)
   Returns whether a definition is available for the given term.
-- [init(term: String)](uireferencelibraryviewcontroller/init(term:).md)
+- [init(term: String)](./init%28term%29.md)
   Initializes a newly created reference-library view controller to display the definition of the given term.
 
 

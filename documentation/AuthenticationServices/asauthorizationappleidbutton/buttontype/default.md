@@ -1,7 +1,8 @@
 # default
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A default button type for the Sign in with Apple authorization process.
 
@@ -19,13 +20,18 @@ A default button type for the Sign in with Apple authorization process.
 static var `default`: ASAuthorizationAppleIDButton.ButtonType { get }
 ```
 
+```c
+ASAuthorizationAppleIDButtonTypeDefault
+```
+
 ## See Also
 
-- [ASAuthorizationAppleIDButton.ButtonType.continue](asauthorizationappleidbutton/buttontype/continue.md)
+### Choosing a Button Type
+- [ASAuthorizationAppleIDButton.ButtonType.continue](./continue.md)
   A button type that continues the Sign in with Apple authorization process.
-- [ASAuthorizationAppleIDButton.ButtonType.signUp](asauthorizationappleidbutton/buttontype/signup.md)
+- [ASAuthorizationAppleIDButton.ButtonType.signUp](./signup.md)
   A button type that allows the user to sign up for Sign in with Apple.
-- [ASAuthorizationAppleIDButton.ButtonType.signIn](asauthorizationappleidbutton/buttontype/signin.md)
+- [ASAuthorizationAppleIDButton.ButtonType.signIn](./signin.md)
   A button type that performs authorization using Sign in with Apple.
 
 

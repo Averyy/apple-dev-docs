@@ -1,7 +1,8 @@
 # init(rows:columns:matrices:rowBytes:matrixBytes:dataType:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -17,9 +18,14 @@
 convenience init(rows: Int, columns: Int, matrices: Int, rowBytes: Int, matrixBytes: Int, dataType: MPSDataType)
 ```
 
+```objc
++ (instancetype) matrixDescriptorWithRows:(NSUInteger) rows columns:(NSUInteger) columns matrices:(NSUInteger) matrices rowBytes:(NSUInteger) rowBytes matrixBytes:(NSUInteger) matrixBytes dataType:(MPSDataType) dataType;
+```
+
 ## See Also
 
-- [convenience init(rows: Int, columns: Int, rowBytes: Int, dataType: MPSDataType)](mpsmatrixdescriptor/init(rows:columns:rowbytes:datatype:).md)
+### Initializers
+- [convenience init(rows: Int, columns: Int, rowBytes: Int, dataType: MPSDataType)](./init%28rows,columns,rowbytes,datatype%29.md)
 
 
 ---

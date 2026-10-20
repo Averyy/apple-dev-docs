@@ -1,7 +1,8 @@
 # typeID
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The type identifier for block buffer objects.
 

@@ -1,7 +1,8 @@
 # reservedRegions(kind:options:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the reserved regions of a kind that overlap the view.
 
@@ -25,18 +26,19 @@ The reserved regions that overlap the view, with frames in the view’s coordina
 
 #### Discussion
 
-Use this method to arrange your view’s content around areas that the device hardware reserves, such as a camera or the fold of a hinge. UIKit tracks the regions you read in [`updateConstraints()`](uiview/updateconstraints().md) and runs it again when the regions change.
+Use this method to arrange your view’s content around areas that the device hardware reserves, such as a camera or the fold of a hinge. UIKit tracks the regions you read in [`updateConstraints()`](./updateconstraints%28%29.md) and runs it again when the regions change.
 
-For more information, see [`UIView.ReservedRegion`](uiview/reservedregion.md).
+For more information, see [`UIView.ReservedRegion`](./reservedregion.md).
 
 ## Parameters
 
-- `kind`: The kind of reserved region to return, such as [`occlusion`](uiview/reservedregion/kind-swift.struct/occlusion.md) or [`division`](uiview/reservedregion/kind-swift.struct/division.md).
-- `options`: Options that change which regions the method returns. By default, the method returns only active regions. Pass [`includeInactive`](uiview/reservedregion/queryoptions/includeinactive.md) to also return regions that aren’t currently active.
+- `kind`: The kind of reserved region to return, such as [`occlusion`](./reservedregion/kind-swift.struct/occlusion.md) or [`division`](./reservedregion/kind-swift.struct/division.md).
+- `options`: Options that change which regions the method returns. By default, the method returns only active regions. Pass [`includeInactive`](./reservedregion/queryoptions/includeinactive.md) to also return regions that aren’t currently active.
 
 ## See Also
 
-- [UIView.ReservedRegion](uiview/reservedregion.md)
+### Reserved regions
+- [UIView.ReservedRegion](./reservedregion.md)
   A region within a view’s coordinate space that another entity reserves.
 
 

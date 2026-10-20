@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of metadata keys and values to embed in photo file output.
 
@@ -15,6 +16,10 @@ A dictionary of metadata keys and values to embed in photo file output.
 
 ```swift
 var metadata: [String : Any] { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSDictionary<NSString *,id> * metadata;
 ```
 
 #### Discussion

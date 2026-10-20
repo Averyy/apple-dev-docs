@@ -1,7 +1,8 @@
 # value
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string value for this `Handle`, such as the specific phone number or email address
 
@@ -11,7 +12,7 @@ The string value for this `Handle`, such as the specific phone number or email a
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ var value: IntentPerson.Handle.Value
 
 ## See Also
 
-- [IntentPerson.Handle.Value](intentperson/handle-swift.struct/value-swift.enum.md)
+### Getting the handle’s value
+- [IntentPerson.Handle.Value](./value-swift.enum.md)
   A type that describes the type of contact information in the handle, such as whether it is an email address, or a phone number.
 
 

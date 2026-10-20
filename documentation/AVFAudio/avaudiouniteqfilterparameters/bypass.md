@@ -1,7 +1,8 @@
 # bypass
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bypass state of the equalizer filter band.
 
@@ -20,21 +21,26 @@ The bypass state of the equalizer filter band.
 var bypass: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL bypass;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the bypass is active; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the bypass is active; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var bandwidth: Float](avaudiouniteqfilterparameters/bandwidth.md)
+### Configuring a filter band
+- [var bandwidth: Float](./bandwidth.md)
   The bandwidth of the equalizer filter, in octaves.
-- [var filterType: AVAudioUnitEQFilterType](avaudiouniteqfilterparameters/filtertype.md)
+- [var filterType: AVAudioUnitEQFilterType](./filtertype.md)
   The equalizer filter type.
-- [enum AVAudioUnitEQFilterType](avaudiouniteqfiltertype.md)
+- [enum AVAudioUnitEQFilterType](../avaudiouniteqfiltertype.md)
   Filter types available to use with the filter type property.
-- [var frequency: Float](avaudiouniteqfilterparameters/frequency.md)
+- [var frequency: Float](./frequency.md)
   The frequency of the equalizer filter, in hertz.
-- [var gain: Float](avaudiouniteqfilterparameters/gain.md)
+- [var gain: Float](./gain.md)
   The gain of the equalizer filter, in decibels.
 
 

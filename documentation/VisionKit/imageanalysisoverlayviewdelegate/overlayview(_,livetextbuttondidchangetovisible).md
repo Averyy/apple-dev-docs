@@ -2,6 +2,7 @@
 
 **Framework**: VisionKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Notifies your app when the Live Text button’s visibility changes.
@@ -21,11 +22,18 @@ func overlayView(_ overlayView: ImageAnalysisOverlayView, liveTextButtonDidChang
 - `overlayView`: The associated overlay view for the Live Text button.
 - `visible`: `true` if the Live Text button appears; otherwise, `false`.
 
+## Default Implementations
+
+### ImageAnalysisOverlayViewDelegate Implementations
+- [func overlayView(ImageAnalysisOverlayView, liveTextButtonDidChangeToVisible: Bool)](./overlayview%28_,livetextbuttondidchangetovisible%29-7ln8u.md)
+  A default, blank implementation for when the Live Text button appears or disappears.
+
 ## See Also
 
-- [func overlayView(ImageAnalysisOverlayView, highlightSelectedItemsDidChange: Bool)](imageanalysisoverlayviewdelegate/overlayview(_:highlightselecteditemsdidchange:).md)
+### Tracking interface changes
+- [func overlayView(ImageAnalysisOverlayView, highlightSelectedItemsDidChange: Bool)](./overlayview%28_,highlightselecteditemsdidchange%29.md)
   Notifies your app when recognized items in the image appear highlighted as a result of a person clicking or tapping the Live Text button.
-- [func textSelectionDidChange(ImageAnalysisOverlayView)](imageanalysisoverlayviewdelegate/textselectiondidchange(_:).md)
+- [func textSelectionDidChange(ImageAnalysisOverlayView)](./textselectiondidchange%28_%29.md)
   Notifies your app when the interaction’s text selection changes.
 
 

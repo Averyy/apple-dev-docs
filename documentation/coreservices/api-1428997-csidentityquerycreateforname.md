@@ -1,7 +1,8 @@
 # CSIdentityQueryCreateForName(_:_:_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -11,6 +12,10 @@
 
 ```swift
 func CSIdentityQueryCreateForName(_ allocator: CFAllocator!, _ name: CFString!, _ comparisonMethod: CSIdentityQueryStringComparisonMethod, _ identityClass: CSIdentityClass, _ authority: CSIdentityAuthority!) -> Unmanaged<CSIdentityQuery>!
+```
+
+```c
+CSIdentityQueryRef CSIdentityQueryCreateForName(CFAllocatorRef allocator, CFStringRef name, CSIdentityQueryStringComparisonMethod comparisonMethod, CSIdentityClass identityClass, CSIdentityAuthorityRef authority);
 ```
 
 

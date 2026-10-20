@@ -1,7 +1,8 @@
 # minimumFontSize
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum font size, in points.
 
@@ -18,13 +19,18 @@ The minimum font size, in points.
 var minimumFontSize: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat minimumFontSize;
+```
+
 #### Discussion
 
 The default value is `0`.
 
 ## See Also
 
-- [var shouldPrintBackgrounds: Bool](wkpreferences/shouldprintbackgrounds.md)
+### Setting Rendering Preferences
+- [var shouldPrintBackgrounds: Bool](./shouldprintbackgrounds.md)
   A Boolean value that indicates whether to include any background color or graphics when printing content.
 
 

@@ -1,7 +1,8 @@
 # Tips.Status.pending
 
 **Framework**: TipKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The tip is not eligible for display.
 

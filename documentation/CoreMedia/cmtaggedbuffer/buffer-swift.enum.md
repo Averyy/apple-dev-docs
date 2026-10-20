@@ -1,7 +1,8 @@
 # CMTaggedBuffer.Buffer
 
 **Framework**: Core Media  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A wrapper type for the underlying buffer of a tagged buffer.
 
@@ -23,9 +24,9 @@ enum Buffer
 ## Topics
 
 ### Wrapped Buffer Types
-- [CMTaggedBuffer.Buffer.pixelBuffer(_:)](cmtaggedbuffer/buffer-swift.enum/pixelbuffer(_:).md)
+- [CMTaggedBuffer.Buffer.pixelBuffer(_:)](./buffer-swift.enum/pixelbuffer%28_%29.md)
   The underlying pixel buffer for a tagged buffer.
-- [CMTaggedBuffer.Buffer.sampleBuffer(_:)](cmtaggedbuffer/buffer-swift.enum/samplebuffer(_:).md)
+- [CMTaggedBuffer.Buffer.sampleBuffer(_:)](./buffer-swift.enum/samplebuffer%28_%29.md)
   The underlying sample buffer for a tagged buffer.
 
 

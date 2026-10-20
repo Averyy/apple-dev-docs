@@ -1,7 +1,8 @@
 # sortSeries
 
 **Framework**: iTunes Library  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sorting name of the corresponding TV series, if the media item is an episode in a TV series.
 
@@ -15,25 +16,30 @@ The sorting name of the corresponding TV series, if the media item is an episode
 var sortSeries: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * sortSeries;
+```
+
 #### Discussion
 
 This property is `nil` if the media item isn’t an episode in a TV series, or if the TV series doesn’t have a sorting name.
 
 ## See Also
 
-- [var videoWidth: Int](itlibmediaitemvideoinfo/videowidth.md)
+### Getting Video Information
+- [var videoWidth: Int](./videowidth.md)
   The width of the video in pixels.
-- [var videoHeight: Int](itlibmediaitemvideoinfo/videoheight.md)
+- [var videoHeight: Int](./videoheight.md)
   The height of the video in pixels.
-- [var series: String?](itlibmediaitemvideoinfo/series.md)
+- [var series: String?](./series.md)
   The name of the corresponding TV series, if the media item is an episode in a TV series.
-- [var season: Int](itlibmediaitemvideoinfo/season.md)
+- [var season: Int](./season.md)
   The corresponding TV season, if the media item is an episode of a TV series.
-- [var isHD: Bool](itlibmediaitemvideoinfo/ishd.md)
+- [var isHD: Bool](./ishd.md)
   A Boolean value that indicates whether the video is high-definition.
-- [var episode: String?](itlibmediaitemvideoinfo/episode.md)
+- [var episode: String?](./episode.md)
   The name of the episode, if the media item is an episode of a TV series.
-- [var episodeOrder: Int](itlibmediaitemvideoinfo/episodeorder.md)
+- [var episodeOrder: Int](./episodeorder.md)
   The numerical order of the episode, if the media item is an episode of a TV series.
 
 

@@ -1,7 +1,8 @@
 # flags
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Flags for the mode, including:
 
@@ -10,7 +11,7 @@ Flags for the mode, including:
 
 ## Declaration
 
-```swift
+```c
 UInt32 flags;
 ```
 

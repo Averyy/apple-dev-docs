@@ -1,7 +1,8 @@
 # DictationTranscriber.TranscriptionOption.etiquetteReplacements
 
 **Framework**: Speech  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Replaces certain words and phrases with a redacted form.
 
@@ -24,9 +25,10 @@ If included, a phrase recognized as an expletive would be transcribed with aster
 
 ## See Also
 
-- [DictationTranscriber.TranscriptionOption.emoji](dictationtranscriber/transcriptionoption/emoji.md)
+### Transcription options
+- [DictationTranscriber.TranscriptionOption.emoji](./emoji.md)
   Transcribes named emoji as emoji.
-- [DictationTranscriber.TranscriptionOption.punctuation](dictationtranscriber/transcriptionoption/punctuation.md)
+- [DictationTranscriber.TranscriptionOption.punctuation](./punctuation.md)
   Automatically punctuates the transcription.
 
 

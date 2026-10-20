@@ -1,7 +1,8 @@
 # TileOverlayConstructorOptions
 
 **Framework**: MapKit JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Interface
 
 Attributes for initializing a tile overlay, including minimum and maximum zoom, opacity, and custom data.
 
@@ -10,29 +11,30 @@ Attributes for initializing a tile overlay, including minimum and maximum zoom, 
 
 ## Declaration
 
-```swift
+```
 interface TileOverlayConstructorOptions
 ```
 
 ## Topics
 
 ### Initializing tile overlay options
-- [data](tileoverlayconstructoroptions/data.md)
+- [data](./tileoverlayconstructoroptions/data.md)
   Custom data for populating the URL template.
-- [maximumZ](tileoverlayconstructoroptions/maximumz.md)
+- [maximumZ](./tileoverlayconstructoroptions/maximumz.md)
   The maximum zoom level of the overlay.
-- [minimumZ](tileoverlayconstructoroptions/minimumz.md)
+- [minimumZ](./tileoverlayconstructoroptions/minimumz.md)
   The minimum zoom level of the overlay.
-- [opacity](tileoverlayconstructoroptions/opacity.md)
+- [opacity](./tileoverlayconstructoroptions/opacity.md)
   The opacity level of the overlay.
 
 ## See Also
 
-- [new TileOverlay(imageForTile, options)](tileoverlay/tileoverlayconstructor.md)
+### Creating a tile overlay
+- [new TileOverlay(imageForTile, options)](./tileoverlay/tileoverlayconstructor.md)
   Creates a tile overlay with a URL template or image callback and style options.
-- [type TileOverlayUrlTemplate](tileoverlayurltemplate.md)
+- [type TileOverlayUrlTemplate](./tileoverlayurltemplate.md)
   A type that specifies the URL template for a tile overlay.
-- [type TileOverlayImageCallback](tileoverlayimagecallback.md)
+- [type TileOverlayImageCallback](./tileoverlayimagecallback.md)
   A callback function that provides tile images for a tile overlay.
 
 

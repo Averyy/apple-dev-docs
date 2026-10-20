@@ -1,6 +1,7 @@
 # _DNS_SD_H
 
-**Framework**: dnssd
+**Framework**: dnssd  
+**Role**: Article
 
 API version number.
 
@@ -12,7 +13,7 @@ Major part of the build number * 10000 +
 
 minor part of the build number * 100
 
-For example, OS X 10.4.9 has mDNSResponder-108.4, which would be represented as version 1080400. This allows C code to do simple greater-than and less-than comparisons: e.g. an application that requires the [`DNSServiceGetProperty(_:_:_:)`](dnsservicegetproperty(_:_:_:).md) call (new in mDNSResponder-126) can check:
+For example, OS X 10.4.9 has mDNSResponder-108.4, which would be represented as version 1080400. This allows C code to do simple greater-than and less-than comparisons: e.g. an application that requires the [`DNSServiceGetProperty(_:_:_:)`](./dnsservicegetproperty%28_,_,_%29.md) call (new in mDNSResponder-126) can check:
 
 ```objc
  
@@ -29,9 +30,10 @@ The version defined in this header file symbol allows for compile-time checking,
 
 ## See Also
 
-- [var kDNSServiceMaxDomainName: Int32](kdnsservicemaxdomainname.md)
-- [var kDNSServiceMaxServiceName: Int32](kdnsservicemaxservicename.md)
-- [var kDNSServiceProperty_DaemonVersion: String](kdnsserviceproperty_daemonversion.md)
+### Constants
+- [var kDNSServiceMaxDomainName: Int32](./kdnsservicemaxdomainname.md)
+- [var kDNSServiceMaxServiceName: Int32](./kdnsservicemaxservicename.md)
+- [var kDNSServiceProperty_DaemonVersion: String](./kdnsserviceproperty_daemonversion.md)
   The daemon version property.
 
 

@@ -1,7 +1,8 @@
 # setPackedStrides()
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the stride for each vertex layout to the minimum value to pack vertex data together in a single buffer.
 
@@ -19,17 +20,22 @@ Sets the stride for each vertex layout to the minimum value to pack vertex data 
 func setPackedStrides()
 ```
 
+```objc
+- (void) setPackedStrides;
+```
+
 #### Discussion
 
-This method examines the [`offset`](mdlvertexattribute/offset.md) property of each of the descriptor’s vertex attributes, calculates a stride for each of the descriptor’s vertex layouts that fits vertex data into a single buffer with minimal unused padding space between vertices, then sets the [`stride`](mdlvertexbufferlayout/stride.md) property of each vertex layour to the calculated value.
+This method examines the [`offset`](../mdlvertexattribute/offset.md) property of each of the descriptor’s vertex attributes, calculates a stride for each of the descriptor’s vertex layouts that fits vertex data into a single buffer with minimal unused padding space between vertices, then sets the [`stride`](../mdlvertexbufferlayout/stride.md) property of each vertex layour to the calculated value.
 
 For example, consider a vertex buffer with three attributes: position, normal, and texture coordinate. The position and normal attributes each contain 3-component floating-point vectors for each vertex, and the texture coordinate attribute contains a 2-component floating-point vector for each vertex. The data size for the each of the first two attributes is 12 bytes (4 bytes per component), and the data size for the third is 8 bytes (4 bytes per component). Therefore, if the offset of each attributes is set such that there is no padding between the data for each, the minimum stride that leaves no padding between vertices is 32 bytes (the sum of the sizes of all three attributes).
 
-To describe a fully packed vertex buffer, call this method *after* calling the [`setPackedOffsets()`](mdlvertexdescriptor/setpackedoffsets().md) method.
+To describe a fully packed vertex buffer, call this method *after* calling the [`setPackedOffsets()`](./setpackedoffsets%28%29.md) method.
 
 ## See Also
 
-- [var layouts: NSMutableArray](mdlvertexdescriptor/layouts.md)
+### Working with Vertex Buffer Layouts
+- [var layouts: NSMutableArray](./layouts.md)
   The list of vertex buffer layouts described by the vertex descriptor.
 
 

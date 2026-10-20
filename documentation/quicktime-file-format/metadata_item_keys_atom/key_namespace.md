@@ -1,7 +1,8 @@
 # Key_namespace
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit integer defining a naming scheme used for metadata keys.
 
@@ -11,19 +12,20 @@ Location metadata keys, for example, use the `‘mdta’` key namespace.
 
 ## See Also
 
-- [Size](metadata_item_keys_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit unsigned integer that indicates the size in bytes of the atom structure.
-- [Type](metadata_item_keys_atom/type.md)
+- [Type](./type.md)
   A 32-bit unsigned integer value.
-- [Version](metadata_item_keys_atom/version.md)
+- [Version](./version.md)
   One byte.
-- [Flags](metadata_item_keys_atom/flags.md)
+- [Flags](./flags.md)
   Three bytes.
-- [Entry_count](metadata_item_keys_atom/entry_count.md)
+- [Entry_count](./entry_count.md)
   A 32-bit integer indicating the number of key arrays to follow in this atom.
-- [Key_size](metadata_item_keys_atom/key_size.md)
+- [Key_size](./key_size.md)
   A 32-bit integer indicating the size of the entire structure containing a key definition.
-- [Key_value[Key_size-8]](metadata_item_keys_atom/key_value_key_size-8.md)
+- [Key_value[Key_size-8]](./key_value_key_size-8.md)
   An array of 8-bit integers, each containing the actual name of the metadata key.
 
 

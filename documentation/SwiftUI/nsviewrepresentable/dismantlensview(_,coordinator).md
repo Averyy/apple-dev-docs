@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 Cleans up the presented AppKit view (and coordinator) in anticipation of their removal.
@@ -24,6 +25,12 @@ Use this method to perform additional clean-up work related to your custom view.
 
 - `nsView`: Your custom view object.
 - `coordinator`: The custom coordinator you use to communicate changes back to SwiftUI. If you do not use a custom coordinator instance, the system provides a default instance.
+
+## Default Implementations
+
+### NSViewRepresentable Implementations
+- [static func dismantleNSView(Self.NSViewType, coordinator: Self.Coordinator)](./dismantlensview%28_,coordinator%29-21agq.md)
+  Cleans up the presented AppKit view (and coordinator) in anticipation of their removal.
 
 
 ---

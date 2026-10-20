@@ -1,7 +1,8 @@
 # streamSinkEndOfData
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A property key for a Boolean value that indicates whether the stream has more data.
 
@@ -15,25 +16,30 @@ A property key for a Boolean value that indicates whether the stream has more da
 static let streamSinkEndOfData: CMIOExtensionProperty
 ```
 
+```c
+extern CMIOExtensionProperty const CMIOExtensionPropertyStreamSinkEndOfData;
+```
+
 #### Discussion
 
 The property state for this property is a number that represents a Boolean value: `1` indicates the stream is at its end, and `0` indicates that more data exists.
 
-The value of this property matches the [`kCMIOStreamPropertyEndOfData`](kcmiostreampropertyendofdata.md) property.
+The value of this property matches the [`kCMIOStreamPropertyEndOfData`](../kcmiostreampropertyendofdata.md) property.
 
 ## See Also
 
-- [static let streamActiveFormatIndex: CMIOExtensionProperty](cmioextensionproperty/streamactiveformatindex.md)
+### Stream Properties
+- [static let streamActiveFormatIndex: CMIOExtensionProperty](./streamactiveformatindex.md)
   A property key for the index of the active stream format.
-- [static let streamFrameDuration: CMIOExtensionProperty](cmioextensionproperty/streamframeduration.md)
+- [static let streamFrameDuration: CMIOExtensionProperty](./streamframeduration.md)
   A property key for the frame duration.
-- [static let streamMaxFrameDuration: CMIOExtensionProperty](cmioextensionproperty/streammaxframeduration.md)
+- [static let streamMaxFrameDuration: CMIOExtensionProperty](./streammaxframeduration.md)
   A property key for the maximum frame duration.
-- [static let streamSinkBufferQueueSize: CMIOExtensionProperty](cmioextensionproperty/streamsinkbufferqueuesize.md)
+- [static let streamSinkBufferQueueSize: CMIOExtensionProperty](./streamsinkbufferqueuesize.md)
   A property key for the sink buffer queue size.
-- [static let streamSinkBuffersRequiredForStartup: CMIOExtensionProperty](cmioextensionproperty/streamsinkbuffersrequiredforstartup.md)
+- [static let streamSinkBuffersRequiredForStartup: CMIOExtensionProperty](./streamsinkbuffersrequiredforstartup.md)
   A property key for the number of buffers required for startup.
-- [static let streamSinkBufferUnderrunCount: CMIOExtensionProperty](cmioextensionproperty/streamsinkbufferunderruncount.md)
+- [static let streamSinkBufferUnderrunCount: CMIOExtensionProperty](./streamsinkbufferunderruncount.md)
   A property key for the buffer underrun count.
 
 

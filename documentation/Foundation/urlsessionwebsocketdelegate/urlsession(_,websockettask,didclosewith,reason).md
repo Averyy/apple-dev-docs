@@ -1,7 +1,8 @@
 # urlSession(_:webSocketTask:didCloseWith:reason:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the WebSocket task received a close frame from the server endpoint, optionally including a close code and reason from the server.
 
@@ -20,6 +21,10 @@ Tells the delegate that the WebSocket task received a close frame from the serve
 optional func urlSession(_ session: URLSession, webSocketTask: URLSessionWebSocketTask, didCloseWith closeCode: URLSessionWebSocketTask.CloseCode, reason: Data?)
 ```
 
+```objc
+- (void) URLSession:(NSURLSession *) session webSocketTask:(NSURLSessionWebSocketTask *) webSocketTask didCloseWithCode:(NSURLSessionWebSocketCloseCode) closeCode reason:(NSData *) reason;
+```
+
 ## Parameters
 
 - `session`: The session of the WebSocket task that closed.
@@ -29,7 +34,8 @@ optional func urlSession(_ session: URLSession, webSocketTask: URLSessionWebSock
 
 ## See Also
 
-- [func urlSession(URLSession, webSocketTask: URLSessionWebSocketTask, didOpenWithProtocol: String?)](urlsessionwebsocketdelegate/urlsession(_:websockettask:didopenwithprotocol:).md)
+### Handling WebSocket lifecycle events
+- [func urlSession(URLSession, webSocketTask: URLSessionWebSocketTask, didOpenWithProtocol: String?)](./urlsession%28_,websockettask,didopenwithprotocol%29.md)
   Tells the delegate that the WebSocket task successfully negotiated the handshake with the endpoint, indicating the negotiated protocol.
 
 

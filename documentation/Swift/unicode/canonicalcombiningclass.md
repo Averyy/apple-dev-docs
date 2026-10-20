@@ -1,7 +1,8 @@
 # Unicode.CanonicalCombiningClass
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The classification of a scalar used in the Canonical Ordering Algorithm defined by the Unicode Standard.
 
@@ -48,84 +49,85 @@ let overlayClassIsOverlay = overlayClass == .overlay
 ## Topics
 
 ### Operators
-- [static func == (Unicode.CanonicalCombiningClass, Unicode.CanonicalCombiningClass) -> Bool](unicode/canonicalcombiningclass/==(_:_:).md)
+- [static func == (Unicode.CanonicalCombiningClass, Unicode.CanonicalCombiningClass) -> Bool](./canonicalcombiningclass/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are equal.
-- [static func < (Unicode.CanonicalCombiningClass, Unicode.CanonicalCombiningClass) -> Bool](unicode/canonicalcombiningclass/_(_:_:).md)
+- [static func < (Unicode.CanonicalCombiningClass, Unicode.CanonicalCombiningClass) -> Bool](./canonicalcombiningclass/op%28_,_%29.md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
 ### Initializers
-- [init(rawValue: UInt8)](unicode/canonicalcombiningclass/init(rawvalue:).md)
+- [init(rawValue: UInt8)](./canonicalcombiningclass/init%28rawvalue%29.md)
   Creates a new canonical combining class with the given raw integer value.
 ### Instance Properties
-- [var hashValue: Int](unicode/canonicalcombiningclass/hashvalue.md)
+- [var hashValue: Int](./canonicalcombiningclass/hashvalue.md)
   The hash value.
-- [let rawValue: UInt8](unicode/canonicalcombiningclass/rawvalue-swift.property.md)
+- [let rawValue: UInt8](./canonicalcombiningclass/rawvalue-swift.property.md)
   The raw integer value of the canonical combining class.
 ### Instance Methods
-- [func hash(into: inout Hasher)](unicode/canonicalcombiningclass/hash(into:).md)
+- [func hash(into: inout Hasher)](./canonicalcombiningclass/hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 ### Type Aliases
-- [Unicode.CanonicalCombiningClass.RawValue](unicode/canonicalcombiningclass/rawvalue-swift.typealias.md)
+- [Unicode.CanonicalCombiningClass.RawValue](./canonicalcombiningclass/rawvalue-swift.typealias.md)
   The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
-- [static let above: Unicode.CanonicalCombiningClass](unicode/canonicalcombiningclass/above.md)
+- [static let above: Unicode.CanonicalCombiningClass](./canonicalcombiningclass/above.md)
   Distinct marks directly above.
-- [static let aboveLeft: Unicode.CanonicalCombiningClass](unicode/canonicalcombiningclass/aboveleft.md)
+- [static let aboveLeft: Unicode.CanonicalCombiningClass](./canonicalcombiningclass/aboveleft.md)
   Distinct marks at the top left.
-- [static let aboveRight: Unicode.CanonicalCombiningClass](unicode/canonicalcombiningclass/aboveright.md)
+- [static let aboveRight: Unicode.CanonicalCombiningClass](./canonicalcombiningclass/aboveright.md)
   Distinct marks at the top right.
-- [static let attachedAbove: Unicode.CanonicalCombiningClass](unicode/canonicalcombiningclass/attachedabove.md)
+- [static let attachedAbove: Unicode.CanonicalCombiningClass](./canonicalcombiningclass/attachedabove.md)
   Marks attached directly above.
-- [static let attachedAboveRight: Unicode.CanonicalCombiningClass](unicode/canonicalcombiningclass/attachedaboveright.md)
+- [static let attachedAboveRight: Unicode.CanonicalCombiningClass](./canonicalcombiningclass/attachedaboveright.md)
   Marks attached at the top right.
-- [static let attachedBelow: Unicode.CanonicalCombiningClass](unicode/canonicalcombiningclass/attachedbelow.md)
+- [static let attachedBelow: Unicode.CanonicalCombiningClass](./canonicalcombiningclass/attachedbelow.md)
   Marks attached directly below.
-- [static let attachedBelowLeft: Unicode.CanonicalCombiningClass](unicode/canonicalcombiningclass/attachedbelowleft.md)
+- [static let attachedBelowLeft: Unicode.CanonicalCombiningClass](./canonicalcombiningclass/attachedbelowleft.md)
   Marks attached at the bottom left.
-- [static let below: Unicode.CanonicalCombiningClass](unicode/canonicalcombiningclass/below.md)
+- [static let below: Unicode.CanonicalCombiningClass](./canonicalcombiningclass/below.md)
   Distinct marks directly below.
-- [static let belowLeft: Unicode.CanonicalCombiningClass](unicode/canonicalcombiningclass/belowleft.md)
+- [static let belowLeft: Unicode.CanonicalCombiningClass](./canonicalcombiningclass/belowleft.md)
   Distinct marks at the bottom left.
-- [static let belowRight: Unicode.CanonicalCombiningClass](unicode/canonicalcombiningclass/belowright.md)
+- [static let belowRight: Unicode.CanonicalCombiningClass](./canonicalcombiningclass/belowright.md)
   Distinct marks at the bottom right.
-- [static let doubleAbove: Unicode.CanonicalCombiningClass](unicode/canonicalcombiningclass/doubleabove.md)
+- [static let doubleAbove: Unicode.CanonicalCombiningClass](./canonicalcombiningclass/doubleabove.md)
   Distinct marks extending above two bases.
-- [static let doubleBelow: Unicode.CanonicalCombiningClass](unicode/canonicalcombiningclass/doublebelow.md)
+- [static let doubleBelow: Unicode.CanonicalCombiningClass](./canonicalcombiningclass/doublebelow.md)
   Distinct marks subtending two bases.
-- [static let iotaSubscript: Unicode.CanonicalCombiningClass](unicode/canonicalcombiningclass/iotasubscript.md)
+- [static let iotaSubscript: Unicode.CanonicalCombiningClass](./canonicalcombiningclass/iotasubscript.md)
   Greek iota subscript only (U+0345 COMBINING GREEK YPOGEGRAMMENI).
-- [static let kanaVoicing: Unicode.CanonicalCombiningClass](unicode/canonicalcombiningclass/kanavoicing.md)
+- [static let kanaVoicing: Unicode.CanonicalCombiningClass](./canonicalcombiningclass/kanavoicing.md)
   Combining marks that are attached to hiragana and katakana to indicate voicing changes.
-- [static let left: Unicode.CanonicalCombiningClass](unicode/canonicalcombiningclass/left.md)
+- [static let left: Unicode.CanonicalCombiningClass](./canonicalcombiningclass/left.md)
   Distinct marks to the left.
-- [static let notReordered: Unicode.CanonicalCombiningClass](unicode/canonicalcombiningclass/notreordered.md)
+- [static let notReordered: Unicode.CanonicalCombiningClass](./canonicalcombiningclass/notreordered.md)
   Base glyphs that occupy their own space and do not combine with others.
-- [static let nukta: Unicode.CanonicalCombiningClass](unicode/canonicalcombiningclass/nukta.md)
+- [static let nukta: Unicode.CanonicalCombiningClass](./canonicalcombiningclass/nukta.md)
   Diacritic nukta marks in Brahmi-derived scripts.
-- [static let overlay: Unicode.CanonicalCombiningClass](unicode/canonicalcombiningclass/overlay.md)
+- [static let overlay: Unicode.CanonicalCombiningClass](./canonicalcombiningclass/overlay.md)
   Marks that overlay a base letter or symbol.
-- [static let right: Unicode.CanonicalCombiningClass](unicode/canonicalcombiningclass/right.md)
+- [static let right: Unicode.CanonicalCombiningClass](./canonicalcombiningclass/right.md)
   Distinct marks to the right.
-- [static let virama: Unicode.CanonicalCombiningClass](unicode/canonicalcombiningclass/virama.md)
+- [static let virama: Unicode.CanonicalCombiningClass](./canonicalcombiningclass/virama.md)
   Diacritic virama marks in Brahmi-derived scripts.
 ### Default Implementations
-- [Comparable Implementations](unicode/canonicalcombiningclass/comparable-implementations.md)
-- [Equatable Implementations](unicode/canonicalcombiningclass/equatable-implementations.md)
+- [Comparable Implementations](./canonicalcombiningclass/comparable-implementations.md)
+- [Equatable Implementations](./canonicalcombiningclass/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](comparable.md)
-- [Equatable](equatable.md)
-- [Hashable](hashable.md)
-- [RawRepresentable](rawrepresentable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Comparable](../comparable.md)
+- [Equatable](../equatable.md)
+- [Hashable](../hashable.md)
+- [RawRepresentable](../rawrepresentable.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 ## See Also
 
-- [Unicode.GeneralCategory](unicode/generalcategory.md)
+### Unicode Scalar Classifications
+- [Unicode.GeneralCategory](./generalcategory.md)
   The most general classification of a Unicode scalar.
-- [Unicode.NumericType](unicode/numerictype.md)
+- [Unicode.NumericType](./numerictype.md)
   The numeric type of a scalar.
 
 

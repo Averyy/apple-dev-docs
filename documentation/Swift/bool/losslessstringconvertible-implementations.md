@@ -1,11 +1,12 @@
 # LosslessStringConvertible Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init?(String)](bool/init(_:)-83vgw.md)
+- [init?(String)](./init%28_%29-83vgw.md)
   Creates a new Boolean value from the given string.
 
 

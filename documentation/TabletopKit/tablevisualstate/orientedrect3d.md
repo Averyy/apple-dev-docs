@@ -1,7 +1,8 @@
 # TableVisualState.OrientedRect3D
 
 **Framework**: TabletopKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represents the position and orientation of a 3D rectangle.
 
@@ -17,38 +18,39 @@ struct OrientedRect3D
 ## Topics
 
 ### Creating 3D rectangle states
-- [init()](tablevisualstate/orientedrect3d/init.md)
-- [init(pose: Pose3D, size: Size3D)](tablevisualstate/orientedrect3d/init(pose:size:).md)
-- [init(rotation: Rotation3D, rect: Rect3D)](tablevisualstate/orientedrect3d/init(rotation:rect:).md)
+- [init()](./orientedrect3d/init%28%29.md)
+- [init(pose: Pose3D, size: Size3D)](./orientedrect3d/init%28pose,size%29.md)
+- [init(rotation: Rotation3D, rect: Rect3D)](./orientedrect3d/init%28rotation,rect%29.md)
 ### Getting 3D rectangle properties
-- [var pose: Pose3D](tablevisualstate/orientedrect3d/pose.md)
+- [var pose: Pose3D](./orientedrect3d/pose.md)
   The pose of the rectangle.
-- [var size: Size3D](tablevisualstate/orientedrect3d/size.md)
+- [var size: Size3D](./orientedrect3d/size.md)
   The size of the rectangle.
 ### Default Implementations
-- [Decodable Implementations](tablevisualstate/orientedrect3d/decodable-implementations.md)
-- [Encodable Implementations](tablevisualstate/orientedrect3d/encodable-implementations.md)
+- [Decodable Implementations](./orientedrect3d/decodable-implementations.md)
+- [Encodable Implementations](./orientedrect3d/encodable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func bounds(for: some Equipment) -> TableVisualState.OrientedRect3D?](tablevisualstate/bounds(for:).md)
+### Representing 3D states
+- [func bounds(for: some Equipment) -> TableVisualState.OrientedRect3D?](./bounds%28for%29.md)
   Returns the current pose and extents of the bounding box for the given equipment. Returns `nil` if the equipment is not part of the game.
-- [func bounds(forEquipment: some Equipment) -> TableVisualState.OrientedRect3D?](tablevisualstate/bounds(forequipment:).md)
-- [func bounds(matching: EquipmentIdentifier) -> TableVisualState.OrientedRect3D?](tablevisualstate/bounds(matching:).md)
-- [func goalBounds(forEquipment: some Equipment) -> TableVisualState.OrientedRect3D?](tablevisualstate/goalbounds(forequipment:).md)
-- [func goalBounds(matching: EquipmentIdentifier) -> TableVisualState.OrientedRect3D?](tablevisualstate/goalbounds(matching:).md)
-- [var tableBounds: TableVisualState.OrientedRect3D?](tablevisualstate/tablebounds.md)
+- [func bounds(forEquipment: some Equipment) -> TableVisualState.OrientedRect3D?](./bounds%28forequipment%29.md)
+- [func bounds(matching: EquipmentIdentifier) -> TableVisualState.OrientedRect3D?](./bounds%28matching%29.md)
+- [func goalBounds(forEquipment: some Equipment) -> TableVisualState.OrientedRect3D?](./goalbounds%28forequipment%29.md)
+- [func goalBounds(matching: EquipmentIdentifier) -> TableVisualState.OrientedRect3D?](./goalbounds%28matching%29.md)
+- [var tableBounds: TableVisualState.OrientedRect3D?](./tablebounds.md)
 
 
 ---

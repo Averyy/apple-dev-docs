@@ -1,7 +1,8 @@
 # testRuns
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of test runs that the test suite manages.
 
@@ -11,9 +12,14 @@ An array of test runs that the test suite manages.
 var testRuns: [XCTestRun] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<XCTestRun *> * testRuns;
+```
+
 ## See Also
 
-- [func addTestRun(XCTestRun)](xctestsuiterun/addtestrun(_:).md)
+### Managing Test Runs
+- [func addTestRun(XCTestRun)](./addtestrun%28_%29.md)
   Adds a test run to the test suite.
 
 

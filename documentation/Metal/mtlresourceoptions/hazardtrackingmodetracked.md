@@ -1,7 +1,8 @@
 # hazardTrackingModeTracked
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that instructs Metal to apply safeguards for a resource at runtime to avoid memory hazards for the applicable commands.
 
@@ -19,13 +20,18 @@ An option that instructs Metal to apply safeguards for a resource at runtime to 
 static var hazardTrackingModeTracked: MTLResourceOptions { get }
 ```
 
+```c
+MTLResourceHazardTrackingModeTracked
+```
+
 #### Discussion
 
-For more information, see [`MTLHazardTrackingMode.tracked`](mtlhazardtrackingmode/tracked.md).
+For more information, see [`MTLHazardTrackingMode.tracked`](../mtlhazardtrackingmode/tracked.md).
 
 ## See Also
 
-- [static var hazardTrackingModeUntracked: MTLResourceOptions](mtlresourceoptions/hazardtrackingmodeuntracked.md)
+### Specifying hazard tracking
+- [static var hazardTrackingModeUntracked: MTLResourceOptions](./hazardtrackingmodeuntracked.md)
   A resource option that instructs Metal to ignore memory hazards for a resource at runtime.
 
 

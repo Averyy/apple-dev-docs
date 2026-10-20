@@ -1,7 +1,8 @@
 # USDPrim.VariantSet
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Represents a single variant set on a prim.
 
@@ -26,35 +27,35 @@ struct VariantSet
 ## Topics
 
 ### Instance Properties
-- [var authoredSelection: String?](usdprim/variantset/authoredselection.md)
+- [var authoredSelection: String?](./variantset/authoredselection.md)
   The authored variant selection, or `nil` if none is authored.
-- [var isValid: Bool](usdprim/variantset/isvalid.md)
+- [var isValid: Bool](./variantset/isvalid.md)
   A Boolean value indicating whether this variant set is valid.
-- [var name: String](usdprim/variantset/name.md)
+- [var name: String](./variantset/name.md)
   The name of this variant set.
-- [var prim: USDPrim](usdprim/variantset/prim.md)
+- [var prim: USDPrim](./variantset/prim.md)
   The prim that owns this variant set.
-- [var selection: String?](usdprim/variantset/selection.md)
+- [var selection: String?](./variantset/selection.md)
   The currently selected variant name, or `nil` if no selection composes.
-- [var variantNames: [String]](usdprim/variantset/variantnames.md)
+- [var variantNames: [String]](./variantset/variantnames.md)
   The names of all variants in this variant set.
 ### Instance Methods
-- [func add(String) throws](usdprim/variantset/add(_:).md)
+- [func add(String) throws](./variantset/add%28_%29.md)
   Adds a new variant to this variant set.
-- [func blockSelection() throws](usdprim/variantset/blockselection.md)
+- [func blockSelection() throws](./variantset/blockselection%28%29.md)
   Blocks the variant selection by authoring an explicit empty value on the current edit target.
-- [func clearSelection() throws](usdprim/variantset/clearselection.md)
+- [func clearSelection() throws](./variantset/clearselection%28%29.md)
   Clears the variant selection.
-- [func setSelection(String) throws](usdprim/variantset/setselection(_:).md)
+- [func setSelection(String) throws](./variantset/setselection%28_%29.md)
   Sets the variant selection.
-- [func withEditTarget<R>(layer: USDLayer?, (USDStage.EditTarget) throws -> R) rethrows -> R](usdprim/variantset/withedittarget(layer:_:).md)
+- [func withEditTarget<R>(layer: USDLayer?, (USDStage.EditTarget) throws -> R) rethrows -> R](./variantset/withedittarget%28layer,_%29.md)
   Performs the closure with the stage’s edit target set to author into the currently selected variant.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

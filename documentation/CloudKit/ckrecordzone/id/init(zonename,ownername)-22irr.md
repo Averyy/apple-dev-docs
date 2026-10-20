@@ -1,7 +1,8 @@
 # init(zoneName:ownerName:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a record zone ID with the specified name and owner.
 
@@ -11,7 +12,7 @@ Creates a record zone ID with the specified name and owner.
 - Mac Catalyst 13.1+
 - macOS 10.12+
 - tvOS 10.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 
 ## Declaration
@@ -26,8 +27,8 @@ A new record zone ID.
 
 ## Parameters
 
-- `zoneName`: The name that identifies the record zone. Zone names consist of up to 255 ASCII characters, and don’t start with an underscore. To specify the default zone of the current database, use  [`defaultZoneName`](ckrecordzone/id/defaultzonename.md). This parameter must not be `nil` or an empty string.
-- `ownerName`: The user who creates the record zone. To specify the current user, use [`CKCurrentUserDefaultName`](ckcurrentuserdefaultname.md). If you provide `nil` or an empty string for this parameter, the method throws an exception.
+- `zoneName`: The name that identifies the record zone. Zone names consist of up to 255 ASCII characters, and don’t start with an underscore. To specify the default zone of the current database, use  [`defaultZoneName`](./defaultzonename.md). This parameter must not be `nil` or an empty string.
+- `ownerName`: The user who creates the record zone. To specify the current user, use [`CKCurrentUserDefaultName`](../../ckcurrentuserdefaultname.md). If you provide `nil` or an empty string for this parameter, the method throws an exception.
 
 
 ---

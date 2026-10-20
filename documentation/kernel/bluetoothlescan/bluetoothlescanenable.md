@@ -1,14 +1,15 @@
 # BluetoothLEScanEnable
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 BluetoothLEScanEnable = 0x01
 ```
 

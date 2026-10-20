@@ -1,7 +1,8 @@
 # position(by:axis:span:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Represents data using position.
 
@@ -43,13 +44,14 @@ Chart(cars) {
 
 ## See Also
 
-- [func foregroundStyle<D>(by: PlottableValue<D>) -> some ChartContent](chartcontent/foregroundstyle(by:).md)
+### Encoding data into mark characteristics
+- [func foregroundStyle<D>(by: PlottableValue<D>) -> some ChartContent](./foregroundstyle%28by%29.md)
   Represents data using a foreground style.
-- [func lineStyle<D>(by: PlottableValue<D>) -> some ChartContent](chartcontent/linestyle(by:).md)
+- [func lineStyle<D>(by: PlottableValue<D>) -> some ChartContent](./linestyle%28by%29.md)
   Represents data using line styles.
-- [func symbol<D>(by: PlottableValue<D>) -> some ChartContent](chartcontent/symbol(by:).md)
+- [func symbol<D>(by: PlottableValue<D>) -> some ChartContent](./symbol%28by%29.md)
   Represents data using different kinds of symbols.
-- [func symbolSize<D>(by: PlottableValue<D>) -> some ChartContent](chartcontent/symbolsize(by:).md)
+- [func symbolSize<D>(by: PlottableValue<D>) -> some ChartContent](./symbolsize%28by%29.md)
   Represents data using symbol sizes.
 
 

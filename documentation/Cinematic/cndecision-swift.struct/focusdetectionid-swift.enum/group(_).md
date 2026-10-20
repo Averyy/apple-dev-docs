@@ -1,12 +1,13 @@
 # CNDecision.FocusDetectionID.group(_:)
 
 **Framework**: Cinematic  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 14.0+
 - tvOS 17.0+
 
@@ -18,7 +19,8 @@ case group(CNDetectionGroupID)
 
 ## See Also
 
-- [CNDecision.FocusDetectionID.single(_:)](cndecision-swift.struct/focusdetectionid-swift.enum/single(_:).md)
+### Enumeration Casese
+- [CNDecision.FocusDetectionID.single(_:)](./single%28_%29.md)
 
 
 ---

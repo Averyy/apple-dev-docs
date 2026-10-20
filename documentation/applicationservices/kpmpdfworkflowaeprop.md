@@ -1,7 +1,8 @@
 # kPMPDFWorkFlowAEProp
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 var kPMPDFWorkFlowAEProp: String { get }
+```
+
+```c
+#define kPMPDFWorkFlowAEProp
 ```
 
 

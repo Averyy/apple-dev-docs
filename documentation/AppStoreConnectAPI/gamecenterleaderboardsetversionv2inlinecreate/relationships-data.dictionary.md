@@ -1,7 +1,8 @@
 # GameCenterLeaderboardSetVersionV2InlineCreate.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those you can operate on.
 
@@ -10,7 +11,7 @@ The relationships you include in the request and those you can operate on.
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardSetVersionV2InlineCreate.Relationships
 ```
 
@@ -21,7 +22,7 @@ object GameCenterLeaderboardSetVersionV2InlineCreate.Relationships
 ## Topics
 
 ### Dictionaries
-- [object GameCenterLeaderboardSetVersionV2InlineCreate.Relationships.LeaderboardSet](gamecenterleaderboardsetversionv2inlinecreate/relationships-data.dictionary/leaderboardset-data.dictionary.md)
+- [object GameCenterLeaderboardSetVersionV2InlineCreate.Relationships.LeaderboardSet](./relationships-data.dictionary/leaderboardset-data.dictionary.md)
   The data that describes the leaderboard set of the Game Center leaderboard set version v2 inline create.
 
 ## Properties

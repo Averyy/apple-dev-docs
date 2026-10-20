@@ -1,7 +1,8 @@
 # getLength
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Accessor to get the length of the memory descriptor (over all its ranges).
 
@@ -10,11 +11,11 @@ Accessor to get the length of the memory descriptor (over all its ranges).
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOByteCount getLength(void);
 ```
 
-#### Return_value
+#### Return Value
 
 The byte count.
 
@@ -24,18 +25,19 @@ This method returns the total length of the memory described by the descriptor, 
 
 ## See Also
 
-- [getDirection](iomemorydescriptor/1812765-getdirection.md)
+### Getting the Descriptor Information
+- [getDirection](./api-1812765-getdirection.md)
   Gets the direction of memory transfers associated with the descriptor. 
-- [- getDirection](iomemorydescriptor/1441925-getdirection.md)
+- [- getDirection](./api-1441925-getdirection.md)
   Gets the direction of memory transfers associated with the descriptor. 
-- [getLength](iomemorydescriptor/1812776-getlength.md)
+- [getLength](./api-1812776-getlength.md)
   Accessor to get the length of the memory descriptor (over all its ranges).
-- [- GetLength](iomemorydescriptor/3180642-getlength.md)
+- [- GetLength](./api-3180642-getlength.md)
   Returns the length of the memory block represented by this object.
-- [- getDMAMapLength](iomemorydescriptor/3553361-getdmamaplength.md)
-- [- getFlags](iomemorydescriptor/2870265-getflags.md)
+- [- getDMAMapLength](./api-3553361-getdmamaplength.md)
+- [- getFlags](./api-2870265-getflags.md)
   Returns the options used to create the memory descriptor.
-- [- getMetaClass](iomemorydescriptor/1442096-getmetaclass.md)
+- [- getMetaClass](./api-1442096-getmetaclass.md)
 
 
 ---

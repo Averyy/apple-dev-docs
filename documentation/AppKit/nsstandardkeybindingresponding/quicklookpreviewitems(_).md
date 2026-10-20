@@ -1,7 +1,8 @@
 # quickLookPreviewItems(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invokes QuickLook to preview the current selection.
 
@@ -12,6 +13,10 @@ Invokes QuickLook to preview the current selection.
 
 ```swift
 optional func quickLookPreviewItems(_ sender: Any?)
+```
+
+```objc
+- (void) quickLookPreviewItems:(id) sender;
 ```
 
 

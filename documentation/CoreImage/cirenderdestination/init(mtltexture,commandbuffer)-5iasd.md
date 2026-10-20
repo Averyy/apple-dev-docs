@@ -1,7 +1,8 @@
 # init(MTLTexture:commandBuffer:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+

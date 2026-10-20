@@ -1,7 +1,8 @@
 # setFontSizeAdjust(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setFontSizeAdjust(_ fontSizeAdjust: String!)
+```
+
+```objc
+- (void) setFontSizeAdjust:(NSString *) fontSizeAdjust;
 ```
 
 

@@ -1,7 +1,8 @@
 # kev_subclass
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The event's subclass.
 
@@ -10,7 +11,7 @@ The event's subclass.
 
 ## Declaration
 
-```swift
+```c
 u_int32_t kev_subclass;
 ```
 

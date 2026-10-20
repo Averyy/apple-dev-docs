@@ -1,7 +1,8 @@
 # kCMTextMarkupAttribute_FontFamilyName
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A name of a font family.
 
@@ -20,19 +21,24 @@ A name of a font family.
 let kCMTextMarkupAttribute_FontFamilyName: CFString
 ```
 
+```c
+extern CFStringRef const kCMTextMarkupAttribute_FontFamilyName;
+```
+
 #### Discussion
 
 This attribute’s value must be a `CFString` that holds the family name of an installed font (for example, “Helvetica”) that the system uses to render and/or measure text.
 
-When the system specifies legible output, an attributed string has at most one of [`kCMTextMarkupAttribute_FontFamilyName`](kcmtextmarkupattribute_fontfamilyname.md) or [`kCMTextMarkupAttribute_GenericFontFamilyName`](kcmtextmarkupattribute_genericfontfamilyname.md) associated with each character.
+When the system specifies legible output, an attributed string has at most one of [`kCMTextMarkupAttribute_FontFamilyName`](./kcmtextmarkupattribute_fontfamilyname.md) or [`kCMTextMarkupAttribute_GenericFontFamilyName`](./kcmtextmarkupattribute_genericfontfamilyname.md) associated with each character.
 
 ## See Also
 
-- [let kCMTextMarkupAttribute_GenericFontFamilyName: CFString](kcmtextmarkupattribute_genericfontfamilyname.md)
+### Fonts
+- [let kCMTextMarkupAttribute_GenericFontFamilyName: CFString](./kcmtextmarkupattribute_genericfontfamilyname.md)
   A generic font family name identifier.
-- [let kCMTextMarkupAttribute_BaseFontSizePercentageRelativeToVideoHeight: CFString](kcmtextmarkupattribute_basefontsizepercentagerelativetovideoheight.md)
+- [let kCMTextMarkupAttribute_BaseFontSizePercentageRelativeToVideoHeight: CFString](./kcmtextmarkupattribute_basefontsizepercentagerelativetovideoheight.md)
   A base font size as a percentage of the video height.
-- [let kCMTextMarkupAttribute_RelativeFontSize: CFString](kcmtextmarkupattribute_relativefontsize.md)
+- [let kCMTextMarkupAttribute_RelativeFontSize: CFString](./kcmtextmarkupattribute_relativefontsize.md)
   A font size as a percentage of the current default font size.
 
 

@@ -1,7 +1,8 @@
 # squareRoot(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the square root operation to the input tensor elements.
 
@@ -17,6 +18,10 @@ Applies the square root operation to the input tensor elements.
 
 ```swift
 func squareRoot(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) squareRootWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

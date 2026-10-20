@@ -1,7 +1,8 @@
 # StatusMDMEnrollmentType
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The status item that reports the device’s management enrollment type.
 
@@ -16,13 +17,13 @@ The status item that reports the device’s management enrollment type.
 
 ## Declaration
 
-```swift
+```
 object StatusMDMEnrollmentType
 ```
 
 #### Discussion
 
-##### Status Item Availability
+##### Status item availability
 
 |  |  |
 | --- | --- |
@@ -33,7 +34,7 @@ object StatusMDMEnrollmentType
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
 
-##### Status Item Example
+##### Status item example
 
 ```json
 {
@@ -45,22 +46,27 @@ object StatusMDMEnrollmentType
 
 ## Properties
 
-- `mdm.enrollment-type` (string) *(required)*: The device management enrollment type that indicates how the device is enrolled, which has the following possible values: - `none`: Device isn’t enrolled
-- `supervised`: Device is supervised
-- `device`: Device enrollment
-- `user`: User enrollment
+- `mdm.enrollment-type` (string) *(required)*: The device management enrollment type that indicates how the device is enrolled, which has the following possible values:
+
+  - `none`: Device isn’t enrolled
+  - `supervised`: Device is supervised
+  - `device`: Device enrollment
+  - `user`: User enrollment
+
+  **Allowed Values**: `none`, `supervised`, `device`, `user`
 
 ## See Also
 
-- [object StatusMDMIsAwaitingConfiguration](statusmdmisawaitingconfiguration.md)
+### MDM protocol items
+- [object StatusMDMIsAwaitingConfiguration](./statusmdmisawaitingconfiguration.md)
   The status item that reports the device management awaiting configuration state.
-- [object StatusMDMIsReturnToService](statusmdmisreturntoservice.md)
+- [object StatusMDMIsReturnToService](./statusmdmisreturntoservice.md)
   The status item that reports the device’s return to service with app preservation state.
-- [object StatusMDMIsSharedIPad](statusmdmissharedipad.md)
+- [object StatusMDMIsSharedIPad](./statusmdmissharedipad.md)
   The status item that reports the device’s Shared iPad state.
-- [object StatusMDMPushMagic](statusmdmpushmagic.md)
+- [object StatusMDMPushMagic](./statusmdmpushmagic.md)
   The status item that reports the device’s push magic value.
-- [object StatusMDMPushToken](statusmdmpushtoken.md)
+- [object StatusMDMPushToken](./statusmdmpushtoken.md)
   The status item that reports the device’s push token.
 
 

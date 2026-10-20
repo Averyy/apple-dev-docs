@@ -1,7 +1,8 @@
 # TKTokenKeyAlgorithm
 
 **Framework**: CryptoTokenKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Cryptographic algorithms used by token keys.
 
@@ -20,6 +21,10 @@ Cryptographic algorithms used by token keys.
 class TKTokenKeyAlgorithm
 ```
 
+```objc
+@interface TKTokenKeyAlgorithm : NSObject
+```
+
 #### Overview
 
 Typically, the supported algorithm for a token key can be represented by a value of the `SecKeyAlgorithm` enumeration. However, tokens such as Smart Cards require that input data for operations take the format of a more specific algorithm. For example, a token may accept raw data to generate a cryptographic signature, but require that raw data to be formatted according to PKCS1 padding rules. To express such a requirement, a `TKTokenKeyAlgorithm` object defines a target algorithm and a set of other algorithms that were used. In the previous example, the target algorithm is `kSecKeyAlgorithmRSASignatureRaw` and the `kSecKeyAlgorithmRSASignatureDigestPKCS1v15SHA1` algorithm is also reported as being  used.
@@ -27,30 +32,31 @@ Typically, the supported algorithm for a token key can be represented by a value
 ## Topics
 
 ### Determining Algorithm Usage
-- [func isAlgorithm(SecKeyAlgorithm) -> Bool](tktokenkeyalgorithm/isalgorithm(_:).md)
+- [func isAlgorithm(SecKeyAlgorithm) -> Bool](./tktokenkeyalgorithm/isalgorithm%28_%29.md)
   Returns whether the specified algorithm is the target operation algorithm.
-- [func supportsAlgorithm(SecKeyAlgorithm) -> Bool](tktokenkeyalgorithm/supportsalgorithm(_:).md)
+- [func supportsAlgorithm(SecKeyAlgorithm) -> Bool](./tktokenkeyalgorithm/supportsalgorithm%28_%29.md)
   Whether the specified algorithm is the target operation algorithm, or one of the other algorithms used.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func tokenSession(TKTokenSession, supports: TKTokenOperation, keyObjectID: TKToken.ObjectID, algorithm: TKTokenKeyAlgorithm) -> Bool](tktokensessiondelegate/tokensession(_:supports:keyobjectid:algorithm:).md)
+### Determining Support for Operations
+- [func tokenSession(TKTokenSession, supports: TKTokenOperation, keyObjectID: TKToken.ObjectID, algorithm: TKTokenKeyAlgorithm) -> Bool](./tktokensessiondelegate/tokensession%28_,supports,keyobjectid,algorithm%29.md)
   Asks the delegate whether the token session supports a given operation using the specified key and algorithm.
-- [enum TKTokenOperation](tktokenoperation.md)
+- [enum TKTokenOperation](./tktokenoperation.md)
   Operations that can be performed with a token’s keys and certificates.
-- [typealias ObjectID](tktoken/objectid.md)
+- [typealias ObjectID](./tktoken/objectid.md)
   A unique and persistent identifier of a particular token object.
 
 

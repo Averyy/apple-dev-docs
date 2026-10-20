@@ -1,6 +1,8 @@
 # Using Core ML for semantic image segmentation
 
-**Framework**: Core ML
+**Framework**: Core ML  
+**Role**: Sample Code  
+**Download**: [UsingCoreMLForSemanticImageSegmentation.zip](https://docs-assets.developer.apple.com/published/00ad11cf32e4/UsingCoreMLForSemanticImageSegmentation.zip)
 
 Identify multiple objects in an image by using the DEtection TRansformer image-segmentation model.
 
@@ -17,13 +19,13 @@ Semantic image-segmentation models identify multiple objects on an input image y
 
 This sample code project shows you how to load the model, read the model’s metadata to get label information, and perform offline inference. It also shows how to create a mask — from the image-segment label — and overlay it on the original image.
 
-##### Select the Image Segmentation Model
+##### Select the image-segmentation model
 
-The sample code project includes an 8-bit palletization image-segmentation model — `DETRResnet50SemanticSegmentationF16P8` — in the `models` directory. Replace the model with a different version by dropping the model `.mlpackage` into the `models` folder in Xcode. To download a DETR model using 16-bit, see [`Core ML Models`](https://developer.apple.comhttps://developer.apple.com/machine-learning/models/).
+The sample code project includes an 8-bit palletization image-segmentation model — `DETRResnet50SemanticSegmentationF16P8` — in the `models` directory. Replace the model with a different version by dropping the model `.mlpackage` into the `models` folder in Xcode. To download a DETR model using 16-bit, see [Core ML Models](https://developer.apple.com/machine-learning/models/).
 
 Select the model in the Xcode file navigator to view details in an Xcode model preview area. The following image shows the metadata and operations for the 8-bit model:
 
-![A screenshot of the Xcode model preview area that shows details about the model you select in the file navigator area.](/images/com.apple.coreml/selected-detr-model-details@2x.png)
+![A screenshot of the Xcode model preview area that shows details about the model you select in the file navigator area.](https://developer.apple.com/tutorials/images/com.apple.coreml/selected-detr-model-details@2x.png)
 
 To use a model with a different name, but using the same semantics, replace the source code references in `ViewModel` with the model class for `Model` and `ModelOutput`:
 
@@ -34,7 +36,7 @@ final class ViewModel: ObservableObject {
 }
 ```
 
-##### Load the Model
+##### Load the model
 
 How long it takes to load a model depends on many factors, including the size of the model. The sample app loads the segmentation model asynchronously to avoid blocking the calling thread:
 
@@ -80,7 +82,7 @@ var body: some View {
 
 ```
 
-##### Read the Image Segmentation Model Metadata
+##### Read the image-segmentation model metadata
 
 The `Core ML` framework uses optional metadata to map segment label values into strings an app reads. The metadata is in JSON format, and consists of two optional lists of strings:
 
@@ -89,9 +91,9 @@ The `Core ML` framework uses optional metadata to map segment label values into 
 
 The following image shows the label metadata in the Xcode model preview area:
 
-![A screenshot of the Xcode model preview area that shows details about the model you select in the file navigator area. It highlights additional metadata that contains model labels — person, bicycle, car, motorcycle, airplane, bus, and so on.](/images/com.apple.coreml/selected-detr-metadata@2x.png)
+![A screenshot of the Xcode model preview area that shows details about the model you select in the file navigator area. It highlights additional metadata that contains model labels — person, bicycle, car, motorcycle, airplane, bus, and so on.](https://developer.apple.com/tutorials/images/com.apple.coreml/selected-detr-metadata@2x.png)
 
-The sample app reads the segmentation labels from the model metadata by calling the `readSegmentationLabels` method in `MLModel`. For more information about the format `Core ML` uses for metadata, see [`Xcode Model Preview Types`](https://developer.apple.comhttps://apple.github.io/coremltools/docs-guides/source/xcode-model-preview-types.html):
+The sample app reads the segmentation labels from the model metadata by calling the `readSegmentationLabels` method in `MLModel`. For more information about the format `Core ML` uses for metadata, see [Xcode Model Preview Types](https://apple.github.io/coremltools/docs-guides/source/xcode-model-preview-types.html):
 
 ```swift
 extension MLModel {
@@ -110,9 +112,9 @@ extension MLModel {
 }
 ```
 
-Because the colors from the model metadata are optional, a common practice is to use a generic set of colors that an app defines. A semantic image-segmentation model can generate a large number of labels, and may need to reuse colors or use very similar colors. To assist people with color blindness, avoid using only color to identify different objects. For more information about using inclusive colors, see [`Inclusive color`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/color#Inclusive-color).
+Because the colors from the model metadata are optional, a common practice is to use a generic set of colors that an app defines. A semantic image-segmentation model can generate a large number of labels, and may need to reuse colors or use very similar colors. To assist people with color blindness, avoid using only color to identify different objects. For more information about using inclusive colors, see [Inclusive color](https://developer.apple.com/design/human-interface-guidelines/color#Inclusive-color).
 
-##### Perform Inference
+##### Perform inference
 
 The 8-bit DETR model takes a `CVPixelBuffer` with the type `kCVPixelFormatType_32ARGB` as the input, and generates a `ShapedArray` of `Int32` as output. For both arrays, the model uses fixed dimensions with the size `(448, 448)`. These values are specific to the model, and can be different for another model. To perform inference on the image-segmentation model, the sample app calls the `performInference` method. After inference, the sample app gets the result array from the `semanticPredictionsShapedArray` property:
 
@@ -130,11 +132,11 @@ let result = try model.prediction(image: pixelBuffer)
 let resultArray = result.semanticPredictionsShapedArray
 ```
 
-##### Overlay the Result
+##### Overlay the result
 
 The sample app provides a visualization of model output by overlaying a masked image — representing the selected segment — on top of the original, like the sky in the following image:
 
-![An image that shows an image mask that the sample overlays on top of the original image.](/images/com.apple.coreml/masked-image@2x.png)
+![An image that shows an image mask that the sample overlays on top of the original image.](https://developer.apple.com/tutorials/images/com.apple.coreml/masked-image@2x.png)
 
 Based on the selection, the sample app colors the labeled regions by calling the `renderMask` method in `ViewModel`:
 
@@ -176,11 +178,12 @@ func renderMask() throws -> CGImage? {
 
 ## See Also
 
-- [Classifying Images with Vision and Core ML](classifying-images-with-vision-and-core-ml.md)
+### Image classification models
+- [Classifying Images with Vision and Core ML](./classifying-images-with-vision-and-core-ml.md)
   Crop and scale photos using the Vision framework and classify them with a Core ML model.
-- [Detecting human body poses in an image](detecting-human-body-poses-in-an-image.md)
+- [Detecting human body poses in an image](./detecting-human-body-poses-in-an-image.md)
   Locate people and the stance of their bodies by analyzing an image with a PoseNet model.
-- [Understanding a Dice Roll with Vision and Object Detection](understanding-a-dice-roll-with-vision-and-object-detection.md)
+- [Understanding a Dice Roll with Vision and Object Detection](./understanding-a-dice-roll-with-vision-and-object-detection.md)
   Detect dice position and values shown in a camera frame, and determine the end of a roll by leveraging a dice detection model.
 
 

@@ -1,22 +1,27 @@
 # ointment
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The medication is applied as an ointment.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 static let ointment: HKMedicationGeneralForm
+```
+
+```c
+extern HKMedicationGeneralForm const HKMedicationGeneralFormOintment;
 ```
 
 

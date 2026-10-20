@@ -1,7 +1,8 @@
 # init(learningRate:gradientRescale:regularizationType:regularizationScale:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(learningRate: Float, gradientRescale: Float, regularizationType: MPSNNRegularizationType, regularizationScale: Float)
+```
+
+```objc
+- (instancetype) initWithLearningRate:(float) learningRate gradientRescale:(float) gradientRescale regularizationType:(MPSNNRegularizationType) regularizationType regularizationScale:(float) regularizationScale;
 ```
 
 

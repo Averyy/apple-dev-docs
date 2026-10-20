@@ -1,12 +1,13 @@
 # mode
 
 **Framework**: ReplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of screen that appears when the view is presented.
 
 **Availability**:
-- tvOS 10.0+
+- tvOS 10.0+ - Deprecated in 27.0
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The type of screen that appears when the view is presented.
 var mode: RPPreviewViewControllerMode { get set }
 ```
 
+```objc
+@property (nonatomic, assign) RPPreviewViewControllerMode mode;
+```
+
 ## See Also
 
-- [enum RPPreviewViewControllerMode](rppreviewviewcontrollermode.md)
+### Displaying the Preview UI
+- [enum RPPreviewViewControllerMode](../rppreviewviewcontrollermode.md)
   The modes used to determine whether the preview view controller or the share screen appears when editing a replay.
-- [var previewControllerDelegate: (any RPPreviewViewControllerDelegate)?](rppreviewviewcontroller/previewcontrollerdelegate.md)
+- [var previewControllerDelegate: (any RPPreviewViewControllerDelegate)?](./previewcontrollerdelegate.md)
   The preview view controller’s delegate.
-- [protocol RPPreviewViewControllerDelegate](rppreviewviewcontrollerdelegate.md)
+- [protocol RPPreviewViewControllerDelegate](../rppreviewviewcontrollerdelegate.md)
   The protocol you implement to respond to changes to a screen-recording user interface.
 
 

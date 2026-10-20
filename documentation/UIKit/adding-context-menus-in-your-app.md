@@ -1,6 +1,8 @@
 # Adding context menus in your app
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Sample Code  
+**Download**: [AddingContextMenusInYourApp.zip](https://docs-assets.developer.apple.com/published/e845680c042f/AddingContextMenusInYourApp.zip)
 
 Provide quick access to useful actions by adding context menus to your iOS app.
 
@@ -12,22 +14,22 @@ Provide quick access to useful actions by adding context menus to your iOS app.
 
 #### Overview
 
-This sample project demonstrates how to add context menus to user-interface elements such as views, controls, table views, collection views, and web views. Apps enhance and extend context menus with actions, nested submenu actions, and custom previews. For more information on context menu design, see [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ios/controls/context-menus/).
+This sample project demonstrates how to add context menus to user-interface elements such as views, controls, table views, collection views, and web views. Apps enhance and extend context menus with actions, nested submenu actions, and custom previews. For more information on context menu design, see [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/ios/controls/context-menus/).
 
-##### Create a Context Menu
+##### Create a context menu
 
 This sample shows two ways to create context menus:
 
-1. For a [`UIView`](uiview.md), the sample creates a [`UIContextMenuInteraction`](uicontextmenuinteraction.md) object and attaches it to that view. The `UIContextMenuInteraction` object focuses the user’s attention on a specific portion of the UI, and provides actions for the user to perform on that content. Then, the app adopts the [`UIContextMenuInteractionDelegate`](uicontextmenuinteractiondelegate.md) protocol and provides a [`UIContextMenuConfiguration`](uicontextmenuconfiguration.md) object.
+1. For a [`UIView`](./uiview.md), the sample creates a [`UIContextMenuInteraction`](./uicontextmenuinteraction.md) object and attaches it to that view. The `UIContextMenuInteraction` object focuses the user’s attention on a specific portion of the UI, and provides actions for the user to perform on that content. Then, the app adopts the [`UIContextMenuInteractionDelegate`](./uicontextmenuinteractiondelegate.md) protocol and provides a [`UIContextMenuConfiguration`](./uicontextmenuconfiguration.md) object.
 2. For more specific UI elements like tables, collections, and web views, the app adopts specific protocols for those elements that return a `UIContextMenuConfiguration`.
 
-Adopt `UIContextMenuInteractionDelegate` to manage the lifecycle of context menus. The app implements [`contextMenuInteraction(_:configurationForMenuAtLocation:)`](uicontextmenuinteractiondelegate/contextmenuinteraction(_:configurationformenuatlocation:).md) to return a `UIContextMenuConfiguration` object. This configuration object consists of an optional `identifier`, a `previewProvider` that returns a [`UIViewController`](uiviewcontroller.md), and an `actionProvider` that returns a [`UIMenu`](uimenu.md) with a set of [`UIAction`](uiaction.md) items.
+Adopt `UIContextMenuInteractionDelegate` to manage the lifecycle of context menus. The app implements [`contextMenuInteraction(_:configurationForMenuAtLocation:)`](./uicontextmenuinteractiondelegate/contextmenuinteraction%28_,configurationformenuatlocation%29.md) to return a `UIContextMenuConfiguration` object. This configuration object consists of an optional `identifier`, a `previewProvider` that returns a [`UIViewController`](./uiviewcontroller.md), and an `actionProvider` that returns a [`UIMenu`](./uimenu.md) with a set of [`UIAction`](./uiaction.md) items.
 
-Context menus with rich content also provide a [`UITargetedPreview`](uitargetedpreview.md), an object that describes the source view when opening and animating the contextual menu. A `UITargetedPreview` specifies the view to use during animated transitions.
+Context menus with rich content also provide a [`UITargetedPreview`](./uitargetedpreview.md), an object that describes the source view when opening and animating the contextual menu. A `UITargetedPreview` specifies the view to use during animated transitions.
 
-##### Add a Context Menu to a View
+##### Add a context menu to a view
 
-This sample adds a context menu to a `UIView` by calling [`addInteraction(_:)`](uiview/addinteraction(_:).md).
+This sample adds a context menu to a `UIView` by calling [`addInteraction(_:)`](./uiview/addinteraction%28_%29.md).
 
 ```swift
 let interaction = UIContextMenuInteraction(delegate: self)
@@ -67,9 +69,9 @@ func contextMenuInteraction(_ interaction: UIContextMenuInteraction,
 }
 ```
 
-##### Add a Context Menu to a Table View
+##### Add a context menu to a table view
 
-This sample adds a context menu to a [`UITableView`](uitableview.md) when the user touches and holds a [`UITableViewCell`](uitableviewcell.md). `UITableView` asks its delegate to provide the context menu by calling [`tableView(_:contextMenuConfigurationForRowAt:point:)`](uitableviewdelegate/tableview(_:contextmenuconfigurationforrowat:point:).md).
+This sample adds a context menu to a [`UITableView`](./uitableview.md) when the user touches and holds a [`UITableViewCell`](./uitableviewcell.md). `UITableView` asks its delegate to provide the context menu by calling [`tableView(_:contextMenuConfigurationForRowAt:point:)`](./uitableviewdelegate/tableview%28_,contextmenuconfigurationforrowat,point%29.md).
 
 ```swift
 override func tableView(_ tableView: UITableView,
@@ -100,9 +102,9 @@ override func tableView(_ tableView: UITableView,
 }
 ```
 
-##### Add a Context Menu to a Collection View
+##### Add a context menu to a collection view
 
-This sample adds a context menu to a [`UICollectionView`](uicollectionview.md) when the user touches and holds a [`UICollectionViewCell`](uicollectionviewcell.md). `UICollectionView` asks its delegate to provide the context menu by calling [`collectionView(_:contextMenuConfigurationForItemAt:point:)`](uicollectionviewdelegate/collectionview(_:contextmenuconfigurationforitemat:point:).md).
+This sample adds a context menu to a [`UICollectionView`](./uicollectionview.md) when the user touches and holds a [`UICollectionViewCell`](./uicollectionviewcell.md). `UICollectionView` asks its delegate to provide the context menu by calling [`collectionView(_:contextMenuConfigurationForItemAt:point:)`](./uicollectionviewdelegate/collectionview%28_,contextmenuconfigurationforitemat,point%29.md).
 
 ```swift
 override func collectionView(_ collectionView: UICollectionView,
@@ -117,9 +119,9 @@ override func collectionView(_ collectionView: UICollectionView,
 }
 ```
 
-##### Add a Context Menu to a Control
+##### Add a context menu to a control
 
-This sample adds a context menu to a [`UIControl`](uicontrol.md). UIKit attaches a context menu to a `UIControl` in two different ways:
+This sample adds a context menu to a [`UIControl`](./uicontrol.md). UIKit attaches a context menu to a `UIControl` in two different ways:
 
 - By setting the `menu` property with a `UIMenu` object
 
@@ -138,7 +140,7 @@ let interaction = UIContextMenuInteraction(delegate: self)
 buttonMenu.addInteraction(interaction)
 ```
 
-When the user touches and holds on that control, the app asks its delegate to provide a context menu by calling [`contextMenuInteraction(_:configurationForMenuAtLocation:)`](uicontextmenuinteractiondelegate/contextmenuinteraction(_:configurationformenuatlocation:).md)
+When the user touches and holds on that control, the app asks its delegate to provide a context menu by calling [`contextMenuInteraction(_:configurationForMenuAtLocation:)`](./uicontextmenuinteractiondelegate/contextmenuinteraction%28_,configurationformenuatlocation%29.md)
 
 ```swift
 func contextMenuInteraction(_ interaction: UIContextMenuInteraction,
@@ -156,13 +158,13 @@ func contextMenuInteraction(_ interaction: UIContextMenuInteraction,
 }
 ```
 
-##### Add a Context Menu to a Web View
+##### Add a context menu to a web view
 
-Select the Basic test case from the sample’s Web Views outline item. When the user touches and holds on the link within the [`WKWebView`](https://developer.apple.com/documentation/webkit/wkwebview), the app presents a [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) to show that link content with a set of default `UIAction` items. When the user touches the view controller, the user moves out of the app and into Safari.
+Select the Basic test case from the sample’s Web Views outline item. When the user touches and holds on the link within the [`WKWebView`](../WebKit/wkwebview.md), the app presents a [`SFSafariViewController`](../SafariServices/sfsafariviewcontroller.md) to show that link content with a set of default `UIAction` items. When the user touches the view controller, the user moves out of the app and into Safari.
 
 Select the Preview Provider test case from the sample’s Web Views outline item. When the user touches and holds on the link within the `WKWebView`, the app presents a custom view controller.
 
-This sample intercepts and adds to that context menu by adopting the [`WKUIDelegate`](https://developer.apple.com/documentation/webkit/wkuidelegate) protocol. `WKWebView` asks its delegate to provide the context menu by calling [`webView(_:contextMenuConfigurationForElement:completionHandler:)`](https://developer.apple.com/documentation/webkit/wkuidelegate/webview(_:contextmenuconfigurationforelement:completionhandler:)).
+This sample intercepts and adds to that context menu by adopting the [`WKUIDelegate`](../WebKit/wkuidelegate.md) protocol. `WKWebView` asks its delegate to provide the context menu by calling [`webView(_:contextMenuConfigurationForElement:completionHandler:)`](../WebKit/wkuidelegate/webview%28_,contextmenuconfigurationforelement,completionhandler%29.md).
 
 ```swift
 func webView(_ webView: WKWebView,
@@ -190,9 +192,10 @@ func webView(_ webView: WKWebView,
 
 ## See Also
 
-- [init(delegate: any UIContextMenuInteractionDelegate)](uicontextmenuinteraction/init(delegate:).md)
+### Creating a context menu interaction object
+- [init(delegate: any UIContextMenuInteractionDelegate)](./uicontextmenuinteraction/init%28delegate%29.md)
   Creates a context menu interaction object with the specified delegate object.
-- [Adding menus and shortcuts to the menu bar and user interface](adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md)
+- [Adding menus and shortcuts to the menu bar and user interface](./adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md)
   Provide quick access to useful actions by adding menus and keyboard shortcuts to your Mac app built with Mac Catalyst.
 
 

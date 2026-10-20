@@ -1,14 +1,15 @@
 # ip6m_addr
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 struct sockaddr_in6 ip6m_addr;
 ```
 

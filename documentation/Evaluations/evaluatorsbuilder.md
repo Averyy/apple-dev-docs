@@ -1,7 +1,8 @@
 # EvaluatorsBuilder
 
 **Framework**: Evaluations  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A result builder that enables declarative evaluator lists.
 
@@ -37,24 +38,25 @@ func buildEvaluators() -> [any EvaluatorProtocol<ModelSample<String>, ModelSubje
 ## Topics
 
 ### Type Methods
-- [static func buildExpression(any EvaluatorProtocol<Sample, Subject>) -> any EvaluatorProtocol<Sample, Subject>](evaluatorsbuilder/buildexpression(_:).md)
+- [static func buildExpression(any EvaluatorProtocol<Sample, Subject>) -> any EvaluatorProtocol<Sample, Subject>](./evaluatorsbuilder/buildexpression%28_%29.md)
   Wraps a single evaluator expression into the builder pipeline.
-- [static func buildOptional([any EvaluatorProtocol<Sample, Subject>]?) -> [any EvaluatorProtocol<Sample, Subject>]](evaluatorsbuilder/buildoptional(_:).md)
+- [static func buildOptional([any EvaluatorProtocol<Sample, Subject>]?) -> [any EvaluatorProtocol<Sample, Subject>]](./evaluatorsbuilder/buildoptional%28_%29.md)
   Provides an empty array when an optional evaluator block is absent.
-- [static func buildPartialBlock(accumulated: [any EvaluatorProtocol<Sample, Subject>], next: [any EvaluatorProtocol<Sample, Subject>]) -> [any EvaluatorProtocol<Sample, Subject>]](evaluatorsbuilder/buildpartialblock(accumulated:next:)-7lvjo.md)
-- [static func buildPartialBlock(accumulated: [any EvaluatorProtocol<Sample, Subject>], next: any EvaluatorProtocol<Sample, Subject>) -> [any EvaluatorProtocol<Sample, Subject>]](evaluatorsbuilder/buildpartialblock(accumulated:next:)-88zf9.md)
-- [static func buildPartialBlock(first: [any EvaluatorProtocol<Sample, Subject>]) -> [any EvaluatorProtocol<Sample, Subject>]](evaluatorsbuilder/buildpartialblock(first:)-3o70b.md)
-- [static func buildPartialBlock(first: any EvaluatorProtocol<Sample, Subject>) -> [any EvaluatorProtocol<Sample, Subject>]](evaluatorsbuilder/buildpartialblock(first:)-875f9.md)
+- [static func buildPartialBlock(accumulated: [any EvaluatorProtocol<Sample, Subject>], next: [any EvaluatorProtocol<Sample, Subject>]) -> [any EvaluatorProtocol<Sample, Subject>]](./evaluatorsbuilder/buildpartialblock%28accumulated,next%29-7lvjo.md)
+- [static func buildPartialBlock(accumulated: [any EvaluatorProtocol<Sample, Subject>], next: any EvaluatorProtocol<Sample, Subject>) -> [any EvaluatorProtocol<Sample, Subject>]](./evaluatorsbuilder/buildpartialblock%28accumulated,next%29-88zf9.md)
+- [static func buildPartialBlock(first: [any EvaluatorProtocol<Sample, Subject>]) -> [any EvaluatorProtocol<Sample, Subject>]](./evaluatorsbuilder/buildpartialblock%28first%29-3o70b.md)
+- [static func buildPartialBlock(first: any EvaluatorProtocol<Sample, Subject>) -> [any EvaluatorProtocol<Sample, Subject>]](./evaluatorsbuilder/buildpartialblock%28first%29-875f9.md)
 
 ## See Also
 
-- [var evaluators: Self.Evaluators](evaluation/evaluators-swift.property.md)
+### Scoring results
+- [var evaluators: Self.Evaluators](./evaluation/evaluators-swift.property.md)
   The evaluators to apply to each sample and its corresponding subject.
-- [Evaluation.Evaluators](evaluation/evaluators-swift.typealias.md)
+- [Evaluation.Evaluators](./evaluation/evaluators-swift.typealias.md)
   The evaluator array type for this conformance.
-- [protocol EvaluatorProtocol](evaluatorprotocol.md)
+- [protocol EvaluatorProtocol](./evaluatorprotocol.md)
   A type that evaluates subjects and produces metrics.
-- [func aggregateMetrics(using: inout MetricsAggregator)](evaluation/aggregatemetrics(using:).md)
+- [func aggregateMetrics(using: inout MetricsAggregator)](./evaluation/aggregatemetrics%28using%29.md)
   Aggregates the collected metric results.
 
 

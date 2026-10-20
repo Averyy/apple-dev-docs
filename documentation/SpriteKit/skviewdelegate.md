@@ -1,7 +1,8 @@
 # SKViewDelegate
 
 **Framework**: SpriteKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Methods to take custom control over the view’s render rate.
 
@@ -19,15 +20,19 @@ Methods to take custom control over the view’s render rate.
 protocol SKViewDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol SKViewDelegate <NSObject>
+```
+
 ## Mentions
 
-- [Getting Started with Nodes](getting-started-with-nodes.md)
+- [Getting Started with Nodes](./getting-started-with-nodes.md)
 
 #### Overview
 
-By setting a SpriteKit view’s `delegate` with an object that implements [`SKViewDelegate`](skviewdelegate.md), you can precisely control the frame rate of a game or app. You may choose to do this to maintain a consistent frame rate for computationally intensive code or for special effects such as simulating cine film.
+By setting a SpriteKit view’s `delegate` with an object that implements [`SKViewDelegate`](./skviewdelegate.md), you can precisely control the frame rate of a game or app. You may choose to do this to maintain a consistent frame rate for computationally intensive code or for special effects such as simulating cine film.
 
-The following Swift code shows an example of a class that implements the SpriteKit view delegate protocol to reduce the frame rate to a specified value. With each call of [`view(_:shouldRenderAtTime:)`](skviewdelegate/view(_:shouldrenderattime:).md), it checks the time since the last render and if that value exceeds the required frame duration (`1 / fps`), the method returns [`true`](https://developer.apple.com/documentation/swift/true) and the frame is rendered.
+The following Swift code shows an example of a class that implements the SpriteKit view delegate protocol to reduce the frame rate to a specified value. With each call of [`view(_:shouldRenderAtTime:)`](./skviewdelegate/view%28_,shouldrenderattime%29.md), it checks the time since the last render and if that value exceeds the required frame duration (`1 / fps`), the method returns [`true`](../Swift/true.md) and the frame is rendered.
 
 ```swift
 class ViewDelegate: NSObject, SKViewDelegate {
@@ -49,30 +54,31 @@ class ViewDelegate: NSObject, SKViewDelegate {
 }
 ```
 
-The return value of [`view(_:shouldRenderAtTime:)`](skviewdelegate/view(_:shouldrenderattime:).md) doesn’t change the speed of physics simulations and actions in a SpriteKit scene. However, if you return [`false`](https://developer.apple.com/documentation/swift/false), SpriteKit will skip updates and [`SKSceneDelegate`](skscenedelegate.md) methods are not called.
+The return value of [`view(_:shouldRenderAtTime:)`](./skviewdelegate/view%28_,shouldrenderattime%29.md) doesn’t change the speed of physics simulations and actions in a SpriteKit scene. However, if you return [`false`](../Swift/false.md), SpriteKit will skip updates and [`SKSceneDelegate`](./skscenedelegate.md) methods are not called.
 
 ## Topics
 
 ### Instance Methods
-- [func view(SKView, shouldRenderAtTime: TimeInterval) -> Bool](skviewdelegate/view(_:shouldrenderattime:).md)
+- [func view(SKView, shouldRenderAtTime: TimeInterval) -> Bool](./skviewdelegate/view%28_,shouldrenderattime%29.md)
   Specifies whether the view should render at the given time.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var isPaused: Bool](skview/ispaused.md)
+### Controlling the Timing of a Scene’s Rendering
+- [var isPaused: Bool](./skview/ispaused.md)
   A Boolean value that indicates whether the view’s scene animations are paused.
-- [var preferredFramesPerSecond: Int](skview/preferredframespersecond.md)
+- [var preferredFramesPerSecond: Int](./skview/preferredframespersecond.md)
   The animation frame rate that the view uses to render its scene.
-- [var delegate: (any SKViewDelegate)?](skview/delegate.md)
+- [var delegate: (any SKViewDelegate)?](./skview/delegate.md)
   A delegate that allows dynamic control of the view’s render rate.
-- [var frameInterval: Int](skview/frameinterval.md)
+- [var frameInterval: Int](./skview/frameinterval.md)
   The number of frames that must pass before the scene is called to update its contents.
-- [var preferredFrameRate: Float](skview/preferredframerate.md)
+- [var preferredFrameRate: Float](./skview/preferredframerate.md)
 
 
 ---

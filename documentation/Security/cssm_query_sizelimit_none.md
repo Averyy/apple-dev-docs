@@ -1,7 +1,8 @@
 # CSSM_QUERY_SIZELIMIT_NONE
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_QUERY_SIZELIMIT_NONE: Int { get }
+```
+
+```c
+CSSM_QUERY_SIZELIMIT_NONE
 ```
 
 

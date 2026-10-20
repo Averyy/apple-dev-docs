@@ -1,14 +1,15 @@
 # appendByte
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool appendByte(unsigned char byte, unsigned int numBytes);
 ```
 

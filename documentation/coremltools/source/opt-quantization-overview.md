@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/opt-quantization-ove
 
 # Quantization Overview
 
-**
-
-- [.md](../_sources/source/opt-quantization-overview.md)
-- **
-
-.pdf
-
-**
-
-# Quantization Overview
-
- Table of contents 
-
-## Contents
-
-# Quantization Overview
-
 Quantization refers to the process of reducing the number of bits that represent a number. This process casts values from `float` type to an `integer` type that uses fewer bits.
 
 ## How Quantization Works
@@ -41,6 +24,8 @@ w_quantized = clip(round(w_unquantized/scale) + zero_point)
 
 In the above equations, `w_unquantized` and `scale` are of type float, and `w_quantized` and `zero_point` (also called quantization bias, or offset) are of the quantized data type.
 
+![Uniform lowering of precision](https://apple.github.io/coremltools/docs-guides/_images/quantization-technique.png)
+
 Process of quantizing to int8.
 
 ### Quantization precision
@@ -52,6 +37,8 @@ For quantizating weights, 8-bit as well as 4-bit precision is supported. For act
 When quantization is performed, constraining the `zero_point` to be zero is referred to as *symmetric* quantization. In this case, the quantization and dequantization operations are further simplified. This is the default mode used by Core ML Tools.
 
 ### Quantization Granularity
+
+![Different granularities for quantization](https://apple.github.io/coremltools/docs-guides/_images/quantization-granularities.png)
 
 Different granularities supported for quantization.
 
@@ -66,5 +53,3 @@ of the network can also be quantized with their own scale factors.
 Activations are quantized using `per-tensor` mode. During the process of training or passing calibration data through the model, the values of intermediate activations are observed, and their max and min values are used to compute the quantization scales, which are stored during inference. Quantizing the intermediate tensors may help in inference of networks that are bottlenecked by memory bandwidth due to large activations.
 
 On newer hardware with A17 Pro or M4 chips, such as the iPhone 15 Pro, quantizing both activations and weight to `int8` can leverage optimized compute on the Neural Engine. This can help improve runtime latency in compute-bound models.
-
-** Contents

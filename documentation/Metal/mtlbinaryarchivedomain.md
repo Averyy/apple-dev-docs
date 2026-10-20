@@ -1,7 +1,8 @@
 # MTLBinaryArchiveDomain
 
 **Framework**: Metal  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for Metal binary archive errors.
 
@@ -19,9 +20,14 @@ The domain for Metal binary archive errors.
 let MTLBinaryArchiveDomain: String
 ```
 
+```c
+extern NSErrorDomain const MTLBinaryArchiveDomain;
+```
+
 ## See Also
 
-- [static var errorDomain: String](mtlbinaryarchiveerror-swift.struct/errordomain.md)
+### Error domain
+- [static var errorDomain: String](./mtlbinaryarchiveerror-swift.struct/errordomain.md)
   The current binary archive error domain.
 
 

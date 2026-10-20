@@ -1,7 +1,8 @@
 # MTRAccessControlClusterAccessControlEntryStruct
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.4+
@@ -18,29 +19,33 @@
 class MTRAccessControlClusterAccessControlEntryStruct
 ```
 
+```objc
+@interface MTRAccessControlClusterAccessControlEntryStruct : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var authMode: NSNumber](mtraccesscontrolclusteraccesscontrolentrystruct/authmode.md)
-- [var fabricIndex: NSNumber](mtraccesscontrolclusteraccesscontrolentrystruct/fabricindex.md)
-- [var privilege: NSNumber](mtraccesscontrolclusteraccesscontrolentrystruct/privilege.md)
-- [var subjects: [Any]?](mtraccesscontrolclusteraccesscontrolentrystruct/subjects.md)
-- [var targets: [Any]?](mtraccesscontrolclusteraccesscontrolentrystruct/targets.md)
+- [var authMode: NSNumber](./mtraccesscontrolclusteraccesscontrolentrystruct/authmode.md)
+- [var fabricIndex: NSNumber](./mtraccesscontrolclusteraccesscontrolentrystruct/fabricindex.md)
+- [var privilege: NSNumber](./mtraccesscontrolclusteraccesscontrolentrystruct/privilege.md)
+- [var subjects: [Any]?](./mtraccesscontrolclusteraccesscontrolentrystruct/subjects.md)
+- [var targets: [Any]?](./mtraccesscontrolclusteraccesscontrolentrystruct/targets.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MTRAccessControlClusterAccessControlEntry](mtraccesscontrolclusteraccesscontrolentry.md)
+- [MTRAccessControlClusterAccessControlEntry](./mtraccesscontrolclusteraccesscontrolentry.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

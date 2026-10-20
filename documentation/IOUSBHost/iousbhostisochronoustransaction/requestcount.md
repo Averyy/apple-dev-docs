@@ -1,7 +1,8 @@
 # requestCount
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,13 +14,18 @@
 var requestCount: UInt32
 ```
 
+```c
+uint32_t requestCount;
+```
+
 ## See Also
 
-- [var completeCount: UInt32](iousbhostisochronoustransaction/completecount.md)
-- [var offset: UInt32](iousbhostisochronoustransaction/offset.md)
-- [var options: IOUSBHostIsochronousTransactionOptions](iousbhostisochronoustransaction/options.md)
-- [var status: IOReturn](iousbhostisochronoustransaction/status.md)
-- [var timeStamp: IOUSBHostTime](iousbhostisochronoustransaction/timestamp.md)
+### Instance Properties
+- [var completeCount: UInt32](./completecount.md)
+- [var offset: UInt32](./offset.md)
+- [var options: IOUSBHostIsochronousTransactionOptions](./options.md)
+- [var status: IOReturn](./status.md)
+- [var timeStamp: IOUSBHostTime](./timestamp.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # makeBlockBuffer(copying:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a block buffer by copying the given audio buffer list.
 

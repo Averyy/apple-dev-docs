@@ -1,7 +1,8 @@
 # String.StringInterpolation
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type each segment of a string literal containing interpolations should be appended to.
 

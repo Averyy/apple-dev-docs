@@ -1,7 +1,8 @@
 # MEMessageAction.Flag
 
 **Framework**: MailKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 12.0+
@@ -12,38 +13,43 @@
 enum Flag
 ```
 
+```c
+enum MEMessageActionFlag : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MEMessageAction.Flag.blue](memessageaction/flag/blue.md)
-- [MEMessageAction.Flag.defaultColor](memessageaction/flag/defaultcolor.md)
-- [MEMessageAction.Flag.gray](memessageaction/flag/gray.md)
-- [MEMessageAction.Flag.green](memessageaction/flag/green.md)
-- [MEMessageAction.Flag.none](memessageaction/flag/none.md)
-- [MEMessageAction.Flag.orange](memessageaction/flag/orange.md)
-- [MEMessageAction.Flag.purple](memessageaction/flag/purple.md)
-- [MEMessageAction.Flag.red](memessageaction/flag/red.md)
-- [MEMessageAction.Flag.yellow](memessageaction/flag/yellow.md)
+- [MEMessageAction.Flag.blue](./flag/blue.md)
+- [MEMessageAction.Flag.defaultColor](./flag/defaultcolor.md)
+- [MEMessageAction.Flag.gray](./flag/gray.md)
+- [MEMessageAction.Flag.green](./flag/green.md)
+- [MEMessageAction.Flag.none](./flag/none.md)
+- [MEMessageAction.Flag.orange](./flag/orange.md)
+- [MEMessageAction.Flag.purple](./flag/purple.md)
+- [MEMessageAction.Flag.red](./flag/red.md)
+- [MEMessageAction.Flag.yellow](./flag/yellow.md)
 ### Initializers
-- [init?(rawValue: Int)](memessageaction/flag/init(rawvalue:).md)
+- [init?(rawValue: Int)](./flag/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MEComposeSessionError.Code](mecomposesessionerror/code.md)
+### Enumerations
+- [MEComposeSessionError.Code](../mecomposesessionerror/code.md)
   Errors that indicate invalid compose session states.
-- [enum MEComposeUserAction](mecomposeuseraction.md)
-- [enum MEMessageEncryptionState](memessageencryptionstate.md)
-- [MEMessageSecurityError.Code](memessagesecurityerror/code.md)
+- [enum MEComposeUserAction](../mecomposeuseraction.md)
+- [enum MEMessageEncryptionState](../memessageencryptionstate.md)
+- [MEMessageSecurityError.Code](../memessagesecurityerror/code.md)
 
 
 ---

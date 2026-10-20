@@ -1,10 +1,11 @@
 # AudioHardwareDirection.output
 
 **Framework**: Core Audio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

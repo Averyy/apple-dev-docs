@@ -1,7 +1,8 @@
 # forceKill
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Always set the termination status flag on launch.
 
@@ -13,6 +14,10 @@ Always set the termination status flag on launch.
 
 ```swift
 static var forceKill: SecCodeSignatureFlags { get }
+```
+
+```c
+kSecCodeSignatureForceKill
 ```
 
 #### Discussion

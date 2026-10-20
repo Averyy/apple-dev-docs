@@ -1,7 +1,8 @@
 # base
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The base estimator.
 
@@ -22,13 +23,14 @@ var base: Base
 
 ## See Also
 
-- [var annotationColumnID: ColumnID<AnnotatedFeatureProvider<Base, UnwrappedInput>.Annotation>](annotatedfeatureprovider/annotationcolumnid.md)
+### Getting the properties
+- [var annotationColumnID: ColumnID<AnnotatedFeatureProvider<Base, UnwrappedInput>.Annotation>](./annotationcolumnid.md)
   The annotation column identifier.
-- [AnnotatedFeatureProvider.Annotation](annotatedfeatureprovider/annotation.md)
+- [AnnotatedFeatureProvider.Annotation](./annotation.md)
   The annotation type.
-- [var featuresColumnName: String](annotatedfeatureprovider/featurescolumnname.md)
+- [var featuresColumnName: String](./featurescolumnname.md)
   The features column name.
-- [var resultsColumnName: String](annotatedfeatureprovider/resultscolumnname.md)
+- [var resultsColumnName: String](./resultscolumnname.md)
   The results column name.
 
 

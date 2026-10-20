@@ -1,7 +1,8 @@
 # previousKey
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The record key for fetching the previous page of results.
 
@@ -10,7 +11,7 @@ The record key for fetching the previous page of results.
 
 ## Declaration
 
-```swift
+```
 attribute string? previousKey;
 ```
 

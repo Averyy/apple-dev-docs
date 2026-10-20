@@ -1,7 +1,8 @@
 # NSPersistentStoreCoordinator.StoresDidChangeMessage
 
 **Framework**: Core Data  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Posted when stores are added to or removed from the persistent store coordinator on the main queue.
 
@@ -23,18 +24,18 @@ struct StoresDidChangeMessage
 ## Topics
 
 ### Instance Properties
-- [var addedStores: [NSPersistentStore]](nspersistentstorecoordinator/storesdidchangemessage/addedstores.md)
+- [var addedStores: [NSPersistentStore]](./storesdidchangemessage/addedstores.md)
   Stores that were added during this change.
-- [let persistentStoreCoordinator: NSPersistentStoreCoordinator](nspersistentstorecoordinator/storesdidchangemessage/persistentstorecoordinator.md)
-- [var removedStores: [NSPersistentStore]](nspersistentstorecoordinator/storesdidchangemessage/removedstores.md)
+- [let persistentStoreCoordinator: NSPersistentStoreCoordinator](./storesdidchangemessage/persistentstorecoordinator.md)
+- [var removedStores: [NSPersistentStore]](./storesdidchangemessage/removedstores.md)
   Stores that were removed during this change.
-- [var uuidChangedStores: (oldValue: NSPersistentStore, newValue: NSPersistentStore)?](nspersistentstorecoordinator/storesdidchangemessage/uuidchangedstores.md)
+- [var uuidChangedStores: (oldValue: NSPersistentStore, newValue: NSPersistentStore)?](./storesdidchangemessage/uuidchangedstores.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

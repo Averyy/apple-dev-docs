@@ -1,7 +1,8 @@
 # UIImage.SymbolVariableValueMode.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Automatically selects an appropriate variable value mode for the symbol.
 
@@ -17,6 +18,10 @@ Automatically selects an appropriate variable value mode for the symbol.
 
 ```swift
 case automatic
+```
+
+```c
+UIImageSymbolVariableValueModeAutomatic
 ```
 
 

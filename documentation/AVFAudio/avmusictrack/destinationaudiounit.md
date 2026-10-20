@@ -1,7 +1,8 @@
 # destinationAudioUnit
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio unit that receives the track’s events.
 
@@ -19,13 +20,18 @@ The audio unit that receives the track’s events.
 var destinationAudioUnit: AVAudioUnit? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) AVAudioUnit * destinationAudioUnit;
+```
+
 #### Discussion
 
-This property and a [`destinationMIDIEndpoint`](avmusictrack/destinationmidiendpoint.md) are mutually exclusive. You must attach the audio to an audio engine to receive events. The track must be part of the [`AVAudioSequencer`](avaudiosequencer.md) you associate with the same engine. When playing, the track sends it’s events to that [`AVAudioUnit`](avaudiounit.md). You can’t change the destination audio unit while the track’s sequence is in a playing state.
+This property and a [`destinationMIDIEndpoint`](./destinationmidiendpoint.md) are mutually exclusive. You must attach the audio to an audio engine to receive events. The track must be part of the [`AVAudioSequencer`](../avaudiosequencer.md) you associate with the same engine. When playing, the track sends it’s events to that [`AVAudioUnit`](../avaudiounit.md). You can’t change the destination audio unit while the track’s sequence is in a playing state.
 
 ## See Also
 
-- [var destinationMIDIEndpoint: MIDIEndpointRef](avmusictrack/destinationmidiendpoint.md)
+### Configuring the track destinations
+- [var destinationMIDIEndpoint: MIDIEndpointRef](./destinationmidiendpoint.md)
   The MIDI endpoint you specify as the track’s target.
 
 

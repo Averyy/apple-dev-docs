@@ -1,7 +1,8 @@
 # MKError
 
 **Framework**: MapKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Error constants for the MapKit framework.
 
@@ -23,41 +24,42 @@ struct MKError
 ## Topics
 
 ### Error codes
-- [static var decodingFailed: MKError.Code](mkerror/decodingfailed.md)
+- [static var decodingFailed: MKError.Code](./mkerror/decodingfailed.md)
   GeoJSON decoding failed.
-- [static var directionsNotFound: MKError.Code](mkerror/directionsnotfound.md)
+- [static var directionsNotFound: MKError.Code](./mkerror/directionsnotfound.md)
   Directions to the specified location aren’t available.
-- [static var loadingThrottled: MKError.Code](mkerror/loadingthrottled.md)
+- [static var loadingThrottled: MKError.Code](./mkerror/loadingthrottled.md)
   The data didn’t load because data throttling is in effect.
-- [static var placemarkNotFound: MKError.Code](mkerror/placemarknotfound.md)
+- [static var placemarkNotFound: MKError.Code](./mkerror/placemarknotfound.md)
   The framework couldn’t find the specified placemark.
-- [static var serverFailure: MKError.Code](mkerror/serverfailure.md)
+- [static var serverFailure: MKError.Code](./mkerror/serverfailure.md)
   The map server was unable to return the desired information.
-- [static var unknown: MKError.Code](mkerror/unknown.md)
+- [static var unknown: MKError.Code](./mkerror/unknown.md)
   An unknown error occurred.
-- [MKError.Code](mkerror/code.md)
+- [MKError.Code](./mkerror/code.md)
   Error constants for the MapKit framework.
 ### Accessing error properties
-- [var localizedDescription: String](../swift/error/localizeddescription.md)
+- [var localizedDescription: String](../Swift/error/localizeddescription.md)
   Retrieve the localized description for this error.
-- [static var errorDomain: String](mkerror/errordomain.md)
+- [static var errorDomain: String](./mkerror/errordomain.md)
   The error domain.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let MKErrorDomain: String](mkerrordomain.md)
+### Errors
+- [let MKErrorDomain: String](./mkerrordomain.md)
   The error domain for MapKit.
-- [MKError.Code](mkerror/code.md)
+- [MKError.Code](./mkerror/code.md)
   Error constants for the MapKit framework.
 
 

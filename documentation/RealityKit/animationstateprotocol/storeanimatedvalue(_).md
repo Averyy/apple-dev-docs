@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Stores the action’s animated value, which the animation manager uses to produce a final animated result. Returns true on success, otherwise false.

@@ -1,7 +1,8 @@
 # isApplicationAccessibilityEnabled
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns whether application accessibility is currently enabled for this process.
 
@@ -18,6 +19,10 @@ Returns whether application accessibility is currently enabled for this process.
 
 ```swift
 static var isApplicationAccessibilityEnabled: Bool { get }
+```
+
+```c
+extern BOOL AXApplicationAccessibilityEnabled();
 ```
 
 #### Discussion

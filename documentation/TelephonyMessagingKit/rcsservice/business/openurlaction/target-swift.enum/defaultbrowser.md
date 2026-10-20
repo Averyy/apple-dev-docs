@@ -1,7 +1,8 @@
 # RCSService.Business.OpenURLAction.Target.defaultBrowser
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Open using default browser.
 
@@ -16,9 +17,10 @@ case defaultBrowser
 
 ## See Also
 
-- [case inApp(detent: RCSService.Business.OpenURLAction.Detent)](rcsservice/business/openurlaction/target-swift.enum/inapp(detent:).md)
+### Accessing targets
+- [case inApp(detent: RCSService.Business.OpenURLAction.Detent)](./inapp%28detent%29.md)
   Open in-app.
-- [RCSService.Business.OpenURLAction.Detent](rcsservice/business/openurlaction/detent.md)
+- [RCSService.Business.OpenURLAction.Detent](../detent.md)
   Enumeration that represents a height to apply when opening a URL.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 A localized string that describes what the app intent does.
@@ -12,7 +13,7 @@ A localized string that describes what the app intent does.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,17 +24,24 @@ static var description: IntentDescription? { get }
 
 ## Mentions
 
-- [Creating your first app intent](creating-your-first-app-intent.md)
+- [Creating your first app intent](../creating-your-first-app-intent.md)
 
 #### Discussion
 
 If the app intent conforms to a schema, the schema provides a default implementation and value. If you implement this property, the system uses your custom value instead of the default value.
 
+## Default Implementations
+
+### AppIntent Implementations
+- [static var description: IntentDescription?](./description-9po8e.md)
+  A localized string that describes what the app intent does.
+
 ## See Also
 
-- [static var title: LocalizedStringResource](appintent/title.md)
+### Configuring the metadata
+- [static var title: LocalizedStringResource](./title.md)
   A short, localized, human-readable string that conveys the app intent’s action.
-- [static var isDiscoverable: Bool](appintent/isdiscoverable.md)
+- [static var isDiscoverable: Bool](./isdiscoverable.md)
   A Boolean value that indicates whether system features can discover this app intent.
 
 

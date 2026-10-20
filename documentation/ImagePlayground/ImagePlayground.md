@@ -1,7 +1,8 @@
 # Image Playground
 
 **Framework**: Image Playground  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Present a system interface to generate images based on descriptive information.
 
@@ -20,27 +21,27 @@ Use the `ImagePlayground` framework to generate custom images using system-suppo
 
 ### SwiftUI presentation
 - [func imagePlaygroundSheet(isPresented: Binding<Bool>, concept: String, sourceImage: Image?, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View
-](../swiftui/view/imageplaygroundsheet(ispresented:concept:sourceimage:oncompletion:oncancellation:).md)
+](../SwiftUI/view/imageplaygroundsheet%28ispresented,concept,sourceimage,oncompletion,oncancellation%29.md)
   Presents the system sheet to create an image using the specified string and optional starting image.
 - [func imagePlaygroundSheet(isPresented: Binding<Bool>, concepts: [ImagePlaygroundConcept], sourceImage: Image?, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View
-](../swiftui/view/imageplaygroundsheet(ispresented:concepts:sourceimage:oncompletion:oncancellation:).md)
+](../SwiftUI/view/imageplaygroundsheet%28ispresented,concepts,sourceimage,oncompletion,oncancellation%29.md)
   Presents the system sheet to create an image using one or more concepts and an optional starting image.
 - [func imagePlaygroundSheet(isPresented: Binding<Bool>, concepts: [ImagePlaygroundConcept], sourceImageURL: URL, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View
-](../swiftui/view/imageplaygroundsheet(ispresented:concepts:sourceimageurl:oncompletion:oncancellation:).md)
+](../SwiftUI/view/imageplaygroundsheet%28ispresented,concepts,sourceimageurl,oncompletion,oncancellation%29.md)
   Presents the system sheet to create an image using one or more concepts and an image URL.
 ### UIKit and AppKit presentation
-- [class ImagePlaygroundViewController](imageplaygroundviewcontroller.md)
+- [class ImagePlaygroundViewController](./imageplaygroundviewcontroller.md)
   Displays a standard system interface to generate images from the provided input.
 ### Programmatic creation
-- [class ImageCreator](imagecreator.md)
+- [class ImageCreator](./imagecreator.md)
   Generates images programmatically from the description and style information you specify.
 ### Platform support
-- [struct ImagePlaygroundConcept](imageplaygroundconcept.md)
+- [struct ImagePlaygroundConcept](./imageplaygroundconcept.md)
   Text elements that specify the content to include in the image.
-- [struct ImagePlaygroundStyle](imageplaygroundstyle.md)
+- [struct ImagePlaygroundStyle](./imageplaygroundstyle.md)
   Style options that determine the appearance of generated images.
 ### Structures
-- [struct ImagePlaygroundOptions](imageplaygroundoptions.md)
+- [struct ImagePlaygroundOptions](./imageplaygroundoptions.md)
   A type that stores the options that affect the image-generation process.
 
 

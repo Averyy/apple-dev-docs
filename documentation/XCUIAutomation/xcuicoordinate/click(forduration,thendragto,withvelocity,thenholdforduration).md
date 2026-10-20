@@ -1,7 +1,8 @@
 # click(forDuration:thenDragTo:withVelocity:thenHoldForDuration:)
 
 **Framework**: XCUIAutomation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clicks and holds for a duration, drags at a velocity, and holds over the other coordinate for a duration, all of which you specify.
 
@@ -9,13 +10,17 @@ Clicks and holds for a duration, drags at a velocity, and holds over the other c
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
-- macOS ?+
+- macOS
 - Xcode 16.3+
 
 ## Declaration
 
 ```swift
 func click(forDuration duration: TimeInterval, thenDragTo otherCoordinate: XCUICoordinate, withVelocity velocity: XCUIGestureVelocity, thenHoldForDuration holdDuration: TimeInterval)
+```
+
+```objc
+- (void) clickForDuration:(NSTimeInterval) duration thenDragToCoordinate:(XCUICoordinate *) otherCoordinate withVelocity:(XCUIGestureVelocity) velocity thenHoldForDuration:(NSTimeInterval) holdDuration;
 ```
 
 ## Parameters
@@ -27,13 +32,14 @@ func click(forDuration duration: TimeInterval, thenDragTo otherCoordinate: XCUIC
 
 ## See Also
 
-- [func click()](xcuicoordinate/click.md)
+### Clicking
+- [func click()](./click%28%29.md)
   Sends a click event at the coordinate.
-- [func click(forDuration: TimeInterval, thenDragTo: XCUICoordinate)](xcuicoordinate/click(forduration:thendragto:).md)
+- [func click(forDuration: TimeInterval, thenDragTo: XCUICoordinate)](./click%28forduration,thendragto%29.md)
   Clicks and holds for a duration you specify, then drags to the other coordinate.
-- [func doubleClick()](xcuicoordinate/doubleclick.md)
+- [func doubleClick()](./doubleclick%28%29.md)
   Sends a double-click event at the coordinate.
-- [func rightClick()](xcuicoordinate/rightclick.md)
+- [func rightClick()](./rightclick%28%29.md)
   Sends a Control-click event at the coordinate.
 
 

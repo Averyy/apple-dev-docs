@@ -1,7 +1,8 @@
 # performNotificationDefaultAction()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 12.0+
@@ -16,10 +17,15 @@
 func performNotificationDefaultAction()
 ```
 
+```objc
+- (void) performNotificationDefaultAction;
+```
+
 ## See Also
 
-- [var notificationActions: [UNNotificationAction]](nsextensioncontext/notificationactions.md)
-- [func dismissNotificationContentExtension()](nsextensioncontext/dismissnotificationcontentextension.md)
+### Handling notification actions
+- [var notificationActions: [UNNotificationAction]](./notificationactions.md)
+- [func dismissNotificationContentExtension()](./dismissnotificationcontentextension%28%29.md)
 
 
 ---

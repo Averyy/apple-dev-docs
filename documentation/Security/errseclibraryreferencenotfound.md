@@ -1,7 +1,8 @@
 # errSecLibraryReferenceNotFound
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A library reference was not found.
 
@@ -18,6 +19,10 @@ A library reference was not found.
 
 ```swift
 var errSecLibraryReferenceNotFound: OSStatus { get }
+```
+
+```c
+errSecLibraryReferenceNotFound
 ```
 
 

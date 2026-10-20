@@ -1,7 +1,8 @@
 # LanguageModelCapabilities
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of capabilities that a language model provides.
 
@@ -35,7 +36,7 @@ struct MyLanguageModel: LanguageModel {
 }
 ```
 
-Inspect [`capabilities`](languagemodel/capabilities.md) ahead of time to detect what the model supports before performing the request:
+Inspect [`capabilities`](./languagemodel/capabilities.md) ahead of time to detect what the model supports before performing the request:
 
 ```swift
 // Before prompting the model with a generable type, check whether it
@@ -45,38 +46,39 @@ if selectedModel.capabilities.contains(.guidedGeneration) {
 }
 ```
 
-When a model doesn’t support a capability, the framework can refuse to dispatch incompatible requests to the executor and throw an [`LanguageModelError.unsupportedCapability(_:)`](languagemodelerror/unsupportedcapability(_:).md) error instead.
+When a model doesn’t support a capability, the framework can refuse to dispatch incompatible requests to the executor and throw an [`LanguageModelError.unsupportedCapability(_:)`](./languagemodelerror/unsupportedcapability%28_%29.md) error instead.
 
 ## Topics
 
 ### Creating an instance
-- [init([LanguageModelCapabilities.Capability])](languagemodelcapabilities/init(_:).md)
+- [init([LanguageModelCapabilities.Capability])](./languagemodelcapabilities/init%28_%29.md)
   Creates a capabilities instance from a list of supported capabilities.
-- [LanguageModelCapabilities.Capability](languagemodelcapabilities/capability.md)
+- [LanguageModelCapabilities.Capability](./languagemodelcapabilities/capability.md)
   A capability that a given language model may or may not have.
 ### Inspecting model capabilities
-- [func contains(LanguageModelCapabilities.Capability) -> Bool](languagemodelcapabilities/contains(_:).md)
+- [func contains(LanguageModelCapabilities.Capability) -> Bool](./languagemodelcapabilities/contains%28_%29.md)
   Returns a Boolean value that indicates whether the specified capability is supported.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Running a Core AI model in a Foundation Models session](running-a-core-ai-model-in-a-foundation-models-session.md)
+### Custom language model provider
+- [Running a Core AI model in a Foundation Models session](./running-a-core-ai-model-in-a-foundation-models-session.md)
   Send requests on device to an open source model you export with Core AI to get a consistent API experience.
-- [Optimizing key-value caching in language model sessions](optimizing-key-value-caching-in-language-model-sessions.md)
+- [Optimizing key-value caching in language model sessions](./optimizing-key-value-caching-in-language-model-sessions.md)
   Prevent repeated token processing by preserving the cached state across turns.
-- [protocol LanguageModel](languagemodel.md)
+- [protocol LanguageModel](./languagemodel.md)
   A protocol that you use to interface with a model.
-- [protocol LanguageModelExecutor](languagemodelexecutor.md)
+- [protocol LanguageModelExecutor](./languagemodelexecutor.md)
   A protocol that defines the interface for responding to session requests.
-- [struct LanguageModelExecutorGenerationChannel](languagemodelexecutorgenerationchannel.md)
+- [struct LanguageModelExecutorGenerationChannel](./languagemodelexecutorgenerationchannel.md)
   A type you use to send model output deltas and updates to the framework.
-- [struct LanguageModelExecutorGenerationRequest](languagemodelexecutorgenerationrequest.md)
+- [struct LanguageModelExecutorGenerationRequest](./languagemodelexecutorgenerationrequest.md)
   A type that contains the details for a generation request.
 
 

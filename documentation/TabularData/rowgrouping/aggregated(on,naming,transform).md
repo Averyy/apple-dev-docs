@@ -1,7 +1,8 @@
 # aggregated(on:naming:transform:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a data frame by aggregating each group’s contents for each column you list by name.
 
@@ -35,7 +36,8 @@ The data frame contains two columns that:
 
 ## See Also
 
-- [func counts(order: Order?) -> DataFrame](rowgrouping/counts(order:).md)
+### Aggregating a Row Grouping
+- [func counts(order: Order?) -> DataFrame](./counts%28order%29.md)
   Generates a data frame with two columns, one that has a row for each group key and another for the number of rows in the group.
 
 

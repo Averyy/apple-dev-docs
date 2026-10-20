@@ -1,7 +1,8 @@
 # yz
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The yz-axis, expressed in unit coordinates.
 

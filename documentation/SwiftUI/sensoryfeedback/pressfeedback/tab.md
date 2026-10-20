@@ -1,7 +1,8 @@
 # tab
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that a control to activate a tab has been pressed (touch down).
 

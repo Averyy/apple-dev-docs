@@ -1,7 +1,8 @@
 # formIndex(before:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the given index with its predecessor.
 
@@ -19,6 +20,8 @@ Replaces the given index with its predecessor.
 ```swift
 func formIndex(before i: inout LazyMapSequence<Base, Element>.Index)
 ```
+
+Available when `Base` conforms to `BidirectionalCollection`.
 
 ## Parameters
 

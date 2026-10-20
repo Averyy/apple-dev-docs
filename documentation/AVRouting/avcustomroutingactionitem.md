@@ -1,7 +1,8 @@
 # AVCustomRoutingActionItem
 
 **Framework**: AVRouting  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a custom action item to display in a device route picker.
 
@@ -17,37 +18,42 @@ An object that represents a custom action item to display in a device route pick
 class AVCustomRoutingActionItem
 ```
 
+```objc
+@interface AVCustomRoutingActionItem : NSObject
+```
+
 #### Overview
 
-Use this class to specify supplemental action items to display in the list of discovered routes. Tapping a custom item dismisses the picker and calls the [`customRoutingController(_:didSelect:)`](avcustomroutingcontrollerdelegate/customroutingcontroller(_:didselect:).md) method of [`AVCustomRoutingControllerDelegate`](avcustomroutingcontrollerdelegate.md).
+Use this class to specify supplemental action items to display in the list of discovered routes. Tapping a custom item dismisses the picker and calls the [`customRoutingController(_:didSelect:)`](./avcustomroutingcontrollerdelegate/customroutingcontroller%28_,didselect%29.md) method of [`AVCustomRoutingControllerDelegate`](./avcustomroutingcontrollerdelegate.md).
 
 ## Topics
 
 ### Configuring an item
-- [var type: UTType](avcustomroutingactionitem/type.md)
+- [var type: UTType](./avcustomroutingactionitem/type.md)
   A type with an identifier that matches a value in the app’s configuration.
-- [var overrideTitle: String?](avcustomroutingactionitem/overridetitle.md)
+- [var overrideTitle: String?](./avcustomroutingactionitem/overridetitle.md)
   A string to use to override the title of the item’s type.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVCustomRoutingController](avcustomroutingcontroller.md)
+### Media routing
+- [class AVCustomRoutingController](./avcustomroutingcontroller.md)
   An object that manages the connection from a device to a destination.
-- [protocol AVCustomRoutingControllerDelegate](avcustomroutingcontrollerdelegate.md)
+- [protocol AVCustomRoutingControllerDelegate](./avcustomroutingcontrollerdelegate.md)
   A protocol for delegates of a custom routing controller.
-- [class AVCustomRoutingEvent](avcustomroutingevent.md)
+- [class AVCustomRoutingEvent](./avcustomroutingevent.md)
   An object that represents an event that occurs on a route.
 
 

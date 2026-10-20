@@ -1,7 +1,8 @@
 # subscriptionType
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of subscription. Possible values are: `"zone"`, and `"query”`. This key is required.
 
@@ -10,7 +11,7 @@ The type of subscription. Possible values are: `"zone"`, and `"query”`. This k
 
 ## Declaration
 
-```swift
+```
 attribute String subscriptionType;
 ```
 

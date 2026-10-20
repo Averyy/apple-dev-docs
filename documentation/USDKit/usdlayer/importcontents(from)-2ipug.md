@@ -1,7 +1,8 @@
 # importContents(from:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the layer’s contents with the layer file at the given path.
 
@@ -21,7 +22,7 @@ func importContents(from path: FilePath) throws
 
 #### Discussion
 
-> **Note**: An error if the file cannot be read or parsed.
+> **Throws**: An error if the file cannot be read or parsed.
 
 ## Parameters
 
@@ -29,11 +30,12 @@ func importContents(from path: FilePath) throws
 
 ## See Also
 
-- [func export(to: URL) throws](usdlayer/export(to:)-7vouy.md)
+### Exporting and importing
+- [func export(to: URL) throws](./export%28to%29-7vouy.md)
   Writes the layer’s contents to a file at the given URL.
-- [func export(to: FilePath) throws](usdlayer/export(to:)-5hboj.md)
+- [func export(to: FilePath) throws](./export%28to%29-5hboj.md)
   Writes the layer’s contents to a file at the given path.
-- [func importContents(from: String) throws](usdlayer/importcontents(from:)-99hnf.md)
+- [func importContents(from: String) throws](./importcontents%28from%29-99hnf.md)
   Replaces the layer’s contents with the USDA string.
 
 

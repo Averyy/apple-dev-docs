@@ -1,7 +1,8 @@
 # VirtualEnvironmentProbeComponent.Source.none
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A source without any lighting.
 

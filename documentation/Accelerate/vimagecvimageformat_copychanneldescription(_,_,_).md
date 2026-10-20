@@ -1,7 +1,8 @@
 # vImageCVImageFormat_CopyChannelDescription(_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Copies the channel description for a particular channel type to an image format.
 
@@ -20,27 +21,32 @@ Copies the channel description for a particular channel type to an image format.
 func vImageCVImageFormat_CopyChannelDescription(_ format: vImageCVImageFormat, _ desc: UnsafePointer<vImageChannelDescription>, _ type: vImageBufferTypeCode) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageCVImageFormat_CopyChannelDescription(vImageCVImageFormatRef format, const vImageChannelDescription *desc, vImageBufferTypeCode type);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
 ## Parameters
 
-- `format`: The [`vImageCVImageFormat`](vimagecvimageformat.md) to copy the channel description into.
-- `desc`: A pointer to a new [`vImageChannelDescription`](vimagechanneldescription.md) to use for the channel type.
-- `type`: The type of the channel that you want to set information about, for example, [`kvImageBufferTypeCode_Luminance`](kvimagebuffertypecode_luminance.md).
+- `format`: The [`vImageCVImageFormat`](./vimagecvimageformat.md) to copy the channel description into.
+- `desc`: A pointer to a new [`vImageChannelDescription`](./vimagechanneldescription.md) to use for the channel type.
+- `type`: The type of the channel that you want to set information about, for example, [`kvImageBufferTypeCode_Luminance`](./kvimagebuffertypecode_luminance.md).
 
 ## See Also
 
-- [func vImageCVImageFormat_GetChannelCount(vImageConstCVImageFormat) -> UInt32](vimagecvimageformat_getchannelcount(_:).md)
+### Querying and setting channel information
+- [func vImageCVImageFormat_GetChannelCount(vImageConstCVImageFormat) -> UInt32](./vimagecvimageformat_getchannelcount%28_%29.md)
   Returns the number of channels, including alpha, for the Core Video image format.
-- [func vImageCVImageFormat_GetChannelDescription(vImageConstCVImageFormat, vImageBufferTypeCode) -> UnsafePointer<vImageChannelDescription>!](vimagecvimageformat_getchanneldescription(_:_:).md)
+- [func vImageCVImageFormat_GetChannelDescription(vImageConstCVImageFormat, vImageBufferTypeCode) -> UnsafePointer<vImageChannelDescription>!](./vimagecvimageformat_getchanneldescription%28_,_%29.md)
   Returns the channel description for a particular channel type.
-- [func vImageCVImageFormat_GetChannelNames(vImageConstCVImageFormat) -> UnsafePointer<vImageBufferTypeCode>!](vimagecvimageformat_getchannelnames(_:).md)
+- [func vImageCVImageFormat_GetChannelNames(vImageConstCVImageFormat) -> UnsafePointer<vImageBufferTypeCode>!](./vimagecvimageformat_getchannelnames%28_%29.md)
   Returns the names of the channels of a Core Video image format.
-- [struct vImageChannelDescription](vimagechanneldescription.md)
+- [struct vImageChannelDescription](./vimagechanneldescription.md)
   A description of the range and clamp limits for a pixel format.
 
 

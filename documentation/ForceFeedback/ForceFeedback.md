@@ -1,7 +1,8 @@
 # Force Feedback
 
 **Framework**: Force Feedback  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Control force feedback devices attached to the system. Develop plug-ins that enable communication with force feedback hardware.
 
@@ -16,18 +17,18 @@ The Force Feedback framework contains the public interfaces to the Force Feedbac
 ## Topics
 
 ### Reference
-- [ForceFeedback.h](forcefeedback-h.md)
+- [ForceFeedback.h](./forcefeedback-h.md)
   Public Interfaces to the Force Feedback implementation in macOS.
-- [ForceFeedbackConstants.h](forcefeedbackconstants-h.md)
+- [ForceFeedbackConstants.h](./forcefeedbackconstants-h.md)
   Constants used in the public interfaces to the Force Feedback implementation in macOS.
-- [ForceFeedback Enumerations](forcefeedback-enumerations.md)
-- [ForceFeedback Constants](forcefeedback-constants.md)
-- [ForceFeedback Data Types](forcefeedback-data-types.md)
+- [ForceFeedback Enumerations](./forcefeedback-enumerations.md)
+- [ForceFeedback Constants](./forcefeedback-constants.md)
+- [ForceFeedback Data Types](./forcefeedback-data-types.md)
 ### Variables
-- [var kFFAPIMajorRev: Int](kffapimajorrev.md)
-- [var kFFAPIMinorAndBugRev: Int](kffapiminorandbugrev.md)
-- [var kFFAPINonRelRev: Int](kffapinonrelrev.md)
-- [var kFFAPIStage: Int](kffapistage.md)
+- [var kFFAPIMajorRev: Int](./kffapimajorrev.md)
+- [var kFFAPIMinorAndBugRev: Int](./kffapiminorandbugrev.md)
+- [var kFFAPINonRelRev: Int](./kffapinonrelrev.md)
+- [var kFFAPIStage: Int](./kffapistage.md)
 
 
 ---

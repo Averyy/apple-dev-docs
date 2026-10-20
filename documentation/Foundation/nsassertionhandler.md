@@ -1,7 +1,8 @@
 # NSAssertionHandler
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that logs an assertion to the console.
 
@@ -20,29 +21,33 @@ An object that logs an assertion to the console.
 class NSAssertionHandler
 ```
 
+```objc
+@interface NSAssertionHandler : NSObject
+```
+
 #### Overview
 
 `NSAssertionHandler` objects are automatically created to handle false assertions. Assertion macros, such as `NSAssert` and `NSCAssert`, are used to evaluate a condition, and if the condition evaluates to false, the macros pass a string to an `NSAssertionHandler` object describing the failure. Each thread has its own `NSAssertionHandler` object. When invoked, an assertion handler prints an error message that includes the method and class (or function) containing the assertion and raises an `NSInternalInconsistencyException`.
 
-You create assertions only using the assertion macros—you rarely need to invoke `NSAssertionHandler` methods directly. The macros for use inside methods and functions send [`handleFailureInMethod:object:file:lineNumber:description:`](nsassertionhandler/handlefailureinmethod:object:file:linenumber:description:.md) and [`handleFailureInFunction:file:lineNumber:description:`](nsassertionhandler/handlefailureinfunction:file:linenumber:description:.md) messages respectively to the current assertion handler. The assertion handler for the current thread is obtained using the [`current`](nsassertionhandler/current.md) class method. See doc:nsassertionhandlerkey if you need to customize the behavior of [`NSAssertionHandler`](nsassertionhandler.md).
+You create assertions only using the assertion macros—you rarely need to invoke `NSAssertionHandler` methods directly. The macros for use inside methods and functions send [`handleFailureInMethod:object:file:lineNumber:description:`](./nsassertionhandler/handlefailureinmethod_object_file_linenumber_description_.md) and [`handleFailureInFunction:file:lineNumber:description:`](./nsassertionhandler/handlefailureinfunction_file_linenumber_description_.md) messages respectively to the current assertion handler. The assertion handler for the current thread is obtained using the [`current`](./nsassertionhandler/current.md) class method. See doc:nsassertionhandlerkey if you need to customize the behavior of [`NSAssertionHandler`](./nsassertionhandler.md).
 
 ## Topics
 
 ### Handling Assertion Failures
-- [class var current: NSAssertionHandler](nsassertionhandler/current.md)
+- [class var current: NSAssertionHandler](./nsassertionhandler/current.md)
   Returns the `NSAssertionHandler` object associated with the current thread.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

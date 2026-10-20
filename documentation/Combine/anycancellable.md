@@ -1,7 +1,8 @@
 # AnyCancellable
 
 **Framework**: Combine  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A type-erasing cancellable object that executes a provided closure when canceled.
 
@@ -22,47 +23,48 @@ final class AnyCancellable
 
 ## Mentions
 
-- [Controlling Publishing with Connectable Publishers](controlling-publishing-with-connectable-publishers.md)
+- [Controlling Publishing with Connectable Publishers](./controlling-publishing-with-connectable-publishers.md)
 
 #### Overview
 
-Subscriber implementations can use this type to provide a “cancellation token” that makes it possible for a caller to cancel a publisher, but not to use the [`Subscription`](subscription.md) object to request items.
+Subscriber implementations can use this type to provide a “cancellation token” that makes it possible for a caller to cancel a publisher, but not to use the [`Subscription`](./subscription.md) object to request items.
 
-An [`AnyCancellable`](anycancellable.md) instance automatically calls [`cancel()`](cancellable/cancel().md) when deinitialized.
+An [`AnyCancellable`](./anycancellable.md) instance automatically calls [`cancel()`](./cancellable/cancel%28%29.md) when deinitialized.
 
 ## Topics
 
 ### Creating a type-erased cancellable
-- [init(() -> Void)](anycancellable/init(_:)-3icn3.md)
+- [init(() -> Void)](./anycancellable/init%28_%29-3icn3.md)
   Initializes the cancellable object with the given cancel-time closure.
-- [init<C>(C)](anycancellable/init(_:)-48fh3.md)
+- [init<C>(C)](./anycancellable/init%28_%29-48fh3.md)
 ### Storing instances
-- [func store<C>(in: inout C)](anycancellable/store(in:)-6cr9i.md)
+- [func store<C>(in: inout C)](./anycancellable/store%28in%29-6cr9i.md)
   Stores this type-erasing cancellable instance in the specified collection.
-- [func store(in: inout Set<AnyCancellable>)](anycancellable/store(in:)-3hyxs.md)
+- [func store(in: inout Set<AnyCancellable>)](./anycancellable/store%28in%29-3hyxs.md)
   Stores this type-erasing cancellable instance in the specified set.
 ### Operators
-- [static func == (AnyCancellable, AnyCancellable) -> Bool](anycancellable/==(_:_:).md)
+- [static func == (AnyCancellable, AnyCancellable) -> Bool](./anycancellable/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two instances are equal, as determined by comparing whether their references point to the same instance.
 
 ## Relationships
 
 ### Conforms To
-- [Cancellable](cancellable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Cancellable](./cancellable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [protocol Publisher](publisher.md)
+### Publishers
+- [protocol Publisher](./publisher.md)
   Declares that a type can transmit a sequence of values over time.
-- [enum Publishers](publishers.md)
+- [enum Publishers](./publishers.md)
   A namespace for types that serve as publishers.
-- [struct AnyPublisher](anypublisher.md)
+- [struct AnyPublisher](./anypublisher.md)
   A publisher that performs type erasure by wrapping another publisher.
-- [struct Published](published.md)
+- [struct Published](./published.md)
   A type that publishes a property marked with an attribute.
-- [protocol Cancellable](cancellable.md)
+- [protocol Cancellable](./cancellable.md)
   A protocol indicating that an activity or action supports cancellation.
 
 

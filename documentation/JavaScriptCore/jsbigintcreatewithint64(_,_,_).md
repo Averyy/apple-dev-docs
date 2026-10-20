@@ -1,7 +1,8 @@
 # JSBigIntCreateWithInt64(_:_:_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func JSBigIntCreateWithInt64(_ ctx: JSContextRef, _ integer: Int64, _ exception: UnsafeMutablePointer<JSValueRef?>?) -> JSValueRef
+```
+
+```c
+JSValueRefJSBigIntCreateWithInt64(JSContextRef ctx, int64_t integer, JSValueRef*exception);
 ```
 
 #### Return Value

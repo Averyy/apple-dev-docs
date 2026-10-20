@@ -1,7 +1,8 @@
 # PayWithApplePayButton
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that provides a button to pay with Apple pay.
 
@@ -10,7 +11,7 @@ A type that provides a button to pay with Apple pay.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ A type that provides a button to pay with Apple pay.
 
 #### Overview
 
-Use this structure as the SwiftUI equivalent to [`PKPaymentButton`](pkpaymentbutton.md). For design guidance, see Human Interface Guidelines > Apple Pay > [`Using Apple Pay buttons`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/apple-pay#Using-Apple-Pay-buttons).
+Use this structure as the SwiftUI equivalent to [`PKPaymentButton`](./pkpaymentbutton.md). For design guidance, see Human Interface Guidelines > Apple Pay > [Using Apple Pay buttons](https://developer.apple.com/design/human-interface-guidelines/apple-pay#Using-Apple-Pay-buttons).
 
 This example shows an implementation of the Pay with Apple Pay button.
 
@@ -49,27 +50,28 @@ func paymentAuthorizationDidChange(phase: PayWithApplePayButtonPaymentAuthorizat
 ## Topics
 
 ### Creating the button
-- [init(PayWithApplePayButtonLabel, action: () -> Void)](paywithapplepaybutton/init(_:action:).md)
-- [init(PayWithApplePayButtonLabel, action: () -> Void, fallback: () -> Fallback)](paywithapplepaybutton/init(_:action:fallback:).md)
-- [init(PayWithApplePayButtonLabel, request: PKPaymentRequest, onPaymentAuthorizationChange: (PayWithApplePayButtonPaymentAuthorizationPhase) -> Void)](paywithapplepaybutton/init(_:request:onpaymentauthorizationchange:).md)
-- [init(PayWithApplePayButtonLabel, request: PKPaymentRequest, onPaymentAuthorizationChange: (PayWithApplePayButtonPaymentAuthorizationPhase) -> Void, fallback: () -> Fallback)](paywithapplepaybutton/init(_:request:onpaymentauthorizationchange:fallback:).md)
-- [init(PayWithApplePayButtonLabel, request: PKPaymentRequest, onPaymentAuthorizationChange: (PayWithApplePayButtonPaymentAuthorizationPhase) -> Void, onMerchantSessionRequested: () async -> PKPaymentRequestMerchantSessionUpdate)](paywithapplepaybutton/init(_:request:onpaymentauthorizationchange:onmerchantsessionrequested:).md)
-- [init(PayWithApplePayButtonLabel, request: PKPaymentRequest, onPaymentAuthorizationChange: (PayWithApplePayButtonPaymentAuthorizationPhase) -> Void, onMerchantSessionRequested: () async -> PKPaymentRequestMerchantSessionUpdate, fallback: () -> Fallback)](paywithapplepaybutton/init(_:request:onpaymentauthorizationchange:onmerchantsessionrequested:fallback:).md)
+- [init(PayWithApplePayButtonLabel, action: () -> Void)](./paywithapplepaybutton/init%28_,action%29.md)
+- [init(PayWithApplePayButtonLabel, action: () -> Void, fallback: () -> Fallback)](./paywithapplepaybutton/init%28_,action,fallback%29.md)
+- [init(PayWithApplePayButtonLabel, request: PKPaymentRequest, onPaymentAuthorizationChange: (PayWithApplePayButtonPaymentAuthorizationPhase) -> Void)](./paywithapplepaybutton/init%28_,request,onpaymentauthorizationchange%29.md)
+- [init(PayWithApplePayButtonLabel, request: PKPaymentRequest, onPaymentAuthorizationChange: (PayWithApplePayButtonPaymentAuthorizationPhase) -> Void, fallback: () -> Fallback)](./paywithapplepaybutton/init%28_,request,onpaymentauthorizationchange,fallback%29.md)
+- [init(PayWithApplePayButtonLabel, request: PKPaymentRequest, onPaymentAuthorizationChange: (PayWithApplePayButtonPaymentAuthorizationPhase) -> Void, onMerchantSessionRequested: () async -> PKPaymentRequestMerchantSessionUpdate)](./paywithapplepaybutton/init%28_,request,onpaymentauthorizationchange,onmerchantsessionrequested%29.md)
+- [init(PayWithApplePayButtonLabel, request: PKPaymentRequest, onPaymentAuthorizationChange: (PayWithApplePayButtonPaymentAuthorizationPhase) -> Void, onMerchantSessionRequested: () async -> PKPaymentRequestMerchantSessionUpdate, fallback: () -> Fallback)](./paywithapplepaybutton/init%28_,request,onpaymentauthorizationchange,onmerchantsessionrequested,fallback%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [class PKPaymentButton](pkpaymentbutton.md)
+### Apple Pay buttons
+- [class PKPaymentButton](./pkpaymentbutton.md)
   An object that displays a button either to trigger payments through Apple Pay or to prompt the user to set up a card.
-- [struct PayWithApplePayButtonLabel](paywithapplepaybuttonlabel.md)
-- [struct PayWithApplePayButtonStyle](paywithapplepaybuttonstyle.md)
-- [struct PayWithApplePayButtonLabel](paywithapplepaybuttonlabel.md)
+- [struct PayWithApplePayButtonLabel](./paywithapplepaybuttonlabel.md)
+- [struct PayWithApplePayButtonStyle](./paywithapplepaybuttonstyle.md)
+- [struct PayWithApplePayButtonLabel](./paywithapplepaybuttonlabel.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # ClothBoxShape
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Shape representing a box.
 
@@ -19,32 +20,33 @@ struct ClothBoxShape
 ## Topics
 
 ### Creating a box shape
-- [init(size: SIMD3<Float>)](clothboxshape/init(size:).md)
+- [init(size: SIMD3<Float>)](./clothboxshape/init%28size%29.md)
   Creates a box shape with the given size.
 ### Accessing the dimensions
-- [var size: SIMD3<Float>](clothboxshape/size.md)
+- [var size: SIMD3<Float>](./clothboxshape/size.md)
   The size of the box along each axis.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ClothMeshShape](clothmeshshape.md)
+### Cloth shapes
+- [struct ClothMeshShape](./clothmeshshape.md)
   Shape representing a mesh with a configurable inflation bias.
-- [struct ClothPlaneShape](clothplaneshape.md)
+- [struct ClothPlaneShape](./clothplaneshape.md)
   Shape representing an infinite plane that encloses one half of the world.
-- [struct ClothRoundedBoxShape](clothroundedboxshape.md)
+- [struct ClothRoundedBoxShape](./clothroundedboxshape.md)
   Shape representing a box with rounded edges.
-- [struct ClothSphereShape](clothsphereshape.md)
+- [struct ClothSphereShape](./clothsphereshape.md)
   Shape representing a sphere.
-- [struct ClothCapsuleShape](clothcapsuleshape.md)
+- [struct ClothCapsuleShape](./clothcapsuleshape.md)
   Shape representing a capsule (full height is `height + 2 * radius`).
-- [enum ClothVolumeShape](clothvolumeshape.md)
+- [enum ClothVolumeShape](./clothvolumeshape.md)
   Shape suitable for use as a volume.
 
 

@@ -1,7 +1,8 @@
 # device
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The GPU device that the layer renderer uses for drawing operations
 
@@ -13,6 +14,10 @@ The GPU device that the layer renderer uses for drawing operations
 
 ```swift
 var device: any MTLDevice { get }
+```
+
+```c
+id<MTLDevice>cp_layer_renderer_get_device(cp_layer_renderer_t layer_renderer);
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # buffer(size:prefetch:whenFull:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Buffers elements received from an upstream publisher.
 
@@ -22,7 +23,7 @@ func buffer(size: Int, prefetch: Publishers.PrefetchStrategy, whenFull: Publishe
 
 ## Mentions
 
-- [Processing Published Elements with Subscribers](processing-published-elements-with-subscribers.md)
+- [Processing Published Elements with Subscribers](../processing-published-elements-with-subscribers.md)
 
 #### Return Value
 
@@ -30,7 +31,7 @@ A publisher that buffers elements received from an upstream publisher.
 
 #### Discussion
 
-Use [`buffer(size:prefetch:whenFull:)`](publisher/buffer(size:prefetch:whenfull:).md) to collect a specific number of elements from an upstream publisher before republishing them to the downstream subscriber according to the [`Publishers.BufferingStrategy`](publishers/bufferingstrategy.md) and [`Publishers.PrefetchStrategy`](publishers/prefetchstrategy.md) strategy you specify.
+Use [`buffer(size:prefetch:whenFull:)`](./buffer%28size,prefetch,whenfull%29.md) to collect a specific number of elements from an upstream publisher before republishing them to the downstream subscriber according to the [`Publishers.BufferingStrategy`](../publishers/bufferingstrategy.md) and [`Publishers.PrefetchStrategy`](../publishers/prefetchstrategy.md) strategy you specify.
 
 If the publisher completes before reaching the `size` threshold, it buffers the elements and publishes them downstream prior to completion.
 
@@ -42,9 +43,10 @@ If the publisher completes before reaching the `size` threshold, it buffers the 
 
 ## See Also
 
-- [Publishers.PrefetchStrategy](publishers/prefetchstrategy.md)
+### Buffering elements
+- [Publishers.PrefetchStrategy](../publishers/prefetchstrategy.md)
   A strategy for filling a buffer.
-- [Publishers.BufferingStrategy](publishers/bufferingstrategy.md)
+- [Publishers.BufferingStrategy](../publishers/bufferingstrategy.md)
   A strategy that handles exhaustion of a buffer’s capacity.
 
 

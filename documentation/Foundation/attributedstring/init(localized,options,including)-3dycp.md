@@ -1,7 +1,8 @@
 # init(localized:options:including:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+

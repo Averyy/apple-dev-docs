@@ -1,7 +1,8 @@
 # mapTemplate(_:waypoint:accepted:forSegment:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the user responds to a proposal to add a waypoint as a stop on their route. If the waypoint is accepted, perform a reroute to update the route accordingly for the specified segment to include this new destination.
 
@@ -14,6 +15,10 @@ Called when the user responds to a proposal to add a waypoint as a stop on their
 
 ```swift
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, waypoint: CPNavigationWaypoint, accepted: Bool, forSegment segment: CPRouteSegment?)
+```
+
+```objc
+- (void) mapTemplate:(CPMapTemplate *) mapTemplate mapTemplateWaypoint:(CPNavigationWaypoint *) waypoint accepted:(BOOL) accepted forSegment:(CPRouteSegment *) segment;
 ```
 
 

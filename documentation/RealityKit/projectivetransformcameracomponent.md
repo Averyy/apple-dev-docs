@@ -1,7 +1,8 @@
 # ProjectiveTransformCameraComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that defines a virtual camera with a custom projection matrix.
 
@@ -48,27 +49,28 @@ content.add(cameraEntity)
 ## Topics
 
 ### Initializers
-- [init(projectionMatrix: float4x4)](projectivetransformcameracomponent/init(projectionmatrix:).md)
+- [init(projectionMatrix: float4x4)](./projectivetransformcameracomponent/init%28projectionmatrix%29.md)
   Creates a new custom matrix camera component with the given settings.
 ### Instance Properties
-- [var transform: float4x4](projectivetransformcameracomponent/transform.md)
+- [var transform: float4x4](./projectivetransformcameracomponent/transform.md)
   The custom projection RealityKit applies to objects in the scene.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
-- [Equatable](../swift/equatable.md)
+- [Component](./component.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [struct PerspectiveCameraComponent](perspectivecameracomponent.md)
+### Cameras
+- [struct PerspectiveCameraComponent](./perspectivecameracomponent.md)
   A component that defines a virtual camera and its controls.
-- [struct OrthographicCameraComponent](orthographiccameracomponent.md)
+- [struct OrthographicCameraComponent](./orthographiccameracomponent.md)
   A component that defines an orthographic virtual camera and its settings.
-- [enum CameraFieldOfViewOrientation](camerafieldofvieworientation.md)
+- [enum CameraFieldOfViewOrientation](./camerafieldofvieworientation.md)
   The orientations that a camera’s field-of-view degrees can apply.
-- [class PerspectiveCamera](perspectivecamera.md)
+- [class PerspectiveCamera](./perspectivecamera.md)
   A virtual camera that establishes the rendering perspective.
 
 

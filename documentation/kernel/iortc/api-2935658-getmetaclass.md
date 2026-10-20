@@ -1,14 +1,15 @@
 # getMetaClass
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.13.2+
 
 ## Declaration
 
-```swift
+```cpp
 virtual const OSMetaClass * getMetaClass(void);
 ```
 

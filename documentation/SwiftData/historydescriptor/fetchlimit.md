@@ -1,7 +1,8 @@
 # fetchLimit
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of transactions to retrieve from the model store’s history.
 
@@ -29,9 +30,10 @@ The default value is `nil`.
 
 ## See Also
 
-- [var predicate: Predicate<TransactionType>?](historydescriptor/predicate.md)
+### Getting the descriptor configuration
+- [var predicate: Predicate<TransactionType>?](./predicate.md)
   The predicate used to initialize the history descriptor.
-- [var sortBy: [SortDescriptor<TransactionType>]](historydescriptor/sortby.md)
+- [var sortBy: [SortDescriptor<TransactionType>]](./sortby.md)
   The sort descriptor to use to sort the returned history data.
 
 

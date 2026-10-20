@@ -1,7 +1,8 @@
 # init(cgGlyph:for:baseString:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a glyph info object from the specified glyph identifier and font informaton.
 
@@ -14,22 +15,27 @@ Creates a glyph info object from the specified glyph identifier and font informa
 init?(cgGlyph glyph: CGGlyph, for font: NSFont, baseString string: String)
 ```
 
+```objc
++ (NSGlyphInfo *) glyphInfoWithCGGlyph:(CGGlyph) glyph forFont:(NSFont *) font baseString:(NSString *) string;
+```
+
 #### Return Value
 
 A glyph info object for the specified glyph or `nil` if the glyph information is not available.
 
 ## Parameters
 
-- `glyph`: The requested [`CGGlyph`](https://developer.apple.com/documentation/coregraphics/cgglyph) object.
+- `glyph`: The requested [`CGGlyph`](../../CoreGraphics/cgglyph.md) object.
 - `font`: The font containing the glyph.
 - `string`: A string containing the character represented by the glyph.
 
 ## See Also
 
-- [init?(CGGlyph: CGGlyph, forFont: NSFont, baseString: String)](nsglyphinfo/init(cgglyph:forfont:basestring:).md)
-- [init?(coder: NSCoder)](nsglyphinfo/init(coder:).md)
-- [init?(glyph: NSGlyph, for: NSFont, baseString: String)](nsglyphinfo/init(glyph:for:basestring:).md)
-- [init?(glyphName: String, for: NSFont, baseString: String)](nsglyphinfo/init(glyphname:for:basestring:).md)
+### Creating a glyph info object
+- [init?(CGGlyph: CGGlyph, forFont: NSFont, baseString: String)](./init%28cgglyph,forfont,basestring%29.md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
+- [init?(glyph: NSGlyph, for: NSFont, baseString: String)](./init%28glyph,for,basestring%29.md)
+- [init?(glyphName: String, for: NSFont, baseString: String)](./init%28glyphname,for,basestring%29.md)
 
 
 ---

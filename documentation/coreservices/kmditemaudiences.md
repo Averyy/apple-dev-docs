@@ -1,7 +1,8 @@
 # kMDItemAudiences
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The audience for which the file is intended. The audience may be determined by the creator or the publisher or by a third party. A CFArray of CFStrings.
 
@@ -12,6 +13,10 @@ The audience for which the file is intended. The audience may be determined by t
 
 ```swift
 let kMDItemAudiences: CFString!
+```
+
+```c
+const CFStringRef kMDItemAudiences;
 ```
 
 

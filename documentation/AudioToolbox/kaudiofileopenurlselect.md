@@ -1,11 +1,12 @@
 # kAudioFileOpenURLSelect
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,23 +14,28 @@
 var kAudioFileOpenURLSelect: Int { get }
 ```
 
+```c
+kAudioFileOpenURLSelect
+```
+
 ## See Also
 
-- [var kAudioFileCloseSelect: Int](kaudiofilecloseselect.md)
-- [var kAudioFileCountUserDataSelect: Int](kaudiofilecountuserdataselect.md)
-- [var kAudioFileCreateSelect: Int](kaudiofilecreateselect.md)
-- [var kAudioFileCreateURLSelect: Int](kaudiofilecreateurlselect.md)
-- [var kAudioFileDataIsThisFormatSelect: Int](kaudiofiledataisthisformatselect.md)
-- [var kAudioFileExtensionIsThisFormatSelect: Int](kaudiofileextensionisthisformatselect.md)
-- [var kAudioFileFileDataIsThisFormatSelect: Int](kaudiofilefiledataisthisformatselect.md)
-- [var kAudioFileFileIsThisFormatSelect: Int](kaudiofilefileisthisformatselect.md)
-- [var kAudioFileGetGlobalInfoSelect: Int](kaudiofilegetglobalinfoselect.md)
-- [var kAudioFileGetGlobalInfoSizeSelect: Int](kaudiofilegetglobalinfosizeselect.md)
-- [var kAudioFileGetPropertyInfoSelect: Int](kaudiofilegetpropertyinfoselect.md)
-- [var kAudioFileGetUserDataAtOffsetSelect: Int](kaudiofilegetuserdataatoffsetselect.md)
-- [var kAudioFileGetUserDataSize64Select: Int](kaudiofilegetuserdatasize64select.md)
-- [var kAudioFileGetPropertySelect: Int](kaudiofilegetpropertyselect.md)
-- [var kAudioFileGetUserDataSelect: Int](kaudiofilegetuserdataselect.md)
+### Selectors
+- [var kAudioFileCloseSelect: Int](./kaudiofilecloseselect.md)
+- [var kAudioFileCountUserDataSelect: Int](./kaudiofilecountuserdataselect.md)
+- [var kAudioFileCreateSelect: Int](./kaudiofilecreateselect.md)
+- [var kAudioFileCreateURLSelect: Int](./kaudiofilecreateurlselect.md)
+- [var kAudioFileDataIsThisFormatSelect: Int](./kaudiofiledataisthisformatselect.md)
+- [var kAudioFileExtensionIsThisFormatSelect: Int](./kaudiofileextensionisthisformatselect.md)
+- [var kAudioFileFileDataIsThisFormatSelect: Int](./kaudiofilefiledataisthisformatselect.md)
+- [var kAudioFileFileIsThisFormatSelect: Int](./kaudiofilefileisthisformatselect.md)
+- [var kAudioFileGetGlobalInfoSelect: Int](./kaudiofilegetglobalinfoselect.md)
+- [var kAudioFileGetGlobalInfoSizeSelect: Int](./kaudiofilegetglobalinfosizeselect.md)
+- [var kAudioFileGetPropertyInfoSelect: Int](./kaudiofilegetpropertyinfoselect.md)
+- [var kAudioFileGetUserDataAtOffsetSelect: Int](./kaudiofilegetuserdataatoffsetselect.md)
+- [var kAudioFileGetUserDataSize64Select: Int](./kaudiofilegetuserdatasize64select.md)
+- [var kAudioFileGetPropertySelect: Int](./kaudiofilegetpropertyselect.md)
+- [var kAudioFileGetUserDataSelect: Int](./kaudiofilegetuserdataselect.md)
 
 
 ---

@@ -1,16 +1,19 @@
 # debugDescription
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual description of the padding policy, suitable for debugging.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.0
+- iPadOS 14.0+ - Deprecated in 17.0
+- Mac Catalyst 14.0+ - Deprecated in 17.0
+- macOS 11.0+ - Deprecated in 14.0
+- tvOS 14.0+ - Deprecated in 17.0
+
+> **Deprecated**: Use Metal Performance Shaders Graph or BNNS instead.
 
 ## Declaration
 
@@ -20,9 +23,10 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [MLCPaddingPolicy.same](mlcpaddingpolicy-3hic8/same.md)
-- [MLCPaddingPolicy.valid](mlcpaddingpolicy-3hic8/valid.md)
-- [MLCPaddingPolicy.sized(y:x:)](mlcpaddingpolicy-3hic8/sized(y:x:).md)
+### Enumeration Cases
+- [MLCPaddingPolicy.same](./same.md)
+- [MLCPaddingPolicy.valid](./valid.md)
+- [MLCPaddingPolicy.sized(y:x:)](./sized%28y,x%29.md)
 
 
 ---

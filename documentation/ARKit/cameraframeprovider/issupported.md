@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether this device supports the camera frame provider.
 
@@ -16,7 +17,8 @@ static var isSupported: Bool { get }
 
 ## See Also
 
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](cameraframeprovider/requiredauthorizations.md)
+### Instance properties
+- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./requiredauthorizations.md)
   The authorization types you need to use the camera frame provider.
 
 

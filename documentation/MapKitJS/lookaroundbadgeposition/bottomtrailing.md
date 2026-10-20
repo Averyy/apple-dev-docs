@@ -1,7 +1,8 @@
 # BottomTrailing
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Places the badge on the bottom trailing corner of the Look Around preview.
 
@@ -10,15 +11,16 @@ Places the badge on the bottom trailing corner of the Look Around preview.
 
 ## Declaration
 
-```swift
+```
 readonly BottomTrailing: "bottomTrailing";
 ```
 
 ## See Also
 
-- [TopLeading](lookaroundbadgeposition/topleading.md)
+### Possible badge positions
+- [TopLeading](./topleading.md)
   Places the badge on the top leading corner of the Look Around preview.
-- [TopTrailing](lookaroundbadgeposition/toptrailing.md)
+- [TopTrailing](./toptrailing.md)
   Places the badge on the top trailing corner of the Look Around preview.
 
 

@@ -1,14 +1,15 @@
 # ex_cb_invoke
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 ex_cb_action_t ex_cb_invoke(ex_cb_class_t cb_class, vm_offset_t far);
 ```
 

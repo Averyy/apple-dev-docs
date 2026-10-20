@@ -1,40 +1,41 @@
 # UserRemoveHBAProperties
 
 **Framework**: SCSIControllerDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes properties from a host bus adapter in response to a call from the framework.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t UserRemoveHBAProperties(OSArray *properties);
 ```
 
 #### Return Value
 
-A value that indicates the result of removing the properties. [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) indicates success. For error definitions, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants).
+A value that indicates the result of removing the properties. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
 #### Discussion
 
 Your driver extension calls this method to remove properties from the HBA. The `properties` directory can contain the following keys:
 
-- [`kIOPropertyVendorNameKey`](https://developer.apple.com/documentation/iokit/kiopropertyvendornamekey)
-- [`kIOPropertyProductNameKey`](https://developer.apple.com/documentation/iokit/kiopropertyproductnamekey)
-- [`kIOPropertyProductRevisionLevelKey`](https://developer.apple.com/documentation/iokit/kiopropertyproductrevisionlevelkey)
-- [`kIOPropertyPortDescriptionKey`](https://developer.apple.com/documentation/kernel/kiopropertyportdescriptionkey)
-- [`kIOPropertyPortSpeedKey`](https://developer.apple.com/documentation/kernel/kiopropertyportspeedkey)
-- [`kIOPropertyPortTopologyKey`](https://developer.apple.com/documentation/kernel/kiopropertyporttopologykey)
-- [`kIOPropertySCSIParallelSignalingTypeKey`](https://developer.apple.com/documentation/kernel/kiopropertyscsiparallelsignalingtypekey)
-- [`kIOPropertyFibreChannelCableDescriptionKey`](https://developer.apple.com/documentation/kernel/kiopropertyfibrechannelcabledescriptionkey)
-- [`kIOPropertyFibreChannelNodeWorldWideNameKey`](https://developer.apple.com/documentation/kernel/kiopropertyfibrechannelnodeworldwidenamekey)
-- [`kIOPropertyFibreChannelPortWorldWideNameKey`](https://developer.apple.com/documentation/kernel/kiopropertyfibrechannelportworldwidenamekey)
-- [`kIOPropertyFibreChannelAddressIdentifierKey`](https://developer.apple.com/documentation/kernel/kiopropertyfibrechanneladdressidentifierkey)
-- [`kIOPropertyFibreChannelALPAKey`](https://developer.apple.com/documentation/kernel/kiopropertyfibrechannelalpakey)
-- [`kIOPropertySASAddressKey`](https://developer.apple.com/documentation/kernel/kiopropertysasaddresskey)
+- [`kIOPropertyVendorNameKey`](../../iokit/kiopropertyvendornamekey.md)
+- [`kIOPropertyProductNameKey`](../../iokit/kiopropertyproductnamekey.md)
+- [`kIOPropertyProductRevisionLevelKey`](../../iokit/kiopropertyproductrevisionlevelkey.md)
+- [`kIOPropertyPortDescriptionKey`](../../kernel/kiopropertyportdescriptionkey.md)
+- [`kIOPropertyPortSpeedKey`](../../kernel/kiopropertyportspeedkey.md)
+- [`kIOPropertyPortTopologyKey`](../../kernel/kiopropertyporttopologykey.md)
+- [`kIOPropertySCSIParallelSignalingTypeKey`](../../kernel/kiopropertyscsiparallelsignalingtypekey.md)
+- [`kIOPropertyFibreChannelCableDescriptionKey`](../../kernel/kiopropertyfibrechannelcabledescriptionkey.md)
+- [`kIOPropertyFibreChannelNodeWorldWideNameKey`](../../kernel/kiopropertyfibrechannelnodeworldwidenamekey.md)
+- [`kIOPropertyFibreChannelPortWorldWideNameKey`](../../kernel/kiopropertyfibrechannelportworldwidenamekey.md)
+- [`kIOPropertyFibreChannelAddressIdentifierKey`](../../kernel/kiopropertyfibrechanneladdressidentifierkey.md)
+- [`kIOPropertyFibreChannelALPAKey`](../../kernel/kiopropertyfibrechannelalpakey.md)
+- [`kIOPropertySASAddressKey`](../../kernel/kiopropertysasaddresskey.md)
 
 ## Parameters
 
@@ -42,29 +43,30 @@ Your driver extension calls this method to remove properties from the HBA. The `
 
 ## See Also
 
-- [UserReportInitiatorIdentifier](iouserscsiparallelinterfacecontroller/userreportinitiatoridentifier.md)
+### Managing host bus adapters
+- [UserReportInitiatorIdentifier](./userreportinitiatoridentifier.md)
   Gets the SCSI device identifier for the host bus adapter (HBA) in response to a call from the framework.
-- [UserReportHighestSupportedDeviceID](iouserscsiparallelinterfacecontroller/userreporthighestsupporteddeviceid.md)
+- [UserReportHighestSupportedDeviceID](./userreporthighestsupporteddeviceid.md)
   Gets the highest supported SCSI device identifier in response to a call from the framework.
-- [UserReportMaximumTaskCount](iouserscsiparallelinterfacecontroller/userreportmaximumtaskcount.md)
+- [UserReportMaximumTaskCount](./userreportmaximumtaskcount.md)
   Gets the maximum number of outstanding tasks the HBA can process in response to a call from the framework.
-- [UserDoesHBAPerformDeviceManagement](iouserscsiparallelinterfacecontroller/userdoeshbaperformdevicemanagement.md)
+- [UserDoesHBAPerformDeviceManagement](./userdoeshbaperformdevicemanagement.md)
   Determines if the host bus adapter (HBA) manages devices in response to a call from the framework.
-- [UserReportHBAHighestLogicalUnitNumber](iouserscsiparallelinterfacecontroller/userreporthbahighestlogicalunitnumber.md)
+- [UserReportHBAHighestLogicalUnitNumber](./userreporthbahighestlogicalunitnumber.md)
   Gets the highest logical unit number (LUN) in response to a call from the framework.
-- [UserDoesHBAPerformAutoSense](iouserscsiparallelinterfacecontroller/userdoeshbaperformautosense.md)
+- [UserDoesHBAPerformAutoSense](./userdoeshbaperformautosense.md)
   Determines if the driver extension class automatically performs autosense and provides autosense data for each I/O in response to a call from the framework.
-- [UserDoesHBASupportMultiPathing](iouserscsiparallelinterfacecontroller/userdoeshbasupportmultipathing.md)
+- [UserDoesHBASupportMultiPathing](./userdoeshbasupportmultipathing.md)
   Queries the HBA child class to determine if it supports multipathing in response to a call from the framework.
-- [UserDoesHBASupportSCSIParallelFeature](iouserscsiparallelinterfacecontroller/userdoeshbasupportscsiparallelfeature.md)
+- [UserDoesHBASupportSCSIParallelFeature](./userdoeshbasupportscsiparallelfeature.md)
   Determines whether the driver extension class supports a specific feature in response to a call from the framework.
-- [SCSIParallelFeature](scsiparallelfeature.md)
+- [SCSIParallelFeature](../scsiparallelfeature.md)
   A feature that the driver extension supports.
-- [UserMapHBAData](iouserscsiparallelinterfacecontroller/usermaphbadata.md)
+- [UserMapHBAData](./usermaphbadata.md)
   Maps any host bus adapter (HBA)-specific task data in response to a call from the framework.
-- [UserSetHBAProperties](iouserscsiparallelinterfacecontroller/usersethbaproperties.md)
+- [UserSetHBAProperties](./usersethbaproperties.md)
   Sets multiple properties for a host bus adapter.
-- [UserReportHBAConstraints](iouserscsiparallelinterfacecontroller/userreporthbaconstraints.md)
+- [UserReportHBAConstraints](./userreporthbaconstraints.md)
   Reports the I/O constraints for this controller.
 
 

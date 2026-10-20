@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a command alternative from data in an unarchiver.
 
@@ -18,9 +19,14 @@ Creates a command alternative from data in an unarchiver.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [convenience init(title: String, action: Selector, modifierFlags: UIKeyModifierFlags)](uicommandalternate/init(title:action:modifierflags:).md)
+### Creating a command alternative
+- [convenience init(title: String, action: Selector, modifierFlags: UIKeyModifierFlags)](./init%28title,action,modifierflags%29.md)
   Creates a command alternative with the specified title, action, and modifier flags.
 
 

@@ -1,7 +1,8 @@
 # capacity
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The actual number of elements that can be stored in this object.
 
@@ -26,11 +27,12 @@ This value may be nontrivial to compute; it is usually a good idea to store this
 
 ## See Also
 
-- [var header: Header](managedbufferpointer/header.md)
+### Inspecting a Buffer
+- [var header: Header](./header.md)
   The stored `Header` instance.
-- [var buffer: AnyObject](managedbufferpointer/buffer.md)
+- [var buffer: AnyObject](./buffer.md)
   Returns the object instance being used for storage.
-- [func isUniqueReference() -> Bool](managedbufferpointer/isuniquereference.md)
+- [func isUniqueReference() -> Bool](./isuniquereference%28%29.md)
   Returns `true` if `self` holds the only strong reference to its buffer; otherwise, returns `false`.
 
 

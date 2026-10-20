@@ -1,7 +1,8 @@
 # developerName
 
 **Framework**: BrowserKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An extension developer’s name.
 
@@ -15,13 +16,18 @@ An extension developer’s name.
 var developerName: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * developerName;
+```
+
 ## See Also
 
-- [var displayName: String](bebrowserdataextension/displayname.md)
+### Accessing extension metadata
+- [var displayName: String](./displayname.md)
   An extension’s localized display name.
-- [var identifier: String](bebrowserdataextension/identifier.md)
+- [var identifier: String](./identifier.md)
   A unique identifier for an extension.
-- [var storeIdentifier: String](bebrowserdataextension/storeidentifier.md)
+- [var storeIdentifier: String](./storeidentifier.md)
   An identifier that locates the extension in the App Store.
 
 

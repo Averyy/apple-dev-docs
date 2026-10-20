@@ -1,7 +1,8 @@
 # action
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The `Action` executed when `publisher` emits an event.
 
@@ -22,9 +23,10 @@ var action: (PublisherType.Output) -> Void
 
 ## See Also
 
-- [var publisher: PublisherType](subscriptionview/publisher.md)
+### Managing the subscription
+- [var publisher: PublisherType](./publisher.md)
   The `Publisher` that is being subscribed.
-- [var content: Content](subscriptionview/content.md)
+- [var content: Content](./content.md)
   The content view.
 
 

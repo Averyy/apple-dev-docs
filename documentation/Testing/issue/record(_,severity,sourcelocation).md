@@ -1,7 +1,8 @@
 # record(_:severity:sourceLocation:)
 
 **Framework**: Swift Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Records an issue that a test encounters while it’s running.
 
@@ -18,7 +19,7 @@ static func record(_ comment: Comment? = nil, severity: Issue.Severity = .error,
 
 ## Mentions
 
-- [Migrating a test from XCTest](migratingfromxctest.md)
+- [Migrating a test from XCTest](../migratingfromxctest.md)
 
 #### Return Value
 
@@ -26,12 +27,12 @@ The issue that was recorded.
 
 #### Discussion
 
-Use this function if, while running a test, an issue occurs that cannot be represented as an expectation (using the [`expect(_:_:sourceLocation:)`](expect(_:_:sourcelocation:).md) or [`require(_:_:sourceLocation:)`](require(_:_:sourcelocation:)-5l63q.md) macros.)
+Use this function if, while running a test, an issue occurs that cannot be represented as an expectation (using the [`expect(_:_:sourceLocation:)`](../expect%28_,_,sourcelocation%29.md) or [`require(_:_:sourceLocation:)`](../require%28_,_,sourcelocation%29-5l63q.md) macros.)
 
 ## Parameters
 
 - `comment`: A comment describing the expectation.
-- `severity`: The severity level of the issue.  The testing library marks the test as failed if the severity is greater than [`Issue.Severity.warning`](issue/severity-swift.enum/warning.md). The default is [`Issue.Severity.error`](issue/severity-swift.enum/error.md).
+- `severity`: The severity level of the issue.  The testing library marks the test as failed if the severity is greater than [`Issue.Severity.warning`](./severity-swift.enum/warning.md). The default is [`Issue.Severity.error`](./severity-swift.enum/error.md).
 - `sourceLocation`: The source location to which the issue should be attributed.
 
 

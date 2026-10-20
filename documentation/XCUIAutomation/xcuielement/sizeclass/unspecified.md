@@ -1,18 +1,19 @@
 # XCUIElement.SizeClass.unspecified
 
 **Framework**: XCUIAutomation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that represents an element for the unspecified size class.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -21,11 +22,16 @@ A constant that represents an element for the unspecified size class.
 case unspecified
 ```
 
+```c
+XCUIUserInterfaceSizeClassUnspecified
+```
+
 ## See Also
 
-- [XCUIElement.SizeClass.regular](xcuielement/sizeclass/regular.md)
+### Enumeration cases
+- [XCUIElement.SizeClass.regular](./regular.md)
   A constant that represents an element for the regular size class.
-- [XCUIElement.SizeClass.compact](xcuielement/sizeclass/compact.md)
+- [XCUIElement.SizeClass.compact](./compact.md)
   A constant that represents an element for the compact size class.
 
 

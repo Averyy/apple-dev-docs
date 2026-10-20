@@ -1,7 +1,8 @@
 # applying(_:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the primitive that results from applying a pose to the primitive.
 

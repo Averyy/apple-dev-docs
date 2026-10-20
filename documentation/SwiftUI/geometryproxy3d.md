@@ -1,7 +1,8 @@
 # GeometryProxy3D
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A proxy for access to the size and coordinate space of the container view.
 
@@ -21,41 +22,42 @@ You can use a proxy for anchor resolution.
 ## Topics
 
 ### Accessing geometry characteristics
-- [func frame(in: some CoordinateSpaceProtocol) -> Rect3D](geometryproxy3d/frame(in:).md)
+- [func frame(in: some CoordinateSpaceProtocol) -> Rect3D](./geometryproxy3d/frame%28in%29.md)
   The container view’s bounds rectangle converted to a defined coordinate space.
-- [var size: Size3D](geometryproxy3d/size.md)
+- [var size: Size3D](./geometryproxy3d/size.md)
   The size of the container view.
-- [var safeAreaInsets: EdgeInsets3D](geometryproxy3d/safeareainsets.md)
+- [var safeAreaInsets: EdgeInsets3D](./geometryproxy3d/safeareainsets.md)
   The safe area inset of the container view.
-- [subscript<T>(Anchor<T>) -> T](geometryproxy3d/subscript(_:).md)
+- [subscript<T>(Anchor<T>) -> T](./geometryproxy3d/subscript%28_%29.md)
   Resolves the value of an anchor to the container view.
-- [func transform(in: some CoordinateSpaceProtocol) -> AffineTransform3D?](geometryproxy3d/transform(in:).md)
+- [func transform(in: some CoordinateSpaceProtocol) -> AffineTransform3D?](./geometryproxy3d/transform%28in%29.md)
   The container view’s 3D transform converted to a defined coordinate space.
 ### Instance Methods
-- [func coordinateSpace3D(for: any CoordinateSpaceProtocol) -> GeometryProxyCoordinateSpace3D](geometryproxy3d/coordinatespace3d(for:).md)
+- [func coordinateSpace3D(for: any CoordinateSpaceProtocol) -> GeometryProxyCoordinateSpace3D](./geometryproxy3d/coordinatespace3d%28for%29.md)
   Returns a value that can be used for `CoordinateSpace3D` based coordinate conversions.
 
 ## See Also
 
-- [struct GeometryReader](geometryreader.md)
+### Measuring a view
+- [struct GeometryReader](./geometryreader.md)
   A container view that defines its content as a function of its own size and coordinate space.
-- [struct GeometryReader3D](geometryreader3d.md)
+- [struct GeometryReader3D](./geometryreader3d.md)
   A container view that defines its content as a function of its own size and coordinate space.
-- [struct GeometryProxy](geometryproxy.md)
+- [struct GeometryProxy](./geometryproxy.md)
   A proxy for access to the size and coordinate space (for anchor resolution) of the container view.
-- [func reservedRegions(kind: ReservedRegion.Kind, options: ReservedRegion.QueryOptions, layoutDirectionBehavior: LayoutDirectionBehavior) -> [ReservedRegion]](geometryproxy/reservedregions(kind:options:layoutdirectionbehavior:).md)
+- [func reservedRegions(kind: ReservedRegion.Kind, options: ReservedRegion.QueryOptions, layoutDirectionBehavior: LayoutDirectionBehavior) -> [ReservedRegion]](./geometryproxy/reservedregions%28kind,options,layoutdirectionbehavior%29.md)
   Returns an array of reserved regions that match the selection options you specify.
-- [struct ReservedRegion](reservedregion.md)
+- [struct ReservedRegion](./reservedregion.md)
   A region within a view’s coordinate space that another entity reserves.
-- [func coordinateSpace(NamedCoordinateSpace) -> some View](view/coordinatespace(_:).md)
+- [func coordinateSpace(NamedCoordinateSpace) -> some View](./view/coordinatespace%28_%29.md)
   Assigns a name to the view’s coordinate space, so other code can operate on dimensions like points and sizes relative to the named space.
-- [enum CoordinateSpace](coordinatespace.md)
+- [enum CoordinateSpace](./coordinatespace.md)
   A resolved coordinate space created by the coordinate space protocol.
-- [protocol CoordinateSpaceProtocol](coordinatespaceprotocol.md)
+- [protocol CoordinateSpaceProtocol](./coordinatespaceprotocol.md)
   A frame of reference within the layout system.
-- [struct PhysicalMetric](physicalmetric.md)
+- [struct PhysicalMetric](./physicalmetric.md)
   Provides access to a value in points that corresponds to the specified physical measurement.
-- [struct PhysicalMetricsConverter](physicalmetricsconverter.md)
+- [struct PhysicalMetricsConverter](./physicalmetricsconverter.md)
   A physical metrics converter provides conversion between point values and their extent in 3D space, in the form of physical length measurements.
 
 

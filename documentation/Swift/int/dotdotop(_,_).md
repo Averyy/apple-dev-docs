@@ -1,7 +1,8 @@
 # ..<(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a half-open range that contains its lower bound but not its upper bound.
 
@@ -30,7 +31,7 @@ print(lessThanFive.contains(3.14))  // Prints "true"
 print(lessThanFive.contains(5.0))   // Prints "false"
 ```
 
-> **Note**: `minimum <= maximum`.
+> **Precondition**: `minimum <= maximum`.
 
 ## Parameters
 

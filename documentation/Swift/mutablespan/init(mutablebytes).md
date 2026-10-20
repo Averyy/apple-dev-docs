@@ -1,7 +1,8 @@
 # init(mutableBytes:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Convert a raw span to a typed span.
 
@@ -19,6 +20,8 @@ Convert a raw span to a typed span.
 ```swift
 init(mutableBytes: consuming MutableRawSpan)
 ```
+
+Available when `Element` conforms to `ConvertibleFromBytes` and `ConvertibleToBytes`.
 
 #### Discussion
 

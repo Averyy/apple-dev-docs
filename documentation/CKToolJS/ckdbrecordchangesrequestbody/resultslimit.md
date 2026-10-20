@@ -1,7 +1,8 @@
 # resultsLimit
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of records changes to fetch.
 
@@ -10,7 +11,7 @@ The maximum number of records changes to fetch.
 
 ## Declaration
 
-```swift
+```
 attribute Int32? resultsLimit;
 ```
 

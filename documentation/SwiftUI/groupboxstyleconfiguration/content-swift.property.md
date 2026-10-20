@@ -1,7 +1,8 @@
 # content
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A view that represents the content of the group box.
 
@@ -20,7 +21,8 @@ let content: GroupBoxStyleConfiguration.Content
 
 ## See Also
 
-- [GroupBoxStyleConfiguration.Content](groupboxstyleconfiguration/content-swift.struct.md)
+### Configuring the content
+- [GroupBoxStyleConfiguration.Content](./content-swift.struct.md)
   A type-erased content of a group box.
 
 

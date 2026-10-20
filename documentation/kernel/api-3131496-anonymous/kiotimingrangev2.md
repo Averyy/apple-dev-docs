@@ -1,14 +1,15 @@
 # kIOTimingRangeV2
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kIOTimingRangeV2 = 0x00000002
 ```
 

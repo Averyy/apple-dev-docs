@@ -1,7 +1,8 @@
 # hitTest(_:query:mask:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Searches for objects corresponding to a point in the view based on a query and a collision mask.
 
@@ -25,7 +26,7 @@ An array of hit results.
 
 #### Discussion
 
-The method ignores entities that lack a [`CollisionComponent`](collisioncomponent.md).
+The method ignores entities that lack a [`CollisionComponent`](../collisioncomponent.md).
 
 ## Parameters
 
@@ -35,17 +36,18 @@ The method ignores entities that lack a [`CollisionComponent`](collisioncomponen
 
 ## See Also
 
-- [func entity(at: CGPoint) -> Entity?](arview/entity(at:).md)
+### Finding entities at a point in the view
+- [func entity(at: CGPoint) -> Entity?](./entity%28at%29.md)
   Finds the entity in the AR scene closest to the specified point.
-- [func entities(at: CGPoint) -> [Entity]](arview/entities(at:).md)
+- [func entities(at: CGPoint) -> [Entity]](./entities%28at%29.md)
   Finds the collection of entities at the specified point in the scene.
-- [func hitTest(CGPoint, types: ARHitTestResult.ResultType) -> [ARHitTestResult]](arview/hittest(_:types:).md)
+- [func hitTest(CGPoint, types: ARHitTestResult.ResultType) -> [ARHitTestResult]](./hittest%28_,types%29.md)
   Searches for objects corresponding to a point in the view based on a set of result types.
-- [func makeRaycastQuery(from: CGPoint, allowing: ARRaycastQuery.Target, alignment: ARRaycastQuery.TargetAlignment) -> ARRaycastQuery?](arview/makeraycastquery(from:allowing:alignment:).md)
+- [func makeRaycastQuery(from: CGPoint, allowing: ARRaycastQuery.Target, alignment: ARRaycastQuery.TargetAlignment) -> ARRaycastQuery?](./makeraycastquery%28from,allowing,alignment%29.md)
   Creates a ray-cast query originating from a point in the view, centered on the camera’s field of view.
-- [func raycast(from: CGPoint, allowing: ARRaycastQuery.Target, alignment: ARRaycastQuery.TargetAlignment) -> [ARRaycastResult]](arview/raycast(from:allowing:alignment:).md)
+- [func raycast(from: CGPoint, allowing: ARRaycastQuery.Target, alignment: ARRaycastQuery.TargetAlignment) -> [ARRaycastResult]](./raycast%28from,allowing,alignment%29.md)
   Performs a ray cast, where a ray is cast into the scene from the center of the camera through a point in the view, and the results are immediately returned.
-- [func trackedRaycast(from: CGPoint, allowing: ARRaycastQuery.Target, alignment: ARRaycastQuery.TargetAlignment, updateHandler: ([ARRaycastResult]) -> Void) -> ARTrackedRaycast?](arview/trackedraycast(from:allowing:alignment:updatehandler:).md)
+- [func trackedRaycast(from: CGPoint, allowing: ARRaycastQuery.Target, alignment: ARRaycastQuery.TargetAlignment, updateHandler: ([ARRaycastResult]) -> Void) -> ARTrackedRaycast?](./trackedraycast%28from,allowing,alignment,updatehandler%29.md)
   Performs a tracked ray cast, where a ray is cast into the scene from the center of the camera through a point in the view.
 
 

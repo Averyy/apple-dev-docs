@@ -1,21 +1,28 @@
 # backgroundRect(forBounds:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the rectangle in which the receiver draws its background.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- tvOS 2.0+
-- visionOS 1.0+
+- iOS 2.0+ - Deprecated in 15.0
+- iPadOS 2.0+ - Deprecated in 15.0
+- Mac Catalyst 13.1+ - Deprecated in 15.0
+- tvOS 2.0+ - Deprecated in 15.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use [`layoutSubviews()`](../uiview/layoutsubviews%28%29.md) instead.
 
 ## Declaration
 
 ```swift
 func backgroundRect(forBounds bounds: CGRect) -> CGRect
+```
+
+```objc
+- (CGRect) backgroundRectForBounds:(CGRect) bounds;
 ```
 
 #### Return Value
@@ -32,11 +39,12 @@ The default implementation of this method returns the value in the `bounds` para
 
 ## See Also
 
-- [func contentRect(forBounds: CGRect) -> CGRect](uibutton/contentrect(forbounds:).md)
+### Deprecated dimensions
+- [func contentRect(forBounds: CGRect) -> CGRect](./contentrect%28forbounds%29.md)
   Returns the rectangle in which the receiver draws its entire content.
-- [func titleRect(forContentRect: CGRect) -> CGRect](uibutton/titlerect(forcontentrect:).md)
+- [func titleRect(forContentRect: CGRect) -> CGRect](./titlerect%28forcontentrect%29.md)
   Returns the rectangle in which the receiver draws its title.
-- [func imageRect(forContentRect: CGRect) -> CGRect](uibutton/imagerect(forcontentrect:).md)
+- [func imageRect(forContentRect: CGRect) -> CGRect](./imagerect%28forcontentrect%29.md)
   Returns the rectangle in which the receiver draws its image.
 
 

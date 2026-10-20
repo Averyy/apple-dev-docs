@@ -1,7 +1,8 @@
 # setUserID
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the file is executed as the owner.
 
@@ -26,9 +27,10 @@ For more information, see the `setuid(2)` man page.
 
 ## See Also
 
-- [static var setGroupID: FilePermissions](filepermissions/setgroupid.md)
+### Special Permissions
+- [static var setGroupID: FilePermissions](./setgroupid.md)
   Indicates that the file is executed as the group.
-- [static var saveText: FilePermissions](filepermissions/savetext.md)
+- [static var saveText: FilePermissions](./savetext.md)
   Indicates that executable’s text segment should be kept in swap space even after it exits.
 
 

@@ -1,12 +1,13 @@
 # NSUserInterfaceLayoutDirection
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Specifies the directional flow of the user interface.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,33 +15,38 @@ Specifies the directional flow of the user interface.
 enum NSUserInterfaceLayoutDirection
 ```
 
+```c
+enum NSUserInterfaceLayoutDirection : NSInteger;
+```
+
 #### Overview
 
-These constants are returned by [`userInterfaceLayoutDirection`](nsapplication/userinterfacelayoutdirection.md).
+These constants are returned by [`userInterfaceLayoutDirection`](./nsapplication/userinterfacelayoutdirection.md).
 
 ## Topics
 
 ### Constants
-- [NSUserInterfaceLayoutDirection.leftToRight](nsuserinterfacelayoutdirection/lefttoright.md)
+- [NSUserInterfaceLayoutDirection.leftToRight](./nsuserinterfacelayoutdirection/lefttoright.md)
   Layout direction is left to right.
-- [NSUserInterfaceLayoutDirection.rightToLeft](nsuserinterfacelayoutdirection/righttoleft.md)
+- [NSUserInterfaceLayoutDirection.rightToLeft](./nsuserinterfacelayoutdirection/righttoleft.md)
   Layout direction is right to left.
 ### Initializers
-- [init?(rawValue: Int)](nsuserinterfacelayoutdirection/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nsuserinterfacelayoutdirection/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var userInterfaceLayoutDirection: NSUserInterfaceLayoutDirection](nsapplication/userinterfacelayoutdirection.md)
+### User interface layout direction
+- [var userInterfaceLayoutDirection: NSUserInterfaceLayoutDirection](./nsapplication/userinterfacelayoutdirection.md)
   The layout direction of the user interface.
 
 

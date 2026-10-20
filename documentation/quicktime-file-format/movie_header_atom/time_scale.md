@@ -1,7 +1,8 @@
 # Time scale
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A time value that indicates the time scale for this movie.
 
@@ -11,35 +12,36 @@ The time value represents the number of time units that pass per second in its t
 
 ## See Also
 
-- [Size](movie_header_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this movie header atom.
-- [Type](movie_header_atom/type.md)
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
-- [Version](movie_header_atom/version.md)
+- [Version](./version.md)
   A 1-byte specification of the version of this movie header atom.
-- [Flags](movie_header_atom/flags.md)
+- [Flags](./flags.md)
   Three bytes of space for future movie header flags.
-- [Creation time](movie_header_atom/creation_time.md)
+- [Creation time](./creation_time.md)
   A 32-bit integer that specifies the creation calendar date and time for the movie atom.
-- [Modification time](movie_header_atom/modification_time.md)
+- [Modification time](./modification_time.md)
   A 32-bit integer that specifies the calendar date and time of the last change to the movie atom.
-- [Duration](movie_header_atom/duration.md)
+- [Duration](./duration.md)
   A time value that indicates the duration of the movie in time scale units.
-- [Preferred rate](movie_header_atom/preferred_rate.md)
+- [Preferred rate](./preferred_rate.md)
   A 32-bit fixed-point number that specifies the rate at which to play this movie.
-- [Preferred volume](movie_header_atom/preferred_volume.md)
+- [Preferred volume](./preferred_volume.md)
   A 16-bit fixed-point number that specifies how loud to play this movie’s sound.
-- [Reserved](movie_header_atom/reserved.md)
+- [Reserved](./reserved.md)
   Ten bytes reserved for use by Apple.
-- [Matrix structure](movie_header_atom/matrix_structure.md)
+- [Matrix structure](./matrix_structure.md)
   The matrix structure associated with this movie.
-- [Preview time](movie_header_atom/preview_time.md)
+- [Preview time](./preview_time.md)
   The time value in the movie at which the preview begins.
-- [Preview duration](movie_header_atom/preview_duration.md)
+- [Preview duration](./preview_duration.md)
   The duration of the movie preview in movie time scale units.
-- [Poster time](movie_header_atom/poster_time.md)
+- [Poster time](./poster_time.md)
   The time value of the time of the movie poster.
-- [Selection time](movie_header_atom/selection_time.md)
+- [Selection time](./selection_time.md)
   The time value for the start time of the current selection.
 
 

@@ -1,7 +1,8 @@
 # sendMessage(_:)
 
 **Framework**: Foveated Streaming  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends data to the streaming endpoint on this channel.
 

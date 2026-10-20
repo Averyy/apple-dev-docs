@@ -1,14 +1,15 @@
 # mem_frequency_hz
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 unsigned long long mem_frequency_hz;
 ```
 

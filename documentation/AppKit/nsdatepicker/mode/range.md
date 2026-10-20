@@ -1,10 +1,11 @@
 # NSDatePicker.Mode.range
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 case range
 ```
 
+```c
+NSDatePickerModeRange
+```
+
 ## See Also
 
-- [NSDatePicker.Mode.single](nsdatepicker/mode/single.md)
+### Enumeration Cases
+- [NSDatePicker.Mode.single](./single.md)
 
 
 ---

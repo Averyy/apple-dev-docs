@@ -1,7 +1,8 @@
 # stream
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,9 +21,10 @@ let stream: (any TextOutputStream)?
 
 ## See Also
 
-- [let upstream: Upstream](publishers/print/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives elements.
-- [let prefix: String](publishers/print/prefix.md)
+- [let prefix: String](./prefix.md)
   A string with which to prefix all log messages.
 
 

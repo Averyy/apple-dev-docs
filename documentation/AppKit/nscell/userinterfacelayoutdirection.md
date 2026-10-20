@@ -1,7 +1,8 @@
 # userInterfaceLayoutDirection
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout direction of the user interface.
 
@@ -12,6 +13,10 @@ The layout direction of the user interface.
 
 ```swift
 var userInterfaceLayoutDirection: NSUserInterfaceLayoutDirection { get set }
+```
+
+```objc
+@property NSUserInterfaceLayoutDirection userInterfaceLayoutDirection;
 ```
 
 #### Discussion

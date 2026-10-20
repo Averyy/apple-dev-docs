@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Checks if the set contains any blend shape weights data.
 

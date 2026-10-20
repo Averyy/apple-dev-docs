@@ -1,7 +1,8 @@
 # setModeOff()
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the mode to off and stops any trigger effect.
 
@@ -19,11 +20,16 @@ Sets the mode to off and stops any trigger effect.
 func setModeOff()
 ```
 
+```objc
+- (void) setModeOff;
+```
+
 ## See Also
 
-- [var mode: GCDualSenseAdaptiveTrigger.Mode](gcdualsenseadaptivetrigger/mode-swift.property.md)
+### Getting the mode
+- [var mode: GCDualSenseAdaptiveTrigger.Mode](./mode-swift.property.md)
   The current configuration of the adaptive trigger.
-- [GCDualSenseAdaptiveTrigger.Mode](gcdualsenseadaptivetrigger/mode-swift.enum.md)
+- [GCDualSenseAdaptiveTrigger.Mode](./mode-swift.enum.md)
   The possible modes of an adaptive trigger.
 
 

@@ -1,17 +1,22 @@
 # reloadPredicate()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Instructs the receiver to regenerate its predicate by invoking the corresponding delegate method.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func reloadPredicate()
+```
+
+```objc
+- (void) reloadPredicate;
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ You typically invoke this method because something has changed (for example, a v
 
 ## See Also
 
-- [var predicate: NSPredicate?](nsruleeditor/predicate.md)
+### Working with Predicates
+- [var predicate: NSPredicate?](./predicate.md)
   The rule editor’s predicate.
-- [func predicate(forRow: Int) -> NSPredicate?](nsruleeditor/predicate(forrow:).md)
+- [func predicate(forRow: Int) -> NSPredicate?](./predicate%28forrow%29.md)
   Returns the predicate for a given row.
 
 

@@ -1,7 +1,8 @@
 # AccessoryNotification.DisplayDate
 
 **Framework**: Accessory Notifications  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options for displaying a date in a notification.
 
@@ -17,27 +18,28 @@ enum DisplayDate
 ## Topics
 
 ### Identifying date display options
-- [AccessoryNotification.DisplayDate.allDayDate(_:)](accessorynotification/displaydate-swift.enum/alldaydate(_:).md)
+- [AccessoryNotification.DisplayDate.allDayDate(_:)](./displaydate-swift.enum/alldaydate%28_%29.md)
   An option to display a date for all-day events.
-- [AccessoryNotification.DisplayDate.contentDate(_:)](accessorynotification/displaydate-swift.enum/contentdate(_:).md)
+- [AccessoryNotification.DisplayDate.contentDate(_:)](./displaydate-swift.enum/contentdate%28_%29.md)
   An option to display a date that includes a specific moment to which the notification refers.
-- [AccessoryNotification.DisplayDate.deliveryDate](accessorynotification/displaydate-swift.enum/deliverydate.md)
+- [AccessoryNotification.DisplayDate.deliveryDate](./displaydate-swift.enum/deliverydate.md)
   An option to display a date that uses the notification’s delivery timestamp.
-- [AccessoryNotification.DisplayDate.hideDate](accessorynotification/displaydate-swift.enum/hidedate.md)
+- [AccessoryNotification.DisplayDate.hideDate](./displaydate-swift.enum/hidedate.md)
   An option that indicates the accessory doesn’t display a date.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
 
 ## See Also
 
-- [let deliveryDate: Date](accessorynotification/deliverydate.md)
+### Working with notification dates
+- [let deliveryDate: Date](./deliverydate.md)
   A timestamp that indicates when the system received the notification.
-- [let displayDate: AccessoryNotification.DisplayDate](accessorynotification/displaydate-swift.property.md)
+- [let displayDate: AccessoryNotification.DisplayDate](./displaydate-swift.property.md)
   A preferred date and format to display with the notification.
 
 

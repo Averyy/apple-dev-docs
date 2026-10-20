@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the next input state from the queue.
@@ -20,9 +21,13 @@ Returns the next input state from the queue.
 func nextInputState() -> (any GCDevicePhysicalInputState & GCDevicePhysicalInputStateDiff)?
 ```
 
+```objc
+- (id<GCDevicePhysicalInputState,GCDevicePhysicalInputStateDiff>) nextInputState;
+```
+
 ## Mentions
 
-- [Handling input events](handling-input-events.md)
+- [Handling input events](../handling-input-events.md)
 
 #### Return Value
 
@@ -34,13 +39,14 @@ This method removes the next input state from the queue.
 
 ## See Also
 
-- [var inputStateAvailableHandler: ((any GCDevicePhysicalInput) -> Void)?](gcdevicephysicalinput/inputstateavailablehandler.md)
+### Handling device input
+- [var inputStateAvailableHandler: ((any GCDevicePhysicalInput) -> Void)?](./inputstateavailablehandler.md)
   The block that the profile calls when Game Controller adds an input state to the queue.
-- [var inputStateQueueDepth: Int](gcdevicephysicalinput/inputstatequeuedepth.md)
+- [var inputStateQueueDepth: Int](./inputstatequeuedepth.md)
   The maximum number of input values that the queue stores.
-- [func capture() -> any GCDevicePhysicalInputState](gcdevicephysicalinput/capture.md)
+- [func capture() -> any GCDevicePhysicalInputState](./capture%28%29.md)
   Returns a snapshot of the physical device inputs.
-- [var elementValueDidChangeHandler: ((any GCDevicePhysicalInput, any GCPhysicalInputElement) -> Void)?](gcdevicephysicalinput/elementvaluedidchangehandler.md)
+- [var elementValueDidChangeHandler: ((any GCDevicePhysicalInput, any GCPhysicalInputElement) -> Void)?](./elementvaluedidchangehandler.md)
   A block that the profile calls when an element’s value changes.
 
 

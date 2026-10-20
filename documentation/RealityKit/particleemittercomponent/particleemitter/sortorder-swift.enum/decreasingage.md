@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.ParticleEmitter.SortOrder.decreasingAge
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Particles emitted earlier are rendered before particles emitted more recently.
 

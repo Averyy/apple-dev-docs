@@ -1,7 +1,8 @@
 # AdGroupCreate.PricingModel
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The unit of ad delivery an ad group is charged for, independent of how the account funds spend.
 
@@ -10,9 +11,15 @@ The unit of ad delivery an ad group is charged for, independent of how the accou
 
 ## Declaration
 
-```swift
+```
 string AdGroupCreate.PricingModel
 ```
+
+## Possible Values
+
+- `CPA`: Cost-per-action.
+- `CPM`: Cost-per-thousand-impressions. Pairs with `billingEvent: IMPRESSIONS`.
+- `CPT`: Cost-per-tap. Pairs with `billingEvent: TAPS`.
 
 #### Discussion
 

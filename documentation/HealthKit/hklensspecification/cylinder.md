@@ -1,7 +1,8 @@
 # cylinder
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Part of the correction for astigmatism that measures the strength of the correction.
 
@@ -20,17 +21,22 @@ Part of the correction for astigmatism that measures the strength of the correct
 var cylinder: HKQuantity? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) HKQuantity * cylinder;
+```
+
 #### Discussion
 
-This quantity measures the strength of the correction in [`diopter()`](hkunit/diopter().md) units. The range is -3.0 to 3.0.
+This quantity measures the strength of the correction in [`diopter()`](../hkunit/diopter%28%29.md) units. The range is -3.0 to 3.0.
 
 ## See Also
 
-- [var sphere: HKQuantity](hklensspecification/sphere.md)
+### Accessing lens specification data
+- [var sphere: HKQuantity](./sphere.md)
   The correction for farsightedness.
-- [var axis: HKQuantity?](hklensspecification/axis.md)
+- [var axis: HKQuantity?](./axis.md)
   Part of the correction for astigmatism that measures the orientation fo the correction.
-- [var addPower: HKQuantity?](hklensspecification/addpower.md)
+- [var addPower: HKQuantity?](./addpower.md)
   The correction for nearsightedness.
 
 

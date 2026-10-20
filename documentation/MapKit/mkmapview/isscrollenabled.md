@@ -1,7 +1,8 @@
 # isScrollEnabled
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the user may scroll around the map.
 
@@ -19,23 +20,28 @@ A Boolean value that determines whether the user may scroll around the map.
 var isScrollEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isScrollEnabled) BOOL scrollEnabled;
+```
+
 #### Discussion
 
-This property controls only user interactions with the map. If you set the value of this property to [`false`](https://developer.apple.com/documentation/swift/false), you may still change the map location programmatically by changing the value in the [`region`](mkmapview/region.md) property.
+This property controls only user interactions with the map. If you set the value of this property to [`false`](../../Swift/false.md), you may still change the map location programmatically by changing the value in the [`region`](./region.md) property.
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value of this property is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [enum MKMapType](mkmaptype.md)
+### Accessing map properties
+- [enum MKMapType](../mkmaptype.md)
   The type of map to display.
-- [var isZoomEnabled: Bool](mkmapview/iszoomenabled.md)
+- [var isZoomEnabled: Bool](./iszoomenabled.md)
   A Boolean value that determines whether the user may use pinch gestures to zoom in and out of the map.
-- [var isPitchEnabled: Bool](mkmapview/ispitchenabled.md)
+- [var isPitchEnabled: Bool](./ispitchenabled.md)
   A Boolean value that indicates whether the map uses the camera’s pitch information.
-- [var isRotateEnabled: Bool](mkmapview/isrotateenabled.md)
+- [var isRotateEnabled: Bool](./isrotateenabled.md)
   A Boolean value that indicates whether the map uses the camera’s heading information.
-- [var mapType: MKMapType](mkmapview/maptype.md)
+- [var mapType: MKMapType](./maptype.md)
   The type of data the map view displays.
 
 

@@ -1,7 +1,8 @@
 # kIOUSBDecriptorTypeReport
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The type for a report descriptor.
 
@@ -10,15 +11,16 @@ The type for a report descriptor.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBDecriptorTypeReport = 34
 ```
 
 ## See Also
 
-- [kIOUSBDecriptorTypeHID](tiousbdescriptortype/kiousbdecriptortypehid.md)
+### Getting the Descriptor Type
+- [kIOUSBDecriptorTypeHID](./kiousbdecriptortypehid.md)
   The type for a human interaction device descriptor.
-- [kIOUSBDescriptorTypePhysical](tiousbdescriptortype/kiousbdescriptortypephysical.md)
+- [kIOUSBDescriptorTypePhysical](./kiousbdescriptortypephysical.md)
   The type for a physical descriptor.
 
 

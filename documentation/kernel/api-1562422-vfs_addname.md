@@ -1,7 +1,8 @@
 # vfs_addname
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Deprecated
 
@@ -10,7 +11,7 @@ Deprecated
 
 ## Declaration
 
-```swift
+```c
 const char * vfs_addname(const char *name, uint32_t len, uint32_t nc_hash, uint32_t flags);
 ```
 

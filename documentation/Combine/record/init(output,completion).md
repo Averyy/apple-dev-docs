@@ -1,7 +1,8 @@
 # init(output:completion:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a record publisher to publish the provided elements, followed by the provided completion value.
 
@@ -27,9 +28,10 @@ init(output: [Output], completion: Subscribers.Completion<Failure>)
 
 ## See Also
 
-- [init(record: (inout Record<Output, Failure>.Recording) -> Void)](record/init(record:).md)
+### Creating a record publisher
+- [init(record: (inout Record<Output, Failure>.Recording) -> Void)](./init%28record%29.md)
   Creates a publisher to interactively record a series of outputs and a completion.
-- [init(recording: Record<Output, Failure>.Recording)](record/init(recording:).md)
+- [init(recording: Record<Output, Failure>.Recording)](./init%28recording%29.md)
   Creates a record publisher from an existing recording.
 
 

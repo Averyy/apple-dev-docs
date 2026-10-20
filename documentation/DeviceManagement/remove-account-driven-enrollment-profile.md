@@ -1,7 +1,8 @@
 # Remove Account-Driven Enrollment Profile
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Remove the Account-Driven Enrollment profile that the MDM server sets, which includes information about service discovery for account-driven enrollment.
 
@@ -12,11 +13,19 @@ Remove the Account-Driven Enrollment profile that the MDM server sets, which inc
 
 `DELETE https://mdmenrollment.apple.com/account-driven-enrollment/profile`
 
+## Responses
+
+- `200` OK
+- `400` Bad Request:
+
+  - `ORG_NOT_SUPPORTED`: Indicates that the associated organization isn’t supported.
+
 ## See Also
 
-- [Assign Account-Driven Enrollment Service Discovery](assign-account-driven-enrollment-profile.md)
+### Account-driven enrollment service discovery
+- [Assign Account-Driven Enrollment Service Discovery](./assign-account-driven-enrollment-profile.md)
   The Account-Driven Enrollment profile defines key attributes related to service discovery for account-driven enrollment by MDM.
-- [Fetch Account-Driven Enrollment Service Discovery](fetch-account-driven-enrollment-profile.md)
+- [Fetch Account-Driven Enrollment Service Discovery](./fetch-account-driven-enrollment-profile.md)
   Fetch the Account-Driven Enrollment profile that the MDM server sets, which includes information about service discovery for account-driven enrollment.
 
 

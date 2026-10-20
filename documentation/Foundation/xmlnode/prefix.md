@@ -1,7 +1,8 @@
 # prefix
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the prefix of the receiver’s name.
 
@@ -15,6 +16,10 @@ Returns the prefix of the receiver’s name.
 var prefix: String? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSString * prefix;
+```
+
 #### Return Value
 
 A string containing the receiver’s prefix. This method returns an empty string if the receiver’s name is not qualified by a namespace.
@@ -25,11 +30,12 @@ The prefix is the part of a namespace-qualified name that precedes the colon. Fo
 
 ## See Also
 
-- [var localName: String?](xmlnode/localname.md)
+### Managing Namespaces
+- [var localName: String?](./localname.md)
   Returns the local name of the receiver.
-- [class func localName(forName: String) -> String](xmlnode/localname(forname:).md)
+- [class func localName(forName: String) -> String](./localname%28forname%29.md)
   Returns the local name from the specified qualified name.
-- [class func prefix(forName: String) -> String?](xmlnode/prefix(forname:).md)
+- [class func prefix(forName: String) -> String?](./prefix%28forname%29.md)
   Returns the prefix from the specified qualified name.
 
 

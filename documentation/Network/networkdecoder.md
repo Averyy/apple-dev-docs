@@ -1,7 +1,8 @@
 # NetworkDecoder
 
 **Framework**: Network  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that conforms to the NetworkEncoder protocol can decode data to an Encodable object
 
@@ -23,7 +24,7 @@ protocol NetworkDecoder
 ## Topics
 
 ### Instance Methods
-- [func decode<T>(T.Type, from: Data) throws -> T](networkdecoder/decode(_:from:).md)
+- [func decode<T>(T.Type, from: Data) throws -> T](./networkdecoder/decode%28_,from%29.md)
   Decode a decodable object from Data
 
 

@@ -1,20 +1,21 @@
 # Certificate.Relationships.PassTypeId.Data
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a related resource.
 
 ## Declaration
 
-```swift
+```
 object Certificate.Relationships.PassTypeId.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `passTypeIds`
 
 
 ---

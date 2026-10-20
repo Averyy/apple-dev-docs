@@ -2,6 +2,7 @@
 
 **Framework**: Accessory Live Activities  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Indicates that the system invalidated the session and stopped sending Live Activity updates.
@@ -18,11 +19,12 @@ func sessionInvalidated()
 
 ## Mentions
 
-- [Receiving Live Activity updates and alerts on an accessory](receiving-live-activities-on-an-accessory.md)
+- [Receiving Live Activity updates and alerts on an accessory](../../receiving-live-activities-on-an-accessory.md)
 
 ## See Also
 
-- [func activate(for: LiveActivityForwarding.Session)](liveactivityforwarding/accessoryliveactivitieshandler/activate(for:).md)
+### Managing the session life cycle
+- [func activate(for: LiveActivityForwarding.Session)](./activate%28for%29.md)
   Establishes communication between the data provider extension and the system.
 
 

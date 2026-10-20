@@ -1,21 +1,22 @@
 # AppCustomProductPageVersion.Relationships.AppCustomProductPageLocalizations
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 1.7+
 
 ## Declaration
 
-```swift
+```
 object AppCustomProductPageVersion.Relationships.AppCustomProductPageLocalizations
 ```
 
 ## Topics
 
 ### Objects
-- [object AppCustomProductPageVersion.Relationships.AppCustomProductPageLocalizations.Data](appcustomproductpageversion/relationships-data.dictionary/appcustomproductpagelocalizations-data.dictionary/data-data.dictionary.md)
+- [object AppCustomProductPageVersion.Relationships.AppCustomProductPageLocalizations.Data](./appcustomproductpagelocalizations-data.dictionary/data-data.dictionary.md)
   The request body you use to update an app custom product page version.
 
 ## Properties
@@ -26,7 +27,8 @@ object AppCustomProductPageVersion.Relationships.AppCustomProductPageLocalizatio
 
 ## See Also
 
-- [object AppCustomProductPageVersion.Relationships.AppCustomProductPage](appcustomproductpageversion/relationships-data.dictionary/appcustomproductpage-data.dictionary.md)
+### Objects
+- [object AppCustomProductPageVersion.Relationships.AppCustomProductPage](./appcustomproductpage-data.dictionary.md)
 
 
 ---

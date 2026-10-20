@@ -8,20 +8,21 @@
 
 ## Declaration
 
-```swift
+```c
 struct mouseMove;
 ```
 
 ## See Also
 
-- [compound](nxeventdata/1575902-compound.md)
-- [key](nxeventdata/1575833-key.md)
-- [mouse](nxeventdata/1575741-mouse.md)
-- [proximity](nxeventdata/1575761-proximity.md)
-- [scrollWheel](nxeventdata/1575822-scrollwheel.md)
-- [tablet](nxeventdata/1575803-tablet.md)
-- [tracking](nxeventdata/1575898-tracking.md)
-- [zoom](nxeventdata/1575739-zoom.md)
+### Miscellaneous
+- [compound](./api-1575902-compound.md)
+- [key](./api-1575833-key.md)
+- [mouse](./api-1575741-mouse.md)
+- [proximity](./api-1575761-proximity.md)
+- [scrollWheel](./api-1575822-scrollwheel.md)
+- [tablet](./api-1575803-tablet.md)
+- [tracking](./api-1575898-tracking.md)
+- [zoom](./api-1575739-zoom.md)
 
 
 ---

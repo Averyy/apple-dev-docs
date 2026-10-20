@@ -1,17 +1,22 @@
 # matchesSearch(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns TRUE any of the UUID arrays in the search array match the target service.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func matchesSearch(_ searchArray: [Any]!) -> Bool
+```
+
+```objc
+- (BOOL) matchesSearchArray:(NSArray *) searchArray;
 ```
 
 #### Return Value
@@ -20,7 +25,7 @@ Returns `TRUE` if any of the UUID arrays match.
 
 #### Discussion
 
-The given array should contain [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) objects. Each sub-[`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) should contain [`IOBluetoothSDPUUID`](iobluetoothsdpuuid.md) objects. In turn, each sub-NSArray gets passed to -matchesUUIDArray: If any of those returns `TRUE`, then the search stops and `TRUE` is returned. Essentially the primary NSArray contains the OR operations and each sub-array contains the AND operations.
+The given array should contain [`NSArray`](../../Foundation/nsarray.md) objects. Each sub-[`NSArray`](../../Foundation/nsarray.md) should contain [`IOBluetoothSDPUUID`](../iobluetoothsdpuuid.md) objects. In turn, each sub-NSArray gets passed to -matchesUUIDArray: If any of those returns `TRUE`, then the search stops and `TRUE` is returned. Essentially the primary NSArray contains the OR operations and each sub-array contains the AND operations.
 
 NOTE: This method is only available in macOS 10.2.4 (Bluetooth v1.1) or later.
 

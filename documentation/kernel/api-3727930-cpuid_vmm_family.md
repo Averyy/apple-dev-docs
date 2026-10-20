@@ -1,14 +1,15 @@
 # cpuid_vmm_family
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 uint32_t cpuid_vmm_family(void);
 ```
 

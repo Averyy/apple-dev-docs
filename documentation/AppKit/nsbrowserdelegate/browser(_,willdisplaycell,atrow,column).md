@@ -1,18 +1,23 @@
 # browser(_:willDisplayCell:atRow:column:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gives the delegate the opportunity to modify the specified cell at the given row and column location before the browser displays it.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @MainActor
 optional func browser(_ sender: NSBrowser, willDisplayCell cell: Any, atRow row: Int, column: Int)
+```
+
+```objc
+- (void) browser:(NSBrowser *) sender willDisplayCell:(id) cell atRow:(NSInteger) row column:(NSInteger) column;
 ```
 
 #### Discussion
@@ -28,11 +33,13 @@ The delegate should set any state necessary for the correct display of the cell.
 
 ## See Also
 
-- [func browser(NSBrowser, numberOfRowsInColumn: Int) -> Int](nsbrowserdelegate/browser(_:numberofrowsincolumn:).md)
+### Related Documentation
+- [func browser(NSBrowser, numberOfRowsInColumn: Int) -> Int](./browser%28_,numberofrowsincolumn%29.md)
   Returns the number of rows of data in the specified column.
-- [func browser(NSBrowser, createRowsForColumn: Int, in: NSMatrix)](nsbrowserdelegate/browser(_:createrowsforcolumn:in:).md)
+### Managing Columns
+- [func browser(NSBrowser, createRowsForColumn: Int, in: NSMatrix)](./browser%28_,createrowsforcolumn,in%29.md)
   Creates a row in the given matrix for each row of data in the specified column of the browser.
-- [func browser(NSBrowser, didChangeLastColumn: Int, toColumn: Int)](nsbrowserdelegate/browser(_:didchangelastcolumn:tocolumn:).md)
+- [func browser(NSBrowser, didChangeLastColumn: Int, toColumn: Int)](./browser%28_,didchangelastcolumn,tocolumn%29.md)
   Tells the delegate that the browser’s last column changed.
 
 

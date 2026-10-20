@@ -1,7 +1,8 @@
 # HumanHandPoseObservation.JointName.wrist
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A joint name that represents the wrist.
 

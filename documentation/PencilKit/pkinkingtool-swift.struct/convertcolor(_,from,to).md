@@ -1,7 +1,8 @@
 # convertColor(_:from:to:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Convert a color from one user interface style to another.
 
@@ -19,7 +20,7 @@ static func convertColor(_ color: UIColor, from: UIUserInterfaceStyle, to: UIUse
 
 #### Return Value
 
-A [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) from the user interface style specified in the `to` parameter.
+A [`UIColor`](../../UIKit/uicolor.md) from the user interface style specified in the `to` parameter.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # maximumLineHeight
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The paragraph’s maximum line height.
 
@@ -14,6 +15,10 @@ The paragraph’s maximum line height.
 var maximumLineHeight: CGFloat { get }
 ```
 
+```objc
+@property (readonly) CGFloat maximumLineHeight;
+```
+
 #### Discussion
 
 This property contains the maximum height in points that any line in the receiver occupies, regardless of the font size or size of any attached graphic. This value is always nonnegative. The default value is `0`.
@@ -22,25 +27,26 @@ Glyphs and graphics exceeding this height overlaps neighboring lines; however, a
 
 ## See Also
 
-- [var alignment: NSTextAlignment](nsparagraphstyle/alignment.md)
+### Accessing style information
+- [var alignment: NSTextAlignment](./alignment.md)
   The text alignment of the paragraph.
-- [enum NSTextAlignment](nstextalignment.md)
+- [enum NSTextAlignment](../nstextalignment.md)
   Constants that specify text alignment.
-- [var firstLineHeadIndent: CGFloat](nsparagraphstyle/firstlineheadindent.md)
+- [var firstLineHeadIndent: CGFloat](./firstlineheadindent.md)
   The indentation of the first line of the paragraph.
-- [var headIndent: CGFloat](nsparagraphstyle/headindent.md)
+- [var headIndent: CGFloat](./headindent.md)
   The indentation of the paragraph’s lines other than the first.
-- [var tailIndent: CGFloat](nsparagraphstyle/tailindent.md)
+- [var tailIndent: CGFloat](./tailindent.md)
   The trailing indentation of the paragraph.
-- [var lineHeightMultiple: CGFloat](nsparagraphstyle/lineheightmultiple.md)
+- [var lineHeightMultiple: CGFloat](./lineheightmultiple.md)
   The line height multiple.
-- [var minimumLineHeight: CGFloat](nsparagraphstyle/minimumlineheight.md)
+- [var minimumLineHeight: CGFloat](./minimumlineheight.md)
   The paragraph’s minimum line height.
-- [var lineSpacing: CGFloat](nsparagraphstyle/linespacing.md)
+- [var lineSpacing: CGFloat](./linespacing.md)
   The distance in points between the bottom of one line fragment and the top of the next.
-- [var paragraphSpacing: CGFloat](nsparagraphstyle/paragraphspacing.md)
+- [var paragraphSpacing: CGFloat](./paragraphspacing.md)
   Distance between the bottom of this paragraph and top of next.
-- [var paragraphSpacingBefore: CGFloat](nsparagraphstyle/paragraphspacingbefore.md)
+- [var paragraphSpacingBefore: CGFloat](./paragraphspacingbefore.md)
   The distance between the paragraph’s top and the beginning of its text content.
 
 

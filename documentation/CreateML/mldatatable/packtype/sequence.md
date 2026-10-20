@@ -1,7 +1,8 @@
 # MLDataTable.PackType.sequence
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A packing type that combines the values of several columns into a sequence type.
 
@@ -21,7 +22,8 @@ case sequence
 
 ## See Also
 
-- [MLDataTable.PackType.dictionary](mldatatable/packtype/dictionary.md)
+### Selecting a packing operation
+- [MLDataTable.PackType.dictionary](./dictionary.md)
   A packing type that combines the values of several columns into a dictionary type.
 
 

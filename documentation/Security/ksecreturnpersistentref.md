@@ -1,7 +1,8 @@
 # kSecReturnPersistentRef
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a Boolean indicating whether or not to return a persistent reference to an item.
 
@@ -20,9 +21,13 @@ A key whose value is a Boolean indicating whether or not to return a persistent 
 let kSecReturnPersistentRef: CFString
 ```
 
+```c
+extern CFStringRef const kSecReturnPersistentRef;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean). A value of [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue) indicates that a persistent reference to an item should be returned as a [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) object. Unlike normal references, a persistent reference may be stored on disk or passed between processes.
+The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md). A value of [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) indicates that a persistent reference to an item should be returned as a [`CFData`](../CoreFoundation/cfdata.md) object. Unlike normal references, a persistent reference may be stored on disk or passed between processes.
 
 
 ---

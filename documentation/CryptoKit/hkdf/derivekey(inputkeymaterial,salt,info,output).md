@@ -1,7 +1,8 @@
 # deriveKey(inputKeyMaterial:salt:info:output:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Derives a symmetric encryption key from a main key or passcode using HKDF key derivation with information and salt you specify.
 

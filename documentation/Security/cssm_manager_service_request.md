@@ -1,7 +1,8 @@
 # CSSM_MANAGER_SERVICE_REQUEST
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_MANAGER_SERVICE_REQUEST: Int32 { get }
+```
+
+```c
+#define CSSM_MANAGER_SERVICE_REQUEST
 ```
 
 

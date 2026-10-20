@@ -1,7 +1,8 @@
 # kColorSync8BitInteger
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 8-bit integer components.
 
@@ -20,21 +21,26 @@
 var kColorSync8BitInteger: ColorSyncDataDepth { get }
 ```
 
+```c
+kColorSync8BitInteger
+```
+
 ## See Also
 
-- [var kColorSync10BitInteger: ColorSyncDataDepth](kcolorsync10bitinteger.md)
+### Choosing bit depth and range
+- [var kColorSync10BitInteger: ColorSyncDataDepth](./kcolorsync10bitinteger.md)
   10-bit integer components.
-- [var kColorSync16BitFloat: ColorSyncDataDepth](kcolorsync16bitfloat.md)
+- [var kColorSync16BitFloat: ColorSyncDataDepth](./kcolorsync16bitfloat.md)
   16-bit floating-point (half-float) components.
-- [var kColorSync16BitInteger: ColorSyncDataDepth](kcolorsync16bitinteger.md)
+- [var kColorSync16BitInteger: ColorSyncDataDepth](./kcolorsync16bitinteger.md)
   16-bit integer components.
-- [var kColorSync1BitGamut: ColorSyncDataDepth](kcolorsync1bitgamut.md)
+- [var kColorSync1BitGamut: ColorSyncDataDepth](./kcolorsync1bitgamut.md)
   One-bit values, used for gamut-check results.
-- [var kColorSync32BitFloat: ColorSyncDataDepth](kcolorsync32bitfloat.md)
+- [var kColorSync32BitFloat: ColorSyncDataDepth](./kcolorsync32bitfloat.md)
   32-bit floating-point components.
-- [var kColorSync32BitInteger: ColorSyncDataDepth](kcolorsync32bitinteger.md)
+- [var kColorSync32BitInteger: ColorSyncDataDepth](./kcolorsync32bitinteger.md)
   32-bit integer components.
-- [var kColorSync32BitNamedColorIndex: ColorSyncDataDepth](kcolorsync32bitnamedcolorindex.md)
+- [var kColorSync32BitNamedColorIndex: ColorSyncDataDepth](./kcolorsync32bitnamedcolorindex.md)
   32-bit named-color index values.
 
 

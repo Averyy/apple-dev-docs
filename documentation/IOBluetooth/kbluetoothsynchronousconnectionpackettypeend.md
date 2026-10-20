@@ -1,10 +1,11 @@
 # kBluetoothSynchronousConnectionPacketTypeEnd
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,21 +13,26 @@
 var kBluetoothSynchronousConnectionPacketTypeEnd: Int { get }
 ```
 
+```c
+kBluetoothSynchronousConnectionPacketTypeEnd
+```
+
 ## See Also
 
-- [var kBluetoothSynchronousConnectionPacketType2EV3Omit: Int](kbluetoothsynchronousconnectionpackettype2ev3omit.md)
-- [var kBluetoothSynchronousConnectionPacketType2EV5Omit: Int](kbluetoothsynchronousconnectionpackettype2ev5omit.md)
-- [var kBluetoothSynchronousConnectionPacketType3EV3Omit: Int](kbluetoothsynchronousconnectionpackettype3ev3omit.md)
-- [var kBluetoothSynchronousConnectionPacketType3EV5Omit: Int](kbluetoothsynchronousconnectionpackettype3ev5omit.md)
-- [var kBluetoothSynchronousConnectionPacketTypeAll: Int](kbluetoothsynchronousconnectionpackettypeall.md)
-- [var kBluetoothSynchronousConnectionPacketTypeEV3: Int](kbluetoothsynchronousconnectionpackettypeev3.md)
-- [var kBluetoothSynchronousConnectionPacketTypeEV4: Int](kbluetoothsynchronousconnectionpackettypeev4.md)
-- [var kBluetoothSynchronousConnectionPacketTypeEV5: Int](kbluetoothsynchronousconnectionpackettypeev5.md)
-- [var kBluetoothSynchronousConnectionPacketTypeFutureUse: Int](kbluetoothsynchronousconnectionpackettypefutureuse.md)
-- [var kBluetoothSynchronousConnectionPacketTypeHV1: Int](kbluetoothsynchronousconnectionpackettypehv1.md)
-- [var kBluetoothSynchronousConnectionPacketTypeHV2: Int](kbluetoothsynchronousconnectionpackettypehv2.md)
-- [var kBluetoothSynchronousConnectionPacketTypeHV3: Int](kbluetoothsynchronousconnectionpackettypehv3.md)
-- [var kBluetoothSynchronousConnectionPacketTypeNone: Int](kbluetoothsynchronousconnectionpackettypenone.md)
+### Constants
+- [var kBluetoothSynchronousConnectionPacketType2EV3Omit: Int](./kbluetoothsynchronousconnectionpackettype2ev3omit.md)
+- [var kBluetoothSynchronousConnectionPacketType2EV5Omit: Int](./kbluetoothsynchronousconnectionpackettype2ev5omit.md)
+- [var kBluetoothSynchronousConnectionPacketType3EV3Omit: Int](./kbluetoothsynchronousconnectionpackettype3ev3omit.md)
+- [var kBluetoothSynchronousConnectionPacketType3EV5Omit: Int](./kbluetoothsynchronousconnectionpackettype3ev5omit.md)
+- [var kBluetoothSynchronousConnectionPacketTypeAll: Int](./kbluetoothsynchronousconnectionpackettypeall.md)
+- [var kBluetoothSynchronousConnectionPacketTypeEV3: Int](./kbluetoothsynchronousconnectionpackettypeev3.md)
+- [var kBluetoothSynchronousConnectionPacketTypeEV4: Int](./kbluetoothsynchronousconnectionpackettypeev4.md)
+- [var kBluetoothSynchronousConnectionPacketTypeEV5: Int](./kbluetoothsynchronousconnectionpackettypeev5.md)
+- [var kBluetoothSynchronousConnectionPacketTypeFutureUse: Int](./kbluetoothsynchronousconnectionpackettypefutureuse.md)
+- [var kBluetoothSynchronousConnectionPacketTypeHV1: Int](./kbluetoothsynchronousconnectionpackettypehv1.md)
+- [var kBluetoothSynchronousConnectionPacketTypeHV2: Int](./kbluetoothsynchronousconnectionpackettypehv2.md)
+- [var kBluetoothSynchronousConnectionPacketTypeHV3: Int](./kbluetoothsynchronousconnectionpackettypehv3.md)
+- [var kBluetoothSynchronousConnectionPacketTypeNone: Int](./kbluetoothsynchronousconnectionpackettypenone.md)
 
 
 ---

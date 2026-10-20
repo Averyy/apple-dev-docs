@@ -1,21 +1,26 @@
 # UIBaselineAdjustment.none
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Adjust text relative to the top-left corner of the bounding box.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case none
+```
+
+```c
+UIBaselineAdjustmentNone
 ```
 
 #### Discussion
@@ -24,9 +29,10 @@ This is the default adjustment.
 
 ## See Also
 
-- [UIBaselineAdjustment.alignBaselines](uibaselineadjustment/alignbaselines.md)
+### Constants
+- [UIBaselineAdjustment.alignBaselines](./alignbaselines.md)
   Adjust text relative to the position of its baseline.
-- [UIBaselineAdjustment.alignCenters](uibaselineadjustment/aligncenters.md)
+- [UIBaselineAdjustment.alignCenters](./aligncenters.md)
   Adjust text relative to the center of its bounding box.
 
 

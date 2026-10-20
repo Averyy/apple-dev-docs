@@ -1,7 +1,8 @@
 # vfs_fsremove
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Unregister a filesystem with VFS.
 
@@ -10,11 +11,11 @@ Unregister a filesystem with VFS.
 
 ## Declaration
 
-```swift
+```c
 int vfs_fsremove(vfstable_t handle);
 ```
 
-#### Return_value
+#### Return Value
 
 0 for success, else an error code.
 

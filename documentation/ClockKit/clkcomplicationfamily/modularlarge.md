@@ -1,7 +1,8 @@
 # CLKComplicationFamily.modularLarge
 
 **Framework**: ClockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A large rectangular area that ClockKit displays on the Modular watch face.
 
@@ -14,15 +15,20 @@ A large rectangular area that ClockKit displays on the Modular watch face.
 case modularLarge
 ```
 
+```c
+CLKComplicationFamilyModularLarge
+```
+
 #### Discussion
 
 The following figure shows the size and location of the modular large complication.
 
-![Diagram showing the size and position of a modular large complication.](/images/com.apple.clockkit/media-2933731@2x.png)
+![Diagram showing the size and position of a modular large complication.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-2933731@2x.png)
 
 ## See Also
 
-- [CLKComplicationFamily.modularSmall](clkcomplicationfamily/modularsmall.md)
+### Modular
+- [CLKComplicationFamily.modularSmall](./modularsmall.md)
   A small square area that ClockKit displays on the Modular watch face.
 
 

@@ -1,12 +1,13 @@
 # validateUserInterfaceItem(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Validates the specified user interface item that the receiver manages.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,13 @@ Validates the specified user interface item that the receiver manages.
 func validateUserInterfaceItem(_ item: any NSValidatedUserInterfaceItem) -> Bool
 ```
 
+```objc
+- (BOOL) validateUserInterfaceItem:(id<NSValidatedUserInterfaceItem>) item;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the item is valid; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the item is valid; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 

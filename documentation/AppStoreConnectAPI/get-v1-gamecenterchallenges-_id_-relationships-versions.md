@@ -1,7 +1,8 @@
 # Read the versions for a Game Center challenge
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get version information for a specific Game Center challenge.
 
@@ -14,23 +15,39 @@ Get version information for a specific Game Center challenge.
 
 ## Parameters
 
-- `limit` (integer)
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the Game Center challenge resource ID from the [`Read Group Information`](./get-v1-gamecentergroups.md) response.
+
+### Query Parameters
+
+- `limit` (integer): **Maximum**: `200`
+
+## Responses
+
+- `200` OK (`GameCenterChallengeVersionsLinkagesResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create a Challenge Version](post-v1-gamecenterchallengeversions.md)
+### Creating and listing versions
+- [Create a Challenge Version](./post-v1-gamecenterchallengeversions.md)
   Add a version for a specific Game Center challenge.
-- [Read the Versions for a Challenge](get-v1-gamecenterchallenges-_id_-versions.md)
+- [Read the Versions for a Challenge](./get-v1-gamecenterchallenges-_id_-versions.md)
   Get a list of versions for a specific Game Center challenge.
-- [Read Challenge Version Information](get-v1-gamecenterchallengeversions-_id_.md)
+- [Read Challenge Version Information](./get-v1-gamecenterchallengeversions-_id_.md)
   Get information for a specific Game Center challenge localization.
-- [Read Default Image Information for a Challenge Version](get-v1-gamecenterchallengeversions-_id_-defaultimage.md)
+- [Read Default Image Information for a Challenge Version](./get-v1-gamecenterchallengeversions-_id_-defaultimage.md)
   Get details about the default image for a specific Game Center challenge version.
-- [List All Localizations for a Challenge Version](get-v1-gamecenterchallengeversions-_id_-localizations.md)
+- [List All Localizations for a Challenge Version](./get-v1-gamecenterchallengeversions-_id_-localizations.md)
   Get details about the default localization for a specific Game Center challenge version.
-- [Get the default image id for a challenge version](get-v1-gamecenterchallengeversions-_id_-relationships-defaultimage.md)
+- [Get the default image id for a challenge version](./get-v1-gamecenterchallengeversions-_id_-relationships-defaultimage.md)
   Get the default image ID for a specific Game Center challenge version.
-- [Get the localization ids for a challenge version](get-v1-gamecenterchallengeversions-_id_-relationships-localizations.md)
+- [Get the localization ids for a challenge version](./get-v1-gamecenterchallengeversions-_id_-relationships-localizations.md)
   List all the localization IDs for a specific Game Center challenge version.
 
 

@@ -1,7 +1,8 @@
 # NWInterface.RadioType.Cellular.lte
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 15.0+

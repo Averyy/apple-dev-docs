@@ -1,14 +1,15 @@
 # requestInProgress
 
 **Framework**: IdentityDocumentServices  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error that indicates that there is currently a request in progress.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 26.0+
 
 ## Declaration

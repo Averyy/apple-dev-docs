@@ -1,7 +1,8 @@
 # addAnimations(_:delayFactor:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified animation block to the animator with a delay.
 
@@ -18,6 +19,10 @@ Adds the specified animation block to the animator with a delay.
 optional func addAnimations(_ animation: @escaping () -> Void, delayFactor: CGFloat)
 ```
 
+```objc
+- (void) addAnimations:(void (^)()) animation delayFactor:(CGFloat) delayFactor;
+```
+
 #### Discussion
 
 Use this method to add new animation blocks to your custom animator object. The animations in the new block should run alongside any previously configured animations, starting after the specified delay and finishing at the same time as any original animations. Your implementation must be able to handle multiple calls to this method.
@@ -29,11 +34,12 @@ Use this method to add new animation blocks to your custom animator object. The 
 
 ## See Also
 
-- [func addAnimations(() -> Void)](uiviewimplicitlyanimating/addanimations(_:).md)
+### Modifying animations
+- [func addAnimations(() -> Void)](./addanimations%28_%29.md)
   Adds the specified animation block to the animator.
-- [func addCompletion((UIViewAnimatingPosition) -> Void)](uiviewimplicitlyanimating/addcompletion(_:).md)
+- [func addCompletion((UIViewAnimatingPosition) -> Void)](./addcompletion%28_%29.md)
   Adds the specified completion block to the animator.
-- [func continueAnimation(withTimingParameters: (any UITimingCurveProvider)?, durationFactor: CGFloat)](uiviewimplicitlyanimating/continueanimation(withtimingparameters:durationfactor:).md)
+- [func continueAnimation(withTimingParameters: (any UITimingCurveProvider)?, durationFactor: CGFloat)](./continueanimation%28withtimingparameters,durationfactor%29.md)
   Adjusts the final timing and duration of a paused animation.
 
 

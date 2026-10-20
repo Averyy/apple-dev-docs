@@ -1,7 +1,8 @@
 # kernelHeight
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The property that defines the kernel size  in height dimension.
 
@@ -17,6 +18,10 @@ The property that defines the kernel size  in height dimension.
 
 ```swift
 var kernelHeight: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger kernelHeight;
 ```
 
 

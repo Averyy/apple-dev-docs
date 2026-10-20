@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The localized name for the element without any system-level remapping of the controls.
@@ -18,6 +19,10 @@ The localized name for the element without any system-level remapping of the con
 
 ```swift
 var elementLocalizedName: String? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) NSString * elementLocalizedName;
 ```
 
 

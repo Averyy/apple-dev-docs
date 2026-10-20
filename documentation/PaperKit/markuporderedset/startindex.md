@@ -1,7 +1,8 @@
 # startIndex
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the first element in the set.
 

@@ -1,7 +1,8 @@
 # messageReceivedFromContainingApp(withName:userInfo:)
 
 **Framework**: Safari Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A method the system calls when the extension receives a message from the extension’s containing app.
 
@@ -14,6 +15,10 @@ A method the system calls when the extension receives a message from the extensi
 optional func messageReceivedFromContainingApp(withName messageName: String, userInfo: [String : Any]? = nil)
 ```
 
+```objc
+- (void) messageReceivedFromContainingAppWithName:(NSString *) messageName userInfo:(NSDictionary<NSString *,id> *) userInfo;
+```
+
 ## Parameters
 
 - `messageName`: A string that identifies the message.
@@ -21,9 +26,11 @@ optional func messageReceivedFromContainingApp(withName messageName: String, use
 
 ## See Also
 
-- [class func dispatchMessage(withName: String, toExtensionWithIdentifier: String, userInfo: [String : Any]?, completionHandler: (((any Error)?) -> Void)?)](sfsafariapplication/dispatchmessage(withname:toextensionwithidentifier:userinfo:completionhandler:).md)
+### Related Documentation
+- [class func dispatchMessage(withName: String, toExtensionWithIdentifier: String, userInfo: [String : Any]?, completionHandler: (((any Error)?) -> Void)?)](../sfsafariapplication/dispatchmessage%28withname,toextensionwithidentifier,userinfo,completionhandler%29.md)
   Sends a message to a Safari app extension, launching Safari if necessary.
-- [func messageReceived(withName: String, from: SFSafariPage, userInfo: [String : Any]?)](sfsafariextensionhandling/messagereceived(withname:from:userinfo:).md)
+### Receiving Messages in Your App Extension
+- [func messageReceived(withName: String, from: SFSafariPage, userInfo: [String : Any]?)](./messagereceived%28withname,from,userinfo%29.md)
   A method the system calls when the extension receives a message from an injected script.
 
 

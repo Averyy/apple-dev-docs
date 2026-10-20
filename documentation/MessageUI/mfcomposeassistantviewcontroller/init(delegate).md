@@ -1,7 +1,8 @@
 # init(delegate:)
 
 **Framework**: Message UI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 3.0+
@@ -13,6 +14,10 @@
 
 ```swift
 init(delegate: any MFComposeAssistantViewControllerDelegate)
+```
+
+```objc
+- (instancetype) initWithDelegate:(id<MFComposeAssistantViewControllerDelegate>) delegate;
 ```
 
 

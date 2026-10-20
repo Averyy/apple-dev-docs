@@ -1,7 +1,8 @@
 # UIWritingToolsCoordinator.TextAnimation.indicateGrammar
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The animation effect that Writing Tools performs on grammar issues when they are first indicated.
 
@@ -15,6 +16,10 @@ The animation effect that Writing Tools performs on grammar issues when they are
 
 ```swift
 case indicateGrammar
+```
+
+```c
+UIWritingToolsCoordinatorTextAnimationIndicateGrammar
 ```
 
 #### Discussion

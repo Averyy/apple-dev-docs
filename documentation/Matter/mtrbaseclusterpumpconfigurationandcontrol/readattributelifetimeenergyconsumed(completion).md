@@ -1,7 +1,8 @@
 # readAttributeLifetimeEnergyConsumed(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeLifetimeEnergyConsumed(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeLifetimeEnergyConsumed() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeLifetimeEnergyConsumedWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

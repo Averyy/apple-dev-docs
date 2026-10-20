@@ -1,16 +1,18 @@
 # ParavirtualizedGraphics Functions
 
-**Framework**: Paravirtualized Graphics
+**Framework**: Paravirtualized Graphics  
+**Role**: API Collection
 
 ## Topics
 
 ### Functions
-- [func PGMaxDisplayPortCount() -> UInt32](pgmaxdisplayportcount().md)
+- [func PGMaxDisplayPortCount() -> UInt32](./pgmaxdisplayportcount%28%29.md)
 
 ## See Also
 
-- [ParavirtualizedGraphics Constants](paravirtualizedgraphics-constants.md)
-- [ParavirtualizedGraphics Data Types](paravirtualizedgraphics-data-types.md)
+### Reference
+- [ParavirtualizedGraphics Constants](./paravirtualizedgraphics-constants.md)
+- [ParavirtualizedGraphics Data Types](./paravirtualizedgraphics-data-types.md)
 
 
 ---

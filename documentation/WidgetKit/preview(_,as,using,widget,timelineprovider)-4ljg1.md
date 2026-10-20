@@ -1,7 +1,8 @@
 # Preview(_:as:using:widget:timelineProvider:)
 
 **Framework**: WidgetKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Preview a widget with an app intent configuration, using the specified timeline provider.
 
@@ -22,7 +23,7 @@ Preview a widget with an app intent configuration, using the specified timeline 
 
 ## Mentions
 
-- [Previewing widgets and Live Activities in Xcode](previewing-widgets-and-live-activities-in-xcode.md)
+- [Previewing widgets and Live Activities in Xcode](./previewing-widgets-and-live-activities-in-xcode.md)
 
 #### Overview
 
@@ -40,17 +41,18 @@ Provide the preview with sample data and use it to step through the timeline whi
 
 ## See Also
 
-- [macro Preview<Widget, Provider>(String?, as: WidgetFamily, widget: () -> Widget, timelineProvider: () -> Provider)](preview(_:as:widget:timelineprovider:).md)
+### Generating a widget preview
+- [macro Preview<Widget, Provider>(String?, as: WidgetFamily, widget: () -> Widget, timelineProvider: () -> Provider)](./preview%28_,as,widget,timelineprovider%29.md)
   Preview a widget with a static configuration, using the specified timeline provider.
-- [macro Preview<Widget, Provider>(String?, as: WidgetFamily, using: Provider.Intent, widget: () -> Widget, timelineProvider: () -> Provider)](preview(_:as:using:widget:timelineprovider:)-3df1l.md)
+- [macro Preview<Widget, Provider>(String?, as: WidgetFamily, using: Provider.Intent, widget: () -> Widget, timelineProvider: () -> Provider)](./preview%28_,as,using,widget,timelineprovider%29-3df1l.md)
   Preview a widget with an intent configuration, using the specified timeline provider.
-- [macro Preview<Widget>(String?, as: WidgetFamily, widget: () -> Widget, timeline: () async -> [any TimelineEntry])](preview(_:as:widget:timeline:).md)
+- [macro Preview<Widget>(String?, as: WidgetFamily, widget: () -> Widget, timeline: () async -> [any TimelineEntry])](./preview%28_,as,widget,timeline%29.md)
   Preview a timeline-style widget.
-- [macro Preview<Widget, Entry>(String?, widget: () -> Widget, relevanceEntries: () async -> [Entry])](preview(_:widget:relevanceentries:).md)
+- [macro Preview<Widget, Entry>(String?, widget: () -> Widget, relevanceEntries: () async -> [Entry])](./preview%28_,widget,relevanceentries%29.md)
   Preview a relevance configuration widget.
-- [macro Preview<Widget, Provider>(String?, widget: () -> Widget, relevanceProvider: () -> Provider)](preview(_:widget:relevanceprovider:).md)
+- [macro Preview<Widget, Provider>(String?, widget: () -> Widget, relevanceProvider: () -> Provider)](./preview%28_,widget,relevanceprovider%29.md)
   Preview a widget with a relevance configuration, using the specified relevance provider.
-- [macro Preview<Widget, Provider>(String?, widget: () -> Widget, relevanceProvider: () -> Provider, relevance: () async -> WidgetRelevance<Provider.Configuration>)](preview(_:widget:relevanceprovider:relevance:).md)
+- [macro Preview<Widget, Provider>(String?, widget: () -> Widget, relevanceProvider: () -> Provider, relevance: () async -> WidgetRelevance<Provider.Configuration>)](./preview%28_,widget,relevanceprovider,relevance%29.md)
   Preview a widget with a relevance configuration, using the specified relevances.
 
 

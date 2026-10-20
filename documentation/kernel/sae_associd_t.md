@@ -1,14 +1,15 @@
 # sae_associd_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 typedef __uint32_t sae_associd_t;
 ```
 

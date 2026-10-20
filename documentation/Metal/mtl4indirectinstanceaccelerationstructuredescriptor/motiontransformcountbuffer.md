@@ -1,7 +1,8 @@
 # motionTransformCountBuffer
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Associates a buffer reference containing the number of motion transforms in the motion transform buffer, formatted as a 32-bit unsigned integer.
 
@@ -19,9 +20,13 @@ Associates a buffer reference containing the number of motion transforms in the 
 var motionTransformCountBuffer: MTL4BufferRange { get set }
 ```
 
+```objc
+@property (nonatomic) MTL4BufferRange motionTransformCountBuffer;
+```
+
 #### Discussion
 
-You are responsible for ensuring that the final number of motion transforms at build time in the buffer this property references is less than or equal to the value of property [`maxMotionTransformCount`](mtl4indirectinstanceaccelerationstructuredescriptor/maxmotiontransformcount.md).
+You are responsible for ensuring that the final number of motion transforms at build time in the buffer this property references is less than or equal to the value of property [`maxMotionTransformCount`](./maxmotiontransformcount.md).
 
 
 ---

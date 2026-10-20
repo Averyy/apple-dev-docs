@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Spatial  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value that indicates whether two angles are equal.
 
@@ -11,7 +12,7 @@ Returns a Boolean value that indicates whether two angles are equal.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

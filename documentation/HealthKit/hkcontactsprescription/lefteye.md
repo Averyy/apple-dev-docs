@@ -1,7 +1,8 @@
 # leftEye
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The lens specification for the left eye.
 
@@ -20,11 +21,16 @@ The lens specification for the left eye.
 var leftEye: HKContactsLensSpecification? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) HKContactsLensSpecification * leftEye;
+```
+
 ## See Also
 
-- [var brand: String](hkcontactsprescription/brand.md)
+### Accessing the contacts prescription data
+- [var brand: String](./brand.md)
   The name of the prescribed brand, based on the contact lens fitting.
-- [var rightEye: HKContactsLensSpecification?](hkcontactsprescription/righteye.md)
+- [var rightEye: HKContactsLensSpecification?](./righteye.md)
   The lens specification for the right eye.
 
 

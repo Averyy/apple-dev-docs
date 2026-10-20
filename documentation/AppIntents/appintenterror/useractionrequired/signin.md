@@ -1,7 +1,8 @@
 # signin
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The person needs to sign in to continue.
 

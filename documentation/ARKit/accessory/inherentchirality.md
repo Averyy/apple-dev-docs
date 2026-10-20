@@ -1,7 +1,8 @@
 # inherentChirality
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The hand that this accessory is designed to be held in.
 

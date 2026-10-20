@@ -1,7 +1,8 @@
 # cipherSuiteGroups(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set DTLS ciphersuite groups to the set of enabled ciphersuites.
 

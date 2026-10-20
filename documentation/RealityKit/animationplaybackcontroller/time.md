@@ -1,7 +1,8 @@
 # time
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The animation’s location within the timeline.
 
@@ -11,7 +12,7 @@ The animation’s location within the timeline.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,11 +23,12 @@ The animation’s location within the timeline.
 
 ## See Also
 
-- [var duration: TimeInterval](animationplaybackcontroller/duration.md)
+### Timing animation playback
+- [var duration: TimeInterval](./duration.md)
   The length of time the animation spans, in seconds.
-- [var speed: Float](animationplaybackcontroller/speed.md)
+- [var speed: Float](./speed.md)
   The animation’s rate of playback.
-- [var clock: CMClockOrTimebase](animationplaybackcontroller/clock.md)
+- [var clock: CMClockOrTimebase](./clock.md)
   A reference clock to synchronize the animation with other events.
 
 

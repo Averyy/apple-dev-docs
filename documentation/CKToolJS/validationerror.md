@@ -1,7 +1,8 @@
 # ValidationError
 
 **Framework**: CKTool JS  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The base class of errors emitted when validators fail validation.
 
@@ -10,7 +11,7 @@ The base class of errors emitted when validators fail validation.
 
 ## Declaration
 
-```swift
+```
 interface ValidationError
 ```
 
@@ -21,49 +22,50 @@ Extends `ErrorBase`.
 ## Relationships
 
 ### Inherits From
-- [ArrayError](arrayerror.md)
-- [LengthError](lengtherror.md)
-- [MaxValueNotNumericError](maxvaluenotnumericerror.md)
-- [MinValueNotNumericError](minvaluenotnumericerror.md)
-- [ValueIsRequiredError](valueisrequirederror.md)
-- [ValueNotConvertibleToTypeError](valuenotconvertibletotypeerror.md)
-- [ValueNotObjectError](valuenotobjecterror.md)
-- [ValueRangeError](valuerangeerror.md)
-- [ValueTypeNotRecognizedError](valuetypenotrecognizederror.md)
+- [ArrayError](./arrayerror.md)
+- [LengthError](./lengtherror.md)
+- [MaxValueNotNumericError](./maxvaluenotnumericerror.md)
+- [MinValueNotNumericError](./minvaluenotnumericerror.md)
+- [ValueIsRequiredError](./valueisrequirederror.md)
+- [ValueNotConvertibleToTypeError](./valuenotconvertibletotypeerror.md)
+- [ValueNotObjectError](./valuenotobjecterror.md)
+- [ValueRangeError](./valuerangeerror.md)
+- [ValueTypeNotRecognizedError](./valuetypenotrecognizederror.md)
 ### Inherited By
-- [ErrorBase](errorbase.md)
+- [ErrorBase](./errorbase.md)
 
 ## See Also
 
-- [ArrayError](arrayerror.md)
+### Validation Errors
+- [ArrayError](./arrayerror.md)
   An error an array validator emits when an array’s elements fail validation.
-- [MaxValueNotNumericError](maxvaluenotnumericerror.md)
+- [MaxValueNotNumericError](./maxvaluenotnumericerror.md)
   An error a validator emits when the maximum value given isn’t numeric.
-- [MinValueNotNumericError](minvaluenotnumericerror.md)
+- [MinValueNotNumericError](./minvaluenotnumericerror.md)
   An error a validator emits when the minimum value given isn’t numeric.
-- [ValueIsRequiredError](valueisrequirederror.md)
+- [ValueIsRequiredError](./valueisrequirederror.md)
   The error emitted when a value is required but a validator determines the value is not present.
-- [ValueNotConvertibleToTypeError](valuenotconvertibletotypeerror.md)
+- [ValueNotConvertibleToTypeError](./valuenotconvertibletotypeerror.md)
   The base class of errors related to type validation or coercion.
-- [ValueNotFunctionError](valuenotfunctionerror.md)
+- [ValueNotFunctionError](./valuenotfunctionerror.md)
   An error a validator emits when a value isn’t a function.
-- [ValueNotArrayBufferError](valuenotarraybuffererror.md)
+- [ValueNotArrayBufferError](./valuenotarraybuffererror.md)
   An error a validator emits when a value isn’t an `ArrayBuffer`.
-- [ValueNotArrayError](valuenotarrayerror.md)
+- [ValueNotArrayError](./valuenotarrayerror.md)
   An error a validator emits when a value isn’t an array.
-- [ValueNotBase64StringError](valuenotbase64stringerror.md)
+- [ValueNotBase64StringError](./valuenotbase64stringerror.md)
   An error a validator emits when a value isn’t a `Base64` string or isn’t castable to that type.
-- [ValueNotBlobError](valuenotbloberror.md)
+- [ValueNotBlobError](./valuenotbloberror.md)
   An error a validator emits when a value isn’t a `Blob`.
-- [ValueNotBooleanError](valuenotbooleanerror.md)
+- [ValueNotBooleanError](./valuenotbooleanerror.md)
   An error a validator emits when a value isn’t a Boolean or isn’t castable to that type.
-- [ValueNotByteArrayError](valuenotbytearrayerror.md)
+- [ValueNotByteArrayError](./valuenotbytearrayerror.md)
   An error a validator emits when a value isn’t a `ByteArray` or isn’t castable to that type.
-- [ValueNotByteError](valuenotbyteerror.md)
+- [ValueNotByteError](./valuenotbyteerror.md)
   An error a validator emits when a value isn’t a `Byte` or isn’t castable to that type.
-- [ValueNotDateError](valuenotdateerror.md)
+- [ValueNotDateError](./valuenotdateerror.md)
   An error a validator emits when a value isn’t a `Date` or isn’t castable to that type.
-- [ValueNotDateStringError](valuenotdatestringerror.md)
+- [ValueNotDateStringError](./valuenotdatestringerror.md)
   An error a validator emits when a value isn’t a date string.
 
 

@@ -1,7 +1,8 @@
 # BetaAppReviewDetailWithoutIncludesResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response containing a single beta app review detail, without related resources.
 
@@ -10,7 +11,7 @@ A response containing a single beta app review detail, without related resources
 
 ## Declaration
 
-```swift
+```
 object BetaAppReviewDetailWithoutIncludesResponse
 ```
 
@@ -21,17 +22,18 @@ object BetaAppReviewDetailWithoutIncludesResponse
 
 ## See Also
 
-- [object BetaAppReviewDetail](betaappreviewdetail.md)
+### Objects
+- [object BetaAppReviewDetail](./betaappreviewdetail.md)
   Contact information and demo credentials provided to App Store reviewers for beta app review.
-- [object BetaAppReviewDetailUpdateRequest](betaappreviewdetailupdaterequest.md)
+- [object BetaAppReviewDetailUpdateRequest](./betaappreviewdetailupdaterequest.md)
   The request body you use to update a Beta App Review Detail.
-- [object BetaAppReviewDetailResponse](betaappreviewdetailresponse.md)
+- [object BetaAppReviewDetailResponse](./betaappreviewdetailresponse.md)
   The response body for endpoints that read or modify the beta review contact and demo details for an app.
-- [object BetaAppReviewDetailsResponse](betaappreviewdetailsresponse.md)
+- [object BetaAppReviewDetailsResponse](./betaappreviewdetailsresponse.md)
   A response containing a list of beta app review detail records.
-- [object AppBetaTestersLinkagesRequest](appbetatesterslinkagesrequest.md)
+- [object AppBetaTestersLinkagesRequest](./appbetatesterslinkagesrequest.md)
   A request body you use to remove beta testers from an app.
-- [object BetaAppReviewDetailAppLinkageResponse](betaappreviewdetailapplinkageresponse.md)
+- [object BetaAppReviewDetailAppLinkageResponse](./betaappreviewdetailapplinkageresponse.md)
 
 
 ---

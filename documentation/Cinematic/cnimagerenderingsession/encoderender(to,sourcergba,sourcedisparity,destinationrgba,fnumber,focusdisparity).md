@@ -1,7 +1,8 @@
 # encodeRender(to:sourceRGBA:sourceDisparity:destinationRGBA:fNumber:focusDisparity:)
 
 **Framework**: Cinematic  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encode a command to render a shallow depth of field (SDoF) image to a metal texture
 
@@ -16,6 +17,10 @@ Encode a command to render a shallow depth of field (SDoF) image to a metal text
 
 ```swift
 func encodeRender(to commandBuffer: any MTLCommandBuffer, sourceRGBA: any MTLTexture, sourceDisparity: any MTLTexture, destinationRGBA: any MTLTexture, fNumber: Float, focusDisparity: Float) -> Bool
+```
+
+```objc
+- (BOOL) encodeRenderToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer sourceRGBA:(id<MTLTexture>) sourceRGBA sourceDisparity:(id<MTLTexture>) sourceDisparity destinationRGBA:(id<MTLTexture>) destinationRGBA fNumber:(float) fNumber focusDisparity:(float) focusDisparity;
 ```
 
 #### Return Value

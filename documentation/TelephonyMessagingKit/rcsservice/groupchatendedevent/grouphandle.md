@@ -1,7 +1,8 @@
 # groupHandle
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The group handle of the group chat.
 
@@ -16,15 +17,16 @@ let groupHandle: RCSHandle.Group
 
 ## See Also
 
-- [let cellularServiceID: CellularServiceID](rcsservice/groupchatendedevent/cellularserviceid.md)
+### Accessing event properties
+- [let cellularServiceID: CellularServiceID](./cellularserviceid.md)
   Cellular service identifier associated with this event.
-- [struct CellularServiceID](cellularserviceid.md)
+- [struct CellularServiceID](../../cellularserviceid.md)
   An opaque identifier that represents the cellular service for which to provide operations.
-- [RCSHandle.Group](rcshandle/group.md)
+- [RCSHandle.Group](../../rcshandle/group.md)
   A structure that represents an RCS group handle.
-- [let endedBy: RCSHandle.URI](rcsservice/groupchatendedevent/endedby.md)
+- [let endedBy: RCSHandle.URI](./endedby.md)
   Handle of device that performed the operation.
-- [RCSHandle.URI](rcshandle/uri.md)
+- [RCSHandle.URI](../../rcshandle/uri.md)
   A structure that represents an RCS URI handle.
 
 

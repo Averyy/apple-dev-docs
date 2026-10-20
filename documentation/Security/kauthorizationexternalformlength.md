@@ -1,7 +1,8 @@
 # kAuthorizationExternalFormLength
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The number of bytes in an external form structure’s array.
 
@@ -13,6 +14,10 @@ The number of bytes in an external form structure’s array.
 
 ```swift
 var kAuthorizationExternalFormLength: Int32 { get }
+```
+
+```c
+#define kAuthorizationExternalFormLength
 ```
 
 

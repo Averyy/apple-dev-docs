@@ -1,7 +1,8 @@
 # executionTimeAllowance
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of seconds, rounded up to the nearest minute, for a test to run before it fails with a timeout error.
 
@@ -9,6 +10,10 @@ The number of seconds, rounded up to the nearest minute, for a test to run befor
 
 ```swift
 var executionTimeAllowance: TimeInterval { get set }
+```
+
+```objc
+@property NSTimeInterval executionTimeAllowance;
 ```
 
 #### Discussion
@@ -23,9 +28,10 @@ To use this setting, enable timeouts in your test plan or set the `-test-timeout
 
 ## See Also
 
-- [class var runsForEachTargetApplicationUIConfiguration: Bool](xctestcase/runsforeachtargetapplicationuiconfiguration.md)
+### Managing Test Case Execution
+- [class var runsForEachTargetApplicationUIConfiguration: Bool](./runsforeachtargetapplicationuiconfiguration.md)
   A Boolean value that indicates whether your UI tests run once for each possible combination of orientation, localization, and other appearance settings your app supports.
-- [var continueAfterFailure: Bool](xctestcase/continueafterfailure.md)
+- [var continueAfterFailure: Bool](./continueafterfailure.md)
   A Boolean value that indicates whether a test method should continue running after a failure occurs.
 
 

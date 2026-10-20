@@ -1,7 +1,8 @@
 # upstream
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The publisher that this publisher receives elements from.
 

@@ -1,7 +1,8 @@
 # applyTapForBehaviors()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Apply a tap to an Entity or one of its ancestors to trigger a RealityComposer behavior if one is present.
 

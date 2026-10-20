@@ -1,7 +1,8 @@
 # TrackOpticalFlowRequest.ComputationAccuracy.high
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -19,9 +20,10 @@ case high
 
 ## See Also
 
-- [TrackOpticalFlowRequest.ComputationAccuracy.low](trackopticalflowrequest/computationaccuracy-swift.enum/low.md)
-- [TrackOpticalFlowRequest.ComputationAccuracy.medium](trackopticalflowrequest/computationaccuracy-swift.enum/medium.md)
-- [TrackOpticalFlowRequest.ComputationAccuracy.veryHigh](trackopticalflowrequest/computationaccuracy-swift.enum/veryhigh.md)
+### Getting the accuracies
+- [TrackOpticalFlowRequest.ComputationAccuracy.low](./low.md)
+- [TrackOpticalFlowRequest.ComputationAccuracy.medium](./medium.md)
+- [TrackOpticalFlowRequest.ComputationAccuracy.veryHigh](./veryhigh.md)
 
 
 ---

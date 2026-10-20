@@ -1,7 +1,8 @@
 # targetMessageID
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The target message ID for the reply.
 

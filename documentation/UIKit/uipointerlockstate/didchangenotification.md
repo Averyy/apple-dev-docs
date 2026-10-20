@@ -1,7 +1,8 @@
 # didChangeNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that posts when the value of the locked state for a scene changes.
 
@@ -18,13 +19,18 @@ nonisolated
 class let didChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UIPointerLockStateDidChangeNotification;
+```
+
 #### Discussion
 
-This notification is sent when the value in the [`isLocked`](uipointerlockstate/islocked.md) property changes. The `userInfo` dictionary of the notification contains the [`sceneUserInfoKey`](uipointerlockstate/sceneuserinfokey.md) key, which reflects the new value of the [`isLocked`](uipointerlockstate/islocked.md) property.
+This notification is sent when the value in the [`isLocked`](./islocked.md) property changes. The `userInfo` dictionary of the notification contains the [`sceneUserInfoKey`](./sceneuserinfokey.md) key, which reflects the new value of the [`isLocked`](./islocked.md) property.
 
 ## See Also
 
-- [class let sceneUserInfoKey: String](uipointerlockstate/sceneuserinfokey.md)
+### Updating the Lock State
+- [class let sceneUserInfoKey: String](./sceneuserinfokey.md)
   A key that reflects the new locked state.
 
 

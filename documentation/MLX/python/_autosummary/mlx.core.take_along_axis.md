@@ -6,40 +6,13 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ta
 
 # mlx.core.take_along_axis
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.take_along_axis.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.take_along_axis
-
- Table of contents 
-
-## Contents
-
-# mlx.core.take_along_axis
-
-**take_along_axis(*a: array*, */*, *indices: array*, *axis: int | None = -1*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**take_along_axis(*a: array*, */*, *indices: array*, *axis: int | None = -1*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
 : Take values along an axis at the specified indices.
 
 Parameters:
 
-**a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
-**indices** ([array](mlx.core.array.html#mlx.core.array)) – Indices array. These should be broadcastable with
+**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
+**indices** ([array](mlx.core.array.md#mlx.core.array)) – Indices array. These should be broadcastable with
 the input array excluding the axis dimension.
 **axis** ([int](https://docs.python.org/3/builtins/functions.html#int)* or **None*) – Axis in the input to take the values from. If
 `axis == None` the array is flattened to 1D prior to the indexing
@@ -49,6 +22,4 @@ Returns:
 The output array.
 
 Return type:
-[array](mlx.core.array.html#mlx.core.array)
-
-** Contents
+[array](mlx.core.array.md#mlx.core.array)

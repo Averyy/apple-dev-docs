@@ -1,7 +1,8 @@
 # lookupItem
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An index for the Visual Look Up menu item.
 
@@ -16,13 +17,14 @@ static let lookupItem: Int
 
 ## See Also
 
-- [static let copyImage: Int](imageanalysisoverlayview/menutag/copyimage.md)
+### Manage Framework-provided menu items
+- [static let copyImage: Int](./copyimage.md)
   An index for the copy-image menu item.
-- [static let shareImage: Int](imageanalysisoverlayview/menutag/shareimage.md)
+- [static let shareImage: Int](./shareimage.md)
   An index for the share-image menu item.
-- [static let copySubject: Int](imageanalysisoverlayview/menutag/copysubject.md)
+- [static let copySubject: Int](./copysubject.md)
   An index for the copy-subject menu item.
-- [static let shareSubject: Int](imageanalysisoverlayview/menutag/sharesubject.md)
+- [static let shareSubject: Int](./sharesubject.md)
   An index for the share-subject menu item.
 
 

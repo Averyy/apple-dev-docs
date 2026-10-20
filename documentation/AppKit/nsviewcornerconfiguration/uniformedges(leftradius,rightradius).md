@@ -1,7 +1,8 @@
 # uniformEdges(leftRadius:rightRadius:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A configuration that applies the `leftRadius` uniformly to the top-left and bottom-left corners, and the `rightRadius` uniformly to the top-right and bottom-right corners. When the uniform corners differ, it uses the largest of the resolved corner radii.
 
@@ -12,6 +13,10 @@ A configuration that applies the `leftRadius` uniformly to the top-left and bott
 
 ```swift
 class func uniformEdges(leftRadius: NSViewCornerRadius, rightRadius: NSViewCornerRadius) -> NSViewCornerConfiguration
+```
+
+```objc
++ (NSViewCornerConfiguration *) configurationWithUniformLeftRadius:(NSViewCornerRadius *) leftRadius rightRadius:(NSViewCornerRadius *) rightRadius;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # String.IntentInputOptions.CapitalizationType.none
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that applies no automatic capitalization.
 

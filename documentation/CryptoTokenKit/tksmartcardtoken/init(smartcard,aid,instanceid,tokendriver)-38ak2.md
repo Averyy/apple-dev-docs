@@ -1,7 +1,8 @@
 # init(smartCard:aid:instanceID:tokenDriver:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a smart card token with the specified smart card, application identifier, and token driver.
 
@@ -18,6 +19,10 @@ Initializes a smart card token with the specified smart card, application identi
 
 ```swift
 init(smartCard: TKSmartCard, aid AID: Data?, instanceID: String, tokenDriver: TKSmartCardTokenDriver)
+```
+
+```objc
+- (instancetype) initWithSmartCard:(TKSmartCard *) smartCard AID:(NSData *) AID instanceID:(NSString *) instanceID tokenDriver:(TKSmartCardTokenDriver *) tokenDriver;
 ```
 
 #### Discussion

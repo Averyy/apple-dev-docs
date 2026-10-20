@@ -1,7 +1,8 @@
 # account
 
 **Framework**: MarketplaceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A user ID for the person installing the app.
 
@@ -20,19 +21,20 @@ let account: String
 You set this value and the operating system sends it back to you as:
 
 - The `login_hint` in the call to your authorization endpoint during re-authentication
-- A parameter to your marketplace extension’s [`additionalHeaders(for:account:)`](marketplaceappextension/additionalheaders(for:account:).md) callback
+- A parameter to your marketplace extension’s [`additionalHeaders(for:account:)`](../marketplaceappextension/additionalheaders%28for,account%29.md) callback
 
 The system also groups apps in restore requests based on account.
 
 ## See Also
 
-- [let appleItemID: AppleItemID](installmetadata/appleitemid.md)
+### Inspecting app and account information
+- [let appleItemID: AppleItemID](./appleitemid.md)
   A unique identifier for the app to install.
-- [let alternativeDistributionPackage: URL](installmetadata/alternativedistributionpackage.md)
+- [let alternativeDistributionPackage: URL](./alternativedistributionpackage.md)
   A URL to the app’s assembled alternative distribution package.
-- [var appShareURL: URL?](installmetadata/appshareurl.md)
+- [var appShareURL: URL?](./appshareurl.md)
   A URL to a product landing page for the app on your marketplace website.
-- [let isUpdate: Bool](installmetadata/isupdate.md)
+- [let isUpdate: Bool](./isupdate.md)
   A Boolean value that indicates whether the installation is an app update.
 
 

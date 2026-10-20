@@ -1,7 +1,8 @@
 # volumeChanged(for:)
 
 **Framework**: Media Device  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the system that the volume state has changed on a remote device.
 
@@ -19,7 +20,7 @@ final func volumeChanged(for device: MediaOutputDevice)
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../creating-a-media-device-extension.md)
 
 #### Discussion
 
@@ -30,20 +31,20 @@ Call this function when the remote device’s volume level or mute state changes
 - Another application or service modifies the device’s volume
 - The device automatically adjusts volume (for example, due to content normalization)
 
-After calling this function, the system will query the current volume state by calling the appropriate getter based on the device’s [`volumeControl`](mediaoutputdevice/volumecontrol-swift.property.md):
+After calling this function, the system will query the current volume state by calling the appropriate getter based on the device’s [`volumeControl`](../mediaoutputdevice/volumecontrol-swift.property.md):
 
-- For [`MediaOutputDevice.VolumeControl.absolute`](mediaoutputdevice/volumecontrol-swift.enum/absolute.md) devices: [`volume(for:)`](mediadeviceextension/volume(for:).md) and/or [`isDeviceMuted(_:)`](mediadeviceextension/isdevicemuted(_:).md) will be called (if [`canMute`](mediaoutputdevice/canmute.md) is `true`)
-- For [`MediaOutputDevice.VolumeControl.relative`](mediaoutputdevice/volumecontrol-swift.enum/relative.md) devices: [`isDeviceMuted(_:)`](mediadeviceextension/isdevicemuted(_:).md) will be called (if [`canMute`](mediaoutputdevice/canmute.md) is `true`)
+- For [`MediaOutputDevice.VolumeControl.absolute`](../mediaoutputdevice/volumecontrol-swift.enum/absolute.md) devices: [`volume(for:)`](../mediadeviceextension/volume%28for%29.md) and/or [`isDeviceMuted(_:)`](../mediadeviceextension/isdevicemuted%28_%29.md) will be called (if [`canMute`](../mediaoutputdevice/canmute.md) is `true`)
+- For [`MediaOutputDevice.VolumeControl.relative`](../mediaoutputdevice/volumecontrol-swift.enum/relative.md) devices: [`isDeviceMuted(_:)`](../mediadeviceextension/isdevicemuted%28_%29.md) will be called (if [`canMute`](../mediaoutputdevice/canmute.md) is `true`)
 
-> ❗ **Important**: Do not call this function in response to system-initiated volume changes (for example, when [`setVolume(_:for:)`](mediadeviceextension/setvolume(_:for:).md), [`changeVolume(by:for:)`](mediadeviceextension/changevolume(by:for:).md), or [`muteDevice(_:)`](mediadeviceextension/mutedevice(_:).md) are called). Only call it for external or device-initiated volume changes.
+> ❗ **Important**: Do not call this function in response to system-initiated volume changes (for example, when [`setVolume(_:for:)`](../mediadeviceextension/setvolume%28_,for%29.md), [`changeVolume(by:for:)`](../mediadeviceextension/changevolume%28by,for%29.md), or [`muteDevice(_:)`](../mediadeviceextension/mutedevice%28_%29.md) are called). Only call it for external or device-initiated volume changes.
 
 > **Note**: For device groups, call this function once for the group rather than for each individual member device, unless individual devices can have independent volume changes.
 
-> **Note**: [`MediaOutputDevice.VolumeControl`](mediaoutputdevice/volumecontrol-swift.enum.md)
+> **See Also**: [`MediaOutputDevice.VolumeControl`](../mediaoutputdevice/volumecontrol-swift.enum.md)
 
-> **Note**: [`volume(for:)`](mediadeviceextension/volume(for:).md)
+> **See Also**: [`volume(for:)`](../mediadeviceextension/volume%28for%29.md)
 
-> **Note**: [`isDeviceMuted(_:)`](mediadeviceextension/isdevicemuted(_:).md)
+> **See Also**: [`isDeviceMuted(_:)`](../mediadeviceextension/isdevicemuted%28_%29.md)
 
 ## Parameters
 

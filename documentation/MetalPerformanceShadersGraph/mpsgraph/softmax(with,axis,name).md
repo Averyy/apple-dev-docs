@@ -1,7 +1,8 @@
 # softMax(with:axis:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the softmax function on the input tensor along the specified axis.
 
@@ -19,9 +20,13 @@ Computes the softmax function on the input tensor along the specified axis.
 func softMax(with tensor: MPSGraphTensor, axis: Int, name: String?) -> MPSGraphTensor
 ```
 
+```objc
+- (MPSGraphTensor *) softMaxWithTensor:(MPSGraphTensor *) tensor axis:(NSInteger) axis name:(NSString *) name;
+```
+
 #### Return Value
 
-A valid [`MPSGraphTensor`](mpsgraphtensor.md) object
+A valid [`MPSGraphTensor`](../mpsgraphtensor.md) object
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # reportCharacterBoxes
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the request detects character bounding boxes.
 
@@ -19,9 +20,13 @@ A Boolean value that indicates whether the request detects character bounding bo
 var reportCharacterBoxes: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) BOOL reportCharacterBoxes;
+```
+
 #### Discussion
 
-Set the value to [`true`](https://developer.apple.com/documentation/swift/true) to have the detector return character bounding boxes as an array of [`VNRectangleObservation`](vnrectangleobservation.md) objects.
+Set the value to [`true`](../../Swift/true.md) to have the detector return character bounding boxes as an array of [`VNRectangleObservation`](../vnrectangleobservation.md) objects.
 
 
 ---

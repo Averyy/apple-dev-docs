@@ -1,7 +1,8 @@
 # default
 
 **Framework**: Symbols  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default set of effect options.
 

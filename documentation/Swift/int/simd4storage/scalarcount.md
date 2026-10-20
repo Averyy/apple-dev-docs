@@ -1,7 +1,8 @@
 # scalarCount
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of scalars, or elements, in the vector.
 

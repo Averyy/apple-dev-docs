@@ -1,7 +1,8 @@
 # FocusedValueKey
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for identifier types used when publishing and observing focused values.
 
@@ -22,7 +23,7 @@ protocol FocusedValueKey
 
 #### Overview
 
-Unlike [`EnvironmentKey`](environmentkey.md), `FocusedValueKey` has no default value requirement, because the default value for a key is always `nil`.
+Unlike [`EnvironmentKey`](./environmentkey.md), `FocusedValueKey` has no default value requirement, because the default value for a key is always `nil`.
 
 Use the `Entry` macro to create custom focused values by extending `FocusedValues` with new properties:
 
@@ -40,7 +41,7 @@ struct SelectedItemKey: FocusedValueKey {
 }
 ```
 
-Then extend [`FocusedValues`](focusedvalues.md) to add a computed property for your key:
+Then extend [`FocusedValues`](./focusedvalues.md) to add a computed property for your key:
 
 ```swift
 extension FocusedValues {
@@ -54,27 +55,28 @@ extension FocusedValues {
 ## Topics
 
 ### Specifying the value type
-- [associatedtype Value](focusedvaluekey/value.md)
+- [associatedtype Value](./focusedvaluekey/value.md)
 
 ## See Also
 
-- [func focused<Value>(FocusState<Value>.Binding, equals: Value) -> some View](view/focused(_:equals:).md)
+### Managing focus state
+- [func focused<Value>(FocusState<Value>.Binding, equals: Value) -> some View](./view/focused%28_,equals%29.md)
   Modifies this view by binding its focus state to the given state value.
-- [func focused(FocusState<Bool>.Binding) -> some View](view/focused(_:).md)
+- [func focused(FocusState<Bool>.Binding) -> some View](./view/focused%28_%29.md)
   Modifies this view by binding its focus state to the given Boolean state value.
-- [var isFocused: Bool](environmentvalues/isfocused.md)
+- [var isFocused: Bool](./environmentvalues/isfocused.md)
   Returns whether the nearest focusable ancestor has focus.
-- [struct FocusState](focusstate.md)
+- [struct FocusState](./focusstate.md)
   A property wrapper type that can read and write a value that SwiftUI updates as the placement of focus within the scene changes.
-- [struct FocusedValue](focusedvalue.md)
+- [struct FocusedValue](./focusedvalue.md)
   A property wrapper for observing values from the focused view or one of its ancestors.
-- [macro Entry()](entry().md)
+- [macro Entry()](./entry%28%29.md)
   Creates an environment values, transaction, container values, or focused values entry.
-- [struct FocusedBinding](focusedbinding.md)
+- [struct FocusedBinding](./focusedbinding.md)
   A convenience property wrapper for observing and automatically unwrapping state bindings from the focused view or one of its ancestors.
-- [func searchFocused(FocusState<Bool>.Binding) -> some View](view/searchfocused(_:).md)
+- [func searchFocused(FocusState<Bool>.Binding) -> some View](./view/searchfocused%28_%29.md)
   Modifies this view by binding the focus state of the search field associated with the nearest searchable modifier to the given Boolean value.
-- [func searchFocused<V>(FocusState<V>.Binding, equals: V) -> some View](view/searchfocused(_:equals:).md)
+- [func searchFocused<V>(FocusState<V>.Binding, equals: V) -> some View](./view/searchfocused%28_,equals%29.md)
   Modifies this view by binding the focus state of the search field associated with the nearest searchable modifier to the given value.
 
 

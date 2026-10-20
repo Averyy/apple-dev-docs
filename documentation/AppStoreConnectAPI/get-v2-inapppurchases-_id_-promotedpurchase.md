@@ -1,7 +1,8 @@
 # Read promoted purchase information for an In-App Purchase
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get details about the promoted purchase of an In-App Purchase.
 
@@ -10,8 +11,8 @@ Get details about the promoted purchase of an In-App Purchase.
 
 ## Mentions
 
-- [Managing auto-renewable subscriptions](managing-auto-renewable-subscriptions.md)
-- [Managing In-App Purchases](managing-in-app-purchases.md)
+- [Managing auto-renewable subscriptions](./managing-auto-renewable-subscriptions.md)
+- [Managing In-App Purchases](./managing-in-app-purchases.md)
 
 ## Endpoint
 
@@ -19,41 +20,57 @@ Get details about the promoted purchase of an In-App Purchase.
 
 ## Parameters
 
-- `fields[inAppPurchases]` ([string])
-- `fields[promotedPurchases]` ([string])
-- `fields[subscriptions]` ([string])
-- `include` ([string])
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Query Parameters
+
+- `fields[inAppPurchases]` ([string]): **Allowed Values**: `name`, `productId`, `inAppPurchaseType`, `state`, `reviewNote`, `familySharable`, `contentHosting`, `inAppPurchaseLocalizations`, `pricePoints`, `content`, `appStoreReviewScreenshot`, `promotedPurchase`, `iapPriceSchedule`, `inAppPurchaseAvailability`, `images`, `offerCodes`, `versions`
+- `fields[promotedPurchases]` ([string]): **Allowed Values**: `visibleForAllUsers`, `enabled`, `state`, `inAppPurchaseV2`, `subscription`
+- `fields[subscriptions]` ([string]): **Allowed Values**: `name`, `productId`, `familySharable`, `state`, `subscriptionPeriod`, `reviewNote`, `groupLevel`, `multiSeatStatus`, `marketSettings`, `subscriptionLocalizations`, `appStoreReviewScreenshot`, `group`, `introductoryOffers`, `promotionalOffers`, `offerCodes`, `prices`, `pricePoints`, `promotedPurchase`, `subscriptionAvailability`, `winBackOffers`, `images`, `planAvailabilities`, `versions`
+- `include` ([string]): **Allowed Values**: `inAppPurchaseV2`, `subscription`
+
+## Responses
+
+- `200` OK (`PromotedPurchaseResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create an In-App Purchase](post-v2-inapppurchases.md)
+### Endpoints
+- [Create an In-App Purchase](./post-v2-inapppurchases.md)
   Create an In-App Purchase, including a consumable, non-consumable, or non-renewing subscription.
-- [Read In-App Purchase information](get-v2-inapppurchases-_id_.md)
+- [Read In-App Purchase information](./get-v2-inapppurchases-_id_.md)
   Get information about a specific In-App Purchase.
-- [List all In-App Purchases for an app](get-v1-apps-_id_-inapppurchasesv2.md)
+- [List all In-App Purchases for an app](./get-v1-apps-_id_-inapppurchasesv2.md)
   Get a list of the In-App Purchases for a specific app.
-- [Modify an In-App Purchase](patch-v2-inapppurchases-_id_.md)
+- [Modify an In-App Purchase](./patch-v2-inapppurchases-_id_.md)
   Update the reference name of a specific In-App Purchase.
-- [Delete an In-App Purchase](delete-v2-inapppurchases-_id_.md)
+- [Delete an In-App Purchase](./delete-v2-inapppurchases-_id_.md)
   Delete a specific In-App Purchase from your app.
-- [List all price points for an In-App Purchase](get-v2-inapppurchases-_id_-pricepoints.md)
+- [List all price points for an In-App Purchase](./get-v2-inapppurchases-_id_-pricepoints.md)
   Get a list of possible price points for an In-App Purchase.
-- [List price point IDs for an In-App Purchase](get-v2-inapppurchases-_id_-relationships-pricepoints.md)
+- [List price point IDs for an In-App Purchase](./get-v2-inapppurchases-_id_-relationships-pricepoints.md)
   Get a list of price point IDs for a specific In-App Purchase.
-- [List All In-App Purchase Price Point Equalizations](get-v1-inapppurchasepricepoints-_id_-equalizations.md)
+- [List All In-App Purchase Price Point Equalizations](./get-v1-inapppurchasepricepoints-_id_-equalizations.md)
   Get a list of In-App Purchase price points and their equivalent in a specified currency.
-- [List equalization IDs for an In-App Purchase price point](get-v1-inapppurchasepricepoints-_id_-relationships-equalizations.md)
-- [Read the promoted purchase ID for an In-App Purchase](get-v2-inapppurchases-_id_-relationships-promotedpurchase.md)
+- [List equalization IDs for an In-App Purchase price point](./get-v1-inapppurchasepricepoints-_id_-relationships-equalizations.md)
+- [Read the promoted purchase ID for an In-App Purchase](./get-v2-inapppurchases-_id_-relationships-promotedpurchase.md)
   Get the promoted purchase ID for a specific In-App Purchase.
-- [List all localizations for an In-App Purchase](get-v2-inapppurchases-_id_-inapppurchaselocalizations.md)
+- [List all localizations for an In-App Purchase](./get-v2-inapppurchases-_id_-inapppurchaselocalizations.md)
   Get a list of localized display names and descriptions for a specific In-App Purchase.
-- [List localization IDs for an In-App Purchase](get-v2-inapppurchases-_id_-relationships-inapppurchaselocalizations.md)
+- [List localization IDs for an In-App Purchase](./get-v2-inapppurchases-_id_-relationships-inapppurchaselocalizations.md)
   Get a list of localization IDs for a specific In-App Purchase.
-- [Read review screenshot information for an In-App Purchase](get-v2-inapppurchases-_id_-appstorereviewscreenshot.md)
+- [Read review screenshot information for an In-App Purchase](./get-v2-inapppurchases-_id_-appstorereviewscreenshot.md)
   Get information about a review screenshot for a specific In-App Purchase.
-- [Read the App Store review screenshot ID for an In-App Purchase](get-v2-inapppurchases-_id_-relationships-appstorereviewscreenshot.md)
+- [Read the App Store review screenshot ID for an In-App Purchase](./get-v2-inapppurchases-_id_-relationships-appstorereviewscreenshot.md)
   Get the App Store review screenshot ID for a specific In-App Purchase.
-- [Create a review submission for an In-App Purchase](post-v1-inapppurchasesubmissions.md)
+- [Create a review submission for an In-App Purchase](./post-v1-inapppurchasesubmissions.md)
   Create an In-App Purchase submission for review.
 
 

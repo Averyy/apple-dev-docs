@@ -1,7 +1,8 @@
 # action
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The action to run when the input/output request completes.
 
@@ -10,15 +11,16 @@ The action to run when the input/output request completes.
 
 ## Declaration
 
-```swift
+```c
 IOUSBHostCompletionAction action;
 ```
 
 ## See Also
 
-- [owner](iousbhostcompletion/1520592-owner.md)
+### Getting the Properties
+- [owner](./api-1520592-owner.md)
   A pointer to an object that owns the transfer.
-- [parameter](iousbhostcompletion/1520567-parameter.md)
+- [parameter](./api-1520567-parameter.md)
   A context pointer within the completion action.
 
 

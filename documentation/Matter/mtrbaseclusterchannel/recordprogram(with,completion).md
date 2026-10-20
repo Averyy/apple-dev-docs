@@ -1,7 +1,8 @@
 # recordProgram(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command RecordProgram
 
@@ -17,7 +18,15 @@ Command RecordProgram
 ## Declaration
 
 ```swift
+func recordProgram(with params: MTRChannelClusterRecordProgramParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func recordProgram(with params: MTRChannelClusterRecordProgramParams) async throws
+```
+
+```objc
+- (void) recordProgramWithParams:(MTRChannelClusterRecordProgramParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

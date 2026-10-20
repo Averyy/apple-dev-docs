@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.Network.Credentials.EAPCredentials.EAPType.eapFAST
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The value that indicates the system allows the Flexible Authentication via Secure Tunneling Extensible Authentication Protocol (EAP-FAST) for this network.
 

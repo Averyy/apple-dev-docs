@@ -1,7 +1,8 @@
 # standard
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value that represents being viewed from the front middle.
 

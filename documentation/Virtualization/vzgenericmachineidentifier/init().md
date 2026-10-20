@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new unique identifier for a VM.
 
@@ -14,9 +15,14 @@ Creates a new unique identifier for a VM.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [init?(dataRepresentation: Data)](vzgenericmachineidentifier/init(datarepresentation:).md)
+### Creating a Machine Identifier
+- [init?(dataRepresentation: Data)](./init%28datarepresentation%29.md)
   Creates a new unique identifier for a VM with the provided data.
 
 

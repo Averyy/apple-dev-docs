@@ -1,7 +1,8 @@
 # position
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the accessory relative to the primary pointer.
 
@@ -17,9 +18,14 @@ The position of the accessory relative to the primary pointer.
 var position: __UIPointerAccessoryPosition { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIPointerAccessoryPosition position;
+```
+
 ## See Also
 
-- [UIPointerAccessory.Position](uipointeraccessory/position-swift.struct.md)
+### Getting the position
+- [UIPointerAccessory.Position](./position-swift.struct.md)
   A structure that specifies the position of the accessory relative to the primary pointer.
 
 

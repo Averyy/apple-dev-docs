@@ -1,7 +1,8 @@
 # popToRootController()
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Pops all interface controllers except the app’s initial interface controller.
 
@@ -14,6 +15,10 @@ Pops all interface controllers except the app’s initial interface controller.
 func popToRootController()
 ```
 
+```objc
+- (void) popToRootController;
+```
+
 #### Discussion
 
 Use this method to return your interface to its initial configuration. You might do this so that you can reset your navigation hierarchy to its initial state before pushing one or more different interface controllers onto the navigation stack.
@@ -22,9 +27,10 @@ Always call this method from your WatchKit extension’s main thread.
 
 ## See Also
 
-- [func pushController(withName: String, context: Any?)](wkinterfacecontroller/pushcontroller(withname:context:).md)
+### Implementing a navigation interface
+- [func pushController(withName: String, context: Any?)](./pushcontroller%28withname,context%29.md)
   Pushes a new interface controller onto the screen.
-- [func pop()](wkinterfacecontroller/pop.md)
+- [func pop()](./pop%28%29.md)
   Pops the current interface controller from the screen.
 
 

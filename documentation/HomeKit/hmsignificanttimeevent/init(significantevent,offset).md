@@ -1,7 +1,8 @@
 # init(significantEvent:offset:)
 
 **Framework**: HomeKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new significant time event with the specified significant event and offset.
 
@@ -19,17 +20,21 @@ Creates a new significant time event with the specified significant event and of
 init(significantEvent: HMSignificantEvent, offset: DateComponents?)
 ```
 
+```objc
+- (instancetype) initWithSignificantEvent:(HMSignificantEvent) significantEvent offset:(NSDateComponents *) offset;
+```
+
 #### Return Value
 
 An initialized significant time event which fires at the specified offset from the provided significant event.
 
 #### Discussion
 
-To specify that this event should fire before the significant event, supply a date components object with negative values. For example, to specify 30 minutes before sunset, the [`minute`](https://developer.apple.com/documentation/foundation/datecomponents/minute) property of the `offset` argument must be set to `-30`.
+To specify that this event should fire before the significant event, supply a date components object with negative values. For example, to specify 30 minutes before sunset, the [`minute`](../../Foundation/datecomponents/minute.md) property of the `offset` argument must be set to `-30`.
 
 ## Parameters
 
-- `significantEvent`: The significant event for this trigger, for example [`sunrise`](hmsignificantevent/sunrise.md).
+- `significantEvent`: The significant event for this trigger, for example [`sunrise`](../hmsignificantevent/sunrise.md).
 - `offset`: A date components instance that represents the offset from the significant event that this event fires.
 
 

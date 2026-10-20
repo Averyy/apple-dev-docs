@@ -1,7 +1,8 @@
 # ulpOfOne
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The unit in the last place of 1.0.
 

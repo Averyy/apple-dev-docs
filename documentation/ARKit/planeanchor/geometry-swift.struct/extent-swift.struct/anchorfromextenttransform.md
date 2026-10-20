@@ -1,7 +1,8 @@
 # anchorFromExtentTransform
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transform from the plane extent to the plane anchor’s coordinate system.
 
@@ -16,9 +17,10 @@ var anchorFromExtentTransform: simd_float4x4 { get }
 
 ## See Also
 
-- [var width: Float](planeanchor/geometry-swift.struct/extent-swift.struct/width.md)
+### Inspecting a plane extent
+- [var width: Float](./width.md)
   The width of a plane.
-- [var height: Float](planeanchor/geometry-swift.struct/extent-swift.struct/height.md)
+- [var height: Float](./height.md)
   The height of a plane.
 
 

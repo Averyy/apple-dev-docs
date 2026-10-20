@@ -1,7 +1,8 @@
 # FoveatedStreamingSession.MessageChannel.ChannelStatus.ready
 
 **Framework**: Foveated Streaming  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The message channel is ready to send and receive messages.
 

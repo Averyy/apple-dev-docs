@@ -2,6 +2,7 @@
 
 **Framework**: Distributed  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Attempt to decode the next argument from the underlying buffers into pre-allocated storage pointed at by ‘pointer’.

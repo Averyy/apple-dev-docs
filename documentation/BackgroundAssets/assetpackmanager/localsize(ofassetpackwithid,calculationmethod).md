@@ -1,7 +1,8 @@
 # localSize(ofAssetPackWithID:calculationMethod:)
 
 **Framework**: Background Assets  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calculates a locally available asset pack’s installation size.
 
@@ -27,7 +28,7 @@ The asset pack’s installation size in bytes.
 
 This is different than the download size, which could be smaller. Calculating the size of an asset pack that contains many files can take a long time.
 
-> **Note**: [`ManagedBackgroundAssetsError.assetPackNotFound(withID:)`](managedbackgroundassetserror/assetpacknotfound(withid:).md) when no asset pack with the specified ID is available locally.
+> **Throws**: [`ManagedBackgroundAssetsError.assetPackNotFound(withID:)`](../managedbackgroundassetserror/assetpacknotfound%28withid%29.md) when no asset pack with the specified ID is available locally.
 
 ## Parameters
 

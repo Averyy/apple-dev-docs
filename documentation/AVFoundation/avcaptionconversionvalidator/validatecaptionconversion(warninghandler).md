@@ -1,7 +1,8 @@
 # validateCaptionConversion(warningHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Validates the object’s captions.
 
@@ -17,13 +18,17 @@ Validates the object’s captions.
 func validateCaptionConversion(warningHandler handler: @escaping @Sendable (AVCaptionConversionWarning?) -> Void)
 ```
 
+```objc
+- (void) validateCaptionConversionWithWarningHandler:(void (^)(AVCaptionConversionWarning *warning)) handler;
+```
+
 #### Discussion
 
-When the object finishes validating and reports all warnings, it invokes the callback once with a value of `nil` for its warning parameter. When this occurs, the validator’s [`status`](avcaptionconversionvalidator/status-swift.property.md) value changes to [`AVCaptionConversionValidator.Status.completed`](avcaptionconversionvalidator/status-swift.enum/completed.md).
+When the object finishes validating and reports all warnings, it invokes the callback once with a value of `nil` for its warning parameter. When this occurs, the validator’s [`status`](./status-swift.property.md) value changes to [`AVCaptionConversionValidator.Status.completed`](./status-swift.enum/completed.md).
 
-Stop an in-progress validation operation by calling [`stopValidating()`](avcaptionconversionvalidator/stopvalidating().md).
+Stop an in-progress validation operation by calling [`stopValidating()`](./stopvalidating%28%29.md).
 
-> ❗ **Important**:  It’s only valid to call this method when the validator’s state is [`AVCaptionConversionValidator.Status.unknown`](avcaptionconversionvalidator/status-swift.enum/unknown.md).
+> ❗ **Important**:  It’s only valid to call this method when the validator’s state is [`AVCaptionConversionValidator.Status.unknown`](./status-swift.enum/unknown.md).
 
 ## Parameters
 
@@ -31,11 +36,12 @@ Stop an in-progress validation operation by calling [`stopValidating()`](avcapti
 
 ## See Also
 
-- [var warnings: [AVCaptionConversionWarning]](avcaptionconversionvalidator/warnings.md)
+### Validating captions
+- [var warnings: [AVCaptionConversionWarning]](./warnings.md)
   The collection of warnings the validator encountered.
-- [class AVCaptionConversionWarning](avcaptionconversionwarning.md)
+- [class AVCaptionConversionWarning](../avcaptionconversionwarning.md)
   An object that represents a conversion warning produced by a validator.
-- [func stopValidating()](avcaptionconversionvalidator/stopvalidating.md)
+- [func stopValidating()](./stopvalidating%28%29.md)
   Stops the active validation operation.
 
 

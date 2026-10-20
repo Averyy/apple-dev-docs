@@ -1,7 +1,8 @@
 # init(value:attributes:)
 
 **Framework**: Core Media I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a property state with a value and attributes.
 
@@ -15,6 +16,10 @@ Creates a property state with a value and attributes.
 init(value: ObjectType?, attributes: CMIOExtensionPropertyAttributes<ObjectType>?)
 ```
 
+```objc
+- (instancetype) initWithValue:(ObjectType) value attributes:(CMIOExtensionPropertyAttributes<id> *) attributes;
+```
+
 ## Parameters
 
 - `value`: The value to associate with the property state.
@@ -22,7 +27,8 @@ init(value: ObjectType?, attributes: CMIOExtensionPropertyAttributes<ObjectType>
 
 ## See Also
 
-- [convenience init(value: ObjectType?)](cmioextensionpropertystate/init(value:).md)
+### Creating a Property State
+- [convenience init(value: ObjectType?)](./init%28value%29.md)
   Creates a property state with a value.
 
 

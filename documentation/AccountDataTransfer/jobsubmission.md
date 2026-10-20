@@ -1,7 +1,8 @@
 # JobSubmission
 
 **Framework**: Account Data Transfer  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that describes a submission that requests someone’s data.
 
@@ -10,7 +11,7 @@ An object that describes a submission that requests someone’s data.
 
 ## Declaration
 
-```swift
+```
 object JobSubmission
 ```
 
@@ -18,17 +19,20 @@ object JobSubmission
 
 - `mode` (string): Whether you want a one-time download, a daily download for 30 days, or a weekly download for 180 days.
 
+  **Allowed Values**: `ONE_TIME`, `DAILY_30`, `WEEKLY_180`
+
 ## See Also
 
-- [Submit request](submit-request.md)
+### Request creation
+- [Submit request](./submit-request.md)
   Starts preparing someone’s data for download.
-- [object CreatedJob](createdjob.md)
+- [object CreatedJob](./createdjob.md)
   An object that represents a newly created download request.
-- [Resubmit request](resubmit-request.md)
+- [Resubmit request](./resubmit-request.md)
   Enqueue the next instance of a recurring request.
-- [object ResubmissionRequest](resubmissionrequest.md)
+- [object ResubmissionRequest](./resubmissionrequest.md)
   An object that describes a request to resubmit a recurring download request.
-- [object ResubmissionResponse](resubmissionresponse.md)
+- [object ResubmissionResponse](./resubmissionresponse.md)
   An object that represents a resubmitted recurring download request.
 
 

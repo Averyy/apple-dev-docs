@@ -1,7 +1,8 @@
 # init(text:detailText:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a list item with primary and secondary text.
 
@@ -16,6 +17,10 @@ Creates a list item with primary and secondary text.
 init(text: String?, detailText: String?)
 ```
 
+```objc
+- (instancetype) initWithText:(NSString *) text detailText:(NSString *) detailText;
+```
+
 #### Return Value
 
 A newly initialized list item.
@@ -27,9 +32,10 @@ A newly initialized list item.
 
 ## See Also
 
-- [init(text: String?, detailText: String?, image: UIImage?)](cplistitem/init(text:detailtext:image:).md)
+### Creating a List Item
+- [init(text: String?, detailText: String?, image: UIImage?)](./init%28text,detailtext,image%29.md)
   Creates a list item with primary text, secondary text, and an image.
-- [init(text: String?, detailText: String?, image: UIImage?, accessoryImage: UIImage?, accessoryType: CPListItemAccessoryType)](cplistitem/init(text:detailtext:image:accessoryimage:accessorytype:).md)
+- [init(text: String?, detailText: String?, image: UIImage?, accessoryImage: UIImage?, accessoryType: CPListItemAccessoryType)](./init%28text,detailtext,image,accessoryimage,accessorytype%29.md)
   Creates a list item that displays an accessory beside its content.
 
 

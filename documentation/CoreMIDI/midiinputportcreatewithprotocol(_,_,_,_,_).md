@@ -1,7 +1,8 @@
 # MIDIInputPortCreateWithProtocol(_:_:_:_:_:)
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an input port through which the client may receive incoming MIDI messages from any MIDI source.
 
@@ -18,13 +19,17 @@ Creates an input port through which the client may receive incoming MIDI message
 func MIDIInputPortCreateWithProtocol(_ client: MIDIClientRef, _ portName: CFString, _ protocol: MIDIProtocolID, _ outPort: UnsafeMutablePointer<MIDIPortRef>, _ receiveBlock: @escaping MIDIReceiveBlock) -> OSStatus
 ```
 
+```c
+extern OSStatus MIDIInputPortCreateWithProtocol(MIDIClientRef client, CFStringRef portName, MIDIProtocolID protocol, MIDIPortRef *outPort, MIDIReceiveBlock receiveBlock);
+```
+
 #### Return Value
 
 An `OSStatus` result code.
 
 #### Discussion
 
-After creating a port, use [`MIDIPortConnectSource(_:_:_:)`](midiportconnectsource(_:_:_:).md) to establish an input connection from any number of sources to your port.
+After creating a port, use [`MIDIPortConnectSource(_:_:_:)`](./midiportconnectsource%28_,_,_%29.md) to establish an input connection from any number of sources to your port.
 
 The system calls the receive block on a separate high-priority thread owned by Core MIDI.
 
@@ -38,17 +43,18 @@ The system calls the receive block on a separate high-priority thread owned by C
 
 ## See Also
 
-- [func MIDIOutputPortCreate(MIDIClientRef, CFString, UnsafeMutablePointer<MIDIPortRef>) -> OSStatus](midioutputportcreate(_:_:_:).md)
+### Port management
+- [func MIDIOutputPortCreate(MIDIClientRef, CFString, UnsafeMutablePointer<MIDIPortRef>) -> OSStatus](./midioutputportcreate%28_,_,_%29.md)
   Creates an output port through which a client sends outgoing MIDI messages to any MIDI destination.
-- [func MIDIPortDispose(MIDIPortRef) -> OSStatus](midiportdispose(_:).md)
+- [func MIDIPortDispose(MIDIPortRef) -> OSStatus](./midiportdispose%28_%29.md)
   Disposes of a MIDI port.
-- [func MIDIPortConnectSource(MIDIPortRef, MIDIEndpointRef, UnsafeMutableRawPointer?) -> OSStatus](midiportconnectsource(_:_:_:).md)
+- [func MIDIPortConnectSource(MIDIPortRef, MIDIEndpointRef, UnsafeMutableRawPointer?) -> OSStatus](./midiportconnectsource%28_,_,_%29.md)
   Makes a connection from a source to a client input port.
-- [func MIDIPortDisconnectSource(MIDIPortRef, MIDIEndpointRef) -> OSStatus](midiportdisconnectsource(_:_:).md)
+- [func MIDIPortDisconnectSource(MIDIPortRef, MIDIEndpointRef) -> OSStatus](./midiportdisconnectsource%28_,_%29.md)
   Closes a previously established source-to-input port connection.
-- [typealias MIDIPortRef](midiportref.md)
+- [typealias MIDIPortRef](./midiportref.md)
   A MIDI connection that a client maintains.
-- [typealias MIDIReceiveBlock](midireceiveblock.md)
+- [typealias MIDIReceiveBlock](./midireceiveblock.md)
   A block receiving MIDI input that includes the incoming messages and a refCon to identify the source.
 
 

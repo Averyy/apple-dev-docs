@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Indicates that a text gesture initiated autoscrolling.
@@ -18,17 +19,21 @@ Indicates that a text gesture initiated autoscrolling.
 func autoscroll(to point: CGPoint)
 ```
 
+```objc
+- (void) autoscrollToPoint:(CGPoint) point;
+```
+
 ## Mentions
 
-- [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
+- [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
 #### Discussion
 
-The text system calls the method repeatedly when a gesture requires the text view to scroll, for example, when a person adjusts the text selection range, or places the text cursor. The text system sends [`cancelAutoscroll()`](betextinput/cancelautoscroll().md) when there are no further updates.
+The text system calls the method repeatedly when a gesture requires the text view to scroll, for example, when a person adjusts the text selection range, or places the text cursor. The text system sends [`cancelAutoscroll()`](./cancelautoscroll%28%29.md) when there are no further updates.
 
 ## Parameters
 
-- `point`: The location to which to autoscroll, in the coordinate system of your view’s [`textInputView`](betextinput/textinputview.md).
+- `point`: The location to which to autoscroll, in the coordinate system of your view’s [`textInputView`](./textinputview.md).
 
 
 ---

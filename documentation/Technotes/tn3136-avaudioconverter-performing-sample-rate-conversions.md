@@ -1,24 +1,25 @@
 # TN3136: AVAudioConverter - performing sample rate conversions
 
-**Framework**: Technotes
+**Framework**: Technotes  
+**Role**: Technote
 
 Use AVAudioConverter to perform sample rate conversions between PCM audio buffers.
 
 #### Overview
 
-Using [`AVAudioConverter`](https://developer.apple.com/documentation/avfaudio/avaudioconverter) to perform sample rate conversions between PCM audio buffers requires making calls to [`convert(to:error:withInputFrom:)`](https://developer.apple.com/documentation/avfaudio/avaudioconverter/convert(to:error:withinputfrom:)). This method takes an instance of [`AVAudioBuffer`](https://developer.apple.com/documentation/avfaudio/avaudiobuffer), which stores the output of the conversion, as well as a closure that provides instances of [`AVAudioBuffer`](https://developer.apple.com/documentation/avfaudio/avaudiobuffer) to serve as input to the conversion.
+Using [AVAudioConverter](../AVFAudio/avaudioconverter.md) to perform sample rate conversions between PCM audio buffers requires making calls to [convert(to:error:withInputFrom:)](../AVFAudio/avaudioconverter/convert%28to,error,withinputfrom%29.md). This method takes an instance of [AVAudioBuffer](../AVFAudio/avaudiobuffer.md), which stores the output of the conversion, as well as a closure that provides instances of [AVAudioBuffer](../AVFAudio/avaudiobuffer.md) to serve as input to the conversion.
 
-> ❗ **Important**: The simpler method [`convert(to:from:)`](https://developer.apple.com/documentation/avfaudio/avaudioconverter/convert(to:from:)) does not require callbacks to convert between PCM audio buffers, but cannot handle sample rate conversions.
+> ❗ **Important**: The simpler method [convert(to:from:)](../AVFAudio/avaudioconverter/convert%28to,from%29.md) does not require callbacks to convert between PCM audio buffers, but cannot handle sample rate conversions.
 
-When converting between sample rates, the total number of input frames may be hard to predict. One way to cope with variable buffer sizes while providing input to [`AVAudioConverter`](https://developer.apple.com/documentation/avfaudio/avaudioconverter) is to fill the input buffers on a sample-by-sample basis. This tech note illustrates such a mechanism using a hypothetical [`SampleProvider`](https://developer.apple.com#Creating-a-protocol-for-providing-samples) protocol that generates one sample at a time.
+When converting between sample rates, the total number of input frames may be hard to predict. One way to cope with variable buffer sizes while providing input to [AVAudioConverter](../AVFAudio/avaudioconverter.md) is to fill the input buffers on a sample-by-sample basis. This tech note illustrates such a mechanism using a hypothetical [SampleProvider](https://developer.apple.com#Creating-a-protocol-for-providing-samples) protocol that generates one sample at a time.
 
-The [`Resampler`](https://developer.apple.com#Creating-a-resampler) class gathers all of the components necessary for the conversion: the sample provider that conforms to [`SampleProvider`](https://developer.apple.com#Creating-a-protocol-for-providing-samples), the [`AVAudioConverter`](https://developer.apple.com/documentation/avfaudio/avaudioconverter) instance, and the source [`AVAudioPCMBuffer`](https://developer.apple.com/documentation/avfaudio/avaudiopcmbuffer) instance used in the call to [`convert(to:error:withInputFrom:)`](https://developer.apple.com/documentation/avfaudio/avaudioconverter/convert(to:error:withinputfrom:)). While the [`Resampler`](https://developer.apple.com#Creating-a-resampler) class is concerned with providing the output of the sample rate conversion, the [`SampleProvider`](https://developer.apple.com#Creating-a-protocol-for-providing-samples) implementation is concerned with providing the input.
+The [Resampler](https://developer.apple.com#Creating-a-resampler) class gathers all of the components necessary for the conversion: the sample provider that conforms to [SampleProvider](https://developer.apple.com#Creating-a-protocol-for-providing-samples), the [AVAudioConverter](../AVFAudio/avaudioconverter.md) instance, and the source [AVAudioPCMBuffer](../AVFAudio/avaudiopcmbuffer.md) instance used in the call to [convert(to:error:withInputFrom:)](../AVFAudio/avaudioconverter/convert%28to,error,withinputfrom%29.md). While the [Resampler](https://developer.apple.com#Creating-a-resampler) class is concerned with providing the output of the sample rate conversion, the [SampleProvider](https://developer.apple.com#Creating-a-protocol-for-providing-samples) implementation is concerned with providing the input.
 
-#### Defining a Protocol for Providing Samples
+#### Defining a protocol for providing samples
 
-The [`SampleProvider`](https://developer.apple.com#Creating-a-protocol-for-providing-samples) protocol is an example of how the [`Resampler`](https://developer.apple.com#Creating-a-resampler) class might interface with a provider class that produces audio samples. The protocol requires a single method to achieve this behavior, which returns the next sample in time.
+The [SampleProvider](https://developer.apple.com#Creating-a-protocol-for-providing-samples) protocol is an example of how the [Resampler](https://developer.apple.com#Creating-a-resampler) class might interface with a provider class that produces audio samples. The protocol requires a single method to achieve this behavior, which returns the next sample in time.
 
-The mechanism used by the conforming provider class to produce audio samples is an implementation detail and therefore omitted. What is important is that an instance of [`Resampler`](https://developer.apple.com#Creating-a-resampler) be able to ask for a number of samples at each conversion operation.
+The mechanism used by the conforming provider class to produce audio samples is an implementation detail and therefore omitted. What is important is that an instance of [Resampler](https://developer.apple.com#Creating-a-resampler) be able to ask for a number of samples at each conversion operation.
 
 ```swift
 /// A protocol that specifies requirements of a type that is capable of producing audio data on a sample-by-sample basis.
@@ -28,11 +29,11 @@ protocol SampleProvider {
 }
 ```
 
-The [`SampleProvider`](https://developer.apple.com#Creating-a-protocol-for-providing-samples) protocol might be implemented by a signal generator, such as the one described in [`Building a signal generator`](https://developer.apple.com/documentation/avfaudio/building-a-signal-generator), by a synthesizer or by a circular buffer, for example.
+The [SampleProvider](https://developer.apple.com#Creating-a-protocol-for-providing-samples) protocol might be implemented by a signal generator, such as the one described in [Building a Signal Generator](../AVFAudio/building-a-signal-generator.md), by a synthesizer or by a circular buffer, for example.
 
-#### Creating a Resampler
+#### Creating a resampler
 
-The [`Resampler`](https://developer.apple.com#Creating-a-resampler) class takes the output of a sample provider, resamples it using [`AVAudioConverter`](https://developer.apple.com/documentation/avfaudio/avaudioconverter), and copies the result to all channels of an [`AudioBufferList`](https://developer.apple.com/documentation/coreaudiotypes/audiobufferlist):
+The [Resampler](https://developer.apple.com#Creating-a-resampler) class takes the output of a sample provider, resamples it using [AVAudioConverter](../AVFAudio/avaudioconverter.md), and copies the result to all channels of an [AudioBufferList](../CoreAudioTypes/audiobufferlist.md):
 
 ```swift
 /// A class that resamples the audio data furnished by a sample provider.
@@ -69,7 +70,7 @@ class Resampler {
 }
 ```
 
-The converter asks for input buffers in the closure provided to [`convert(to:error:withInputFrom:)`](https://developer.apple.com/documentation/avfaudio/avaudioconverter/convert(to:error:withinputfrom:)). In order to avoid allocating audio buffers every time the converter asks for more input, the [`Resampler`](https://developer.apple.com#Creating-a-resampler) class reuses the source buffer that is passed as input to the converter. The source buffer’s underlying memory is simply refilled with the [`SampleProvider`](https://developer.apple.com#Creating-a-protocol-for-providing-samples) output for the requested number of frames and returned.
+The converter asks for input buffers in the closure provided to [convert(to:error:withInputFrom:)](../AVFAudio/avaudioconverter/convert%28to,error,withinputfrom%29.md). In order to avoid allocating audio buffers every time the converter asks for more input, the [Resampler](https://developer.apple.com#Creating-a-resampler) class reuses the source buffer that is passed as input to the converter. The source buffer’s underlying memory is simply refilled with the [SampleProvider](https://developer.apple.com#Creating-a-protocol-for-providing-samples) output for the requested number of frames and returned.
 
 ```swift
 /// Takes as input the number of frames to be refilled.
@@ -91,7 +92,7 @@ func refill(numberOfFrames: AVAudioPacketCount) -> AVAudioPCMBuffer {
 }
 ```
 
-The [`AudioBufferList`](https://developer.apple.com/documentation/coreaudiotypes/audiobufferlist) pointer that is provided in the call to `resample(ioData:)` is wrapped in an instance of [`AVAudioPCMBuffer`](https://developer.apple.com/documentation/avfaudio/avaudiopcmbuffer) using the [`init(pcmFormat:bufferListNoCopy:deallocator:)`](https://developer.apple.com/documentation/avfaudio/avaudiopcmbuffer/init(pcmformat:bufferlistnocopy:deallocator:)-9iwe7) initializer. This buffer is passed to the converter in the call to [`convert(to:error:withInputFrom:)`](https://developer.apple.com/documentation/avfaudio/avaudioconverter/convert(to:error:withinputfrom:)) to store the output of the conversion. The converter calls the provided closure, passing it the input length and asking for a status flag and a returned audio buffer. The status is always [`AVAudioConverterInputStatus.haveData`](https://developer.apple.com/documentation/avfaudio/avaudioconverterinputstatus/havedata) in this case, since the sample provider can always produce an arbitrary number of samples. The returned audio buffer is the result of a call to `refill(inNumberOfPackets:)`, using the provided input length.
+The [AudioBufferList](../CoreAudioTypes/audiobufferlist.md) pointer that is provided in the call to `resample(ioData:)` is wrapped in an instance of [AVAudioPCMBuffer](../AVFAudio/avaudiopcmbuffer.md) using the [init(pcmFormat:bufferListNoCopy:deallocator:)](../AVFAudio/avaudiopcmbuffer/init%28pcmformat,bufferlistnocopy,deallocator%29-9iwe7.md) initializer. This buffer is passed to the converter in the call to [convert(to:error:withInputFrom:)](../AVFAudio/avaudioconverter/convert%28to,error,withinputfrom%29.md) to store the output of the conversion. The converter calls the provided closure, passing it the input length and asking for a status flag and a returned audio buffer. The status is always [AVAudioConverterInputStatus.haveData](../AVFAudio/avaudioconverterinputstatus/havedata.md) in this case, since the sample provider can always produce an arbitrary number of samples. The returned audio buffer is the result of a call to `refill(inNumberOfPackets:)`, using the provided input length.
 
 ```swift
 /// Takes as input an AudioBufferList pointer.
@@ -120,7 +121,7 @@ func resample(ioData: UnsafeMutablePointer<AudioBufferList>) {
 }
 ```
 
-The call to [`convert(to:error:withInputFrom:)`](https://developer.apple.com/documentation/avfaudio/avaudioconverter/convert(to:error:withinputfrom:)) attempts to fill the output buffer to its capacity, hence a single call is made to [`convert(to:error:withInputFrom:)`](https://developer.apple.com/documentation/avfaudio/avaudioconverter/convert(to:error:withinputfrom:)) in `resample(ioData:)`. Other conversion scenarios, such as audio data streamed from a file or over a network, or when the conversion involves compressed formats will often involve multiple calls to [`convert(to:error:withInputFrom:)`](https://developer.apple.com/documentation/avfaudio/avaudioconverter/convert(to:error:withinputfrom:)), depending on the returned [`AVAudioConverterOutputStatus`](https://developer.apple.com/documentation/avfaudio/avaudioconverteroutputstatus).
+The call to [convert(to:error:withInputFrom:)](../AVFAudio/avaudioconverter/convert%28to,error,withinputfrom%29.md) attempts to fill the output buffer to its capacity, hence a single call is made to [convert(to:error:withInputFrom:)](../AVFAudio/avaudioconverter/convert%28to,error,withinputfrom%29.md) in `resample(ioData:)`. Other conversion scenarios, such as audio data streamed from a file or over a network, or when the conversion involves compressed formats will often involve multiple calls to [convert(to:error:withInputFrom:)](../AVFAudio/avaudioconverter/convert%28to,error,withinputfrom%29.md), depending on the returned [AVAudioConverterOutputStatus](../AVFAudio/avaudioconverteroutputstatus.md).
 
 #### Revision History
 

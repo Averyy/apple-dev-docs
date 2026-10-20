@@ -1,7 +1,8 @@
 # property(named:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the property with a given name on this prim.
 
@@ -25,19 +26,20 @@ If no property named `name` exists on this prim, returns an invalid property han
 
 ## See Also
 
-- [var properties: [USDPrim.Property]](usdprim/properties.md)
+### Accessing properties
+- [var properties: [USDPrim.Property]](./properties.md)
   The properties of this prim, including those provided by its schemas.
-- [var authoredProperties: [USDPrim.Property]](usdprim/authoredproperties.md)
+- [var authoredProperties: [USDPrim.Property]](./authoredproperties.md)
   The properties of this prim that have an authored opinion.
-- [var propertyNames: [USDToken]](usdprim/propertynames.md)
+- [var propertyNames: [USDToken]](./propertynames.md)
   The names of this prim’s properties, including those provided by its schemas.
-- [var authoredPropertyNames: [USDToken]](usdprim/authoredpropertynames.md)
+- [var authoredPropertyNames: [USDToken]](./authoredpropertynames.md)
   The names of this prim’s properties that have an authored opinion.
-- [func hasProperty(named: USDToken) -> Bool](usdprim/hasproperty(named:).md)
+- [func hasProperty(named: USDToken) -> Bool](./hasproperty%28named%29.md)
   Returns true if an attribute or relationship with a given name exists.
-- [func object(at: USDLayer.Path) -> USDStage.Object](usdprim/object(at:).md)
+- [func object(at: USDLayer.Path) -> USDStage.Object](./object%28at%29.md)
   Returns the object at a given path, relative to this prim.
-- [USDPrim.Property](usdprim/property.md)
+- [USDPrim.Property](./property.md)
   A named property on a prim, which is either an attribute or a relationship.
 
 

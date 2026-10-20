@@ -1,7 +1,8 @@
 # releaseNotes
 
 **Framework**: ManagedAppDistribution  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app’s localized developer release notes.
 
@@ -20,9 +21,10 @@ let releaseNotes: String?
 
 ## See Also
 
-- [let version: String?](managedapp/version.md)
+### Obtaining version information
+- [let version: String?](./version.md)
   The app’s version information.
-- [let releaseDate: Date?](managedapp/releasedate.md)
+- [let releaseDate: Date?](./releasedate.md)
   The app’s release date.
 
 

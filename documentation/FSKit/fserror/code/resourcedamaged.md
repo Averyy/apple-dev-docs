@@ -1,7 +1,8 @@
 # FSError.Code.resourceDamaged
 
 **Framework**: FSKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The resource is damaged.
 
@@ -14,6 +15,10 @@ The resource is damaged.
 case resourceDamaged
 ```
 
+```c
+FSErrorResourceDamaged
+```
+
 #### Discussion
 
 This error indicates the resource needs a repair operation, or that a repair operation failed.
@@ -22,17 +27,18 @@ This error indicates the resource needs a repair operation, or that a repair ope
 
 ## See Also
 
-- [FSError.Code.invalidDirectoryCookie](fserror/code/invaliddirectorycookie.md)
+### Identifying errors
+- [FSError.Code.invalidDirectoryCookie](./invaliddirectorycookie.md)
   While enumerating a directory, the given cookie didn’t resolve to a valid directory entry.
-- [FSError.Code.moduleLoadFailed](fserror/code/moduleloadfailed.md)
+- [FSError.Code.moduleLoadFailed](./moduleloadfailed.md)
   The module failed to load.
-- [FSError.Code.resourceUnrecognized](fserror/code/resourceunrecognized.md)
+- [FSError.Code.resourceUnrecognized](./resourceunrecognized.md)
   FSKit didn’t recognize the resource, and probing failed to find a match.
-- [FSError.Code.resourceUnusable](fserror/code/resourceunusable.md)
+- [FSError.Code.resourceUnusable](./resourceunusable.md)
   FSKit recognizes the resource, but the resource isn’t usable.
-- [FSError.Code.statusOperationInProgress](fserror/code/statusoperationinprogress.md)
+- [FSError.Code.statusOperationInProgress](./statusoperationinprogress.md)
   An operation is in progress.
-- [FSError.Code.statusOperationPaused](fserror/code/statusoperationpaused.md)
+- [FSError.Code.statusOperationPaused](./statusoperationpaused.md)
   An operation is paused.
 
 

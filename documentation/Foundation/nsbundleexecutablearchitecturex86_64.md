@@ -1,7 +1,8 @@
 # NSBundleExecutableArchitectureX86_64
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The 64-bit Intel architecture.
 
@@ -20,15 +21,20 @@ The 64-bit Intel architecture.
 var NSBundleExecutableArchitectureX86_64: Int { get }
 ```
 
+```c
+NSBundleExecutableArchitectureX86_64
+```
+
 ## See Also
 
-- [var NSBundleExecutableArchitectureARM64: Int](nsbundleexecutablearchitecturearm64.md)
+### Constants
+- [var NSBundleExecutableArchitectureARM64: Int](./nsbundleexecutablearchitecturearm64.md)
   The 64-bit ARM architecture.
-- [var NSBundleExecutableArchitectureI386: Int](nsbundleexecutablearchitecturei386.md)
+- [var NSBundleExecutableArchitectureI386: Int](./nsbundleexecutablearchitecturei386.md)
   The 32-bit Intel architecture.
-- [var NSBundleExecutableArchitecturePPC: Int](nsbundleexecutablearchitectureppc.md)
+- [var NSBundleExecutableArchitecturePPC: Int](./nsbundleexecutablearchitectureppc.md)
   The 32-bit PowerPC architecture.
-- [var NSBundleExecutableArchitecturePPC64: Int](nsbundleexecutablearchitectureppc64.md)
+- [var NSBundleExecutableArchitecturePPC64: Int](./nsbundleexecutablearchitectureppc64.md)
   The 64-bit PowerPC architecture.
 
 

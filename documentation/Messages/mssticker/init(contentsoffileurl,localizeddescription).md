@@ -1,7 +1,8 @@
 # init(contentsOfFileURL:localizedDescription:)
 
 **Framework**: Messages  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a sticker with the contents of the URL and the localized description.
 
@@ -14,6 +15,10 @@ Initializes a sticker with the contents of the URL and the localized description
 
 ```swift
 init(contentsOfFileURL fileURL: URL, localizedDescription: String) throws
+```
+
+```objc
+- (instancetype) initWithContentsOfFileURL:(NSURL *) fileURL localizedDescription:(NSString *) localizedDescription error:(NSError **) error;
 ```
 
 #### Return Value

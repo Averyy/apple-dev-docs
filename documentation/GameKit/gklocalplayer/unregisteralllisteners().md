@@ -1,7 +1,8 @@
 # unregisterAllListeners()
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Unregisters all listeners in your game.
 
@@ -20,11 +21,16 @@ Unregisters all listeners in your game.
 func unregisterAllListeners()
 ```
 
+```objc
+- (void) unregisterAllListeners;
+```
+
 ## See Also
 
-- [func register(any GKLocalPlayerListener)](gklocalplayer/register(_:).md)
+### Registering Listeners
+- [func register(any GKLocalPlayerListener)](./register%28_%29.md)
   Registers a listener for a particular event.
-- [func unregisterListener(any GKLocalPlayerListener)](gklocalplayer/unregisterlistener(_:).md)
+- [func unregisterListener(any GKLocalPlayerListener)](./unregisterlistener%28_%29.md)
   Unregisters a listener object.
 
 

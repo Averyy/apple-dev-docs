@@ -1,14 +1,15 @@
 # routine_arg_descriptor
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef mach_msg_type_descriptor_t routine_arg_descriptor;
 ```
 

@@ -1,16 +1,17 @@
 # Understanding the navigation stack
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: Article
 
 Learn about the navigation stack, links, and how to manage navigation types in your app’s structure.
 
 #### Overview
 
-A [`NavigationStack`](navigationstack.md) is a container for your app’s navigation structure. Use a navigation stack to present a stack of views over a root view.
+A [`NavigationStack`](./navigationstack.md) is a container for your app’s navigation structure. Use a navigation stack to present a stack of views over a root view.
 
-A `NavigationStack` exposes its state to your app with the path parameter of its initializer. To create a navigation stack with a path that you can control or track views on the navigation stack, use a [`NavigationPath`](navigationpath.md) or a [`Binding`](binding.md) to a [`RandomAccessCollection`](https://developer.apple.com/documentation/swift/randomaccesscollection) and [`RangeReplaceableCollection`](https://developer.apple.com/documentation/swift/rangereplaceablecollection) that contains [`Hashable`](https://developer.apple.com/documentation/swift/hashable) elements.
+A `NavigationStack` exposes its state to your app with the path parameter of its initializer. To create a navigation stack with a path that you can control or track views on the navigation stack, use a [`NavigationPath`](./navigationpath.md) or a [`Binding`](./binding.md) to a [`RandomAccessCollection`](../Swift/randomaccesscollection.md) and [`RangeReplaceableCollection`](../Swift/rangereplaceablecollection.md) that contains [`Hashable`](../Swift/hashable.md) elements.
 
-A `NavigationPath` is a type-erased collection on which you can store a heterogenous list of data. For homogenous data, use an [`Array`](https://developer.apple.com/documentation/swift/array) instead. Because `NavigationPath` is type-erased, it can represent different types of data that correspond to a view in the navigation stack.
+A `NavigationPath` is a type-erased collection on which you can store a heterogenous list of data. For homogenous data, use an [`Array`](../Swift/array.md) instead. Because `NavigationPath` is type-erased, it can represent different types of data that correspond to a view in the navigation stack.
 
 > 💡 **Tip**: Avoid using model types as elements of a navigation path. Make sure the elements of navigation paths are lightweight, and don’t use them as a mode of transport for data models.
 
@@ -18,16 +19,16 @@ Another element of the navigation stack is the *navigation destination*, which e
 
 You can present destinations on a `NavigationStack` using:
 
-- **View-destination**: Use the [`init(destination:label:)`](navigationlink/init(destination:label:).md) initializer to push a view directly onto the navigation stack. A view-destination link is fire-and-forget: SwiftUI tracks the navigation state, but from your app’s perspective, there are no stateful hooks indicating you pushed a view.
-- **Value–destination**: A value-destination indicates that you are pushing a value onto the path. SwiftUI uses the value you pushed to the path to determine the corresponding view using the [`navigationDestination(for:destination:)`](view/navigationdestination(for:destination:).md)  modifier. You use [`init(value:label:)`](navigationlink/init(value:label:).md) initializer to append a value onto the navigation path and [`navigationDestination(for:destination:)`](view/navigationdestination(for:destination:).md) modifier to map the data type of the path appended to a specific destination view. You can also programmatically push views onto a navigation stack using a [`navigationDestination(isPresented:destination:)`](view/navigationdestination(ispresented:destination:).md) modifier. The destination is stateful—the state is explicitly available to your app via the Boolean binding. In cases where the presentation state is better modeled by the absence or presence of a value rather than a Boolean, use [`navigationDestination(item:destination:)`](view/navigationdestination(item:destination:).md). This modifier takes a binding to a nullable data model.
+- **View-destination**: Use the [`init(destination:label:)`](./navigationlink/init%28destination,label%29.md) initializer to push a view directly onto the navigation stack. A view-destination link is fire-and-forget: SwiftUI tracks the navigation state, but from your app’s perspective, there are no stateful hooks indicating you pushed a view.
+- **Value–destination**: A value-destination indicates that you are pushing a value onto the path. SwiftUI uses the value you pushed to the path to determine the corresponding view using the [`navigationDestination(for:destination:)`](./view/navigationdestination%28for,destination%29.md)  modifier. You use [`init(value:label:)`](./navigationlink/init%28value,label%29.md) initializer to append a value onto the navigation path and [`navigationDestination(for:destination:)`](./view/navigationdestination%28for,destination%29.md) modifier to map the data type of the path appended to a specific destination view. You can also programmatically push views onto a navigation stack using a [`navigationDestination(isPresented:destination:)`](./view/navigationdestination%28ispresented,destination%29.md) modifier. The destination is stateful—the state is explicitly available to your app via the Boolean binding. In cases where the presentation state is better modeled by the absence or presence of a value rather than a Boolean, use [`navigationDestination(item:destination:)`](./view/navigationdestination%28item,destination%29.md). This modifier takes a binding to a nullable data model.
 
 > **Note**: Value-destination and view-destination links don’t describe the visible stack directly; instead, they refer to the data added to the path.
 
-##### Present View Destination Links
+##### Present view–destination links
 
 You can push a view onto a `NavigationStack` using `NavigationLink(destination:label:)`. With this initializer, you specify both a label—displayed on the link itself—and a destination—displayed when someone taps the link.
 
-Enclose a [`NavigationLink`](navigationlink.md) in a navigation structure higher up in the view-hierarchy—an ancestor view, for example. If this condition isn’t met, the link typically appears as disabled.
+Enclose a [`NavigationLink`](./navigationlink.md) in a navigation structure higher up in the view-hierarchy—an ancestor view, for example. If this condition isn’t met, the link typically appears as disabled.
 
 Below is an example with two links inside a `NavigationStack`:
 
@@ -65,14 +66,14 @@ struct ColorDetail: View {
 
 In this example, tapping the label titled “Mint” pushes a `ColorDetail(color: .mint, text: "Mint")` view onto the navigation stack. The navigation stack contents are the root view (the `NavigationLink` itself) at depth `0`, and `ColorDetail(color: .mint, text: "Mint")`  at depth `1`.
 
-When you use [`init(destination:label:)`](navigationlink/init(destination:label:).md), note that:
+When you use [`init(destination:label:)`](./navigationlink/init%28destination,label%29.md), note that:
 
 - SwiftUI tracks the navigation state and the content of the navigation path; however, there are no stateful hooks for your app that indicate when the system pushes a view.
 - Its state can’t be restored programmatically.
 
-Use the stateful navigation techniques described in [`Manage navigation state and compose links`](understanding-the-navigation-stack#Manage-navigation-state-and-compose-links.md) to track when a navigation link triggers, instead of [`onAppear(perform:)`](view/onappear(perform:).md) or `View/task(priority:_:)`.
+Use the stateful navigation techniques described in [Manage navigation state and compose links](./understanding-the-navigation-stack.md#Manage-navigation-state-and-compose-links) to track when a navigation link triggers, instead of [`onAppear(perform:)`](./view/onappear%28perform%29.md) or `View/task(priority:_:)`.
 
-Use a [`navigationDestination(isPresented:destination:)`](view/navigationdestination(ispresented:destination:).md) modifier to navigate programmatically by providing a binding to a `Boolean` value. For example, you can programmatically push `ColorDetail` view onto the stack:
+Use a [`navigationDestination(isPresented:destination:)`](./view/navigationdestination%28ispresented,destination%29.md) modifier to navigate programmatically by providing a binding to a `Boolean` value. For example, you can programmatically push `ColorDetail` view onto the stack:
 
 ```swift
 struct DestinationView: View { 
@@ -96,9 +97,9 @@ struct DestinationView: View {
 
 Use this approach when you want to navigate based on toggling state rather than by people’s interaction, or when your app presents a one-off destination with a different data type than the homogenous path of the navigation stack.
 
-##### Present Value Destination Links
+##### Present value-destination links
 
-When you add data to the navigation path, SwiftUI maps the data type to a view, then pushes it onto the navigation stack when someone taps the link. To describe the view the stack displays, use the [`navigationDestination(for:destination:)`](view/navigationdestination(for:destination:).md) view modifier inside a `NavigationStack`.
+When you add data to the navigation path, SwiftUI maps the data type to a view, then pushes it onto the navigation stack when someone taps the link. To describe the view the stack displays, use the [`navigationDestination(for:destination:)`](./view/navigationdestination%28for,destination%29.md) view modifier inside a `NavigationStack`.
 
 The following example implements `DestinationView` as a series of navigation links:
 
@@ -168,7 +169,7 @@ enum Recipe: Identifiable, Hashable, Codable {
 
 In this example, the `NavigationStack` supports two destination types: `Color` for colors, and `Recipe` for recipes. SwiftUI determines the correct destination view based on the data type of the value from the navigation link.
 
-Use [`navigationDestination(item:destination:)`](view/navigationdestination(item:destination:).md) when you need to navigate to a view based on the presence of an item. When the item binding is non-nil, SwiftUI passes the value into the destination closure and pushes the view onto the stack. For example:
+Use [`navigationDestination(item:destination:)`](./view/navigationdestination%28item,destination%29.md) when you need to navigate to a view based on the presence of an item. When the item binding is non-nil, SwiftUI passes the value into the destination closure and pushes the view onto the stack. For example:
 
 ```swift
 struct ContentView: View {
@@ -190,15 +191,15 @@ struct ContentView: View {
 
 When a person taps a recipe, `selectedRecipe` value updates and SwiftUI pushes `RecipeDetailView(recipe: recipe)` onto the navigation stack. You can pop the view off the stack by setting `selectedRecipe` back to nil.
 
-##### Manage Navigation State and Compose Links
+##### Manage navigation state and compose links
 
 By default, a navigation stack manages state to keep track of the views on the stack. However, your app can share control of the state by initializing the stack with a binding to a collection of data values that you create.
 
-Use [`init(path:root:)`](navigationstack/init(path:root:).md), which takes a binding to a `NavigationPath` argument, when you want to observe the navigation state for this stack.
+Use [`init(path:root:)`](./navigationstack/init%28path,root%29.md), which takes a binding to a `NavigationPath` argument, when you want to observe the navigation state for this stack.
 
-The `NavigationPath` data type is a heterogeneous collection type that accepts any `Hashable` values. You can add to the path by calling [`append(_:)`](navigationpath/append(_:).md) or when people tap value-destination links such as [`init(value:label:)`](navigationlink/init(value:label:).md).
+The `NavigationPath` data type is a heterogeneous collection type that accepts any `Hashable` values. You can add to the path by calling [`append(_:)`](./navigationpath/append%28_%29.md) or when people tap value-destination links such as [`init(value:label:)`](./navigationlink/init%28value,label%29.md).
 
-When you push a value onto the stack using [`init(_:value:)`](navigationlink/init(_:value:).md), you append the value to the path, as shown below:
+When you push a value onto the stack using [`init(_:value:)`](./navigationlink/init%28_,value%29.md), you append the value to the path, as shown below:
 
 ```swift
 struct ContentView: View {
@@ -218,9 +219,9 @@ struct ContentView: View {
 }
 ```
 
-In this example, when someone activates a link, SwiftUI adds the corresponding value, such as `Color.mint`, to `path`. SwiftUI uses the [`State`](state.md) property called `path` to mange the state of the navigation stack.
+In this example, when someone activates a link, SwiftUI adds the corresponding value, such as `Color.mint`, to `path`. SwiftUI uses the [`State`](./state.md) property called `path` to mange the state of the navigation stack.
 
-[`init(path:root:)`](navigationstack/init(path:root:).md) also provides an initializer in which the path parameter takes a [`Binding`](binding.md) to a `RandomAccessCollection` and a `RangeReplaceableCollection` argument. You can store the path as a property in an object that leverages the [`Observable()`](https://developer.apple.com/documentation/observation/observable()) macro data type, and use property observers such as `willSet` and `didSet` or the [`onChange(of:initial:_:)`](view/onchange(of:initial:_:).md) modifier to respond to changes when the value-destination link triggers.
+[`init(path:root:)`](./navigationstack/init%28path,root%29.md) also provides an initializer in which the path parameter takes a [`Binding`](./binding.md) to a `RandomAccessCollection` and a `RangeReplaceableCollection` argument. You can store the path as a property in an object that leverages the [`Observable`](../Observation/observable%28%29.md) macro data type, and use property observers such as `willSet` and `didSet` or the [`onChange(of:initial:_:)`](./view/onchange%28of,initial,_%29.md) modifier to respond to changes when the value-destination link triggers.
 
 In this case, the navigation path is a homogenous collection type that accepts a standard type, such as `Array`, or a custom data type as shown below:
 
@@ -397,11 +398,11 @@ New Path: [Color.mint]
 
 The logs print because view-destination navigation links don’t cause any state changes that your app can observe. If you attempt to push a value while a view-destination link is on the stack, SwiftUI pops all view destinations and pushes the value’s destination onto the stack.
 
-##### Restore State for Navigation Paths
+##### Restore state for navigation paths
 
 State restoration for a navigation path enables you restore your interface to the previous interaction point during a subsequent launch, providing continuity for people using your app.
 
-In iOS, state restoration is especially important at the window or scene level, because windows come and go frequently. For this reason, it’s important to think about state restoration for navigation path in the same way you handle restoring your app’s state at the window or scene level. See [`Restoring your app’s state with SwiftUI`](restoring-your-app-s-state-with-swiftui.md) to learn about storing scene data.
+In iOS, state restoration is especially important at the window or scene level, because windows come and go frequently. For this reason, it’s important to think about state restoration for navigation path in the same way you handle restoring your app’s state at the window or scene level. See [Restoring your app’s state with SwiftUI](./restoring-your-app-s-state-with-swiftui.md) to learn about storing scene data.
 
 Using `Codable`, you can manually persist and load the navigation stack path in one of two ways, depending on whether the path data type is homogeneous or heterogeneous. Store a homogenous path as in the following example:
 
@@ -523,7 +524,7 @@ In the example above, the `save` method checks `path.codable` for nullability. T
 
 It’s important to perform this check because `NavigationPath` doesn’t require the data types to conform to `Codable`. `NavigationPath` only needs the types to conform to `Hashable`, and as a result, you can’t verify that the navigation path is a valid representation of `Codable` at compile time.
 
-To learn more about navigation stacks, links and paths, see [`Bringing robust navigation structure to your SwiftUI app`](bringing-robust-navigation-structure-to-your-swiftui-app.md).
+To learn more about navigation stacks, links and paths, see [Bringing robust navigation structure to your SwiftUI app](./bringing-robust-navigation-structure-to-your-swiftui-app.md).
 
 
 ---

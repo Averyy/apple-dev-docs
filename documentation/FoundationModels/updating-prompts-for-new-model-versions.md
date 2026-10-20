@@ -1,6 +1,7 @@
 # Updating prompts for new model versions
 
-**Framework**: Foundation Models
+**Framework**: Foundation Models  
+**Role**: Article
 
 Manage the prompts your app uses by versioning them to make the most out of model improvements.
 
@@ -10,14 +11,14 @@ When a new version of the foundation model your app uses becomes available, test
 
 To adopt the latest model improvements, and make sure your app works for people on all model versions:
 
-- Monitor when Apple releases a new model version by visiting [`Foundation Models updates`](https://developer.apple.com/documentation/updates/foundationmodels).
+- Monitor when Apple releases a new model version by visiting [Foundation Models updates](../Updates/foundationmodels.md).
 - Record what output your prompt produces for the previous model version.
 - Compare the previous model output against the new model to determine whether you need to update the prompt.
 - If an update is necessary, version your prompts for each model your app supports.
 
-For more information on prompting an on-device model, see [`Prompting an on-device foundation model`](prompting-an-on-device-foundation-model.md).
+For more information on prompting an on-device model, see [Prompting an on-device foundation model](./prompting-an-on-device-foundation-model.md).
 
-#### Use Availability Checks to Version Your Prompts
+#### Use availability checks to version your prompts
 
 Ideally, your prompt should be relatively stable across model versions. However, to take advantage of new model improvements, or handle behavioral changes, choose a strategy of prompt versioning that works best for your app.
 
@@ -33,9 +34,9 @@ if #available(iOS 26.4, macOS 26.4, visionOS 26.4, *) {
 }
 ```
 
-Order the availability attribute from the newest version to the oldest version. The asterisk (`*`) indicates availability to future versions newer than the OS version you list. The availability of the [`Foundation Models`](FoundationModels.md) framework starts at 26.0, so you don’t need to check for versions prior to that.
+Order the availability attribute from the newest version to the oldest version. The asterisk (`*`) indicates availability to future versions newer than the OS version you list. The availability of the [Foundation Models](./FoundationModels.md) framework starts at 26.0, so you don’t need to check for versions prior to that.
 
-#### Record the Output Your Prompt Produced Before Updating
+#### Record the output your prompt produced before updating
 
 Because the older model is only included as part of the beta program, it’s essential to produce a record of what output your prompt produces with the prior model. The method you use to track model input and output responses is up to you. The goal is so you can identify how the model responds to your prompt when the model changes.
 
@@ -43,9 +44,9 @@ One way to maintain your prompts is to put them in individual text files instead
 
 Each time you modify your prompt it can also be helpful to keep a changelog you associate with it to know what changes.
 
-#### Use Xcode String Catalogs to Version Your Prompts
+#### Use Xcode string catalogs to version your prompts
 
-Xcode string catalogs let you localize and translate all your app’s text in a visual editor. You don’t need to localize your prompts for all of the languages you support, but doing so can help the model respond more reliably in the correct language. For more information on localization, see [`Supporting languages and locales with Foundation Models`](supporting-languages-and-locales-with-foundation-models.md).
+Xcode string catalogs let you localize and translate all your app’s text in a visual editor. You don’t need to localize your prompts for all of the languages you support, but doing so can help the model respond more reliably in the correct language. For more information on localization, see [Supporting languages and locales with Foundation Models](./supporting-languages-and-locales-with-foundation-models.md).
 
 In addition to localization, you can use string catalogs to manage your prompts in one convenient location. To create a new string catalog for your prompts:
 
@@ -55,7 +56,7 @@ In addition to localization, you can use string catalogs to manage your prompts 
 
 The string catalog allows you to add a new key, like `support-ticket-summarizer-v1.0` that you use to get the prompt you associate with it. The following image shows a string catalog with two English prompts and one in Spanish:
 
-![A screenshot that shows a string catalog with two default prompts. One prompt](/images/com.apple.foundationmodels/updating-prompts-for-new-model-versions-string-catalog@2x.png)
+![A screenshot that shows a string catalog with two default prompts. One prompt](https://developer.apple.com/tutorials/images/com.apple.foundationmodels/updating-prompts-for-new-model-versions-string-catalog@2x.png)
 
 Access the prompt in your app by initializing a `String` with the the unique key in the string catalog you specify:
 
@@ -67,9 +68,9 @@ if #available(iOS 26.4, macOS 26.4, visionOS 26.4, *) {
 }
 ```
 
-For more information about Xcode string catalogs, see [`Localizing and varying text with a string catalog`](https://developer.apple.com/documentation/xcode/localizing-and-varying-text-with-a-string-catalog).
+For more information about Xcode string catalogs, see [Localizing and varying text with a string catalog](../Xcode/localizing-and-varying-text-with-a-string-catalog.md).
 
-#### Use a Server to Version Your Prompts
+#### Use a server to version your prompts
 
 Using a server for prompt versioning lets your app fetch prompts dynamically at runtime, enabling much faster updates when you need them. This allows you to test new iterations across a small subset of people or even perform rollbacks if something is wrong with a prompt.
 
@@ -77,19 +78,20 @@ How you implement a server-based solution is up to you, but consider a common co
 
 ## See Also
 
-- [Prompting an on-device foundation model](prompting-an-on-device-foundation-model.md)
+### Sessions and prompts
+- [Prompting an on-device foundation model](./prompting-an-on-device-foundation-model.md)
   Tailor your prompts to get effective results from an on-device model.
-- [Managing the context window](managing-the-context-window.md)
+- [Managing the context window](./managing-the-context-window.md)
   Optimize your app’s token usage when prompting a model with the Foundation Models framework.
-- [class LanguageModelSession](languagemodelsession.md)
+- [class LanguageModelSession](./languagemodelsession.md)
   An object that represents a session that interacts with a language model.
-- [struct Instructions](instructions.md)
+- [struct Instructions](./instructions.md)
   Details you provide that define the model’s intended behavior on prompts.
-- [struct Prompt](prompt.md)
+- [struct Prompt](./prompt.md)
   A prompt from a person to the model.
-- [struct GenerationOptions](generationoptions.md)
+- [struct GenerationOptions](./generationoptions.md)
   Options that control how the model generates its response to a prompt.
-- [struct ContextOptions](contextoptions.md)
+- [struct ContextOptions](./contextoptions.md)
   Options that configure details that should appear in the prompt.
 
 

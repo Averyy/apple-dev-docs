@@ -1,7 +1,8 @@
 # MTKTextureLoader.Origin
 
 **Framework**: MetalKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for specifying when to flip the pixel coordinates of the texture.
 
@@ -19,31 +20,36 @@ Options for specifying when to flip the pixel coordinates of the texture.
 struct Origin
 ```
 
+```c
+typedef NSString * MTKTextureLoaderOrigin;
+```
+
 ## Topics
 
 ### Creating Texture Origin Options
-- [init(rawValue: String)](mtktextureloader/origin/init(rawvalue:).md)
+- [init(rawValue: String)](./origin/init%28rawvalue%29.md)
   Creates a texture origin option from a raw string value.
 ### Specifying Texture Origin Options
-- [static let topLeft: MTKTextureLoader.Origin](mtktextureloader/origin/topleft.md)
+- [static let topLeft: MTKTextureLoader.Origin](./origin/topleft.md)
   An option for specifying images that should be flipped only to put their origin in the top-left corner.
-- [static let bottomLeft: MTKTextureLoader.Origin](mtktextureloader/origin/bottomleft.md)
+- [static let bottomLeft: MTKTextureLoader.Origin](./origin/bottomleft.md)
   An option for specifying images that should be flipped only to put their origin in the bottom-left corner.
-- [static let flippedVertically: MTKTextureLoader.Origin](mtktextureloader/origin/flippedvertically.md)
+- [static let flippedVertically: MTKTextureLoader.Origin](./origin/flippedvertically.md)
   An option that specifies that images should always be flipped.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static let origin: MTKTextureLoader.Option](mtktextureloader/option/origin.md)
+### Specifying Origin Information
+- [static let origin: MTKTextureLoader.Option](./option/origin.md)
   A key used to specify when to flip the pixel coordinates of the texture.
 
 

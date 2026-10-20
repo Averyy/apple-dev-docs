@@ -1,14 +1,15 @@
 # disable_serial_output
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 bool disable_serial_output;
 ```
 

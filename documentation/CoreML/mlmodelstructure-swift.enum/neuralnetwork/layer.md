@@ -1,7 +1,8 @@
 # MLModelStructure.NeuralNetwork.Layer
 
 **Framework**: Core ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.4+
@@ -21,24 +22,25 @@ struct Layer
 ## Topics
 
 ### Accessing layer properties
-- [let inputNames: [String]](mlmodelstructure-swift.enum/neuralnetwork/layer/inputnames.md)
+- [let inputNames: [String]](./layer/inputnames.md)
   The input names.
-- [let name: String](mlmodelstructure-swift.enum/neuralnetwork/layer/name.md)
+- [let name: String](./layer/name.md)
   The layer name.
-- [let outputNames: [String]](mlmodelstructure-swift.enum/neuralnetwork/layer/outputnames.md)
+- [let outputNames: [String]](./layer/outputnames.md)
   The output names.
-- [let type: String](mlmodelstructure-swift.enum/neuralnetwork/layer/type.md)
+- [let type: String](./layer/type.md)
   The type of the layer, e,g, “elementwise”, “pooling”, etc.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let layers: [MLModelStructure.NeuralNetwork.Layer]](mlmodelstructure-swift.enum/neuralnetwork/layers.md)
+### Accessing the layers
+- [let layers: [MLModelStructure.NeuralNetwork.Layer]](./layers.md)
   The topologically sorted layers in the NeuralNetwork.
 
 

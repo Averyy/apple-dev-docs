@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: TV Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The length of the movie or show, in seconds.
 
@@ -14,15 +15,20 @@ The length of the movie or show, in seconds.
 var duration: TimeInterval { get set }
 ```
 
+```objc
+@property (nonatomic) NSTimeInterval duration;
+```
+
 ## See Also
 
-- [var contextTitle: String?](tvtopshelfcarouselitem/contexttitle.md)
+### Specifying the Item Details
+- [var contextTitle: String?](./contexttitle.md)
   A localized string describing why the item is shown in the top shelf.
-- [var summary: String?](tvtopshelfcarouselitem/summary.md)
+- [var summary: String?](./summary.md)
   A descriptive summary of a movie or show.
-- [var genre: String?](tvtopshelfcarouselitem/genre.md)
+- [var genre: String?](./genre.md)
   The genre assigned to the movie or show.
-- [var creationDate: Date?](tvtopshelfcarouselitem/creationdate.md)
+- [var creationDate: Date?](./creationdate.md)
   The original release date of the content.
 
 

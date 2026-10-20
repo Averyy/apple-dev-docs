@@ -1,7 +1,8 @@
 # CNContactDatesKey
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Dates associated with a contact.
 
@@ -19,15 +20,20 @@ Dates associated with a contact.
 let CNContactDatesKey: String
 ```
 
+```c
+extern NSString * const CNContactDatesKey;
+```
+
 #### Discussion
 
 This key takes a string value.
 
 ## See Also
 
-- [let CNContactBirthdayKey: String](cncontactbirthdaykey.md)
+### Birthday
+- [let CNContactBirthdayKey: String](./cncontactbirthdaykey.md)
   The birthday of a contact.
-- [let CNContactNonGregorianBirthdayKey: String](cncontactnongregorianbirthdaykey.md)
+- [let CNContactNonGregorianBirthdayKey: String](./cncontactnongregorianbirthdaykey.md)
   The non-Gregorian birthday of the contact.
 
 

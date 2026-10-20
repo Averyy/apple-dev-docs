@@ -1,7 +1,8 @@
 # ruleEditorRowsDidChange(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the receiver that a rule editor’s rows changed.
 
@@ -15,13 +16,17 @@ Notifies the receiver that a rule editor’s rows changed.
 optional func ruleEditorRowsDidChange(_ notification: Notification)
 ```
 
+```objc
+- (void) ruleEditorRowsDidChange:(NSNotification *) notification;
+```
+
 #### Discussion
 
-If the delegate implements this method, [`NSRuleEditor`](nsruleeditor.md) automatically registers its delegate to receive [`rowsDidChangeNotification`](nsruleeditor/rowsdidchangenotification.md) notifications.
+If the delegate implements this method, [`NSRuleEditor`](../nsruleeditor.md) automatically registers its delegate to receive [`rowsDidChangeNotification`](../nsruleeditor/rowsdidchangenotification.md) notifications.
 
 ## Parameters
 
-- `notification`: A notification named[`rowsDidChangeNotification`](nsruleeditor/rowsdidchangenotification.md).
+- `notification`: A notification named[`rowsDidChangeNotification`](../nsruleeditor/rowsdidchangenotification.md).
 
 
 ---

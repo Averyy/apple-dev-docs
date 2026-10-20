@@ -1,7 +1,8 @@
 # searchBar
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The search bar to install in your interface.
 
@@ -9,7 +10,7 @@ The search bar to install in your interface.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,15 @@ The search bar to install in your interface.
 var searchBar: UISearchBar { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) UISearchBar * searchBar;
+```
+
 #### Discussion
 
-Before presenting your searchable content, install the search bar somewhere in your view hierarchy. The search bar becomes the starting point for searching your contents. Interactions with the search bar are handled automatically by the `UISearchController` object, which notifies the object in the [`searchResultsUpdater`](uisearchcontroller/searchresultsupdater.md) property whenever the search information changes.
+Before presenting your searchable content, install the search bar somewhere in your view hierarchy. The search bar becomes the starting point for searching your contents. Interactions with the search bar are handled automatically by the `UISearchController` object, which notifies the object in the [`searchResultsUpdater`](./searchresultsupdater.md) property whenever the search information changes.
 
-You can provide a custom search bar by subclassing [`UISearchController`](uisearchcontroller.md) and overriding this property to return your custom implementation. To ensure the correct configuration of your search bar, lazily initialize it when it’s first requested, as shown in the code below.
+You can provide a custom search bar by subclassing [`UISearchController`](../uisearchcontroller.md) and overriding this property to return your custom implementation. To ensure the correct configuration of your search bar, lazily initialize it when it’s first requested, as shown in the code below.
 
 **Swift**:
 
@@ -60,11 +65,12 @@ class CustomSearchController: UISearchController {
 
 ## See Also
 
-- [var searchResultsUpdater: (any UISearchResultsUpdating)?](uisearchcontroller/searchresultsupdater.md)
+### Managing the search results
+- [var searchResultsUpdater: (any UISearchResultsUpdating)?](./searchresultsupdater.md)
   The object responsible for updating the contents of the search results controller.
-- [var searchResultsController: UIViewController?](uisearchcontroller/searchresultscontroller.md)
+- [var searchResultsController: UIViewController?](./searchresultscontroller.md)
   The view controller that displays the results of the search.
-- [var isActive: Bool](uisearchcontroller/isactive.md)
+- [var isActive: Bool](./isactive.md)
   The presented state of the search interface.
 
 

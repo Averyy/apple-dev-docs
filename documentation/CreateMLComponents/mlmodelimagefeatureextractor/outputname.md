@@ -1,7 +1,8 @@
 # outputName
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The model’s output feature name.
 
@@ -21,9 +22,10 @@ let outputName: String
 
 ## See Also
 
-- [let inputName: String](mlmodelimagefeatureextractor/inputname.md)
+### Getting the properties
+- [let inputName: String](./inputname.md)
   The model’s input feature name.
-- [let model: MLModel](mlmodelimagefeatureextractor/model.md)
+- [let model: MLModel](./model.md)
   The CoreML model with .mlmodel extension.
 
 

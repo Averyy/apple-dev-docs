@@ -1,7 +1,8 @@
 # transcriptErrorHandlingPolicy
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The session’s policy for managing the transcript when errors occur.
 
@@ -21,11 +22,12 @@ final var transcriptErrorHandlingPolicy: TranscriptErrorHandlingPolicy? { get se
 
 ## Mentions
 
-- [Expanding generation with tool calling](expanding-generation-with-tool-calling.md)
+- [Expanding generation with tool calling](../expanding-generation-with-tool-calling.md)
 
 ## See Also
 
-- [struct TranscriptErrorHandlingPolicy](transcripterrorhandlingpolicy.md)
+### Configuring the transcript error handling policy
+- [struct TranscriptErrorHandlingPolicy](../transcripterrorhandlingpolicy.md)
   Options for controlling how a language model session manages the transcript when errors occur.
 
 

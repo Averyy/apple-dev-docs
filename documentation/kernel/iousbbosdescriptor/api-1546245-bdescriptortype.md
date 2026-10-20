@@ -1,7 +1,8 @@
 # bDescriptorType
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The type of the descriptor.
 
@@ -10,17 +11,18 @@ The type of the descriptor.
 
 ## Declaration
 
-```swift
+```c
 uint8_t bDescriptorType;
 ```
 
 ## See Also
 
-- [bLength](iousbbosdescriptor/1545985-blength.md)
+### Getting the Properties
+- [bLength](./api-1545985-blength.md)
   The size of the descriptor.
-- [wTotalLength](iousbbosdescriptor/1546141-wtotallength.md)
+- [wTotalLength](./api-1546141-wtotallength.md)
   The length of this descriptor and all of its subdescriptors.
-- [bNumDeviceCaps](iousbbosdescriptor/1546040-bnumdevicecaps.md)
+- [bNumDeviceCaps](./api-1546040-bnumdevicecaps.md)
   The number of separate device capability descriptors in the binary object store.
 
 

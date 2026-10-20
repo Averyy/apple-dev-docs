@@ -1,14 +1,15 @@
 # getProperty
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.2+
 
 ## Declaration
 
-```swift
+```cpp
 virtual OSObject * getProperty(const OSString *aKey, const IORegistryPlane *plane, IOOptionBits options);
 ```
 

@@ -1,7 +1,8 @@
 # geometryDescriptors
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Associates the array of geometry descriptors that comprise this primitive acceleration structure.
 
@@ -19,11 +20,15 @@ Associates the array of geometry descriptors that comprise this primitive accele
 var geometryDescriptors: [MTL4AccelerationStructureGeometryDescriptor]? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) NSArray<MTL4AccelerationStructureGeometryDescriptor *> * geometryDescriptors;
+```
+
 #### Discussion
 
-If you enable keyframe motion by setting property [`motionKeyframeCount`](mtl4primitiveaccelerationstructuredescriptor/motionkeyframecount.md) to a value greater than `1`, then all geometry descriptors this array references need to be motion geometry descriptors and have a number of primitive buffers equals to [`motionKeyframeCount`](mtl4primitiveaccelerationstructuredescriptor/motionkeyframecount.md).
+If you enable keyframe motion by setting property [`motionKeyframeCount`](./motionkeyframecount.md) to a value greater than `1`, then all geometry descriptors this array references need to be motion geometry descriptors and have a number of primitive buffers equals to [`motionKeyframeCount`](./motionkeyframecount.md).
 
-Example of motion geometry descriptors include: [`MTL4AccelerationStructureMotionTriangleGeometryDescriptor`](mtl4accelerationstructuremotiontrianglegeometrydescriptor.md), [`MTL4AccelerationStructureMotionBoundingBoxGeometryDescriptor`](mtl4accelerationstructuremotionboundingboxgeometrydescriptor.md), [`MTL4AccelerationStructureMotionCurveGeometryDescriptor`](mtl4accelerationstructuremotioncurvegeometrydescriptor.md).
+Example of motion geometry descriptors include: [`MTL4AccelerationStructureMotionTriangleGeometryDescriptor`](../mtl4accelerationstructuremotiontrianglegeometrydescriptor.md), [`MTL4AccelerationStructureMotionBoundingBoxGeometryDescriptor`](../mtl4accelerationstructuremotionboundingboxgeometrydescriptor.md), [`MTL4AccelerationStructureMotionCurveGeometryDescriptor`](../mtl4accelerationstructuremotioncurvegeometrydescriptor.md).
 
 
 ---

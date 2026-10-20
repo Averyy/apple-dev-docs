@@ -1,7 +1,8 @@
 # uiKit
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for accessing the attribute scopes that UIKit defines.
 
@@ -21,7 +22,8 @@ var uiKit: AttributeScopes.UIKitAttributes.Type { get }
 
 ## See Also
 
-- [AttributeScopes.UIKitAttributes](attributescopes/uikitattributes.md)
+### UIKit-Defined Attributes
+- [AttributeScopes.UIKitAttributes](./uikitattributes.md)
   Attribute scopes that UIKit defines.
 
 

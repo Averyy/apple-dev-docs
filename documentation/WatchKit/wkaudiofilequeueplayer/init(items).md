@@ -1,17 +1,22 @@
 # init(items:)
 
 **Framework**: WatchKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a player initialized with an array of items.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 6.0
 
 ## Declaration
 
 ```swift
 convenience init(items: [WKAudioFilePlayerItem])
+```
+
+```objc
++ (instancetype) queuePlayerWithItems:(NSArray<WKAudioFilePlayerItem *> *) items;
 ```
 
 #### Return Value
@@ -24,7 +29,7 @@ The contents of the `items` property represent the initial items to play but you
 
 ## Parameters
 
-- `items`: An array of [`WKAudioFilePlayerItem`](wkaudiofileplayeritem.md) objects representing the assets to play. The order of the objects queue corresponds to the playback order of the assets.
+- `items`: An array of [`WKAudioFilePlayerItem`](../wkaudiofileplayeritem.md) objects representing the assets to play. The order of the objects queue corresponds to the playback order of the assets.
 
 
 ---

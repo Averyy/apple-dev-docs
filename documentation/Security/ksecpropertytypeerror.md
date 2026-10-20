@@ -1,7 +1,8 @@
 # kSecPropertyTypeError
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies a key whose value is a string containing the reason for a trust evaluation failure.
 
@@ -18,6 +19,10 @@ Specifies a key whose value is a string containing the reason for a trust evalua
 
 ```swift
 let kSecPropertyTypeError: CFString
+```
+
+```c
+extern CFStringRef const kSecPropertyTypeError;
 ```
 
 

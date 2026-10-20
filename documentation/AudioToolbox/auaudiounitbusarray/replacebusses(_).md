@@ -1,22 +1,27 @@
 # replaceBusses(_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the current bus array with a copy of the supplied bus array.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 func replaceBusses(_ busArray: [AUAudioUnitBus])
+```
+
+```objc
+- (void) replaceBusses:(NSArray<AUAudioUnitBus *> *) busArray;
 ```
 
 #### Discussion

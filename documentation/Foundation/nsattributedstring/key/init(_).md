@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attributed string key.
 
@@ -22,7 +23,8 @@ init(_ rawValue: String)
 
 ## See Also
 
-- [init(rawValue: String)](nsattributedstring/key/init(rawvalue:).md)
+### Initializers
+- [init(rawValue: String)](./init%28rawvalue%29.md)
   Creates an attributed string key with the specified raw value.
 
 

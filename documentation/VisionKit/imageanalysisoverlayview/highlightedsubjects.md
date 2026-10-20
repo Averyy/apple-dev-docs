@@ -1,7 +1,8 @@
 # highlightedSubjects
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All highlighted subjects in the overlay view’s image.
 
@@ -17,7 +18,8 @@ final var highlightedSubjects: Set<ImageAnalysisOverlayView.Subject> { get set }
 
 ## See Also
 
-- [func beginSubjectAnalysisIfNecessary()](imageanalysisoverlayview/beginsubjectanalysisifnecessary.md)
+### Managing image subjects
+- [func beginSubjectAnalysisIfNecessary()](./beginsubjectanalysisifnecessary%28%29.md)
   Begins subject analysis on the overlay view’s image.
 
 

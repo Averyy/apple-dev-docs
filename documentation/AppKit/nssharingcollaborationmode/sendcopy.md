@@ -1,7 +1,8 @@
 # NSSharingCollaborationMode.sendCopy
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 15.0+
@@ -10,6 +11,10 @@
 
 ```swift
 case sendCopy
+```
+
+```c
+NSSharingCollaborationModeSendCopy
 ```
 
 

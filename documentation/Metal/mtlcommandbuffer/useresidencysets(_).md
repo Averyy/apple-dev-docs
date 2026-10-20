@@ -1,7 +1,8 @@
 # useResidencySets(_:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies multiple residency sets to a command buffer.
 
@@ -11,7 +12,7 @@ Applies multiple residency sets to a command buffer.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,19 +22,20 @@ func useResidencySets(_ residencySets: [any MTLResidencySet])
 
 ## Mentions
 
-- [Simplifying GPU resource management with residency sets](simplifying-gpu-resource-management-with-residency-sets.md)
+- [Simplifying GPU resource management with residency sets](../simplifying-gpu-resource-management-with-residency-sets.md)
 
 #### Discussion
 
-Each command buffer can maintain a list of up to 32 different residency sets. See [`Simplifying GPU resource management with residency sets`](simplifying-gpu-resource-management-with-residency-sets.md) and [`MTLResidencySet`](mtlresidencyset.md) for more information.
+Each command buffer can maintain a list of up to 32 different residency sets. See [Simplifying GPU resource management with residency sets](../simplifying-gpu-resource-management-with-residency-sets.md) and [`MTLResidencySet`](../mtlresidencyset.md) for more information.
 
 ## Parameters
 
-- `residencySets`: An array of residency sets, each of which contains resource allocations, such as [`MTLBuffer`](mtlbuffer.md), [`MTLTexture`](mtltexture.md), and [`MTLHeap`](mtlheap.md) instances.
+- `residencySets`: An array of residency sets, each of which contains resource allocations, such as [`MTLBuffer`](../mtlbuffer.md), [`MTLTexture`](../mtltexture.md), and [`MTLHeap`](../mtlheap.md) instances.
 
 ## See Also
 
-- [func useResidencySet(any MTLResidencySet)](mtlcommandbuffer/useresidencyset(_:).md)
+### Attaching residency sets
+- [func useResidencySet(any MTLResidencySet)](./useresidencyset%28_%29.md)
   Applies a residency set to a command buffer.
 
 

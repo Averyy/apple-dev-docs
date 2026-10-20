@@ -1,7 +1,8 @@
 # pop()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Pops the current cursor off the top of the stack.
 
@@ -17,17 +18,22 @@ Pops the current cursor off the top of the stack.
 class func pop()
 ```
 
+```objc
++ (void) pop;
+```
+
 #### Discussion
 
 The new object on the top of the stack becomes the current cursor. If the current cursor is the only cursor on the stack, this method does nothing.
 
 ## See Also
 
-- [func pop()](nscursor/pop-swift.method.md)
-  Sends a [`pop()`](nscursor/pop()-swift.type.method.md) message to the receiver’s class.
-- [func push()](nscursor/push.md)
+### Controlling which cursor is current
+- [func pop()](./pop%28%29-swift.method.md)
+  Sends a [`pop()`](./pop%28%29-swift.type.method.md) message to the receiver’s class.
+- [func push()](./push%28%29.md)
   Puts the receiver on top of the cursor stack and makes it the current cursor.
-- [func set()](nscursor/set.md)
+- [func set()](./set%28%29.md)
   Makes the receiver the current cursor.
 
 

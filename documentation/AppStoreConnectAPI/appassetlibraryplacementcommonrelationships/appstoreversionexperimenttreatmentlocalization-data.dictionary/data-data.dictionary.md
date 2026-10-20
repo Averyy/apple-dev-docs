@@ -1,7 +1,8 @@
 # AppAssetLibraryPlacementCommonRelationships.AppStoreVersionExperimentTreatmentLocalization.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of an App Store version experiment treatment localization resource on which the placement appears.
 
@@ -10,13 +11,13 @@ The type and ID of an App Store version experiment treatment localization resour
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryPlacementCommonRelationships.AppStoreVersionExperimentTreatmentLocalization.Data
 ```
 
 ## Properties
 
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appStoreVersionExperimentTreatmentLocalizations`
 - `id` (string) *(required)*
 
 

@@ -1,7 +1,8 @@
 # keyStateTerminatorCount
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An unsigned 16-bit integer specifying the number of default dead-key state terminators contained in the `keyStateTerminators[]` array.
 
@@ -13,6 +14,10 @@ An unsigned 16-bit integer specifying the number of default dead-key state termi
 
 ```swift
 var keyStateTerminatorCount: UInt16
+```
+
+```c
+UInt16 keyStateTerminatorCount;
 ```
 
 

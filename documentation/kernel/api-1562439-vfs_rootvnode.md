@@ -1,7 +1,8 @@
 # vfs_rootvnode
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the root vnode with an iocount.
 
@@ -10,11 +11,11 @@ Returns the root vnode with an iocount.
 
 ## Declaration
 
-```swift
+```c
 vnode_t vfs_rootvnode(void);
 ```
 
-#### Return_value
+#### Return Value
 
 Pointer to root vnode if successful; error code if there is a problem taking an iocount.
 

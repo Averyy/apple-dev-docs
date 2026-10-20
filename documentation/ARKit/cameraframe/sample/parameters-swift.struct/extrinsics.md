@@ -1,7 +1,8 @@
 # extrinsics
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The camera extrinsics.
 
@@ -16,17 +17,18 @@ var extrinsics: simd_float4x4 { get }
 
 ## See Also
 
-- [var cameraPosition: CameraFrameProvider.CameraPosition](cameraframe/sample/parameters-swift.struct/cameraposition.md)
+### Getting frame parameters
+- [var cameraPosition: CameraFrameProvider.CameraPosition](./cameraposition.md)
   The camera position.
-- [var cameraType: CameraFrameProvider.CameraType](cameraframe/sample/parameters-swift.struct/cameratype.md)
-- [var captureTimestamp: TimeInterval](cameraframe/sample/parameters-swift.struct/capturetimestamp.md)
+- [var cameraType: CameraFrameProvider.CameraType](./cameratype.md)
+- [var captureTimestamp: TimeInterval](./capturetimestamp.md)
   The capture timestamp.
-- [var colorTemperature: Int](cameraframe/sample/parameters-swift.struct/colortemperature.md)
+- [var colorTemperature: Int](./colortemperature.md)
   The white balance correlated color temperature in kelvin.
-- [var exposureDuration: TimeInterval](cameraframe/sample/parameters-swift.struct/exposureduration.md)
+- [var exposureDuration: TimeInterval](./exposureduration.md)
   The camera frame exposure duration in seconds.
-- [var intrinsics: simd_float3x3](cameraframe/sample/parameters-swift.struct/intrinsics.md)
-- [var midExposureTimestamp: TimeInterval](cameraframe/sample/parameters-swift.struct/midexposuretimestamp.md)
+- [var intrinsics: simd_float3x3](./intrinsics.md)
+- [var midExposureTimestamp: TimeInterval](./midexposuretimestamp.md)
   The mid exposure timestamp.
 
 

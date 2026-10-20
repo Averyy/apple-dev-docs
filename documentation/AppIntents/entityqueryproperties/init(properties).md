@@ -1,7 +1,8 @@
 # init(properties:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,7 +21,8 @@ init(@EntityQueryPropertiesBuilder<Entity, ComparatorMappingType> properties: ()
 
 ## See Also
 
-- [enum EntityQueryPropertiesBuilder](entityquerypropertiesbuilder.md)
+### Creating the query properties
+- [enum EntityQueryPropertiesBuilder](../entityquerypropertiesbuilder.md)
   A result builder that allows you to declaratively describe the properties to include in a property-matched query.
 
 

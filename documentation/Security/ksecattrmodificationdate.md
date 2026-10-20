@@ -1,7 +1,8 @@
 # kSecAttrModificationDate
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key with a value that indicates the item’s most recent modification date.
 
@@ -20,9 +21,13 @@ A key with a value that indicates the item’s most recent modification date.
 let kSecAttrModificationDate: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrModificationDate;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFDate`](https://developer.apple.com/documentation/corefoundation/cfdate) and represents the last time the item was updated. Read only.
+The corresponding value is of type [`CFDate`](../CoreFoundation/cfdate.md) and represents the last time the item was updated. Read only.
 
 
 ---

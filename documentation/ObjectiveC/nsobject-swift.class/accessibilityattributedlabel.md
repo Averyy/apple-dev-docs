@@ -1,7 +1,8 @@
 # accessibilityAttributedLabel
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 ```swift
 @MainActor
 @NSCopying var accessibilityAttributedLabel: NSAttributedString? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSAttributedString * accessibilityAttributedLabel;
 ```
 
 

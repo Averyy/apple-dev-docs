@@ -1,17 +1,22 @@
 # quadrilateralPoints()
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the array of quadrilateral points defining the bounds of the markup.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
 ```swift
 func quadrilateralPoints() -> [Any]!
+```
+
+```objc
+- (NSArray *) quadrilateralPoints;
 ```
 
 #### Discussion
@@ -22,7 +27,8 @@ Page space is a 72 dpi coordinate system with the origin at the lower-left corne
 
 ## See Also
 
-- [func setQuadrilateralPoints([Any]!)](pdfannotationmarkup/setquadrilateralpoints(_:).md)
+### Working with Markup Boundaries
+- [func setQuadrilateralPoints([Any]!)](./setquadrilateralpoints%28_%29.md)
   Sets the array of quadrilateral points defining the bounds of the markup.
 
 

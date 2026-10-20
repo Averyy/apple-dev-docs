@@ -1,7 +1,8 @@
 # EKCalendarChooserDelegate
 
 **Framework**: EventKit UI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Methods a calendar chooser’s delegate may use to receive notifications.
 
@@ -17,24 +18,29 @@ Methods a calendar chooser’s delegate may use to receive notifications.
 protocol EKCalendarChooserDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol EKCalendarChooserDelegate <NSObject>
+```
+
 ## Topics
 
 ### Selecting Calendars
-- [func calendarChooserDidFinish(EKCalendarChooser)](ekcalendarchooserdelegate/calendarchooserdidfinish(_:).md)
+- [func calendarChooserDidFinish(EKCalendarChooser)](./ekcalendarchooserdelegate/calendarchooserdidfinish%28_%29.md)
   Sent when a user selects one or more calendars.
-- [func calendarChooserSelectionDidChange(EKCalendarChooser)](ekcalendarchooserdelegate/calendarchooserselectiondidchange(_:).md)
+- [func calendarChooserSelectionDidChange(EKCalendarChooser)](./ekcalendarchooserdelegate/calendarchooserselectiondidchange%28_%29.md)
   Sent when a user changes the selection.
-- [func calendarChooserDidCancel(EKCalendarChooser)](ekcalendarchooserdelegate/calendarchooserdidcancel(_:).md)
+- [func calendarChooserDidCancel(EKCalendarChooser)](./ekcalendarchooserdelegate/calendarchooserdidcancel%28_%29.md)
   Sent when the user cancels a calendar selection.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any EKCalendarChooserDelegate)?](ekcalendarchooser/delegate.md)
+### Managing Calendar Selection
+- [var delegate: (any EKCalendarChooserDelegate)?](./ekcalendarchooser/delegate.md)
   The calendar chooser’s delegate.
 
 

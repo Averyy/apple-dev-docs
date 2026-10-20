@@ -1,7 +1,8 @@
 # init(URL:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 10.9+

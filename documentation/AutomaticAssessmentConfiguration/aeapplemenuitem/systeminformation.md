@@ -1,7 +1,8 @@
 # systemInformation
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The System Information item.
 
@@ -13,6 +14,10 @@ The System Information item.
 
 ```swift
 static let systemInformation: AEAppleMenuItem
+```
+
+```c
+extern AEAppleMenuItem const AEAppleMenuItemSystemInformation;
 ```
 
 

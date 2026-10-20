@@ -1,7 +1,8 @@
 # forCurrentLocation()
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and returns a singleton map item object representing the user’s location.
 
@@ -20,6 +21,10 @@ Creates and returns a singleton map item object representing the user’s locati
 class func forCurrentLocation() -> MKMapItem
 ```
 
+```objc
++ (MKMapItem *) mapItemForCurrentLocation;
+```
+
 #### Return Value
 
 An `MKMapItem` object representing the user’s location.
@@ -30,8 +35,10 @@ For privacy reasons, and because the user’s location can change, the map item 
 
 ## See Also
 
-- [Location and Maps Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
-- [init(placemark: MKPlacemark)](mkmapitem/init(placemark:).md)
+### Related Documentation
+- [Location and Maps Programming Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
+### Creating map items
+- [init(placemark: MKPlacemark)](./init%28placemark%29.md)
   Creates and returns a map item object using the specified placemark object.
 
 

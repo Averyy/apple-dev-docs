@@ -1,7 +1,8 @@
 # cancellation
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type of button that people use to dismiss the current store presentation.
 
@@ -21,11 +22,12 @@ static var cancellation: StoreButtonKind { get }
 
 #### Discussion
 
-This button type is available for [`StoreView`](storeview.md) and [`SubscriptionStoreView`](subscriptionstoreview.md) only.
+This button type is available for [`StoreView`](../storeview.md) and [`SubscriptionStoreView`](../subscriptionstoreview.md) only.
 
 ## See Also
 
-- [static var restorePurchases: StoreButtonKind](storebuttonkind/restorepurchases.md)
+### Getting button types for store views
+- [static var restorePurchases: StoreButtonKind](./restorepurchases.md)
   A type of button that people use to restore purchases.
 
 

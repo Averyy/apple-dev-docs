@@ -1,7 +1,8 @@
 # WKExtendedRuntimeSessionState.scheduled
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The app has scheduled the session to run at a future date.
 
@@ -14,17 +15,22 @@ The app has scheduled the session to run at a future date.
 case scheduled
 ```
 
+```c
+WKExtendedRuntimeSessionStateScheduled
+```
+
 #### Discussion
 
-The session transitions to the [`WKExtendedRuntimeSessionState.scheduled`](wkextendedruntimesessionstate/scheduled.md) state when you call the [`start(at:)`](wkextendedruntimesession/start(at:).md) method. It remains in this state until the start date arrives. Then it transitions to the running state.
+The session transitions to the [`WKExtendedRuntimeSessionState.scheduled`](./scheduled.md) state when you call the [`start(at:)`](../wkextendedruntimesession/start%28at%29.md) method. It remains in this state until the start date arrives. Then it transitions to the running state.
 
 ## See Also
 
-- [WKExtendedRuntimeSessionState.notStarted](wkextendedruntimesessionstate/notstarted.md)
+### Session States
+- [WKExtendedRuntimeSessionState.notStarted](./notstarted.md)
   The app has not yet started or scheduled the session.
-- [WKExtendedRuntimeSessionState.running](wkextendedruntimesessionstate/running.md)
+- [WKExtendedRuntimeSessionState.running](./running.md)
   The session is actively running.
-- [WKExtendedRuntimeSessionState.invalid](wkextendedruntimesessionstate/invalid.md)
+- [WKExtendedRuntimeSessionState.invalid](./invalid.md)
   Either the session has encountered an error, or it has stopped running.
 
 

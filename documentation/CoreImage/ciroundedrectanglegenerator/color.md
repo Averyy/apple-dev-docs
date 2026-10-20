@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The color of the rounded rectangle.
@@ -11,7 +12,7 @@ The color of the rounded rectangle.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,11 +21,16 @@ The color of the rounded rectangle.
 var color: CIColor { get set }
 ```
 
+```objc
+@property (nonatomic, retain) CIColor * color;
+```
+
 ## See Also
 
-- [var extent: CGRect](ciroundedrectanglegenerator/extent.md)
+### Instance Properties
+- [var extent: CGRect](./extent.md)
   A rectangle that defines the extent of the effect.
-- [var radius: Float](ciroundedrectanglegenerator/radius.md)
+- [var radius: Float](./radius.md)
   The distance from the center of the effect.
 
 

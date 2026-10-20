@@ -1,7 +1,8 @@
 # init(predefinedError:description:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an error from a predefined error with a custom localized description.
 
@@ -22,9 +23,9 @@ init(predefinedError: AppIntentError, description: LocalizedStringResource)
 
 #### Discussion
 
-Use this initializer to create one of the predefined [`AppIntentError`](appintenterror.md) values with a custom message specific to your app’s context.
+Use this initializer to create one of the predefined [`AppIntentError`](../appintenterror.md) values with a custom message specific to your app’s context.
 
-See the predefined static properties on [`AppIntentError`](appintenterror.md) for the list of accepted values. Passing any other [`AppIntentError`](appintenterror.md) value triggers a runtime failure via `fatalError()`.
+See the predefined static properties on [`AppIntentError`](../appintenterror.md) for the list of accepted values. Passing any other [`AppIntentError`](../appintenterror.md) value triggers a runtime failure via `fatalError()`.
 
 ## Parameters
 

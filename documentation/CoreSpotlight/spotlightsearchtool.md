@@ -1,7 +1,8 @@
 # SpotlightSearchTool
 
 **Framework**: Core Spotlight  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A tool you use to make your app’s custom data available to Foundation Models.
 
@@ -20,13 +21,13 @@ struct SpotlightSearchTool
 
 ## Mentions
 
-- [Making your indexed content available to Foundation Models](making-your-indexed-content-available-to-foundation-models.md)
+- [Making your indexed content available to Foundation Models](./making-your-indexed-content-available-to-foundation-models.md)
 
 #### Overview
 
 The `SpotlightSearchTool` type implements the protocol that Foundation Models use to run custom tools when resolving prompts. If you implement intelligent features using the Foundation Models framework, you can use this tool to provide your app’s data to the model as additional contextual information. The model can use this additional data to answer questions specific to your app’s content. For example, a note-taking app that runs the prompt “Find my meeting notes from last Tuesday” can use this tool to make its notes available to the model.
 
-Create an instance of `SpotlightSearchTool` before configuring a [`LanguageModelSession`](https://developer.apple.com/documentation/foundationmodels/languagemodelsession) object to run prompts. Configure the tool with the sources and options you want to use to search your particular content. For example, you can direct the tool to search your app’s Spotlight index, files and directories your app created, or both. Use the tool options to offer guidance on how to perform searches efficiently on your content.
+Create an instance of `SpotlightSearchTool` before configuring a [`LanguageModelSession`](../FoundationModels/languagemodelsession.md) object to run prompts. Configure the tool with the sources and options you want to use to search your particular content. For example, you can direct the tool to search your app’s Spotlight index, files and directories your app created, or both. Use the tool options to offer guidance on how to perform searches efficiently on your content.
 
 Always configure `SpotlightSearchTool` with a guide that works well with a model’s context window to avoid token overflow errors.
 
@@ -49,56 +50,57 @@ let session = LanguageModelSession(tools: [tool])
 let response = try await session.respond(to: "Find my notes about the project deadline")
 ```
 
-> **Note**: By default, `SpotlightSearchTool` uses the `complete` option which works best with *Private Cloud Compute* (PCC) models designed for Apple Intelligence. For eligibility and setup, see [`Adding server-side intelligence with Private Cloud Compute`](https://developer.apple.com/documentation/foundationmodels/adding-server-side-intelligence-with-private-cloud-compute).
+> **Note**: By default, `SpotlightSearchTool` uses the `complete` option which works best with *Private Cloud Compute* (PCC) models designed for Apple Intelligence. For eligibility and setup, see [Adding server-side intelligence with Private Cloud Compute](../FoundationModels/adding-server-side-intelligence-with-private-cloud-compute.md).
 
 ## Topics
 
 ### Creating the search tool
-- [init(configuration: SpotlightSearchTool.Configuration)](spotlightsearchtool/init(configuration:).md)
+- [init(configuration: SpotlightSearchTool.Configuration)](./spotlightsearchtool/init%28configuration%29.md)
 ### Configuring the tool behavior
-- [let configuration: SpotlightSearchTool.Configuration](spotlightsearchtool/configuration-swift.property.md)
+- [let configuration: SpotlightSearchTool.Configuration](./spotlightsearchtool/configuration-swift.property.md)
   The configuration details for the search tool.
-- [SpotlightSearchTool.Configuration](spotlightsearchtool/configuration-swift.struct.md)
+- [SpotlightSearchTool.Configuration](./spotlightsearchtool/configuration-swift.struct.md)
   The configuration data to use when creating a Spotlight search tool.
-- [SpotlightSearchTool.Guide](spotlightsearchtool/guide.md)
+- [SpotlightSearchTool.Guide](./spotlightsearchtool/guide.md)
   A type you use to offer guidance about what search capabillities to employ during a session.
-- [SpotlightSearchTool.GuidanceProfile](spotlightsearchtool/guidanceprofile.md)
+- [SpotlightSearchTool.GuidanceProfile](./spotlightsearchtool/guidanceprofile.md)
   Options for which techniques to use to determine a match.
-- [SpotlightSearchTool.GuidanceLevel](spotlightsearchtool/guidancelevel.md)
+- [SpotlightSearchTool.GuidanceLevel](./spotlightsearchtool/guidancelevel.md)
   Options for how to search your app’s content.
-- [SpotlightSearchTool.ContentDomain](spotlightsearchtool/contentdomain.md)
+- [SpotlightSearchTool.ContentDomain](./spotlightsearchtool/contentdomain.md)
   A content domain that defines which fields and attribute mappings are presented to the model during a focused search session.
-- [SpotlightSearchTool.FormatLevel](spotlightsearchtool/formatlevel.md)
+- [SpotlightSearchTool.FormatLevel](./spotlightsearchtool/formatlevel.md)
   Controls how tool responses are serialized for the model’s context window.
 ### Getting the search results
-- [var searchResults: some AsyncSequence<SpotlightSearchTool.SearchReply, Never>](spotlightsearchtool/searchresults.md)
+- [var searchResults: some AsyncSequence<SpotlightSearchTool.SearchReply, Never>](./spotlightsearchtool/searchresults.md)
   An asynchronous stream that delivers the results of a search to your app for processing.
-- [SpotlightSearchTool.SearchReply](spotlightsearchtool/searchreply.md)
+- [SpotlightSearchTool.SearchReply](./spotlightsearchtool/searchreply.md)
   A set of search results with routing metadata for host app consumption.
 ### Getting tool-specific properties
-- [var parameters: GenerationSchema](spotlightsearchtool/parameters.md)
+- [var parameters: GenerationSchema](./spotlightsearchtool/parameters.md)
   The schema for the parameters this tool accepts.
-- [var includesSchemaInInstructions: Bool](spotlightsearchtool/includesschemaininstructions.md)
+- [var includesSchemaInInstructions: Bool](./spotlightsearchtool/includesschemaininstructions.md)
   A Boolean value that indicates whether to inject the model’s name, description, and parameters schema into the instructions of sessions.
 ### Instance Properties
-- [var description: String](spotlightsearchtool/description.md)
+- [var description: String](./spotlightsearchtool/description.md)
   A natural language description of when and how to use the Spotlight search tool.
-- [var name: String](spotlightsearchtool/name.md)
+- [var name: String](./spotlightsearchtool/name.md)
   The unique name for the Spotlight search tool.
 ### Type Aliases
-- [SpotlightSearchTool.Arguments](spotlightsearchtool/arguments.md)
+- [SpotlightSearchTool.Arguments](./spotlightsearchtool/arguments.md)
   The overlay tool uses GeneratedContent as its Arguments type so the full native schema (FullArguments or RAGSearchArguments) passes through to NativeSpotlightSearchTool without re-encoding.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Tool](../foundationmodels/tool.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Tool](../FoundationModels/tool.md)
 
 ## See Also
 
-- [SpotlightSearchTool.Configuration](spotlightsearchtool/configuration-swift.struct.md)
+### Tool configuration
+- [SpotlightSearchTool.Configuration](./spotlightsearchtool/configuration-swift.struct.md)
   The configuration data to use when creating a Spotlight search tool.
 
 

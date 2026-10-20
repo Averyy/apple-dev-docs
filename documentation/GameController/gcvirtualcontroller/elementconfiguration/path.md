@@ -1,7 +1,8 @@
 # path
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Bezier path for the shape of an element.
 
@@ -16,15 +17,20 @@ The Bezier path for the shape of an element.
 var path: UIBezierPath? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIBezierPath * path;
+```
+
 #### Discussion
 
 Use this property to customize the image of an element. The framework only supports custom paths for button elements.
 
 ## See Also
 
-- [var isHidden: Bool](gcvirtualcontroller/elementconfiguration/ishidden.md)
+### Configuring elements
+- [var isHidden: Bool](./ishidden.md)
   A Boolean value that determines whether the virtual controller hides the element.
-- [var actsAsTouchpad: Bool](gcvirtualcontroller/elementconfiguration/actsastouchpad.md)
+- [var actsAsTouchpad: Bool](./actsastouchpad.md)
   A Boolean value that determines whether the thumbstick element behaves as a touchpad.
 
 

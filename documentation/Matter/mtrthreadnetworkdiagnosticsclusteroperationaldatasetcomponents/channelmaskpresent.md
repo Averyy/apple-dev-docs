@@ -1,7 +1,8 @@
 # channelMaskPresent
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.1+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var channelMaskPresent: NSNumber { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSNumber * channelMaskPresent;
 ```
 
 

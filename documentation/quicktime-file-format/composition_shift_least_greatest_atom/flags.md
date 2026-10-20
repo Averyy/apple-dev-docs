@@ -1,7 +1,8 @@
 # Flags
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 3-byte space reserved for flags.
 
@@ -11,21 +12,22 @@ Set this field to `0`.
 
 ## See Also
 
-- [Size](composition_shift_least_greatest_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in the composition shift least greatest atom atom.
-- [Type](composition_shift_least_greatest_atom/type.md)
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
-- [Version](composition_shift_least_greatest_atom/version.md)
+- [Version](./version.md)
   A 1-byte specification of the version of this atom.
-- [compositionOffsetToDisplayOffsetShift](composition_shift_least_greatest_atom/compositionoffsettodisplayoffsetshift.md)
+- [compositionOffsetToDisplayOffsetShift](./compositionoffsettodisplayoffsetshift.md)
   A 32-bit unsigned integer that specifies the calculated value.
-- [leastDisplayOffset](composition_shift_least_greatest_atom/leastdisplayoffset.md)
+- [leastDisplayOffset](./leastdisplayoffset.md)
   A 32-bit unsigned integer that specifies the calculated value.
-- [greatestDisplayOffset](composition_shift_least_greatest_atom/greatestdisplayoffset.md)
+- [greatestDisplayOffset](./greatestdisplayoffset.md)
   A 32-bit unsigned integer that specifies the calculated value.
-- [displayStartTime](composition_shift_least_greatest_atom/displaystarttime.md)
+- [displayStartTime](./displaystarttime.md)
   A 32-bit signed integer that specifies the calculated value.
-- [displayEndTime](composition_shift_least_greatest_atom/displayendtime.md)
+- [displayEndTime](./displayendtime.md)
   A 32-bit signed integer that specifies the calculated value.
 
 

@@ -1,7 +1,8 @@
 # StopMirroringCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to stop mirroring the display to another device.
 
@@ -13,14 +14,14 @@ The command to stop mirroring the display to another device.
 
 ## Declaration
 
-```swift
+```
 object StopMirroringCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object StopMirroringCommand.Command](stopmirroringcommand/command-data.dictionary.md)
+- [object StopMirroringCommand.Command](./stopmirroringcommand/command-data.dictionary.md)
   The command to stop mirroring the display to another device.
 
 ## Properties
@@ -30,7 +31,8 @@ object StopMirroringCommand
 
 ## See Also
 
-- [object StopMirroringResponse](stopmirroringresponse.md)
+### Commands and responses
+- [object StopMirroringResponse](./stopmirroringresponse.md)
   A response from the device after it processes the command to stop mirroring the display to another device.
 
 

@@ -1,7 +1,8 @@
 # clientData
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The client data to supply to the relying party.
 
@@ -17,7 +18,8 @@ var clientData: ASPublicKeyCredentialClientData? { get }
 
 ## See Also
 
-- [var shouldShowHybridTransport: Bool](asauthorizationwebbrowserplatformpublickeycredentialassertionrequest/shouldshowhybridtransport.md)
+### Information about the assertion
+- [var shouldShowHybridTransport: Bool](./shouldshowhybridtransport.md)
   Whether a remote authenticator that communicates with the operating system using Bluetooth can resolve the challenge.
 
 

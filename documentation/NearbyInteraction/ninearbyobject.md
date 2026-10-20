@@ -1,7 +1,8 @@
 # NINearbyObject
 
 **Framework**: Nearby Interaction  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Location information for a peer device in an interaction session.
 
@@ -17,53 +18,57 @@ Location information for a peer device in an interaction session.
 class NINearbyObject
 ```
 
+```objc
+@interface NINearbyObject : NSObject
+```
+
 #### Overview
 
 A nearby object refers to a peer Apple device or third-party accessory.
 
-When the framework is ready to provide your app with information about a nearby object’s relative position, it calls your delegate’s [`session(_:didUpdate:)`](nisessiondelegate/session(_:didupdate:).md) implementation.
+When the framework is ready to provide your app with information about a nearby object’s relative position, it calls your delegate’s [`session(_:didUpdate:)`](./nisessiondelegate/session%28_,didupdate%29.md) implementation.
 
-If a session can’t provide peer direction or distance, it sets the values to `nil`. In Objective-C, the session uses the [`NINearbyObjectDirectionNotAvailable`](ninearbyobjectdirectionnotavailable.md) and [`NINearbyObjectDistanceNotAvailable`](ninearbyobjectdistancenotavailable.md) values to indicate missing direction or distance.
+If a session can’t provide peer direction or distance, it sets the values to `nil`. In Objective-C, the session uses the [`NINearbyObjectDirectionNotAvailable`](./ninearbyobjectdirectionnotavailable.md) and [`NINearbyObjectDistanceNotAvailable`](./ninearbyobjectdistancenotavailable.md) values to indicate missing direction or distance.
 
-For more information, see [`Initiating and maintaining a session`](initiating-and-maintaining-a-session.md).
+For more information, see [Initiating and maintaining a session](./initiating-and-maintaining-a-session.md).
 
 ## Topics
 
 ### Identifying a nearby device
-- [var discoveryToken: NIDiscoveryToken](ninearbyobject/discoverytoken.md)
+- [var discoveryToken: NIDiscoveryToken](./ninearbyobject/discoverytoken.md)
   A unique identifier for a peer device in the session.
 ### Acquring relative distance
-- [var distance: Float?](ninearbyobject/distance-676dm.md)
+- [var distance: Float?](./ninearbyobject/distance-676dm.md)
   The distance from the user’s device to the peer device in meters.
 ### Acquiring relative direction
-- [var direction: simd_float3?](ninearbyobject/direction-4qh5w.md)
+- [var direction: simd_float3?](./ninearbyobject/direction-4qh5w.md)
   A vector that points from the user’s device in the direction of the peer device.
-- [var horizontalAngle: Float?](ninearbyobject/horizontalangle-hsg.md)
+- [var horizontalAngle: Float?](./ninearbyobject/horizontalangle-hsg.md)
   An angle in radians that indicates the azimuthal direction to the nearby object.
-- [var verticalDirectionEstimate: NINearbyObject.VerticalDirectionEstimate](ninearbyobject/verticaldirectionestimate-swift.property.md)
+- [var verticalDirectionEstimate: NINearbyObject.VerticalDirectionEstimate](./ninearbyobject/verticaldirectionestimate-swift.property.md)
   The estimation of a nearby object’s vertical position as it relates to the user’s device.
-- [NINearbyObject.VerticalDirectionEstimate](ninearbyobject/verticaldirectionestimate-swift.enum.md)
+- [NINearbyObject.VerticalDirectionEstimate](./ninearbyobject/verticaldirectionestimate-swift.enum.md)
   Estimations of a nearby object’s vertical position in relation to the user’s device.
 ### Explaining participation
-- [NINearbyObject.RemovalReason](ninearbyobject/removalreason.md)
+- [NINearbyObject.RemovalReason](./ninearbyobject/removalreason.md)
   The reason a session removed a nearby object.
 ### Initializers
-- [init?(coder: NSCoder)](ninearbyobject/init(coder:).md)
+- [init?(coder: NSCoder)](./ninearbyobject/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

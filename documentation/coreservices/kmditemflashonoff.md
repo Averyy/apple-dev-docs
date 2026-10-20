@@ -1,7 +1,8 @@
 # kMDItemFlashOnOff
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Indicates if a camera flash was used. A CFNumber.
 
@@ -12,6 +13,10 @@ Indicates if a camera flash was used. A CFNumber.
 
 ```swift
 let kMDItemFlashOnOff: CFString!
+```
+
+```c
+const CFStringRef kMDItemFlashOnOff;
 ```
 
 

@@ -1,7 +1,8 @@
 # CMPackingType
 
 **Framework**: Core Media  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of packing within each video frame, if any.
 
@@ -20,6 +21,10 @@ The type of packing within each video frame, if any.
 enum CMPackingType
 ```
 
+```c
+enum CMPackingType : uint64_t;
+```
+
 #### Overview
 
 Frame-packed video contains both the left and right eye images on a single video track. With frame-packed video, use the appropriate Frame Arrangement.
@@ -27,42 +32,43 @@ Frame-packed video contains both the left and right eye images on a single video
 ## Topics
 
 ### Frame Arrangement
-- [CMPackingType.none](cmpackingtype/none.md)
+- [CMPackingType.none](./cmpackingtype/none.md)
   Each frame contains only a single image, and isn’t frame-packed.
-- [CMPackingType.sideBySide](cmpackingtype/sidebyside.md)
+- [CMPackingType.sideBySide](./cmpackingtype/sidebyside.md)
   The video contains packed frames that have a left eye image on the left and right eye image on the right.
-- [CMPackingType.overUnder](cmpackingtype/overunder.md)
+- [CMPackingType.overUnder](./cmpackingtype/overunder.md)
   The video contains packed frames that have a left eye image on the top and right eye image on the bottom.
 ### Initializers
-- [init?(rawValue: UInt64)](cmpackingtype/init(rawvalue:).md)
+- [init?(rawValue: UInt64)](./cmpackingtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [CMMetadata](cmmetadata.md)
+### Metadata
+- [CMMetadata](./cmmetadata.md)
   The APIs for working with the framework’s Metadata Identifier Services and Metadata Data Type Registry.
-- [CMTag](cmtag-api.md)
+- [CMTag](./cmtag-api.md)
   Types and interfaces for working with Core Media tags.
-- [class CMTag](cmtag-swift.class.md)
+- [class CMTag](./cmtag-swift.class.md)
   A tag to set additional metadata on media buffers.
-- [class CMTypedTag](cmtypedtag.md)
+- [class CMTypedTag](./cmtypedtag.md)
   A tag to set additional metadata on media buffers, with an associated Swift type for its value.
-- [CMTagCollection](cmtagcollection.md)
+- [CMTagCollection](./cmtagcollection.md)
   Objective-C types and interfaces for working with Core Media tag collections.
-- [enum CMProjectionType](cmprojectiontype.md)
+- [enum CMProjectionType](./cmprojectiontype.md)
   Constants describing the projection surface information in a 3D video buffer or channel.
-- [struct CMStereoViewComponents](cmstereoviewcomponents.md)
+- [struct CMStereoViewComponents](./cmstereoviewcomponents.md)
   Constants describing the stereo views contained within a buffer or channel.
-- [struct CMStereoViewInterpretationOptions](cmstereoviewinterpretationoptions.md)
+- [struct CMStereoViewInterpretationOptions](./cmstereoviewinterpretationoptions.md)
   Create a set of stereo view interpretation options from a constant.
 
 

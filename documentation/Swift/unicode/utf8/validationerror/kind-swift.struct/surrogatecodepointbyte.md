@@ -1,7 +1,8 @@
 # surrogateCodePointByte
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A byte in a surrogate code point (`U+D800..U+DFFF`) sequence
 

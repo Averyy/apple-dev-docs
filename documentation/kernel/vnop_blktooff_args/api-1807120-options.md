@@ -7,13 +7,14 @@ XATTR_NOSECURITY: bypass security checking.
 
 ## See Also
 
-- [vp](vnop_blktooff_args/1807112-vp.md)
+### Fields
+- [vp](./api-1807112-vp.md)
   The vnode for which to get extended attribute keys.
-- [uio](vnop_blktooff_args/1807117-uio.md)
+- [uio](./api-1807117-uio.md)
   Description of target memory for attribute keys.
-- [size](vnop_blktooff_args/1807118-size.md)
+- [size](./api-1807118-size.md)
   Should be set to amount of data written to buffer.
-- [ctx](vnop_blktooff_args/1807122-ctx.md)
+- [ctx](./api-1807122-ctx.md)
   Context to authenticate for attribute name request.
 
 

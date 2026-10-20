@@ -1,15 +1,16 @@
 # Command Delimiter Keys
 
-**Framework**: Application Services
+**Framework**: Application Services  
+**Role**: API Collection
 
 Keys used with the `kSpeechCommandDelimiterProperty` property to specify information about the command delimiter strings.
 
 ## Topics
 
 ### Constants
-- [let kSpeechCommandPrefix: CFString](kspeechcommandprefix.md)
+- [let kSpeechCommandPrefix: CFString](../kspeechcommandprefix.md)
   The command delimiter string that prefixes a command (by default, this is “`[[`”). The string should contain two or fewer characters, which, for best compatibility, should be ASCII characters.
-- [let kSpeechCommandSuffix: CFString](kspeechcommandsuffix.md)
+- [let kSpeechCommandSuffix: CFString](../kspeechcommandsuffix.md)
   The command delimiter string that suffixes a command (by default, this is “`]]`”). The string should contain two or fewer characters, which, for best compatibility, should be ASCII characters.
 
 

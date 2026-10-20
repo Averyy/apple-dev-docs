@@ -1,7 +1,8 @@
 # removeSubscriber(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Removes a proxy progress object that the add subscriber method returns.
 
@@ -14,9 +15,13 @@ Removes a proxy progress object that the add subscriber method returns.
 class func removeSubscriber(_ subscriber: Any)
 ```
 
+```objc
++ (void) removeSubscriber:(id) subscriber;
+```
+
 #### Discussion
 
-If the block for [`addSubscriber(forFileURL:withPublishingHandler:)`](progress/addsubscriber(forfileurl:withpublishinghandler:).md) returns a closure, the system invokes that closure on the main thread when you invoke [`removeSubscriber(_:)`](progress/removesubscriber(_:).md).
+If the block for [`addSubscriber(forFileURL:withPublishingHandler:)`](./addsubscriber%28forfileurl,withpublishinghandler%29.md) returns a closure, the system invokes that closure on the main thread when you invoke [`removeSubscriber(_:)`](./removesubscriber%28_%29.md).
 
 ## Parameters
 
@@ -24,13 +29,14 @@ If the block for [`addSubscriber(forFileURL:withPublishingHandler:)`](progress/a
 
 ## See Also
 
-- [class func addSubscriber(forFileURL: URL, withPublishingHandler: Progress.PublishingHandler) -> Any](progress/addsubscriber(forfileurl:withpublishinghandler:).md)
+### Observing and Controlling File Progress by Other Processes
+- [class func addSubscriber(forFileURL: URL, withPublishingHandler: Progress.PublishingHandler) -> Any](./addsubscriber%28forfileurl,withpublishinghandler%29.md)
   Registers a file URL to hear about the progress of a file operation.
-- [var isOld: Bool](progress/isold.md)
+- [var isOld: Bool](./isold.md)
   A Boolean value that indicates when the observed progress object invokes the publish method before you subscribe to it.
-- [typealias PublishingHandler](progress/publishinghandler.md)
+- [typealias PublishingHandler](./publishinghandler.md)
   A block that the system calls when an observed progress object matches the subscription.
-- [typealias UnpublishingHandler](progress/unpublishinghandler.md)
+- [typealias UnpublishingHandler](./unpublishinghandler.md)
   A block that the system calls when an observed progress object terminates the subscription.
 
 

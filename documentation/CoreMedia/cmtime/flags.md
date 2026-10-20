@@ -1,7 +1,8 @@
 # flags
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The flags associated with a time.
 
@@ -20,13 +21,18 @@ The flags associated with a time.
 var flags: CMTimeFlags
 ```
 
+```c
+CMTimeFlags flags;
+```
+
 ## See Also
 
-- [var value: CMTimeValue](cmtime/value.md)
+### Accessing Time Values
+- [var value: CMTimeValue](./value.md)
   A time value that represents the numerator of a rational time.
-- [var timescale: CMTimeScale](cmtime/timescale.md)
+- [var timescale: CMTimeScale](./timescale.md)
   A timescale that represents the denominator of a rational time.
-- [var epoch: CMTimeEpoch](cmtime/epoch.md)
+- [var epoch: CMTimeEpoch](./epoch.md)
   The epoch of the time.
 
 

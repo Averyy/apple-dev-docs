@@ -1,7 +1,8 @@
 # inputPickerInteractionDidEndPresenting(_:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the input picker view has finished presenting devices
 
@@ -16,6 +17,10 @@ Tells the delegate that the input picker view has finished presenting devices
 optional func inputPickerInteractionDidEndPresenting(_ inputPickerInteraction: AVInputPickerInteraction)
 ```
 
+```objc
+- (void) inputPickerInteractionDidEndPresenting:(AVInputPickerInteraction *) inputPickerInteraction;
+```
+
 #### Discussion
 
 The `isPresented` property is set to `YES` at this point, indicating that the presentation is complete.
@@ -26,11 +31,12 @@ The `isPresented` property is set to `YES` at this point, indicating that the pr
 
 ## See Also
 
-- [func inputPickerInteractionWillBeginPresenting(AVInputPickerInteraction)](avinputpickerinteraction/delegate-swift.protocol/inputpickerinteractionwillbeginpresenting(_:).md)
+### Responding to life cycle events
+- [func inputPickerInteractionWillBeginPresenting(AVInputPickerInteraction)](./inputpickerinteractionwillbeginpresenting%28_%29.md)
   Tells the delegate that the input picker view is about to present devices.
-- [func inputPickerInteractionWillBeginDismissing(AVInputPickerInteraction)](avinputpickerinteraction/delegate-swift.protocol/inputpickerinteractionwillbegindismissing(_:).md)
+- [func inputPickerInteractionWillBeginDismissing(AVInputPickerInteraction)](./inputpickerinteractionwillbegindismissing%28_%29.md)
   Tells the delegate that the input picker view is about to dismiss devices.
-- [func inputPickerInteractionDidEndDismissing(AVInputPickerInteraction)](avinputpickerinteraction/delegate-swift.protocol/inputpickerinteractiondidenddismissing(_:).md)
+- [func inputPickerInteractionDidEndDismissing(AVInputPickerInteraction)](./inputpickerinteractiondidenddismissing%28_%29.md)
   Tells the delegate that the input picker view has finished dismissing devices.
 
 

@@ -1,18 +1,19 @@
 # kCMTimeCodeFormatType_Counter32
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 32-bit counter-mode sample.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@
 var kCMTimeCodeFormatType_Counter32: CMTimeCodeFormatType { get }
 ```
 
+```c
+kCMTimeCodeFormatType_Counter32
+```
+
 ## See Also
 
-- [var kCMTimeCodeFormatType_TimeCode32: CMTimeCodeFormatType](kcmtimecodeformattype_timecode32.md)
+### Constants
+- [var kCMTimeCodeFormatType_TimeCode32: CMTimeCodeFormatType](./kcmtimecodeformattype_timecode32.md)
   32-bit time code sample.
-- [var kCMTimeCodeFormatType_TimeCode64: CMTimeCodeFormatType](kcmtimecodeformattype_timecode64.md)
+- [var kCMTimeCodeFormatType_TimeCode64: CMTimeCodeFormatType](./kcmtimecodeformattype_timecode64.md)
   64-bit time code sample.
-- [var kCMTimeCodeFormatType_Counter64: CMTimeCodeFormatType](kcmtimecodeformattype_counter64.md)
+- [var kCMTimeCodeFormatType_Counter64: CMTimeCodeFormatType](./kcmtimecodeformattype_counter64.md)
   64-bit counter-mode sample.
 
 

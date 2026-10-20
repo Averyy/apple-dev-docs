@@ -1,6 +1,7 @@
 # Displaying dynamic dates in widgets
 
-**Framework**: WidgetKit
+**Framework**: WidgetKit  
+**Role**: Article
 
 Show up-to-date, time-based information in your widget even when it isn’t running.
 
@@ -8,7 +9,7 @@ Show up-to-date, time-based information in your widget even when it isn’t runn
 
 Because your widget extension isn’t always running, you can’t directly update your widget’s content. Instead, WidgetKit renders your widget’s view on your behalf and displays the result. However, some SwiftUI views let you display content that continues updating while your widget is visible.
 
-Using a [`Text`](https://developer.apple.com/documentation/swiftui/text) view in your widget, you can display dates and times that stay up to date onscreen. The following examples show the combinations available.
+Using a [`Text`](../SwiftUI/text.md) view in your widget, you can display dates and times that stay up to date onscreen. The following examples show the combinations available.
 
 To display a relative time that updates automatically, use code similar to the example below:
 
@@ -25,7 +26,7 @@ Text(futureDate, style: .offset)
 // -11 minutes
 ```
 
-Using the [`relative`](https://developer.apple.com/documentation/swiftui/text/datestyle/relative) style shows the absolute difference between the current date and time and the date specified, regardless of whether the date is in the future or the past. The [`offset`](https://developer.apple.com/documentation/swiftui/text/datestyle/offset) style shows the difference between the current date and time and the date specified, indicating dates in the future with a minus sign (`-`) prefix and dates in the past with a plus sign (`+`) prefix.
+Using the [`relative`](../SwiftUI/text/datestyle/relative.md) style shows the absolute difference between the current date and time and the date specified, regardless of whether the date is in the future or the past. The [`offset`](../SwiftUI/text/datestyle/offset.md) style shows the difference between the current date and time and the date specified, indicating dates in the future with a minus sign (`-`) prefix and dates in the past with a plus sign (`+`) prefix.
 
 To display a timer that continues updating automatically, use code similar to the example below:
 
@@ -38,7 +39,7 @@ Text(futureDate, style: .timer)
 // 15:00
 ```
 
-For dates in the future, the [`timer`](https://developer.apple.com/documentation/swiftui/text/datestyle/timer) style counts down until the current time reaches the specified date and time, and counts up when the date passes.
+For dates in the future, the [`timer`](../SwiftUI/text/datestyle/timer.md) style counts down until the current time reaches the specified date and time, and counts up when the date passes.
 
 To display an absolute date or time, use code similar to the example below:
 
@@ -74,7 +75,7 @@ Text("The meeting will take place: \(startDate ... endDate)")
 // The meeting will take place: 9:30AM-2:45PM
 ```
 
-To show progress toward a future date without reloading your widget, use [`init(timerInterval:countsDown:)`](https://developer.apple.com/documentation/swiftui/progressview/init(timerinterval:countsdown:)), as follows:
+To show progress toward a future date without reloading your widget, use [`init(timerInterval:countsDown:)`](../SwiftUI/progressview/init%28timerinterval,countsdown%29.md), as follows:
 
 ```swift
 let start = Date.now
@@ -85,7 +86,7 @@ ProgressView(timerInterval: start...end, countsDown: false)
 
 The progress view fills in automatically as time passes from the start of the date range to the end. Set `countsDown` to `true` to leave the progress view empty instead.
 
-To pair the progress view with a numeric countdown, or to show a countdown on its own without reloading your widget, use [`init(timerInterval:pauseTime:countsDown:showsHours:)`](https://developer.apple.com/documentation/swiftui/text/init(timerinterval:pausetime:countsdown:showshours:)), as shown here:
+To pair the progress view with a numeric countdown, or to show a countdown on its own without reloading your widget, use [`init(timerInterval:pauseTime:countsDown:showsHours:)`](../SwiftUI/text/init%28timerinterval,pausetime,countsdown,showshours%29.md), as shown here:
 
 ```swift
 Text(timerInterval: start...end, countsDown: true)
@@ -97,7 +98,8 @@ Provide a `pauseTime` to stop the timer at a specific date, such as when a count
 
 ## See Also
 
-- [struct Text](../swiftui/text.md)
+### Displaying text
+- [struct Text](../SwiftUI/text.md)
   A view that displays one or more lines of read-only text.
 
 

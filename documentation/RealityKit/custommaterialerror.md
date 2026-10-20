@@ -1,7 +1,8 @@
 # CustomMaterialError
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Errors generated when loading custom material functions.
 
@@ -21,18 +22,18 @@ enum CustomMaterialError
 ## Topics
 
 ### Enumeration Cases
-- [CustomMaterialError.defaultSurfaceShaderForMaterialNotFound](custommaterialerror/defaultsurfaceshaderformaterialnotfound.md)
-- [CustomMaterialError.geometryModifierFunctionNotFound](custommaterialerror/geometrymodifierfunctionnotfound.md)
-- [CustomMaterialError.surfaceShaderFunctionNotFound](custommaterialerror/surfaceshaderfunctionnotfound.md)
+- [CustomMaterialError.defaultSurfaceShaderForMaterialNotFound](./custommaterialerror/defaultsurfaceshaderformaterialnotfound.md)
+- [CustomMaterialError.geometryModifierFunctionNotFound](./custommaterialerror/geometrymodifierfunctionnotfound.md)
+- [CustomMaterialError.surfaceShaderFunctionNotFound](./custommaterialerror/surfaceshaderfunctionnotfound.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

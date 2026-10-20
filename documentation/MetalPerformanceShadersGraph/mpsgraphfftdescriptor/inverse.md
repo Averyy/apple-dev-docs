@@ -1,7 +1,8 @@
 # inverse
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean-valued parameter that defines the phase factor sign for Fourier transforms.
 
@@ -17,6 +18,10 @@ A Boolean-valued parameter that defines the phase factor sign for Fourier transf
 
 ```swift
 var inverse: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL inverse;
 ```
 
 #### Discussion

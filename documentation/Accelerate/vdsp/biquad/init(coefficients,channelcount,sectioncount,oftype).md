@@ -1,7 +1,8 @@
 # init(coefficients:channelCount:sectionCount:ofType:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new single-channel or multichannel cascaded biquad IIR structure.
 
@@ -11,7 +12,7 @@ Creates a new single-channel or multichannel cascaded biquad IIR structure.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

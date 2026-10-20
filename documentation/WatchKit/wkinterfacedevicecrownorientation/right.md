@@ -1,7 +1,8 @@
 # WKInterfaceDeviceCrownOrientation.right
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The right side of the device.
 
@@ -14,9 +15,14 @@ The right side of the device.
 case right
 ```
 
+```c
+WKInterfaceDeviceCrownOrientationRight
+```
+
 ## See Also
 
-- [WKInterfaceDeviceCrownOrientation.left](wkinterfacedevicecrownorientation/left.md)
+### Constants
+- [WKInterfaceDeviceCrownOrientation.left](./left.md)
   The left side of the device.
 
 

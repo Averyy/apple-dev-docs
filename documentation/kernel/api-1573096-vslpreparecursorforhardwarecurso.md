@@ -1,23 +1,25 @@
 # VSLPrepareCursorForHardwareCursor
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 Boolean VSLPrepareCursorForHardwareCursor(void *cursorRef, IOHardwareCursorDescriptor *hardwareDescriptor, IOHardwareCursorInfo *hwCursorInfo);
 ```
 
 ## See Also
 
-- [agdcGTraceToken](3123025-agdcgtracetoken.md)
-- [VSLDisposeInterruptService](1573084-vsldisposeinterruptservice.md)
-- [VSLDoInterruptService](1573107-vsldointerruptservice.md)
-- [VSLNewInterruptService](1573117-vslnewinterruptservice.md)
+### Framebuffer Utilities
+- [agdcGTraceToken](./api-3123025-agdcgtracetoken.md)
+- [VSLDisposeInterruptService](./api-1573084-vsldisposeinterruptservice.md)
+- [VSLDoInterruptService](./api-1573107-vsldointerruptservice.md)
+- [VSLNewInterruptService](./api-1573117-vslnewinterruptservice.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # defaultChangedEventMask
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 If the bit specified by this mask is set, your callback function is invoked when a different keychain is specified as the default.
 
@@ -13,6 +14,10 @@ If the bit specified by this mask is set, your callback function is invoked when
 
 ```swift
 static var defaultChangedEventMask: SecKeychainEventMask { get }
+```
+
+```c
+kSecDefaultChangedEventMask
 ```
 
 

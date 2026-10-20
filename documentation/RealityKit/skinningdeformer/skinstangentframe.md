@@ -1,7 +1,8 @@
 # skinsTangentFrame
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies whether to skin normals, tangents, and bitangents.
 

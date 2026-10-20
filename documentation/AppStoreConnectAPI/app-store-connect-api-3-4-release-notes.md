@@ -1,6 +1,7 @@
 # App Store Connect API 3.4 release notes
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: Article
 
 Update your server-side code to use new features, and test your code against API changes.
 
@@ -10,40 +11,41 @@ App Store Connect API version 3.4 provides resources that enable you to automate
 
 ##### New Features
 
-- You can now use the [`Analytics`](analytics.md) reports API to download and analyze your app’s usage, and performance, and find opportunities for improvement. To learn more about interpreting the data using the glossary of report fields and definitions, see [`Analytics Reports`](https://developer.apple.com/documentation/analytics-reports).
-- Added `FIRST_ANNUAL` report type to [`Download sales and trends reports`](get-v1-salesreports.md).
+- You can now use the [Analytics](./analytics.md) reports API to download and analyze your app’s usage, and performance, and find opportunities for improvement. To learn more about interpreting the data using the glossary of report fields and definitions, see [Analytics Reports](../analytics-reports/analytics-reports.md).
+- Added `FIRST_ANNUAL` report type to [`Download sales and trends reports`](./get-v1-salesreports.md).
 
 ## See Also
 
-- [App Store Connect API 4.5.1 release notes](app-store-connect-api-4-5-1-release-notes.md)
+### Versions
+- [App Store Connect API 4.5.1 release notes](./app-store-connect-api-4-5-1-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 4.5 release notes](app-store-connect-api-4-5-release-notes.md)
+- [App Store Connect API 4.5 release notes](./app-store-connect-api-4-5-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 4.4.1 release notes](app-store-connect-api-4-4-1-release-notes.md)
+- [App Store Connect API 4.4.1 release notes](./app-store-connect-api-4-4-1-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 4.4 release notes](app-store-connect-api-4-4-release-notes.md)
+- [App Store Connect API 4.4 release notes](./app-store-connect-api-4-4-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 4.3.1 release notes](app-store-connect-api-4-3-1-release-notes.md)
+- [App Store Connect API 4.3.1 release notes](./app-store-connect-api-4-3-1-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 4.3 release notes](app-store-connect-api-4-3-release-notes.md)
+- [App Store Connect API 4.3 release notes](./app-store-connect-api-4-3-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 4.2 release notes](app-store-connect-api-4-2-release-notes.md)
+- [App Store Connect API 4.2 release notes](./app-store-connect-api-4-2-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 4.1 release notes](app-store-connect-api-4-1-release-notes.md)
+- [App Store Connect API 4.1 release notes](./app-store-connect-api-4-1-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
+- [App Store Connect API 4.0 release notes](./app-store-connect-api-4-0-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 3.8 release notes](app-store-connect-api-3-8-release-notes.md)
+- [App Store Connect API 3.8 release notes](./app-store-connect-api-3-8-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 3.7 release notes](app-store-connect-api-3-7-release-notes.md)
+- [App Store Connect API 3.7 release notes](./app-store-connect-api-3-7-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 3.6 release notes](app-store-connect-api-3-6-release-notes.md)
+- [App Store Connect API 3.6 release notes](./app-store-connect-api-3-6-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 3.5 release notes](app-store-connect-api-3-5-release-notes.md)
+- [App Store Connect API 3.5 release notes](./app-store-connect-api-3-5-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 3.3 release notes](app-store-connect-api-3-3-release-notes.md)
+- [App Store Connect API 3.3 release notes](./app-store-connect-api-3-3-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 3.2 release notes](app-store-connect-api-3-2-release-notes.md)
+- [App Store Connect API 3.2 release notes](./app-store-connect-api-3-2-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 
 

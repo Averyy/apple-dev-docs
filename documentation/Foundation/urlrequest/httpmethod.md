@@ -1,7 +1,8 @@
 # httpMethod
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The HTTP request method.
 
@@ -22,7 +23,7 @@ var httpMethod: String? { get set }
 
 ## Mentions
 
-- [Uploading data to a website](uploading-data-to-a-website.md)
+- [Uploading data to a website](../uploading-data-to-a-website.md)
 
 #### Discussion
 
@@ -30,13 +31,14 @@ The default HTTP method is “GET”.
 
 ## See Also
 
-- [var url: URL?](urlrequest/url.md)
+### Accessing request components
+- [var url: URL?](./url.md)
   The URL of the request.
-- [var httpBody: Data?](urlrequest/httpbody.md)
+- [var httpBody: Data?](./httpbody.md)
   The data sent as the message body of a request, such as for an HTTP POST request.
-- [var httpBodyStream: InputStream?](urlrequest/httpbodystream.md)
+- [var httpBodyStream: InputStream?](./httpbodystream.md)
   The stream used to deliver the HTTP body.
-- [var mainDocumentURL: URL?](urlrequest/maindocumenturl.md)
+- [var mainDocumentURL: URL?](./maindocumenturl.md)
   The main document URL associated with this request.
 
 

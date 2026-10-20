@@ -1,7 +1,8 @@
 # init(path:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a halo effect using the specified Bézier path.
 
@@ -17,11 +18,16 @@ Creates a halo effect using the specified Bézier path.
 convenience init(path bezierPath: UIBezierPath)
 ```
 
+```objc
++ (instancetype) effectWithPath:(UIBezierPath *) bezierPath;
+```
+
 ## See Also
 
-- [convenience init(roundedRect: CGRect, cornerRadius: CGFloat, curve: CALayerCornerCurve)](uifocushaloeffect/init(roundedrect:cornerradius:curve:).md)
+### Creating a halo effect
+- [convenience init(roundedRect: CGRect, cornerRadius: CGFloat, curve: CALayerCornerCurve)](./init%28roundedrect,cornerradius,curve%29.md)
   Creates a rounded halo effect using the specified corner radius and corner curve.
-- [convenience init(rect: CGRect)](uifocushaloeffect/init(rect:).md)
+- [convenience init(rect: CGRect)](./init%28rect%29.md)
   Creates a rectangular halo effect using the specified rectangle.
 
 

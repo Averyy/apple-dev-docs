@@ -1,7 +1,8 @@
 # kAuthorizationRightExecute
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The type for an authorization item requesting the right to execute with privileges.
 
@@ -15,9 +16,13 @@ The type for an authorization item requesting the right to execute with privileg
 var kAuthorizationRightExecute: String { get }
 ```
 
+```c
+#define kAuthorizationRightExecute
+```
+
 #### Discussion
 
-In addition to this right, you should obtain whatever rights the tool needs to perform its operation on your behalf. The [`AuthorizationItem`](authorizationitem.md) should contain the full path of the tool you wish to execute in the `value` and `valueLength` fields.  In the future we will limit the right to only execute the requested path, and we will display this information to the user.
+In addition to this right, you should obtain whatever rights the tool needs to perform its operation on your behalf. The [`AuthorizationItem`](./authorizationitem.md) should contain the full path of the tool you wish to execute in the `value` and `valueLength` fields.  In the future we will limit the right to only execute the requested path, and we will display this information to the user.
 
 
 ---

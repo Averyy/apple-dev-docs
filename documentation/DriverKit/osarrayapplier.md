@@ -1,23 +1,25 @@
 # OSArrayApplier
 
 **Framework**: DriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 typedef _Bool (^)(class OSObject *) OSArrayApplier;
 ```
 
 ## See Also
 
-- [OSArrayApply](osarrayapply.md)
+### Modifying the Array Contents
+- [OSArrayApply](./osarrayapply.md)
 
 
 ---

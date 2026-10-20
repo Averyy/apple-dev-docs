@@ -1,7 +1,8 @@
 # GeometricPin
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that identifies a local transform relative to an entity or entity’s animating skeletal joint.
 
@@ -25,7 +26,7 @@ A geometric pin has a base transform and allows an optional offset relative to t
 
 After a geometric pin has attached to an entity, or `GeometricPin/entity` is not `nil`, the base transform may be available. If you construct a geometric pin with a generic name, the base transform resolves to the transform of the pin’s owning entity. If you construct a geometric pin with a skeletal joint name, the base transform resolves to the current transform of the skeletal joint with the matching joint name. When the base transform is available, the pin’s query function such as `GeometricPin/position` or `GeometricPin/orientation` returns the base transform with the offset applied.
 
-You can attach a pin to an entity by creating a `GeometricPin`, adding it to a [`GeometricPinsComponent`](geometricpinscomponent.md), and finally setting the [`GeometricPinsComponent`](geometricpinscomponent.md) to an `Entity`.
+You can attach a pin to an entity by creating a `GeometricPin`, adding it to a [`GeometricPinsComponent`](./geometricpinscomponent.md), and finally setting the [`GeometricPinsComponent`](./geometricpinscomponent.md) to an `Entity`.
 
 ```swift
 let pin = GeometricPin(named: "genericPin")
@@ -37,7 +38,7 @@ let entity = Entity()
 entity.components.set(pinsComponent)
 ```
 
-Another way to attach a pin is to add the `GeometricPin` to the [`pins`](entity/pins.md) collection directly.
+Another way to attach a pin is to add the `GeometricPin` to the [`pins`](./entity/pins.md) collection directly.
 
 ```swift
 let entity = Entity()
@@ -57,53 +58,54 @@ let retrievedPin = pinsComponent["animatingPin"]
 ## Topics
 
 ### Operators
-- [static func == (GeometricPin, GeometricPin) -> Bool](geometricpin/==(_:_:).md)
+- [static func == (GeometricPin, GeometricPin) -> Bool](./geometricpin/eqeq%28_,_%29.md)
   Returns a Boolean that indicates whether the pins are equal.
 ### Initializers
-- [init(named: String, offsetPosition: SIMD3<Float>, offsetOrientation: simd_quatf)](geometricpin/init(named:offsetposition:offsetorientation:).md)
+- [init(named: String, offsetPosition: SIMD3<Float>, offsetOrientation: simd_quatf)](./geometricpin/init%28named,offsetposition,offsetorientation%29.md)
   Creates a geometric pin that identifies a local position and orientation.
-- [init(named: String, skeletalJointName: String, offsetPosition: SIMD3<Float>, offsetOrientation: simd_quatf)](geometricpin/init(named:skeletaljointname:offsetposition:offsetorientation:).md)
+- [init(named: String, skeletalJointName: String, offsetPosition: SIMD3<Float>, offsetOrientation: simd_quatf)](./geometricpin/init%28named,skeletaljointname,offsetposition,offsetorientation%29.md)
   Creates a geometric pin that attaches to a skeletal joint.
 ### Instance Properties
-- [var entity: Entity?](geometricpin/entity.md)
+- [var entity: Entity?](./geometricpin/entity.md)
   The entity where the local frame lives.
-- [var name: String](geometricpin/name.md)
+- [var name: String](./geometricpin/name.md)
   The name of the pin.
-- [var offsetOrientation: simd_quatf](geometricpin/offsetorientation.md)
+- [var offsetOrientation: simd_quatf](./geometricpin/offsetorientation.md)
   Offset from the pin’s base orientation.
-- [var offsetPosition: SIMD3<Float>](geometricpin/offsetposition.md)
+- [var offsetPosition: SIMD3<Float>](./geometricpin/offsetposition.md)
   Offset from the pin’s base position.
-- [var orientation: simd_quatf?](geometricpin/orientation.md)
+- [var orientation: simd_quatf?](./geometricpin/orientation.md)
   Calculates and returns the current orientation of the pin relative to the pin’s owning entity, adjusted by the optional offset orientation.
-- [var position: SIMD3<Float>?](geometricpin/position.md)
+- [var position: SIMD3<Float>?](./geometricpin/position.md)
   Calculates and returns the current position of the pin relative to the pin’s owning entity, adjusted by the optional offset position.
 ### Instance Methods
-- [func hash(into: inout Hasher)](geometricpin/hash(into:).md)
+- [func hash(into: inout Hasher)](./geometricpin/hash%28into%29.md)
   Hashes the essential components of the pin by feeding them into the hash function.
-- [func orientation(relativeTo: Entity?) -> simd_quatf?](geometricpin/orientation(relativeto:).md)
+- [func orientation(relativeTo: Entity?) -> simd_quatf?](./geometricpin/orientation%28relativeto%29.md)
   Calculates and returns the current orientation of the pin relative to a reference entity, adjusted by the optional offset position.
-- [func position(relativeTo: Entity?) -> SIMD3<Float>?](geometricpin/position(relativeto:).md)
+- [func position(relativeTo: Entity?) -> SIMD3<Float>?](./geometricpin/position%28relativeto%29.md)
   Calculates and returns the current position of the pin relative to a reference entity, adjusted by the optional offset position.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [Simulating physics joints in your RealityKit app](simulating-physics-joints-in-your-realitykit-app.md)
+### Pin and joint components
+- [Simulating physics joints in your RealityKit app](./simulating-physics-joints-in-your-realitykit-app.md)
   Create realistic, connected motion using physics joints.
-- [struct GeometricPinsComponent](geometricpinscomponent.md)
+- [struct GeometricPinsComponent](./geometricpinscomponent.md)
   A component that stores a sequence of geometric pins.
-- [protocol PhysicsJoint](physicsjoint.md)
+- [protocol PhysicsJoint](./physicsjoint.md)
   A type that describes physics joints.
-- [struct PhysicsJointsComponent](physicsjointscomponent.md)
+- [struct PhysicsJointsComponent](./physicsjointscomponent.md)
   A component that stores physics joints which RealityKit simulates.
-- [struct EntityGeometricPins](entitygeometricpins.md)
+- [struct EntityGeometricPins](./entitygeometricpins.md)
   A structure that wraps all geometric pins an entity owns.
-- [struct AttachedTransformComponent](attachedtransformcomponent.md)
+- [struct AttachedTransformComponent](./attachedtransformcomponent.md)
   A component that stores an optional source pin owned by this entity and a target pin which this entity is attached to
 
 

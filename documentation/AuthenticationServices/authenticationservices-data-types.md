@@ -1,10 +1,12 @@
 # AuthenticationServices Data Types
 
-**Framework**: Authentication Services
+**Framework**: Authentication Services  
+**Role**: API Collection
 
 ## See Also
 
-- [AuthenticationServices Enumerations](authenticationservices-enumerations.md)
+### Reference
+- [AuthenticationServices Enumerations](./authenticationservices-enumerations.md)
 
 
 ---

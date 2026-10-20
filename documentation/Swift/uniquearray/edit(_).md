@@ -1,7 +1,8 @@
 # edit(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Arbitrarily edit the storage underlying this array by invoking a user-supplied closure with a mutable `OutputSpan` view over it. This method calls its function argument at most once, allowing it to arbitrarily modify the contents of the output span it is given. The argument is free to add, remove or reorder any items; however, it is not allowed to replace the span or change its capacity.
 
@@ -28,7 +29,7 @@ This method returns the result of its function argument.
 
 When the function argument finishes (whether by returning or throwing an error) the rigid array instance is updated to match the final contents of the output span.
 
-> **Note**: Adds O(1) overhead to the complexity of the function argument.
+> **Complexity**: Adds O(1) overhead to the complexity of the function argument.
 
 ## Parameters
 

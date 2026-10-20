@@ -1,7 +1,8 @@
 # InstallEnterpriseApplicationCommand.Command.Configuration
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that contains the configuration to install an enterprise app.
 
@@ -10,7 +11,7 @@ A dictionary that contains the configuration to install an enterprise app.
 
 ## Declaration
 
-```swift
+```
 object InstallEnterpriseApplicationCommand.Command.Configuration
 ```
 
@@ -20,7 +21,8 @@ object InstallEnterpriseApplicationCommand.Command.Configuration
 
 ## See Also
 
-- [object InstallEnterpriseApplicationCommand.Command.Manifest](installenterpriseapplicationcommand/command-data.dictionary/manifest-data.dictionary.md)
+### Objects
+- [object InstallEnterpriseApplicationCommand.Command.Manifest](./manifest-data.dictionary.md)
   A dictionary that contains a manifest.
 
 

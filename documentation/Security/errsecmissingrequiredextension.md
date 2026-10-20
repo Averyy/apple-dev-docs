@@ -1,7 +1,8 @@
 # errSecMissingRequiredExtension
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A required certificate extension is missing.
 
@@ -18,6 +19,10 @@ A required certificate extension is missing.
 
 ```swift
 var errSecMissingRequiredExtension: OSStatus { get }
+```
+
+```c
+errSecMissingRequiredExtension
 ```
 
 

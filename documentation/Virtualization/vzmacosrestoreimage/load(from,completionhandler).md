@@ -1,7 +1,8 @@
 # load(from:completionHandler:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Load a restore image from a file on the local file system.
 
@@ -22,15 +23,18 @@ class func load(from fileURL: URL, completionHandler: @escaping @Sendable (Resul
 ## Parameters
 
 - `fileURL`: A file URL that indicates the macOS restore image to load.
-- `completionHandler`: A block called after the restore image successfully loaded or has failed to load. The `error` parameter passed to the block is `nil` if the restore image loads successfully. The system invokes the completion handler on an arbitrary thread.
+- `completionHandler`: A block called after the restore image successfully loaded or has failed to load. The `error` parameter passed to the block is `nil` if the restore image loads successfully.
+
+  The system invokes the completion handler on an arbitrary thread.
 
 ## See Also
 
-- [class func fetchLatestSupported(completionHandler: (Result<VZMacOSRestoreImage, any Error>) -> Void)](vzmacosrestoreimage/fetchlatestsupported(completionhandler:).md)
+### Controlling the Restoration Process
+- [class func fetchLatestSupported(completionHandler: (Result<VZMacOSRestoreImage, any Error>) -> Void)](./fetchlatestsupported%28completionhandler%29.md)
   Fetches the latest restore image supported by this host from the network.
-- [class var latestSupported: VZMacOSRestoreImage](vzmacosrestoreimage/latestsupported.md)
+- [class var latestSupported: VZMacOSRestoreImage](./latestsupported.md)
   Fetches the latest restore image supported by this host from the network.
-- [class func image(from: URL) async throws -> VZMacOSRestoreImage](vzmacosrestoreimage/image(from:).md)
+- [class func image(from: URL) async throws -> VZMacOSRestoreImage](./image%28from%29.md)
   Load a restore image from a file on the local file system.
 
 

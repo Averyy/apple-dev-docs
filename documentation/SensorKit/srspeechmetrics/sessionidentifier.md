@@ -1,7 +1,8 @@
 # sessionIdentifier
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier for the audio session.
 
@@ -16,19 +17,24 @@ An identifier for the audio session.
 var sessionIdentifier: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * sessionIdentifier;
+```
+
 #### Discussion
 
 For example, this property is an identifier for a phone call or Siri utterance.
 
 ## See Also
 
-- [var sessionFlags: SRSpeechMetrics.SessionFlags](srspeechmetrics/sessionflags-swift.property.md)
+### Getting session information
+- [var sessionFlags: SRSpeechMetrics.SessionFlags](./sessionflags-swift.property.md)
   Details about the audio processing.
-- [SRSpeechMetrics.SessionFlags](srspeechmetrics/sessionflags-swift.struct.md)
+- [SRSpeechMetrics.SessionFlags](./sessionflags-swift.struct.md)
   Possible details about processing an audio stream.
-- [var timeSinceAudioStart: TimeInterval](srspeechmetrics/timesinceaudiostart.md)
+- [var timeSinceAudioStart: TimeInterval](./timesinceaudiostart.md)
   The number of seconds since the start of the audio stream.
-- [var timestamp: Date](srspeechmetrics/timestamp.md)
+- [var timestamp: Date](./timestamp.md)
   The date and time when the speech occurs.
 
 

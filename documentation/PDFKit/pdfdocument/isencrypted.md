@@ -1,7 +1,8 @@
 # isEncrypted
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value specifying whether the document is encrypted.
 
@@ -19,25 +20,30 @@ A Boolean value specifying whether the document is encrypted.
 var isEncrypted: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL isEncrypted;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the document is encrypted, whether it is locked or unlocked; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the document is encrypted, whether it is locked or unlocked; [`false`](../../Swift/false.md) otherwise.
 
 #### Discussion
 
 If encrypted, reading the document requires a password.
 
-Encrypted documents whose password is the empty string are unlocked automatically upon opening, because PDF Kit tries the empty string as a password if none is supplied. Use the [`unlock(withPassword:)`](pdfdocument/unlock(withpassword:).md) method to unlock a document using a password.
+Encrypted documents whose password is the empty string are unlocked automatically upon opening, because PDF Kit tries the empty string as a password if none is supplied. Use the [`unlock(withPassword:)`](./unlock%28withpassword%29.md) method to unlock a document using a password.
 
 ## See Also
 
-- [var isLocked: Bool](pdfdocument/islocked.md)
+### Managing Document Security
+- [var isLocked: Bool](./islocked.md)
   A Boolean value indicating whether the document is locked.
-- [func unlock(withPassword: String) -> Bool](pdfdocument/unlock(withpassword:).md)
+- [func unlock(withPassword: String) -> Bool](./unlock%28withpassword%29.md)
   Attempts to unlock an encrypted document.
-- [var permissionsStatus: PDFDocumentPermissions](pdfdocument/permissionsstatus.md)
+- [var permissionsStatus: PDFDocumentPermissions](./permissionsstatus.md)
   The permissions status of the PDF document.
-- [Permission Properties](permission-properties.md)
+- [Permission Properties](../permission-properties.md)
   Properties that specify what functions are allowed for a PDF document.
 
 

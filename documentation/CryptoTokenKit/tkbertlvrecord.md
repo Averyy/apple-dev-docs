@@ -1,7 +1,8 @@
 # TKBERTLVRecord
 
 **Framework**: CryptoTokenKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that parses BER-encoded data and produces DER-encoded data for TLV records.
 
@@ -20,38 +21,43 @@ An object that parses BER-encoded data and produces DER-encoded data for TLV rec
 class TKBERTLVRecord
 ```
 
+```objc
+@interface TKBERTLVRecord : TKTLVRecord
+```
+
 ## Topics
 
 ### Creating TLV Records
-- [init(tag: TKTLVTag, value: Data)](tkbertlvrecord/init(tag:value:).md)
+- [init(tag: TKTLVTag, value: Data)](./tkbertlvrecord/init%28tag,value%29.md)
   Initializes a BER-TLV record with the specified tag and value.
-- [init(tag: TKTLVTag, records: [TKTLVRecord])](tkbertlvrecord/init(tag:records:).md)
+- [init(tag: TKTLVTag, records: [TKTLVRecord])](./tkbertlvrecord/init%28tag,records%29.md)
   Initializes a BER-TLV record with the specified tag and an array of TLV subrecords.
-- [typealias TKTLVTag](tktlvtag.md)
+- [typealias TKTLVTag](./tktlvtag.md)
   The type used to identify TLV format tags.
 ### Encoding Data
-- [class func data(forTag: TKTLVTag) -> Data](tkbertlvrecord/data(fortag:).md)
+- [class func data(forTag: TKTLVTag) -> Data](./tkbertlvrecord/data%28fortag%29.md)
   Encodes a specified tag using BER-TLV tag encoding rules.
 
 ## Relationships
 
 ### Inherits From
-- [TKTLVRecord](tktlvrecord.md)
+- [TKTLVRecord](./tktlvrecord.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class TKTLVRecord](tktlvrecord.md)
+### Working with Tag-Length-Value Records
+- [class TKTLVRecord](./tktlvrecord.md)
   The base class encapsulating a Tag-Length-Value record.
-- [class TKCompactTLVRecord](tkcompacttlvrecord.md)
+- [class TKCompactTLVRecord](./tkcompacttlvrecord.md)
   An object that implements encoding using Compact-TLV encoding according to ISO 7816-4.
-- [class TKSimpleTLVRecord](tksimpletlvrecord.md)
+- [class TKSimpleTLVRecord](./tksimpletlvrecord.md)
   An object that implements encoding using Simple-TLV encoding according to ISO 7816-4.
 
 

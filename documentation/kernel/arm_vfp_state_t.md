@@ -1,7 +1,8 @@
 # arm_vfp_state_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 11.0+
@@ -9,8 +10,8 @@
 ## Topics
 
 ### Instance Properties
-- [fpscr](arm_vfp_state_t/3609543-fpscr.md)
-- [r](arm_vfp_state_t/3609544-r.md)
+- [fpscr](./arm_vfp_state_t/api-3609543-fpscr.md)
+- [r](./arm_vfp_state_t/api-3609544-r.md)
 
 
 ---

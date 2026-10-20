@@ -1,17 +1,22 @@
 # scrollColumnsLeft(by:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scrolls columns left by the specified number of columns.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func scrollColumnsLeft(by shiftAmount: Int)
+```
+
+```objc
+- (void) scrollColumnsLeftBy:(NSInteger) shiftAmount;
 ```
 
 ## Parameters
@@ -20,13 +25,14 @@ func scrollColumnsLeft(by shiftAmount: Int)
 
 ## See Also
 
-- [var hasHorizontalScroller: Bool](nsbrowser/hashorizontalscroller.md)
+### Scrolling
+- [var hasHorizontalScroller: Bool](./hashorizontalscroller.md)
   A Boolean that indicates whether the browser has a horizontal scroller.
-- [func scrollColumnToVisible(Int)](nsbrowser/scrollcolumntovisible(_:).md)
+- [func scrollColumnToVisible(Int)](./scrollcolumntovisible%28_%29.md)
   Scrolls to make the specified column visible.
-- [func scrollColumnsRight(by: Int)](nsbrowser/scrollcolumnsright(by:).md)
+- [func scrollColumnsRight(by: Int)](./scrollcolumnsright%28by%29.md)
   Scrolls columns right by the specified number of columns.
-- [func scrollRowToVisible(Int, inColumn: Int)](nsbrowser/scrollrowtovisible(_:incolumn:).md)
+- [func scrollRowToVisible(Int, inColumn: Int)](./scrollrowtovisible%28_,incolumn%29.md)
   Scrolls the specified row to be visible within the specified column.
 
 

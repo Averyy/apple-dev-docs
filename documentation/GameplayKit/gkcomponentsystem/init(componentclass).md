@@ -1,7 +1,8 @@
 # init(componentClass:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a component system to manage components of the specified class.
 
@@ -19,15 +20,19 @@ Initializes a component system to manage components of the specified class.
 init(componentClass cls: AnyClass)
 ```
 
+```objc
+- (instancetype) initWithComponentClass:(Class) cls;
+```
+
 #### Return Value
 
 A new component system.
 
 #### Discussion
 
-Each [`GKComponentSystem`](gkcomponentsystem.md) object manages components of a specific [`GKComponent`](gkcomponent.md) subclass, which you specify with the `class` parameter in this intializer. After initializing a component system, you may add components to it only if their type matches the system’s component class.
+Each [`GKComponentSystem`](../gkcomponentsystem.md) object manages components of a specific [`GKComponent`](../gkcomponent.md) subclass, which you specify with the `class` parameter in this intializer. After initializing a component system, you may add components to it only if their type matches the system’s component class.
 
-For more information, see [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
+For more information, see [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 
 ---

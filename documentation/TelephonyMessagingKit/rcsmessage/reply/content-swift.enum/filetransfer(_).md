@@ -1,7 +1,8 @@
 # RCSMessage.Reply.Content.fileTransfer(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A content type for file transfer content.
 

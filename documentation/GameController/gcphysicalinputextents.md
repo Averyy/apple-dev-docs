@@ -1,7 +1,8 @@
 # GCPhysicalInputExtents
 
 **Framework**: Game Controller  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Physical extents scale the normalized value reported by `GCLinearInput` into physical units.
 
@@ -19,20 +20,24 @@ Physical extents scale the normalized value reported by `GCLinearInput` into phy
 protocol GCPhysicalInputExtents : NSObjectProtocol
 ```
 
+```objc
+@protocol GCPhysicalInputExtents <NSObject>
+```
+
 ## Topics
 
 ### Instance Properties
-- [var maximumValue: Double](gcphysicalinputextents/maximumvalue.md)
+- [var maximumValue: Double](./gcphysicalinputextents/maximumvalue.md)
   The maximum value for the physical extent of the input.
-- [var minimumValue: Double](gcphysicalinputextents/minimumvalue.md)
+- [var minimumValue: Double](./gcphysicalinputextents/minimumvalue.md)
   The minimum value for the physical extent of the input.
-- [var scaledValue: Double](gcphysicalinputextents/scaledvalue.md)
+- [var scaledValue: Double](./gcphysicalinputextents/scaledvalue.md)
   The value of the input, scaled into physical units.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

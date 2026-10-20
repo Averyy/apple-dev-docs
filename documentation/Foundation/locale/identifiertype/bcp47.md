@@ -1,7 +1,8 @@
 # Locale.IdentifierType.bcp47
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The type of BCP 47 language identifiers.
 
@@ -26,9 +27,10 @@ An example of this type is `th-TH-u-ca-gregory-nu-thai`.
 
 ## See Also
 
-- [Locale.IdentifierType.icu](locale/identifiertype/icu.md)
+### Standard Identifier Types
+- [Locale.IdentifierType.icu](./icu.md)
   The type of identifiers that follow ICU (International Components for Unicode) conventions.
-- [Locale.IdentifierType.cldr](locale/identifiertype/cldr.md)
+- [Locale.IdentifierType.cldr](./cldr.md)
   The type of identifiers that follow CLDR (Common Locale Data Repository) conventions.
 
 

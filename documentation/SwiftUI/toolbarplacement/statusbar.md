@@ -1,7 +1,8 @@
 # statusBar
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system status bar.
 
@@ -18,7 +19,7 @@ static var statusBar: ToolbarPlacement { get }
 
 #### Discussion
 
-Use with [`toolbarVisibility(_:for:)`](view/toolbarvisibility(_:for:).md) to hide the status bar, or with [`toolbarColorScheme(_:for:)`](view/toolbarcolorscheme(_:for:).md) to specify the preferred status bar style.
+Use with [`toolbarVisibility(_:for:)`](../view/toolbarvisibility%28_,for%29.md) to hide the status bar, or with [`toolbarColorScheme(_:for:)`](../view/toolbarcolorscheme%28_,for%29.md) to specify the preferred status bar style.
 
 ```swift
 content

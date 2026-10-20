@@ -1,7 +1,8 @@
 # UIResponder.KeyboardWillShowMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -17,20 +18,20 @@ struct KeyboardWillShowMessage
 ## Topics
 
 ### Initializers
-- [init(beginFrame: CGRect, endFrame: CGRect, animationDuration: TimeInterval, animationCurve: UIView.AnimationCurve, isLocal: Bool, screen: UIScreen)](uiresponder/keyboardwillshowmessage/init(beginframe:endframe:animationduration:animationcurve:islocal:screen:).md)
+- [init(beginFrame: CGRect, endFrame: CGRect, animationDuration: TimeInterval, animationCurve: UIView.AnimationCurve, isLocal: Bool, screen: UIScreen)](./keyboardwillshowmessage/init%28beginframe,endframe,animationduration,animationcurve,islocal,screen%29.md)
 ### Instance Properties
-- [var animationCurve: UIView.AnimationCurve](uiresponder/keyboardwillshowmessage/animationcurve.md)
-- [var animationDuration: TimeInterval](uiresponder/keyboardwillshowmessage/animationduration.md)
-- [var beginFrame: CGRect](uiresponder/keyboardwillshowmessage/beginframe.md)
-- [var endFrame: CGRect](uiresponder/keyboardwillshowmessage/endframe.md)
-- [var isLocal: Bool](uiresponder/keyboardwillshowmessage/islocal.md)
-- [var screen: UIScreen](uiresponder/keyboardwillshowmessage/screen.md)
+- [var animationCurve: UIView.AnimationCurve](./keyboardwillshowmessage/animationcurve.md)
+- [var animationDuration: TimeInterval](./keyboardwillshowmessage/animationduration.md)
+- [var beginFrame: CGRect](./keyboardwillshowmessage/beginframe.md)
+- [var endFrame: CGRect](./keyboardwillshowmessage/endframe.md)
+- [var isLocal: Bool](./keyboardwillshowmessage/islocal.md)
+- [var screen: UIScreen](./keyboardwillshowmessage/screen.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

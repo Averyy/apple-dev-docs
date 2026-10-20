@@ -1,7 +1,8 @@
 # precomposedStringWithCompatibilityMapping
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string made by normalizing the receiver’s contents using the Unicode Normalization Form KC.
 
@@ -20,13 +21,18 @@ A string made by normalizing the receiver’s contents using the Unicode Normali
 var precomposedStringWithCompatibilityMapping: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * precomposedStringWithCompatibilityMapping;
+```
+
 ## See Also
 
-- [var decomposedStringWithCanonicalMapping: String](nsstring/decomposedstringwithcanonicalmapping.md)
+### Normalizing Strings
+- [var decomposedStringWithCanonicalMapping: String](./decomposedstringwithcanonicalmapping.md)
   A string made by normalizing the string’s contents using the Unicode Normalization Form D.
-- [var decomposedStringWithCompatibilityMapping: String](nsstring/decomposedstringwithcompatibilitymapping.md)
+- [var decomposedStringWithCompatibilityMapping: String](./decomposedstringwithcompatibilitymapping.md)
   A string made by normalizing the receiver’s contents using the Unicode Normalization Form KD.
-- [var precomposedStringWithCanonicalMapping: String](nsstring/precomposedstringwithcanonicalmapping.md)
+- [var precomposedStringWithCanonicalMapping: String](./precomposedstringwithcanonicalmapping.md)
   A string made by normalizing the string’s contents using the Unicode Normalization Form C.
 
 

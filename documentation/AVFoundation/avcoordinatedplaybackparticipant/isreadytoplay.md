@@ -1,7 +1,8 @@
 # isReadyToPlay
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the participant is ready to start coordinated playback.
 
@@ -19,11 +20,16 @@ A Boolean value that indicates whether the participant is ready to start coordin
 var isReadyToPlay: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isReadyToPlay) BOOL readyToPlay;
+```
+
 ## See Also
 
-- [var identifier: UUID](avcoordinatedplaybackparticipant/identifier.md)
+### Accessing participant status
+- [var identifier: UUID](./identifier.md)
   A unique identifier for the participant.
-- [var suspensionReasons: [AVCoordinatedPlaybackSuspension.Reason]](avcoordinatedplaybackparticipant/suspensionreasons.md)
+- [var suspensionReasons: [AVCoordinatedPlaybackSuspension.Reason]](./suspensionreasons.md)
   The reasons a participant isn’t currently participating in coordinated playback.
 
 

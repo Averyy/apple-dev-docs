@@ -1,7 +1,8 @@
 # addButton(descriptor:)
 
 **Framework**: Touch Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new button control with the provided descriptor, and adds it to the touch controller.
 
@@ -16,6 +17,10 @@ Creates a new button control with the provided descriptor, and adds it to the to
 func addButton(descriptor: TCButtonDescriptor) -> TCButton
 ```
 
+```objc
+- (TCButton *) addButtonWithDescriptor:(TCButtonDescriptor *) descriptor;
+```
+
 #### Return Value
 
 A new `TCButton` instance.
@@ -26,7 +31,8 @@ A new `TCButton` instance.
 
 ## See Also
 
-- [class TCButtonDescriptor](tcbuttondescriptor.md)
+### Adding a button control
+- [class TCButtonDescriptor](../tcbuttondescriptor.md)
   A descriptor for configuring a button.
 
 

@@ -1,7 +1,8 @@
 # init(characteristic:thresholdRange:)
 
 **Framework**: HomeKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a characteristic threshold range event for the specified characteristic and number range.
 
@@ -17,6 +18,10 @@ Creates a characteristic threshold range event for the specified characteristic 
 
 ```swift
 init(characteristic: HMCharacteristic, thresholdRange: HMNumberRange)
+```
+
+```objc
+- (instancetype) initWithCharacteristic:(HMCharacteristic *) characteristic thresholdRange:(HMNumberRange *) thresholdRange;
 ```
 
 #### Return Value

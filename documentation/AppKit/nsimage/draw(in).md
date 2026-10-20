@@ -1,7 +1,8 @@
 # draw(in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the image in the specified rectangle.
 
@@ -14,9 +15,13 @@ Draws the image in the specified rectangle.
 func draw(in rect: NSRect)
 ```
 
+```objc
+- (void) drawInRect:(NSRect) rect;
+```
+
 #### Discussion
 
-This method draws the entire image in the specified rectangle, scaling the image as needed. The method composites the image using the [`NSCompositeSourceOver`](nscompositesourceover.md) operation
+This method draws the entire image in the specified rectangle, scaling the image as needed. The method composites the image using the [`NSCompositeSourceOver`](../nscompositesourceover.md) operation
 
 ## Parameters
 
@@ -24,15 +29,16 @@ This method draws the entire image in the specified rectangle, scaling the image
 
 ## See Also
 
-- [func draw(at: NSPoint, from: NSRect, operation: NSCompositingOperation, fraction: CGFloat)](nsimage/draw(at:from:operation:fraction:).md)
+### Drawing Images
+- [func draw(at: NSPoint, from: NSRect, operation: NSCompositingOperation, fraction: CGFloat)](./draw%28at,from,operation,fraction%29.md)
   Draws all or part of the image at the specified point in the current coordinate system.
-- [func draw(in: NSRect, from: NSRect, operation: NSCompositingOperation, fraction: CGFloat)](nsimage/draw(in:from:operation:fraction:).md)
+- [func draw(in: NSRect, from: NSRect, operation: NSCompositingOperation, fraction: CGFloat)](./draw%28in,from,operation,fraction%29.md)
   Draws all or part of the image in the specified rectangle in the current coordinate system.
-- [func draw(in: NSRect, from: NSRect, operation: NSCompositingOperation, fraction: CGFloat, respectFlipped: Bool, hints: [NSImageRep.HintKey : Any]?)](nsimage/draw(in:from:operation:fraction:respectflipped:hints:).md)
+- [func draw(in: NSRect, from: NSRect, operation: NSCompositingOperation, fraction: CGFloat, respectFlipped: Bool, hints: [NSImageRep.HintKey : Any]?)](./draw%28in,from,operation,fraction,respectflipped,hints%29.md)
   Draws all or part of the image in the specified rectangle respecting the hints and the orientation of the current coordinate system.
-- [func drawRepresentation(NSImageRep, in: NSRect) -> Bool](nsimage/drawrepresentation(_:in:).md)
+- [func drawRepresentation(NSImageRep, in: NSRect) -> Bool](./drawrepresentation%28_,in%29.md)
   Draws the image using the specified image representation object.
-- [enum NSCompositingOperation](nscompositingoperation.md)
+- [enum NSCompositingOperation](../nscompositingoperation.md)
   Constants that describe compositing operators in terms of source and destination images, each having an opaque and transparent region.
 
 

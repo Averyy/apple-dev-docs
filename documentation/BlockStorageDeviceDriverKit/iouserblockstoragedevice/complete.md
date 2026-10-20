@@ -1,7 +1,8 @@
 # Complete
 
 **Framework**: BlockStorageDeviceDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates that the dext completed an asynchronous call.
 
@@ -10,13 +11,13 @@ Indicates that the dext completed an asynchronous call.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void Complete(uint32_t requestID, kern_return_t status);
 ```
 
 #### Discussion
 
-The dext calls this method to indicate completion of an asynchronous call to methods like [`DoAsyncUnmap`](iouserblockstoragedevice/doasyncunmap.md), [`DoAsyncSynchronize`](iouserblockstoragedevice/doasyncsynchronize.md), or [`DoAsyncEjectMedia`](iouserblockstoragedevice/doasyncejectmedia.md). Use the `requestID` parameter to determine which call resulted in this callback.
+The dext calls this method to indicate completion of an asynchronous call to methods like [`DoAsyncUnmap`](./doasyncunmap.md), [`DoAsyncSynchronize`](./doasyncsynchronize.md), or [`DoAsyncEjectMedia`](./doasyncejectmedia.md). Use the `requestID` parameter to determine which call resulted in this callback.
 
 ## Parameters
 
@@ -25,19 +26,20 @@ The dext calls this method to indicate completion of an asynchronous call to met
 
 ## See Also
 
-- [DoAsyncUnmap](iouserblockstoragedevice/doasyncunmap.md)
+### Accessing the Device
+- [DoAsyncUnmap](./doasyncunmap.md)
   Sends an asynchronous request to the dext to reclaim storage by unmapping.
-- [BlockRange](blockrange.md)
+- [BlockRange](../blockrange.md)
   A structure that represents a range of blocks.
-- [DoAsyncSynchronize](iouserblockstoragedevice/doasyncsynchronize.md)
+- [DoAsyncSynchronize](./doasyncsynchronize.md)
   Forces the hardware buffer to flush data blocks to the media.
-- [DoAsyncEjectMedia](iouserblockstoragedevice/doasyncejectmedia.md)
+- [DoAsyncEjectMedia](./doasyncejectmedia.md)
   Ejects the media.
-- [DoAsyncReadWrite](iouserblockstoragedevice/doasyncreadwrite.md)
+- [DoAsyncReadWrite](./doasyncreadwrite.md)
   Starts an asynchronous read or write operation.
-- [IOUserStorageOptions](iouserstorageoptions.md)
+- [IOUserStorageOptions](../iouserstorageoptions.md)
   Options that affect the performance of read-write operations.
-- [CompleteIO](iouserblockstoragedevice/completeio.md)
+- [CompleteIO](./completeio.md)
   Indicates that the dext completed an asynchronous read-write call.
 
 

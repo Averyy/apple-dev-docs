@@ -1,7 +1,8 @@
 # ITLibMediaItemPlayStatus.none
 
 **Framework**: iTunes Library  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user has played the media item or iTunes doesn’t track the play status for this kind of media item.
 
@@ -15,17 +16,22 @@ The user has played the media item or iTunes doesn’t track the play status for
 case none
 ```
 
+```c
+ITLibMediaItemPlayStatusNone
+```
+
 ## Topics
 
 ### Related Documentation
-- [var playCount: Int](itlibmediaitem/playcount.md)
+- [var playCount: Int](../itlibmediaitem/playcount.md)
   The number of times the user has played the media item.
 
 ## See Also
 
-- [ITLibMediaItemPlayStatus.partiallyPlayed](itlibmediaitemplaystatus/partiallyplayed.md)
+### Media Item Play Statuses
+- [ITLibMediaItemPlayStatus.partiallyPlayed](./partiallyplayed.md)
   The user has partially played the media item.
-- [ITLibMediaItemPlayStatus.unplayed](itlibmediaitemplaystatus/unplayed.md)
+- [ITLibMediaItemPlayStatus.unplayed](./unplayed.md)
   The user hasn’t played the media item.
 
 

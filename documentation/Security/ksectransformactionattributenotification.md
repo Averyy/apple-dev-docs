@@ -1,17 +1,24 @@
 # kSecTransformActionAttributeNotification
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An action that triggers when an attribute is set.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 13.0
+
+> **Deprecated**: SecTransform is no longer supported
 
 ## Declaration
 
 ```swift
 let kSecTransformActionAttributeNotification: CFString
+```
+
+```c
+extern CFStringRef const kSecTransformActionAttributeNotification;
 ```
 
 #### Discussion

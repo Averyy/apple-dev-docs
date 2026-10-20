@@ -1,7 +1,8 @@
 # amount
 
 **Framework**: FinanceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of the balance.
 
@@ -17,9 +18,10 @@ let amount: CurrencyAmount
 
 ## See Also
 
-- [let asOfDate: Date](balance/asofdate.md)
+### Instance Properties
+- [let asOfDate: Date](./asofdate.md)
   The date and time the system calculated the balance.
-- [let creditDebitIndicator: CreditDebitIndicator](balance/creditdebitindicator.md)
+- [let creditDebitIndicator: CreditDebitIndicator](./creditdebitindicator.md)
   A value that indicates whether the balance is a credit or a debit balance.
 
 

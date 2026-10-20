@@ -1,7 +1,8 @@
 # ActivityPreviewViewKind.content
 
 **Framework**: WidgetKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The Live Activity presentation that appears on the Lock Screen and as a banner on devices that don’t support the Dynamic Island.
 
@@ -17,9 +18,10 @@ case content
 
 ## See Also
 
-- [case dynamicIsland(ActivityPreviewViewKind.DynamicIslandPreviewViewState)](activitypreviewviewkind/dynamicisland(_:).md)
+### Live Activity preview types
+- [case dynamicIsland(ActivityPreviewViewKind.DynamicIslandPreviewViewState)](./dynamicisland%28_%29.md)
   The Live Activity presentation that appears in the Dynamic Island.
-- [ActivityPreviewViewKind.DynamicIslandPreviewViewState](activitypreviewviewkind/dynamicislandpreviewviewstate.md)
+- [ActivityPreviewViewKind.DynamicIslandPreviewViewState](./dynamicislandpreviewviewstate.md)
   Values that represent the different presentations of a Live Activity in the Dynamic Island for use in Xcode previews.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Assignables  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Merge another object of this type into this object.
@@ -10,7 +11,7 @@ Merge another object of this type into this object.
 - iOS 17.5+
 - iPadOS 17.5+
 - Mac Catalyst 17.5+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

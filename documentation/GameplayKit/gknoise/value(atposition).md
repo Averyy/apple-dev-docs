@@ -1,7 +1,8 @@
 # value(atPosition:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 10.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func value(atPosition position: vector_float2) -> Float
+```
+
+```objc
+- (float) valueAtPosition:(vector_float2) position;
 ```
 
 

@@ -1,7 +1,8 @@
 # description
 
 **Framework**: App Intents Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string representation of this app intent.
 

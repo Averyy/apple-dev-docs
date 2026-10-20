@@ -1,7 +1,8 @@
 # AnyBidirectionalCollection
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased wrapper over any collection with indices that support bidirectional traversal.
 
@@ -28,55 +29,56 @@ An `AnyBidirectionalCollection` instance forwards its operations to a base colle
 ## Topics
 
 ### Initializers
-- [init?(AnyCollection<Element>)](anybidirectionalcollection/init(_:)-1hwm5.md)
+- [init?(AnyCollection<Element>)](./anybidirectionalcollection/init%28_%29-1hwm5.md)
   Creates an `AnyBidirectionalCollection` having the same underlying collection as `other`.
-- [init<C>(C)](anybidirectionalcollection/init(_:)-2kvez.md)
+- [init<C>(C)](./anybidirectionalcollection/init%28_%29-2kvez.md)
   Creates a type-erased collection that wraps the given collection.
-- [init(AnyRandomAccessCollection<Element>)](anybidirectionalcollection/init(_:)-4hewp.md)
+- [init(AnyRandomAccessCollection<Element>)](./anybidirectionalcollection/init%28_%29-4hewp.md)
   Creates an `AnyBidirectionalCollection` having the same underlying collection as `other`.
-- [init<C>(C)](anybidirectionalcollection/init(_:)-5lybd.md)
+- [init<C>(C)](./anybidirectionalcollection/init%28_%29-5lybd.md)
   Creates a type-erased collection that wraps the given collection.
-- [init(AnyBidirectionalCollection<Element>)](anybidirectionalcollection/init(_:)-61joz.md)
+- [init(AnyBidirectionalCollection<Element>)](./anybidirectionalcollection/init%28_%29-61joz.md)
   Creates an `AnyBidirectionalCollection` having the same underlying collection as `other`.
 ### Instance Methods
-- [func drop(while: (Element) throws -> Bool) rethrows -> AnyBidirectionalCollection<Element>](anybidirectionalcollection/drop(while:).md)
-- [func dropFirst(Int) -> AnyBidirectionalCollection<Element>](anybidirectionalcollection/dropfirst(_:).md)
-- [func dropLast(Int) -> AnyBidirectionalCollection<Element>](anybidirectionalcollection/droplast(_:).md)
-- [func filter((Element) throws -> Bool) rethrows -> [Element]](anybidirectionalcollection/filter(_:).md)
-- [func forEach((Element) throws -> Void) rethrows](anybidirectionalcollection/foreach(_:).md)
-- [func formIndex(inout AnyBidirectionalCollection<Element>.Index, offsetBy: Int)](anybidirectionalcollection/formindex(_:offsetby:).md)
-- [func formIndex(inout AnyBidirectionalCollection<Element>.Index, offsetBy: Int, limitedBy: AnyBidirectionalCollection<Element>.Index) -> Bool](anybidirectionalcollection/formindex(_:offsetby:limitedby:).md)
-- [func map<T, E>((Element) throws(E) -> T) throws(E) -> [T]](anybidirectionalcollection/map(_:).md)
-- [func prefix(Int) -> AnyBidirectionalCollection<Element>](anybidirectionalcollection/prefix(_:).md)
-- [func prefix(while: (Element) throws -> Bool) rethrows -> AnyBidirectionalCollection<Element>](anybidirectionalcollection/prefix(while:).md)
-- [func suffix(Int) -> AnyBidirectionalCollection<Element>](anybidirectionalcollection/suffix(_:).md)
+- [func drop(while: (Element) throws -> Bool) rethrows -> AnyBidirectionalCollection<Element>](./anybidirectionalcollection/drop%28while%29.md)
+- [func dropFirst(Int) -> AnyBidirectionalCollection<Element>](./anybidirectionalcollection/dropfirst%28_%29.md)
+- [func dropLast(Int) -> AnyBidirectionalCollection<Element>](./anybidirectionalcollection/droplast%28_%29.md)
+- [func filter((Element) throws -> Bool) rethrows -> [Element]](./anybidirectionalcollection/filter%28_%29.md)
+- [func forEach((Element) throws -> Void) rethrows](./anybidirectionalcollection/foreach%28_%29.md)
+- [func formIndex(inout AnyBidirectionalCollection<Element>.Index, offsetBy: Int)](./anybidirectionalcollection/formindex%28_,offsetby%29.md)
+- [func formIndex(inout AnyBidirectionalCollection<Element>.Index, offsetBy: Int, limitedBy: AnyBidirectionalCollection<Element>.Index) -> Bool](./anybidirectionalcollection/formindex%28_,offsetby,limitedby%29.md)
+- [func map<T, E>((Element) throws(E) -> T) throws(E) -> [T]](./anybidirectionalcollection/map%28_%29.md)
+- [func prefix(Int) -> AnyBidirectionalCollection<Element>](./anybidirectionalcollection/prefix%28_%29.md)
+- [func prefix(while: (Element) throws -> Bool) rethrows -> AnyBidirectionalCollection<Element>](./anybidirectionalcollection/prefix%28while%29.md)
+- [func suffix(Int) -> AnyBidirectionalCollection<Element>](./anybidirectionalcollection/suffix%28_%29.md)
 ### Default Implementations
-- [BidirectionalCollection Implementations](anybidirectionalcollection/bidirectionalcollection-implementations.md)
-- [Collection Implementations](anybidirectionalcollection/collection-implementations.md)
-- [Sequence Implementations](anybidirectionalcollection/sequence-implementations.md)
+- [BidirectionalCollection Implementations](./anybidirectionalcollection/bidirectionalcollection-implementations.md)
+- [Collection Implementations](./anybidirectionalcollection/collection-implementations.md)
+- [Sequence Implementations](./anybidirectionalcollection/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](bidirectionalcollection.md)
-- [Collection](collection.md)
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [Sequence](sequence.md)
+- [BidirectionalCollection](./bidirectionalcollection.md)
+- [Collection](./collection.md)
+- [Copyable](./copyable.md)
+- [Escapable](./escapable.md)
+- [Sequence](./sequence.md)
 
 ## See Also
 
-- [struct AnySequence](anysequence.md)
+### Type-Erasing Wrappers
+- [struct AnySequence](./anysequence.md)
   A type-erased sequence.
-- [struct AnyCollection](anycollection.md)
+- [struct AnyCollection](./anycollection.md)
   A type-erased wrapper over any collection with indices that support forward traversal.
-- [struct AnyRandomAccessCollection](anyrandomaccesscollection.md)
+- [struct AnyRandomAccessCollection](./anyrandomaccesscollection.md)
   A type-erased wrapper over any collection with indices that support random access traversal.
-- [struct AnyIterator](anyiterator.md)
+- [struct AnyIterator](./anyiterator.md)
   A type-erased iterator of `Element`.
-- [struct AnyIndex](anyindex.md)
+- [struct AnyIndex](./anyindex.md)
   A wrapper over an underlying index that hides the specific underlying type.
-- [struct AnyHashable](anyhashable.md)
+- [struct AnyHashable](./anyhashable.md)
   A type-erased hashable value.
 
 

@@ -1,7 +1,8 @@
 # AVLegibleMediaOptionsMenuController.MenuContents
 
 **Framework**: AVKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.4+
@@ -16,51 +17,56 @@
 struct MenuContents
 ```
 
+```c
+enum AVLegibleMediaOptionsMenuContents : NSInteger;
+```
+
 #### Overview
 
-```None
+```
 		An option set, describing the different contents of legible option menus.
 ```
 
-```None
+```
 		Describes the legible contents of a legible options menu
 ```
 
-```None
+```
 		Describes the caption appearance contents of a legible options menu.
 ```
 
-```None
+```
 		Describes all the contents of a legible options menu.
 ```
 
 ## Topics
 
 ### Creating menu contents
-- [init(rawValue: Int)](avlegiblemediaoptionsmenucontroller/menucontents/init(rawvalue:).md)
+- [init(rawValue: Int)](./menucontents/init%28rawvalue%29.md)
 ### Menu content options
-- [static var all: AVLegibleMediaOptionsMenuController.MenuContents](avlegiblemediaoptionsmenucontroller/menucontents/all.md)
-- [static var captionAppearance: AVLegibleMediaOptionsMenuController.MenuContents](avlegiblemediaoptionsmenucontroller/menucontents/captionappearance.md)
-- [static var legible: AVLegibleMediaOptionsMenuController.MenuContents](avlegiblemediaoptionsmenucontroller/menucontents/legible.md)
+- [static var all: AVLegibleMediaOptionsMenuController.MenuContents](./menucontents/all.md)
+- [static var captionAppearance: AVLegibleMediaOptionsMenuController.MenuContents](./menucontents/captionappearance.md)
+- [static var legible: AVLegibleMediaOptionsMenuController.MenuContents](./menucontents/legible.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [func menu(contents: AVLegibleMediaOptionsMenuController.MenuContents) -> UIMenu?](avlegiblemediaoptionsmenucontroller/menu(contents:).md)
-- [var menuState: AVLegibleMediaOptionsMenuState](avlegiblemediaoptionsmenucontroller/menustate.md)
-- [struct AVLegibleMediaOptionsMenuState](avlegiblemediaoptionsmenustate.md)
-- [AVLegibleMediaOptionsMenuController.StateChangeReason](avlegiblemediaoptionsmenucontroller/statechangereason.md)
+### Managing the menu
+- [func menu(contents: AVLegibleMediaOptionsMenuController.MenuContents) -> UIMenu?](./menu%28contents%29.md)
+- [var menuState: AVLegibleMediaOptionsMenuState](./menustate.md)
+- [struct AVLegibleMediaOptionsMenuState](../avlegiblemediaoptionsmenustate.md)
+- [AVLegibleMediaOptionsMenuController.StateChangeReason](./statechangereason.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # containerIdentifier
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -18,9 +19,10 @@ static let containerIdentifier: SearchableItemAttribute
 
 ## See Also
 
-- [static let containerDisplayName: SearchableItemAttribute](searchableitemattribute/containerdisplayname.md)
-- [static let containerOrder: SearchableItemAttribute](searchableitemattribute/containerorder.md)
-- [static let containerTitle: SearchableItemAttribute](searchableitemattribute/containertitle.md)
+### Describing containment
+- [static let containerDisplayName: SearchableItemAttribute](./containerdisplayname.md)
+- [static let containerOrder: SearchableItemAttribute](./containerorder.md)
+- [static let containerTitle: SearchableItemAttribute](./containertitle.md)
 
 
 ---

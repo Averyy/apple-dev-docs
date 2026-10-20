@@ -1,7 +1,8 @@
 # bundleIdentifier
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique string that identifies this app.
 
@@ -22,9 +23,10 @@ In an extension that provides shield configurations, this property provides the 
 
 ## See Also
 
-- [let token: ApplicationToken?](application/token.md)
+### Accessing application information
+- [let token: ApplicationToken?](./token.md)
   An opaque representation of a specific web domain.
-- [let localizedDisplayName: String?](application/localizeddisplayname.md)
+- [let localizedDisplayName: String?](./localizeddisplayname.md)
   A localized display name for the application.
 
 

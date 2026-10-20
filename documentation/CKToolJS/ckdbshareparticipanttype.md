@@ -1,7 +1,8 @@
 # CKDBShareParticipantType
 
 **Framework**: CKTool JS  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that represents the type of a share participant.
 
@@ -10,7 +11,7 @@ An enumeration that represents the type of a share participant.
 
 ## Declaration
 
-```swift
+```
 interface CKDBShareParticipantType {
 	const string OWNER;
 	const string ADMINISTRATOR;
@@ -31,23 +32,24 @@ import { CKDBShareParticipantType } from "@apple/cktool.database";
 ## Topics
 
 ### Enumeration Cases
-- [ADMINISTRATOR](ckdbshareparticipanttype/administrator.md)
-- [OWNER](ckdbshareparticipanttype/owner.md)
-- [PUBLIC_USER](ckdbshareparticipanttype/public_user.md)
-- [UNKNOWN](ckdbshareparticipanttype/unknown.md)
-- [USER](ckdbshareparticipanttype/user.md)
+- [ADMINISTRATOR](./ckdbshareparticipanttype/administrator.md)
+- [OWNER](./ckdbshareparticipanttype/owner.md)
+- [PUBLIC_USER](./ckdbshareparticipanttype/public_user.md)
+- [UNKNOWN](./ckdbshareparticipanttype/unknown.md)
+- [USER](./ckdbshareparticipanttype/user.md)
 
 ## See Also
 
-- [CKDBPermissionType](ckdbpermissiontype.md)
+### Enumerations
+- [CKDBPermissionType](./ckdbpermissiontype.md)
   The participant’s read and write permissions.
-- [CKDBQueryFilterType](ckdbqueryfiltertype.md)
+- [CKDBQueryFilterType](./ckdbqueryfiltertype.md)
   An object that represents the type of a filter that indicates the comparison operator when applying the filter.
-- [CKDBQuerySortOrder](ckdbquerysortorder.md)
+- [CKDBQuerySortOrder](./ckdbquerysortorder.md)
   An enumeration that represents the order to use when sorting records.
-- [CKDBRecordReferenceAction](ckdbrecordreferenceaction.md)
+- [CKDBRecordReferenceAction](./ckdbrecordreferenceaction.md)
   An object that represents the action to be performed for the referenced record.
-- [CKDBShareAcceptanceStatus](ckdbshareacceptancestatus.md)
+- [CKDBShareAcceptanceStatus](./ckdbshareacceptancestatus.md)
   An enumeration that indicates the status of accepting the shared record.
 
 

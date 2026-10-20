@@ -1,7 +1,8 @@
 # supportsSessionPreset(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether you can use the device with capture session configured with the specified preset.
 
@@ -18,9 +19,13 @@ Returns a Boolean value that indicates whether you can use the device with captu
 func supportsSessionPreset(_ preset: AVCaptureSession.Preset) -> Bool
 ```
 
+```objc
+- (BOOL) supportsAVCaptureSessionPreset:(AVCaptureSessionPreset) preset;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if you can use the device; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if you can use the device; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -28,13 +33,14 @@ func supportsSessionPreset(_ preset: AVCaptureSession.Preset) -> Bool
 
 ## See Also
 
-- [var isVirtualDevice: Bool](avcapturedevice/isvirtualdevice.md)
+### Inspecting device characteristics
+- [var isVirtualDevice: Bool](./isvirtualdevice.md)
   A Boolean value that indicates whether the device consists of two or more physical devices.
-- [var constituentDevices: [AVCaptureDevice]](avcapturedevice/constituentdevices.md)
+- [var constituentDevices: [AVCaptureDevice]](./constituentdevices.md)
   An array of physical devices that make up a virtual device.
-- [func hasMediaType(AVMediaType) -> Bool](avcapturedevice/hasmediatype(_:).md)
+- [func hasMediaType(AVMediaType) -> Bool](./hasmediatype%28_%29.md)
   Returns a Boolean value that indicates whether the device captures media of a particular type.
-- [var transportType: Int32](avcapturedevice/transporttype.md)
+- [var transportType: Int32](./transporttype.md)
   The transport type of the device.
 
 

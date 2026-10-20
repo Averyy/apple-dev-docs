@@ -1,7 +1,8 @@
 # url
 
 **Framework**: LiveCommunicationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The FaceTime-generated URL for this request.
 
@@ -20,13 +21,14 @@ let url: URL
 
 #### Discussion
 
-Forward this URL to your backend in your implementations of [`prepareAssistanceRequest(_:)`](liveassistanceextension/prepareassistancerequest(_:).md) and [`resumeRequest(_:)`](liveassistanceextension/resumerequest(_:).md). When opened, this URL matches an interpreter and joins the call.
+Forward this URL to your backend in your implementations of [`prepareAssistanceRequest(_:)`](../liveassistanceextension/prepareassistancerequest%28_%29.md) and [`resumeRequest(_:)`](../liveassistanceextension/resumerequest%28_%29.md). When opened, this URL matches an interpreter and joins the call.
 
 FaceTime generates this URL. Your extension only needs to pass it to your backend.
 
 ## See Also
 
-- [let id: UUID](liveassistancerequest/id.md)
+### Working with request properties
+- [let id: UUID](./id.md)
   A unique identifier that relates the request to a conversation in the FaceTime framework.
 
 

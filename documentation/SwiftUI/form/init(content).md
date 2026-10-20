@@ -1,7 +1,8 @@
 # init(content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a form with the provided content.
 
@@ -23,7 +24,7 @@ init(@ContentBuilder content: () -> Content)
 
 ## Parameters
 
-- `content`: A [`ContentBuilder`](contentbuilder.md) that provides the content for the form.
+- `content`: A [`ContentBuilder`](../contentbuilder.md) that provides the content for the form.
 
 
 ---

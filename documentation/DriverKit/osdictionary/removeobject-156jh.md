@@ -1,19 +1,20 @@
 # removeObject
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Remove an object by key from the dictionary.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 void removeObject(const char *aKey);
 ```
 
@@ -27,22 +28,23 @@ An object in the dictionary with the given key object is removed and released.
 
 ## See Also
 
-- [getObject](osdictionary/getobject-9ikoz.md)
+### Accessing Keys and Values
+- [getObject](./getobject-9ikoz.md)
   Returns a member of the dictionary.
-- [getObject](osdictionary/getobject-8k3ie.md)
+- [getObject](./getobject-8k3ie.md)
   Returns a member of the dictionary.
-- [setObject](osdictionary/setobject-9b4z0.md)
+- [setObject](./setobject-9b4z0.md)
   Add or replace an object in the dictionary.
-- [setObject](osdictionary/setobject-7q0u2.md)
+- [setObject](./setobject-7q0u2.md)
   Add or replace an object in the dictionary.
-- [removeObject](osdictionary/removeobject-25qm5.md)
+- [removeObject](./removeobject-25qm5.md)
   Remove an object by key from the dictionary.
-- [iterateObjects](osdictionary/iterateobjects-9h89s.md)
+- [iterateObjects](./iterateobjects-9h89s.md)
   Iterates the dictionary calling a callback block for each member.
-- [iterateObjects](osdictionary/iterateobjects-6cv0d.md)
+- [iterateObjects](./iterateobjects-6cv0d.md)
   Iterates the dictionary calling a callback block for each member.
-- [OSDictionaryIterateObjectsBlock](osdictionaryiterateobjectsblock.md)
-- [OSDictionaryIterateObjectsCallback](osdictionaryiterateobjectscallback.md)
+- [OSDictionaryIterateObjectsBlock](../osdictionaryiterateobjectsblock.md)
+- [OSDictionaryIterateObjectsCallback](../osdictionaryiterateobjectscallback.md)
 
 
 ---

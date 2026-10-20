@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The start time of the segment in the processed audio stream.
 
@@ -18,13 +19,18 @@ The start time of the segment in the processed audio stream.
 var timestamp: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval timestamp;
+```
+
 #### Discussion
 
-The [`timestamp`](sftranscriptionsegment/timestamp.md) is the number of seconds between the beginning of the audio content and when the user spoke the word represented by the segment. For example, if the user said the word “time” one second into the transcription “What time is it”, the timestamp would be equal to `1.0`.
+The [`timestamp`](./timestamp.md) is the number of seconds between the beginning of the audio content and when the user spoke the word represented by the segment. For example, if the user said the word “time” one second into the transcription “What time is it”, the timestamp would be equal to `1.0`.
 
 ## See Also
 
-- [var duration: TimeInterval](sftranscriptionsegment/duration.md)
+### Getting audio timing information
+- [var duration: TimeInterval](./duration.md)
   The number of seconds it took for the user to speak the utterance represented by the segment.
 
 

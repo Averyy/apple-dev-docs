@@ -1,7 +1,8 @@
 # MLImageClassifier.DataSource
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A data source for an image classifier.
 
@@ -20,49 +21,50 @@ enum DataSource
 
 ## Mentions
 
-- [Creating an Image Classifier Model](creating-an-image-classifier-model.md)
+- [Creating an Image Classifier Model](../creating-an-image-classifier-model.md)
 
 #### Overview
 
 Use a data source to provide training or testing data to an image classifier.
 
-To train a model programmatically with an [`MLImageClassifier`](mlimageclassifier.md) instance, initialize a data source with the URL of the directory that contains the data. Use either [`MLImageClassifier.DataSource.labeledDirectories(at:)`](mlimageclassifier/datasource/labeleddirectories(at:).md) or [`MLImageClassifier.DataSource.labeledFiles(at:)`](mlimageclassifier/datasource/labeledfiles(at:).md) to do this, depending on whether your images are grouped by directory or by file name. See the respective creation methods for details about how to arrange your image files in each case.
+To train a model programmatically with an [`MLImageClassifier`](../mlimageclassifier.md) instance, initialize a data source with the URL of the directory that contains the data. Use either [`MLImageClassifier.DataSource.labeledDirectories(at:)`](./datasource/labeleddirectories%28at%29.md) or [`MLImageClassifier.DataSource.labeledFiles(at:)`](./datasource/labeledfiles%28at%29.md) to do this, depending on whether your images are grouped by directory or by file name. See the respective creation methods for details about how to arrange your image files in each case.
 
 When you train a model using `MLImageClassifierBuilder`, you don’t initialize a data source directly. Instead, you drag the directory containing your data from a Finder window into the live view. The builder automatically chooses the correct kind of data source based on how your images are arranged inside that directory, looking for either labeled directories or labeled files.
 
 ## Topics
 
 ### Creating a data source
-- [MLImageClassifier.DataSource.labeledDirectories(at:)](mlimageclassifier/datasource/labeleddirectories(at:).md)
+- [MLImageClassifier.DataSource.labeledDirectories(at:)](./datasource/labeleddirectories%28at%29.md)
   An image classifier data source that uses the directory structure to label images.
-- [MLImageClassifier.DataSource.labeledFiles(at:)](mlimageclassifier/datasource/labeledfiles(at:).md)
+- [MLImageClassifier.DataSource.labeledFiles(at:)](./datasource/labeledfiles%28at%29.md)
   An image classifier data source that uses file names to label images.
 ### Retrieving the data
-- [func labeledImages() throws -> [String : [URL]]](mlimageclassifier/datasource/labeledimages.md)
+- [func labeledImages() throws -> [String : [URL]]](./datasource/labeledimages%28%29.md)
   Returns the labeled images represented by the data source.
-- [MLImageClassifier.DataSource.filesByLabel(_:)](mlimageclassifier/datasource/filesbylabel(_:).md)
+- [MLImageClassifier.DataSource.filesByLabel(_:)](./datasource/filesbylabel%28_%29.md)
   Dictionary of labels to file URLs.
 ### Splitting the data
-- [func stratifiedSplit(proportions: [Double], seed: Int) throws -> [[String : [URL]]]](mlimageclassifier/datasource/stratifiedsplit(proportions:seed:).md)
+- [func stratifiedSplit(proportions: [Double], seed: Int) throws -> [[String : [URL]]]](./datasource/stratifiedsplit%28proportions,seed%29.md)
   Generates an array of labeled image dictionaries by splitting the data source into strata.
-- [func stratifiedSplit<RNG>(proportions: [Double], generator: inout RNG) throws -> [[String : [URL]]]](mlimageclassifier/datasource/stratifiedsplit(proportions:generator:).md)
+- [func stratifiedSplit<RNG>(proportions: [Double], generator: inout RNG) throws -> [[String : [URL]]]](./datasource/stratifiedsplit%28proportions,generator%29.md)
   Generates an array of labeled image dictionaries by splitting the data source into strata using the random-number generator.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MLImageClassifier.ModelParameters](mlimageclassifier/modelparameters-swift.struct.md)
+### Supporting types
+- [MLImageClassifier.ModelParameters](./modelparameters-swift.struct.md)
   Parameters that affect the process of training an image classifier model.
-- [MLImageClassifier.FeatureExtractorType](mlimageclassifier/featureextractortype.md)
+- [MLImageClassifier.FeatureExtractorType](./featureextractortype.md)
   The underlying base model that extracts image features for image classifier training session.
-- [MLImageClassifier.CustomFeatureExtractor](mlimageclassifier/customfeatureextractor.md)
+- [MLImageClassifier.CustomFeatureExtractor](./customfeatureextractor.md)
   A custom feature extractor a training session uses to train an image classifier.
-- [MLImageClassifier.ImageAugmentationOptions](mlimageclassifier/imageaugmentationoptions.md)
+- [MLImageClassifier.ImageAugmentationOptions](./imageaugmentationoptions.md)
   The variations that the training process can use to generate more training data from the training data you provide.
 
 

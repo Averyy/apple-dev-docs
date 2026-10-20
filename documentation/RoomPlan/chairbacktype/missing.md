@@ -1,7 +1,8 @@
 # ChairBackType.missing
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A type of chair that has no back.
 
@@ -18,7 +19,8 @@ case missing
 
 ## See Also
 
-- [ChairBackType.existing](chairbacktype/existing.md)
+### Choosing a chair back type
+- [ChairBackType.existing](./existing.md)
   A type of chair that has a back.
 
 

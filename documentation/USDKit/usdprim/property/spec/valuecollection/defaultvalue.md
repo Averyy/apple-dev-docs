@@ -1,7 +1,8 @@
 # defaultValue
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The authored default value, or `nil` if not authored. Assigning `nil` clears the default.
 

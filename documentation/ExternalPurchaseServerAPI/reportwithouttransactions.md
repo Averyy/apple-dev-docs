@@ -1,19 +1,20 @@
 # Reporting unrecognized and transactionless tokens
 
-**Framework**: External Purchase Server API
+**Framework**: External Purchase Server API  
+**Role**: Article
 
 Create reports for external purchase tokens that didn’t result in completed transactions, duplicate tokens, or tokens that you learn of from an App Store server notification.
 
 #### Overview
 
-If a customer doesn’t successfully complete an external purchase, you must still report the token, even if it has no transaction. [`App Store Server Notifications V2`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-v2) notifies you of external purchase tokens you haven’t yet reported, 10 days after the system creates the token, or soon after `ACQUISITION` and `SERVICES` tokens expire. Report the token, including when your system doesn’t have a record of the token.
+If a customer doesn’t successfully complete an external purchase, you must still report the token, even if it has no transaction. [`App Store Server Notifications V2`](../AppStoreServerNotifications/app-store-server-notifications-v2.md) notifies you of external purchase tokens you haven’t yet reported, 10 days after the system creates the token, or soon after `ACQUISITION` and `SERVICES` tokens expire. Report the token, including when your system doesn’t have a record of the token.
 
-Send a request to the [`Send External Purchase Report`](send-external-purchase-report.md) endpoint to report all external purchase tokens. Add the following information in the [`ExternalPurchaseReport`](externalpurchasereport.md) request body:
+Send a request to the [`Send External Purchase Report`](./send-external-purchase-report.md) endpoint to report all external purchase tokens. Add the following information in the [`ExternalPurchaseReport`](./externalpurchasereport.md) request body:
 
-- Supply a [`requestIdentifier`](requestidentifier.md), to uniquely identify the report.
-- Provide the [`externalPurchaseId`](externalpurchaseid.md) of the token you’re reporting.
+- Supply a [`requestIdentifier`](./requestidentifier.md), to uniquely identify the report.
+- Provide the [`externalPurchaseId`](./externalpurchaseid.md) of the token you’re reporting.
 
-Then, specify the type of report in the [`status`](status.md) field:
+Then, specify the type of report in the [`status`](./status.md) field:
 
 - Use `NO_LINE_ITEM` when the external purchase token doesn’t have any associated transactions.
 - Use `UNRECOGNIZED_TOKEN` when you receive an App Store server notification with an external purchase token your system doesn’t recognize.
@@ -21,7 +22,7 @@ Then, specify the type of report in the [`status`](status.md) field:
 
 Don’t provide a `lineItems` field in the request body when using the above status values.
 
-##### Report a Token Without a Completed Transaction
+##### Report a token without a completed transaction
 
 Use the `NO_LINE_ITEM` status to report an external purchase token that didn’t result in any completed transactions. The following example shows the `ExternalPurchaseReport` request body for a token without any associated transactions:
 
@@ -33,11 +34,11 @@ Use the `NO_LINE_ITEM` status to report an external purchase token that didn’t
 }
 ```
 
-##### Report an Unrecognized Token
+##### Report an unrecognized token
 
-Apple sends notifications to your [`App Store Server Notifications V2`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-v2) endpoint for external purchase tokens that remain unreported. The notification has a [`notificationType`](https://developer.apple.com/documentation/appstoreservernotifications/notificationtype) of `EXTERNAL_PURCHASE_TOKEN` and a [`subtype`](https://developer.apple.com/documentation/appstoreservernotifications/subtype) of `UNREPORTED`. It provides the token’s [`externalPurchaseId`](externalpurchaseid.md) in the [`externalPurchaseToken`](https://developer.apple.com/documentation/appstoreservernotifications/externalpurchasetoken) field of notification’s payload. Apple sends the notification 10 days after it creates a token without an expiration date. For custom link tokens, which have an expiration date, Apple sends the notification soon after the token expires.
+Apple sends notifications to your [`App Store Server Notifications V2`](../AppStoreServerNotifications/app-store-server-notifications-v2.md) endpoint for external purchase tokens that remain unreported. The notification has a [`notificationType`](../AppStoreServerNotifications/notificationtype.md) of `EXTERNAL_PURCHASE_TOKEN` and a [`subtype`](../AppStoreServerNotifications/subtype.md) of `UNREPORTED`. It provides the token’s [`externalPurchaseId`](./externalpurchaseid.md) in the [`externalPurchaseToken`](../AppStoreServerNotifications/externalpurchasetoken.md) field of notification’s payload. Apple sends the notification 10 days after it creates a token without an expiration date. For custom link tokens, which have an expiration date, Apple sends the notification soon after the token expires.
 
-Compare the `externalPurchaseId` to the tokens in your system. If your system doesn’t have a record of a matching token, use the  `UNRECOGNIZED_TOKEN` [`status`](status.md) to send a report to Apple. The following example shows the [`ExternalPurchaseReport`](externalpurchasereport.md) request body for an unrecognized token:
+Compare the `externalPurchaseId` to the tokens in your system. If your system doesn’t have a record of a matching token, use the  `UNRECOGNIZED_TOKEN` [`status`](./status.md) to send a report to Apple. The following example shows the [`ExternalPurchaseReport`](./externalpurchasereport.md) request body for an unrecognized token:
 
 ```json
 {
@@ -47,9 +48,9 @@ Compare the `externalPurchaseId` to the tokens in your system. If your system do
 }
 ```
 
-##### Report Duplicate Tokens
+##### Report duplicate tokens
 
-If your app uses the [`ExternalPurchaseCustomLink`](https://developer.apple.com/documentation/storekit/externalpurchasecustomlink) API, it calls the doc://com.apple.documentation/documentation/storekit/externalpurchasecustomlink/token(for:) method to get tokens. If there’s an active token period, the system returns the token that corresponds to that active period. The returned token can be an original token, or it can be a refreshed token. A *refreshed* token has the same creation and expiration dates as the original token, but a different `externalPurchaseId`. You can report transactions using any one of the customer’s tokens that represent the same active token period, and report the remaining of the tokens from the same period as duplicate tokens.
+If your app uses the [`ExternalPurchaseCustomLink`](../StoreKit/externalpurchasecustomlink.md) API, it calls the https://developer.apple.com/documentation/storekit/externalpurchasecustomlink/token(for:) method to get tokens. If there’s an active token period, the system returns the token that corresponds to that active period. The returned token can be an original token, or it can be a refreshed token. A *refreshed* token has the same creation and expiration dates as the original token, but a different `externalPurchaseId`. You can report transactions using any one of the customer’s tokens that represent the same active token period, and report the remaining of the tokens from the same period as duplicate tokens.
 
 For example, you can choose to report transactions using the first active SERVICES token you receive, and report all subsequent SERVICES tokens with the same creation and expiration dates as a duplicate.
 
@@ -57,7 +58,7 @@ When a customer has both an ACQUISITION and SERVICES token in the same active pe
 
 > **Note**: Don’t report the same transaction twice. Use only one of the SERVICES or ACQUISITION tokens to report a transaction when both token types are active for the customer.
 
-For more information about receiving tokens, see [`Receiving and decoding external purchase tokens`](https://developer.apple.com/documentation/storekit/receiving-and-decoding-external-purchase-tokens). The following example shows the [`ExternalPurchaseReport`](externalpurchasereport.md) request body for a duplicate token:
+For more information about receiving tokens, see [Receiving and decoding external purchase tokens](../StoreKit/receiving-and-decoding-external-purchase-tokens.md). The following example shows the [`ExternalPurchaseReport`](./externalpurchasereport.md) request body for a duplicate token:
 
 ```json
 {

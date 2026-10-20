@@ -1,11 +1,12 @@
 # IteratorProtocol Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func next() -> Element?](emptycollection/iterator/next.md)
+- [func next() -> Element?](./next%28%29.md)
   Returns `nil`, indicating that there are no more elements.
 
 

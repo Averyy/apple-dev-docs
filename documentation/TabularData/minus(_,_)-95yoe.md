@@ -1,7 +1,8 @@
 # -(_:_:)
 
 **Framework**: TabularData  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Generates a column by subtracting each element in a column type from the corresponding elements of an optional column.
 
@@ -31,9 +32,10 @@ A new column with the same type as the right column.
 
 ## See Also
 
-- [static func - (Self, Self) -> Column<Self.Element>](columnprotocol/-(_:_:)-36zol.md)
+### Generating a Column by Subtracting Two Columns
+- [static func - (Self, Self) -> Column<Self.Element>](./columnprotocol/minus%28_,_%29-36zol.md)
   Generates a column by subtracting each element in a column type from the corresponding elements of another.
-- [func - <L, R>(L, R) -> Column<L.Element>](-(_:_:)-25cs6.md)
+- [func - <L, R>(L, R) -> Column<L.Element>](./minus%28_,_%29-25cs6.md)
   Generates a column by subtracting each element in an optional column type from the corresponding elements of a column type.
 
 

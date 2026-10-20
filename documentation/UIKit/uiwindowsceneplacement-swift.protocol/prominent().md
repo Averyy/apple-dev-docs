@@ -1,7 +1,8 @@
 # prominent()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a placement that indicates the system should present the window more prominently than others in the space.
 
@@ -9,8 +10,8 @@ Creates a placement that indicates the system should present the window more pro
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- tvOS ?+
-- visionOS ?+
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,13 +19,16 @@ Creates a placement that indicates the system should present the window more pro
 static func prominent() -> Self
 ```
 
+Available when `Self` is `UIWindowSceneProminentPlacement`.
+
 #### Return Value
 
 A placement that indicates the system should present the window more prominently than others in the space.
 
 ## See Also
 
-- [static func standard() -> Self](uiwindowsceneplacement-swift.protocol/standard.md)
+### Positioning windows
+- [static func standard() -> Self](./standard%28%29.md)
   Creates a placement that indicates the system should present the window using the default style of the system in the space.
 
 

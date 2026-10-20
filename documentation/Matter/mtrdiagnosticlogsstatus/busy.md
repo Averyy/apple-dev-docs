@@ -1,7 +1,8 @@
 # MTRDiagnosticLogsStatus.busy
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.5+
@@ -16,6 +17,10 @@
 
 ```swift
 case busy
+```
+
+```c
+MTRDiagnosticLogsStatusBusy
 ```
 
 

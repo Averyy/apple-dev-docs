@@ -1,7 +1,8 @@
 # hasCustomDataByKey(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether custom data exists at the given key path.
 

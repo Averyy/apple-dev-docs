@@ -1,7 +1,8 @@
 # image()
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an image associated with the receiver.
 
@@ -12,6 +13,10 @@ Returns an image associated with the receiver.
 
 ```swift
 func image() -> NSImage!
+```
+
+```objc
+- (NSImage *) image;
 ```
 
 #### Discussion

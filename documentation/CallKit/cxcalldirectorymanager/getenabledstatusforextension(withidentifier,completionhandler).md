@@ -1,7 +1,8 @@
 # getEnabledStatusForExtension(withIdentifier:completionHandler:)
 
 **Framework**: CallKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously returns the enabled status of the extension with the specified identifier.
 
@@ -14,27 +15,42 @@ Asynchronously returns the enabled status of the extension with the specified id
 ## Declaration
 
 ```swift
+func getEnabledStatusForExtension(withIdentifier identifier: String, completionHandler completion: @escaping @Sendable (CXCallDirectoryManager.EnabledStatus, (any Error)?) -> Void)
+```
+
+```swift
 func enabledStatusForExtension(withIdentifier identifier: String) async throws -> CXCallDirectoryManager.EnabledStatus
+```
+
+```objc
+- (void) getEnabledStatusForExtensionWithIdentifier:(NSString *) identifier completionHandler:(void (^)(CXCallDirectoryEnabledStatus enabledStatus, NSError *error)) completion;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func enabledStatusForExtension(withIdentifier identifier: String) async throws -> CXCallDirectoryManager.EnabledStatus
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func enabledStatusForExtension(withIdentifier identifier: String) async throws -> CXCallDirectoryManager.EnabledStatus
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 ## Parameters
 
 - `identifier`: The identifier for the call extension.
-- `completion`: A block to be executed when the manager is finished determining the enabled status of the specified extension. - **enabledStatus**: The enabled status of the extension. For possible values, see [`CXCallDirectoryManager.EnabledStatus`](cxcalldirectorymanager/enabledstatus.md).
-- **error**: If an error occurred, an error object indicating how the check failed, otherwise `nil`.
+- `completion`: A block to be executed when the manager is finished determining the enabled status of the specified extension.
+
+  - **enabledStatus**: The enabled status of the extension. For possible values, see [`CXCallDirectoryManager.EnabledStatus`](./enabledstatus.md).
+  - **error**: If an error occurred, an error object indicating how the check failed, otherwise `nil`.
 
 ## See Also
 
-- [func reloadExtension(withIdentifier: String, completionHandler: (((any Error)?) -> Void)?)](cxcalldirectorymanager/reloadextension(withidentifier:completionhandler:).md)
+### Working with a Call Directory App Extension
+- [func reloadExtension(withIdentifier: String, completionHandler: (((any Error)?) -> Void)?)](./reloadextension%28withidentifier,completionhandler%29.md)
   Asynchronously reloads the extension with the specified identifier.
-- [CXCallDirectoryManager.EnabledStatus](cxcalldirectorymanager/enabledstatus.md)
-  The enabled status of a Call Directory app extension, as reported by the [`getEnabledStatusForExtension(withIdentifier:completionHandler:)`](cxcalldirectorymanager/getenabledstatusforextension(withidentifier:completionhandler:).md) method.
+- [CXCallDirectoryManager.EnabledStatus](./enabledstatus.md)
+  The enabled status of a Call Directory app extension, as reported by the [`getEnabledStatusForExtension(withIdentifier:completionHandler:)`](./getenabledstatusforextension%28withidentifier,completionhandler%29.md) method.
 
 
 ---

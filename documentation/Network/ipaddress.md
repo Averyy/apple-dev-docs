@@ -1,7 +1,8 @@
 # IPAddress
 
 **Framework**: Network  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An abstract protocol you use to interact with IP addresses.
 
@@ -23,36 +24,37 @@ protocol IPAddress : Sendable
 ## Topics
 
 ### Creating Addresses
-- [init?(String)](ipaddress/init(_:).md)
+- [init?(String)](./ipaddress/init%28_%29.md)
   Initializes an IP address with a string.
-- [init?(Data, NWInterface?)](ipaddress/init(_:_:).md)
+- [init?(Data, NWInterface?)](./ipaddress/init%28_,_%29.md)
   Initializes an IP address with data.
 ### Inspecting Address Properties
-- [var rawValue: Data](ipaddress/rawvalue.md)
+- [var rawValue: Data](./ipaddress/rawvalue.md)
   The raw data of an IP address.
-- [var interface: NWInterface?](ipaddress/interface.md)
+- [var interface: NWInterface?](./ipaddress/interface.md)
   The interface associated with this address, such as the IPv6 scoped interface.
-- [var isLinkLocal: Bool](ipaddress/islinklocal.md)
+- [var isLinkLocal: Bool](./ipaddress/islinklocal.md)
   A Boolean indicating whether this address is in a link-local range.
-- [var isLoopback: Bool](ipaddress/isloopback.md)
+- [var isLoopback: Bool](./ipaddress/isloopback.md)
   A Boolean indicating whether this address is a loopback address for the local device.
-- [var isMulticast: Bool](ipaddress/ismulticast.md)
+- [var isMulticast: Bool](./ipaddress/ismulticast.md)
   A Boolean indicating whether this address is a multicast address.
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [IPv4Address](ipv4address.md)
-- [IPv6Address](ipv6address.md)
+- [IPv4Address](./ipv4address.md)
+- [IPv6Address](./ipv6address.md)
 
 ## See Also
 
-- [struct IPv4Address](ipv4address.md)
+### Internet Addresses
+- [struct IPv4Address](./ipv4address.md)
   A structure containing an IPv4 address.
-- [struct IPv6Address](ipv6address.md)
+- [struct IPv6Address](./ipv6address.md)
   A structure containing an IPv6 address.
 
 

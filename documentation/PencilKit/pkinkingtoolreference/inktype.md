@@ -1,7 +1,8 @@
 # inkType
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tool type that determines the shape of the rendered content.
 
@@ -16,6 +17,10 @@ The tool type that determines the shape of the rendered content.
 
 ```swift
 var inkType: __PKInkType { get }
+```
+
+```objc
+@property (nonatomic, readonly) PKInkType inkType;
 ```
 
 

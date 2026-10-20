@@ -1,7 +1,8 @@
 # nw_browse_result_change_identical
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The compared services are identical.
 
@@ -20,19 +21,24 @@ The compared services are identical.
 var nw_browse_result_change_identical: Int { get }
 ```
 
+```c
+nw_browse_result_change_identical
+```
+
 ## See Also
 
-- [var nw_browse_result_change_invalid: Int](nw_browse_result_change_invalid.md)
+### Browse Result Change Flags
+- [var nw_browse_result_change_invalid: Int](./nw_browse_result_change_invalid.md)
   The comparison was invallid.
-- [var nw_browse_result_change_result_added: Int](nw_browse_result_change_result_added.md)
+- [var nw_browse_result_change_result_added: Int](./nw_browse_result_change_result_added.md)
   A new service was discovered.
-- [var nw_browse_result_change_result_removed: Int](nw_browse_result_change_result_removed.md)
+- [var nw_browse_result_change_result_removed: Int](./nw_browse_result_change_result_removed.md)
   A previously discovered service was removed.
-- [var nw_browse_result_change_txt_record_changed: Int](nw_browse_result_change_txt_record_changed.md)
+- [var nw_browse_result_change_txt_record_changed: Int](./nw_browse_result_change_txt_record_changed.md)
   The service’s associated TXT record changed.
-- [var nw_browse_result_change_interface_added: Int](nw_browse_result_change_interface_added.md)
+- [var nw_browse_result_change_interface_added: Int](./nw_browse_result_change_interface_added.md)
   The service was discovered over a new interface.
-- [var nw_browse_result_change_interface_removed: Int](nw_browse_result_change_interface_removed.md)
+- [var nw_browse_result_change_interface_removed: Int](./nw_browse_result_change_interface_removed.md)
   The service was no longer discovered over a certain interface.
 
 

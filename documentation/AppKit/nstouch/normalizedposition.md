@@ -1,7 +1,8 @@
 # normalizedPosition
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The normalized position of the touch.
 
@@ -14,19 +15,24 @@ The normalized position of the touch.
 var normalizedPosition: NSPoint { get }
 ```
 
+```objc
+@property (readonly) NSPoint normalizedPosition;
+```
+
 #### Discussion
 
 The normalized position is a scaled value between (0.0) and (1.0,1.0), where (0.0,0.0) is the lower-left position on the touch device.
 
 ## See Also
 
-- [var identity: any NSCopying & NSObjectProtocol](nstouch/identity.md)
+### Using Touch Properties
+- [var identity: any NSCopying & NSObjectProtocol](./identity.md)
   The changes to a particular touch during its lifetime.
-- [var phase: NSTouch.Phase](nstouch/phase-swift.property.md)
+- [var phase: NSTouch.Phase](./phase-swift.property.md)
   The current phase of the touch.
-- [NSTouch.Phase](nstouch/phase-swift.struct.md)
+- [NSTouch.Phase](./phase-swift.struct.md)
   The possible phases of a touch.
-- [var isResting: Bool](nstouch/isresting.md)
+- [var isResting: Bool](./isresting.md)
   The indicator for a resting touch.
 
 

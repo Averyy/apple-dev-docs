@@ -1,7 +1,8 @@
 # Subview.ContainerSizingOptions.uniform(axis:)
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Subviews will share the same size.
 

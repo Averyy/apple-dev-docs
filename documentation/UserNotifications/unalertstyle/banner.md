@@ -1,7 +1,8 @@
 # UNAlertStyle.banner
 
 **Framework**: User Notifications  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Banner alerts.
 
@@ -18,15 +19,20 @@ Banner alerts.
 case banner
 ```
 
+```c
+UNAlertStyleBanner
+```
+
 #### Discussion
 
 Alerts are displayed as a slide-down banner. Banners appear for a short time and then disappear automatically if the user does nothing.
 
 ## See Also
 
-- [UNAlertStyle.none](unalertstyle/none.md)
+### Presentation Styles
+- [UNAlertStyle.none](./none.md)
   No alert.
-- [UNAlertStyle.alert](unalertstyle/alert.md)
+- [UNAlertStyle.alert](./alert.md)
   Modal alerts.
 
 

@@ -1,7 +1,8 @@
 # deformers
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The `Deformers` to apply in order to a mesh.
 
@@ -21,7 +22,8 @@ var deformers: [any MeshDeformer]
 
 ## See Also
 
-- [var targets: [MeshScope]](meshdeformationstack/targets.md)
+### Configuring deformation
+- [var targets: [MeshScope]](./targets.md)
   The set of `MeshScope`s that will be deformed by the `MeshDeformationStack`.
 
 

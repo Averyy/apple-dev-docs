@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kUCOutputBufferTooSmall: Int](kucoutputbuffertoosmall.md)
-- [var kUCTextBreakLocatorMissingType: Int](kuctextbreaklocatormissingtype.md)
+- [var kUCOutputBufferTooSmall: Int](../../kucoutputbuffertoosmall.md)
+- [var kUCTextBreakLocatorMissingType: Int](../../kuctextbreaklocatormissingtype.md)
 
 
 ---

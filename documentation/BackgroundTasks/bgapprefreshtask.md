@@ -1,7 +1,8 @@
 # BGAppRefreshTask
 
 **Framework**: Background Tasks  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object representing a short task typically used to refresh content that’s run while the app is in the background.
 
@@ -18,39 +19,44 @@ An object representing a short task typically used to refresh content that’s r
 class BGAppRefreshTask
 ```
 
+```objc
+@interface BGAppRefreshTask : BGTask
+```
+
 ## Mentions
 
-- [Choosing Background Strategies for Your App](choosing-background-strategies-for-your-app.md)
+- [Choosing Background Strategies for Your App](./choosing-background-strategies-for-your-app.md)
 
 #### Overview
 
 Use app refresh tasks for updating your app with small bits of information, such as the latest stock values.
 
-Executing app refresh tasks requires setting the `fetch` [`UIBackgroundModes`](https://developer.apple.com/documentation/bundleresources/information-property-list/uibackgroundmodes) capability. For information on setting this capability, see [`BGTaskScheduler`](bgtaskscheduler.md).
+Executing app refresh tasks requires setting the `fetch` [`UIBackgroundModes`](../BundleResources/information-property-list/uibackgroundmodes.md) capability. For information on setting this capability, see [`BGTaskScheduler`](./bgtaskscheduler.md).
 
 ## Relationships
 
 ### Inherits From
-- [BGTask](bgtask.md)
+- [BGTask](./bgtask.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Using background tasks to update your app](../uikit/using-background-tasks-to-update-your-app.md)
+### Background tasks
+- [Using background tasks to update your app](../UIKit/using-background-tasks-to-update-your-app.md)
   Configure your app to perform tasks in the background to make efficient use of processing time and power.
-- [Refreshing and Maintaining Your App Using Background Tasks](refreshing-and-maintaining-your-app-using-background-tasks.md)
+- [Refreshing and Maintaining Your App Using Background Tasks](./refreshing-and-maintaining-your-app-using-background-tasks.md)
   Use scheduled background tasks for refreshing your app content and for performing maintenance.
-- [Choosing Background Strategies for Your App](choosing-background-strategies-for-your-app.md)
+- [Choosing Background Strategies for Your App](./choosing-background-strategies-for-your-app.md)
   Select the best method of scheduling background runtime for your app.
-- [class BGProcessingTask](bgprocessingtask.md)
+- [class BGProcessingTask](./bgprocessingtask.md)
   A time-consuming processing task that runs while the app is in the background.
-- [class BGHealthResearchTask](bghealthresearchtask.md)
+- [class BGHealthResearchTask](./bghealthresearchtask.md)
   A time-consuming, necessary processing task that runs while the app is in the background to prepare data essential to a health research study.
 
 

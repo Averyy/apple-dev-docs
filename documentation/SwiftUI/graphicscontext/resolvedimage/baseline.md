@@ -1,7 +1,8 @@
 # baseline
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance from the top of the image to its baseline.
 
@@ -26,9 +27,10 @@ If the image has no baseline, this value is equivalent to the image’s height.
 
 ## See Also
 
-- [var size: CGSize](graphicscontext/resolvedimage/size.md)
+### Getting the image properties
+- [var size: CGSize](./size.md)
   The size of the image.
-- [var shading: GraphicsContext.Shading?](graphicscontext/resolvedimage/shading.md)
+- [var shading: GraphicsContext.Shading?](./shading.md)
   An optional shading to fill the image with.
 
 

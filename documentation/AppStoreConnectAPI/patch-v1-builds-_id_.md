@@ -1,7 +1,8 @@
 # Modify a build
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Expire a build or change its encryption exemption setting.
 
@@ -10,7 +11,7 @@ Expire a build or change its encryption exemption setting.
 
 ## Mentions
 
-- [App Store Connect API 3.0 release notes](app-store-connect-api-3-0-release-notes.md)
+- [App Store Connect API 3.0 release notes](./app-store-connect-api-3-0-release-notes.md)
 
 #### Discussion
 
@@ -18,7 +19,7 @@ Expire a build or change its encryption exemption setting.
 
 **Request**:
 
-```None
+```
 PATCH https://api.appstoreconnect.apple.com/v1/builds/932eff64-a144-4350-8d10-9e54d5834aee
 -d {
   “data” : {
@@ -170,11 +171,30 @@ PATCH https://api.appstoreconnect.apple.com/v1/builds/932eff64-a144-4350-8d10-9e
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the build resource ID from the [`List builds`](get-v1-builds.md) response.
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the build resource ID from the [`List builds`](./get-v1-builds.md) response.
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `BuildUpdateRequest`
+
+## Responses
+
+- `200` OK (`BuildResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `409` Conflict (`ErrorResponse`, `application/json`): The provided resource data is not valid.
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Assign the app encryption declaration for a build](patch-v1-builds-_id_-relationships-appencryptiondeclaration.md)
+### Modifying Builds
+- [Assign the app encryption declaration for a build](./patch-v1-builds-_id_-relationships-appencryptiondeclaration.md)
   Assign an app encryption declaration to a build.
 
 

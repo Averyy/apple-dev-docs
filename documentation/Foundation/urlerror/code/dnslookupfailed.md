@@ -1,7 +1,8 @@
 # dnsLookupFailed
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The host address could not be found via DNS lookup.
 
@@ -22,39 +23,40 @@ static var dnsLookupFailed: URLError.Code { get }
 
 #### Discussion
 
-This error code is no longer used. You should expect to handle [`cannotFindHost`](urlerror/code/cannotfindhost.md) instead.
+This error code is no longer used. You should expect to handle [`cannotFindHost`](./cannotfindhost.md) instead.
 
 ## See Also
 
-- [static var appTransportSecurityRequiresSecureConnection: URLError.Code](urlerror/code/apptransportsecurityrequiressecureconnection.md)
+### Error codes
+- [static var appTransportSecurityRequiresSecureConnection: URLError.Code](./apptransportsecurityrequiressecureconnection.md)
   App Transport Security disallowed a connection because there is no secure network connection.
-- [static var backgroundSessionInUseByAnotherProcess: URLError.Code](urlerror/code/backgroundsessioninusebyanotherprocess.md)
+- [static var backgroundSessionInUseByAnotherProcess: URLError.Code](./backgroundsessioninusebyanotherprocess.md)
   An app or app extension attempted to connect to a background session that is already connected to a process.
-- [static var backgroundSessionRequiresSharedContainer: URLError.Code](urlerror/code/backgroundsessionrequiressharedcontainer.md)
+- [static var backgroundSessionRequiresSharedContainer: URLError.Code](./backgroundsessionrequiressharedcontainer.md)
   The shared container identifier of the URL session configuration is needed but has not been set.
-- [static var backgroundSessionWasDisconnected: URLError.Code](urlerror/code/backgroundsessionwasdisconnected.md)
+- [static var backgroundSessionWasDisconnected: URLError.Code](./backgroundsessionwasdisconnected.md)
   The app is suspended or exits while a background data task is processing.
-- [static var badServerResponse: URLError.Code](urlerror/code/badserverresponse.md)
+- [static var badServerResponse: URLError.Code](./badserverresponse.md)
   The URL Loading system received bad data from the server.
-- [static var badURL: URLError.Code](urlerror/code/badurl.md)
+- [static var badURL: URLError.Code](./badurl.md)
   A malformed URL prevented a URL request from being initiated.
-- [static var callIsActive: URLError.Code](urlerror/code/callisactive.md)
+- [static var callIsActive: URLError.Code](./callisactive.md)
   A connection was attempted while a phone call is active on a network that does not support simultaneous phone and data communication (EDGE or GPRS).
-- [static var cancelled: URLError.Code](urlerror/code/cancelled.md)
+- [static var cancelled: URLError.Code](./cancelled.md)
   An asynchronous load has been canceled.
-- [static var cannotCloseFile: URLError.Code](urlerror/code/cannotclosefile.md)
+- [static var cannotCloseFile: URLError.Code](./cannotclosefile.md)
   A download task couldn’t close the downloaded file on disk.
-- [static var cannotConnectToHost: URLError.Code](urlerror/code/cannotconnecttohost.md)
+- [static var cannotConnectToHost: URLError.Code](./cannotconnecttohost.md)
   An attempt to connect to a host failed.
-- [static var cannotCreateFile: URLError.Code](urlerror/code/cannotcreatefile.md)
+- [static var cannotCreateFile: URLError.Code](./cannotcreatefile.md)
   A download task couldn’t create the downloaded file on disk because of an I/O failure.
-- [static var cannotDecodeContentData: URLError.Code](urlerror/code/cannotdecodecontentdata.md)
+- [static var cannotDecodeContentData: URLError.Code](./cannotdecodecontentdata.md)
   Content data received during a connection request had an unknown content encoding.
-- [static var cannotDecodeRawData: URLError.Code](urlerror/code/cannotdecoderawdata.md)
+- [static var cannotDecodeRawData: URLError.Code](./cannotdecoderawdata.md)
   Content data received during a connection request could not be decoded for a known content encoding.
-- [static var cannotFindHost: URLError.Code](urlerror/code/cannotfindhost.md)
+- [static var cannotFindHost: URLError.Code](./cannotfindhost.md)
   The host name for a URL could not be resolved.
-- [static var cannotLoadFromNetwork: URLError.Code](urlerror/code/cannotloadfromnetwork.md)
+- [static var cannotLoadFromNetwork: URLError.Code](./cannotloadfromnetwork.md)
   A request to load an item only from the cache could not be satisfied.
 
 

@@ -1,18 +1,19 @@
 # glowWidth
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A glow that extends outward from the stroked line.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,29 +21,34 @@ A glow that extends outward from the stroked line.
 var glowWidth: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat glowWidth;
+```
+
 ## Mentions
 
-- [Getting Started with Shape Nodes](getting-started-with-shape-nodes.md)
+- [Getting Started with Shape Nodes](../getting-started-with-shape-nodes.md)
 
 #### Discussion
 
-The default value is `0.0`, which means no glow is added. The glow color is determined by [`strokeColor`](skshapenode/strokecolor.md).
+The default value is `0.0`, which means no glow is added. The glow color is determined by [`strokeColor`](./strokecolor.md).
 
 ## See Also
 
-- [var lineWidth: CGFloat](skshapenode/linewidth.md)
+### Stroking a Shape
+- [var lineWidth: CGFloat](./linewidth.md)
   The width used to stroke the path.
-- [var strokeColor: UIColor](skshapenode/strokecolor.md)
+- [var strokeColor: UIColor](./strokecolor.md)
   The color used to stroke the shape.
-- [var strokeTexture: SKTexture?](skshapenode/stroketexture.md)
+- [var strokeTexture: SKTexture?](./stroketexture.md)
   The texture used to stroke the shape.
-- [var lineCap: CGLineCap](skshapenode/linecap.md)
+- [var lineCap: CGLineCap](./linecap.md)
   The style used to render the endpoints of the stroked portion of the shape node.
-- [var lineJoin: CGLineJoin](skshapenode/linejoin.md)
+- [var lineJoin: CGLineJoin](./linejoin.md)
   The junction type used when the stroked portion of the shape node is rendered.
-- [var miterLimit: CGFloat](skshapenode/miterlimit.md)
+- [var miterLimit: CGFloat](./miterlimit.md)
   The miter limit to use when the line is stroked using a miter join style.
-- [var isAntialiased: Bool](skshapenode/isantialiased.md)
+- [var isAntialiased: Bool](./isantialiased.md)
   A Boolean value that determines whether the stroked path is smoothed when drawn.
 
 

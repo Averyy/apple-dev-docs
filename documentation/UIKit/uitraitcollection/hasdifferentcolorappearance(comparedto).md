@@ -1,7 +1,8 @@
 # hasDifferentColorAppearance(comparedTo:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Queries whether changing between the specified and current trait collections would affect color values.
 
@@ -18,13 +19,17 @@ Queries whether changing between the specified and current trait collections wou
 func hasDifferentColorAppearance(comparedTo traitCollection: UITraitCollection?) -> Bool
 ```
 
+```objc
+- (BOOL) hasDifferentColorAppearanceComparedToTraitCollection:(UITraitCollection *) traitCollection;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the colors in the two trait collections differ, or [`false`](https://developer.apple.com/documentation/swift/false) if they have the same component values.
+[`true`](../../Swift/true.md) if the colors in the two trait collections differ, or [`false`](../../Swift/false.md) if they have the same component values.
 
 #### Discussion
 
-Use this method to determine whether changing the traits of the current environment would also change the colors in your interface. For example, changing the [`userInterfaceStyle`](uitraitcollection/userinterfacestyle.md) or [`accessibilityContrast`](uitraitcollection/accessibilitycontrast.md) property usually changes the colors of your interface.
+Use this method to determine whether changing the traits of the current environment would also change the colors in your interface. For example, changing the [`userInterfaceStyle`](./userinterfacestyle.md) or [`accessibilityContrast`](./accessibilitycontrast.md) property usually changes the colors of your interface.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # jointWeights
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Dictionary of joint weights keyed by joint name. Each weight corresponds to a joint in the skeleton, controlling how much that joint is affected by animations using this mask. Values range from 0.0 (no effect) to 1.0 (full effect). Joints not present in the dictionary are treated as having weight 1.0 (full animation effect).
 
@@ -21,7 +22,8 @@ var jointWeights: [String : Float]
 
 ## See Also
 
-- [var id: String](skeletonresource/blendmask/id.md)
+### Accessing mask values
+- [var id: String](./id.md)
   The identifier of the blend mask, derived from its name.
 
 

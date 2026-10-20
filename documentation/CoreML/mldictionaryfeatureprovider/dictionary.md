@@ -1,7 +1,8 @@
 # dictionary
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The backing dictionary.
 
@@ -20,9 +21,14 @@ The backing dictionary.
 var dictionary: [String : MLFeatureValue] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDictionary<NSString *,MLFeatureValue *> * dictionary;
+```
+
 ## See Also
 
-- [subscript(String) -> MLFeatureValue?](mldictionaryfeatureprovider/subscript(_:).md)
+### Accessing the features
+- [subscript(String) -> MLFeatureValue?](./subscript%28_%29.md)
   Subscript interface for the feature provider to pass through to the dictionary.
 
 

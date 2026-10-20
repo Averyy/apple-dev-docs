@@ -1,7 +1,8 @@
 # currency
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currency that the storefront uses.
 

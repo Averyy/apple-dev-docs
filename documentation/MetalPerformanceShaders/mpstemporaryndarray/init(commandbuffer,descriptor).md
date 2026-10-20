@@ -1,7 +1,8 @@
 # init(commandBuffer:descriptor:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 convenience init(commandBuffer: any MTLCommandBuffer, descriptor: MPSNDArrayDescriptor)
+```
+
+```objc
++ (instancetype) temporaryNDArrayWithCommandBuffer:(id<MTLCommandBuffer>) commandBuffer descriptor:(MPSNDArrayDescriptor *) descriptor;
 ```
 
 

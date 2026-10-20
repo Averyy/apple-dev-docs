@@ -1,7 +1,8 @@
 # traitCollection
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The traits associated with the image configuration.
 
@@ -16,6 +17,10 @@ The traits associated with the image configuration.
 
 ```swift
 var traitCollection: UITraitCollection? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) UITraitCollection * traitCollection;
 ```
 
 

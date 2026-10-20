@@ -1,7 +1,8 @@
 # init(toAvoid:maxPredictionTime:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a goal whose effect is to make an agent avoid colliding with the specified static obstacles.
 
@@ -19,6 +20,10 @@ Creates a goal whose effect is to make an agent avoid colliding with the specifi
 convenience init(toAvoid obstacles: [GKObstacle], maxPredictionTime: TimeInterval)
 ```
 
+```objc
++ (instancetype) goalToAvoidObstacles:(NSArray<GKObstacle *> *) obstacles maxPredictionTime:(NSTimeInterval) maxPredictionTime;
+```
+
 #### Return Value
 
 A new goal object.
@@ -34,9 +39,10 @@ The `maxPredictionTime` parameter controls how far in the future a predicted col
 
 ## See Also
 
-- [convenience init(toAvoid: [GKAgent], maxPredictionTime: TimeInterval)](gkgoal/init(toavoid:maxpredictiontime:)-96a0i.md)
+### Creating Goals for Avoidance and Interception Behavior
+- [convenience init(toAvoid: [GKAgent], maxPredictionTime: TimeInterval)](./init%28toavoid,maxpredictiontime%29-96a0i.md)
   Creates a goal whose effect is to make an agent avoid colliding with the specified other agents, taking into account the other agents’ movement.
-- [convenience init(toInterceptAgent: GKAgent, maxPredictionTime: TimeInterval)](gkgoal/init(tointerceptagent:maxpredictiontime:).md)
+- [convenience init(toInterceptAgent: GKAgent, maxPredictionTime: TimeInterval)](./init%28tointerceptagent,maxpredictiontime%29.md)
   Creates a goal whose effect is to make an agent pursue the specified other agent, taking into account the target’s movement.
 
 

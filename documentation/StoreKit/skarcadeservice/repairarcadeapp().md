@@ -1,7 +1,8 @@
 # repairArcadeApp()
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 13.0+
@@ -17,10 +18,15 @@
 class func repairArcadeApp()
 ```
 
+```objc
++ (void) repairArcadeApp;
+```
+
 ## See Also
 
-- [class func arcadeSubscriptionStatus(withNonce: UInt64, resultHandler: (Data?, UInt32, Data?, UInt32, (any Error)?) -> Void)](skarcadeservice/arcadesubscriptionstatus(withnonce:resulthandler:).md)
-- [class func registerArcadeAppWithRandom(fromLib: Data, randomFromLibLength: UInt32, resultHandler: (Data?, UInt32, Data?, UInt32, (any Error)?) -> Void)](skarcadeservice/registerarcadeappwithrandom(fromlib:randomfromliblength:resulthandler:).md)
+### Type Methods
+- [class func arcadeSubscriptionStatus(withNonce: UInt64, resultHandler: (Data?, UInt32, Data?, UInt32, (any Error)?) -> Void)](./arcadesubscriptionstatus%28withnonce,resulthandler%29.md)
+- [class func registerArcadeAppWithRandom(fromLib: Data, randomFromLibLength: UInt32, resultHandler: (Data?, UInt32, Data?, UInt32, (any Error)?) -> Void)](./registerarcadeappwithrandom%28fromlib,randomfromliblength,resulthandler%29.md)
 
 
 ---

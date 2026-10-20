@@ -1,7 +1,8 @@
 # suggestedName
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The filename to use when writing the provided data to a file on disk.
 
@@ -18,19 +19,24 @@ The filename to use when writing the provided data to a file on disk.
 var suggestedName: String? { get set }
 ```
 
+```objc
+@property (atomic, copy, nullable) NSString * suggestedName;
+```
+
 #### Discussion
 
-Setting this property is recommended when providing [`NSData`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PropertyLists/OldStylePlists/OldStylePLists.html#//apple_ref/doc/uid/20001012-47169) or text data from an item provider.
+Setting this property is recommended when providing [NSData](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PropertyLists/OldStylePlists/OldStylePLists.html#//apple_ref/doc/uid/20001012-47169) or text data from an item provider.
 
 ## See Also
 
-- [var preferredPresentationSize: CGSize](nsitemprovider/preferredpresentationsize.md)
+### Configuring the provider
+- [var preferredPresentationSize: CGSize](./preferredpresentationsize.md)
   The ideal presentation size of the item.
-- [var preferredPresentationStyle: NSItemProvider.PreferredPresentationStyle](nsitemprovider/preferredpresentationstyle-swift.property.md)
+- [var preferredPresentationStyle: NSItemProvider.PreferredPresentationStyle](./preferredpresentationstyle-swift.property.md)
   The preferred style for presenting the item provider’s data.
-- [NSItemProvider.PreferredPresentationStyle](nsitemprovider/preferredpresentationstyle-swift.enum.md)
+- [NSItemProvider.PreferredPresentationStyle](./preferredpresentationstyle-swift.enum.md)
   The presentation styles that determine how a view shows an item provider’s data.
-- [var teamData: Data?](nsitemprovider/teamdata.md)
+- [var teamData: Data?](./teamdata.md)
   The collection of data an app uses to hold private team information during drag and drop.
 
 

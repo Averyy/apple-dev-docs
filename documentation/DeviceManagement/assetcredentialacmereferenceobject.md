@@ -1,7 +1,8 @@
 # AssetCredentialACMEReferenceObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The external reference. Ensure that the asset data:
 
@@ -16,7 +17,7 @@ The external reference. Ensure that the asset data:
 
 ## Declaration
 
-```swift
+```
 object AssetCredentialACMEReferenceObject
 ```
 
@@ -34,7 +35,8 @@ object AssetCredentialACMEReferenceObject
 
 ## See Also
 
-- [object AssetCredentialACMEAuthenticationObject](assetcredentialacmeauthenticationobject.md)
+### Objects
+- [object AssetCredentialACMEAuthenticationObject](./assetcredentialacmeauthenticationobject.md)
   The server authentication details. If this key is absent, the default authentication type is MDM.
 
 

@@ -1,7 +1,8 @@
 # time
 
 **Framework**: AlarmKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time that the alarm emits an alert.
 
@@ -18,7 +19,8 @@ var time: Alarm.Schedule.Relative.Time
 
 ## See Also
 
-- [init(time: Alarm.Schedule.Relative.Time)](alarmpresentationstate/mode-swift.enum/alert/init(time:).md)
+### Creating an alert
+- [init(time: Alarm.Schedule.Relative.Time)](./init%28time%29.md)
   Creates an instance of an alert.
 
 

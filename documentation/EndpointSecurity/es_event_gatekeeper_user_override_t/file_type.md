@@ -1,16 +1,21 @@
 # file_type
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var file_type: es_gatekeeper_user_override_file_type_t
+```
+
+```c
+es_gatekeeper_user_override_file_type_t file_type;
 ```
 
 

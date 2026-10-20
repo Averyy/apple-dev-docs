@@ -1,7 +1,8 @@
 # Deferred.Failure
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of errors this publisher might publish.
 
@@ -22,7 +23,8 @@ typealias Failure = DeferredPublisher.Failure
 
 ## See Also
 
-- [typealias Output](deferred/output.md)
+### Declaring supporting types
+- [typealias Output](./output.md)
   The kind of values published by this publisher.
 
 

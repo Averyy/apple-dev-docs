@@ -1,18 +1,21 @@
 # SKPaymentQueue
 
 **Framework**: StoreKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A queue of payment transactions for the App Store to process.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 13.1+
-- macOS 10.7+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 6.2+
+- iOS 3.0+ - Deprecated in 18.0
+- iPadOS 3.0+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.7+ - Deprecated in 15.0
+- tvOS 9.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 6.2+ - Deprecated in 11.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
@@ -20,99 +23,104 @@ A queue of payment transactions for the App Store to process.
 class SKPaymentQueue
 ```
 
+```objc
+@interface SKPaymentQueue : NSObject
+```
+
 ## Mentions
 
-- [Restoring purchased products](restoring-purchased-products.md)
-- [Testing transaction observer code](testing-transaction-observer-code.md)
-- [Unlocking purchased content](unlocking-purchased-content.md)
+- [Restoring purchased products](./restoring-purchased-products.md)
+- [Testing transaction observer code](./testing-transaction-observer-code.md)
+- [Unlocking purchased content](./unlocking-purchased-content.md)
 
 #### Overview
 
 The payment queue communicates with the App Store and presents a user interface so that the user can authorize payment. The contents of the queue are persistent between launches of your app.
 
-To process a payment, first add at least one observer object ([`SKPaymentTransactionObserver`](skpaymenttransactionobserver.md)) to the queue (see [`add(_:)`](skpaymentqueue/add(_:)-5ciz2.md)). Then, add a payment object ([`SKPayment`](skpayment.md)) for the item the user wants to purchase. Each time you add a payment object, the queue creates a transaction object ([`SKPaymentTransaction`](skpaymenttransaction.md)) to process that payment and enqueues it to be processed. After payment is fulfilled, the queue updates the transaction object and then calls any observer objects to provide them the updated transaction. Your observer should process the transaction and then remove it from the queue.
+To process a payment, first add at least one observer object ([`SKPaymentTransactionObserver`](./skpaymenttransactionobserver.md)) to the queue (see [`add(_:)`](./skpaymentqueue/add%28_%29-5ciz2.md)). Then, add a payment object ([`SKPayment`](./skpayment.md)) for the item the user wants to purchase. Each time you add a payment object, the queue creates a transaction object ([`SKPaymentTransaction`](./skpaymenttransaction.md)) to process that payment and enqueues it to be processed. After payment is fulfilled, the queue updates the transaction object and then calls any observer objects to provide them the updated transaction. Your observer should process the transaction and then remove it from the queue.
 
 The exact mechanism you use to process a processed transaction depends on the design of your app and the product being purchased. Here are a few common examples:
 
 - If the product is a feature already built into your app, your app enables the feature to process the transaction.
-- If the product includes downloadable content provided by the App Store, your app retrieves the [`SKDownload`](skdownload.md) objects from the transaction and ask the payment queue to download them. You provide the actual content files to be served by the App Store to App Store Connect when you create the product information.
+- If the product includes downloadable content provided by the App Store, your app retrieves the [`SKDownload`](./skdownload.md) objects from the transaction and ask the payment queue to download them. You provide the actual content files to be served by the App Store to App Store Connect when you create the product information.
 - If the product represents downloadable content provided by your own server, your app might open a network connection to your server and download the content from there.
 
-For more information on designing the payment processing portion of your app, see [`Apple In-App Purchase Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Introduction.html#//apple_ref/doc/uid/TP40008267).
+For more information on designing the payment processing portion of your app, see [Apple In-App Purchase Programming Guide](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Introduction.html#//apple_ref/doc/uid/TP40008267).
 
 ## Topics
 
 ### Determining Whether the User Can Make Payments
-- [class func canMakePayments() -> Bool](skpaymentqueue/canmakepayments.md)
+- [class func canMakePayments() -> Bool](./skpaymentqueue/canmakepayments%28%29.md)
   A method that indicates whether the person can make purchases.
 ### Determining Store Content
-- [var storefront: SKStorefront?](skpaymentqueue/storefront.md)
+- [var storefront: SKStorefront?](./skpaymentqueue/storefront.md)
   The App Store storefront of the device.
 ### Getting the Queue
-- [class func `default`() -> Self](skpaymentqueue/default.md)
+- [class func `default`() -> Self](./skpaymentqueue/default%28%29.md)
   Returns the default payment queue instance.
 ### Adding, Getting, and Removing Observers
-- [func add(any SKPaymentTransactionObserver)](skpaymentqueue/add(_:)-5ciz2.md)
+- [func add(any SKPaymentTransactionObserver)](./skpaymentqueue/add%28_%29-5ciz2.md)
   Adds an observer to the payment queue.
-- [var transactionObservers: [any SKPaymentTransactionObserver]](skpaymentqueue/transactionobservers.md)
+- [var transactionObservers: [any SKPaymentTransactionObserver]](./skpaymentqueue/transactionobservers.md)
   An array of all active payment queue observers.
-- [func remove(any SKPaymentTransactionObserver)](skpaymentqueue/remove(_:).md)
+- [func remove(any SKPaymentTransactionObserver)](./skpaymentqueue/remove%28_%29.md)
   Removes an observer from the payment queue.
 ### Managing Transactions
-- [var delegate: (any SKPaymentQueueDelegate)?](skpaymentqueue/delegate.md)
+- [var delegate: (any SKPaymentQueueDelegate)?](./skpaymentqueue/delegate.md)
   A delegate that provides information needed to complete transactions.
-- [var transactions: [SKPaymentTransaction]](skpaymentqueue/transactions.md)
+- [var transactions: [SKPaymentTransaction]](./skpaymentqueue/transactions.md)
   Returns an array of pending transactions.
-- [func add(SKPayment)](skpaymentqueue/add(_:)-4vct1.md)
+- [func add(SKPayment)](./skpaymentqueue/add%28_%29-4vct1.md)
   Adds a payment request to the queue.
-- [func finishTransaction(SKPaymentTransaction)](skpaymentqueue/finishtransaction(_:).md)
+- [func finishTransaction(SKPaymentTransaction)](./skpaymentqueue/finishtransaction%28_%29.md)
   Notifies the App Store that the app finished processing the transaction.
 ### Restoring Purchases
-- [func restoreCompletedTransactions()](skpaymentqueue/restorecompletedtransactions.md)
+- [func restoreCompletedTransactions()](./skpaymentqueue/restorecompletedtransactions%28%29.md)
   Asks the payment queue to restore previously completed purchases.
-- [func restoreCompletedTransactions(withApplicationUsername: String?)](skpaymentqueue/restorecompletedtransactions(withapplicationusername:).md)
+- [func restoreCompletedTransactions(withApplicationUsername: String?)](./skpaymentqueue/restorecompletedtransactions%28withapplicationusername%29.md)
   Asks the payment queue to restore previously completed purchases, providing an opaque identifier for the user’s account.
 ### Showing Price Consent
-- [func showPriceConsentIfNeeded()](skpaymentqueue/showpriceconsentifneeded.md)
+- [func showPriceConsentIfNeeded()](./skpaymentqueue/showpriceconsentifneeded%28%29.md)
   Asks the system to display the price consent sheet if the user hasn’t yet responded to a subscription price increase.
 ### Redeeming Codes
-- [func presentCodeRedemptionSheet()](skpaymentqueue/presentcoderedemptionsheet.md)
+- [func presentCodeRedemptionSheet()](./skpaymentqueue/presentcoderedemptionsheet%28%29.md)
   Displays a sheet that enables customers to redeem offer codes that you configure in App Store Connect.
 ### Downloading Content
-- [func start([SKDownload])](skpaymentqueue/start(_:).md)
+- [func start([SKDownload])](./skpaymentqueue/start%28_%29.md)
   Adds a set of downloads to the download list.
-- [func cancel([SKDownload])](skpaymentqueue/cancel(_:).md)
+- [func cancel([SKDownload])](./skpaymentqueue/cancel%28_%29.md)
   Removes a set of downloads from the download list.
-- [func pause([SKDownload])](skpaymentqueue/pause(_:).md)
+- [func pause([SKDownload])](./skpaymentqueue/pause%28_%29.md)
   Pauses a set of downloads.
-- [func resume([SKDownload])](skpaymentqueue/resume(_:).md)
+- [func resume([SKDownload])](./skpaymentqueue/resume%28_%29.md)
   Resumes a set of downloads.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Setting up the transaction observer for the payment queue](setting-up-the-transaction-observer-for-the-payment-queue.md)
+### Essentials
+- [Setting up the transaction observer for the payment queue](./setting-up-the-transaction-observer-for-the-payment-queue.md)
   Enable your app to receive and handle transactions by adding an observer.
-- [Offering, completing, and restoring Apple In-App Purchases](offering-completing-and-restoring-in-app-purchases.md)
+- [Offering, completing, and restoring Apple In-App Purchases](./offering-completing-and-restoring-in-app-purchases.md)
   Fetch, display, purchase, validate, and finish transactions in your app.
-- [protocol SKPaymentTransactionObserver](skpaymenttransactionobserver.md)
+- [protocol SKPaymentTransactionObserver](./skpaymenttransactionobserver.md)
   A set of methods that process transactions, unlock purchased functionality, and continue promoted Apple In-App Purchases.
-- [protocol SKPaymentQueueDelegate](skpaymentqueuedelegate.md)
+- [protocol SKPaymentQueueDelegate](./skpaymentqueuedelegate.md)
   The protocol that provides information needed to complete transactions.
-- [class SKRequest](skrequest.md)
+- [class SKRequest](./skrequest.md)
   An abstract class that represents a request to the App Store.
 
 

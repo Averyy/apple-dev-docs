@@ -1,7 +1,8 @@
 # cameraTracking
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current state of ARKit camera tracking.
 
@@ -22,15 +23,16 @@ The ARKit coaching overylay will be automatically show if this state moves away 
 
 ## See Also
 
-- [var feedback: Set<ObjectCaptureSession.Feedback>](objectcapturesession/feedback-swift.property.md)
+### Configuring a session
+- [var feedback: Set<ObjectCaptureSession.Feedback>](./feedback-swift.property.md)
   The current set of active `Feedback` states.
-- [ObjectCaptureSession.Feedback](objectcapturesession/feedback-swift.enum.md)
+- [ObjectCaptureSession.Feedback](./feedback-swift.enum.md)
   Provides information about possible problems with the capture session.
-- [var isPaused: Bool](objectcapturesession/ispaused.md)
+- [var isPaused: Bool](./ispaused.md)
   A Boolean value that indicates if the capture session is paused.
-- [var state: ObjectCaptureSession.CaptureState](objectcapturesession/state.md)
+- [var state: ObjectCaptureSession.CaptureState](./state.md)
   The current state of the capture session.
-- [ObjectCaptureSession.Tracking](objectcapturesession/tracking.md)
+- [ObjectCaptureSession.Tracking](./tracking.md)
   A data structure that describes the current tracking state for the camera.
 
 

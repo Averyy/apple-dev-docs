@@ -1,17 +1,22 @@
 # setCriteria(_:andDisplayValues:forRowAt:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the row at a given index to contain the given items and values.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setCriteria(_ criteria: [Any], andDisplayValues values: [Any], forRowAt rowIndex: Int)
+```
+
+```objc
+- (void) setCriteria:(NSArray *) criteria andDisplayValues:(NSArray *) values forRowAtIndex:(NSInteger) rowIndex;
 ```
 
 #### Discussion
@@ -20,17 +25,24 @@ It is your responsibility to ensure that each item in the array is a child of th
 
 ## Parameters
 
-- `criteria`: The array of criteria for the row at `rowIndex`. Pass an empty array to force the receiver to query its delegate. This value must not be `nil`. > ❗ **Important**:  Raises an `NSInvalidArgumentException` if `criteria` is `nil`.
-- `values`: The array of values for the row at `rowIndex`. Pass an empty array to force the receiver to query its delegate. This value must not be `nil`. > ❗ **Important**:  Raises an `NSInvalidArgumentException` if `values` is `nil`.
-- `rowIndex`: The index of a row in the receiver. > ❗ **Important**:  Raises an `NSRangeException` if `rowIndex` is equal to or larger than the number of rows, or less than `0`.
+- `criteria`: The array of criteria for the row at `rowIndex`. Pass an empty array to force the receiver to query its delegate. This value must not be `nil`.
+
+  > ❗ **Important**:  Raises an `NSInvalidArgumentException` if `criteria` is `nil`.
+- `values`: The array of values for the row at `rowIndex`. Pass an empty array to force the receiver to query its delegate. This value must not be `nil`.
+
+  > ❗ **Important**:  Raises an `NSInvalidArgumentException` if `values` is `nil`.
+- `rowIndex`: The index of a row in the receiver.
+
+  > ❗ **Important**:  Raises an `NSRangeException` if `rowIndex` is equal to or larger than the number of rows, or less than `0`.
 
 ## See Also
 
-- [func reloadCriteria()](nsruleeditor/reloadcriteria.md)
+### Providing Data
+- [func reloadCriteria()](./reloadcriteria%28%29.md)
   Instructs the receiver to refetch criteria from its delegate.
-- [func criteria(forRow: Int) -> [Any]](nsruleeditor/criteria(forrow:).md)
+- [func criteria(forRow: Int) -> [Any]](./criteria%28forrow%29.md)
   Returns the currently chosen items for a given row.
-- [func displayValues(forRow: Int) -> [Any]](nsruleeditor/displayvalues(forrow:).md)
+- [func displayValues(forRow: Int) -> [Any]](./displayvalues%28forrow%29.md)
   Returns the chosen values for a given row.
 
 

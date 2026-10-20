@@ -1,7 +1,8 @@
 # advanced(by:)
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -20,7 +21,8 @@ func advanced(by n: DispatchTimeInterval) -> DispatchTime
 
 ## See Also
 
-- [func distance(to: DispatchTime) -> DispatchTimeInterval](dispatchtime/distance(to:).md)
+### Modifying the Value
+- [func distance(to: DispatchTime) -> DispatchTimeInterval](./distance%28to%29.md)
 
 
 ---

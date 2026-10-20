@@ -1,15 +1,16 @@
 # resource
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 11.0+
-- macOS 10.13+
-- tvOS 11.0+
-- visionOS 1.0+
+- iOS 11.0+ - Deprecated in 12.0
+- iPadOS 11.0+ - Deprecated in 12.0
+- Mac Catalyst 11.0+ - Deprecated in 12.0
+- macOS 10.13+ - Deprecated in 10.13.4
+- tvOS 11.0+ - Deprecated in 12.0
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
 
@@ -17,12 +18,17 @@
 var resource: (any MTLResource)? { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly, nullable) id<MTLResource> resource;
+```
+
 ## See Also
 
-- [var isTemporary: Bool](mpsstate/istemporary.md)
-- [var label: String?](mpsstate/label.md)
-- [var readCount: Int](mpsstate/readcount.md)
-- [var resourceCount: Int](mpsstate/resourcecount.md)
+### Instance Properties
+- [var isTemporary: Bool](./istemporary.md)
+- [var label: String?](./label.md)
+- [var readCount: Int](./readcount.md)
+- [var resourceCount: Int](./resourcecount.md)
 
 
 ---

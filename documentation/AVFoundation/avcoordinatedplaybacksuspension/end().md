@@ -1,7 +1,8 @@
 # end()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Ends a suspension.
 
@@ -19,15 +20,20 @@ Ends a suspension.
 func end()
 ```
 
+```objc
+- (void) end;
+```
+
 #### Discussion
 
 If this is the last suspension, the coordinator adjusts the timing of its playback object to match the group.
 
-To end a suspension and simultaneously propose a new playback time to the group, call the [`end(proposingNewTime:)`](avcoordinatedplaybacksuspension/end(proposingnewtime:).md) method.
+To end a suspension and simultaneously propose a new playback time to the group, call the [`end(proposingNewTime:)`](./end%28proposingnewtime%29.md) method.
 
 ## See Also
 
-- [func end(proposingNewTime: CMTime)](avcoordinatedplaybacksuspension/end(proposingnewtime:).md)
+### Ending a suspension
+- [func end(proposingNewTime: CMTime)](./end%28proposingnewtime%29.md)
   Ends a suspension and proposes a new playback time to the group.
 
 

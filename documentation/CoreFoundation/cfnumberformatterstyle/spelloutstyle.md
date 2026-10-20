@@ -1,18 +1,19 @@
 # CFNumberFormatterStyle.spellOutStyle
 
 **Framework**: Core Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies a spelled out format.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,21 +21,26 @@ Specifies a spelled out format.
 case spellOutStyle
 ```
 
+```c
+kCFNumberFormatterSpellOutStyle
+```
+
 ## See Also
 
-- [CFNumberFormatterStyle.currencyAccountingStyle](cfnumberformatterstyle/currencyaccountingstyle.md)
-- [CFNumberFormatterStyle.currencyISOCodeStyle](cfnumberformatterstyle/currencyisocodestyle.md)
-- [CFNumberFormatterStyle.currencyPluralStyle](cfnumberformatterstyle/currencypluralstyle.md)
-- [CFNumberFormatterStyle.currencyStyle](cfnumberformatterstyle/currencystyle.md)
+### Enumeration Cases
+- [CFNumberFormatterStyle.currencyAccountingStyle](./currencyaccountingstyle.md)
+- [CFNumberFormatterStyle.currencyISOCodeStyle](./currencyisocodestyle.md)
+- [CFNumberFormatterStyle.currencyPluralStyle](./currencypluralstyle.md)
+- [CFNumberFormatterStyle.currencyStyle](./currencystyle.md)
   Specifies a currency style format.
-- [CFNumberFormatterStyle.decimalStyle](cfnumberformatterstyle/decimalstyle.md)
+- [CFNumberFormatterStyle.decimalStyle](./decimalstyle.md)
   Specifies a decimal style format.
-- [CFNumberFormatterStyle.noStyle](cfnumberformatterstyle/nostyle.md)
+- [CFNumberFormatterStyle.noStyle](./nostyle.md)
   Specifies no style.
-- [CFNumberFormatterStyle.ordinalStyle](cfnumberformatterstyle/ordinalstyle.md)
-- [CFNumberFormatterStyle.percentStyle](cfnumberformatterstyle/percentstyle.md)
+- [CFNumberFormatterStyle.ordinalStyle](./ordinalstyle.md)
+- [CFNumberFormatterStyle.percentStyle](./percentstyle.md)
   Specifies a percent style format.
-- [CFNumberFormatterStyle.scientificStyle](cfnumberformatterstyle/scientificstyle.md)
+- [CFNumberFormatterStyle.scientificStyle](./scientificstyle.md)
   Specifies a scientific style format.
 
 

@@ -1,9 +1,10 @@
 # LockedCameraCaptureManager.SessionContentUpdate
 
 **Framework**: LockedCameraCapture  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-URLs provided by the [`sessionContentUpdates`](lockedcameracapturemanager/sessioncontentupdates.md) `AsyncSequence`.
+URLs provided by the [`sessionContentUpdates`](./sessioncontentupdates.md) `AsyncSequence`.
 
 **Availability**:
 - iOS 18.0+
@@ -18,18 +19,18 @@ enum SessionContentUpdate
 ## Topics
 
 ### Enumeration Cases
-- [LockedCameraCaptureManager.SessionContentUpdate.added(url:)](lockedcameracapturemanager/sessioncontentupdate/added(url:).md)
+- [LockedCameraCaptureManager.SessionContentUpdate.added(url:)](./sessioncontentupdate/added%28url%29.md)
   A URL to a directory of added session content.
-- [LockedCameraCaptureManager.SessionContentUpdate.initial(urls:)](lockedcameracapturemanager/sessioncontentupdate/initial(urls:).md)
-  URLs to directories of the current session content available when beginning observation of [`sessionContentUpdates`](lockedcameracapturemanager/sessioncontentupdates.md).
-- [LockedCameraCaptureManager.SessionContentUpdate.removed(url:)](lockedcameracapturemanager/sessioncontentupdate/removed(url:).md)
+- [LockedCameraCaptureManager.SessionContentUpdate.initial(urls:)](./sessioncontentupdate/initial%28urls%29.md)
+  URLs to directories of the current session content available when beginning observation of [`sessionContentUpdates`](./sessioncontentupdates.md).
+- [LockedCameraCaptureManager.SessionContentUpdate.removed(url:)](./sessioncontentupdate/removed%28url%29.md)
   A URL to a directory of removed session content.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

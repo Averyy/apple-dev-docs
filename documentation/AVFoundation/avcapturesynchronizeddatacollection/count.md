@@ -1,7 +1,8 @@
 # count
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of synchronized data objects in the collection.
 
@@ -17,11 +18,16 @@ The number of synchronized data objects in the collection.
 var count: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger count;
+```
+
 ## See Also
 
-- [func synchronizedData(for: AVCaptureOutput) -> AVCaptureSynchronizedData?](avcapturesynchronizeddatacollection/synchronizeddata(for:).md)
+### Accessing synchronized data
+- [func synchronizedData(for: AVCaptureOutput) -> AVCaptureSynchronizedData?](./synchronizeddata%28for%29.md)
   Returns synchronized data captured by the specified capture output.
-- [subscript(AVCaptureOutput) -> AVCaptureSynchronizedData?](avcapturesynchronizeddatacollection/subscript(_:).md)
+- [subscript(AVCaptureOutput) -> AVCaptureSynchronizedData?](./subscript%28_%29.md)
   Returns data captured by the specified capture output, using subscript syntax.
 
 

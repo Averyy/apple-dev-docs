@@ -1,7 +1,8 @@
 # Watch Connectivity
 
 **Framework**: Watch Connectivity  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Implement two-way communication between an iOS app and its paired watchOS app.
 
@@ -21,19 +22,19 @@ After initiating a transfer from your app, the system assumes responsibility for
 ## Topics
 
 ### Essentials
-- [class WCSession](wcsession.md)
+- [class WCSession](./wcsession.md)
   The object that initiates communication between a WatchKit extension and its companion iOS app.
-- [protocol WCSessionDelegate](wcsessiondelegate.md)
-  A delegate protocol that defines methods for receiving messages sent by a [`WCSession`](wcsession.md) object.
+- [protocol WCSessionDelegate](./wcsessiondelegate.md)
+  A delegate protocol that defines methods for receiving messages sent by a [`WCSession`](./wcsession.md) object.
 ### Data Objects
-- [class WCSessionFile](wcsessionfile.md)
+- [class WCSessionFile](./wcsessionfile.md)
   Information about a file currently being transferred between an iOS app and WatchKit extension.
-- [class WCSessionFileTransfer](wcsessionfiletransfer.md)
+- [class WCSessionFileTransfer](./wcsessionfiletransfer.md)
   Information about in-progress file transfers.
-- [class WCSessionUserInfoTransfer](wcsessionuserinfotransfer.md)
+- [class WCSessionUserInfoTransfer](./wcsessionuserinfotransfer.md)
   Information about in-progress data transfers.
 ### Sample Code
-- [Transferring data with Watch Connectivity](transferring-data-with-watch-connectivity.md)
+- [Transferring data with Watch Connectivity](./transferring-data-with-watch-connectivity.md)
   Transfer data between a watchOS app and its companion iOS app.
 
 

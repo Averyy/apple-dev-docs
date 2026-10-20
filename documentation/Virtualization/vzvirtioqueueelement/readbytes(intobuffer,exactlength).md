@@ -1,7 +1,8 @@
 # readBytes(intoBuffer:exactLength:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reads the number of bytes you specify from the read buffers into the memory pointed to by the pointer to the buffer you provide.
 
@@ -12,6 +13,10 @@ Reads the number of bytes you specify from the read buffers into the memory poin
 
 ```swift
 func readBytes(intoBuffer buffer: UnsafeMutableRawPointer, exactLength: Int) throws
+```
+
+```objc
+- (BOOL) readBytesIntoBuffer:(void *) buffer exactLength:(NSUInteger) exactLength error:(NSError **) error;
 ```
 
 ## Parameters

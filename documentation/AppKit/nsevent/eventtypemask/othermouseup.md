@@ -1,12 +1,13 @@
 # otherMouseUp
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mask for tertiary mouse-up events.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,29 +15,34 @@ A mask for tertiary mouse-up events.
 static var otherMouseUp: NSEvent.EventTypeMask { get }
 ```
 
+```c
+NSEventMaskOtherMouseUp
+```
+
 ## See Also
 
-- [static var leftMouseDown: NSEvent.EventTypeMask](nsevent/eventtypemask/leftmousedown.md)
+### Getting Mouse-Related Events
+- [static var leftMouseDown: NSEvent.EventTypeMask](./leftmousedown.md)
   A mask for left mouse-down events.
-- [static var leftMouseDragged: NSEvent.EventTypeMask](nsevent/eventtypemask/leftmousedragged.md)
+- [static var leftMouseDragged: NSEvent.EventTypeMask](./leftmousedragged.md)
   A mask for left mouse-dragged events.
-- [static var leftMouseUp: NSEvent.EventTypeMask](nsevent/eventtypemask/leftmouseup.md)
+- [static var leftMouseUp: NSEvent.EventTypeMask](./leftmouseup.md)
   A mask for left mouse-up events.
-- [static var rightMouseDown: NSEvent.EventTypeMask](nsevent/eventtypemask/rightmousedown.md)
+- [static var rightMouseDown: NSEvent.EventTypeMask](./rightmousedown.md)
   A mask for right mouse-down events.
-- [static var rightMouseDragged: NSEvent.EventTypeMask](nsevent/eventtypemask/rightmousedragged.md)
+- [static var rightMouseDragged: NSEvent.EventTypeMask](./rightmousedragged.md)
   A mask for right mouse-dragged events.
-- [static var rightMouseUp: NSEvent.EventTypeMask](nsevent/eventtypemask/rightmouseup.md)
+- [static var rightMouseUp: NSEvent.EventTypeMask](./rightmouseup.md)
   A mask for right mouse-up events.
-- [static var otherMouseDown: NSEvent.EventTypeMask](nsevent/eventtypemask/othermousedown.md)
+- [static var otherMouseDown: NSEvent.EventTypeMask](./othermousedown.md)
   A mask for tertiary mouse-down events.
-- [static var otherMouseDragged: NSEvent.EventTypeMask](nsevent/eventtypemask/othermousedragged.md)
+- [static var otherMouseDragged: NSEvent.EventTypeMask](./othermousedragged.md)
   A mask for tertiary mouse-dragged events.
-- [static var mouseEntered: NSEvent.EventTypeMask](nsevent/eventtypemask/mouseentered.md)
+- [static var mouseEntered: NSEvent.EventTypeMask](./mouseentered.md)
   A mask for mouse-entered events.
-- [static var mouseMoved: NSEvent.EventTypeMask](nsevent/eventtypemask/mousemoved.md)
+- [static var mouseMoved: NSEvent.EventTypeMask](./mousemoved.md)
   A mask for mouse-moved events.
-- [static var mouseExited: NSEvent.EventTypeMask](nsevent/eventtypemask/mouseexited.md)
+- [static var mouseExited: NSEvent.EventTypeMask](./mouseexited.md)
   A mask for mouse-exited events.
 
 

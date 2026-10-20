@@ -1,7 +1,8 @@
 # requestReset()
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A request to reset the device.
 
@@ -14,9 +15,13 @@ A request to reset the device.
 func requestReset()
 ```
 
+```objc
+- (void) requestDeviceReset;
+```
+
 #### Discussion
 
-This method initiates a reset from the host by setting `DEVICE_NEEDS_RESET`, and the guest may or may not take action. The guest could also initiate a reset by itself. In both scenarios, the framework calls[`customVirtioDeviceWillReset(_:)`](vzcustomvirtiodevicedelegate/customvirtiodevicewillreset(_:).md) when the device should reset.
+This method initiates a reset from the host by setting `DEVICE_NEEDS_RESET`, and the guest may or may not take action. The guest could also initiate a reset by itself. In both scenarios, the framework calls[`customVirtioDeviceWillReset(_:)`](../vzcustomvirtiodevicedelegate/customvirtiodevicewillreset%28_%29.md) when the device should reset.
 
 
 ---

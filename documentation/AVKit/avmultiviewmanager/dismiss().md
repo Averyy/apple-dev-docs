@@ -1,7 +1,8 @@
 # dismiss()
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dismisses the multiview presentation.
 

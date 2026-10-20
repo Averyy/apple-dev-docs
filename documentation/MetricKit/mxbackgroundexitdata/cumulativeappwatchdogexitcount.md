@@ -1,21 +1,28 @@
 # cumulativeAppWatchdogExitCount
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of times the system watchdog terminated the app from the background.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- visionOS 1.0+
+- iOS 14.0+ - Deprecated in 27.2
+- iPadOS 14.0+ - Deprecated in 27.2
+- Mac Catalyst 14.0+ - Deprecated in 27.0
+- macOS 11.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`watchdogTerminationCount`](../backgroundterminationmetric/watchdogterminationcount.md) instead.
 
 ## Declaration
 
 ```swift
 var cumulativeAppWatchdogExitCount: Int { get }
+```
+
+```objc
+@property (readonly) NSUInteger cumulativeAppWatchdogExitCount;
 ```
 
 #### Discussion
@@ -28,13 +35,14 @@ The most common reasons the system watchdog terminates an app are taking too lon
 
 ## See Also
 
-- [var cumulativeCPUResourceLimitExitCount: Int](mxbackgroundexitdata/cumulativecpuresourcelimitexitcount.md)
+### Reading the System Termination Count
+- [var cumulativeCPUResourceLimitExitCount: Int](./cumulativecpuresourcelimitexitcount.md)
   The number of times the system terminated the app from the background for using too much CPU time.
-- [var cumulativeMemoryResourceLimitExitCount: Int](mxbackgroundexitdata/cumulativememoryresourcelimitexitcount.md)
+- [var cumulativeMemoryResourceLimitExitCount: Int](./cumulativememoryresourcelimitexitcount.md)
   The number of times the system terminated the app from the background for using too much memory.
-- [var cumulativeMemoryPressureExitCount: Int](mxbackgroundexitdata/cumulativememorypressureexitcount.md)
+- [var cumulativeMemoryPressureExitCount: Int](./cumulativememorypressureexitcount.md)
   The number of times the system terminated the app from the background to free up memory.
-- [var cumulativeSuspendedWithLockedFileExitCount: Int](mxbackgroundexitdata/cumulativesuspendedwithlockedfileexitcount.md)
+- [var cumulativeSuspendedWithLockedFileExitCount: Int](./cumulativesuspendedwithlockedfileexitcount.md)
   The number of times the system terminated the app from the background while being suspended and having file locks.
 
 

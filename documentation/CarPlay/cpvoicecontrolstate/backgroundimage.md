@@ -1,7 +1,8 @@
 # backgroundImage
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A custom background image to be displayed behind the voice control template content.
 
@@ -14,6 +15,10 @@ A custom background image to be displayed behind the voice control template cont
 
 ```swift
 var backgroundImage: UIImage? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) UIImage * backgroundImage;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # topEdgeEffect
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The effect for the top edge of the scroll view.
 
@@ -18,17 +19,22 @@ The effect for the top edge of the scroll view.
 var topEdgeEffect: UIScrollEdgeEffect { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIScrollEdgeEffect * topEdgeEffect;
+```
+
 ## See Also
 
-- [var bottomEdgeEffect: UIScrollEdgeEffect](uiscrollview/bottomedgeeffect.md)
+### Applying edge effects
+- [var bottomEdgeEffect: UIScrollEdgeEffect](./bottomedgeeffect.md)
   The effect for the bottom edge of the scroll view.
-- [var leftEdgeEffect: UIScrollEdgeEffect](uiscrollview/leftedgeeffect.md)
+- [var leftEdgeEffect: UIScrollEdgeEffect](./leftedgeeffect.md)
   The effect for the left edge of the scroll view.
-- [var rightEdgeEffect: UIScrollEdgeEffect](uiscrollview/rightedgeeffect.md)
+- [var rightEdgeEffect: UIScrollEdgeEffect](./rightedgeeffect.md)
   The effect for the right edge of the scroll view.
-- [class UIScrollEdgeEffect](uiscrolledgeeffect.md)
+- [class UIScrollEdgeEffect](../uiscrolledgeeffect.md)
   Properties of the effect on a particular edge of the scroll view.
-- [UIScrollEdgeEffect.Style](uiscrolledgeeffect/style-swift.class.md)
+- [UIScrollEdgeEffect.Style](../uiscrolledgeeffect/style-swift.class.md)
   Styles for a scroll view’s edge effect.
 
 

@@ -1,6 +1,7 @@
 # Downloading and Compiling a Model on the User’s Device
 
-**Framework**: Core ML
+**Framework**: Core ML  
+**Role**: Article
 
 Install Core ML models on the user’s device dynamically at runtime.
 
@@ -12,15 +13,15 @@ Download and compile models within your app as an alternative to bundling with t
 - Determining the right models for the user after installation based on their location, specific interests, and A/B testing
 - Providing model updates over the network
 
-##### Download and Compile the Model in the Background
+##### Download and compile the model in the background
 
-Download the model definition file (ending in `.mlmodel`) onto the user’s device by using [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession), [`CloudKit`](https://developer.apple.com/documentation/cloudkit), or another networking toolkit. Then compile the model definition by calling [`compileModel(at:)`](mlmodel/compilemodel(at:)-6442s.md).
+Download the model definition file (ending in `.mlmodel`) onto the user’s device by using [`URLSession`](../Foundation/urlsession.md), [CloudKit](../CloudKit/CloudKit.md), or another networking toolkit. Then compile the model definition by calling [`compileModel(at:)`](./mlmodel/compilemodel%28at%29-6442s.md).
 
 ```swift
 let compiledModelURL = try MLModel.compileModel(at: modelDescriptionURL)
 ```
 
-This creates a new, compiled model file with the same name as the model description but ending in `.mlmodelc`. Create a new [`MLModel`](mlmodel.md) instance by passing the compiled model [`URL`](https://developer.apple.com/documentation/foundation/url) to its initializer.
+This creates a new, compiled model file with the same name as the model description but ending in `.mlmodelc`. Create a new [`MLModel`](./mlmodel.md) instance by passing the compiled model [`URL`](../Foundation/url.md) to its initializer.
 
 ```swift
 let model = try MLModel(contentsOf: compiledModelURL)
@@ -30,9 +31,9 @@ Model instances you create from model files you’ve downloaded have the same ca
 
 ##### Save Reusable Models to a Permanent Location
 
-[`MLModel`](mlmodel.md) saves models it compiles to a temporary location. If your app can reuse the model later, reduce your resource consumption by saving the compiled model to a permanent location.
+[`MLModel`](./mlmodel.md) saves models it compiles to a temporary location. If your app can reuse the model later, reduce your resource consumption by saving the compiled model to a permanent location.
 
-Build the [`URL`](https://developer.apple.com/documentation/foundation/url) to a permanent location that your app can access in the future, such as Application Support.
+Build the [`URL`](../Foundation/url.md) to a permanent location that your app can access in the future, such as Application Support.
 
 ```swift
 let fileManager = FileManager.default
@@ -40,7 +41,7 @@ let appSupportURL = fileManager.urls(for: .applicationSupportDirectory,
                                      in: .userDomainMask).first!
 ```
 
-Create the [`URL`](https://developer.apple.com/documentation/foundation/url) for the permanent compiled model file.
+Create the [`URL`](../Foundation/url.md) for the permanent compiled model file.
 
 ```swift
 let compiledModelName = compiledModelURL.lastPathComponentlet
@@ -56,11 +57,12 @@ _ = try fileManager.replaceItemAt(permanentURL,
 
 ```
 
-> ❗ **Important**:  You should consider the user’s iCloud Backup size when saving large, compiled Core ML models. You can store models in the app’s container using /tmp and /Library/Caches directories, which contain purgeable data that isn’t backed up. When the models aren’t purgeable, you can exclude them from backup by setting the [`isExcludedFromBackup`](https://developer.apple.com/documentation/foundation/urlresourcevalues/isexcludedfrombackup) resource value to `true`. To learn more about excluding files from iCloud Backup, see [`Optimizing Your App’s Data for iCloud Backup`](https://developer.apple.com/documentation/foundation/optimizing-your-app-s-data-for-icloud-backup).
+> ❗ **Important**:  You should consider the user’s iCloud Backup size when saving large, compiled Core ML models. You can store models in the app’s container using /tmp and /Library/Caches directories, which contain purgeable data that isn’t backed up. When the models aren’t purgeable, you can exclude them from backup by setting the [`isExcludedFromBackup`](../Foundation/urlresourcevalues/isexcludedfrombackup.md) resource value to `true`. To learn more about excluding files from iCloud Backup, see [Optimizing Your App’s Data for iCloud Backup](../Foundation/optimizing-your-app-s-data-for-icloud-backup.md).
 
 ## See Also
 
-- [Model Integration Samples](model-integration-samples.md)
+### App integration
+- [Model Integration Samples](./model-integration-samples.md)
   Integrate tabular, image, and text classifcation models into your app.
 
 

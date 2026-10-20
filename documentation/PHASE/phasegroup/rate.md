@@ -1,7 +1,8 @@
 # rate
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The group’s playback speed.
 
@@ -19,9 +20,14 @@ The group’s playback speed.
 var rate: Double { get set }
 ```
 
+```objc
+@property (nonatomic, assign) double rate;
+```
+
 ## See Also
 
-- [func fadeRate(rate: Double, duration: Double, curveType: PHASECurveType)](phasegroup/faderate(rate:duration:curvetype:).md)
+### Adjusting Playback Speed
+- [func fadeRate(rate: Double, duration: Double, curveType: PHASECurveType)](./faderate%28rate,duration,curvetype%29.md)
   Adjusts the playback speed of the sounds in a group gradually.
 
 

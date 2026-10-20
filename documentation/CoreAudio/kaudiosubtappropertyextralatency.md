@@ -1,11 +1,12 @@
 # kAudioSubTapPropertyExtraLatency
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,10 +14,15 @@
 var kAudioSubTapPropertyExtraLatency: AudioObjectPropertySelector { get }
 ```
 
+```c
+kAudioSubTapPropertyExtraLatency
+```
+
 ## See Also
 
-- [var kAudioSubTapPropertyDriftCompensation: AudioObjectPropertySelector](kaudiosubtappropertydriftcompensation.md)
-- [var kAudioSubTapPropertyDriftCompensationQuality: AudioObjectPropertySelector](kaudiosubtappropertydriftcompensationquality.md)
+### Constants
+- [var kAudioSubTapPropertyDriftCompensation: AudioObjectPropertySelector](./kaudiosubtappropertydriftcompensation.md)
+- [var kAudioSubTapPropertyDriftCompensationQuality: AudioObjectPropertySelector](./kaudiosubtappropertydriftcompensationquality.md)
 
 
 ---

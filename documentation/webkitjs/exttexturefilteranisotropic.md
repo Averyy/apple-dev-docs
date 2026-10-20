@@ -1,7 +1,8 @@
 # EXTTextureFilterAnisotropic
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,15 +10,15 @@
 
 ## Declaration
 
-```swift
+```
 interface EXTTextureFilterAnisotropic
 ```
 
 ## Topics
 
 ### Miscellaneous
-- [MAX_TEXTURE_MAX_ANISOTROPY_EXT](exttexturefilteranisotropic/1632294-max_texture_max_anisotropy_ext.md)
-- [TEXTURE_MAX_ANISOTROPY_EXT](exttexturefilteranisotropic/1633682-texture_max_anisotropy_ext.md)
+- [MAX_TEXTURE_MAX_ANISOTROPY_EXT](./exttexturefilteranisotropic/api-1632294-max_texture_max_anisotropy_ext.md)
+- [TEXTURE_MAX_ANISOTROPY_EXT](./exttexturefilteranisotropic/api-1633682-texture_max_anisotropy_ext.md)
 
 
 ---

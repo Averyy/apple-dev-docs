@@ -1,7 +1,8 @@
 # MPShuffleType.off
 
 **Framework**: Media Player  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Nothing is shuffled during playback.
 
@@ -10,7 +11,7 @@ Nothing is shuffled during playback.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.12.2+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 5.0+
 
@@ -20,11 +21,16 @@ Nothing is shuffled during playback.
 case off
 ```
 
+```c
+MPShuffleTypeOff
+```
+
 ## See Also
 
-- [MPShuffleType.items](mpshuffletype/items.md)
+### Shuffle types
+- [MPShuffleType.items](./items.md)
   Individual items are shuffled during playback.
-- [MPShuffleType.collections](mpshuffletype/collections.md)
+- [MPShuffleType.collections](./collections.md)
   Collections of items are shuffled during playback.
 
 

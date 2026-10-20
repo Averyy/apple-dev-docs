@@ -1,7 +1,8 @@
 # other
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The value that indicates a customer canceled the transaction for other reasons.
 
@@ -26,7 +27,8 @@ Other reasons may include, for example, an accidental purchase.
 
 ## See Also
 
-- [static let developerIssue: Transaction.RevocationReason](transaction/revocationreason-swift.struct/developerissue.md)
+### Revocation reasons
+- [static let developerIssue: Transaction.RevocationReason](./developerissue.md)
   The value that indicates a customer canceled the transaction due to an actual or perceived issue within your app.
 
 

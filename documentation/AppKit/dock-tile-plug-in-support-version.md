@@ -1,6 +1,7 @@
 # Dock Tile Plug-In Support Version
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 The version of the AppKit framework containing support for dock tile plug-ins.
 

@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The minimal texture usage options that your app’s reactive mask texture needs in order to support this scaler.
@@ -17,6 +18,10 @@ The minimal texture usage options that your app’s reactive mask texture needs 
 
 ```swift
 var reactiveMaskTextureUsage: MTLTextureUsage { get }
+```
+
+```objc
+@property (nonatomic, readonly) MTLTextureUsage reactiveMaskTextureUsage;
 ```
 
 

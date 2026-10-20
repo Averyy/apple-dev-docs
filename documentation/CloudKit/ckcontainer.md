@@ -1,7 +1,8 @@
 # CKContainer
 
 **Framework**: CloudKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A conduit to your app’s databases.
 
@@ -10,7 +11,7 @@ A conduit to your app’s databases.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,10 +21,14 @@ A conduit to your app’s databases.
 class CKContainer
 ```
 
+```objc
+@interface CKContainer : NSObject
+```
+
 ## Mentions
 
-- [Designing and Creating a CloudKit Database](designing-and-creating-a-cloudkit-database.md)
-- [Identifying an App’s Containers](identifying-an-app-s-containers.md)
+- [Designing and Creating a CloudKit Database](./designing-and-creating-a-cloudkit-database.md)
+- [Identifying an App’s Containers](./identifying-an-app-s-containers.md)
 
 #### Overview
 
@@ -31,7 +36,7 @@ A container manages all explicit and implicit attempts to access its contents.
 
 Every app has a default container that manages its own content. If you develop a suite of apps, you can access any containers that you have the appropriate entitlements for. Each new container distinguishes between public and private data. CloudKit always stores private data in the appropriate container directory in the user’s iCloud account.
 
-> **Note**: `CKContainer` instances operate with a [`QualityOfService.userInitiated`](https://developer.apple.com/documentation/foundation/qualityofservice/userinitiated) quality of service level by default. For information about quality of service, see [`Prioritize Work with Quality of Service Classes`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/PrioritizeWorkWithQoS.html#//apple_ref/doc/uid/TP40015243-CH39) in [`Energy Efficiency Guide for iOS Apps`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/index.html#//apple_ref/doc/uid/TP40015243) and [`Prioritize Work at the Task Level`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/PrioritizeWorkAtTheTaskLevel.html#//apple_ref/doc/uid/TP40013929-CH35) in [`Energy Efficiency Guide for Mac Apps`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/index.html#//apple_ref/doc/uid/TP40013929).
+> **Note**: `CKContainer` instances operate with a [`QualityOfService.userInitiated`](../Foundation/qualityofservice/userinitiated.md) quality of service level by default. For information about quality of service, see [Prioritize Work with Quality of Service Classes](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/PrioritizeWorkWithQoS.html#//apple_ref/doc/uid/TP40015243-CH39) in [Energy Efficiency Guide for iOS Apps](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/index.html#//apple_ref/doc/uid/TP40015243) and [Prioritize Work at the Task Level](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/PrioritizeWorkAtTheTaskLevel.html#//apple_ref/doc/uid/TP40013929-CH35) in [Energy Efficiency Guide for Mac Apps](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/index.html#//apple_ref/doc/uid/TP40013929).
 
 ##### Interacting with a Container
 
@@ -49,15 +54,15 @@ The public database is always available, regardless of whether the device has an
 
 > **Note**: The data in a public database counts toward the iCloud storage quota of the app that owns the container. That data doesn’t count toward the storage quota of any single user. Data in the private database counts toward the user’s iCloud storage quota.
 
-##### Using Icloud
+##### Using iCloud
 
-Whenever possible, design your app to run gracefully with or without an active iCloud account. Even without an active iCloud account, apps can fetch records from the public database and display that information to the user. If your app requires the ability to write to the public database or requires access to the private database, notify the user of the reason and encourage them to enable iCloud. You can even provide a button that takes the user directly to Settings so that they can enable iCloud. To implement such a button, have the button’s action open the URL that the [`openSettingsURLString`](https://developer.apple.com/documentation/uikit/uiapplication/opensettingsurlstring) constant provides.
+Whenever possible, design your app to run gracefully with or without an active iCloud account. Even without an active iCloud account, apps can fetch records from the public database and display that information to the user. If your app requires the ability to write to the public database or requires access to the private database, notify the user of the reason and encourage them to enable iCloud. You can even provide a button that takes the user directly to Settings so that they can enable iCloud. To implement such a button, have the button’s action open the URL that the [`openSettingsURLString`](../UIKit/uiapplication/opensettingsurlstring.md) constant provides.
 
 ##### User Records and Permissions
 
 When a user accesses a container for the first time, CloudKit assigns them a unique identifier and uses it to create two user records — one in the app’s public database and another in that user’s private database. By default, these records don’t contain any identifying personal information, but you can use the record in the user’s private database to store additional, nonsensitive information about that user. Because the public database’s user record is accessible to all users of your app, don’t use it to store information about the user.
 
-While a user record isn’t the same as the user’s [`CKUserIdentity`](ckuseridentity.md), the identity does provide the identifier of their user record that you can use to fetch that record from either the public database or the user’s private database. For more information, see [`userRecordID`](ckuseridentity/userrecordid.md).
+While a user record isn’t the same as the user’s [`CKUserIdentity`](./ckuseridentity.md), the identity does provide the identifier of their user record that you can use to fetch that record from either the public database or the user’s private database. For more information, see [`userRecordID`](./ckuseridentity/userrecordid.md).
 
 ##### Testing Your Code Using the Development Container
 
@@ -70,159 +75,160 @@ Before shipping your app, always test your app’s behavior in the production en
 ## Topics
 
 ### Creating Containers
-- [class func `default`() -> CKContainer](ckcontainer/default.md)
+- [class func `default`() -> CKContainer](./ckcontainer/default%28%29.md)
   Returns the app’s default container.
-- [init(identifier: String)](ckcontainer/init(identifier:).md)
+- [init(identifier: String)](./ckcontainer/init%28identifier%29.md)
   Creates a container for the specified identifier.
 ### Getting the Public and Private Databases
-- [var privateCloudDatabase: CKDatabase](ckcontainer/privateclouddatabase.md)
+- [var privateCloudDatabase: CKDatabase](./ckcontainer/privateclouddatabase.md)
   The user’s private database.
-- [var publicCloudDatabase: CKDatabase](ckcontainer/publicclouddatabase.md)
+- [var publicCloudDatabase: CKDatabase](./ckcontainer/publicclouddatabase.md)
   The app’s public database.
-- [var sharedCloudDatabase: CKDatabase](ckcontainer/sharedclouddatabase.md)
+- [var sharedCloudDatabase: CKDatabase](./ckcontainer/sharedclouddatabase.md)
   The database that contains shared data.
-- [func database(with: CKDatabase.Scope) -> CKDatabase](ckcontainer/database(with:).md)
+- [func database(with: CKDatabase.Scope) -> CKDatabase](./ckcontainer/database%28with%29.md)
   Returns the database with the specified scope.
 ### Getting the Container’s Identifier
-- [var containerIdentifier: String?](ckcontainer/containeridentifier.md)
+- [var containerIdentifier: String?](./ckcontainer/containeridentifier.md)
   The container’s unique identifier.
 ### Determining the User’s iCloud Access Status
-- [func accountStatus(completionHandler: (CKAccountStatus, (any Error)?) -> Void)](ckcontainer/accountstatus(completionhandler:).md)
+- [func accountStatus(completionHandler: (CKAccountStatus, (any Error)?) -> Void)](./ckcontainer/accountstatus%28completionhandler%29.md)
   Determines whether the system can access the user’s iCloud account.
-- [enum CKAccountStatus](ckaccountstatus.md)
+- [enum CKAccountStatus](./ckaccountstatus.md)
   Constants that indicate the availability of the user’s iCloud account.
 ### Requesting and Determining App Permissions
-- [func requestApplicationPermission(CKContainer.ApplicationPermissions, completionHandler: (CKContainer.ApplicationPermissionStatus, (any Error)?) -> Void)](ckcontainer/requestapplicationpermission(_:completionhandler:).md)
+- [func requestApplicationPermission(CKContainer.ApplicationPermissions, completionHandler: (CKContainer.ApplicationPermissionStatus, (any Error)?) -> Void)](./ckcontainer/requestapplicationpermission%28_,completionhandler%29.md)
   Prompts the user to authorize the specified permission.
-- [func status(forApplicationPermission: CKContainer.ApplicationPermissions, completionHandler: (CKContainer.ApplicationPermissionStatus, (any Error)?) -> Void)](ckcontainer/status(forapplicationpermission:completionhandler:).md)
+- [func status(forApplicationPermission: CKContainer.ApplicationPermissions, completionHandler: (CKContainer.ApplicationPermissionStatus, (any Error)?) -> Void)](./ckcontainer/status%28forapplicationpermission,completionhandler%29.md)
   Determines the authorization status of the specified permission.
-- [CKContainer.Application](ckcontainer/application.md)
+- [CKContainer.Application](./ckcontainer/application.md)
   A collection of types for app permissions.
-- [CKContainer.ApplicationPermissions](ckcontainer/applicationpermissions.md)
+- [CKContainer.ApplicationPermissions](./ckcontainer/applicationpermissions.md)
   Constants that represent the permissions that a user grants.
-- [CKContainer.ApplicationPermissionBlock](ckcontainer/applicationpermissionblock.md)
+- [CKContainer.ApplicationPermissionBlock](./ckcontainer/applicationpermissionblock.md)
   A closure that processes the outcome of a permissions request.
-- [CKContainer.ApplicationPermissionStatus](ckcontainer/applicationpermissionstatus.md)
+- [CKContainer.ApplicationPermissionStatus](./ckcontainer/applicationpermissionstatus.md)
   Constants that represent the status of a permission.
 ### Performing Operations on the Container
-- [func add(CKOperation)](ckcontainer/add(_:).md)
+- [func add(CKOperation)](./ckcontainer/add%28_%29.md)
   Adds an operation to the container’s queue.
 ### Discovering User Records
-- [func discoverAllIdentities(completionHandler: ([CKUserIdentity]?, (any Error)?) -> Void)](ckcontainer/discoverallidentities(completionhandler:).md)
+- [func discoverAllIdentities(completionHandler: ([CKUserIdentity]?, (any Error)?) -> Void)](./ckcontainer/discoverallidentities%28completionhandler%29.md)
   Fetches all user identities that match entries in the user’s Contacts.
-- [func discoverUserIdentity(withEmailAddress: String, completionHandler: (CKUserIdentity?, (any Error)?) -> Void)](ckcontainer/discoveruseridentity(withemailaddress:completionhandler:).md)
+- [func discoverUserIdentity(withEmailAddress: String, completionHandler: (CKUserIdentity?, (any Error)?) -> Void)](./ckcontainer/discoveruseridentity%28withemailaddress,completionhandler%29.md)
   Fetches the user identity for the specified email address.
-- [func discoverUserIdentity(withPhoneNumber: String, completionHandler: (CKUserIdentity?, (any Error)?) -> Void)](ckcontainer/discoveruseridentity(withphonenumber:completionhandler:).md)
+- [func discoverUserIdentity(withPhoneNumber: String, completionHandler: (CKUserIdentity?, (any Error)?) -> Void)](./ckcontainer/discoveruseridentity%28withphonenumber,completionhandler%29.md)
   Fetches the user identity for the specified phone number.
-- [func discoverUserIdentity(withUserRecordID: CKRecord.ID, completionHandler: (CKUserIdentity?, (any Error)?) -> Void)](ckcontainer/discoveruseridentity(withuserrecordid:completionhandler:).md)
+- [func discoverUserIdentity(withUserRecordID: CKRecord.ID, completionHandler: (CKUserIdentity?, (any Error)?) -> Void)](./ckcontainer/discoveruseridentity%28withuserrecordid,completionhandler%29.md)
   Fetches the user identity for the specified user record ID.
-- [func fetchShareParticipant(withEmailAddress: String, completionHandler: (CKShare.Participant?, (any Error)?) -> Void)](ckcontainer/fetchshareparticipant(withemailaddress:completionhandler:).md)
+- [func fetchShareParticipant(withEmailAddress: String, completionHandler: (CKShare.Participant?, (any Error)?) -> Void)](./ckcontainer/fetchshareparticipant%28withemailaddress,completionhandler%29.md)
   Fetches the share participant with the specified email address.
-- [func fetchShareParticipant(withPhoneNumber: String, completionHandler: (CKShare.Participant?, (any Error)?) -> Void)](ckcontainer/fetchshareparticipant(withphonenumber:completionhandler:).md)
+- [func fetchShareParticipant(withPhoneNumber: String, completionHandler: (CKShare.Participant?, (any Error)?) -> Void)](./ckcontainer/fetchshareparticipant%28withphonenumber,completionhandler%29.md)
   Fetches the share participant with the specified phone number.
-- [func fetchShareParticipant(withUserRecordID: CKRecord.ID, completionHandler: (CKShare.Participant?, (any Error)?) -> Void)](ckcontainer/fetchshareparticipant(withuserrecordid:completionhandler:).md)
+- [func fetchShareParticipant(withUserRecordID: CKRecord.ID, completionHandler: (CKShare.Participant?, (any Error)?) -> Void)](./ckcontainer/fetchshareparticipant%28withuserrecordid,completionhandler%29.md)
   Fetches the share participant with the specified user record ID.
-- [func fetchUserRecordID(completionHandler: (CKRecord.ID?, (any Error)?) -> Void)](ckcontainer/fetchuserrecordid(completionhandler:).md)
+- [func fetchUserRecordID(completionHandler: (CKRecord.ID?, (any Error)?) -> Void)](./ckcontainer/fetchuserrecordid%28completionhandler%29.md)
   Fetches the user record ID of the current user.
-- [let CKCurrentUserDefaultName: String](ckcurrentuserdefaultname.md)
+- [let CKCurrentUserDefaultName: String](./ckcurrentuserdefaultname.md)
   A constant that provides the current user’s default name.
-- [let CKOwnerDefaultName: String](ckownerdefaultname.md)
+- [let CKOwnerDefaultName: String](./ckownerdefaultname.md)
   A constant that provides the default owner’s name.
 ### Fetching Long-Lived Operations
-- [func fetchAllLongLivedOperationIDs(completionHandler: ([CKOperation.ID]?, (any Error)?) -> Void)](ckcontainer/fetchalllonglivedoperationids(completionhandler:).md)
+- [func fetchAllLongLivedOperationIDs(completionHandler: ([CKOperation.ID]?, (any Error)?) -> Void)](./ckcontainer/fetchalllonglivedoperationids%28completionhandler%29.md)
   Fetches the IDs of any long-lived operations that are running.
-- [func fetchLongLivedOperation(withID: CKOperation.ID, completionHandler: (CKOperation?, (any Error)?) -> Void)](ckcontainer/fetchlonglivedoperation(withid:completionhandler:).md)
+- [func fetchLongLivedOperation(withID: CKOperation.ID, completionHandler: (CKOperation?, (any Error)?) -> Void)](./ckcontainer/fetchlonglivedoperation%28withid,completionhandler%29.md)
   Fetches the long-lived operation for the specified operation ID.
 ### Accessing Container Metadata
-- [func fetchShareMetadata(with: URL, completionHandler: (CKShare.Metadata?, (any Error)?) -> Void)](ckcontainer/fetchsharemetadata(with:completionhandler:).md)
+- [func fetchShareMetadata(with: URL, completionHandler: (CKShare.Metadata?, (any Error)?) -> Void)](./ckcontainer/fetchsharemetadata%28with,completionhandler%29.md)
   Fetches the share metadata for the specified share URL.
-- [func accept(CKShare.Metadata, completionHandler: (CKShare?, (any Error)?) -> Void)](ckcontainer/accept(_:completionhandler:)-949ea.md)
+- [func accept(CKShare.Metadata, completionHandler: (CKShare?, (any Error)?) -> Void)](./ckcontainer/accept%28_,completionhandler%29-949ea.md)
   Accepts the specified share metadata.
-- [static let CKAccountChanged: NSNotification.Name](../foundation/nsnotification/name-swift.struct/ckaccountchanged.md)
+- [static let CKAccountChanged: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/ckaccountchanged.md)
   A notification that a container posts when the status of an iCloud account changes.
 ### Instance Methods
-- [func accept(CKShare.Metadata) async throws -> CKShare](ckcontainer/accept(_:)-5vv8p.md)
+- [func accept(CKShare.Metadata) async throws -> CKShare](./ckcontainer/accept%28_%29-5vv8p.md)
   Accepts the specified share metadata and returns the accepted share to an awaiting caller.
-- [func accept([CKShare.Metadata]) async throws -> [CKShare.Metadata : Result<CKShare, any Error>]](ckcontainer/accept(_:)-t0ny.md)
+- [func accept([CKShare.Metadata]) async throws -> [CKShare.Metadata : Result<CKShare, any Error>]](./ckcontainer/accept%28_%29-t0ny.md)
   Accepts the specified share metadatas and returns the accepted shares to an awaiting caller.
-- [func accept([CKShare.Metadata], completionHandler: (Result<[CKShare.Metadata : Result<CKShare, any Error>], any Error>) -> Void)](ckcontainer/accept(_:completionhandler:)-7s3t7.md)
+- [func accept([CKShare.Metadata], completionHandler: (Result<[CKShare.Metadata : Result<CKShare, any Error>], any Error>) -> Void)](./ckcontainer/accept%28_,completionhandler%29-7s3t7.md)
   Accepts the specified share metadatas.
-- [func allLongLivedOperationIDs() async throws -> [CKOperation.ID]](ckcontainer/alllonglivedoperationids.md)
+- [func allLongLivedOperationIDs() async throws -> [CKOperation.ID]](./ckcontainer/alllonglivedoperationids%28%29.md)
   Fetches the IDs of any long-lived operations that are running and returns them to an awaiting caller.
-- [func allUserIdentitiesFromContacts() async throws -> [CKUserIdentity]](ckcontainer/alluseridentitiesfromcontacts.md)
+- [func allUserIdentitiesFromContacts() async throws -> [CKUserIdentity]](./ckcontainer/alluseridentitiesfromcontacts%28%29.md)
   Fetches all user identities that match entries in the user’s Contacts.
-- [func configuredWith<R>(configuration: CKOperation.Configuration?, group: CKOperationGroup?, body: (CKContainer) throws -> R) rethrows -> R](ckcontainer/configuredwith(configuration:group:body:)-40x6k.md)
+- [func configuredWith<R>(configuration: CKOperation.Configuration?, group: CKOperationGroup?, body: (CKContainer) throws -> R) rethrows -> R](./ckcontainer/configuredwith%28configuration,group,body%29-40x6k.md)
   Applies a temporary configuration to the container within the scope of a closure.
-- [func configuredWith<R>(configuration: CKOperation.Configuration?, group: CKOperationGroup?, body: (CKContainer) async throws -> R) async rethrows -> R](ckcontainer/configuredwith(configuration:group:body:)-4kc2l.md)
+- [func configuredWith<R>(configuration: CKOperation.Configuration?, group: CKOperationGroup?, body: (CKContainer) async throws -> R) async rethrows -> R](./ckcontainer/configuredwith%28configuration,group,body%29-4kc2l.md)
   Applies a temporary configuration to the container within the scope of a closure that supports concurrency.
-- [func discoverUserIdentities(forEmailAddresses: [String], completionHandler: (Result<[String : CKUserIdentity], any Error>) -> Void)](ckcontainer/discoveruseridentities(foremailaddresses:completionhandler:).md)
+- [func discoverUserIdentities(forEmailAddresses: [String], completionHandler: (Result<[String : CKUserIdentity], any Error>) -> Void)](./ckcontainer/discoveruseridentities%28foremailaddresses,completionhandler%29.md)
   Fetches the user identities for the specified email addresses.
-- [func discoverUserIdentities(forPhoneNumbers: [String], completionHandler: (Result<[String : CKUserIdentity], any Error>) -> Void)](ckcontainer/discoveruseridentities(forphonenumbers:completionhandler:).md)
+- [func discoverUserIdentities(forPhoneNumbers: [String], completionHandler: (Result<[String : CKUserIdentity], any Error>) -> Void)](./ckcontainer/discoveruseridentities%28forphonenumbers,completionhandler%29.md)
   Fetches the user identities for the specified phone numbers.
-- [func discoverUserIdentities(forUserRecordIDs: [CKRecord.ID], completionHandler: (Result<[CKRecord.ID : CKUserIdentity], any Error>) -> Void)](ckcontainer/discoveruseridentities(foruserrecordids:completionhandler:).md)
+- [func discoverUserIdentities(forUserRecordIDs: [CKRecord.ID], completionHandler: (Result<[CKRecord.ID : CKUserIdentity], any Error>) -> Void)](./ckcontainer/discoveruseridentities%28foruserrecordids,completionhandler%29.md)
   Fetches the user identities for the specified user record IDs.
-- [func fetchShareMetadatas(for: [URL], completionHandler: (Result<[URL : Result<CKShare.Metadata, any Error>], any Error>) -> Void)](ckcontainer/fetchsharemetadatas(for:completionhandler:).md)
+- [func fetchShareMetadatas(for: [URL], completionHandler: (Result<[URL : Result<CKShare.Metadata, any Error>], any Error>) -> Void)](./ckcontainer/fetchsharemetadatas%28for,completionhandler%29.md)
   Fetches share metadatas for the specified share URLs.
-- [func fetchShareParticipants(forEmailAddresses: [String], completionHandler: (Result<[String : Result<CKShare.Participant, any Error>], any Error>) -> Void)](ckcontainer/fetchshareparticipants(foremailaddresses:completionhandler:).md)
+- [func fetchShareParticipants(forEmailAddresses: [String], completionHandler: (Result<[String : Result<CKShare.Participant, any Error>], any Error>) -> Void)](./ckcontainer/fetchshareparticipants%28foremailaddresses,completionhandler%29.md)
   Fetches share participants with the specified email addresses.
-- [func fetchShareParticipants(forPhoneNumbers: [String], completionHandler: (Result<[String : Result<CKShare.Participant, any Error>], any Error>) -> Void)](ckcontainer/fetchshareparticipants(forphonenumbers:completionhandler:).md)
+- [func fetchShareParticipants(forPhoneNumbers: [String], completionHandler: (Result<[String : Result<CKShare.Participant, any Error>], any Error>) -> Void)](./ckcontainer/fetchshareparticipants%28forphonenumbers,completionhandler%29.md)
   Fetches share participants with the specified phone numbers.
-- [func fetchShareParticipants(forUserRecordIDs: [CKRecord.ID], completionHandler: (Result<[CKRecord.ID : Result<CKShare.Participant, any Error>], any Error>) -> Void)](ckcontainer/fetchshareparticipants(foruserrecordids:completionhandler:).md)
+- [func fetchShareParticipants(forUserRecordIDs: [CKRecord.ID], completionHandler: (Result<[CKRecord.ID : Result<CKShare.Participant, any Error>], any Error>) -> Void)](./ckcontainer/fetchshareparticipants%28foruserrecordids,completionhandler%29.md)
   Fetches share participants with the specified user record IDs.
-- [func longLivedOperation(for: CKOperation.ID) async throws -> CKOperation?](ckcontainer/longlivedoperation(for:).md)
+- [func longLivedOperation(for: CKOperation.ID) async throws -> CKOperation?](./ckcontainer/longlivedoperation%28for%29.md)
   Fetches the long-lived operation for the specified operation ID and returns it to an awaiting caller.
-- [func requestShareAccess(for: [URL]) async throws -> [URL : Result<Void, any Error>]](ckcontainer/requestshareaccess(for:).md)
+- [func requestShareAccess(for: [URL]) async throws -> [URL : Result<Void, any Error>]](./ckcontainer/requestshareaccess%28for%29.md)
   Requests access to the specified share URLs, and returns the results to an awaiting caller.
-- [func shareMetadata(for: URL) async throws -> CKShare.Metadata](ckcontainer/sharemetadata(for:).md)
+- [func shareMetadata(for: URL) async throws -> CKShare.Metadata](./ckcontainer/sharemetadata%28for%29.md)
   Fetches the share metadata for the specified share URL.
-- [func shareMetadatas(for: [URL]) async throws -> [URL : Result<CKShare.Metadata, any Error>]](ckcontainer/sharemetadatas(for:).md)
+- [func shareMetadatas(for: [URL]) async throws -> [URL : Result<CKShare.Metadata, any Error>]](./ckcontainer/sharemetadatas%28for%29.md)
   Fetches share metadatas for the specified share URLs and returns them to an awaiting caller.
-- [func shareParticipant(forEmailAddress: String) async throws -> CKShare.Participant](ckcontainer/shareparticipant(foremailaddress:).md)
+- [func shareParticipant(forEmailAddress: String) async throws -> CKShare.Participant](./ckcontainer/shareparticipant%28foremailaddress%29.md)
   Fetches the share participant with the specified email address.
-- [func shareParticipant(forPhoneNumber: String) async throws -> CKShare.Participant](ckcontainer/shareparticipant(forphonenumber:).md)
+- [func shareParticipant(forPhoneNumber: String) async throws -> CKShare.Participant](./ckcontainer/shareparticipant%28forphonenumber%29.md)
   Fetches the share participant with the specified phone number.
-- [func shareParticipant(forUserRecordID: CKRecord.ID) async throws -> CKShare.Participant](ckcontainer/shareparticipant(foruserrecordid:).md)
+- [func shareParticipant(forUserRecordID: CKRecord.ID) async throws -> CKShare.Participant](./ckcontainer/shareparticipant%28foruserrecordid%29.md)
   Fetches the share participant with the specified user record ID.
-- [func shareParticipants(for: [CKUserIdentity.LookupInfo]) async throws -> [CKUserIdentity.LookupInfo : Result<CKShare.Participant, any Error>]](ckcontainer/shareparticipants(for:).md)
+- [func shareParticipants(for: [CKUserIdentity.LookupInfo]) async throws -> [CKUserIdentity.LookupInfo : Result<CKShare.Participant, any Error>]](./ckcontainer/shareparticipants%28for%29.md)
   Fetches share participants with the specified lookup infos and returns them to an awaiting caller.
-- [func shareParticipants(forEmailAddresses: [String]) async throws -> [String : Result<CKShare.Participant, any Error>]](ckcontainer/shareparticipants(foremailaddresses:).md)
+- [func shareParticipants(forEmailAddresses: [String]) async throws -> [String : Result<CKShare.Participant, any Error>]](./ckcontainer/shareparticipants%28foremailaddresses%29.md)
   Fetches share participants with the specified email addresses and returns them to an awaiting caller.
-- [func shareParticipants(forPhoneNumbers: [String]) async throws -> [String : Result<CKShare.Participant, any Error>]](ckcontainer/shareparticipants(forphonenumbers:).md)
+- [func shareParticipants(forPhoneNumbers: [String]) async throws -> [String : Result<CKShare.Participant, any Error>]](./ckcontainer/shareparticipants%28forphonenumbers%29.md)
   Fetches share participants with the specified phone numbers and returns them to an awaiting caller.
-- [func shareParticipants(forUserRecordIDs: [CKRecord.ID]) async throws -> [CKRecord.ID : Result<CKShare.Participant, any Error>]](ckcontainer/shareparticipants(foruserrecordids:).md)
+- [func shareParticipants(forUserRecordIDs: [CKRecord.ID]) async throws -> [CKRecord.ID : Result<CKShare.Participant, any Error>]](./ckcontainer/shareparticipants%28foruserrecordids%29.md)
   Fetches share participants with the specified user record IDs and returns them to an awaiting caller.
-- [func userIdentities(forEmailAddresses: [String]) async throws -> [String : CKUserIdentity]](ckcontainer/useridentities(foremailaddresses:).md)
+- [func userIdentities(forEmailAddresses: [String]) async throws -> [String : CKUserIdentity]](./ckcontainer/useridentities%28foremailaddresses%29.md)
   Fetches the user identities for the specified email addresses and returns them to an awaiting caller.
-- [func userIdentities(forPhoneNumbers: [String]) async throws -> [String : CKUserIdentity]](ckcontainer/useridentities(forphonenumbers:).md)
+- [func userIdentities(forPhoneNumbers: [String]) async throws -> [String : CKUserIdentity]](./ckcontainer/useridentities%28forphonenumbers%29.md)
   Fetches the user identities for the specified phone numbers and returns them to an awaiting caller.
-- [func userIdentities(forUserRecordIDs: [CKRecord.ID]) async throws -> [CKRecord.ID : CKUserIdentity]](ckcontainer/useridentities(foruserrecordids:).md)
+- [func userIdentities(forUserRecordIDs: [CKRecord.ID]) async throws -> [CKRecord.ID : CKUserIdentity]](./ckcontainer/useridentities%28foruserrecordids%29.md)
   Fetches the user identities for the specified user record IDs and returns them to an awaiting caller.
-- [func userIdentity(forEmailAddress: String) async throws -> CKUserIdentity?](ckcontainer/useridentity(foremailaddress:).md)
+- [func userIdentity(forEmailAddress: String) async throws -> CKUserIdentity?](./ckcontainer/useridentity%28foremailaddress%29.md)
   Fetches the user identity for the specified email address.
-- [func userIdentity(forPhoneNumber: String) async throws -> CKUserIdentity?](ckcontainer/useridentity(forphonenumber:).md)
+- [func userIdentity(forPhoneNumber: String) async throws -> CKUserIdentity?](./ckcontainer/useridentity%28forphonenumber%29.md)
   Fetches the user identity for the specified phone number.
-- [func userIdentity(forUserRecordID: CKRecord.ID) async throws -> CKUserIdentity?](ckcontainer/useridentity(foruserrecordid:).md)
+- [func userIdentity(forUserRecordID: CKRecord.ID) async throws -> CKUserIdentity?](./ckcontainer/useridentity%28foruserrecordid%29.md)
   Fetches the user identity for the specified user record ID.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CKDatabase](ckdatabase.md)
+### Core objects
+- [class CKDatabase](./ckdatabase.md)
   An object that represents a collection of record zones and subscriptions.
-- [class CKOperationGroup](ckoperationgroup.md)
+- [class CKOperationGroup](./ckoperationgroup.md)
   An explicit association between two or more operations.
 
 

@@ -1,7 +1,8 @@
 # SHManagedSession.State.prerecording
 
 **Framework**: ShazamKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session has the resources it needs for matching and is prerecording.
 
@@ -22,9 +23,10 @@ case prerecording
 
 ## See Also
 
-- [SHManagedSession.State.idle](shmanagedsession/state-swift.enum/idle.md)
+### Getting session states
+- [SHManagedSession.State.idle](./idle.md)
   The session isn’t recording or making a match attempt.
-- [SHManagedSession.State.matching](shmanagedsession/state-swift.enum/matching.md)
+- [SHManagedSession.State.matching](./matching.md)
   The session is recording and making at least one match attempt.
 
 

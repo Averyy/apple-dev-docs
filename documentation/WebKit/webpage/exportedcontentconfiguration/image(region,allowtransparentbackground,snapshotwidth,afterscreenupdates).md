@@ -1,7 +1,8 @@
 # image(region:allowTransparentBackground:snapshotWidth:afterScreenUpdates:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A configuration of a webpage for a representation as image data.
 
@@ -26,14 +27,19 @@ The image configuration of this page that will be used when producing its repres
 
 - `region`: The region of the page used to generate the image.
 - `allowTransparentBackground`: Indicates whether the image may have a transparent background.
-- `snapshotWidth`: The width of the captured image, in points. Use this property to scale the generated image to the specified width. The webpage maintains the aspect ratio of the captured content, but scales it to match the width you specify. The default value of this parameter is `nil`, which returns an image whose size matches the original size of the captured region.
+- `snapshotWidth`: The width of the captured image, in points.
+
+  Use this property to scale the generated image to the specified width. The webpage maintains the aspect ratio of the captured content, but scales it to match the width you specify.
+
+  The default value of this parameter is `nil`, which returns an image whose size matches the original size of the captured region.
 - `afterScreenUpdates`: Indicates whether to take the snapshot after incorporating any pending screen updates.
 
 ## See Also
 
-- [WebPage.ExportedContentConfiguration.Region](webpage/exportedcontentconfiguration/region.md)
+### Configurable types
+- [WebPage.ExportedContentConfiguration.Region](./region.md)
   Represents a specific semantic region of a webpage.
-- [static func pdf(region: WebPage.ExportedContentConfiguration.Region, allowTransparentBackground: Bool) -> WebPage.ExportedContentConfiguration](webpage/exportedcontentconfiguration/pdf(region:allowtransparentbackground:).md)
+- [static func pdf(region: WebPage.ExportedContentConfiguration.Region, allowTransparentBackground: Bool) -> WebPage.ExportedContentConfiguration](./pdf%28region,allowtransparentbackground%29.md)
   A configuration of a webpage for a representation as PDF data.
 
 

@@ -1,16 +1,18 @@
 # WKAppBundleIdentifier
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The bundle ID of the watchOS app.
 
 **Availability**:
 - watchOS 1.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `WKAppBundleIdentifier`
+- **Type**: string
 
 #### Discussion
 
@@ -18,9 +20,10 @@ This key is automatically included in your WatchKit extension’s information pr
 
 ## See Also
 
-- [CFBundleIdentifier](information-property-list/cfbundleidentifier.md)
+### Identification
+- [CFBundleIdentifier](./cfbundleidentifier.md)
   A unique identifier for a bundle.
-- [WKCompanionAppBundleIdentifier](information-property-list/wkcompanionappbundleidentifier.md)
+- [WKCompanionAppBundleIdentifier](./wkcompanionappbundleidentifier.md)
   The bundle ID of the watchOS app’s companion iOS app.
 
 

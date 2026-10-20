@@ -1,7 +1,8 @@
 # NSDictionary
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A static collection of objects associated with unique keys.
 
@@ -20,25 +21,29 @@ A static collection of objects associated with unique keys.
 class NSDictionary
 ```
 
+```objc
+@interface NSDictionary : NSObject
+```
+
 ## Mentions
 
-- [Implementing Handoff in Your App](implementing-handoff-in-your-app.md)
+- [Implementing Handoff in Your App](./implementing-handoff-in-your-app.md)
 
 #### Overview
 
-You can use this type in Swift instead of a [`Dictionary`](https://developer.apple.com/documentation/swift/dictionary) in cases that require reference semantics.
+You can use this type in Swift instead of a [`Dictionary`](../Swift/dictionary.md) in cases that require reference semantics.
 
 The `NSDictionary` class declares the programmatic interface to objects that manage immutable associations of keys and values. For example, an interactive form could be represented as a dictionary, with the field names as keys, corresponding to user-entered values.
 
-Use this class or its subclass [`NSMutableDictionary`](nsmutabledictionary.md) when you need a convenient and efficient way to retrieve data associated with an arbitrary key. `NSDictionary` creates static dictionaries, and `NSMutableDictionary` creates dynamic dictionaries. (For convenience, the term *dictionary* refers to any instance of one of these classes without specifying its exact class membership.)
+Use this class or its subclass [`NSMutableDictionary`](./nsmutabledictionary.md) when you need a convenient and efficient way to retrieve data associated with an arbitrary key. `NSDictionary` creates static dictionaries, and `NSMutableDictionary` creates dynamic dictionaries. (For convenience, the term *dictionary* refers to any instance of one of these classes without specifying its exact class membership.)
 
-A key-value pair within a dictionary is called an entry. Each entry consists of one object that represents the key and a second object that is that key’s value. Within a dictionary, the keys are unique. That is, no two keys in a single dictionary are equal (as determined by [`isEqual(_:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/isequal(_:))). In general, a key can be any object (provided that it conforms to the `NSCopying` protocol—see below), but note that when using key-value coding the key must be a string (see [`Accessing Object Properties`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/BasicPrinciples.html#//apple_ref/doc/uid/20002170)). Neither a key nor a value can be `nil`; if you need to represent a null value in a dictionary, you should use [`NSNull`](nsnull.md).
+A key-value pair within a dictionary is called an entry. Each entry consists of one object that represents the key and a second object that is that key’s value. Within a dictionary, the keys are unique. That is, no two keys in a single dictionary are equal (as determined by [`isEqual(_:)`](../ObjectiveC/nsobjectprotocol/isequal%28_%29.md)). In general, a key can be any object (provided that it conforms to the `NSCopying` protocol—see below), but note that when using key-value coding the key must be a string (see [Accessing Object Properties](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/BasicPrinciples.html#//apple_ref/doc/uid/20002170)). Neither a key nor a value can be `nil`; if you need to represent a null value in a dictionary, you should use [`NSNull`](./nsnull.md).
 
-`NSDictionary` is “toll-free bridged” with its Core Foundation counterpart, [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
+`NSDictionary` is “toll-free bridged” with its Core Foundation counterpart, [`CFDictionary`](../CoreFoundation/cfdictionary.md). See [Toll-Free Bridging](https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
 
-##### Creating Nsdictionary Objects Using Dictionary Literals
+##### Creating NSDictionary Objects Using Dictionary Literals
 
-In addition to the provided initializers, such as [`init(objects:forKeys:)`](nsdictionary/init(objects:forkeys:).md), you can create an `NSDictionary` object using a *dictionary literal*.
+In addition to the provided initializers, such as [`init(objects:forKeys:)`](./nsdictionary/init%28objects,forkeys%29.md), you can create an `NSDictionary` object using a *dictionary literal*.
 
 **Swift**:
 
@@ -62,7 +67,7 @@ NSDictionary *dictionary = @{
 };
 ```
 
-In Objective-C, the compiler generates code that makes an underlying call to the [`dictionaryWithObjects:forKeys:count:`](nsdictionary/dictionarywithobjects:forkeys:count:.md) method.
+In Objective-C, the compiler generates code that makes an underlying call to the [`dictionaryWithObjects:forKeys:count:`](./nsdictionary/dictionarywithobjects_forkeys_count_.md) method.
 
 ```objc
 id objects[] = { someObject, @"Hello, World!", @42, someValue };
@@ -73,13 +78,13 @@ NSDictionary *dictionary = [NSDictionary dictionaryWithObjects:objects
                                                          count:count];
 ```
 
-Unlike [`dictionaryWithObjectsAndKeys:`](nsdictionary/dictionarywithobjectsandkeys:.md) and other initializers, dictionary literals specify entries in key-value order. You should not terminate the list of objects with `nil` when using this literal syntax, and in fact `nil` is an invalid value. For more information about object literals in Objective-C, see [`Working with Objects`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/WorkingwithObjects/WorkingwithObjects.html#//apple_ref/doc/uid/TP40011210-CH4) in [`Programming with Objective-C`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011210).
+Unlike [`dictionaryWithObjectsAndKeys:`](./nsdictionary/dictionarywithobjectsandkeys_.md) and other initializers, dictionary literals specify entries in key-value order. You should not terminate the list of objects with `nil` when using this literal syntax, and in fact `nil` is an invalid value. For more information about object literals in Objective-C, see [Working with Objects](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/WorkingwithObjects/WorkingwithObjects.html#//apple_ref/doc/uid/TP40011210-CH4) in [Programming with Objective-C](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011210).
 
-In Swift, the `NSDictionary` class conforms to the `DictionaryLiteralConvertible` protocol, which allows it to be initialized with dictionary literals. For more information about object literals in Swift, see [`Literal Expression`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/Swift_Programming_Language/Expressions.html#//apple_ref/doc/uid/TP40014097-CH32-ID390) in [`The Swift Programming Language (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097).
+In Swift, the `NSDictionary` class conforms to the `DictionaryLiteralConvertible` protocol, which allows it to be initialized with dictionary literals. For more information about object literals in Swift, see [Literal Expression](https://developer.apple.com/library/archive/documentation/Swift/Conceptual/Swift_Programming_Language/Expressions.html#//apple_ref/doc/uid/TP40014097-CH32-ID390) in [The Swift Programming Language (Swift 4.1)](https://developer.apple.com/library/archive/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097).
 
 ##### Accessing Values Using Subscripting
 
-In addition to the provided instance methods, such as [`object(forKey:)`](nsdictionary/object(forkey:).md), you can access `NSDictionary` values by their keys using *subscripting*.
+In addition to the provided instance methods, such as [`object(forKey:)`](./nsdictionary/object%28forkey%29.md), you can access `NSDictionary` values by their keys using *subscripting*.
 
 **Swift**:
 
@@ -93,9 +98,9 @@ let value = dictionary["helloString"]
 id value = dictionary[@"helloString"];
 ```
 
-##### Enumerating Entries Using for in Loops
+##### Enumerating Entries Using for-in Loops
 
-In addition to the provided instance methods, such as [`enumerateKeysAndObjects(_:)`](nsdictionary/enumeratekeysandobjects(_:).md), you can enumerate `NSDictionary` entries using *for-in loops*.
+In addition to the provided instance methods, such as [`enumerateKeysAndObjects(_:)`](./nsdictionary/enumeratekeysandobjects%28_%29.md), you can enumerate `NSDictionary` entries using *for-in loops*.
 
 **Swift**:
 
@@ -114,7 +119,7 @@ for (NSString *key in dictionary) {
 }
 ```
 
-In Objective-C, `NSDictionary` conforms to the [`NSFastEnumeration`](nsfastenumeration.md) protocol.
+In Objective-C, `NSDictionary` conforms to the [`NSFastEnumeration`](./nsfastenumeration.md) protocol.
 
 In Swift, `NSDictionary` conforms to the `SequenceType` protocol.
 
@@ -124,185 +129,185 @@ You generally shouldn’t need to subclass `NSDictionary`. Custom behavior can u
 
 ###### Methods to Override
 
-If you do need to subclass `NSDictionary`, take into account that it is a [`Class cluster`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/ClassCluster.html#//apple_ref/doc/uid/TP40008195-CH7). Any subclass must override the following primitive methods:
+If you do need to subclass `NSDictionary`, take into account that it is a [Class cluster](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/ClassCluster.html#//apple_ref/doc/uid/TP40008195-CH7). Any subclass must override the following primitive methods:
 
-- [`init(objects:forKeys:count:)`](nsdictionary/init(objects:forkeys:count:).md)
-- [`count`](nsdictionary/count.md)
-- [`object(forKey:)`](nsdictionary/object(forkey:).md)
-- [`keyEnumerator()`](nsdictionary/keyenumerator().md)
+- [`init(objects:forKeys:count:)`](./nsdictionary/init%28objects,forkeys,count%29.md)
+- [`count`](./nsdictionary/count.md)
+- [`object(forKey:)`](./nsdictionary/object%28forkey%29.md)
+- [`keyEnumerator()`](./nsdictionary/keyenumerator%28%29.md)
 
 The other methods of `NSDictionary` operate by invoking one or more of these primitives. The non-primitive methods provide convenient ways of accessing multiple entries at once.
 
 ###### Alternatives to Subclassing
 
-Before making a custom class of `NSDictionary`, investigate [`NSMapTable`](nsmaptable.md) and the corresponding Core Foundation type, [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary). Because `NSDictionary` and `CFDictionary` are “toll-free bridged,” you can substitute a `CFDictionary` object for a `NSDictionary` object in your code (with appropriate casting). Although they are corresponding types, `CFDictionary` and `NSDictionary` do not have identical interfaces or implementations, and you can sometimes do things with `CFDictionary` that you cannot easily do with `NSDictionary`.
+Before making a custom class of `NSDictionary`, investigate [`NSMapTable`](./nsmaptable.md) and the corresponding Core Foundation type, [`CFDictionary`](../CoreFoundation/cfdictionary.md). Because `NSDictionary` and `CFDictionary` are “toll-free bridged,” you can substitute a `CFDictionary` object for a `NSDictionary` object in your code (with appropriate casting). Although they are corresponding types, `CFDictionary` and `NSDictionary` do not have identical interfaces or implementations, and you can sometimes do things with `CFDictionary` that you cannot easily do with `NSDictionary`.
 
 If the behavior you want to add supplements that of the existing class, you could write a category on `NSDictionary`. Keep in mind, however, that this category will be in effect for all instances of `NSDictionary` that you use, and this might have unintended consequences. Alternatively, you could use composition to achieve the desired behavior.
 
 ## Topics
 
 ### Creating an Empty Dictionary
-- [init()](nsdictionary/init.md)
+- [init()](./nsdictionary/init%28%29.md)
   Initializes a newly allocated dictionary.
 ### Creating a Dictionary from Objects and Keys
-- [convenience init(objects: [Any], forKeys: [any NSCopying])](nsdictionary/init(objects:forkeys:).md)
+- [convenience init(objects: [Any], forKeys: [any NSCopying])](./nsdictionary/init%28objects,forkeys%29.md)
   Initializes a newly allocated dictionary with key-value pairs constructed from the provided arrays of keys and objects.
-- [init(objects: UnsafePointer<AnyObject>?, forKeys: UnsafePointer<any NSCopying>?, count: Int)](nsdictionary/init(objects:forkeys:count:).md)
+- [init(objects: UnsafePointer<AnyObject>?, forKeys: UnsafePointer<any NSCopying>?, count: Int)](./nsdictionary/init%28objects,forkeys,count%29.md)
   Initializes a newly allocated dictionary with the specified number of key-value pairs constructed from the provided C arrays of keys and objects.
-- [convenience init(object: Any, forKey: any NSCopying)](nsdictionary/init(object:forkey:).md)
+- [convenience init(object: Any, forKey: any NSCopying)](./nsdictionary/init%28object,forkey%29.md)
   Creates a dictionary containing a given key and value.
 ### Creating a Dictionary from Another Dictionary
-- [convenience init(dictionary: [AnyHashable : Any])](nsdictionary/init(dictionary:)-9fw1u.md)
+- [convenience init(dictionary: [AnyHashable : Any])](./nsdictionary/init%28dictionary%29-9fw1u.md)
   Initializes a newly allocated dictionary by placing in it the keys and values contained in another given dictionary.
-- [convenience init(dictionary: [AnyHashable : Any], copyItems: Bool)](nsdictionary/init(dictionary:copyitems:).md)
+- [convenience init(dictionary: [AnyHashable : Any], copyItems: Bool)](./nsdictionary/init%28dictionary,copyitems%29.md)
   Initializes a newly allocated dictionary using the objects contained in another given dictionary.
-- [convenience init(dictionaryLiteral: (Any, Any)...)](nsdictionary/init(dictionaryliteral:).md)
+- [convenience init(dictionaryLiteral: (Any, Any)...)](./nsdictionary/init%28dictionaryliteral%29.md)
   Initializes a newly allocated dictionary from the given key-value pairs.
 ### Creating a Dictionary from an External Source
-- [convenience init(contentsOfURL: URL, error: ()) throws](nsdictionary/init(contentsofurl:error:).md)
+- [convenience init(contentsOfURL: URL, error: ()) throws](./nsdictionary/init%28contentsofurl,error%29.md)
   Initializes a newly allocated dictionary using the keys and values found at a given URL.
-- [convenience init?(contentsOfFile: String)](nsdictionary/init(contentsoffile:).md)
+- [convenience init?(contentsOfFile: String)](./nsdictionary/init%28contentsoffile%29.md)
   Initializes a newly allocated dictionary using the keys and values found in a file at a given path.
 ### Creating a Dictionary from an NSCoder
-- [init?(coder: NSCoder)](nsdictionary/init(coder:).md)
+- [init?(coder: NSCoder)](./nsdictionary/init%28coder%29.md)
   Creates a dictionary initialized from data in the provided unarchiver.
 ### Creating Key Sets for Shared-Key Optimized Dictionaries
-- [class func sharedKeySet(forKeys: [any NSCopying]) -> Any](nsdictionary/sharedkeyset(forkeys:).md)
+- [class func sharedKeySet(forKeys: [any NSCopying]) -> Any](./nsdictionary/sharedkeyset%28forkeys%29.md)
   Creates a shared key set object for the specified keys.
 ### Counting Entries
-- [var count: Int](nsdictionary/count.md)
+- [var count: Int](./nsdictionary/count.md)
   The number of entries in the dictionary.
 ### Comparing Dictionaries
-- [func isEqual(to: [AnyHashable : Any]) -> Bool](nsdictionary/isequal(to:).md)
+- [func isEqual(to: [AnyHashable : Any]) -> Bool](./nsdictionary/isequal%28to%29.md)
   Returns a Boolean value that indicates whether the contents of the receiving dictionary are equal to the contents of another given dictionary.
 ### Accessing Keys and Values
-- [var allKeys: [Any]](nsdictionary/allkeys.md)
+- [var allKeys: [Any]](./nsdictionary/allkeys.md)
   A new array containing the dictionary’s keys, or an empty array if the dictionary has no entries.
-- [func allKeys(for: Any) -> [Any]](nsdictionary/allkeys(for:).md)
+- [func allKeys(for: Any) -> [Any]](./nsdictionary/allkeys%28for%29.md)
   Returns a new array containing the keys corresponding to all occurrences of a given object in the dictionary.
-- [var allValues: [Any]](nsdictionary/allvalues.md)
+- [var allValues: [Any]](./nsdictionary/allvalues.md)
   A new array containing the dictionary’s values, or an empty array if the dictionary has no entries.
-- [func value(forKey: String) -> Any?](nsdictionary/value(forkey:).md)
+- [func value(forKey: String) -> Any?](./nsdictionary/value%28forkey%29.md)
   Returns the value associated with a given key.
-- [func objects(forKeys: [Any], notFoundMarker: Any) -> [Any]](nsdictionary/objects(forkeys:notfoundmarker:).md)
+- [func objects(forKeys: [Any], notFoundMarker: Any) -> [Any]](./nsdictionary/objects%28forkeys,notfoundmarker%29.md)
   Returns as a static array the set of objects from the dictionary that corresponds to the specified keys.
-- [func object(forKey: Any) -> Any?](nsdictionary/object(forkey:).md)
+- [func object(forKey: Any) -> Any?](./nsdictionary/object%28forkey%29.md)
   Returns the value associated with a given key.
-- [subscript(any NSCopying) -> Any?](nsdictionary/subscript(_:)-52n56.md)
+- [subscript(any NSCopying) -> Any?](./nsdictionary/subscript%28_%29-52n56.md)
   Returns the value associated with a given key.
-- [subscript(Any) -> Any?](nsdictionary/subscript(_:)-1bt1b.md)
+- [subscript(Any) -> Any?](./nsdictionary/subscript%28_%29-1bt1b.md)
   Accesses the value associated with a given key.
 ### Enumerating Dictionaries
-- [func keyEnumerator() -> NSEnumerator](nsdictionary/keyenumerator.md)
+- [func keyEnumerator() -> NSEnumerator](./nsdictionary/keyenumerator%28%29.md)
   Provides an enumerator to access the keys in the dictionary.
-- [func objectEnumerator() -> NSEnumerator](nsdictionary/objectenumerator.md)
+- [func objectEnumerator() -> NSEnumerator](./nsdictionary/objectenumerator%28%29.md)
   Returns an enumerator object that lets you access each value in the dictionary.
-- [func enumerateKeysAndObjects((Any, Any, UnsafeMutablePointer<ObjCBool>) -> Void)](nsdictionary/enumeratekeysandobjects(_:).md)
+- [func enumerateKeysAndObjects((Any, Any, UnsafeMutablePointer<ObjCBool>) -> Void)](./nsdictionary/enumeratekeysandobjects%28_%29.md)
   Applies a given block object to the entries of the dictionary.
-- [func enumerateKeysAndObjects(options: NSEnumerationOptions, using: (Any, Any, UnsafeMutablePointer<ObjCBool>) -> Void)](nsdictionary/enumeratekeysandobjects(options:using:).md)
+- [func enumerateKeysAndObjects(options: NSEnumerationOptions, using: (Any, Any, UnsafeMutablePointer<ObjCBool>) -> Void)](./nsdictionary/enumeratekeysandobjects%28options,using%29.md)
   Applies a given block object to the entries of the dictionary, with options specifying how the enumeration is performed.
-- [func makeIterator() -> NSDictionary.Iterator](nsdictionary/makeiterator.md)
+- [func makeIterator() -> NSDictionary.Iterator](./nsdictionary/makeiterator%28%29.md)
   Returns an iterator over the elements of this sequence.
 ### Sorting Dictionaries
-- [func keysSortedByValue(using: Selector) -> [Any]](nsdictionary/keyssortedbyvalue(using:).md)
+- [func keysSortedByValue(using: Selector) -> [Any]](./nsdictionary/keyssortedbyvalue%28using%29.md)
   Returns an array of the dictionary’s keys, in the order they would be in if the dictionary were sorted by its values.
-- [func keysSortedByValue(comparator: (Any, Any) -> ComparisonResult) -> [Any]](nsdictionary/keyssortedbyvalue(comparator:).md)
+- [func keysSortedByValue(comparator: (Any, Any) -> ComparisonResult) -> [Any]](./nsdictionary/keyssortedbyvalue%28comparator%29.md)
   Returns an array of the dictionary’s keys, in the order they would be in if the dictionary were sorted by its values using a given comparator block.
-- [func keysSortedByValue(options: NSSortOptions, usingComparator: (Any, Any) -> ComparisonResult) -> [Any]](nsdictionary/keyssortedbyvalue(options:usingcomparator:).md)
+- [func keysSortedByValue(options: NSSortOptions, usingComparator: (Any, Any) -> ComparisonResult) -> [Any]](./nsdictionary/keyssortedbyvalue%28options,usingcomparator%29.md)
   Returns an array of the dictionary’s keys, in the order they would be in if the dictionary were sorted by its values using a given comparator block and a specified set of options.
 ### Filtering Dictionaries
-- [func keysOfEntries(passingTest: (Any, Any, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Set<AnyHashable>](nsdictionary/keysofentries(passingtest:).md)
+- [func keysOfEntries(passingTest: (Any, Any, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Set<AnyHashable>](./nsdictionary/keysofentries%28passingtest%29.md)
   Returns the set of keys whose corresponding value satisfies a constraint described by a block object.
-- [func keysOfEntries(options: NSEnumerationOptions, passingTest: (Any, Any, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Set<AnyHashable>](nsdictionary/keysofentries(options:passingtest:).md)
+- [func keysOfEntries(options: NSEnumerationOptions, passingTest: (Any, Any, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Set<AnyHashable>](./nsdictionary/keysofentries%28options,passingtest%29.md)
   Returns the set of keys whose corresponding value satisfies a constraint described by a block object.
 ### Storing Dictionaries
-- [func write(to: URL) throws](nsdictionary/write(to:).md)
+- [func write(to: URL) throws](./nsdictionary/write%28to%29.md)
   Writes a property list representation of the contents of the dictionary to a given URL.
-- [func write(to: URL, atomically: Bool) -> Bool](nsdictionary/write(to:atomically:).md)
+- [func write(to: URL, atomically: Bool) -> Bool](./nsdictionary/write%28to,atomically%29.md)
   Writes a property list representation of the contents of the dictionary to a given URL.
-- [func write(toFile: String, atomically: Bool) -> Bool](nsdictionary/write(tofile:atomically:).md)
+- [func write(toFile: String, atomically: Bool) -> Bool](./nsdictionary/write%28tofile,atomically%29.md)
   Writes a property list representation of the contents of the dictionary to a given path.
 ### Accessing File Attributes
-- [func fileSize() -> UInt64](nsdictionary/filesize.md)
+- [func fileSize() -> UInt64](./nsdictionary/filesize%28%29.md)
   Returns the file’s size, in bytes.
-- [func fileType() -> String?](nsdictionary/filetype.md)
+- [func fileType() -> String?](./nsdictionary/filetype%28%29.md)
   Returns the file type.
-- [func fileCreationDate() -> Date?](nsdictionary/filecreationdate.md)
+- [func fileCreationDate() -> Date?](./nsdictionary/filecreationdate%28%29.md)
   Returns the file’s creation date.
-- [func fileModificationDate() -> Date?](nsdictionary/filemodificationdate.md)
+- [func fileModificationDate() -> Date?](./nsdictionary/filemodificationdate%28%29.md)
   Returns file’s modification date.
-- [func filePosixPermissions() -> Int](nsdictionary/fileposixpermissions.md)
+- [func filePosixPermissions() -> Int](./nsdictionary/fileposixpermissions%28%29.md)
   Returns the file’s POSIX permissions.
-- [func fileOwnerAccountID() -> NSNumber?](nsdictionary/fileowneraccountid.md)
+- [func fileOwnerAccountID() -> NSNumber?](./nsdictionary/fileowneraccountid%28%29.md)
   Returns the file’s owner account ID.
-- [func fileOwnerAccountName() -> String?](nsdictionary/fileowneraccountname.md)
+- [func fileOwnerAccountName() -> String?](./nsdictionary/fileowneraccountname%28%29.md)
   Returns the file’s owner account name.
-- [func fileGroupOwnerAccountID() -> NSNumber?](nsdictionary/filegroupowneraccountid.md)
+- [func fileGroupOwnerAccountID() -> NSNumber?](./nsdictionary/filegroupowneraccountid%28%29.md)
   Returns file’s group owner account ID.
-- [func fileGroupOwnerAccountName() -> String?](nsdictionary/filegroupowneraccountname.md)
+- [func fileGroupOwnerAccountName() -> String?](./nsdictionary/filegroupowneraccountname%28%29.md)
   Returns the file’s group owner account name.
-- [func fileExtensionHidden() -> Bool](nsdictionary/fileextensionhidden.md)
+- [func fileExtensionHidden() -> Bool](./nsdictionary/fileextensionhidden%28%29.md)
   Returns a Boolean value indicating whether the file hides its extension.
-- [func fileIsImmutable() -> Bool](nsdictionary/fileisimmutable.md)
+- [func fileIsImmutable() -> Bool](./nsdictionary/fileisimmutable%28%29.md)
   Returns a Boolean value indicating whether the file is immutable.
-- [func fileIsAppendOnly() -> Bool](nsdictionary/fileisappendonly.md)
+- [func fileIsAppendOnly() -> Bool](./nsdictionary/fileisappendonly%28%29.md)
   Returns a Boolean value indicating whether the file is append only.
-- [func fileSystemFileNumber() -> Int](nsdictionary/filesystemfilenumber.md)
+- [func fileSystemFileNumber() -> Int](./nsdictionary/filesystemfilenumber%28%29.md)
   Returns the filesystem file number.
-- [func fileSystemNumber() -> Int](nsdictionary/filesystemnumber.md)
+- [func fileSystemNumber() -> Int](./nsdictionary/filesystemnumber%28%29.md)
   Returns the filesystem number.
-- [func fileHFSTypeCode() -> OSType](nsdictionary/filehfstypecode.md)
+- [func fileHFSTypeCode() -> OSType](./nsdictionary/filehfstypecode%28%29.md)
   Returns file’s HFS type code.
-- [func fileHFSCreatorCode() -> OSType](nsdictionary/filehfscreatorcode.md)
+- [func fileHFSCreatorCode() -> OSType](./nsdictionary/filehfscreatorcode%28%29.md)
   Returns the file’s HFS creator code.
 ### Describing a Dictionary
-- [var description: String](nsdictionary/description.md)
+- [var description: String](./nsdictionary/description.md)
   A string that represents the contents of the dictionary, formatted as a property list.
-- [var descriptionInStringsFileFormat: String](nsdictionary/descriptioninstringsfileformat.md)
+- [var descriptionInStringsFileFormat: String](./nsdictionary/descriptioninstringsfileformat.md)
   A string that represents the contents of the dictionary, formatted in `.strings` file format.
-- [func description(withLocale: Any?) -> String](nsdictionary/description(withlocale:).md)
+- [func description(withLocale: Any?) -> String](./nsdictionary/description%28withlocale%29.md)
   Returns a string object that represents the contents of the dictionary, formatted as a property list.
-- [func description(withLocale: Any?, indent: Int) -> String](nsdictionary/description(withlocale:indent:).md)
+- [func description(withLocale: Any?, indent: Int) -> String](./nsdictionary/description%28withlocale,indent%29.md)
   Returns a string object that represents the contents of the dictionary, formatted as a property list.
 ### Supporting Types
-- [NSDictionary.Iterator](nsdictionary/iterator.md)
+- [NSDictionary.Iterator](./nsdictionary/iterator.md)
   A class that you use to provide members of a dictionary, one-by-one.
 ### Initializers
-- [convenience init?(contentsOf: URL)](nsdictionary/init(contentsof:).md)
+- [convenience init?(contentsOf: URL)](./nsdictionary/init%28contentsof%29.md)
   Initializes a newly allocated dictionary using the keys and values found at a given URL.
-- [convenience init(contentsOf: URL, error: ()) throws](nsdictionary/init(contentsof:error:).md)
+- [convenience init(contentsOf: URL, error: ()) throws](./nsdictionary/init%28contentsof,error%29.md)
   Initializes a newly allocated dictionary using the keys and values found at a given URL.
-- [convenience init(dictionary: NSDictionary)](nsdictionary/init(dictionary:)-4gc13.md)
+- [convenience init(dictionary: NSDictionary)](./nsdictionary/init%28dictionary%29-4gc13.md)
   Initializes a newly allocated dictionary and adds to it objects from another given dictionary.
 ### Default Implementations
-- [ExpressibleByDictionaryLiteral Implementations](nsdictionary/expressiblebydictionaryliteral-implementations.md)
-- [NSDictionary Implementations](nsdictionary/nsdictionary-implementations.md)
-- [Sequence Implementations](nsdictionary/sequence-implementations.md)
+- [ExpressibleByDictionaryLiteral Implementations](./nsdictionary/expressiblebydictionaryliteral-implementations.md)
+- [NSDictionary Implementations](./nsdictionary/nsdictionary-implementations.md)
+- [Sequence Implementations](./nsdictionary/sequence-implementations.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [NSMutableDictionary](nsmutabledictionary.md)
+- [NSMutableDictionary](./nsmutabledictionary.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByDictionaryLiteral](../swift/expressiblebydictionaryliteral.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSFastEnumeration](nsfastenumeration.md)
-- [NSFetchRequestResult](../coredata/nsfetchrequestresult.md)
-- [NSMutableCopying](nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
-- [Sequence](../swift/sequence.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomReflectable](../Swift/customreflectable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [ExpressibleByDictionaryLiteral](../Swift/expressiblebydictionaryliteral.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSFastEnumeration](./nsfastenumeration.md)
+- [NSFetchRequestResult](../CoreData/nsfetchrequestresult.md)
+- [NSMutableCopying](./nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
+- [Sequence](../Swift/sequence.md)
 
 
 ---

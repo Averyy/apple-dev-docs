@@ -1,7 +1,8 @@
 # kVTAllocationFailedErr
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 6.0+
@@ -17,23 +18,28 @@
 var kVTAllocationFailedErr: OSStatus { get }
 ```
 
+```c
+kVTAllocationFailedErr
+```
+
 ## See Also
 
-- [var kVTColorCorrectionImageRotationFailedErr: OSStatus](kvtcolorcorrectionimagerotationfailederr.md)
-- [var kVTColorCorrectionPixelTransferFailedErr: OSStatus](kvtcolorcorrectionpixeltransferfailederr.md)
-- [var kVTColorSyncTransformConvertFailedErr: OSStatus](kvtcolorsynctransformconvertfailederr.md)
-- [var kVTCouldNotCreateColorCorrectionDataErr: OSStatus](kvtcouldnotcreatecolorcorrectiondataerr.md)
-- [var kVTCouldNotCreateInstanceErr: OSStatus](kvtcouldnotcreateinstanceerr.md)
-- [var kVTCouldNotFindExtensionErr: OSStatus](kvtcouldnotfindextensionerr.md)
-- [var kVTCouldNotFindTemporalFilterErr: OSStatus](kvtcouldnotfindtemporalfiltererr.md)
-- [var kVTCouldNotFindVideoDecoderErr: OSStatus](kvtcouldnotfindvideodecodererr.md)
-- [var kVTCouldNotFindVideoEncoderErr: OSStatus](kvtcouldnotfindvideoencodererr.md)
-- [var kVTCouldNotOutputTaggedBufferGroupErr: OSStatus](kvtcouldnotoutputtaggedbuffergrouperr.md)
-- [var kVTExtensionConflictErr: OSStatus](kvtextensionconflicterr.md)
-- [var kVTExtensionDisabledErr: OSStatus](kvtextensiondisablederr.md)
-- [var kVTFormatDescriptionChangeNotSupportedErr: OSStatus](kvtformatdescriptionchangenotsupportederr.md)
-- [var kVTFrameSiloInvalidTimeRangeErr: OSStatus](kvtframesiloinvalidtimerangeerr.md)
-- [var kVTFrameSiloInvalidTimeStampErr: OSStatus](kvtframesiloinvalidtimestamperr.md)
+### Errors Codes
+- [var kVTColorCorrectionImageRotationFailedErr: OSStatus](./kvtcolorcorrectionimagerotationfailederr.md)
+- [var kVTColorCorrectionPixelTransferFailedErr: OSStatus](./kvtcolorcorrectionpixeltransferfailederr.md)
+- [var kVTColorSyncTransformConvertFailedErr: OSStatus](./kvtcolorsynctransformconvertfailederr.md)
+- [var kVTCouldNotCreateColorCorrectionDataErr: OSStatus](./kvtcouldnotcreatecolorcorrectiondataerr.md)
+- [var kVTCouldNotCreateInstanceErr: OSStatus](./kvtcouldnotcreateinstanceerr.md)
+- [var kVTCouldNotFindExtensionErr: OSStatus](./kvtcouldnotfindextensionerr.md)
+- [var kVTCouldNotFindTemporalFilterErr: OSStatus](./kvtcouldnotfindtemporalfiltererr.md)
+- [var kVTCouldNotFindVideoDecoderErr: OSStatus](./kvtcouldnotfindvideodecodererr.md)
+- [var kVTCouldNotFindVideoEncoderErr: OSStatus](./kvtcouldnotfindvideoencodererr.md)
+- [var kVTCouldNotOutputTaggedBufferGroupErr: OSStatus](./kvtcouldnotoutputtaggedbuffergrouperr.md)
+- [var kVTExtensionConflictErr: OSStatus](./kvtextensionconflicterr.md)
+- [var kVTExtensionDisabledErr: OSStatus](./kvtextensiondisablederr.md)
+- [var kVTFormatDescriptionChangeNotSupportedErr: OSStatus](./kvtformatdescriptionchangenotsupportederr.md)
+- [var kVTFrameSiloInvalidTimeRangeErr: OSStatus](./kvtframesiloinvalidtimerangeerr.md)
+- [var kVTFrameSiloInvalidTimeStampErr: OSStatus](./kvtframesiloinvalidtimestamperr.md)
 
 
 ---

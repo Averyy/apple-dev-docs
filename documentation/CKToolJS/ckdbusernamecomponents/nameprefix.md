@@ -1,7 +1,8 @@
 # namePrefix
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user’s prefix.
 
@@ -10,7 +11,7 @@ The user’s prefix.
 
 ## Declaration
 
-```swift
+```
 attribute string? namePrefix;
 ```
 

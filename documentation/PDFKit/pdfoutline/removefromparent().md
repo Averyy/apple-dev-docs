@@ -1,7 +1,8 @@
 # removeFromParent()
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the outline object from its parent (does nothing if outline object is the root outline object).
 
@@ -19,11 +20,17 @@ Removes the outline object from its parent (does nothing if outline object is th
 func removeFromParent()
 ```
 
+```objc
+- (void) removeFromParent;
+```
+
 ## See Also
 
-- [var parent: PDFOutline?](pdfoutline/parent.md)
+### Related Documentation
+- [var parent: PDFOutline?](./parent.md)
   Returns the parent outline object of the outline (returns `NULL` if called on the root outline object).
-- [func insertChild(PDFOutline, at: Int)](pdfoutline/insertchild(_:at:).md)
+### Changing an Outline Hierarchy
+- [func insertChild(PDFOutline, at: Int)](./insertchild%28_,at%29.md)
   Inserts the specified outline object at the specified index.
 
 

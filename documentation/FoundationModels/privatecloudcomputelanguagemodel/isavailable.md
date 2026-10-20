@@ -1,7 +1,8 @@
 # isAvailable
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the system is entirely ready.
 
@@ -21,9 +22,10 @@ final var isAvailable: Bool { get }
 
 ## See Also
 
-- [var availability: PrivateCloudComputeLanguageModel.Availability](privatecloudcomputelanguagemodel/availability-swift.property.md)
+### Inspecting the availability
+- [var availability: PrivateCloudComputeLanguageModel.Availability](./availability-swift.property.md)
   The availability of the language model.
-- [PrivateCloudComputeLanguageModel.Availability](privatecloudcomputelanguagemodel/availability-swift.enum.md)
+- [PrivateCloudComputeLanguageModel.Availability](./availability-swift.enum.md)
   The availability status for a specific PCC language model.
 
 

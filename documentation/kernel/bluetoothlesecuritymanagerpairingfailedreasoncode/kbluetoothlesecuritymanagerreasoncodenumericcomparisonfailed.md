@@ -1,14 +1,15 @@
 # kBluetoothLESecurityManagerReasonCodeNumericComparisonFailed
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothLESecurityManagerReasonCodeNumericComparisonFailed = 0x0C
 ```
 

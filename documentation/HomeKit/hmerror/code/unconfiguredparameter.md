@@ -1,7 +1,8 @@
 # HMError.Code.unconfiguredParameter
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating an unconfigured parameter.
 
@@ -19,13 +20,18 @@ An error indicating an unconfigured parameter.
 case unconfiguredParameter
 ```
 
+```c
+HMErrorCodeUnconfiguredParameter
+```
+
 ## See Also
 
-- [HMError.Code.invalidParameter](hmerror/code/invalidparameter.md)
+### Parameter errors
+- [HMError.Code.invalidParameter](./invalidparameter.md)
   An error indicating the object is invalid for the given operation.
-- [HMError.Code.missingParameter](hmerror/code/missingparameter.md)
+- [HMError.Code.missingParameter](./missingparameter.md)
   An error indicating a missing parameter.
-- [HMError.Code.nilParameter](hmerror/code/nilparameter.md)
+- [HMError.Code.nilParameter](./nilparameter.md)
   An error indicating that `nil` was passed for an operation that does not accept `nil`.
 
 

@@ -1,7 +1,8 @@
 # definition(named:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the definition with the given name, or `nil` if no such definition exists in this library.
 

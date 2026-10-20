@@ -1,18 +1,19 @@
 # DispatchQueue.AutoreleaseFrequency.inherit
 
 **Framework**: Dispatch  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The queue inherits its autorelease frequency from its target queue.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -26,9 +27,10 @@ This option is the default behavior for queues you create.
 
 ## See Also
 
-- [DispatchQueue.AutoreleaseFrequency.workItem](dispatchqueue/autoreleasefrequency/workitem.md)
+### Autorelease Frequencies
+- [DispatchQueue.AutoreleaseFrequency.workItem](./workitem.md)
   The queue configures an autorelease pool before the execution of a block, and releases the objects in that pool after the block finishes executing.
-- [DispatchQueue.AutoreleaseFrequency.never](dispatchqueue/autoreleasefrequency/never.md)
+- [DispatchQueue.AutoreleaseFrequency.never](./never.md)
   The queue does not set up an autorelease pool around executed blocks.
 
 

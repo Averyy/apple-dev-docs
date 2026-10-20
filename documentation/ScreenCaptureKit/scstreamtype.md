@@ -1,13 +1,16 @@
 # SCStreamType
 
 **Framework**: ScreenCaptureKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The display type of the presented stream.
 
 **Availability**:
-- Mac Catalyst 18.2+
-- macOS 14.0+
+- Mac Catalyst 18.2+ - Deprecated in 18.2
+- macOS 14.0+ - Deprecated in 15.0
+
+> **Deprecated**: Use SCShareableContentStyle instead
 
 ## Declaration
 
@@ -15,35 +18,40 @@ The display type of the presented stream.
 enum SCStreamType
 ```
 
+```c
+enum SCStreamType : NSInteger;
+```
+
 ## Topics
 
 ### Client presentation
-- [SCStreamType.display](scstreamtype/display.md)
+- [SCStreamType.display](./scstreamtype/display.md)
   The stream is currently on a complete display.
-- [SCStreamType.window](scstreamtype/window.md)
+- [SCStreamType.window](./scstreamtype/window.md)
   The stream is currently presented as a window.
 ### Initializers
-- [init?(rawValue: Int)](scstreamtype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./scstreamtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var contentRect: CGRect](sccontentfilter/contentrect.md)
+### Filter properties
+- [var contentRect: CGRect](./sccontentfilter/contentrect.md)
   The size and location of the content to filter, in screen points.
-- [var pointPixelScale: Float](sccontentfilter/pointpixelscale.md)
+- [var pointPixelScale: Float](./sccontentfilter/pointpixelscale.md)
   The scaling factor used to translate screen points into pixels.
-- [var streamType: SCStreamType](sccontentfilter/streamtype.md)
+- [var streamType: SCStreamType](./sccontentfilter/streamtype.md)
   The type of the streaming content.
-- [var style: SCShareableContentStyle](sccontentfilter/style.md)
+- [var style: SCShareableContentStyle](./sccontentfilter/style.md)
   The display style of the sharable content.
 
 

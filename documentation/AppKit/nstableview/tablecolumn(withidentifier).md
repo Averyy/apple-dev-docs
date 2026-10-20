@@ -1,17 +1,22 @@
 # tableColumn(withIdentifier:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the `NSTableColumn` object for the first column whose identifier is equal to the specified object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func tableColumn(withIdentifier identifier: NSUserInterfaceItemIdentifier) -> NSTableColumn?
+```
+
+```objc
+- (NSTableColumn *) tableColumnWithIdentifier:(NSUserInterfaceItemIdentifier) identifier;
 ```
 
 #### Return Value
@@ -24,15 +29,16 @@ The `NSTableColumn` object for the first column whose identifier is equal to `an
 
 ## See Also
 
-- [func addTableColumn(NSTableColumn)](nstableview/addtablecolumn(_:).md)
+### Column Management
+- [func addTableColumn(NSTableColumn)](./addtablecolumn%28_%29.md)
   Adds the specified column as the last column of the table view.
-- [func removeTableColumn(NSTableColumn)](nstableview/removetablecolumn(_:).md)
+- [func removeTableColumn(NSTableColumn)](./removetablecolumn%28_%29.md)
   Removes the specified column from the table view.
-- [func moveColumn(Int, toColumn: Int)](nstableview/movecolumn(_:tocolumn:).md)
+- [func moveColumn(Int, toColumn: Int)](./movecolumn%28_,tocolumn%29.md)
   Moves the column and heading at the specified index to the new specified index.
-- [var tableColumns: [NSTableColumn]](nstableview/tablecolumns.md)
+- [var tableColumns: [NSTableColumn]](./tablecolumns.md)
   An array containing the current table column objects.
-- [func column(withIdentifier: NSUserInterfaceItemIdentifier) -> Int](nstableview/column(withidentifier:).md)
+- [func column(withIdentifier: NSUserInterfaceItemIdentifier) -> Int](./column%28withidentifier%29.md)
   Returns the index of the first column in the table view whose identifier is equal to the specified identifier.
 
 

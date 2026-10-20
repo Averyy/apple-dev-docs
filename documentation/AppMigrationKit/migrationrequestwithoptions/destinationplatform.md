@@ -1,7 +1,8 @@
 # destinationPlatform
 
 **Framework**: AppMigrationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The destination platform of the migration request.
 
@@ -17,9 +18,10 @@ let destinationPlatform: MigrationPlatform
 
 ## See Also
 
-- [struct MigrationPlatform](migrationplatform.md)
+### Inspecting migration request properties
+- [struct MigrationPlatform](../migrationplatform.md)
   A type that identifies the platform used by the other device in a migration.
-- [let options: [OptionsType : Data]](migrationrequestwithoptions/options.md)
+- [let options: [OptionsType : Data]](./options.md)
   Export options requested by the destination device.
 
 

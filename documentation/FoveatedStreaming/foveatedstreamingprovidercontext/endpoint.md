@@ -1,7 +1,8 @@
 # endpoint
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The endpoint for which a connection is being requested (local IP or remote URL).
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: System  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a strongly-typed file permission from a raw C value.
 
@@ -22,9 +23,10 @@ init(rawValue: CModeT)
 
 ## See Also
 
-- [let rawValue: CModeT](filepermissions/rawvalue.md)
+### Interacting with C APIs
+- [let rawValue: CModeT](./rawvalue.md)
   The raw C file permissions.
-- [typealias CModeT](cmodet.md)
+- [typealias CModeT](../cmodet.md)
   The C `mode_t` type.
 
 

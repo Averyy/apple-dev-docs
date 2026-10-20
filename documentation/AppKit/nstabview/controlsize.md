@@ -1,12 +1,13 @@
 # controlSize
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the tab view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The size of the tab view.
 var controlSize: NSControl.ControlSize { get set }
 ```
 
+```objc
+@property NSControlSize controlSize;
+```
+
 #### Discussion
 
-The valid values for this property are described inControl Sizes in [`NSCell`](nscell.md). The default value of this property is [`NSRegularControlSize`](nsregularcontrolsize.md).
+The valid values for this property are described inControl Sizes in [`NSCell`](../nscell.md). The default value of this property is [`NSRegularControlSize`](../nsregularcontrolsize.md).
 
 ## See Also
 
-- [var minimumSize: NSSize](nstabview/minimumsize.md)
+### Determining the Size
+- [var minimumSize: NSSize](./minimumsize.md)
   The minimum size necessary for the tab view to display tabs in a useful way.
-- [var contentRect: NSRect](nstabview/contentrect.md)
+- [var contentRect: NSRect](./contentrect.md)
   The rectangle describing the content area of the tab view.
 
 

@@ -1,7 +1,8 @@
 # CLServiceSession.AuthorizationRequirement.whenInUse
 
 **Framework**: Core Location  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -19,12 +20,13 @@ case whenInUse
 
 ## Mentions
 
-- [Handling location updates in the background](handling-location-updates-in-the-background.md)
+- [Handling location updates in the background](../../handling-location-updates-in-the-background.md)
 
 ## See Also
 
-- [CLServiceSession.AuthorizationRequirement.always](clservicesession-pt7n/authorizationrequirement/always.md)
-- [CLServiceSession.AuthorizationRequirement.none](clservicesession-pt7n/authorizationrequirement/none.md)
+### Authorization requirement values
+- [CLServiceSession.AuthorizationRequirement.always](./always.md)
+- [CLServiceSession.AuthorizationRequirement.none](./none.md)
 
 
 ---

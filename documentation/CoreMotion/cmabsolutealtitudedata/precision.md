@@ -1,7 +1,8 @@
 # precision
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The recommended resolution for the altitude, in meters.
 
@@ -18,11 +19,16 @@ The recommended resolution for the altitude, in meters.
 var precision: Double { get }
 ```
 
+```objc
+@property (nonatomic, readonly) double precision;
+```
+
 ## See Also
 
-- [var altitude: Double](cmabsolutealtitudedata/altitude.md)
+### Accessing Altitude Data
+- [var altitude: Double](./altitude.md)
   The absolute altitude of the device relative to sea level, measured in meters.
-- [var accuracy: Double](cmabsolutealtitudedata/accuracy.md)
+- [var accuracy: Double](./accuracy.md)
   The estimated uncertainty of the altimeter in meters, based on one standard deviation.
 
 

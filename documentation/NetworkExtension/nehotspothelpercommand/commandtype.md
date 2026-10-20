@@ -1,7 +1,8 @@
 # commandType
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the command
 
@@ -17,13 +18,18 @@ The type of the command
 var commandType: NEHotspotHelperCommandType { get }
 ```
 
+```objc
+@property (readonly) NEHotspotHelperCommandType commandType;
+```
+
 ## See Also
 
-- [enum NEHotspotHelperCommandType](nehotspothelpercommandtype.md)
+### Command information
+- [enum NEHotspotHelperCommandType](../nehotspothelpercommandtype.md)
   An enumeration of hotspot command types.
-- [var network: NEHotspotNetwork?](nehotspothelpercommand/network.md)
+- [var network: NEHotspotNetwork?](./network.md)
   The network associated with the command.
-- [var networkList: [NEHotspotNetwork]?](nehotspothelpercommand/networklist.md)
+- [var networkList: [NEHotspotNetwork]?](./networklist.md)
   The list of networks associated with the command.
 
 

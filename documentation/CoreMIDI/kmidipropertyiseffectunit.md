@@ -1,7 +1,8 @@
 # kMIDIPropertyIsEffectUnit
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value that indicates whether the device or entity primarily acts as a MIDI-controlled audio effect.
 
@@ -18,13 +19,18 @@ A Boolean value that indicates whether the device or entity primarily acts as a 
 let kMIDIPropertyIsEffectUnit: CFString
 ```
 
+```c
+extern CFStringRef const kMIDIPropertyIsEffectUnit;
+```
+
 ## See Also
 
-- [let kMIDIPropertyIsMixer: CFString](kmidipropertyismixer.md)
+### Roles
+- [let kMIDIPropertyIsMixer: CFString](./kmidipropertyismixer.md)
   A Boolean value that indicates whether the device or entity mixes external audio signals.
-- [let kMIDIPropertyIsSampler: CFString](kmidipropertyissampler.md)
+- [let kMIDIPropertyIsSampler: CFString](./kmidipropertyissampler.md)
   A Boolean value that indicates whether the device or entity plays audio samples in response to MIDI note messages.
-- [let kMIDIPropertyIsDrumMachine: CFString](kmidipropertyisdrummachine.md)
+- [let kMIDIPropertyIsDrumMachine: CFString](./kmidipropertyisdrummachine.md)
   A Boolean value that indicates whether the device or entity’s samples aren’t transposable, as with a drum kit.
 
 

@@ -1,7 +1,8 @@
 # GCInputLeftPaddle
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The name for the left paddle input.
 
@@ -17,7 +18,8 @@ var GCInputLeftPaddle: String { get }
 
 ## See Also
 
-- [var GCInputRightPaddle: String](gcinputrightpaddle-5klic.md)
+### Left and right paddles
+- [var GCInputRightPaddle: String](./gcinputrightpaddle-5klic.md)
   The name for the right paddle input.
 
 

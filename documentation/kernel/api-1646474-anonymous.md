@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOStreamEnqueueInputSyncTrap](1646474-anonymous/kiostreamenqueueinputsynctrap.md)
-- [kIOStreamEnqueueInputTrap](1646474-anonymous/kiostreamenqueueinputtrap.md)
+- [kIOStreamEnqueueInputSyncTrap](./api-1646474-anonymous/kiostreamenqueueinputsynctrap.md)
+- [kIOStreamEnqueueInputTrap](./api-1646474-anonymous/kiostreamenqueueinputtrap.md)
 
 
 ---

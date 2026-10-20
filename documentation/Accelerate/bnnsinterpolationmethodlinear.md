@@ -1,7 +1,8 @@
 # BNNSInterpolationMethodLinear
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Interpolation that is linear or bilinear depending on the number of resized dimensions.
 
@@ -20,16 +21,21 @@ Interpolation that is linear or bilinear depending on the number of resized dime
 var BNNSInterpolationMethodLinear: BNNSInterpolationMethod { get }
 ```
 
+```c
+BNNSInterpolationMethodLinear
+```
+
 #### Discussion
 
 Linear interpolation is suitable for one or two interpolation dimensions.
 
 ## See Also
 
-- [var rawValue: UInt32](bnnsinterpolationmethod/rawvalue.md)
-- [init(UInt32)](bnnsinterpolationmethod/init(_:).md)
-- [init(rawValue: UInt32)](bnnsinterpolationmethod/init(rawvalue:).md)
-- [var BNNSInterpolationMethodNearest: BNNSInterpolationMethod](bnnsinterpolationmethodnearest.md)
+### Interpolation Methods
+- [var rawValue: UInt32](./bnnsinterpolationmethod/rawvalue.md)
+- [init(UInt32)](./bnnsinterpolationmethod/init%28_%29.md)
+- [init(rawValue: UInt32)](./bnnsinterpolationmethod/init%28rawvalue%29.md)
+- [var BNNSInterpolationMethodNearest: BNNSInterpolationMethod](./bnnsinterpolationmethodnearest.md)
   Nearest-neighbor interpolation.
 
 

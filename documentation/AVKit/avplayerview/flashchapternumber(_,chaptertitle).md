@@ -1,7 +1,8 @@
 # flashChapterNumber(_:chapterTitle:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays the chapter number and title in the player view for a brief moment.
 
@@ -12,6 +13,10 @@ Displays the chapter number and title in the player view for a brief moment.
 
 ```swift
 func flashChapterNumber(_ chapterNumber: Int, chapterTitle: String?)
+```
+
+```objc
+- (void) flashChapterNumber:(NSUInteger) chapterNumber chapterTitle:(NSString *) chapterTitle;
 ```
 
 ## Parameters

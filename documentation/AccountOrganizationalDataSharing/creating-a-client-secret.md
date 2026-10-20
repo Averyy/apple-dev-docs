@@ -1,12 +1,13 @@
 # Creating a client secret
 
-**Framework**: Account & Organizational Data Sharing
+**Framework**: Account & Organizational Data Sharing  
+**Role**: Article
 
 Generate a signed token to identify your client application.
 
 #### Overview
 
-JSON Web Token (JWT) is an open-standard ([`RFC 7519`](https://developer.apple.comhttps://www.rfc-editor.org/rfc/rfc7519)) that defines a way to transmit information securely. Account and Organizational Data Sharing requires JWTs to authorize each validation request. Create the token, then sign it with the [`private key`](https://developer.apple.comhttps://developer.apple.com/help/account/share-account-data/share-account-and-organizational-data/) you downloaded from your developer account.
+JSON Web Token (JWT) is an open-standard ([RFC 7519](https://www.rfc-editor.org/rfc/rfc7519)) that defines a way to transmit information securely. Account and Organizational Data Sharing requires JWTs to authorize each validation request. Create the token, then sign it with the [private key](https://developer.apple.com/help/account/share-account-data/share-account-and-organizational-data/) you downloaded from your developer account.
 
 To create a signed JWT:
 
@@ -43,13 +44,14 @@ After creating the JWT, sign it using the Elliptic Curve Digital Signature Algor
 }
 ```
 
-Regardless of the programming language you’re using with the Account and Organizational Data Sharing REST API, there are a variety of open source libraries available online for creating and signing JWT tokens. For more information, see [`JWT.io`](https://developer.apple.comhttps://jwt.io).
+Regardless of the programming language you’re using with the Account and Organizational Data Sharing REST API, there are a variety of open source libraries available online for creating and signing JWT tokens. For more information, see [JWT.io](https://jwt.io).
 
 ## See Also
 
-- [Fetch Apple's public key for verifying token signature](fetch-apple's-public-key-for-verifying-token-signature.md)
+### Generating tokens
+- [Fetch Apple's public key for verifying token signature](./fetch-apples-public-key-for-verifying-token-signature.md)
   Retrieve the public key associated with the cryptographic identity Apple uses to sign the token.
-- [Generate and validate tokens](generate-and-validate-tokens.md)
+- [Generate and validate tokens](./generate-and-validate-tokens.md)
   Validate an authorization grant code delivered to your app to obtain tokens, or validate an existing refresh token.
 
 

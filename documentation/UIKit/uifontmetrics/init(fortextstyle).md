@@ -1,7 +1,8 @@
 # init(forTextStyle:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a font metrics object for the specified text style.
 
@@ -19,19 +20,24 @@ Creates a font metrics object for the specified text style.
 init(forTextStyle textStyle: UIFont.TextStyle)
 ```
 
+```objc
+- (instancetype) initForTextStyle:(UIFontTextStyle) textStyle;
+```
+
 #### Return Value
 
 An initialized font metrics object.
 
 ## Parameters
 
-- `textStyle`: The text style that you want to apply to the font. For example, you might specify [`body`](uifont/textstyle/body.md) for your app’s main content.
+- `textStyle`: The text style that you want to apply to the font. For example, you might specify [`body`](../uifont/textstyle/body.md) for your app’s main content.
 
 ## See Also
 
-- [class var `default`: UIFontMetrics](uifontmetrics/default.md)
+### Creating a Font Metrics Object
+- [class var `default`: UIFontMetrics](./default.md)
   The default font metrics object for content.
-- [UIFont.TextStyle](uifont/textstyle.md)
+- [UIFont.TextStyle](../uifont/textstyle.md)
   Constants that describe the preferred styles for fonts.
 
 

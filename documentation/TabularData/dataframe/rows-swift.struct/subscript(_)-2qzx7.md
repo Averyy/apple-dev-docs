@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: TabularData  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns a row collection from an index range.
 
@@ -22,7 +23,8 @@ subscript(bounds: Range<Int>) -> DataFrame.Rows { get set }
 
 ## See Also
 
-- [subscript(Int) -> DataFrame.Row](dataframe/rows-swift.struct/subscript(_:)-3f938.md)
+### Accessing Elements
+- [subscript(Int) -> DataFrame.Row](./subscript%28_%29-3f938.md)
   Accesses a row at an index.
 
 

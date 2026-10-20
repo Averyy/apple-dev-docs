@@ -1,7 +1,8 @@
 # x
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value for the x axis.
 
@@ -19,13 +20,18 @@ The value for the x axis.
 var x: Double
 ```
 
+```c
+double x;
+```
+
 ## See Also
 
-- [var w: Double](cmquaternion/w.md)
+### Getting the Quaternion Values
+- [var w: Double](./w.md)
   The value for the w axis.
-- [var y: Double](cmquaternion/y.md)
+- [var y: Double](./y.md)
   The value for the y axis.
-- [var z: Double](cmquaternion/z.md)
+- [var z: Double](./z.md)
   The value for the z axis.
 
 

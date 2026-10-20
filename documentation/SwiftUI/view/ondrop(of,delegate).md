@@ -1,7 +1,8 @@
 # onDrop(of:delegate:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Defines the destination of a drag and drop operation using behavior controlled by the delegate that you provide.
 
@@ -19,36 +20,44 @@ nonisolated
 func onDrop(of supportedContentTypes: [UTType], delegate: any DropDelegate) -> some View
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func onDrop(of supportedTypes: [String], delegate: any DropDelegate) -> some View
+```
+
 #### Return Value
 
 A view that provides a drop destination for a drag operation of the specified types.
 
 #### Discussion
 
-To use `Transferable` types directly and access a richer feature set — including support for [`DropSession`](dropsession.md) — use [`dropDestination(for:isEnabled:action:)`](view/dropdestination(for:isenabled:action:).md) instead.
+To use `Transferable` types directly and access a richer feature set — including support for [`DropSession`](../dropsession.md) — use [`dropDestination(for:isEnabled:action:)`](./dropdestination%28for,isenabled,action%29.md) instead.
 
 ## Parameters
 
 - `supportedContentTypes`: The uniform type identifiers that describe the types of content this view can accept through drag and drop. If the drag and drop operation doesn’t contain any of the supported types, then this drop destination doesn’t activate and `isTargeted` doesn’t update.
-- `delegate`: A type that conforms to the [`DropDelegate`](dropdelegate.md) protocol. You have comprehensive control over drop behavior when you use a delegate.
+- `delegate`: A type that conforms to the [`DropDelegate`](../dropdelegate.md) protocol. You have comprehensive control over drop behavior when you use a delegate.
 
 ## See Also
 
-- [func itemProvider(Optional<() -> NSItemProvider?>) -> some View](view/itemprovider(_:).md)
+### Moving items using item providers
+- [func itemProvider(Optional<() -> NSItemProvider?>) -> some View](./itemprovider%28_%29.md)
   Provides a closure that vends the drag representation to be used for a particular data element.
-- [func onDrag<V>(() -> NSItemProvider, preview: () -> V) -> some View](view/ondrag(_:preview:).md)
+- [func onDrag<V>(() -> NSItemProvider, preview: () -> V) -> some View](./ondrag%28_,preview%29.md)
   Activates this view as the source of a drag and drop operation.
-- [func onDrag(() -> NSItemProvider) -> some View](view/ondrag(_:).md)
+- [func onDrag(() -> NSItemProvider) -> some View](./ondrag%28_%29.md)
   Activates this view as the source of a drag and drop operation.
-- [func onDrop(of:isTargeted:perform:)](view/ondrop(of:istargeted:perform:).md)
+- [func onDrop(of:isTargeted:perform:)](./ondrop%28of,istargeted,perform%29.md)
   Defines the destination of a drag-and-drop operation that handles the dropped content with a closure that you specify.
-- [protocol DropDelegate](dropdelegate.md)
+- [protocol DropDelegate](../dropdelegate.md)
   An interface that you implement to interact with a drop operation in a view modified to accept drops.
-- [struct DropProposal](dropproposal.md)
+- [struct DropProposal](../dropproposal.md)
   The behavior of a drop.
-- [enum DropOperation](dropoperation.md)
+- [enum DropOperation](../dropoperation.md)
   Operation types that determine how a drag and drop session resolves when the user drops a drag item.
-- [struct DropInfo](dropinfo.md)
+- [struct DropInfo](../dropinfo.md)
   The current state of a drop.
 
 

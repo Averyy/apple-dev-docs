@@ -1,6 +1,7 @@
 # Configuring your Xcode project to use source control
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Sync code changes between team members and development computers by setting up your Xcode project to use Git source control.
 
@@ -10,9 +11,9 @@ When you develop an app with a team, or by yourself using more than one Mac comp
 
 Xcode uses Git commands to manage your *source control repository* that tracks a history of your project file changes. If you use a remote repository, Git syncs those changes across other devices. Set up your Xcode project to use Git by creating a new local repository, or by connecting it to an existing remote repository.
 
-For more information on source control settings, see [`Configuring source control in Xcode`](configuring-source-control-in-xcode.md).
+For more information on source control settings, see [Configuring source control in Xcode](./configuring-source-control-in-xcode.md).
 
-##### Customize Your Author Name and Email
+##### Customize your author name and email
 
 Before you set up a source control repository, enter your preferred name and email address that Xcode uses for all your projects.
 
@@ -20,23 +21,23 @@ Then when you make changes to your source code and commit them to your repositor
 
 To change your name and email address for source control, choose Xcode > Settings, click Source Control in the sidebar, and on the right, toggle “Enable source control” on. Then click “Git settings” below and in the next sheet, enter your author name and email address in the corresponding text fields.
 
-![A screenshot showing the Git Settings with the Author name and Author email text fields showing.](/images/com.apple.Xcode/configuring-your-xcode-project-to-use-source-control-1@2x.png)
+![A screenshot showing the Git Settings with the Author name and Author email text fields showing.](https://developer.apple.com/tutorials/images/com.apple.Xcode/configuring-your-xcode-project-to-use-source-control-1@2x.png)
 
-##### Create a Local Repository for a New Project
+##### Create a local repository for a new project
 
 When you create a new Xcode project from a template, you can specify whether to create a local Git source code repository in the last sheet. Select “Create Git repository on my Mac” and then click Create.
 
-![A screenshot of the last dialog when creating a project from a template showing the “Create Git repository on my Mac” option and Create button.](/images/com.apple.Xcode/configuring-your-xcode-project-to-use-source-control-2@2x.png)
+![A screenshot of the last dialog when creating a project from a template showing the “Create Git repository on my Mac” option and Create button.](https://developer.apple.com/tutorials/images/com.apple.Xcode/configuring-your-xcode-project-to-use-source-control-2@2x.png)
 
-Xcode creates the project folder, initializes a local Git source control repository, and commits all the files that it creates for your project. For more information, see [`Creating an Xcode project for an app`](creating-an-xcode-project-for-an-app.md).
+Xcode creates the project folder, initializes a local Git source control repository, and commits all the files that it creates for your project. For more information, see [Creating an Xcode project for an app](./creating-an-xcode-project-for-an-app.md).
 
-##### Clone a Project From a Remote Repository
+##### Clone a project from a remote repository
 
 You can also create a local copy, or *clone*, of an existing remote Git repository that you can commit changes to using Xcode.
 
 First, enter the account information in Xcode settings to access the remote repository. On the Xcode > Settings > Source Control pane, click Add Account. In the dialog, select the type of account and click Continue. For example, select Bitbucket Server or GitHub Enterprise.
 
-![A screenshot of the account dialog showing Bitbucket Cloud selected and a Continue button.](/images/com.apple.Xcode/configuring-your-xcode-project-to-use-source-control-3@2x.png)
+![A screenshot of the account dialog showing Bitbucket Cloud selected and a Continue button.](https://developer.apple.com/tutorials/images/com.apple.Xcode/configuring-your-xcode-project-to-use-source-control-3@2x.png)
 
 In the next dialog, enter your credentials depending on the type of account, and click Sign In. If you need a token, click Create a Token on [*Account Type*] and follow the instructions on the account-specific webpage that appears in your browser.
 
@@ -44,11 +45,11 @@ To clone a remote repository while running Xcode, choose Integrate > Clone or cl
 
 If you add one or more source control accounts, Xcode shows a list of the projects that you can clone in the next window. In the search field at the top, enter the name of the repository to find it quickly, or paste the entire repository URL in the search field if it doesn’t appear in the list. Then select the repository and click Clone.
 
-![A screenshot of the clone repository window with a search field at the top and a Clone button below.](/images/com.apple.Xcode/configuring-your-xcode-project-to-use-source-control-4@2x.png)
+![A screenshot of the clone repository window with a search field at the top and a Clone button below.](https://developer.apple.com/tutorials/images/com.apple.Xcode/configuring-your-xcode-project-to-use-source-control-4@2x.png)
 
 If the remote repository contains an Xcode project, Xcode scans the project and provides a list of branches available to clone. Select a branch to clone from the pop-up menu, and in the next dialog, provide a location for Xcode to save the local project. Xcode checks out the branch and opens the project.
 
-##### Connect to a Remote Repository to Sync Changes
+##### Connect to a remote repository to sync changes
 
 You can also create a new remote repository for an existing local project or connect a local project to an existing remote repository. For example, do this if you create a local repository and later decide to use a remote repository, or if you download your project from a remote repository without cloning it and then want to create a new remote repository to store your changes.
 
@@ -57,11 +58,11 @@ In the Source Control navigator, click the Repositories tab. If necessary, expan
 - To create a new remote repository for an existing project, Control-click Remotes and choose New “[*project name*]” Remote from the pop-up menu. Enter the information about the remote repository in the dialog and click Create.
 - To connect a local project to an existing remote repository, Control-click Remotes and choose Add Existing Remote from the pop-up menu. Enter a name and URL for the remote repository and click Add.
 
-##### Retrieve Changes From a Remote Repository
+##### Retrieve changes from a remote repository
 
 Get changes from the remote repository by choosing Integrate > Pull. In the dialog that appears, select the branch and click Pull.
 
-![A screenshot of the pull changes dialog, showing a pop-up menu for choosing a branch, an option to Rebase local changes onto upstream changes, and a Pull button.](/images/com.apple.Xcode/configuring-your-xcode-project-to-use-source-control-7@2x.png)
+![A screenshot of the pull changes dialog, showing a pop-up menu for choosing a branch, an option to Rebase local changes onto upstream changes, and a Pull button.](https://developer.apple.com/tutorials/images/com.apple.Xcode/configuring-your-xcode-project-to-use-source-control-7@2x.png)
 
 If you have local changes that you want to keep, select the “Rebase local changes onto upstream changes” option before you click Pull. Otherwise, a dialog may appear that asks whether you want to stash your local changes before you pull remote changes.
 
@@ -71,7 +72,8 @@ For example, if you commit changes from different computers or work on the same 
 
 ## See Also
 
-- [Tracking code changes in a source control repository](tracking-code-changes-in-a-source-control-repository.md)
+### Essentials
+- [Tracking code changes in a source control repository](./tracking-code-changes-in-a-source-control-repository.md)
   Create a history of incremental changes to your project using commits and pushing to remote repositories.
 
 

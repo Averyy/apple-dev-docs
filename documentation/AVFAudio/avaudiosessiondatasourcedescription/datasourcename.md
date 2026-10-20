@@ -1,7 +1,8 @@
 # dataSourceName
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A human-readable name for the data source.
 
@@ -19,9 +20,14 @@ A human-readable name for the data source.
 var dataSourceName: String { get }
 ```
 
+```objc
+@property (readonly) NSString * dataSourceName;
+```
+
 ## See Also
 
-- [var dataSourceID: NSNumber](avaudiosessiondatasourcedescription/datasourceid.md)
+### Identifying a data source
+- [var dataSourceID: NSNumber](./datasourceid.md)
   The system-assigned identifier for the data source.
 
 

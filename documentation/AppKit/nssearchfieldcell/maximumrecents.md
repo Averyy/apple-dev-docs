@@ -1,17 +1,22 @@
 # maximumRecents
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of search strings that can appear in the search menu.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var maximumRecents: Int { get set }
+```
+
+```objc
+@property NSInteger maximumRecents;
 ```
 
 #### Discussion
@@ -22,9 +27,10 @@ When the maximum number of search strings is exceeded, the oldest search string 
 
 ## See Also
 
-- [var recentSearches: [String]!](nssearchfieldcell/recentsearches.md)
+### Managing recent search strings
+- [var recentSearches: [String]!](./recentsearches.md)
   An array of the recent search strings to display in the pop-up icon menu of the search field.
-- [var recentsAutosaveName: NSSearchField.RecentsAutosaveName?](nssearchfieldcell/recentsautosavename.md)
+- [var recentsAutosaveName: NSSearchField.RecentsAutosaveName?](./recentsautosavename.md)
   The autosave name under which the search field automatically saves the list of recent search strings.
 
 

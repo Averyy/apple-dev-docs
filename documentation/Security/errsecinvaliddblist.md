@@ -1,7 +1,8 @@
 # errSecInvalidDBList
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid DB list was detected.
 
@@ -18,6 +19,10 @@ An invalid DB list was detected.
 
 ```swift
 var errSecInvalidDBList: OSStatus { get }
+```
+
+```c
+errSecInvalidDBList
 ```
 
 

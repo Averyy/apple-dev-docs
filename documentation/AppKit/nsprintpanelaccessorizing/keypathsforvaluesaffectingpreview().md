@@ -1,18 +1,23 @@
 # keyPathsForValuesAffectingPreview()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a set of strings identifying the key paths for any properties that might affect the built-in print preview.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @MainActor
 optional func keyPathsForValuesAffectingPreview() -> Set<String>
+```
+
+```objc
+- (NSSet<NSString *> *) keyPathsForValuesAffectingPreview;
 ```
 
 #### Return Value
@@ -27,9 +32,10 @@ Implementation of this method is optional. You do not need to implement this met
 
 ## See Also
 
-- [func localizedSummaryItems() -> [[NSPrintPanel.AccessorySummaryKey : String]]](nsprintpanelaccessorizing/localizedsummaryitems.md)
+### Responding to Being Loaded from a Nib File
+- [func localizedSummaryItems() -> [[NSPrintPanel.AccessorySummaryKey : String]]](./localizedsummaryitems%28%29.md)
   Returns an array of dictionaries containing the localized user setting summary strings.
-- [NSPrintPanel.AccessorySummaryKey](nsprintpanel/accessorysummarykey.md)
+- [NSPrintPanel.AccessorySummaryKey](../nsprintpanel/accessorysummarykey.md)
   Constants that specify the accessory panel keys.
 
 

@@ -1,9 +1,10 @@
 # callables
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The dictionary used during runtime to lookup the [`MPSGraphExecutable`](mpsgraphexecutable.md) which correspond to the `symbolName`.
+The dictionary used during runtime to lookup the [`MPSGraphExecutable`](../mpsgraphexecutable.md) which correspond to the `symbolName`.
 
 **Availability**:
 - iOS 17.1+
@@ -17,6 +18,10 @@ The dictionary used during runtime to lookup the [`MPSGraphExecutable`](mpsgraph
 
 ```swift
 var callables: [String : MPSGraphExecutable]? { get set }
+```
+
+```objc
+@property (atomic, readwrite, nullable) MPSGraphCallableMap * callables;
 ```
 
 

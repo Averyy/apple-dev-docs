@@ -1,17 +1,22 @@
 # removeFromFavorites()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the target device from the user’s favorite devices list.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func removeFromFavorites() -> IOReturn
+```
+
+```objc
+- (IOReturn) removeFromFavorites;
 ```
 
 #### Return Value

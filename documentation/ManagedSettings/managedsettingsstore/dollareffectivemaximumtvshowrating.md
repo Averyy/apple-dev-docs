@@ -1,7 +1,8 @@
 # $effectiveMaximumTVShowRating
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -17,11 +18,12 @@ var $effectiveMaximumTVShowRating: Published<Int>.Publisher { get }
 
 ## Mentions
 
-- [Confirming the effective TV and movie ratings](readingmedia.md)
+- [Confirming the effective TV and movie ratings](../readingmedia.md)
 
 ## See Also
 
-- [var effectiveMaximumMovieRating: Int](managedsettingsstore/effectivemaximummovierating.md)
+### Observing current settings
+- [var effectiveMaximumMovieRating: Int](./effectivemaximummovierating.md)
   The movie rating constraint that is active on this device.
 
 

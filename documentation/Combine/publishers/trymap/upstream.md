@@ -1,7 +1,8 @@
 # upstream
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The publisher from which this publisher receives elements.
 
@@ -22,7 +23,8 @@ let upstream: Upstream
 
 ## See Also
 
-- [let transform: (Upstream.Output) throws -> Output](publishers/trymap/transform.md)
+### Inspecting publisher properties
+- [let transform: (Upstream.Output) throws -> Output](./transform.md)
   The error-throwing closure that transforms elements from the upstream publisher.
 
 

@@ -1,7 +1,8 @@
 # NSXPCConnectionErrorMinimum
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The lower bounds of XPC connection error code values.
 
@@ -22,19 +23,20 @@ var NSXPCConnectionErrorMinimum: Int { get }
 
 #### Discussion
 
-All XPC error codes have values between [`NSXPCConnectionErrorMinimum`](nsxpcconnectionerrorminimum-swift.var.md) and [`NSXPCConnectionErrorMaximum`](nsxpcconnectionerrormaximum-swift.var.md), exclusive. This constant does not correspond to any particular error.
+All XPC error codes have values between [`NSXPCConnectionErrorMinimum`](./nsxpcconnectionerrorminimum-swift.var.md) and [`NSXPCConnectionErrorMaximum`](./nsxpcconnectionerrormaximum-swift.var.md), exclusive. This constant does not correspond to any particular error.
 
 ## See Also
 
-- [var NSXPCConnectionInterrupted: Int](nsxpcconnectioninterrupted-swift.var.md)
+### Error codes
+- [var NSXPCConnectionInterrupted: Int](./nsxpcconnectioninterrupted-swift.var.md)
   The XPC connection was interrupted.
-- [var NSXPCConnectionInvalid: Int](nsxpcconnectioninvalid-swift.var.md)
+- [var NSXPCConnectionInvalid: Int](./nsxpcconnectioninvalid-swift.var.md)
   The XPC connection was invalid.
-- [var NSXPCConnectionReplyInvalid: Int](nsxpcconnectionreplyinvalid-swift.var.md)
+- [var NSXPCConnectionReplyInvalid: Int](./nsxpcconnectionreplyinvalid-swift.var.md)
   The XPC connection reply was invalid.
-- [var NSXPCConnectionErrorMaximum: Int](nsxpcconnectionerrormaximum-swift.var.md)
+- [var NSXPCConnectionErrorMaximum: Int](./nsxpcconnectionerrormaximum-swift.var.md)
   The upper bounds of XPC connection error code values.
-- [var NSXPCConnectionCodeSigningRequirementFailure: Int](nsxpcconnectioncodesigningrequirementfailure-swift.var.md)
+- [var NSXPCConnectionCodeSigningRequirementFailure: Int](./nsxpcconnectioncodesigningrequirementfailure-swift.var.md)
   A code-signing requirement check failed.
 
 

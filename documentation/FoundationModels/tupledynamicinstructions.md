@@ -1,7 +1,8 @@
 # TupleDynamicInstructions
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A dynamic instructions type that represents a tuple.
 
@@ -22,23 +23,24 @@ struct TupleDynamicInstructions<each Content> where repeat each Content : Dynami
 ## Topics
 
 ### Creating an instance
-- [init(repeat each Content)](tupledynamicinstructions/init(_:).md)
+- [init(repeat each Content)](./tupledynamicinstructions/init%28_%29.md)
   Creates a dynamic instructions instance that represents a tuple.
 
 ## Relationships
 
 ### Conforms To
-- [DynamicInstructions](dynamicinstructions.md)
+- [DynamicInstructions](./dynamicinstructions.md)
 
 ## See Also
 
-- [struct DynamicInstructionsBuilder](dynamicinstructionsbuilder.md)
+### Building dynamic instructions
+- [struct DynamicInstructionsBuilder](./dynamicinstructionsbuilder.md)
   A result builder that combines tools and other content into dynamic instructions.
-- [struct EmptyDynamicInstructions](emptydynamicinstructions.md)
+- [struct EmptyDynamicInstructions](./emptydynamicinstructions.md)
   An empty dynamic instructions type.
-- [struct ConditionalDynamicInstructions](conditionaldynamicinstructions.md)
+- [struct ConditionalDynamicInstructions](./conditionaldynamicinstructions.md)
   A dynamic instructions type that conditionally selects between two conditions.
-- [struct AnyDynamicInstructions](anydynamicinstructions.md)
+- [struct AnyDynamicInstructions](./anydynamicinstructions.md)
   A dynamic instructions type that’s type-erased.
 
 

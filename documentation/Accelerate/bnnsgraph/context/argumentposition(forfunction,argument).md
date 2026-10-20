@@ -1,7 +1,8 @@
 # argumentPosition(forFunction:argument:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index into the arguments array for the given function argument.
 
@@ -11,7 +12,7 @@ Returns the index into the arguments array for the given function argument.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -27,21 +28,23 @@ func argumentPosition(forFunction function: String? = nil, argument: String) -> 
 
 ## See Also
 
-- [func BNNSGraphGetArgumentPosition(bnns_graph_t, UnsafePointer<CChar>?, UnsafePointer<CChar>) -> Int](bnnsgraphgetargumentposition(_:_:_:).md)
+### Related Documentation
+- [func BNNSGraphGetArgumentPosition(bnns_graph_t, UnsafePointer<CChar>?, UnsafePointer<CChar>) -> Int](../../bnnsgraphgetargumentposition%28_,_,_%29.md)
   Returns the index into the arguments array for the given function argument.
-- [func setDynamicShapes([BNNSGraph.Shape], forFunction: String?) async throws -> [BNNSGraph.Shape]](bnnsgraph/context/setdynamicshapes(_:forfunction:).md)
+### Specifying and querying a graph context’s properties
+- [func setDynamicShapes([BNNSGraph.Shape], forFunction: String?) async throws -> [BNNSGraph.Shape]](./setdynamicshapes%28_,forfunction%29.md)
   Specifies the dynamic shapes for a graph and, if possible, infers the output shapes.
-- [BNNSGraph.Shape](bnnsgraph/shape.md)
+- [BNNSGraph.Shape](../shape.md)
   The specification of the shape of an argument.
-- [func argumentCount(forFunction: String?) -> Int](bnnsgraph/context/argumentcount(forfunction:).md)
+- [func argumentCount(forFunction: String?) -> Int](./argumentcount%28forfunction%29.md)
   Returns the number of arguments for the given function argument.
-- [func argumentNames(forFunction: String?) -> [String]](bnnsgraph/context/argumentnames(forfunction:).md)
+- [func argumentNames(forFunction: String?) -> [String]](./argumentnames%28forfunction%29.md)
   Returns the names of arguments for the given function argument.
-- [var functionCount: Int](bnnsgraph/context/functioncount.md)
+- [var functionCount: Int](./functioncount.md)
   The number of input arguments for the given function argument.
-- [var functionNames: [String]](bnnsgraph/context/functionnames.md)
+- [var functionNames: [String]](./functionnames.md)
   Returns the names of callable functions in the graph.
-- [var checkForNaNsAndInfinities: Bool](bnnsgraph/context/checkfornansandinfinities.md)
+- [var checkForNaNsAndInfinities: Bool](./checkfornansandinfinities.md)
   A Boolean value that specifies that the context checks intermediate tensors for NaNs and infinities.
 
 

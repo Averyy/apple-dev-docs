@@ -1,7 +1,8 @@
 # writeAttributePreferredExtendedPanID(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributePreferredExtendedPanID(withValue value: Data?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributePreferredExtendedPanID(withValue value: Data?) async throws
+```
+
+```objc
+- (void) writeAttributePreferredExtendedPanIDWithValue:(NSData *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

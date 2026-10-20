@@ -1,7 +1,8 @@
 # contentType
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content type.
 

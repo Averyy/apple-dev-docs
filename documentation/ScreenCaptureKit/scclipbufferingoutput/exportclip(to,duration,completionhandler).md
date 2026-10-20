@@ -1,7 +1,8 @@
 # exportClip(to:duration:completionHandler:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -14,7 +15,15 @@
 ## Declaration
 
 ```swift
+func exportClip(to url: URL, duration: TimeInterval, completionHandler: (@Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 func exportClip(to url: URL, duration: TimeInterval) async throws
+```
+
+```objc
+- (void) exportClipToURL:(NSURL *) url duration:(NSTimeInterval) duration completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion

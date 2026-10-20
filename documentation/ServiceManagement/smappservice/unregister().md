@@ -1,7 +1,8 @@
 # unregister()
 
 **Framework**: Service Management  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Unregisters the service so the system no longer launches it.
 
@@ -15,19 +16,24 @@ Unregisters the service so the system no longer launches it.
 func unregister() throws
 ```
 
+```objc
+- (BOOL) unregisterAndReturnError:(NSError **) error;
+```
+
 #### Discussion
 
-This is the opposite operation of [`register()`](smappservice/register().md).
+This is the opposite operation of [`register()`](./register%28%29.md).
 
 If the service corresponds to a LoginItem, LaunchAgent, or LaunchDaemon and the service is currently running it, the system terminates it. If the service corresponds to the main application, it continues running, but becomes unregistered to prevent future launches at login.
 
-If the service is already unregistered, this method returns [`kSMErrorJobNotFound`](ksmerrorjobnotfound.md).
+If the service is already unregistered, this method returns [`kSMErrorJobNotFound`](../ksmerrorjobnotfound.md).
 
 ## See Also
 
-- [func register() throws](smappservice/register.md)
+### Registering services
+- [func register() throws](./register%28%29.md)
   Registers the service so it can begin launching subject to user approval.
-- [func unregister(completionHandler: ((any Error)?) -> Void)](smappservice/unregister(completionhandler:).md)
+- [func unregister(completionHandler: ((any Error)?) -> Void)](./unregister%28completionhandler%29.md)
   Unregisters the service so the system no longer launches it and calls a completion handler you provide with the resulting error value.
 
 

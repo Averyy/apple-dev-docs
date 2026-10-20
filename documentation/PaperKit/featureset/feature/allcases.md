@@ -1,7 +1,8 @@
 # allCases
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 All cases of the feature enumeration, including platform-restricted ones.
 

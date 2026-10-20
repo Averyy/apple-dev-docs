@@ -1,17 +1,18 @@
 # PHASEError
 
 **Framework**: PHASE  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An error that PHASE reports.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -22,31 +23,32 @@ struct PHASEError
 ## Topics
 
 ### Identifying an Error Cause
-- [static var initializeFailed: PHASEError.Code](phaseerror-swift.struct/initializefailed.md)
+- [static var initializeFailed: PHASEError.Code](./phaseerror-swift.struct/initializefailed.md)
   An error that indicates the engine failed to initialize.
-- [static var invalidObject: PHASEError.Code](phaseerror-swift.struct/invalidobject.md)
+- [static var invalidObject: PHASEError.Code](./phaseerror-swift.struct/invalidobject.md)
   An error that indicates an object is invalid in a specific context.
 ### Creating an Error
-- [PHASEError.Code](phaseerror-swift.struct/code.md)
+- [PHASEError.Code](./phaseerror-swift.struct/code.md)
   Codes that identify errors in PHASE.
 ### Type Properties
-- [static var errorDomain: String](phaseerror-swift.struct/errordomain.md)
+- [static var errorDomain: String](./phaseerror-swift.struct/errordomain.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [PHASEError.Code](phaseerror-swift.struct/code.md)
+### Framework Errors
+- [PHASEError.Code](./phaseerror-swift.struct/code.md)
   Codes that identify errors in PHASE.
-- [let PHASEErrorDomain: String](phaseerrordomain.md)
+- [let PHASEErrorDomain: String](./phaseerrordomain.md)
   A unique error domain for the framework.
 
 

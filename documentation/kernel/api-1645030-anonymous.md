@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOBatteryCharge](1645030-anonymous/kiobatterycharge.md)
-- [kIOBatteryChargerConnect](1645030-anonymous/kiobatterychargerconnect.md)
-- [kIOBatteryInstalled](1645030-anonymous/kiobatteryinstalled.md)
+- [kIOBatteryCharge](./api-1645030-anonymous/kiobatterycharge.md)
+- [kIOBatteryChargerConnect](./api-1645030-anonymous/kiobatterychargerconnect.md)
+- [kIOBatteryInstalled](./api-1645030-anonymous/kiobatteryinstalled.md)
 
 
 ---

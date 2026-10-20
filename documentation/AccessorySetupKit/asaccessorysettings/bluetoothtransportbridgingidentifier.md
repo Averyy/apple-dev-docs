@@ -1,7 +1,8 @@
 # bluetoothTransportBridgingIdentifier
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A 6-byte identifier for bridging classic transport profiles.
 
@@ -15,13 +16,18 @@ A 6-byte identifier for bridging classic transport profiles.
 var bluetoothTransportBridgingIdentifier: Data? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSData * bluetoothTransportBridgingIdentifier;
+```
+
 #### Discussion
 
 AccessorySetupKit ignores this property if another app already authorized and bridged the accessory.
 
 ## See Also
 
-- [var ssid: String?](asaccessorysettings/ssid.md)
+### Inspecting accessory settings
+- [var ssid: String?](./ssid.md)
   A hotspot identifier that clients can use to connect to an accessory’s hotspot.
 
 

@@ -1,7 +1,8 @@
 # includingAll
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A filter that includes all point of interest categories.
 
@@ -20,17 +21,22 @@ A filter that includes all point of interest categories.
 class var includingAll: MKPointOfInterestFilter { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) MKPointOfInterestFilter * filterIncludingAllCategories;
+```
+
 #### Discussion
 
-You can use [`includingAll`](mkpointofinterestfilter/includingall.md)  to include all points of interest in your map view without listing all the categories individually.
+You can use [`includingAll`](./includingall.md)  to include all points of interest in your map view without listing all the categories individually.
 
 ## See Also
 
-- [class var excludingAll: MKPointOfInterestFilter](mkpointofinterestfilter/excludingall.md)
+### Creating filters
+- [class var excludingAll: MKPointOfInterestFilter](./excludingall.md)
   A filter that excludes all point of interest categories.
-- [init(excluding: [MKPointOfInterestCategory])](mkpointofinterestfilter/init(excluding:).md)
+- [init(excluding: [MKPointOfInterestCategory])](./init%28excluding%29.md)
   Initialize the point of interest filter with a list of categories to exclude.
-- [init(including: [MKPointOfInterestCategory])](mkpointofinterestfilter/init(including:).md)
+- [init(including: [MKPointOfInterestCategory])](./init%28including%29.md)
   Initialize the point of interest filter with a list of categories to include.
 
 

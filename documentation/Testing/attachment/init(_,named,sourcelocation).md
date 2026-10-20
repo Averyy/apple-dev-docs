@@ -1,7 +1,8 @@
 # init(_:named:sourceLocation:)
 
 **Framework**: Swift Testing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an instance of this type that encloses the given attachable value.
 
@@ -14,6 +15,8 @@ Initialize an instance of this type that encloses the given attachable value.
 ```swift
 init(_ attachableValue: consuming AttachableValue, named preferredName: String? = nil, sourceLocation: SourceLocation = #_sourceLocation)
 ```
+
+Available when `AttachableValue` conforms to `Attachable`.
 
 ## Parameters
 

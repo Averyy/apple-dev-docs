@@ -1,7 +1,8 @@
 # endRefreshing()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the refresh controller that a refresh operation has ended.
 
@@ -12,6 +13,10 @@ Tells the refresh controller that a refresh operation has ended.
 
 ```swift
 func endRefreshing()
+```
+
+```objc
+- (void) endRefreshing;
 ```
 
 #### Discussion

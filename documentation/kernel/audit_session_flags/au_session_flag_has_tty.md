@@ -1,14 +1,15 @@
 # AU_SESSION_FLAG_HAS_TTY
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 AU_SESSION_FLAG_HAS_TTY = 0x0020
 ```
 

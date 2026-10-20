@@ -1,7 +1,8 @@
 # groupReadWriteExecute
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the group has read, write, and execute permission.
 
@@ -22,17 +23,18 @@ static var groupReadWriteExecute: FilePermissions { get }
 
 ## See Also
 
-- [static var groupRead: FilePermissions](filepermissions/groupread.md)
+### Group Permissions
+- [static var groupRead: FilePermissions](./groupread.md)
   Indicates that the group has read-only permission.
-- [static var groupWrite: FilePermissions](filepermissions/groupwrite.md)
+- [static var groupWrite: FilePermissions](./groupwrite.md)
   Indicates that the group has write-only permission.
-- [static var groupExecute: FilePermissions](filepermissions/groupexecute.md)
+- [static var groupExecute: FilePermissions](./groupexecute.md)
   Indicates that the group has execute-only permission.
-- [static var groupReadWrite: FilePermissions](filepermissions/groupreadwrite.md)
+- [static var groupReadWrite: FilePermissions](./groupreadwrite.md)
   Indicates that the group has read-write permission.
-- [static var groupReadExecute: FilePermissions](filepermissions/groupreadexecute.md)
+- [static var groupReadExecute: FilePermissions](./groupreadexecute.md)
   Indicates that the group has read-execute permission.
-- [static var groupWriteExecute: FilePermissions](filepermissions/groupwriteexecute.md)
+- [static var groupWriteExecute: FilePermissions](./groupwriteexecute.md)
   Indicates that the group has write-execute permission.
 
 

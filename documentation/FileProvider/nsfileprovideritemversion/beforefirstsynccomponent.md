@@ -1,7 +1,8 @@
 # beforeFirstSyncComponent
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value indicating that this version predates the version returned by the file provider extension.
 
@@ -18,17 +19,22 @@ A Boolean value indicating that this version predates the version returned by th
 class var beforeFirstSyncComponent: Data { get }
 ```
 
+```objc
+@property (class, readonly, nonnull) NSData * beforeFirstSyncComponent;
+```
+
 #### Discussion
 
 The system uses this property to represent an item that doesn’t have a corresponding version provided by the file provider extension.
 
-When creating an item by calling the [`createItem(basedOn:fields:contents:options:request:completionHandler:)`](nsfileproviderreplicatedextension/createitem(basedon:fields:contents:options:request:completionhandler:).md) method, if your file provider extension returns an item that doesn’t match the template, the system tries to apply the necessary changes before saving the item to disk. However, if the system detects conflicts with the version on disk, it sends the new item back to your file provider extension by calling either the [`modifyItem(_:baseVersion:changedFields:contents:options:request:completionHandler:)`](nsfileproviderreplicatedextension/modifyitem(_:baseversion:changedfields:contents:options:request:completionhandler:).md) of [`deleteItem(identifier:baseVersion:options:request:completionHandler:)`](nsfileproviderreplicatedextension/deleteitem(identifier:baseversion:options:request:completionhandler:).md) methods with a `baseVersion` property that represents the item passed to the [`createItem(basedOn:fields:contents:options:request:completionHandler:)`](nsfileproviderreplicatedextension/createitem(basedon:fields:contents:options:request:completionhandler:).md) method.
+When creating an item by calling the [`createItem(basedOn:fields:contents:options:request:completionHandler:)`](../nsfileproviderreplicatedextension/createitem%28basedon,fields,contents,options,request,completionhandler%29.md) method, if your file provider extension returns an item that doesn’t match the template, the system tries to apply the necessary changes before saving the item to disk. However, if the system detects conflicts with the version on disk, it sends the new item back to your file provider extension by calling either the [`modifyItem(_:baseVersion:changedFields:contents:options:request:completionHandler:)`](../nsfileproviderreplicatedextension/modifyitem%28_,baseversion,changedfields,contents,options,request,completionhandler%29.md) of [`deleteItem(identifier:baseVersion:options:request:completionHandler:)`](../nsfileproviderreplicatedextension/deleteitem%28identifier,baseversion,options,request,completionhandler%29.md) methods with a `baseVersion` property that represents the item passed to the [`createItem(basedOn:fields:contents:options:request:completionHandler:)`](../nsfileproviderreplicatedextension/createitem%28basedon,fields,contents,options,request,completionhandler%29.md) method.
 
 ## See Also
 
-- [var contentVersion: Data](nsfileprovideritemversion/contentversion.md)
+### Accessing Version Data
+- [var contentVersion: Data](./contentversion.md)
   An opaque object used to track versions of the item’s content.
-- [var metadataVersion: Data](nsfileprovideritemversion/metadataversion.md)
+- [var metadataVersion: Data](./metadataversion.md)
   An opaque object used to track versions of the item’s metadata.
 
 

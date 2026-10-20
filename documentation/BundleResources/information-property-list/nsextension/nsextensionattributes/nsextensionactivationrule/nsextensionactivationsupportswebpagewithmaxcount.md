@@ -1,7 +1,8 @@
 # NSExtensionActivationSupportsWebPageWithMaxCount
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The maximum number of webpages that the app extension supports.
 
@@ -11,13 +12,15 @@ The maximum number of webpages that the app extension supports.
 - macOS 10.10+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: integer
+- **Name**: `NSExtensionActivationSupportsWebPageWithMaxCount`
+- **Type**: integer
 
 ## See Also
 
-- [NSExtensionActivationSupportsWebURLWithMaxCount](information-property-list/nsextension/nsextensionattributes/nsextensionactivationrule/nsextensionactivationsupportsweburlwithmaxcount.md)
+### Web Content
+- [NSExtensionActivationSupportsWebURLWithMaxCount](./nsextensionactivationsupportsweburlwithmaxcount.md)
   The maximum number of HTTP URLs that the app extension supports.
 
 

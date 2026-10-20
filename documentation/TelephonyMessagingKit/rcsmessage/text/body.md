@@ -1,7 +1,8 @@
 # body
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The body of the text message, as a string.
 

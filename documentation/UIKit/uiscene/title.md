@@ -1,7 +1,8 @@
 # title
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A user-visible string you supply to help users differentiate among your app’s scenes.
 
@@ -18,6 +19,10 @@ A user-visible string you supply to help users differentiate among your app’s 
 var title: String! { get set }
 ```
 
+```objc
+@property (nonatomic, copy, null_resettable) NSString * title;
+```
+
 #### Discussion
 
 The system displays this string in the app switcher to make it easier for the user to differentiate among your app’s scenes. Set this property to an empty string if you don’t want the app switcher to display anything for the scene.
@@ -26,11 +31,12 @@ iPad and iPhone apps running on a Mac with Apple silicon and apps built with Mac
 
 ## See Also
 
-- [var activationState: UIScene.ActivationState](uiscene/activationstate-swift.property.md)
+### Getting the scene attributes
+- [var activationState: UIScene.ActivationState](./activationstate-swift.property.md)
   The current execution state of the scene.
-- [UIScene.ActivationState](uiscene/activationstate-swift.enum.md)
+- [UIScene.ActivationState](./activationstate-swift.enum.md)
   Constants that indicate the foreground or background execution state of your app.
-- [var subtitle: String](uiscene/subtitle.md)
+- [var subtitle: String](./subtitle.md)
   A string that the app displays in the title bar of a window when running in macOS.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: PaperKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asks the delegate to validate and potentially adjust an adornment’s proposed anchor position.
@@ -29,11 +30,18 @@ The final anchor position to use for the adornment, or `nil` to deny the move.
 - `id`: The unique identifier of the adornment the person is moving.
 - `proposedAnchor`: The proposed new anchor position for the adornment.
 
+## Default Implementations
+
+### PaperMarkupViewController.Delegate Implementations
+- [func paperMarkupViewController(PaperMarkupViewController, willUpdateAdornmentWithID: UUID, toProposedAnchor: MarkupAdornment.Anchor) -> MarkupAdornment.Anchor?](./papermarkupviewcontroller%28_,willupdateadornmentwithid,toproposedanchor%29-5m1yu.md)
+  Asks the delegate to validate and potentially adjust an adornment’s proposed anchor position.
+
 ## See Also
 
-- [func paperMarkupViewController(PaperMarkupViewController, didTapAdornmentWithID: UUID)](papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontroller(_:didtapadornmentwithid:).md)
+### Responding to adornment interactions
+- [func paperMarkupViewController(PaperMarkupViewController, didTapAdornmentWithID: UUID)](./papermarkupviewcontroller%28_,didtapadornmentwithid%29.md)
   Tells the delegate when a person taps an adornment.
-- [func paperMarkupViewController(PaperMarkupViewController, didUpdateAdornmentWithID: UUID, toAnchor: MarkupAdornment.Anchor)](papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontroller(_:didupdateadornmentwithid:toanchor:).md)
+- [func paperMarkupViewController(PaperMarkupViewController, didUpdateAdornmentWithID: UUID, toAnchor: MarkupAdornment.Anchor)](./papermarkupviewcontroller%28_,didupdateadornmentwithid,toanchor%29.md)
   Tells the delegate when a drag session ends for an adornment.
 
 

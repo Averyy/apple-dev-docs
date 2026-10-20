@@ -1,16 +1,21 @@
 # CGMouseButton.left
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 case left
+```
+
+```c
+kCGMouseButtonLeft
 ```
 
 #### Discussion
@@ -19,8 +24,9 @@ Specifies the only mouse button on a one-button mouse, or the left mouse button 
 
 ## See Also
 
-- [CGMouseButton.right](cgmousebutton/right.md)
-- [CGMouseButton.center](cgmousebutton/center.md)
+### Constants
+- [CGMouseButton.right](./right.md)
+- [CGMouseButton.center](./center.md)
 
 
 ---

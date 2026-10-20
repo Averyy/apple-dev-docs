@@ -1,7 +1,8 @@
 # init(recurrenceWith:interval:end:)
 
 **Framework**: EventKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a simple recurrence rule with a given frequency, interval, and end.
 
@@ -19,9 +20,13 @@ Initializes and returns a simple recurrence rule with a given frequency, interva
 init(recurrenceWith type: EKRecurrenceFrequency, interval: Int, end: EKRecurrenceEnd?)
 ```
 
+```objc
+- (instancetype) initRecurrenceWithFrequency:(EKRecurrenceFrequency) type interval:(NSInteger) interval end:(EKRecurrenceEnd *) end;
+```
+
 ## Mentions
 
-- [Creating a recurring event](creating-a-recurring-event.md)
+- [Creating a recurring event](../creating-a-recurring-event.md)
 
 #### Return Value
 
@@ -35,8 +40,10 @@ The initialized recurrence rule, or `nil` if invalid values are provided.
 
 ## See Also
 
-- [Calendar and Reminders Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/EventKitProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009765)
-- [enum EKSpan](ekspan.md)
+### Related Documentation
+- [Calendar and Reminders Programming Guide](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/EventKitProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009765)
+### Creating a Basic Recurrence Rule
+- [enum EKSpan](../ekspan.md)
   An object that indicates whether modifications should apply to a single event or all future events of a recurring event.
 
 

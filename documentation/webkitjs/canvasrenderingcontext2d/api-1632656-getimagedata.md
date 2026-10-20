@@ -1,7 +1,8 @@
 # getImageData
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Gets an `imageData` object containing an RGBa pixel array corresponding to a rectangular area of the canvas.
 
@@ -11,7 +12,7 @@ Gets an `imageData` object containing an RGBa pixel array corresponding to a rec
 
 ## Declaration
 
-```swift
+```
 ImageData getImageData(
     float sx, 
     float sy, 
@@ -20,7 +21,7 @@ ImageData getImageData(
 );
 ```
 
-#### Return_value
+#### Return Value
 
 An `imageData` object. 
 
@@ -37,9 +38,10 @@ All parameter values are in pixels relative to the upper-left corner of the canv
 
 ## See Also
 
-- [createImageData](canvasrenderingcontext2d/1632980-createimagedata.md)
+### Manipulating Pixels
+- [createImageData](./api-1632980-createimagedata.md)
   Creates an opaque object whose `data` property contains a one-dimensional array of pixel values, initialized to transparent black.
-- [putImageData](canvasrenderingcontext2d/1633082-putimagedata.md)
+- [putImageData](./api-1633082-putimagedata.md)
   Blits the contents of an `imageData` object to the canvas. Alternatively, blits a specified region of the `imageData` object to the canvas.
 
 

@@ -1,7 +1,8 @@
 # CSSM_ACL_PREAUTH_TRACKING_COUNT_MASK
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_ACL_PREAUTH_TRACKING_COUNT_MASK: UInt32 { get }
+```
+
+```c
+CSSM_ACL_PREAUTH_TRACKING_COUNT_MASK
 ```
 
 

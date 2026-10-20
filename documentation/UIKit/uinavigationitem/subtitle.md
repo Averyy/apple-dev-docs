@@ -1,7 +1,8 @@
 # subtitle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string to display as the subtitle in the navigation bar.
 
@@ -16,16 +17,21 @@ A string to display as the subtitle in the navigation bar.
 var subtitle: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * subtitle;
+```
+
 #### Discussion
 
 If `attributedSubtitle` is `non-nil`, this property just returns the `String` representation of the `attributedString`. If `subtitleView` is non-nil, this property is ignored.
 
 ## See Also
 
-- [var attributedSubtitle: AttributedString?](uinavigationitem/attributedsubtitle-wrjk.md)
-- [var largeSubtitle: String?](uinavigationitem/largesubtitle.md)
+### Configuring the subtitle
+- [var attributedSubtitle: AttributedString?](./attributedsubtitle-wrjk.md)
+- [var largeSubtitle: String?](./largesubtitle.md)
   String to be rendered below the large title.
-- [var largeAttributedSubtitle: AttributedString?](uinavigationitem/largeattributedsubtitle-4z2gx.md)
+- [var largeAttributedSubtitle: AttributedString?](./largeattributedsubtitle-4z2gx.md)
 
 
 ---

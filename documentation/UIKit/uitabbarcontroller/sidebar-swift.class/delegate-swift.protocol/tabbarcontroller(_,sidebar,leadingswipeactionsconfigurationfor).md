@@ -1,7 +1,8 @@
 # tabBarController(_:sidebar:leadingSwipeActionsConfigurationFor:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the sidebar is about to show leading swipe actions for the specified `tab`. Return either a concrete `UISwipeActionsConfiguration` or nil if the tab does not show swipe actions.
 
@@ -17,9 +18,13 @@ Called when the sidebar is about to show leading swipe actions for the specified
 optional func tabBarController(_ tabBarController: UITabBarController, sidebar: UITabBarController.Sidebar, leadingSwipeActionsConfigurationFor tab: UITab) -> UISwipeActionsConfiguration?
 ```
 
+```objc
+- (UISwipeActionsConfiguration *) tabBarController:(UITabBarController *) tabBarController sidebar:(UITabBarControllerSidebar *) sidebar leadingSwipeActionsConfigurationForTab:(UITab *) tab;
+```
+
 ## Mentions
 
-- [Elevating your iPad app with a tab bar and sidebar](elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
+- [Elevating your iPad app with a tab bar and sidebar](../../../elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
 
 
 ---

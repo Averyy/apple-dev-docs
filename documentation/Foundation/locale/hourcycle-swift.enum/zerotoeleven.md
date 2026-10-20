@@ -1,7 +1,8 @@
 # Locale.HourCycle.zeroToEleven
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A twelve hour cycle, counted from 0 to 11.
 
@@ -22,11 +23,12 @@ case zeroToEleven
 
 ## See Also
 
-- [Locale.HourCycle.oneToTwelve](locale/hourcycle-swift.enum/onetotwelve.md)
+### Using defined hour cycles
+- [Locale.HourCycle.oneToTwelve](./onetotwelve.md)
   A twelve hour cycle, counted from 1 to 12.
-- [Locale.HourCycle.zeroToTwentyThree](locale/hourcycle-swift.enum/zerototwentythree.md)
+- [Locale.HourCycle.zeroToTwentyThree](./zerototwentythree.md)
   A twenty-four hour cycle, counted from 0 to 23.
-- [Locale.HourCycle.oneToTwentyFour](locale/hourcycle-swift.enum/onetotwentyfour.md)
+- [Locale.HourCycle.oneToTwentyFour](./onetotwentyfour.md)
   A twenty-four hour cycle, counted from 1 to 24.
 
 

@@ -1,7 +1,8 @@
 # locale
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The locale to use when parsing date strings with the specified format. Use system locale if unspecified.
 

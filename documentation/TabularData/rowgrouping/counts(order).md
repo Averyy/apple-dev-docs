@@ -1,7 +1,8 @@
 # counts(order:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a data frame with two columns, one that has a row for each group key and another for the number of rows in the group.
 
@@ -30,7 +31,8 @@ The name of the data frame’s column that stores the number of rows in each gro
 
 ## See Also
 
-- [func aggregated<Element, Result>(on: [String], naming: (String) -> String, transform: (DiscontiguousColumnSlice<Element>) throws -> Result?) rethrows -> DataFrame](rowgrouping/aggregated(on:naming:transform:).md)
+### Aggregating a Row Grouping
+- [func aggregated<Element, Result>(on: [String], naming: (String) -> String, transform: (DiscontiguousColumnSlice<Element>) throws -> Result?) rethrows -> DataFrame](./aggregated%28on,naming,transform%29.md)
   Generates a data frame by aggregating each group’s contents for each column you list by name.
 
 

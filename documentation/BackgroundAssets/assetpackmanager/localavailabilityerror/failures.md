@@ -1,7 +1,8 @@
 # failures
 
 **Framework**: Background Assets  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary that maps asset packs to errors describing why the system couldn’t ensure their local availability.
 
@@ -21,11 +22,12 @@ let failures: [AssetPack : any Error]
 
 ## Mentions
 
-- [Reducing download and storage demands with localized asset packs](reducing-download-and-storage-demands-with-localized-asset-packs.md)
+- [Reducing download and storage demands with localized asset packs](../../reducing-download-and-storage-demands-with-localized-asset-packs.md)
 
 ## See Also
 
-- [let successes: Set<AssetPack>](assetpackmanager/localavailabilityerror/successes.md)
+### Accessing availability status
+- [let successes: Set<AssetPack>](./successes.md)
   A set of asset packs for which the system successfully ensured local availability.
 
 

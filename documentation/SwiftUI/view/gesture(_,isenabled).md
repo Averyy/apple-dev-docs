@@ -1,7 +1,8 @@
 # gesture(_:isEnabled:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attaches a gesture to the view with a lower precedence than gestures defined by the view.
 
@@ -23,7 +24,7 @@ nonisolated func gesture<T>(_ gesture: T, isEnabled: Bool) -> some View where T 
 
 #### Discussion
 
-Use this method when you need to attach a gesture to a view. The example below defines a custom gesture that prints a message to the console and attaches it to the view’s [`VStack`](vstack.md). Inside the [`VStack`](vstack.md) a red heart [`Image`](image.md) defines its own [`TapGesture`](tapgesture.md) handler that also prints a message to the console, and blue rectangle with no custom gesture handlers. Tapping or clicking the image prints a message to the console from the tap gesture handler on the image, while tapping or clicking  the rectangle inside the [`VStack`](vstack.md) prints a message in the console from the enclosing vertical stack gesture handler.
+Use this method when you need to attach a gesture to a view. The example below defines a custom gesture that prints a message to the console and attaches it to the view’s [`VStack`](../vstack.md). Inside the [`VStack`](../vstack.md) a red heart [`Image`](../image.md) defines its own [`TapGesture`](../tapgesture.md) handler that also prints a message to the console, and blue rectangle with no custom gesture handlers. Tapping or clicking the image prints a message to the console from the tap gesture handler on the image, while tapping or clicking  the rectangle inside the [`VStack`](../vstack.md) prints a message in the console from the enclosing vertical stack gesture handler.
 
 You can also use the `isEnabled` parameter to conditionally disable the gesture.
 
@@ -62,23 +63,24 @@ struct GestureExample: View {
 
 ## See Also
 
-- [func gesture(_:)](view/gesture(_:).md)
-  Attaches an [`NSGestureRecognizerRepresentable`](nsgesturerecognizerrepresentable.md) to the view.
-- [func gesture<T>(T, name: String, isEnabled: Bool) -> some View](view/gesture(_:name:isenabled:).md)
+### Recognizing gestures that change over time
+- [func gesture(_:)](./gesture%28_%29.md)
+  Attaches an [`NSGestureRecognizerRepresentable`](../nsgesturerecognizerrepresentable.md) to the view.
+- [func gesture<T>(T, name: String, isEnabled: Bool) -> some View](./gesture%28_,name,isenabled%29.md)
   Attaches a gesture to the view with a lower precedence than gestures defined by the view.
-- [func gesture<T>(T, including: GestureMask) -> some View](view/gesture(_:including:).md)
+- [func gesture<T>(T, including: GestureMask) -> some View](./gesture%28_,including%29.md)
   Attaches a gesture to the view with a lower precedence than gestures defined by the view.
-- [struct DragGesture](draggesture.md)
+- [struct DragGesture](../draggesture.md)
   A dragging motion that invokes an action as the drag-event sequence changes.
-- [struct WindowDragGesture](windowdraggesture.md)
+- [struct WindowDragGesture](../windowdraggesture.md)
   A gesture that recognizes the motion of and handles dragging a window.
-- [struct MagnifyGesture](magnifygesture.md)
+- [struct MagnifyGesture](../magnifygesture.md)
   A gesture that recognizes a magnification motion and tracks the amount of magnification.
-- [struct RotateGesture](rotategesture.md)
+- [struct RotateGesture](../rotategesture.md)
   A gesture that recognizes a rotation motion and tracks the angle of the rotation.
-- [struct RotateGesture3D](rotategesture3d.md)
+- [struct RotateGesture3D](../rotategesture3d.md)
   A gesture that recognizes 3D rotation motion and tracks the angle and axis of the rotation.
-- [struct GestureMask](gesturemask.md)
+- [struct GestureMask](../gesturemask.md)
   Options that control how adding a gesture to a view affects other gestures recognized by the view and its subviews.
 
 

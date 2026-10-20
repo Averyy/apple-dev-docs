@@ -1,7 +1,8 @@
 # init(localeIdentifier:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a locale using a given locale identifier.
 
@@ -20,6 +21,10 @@ Initializes a locale using a given locale identifier.
 init(localeIdentifier string: String)
 ```
 
+```objc
+- (instancetype) initWithLocaleIdentifier:(NSString *) string;
+```
+
 #### Return Value
 
 The initialized locale.
@@ -34,9 +39,11 @@ This method is the designated initializer for this class.
 
 ## See Also
 
-- [Internationalization and Localization Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/Introduction/Introduction.html#//apple_ref/doc/uid/10000171i)
-- [Data Formatting Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/DataFormatting.html#//apple_ref/doc/uid/10000029i)
-- [init?(coder: NSCoder)](nslocale/init(coder:).md)
+### Related Documentation
+- [Internationalization and Localization Guide](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/Introduction/Introduction.html#//apple_ref/doc/uid/10000171i)
+- [Data Formatting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/DataFormatting.html#//apple_ref/doc/uid/10000029i)
+### Initializing a Locale
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Returns a locale initialized from data in the given unarchiver.
 
 

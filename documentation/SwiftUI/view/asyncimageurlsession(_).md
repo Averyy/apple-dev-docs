@@ -1,7 +1,8 @@
 # asyncImageURLSession(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A modifier that adds a URL session for asynchronous images contained in the view to use when fetching image data.
 
@@ -23,7 +24,7 @@ func asyncImageURLSession(_ urlSession: URLSession) -> some View
 
 ## Parameters
 
-- `urlSession`: An instance of [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) for [`AsyncImage`](asyncimage.md) instances to use for image download data tasks.
+- `urlSession`: An instance of [`URLSession`](../../Foundation/urlsession.md) for [`AsyncImage`](../asyncimage.md) instances to use for image download data tasks.
 
 
 ---

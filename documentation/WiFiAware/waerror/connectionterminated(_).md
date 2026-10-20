@@ -1,7 +1,8 @@
 # WAError.connectionTerminated(_:)
 
 **Framework**: Wi-Fi Aware  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that occurs if the connection was terminated.
 
@@ -18,7 +19,8 @@ case connectionTerminated(WAError.ConnectionTerminatedDetails)
 
 ## See Also
 
-- [WAError.ConnectionTerminatedDetails](waerror/connectionterminateddetails.md)
+### Checking for terminated connection
+- [WAError.ConnectionTerminatedDetails](./connectionterminateddetails.md)
   The optional details describing the terminated connection.
 
 

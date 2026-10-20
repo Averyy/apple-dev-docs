@@ -1,6 +1,8 @@
 # Recognizing Objects in Live Capture
 
-**Framework**: Vision
+**Framework**: Vision  
+**Role**: Sample Code  
+**Download**: [RecognizingObjectsInLiveCapture.zip](https://docs-assets.developer.apple.com/published/4b9f61bcb221/RecognizingObjectsInLiveCapture.zip)
 
 Apply Vision algorithms to identify objects in real-time video.
 
@@ -12,17 +14,17 @@ Apply Vision algorithms to identify objects in real-time video.
 
 #### Overview
 
-With the [`Vision`](https://developer.apple.comhttps://developer.apple.com/documentation/vision) framework, you can recognize objects in live capture.  Starting in iOS 12, macOS 10.14, and tvOS 12, Vision requests made with a Core ML model return results as  [`VNRecognizedObjectObservation`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnrecognizedobjectobservation) objects, which identify objects found in the captured scene.
+With the [Vision](./Vision.md) framework, you can recognize objects in live capture.  Starting in iOS 12, macOS 10.14, and tvOS 12, Vision requests made with a Core ML model return results as  [VNRecognizedObjectObservation](./vnrecognizedobjectobservation.md) objects, which identify objects found in the captured scene.
 
 This sample app shows you how to set up your camera for live capture, incorporate a Core ML model into Vision, and parse results as classified objects.
 
-![Example screenshots of app identifying a croissant and bananas in live capture.](/images/Vision/BananaCroissant.png)
+![Example screenshots of app identifying a croissant and bananas in live capture.](https://developer.apple.com/tutorials/images/Vision/BananaCroissant.png)
 
 ##### Set Up Live Capture
 
 Although implementing AV live capture is similar from one capture app to another, configuring the camera to work best with Vision algorithms involves some subtle differences.
 
-**Configure the camera to use for capture.**  This sample app feeds camera output from AVFoundation into the main view controller.  Start by configuring an  [`AVCaptureSession`](https://developer.apple.comhttps://developer.apple.com/documentation/avfoundation/avcapturesession):
+**Configure the camera to use for capture.**  This sample app feeds camera output from AVFoundation into the main view controller.  Start by configuring an  [AVCaptureSession](../AVFoundation/avcapturesession.md):
 
 ```swift
 private let session = AVCaptureSession()
@@ -129,17 +131,17 @@ default:
 }
 ```
 
-##### Designate Labels Using a Core Ml Classifier
+##### Designate Labels Using a Core ML Classifier
 
-The Core ML model you include in your app determines which labels are used in Vision’s object identifiers.  The model in this sample app was trained in Turi Create 4.3.2 using Darknet YOLO (You Only Look Once). See [`Object Detection`](https://developer.apple.comhttps://apple.github.io/turicreate/docs/userguide/object_detection/) to learn how to generate your own models using Turi Create. Vision analyzes these models and returns observations as [`VNRecognizedObjectObservation`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnrecognizedobjectobservation) objects.
+The Core ML model you include in your app determines which labels are used in Vision’s object identifiers.  The model in this sample app was trained in Turi Create 4.3.2 using Darknet YOLO (You Only Look Once). See [Object Detection](https://apple.github.io/turicreate/docs/userguide/object_detection/) to learn how to generate your own models using Turi Create. Vision analyzes these models and returns observations as [`VNRecognizedObjectObservation`](./vnrecognizedobjectobservation.md) objects.
 
-Load the model using a [`VNCoreMLModel`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vncoremlmodel):
+Load the model using a [VNCoreMLModel](./vncoremlmodel.md):
 
 ```swift
 let visionModel = try VNCoreMLModel(for: MLModel(contentsOf: modelURL))
 ```
 
-Create a [`VNCoreMLRequest`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vncoremlrequest) with that model:
+Create a [VNCoreMLRequest](./vncoremlrequest.md) with that model:
 
 ```swift
 let objectRecognition = VNCoreMLRequest(model: visionModel, completionHandler: { (request, error) in
@@ -185,13 +187,14 @@ The bounding box tells where the object was observed. The sample uses this locat
 
 This sample simplifies classification by returning only the top classification; the array is ordered in decreasing order of confidence score.  However, your app could analyze the confidence score and show multiple classifications, either to further describe your detected objects, or to show competing classifications.
 
-You can also use the [`VNRecognizedObjectObservation`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnrecognizedobjectobservation) resulting from object recognition to initialize an object tracker such as [`VNTrackObjectRequest`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vntrackobjectrequest).  For more information about tracking, see the article on object tracking: [`Tracking Multiple Objects or Rectangles in Video`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/tracking-multiple-objects-or-rectangles-in-video).
+You can also use the [`VNRecognizedObjectObservation`](./vnrecognizedobjectobservation.md) resulting from object recognition to initialize an object tracker such as [VNTrackObjectRequest](./vntrackobjectrequest.md).  For more information about tracking, see the article on object tracking: [Tracking Multiple Objects or Rectangles in Video](./tracking-multiple-objects-or-rectangles-in-video.md).
 
 ## See Also
 
-- [Understanding a Dice Roll with Vision and Object Detection](../coreml/understanding-a-dice-roll-with-vision-and-object-detection.md)
+### Object recognition
+- [Understanding a Dice Roll with Vision and Object Detection](../CoreML/understanding-a-dice-roll-with-vision-and-object-detection.md)
   Detect dice position and values shown in a camera frame, and determine the end of a roll by leveraging a dice detection model.
-- [class VNRecognizedObjectObservation](vnrecognizedobjectobservation.md)
+- [class VNRecognizedObjectObservation](./vnrecognizedobjectobservation.md)
   A detected object observation with an array of classification labels that classify the recognized object.
 
 

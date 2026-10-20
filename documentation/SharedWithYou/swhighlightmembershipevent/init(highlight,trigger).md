@@ -1,7 +1,8 @@
 # init(highlight:trigger:)
 
 **Framework**: Shared with You  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and initializes a membership event.
 
@@ -16,6 +17,10 @@ Creates and initializes a membership event.
 
 ```swift
 init(highlight: SWHighlight, trigger: SWHighlightMembershipEventTrigger)
+```
+
+```objc
+- (instancetype) initWithHighlight:(SWHighlight *) highlight trigger:(SWHighlightMembershipEventTrigger) trigger;
 ```
 
 ## Parameters

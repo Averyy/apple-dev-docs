@@ -1,7 +1,8 @@
 # identify(completionHandler:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks an accessory to identify itself.
 
@@ -16,7 +17,15 @@ Asks an accessory to identify itself.
 ## Declaration
 
 ```swift
+func identify(completionHandler completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func identify() async throws
+```
+
+```objc
+- (void) identifyWithCompletionHandler:(void (^)(NSError *error)) completion;
 ```
 
 #### Discussion
@@ -25,11 +34,14 @@ Accessories typically identify themselves by briefly doing something the user ca
 
 ## Parameters
 
-- `completion`: Block that is invoked once the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
+- `completion`: Block that is invoked once the request is processed.
+
+  - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 
-- [var supportsIdentify: Bool](hmaccessory/supportsidentify.md)
+### Asking an accessory to identify itself
+- [var supportsIdentify: Bool](./supportsidentify.md)
   A Boolean value that indicates whether the accessory supports the identify action.
 
 

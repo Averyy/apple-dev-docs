@@ -2,6 +2,7 @@
 
 **Framework**: ImageCaptureCore  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the client when a capability of a camera changes.
@@ -19,9 +20,13 @@ Tells the client when a capability of a camera changes.
 func cameraDeviceDidChangeCapability(_ camera: ICCameraDevice)
 ```
 
+```objc
+- (void) cameraDeviceDidChangeCapability:(ICCameraDevice *) camera;
+```
+
 #### Discussion
 
-For more information about device capabilities, see [`ICDeviceCapability`](icdevicecapability.md).
+For more information about device capabilities, see [`ICDeviceCapability`](../icdevicecapability.md).
 
 
 ---

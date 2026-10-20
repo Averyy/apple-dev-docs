@@ -1,7 +1,8 @@
 # kPMPrinterProcessing
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies the processing state.
 

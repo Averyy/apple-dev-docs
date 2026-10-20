@@ -1,7 +1,8 @@
 # match(_:)
 
 **Framework**: ShazamKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Searches for the query signature in the reference signatures that the session catalog contains.
 
@@ -20,15 +21,20 @@ Searches for the query signature in the reference signatures that the session ca
 func match(_ signature: SHSignature)
 ```
 
+```objc
+- (void) matchSignature:(SHSignature *) signature;
+```
+
 ## Parameters
 
 - `signature`: The signature for searching the catalog of reference signatures.
 
 ## See Also
 
-- [func matchStreamingBuffer(AVAudioPCMBuffer, at: AVAudioTime?)](shsession/matchstreamingbuffer(_:at:).md)
+### Making a match
+- [func matchStreamingBuffer(AVAudioPCMBuffer, at: AVAudioTime?)](./matchstreamingbuffer%28_,at%29.md)
   Converts the audio in the buffer to a signature, and searches the reference signatures in the session catalog.
-- [Matching audio using the built-in microphone](matching-audio-using-the-built-in-microphone.md)
+- [Matching audio using the built-in microphone](../matching-audio-using-the-built-in-microphone.md)
   Use the audio stream from the microphone as the source for a ShazamKit session.
 
 

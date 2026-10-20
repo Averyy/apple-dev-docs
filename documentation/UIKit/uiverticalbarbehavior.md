@@ -1,7 +1,8 @@
 # UIVerticalBarBehavior
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A behavior that determines whether the vertical bar is used.
 
@@ -18,33 +19,38 @@ A behavior that determines whether the vertical bar is used.
 enum UIVerticalBarBehavior
 ```
 
+```c
+enum UIVerticalBarBehavior : NSInteger;
+```
+
 #### Overview
 
-Return this type from [`preferredVerticalBarBehavior`](uiviewcontroller/preferredverticalbarbehavior.md) to apply the preferred behavior.
+Return this type from [`preferredVerticalBarBehavior`](./uiviewcontroller/preferredverticalbarbehavior.md) to apply the preferred behavior.
 
 ## Topics
 
 ### Specifying vertical bar behavior
-- [UIVerticalBarBehavior.automatic](uiverticalbarbehavior/automatic.md)
+- [UIVerticalBarBehavior.automatic](./uiverticalbarbehavior/automatic.md)
   The system determines whether the vertical bar is rendered.
-- [UIVerticalBarBehavior.disabled](uiverticalbarbehavior/disabled.md)
+- [UIVerticalBarBehavior.disabled](./uiverticalbarbehavior/disabled.md)
   The vertical bar is disabled.
 ### Initializers
-- [init?(rawValue: Int)](uiverticalbarbehavior/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uiverticalbarbehavior/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum UIVerticalBarCompressionBehavior](uiverticalbarcompressionbehavior.md)
+### Configuring bars on the vertical axis
+- [enum UIVerticalBarCompressionBehavior](./uiverticalbarcompressionbehavior.md)
   How bars compress when different types of bars are hosted together and space is constrained.
 
 

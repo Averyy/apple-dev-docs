@@ -1,7 +1,8 @@
 # triangleIndexType
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data type of the triangle index buffer.
 

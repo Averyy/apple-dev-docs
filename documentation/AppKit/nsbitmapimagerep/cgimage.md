@@ -1,7 +1,8 @@
 # cgImage
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Core Graphics image object based on the bitmap image representation’s data.
 
@@ -14,13 +15,18 @@ A Core Graphics image object based on the bitmap image representation’s data.
 var cgImage: CGImage? { get }
 ```
 
+```objc
+@property (readonly, nullable) CGImageRef CGImage;
+```
+
 #### Discussion
 
-The autoreleased [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) opaque type in this property has pixel dimensions that are identical to those of the bitmap image rep object. If an existing [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) opaque type is not available, accessing this property creates a new one. If you change the bitmap image rep’s contents later, accessing this property again might return a different [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) opaque type.
+The autoreleased [`CGImage`](../../CoreGraphics/cgimage.md) opaque type in this property has pixel dimensions that are identical to those of the bitmap image rep object. If an existing [`CGImage`](../../CoreGraphics/cgimage.md) opaque type is not available, accessing this property creates a new one. If you change the bitmap image rep’s contents later, accessing this property again might return a different [`CGImage`](../../CoreGraphics/cgimage.md) opaque type.
 
 ## See Also
 
-- [init(cgImage: CGImage)](nsbitmapimagerep/init(cgimage:)-7o5tz.md)
+### Related Documentation
+- [init(cgImage: CGImage)](./init%28cgimage%29-7o5tz.md)
   Returns a bitmap image representation from a Core Graphics image object.
 
 

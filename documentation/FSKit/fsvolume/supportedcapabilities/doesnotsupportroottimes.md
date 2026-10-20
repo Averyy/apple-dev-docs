@@ -1,7 +1,8 @@
 # doesNotSupportRootTimes
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean property that indicates the volume doesn’t store reliable times for the root directory.
 
@@ -12,6 +13,10 @@ A Boolean property that indicates the volume doesn’t store reliable times for 
 
 ```swift
 var doesNotSupportRootTimes: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL doesNotSupportRootTimes;
 ```
 
 #### Discussion

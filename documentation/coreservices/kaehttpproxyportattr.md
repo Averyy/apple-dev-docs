@@ -1,7 +1,8 @@
 # kAEHTTPProxyPortAttr
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A value of type `typeSInt32`.
 

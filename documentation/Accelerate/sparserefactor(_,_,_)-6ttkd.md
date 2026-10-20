@@ -1,7 +1,8 @@
 # SparseRefactor(_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Computes a factorization of the specified double-precision matrix using an existing factorization’s storage and specified options.
 
@@ -20,15 +21,19 @@ Computes a factorization of the specified double-precision matrix using an exist
 func SparseRefactor(_ Matrix: SparseMatrix_Double, _ Factorization: UnsafeMutablePointer<SparseOpaqueFactorization_Double>, _ nfoptions: SparseNumericFactorOptions)
 ```
 
+```c
+static void SparseRefactor(SparseMatrix_Double Matrix, SparseOpaqueFactorization_Double *Factorization, SparseNumericFactorOptions nfoptions);
+```
+
 #### Discussion
 
 Use this function to calculate the factorization of a sparse matrix to pass to the direct solve functions using an existing factorization’s storage. The specified matrix must have the same sparsity structure as the matrix of the original factorization.
 
-This function provides behavior similar to [`SparseFactor(_:_:_:_:_:)`](sparsefactor(_:_:_:_:_:)-68hki.md) by reusing explicit storage that you supply to [`SparseFactor(_:_:_:_:_:)`](sparsefactor(_:_:_:_:_:)-68hki.md) as the argument `factorStorage`. However, in addition to providing a simplified call sequence, this call can also reuse any additional storage that you allocate to accommodate delayed pivots.
+This function provides behavior similar to [`SparseFactor(_:_:_:_:_:)`](./sparsefactor%28_,_,_,_,_%29-68hki.md) by reusing explicit storage that you supply to [`SparseFactor(_:_:_:_:_:)`](./sparsefactor%28_,_,_,_,_%29-68hki.md) as the argument `factorStorage`. However, in addition to providing a simplified call sequence, this call can also reuse any additional storage that you allocate to accommodate delayed pivots.
 
 The following figure shows two systems of equations where the coefficient matrix is sparse:
 
-![A mathematical equation that has two stacked sets of three simultaneous equations on the left. Each equation has three unknowns. The same sets of simultaneous equations appear on the right as two matrix equations, A x equals B. Each matrix equation consists of a three-by-three matrix multiplied by a three-element column matrix that equals a three-element column matrix.](/images/com.apple.accelerate/media-3703913@2x.png)
+![A mathematical equation that has two stacked sets of three simultaneous equations on the left. Each equation has three unknowns. The same sets of simultaneous equations appear on the right as two matrix equations, A x equals B. Each matrix equation consists of a three-by-three matrix multiplied by a three-element column matrix that equals a three-element column matrix.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3703913@2x.png)
 
 The following code solves these two systems with refactoring. After factorizing and solving for the coefficient matrix *A0*, the code refactors and solves for matrix *A1*:
 
@@ -156,19 +161,20 @@ On return, `b0Values` contains the values `[1.0, 2.0, 3.0]`, and `b1Values` cont
 
 ## See Also
 
-- [func SparseRefactor(SparseMatrix_Double, UnsafeMutablePointer<SparseOpaqueFactorization_Double>)](sparserefactor(_:_:)-8vrf5.md)
+### Matrix Refactorization Functions
+- [func SparseRefactor(SparseMatrix_Double, UnsafeMutablePointer<SparseOpaqueFactorization_Double>)](./sparserefactor%28_,_%29-8vrf5.md)
   Computes a factorization of the specified double-precision matrix using an existing factorization’s storage.
-- [func SparseRefactor(SparseMatrix_Float, UnsafeMutablePointer<SparseOpaqueFactorization_Float>)](sparserefactor(_:_:)-21q4x.md)
+- [func SparseRefactor(SparseMatrix_Float, UnsafeMutablePointer<SparseOpaqueFactorization_Float>)](./sparserefactor%28_,_%29-21q4x.md)
   Computes a factorization of the specified single-precision matrix using an existing factorization’s storage.
-- [func SparseRefactor(SparseMatrix_Float, UnsafeMutablePointer<SparseOpaqueFactorization_Float>, SparseNumericFactorOptions)](sparserefactor(_:_:_:)-2ovxs.md)
+- [func SparseRefactor(SparseMatrix_Float, UnsafeMutablePointer<SparseOpaqueFactorization_Float>, SparseNumericFactorOptions)](./sparserefactor%28_,_,_%29-2ovxs.md)
   Computes a factorization of the specified single-precision matrix using an existing factorization’s storage and specified options.
-- [func SparseRefactor(SparseMatrix_Complex_Double, UnsafeMutablePointer<SparseOpaqueFactorization_Complex_Double>)](sparserefactor(_:_:)-mgni.md)
+- [func SparseRefactor(SparseMatrix_Complex_Double, UnsafeMutablePointer<SparseOpaqueFactorization_Complex_Double>)](./sparserefactor%28_,_%29-mgni.md)
   Reuses supplied factorization object’s storage to compute a new factorization of the supplied matrix of complex double values.
-- [func SparseRefactor(SparseMatrix_Complex_Float, UnsafeMutablePointer<SparseOpaqueFactorization_Complex_Float>)](sparserefactor(_:_:)-zegz.md)
+- [func SparseRefactor(SparseMatrix_Complex_Float, UnsafeMutablePointer<SparseOpaqueFactorization_Complex_Float>)](./sparserefactor%28_,_%29-zegz.md)
   Reuses supplied factorization object’s storage to compute a new factorization of the supplied matrix of complex float values.
-- [func SparseRefactor(SparseMatrix_Complex_Float, UnsafeMutablePointer<SparseOpaqueFactorization_Complex_Float>, SparseNumericFactorOptions)](sparserefactor(_:_:_:)-4chx2.md)
+- [func SparseRefactor(SparseMatrix_Complex_Float, UnsafeMutablePointer<SparseOpaqueFactorization_Complex_Float>, SparseNumericFactorOptions)](./sparserefactor%28_,_,_%29-4chx2.md)
   Reuses supplied factorization object’s storage to compute a new factorization of the supplied matrix of complex float values, using different options.
-- [func SparseRefactor(SparseMatrix_Complex_Double, UnsafeMutablePointer<SparseOpaqueFactorization_Complex_Double>, SparseNumericFactorOptions)](sparserefactor(_:_:_:)-q0va.md)
+- [func SparseRefactor(SparseMatrix_Complex_Double, UnsafeMutablePointer<SparseOpaqueFactorization_Complex_Double>, SparseNumericFactorOptions)](./sparserefactor%28_,_,_%29-q0va.md)
   Reuses supplied factorization object’s storage to compute a new factorization of the supplied matrix of complex double values, using different options.
 
 

@@ -1,7 +1,8 @@
 # AdditiveArithmetic
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type with values that support addition and subtraction.
 
@@ -44,67 +45,68 @@ let rangeSum = (1..<10).sum()
 // rangeSum == 45
 ```
 
-### Conforming to the Additivearithmetic Protocol
+### Conforming to the AdditiveArithmetic Protocol
 
 To add `AdditiveArithmetic` protocol conformance to your own custom type, implement the required operators, and provide a static `zero` property.
 
 ## Topics
 
 ### Operators
-- [static func + (Self) -> Self](additivearithmetic/+(_:).md)
+- [static func + (Self) -> Self](./additivearithmetic/plus%28_%29.md)
   Returns the given number unchanged.
-- [static func + (Self, Self) -> Self](additivearithmetic/+(_:_:).md)
+- [static func + (Self, Self) -> Self](./additivearithmetic/plus%28_,_%29.md)
   Adds two values and produces their sum.
-- [static func += (inout Self, Self)](additivearithmetic/+=(_:_:).md)
+- [static func += (inout Self, Self)](./additivearithmetic/pluseq%28_,_%29.md)
   Adds two values and stores the result in the left-hand-side variable.
-- [static func - (Self, Self) -> Self](additivearithmetic/-(_:_:).md)
+- [static func - (Self, Self) -> Self](./additivearithmetic/minus%28_,_%29.md)
   Subtracts one value from another and produces their difference.
-- [static func -= (inout Self, Self)](additivearithmetic/-=(_:_:).md)
+- [static func -= (inout Self, Self)](./additivearithmetic/minuseq%28_,_%29.md)
   Subtracts the second value from the first and stores the difference in the left-hand-side variable.
 ### Type Properties
-- [static var zero: Self](additivearithmetic/zero.md)
+- [static var zero: Self](./additivearithmetic/zero.md)
   The zero value.
 
 ## Relationships
 
 ### Inherits From
-- [Equatable](equatable.md)
+- [Equatable](./equatable.md)
 ### Inherited By
-- [BinaryFloatingPoint](binaryfloatingpoint.md)
-- [BinaryInteger](binaryinteger.md)
-- [DurationProtocol](durationprotocol.md)
-- [FixedWidthInteger](fixedwidthinteger.md)
-- [FloatingPoint](floatingpoint.md)
-- [Numeric](numeric.md)
-- [SignedInteger](signedinteger.md)
-- [SignedNumeric](signednumeric.md)
-- [UnsignedInteger](unsignedinteger.md)
+- [BinaryFloatingPoint](./binaryfloatingpoint.md)
+- [BinaryInteger](./binaryinteger.md)
+- [DurationProtocol](./durationprotocol.md)
+- [FixedWidthInteger](./fixedwidthinteger.md)
+- [FloatingPoint](./floatingpoint.md)
+- [Numeric](./numeric.md)
+- [SignedInteger](./signedinteger.md)
+- [SignedNumeric](./signednumeric.md)
+- [UnsignedInteger](./unsignedinteger.md)
 ### Conforming Types
-- [Double](double.md)
-- [Duration](duration.md)
-- [Float](float.md)
-- [Float16](float16.md)
-- [Float80](float80.md)
-- [Int](int.md)
-- [Int128](int128.md)
-- [Int16](int16.md)
-- [Int32](int32.md)
-- [Int64](int64.md)
-- [Int8](int8.md)
-- [UInt](uint.md)
-- [UInt128](uint128.md)
-- [UInt16](uint16.md)
-- [UInt32](uint32.md)
-- [UInt64](uint64.md)
-- [UInt8](uint8.md)
+- [Double](./double.md)
+- [Duration](./duration.md)
+- [Float](./float.md)
+- [Float16](./float16.md)
+- [Float80](./float80.md)
+- [Int](./int.md)
+- [Int128](./int128.md)
+- [Int16](./int16.md)
+- [Int32](./int32.md)
+- [Int64](./int64.md)
+- [Int8](./int8.md)
+- [UInt](./uint.md)
+- [UInt128](./uint128.md)
+- [UInt16](./uint16.md)
+- [UInt32](./uint32.md)
+- [UInt64](./uint64.md)
+- [UInt8](./uint8.md)
 
 ## See Also
 
-- [protocol Numeric](numeric.md)
+### Basic Arithmetic
+- [protocol Numeric](./numeric.md)
   A type with values that support multiplication.
-- [protocol SignedNumeric](signednumeric.md)
+- [protocol SignedNumeric](./signednumeric.md)
   A numeric type with a negation operation.
-- [protocol Strideable](strideable.md)
+- [protocol Strideable](./strideable.md)
   A type representing continuous, one-dimensional values that can be offset and measured.
 
 

@@ -1,7 +1,8 @@
 # nw_multipath_service_disabled
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Disable multipath.
 
@@ -20,13 +21,18 @@ Disable multipath.
 var nw_multipath_service_disabled: nw_multipath_service_t { get }
 ```
 
+```c
+nw_multipath_service_disabled
+```
+
 ## See Also
 
-- [var nw_multipath_service_handover: nw_multipath_service_t](nw_multipath_service_handover.md)
+### Multipath service types
+- [var nw_multipath_service_handover: nw_multipath_service_t](./nw_multipath_service_handover.md)
   Enable multipath, but only use other interfaces when the primary interface is lost.
-- [var nw_multipath_service_interactive: nw_multipath_service_t](nw_multipath_service_interactive.md)
+- [var nw_multipath_service_interactive: nw_multipath_service_t](./nw_multipath_service_interactive.md)
   Enable multipath to use other interfaces when the primary interface encounters loss or delay.
-- [var nw_multipath_service_aggregate: nw_multipath_service_t](nw_multipath_service_aggregate.md)
+- [var nw_multipath_service_aggregate: nw_multipath_service_t](./nw_multipath_service_aggregate.md)
   Enable multipath to maximize bandwidth across multiple interfaces.
 
 

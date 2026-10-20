@@ -1,12 +1,13 @@
 # NSGraphicsContext.AttributeKey
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that specify the dictionary keys for the attributes of the graphics context.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,37 +15,42 @@ Constants that specify the dictionary keys for the attributes of the graphics co
 struct AttributeKey
 ```
 
+```c
+typedef NSString * NSGraphicsContextAttributeKey;
+```
+
 #### Discussion
 
-You use these dictionary keys with [`init(attributes:)`](nsgraphicscontext/init(attributes:).md) and [`attributes`](nsgraphicscontext/attributes.md).
+You use these dictionary keys with [`init(attributes:)`](./init%28attributes%29.md) and [`attributes`](./attributes.md).
 
 ## Topics
 
 ### Attribute Keys
-- [static let destination: NSGraphicsContext.AttributeKey](nsgraphicscontext/attributekey/destination.md)
+- [static let destination: NSGraphicsContext.AttributeKey](./attributekey/destination.md)
   Specifies the destination.
-- [static let representationFormat: NSGraphicsContext.AttributeKey](nsgraphicscontext/attributekey/representationformat.md)
+- [static let representationFormat: NSGraphicsContext.AttributeKey](./attributekey/representationformat.md)
   Specifies the destination file format.
 ### Initializers
-- [init(rawValue: String)](nsgraphicscontext/attributekey/init(rawvalue:).md)
+- [init(rawValue: String)](./attributekey/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var attributes: [NSGraphicsContext.AttributeKey : Any]?](nsgraphicscontext/attributes.md)
+### Getting Information About the Context
+- [var attributes: [NSGraphicsContext.AttributeKey : Any]?](./attributes.md)
   The attributes used to create this instance.
-- [NSGraphicsContext.RepresentationFormatName](nsgraphicscontext/representationformatname.md)
+- [NSGraphicsContext.RepresentationFormatName](./representationformatname.md)
   Constants that specify values for the representation format name key in a graphic context’s attributes dictionary.
-- [var isFlipped: Bool](nsgraphicscontext/isflipped.md)
+- [var isFlipped: Bool](./isflipped.md)
   A Boolean value that indicates the graphics context’s flipped state.
 
 

@@ -1,7 +1,8 @@
 # DefaultTabLabel
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The default label to use for a tab or tab section.
 
@@ -28,7 +29,7 @@ You don’t use this type directly. Instead, the system creates it automatically
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 
 ---

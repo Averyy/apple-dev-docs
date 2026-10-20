@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the geometric spreading distance model parameters.
 
@@ -17,6 +18,10 @@ Creates the geometric spreading distance model parameters.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

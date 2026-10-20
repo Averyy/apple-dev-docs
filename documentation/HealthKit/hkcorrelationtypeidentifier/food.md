@@ -1,7 +1,8 @@
 # food
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Food correlation types combine any number of nutritional samples into a single food object.
 
@@ -19,19 +20,25 @@ Food correlation types combine any number of nutritional samples into a single f
 static let food: HKCorrelationTypeIdentifier
 ```
 
+```c
+extern HKCorrelationTypeIdentifier const HKCorrelationTypeIdentifierFood;
+```
+
 #### Discussion
 
-When creating food samples, specify the type of food using the [`HKMetadataKeyFoodType`](hkmetadatakeyfoodtype.md) metadata key.
+When creating food samples, specify the type of food using the [`HKMetadataKeyFoodType`](../hkmetadatakeyfoodtype.md) metadata key.
 
 ## See Also
 
-- [struct HKCorrelationTypeIdentifier](hkcorrelationtypeidentifier.md)
+### Related Documentation
+- [struct HKCorrelationTypeIdentifier](../hkcorrelationtypeidentifier.md)
   The identifiers that create correlation type objects.
-- [class HKCorrelationType](hkcorrelationtype.md)
+- [class HKCorrelationType](../hkcorrelationtype.md)
   A type that identifies samples that group multiple subsamples.
-- [class HKCorrelation](hkcorrelation.md)
+- [class HKCorrelation](../hkcorrelation.md)
   A sample that groups multiple related samples into a single entry.
-- [let HKMetadataKeyFoodType: String](hkmetadatakeyfoodtype.md)
+### Essentials
+- [let HKMetadataKeyFoodType: String](../hkmetadatakeyfoodtype.md)
   The type of food that the HealthKit object represents.
 
 

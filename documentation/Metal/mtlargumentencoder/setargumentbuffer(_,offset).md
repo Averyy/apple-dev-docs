@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Specifies the position in a buffer where the encoder writes argument data.
@@ -20,6 +21,10 @@ Specifies the position in a buffer where the encoder writes argument data.
 func setArgumentBuffer(_ argumentBuffer: (any MTLBuffer)?, offset: Int)
 ```
 
+```objc
+- (void) setArgumentBuffer:(id<MTLBuffer>) argumentBuffer offset:(NSUInteger) offset;
+```
+
 ## Parameters
 
 - `argumentBuffer`: The destination buffer that represents an argument buffer.
@@ -27,9 +32,10 @@ func setArgumentBuffer(_ argumentBuffer: (any MTLBuffer)?, offset: Int)
 
 ## See Also
 
-- [func setArgumentBuffer((any MTLBuffer)?, startOffset: Int, arrayElement: Int)](mtlargumentencoder/setargumentbuffer(_:startoffset:arrayelement:).md)
+### Creating an argument buffer
+- [func setArgumentBuffer((any MTLBuffer)?, startOffset: Int, arrayElement: Int)](./setargumentbuffer%28_,startoffset,arrayelement%29.md)
   Specifies an array element within a buffer where the encoder writes argument data.
-- [var encodedLength: Int](mtlargumentencoder/encodedlength.md)
+- [var encodedLength: Int](./encodedlength.md)
   The number of bytes required to store the encoded resources of an argument buffer.
 
 

@@ -1,12 +1,15 @@
 # bodyTextProvider
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The main body text to display in the complication.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -21,11 +24,12 @@ This property supports multicolor text.
 
 ## See Also
 
-- [var headerLabel: Label](clkcomplicationtemplategraphicrectangulartextgaugeview/headerlabel.md)
+### Accessing the Content
+- [var headerLabel: Label](./headerlabel.md)
   The SwiftUI view displayed by the template.
-- [var headerTextProvider: CLKTextProvider](clkcomplicationtemplategraphicrectangulartextgaugeview/headertextprovider.md)
+- [var headerTextProvider: CLKTextProvider](./headertextprovider.md)
   The header text to display in the complication.
-- [var gaugeProvider: CLKGaugeProvider](clkcomplicationtemplategraphicrectangulartextgaugeview/gaugeprovider.md)
+- [var gaugeProvider: CLKGaugeProvider](./gaugeprovider.md)
   The gauge to display in the complication.
 
 

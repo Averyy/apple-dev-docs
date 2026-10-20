@@ -1,7 +1,8 @@
 # init(id:)
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the payment method binding for eligible apps and users.
 
@@ -19,7 +20,7 @@ init(id: String) async throws
 
 #### Discussion
 
-This method succeeds if the app is entitled to use this API, the `id` is valid and unexpired, and the user is eligible. Otherwise, it throws an error. See [`PaymentMethodBinding.PaymentMethodBindingError`](paymentmethodbinding/paymentmethodbindingerror.md) and [`StoreKitError.userCancelled`](storekiterror/usercancelled.md) for the error information.
+This method succeeds if the app is entitled to use this API, the `id` is valid and unexpired, and the user is eligible. Otherwise, it throws an error. See [`PaymentMethodBinding.PaymentMethodBindingError`](./paymentmethodbindingerror.md) and [`StoreKitError.userCancelled`](../storekiterror/usercancelled.md) for the error information.
 
 This method determines if the user is eligible, and requires that they’re signed in to the App Store.
 

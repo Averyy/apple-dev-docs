@@ -2,6 +2,7 @@
 
 **Framework**: WebKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 A JavaScript `confirm()` function has been invoked.
@@ -28,6 +29,12 @@ The result of handling the invocation.
 
 - `message`: The message provided by JavaScript.
 - `frame`: Information about the frame whose JavaScript process initiated this call.
+
+## Default Implementations
+
+### WebPage.DialogPresenting Implementations
+- [func handleJavaScriptConfirm(message: String, initiatedBy: WebPage.FrameInfo) async -> WebPage.JavaScriptConfirmResult](./handlejavascriptconfirm%28message,initiatedby%29-86j9x.md)
+  By default, this method immediately returns with a result of `.cancel`.
 
 
 ---

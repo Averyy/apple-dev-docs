@@ -1,7 +1,8 @@
 # subThoroughfare
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The street number at the place.
 
@@ -10,13 +11,13 @@ The street number at the place.
 
 ## Declaration
 
-```swift
+```
 subThoroughfare: string | null;
 ```
 
 #### Discussion
 
-For example, the [`subThoroughfare`](searchautocompleteresult/subthoroughfare.md) for the Golden Gate Park is `"1054"`.
+For example, the [`subThoroughfare`](./subthoroughfare.md) for the Golden Gate Park is `"1054"`.
 
 
 ---

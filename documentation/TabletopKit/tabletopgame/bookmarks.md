@@ -1,7 +1,8 @@
 # bookmarks
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - visionOS 2.0+
@@ -14,9 +15,10 @@ var bookmarks: [StateBookmarkIdentifier] { get }
 
 ## See Also
 
-- [func jumpToBookmark(StateBookmark)](tabletopgame/jumptobookmark(_:).md)
+### Jumping to bookmarks
+- [func jumpToBookmark(StateBookmark)](./jumptobookmark%28_%29.md)
   Restores game to the given bookmark
-- [func jumpToBookmark(matching: StateBookmarkIdentifier)](tabletopgame/jumptobookmark(matching:).md)
+- [func jumpToBookmark(matching: StateBookmarkIdentifier)](./jumptobookmark%28matching%29.md)
   Restores game to the given bookmark
 
 

@@ -1,31 +1,32 @@
 # Configuring your app licensing environment
 
-**Framework**: App License Delivery SDK
+**Framework**: App License Delivery SDK  
+**Role**: Article
 
 Create your account-level signing assets and build the SDK for your target platform.
 
 #### Overview
 
-After your developer account qualifies to build an alternative app marketplace, you can use [`App License Delivery SDK`](AppLicenseDeliverySDK.md) to secure the installation of your marketplace app and the apps that you distribute from your alternative marketplace. To set up your development environment for app licensing:
+After your developer account qualifies to build an alternative app marketplace, you can use [App License Delivery SDK](./AppLicenseDeliverySDK.md) to secure the installation of your marketplace app and the apps that you distribute from your alternative marketplace. To set up your development environment for app licensing:
 
 - Create your App License Delivery signing assets.
 - Build the SDK on your target platform (macOS or Linux).
 
-For more information about alternative app marketplaces, see [`MarketplaceKit`](https://developer.apple.com/documentation/marketplacekit).
+For more information about alternative app marketplaces, see [MarketplaceKit](../MarketplaceKit/MarketplaceKit.md).
 
-#### Generate Alternative Marketplace App Licensing Assets
+#### Generate alternative marketplace app licensing assets
 
-To facilitate generating licenses, create the following App License Delivery (ALD) assets in [`Certificates, Identifiers & Profiles`](https://developer.apple.comhttps://developer.apple.com/account/resources):
+To facilitate generating licenses, create the following App License Delivery (ALD) assets in [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources):
 
 - **Encryption certificate**: Decrypts license requests that a device sends to your licensing endpoint.
 - **Signing certificate**: Signs licenses you create and verifies their authenticity on device.
 - **PASK**: A secret that secures the transport of app key blobs.
 
-For more information about generating these assets, see [`Create app license delivery certificates`](https://developer.apple.comhttps://developer.apple.com/help/account/create-certificates/create-app-license-delivery-certificates).
+For more information about generating these assets, see [Create app license delivery certificates](https://developer.apple.com/help/account/create-certificates/create-app-license-delivery-certificates).
 
 > ❗ **Important**: Secure your PASK secret as you do other credentials, such as private keys and passwords. Don’t share your PASK secret, store secrets in a code repository, or include secrets in client or server code.
 
-#### Build the Sdk for Macos
+#### Build the SDK for macOS
 
 To use the SDK in a Swift project for macOS:
 
@@ -41,18 +42,18 @@ import ALD
 struct MyLicenseGenerator: ParsableCommand { ... }
 ```
 
-#### Build the Sdk for Linux
+#### Build the SDK for Linux
 
 To build the SDK for Linux:
 
-1. Download a Swift container from [`https://www.swift.org/download`](https://developer.apple.comhttps://www.swift.org/download).
+1. Download a Swift container from [https://www.swift.org/download](https://www.swift.org/download).
 2. Choose Ubuntu 22.04 for `x86_64` with Swift Docker tag `5.9-jammy`.
 3. Install the Docker container and start it.
 4. Copy the `aldsdk` archive file (with the `.tar` file extension) into the container and expand it.
 5. In Terminal, navigate to the `aldsdk` root directory.
 6. Run the following command to build the SDK and produce an example license:
 
-```None
+```
 swift test -c release --triple x86_64-unknown-linux-gnu \
     -Xbuild-tools-swiftc -Dx86_64_linux_gnu_TRIPLE
 ```

@@ -1,7 +1,8 @@
 # target
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Target of the data, event, or execution flow
 
@@ -12,7 +13,7 @@ Target of the data, event, or execution flow
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

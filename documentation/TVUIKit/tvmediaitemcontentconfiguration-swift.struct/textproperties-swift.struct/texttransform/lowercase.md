@@ -1,7 +1,8 @@
 # TVMediaItemContentConfiguration.TextProperties.TextTransform.lowercase
 
 **Framework**: TVUIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A transform for displaying the text in all lowercase characters.
 
@@ -16,11 +17,12 @@ case lowercase
 
 ## See Also
 
-- [TVMediaItemContentConfiguration.TextProperties.TextTransform.none](tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/none.md)
+### Text Transforms
+- [TVMediaItemContentConfiguration.TextProperties.TextTransform.none](./none.md)
   An option with no transform.
-- [TVMediaItemContentConfiguration.TextProperties.TextTransform.capitalized](tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/capitalized.md)
+- [TVMediaItemContentConfiguration.TextProperties.TextTransform.capitalized](./capitalized.md)
   A transform for displaying the text with the first character capitalized.
-- [TVMediaItemContentConfiguration.TextProperties.TextTransform.uppercase](tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/uppercase.md)
+- [TVMediaItemContentConfiguration.TextProperties.TextTransform.uppercase](./uppercase.md)
   A transform for displaying the text in all uppercase characters.
 
 

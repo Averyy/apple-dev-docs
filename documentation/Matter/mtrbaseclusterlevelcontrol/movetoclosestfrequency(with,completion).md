@@ -1,7 +1,8 @@
 # moveToClosestFrequency(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func moveToClosestFrequency(with params: MTRLevelControlClusterMoveToClosestFrequencyParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func moveToClosestFrequency(with params: MTRLevelControlClusterMoveToClosestFrequencyParams) async throws
+```
+
+```objc
+- (void) moveToClosestFrequencyWithParams:(MTRLevelControlClusterMoveToClosestFrequencyParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

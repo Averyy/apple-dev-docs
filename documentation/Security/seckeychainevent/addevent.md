@@ -1,7 +1,8 @@
 # SecKeychainEvent.addEvent
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates an item was added to a keychain.
 
@@ -13,6 +14,10 @@ Indicates an item was added to a keychain.
 
 ```swift
 case addEvent
+```
+
+```c
+kSecAddEvent
 ```
 
 

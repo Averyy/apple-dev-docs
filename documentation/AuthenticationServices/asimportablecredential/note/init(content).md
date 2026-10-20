@@ -1,7 +1,8 @@
 # init(content:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a note instance from the note contents.
 

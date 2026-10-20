@@ -1,7 +1,8 @@
 # AsyncThrowingStream.Continuation.BufferingPolicy.unbounded
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Continue to add to the buffer, without imposing a limit on the number of buffered elements.
 
@@ -22,9 +23,10 @@ case unbounded
 
 ## See Also
 
-- [AsyncThrowingStream.Continuation.BufferingPolicy.bufferingOldest(_:)](asyncthrowingstream/continuation/bufferingpolicy/bufferingoldest(_:).md)
+### Buffering Policies
+- [AsyncThrowingStream.Continuation.BufferingPolicy.bufferingOldest(_:)](./bufferingoldest%28_%29.md)
   When the buffer is full, discard the newly received element.
-- [AsyncThrowingStream.Continuation.BufferingPolicy.bufferingNewest(_:)](asyncthrowingstream/continuation/bufferingpolicy/bufferingnewest(_:).md)
+- [AsyncThrowingStream.Continuation.BufferingPolicy.bufferingNewest(_:)](./bufferingnewest%28_%29.md)
   When the buffer is full, discard the oldest element in the buffer.
 
 

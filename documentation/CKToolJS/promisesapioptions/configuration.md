@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A `Configuration` instance returned from `createConfiguration`.
 
@@ -10,7 +11,7 @@ A `Configuration` instance returned from `createConfiguration`.
 
 ## Declaration
 
-```swift
+```
 attribute Configuration configuration;
 ```
 

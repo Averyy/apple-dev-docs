@@ -1,7 +1,8 @@
 # double3Value(atTime:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func double3Value(atTime time: TimeInterval) -> vector_double3
+```
+
+```objc
+- (vector_double3) double3AtTime:(NSTimeInterval) time;
 ```
 
 

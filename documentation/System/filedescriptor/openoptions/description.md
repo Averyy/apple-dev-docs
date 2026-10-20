@@ -1,7 +1,8 @@
 # description
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of the open options.
 
@@ -22,7 +23,8 @@ var description: String { get }
 
 ## See Also
 
-- [var debugDescription: String](filedescriptor/openoptions/debugdescription.md)
+### Debugging
+- [var debugDescription: String](./debugdescription.md)
   A textual representation of the open options, suitable for debugging.
 
 

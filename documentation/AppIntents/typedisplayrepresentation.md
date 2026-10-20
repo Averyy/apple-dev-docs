@@ -1,7 +1,8 @@
 # TypeDisplayRepresentation
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that describes the user interface presentation of a custom type.
 
@@ -11,7 +12,7 @@ A type that describes the user interface presentation of a custom type.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,43 +23,44 @@ struct TypeDisplayRepresentation
 
 ## Mentions
 
-- [Defining app entities for your custom data types](defining-app-entities-for-your-custom-data-types.md)
+- [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md)
 
 ## Topics
 
 ### Initializers
-- [init(name: LocalizedStringResource, numericFormat: LocalizedStringResource?)](typedisplayrepresentation/init(name:numericformat:).md)
-- [init(name: LocalizedStringResource, numericFormat: LocalizedStringResource?, synonyms: [LocalizedStringResource])](typedisplayrepresentation/init(name:numericformat:synonyms:).md)
+- [init(name: LocalizedStringResource, numericFormat: LocalizedStringResource?)](./typedisplayrepresentation/init%28name,numericformat%29.md)
+- [init(name: LocalizedStringResource, numericFormat: LocalizedStringResource?, synonyms: [LocalizedStringResource])](./typedisplayrepresentation/init%28name,numericformat,synonyms%29.md)
 ### Instance Properties
-- [var name: LocalizedStringResource](typedisplayrepresentation/name.md)
+- [var name: LocalizedStringResource](./typedisplayrepresentation/name.md)
   The singular type name, e.g. “Book”.
-- [var numericFormat: LocalizedStringResource?](typedisplayrepresentation/numericformat.md)
+- [var numericFormat: LocalizedStringResource?](./typedisplayrepresentation/numericformat.md)
   A string representing a count for the type, e.g. “2 books”.
-- [var synonyms: [LocalizedStringResource]](typedisplayrepresentation/synonyms.md)
+- [var synonyms: [LocalizedStringResource]](./typedisplayrepresentation/synonyms.md)
   A list of localized phrases that are synonyms of this particular type display representation
 
 ## Relationships
 
 ### Conforms To
-- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringLiteral](../Swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../Swift/expressiblebyunicodescalarliteral.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct DisplayRepresentation](displayrepresentation.md)
+### Data representations
+- [struct DisplayRepresentation](./displayrepresentation.md)
   A type that describes the user interface presentation of a custom type.
-- [protocol DisplayRepresentable](displayrepresentable.md)
+- [protocol DisplayRepresentable](./displayrepresentable.md)
   An interface for providing a dynamic visual representation of a specific type and instances of that type.
-- [protocol InstanceDisplayRepresentable](instancedisplayrepresentable.md)
+- [protocol InstanceDisplayRepresentable](./instancedisplayrepresentable.md)
   An interface for providing the visual representation for an instance of a specific type.
-- [protocol TypeDisplayRepresentable](typedisplayrepresentable.md)
+- [protocol TypeDisplayRepresentable](./typedisplayrepresentable.md)
   An interface for providing the visual representation of a specific type.
-- [protocol StaticDisplayRepresentable](staticdisplayrepresentable.md)
+- [protocol StaticDisplayRepresentable](./staticdisplayrepresentable.md)
   An interface for providing a static visual representation of a specific type.
-- [protocol CaseDisplayRepresentable](casedisplayrepresentable.md)
+- [protocol CaseDisplayRepresentable](./casedisplayrepresentable.md)
   An interface for providing the visual representation for an iterable collection of values.
 
 

@@ -1,7 +1,8 @@
 # init(learningRate:beta1:beta2:timeStep:epsilon:gradientScale:weightDecay:gradientClipping:usesAMSGrad:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new AdamW optimizer object with gradient clipped by value or clipped by norm.
 
@@ -11,8 +12,10 @@ Returns a new AdamW optimizer object with gradient clipped by value or clipped b
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # PlaneAnchor.Alignment.slanted
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The plane is in a slanted orientation.
 

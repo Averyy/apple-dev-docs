@@ -1,11 +1,12 @@
 # StatusReason.ErrorDetails
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object StatusReason.ErrorDetails
 ```
 

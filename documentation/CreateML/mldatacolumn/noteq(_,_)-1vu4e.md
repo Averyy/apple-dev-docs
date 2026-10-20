@@ -1,0 +1,61 @@
+# !=(_:_:)
+
+**Framework**: Create ML  
+**Kind**: op  
+**Role**: Operator
+
+Creates a column of Booleans by testing whether each element in the first column is not equal to the corresponding element in the second column.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 10.14+
+- tvOS 16.0+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+static func != (a: MLDataColumn<Element>, b: MLDataColumn<Element>) -> MLDataColumn<Bool>
+```
+
+Available when `Element` conforms to `MLDataValueConvertible`.
+
+**Other overloads**:
+
+```swift
+static func != (a: Element, b: MLDataColumn<Element>) -> MLDataColumn<Bool>
+```
+
+```swift
+static func != (a: MLDataColumn<Element>, b: Element) -> MLDataColumn<Bool>
+```
+
+#### Return Value
+
+A new column of Booleans if the columns are the same size; otherwise an invalid column.
+
+## Parameters
+
+- `a`: A column.
+- `b`: A column.
+
+## See Also
+
+### Comparing columns to generate a column of booleans
+- [static func == (MLDataColumn<Element>, MLDataColumn<Element>) -> MLDataColumn<Bool>](./eqeq%28_,_%29-9e3tx.md)
+  Creates a column of Booleans by testing whether each element in the first column is equal to the corresponding element in the second column.
+- [static func < (MLDataColumn<Element>, MLDataColumn<Element>) -> MLDataColumn<Bool>](./op%28_,_%29-3om6w.md)
+  Creates a column of Booleans by testing whether each element in the first column is less than the corresponding element in the second column.
+- [static func <= (MLDataColumn<Element>, MLDataColumn<Element>) -> MLDataColumn<Bool>](./opeq%28_,_%29-6s5v1.md)
+  Creates a column of Booleans by testing whether each element in the first column is less than or equal to the corresponding element in the second column.
+- [static func > (MLDataColumn<Element>, MLDataColumn<Element>) -> MLDataColumn<Bool>](./op%28_,_%29-2dym4.md)
+  Creates a column of Booleans by testing whether each element in the first column is greater than the corresponding element in the second column.
+- [static func >= (MLDataColumn<Element>, MLDataColumn<Element>) -> MLDataColumn<Bool>](./opeq%28_,_%29-4w60p.md)
+  Creates a column of Booleans by testing whether each element in the first column is greater than or equal to the corresponding element in the second column.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/createml/mldatacolumn/!=(_:_:)-1vu4e)*

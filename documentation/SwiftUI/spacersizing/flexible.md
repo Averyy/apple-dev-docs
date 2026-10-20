@@ -1,7 +1,8 @@
 # flexible
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The flexible spacer sizing behavior. The spacer will expand to accommodate as much space as it is given in the current context.
 

@@ -1,7 +1,8 @@
 # Inode
 
 **Framework**: System  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A Swift wrapper of the C `ino_t` type.
 
@@ -24,26 +25,26 @@ struct Inode
 ## Topics
 
 ### Initializers
-- [init(CInterop.Inode)](inode/init(_:).md)
+- [init(CInterop.Inode)](./inode/init%28_%29.md)
   Creates a strongly-typed `Inode` from the raw C value.
-- [init(rawValue: CInterop.Inode)](inode/init(rawvalue:).md)
+- [init(rawValue: CInterop.Inode)](./inode/init%28rawvalue%29.md)
   Creates a strongly-typed `Inode` from the raw C value.
 ### Instance Properties
-- [var rawValue: CInterop.Inode](inode/rawvalue.md)
+- [var rawValue: CInterop.Inode](./inode/rawvalue.md)
   The raw C `ino_t`.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # LayoutProperties
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Layout-specific properties of a layout container.
 
@@ -22,9 +23,9 @@ struct LayoutProperties
 
 #### Overview
 
-This structure contains configuration information that’s applicable to a layout container. For example, the [`stackOrientation`](layoutproperties/stackorientation.md) value indicates the layout’s primary axis, if any.
+This structure contains configuration information that’s applicable to a layout container. For example, the [`stackOrientation`](./layoutproperties/stackorientation.md) value indicates the layout’s primary axis, if any.
 
-You can use an instance of this type to characterize a custom layout container, which is a type that conforms to the [`Layout`](layout.md) protocol. Implement the protocol’s [`layoutProperties`](layout/layoutproperties.md) property to return an instance. For example, you can indicate that your layout has a vertical stack orientation:
+You can use an instance of this type to characterize a custom layout container, which is a type that conforms to the [`Layout`](./layout.md) protocol. Implement the protocol’s [`layoutProperties`](./layout/layoutproperties.md) property to return an instance. For example, you can indicate that your layout has a vertical stack orientation:
 
 ```swift
 extension BasicVStack {
@@ -41,23 +42,24 @@ If you don’t implement the property in your custom layout, the protocol provid
 ## Topics
 
 ### Creating a layout properties instance
-- [init()](layoutproperties/init.md)
+- [init()](./layoutproperties/init%28%29.md)
   Creates a default set of properties.
 ### Getting layout properties
-- [var stackOrientation: Axis?](layoutproperties/stackorientation.md)
+- [var stackOrientation: Axis?](./layoutproperties/stackorientation.md)
   The orientation of the containing stack-like container.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ProposedViewSize](proposedviewsize.md)
+### Configuring a custom layout
+- [struct ProposedViewSize](./proposedviewsize.md)
   A proposal for the size of a view.
-- [struct ViewSpacing](viewspacing.md)
+- [struct ViewSpacing](./viewspacing.md)
   A collection of the geometric spacing preferences of a view.
 
 

@@ -1,7 +1,8 @@
 # eid
 
 **Framework**: Core Telephony  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The provisioning request’s eUICC identifier (EID).
 
@@ -16,21 +17,26 @@ The provisioning request’s eUICC identifier (EID).
 var eid: String? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSString * EID;
+```
+
 #### Discussion
 
 This property is optional.
 
 ## See Also
 
-- [var address: String](ctcellularplanprovisioningrequest/address.md)
+### Specifying Request Properties
+- [var address: String](./address.md)
   The address of the carrier network’s eSIM server.
-- [var confirmationCode: String?](ctcellularplanprovisioningrequest/confirmationcode.md)
+- [var confirmationCode: String?](./confirmationcode.md)
   The provisioning request’s confirmation code, provided by the network operator when initiating an eSIM download.
-- [var iccid: String?](ctcellularplanprovisioningrequest/iccid.md)
+- [var iccid: String?](./iccid.md)
   The provisioning request’s Integrated Circuit Card Identifier (ICCID).
-- [var matchingID: String?](ctcellularplanprovisioningrequest/matchingid.md)
+- [var matchingID: String?](./matchingid.md)
   The provisioning request’s matching identifier (MatchingID).
-- [var oid: String?](ctcellularplanprovisioningrequest/oid.md)
+- [var oid: String?](./oid.md)
   The provisioning request’s Object Identifier (OID).
 
 

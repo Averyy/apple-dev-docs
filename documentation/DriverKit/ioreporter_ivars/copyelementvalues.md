@@ -1,17 +1,18 @@
 # copyElementValues
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn copyElementValues(int element_index, IOReportElementValues *elementValues);
 ```
 
@@ -29,8 +30,12 @@ Locking: Caller must ensure that the reporter (data) lock is held.
 
 ## Parameters
 
-- `element_index`: - Index of the element to return values from
-- `elementValues`: - For returning the content of element values
+- `element_index`:
+
+  - Index of the element to return values from
+- `elementValues`:
+
+  - For returning the content of element values
 
 
 ---

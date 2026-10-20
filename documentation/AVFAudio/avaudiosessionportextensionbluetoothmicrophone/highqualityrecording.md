@@ -1,7 +1,8 @@
 # highQualityRecording
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Describes whether this port supports Bluetooth high-quality recording.
 
@@ -19,13 +20,18 @@ Describes whether this port supports Bluetooth high-quality recording.
 var highQualityRecording: AVAudioSessionCapability { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nonnull) AVAudioSessionCapability * highQualityRecording;
+```
+
 #### Discussion
 
-Please see [`bluetoothHighQualityRecording`](avaudiosession/categoryoptions-swift.struct/bluetoothhighqualityrecording.md) for details.
+Please see [`bluetoothHighQualityRecording`](../avaudiosession/categoryoptions-swift.struct/bluetoothhighqualityrecording.md) for details.
 
 ## See Also
 
-- [var farFieldCapture: AVAudioSessionCapability](avaudiosessionportextensionbluetoothmicrophone/farfieldcapture.md)
+### Inspecting the port extension
+- [var farFieldCapture: AVAudioSessionCapability](./farfieldcapture.md)
   Describes whether this port supports far-field input capture.
 
 

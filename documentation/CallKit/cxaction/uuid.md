@@ -1,7 +1,8 @@
 # uuid
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for the action.
 
@@ -18,11 +19,16 @@ The unique identifier for the action.
 var uuid: UUID { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSUUID * UUID;
+```
+
 ## See Also
 
-- [var isComplete: Bool](cxaction/iscomplete.md)
+### Accessing Action Attributes
+- [var isComplete: Bool](./iscomplete.md)
   A Boolean value that indicates whether the action has been performed by the provider.
-- [var timeoutDate: Date](cxaction/timeoutdate.md)
+- [var timeoutDate: Date](./timeoutdate.md)
   The time after which the action cannot be completed.
 
 

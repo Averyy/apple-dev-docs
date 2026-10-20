@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Force Feedback  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -15,7 +16,8 @@ init()
 
 ## See Also
 
-- [init(ffSpecVer: NumVersion, supportedEffects: UInt32, emulatedEffects: UInt32, subType: UInt32, numFfAxes: UInt32, ffAxes: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8), storageCapacity: UInt32, playbackCapacity: UInt32, firmwareVer: NumVersion, hardwareVer: NumVersion, driverVer: NumVersion)](ffcapabilities/init(ffspecver:supportedeffects:emulatedeffects:subtype:numffaxes:ffaxes:storagecapacity:playbackcapacity:firmwarever:hardwarever:driverver:).md)
+### Initializers
+- [init(ffSpecVer: NumVersion, supportedEffects: UInt32, emulatedEffects: UInt32, subType: UInt32, numFfAxes: UInt32, ffAxes: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8), storageCapacity: UInt32, playbackCapacity: UInt32, firmwareVer: NumVersion, hardwareVer: NumVersion, driverVer: NumVersion)](./init%28ffspecver,supportedeffects,emulatedeffects,subtype,numffaxes,ffaxes,storagecapacity,playbackcapacity,firmwarever,hardwarever,driverver%29.md)
 
 
 ---

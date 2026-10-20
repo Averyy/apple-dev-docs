@@ -1,7 +1,8 @@
 # AssetPackManager.DownloadStatusUpdate.began(_:)
 
 **Framework**: Background Assets  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A status update that indicates that the download began or resumed after being paused.
 
@@ -21,13 +22,14 @@ case began(AssetPack)
 
 ## See Also
 
-- [AssetPackManager.DownloadStatusUpdate.downloading(_:_:)](assetpackmanager/downloadstatusupdate/downloading(_:_:).md)
+### Tracking downloads
+- [AssetPackManager.DownloadStatusUpdate.downloading(_:_:)](./downloading%28_,_%29.md)
   A status update that indicates that the download is in progress.
-- [AssetPackManager.DownloadStatusUpdate.paused(_:)](assetpackmanager/downloadstatusupdate/paused(_:).md)
+- [AssetPackManager.DownloadStatusUpdate.paused(_:)](./paused%28_%29.md)
   A status update that indicates that the download paused.
-- [AssetPackManager.DownloadStatusUpdate.finished(_:)](assetpackmanager/downloadstatusupdate/finished(_:).md)
+- [AssetPackManager.DownloadStatusUpdate.finished(_:)](./finished%28_%29.md)
   A status update that indicates that the download completed and that the asset pack is available locally.
-- [AssetPackManager.DownloadStatusUpdate.failed(_:_:)](assetpackmanager/downloadstatusupdate/failed(_:_:).md)
+- [AssetPackManager.DownloadStatusUpdate.failed(_:_:)](./failed%28_,_%29.md)
   A status update that indicates that the download failed.
 
 

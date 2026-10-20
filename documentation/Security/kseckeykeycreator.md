@@ -1,7 +1,8 @@
 # kSecKeyKeyCreator
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Type data. The data points to a `CSSM_GUID` structure representing the module ID of the CSP owning this key.
 
@@ -12,6 +13,10 @@ Type data. The data points to a `CSSM_GUID` structure representing the module ID
 
 ```swift
 var kSecKeyKeyCreator: Int32 { get }
+```
+
+```c
+kSecKeyKeyCreator
 ```
 
 

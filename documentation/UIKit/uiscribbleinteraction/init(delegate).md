@@ -1,7 +1,8 @@
 # init(delegate:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Scribble interaction that allows customizing the behavior of Scribble on text input views with the delegate you provide.
 
@@ -16,9 +17,13 @@ Creates a Scribble interaction that allows customizing the behavior of Scribble 
 init(delegate: any UIScribbleInteractionDelegate)
 ```
 
+```objc
+- (instancetype) initWithDelegate:(id<UIScribbleInteractionDelegate>) delegate;
+```
+
 ## Parameters
 
-- `delegate`: The object that acts as the delegate of this [`UIScribbleInteraction`](uiscribbleinteraction.md) instance.
+- `delegate`: The object that acts as the delegate of this [`UIScribbleInteraction`](../uiscribbleinteraction.md) instance.
 
 
 ---

@@ -1,7 +1,8 @@
 # isTriviallyIdentical(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a boolean value indicating whether this string is identical to `other`.
 
@@ -41,7 +42,7 @@ print(c.isTriviallyIdentical(to: d))
 
 Comparing strings this way includes comparing (normally) hidden implementation details such as the memory location of any underlying string storage object. Therefore, identical strings are guaranteed to compare equal with `==`, but not all equal strings are considered identical.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

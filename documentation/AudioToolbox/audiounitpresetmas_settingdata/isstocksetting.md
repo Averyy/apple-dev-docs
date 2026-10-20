@@ -1,15 +1,20 @@
 # isStockSetting
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var isStockSetting: UInt32
+```
+
+```c
+UInt32 isStockSetting;
 ```
 
 

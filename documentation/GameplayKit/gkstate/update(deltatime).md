@@ -1,7 +1,8 @@
 # update(deltaTime:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs custom actions when a state machine updates while in this state.
 
@@ -19,9 +20,13 @@ Performs custom actions when a state machine updates while in this state.
 func update(deltaTime seconds: TimeInterval)
 ```
 
+```objc
+- (void) updateWithDeltaTime:(NSTimeInterval) seconds;
+```
+
 #### Discussion
 
-A state machine calls this method when its own [`update(deltaTime:)`](gkstatemachine/update(deltatime:).md) method is called—typically, in preparation for each animation frame to be rendered in your game. Override this method to implement per-frame logic specific to this state in the state machine.
+A state machine calls this method when its own [`update(deltaTime:)`](../gkstatemachine/update%28deltatime%29.md) method is called—typically, in preparation for each animation frame to be rendered in your game. Override this method to implement per-frame logic specific to this state in the state machine.
 
 For example, in a game where each enemy character has Chase, Flee, Dead, and Respawn states, the update method for the Chase state might find the player’s location and move the enemy in the direction of the player, the update method for the Flee state might move the enemy away from the player, and the update method for the Dead state might move what remains of the enemy towards its respawn location.
 
@@ -31,9 +36,10 @@ For example, in a game where each enemy character has Chase, Flee, Dead, and Res
 
 ## See Also
 
-- [func didEnter(from: GKState?)](gkstate/didenter(from:).md)
+### Handling State Transitions and Updates
+- [func didEnter(from: GKState?)](./didenter%28from%29.md)
   Performs custom actions when a state machine transitions into this state.
-- [func willExit(to: GKState)](gkstate/willexit(to:).md)
+- [func willExit(to: GKState)](./willexit%28to%29.md)
   Performs custom actions when a state machine transitions out of this state.
 
 

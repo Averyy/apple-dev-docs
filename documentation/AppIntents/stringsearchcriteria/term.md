@@ -1,7 +1,8 @@
 # term
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string to use when matching items in your app.
 
@@ -11,7 +12,7 @@ The string to use when matching items in your app.
 - Mac Catalyst 17.2+
 - macOS 14.2+
 - tvOS 17.2+
-- visionOS ?+
+- visionOS
 - watchOS 10.2+
 
 ## Declaration

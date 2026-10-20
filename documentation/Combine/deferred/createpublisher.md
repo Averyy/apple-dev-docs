@@ -1,7 +1,8 @@
 # createPublisher
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The closure to execute when this deferred publisher receives a subscription.
 

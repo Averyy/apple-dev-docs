@@ -1,12 +1,13 @@
 # tabletProximity
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A tablet-proximity event occurred.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ A tablet-proximity event occurred.
 static var tabletProximity: NSEvent.EventSubtype { get }
 ```
 
+```c
+NSEventSubtypeTabletProximity
+```
+
 ## See Also
 
-- [static var mouseEvent: NSEvent.EventSubtype](nsevent/eventsubtype/mouseevent.md)
+### Getting Other Subtypes
+- [static var mouseEvent: NSEvent.EventSubtype](./mouseevent.md)
   A mouse event occurred.
-- [static var tabletPoint: NSEvent.EventSubtype](nsevent/eventsubtype/tabletpoint.md)
+- [static var tabletPoint: NSEvent.EventSubtype](./tabletpoint.md)
   A tablet-pointer event occurred.
-- [NSEvent.EventSubtype.touch](nsevent/eventsubtype/touch.md)
+- [NSEvent.EventSubtype.touch](./touch.md)
   A touch event occurred.
 
 

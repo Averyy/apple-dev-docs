@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Inserts the provided text and marks it to indicate that it’s part of an active input session.
@@ -19,9 +20,13 @@ Inserts the provided text and marks it to indicate that it’s part of an active
 func setMarkedText(_ markedText: String, selectedRange: NSRange)
 ```
 
+```objc
+- (void) setMarkedText:(NSString *) markedText selectedRange:(NSRange) selectedRange;
+```
+
 ## Mentions
 
-- [Handling text interactions in custom keyboards](handling-text-interactions-in-custom-keyboards.md)
+- [Handling text interactions in custom keyboards](../handling-text-interactions-in-custom-keyboards.md)
 
 #### Discussion
 
@@ -29,7 +34,8 @@ Setting marked text either replaces the existing marked text or, if none is pres
 
 ## See Also
 
-- [func unmarkText()](uitextdocumentproxy/unmarktext.md)
+### Managing marked text
+- [func unmarkText()](./unmarktext%28%29.md)
   Unmarks the currently marked text.
 
 

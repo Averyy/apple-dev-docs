@@ -1,7 +1,8 @@
 # MPSNNConcatenationNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of the results from one or more kernels.
 
@@ -19,26 +20,31 @@ A representation of the results from one or more kernels.
 class MPSNNConcatenationNode
 ```
 
+```objc
+@interface MPSNNConcatenationNode : MPSNNFilterNode
+```
+
 ## Topics
 
 ### Initializers
-- [init(sources: [MPSNNImageNode])](mpsnnconcatenationnode/init(sources:).md)
+- [init(sources: [MPSNNImageNode])](./mpsnnconcatenationnode/init%28sources%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNNFilterNode](mpsnnfilternode.md)
+- [MPSNNFilterNode](./mpsnnfilternode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSNNConcatenationGradientNode](mpsnnconcatenationgradientnode.md)
+### Kernel Concatenation Nodes
+- [class MPSNNConcatenationGradientNode](./mpsnnconcatenationgradientnode.md)
   A representation of the results from one or more gradient kernels.
 
 

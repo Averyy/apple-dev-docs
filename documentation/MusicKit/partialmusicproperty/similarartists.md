@@ -1,7 +1,8 @@
 # similarArtists
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the association property that returns a collection of artists similar to this artist.
 
@@ -19,6 +20,8 @@ An identifier for the association property that returns a collection of artists 
 ```swift
 static let similarArtists: MusicRelationshipProperty<Artist, Artist>
 ```
+
+Available when `Root` is `Artist`.
 
 
 ---

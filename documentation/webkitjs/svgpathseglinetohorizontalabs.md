@@ -1,7 +1,8 @@
 # SVGPathSegLinetoHorizontalAbs
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGPathSegLinetoHorizontalAbs
 ```
 
 ## Topics
 
 ### Instance Properties
-- [x](svgpathseglinetohorizontalabs/1633425-x.md)
+- [x](./svgpathseglinetohorizontalabs/api-1633425-x.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGPathSeg](svgpathseg.md)
+- [SVGPathSeg](./svgpathseg.md)
 
 
 ---

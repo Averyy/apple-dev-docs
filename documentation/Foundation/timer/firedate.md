@@ -1,7 +1,8 @@
 # fireDate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date at which the timer will fire.
 
@@ -20,6 +21,10 @@ The date at which the timer will fire.
 var fireDate: Date { get set }
 ```
 
+```objc
+@property (copy) NSDate * fireDate;
+```
+
 #### Discussion
 
 If the timer is no longer valid, the last date at which the timer fired.
@@ -28,15 +33,16 @@ You can set this property to adjust the firing time of a repeating timer. Althou
 
 You should not change the fire date of a timer that has been invalidated, which includes non-repeating timers that have already fired. You could potentially change the fire date of a non-repeating timer that had not yet fired, although you should always do so from the thread to which the timer is attached to avoid potential race conditions.
 
-Use the [`isValid`](timer/isvalid.md) method to verify that the timer is valid.
+Use the [`isValid`](./isvalid.md) method to verify that the timer is valid.
 
 ## See Also
 
-- [var isValid: Bool](timer/isvalid.md)
+### Retrieving Timer Information
+- [var isValid: Bool](./isvalid.md)
   A Boolean value that indicates whether the timer is currently valid.
-- [var timeInterval: TimeInterval](timer/timeinterval.md)
+- [var timeInterval: TimeInterval](./timeinterval.md)
   The timer’s time interval, in seconds.
-- [var userInfo: Any?](timer/userinfo.md)
+- [var userInfo: Any?](./userinfo.md)
   The receiver’s `userInfo` object.
 
 

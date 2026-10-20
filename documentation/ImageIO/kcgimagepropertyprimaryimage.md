@@ -1,7 +1,8 @@
 # kCGImagePropertyPrimaryImage
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The index of the primary image in the file.
 
@@ -20,22 +21,27 @@ The index of the primary image in the file.
 let kCGImagePropertyPrimaryImage: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyPrimaryImage;
+```
+
 ## See Also
 
-- [let kCGImagePropertyImageCount: CFString](kcgimagepropertyimagecount.md)
+### Image Information
+- [let kCGImagePropertyImageCount: CFString](./kcgimagepropertyimagecount.md)
   The number of images in the file.
-- [let kCGImagePropertyIsIndexed: CFString](kcgimagepropertyisindexed.md)
+- [let kCGImagePropertyIsIndexed: CFString](./kcgimagepropertyisindexed.md)
   A Boolean value that indicates whether the image contains indexed pixel samples.
-- [let kCGImagePropertyImages: CFString](kcgimagepropertyimages.md)
+- [let kCGImagePropertyImages: CFString](./kcgimagepropertyimages.md)
   An array of dictionaries, each of which contains metadata for one of the images in the file.
-- [let kCGImagePropertyThumbnailImages: CFString](kcgimagepropertythumbnailimages.md)
-- [let kCGImagePropertyIsFloat: CFString](kcgimagepropertyisfloat.md)
+- [let kCGImagePropertyThumbnailImages: CFString](./kcgimagepropertythumbnailimages.md)
+- [let kCGImagePropertyIsFloat: CFString](./kcgimagepropertyisfloat.md)
   A Boolean value that indicates whether the image contains floating-point pixel samples.
-- [let kCGImagePropertyOrientation: CFString](kcgimagepropertyorientation.md)
+- [let kCGImagePropertyOrientation: CFString](./kcgimagepropertyorientation.md)
   The intended display orientation of the image.
-- [Individual Image Properties](individual-image-properties.md)
+- [Individual Image Properties](./individual-image-properties.md)
   Properties that apply to an individual image in an image source.
-- [enum CGImagePropertyOrientation](cgimagepropertyorientation.md)
+- [enum CGImagePropertyOrientation](./cgimagepropertyorientation.md)
   A value describing the intended display orientation for an image.
 
 

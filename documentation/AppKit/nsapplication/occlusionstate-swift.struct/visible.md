@@ -1,7 +1,8 @@
 # visible
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 If set, at least part of any window owned by this app is visible.
 
@@ -12,6 +13,10 @@ If set, at least part of any window owned by this app is visible.
 
 ```swift
 static var visible: NSApplication.OcclusionState { get }
+```
+
+```c
+NSApplicationOcclusionStateVisible
 ```
 
 #### Discussion

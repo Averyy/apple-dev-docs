@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hashes the essential components of the pin by feeding them into the hash function.
 

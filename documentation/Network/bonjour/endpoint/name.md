@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Bonjour name of the endpoint.
 

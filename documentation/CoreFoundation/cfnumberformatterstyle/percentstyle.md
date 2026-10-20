@@ -1,18 +1,19 @@
 # CFNumberFormatterStyle.percentStyle
 
 **Framework**: Core Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies a percent style format.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,21 +21,26 @@ Specifies a percent style format.
 case percentStyle
 ```
 
+```c
+kCFNumberFormatterPercentStyle
+```
+
 ## See Also
 
-- [CFNumberFormatterStyle.currencyAccountingStyle](cfnumberformatterstyle/currencyaccountingstyle.md)
-- [CFNumberFormatterStyle.currencyISOCodeStyle](cfnumberformatterstyle/currencyisocodestyle.md)
-- [CFNumberFormatterStyle.currencyPluralStyle](cfnumberformatterstyle/currencypluralstyle.md)
-- [CFNumberFormatterStyle.currencyStyle](cfnumberformatterstyle/currencystyle.md)
+### Enumeration Cases
+- [CFNumberFormatterStyle.currencyAccountingStyle](./currencyaccountingstyle.md)
+- [CFNumberFormatterStyle.currencyISOCodeStyle](./currencyisocodestyle.md)
+- [CFNumberFormatterStyle.currencyPluralStyle](./currencypluralstyle.md)
+- [CFNumberFormatterStyle.currencyStyle](./currencystyle.md)
   Specifies a currency style format.
-- [CFNumberFormatterStyle.decimalStyle](cfnumberformatterstyle/decimalstyle.md)
+- [CFNumberFormatterStyle.decimalStyle](./decimalstyle.md)
   Specifies a decimal style format.
-- [CFNumberFormatterStyle.noStyle](cfnumberformatterstyle/nostyle.md)
+- [CFNumberFormatterStyle.noStyle](./nostyle.md)
   Specifies no style.
-- [CFNumberFormatterStyle.ordinalStyle](cfnumberformatterstyle/ordinalstyle.md)
-- [CFNumberFormatterStyle.scientificStyle](cfnumberformatterstyle/scientificstyle.md)
+- [CFNumberFormatterStyle.ordinalStyle](./ordinalstyle.md)
+- [CFNumberFormatterStyle.scientificStyle](./scientificstyle.md)
   Specifies a scientific style format.
-- [CFNumberFormatterStyle.spellOutStyle](cfnumberformatterstyle/spelloutstyle.md)
+- [CFNumberFormatterStyle.spellOutStyle](./spelloutstyle.md)
   Specifies a spelled out format.
 
 

@@ -1,7 +1,8 @@
 # Bool.IntentDisplayName
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.0+
@@ -21,10 +22,10 @@ struct IntentDisplayName
 ## Topics
 
 ### Initializers
-- [init(true: LocalizedStringResource, false: LocalizedStringResource)](bool/intentdisplayname/init(true:false:).md)
+- [init(true: LocalizedStringResource, false: LocalizedStringResource)](./intentdisplayname/init%28true,false%29.md)
 ### Instance Properties
-- [let `false`: LocalizedStringResource](bool/intentdisplayname/false.md)
-- [let `true`: LocalizedStringResource](bool/intentdisplayname/true.md)
+- [let `false`: LocalizedStringResource](./intentdisplayname/false.md)
+- [let `true`: LocalizedStringResource](./intentdisplayname/true.md)
 
 
 ---

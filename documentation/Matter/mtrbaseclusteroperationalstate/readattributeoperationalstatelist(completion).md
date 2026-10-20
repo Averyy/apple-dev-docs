@@ -1,7 +1,8 @@
 # readAttributeOperationalStateList(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeOperationalStateList(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeOperationalStateList() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeOperationalStateListWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # action
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The selector identifying the action method called after the user selects the command.
 
@@ -18,17 +19,22 @@ The selector identifying the action method called after the user selects the com
 var action: Selector { get }
 ```
 
+```objc
+@property (nonatomic, readonly) SEL action;
+```
+
 ## See Also
 
-- [var title: String](uicommand/title.md)
+### Getting information about the command
+- [var title: String](./title.md)
   The command’s title.
-- [var image: UIImage?](uicommand/image.md)
+- [var image: UIImage?](./image.md)
   The command’s image.
-- [var discoverabilityTitle: String?](uicommand/discoverabilitytitle.md)
+- [var discoverabilityTitle: String?](./discoverabilitytitle.md)
   An elaborated title that explains the purpose of the command.
-- [var attributes: UIMenuElement.Attributes](uicommand/attributes.md)
+- [var attributes: UIMenuElement.Attributes](./attributes.md)
   The attributes indicating the style of the command.
-- [var state: UIMenuElement.State](uicommand/state.md)
+- [var state: UIMenuElement.State](./state.md)
   The state of the command.
 
 

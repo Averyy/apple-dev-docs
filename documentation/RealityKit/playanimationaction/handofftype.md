@@ -1,7 +1,8 @@
 # handoffType
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Type of handoff behavior between a currently-playing animation and the new animation.
 

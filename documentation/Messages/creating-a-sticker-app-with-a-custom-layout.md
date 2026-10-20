@@ -1,6 +1,8 @@
 # Creating a Sticker App with a Custom Layout
 
-**Framework**: Messages
+**Framework**: Messages  
+**Role**: Sample Code  
+**Download**: [CreatingAStickerAppWithACustomLayout.zip](https://docs-assets.developer.apple.com/published/f8e004f3708c/CreatingAStickerAppWithACustomLayout.zip)
 
 Expand on the Messages sticker app template to create an app with a customized user interface.
 
@@ -186,13 +188,14 @@ private func apply(configuration: CustomContentConfiguration) {
 
 ## See Also
 
-- [IceCreamBuilder: Building an iMessage Extension](icecreambuilder-building-an-imessage-extension.md)
+### Custom iMessage app interface
+- [IceCreamBuilder: Building an iMessage Extension](./icecreambuilder-building-an-imessage-extension.md)
   Allow users to collaborate on the design of ice cream sundae stickers.
-- [class MSMessagesAppViewController](msmessagesappviewcontroller.md)
+- [class MSMessagesAppViewController](./msmessagesappviewcontroller.md)
   The principal view controller for iMessage apps.
-- [protocol MSMessagesAppTranscriptPresentation](msmessagesapptranscriptpresentation.md)
+- [protocol MSMessagesAppTranscriptPresentation](./msmessagesapptranscriptpresentation.md)
   A protocol that provides support for displaying live messages in the transcript of the Messages app.
-- [enum MSMessagesAppPresentationStyle](msmessagesapppresentationstyle.md)
+- [enum MSMessagesAppPresentationStyle](./msmessagesapppresentationstyle.md)
   Presentation styles that describe your iMessage app’s appearance.
 
 

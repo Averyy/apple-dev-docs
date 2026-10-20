@@ -1,7 +1,8 @@
 # Manipulable.InputDevice
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Describes an input device like a hand or a trackpad.
 
@@ -17,25 +18,25 @@ struct InputDevice
 ## Topics
 
 ### Instance Properties
-- [let chirality: Manipulable.InputDevice.Chirality?](manipulable/inputdevice/chirality-swift.property.md)
+- [let chirality: Manipulable.InputDevice.Chirality?](./inputdevice/chirality-swift.property.md)
   The hand chirality (left or right) of this input device, or `nil` if this input device has no hand chirality.
-- [let kind: Manipulable.InputDevice.Kind](manipulable/inputdevice/kind-swift.property.md)
+- [let kind: Manipulable.InputDevice.Kind](./inputdevice/kind-swift.property.md)
   The kind of this input device.
-- [let pose: Pose3D?](manipulable/inputdevice/pose.md)
+- [let pose: Pose3D?](./inputdevice/pose.md)
   The pose of this input device, or `nil` if this input device has no pose.
 ### Enumerations
-- [Manipulable.InputDevice.Chirality](manipulable/inputdevice/chirality-swift.enum.md)
+- [Manipulable.InputDevice.Chirality](./inputdevice/chirality-swift.enum.md)
   Describes hand chirality (left or right) of an input device.
-- [Manipulable.InputDevice.Kind](manipulable/inputdevice/kind-swift.enum.md)
+- [Manipulable.InputDevice.Kind](./inputdevice/kind-swift.enum.md)
   Describes the kind of an input device.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # multiple(factor:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Constant line height based on a multiple of the point size.
 

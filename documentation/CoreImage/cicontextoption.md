@@ -1,22 +1,27 @@
 # CIContextOption
 
 **Framework**: Core Image  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An enum string type that your code can use to select different options when creating a Core Image context.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 struct CIContextOption
+```
+
+```c
+typedef NSString * CIContextOption;
 ```
 
 #### Overview
@@ -29,41 +34,41 @@ These option keys can be passed to `CIContext` creation APIs such as:
 ## Topics
 
 ### Type Properties
-- [static let allowLowPower: CIContextOption](cicontextoption/allowlowpower.md)
+- [static let allowLowPower: CIContextOption](./cicontextoption/allowlowpower.md)
   A Boolean value to control the power level of Core Image context renders.
-- [static let cacheIntermediates: CIContextOption](cicontextoption/cacheintermediates.md)
+- [static let cacheIntermediates: CIContextOption](./cicontextoption/cacheintermediates.md)
   A Boolean value to control how a Core Image context caches the contents of any intermediate image buffers it uses during rendering.
-- [static let highQualityDownsample: CIContextOption](cicontextoption/highqualitydownsample.md)
+- [static let highQualityDownsample: CIContextOption](./cicontextoption/highqualitydownsample.md)
   A Boolean value to control the quality of image downsampling operations performed by the Core Image context.
-- [static let memoryTarget: CIContextOption](cicontextoption/memorytarget.md)
+- [static let memoryTarget: CIContextOption](./cicontextoption/memorytarget.md)
   A number value to control the maximum memory in megabytes that the context allocates for render tasks.
-- [static let name: CIContextOption](cicontextoption/name.md)
+- [static let name: CIContextOption](./cicontextoption/name.md)
   A Boolean value to specify a client-provided name for a context.
-- [static let outputColorSpace: CIContextOption](cicontextoption/outputcolorspace.md)
+- [static let outputColorSpace: CIContextOption](./cicontextoption/outputcolorspace.md)
   A Core Image context option key to specify the default destination color space for rendering.
-- [static let outputPremultiplied: CIContextOption](cicontextoption/outputpremultiplied.md)
+- [static let outputPremultiplied: CIContextOption](./cicontextoption/outputpremultiplied.md)
   A Boolean value to control how a Core Image context render produces alpha-premultiplied pixels.
-- [static let priorityRequestLow: CIContextOption](cicontextoption/priorityrequestlow.md)
+- [static let priorityRequestLow: CIContextOption](./cicontextoption/priorityrequestlow.md)
   A Boolean value to control the priority Core Image context renders.
-- [static let useSoftwareRenderer: CIContextOption](cicontextoption/usesoftwarerenderer.md)
+- [static let useSoftwareRenderer: CIContextOption](./cicontextoption/usesoftwarerenderer.md)
   A Boolean value to control if a Core Image context will use a software renderer.
-- [static let workingColorSpace: CIContextOption](cicontextoption/workingcolorspace.md)
+- [static let workingColorSpace: CIContextOption](./cicontextoption/workingcolorspace.md)
   A Core Image context option key to specify the working color space for rendering.
-- [static let workingFormat: CIContextOption](cicontextoption/workingformat.md)
+- [static let workingFormat: CIContextOption](./cicontextoption/workingformat.md)
   A Core Image context option key to specify the pixel format to for intermediate results when rendering.
-- [static let cvMetalTextureCache: CIContextOption](cicontextoption/cvmetaltexturecache.md)
+- [static let cvMetalTextureCache: CIContextOption](./cicontextoption/cvmetaltexturecache.md)
   A Core Video Metal texture cache object to improve the performance of Core Image context renders that use Core Video pixel buffers.
 ### Initializers
-- [init(rawValue: String)](cicontextoption/init(rawvalue:).md)
+- [init(rawValue: String)](./cicontextoption/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

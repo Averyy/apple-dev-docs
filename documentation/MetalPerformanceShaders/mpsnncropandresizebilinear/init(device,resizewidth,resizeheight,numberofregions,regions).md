@@ -1,7 +1,8 @@
 # init(device:resizeWidth:resizeHeight:numberOfRegions:regions:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, resizeWidth: Int, resizeHeight: Int, numberOfRegions: Int, regions: UnsafePointer<MPSRegion>)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device resizeWidth:(NSUInteger) resizeWidth resizeHeight:(NSUInteger) resizeHeight numberOfRegions:(NSUInteger) numberOfRegions regions:(const MPSRegion *) regions;
 ```
 
 

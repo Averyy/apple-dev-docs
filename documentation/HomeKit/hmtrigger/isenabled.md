@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 State of the trigger.
 
@@ -19,21 +20,26 @@ State of the trigger.
 var isEnabled: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isEnabled) BOOL enabled;
+```
+
 #### Discussion
 
 Triggers that are not enabled never fire.
 
 ## See Also
 
-- [var name: String](hmtrigger/name.md)
+### Managing Triggers
+- [var name: String](./name.md)
   The name of the trigger.
-- [func updateName(String, completionHandler: ((any Error)?) -> Void)](hmtrigger/updatename(_:completionhandler:).md)
+- [func updateName(String, completionHandler: ((any Error)?) -> Void)](./updatename%28_,completionhandler%29.md)
   Updates the name of the trigger.
-- [func enable(Bool, completionHandler: ((any Error)?) -> Void)](hmtrigger/enable(_:completionhandler:).md)
+- [func enable(Bool, completionHandler: ((any Error)?) -> Void)](./enable%28_,completionhandler%29.md)
   Changes the enabled state of the trigger.
-- [var lastFireDate: Date?](hmtrigger/lastfiredate.md)
+- [var lastFireDate: Date?](./lastfiredate.md)
   The last time this trigger fired.
-- [var uniqueIdentifier: UUID](hmtrigger/uniqueidentifier.md)
+- [var uniqueIdentifier: UUID](./uniqueidentifier.md)
   A unique identifier for this trigger.
 
 

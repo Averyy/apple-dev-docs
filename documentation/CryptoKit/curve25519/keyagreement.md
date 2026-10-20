@@ -1,7 +1,8 @@
 # Curve25519.KeyAgreement
 
 **Framework**: Apple CryptoKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A mechanism used to create a shared secret between two users by performing X25519 key agreement.
 
@@ -23,20 +24,21 @@ enum KeyAgreement
 ## Topics
 
 ### Using keys
-- [Curve25519.KeyAgreement.PrivateKey](curve25519/keyagreement/privatekey.md)
+- [Curve25519.KeyAgreement.PrivateKey](./keyagreement/privatekey.md)
   A Curve25519 private key used for key agreement.
-- [Curve25519.KeyAgreement.PublicKey](curve25519/keyagreement/publickey.md)
+- [Curve25519.KeyAgreement.PublicKey](./keyagreement/publickey.md)
   A Curve25519 public key used for key agreement.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Curve25519.Signing](curve25519/signing.md)
+### Performing operations
+- [Curve25519.Signing](./signing.md)
   A mechanism used to create or verify a cryptographic signature using Ed25519.
 
 

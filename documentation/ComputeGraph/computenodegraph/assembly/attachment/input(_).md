@@ -1,7 +1,8 @@
 # ComputeNodeGraph.Assembly.Attachment.input(_:)
 
 **Framework**: Compute Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The resource is read by an input port at the given address.
 
@@ -12,7 +13,7 @@ The resource is read by an input port at the given address.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

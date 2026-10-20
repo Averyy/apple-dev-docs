@@ -1,7 +1,8 @@
 # select(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func select(with params: MTRAudioOutputClusterSelectOutputParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func select(with params: MTRAudioOutputClusterSelectOutputParams) async throws
+```
+
+```objc
+- (void) selectOutputWithParams:(MTRAudioOutputClusterSelectOutputParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

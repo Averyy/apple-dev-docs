@@ -1,7 +1,8 @@
 # removeAttributeNamed(_:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 9.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func removeAttributeNamed(_ name: String)
+```
+
+```objc
+- (void) removeAttributeNamed:(NSString *) name;
 ```
 
 

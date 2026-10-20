@@ -1,7 +1,8 @@
 # GenericContent
 
 **Framework**: Now Playing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Content representing generic or unspecified media.
 
@@ -22,56 +23,57 @@ struct GenericContent
 
 ## Mentions
 
-- [Publishing media sessions](publishing-media-sessions.md)
+- [Publishing media sessions](./publishing-media-sessions.md)
 
 #### Overview
 
-Use this type when the media doesn’t fit into other specific content types such as [`MusicContent`](musiccontent.md), [`PodcastContent`](podcastcontent.md), [`MovieContent`](moviecontent.md), or [`TVShowContent`](tvshowcontent.md). This provides maximum flexibility for custom media types.
+Use this type when the media doesn’t fit into other specific content types such as [`MusicContent`](./musiccontent.md), [`PodcastContent`](./podcastcontent.md), [`MovieContent`](./moviecontent.md), or [`TVShowContent`](./tvshowcontent.md). This provides maximum flexibility for custom media types.
 
 ## Topics
 
 ### Initializers
-- [init(id: String, title: String, subtitle: String?, type: MediaType, duration: MediaDuration?, artwork: Artwork?)](genericcontent/init(id:title:subtitle:type:duration:artwork:).md)
+- [init(id: String, title: String, subtitle: String?, type: MediaType, duration: MediaDuration?, artwork: Artwork?)](./genericcontent/init%28id,title,subtitle,type,duration,artwork%29.md)
   Creates generic media content.
-- [init(id: String, title: String, subtitle: String?, type: MediaType, duration: MediaDuration?, artwork: Artwork, animatedArtwork: AnimatedArtwork?)](genericcontent/init(id:title:subtitle:type:duration:artwork:animatedartwork:).md)
+- [init(id: String, title: String, subtitle: String?, type: MediaType, duration: MediaDuration?, artwork: Artwork, animatedArtwork: AnimatedArtwork?)](./genericcontent/init%28id,title,subtitle,type,duration,artwork,animatedartwork%29.md)
   Creates generic media content with static and animated artwork.
 ### Instance Properties
-- [let animatedArtwork: AnimatedArtwork?](genericcontent/animatedartwork.md)
+- [let animatedArtwork: AnimatedArtwork?](./genericcontent/animatedartwork.md)
   Animated artwork for this content.
-- [let artwork: Artwork?](genericcontent/artwork.md)
+- [let artwork: Artwork?](./genericcontent/artwork.md)
   Artwork for this content.
-- [let duration: MediaDuration?](genericcontent/duration.md)
+- [let duration: MediaDuration?](./genericcontent/duration.md)
   The duration of this content.
-- [let subtitle: String?](genericcontent/subtitle.md)
+- [let subtitle: String?](./genericcontent/subtitle.md)
   An optional subtitle or secondary description.
-- [let title: String](genericcontent/title.md)
+- [let title: String](./genericcontent/title.md)
   The title of the content.
-- [let type: MediaType](genericcontent/type.md)
+- [let type: MediaType](./genericcontent/type.md)
   The media type (audio or video).
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
-- [MediaContentRepresentable](mediacontentrepresentable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [MediaContentRepresentable](./mediacontentrepresentable.md)
 
 ## See Also
 
-- [protocol MediaContentRepresentable](mediacontentrepresentable.md)
+### Presenting content
+- [protocol MediaContentRepresentable](./mediacontentrepresentable.md)
   A protocol that describes media content being played.
-- [struct MusicContent](musiccontent.md)
+- [struct MusicContent](./musiccontent.md)
   Content representing a music track or song.
-- [struct PodcastContent](podcastcontent.md)
+- [struct PodcastContent](./podcastcontent.md)
   Content representing a podcast episode.
-- [struct MovieContent](moviecontent.md)
+- [struct MovieContent](./moviecontent.md)
   Content representing a movie.
-- [struct TVShowContent](tvshowcontent.md)
+- [struct TVShowContent](./tvshowcontent.md)
   Content representing a TV show episode.
-- [struct BookContent](bookcontent.md)
+- [struct BookContent](./bookcontent.md)
   Content representing an audiobook or book being read aloud.
-- [struct RadioContent](radiocontent.md)
+- [struct RadioContent](./radiocontent.md)
   Content representing a radio station or live audio stream.
-- [struct HomeMediaContent](homemediacontent.md)
+- [struct HomeMediaContent](./homemediacontent.md)
   Content representing home media or ambient content.
 
 

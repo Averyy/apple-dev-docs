@@ -1,7 +1,8 @@
 # xcodeMetrics.ProductData.MetricCategories
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A metric category and its associated array of data and measurements.
 
@@ -10,14 +11,14 @@ A metric category and its associated array of data and measurements.
 
 ## Declaration
 
-```swift
+```
 object xcodeMetrics.ProductData.MetricCategories
 ```
 
 ## Topics
 
 ### Objects
-- [object xcodeMetrics.ProductData.MetricCategories.Metrics](xcodemetrics/productdata-data.dictionary/metriccategories-data.dictionary/metrics-data.dictionary.md)
+- [object xcodeMetrics.ProductData.MetricCategories.Metrics](./metriccategories-data.dictionary/metrics-data.dictionary.md)
   Data that relates to power and performance measurements for an app, including its datasets, goal keys, metrics identifier, and unit of measurement.
 
 ## Properties

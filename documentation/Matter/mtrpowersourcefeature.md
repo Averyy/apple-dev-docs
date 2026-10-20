@@ -1,7 +1,8 @@
 # MTRPowerSourceFeature
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.1+
@@ -18,27 +19,31 @@
 struct MTRPowerSourceFeature
 ```
 
+```c
+enum MTRPowerSourceFeature : uint32_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](mtrpowersourcefeature/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./mtrpowersourcefeature/init%28rawvalue%29.md)
 ### Type Properties
-- [static var battery: MTRPowerSourceFeature](mtrpowersourcefeature/battery.md)
-- [static var rechargeable: MTRPowerSourceFeature](mtrpowersourcefeature/rechargeable.md)
-- [static var replaceable: MTRPowerSourceFeature](mtrpowersourcefeature/replaceable.md)
-- [static var wired: MTRPowerSourceFeature](mtrpowersourcefeature/wired.md)
+- [static var battery: MTRPowerSourceFeature](./mtrpowersourcefeature/battery.md)
+- [static var rechargeable: MTRPowerSourceFeature](./mtrpowersourcefeature/rechargeable.md)
+- [static var replaceable: MTRPowerSourceFeature](./mtrpowersourcefeature/replaceable.md)
+- [static var wired: MTRPowerSourceFeature](./mtrpowersourcefeature/wired.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

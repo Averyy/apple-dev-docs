@@ -1,14 +1,15 @@
 # maxerror
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 long maxerror;
 ```
 

@@ -1,6 +1,8 @@
 # Developing a Document-Based App
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: Sample Code  
+**Download**: [DevelopingADocumentBasedApp.zip](https://docs-assets.developer.apple.com/published/493c3c9bab1a/DevelopingADocumentBasedApp.zip)
 
 Write an app that creates, manages, edits, and saves text documents.
 
@@ -12,11 +14,11 @@ Write an app that creates, manages, edits, and saves text documents.
 
 This sample shows how to use the Cocoa document architecture to manage documents. A document is a body of information, such as pages of text, stored in a file locally or in iCloud.
 
-In the Cocoa document architecture, your document is represented by a custom subclass of [`NSDocument`](nsdocument.md). The `NSDocument` class provides most of the behavior for managing your document. In your subclass, you override or fine-tune this behavior by providing custom code for reading and writing document data. A document’s data is called the *data model*. Each `NSDocument` has its own [`NSWindowController`](nswindowcontroller.md), which in turn creates an [`NSWindow`](nswindow.md) object for displaying the document content.
+In the Cocoa document architecture, your document is represented by a custom subclass of [`NSDocument`](./nsdocument.md). The `NSDocument` class provides most of the behavior for managing your document. In your subclass, you override or fine-tune this behavior by providing custom code for reading and writing document data. A document’s data is called the *data model*. Each `NSDocument` has its own [`NSWindowController`](./nswindowcontroller.md), which in turn creates an [`NSWindow`](./nswindow.md) object for displaying the document content.
 
-Because a document-based app handles multiple documents that are open at the same time, it uses [`NSDocumentController`](nsdocumentcontroller.md) to manage them. Cocoa provides most of the infrastructure for managing your documents. With file coordination, version management, and conflict resolution among other documents, it provides the easiest path to using iCloud.
+Because a document-based app handles multiple documents that are open at the same time, it uses [`NSDocumentController`](./nsdocumentcontroller.md) to manage them. Cocoa provides most of the infrastructure for managing your documents. With file coordination, version management, and conflict resolution among other documents, it provides the easiest path to using iCloud.
 
-![Cocoa document architecture diagram showing the relationships between NSDocumentController and its list of NSDocument objects, and between NSDocument and its NSWindowController.](/images/com.apple.appkit/documentbasedapp-diagram1@2x.png)
+![Cocoa document architecture diagram showing the relationships between NSDocumentController and its list of NSDocument objects, and between NSDocument and its NSWindowController.](https://developer.apple.com/tutorials/images/com.apple.appkit/documentbasedapp-diagram1@2x.png)
 
 ##### Declare the Document Type
 
@@ -98,11 +100,11 @@ override var representedObject: Any? {
 }
 ```
 
-As a result, the `NSTextView` containing the plain text is bound to the document’s data model using [`Cocoa Bindings`](cocoa-bindings.md) to keep the text view’s data in sync with the data model. The `Value` binding of the `NSTextView` is set to the following key path of its view controller:
+As a result, the `NSTextView` containing the plain text is bound to the document’s data model using [Cocoa Bindings](./cocoa-bindings.md) to keep the text view’s data in sync with the data model. The `Value` binding of the `NSTextView` is set to the following key path of its view controller:
 
 `representedObject.contentString`
 
-![Cocoa document architecture diagram showing how text view data is synced with the data model object through its view controller’s representedObject.](/images/com.apple.appkit/documentbasedapp-diagram2@2x.png)
+![Cocoa document architecture diagram showing how text view data is synced with the data model object through its view controller’s representedObject.](https://developer.apple.com/tutorials/images/com.apple.appkit/documentbasedapp-diagram2@2x.png)
 
 ##### Read the Document Content
 
@@ -126,11 +128,12 @@ override func data(ofType typeName: String) throws -> Data {
 
 ## See Also
 
-- [class NSDocument](nsdocument.md)
+### Documents
+- [class NSDocument](./nsdocument.md)
   An abstract class that defines the interface for macOS documents.
-- [class NSDocumentController](nsdocumentcontroller.md)
+- [class NSDocumentController](./nsdocumentcontroller.md)
   An object that manages an app’s documents.
-- [class NSPersistentDocument](nspersistentdocument.md)
+- [class NSPersistentDocument](./nspersistentdocument.md)
   A document object that can integrate with Core Data.
 
 

@@ -1,7 +1,8 @@
 # GameCenterMatchmakingSessionsV1MetricResponse.Data.DataPoints.Values
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data values in the response per session.
 
@@ -10,7 +11,7 @@ The data values in the response per session.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingSessionsV1MetricResponse.Data.DataPoints.Values
 ```
 

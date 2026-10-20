@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string to display for the player.
 
@@ -20,9 +21,21 @@ A string to display for the player.
 var displayName: String { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly, nonnull) NSString * displayName;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly, nonnull) NSString * displayName;
+```
+
 ## Mentions
 
-- [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
+- [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
 #### Discussion
 
@@ -30,11 +43,12 @@ The display name for a player depends on whether the player is a friend of the l
 
 ## See Also
 
-- [var alias: String](gkplayer/alias.md)
+### Accessing player details
+- [var alias: String](./alias.md)
   A string the player chooses to identify themself to other players.
-- [var isInvitable: Bool](gkplayer/isinvitable.md)
+- [var isInvitable: Bool](./isinvitable.md)
   A Boolean value that indicates whether the local player can send an invitation to the player.
-- [var isFriend: Bool](gkplayer/isfriend.md)
+- [var isFriend: Bool](./isfriend.md)
   A Boolean value that indicates whether the player is a friend of the local player.
 
 

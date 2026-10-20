@@ -1,7 +1,8 @@
 # BuildUpload.Relationships.BuildUploadFiles
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data that describes the build related to a upload.
 
@@ -10,7 +11,7 @@ The data that describes the build related to a upload.
 
 ## Declaration
 
-```swift
+```
 object BuildUpload.Relationships.BuildUploadFiles
 ```
 

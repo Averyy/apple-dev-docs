@@ -1,7 +1,8 @@
 # stackedLayoutAppearance
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The appearance attributes for items with a stacked layout.
 
@@ -19,17 +20,22 @@ The appearance attributes for items with a stacked layout.
 var stackedLayoutAppearance: UITabBarItemAppearance { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) UITabBarItemAppearance * stackedLayoutAppearance;
+```
+
 #### Discussion
 
 If you didn’t provide a set of explicit attributes at initialization time, UIKit provides an object with default attributes.
 
 ## See Also
 
-- [var stackedItemPositioning: UITabBar.ItemPositioning](uitabbarappearance/stackeditempositioning.md)
+### Configuring stacked item appearances
+- [var stackedItemPositioning: UITabBar.ItemPositioning](./stackeditempositioning.md)
   The scheme to use when positioning stacked items within the tab bar.
-- [var stackedItemSpacing: CGFloat](uitabbarappearance/stackeditemspacing.md)
+- [var stackedItemSpacing: CGFloat](./stackeditemspacing.md)
   The amount of space to insert between stacked tab bar items.
-- [var stackedItemWidth: CGFloat](uitabbarappearance/stackeditemwidth.md)
+- [var stackedItemWidth: CGFloat](./stackeditemwidth.md)
   The width of stacked items in the tab bar.
 
 

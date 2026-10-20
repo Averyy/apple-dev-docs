@@ -1,17 +1,22 @@
 # menu
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The menu item’s menu.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 unowned(unsafe) var menu: NSMenu? { get set }
+```
+
+```objc
+@property (assign, nullable) NSMenu * menu;
 ```
 
 

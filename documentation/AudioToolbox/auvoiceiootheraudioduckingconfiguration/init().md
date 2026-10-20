@@ -1,17 +1,18 @@
 # init()
 
 **Framework**: Audio Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new ducking configuration for other non-voice audio with advanced ducking disabled and the default ducking level.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 

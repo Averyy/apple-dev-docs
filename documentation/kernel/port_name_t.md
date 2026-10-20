@@ -1,14 +1,15 @@
 # port_name_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 typedef mach_port_name_t port_name_t;
 ```
 

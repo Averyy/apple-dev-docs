@@ -1,7 +1,8 @@
 # errSecCSBadLVArch
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The library validation flag cannot be used with an i386 binary.
 
@@ -13,6 +14,10 @@ The library validation flag cannot be used with an i386 binary.
 
 ```swift
 var errSecCSBadLVArch: OSStatus { get }
+```
+
+```c
+errSecCSBadLVArch
 ```
 
 

@@ -1,7 +1,8 @@
 # Data.Base64DecodingOptions
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Options to use when decoding data.
 
@@ -22,13 +23,15 @@ typealias Base64DecodingOptions = NSData.Base64DecodingOptions
 
 ## See Also
 
-- [NSData.Base64DecodingOptions](nsdata/base64decodingoptions.md)
+### Related Documentation
+- [NSData.Base64DecodingOptions](../nsdata/base64decodingoptions.md)
   Options to modify the decoding algorithm used to decode Base64 encoded data.
-- [func base64EncodedData(options: Data.Base64EncodingOptions) -> Data](data/base64encodeddata(options:).md)
+### Base-64 Encoding
+- [func base64EncodedData(options: Data.Base64EncodingOptions) -> Data](./base64encodeddata%28options%29.md)
   Returns Base-64 encoded data.
-- [func base64EncodedString(options: Data.Base64EncodingOptions) -> String](data/base64encodedstring(options:).md)
+- [func base64EncodedString(options: Data.Base64EncodingOptions) -> String](./base64encodedstring%28options%29.md)
   Returns a Base-64 encoded string.
-- [typealias Base64EncodingOptions](data/base64encodingoptions.md)
+- [typealias Base64EncodingOptions](./base64encodingoptions.md)
   Options to use when encoding data.
 
 

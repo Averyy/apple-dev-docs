@@ -1,7 +1,8 @@
 # voIP
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that the stream is providing VoIP service.
 
@@ -14,21 +15,28 @@ Specifies that the stream is providing VoIP service.
 - visionOS 1.0+
 - watchOS 2.0+
 
+> **Deprecated**: This legacy VoIP API was deprecated in iOS 10.0. Use [PushKit](../../PushKit/PushKit.md) to develop VoIP apps.
+
 ## Declaration
 
 ```swift
 static let voIP: StreamNetworkServiceTypeValue
 ```
 
+```c
+extern NSStreamNetworkServiceTypeValue const NSStreamNetworkServiceTypeVoIP;
+```
+
 ## See Also
 
-- [static let background: StreamNetworkServiceTypeValue](streamnetworkservicetypevalue/background.md)
+### Type Properties
+- [static let background: StreamNetworkServiceTypeValue](./background.md)
   Specifies that the stream is providing a background service.
-- [static let video: StreamNetworkServiceTypeValue](streamnetworkservicetypevalue/video.md)
+- [static let video: StreamNetworkServiceTypeValue](./video.md)
   Specifies that the stream is providing video service.
-- [static let voice: StreamNetworkServiceTypeValue](streamnetworkservicetypevalue/voice.md)
+- [static let voice: StreamNetworkServiceTypeValue](./voice.md)
   Specifies that the stream is providing voice service.
-- [static let callSignaling: StreamNetworkServiceTypeValue](streamnetworkservicetypevalue/callsignaling.md)
+- [static let callSignaling: StreamNetworkServiceTypeValue](./callsignaling.md)
 
 
 ---

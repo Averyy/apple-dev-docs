@@ -1,7 +1,8 @@
 # SNErrorDomain
 
 **Framework**: Sound Analysis  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A string that identifies the Sound Analysis error domain.
 
@@ -20,11 +21,16 @@ A string that identifies the Sound Analysis error domain.
 let SNErrorDomain: String
 ```
 
+```c
+extern NSString * const SNErrorDomain;
+```
+
 ## See Also
 
-- [struct SNError](snerror.md)
+### Errors
+- [struct SNError](./snerror.md)
   An error from the Sound Analysis framework.
-- [SNError.Code](snerror/code.md)
+- [SNError.Code](./snerror/code.md)
   The enumerated error codes that the Sound Analysis framework produces.
 
 

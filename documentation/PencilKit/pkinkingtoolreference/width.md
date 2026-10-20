@@ -1,7 +1,8 @@
 # width
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The base line width for new content.
 
@@ -18,15 +19,20 @@ The base line width for new content.
 var width: CGFloat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGFloat width;
+```
+
 #### Discussion
 
 The actual line width at any given point varies based on input from Apple Pencil. For finger-based drawing, the line width is equal to the value in this property.
 
 ## See Also
 
-- [var color: UIColor](pkinkingtoolreference/color.md)
+### Getting the inking tool attributes
+- [var color: UIColor](./color.md)
   The color of the ink.
-- [var ink: PKInk](pkinkingtoolreference/ink.md)
+- [var ink: PKInk](./ink.md)
   The ink that this tool creates strokes with.
 
 

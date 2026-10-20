@@ -1,7 +1,8 @@
 # localizedRecoveryOptions
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing the localized titles of buttons appropriate for displaying in an alert panel.
 
@@ -20,19 +21,24 @@ An array containing the localized titles of buttons appropriate for displaying i
 var localizedRecoveryOptions: [String]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSArray<NSString *> * localizedRecoveryOptions;
+```
+
 #### Discussion
 
-The object in the user info dictionary for the key [`NSLocalizedRecoveryOptionsErrorKey`](nslocalizedrecoveryoptionserrorkey.md). If the user info dictionary doesn’t contain a value for [`NSLocalizedRecoveryOptionsErrorKey`](nslocalizedrecoveryoptionserrorkey.md), this property is `nil`.
+The object in the user info dictionary for the key [`NSLocalizedRecoveryOptionsErrorKey`](../nslocalizedrecoveryoptionserrorkey.md). If the user info dictionary doesn’t contain a value for [`NSLocalizedRecoveryOptionsErrorKey`](../nslocalizedrecoveryoptionserrorkey.md), this property is `nil`.
 
-The first string is the title of the right-most and default button, the second the one to the left of that, and so on. The recovery options should be appropriate for the  [`localizedRecoverySuggestion`](nserror/localizedrecoverysuggestion.md) property. If the user info dictionary doesn’t contain a value for [`NSLocalizedRecoveryOptionsErrorKey`](nslocalizedrecoveryoptionserrorkey.md), only an OK button is displayed.
+The first string is the title of the right-most and default button, the second the one to the left of that, and so on. The recovery options should be appropriate for the  [`localizedRecoverySuggestion`](./localizedrecoverysuggestion.md) property. If the user info dictionary doesn’t contain a value for [`NSLocalizedRecoveryOptionsErrorKey`](../nslocalizedrecoveryoptionserrorkey.md), only an OK button is displayed.
 
 ## See Also
 
-- [var localizedDescription: String](nserror/localizeddescription.md)
+### Getting a Localized Error Description
+- [var localizedDescription: String](./localizeddescription.md)
   A string containing the localized description of the error.
-- [var localizedRecoverySuggestion: String?](nserror/localizedrecoverysuggestion.md)
+- [var localizedRecoverySuggestion: String?](./localizedrecoverysuggestion.md)
   A string containing the localized recovery suggestion for the error.
-- [var localizedFailureReason: String?](nserror/localizedfailurereason.md)
+- [var localizedFailureReason: String?](./localizedfailurereason.md)
   A string containing the localized explanation of the reason for the error.
 
 

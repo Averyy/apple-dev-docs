@@ -1,7 +1,8 @@
 # UITextInteraction
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interaction that provides text selection gestures and UI to custom text views.
 
@@ -18,13 +19,17 @@ An interaction that provides text selection gestures and UI to custom text views
 class UITextInteraction
 ```
 
+```objc
+@interface UITextInteraction : NSObject
+```
+
 ## Mentions
 
-- [Adopting system selection UI in custom text views](adopting-system-selection-ui-in-custom-text-views.md)
+- [Adopting system selection UI in custom text views](./adopting-system-selection-ui-in-custom-text-views.md)
 
 #### Overview
 
-Use [`UITextInteraction`](uitextinteraction.md) to provide your custom text views the same text selection gestures and UI available in native text views like [`UITextView`](uitextview.md) and [`UITextField`](uitextfield.md). When creating a text interaction, choose a mode that matches the state of the text, [`UITextInteractionMode.editable`](uitextinteractionmode/editable.md) or [`UITextInteractionMode.nonEditable`](uitextinteractionmode/noneditable.md). Then set the [`textInput`](uitextinteraction/textinput.md) property to an object that conforms to [`UITextInput`](uitextinput.md), and add the interaction to a view.
+Use [`UITextInteraction`](./uitextinteraction.md) to provide your custom text views the same text selection gestures and UI available in native text views like [`UITextView`](./uitextview.md) and [`UITextField`](./uitextfield.md). When creating a text interaction, choose a mode that matches the state of the text, [`UITextInteractionMode.editable`](./uitextinteractionmode/editable.md) or [`UITextInteractionMode.nonEditable`](./uitextinteractionmode/noneditable.md). Then set the [`textInput`](./uitextinteraction/textinput.md) property to an object that conforms to [`UITextInput`](./uitextinput.md), and add the interaction to a view.
 
 ```swift
 // Create a selection interaction for non-editable content.
@@ -66,49 +71,50 @@ override func resignFirstResponder() -> Bool {
 }
 ```
 
-If your app provides other gestures in the same view hierarchy, you can use the [`require(toFail:)`](uigesturerecognizer/require(tofail:).md) method to set up failure requirements between your app’s gestures and the text interaction gestures listed in the [`gesturesForFailureRequirements`](uitextinteraction/gesturesforfailurerequirements.md) property.
+If your app provides other gestures in the same view hierarchy, you can use the [`require(toFail:)`](./uigesturerecognizer/require%28tofail%29.md) method to set up failure requirements between your app’s gestures and the text interaction gestures listed in the [`gesturesForFailureRequirements`](./uitextinteraction/gesturesforfailurerequirements.md) property.
 
 ## Topics
 
 ### Creating text interactions
-- [convenience init(for: UITextInteractionMode)](uitextinteraction/init(for:).md)
+- [convenience init(for: UITextInteractionMode)](./uitextinteraction/init%28for%29.md)
   Creates a text interaction with the specified mode.
 ### Handling text input and interaction events
-- [var textInput: (any UIResponder & UITextInput)?](uitextinteraction/textinput.md)
+- [var textInput: (any UIResponder & UITextInput)?](./uitextinteraction/textinput.md)
   The object that interacts with the text input system.
-- [var delegate: (any UITextInteractionDelegate)?](uitextinteraction/delegate.md)
+- [var delegate: (any UITextInteractionDelegate)?](./uitextinteraction/delegate.md)
   The object that receives events from the text interaction.
-- [protocol UITextInteractionDelegate](uitextinteractiondelegate.md)
+- [protocol UITextInteractionDelegate](./uitextinteractiondelegate.md)
   An interface that an object implements to receive information about text interaction events.
 ### Getting interaction information
-- [var gesturesForFailureRequirements: [UIGestureRecognizer]](uitextinteraction/gesturesforfailurerequirements.md)
+- [var gesturesForFailureRequirements: [UIGestureRecognizer]](./uitextinteraction/gesturesforfailurerequirements.md)
   The list of gestures that the text interaction adds to the view hierarchy.
-- [var textInteractionMode: UITextInteractionMode](uitextinteraction/textinteractionmode.md)
+- [var textInteractionMode: UITextInteractionMode](./uitextinteraction/textinteractionmode.md)
   The mode of the text interaction.
-- [enum UITextInteractionMode](uitextinteractionmode.md)
+- [enum UITextInteractionMode](./uitextinteractionmode.md)
   Modes that determine the selection behaviors that a text interaction provides.
 ### Initializers
-- [convenience init(forMode: UITextInteractionMode)](uitextinteraction/init(formode:).md)
+- [convenience init(forMode: UITextInteractionMode)](./uitextinteraction/init%28formode%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [UIInteraction](uiinteraction.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [UIInteraction](./uiinteraction.md)
 
 ## See Also
 
-- [protocol UITextInteractionDelegate](uitextinteractiondelegate.md)
+### Text interactions
+- [protocol UITextInteractionDelegate](./uitextinteractiondelegate.md)
   An interface that an object implements to receive information about text interaction events.
-- [enum UITextInteractionMode](uitextinteractionmode.md)
+- [enum UITextInteractionMode](./uitextinteractionmode.md)
   Modes that determine the selection behaviors that a text interaction provides.
 
 

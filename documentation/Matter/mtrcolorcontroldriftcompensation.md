@@ -1,7 +1,8 @@
 # MTRColorControlDriftCompensation
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.2+
@@ -18,26 +19,30 @@
 enum MTRColorControlDriftCompensation
 ```
 
+```c
+enum MTRColorControlDriftCompensation : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRColorControlDriftCompensation.none](mtrcolorcontroldriftcompensation/none.md)
-- [MTRColorControlDriftCompensation.opticalColorMonitoringAndFeedback](mtrcolorcontroldriftcompensation/opticalcolormonitoringandfeedback.md)
-- [MTRColorControlDriftCompensation.opticalLuminanceMonitoringAndFeedback](mtrcolorcontroldriftcompensation/opticalluminancemonitoringandfeedback.md)
-- [MTRColorControlDriftCompensation.otherOrUnknown](mtrcolorcontroldriftcompensation/otherorunknown.md)
-- [MTRColorControlDriftCompensation.temperatureMonitoring](mtrcolorcontroldriftcompensation/temperaturemonitoring.md)
+- [MTRColorControlDriftCompensation.none](./mtrcolorcontroldriftcompensation/none.md)
+- [MTRColorControlDriftCompensation.opticalColorMonitoringAndFeedback](./mtrcolorcontroldriftcompensation/opticalcolormonitoringandfeedback.md)
+- [MTRColorControlDriftCompensation.opticalLuminanceMonitoringAndFeedback](./mtrcolorcontroldriftcompensation/opticalluminancemonitoringandfeedback.md)
+- [MTRColorControlDriftCompensation.otherOrUnknown](./mtrcolorcontroldriftcompensation/otherorunknown.md)
+- [MTRColorControlDriftCompensation.temperatureMonitoring](./mtrcolorcontroldriftcompensation/temperaturemonitoring.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrcolorcontroldriftcompensation/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrcolorcontroldriftcompensation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # isResponse
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether there is a response from the request.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether there is a response from the request.
 
 ## Declaration
 
-```swift
+```
 readonly attribute Boolean isResponse;
 ```
 

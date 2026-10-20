@@ -1,7 +1,8 @@
 # InputTargetComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that gives an entity the ability to receive system input.
 
@@ -25,7 +26,7 @@ This component should be added to an entity to inform the system that it should 
 
 The hit testing shape that defines the entity’s interactive entity is defined by the `CollisionComponent`. To configure an entity for input but avoid any sort of physics-related processing, add an `InputTargetComponent` and `CollisionComponent`, but disable the `CollisionComponent` for collision detection, for example:
 
-```None
+```
 // Enable the entity for input.
 myEntity.components.set(InputTargetComponent())
 
@@ -42,32 +43,33 @@ myEntity.components.set(collision)
 ## Topics
 
 ### Structures
-- [InputTargetComponent.InputType](inputtargetcomponent/inputtype.md)
+- [InputTargetComponent.InputType](./inputtargetcomponent/inputtype.md)
   A type of input that the `InputTargetComponent`’s entity can receive.
 ### Initializers
-- [init(allowedInputTypes: InputTargetComponent.InputType)](inputtargetcomponent/init(allowedinputtypes:).md)
+- [init(allowedInputTypes: InputTargetComponent.InputType)](./inputtargetcomponent/init%28allowedinputtypes%29.md)
   Creates a new instance of an `InputTargetComponent` with a set of `allowedInputTypes` that define what kinds of input the component’s entity can receive.
 ### Instance Properties
-- [var allowedInputTypes: InputTargetComponent.InputType](inputtargetcomponent/allowedinputtypes.md)
+- [var allowedInputTypes: InputTargetComponent.InputType](./inputtargetcomponent/allowedinputtypes.md)
   The set of input types this component’s entity can receive.
-- [var isEnabled: Bool](inputtargetcomponent/isenabled.md)
+- [var isEnabled: Bool](./inputtargetcomponent/isenabled.md)
   Whether the component’s entity is enabled for input.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
-- [Equatable](../swift/equatable.md)
+- [Component](./component.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [Transforming RealityKit entities using gestures](transforming-realitykit-entities-with-gestures.md)
+### Direct and indirect gestures
+- [Transforming RealityKit entities using gestures](./transforming-realitykit-entities-with-gestures.md)
   Build a RealityKit component to support standard visionOS gestures on any entity.
-- [struct ManipulationComponent](manipulationcomponent.md)
+- [struct ManipulationComponent](./manipulationcomponent.md)
   A component that adds fluid and immersive interactive behaviors and effects.
-- [struct GestureComponent](gesturecomponent.md)
+- [struct GestureComponent](./gesturecomponent.md)
   A component attaching a UI gesture to an entity.
-- [struct EntityTargetValue](entitytargetvalue.md)
+- [struct EntityTargetValue](./entitytargetvalue.md)
   A value containing an original gesture value along with a targeted entity.
 
 

@@ -1,7 +1,8 @@
 # directory
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The directory on the host to share with the guest VM.
 
@@ -12,6 +13,10 @@ The directory on the host to share with the guest VM.
 
 ```swift
 var directory: VZSharedDirectory { get }
+```
+
+```objc
+@property (strong, readonly) VZSharedDirectory * directory;
 ```
 
 

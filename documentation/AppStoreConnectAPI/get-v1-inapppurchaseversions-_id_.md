@@ -1,7 +1,8 @@
 # Read In-App Purchase version information
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get information about a specific draft version of an In-App Purchase.
 
@@ -10,9 +11,9 @@ Get information about a specific draft version of an In-App Purchase.
 
 ## Mentions
 
-- [App Store Connect API 4.4.1 release notes](app-store-connect-api-4-4-1-release-notes.md)
-- [Managing In-App Purchases](managing-in-app-purchases.md)
-- [Working with In-App Purchase versions](working-with-in-app-purchase-versions.md)
+- [App Store Connect API 4.4.1 release notes](./app-store-connect-api-4-4-1-release-notes.md)
+- [Managing In-App Purchases](./managing-in-app-purchases.md)
+- [Working with In-App Purchase versions](./working-with-in-app-purchase-versions.md)
 
 ## Endpoint
 
@@ -20,33 +21,49 @@ Get information about a specific draft version of an In-App Purchase.
 
 ## Parameters
 
-- `fields[inAppPurchaseVersions]` ([string])
-- `fields[inAppPurchases]` ([string])
-- `fields[inAppPurchaseImages]` ([string])
-- `fields[inAppPurchaseLocalizations]` ([string])
-- `include` ([string])
-- `limit[images]` (integer)
-- `limit[localizations]` (integer)
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Query Parameters
+
+- `fields[inAppPurchaseVersions]` ([string]): **Allowed Values**: `version`, `state`, `inAppPurchase`, `image`, `images`, `localizations`
+- `fields[inAppPurchases]` ([string]): **Allowed Values**: `name`, `productId`, `inAppPurchaseType`, `state`, `reviewNote`, `familySharable`, `contentHosting`, `inAppPurchaseLocalizations`, `pricePoints`, `content`, `appStoreReviewScreenshot`, `promotedPurchase`, `iapPriceSchedule`, `inAppPurchaseAvailability`, `images`, `offerCodes`, `versions`
+- `fields[inAppPurchaseImages]` ([string]): **Allowed Values**: `fileSize`, `fileName`, `assetToken`, `imageAsset`, `uploadOperations`, `assetDeliveryState`
+- `fields[inAppPurchaseLocalizations]` ([string]): **Allowed Values**: `name`, `locale`, `description`, `version`
+- `include` ([string]): **Allowed Values**: `inAppPurchase`, `image`, `images`, `localizations`
+- `limit[images]` (integer): **Maximum**: `50`
+- `limit[localizations]` (integer): **Maximum**: `50`
+
+## Responses
+
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `200` OK (`InAppPurchaseVersionResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create an In-App Purchase version](post-v1-inapppurchaseversions.md)
+### Endpoints
+- [Create an In-App Purchase version](./post-v1-inapppurchaseversions.md)
   Create a draft version of an In-App Purchase, capturing its current localized metadata and review images for App Review submission.
-- [Read the image for an In-App Purchase version](get-v1-inapppurchaseversions-_id_-image.md)
+- [Read the image for an In-App Purchase version](./get-v1-inapppurchaseversions-_id_-image.md)
   Get the review image attached to a draft version of an In-App Purchase.
-- [List images for an In-App Purchase version](get-v1-inapppurchaseversions-_id_-images.md)
+- [List images for an In-App Purchase version](./get-v1-inapppurchaseversions-_id_-images.md)
   List the review images attached to a draft version of an In-App Purchase.
-- [List localizations for an In-App Purchase version](get-v1-inapppurchaseversions-_id_-localizations.md)
+- [List localizations for an In-App Purchase version](./get-v1-inapppurchaseversions-_id_-localizations.md)
   List the localized display names and descriptions captured in a draft version of an In-App Purchase.
-- [Read the image ID for an In-App Purchase version](get-v1-inapppurchaseversions-_id_-relationships-image.md)
+- [Read the image ID for an In-App Purchase version](./get-v1-inapppurchaseversions-_id_-relationships-image.md)
   Get the related resource ID for the review image attached to a draft version of an In-App Purchase.
-- [List image IDs for an In-App Purchase version](get-v1-inapppurchaseversions-_id_-relationships-images.md)
+- [List image IDs for an In-App Purchase version](./get-v1-inapppurchaseversions-_id_-relationships-images.md)
   Get the related resource IDs for the review images attached to a draft version of an In-App Purchase.
-- [List localization IDs for an In-App Purchase version](get-v1-inapppurchaseversions-_id_-relationships-localizations.md)
+- [List localization IDs for an In-App Purchase version](./get-v1-inapppurchaseversions-_id_-relationships-localizations.md)
   Get the related resource IDs for the localizations captured in a draft version of an In-App Purchase.
-- [List the versions of an In-App Purchase](get-v2-inapppurchases-_id_-versions.md)
+- [List the versions of an In-App Purchase](./get-v2-inapppurchases-_id_-versions.md)
   List the draft versions of an In-App Purchase configured with the v2 API.
-- [Get the resource IDs of the versions of an In-App Purchase](get-v2-inapppurchases-_id_-relationships-versions.md)
+- [Get the resource IDs of the versions of an In-App Purchase](./get-v2-inapppurchases-_id_-relationships-versions.md)
   Get the related resource IDs for the draft versions of an In-App Purchase configured with the v2 API.
 
 

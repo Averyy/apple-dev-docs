@@ -1,7 +1,8 @@
 # kMDItemAudioEncodingApplication
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The name of the application that encoded the data contained in the audio file. A CFString.
 
@@ -12,6 +13,10 @@ The name of the application that encoded the data contained in the audio file. A
 
 ```swift
 let kMDItemAudioEncodingApplication: CFString!
+```
+
+```c
+const CFStringRef kMDItemAudioEncodingApplication;
 ```
 
 

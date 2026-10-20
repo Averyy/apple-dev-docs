@@ -1,6 +1,7 @@
 # Panorama image track
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Store the panoramic image for a panoramic node.
 
@@ -18,9 +19,10 @@ In QuickTime 3.0, a panorama sample atom (which contains information about a sin
 
 ## See Also
 
-- [Panorama sample atom ('pdat')](panorama_sample_atom.md)
+### Storing panorama tracks
+- [Panorama sample atom ('pdat')](./panorama_sample_atom.md)
   An atom that describes a single panorama.
-- [Cylindrical panoramas](cylindrical_panoramas.md)
+- [Cylindrical panoramas](./cylindrical_panoramas.md)
   Store cylindrical panoramas with horizontal orientation.
 
 

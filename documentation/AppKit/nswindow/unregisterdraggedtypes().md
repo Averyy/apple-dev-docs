@@ -1,12 +1,13 @@
 # unregisterDraggedTypes()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Unregisters the window as a possible destination for dragging operations.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ Unregisters the window as a possible destination for dragging operations.
 func unregisterDraggedTypes()
 ```
 
+```objc
+- (void) unregisterDraggedTypes;
+```
+
 ## See Also
 
-- [func registerForDraggedTypes([NSPasteboard.PasteboardType])](nswindow/registerfordraggedtypes(_:).md)
+### Dragging Items
+- [func registerForDraggedTypes([NSPasteboard.PasteboardType])](./registerfordraggedtypes%28_%29.md)
   Registers a set of pasteboard types that the window accepts as the destination of an image-dragging session.
 
 

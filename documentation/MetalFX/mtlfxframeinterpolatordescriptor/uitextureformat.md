@@ -1,7 +1,8 @@
 # uiTextureFormat
 
 **Framework**: MetalFX  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel format for the frame interpolator of an input texture containing your game’s custom UI.
 
@@ -16,6 +17,10 @@ The pixel format for the frame interpolator of an input texture containing your 
 
 ```swift
 var uiTextureFormat: MTLPixelFormat { get set }
+```
+
+```objc
+@property (nonatomic, readwrite, setter=setUITextureFormat:) MTLPixelFormat uiTextureFormat;
 ```
 
 

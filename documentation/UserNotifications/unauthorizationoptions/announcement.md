@@ -1,16 +1,19 @@
 # announcement
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The ability for Siri to automatically read out messages over AirPods.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 15.0
+- iPadOS 13.0+ - Deprecated in 15.0
+- Mac Catalyst 13.1+ - Deprecated in 15.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 6.0+ - Deprecated in 7.0
+
+> **Deprecated**: Announcement authorization is always included
 
 ## Declaration
 
@@ -18,9 +21,14 @@ The ability for Siri to automatically read out messages over AirPods.
 static var announcement: UNAuthorizationOptions { get }
 ```
 
+```c
+UNAuthorizationOptionAnnouncement
+```
+
 ## See Also
 
-- [static var timeSensitive: UNAuthorizationOptions](unauthorizationoptions/timesensitive.md)
+### Deprecated
+- [static var timeSensitive: UNAuthorizationOptions](./timesensitive.md)
 
 
 ---

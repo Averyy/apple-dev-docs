@@ -1,7 +1,8 @@
 # kCGImagePropertyCIFFReleaseTiming
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The priority for shutter release timing—shutter or focus.
 
@@ -20,15 +21,20 @@ The priority for shutter release timing—shutter or focus.
 let kCGImagePropertyCIFFReleaseTiming: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyCIFFReleaseTiming;
+```
+
 ## See Also
 
-- [let kCGImagePropertyCIFFSelfTimingTime: CFString](kcgimagepropertyciffselftimingtime.md)
+### Shutter Information
+- [let kCGImagePropertyCIFFSelfTimingTime: CFString](./kcgimagepropertyciffselftimingtime.md)
   The time in milliseconds until shutter release when using the self-timer.
-- [let kCGImagePropertyCIFFReleaseMethod: CFString](kcgimagepropertyciffreleasemethod.md)
+- [let kCGImagePropertyCIFFReleaseMethod: CFString](./kcgimagepropertyciffreleasemethod.md)
   The method of shutter release—single-shot or continuous.
-- [let kCGImagePropertyCIFFContinuousDrive: CFString](kcgimagepropertyciffcontinuousdrive.md)
+- [let kCGImagePropertyCIFFContinuousDrive: CFString](./kcgimagepropertyciffcontinuousdrive.md)
   The continuous drive mode.
-- [let kCGImagePropertyCIFFShootingMode: CFString](kcgimagepropertyciffshootingmode.md)
+- [let kCGImagePropertyCIFFShootingMode: CFString](./kcgimagepropertyciffshootingmode.md)
   The shooting mode.
 
 

@@ -1,7 +1,8 @@
 # removeObstacles(_:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the specified obstacle from the graph.
 
@@ -19,9 +20,13 @@ Removes the specified obstacle from the graph.
 func removeObstacles(_ obstacles: [GKPolygonObstacle])
 ```
 
+```objc
+- (void) removeObstacles:(NSArray<GKPolygonObstacle *> *) obstacles;
+```
+
 #### Discussion
 
-Adding or removing obstacles does not update the graph. The [`GKMeshGraph`](gkmeshgraph.md) class adds, removes, and arranges nodes to describe the navigable areas around obstacles *only* when you call the [`triangulate()`](gkmeshgraph/triangulate().md) method. Typically, you add or remove several obstacles, then call the [`triangulate()`](gkmeshgraph/triangulate().md) method to update the graph.
+Adding or removing obstacles does not update the graph. The [`GKMeshGraph`](../gkmeshgraph.md) class adds, removes, and arranges nodes to describe the navigable areas around obstacles *only* when you call the [`triangulate()`](./triangulate%28%29.md) method. Typically, you add or remove several obstacles, then call the [`triangulate()`](./triangulate%28%29.md) method to update the graph.
 
 ## Parameters
 
@@ -29,9 +34,10 @@ Adding or removing obstacles does not update the graph. The [`GKMeshGraph`](gkme
 
 ## See Also
 
-- [var obstacles: [GKPolygonObstacle]](gkmeshgraph/obstacles.md)
+### Working with Obstacles
+- [var obstacles: [GKPolygonObstacle]](./obstacles.md)
   The list of obstacle objects in the graph, each of which describes a polygon-shaped impassable area.
-- [func addObstacles([GKPolygonObstacle])](gkmeshgraph/addobstacles(_:).md)
+- [func addObstacles([GKPolygonObstacle])](./addobstacles%28_%29.md)
   Adds new obstacles to the graph.
 
 

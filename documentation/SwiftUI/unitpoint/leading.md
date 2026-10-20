@@ -1,7 +1,8 @@
 # leading
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A point that’s centered vertically on the leading edge of a view.
 
@@ -22,13 +23,14 @@ static let leading: UnitPoint
 
 #### Discussion
 
-This point occupies the position where the horizontal and vertical alignment guides intersect for [`leading`](alignment/leading.md) alignment. The leading edge appears on the left in a left-to-right language environment and on the right in a right-to-left environment.
+This point occupies the position where the horizontal and vertical alignment guides intersect for [`leading`](../alignment/leading.md) alignment. The leading edge appears on the left in a left-to-right language environment and on the right in a right-to-left environment.
 
 ## See Also
 
-- [static let center: UnitPoint](unitpoint/center.md)
+### Getting middle points
+- [static let center: UnitPoint](./center.md)
   A point that’s centered in a view.
-- [static let trailing: UnitPoint](unitpoint/trailing.md)
+- [static let trailing: UnitPoint](./trailing.md)
   A point that’s centered vertically on the trailing edge of a view.
 
 

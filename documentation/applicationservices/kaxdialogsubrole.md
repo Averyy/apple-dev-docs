@@ -1,7 +1,8 @@
 # kAXDialogSubrole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A dialog window, such as an alert.
 
@@ -12,6 +13,10 @@ A dialog window, such as an alert.
 
 ```swift
 var kAXDialogSubrole: String { get }
+```
+
+```c
+#define kAXDialogSubrole
 ```
 
 

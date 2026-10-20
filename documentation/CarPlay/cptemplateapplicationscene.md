@@ -1,7 +1,8 @@
 # CPTemplateApplicationScene
 
 **Framework**: CarPlay  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A CarPlay scene that controls your app’s user interface.
 
@@ -16,13 +17,17 @@ A CarPlay scene that controls your app’s user interface.
 class CPTemplateApplicationScene
 ```
 
+```objc
+@interface CPTemplateApplicationScene : UIScene
+```
+
 #### Overview
 
 A scene manages your app’s user interface, including the window that CarPlay displays from that scene. Only navigation apps have access to that window, and use it for drawing map content. All other categories of apps use the scene’s interface controller exclusively for constructing their user interfaces.
 
-The scene manages the display of the window on the vehicle’s CarPlay screen, and the life cycle of that scene as CarPlay and the user interact with it. The scene notifies its delegate—an object that conforms to [`CPTemplateApplicationSceneDelegate`](cptemplateapplicationscenedelegate.md)—about various state changes and user actions.
+The scene manages the display of the window on the vehicle’s CarPlay screen, and the life cycle of that scene as CarPlay and the user interact with it. The scene notifies its delegate—an object that conforms to [`CPTemplateApplicationSceneDelegate`](./cptemplateapplicationscenedelegate.md)—about various state changes and user actions.
 
-You don’t create scenes directly. Instead, you specify the name of the appropriate scene class as part of the CarPlay scene configuration you add to your `Info.plist` file—see the example below—or that you return from your app delegate’s [`application(_:configurationForConnecting:options:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:configurationforconnecting:options:))  method.
+You don’t create scenes directly. Instead, you specify the name of the appropriate scene class as part of the CarPlay scene configuration you add to your `Info.plist` file—see the example below—or that you return from your app delegate’s [`application(_:configurationForConnecting:options:)`](../UIKit/uiapplicationdelegate/application%28_,configurationforconnecting,options%29.md)  method.
 
 ```plist
 <key>CPTemplateApplicationSceneSessionRoleApplication</key>
@@ -43,55 +48,56 @@ You don’t create scenes directly. Instead, you specify the name of the appropr
 ## Topics
 
 ### Responding to the Scene Life Cycle
-- [var delegate: (any CPTemplateApplicationSceneDelegate)?](cptemplateapplicationscene/delegate.md)
+- [var delegate: (any CPTemplateApplicationSceneDelegate)?](./cptemplateapplicationscene/delegate.md)
   The object that receives the scene’s life-cycle events.
-- [protocol CPTemplateApplicationSceneDelegate](cptemplateapplicationscenedelegate.md)
+- [protocol CPTemplateApplicationSceneDelegate](./cptemplateapplicationscenedelegate.md)
   The methods for responding to the life cycle events of your app’s scene.
 ### Accessing the Interface Controller
-- [var interfaceController: CPInterfaceController](cptemplateapplicationscene/interfacecontroller.md)
+- [var interfaceController: CPInterfaceController](./cptemplateapplicationscene/interfacecontroller.md)
   The controller that manages the scene’s user interface.
-- [class CPInterfaceController](cpinterfacecontroller.md)
+- [class CPInterfaceController](./cpinterfacecontroller.md)
   A controller that manages the templates for constructing a scene’s user interface.
 ### Accessing the Window
-- [var carWindow: CPWindow](cptemplateapplicationscene/carwindow.md)
+- [var carWindow: CPWindow](./cptemplateapplicationscene/carwindow.md)
   The window that belongs to the scene.
-- [class CPWindow](cpwindow.md)
+- [class CPWindow](./cpwindow.md)
   A window that displays its content on the CarPlay screen.
 ### Instance Properties
-- [var contentStyle: UIUserInterfaceStyle](cptemplateapplicationscene/contentstyle.md)
+- [var contentStyle: UIUserInterfaceStyle](./cptemplateapplicationscene/contentstyle.md)
 
 ## Relationships
 
 ### Inherits From
-- [UIScene](../uikit/uiscene.md)
+- [UIScene](../UIKit/uiscene.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [Requesting CarPlay Entitlements](requesting-carplay-entitlements.md)
+### CarPlay Integration
+- [Requesting CarPlay Entitlements](./requesting-carplay-entitlements.md)
   Configure your CarPlay-enabled app with the entitlements it requires.
-- [Displaying Content in CarPlay](displaying-content-in-carplay.md)
+- [Displaying Content in CarPlay](./displaying-content-in-carplay.md)
   Use scenes to present your app’s content on the vehicle’s built-in screen.
-- [Supporting Previous Versions of iOS](supporting-previous-versions-of-ios.md)
+- [Supporting Previous Versions of iOS](./supporting-previous-versions-of-ios.md)
   Make your CarPlay-enabled apps compatible with older system versions, such as iOS 13 and earlier.
-- [Using the CarPlay Simulator](using-the-carplay-simulator.md)
+- [Using the CarPlay Simulator](./using-the-carplay-simulator.md)
   Configure Simulator to run and debug your CarPlay-enabled app.
-- [protocol CPTemplateApplicationSceneDelegate](cptemplateapplicationscenedelegate.md)
+- [protocol CPTemplateApplicationSceneDelegate](./cptemplateapplicationscenedelegate.md)
   The methods for responding to the life cycle events of your app’s scene.
-- [class CPSessionConfiguration](cpsessionconfiguration.md)
+- [class CPSessionConfiguration](./cpsessionconfiguration.md)
   An object that provides vehicle properties and configuration for the CarPlay environment.
 
 

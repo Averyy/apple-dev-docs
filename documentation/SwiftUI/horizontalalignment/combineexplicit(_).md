@@ -1,7 +1,8 @@
 # combineExplicit(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Merges a sequence of explicit alignment values produced by this instance.
 
@@ -26,7 +27,8 @@ For built-in horizontal alignment types, this method returns the mean of all non
 
 ## See Also
 
-- [init(any AlignmentID.Type)](horizontalalignment/init(_:).md)
+### Creating a custom alignment
+- [init(any AlignmentID.Type)](./init%28_%29.md)
   Creates a custom horizontal alignment of the specified type.
 
 

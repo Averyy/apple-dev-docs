@@ -1,7 +1,8 @@
 # MTLAttributeFormat.invalid
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A sentinel value that represents an invalid attribute format.
 
@@ -17,6 +18,10 @@ A sentinel value that represents an invalid attribute format.
 
 ```swift
 case invalid
+```
+
+```c
+MTLAttributeFormatInvalid
 ```
 
 

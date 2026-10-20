@@ -1,7 +1,8 @@
 # supportedIdentifiers()
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the classification identifiers that the request supports in its current configuration.
 
@@ -19,17 +20,22 @@ Returns the classification identifiers that the request supports in its current 
 func supportedIdentifiers() throws -> [String]
 ```
 
+```objc
+- (NSArray<NSString *> *) supportedIdentifiersAndReturnError:(NSError **) error;
+```
+
 #### Return Value
 
 An array of supported identifiers.
 
 ## See Also
 
-- [var results: [VNClassificationObservation]?](vnclassifyimagerequest/results.md)
+### Accessing Results
+- [var results: [VNClassificationObservation]?](./results.md)
   The results of the image classification request.
-- [class VNClassificationObservation](vnclassificationobservation.md)
+- [class VNClassificationObservation](../vnclassificationobservation.md)
   An object that represents classification information that an image-analysis request produces.
-- [class func knownClassifications(forRevision: Int) throws -> [VNClassificationObservation]](vnclassifyimagerequest/knownclassifications(forrevision:).md)
+- [class func knownClassifications(forRevision: Int) throws -> [VNClassificationObservation]](./knownclassifications%28forrevision%29.md)
   Requests the collection of classifications that the Vision framework recognizes.
 
 

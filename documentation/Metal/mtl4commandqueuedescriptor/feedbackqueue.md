@@ -1,7 +1,8 @@
 # feedbackQueue
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Assigns a dispatch queue to which Metal submits feedback notification blocks.
 
@@ -17,6 +18,10 @@ Assigns a dispatch queue to which Metal submits feedback notification blocks.
 
 ```swift
 unowned(unsafe) var feedbackQueue: dispatch_queue_t? { get set }
+```
+
+```objc
+@property (nonatomic, assign, nullable) dispatch_queue_t feedbackQueue;
 ```
 
 #### Discussion

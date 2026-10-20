@@ -1,7 +1,8 @@
 # PrivateCloudComputeLanguageModel.Availability
 
 **Framework**: Foundation Models  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The availability status for a specific PCC language model.
 
@@ -23,25 +24,26 @@ enum Availability
 ## Topics
 
 ### Checking for availability
-- [PrivateCloudComputeLanguageModel.Availability.available](privatecloudcomputelanguagemodel/availability-swift.enum/available.md)
+- [PrivateCloudComputeLanguageModel.Availability.available](./availability-swift.enum/available.md)
   The system is ready to make requests.
-- [case unavailable(PrivateCloudComputeLanguageModel.Availability.UnavailableReason)](privatecloudcomputelanguagemodel/availability-swift.enum/unavailable(_:).md)
+- [case unavailable(PrivateCloudComputeLanguageModel.Availability.UnavailableReason)](./availability-swift.enum/unavailable%28_%29.md)
   The system isn’t ready for requests.
-- [PrivateCloudComputeLanguageModel.Availability.UnavailableReason](privatecloudcomputelanguagemodel/availability-swift.enum/unavailablereason.md)
+- [PrivateCloudComputeLanguageModel.Availability.UnavailableReason](./availability-swift.enum/unavailablereason.md)
   The reason the model is unavailable.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isAvailable: Bool](privatecloudcomputelanguagemodel/isavailable.md)
+### Inspecting the availability
+- [var isAvailable: Bool](./isavailable.md)
   A Boolean value that indicates whether the system is entirely ready.
-- [var availability: PrivateCloudComputeLanguageModel.Availability](privatecloudcomputelanguagemodel/availability-swift.property.md)
+- [var availability: PrivateCloudComputeLanguageModel.Availability](./availability-swift.property.md)
   The availability of the language model.
 
 

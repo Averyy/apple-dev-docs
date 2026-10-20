@@ -1,7 +1,8 @@
 # NWConnection.State.failed(_:)
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The connection has disconnected or encountered an error.
 
@@ -22,15 +23,16 @@ case failed(NWError)
 
 ## See Also
 
-- [NWConnection.State.setup](nwconnection/state-swift.enum/setup.md)
+### States
+- [NWConnection.State.setup](./setup.md)
   The connection has been initialized but not started.
-- [NWConnection.State.waiting(_:)](nwconnection/state-swift.enum/waiting(_:).md)
+- [NWConnection.State.waiting(_:)](./waiting%28_%29.md)
   The connection is waiting for a network path change.
-- [NWConnection.State.preparing](nwconnection/state-swift.enum/preparing.md)
+- [NWConnection.State.preparing](./preparing.md)
   The connection in the process of being established.
-- [NWConnection.State.ready](nwconnection/state-swift.enum/ready.md)
+- [NWConnection.State.ready](./ready.md)
   The connection is established, and ready to send and receive data.
-- [NWConnection.State.cancelled](nwconnection/state-swift.enum/cancelled.md)
+- [NWConnection.State.cancelled](./cancelled.md)
   The connection has been canceled.
 
 

@@ -1,7 +1,8 @@
 # sharingService(_:transitionImageForShareItem:contentRect:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked to allow returning a custom transition image when sharing an item.
 
@@ -13,6 +14,10 @@ Invoked to allow returning a custom transition image when sharing an item.
 ```swift
 @MainActor
 optional func sharingService(_ sharingService: NSSharingService, transitionImageForShareItem item: Any, contentRect: UnsafeMutablePointer<NSRect>) -> NSImage?
+```
+
+```objc
+- (NSImage *) sharingService:(NSSharingService *) sharingService transitionImageForShareItem:(id) item contentRect:(NSRect *) contentRect;
 ```
 
 #### Return Value
@@ -42,11 +47,12 @@ A sample implementation of this method:
 
 ## See Also
 
-- [func sharingService(NSSharingService, sourceFrameOnScreenForShareItem: Any) -> NSRect](nssharingservicedelegate/sharingservice(_:sourceframeonscreenforshareitem:).md)
+### Customizing Transition Animation
+- [func sharingService(NSSharingService, sourceFrameOnScreenForShareItem: Any) -> NSRect](./sharingservice%28_,sourceframeonscreenforshareitem%29.md)
   Invoked when the sharing service is performed and the sharing window is displayed, to present a transition between the original items and the sharing window.
-- [func sharingService(NSSharingService, sourceWindowForShareItems: [Any], sharingContentScope: UnsafeMutablePointer<NSSharingService.SharingContentScope>) -> NSWindow?](nssharingservicedelegate/sharingservice(_:sourcewindowforshareitems:sharingcontentscope:).md)
+- [func sharingService(NSSharingService, sourceWindowForShareItems: [Any], sharingContentScope: UnsafeMutablePointer<NSSharingService.SharingContentScope>) -> NSWindow?](./sharingservice%28_,sourcewindowforshareitems,sharingcontentscope%29.md)
   Returns the window that contained the share items.
-- [NSSharingService.SharingContentScope](nssharingservice/sharingcontentscope.md)
+- [NSSharingService.SharingContentScope](../nssharingservice/sharingcontentscope.md)
   The sharing scope constants specify the nature of the things you are sharing.
 
 

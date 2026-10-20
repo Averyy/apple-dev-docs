@@ -1,7 +1,8 @@
 # kMDItemKeySignature
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The key of the music contained in the audio file. For example: C, Dm, F#m, Bb. A CFString.
 
@@ -12,6 +13,10 @@ The key of the music contained in the audio file. For example: C, Dm, F#m, Bb. A
 
 ```swift
 let kMDItemKeySignature: CFString!
+```
+
+```c
+const CFStringRef kMDItemKeySignature;
 ```
 
 

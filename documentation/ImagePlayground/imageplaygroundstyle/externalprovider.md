@@ -1,7 +1,8 @@
 # externalProvider
 
 **Framework**: Image Playground  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that yields images in a style provided by an external provider
 

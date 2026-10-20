@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The heap on which the resource is allocated, if any.
@@ -20,17 +21,22 @@ The heap on which the resource is allocated, if any.
 var heap: (any MTLHeap)? { get }
 ```
 
+```objc
+@property (readonly, nullable) id<MTLHeap> heap;
+```
+
 #### Discussion
 
 This value is `nil` if the resource isn’t allocated on a heap.
 
 ## See Also
 
-- [var heapOffset: Int](mtlresource/heapoffset.md)
+### Managing heap resources
+- [var heapOffset: Int](./heapoffset.md)
   The distance, in bytes, from the beginning of the heap to the first byte of the resource, if you allocated the resource on a heap.
-- [func makeAliasable()](mtlresource/makealiasable.md)
+- [func makeAliasable()](./makealiasable%28%29.md)
   Allows future heap resource allocations to alias against the resource’s memory, reusing it.
-- [func isAliasable() -> Bool](mtlresource/isaliasable.md)
+- [func isAliasable() -> Bool](./isaliasable%28%29.md)
   A Boolean value that indicates whether future heap resource allocations may alias against the resource’s memory.
 
 

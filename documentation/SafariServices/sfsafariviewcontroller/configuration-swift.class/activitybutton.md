@@ -1,7 +1,8 @@
 # activityButton
 
 **Framework**: Safari Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -13,6 +14,10 @@
 ```swift
 @NSCopying
 var activityButton: SFSafariViewController.ActivityButton? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) SFSafariViewControllerActivityButton * activityButton;
 ```
 
 

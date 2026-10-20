@@ -1,18 +1,19 @@
 # AVAudioQuality
 
 **Framework**: AVFAudio  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The values that specify the sample rate audio quality for encoding and conversion.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,43 +21,48 @@ The values that specify the sample rate audio quality for encoding and conversio
 enum AVAudioQuality
 ```
 
+```c
+enum AVAudioQuality : NSInteger;
+```
+
 #### Overview
 
-You use this value with [`AVEncoderAudioQualityKey`](avencoderaudioqualitykey.md) and [`AVSampleRateConverterAudioQualityKey`](avsamplerateconverteraudioqualitykey.md).
+You use this value with [`AVEncoderAudioQualityKey`](./avencoderaudioqualitykey.md) and [`AVSampleRateConverterAudioQualityKey`](./avsamplerateconverteraudioqualitykey.md).
 
 ## Topics
 
 ### Creating a quality level
-- [init?(rawValue: Int)](avaudioquality/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avaudioquality/init%28rawvalue%29.md)
 ### Choosing a quality level
-- [AVAudioQuality.min](avaudioquality/min.md)
+- [AVAudioQuality.min](./avaudioquality/min.md)
   A value that represents a minimum audio quality for encoding and conversion.
-- [AVAudioQuality.low](avaudioquality/low.md)
+- [AVAudioQuality.low](./avaudioquality/low.md)
   A value that represents a low audio quality for encoding and conversion.
-- [AVAudioQuality.medium](avaudioquality/medium.md)
+- [AVAudioQuality.medium](./avaudioquality/medium.md)
   A value that represents a medium audio quality for encoding and conversion.
-- [AVAudioQuality.high](avaudioquality/high.md)
+- [AVAudioQuality.high](./avaudioquality/high.md)
   A value that represents a high audio quality for encoding and conversion.
-- [AVAudioQuality.max](avaudioquality/max.md)
+- [AVAudioQuality.max](./avaudioquality/max.md)
   A value that represents a maximum audio quality for encoding and conversion.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Sample rate conversion settings](sample-rate-conversion-settings.md)
+### Encoder and processing settings
+- [Sample rate conversion settings](./sample-rate-conversion-settings.md)
   The constants that define sample rate converter audio quality settings.
-- [Encoder settings](encoder-settings.md)
+- [Encoder settings](./encoder-settings.md)
   The constants that define the audio encoder settings for the audio recorder class.
-- [Time pitch algorithm settings](../avfoundation/time-pitch-algorithm-settings.md)
+- [Time pitch algorithm settings](../AVFoundation/time-pitch-algorithm-settings.md)
   The constants that define the values for the time pitch algorithms.
 
 

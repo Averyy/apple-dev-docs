@@ -1,7 +1,8 @@
 # maximumNumberOfColumns
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of columns to display in the collection view’s visible area.
 
@@ -14,17 +15,22 @@ The maximum number of columns to display in the collection view’s visible area
 var maximumNumberOfColumns: Int { get set }
 ```
 
+```objc
+@property NSUInteger maximumNumberOfColumns;
+```
+
 #### Discussion
 
 Use this value to specify the maximum number of columns that should be visible in the collection view at any given time. The grid layout object uses this value during layout to configure the position and spacing of items. The default value of this property is `0`, which means that there is no maximum number of columns.
 
 ## See Also
 
-- [var maximumNumberOfRows: Int](nscollectionviewgridlayout/maximumnumberofrows.md)
+### Specifying the Grid Parameters
+- [var maximumNumberOfRows: Int](./maximumnumberofrows.md)
   The maximum number of rows to display in the collection view’s visible area.
-- [var minimumItemSize: NSSize](nscollectionviewgridlayout/minimumitemsize.md)
+- [var minimumItemSize: NSSize](./minimumitemsize.md)
   The smallest allowable size for an item’s view.
-- [var maximumItemSize: NSSize](nscollectionviewgridlayout/maximumitemsize.md)
+- [var maximumItemSize: NSSize](./maximumitemsize.md)
   The largest allowable size for an item’s view.
 
 

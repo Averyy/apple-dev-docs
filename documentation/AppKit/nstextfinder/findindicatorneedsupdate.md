@@ -1,7 +1,8 @@
 # findIndicatorNeedsUpdate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Invoke to specify that the find indicator needs updating when not contained within a scroll view.
 
@@ -14,9 +15,13 @@ Invoke to specify that the find indicator needs updating when not contained with
 var findIndicatorNeedsUpdate: Bool { get set }
 ```
 
+```objc
+@property BOOL findIndicatorNeedsUpdate;
+```
+
 #### Discussion
 
-If the [`client`](nstextfinder/client.md) object’s document is not scrolled by an instance of `NSScrollView`, then set this property to [`true`](https://developer.apple.com/documentation/swift/true) when scrolling occurs to cause the find indicator to be updated appropriately.
+If the [`client`](./client.md) object’s document is not scrolled by an instance of `NSScrollView`, then set this property to [`true`](../../Swift/true.md) when scrolling occurs to cause the find indicator to be updated appropriately.
 
 
 ---

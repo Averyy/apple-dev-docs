@@ -1,7 +1,8 @@
 # AVCaptureEventPhase.cancelled
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A phase that indicates the cancellation of a capture event.
 
@@ -16,11 +17,16 @@ A phase that indicates the cancellation of a capture event.
 case cancelled
 ```
 
+```c
+AVCaptureEventPhaseCancelled
+```
+
 ## See Also
 
-- [AVCaptureEventPhase.began](avcaptureeventphase/began.md)
+### Event phases
+- [AVCaptureEventPhase.began](./began.md)
   A phase that indicates the beginning of a capture event.
-- [AVCaptureEventPhase.ended](avcaptureeventphase/ended.md)
+- [AVCaptureEventPhase.ended](./ended.md)
   A phase that indicates the end of a capture event.
 
 

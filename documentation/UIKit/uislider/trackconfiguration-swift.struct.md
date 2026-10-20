@@ -1,7 +1,8 @@
 # UISlider.TrackConfiguration
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -18,25 +19,26 @@ struct TrackConfiguration
 ## Topics
 
 ### Structures
-- [UISlider.TrackConfiguration.Tick](uislider/trackconfiguration-swift.struct/tick.md)
+- [UISlider.TrackConfiguration.Tick](./trackconfiguration-swift.struct/tick.md)
 ### Initializers
-- [init(allowsTickValuesOnly: Bool, neutralValue: Float, enabledRange: ClosedRange<Float>, numberOfTicks: Int)](uislider/trackconfiguration-swift.struct/init(allowstickvaluesonly:neutralvalue:enabledrange:numberofticks:).md)
-- [init(allowsTickValuesOnly: Bool, neutralValue: Float, enabledRange: ClosedRange<Float>, ticks: [UISlider.TrackConfiguration.Tick])](uislider/trackconfiguration-swift.struct/init(allowstickvaluesonly:neutralvalue:enabledrange:ticks:).md)
+- [init(allowsTickValuesOnly: Bool, neutralValue: Float, enabledRange: ClosedRange<Float>, numberOfTicks: Int)](./trackconfiguration-swift.struct/init%28allowstickvaluesonly,neutralvalue,enabledrange,numberofticks%29.md)
+- [init(allowsTickValuesOnly: Bool, neutralValue: Float, enabledRange: ClosedRange<Float>, ticks: [UISlider.TrackConfiguration.Tick])](./trackconfiguration-swift.struct/init%28allowstickvaluesonly,neutralvalue,enabledrange,ticks%29.md)
 ### Instance Properties
-- [var allowsTickValuesOnly: Bool](uislider/trackconfiguration-swift.struct/allowstickvaluesonly.md)
-- [var enabledRange: ClosedRange<Float>](uislider/trackconfiguration-swift.struct/enabledrange.md)
-- [var neutralValue: Float](uislider/trackconfiguration-swift.struct/neutralvalue.md)
-- [let ticks: [UISlider.TrackConfiguration.Tick]](uislider/trackconfiguration-swift.struct/ticks.md)
+- [var allowsTickValuesOnly: Bool](./trackconfiguration-swift.struct/allowstickvaluesonly.md)
+- [var enabledRange: ClosedRange<Float>](./trackconfiguration-swift.struct/enabledrange.md)
+- [var neutralValue: Float](./trackconfiguration-swift.struct/neutralvalue.md)
+- [let ticks: [UISlider.TrackConfiguration.Tick]](./trackconfiguration-swift.struct/ticks.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [var trackConfiguration: UISlider.TrackConfiguration?](uislider/trackconfiguration-6m55i.md)
+### Configuring the track
+- [var trackConfiguration: UISlider.TrackConfiguration?](./trackconfiguration-6m55i.md)
 
 
 ---

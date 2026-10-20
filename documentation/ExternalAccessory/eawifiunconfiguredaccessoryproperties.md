@@ -1,7 +1,8 @@
 # EAWiFiUnconfiguredAccessoryProperties
 
 **Framework**: External Accessory  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that can be combined using the C bitwise `OR` operator to represent the properties of an unconfigured accessory.
 
@@ -19,43 +20,48 @@ Options that can be combined using the C bitwise `OR` operator to represent the 
 struct EAWiFiUnconfiguredAccessoryProperties
 ```
 
+```c
+enum EAWiFiUnconfiguredAccessoryProperties : NSUInteger;
+```
+
 ## Topics
 
 ### Getting the Accessory Properties
-- [static var propertySupportsAirPlay: EAWiFiUnconfiguredAccessoryProperties](eawifiunconfiguredaccessoryproperties/propertysupportsairplay.md)
+- [static var propertySupportsAirPlay: EAWiFiUnconfiguredAccessoryProperties](./eawifiunconfiguredaccessoryproperties/propertysupportsairplay.md)
   The accessory indicates that it supports AirPlay.
-- [static var propertySupportsAirPrint: EAWiFiUnconfiguredAccessoryProperties](eawifiunconfiguredaccessoryproperties/propertysupportsairprint.md)
+- [static var propertySupportsAirPrint: EAWiFiUnconfiguredAccessoryProperties](./eawifiunconfiguredaccessoryproperties/propertysupportsairprint.md)
   The accessory indicates that it supports AirPrint.
-- [static var propertySupportsHomeKit: EAWiFiUnconfiguredAccessoryProperties](eawifiunconfiguredaccessoryproperties/propertysupportshomekit.md)
+- [static var propertySupportsHomeKit: EAWiFiUnconfiguredAccessoryProperties](./eawifiunconfiguredaccessoryproperties/propertysupportshomekit.md)
   The accessory indicates that it supports HomeKit.
 ### Initializers
-- [init(rawValue: UInt)](eawifiunconfiguredaccessoryproperties/init(rawvalue:).md)
+- [init(rawValue: UInt)](./eawifiunconfiguredaccessoryproperties/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [var name: String](eawifiunconfiguredaccessory/name.md)
+### Getting Information About the Accessory
+- [var name: String](./eawifiunconfiguredaccessory/name.md)
   The name of the accessory.
-- [var manufacturer: String](eawifiunconfiguredaccessory/manufacturer.md)
+- [var manufacturer: String](./eawifiunconfiguredaccessory/manufacturer.md)
   The name of the accessory’s manufacturer.
-- [var model: String](eawifiunconfiguredaccessory/model.md)
+- [var model: String](./eawifiunconfiguredaccessory/model.md)
   The model name of accessory.
-- [var ssid: String](eawifiunconfiguredaccessory/ssid.md)
+- [var ssid: String](./eawifiunconfiguredaccessory/ssid.md)
   The Wi-Fi SSID of the accessory.
-- [var macAddress: String](eawifiunconfiguredaccessory/macaddress.md)
+- [var macAddress: String](./eawifiunconfiguredaccessory/macaddress.md)
   The primary MAC address of the accessory.
-- [var properties: EAWiFiUnconfiguredAccessoryProperties](eawifiunconfiguredaccessory/properties.md)
+- [var properties: EAWiFiUnconfiguredAccessoryProperties](./eawifiunconfiguredaccessory/properties.md)
   The properties the accessory supports.
 
 

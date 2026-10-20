@@ -1,7 +1,8 @@
 # userInteractionEnabled
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the user interface is in an enabled state.
 
@@ -14,9 +15,14 @@ Indicates that the user interface is in an enabled state.
 static var userInteractionEnabled: ASAuthorizationProviderExtensionRequestOptions { get }
 ```
 
+```c
+ASAuthorizationProviderExtensionRequestOptionsUserInteractionEnabled
+```
+
 ## See Also
 
-- [static var registrationRepair: ASAuthorizationProviderExtensionRequestOptions](asauthorizationproviderextensionrequestoptions/registrationrepair.md)
+### Identifying the options
+- [static var registrationRepair: ASAuthorizationProviderExtensionRequestOptions](./registrationrepair.md)
   Indicates that the registration is undergoing repair.
 
 

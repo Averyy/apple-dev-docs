@@ -1,7 +1,8 @@
 # toggleSidebar(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 15.0+
@@ -14,6 +15,10 @@
 
 ```swift
 optional func toggleSidebar(_ sender: Any?)
+```
+
+```objc
+- (void) toggleSidebar:(id) sender;
 ```
 
 

@@ -1,7 +1,8 @@
 # errSecAppleInvalidKeyEndDate
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The specified key has an invalid end date.
 
@@ -18,6 +19,10 @@ The specified key has an invalid end date.
 
 ```swift
 var errSecAppleInvalidKeyEndDate: OSStatus { get }
+```
+
+```c
+errSecAppleInvalidKeyEndDate
 ```
 
 

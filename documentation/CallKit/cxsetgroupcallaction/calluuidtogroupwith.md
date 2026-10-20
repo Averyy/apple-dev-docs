@@ -1,7 +1,8 @@
 # callUUIDToGroupWith
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of the call to be grouped with the call associated with the receiver.
 
@@ -16,6 +17,10 @@ The unique identifier of the call to be grouped with the call associated with th
 
 ```swift
 var callUUIDToGroupWith: UUID? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSUUID * callUUIDToGroupWith;
 ```
 
 #### Discussion

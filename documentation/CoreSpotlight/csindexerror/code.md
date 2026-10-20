@@ -1,7 +1,8 @@
 # CSIndexError.Code
 
 **Framework**: Core Spotlight  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes that describe indexing-specific errors.
 
@@ -18,37 +19,41 @@ Error codes that describe indexing-specific errors.
 enum Code
 ```
 
+```c
+enum CSIndexErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Getting the indexing error codes
-- [CSIndexError.Code.indexUnavailableError](csindexerror/code/indexunavailableerror.md)
+- [CSIndexError.Code.indexUnavailableError](./code/indexunavailableerror.md)
   The indexer is unavailable.
-- [CSIndexError.Code.indexingUnsupported](csindexerror/code/indexingunsupported.md)
+- [CSIndexError.Code.indexingUnsupported](./code/indexingunsupported.md)
   Indexing isn’t supported on the device.
-- [CSIndexError.Code.invalidClientStateError](csindexerror/code/invalidclientstateerror.md)
+- [CSIndexError.Code.invalidClientStateError](./code/invalidclientstateerror.md)
   The provided client state data is invalid.
-- [CSIndexError.Code.invalidItemError](csindexerror/code/invaliditemerror.md)
+- [CSIndexError.Code.invalidItemError](./code/invaliditemerror.md)
   The searchable item object is invalid.
-- [CSIndexError.Code.mismatchedClientState](csindexerror/code/mismatchedclientstate.md)
+- [CSIndexError.Code.mismatchedClientState](./code/mismatchedclientstate.md)
   The provided client state did not match the information in the index.
-- [CSIndexError.Code.quotaExceeded](csindexerror/code/quotaexceeded.md)
+- [CSIndexError.Code.quotaExceeded](./code/quotaexceeded.md)
   The quota for the bundle has been exceeded.
-- [CSIndexError.Code.remoteConnectionError](csindexerror/code/remoteconnectionerror.md)
+- [CSIndexError.Code.remoteConnectionError](./code/remoteconnectionerror.md)
   An error occurred while communicating with the remote process.
-- [CSIndexError.Code.unknownError](csindexerror/code/unknownerror.md)
+- [CSIndexError.Code.unknownError](./code/unknownerror.md)
   An unknown error occurred.
 ### Initializers
-- [init?(rawValue: Int)](csindexerror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

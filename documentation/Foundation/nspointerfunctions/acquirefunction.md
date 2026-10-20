@@ -1,7 +1,8 @@
 # acquireFunction
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The function used to acquire memory.
 
@@ -20,17 +21,22 @@ The function used to acquire memory.
 var acquireFunction: ((UnsafeRawPointer, ((UnsafeRawPointer) -> Int)?, ObjCBool) -> UnsafeMutableRawPointer)? { get set }
 ```
 
+```objc
+@property (nullable) void *(*)(const void *, unsigned long (*)(const void *), _Bool) acquireFunction;
+```
+
 #### Discussion
 
 This specifies the function to use for copy-in operations.
 
 ## See Also
 
-- [var relinquishFunction: ((UnsafeRawPointer, ((UnsafeRawPointer) -> Int)?) -> Void)?](nspointerfunctions/relinquishfunction.md)
+### Memory Configuration
+- [var relinquishFunction: ((UnsafeRawPointer, ((UnsafeRawPointer) -> Int)?) -> Void)?](./relinquishfunction.md)
   The function used to relinquish memory.
-- [var usesStrongWriteBarrier: Bool](nspointerfunctions/usesstrongwritebarrier.md)
+- [var usesStrongWriteBarrier: Bool](./usesstrongwritebarrier.md)
   Specifies whether, in a garbage collected environment, pointers should be assigned using a strong write barrier.
-- [var usesWeakReadAndWriteBarriers: Bool](nspointerfunctions/usesweakreadandwritebarriers.md)
+- [var usesWeakReadAndWriteBarriers: Bool](./usesweakreadandwritebarriers.md)
   Specifies whether, in a garbage collected environment, pointers should use weak read and write barriers.
 
 

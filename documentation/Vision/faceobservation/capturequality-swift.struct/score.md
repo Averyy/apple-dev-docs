@@ -1,7 +1,8 @@
 # score
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates the quality of the face capture.
 

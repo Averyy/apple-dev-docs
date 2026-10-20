@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an anchoring component with the given AR anchor.
 
@@ -16,14 +17,21 @@ Creates an anchoring component with the given AR anchor.
 init(_ anchor: ARAnchor)
 ```
 
+**Other overloads**:
+
+```swift
+init(_ target: AnchoringComponent.Target)
+```
+
 ## Parameters
 
 - `anchor`: An existing AR anchor to use.
 
 ## See Also
 
-- [init(AnchoringComponent.Target, trackingMode: AnchoringComponent.TrackingMode)](anchoringcomponent/init(_:trackingmode:).md)
-- [init(AnchoringComponent.Target, trackingMode: AnchoringComponent.TrackingMode, physicsSimulation: AnchoringComponent.PhysicsSimulation)](anchoringcomponent/init(_:trackingmode:physicssimulation:).md)
+### Creating an anchoring component
+- [init(AnchoringComponent.Target, trackingMode: AnchoringComponent.TrackingMode)](./init%28_,trackingmode%29.md)
+- [init(AnchoringComponent.Target, trackingMode: AnchoringComponent.TrackingMode, physicsSimulation: AnchoringComponent.PhysicsSimulation)](./init%28_,trackingmode,physicssimulation%29.md)
   Creates an anchoring component for a given target, tracking mode and physics simulation.
 
 

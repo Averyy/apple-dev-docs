@@ -1,7 +1,8 @@
 # willSet(_:keyPath:)
 
 **Framework**: Observation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A property observation called before setting the value of the subject.
 
@@ -27,7 +28,8 @@ func willSet<Subject, Member>(_ subject: Subject, keyPath: KeyPath<Subject, Memb
 
 ## See Also
 
-- [func didSet<Subject, Member>(Subject, keyPath: KeyPath<Subject, Member>)](observationregistrar/didset(_:keypath:).md)
+### Receiving change notifications
+- [func didSet<Subject, Member>(Subject, keyPath: KeyPath<Subject, Member>)](./didset%28_,keypath%29.md)
   A property observation called after setting the value of the subject.
 
 

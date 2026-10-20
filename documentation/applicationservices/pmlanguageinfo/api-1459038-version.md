@@ -1,7 +1,8 @@
 # version
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Specifies the version of the imaging language.
 
@@ -12,6 +13,10 @@ Specifies the version of the imaging language.
 
 ```swift
 var version: Str32
+```
+
+```c
+Str32 version;
 ```
 
 

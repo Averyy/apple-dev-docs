@@ -1,7 +1,8 @@
 # encode(_:to:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes a fitted model.
 
@@ -19,6 +20,8 @@ Encodes a fitted model.
 ```swift
 func encode(_ model: LinearTimeSeriesForecaster<Scalar>.Transformer, to encoder: inout any EstimatorEncoder) throws
 ```
+
+Available when `Scalar` conforms to `MLShapedArrayScalar` and `BinaryFloatingPoint`.
 
 
 ---

@@ -1,7 +1,8 @@
 # scrollView
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.0+
@@ -18,10 +19,11 @@ static var scrollView: CompactPickerSubscriptionStoreControlStyle.Placement { ge
 
 ## See Also
 
-- [static var automatic: CompactPickerSubscriptionStoreControlStyle.Placement](compactpickersubscriptionstorecontrolstyle/placement/automatic.md)
-- [static var bottomBar: CompactPickerSubscriptionStoreControlStyle.Placement](compactpickersubscriptionstorecontrolstyle/placement/bottombar.md)
+### Getting a placement
+- [static var automatic: CompactPickerSubscriptionStoreControlStyle.Placement](./automatic.md)
+- [static var bottomBar: CompactPickerSubscriptionStoreControlStyle.Placement](./bottombar.md)
   A placement that locates the compact picker in a bar near the bottom of the main scroll view in a subscription store view.
-- [static var buttonsInBottomBar: CompactPickerSubscriptionStoreControlStyle.Placement](compactpickersubscriptionstorecontrolstyle/placement/buttonsinbottombar.md)
+- [static var buttonsInBottomBar: CompactPickerSubscriptionStoreControlStyle.Placement](./buttonsinbottombar.md)
   A hybrid placement that positions subscription controls within the main scroll view, and places auxiliary buttons in the bottom bar.
 
 

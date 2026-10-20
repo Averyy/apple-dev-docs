@@ -1,7 +1,8 @@
 # SRDeviceUsageReport.WebUsage
 
 **Framework**: SensorKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes a user’s website usage.
 
@@ -16,33 +17,38 @@ An object that describes a user’s website usage.
 class WebUsage
 ```
 
+```objc
+@interface SRWebUsage : NSObject
+```
+
 #### Overview
 
-Each instance of this class represents a website in a particular app category. For more information, see [`webUsageByCategory`](srdeviceusagereport/webusagebycategory.md).
+Each instance of this class represents a website in a particular app category. For more information, see [`webUsageByCategory`](./webusagebycategory.md).
 
 ## Topics
 
 ### Timing Web Use
-- [var totalUsageTime: TimeInterval](srdeviceusagereport/webusage/totalusagetime.md)
+- [var totalUsageTime: TimeInterval](./webusage/totalusagetime.md)
   The amount of web usage time that the report spans.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var webUsageByCategory: [SRDeviceUsageReport.CategoryKey : [SRDeviceUsageReport.WebUsage]]](srdeviceusagereport/webusagebycategory.md)
+### Analyzing Web Use
+- [var webUsageByCategory: [SRDeviceUsageReport.CategoryKey : [SRDeviceUsageReport.WebUsage]]](./webusagebycategory.md)
   The amount of time the user accesses domains per category.
 
 

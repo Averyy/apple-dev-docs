@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The number of layers in the rate map.
@@ -20,13 +21,18 @@ The number of layers in the rate map.
 var layerCount: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger layerCount;
+```
+
 ## See Also
 
-- [var screenSize: MTLSize](mtlrasterizationratemap/screensize.md)
+### Inspecting geometric and rendering properties
+- [var screenSize: MTLSize](./screensize.md)
   The logical size, in pixels, of the viewport coordinate system.
-- [func physicalSize(layer: Int) -> MTLSize](mtlrasterizationratemap/physicalsize(layer:).md)
+- [func physicalSize(layer: Int) -> MTLSize](./physicalsize%28layer%29.md)
   Returns the dimensions, in pixels, of the area in the render target affected by the rasterization rate map.
-- [var physicalGranularity: MTLSize](mtlrasterizationratemap/physicalgranularity.md)
+- [var physicalGranularity: MTLSize](./physicalgranularity.md)
   The granularity, in physical pixels, at which the rasterization rate varies.
 
 

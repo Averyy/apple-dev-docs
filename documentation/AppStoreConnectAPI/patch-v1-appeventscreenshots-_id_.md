@@ -1,10 +1,13 @@
 # Update an app event screenshot
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 **Availability**:
-- App Store Connect API 1.7+
+- App Store Connect API 1.7+ - Deprecated in 4.5
+
+> **Deprecated**: This endpoint is deprecated. Use [`Modify an app asset library image`](./patch-v1-appassetlibraryimages-_id_.md) instead.
 
 ## Endpoint
 
@@ -12,13 +15,32 @@
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app event screenshot resource ID from the [`List all screenshots for an app event localization`](get-v1-appeventlocalizations-_id_-appeventscreenshots.md) response.
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app event screenshot resource ID from the [`List all screenshots for an app event localization`](./get-v1-appeventlocalizations-_id_-appeventscreenshots.md) response.
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `AppEventScreenshotUpdateRequest`
+
+## Responses
+
+- `200` OK (`AppEventScreenshotResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `409` Conflict (`ErrorResponse`, `application/json`)
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List the Images for an In-App Event](get-v1-appeventscreenshots-_id_.md)
-- [Create an app event screenshot](post-v1-appeventscreenshots.md)
-- [Delete an app event screenshot](delete-v1-appeventscreenshots-_id_.md)
+### Endpoints
+- [List the Images for an In-App Event](./get-v1-appeventscreenshots-_id_.md)
+- [Create an app event screenshot](./post-v1-appeventscreenshots.md)
+- [Delete an app event screenshot](./delete-v1-appeventscreenshots-_id_.md)
   Delete a specific screenshot from an in-app event.
 
 

@@ -1,7 +1,8 @@
 # StartIO
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the stream to start I/O.
 
@@ -10,17 +11,17 @@ Tells the stream to start I/O.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t StartIO(IOUserAudioStartStopFlags in_flags);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
-The default implementation always returns [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess).
+The default implementation always returns [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md).
 
 Subclass and override this method to handle hardware-specific tasks during I/O startup, then call the superclass to update the I/O state. The framework expects this call to always succeed or fail. The hardware can take as long as it needs in this call, provided it always either succeeds or fails.
 
@@ -30,9 +31,10 @@ Subclass and override this method to handle hardware-specific tasks during I/O s
 
 ## See Also
 
-- [StopIO](iouseraudiostream/stopio.md)
+### Performing I/O
+- [StopIO](./stopio.md)
   Tells the stream to stop I/O.
-- [IOUserAudioStartStopFlags](audiodriverkit/iouseraudiostartstopflags.md)
+- [IOUserAudioStartStopFlags](../audiodriverkit-page/iouseraudiostartstopflags.md)
   Values that indicate I/O starts or stops.
 
 

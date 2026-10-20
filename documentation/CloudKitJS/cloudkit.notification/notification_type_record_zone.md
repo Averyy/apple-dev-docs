@@ -10,13 +10,14 @@ A notification generated when the contents of a record zone changed.
 
 ## Declaration
 
-```swift
+```
 const String NOTIFICATION_TYPE_RECORD_ZONE;
 ```
 
 ## See Also
 
-- [NOTIFICATION_TYPE_QUERY](cloudkit.notification/notification_type_query.md)
+### Constants
+- [NOTIFICATION_TYPE_QUERY](./notification_type_query.md)
   A notification generated based on the conditions set forth in a subscription object.
 
 

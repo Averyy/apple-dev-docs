@@ -1,7 +1,8 @@
 # current
 
 **Framework**: Swift Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The exit test that is running in the current process, if any.
 

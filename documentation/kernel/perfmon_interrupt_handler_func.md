@@ -1,14 +1,15 @@
 # perfmon_interrupt_handler_func
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef void (*perfmon_interrupt_handler_func)(cpu_id_t source);
 ```
 

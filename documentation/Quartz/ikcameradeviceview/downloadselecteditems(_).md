@@ -1,7 +1,8 @@
 # downloadSelectedItems(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes the selected items from the camera.
 
@@ -15,6 +16,10 @@ Deletes the selected items from the camera.
 func downloadSelectedItems(_ sender: Any!)
 ```
 
+```objc
+- (void) downloadSelectedItems:(id) sender;
+```
+
 #### Discussion
 
 This method is can be connected to a user interface item in Interface Builder.
@@ -25,17 +30,18 @@ This method is can be connected to a user interface item in Interface Builder.
 
 ## See Also
 
-- [var canDownloadSelectedItems: Bool](ikcameradeviceview/candownloadselecteditems.md)
+### Configuring Download Interface and Downloading Files
+- [var canDownloadSelectedItems: Bool](./candownloadselecteditems.md)
   Returns whether the selected items can be downloaded
-- [var downloadsDirectory: URL!](ikcameradeviceview/downloadsdirectory.md)
+- [var downloadsDirectory: URL!](./downloadsdirectory.md)
   Specifies the directory where files are downloaded
-- [func downloadAllItems(Any!)](ikcameradeviceview/downloadallitems(_:).md)
+- [func downloadAllItems(Any!)](./downloadallitems%28_%29.md)
   Downloads all the items.
-- [var downloadSelectedControlLabel: String!](ikcameradeviceview/downloadselectedcontrollabel.md)
+- [var downloadSelectedControlLabel: String!](./downloadselectedcontrollabel.md)
   Allows the “Download Selected” control to be renamed.
-- [var downloadAllControlLabel: String!](ikcameradeviceview/downloadallcontrollabel.md)
+- [var downloadAllControlLabel: String!](./downloadallcontrollabel.md)
   Allows the “Download All” control to be renamed.
-- [var displaysDownloadsDirectoryControl: Bool](ikcameradeviceview/displaysdownloadsdirectorycontrol.md)
+- [var displaysDownloadsDirectoryControl: Bool](./displaysdownloadsdirectorycontrol.md)
   Specifies whether the downloads directory control should be displayed.
 
 

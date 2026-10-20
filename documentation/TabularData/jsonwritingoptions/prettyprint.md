@@ -1,7 +1,8 @@
 # prettyPrint
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to split lines and indent the generated JSON.
 

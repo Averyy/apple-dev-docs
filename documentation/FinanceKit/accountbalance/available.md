@@ -1,7 +1,8 @@
 # available
 
 **Framework**: FinanceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The available balance, if present.
 
@@ -17,15 +18,16 @@ var available: Balance? { get }
 
 ## See Also
 
-- [let accountID: UUID](accountbalance/accountid.md)
+### Instance Properties
+- [let accountID: UUID](./accountid.md)
   The account ID the balance belongs to.
-- [var booked: Balance?](accountbalance/booked.md)
+- [var booked: Balance?](./booked.md)
   The booked balance, if present.
-- [var currencyCode: String](accountbalance/currencycode.md)
+- [var currencyCode: String](./currencycode.md)
   The balance currency.
-- [let currentBalance: CurrentBalance](accountbalance/currentbalance.md)
+- [let currentBalance: CurrentBalance](./currentbalance.md)
   The balance at a particular moment in time.
-- [let id: UUID](accountbalance/id.md)
+- [let id: UUID](./id.md)
   A unique account balance ID.
 
 

@@ -1,7 +1,8 @@
 # kAXSystemWideRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The system-wide accessibility object.
 
@@ -12,6 +13,10 @@ The system-wide accessibility object.
 
 ```swift
 var kAXSystemWideRole: String { get }
+```
+
+```c
+#define kAXSystemWideRole
 ```
 
 

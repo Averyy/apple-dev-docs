@@ -1,7 +1,8 @@
 # AccessibilityDeclarationCreateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an accessibility declaration for an app.
 
@@ -10,14 +11,14 @@ The request body you use to create an accessibility declaration for an app.
 
 ## Declaration
 
-```swift
+```
 object AccessibilityDeclarationCreateRequest
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AccessibilityDeclarationCreateRequest.Data](accessibilitydeclarationcreaterequest/data-data.dictionary.md)
+- [object AccessibilityDeclarationCreateRequest.Data](./accessibilitydeclarationcreaterequest/data-data.dictionary.md)
   The data structure of the request body you use to create an accessibility declaration.
 
 ## Properties
@@ -26,16 +27,17 @@ object AccessibilityDeclarationCreateRequest
 
 ## See Also
 
-- [object AccessibilityDeclaration](accessibilitydeclaration.md)
+### Objects
+- [object AccessibilityDeclaration](./accessibilitydeclaration.md)
   An app’s self-reported accessibility features and conformance information submitted for App Store review.
-- [object AccessibilityDeclarationsResponse](accessibilitydeclarationsresponse.md)
+- [object AccessibilityDeclarationsResponse](./accessibilitydeclarationsresponse.md)
   A response containing a list of accessibility declarations.
-- [object AccessibilityDeclarationResponse](accessibilitydeclarationresponse.md)
+- [object AccessibilityDeclarationResponse](./accessibilitydeclarationresponse.md)
   A response containing a single accessibility declaration for an app.
-- [object AccessibilityDeclarationUpdateRequest](accessibilitydeclarationupdaterequest.md)
+- [object AccessibilityDeclarationUpdateRequest](./accessibilitydeclarationupdaterequest.md)
   The request body you use to update an accessibility declaration for an app.
-- [object AppAccessibilityDeclarationsLinkagesResponse](appaccessibilitydeclarationslinkagesresponse.md)
-- [type DeviceFamily](devicefamily.md)
+- [object AppAccessibilityDeclarationsLinkagesResponse](./appaccessibilitydeclarationslinkagesresponse.md)
+- [type DeviceFamily](./devicefamily.md)
   String that represents a device family.
 
 

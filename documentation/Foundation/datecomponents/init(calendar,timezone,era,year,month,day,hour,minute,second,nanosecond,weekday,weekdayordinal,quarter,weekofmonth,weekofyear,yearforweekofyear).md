@@ -1,7 +1,8 @@
 # init(calendar:timeZone:era:year:month:day:hour:minute:second:nanosecond:weekday:weekdayOrdinal:quarter:weekOfMonth:weekOfYear:yearForWeekOfYear:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a date components value, optionally specifying values for its fields.
 
@@ -22,9 +23,10 @@ init(calendar: Calendar? = nil, timeZone: TimeZone? = nil, era: Int? = nil, year
 
 ## See Also
 
-- [var calendar: Calendar?](datecomponents/calendar.md)
+### Initializing Date Components
+- [var calendar: Calendar?](./calendar.md)
   The calendar used to interpret the other values in this structure.
-- [var timeZone: TimeZone?](datecomponents/timezone.md)
+- [var timeZone: TimeZone?](./timezone.md)
   A time zone.
 
 

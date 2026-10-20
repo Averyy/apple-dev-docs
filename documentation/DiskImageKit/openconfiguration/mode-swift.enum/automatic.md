@@ -1,7 +1,8 @@
 # OpenConfiguration.Mode.automatic
 
 **Framework**: DiskImageKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Try to open the disk image as read-write, and fallback to read-only if there’s no read-write access.
 

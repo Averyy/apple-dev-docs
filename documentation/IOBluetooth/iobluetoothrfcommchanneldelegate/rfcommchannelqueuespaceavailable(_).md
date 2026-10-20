@@ -1,15 +1,20 @@
 # rfcommChannelQueueSpaceAvailable(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional func rfcommChannelQueueSpaceAvailable(_ rfcommChannel: IOBluetoothRFCOMMChannel!)
+```
+
+```objc
+- (void) rfcommChannelQueueSpaceAvailable:(IOBluetoothRFCOMMChannel *) rfcommChannel;
 ```
 
 

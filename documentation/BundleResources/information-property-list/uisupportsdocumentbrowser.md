@@ -1,7 +1,8 @@
 # UISupportsDocumentBrowser
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value indicating whether the app is a document-based app.
 
@@ -10,9 +11,10 @@ A Boolean value indicating whether the app is a document-based app.
 - iPadOS 11.0+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `UISupportsDocumentBrowser` (Supports Document Browser)
+- **Type**: boolean
 
 #### Discussion
 
@@ -20,13 +22,15 @@ To allow other apps to open and edit the files stored in your app’s `Documents
 
 ## See Also
 
-- [Setting up a document browser app](../uikit/setting-up-a-document-browser-app.md)
+### Related Documentation
+- [Setting up a document browser app](../../UIKit/setting-up-a-document-browser-app.md)
   Add a document browser view controller to your app.
-- [CFBundleDocumentTypes](information-property-list/cfbundledocumenttypes.md)
+### Documents
+- [CFBundleDocumentTypes](./cfbundledocumenttypes.md)
   The document types supported by the bundle.
-- [LSSupportsOpeningDocumentsInPlace](information-property-list/lssupportsopeningdocumentsinplace.md)
+- [LSSupportsOpeningDocumentsInPlace](./lssupportsopeningdocumentsinplace.md)
   A Boolean value indicating whether the app may open the original document from a file provider, rather than a copy of the document.
-- [NSDownloadsUbiquitousContents](information-property-list/nsdownloadsubiquitouscontents.md)
+- [NSDownloadsUbiquitousContents](./nsdownloadsubiquitouscontents.md)
   A Boolean value that indicates whether the system should download documents before handing them over to the app.
 
 

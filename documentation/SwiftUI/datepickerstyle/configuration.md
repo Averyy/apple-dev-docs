@@ -1,7 +1,8 @@
 # DatePickerStyle.Configuration
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type alias for the properties of a `DatePicker`.
 
@@ -21,11 +22,12 @@ typealias Configuration = DatePickerStyleConfiguration
 
 ## See Also
 
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](datepickerstyle/makebody(configuration:).md)
+### Creating custom date picker styles
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./makebody%28configuration%29.md)
   Returns the appearance and interaction content for a `DatePicker`.
-- [struct DatePickerStyleConfiguration](datepickerstyleconfiguration.md)
+- [struct DatePickerStyleConfiguration](../datepickerstyleconfiguration.md)
   The properties of a `DatePicker`.
-- [associatedtype Body : View](datepickerstyle/body.md)
+- [associatedtype Body : View](./body.md)
   A view representing the appearance and interaction of a `DatePicker`.
 
 

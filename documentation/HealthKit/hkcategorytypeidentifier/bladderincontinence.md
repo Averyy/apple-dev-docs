@@ -1,7 +1,8 @@
 # bladderIncontinence
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A category type that records bladder incontinence as a symptom.
 
@@ -19,9 +20,13 @@ A category type that records bladder incontinence as a symptom.
 static let bladderIncontinence: HKCategoryTypeIdentifier
 ```
 
+```c
+extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierBladderIncontinence;
+```
+
 #### Discussion
 
-These samples use values from the  [`HKCategoryValueSeverity`](hkcategoryvalueseverity.md) enumeration.
+These samples use values from the  [`HKCategoryValueSeverity`](../hkcategoryvalueseverity.md) enumeration.
 
 
 ---

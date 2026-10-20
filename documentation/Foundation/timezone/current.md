@@ -1,7 +1,8 @@
 # current
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The time zone currently used by the system.
 
@@ -22,7 +23,8 @@ static var current: TimeZone { get }
 
 ## See Also
 
-- [static var autoupdatingCurrent: TimeZone](timezone/autoupdatingcurrent.md)
+### Getting the Current Time Zone
+- [static var autoupdatingCurrent: TimeZone](./autoupdatingcurrent.md)
   The time zone currently used by the system, automatically updating to the user’s current preference.
 
 

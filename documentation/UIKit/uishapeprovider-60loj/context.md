@@ -1,7 +1,8 @@
 # UIShapeProvider.Context
 
 **Framework**: UIKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The context for resolving a dynamic shape.
 
@@ -19,7 +20,8 @@ typealias Context = UIShape.ResolutionContext
 
 ## See Also
 
-- [UIShapeProvider.Resolved](uishapeprovider-60loj/resolved.md)
+### Supporting types
+- [UIShapeProvider.Resolved](./resolved.md)
   A shape that has completely resolved based on a context.
 
 

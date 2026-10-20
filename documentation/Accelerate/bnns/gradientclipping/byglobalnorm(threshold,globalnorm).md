@@ -1,7 +1,8 @@
 # BNNS.GradientClipping.byGlobalNorm(threshold:globalNorm:)
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that indicates that the operation clips gradients to a specified global Euclidean norm.
 
@@ -11,7 +12,7 @@ A constant that indicates that the operation clips gradients to a specified glob
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -27,11 +28,12 @@ case byGlobalNorm(threshold: Float, globalNorm: Float = 0)
 
 ## See Also
 
-- [BNNS.GradientClipping.none](bnns/gradientclipping/none.md)
+### Gradient Clipping Functions
+- [BNNS.GradientClipping.none](./none.md)
   A constant that indicates that the operation doesn’t clip gradients.
-- [case byValue(bounds: ClosedRange<Float>)](bnns/gradientclipping/byvalue(bounds:).md)
+- [case byValue(bounds: ClosedRange<Float>)](./byvalue%28bounds%29.md)
   A constant that indicates that the operation clips gradients to a specified range.
-- [BNNS.GradientClipping.byNorm(threshold:)](bnns/gradientclipping/bynorm(threshold:).md)
+- [BNNS.GradientClipping.byNorm(threshold:)](./bynorm%28threshold%29.md)
   A constant that indicates that the operation clips gradients to a specified Euclidean norm.
 
 

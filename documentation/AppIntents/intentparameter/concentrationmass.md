@@ -1,7 +1,8 @@
 # IntentParameter.ConcentrationMass
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -18,27 +19,30 @@
 enum ConcentrationMass
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitConcentrationMass>`.
+
 ## Topics
 
 ### Enumeration Cases
-- [IntentParameter.ConcentrationMass.gramsPerLiter](intentparameter/concentrationmass/gramsperliter.md)
-- [IntentParameter.ConcentrationMass.milligramsPerDeciliter](intentparameter/concentrationmass/milligramsperdeciliter.md)
+- [IntentParameter.ConcentrationMass.gramsPerLiter](./concentrationmass/gramsperliter.md)
+- [IntentParameter.ConcentrationMass.milligramsPerDeciliter](./concentrationmass/milligramsperdeciliter.md)
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [var unit: IntentParameter<Value>.ConcentrationMass?](intentparameter/unit-4ukvz.md)
-- [var defaultUnit: IntentParameter<Value>.ConcentrationMass?](intentparameter/defaultunit-6mid8.md)
-- [var supportsNegativeNumbers: Bool?](intentparameter/supportsnegativenumbers-5s36k.md)
-- [var unitAdjustForLocale: Bool?](intentparameter/unitadjustforlocale-831sz.md)
+### Accessing unit details
+- [var unit: IntentParameter<Value>.ConcentrationMass?](./unit-4ukvz.md)
+- [var defaultUnit: IntentParameter<Value>.ConcentrationMass?](./defaultunit-6mid8.md)
+- [var supportsNegativeNumbers: Bool?](./supportsnegativenumbers-5s36k.md)
+- [var unitAdjustForLocale: Bool?](./unitadjustforlocale-831sz.md)
 
 
 ---

@@ -1,22 +1,24 @@
 # IOStreamBufferID
 
 **Framework**: VideoDriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 typedef uint32_t IOStreamBufferID;
 ```
 
 ## See Also
 
-- [getBufferID](iouservideobuffer/getbufferid.md)
-- [setBufferID](iouservideobuffer/setbufferid.md)
-- [kIOStreamBufferIDMask](kiostreambufferidmask.md)
+### Accessing buffer ID
+- [getBufferID](./iouservideobuffer/getbufferid.md)
+- [setBufferID](./iouservideobuffer/setbufferid.md)
+- [kIOStreamBufferIDMask](./kiostreambufferidmask.md)
 
 
 ---

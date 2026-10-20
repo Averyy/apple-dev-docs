@@ -1,7 +1,8 @@
 # init(pointerFunctions:capacity:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a hash table initialized with the given functions and capacity.
 
@@ -20,6 +21,10 @@ Returns a hash table initialized with the given functions and capacity.
 init(pointerFunctions functions: NSPointerFunctions, capacity initialCapacity: Int)
 ```
 
+```objc
+- (instancetype) initWithPointerFunctions:(NSPointerFunctions *) functions capacity:(NSUInteger) initialCapacity;
+```
+
 #### Return Value
 
 A hash table initialized with the given functions and capacity.
@@ -35,7 +40,8 @@ Hash tables allocate additional memory as needed, so `initialCapacity` simply es
 
 ## See Also
 
-- [init(options: NSPointerFunctions.Options, capacity: Int)](nshashtable/init(options:capacity:).md)
+### Initialization
+- [init(options: NSPointerFunctions.Options, capacity: Int)](./init%28options,capacity%29.md)
   Returns a hash table initialized with the given attributes.
 
 

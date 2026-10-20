@@ -1,12 +1,13 @@
 # fontNamed(_:hasTraits:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether the given font has all the specified traits.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,17 @@ Indicates whether the given font has all the specified traits.
 func fontNamed(_ fName: String, hasTraits someTraits: NSFontTraitMask) -> Bool
 ```
 
+```objc
+- (BOOL) fontNamed:(NSString *) fName hasTraits:(NSFontTraitMask) someTraits;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the font named `typeface` has all the traits specified in `fontTraitMask`; [`false`](https://developer.apple.com/documentation/swift/false) if it doesn’t.
+[`true`](../../Swift/true.md) if the font named `typeface` has all the traits specified in `fontTraitMask`; [`false`](../../Swift/false.md) if it doesn’t.
 
 #### Discussion
 
-Using `NSUnboldFontMask` returns [`true`](https://developer.apple.com/documentation/swift/true) if the font is not bold, [`false`](https://developer.apple.com/documentation/swift/false) otherwise. Using `NSUnitalicFontMask` returns [`true`](https://developer.apple.com/documentation/swift/true) if the font is not italic, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+Using `NSUnboldFontMask` returns [`true`](../../Swift/true.md) if the font is not bold, [`false`](../../Swift/false.md) otherwise. Using `NSUnitalicFontMask` returns [`true`](../../Swift/true.md) if the font is not italic, [`false`](../../Swift/false.md) otherwise.
 
 ## Parameters
 
@@ -29,11 +34,12 @@ Using `NSUnboldFontMask` returns [`true`](https://developer.apple.com/documentat
 
 ## See Also
 
-- [func traits(of: NSFont) -> NSFontTraitMask](nsfontmanager/traits(of:).md)
+### Examining Fonts
+- [func traits(of: NSFont) -> NSFontTraitMask](./traits%28of%29.md)
   Returns the traits of the given font.
-- [struct NSFontTraitMask](nsfonttraitmask.md)
+- [struct NSFontTraitMask](../nsfonttraitmask.md)
   Constants for isolating specific traits of a font.
-- [func weight(of: NSFont) -> Int](nsfontmanager/weight(of:).md)
+- [func weight(of: NSFont) -> Int](./weight%28of%29.md)
   Returns an approximation of the specified font’s weight.
 
 

@@ -1,7 +1,8 @@
 # frameRange
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range of frame rates the hand action classifier used to make its prediction.
 
@@ -20,7 +21,8 @@ var frameRange: Range<Int>
 
 ## See Also
 
-- [var results: [(label: String, confidence: Double)]](mlhandactionclassifier/prediction/results.md)
+### Inspecting a prediction
+- [var results: [(label: String, confidence: Double)]](./results.md)
   An array of prediction labels and their confidences for a hand action.
 
 

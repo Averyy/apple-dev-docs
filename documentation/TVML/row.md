@@ -21,61 +21,62 @@ The `row` element provides the ability to place elements next to other elements 
 </row>
 ```
 
-##### Subelements of Row
+##### Subelements of row
 
-- [`badge`](badge.md)
-- [`button`](button.md)
-- [`buttonLockup`](buttonlockup.md)
-- [`organizer`](organizer.md)
-- [`subtitle`](subtitle.md)
-- [`text`](text.md)
+- [badge](./badge.md)
+- [button](./button.md)
+- [buttonLockup](./buttonlockup.md)
+- [organizer](./organizer.md)
+- [subtitle](./subtitle.md)
+- [text](./text.md)
 
-##### Elements That Use Row
+##### Elements that Use row
 
-- [`banner`](banner.md)
-- [`descriptiveAlertTemplate`](descriptivealerttemplate.md)
-- [`info`](info.md)
-- [`itemBanner`](itembanner.md)
-- [`stack`](stack.md)
+- [banner](./banner.md)
+- [descriptiveAlertTemplate](./descriptivealerttemplate.md)
+- [info](./info.md)
+- [itemBanner](./itembanner.md)
+- [stack](./stack.md)
 
 ## Topics
 
 ### Valid TVML Styles
-- [margin](margin.md)
+- [margin](./margin.md)
   Specifies the spacing around an element.
-- [tv-align](tv-align.md)
+- [tv-align](./tv-align.md)
   Aligns an element horizontally inside its parent.
-- [tv-content-align](tv-content-align.md)
+- [tv-content-align](./tv-content-align.md)
   Aligns an element vertically inside its parent element.
-- [tv-interitem-spacing](tv-interitem-spacing.md)
+- [tv-interitem-spacing](./tv-interitem-spacing.md)
   Specifies the spacing between child elements.
 ### Valid TVML Attributes
-- [autoHighlight](autohighlight.md)
+- [autoHighlight](./autohighlight.md)
   Specifies that the element should initially be in focus.
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [carousel](carousel.md)
+### Container Elements
+- [carousel](./carousel.md)
   Arranges images in a row.
-- [grid](grid.md)
+- [grid](./grid.md)
   Arranges elements in a grid pattern.
-- [imgDeck](imgdeck.md)
+- [imgDeck](./imgdeck.md)
   Contains several images to be displayed at a later time.
-- [infoTable](infotable.md)
+- [infoTable](./infotable.md)
   Displays contained element information in a vertical format, with each successive element directly below the previous element.
-- [organizer](organizer.md)
+- [organizer](./organizer.md)
   Creates a generic element with its contained elements arranged through TVML styles.
-- [section](section.md)
+- [section](./section.md)
   Combines elements and acts as a single element.
-- [stack](stack.md)
+- [stack](./stack.md)
   Groups and lays out elements vertically.
-- [shelf](shelf.md)
+- [shelf](./shelf.md)
   Displays elements horizontally and adds the ability to scroll to offscreen elements.
 
 

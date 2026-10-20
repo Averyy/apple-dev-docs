@@ -1,7 +1,8 @@
 # UIVibrancyEffectStyle.secondaryLabel
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style for labels containing secondary content.
 
@@ -17,13 +18,18 @@ A style for labels containing secondary content.
 case secondaryLabel
 ```
 
+```c
+UIVibrancyEffectStyleSecondaryLabel
+```
+
 ## See Also
 
-- [UIVibrancyEffectStyle.label](uivibrancyeffectstyle/label.md)
+### Label styles
+- [UIVibrancyEffectStyle.label](./label.md)
   A style for labels containing primary content.
-- [UIVibrancyEffectStyle.tertiaryLabel](uivibrancyeffectstyle/tertiarylabel.md)
+- [UIVibrancyEffectStyle.tertiaryLabel](./tertiarylabel.md)
   A style for labels containing tertiary content.
-- [UIVibrancyEffectStyle.quaternaryLabel](uivibrancyeffectstyle/quaternarylabel.md)
+- [UIVibrancyEffectStyle.quaternaryLabel](./quaternarylabel.md)
   A style for labels containing quaternary content.
 
 

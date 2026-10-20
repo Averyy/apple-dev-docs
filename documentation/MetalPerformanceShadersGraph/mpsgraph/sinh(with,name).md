@@ -1,7 +1,8 @@
 # sinh(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the hyperbolic sine operation to the input tensor elements.
 
@@ -17,6 +18,10 @@ Applies the hyperbolic sine operation to the input tensor elements.
 
 ```swift
 func sinh(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) sinhWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

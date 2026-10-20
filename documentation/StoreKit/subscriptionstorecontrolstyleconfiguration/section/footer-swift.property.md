@@ -1,7 +1,8 @@
 # footer
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A decorative footer view for a section that displays after the options.
 
@@ -22,11 +23,12 @@ var footer: SubscriptionStoreControlStyleConfiguration.Section.Footer?
 
 ## See Also
 
-- [var header: SubscriptionStoreControlStyleConfiguration.Section.Header?](subscriptionstorecontrolstyleconfiguration/section/header-swift.property.md)
+### Getting accessory views
+- [var header: SubscriptionStoreControlStyleConfiguration.Section.Header?](./header-swift.property.md)
   A decorative header view for a section that displays before the options.
-- [SubscriptionStoreControlStyleConfiguration.Section.Header](subscriptionstorecontrolstyleconfiguration/section/header-swift.struct.md)
+- [SubscriptionStoreControlStyleConfiguration.Section.Header](./header-swift.struct.md)
   A type-erased header of a section of subscription options.
-- [SubscriptionStoreControlStyleConfiguration.Section.Footer](subscriptionstorecontrolstyleconfiguration/section/footer-swift.struct.md)
+- [SubscriptionStoreControlStyleConfiguration.Section.Footer](./footer-swift.struct.md)
   A type-erased footer of a section of subscription options.
 
 

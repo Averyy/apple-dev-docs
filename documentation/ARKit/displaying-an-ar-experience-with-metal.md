@@ -1,16 +1,17 @@
 # Displaying an AR Experience with Metal
 
-**Framework**: ARKit
+**Framework**: ARKit  
+**Role**: Article
 
 Control rendering of your app’s virtual content on top of a camera feed.
 
 #### Overview
 
-ARKit includes view classes for easily displaying AR experiences with SceneKit or SpriteKit. However, if instead you build your own rendering engine using [`Metal`](https://developer.apple.com/documentation/metal), ARKit also provides all the support necessary to display an AR experience with your custom view.
+ARKit includes view classes for easily displaying AR experiences with SceneKit or SpriteKit. However, if instead you build your own rendering engine using [Metal](../Metal/Metal.md), ARKit also provides all the support necessary to display an AR experience with your custom view.
 
-![None](/images/com.apple.arkit/media-2903215@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.arkit/media-2903215@2x.png)
 
-In any AR experience, the first step is to configure an [`ARSession`](arsession.md) object to manage camera capture and motion processing. A session defines and maintains a correspondence between the real-world space the device inhabits and a virtual space where you model AR content. To display your AR experience in a custom view, you’ll need to:
+In any AR experience, the first step is to configure an [`ARSession`](./arsession.md) object to manage camera capture and motion processing. A session defines and maintains a correspondence between the real-world space the device inhabits and a virtual space where you model AR content. To display your AR experience in a custom view, you’ll need to:
 
 1. Retrieve video  frames and tracking information from the session.
 2. Render those frame images as the backdrop for your view.
@@ -18,13 +19,13 @@ In any AR experience, the first step is to configure an [`ARSession`](arsession.
 
 > **Note**:  This article covers code found in Xcode project templates. For complete example code, create a new iOS application with the Augmented Reality template, and choose Metal from the Content Technology popup menu.
 
-##### Get Video Frames and Tracking Data From the Session
+##### Get Video Frames and Tracking Data from the Session
 
-Create and maintain your own [`ARSession`](arsession.md) instance, and run it with a session configuration appropriate for the kind of AR experience you want to support. The session captures video from the camera, tracks the device’s position and orientation in a modeled 3D space, and provides [`ARFrame`](arframe.md) objects. Each such object contains both an individual video frame image and position tracking information from the moment that frame was captured.
+Create and maintain your own [`ARSession`](./arsession.md) instance, and run it with a session configuration appropriate for the kind of AR experience you want to support. The session captures video from the camera, tracks the device’s position and orientation in a modeled 3D space, and provides [`ARFrame`](./arframe.md) objects. Each such object contains both an individual video frame image and position tracking information from the moment that frame was captured.
 
-There are two ways to access [`ARFrame`](arframe.md) objects produced by an AR session, depending on whether your app favors a pull or a push design pattern.
+There are two ways to access [`ARFrame`](./arframe.md) objects produced by an AR session, depending on whether your app favors a pull or a push design pattern.
 
-If you prefer to control frame timing (the pull design pattern), use the session’s [`currentFrame`](arsession/currentframe.md) property to get the current frame image and tracking information each time you redraw your view’s contents. For example, see the following function that a custom renderer calls as part of its regular update process:
+If you prefer to control frame timing (the pull design pattern), use the session’s [`currentFrame`](./arsession/currentframe.md) property to get the current frame image and tracking information each time you redraw your view’s contents. For example, see the following function that a custom renderer calls as part of its regular update process:
 
 ```swift
 func updateGameState() {        
@@ -43,15 +44,15 @@ func updateGameState() {
 }
 ```
 
-Alternatively, if your app design favors a push pattern, implement the [`session(_:didUpdate:)`](arsessiondelegate/session(_:didupdate:)-9v2kw.md) delegate method, and the session will call it once for each video frame it captures (at 60 frames per second by default).
+Alternatively, if your app design favors a push pattern, implement the [`session(_:didUpdate:)`](./arsessiondelegate/session%28_,didupdate%29-9v2kw.md) delegate method, and the session will call it once for each video frame it captures (at 60 frames per second by default).
 
 Upon obtaining a frame, you’ll need to draw the camera image, and update and render any overlay content your AR experience includes.
 
 ##### Draw the Camera Image
 
-Each [`ARFrame`](arframe.md) object’s [`capturedImage`](arframe/capturedimage.md) property contains a pixel buffer captured from the device camera. To draw this image as the backdrop for your custom view, you’ll need to create textures from the image content and submit GPU rendering commands that use those textures.
+Each [`ARFrame`](./arframe.md) object’s [`capturedImage`](./arframe/capturedimage.md) property contains a pixel buffer captured from the device camera. To draw this image as the backdrop for your custom view, you’ll need to create textures from the image content and submit GPU rendering commands that use those textures.
 
-The pixel buffer’s contents are encoded in a biplanar YCbCr (also called YUV) data format; to render the image you’ll need to convert this pixel data to a drawable RGB format. For rendering with Metal, you can perform this conversion most efficiently in GPU shader code. Use [`CVMetalTextureCache`](https://developer.apple.com/documentation/corevideo/cvmetaltexturecache-q3j) APIs to create two Metal textures from the pixel buffer—one each for the buffer’s luma (Y) and chroma (CbCr) planes:
+The pixel buffer’s contents are encoded in a biplanar YCbCr (also called YUV) data format; to render the image you’ll need to convert this pixel data to a drawable RGB format. For rendering with Metal, you can perform this conversion most efficiently in GPU shader code. Use [CVMetalTextureCache](../CoreVideo/cvmetaltexturecache-q3j.md) APIs to create two Metal textures from the pixel buffer—one each for the buffer’s luma (Y) and chroma (CbCr) planes:
 
 ```swift
 func updateCapturedImageTextures(frame: ARFrame) {
@@ -110,7 +111,7 @@ fragment float4 capturedImageFragmentShader(ImageColorInOut in [[stage_in]],
 
 ##### Track and Render Overlay Content
 
-AR experiences typically focus on rendering 3D overlay content so that the content appears to be part of the real world seen in the camera image. To achieve this illusion, use the [`ARAnchor`](aranchor.md) class to model the position and orientation of your own 3D content relative to real-world space. Anchors provide transforms that you can reference during rendering.
+AR experiences typically focus on rendering 3D overlay content so that the content appears to be part of the real world seen in the camera image. To achieve this illusion, use the [`ARAnchor`](./aranchor.md) class to model the position and orientation of your own 3D content relative to real-world space. Anchors provide transforms that you can reference during rendering.
 
 For example, the Xcode template creates an anchor located about 20 cm in front of the device whenever a user taps on the screen:
 
@@ -131,7 +132,7 @@ func handleTap(gestureRecognize: UITapGestureRecognizer) {
 }
 ```
 
-In your rendering engine, use the [`transform`](aranchor/transform.md) property of each [`ARAnchor`](aranchor.md) object to place visual content. The Xcode template uses each of the anchors added to the session in its `handleTap` method to position a simple cube mesh:
+In your rendering engine, use the [`transform`](./aranchor/transform.md) property of each [`ARAnchor`](./aranchor.md) object to place visual content. The Xcode template uses each of the anchors added to the session in its `handleTap` method to position a simple cube mesh:
 
 ```swift
 func updateAnchors(frame: ARFrame) {
@@ -158,11 +159,11 @@ func updateAnchors(frame: ARFrame) {
 }
 ```
 
-> **Note**:  In a more complex AR experience, you can use hit testing or plane detection to find the positions of real-world surfaces. For details, see the [`planeDetection`](arworldtrackingconfiguration/planedetection-swift.property.md) property and the [`hitTest(_:types:)`](arframe/hittest(_:types:).md) method. In both cases, ARKit provides results as [`ARAnchor`](aranchor.md) objects, so you still use anchor transforms to place visual content.
+> **Note**:  In a more complex AR experience, you can use hit testing or plane detection to find the positions of real-world surfaces. For details, see the [`planeDetection`](./arworldtrackingconfiguration/planedetection-swift.property.md) property and the [`hitTest(_:types:)`](./arframe/hittest%28_,types%29.md) method. In both cases, ARKit provides results as [`ARAnchor`](./aranchor.md) objects, so you still use anchor transforms to place visual content.
 
 ##### Render with Realistic Lighting
 
-When you configure shaders for drawing 3D content in your scene, use the estimated lighting information in each [`ARFrame`](arframe.md) object to produce more realistic shading. See the following code that an app’s custom renderer performs while updating its shared uniforms:
+When you configure shaders for drawing 3D content in your scene, use the estimated lighting information in each [`ARFrame`](./arframe.md) object to produce more realistic shading. See the following code that an app’s custom renderer performs while updating its shared uniforms:
 
 ```swift
 // Set up the scene's lighting with the ambient intensity, if available.
@@ -178,13 +179,14 @@ uniforms.pointee.ambientLightColor = ambientLightColor * ambientIntensity
 
 ## See Also
 
-- [Choosing Which Camera Feed to Augment](choosing-which-camera-feed-to-augment.md)
+### Setup
+- [Choosing Which Camera Feed to Augment](./choosing-which-camera-feed-to-augment.md)
   Add visual effects to the user’s environment in an AR experience through the front or rear camera.
-- [Managing Session Life Cycle and Tracking Quality](managing-session-life-cycle-and-tracking-quality.md)
+- [Managing Session Life Cycle and Tracking Quality](./managing-session-life-cycle-and-tracking-quality.md)
   Keep the user informed on the current session state and recover from interruptions.
-- [class ARSession](arsession.md)
+- [class ARSession](./arsession.md)
   The object that manages the major tasks associated with every AR experience, such as motion tracking, camera passthrough, and image analysis.
-- [Configuration Objects](configuration-objects.md)
+- [Configuration Objects](./configuration-objects.md)
   Configure your augmented reality session to detect and track specific types of content.
 
 

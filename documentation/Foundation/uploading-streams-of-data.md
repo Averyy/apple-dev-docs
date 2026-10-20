@@ -1,18 +1,19 @@
 # Uploading streams of data
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: Article
 
 Send a stream of data to a server.
 
 #### Overview
 
-Streaming media apps and long-running apps that send continual updates use an ongoing stream to upload data, rather than sending a single block of data or a flat file. You can configure an instance of [`URLSessionUploadTask`](urlsessionuploadtask.md) (a subclass of [`URLSessionTask`](urlsessiontask.md)) to work with a stream that you provide, and then fill this stream with data indefinitely.
+Streaming media apps and long-running apps that send continual updates use an ongoing stream to upload data, rather than sending a single block of data or a flat file. You can configure an instance of [`URLSessionUploadTask`](./urlsessionuploadtask.md) (a subclass of [`URLSessionTask`](./urlsessiontask.md)) to work with a stream that you provide, and then fill this stream with data indefinitely.
 
 The task gets the stream by calling your session’s delegate, so you need to create a session and set your own code as its delegate.
 
-##### Create a Url Session
+##### Create a URL session
 
-Begin by creating a URLSession and providing it with a delegate. The following example creates a URL session with the default [`URLSessionConfiguration`](urlsessionconfiguration.md) and sets `self` as the delegate. You’ll implement [`URLSessionTaskDelegate`](urlsessiontaskdelegate.md) later, in [`Provide the stream to the upload task`](uploading-streams-of-data#Provide-the-stream-to-the-upload-task.md).
+Begin by creating a URLSession and providing it with a delegate. The following example creates a URL session with the default [`URLSessionConfiguration`](./urlsessionconfiguration.md) and sets `self` as the delegate. You’ll implement [`URLSessionTaskDelegate`](./urlsessiontaskdelegate.md) later, in [Provide the stream to the upload task](./uploading-streams-of-data.md#Provide-the-stream-to-the-upload-task).
 
 Creating a URLSession with a delegate
 
@@ -23,9 +24,9 @@ lazy var session: URLSession = URLSession(configuration: .default,
 
 ```
 
-##### Create a Streaming Upload Task
+##### Create a streaming upload task
 
-Create the upload task with the [`URLSession`](urlsession.md) method [`uploadTask(withStreamedRequest:)`](urlsession/uploadtask(withstreamedrequest:).md). This takes a [`URLRequest`](urlrequest.md) specifying the URL you want to upload to, along with other parameters. You start the task by calling [`resume()`](urlsessiontask/resume().md). The following example shows how to create and start an upload task, connecting to a server on the local machine (`127.0.0.1`) listening on port `12345`.
+Create the upload task with the [`URLSession`](./urlsession.md) method [`uploadTask(withStreamedRequest:)`](./urlsession/uploadtask%28withstreamedrequest%29.md). This takes a [`URLRequest`](./urlrequest.md) specifying the URL you want to upload to, along with other parameters. You start the task by calling [`resume()`](./urlsessiontask/resume%28%29.md). The following example shows how to create and start an upload task, connecting to a server on the local machine (`127.0.0.1`) listening on port `12345`.
 
 Creating an upload task
 
@@ -39,15 +40,15 @@ let uploadTask = session.uploadTask(withStreamedRequest: request)
 uploadTask.resume()
 ```
 
-##### Use a Bound Pair of Streams to Provide an Input Stream
+##### Use a bound pair of streams to provide an input stream
 
-You provide the streaming data to the upload task as an [`InputStream`](inputstream.md). The task reads data from this stream and uploads it to the destination.
+You provide the streaming data to the upload task as an [`InputStream`](./inputstream.md). The task reads data from this stream and uploads it to the destination.
 
-A good way to provide data to the input stream is to use a *bound pair* of streams. The bound pair contains an [`OutputStream`](outputstream.md) that you write data to. Thanks to the binding of the streams, the data you write to the output stream is made available to the input stream, which the task can then read from. [`Figure 1`](url_loading_system/uploading_streams_of_data#3037791.md) shows this arrangement.
+A good way to provide data to the input stream is to use a *bound pair* of streams. The bound pair contains an [`OutputStream`](./outputstream.md) that you write data to. Thanks to the binding of the streams, the data you write to the output stream is made available to the input stream, which the task can then read from. [Figure 1](./url_loading_system/uploading_streams_of_data.md#3037791) shows this arrangement.
 
-![Flow diagram showing how data written by an app to the output stream of a bound pair goes into a buffer, then to the bound pair’s input stream, then to the upload task, which sends it to the destination.](/images/com.apple.foundation/media-3037791@2x.png)
+![Flow diagram showing how data written by an app to the output stream of a bound pair goes into a buffer, then to the bound pair’s input stream, then to the upload task, which sends it to the destination.](https://developer.apple.com/tutorials/images/com.apple.foundation/media-3037791@2x.png)
 
-The following example shows a structure called `Streams` that consists of an [`InputStream`](inputstream.md) and an [`OutputStream`](outputstream.md). The listing creates a property of this type, called `boundStreams`, by calling the [`getBoundStreams(withBufferSize:inputStream:outputStream:)`](stream/getboundstreams(withbuffersize:inputstream:outputstream:).md) method of the [`Stream`](stream.md) class, passing in in-out references for the input and output streams.
+The following example shows a structure called `Streams` that consists of an [`InputStream`](./inputstream.md) and an [`OutputStream`](./outputstream.md). The listing creates a property of this type, called `boundStreams`, by calling the [`getBoundStreams(withBufferSize:inputStream:outputStream:)`](./stream/getboundstreams%28withbuffersize,inputstream,outputstream%29.md) method of the [`Stream`](./stream.md) class, passing in in-out references for the input and output streams.
 
 Creating a bound pair of input and output streams
 
@@ -76,13 +77,13 @@ lazy var boundStreams: Streams = {
 
 When you create the bound pair, make sure you specify a buffer size large enough to hold any data you write to the output stream, prior to the data being read from the input stream. The following example uses a 4096-byte buffer.
 
-The listing also sets `self` as the output stream’s delegate. Declare that your class implements the [`StreamDelegate`](streamdelegate.md) protocol in order to receive events that indicate when the output stream is ready to receive new data. You’ll provide the implementation of [`StreamDelegate`](streamdelegate.md) later, in [`Write data to the stream when it’s ready`](uploading-streams-of-data#Write-data-to-the-stream-when-its-ready.md).
+The listing also sets `self` as the output stream’s delegate. Declare that your class implements the [`StreamDelegate`](./streamdelegate.md) protocol in order to receive events that indicate when the output stream is ready to receive new data. You’ll provide the implementation of [`StreamDelegate`](./streamdelegate.md) later, in [Write data to the stream when it’s ready](./uploading-streams-of-data.md#Write-data-to-the-stream-when-its-ready).
 
-> 💡 **Tip**:  Your implementations of [`StreamDelegate`](streamdelegate.md) and [`URLSessionTaskDelegate`](urlsessiontaskdelegate.md) may be in the same class or in different classes, whichever makes more sense for your app’s architecture.
+> 💡 **Tip**:  Your implementations of [`StreamDelegate`](./streamdelegate.md) and [`URLSessionTaskDelegate`](./urlsessiontaskdelegate.md) may be in the same class or in different classes, whichever makes more sense for your app’s architecture.
 
-##### Provide the Stream to the Upload Task
+##### Provide the stream to the upload task
 
-You provide the input stream to the upload task in your implementation of the [`URLSessionTaskDelegate`](urlsessiontaskdelegate.md) method [`urlSession(_:task:needNewBodyStream:)`](urlsessiontaskdelegate/urlsession(_:task:neednewbodystream:).md), which is called after you start the upload task by calling [`resume()`](urlsessiontask/resume().md). The callback passes in a completion handler, which you call directly, passing in the `boundStreams.input` stream you created earlier. The following example shows an implementation of this method.
+You provide the input stream to the upload task in your implementation of the [`URLSessionTaskDelegate`](./urlsessiontaskdelegate.md) method [`urlSession(_:task:needNewBodyStream:)`](./urlsessiontaskdelegate/urlsession%28_,task,neednewbodystream%29.md), which is called after you start the upload task by calling [`resume()`](./urlsessiontask/resume%28%29.md). The callback passes in a completion handler, which you call directly, passing in the `boundStreams.input` stream you created earlier. The following example shows an implementation of this method.
 
 Providing the input stream to the upload task in the delegate callback
 
@@ -93,13 +94,13 @@ func urlSession(_ session: URLSession, task: URLSessionTask,
 }
 ```
 
-##### Write Data to the Stream When Its Ready
+##### Write data to the stream when it’s ready
 
-Write data to an output stream only when the stream is ready for it. You get notified of the stream’s readiness in the [`StreamDelegate`](streamdelegate.md) method [`stream(_:handle:)`](streamdelegate/stream(_:handle:).md). When this callback sends [`hasSpaceAvailable`](stream/event/hasspaceavailable.md) as its `eventCode` parameter, the stream is ready to accept more data.
+Write data to an output stream only when the stream is ready for it. You get notified of the stream’s readiness in the [`StreamDelegate`](./streamdelegate.md) method [`stream(_:handle:)`](./streamdelegate/stream%28_,handle%29.md). When this callback sends [`hasSpaceAvailable`](./stream/event/hasspaceavailable.md) as its `eventCode` parameter, the stream is ready to accept more data.
 
-If you’re not ready to write while handling the event, and would prefer to write on your own schedule, you can set a flag variable and check it later to determine whether it’s is safe to write to the stream. The following example illustrates this technique. It handles the [`hasSpaceAvailable`](stream/event/hasspaceavailable.md) event by just setting a private `canWrite` property to `true.`
+If you’re not ready to write while handling the event, and would prefer to write on your own schedule, you can set a flag variable and check it later to determine whether it’s is safe to write to the stream. The following example illustrates this technique. It handles the [`hasSpaceAvailable`](./stream/event/hasspaceavailable.md) event by just setting a private `canWrite` property to `true.`
 
-While handling stream events, also check whether `eventCode` is [`errorOccurred`](stream/event/erroroccurred.md). This means that the stream has failed. When this happens, close the streams and abandon the upload.
+While handling stream events, also check whether `eventCode` is [`errorOccurred`](./stream/event/erroroccurred.md). This means that the stream has failed. When this happens, close the streams and abandon the upload.
 
 Handling StreamDelegate events
 
@@ -118,9 +119,9 @@ func stream(_ aStream: Stream, handle eventCode: Stream.Event) {
 
 ```
 
-Once you’re handling the [`hasSpaceAvailable`](stream/event/hasspaceavailable.md) event, you can write to the stream whenever you know it’s ready to receive more data. You write to the stream by calling its [`write(_:maxLength:)`](outputstream/write(_:maxlength:).md) method, providing a reference to the raw bytes to be written, and the maximum number of bytes to write.
+Once you’re handling the [`hasSpaceAvailable`](./stream/event/hasspaceavailable.md) event, you can write to the stream whenever you know it’s ready to receive more data. You write to the stream by calling its [`write(_:maxLength:)`](./outputstream/write%28_,maxlength%29.md) method, providing a reference to the raw bytes to be written, and the maximum number of bytes to write.
 
-The following example uses a timer to wait for the private `canWrite` property to become true. Once this is the case, the code creates a string representing the current date and converts it to raw bytes. The listing then calls [`write(_:maxLength:)`](outputstream/write(_:maxlength:).md) to send these bytes to the output stream. Because this output stream is bound to an input stream, the upload task can then automatically read these bytes from the input stream and send them to the destination URL.
+The following example uses a timer to wait for the private `canWrite` property to become true. Once this is the case, the code creates a string representing the current date and converts it to raw bytes. The listing then calls [`write(_:maxLength:)`](./outputstream/write%28_,maxlength%29.md) to send these bytes to the output stream. Because this output stream is bound to an input stream, the upload task can then automatically read these bytes from the input stream and send them to the destination URL.
 
 Creating a timer to write to the output stream when the stream has space available
 
@@ -147,15 +148,16 @@ timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) {
 
 > 💡 **Tip**:  If the data you want to stream is coming from an asynchronous process, like callbacks from a media capture device, you still have to wait for the output stream to be ready before you write to it. In these situations, you can use a circular buffer to hold your data until the stream is ready to accept it.
 
-Once you write to the output stream, you can’t write again until your [`StreamDelegate`](streamdelegate.md) receives a new [`hasSpaceAvailable`](stream/event/hasspaceavailable.md) event. This example enforces this constraint by setting the class’ `canWrite` property to `false`. It will be reset to `true` when a new [`hasSpaceAvailable`](stream/event/hasspaceavailable.md) event is received by the output stream’s delegate, as shown earlier in `Handling StreamDelegate events`.
+Once you write to the output stream, you can’t write again until your [`StreamDelegate`](./streamdelegate.md) receives a new [`hasSpaceAvailable`](./stream/event/hasspaceavailable.md) event. This example enforces this constraint by setting the class’ `canWrite` property to `false`. It will be reset to `true` when a new [`hasSpaceAvailable`](./stream/event/hasspaceavailable.md) event is received by the output stream’s delegate, as shown earlier in `Handling StreamDelegate events`.
 
 ## See Also
 
-- [Building a resumable upload server with SwiftNIO](building-a-resumable-upload-server-with-swiftnio.md)
+### Uploading
+- [Building a resumable upload server with SwiftNIO](./building-a-resumable-upload-server-with-swiftnio.md)
   Support HTTP resumable upload protocol in SwiftNIO by translating resumable uploads to regular uploads.
-- [Uploading data to a website](uploading-data-to-a-website.md)
+- [Uploading data to a website](./uploading-data-to-a-website.md)
   Post data from your app to servers.
-- [Pausing and resuming uploads](pausing-and-resuming-uploads.md)
+- [Pausing and resuming uploads](./pausing-and-resuming-uploads.md)
   Pause and resume an upload without starting over, even when the connection is interrupted.
 
 

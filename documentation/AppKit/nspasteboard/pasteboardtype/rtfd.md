@@ -1,7 +1,8 @@
 # rtfd
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 RTFD formatted file contents.
 
@@ -14,41 +15,46 @@ RTFD formatted file contents.
 static let rtfd: NSPasteboard.PasteboardType
 ```
 
+```c
+extern NSPasteboardType const NSPasteboardTypeRTFD;
+```
+
 #### Discussion
 
-In macOS 10.6 and later, use [`rtfd`](nspasteboard/pasteboardtype/rtfd.md) instead.
+In macOS 10.6 and later, use [`rtfd`](./rtfd.md) instead.
 
 ## See Also
 
-- [static let URL: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/url.md)
+### Pasteboard Types
+- [static let URL: NSPasteboard.PasteboardType](./url.md)
   URL data for one file or resource.
-- [static let collaborationMetadata: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/collaborationmetadata.md)
+- [static let collaborationMetadata: NSPasteboard.PasteboardType](./collaborationmetadata.md)
   An object you use for conveying data during a collaboration.
-- [static let color: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/color.md)
+- [static let color: NSPasteboard.PasteboardType](./color.md)
   Color data.
-- [static let fileContents: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/filecontents.md)
+- [static let fileContents: NSPasteboard.PasteboardType](./filecontents.md)
   A representation of a file’s contents.
-- [static let fileURL: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/fileurl.md)
+- [static let fileURL: NSPasteboard.PasteboardType](./fileurl.md)
   A file URL.
-- [static let findPanelSearchOptions: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/findpanelsearchoptions.md)
+- [static let findPanelSearchOptions: NSPasteboard.PasteboardType](./findpanelsearchoptions.md)
   Type for the find panel metadata property list.
-- [static let font: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/font.md)
+- [static let font: NSPasteboard.PasteboardType](./font.md)
   Font and character information.
-- [static let html: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/html.md)
+- [static let html: NSPasteboard.PasteboardType](./html.md)
   Type for HTML content.
-- [static let multipleTextSelection: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/multipletextselection.md)
+- [static let multipleTextSelection: NSPasteboard.PasteboardType](./multipletextselection.md)
   Multiple text selection.
-- [static let pdf: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/pdf.md)
+- [static let pdf: NSPasteboard.PasteboardType](./pdf.md)
   PDF data.
-- [static let png: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/png.md)
+- [static let png: NSPasteboard.PasteboardType](./png.md)
   PNG image data.
-- [static let rtf: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/rtf.md)
+- [static let rtf: NSPasteboard.PasteboardType](./rtf.md)
   Rich Text Format (RTF) data.
-- [static let ruler: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/ruler.md)
+- [static let ruler: NSPasteboard.PasteboardType](./ruler.md)
   Paragraph formatting information.
-- [static let sound: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/sound.md)
+- [static let sound: NSPasteboard.PasteboardType](./sound.md)
   Sound data.
-- [static let string: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/string.md)
+- [static let string: NSPasteboard.PasteboardType](./string.md)
   String data.
 
 

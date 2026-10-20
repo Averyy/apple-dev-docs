@@ -1,7 +1,8 @@
 # Estimator
 
 **Framework**: Create ML Components  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An estimator that creates a transformer by fitting to a data set.
 
@@ -23,74 +24,75 @@ protocol Estimator<Transformer>
 ## Topics
 
 ### Getting the properties
-- [associatedtype Transformer : Transformer](estimator/transformer.md)
+- [associatedtype Transformer : Transformer](./estimator/transformer.md)
   The transformer type created by this estimator.
 ### Appending
-- [func appending(_:)](estimator/appending(_:).md)
+- [func appending(_:)](./estimator/appending%28_%29.md)
   Composes this estimator with another estimator.
 ### Encoding and decoding
-- [func encode(Self.Transformer, to: inout any EstimatorEncoder) throws](estimator/encode(_:to:).md)
+- [func encode(Self.Transformer, to: inout any EstimatorEncoder) throws](./estimator/encode%28_,to%29.md)
   Encodes a fitted transformer.
-- [func decode(from: inout any EstimatorDecoder) throws -> Self.Transformer](estimator/decode(from:).md)
+- [func decode(from: inout any EstimatorDecoder) throws -> Self.Transformer](./estimator/decode%28from%29.md)
   Decodes a previously fitted transformer.
 ### Reading and writing
-- [func read(from: URL) throws -> Self.Transformer](estimator/read(from:).md)
+- [func read(from: URL) throws -> Self.Transformer](./estimator/read%28from%29.md)
   Reads the encoded transformer from a file.
-- [func write(Self.Transformer, to: URL, overwrite: Bool) throws](estimator/write(_:to:overwrite:).md)
+- [func write(Self.Transformer, to: URL, overwrite: Bool) throws](./estimator/write%28_,to,overwrite%29.md)
   Writes the encoded transformer to a file.
 ### Fitting and adapting
-- [func adaptedAsSupervised<Annotation>(annotationType: Annotation.Type) -> EstimatorToSupervisedAdaptor<Self, Annotation>](estimator/adaptedassupervised(annotationtype:).md)
+- [func adaptedAsSupervised<Annotation>(annotationType: Annotation.Type) -> EstimatorToSupervisedAdaptor<Self, Annotation>](./estimator/adaptedassupervised%28annotationtype%29.md)
   Exposes this estimator as a supervised estimator.
-- [func adaptedAsTemporal() -> EstimatorToTemporalAdaptor<Self>](estimator/adaptedastemporal.md)
+- [func adaptedAsTemporal() -> EstimatorToTemporalAdaptor<Self>](./estimator/adaptedastemporal%28%29.md)
   Exposes this estimator as a temporal estimator.
-- [func fitted<S>(to: S, eventHandler: EventHandler?) async throws -> Self.Transformer](estimator/fitted(to:eventhandler:).md)
+- [func fitted<S>(to: S, eventHandler: EventHandler?) async throws -> Self.Transformer](./estimator/fitted%28to,eventhandler%29.md)
   Fits a transformer to a sequence of examples.
-- [func fitted<S>(to: S) async throws -> Self.Transformer](estimator/fitted(to:).md)
+- [func fitted<S>(to: S) async throws -> Self.Transformer](./estimator/fitted%28to%29.md)
 
 ## Relationships
 
 ### Inherited By
-- [UpdatableEstimator](updatableestimator.md)
+- [UpdatableEstimator](./updatableestimator.md)
 ### Conforming Types
-- [CategoricalImputer](categoricalimputer.md)
-- [MaxAbsScaler](maxabsscaler.md)
-- [MinMaxScaler](minmaxscaler.md)
-- [NormalizationScaler](normalizationscaler.md)
-- [NumericImputer](numericimputer.md)
-- [OneHotEncoder](onehotencoder.md)
-- [OrdinalEncoder](ordinalencoder.md)
-- [PreprocessingEstimator](preprocessingestimator.md)
-- [PreprocessingUpdatableEstimator](preprocessingupdatableestimator.md)
-- [RobustScaler](robustscaler.md)
-- [StandardScaler](standardscaler.md)
-- [TransformerToEstimatorAdaptor](transformertoestimatoradaptor.md)
-- [TransformerToUpdatableEstimatorAdaptor](transformertoupdatableestimatoradaptor.md)
+- [CategoricalImputer](./categoricalimputer.md)
+- [MaxAbsScaler](./maxabsscaler.md)
+- [MinMaxScaler](./minmaxscaler.md)
+- [NormalizationScaler](./normalizationscaler.md)
+- [NumericImputer](./numericimputer.md)
+- [OneHotEncoder](./onehotencoder.md)
+- [OrdinalEncoder](./ordinalencoder.md)
+- [PreprocessingEstimator](./preprocessingestimator.md)
+- [PreprocessingUpdatableEstimator](./preprocessingupdatableestimator.md)
+- [RobustScaler](./robustscaler.md)
+- [StandardScaler](./standardscaler.md)
+- [TransformerToEstimatorAdaptor](./transformertoestimatoradaptor.md)
+- [TransformerToUpdatableEstimatorAdaptor](./transformertoupdatableestimatoradaptor.md)
 
 ## See Also
 
-- [protocol Transformer](transformer.md)
+### Protocols
+- [protocol Transformer](./transformer.md)
   A transformer that takes an input and produces an output.
-- [protocol TemporalTransformer](temporaltransformer.md)
+- [protocol TemporalTransformer](./temporaltransformer.md)
   A transformer that takes an asynchronous input sequence of temporal features and produces an asynchronous output  sequence.
-- [protocol RandomTransformer](randomtransformer.md)
+- [protocol RandomTransformer](./randomtransformer.md)
   A transformer that takes an input and a random number generator and produces a randomized output.
-- [protocol TemporalEstimator](temporalestimator.md)
+- [protocol TemporalEstimator](./temporalestimator.md)
   An estimator that creates a transformer by fitting to a sequence of temporal features.
-- [protocol SupervisedEstimator](supervisedestimator.md)
+- [protocol SupervisedEstimator](./supervisedestimator.md)
   An estimator that creates a transformer by fitting to a data set.
-- [protocol SupervisedTemporalEstimator](supervisedtemporalestimator.md)
+- [protocol SupervisedTemporalEstimator](./supervisedtemporalestimator.md)
   An estimator that creates a transformer by fitting to a sequence of annotated temporal features.
-- [protocol UpdatableEstimator](updatableestimator.md)
+- [protocol UpdatableEstimator](./updatableestimator.md)
   An estimator that can be incrementally updated.
-- [protocol UpdatableSupervisedEstimator](updatablesupervisedestimator.md)
+- [protocol UpdatableSupervisedEstimator](./updatablesupervisedestimator.md)
   A supervised estimator that can be incrementally updated.
-- [protocol UpdatableSupervisedTemporalEstimator](updatablesupervisedtemporalestimator.md)
+- [protocol UpdatableSupervisedTemporalEstimator](./updatablesupervisedtemporalestimator.md)
   A supervised temporal estimator that can be incrementally updated.
-- [protocol UpdatableSupervisedTabularEstimator](updatablesupervisedtabularestimator.md)
+- [protocol UpdatableSupervisedTabularEstimator](./updatablesupervisedtabularestimator.md)
   A supervised tabular estimator that can be incrementally updated.
-- [protocol UpdatableTemporalEstimator](updatabletemporalestimator.md)
+- [protocol UpdatableTemporalEstimator](./updatabletemporalestimator.md)
   A temporal estimator that can be incrementally updated.
-- [protocol UpdatableTabularEstimator](updatabletabularestimator.md)
+- [protocol UpdatableTabularEstimator](./updatabletabularestimator.md)
   A tabular estimator that can be incrementally updated.
 
 

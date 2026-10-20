@@ -1,7 +1,8 @@
 # setContentScrollView(_:for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the scroll view that bars observe for the specified edge.
 
@@ -18,22 +19,27 @@ Sets the scroll view that bars observe for the specified edge.
 func setContentScrollView(_ scrollView: UIScrollView?, for edge: NSDirectionalRectEdge)
 ```
 
+```objc
+- (void) setContentScrollView:(UIScrollView *) scrollView forEdge:(NSDirectionalRectEdge) edge;
+```
+
 #### Discussion
 
 Toolbars, navigation bars, and tab bars adjust their appearance when the edge of a scroll view’s content aligns with the edge of the bar. The view controller identifies a scroll view to observe by analyzing the view hierarchy to select a scroll view. If the view hierarchy is complex, the view controller might not select the appropriate scroll view to observe. Use this method to indicate a specific scroll view for the view controller to observe.
 
-To disable the scroll edge appearance for one or more edges, override [`contentScrollView(for:)`](uiviewcontroller/contentscrollview(for:).md).
+To disable the scroll edge appearance for one or more edges, override [`contentScrollView(for:)`](./contentscrollview%28for%29.md).
 
 ## Parameters
 
 - `scrollView`: The scroll view to observe. If `nil`, the view controller determines a scroll view automatically.
-- `edge`: The edge to observe for scroll view content alignment. Pass [`top`](nsdirectionalrectedge/top.md) or [`bottom`](nsdirectionalrectedge/bottom.md) to set the scroll view for a specific edge, or pass [`all`](nsdirectionalrectedge/all.md) to set the scroll view for all edges.
+- `edge`: The edge to observe for scroll view content alignment. Pass [`top`](../nsdirectionalrectedge/top.md) or [`bottom`](../nsdirectionalrectedge/bottom.md) to set the scroll view for a specific edge, or pass [`all`](../nsdirectionalrectedge/all.md) to set the scroll view for all edges.
 
 ## See Also
 
-- [func setContentScrollView(UIScrollView?)](uiviewcontroller/setcontentscrollview(_:).md)
+### Working with scrolling content
+- [func setContentScrollView(UIScrollView?)](./setcontentscrollview%28_%29.md)
   Sets the scroll view that bars observe for all edges of the view.
-- [func contentScrollView(for: NSDirectionalRectEdge) -> UIScrollView?](uiviewcontroller/contentscrollview(for:).md)
+- [func contentScrollView(for: NSDirectionalRectEdge) -> UIScrollView?](./contentscrollview%28for%29.md)
   Returns the scroll view the view controller observes for the specified edge.
 
 

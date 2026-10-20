@@ -1,7 +1,8 @@
 # automaticTransitionToImmersive
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The expanded experience automatic transition behavior for the immersive experience.
 
@@ -16,7 +17,8 @@ var automaticTransitionToImmersive: AVExperienceController.ExpandedConfiguration
 
 ## See Also
 
-- [AVExperienceController.ExpandedConfiguration.AutomaticTransitionToImmersive](avexperiencecontroller/expandedconfiguration/automatictransitiontoimmersive-swift.enum.md)
+### Configuring automatic immersive transitions
+- [AVExperienceController.ExpandedConfiguration.AutomaticTransitionToImmersive](./automatictransitiontoimmersive-swift.enum.md)
   The expanded experience automatic transition behavior into the immersive experience.
 
 

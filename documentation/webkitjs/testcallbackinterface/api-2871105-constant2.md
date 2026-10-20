@@ -8,13 +8,14 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short CONSTANT2;
 ```
 
 ## See Also
 
-- [CONSTANT1](testcallbackinterface/2871184-constant1.md)
+### Miscellaneous
+- [CONSTANT1](./api-2871184-constant1.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # ApplePayShippingMethodSelectedEvent
 
 **Framework**: Apple Pay on the Web  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An event object that contains the shipping method.
 
@@ -11,27 +12,28 @@ An event object that contains the shipping method.
 
 ## Declaration
 
-```swift
+```
 interface ApplePayShippingMethodSelectedEvent
 ```
 
 #### Overview
 
-The event handler [`onshippingmethodselected`](applepaysession/onshippingmethodselected.md) receives this event object when the user selects a shipping method.
+The event handler [`onshippingmethodselected`](./applepaysession/onshippingmethodselected.md) receives this event object when the user selects a shipping method.
 
 ## Topics
 
 ### Shipping method properties
-- [shippingMethod](applepayshippingmethodselectedevent/shippingmethod.md)
+- [shippingMethod](./applepayshippingmethodselectedevent/shippingmethod.md)
   The shipping method selected by the user.
 
 ## See Also
 
-- [onshippingmethodselected](applepaysession/onshippingmethodselected.md)
+### Handling shipping method updates
+- [onshippingmethodselected](./applepaysession/onshippingmethodselected.md)
   An event handler to call when the user selects a shipping method.
-- [completeShippingMethodSelection](applepaysession/completeshippingmethodselection.md)
+- [completeShippingMethodSelection](./applepaysession/completeshippingmethodselection.md)
   Completes the selection of a shipping method with an update.
-- [ApplePayShippingMethodUpdate](applepayshippingmethodupdate.md)
+- [ApplePayShippingMethodUpdate](./applepayshippingmethodupdate.md)
   Updated transaction details that result from a change in shipping method.
 
 

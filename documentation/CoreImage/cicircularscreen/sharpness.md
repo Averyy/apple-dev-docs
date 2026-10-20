@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The sharpness of the circles.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ The sharpness of the circles.
 var sharpness: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float sharpness;
+```
+
 ## See Also
 
-- [var center: CGPoint](cicircularscreen/center.md)
+### Instance Properties
+- [var center: CGPoint](./center.md)
   The x and y position to use as the center of the circular screen pattern.
-- [var inputImage: CIImage?](cicircularscreen/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var width: Float](cicircularscreen/width.md)
+- [var width: Float](./width.md)
   The distance between each circle in the pattern.
 
 

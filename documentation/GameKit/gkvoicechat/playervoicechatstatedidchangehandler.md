@@ -1,17 +1,20 @@
 # playerVoiceChatStateDidChangeHandler
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A method that handles when a player’s voice chat changes state.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 8.0+ - Deprecated in 18.0
+- iPadOS 8.0+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.10+ - Deprecated in 15.0
+- tvOS 9.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+
+> **Deprecated**: No longer supported
 
 ## Declaration
 
@@ -19,9 +22,21 @@ A method that handles when a player’s voice chat changes state.
 var playerVoiceChatStateDidChangeHandler: (GKPlayer, GKVoiceChat.PlayerState) -> Void { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy) void (^)(GKPlayer *, enum GKVoiceChatPlayerState) playerVoiceChatStateDidChangeHandler;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy) void (^)(GKPlayer *, enum GKVoiceChatPlayerState) playerVoiceChatStateDidChangeHandler;
+```
+
 ## Mentions
 
-- [Adding voice chat to multiplayer games](adding-voice-chat-to-multiplayer-games.md)
+- [Adding voice chat to multiplayer games](../adding-voice-chat-to-multiplayer-games.md)
 
 #### Discussion
 
@@ -34,7 +49,8 @@ The handler receives the following parameters:
 
 ## See Also
 
-- [GKVoiceChat.PlayerState](gkvoicechat/playerstate.md)
+### Receiving Updates About Other Participants
+- [GKVoiceChat.PlayerState](./playerstate.md)
   The state of a player in a voice chat.
 
 

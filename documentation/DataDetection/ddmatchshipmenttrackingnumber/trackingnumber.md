@@ -1,7 +1,8 @@
 # trackingNumber
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that represents a carrier’s tracking identifier for a parcel.
 
@@ -20,9 +21,14 @@ A string that represents a carrier’s tracking identifier for a parcel.
 var trackingNumber: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * trackingNumber;
+```
+
 ## See Also
 
-- [var carrier: String](ddmatchshipmenttrackingnumber/carrier.md)
+### Getting tracking information
+- [var carrier: String](./carrier.md)
   The name of a parcel carrier.
 
 

@@ -1,7 +1,8 @@
 # requiresPrevColorTexture
 
 **Framework**: MetalFX  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the frame interpolator requires the client to provide a previous color texture.
 
@@ -18,11 +19,15 @@ A Boolean value that indicates whether the frame interpolator requires the clien
 var requiresPrevColorTexture: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) BOOL requiresPrevColorTexture;
+```
+
 #### Discussion
 
 When this property is YES (the default), you must assign a valid texture to the interpolator’s `prevColorTexture` property before encoding. When NO, the frame interpolator internally manages the previous color data and `prevColorTexture` may be nil.
 
-This property’s default value is [`true`](https://developer.apple.com/documentation/swift/true).
+This property’s default value is [`true`](../../Swift/true.md).
 
 
 ---

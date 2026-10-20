@@ -1,7 +1,8 @@
 # sliceTensor(_:dimension:start:length:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a slice operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a slice operation and returns the result tensor.
 
 ```swift
 func sliceTensor(_ tensor: MPSGraphTensor, dimension dimensionIndex: Int, start: Int, length: Int, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) sliceTensor:(MPSGraphTensor *) tensor dimension:(NSUInteger) dimensionIndex start:(NSInteger) start length:(NSInteger) length name:(NSString *) name;
 ```
 
 #### Return Value

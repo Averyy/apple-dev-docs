@@ -1,7 +1,8 @@
 # USDPlayer.DeformationData.BlendShapeData.Update
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Delta update carrying only the blend shape fields that changed since the last frame.
 
@@ -22,16 +23,16 @@ struct Update
 ## Topics
 
 ### Instance Properties
-- [let positionOffsets: [[SIMD3<Float>]]?](usdplayer/deformationdata/blendshapedata/update/positionoffsets.md)
+- [let positionOffsets: [[SIMD3<Float>]]?](./update/positionoffsets.md)
   Changed position delta offsets.
-- [let weights: [Float]?](usdplayer/deformationdata/blendshapedata/update/weights.md)
+- [let weights: [Float]?](./update/weights.md)
   Changed blend shape weights.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

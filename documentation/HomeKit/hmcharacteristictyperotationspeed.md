@@ -1,7 +1,8 @@
 # HMCharacteristicTypeRotationSpeed
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The rotation speed of an accessory like a fan.
 
@@ -19,19 +20,24 @@ The rotation speed of an accessory like a fan.
 let HMCharacteristicTypeRotationSpeed: String
 ```
 
+```c
+extern NSString * const HMCharacteristicTypeRotationSpeed;
+```
+
 #### Discussion
 
 The corresponding value is a floating point number representing the percentage of the maximum speed.
 
 ## See Also
 
-- [let HMCharacteristicTypeCurrentFanState: String](hmcharacteristictypecurrentfanstate.md)
+### Fans
+- [let HMCharacteristicTypeCurrentFanState: String](./hmcharacteristictypecurrentfanstate.md)
   The current state of a fan.
-- [let HMCharacteristicTypeTargetFanState: String](hmcharacteristictypetargetfanstate.md)
+- [let HMCharacteristicTypeTargetFanState: String](./hmcharacteristictypetargetfanstate.md)
   The target state of a fan.
-- [let HMCharacteristicTypeRotationDirection: String](hmcharacteristictyperotationdirection.md)
+- [let HMCharacteristicTypeRotationDirection: String](./hmcharacteristictyperotationdirection.md)
   The rotation direction of an accessory like a fan.
-- [let HMCharacteristicTypeSwingMode: String](hmcharacteristictypeswingmode.md)
+- [let HMCharacteristicTypeSwingMode: String](./hmcharacteristictypeswingmode.md)
   An indicator of whether a fan swings back and forth during operation.
 
 

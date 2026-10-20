@@ -1,7 +1,8 @@
 # RemoveApplicationCommand.Command
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to remove an app.
 
@@ -16,15 +17,21 @@ The command to remove an app.
 
 ## Declaration
 
-```swift
+```
 object RemoveApplicationCommand.Command
 ```
 
 ## Properties
 
-- `Identifier` (string) *(required)*: The bundle identifier of the managed app. > ❗ **Important**:  For a watchOS app, the identifier needs to be the watch’s bundle identifier, which differs from the main bundle identifier for the iPhone the watch pairs with. Obtain the watch’s bundle identifier for an app with a watch bundle, in the `watchBundleId` key that’s part of the Content Metadata query. For more information on this query, see [`Getting app and book information (Legacy)`](getting-app-and-book-information-legacy.md).
+- `Identifier` (string) *(required)*: The bundle identifier of the managed app.
+
+  > ❗ **Important**:  For a watchOS app, the identifier needs to be the watch’s bundle identifier, which differs from the main bundle identifier for the iPhone the watch pairs with. Obtain the watch’s bundle identifier for an app with a watch bundle, in the `watchBundleId` key that’s part of the Content Metadata query. For more information on this query, see [Getting app and book information (Legacy)](../getting-app-and-book-information-legacy.md).
 - `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+
+  **Default**: `false`
 - `RequestType` (string) *(required)*: The request type for this command.
+
+  **Allowed Values**: `RemoveApplication`
 
 
 ---

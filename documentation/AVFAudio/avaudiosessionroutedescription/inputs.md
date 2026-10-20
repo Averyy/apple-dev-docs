@@ -1,7 +1,8 @@
 # inputs
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of audio input port descriptions.
 
@@ -19,13 +20,18 @@ An array of audio input port descriptions.
 var inputs: [AVAudioSessionPortDescription] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVAudioSessionPortDescription *> * inputs;
+```
+
 #### Discussion
 
-This property contains an array of [`AVAudioSessionPortDescription`](avaudiosessionportdescription.md) objects representing the audio inputs associated with the current audio route for a session.
+This property contains an array of [`AVAudioSessionPortDescription`](../avaudiosessionportdescription.md) objects representing the audio inputs associated with the current audio route for a session.
 
 ## See Also
 
-- [var outputs: [AVAudioSessionPortDescription]](avaudiosessionroutedescription/outputs.md)
+### Getting the route’s ports
+- [var outputs: [AVAudioSessionPortDescription]](./outputs.md)
   An array of audio output port descriptions.
 
 

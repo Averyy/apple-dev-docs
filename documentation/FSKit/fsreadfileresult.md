@@ -1,7 +1,8 @@
 # FSReadFileResult
 
 **Framework**: FSKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The result of a read-file call.
 
@@ -14,39 +15,44 @@ The result of a read-file call.
 class FSReadFileResult
 ```
 
+```objc
+@interface FSReadFileResult : FSVolumeHandlerResult
+```
+
 #### Overview
 
-Use this type in your implementation of [`read(from:at:length:into:replyHandler:)`](fsvolume/readwritehandler/read(from:at:length:into:replyhandler:).md).
+Use this type in your implementation of [`read(from:at:length:into:replyHandler:)`](./fsvolume/readwritehandler/read%28from,at,length,into,replyhandler%29.md).
 
 ## Topics
 
 ### Creating a read-file result
-- [init?(bytesRead: Int, itemAttributes: FSItem.Attributes)](fsreadfileresult/init(bytesread:itemattributes:).md)
+- [init?(bytesRead: Int, itemAttributes: FSItem.Attributes)](./fsreadfileresult/init%28bytesread,itemattributes%29.md)
   Creates a result for a file-reading operation.
-- [FSItem.Attributes](fsitem/attributes.md)
+- [FSItem.Attributes](./fsitem/attributes.md)
   Attributes of an item, such as size, creation and modification times, and user and group identifiers.
 
 ## Relationships
 
 ### Inherits From
-- [FSVolumeHandlerResult](fsvolumehandlerresult.md)
+- [FSVolumeHandlerResult](./fsvolumehandlerresult.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func read(from: FSItem, at: off_t, length: Int, into: FSMutableFileDataBuffer, replyHandler: (FSReadFileResult?, (any Error)?) -> Void)](fsvolume/readwritehandler/read(from:at:length:into:replyhandler:).md)
+### Reading and writing
+- [func read(from: FSItem, at: off_t, length: Int, into: FSMutableFileDataBuffer, replyHandler: (FSReadFileResult?, (any Error)?) -> Void)](./fsvolume/readwritehandler/read%28from,at,length,into,replyhandler%29.md)
   Reads the contents of the given file item.
-- [class FSMutableFileDataBuffer](fsmutablefiledatabuffer.md)
+- [class FSMutableFileDataBuffer](./fsmutablefiledatabuffer.md)
   A wrapper object for a data buffer.
-- [func write(contents: Data, to: FSItem, at: off_t, replyHandler: (FSWriteFileResult?, (any Error)?) -> Void)](fsvolume/readwritehandler/write(contents:to:at:replyhandler:).md)
+- [func write(contents: Data, to: FSItem, at: off_t, replyHandler: (FSWriteFileResult?, (any Error)?) -> Void)](./fsvolume/readwritehandler/write%28contents,to,at,replyhandler%29.md)
   Writes contents to the given file item.
-- [class FSWriteFileResult](fswritefileresult.md)
+- [class FSWriteFileResult](./fswritefileresult.md)
   The result of a read-file call.
 
 

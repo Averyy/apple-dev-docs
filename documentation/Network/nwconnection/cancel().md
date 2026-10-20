@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels the connection and gracefully disconnects any established network protocols.
 
@@ -22,9 +23,10 @@ final func cancel()
 
 ## See Also
 
-- [func forceCancel()](nwconnection/forcecancel.md)
+### Canceling Connections
+- [func forceCancel()](./forcecancel%28%29.md)
   Cancels the connection and immediately disconnects any established network protocols.
-- [func cancelCurrentEndpoint()](nwconnection/cancelcurrentendpoint.md)
+- [func cancelCurrentEndpoint()](./cancelcurrentendpoint%28%29.md)
   Causes the current endpoint to be rejected, allowing the connection to try another resolved address.
 
 

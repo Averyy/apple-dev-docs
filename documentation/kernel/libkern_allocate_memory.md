@@ -1,7 +1,8 @@
 # libkern::allocate_memory
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - DriverKit 21.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```cpp
 const allocate_memory_t libkern::allocate_memory;
 ```
 

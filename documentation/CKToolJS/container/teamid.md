@@ -1,7 +1,8 @@
 # teamId
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the developer team who owns the container.
 
@@ -10,7 +11,7 @@ The identifier of the developer team who owns the container.
 
 ## Declaration
 
-```swift
+```
 attribute string teamId;
 ```
 

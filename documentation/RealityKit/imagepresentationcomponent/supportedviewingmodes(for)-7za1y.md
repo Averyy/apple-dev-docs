@@ -1,7 +1,8 @@
 # supportedViewingModes(for:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The viewing modes supported by the provided image source.
 
@@ -14,6 +15,12 @@ The viewing modes supported by the provided image source.
 static func supportedViewingModes(for imageSource: CGImageSource) -> Set<ImagePresentationComponent.ViewingMode>
 ```
 
+**Other overloads**:
+
+```swift
+static func supportedViewingModes(for spatial3DImage: ImagePresentationComponent.Spatial3DImage) -> Set<ImagePresentationComponent.ViewingMode>
+```
+
 #### Discussion
 
 > **Note**: This method returns the viewing modes that will be supported if you initialize an `ImagePresentationComponent` with this image source directly via `init(imageSource: CGImageSource)`.
@@ -22,13 +29,14 @@ The returned set of viewing modes will never include the `.spatial3D` or `.spati
 
 ## See Also
 
-- [ImagePresentationComponent.ViewingMode](imagepresentationcomponent/viewingmode-swift.struct.md)
+### Setting and discovering viewing modes
+- [ImagePresentationComponent.ViewingMode](./viewingmode-swift.struct.md)
   Image content’s rendering mode.
-- [var viewingMode: ImagePresentationComponent.ViewingMode](imagepresentationcomponent/viewingmode-swift.property.md)
+- [var viewingMode: ImagePresentationComponent.ViewingMode](./viewingmode-swift.property.md)
   The currently active viewing mode of the presented image.
-- [var desiredViewingMode: ImagePresentationComponent.ViewingMode](imagepresentationcomponent/desiredviewingmode.md)
+- [var desiredViewingMode: ImagePresentationComponent.ViewingMode](./desiredviewingmode.md)
   The user-selected preferred content viewing mode.
-- [var availableViewingModes: Set<ImagePresentationComponent.ViewingMode>](imagepresentationcomponent/availableviewingmodes.md)
+- [var availableViewingModes: Set<ImagePresentationComponent.ViewingMode>](./availableviewingmodes.md)
   The currently valid viewing modes for the image being presented.
 
 

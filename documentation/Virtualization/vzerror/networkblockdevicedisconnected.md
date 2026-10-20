@@ -1,7 +1,8 @@
 # networkBlockDeviceDisconnected
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns a value that indicates the connection state of the network block device.
 
@@ -16,7 +17,8 @@ static var networkBlockDeviceDisconnected: VZError.Code { get }
 
 ## See Also
 
-- [static var networkBlockDeviceNegotiationFailed: VZError.Code](vzerror/networkblockdevicenegotiationfailed.md)
+### Type properties
+- [static var networkBlockDeviceNegotiationFailed: VZError.Code](./networkblockdevicenegotiationfailed.md)
   Returns a value that indicates whether the network block device negotiation failed.
 
 

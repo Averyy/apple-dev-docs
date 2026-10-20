@@ -1,7 +1,8 @@
 # previewController(_:transitionImageFor:contentRect:)
 
 **Framework**: Quick Look  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the system is about to present the preview full screen or dismiss it, and asks for information to provide a smooth transition when zooming.
 
@@ -17,9 +18,13 @@ Tells the delegate that the system is about to present the preview full screen o
 optional func previewController(_ controller: QLPreviewController, transitionImageFor item: any QLPreviewItem, contentRect: UnsafeMutablePointer<CGRect>) -> UIImage?
 ```
 
+```objc
+- (UIImage *) previewController:(QLPreviewController *) controller transitionImageForPreviewItem:(id<QLPreviewItem>) item contentRect:(CGRect *) contentRect;
+```
+
 #### Return Value
 
-A [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) object that the preview controller cross-fades with when zooming.
+A [`UIImage`](../../UIKit/uiimage.md) object that the preview controller cross-fades with when zooming.
 
 #### Discussion
 
@@ -27,19 +32,20 @@ A [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) object th
 
 ## Parameters
 
-- `controller`: The [`QLPreviewController`](qlpreviewcontroller.md) that’s requesting the image for the preview item.
+- `controller`: The [`QLPreviewController`](../qlpreviewcontroller.md) that’s requesting the image for the preview item.
 - `item`: The item to preview or dismiss.
 - `contentRect`: The rectangle within the image that represents the document content. For icons, for example, the document content rectangle is typically smaller than the icon rectangle itself.
 
 ## See Also
 
-- [func previewController(QLPreviewController, frameFor: any QLPreviewItem, inSourceView: AutoreleasingUnsafeMutablePointer<UIView?>) -> CGRect](qlpreviewcontrollerdelegate/previewcontroller(_:framefor:insourceview:).md)
+### Responding to preview requests
+- [func previewController(QLPreviewController, frameFor: any QLPreviewItem, inSourceView: AutoreleasingUnsafeMutablePointer<UIView?>) -> CGRect](./previewcontroller%28_,framefor,insourceview%29.md)
   Tells the delegate that the system is about to present the preview full screen or dismiss it, and asks for information to provide a zoom effect.
-- [func previewController(QLPreviewController, transitionViewFor: any QLPreviewItem) -> UIView?](qlpreviewcontrollerdelegate/previewcontroller(_:transitionviewfor:).md)
+- [func previewController(QLPreviewController, transitionViewFor: any QLPreviewItem) -> UIView?](./previewcontroller%28_,transitionviewfor%29.md)
   Tells the delegate that the system is about to present the preview full screen or dismiss it, and asks for information to provide a smooth transition when zooming.
-- [func previewControllerWillDismiss(QLPreviewController)](qlpreviewcontrollerdelegate/previewcontrollerwilldismiss(_:).md)
+- [func previewControllerWillDismiss(QLPreviewController)](./previewcontrollerwilldismiss%28_%29.md)
   Tells the delegate that the preview is about to close.
-- [func previewControllerDidDismiss(QLPreviewController)](qlpreviewcontrollerdelegate/previewcontrollerdiddismiss(_:).md)
+- [func previewControllerDidDismiss(QLPreviewController)](./previewcontrollerdiddismiss%28_%29.md)
   Tells the delegate that the preview was closed.
 
 

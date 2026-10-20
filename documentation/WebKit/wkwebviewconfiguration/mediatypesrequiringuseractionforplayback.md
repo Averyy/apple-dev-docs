@@ -1,7 +1,8 @@
 # mediaTypesRequiringUserActionForPlayback
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The media types that require a user gesture to begin playing.
 
@@ -18,19 +19,24 @@ The media types that require a user gesture to begin playing.
 var mediaTypesRequiringUserActionForPlayback: WKAudiovisualMediaTypes { get set }
 ```
 
+```objc
+@property (nonatomic) WKAudiovisualMediaTypes mediaTypesRequiringUserActionForPlayback;
+```
+
 #### Discussion
 
-Use [`WKAudiovisualMediaTypeNone`](wkaudiovisualmediatypes/wkaudiovisualmediatypenone.md) to indicate that no user gestures are required to begin playing media.
+Use [`WKAudiovisualMediaTypeNone`](../wkaudiovisualmediatypes/wkaudiovisualmediatypenone.md) to indicate that no user gestures are required to begin playing media.
 
 ## See Also
 
-- [var allowsInlineMediaPlayback: Bool](wkwebviewconfiguration/allowsinlinemediaplayback.md)
+### Setting media playback preferences
+- [var allowsInlineMediaPlayback: Bool](./allowsinlinemediaplayback.md)
   A Boolean value that indicates whether HTML5 videos play inline or use the native full-screen controller.
-- [var allowsAirPlayForMediaPlayback: Bool](wkwebviewconfiguration/allowsairplayformediaplayback.md)
+- [var allowsAirPlayForMediaPlayback: Bool](./allowsairplayformediaplayback.md)
   A Boolean value that indicates whether the web view allows media playback over AirPlay.
-- [var allowsPictureInPictureMediaPlayback: Bool](wkwebviewconfiguration/allowspictureinpicturemediaplayback.md)
+- [var allowsPictureInPictureMediaPlayback: Bool](./allowspictureinpicturemediaplayback.md)
   A Boolean value that indicates whether HTML5 videos can play Picture in Picture.
-- [struct WKAudiovisualMediaTypes](wkaudiovisualmediatypes.md)
+- [struct WKAudiovisualMediaTypes](../wkaudiovisualmediatypes.md)
   The media types that require a user gesture to begin playing.
 
 

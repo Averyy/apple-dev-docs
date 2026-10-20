@@ -1,7 +1,8 @@
 # applicationMusicPlayer
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the application music player.
 
@@ -18,6 +19,10 @@ Returns the application music player.
 class var applicationMusicPlayer: MPMusicPlayerController { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) MPMusicPlayerController * applicationMusicPlayer;
+```
+
 #### Return Value
 
 The application music player.
@@ -28,9 +33,10 @@ The application music player plays music locally within your app. The music play
 
 ## See Also
 
-- [class var applicationQueuePlayer: MPMusicPlayerApplicationController](mpmusicplayercontroller/applicationqueueplayer.md)
+### Getting a music player
+- [class var applicationQueuePlayer: MPMusicPlayerApplicationController](./applicationqueueplayer.md)
   Returns the application queue music player.
-- [class var systemMusicPlayer: any MPMusicPlayerController & MPSystemMusicPlayerController](mpmusicplayercontroller/systemmusicplayer.md)
+- [class var systemMusicPlayer: any MPMusicPlayerController & MPSystemMusicPlayerController](./systemmusicplayer.md)
   Returns the system music player, which controls the Music app’s state.
 
 

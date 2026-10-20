@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The stable identity of the entity associated with this instance.
@@ -20,6 +21,11 @@ The stable identity of the entity associated with this instance.
 ```swift
 var id: Self.ID { get }
 ```
+
+## Default Implementations
+
+### Identifiable Implementations
+- [var id: ObjectIdentifier](./id-97pgf.md)
 
 
 ---

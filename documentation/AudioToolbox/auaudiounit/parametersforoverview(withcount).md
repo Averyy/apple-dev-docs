@@ -1,7 +1,8 @@
 # parametersForOverview(withCount:)
 
 **Framework**: Audio Toolbox  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the audio unit’s most important parameters.
 
@@ -17,6 +18,10 @@ Returns the audio unit’s most important parameters.
 
 ```swift
 func parametersForOverview(withCount count: Int) -> [NSNumber]
+```
+
+```objc
+- (NSArray<NSNumber *> *) parametersForOverviewWithCount:(NSInteger) count;
 ```
 
 #### Return Value
@@ -35,9 +40,10 @@ This version 3 method is partially bridged to the version 2 `kAudioUnitProperty_
 
 ## See Also
 
-- [var parameterTree: AUParameterTree?](auaudiounit/parametertree.md)
+### Querying Parameters
+- [var parameterTree: AUParameterTree?](./parametertree.md)
   An audio unit’s parameters, organized in a tree hierarchy.
-- [var allParameterValues: Bool](auaudiounit/allparametervalues.md)
+- [var allParameterValues: Bool](./allparametervalues.md)
   Special read-only property for KVO.
 
 

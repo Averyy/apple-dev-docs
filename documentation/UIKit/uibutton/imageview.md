@@ -1,7 +1,8 @@
 # imageView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The button’s image view.
 
@@ -9,13 +10,17 @@ The button’s image view.
 - iOS 3.0+
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var imageView: UIImageView? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) UIImageView * imageView;
 ```
 
 #### Discussion
@@ -31,23 +36,24 @@ The `imageView` property returns a value even if the button has not been display
 
 ## See Also
 
-- [var buttonType: UIButton.ButtonType](uibutton/buttontype-swift.property.md)
+### Getting the current state
+- [var buttonType: UIButton.ButtonType](./buttontype-swift.property.md)
   The button type.
-- [var currentTitle: String?](uibutton/currenttitle.md)
+- [var currentTitle: String?](./currenttitle.md)
   The current title that is displayed on the button.
-- [var currentAttributedTitle: NSAttributedString?](uibutton/currentattributedtitle.md)
+- [var currentAttributedTitle: NSAttributedString?](./currentattributedtitle.md)
   The current styled title that is displayed on the button.
-- [var currentTitleColor: UIColor](uibutton/currenttitlecolor.md)
+- [var currentTitleColor: UIColor](./currenttitlecolor.md)
   The color used to display the title.
-- [var currentTitleShadowColor: UIColor?](uibutton/currenttitleshadowcolor.md)
+- [var currentTitleShadowColor: UIColor?](./currenttitleshadowcolor.md)
   The color of the title’s shadow.
-- [var currentImage: UIImage?](uibutton/currentimage.md)
+- [var currentImage: UIImage?](./currentimage.md)
   The current image displayed on the button.
-- [var currentBackgroundImage: UIImage?](uibutton/currentbackgroundimage.md)
+- [var currentBackgroundImage: UIImage?](./currentbackgroundimage.md)
   The current background image displayed on the button.
-- [var currentPreferredSymbolConfiguration: UIImage.SymbolConfiguration?](uibutton/currentpreferredsymbolconfiguration.md)
+- [var currentPreferredSymbolConfiguration: UIImage.SymbolConfiguration?](./currentpreferredsymbolconfiguration.md)
   The current symbol size, style, and weight.
-- [var subtitleLabel: UILabel?](uibutton/subtitlelabel.md)
+- [var subtitleLabel: UILabel?](./subtitlelabel.md)
   The label that displays the text of the subtitle.
 
 

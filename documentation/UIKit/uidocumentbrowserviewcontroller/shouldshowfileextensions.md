@@ -1,7 +1,8 @@
 # shouldShowFileExtensions
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the browser always shows file extensions.
 
@@ -17,25 +18,30 @@ A Boolean value that determines whether the browser always shows file extensions
 var shouldShowFileExtensions: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL shouldShowFileExtensions;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../Swift/false.md).
 
 > **Note**:  This property has no effect in Mac apps built with Mac Catalyst.
 
 ## See Also
 
-- [var browserUserInterfaceStyle: UIDocumentBrowserViewController.BrowserUserInterfaceStyle](uidocumentbrowserviewcontroller/browseruserinterfacestyle-swift.property.md)
+### Modifying the browser’s appearance
+- [var browserUserInterfaceStyle: UIDocumentBrowserViewController.BrowserUserInterfaceStyle](./browseruserinterfacestyle-swift.property.md)
   The visual style for the document browser.
-- [UIDocumentBrowserViewController.BrowserUserInterfaceStyle](uidocumentbrowserviewcontroller/browseruserinterfacestyle-swift.enum.md)
+- [UIDocumentBrowserViewController.BrowserUserInterfaceStyle](./browseruserinterfacestyle-swift.enum.md)
   Styles that define the document browser’s appearance.
-- [var additionalLeadingNavigationBarButtonItems: [UIBarButtonItem]](uidocumentbrowserviewcontroller/additionalleadingnavigationbarbuttonitems.md)
+- [var additionalLeadingNavigationBarButtonItems: [UIBarButtonItem]](./additionalleadingnavigationbarbuttonitems.md)
   Additional bar button items that the document browser displays on the leading side of its navigation bar.
-- [var additionalTrailingNavigationBarButtonItems: [UIBarButtonItem]](uidocumentbrowserviewcontroller/additionaltrailingnavigationbarbuttonitems.md)
+- [var additionalTrailingNavigationBarButtonItems: [UIBarButtonItem]](./additionaltrailingnavigationbarbuttonitems.md)
   Additional bar button items that the document browser displays on the trailing side of its navigation bar.
-- [var localizedCreateDocumentActionTitle: String](uidocumentbrowserviewcontroller/localizedcreatedocumentactiontitle.md)
+- [var localizedCreateDocumentActionTitle: String](./localizedcreatedocumentactiontitle.md)
   The title for the Create Document button.
-- [var defaultDocumentAspectRatio: CGFloat](uidocumentbrowserviewcontroller/defaultdocumentaspectratio.md)
+- [var defaultDocumentAspectRatio: CGFloat](./defaultdocumentaspectratio.md)
   The aspect ratio for the Create Document button.
 
 

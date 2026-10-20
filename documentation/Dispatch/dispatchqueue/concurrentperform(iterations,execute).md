@@ -1,18 +1,19 @@
 # concurrentPerform(iterations:execute:)
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Submits a single block to the dispatch queue and causes the block to be executed the specified number of times.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -28,7 +29,9 @@ This method implements an efficient parallel for-loop. The dispatch queue execut
 ## Parameters
 
 - `iterations`: The number of times to execute the block. Higher iteration values give the system the ability to balance more efficiently across multiple cores. To get the maximum benefit of this function, configure the number of iterations to be at least three times the number of available cores.
-- `work`: The block to execute in parallel. This block has no return value and takes the following parameter: - **iteration**: The current iteration index.
+- `work`: The block to execute in parallel. This block has no return value and takes the following parameter:
+
+  - **iteration**: The current iteration index.
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: Network Extension  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 A delegate method that the framework invokes when the provider reports an incoming call.
@@ -18,14 +19,18 @@ A delegate method that the framework invokes when the provider reports an incomi
 func appPushManager(_ manager: NEAppPushManager, didReceiveIncomingCallWithUserInfo userInfo: [AnyHashable : Any] = [:])
 ```
 
+```objc
+- (void) appPushManager:(NEAppPushManager *) manager didReceiveIncomingCallWithUserInfo:(NSDictionary *) userInfo;
+```
+
 #### Discussion
 
-The framwork calls this method on your delegate when the provider calls the [`reportIncomingCall(userInfo:)`](neapppushprovider/reportincomingcall(userinfo:).md) method.
+The framwork calls this method on your delegate when the provider calls the [`reportIncomingCall(userInfo:)`](../neapppushprovider/reportincomingcall%28userinfo%29.md) method.
 
 ## Parameters
 
 - `manager`: The local push manager that receives the call.
-- `userInfo`: A dictionary of custom information that the provider supplied in its call to [`reportIncomingCall(userInfo:)`](neapppushprovider/reportincomingcall(userinfo:).md).
+- `userInfo`: A dictionary of custom information that the provider supplied in its call to [`reportIncomingCall(userInfo:)`](../neapppushprovider/reportincomingcall%28userinfo%29.md).
 
 
 ---

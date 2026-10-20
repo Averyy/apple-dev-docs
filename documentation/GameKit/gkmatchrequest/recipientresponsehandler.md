@@ -1,7 +1,8 @@
 # recipientResponseHandler
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A method that handles when a player responds to an invitation to join a match.
 
@@ -20,6 +21,10 @@ A method that handles when a player responds to an invitation to join a match.
 var recipientResponseHandler: ((GKPlayer, GKInviteRecipientResponse) -> Void)? { get set }
 ```
 
+```objc
+@property (copy, nullable) void (^recipientResponseHandler)(GKPlayer *player, GKInviteRecipientResponse response);
+```
+
 #### Discussion
 
 The block receives the following parameters:
@@ -31,11 +36,12 @@ GameKit calls this handler once for each player who receives an invitation to jo
 
 ## See Also
 
-- [var inviteMessage: String?](gkmatchrequest/invitemessage.md)
+### Inviting players
+- [var inviteMessage: String?](./invitemessage.md)
   The message sent to other players when the local player invites them to join a match.
-- [var recipients: [GKPlayer]?](gkmatchrequest/recipients.md)
+- [var recipients: [GKPlayer]?](./recipients.md)
   The players to invite to the match.
-- [enum GKInviteRecipientResponse](gkinviterecipientresponse.md)
+- [enum GKInviteRecipientResponse](../gkinviterecipientresponse.md)
   A player’s response to an invitation to join a match.
 
 

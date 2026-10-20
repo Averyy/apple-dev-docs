@@ -1,7 +1,8 @@
 # GameCenterAchievementImageCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a achievement resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a achievement resource.
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementImageCreateRequest.Data.Attributes
 ```
 
@@ -21,7 +22,8 @@ object GameCenterAchievementImageCreateRequest.Data.Attributes
 
 ## See Also
 
-- [object GameCenterAchievementImageCreateRequest.Data.Relationships](gamecenterachievementimagecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object GameCenterAchievementImageCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

@@ -1,7 +1,8 @@
 # NSDraggingSession
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that encapsulates a drag-and-drop action.
 
@@ -14,52 +15,57 @@ An object that encapsulates a drag-and-drop action.
 class NSDraggingSession
 ```
 
+```objc
+@interface NSDraggingSession : NSObject
+```
+
 #### Overview
 
-You start a new dragging session by calling [`beginDraggingSession(with:event:source:)`](nsview/begindraggingsession(with:event:source:).md) or [`beginDraggingSession(items:gesture:source:)`](nsview/begindraggingsession(items:gesture:source:).md) on an `NSView`. The method immediately returns, and the actual drag begins at the next turn of the run loop.
+You start a new dragging session by calling [`beginDraggingSession(with:event:source:)`](./nsview/begindraggingsession%28with,event,source%29.md) or [`beginDraggingSession(items:gesture:source:)`](./nsview/begindraggingsession%28items,gesture,source%29.md) on an `NSView`. The method immediately returns, and the actual drag begins at the next turn of the run loop.
 
 ## Topics
 
 ### Dragging Pasteboard
-- [var draggingPasteboard: NSPasteboard](nsdraggingsession/draggingpasteboard.md)
+- [var draggingPasteboard: NSPasteboard](./nsdraggingsession/draggingpasteboard.md)
   Returns the pasteboard object that contains the data being dragged.
 ### Dragging Visual Representation
-- [var animatesToStartingPositionsOnCancelOrFail: Bool](nsdraggingsession/animatestostartingpositionsoncancelorfail.md)
+- [var animatesToStartingPositionsOnCancelOrFail: Bool](./nsdraggingsession/animatestostartingpositionsoncancelorfail.md)
   Controls whether the dragging image animates back to its starting point on a cancelled or failed drag.
-- [var draggingFormation: NSDraggingFormation](nsdraggingsession/draggingformation.md)
+- [var draggingFormation: NSDraggingFormation](./nsdraggingsession/draggingformation.md)
   Controls the dragging formation when the drag is not over the source or a valid destination.
 ### Identifying the Dragging Session
-- [var draggingSequenceNumber: Int](nsdraggingsession/draggingsequencenumber.md)
+- [var draggingSequenceNumber: Int](./nsdraggingsession/draggingsequencenumber.md)
   Returns a number that uniquely identifies the dragging session.
 ### Enumerating Dragging Items
-- [func enumerateDraggingItems(options: NSDraggingItemEnumerationOptions, for: NSView?, classes: [AnyClass], searchOptions: [NSPasteboard.ReadingOptionKey : Any], using: (NSDraggingItem, Int, UnsafeMutablePointer<ObjCBool>) -> Void)](nsdraggingsession/enumeratedraggingitems(options:for:classes:searchoptions:using:).md)
+- [func enumerateDraggingItems(options: NSDraggingItemEnumerationOptions, for: NSView?, classes: [AnyClass], searchOptions: [NSPasteboard.ReadingOptionKey : Any], using: (NSDraggingItem, Int, UnsafeMutablePointer<ObjCBool>) -> Void)](./nsdraggingsession/enumeratedraggingitems%28options,for,classes,searchoptions,using%29.md)
   Enumerates through each dragging item.
 ### Dragging Session Location
-- [var draggingLocation: NSPoint](nsdraggingsession/dragginglocation.md)
+- [var draggingLocation: NSPoint](./nsdraggingsession/dragginglocation.md)
   The current cursor location of the drag in screen coordinates.
 ### Dragging Item Location
-- [var draggingLeaderIndex: Int](nsdraggingsession/draggingleaderindex.md)
+- [var draggingLeaderIndex: Int](./nsdraggingsession/draggingleaderindex.md)
   The index of the dragging item under the cursor.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol NSDraggingSource](nsdraggingsource.md)
+### Drag Sources
+- [protocol NSDraggingSource](./nsdraggingsource.md)
   A set of methods that are implemented by the source object in a dragging session.
-- [class NSDraggingItem](nsdraggingitem.md)
+- [class NSDraggingItem](./nsdraggingitem.md)
   A single dragged item within a dragging session.
-- [class NSDraggingImageComponent](nsdraggingimagecomponent.md)
+- [class NSDraggingImageComponent](./nsdraggingimagecomponent.md)
   A single object in a dragging item.
 
 

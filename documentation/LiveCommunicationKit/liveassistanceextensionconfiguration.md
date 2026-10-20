@@ -1,7 +1,8 @@
 # LiveAssistanceExtensionConfiguration
 
 **Framework**: LiveCommunicationKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface type required to conform to the ExtensionFoundation framework protocols.
 
@@ -26,15 +27,16 @@ Your app doesn’t interact directly with this type.
 ## Relationships
 
 ### Inherits From
-- [AppExtensionConfiguration](../extensionfoundation/appextensionconfiguration.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppExtensionConfiguration](../ExtensionFoundation/appextensionconfiguration.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct LiveAssistanceRequest](liveassistancerequest.md)
+### Working with supporting types
+- [struct LiveAssistanceRequest](./liveassistancerequest.md)
   A pending interpreter request, sent from the framework to the extension.
-- [enum LiveAssistanceRequestError](liveassistancerequesterror.md)
+- [enum LiveAssistanceRequestError](./liveassistancerequesterror.md)
   An error thrown by a live assistance extension when handling a request.
 
 

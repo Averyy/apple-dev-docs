@@ -1,7 +1,8 @@
 # CKNotification.NotificationType.database
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A notification that CloudKit generates when the contents of a database change.
 
@@ -20,13 +21,18 @@ A notification that CloudKit generates when the contents of a database change.
 case database
 ```
 
+```c
+CKNotificationTypeDatabase
+```
+
 ## See Also
 
-- [CKNotification.NotificationType.query](cknotification/notificationtype-swift.enum/query.md)
+### Notification Types
+- [CKNotification.NotificationType.query](./query.md)
   A notification that CloudKit generates from a query subscription’s predicate.
-- [CKNotification.NotificationType.recordZone](cknotification/notificationtype-swift.enum/recordzone.md)
+- [CKNotification.NotificationType.recordZone](./recordzone.md)
   A notification that CloudKit generates when the contents of a record zone change.
-- [CKNotification.NotificationType.readNotification](cknotification/notificationtype-swift.enum/readnotification.md)
+- [CKNotification.NotificationType.readNotification](./readnotification.md)
   A notification that your app marks as read.
 
 

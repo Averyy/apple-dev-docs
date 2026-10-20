@@ -1,7 +1,8 @@
 # CVReadOnlyPixelBuffer
 
 **Framework**: Core Video  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 CVReadOnlyPixelBuffer provides an immutable view of the pixel data held by the pixel buffer.
 
@@ -23,40 +24,41 @@ final class CVReadOnlyPixelBuffer
 ## Topics
 
 ### Initializers
-- [init(consuming CVMutablePixelBuffer)](cvreadonlypixelbuffer/init(_:).md)
+- [init(consuming CVMutablePixelBuffer)](./cvreadonlypixelbuffer/init%28_%29.md)
   Initialize a read-only pixel buffer by consuming a mutable pixel buffer value.
-- [init(unsafeBuffer: sending CVPixelBuffer)](cvreadonlypixelbuffer/init(unsafebuffer:).md)
+- [init(unsafeBuffer: sending CVPixelBuffer)](./cvreadonlypixelbuffer/init%28unsafebuffer%29.md)
   Initialize a read-only pixel buffer by transferring existing CVPixelBuffer value.
 ### Instance Methods
-- [func withUnsafeBuffer<R>((CVPixelBuffer) throws -> sending R) rethrows -> sending R](cvreadonlypixelbuffer/withunsafebuffer(_:).md)
+- [func withUnsafeBuffer<R>((CVPixelBuffer) throws -> sending R) rethrows -> sending R](./cvreadonlypixelbuffer/withunsafebuffer%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [CMSampleBuffer.Content](../coremedia/cmsamplebuffer/content.md)
-- [CMSampleBuffer.ContentWithFormatDescription](../coremedia/cmsamplebuffer/contentwithformatdescription.md)
-- [CVBufferRepresentable](cvbufferrepresentable.md)
-- [CVImageBufferRepresentable](cvimagebufferrepresentable.md)
-- [CVPixelBufferRepresentable](cvpixelbufferrepresentable.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [InferenceValue.ViewRepresentable](../coreai/inferencevalue/viewrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CMSampleBuffer.Content](../CoreMedia/cmsamplebuffer/content.md)
+- [CMSampleBuffer.ContentWithFormatDescription](../CoreMedia/cmsamplebuffer/contentwithformatdescription.md)
+- [CVBufferRepresentable](./cvbufferrepresentable.md)
+- [CVImageBufferRepresentable](./cvimagebufferrepresentable.md)
+- [CVPixelBufferRepresentable](./cvpixelbufferrepresentable.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [InferenceValue.ViewRepresentable](../CoreAI/inferencevalue/viewrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CVMutablePixelBuffer](cvmutablepixelbuffer.md)
+### Swift overlay types
+- [struct CVMutablePixelBuffer](./cvmutablepixelbuffer.md)
   CVMutablePixelBuffer provides read-write access to the pixel data and attachments.
-- [struct CVPixelBufferAttributes](cvpixelbufferattributes.md)
+- [struct CVPixelBufferAttributes](./cvpixelbufferattributes.md)
   A partial set of pixel buffer creation attributes. This struct is useful for conveying partial requirements for pixel buffers to clients. This struct makes all properties of `CVPixelBuffer/CreationAttributes` optional.
-- [struct CVPixelBufferCreationAttributes](cvpixelbuffercreationattributes.md)
+- [struct CVPixelBufferCreationAttributes](./cvpixelbuffercreationattributes.md)
   Attributes needed for creating a pixel buffer.
-- [struct CVPixelBufferPadding](cvpixelbufferpadding.md)
+- [struct CVPixelBufferPadding](./cvpixelbufferpadding.md)
   Padding pixels around the CVPixelBuffer
-- [struct CVPixelBufferPlaneProperties](cvpixelbufferplaneproperties.md)
+- [struct CVPixelBufferPlaneProperties](./cvpixelbufferplaneproperties.md)
   Properties of a plane of pixels in pixel buffer
-- [struct CVProResRawMetadata](cvproresrawmetadata.md)
+- [struct CVProResRawMetadata](./cvproresrawmetadata.md)
   Metadata associated with ProRes RAW images.
 
 

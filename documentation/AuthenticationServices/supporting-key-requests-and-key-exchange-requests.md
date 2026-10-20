@@ -1,6 +1,7 @@
 # Supporting key requests and key exchange requests
 
-**Framework**: Authentication Services
+**Framework**: Authentication Services  
+**Role**: Article
 
 Support the Platform SSO 2.0 protocol for encryption and decryption operations.
 
@@ -10,7 +11,7 @@ Key requests and key exchange requests require the SSO extension and the server 
 
 These requests are similar to login requests. They start with a server nonce request, sign the JSON Web Token (JWT) using the device signing key, and require an encrypted response that uses the device encryption key.
 
-##### Request the Key
+##### Request the key
 
 The system uses a key request to ask the server to provision an `EC256` key for the supplied purpose. The server needs to issue a public key in a certificate so that normal keychain operations can find it and use the key. In macOS, encryption operations for login and unlock use the public key. The server can also return a context that’s stored with the key and sent with all key exchange requests. The use of the context isn’t required, but the server can encrypt it to store key material for the key, for example, to rotate encryption values. Storage of the context doesn’t include additional encryption.
 
@@ -18,7 +19,7 @@ After user registration completes, macOS sends the key request. However, macOS c
 
 The following flowchart provides a high-level overview of the key request flow:
 
-![A flowchart shows a Device icon and Identity provider icon at the top of a looping process that starts with requesting and receiving a server nonce value and then JSON Object Signing and Encryption (JOSE) key request, followed by decrypting and validating the key response, saving the key and key context, and binding the key to the user account. ](/images/com.apple.authenticationservices/media-4294341@2x.png)
+![A flowchart shows a Device icon and Identity provider icon at the top of a looping process that starts with requesting and receiving a server nonce value and then JSON Object Signing and Encryption (JOSE) key request, followed by decrypting and validating the key response, saving the key and key context, and binding the key to the user account. ](https://developer.apple.com/tutorials/images/com.apple.authenticationservices/media-4294341@2x.png)
 
 The request is a JSON Object Signing and Encryption object (JOSE) that’s formatted per RFC 7519 and signed with the `DeviceSigningKey` and `ES256` per RFC 7515.
 
@@ -29,8 +30,8 @@ The following table specifies the header parameters for a key request:
 | `typ` | `platformsso-key-request+jwt` | Required. |
 | `alg` | `ES256` | Required. The signing algorithm, only `ES256` is supported. |
 | `kid` | The base-64 encoded SHA256 hash of the ANSI X9.63 formatted public key for the signing key | Required. |
-| `x5c` | The base-64 encoded device signing certificate from [`saveCertificate(_:keyType:)`](asauthorizationproviderextensionloginmanager/savecertificate(_:keytype:).md) | Optional: The value is base-64 encoded per RFC 7517. |
-| [`setCustomKeyRequestHeaderClaims(_:)`](asauthorizationproviderextensionloginconfiguration/setcustomkeyrequestheaderclaims(_:).md) |  |  |
+| `x5c` | The base-64 encoded device signing certificate from [`saveCertificate(_:keyType:)`](./asauthorizationproviderextensionloginmanager/savecertificate%28_,keytype%29.md) | Optional: The value is base-64 encoded per RFC 7517. |
+| [`setCustomKeyRequestHeaderClaims(_:)`](./asauthorizationproviderextensionloginconfiguration/setcustomkeyrequestheaderclaims%28_%29.md) |  |  |
 
 The following table specifies the body parameters for a key request:
 
@@ -39,14 +40,14 @@ The following table specifies the body parameters for a key request:
 | `version` | 1.0 | Required. |
 | `request_type` | key_request | Required. |
 | `key_purpose` | user_unlock | Required. |
-| `aud` | [`audience`](asauthorizationproviderextensionloginconfiguration/audience.md) | Required. The identity provider (IdP) needs to verify this value to ensure that the assertion was created for them. |
-| `iss` | [`clientID`](asauthorizationproviderextensionloginconfiguration/clientid.md) | Required. Per RFC 7523 Section 3. |
+| `aud` | [`audience`](./asauthorizationproviderextensionloginconfiguration/audience.md) | Required. The identity provider (IdP) needs to verify this value to ensure that the assertion was created for them. |
+| `iss` | [`clientID`](./asauthorizationproviderextensionloginconfiguration/clientid.md) | Required. Per RFC 7523 Section 3. |
 | `iat` | The current time | Required. The IdP needs to verify this value. |
 | `exp` | 5 minutes from now | Required. The IdP needs to verify this value. |
 | `nonce` | A nonce value | Required. A unique nonce value for this request. |
-| [`serverNonceClaimName`](asauthorizationproviderextensionloginconfiguration/servernonceclaimname.md) or `request_nonce` | The value returned from the nonce request | Required. The key name is either the [`serverNonceClaimName`](asauthorizationproviderextensionloginconfiguration/servernonceclaimname.md) or the default value `request_nonce`. |
-| `username` | [`loginUserName`](asauthorizationproviderextensionuserloginconfiguration/loginusername.md) | Required. The login user name. If not set, the system uses the local account name. |
-| `sub` | [`loginUserName`](asauthorizationproviderextensionuserloginconfiguration/loginusername.md) | Required. Per RFC 7523 Section 3. |
+| [`serverNonceClaimName`](./asauthorizationproviderextensionloginconfiguration/servernonceclaimname.md) or `request_nonce` | The value returned from the nonce request | Required. The key name is either the [`serverNonceClaimName`](./asauthorizationproviderextensionloginconfiguration/servernonceclaimname.md) or the default value `request_nonce`. |
+| `username` | [`loginUserName`](./asauthorizationproviderextensionuserloginconfiguration/loginusername.md) | Required. The login user name. If not set, the system uses the local account name. |
+| `sub` | [`loginUserName`](./asauthorizationproviderextensionuserloginconfiguration/loginusername.md) | Required. Per RFC 7523 Section 3. |
 | `refresh_token` | The current refresh token | Required. |
 | `loginConfiguration.customKeyRequestBodyClaims` |  | Optional. If present, adds the key value pairs to the assertion. |
 
@@ -78,14 +79,14 @@ The following code provides an example of a key request:
 }.[Signature]
 ```
 
-The key network request is an HTTP POST to the [`keyEndpointURL`](asauthorizationproviderextensionloginconfiguration/keyendpointurl.md) that’s formatted per RFC 7523 and includes the following parameters:
+The key network request is an HTTP POST to the [`keyEndpointURL`](./asauthorizationproviderextensionloginconfiguration/keyendpointurl.md) that’s formatted per RFC 7523 and includes the following parameters:
 
 | Key | Value | Notes |
 | --- | --- | --- |
 | `platform_sso_version` | `2.0` | Required. The version of the login protocol. |
 | `grant_type` | `urn:ietf:params:oauth:grant-type:jwt-bearer` | Required. The assertion type. |
-| [`customRequestJWTParameterName`](asauthorizationproviderextensionloginconfiguration/customrequestjwtparametername.md) or assertion | The base-64 URL encoded signed key request | Required. |
-| [`customKeyRequestValues`](asauthorizationproviderextensionloginconfiguration/customkeyrequestvalues.md) |  | Optional. If present, adds the key value pairs to the key request. |
+| [`customRequestJWTParameterName`](./asauthorizationproviderextensionloginconfiguration/customrequestjwtparametername.md) or assertion | The base-64 URL encoded signed key request | Required. |
+| [`customKeyRequestValues`](./asauthorizationproviderextensionloginconfiguration/customkeyrequestvalues.md) |  | Optional. If present, adds the key value pairs to the key request. |
 
 The following code provides an example of a key network request:
 
@@ -98,7 +99,7 @@ client-request-id: DCAB01D3-B1FE-4E1C-802F-B3EBDCDF9E67
 platform_sso_version2.0&grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer&assertion=ewogI...HGuQg
 ```
 
-##### Create the Key Response Json Web Encryption Jwe
+##### Create the key response JSON Web Encryption (JWE)
 
 The response is a JWE that’s decrypted according to RFC 7516 Section 5.2 with JWE Compact Serialization.
 
@@ -152,13 +153,13 @@ The following code provides an example of a key response JWE body:
 }
 ```
 
-##### Request the Key Exchange
+##### Request the key exchange
 
 The system uses the key exchange request when using the keys to decrypt data. Typically there are two or three requests occuring at the same time, depending on the number of decryption calls and required checks. These calls need to return quickly because the user is waiting for them to complete.
 
 The following graph provides a high-level overview of the key exchange flow:
 
-![A flowchart shows a Device icon, Token extension icon, and Identity provider icon at the top of a looping process that starts with obtaining a certificate with the user public key and performing Diffie-Hellman (DH) key exchange, followed by decrypting data and obtaining a server nonce to exchange the key and return it to the device.](/images/com.apple.authenticationservices/media-4294343@2x.png)
+![A flowchart shows a Device icon, Token extension icon, and Identity provider icon at the top of a looping process that starts with obtaining a certificate with the user public key and performing Diffie-Hellman (DH) key exchange, followed by decrypting data and obtaining a server nonce to exchange the key and return it to the device.](https://developer.apple.com/tutorials/images/com.apple.authenticationservices/media-4294343@2x.png)
 
 The key exchange request is a JOSE that’s formatted per RFC 7519 and signed with the `DeviceSigningKey` and `ES256` per RFC 7515.
 
@@ -169,7 +170,7 @@ The following table specifies the header parameters for a key exchange request:
 | `typ` | `platformsso-key-request+jwt` | Required. |
 | `alg` | `ES256` | Required. The signing algorithm. The system only supports `ES256`. |
 | `kid` | The base-64 encoded SHA256 hash of the ANSI X9.63 formatted public key for the signing key | Required. |
-| `x5c` | The base-64 encoded device signing certificate from [`saveCertificate(_:keyType:)`](asauthorizationproviderextensionloginmanager/savecertificate(_:keytype:).md) | Optional. The value is base-64 encoded per RFC 7517. |
+| `x5c` | The base-64 encoded device signing certificate from [`saveCertificate(_:keyType:)`](./asauthorizationproviderextensionloginmanager/savecertificate%28_,keytype%29.md) | Optional. The value is base-64 encoded per RFC 7517. |
 | `loginConfiguration.customKeyExchangeRequestHeaderClaims` |  | Optional. If present, adds the key value pairs to the assertion. |
 
 The following table specifies the body parameters for a key exchange request:
@@ -179,14 +180,14 @@ The following table specifies the body parameters for a key exchange request:
 | `version` | `1.0` | Required. |
 | `request_type` | `key_exchange` | Required. |
 | `key_purpose` | `user_unlock` | Required. |
-| `aud` | [`audience`](asauthorizationproviderextensionloginconfiguration/audience.md) | Required. The identity provider (IdP) needs to verify the value to ensure that the assertion was created for them. |
-| `iss` | [`clientID`](asauthorizationproviderextensionloginconfiguration/clientid.md) | Required. Per RFC 7523 Section 3. |
+| `aud` | [`audience`](./asauthorizationproviderextensionloginconfiguration/audience.md) | Required. The identity provider (IdP) needs to verify the value to ensure that the assertion was created for them. |
+| `iss` | [`clientID`](./asauthorizationproviderextensionloginconfiguration/clientid.md) | Required. Per RFC 7523 Section 3. |
 | `iat` | The current time | Required. The identity provider (IdP) needs to verify the value. |
 | `exp` | 5 minutes from now | Required. The identity provider (IdP) needs to verify the value. |
 | `nonce` | A nonce value | Required. A unique nonce value for this request. |
-| [`serverNonceClaimName`](asauthorizationproviderextensionloginconfiguration/servernonceclaimname.md) or `request_nonce` | The value returned from the nonce request | Required. The key name is either the [`serverNonceClaimName`](asauthorizationproviderextensionloginconfiguration/servernonceclaimname.md) or the default value `request_nonce`. |
-| `username` | [`loginUserName`](asauthorizationproviderextensionuserloginconfiguration/loginusername.md) | Required. If not set, the system uses the local account name. |
-| `sub` | [`loginUserName`](asauthorizationproviderextensionuserloginconfiguration/loginusername.md) | Required. Per RFC 7523 Section 3. If not set, the system uses the local account name. |
+| [`serverNonceClaimName`](./asauthorizationproviderextensionloginconfiguration/servernonceclaimname.md) or `request_nonce` | The value returned from the nonce request | Required. The key name is either the [`serverNonceClaimName`](./asauthorizationproviderextensionloginconfiguration/servernonceclaimname.md) or the default value `request_nonce`. |
+| `username` | [`loginUserName`](./asauthorizationproviderextensionuserloginconfiguration/loginusername.md) | Required. If not set, the system uses the local account name. |
+| `sub` | [`loginUserName`](./asauthorizationproviderextensionuserloginconfiguration/loginusername.md) | Required. Per RFC 7523 Section 3. If not set, the system uses the local account name. |
 | `refresh_token` | The current refresh token | Required. |
 | `other_publickey` | The base-64 encoded other party public key | Required. |
 | `key_context` | The context for the key | Optional. |
@@ -222,14 +223,14 @@ The following code provides an example of a key exchange request:
 }.[Signature]
 ```
 
-The key exchange network request is an HTTP POST to the [`keyEndpointURL`](asauthorizationproviderextensionloginconfiguration/keyendpointurl.md) that’s formatted per RFC 7523 and includes the following parameters:
+The key exchange network request is an HTTP POST to the [`keyEndpointURL`](./asauthorizationproviderextensionloginconfiguration/keyendpointurl.md) that’s formatted per RFC 7523 and includes the following parameters:
 
 | Key | Value | Notes |
 | --- | --- | --- |
 | `platform_sso_version` | `2.0` | Required. The version of the login protocol. |
 | `grant_type` | `urn:ietf:params:oauth:grant-type:jwt-bearer` | Required. The assertion type. |
-| [`customRequestJWTParameterName`](asauthorizationproviderextensionloginconfiguration/customrequestjwtparametername.md) or `assertion` | The base-64 URL encoded signed key exchange request | Required. |
-| [`customKeyExchangeRequestValues`](asauthorizationproviderextensionloginconfiguration/customkeyexchangerequestvalues.md) |  | Optional. If present, adds the key value pairs to the key exchange request. |
+| [`customRequestJWTParameterName`](./asauthorizationproviderextensionloginconfiguration/customrequestjwtparametername.md) or `assertion` | The base-64 URL encoded signed key exchange request | Required. |
+| [`customKeyExchangeRequestValues`](./asauthorizationproviderextensionloginconfiguration/customkeyexchangerequestvalues.md) |  | Optional. If present, adds the key value pairs to the key exchange request. |
 
 The following code sample provides an example of a key exchange network request:
 
@@ -242,7 +243,7 @@ client-request-id: DCAB01D3-B1FE-4E1C-802F-B3EBDCDF9E67
 platform_sso_version=2.0&grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer&assertion=ewogIC...JmVhg
 ```
 
-##### Receive the Key Exchange Response Jwe
+##### Receive the key exchange response JWE
 
 The response is a JWE that’s decrypted according to RFC 7516 Section 5.2 with JWE Compact Serialization.
 
@@ -298,15 +299,16 @@ The following code provides an example of a key exchange response JWE body:
 
 ## See Also
 
-- [Performing a WS-Trust login request](performing-a-ws-trust-login-request.md)
+### Login request
+- [Performing a WS-Trust login request](./performing-a-ws-trust-login-request.md)
   Create a WS-Trust login request using the metadata exchange data (MEX) response.
-- [Creating an embedded assertion](creating-an-embedded-assertion.md)
+- [Creating an embedded assertion](./creating-an-embedded-assertion.md)
   Request an embedded assertion for login types that require a digital signature for authentication.
-- [Creating an encrypted embedded assertion](creating-an-encrypted-embedded-assertion.md)
+- [Creating an encrypted embedded assertion](./creating-an-encrypted-embedded-assertion.md)
   Request an encrypted embedded assertion for login types that require password encryption.
-- [Creating and validating a login request](creating-and-validating-a-login-request.md)
+- [Creating and validating a login request](./creating-and-validating-a-login-request.md)
   Create a signed JOSE login request.
-- [Creating a refresh request](creating-a-refresh-request.md)
+- [Creating a refresh request](./creating-a-refresh-request.md)
   Refresh a non-expired token instead of sending a new login request.
 
 

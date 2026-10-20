@@ -1,7 +1,8 @@
 # stop()
 
 **Framework**: XCTest  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops a test run.
 
@@ -11,15 +12,20 @@ Stops a test run.
 func stop()
 ```
 
+```objc
+- (void) stop;
+```
+
 #### Discussion
 
 This method must not be called unless the run has been started, and must not be called more than once.
 
 ## See Also
 
-- [func start()](xctestrun/start.md)
+### Performing Test Runs
+- [func start()](./start%28%29.md)
   Starts a test run.
-- [func record(XCTIssue)](xctestrun/record(_:).md)
+- [func record(XCTIssue)](./record%28_%29.md)
   Records an issue during test execution for the test run.
 
 

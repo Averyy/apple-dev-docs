@@ -1,7 +1,8 @@
 # VASReadResult.ReadEntry.Status.unsupportedApplicationVersion
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 15.4+
@@ -16,13 +17,14 @@ case unsupportedApplicationVersion
 
 ## See Also
 
-- [VASReadResult.ReadEntry.Status.success](vasreadresult/readentry/status-swift.enum/success.md)
-- [VASReadResult.ReadEntry.Status.incorrectData](vasreadresult/readentry/status-swift.enum/incorrectdata.md)
-- [VASReadResult.ReadEntry.Status.userInterventionRequired](vasreadresult/readentry/status-swift.enum/userinterventionrequired.md)
-- [VASReadResult.ReadEntry.Status.vasDataNotActivated](vasreadresult/readentry/status-swift.enum/vasdatanotactivated.md)
-- [VASReadResult.ReadEntry.Status.vasDataNotFound](vasreadresult/readentry/status-swift.enum/vasdatanotfound.md)
-- [VASReadResult.ReadEntry.Status.wrongCommandLength](vasreadresult/readentry/status-swift.enum/wrongcommandlength.md)
-- [VASReadResult.ReadEntry.Status.wrongP1P2](vasreadresult/readentry/status-swift.enum/wrongp1p2.md)
+### Getting the status
+- [VASReadResult.ReadEntry.Status.success](./success.md)
+- [VASReadResult.ReadEntry.Status.incorrectData](./incorrectdata.md)
+- [VASReadResult.ReadEntry.Status.userInterventionRequired](./userinterventionrequired.md)
+- [VASReadResult.ReadEntry.Status.vasDataNotActivated](./vasdatanotactivated.md)
+- [VASReadResult.ReadEntry.Status.vasDataNotFound](./vasdatanotfound.md)
+- [VASReadResult.ReadEntry.Status.wrongCommandLength](./wrongcommandlength.md)
+- [VASReadResult.ReadEntry.Status.wrongP1P2](./wrongp1p2.md)
 
 
 ---

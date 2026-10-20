@@ -1,7 +1,8 @@
 # MLActivityClassifier.DataSource.directoryWithDataAndAnnotation(at:annotationFileName:timeStampColumn:labelStartTimeColumn:labelEndTimeColumn:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An activity classifier data source that uses a directory that contains sensor data files and one annotation file.
 
@@ -16,7 +17,7 @@ case directoryWithDataAndAnnotation(at: URL, annotationFileName: String, timeSta
 
 #### Discussion
 
-Create a data source by gathering all activity data files, and one annotation file, into a directory. Pass that directory’s [`URL`](https://developer.apple.com/documentation/foundation/url) and the relevant column names of the annotation file to [`MLActivityClassifier.DataSource.directoryWithDataAndAnnotation(at:annotationFileName:timeStampColumn:labelStartTimeColumn:labelEndTimeColumn:)`](mlactivityclassifier/datasource/directorywithdataandannotation(at:annotationfilename:timestampcolumn:labelstarttimecolumn:labelendtimecolumn:).md).
+Create a data source by gathering all activity data files, and one annotation file, into a directory. Pass that directory’s [`URL`](../../../Foundation/url.md) and the relevant column names of the annotation file to [`MLActivityClassifier.DataSource.directoryWithDataAndAnnotation(at:annotationFileName:timeStampColumn:labelStartTimeColumn:labelEndTimeColumn:)`](./directorywithdataandannotation%28at,annotationfilename,timestampcolumn,labelstarttimecolumn,labelendtimecolumn%29.md).
 
 ## Parameters
 
@@ -28,7 +29,8 @@ Create a data source by gathering all activity data files, and one annotation fi
 
 ## See Also
 
-- [MLActivityClassifier.DataSource.labeledDirectories(at:)](mlactivityclassifier/datasource/labeleddirectories(at:).md)
+### Creating a data source
+- [MLActivityClassifier.DataSource.labeledDirectories(at:)](./labeleddirectories%28at%29.md)
   An activity classifier data source that uses a directory of directories that contain sensor data files.
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a value wrapping `value`.
 
@@ -21,11 +22,12 @@ init<T>(_ value: T) where T : USDValueProtocol
 
 ## Parameters
 
-- `value`: A value of any type that conforms to [`USDValueProtocol`](usdvalueprotocol.md).
+- `value`: A value of any type that conforms to [`USDValueProtocol`](../usdvalueprotocol.md).
 
 ## See Also
 
-- [init()](usdvalue/init.md)
+### Creating a value
+- [init()](./init%28%29.md)
   Creates an empty value.
 
 

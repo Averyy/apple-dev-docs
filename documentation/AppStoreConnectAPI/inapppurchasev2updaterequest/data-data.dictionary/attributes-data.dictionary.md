@@ -1,7 +1,8 @@
 # InAppPurchaseV2UpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an In-App Purchase v2 update request resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an In-App Purchase v2 update request resource.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseV2UpdateRequest.Data.Attributes
 ```
 

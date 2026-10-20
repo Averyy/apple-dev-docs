@@ -1,7 +1,8 @@
 # read(using:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the current per instance transform data, for GPU reading.
 

@@ -1,17 +1,22 @@
 # drawTitle(_:withFrame:in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the button’s title centered vertically in a specified rectangle.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func drawTitle(_ title: NSAttributedString, withFrame frame: NSRect, in controlView: NSView) -> NSRect
+```
+
+```objc
+- (NSRect) drawTitle:(NSAttributedString *) title withFrame:(NSRect) frame inView:(NSView *) controlView;
 ```
 
 #### Return Value
@@ -30,13 +35,15 @@ This method is called automatically when the button is redrawn; you should not c
 
 ## See Also
 
-- [var attributedTitle: NSAttributedString](nsbuttoncell/attributedtitle.md)
+### Related Documentation
+- [var attributedTitle: NSAttributedString](./attributedtitle.md)
   The title displayed by the button when it’s in its normal state as an attributed string.
-- [var alternateTitle: String](nsbuttoncell/alternatetitle.md)
+- [var alternateTitle: String](./alternatetitle.md)
   The string displayed by the button when it’s in its alternate state.
-- [func drawBezel(withFrame: NSRect, in: NSView)](nsbuttoncell/drawbezel(withframe:in:).md)
+### Drawing the Button Content
+- [func drawBezel(withFrame: NSRect, in: NSView)](./drawbezel%28withframe,in%29.md)
   Draws the border of the button using the current bezel style.
-- [func drawImage(NSImage, withFrame: NSRect, in: NSView)](nsbuttoncell/drawimage(_:withframe:in:).md)
+- [func drawImage(NSImage, withFrame: NSRect, in: NSView)](./drawimage%28_,withframe,in%29.md)
   Draws the image associated with the button’s current state.
 
 

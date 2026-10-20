@@ -1,7 +1,8 @@
 # AVAssetReaderAudioMixOutput
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that reads audio samples that result from mixing audio from one or more tracks.
 
@@ -19,6 +20,10 @@ An object that reads audio samples that result from mixing audio from one or mor
 class AVAssetReaderAudioMixOutput
 ```
 
+```objc
+@interface AVAssetReaderAudioMixOutput : AVAssetReaderOutput
+```
+
 #### Overview
 
 Read audio data that you mix from one or more asset tracks by adding an audio mix output to an asset reader. You can read the samples in their stored format or you can convert them to an alternative format.
@@ -26,48 +31,49 @@ Read audio data that you mix from one or more asset tracks by adding an audio mi
 ## Topics
 
 ### Creating an audio mix output
-- [init(audioTracks: [AVAssetTrack], audioSettings: [String : Any]?)](avassetreaderaudiomixoutput/init(audiotracks:audiosettings:).md)
+- [init(audioTracks: [AVAssetTrack], audioSettings: [String : Any]?)](./avassetreaderaudiomixoutput/init%28audiotracks,audiosettings%29.md)
   Creates an object that reads mixed audio from the specified audio tracks.
 ### Configuring audio settings
-- [var audioMix: AVAudioMix?](avassetreaderaudiomixoutput/audiomix.md)
+- [var audioMix: AVAudioMix?](./avassetreaderaudiomixoutput/audiomix.md)
   The audio mix to use with this output.
-- [var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm](avassetreaderaudiomixoutput/audiotimepitchalgorithm.md)
+- [var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm](./avassetreaderaudiomixoutput/audiotimepitchalgorithm.md)
   The processing algorithm to use for scaled audio edits.
 ### Inspecting an output
-- [var audioTracks: [AVAssetTrack]](avassetreaderaudiomixoutput/audiotracks.md)
+- [var audioTracks: [AVAssetTrack]](./avassetreaderaudiomixoutput/audiotracks.md)
   The tracks from which the output reads audio.
-- [var audioSettings: [String : Any]?](avassetreaderaudiomixoutput/audiosettings.md)
+- [var audioSettings: [String : Any]?](./avassetreaderaudiomixoutput/audiosettings.md)
   The audio settings that the output uses.
 
 ## Relationships
 
 ### Inherits From
-- [AVAssetReaderOutput](avassetreaderoutput.md)
+- [AVAssetReaderOutput](./avassetreaderoutput.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Reading multiview 3D video files](reading-multiview-3d-video-files.md)
+### Media reading
+- [Reading multiview 3D video files](./reading-multiview-3d-video-files.md)
   Render single images for the left eye and right eye from a multiview High Efficiency Video Coding format file by reading individual video frames.
-- [class AVAssetReader](avassetreader.md)
+- [class AVAssetReader](./avassetreader.md)
   An object that reads media data from an asset.
-- [class AVAssetReaderOutput](avassetreaderoutput.md)
+- [class AVAssetReaderOutput](./avassetreaderoutput.md)
   An abstract class that defines the interface to read media samples from an asset reader.
-- [class AVAssetReaderTrackOutput](avassetreadertrackoutput.md)
+- [class AVAssetReaderTrackOutput](./avassetreadertrackoutput.md)
   An object that reads media data from a single track of an asset.
-- [class AVAssetReaderVideoCompositionOutput](avassetreadervideocompositionoutput.md)
+- [class AVAssetReaderVideoCompositionOutput](./avassetreadervideocompositionoutput.md)
   An object that reads composited video frames from one or more tracks of an asset.
-- [class AVAssetReaderSampleReferenceOutput](avassetreadersamplereferenceoutput.md)
+- [class AVAssetReaderSampleReferenceOutput](./avassetreadersamplereferenceoutput.md)
   An object that reads sample references from an asset track.
-- [class AVAssetReaderOutputMetadataAdaptor](avassetreaderoutputmetadataadaptor.md)
+- [class AVAssetReaderOutputMetadataAdaptor](./avassetreaderoutputmetadataadaptor.md)
   An object that creates timed metadata group objects for an asset track.
 
 

@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Sound Analysis  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A prediction label that’s one of the classifications a sound classifier’s underlying model defines.
 
@@ -20,13 +21,18 @@ A prediction label that’s one of the classifications a sound classifier’s un
 var identifier: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * identifier;
+```
+
 #### Discussion
 
 An example `identifier` might be a string like `laughter` or `applause`*.* The sound classifier’s underlying model defines the possible string values, which are typically technical names that you don’t directly present in your app’s user interface.
 
 ## See Also
 
-- [var confidence: Double](snclassification/confidence.md)
+### Inspecting a Classification
+- [var confidence: Double](./confidence.md)
   The confidence value the model has in its prediction.
 
 

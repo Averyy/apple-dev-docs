@@ -1,7 +1,8 @@
 # WKSnapshotReason.complicationUpdate
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The app updated the complication timeline.
 
@@ -14,19 +15,24 @@ The app updated the complication timeline.
 case complicationUpdate
 ```
 
+```c
+WKSnapshotReasonComplicationUpdate
+```
+
 #### Discussion
 
 These snapshot refresh tasks are only triggered when the WatchKit extension has a complication on the current watch face.
 
 ## See Also
 
-- [WKSnapshotReason.appBackgrounded](wksnapshotreason/appbackgrounded.md)
+### Enumeration Cases
+- [WKSnapshotReason.appBackgrounded](./appbackgrounded.md)
   The app transitioned from the foreground to the background.
-- [WKSnapshotReason.appScheduled](wksnapshotreason/appscheduled.md)
+- [WKSnapshotReason.appScheduled](./appscheduled.md)
   The app scheduled this snapshot.
-- [WKSnapshotReason.prelaunch](wksnapshotreason/prelaunch.md)
+- [WKSnapshotReason.prelaunch](./prelaunch.md)
   The system needs a snapshot for the dock, but the app has not been launched yet.
-- [WKSnapshotReason.returnToDefaultState](wksnapshotreason/returntodefaultstate.md)
+- [WKSnapshotReason.returnToDefaultState](./returntodefaultstate.md)
   It has been more than an hour since the user’s last interaction with the app; the app’s snapshot should return to its default state.
 
 

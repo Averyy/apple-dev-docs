@@ -1,7 +1,8 @@
 # WKNavigationType.reload
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A request to reload the webpage.
 
@@ -18,17 +19,22 @@ A request to reload the webpage.
 case reload
 ```
 
+```c
+WKNavigationTypeReload
+```
+
 ## See Also
 
-- [WKNavigationType.linkActivated](wknavigationtype/linkactivated.md)
+### Getting the Navigation Types
+- [WKNavigationType.linkActivated](./linkactivated.md)
   A link activation.
-- [WKNavigationType.formSubmitted](wknavigationtype/formsubmitted.md)
+- [WKNavigationType.formSubmitted](./formsubmitted.md)
   A request to submit a form.
-- [WKNavigationType.backForward](wknavigationtype/backforward.md)
+- [WKNavigationType.backForward](./backforward.md)
   A request for the frame’s next or previous item.
-- [WKNavigationType.formResubmitted](wknavigationtype/formresubmitted.md)
+- [WKNavigationType.formResubmitted](./formresubmitted.md)
   A request to resubmit a form.
-- [WKNavigationType.other](wknavigationtype/other.md)
+- [WKNavigationType.other](./other.md)
   A navigation request that originates for some other reason.
 
 

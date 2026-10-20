@@ -1,7 +1,8 @@
 # AnimatedArtwork.AspectRatio.tall
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The 3:4 (tall) aspect ratio.
 

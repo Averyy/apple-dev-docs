@@ -1,7 +1,8 @@
 # openStream(directionality:_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initiate a new data stream over QUIC. When invoked with no parameters, the default stream type will be bidirectional. Unidirectional streams can be initiated by setting the optional `bidirectional` parameter to false.
 
@@ -19,6 +20,8 @@ Initiate a new data stream over QUIC. When invoked with no parameters, the defau
 ```swift
 final func openStream<NewApplicationProtocol>(directionality: QUICStream.Directionality = .bidirectional, @ProtocolStackBuilder<NewApplicationProtocol> _ prepending: (QUICStream) -> NewApplicationProtocol) async throws -> QUIC.Stream<NewApplicationProtocol> where NewApplicationProtocol : OneToOneProtocol
 ```
+
+Available when `ApplicationProtocol` is `QUIC`.
 
 #### Discussion
 

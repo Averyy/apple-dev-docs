@@ -1,17 +1,24 @@
 # kSecEncodeTypeAttribute
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The encoding used by an encode transform.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 13.0
+
+> **Deprecated**: SecTransform is no longer supported
 
 ## Declaration
 
 ```swift
 let kSecEncodeTypeAttribute: CFString
+```
+
+```c
+extern CFStringRef const kSecEncodeTypeAttribute;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # kCGImageProperty8BIMDictionary
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A dictionary of key-value pairs for an Adobe Photoshop image.
 
@@ -20,9 +21,13 @@ A dictionary of key-value pairs for an Adobe Photoshop image.
 let kCGImageProperty8BIMDictionary: CFString
 ```
 
+```c
+extern CFStringRef const kCGImageProperty8BIMDictionary;
+```
+
 #### Discussion
 
-For more information about the available metadata keys, see [`8BIM Image Properties`](8bim-image-properties.md).
+For more information about the available metadata keys, see [8BIM Image Properties](./api-8bim-image-properties.md).
 
 
 ---

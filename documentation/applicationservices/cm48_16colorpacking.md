@@ -1,7 +1,8 @@
 # cm48_16ColorPacking
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The color values for three 16-bit color channels are stored in 48 consecutive bits.
 

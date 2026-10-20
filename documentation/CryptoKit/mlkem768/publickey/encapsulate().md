@@ -1,7 +1,8 @@
 # encapsulate()
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates and encapsulates a shared secret.
 
@@ -22,7 +23,7 @@ func encapsulate() throws -> KEM.EncapsulationResult
 
 #### Return Value
 
-An encapsulated shared secret, that you decapsulate by calling [`decapsulate(_:)`](mlkem768/privatekey/decapsulate(_:).md) on the corresponding private key.
+An encapsulated shared secret, that you decapsulate by calling [`decapsulate(_:)`](../privatekey/decapsulate%28_%29.md) on the corresponding private key.
 
 
 ---

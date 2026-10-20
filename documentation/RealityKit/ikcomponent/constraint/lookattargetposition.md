@@ -1,7 +1,8 @@
 # lookAtTargetPosition
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The point demand which the look-at constraint uses to generate a new orientation demand.
 
@@ -21,7 +22,7 @@ var lookAtTargetPosition: SIMD3<Float> { get set }
 
 #### Discussion
 
-The position is in model space. The computed demand overrides the rotation part of [`target`](ikcomponent/constraint/target.md).
+The position is in model space. The computed demand overrides the rotation part of [`target`](./target.md).
 
 
 ---

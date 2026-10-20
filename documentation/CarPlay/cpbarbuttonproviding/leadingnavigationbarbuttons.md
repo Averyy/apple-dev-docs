@@ -2,6 +2,7 @@
 
 **Framework**: CarPlay  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An array of bar buttons to display on the leading side of the navigation bar.
@@ -17,19 +18,24 @@ An array of bar buttons to display on the leading side of the navigation bar.
 var leadingNavigationBarButtons: [CPBarButton] { get set }
 ```
 
+```objc
+@property (nonatomic, strong) NSArray<CPBarButton *> * leadingNavigationBarButtons;
+```
+
 #### Discussion
 
 The navigation bar displays up to two buttons in the leading space. When including more than two buttons in the array, the system displays only the first two buttons.
 
 ## See Also
 
-- [var backButton: CPBarButton?](cpbarbuttonproviding/backbutton.md)
+### Providing Navigation Bar Buttons
+- [var backButton: CPBarButton?](./backbutton.md)
   A button to display as the Back button on the navigation bar.
-- [var trailingNavigationBarButtons: [CPBarButton]](cpbarbuttonproviding/trailingnavigationbarbuttons.md)
+- [var trailingNavigationBarButtons: [CPBarButton]](./trailingnavigationbarbuttons.md)
   An array of bar buttons to display on the trailing side of the navigation bar.
-- [class CPBarButton](cpbarbutton.md)
+- [class CPBarButton](../cpbarbutton.md)
   A button for placement in a navigation bar.
-- [class CPMessageComposeBarButton](cpmessagecomposebarbutton.md)
+- [class CPMessageComposeBarButton](../cpmessagecomposebarbutton.md)
   A button that activates Siri and initiates the compose message flow.
 
 

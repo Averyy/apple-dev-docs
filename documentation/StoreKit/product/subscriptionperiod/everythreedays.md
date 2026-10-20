@@ -1,7 +1,8 @@
 # everyThreeDays
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.4+
@@ -21,13 +22,14 @@ static var everyThreeDays: Product.SubscriptionPeriod { get }
 
 ## See Also
 
-- [static var everySixMonths: Product.SubscriptionPeriod](product/subscriptionperiod/everysixmonths.md)
-- [static var everyThreeMonths: Product.SubscriptionPeriod](product/subscriptionperiod/everythreemonths.md)
-- [static var everyTwoMonths: Product.SubscriptionPeriod](product/subscriptionperiod/everytwomonths.md)
-- [static var everyTwoWeeks: Product.SubscriptionPeriod](product/subscriptionperiod/everytwoweeks.md)
-- [static var monthly: Product.SubscriptionPeriod](product/subscriptionperiod/monthly.md)
-- [static var weekly: Product.SubscriptionPeriod](product/subscriptionperiod/weekly.md)
-- [static var yearly: Product.SubscriptionPeriod](product/subscriptionperiod/yearly.md)
+### Getting subscription periods
+- [static var everySixMonths: Product.SubscriptionPeriod](./everysixmonths.md)
+- [static var everyThreeMonths: Product.SubscriptionPeriod](./everythreemonths.md)
+- [static var everyTwoMonths: Product.SubscriptionPeriod](./everytwomonths.md)
+- [static var everyTwoWeeks: Product.SubscriptionPeriod](./everytwoweeks.md)
+- [static var monthly: Product.SubscriptionPeriod](./monthly.md)
+- [static var weekly: Product.SubscriptionPeriod](./weekly.md)
+- [static var yearly: Product.SubscriptionPeriod](./yearly.md)
 
 
 ---

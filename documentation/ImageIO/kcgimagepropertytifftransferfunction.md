@@ -1,7 +1,8 @@
 # kCGImagePropertyTIFFTransferFunction
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The transfer function, in tabular format, used to map pixel components from a nonlinear form into a linear form.
 
@@ -20,11 +21,16 @@ The transfer function, in tabular format, used to map pixel components from a no
 let kCGImagePropertyTIFFTransferFunction: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyTIFFTransferFunction;
+```
+
 ## See Also
 
-- [let kCGImagePropertyTIFFCompression: CFString](kcgimagepropertytiffcompression.md)
+### Image Quality
+- [let kCGImagePropertyTIFFCompression: CFString](./kcgimagepropertytiffcompression.md)
   The compression scheme used on the image data.
-- [let kCGImagePropertyTIFFPhotometricInterpretation: CFString](kcgimagepropertytiffphotometricinterpretation.md)
+- [let kCGImagePropertyTIFFPhotometricInterpretation: CFString](./kcgimagepropertytiffphotometricinterpretation.md)
   The color space of the image data.
 
 

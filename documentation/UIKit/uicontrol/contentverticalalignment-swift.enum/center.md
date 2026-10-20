@@ -1,16 +1,17 @@
 # UIControl.ContentVerticalAlignment.center
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Aligns the content vertically in the center of the control.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,13 +19,18 @@ Aligns the content vertically in the center of the control.
 case center
 ```
 
+```c
+UIControlContentVerticalAlignmentCenter
+```
+
 ## See Also
 
-- [UIControl.ContentVerticalAlignment.top](uicontrol/contentverticalalignment-swift.enum/top.md)
+### Constants
+- [UIControl.ContentVerticalAlignment.top](./top.md)
   Aligns the content vertically at the top in the control (the default).
-- [UIControl.ContentVerticalAlignment.bottom](uicontrol/contentverticalalignment-swift.enum/bottom.md)
+- [UIControl.ContentVerticalAlignment.bottom](./bottom.md)
   Aligns the content vertically at the bottom in the control.
-- [UIControl.ContentVerticalAlignment.fill](uicontrol/contentverticalalignment-swift.enum/fill.md)
+- [UIControl.ContentVerticalAlignment.fill](./fill.md)
   Aligns the content vertically to fill the content rectangle; images may be stretched.
 
 

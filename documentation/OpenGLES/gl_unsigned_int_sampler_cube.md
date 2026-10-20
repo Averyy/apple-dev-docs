@@ -1,7 +1,8 @@
 # GL_UNSIGNED_INT_SAMPLER_CUBE
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_UNSIGNED_INT_SAMPLER_CUBE: Int32 { get }
+```
+
+```c
+#define GL_UNSIGNED_INT_SAMPLER_CUBE
 ```
 
 

@@ -1,22 +1,27 @@
 # initialResultsHandler
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The results handler for the query’s initial results.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var initialResultsHandler: (@Sendable (HKStatisticsCollectionQuery, HKStatisticsCollection?, (any Error)?) -> Void)? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) void (^initialResultsHandler)(HKStatisticsCollectionQuery *query, HKStatisticsCollection *result, NSError *error);
 ```
 
 #### Discussion
@@ -25,7 +30,8 @@ If this property is not set to `nil`, the query executes the results handler on 
 
 ## See Also
 
-- [var statisticsUpdateHandler: ((HKStatisticsCollectionQuery, HKStatistics?, HKStatisticsCollection?, (any Error)?) -> Void)?](hkstatisticscollectionquery/statisticsupdatehandler.md)
+### Getting and Setting Results Handlers
+- [var statisticsUpdateHandler: ((HKStatisticsCollectionQuery, HKStatistics?, HKStatisticsCollection?, (any Error)?) -> Void)?](./statisticsupdatehandler.md)
   The results handler for monitoring updates to the HealthKit store.
 
 

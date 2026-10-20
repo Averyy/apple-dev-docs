@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Location  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an activity type instance with the provided value.
 

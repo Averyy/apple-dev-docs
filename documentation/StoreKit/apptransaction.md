@@ -1,7 +1,8 @@
 # AppTransaction
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information that represents the customer’s purchase of the app, cryptographically signed by the App Store.
 
@@ -22,92 +23,93 @@ struct AppTransaction
 
 ## Mentions
 
-- [Choosing a receipt validation technique](choosing-a-receipt-validation-technique.md)
-- [Supporting business model changes by using the app transaction](supporting-business-model-changes-by-using-the-app-transaction.md)
-- [Validating receipts with the App Store](validating-receipts-with-the-app-store.md)
+- [Choosing a receipt validation technique](./choosing-a-receipt-validation-technique.md)
+- [Supporting business model changes by using the app transaction](./supporting-business-model-changes-by-using-the-app-transaction.md)
+- [Validating receipts with the App Store](./validating-receipts-with-the-app-store.md)
 
 #### Overview
 
-> **Note**:  Session 10007:  [`What’s new with Apple In-App Purchase`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10007/)
+> **Related sessions from WWDC22**:  Session 10007:  [What’s new with Apple In-App Purchase](https://developer.apple.com/videos/play/wwdc2022/10007/)
 
 ## Topics
 
 ### Getting the signed app transaction
-- [static var shared: VerificationResult<AppTransaction>](apptransaction/shared.md)
+- [static var shared: VerificationResult<AppTransaction>](./apptransaction/shared.md)
   Gets the App Store-signed app transaction information for the app.
 ### Getting the app transaction identifier
-- [var appTransactionID: String](apptransaction/apptransactionid.md)
+- [var appTransactionID: String](./apptransaction/apptransactionid.md)
   The unique identifier of the app download transaction.
 ### Getting the environment
-- [let environment: AppStore.Environment](apptransaction/environment.md)
+- [let environment: AppStore.Environment](./apptransaction/environment.md)
   The server environment that signs the app transaction.
-- [AppStore.Environment](appstore/environment.md)
+- [AppStore.Environment](./appstore/environment.md)
   Constants that represent the App Store server environment.
 ### Getting app and version information
-- [let bundleID: String](apptransaction/bundleid.md)
+- [let bundleID: String](./apptransaction/bundleid.md)
   The bundle identifier that the app transaction applies to.
-- [let appVersion: String](apptransaction/appversion.md)
+- [let appVersion: String](./apptransaction/appversion.md)
   The app version that the app transaction applies to.
-- [let originalAppVersion: String](apptransaction/originalappversion.md)
+- [let originalAppVersion: String](./apptransaction/originalappversion.md)
   The app version that the customer originally purchased from the App Store.
-- [let appID: UInt64?](apptransaction/appid.md)
+- [let appID: UInt64?](./apptransaction/appid.md)
   The unique identifier the App Store uses to identify the app.
-- [let appVersionID: UInt64?](apptransaction/appversionid.md)
+- [let appVersionID: UInt64?](./apptransaction/appversionid.md)
   The number that the App Store uses to uniquely identify the version of the app.
 ### Getting the original platform
-- [let originalPlatform: AppStore.Platform](apptransaction/originalplatform.md)
+- [let originalPlatform: AppStore.Platform](./apptransaction/originalplatform.md)
   The platform on which the customer originally purchased the app.
-- [AppStore.Platform](appstore/platform.md)
+- [AppStore.Platform](./appstore/platform.md)
   Values that represent Apple platforms.
 ### Getting purchase dates
-- [let originalPurchaseDate: Date](apptransaction/originalpurchasedate.md)
+- [let originalPurchaseDate: Date](./apptransaction/originalpurchasedate.md)
   The date the customer originally purchased the app from the App Store.
-- [let preorderDate: Date?](apptransaction/preorderdate.md)
+- [let preorderDate: Date?](./apptransaction/preorderdate.md)
   The date the customer placed an order for the app before it’s available in the App Store.
 ### Verifying the app transaction
-- [let deviceVerification: Data](apptransaction/deviceverification.md)
+- [let deviceVerification: Data](./apptransaction/deviceverification.md)
   The device verification value to use to verify whether the app transaction belongs to the device.
-- [let deviceVerificationNonce: UUID](apptransaction/deviceverificationnonce.md)
+- [let deviceVerificationNonce: UUID](./apptransaction/deviceverificationnonce.md)
   The UUID used to compute the device verification value.
-- [let signedDate: Date](apptransaction/signeddate.md)
+- [let signedDate: Date](./apptransaction/signeddate.md)
   The date that the App Store signed the JWS app transaction.
 ### Getting app transaction information in JSON format
-- [var jsonRepresentation: Data](apptransaction/jsonrepresentation.md)
+- [var jsonRepresentation: Data](./apptransaction/jsonrepresentation.md)
   The JSON representation of the app transaction information.
 ### Getting app transaction from the server
-- [static func refresh() async throws -> VerificationResult<AppTransaction>](apptransaction/refresh.md)
+- [static func refresh() async throws -> VerificationResult<AppTransaction>](./apptransaction/refresh%28%29.md)
   Gets the App Store-signed app transaction information from the App Store server.
 ### Deprecated
-- [var originalPlatformStringRepresentation: String](apptransaction/originalplatformstringrepresentation.md)
+- [var originalPlatformStringRepresentation: String](./apptransaction/originalplatformstringrepresentation.md)
   The string representation of the platform on which the customer originally purchased the app.
 ### Structures
-- [AppTransaction.AppTransactions](apptransaction/apptransactions.md)
-- [AppTransaction.StoreType](apptransaction/storetype-swift.struct.md)
+- [AppTransaction.AppTransactions](./apptransaction/apptransactions.md)
+- [AppTransaction.StoreType](./apptransaction/storetype-swift.struct.md)
 ### Instance Properties
-- [var revocationDate: Date?](apptransaction/revocationdate.md)
+- [var revocationDate: Date?](./apptransaction/revocationdate.md)
   The revocation date of the app purchase.
-- [let storeType: AppTransaction.StoreType](apptransaction/storetype-swift.property.md)
+- [let storeType: AppTransaction.StoreType](./apptransaction/storetype-swift.property.md)
   The store where the original purchase of the app was made.
-- [var storeTypeStringRepresentation: String](apptransaction/storetypestringrepresentation.md)
+- [var storeTypeStringRepresentation: String](./apptransaction/storetypestringrepresentation.md)
   The string representation of the store where the original purchase of the app was made.
 ### Type Properties
-- [static var all: AppTransaction.AppTransactions](apptransaction/all.md)
+- [static var all: AppTransaction.AppTransactions](./apptransaction/all.md)
   Returns all the `AppTransaction`s for this version of the app.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Supporting business model changes by using the app transaction](supporting-business-model-changes-by-using-the-app-transaction.md)
+### App transaction
+- [Supporting business model changes by using the app transaction](./supporting-business-model-changes-by-using-the-app-transaction.md)
   Access the app transaction to determine when a customer purchased an app and the features to which they’re entitled.
 
 

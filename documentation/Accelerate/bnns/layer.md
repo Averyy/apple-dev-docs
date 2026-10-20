@@ -1,7 +1,8 @@
 # BNNS.Layer
 
 **Framework**: Accelerate  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The base class for layer objects that wrap filters and manage deinitialization.
 
@@ -11,8 +12,10 @@ The base class for layer objects that wrap filters and manage deinitialization.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -23,29 +26,30 @@ class Layer
 ## Topics
 
 ### Instance Properties
-- [let bnnsFilter: BNNSFilter](bnns/layer/bnnsfilter.md)
+- [let bnnsFilter: BNNSFilter](./layer/bnnsfilter.md)
   The underlying filter.
 
 ## Relationships
 
 ### Inherited By
-- [BNNS.BinaryArithmeticLayer](bnns/binaryarithmeticlayer.md)
-- [BNNS.BinaryLayer](bnns/binarylayer.md)
-- [BNNS.BroadcastMatrixMultiplyLayer](bnns/broadcastmatrixmultiplylayer.md)
-- [BNNS.EmbeddingLayer](bnns/embeddinglayer.md)
-- [BNNS.FusedLayer](bnns/fusedlayer.md)
-- [BNNS.LossLayer](bnns/losslayer.md)
-- [BNNS.NormalizationLayer](bnns/normalizationlayer.md)
-- [BNNS.PoolingLayer](bnns/poolinglayer.md)
-- [BNNS.TernaryArithmeticLayer](bnns/ternaryarithmeticlayer.md)
-- [BNNS.UnaryArithmeticLayer](bnns/unaryarithmeticlayer.md)
-- [BNNS.UnaryLayer](bnns/unarylayer.md)
+- [BNNS.BinaryArithmeticLayer](./binaryarithmeticlayer.md)
+- [BNNS.BinaryLayer](./binarylayer.md)
+- [BNNS.BroadcastMatrixMultiplyLayer](./broadcastmatrixmultiplylayer.md)
+- [BNNS.EmbeddingLayer](./embeddinglayer.md)
+- [BNNS.FusedLayer](./fusedlayer.md)
+- [BNNS.LossLayer](./losslayer.md)
+- [BNNS.NormalizationLayer](./normalizationlayer.md)
+- [BNNS.PoolingLayer](./poolinglayer.md)
+- [BNNS.TernaryArithmeticLayer](./ternaryarithmeticlayer.md)
+- [BNNS.UnaryArithmeticLayer](./unaryarithmeticlayer.md)
+- [BNNS.UnaryLayer](./unarylayer.md)
 
 ## See Also
 
-- [class UnaryLayer](bnns/unarylayer.md)
+### Base Classes
+- [class UnaryLayer](./unarylayer.md)
   The base class for layers that accept a single input.
-- [class BinaryLayer](bnns/binarylayer.md)
+- [class BinaryLayer](./binarylayer.md)
   The base class for layers that accept two inputs.
 
 

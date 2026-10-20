@@ -1,26 +1,29 @@
 # NSPortName
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The port that the service monitors for incoming requests.
 
 **Availability**:
 - macOS 10.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSPortName` (Incoming service port name)
+- **Type**: string
 
 ## See Also
 
-- [NSKeyEquivalent](information-property-list/nsservices/nskeyequivalent.md)
+### Invocation
+- [NSKeyEquivalent](./nskeyequivalent.md)
   A keyboard shortcut that invokes the service menu command.
-- [NSMenuItem](information-property-list/nsservices/nsmenuitem.md)
+- [NSMenuItem](./nsmenuitem.md)
   Text for a Services menu item.
-- [NSMessage](information-property-list/nsservices/nsmessage.md)
+- [NSMessage](./nsmessage.md)
   An instance method that invokes the service.
-- [NSTimeout](information-property-list/nsservices/nstimeout.md)
+- [NSTimeout](./nstimeout.md)
   The amount of time, in milliseconds, that the system waits for a response from the service.
 
 

@@ -1,7 +1,8 @@
 # service
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Bonjour service that advertises the listener on the local network.
 
@@ -22,15 +23,16 @@ final var service: NWListener.Service? { get set }
 
 ## See Also
 
-- [NSBonjourServices](../bundleresources/information-property-list/nsbonjourservices.md)
+### Advertising Bonjour Services
+- [NSBonjourServices](../../BundleResources/information-property-list/nsbonjourservices.md)
   Bonjour service types browsed by the app.
-- [NSLocalNetworkUsageDescription](../bundleresources/information-property-list/nslocalnetworkusagedescription.md)
+- [NSLocalNetworkUsageDescription](../../BundleResources/information-property-list/nslocalnetworkusagedescription.md)
   A message that tells people why the app is requesting access to the local network.
-- [NWListener.Service](nwlistener/service-swift.struct.md)
+- [NWListener.Service](./service-swift.struct.md)
   A description used to advertise the Bonjour service that a listener provides.
-- [var serviceRegistrationUpdateHandler: ((NWListener.ServiceRegistrationChange) -> Void)?](nwlistener/serviceregistrationupdatehandler.md)
+- [var serviceRegistrationUpdateHandler: ((NWListener.ServiceRegistrationChange) -> Void)?](./serviceregistrationupdatehandler.md)
   A handler that receives updates for the service endpoint being advertised.
-- [NWListener.ServiceRegistrationChange](nwlistener/serviceregistrationchange.md)
+- [NWListener.ServiceRegistrationChange](./serviceregistrationchange.md)
   Changes to how a network listener’s service is advertised.
 
 

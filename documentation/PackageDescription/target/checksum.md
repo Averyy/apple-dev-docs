@@ -1,7 +1,8 @@
 # checksum
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The checksum for the archive file that contains the referenced binary artifact.
 
@@ -16,17 +17,18 @@ final var checksum: String?
 
 #### Discussion
 
-If you make a remote binary framework available as a Swift package, declare a remote, or *URL-based*, binary target in your package manifest with [`binaryTarget(name:url:checksum:)`](target/binarytarget(name:url:checksum:).md). Always run `swift package compute-checksum path/to/MyFramework.zip` at the command line to make sure you create a correct SHA256 checksum.
+If you make a remote binary framework available as a Swift package, declare a remote, or *URL-based*, binary target in your package manifest with [`binaryTarget(name:url:checksum:)`](./binarytarget%28name,url,checksum%29.md). Always run `swift package compute-checksum path/to/MyFramework.zip` at the command line to make sure you create a correct SHA256 checksum.
 
-For more information, see [`Distributing binary frameworks as Swift packages`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/distributing-binary-frameworks-as-swift-packages).
+For more information, see [Distributing binary frameworks as Swift packages](../../Xcode/distributing-binary-frameworks-as-swift-packages.md).
 
 ## See Also
 
-- [static func binaryTarget(name: String, path: String) -> Target](target/binarytarget(name:path:).md)
+### Creating a Binary Target
+- [static func binaryTarget(name: String, path: String) -> Target](./binarytarget%28name,path%29.md)
   Creates a binary target that references an artifact on disk.
-- [static func binaryTarget(name: String, url: String, checksum: String) -> Target](target/binarytarget(name:url:checksum:).md)
+- [static func binaryTarget(name: String, url: String, checksum: String) -> Target](./binarytarget%28name,url,checksum%29.md)
   Creates a binary target that references a remote artifact.
-- [var url: String?](target/url.md)
+- [var url: String?](./url.md)
   The URL of a binary target.
 
 

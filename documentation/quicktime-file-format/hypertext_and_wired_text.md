@@ -1,12 +1,13 @@
 # Hypertext and wired text
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Store hypertext in a text track sample atom.
 
 #### Overview
 
-Hypertext is used as an action that takes you to a Web URL; like a Web URL, it appears blue and underlined. Hypertext is stored in a text track sample atom stream as type `'htxt'`. The same mechanism is used to store wired actions linked to text strings. A text string can be wired to act as a hypertext link when clicked or to perform any defined QuickTime wired action when clicked. For details on wired actions, see [`Wired action grammar`](wired_action_grammar.md).
+Hypertext is used as an action that takes you to a Web URL; like a Web URL, it appears blue and underlined. Hypertext is stored in a text track sample atom stream as type `'htxt'`. The same mechanism is used to store wired actions linked to text strings. A text string can be wired to act as a hypertext link when clicked or to perform any defined QuickTime wired action when clicked. For details on wired actions, see [Wired action grammar](./wired_action_grammar.md).
 
 The data stored is a `QTAtomContainer`. The root atom of hypertext in this container is a wired-text atom of type `'wtxt'`. This is the parent for all individual hypertext objects.
 
@@ -37,11 +38,12 @@ kTextWiredObjectsAtomType, 1
 
 ## See Also
 
-- [Text sample description](text_sample_description.md)
+### Storing text data
+- [Text sample description](./text_sample_description.md)
   An atom that defines how to interpret text media data.
-- [Text media information atom ('text')](text_media_information_atom.md)
+- [Text media information atom ('text')](./text_media_information_atom.md)
   An atom that contains information about text media.
-- [Text sample data](text_sample_data.md)
+- [Text sample data](./text_sample_data.md)
   An atom that contains text data.
 
 

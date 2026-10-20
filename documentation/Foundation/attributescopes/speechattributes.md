@@ -1,7 +1,8 @@
 # AttributeScopes.SpeechAttributes
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -19,21 +20,21 @@ struct SpeechAttributes
 ## Topics
 
 ### Structures
-- [AttributeScopes.SpeechAttributes.ConfidenceAttribute](attributescopes/speechattributes/confidenceattribute.md)
+- [AttributeScopes.SpeechAttributes.ConfidenceAttribute](./speechattributes/confidenceattribute.md)
   A confidence level (0–1) of the associated transcription text.
-- [AttributeScopes.SpeechAttributes.TimeRangeAttribute](attributescopes/speechattributes/timerangeattribute.md)
+- [AttributeScopes.SpeechAttributes.TimeRangeAttribute](./speechattributes/timerangeattribute.md)
   The time range in the source audio corresponding to the associated transcription text.
 ### Instance Properties
-- [let audioTimeRange: AttributeScopes.SpeechAttributes.TimeRangeAttribute](attributescopes/speechattributes/audiotimerange.md)
-- [let transcriptionConfidence: AttributeScopes.SpeechAttributes.ConfidenceAttribute](attributescopes/speechattributes/transcriptionconfidence.md)
+- [let audioTimeRange: AttributeScopes.SpeechAttributes.TimeRangeAttribute](./speechattributes/audiotimerange.md)
+- [let transcriptionConfidence: AttributeScopes.SpeechAttributes.ConfidenceAttribute](./speechattributes/transcriptionconfidence.md)
 
 ## Relationships
 
 ### Conforms To
-- [AttributeScope](attributescope.md)
-- [DecodingConfigurationProviding](decodingconfigurationproviding.md)
-- [EncodingConfigurationProviding](encodingconfigurationproviding.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributeScope](../attributescope.md)
+- [DecodingConfigurationProviding](../decodingconfigurationproviding.md)
+- [EncodingConfigurationProviding](../encodingconfigurationproviding.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

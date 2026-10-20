@@ -1,7 +1,8 @@
 # magnitude
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The magnitude of the force vector for the push behavior.
 
@@ -9,7 +10,7 @@ The magnitude of the force vector for the push behavior.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,25 +19,30 @@ The magnitude of the force vector for the push behavior.
 var magnitude: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) CGFloat magnitude;
+```
+
 #### Discussion
 
-The default magnitude is `0.0`, equivalent to no force. A continuous force vector with a magnitude of `1.0`, applied to a 100 point x 100 point view whose density value is `1.0`, results in view acceleration of 100 points / second² in the direction indicated by the [`angle`](uipushbehavior/angle.md) or [`pushDirection`](uipushbehavior/pushdirection.md) property.
+The default magnitude is `0.0`, equivalent to no force. A continuous force vector with a magnitude of `1.0`, applied to a 100 point x 100 point view whose density value is `1.0`, results in view acceleration of 100 points / second² in the direction indicated by the [`angle`](./angle.md) or [`pushDirection`](./pushdirection.md) property.
 
-Setting the [`magnitude`](uipushbehavior/magnitude.md) parameter to a negative value reverses the direction of the force.
+Setting the [`magnitude`](./magnitude.md) parameter to a negative value reverses the direction of the force.
 
 ## See Also
 
-- [func setAngle(CGFloat, magnitude: CGFloat)](uipushbehavior/setangle(_:magnitude:).md)
+### Configuring a push behavior
+- [func setAngle(CGFloat, magnitude: CGFloat)](./setangle%28_,magnitude%29.md)
   Sets the angle and magnitude of the force vector for the behavior.
-- [var angle: CGFloat](uipushbehavior/angle.md)
+- [var angle: CGFloat](./angle.md)
   The angle, in radians, of the force vector for the behavior.
-- [var mode: UIPushBehavior.Mode](uipushbehavior/mode-swift.property.md)
+- [var mode: UIPushBehavior.Mode](./mode-swift.property.md)
   Returns the force mode for the push behavior.
-- [func setTargetOffsetFromCenter(UIOffset, for: any UIDynamicItem)](uipushbehavior/settargetoffsetfromcenter(_:for:).md)
+- [func setTargetOffsetFromCenter(UIOffset, for: any UIDynamicItem)](./settargetoffsetfromcenter%28_,for%29.md)
   Sets the offset, from the center of a dynamic item, at which to apply the push behavior’s force vector.
-- [func targetOffsetFromCenter(for: any UIDynamicItem) -> UIOffset](uipushbehavior/targetoffsetfromcenter(for:).md)
+- [func targetOffsetFromCenter(for: any UIDynamicItem) -> UIOffset](./targetoffsetfromcenter%28for%29.md)
   Returns the offset, from the center of a dynamic item, at which the push behavior’s force vector is applied.
-- [var pushDirection: CGVector](uipushbehavior/pushdirection.md)
+- [var pushDirection: CGVector](./pushdirection.md)
   The direction of the force vector for the behavior, expressed as *x* and *y* components and using standard UIKit geometry.
 
 

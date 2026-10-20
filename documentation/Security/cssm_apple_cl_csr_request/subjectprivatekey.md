@@ -1,7 +1,8 @@
 # subjectPrivateKey
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var subjectPrivateKey: UnsafePointer<cssm_key>!
+```
+
+```c
+const CSSM_KEY * subjectPrivateKey;
 ```
 
 

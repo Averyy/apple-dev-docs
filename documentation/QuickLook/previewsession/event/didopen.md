@@ -1,7 +1,8 @@
 # PreviewSession.Event.didOpen
 
 **Framework**: Quick Look  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session did successfully open.
 

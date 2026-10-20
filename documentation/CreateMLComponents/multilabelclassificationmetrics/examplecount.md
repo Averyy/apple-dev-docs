@@ -1,7 +1,8 @@
 # exampleCount
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of examples used to compute the metrics.
 
@@ -22,11 +23,12 @@ var exampleCount: Int { get }
 
 ## See Also
 
-- [var confidenceThresholds: [Label : Float]](multilabelclassificationmetrics/confidencethresholds.md)
+### Getting the properties
+- [var confidenceThresholds: [Label : Float]](./confidencethresholds.md)
   A dictionary of label and confidence thresholds.
-- [var labels: Set<Label>](multilabelclassificationmetrics/labels.md)
+- [var labels: Set<Label>](./labels.md)
   The classifier labels.
-- [var meanAveragePrecision: Float](multilabelclassificationmetrics/meanaverageprecision.md)
+- [var meanAveragePrecision: Float](./meanaverageprecision.md)
   The mean average precision.
 
 

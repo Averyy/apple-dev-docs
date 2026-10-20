@@ -1,7 +1,8 @@
 # location
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of the pointer in the interaction’s view’s coordinate space.
 
@@ -17,9 +18,14 @@ The location of the pointer in the interaction’s view’s coordinate space.
 var location: CGPoint { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGPoint location;
+```
+
 ## See Also
 
-- [var modifiers: UIKeyModifierFlags](uipointerregionrequest/modifiers.md)
+### Inspecting the region request
+- [var modifiers: UIKeyModifierFlags](./modifiers.md)
   Key modifier flags representing keyboard keys pressed by the user at the time of this request.
 
 

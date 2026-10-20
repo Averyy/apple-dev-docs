@@ -1,7 +1,8 @@
 # PredicateExpressions.SequenceContainsWhere.Element
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 17.0+

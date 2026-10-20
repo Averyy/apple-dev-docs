@@ -1,18 +1,19 @@
 # CFCharacterSetCreateMutable(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a new empty mutable character set.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Creates a new empty mutable character set.
 func CFCharacterSetCreateMutable(_ alloc: CFAllocator!) -> CFMutableCharacterSet!
 ```
 
+```c
+extern CFMutableCharacterSetRefCFCharacterSetCreateMutable(CFAllocatorRef alloc);
+```
+
 #### Return Value
 
-A new empty mutable character set. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A new empty mutable character set. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## Parameters
 
@@ -30,7 +35,8 @@ A new empty mutable character set. Ownership follows the [`The Create Rule`](htt
 
 ## See Also
 
-- [func CFCharacterSetCreateMutableCopy(CFAllocator!, CFCharacterSet!) -> CFMutableCharacterSet!](cfcharactersetcreatemutablecopy(_:_:).md)
+### Creating a Mutable Character Set
+- [func CFCharacterSetCreateMutableCopy(CFAllocator!, CFCharacterSet!) -> CFMutableCharacterSet!](./cfcharactersetcreatemutablecopy%28_,_%29.md)
   Creates a new mutable character set with the values from another character set.
 
 

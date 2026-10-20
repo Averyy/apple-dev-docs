@@ -1,7 +1,8 @@
 # menu
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The menu that is used for the path control’s cells.
 
@@ -14,9 +15,13 @@ The menu that is used for the path control’s cells.
 var menu: NSMenu? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSMenu * menu;
+```
+
 #### Discussion
 
-This property overrides the [`NSView`](nsview.md) implementation of `menu` and forwards the message to the `NSPathControlCell`.
+This property overrides the [`NSView`](../nsview.md) implementation of `menu` and forwards the message to the `NSPathControlCell`.
 
 
 ---

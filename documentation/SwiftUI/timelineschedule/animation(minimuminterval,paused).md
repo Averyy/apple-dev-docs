@@ -1,7 +1,8 @@
 # animation(minimumInterval:paused:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A pausable schedule of dates updating at a frequency no more quickly than the provided interval.
 
@@ -21,6 +22,8 @@ A pausable schedule of dates updating at a frequency no more quickly than the pr
 static func animation(minimumInterval: Double? = nil, paused: Bool = false) -> AnimationTimelineSchedule
 ```
 
+Available when `Self` is `AnimationTimelineSchedule`.
+
 ## Parameters
 
 - `minimumInterval`: The minimum interval to update the schedule at. Pass nil to let the system pick an appropriate update interval.
@@ -28,13 +31,14 @@ static func animation(minimumInterval: Double? = nil, paused: Bool = false) -> A
 
 ## See Also
 
-- [static var animation: AnimationTimelineSchedule](timelineschedule/animation.md)
+### Getting built-in schedules
+- [static var animation: AnimationTimelineSchedule](./animation.md)
   A pausable schedule of dates updating at a frequency no more quickly than the provided interval.
-- [static var everyMinute: EveryMinuteTimelineSchedule](timelineschedule/everyminute.md)
+- [static var everyMinute: EveryMinuteTimelineSchedule](./everyminute.md)
   A schedule for updating a timeline view at the start of every minute.
-- [static func explicit<S>(S) -> ExplicitTimelineSchedule<S>](timelineschedule/explicit(_:).md)
+- [static func explicit<S>(S) -> ExplicitTimelineSchedule<S>](./explicit%28_%29.md)
   A schedule for updating a timeline view at explicit points in time.
-- [static func periodic(from: Date, by: TimeInterval) -> PeriodicTimelineSchedule](timelineschedule/periodic(from:by:).md)
+- [static func periodic(from: Date, by: TimeInterval) -> PeriodicTimelineSchedule](./periodic%28from,by%29.md)
   A schedule for updating a timeline view at regular intervals.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: HealthKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that a new event has been added to the builder.
@@ -10,7 +11,7 @@ Tells the delegate that a new event has been added to the builder.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- macOS ?+
+- macOS
 - watchOS 5.0+
 
 ## Declaration
@@ -19,13 +20,18 @@ Tells the delegate that a new event has been added to the builder.
 func workoutBuilderDidCollectEvent(_ workoutBuilder: HKLiveWorkoutBuilder)
 ```
 
+```objc
+- (void) workoutBuilderDidCollectEvent:(HKLiveWorkoutBuilder *) workoutBuilder;
+```
+
 ## Mentions
 
-- [Running workout sessions](running-workout-sessions.md)
+- [Running workout sessions](../running-workout-sessions.md)
 
 ## See Also
 
-- [func workoutBuilder(HKLiveWorkoutBuilder, didCollectDataOf: Set<HKSampleType>)](hkliveworkoutbuilderdelegate/workoutbuilder(_:didcollectdataof:).md)
+### Receiving data updates
+- [func workoutBuilder(HKLiveWorkoutBuilder, didCollectDataOf: Set<HKSampleType>)](./workoutbuilder%28_,didcollectdataof%29.md)
   Tells the delegate that new data has been added to the builder.
 
 

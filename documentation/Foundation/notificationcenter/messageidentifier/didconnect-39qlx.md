@@ -1,7 +1,8 @@
 # didConnect
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identifier of the message that posts after a racing wheel accessory connects to the device.
 
@@ -14,6 +15,8 @@ The identifier of the message that posts after a racing wheel accessory connects
 ```swift
 static var didConnect: NotificationCenter.BaseMessageIdentifier<GCRacingWheel.DidConnectMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<GCRacingWheel.DidConnectMessage>`.
 
 
 ---

@@ -1,7 +1,8 @@
 # reset(toUnchecked:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reset this iterator to `codeUnitOffset`, skipping *all* safety checks (including bounds checks).
 
@@ -26,7 +27,7 @@ Note: This is only for very specific, low-level use cases. If `codeUnitOffset` i
 
 For example, this could be used by a regex engine to backtrack to a known-valid previous position.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

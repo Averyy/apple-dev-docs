@@ -1,7 +1,8 @@
 # StatusManagementDeclarationsStatusReasonObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Information about a status error.
 
@@ -16,14 +17,14 @@ Information about a status error.
 
 ## Declaration
 
-```swift
+```
 object StatusManagementDeclarationsStatusReasonObject
 ```
 
 ## Topics
 
 ### Objects
-- [object StatusManagementDeclarationsStatusReason_DetailsObject](statusmanagementdeclarationsstatusreason_detailsobject.md)
+- [object StatusManagementDeclarationsStatusReason_DetailsObject](./statusmanagementdeclarationsstatusreason_detailsobject.md)
   A dictionary that contains further details about this error.
 
 ## Properties

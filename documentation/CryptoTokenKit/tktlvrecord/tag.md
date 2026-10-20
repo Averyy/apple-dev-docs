@@ -1,7 +1,8 @@
 # tag
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tag field of the record.
 
@@ -20,9 +21,14 @@ The tag field of the record.
 var tag: TKTLVTag { get }
 ```
 
+```objc
+@property (nonatomic, readonly) TKTLVTag tag;
+```
+
 ## See Also
 
-- [typealias TKTLVTag](tktlvtag.md)
+### Accessing the Tag Field
+- [typealias TKTLVTag](../tktlvtag.md)
   The type used to identify TLV format tags.
 
 

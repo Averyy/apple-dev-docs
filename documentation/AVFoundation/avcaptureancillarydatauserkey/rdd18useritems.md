@@ -1,7 +1,8 @@
 # rdd18UserItems
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An AVCaptureAncillaryDataEncoder key corresponding with RDD18 user defined metadata
 
@@ -16,6 +17,10 @@ An AVCaptureAncillaryDataEncoder key corresponding with RDD18 user defined metad
 
 ```swift
 static let rdd18UserItems: AVCaptureAncillaryDataUserKey
+```
+
+```c
+extern AVCaptureAncillaryDataUserKey const AVCaptureAncillaryDataUserKeyRDD18UserItems;
 ```
 
 #### Discussion

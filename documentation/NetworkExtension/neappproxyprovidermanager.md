@@ -1,7 +1,8 @@
 # NEAppProxyProviderManager
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object to create and manage the app proxy provider’s VPN configuration.
 
@@ -18,47 +19,52 @@ An object to create and manage the app proxy provider’s VPN configuration.
 class NEAppProxyProviderManager
 ```
 
+```objc
+@interface NEAppProxyProviderManager : NETunnelProviderManager
+```
+
 ## Mentions
 
-- [Routing your VPN network traffic](routing-your-vpn-network-traffic.md)
+- [Routing your VPN network traffic](./routing-your-vpn-network-traffic.md)
 
 #### Overview
 
 Objects cannot be directly instantiated. Instead, App Proxy configurations are created exclusively from `com.apple.vpn.managed.applayer` payloads in configuration profiles.
 
-App Proxy configurations can only be used with Per-App VPN routing rules. For more details about how to create App Proxy configurations and configure Per-App VPN, see [`NETunnelProviderManager`](netunnelprovidermanager.md).
+App Proxy configurations can only be used with Per-App VPN routing rules. For more details about how to create App Proxy configurations and configure Per-App VPN, see [`NETunnelProviderManager`](./netunnelprovidermanager.md).
 
-> ❗ **Important**:  The `com.apple.developer.networking.networkextension` entitlement is required in order to use the [`NEAppProxyProviderManager`](neappproxyprovidermanager.md) class. Enable this entitlement when creating an App ID in your developer account.
+> ❗ **Important**:  The `com.apple.developer.networking.networkextension` entitlement is required in order to use the [`NEAppProxyProviderManager`](./neappproxyprovidermanager.md) class. Enable this entitlement when creating an App ID in your developer account.
 
 ## Topics
 
 ### Loading the app proxy configuration
-- [class func loadAllFromPreferences(completionHandler: ([NEAppProxyProviderManager]?, (any Error)?) -> Void)](neappproxyprovidermanager/loadallfrompreferences(completionhandler:).md)
+- [class func loadAllFromPreferences(completionHandler: ([NEAppProxyProviderManager]?, (any Error)?) -> Void)](./neappproxyprovidermanager/loadallfrompreferences%28completionhandler%29.md)
   Load all of the App Proxy configurations associated with the calling app that have previously been saved to the Network Extension preferences.
 
 ## Relationships
 
 ### Inherits From
-- [NETunnelProviderManager](netunnelprovidermanager.md)
+- [NETunnelProviderManager](./netunnelprovidermanager.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NETunnelProviderManager](netunnelprovidermanager.md)
+### VPN configuration
+- [class NETunnelProviderManager](./netunnelprovidermanager.md)
   An object to create and manage the tunnel provider’s VPN configuration.
-- [class NEVPNManager](nevpnmanager.md)
+- [class NEVPNManager](./nevpnmanager.md)
   An object to create and manage a Personal VPN configuration.
-- [class NETunnelProviderProtocol](netunnelproviderprotocol.md)
+- [class NETunnelProviderProtocol](./netunnelproviderprotocol.md)
   Configuration parameters for a VPN tunnel.
-- [class NEAppRule](neapprule.md)
+- [class NEAppRule](./neapprule.md)
   The identity of an app whose traffic is to be routed through the tunnel.
-- [VPN On Demand Rules](vpn-on-demand-rules.md)
+- [VPN On Demand Rules](./vpn-on-demand-rules.md)
   Set up VPN On Demand.
 
 

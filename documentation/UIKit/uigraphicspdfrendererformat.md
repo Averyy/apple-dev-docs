@@ -1,7 +1,8 @@
 # UIGraphicsPDFRendererFormat
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A set of drawing attributes that represents the configuration of a PDF renderer context.
 
@@ -18,11 +19,15 @@ A set of drawing attributes that represents the configuration of a PDF renderer 
 class UIGraphicsPDFRendererFormat
 ```
 
+```objc
+@interface UIGraphicsPDFRendererFormat : UIGraphicsRendererFormat
+```
+
 #### Overview
 
-Use this subclass of [`UIGraphicsRendererFormat`](uigraphicsrendererformat.md) to provide context configuration parameters to a [`UIGraphicsPDFRenderer`](uigraphicspdfrenderer.md).
+Use this subclass of [`UIGraphicsRendererFormat`](./uigraphicsrendererformat.md) to provide context configuration parameters to a [`UIGraphicsPDFRenderer`](./uigraphicspdfrenderer.md).
 
-Create an instance and then add PDF configuration parameters to the [`documentInfo`](uigraphicspdfrendererformat/documentinfo.md) dictionary.
+Create an instance and then add PDF configuration parameters to the [`documentInfo`](./uigraphicspdfrendererformat/documentinfo.md) dictionary.
 
 The following code demonstrates how you can use a PDF renderer format object to specify the author of the PDFs created by a PDF renderer.
 
@@ -49,41 +54,42 @@ UIGraphicsPDFRenderer *renderer =
 ## Topics
 
 ### Getting the PDF document info
-- [var documentInfo: [String : Any]](uigraphicspdfrendererformat/documentinfo.md)
+- [var documentInfo: [String : Any]](./uigraphicspdfrendererformat/documentinfo.md)
   A dictionary that specifies additional information to be associated with the PDFs created by the PDF renderer.
 
 ## Relationships
 
 ### Inherits From
-- [UIGraphicsRendererFormat](uigraphicsrendererformat.md)
+- [UIGraphicsRendererFormat](./uigraphicsrendererformat.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UIGraphicsRenderer](uigraphicsrenderer.md)
+### Graphics contexts
+- [class UIGraphicsRenderer](./uigraphicsrenderer.md)
   An abstract base class for creating graphics renderers.
-- [class UIGraphicsRendererContext](uigraphicsrenderercontext.md)
+- [class UIGraphicsRendererContext](./uigraphicsrenderercontext.md)
   The base class for the drawing environments for graphics renderers.
-- [class UIGraphicsRendererFormat](uigraphicsrendererformat.md)
+- [class UIGraphicsRendererFormat](./uigraphicsrendererformat.md)
   A set of drawing attributes that represents the configuration of a graphics renderer context.
-- [class UIGraphicsImageRenderer](uigraphicsimagerenderer.md)
+- [class UIGraphicsImageRenderer](./uigraphicsimagerenderer.md)
   A graphics renderer for creating Core Graphics-backed images.
-- [class UIGraphicsImageRendererContext](uigraphicsimagerenderercontext.md)
+- [class UIGraphicsImageRendererContext](./uigraphicsimagerenderercontext.md)
   The drawing environment for an image renderer.
-- [class UIGraphicsImageRendererFormat](uigraphicsimagerendererformat.md)
+- [class UIGraphicsImageRendererFormat](./uigraphicsimagerendererformat.md)
   A set of drawing attributes that represents the configuration of an image renderer context.
-- [class UIGraphicsPDFRenderer](uigraphicspdfrenderer.md)
+- [class UIGraphicsPDFRenderer](./uigraphicspdfrenderer.md)
   A graphics renderer for creating PDFs.
-- [class UIGraphicsPDFRendererContext](uigraphicspdfrenderercontext.md)
+- [class UIGraphicsPDFRendererContext](./uigraphicspdfrenderercontext.md)
   The drawing environment for a PDF renderer.
 
 

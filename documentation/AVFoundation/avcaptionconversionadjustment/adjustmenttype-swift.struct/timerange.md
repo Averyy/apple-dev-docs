@@ -1,7 +1,8 @@
 # timeRange
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates a timing adjustment.
 
@@ -15,6 +16,10 @@ Indicates a timing adjustment.
 
 ```swift
 static let timeRange: AVCaptionConversionAdjustment.AdjustmentType
+```
+
+```c
+extern AVCaptionConversionAdjustmentType const AVCaptionConversionAdjustmentTypeTimeRange;
 ```
 
 

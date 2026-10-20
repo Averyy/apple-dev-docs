@@ -1,7 +1,8 @@
 # add(predicted:groundTruth:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the metrics with more predicted and ground truth labels.
 
@@ -31,7 +32,8 @@ The predicted and ground truth sequences are matched element by element in the o
 
 ## See Also
 
-- [func add(some Sequence<(predicted: Label, label: Label)>)](classificationmetrics/add(_:).md)
+### Updating the metrics
+- [func add(some Sequence<(predicted: Label, label: Label)>)](./add%28_%29.md)
   Updates the metrics with more predicted and ground truth label pairs.
 
 

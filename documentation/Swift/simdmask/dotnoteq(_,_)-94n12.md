@@ -1,7 +1,8 @@
 # .!=(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a vector mask with the result of a pointwise inequality comparison.
 

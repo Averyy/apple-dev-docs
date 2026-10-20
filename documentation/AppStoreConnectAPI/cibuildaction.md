@@ -1,7 +1,8 @@
 # CiBuildAction
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The execution result of a specific action step within an Xcode Cloud build run, including its status and issues.
 
@@ -10,16 +11,16 @@ The execution result of a specific action step within an Xcode Cloud build run, 
 
 ## Declaration
 
-```swift
+```
 object CiBuildAction
 ```
 
 ## Topics
 
 ### Objects
-- [object CiBuildAction.Attributes](cibuildaction/attributes-data.dictionary.md)
+- [object CiBuildAction.Attributes](./cibuildaction/attributes-data.dictionary.md)
   The attributes that describe a Build Actions resource.
-- [object CiBuildAction.Relationships](cibuildaction/relationships-data.dictionary.md)
+- [object CiBuildAction.Relationships](./cibuildaction/relationships-data.dictionary.md)
   The relationships of the Build Actions resource you included in the request and those on which you can operate.
 
 ## Properties
@@ -30,20 +31,23 @@ object CiBuildAction
 - `relationships` (CiBuildAction.Relationships): The navigational links to related data and included resource types and IDs.
 - `type` (string) *(required)*: The resource type.
 
+  **Allowed Values**: `ciBuildActions`
+
 ## See Also
 
-- [object CiArtifactsResponse](ciartifactsresponse.md)
+### Objects
+- [object CiArtifactsResponse](./ciartifactsresponse.md)
   The response body for endpoints that list artifacts produced by an Xcode Cloud build action.
-- [object CiBuildActionResponse](cibuildactionresponse.md)
+- [object CiBuildActionResponse](./cibuildactionresponse.md)
   The response body for endpoints that read a single Xcode Cloud build action.
-- [object CiIssuesResponse](ciissuesresponse.md)
+- [object CiIssuesResponse](./ciissuesresponse.md)
   The response body for endpoints that list issues from an Xcode Cloud build action.
-- [object CiTestResultsResponse](citestresultsresponse.md)
+- [object CiTestResultsResponse](./citestresultsresponse.md)
   The response body for endpoints that list test results from an Xcode Cloud build action.
-- [object CiBuildActionArtifactsLinkagesResponse](cibuildactionartifactslinkagesresponse.md)
-- [object CiBuildActionBuildRunLinkageResponse](cibuildactionbuildrunlinkageresponse.md)
-- [object CiBuildActionIssuesLinkagesResponse](cibuildactionissueslinkagesresponse.md)
-- [object CiBuildActionTestResultsLinkagesResponse](cibuildactiontestresultslinkagesresponse.md)
+- [object CiBuildActionArtifactsLinkagesResponse](./cibuildactionartifactslinkagesresponse.md)
+- [object CiBuildActionBuildRunLinkageResponse](./cibuildactionbuildrunlinkageresponse.md)
+- [object CiBuildActionIssuesLinkagesResponse](./cibuildactionissueslinkagesresponse.md)
+- [object CiBuildActionTestResultsLinkagesResponse](./cibuildactiontestresultslinkagesresponse.md)
 
 
 ---

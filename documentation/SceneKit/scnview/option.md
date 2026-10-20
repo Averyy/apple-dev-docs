@@ -1,18 +1,19 @@
 # SCNView.Option
 
 **Framework**: SceneKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Dictionary keys specifying initialization options, used when initializing a SceneKit view.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,30 +21,35 @@ Dictionary keys specifying initialization options, used when initializing a Scen
 struct Option
 ```
 
+```c
+typedef NSString * SCNViewOption;
+```
+
 ## Topics
 
 ### View Options
-- [static let preferLowPowerDevice: SCNView.Option](scnview/option/preferlowpowerdevice.md)
+- [static let preferLowPowerDevice: SCNView.Option](./option/preferlowpowerdevice.md)
   An option for whether to select low-power-usage devices for Metal rendering.
-- [static let preferredDevice: SCNView.Option](scnview/option/preferreddevice.md)
+- [static let preferredDevice: SCNView.Option](./option/preferreddevice.md)
   The device to use for Metal rendering.
-- [static let preferredRenderingAPI: SCNView.Option](scnview/option/preferredrenderingapi.md)
+- [static let preferredRenderingAPI: SCNView.Option](./option/preferredrenderingapi.md)
   The rendering API to use for rendering the view (for example, Metal or OpenGL).
 ### Initializers
-- [init(rawValue: String)](scnview/option/init(rawvalue:).md)
+- [init(rawValue: String)](./option/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(frame: CGRect, options: [String : Any]?)](scnview/init(frame:options:).md)
+### Initializing a SceneKit View
+- [init(frame: CGRect, options: [String : Any]?)](./init%28frame,options%29.md)
   Initializes and returns a newly allocated SceneKit view object with the specified frame rectangle and options.
 
 

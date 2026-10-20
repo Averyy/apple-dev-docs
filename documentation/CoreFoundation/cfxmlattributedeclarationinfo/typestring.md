@@ -1,17 +1,22 @@
 # typeString
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Describes the declaration of a single attribute.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var typeString: Unmanaged<CFString>!
+```
+
+```c
+CFStringRef typeString;
 ```
 
 

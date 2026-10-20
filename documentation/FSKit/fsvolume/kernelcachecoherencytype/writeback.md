@@ -1,7 +1,8 @@
 # FSVolume.KernelCacheCoherencyType.writeBack
 
 **Framework**: FSKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A type that indicates writes immediately update the cache only, followed by a deferred write to storage.
 
@@ -14,13 +15,18 @@ A type that indicates writes immediately update the cache only, followed by a de
 case writeBack
 ```
 
+```c
+FSKernelCacheCoherencyTypeWriteBack
+```
+
 ## See Also
 
-- [FSVolume.KernelCacheCoherencyType.noCache](fsvolume/kernelcachecoherencytype/nocache.md)
+### Coherency types
+- [FSVolume.KernelCacheCoherencyType.noCache](./nocache.md)
   A type that indicates all I/O goes directly to storage, without caching.
-- [FSVolume.KernelCacheCoherencyType.readCache](fsvolume/kernelcachecoherencytype/readcache.md)
+- [FSVolume.KernelCacheCoherencyType.readCache](./readcache.md)
   A type that indicates that writes bypass the cache and go directly to storage.
-- [FSVolume.KernelCacheCoherencyType.writeThrough](fsvolume/kernelcachecoherencytype/writethrough.md)
+- [FSVolume.KernelCacheCoherencyType.writeThrough](./writethrough.md)
   A type that indicates writes update cache and storage synchronously.
 
 

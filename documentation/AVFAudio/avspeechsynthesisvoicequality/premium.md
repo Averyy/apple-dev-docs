@@ -1,7 +1,8 @@
 # AVSpeechSynthesisVoiceQuality.premium
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A premium quality voice that you must download to use.
 
@@ -20,11 +21,16 @@ A premium quality voice that you must download to use.
 case premium
 ```
 
+```c
+AVSpeechSynthesisVoiceQualityPremium
+```
+
 ## See Also
 
-- [AVSpeechSynthesisVoiceQuality.default](avspeechsynthesisvoicequality/default.md)
+### Identifying voice qualities
+- [AVSpeechSynthesisVoiceQuality.default](./default.md)
   A basic quality voice that’s  available on the device by default.
-- [AVSpeechSynthesisVoiceQuality.enhanced](avspeechsynthesisvoicequality/enhanced.md)
+- [AVSpeechSynthesisVoiceQuality.enhanced](./enhanced.md)
   An enhanced quality voice that you must download to use.
 
 

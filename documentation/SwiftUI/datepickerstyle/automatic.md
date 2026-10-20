@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default style for date pickers.
 
@@ -20,17 +21,20 @@ The default style for date pickers.
 @export(implementation) @preconcurrency static var automatic: DefaultDatePickerStyle { get }
 ```
 
+Available when `Self` is `DefaultDatePickerStyle`.
+
 ## See Also
 
-- [static var compact: CompactDatePickerStyle](datepickerstyle/compact.md)
+### Getting built-in date picker styles
+- [static var compact: CompactDatePickerStyle](./compact.md)
   A date picker style that displays the components in a compact, textual format.
-- [static var field: FieldDatePickerStyle](datepickerstyle/field.md)
+- [static var field: FieldDatePickerStyle](./field.md)
   A date picker style that displays the components in an editable field.
-- [static var graphical: GraphicalDatePickerStyle](datepickerstyle/graphical.md)
+- [static var graphical: GraphicalDatePickerStyle](./graphical.md)
   A date picker style that displays an interactive calendar or clock.
-- [static var stepperField: StepperFieldDatePickerStyle](datepickerstyle/stepperfield.md)
+- [static var stepperField: StepperFieldDatePickerStyle](./stepperfield.md)
   A system style that displays the components in an editable field, with adjoining stepper that can increment/decrement the selected component.
-- [static var wheel: WheelDatePickerStyle](datepickerstyle/wheel.md)
+- [static var wheel: WheelDatePickerStyle](./wheel.md)
   A date picker style that displays each component as columns in a scrollable wheel.
 
 

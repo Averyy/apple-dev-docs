@@ -1,7 +1,8 @@
 # quietNaN
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A quiet representation of not-a-number.
 
@@ -22,23 +23,24 @@ static var quietNaN: Decimal { get }
 
 ## See Also
 
-- [static let greatestFiniteMagnitude: Decimal](decimal/greatestfinitemagnitude.md)
+### Getting particular decimals
+- [static let greatestFiniteMagnitude: Decimal](./greatestfinitemagnitude.md)
   The decimal that contains the largest possible non-infinite magnitude for the underlying representation.
-- [static let leastFiniteMagnitude: Decimal](decimal/leastfinitemagnitude.md)
+- [static let leastFiniteMagnitude: Decimal](./leastfinitemagnitude.md)
   The decimal that contains the smallest possible non-infinite magnitude for the underlying representation.
-- [static let leastNonzeroMagnitude: Decimal](decimal/leastnonzeromagnitude.md)
+- [static let leastNonzeroMagnitude: Decimal](./leastnonzeromagnitude.md)
   The decimal value that represents the smallest possible non-zero value for the underlying representation.
-- [static let leastNormalMagnitude: Decimal](decimal/leastnormalmagnitude.md)
+- [static let leastNormalMagnitude: Decimal](./leastnormalmagnitude.md)
   The decimal value that represents the smallest possible normal magnitude for the underlying representation.
-- [static let pi: Decimal](decimal/pi.md)
+- [static let pi: Decimal](./pi.md)
   The mathematical constant pi.
-- [static var nan: Decimal](decimal/nan.md)
+- [static var nan: Decimal](./nan.md)
   The value that represents “not a number.”
-- [static var radix: Int](decimal/radix.md)
+- [static var radix: Int](./radix.md)
   The radix used by decimal numbers.
-- [var NSDecimalMaxSize: Int32](nsdecimalmaxsize.md)
-  The maximum size of [`Decimal`](decimal.md).
-- [var NSDecimalNoScale: Int32](nsdecimalnoscale.md)
+- [var NSDecimalMaxSize: Int32](../nsdecimalmaxsize.md)
+  The maximum size of [`Decimal`](../decimal.md).
+- [var NSDecimalNoScale: Int32](../nsdecimalnoscale.md)
   Specifies that the number of digits allowed after the decimal separator in a decimal number should not be limited.
 
 

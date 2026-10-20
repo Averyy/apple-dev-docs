@@ -1,7 +1,8 @@
 # MTLResourceViewPoolDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Provides parameters for creating a resource view pool.
 
@@ -19,34 +20,39 @@ Provides parameters for creating a resource view pool.
 class MTLResourceViewPoolDescriptor
 ```
 
+```objc
+@interface MTLResourceViewPoolDescriptor : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var label: String?](mtlresourceviewpooldescriptor/label.md)
+- [var label: String?](./mtlresourceviewpooldescriptor/label.md)
   Assigns an optional label you to the resource view pool for debugging purposes.
-- [var resourceViewCount: Int](mtlresourceviewpooldescriptor/resourceviewcount.md)
+- [var resourceViewCount: Int](./mtlresourceviewpooldescriptor/resourceviewcount.md)
   Configures the number of resource views with which Metal creates the resource view pool.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol MTLResourceViewPool](mtlresourceviewpool.md)
+### View pools
+- [protocol MTLResourceViewPool](./mtlresourceviewpool.md)
   Contains views over resources of a specific type, and allows you to manage those views.
-- [protocol MTLTextureViewPool](mtltextureviewpool.md)
+- [protocol MTLTextureViewPool](./mtltextureviewpool.md)
   A pool of lightweight texture views.
-- [class MTLTextureViewDescriptor](mtltextureviewdescriptor.md)
+- [class MTLTextureViewDescriptor](./mtltextureviewdescriptor.md)
 
 
 ---

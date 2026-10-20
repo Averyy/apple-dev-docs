@@ -1,7 +1,8 @@
 # CameraFrameProvider.CameraRectification.stereoCorrected
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Stereo corrected camera rectification.
 

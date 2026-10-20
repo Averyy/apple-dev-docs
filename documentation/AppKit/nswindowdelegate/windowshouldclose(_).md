@@ -1,12 +1,13 @@
 # windowShouldClose(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Tells the delegate that the user has attempted to close a window or the window has received a [`performClose(_:)`](nswindow/performclose(_:).md) message.
+Tells the delegate that the user has attempted to close a window or the window has received a [`performClose(_:)`](../nswindow/performclose%28_%29.md) message.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,13 @@ Tells the delegate that the user has attempted to close a window or the window h
 optional func windowShouldClose(_ sender: NSWindow) -> Bool
 ```
 
+```objc
+- (BOOL) windowShouldClose:(NSWindow *) sender;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow `sender` to be closed; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) to allow `sender` to be closed; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -29,7 +34,8 @@ This method may not always be called during window closing. Specifically, this m
 
 ## See Also
 
-- [func windowWillClose(Notification)](nswindowdelegate/windowwillclose(_:).md)
+### Closing Windows
+- [func windowWillClose(Notification)](./windowwillclose%28_%29.md)
   Tells the delegate that the window is about to close.
 
 

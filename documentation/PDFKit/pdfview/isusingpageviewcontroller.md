@@ -1,7 +1,8 @@
 # isUsingPageViewController
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scroll view is using a `UIPageViewController`.
 
@@ -18,11 +19,16 @@ A Boolean value indicating whether the scroll view is using a `UIPageViewControl
 var isUsingPageViewController: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL isUsingPageViewController;
+```
+
 ## See Also
 
-- [var displaysAsBook: Bool](pdfview/displaysasbook.md)
+### Displaying as Book
+- [var displaysAsBook: Bool](./displaysasbook.md)
   A Boolean value indicating whether the view will display the first page as a book cover (meaningful only when the document is in two-up or two-up continuous display mode).
-- [func usePageViewController(Bool, withViewOptions: [AnyHashable : Any]?)](pdfview/usepageviewcontroller(_:withviewoptions:).md)
+- [func usePageViewController(Bool, withViewOptions: [AnyHashable : Any]?)](./usepageviewcontroller%28_,withviewoptions%29.md)
   Changes the scroll view to use a `UIPageViewController` to layout and navigate pages.
 
 

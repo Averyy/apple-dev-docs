@@ -1,13 +1,14 @@
 # output::setColor
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the color of the rendered output.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -19,7 +20,7 @@ void output::setColor(half4 color)
 
 This function customizes the color applied to the rendered particle output, including the alpha channel. This affects only the rendered appearance and does not modify the particle itself.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/output__setColor.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/output__setColor.svg)
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # Add an Alternative Distribution Key
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Add an alternative distribution key for your alternative marketplace app or web distribution.
 
@@ -10,9 +11,9 @@ Add an alternative distribution key for your alternative marketplace app or web 
 
 ## Mentions
 
-- [Creating and configuring keys for web distribution](creating-and-configuring-keys-for-web-distribution.md)
-- [Creating keys and establishing alternative marketplace connections](creating-keys-and-establishing-alternative-marketplace-connections.md)
-- [Configuring alternative marketplaces and alternative marketplace apps](configuring-alternative-marketplaces-and-alternative-marketplace-apps.md)
+- [Creating and configuring keys for web distribution](./creating-and-configuring-keys-for-web-distribution.md)
+- [Creating keys and establishing alternative marketplace connections](./creating-keys-and-establishing-alternative-marketplace-connections.md)
+- [Configuring alternative marketplaces and alternative marketplace apps](./configuring-alternative-marketplaces-and-alternative-marketplace-apps.md)
 
 #### Discussion
 
@@ -22,7 +23,7 @@ You can use a single alternative distribution key for all alternative distributi
 
 **Request**:
 
-```None
+```
 POST https://api.appstoreconnect.apple.com/v1/alternativeDistributionKeys
 {
   "data": {
@@ -60,7 +61,7 @@ POST https://api.appstoreconnect.apple.com/v1/alternativeDistributionKeys
 
 **Request**:
 
-```None
+```
 POST https://api.appstoreconnect.apple.com/v1/alternativeDistributionKeys
 {
   "data": {
@@ -111,20 +112,36 @@ uQqDgFZuYG/NcYLwT3Zdw77s6//8XSI2NYv7WNgUONxMj+j65Qijq4/fhw==
 
 `POST https://api.appstoreconnect.apple.com/v1/alternativeDistributionKeys`
 
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `AlternativeDistributionKeyCreateRequest`
+
+## Responses
+
+- `201` Created (`AlternativeDistributionKeyResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `409` Conflict (`ErrorResponse`, `application/json`)
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
+
 ## See Also
 
-- [Creating keys and establishing alternative marketplace connections](creating-keys-and-establishing-alternative-marketplace-connections.md)
+### Creating and reading keys
+- [Creating keys and establishing alternative marketplace connections](./creating-keys-and-establishing-alternative-marketplace-connections.md)
   Manage keys you use to sign JSON web tokens and connect marketplaces with apps.
-- [Creating and configuring keys for web distribution](creating-and-configuring-keys-for-web-distribution.md)
+- [Creating and configuring keys for web distribution](./creating-and-configuring-keys-for-web-distribution.md)
   Manage keys you use to sign JSON web tokens (JWTs).
-- [List Alternative Distribution Keys](get-v1-alternativedistributionkeys.md)
+- [List Alternative Distribution Keys](./get-v1-alternativedistributionkeys.md)
   List the alternative distribution key for your account.
-- [Read Alternative Distribution Key Information](get-v1-alternativedistributionkeys-_id_.md)
+- [Read Alternative Distribution Key Information](./get-v1-alternativedistributionkeys-_id_.md)
   Read the public key information for a specific alternative distribution key.
-- [Get the alternative distribution key ID for an app](get-v1-apps-_id_-relationships-alternativedistributionkey.md)
-- [Read an App’s Alternative Distribution Key](get-v1-apps-_id_-alternativedistributionkey.md)
+- [Get the alternative distribution key ID for an app](./get-v1-apps-_id_-relationships-alternativedistributionkey.md)
+- [Read an App’s Alternative Distribution Key](./get-v1-apps-_id_-alternativedistributionkey.md)
   Get the alternative distribution keys for a specific app.
-- [Remove an Alternative Distribution Key](delete-v1-alternativedistributionkeys-_id_.md)
+- [Remove an Alternative Distribution Key](./delete-v1-alternativedistributionkeys-_id_.md)
   Remove an alternative distribution key from your account.
 
 

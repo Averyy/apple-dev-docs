@@ -1,7 +1,8 @@
 # title
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the context as it appears to users.
 
@@ -18,17 +19,22 @@ The name of the context as it appears to users.
 var title: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * title;
+```
+
 #### Discussion
 
 The title that you choose appears to teachers exactly as you store it. If your app works in many locales, localize the title. The framework doesn’t do that for you automatically.
 
 ## See Also
 
-- [var identifier: String](clscontext/identifier.md)
+### Identifying the context
+- [var identifier: String](./identifier.md)
   A string that uniquely identifies a context among its siblings.
-- [var summary: String?](clscontext/summary.md)
+- [var summary: String?](./summary.md)
   An optional, user-visible description of the context.
-- [var thumbnail: CGImage?](clscontext/thumbnail.md)
+- [var thumbnail: CGImage?](./thumbnail.md)
   An optional thumbnail image associated with the context.
 
 

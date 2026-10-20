@@ -1,7 +1,8 @@
 # reverse
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns whether enumerations start from the end of the text element.
 
@@ -16,6 +17,10 @@ Returns whether enumerations start from the end of the text element.
 
 ```swift
 static var reverse: NSTextContentManager.EnumerationOptions { get }
+```
+
+```c
+NSTextContentManagerEnumerationOptionsReverse
 ```
 
 

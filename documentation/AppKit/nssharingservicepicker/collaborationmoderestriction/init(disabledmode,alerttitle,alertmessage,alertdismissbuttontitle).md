@@ -1,7 +1,8 @@
 # init(disabledMode:alertTitle:alertMessage:alertDismissButtonTitle:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 15.0+
@@ -10,6 +11,10 @@
 
 ```swift
 init(disabledMode: NSSharingCollaborationMode, alertTitle: String, alertMessage: String, alertDismissButtonTitle: String)
+```
+
+```objc
+- (instancetype) initWithDisabledMode:(NSSharingCollaborationMode) disabledMode alertTitle:(NSString *) alertTitle alertMessage:(NSString *) alertMessage alertDismissButtonTitle:(NSString *) alertDismissButtonTitle;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # icon
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An icon that represents the component.
 
@@ -15,21 +16,42 @@ An icon that represents the component.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+var icon: UIImage? { get }
+```
+
+*macOS*
+
 ```swift
 var icon: NSImage? { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly, nullable) UIImage * icon;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic, readonly, nullable) NSImage * icon;
+```
+
 ## See Also
 
-- [var iconURL: URL?](avaudiounitcomponent/iconurl.md)
+### Getting Audio Unit component tags
+- [var iconURL: URL?](./iconurl.md)
   The URL of an icon that represents the audio unit component.
-- [var localizedTypeName: String](avaudiounitcomponent/localizedtypename.md)
+- [var localizedTypeName: String](./localizedtypename.md)
   The localized type name of the component.
-- [var allTagNames: [String]](avaudiounitcomponent/alltagnames.md)
+- [var allTagNames: [String]](./alltagnames.md)
   An array of tag names for the audio unit component.
-- [var userTagNames: [String]](avaudiounitcomponent/usertagnames.md)
+- [var userTagNames: [String]](./usertagnames.md)
   An array of tags the user creates.
-- [AVAudioUnitComponent.TagsDidChangeMessage](avaudiounitcomponent/tagsdidchangemessage.md)
+- [AVAudioUnitComponent.TagsDidChangeMessage](./tagsdidchangemessage.md)
   Type-safe notification message for audio unit component tag changes.
 
 

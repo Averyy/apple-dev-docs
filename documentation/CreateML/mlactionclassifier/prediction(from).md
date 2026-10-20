@@ -1,7 +1,8 @@
 # prediction(from:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a prediction for each action the classifier recognizes in the video.
 
@@ -24,9 +25,10 @@ An array of predictions.
 
 ## See Also
 
-- [func predictions(from: [URL]) throws -> [[MLActionClassifier.Prediction]]](mlactionclassifier/predictions(from:).md)
+### Testing an action classifier
+- [func predictions(from: [URL]) throws -> [[MLActionClassifier.Prediction]]](./predictions%28from%29.md)
   Generates a sequence of predictions for each video input.
-- [MLActionClassifier.Prediction](mlactionclassifier/prediction.md)
+- [MLActionClassifier.Prediction](./prediction.md)
   A collection of predictions, each paired with its confidence, for a range of video frames.
 
 

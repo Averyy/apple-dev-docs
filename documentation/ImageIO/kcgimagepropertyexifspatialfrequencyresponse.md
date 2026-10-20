@@ -1,7 +1,8 @@
 # kCGImagePropertyExifSpatialFrequencyResponse
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The spatial frequency table and spatial frequency response values in the width, height, and diagonal directions.
 
@@ -20,29 +21,34 @@ The spatial frequency table and spatial frequency response values in the width, 
 let kCGImagePropertyExifSpatialFrequencyResponse: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyExifSpatialFrequencyResponse;
+```
+
 #### Discussion
 
 For more information, see ISO 12233.
 
 ## See Also
 
-- [let kCGImagePropertyExifCFAPattern: CFString](kcgimagepropertyexifcfapattern.md)
+### Image Quality
+- [let kCGImagePropertyExifCFAPattern: CFString](./kcgimagepropertyexifcfapattern.md)
   The color filter array (CFA) pattern, which is the geometric pattern of the image sensor for a 1-chip color sensor area.
-- [let kCGImagePropertyExifBrightnessValue: CFString](kcgimagepropertyexifbrightnessvalue.md)
+- [let kCGImagePropertyExifBrightnessValue: CFString](./kcgimagepropertyexifbrightnessvalue.md)
   The brightness value.
-- [let kCGImagePropertyExifLightSource: CFString](kcgimagepropertyexiflightsource.md)
+- [let kCGImagePropertyExifLightSource: CFString](./kcgimagepropertyexiflightsource.md)
   The light source.
-- [let kCGImagePropertyExifFlash: CFString](kcgimagepropertyexifflash.md)
+- [let kCGImagePropertyExifFlash: CFString](./kcgimagepropertyexifflash.md)
   The flash status when the image was shot.
-- [let kCGImagePropertyExifContrast: CFString](kcgimagepropertyexifcontrast.md)
+- [let kCGImagePropertyExifContrast: CFString](./kcgimagepropertyexifcontrast.md)
   The contrast setting.
-- [let kCGImagePropertyExifSaturation: CFString](kcgimagepropertyexifsaturation.md)
+- [let kCGImagePropertyExifSaturation: CFString](./kcgimagepropertyexifsaturation.md)
   The saturation setting.
-- [let kCGImagePropertyExifSharpness: CFString](kcgimagepropertyexifsharpness.md)
+- [let kCGImagePropertyExifSharpness: CFString](./kcgimagepropertyexifsharpness.md)
   The sharpness setting.
-- [let kCGImagePropertyExifGamma: CFString](kcgimagepropertyexifgamma.md)
+- [let kCGImagePropertyExifGamma: CFString](./kcgimagepropertyexifgamma.md)
   The gamma setting.
-- [let kCGImagePropertyExifWhiteBalance: CFString](kcgimagepropertyexifwhitebalance.md)
+- [let kCGImagePropertyExifWhiteBalance: CFString](./kcgimagepropertyexifwhitebalance.md)
   The white balance mode.
 
 

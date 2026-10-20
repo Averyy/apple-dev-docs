@@ -1,7 +1,8 @@
 # ReorderDifference.Destination.Position.end
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The end of the collection. Append source items to the end of the collection.
 
@@ -22,11 +23,12 @@ case end
 
 ## Mentions
 
-- [Reordering items in lists, stacks, grids, and custom layouts](reordering-items-in-lists-stacks-grids-and-custom-layouts.md)
+- [Reordering items in lists, stacks, grids, and custom layouts](../../../reordering-items-in-lists-stacks-grids-and-custom-layouts.md)
 
 ## See Also
 
-- [ReorderDifference.Destination.Position.before(_:)](reorderdifference/destination-swift.struct/position-swift.enum/before(_:).md)
+### Destination positions
+- [ReorderDifference.Destination.Position.before(_:)](./before%28_%29.md)
   The position of the item with the associated identifier in its collection. Move source items to the index of this item.
 
 

@@ -1,7 +1,8 @@
 # IOUSBDescriptorHeader
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 The base descriptor header.
 
@@ -10,7 +11,7 @@ The base descriptor header.
 
 ## Declaration
 
-```swift
+```c
 typedef struct IOUSBDescriptorHeader IOUSBDescriptorHeader;
 ```
 
@@ -21,21 +22,23 @@ This structure is the standard header for all USB descriptors. Use it to read th
 ## Topics
 
 ### Getting the Descriptor Properties
-- [bLength](iousbdescriptorheader/1546043-blength.md)
+- [bLength](./iousbdescriptorheader/api-1546043-blength.md)
   The size of the descriptor.
-- [bDescriptorType](iousbdescriptorheader/1546469-bdescriptortype.md)
+- [bDescriptorType](./iousbdescriptorheader/api-1546469-bdescriptortype.md)
   The type of the descriptor.
 
 ## See Also
 
-- [IOUSBDescriptor](iousbdescriptor.md)
+### Descriptor Fundamentals
+- [IOUSBDescriptor](./iousbdescriptor.md)
   The base descriptor type.
-- [tIOUSBDescriptorType](tiousbdescriptortype.md)
+- [tIOUSBDescriptorType](./tiousbdescriptortype.md)
   Constants describing the types of descriptors available for a USB device.
-- [tIOUSBDescriptorSize](tiousbdescriptorsize.md)
+- [tIOUSBDescriptorSize](./tiousbdescriptorsize.md)
   Constants for the number of bytes in descriptor structures.
-- [IOUSBDescriptorHeaderPtr](iousbdescriptorheaderptr.md)
+- [IOUSBDescriptorHeaderPtr](./iousbdescriptorheaderptr.md)
   A pointer to a USB descriptor header.
+### Related Documentation
 - [IOUSBDescriptorHeader](../iokit/usb_h_user-space/iousbdescriptorheader.md)
 
 

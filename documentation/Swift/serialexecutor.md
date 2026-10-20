@@ -1,7 +1,8 @@
 # SerialExecutor
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A service that executes jobs.
 
@@ -28,9 +29,9 @@ By default, all actor types execute tasks on a shared global concurrent pool. Th
 
 Sometimes it is important to be able to customize the execution behavior of an actor. For example, when an actor is known to perform heavy blocking operations (such as IO), and we would like to keep this work *off* the global shared pool, as blocking it may prevent other actors from being responsive.
 
-You can implement a custom executor, by conforming a type to the [`SerialExecutor`](serialexecutor.md) protocol, and implementing the [`enqueue(_:)`](serialexecutor/enqueue(_:)-7sypu.md) method.
+You can implement a custom executor, by conforming a type to the [`SerialExecutor`](./serialexecutor.md) protocol, and implementing the [`enqueue(_:)`](./serialexecutor/enqueue%28_%29-7sypu.md) method.
 
-Once implemented, you can configure an actor to use such executor by implementing the actor’s [`unownedExecutor`](actor/unownedexecutor.md) computed property. For example, you could accept an executor in the actor’s initializer, store it as a variable (in order to retain it for the duration of the actor’s lifetime), and return it from the `unownedExecutor` computed property like this:
+Once implemented, you can configure an actor to use such executor by implementing the actor’s [`unownedExecutor`](./actor/unownedexecutor.md) computed property. For example, you could accept an executor in the actor’s initializer, store it as a variable (in order to retain it for the duration of the actor’s lifetime), and return it from the `unownedExecutor` computed property like this:
 
 ```swift
 actor MyActor {
@@ -63,57 +64,58 @@ actor MyActor {
 
 In the example above, *all* “MyActor” instances would be using the same serial executor, which would result in only one of such actors ever being run at the same time. This may be useful if some of your code has some “specific thread” requirement when interoperating with non-Swift runtimes for example.
 
-Since the [`UnownedSerialExecutor`](unownedserialexecutor.md) returned by the `unownedExecutor` property *does not* retain the executor, you must make sure the lifetime of it extends beyond the lifetime of any actor or task using it, as otherwise it may attempt to enqueue work on a released executor object, causing a crash. The executor returned by unownedExecutor *must* always be the same object, and returning different executors can lead to unexpected behavior.
+Since the [`UnownedSerialExecutor`](./unownedserialexecutor.md) returned by the `unownedExecutor` property *does not* retain the executor, you must make sure the lifetime of it extends beyond the lifetime of any actor or task using it, as otherwise it may attempt to enqueue work on a released executor object, causing a crash. The executor returned by unownedExecutor *must* always be the same object, and returning different executors can lead to unexpected behavior.
 
 Alternatively, you can also use existing serial executor implementations, such as Dispatch’s `DispatchSerialQueue` or others.
 
 ## Topics
 
 ### Instance Properties
-- [var isMainExecutor: Bool](serialexecutor/ismainexecutor.md)
+- [var isMainExecutor: Bool](./serialexecutor/ismainexecutor.md)
 ### Instance Methods
-- [func asUnownedSerialExecutor() -> UnownedSerialExecutor](serialexecutor/asunownedserialexecutor.md)
+- [func asUnownedSerialExecutor() -> UnownedSerialExecutor](./serialexecutor/asunownedserialexecutor%28%29.md)
   Convert this executor value to the optimized form of borrowed executor references.
-- [func assertIsolated(@autoclosure () -> String, file: StaticString, line: UInt)](serialexecutor/assertisolated(_:file:line:).md)
+- [func assertIsolated(@autoclosure () -> String, file: StaticString, line: UInt)](./serialexecutor/assertisolated%28_,file,line%29.md)
   Stops program execution if the current task is not executing on this serial executor.
-- [func checkIsolated()](serialexecutor/checkisolated.md)
-  Last resort “fallback” isolation check, called when the concurrency runtime is comparing executors e.g. during [`assumeIsolated(_:file:line:)`](actor/assumeisolated(_:file:line:).md) and is unable to prove serial equivalence between the expected (this object), and the current executor.
-- [func enqueue(UnownedJob)](serialexecutor/enqueue(_:)-229km.md)
-- [func enqueue(consuming Job)](serialexecutor/enqueue(_:)-2xi5n.md)
-- [func enqueue(consuming ExecutorJob)](serialexecutor/enqueue(_:)-7sypu.md)
-- [func isIsolatingCurrentContext() -> Bool?](serialexecutor/isisolatingcurrentcontext.md)
+- [func checkIsolated()](./serialexecutor/checkisolated%28%29.md)
+  Last resort “fallback” isolation check, called when the concurrency runtime is comparing executors e.g. during [`assumeIsolated(_:file:line:)`](./actor/assumeisolated%28_,file,line%29.md) and is unable to prove serial equivalence between the expected (this object), and the current executor.
+- [func enqueue(UnownedJob)](./serialexecutor/enqueue%28_%29-229km.md)
+- [func enqueue(consuming Job)](./serialexecutor/enqueue%28_%29-2xi5n.md)
+- [func enqueue(consuming ExecutorJob)](./serialexecutor/enqueue%28_%29-7sypu.md)
+- [func isIsolatingCurrentContext() -> Bool?](./serialexecutor/isisolatingcurrentcontext%28%29.md)
   Checks if the current execution context is isolated by this executor.
-- [func isSameExclusiveExecutionContext(other: Self) -> Bool](serialexecutor/issameexclusiveexecutioncontext(other:).md)
+- [func isSameExclusiveExecutionContext(other: Self) -> Bool](./serialexecutor/issameexclusiveexecutioncontext%28other%29.md)
   If this executor has complex equality semantics, and the runtime needs to compare two executors, it will first attempt the usual pointer-based equality / check, / and if it fails it will compare the types of both executors, if they are the same, / it will finally invoke this method, in an attempt to let the executor itself decide / if this and the `other` executor represent the same serial, exclusive, isolation context.
-- [func preconditionIsolated(@autoclosure () -> String, file: StaticString, line: UInt)](serialexecutor/preconditionisolated(_:file:line:).md)
+- [func preconditionIsolated(@autoclosure () -> String, file: StaticString, line: UInt)](./serialexecutor/preconditionisolated%28_,file,line%29.md)
   Stops program execution if the current task is not executing on this serial executor.
 
 ## Relationships
 
 ### Inherits From
-- [Executor](executor.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Executor](./executor.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [protocol Executor](executor.md)
+### Executors
+- [protocol Executor](./executor.md)
   A service that can execute jobs.
-- [struct ExecutorJob](executorjob.md)
+- [struct ExecutorJob](./executorjob.md)
   A unit of schedulable work.
-- [protocol TaskExecutor](taskexecutor.md)
+- [protocol TaskExecutor](./taskexecutor.md)
   An executor that may be used as preferred executor by a task.
-- [struct UnownedJob](unownedjob.md)
+- [struct UnownedJob](./unownedjob.md)
   A unit of schedulable work.
-- [struct JobPriority](jobpriority.md)
+- [struct JobPriority](./jobpriority.md)
   The priority of this job.
-- [struct UnownedSerialExecutor](unownedserialexecutor.md)
+- [struct UnownedSerialExecutor](./unownedserialexecutor.md)
   An unowned reference to a serial executor (a `SerialExecutor` value).
-- [struct UnownedTaskExecutor](unownedtaskexecutor.md)
-- [var globalConcurrentExecutor: any TaskExecutor](globalconcurrentexecutor.md)
+- [struct UnownedTaskExecutor](./unownedtaskexecutor.md)
+- [var globalConcurrentExecutor: any TaskExecutor](./globalconcurrentexecutor.md)
   The global concurrent executor that is used by default for Swift Concurrency tasks.
-- [func withTaskExecutorPreference<T, Failure>((any TaskExecutor)?, isolation: isolated (any Actor)?, operation: () async throws(Failure) -> T) async throws(Failure) -> T](withtaskexecutorpreference(_:isolation:operation:).md)
-  Configure the current task hierarchy’s task executor preference to the passed [`TaskExecutor`](taskexecutor.md), and execute the passed in closure by immediately hopping to that executor.
+- [func withTaskExecutorPreference<T, Failure>((any TaskExecutor)?, isolation: isolated (any Actor)?, operation: () async throws(Failure) -> T) async throws(Failure) -> T](./withtaskexecutorpreference%28_,isolation,operation%29.md)
+  Configure the current task hierarchy’s task executor preference to the passed [`TaskExecutor`](./taskexecutor.md), and execute the passed in closure by immediately hopping to that executor.
 
 
 ---

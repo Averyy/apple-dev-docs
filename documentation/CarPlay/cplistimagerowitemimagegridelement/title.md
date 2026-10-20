@@ -1,7 +1,8 @@
 # title
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title associated with this element.
 
@@ -14,6 +15,10 @@ The title associated with this element.
 
 ```swift
 var title: String { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSString * title;
 ```
 
 

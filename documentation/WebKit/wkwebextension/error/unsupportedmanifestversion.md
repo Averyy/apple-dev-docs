@@ -1,7 +1,8 @@
 # unsupportedManifestVersion
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the manifest version is not supported.
 

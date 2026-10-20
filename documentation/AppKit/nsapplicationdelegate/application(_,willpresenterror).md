@@ -1,18 +1,23 @@
 # application(_:willPresentError:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an error for the app to display to the user.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @MainActor
 optional func application(_ application: NSApplication, willPresentError error: any Error) -> any Error
+```
+
+```objc
+- (NSError *) application:(NSApplication *) application willPresentError:(NSError *) error;
 ```
 
 #### Return Value

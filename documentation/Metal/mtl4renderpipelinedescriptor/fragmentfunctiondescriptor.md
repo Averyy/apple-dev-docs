@@ -1,7 +1,8 @@
 # fragmentFunctionDescriptor
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Assigns the shader function that this pipeline executes for each fragment.
 
@@ -20,9 +21,13 @@ Assigns the shader function that this pipeline executes for each fragment.
 var fragmentFunctionDescriptor: MTL4FunctionDescriptor? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) MTL4FunctionDescriptor * fragmentFunctionDescriptor;
+```
+
 #### Discussion
 
-When you don’t specify a fragment function, you need to disable rasterization by setting property [`isRasterizationEnabled`](mtl4renderpipelinedescriptor/israsterizationenabled.md) to false.
+When you don’t specify a fragment function, you need to disable rasterization by setting property [`isRasterizationEnabled`](./israsterizationenabled.md) to false.
 
 
 ---

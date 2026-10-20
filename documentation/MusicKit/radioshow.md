@@ -1,7 +1,8 @@
 # RadioShow
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A music item that represents a radio show.
 
@@ -23,63 +24,64 @@ struct RadioShow
 ## Topics
 
 ### Instance Properties
-- [var artwork: Artwork?](radioshow/artwork.md)
+- [var artwork: Artwork?](./radioshow/artwork.md)
   The radio show artwork.
-- [var editorialNotes: EditorialNotes?](radioshow/editorialnotes.md)
+- [var editorialNotes: EditorialNotes?](./radioshow/editorialnotes.md)
   The notes about the radio show that appear in the Music catalog.
-- [var hostName: String?](radioshow/hostname.md)
+- [var hostName: String?](./radioshow/hostname.md)
   The name of the host for the radio show.
-- [let id: MusicItemID](radioshow/id.md)
+- [let id: MusicItemID](./radioshow/id.md)
   The unique identifier for the radio show.
-- [var name: String](radioshow/name.md)
+- [var name: String](./radioshow/name.md)
   The name of the radio show.
-- [var playlists: MusicItemCollection<Playlist>?](radioshow/playlists.md)
+- [var playlists: MusicItemCollection<Playlist>?](./radioshow/playlists.md)
   The radio show’s associated playlists.
-- [var url: URL?](radioshow/url.md)
+- [var url: URL?](./radioshow/url.md)
   The URL for the radio show.
 ### Default Implementations
-- [FilterableMusicItem Implementations](radioshow/filterablemusicitem-implementations.md)
+- [FilterableMusicItem Implementations](./radioshow/filterablemusicitem-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [FilterableMusicItem](filterablemusicitem.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [MusicCatalogSearchable](musiccatalogsearchable.md)
-- [MusicItem](musicitem.md)
-- [MusicPropertyContainer](musicpropertycontainer.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [FilterableMusicItem](./filterablemusicitem.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [MusicCatalogSearchable](./musiccatalogsearchable.md)
+- [MusicItem](./musicitem.md)
+- [MusicPropertyContainer](./musicpropertycontainer.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Album](album.md)
+### Music Items
+- [struct Album](./album.md)
   A music item that represents an album.
-- [struct Artist](artist.md)
+- [struct Artist](./artist.md)
   A music item that represents an artist.
-- [struct Curator](curator.md)
+- [struct Curator](./curator.md)
   A music item that represents a curator.
-- [struct Genre](genre.md)
+- [struct Genre](./genre.md)
   A music item that represents a genre.
-- [struct MusicVideo](musicvideo.md)
+- [struct MusicVideo](./musicvideo.md)
   A music item that represents a music video.
-- [struct Playlist](playlist.md)
+- [struct Playlist](./playlist.md)
   A music item that represents a playlist.
-- [struct RecordLabel](recordlabel.md)
+- [struct RecordLabel](./recordlabel.md)
   A music item that represents a record label.
-- [struct Song](song.md)
+- [struct Song](./song.md)
   A music item that represents a song.
-- [struct Station](station.md)
+- [struct Station](./station.md)
   A music item that represents a station.
-- [enum Track](track.md)
+- [enum Track](./track.md)
   A music item that represents a track.
 
 

@@ -1,18 +1,19 @@
 # init(_:)
 
 **Framework**: Compression  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new constant from the given raw value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,7 +23,8 @@ init(_ rawValue: UInt32)
 
 ## See Also
 
-- [init(rawValue: UInt32)](compression_stream_operation/init(rawvalue:).md)
+### Initializers
+- [init(rawValue: UInt32)](./init%28rawvalue%29.md)
   Creates a new constant from the given raw value.
 
 

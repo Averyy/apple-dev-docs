@@ -2,6 +2,7 @@
 
 **Framework**: ImageCaptureCore  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that a device has been removed.
@@ -19,19 +20,24 @@ Tells the delegate that a device has been removed.
 func didRemove(_ device: ICDevice)
 ```
 
+```objc
+- (void) didRemoveDevice:(ICDevice *) device;
+```
+
 ## See Also
 
-- [func device(ICDevice, didOpenSessionWithError: (any Error)?)](icdevicedelegate/device(_:didopensessionwitherror:).md)
+### Responding to Device Events
+- [func device(ICDevice, didOpenSessionWithError: (any Error)?)](./device%28_,didopensessionwitherror%29.md)
   Tells the delegate when a session is opened on a device.
-- [func device(ICDevice, didCloseSessionWithError: (any Error)?)](icdevicedelegate/device(_:didclosesessionwitherror:).md)
+- [func device(ICDevice, didCloseSessionWithError: (any Error)?)](./device%28_,didclosesessionwitherror%29.md)
   Tells the delegate when a session is closed on a device.
-- [func deviceDidBecomeReady(ICDevice)](icdevicedelegate/devicedidbecomeready(_:).md)
+- [func deviceDidBecomeReady(ICDevice)](./devicedidbecomeready%28_%29.md)
   Tells the delegate when the device is ready to receive requests.
-- [func device(ICDevice, didReceiveStatusInformation: [ICDeviceStatus : Any])](icdevicedelegate/device(_:didreceivestatusinformation:).md)
+- [func device(ICDevice, didReceiveStatusInformation: [ICDeviceStatus : Any])](./device%28_,didreceivestatusinformation%29.md)
   Tells the delegate when status information is received from a device.
-- [func device(ICDevice, didEncounterError: (any Error)?)](icdevicedelegate/device(_:didencountererror:).md)
+- [func device(ICDevice, didEncounterError: (any Error)?)](./device%28_,didencountererror%29.md)
   Tells the delegate when a device encounters an error.
-- [func device(ICDevice, didEjectWithError: (any Error)?)](icdevicedelegate/device(_:didejectwitherror:).md)
+- [func device(ICDevice, didEjectWithError: (any Error)?)](./device%28_,didejectwitherror%29.md)
   Tells the delegate when the ejection is complete.
 
 

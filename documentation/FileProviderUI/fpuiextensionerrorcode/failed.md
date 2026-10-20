@@ -1,7 +1,8 @@
 # FPUIExtensionErrorCode.failed
 
 **Framework**: File Provider UI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating that the action has failed.
 
@@ -18,9 +19,14 @@ An error indicating that the action has failed.
 case failed
 ```
 
+```c
+FPUIExtensionErrorCodeFailed
+```
+
 ## See Also
 
-- [FPUIExtensionErrorCode.userCancelled](fpuiextensionerrorcode/usercancelled.md)
+### Error Codes
+- [FPUIExtensionErrorCode.userCancelled](./usercancelled.md)
   An error indicating that the action was canceled by the user.
 
 

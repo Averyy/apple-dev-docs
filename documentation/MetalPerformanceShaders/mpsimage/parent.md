@@ -1,7 +1,8 @@
 # parent
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 10.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var parent: MPSImage? { get }
+```
+
+```objc
+@property (nonatomic, retain, readonly, nullable) MPSImage * parent;
 ```
 
 

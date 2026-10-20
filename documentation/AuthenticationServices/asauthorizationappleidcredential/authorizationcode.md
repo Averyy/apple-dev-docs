@@ -1,7 +1,8 @@
 # authorizationCode
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A token that the app uses to interact with the server.
 
@@ -20,19 +21,24 @@ A token that the app uses to interact with the server.
 var authorizationCode: Data? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSData * authorizationCode;
+```
+
 #### Discussion
 
 Your app uses this short-lived token as proof that it has authorization to interact with the server.
 
-The system encodes the object as a string using [`NSUTF8StringEncoding`](https://developer.apple.com/documentation/foundation/nsutf8stringencoding).
+The system encodes the object as a string using [`NSUTF8StringEncoding`](../../Foundation/nsutf8stringencoding.md).
 
 ## See Also
 
-- [var identityToken: Data?](asauthorizationappleidcredential/identitytoken.md)
+### Identifying a User
+- [var identityToken: Data?](./identitytoken.md)
   A JSON Web Token (JWT) that securely communicates information about the user to the app.
-- [var state: String?](asauthorizationappleidcredential/state.md)
+- [var state: String?](./state.md)
   An arbitrary string that your app provides to the request that generates the credential.
-- [var user: String](asauthorizationappleidcredential/user.md)
+- [var user: String](./user.md)
   An identifier for the authenticated user.
 
 

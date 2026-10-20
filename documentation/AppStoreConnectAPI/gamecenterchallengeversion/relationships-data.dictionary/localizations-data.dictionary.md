@@ -1,21 +1,22 @@
 # GameCenterChallengeVersion.Relationships.Localizations
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 4.0+
 
 ## Declaration
 
-```swift
+```
 object GameCenterChallengeVersion.Relationships.Localizations
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterChallengeVersion.Relationships.Localizations.Data](gamecenterchallengeversion/relationships-data.dictionary/localizations-data.dictionary/data-data.dictionary.md)
+- [object GameCenterChallengeVersion.Relationships.Localizations.Data](./localizations-data.dictionary/data-data.dictionary.md)
   The request body you use to update a challenge.
 
 ## Properties

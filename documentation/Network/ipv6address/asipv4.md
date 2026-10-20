@@ -1,7 +1,8 @@
 # asIPv4
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Extracts the IPv4 address contained within the IPv6 address, if the IPv6 address is an IPv4-mapped or IPv4-compatible address.
 
@@ -22,9 +23,10 @@ var asIPv4: IPv4Address? { get }
 
 ## See Also
 
-- [init?(String)](ipv6address/init(_:).md)
+### Creating Addresses
+- [init?(String)](./init%28_%29.md)
   Initializes an IPv6 address with a string.
-- [init?(Data, NWInterface?)](ipv6address/init(_:_:).md)
+- [init?(Data, NWInterface?)](./init%28_,_%29.md)
   Initializes an IPv6 address with data.
 
 

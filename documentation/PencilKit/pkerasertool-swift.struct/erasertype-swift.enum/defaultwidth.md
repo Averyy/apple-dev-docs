@@ -1,7 +1,8 @@
 # defaultWidth
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default width for an eraser type.
 
@@ -20,7 +21,8 @@ var defaultWidth: CGFloat { get }
 
 ## See Also
 
-- [var validWidthRange: ClosedRange<CGFloat>](pkerasertool-swift.struct/erasertype-swift.enum/validwidthrange.md)
+### Getting the width information
+- [var validWidthRange: ClosedRange<CGFloat>](./validwidthrange.md)
   The valid width range for an eraser type.
 
 

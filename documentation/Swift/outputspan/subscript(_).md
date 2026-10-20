@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Swift  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the element at the specified index.
 
@@ -22,7 +23,7 @@ subscript(index: OutputSpan<Element>.Index) -> Element { borrow mutate }
 
 #### Overview
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # regions
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var regions: UnsafePointer<MPSRegion> { get }
+```
+
+```objc
+@property (nonatomic, readonly, nonnull) const MPSRegion * regions;
 ```
 
 

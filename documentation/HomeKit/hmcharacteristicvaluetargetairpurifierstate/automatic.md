@@ -1,7 +1,8 @@
 # HMCharacteristicValueTargetAirPurifierState.automatic
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The air purifier should operate in an automatic mode.
 
@@ -19,9 +20,14 @@ The air purifier should operate in an automatic mode.
 case automatic
 ```
 
+```c
+HMCharacteristicValueTargetAirPurifierStateAutomatic
+```
+
 ## See Also
 
-- [HMCharacteristicValueTargetAirPurifierState.manual](hmcharacteristicvaluetargetairpurifierstate/manual.md)
+### Air Purifier States
+- [HMCharacteristicValueTargetAirPurifierState.manual](./manual.md)
   The air purifier should operate in a manual mode.
 
 

@@ -1,15 +1,18 @@
 # WKPreviewActionItem
 
 **Framework**: WebKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The `WKPreviewActionItem` protocol provides access to the properties of a Preview action item.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 10.0+ - Deprecated in 13.0
+- iPadOS 10.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: This API will be replaced
 
 ## Declaration
 
@@ -17,21 +20,26 @@ The `WKPreviewActionItem` protocol provides access to the properties of a Previe
 protocol WKPreviewActionItem : UIPreviewActionItem
 ```
 
+```objc
+@protocol WKPreviewActionItem <UIPreviewActionItem>
+```
+
 ## Topics
 
 ### Accessing Preview Actions
-- [var identifier: String!](wkpreviewactionitem/identifier.md)
+- [var identifier: String!](./wkpreviewactionitem/identifier.md)
   A pointer to the identifier of the Preview action.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [UIPreviewActionItem](../uikit/uipreviewactionitem.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [UIPreviewActionItem](../UIKit/uipreviewactionitem.md)
 
 ## See Also
 
-- [class WKPreviewElementInfo](wkpreviewelementinfo.md)
+### Preview
+- [class WKPreviewElementInfo](./wkpreviewelementinfo.md)
   The `WKPreviewElement` object contains information for previewing a webpage.
 
 

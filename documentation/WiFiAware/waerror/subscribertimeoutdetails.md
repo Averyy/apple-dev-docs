@@ -1,7 +1,8 @@
 # WAError.SubscriberTimeoutDetails
 
 **Framework**: Wi-Fi Aware  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The optional details describing the timed out subscriber.
 
@@ -19,22 +20,23 @@ struct SubscriberTimeoutDetails
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case connectionIdleTimeout(WAError.ConnectionIdleTimeoutDetails)](waerror/connectionidletimeout(_:).md)
+### Checking for timeouts
+- [case connectionIdleTimeout(WAError.ConnectionIdleTimeoutDetails)](./connectionidletimeout%28_%29.md)
   An error that occurs due to an idle or unused connection.
-- [case publisherTimeout(WAError.PublisherTimeoutDetails)](waerror/publishertimeout(_:).md)
+- [case publisherTimeout(WAError.PublisherTimeoutDetails)](./publishertimeout%28_%29.md)
   An error that occurs due to publisher timeout.
-- [case subscriberTimeout(WAError.SubscriberTimeoutDetails)](waerror/subscribertimeout(_:).md)
+- [case subscriberTimeout(WAError.SubscriberTimeoutDetails)](./subscribertimeout%28_%29.md)
   An error that occurs due to subscriber timeout.
-- [WAError.ConnectionIdleTimeoutDetails](waerror/connectionidletimeoutdetails.md)
+- [WAError.ConnectionIdleTimeoutDetails](./connectionidletimeoutdetails.md)
   The optional details describing the missing resources.
-- [WAError.PublisherTimeoutDetails](waerror/publishertimeoutdetails.md)
+- [WAError.PublisherTimeoutDetails](./publishertimeoutdetails.md)
   The optional details describing the timed out publisher.
 
 

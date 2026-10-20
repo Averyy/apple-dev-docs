@@ -1,7 +1,8 @@
 # entityIdentifierString
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the string representation of this identifier’s local ID.
 
@@ -20,6 +21,8 @@ Returns the string representation of this identifier’s local ID.
 var entityIdentifierString: String { get }
 ```
 
+Available when `LocalID` conforms to `EntityIdentifierConvertible`, `LocalID` conforms to `Sendable`, `StableID` conforms to `EntityIdentifierConvertible`, and `StableID` conforms to `Sendable`.
+
 #### Return Value
 
 The local ID’s string representation
@@ -28,7 +31,7 @@ The local ID’s string representation
 
 This method requires a local ID to be present. Stable-only identifiers (created via the `@_spi(_)` initializer) should not have this method called.
 
-> **Note**: The identifier must have a local ID
+> **Precondition**: The identifier must have a local ID
 
 
 ---

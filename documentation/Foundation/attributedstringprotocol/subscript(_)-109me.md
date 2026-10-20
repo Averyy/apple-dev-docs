@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: subscript  
+**Role**: Instance Subscript  
 **Required**: Yes
 
 Returns a substring of the attributed string using a range to indicate the substring bounds.
@@ -20,6 +21,12 @@ Returns a substring of the attributed string using a range to indicate the subst
 ```swift
 subscript<R>(bounds: R) -> AttributedSubstring where R : RangeExpression, R.Bound == AttributedString.Index { get }
 ```
+
+## Default Implementations
+
+### AttributedStringProtocol Implementations
+- [subscript(RangeSet<AttributedString.Index>) -> DiscontiguousAttributedSubstring](./subscript%28_%29-67hgv.md)
+  Returns a discontiguous substring of this attributed string using a set of ranges to indicate the discontiguous substring bounds.
 
 
 ---

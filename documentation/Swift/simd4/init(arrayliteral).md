@@ -1,7 +1,8 @@
 # init(arrayLiteral:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a vector from the specified elements.
 

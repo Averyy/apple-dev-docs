@@ -1,7 +1,8 @@
 # kSecPolicyAppleRevocation
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 7.0+
@@ -16,6 +17,10 @@
 
 ```swift
 let kSecPolicyAppleRevocation: CFString
+```
+
+```c
+extern CFStringRef const kSecPolicyAppleRevocation;
 ```
 
 

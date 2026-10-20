@@ -1,7 +1,8 @@
 # ignoreOutput()
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -20,9 +21,10 @@ func ignoreOutput() -> Empty<Output, Just<Output>.Failure>
 
 ## See Also
 
-- [func collect() -> Just<[Output]>](just/collect.md)
-- [func reduce<T>(T, (T, Output) -> T) -> Result<T, Just<Output>.Failure>.Publisher](just/reduce(_:_:).md)
-- [func tryReduce<T>(T, (T, Output) throws -> T) -> Result<T, any Error>.Publisher](just/tryreduce(_:_:).md)
+### Reducing elements
+- [func collect() -> Just<[Output]>](./collect%28%29.md)
+- [func reduce<T>(T, (T, Output) -> T) -> Result<T, Just<Output>.Failure>.Publisher](./reduce%28_,_%29.md)
+- [func tryReduce<T>(T, (T, Output) throws -> T) -> Result<T, any Error>.Publisher](./tryreduce%28_,_%29.md)
 
 
 ---

@@ -1,6 +1,7 @@
 # Fixing issues in your code as you type
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Minimize typing-related errors using code completion, and let Xcode fix common mistakes for you.
 
@@ -8,13 +9,13 @@ Minimize typing-related errors using code completion, and let Xcode fix common m
 
 Xcode includes a number of features that help reduce typical coding mistakes, such as when you misspell a symbol name or forget to add a closing delimiter. By leveraging these features, you can focus more time on adding value to your app and less time fixing easily avoidable issues. With your explicit consent, Xcode can help you locate the correct symbol, fix common errors, and automatically match braces, parentheses, and brackets, by directly changing your code.
 
-##### Avoid Syntax Errors By Using Code Completion
+##### Avoid syntax errors by using code completion
 
 When you begin typing the name of a symbol in the source editor, Xcode displays a list of suggestions for completing the name. You can dismiss this list by pressing Escape or clicking elsewhere in the source editor. If the possible completions share a common string, Xcode highlights that string. If there isn’t a common string, Xcode highlights the matching parts of the string instead.
 
 Press the Up Arrow and Down Arrow keys to navigate through the list of possible completions. Alternatively, you can click an item in the list to select it. Xcode displays a description of the selected item below the list.
 
-![An Xcode screenshot of the Project navigator on the left and the source editor on the right showing the completion list with a symbol selected and a description of it below.](/images/com.apple.Xcode/auto-complete@2x.png)
+![An Xcode screenshot of the Project navigator on the left and the source editor on the right showing the completion list with a symbol selected and a description of it below.](https://developer.apple.com/tutorials/images/com.apple.Xcode/auto-complete@2x.png)
 
 For initializers with multiple signatures, click the disclosure triangle on the right to see the variations below.
 
@@ -30,7 +31,7 @@ To prevent Xcode from suggesting completions as you type:
 
 Alternatively, invoke code completion as needed by choosing On Demand and pressing Control-Space or Escape while typing. You can change the shortcut for code completion in Xcode > Settings > Shortcuts.
 
-##### Match Braces Parentheses and Brackets Automatically
+##### Match braces, parentheses, and brackets automatically
 
 Xcode helps you identify and balance opening and closing delimiters — braces, parentheses, and brackets — within your code. You can take advantage of this functionality by doing one or more of the following:
 
@@ -45,13 +46,13 @@ To prevent Xcode from automatically inserting delimiters:
 1. Choose Xcode > Settings, then select Editing in the sidebar.
 2. Toggle the “Automatically insert closing braces” and “Enclose selection in matching delimiters” settings off.
 
-##### Apply Fixes to Your Code
+##### Apply fixes to your code
 
 As you enter code in the source editor, Xcode checks the syntax and offers fixes when you pause typing.
 
 Xcode highlights issues with a red or yellow underline and presents an issue summary and icon. Clicking the icon displays more information about the issue and, in many cases, provides a fix that you can apply.
 
-![An Xcode screenshot showing the Issues navigator on the left and the source editor on the right with more information about three issues.](/images/com.apple.Xcode/fix-it-correction@2x.png)
+![An Xcode screenshot showing the Issues navigator on the left and the source editor on the right with more information about three issues.](https://developer.apple.com/tutorials/images/com.apple.Xcode/fix-it-correction@2x.png)
 
 To apply a fix for an issue:
 
@@ -62,7 +63,7 @@ If the popover contains multiple issues, navigate between them using the Up Arro
 
 You can configure the appearance and behavior of issues that appear in the source editor in Xcode > Settings > General under Issues. For example, to turn off fix suggestions, toggle the “Show live issues” setting off.
 
-If you set up coding intelligence, you can click the Generate button that appears at the bottom of the popover to fix the issues. See [`Writing code with intelligence in Xcode`](writing-code-with-intelligence-in-xcode.md).
+If you set up coding intelligence, you can click the Generate button that appears at the bottom of the popover to fix the issues. See [Writing code with intelligence in Xcode](./writing-code-with-intelligence-in-xcode.md).
 
 
 ---

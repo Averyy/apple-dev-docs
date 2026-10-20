@@ -1,7 +1,8 @@
 # fontPickerViewControllerDidPickFont(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the user has selected a font.
 
@@ -17,9 +18,13 @@ Tells the delegate that the user has selected a font.
 optional func fontPickerViewControllerDidPickFont(_ viewController: UIFontPickerViewController)
 ```
 
+```objc
+- (void) fontPickerViewControllerDidPickFont:(UIFontPickerViewController *) viewController;
+```
+
 #### Discussion
 
-When the user picks a font, you can retrieve information about the user’s selected font from the view controller’s [`selectedFontDescriptor`](uifontpickerviewcontroller/selectedfontdescriptor.md).
+When the user picks a font, you can retrieve information about the user’s selected font from the view controller’s [`selectedFontDescriptor`](../uifontpickerviewcontroller/selectedfontdescriptor.md).
 
 ## Parameters
 
@@ -27,7 +32,8 @@ When the user picks a font, you can retrieve information about the user’s sele
 
 ## See Also
 
-- [func fontPickerViewControllerDidCancel(UIFontPickerViewController)](uifontpickerviewcontrollerdelegate/fontpickerviewcontrollerdidcancel(_:).md)
+### Receiving font picker interactions
+- [func fontPickerViewControllerDidCancel(UIFontPickerViewController)](./fontpickerviewcontrollerdidcancel%28_%29.md)
   Tells the delegate that the user dismissed the font picker without selecting a font.
 
 

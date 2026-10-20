@@ -1,7 +1,8 @@
 # MTLFunctionType.visible
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A function you can use in a visible function table.
 
@@ -19,17 +20,23 @@ A function you can use in a visible function table.
 case visible
 ```
 
+```c
+MTLFunctionTypeVisible
+```
+
 ## See Also
 
-- [protocol MTLVisibleFunctionTable](mtlvisiblefunctiontable.md)
+### Related Documentation
+- [protocol MTLVisibleFunctionTable](../mtlvisiblefunctiontable.md)
   A table of shader functions visible to your app that you can pass into compute commands to customize the behavior of a shader.
-- [MTLFunctionType.vertex](mtlfunctiontype/vertex.md)
+### Function types
+- [MTLFunctionType.vertex](./vertex.md)
   A vertex function you can use in a render pipeline state object.
-- [MTLFunctionType.fragment](mtlfunctiontype/fragment.md)
+- [MTLFunctionType.fragment](./fragment.md)
   A fragment function you can use in a render pipeline state object.
-- [MTLFunctionType.kernel](mtlfunctiontype/kernel.md)
+- [MTLFunctionType.kernel](./kernel.md)
   A kernel you can use in a compute pipeline state object.
-- [MTLFunctionType.intersection](mtlfunctiontype/intersection.md)
+- [MTLFunctionType.intersection](./intersection.md)
   A function you can use in an intersection function table.
 
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kRegModifierMask](1645159-anonymous/kregmodifiermask.md)
-- [kRegNameSpaceModifierMask](1645159-anonymous/kregnamespacemodifiermask.md)
-- [kRegNoModifiers](1645159-anonymous/kregnomodifiers.md)
-- [kRegUniversalModifierMask](1645159-anonymous/kreguniversalmodifiermask.md)
+- [kRegModifierMask](./api-1645159-anonymous/kregmodifiermask.md)
+- [kRegNameSpaceModifierMask](./api-1645159-anonymous/kregnamespacemodifiermask.md)
+- [kRegNoModifiers](./api-1645159-anonymous/kregnomodifiers.md)
+- [kRegUniversalModifierMask](./api-1645159-anonymous/kreguniversalmodifiermask.md)
 
 
 ---

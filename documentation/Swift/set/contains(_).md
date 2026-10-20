@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the given element exists in the set.
 
@@ -19,6 +20,8 @@ Returns a Boolean value that indicates whether the given element exists in the s
 ```swift
 func contains(_ member: Element) -> Bool
 ```
+
+Available when `Element` conforms to `Hashable`.
 
 #### Return Value
 
@@ -39,7 +42,7 @@ if primes.contains(x) {
 // Prints "5 is prime!"
 ```
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

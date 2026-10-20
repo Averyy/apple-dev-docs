@@ -1,7 +1,8 @@
 # kSecOIDEKU_IPSec
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 let kSecOIDEKU_IPSec: CFString
+```
+
+```c
+extern CFStringRef const kSecOIDEKU_IPSec;
 ```
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: ExtensionFoundation  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Initializes the app extension and prepares it to run.

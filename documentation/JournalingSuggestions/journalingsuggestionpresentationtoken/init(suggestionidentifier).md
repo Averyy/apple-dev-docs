@@ -1,7 +1,8 @@
 # init(suggestionIdentifier:)
 
 **Framework**: Journaling Suggestions  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a token used to modify the content of JournalingSuggestionsPicker presentation.
 

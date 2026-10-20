@@ -1,7 +1,8 @@
 # IKRig.Joint.LimitsDefinition
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A definition of joint rotation limits.
 
@@ -28,19 +29,19 @@ Limit angles are defined as relative to the rest pose.
 ## Topics
 
 ### Initializers
-- [init(weight: Float, boneAxis: IKRig.Joint.LimitsDefinition.Axis, minimumAngles: SIMD3<Float>, maximumAngles: SIMD3<Float>)](ikrig/joint/limitsdefinition/init(weight:boneaxis:minimumangles:maximumangles:).md)
+- [init(weight: Float, boneAxis: IKRig.Joint.LimitsDefinition.Axis, minimumAngles: SIMD3<Float>, maximumAngles: SIMD3<Float>)](./limitsdefinition/init%28weight,boneaxis,minimumangles,maximumangles%29.md)
   Creates a joint limits definition.
 ### Instance Properties
-- [var boneAxis: IKRig.Joint.LimitsDefinition.Axis](ikrig/joint/limitsdefinition/boneaxis.md)
+- [var boneAxis: IKRig.Joint.LimitsDefinition.Axis](./limitsdefinition/boneaxis.md)
   The axis around which the bone twists.
-- [var maximumAngles: SIMD3<Float>](ikrig/joint/limitsdefinition/maximumangles.md)
+- [var maximumAngles: SIMD3<Float>](./limitsdefinition/maximumangles.md)
   The positive delta from the rest pose per-axis in radians.
-- [var minimumAngles: SIMD3<Float>](ikrig/joint/limitsdefinition/minimumangles.md)
+- [var minimumAngles: SIMD3<Float>](./limitsdefinition/minimumangles.md)
   The negative delta from the rest pose per-axis in radians.
-- [var weight: Float](ikrig/joint/limitsdefinition/weight.md)
+- [var weight: Float](./limitsdefinition/weight.md)
   The weight of the joint rotation limit demand.
 ### Enumerations
-- [IKRig.Joint.LimitsDefinition.Axis](ikrig/joint/limitsdefinition/axis.md)
+- [IKRig.Joint.LimitsDefinition.Axis](./limitsdefinition/axis.md)
 
 
 ---

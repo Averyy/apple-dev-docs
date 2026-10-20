@@ -1,7 +1,8 @@
 # kAXGroupRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A group box. This role can also be used to group other views without any visual indication of the grouping.
 
@@ -12,6 +13,10 @@ A group box. This role can also be used to group other views without any visual 
 
 ```swift
 var kAXGroupRole: String { get }
+```
+
+```c
+#define kAXGroupRole
 ```
 
 

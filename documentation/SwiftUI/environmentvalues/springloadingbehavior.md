@@ -1,7 +1,8 @@
 # springLoadingBehavior
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The behavior of spring loaded interactions for the views associated with this environment.
 
@@ -30,9 +31,10 @@ A value of `enabled` means that a view should support spring loaded interactions
 
 ## See Also
 
-- [func springLoadingBehavior(SpringLoadingBehavior) -> some View](view/springloadingbehavior(_:).md)
+### Configuring spring loading
+- [func springLoadingBehavior(SpringLoadingBehavior) -> some View](../view/springloadingbehavior%28_%29.md)
   Sets the spring loading behavior this view.
-- [struct SpringLoadingBehavior](springloadingbehavior.md)
+- [struct SpringLoadingBehavior](../springloadingbehavior.md)
   The options for controlling the spring loading behavior of views.
 
 

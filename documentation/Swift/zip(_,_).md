@@ -1,7 +1,8 @@
 # zip(_:_:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a sequence of pairs built out of two underlying sequences.
 

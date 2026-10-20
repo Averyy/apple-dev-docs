@@ -1,7 +1,8 @@
 # minuteSecond(padMinuteToLength:fractionalSecondsLength:roundFractionalSeconds:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a pattern to format a duration with minutes and seconds only, with the given unit configurations.
 
@@ -22,19 +23,20 @@ static func minuteSecond(padMinuteToLength: Int, fractionalSecondsLength: Int = 
 
 #### Return Value
 
-A [`Duration.TimeFormatStyle.Pattern`](duration/timeformatstyle/pattern-swift.struct.md) that formats a duration with minutes and seconds, using the given unit configurations.
+A [`Duration.TimeFormatStyle.Pattern`](../pattern-swift.struct.md) that formats a duration with minutes and seconds, using the given unit configurations.
 
 ## Parameters
 
 - `padMinuteToLength`: Padding for the minute field. For example, setting this value to `2` formats five minutes as `05:00` in the `en_US` locale.
 - `fractionalSecondsLength`: The length of the fractional seconds. For example, setting this value to `2` formats five minutes as `5:00.00` in the `en_US` locale.
-- `roundFractionalSeconds`: The rule to use for rounding the seconds value, given the remaining fractional seconds value. Use one of the cases from the [`FloatingPointRoundingRule`](floatingpointroundingrule.md) enumeration.
+- `roundFractionalSeconds`: The rule to use for rounding the seconds value, given the remaining fractional seconds value. Use one of the cases from the [`FloatingPointRoundingRule`](../../../floatingpointroundingrule.md) enumeration.
 
 ## See Also
 
-- [static func hourMinute(padHourToLength: Int, roundSeconds: FloatingPointRoundingRule) -> Duration.TimeFormatStyle.Pattern](duration/timeformatstyle/pattern-swift.struct/hourminute(padhourtolength:roundseconds:).md)
+### Creating a pattern
+- [static func hourMinute(padHourToLength: Int, roundSeconds: FloatingPointRoundingRule) -> Duration.TimeFormatStyle.Pattern](./hourminute%28padhourtolength,roundseconds%29.md)
   Returns a pattern to format a duration with hours and minutes only, with the given unit configurations.
-- [static func hourMinuteSecond(padHourToLength: Int, fractionalSecondsLength: Int, roundFractionalSeconds: FloatingPointRoundingRule) -> Duration.TimeFormatStyle.Pattern](duration/timeformatstyle/pattern-swift.struct/hourminutesecond(padhourtolength:fractionalsecondslength:roundfractionalseconds:).md)
+- [static func hourMinuteSecond(padHourToLength: Int, fractionalSecondsLength: Int, roundFractionalSeconds: FloatingPointRoundingRule) -> Duration.TimeFormatStyle.Pattern](./hourminutesecond%28padhourtolength,fractionalsecondslength,roundfractionalseconds%29.md)
   Returns a pattern to format a duration with hours, minutes, and seconds, with the given unit configurations.
 
 

@@ -1,7 +1,8 @@
 # LinkButtonStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A button style for buttons that emulate links.
 
@@ -17,39 +18,40 @@ struct LinkButtonStyle
 
 #### Overview
 
-You can also use [`link`](primitivebuttonstyle/link.md) to construct this style.
+You can also use [`link`](./primitivebuttonstyle/link.md) to construct this style.
 
 ## Topics
 
 ### Creating the button style
-- [init()](linkbuttonstyle/init.md)
+- [init()](./linkbuttonstyle/init%28%29.md)
   Creates a link button style.
 ### Supporting types
-- [func makeBody(configuration: LinkButtonStyle.Configuration) -> some View](linkbuttonstyle/makebody(configuration:).md)
+- [func makeBody(configuration: LinkButtonStyle.Configuration) -> some View](./linkbuttonstyle/makebody%28configuration%29.md)
   Creates a view that represents the body of a button.
 
 ## Relationships
 
 ### Conforms To
-- [PrimitiveButtonStyle](primitivebuttonstyle.md)
+- [PrimitiveButtonStyle](./primitivebuttonstyle.md)
 
 ## See Also
 
-- [struct DefaultButtonStyle](defaultbuttonstyle.md)
+### Supporting types
+- [struct DefaultButtonStyle](./defaultbuttonstyle.md)
   The default button style, based on the button’s context.
-- [struct AccessoryBarButtonStyle](accessorybarbuttonstyle.md)
+- [struct AccessoryBarButtonStyle](./accessorybarbuttonstyle.md)
   A button style that you use for actions in an accessory toolbar that narrow the focus of a search or other operation.
-- [struct AccessoryBarActionButtonStyle](accessorybaractionbuttonstyle.md)
+- [struct AccessoryBarActionButtonStyle](./accessorybaractionbuttonstyle.md)
   A button style that you use for extra actions in an accessory toolbar.
-- [struct BorderedButtonStyle](borderedbuttonstyle.md)
+- [struct BorderedButtonStyle](./borderedbuttonstyle.md)
   A button style that applies standard border artwork based on the button’s context.
-- [struct BorderedProminentButtonStyle](borderedprominentbuttonstyle.md)
+- [struct BorderedProminentButtonStyle](./borderedprominentbuttonstyle.md)
   A button style that applies standard border prominent artwork based on the button’s context.
-- [struct BorderlessButtonStyle](borderlessbuttonstyle.md)
+- [struct BorderlessButtonStyle](./borderlessbuttonstyle.md)
   A button style that doesn’t apply a border.
-- [struct CardButtonStyle](cardbuttonstyle.md)
+- [struct CardButtonStyle](./cardbuttonstyle.md)
   A button style that doesn’t pad the content, and applies a motion effect when a button has focus.
-- [struct PlainButtonStyle](plainbuttonstyle.md)
+- [struct PlainButtonStyle](./plainbuttonstyle.md)
   A button style that doesn’t style or decorate its content while idle, but may apply a visual effect to indicate the pressed, focused, or enabled state of the button.
 
 

@@ -1,7 +1,8 @@
 # number
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A style for formatting decimal values.
 
@@ -20,9 +21,11 @@ A style for formatting decimal values.
 static var number: Decimal.FormatStyle { get }
 ```
 
+Available when `Self` is `Decimal.FormatStyle`.
+
 #### Discussion
 
-Use this type property when the call point allows the use of [`Decimal.FormatStyle`](decimal/formatstyle.md). You typically do this when calling the [`formatted(_:)`](decimal/formatted(_:).md) method of [`Decimal`](decimal.md).
+Use this type property when the call point allows the use of [`Decimal.FormatStyle`](../decimal/formatstyle.md). You typically do this when calling the [`formatted(_:)`](../decimal/formatted%28_%29.md) method of [`Decimal`](../decimal.md).
 
 
 ---

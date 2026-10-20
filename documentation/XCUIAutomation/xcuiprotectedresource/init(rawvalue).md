@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: XCUIAutomation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.4+

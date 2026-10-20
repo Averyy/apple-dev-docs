@@ -1,7 +1,8 @@
 # minSupportedLockedVideoFrameDuration
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum frame rate (expressed as a minimum duration) that can be set on an input associated with this device.
 
@@ -18,17 +19,22 @@ The maximum frame rate (expressed as a minimum duration) that can be set on an i
 var minSupportedLockedVideoFrameDuration: CMTime { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMTime minSupportedLockedVideoFrameDuration;
+```
+
 #### Discussion
 
-`kCMTimeInvalid` is returned when the device or its current configuration does not support locked frame rate. Use [`activeLockedVideoFrameDuration`](avcapturedeviceinput/activelockedvideoframeduration.md) to set the locked frame rate on the input.
+`kCMTimeInvalid` is returned when the device or its current configuration does not support locked frame rate. Use [`activeLockedVideoFrameDuration`](../avcapturedeviceinput/activelockedvideoframeduration.md) to set the locked frame rate on the input.
 
 ## See Also
 
-- [var isFollowingExternalSyncDevice: Bool](avcapturedevice/isfollowingexternalsyncdevice.md)
+### Synchronizing with external devices
+- [var isFollowingExternalSyncDevice: Bool](./isfollowingexternalsyncdevice.md)
   Whether the device is following an external sync device.
-- [var minSupportedExternalSyncFrameDuration: CMTime](avcapturedevice/minsupportedexternalsyncframeduration.md)
+- [var minSupportedExternalSyncFrameDuration: CMTime](./minsupportedexternalsyncframeduration.md)
   The minimum frame duration that can be passed as the `videoFrameDuration` when directing your device input to follow an external sync device.
-- [var isVideoFrameDurationLocked: Bool](avcapturedevice/isvideoframedurationlocked.md)
+- [var isVideoFrameDurationLocked: Bool](./isvideoframedurationlocked.md)
   Whether the device’s video frame rate (expressed as a duration) is currently locked.
 
 

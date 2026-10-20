@@ -1,23 +1,25 @@
 # Charts
 
-**Framework**: Apple Music API
+**Framework**: Apple Music API  
+**Role**: API Collection
 
 Get chart information that shows the popularity of albums, songs, and music videos.
 
 ## Topics
 
 ### Requesting Catalog Charts
-- [Get Catalog Charts](charts.md)
+- [Get Catalog Charts](./charts.md)
   Fetch one or more charts from the Apple Music Catalog.
 ### Handling the Response
-- [object ChartResponse](chartresponse.md)
+- [object ChartResponse](./chartresponse.md)
   The response to a request for a chart.
 
 ## See Also
 
-- [Ratings](ratings-api.md)
+### Ratings, Genres, and Charts
+- [Ratings](./ratings-api.md)
   Get and set ratings for albums, songs, playlists, music videos, and stations.
-- [Music Genres](music-genres.md)
+- [Music Genres](./music-genres.md)
   Get information about the genres of the user’s music or items in the Apple Music Catalog.
 
 

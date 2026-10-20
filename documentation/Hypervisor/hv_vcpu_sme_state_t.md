@@ -1,7 +1,8 @@
 # hv_vcpu_sme_state_t
 
 **Framework**: Hypervisor  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 15.2+
@@ -12,40 +13,45 @@
 struct hv_vcpu_sme_state_t
 ```
 
+```c
+typedef struct { ... } hv_vcpu_sme_state_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](hv_vcpu_sme_state_t/init.md)
-- [init(streaming_sve_mode_enabled: Bool, za_storage_enabled: Bool)](hv_vcpu_sme_state_t/init(streaming_sve_mode_enabled:za_storage_enabled:).md)
+- [init()](./hv_vcpu_sme_state_t/init%28%29.md)
+- [init(streaming_sve_mode_enabled: Bool, za_storage_enabled: Bool)](./hv_vcpu_sme_state_t/init%28streaming_sve_mode_enabled,za_storage_enabled%29.md)
 ### Instance Properties
-- [var streaming_sve_mode_enabled: Bool](hv_vcpu_sme_state_t/streaming_sve_mode_enabled.md)
-- [var za_storage_enabled: Bool](hv_vcpu_sme_state_t/za_storage_enabled.md)
+- [var streaming_sve_mode_enabled: Bool](./hv_vcpu_sme_state_t/streaming_sve_mode_enabled.md)
+- [var za_storage_enabled: Bool](./hv_vcpu_sme_state_t/za_storage_enabled.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct hv_cache_type_t](hv_cache_type_t.md)
+### Structures
+- [struct hv_cache_type_t](./hv_cache_type_t.md)
   The structure that describes an instruction or data cache element.
-- [struct hv_vcpu_exit_exception_t](hv_vcpu_exit_exception_t.md)
+- [struct hv_vcpu_exit_exception_t](./hv_vcpu_exit_exception_t.md)
   The structure that describes information about an exit from the virtual CPU (vCPU) to the host.
-- [struct hv_apic_ctrl_t](hv_apic_ctrl_t.md)
-- [struct hv_apic_intr_trigger_t](hv_apic_intr_trigger_t.md)
-- [struct hv_apic_lvt_flavor_t](hv_apic_lvt_flavor_t.md)
-- [struct hv_apic_state](hv_apic_state.md)
-- [struct hv_apic_state_ext_t](hv_apic_state_ext_t.md)
-- [struct hv_atpic_state](hv_atpic_state.md)
-- [struct hv_atpic_state_ext_t](hv_atpic_state_ext_t.md)
-- [struct hv_gic_distributor_reg_t](hv_gic_distributor_reg_t.md)
-- [struct hv_gic_icc_reg_t](hv_gic_icc_reg_t.md)
-- [struct hv_gic_ich_reg_t](hv_gic_ich_reg_t.md)
-- [struct hv_gic_icv_reg_t](hv_gic_icv_reg_t.md)
-- [struct hv_gic_intid_t](hv_gic_intid_t.md)
-- [struct hv_gic_msi_reg_t](hv_gic_msi_reg_t.md)
+- [struct hv_apic_ctrl_t](./hv_apic_ctrl_t.md)
+- [struct hv_apic_intr_trigger_t](./hv_apic_intr_trigger_t.md)
+- [struct hv_apic_lvt_flavor_t](./hv_apic_lvt_flavor_t.md)
+- [struct hv_apic_state](./hv_apic_state.md)
+- [struct hv_apic_state_ext_t](./hv_apic_state_ext_t.md)
+- [struct hv_atpic_state](./hv_atpic_state.md)
+- [struct hv_atpic_state_ext_t](./hv_atpic_state_ext_t.md)
+- [struct hv_gic_distributor_reg_t](./hv_gic_distributor_reg_t.md)
+- [struct hv_gic_icc_reg_t](./hv_gic_icc_reg_t.md)
+- [struct hv_gic_ich_reg_t](./hv_gic_ich_reg_t.md)
+- [struct hv_gic_icv_reg_t](./hv_gic_icv_reg_t.md)
+- [struct hv_gic_intid_t](./hv_gic_intid_t.md)
+- [struct hv_gic_msi_reg_t](./hv_gic_msi_reg_t.md)
 
 
 ---

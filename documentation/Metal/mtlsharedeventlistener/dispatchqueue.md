@@ -1,7 +1,8 @@
 # dispatchQueue
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dispatch queue used to dispatch any notifications.
 
@@ -17,6 +18,10 @@ The dispatch queue used to dispatch any notifications.
 
 ```swift
 var dispatchQueue: dispatch_queue_t { get }
+```
+
+```objc
+@property (readonly, nonnull) dispatch_queue_t dispatchQueue;
 ```
 
 

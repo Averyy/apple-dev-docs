@@ -1,7 +1,8 @@
 # PKIdentityDocumentDescriptor
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that describes the structure and behavior of an identity document.
 
@@ -17,45 +18,50 @@ A type that describes the structure and behavior of an identity document.
 protocol PKIdentityDocumentDescriptor : NSObjectProtocol
 ```
 
+```objc
+@protocol PKIdentityDocumentDescriptor <NSObject>
+```
+
 #### Overview
 
-A descriptor object describes the type of document that your app can request or check whether a document is available to request. For example, you use a [`PKIdentityDriversLicenseDescriptor`](pkidentitydriverslicensedescriptor.md) to request information from a user’s driver’s license (or equivalent document).
+A descriptor object describes the type of document that your app can request or check whether a document is available to request. For example, you use a [`PKIdentityDriversLicenseDescriptor`](./pkidentitydriverslicensedescriptor.md) to request information from a user’s driver’s license (or equivalent document).
 
 > **Note**:  Different document types behave differently, requiring different properties or response formats. Don’t define your own implementation of this protocol or subclass an existing implementation.
 
 ## Topics
 
 ### Inspecting elements
-- [var elements: [PKIdentityElement]](pkidentitydocumentdescriptor/elements.md)
+- [var elements: [PKIdentityElement]](./pkidentitydocumentdescriptor/elements.md)
   A list of identity elements to request.
-- [var issuerIdentifiers: [Data]](pkidentitydocumentdescriptor/issueridentifiers.md)
+- [var issuerIdentifiers: [Data]](./pkidentitydocumentdescriptor/issueridentifiers.md)
   A list of X.509 authority key identifiers your app accepts.
-- [class PKIdentityElement](pkidentityelement.md)
+- [class PKIdentityElement](./pkidentityelement.md)
   An object that represents the elements an app requests from identity documents.
 ### Adding an identity element
-- [func addElements([PKIdentityElement], intentToStore: PKIdentityIntentToStore)](pkidentitydocumentdescriptor/addelements(_:intenttostore:).md)
+- [func addElements([PKIdentityElement], intentToStore: PKIdentityIntentToStore)](./pkidentitydocumentdescriptor/addelements%28_,intenttostore%29.md)
   Adds a list of identity element and defines the way an app, or it’s server, stores the elements.
-- [class PKIdentityIntentToStore](pkidentityintenttostore.md)
+- [class PKIdentityIntentToStore](./pkidentityintenttostore.md)
   An object that represents your intention to store an identity element or values derived from an identity element.
 ### Getting an elements intent
-- [func intentToStore(element: PKIdentityElement) -> PKIdentityIntentToStore?](pkidentitydocumentdescriptor/intenttostore(element:).md)
+- [func intentToStore(element: PKIdentityElement) -> PKIdentityIntentToStore?](./pkidentitydocumentdescriptor/intenttostore%28element%29.md)
   Gets the intent to store for an identity element you specify.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [PKIdentityAnyOfDescriptor](pkidentityanyofdescriptor.md)
-- [PKIdentityDriversLicenseDescriptor](pkidentitydriverslicensedescriptor.md)
-- [PKIdentityNationalIDCardDescriptor](pkidentitynationalidcarddescriptor.md)
-- [PKIdentityPhotoIDDescriptor](pkidentityphotoiddescriptor.md)
+- [PKIdentityAnyOfDescriptor](./pkidentityanyofdescriptor.md)
+- [PKIdentityDriversLicenseDescriptor](./pkidentitydriverslicensedescriptor.md)
+- [PKIdentityNationalIDCardDescriptor](./pkidentitynationalidcarddescriptor.md)
+- [PKIdentityPhotoIDDescriptor](./pkidentityphotoiddescriptor.md)
 
 ## See Also
 
-- [class PKIdentityDriversLicenseDescriptor](pkidentitydriverslicensedescriptor.md)
+### Describing a document
+- [class PKIdentityDriversLicenseDescriptor](./pkidentitydriverslicensedescriptor.md)
   An object for requesting information from a user’s driver’s license or equivalent document.
-- [class PKIdentityIntentToStore](pkidentityintenttostore.md)
+- [class PKIdentityIntentToStore](./pkidentityintenttostore.md)
   An object that represents your intention to store an identity element or values derived from an identity element.
 
 

@@ -1,6 +1,7 @@
 # Half-precision floating-point vectors
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 Perform operations on vectors that contain half-precision floating-point elements.
 
@@ -19,28 +20,29 @@ The compiler flag defines the behavior of the default variant. Ordinarily, the c
 ## Topics
 
 ### Vector data types
-- [typealias simd_half1](../simd/simd_half1.md)
+- [typealias simd_half1](https://developer.apple.com/documentation/simd/simd_half1)
   A vector of one 16-bit floating-point element.
-- [typealias simd_half2](../simd/simd_half2.md)
+- [typealias simd_half2](https://developer.apple.com/documentation/simd/simd_half2)
   A vector of two 16-bit floating-point elements.
-- [typealias simd_half3](../simd/simd_half3.md)
+- [typealias simd_half3](https://developer.apple.com/documentation/simd/simd_half3)
   A vector of three 16-bit floating-point elements.
-- [typealias simd_half4](../simd/simd_half4.md)
+- [typealias simd_half4](https://developer.apple.com/documentation/simd/simd_half4)
   A vector of four 16-bit floating-point elements.
-- [typealias simd_half8](../simd/simd_half8.md)
+- [typealias simd_half8](https://developer.apple.com/documentation/simd/simd_half8)
   A vector of eight 16-bit floating-point elements.
-- [typealias simd_half16](../simd/simd_half16.md)
+- [typealias simd_half16](https://developer.apple.com/documentation/simd/simd_half16)
   A vector of sixteen 16-bit floating-point elements.
-- [typealias simd_half32](../simd/simd_half32.md)
+- [typealias simd_half32](https://developer.apple.com/documentation/simd/simd_half32)
   A vector of thirty-two 16-bit floating-point elements.
 
 ## See Also
 
-- [Working with Vectors](working-with-vectors.md)
+### Floating-Point Vectors
+- [Working with Vectors](./working-with-vectors.md)
   Use vectors to calculate geometric values, calculate dot products and cross products, and interpolate between values.
-- [Single-precision floating-point vectors](single-precision-floating-point-vectors.md)
+- [Single-precision floating-point vectors](./single-precision-floating-point-vectors.md)
   Perform operations on vectors that contain single-precision floating-point elements.
-- [Double-precision floating-point vectors](double-precision-floating-point-vectors.md)
+- [Double-precision floating-point vectors](./double-precision-floating-point-vectors.md)
   Perform operations on vectors that contain double-precision floating-point elements.
 
 

@@ -1,7 +1,8 @@
 # modulo(_:_:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the remainder obtained by dividing the first input tensor by the second.
 
@@ -17,6 +18,10 @@ Returns the remainder obtained by dividing the first input tensor by the second.
 
 ```swift
 func modulo(_ primaryTensor: MPSGraphTensor, _ secondaryTensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) moduloWithPrimaryTensor:(MPSGraphTensor *) primaryTensor secondaryTensor:(MPSGraphTensor *) secondaryTensor name:(NSString *) name;
 ```
 
 #### Return Value

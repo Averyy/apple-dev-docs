@@ -1,6 +1,7 @@
 # Managing user interface state
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: Article
 
 Encapsulate view-specific data within your app’s view hierarchy to make your views reusable.
 
@@ -8,13 +9,13 @@ Encapsulate view-specific data within your app’s view hierarchy to make your v
 
 Store data as state in the least common ancestor of the views that need the data to establish a single *source of truth* that’s shared across views. Provide the data as read-only through a Swift property, or create a two-way connection to the state with a binding. SwiftUI watches for changes in the data, and updates any affected views as needed.
 
-![A diagram showing state stored in one view, shared with another view through a binding that provides a two-way connection, and shared with yet another view as a property providing a one-way connection.](/images/com.apple.SwiftUI/managing-user-interface-state@2x.png)
+![A diagram showing state stored in one view, shared with another view through a binding that provides a two-way connection, and shared with yet another view as a property providing a one-way connection.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/managing-user-interface-state@2x.png)
 
 Don’t use state properties for persistent storage because the life cycle of state variables mirrors the view life cycle. Instead, use them to manage transient state that only affects the user interface, like the highlight state of a button, filter settings, or the currently selected list item. You might also find this kind of storage convenient while you prototype, before you’re ready to make changes to your app’s data model.
 
-##### Manage Mutable Values As State
+##### Manage mutable values as state
 
-If a view needs to store data that it can modify, declare a variable with [`State()`](state().md). For example, you can create an `isPlaying` Boolean inside a podcast player view to keep track of when a podcast is running:
+If a view needs to store data that it can modify, declare a variable with [`State()`](./state%28%29.md). For example, you can create an `isPlaying` Boolean inside a podcast player view to keep track of when a podcast is running:
 
 ```swift
 struct PlayerView: View {
@@ -38,7 +39,7 @@ Button(action: {
 
 Limit the scope of state variables by declaring them as private. This ensures that the variables remain encapsulated in the view hierarchy that declares them, and prevents setting the variable’s initial value in an initializer which can interfere with SwiftUI’s management of the variable.
 
-##### Declare Swift Properties to Store Immutable Values
+##### Declare Swift properties to store immutable values
 
 To provide a view with data that the view doesn’t modify, declare a standard Swift property. For example, you can extend the podcast player to have an input structure that contains strings for the episode title and the show name:
 
@@ -65,9 +66,9 @@ struct PlayerView: View {
 
 While the value of the episode property is a constant for `PlayerView`, it doesn’t need to be constant in this view’s parent view. When the user selects a different episode in the parent, SwiftUI detects the state change and recreates the `PlayerView` with a new input.
 
-##### Share Access to State with Bindings
+##### Share access to state with bindings
 
-If a view needs to share control of state with a child view, declare a property in the child with the [`Binding`](binding.md) property wrapper. A binding represents a reference to existing storage, preserving a single source of truth for the underlying data. For example, if you refactor the podcast player view’s button into a child view called `PlayButton`, you can give it a binding to the `isPlaying` property:
+If a view needs to share control of state with a child view, declare a property in the child with the [`Binding`](./binding.md) property wrapper. A binding represents a reference to existing storage, preserving a single source of truth for the underlying data. For example, if you refactor the podcast player view’s button into a child view called `PlayButton`, you can give it a binding to the `isPlaying` property:
 
 ```swift
 struct PlayButton: View {
@@ -120,9 +121,9 @@ struct Podcaster: View {
 }
 ```
 
-##### Animate State Transitions
+##### Animate state transitions
 
-When the view state changes, SwiftUI updates affected views right away. If you want to smooth visual transitions, you can tell SwiftUI to animate them by wrapping the state change that triggers them in a call to the [`withAnimation(_:_:)`](withanimation(_:_:).md) function. For example, you can animate changes controlled by the `isPlaying` Boolean:
+When the view state changes, SwiftUI updates affected views right away. If you want to smooth visual transitions, you can tell SwiftUI to animate them by wrapping the state change that triggers them in a call to the [`withAnimation(_:_:)`](./withanimation%28_,_%29.md) function. For example, you can animate changes controlled by the `isPlaying` Boolean:
 
 ```swift
 withAnimation(.easeInOut(duration: 1)) {
@@ -150,21 +151,22 @@ VStack {
 .background(isPlaying ? Color.green : Color.red) // Transitions with animation.
 ```
 
-When you want to apply animations to specific views, rather than across all views triggered by a change in state, use the [`animation(_:value:)`](view/animation(_:value:).md) view modifier instead.
+When you want to apply animations to specific views, rather than across all views triggered by a change in state, use the [`animation(_:value:)`](./view/animation%28_,value%29.md) view modifier instead.
 
 ## See Also
 
-- [macro State()](state().md)
+### Creating and sharing view state
+- [macro State()](./state%28%29.md)
   Creates a property that can read and write a value managed by SwiftUI.
-- [macro State<Value>(initialValue: Value)](state(initialvalue:).md)
+- [macro State<Value>(initialValue: Value)](./state%28initialvalue%29.md)
   Creates a property with an initial value that can read and write a value managed by SwiftUI.
-- [macro State<Value>(wrappedValue: Value)](state(wrappedvalue:).md)
+- [macro State<Value>(wrappedValue: Value)](./state%28wrappedvalue%29.md)
   Creates a property with a wrapped value that can read and write a value managed by SwiftUI.
-- [struct State](state.md)
+- [struct State](./state.md)
   A property wrapper type that can read and write a value managed by SwiftUI.
-- [struct Bindable](bindable.md)
+- [struct Bindable](./bindable.md)
   A property wrapper type that supports creating bindings to the mutable properties of observable objects.
-- [struct Binding](binding.md)
+- [struct Binding](./binding.md)
   A property wrapper type that can read and write a value owned by a source of truth.
 
 

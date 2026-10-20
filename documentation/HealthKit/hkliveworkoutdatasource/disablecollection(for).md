@@ -1,7 +1,8 @@
 # disableCollection(for:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops automatically calculating statistics for the quantity type.
 
@@ -9,7 +10,7 @@ Stops automatically calculating statistics for the quantity type.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- macOS ?+
+- macOS
 - watchOS 5.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ Stops automatically calculating statistics for the quantity type.
 func disableCollection(for quantityType: HKQuantityType)
 ```
 
+```objc
+- (void) disableCollectionForType:(HKQuantityType *) quantityType;
+```
+
 ## Mentions
 
-- [Dividing a HealthKit workout into activities](dividing-a-healthkit-workout-into-activities.md)
+- [Dividing a HealthKit workout into activities](../dividing-a-healthkit-workout-into-activities.md)
 
 ## See Also
 
-- [func enableCollection(for: HKQuantityType, predicate: NSPredicate?)](hkliveworkoutdatasource/enablecollection(for:predicate:).md)
+### Calculating statistics
+- [func enableCollection(for: HKQuantityType, predicate: NSPredicate?)](./enablecollection%28for,predicate%29.md)
   Begins automatically calculating statistics for samples that match the quantity type and predicate.
 
 

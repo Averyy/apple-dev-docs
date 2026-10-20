@@ -1,11 +1,12 @@
 # Scalable3DProtocol Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func scaledBy(x: Double, y: Double, z: Double) -> Rect3D](rect3d/scaledby(x:y:z:).md)
+- [func scaledBy(x: Double, y: Double, z: Double) -> Rect3D](./scaledby%28x,y,z%29.md)
   Returns a rectangle that results from scaling with the specified double-precision values.
 
 

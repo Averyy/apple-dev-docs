@@ -1,6 +1,7 @@
 # IOBluetoothUserLib.h
 
-**Framework**: IOBluetooth
+**Framework**: IOBluetooth  
+**Role**: API Collection
 
 Public Interfaces for Apple’s implementation of Bluetooth technology.
 
@@ -18,45 +19,46 @@ There is an accompanying header to this, “Bluetooth.h”, which contains all t
 ## Topics
 
 ### Miscellaneous
-- [func IOBluetoothIgnoreHIDDevice(IOBluetoothDeviceRef!)](iobluetoothignorehiddevice(_:).md)
+- [func IOBluetoothIgnoreHIDDevice(IOBluetoothDeviceRef!)](./iobluetoothignorehiddevice%28_%29.md)
   Hints that the macOS Bluetooth software should ignore a HID device that connects up.
-- [func IOBluetoothL2CAPChannelRegisterForChannelCloseNotification(IOBluetoothL2CAPChannelRef!, IOBluetoothUserNotificationCallback!, UnsafeMutableRawPointer!) -> Unmanaged<IOBluetoothUserNotificationRef>!](iobluetoothl2capchannelregisterforchannelclosenotification(_:_:_:).md)
+- [func IOBluetoothL2CAPChannelRegisterForChannelCloseNotification(IOBluetoothL2CAPChannelRef!, IOBluetoothUserNotificationCallback!, UnsafeMutableRawPointer!) -> Unmanaged<IOBluetoothUserNotificationRef>!](./iobluetoothl2capchannelregisterforchannelclosenotification%28_,_,_%29.md)
   Allows a client to register for a channel close notification.
-- [func IOBluetoothRemoveIgnoredHIDDevice(IOBluetoothDeviceRef!)](iobluetoothremoveignoredhiddevice(_:).md)
+- [func IOBluetoothRemoveIgnoredHIDDevice(IOBluetoothDeviceRef!)](./iobluetoothremoveignoredhiddevice%28_%29.md)
   The counterpart to the above IOBluetoothIgnoreHIDDevice() API.
-- [func IOBluetoothUserNotificationUnregister(IOBluetoothUserNotificationRef!)](iobluetoothusernotificationunregister(_:).md)
+- [func IOBluetoothUserNotificationUnregister(IOBluetoothUserNotificationRef!)](./iobluetoothusernotificationunregister%28_%29.md)
   Unregisters the target notification.
 ### Callbacks
-- [typealias IOBluetoothUserNotificationCallback](iobluetoothusernotificationcallback.md)
+- [typealias IOBluetoothUserNotificationCallback](./iobluetoothusernotificationcallback.md)
   Callback function definition for user notifications.
 ### Data Types
-- [typealias IOBluetoothDeviceSearchOptions](iobluetoothdevicesearchoptions.md)
-- [struct IOBluetoothDeviceSearchAttributes](iobluetoothdevicesearchattributes.md)
+- [typealias IOBluetoothDeviceSearchOptions](./iobluetoothdevicesearchoptions.md)
+- [struct IOBluetoothDeviceSearchAttributes](./iobluetoothdevicesearchattributes.md)
   Structure used to search for particular devices.
-- [struct IOBluetoothDeviceSearchDeviceAttributes](iobluetoothdevicesearchdeviceattributes.md)
+- [struct IOBluetoothDeviceSearchDeviceAttributes](./iobluetoothdevicesearchdeviceattributes.md)
   Structure used to search for particular devices.
 ### Constants
-- [struct IOBluetoothDeviceSearchDeviceAttributes](iobluetoothdevicesearchdeviceattributes.md)
+- [struct IOBluetoothDeviceSearchDeviceAttributes](./iobluetoothdevicesearchdeviceattributes.md)
   Structure used to search for particular devices.
-- [struct IOBluetoothDeviceSearchTypesBits](iobluetoothdevicesearchtypesbits.md)
+- [struct IOBluetoothDeviceSearchTypesBits](./iobluetoothdevicesearchtypesbits.md)
   Bits to determine what Bluetooth devices to search for
 
 ## See Also
 
-- [Bluetooth.h User-Space](bluetooth-h-user-space.md)
+### Reference
+- [Bluetooth.h User-Space](./bluetooth-h-user-space.md)
   Bluetooth wireless technology
-- [IOBluetoothUtilities.h](iobluetoothutilities-h.md)
+- [IOBluetoothUtilities.h](./iobluetoothutilities-h.md)
   See the Overview section above for header-level documentation.
-- [OBEX.h](obex-h.md)
+- [OBEX.h](./obex-h.md)
   Public OBEX technology interfaces.
-- [OBEXBluetooth.h](obexbluetooth-h.md)
+- [OBEXBluetooth.h](./obexbluetooth-h.md)
   Object Exchange over Bluetooth.
-- [OBEXFileTransferServices.h](obexfiletransferservices-h.md)
-- [IOBluetooth Structures](iobluetooth-structures.md)
-- [IOBluetooth Enumerations](iobluetooth-enumerations.md)
-- [IOBluetooth Constants](iobluetooth-constants.md)
-- [IOBluetooth Functions](iobluetooth-functions.md)
-- [IOBluetooth Data Types](iobluetooth-data-types.md)
+- [OBEXFileTransferServices.h](./obexfiletransferservices-h.md)
+- [IOBluetooth Structures](./iobluetooth-structures.md)
+- [IOBluetooth Enumerations](./iobluetooth-enumerations.md)
+- [IOBluetooth Constants](./iobluetooth-constants.md)
+- [IOBluetooth Functions](./iobluetooth-functions.md)
+- [IOBluetooth Data Types](./iobluetooth-data-types.md)
 
 
 ---

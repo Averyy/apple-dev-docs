@@ -1,11 +1,12 @@
 # ParseStrategy Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func parse(String) throws -> Format.FormatInput](integerparsestrategy/parse(_:).md)
+- [func parse(String) throws -> Format.FormatInput](./parse%28_%29.md)
   Parses an integer string in accordance with this strategy and returns the parsed value.
 
 

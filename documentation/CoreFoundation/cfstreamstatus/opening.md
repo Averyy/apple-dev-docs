@@ -1,18 +1,19 @@
 # CFStreamStatus.opening
 
 **Framework**: Core Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The stream is being opened for reading or for writing.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,21 +21,26 @@ The stream is being opened for reading or for writing.
 case opening
 ```
 
+```c
+kCFStreamStatusOpening
+```
+
 ## See Also
 
-- [CFStreamStatus.notOpen](cfstreamstatus/notopen.md)
+### Constants
+- [CFStreamStatus.notOpen](./notopen.md)
   The stream is not open for reading or writing.
-- [CFStreamStatus.open](cfstreamstatus/open.md)
+- [CFStreamStatus.open](./open.md)
   The stream is open.
-- [CFStreamStatus.reading](cfstreamstatus/reading.md)
+- [CFStreamStatus.reading](./reading.md)
   The stream is being read from.
-- [CFStreamStatus.writing](cfstreamstatus/writing.md)
+- [CFStreamStatus.writing](./writing.md)
   The stream is being written to.
-- [CFStreamStatus.atEnd](cfstreamstatus/atend.md)
+- [CFStreamStatus.atEnd](./atend.md)
   There is no more data to read, or no more data can be written.
-- [CFStreamStatus.closed](cfstreamstatus/closed.md)
+- [CFStreamStatus.closed](./closed.md)
   The stream is closed.
-- [CFStreamStatus.error](cfstreamstatus/error.md)
+- [CFStreamStatus.error](./error.md)
   An error occurred on the stream.
 
 

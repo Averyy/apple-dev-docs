@@ -1,7 +1,8 @@
 # init(boundingQuad:minimumCellSize:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a quadtree with the specified dimensions.
 
@@ -17,6 +18,10 @@ Initializes a quadtree with the specified dimensions.
 
 ```swift
 init(boundingQuad quad: GKQuad, minimumCellSize minCellSize: Float)
+```
+
+```objc
+- (instancetype) initWithBoundingQuad:(GKQuad) quad minimumCellSize:(float) minCellSize;
 ```
 
 #### Return Value

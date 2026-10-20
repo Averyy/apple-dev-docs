@@ -1,7 +1,8 @@
 # enumerateHierarchy
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the parser walks the path hierarchy for matching.
 
@@ -19,9 +20,10 @@ var enumerateHierarchy: Bool
 
 ## See Also
 
-- [var excluded: Bool](neurlfiltermanager/parsingconfiguration/pathoptions/excluded.md)
+### Working with path options
+- [var excluded: Bool](./excluded.md)
   A Boolean value that indicates whether to exlude the path component from URL parsing.
-- [var segments: UInt](neurlfiltermanager/parsingconfiguration/pathoptions/segments.md)
+- [var segments: UInt](./segments.md)
   The number of path levels to preserve when parsing.
 
 

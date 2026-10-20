@@ -1,7 +1,8 @@
 # Process.DidTerminateMessage
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A message the system sends when a task stops operation.
 
@@ -16,22 +17,22 @@ struct DidTerminateMessage
 
 #### Overview
 
-Observe this message with the identifier [`didTerminate`](notificationcenter/messageidentifier/didterminate.md), or specify its type directly to the `addObserver(of:for:using:)` method. The [`Subject`](notificationcenter/mainactormessage/subject.md) of this message type is [`Process`](process.md).
+Observe this message with the identifier [`didTerminate`](../notificationcenter/messageidentifier/didterminate.md), or specify its type directly to the `addObserver(of:for:using:)` method. The [`Subject`](../notificationcenter/mainactormessage/subject.md) of this message type is [`Process`](../process.md).
 
-This message interoperates with the notification [`didTerminateNotification`](process/didterminatenotification.md). The system notifies observers of the message when the [`NotificationCenter`](notificationcenter.md) posts the notification. Similarly, the system notifies observers of the notification when it posts the message.
+This message interoperates with the notification [`didTerminateNotification`](./didterminatenotification.md). The system notifies observers of the message when the [`NotificationCenter`](../notificationcenter.md) posts the notification. Similarly, the system notifies observers of the notification when it posts the message.
 
 ## Topics
 
 ### Creating a message
-- [init()](process/didterminatemessage/init.md)
+- [init()](./didterminatemessage/init%28%29.md)
   Creates a message about a stopped task.
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.AsyncMessage](notificationcenter/asyncmessage.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.AsyncMessage](../notificationcenter/asyncmessage.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

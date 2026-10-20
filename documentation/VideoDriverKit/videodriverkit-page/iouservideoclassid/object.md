@@ -1,7 +1,8 @@
 # Object
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The class identifier for the `IOUserVideoObject` class.
 
@@ -10,23 +11,24 @@ The class identifier for the `IOUserVideoObject` class.
 
 ## Declaration
 
-```swift
+```c
 Object
 ```
 
 ## See Also
 
-- [Driver](videodriverkit/iouservideoclassid/driver.md)
+### Identifying VideoDriverKit types
+- [Driver](./driver.md)
   The class identifier for the `IOUserVideoDriver` class.
-- [Box](videodriverkit/iouservideoclassid/box.md)
+- [Box](./box.md)
   The class identifier for the `IOUserVideoBox` class.
-- [Clock](videodriverkit/iouservideoclassid/clock.md)
+- [Clock](./clock.md)
   The class identifier for the `IOUserVideoClockDevice` class.
-- [Buffer](videodriverkit/iouservideoclassid/buffer.md)
+- [Buffer](./buffer.md)
   The class identifier for the `IOUserVideoBuffer` class.
-- [Device](videodriverkit/iouservideoclassid/device.md)
+- [Device](./device.md)
   The class identifier for the `IOUserVideoDevice` class.
-- [Stream](videodriverkit/iouservideoclassid/stream.md)
+- [Stream](./stream.md)
   The class identifier for the `IOUserVideoStream` class.
 
 

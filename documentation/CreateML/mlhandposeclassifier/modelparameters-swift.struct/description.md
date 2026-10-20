@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the hand pose parameters.
 
@@ -20,9 +21,10 @@ var description: String { get }
 
 ## See Also
 
-- [var debugDescription: String](mlhandposeclassifier/modelparameters-swift.struct/debugdescription.md)
+### Describing hand pose model parameters
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the hand pose parameters suitable for debugging.
-- [var playgroundDescription: Any](mlhandposeclassifier/modelparameters-swift.struct/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the hand pose parameters that’s viewable in a playground.
 
 

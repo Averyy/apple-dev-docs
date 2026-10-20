@@ -1,7 +1,8 @@
 # NSPersistentStoreModelVersionChecksumKey
 
 **Framework**: Core Data  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 18.0+
@@ -18,13 +19,18 @@
 let NSPersistentStoreModelVersionChecksumKey: String
 ```
 
+```c
+extern NSString * const NSPersistentStoreModelVersionChecksumKey;
+```
+
 ## See Also
 
-- [let NSBinaryStoreInsecureDecodingCompatibilityOption: String](nsbinarystoreinsecuredecodingcompatibilityoption.md)
+### Persistent Store Metadata Keys
+- [let NSBinaryStoreInsecureDecodingCompatibilityOption: String](./nsbinarystoreinsecuredecodingcompatibilityoption.md)
   A flag that indicates Core Data decodes the binary store insecurely.
-- [let NSBinaryStoreSecureDecodingClasses: String](nsbinarystoresecuredecodingclasses.md)
+- [let NSBinaryStoreSecureDecodingClasses: String](./nsbinarystoresecuredecodingclasses.md)
   An additional set of classes to use while decoding a binary store.
-- [let NSPersistentStoreRemoteChangeNotificationPostOptionKey: String](nspersistentstoreremotechangenotificationpostoptionkey.md)
+- [let NSPersistentStoreRemoteChangeNotificationPostOptionKey: String](./nspersistentstoreremotechangenotificationpostoptionkey.md)
   A key that indicates a persistent store posts a remote change notification for every write to the store, including writes by other processes.
 
 

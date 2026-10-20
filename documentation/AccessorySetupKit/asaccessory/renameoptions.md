@@ -1,7 +1,8 @@
 # ASAccessory.RenameOptions
 
 **Framework**: AccessorySetupKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that affect the behavior of an accessory renaming operation.
 
@@ -15,31 +16,36 @@ Options that affect the behavior of an accessory renaming operation.
 struct RenameOptions
 ```
 
+```c
+enum ASAccessoryRenameOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Creating an options instance
-- [init(rawValue: UInt)](asaccessory/renameoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./renameoptions/init%28rawvalue%29.md)
 ### Options
-- [static var ssid: ASAccessory.RenameOptions](asaccessory/renameoptions/ssid.md)
+- [static var ssid: ASAccessory.RenameOptions](./renameoptions/ssid.md)
   An option to change an accessory’s SSID along with its display name.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [func renameAccessory(ASAccessory, options: ASAccessory.RenameOptions, completionHandler: ((any Error)?) -> Void)](asaccessorysession/renameaccessory(_:options:completionhandler:).md)
+### Managing accessories
+- [func renameAccessory(ASAccessory, options: ASAccessory.RenameOptions, completionHandler: ((any Error)?) -> Void)](../asaccessorysession/renameaccessory%28_,options,completionhandler%29.md)
   Displays a view to rename an accessory.
-- [func removeAccessory(ASAccessory, completionHandler: ((any Error)?) -> Void)](asaccessorysession/removeaccessory(_:completionhandler:).md)
+- [func removeAccessory(ASAccessory, completionHandler: ((any Error)?) -> Void)](../asaccessorysession/removeaccessory%28_,completionhandler%29.md)
   Removes an accessory.
 
 

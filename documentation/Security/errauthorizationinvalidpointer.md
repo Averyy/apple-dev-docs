@@ -1,7 +1,8 @@
 # errAuthorizationInvalidPointer
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The authorizedRights parameter is invalid.
 
@@ -13,6 +14,10 @@ The authorizedRights parameter is invalid.
 
 ```swift
 var errAuthorizationInvalidPointer: OSStatus { get }
+```
+
+```c
+errAuthorizationInvalidPointer
 ```
 
 

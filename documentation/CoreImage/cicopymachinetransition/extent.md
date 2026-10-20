@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A rectangle that defines the extent of the effect.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ A rectangle that defines the extent of the effect.
 var extent: CGRect { get set }
 ```
 
+```objc
+@property (nonatomic) CGRect extent;
+```
+
 ## See Also
 
-- [var angle: Float](cicopymachinetransition/angle.md)
+### Instance Properties
+- [var angle: Float](./angle.md)
   The angle of the copier light.
-- [var color: CIColor](cicopymachinetransition/color.md)
+- [var color: CIColor](./color.md)
   The color of the copier light.
-- [var opacity: Float](cicopymachinetransition/opacity.md)
+- [var opacity: Float](./opacity.md)
   The opacity of the copier light.
-- [var width: Float](cicopymachinetransition/width.md)
+- [var width: Float](./width.md)
   The width of the copier light.
 
 

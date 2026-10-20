@@ -1,7 +1,8 @@
 # AppAssetLibraryVideoCreateRequest.Data.Relationships.AssetLibrary.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an app asset library video.
 
@@ -10,13 +11,13 @@ The request body you use to create an app asset library video.
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryVideoCreateRequest.Data.Relationships.AssetLibrary.Data
 ```
 
 ## Properties
 
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appAssetLibraries`
 - `id` (string) *(required)*
 
 

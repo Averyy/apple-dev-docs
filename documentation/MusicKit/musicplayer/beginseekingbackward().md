@@ -1,7 +1,8 @@
 # beginSeekingBackward()
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins seeking backward through the music content.
 
@@ -21,7 +22,7 @@ func beginSeekingBackward()
 
 #### Discussion
 
-Use this method to move the current playback position backward in time at an accelerated rate. Seeking begins when you call this method, and continues until you call the [`endSeeking()`](musicplayer/endseeking().md) method.
+Use this method to move the current playback position backward in time at an accelerated rate. Seeking begins when you call this method, and continues until you call the [`endSeeking()`](./endseeking%28%29.md) method.
 
 If the player is streaming the underlying content, this method has no effect.
 

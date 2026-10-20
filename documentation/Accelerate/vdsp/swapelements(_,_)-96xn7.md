@@ -1,7 +1,8 @@
 # swapElements(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Swaps the elements of two single-precision vectors.
 
@@ -11,7 +12,7 @@ Swaps the elements of two single-precision vectors.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -45,7 +46,8 @@ print(vectorB)
 
 ## See Also
 
-- [static func swapElements<T, U>(inout T, inout U)](vdsp/swapelements(_:_:)-62wvt.md)
+### Vector-to-vector element swapping functions
+- [static func swapElements<T, U>(inout T, inout U)](./swapelements%28_,_%29-62wvt.md)
   Swaps the elements of two double-precision vectors.
 
 

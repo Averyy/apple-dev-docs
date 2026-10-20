@@ -1,7 +1,8 @@
 # locale
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image’s preferred locale for resolving representations, if one has been specified using `-imageWithLocale:`. Otherwise, `nil`.
 
@@ -14,9 +15,14 @@ The image’s preferred locale for resolving representations, if one has been sp
 var locale: Locale? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSLocale * locale;
+```
+
 ## See Also
 
-- [func withLocale(Locale?) -> NSImage](nsimage/withlocale(_:).md)
+### Localizing Images
+- [func withLocale(Locale?) -> NSImage](./withlocale%28_%29.md)
   Creates and returns a new image with the specified locale.
 
 

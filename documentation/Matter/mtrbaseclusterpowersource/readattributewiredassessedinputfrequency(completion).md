@@ -1,7 +1,8 @@
 # readAttributeWiredAssessedInputFrequency(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeWiredAssessedInputFrequency(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeWiredAssessedInputFrequency() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeWiredAssessedInputFrequencyWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

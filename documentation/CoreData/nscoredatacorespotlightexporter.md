@@ -1,7 +1,8 @@
 # NSCoreDataCoreSpotlightExporter
 
 **Framework**: Core Data  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key you use to specify your Core Spotlight delegate.
 
@@ -18,13 +19,18 @@ The key you use to specify your Core Spotlight delegate.
 let NSCoreDataCoreSpotlightExporter: String
 ```
 
+```c
+extern NSString * const NSCoreDataCoreSpotlightExporter;
+```
+
 ## See Also
 
-- [class NSCoreDataCoreSpotlightDelegate](nscoredatacorespotlightdelegate.md)
+### Integrating with Spotlight
+- [class NSCoreDataCoreSpotlightDelegate](./nscoredatacorespotlightdelegate.md)
   A set of methods that enable integration with Core Spotlight.
-- [Spotlight record keys](spotlight-record-keys.md)
+- [Spotlight record keys](./spotlight-record-keys.md)
   The keys for the values that exist in Spotlight’s external record files.
-- [Showcase App Data in Spotlight](showcase-app-data-in-spotlight.md)
+- [Showcase App Data in Spotlight](./showcase-app-data-in-spotlight.md)
   Index app data so users can find it by using Spotlight search.
 
 

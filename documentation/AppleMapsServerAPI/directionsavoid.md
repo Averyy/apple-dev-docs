@@ -1,7 +1,8 @@
 # DirectionsAvoid
 
 **Framework**: Apple Maps Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A list of the features you can request to avoid when calculating directions.
 
@@ -10,9 +11,13 @@ A list of the features you can request to avoid when calculating directions.
 
 ## Declaration
 
-```swift
+```
 string DirectionsAvoid
 ```
+
+## Possible Values
+
+- `Tolls`
 
 #### Possible Values
 
@@ -20,17 +25,18 @@ string DirectionsAvoid
 
 ## See Also
 
-- [type CountryCode](countrycode.md)
+### Getting common type information
+- [type CountryCode](./countrycode.md)
   A string that represents a two-letter country code.
-- [type Lang](lang.md)
+- [type Lang](./lang.md)
   A string that represents a standard tag for identifying languages.
-- [type PoiCategory](poicategory.md)
+- [type PoiCategory](./poicategory.md)
   A string that describes a specific point of interest (POI) category.
-- [type SearchLocation](searchlocation.md)
+- [type SearchLocation](./searchlocation.md)
   A string that describes a geographic location in the form of longitude and latitude.
-- [type SearchRegion](searchregion.md)
+- [type SearchRegion](./searchregion.md)
   A string that describes a region to search in terms of its upper-right and lower-left corners as a pair of geographic points.
-- [type UserLocation](userlocation.md)
+- [type UserLocation](./userlocation.md)
   A string that describes the user’s location in terms of longitude and latitude.
 
 

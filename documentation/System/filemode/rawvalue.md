@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw C mode.
 

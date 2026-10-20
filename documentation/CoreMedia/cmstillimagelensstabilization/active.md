@@ -1,7 +1,8 @@
 # CMStillImageLensStabilization.active
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The lens stabilization module was active for the duration this buffer.
 

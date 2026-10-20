@@ -1,7 +1,8 @@
 # stopSearchingForUnconfiguredAccessories()
 
 **Framework**: External Accessory  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the search for unconfigured accessories.
 
@@ -17,13 +18,18 @@ Stops the search for unconfigured accessories.
 func stopSearchingForUnconfiguredAccessories()
 ```
 
+```objc
+- (void) stopSearchingForUnconfiguredAccessories;
+```
+
 ## See Also
 
-- [func configureAccessory(EAWiFiUnconfiguredAccessory, withConfigurationUIOn: UIViewController)](eawifiunconfiguredaccessorybrowser/configureaccessory(_:withconfigurationuion:).md)
+### Finding and Configuring Accessories
+- [func configureAccessory(EAWiFiUnconfiguredAccessory, withConfigurationUIOn: UIViewController)](./configureaccessory%28_,withconfigurationuion%29.md)
   Begins the configuration process for the specified accessory.
-- [func startSearchingForUnconfiguredAccessories(matching: NSPredicate?)](eawifiunconfiguredaccessorybrowser/startsearchingforunconfiguredaccessories(matching:).md)
+- [func startSearchingForUnconfiguredAccessories(matching: NSPredicate?)](./startsearchingforunconfiguredaccessories%28matching%29.md)
   Starts the search for unconfigured accessories that match the specified predicate.
-- [var unconfiguredAccessories: Set<EAWiFiUnconfiguredAccessory>](eawifiunconfiguredaccessorybrowser/unconfiguredaccessories.md)
+- [var unconfiguredAccessories: Set<EAWiFiUnconfiguredAccessory>](./unconfiguredaccessories.md)
   The set of unconfigured accessories that have been discovered.
 
 

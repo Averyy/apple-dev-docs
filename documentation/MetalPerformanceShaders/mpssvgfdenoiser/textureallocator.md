@@ -1,7 +1,8 @@
 # textureAllocator
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var textureAllocator: any MPSSVGFTextureAllocator { get }
+```
+
+```objc
+@property (nonatomic, readonly) id<MPSSVGFTextureAllocator> textureAllocator;
 ```
 
 

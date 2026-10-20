@@ -1,7 +1,8 @@
 # dimensions(faceSize:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Specifies the dimensions of the cube texture.
 

@@ -1,7 +1,8 @@
 # interstitialEvent
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The associated interstitial event for this segment.
 
@@ -20,17 +21,22 @@ The associated interstitial event for this segment.
 var interstitialEvent: AVPlayerInterstitialEvent? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) AVPlayerInterstitialEvent * interstitialEvent;
+```
+
 #### Discussion
 
 This value is `nil` for segments that represent playback of the primary item.
 
 ## See Also
 
-- [var timeMapping: CMTimeMapping](avplayeritemsegment/timemapping.md)
+### Inspecting the segment
+- [var timeMapping: CMTimeMapping](./timemapping.md)
   The time mapping for this segment.
-- [var loadedTimeRanges: [CMTimeRange]](avplayeritemsegment/loadedtimeranges-879hc.md)
+- [var loadedTimeRanges: [CMTimeRange]](./loadedtimeranges-879hc.md)
   The time ranges for the segment that have media data is readily available.
-- [var startDate: Date?](avplayeritemsegment/startdate.md)
+- [var startDate: Date?](./startdate.md)
   The date at which a segment starts.
 
 

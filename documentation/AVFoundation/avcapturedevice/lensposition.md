@@ -1,7 +1,8 @@
 # lensPosition
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current focus position of the lens.
 
@@ -17,6 +18,10 @@ The current focus position of the lens.
 var lensPosition: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float lensPosition;
+```
+
 #### Discussion
 
 A lens position value doesn’t correspond to an exact physical distance, nor does it represent a consistent focus distance from device to device.
@@ -27,11 +32,12 @@ This property is key-value observable.
 
 ## See Also
 
-- [var isLockingFocusWithCustomLensPositionSupported: Bool](avcapturedevice/islockingfocuswithcustomlenspositionsupported.md)
+### Setting focus manually
+- [var isLockingFocusWithCustomLensPositionSupported: Bool](./islockingfocuswithcustomlenspositionsupported.md)
   A Boolean value that indicates whether the device supports locking focus to a specific lens position.
-- [class let currentLensPosition: Float](avcapturedevice/currentlensposition.md)
+- [class let currentLensPosition: Float](./currentlensposition.md)
   A constant that represents the current lens position.
-- [func setFocusModeLocked(lensPosition: Float, completionHandler: ((CMTime) -> Void)?)](avcapturedevice/setfocusmodelocked(lensposition:completionhandler:).md)
+- [func setFocusModeLocked(lensPosition: Float, completionHandler: ((CMTime) -> Void)?)](./setfocusmodelocked%28lensposition,completionhandler%29.md)
   Locks the lens position at the specified value, and sets the focus mode to a locked state.
 
 

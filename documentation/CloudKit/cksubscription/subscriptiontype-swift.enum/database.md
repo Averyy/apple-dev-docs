@@ -1,7 +1,8 @@
 # CKSubscription.SubscriptionType.database
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that indicates the subscription is database-based.
 
@@ -20,11 +21,16 @@ A constant that indicates the subscription is database-based.
 case database
 ```
 
+```c
+CKSubscriptionTypeDatabase
+```
+
 ## See Also
 
-- [CKSubscription.SubscriptionType.query](cksubscription/subscriptiontype-swift.enum/query.md)
+### Subscription Types
+- [CKSubscription.SubscriptionType.query](./query.md)
   A constant that indicates the subscription is query-based.
-- [CKSubscription.SubscriptionType.recordZone](cksubscription/subscriptiontype-swift.enum/recordzone.md)
+- [CKSubscription.SubscriptionType.recordZone](./recordzone.md)
   A constant that indicates the subscription is zone-based.
 
 

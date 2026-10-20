@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Return the delegate
 
@@ -12,6 +13,10 @@ Return the delegate
 
 ```swift
 unowned(unsafe) var delegate: (any IOBluetoothHandsFreeDelegate)! { get set }
+```
+
+```objc
+@property (assign) id<IOBluetoothHandsFreeDelegate> delegate;
 ```
 
 #### Return Value

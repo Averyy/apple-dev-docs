@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.13.4+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,13 +18,13 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIORangeDynamicRangeDolbyNormalMode](2937400-anonymous/kiorangedynamicrangedolbynormalmode.md)
-- [kIORangeDynamicRangeDolbyTunnelMode](2937400-anonymous/kiorangedynamicrangedolbytunnelmode.md)
-- [kIORangeDynamicRangeHDR10](2937400-anonymous/kiorangedynamicrangehdr10.md)
-- [kIORangeDynamicRangeNotSupported](2937400-anonymous/kiorangedynamicrangenotsupported.md)
-- [kIORangeDynamicRangeSDR](2937400-anonymous/kiorangedynamicrangesdr.md)
-- [kIORangeDynamicRangeTraditionalGammaHDR](2937400-anonymous/kiorangedynamicrangetraditionalgammahdr.md)
-- [kIORangeDynamicRangeTraditionalGammaSDR](2937400-anonymous/kiorangedynamicrangetraditionalgammasdr.md)
+- [kIORangeDynamicRangeDolbyNormalMode](./api-2937400-anonymous/kiorangedynamicrangedolbynormalmode.md)
+- [kIORangeDynamicRangeDolbyTunnelMode](./api-2937400-anonymous/kiorangedynamicrangedolbytunnelmode.md)
+- [kIORangeDynamicRangeHDR10](./api-2937400-anonymous/kiorangedynamicrangehdr10.md)
+- [kIORangeDynamicRangeNotSupported](./api-2937400-anonymous/kiorangedynamicrangenotsupported.md)
+- [kIORangeDynamicRangeSDR](./api-2937400-anonymous/kiorangedynamicrangesdr.md)
+- [kIORangeDynamicRangeTraditionalGammaHDR](./api-2937400-anonymous/kiorangedynamicrangetraditionalgammahdr.md)
+- [kIORangeDynamicRangeTraditionalGammaSDR](./api-2937400-anonymous/kiorangedynamicrangetraditionalgammasdr.md)
 
 
 ---

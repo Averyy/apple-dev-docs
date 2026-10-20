@@ -1,7 +1,8 @@
 # Ads Report (Brands)
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Retrieve performance metrics for Apple Maps ads.
 
@@ -12,13 +13,13 @@ Retrieve performance metrics for Apple Maps ads.
 
 Brand ad reports return one row per ad. Each row contains a `metadata` object with ad identifiers (including `campaignId` and `adGroupId`), `totalMetrics` aggregated over the full date range, and a `granularMetrics` array broken down by the selected `granularity`.
 
-For Apple Maps ads, the `metadata` object includes a nested `creative` object ([`BrandsReportingCreative`](brandsreportingcreative.md)) with the creative’s `id`, `creativeType`, and `systemStatus`. There is no flat `creativeId` field. Filter by `adGroupId` or `campaignId` in the `filters` array to scope results.
+For Apple Maps ads, the `metadata` object includes a nested `creative` object ([`BrandsReportingCreative`](./brandsreportingcreative.md)) with the creative’s `id`, `creativeType`, and `systemStatus`. There is no flat `creativeId` field. Filter by `adGroupId` or `campaignId` in the `filters` array to scope results.
 
-See [`Filter`](filter.md) for the full set of supported comparison operators.
+See [`Filter`](./filter.md) for the full set of supported comparison operators.
 
 #### Request Body
 
-See [`BrandsReportingRequest`](brandsreportingrequest.md).
+See [`BrandsReportingRequest`](./brandsreportingrequest.md).
 
 Brand ad reports can be grouped by device type, business location, or ad placement.
 
@@ -333,17 +334,34 @@ POST /v1/reports/business-brands/ads/query
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `BrandsReportingRequest`
+
+## Responses
+
+- `200` OK (`BrandsAdReportResponse`, `application/json`): Successful response. Returns [`BrandsAdReportResponse`](./brandsadreportresponse.md) (`result`: [`BrandsAdResultContainer`](./brandsadresultcontainer.md)).
+- `400` Bad Request (`Error`, `application/json`): Bad Request. Returns [`ErrorResponse`](./errorresponse.md).
+- `401` Unauthorized (`Error`, `application/json`): Unauthorized.
+- `403` Forbidden (`Error`, `application/json`): Forbidden.
+- `404` Not Found (`Error`, `application/json`): Not Found. Returns [`ErrorResponse`](./errorresponse.md).
+- `429` Too Many Requests (`Error`, `application/json`): Rate Limit Exceeded. Returns [`ErrorResponse`](./errorresponse.md).
+- `500` Internal Server Error (`Error`, `application/json`): Internal Server Error. Returns [`ErrorResponse`](./errorresponse.md).
 
 ## See Also
 
-- [Campaigns Report (Brands)](get-brand-campaign-reports.md)
+- [Campaigns Report (Brands)](./get-brand-campaign-reports.md)
   Retrieve performance metrics for Apple Maps campaigns.
-- [Ad Groups Report (Brands)](get-brand-ad-group-reports.md)
+- [Ad Groups Report (Brands)](./get-brand-ad-group-reports.md)
   Retrieve performance metrics for Apple Maps ad groups.
-- [Keywords Report (Brands)](get-brand-keyword-reports.md)
+- [Keywords Report (Brands)](./get-brand-keyword-reports.md)
   Retrieve performance metrics for Apple Maps keywords.
-- [Search Terms Report (Brands)](get-brand-search-term-reports.md)
+- [Search Terms Report (Brands)](./get-brand-search-term-reports.md)
   Retrieve performance metrics for the actual search terms that triggered keyword matches in Apple Maps campaigns.
 
 

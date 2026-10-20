@@ -1,7 +1,8 @@
 # tripEstimateStyle
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style that the map template uses when displaying trip estimates during active nagivation.
 
@@ -16,19 +17,24 @@ The style that the map template uses when displaying trip estimates during activ
 var tripEstimateStyle: CPTripEstimateStyle { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CPTripEstimateStyle tripEstimateStyle;
+```
+
 #### Discussion
 
-The default value is [`CPTripEstimateStyle.dark`](cptripestimatestyle/dark.md).
+The default value is [`CPTripEstimateStyle.dark`](../cptripestimatestyle/dark.md).
 
 ## See Also
 
-- [func updateEstimates(CPTravelEstimates, for: CPTrip)](cpmaptemplate/updateestimates(_:for:).md)
+### Providing Trip Estimates
+- [func updateEstimates(CPTravelEstimates, for: CPTrip)](./updateestimates%28_,for%29.md)
   Updates travel estimates, such as arrival time and the remaining time and distance for a trip.
-- [func update(CPTravelEstimates, for: CPTrip, with: CPTimeRemainingColor)](cpmaptemplate/update(_:for:with:).md)
+- [func update(CPTravelEstimates, for: CPTrip, with: CPTimeRemainingColor)](./update%28_,for,with%29.md)
   Updates travel estimates, such as arrival time and the remaining time and distance for a trip, with the specified time-remaining color.
-- [enum CPTimeRemainingColor](cptimeremainingcolor.md)
+- [enum CPTimeRemainingColor](../cptimeremainingcolor.md)
   The color the system uses when displaying the time remaining for a trip.
-- [enum CPTripEstimateStyle](cptripestimatestyle.md)
+- [enum CPTripEstimateStyle](../cptripestimatestyle.md)
   The set of display styles for trip estimates.
 
 

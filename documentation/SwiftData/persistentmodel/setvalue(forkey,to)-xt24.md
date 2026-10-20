@@ -1,7 +1,8 @@
 # setValue(forKey:to:)
 
 **Framework**: SwiftData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.0+
@@ -21,11 +22,12 @@ func setValue<Value>(forKey: KeyPath<Self, Value>, to newValue: Value) where Val
 
 ## See Also
 
-- [func setValue<Value, OtherModel>(forKey: KeyPath<Self, Value>, to: Value)](persistentmodel/setvalue(forkey:to:)-18176.md)
-- [func setValue<Value, OtherModel>(forKey: KeyPath<Self, Value>, to: Value)](persistentmodel/setvalue(forkey:to:)-3mmp2.md)
-- [func setValue<Value>(forKey: KeyPath<Self, Value?>, to: Value?)](persistentmodel/setvalue(forkey:to:)-3uqwc.md)
-- [func setValue<Value>(forKey: KeyPath<Self, Value>, to: Value)](persistentmodel/setvalue(forkey:to:)-8wepb.md)
-- [func setTransformableValue<Value>(forKey: KeyPath<Self, Value>, to: Value)](persistentmodel/settransformablevalue(forkey:to:).md)
+### Modifying a value by key path
+- [func setValue<Value, OtherModel>(forKey: KeyPath<Self, Value>, to: Value)](./setvalue%28forkey,to%29-18176.md)
+- [func setValue<Value, OtherModel>(forKey: KeyPath<Self, Value>, to: Value)](./setvalue%28forkey,to%29-3mmp2.md)
+- [func setValue<Value>(forKey: KeyPath<Self, Value?>, to: Value?)](./setvalue%28forkey,to%29-3uqwc.md)
+- [func setValue<Value>(forKey: KeyPath<Self, Value>, to: Value)](./setvalue%28forkey,to%29-8wepb.md)
+- [func setTransformableValue<Value>(forKey: KeyPath<Self, Value>, to: Value)](./settransformablevalue%28forkey,to%29.md)
 
 
 ---

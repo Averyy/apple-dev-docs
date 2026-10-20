@@ -1,7 +1,8 @@
 # FFCoordinateSystemFlag
 
 **Framework**: Force Feedback  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,6 +14,10 @@
 typealias FFCoordinateSystemFlag = UInt32
 ```
 
+```c
+typedef UInt32 FFCoordinateSystemFlag;
+```
+
 #### Discussion
 
 Different coordinates used by the Force Feedback framework.
@@ -20,22 +25,23 @@ Different coordinates used by the Force Feedback framework.
 ## Topics
 
 ### Constants
-- [var FFEFF_CARTESIAN: Int](ffeff_cartesian.md)
-- [var FFEFF_POLAR: Int](ffeff_polar.md)
-- [var FFEFF_SPHERICAL: Int](ffeff_spherical.md)
+- [var FFEFF_CARTESIAN: Int](./ffeff_cartesian.md)
+- [var FFEFF_POLAR: Int](./ffeff_polar.md)
+- [var FFEFF_SPHERICAL: Int](./ffeff_spherical.md)
 
 ## See Also
 
-- [Miscellaneous Defines](miscellaneous-defines.md)
-- [typealias FFCapabilitiesEffectSubType](ffcapabilitieseffectsubtype.md)
-- [typealias FFCapabilitiesEffectType](ffcapabilitieseffecttype.md)
-- [typealias FFCommandFlag](ffcommandflag.md)
-- [typealias FFCooperativeLevelFlag](ffcooperativelevelflag.md)
-- [typealias FFEffectParameterFlag](ffeffectparameterflag.md)
-- [typealias FFEffectStartFlag](ffeffectstartflag.md)
-- [typealias FFEffectStatusFlag](ffeffectstatusflag.md)
-- [typealias FFProperty](ffproperty.md)
-- [typealias FFState](ffstate.md)
+### Constants
+- [Miscellaneous Defines](./miscellaneous-defines.md)
+- [typealias FFCapabilitiesEffectSubType](./ffcapabilitieseffectsubtype.md)
+- [typealias FFCapabilitiesEffectType](./ffcapabilitieseffecttype.md)
+- [typealias FFCommandFlag](./ffcommandflag.md)
+- [typealias FFCooperativeLevelFlag](./ffcooperativelevelflag.md)
+- [typealias FFEffectParameterFlag](./ffeffectparameterflag.md)
+- [typealias FFEffectStartFlag](./ffeffectstartflag.md)
+- [typealias FFEffectStatusFlag](./ffeffectstatusflag.md)
+- [typealias FFProperty](./ffproperty.md)
+- [typealias FFState](./ffstate.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # solvers
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently active solvers.
 

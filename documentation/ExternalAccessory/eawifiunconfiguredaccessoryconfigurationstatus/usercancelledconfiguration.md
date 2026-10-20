@@ -1,7 +1,8 @@
 # EAWiFiUnconfiguredAccessoryConfigurationStatus.userCancelledConfiguration
 
 **Framework**: External Accessory  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user cancelled the configuration process.
 
@@ -19,11 +20,16 @@ The user cancelled the configuration process.
 case userCancelledConfiguration
 ```
 
+```c
+EAWiFiUnconfiguredAccessoryConfigurationStatusUserCancelledConfiguration
+```
+
 ## See Also
 
-- [EAWiFiUnconfiguredAccessoryConfigurationStatus.success](eawifiunconfiguredaccessoryconfigurationstatus/success.md)
+### Status Values
+- [EAWiFiUnconfiguredAccessoryConfigurationStatus.success](./success.md)
   The configuration of the accessory succeeded.
-- [EAWiFiUnconfiguredAccessoryConfigurationStatus.failed](eawifiunconfiguredaccessoryconfigurationstatus/failed.md)
+- [EAWiFiUnconfiguredAccessoryConfigurationStatus.failed](./failed.md)
   The configuration failed.
 
 

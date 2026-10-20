@@ -1,7 +1,8 @@
 # with12s(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Static factory method that creates a custom day period format style using a style that represents midday and midnight.
 
@@ -30,9 +31,10 @@ A day period format style appropriate for the locale and specified width.
 
 ## See Also
 
-- [static func conversational(Date.FormatStyle.Symbol.DayPeriod.Width) -> Date.FormatStyle.Symbol.DayPeriod](date/formatstyle/symbol/dayperiod/conversational(_:).md)
+### Modifying a Day Period
+- [static func conversational(Date.FormatStyle.Symbol.DayPeriod.Width) -> Date.FormatStyle.Symbol.DayPeriod](./conversational%28_%29.md)
   Static factory method that creates a custom day period format style using a conversational style.
-- [static func standard(Date.FormatStyle.Symbol.DayPeriod.Width) -> Date.FormatStyle.Symbol.DayPeriod](date/formatstyle/symbol/dayperiod/standard(_:).md)
+- [static func standard(Date.FormatStyle.Symbol.DayPeriod.Width) -> Date.FormatStyle.Symbol.DayPeriod](./standard%28_%29.md)
   Static factory method that creates a custom day period format style using a standard style.
 
 

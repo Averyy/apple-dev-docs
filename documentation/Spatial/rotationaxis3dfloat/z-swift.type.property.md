@@ -1,7 +1,8 @@
 # z
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The z-axis, expressed in unit coordinates.
 

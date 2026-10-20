@@ -1,17 +1,18 @@
 # AVAudioSession.PortOverride
 
 **Framework**: AVFAudio  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Constants for use with the [`overrideOutputAudioPort(_:)`](avaudiosession/overrideoutputaudioport(_:).md) method.
+Constants for use with the [`overrideOutputAudioPort(_:)`](./overrideoutputaudioport%28_%29.md) method.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,25 +20,29 @@ Constants for use with the [`overrideOutputAudioPort(_:)`](avaudiosession/overri
 enum PortOverride
 ```
 
+```c
+enum AVAudioSessionPortOverride : NSUInteger;
+```
+
 ## Topics
 
 ### Creating a port override
-- [init?(rawValue: UInt)](avaudiosession/portoverride/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./portoverride/init%28rawvalue%29.md)
 ### Choosing a port override
-- [AVAudioSession.PortOverride.none](avaudiosession/portoverride/none.md)
+- [AVAudioSession.PortOverride.none](./portoverride/none.md)
   A value that indicates not to override the output audio port.
-- [AVAudioSession.PortOverride.speaker](avaudiosession/portoverride/speaker.md)
+- [AVAudioSession.PortOverride.speaker](./portoverride/speaker.md)
   A value that indicates to override the current inputs and outputs, and route audio to the built-in speaker and microphone.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

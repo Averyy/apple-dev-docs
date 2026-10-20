@@ -1,7 +1,8 @@
 # BNNSReduceFunctionNone
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A reduction function that copies the input to the output.
 
@@ -20,37 +21,42 @@ A reduction function that copies the input to the output.
 var BNNSReduceFunctionNone: BNNSReduceFunction { get }
 ```
 
+```c
+BNNSReduceFunctionNone
+```
+
 #### Discussion
 
-BNNS provides this reduction function for use with some functions — such as [`BNNSScatter(_:_:_:_:_:_:)`](bnnsscatter(_:_:_:_:_:_:).md) — to indicate that the operation copies the input to the output. [`BNNSReduceFunctionNone`](bnnsreducefunctionnone.md) isn’t supported by the BNNS reduction layer, use [`BNNSCopy(_:_:_:)`](bnnscopy(_:_:_:).md) to perform a copy or conversion operation.
+BNNS provides this reduction function for use with some functions — such as [`BNNSScatter(_:_:_:_:_:_:)`](./bnnsscatter%28_,_,_,_,_,_%29.md) — to indicate that the operation copies the input to the output. [`BNNSReduceFunctionNone`](./bnnsreducefunctionnone.md) isn’t supported by the BNNS reduction layer, use [`BNNSCopy(_:_:_:)`](./bnnscopy%28_,_,_%29.md) to perform a copy or conversion operation.
 
 ## See Also
 
-- [init(UInt32)](bnnsreducefunction/init(_:).md)
-- [init(rawValue: UInt32)](bnnsreducefunction/init(rawvalue:).md)
-- [var rawValue: UInt32](bnnsreducefunction/rawvalue.md)
-- [var BNNSReduceFunctionArgMax: BNNSReduceFunction](bnnsreducefunctionargmax.md)
+### Reduction Functions
+- [init(UInt32)](./bnnsreducefunction/init%28_%29.md)
+- [init(rawValue: UInt32)](./bnnsreducefunction/init%28rawvalue%29.md)
+- [var rawValue: UInt32](./bnnsreducefunction/rawvalue.md)
+- [var BNNSReduceFunctionArgMax: BNNSReduceFunction](./bnnsreducefunctionargmax.md)
   A reduction function that computes the index of the maximum value.
-- [var BNNSReduceFunctionArgMin: BNNSReduceFunction](bnnsreducefunctionargmin.md)
+- [var BNNSReduceFunctionArgMin: BNNSReduceFunction](./bnnsreducefunctionargmin.md)
   A reduction function that computes the index of the minimum value.
-- [var BNNSReduceFunctionL1Norm: BNNSReduceFunction](bnnsreducefunctionl1norm.md)
+- [var BNNSReduceFunctionL1Norm: BNNSReduceFunction](./bnnsreducefunctionl1norm.md)
   A reduction function that computes the sum of the absolute value of each element.
-- [var BNNSReduceFunctionLogicalAnd: BNNSReduceFunction](bnnsreducefunctionlogicaland.md)
+- [var BNNSReduceFunctionLogicalAnd: BNNSReduceFunction](./bnnsreducefunctionlogicaland.md)
   A reduction function that reduces a tensor to true if all elements are true.
-- [var BNNSReduceFunctionAll: BNNSReduceFunction](bnnsreducefunctionall.md)
+- [var BNNSReduceFunctionAll: BNNSReduceFunction](./bnnsreducefunctionall.md)
   An alias of the logical AND reduction function.
-- [var BNNSReduceFunctionLogicalOr: BNNSReduceFunction](bnnsreducefunctionlogicalor.md)
+- [var BNNSReduceFunctionLogicalOr: BNNSReduceFunction](./bnnsreducefunctionlogicalor.md)
   A reduction function that reduces a tensor to true if any element is true.
-- [var BNNSReduceFunctionLogSum: BNNSReduceFunction](bnnsreducefunctionlogsum.md)
-- [var BNNSReduceFunctionAny: BNNSReduceFunction](bnnsreducefunctionany.md)
+- [var BNNSReduceFunctionLogSum: BNNSReduceFunction](./bnnsreducefunctionlogsum.md)
+- [var BNNSReduceFunctionAny: BNNSReduceFunction](./bnnsreducefunctionany.md)
   An alias of the logical OR reduction function.
-- [var BNNSReduceFunctionMax: BNNSReduceFunction](bnnsreducefunctionmax.md)
+- [var BNNSReduceFunctionMax: BNNSReduceFunction](./bnnsreducefunctionmax.md)
   A reduction function that computes the maximum value.
-- [var BNNSReduceFunctionMean: BNNSReduceFunction](bnnsreducefunctionmean.md)
+- [var BNNSReduceFunctionMean: BNNSReduceFunction](./bnnsreducefunctionmean.md)
   A reduction function that computes the mean value.
-- [var BNNSReduceFunctionMeanNonZero: BNNSReduceFunction](bnnsreducefunctionmeannonzero.md)
+- [var BNNSReduceFunctionMeanNonZero: BNNSReduceFunction](./bnnsreducefunctionmeannonzero.md)
   A reduction function that computes the mean value of nonzero elements.
-- [var BNNSReduceFunctionMin: BNNSReduceFunction](bnnsreducefunctionmin.md)
+- [var BNNSReduceFunctionMin: BNNSReduceFunction](./bnnsreducefunctionmin.md)
   A reduction function that computes the minimum value.
 
 

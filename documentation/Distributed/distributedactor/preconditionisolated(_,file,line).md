@@ -1,7 +1,8 @@
 # preconditionIsolated(_:file:line:)
 
 **Framework**: Distributed  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops program execution if the current task is not executing on this actor’s serial executor.
 
@@ -11,7 +12,7 @@ Stops program execution if the current task is not executing on this actor’s s
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

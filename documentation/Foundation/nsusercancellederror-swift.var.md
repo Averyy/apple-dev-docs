@@ -1,7 +1,8 @@
 # NSUserCancelledError
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The user canceled the operation (for example, by pressing Command-period).
 

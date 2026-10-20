@@ -1,7 +1,8 @@
 # gatherND(withUpdatesTensor:indicesTensor:batchDimensions:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a GatherND operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a GatherND operation and returns the result tensor.
 
 ```swift
 func gatherND(withUpdatesTensor updatesTensor: MPSGraphTensor, indicesTensor: MPSGraphTensor, batchDimensions: Int, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) gatherNDWithUpdatesTensor:(MPSGraphTensor *) updatesTensor indicesTensor:(MPSGraphTensor *) indicesTensor batchDimensions:(NSUInteger) batchDimensions name:(NSString *) name;
 ```
 
 #### Return Value

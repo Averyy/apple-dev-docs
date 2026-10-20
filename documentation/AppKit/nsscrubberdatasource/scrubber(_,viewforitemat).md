@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asks the data source object for the view the corresponds to the specified item in the scrubber.
@@ -14,6 +15,10 @@ Asks the data source object for the view the corresponds to the specified item i
 ```swift
 @MainActor
 func scrubber(_ scrubber: NSScrubber, viewForItemAt index: Int) -> NSScrubberItemView
+```
+
+```objc
+- (NSScrubberItemView *) scrubber:(NSScrubber *) scrubber viewForItemAtIndex:(NSInteger) index;
 ```
 
 #### Return Value

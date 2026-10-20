@@ -1,16 +1,20 @@
 # NSDownloadsUbiquitousContents
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether the system should download documents before handing them over to the app.
 
 **Availability**:
 - macOS 11.0+
 
+## Details
+
+- **Name**: `NSDownloadsUbiquitousContents`
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `NO`
 
@@ -20,11 +24,12 @@ By default, the system displays the download progress. Set the value to `YES` if
 
 ## See Also
 
-- [CFBundleDocumentTypes](information-property-list/cfbundledocumenttypes.md)
+### Documents
+- [CFBundleDocumentTypes](./cfbundledocumenttypes.md)
   The document types supported by the bundle.
-- [UISupportsDocumentBrowser](information-property-list/uisupportsdocumentbrowser.md)
+- [UISupportsDocumentBrowser](./uisupportsdocumentbrowser.md)
   A Boolean value indicating whether the app is a document-based app.
-- [LSSupportsOpeningDocumentsInPlace](information-property-list/lssupportsopeningdocumentsinplace.md)
+- [LSSupportsOpeningDocumentsInPlace](./lssupportsopeningdocumentsinplace.md)
   A Boolean value indicating whether the app may open the original document from a file provider, rather than a copy of the document.
 
 

@@ -1,7 +1,8 @@
 # AppIntentsPackage
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that describes app intent definitions that aren’t part of an app bundle and their dependencies.
 
@@ -11,7 +12,7 @@ A type that describes app intent definitions that aren’t part of an app bundle
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ protocol AppIntentsPackage
 
 ## Mentions
 
-- [Configuring the runtime behavior of your app intents](configuring-the-runtime-behavior-of-your-app-intents.md)
+- [Configuring the runtime behavior of your app intents](./configuring-the-runtime-behavior-of-your-app-intents.md)
 
 #### Overview
 
@@ -49,7 +50,7 @@ The app intents package `MyFrameworkPackage` in the example above doesn’t depe
 ## Topics
 
 ### Type Properties
-- [static var includedPackages: [any AppIntentsPackage.Type]](appintentspackage/includedpackages.md)
+- [static var includedPackages: [any AppIntentsPackage.Type]](./appintentspackage/includedpackages.md)
 
 
 ---

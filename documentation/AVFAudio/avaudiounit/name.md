@@ -1,7 +1,8 @@
 # name
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the audio unit.
 
@@ -19,13 +20,18 @@ The name of the audio unit.
 var name: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * name;
+```
+
 ## See Also
 
-- [var audioComponentDescription: AudioComponentDescription](avaudiounit/audiocomponentdescription.md)
+### Getting Audio Unit values
+- [var audioComponentDescription: AudioComponentDescription](./audiocomponentdescription.md)
   The audio component description that represents the underlying Core Audio audio unit.
-- [var manufacturerName: String](avaudiounit/manufacturername.md)
+- [var manufacturerName: String](./manufacturername.md)
   The name of the manufacturer of the audio unit.
-- [var version: Int](avaudiounit/version.md)
+- [var version: Int](./version.md)
   The version number of the audio unit.
 
 

@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.Activation.tanh
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Tanh acivation.
 

@@ -1,7 +1,8 @@
 # errSecOCSPResponderTryLater
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The online certificate status protocol (OCSP) responder is busy, try again later.
 
@@ -18,6 +19,10 @@ The online certificate status protocol (OCSP) responder is busy, try again later
 
 ```swift
 var errSecOCSPResponderTryLater: OSStatus { get }
+```
+
+```c
+errSecOCSPResponderTryLater
 ```
 
 

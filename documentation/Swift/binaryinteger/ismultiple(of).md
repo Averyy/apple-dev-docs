@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns `true` if this value is a multiple of the given value, and `false` otherwise.
@@ -34,11 +35,20 @@ Two edge cases are worth particular attention:
 
 - `other`: The value to test.
 
+## Default Implementations
+
+### BinaryInteger Implementations
+- [func isMultiple(of: Self) -> Bool](./ismultiple%28of%29-3ings.md)
+  Returns `true` if this value is a multiple of the given value, and `false` otherwise.
+- [func isMultiple(of: Self) -> Bool](./ismultiple%28of%29-8eqba.md)
+  Returns `true` if this value is a multiple of the given value, and `false` otherwise.
+
 ## See Also
 
-- [Binary Integer Operators](binary-integer-operators.md)
+### Performing Calculations
+- [Binary Integer Operators](../binary-integer-operators.md)
   Perform arithmetic and bitwise operations or compare values.
-- [func quotientAndRemainder(dividingBy: Self) -> (quotient: Self, remainder: Self)](binaryinteger/quotientandremainder(dividingby:).md)
+- [func quotientAndRemainder(dividingBy: Self) -> (quotient: Self, remainder: Self)](./quotientandremainder%28dividingby%29.md)
   Returns the quotient and remainder of this value divided by the given value.
 
 

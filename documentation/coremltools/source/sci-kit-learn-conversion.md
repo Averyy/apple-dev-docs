@@ -6,21 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/sci-kit-learn-conver
 
 # Scikit-learn
 
-**
-
-- [.md](../_sources/source/sci-kit-learn-conversion.md)
-- **
-
-.pdf
-
-**
-
-# Scikit-learn
-
- Table of contents 
-
-# Scikit-learn
-
 You can convert a [scikit-learn](https://scikit-learn.org/stable/) pipeline, classifier, or regressor to the Core ML format using [sklearn.convert()](https://apple.github.io/coremltools/source/coremltools.converters.sklearn.html#coremltools.converters.sklearn._converter.convert):
 
 ```

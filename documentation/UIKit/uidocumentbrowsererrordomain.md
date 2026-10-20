@@ -1,7 +1,8 @@
 # UIDocumentBrowserErrorDomain
 
 **Framework**: UIKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain for document browser errors.
 
@@ -17,13 +18,19 @@ The error domain for document browser errors.
 let UIDocumentBrowserErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const UIDocumentBrowserErrorDomain;
+```
+
 ## See Also
 
-- [class UIDocumentBrowserViewController](uidocumentbrowserviewcontroller.md)
+### Related Documentation
+- [class UIDocumentBrowserViewController](./uidocumentbrowserviewcontroller.md)
   A view controller for browsing and performing actions on documents that you store locally and in the cloud.
-- [struct UIDocumentBrowserError](uidocumentbrowsererror.md)
+### Handling errors
+- [struct UIDocumentBrowserError](./uidocumentbrowsererror.md)
   A structure that contains information about document browser errors.
-- [UIDocumentBrowserError.Code](uidocumentbrowsererror/code.md)
+- [UIDocumentBrowserError.Code](./uidocumentbrowsererror/code.md)
   The error codes for document browser errors.
 
 

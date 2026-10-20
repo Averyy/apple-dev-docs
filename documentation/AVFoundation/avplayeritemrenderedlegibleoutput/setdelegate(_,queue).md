@@ -1,7 +1,8 @@
 # setDelegate(_:queue:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the delegate object and the queue on which it’s invoked.
 
@@ -17,6 +18,10 @@ Sets the delegate object and the queue on which it’s invoked.
 func setDelegate(_ delegate: (any AVPlayerItemRenderedLegibleOutputPushDelegate)?, queue delegateQueue: dispatch_queue_t?)
 ```
 
+```objc
+- (void) setDelegate:(id<AVPlayerItemRenderedLegibleOutputPushDelegate>) delegate queue:(dispatch_queue_t) delegateQueue;
+```
+
 ## Parameters
 
 - `delegate`: A delegate object for this output.
@@ -24,11 +29,12 @@ func setDelegate(_ delegate: (any AVPlayerItemRenderedLegibleOutputPushDelegate)
 
 ## See Also
 
-- [var delegate: (any AVPlayerItemRenderedLegibleOutputPushDelegate)?](avplayeritemrenderedlegibleoutput/delegate.md)
+### Setting a delegate
+- [var delegate: (any AVPlayerItemRenderedLegibleOutputPushDelegate)?](./delegate.md)
   A delegate object for this output.
-- [var delegateQueue: dispatch_queue_t?](avplayeritemrenderedlegibleoutput/delegatequeue.md)
+- [var delegateQueue: dispatch_queue_t?](./delegatequeue.md)
   The dispatch queue on which the output calls the delegate object.
-- [protocol AVPlayerItemRenderedLegibleOutputPushDelegate](avplayeritemrenderedlegibleoutputpushdelegate.md)
+- [protocol AVPlayerItemRenderedLegibleOutputPushDelegate](../avplayeritemrenderedlegibleoutputpushdelegate.md)
   A delegate that handles the rendered pixel buffers produced by a rendered legible output object.
 
 

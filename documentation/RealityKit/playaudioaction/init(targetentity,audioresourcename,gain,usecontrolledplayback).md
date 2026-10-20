@@ -1,7 +1,8 @@
 # init(targetEntity:audioResourceName:gain:useControlledPlayback:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new play audio action.
 

@@ -1,16 +1,17 @@
 # FDERecoveryKeyRedirection
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures FileVault recovery key redirection.
 
 **Availability**:
-- macOS 10.9+
+- macOS 10.9+ - Deprecated in 10.13
 
 ## Declaration
 
-```swift
+```
 object FDERecoveryKeyRedirection
 ```
 
@@ -25,7 +26,7 @@ Note these cautions:
 - The payload must exist in a system-scoped profile.
 - Installing more than one payload of this type per machine results in an error.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -39,20 +40,25 @@ Note these cautions:
 
 ## Properties
 
-- `EncryptCertPayloadUUID` (string) *(required)*: The UUID of a payload within the same profile that contains a certificate used to encrypt the recovery key when the device sends it to the redirected URL. The referenced payload must be of type `com.apple.security.pkcs1`. Deprecated: macOS 10.13+
-- `RedirectURL` (string) *(required)*: The URL to which the device sends FDE recovery keys instead of to Apple. The URL must begin with https://. Deprecated: macOS 10.13+
+- `EncryptCertPayloadUUID` (string) *(required)* *(deprecated)*: The UUID of a payload within the same profile that contains a certificate used to encrypt the recovery key when the device sends it to the redirected URL. The referenced payload must be of type `com.apple.security.pkcs1`.
+
+  Deprecated: macOS 10.13+
+- `RedirectURL` (string) *(required)* *(deprecated)*: The URL to which the device sends FDE recovery keys instead of to Apple. The URL must begin with https://.
+
+  Deprecated: macOS 10.13+
 
 ## See Also
 
-- [object APN](apn.md)
+### Deprecated
+- [object APN](./apn.md)
   The payload that configures access point names.
-- [object MediaManagementAllowedMedia](mediamanagementallowedmedia.md)
+- [object MediaManagementAllowedMedia](./mediamanagementallowedmedia.md)
   The payload that configures media management.
-- [object ParentalControlDictationAndProfanity](parentalcontroldictationandprofanity.md)
+- [object ParentalControlDictationAndProfanity](./parentalcontroldictationandprofanity.md)
   The payload that configures parental control for dictation and profanity.
-- [object ShareKit](sharekit.md)
+- [object ShareKit](./sharekit.md)
   The payload that configures ShareKit.
-- [object SystemPreferences](systempreferences.md)
+- [object SystemPreferences](./systempreferences.md)
   The payload that configures the preference panes.
 
 

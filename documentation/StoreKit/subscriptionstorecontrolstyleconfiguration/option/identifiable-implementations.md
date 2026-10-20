@@ -1,11 +1,12 @@
 # Identifiable Implementations
 
-**Framework**: StoreKit
+**Framework**: StoreKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var id: Product.ID](subscriptionstorecontrolstyleconfiguration/option/id.md)
+- [var id: Product.ID](./id.md)
   The product ID of the auto-renewable subscription.
 
 

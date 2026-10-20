@@ -1,7 +1,8 @@
 # Clock
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The identifier for the audio clock class.
 
@@ -10,7 +11,7 @@ The identifier for the audio clock class.
 
 ## Declaration
 
-```swift
+```c
 Clock
 ```
 

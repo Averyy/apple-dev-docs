@@ -1,27 +1,33 @@
 # Get the Device Token
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 The request for sending the device token details.
 
 ## Topics
 
 ### Supporting Object
-- [object TokensResponse](tokensresponse.md)
+- [object TokensResponse](./tokensresponse.md)
   The response object that contains the device token.
 
 ## Endpoint
 
 `PUT https://yourmdmhost.example.com/checkin`
 
+## Responses
+
+- `200` OK (`TokensResponse`, `application/json`): The response object that contains the device token.
+
 ## See Also
 
-- [Declarative Management](declarative-management.md)
+### Declarative management
+- [Declarative Management](./declarative-management.md)
   Sends declarative management requests to the server.
-- [Get Server Supported Declarations](declaration-items.md)
+- [Get Server Supported Declarations](./declaration-items.md)
   Get a list of the declarations available on the server.
-- [Get the Device Status](status.md)
+- [Get the Device Status](./status.md)
   The request for getting the status of a device.
 
 

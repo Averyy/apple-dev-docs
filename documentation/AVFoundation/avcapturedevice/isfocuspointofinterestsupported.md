@@ -1,7 +1,8 @@
 # isFocusPointOfInterestSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the device supports a point of interest for focus.
 
@@ -18,13 +19,18 @@ A Boolean value that indicates whether the device supports a point of interest f
 var isFocusPointOfInterestSupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isFocusPointOfInterestSupported) BOOL focusPointOfInterestSupported;
+```
+
 #### Discussion
 
 This property is key-value observable.
 
 ## See Also
 
-- [var focusPointOfInterest: CGPoint](avcapturedevice/focuspointofinterest.md)
+### Setting a focus point of interest
+- [var focusPointOfInterest: CGPoint](./focuspointofinterest.md)
   The point of interest for focusing.
 
 

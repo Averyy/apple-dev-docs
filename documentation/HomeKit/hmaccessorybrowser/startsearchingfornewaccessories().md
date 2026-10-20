@@ -1,7 +1,8 @@
 # startSearchingForNewAccessories()
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts searching for accessories not yet associated with a home.
 
@@ -17,17 +18,22 @@ Starts searching for accessories not yet associated with a home.
 func startSearchingForNewAccessories()
 ```
 
+```objc
+- (void) startSearchingForNewAccessories;
+```
+
 #### Discussion
 
-HomeKit notifies your accessory browser delegate by calling the [`accessoryBrowser(_:didFindNewAccessory:)`](hmaccessorybrowserdelegate/accessorybrowser(_:didfindnewaccessory:).md) and [`accessoryBrowser(_:didRemoveNewAccessory:)`](hmaccessorybrowserdelegate/accessorybrowser(_:didremovenewaccessory:).md) methods when it detects accessories being added or removed, respectively.
+HomeKit notifies your accessory browser delegate by calling the [`accessoryBrowser(_:didFindNewAccessory:)`](../hmaccessorybrowserdelegate/accessorybrowser%28_,didfindnewaccessory%29.md) and [`accessoryBrowser(_:didRemoveNewAccessory:)`](../hmaccessorybrowserdelegate/accessorybrowser%28_,didremovenewaccessory%29.md) methods when it detects accessories being added or removed, respectively.
 
-When you start a search, HomeKit clears the [`discoveredAccessories`](hmaccessorybrowser/discoveredaccessories.md) array of content from the previous search.
+When you start a search, HomeKit clears the [`discoveredAccessories`](./discoveredaccessories.md) array of content from the previous search.
 
 ## See Also
 
-- [var discoveredAccessories: [HMAccessory]](hmaccessorybrowser/discoveredaccessories.md)
+### Discovering accessories
+- [var discoveredAccessories: [HMAccessory]](./discoveredaccessories.md)
   An array of accessories discovered during a search.
-- [func stopSearchingForNewAccessories()](hmaccessorybrowser/stopsearchingfornewaccessories.md)
+- [func stopSearchingForNewAccessories()](./stopsearchingfornewaccessories%28%29.md)
   Stops searching for new accessories.
 
 

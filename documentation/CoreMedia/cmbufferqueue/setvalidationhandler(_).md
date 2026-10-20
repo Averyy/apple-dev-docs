@@ -1,7 +1,8 @@
 # setValidationHandler(_:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets validation handler for the queue to call before enqueuing buffers.
 

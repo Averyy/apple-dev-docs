@@ -1,29 +1,30 @@
 # Stop
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the service associated with the specified provider.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t Stop(IOService *provider);
 ```
 
 ## Mentions
 
-- [Creating a Driver Using the DriverKit SDK](creating-a-driver-using-the-driverkit-sdk.md)
+- [Creating a Driver Using the DriverKit SDK](../creating-a-driver-using-the-driverkit-sdk.md)
 
 #### Return Value
 
-[`kIOReturnSuccess`](kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](error-codes.md).
+[`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../error-codes.md).
 
 #### Discussion
 
@@ -31,19 +32,20 @@ Before terminating the object in `provider`, the system calls this method to sto
 
 Call `super` at the end of your implementation. After you call `super`, it is a programmer error to access the `provider` object.
 
-Don’t use this method to release your `ivars` structure; use the [`free`](ioservice/free.md) method instead.
+Don’t use this method to release your `ivars` structure; use the [`free`](./free.md) method instead.
 
 ## Parameters
 
-- `provider`: The provider associated with the current service. This object is the same one that the system previously passed to your service’s [`Start`](https://developer.apple.com/documentation/serialdriverkit/iouserserial/start) method.
+- `provider`: The provider associated with the current service. This object is the same one that the system previously passed to your service’s [`Start`](../../SerialDriverKit/iouserserial/start.md) method.
 
 ## See Also
 
-- [init](ioservice/init.md)
+### Running the Service
+- [init](./init.md)
   Handles the basic initialization of the service.
-- [Start](ioservice/start.md)
+- [Start](./start.md)
   Starts the current service and associates it with the specified provider.
-- [free](ioservice/free.md)
+- [free](./free.md)
   Performs any final cleanup for the service.
 
 

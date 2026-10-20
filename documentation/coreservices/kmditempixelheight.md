@@ -1,7 +1,8 @@
 # kMDItemPixelHeight
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The height, in pixels, of the contents. For example, the image height or the video frame height. A CFNumber.
 
@@ -12,6 +13,10 @@ The height, in pixels, of the contents. For example, the image height or the vid
 
 ```swift
 let kMDItemPixelHeight: CFString!
+```
+
+```c
+const CFStringRef kMDItemPixelHeight;
 ```
 
 

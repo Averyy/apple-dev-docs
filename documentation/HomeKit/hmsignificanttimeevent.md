@@ -1,7 +1,8 @@
 # HMSignificantTimeEvent
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An event that fires at a time offset from a significant time-based event.
 
@@ -19,6 +20,10 @@ An event that fires at a time offset from a significant time-based event.
 class HMSignificantTimeEvent
 ```
 
+```objc
+@interface HMSignificantTimeEvent : HMTimeEvent
+```
+
 #### Overview
 
 Use this class to represent an event that fires at a time relative to a significant event, for example “30 minutes before sunset”.
@@ -26,37 +31,38 @@ Use this class to represent an event that fires at a time relative to a signific
 ## Topics
 
 ### Creating a significant time event
-- [init(significantEvent: HMSignificantEvent, offset: DateComponents?)](hmsignificanttimeevent/init(significantevent:offset:).md)
+- [init(significantEvent: HMSignificantEvent, offset: DateComponents?)](./hmsignificanttimeevent/init%28significantevent,offset%29.md)
   Creates a new significant time event with the specified significant event and offset.
 ### Inspecting a significant time event
-- [var significantEvent: HMSignificantEvent](hmsignificanttimeevent/significantevent.md)
+- [var significantEvent: HMSignificantEvent](./hmsignificanttimeevent/significantevent.md)
   The significant time-based event that is used to calculate when the event fires.
-- [var offset: DateComponents?](hmsignificanttimeevent/offset.md)
+- [var offset: DateComponents?](./hmsignificanttimeevent/offset.md)
   The offset from the significant event that the event fires at.
 
 ## Relationships
 
 ### Inherits From
-- [HMTimeEvent](hmtimeevent.md)
+- [HMTimeEvent](./hmtimeevent.md)
 ### Inherited By
-- [HMMutableSignificantTimeEvent](hmmutablesignificanttimeevent.md)
+- [HMMutableSignificantTimeEvent](./hmmutablesignificanttimeevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct HMSignificantEvent](hmsignificantevent.md)
+### Significant events
+- [struct HMSignificantEvent](./hmsignificantevent.md)
   An event that represents significant time-based events, including sunrise and sunset.
-- [class HMMutableSignificantTimeEvent](hmmutablesignificanttimeevent.md)
+- [class HMMutableSignificantTimeEvent](./hmmutablesignificanttimeevent.md)
   A mutable event that fires at the specified temporal offset to a significant event.
 
 

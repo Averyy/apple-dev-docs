@@ -1,7 +1,8 @@
 # isBlockedByScreenTime
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -13,6 +14,10 @@
 
 ```swift
 var isBlockedByScreenTime: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL isBlockedByScreenTime;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # ASWebAuthenticationPresentationContextProviding
 
 **Framework**: Authentication Services  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface the session uses to ask a delegate for a presentation context.
 
@@ -19,26 +20,31 @@ An interface the session uses to ask a delegate for a presentation context.
 protocol ASWebAuthenticationPresentationContextProviding : NSObjectProtocol
 ```
 
+```objc
+@protocol ASWebAuthenticationPresentationContextProviding <NSObject>
+```
+
 ## Mentions
 
-- [Authenticating a User Through a Web Service](authenticating-a-user-through-a-web-service.md)
+- [Authenticating a User Through a Web Service](./authenticating-a-user-through-a-web-service.md)
 
 ## Topics
 
 ### Specifying the Anchor
-- [func presentationAnchor(for: ASWebAuthenticationSession) -> ASPresentationAnchor](aswebauthenticationpresentationcontextproviding/presentationanchor(for:).md)
+- [func presentationAnchor(for: ASWebAuthenticationSession) -> ASPresentationAnchor](./aswebauthenticationpresentationcontextproviding/presentationanchor%28for%29.md)
   Tells the delegate from which window it should present content to the user.
-- [typealias ASPresentationAnchor](aspresentationanchor.md)
+- [typealias ASPresentationAnchor](./aspresentationanchor.md)
   A platform-specific type that indicates the kind of user interface element to use as a presentation anchor.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var presentationContextProvider: (any ASWebAuthenticationPresentationContextProviding)?](aswebauthenticationsession/presentationcontextprovider.md)
+### Presenting a Session
+- [var presentationContextProvider: (any ASWebAuthenticationPresentationContextProviding)?](./aswebauthenticationsession/presentationcontextprovider.md)
   A delegate that provides a display context in which the system can present an authentication session to the user.
 
 

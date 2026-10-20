@@ -1,7 +1,8 @@
 # treeAxisOffset
 
 **Framework**: hvf  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The offset of the part’s axis value settings in the render context axis value tree (depth first)
 

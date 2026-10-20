@@ -1,7 +1,8 @@
 # AppSchema.CameraIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies intent schemas in the camera domain.
 
@@ -21,35 +22,36 @@ protocol CameraIntent : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var openInCaptureMode: some AppSchemaIntent](appschema/cameraintent/openincapturemode.md)
+- [var openInCaptureMode: some AppSchemaIntent](./cameraintent/openincapturemode.md)
   An intent schema that opens the camera in the specified mode.
-- [var setDevice: some AppSchemaIntent](appschema/cameraintent/setdevice.md)
+- [var setDevice: some AppSchemaIntent](./cameraintent/setdevice.md)
   An intent schema that changes the camera to the specified position.
-- [var startCapture: some AppSchemaIntent](appschema/cameraintent/startcapture.md)
+- [var startCapture: some AppSchemaIntent](./cameraintent/startcapture.md)
   An intent schema that starts a capture or opens the camera in a specified mode with a timer setting.
-- [var stopCapture: some AppSchemaIntent](appschema/cameraintent/stopcapture.md)
+- [var stopCapture: some AppSchemaIntent](./cameraintent/stopcapture.md)
   An intent schema that stops a recording in progress.
-- [var switchDevice: some AppSchemaIntent](appschema/cameraintent/switchdevice.md)
+- [var switchDevice: some AppSchemaIntent](./cameraintent/switchdevice.md)
   An intent schema that toggles between front and back camera.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Intent](appschema/intent.md)
+- [AppSchema.Intent](./intent.md)
 
 ## See Also
 
-- [var openInCaptureMode: some AppSchemaIntent](appschema/cameraintent/openincapturemode.md)
+### Actions
+- [var openInCaptureMode: some AppSchemaIntent](./cameraintent/openincapturemode.md)
   An intent schema that opens the camera in the specified mode.
-- [var setDevice: some AppSchemaIntent](appschema/cameraintent/setdevice.md)
+- [var setDevice: some AppSchemaIntent](./cameraintent/setdevice.md)
   An intent schema that changes the camera to the specified position.
-- [var startCapture: some AppSchemaIntent](appschema/cameraintent/startcapture.md)
+- [var startCapture: some AppSchemaIntent](./cameraintent/startcapture.md)
   An intent schema that starts a capture or opens the camera in a specified mode with a timer setting.
-- [var stopCapture: some AppSchemaIntent](appschema/cameraintent/stopcapture.md)
+- [var stopCapture: some AppSchemaIntent](./cameraintent/stopcapture.md)
   An intent schema that stops a recording in progress.
-- [var switchDevice: some AppSchemaIntent](appschema/cameraintent/switchdevice.md)
+- [var switchDevice: some AppSchemaIntent](./cameraintent/switchdevice.md)
   An intent schema that toggles between front and back camera.
 
 

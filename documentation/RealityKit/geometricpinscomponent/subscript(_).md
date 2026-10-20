@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: RealityKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Retrieves the pin by its name.
 

@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object you provide to mediate synchronization of the view’s AR scene information with SceneKit content.
 
@@ -15,9 +16,14 @@ An object you provide to mediate synchronization of the view’s AR scene inform
 weak var delegate: (any ARSCNViewDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<ARSCNViewDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol ARSCNViewDelegate](arscnviewdelegate.md)
+### Responding to AR Updates
+- [protocol ARSCNViewDelegate](../arscnviewdelegate.md)
   Methods you can implement to mediate the automatic synchronization of SceneKit content with an AR session.
 
 

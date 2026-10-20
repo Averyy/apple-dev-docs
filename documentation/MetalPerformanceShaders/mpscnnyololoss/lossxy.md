@@ -1,7 +1,8 @@
 # lossXY
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var lossXY: MPSCNNLoss { get }
+```
+
+```objc
+@property (nonatomic, retain, readonly, nonnull) MPSCNNLoss * lossXY;
 ```
 
 

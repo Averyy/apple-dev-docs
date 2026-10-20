@@ -1,7 +1,8 @@
 # UIScreen
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that defines the properties associated with a hardware-based display.
 
@@ -9,7 +10,7 @@ An object that defines the properties associated with a hardware-based display.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 
 ## Declaration
 
@@ -18,112 +19,117 @@ An object that defines the properties associated with a hardware-based display.
 class UIScreen
 ```
 
+```objc
+@interface UIScreen : NSObject
+```
+
 ## Mentions
 
-- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
-- [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
+- [Presenting content on a connected display](./presenting-content-on-a-connected-display.md)
+- [Building a desktop-class iPad app](./building-a-desktop-class-ipad-app.md)
 
 #### Overview
 
-A [`UIScreen`](uiscreen.md) object provides information about the screens attached to an iOS, iPadOS, or tvOS device. A screen object for an iOS or iPadOS device has information about the integrated display or an attached display. A screen object for a tvOS device represents the television connected to the device. In a compatible iPad or iPhone app running in visionOS, don’t rely on screen-related properties to configure your app.
+A [`UIScreen`](./uiscreen.md) object provides information about the screens attached to an iOS, iPadOS, or tvOS device. A screen object for an iOS or iPadOS device has information about the integrated display or an attached display. A screen object for a tvOS device represents the television connected to the device. In a compatible iPad or iPhone app running in visionOS, don’t rely on screen-related properties to configure your app.
 
-You don’t create any of these screen objects directly. Instead, fetch the screen object for one of your app’s windows from the [`UIWindowScene`](uiwindowscene.md) object that manages the window.
+You don’t create any of these screen objects directly. Instead, fetch the screen object for one of your app’s windows from the [`UIWindowScene`](./uiwindowscene.md) object that manages the window.
 
-Avoid using screen objects to make decisions about your app’s interface. Use a screen object only as needed to retrieve screen-related information, such as the screen’s bounds rectangle, brightness, and overscan settings. Apps that rely on the screen dimensions can use the object in the [`fixedCoordinateSpace`](uiscreen/fixedcoordinatespace.md) property as a fixed point of reference for any calculations they must make.
+Avoid using screen objects to make decisions about your app’s interface. Use a screen object only as needed to retrieve screen-related information, such as the screen’s bounds rectangle, brightness, and overscan settings. Apps that rely on the screen dimensions can use the object in the [`fixedCoordinateSpace`](./uiscreen/fixedcoordinatespace.md) property as a fixed point of reference for any calculations they must make.
 
 ## Topics
 
 ### Getting the coordinate space
-- [var coordinateSpace: any UICoordinateSpace](uiscreen/coordinatespace.md)
+- [var coordinateSpace: any UICoordinateSpace](./uiscreen/coordinatespace.md)
   The current coordinate space of the screen.
-- [var fixedCoordinateSpace: any UICoordinateSpace](uiscreen/fixedcoordinatespace.md)
+- [var fixedCoordinateSpace: any UICoordinateSpace](./uiscreen/fixedcoordinatespace.md)
   The fixed coordinate space of the screen.
 ### Getting the size and scale
-- [var bounds: CGRect](uiscreen/bounds.md)
+- [var bounds: CGRect](./uiscreen/bounds.md)
   The bounding rectangle of the screen, measured in points.
-- [var nativeBounds: CGRect](uiscreen/nativebounds.md)
+- [var nativeBounds: CGRect](./uiscreen/nativebounds.md)
   The bounding rectangle of the physical screen, measured in pixels.
-- [var nativeScale: CGFloat](uiscreen/nativescale.md)
+- [var nativeScale: CGFloat](./uiscreen/nativescale.md)
   The native scale factor for the physical screen.
-- [var scale: CGFloat](uiscreen/scale.md)
+- [var scale: CGFloat](./uiscreen/scale.md)
   The natural scale factor associated with the screen.
 ### Managing brightness
-- [var brightness: CGFloat](uiscreen/brightness.md)
+- [var brightness: CGFloat](./uiscreen/brightness.md)
   The brightness level of the screen.
-- [var wantsSoftwareDimming: Bool](uiscreen/wantssoftwaredimming.md)
+- [var wantsSoftwareDimming: Bool](./uiscreen/wantssoftwaredimming.md)
   A Boolean value that indicates whether the screen may be dimmed lower than the hardware is normally capable of by emulating it in software.
 ### Managing screen modes
-- [var currentMode: UIScreenMode?](uiscreen/currentmode.md)
+- [var currentMode: UIScreenMode?](./uiscreen/currentmode.md)
   The current screen mode associated with the screen.
-- [var preferredMode: UIScreenMode?](uiscreen/preferredmode.md)
+- [var preferredMode: UIScreenMode?](./uiscreen/preferredmode.md)
   The preferred display mode for the screen.
-- [var availableModes: [UIScreenMode]](uiscreen/availablemodes.md)
+- [var availableModes: [UIScreenMode]](./uiscreen/availablemodes.md)
   The display modes that can be associated with the screen.
 ### Managing overscan compensation
-- [var overscanCompensationInsets: UIEdgeInsets](uiscreen/overscancompensationinsets.md)
+- [var overscanCompensationInsets: UIEdgeInsets](./uiscreen/overscancompensationinsets.md)
   The edge inset values needed to avoid clipping the rectangle.
-- [var overscanCompensation: UIScreen.OverscanCompensation](uiscreen/overscancompensation-swift.property.md)
+- [var overscanCompensation: UIScreen.OverscanCompensation](./uiscreen/overscancompensation-swift.property.md)
   For an external screen, this property sets the desired technique to compensate for overscan.
-- [UIScreen.OverscanCompensation](uiscreen/overscancompensation-swift.enum.md)
+- [UIScreen.OverscanCompensation](./uiscreen/overscancompensation-swift.enum.md)
   Describes different techniques for compensating for pixel loss at the edge of the screen.
 ### Getting the calibrated latency
-- [var calibratedLatency: CFTimeInterval](uiscreen/calibratedlatency.md)
+- [var calibratedLatency: CFTimeInterval](./uiscreen/calibratedlatency.md)
   The user-calibrated latency for the current screen.
 ### Getting the reference display mode status
-- [var referenceDisplayModeStatus: UIScreen.ReferenceDisplayModeStatus](uiscreen/referencedisplaymodestatus-swift.property.md)
+- [var referenceDisplayModeStatus: UIScreen.ReferenceDisplayModeStatus](./uiscreen/referencedisplaymodestatus-swift.property.md)
   The status of the screen’s reference display mode.
-- [UIScreen.ReferenceDisplayModeStatus](uiscreen/referencedisplaymodestatus-swift.enum.md)
+- [UIScreen.ReferenceDisplayModeStatus](./uiscreen/referencedisplaymodestatus-swift.enum.md)
   Describes a screen’s reference display mode status.
-- [var currentEDRHeadroom: CGFloat](uiscreen/currentedrheadroom.md)
+- [var currentEDRHeadroom: CGFloat](./uiscreen/currentedrheadroom.md)
   The screen’s current headroom when displaying extended dynamic range content.
-- [var potentialEDRHeadroom: CGFloat](uiscreen/potentialedrheadroom.md)
+- [var potentialEDRHeadroom: CGFloat](./uiscreen/potentialedrheadroom.md)
   The screen’s maximum headroom when displaying extended dynamic range content.
 ### Getting a display link
-- [var maximumFramesPerSecond: Int](uiscreen/maximumframespersecond.md)
+- [var maximumFramesPerSecond: Int](./uiscreen/maximumframespersecond.md)
   The maximum number of frames per second a screen can render.
 ### Capturing a snapshot
-- [func snapshotView(afterScreenUpdates: Bool) -> UIView](uiscreen/snapshotview(afterscreenupdates:).md)
+- [func snapshotView(afterScreenUpdates: Bool) -> UIView](./uiscreen/snapshotview%28afterscreenupdates%29.md)
   Returns a snapshot view based on the current screen contents.
 ### Detecting screen capture
-- [var mirrored: UIScreen?](uiscreen/mirrored.md)
+- [var mirrored: UIScreen?](./uiscreen/mirrored.md)
   The screen an external display mirrors from.
 ### Notifications
-- [class let brightnessDidChangeNotification: NSNotification.Name](uiscreen/brightnessdidchangenotification.md)
+- [class let brightnessDidChangeNotification: NSNotification.Name](./uiscreen/brightnessdidchangenotification.md)
   A notification that posts when a screen’s brightness changes.
-- [class let modeDidChangeNotification: NSNotification.Name](uiscreen/modedidchangenotification.md)
+- [class let modeDidChangeNotification: NSNotification.Name](./uiscreen/modedidchangenotification.md)
   A notification that posts when a screen’s mode changes.
-- [class let capturedDidChangeNotification: NSNotification.Name](uiscreen/captureddidchangenotification.md)
+- [class let capturedDidChangeNotification: NSNotification.Name](./uiscreen/captureddidchangenotification.md)
   A notification that posts when the capture status of a screen changes.
-- [class let referenceDisplayModeStatusDidChangeNotification: NSNotification.Name](uiscreen/referencedisplaymodestatusdidchangenotification.md)
+- [class let referenceDisplayModeStatusDidChangeNotification: NSNotification.Name](./uiscreen/referencedisplaymodestatusdidchangenotification.md)
   A notification that posts when there’s a change to a screen’s reference display mode status.
 ### Deprecated
-- [Deprecated symbols](uiscreen-deprecated-symbols.md)
+- [Deprecated symbols](./uiscreen-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
 ### Structures
-- [UIScreen.BrightnessDidChangeMessage](uiscreen/brightnessdidchangemessage.md)
-- [UIScreen.CapturedDidChangeMessage](uiscreen/captureddidchangemessage.md)
-- [UIScreen.ModeDidChangeMessage](uiscreen/modedidchangemessage.md)
-- [UIScreen.ReferenceDisplayModeStatusDidChangeMessage](uiscreen/referencedisplaymodestatusdidchangemessage.md)
+- [UIScreen.BrightnessDidChangeMessage](./uiscreen/brightnessdidchangemessage.md)
+- [UIScreen.CapturedDidChangeMessage](./uiscreen/captureddidchangemessage.md)
+- [UIScreen.ModeDidChangeMessage](./uiscreen/modedidchangemessage.md)
+- [UIScreen.ReferenceDisplayModeStatusDidChangeMessage](./uiscreen/referencedisplaymodestatusdidchangemessage.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [UITraitEnvironment](uitraitenvironment.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [UITraitEnvironment](./uitraitenvironment.md)
 
 ## See Also
 
-- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
+### Screens
+- [Presenting content on a connected display](./presenting-content-on-a-connected-display.md)
   Fill connected displays with additional content from your app.
-- [class UIScreenMode](uiscreenmode.md)
+- [class UIScreenMode](./uiscreenmode.md)
   A possible set of attributes that can apply to a screen object.
 
 

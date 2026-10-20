@@ -1,7 +1,8 @@
 # GoogleAccount.CommunicationServiceRules
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The communication service handler rules for this account.
 
@@ -13,14 +14,14 @@ The communication service handler rules for this account.
 
 ## Declaration
 
-```swift
+```
 object GoogleAccount.CommunicationServiceRules
 ```
 
 ## Topics
 
 ### Objects
-- [object GoogleAccount.CommunicationServiceRules.DefaultServiceHandlers](googleaccount/communicationservicerules-data.dictionary/defaultservicehandlers-data.dictionary.md)
+- [object GoogleAccount.CommunicationServiceRules.DefaultServiceHandlers](./communicationservicerules-data.dictionary/defaultservicehandlers-data.dictionary.md)
   A dictionary of default service handlers.
 
 ## Properties

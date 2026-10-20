@@ -1,7 +1,8 @@
 # init(points:radius:cyclical:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 10.0+
@@ -19,7 +20,8 @@ convenience init(points: [SIMD3<Float>], radius: Float, cyclical: Bool)
 
 ## See Also
 
-- [convenience init(points: [SIMD2<Float>], radius: Float, cyclical: Bool)](gkpath/init(points:radius:cyclical:)-2iv4v.md)
+### Initializers
+- [convenience init(points: [SIMD2<Float>], radius: Float, cyclical: Bool)](./init%28points,radius,cyclical%29-2iv4v.md)
 
 
 ---

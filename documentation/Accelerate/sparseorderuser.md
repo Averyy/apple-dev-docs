@@ -1,7 +1,8 @@
 # SparseOrderUser
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The user-supplied ordering, or identity if the order parameter is null.
 
@@ -20,17 +21,22 @@ The user-supplied ordering, or identity if the order parameter is null.
 var SparseOrderUser: SparseOrder_t { get }
 ```
 
+```c
+SparseOrderUser
+```
+
 ## See Also
 
-- [var SparseOrderDefault: SparseOrder_t](sparseorderdefault.md)
+### Constants
+- [var SparseOrderDefault: SparseOrder_t](./sparseorderdefault.md)
   The default ordering.
-- [var SparseOrderAMD: SparseOrder_t](sparseorderamd.md)
+- [var SparseOrderAMD: SparseOrder_t](./sparseorderamd.md)
   Approximate minimum degree (AMD) ordering.
-- [var SparseOrderMetis: SparseOrder_t](sparseordermetis.md)
+- [var SparseOrderMetis: SparseOrder_t](./sparseordermetis.md)
   METIS nested dissection ordering.
-- [var SparseOrderMTMetis: SparseOrder_t](sparseordermtmetis.md)
+- [var SparseOrderMTMetis: SparseOrder_t](./sparseordermtmetis.md)
   Specifies type of fill-reducing ordering.
-- [var SparseOrderCOLAMD: SparseOrder_t](sparseordercolamd.md)
+- [var SparseOrderCOLAMD: SparseOrder_t](./sparseordercolamd.md)
   The column AMD ordering for *AᵀA*.
 
 

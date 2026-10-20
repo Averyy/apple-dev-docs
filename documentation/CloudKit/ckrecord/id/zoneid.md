@@ -1,7 +1,8 @@
 # zoneID
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ID of the zone that contains the record.
 
@@ -10,7 +11,7 @@ The ID of the zone that contains the record.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -19,6 +20,10 @@ The ID of the zone that contains the record.
 ```swift
 @NSCopying
 var zoneID: CKRecordZone.ID { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) CKRecordZoneID * zoneID;
 ```
 
 

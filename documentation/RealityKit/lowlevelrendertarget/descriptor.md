@@ -1,7 +1,8 @@
 # LowLevelRenderTarget.Descriptor
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A color and depth pixel format combination for a render pass.
 
@@ -19,18 +20,19 @@ struct Descriptor
 
 #### Overview
 
-Use [`renderTargetDescriptor`](lowlevelrenderer/configuration/rendertargetdescriptor.md) to obtain a descriptor from each renderer configuration you plan to use. Collect one or more descriptors into a [`LowLevelRenderTarget.DescriptorSet`](lowlevelrendertarget/descriptorset.md), then pass the set to [`makeRenderPipelineState(descriptor:)`](lowlevelrendercontext/makerenderpipelinestate(descriptor:).md) and [`makeMeshInstanceArray(renderTargets:count:)`](lowlevelrendercontext/makemeshinstancearray(rendertargets:count:).md).
+Use [`renderTargetDescriptor`](../lowlevelrenderer/configuration/rendertargetdescriptor.md) to obtain a descriptor from each renderer configuration you plan to use. Collect one or more descriptors into a [`LowLevelRenderTarget.DescriptorSet`](./descriptorset.md), then pass the set to [`makeRenderPipelineState(descriptor:)`](../lowlevelrendercontext/makerenderpipelinestate%28descriptor%29.md) and [`makeMeshInstanceArray(renderTargets:count:)`](../lowlevelrendercontext/makemeshinstancearray%28rendertargets,count%29.md).
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [LowLevelRenderTarget.DescriptorSet](lowlevelrendertarget/descriptorset.md)
+### Describing the render target
+- [LowLevelRenderTarget.DescriptorSet](./descriptorset.md)
   An unordered set of render target descriptors that defines the output format combination a pipeline state or mesh instance array is compatible with.
 
 

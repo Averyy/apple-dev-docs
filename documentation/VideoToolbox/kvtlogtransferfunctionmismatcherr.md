@@ -1,7 +1,8 @@
 # kVTLogTransferFunctionMismatchErr
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 6.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var kVTLogTransferFunctionMismatchErr: OSStatus { get }
+```
+
+```c
+kVTLogTransferFunctionMismatchErr
 ```
 
 

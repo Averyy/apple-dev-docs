@@ -1,7 +1,8 @@
 # init(type:fillColor:strokeColor:lineWidth:)
 
 **Framework**: PaperKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new shape configuration.
 

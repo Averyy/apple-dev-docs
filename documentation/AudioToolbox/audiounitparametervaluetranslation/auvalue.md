@@ -1,15 +1,20 @@
 # auValue
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var auValue: AudioUnitParameterValue
+```
+
+```c
+AudioUnitParameterValue auValue;
 ```
 
 

@@ -1,16 +1,17 @@
 # loadAnchorAsync(contentsOf:withName:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Asynchronously loads an anchor entity from a file URL.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 18.0 (renamed: AnchorEntity.init(contentsOf:withName:))
+- iPadOS 13.0+ - Deprecated in 18.0 (renamed: AnchorEntity.init(contentsOf:withName:))
+- Mac Catalyst 13.0+ - Deprecated in 18.0 (renamed: AnchorEntity.init(contentsOf:withName:))
+- macOS 10.15+ - Deprecated in 15.0 (renamed: AnchorEntity.init(contentsOf:withName:))
+- visionOS 1.0+ - Deprecated in 1.0 (renamed: AnchorEntity.init(contentsOf:withName:))
 
 ## Declaration
 
@@ -21,7 +22,7 @@ Asynchronously loads an anchor entity from a file URL.
 
 #### Return Value
 
-A resource loader that publishes the root entity in the loaded file as an [`AnchorEntity`](anchorentity.md).
+A resource loader that publishes the root entity in the loaded file as an [`AnchorEntity`](../anchorentity.md).
 
 ## Parameters
 
@@ -30,11 +31,12 @@ A resource loader that publishes the root entity in the loaded file as an [`Anch
 
 ## See Also
 
-- [static func loadAnchor(named: String, in: Bundle?) throws -> AnchorEntity](entity/loadanchor(named:in:).md)
+### Loading an anchor entity
+- [static func loadAnchor(named: String, in: Bundle?) throws -> AnchorEntity](./loadanchor%28named,in%29.md)
   Synchronously loads an anchor entity from a bundle.
-- [static func loadAnchor(contentsOf: URL, withName: String?) throws -> AnchorEntity](entity/loadanchor(contentsof:withname:).md)
+- [static func loadAnchor(contentsOf: URL, withName: String?) throws -> AnchorEntity](./loadanchor%28contentsof,withname%29.md)
   Synchronously loads an anchor entity from a file URL.
-- [static func loadAnchorAsync(named: String, in: Bundle?) -> LoadRequest<AnchorEntity>](entity/loadanchorasync(named:in:).md)
+- [static func loadAnchorAsync(named: String, in: Bundle?) -> LoadRequest<AnchorEntity>](./loadanchorasync%28named,in%29.md)
   Asynchronously loads an anchor entity from a bundle.
 
 

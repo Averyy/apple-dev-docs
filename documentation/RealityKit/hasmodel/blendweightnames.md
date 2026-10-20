@@ -1,7 +1,8 @@
 # blendWeightNames
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The names of the weights on each blend shape in the model entity.
 

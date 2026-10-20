@@ -1,7 +1,8 @@
 # GenerateIterativeSegmentationRequest.Result
 
 **Framework**: Vision  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The result is returned as a gray mask image. It can be nil if there is nothing to segment.
 
@@ -21,11 +22,12 @@ typealias Result = PixelBufferObservation?
 
 ## See Also
 
-- [init(seedBox: NormalizedRect, GenerateIterativeSegmentationRequest.Revision?)](generateiterativesegmentationrequest/init(seedbox:_:).md)
+### Creating a request
+- [init(seedBox: NormalizedRect, GenerateIterativeSegmentationRequest.Revision?)](./init%28seedbox,_%29.md)
   Instantiates with a seed box.
-- [init(seedPoint: NormalizedPoint, GenerateIterativeSegmentationRequest.Revision?)](generateiterativesegmentationrequest/init(seedpoint:_:).md)
+- [init(seedPoint: NormalizedPoint, GenerateIterativeSegmentationRequest.Revision?)](./init%28seedpoint,_%29.md)
   Instantiates with a seed point.
-- [init(seedScribbleBuffer: CVReadOnlyPixelBuffer, GenerateIterativeSegmentationRequest.Revision?)](generateiterativesegmentationrequest/init(seedscribblebuffer:_:).md)
+- [init(seedScribbleBuffer: CVReadOnlyPixelBuffer, GenerateIterativeSegmentationRequest.Revision?)](./init%28seedscribblebuffer,_%29.md)
   Instantiates with a scribble buffer.
 
 

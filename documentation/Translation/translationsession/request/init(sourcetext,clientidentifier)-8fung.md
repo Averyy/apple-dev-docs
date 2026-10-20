@@ -1,7 +1,8 @@
 # init(sourceText:clientIdentifier:)
 
 **Framework**: Translation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a request for translating a single attributed string.
 
@@ -19,11 +20,12 @@ init(sourceText: AttributedString, clientIdentifier: String? = nil)
 
 #### Discussion
 
-The plain text is automatically extracted and stored in [`sourceText`](translationsession/request/sourcetext.md).
+The plain text is automatically extracted and stored in [`sourceText`](./sourcetext.md).
 
 ## See Also
 
-- [init(sourceText: String, clientIdentifier: String?)](translationsession/request/init(sourcetext:clientidentifier:)-ruyz.md)
+### Initializing a translation request
+- [init(sourceText: String, clientIdentifier: String?)](./init%28sourcetext,clientidentifier%29-ruyz.md)
   Creates a request for translating a single string of text.
 
 

@@ -1,7 +1,8 @@
 # InAppPurchaseVersionCreateRequest.Data.Relationships.InAppPurchase
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The In-App Purchase to associate with the new In-App Purchase version.
 
@@ -10,14 +11,14 @@ The In-App Purchase to associate with the new In-App Purchase version.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseVersionCreateRequest.Data.Relationships.InAppPurchase
 ```
 
 ## Topics
 
 ### Objects
-- [object InAppPurchaseVersionCreateRequest.Data.Relationships.InAppPurchase.Data](inapppurchaseversioncreaterequest/data-data.dictionary/relationships-data.dictionary/inapppurchase-data.dictionary/data-data.dictionary.md)
+- [object InAppPurchaseVersionCreateRequest.Data.Relationships.InAppPurchase.Data](./inapppurchase-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties

@@ -1,7 +1,8 @@
 # isColorDitheringEnabled
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether to dither color values before writing to the frame buffer.
 
@@ -25,9 +26,10 @@ Enable this to reduce color banding artifacts on gradients.
 
 ## See Also
 
-- [var lightingModel: LightingModel](shadergraphmaterial/program-swift.struct/descriptor-swift.struct/lightingmodel.md)
+### Configuring rendering
+- [var lightingModel: LightingModel](./lightingmodel.md)
   The lighting model to use when rendering this material.
-- [var blendMode: MaterialParameterTypes.BlendMode?](shadergraphmaterial/program-swift.struct/descriptor-swift.struct/blendmode.md)
+- [var blendMode: MaterialParameterTypes.BlendMode?](./blendmode.md)
   How materials using this program blend with content behind them.
 
 

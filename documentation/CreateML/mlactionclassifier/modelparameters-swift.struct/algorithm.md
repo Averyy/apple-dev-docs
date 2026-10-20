@@ -1,7 +1,8 @@
 # algorithm
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The algorithm the training session uses to train the action classifier.
 
@@ -16,17 +17,18 @@ var algorithm: MLActionClassifier.ModelParameters.ModelAlgorithmType
 
 ## See Also
 
-- [var maximumIterations: Int](mlactionclassifier/modelparameters-swift.struct/maximumiterations.md)
+### Accessing the training parameters
+- [var maximumIterations: Int](./maximumiterations.md)
   The largest number of training iterations the training session can use.
-- [var batchSize: Int](mlactionclassifier/modelparameters-swift.struct/batchsize.md)
+- [var batchSize: Int](./batchsize.md)
   The number of videos the training session uses for each of its training iterations.
-- [var targetFrameRate: Double](mlactionclassifier/modelparameters-swift.struct/targetframerate.md)
+- [var targetFrameRate: Double](./targetframerate.md)
   The number of frames the training session uses per second of video to train an action classifier.
-- [var predictionWindowSize: Int](mlactionclassifier/modelparameters-swift.struct/predictionwindowsize.md)
+- [var predictionWindowSize: Int](./predictionwindowsize.md)
   The number of frames the training session uses to train an action classifier.
-- [var augmentationOptions: MLActionClassifier.VideoAugmentationOptions](mlactionclassifier/modelparameters-swift.struct/augmentationoptions.md)
+- [var augmentationOptions: MLActionClassifier.VideoAugmentationOptions](./augmentationoptions.md)
   The variations the training session uses to generate more variety in the training dataset.
-- [var validation: MLActionClassifier.ModelParameters.ValidationData](mlactionclassifier/modelparameters-swift.struct/validation.md)
+- [var validation: MLActionClassifier.ModelParameters.ValidationData](./validation.md)
   The action classifier’s validation dataset.
 
 

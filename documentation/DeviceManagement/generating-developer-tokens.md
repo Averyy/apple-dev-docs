@@ -1,6 +1,7 @@
 # Generating developer tokens
 
-**Framework**: Device Management
+**Framework**: Device Management  
+**Role**: Article
 
 Create a JSON Web Token to authorize your requests to the Apps and Books Metadata for Organizations API.
 
@@ -8,11 +9,11 @@ Create a JSON Web Token to authorize your requests to the Apps and Books Metadat
 
 The header of every Apps and Books Metadata for Organizations API request requires authorization in the form of a developer token. A developer token is a signed token that authenticates you as a trusted developer and member of the Apple Developer Program.
 
-#### Construct Your Developer Token
+#### Construct your developer token
 
-The Apps and Books Metadata for Organizations API supports the JSON Web Token (JWT) specification, so you can pass statements and metadata called *claims*. For more information, see the [`JWT specification`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7519) and the available libraries for generating signed JWTs.
+The Apps and Books Metadata for Organizations API supports the JSON Web Token (JWT) specification, so you can pass statements and metadata called *claims*. For more information, see the [JWT specification](https://tools.ietf.org/html/rfc7519) and the available libraries for generating signed JWTs.
 
-Use your developer account to [`create a Services identifier and obtain a key ID`](https://developer.apple.comhttps://developer.apple.com/help/account/manage-service-configurations/apps-and-books-for-organizations) and to [`locate your Team ID`](https://developer.apple.comhttps://developer.apple.com/help/account/manage-your-team/locate-your-team-id).
+Use your developer account to [create a Services identifier and obtain a key ID](https://developer.apple.com/help/account/manage-service-configurations/apps-and-books-for-organizations) and to [locate your Team ID](https://developer.apple.com/help/account/manage-your-team/locate-your-team-id).
 
 Construct a developer token as a JSON object whose header contains:
 
@@ -44,9 +45,9 @@ A decoded developer token has the following format:
 
 After you create the token, sign it with your private key using the ES256 algorithm.
 
-> **Note**:  ES256 is the [`JSON Web Algorithms (JWA)`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc7518) name for the Elliptic Curve Digital Signature Algorithm (ECDSA) with the P-256 curve and the SHA-256 hash.
+> **Note**:  ES256 is the [JSON Web Algorithms (JWA)](https://datatracker.ietf.org/doc/html/rfc7518) name for the Elliptic Curve Digital Signature Algorithm (ECDSA) with the P-256 curve and the SHA-256 hash.
 
-#### Authorize Requests
+#### Authorize requests
 
 If you manage request authorization directly, in all requests, pass the `Authorization: Bearer` header set to the developer token.
 
@@ -54,15 +55,16 @@ If you manage request authorization directly, in all requests, pass the `Authori
 curl -v -H 'Authorization: Bearer [developer token]' "https://api.ent.apple.com/v1/test"
 ```
 
-For more information about requests, responses, and error handling, see [`Handling requests and responses`](handling-requests-and-responses.md).
+For more information about requests, responses, and error handling, see [Handling requests and responses](./handling-requests-and-responses.md).
 
-#### Limit Request Rate
+#### Limit request rate
 
 The Apps and Books Metadata for Organizations API limits the number of requests your app can make using a developer token within a specific period of time. If you exceed this limit, you temporarily receive `429 Too Many Requests` error responses for requests that use the token. This error resolves itself shortly after the request rate reduces.
 
 ## See Also
 
-- [Common objects](common-objects.md)
+### Getting started
+- [Common objects](./common-objects.md)
   Understand the common JSON objects that framework responses contain.
 
 

@@ -1,7 +1,8 @@
 # library
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Metal library containing compiled shader functions.
 
@@ -12,7 +13,7 @@ The Metal library containing compiled shader functions.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

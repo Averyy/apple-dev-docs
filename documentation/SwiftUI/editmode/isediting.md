@@ -1,7 +1,8 @@
 # isEditing
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether a view is being edited.
 

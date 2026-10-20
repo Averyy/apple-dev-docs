@@ -1,7 +1,8 @@
 # SCBondInterfaceSetOptions(_:_:)
 
 **Framework**: System Configuration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the configuration settings for the specified Ethernet bond interface.
 
@@ -12,6 +13,10 @@ Sets the configuration settings for the specified Ethernet bond interface.
 
 ```swift
 func SCBondInterfaceSetOptions(_ bond: SCBondInterface, _ newOptions: CFDictionary) -> Bool
+```
+
+```c
+Boolean SCBondInterfaceSetOptions(SCBondInterfaceRef bond, CFDictionaryRef newOptions);
 ```
 
 #### Return Value
@@ -25,29 +30,30 @@ func SCBondInterfaceSetOptions(_ bond: SCBondInterface, _ newOptions: CFDictiona
 
 ## See Also
 
-- [func SCBondInterfaceCopyAll(SCPreferences) -> CFArray](scbondinterfacecopyall(_:).md)
+### Configuring Ethernet Bond Interfaces
+- [func SCBondInterfaceCopyAll(SCPreferences) -> CFArray](./scbondinterfacecopyall%28_%29.md)
   Returns all Ethernet bond interfaces on the system.
-- [func SCBondInterfaceCopyAvailableMemberInterfaces(SCPreferences) -> CFArray](scbondinterfacecopyavailablememberinterfaces(_:).md)
+- [func SCBondInterfaceCopyAvailableMemberInterfaces(SCPreferences) -> CFArray](./scbondinterfacecopyavailablememberinterfaces%28_%29.md)
   Returns all network capable devices on the system that can be added to an Ethernet bond interface.
-- [func SCBondInterfaceCopyStatus(SCBondInterface) -> SCBondStatus?](scbondinterfacecopystatus(_:).md)
+- [func SCBondInterfaceCopyStatus(SCBondInterface) -> SCBondStatus?](./scbondinterfacecopystatus%28_%29.md)
   Returns the status of the specified Ethernet bond interface.
-- [func SCBondInterfaceCreate(SCPreferences) -> SCBondInterface?](scbondinterfacecreate(_:).md)
+- [func SCBondInterfaceCreate(SCPreferences) -> SCBondInterface?](./scbondinterfacecreate%28_%29.md)
   Creates a new Ethernet bond interface.
-- [func SCBondInterfaceGetMemberInterfaces(SCBondInterface) -> CFArray?](scbondinterfacegetmemberinterfaces(_:).md)
+- [func SCBondInterfaceGetMemberInterfaces(SCBondInterface) -> CFArray?](./scbondinterfacegetmemberinterfaces%28_%29.md)
   Returns the member interfaces for the specified Ethernet bond interface.
-- [func SCBondInterfaceGetOptions(SCBondInterface) -> CFDictionary?](scbondinterfacegetoptions(_:).md)
+- [func SCBondInterfaceGetOptions(SCBondInterface) -> CFDictionary?](./scbondinterfacegetoptions%28_%29.md)
   Returns the configuration settings associated with the specified Ethernet bond interface.
-- [func SCBondInterfaceRemove(SCBondInterface) -> Bool](scbondinterfaceremove(_:).md)
+- [func SCBondInterfaceRemove(SCBondInterface) -> Bool](./scbondinterfaceremove%28_%29.md)
   Removes the Ethernet bond interface from the configuration.
-- [func SCBondInterfaceSetLocalizedDisplayName(SCBondInterface, CFString) -> Bool](scbondinterfacesetlocalizeddisplayname(_:_:).md)
+- [func SCBondInterfaceSetLocalizedDisplayName(SCBondInterface, CFString) -> Bool](./scbondinterfacesetlocalizeddisplayname%28_,_%29.md)
   Sets the localized display name for the specified Ethernet bond interface.
-- [func SCBondInterfaceSetMemberInterfaces(SCBondInterface, CFArray) -> Bool](scbondinterfacesetmemberinterfaces(_:_:).md)
+- [func SCBondInterfaceSetMemberInterfaces(SCBondInterface, CFArray) -> Bool](./scbondinterfacesetmemberinterfaces%28_,_%29.md)
   Sets the member interfaces for the specified Ethernet bond interface.
-- [func SCBondStatusGetInterfaceStatus(SCBondStatus, SCNetworkInterface?) -> CFDictionary?](scbondstatusgetinterfacestatus(_:_:).md)
+- [func SCBondStatusGetInterfaceStatus(SCBondStatus, SCNetworkInterface?) -> CFDictionary?](./scbondstatusgetinterfacestatus%28_,_%29.md)
   Returns the status of the specified member interface of an Ethernet bond or the status of the bond as a whole.
-- [func SCBondStatusGetMemberInterfaces(SCBondStatus) -> CFArray?](scbondstatusgetmemberinterfaces(_:).md)
+- [func SCBondStatusGetMemberInterfaces(SCBondStatus) -> CFArray?](./scbondstatusgetmemberinterfaces%28_%29.md)
   Returns the member interfaces that are represented with the Ethernet bond interface.
-- [func SCBondStatusGetTypeID() -> CFTypeID](scbondstatusgettypeid().md)
+- [func SCBondStatusGetTypeID() -> CFTypeID](./scbondstatusgettypeid%28%29.md)
   Returns the type identifier of all `SCBondStatusRef` instances.
 
 

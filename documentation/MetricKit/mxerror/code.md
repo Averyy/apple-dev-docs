@@ -1,15 +1,18 @@
 # MXError.Code
 
 **Framework**: MetricKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes for error values from app metrics.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- visionOS 1.0+
+- iOS 16.0+ - Deprecated in 27.2
+- iPadOS 16.0+ - Deprecated in 27.2
+- Mac Catalyst 16.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`MetricManager.LaunchTaskError`](../metricmanager/launchtaskerror.md) instead.
 
 ## Declaration
 
@@ -17,61 +20,66 @@ Error codes for error values from app metrics.
 enum Code
 ```
 
+```c
+enum MXErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Launch errors
-- [MXError.Code.launchTaskDuplicated](mxerror/code/launchtaskduplicated.md)
+- [MXError.Code.launchTaskDuplicated](./code/launchtaskduplicated.md)
   A task with the same ID has already been started.
-- [MXError.Code.launchTaskInternalFailure](mxerror/code/launchtaskinternalfailure.md)
+- [MXError.Code.launchTaskInternalFailure](./code/launchtaskinternalfailure.md)
   Internal failures happened inside the framework.
-- [MXError.Code.launchTaskInvalidID](mxerror/code/launchtaskinvalidid.md)
+- [MXError.Code.launchTaskInvalidID](./code/launchtaskinvalidid.md)
   The task ID is a `null` value or exceeds the maximum 128 character length.
-- [MXError.Code.launchTaskMaxCount](mxerror/code/launchtaskmaxcount.md)
+- [MXError.Code.launchTaskMaxCount](./code/launchtaskmaxcount.md)
   Exceeded the maximum number of tasks.
-- [MXError.Code.launchTaskPastDeadline](mxerror/code/launchtaskpastdeadline.md)
+- [MXError.Code.launchTaskPastDeadline](./code/launchtaskpastdeadline.md)
   The start call was made too late.
-- [MXError.Code.launchTaskUnknown](mxerror/code/launchtaskunknown.md)
+- [MXError.Code.launchTaskUnknown](./code/launchtaskunknown.md)
   The task hasn’t been started or has already been finished.
 ### Initializers
-- [init?(rawValue: Int)](mxerror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class MXCallStackTree](mxcallstacktree.md)
+### Supporting types
+- [class MXCallStackTree](../mxcallstacktree.md)
   An object representing the call stack for an exception.
-- [class MXMetaData](mxmetadata.md)
+- [class MXMetaData](../mxmetadata.md)
   An object containing system-level information about the device.
-- [class MXAverage](mxaverage.md)
+- [class MXAverage](../mxaverage.md)
   A unit of measure for an average.
-- [class MXHistogram](mxhistogram.md)
+- [class MXHistogram](../mxhistogram.md)
   An object representing a histogram of data values of the same type of unit.
-- [class MXHistogramBucket](mxhistogrambucket.md)
+- [class MXHistogramBucket](../mxhistogrambucket.md)
   An object representing a bucket of data in a histogram.
-- [class MXDiagnostic](mxdiagnostic.md)
+- [class MXDiagnostic](../mxdiagnostic.md)
   An abstract data class for a diagnostic.
-- [class MXMetric](mxmetric.md)
+- [class MXMetric](../mxmetric.md)
   An abstract data class for a metric.
-- [struct MXError](mxerror.md)
+- [struct MXError](../mxerror.md)
   Error domain for error handling of app metrics.
-- [let MXErrorDomain: String](mxerrordomain.md)
+- [let MXErrorDomain: String](../mxerrordomain.md)
   Error domain for error values from app metrics.
-- [class MXCrashDiagnosticObjectiveCExceptionReason](mxcrashdiagnosticobjectivecexceptionreason.md)
+- [class MXCrashDiagnosticObjectiveCExceptionReason](../mxcrashdiagnosticobjectivecexceptionreason.md)
   An object that represents the exception reason for an uncaught ObjC exception.
-- [class MXSignpostRecord](mxsignpostrecord.md)
+- [class MXSignpostRecord](../mxsignpostrecord.md)
   An object representing the record for a signpost interval or event.
-- [class MXUnitAveragePixelLuminance](mxunitaveragepixelluminance.md)
+- [class MXUnitAveragePixelLuminance](../mxunitaveragepixelluminance.md)
   A unit of measure of pixel luminosity on an OLED display.
-- [class MXUnitSignalBars](mxunitsignalbars.md)
+- [class MXUnitSignalBars](../mxunitsignalbars.md)
   A unit of measure for the number of bars of cellular network connectivity.
 
 

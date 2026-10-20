@@ -1,7 +1,8 @@
 # CardSession.APDU
 
 **Framework**: Core NFC  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An Application Programming Data Unit (APDU) received from the NFC card reader.
 
@@ -19,33 +20,34 @@ final class APDU
 ## Topics
 
 ### Receiving data
-- [let payload: Data](cardsession/apdu/payload.md)
+- [let payload: Data](./apdu/payload.md)
   The APDU data received from the NFC reader.
 ### Communicating with the card session
-- [func respond(response: Data) async throws](cardsession/apdu/respond(response:).md)
+- [func respond(response: Data) async throws](./apdu/respond%28response%29.md)
   Respond to the session after receiving and processing an APDU.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [CardSession.Event.sessionStarted](cardsession/event/sessionstarted.md)
+### Events
+- [CardSession.Event.sessionStarted](./event/sessionstarted.md)
   The card session successfully started.
-- [CardSession.Event.readerDetected](cardsession/event/readerdetected.md)
+- [CardSession.Event.readerDetected](./event/readerdetected.md)
   The session detected the RF field of an external NFC reader.
-- [case received(CardSession.APDU)](cardsession/event/received(_:).md)
+- [case received(CardSession.APDU)](./event/received%28_%29.md)
   The session received an Application Programming Data Unit (ADPU).
-- [CardSession.Event.readerDeselected](cardsession/event/readerdeselected.md)
+- [CardSession.Event.readerDeselected](./event/readerdeselected.md)
   The session lost the RF link or the currently-selected Application Identifier (AID) became deselected.
-- [case sessionInvalidated(reason: CardSession.Error)](cardsession/event/sessioninvalidated(reason:).md)
+- [case sessionInvalidated(reason: CardSession.Error)](./event/sessioninvalidated%28reason%29.md)
   The session became invalid.
 
 

@@ -1,7 +1,8 @@
 # init(_:monogram:coordinate:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a marker at the given location with a monogram displayed as the balloonâ€™s icon.
 
@@ -11,7 +12,7 @@ Creates a marker at the given location with a monogram displayed as the balloonâ
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

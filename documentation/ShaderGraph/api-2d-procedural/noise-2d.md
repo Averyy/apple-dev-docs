@@ -1,7 +1,8 @@
 # Noise 2D
 
 **Framework**: ShaderGraph  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: ShaderGraph Node
 
 A 2D Perlin noise generator.
 
@@ -15,7 +16,139 @@ A 2D Perlin noise generator.
 
 #### Parameter Types
 
-#### Parameter Descriptions
+**Noise 2D (float)**:
+
+| Input | Type |
+| --- | --- |
+| `Amplitude` | Float |
+| `Pivot` | Float |
+| `Texture Coordinates` | Vector2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Float |
+
+**Noise 2D (vector4f FA)**:
+
+| Input | Type |
+| --- | --- |
+| `Amplitude` | Float |
+| `Pivot` | Float |
+| `Texture Coordinates` | Vector2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector4f |
+
+**Noise 2D (vector4f)**:
+
+| Input | Type |
+| --- | --- |
+| `Amplitude` | Vector4f |
+| `Pivot` | Float |
+| `Texture Coordinates` | Vector2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector4f |
+
+**Noise 2D (vector3f)**:
+
+| Input | Type |
+| --- | --- |
+| `Amplitude` | Vector3f |
+| `Pivot` | Float |
+| `Texture Coordinates` | Vector2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector3f |
+
+**Noise 2D (color3f FA)**:
+
+| Input | Type |
+| --- | --- |
+| `Amplitude` | Float |
+| `Pivot` | Float |
+| `Texture Coordinates` | Vector2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color3 |
+
+**Noise 2D (vector2f FA)**:
+
+| Input | Type |
+| --- | --- |
+| `Amplitude` | Float |
+| `Pivot` | Float |
+| `Texture Coordinates` | Vector2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector2f |
+
+**Noise 2D (vector2f)**:
+
+| Input | Type |
+| --- | --- |
+| `Amplitude` | Vector2f |
+| `Pivot` | Float |
+| `Texture Coordinates` | Vector2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector2f |
+
+**Noise 2D (color4f FA)**:
+
+| Input | Type |
+| --- | --- |
+| `Amplitude` | Float |
+| `Pivot` | Float |
+| `Texture Coordinates` | Vector2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color4 |
+
+**Noise 2D (color4f)**:
+
+| Input | Type |
+| --- | --- |
+| `Amplitude` | Vector4f |
+| `Pivot` | Float |
+| `Texture Coordinates` | Vector2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color4 |
+
+**Noise 2D (color3f)**:
+
+| Input | Type |
+| --- | --- |
+| `Amplitude` | Vector3f |
+| `Pivot` | Float |
+| `Texture Coordinates` | Vector2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color3 |
+
+**Noise 2D (vector3f FA)**:
+
+| Input | Type |
+| --- | --- |
+| `Amplitude` | Float |
+| `Pivot` | Float |
+| `Texture Coordinates` | Vector2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector3f |
+
+#### Parameter descriptions
 
 - **`Amplitude`**: The intensity of the generated noise. The higher the amplitude, the more pronounced the variations of the noise pattern.
 - **`Pivot`**: The neutral value of the noise. This value is the noise’s minimum value, and is added to the output after the output is multiplied by the amplitude.
@@ -29,23 +162,24 @@ Image(source: “Noise2dGraph”)
 
 Multiply the incoming texture coordinates with a constant float. The float changes the frequency of the generated noise to a higher number that corresponds with the pattern repeating more often. Below, the resulting texture applies to a cube:
 
-![None](/images/ShaderGraph-Docs/Noise2dMaterial.png)
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/Noise2dMaterial.png)
 
 ## See Also
 
-- [Ramp Horizontal](2d-procedural/ramp-horizontal.md)
+### Nodes
+- [Ramp Horizontal](./ramp-horizontal.md)
   A left-to-right linear value ramp (gradient) generator.
-- [Ramp Vertical](2d-procedural/ramp-vertical.md)
+- [Ramp Vertical](./ramp-vertical.md)
   A top-to-bottom linear value ramp (gradient) generator.
-- [Ramp 4 Corners](2d-procedural/ramp-4-corners.md)
+- [Ramp 4 Corners](./ramp-4-corners.md)
   A four-point linear value ramp (gradient) generator.
-- [Split Horizontal](2d-procedural/split-horizontal.md)
+- [Split Horizontal](./split-horizontal.md)
   A left-to-right split matte, split at a specified U value.
-- [Split Vertical](2d-procedural/split-vertical.md)
+- [Split Vertical](./split-vertical.md)
   A top-to-bottom split matte, split at a specified V value.
-- [Cellular Noise 2D](2d-procedural/cellular-noise-2d.md)
+- [Cellular Noise 2D](./cellular-noise-2d.md)
   A 2D cellular noise generator.
-- [Worley Noise 2D](2d-procedural/worley-noise-2d.md)
+- [Worley Noise 2D](./worley-noise-2d.md)
   A 2D Worley noise generator.
 
 

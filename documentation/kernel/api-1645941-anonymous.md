@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOAGPAccessOutOfRange](1645941-anonymous/kioagpaccessoutofrange.md)
-- [kIOAGPIdle](1645941-anonymous/kioagpidle.md)
-- [kIOAGPInvalidGARTEntry](1645941-anonymous/kioagpinvalidgartentry.md)
+- [kIOAGPAccessOutOfRange](./api-1645941-anonymous/kioagpaccessoutofrange.md)
+- [kIOAGPIdle](./api-1645941-anonymous/kioagpidle.md)
+- [kIOAGPInvalidGARTEntry](./api-1645941-anonymous/kioagpinvalidgartentry.md)
 
 
 ---

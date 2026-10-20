@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates an integer from its big-endian representation, changing the byte order if necessary.
@@ -24,6 +25,12 @@ init(bigEndian value: Self)
 ## Parameters
 
 - `value`: A value to use as the big-endian representation of the new integer.
+
+## Default Implementations
+
+### FixedWidthInteger Implementations
+- [init(bigEndian: Self)](./init%28bigendian%29-7m4au.md)
+  Creates an integer from its big-endian representation, changing the byte order if necessary.
 
 
 ---

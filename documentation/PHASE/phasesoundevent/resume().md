@@ -1,7 +1,8 @@
 # resume()
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resumes the sound event.
 
@@ -19,13 +20,18 @@ Resumes the sound event.
 func resume()
 ```
 
+```objc
+- (void) resume;
+```
+
 #### Discussion
 
 If the sound event plays audio, this function resumes audio playback.
 
 ## See Also
 
-- [func pause()](phasesoundevent/pause.md)
+### Pausing Playback
+- [func pause()](./pause%28%29.md)
   Pauses the sound event.
 
 

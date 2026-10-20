@@ -1,7 +1,8 @@
 # maxVertexBufferCount
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The maximum number of separate buffers the system supports.
 
@@ -25,9 +26,10 @@ For optimal performance, most applications use one buffer.
 
 ## See Also
 
-- [var vertexCapacity: Int](lowlevelmesh/descriptor-swift.struct/vertexcapacity.md)
+### Defining the descriptor’s limits
+- [var vertexCapacity: Int](./vertexcapacity.md)
   The number of vertices to allocate space for.
-- [var indexCapacity: Int](lowlevelmesh/descriptor-swift.struct/indexcapacity.md)
+- [var indexCapacity: Int](./indexcapacity.md)
   The number of indices to allocate space for.
 
 

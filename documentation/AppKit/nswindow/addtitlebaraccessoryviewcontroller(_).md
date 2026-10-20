@@ -1,7 +1,8 @@
 # addTitlebarAccessoryViewController(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified title bar accessory view controller to the window.
 
@@ -14,17 +15,22 @@ Adds the specified title bar accessory view controller to the window.
 func addTitlebarAccessoryViewController(_ childViewController: NSTitlebarAccessoryViewController)
 ```
 
+```objc
+- (void) addTitlebarAccessoryViewController:(NSTitlebarAccessoryViewController *) childViewController;
+```
+
 ## Parameters
 
-- `childViewController`: An instance of [`NSTitlebarAccessoryViewController`](nstitlebaraccessoryviewcontroller.md) containing the view to add, along with where to place it and how it should behave in full screen mode.
+- `childViewController`: An instance of [`NSTitlebarAccessoryViewController`](../nstitlebaraccessoryviewcontroller.md) containing the view to add, along with where to place it and how it should behave in full screen mode.
 
 ## See Also
 
-- [func insertTitlebarAccessoryViewController(NSTitlebarAccessoryViewController, at: Int)](nswindow/inserttitlebaraccessoryviewcontroller(_:at:).md)
+### Managing Title Bar Accessories
+- [func insertTitlebarAccessoryViewController(NSTitlebarAccessoryViewController, at: Int)](./inserttitlebaraccessoryviewcontroller%28_,at%29.md)
   Inserts the view controller into the window’s array of title bar accessory view controllers at the specified index.
-- [func removeTitlebarAccessoryViewController(at: Int)](nswindow/removetitlebaraccessoryviewcontroller(at:).md)
+- [func removeTitlebarAccessoryViewController(at: Int)](./removetitlebaraccessoryviewcontroller%28at%29.md)
   Removes the view controller at the specified index from the window’s array of title bar accessory view controllers.
-- [var titlebarAccessoryViewControllers: [NSTitlebarAccessoryViewController]](nswindow/titlebaraccessoryviewcontrollers.md)
+- [var titlebarAccessoryViewControllers: [NSTitlebarAccessoryViewController]](./titlebaraccessoryviewcontrollers.md)
   An array of title bar accessory view controllers that are currently added to the window.
 
 

@@ -1,7 +1,8 @@
 # ARReferenceImage
 
 **Framework**: ARKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A 2D image that you want ARKit to detect in the physical environment.
 
@@ -15,61 +16,66 @@ A 2D image that you want ARKit to detect in the physical environment.
 class ARReferenceImage
 ```
 
+```objc
+@interface ARReferenceImage : NSObject
+```
+
 #### Overview
 
-To accurately detect the position and orientation of a 2D image in the real world, ARKit requires preprocessed image data and knowledge of the image’s real-world dimensions. The [`ARReferenceImage`](arreferenceimage.md) class encapsulates this information. To enable image detection in an AR session, pass a collection of reference images to your session configuration’s [`detectionImages`](arworldtrackingconfiguration/detectionimages.md) property.
+To accurately detect the position and orientation of a 2D image in the real world, ARKit requires preprocessed image data and knowledge of the image’s real-world dimensions. The [`ARReferenceImage`](./arreferenceimage.md) class encapsulates this information. To enable image detection in an AR session, pass a collection of reference images to your session configuration’s [`detectionImages`](./arworldtrackingconfiguration/detectionimages.md) property.
 
 Typically, you create reference images in your Xcode project’s asset catalog:
 
 1. In your asset catalog, use the Add (+) button to create an AR Resource Group.
 2. Drag image files into the resource group to create AR Reference Image entries in the asset catalog.
-3. For each reference image, use the Xcode inspector panel to provide the real-world size at which you want ARKit to recognize the image. (You can also provide a descriptive name, which appears as the [`name`](arreferenceimage/name.md) property at runtime and can be useful for debugging.)
+3. For each reference image, use the Xcode inspector panel to provide the real-world size at which you want ARKit to recognize the image. (You can also provide a descriptive name, which appears as the [`name`](./arreferenceimage/name.md) property at runtime and can be useful for debugging.)
 
 ## Topics
 
 ### Loading Reference Images
-- [class func referenceImages(inGroupNamed: String, bundle: Bundle?) -> Set<ARReferenceImage>?](arreferenceimage/referenceimages(ingroupnamed:bundle:).md)
+- [class func referenceImages(inGroupNamed: String, bundle: Bundle?) -> Set<ARReferenceImage>?](./arreferenceimage/referenceimages%28ingroupnamed,bundle%29.md)
   Loads all reference images in the specified AR Resource Group in your Xcode project’s asset catalog.
 ### Examining a Reference Image
-- [var name: String?](arreferenceimage/name.md)
+- [var name: String?](./arreferenceimage/name.md)
   A descriptive name for the image.
-- [var physicalSize: CGSize](arreferenceimage/physicalsize.md)
+- [var physicalSize: CGSize](./arreferenceimage/physicalsize.md)
   The real-world dimensions, in meters, of the image.
-- [var resourceGroupName: String?](arreferenceimage/resourcegroupname.md)
+- [var resourceGroupName: String?](./arreferenceimage/resourcegroupname.md)
   The AR resource group name for this image.
 ### Creating Reference Images
-- [init(CGImage, orientation: CGImagePropertyOrientation, physicalWidth: CGFloat)](arreferenceimage/init(_:orientation:physicalwidth:)-8b3bs.md)
+- [init(CGImage, orientation: CGImagePropertyOrientation, physicalWidth: CGFloat)](./arreferenceimage/init%28_,orientation,physicalwidth%29-8b3bs.md)
   Creates a new reference image from a Core Graphics image object.
-- [init(CVPixelBuffer, orientation: CGImagePropertyOrientation, physicalWidth: CGFloat)](arreferenceimage/init(_:orientation:physicalwidth:)-ir2z.md)
+- [init(CVPixelBuffer, orientation: CGImagePropertyOrientation, physicalWidth: CGFloat)](./arreferenceimage/init%28_,orientation,physicalwidth%29-ir2z.md)
   Creates a new reference image from a Core Video pixel buffer.
 ### Validating Reference Images
-- [func validate(completionHandler: ((any Error)?) -> Void)](arreferenceimage/validate(completionhandler:).md)
+- [func validate(completionHandler: ((any Error)?) -> Void)](./arreferenceimage/validate%28completionhandler%29.md)
   Determines whether the reference image is valid.
 ### Initializers
-- [init(CGImage: CGImage, orientation: CGImagePropertyOrientation, physicalWidth: CGFloat)](arreferenceimage/init(cgimage:orientation:physicalwidth:).md)
-- [init(pixelBuffer: CVPixelBuffer, orientation: CGImagePropertyOrientation, physicalWidth: CGFloat)](arreferenceimage/init(pixelbuffer:orientation:physicalwidth:).md)
+- [init(CGImage: CGImage, orientation: CGImagePropertyOrientation, physicalWidth: CGFloat)](./arreferenceimage/init%28cgimage,orientation,physicalwidth%29.md)
+- [init(pixelBuffer: CVPixelBuffer, orientation: CGImagePropertyOrientation, physicalWidth: CGFloat)](./arreferenceimage/init%28pixelbuffer,orientation,physicalwidth%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Tracking and altering images](tracking-and-altering-images.md)
+### Image Detection
+- [Tracking and altering images](./tracking-and-altering-images.md)
   Create images from rectangular shapes found in the user’s environment, and augment their appearance.
-- [Detecting Images in an AR Experience](detecting-images-in-an-ar-experience.md)
+- [Detecting Images in an AR Experience](./detecting-images-in-an-ar-experience.md)
   React to known 2D images in the user’s environment, and use their positions to place AR content.
-- [class ARImageAnchor](arimageanchor.md)
+- [class ARImageAnchor](./arimageanchor.md)
   An anchor for a known image that ARKit detects in the physical environment.
 
 

@@ -1,7 +1,8 @@
 # StatusMDMIsReturnToService
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The status item that reports the device’s return to service with app preservation state.
 
@@ -13,13 +14,13 @@ The status item that reports the device’s return to service with app preservat
 
 ## Declaration
 
-```swift
+```
 object StatusMDMIsReturnToService
 ```
 
 #### Discussion
 
-##### Status Item Availability
+##### Status item availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ object StatusMDMIsReturnToService
 | Allowed in system scope | iOS, Shared iPad, visionOS |
 | Allowed in user scope | Shared iPad |
 
-##### Status Item Example
+##### Status item example
 
 ```json
 {
@@ -46,15 +47,16 @@ object StatusMDMIsReturnToService
 
 ## See Also
 
-- [object StatusMDMEnrollmentType](statusmdmenrollmenttype.md)
+### MDM protocol items
+- [object StatusMDMEnrollmentType](./statusmdmenrollmenttype.md)
   The status item that reports the device’s management enrollment type.
-- [object StatusMDMIsAwaitingConfiguration](statusmdmisawaitingconfiguration.md)
+- [object StatusMDMIsAwaitingConfiguration](./statusmdmisawaitingconfiguration.md)
   The status item that reports the device management awaiting configuration state.
-- [object StatusMDMIsSharedIPad](statusmdmissharedipad.md)
+- [object StatusMDMIsSharedIPad](./statusmdmissharedipad.md)
   The status item that reports the device’s Shared iPad state.
-- [object StatusMDMPushMagic](statusmdmpushmagic.md)
+- [object StatusMDMPushMagic](./statusmdmpushmagic.md)
   The status item that reports the device’s push magic value.
-- [object StatusMDMPushToken](statusmdmpushtoken.md)
+- [object StatusMDMPushToken](./statusmdmpushtoken.md)
   The status item that reports the device’s push token.
 
 

@@ -1,12 +1,13 @@
 # propertyData(address:qualifier:)
 
 **Framework**: Core Audio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Queries an AudioHardwareObject to get the data of the given property.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

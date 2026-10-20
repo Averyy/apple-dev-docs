@@ -1,7 +1,8 @@
 # canLoadObject(ofClass:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether an item provider can load objects of a specified class.
 
@@ -26,15 +27,16 @@ func canLoadObject<T>(ofClass: T.Type) -> Bool where T : _ObjectiveCBridgeable, 
 
 ## See Also
 
-- [func canLoadObject(ofClass: any NSItemProviderReading.Type) -> Bool](nsitemprovider/canloadobject(ofclass:)-3eig9.md)
+### Querying the provider’s contents
+- [func canLoadObject(ofClass: any NSItemProviderReading.Type) -> Bool](./canloadobject%28ofclass%29-3eig9.md)
   Returns a Boolean value indicating whether an item provider can load objects of a specified class.
-- [func hasItemConformingToTypeIdentifier(String) -> Bool](nsitemprovider/hasitemconformingtotypeidentifier(_:).md)
+- [func hasItemConformingToTypeIdentifier(String) -> Bool](./hasitemconformingtotypeidentifier%28_%29.md)
   Returns a Boolean value indicating whether an item provider contains a data representation conforming to a specified universal type identifier file options parameter with a value of zero.
-- [func hasRepresentationConforming(toTypeIdentifier: String, fileOptions: NSItemProviderFileOptions) -> Bool](nsitemprovider/hasrepresentationconforming(totypeidentifier:fileoptions:).md)
+- [func hasRepresentationConforming(toTypeIdentifier: String, fileOptions: NSItemProviderFileOptions) -> Bool](./hasrepresentationconforming%28totypeidentifier,fileoptions%29.md)
   Returns a Boolean value indicating whether an item provider contains a data representation conforming to a specified universal type identifier and to specified open-in-place behavior.
-- [var registeredTypeIdentifiers: [String]](nsitemprovider/registeredtypeidentifiers.md)
+- [var registeredTypeIdentifiers: [String]](./registeredtypeidentifiers.md)
   Returns the array of type identifiers for the item provider, in the same order they were registered.
-- [func registeredTypeIdentifiers(fileOptions: NSItemProviderFileOptions) -> [String]](nsitemprovider/registeredtypeidentifiers(fileoptions:).md)
+- [func registeredTypeIdentifiers(fileOptions: NSItemProviderFileOptions) -> [String]](./registeredtypeidentifiers%28fileoptions%29.md)
   Returns an array with a subset of type identifiers for the item provider, according to the specified file options, in the same order they were registered.
 
 

@@ -1,7 +1,8 @@
 # maximumRating
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The metadata associated with the maximum app rating setting.
 
@@ -18,11 +19,12 @@ static let maximumRating: BoundedSettingMetadata<Int>
 
 #### Discussion
 
-Use `maximumRating` to access the metadata for [`maximumRating`](appstoresettings/maximumrating-swift.property.md). The default value is `1000` and the bounds are `0...2000`.
+Use `maximumRating` to access the metadata for [`maximumRating`](./maximumrating-swift.property.md). The default value is `1000` and the bounds are `0...2000`.
 
 ## See Also
 
-- [var maximumRating: Int?](appstoresettings/maximumrating-swift.property.md)
+### Setting an app rating limit
+- [var maximumRating: Int?](./maximumrating-swift.property.md)
   The maximum app rating the user can download.
 
 

@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A platform-appropriate default text input dictation behavior.
 
@@ -19,13 +20,14 @@ static let automatic: TextInputDictationBehavior
 
 #### Discussion
 
-The automatic behavior uses a [`TextInputDictationActivation`](textinputdictationactivation.md) value of [`onLook`](textinputdictationactivation/onlook.md) for visionOS apps and [`onSelect`](textinputdictationactivation/onselect.md) for iOS apps.
+The automatic behavior uses a [`TextInputDictationActivation`](../textinputdictationactivation.md) value of [`onLook`](../textinputdictationactivation/onlook.md) for visionOS apps and [`onSelect`](../textinputdictationactivation/onselect.md) for iOS apps.
 
 ## See Also
 
-- [static func inline(activation: TextInputDictationActivation) -> TextInputDictationBehavior](textinputdictationbehavior/inline(activation:).md)
+### Getting behavior values
+- [static func inline(activation: TextInputDictationActivation) -> TextInputDictationBehavior](./inline%28activation%29.md)
   Adds a dictation microphone in the search bar.
-- [static let preventDictation: TextInputDictationBehavior](textinputdictationbehavior/preventdictation.md)
+- [static let preventDictation: TextInputDictationBehavior](./preventdictation.md)
   Prevents the search bar from having a dictation microphone.
 
 

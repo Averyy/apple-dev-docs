@@ -1,7 +1,8 @@
 # AlternativeDistributionDomainCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an alternative distribution domain create resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an alternative distribution domain create resource.
 
 ## Declaration
 
-```swift
+```
 object AlternativeDistributionDomainCreateRequest.Data.Attributes
 ```
 

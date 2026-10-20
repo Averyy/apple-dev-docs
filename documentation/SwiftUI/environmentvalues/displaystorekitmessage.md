@@ -1,7 +1,8 @@
 # displayStoreKitMessage
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -17,7 +18,8 @@ var displayStoreKitMessage: DisplayMessageAction { get }
 
 ## See Also
 
-- [var requestReview: RequestReviewAction](environmentvalues/requestreview.md)
+### StoreKit configuration
+- [var requestReview: RequestReviewAction](./requestreview.md)
 
 
 ---

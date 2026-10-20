@@ -1,7 +1,8 @@
 # Event
 
 **Framework**: RealityKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that can be sent as an event.
 
@@ -11,7 +12,7 @@ A type that can be sent as an event.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,11 +24,11 @@ protocol Event : Sendable
 
 RealityKit provides a number of events you can subscribe to. The system notifies you whenever the event type occurs.
 
-For example, you can subscribe to [`CollisionEvents.Began`](collisionevents/began.md) to know when two objects begin colliding, or [`SceneEvents.Update`](sceneevents/update.md) every time the scene redraws.
+For example, you can subscribe to [`CollisionEvents.Began`](./collisionevents/began.md) to know when two objects begin colliding, or [`SceneEvents.Update`](./sceneevents/update.md) every time the scene redraws.
 
-To subscribe to an event from inside of a [`RealityView`](realityview.md) builder, call one of the [`RealityViewContentProtocol`](realityviewcontentprotocol.md) `subscribe` methods, for example [`subscribe(to:on:_:)`](realityviewcontentprotocol/subscribe(to:on:_:).md).
+To subscribe to an event from inside of a [`RealityView`](./realityview.md) builder, call one of the [`RealityViewContentProtocol`](./realityviewcontentprotocol.md) `subscribe` methods, for example [`subscribe(to:on:_:)`](./realityviewcontentprotocol/subscribe%28to,on,_%29.md).
 
-Here’s an example of subscribing to the event [`CollisionEvents.Began`](collisionevents/began.md), which occurs when two entities collide:
+Here’s an example of subscribing to the event [`CollisionEvents.Began`](./collisionevents/began.md), which occurs when two entities collide:
 
 ```swift
 struct RealityGame: View {
@@ -62,79 +63,80 @@ struct RealityGame: View {
 }
 ```
 
-> **Note**: Add a [`CollisionComponent`](collisioncomponent.md) to any entities you want to detect collisions for.
+> **Note**: Add a [`CollisionComponent`](./collisioncomponent.md) to any entities you want to detect collisions for.
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [AccessibilityEvents.Activate](accessibilityevents/activate.md)
-- [AccessibilityEvents.CustomAction](accessibilityevents/customaction.md)
-- [AccessibilityEvents.Decrement](accessibilityevents/decrement.md)
-- [AccessibilityEvents.Increment](accessibilityevents/increment.md)
-- [AccessibilityEvents.RotorNavigation](accessibilityevents/rotornavigation.md)
-- [AnchorStateEvents.DidAnchor](anchorstateevents/didanchor.md)
-- [AnchorStateEvents.DidFailToAnchor](anchorstateevents/didfailtoanchor.md)
-- [AnchorStateEvents.WillUnanchor](anchorstateevents/willunanchor.md)
-- [AnimationEvents.PlaybackCompleted](animationevents/playbackcompleted.md)
-- [AnimationEvents.PlaybackLooped](animationevents/playbacklooped.md)
-- [AnimationEvents.PlaybackStarted](animationevents/playbackstarted.md)
-- [AnimationEvents.PlaybackTerminated](animationevents/playbackterminated.md)
-- [AnimationEvents.RootMotionDidUpdate](animationevents/rootmotiondidupdate.md)
-- [AnimationEvents.SkeletalPoseUpdateComplete](animationevents/skeletalposeupdatecomplete.md)
-- [AudioEvents.PlaybackCompleted](audioevents/playbackcompleted.md)
-- [AudioEvents.PlaybackGroupCompleted](audioevents/playbackgroupcompleted.md)
-- [ClothBodyEvents.NewSimulationPositions](clothbodyevents/newsimulationpositions.md)
-- [ClothColliderEvents.NewBodyCollisions](clothcolliderevents/newbodycollisions.md)
-- [ClothQueryVolumeEvents.NewBodyIntersections](clothqueryvolumeevents/newbodyintersections.md)
-- [ClothSimulationEvents.AfterUpdate](clothsimulationevents/afterupdate.md)
-- [ClothSimulationEvents.BeforeUpdate](clothsimulationevents/beforeupdate.md)
-- [ClothSimulationEvents.Start](clothsimulationevents/start.md)
-- [CollisionEvents.Began](collisionevents/began.md)
-- [CollisionEvents.Ended](collisionevents/ended.md)
-- [CollisionEvents.Updated](collisionevents/updated.md)
-- [ComponentEvents.DidActivate](componentevents/didactivate.md)
-- [ComponentEvents.DidAdd](componentevents/didadd.md)
-- [ComponentEvents.DidChange](componentevents/didchange.md)
-- [ComponentEvents.WillDeactivate](componentevents/willdeactivate.md)
-- [ComponentEvents.WillRemove](componentevents/willremove.md)
-- [GaussianSplatEvents.RenderingChanged](gaussiansplatevents/renderingchanged.md)
-- [ImagePresentationEvents.TransitionCompleted](imagepresentationevents/transitioncompleted.md)
-- [ImagePresentationEvents.TransitionStarted](imagepresentationevents/transitionstarted.md)
-- [ManipulationEvents.DidHandOff](manipulationevents/didhandoff.md)
-- [ManipulationEvents.DidUpdateTransform](manipulationevents/didupdatetransform.md)
-- [ManipulationEvents.WillBegin](manipulationevents/willbegin.md)
-- [ManipulationEvents.WillEnd](manipulationevents/willend.md)
-- [ManipulationEvents.WillRelease](manipulationevents/willrelease.md)
-- [PhysicsSimulationEvents.DidSimulate](physicssimulationevents/didsimulate.md)
-- [PhysicsSimulationEvents.WillSimulate](physicssimulationevents/willsimulate.md)
-- [SceneEvents.AnchoredStateChanged](sceneevents/anchoredstatechanged.md)
-- [SceneEvents.DidActivateEntity](sceneevents/didactivateentity.md)
-- [SceneEvents.DidAddEntity](sceneevents/didaddentity.md)
-- [SceneEvents.DidReparentEntity](sceneevents/didreparententity.md)
-- [SceneEvents.TrackingStateUpdate](sceneevents/trackingstateupdate.md)
-- [SceneEvents.Update](sceneevents/update.md)
-- [SceneEvents.WillDeactivateEntity](sceneevents/willdeactivateentity.md)
-- [SceneEvents.WillRemoveEntity](sceneevents/willremoveentity.md)
-- [SynchronizationEvents.OwnershipChanged](synchronizationevents/ownershipchanged.md)
-- [SynchronizationEvents.OwnershipRequest](synchronizationevents/ownershiprequest.md)
-- [VideoPlayerEvents.ContentTypeDidChange](videoplayerevents/contenttypedidchange.md)
-- [VideoPlayerEvents.ImmersiveViewingModeDidChange](videoplayerevents/immersiveviewingmodedidchange.md)
-- [VideoPlayerEvents.ImmersiveViewingModeDidTransition](videoplayerevents/immersiveviewingmodedidtransition.md)
-- [VideoPlayerEvents.ImmersiveViewingModeWillTransition](videoplayerevents/immersiveviewingmodewilltransition.md)
-- [VideoPlayerEvents.RenderingStatusDidChange](videoplayerevents/renderingstatusdidchange.md)
-- [VideoPlayerEvents.SpatialVideoModeDidChange](videoplayerevents/spatialvideomodedidchange.md)
-- [VideoPlayerEvents.VideoComfortMitigationDidOccur](videoplayerevents/videocomfortmitigationdidoccur.md)
-- [VideoPlayerEvents.VideoSizeDidChange](videoplayerevents/videosizedidchange.md)
-- [VideoPlayerEvents.ViewingModeDidChange](videoplayerevents/viewingmodedidchange.md)
+- [AccessibilityEvents.Activate](./accessibilityevents/activate.md)
+- [AccessibilityEvents.CustomAction](./accessibilityevents/customaction.md)
+- [AccessibilityEvents.Decrement](./accessibilityevents/decrement.md)
+- [AccessibilityEvents.Increment](./accessibilityevents/increment.md)
+- [AccessibilityEvents.RotorNavigation](./accessibilityevents/rotornavigation.md)
+- [AnchorStateEvents.DidAnchor](./anchorstateevents/didanchor.md)
+- [AnchorStateEvents.DidFailToAnchor](./anchorstateevents/didfailtoanchor.md)
+- [AnchorStateEvents.WillUnanchor](./anchorstateevents/willunanchor.md)
+- [AnimationEvents.PlaybackCompleted](./animationevents/playbackcompleted.md)
+- [AnimationEvents.PlaybackLooped](./animationevents/playbacklooped.md)
+- [AnimationEvents.PlaybackStarted](./animationevents/playbackstarted.md)
+- [AnimationEvents.PlaybackTerminated](./animationevents/playbackterminated.md)
+- [AnimationEvents.RootMotionDidUpdate](./animationevents/rootmotiondidupdate.md)
+- [AnimationEvents.SkeletalPoseUpdateComplete](./animationevents/skeletalposeupdatecomplete.md)
+- [AudioEvents.PlaybackCompleted](./audioevents/playbackcompleted.md)
+- [AudioEvents.PlaybackGroupCompleted](./audioevents/playbackgroupcompleted.md)
+- [ClothBodyEvents.NewSimulationPositions](./clothbodyevents/newsimulationpositions.md)
+- [ClothColliderEvents.NewBodyCollisions](./clothcolliderevents/newbodycollisions.md)
+- [ClothQueryVolumeEvents.NewBodyIntersections](./clothqueryvolumeevents/newbodyintersections.md)
+- [ClothSimulationEvents.AfterUpdate](./clothsimulationevents/afterupdate.md)
+- [ClothSimulationEvents.BeforeUpdate](./clothsimulationevents/beforeupdate.md)
+- [ClothSimulationEvents.Start](./clothsimulationevents/start.md)
+- [CollisionEvents.Began](./collisionevents/began.md)
+- [CollisionEvents.Ended](./collisionevents/ended.md)
+- [CollisionEvents.Updated](./collisionevents/updated.md)
+- [ComponentEvents.DidActivate](./componentevents/didactivate.md)
+- [ComponentEvents.DidAdd](./componentevents/didadd.md)
+- [ComponentEvents.DidChange](./componentevents/didchange.md)
+- [ComponentEvents.WillDeactivate](./componentevents/willdeactivate.md)
+- [ComponentEvents.WillRemove](./componentevents/willremove.md)
+- [GaussianSplatEvents.RenderingChanged](./gaussiansplatevents/renderingchanged.md)
+- [ImagePresentationEvents.TransitionCompleted](./imagepresentationevents/transitioncompleted.md)
+- [ImagePresentationEvents.TransitionStarted](./imagepresentationevents/transitionstarted.md)
+- [ManipulationEvents.DidHandOff](./manipulationevents/didhandoff.md)
+- [ManipulationEvents.DidUpdateTransform](./manipulationevents/didupdatetransform.md)
+- [ManipulationEvents.WillBegin](./manipulationevents/willbegin.md)
+- [ManipulationEvents.WillEnd](./manipulationevents/willend.md)
+- [ManipulationEvents.WillRelease](./manipulationevents/willrelease.md)
+- [PhysicsSimulationEvents.DidSimulate](./physicssimulationevents/didsimulate.md)
+- [PhysicsSimulationEvents.WillSimulate](./physicssimulationevents/willsimulate.md)
+- [SceneEvents.AnchoredStateChanged](./sceneevents/anchoredstatechanged.md)
+- [SceneEvents.DidActivateEntity](./sceneevents/didactivateentity.md)
+- [SceneEvents.DidAddEntity](./sceneevents/didaddentity.md)
+- [SceneEvents.DidReparentEntity](./sceneevents/didreparententity.md)
+- [SceneEvents.TrackingStateUpdate](./sceneevents/trackingstateupdate.md)
+- [SceneEvents.Update](./sceneevents/update.md)
+- [SceneEvents.WillDeactivateEntity](./sceneevents/willdeactivateentity.md)
+- [SceneEvents.WillRemoveEntity](./sceneevents/willremoveentity.md)
+- [SynchronizationEvents.OwnershipChanged](./synchronizationevents/ownershipchanged.md)
+- [SynchronizationEvents.OwnershipRequest](./synchronizationevents/ownershiprequest.md)
+- [VideoPlayerEvents.ContentTypeDidChange](./videoplayerevents/contenttypedidchange.md)
+- [VideoPlayerEvents.ImmersiveViewingModeDidChange](./videoplayerevents/immersiveviewingmodedidchange.md)
+- [VideoPlayerEvents.ImmersiveViewingModeDidTransition](./videoplayerevents/immersiveviewingmodedidtransition.md)
+- [VideoPlayerEvents.ImmersiveViewingModeWillTransition](./videoplayerevents/immersiveviewingmodewilltransition.md)
+- [VideoPlayerEvents.RenderingStatusDidChange](./videoplayerevents/renderingstatusdidchange.md)
+- [VideoPlayerEvents.SpatialVideoModeDidChange](./videoplayerevents/spatialvideomodedidchange.md)
+- [VideoPlayerEvents.VideoComfortMitigationDidOccur](./videoplayerevents/videocomfortmitigationdidoccur.md)
+- [VideoPlayerEvents.VideoSizeDidChange](./videoplayerevents/videosizedidchange.md)
+- [VideoPlayerEvents.ViewingModeDidChange](./videoplayerevents/viewingmodedidchange.md)
 
 ## See Also
 
-- [protocol EventSource](eventsource.md)
+### Core event types
+- [protocol EventSource](./eventsource.md)
   A type on which events can be published and subscribed.
-- [struct EventSubscription](eventsubscription.md)
+- [struct EventSubscription](./eventsubscription.md)
   A subscription to an event.
 
 

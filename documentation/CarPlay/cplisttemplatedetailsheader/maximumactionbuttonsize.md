@@ -1,7 +1,8 @@
 # maximumActionButtonSize
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.4+
@@ -12,6 +13,10 @@
 
 ```swift
 class var maximumActionButtonSize: CGSize { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) CGSize maximumActionButtonSize;
 ```
 
 

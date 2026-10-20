@@ -1,7 +1,8 @@
 # current
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the current, activated, text input context object.
 
@@ -14,9 +15,14 @@ Returns the current, activated, text input context object.
 class var current: NSTextInputContext? { get }
 ```
 
+```objc
+@property (class, strong, readonly, nullable) NSTextInputContext * currentInputContext;
+```
+
 ## See Also
 
-- [var client: any NSTextInputClient](nstextinputcontext/client.md)
+### Getting the Input Context and Client
+- [var client: any NSTextInputClient](./client.md)
   The owner of this input context. (read-only)
 
 

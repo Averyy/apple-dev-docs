@@ -1,7 +1,8 @@
 # default
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The view’s default controls style.
 
@@ -14,17 +15,22 @@ The view’s default controls style.
 static var `default`: AVCaptureViewControlsStyle { get }
 ```
 
+```c
+AVCaptureViewControlsStyleDefault
+```
+
 #### Discussion
 
-The default controls style is [`AVCaptureViewControlsStyle.inline`](avcaptureviewcontrolsstyle/inline.md).
+The default controls style is [`AVCaptureViewControlsStyle.inline`](./inline.md).
 
 ## See Also
 
-- [AVCaptureViewControlsStyle.inline](avcaptureviewcontrolsstyle/inline.md)
+### Controls styles
+- [AVCaptureViewControlsStyle.inline](./inline.md)
   The view’s inline controls style.
-- [AVCaptureViewControlsStyle.floating](avcaptureviewcontrolsstyle/floating.md)
+- [AVCaptureViewControlsStyle.floating](./floating.md)
   The view’s floating controls style, which matches the user interface of QuickTime Player.
-- [AVCaptureViewControlsStyle.inlineDeviceSelection](avcaptureviewcontrolsstyle/inlinedeviceselection.md)
+- [AVCaptureViewControlsStyle.inlineDeviceSelection](./inlinedeviceselection.md)
   The view’s inline device selection style.
 
 

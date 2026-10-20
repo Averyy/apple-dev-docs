@@ -1,7 +1,8 @@
 # makeIterator()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an iterator over the dictionary’s key-value pairs.
 
@@ -19,6 +20,8 @@ Returns an iterator over the dictionary’s key-value pairs.
 ```swift
 func makeIterator() -> Dictionary<Key, Value>.Iterator
 ```
+
+Available when `Key` conforms to `Hashable`.
 
 #### Return Value
 
@@ -40,13 +43,14 @@ for (name, hueValue) in hues {
 
 ## See Also
 
-- [func forEach((Self.Element) throws -> Void) rethrows](dictionary/foreach(_:).md)
+### Iterating over Keys and Values
+- [func forEach((Self.Element) throws -> Void) rethrows](./foreach%28_%29.md)
   Calls the given closure on each element in the sequence in the same order as a `for`-`in` loop.
-- [func enumerated() -> EnumeratedSequence<Self>](dictionary/enumerated.md)
+- [func enumerated() -> EnumeratedSequence<Self>](./enumerated%28%29.md)
   Returns a sequence of pairs (*n*, *x*), where *n* represents a consecutive integer starting at zero and *x* represents an element of the sequence.
-- [var lazy: LazySequence<Self>](dictionary/lazy.md)
+- [var lazy: LazySequence<Self>](./lazy.md)
   A sequence containing the same elements as this sequence, but on which some operations, such as `map` and `filter`, are implemented lazily.
-- [var underestimatedCount: Int](dictionary/underestimatedcount.md)
+- [var underestimatedCount: Int](./underestimatedcount.md)
   A value less than or equal to the number of elements in the collection.
 
 

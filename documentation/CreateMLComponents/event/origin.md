@@ -1,7 +1,8 @@
 # origin
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the event’s origin.
 
@@ -22,11 +23,12 @@ var origin: String
 
 ## See Also
 
-- [var itemCount: Int](event/itemcount.md)
+### Getting the properties
+- [var itemCount: Int](./itemcount.md)
   The number of items processed so far.
-- [var metrics: [MetricsKey : any Sendable]](event/metrics.md)
+- [var metrics: [MetricsKey : any Sendable]](./metrics.md)
   A dictionary of custom metrics values.
-- [var totalItemCount: Int?](event/totalitemcount.md)
+- [var totalItemCount: Int?](./totalitemcount.md)
   The total number of items being processed.
 
 

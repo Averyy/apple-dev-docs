@@ -1,7 +1,8 @@
 # UIMenuElement.ImageVisibility.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The element’s image visibility is determined by the platform and context.
 
@@ -16,6 +17,10 @@ The element’s image visibility is determined by the platform and context.
 
 ```swift
 case automatic
+```
+
+```c
+UIMenuElementImageVisibilityAutomatic
 ```
 
 

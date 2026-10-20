@@ -1,7 +1,8 @@
 # streamStatus
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the receiver’s status.
 
@@ -20,6 +21,10 @@ Returns the receiver’s status.
 var streamStatus: Stream.Status { get }
 ```
 
+```objc
+@property (readonly) NSStreamStatus streamStatus;
+```
+
 #### Return Value
 
 The receiver’s status.
@@ -30,7 +35,8 @@ See Constants for a description of the available NSStreamStatus constants.
 
 ## See Also
 
-- [var streamError: (any Error)?](stream/streamerror.md)
+### Getting Stream Information
+- [var streamError: (any Error)?](./streamerror.md)
   Returns an `NSError` object representing the stream error.
 
 

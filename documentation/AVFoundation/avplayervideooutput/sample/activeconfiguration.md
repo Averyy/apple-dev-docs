@@ -1,7 +1,8 @@
 # activeConfiguration
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The active configuration that this sample was derived from.
 
@@ -22,9 +23,10 @@ let activeConfiguration: AVPlayerVideoOutput.Configuration
 
 ## See Also
 
-- [let presentationTime: CMTime](avplayervideooutput/sample/presentationtime.md)
+### Inspecting a sample
+- [let presentationTime: CMTime](./presentationtime.md)
   A CMTime representing the true display deadline for this sample in terms of the corresponding AVPlayerItem’s timebase.
-- [let taggedBuffers: [CMTaggedDynamicBuffer]](avplayervideooutput/sample/taggedbuffers.md)
+- [let taggedBuffers: [CMTaggedDynamicBuffer]](./taggedbuffers.md)
   An array of CMTaggedBuffers containing the frame for the specified time.
 
 

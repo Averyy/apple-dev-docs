@@ -1,7 +1,8 @@
 # lineStyle(by:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Represents data using line styles.
 
@@ -27,14 +28,15 @@ func lineStyle(by value: PlottableProjection<Self.DataElement, some Plottable>) 
 
 ## See Also
 
+### Encoding data into mark characteristics
 - [func foregroundStyle(by: PlottableProjection<Self.DataElement, some Plottable>) -> some VectorizedChartContent<Self.DataElement>
-](vectorizedchartcontent/foregroundstyle(by:).md)
+](./foregroundstyle%28by%29.md)
   Represents data using a foreground style.
 - [func symbol(by: PlottableProjection<Self.DataElement, some Plottable>) -> some VectorizedChartContent<Self.DataElement>
-](vectorizedchartcontent/symbol(by:).md)
+](./symbol%28by%29.md)
   Represents data using different kinds of symbols.
 - [func symbolSize(by: PlottableProjection<Self.DataElement, some Plottable>) -> some VectorizedChartContent<Self.DataElement>
-](vectorizedchartcontent/symbolsize(by:).md)
+](./symbolsize%28by%29.md)
   Represents data using symbol sizes.
 
 

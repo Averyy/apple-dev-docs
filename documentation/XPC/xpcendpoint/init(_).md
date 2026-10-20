@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: XPC  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Copy-initialize from a C endpoint object.
 

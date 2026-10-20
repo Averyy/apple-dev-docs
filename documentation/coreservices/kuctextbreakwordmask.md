@@ -1,7 +1,8 @@
 # kUCTextBreakWordMask
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 If the bit specified by this mask is set, boundaries of words may be located. This can be used to determine what to highlight as the result of a double-click.
 

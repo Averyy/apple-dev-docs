@@ -1,30 +1,32 @@
 # kIOUserNetworkHWAssistTSO6
 
 **Framework**: NetworkingDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 kIOUserNetworkHWAssistTSO6
 ```
 
 ## See Also
 
-- [kIOUserNetworkHWAssistHWTimeStamp](kiousernetworkhwassisthwtimestamp.md)
-- [kIOUserNetworkHWAssistLRO](kiousernetworkhwassistlro.md)
-- [kIOUserNetworkHWAssistNicProxy](kiousernetworkhwassistnicproxy.md)
-- [kIOUserNetworkHWAssistRxChecksum](kiousernetworkhwassistrxchecksum.md)
-- [kIOUserNetworkHWAssistSWTimeStamp](kiousernetworkhwassistswtimestamp.md)
-- [kIOUserNetworkHWAssistSoftwareVlan](kiousernetworkhwassistsoftwarevlan.md)
-- [kIOUserNetworkHWAssistTSO4](kiousernetworkhwassisttso4.md)
-- [kIOUserNetworkHWAssistTxChecksumIPHdr](kiousernetworkhwassisttxchecksumiphdr.md)
-- [kIOUserNetworkHWAssistTxChecksumTCP](kiousernetworkhwassisttxchecksumtcp.md)
-- [kIOUserNetworkHWAssistTxChecksumUDP](kiousernetworkhwassisttxchecksumudp.md)
-- [kIOUserNetworkHWAssistWOMP](kiousernetworkhwassistwomp.md)
+### Hardware assist features
+- [kIOUserNetworkHWAssistHWTimeStamp](./kiousernetworkhwassisthwtimestamp.md)
+- [kIOUserNetworkHWAssistLRO](./kiousernetworkhwassistlro.md)
+- [kIOUserNetworkHWAssistNicProxy](./kiousernetworkhwassistnicproxy.md)
+- [kIOUserNetworkHWAssistRxChecksum](./kiousernetworkhwassistrxchecksum.md)
+- [kIOUserNetworkHWAssistSWTimeStamp](./kiousernetworkhwassistswtimestamp.md)
+- [kIOUserNetworkHWAssistSoftwareVlan](./kiousernetworkhwassistsoftwarevlan.md)
+- [kIOUserNetworkHWAssistTSO4](./kiousernetworkhwassisttso4.md)
+- [kIOUserNetworkHWAssistTxChecksumIPHdr](./kiousernetworkhwassisttxchecksumiphdr.md)
+- [kIOUserNetworkHWAssistTxChecksumTCP](./kiousernetworkhwassisttxchecksumtcp.md)
+- [kIOUserNetworkHWAssistTxChecksumUDP](./kiousernetworkhwassisttxchecksumudp.md)
+- [kIOUserNetworkHWAssistWOMP](./kiousernetworkhwassistwomp.md)
 
 
 ---

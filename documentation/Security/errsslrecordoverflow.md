@@ -1,7 +1,8 @@
 # errSSLRecordOverflow
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A record overflow occurred.
 
@@ -18,6 +19,10 @@ A record overflow occurred.
 
 ```swift
 var errSSLRecordOverflow: OSStatus { get }
+```
+
+```c
+errSSLRecordOverflow
 ```
 
 

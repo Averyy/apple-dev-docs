@@ -1,7 +1,8 @@
 # anchorCoordinateSystem
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The coordinate system for the control’s anchor point.
 
@@ -16,13 +17,18 @@ The coordinate system for the control’s anchor point.
 var anchorCoordinateSystem: TCControlLayoutAnchorCoordinateSystem { get set }
 ```
 
+```objc
+@property (nonatomic, assign) TCControlLayoutAnchorCoordinateSystem anchorCoordinateSystem;
+```
+
 ## See Also
 
-- [var anchor: TCControlLayoutAnchor](tcthrottledescriptor/anchor.md)
+### Accessing the anchor
+- [var anchor: TCControlLayoutAnchor](./anchor.md)
   The anchor point that the throttle’s offset is relative to.
-- [enum TCControlLayoutAnchor](tccontrollayoutanchor.md)
+- [enum TCControlLayoutAnchor](../tccontrollayoutanchor.md)
   Defines the anchor point for a control.
-- [enum TCControlLayoutAnchorCoordinateSystem](tccontrollayoutanchorcoordinatesystem.md)
+- [enum TCControlLayoutAnchorCoordinateSystem](../tccontrollayoutanchorcoordinatesystem.md)
   Defines the coodinate system for an anchor point.
 
 

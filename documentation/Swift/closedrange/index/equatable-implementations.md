@@ -1,13 +1,14 @@
 # Equatable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func != (borrowing Self, borrowing Self) -> Bool](closedrange/index/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](./noteq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are not equal.
-- [static func == (ClosedRange<Bound>.Index, ClosedRange<Bound>.Index) -> Bool](closedrange/index/==(_:_:).md)
+- [static func == (ClosedRange<Bound>.Index, ClosedRange<Bound>.Index) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are equal.
 
 

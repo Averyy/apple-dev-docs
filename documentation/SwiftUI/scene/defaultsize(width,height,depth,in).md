@@ -1,7 +1,8 @@
 # defaultSize(width:height:depth:in:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a default size for a volumetric window.
 
@@ -21,7 +22,7 @@ A scene that uses a default size for new windows.
 
 #### Discussion
 
-Use this modifier to indicate the default initial size for a new 3D window created from a [`Scene`](scene.md) using [`VolumetricWindowStyle`](volumetricwindowstyle.md):
+Use this modifier to indicate the default initial size for a new 3D window created from a [`Scene`](../scene.md) using [`VolumetricWindowStyle`](../volumetricwindowstyle.md):
 
 ```swift
 WindowGroup {
@@ -44,23 +45,24 @@ This modifier affects only windows that have the volumetric style in visionOS.
 
 ## See Also
 
-- [Positioning and sizing windows](../visionos/positioning-and-sizing-windows.md)
+### Sizing a window
+- [Positioning and sizing windows](../../visionOS/positioning-and-sizing-windows.md)
   Influence the initial geometry of windows that your app presents.
-- [func defaultSize(_:)](scene/defaultsize(_:).md)
+- [func defaultSize(_:)](./defaultsize%28_%29.md)
   Sets a default size for a window.
-- [func defaultSize(width: CGFloat, height: CGFloat) -> some Scene](scene/defaultsize(width:height:).md)
+- [func defaultSize(width: CGFloat, height: CGFloat) -> some Scene](./defaultsize%28width,height%29.md)
   Sets a default width and height for a window.
-- [func defaultSize(width: CGFloat, height: CGFloat, depth: CGFloat) -> some Scene](scene/defaultsize(width:height:depth:).md)
+- [func defaultSize(width: CGFloat, height: CGFloat, depth: CGFloat) -> some Scene](./defaultsize%28width,height,depth%29.md)
   Sets a default size for a volumetric window.
-- [func defaultSize(Size3D, in: UnitLength) -> some Scene](scene/defaultsize(_:in:).md)
+- [func defaultSize(Size3D, in: UnitLength) -> some Scene](./defaultsize%28_,in%29.md)
   Sets a default size for a volumetric window.
-- [func windowResizability(WindowResizability) -> some Scene](scene/windowresizability(_:).md)
+- [func windowResizability(WindowResizability) -> some Scene](./windowresizability%28_%29.md)
   Sets the kind of resizability to use for a window.
-- [struct WindowResizability](windowresizability.md)
+- [struct WindowResizability](../windowresizability.md)
   The resizability of a window.
-- [func windowIdealSize(WindowIdealSize) -> some Scene](scene/windowidealsize(_:).md)
+- [func windowIdealSize(WindowIdealSize) -> some Scene](./windowidealsize%28_%29.md)
   Specifies how windows derived form this scene should determine their size when zooming.
-- [struct WindowIdealSize](windowidealsize.md)
+- [struct WindowIdealSize](../windowidealsize.md)
   A type which defines the size a window should use when zooming.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: op  
+**Role**: Operator  
 **Required**: Yes
 
 Returns the result of performing a bitwise XOR operation on the two given values.
@@ -36,6 +37,12 @@ let z = x ^ y             // 0b00001011
 
 - `lhs`: An integer value.
 - `rhs`: Another integer value.
+
+## Default Implementations
+
+### BinaryInteger Implementations
+- [static func ^ (Self, Self) -> Self](./op%28_,_%29-1nppt.md)
+  Returns the result of performing a bitwise XOR operation on the two given values.
 
 
 ---

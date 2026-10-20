@@ -1,7 +1,8 @@
 # useGridValueAsInputCoordinate
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var useGridValueAsInputCoordinate: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL useGridValueAsInputCoordinate;
 ```
 
 

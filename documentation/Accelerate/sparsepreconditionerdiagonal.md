@@ -1,18 +1,19 @@
 # SparsePreconditionerDiagonal
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Jacobi preconditioner.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,17 +21,22 @@ A Jacobi preconditioner.
 var SparsePreconditionerDiagonal: SparsePreconditioner_t { get }
 ```
 
+```c
+SparsePreconditionerDiagonal
+```
+
 #### Discussion
 
-[`SparsePreconditionerDiagonal`](sparsepreconditionerdiagonal.md) provides a simple preconditioner for conjugate gradient (CG) and generalized minimal residual (GMRES) methods.
+[`SparsePreconditionerDiagonal`](./sparsepreconditionerdiagonal.md) provides a simple preconditioner for conjugate gradient (CG) and generalized minimal residual (GMRES) methods.
 
 ## See Also
 
-- [var SparsePreconditionerDiagScaling: SparsePreconditioner_t](sparsepreconditionerdiagscaling.md)
+### Constants
+- [var SparsePreconditionerDiagScaling: SparsePreconditioner_t](./sparsepreconditionerdiagscaling.md)
   A diagonal scaling preconditioner.
-- [var SparsePreconditionerNone: SparsePreconditioner_t](sparsepreconditionernone.md)
+- [var SparsePreconditionerNone: SparsePreconditioner_t](./sparsepreconditionernone.md)
   No preconditioner.
-- [var SparsePreconditionerUser: SparsePreconditioner_t](sparsepreconditioneruser.md)
+- [var SparsePreconditionerUser: SparsePreconditioner_t](./sparsepreconditioneruser.md)
   A user-provided preconditioner.
 
 

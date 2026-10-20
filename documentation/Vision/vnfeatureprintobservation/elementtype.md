@@ -1,7 +1,8 @@
 # elementType
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of each element in the data.
 
@@ -19,11 +20,16 @@ The type of each element in the data.
 var elementType: VNElementType { get }
 ```
 
+```objc
+@property (atomic, assign, readonly) VNElementType elementType;
+```
+
 ## See Also
 
-- [enum VNElementType](vnelementtype.md)
+### Determining Types of Feature Prints
+- [enum VNElementType](../vnelementtype.md)
   An enumeration of the type of element in feature print data.
-- [func VNElementTypeSize(VNElementType) -> Int](vnelementtypesize(_:).md)
+- [func VNElementTypeSize(VNElementType) -> Int](../vnelementtypesize%28_%29.md)
   Returns the size of a feature print element.
 
 

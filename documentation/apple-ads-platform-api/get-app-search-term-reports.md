@@ -1,7 +1,8 @@
 # Search Terms Report
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Retrieve performance metrics for the actual search terms that triggered keyword matches.
 
@@ -15,18 +16,18 @@ Search term reports show the actual user-entered queries that matched a keyword 
 Use search term data to:
 
 - Discover high-performing search terms to promote to dedicated exact-match keywords.
-- Identify irrelevant queries to exclude as negative keywords with [`Create a Negative Keyword`](post-negative-keywords.md).
+- Identify irrelevant queries to exclude as negative keywords with [`Create a Negative Keyword`](./post-negative-keywords.md).
 - Understand match expansion breadth for BROAD-match keywords.
 
 Filter by the required `campaignId` in the `filters` array, optionally narrowed further by `adGroupId`.
 
-See [`Filter`](filter.md) for the full set of supported comparison operators.
+See [`Filter`](./filter.md) for the full set of supported comparison operators.
 
 #### Request Body
 
-See [`AppsReportingRequest`](appsreportingrequest.md).
+See [`AppsReportingRequest`](./appsreportingrequest.md).
 
-##### Groupby Dimensions
+##### groupBy Dimensions
 
 `deviceClass`, `countryOrRegion`
 
@@ -355,17 +356,34 @@ POST /v1/reports/apps/searchterms/query
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `AppsReportingRequest`
+
+## Responses
+
+- `200` OK (`AppsSearchTermReportResponse`, `application/json`): Successful response. Returns [`AppsSearchTermReportResponse`](./appssearchtermreportresponse.md) (`result`: [`AppsSearchTermResultContainer`](./appssearchtermresultcontainer.md)).
+- `400` Bad Request (`Error`, `application/json`): Bad Request. Returns [`ErrorResponse`](./errorresponse.md).
+- `401` Unauthorized (`Error`, `application/json`): Unauthorized.
+- `403` Forbidden (`Error`, `application/json`): Forbidden.
+- `404` Not Found (`Error`, `application/json`): Not Found. Returns [`ErrorResponse`](./errorresponse.md).
+- `429` Too Many Requests (`Error`, `application/json`): Rate Limit Exceeded. Returns [`ErrorResponse`](./errorresponse.md).
+- `500` Internal Server Error (`Error`, `application/json`): Internal Server Error. Returns [`ErrorResponse`](./errorresponse.md).
 
 ## See Also
 
-- [Campaigns Report](get-app-campaign-reports.md)
+- [Campaigns Report](./get-app-campaign-reports.md)
   Retrieve performance metrics for campaigns.
-- [Ad Groups Report](get-app-ad-group-reports.md)
+- [Ad Groups Report](./get-app-ad-group-reports.md)
   Retrieve performance metrics for ad groups.
-- [Ads Report](get-app-ad-reports.md)
+- [Ads Report](./get-app-ad-reports.md)
   Retrieve performance metrics for ads.
-- [Keywords Report](get-app-keyword-reports.md)
+- [Keywords Report](./get-app-keyword-reports.md)
   Retrieve performance metrics for keywords.
 
 

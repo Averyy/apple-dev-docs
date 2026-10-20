@@ -1,7 +1,8 @@
 # init(url:)
 
 **Framework**: Safari Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a Safari view controller that loads the specified URL.
 
@@ -17,6 +18,10 @@ Initializes a Safari view controller that loads the specified URL.
 convenience init(url URL: URL)
 ```
 
+```objc
+- (instancetype) initWithURL:(NSURL *) URL;
+```
+
 #### Return Value
 
 A newly created Safari view controller.
@@ -27,11 +32,12 @@ A newly created Safari view controller.
 
 ## See Also
 
-- [init(url: URL, configuration: SFSafariViewController.Configuration)](sfsafariviewcontroller/init(url:configuration:)-305vl.md)
+### Creating a View Controller
+- [init(url: URL, configuration: SFSafariViewController.Configuration)](./init%28url,configuration%29-305vl.md)
   Initializes and configures a Safari view controller that loads the specified URL.
-- [SFSafariViewController.Configuration](sfsafariviewcontroller/configuration-swift.class.md)
+- [SFSafariViewController.Configuration](./configuration-swift.class.md)
   A configuration object that defines how a Safari view controller should be initialized.
-- [init(url: URL, entersReaderIfAvailable: Bool)](sfsafariviewcontroller/init(url:entersreaderifavailable:)-3aatz.md)
+- [init(url: URL, entersReaderIfAvailable: Bool)](./init%28url,entersreaderifavailable%29-3aatz.md)
   Initializes a Safari view controller that will load the specified URL, entering Reader mode if Reader mode is requested and available.
 
 

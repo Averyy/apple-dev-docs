@@ -1,7 +1,8 @@
 # init(x:y:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a structure for white balance chromaticity values from its x and y coordinates.
 
@@ -24,7 +25,8 @@ init(x: Float, y: Float)
 
 ## See Also
 
-- [init()](avcapturedevice/whitebalancechromaticityvalues/init.md)
+### Creating chromaticity values
+- [init()](./init%28%29.md)
   Creates a structure for white balance chromaticity values.
 
 

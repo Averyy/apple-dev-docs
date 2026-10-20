@@ -1,7 +1,8 @@
 # maxLength
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 9.0+
@@ -18,10 +19,15 @@
 static var maxLength: TKSmartCardUserInteractionForPINOperation.Completion { get }
 ```
 
+```c
+TKSmartCardPINCompletionMaxLength
+```
+
 ## See Also
 
-- [static var key: TKSmartCardUserInteractionForPINOperation.Completion](tksmartcarduserinteractionforpinoperation/completion/key.md)
-- [static var timeout: TKSmartCardUserInteractionForPINOperation.Completion](tksmartcarduserinteractionforpinoperation/completion/timeout.md)
+### Type Properties
+- [static var key: TKSmartCardUserInteractionForPINOperation.Completion](./key.md)
+- [static var timeout: TKSmartCardUserInteractionForPINOperation.Completion](./timeout.md)
 
 
 ---

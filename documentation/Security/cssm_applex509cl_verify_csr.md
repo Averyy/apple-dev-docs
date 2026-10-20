@@ -1,7 +1,8 @@
 # CSSM_APPLEX509CL_VERIFY_CSR
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_APPLEX509CL_VERIFY_CSR: Int { get }
+```
+
+```c
+CSSM_APPLEX509CL_VERIFY_CSR
 ```
 
 

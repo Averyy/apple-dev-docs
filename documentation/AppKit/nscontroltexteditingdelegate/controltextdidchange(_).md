@@ -1,7 +1,8 @@
 # controlTextDidChange(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the control made changes to its text content.
 
@@ -15,6 +16,10 @@ Tells the delegate that the control made changes to its text content.
 optional func controlTextDidChange(_ obj: Notification)
 ```
 
+```objc
+- (void) controlTextDidChange:(NSNotification *) obj;
+```
+
 #### Discussion
 
 Use the key `“NSFieldEditor”` to obtain the field editor from the notification object’s `userInfo` dictionary.
@@ -25,9 +30,10 @@ Use the key `“NSFieldEditor”` to obtain the field editor from the notificati
 
 ## See Also
 
-- [func controlTextDidBeginEditing(Notification)](nscontroltexteditingdelegate/controltextdidbeginediting(_:).md)
+### Instance Methods
+- [func controlTextDidBeginEditing(Notification)](./controltextdidbeginediting%28_%29.md)
   Tells the delegate that the control started editing its text content.
-- [func controlTextDidEndEditing(Notification)](nscontroltexteditingdelegate/controltextdidendediting(_:).md)
+- [func controlTextDidEndEditing(Notification)](./controltextdidendediting%28_%29.md)
   Tells the delegate that the control finished editing its text content and committed the changes.
 
 

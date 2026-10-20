@@ -1,7 +1,8 @@
 # WKApplicationMain(_:_:_:)
 
 **Framework**: WatchKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates the application object and the application delegate, and sets up the app’s event cycle.
 
@@ -12,6 +13,10 @@ Creates the application object and the application delegate, and sets up the app
 
 ```swift
 func WKApplicationMain(_ argc: Int32, _ argv: UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>, _ applicationDelegateClassName: String?) -> Int32
+```
+
+```c
+extern int WKApplicationMain(int argc, char * argv[], NSString *applicationDelegateClassName);
 ```
 
 #### Return Value
@@ -26,23 +31,24 @@ This function instantiates the application object and the specified delegate (if
 
 - `argc`: The count of arguments in `argv`. This is usually the corresponding parameter to `main`.
 - `argv`: A variable list of arguments. This is usually the corresponding parameter to `main`.
-- `applicationDelegateClassName`: The name of the app delegate’s class. This class must subclass [`NSObject`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class) and adopt the [`WKApplicationDelegate`](wkapplicationdelegate.md) protocol.
+- `applicationDelegateClassName`: The name of the app delegate’s class. This class must subclass [`NSObject`](../ObjectiveC/nsobject-swift.class.md) and adopt the [`WKApplicationDelegate`](./wkapplicationdelegate.md) protocol.
 
 ## See Also
 
-- [Setting up a watchOS project](../watchos-apps/setting-up-a-watchos-project.md)
+### App structure
+- [Setting up a watchOS project](../watchOS-Apps/setting-up-a-watchos-project.md)
   Create a new watchOS project or add a watch target to an existing iOS project.
-- [class WKApplication](wkapplication.md)
+- [class WKApplication](./wkapplication.md)
   The centralized point of control and coordination for apps with a single watchOS app target.
-- [protocol WKApplicationDelegate](wkapplicationdelegate.md)
+- [protocol WKApplicationDelegate](./wkapplicationdelegate.md)
   A collection of methods that manages the app-level behavior for a single-target watchOS app.
-- [class WKExtension](wkextension.md)
+- [class WKExtension](./wkextension.md)
   The centralized point of control and coordination for extension-based apps running in watchOS.
-- [protocol WKExtensionDelegate](wkextensiondelegate.md)
+- [protocol WKExtensionDelegate](./wkextensiondelegate.md)
   A collection of methods that manages the app-level behavior of a WatchKit extension.
-- [class WKInterfaceDevice](wkinterfacedevice.md)
+- [class WKInterfaceDevice](./wkinterfacedevice.md)
   An object that provides information about the user’s Apple Watch.
-- [WKPrefersNetworkUponForeground](../bundleresources/information-property-list/wkprefersnetworkuponforeground.md)
+- [WKPrefersNetworkUponForeground](../BundleResources/information-property-list/wkprefersnetworkuponforeground.md)
   A Boolean value that indicates whether an app requires network access on launch.
 
 

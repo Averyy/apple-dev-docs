@@ -1,7 +1,8 @@
 # kPMDestinationInvalid
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies the destination is invalid.
 

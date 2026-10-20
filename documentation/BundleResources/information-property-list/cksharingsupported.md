@@ -1,7 +1,8 @@
 # CKSharingSupported
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates your app supports CloudKit Sharing.
 
@@ -11,15 +12,16 @@ A Boolean value that indicates your app supports CloudKit Sharing.
 - macOS 10.12+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `CKSharingSupported`
+- **Type**: boolean
 
 #### Discussion
 
-If your app supports CloudKit Sharing, add this key to your app’s `Info.plist` file with a value of [`true`](https://developer.apple.com/documentation/swift/true). This tells the system to launch your app when the user taps or clicks a share’s URL. For example, one they receive in an email or an iMessage from the share’s owner.
+If your app supports CloudKit Sharing, add this key to your app’s `Info.plist` file with a value of [`true`](../../Swift/true.md). This tells the system to launch your app when the user taps or clicks a share’s URL. For example, one they receive in an email or an iMessage from the share’s owner.
 
-Before your app launches, CloudKit verifies that the user has an active iCloud account and, for private shares, that it matches their participant details. Following successful verification, CloudKit provides the share’s metadata to your app’s scene, or application, delegate. The method it calls varies by platform and app configuration. For more information, see [`CKShare.Metadata`](https://developer.apple.com/documentation/cloudkit/ckshare/metadata).
+Before your app launches, CloudKit verifies that the user has an active iCloud account and, for private shares, that it matches their participant details. Following successful verification, CloudKit provides the share’s metadata to your app’s scene, or application, delegate. The method it calls varies by platform and app configuration. For more information, see [`CKShare.Metadata`](../../CloudKit/ckshare/metadata.md).
 
 To indicate that your app supports CloudKit Sharing:
 
@@ -32,11 +34,12 @@ To indicate that your app supports CloudKit Sharing:
 
 ## See Also
 
-- [NSAdvertisingAttributionReportEndpoint](information-property-list/nsadvertisingattributionreportendpoint.md)
+### Network
+- [NSAdvertisingAttributionReportEndpoint](./nsadvertisingattributionreportendpoint.md)
   The URL where Private Click Measurement and SKAdNetwork send attribution information.
-- [NSAppTransportSecurity](information-property-list/nsapptransportsecurity.md)
+- [NSAppTransportSecurity](./nsapptransportsecurity.md)
   A description of changes made to the default security for HTTP connections.
-- [NSBonjourServices](information-property-list/nsbonjourservices.md)
+- [NSBonjourServices](./nsbonjourservices.md)
   Bonjour service types browsed by the app.
 
 

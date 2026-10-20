@@ -1,7 +1,8 @@
 # present
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Shows the player UI if it is not currently visible.
 
@@ -10,21 +11,22 @@ Shows the player UI if it is not currently visible.
 
 ## Declaration
 
-```swift
+```
 void present();
 ```
 
 ## See Also
 
-- [interactiveOverlayDismissable](player/2123044-interactiveoverlaydismissable.md)
+### Setting Up the Player
+- [interactiveOverlayDismissable](./api-2123044-interactiveoverlaydismissable.md)
   Determines if an interactive overlay can be dismissed using the Menu button.
-- [interactiveOverlayDocument](player/2123043-interactiveoverlaydocument.md)
+- [interactiveOverlayDocument](./api-2123043-interactiveoverlaydocument.md)
   A DOM document that is presented over the entire video player, including the transport bar.
-- [overlayDocument](player/1627320-overlaydocument.md)
+- [overlayDocument](./api-1627320-overlaydocument.md)
   The annotations for a video created by placing a DOM document over the video.
-- [Player](player/1627447-player.md)
+- [Player](./api-1627447-player.md)
   Creates a new player object.
-- [playlist](player/1627389-playlist.md)
+- [playlist](./api-1627389-playlist.md)
   The playlist for a player.
 
 

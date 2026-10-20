@@ -1,7 +1,8 @@
 # wrappedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying value referenced by the bound property.
 
@@ -22,7 +23,8 @@ var wrappedValue: Value { get nonmutating set }
 
 ## See Also
 
-- [var projectedValue: AccessibilityFocusState<Value>.Binding](accessibilityfocusstate/binding/projectedvalue.md)
+### Getting the state
+- [var projectedValue: AccessibilityFocusState<Value>.Binding](./projectedvalue.md)
   The currently focused element.
 
 

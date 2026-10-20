@@ -1,7 +1,8 @@
 # AppShortcutParameterPresentationTitleString
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -9,8 +10,10 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
+
+> **Deprecated**: Please use init(for:summary:optionsCollections:)
 
 ## Declaration
 
@@ -21,24 +24,25 @@ struct AppShortcutParameterPresentationTitleString<Intent, Value, Parameter, Par
 ## Topics
 
 ### Initializers
-- [init(String)](appshortcutparameterpresentationtitlestring/init(_:).md)
+- [init(String)](./appshortcutparameterpresentationtitlestring/init%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByStringInterpolation](../swift/expressiblebystringinterpolation.md)
-- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringInterpolation](../Swift/expressiblebystringinterpolation.md)
+- [ExpressibleByStringLiteral](../Swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../Swift/expressiblebyunicodescalarliteral.md)
 
 ## See Also
 
-- [struct AppShortcutParameterPresentation](appshortcutparameterpresentation.md)
+### App Shortcut parameter presentation
+- [struct AppShortcutParameterPresentation](./appshortcutparameterpresentation.md)
   Describes the presentation of an App Shortcut  for the provided parameter.
-- [struct AppShortcutParameterPresentationSummary](appshortcutparameterpresentationsummary.md)
+- [struct AppShortcutParameterPresentationSummary](./appshortcutparameterpresentationsummary.md)
   The summary of the presentation of an App Shortcut parameter.
-- [struct AppShortcutParameterPresentationSummaryString](appshortcutparameterpresentationsummarystring.md)
-- [struct AppShortcutParameterPresentationTitle](appshortcutparameterpresentationtitle.md)
+- [struct AppShortcutParameterPresentationSummaryString](./appshortcutparameterpresentationsummarystring.md)
+- [struct AppShortcutParameterPresentationTitle](./appshortcutparameterpresentationtitle.md)
   A struct that represents the title of the presentation of an App Shortcut.
 
 

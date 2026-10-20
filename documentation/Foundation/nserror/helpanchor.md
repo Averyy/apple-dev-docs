@@ -1,7 +1,8 @@
 # helpAnchor
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string to display in response to an alert panel help anchor button being pressed.
 
@@ -20,11 +21,15 @@ A string to display in response to an alert panel help anchor button being press
 var helpAnchor: String? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSString * helpAnchor;
+```
+
 #### Discussion
 
-The object in the user info dictionary for the key [`NSHelpAnchorErrorKey`](nshelpanchorerrorkey.md). If the user info dictionary doesn’t contain a value for [`NSHelpAnchorErrorKey`](nshelpanchorerrorkey.md), this property is `nil`.
+The object in the user info dictionary for the key [`NSHelpAnchorErrorKey`](../nshelpanchorerrorkey.md). If the user info dictionary doesn’t contain a value for [`NSHelpAnchorErrorKey`](../nshelpanchorerrorkey.md), this property is `nil`.
 
-If this property is non-`nil` for an error being presented by [`init(error:)`](https://developer.apple.com/documentation/appkit/nsalert/init(error:)), the alert panel will include a help anchor button that can display this string.
+If this property is non-`nil` for an error being presented by [`init(error:)`](../../AppKit/nsalert/init%28error%29.md), the alert panel will include a help anchor button that can display this string.
 
 
 ---

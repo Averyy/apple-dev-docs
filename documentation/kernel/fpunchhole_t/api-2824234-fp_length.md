@@ -1,14 +1,15 @@
 # fp_length
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12.4+
 
 ## Declaration
 
-```swift
+```c
 off_t fp_length;
 ```
 

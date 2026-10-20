@@ -1,7 +1,8 @@
 # AsyncThrowingMapSequence.Iterator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The iterator that produces elements of the map sequence.
 
@@ -20,24 +21,26 @@ The iterator that produces elements of the map sequence.
 struct Iterator
 ```
 
+Available when `Base` conforms to `AsyncSequence`.
+
 ## Topics
 
 ### Instance Methods
-- [func next() async throws -> Transformed?](asyncthrowingmapsequence/iterator/next.md)
+- [func next() async throws -> Transformed?](./iterator/next%28%29.md)
   Produces the next element in the map sequence.
-- [func next(isolation: isolated (any Actor)?) async throws -> Transformed?](asyncthrowingmapsequence/iterator/next(isolation:).md)
+- [func next(isolation: isolated (any Actor)?) async throws -> Transformed?](./iterator/next%28isolation%29.md)
   Produces the next element in the map sequence.
 ### Type Aliases
-- [AsyncThrowingMapSequence.Iterator.Element](asyncthrowingmapsequence/iterator/element.md)
+- [AsyncThrowingMapSequence.Iterator.Element](./iterator/element.md)
 ### Default Implementations
-- [AsyncIteratorProtocol Implementations](asyncthrowingmapsequence/iterator/asynciteratorprotocol-implementations.md)
+- [AsyncIteratorProtocol Implementations](./iterator/asynciteratorprotocol-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](asynciteratorprotocol.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [AsyncIteratorProtocol](../asynciteratorprotocol.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 
 ---

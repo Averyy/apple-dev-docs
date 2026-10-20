@@ -1,30 +1,32 @@
 # bReserved
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint8_t bReserved;
 ```
 
 ## See Also
 
-- [bLength](iousbdevicecapabilitybillboard/blength.md)
-- [bDescriptorType](iousbdevicecapabilitybillboard/bdescriptortype.md)
-- [bDevCapabilityType](iousbdevicecapabilitybillboard/bdevcapabilitytype.md)
-- [iAdditionalInfoURL](iousbdevicecapabilitybillboard/iadditionalinfourl.md)
-- [bNumberOfAlternateModes](iousbdevicecapabilitybillboard/bnumberofalternatemodes.md)
-- [bPreferredAlternateMode](iousbdevicecapabilitybillboard/bpreferredalternatemode.md)
-- [vCONNPower](iousbdevicecapabilitybillboard/vconnpower.md)
-- [bmConfigured](iousbdevicecapabilitybillboard/bmconfigured.md)
-- [bcdVersion](iousbdevicecapabilitybillboard/bcdversion.md)
-- [bAdditionalFailureInfo](iousbdevicecapabilitybillboard/badditionalfailureinfo.md)
-- [pAltConfigurations](iousbdevicecapabilitybillboard/paltconfigurations.md)
+### Accessing the Descriptor Properties
+- [bLength](./blength.md)
+- [bDescriptorType](./bdescriptortype.md)
+- [bDevCapabilityType](./bdevcapabilitytype.md)
+- [iAdditionalInfoURL](./iadditionalinfourl.md)
+- [bNumberOfAlternateModes](./bnumberofalternatemodes.md)
+- [bPreferredAlternateMode](./bpreferredalternatemode.md)
+- [vCONNPower](./vconnpower.md)
+- [bmConfigured](./bmconfigured.md)
+- [bcdVersion](./bcdversion.md)
+- [bAdditionalFailureInfo](./badditionalfailureinfo.md)
+- [pAltConfigurations](./paltconfigurations.md)
 
 
 ---

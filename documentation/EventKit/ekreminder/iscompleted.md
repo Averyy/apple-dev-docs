@@ -1,7 +1,8 @@
 # isCompleted
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value determining whether or not the reminder is marked completed.
 
@@ -19,25 +20,30 @@ A Boolean value determining whether or not the reminder is marked completed.
 var isCompleted: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isCompleted) BOOL completed;
+```
+
 #### Discussion
 
-Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) will set [`completionDate`](ekreminder/completiondate.md) to the current date; setting this property to [`false`](https://developer.apple.com/documentation/swift/false) will set `completionDate` to `nil`.
+Setting this property to [`true`](../../Swift/true.md) will set [`completionDate`](./completiondate.md) to the current date; setting this property to [`false`](../../Swift/false.md) will set `completionDate` to `nil`.
 
 ##### Special Considerations
 
-If the reminder was completed using a different client, you may encounter the case where this property is [`true`](https://developer.apple.com/documentation/swift/true), but `completionDate` is `nil`.
+If the reminder was completed using a different client, you may encounter the case where this property is [`true`](../../Swift/true.md), but `completionDate` is `nil`.
 
 ## See Also
 
-- [enum EKReminderPriority](ekreminderpriority.md)
+### Accessing Reminder Properties
+- [enum EKReminderPriority](../ekreminderpriority.md)
   The priority of the reminder.
-- [var priority: Int](ekreminder/priority.md)
+- [var priority: Int](./priority.md)
   The reminder’s priority.
-- [var startDateComponents: DateComponents?](ekreminder/startdatecomponents.md)
+- [var startDateComponents: DateComponents?](./startdatecomponents.md)
   The start date of the task.
-- [var dueDateComponents: DateComponents?](ekreminder/duedatecomponents.md)
+- [var dueDateComponents: DateComponents?](./duedatecomponents.md)
   The date by which the reminder should be completed.
-- [var completionDate: Date?](ekreminder/completiondate.md)
+- [var completionDate: Date?](./completiondate.md)
   The date on which the reminder was completed.
 
 

@@ -1,7 +1,8 @@
 # Entity.ConfigurationCatalog.ConfigurationSet
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of alternatives to choose from.
 
@@ -26,35 +27,36 @@ For example, a configuration set might contain configurations named `small`, `me
 ## Topics
 
 ### Creating a configuration set
-- [init(id: String, configurations: [Entity.ConfigurationCatalog.Configuration], defaultConfigurationId: String?) throws](entity/configurationcatalog/configurationset/init(id:configurations:defaultconfigurationid:)-5erwz.md)
+- [init(id: String, configurations: [Entity.ConfigurationCatalog.Configuration], defaultConfigurationId: String?) throws](./configurationset/init%28id,configurations,defaultconfigurationid%29-5erwz.md)
   Creates a configuration set from an ID, an array of configurations, and a default configuration ID.
-- [init(id: String, configurations: [Entity.ConfigurationCatalog.Configuration], defaultConfigurationId: String?) throws](entity/configurationcatalog/configurationset/init(id:configurations:defaultconfigurationid:)-5erwz.md)
+- [init(id: String, configurations: [Entity.ConfigurationCatalog.Configuration], defaultConfigurationId: String?) throws](./configurationset/init%28id,configurations,defaultconfigurationid%29-5erwz.md)
   Creates a configuration set from an ID, an array of configurations, and a default configuration ID.
 ### Accessing a configuration set’s name
-- [var id: String](entity/configurationcatalog/configurationset/id.md)
+- [var id: String](./configurationset/id.md)
   A name that identifies the configuration set.
 ### Accessing configurations in a configuration set
-- [var configurations: [String : Entity.ConfigurationCatalog.Configuration]](entity/configurationcatalog/configurationset/configurations.md)
+- [var configurations: [String : Entity.ConfigurationCatalog.Configuration]](./configurationset/configurations.md)
   The alternative configurations that are available in a set.
-- [var defaultConfiguration: Entity.ConfigurationCatalog.Configuration](entity/configurationcatalog/configurationset/defaultconfiguration.md)
+- [var defaultConfiguration: Entity.ConfigurationCatalog.Configuration](./configurationset/defaultconfiguration.md)
   The default configuration, if you don’t explicitly set one.
 ### Initializers
-- [init(id:configurations:defaultConfigurationId:)](entity/configurationcatalog/configurationset/init(id:configurations:defaultconfigurationid:).md)
+- [init(id:configurations:defaultConfigurationId:)](./configurationset/init%28id,configurations,defaultconfigurationid%29.md)
   Creates a configuration set from an ID, an array of configurations, and a default configuration ID.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Identifiable](../../../Swift/identifiable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Entity.ConfigurationCatalog.Configuration](entity/configurationcatalog/configuration.md)
+### Defining configuration choices
+- [Entity.ConfigurationCatalog.Configuration](./configuration.md)
   A type that represents an alternative that you can choose.
-- [Entity.ConfigurationCatalog.ConfigurationCombination](entity/configurationcatalog/configurationcombination.md)
+- [Entity.ConfigurationCatalog.ConfigurationCombination](./configurationcombination.md)
   A type that associates an entity with a combination of configurations.
 
 

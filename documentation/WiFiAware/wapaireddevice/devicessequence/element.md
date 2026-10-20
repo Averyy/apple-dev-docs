@@ -1,7 +1,8 @@
 # WAPairedDevice.DevicesSequence.Element
 
 **Framework**: Wi-Fi Aware  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A dictionary holding a snapshot of currently paired devices accessible to your app.
 
@@ -18,9 +19,10 @@ typealias Element = WAPairedDevice.Devices
 
 ## See Also
 
-- [WAPairedDevice.DevicesSequence.AsyncIterator](wapaireddevice/devicessequence/asynciterator.md)
+### Getting async updates
+- [WAPairedDevice.DevicesSequence.AsyncIterator](./asynciterator.md)
   An iterator for the sequence of devices.
-- [func makeAsyncIterator() -> WAPairedDevice.DevicesSequence.AsyncIterator](wapaireddevice/devicessequence/makeasynciterator.md)
+- [func makeAsyncIterator() -> WAPairedDevice.DevicesSequence.AsyncIterator](./makeasynciterator%28%29.md)
   Makes an asynchronous iterator that provides successive device snapshots when the list of paired devices known to the app changes.
 
 

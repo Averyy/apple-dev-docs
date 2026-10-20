@@ -1,7 +1,8 @@
 # launchRequirement
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 17.4+

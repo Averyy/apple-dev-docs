@@ -1,7 +1,8 @@
 # NWListener.ServiceRegistrationChange.remove(_:)
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The service is no longer advertising a specific endpoint.
 
@@ -22,7 +23,8 @@ case remove(NWEndpoint)
 
 ## See Also
 
-- [NWListener.ServiceRegistrationChange.add(_:)](nwlistener/serviceregistrationchange/add(_:).md)
+### Changes
+- [NWListener.ServiceRegistrationChange.add(_:)](./add%28_%29.md)
   The service is now advertising a new endpoint.
 
 

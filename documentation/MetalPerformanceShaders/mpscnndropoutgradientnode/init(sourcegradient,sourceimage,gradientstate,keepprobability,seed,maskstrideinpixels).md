@@ -1,7 +1,8 @@
 # init(sourceGradient:sourceImage:gradientState:keepProbability:seed:maskStrideInPixels:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, keepProbability: Float, seed: Int, maskStrideInPixels: MTLSize)
+```
+
+```objc
+- (instancetype) initWithSourceGradient:(MPSNNImageNode *) sourceGradient sourceImage:(MPSNNImageNode *) sourceImage gradientState:(MPSNNGradientStateNode *) gradientState keepProbability:(float) keepProbability seed:(NSUInteger) seed maskStrideInPixels:(MTLSize) maskStrideInPixels;
 ```
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Network  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Decode a decodable object from Data

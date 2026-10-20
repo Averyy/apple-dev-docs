@@ -1,7 +1,8 @@
 # AVAudioConverterOutputStatus.inputRanDry
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A status that indicates the method doesn’t have enough input available to satisfy the request.
 
@@ -20,17 +21,22 @@ A status that indicates the method doesn’t have enough input available to sati
 case inputRanDry
 ```
 
+```c
+AVAudioConverterOutputStatus_InputRanDry
+```
+
 #### Discussion
 
 The output buffer contains as much data as the framework can convert.
 
 ## See Also
 
-- [AVAudioConverterOutputStatus.haveData](avaudioconverteroutputstatus/havedata.md)
+### Interpreting conversion results
+- [AVAudioConverterOutputStatus.haveData](./havedata.md)
   A status that indicates that the method returns all of the requested data.
-- [AVAudioConverterOutputStatus.endOfStream](avaudioconverteroutputstatus/endofstream.md)
+- [AVAudioConverterOutputStatus.endOfStream](./endofstream.md)
   A status that indicates the method reaches the end of the stream, and doesn’t return any data.
-- [AVAudioConverterOutputStatus.error](avaudioconverteroutputstatus/error.md)
+- [AVAudioConverterOutputStatus.error](./error.md)
   A status that indicates the method encounters an error.
 
 

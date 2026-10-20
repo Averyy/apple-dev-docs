@@ -1,7 +1,8 @@
 # init(upstream:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that waits until after the stream finishes and then publishes the last element of the stream.
 

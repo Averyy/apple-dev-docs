@@ -1,7 +1,8 @@
 # connection(_:didReceive:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent as a connection loads data incrementally.
 
@@ -20,6 +21,10 @@ Sent as a connection loads data incrementally.
 optional func connection(_ connection: NSURLConnection, didReceive data: Data)
 ```
 
+```objc
+- (void) connection:(NSURLConnection *) connection didReceiveData:(NSData *) data;
+```
+
 #### Discussion
 
 This method provides the only way for an asynchronous delegate to retrieve the loaded data. It is the responsibility of the delegate to retain or copy this data as it is delivered.
@@ -31,7 +36,8 @@ This method provides the only way for an asynchronous delegate to retrieve the l
 
 ## See Also
 
-- [func connection(NSURLConnection, didReceive: URLResponse)](nsurlconnectiondatadelegate/connection(_:didreceive:)-8t66w.md)
+### Handling Incoming Data
+- [func connection(NSURLConnection, didReceive: URLResponse)](./connection%28_,didreceive%29-8t66w.md)
   Sent when the connection has received sufficient data to construct the URL response for its request.
 
 

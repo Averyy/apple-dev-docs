@@ -1,14 +1,19 @@
 # switch_to_old_console
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
+void switch_to_old_console(int old_console);
+```
+
+```c
 void switch_to_old_console(int);
 ```
 

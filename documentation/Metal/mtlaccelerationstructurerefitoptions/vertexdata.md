@@ -1,7 +1,8 @@
 # vertexData
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +16,10 @@
 
 ```swift
 static var vertexData: MTLAccelerationStructureRefitOptions { get }
+```
+
+```c
+MTLAccelerationStructureRefitOptionVertexData
 ```
 
 

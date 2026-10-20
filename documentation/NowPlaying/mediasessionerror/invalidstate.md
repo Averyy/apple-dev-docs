@@ -1,7 +1,8 @@
 # MediaSessionError.invalidState
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The operation is not supported in the current state.
 

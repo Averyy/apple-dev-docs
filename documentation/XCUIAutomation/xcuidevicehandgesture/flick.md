@@ -1,7 +1,8 @@
 # XCUIDeviceHandGesture.flick
 
 **Framework**: XCUIAutomation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - watchOS 26.0+
@@ -11,6 +12,10 @@
 
 ```swift
 case flick
+```
+
+```c
+XCUIDeviceHandGestureFlick
 ```
 
 

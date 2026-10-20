@@ -1,7 +1,8 @@
 # init(stringLiteral:)
 
 **Framework**: PackageDescription  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a trait with the name you provide.
 

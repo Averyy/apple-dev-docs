@@ -1,7 +1,8 @@
 # action
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The action method to call when the gesture is recognized.
 
@@ -12,6 +13,10 @@ The action method to call when the gesture is recognized.
 
 ```swift
 var action: Selector? { get set }
+```
+
+```objc
+@property (nullable) SEL action;
 ```
 
 #### Discussion
@@ -38,7 +43,8 @@ For continuous gestures, it is recommended that you use an action method that ac
 
 ## See Also
 
-- [var target: AnyObject?](nsgesturerecognizer/target.md)
+### Accessing the target and action
+- [var target: AnyObject?](./target.md)
   The object that implements the action method.
 
 

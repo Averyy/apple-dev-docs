@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Insert elements after an identified action.
@@ -17,6 +18,10 @@ Insert elements after an identified action.
 
 ```swift
 func insertElements(_ insertedElements: [UIMenuElement], afterAction siblingIdentifier: UIAction.Identifier)
+```
+
+```objc
+- (void) insertElements:(NSArray<UIMenuElement *> *) insertedElements afterActionForIdentifier:(UIActionIdentifier) siblingIdentifier;
 ```
 
 ## Parameters

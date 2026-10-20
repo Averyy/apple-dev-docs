@@ -1,7 +1,8 @@
 # priority
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout priority of the subview.
 
@@ -22,7 +23,7 @@ var priority: Double { get }
 
 #### Discussion
 
-If you define a custom layout type using the [`Layout`](layout.md) protocol, you can read this value from subviews and use the value when deciding how to assign space to subviews. For example, you can read all of the subview priorities into an array before placing the subviews in a custom layout type called `BasicVStack`:
+If you define a custom layout type using the [`Layout`](../layout.md) protocol, you can read this value from subviews and use the value when deciding how to assign space to subviews. For example, you can read all of the subview priorities into an array before placing the subviews in a custom layout type called `BasicVStack`:
 
 ```swift
 extension BasicVStack {
@@ -41,7 +42,7 @@ extension BasicVStack {
 }
 ```
 
-Set the layout priority for a view that appears in your layout by applying the [`layoutPriority(_:)`](view/layoutpriority(_:).md) view modifier. For example, you can assign two different priorities to views that you arrange with `BasicVStack`:
+Set the layout priority for a view that appears in your layout by applying the [`layoutPriority(_:)`](../view/layoutpriority%28_%29.md) view modifier. For example, you can assign two different priorities to views that you arrange with `BasicVStack`:
 
 ```swift
 BasicVStack {
@@ -54,11 +55,12 @@ BasicVStack {
 
 ## See Also
 
-- [func dimensions(in: ProposedViewSize) -> ViewDimensions](layoutsubview/dimensions(in:).md)
+### Getting subview characteristics
+- [func dimensions(in: ProposedViewSize) -> ViewDimensions](./dimensions%28in%29.md)
   Asks the subview for its dimensions and alignment guides.
-- [func sizeThatFits(ProposedViewSize) -> CGSize](layoutsubview/sizethatfits(_:).md)
+- [func sizeThatFits(ProposedViewSize) -> CGSize](./sizethatfits%28_%29.md)
   Asks the subview for its size.
-- [var spacing: ViewSpacing](layoutsubview/spacing.md)
+- [var spacing: ViewSpacing](./spacing.md)
   The subviews’s preferred spacing values.
 
 

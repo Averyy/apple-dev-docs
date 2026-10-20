@@ -1,7 +1,8 @@
 # accountManager(_:shouldAuthenticateAccountProviderWithIdentifier:)
 
 **Framework**: Video Subscriber Account  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate whether to authenticate the user with the selected provider.
 
@@ -9,7 +10,7 @@ Asks the delegate whether to authenticate the user with the selected provider.
 - iOS 10.0+
 - iPadOS 10.0+
 - Mac Catalyst 10.0+
-- macOS ?+
+- macOS
 - tvOS 10.0+
 - visionOS 1.0+
 
@@ -19,9 +20,13 @@ Asks the delegate whether to authenticate the user with the selected provider.
 optional func accountManager(_ accountManager: VSAccountManager, shouldAuthenticateAccountProviderWithIdentifier accountProviderIdentifier: String) -> Bool
 ```
 
+```objc
+- (BOOL) accountManager:(VSAccountManager *) accountManager shouldAuthenticateAccountProviderWithIdentifier:(NSString *) accountProviderIdentifier;
+```
+
 #### Return Value
 
-Return [`true`](https://developer.apple.com/documentation/swift/true) to attempt authentication with the selected provider; otherwise, return [`false`](https://developer.apple.com/documentation/swift/false) to respond with an unsupported provider error.
+Return [`true`](../../Swift/true.md) to attempt authentication with the selected provider; otherwise, return [`false`](../../Swift/false.md) to respond with an unsupported provider error.
 
 #### Discussion
 

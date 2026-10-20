@@ -1,7 +1,8 @@
 # model
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying Core ML model of the action classifier stored in memory.
 
@@ -16,7 +17,8 @@ var model: MLModel { get }
 
 ## See Also
 
-- [let modelParameters: MLActionClassifier.ModelParameters](mlactionclassifier/modelparameters-swift.property.md)
+### Inspecting an action classifier model
+- [let modelParameters: MLActionClassifier.ModelParameters](./modelparameters-swift.property.md)
   The model configuration parameters the action classifier used during its training session.
 
 

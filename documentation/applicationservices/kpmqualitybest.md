@@ -1,7 +1,8 @@
 # kPMQualityBest
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies to get the best print quality for all objects and photos on a page.
 

@@ -1,7 +1,8 @@
 # capacity
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of elements that the array can contain without allocating new storage.
 
@@ -38,9 +39,10 @@ numbers.append(contentsOf: stride(from: 60, through: 100, by: 10))
 
 ## See Also
 
-- [var isEmpty: Bool](array/isempty.md)
+### Inspecting an Array
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value indicating whether the collection is empty.
-- [var count: Int](array/count.md)
+- [var count: Int](./count.md)
   The number of elements in the array.
 
 

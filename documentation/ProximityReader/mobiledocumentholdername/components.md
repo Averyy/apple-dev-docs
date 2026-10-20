@@ -1,7 +1,8 @@
 # components
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A component representation of the name.
 

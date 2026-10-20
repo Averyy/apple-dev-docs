@@ -1,14 +1,15 @@
 # vfs_get_notify_attributes
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 int vfs_get_notify_attributes(struct vnode_attr *vap);
 ```
 

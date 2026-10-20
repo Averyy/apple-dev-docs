@@ -1,7 +1,8 @@
 # title
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title of the page this item represents.
 

@@ -1,7 +1,8 @@
 # colors
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of colors. Must contain `width x height` elements.
 

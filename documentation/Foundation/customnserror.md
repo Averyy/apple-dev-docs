@@ -1,7 +1,8 @@
 # CustomNSError
 
 **Framework**: Foundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A specialized error that provides a domain, error code, and user-info dictionary.
 
@@ -23,35 +24,36 @@ protocol CustomNSError : Error
 ## Topics
 
 ### Instance Properties
-- [var errorCode: Int](customnserror/errorcode.md)
+- [var errorCode: Int](./customnserror/errorcode.md)
   The error code within the given domain.
-- [var errorUserInfo: [String : Any]](customnserror/erroruserinfo.md)
+- [var errorUserInfo: [String : Any]](./customnserror/erroruserinfo.md)
   The user-info dictionary.
 ### Type Properties
-- [static var errorDomain: String](customnserror/errordomain.md)
+- [static var errorDomain: String](./customnserror/errordomain.md)
   The domain of the error.
 
 ## Relationships
 
 ### Inherits From
-- [Error](../swift/error.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Error](../Swift/error.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [CocoaError](cocoaerror.md)
-- [MachError](macherror.md)
-- [POSIXError](posixerror.md)
-- [URLError](urlerror.md)
+- [CocoaError](./cocoaerror.md)
+- [MachError](./macherror.md)
+- [POSIXError](./posixerror.md)
+- [URLError](./urlerror.md)
 
 ## See Also
 
-- [protocol Error](../swift/error.md)
+### User-Relevant Errors
+- [protocol Error](../Swift/error.md)
   A type representing an error value that can be thrown.
-- [class NSError](nserror.md)
+- [class NSError](./nserror.md)
   Information about an error condition including a domain, a domain-specific error code, and application-specific information.
-- [protocol LocalizedError](localizederror.md)
+- [protocol LocalizedError](./localizederror.md)
   A specialized error that provides localized messages describing the error and why it occurred.
-- [protocol RecoverableError](recoverableerror.md)
+- [protocol RecoverableError](./recoverableerror.md)
   A specialized error that may be recoverable by presenting several potential recovery options to the user.
 
 

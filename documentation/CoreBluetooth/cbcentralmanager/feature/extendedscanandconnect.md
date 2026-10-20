@@ -1,7 +1,8 @@
 # extendedScanAndConnect
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The hardware supports extended scans and enhanced connection creation.
 
@@ -17,6 +18,10 @@ The hardware supports extended scans and enhanced connection creation.
 
 ```swift
 static var extendedScanAndConnect: CBCentralManager.Feature { get }
+```
+
+```c
+CBCentralManagerFeatureExtendedScanAndConnect
 ```
 
 

@@ -1,7 +1,8 @@
 # receive(completionHandler:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reads a WebSocket message once all the frames of the message are available.
 
@@ -23,19 +24,20 @@ func receive(completionHandler: @escaping @Sendable (Result<URLSessionWebSocketT
 
 #### Discussion
 
-If the task reaches the [`maximumMessageSize`](urlsessionwebsockettask/maximummessagesize.md) while buffering the frames, this call fails with an error.
+If the task reaches the [`maximumMessageSize`](./maximummessagesize.md) while buffering the frames, this call fails with an error.
 
 ## Parameters
 
-- `completionHandler`: A closure that receives two parameters: the WebSocket message, and an [`NSError`](nserror.md) that indicates an error encountered while receiving the message. The error is `nil` if no error occurred.
+- `completionHandler`: A closure that receives two parameters: the WebSocket message, and an [`NSError`](../nserror.md) that indicates an error encountered while receiving the message. The error is `nil` if no error occurred.
 
 ## See Also
 
-- [func send(URLSessionWebSocketTask.Message, completionHandler: ((any Error)?) -> Void)](urlsessionwebsockettask/send(_:completionhandler:).md)
+### Sending and receiving data
+- [func send(URLSessionWebSocketTask.Message, completionHandler: ((any Error)?) -> Void)](./send%28_,completionhandler%29.md)
   Sends a WebSocket message, receiving the result in a completion handler.
-- [URLSessionWebSocketTask.Message](urlsessionwebsockettask/message.md)
+- [URLSessionWebSocketTask.Message](./message.md)
   An enumeration of the types of messages sent and received.
-- [var maximumMessageSize: Int](urlsessionwebsockettask/maximummessagesize.md)
+- [var maximumMessageSize: Int](./maximummessagesize.md)
   The maximum number of bytes to buffer before the receive call fails with an error.
 
 

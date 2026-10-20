@@ -1,7 +1,8 @@
 # init(queue:)
 
 **Framework**: PushKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a push registry with the specified dispatch queue.
 
@@ -17,6 +18,10 @@ Creates a push registry with the specified dispatch queue.
 
 ```swift
 init(queue: dispatch_queue_t?)
+```
+
+```objc
+- (instancetype) initWithQueue:(dispatch_queue_t) queue;
 ```
 
 #### Return Value

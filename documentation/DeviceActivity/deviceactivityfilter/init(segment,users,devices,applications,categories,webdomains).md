@@ -1,7 +1,8 @@
 # init(segment:users:devices:applications:categories:webDomains:)
 
 **Framework**: Device Activity  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new filter for the specified users and devices.
 

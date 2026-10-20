@@ -1,7 +1,8 @@
 # layer
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layer associated with the remote client.
 
@@ -15,9 +16,14 @@ The layer associated with the remote client.
 var layer: CALayer? { get set }
 ```
 
+```objc
+@property (strong, nullable) CALayer * layer;
+```
+
 ## See Also
 
-- [var clientId: UInt32](caremotelayerclient/clientid.md)
+### Retrieving Client Properties
+- [var clientId: UInt32](./clientid.md)
   The ID of the remote layer client.
 
 

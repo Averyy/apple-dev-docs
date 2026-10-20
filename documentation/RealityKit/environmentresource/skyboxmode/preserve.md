@@ -1,7 +1,8 @@
 # preserve
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Preserve and reference the original skybox cube texture.
 
@@ -21,7 +22,8 @@ static var preserve: EnvironmentResource.SkyboxMode { get }
 
 ## See Also
 
-- [static var discard: EnvironmentResource.SkyboxMode](environmentresource/skyboxmode/discard.md)
+### Choosing a skybox mode
+- [static var discard: EnvironmentResource.SkyboxMode](./discard.md)
   Only keep a low-resolution proxy of the skybox, reducing memory usage.
 
 

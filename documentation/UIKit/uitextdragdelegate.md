@@ -1,7 +1,8 @@
 # UITextDragDelegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface for customizing the behavior of a drag activity for a text view.
 
@@ -18,39 +19,44 @@ The interface for customizing the behavior of a drag activity for a text view.
 protocol UITextDragDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol UITextDragDelegate <NSObject>
+```
+
 ## Topics
 
 ### Handling drag session notifications
-- [func textDraggableView(any UIView & UITextDraggable, dragSessionWillBegin: any UIDragSession)](uitextdragdelegate/textdraggableview(_:dragsessionwillbegin:).md)
+- [func textDraggableView(any UIView & UITextDraggable, dragSessionWillBegin: any UIDragSession)](./uitextdragdelegate/textdraggableview%28_,dragsessionwillbegin%29.md)
   Tells the delegate that the text has been lifted out of the text view and the user is beginning to drag the text.
-- [func textDraggableView(any UIView & UITextDraggable, dragSessionDidEnd: any UIDragSession, with: UIDropOperation)](uitextdragdelegate/textdraggableview(_:dragsessiondidend:with:).md)
+- [func textDraggableView(any UIView & UITextDraggable, dragSessionDidEnd: any UIDragSession, with: UIDropOperation)](./uitextdragdelegate/textdraggableview%28_,dragsessiondidend,with%29.md)
   Tells the delegate that the drag session has ended.
 ### Providing additional animations
-- [func textDraggableView(any UIView & UITextDraggable, willAnimateLiftWith: any UIDragAnimating, session: any UIDragSession)](uitextdragdelegate/textdraggableview(_:willanimateliftwith:session:).md)
+- [func textDraggableView(any UIView & UITextDraggable, willAnimateLiftWith: any UIDragAnimating, session: any UIDragSession)](./uitextdragdelegate/textdraggableview%28_,willanimateliftwith,session%29.md)
   Tells the delegate when the lift animation is about to begin, and gives you a chance to animate additional changes alongside the system animation.
 ### Providing custom drag items
-- [func textDraggableView(any UIView & UITextDraggable, itemsForDrag: any UITextDragRequest) -> [UIDragItem]](uitextdragdelegate/textdraggableview(_:itemsfordrag:).md)
+- [func textDraggableView(any UIView & UITextDraggable, itemsForDrag: any UITextDragRequest) -> [UIDragItem]](./uitextdragdelegate/textdraggableview%28_,itemsfordrag%29.md)
   Asks the delegate for custom drag items from a text view.
 ### Providing a custom preview for a drag activity
-- [func textDraggableView(any UIView & UITextDraggable, dragPreviewForLiftingItem: UIDragItem, session: any UIDragSession) -> UITargetedDragPreview?](uitextdragdelegate/textdraggableview(_:dragpreviewforliftingitem:session:).md)
+- [func textDraggableView(any UIView & UITextDraggable, dragPreviewForLiftingItem: UIDragItem, session: any UIDragSession) -> UITargetedDragPreview?](./uitextdragdelegate/textdraggableview%28_,dragpreviewforliftingitem,session%29.md)
   Asks the delegate for the preview to show during the lift animation that happens when a user begins to drag an item from a text view.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol UITextDropDelegate](uitextdropdelegate.md)
+### Text view additions
+- [protocol UITextDropDelegate](./uitextdropdelegate.md)
   The interface for configuring a text view’s drop behavior.
-- [protocol UITextDraggable](uitextdraggable.md)
+- [protocol UITextDraggable](./uitextdraggable.md)
   The interface that determines if a text view is a drag source.
-- [struct UITextDragOptions](uitextdragoptions.md)
+- [struct UITextDragOptions](./uitextdragoptions.md)
   A set of options that determine the behavior of a draggable text view.
-- [protocol UITextDroppable](uitextdroppable.md)
+- [protocol UITextDroppable](./uitextdroppable.md)
   The interface that determines if a text view is a drop destination.
-- [enum UITextDropEditability](uitextdropeditability.md)
+- [enum UITextDropEditability](./uitextdropeditability.md)
   The text-drop editability styles for noneditable text views.
 
 

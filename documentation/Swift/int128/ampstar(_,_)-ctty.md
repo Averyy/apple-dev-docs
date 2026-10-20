@@ -1,7 +1,8 @@
 # &*(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns the product of the two given values, wrapping the result in case of any overflow.
 
@@ -31,7 +32,7 @@ let y: Int8 = 10 &* 50
 // y == -12 (after overflow)
 ```
 
-For more about arithmetic with overflow operators, see [`Overflow Operators`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/AdvancedOperators.html#ID37) in *[`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/)*.
+For more about arithmetic with overflow operators, see [Overflow Operators](https://docs.swift.org/swift-book/LanguageGuide/AdvancedOperators.html#ID37) in *[The Swift Programming Language](https://docs.swift.org/swift-book/)*.
 
 ## Parameters
 

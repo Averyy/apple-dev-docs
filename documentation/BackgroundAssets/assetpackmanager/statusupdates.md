@@ -1,7 +1,8 @@
 # statusUpdates
 
 **Framework**: Background Assets  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An asynchronous sequence of download-status updates for all asset packs.
 
@@ -25,10 +26,11 @@ The sequence never finishes.
 
 ## See Also
 
+### Tracking downloads
 - [func statusUpdates(forAssetPackWithID: String) -> some Sendable & AsyncSequence<AssetPackManager.DownloadStatusUpdate, Never>
-](assetpackmanager/statusupdates(forassetpackwithid:).md)
+](./statusupdates%28forassetpackwithid%29.md)
   Returns an asynchronous sequence of download-status updates for the asset pack with the specified ID.
-- [AssetPackManager.DownloadStatusUpdate](assetpackmanager/downloadstatusupdate.md)
+- [AssetPackManager.DownloadStatusUpdate](./downloadstatusupdate.md)
   Statuses of an asset-pack download.
 
 

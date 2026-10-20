@@ -1,7 +1,8 @@
 # UnitPoint3D
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A normalized 3D point in a view’s coordinate space.
 
@@ -23,7 +24,7 @@ Use a 3D unit point to represent a three-dimensional location in a view without 
 let unitPoint = UnitPoint3D(x: 0.5, y: 0.5, z: 0.5)
 ```
 
-> **Note**: If you need a two-dimensional unit point, use [`UnitPoint`](unitpoint.md) instead.
+> **Note**: If you need a two-dimensional unit point, use [`UnitPoint`](./unitpoint.md) instead.
 
 To project the unit point into the rendered view’s coordinate space, multiply each component of the unit point with the corresponding component of the view’s size:
 
@@ -35,124 +36,125 @@ let projectedPoint = Point3D(
 )
 ```
 
-You can perform this calculation yourself if you happen to know a view’s size, or if you want to use a unit point for some custom purpose, but SwiftUI typically does this for you to carry out operations that you request, like when you rotate a view with the [`rotation3DEffect(_:anchor:)`](view/rotation3deffect(_:anchor:).md) modifier and indicate the anchor point that you want to rotate the view around.
+You can perform this calculation yourself if you happen to know a view’s size, or if you want to use a unit point for some custom purpose, but SwiftUI typically does this for you to carry out operations that you request, like when you rotate a view with the [`rotation3DEffect(_:anchor:)`](./view/rotation3deffect%28_,anchor%29.md) modifier and indicate the anchor point that you want to rotate the view around.
 
-You can create custom unit points with explicit values, like the example above, or you can use one of the built-in unit points that SwiftUI provides, like [`zero`](unitpoint3d/zero.md), [`center`](unitpoint3d/center.md), or [`topTrailing`](unitpoint3d/toptrailing.md). The built-in values correspond to common anchor points that you might want to refer to, like the center of one of a view’s edges.
+You can create custom unit points with explicit values, like the example above, or you can use one of the built-in unit points that SwiftUI provides, like [`zero`](./unitpoint3d/zero.md), [`center`](./unitpoint3d/center.md), or [`topTrailing`](./unitpoint3d/toptrailing.md). The built-in values correspond to common anchor points that you might want to refer to, like the center of one of a view’s edges.
 
 > **Note**: A unit point with one or more components outside the range `[0, 1]` projects to a point outside of the view.
 
-##### Layout Direction
+##### Layout direction
 
-When a person configures their device to use a left-to-right language like English, the system places the view’s origin in its top-left-back corner, with positive x toward the right, positive y toward the bottom of the view, and positive z toward the front. In a right-to-left environment, the origin moves to the upper-right-back corner, and the positive x direction changes to be toward the left. You don’t typically need to do anything to handle this change, because SwiftUI applies the change to all aspects of the system. For example, see the discussion about layout direction in [`HorizontalAlignment`](horizontalalignment.md).
+When a person configures their device to use a left-to-right language like English, the system places the view’s origin in its top-left-back corner, with positive x toward the right, positive y toward the bottom of the view, and positive z toward the front. In a right-to-left environment, the origin moves to the upper-right-back corner, and the positive x direction changes to be toward the left. You don’t typically need to do anything to handle this change, because SwiftUI applies the change to all aspects of the system. For example, see the discussion about layout direction in [`HorizontalAlignment`](./horizontalalignment.md).
 
-It’s important to test your app for the different locales that you distribute your app in. For more information about the localization process, see [`Localization`](https://developer.apple.com/documentation/xcode/localization).
+It’s important to test your app for the different locales that you distribute your app in. For more information about the localization process, see [Localization](../Xcode/localization.md).
 
 ## Topics
 
 ### Getting the origin
-- [static let origin: UnitPoint3D](unitpoint3d/origin.md)
+- [static let origin: UnitPoint3D](./unitpoint3d/origin.md)
   The origin of a view.
-- [static let zero: UnitPoint3D](unitpoint3d/zero.md)
+- [static let zero: UnitPoint3D](./unitpoint3d/zero.md)
   A 3D unit point with all components equal to zero.
 ### Getting top points
-- [static let topLeadingBack: UnitPoint3D](unitpoint3d/topleadingback.md)
+- [static let topLeadingBack: UnitPoint3D](./unitpoint3d/topleadingback.md)
   A point that’s in the top-leading-back corner of a view.
-- [static let topLeading: UnitPoint3D](unitpoint3d/topleading.md)
+- [static let topLeading: UnitPoint3D](./unitpoint3d/topleading.md)
   A point that’s centered in the depth dimension on the top-leading edge of a view.
-- [static let topLeadingFront: UnitPoint3D](unitpoint3d/topleadingfront.md)
+- [static let topLeadingFront: UnitPoint3D](./unitpoint3d/topleadingfront.md)
   A point that’s in the top-leading-front corner of a view.
-- [static let topBack: UnitPoint3D](unitpoint3d/topback.md)
+- [static let topBack: UnitPoint3D](./unitpoint3d/topback.md)
   A point that’s centered horizontally on the top-back edge of a view.
-- [static let top: UnitPoint3D](unitpoint3d/top.md)
+- [static let top: UnitPoint3D](./unitpoint3d/top.md)
   A point that’s centered horizontally and in the depth dimension on the top face of a view.
-- [static let topFront: UnitPoint3D](unitpoint3d/topfront.md)
+- [static let topFront: UnitPoint3D](./unitpoint3d/topfront.md)
   A point that’s centered horizontally on the top-front edge of a view.
-- [static let topTrailingBack: UnitPoint3D](unitpoint3d/toptrailingback.md)
+- [static let topTrailingBack: UnitPoint3D](./unitpoint3d/toptrailingback.md)
   A point that’s in the top-trailing-back corner of a view.
-- [static let topTrailing: UnitPoint3D](unitpoint3d/toptrailing.md)
+- [static let topTrailing: UnitPoint3D](./unitpoint3d/toptrailing.md)
   A point that’s centered in the depth dimension on the top-trailing edge of a view.
-- [static let topTrailingFront: UnitPoint3D](unitpoint3d/toptrailingfront.md)
+- [static let topTrailingFront: UnitPoint3D](./unitpoint3d/toptrailingfront.md)
   A point that’s in the top-trailing-front corner of a view.
 ### Getting middle points
-- [static let leadingBack: UnitPoint3D](unitpoint3d/leadingback.md)
+- [static let leadingBack: UnitPoint3D](./unitpoint3d/leadingback.md)
   A point that’s centered vertically on the leading-back edge of a view.
-- [static let leading: UnitPoint3D](unitpoint3d/leading.md)
+- [static let leading: UnitPoint3D](./unitpoint3d/leading.md)
   A point that’s centered vertically and in the depth dimension on the leading face of a view.
-- [static let leadingFront: UnitPoint3D](unitpoint3d/leadingfront.md)
+- [static let leadingFront: UnitPoint3D](./unitpoint3d/leadingfront.md)
   A point that’s centered vertically on the leading-front edge of a view.
-- [static let back: UnitPoint3D](unitpoint3d/back.md)
+- [static let back: UnitPoint3D](./unitpoint3d/back.md)
   A point that’s centered horizontally and vertically on the back face of a view.
-- [static let center: UnitPoint3D](unitpoint3d/center.md)
+- [static let center: UnitPoint3D](./unitpoint3d/center.md)
   A point that’s centered in a view.
-- [static let front: UnitPoint3D](unitpoint3d/front.md)
+- [static let front: UnitPoint3D](./unitpoint3d/front.md)
   A point that’s centered horizontally and vertically on the front face of a view.
-- [static let trailingBack: UnitPoint3D](unitpoint3d/trailingback.md)
+- [static let trailingBack: UnitPoint3D](./unitpoint3d/trailingback.md)
   A point that’s centered vertically on the trailing-back edge of a view.
-- [static let trailing: UnitPoint3D](unitpoint3d/trailing.md)
+- [static let trailing: UnitPoint3D](./unitpoint3d/trailing.md)
   A point that’s centered vertically and in the depth dimension on the trailing face of a view.
-- [static let trailingFront: UnitPoint3D](unitpoint3d/trailingfront.md)
+- [static let trailingFront: UnitPoint3D](./unitpoint3d/trailingfront.md)
   A point that’s centered vertically on the trailing-front edge of a view.
 ### Getting bottom points
-- [static let bottomLeadingBack: UnitPoint3D](unitpoint3d/bottomleadingback.md)
+- [static let bottomLeadingBack: UnitPoint3D](./unitpoint3d/bottomleadingback.md)
   A point that’s in the bottom-leading-back corner of a view.
-- [static let bottomLeading: UnitPoint3D](unitpoint3d/bottomleading.md)
+- [static let bottomLeading: UnitPoint3D](./unitpoint3d/bottomleading.md)
   A point that’s centered in the depth dimension on the bottom-leading edge of a view.
-- [static let bottomLeadingFront: UnitPoint3D](unitpoint3d/bottomleadingfront.md)
+- [static let bottomLeadingFront: UnitPoint3D](./unitpoint3d/bottomleadingfront.md)
   A point that’s in the bottom-leading-front corner of a view.
-- [static let bottomBack: UnitPoint3D](unitpoint3d/bottomback.md)
+- [static let bottomBack: UnitPoint3D](./unitpoint3d/bottomback.md)
   A point that’s centered horizontally on the bottom-back edge of a view.
-- [static let bottom: UnitPoint3D](unitpoint3d/bottom.md)
+- [static let bottom: UnitPoint3D](./unitpoint3d/bottom.md)
   A point that’s centered horizontally and in the depth dimension on the bottom face of a view.
-- [static let bottomFront: UnitPoint3D](unitpoint3d/bottomfront.md)
+- [static let bottomFront: UnitPoint3D](./unitpoint3d/bottomfront.md)
   A point that’s centered horizontally on the bottom-front edge of a view.
-- [static let bottomTrailingBack: UnitPoint3D](unitpoint3d/bottomtrailingback.md)
+- [static let bottomTrailingBack: UnitPoint3D](./unitpoint3d/bottomtrailingback.md)
   A point that’s in the bottom-trailing-back corner of a view.
-- [static let bottomTrailing: UnitPoint3D](unitpoint3d/bottomtrailing.md)
+- [static let bottomTrailing: UnitPoint3D](./unitpoint3d/bottomtrailing.md)
   A point that’s centered in the depth dimension on the bottom-trailing edge of a view.
-- [static let bottomTrailingFront: UnitPoint3D](unitpoint3d/bottomtrailingfront.md)
+- [static let bottomTrailingFront: UnitPoint3D](./unitpoint3d/bottomtrailingfront.md)
   A point that’s in the bottom-trailing-front corner of a view.
 ### Creating a point
-- [init()](unitpoint3d/init.md)
+- [init()](./unitpoint3d/init%28%29.md)
   Creates a 3D unit point at the origin.
-- [init(x: CGFloat, y: CGFloat, z: CGFloat)](unitpoint3d/init(x:y:z:).md)
+- [init(x: CGFloat, y: CGFloat, z: CGFloat)](./unitpoint3d/init%28x,y,z%29.md)
   Creates a 3D unit point with the specified offsets.
 ### Getting the point’s coordinates
-- [var x: CGFloat](unitpoint3d/x.md)
+- [var x: CGFloat](./unitpoint3d/x.md)
   The normalized distance from the origin to the point in the horizontal direction.
-- [var y: CGFloat](unitpoint3d/y.md)
+- [var y: CGFloat](./unitpoint3d/y.md)
   The normalized distance from the origin to the point in the vertical dimension.
-- [var z: CGFloat](unitpoint3d/z.md)
+- [var z: CGFloat](./unitpoint3d/z.md)
   The normalized distance from the origin to the point in the depth dimension.
 
 ## Relationships
 
 ### Conforms To
-- [Animatable](animatable.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Animatable](./animatable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum Axis](axis.md)
+### Accessing geometric constructs
+- [enum Axis](./axis.md)
   The horizontal or vertical dimension in a 2D coordinate system.
-- [struct Angle](angle.md)
+- [struct Angle](./angle.md)
   A geometric angle whose value you access in either radians or degrees.
-- [struct UnitPoint](unitpoint.md)
+- [struct UnitPoint](./unitpoint.md)
   A normalized 2D point in a view’s coordinate space.
-- [struct Anchor](anchor.md)
+- [struct Anchor](./anchor.md)
   An opaque value derived from an anchor source and a particular view.
-- [protocol DepthAlignmentID](depthalignmentid.md)
+- [protocol DepthAlignmentID](./depthalignmentid.md)
   A type that defines a custom depth alignment guide.
-- [struct Alignment3D](alignment3d.md)
+- [struct Alignment3D](./alignment3d.md)
   An alignment in all three axes.
-- [struct GeometryProxyCoordinateSpace3D](geometryproxycoordinatespace3d.md)
+- [struct GeometryProxyCoordinateSpace3D](./geometryproxycoordinatespace3d.md)
   A representation of a `GeometryProxy3D` which can be used for `CoordinateSpace3D` based conversions.
 
 

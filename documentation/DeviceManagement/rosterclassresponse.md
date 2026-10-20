@@ -1,7 +1,8 @@
 # RosterClassResponse
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response that contains a list of classes.
 
@@ -10,7 +11,7 @@ The response that contains a list of classes.
 
 ## Declaration
 
-```swift
+```
 object RosterClassResponse
 ```
 
@@ -22,7 +23,8 @@ object RosterClassResponse
 
 ## See Also
 
-- [object RosterRequest](rosterrequest.md)
+### Request and Response
+- [object RosterRequest](./rosterrequest.md)
   The request for a list of classes.
 
 

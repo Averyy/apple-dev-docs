@@ -1,7 +1,8 @@
 # intersection(_:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the intersection of two sizes.
 
@@ -11,7 +12,7 @@ Returns the intersection of two sizes.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

@@ -1,7 +1,8 @@
 # CAEDRMetadata
 
 **Framework**: Core Animation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Metadata describing how extended dynamic range (EDR) values should be tone mapped.
 
@@ -18,53 +19,58 @@ Metadata describing how extended dynamic range (EDR) values should be tone mappe
 class CAEDRMetadata
 ```
 
+```objc
+@interface CAEDRMetadata : NSObject
+```
+
 #### Overview
 
-If you need specific tone-mapping behavior, set the [`edrMetadata`](cametallayer/edrmetadata.md) property of a [`CAMetalLayer`](cametallayer.md) to point to an instance of this class.
+If you need specific tone-mapping behavior, set the [`edrMetadata`](./cametallayer/edrmetadata.md) property of a [`CAMetalLayer`](./cametallayer.md) to point to an instance of this class.
 
 ## Topics
 
 ### Retrieving Hybrid-Log Gamma Metadata
-- [class var hlg: CAEDRMetadata](caedrmetadata/hlg.md)
+- [class var hlg: CAEDRMetadata](./caedrmetadata/hlg.md)
   Extended dynamic range (EDR) metadata for the Hybrid Log-Gamma (HLG) transfer function.
 ### Retrieving HDR10 Metadata
-- [class func hdr10(displayInfo: Data?, contentInfo: Data?, opticalOutputScale: Float) -> CAEDRMetadata](caedrmetadata/hdr10(displayinfo:contentinfo:opticaloutputscale:).md)
+- [class func hdr10(displayInfo: Data?, contentInfo: Data?, opticalOutputScale: Float) -> CAEDRMetadata](./caedrmetadata/hdr10%28displayinfo,contentinfo,opticaloutputscale%29.md)
   Creates EDR metadata for HDR10 content based on mastering display color information and content light levels.
-- [class func hdr10(minLuminance: Float, maxLuminance: Float, opticalOutputScale: Float) -> CAEDRMetadata](caedrmetadata/hdr10(minluminance:maxluminance:opticaloutputscale:).md)
+- [class func hdr10(minLuminance: Float, maxLuminance: Float, opticalOutputScale: Float) -> CAEDRMetadata](./caedrmetadata/hdr10%28minluminance,maxluminance,opticaloutputscale%29.md)
   Creates EDR metadata for HDR10 content based on the luminance characteristics of a mastering display.
 ### Type Properties
-- [class var isAvailable: Bool](caedrmetadata/isavailable.md)
+- [class var isAvailable: Bool](./caedrmetadata/isavailable.md)
 ### Type Methods
-- [class func hlg(ambientViewingEnvironment: Data) -> CAEDRMetadata](caedrmetadata/hlg(ambientviewingenvironment:).md)
+- [class func hlg(ambientViewingEnvironment: Data) -> CAEDRMetadata](./caedrmetadata/hlg%28ambientviewingenvironment%29.md)
 ### Initializers
-- [init?(coder: NSCoder)](caedrmetadata/init(coder:).md)
+- [init?(coder: NSCoder)](./caedrmetadata/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class CAMetalLayer](cametallayer.md)
+### Metal and OpenGL
+- [class CAMetalLayer](./cametallayer.md)
   A Core Animation layer that Metal can render into, typically displayed onscreen.
-- [protocol CAMetalDrawable](cametaldrawable.md)
+- [protocol CAMetalDrawable](./cametaldrawable.md)
   A Metal drawable associated with a Core Animation layer.
-- [class CAEAGLLayer](caeagllayer.md)
+- [class CAEAGLLayer](./caeagllayer.md)
   A layer that supports drawing OpenGL content in iOS and tvOS applications.
-- [class CAOpenGLLayer](caopengllayer.md)
+- [class CAOpenGLLayer](./caopengllayer.md)
   A layer that provides a layer suitable for rendering OpenGL content.
-- [class CARenderer](carenderer.md)
+- [class CARenderer](./carenderer.md)
   A layer that allows an application to render a layer tree into a Core OpenGL context.
 
 

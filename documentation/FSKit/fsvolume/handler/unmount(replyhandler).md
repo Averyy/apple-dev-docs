@@ -2,6 +2,7 @@
 
 **Framework**: FSKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -10,12 +11,21 @@
 ## Declaration
 
 ```swift
+func unmount(replyHandler reply: @escaping @Sendable () -> Void)
+```
+
+```swift
 func unmount() async
+```
+
+```objc
+- (void) unmountWithReplyHandler:(void (^)()) reply;
 ```
 
 ## See Also
 
-- [func mount(options: FSTaskOptions, replyHandler: ((any Error)?) -> Void)](fsvolume/handler/mount(options:replyhandler:).md)
+### Mounting and unmounting
+- [func mount(options: FSTaskOptions, replyHandler: ((any Error)?) -> Void)](./mount%28options,replyhandler%29.md)
 
 
 ---

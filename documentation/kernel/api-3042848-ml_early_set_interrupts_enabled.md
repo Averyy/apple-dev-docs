@@ -1,14 +1,15 @@
 # ml_early_set_interrupts_enabled
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.14.4+
 
 ## Declaration
 
-```swift
+```c
 boolean_t ml_early_set_interrupts_enabled(boolean_t enable);
 ```
 

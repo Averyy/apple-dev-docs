@@ -1,7 +1,8 @@
 # AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level.mid
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Applies medium ducking to other audio.
 
@@ -18,13 +19,18 @@ Applies medium ducking to other audio.
 case mid
 ```
 
+```c
+AVAudioVoiceProcessingOtherAudioDuckingLevelMid
+```
+
 ## See Also
 
-- [AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level.default](avaudiovoiceprocessingotheraudioduckingconfiguration/level/default.md)
+### Choosing a ducking level
+- [AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level.default](./default.md)
   The default ducking level for typical voice chat.
-- [AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level.max](avaudiovoiceprocessingotheraudioduckingconfiguration/level/max.md)
+- [AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level.max](./max.md)
   Applies maximum ducking to other audio.
-- [AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level.min](avaudiovoiceprocessingotheraudioduckingconfiguration/level/min.md)
+- [AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level.min](./min.md)
   Applies minimum ducking to other audio.
 
 

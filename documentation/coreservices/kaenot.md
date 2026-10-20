@@ -1,7 +1,8 @@
 # kAENOT
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies a logical `NOT` operation.
 

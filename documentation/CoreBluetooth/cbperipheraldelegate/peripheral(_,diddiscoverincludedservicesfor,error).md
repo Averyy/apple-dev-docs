@@ -1,7 +1,8 @@
 # peripheral(_:didDiscoverIncludedServicesFor:error:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that discovering included services within the indicated service completed.
 
@@ -20,19 +21,24 @@ Tells the delegate that discovering included services within the indicated servi
 optional func peripheral(_ peripheral: CBPeripheral, didDiscoverIncludedServicesFor service: CBService, error: (any Error)?)
 ```
 
+```objc
+- (void) peripheral:(CBPeripheral *) peripheral didDiscoverIncludedServicesForService:(CBService *) service error:(NSError *) error;
+```
+
 #### Discussion
 
-Core Bluetooth invokes this method when your app calls the [`discoverIncludedServices(_:for:)`](cbperipheral/discoverincludedservices(_:for:).md) method. If the peripheral successfully discovers services, you can access them through the service’s [`includedServices`](cbservice/includedservices.md) property. If successful, the `error` parameter is `nil`. If unsuccessful, the `error` parameter returns the cause of the failure.
+Core Bluetooth invokes this method when your app calls the [`discoverIncludedServices(_:for:)`](../cbperipheral/discoverincludedservices%28_,for%29.md) method. If the peripheral successfully discovers services, you can access them through the service’s [`includedServices`](../cbservice/includedservices.md) property. If successful, the `error` parameter is `nil`. If unsuccessful, the `error` parameter returns the cause of the failure.
 
 ## Parameters
 
 - `peripheral`: The peripheral providing this information.
-- `service`: The [`CBService`](cbservice.md) object containing the included service.
+- `service`: The [`CBService`](../cbservice.md) object containing the included service.
 - `error`: The reason the call failed, or `nil` if no error occurred.
 
 ## See Also
 
-- [func peripheral(CBPeripheral, didDiscoverServices: (any Error)?)](cbperipheraldelegate/peripheral(_:diddiscoverservices:).md)
+### Discovering Services
+- [func peripheral(CBPeripheral, didDiscoverServices: (any Error)?)](./peripheral%28_,diddiscoverservices%29.md)
   Tells the delegate that peripheral service discovery succeeded.
 
 

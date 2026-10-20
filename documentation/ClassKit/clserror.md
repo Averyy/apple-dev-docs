@@ -1,7 +1,8 @@
 # CLSError
 
 **Framework**: ClassKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Errors issued by ClassKit.
 
@@ -21,54 +22,55 @@ struct CLSError
 ## Topics
 
 ### Error domain
-- [let CLSErrorCodeDomain: String](clserrorcodedomain.md)
+- [let CLSErrorCodeDomain: String](./clserrorcodedomain.md)
   The error domain that ClassKit uses when issuing errors.
 ### Error codes
-- [static var none: CLSError.Code](clserror/none.md)
+- [static var none: CLSError.Code](./clserror/none.md)
   No error.
-- [static var authorizationDenied: CLSError.Code](clserror/authorizationdenied.md)
+- [static var authorizationDenied: CLSError.Code](./clserror/authorizationdenied.md)
   The app isn’t authorized to perform the requested operation.
-- [static var classKitUnavailable: CLSError.Code](clserror/classkitunavailable.md)
+- [static var classKitUnavailable: CLSError.Code](./clserror/classkitunavailable.md)
   ClassKit isn’t available on this device.
-- [static var databaseInaccessible: CLSError.Code](clserror/databaseinaccessible.md)
+- [static var databaseInaccessible: CLSError.Code](./clserror/databaseinaccessible.md)
   ClassKit isn’t accessible because the device is locked.
-- [static var errorDomain: String](clserror/errordomain.md)
-- [static var invalidAccountCredentials: CLSError.Code](clserror/invalidaccountcredentials.md)
-- [static var invalidArgument: CLSError.Code](clserror/invalidargument.md)
+- [static var errorDomain: String](./clserror/errordomain.md)
+- [static var invalidAccountCredentials: CLSError.Code](./clserror/invalidaccountcredentials.md)
+- [static var invalidArgument: CLSError.Code](./clserror/invalidargument.md)
   An invalid argument was provided to the API.
-- [static var invalidCreate: CLSError.Code](clserror/invalidcreate.md)
+- [static var invalidCreate: CLSError.Code](./clserror/invalidcreate.md)
   An attempt to save a new object that already exists in the data store failed.
-- [static var invalidModification: CLSError.Code](clserror/invalidmodification.md)
+- [static var invalidModification: CLSError.Code](./clserror/invalidmodification.md)
   An attempt to modify a read-only object failed.
-- [static var invalidUpdate: CLSError.Code](clserror/invalidupdate.md)
+- [static var invalidUpdate: CLSError.Code](./clserror/invalidupdate.md)
   ClassKit failed to save an updated object in the data store.
-- [static var limits: CLSError.Code](clserror/limits.md)
+- [static var limits: CLSError.Code](./clserror/limits.md)
   A limit has been exceeded.
-- [static var partialFailure: CLSError.Code](clserror/partialfailure.md)
+- [static var partialFailure: CLSError.Code](./clserror/partialfailure.md)
   ClassKit encountered more than one error.
-- [CLSError.Code](clserror/code.md)
+- [CLSError.Code](./clserror/code.md)
   Error codes that ClassKit issues.
 ### User information
-- [struct CLSErrorUserInfoKey](clserroruserinfokey.md)
+- [struct CLSErrorUserInfoKey](./clserroruserinfokey.md)
   Keys that appear in the user info dictionary in errors that ClassKit creates.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let CLSErrorCodeDomain: String](clserrorcodedomain.md)
+### Errors
+- [let CLSErrorCodeDomain: String](./clserrorcodedomain.md)
   The error domain that ClassKit uses when issuing errors.
-- [CLSError.Code](clserror/code.md)
+- [CLSError.Code](./clserror/code.md)
   Error codes that ClassKit issues.
-- [struct CLSErrorUserInfoKey](clserroruserinfokey.md)
+- [struct CLSErrorUserInfoKey](./clserroruserinfokey.md)
   Keys that appear in the user info dictionary in errors that ClassKit creates.
 
 

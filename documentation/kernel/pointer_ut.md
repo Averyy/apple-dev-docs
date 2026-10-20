@@ -1,14 +1,15 @@
 # pointer_ut
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 15.2+
 
 ## Declaration
 
-```swift
+```c
 typedef pointer_t pointer_ut;
 ```
 

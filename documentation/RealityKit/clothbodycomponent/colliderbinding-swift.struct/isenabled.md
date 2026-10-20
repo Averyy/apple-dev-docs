@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the cloth body should actively bind to the mesh collider.
 
@@ -18,7 +19,8 @@ var isEnabled: Bool
 
 ## See Also
 
-- [var sourceCollider: Entity?](clothbodycomponent/colliderbinding-swift.struct/sourcecollider.md)
+### Binding the collider
+- [var sourceCollider: Entity?](./sourcecollider.md)
   The entity containing the mesh-shaped collider that the body will bind to.
 
 

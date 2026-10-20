@@ -1,18 +1,19 @@
 # CGInterpolationQuality.default
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default level of quality.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The default level of quality.
 case `default`
 ```
 
+```c
+kCGInterpolationDefault
+```
+
 ## See Also
 
-- [CGInterpolationQuality.none](cginterpolationquality/none.md)
+### Constants
+- [CGInterpolationQuality.none](./none.md)
   No interpolation.
-- [CGInterpolationQuality.low](cginterpolationquality/low.md)
+- [CGInterpolationQuality.low](./low.md)
   A low level of interpolation quality. This setting may speed up image rendering.
-- [CGInterpolationQuality.medium](cginterpolationquality/medium.md)
+- [CGInterpolationQuality.medium](./medium.md)
   A medium level of interpolation quality. This setting is slower than the low setting but faster than the high setting.
-- [CGInterpolationQuality.high](cginterpolationquality/high.md)
+- [CGInterpolationQuality.high](./high.md)
   A high level of interpolation quality. This setting may slow down image rendering.
 
 

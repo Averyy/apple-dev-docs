@@ -1,7 +1,8 @@
 # resourceState
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Represents all sparse and placement sparse resource mapping updates.
 
@@ -17,6 +18,10 @@ Represents all sparse and placement sparse resource mapping updates.
 
 ```swift
 static var resourceState: MTLStages { get }
+```
+
+```c
+MTLStageResourceState
 ```
 
 

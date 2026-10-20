@@ -1,7 +1,8 @@
 # AVCaption.FontWeight
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Font weights for a caption.
 
@@ -17,39 +18,44 @@ Font weights for a caption.
 enum FontWeight
 ```
 
+```c
+enum AVCaptionFontWeight : NSInteger;
+```
+
 ## Topics
 
 ### Font weights
-- [AVCaption.FontWeight.unknown](avcaption/fontweight/unknown.md)
+- [AVCaption.FontWeight.unknown](./fontweight/unknown.md)
   An unknown font weight.
-- [AVCaption.FontWeight.normal](avcaption/fontweight/normal.md)
+- [AVCaption.FontWeight.normal](./fontweight/normal.md)
   A normal font weight.
-- [AVCaption.FontWeight.bold](avcaption/fontweight/bold.md)
+- [AVCaption.FontWeight.bold](./fontweight/bold.md)
   A bold font weight.
 ### Initializers
-- [init?(rawValue: Int)](avcaption/fontweight/init(rawvalue:).md)
+- [init?(rawValue: Int)](./fontweight/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func fontStyle(at: String.Index) -> (AVCaption.FontStyle, Range<String.Index>)](avcaption/fontstyle(at:).md)
+### Accessing font styles
+- [func fontStyle(at: String.Index) -> (AVCaption.FontStyle, Range<String.Index>)](./fontstyle%28at%29.md)
   Returns the font style and range at the index position.
-- [AVCaption.FontStyle](avcaption/fontstyle.md)
+- [AVCaption.FontStyle](./fontstyle.md)
   Font styles for caption text.
-- [func fontWeight(at: String.Index) -> (AVCaption.FontWeight, Range<String.Index>)](avcaption/fontweight(at:).md)
+- [func fontWeight(at: String.Index) -> (AVCaption.FontWeight, Range<String.Index>)](./fontweight%28at%29.md)
   Returns the font weight and range at the index position.
-- [func decoration(at: String.Index) -> (AVCaption.Decoration, Range<String.Index>)](avcaption/decoration(at:).md)
+- [func decoration(at: String.Index) -> (AVCaption.Decoration, Range<String.Index>)](./decoration%28at%29.md)
   Returns the text decoration at the index position.
-- [AVCaption.Decoration](avcaption/decoration.md)
+- [AVCaption.Decoration](./decoration.md)
   Text decorations for caption text.
 
 

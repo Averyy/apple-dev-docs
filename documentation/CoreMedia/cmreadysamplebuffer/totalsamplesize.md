@@ -1,7 +1,8 @@
 # totalSampleSize
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Total size in bytes of all samples in the sample buffer.
 
@@ -19,6 +20,8 @@ Total size in bytes of all samples in the sample buffer.
 ```swift
 var totalSampleSize: Int { get }
 ```
+
+Available when `Content` conforms to `CMSampleBuffer.MultiSampleContent`.
 
 
 ---

@@ -1,23 +1,28 @@
 # didEnd(_:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the contact ends between two physics bodies.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 optional func didEnd(_ contact: SKPhysicsContact)
+```
+
+```objc
+- (void) didEndContact:(SKPhysicsContact *) contact;
 ```
 
 #### Discussion
@@ -40,7 +45,8 @@ func didEnd(_ contact: SKPhysicsContact){
 
 ## See Also
 
-- [func didBegin(SKPhysicsContact)](skphysicscontactdelegate/didbegin(_:).md)
+### Responding to Contact Events
+- [func didBegin(SKPhysicsContact)](./didbegin%28_%29.md)
   Called when two bodies first contact each other.
 
 

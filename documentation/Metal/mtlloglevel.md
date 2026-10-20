@@ -1,7 +1,8 @@
 # MTLLogLevel
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The supported log levels for shader logging.
 
@@ -19,33 +20,37 @@ The supported log levels for shader logging.
 enum MTLLogLevel
 ```
 
+```c
+enum MTLLogLevel : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration cases
-- [MTLLogLevel.debug](mtlloglevel/debug.md)
+- [MTLLogLevel.debug](./mtlloglevel/debug.md)
   The log level that captures diagnostic information.
-- [MTLLogLevel.info](mtlloglevel/info.md)
+- [MTLLogLevel.info](./mtlloglevel/info.md)
   The log level that captures additional information.
-- [MTLLogLevel.notice](mtlloglevel/notice.md)
+- [MTLLogLevel.notice](./mtlloglevel/notice.md)
   The log level that captures notifications.
-- [MTLLogLevel.error](mtlloglevel/error.md)
+- [MTLLogLevel.error](./mtlloglevel/error.md)
   The log level that captures error information.
-- [MTLLogLevel.fault](mtlloglevel/fault.md)
+- [MTLLogLevel.fault](./mtlloglevel/fault.md)
   The log level that captures fault information.
-- [MTLLogLevel.undefined](mtlloglevel/undefined.md)
+- [MTLLogLevel.undefined](./mtlloglevel/undefined.md)
   The log level when the log level hasn’t been configured.
 ### Initializers
-- [init?(rawValue: Int)](mtlloglevel/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mtlloglevel/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

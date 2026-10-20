@@ -1,7 +1,8 @@
 # attemptDate
 
 **Framework**: App Store Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The date the App Store server attempts to send a notification.
 
@@ -10,13 +11,14 @@ The date the App Store server attempts to send a notification.
 
 ## Declaration
 
-```swift
+```
 timestamp attemptDate
 ```
 
 ## See Also
 
-- [type sendAttemptResult](sendattemptresult.md)
+### Data types
+- [type sendAttemptResult](./sendattemptresult.md)
   The success or error information the App Store server records when it attempts to send an App Store server notification to your server.
 
 

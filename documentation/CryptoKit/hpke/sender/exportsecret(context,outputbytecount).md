@@ -1,7 +1,8 @@
 # exportSecret(context:outputByteCount:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports a secret given domain-separation context and the desired output length.
 

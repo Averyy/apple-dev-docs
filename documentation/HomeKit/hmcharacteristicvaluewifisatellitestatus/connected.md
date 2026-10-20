@@ -1,7 +1,8 @@
 # HMCharacteristicValueWiFiSatelliteStatus.connected
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The WiFi satellite accessory is connected.
 
@@ -19,11 +20,16 @@ The WiFi satellite accessory is connected.
 case connected
 ```
 
+```c
+HMCharacteristicValueWiFiSatelliteStatusConnected
+```
+
 ## See Also
 
-- [HMCharacteristicValueWiFiSatelliteStatus.notConnected](hmcharacteristicvaluewifisatellitestatus/notconnected.md)
+### Network states
+- [HMCharacteristicValueWiFiSatelliteStatus.notConnected](./notconnected.md)
   The WiFi satellite accessory isn’t connected.
-- [HMCharacteristicValueWiFiSatelliteStatus.unknown](hmcharacteristicvaluewifisatellitestatus/unknown.md)
+- [HMCharacteristicValueWiFiSatelliteStatus.unknown](./unknown.md)
   The WiFi satellite accessory status is unknown.
 
 

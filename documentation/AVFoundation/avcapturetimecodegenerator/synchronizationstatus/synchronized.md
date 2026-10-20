@@ -1,7 +1,8 @@
 # AVCaptureTimecodeGenerator.SynchronizationStatus.synchronized
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The timecode generator is successfully synchronized to the selected source, maintaining active timing alignment.
 
@@ -18,21 +19,26 @@ The timecode generator is successfully synchronized to the selected source, main
 case synchronized
 ```
 
+```c
+AVCaptureTimecodeGeneratorSynchronizationStatusSynchronized
+```
+
 ## See Also
 
-- [AVCaptureTimecodeGenerator.SynchronizationStatus.notRequired](avcapturetimecodegenerator/synchronizationstatus/notrequired.md)
+### Status values
+- [AVCaptureTimecodeGenerator.SynchronizationStatus.notRequired](./notrequired.md)
   The timecode generator does not require active synchronization for a given source.
-- [AVCaptureTimecodeGenerator.SynchronizationStatus.sourceSelected](avcapturetimecodegenerator/synchronizationstatus/sourceselected.md)
+- [AVCaptureTimecodeGenerator.SynchronizationStatus.sourceSelected](./sourceselected.md)
   A timecode source has been selected, but synchronization has not yet started.
-- [AVCaptureTimecodeGenerator.SynchronizationStatus.sourceUnavailable](avcapturetimecodegenerator/synchronizationstatus/sourceunavailable.md)
+- [AVCaptureTimecodeGenerator.SynchronizationStatus.sourceUnavailable](./sourceunavailable.md)
   The timecode generator has failed to establish a connection with a given source.
-- [AVCaptureTimecodeGenerator.SynchronizationStatus.sourceUnsupported](avcapturetimecodegenerator/synchronizationstatus/sourceunsupported.md)
+- [AVCaptureTimecodeGenerator.SynchronizationStatus.sourceUnsupported](./sourceunsupported.md)
   The timecode generator is receiving data from the source in an unrecognized format.
-- [AVCaptureTimecodeGenerator.SynchronizationStatus.synchronizing](avcapturetimecodegenerator/synchronizationstatus/synchronizing.md)
+- [AVCaptureTimecodeGenerator.SynchronizationStatus.synchronizing](./synchronizing.md)
   The timecode generator is actively synchronizing to the selected source.
-- [AVCaptureTimecodeGenerator.SynchronizationStatus.timedOut](avcapturetimecodegenerator/synchronizationstatus/timedout.md)
+- [AVCaptureTimecodeGenerator.SynchronizationStatus.timedOut](./timedout.md)
   The synchronization has timed out.
-- [AVCaptureTimecodeGenerator.SynchronizationStatus.unknown](avcapturetimecodegenerator/synchronizationstatus/unknown.md)
+- [AVCaptureTimecodeGenerator.SynchronizationStatus.unknown](./unknown.md)
   The initial state before a source is selected or during error conditions.
 
 

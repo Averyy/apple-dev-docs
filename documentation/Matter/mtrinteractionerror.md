@@ -1,7 +1,8 @@
 # MTRInteractionError
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.1+
@@ -21,47 +22,47 @@ struct MTRInteractionError
 ## Topics
 
 ### Type Properties
-- [static var busy: MTRInteractionError.Code](mtrinteractionerror/busy.md)
-- [static var constraintError: MTRInteractionError.Code](mtrinteractionerror/constrainterror.md)
-- [static var dataVersionMismatch: MTRInteractionError.Code](mtrinteractionerror/dataversionmismatch.md)
-- [static var failsafeRequired: MTRInteractionError.Code](mtrinteractionerror/failsaferequired.md)
-- [static var failure: MTRInteractionError.Code](mtrinteractionerror/failure.md)
-- [static var invalidAction: MTRInteractionError.Code](mtrinteractionerror/invalidaction.md)
-- [static var invalidCommand: MTRInteractionError.Code](mtrinteractionerror/invalidcommand.md)
-- [static var invalidDataType: MTRInteractionError.Code](mtrinteractionerror/invaliddatatype.md)
-- [static var invalidInState: MTRInteractionError.Code](mtrinteractionerror/invalidinstate.md)
-- [static var invalidSubscription: MTRInteractionError.Code](mtrinteractionerror/invalidsubscription.md)
-- [static var needsTimedInteraction: MTRInteractionError.Code](mtrinteractionerror/needstimedinteraction.md)
-- [static var noCommandResponse: MTRInteractionError.Code](mtrinteractionerror/nocommandresponse.md)
-- [static var noUpstreamSubscription: MTRInteractionError.Code](mtrinteractionerror/noupstreamsubscription.md)
-- [static var notFound: MTRInteractionError.Code](mtrinteractionerror/notfound.md)
-- [static var pathsExhausted: MTRInteractionError.Code](mtrinteractionerror/pathsexhausted.md)
-- [static var resourceExhausted: MTRInteractionError.Code](mtrinteractionerror/resourceexhausted.md)
-- [static var timedRequestMismatch: MTRInteractionError.Code](mtrinteractionerror/timedrequestmismatch.md)
-- [static var timeout: MTRInteractionError.Code](mtrinteractionerror/timeout.md)
-- [static var unreportableAttribute: MTRInteractionError.Code](mtrinteractionerror/unreportableattribute.md)
-- [static var unsupportedAccess: MTRInteractionError.Code](mtrinteractionerror/unsupportedaccess.md)
-- [static var unsupportedAttribute: MTRInteractionError.Code](mtrinteractionerror/unsupportedattribute.md)
-- [static var unsupportedCluster: MTRInteractionError.Code](mtrinteractionerror/unsupportedcluster.md)
-- [static var unsupportedCommand: MTRInteractionError.Code](mtrinteractionerror/unsupportedcommand.md)
-- [static var unsupportedEndpoint: MTRInteractionError.Code](mtrinteractionerror/unsupportedendpoint.md)
-- [static var unsupportedEvent: MTRInteractionError.Code](mtrinteractionerror/unsupportedevent.md)
-- [static var unsupportedRead: MTRInteractionError.Code](mtrinteractionerror/unsupportedread.md)
-- [static var unsupportedWrite: MTRInteractionError.Code](mtrinteractionerror/unsupportedwrite.md)
-- [static var accessRestricted: MTRInteractionError.Code](mtrinteractionerror/accessrestricted.md)
-- [static var errorDomain: String](mtrinteractionerror/errordomain.md)
+- [static var busy: MTRInteractionError.Code](./mtrinteractionerror/busy.md)
+- [static var constraintError: MTRInteractionError.Code](./mtrinteractionerror/constrainterror.md)
+- [static var dataVersionMismatch: MTRInteractionError.Code](./mtrinteractionerror/dataversionmismatch.md)
+- [static var failsafeRequired: MTRInteractionError.Code](./mtrinteractionerror/failsaferequired.md)
+- [static var failure: MTRInteractionError.Code](./mtrinteractionerror/failure.md)
+- [static var invalidAction: MTRInteractionError.Code](./mtrinteractionerror/invalidaction.md)
+- [static var invalidCommand: MTRInteractionError.Code](./mtrinteractionerror/invalidcommand.md)
+- [static var invalidDataType: MTRInteractionError.Code](./mtrinteractionerror/invaliddatatype.md)
+- [static var invalidInState: MTRInteractionError.Code](./mtrinteractionerror/invalidinstate.md)
+- [static var invalidSubscription: MTRInteractionError.Code](./mtrinteractionerror/invalidsubscription.md)
+- [static var needsTimedInteraction: MTRInteractionError.Code](./mtrinteractionerror/needstimedinteraction.md)
+- [static var noCommandResponse: MTRInteractionError.Code](./mtrinteractionerror/nocommandresponse.md)
+- [static var noUpstreamSubscription: MTRInteractionError.Code](./mtrinteractionerror/noupstreamsubscription.md)
+- [static var notFound: MTRInteractionError.Code](./mtrinteractionerror/notfound.md)
+- [static var pathsExhausted: MTRInteractionError.Code](./mtrinteractionerror/pathsexhausted.md)
+- [static var resourceExhausted: MTRInteractionError.Code](./mtrinteractionerror/resourceexhausted.md)
+- [static var timedRequestMismatch: MTRInteractionError.Code](./mtrinteractionerror/timedrequestmismatch.md)
+- [static var timeout: MTRInteractionError.Code](./mtrinteractionerror/timeout.md)
+- [static var unreportableAttribute: MTRInteractionError.Code](./mtrinteractionerror/unreportableattribute.md)
+- [static var unsupportedAccess: MTRInteractionError.Code](./mtrinteractionerror/unsupportedaccess.md)
+- [static var unsupportedAttribute: MTRInteractionError.Code](./mtrinteractionerror/unsupportedattribute.md)
+- [static var unsupportedCluster: MTRInteractionError.Code](./mtrinteractionerror/unsupportedcluster.md)
+- [static var unsupportedCommand: MTRInteractionError.Code](./mtrinteractionerror/unsupportedcommand.md)
+- [static var unsupportedEndpoint: MTRInteractionError.Code](./mtrinteractionerror/unsupportedendpoint.md)
+- [static var unsupportedEvent: MTRInteractionError.Code](./mtrinteractionerror/unsupportedevent.md)
+- [static var unsupportedRead: MTRInteractionError.Code](./mtrinteractionerror/unsupportedread.md)
+- [static var unsupportedWrite: MTRInteractionError.Code](./mtrinteractionerror/unsupportedwrite.md)
+- [static var accessRestricted: MTRInteractionError.Code](./mtrinteractionerror/accessrestricted.md)
+- [static var errorDomain: String](./mtrinteractionerror/errordomain.md)
 ### Enumerations
-- [MTRInteractionError.Code](mtrinteractionerror/code.md)
+- [MTRInteractionError.Code](./mtrinteractionerror/code.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

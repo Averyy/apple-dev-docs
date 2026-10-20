@@ -1,7 +1,8 @@
 # prim
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The nearest prim that contains this property.
 

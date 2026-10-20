@@ -1,6 +1,7 @@
 # Identifying people, places, and organizations
 
-**Framework**: Natural Language
+**Framework**: Natural Language  
+**Role**: Article
 
 Use a linguistic tagger to perform named entity recognition on a string.
 
@@ -8,14 +9,14 @@ Use a linguistic tagger to perform named entity recognition on a string.
 
 Identifying named entities in natural language text can help make your app more intelligent. For example, a messaging app might look for names of people and places in text, to display related information like contact information or directions.
 
-The example and accompanying steps below show how to use [`NLTagger`](nltagger.md) to enumerate over natural language text and identify any named person, place, or organization.
+The example and accompanying steps below show how to use [`NLTagger`](./nltagger.md) to enumerate over natural language text and identify any named person, place, or organization.
 
-1. Create an instance of [`NLTagger`](nltagger.md), specifying [`nameType`](nltagscheme/nametype.md) as the tag scheme to be used.
+1. Create an instance of [`NLTagger`](./nltagger.md), specifying [`nameType`](./nltagscheme/nametype.md) as the tag scheme to be used.
 2. Set the string property of the linguistic tagger to the natural language text.
 3. Create the options to omit punctuation, omit whitespace, and join names.
-4. Enumerate over the entire range of the string, specifying [`word`](https://developer.apple.com/documentation/foundation/nslinguistictag/word) as the tag unit and [`nameType`](nltagscheme/nametype.md) as the tag scheme, and specifying the tagger options.
+4. Enumerate over the entire range of the string, specifying [`word`](../Foundation/nslinguistictag/word.md) as the tag unit and [`nameType`](./nltagscheme/nametype.md) as the tag scheme, and specifying the tagger options.
 5. In the enumeration block, if the tag is one of the types in `tags`, take a substring of the original text at `tokenRange` to obtain the named entity.
-6. To return multiple possible tags and their associated confidence scores, in the enumeration block, call the [`tagHypothesesAtIndex:unit:scheme:maximumCount:tokenRange:`](nltagger/taghypothesesatindex:unit:scheme:maximumcount:tokenrange:.md) method.
+6. To return multiple possible tags and their associated confidence scores, in the enumeration block, call the [`tagHypothesesAtIndex:unit:scheme:maximumCount:tokenRange:`](./nltagger/taghypothesesatindex_unit_scheme_maximumcount_tokenrange_.md) method.
 7. Run the following code to print out each name and its type, as well as other possible tags and their probabilities, on a new line.
 
 ```swift
@@ -43,9 +44,10 @@ tagger.enumerateTags(in: text.startIndex..<text.endIndex, unit: .word, scheme: .
 
 ## See Also
 
-- [Identifying parts of speech](identifying-parts-of-speech.md)
+### Linguistic tags
+- [Identifying parts of speech](./identifying-parts-of-speech.md)
   Classify nouns, verbs, adjectives, and other parts of speech in a string.
-- [class NLTagger](nltagger.md)
+- [class NLTagger](./nltagger.md)
   A tagger that analyzes natural language text.
 
 

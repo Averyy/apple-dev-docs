@@ -1,7 +1,8 @@
 # init(directories:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the directory share with a set of directories on the host.
 
@@ -14,6 +15,10 @@ Creates the directory share with a set of directories on the host.
 init(directories: [String : VZSharedDirectory])
 ```
 
+```objc
+- (instancetype) initWithDirectories:(NSDictionary<NSString *,VZSharedDirectory *> *) directories;
+```
+
 #### Discussion
 
 The dictionary string keys are the names for the directory. The keys must be valid names or the system raises an exception and the app exits.
@@ -24,9 +29,11 @@ The dictionary string keys are the names for the directory. The keys must be val
 
 ## See Also
 
-- [class func validateName(String) throws](vzmultipledirectoryshare/validatename(_:).md)
+### Related Documentation
+- [class func validateName(String) throws](./validatename%28_%29.md)
   Check if a name is a valid directory name.
-- [convenience init()](vzmultipledirectoryshare/init.md)
+### Creating a directory share
+- [convenience init()](./init%28%29.md)
   Initializes the directory share with an empty set of directories.
 
 

@@ -1,7 +1,8 @@
 # notificationUsageByCategory
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frequency of notifications per category.
 
@@ -16,13 +17,18 @@ The frequency of notifications per category.
 var notificationUsageByCategory: [SRDeviceUsageReport.CategoryKey : [SRDeviceUsageReport.NotificationUsage]] { get }
 ```
 
+```objc
+@property (copy, readonly) NSDictionary<NSString *,NSArray<SRNotificationUsage *> *> * notificationUsageByCategory;
+```
+
 #### Discussion
 
 The framework interprets the category using the primary genre an app supplies in its `iTunesMetadata.plist`.
 
 ## See Also
 
-- [SRDeviceUsageReport.NotificationUsage](srdeviceusagereport/notificationusage.md)
+### Analyzing Notification Use
+- [SRDeviceUsageReport.NotificationUsage](./notificationusage.md)
   An object that describes notification frequency and the manner in which the user interacts with notifications.
 
 

@@ -1,11 +1,12 @@
 # init(success:result_type:source_address_type:source_address:username:has_uid:uid:)
 
 **Framework**: Endpoint Security  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 

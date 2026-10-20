@@ -1,7 +1,8 @@
 # setBuffers(_:offsets:range:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes references to an array of buffers into the argument buffer.
 
@@ -11,7 +12,7 @@ Encodes references to an array of buffers into the argument buffer.
 - Mac Catalyst 11.0+
 - macOS 10.13+
 - tvOS 11.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,11 +24,12 @@ func setBuffers(_ buffers: [(any MTLBuffer)?], offsets: [Int], range: Range<Int>
 
 - `buffers`: An array of buffers the method encodes.
 - `offsets`: An array of byte offsets for each element in `buffers`.
-- `range`: A range of indices within the argument buffer for each element in `buffers`. The values correspond to either the index IDs of declarations in Metal Shading Language (MSL) or the [`index`](mtlargumentdescriptor/index.md) property of [`MTLArgumentDescriptor`](mtlargumentdescriptor.md) instances.
+- `range`: A range of indices within the argument buffer for each element in `buffers`. The values correspond to either the index IDs of declarations in Metal Shading Language (MSL) or the [`index`](../mtlargumentdescriptor/index.md) property of [`MTLArgumentDescriptor`](../mtlargumentdescriptor.md) instances.
 
 ## See Also
 
-- [func setBuffer((any MTLBuffer)?, offset: Int, index: Int)](mtlargumentencoder/setbuffer(_:offset:index:).md)
+### Encoding buffers
+- [func setBuffer((any MTLBuffer)?, offset: Int, index: Int)](./setbuffer%28_,offset,index%29.md)
   Encodes a reference to a buffer into the argument buffer.
 
 

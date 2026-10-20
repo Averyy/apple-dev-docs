@@ -1,7 +1,8 @@
 # recipients
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The recipients of the MMS message, as an array of MMS handles.
 
@@ -16,13 +17,14 @@ var recipients: [MMSHandle]
 
 #### Discussion
 
-When this array contains any elements, it may imply that the corresponding message is a group MMS. To determine if the message is a group MMS, inspect the value of the [`from`](mmscontent/from.md) property for multiple distinct handles. For example, if `recipients == [A]` and `from == B`, then the MMS uses a group consisting of `A`, `B`, and the person using the app.
+When this array contains any elements, it may imply that the corresponding message is a group MMS. To determine if the message is a group MMS, inspect the value of the [`from`](./from.md) property for multiple distinct handles. For example, if `recipients == [A]` and `from == B`, then the MMS uses a group consisting of `A`, `B`, and the person using the app.
 
 ## See Also
 
-- [var from: MMSHandle?](mmscontent/from.md)
+### Accessing message participants
+- [var from: MMSHandle?](./from.md)
   The sender of the MMS message.
-- [struct MMSHandle](mmshandle.md)
+- [struct MMSHandle](../mmshandle.md)
   A structure that represents an MMS address.
 
 

@@ -1,7 +1,8 @@
 # vImageLookupTable_Planar8toPlanarF(_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Uses a lookup table to transform an 8-bit planar image to a 32-bit planar image.
 
@@ -20,9 +21,13 @@ Uses a lookup table to transform an 8-bit planar image to a 32-bit planar image.
 func vImageLookupTable_Planar8toPlanarF(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ table: UnsafePointer<Pixel_F>, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageLookupTable_Planar8toPlanarF(const vImage_Buffer *src, const vImage_Buffer *dest, const Pixel_F table[256], vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
@@ -41,22 +46,23 @@ This function doesn’t work in place.
 
 - `src`: The source vImage buffer.
 - `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the `height`, `width`, and `rowBytes` fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
-- `table`: A lookup table that contains 256 [`Pixel_F`](pixel_f.md) values.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `table`: A lookup table that contains 256 [`Pixel_F`](./pixel_f.md) values.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 ## See Also
 
-- [func vImageTableLookUp_Planar8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Pixel_8>, vImage_Flags) -> vImage_Error](vimagetablelookup_planar8(_:_:_:_:).md)
+### Transforming planar-to-planar with a lookup table
+- [func vImageTableLookUp_Planar8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Pixel_8>, vImage_Flags) -> vImage_Error](./vimagetablelookup_planar8%28_,_,_,_%29.md)
   Uses a lookup table to transform an 8-bit planar image to an 8-bit planar image.
-- [func vImageLookupTable_PlanarFtoPlanar8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Pixel_8>, vImage_Flags) -> vImage_Error](vimagelookuptable_planarftoplanar8(_:_:_:_:).md)
+- [func vImageLookupTable_PlanarFtoPlanar8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Pixel_8>, vImage_Flags) -> vImage_Error](./vimagelookuptable_planarftoplanar8%28_,_,_,_%29.md)
   Uses a lookup table to transform a 32-bit planar image to an 8-bit planar image.
-- [func vImageLookupTable_Planar8toPlanar16(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Pixel_16U>, vImage_Flags) -> vImage_Error](vimagelookuptable_planar8toplanar16(_:_:_:_:).md)
+- [func vImageLookupTable_Planar8toPlanar16(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Pixel_16U>, vImage_Flags) -> vImage_Error](./vimagelookuptable_planar8toplanar16%28_,_,_,_%29.md)
   Uses a lookup table to transform an 8-bit planar image to an unsigned 16-bit planar image.
-- [func vImageLookupTable_8to64U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<UInt64>, vImage_Flags) -> vImage_Error](vimagelookuptable_8to64u(_:_:_:_:).md)
+- [func vImageLookupTable_8to64U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<UInt64>, vImage_Flags) -> vImage_Error](./vimagelookuptable_8to64u%28_,_,_,_%29.md)
   Uses a lookup table to transform an 8-bit planar image to a 64-bit planar image.
-- [func vImageLookupTable_Planar16(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Pixel_16U>, vImage_Flags) -> vImage_Error](vimagelookuptable_planar16(_:_:_:_:).md)
+- [func vImageLookupTable_Planar16(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Pixel_16U>, vImage_Flags) -> vImage_Error](./vimagelookuptable_planar16%28_,_,_,_%29.md)
   Uses a lookup table to transform a 16-bit planar image.
-- [func vImageInterpolatedLookupTable_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Pixel_F>, vImagePixelCount, Float, Float, vImage_Flags) -> vImage_Error](vimageinterpolatedlookuptable_planarf(_:_:_:_:_:_:_:).md)
+- [func vImageInterpolatedLookupTable_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Pixel_F>, vImagePixelCount, Float, Float, vImage_Flags) -> vImage_Error](./vimageinterpolatedlookuptable_planarf%28_,_,_,_,_,_,_%29.md)
   Uses an interpolated lookup table to transform a 32-bit planar image.
 
 

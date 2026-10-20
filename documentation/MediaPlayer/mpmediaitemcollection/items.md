@@ -1,7 +1,8 @@
 # items
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The media items in a media item collection.
 
@@ -17,13 +18,18 @@ The media items in a media item collection.
 var items: [MPMediaItem] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<MPMediaItem *> * items;
+```
+
 ## See Also
 
-- [var representativeItem: MPMediaItem?](mpmediaitemcollection/representativeitem.md)
+### Using a media item collection
+- [var representativeItem: MPMediaItem?](./representativeitem.md)
   A media item whose properties are representative of the other media items in a collection.
-- [var count: Int](mpmediaitemcollection/count.md)
+- [var count: Int](./count.md)
   The number of media items in a collection.
-- [var mediaTypes: MPMediaType](mpmediaitemcollection/mediatypes.md)
+- [var mediaTypes: MPMediaType](./mediatypes.md)
   The types of the media items in a collection.
 
 

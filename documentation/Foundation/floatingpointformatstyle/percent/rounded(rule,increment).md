@@ -1,7 +1,8 @@
 # rounded(rule:increment:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the format style to use the specified rounding rule and increment.
 
@@ -31,23 +32,24 @@ A floating-point format style modified to use the specified rounding rule and in
 
 ## See Also
 
-- [func decimalSeparator(strategy: FloatingPointFormatStyle<Value>.Percent.Configuration.DecimalSeparatorDisplayStrategy) -> FloatingPointFormatStyle<Value>.Percent](floatingpointformatstyle/percent/decimalseparator(strategy:).md)
+### Customizing style behavior
+- [func decimalSeparator(strategy: FloatingPointFormatStyle<Value>.Percent.Configuration.DecimalSeparatorDisplayStrategy) -> FloatingPointFormatStyle<Value>.Percent](./decimalseparator%28strategy%29.md)
   Modifies the format style to use the specified decimal separator display strategy.
-- [func grouping(FloatingPointFormatStyle<Value>.Percent.Configuration.Grouping) -> FloatingPointFormatStyle<Value>.Percent](floatingpointformatstyle/percent/grouping(_:).md)
+- [func grouping(FloatingPointFormatStyle<Value>.Percent.Configuration.Grouping) -> FloatingPointFormatStyle<Value>.Percent](./grouping%28_%29.md)
   Modifies the format style to use the specified grouping.
-- [func locale(Locale) -> FloatingPointFormatStyle<Value>.Percent](floatingpointformatstyle/percent/locale(_:).md)
+- [func locale(Locale) -> FloatingPointFormatStyle<Value>.Percent](./locale%28_%29.md)
   Modifies the format style to use the specified locale.
-- [func notation(FloatingPointFormatStyle<Value>.Percent.Configuration.Notation) -> FloatingPointFormatStyle<Value>.Percent](floatingpointformatstyle/percent/notation(_:).md)
+- [func notation(FloatingPointFormatStyle<Value>.Percent.Configuration.Notation) -> FloatingPointFormatStyle<Value>.Percent](./notation%28_%29.md)
   Modifies the format style to use the specified notation.
-- [func precision(FloatingPointFormatStyle<Value>.Percent.Configuration.Precision) -> FloatingPointFormatStyle<Value>.Percent](floatingpointformatstyle/percent/precision(_:).md)
+- [func precision(FloatingPointFormatStyle<Value>.Percent.Configuration.Precision) -> FloatingPointFormatStyle<Value>.Percent](./precision%28_%29.md)
   Modifies the format style to use the specified precision.
-- [func scale(Double) -> FloatingPointFormatStyle<Value>.Percent](floatingpointformatstyle/percent/scale(_:).md)
+- [func scale(Double) -> FloatingPointFormatStyle<Value>.Percent](./scale%28_%29.md)
   Modifies the format style to use the specified scale.
-- [func sign(strategy: FloatingPointFormatStyle<Value>.Percent.Configuration.SignDisplayStrategy) -> FloatingPointFormatStyle<Value>.Percent](floatingpointformatstyle/percent/sign(strategy:).md)
+- [func sign(strategy: FloatingPointFormatStyle<Value>.Percent.Configuration.SignDisplayStrategy) -> FloatingPointFormatStyle<Value>.Percent](./sign%28strategy%29.md)
   Modifies the format style to use the specified sign display strategy.
-- [FloatingPointFormatStyle.Percent.Configuration](floatingpointformatstyle/percent/configuration.md)
+- [FloatingPointFormatStyle.Percent.Configuration](./configuration.md)
   The type the format style uses for configuration settings.
-- [enum NumberFormatStyleConfiguration](numberformatstyleconfiguration.md)
+- [enum NumberFormatStyleConfiguration](../../numberformatstyleconfiguration.md)
   Configuration settings for formatting numbers of different types.
 
 

@@ -1,9 +1,10 @@
 # PaymentCardTransactionRequest.TransactionAmountDescription.membership(_:)
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-Charges the customer the amount shown for each payment cycle. Only allowed for [`PaymentCardTransactionRequest.TransactionType.purchase`](paymentcardtransactionrequest/transactiontype/purchase.md)
+Charges the customer the amount shown for each payment cycle. Only allowed for [`PaymentCardTransactionRequest.TransactionType.purchase`](../transactiontype/purchase.md)
 
 **Availability**:
 - iOS 18.0+

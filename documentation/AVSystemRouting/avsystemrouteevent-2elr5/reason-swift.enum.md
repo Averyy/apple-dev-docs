@@ -1,7 +1,8 @@
 # AVSystemRouteEvent.Reason
 
 **Framework**: AVSystemRouting  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that indicate the reason for a routing event.
 
@@ -19,22 +20,23 @@ enum Reason
 ## Topics
 
 ### Enumeration Cases
-- [AVSystemRouteEvent.Reason.activate](avsystemrouteevent-2elr5/reason-swift.enum/activate.md)
+- [AVSystemRouteEvent.Reason.activate](./reason-swift.enum/activate.md)
   A value that indicates a user selected a route in the picker.
-- [AVSystemRouteEvent.Reason.deactivate](avsystemrouteevent-2elr5/reason-swift.enum/deactivate.md)
+- [AVSystemRouteEvent.Reason.deactivate](./reason-swift.enum/deactivate.md)
   A value that indicates a user deselected a route in the picker.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVSystemRouteEvent](avsystemrouteevent-2elr5.md)
+### Routing events
+- [class AVSystemRouteEvent](../avsystemrouteevent-2elr5.md)
   An object that represents an event that occurs on a system route.
 
 

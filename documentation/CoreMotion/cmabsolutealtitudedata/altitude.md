@@ -1,7 +1,8 @@
 # altitude
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The absolute altitude of the device relative to sea level, measured in meters.
 
@@ -18,15 +19,20 @@ The absolute altitude of the device relative to sea level, measured in meters.
 var altitude: Double { get }
 ```
 
+```objc
+@property (nonatomic, readonly) double altitude;
+```
+
 #### Discussion
 
 This value can be positive or negative.
 
 ## See Also
 
-- [var accuracy: Double](cmabsolutealtitudedata/accuracy.md)
+### Accessing Altitude Data
+- [var accuracy: Double](./accuracy.md)
   The estimated uncertainty of the altimeter in meters, based on one standard deviation.
-- [var precision: Double](cmabsolutealtitudedata/precision.md)
+- [var precision: Double](./precision.md)
   The recommended resolution for the altitude, in meters.
 
 

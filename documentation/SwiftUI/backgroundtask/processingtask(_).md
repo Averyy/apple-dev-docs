@@ -1,7 +1,8 @@
 # processingTask(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A task that processes tasks in the background.
 

@@ -1,7 +1,8 @@
 # ParentalControlsGameCenter
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures Game Center parental controls.
 
@@ -10,7 +11,7 @@ The payload that configures Game Center parental controls.
 
 ## Declaration
 
-```swift
+```
 object ParentalControlsGameCenter
 ```
 
@@ -18,7 +19,7 @@ object ParentalControlsGameCenter
 
 Specify `com.apple.gamed` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.gamed` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -69,19 +70,34 @@ Specify `com.apple.gamed` as the payload type.
 ## Properties
 
 - `GKFeatureAccountModificationAllowed` (boolean): If `true`, allows account modifications.
-- `GKFeatureAddingGameCenterFriendsAllowed` (boolean): If `true`, allows adding Game Center friends. Deprecated: macOS 10.13+
-- `GKFeatureGameCenterAllowed` (boolean): If `true`, enables Game Center. Deprecated: macOS 10.13+
-- `GKFeatureMultiplayerGamingAllowed` (boolean): If `true`, allows multiplayer gaming. Deprecated: macOS 10.13+
+
+  **Default**: `true`
+- `GKFeatureAddingGameCenterFriendsAllowed` (boolean) *(deprecated)*: If `true`, allows adding Game Center friends.
+
+  Deprecated: macOS 10.13+
+
+  **Default**: `true`
+- `GKFeatureGameCenterAllowed` (boolean) *(deprecated)*: If `true`, enables Game Center.
+
+  Deprecated: macOS 10.13+
+
+  **Default**: `true`
+- `GKFeatureMultiplayerGamingAllowed` (boolean) *(deprecated)*: If `true`, allows multiplayer gaming.
+
+  Deprecated: macOS 10.13+
+
+  **Default**: `true`
 
 ## See Also
 
-- [object ParentalControlsApplicationRestrictions](parentalcontrolsapplicationrestrictions.md)
+### Parental controls
+- [object ParentalControlsApplicationRestrictions](./parentalcontrolsapplicationrestrictions.md)
   The payload that configures parental controls for apps.
-- [object ParentalControlsContentFilter](parentalcontrolscontentfilter.md)
+- [object ParentalControlsContentFilter](./parentalcontrolscontentfilter.md)
   The payload that configures the parental control web content filters.
-- [object ParentalControlsDictionary](parentalcontrolsdictionary.md)
+- [object ParentalControlsDictionary](./parentalcontrolsdictionary.md)
   The payload that configures parental control dictionary restrictions.
-- [object ParentalControlsTimeLimits](parentalcontrolstimelimits.md)
+- [object ParentalControlsTimeLimits](./parentalcontrolstimelimits.md)
   The payload that configures parental control time limits.
 
 

@@ -1,7 +1,8 @@
 # LibraryPlaylistCreationRequest.Relationships.Tracks.Data
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Data of the tracks too add to the created library playlist.
 
@@ -10,7 +11,7 @@ Data of the tracks too add to the created library playlist.
 
 ## Declaration
 
-```swift
+```
 object LibraryPlaylistCreationRequest.Relationships.Tracks.Data
 ```
 
@@ -18,6 +19,8 @@ object LibraryPlaylistCreationRequest.Relationships.Tracks.Data
 
 - `id` (string) *(required)*: The unique identifier for the track. This ID can be a catalog identifier or a library identifier, depending on the track type.
 - `type` (string) *(required)*: The type of the track to be added.
+
+  **Allowed Values**: `library-music-videos`, `library-songs`, `music-videos`, `songs`
 
 
 ---

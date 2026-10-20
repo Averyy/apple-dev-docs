@@ -1,7 +1,8 @@
 # NSGlassEffectView.Style.regular
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Standard glass effect style.
 
@@ -12,6 +13,10 @@ Standard glass effect style.
 
 ```swift
 case regular
+```
+
+```c
+NSGlassEffectViewStyleRegular
 ```
 
 

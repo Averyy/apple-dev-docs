@@ -1,7 +1,8 @@
 # computeCullingPlanes(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the culling planes for this camera’s view volume, writing them to an output span.
 
@@ -31,7 +32,8 @@ The planes are outward-facing: each plane’s normal points away from the visibl
 
 ## See Also
 
-- [func computeCullingPlanes() -> [LowLevelRenderer.CullConfiguration.Plane]](lowlevelrenderer/camera/computecullingplanes.md)
+### Computing culling planes
+- [func computeCullingPlanes() -> [LowLevelRenderer.CullConfiguration.Plane]](./computecullingplanes%28%29.md)
   Computes and returns the culling planes for this camera’s view volume.
 
 

@@ -1,7 +1,8 @@
 # userPasswordOption
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An `NSString` object for the user’s password which is optional for encryption.
 
@@ -19,9 +20,14 @@ An `NSString` object for the user’s password which is optional for encryption.
 static let userPasswordOption: PDFDocumentWriteOption
 ```
 
+```c
+extern PDFDocumentWriteOption const PDFDocumentUserPasswordOption;
+```
+
 ## See Also
 
-- [static let ownerPasswordOption: PDFDocumentWriteOption](pdfdocumentwriteoption/ownerpasswordoption.md)
+### Getting Write Option Properties
+- [static let ownerPasswordOption: PDFDocumentWriteOption](./ownerpasswordoption.md)
   An `NSString` object for the owner’s password which is required for encryption.
 
 

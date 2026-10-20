@@ -1,7 +1,8 @@
 # luminanceToAlpha
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns a filter that sets the opacity of each pixel based on its luminance.
 
@@ -30,7 +31,8 @@ The filter computes the luminance of each pixel and uses it to define the opacit
 
 ## See Also
 
-- [static func alphaThreshold(min: Double, max: Double, color: Color) -> GraphicsContext.Filter](graphicscontext/filter/alphathreshold(min:max:color:).md)
+### Adjusting opacity
+- [static func alphaThreshold(min: Double, max: Double, color: Color) -> GraphicsContext.Filter](./alphathreshold%28min,max,color%29.md)
   Returns a filter that replaces each pixel with alpha components within a range by a constant color, or transparency otherwise.
 
 

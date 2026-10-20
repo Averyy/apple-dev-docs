@@ -1,7 +1,8 @@
 # addChildBehavior(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a dynamic behavior, as a child, to a custom dynamic behavior.
 
@@ -9,7 +10,7 @@ Adds a dynamic behavior, as a child, to a custom dynamic behavior.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,22 +19,31 @@ Adds a dynamic behavior, as a child, to a custom dynamic behavior.
 func addChildBehavior(_ behavior: UIDynamicBehavior)
 ```
 
+```objc
+- (void) addChildBehavior:(UIDynamicBehavior *) behavior;
+```
+
 #### Discussion
 
-Call this method only on custom subclasses of the [`UIDynamicBehavior`](uidynamicbehavior.md) class.
+Call this method only on custom subclasses of the [`UIDynamicBehavior`](../uidynamicbehavior.md) class.
 
 ## Parameters
 
-- `behavior`: The dynamic behavior you want to add as a child. The parent behavior ignores your use of this method if you: - Provide a `nil` value
-- Provide a behavior instance that you’ve already added to the behavior
+- `behavior`: The dynamic behavior you want to add as a child.
+
+  The parent behavior ignores your use of this method if you:
+
+  - Provide a `nil` value
+  - Provide a behavior instance that you’ve already added to the behavior
 
 ## See Also
 
-- [var action: (() -> Void)?](uidynamicbehavior/action.md)
+### Configuring a dynamic behavior
+- [var action: (() -> Void)?](./action.md)
   The block you want to execute during dynamic animation.
-- [var childBehaviors: [UIDynamicBehavior]](uidynamicbehavior/childbehaviors.md)
+- [var childBehaviors: [UIDynamicBehavior]](./childbehaviors.md)
   Returns the array of dynamic behaviors that are children of a custom dynamic behavior.
-- [func removeChildBehavior(UIDynamicBehavior)](uidynamicbehavior/removechildbehavior(_:).md)
+- [func removeChildBehavior(UIDynamicBehavior)](./removechildbehavior%28_%29.md)
   Removes a child dynamic behavior from a custom dynamic behavior.
 
 

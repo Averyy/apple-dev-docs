@@ -1,7 +1,8 @@
 # isGS1DataCarrier
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the barcode carries any global standards data.
 
@@ -22,9 +23,10 @@ let isGS1DataCarrier: Bool
 
 ## See Also
 
-- [enum RequestDescriptor](requestdescriptor.md)
+### Inspecting an observation
+- [enum RequestDescriptor](../requestdescriptor.md)
   A type that describes the request and revision combination.
-- [let isColorInverted: Bool](barcodeobservation/iscolorinverted.md)
+- [let isColorInverted: Bool](./iscolorinverted.md)
   A Boolean value that indicates whether the barcode is color inverted.
 
 

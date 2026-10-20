@@ -1,7 +1,8 @@
 # ServiceDebugReference
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A URI that references debugging information for a request.
 
@@ -10,9 +11,13 @@ A URI that references debugging information for a request.
 
 ## Declaration
 
-```swift
+```
 uri ServiceDebugReference
 ```
+
+
+
+**Maximum Length**: `2000`
 
 #### Discussion
 
@@ -20,7 +25,8 @@ Don’t include this data in a response from a production service.
 
 ## See Also
 
-- [object ExecutionMetrics](executionmetrics.md)
+### Instrumenting Your Service
+- [object ExecutionMetrics](./executionmetrics.md)
   Timing information to isolate service performance from network delays.
 
 

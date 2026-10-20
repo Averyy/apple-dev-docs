@@ -1,7 +1,8 @@
 # NetworkDNSProxyProviderConfigurationObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The dictionary of vendor-specific configuration items.
 
@@ -14,7 +15,7 @@ The dictionary of vendor-specific configuration items.
 
 ## Declaration
 
-```swift
+```
 object NetworkDNSProxyProviderConfigurationObject
 ```
 

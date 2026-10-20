@@ -1,7 +1,8 @@
 # Styles
 
 **Framework**: MapKit JS  
-**Kind**: var
+**Kind**: var  
+**Role**: Static Property
 
 A static property that allows you to access the place selection accessory style enumeration.
 
@@ -10,7 +11,7 @@ A static property that allows you to access the place selection accessory style 
 
 ## Declaration
 
-```swift
+```
 static Styles: typeof PlaceSelectionAccessoryStyle;
 ```
 

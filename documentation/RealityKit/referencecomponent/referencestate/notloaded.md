@@ -1,7 +1,8 @@
 # ReferenceComponent.ReferenceState.notLoaded
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The reference isn’t loaded.
 

@@ -1,7 +1,8 @@
 # SRElectrocardiogramSample.Lead.leftArmMinusRightArm
 
 **Framework**: SensorKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The lead that records the sample is on the right arm.
 
@@ -16,9 +17,14 @@ The lead that records the sample is on the right arm.
 case leftArmMinusRightArm
 ```
 
+```c
+SRElectrocardiogramLeadLeftArmMinusRightArm
+```
+
 ## See Also
 
-- [SRElectrocardiogramSample.Lead.rightArmMinusLeftArm](srelectrocardiogramsample/lead-swift.enum/rightarmminusleftarm.md)
+### Locations
+- [SRElectrocardiogramSample.Lead.rightArmMinusLeftArm](./rightarmminusleftarm.md)
   The lead that records the sample is on the left arm.
 
 

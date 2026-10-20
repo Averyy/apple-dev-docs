@@ -1,7 +1,8 @@
 # wrappedValue
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The most recent fetched result from the Query.
 

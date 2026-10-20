@@ -1,7 +1,8 @@
 # processPendingChanges()
 
 **Framework**: SwiftData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the undo manager to record any changes made to the context’s registered models.
 
@@ -27,7 +28,8 @@ In AppKit-based applications, the system invokes this method at the end of each 
 
 ## See Also
 
-- [var undoManager: UndoManager?](modelcontext/undomanager.md)
+### Performing undo and redo
+- [var undoManager: UndoManager?](./undomanager.md)
   The object that provides undo support for the context.
 
 

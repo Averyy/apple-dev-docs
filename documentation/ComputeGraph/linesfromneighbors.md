@@ -1,11 +1,12 @@
 # linesFromNeighbors
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -15,7 +16,7 @@ void linesFromNeighbors(pointer<uniform_grid_t> grid, strided_buffer<float3> pos
 
 #### Discussion
 
-> **Note**: ![Graph](/images/com.apple.computegraph/linesFromNeighbors.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/linesFromNeighbors.svg)
 
 
 ---

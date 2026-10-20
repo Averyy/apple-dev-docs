@@ -1,7 +1,8 @@
 # CLRegionState
 
 **Framework**: Core Location  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that reflect the relationship of the current location to the region boundaries.
 
@@ -18,39 +19,44 @@ Constants that reflect the relationship of the current location to the region bo
 enum CLRegionState
 ```
 
+```c
+enum CLRegionState : NSInteger;
+```
+
 ## Topics
 
 ### Region States
-- [CLRegionState.unknown](clregionstate/unknown.md)
+- [CLRegionState.unknown](./clregionstate/unknown.md)
   It is unknown whether the location is inside or outside of the region.
-- [CLRegionState.inside](clregionstate/inside.md)
+- [CLRegionState.inside](./clregionstate/inside.md)
   The location is inside of the given region.
-- [CLRegionState.outside](clregionstate/outside.md)
+- [CLRegionState.outside](./clregionstate/outside.md)
   The location is outside of the given region.
 ### Initializers
-- [init?(rawValue: Int)](clregionstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./clregionstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func locationManager(CLLocationManager, didEnterRegion: CLRegion)](cllocationmanagerdelegate/locationmanager(_:didenterregion:).md)
+### Receiving region-related updates
+- [func locationManager(CLLocationManager, didEnterRegion: CLRegion)](./cllocationmanagerdelegate/locationmanager%28_,didenterregion%29.md)
   Tells the delegate that the user entered the specified region.
-- [func locationManager(CLLocationManager, didExitRegion: CLRegion)](cllocationmanagerdelegate/locationmanager(_:didexitregion:).md)
+- [func locationManager(CLLocationManager, didExitRegion: CLRegion)](./cllocationmanagerdelegate/locationmanager%28_,didexitregion%29.md)
   Tells the delegate that the user left the specified region.
-- [func locationManager(CLLocationManager, didDetermineState: CLRegionState, for: CLRegion)](cllocationmanagerdelegate/locationmanager(_:diddeterminestate:for:).md)
+- [func locationManager(CLLocationManager, didDetermineState: CLRegionState, for: CLRegion)](./cllocationmanagerdelegate/locationmanager%28_,diddeterminestate,for%29.md)
   Tells the delegate about the state of the specified region.
-- [func locationManager(CLLocationManager, monitoringDidFailFor: CLRegion?, withError: any Error)](cllocationmanagerdelegate/locationmanager(_:monitoringdidfailfor:witherror:).md)
+- [func locationManager(CLLocationManager, monitoringDidFailFor: CLRegion?, withError: any Error)](./cllocationmanagerdelegate/locationmanager%28_,monitoringdidfailfor,witherror%29.md)
   Tells the delegate that a region monitoring error occurred.
-- [func locationManager(CLLocationManager, didStartMonitoringFor: CLRegion)](cllocationmanagerdelegate/locationmanager(_:didstartmonitoringfor:).md)
+- [func locationManager(CLLocationManager, didStartMonitoringFor: CLRegion)](./cllocationmanagerdelegate/locationmanager%28_,didstartmonitoringfor%29.md)
   Tells the delegate that a new region is being monitored.
 
 

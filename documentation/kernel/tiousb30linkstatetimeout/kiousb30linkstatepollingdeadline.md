@@ -1,7 +1,8 @@
 # kIOUSB30LinkStatePollingDeadline
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The polling deadline.
 
@@ -10,7 +11,7 @@ The polling deadline.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30LinkStatePollingDeadline = (kIOUSB30LinkStatePollingLFPSTimeout + 1 + kIOUSB30LinkStatePollingActiveTimeout + kIOUSB30LinkStatePollingConfigurationTimeout + kIOUSB30LinkStatePollingIdleTimeout)
 ```
 

@@ -1,7 +1,8 @@
 # targetTextScaling
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The text scaling mode to use after reading the text from disk.
 
@@ -22,11 +23,12 @@ static let targetTextScaling: NSAttributedString.DocumentReadingOptionKey
 
 #### Discussion
 
-The value of this property is one of the options of the [`NSTextScalingType`](https://developer.apple.com/documentation/uikit/nstextscalingtype) type. Some platforms scale fonts to improve their appearance. Include this option to specify the text-scaling mode you want to use for the document you read.
+The value of this property is one of the options of the [`NSTextScalingType`](../../../UIKit/nstextscalingtype.md) type. Some platforms scale fonts to improve their appearance. Include this option to specify the text-scaling mode you want to use for the document you read.
 
 ## See Also
 
-- [static let sourceTextScaling: NSAttributedString.DocumentReadingOptionKey](nsattributedstring/documentreadingoptionkey/sourcetextscaling.md)
+### Getting the font-scaling options
+- [static let sourceTextScaling: NSAttributedString.DocumentReadingOptionKey](./sourcetextscaling.md)
   The text-scaling mode to associate with the document’s content.
 
 

@@ -1,7 +1,8 @@
 # willFinishRunning()
 
 **Framework**: Automator  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides an opportunity for an action to perform cleanup operations, such as closing windows and deallocating memory.
 
@@ -15,21 +16,26 @@ Provides an opportunity for an action to perform cleanup operations, such as clo
 func willFinishRunning()
 ```
 
+```objc
+- (void) willFinishRunning;
+```
+
 #### Discussion
 
 Overridde this method in actions that need to make asynchronous calls. Automator invokes this method when the action is about to complete its run phase.
 
 ## See Also
 
-- [func run(withInput: Any?) throws -> Any](amaction/run(withinput:).md)
+### Controlling the Action
+- [func run(withInput: Any?) throws -> Any](./run%28withinput%29.md)
   Requests the action to perform its task using the specified input.
-- [func runAsynchronously(withInput: Any?)](amaction/runasynchronously(withinput:).md)
+- [func runAsynchronously(withInput: Any?)](./runasynchronously%28withinput%29.md)
   Causes Automator to wait for notification that the action has completed execution, which allows the action to perform an asynchronous operation.
-- [func finishRunningWithError((any Error)?)](amaction/finishrunningwitherror(_:).md)
+- [func finishRunningWithError((any Error)?)](./finishrunningwitherror%28_%29.md)
   Causes the action to stop running and return an error, which, in turn, causes the workflow to stop.
-- [func stop()](amaction/stop.md)
+- [func stop()](./stop%28%29.md)
   Stops the action from running.
-- [func reset()](amaction/reset.md)
+- [func reset()](./reset%28%29.md)
   Resets the action to its initial state.
 
 

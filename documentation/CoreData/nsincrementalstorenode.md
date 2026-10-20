@@ -1,7 +1,8 @@
 # NSIncrementalStoreNode
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A concrete class used to represent basic nodes in a Core Data incremental store.
 
@@ -10,7 +11,7 @@ A concrete class used to represent basic nodes in a Core Data incremental store.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ A concrete class used to represent basic nodes in a Core Data incremental store.
 
 ```swift
 class NSIncrementalStoreNode
+```
+
+```objc
+@interface NSIncrementalStoreNode : NSObject
 ```
 
 #### Overview
@@ -29,51 +34,52 @@ You can subclass `NSIncrementalStoreNode` to provide custom behavior.
 ## Topics
 
 ### Initializing a Node
-- [init(objectID: NSManagedObjectID, withValues: [String : Any], version: UInt64)](nsincrementalstorenode/init(objectid:withvalues:version:).md)
+- [init(objectID: NSManagedObjectID, withValues: [String : Any], version: UInt64)](./nsincrementalstorenode/init%28objectid,withvalues,version%29.md)
   Returns an object initialized with the given values.
 ### Managing Node Data
-- [var objectID: NSManagedObjectID](nsincrementalstorenode/objectid.md)
+- [var objectID: NSManagedObjectID](./nsincrementalstorenode/objectid.md)
   The object ID that identifies the data stored by the receiver.
-- [func update(withValues: [String : Any], version: UInt64)](nsincrementalstorenode/update(withvalues:version:).md)
+- [func update(withValues: [String : Any], version: UInt64)](./nsincrementalstorenode/update%28withvalues,version%29.md)
   Update the values and version to reflect new data being saved to or loaded from the external store.
-- [func value(for: NSPropertyDescription) -> Any?](nsincrementalstorenode/value(for:).md)
+- [func value(for: NSPropertyDescription) -> Any?](./nsincrementalstorenode/value%28for%29.md)
   Returns the value for the given property.
-- [var version: UInt64](nsincrementalstorenode/version.md)
+- [var version: UInt64](./nsincrementalstorenode/version.md)
   The version of data in the receiver.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSPersistentStoreCoordinator](nspersistentstorecoordinator.md)
+### Store Coordination
+- [class NSPersistentStoreCoordinator](./nspersistentstorecoordinator.md)
   An object that enables an app’s contexts and the underlying persistent stores to work together.
-- [class NSPersistentStore](nspersistentstore.md)
+- [class NSPersistentStore](./nspersistentstore.md)
   The abstract base class for all Core Data persistent stores.
-- [class NSPersistentStoreDescription](nspersistentstoredescription.md)
+- [class NSPersistentStoreDescription](./nspersistentstoredescription.md)
   A description object used to create and load a persistent store.
-- [class NSPersistentStoreRequest](nspersistentstorerequest.md)
+- [class NSPersistentStoreRequest](./nspersistentstorerequest.md)
   Criteria used to retrieve data from or save data to a persistent store.
-- [class NSPersistentStoreResult](nspersistentstoreresult.md)
+- [class NSPersistentStoreResult](./nspersistentstoreresult.md)
   The abstract base class for results returned from a persistent store coordinator.
-- [class NSPersistentStoreAsynchronousResult](nspersistentstoreasynchronousresult.md)
+- [class NSPersistentStoreAsynchronousResult](./nspersistentstoreasynchronousresult.md)
   A concrete class used to represent the results of an asynchronous request.
-- [class NSSaveChangesRequest](nssavechangesrequest.md)
+- [class NSSaveChangesRequest](./nssavechangesrequest.md)
   An encapsulation of a collection of changes to be made by an object store in response to a save operation on a managed object context.
-- [class NSAtomicStore](nsatomicstore.md)
+- [class NSAtomicStore](./nsatomicstore.md)
   An abstract superclass that you subclass to create a Core Data atomic store.
-- [class NSAtomicStoreCacheNode](nsatomicstorecachenode.md)
+- [class NSAtomicStoreCacheNode](./nsatomicstorecachenode.md)
   A concrete class that you use to represent basic nodes in a Core Data atomic store.
-- [class NSIncrementalStore](nsincrementalstore.md)
+- [class NSIncrementalStore](./nsincrementalstore.md)
   An abstract superclass defining the API through which Core Data communicates with a store.
 
 

@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of shared experience.
 
@@ -21,11 +22,12 @@ var type: GroupActivityMetadata.ActivityType
 
 ## Mentions
 
-- [Defining your app’s SharePlay activities](defining-your-apps-shareplay-activities.md)
+- [Defining your app’s SharePlay activities](../defining-your-apps-shareplay-activities.md)
 
 ## See Also
 
-- [GroupActivityMetadata.ActivityType](groupactivitymetadata/activitytype.md)
+### Indicating the activity’s type
+- [GroupActivityMetadata.ActivityType](./activitytype.md)
   Constants that indicate the group activity’s type to the system.
 
 

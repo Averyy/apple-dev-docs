@@ -1,7 +1,8 @@
 # GKAccessPoint.Location
 
 **Framework**: GameKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Specifies the corner of the screen to display the access point.
 
@@ -19,37 +20,42 @@ Specifies the corner of the screen to display the access point.
 enum Location
 ```
 
+```c
+enum GKAccessPointLocation : NSInteger;
+```
+
 ## Topics
 
 ### Corners
-- [GKAccessPoint.Location.bottomLeading](gkaccesspoint/location-swift.enum/bottomleading.md)
+- [GKAccessPoint.Location.bottomLeading](./location-swift.enum/bottomleading.md)
   The lower-left corner of the screen.
-- [GKAccessPoint.Location.bottomTrailing](gkaccesspoint/location-swift.enum/bottomtrailing.md)
+- [GKAccessPoint.Location.bottomTrailing](./location-swift.enum/bottomtrailing.md)
   The lower-right corner of the screen.
-- [GKAccessPoint.Location.topLeading](gkaccesspoint/location-swift.enum/topleading.md)
+- [GKAccessPoint.Location.topLeading](./location-swift.enum/topleading.md)
   The upper-left corner of the screen.
-- [GKAccessPoint.Location.topTrailing](gkaccesspoint/location-swift.enum/toptrailing.md)
+- [GKAccessPoint.Location.topTrailing](./location-swift.enum/toptrailing.md)
   The upper-right corner of the screen.
 ### Initializers
-- [init?(rawValue: Int)](gkaccesspoint/location-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./location-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var location: GKAccessPoint.Location](gkaccesspoint/location-swift.property.md)
+### Managing the location
+- [var location: GKAccessPoint.Location](./location-swift.property.md)
   The corner of the screen to display the access point.
-- [var frameInScreenCoordinates: CGRect](gkaccesspoint/frameinscreencoordinates.md)
+- [var frameInScreenCoordinates: CGRect](./frameinscreencoordinates.md)
   The frame of the access point in screen coordinates.
-- [var parentWindow: UIWindow?](gkaccesspoint/parentwindow.md)
+- [var parentWindow: UIWindow?](./parentwindow.md)
   The window that contains the access point.
 
 

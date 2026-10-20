@@ -1,7 +1,8 @@
 # &-=(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Subtracts the second value from the first and stores the difference in the left-hand-side variable, wrapping any overflow.
 
@@ -33,7 +34,7 @@ y &-= 21
 // y == 245 (after overflow)
 ```
 
-For more about arithmetic with overflow operators, see [`Overflow Operators`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/AdvancedOperators.html#ID37) in *[`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/)*.
+For more about arithmetic with overflow operators, see [Overflow Operators](https://docs.swift.org/swift-book/LanguageGuide/AdvancedOperators.html#ID37) in *[The Swift Programming Language](https://docs.swift.org/swift-book/)*.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # init(keyPath:)
 
 **Framework**: Core Animation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns an `CAPropertyAnimation` instance for the specified key path.
 
@@ -17,6 +18,10 @@ Creates and returns an `CAPropertyAnimation` instance for the specified key path
 
 ```swift
 convenience init(keyPath path: String?)
+```
+
+```objc
++ (instancetype) animationWithKeyPath:(NSString *) path;
 ```
 
 #### Return Value

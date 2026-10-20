@@ -1,7 +1,8 @@
 # DiskImage.Format.stack
 
 **Framework**: DiskImageKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Stacked disk image.
 
@@ -16,7 +17,8 @@ case stack
 
 ## See Also
 
-- [protocol StackedImage](stackedimage.md)
+### Related Documentation
+- [protocol StackedImage](../../stackedimage.md)
   The protocol for stacked disk images that contain multiple layers.
 
 

@@ -1,7 +1,8 @@
 # assign(count:to:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a `ProgressReporter` as a child, with its progress representing a portion of `self`’s progress.
 

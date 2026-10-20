@@ -1,7 +1,8 @@
 # FoveatedStreamingProviderFocusRegion
 
 **Framework**: Foveated Streaming  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Eye input data that describes the approximate region that the end user is looking, relative to the device pose.
 
@@ -17,19 +18,19 @@ struct FoveatedStreamingProviderFocusRegion
 ## Topics
 
 ### Instance Properties
-- [let direction: simd_float3](foveatedstreamingproviderfocusregion/direction.md)
+- [let direction: simd_float3](./foveatedstreamingproviderfocusregion/direction.md)
   The direction of the user’s gaze in device-relative coordinates.
-- [let distance: Float](foveatedstreamingproviderfocusregion/distance.md)
+- [let distance: Float](./foveatedstreamingproviderfocusregion/distance.md)
   The estimated distance to the user’s focal point, in meters.
-- [let timestamp: TimeInterval](foveatedstreamingproviderfocusregion/timestamp.md)
+- [let timestamp: TimeInterval](./foveatedstreamingproviderfocusregion/timestamp.md)
   The timestamp at which this focus region sample was captured, in the format returned by `CACurrentMediaTime()`.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,18 +1,19 @@
 # loadedTimeRanges
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of time ranges indicating media data that is readily available.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -21,13 +22,18 @@ nonisolated
 var loadedTimeRanges: [NSValue] { get }
 ```
 
+```objc
+@property (readonly) NSArray<NSValue *> * loadedTimeRanges;
+```
+
 #### Discussion
 
-The array contains [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) objects containing a [`CMTimeRange`](https://developer.apple.com/documentation/coremedia/cmtimerange) value indicating the times ranges for which the player item has media data readily available. The time ranges returned may be discontinuous.
+The array contains [`NSValue`](../../Foundation/nsvalue.md) objects containing a [`CMTimeRange`](../../CoreMedia/cmtimerange.md) value indicating the times ranges for which the player item has media data readily available. The time ranges returned may be discontinuous.
 
 ## See Also
 
-- [var seekableTimeRanges: [NSValue]](avplayeritem/seekabletimeranges.md)
+### Determining available time ranges
+- [var seekableTimeRanges: [NSValue]](./seekabletimeranges.md)
   An array of time ranges within which it is possible to seek.
 
 

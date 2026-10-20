@@ -1,7 +1,8 @@
 # NSXPCListenerDelegate
 
 **Framework**: Foundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The protocol that delegates to the XPC listener use to accept or reject new connections.
 
@@ -20,22 +21,27 @@ The protocol that delegates to the XPC listener use to accept or reject new conn
 protocol NSXPCListenerDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol NSXPCListenerDelegate <NSObject>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func listener(NSXPCListener, shouldAcceptNewConnection: NSXPCConnection) -> Bool](nsxpclistenerdelegate/listener(_:shouldacceptnewconnection:).md)
+- [func listener(NSXPCListener, shouldAcceptNewConnection: NSXPCConnection) -> Bool](./nsxpclistenerdelegate/listener%28_,shouldacceptnewconnection%29.md)
   Accepts or rejects a new connection to the listener.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSXPCListener](nsxpclistener.md)
+### XPC Services
+- [class NSXPCListener](./nsxpclistener.md)
   A listener that waits for new incoming connections, configures them, and accepts or rejects them.
-- [class NSXPCListenerEndpoint](nsxpclistenerendpoint.md)
+- [class NSXPCListenerEndpoint](./nsxpclistenerendpoint.md)
   An object that names a specific XPC listener.
 
 

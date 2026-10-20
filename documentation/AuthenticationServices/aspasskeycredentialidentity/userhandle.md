@@ -1,7 +1,8 @@
 # userHandle
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user handle of this passkey credential.
 
@@ -18,13 +19,18 @@ The user handle of this passkey credential.
 var userHandle: Data { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSData * userHandle;
+```
+
 #### Discussion
 
-Use the user handle, along with the [`credentialID`](aspasskeycredentialidentity/credentialid.md), to identify the correct credential to use for a given relying party request.
+Use the user handle, along with the [`credentialID`](./credentialid.md), to identify the correct credential to use for a given relying party request.
 
 ## See Also
 
-- [var userName: String](aspasskeycredentialidentity/username.md)
+### Associating a user
+- [var userName: String](./username.md)
   The username of this passkey credential.
 
 

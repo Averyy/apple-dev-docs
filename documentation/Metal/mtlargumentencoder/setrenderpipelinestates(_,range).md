@@ -1,7 +1,8 @@
 # setRenderPipelineStates(_:range:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes references to an array of render pipeline states into the argument buffer.
 
@@ -11,7 +12,7 @@ Encodes references to an array of render pipeline states into the argument buffe
 - Mac Catalyst 13.0+
 - macOS 10.14+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,19 +23,20 @@ func setRenderPipelineStates(_ pipelines: [(any MTLRenderPipelineState)?], range
 ## Parameters
 
 - `pipelines`: An array of pipeline states the method encodes.
-- `range`: A range of indices within the argument buffer for each element in `pipelines`. The values correspond to either the index IDs of declarations in Metal Shading Language (MSL) or the [`index`](mtlargumentdescriptor/index.md) property of [`MTLArgumentDescriptor`](mtlargumentdescriptor.md) instances.
+- `range`: A range of indices within the argument buffer for each element in `pipelines`. The values correspond to either the index IDs of declarations in Metal Shading Language (MSL) or the [`index`](../mtlargumentdescriptor/index.md) property of [`MTLArgumentDescriptor`](../mtlargumentdescriptor.md) instances.
 
 ## See Also
 
-- [func setRenderPipelineState((any MTLRenderPipelineState)?, index: Int)](mtlargumentencoder/setrenderpipelinestate(_:index:).md)
+### Encoding pipeline states
+- [func setRenderPipelineState((any MTLRenderPipelineState)?, index: Int)](./setrenderpipelinestate%28_,index%29.md)
   Encodes a reference to a render pipeline state into the argument buffer.
-- [func setComputePipelineState((any MTLComputePipelineState)?, index: Int)](mtlargumentencoder/setcomputepipelinestate(_:index:).md)
+- [func setComputePipelineState((any MTLComputePipelineState)?, index: Int)](./setcomputepipelinestate%28_,index%29.md)
   Encodes a reference to a compute pipeline state into the argument buffer.
-- [func setComputePipelineStates(UnsafePointer<(any MTLComputePipelineState)?>, with: NSRange)](mtlargumentencoder/setcomputepipelinestates(_:with:).md)
+- [func setComputePipelineStates(UnsafePointer<(any MTLComputePipelineState)?>, with: NSRange)](./setcomputepipelinestates%28_,with%29.md)
   Encodes references to an array of compute pipeline states into the argument buffer.
-- [func setComputePipelineState((any MTLComputePipelineState)?, at: Int)](mtlargumentencoder/setcomputepipelinestate(_:at:).md)
+- [func setComputePipelineState((any MTLComputePipelineState)?, at: Int)](./setcomputepipelinestate%28_,at%29.md)
   Encodes a reference to a compute pipeline state into the argument buffer.
-- [func setComputePipelineStates([(any MTLComputePipelineState)?], range: Range<Int>)](mtlargumentencoder/setcomputepipelinestates(_:range:).md)
+- [func setComputePipelineStates([(any MTLComputePipelineState)?], range: Range<Int>)](./setcomputepipelinestates%28_,range%29.md)
   Encodes references to an array of compute pipeline states into the argument buffer.
 
 

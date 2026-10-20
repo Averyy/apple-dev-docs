@@ -1,7 +1,8 @@
 # tc
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The TC interface byte of ATR group, or `nil` if TC is not present.
 
@@ -20,13 +21,18 @@ The TC interface byte of ATR group, or `nil` if TC is not present.
 var tc: NSNumber? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSNumber * TC;
+```
+
 ## See Also
 
-- [var `protocol`: NSNumber?](tksmartcardatr/interfacegroup/protocol.md)
+### Accessing Interface Group Protocol and Bytes
+- [var `protocol`: NSNumber?](./protocol.md)
   The protocol for this group.
-- [var ta: NSNumber?](tksmartcardatr/interfacegroup/ta.md)
+- [var ta: NSNumber?](./ta.md)
   The TA interface byte of ATR group, or `nil` if TA is not present.
-- [var tb: NSNumber?](tksmartcardatr/interfacegroup/tb.md)
+- [var tb: NSNumber?](./tb.md)
   The TB interface byte of ATR group, or `nil` if TB is not present.
 
 

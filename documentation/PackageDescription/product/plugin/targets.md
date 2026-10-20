@@ -1,7 +1,8 @@
 # targets
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the plug-in target to vend as a product.
 

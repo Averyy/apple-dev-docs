@@ -6,7 +6,7 @@ Handling metadata in other file formats.
 
 #### Overview
 
-This section describes how metadata is handled when QuickTime imports other file formats. For more information about metadata, refer to [`Metadata atoms and types`](metadata_atoms_and_types.md) and [`Compressed movie resources`](compressed_movie_resources.md).
+This section describes how metadata is handled when QuickTime imports other file formats. For more information about metadata, refer to [Metadata atoms and types](./metadata_atoms_and_types.md) and [Compressed movie resources](./compressed_movie_resources.md).
 
 Each section includes a table with specific details on the following, where applicable:
 
@@ -19,30 +19,31 @@ Each section includes a table with specific details on the following, where appl
 ## Topics
 
 ### Handling metadata
-- [Digital video file formats](digital_video_file_formats.md)
-- [Digital audio file formats](digital_audio_file_formats.md)
-- [Still image file formats](still_image_file_formats.md)
-- [Animation and 3D file formats](animation_and_3d_file_formats.md)
+- [Digital video file formats](./digital_video_file_formats.md)
+- [Digital audio file formats](./digital_audio_file_formats.md)
+- [Still image file formats](./still_image_file_formats.md)
+- [Animation and 3D file formats](./animation_and_3d_file_formats.md)
 
 ## See Also
 
-- [Extensibility](extensibility.md)
+### Types and usage
+- [Extensibility](./extensibility.md)
   Avoid issues building extensibility into your file.
-- [Localization list sets](localization_list_sets.md)
+- [Localization list sets](./localization_list_sets.md)
   Provide metadata for more than one country or language.
-- [Type indicator](type_indicator.md)
+- [Type indicator](./type_indicator.md)
   Four bytes that indicate a type of data that QuickTime supports.
-- [Locale indicator](locale_indicator.md)
+- [Locale indicator](./locale_indicator.md)
   A four-byte value that indicates a locale.
-- [Data ordering](data_ordering.md)
+- [Data ordering](./data_ordering.md)
   Represent multiple representations of the same information, differing either by language or storage type or by the size or nature of the data.
-- [Well-known types](well-known_types.md)
+- [Well-known types](./well-known_types.md)
   Basic data types.
-- [Location metadata](location_metadata.md)
+- [Location metadata](./location_metadata.md)
   Storing the location coordinates, as well as several auxiliary pieces of information about a location, as metadata.
-- [QuickTime metadata keys](quicktime_metadata_keys.md)
+- [QuickTime metadata keys](./quicktime_metadata_keys.md)
   Use QuickTime keys to hold data in a Metadata atom.
-- [Direction definition](direction_definition.md)
+- [Direction definition](./direction_definition.md)
   Define a direction in metadata keys.
 
 

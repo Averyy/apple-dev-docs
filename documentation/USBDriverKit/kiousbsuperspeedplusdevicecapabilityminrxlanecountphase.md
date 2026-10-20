@@ -1,34 +1,36 @@
 # kIOUSBSuperSpeedPlusDeviceCapabilityMinRxLaneCountPhase
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 kIOUSBSuperSpeedPlusDeviceCapabilityMinRxLaneCountPhase
 ```
 
 ## See Also
 
-- [kIOUSBSuperSpeedPlusDeviceCapabilityMinRxLaneCount](kiousbsuperspeedplusdevicecapabilityminrxlanecount.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilityMinTxLaneCount](kiousbsuperspeedplusdevicecapabilitymintxlanecount.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilityMinTxLaneCountPhase](kiousbsuperspeedplusdevicecapabilitymintxlanecountphase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilityReserved](kiousbsuperspeedplusdevicecapabilityreserved.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilityReservedPhase](kiousbsuperspeedplusdevicecapabilityreservedphase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkAsymmetric](kiousbsuperspeedplusdevicecapabilitysublinkasymmetric.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkDirection](kiousbsuperspeedplusdevicecapabilitysublinkdirection.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkDirectionPhase](kiousbsuperspeedplusdevicecapabilitysublinkdirectionphase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkDirectionRx](kiousbsuperspeedplusdevicecapabilitysublinkdirectionrx.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkDirectionTx](kiousbsuperspeedplusdevicecapabilitysublinkdirectiontx.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSE](kiousbsuperspeedplusdevicecapabilitysublinklse.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEBits](kiousbsuperspeedplusdevicecapabilitysublinklsebits.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEGbits](kiousbsuperspeedplusdevicecapabilitysublinklsegbits.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEKbits](kiousbsuperspeedplusdevicecapabilitysublinklsekbits.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEMbits](kiousbsuperspeedplusdevicecapabilitysublinklsembits.md)
+### Getting the Device Capabilities
+- [kIOUSBSuperSpeedPlusDeviceCapabilityMinRxLaneCount](./kiousbsuperspeedplusdevicecapabilityminrxlanecount.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilityMinTxLaneCount](./kiousbsuperspeedplusdevicecapabilitymintxlanecount.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilityMinTxLaneCountPhase](./kiousbsuperspeedplusdevicecapabilitymintxlanecountphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilityReserved](./kiousbsuperspeedplusdevicecapabilityreserved.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilityReservedPhase](./kiousbsuperspeedplusdevicecapabilityreservedphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkAsymmetric](./kiousbsuperspeedplusdevicecapabilitysublinkasymmetric.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkDirection](./kiousbsuperspeedplusdevicecapabilitysublinkdirection.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkDirectionPhase](./kiousbsuperspeedplusdevicecapabilitysublinkdirectionphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkDirectionRx](./kiousbsuperspeedplusdevicecapabilitysublinkdirectionrx.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkDirectionTx](./kiousbsuperspeedplusdevicecapabilitysublinkdirectiontx.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSE](./kiousbsuperspeedplusdevicecapabilitysublinklse.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEBits](./kiousbsuperspeedplusdevicecapabilitysublinklsebits.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEGbits](./kiousbsuperspeedplusdevicecapabilitysublinklsegbits.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEKbits](./kiousbsuperspeedplusdevicecapabilitysublinklsekbits.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEMbits](./kiousbsuperspeedplusdevicecapabilitysublinklsembits.md)
 
 
 ---

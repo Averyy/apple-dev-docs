@@ -1,7 +1,8 @@
 # document
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the document with which the outline is associated.
 
@@ -19,15 +20,20 @@ Returns the document with which the outline is associated.
 weak var document: PDFDocument? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) PDFDocument * document;
+```
+
 ## See Also
 
-- [var numberOfChildren: Int](pdfoutline/numberofchildren.md)
+### Getting Information About an Outline
+- [var numberOfChildren: Int](./numberofchildren.md)
   Returns the number of child outline objects in the outline.
-- [var parent: PDFOutline?](pdfoutline/parent.md)
+- [var parent: PDFOutline?](./parent.md)
   Returns the parent outline object of the outline (returns `NULL` if called on the root outline object).
-- [func child(at: Int) -> PDFOutline?](pdfoutline/child(at:).md)
+- [func child(at: Int) -> PDFOutline?](./child%28at%29.md)
   Returns the child outline object at the specified index.
-- [var index: Int](pdfoutline/index.md)
+- [var index: Int](./index.md)
   Returns the index of the outline.
 
 

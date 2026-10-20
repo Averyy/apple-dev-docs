@@ -1,12 +1,15 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a carousel table view style.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2 (renamed: VerticalTabViewStyle)
+
+> **Deprecated**: Use [`verticalPage`](../tabviewstyle/verticalpage.md) instead.
 
 ## Declaration
 

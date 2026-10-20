@@ -1,7 +1,8 @@
 # init(device:imageDescriptor:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an empty image.
 
@@ -19,13 +20,17 @@ Initializes an empty image.
 convenience init(device: any MTLDevice, imageDescriptor: MPSImageDescriptor)
 ```
 
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device imageDescriptor:(const MPSImageDescriptor *) imageDescriptor;
+```
+
 #### Return Value
 
-A valid [`MPSImage`](mpsimage.md) object or `nil`, if failure.
+A valid [`MPSImage`](../mpsimage.md) object or `nil`, if failure.
 
 #### Discussion
 
-Storage for the image data is allocated lazily on the first use of the [`MPSImage`](mpsimage.md) object, or when the [`texture`](mpsimage/texture.md) property is first read.
+Storage for the image data is allocated lazily on the first use of the [`MPSImage`](../mpsimage.md) object, or when the [`texture`](./texture.md) property is first read.
 
 ## Parameters
 
@@ -34,11 +39,12 @@ Storage for the image data is allocated lazily on the first use of the [`MPSImag
 
 ## See Also
 
-- [class MPSImageDescriptor](mpsimagedescriptor.md)
-  A description of the attributes used to create an [`MPSImage`](mpsimage.md).
-- [convenience init(texture: any MTLTexture, featureChannels: Int)](mpsimage/init(texture:featurechannels:).md)
+### Initializers
+- [class MPSImageDescriptor](../mpsimagedescriptor.md)
+  A description of the attributes used to create an [`MPSImage`](../mpsimage.md).
+- [convenience init(texture: any MTLTexture, featureChannels: Int)](./init%28texture,featurechannels%29.md)
   Initializes an image from a texture. The user-allocated texture has been created for a specific number of feature channels and number of images.
-- [init(parentImage: MPSImage, sliceRange: NSRange, featureChannels: Int)](mpsimage/init(parentimage:slicerange:featurechannels:).md)
+- [init(parentImage: MPSImage, sliceRange: NSRange, featureChannels: Int)](./init%28parentimage,slicerange,featurechannels%29.md)
 
 
 ---

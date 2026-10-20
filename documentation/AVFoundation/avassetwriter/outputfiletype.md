@@ -1,7 +1,8 @@
 # outputFileType
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of container file that the writer outputs.
 
@@ -19,9 +20,14 @@ The type of container file that the writer outputs.
 var outputFileType: AVFileType { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) AVFileType outputFileType;
+```
+
 ## See Also
 
-- [var outputURL: URL](avassetwriter/outputurl.md)
+### Accessing output settings
+- [var outputURL: URL](./outputurl.md)
   The location of the container file that the writer outputs.
 
 

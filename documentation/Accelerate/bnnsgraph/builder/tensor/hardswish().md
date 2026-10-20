@@ -1,7 +1,8 @@
 # hardSwish()
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a hard swish activation operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a hard swish activation operation to the current graph.
 ```swift
 func hardSwish() -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 
 ---

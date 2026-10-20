@@ -1,7 +1,8 @@
 # read(from:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reads the encoded transformer from a file.
 
@@ -30,9 +31,10 @@ The decoded transformer.
 
 ## See Also
 
-- [func write(Self.Transformer, to: URL, overwrite: Bool) throws](tabularestimator/write(_:to:overwrite:).md)
+### Reading and writing
+- [func write(Self.Transformer, to: URL, overwrite: Bool) throws](./write%28_,to,overwrite%29.md)
   Writes the encoded transformer to a file.
-- [associatedtype Transformer : TabularTransformer](tabularestimator/transformer.md)
+- [associatedtype Transformer : TabularTransformer](./transformer.md)
   The transformer type created by this estimator.
 
 

@@ -1,11 +1,12 @@
 # CustomReflectable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var customMirror: Mirror](string/utf16view/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   Returns a mirror that reflects the UTF-16 view of a string.
 
 

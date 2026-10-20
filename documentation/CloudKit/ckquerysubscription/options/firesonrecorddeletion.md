@@ -1,7 +1,8 @@
 # firesOnRecordDeletion
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that instructs CloudKit to send a push notification when it deletes a record that matches a subscription’s criteria.
 
@@ -20,13 +21,18 @@ An option that instructs CloudKit to send a push notification when it deletes a 
 static var firesOnRecordDeletion: CKQuerySubscription.Options { get }
 ```
 
+```c
+CKQuerySubscriptionOptionsFiresOnRecordDeletion
+```
+
 ## See Also
 
-- [static var firesOnRecordCreation: CKQuerySubscription.Options](ckquerysubscription/options/firesonrecordcreation.md)
+### Accessing Subscription Options
+- [static var firesOnRecordCreation: CKQuerySubscription.Options](./firesonrecordcreation.md)
   An option that instructs CloudKit to send a push notification when it creates a record that matches a subscription’s criteria.
-- [static var firesOnRecordUpdate: CKQuerySubscription.Options](ckquerysubscription/options/firesonrecordupdate.md)
+- [static var firesOnRecordUpdate: CKQuerySubscription.Options](./firesonrecordupdate.md)
   An option that instructs CloudKit to send a push notification when it modifies a record that matches a subscription’s criteria.
-- [static var firesOnce: CKQuerySubscription.Options](ckquerysubscription/options/firesonce.md)
+- [static var firesOnce: CKQuerySubscription.Options](./firesonce.md)
   An option that instructs CloudKit to send a push notification only once.
 
 

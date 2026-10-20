@@ -1,7 +1,8 @@
 # gibibytes
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The gibibytes unit of information.
 
@@ -21,37 +22,42 @@ The gibibytes unit of information.
 class var gibibytes: UnitInformationStorage { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSUnitInformationStorage * gibibytes;
+```
+
 ## See Also
 
-- [class var kibibits: UnitInformationStorage](unitinformationstorage/kibibits.md)
+### Accessing Predefined Binary Units
+- [class var kibibits: UnitInformationStorage](./kibibits.md)
   The kibibits unit of information.
-- [class var kibibytes: UnitInformationStorage](unitinformationstorage/kibibytes.md)
+- [class var kibibytes: UnitInformationStorage](./kibibytes.md)
   The kibibytes unit of information.
-- [class var mebibits: UnitInformationStorage](unitinformationstorage/mebibits.md)
+- [class var mebibits: UnitInformationStorage](./mebibits.md)
   The mebibits unit of information.
-- [class var mebibytes: UnitInformationStorage](unitinformationstorage/mebibytes.md)
+- [class var mebibytes: UnitInformationStorage](./mebibytes.md)
   The mebibytes unit of information.
-- [class var gibibits: UnitInformationStorage](unitinformationstorage/gibibits.md)
+- [class var gibibits: UnitInformationStorage](./gibibits.md)
   The gibibits unit of information.
-- [class var tebibits: UnitInformationStorage](unitinformationstorage/tebibits.md)
+- [class var tebibits: UnitInformationStorage](./tebibits.md)
   The tebibits unit of information.
-- [class var tebibytes: UnitInformationStorage](unitinformationstorage/tebibytes.md)
+- [class var tebibytes: UnitInformationStorage](./tebibytes.md)
   The tebibytes unit of information.
-- [class var pebibits: UnitInformationStorage](unitinformationstorage/pebibits.md)
+- [class var pebibits: UnitInformationStorage](./pebibits.md)
   The pebibits unit of information.
-- [class var pebibytes: UnitInformationStorage](unitinformationstorage/pebibytes.md)
+- [class var pebibytes: UnitInformationStorage](./pebibytes.md)
   The pebibytes unit of information.
-- [class var exbibits: UnitInformationStorage](unitinformationstorage/exbibits.md)
+- [class var exbibits: UnitInformationStorage](./exbibits.md)
   The exbibits unit of information.
-- [class var exbibytes: UnitInformationStorage](unitinformationstorage/exbibytes.md)
+- [class var exbibytes: UnitInformationStorage](./exbibytes.md)
   The exbibytes unit of information.
-- [class var zebibits: UnitInformationStorage](unitinformationstorage/zebibits.md)
+- [class var zebibits: UnitInformationStorage](./zebibits.md)
   The zebibits unit of information.
-- [class var zebibytes: UnitInformationStorage](unitinformationstorage/zebibytes.md)
+- [class var zebibytes: UnitInformationStorage](./zebibytes.md)
   The zebibytes unit of information.
-- [class var yobibits: UnitInformationStorage](unitinformationstorage/yobibits.md)
+- [class var yobibits: UnitInformationStorage](./yobibits.md)
   The yobibits unit of information.
-- [class var yobibytes: UnitInformationStorage](unitinformationstorage/yobibytes.md)
+- [class var yobibytes: UnitInformationStorage](./yobibytes.md)
   The yobibytes unit of information.
 
 

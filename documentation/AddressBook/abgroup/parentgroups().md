@@ -1,17 +1,22 @@
 # parentGroups()
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array containing a group’s parents—that is, the groups that a group belongs to.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func parentGroups() -> [Any]!
+```
+
+```objc
+- (NSArray *) parentGroups;
 ```
 
 #### Discussion
@@ -20,11 +25,12 @@ If this group doesn’t belong to any groups, this method returns an empty array
 
 ## See Also
 
-- [func addSubgroup(ABGroup!) -> Bool](abgroup/addsubgroup(_:).md)
+### Managing subgroups
+- [func addSubgroup(ABGroup!) -> Bool](./addsubgroup%28_%29.md)
   Adds a subgroup to another group.
-- [func removeSubgroup(ABGroup!) -> Bool](abgroup/removesubgroup(_:).md)
+- [func removeSubgroup(ABGroup!) -> Bool](./removesubgroup%28_%29.md)
   Removes a subgroup from a group.
-- [func subgroups() -> [Any]!](abgroup/subgroups.md)
+- [func subgroups() -> [Any]!](./subgroups%28%29.md)
   Returns an array containing a group’s subgroups.
 
 

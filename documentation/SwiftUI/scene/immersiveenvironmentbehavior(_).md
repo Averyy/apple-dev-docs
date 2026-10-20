@@ -1,7 +1,8 @@
 # immersiveEnvironmentBehavior(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the immersive environment behavior that should apply when this scene opens.
 
@@ -21,7 +22,7 @@ A scene that uses the specified `behavior`.
 
 #### Discussion
 
-Use this modifier to control how the immersive environment behaves when an [`ImmersiveSpace`](immersivespace.md) is opened, that uses an immersion style that supports keeping the immersive environment visible.
+Use this modifier to control how the immersive environment behaves when an [`ImmersiveSpace`](../immersivespace.md) is opened, that uses an immersion style that supports keeping the immersive environment visible.
 
 For example, the following app defines an Immersive Space that displays an interactive car engine model, and by setting the system environment behavior to `.coexist`, the immersive environment can remain shown while inspecting the details of the engine:
 
@@ -45,7 +46,8 @@ Note: The behavior is a preference and does not always have to be honored by the
 
 ## See Also
 
-- [func immersiveContentBrightness(ImmersiveContentBrightness) -> some Scene](scene/immersivecontentbrightness(_:).md)
+### Configuring immersive scenes
+- [func immersiveContentBrightness(ImmersiveContentBrightness) -> some Scene](./immersivecontentbrightness%28_%29.md)
   Sets the content brightness of an immersive space.
 
 

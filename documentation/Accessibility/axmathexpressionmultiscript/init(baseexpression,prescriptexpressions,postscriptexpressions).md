@@ -1,7 +1,8 @@
 # init(baseExpression:prescriptExpressions:postscriptExpressions:)
 
 **Framework**: Accessibility  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.2+
@@ -16,6 +17,10 @@
 
 ```swift
 init(baseExpression: AXMathExpression, prescriptExpressions: [AXMathExpressionSubSuperscript], postscriptExpressions: [AXMathExpressionSubSuperscript])
+```
+
+```objc
+- (instancetype) initWithBaseExpression:(AXMathExpression *) baseExpression prescriptExpressions:(NSArray<AXMathExpressionSubSuperscript *> *) prescriptExpressions postscriptExpressions:(NSArray<AXMathExpressionSubSuperscript *> *) postscriptExpressions;
 ```
 
 

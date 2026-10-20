@@ -1,7 +1,8 @@
 # AsyncCharacterSequence.Element
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of elements produced by this asynchronous sequence.
 
@@ -22,7 +23,7 @@ typealias Element = Character
 
 #### Discussion
 
-[`AsyncCharacterSequence`](asynccharactersequence.md) produces elements of type [`Character`](https://developer.apple.com/documentation/swift/character).
+[`AsyncCharacterSequence`](../asynccharactersequence.md) produces elements of type [`Character`](../../Swift/character.md).
 
 
 ---

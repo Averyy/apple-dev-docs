@@ -1,7 +1,8 @@
 # diskCapacity
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The capacity of the on-disk cache, in bytes.
 
@@ -20,9 +21,13 @@ The capacity of the on-disk cache, in bytes.
 var diskCapacity: Int { get set }
 ```
 
+```objc
+@property NSUInteger diskCapacity;
+```
+
 ## Mentions
 
-- [Accessing cached data](accessing-cached-data.md)
+- [Accessing cached data](../accessing-cached-data.md)
 
 #### Discussion
 
@@ -30,7 +35,8 @@ When set, the on-disk cache will truncate its contents to the given size, if nec
 
 ## See Also
 
-- [var currentDiskUsage: Int](urlcache/currentdiskusage.md)
+### Getting and setting on-disk cache properties
+- [var currentDiskUsage: Int](./currentdiskusage.md)
   The current size of the on-disk cache, in bytes.
 
 

@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct route_in6_old {
     ...
 };
@@ -17,9 +17,9 @@ struct route_in6_old {
 ## Topics
 
 ### Instance Properties
-- [ro_dst](route_in6_old/3944534-ro_dst.md)
-- [ro_flags](route_in6_old/3944535-ro_flags.md)
-- [ro_rt](route_in6_old/3944536-ro_rt.md)
+- [ro_dst](./route_in6_old/api-3944534-ro_dst.md)
+- [ro_flags](./route_in6_old/api-3944535-ro_flags.md)
+- [ro_rt](./route_in6_old/api-3944536-ro_rt.md)
 
 
 ---

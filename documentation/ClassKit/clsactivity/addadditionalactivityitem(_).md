@@ -1,7 +1,8 @@
 # addAdditionalActivityItem(_:)
 
 **Framework**: ClassKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an activity item to an activity.
 
@@ -18,9 +19,13 @@ Adds an activity item to an activity.
 func addAdditionalActivityItem(_ activityItem: CLSActivityItem)
 ```
 
+```objc
+- (void) addAdditionalActivityItem:(CLSActivityItem *) activityItem;
+```
+
 ## Mentions
 
-- [Recording additional metrics about a completed task](recording-additional-metrics-about-a-completed-task.md)
+- [Recording additional metrics about a completed task](../recording-additional-metrics-about-a-completed-task.md)
 
 ## Parameters
 
@@ -28,11 +33,12 @@ func addAdditionalActivityItem(_ activityItem: CLSActivityItem)
 
 ## See Also
 
-- [var primaryActivityItem: CLSActivityItem?](clsactivity/primaryactivityitem.md)
+### Managing activity items
+- [var primaryActivityItem: CLSActivityItem?](./primaryactivityitem.md)
   Adds an activity item to an activity and sets it as the primary activity item.
-- [var additionalActivityItems: [CLSActivityItem]](clsactivity/additionalactivityitems.md)
+- [var additionalActivityItems: [CLSActivityItem]](./additionalactivityitems.md)
   The list of activity items associated with an activity.
-- [func removeAllActivityItems()](clsactivity/removeallactivityitems.md)
+- [func removeAllActivityItems()](./removeallactivityitems%28%29.md)
   Deletes all activity items associated with the current activity.
 
 

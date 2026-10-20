@@ -1,7 +1,8 @@
 # init(device:resultRows:resultColumns:interiorColumns:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, resultRows: Int, resultColumns: Int, interiorColumns: Int)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device resultRows:(NSUInteger) resultRows resultColumns:(NSUInteger) resultColumns interiorColumns:(NSUInteger) interiorColumns;
 ```
 
 

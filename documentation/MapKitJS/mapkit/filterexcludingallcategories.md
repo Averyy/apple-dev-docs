@@ -1,7 +1,8 @@
 # filterExcludingAllCategories
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that excludes all point-of-interest categories.
 
@@ -10,21 +11,22 @@ A value that excludes all point-of-interest categories.
 
 ## Declaration
 
-```swift
+```
 get filterExcludingAllCategories(): PointOfInterestFilter;
 ```
 
 ## See Also
 
-- [filterIncludingAllCategories](mapkit/filterincludingallcategories.md)
+### Points of interest
+- [filterIncludingAllCategories](./filterincludingallcategories.md)
   A value that includes all point-of-interest categories.
-- [class PointOfInterestFilter](pointofinterestfilter.md)
+- [class PointOfInterestFilter](../pointofinterestfilter.md)
   A filter for determining the points of interest to include or exclude on a map or in a local search.
-- [class PointsOfInterestSearch](pointsofinterestsearch.md)
+- [class PointsOfInterestSearch](../pointsofinterestsearch.md)
   An object that fetches points of interest within a specified region.
-- [class MapFeatureAnnotation](mapfeatureannotation.md)
+- [class MapFeatureAnnotation](../mapfeatureannotation.md)
   An object that represents a map feature that the user selects.
-- [class MapFeatureAnnotationGlyphImage](mapfeatureannotationglyphimage.md)
+- [class MapFeatureAnnotationGlyphImage](../mapfeatureannotationglyphimage.md)
   An object that describes map feature annotation images.
 
 

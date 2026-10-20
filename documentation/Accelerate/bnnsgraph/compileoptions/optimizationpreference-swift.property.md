@@ -1,7 +1,8 @@
 # optimizationPreference
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A constant that specifies the graph compilation-optimization preferences.
 
@@ -11,7 +12,7 @@ A constant that specifies the graph compilation-optimization preferences.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ var optimizationPreference: BNNSGraph.CompileOptions.OptimizationPreference { ge
 
 ## See Also
 
-- [var useSingleThread: Bool](bnnsgraph/compileoptions/usesinglethread.md)
+### Specifying and querying compilation options
+- [var useSingleThread: Bool](./usesinglethread.md)
   A Boolean value that specifies whether the graph executes on one thread.
-- [var generateDebugInfo: Bool](bnnsgraph/compileoptions/generatedebuginfo.md)
+- [var generateDebugInfo: Bool](./generatedebuginfo.md)
   A Boolean value that specifies whether the generated graph includes debug info.
 
 

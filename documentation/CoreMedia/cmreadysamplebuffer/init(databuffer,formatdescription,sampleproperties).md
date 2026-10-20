@@ -1,7 +1,8 @@
 # init(dataBuffer:formatDescription:sampleProperties:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sample buffer with media data.
 
@@ -19,6 +20,8 @@ Creates a sample buffer with media data.
 ```swift
 init(dataBuffer content: Content, formatDescription: CMFormatDescription, sampleProperties: CMSampleBuffer.SamplePropertiesCollection)
 ```
+
+Available when `Content` is `CMReadOnlyDataBlockBuffer`.
 
 ## Parameters
 

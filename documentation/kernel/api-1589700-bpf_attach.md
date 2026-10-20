@@ -1,14 +1,15 @@
 # bpf_attach
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 errno_t bpf_attach(ifnet_t interface, u_int32_t data_link_type, u_int32_t header_length, bpf_send_func send, bpf_tap_func tap);
 ```
 
@@ -26,9 +27,10 @@ Registers an interface with BPF. This allows bpf devices to attach to your inter
 
 ## See Also
 
-- [bpf_tap_in](1589470-bpf_tap_in.md)
-- [bpf_tap_out](1589576-bpf_tap_out.md)
-- [bpfattach](1589467-bpfattach.md)
+### bpf
+- [bpf_tap_in](./api-1589470-bpf_tap_in.md)
+- [bpf_tap_out](./api-1589576-bpf_tap_out.md)
+- [bpfattach](./api-1589467-bpfattach.md)
 
 
 ---

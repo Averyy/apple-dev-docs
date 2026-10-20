@@ -1,7 +1,8 @@
 # speechRecognizer(_:availabilityDidChange:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the availability of its associated speech recognizer changed.
 
@@ -18,9 +19,13 @@ Tells the delegate that the availability of its associated speech recognizer cha
 optional func speechRecognizer(_ speechRecognizer: SFSpeechRecognizer, availabilityDidChange available: Bool)
 ```
 
+```objc
+- (void) speechRecognizer:(SFSpeechRecognizer *) speechRecognizer availabilityDidChange:(BOOL) available;
+```
+
 ## Parameters
 
-- `speechRecognizer`: The [`SFSpeechRecognizer`](sfspeechrecognizer.md) object whose availability changed.
+- `speechRecognizer`: The [`SFSpeechRecognizer`](../sfspeechrecognizer.md) object whose availability changed.
 - `available`: A Boolean value that indicates the new availability of the speech recognizer.
 
 

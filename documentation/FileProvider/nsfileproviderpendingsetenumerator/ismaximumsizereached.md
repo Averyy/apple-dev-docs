@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -15,6 +16,10 @@
 
 ```swift
 var isMaximumSizeReached: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isMaximumSizeReached) BOOL maximumSizeReached;
 ```
 
 

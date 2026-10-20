@@ -1,7 +1,8 @@
 # scrollContentBackground(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the visibility of the background for scrollable views within this view.
 
@@ -41,9 +42,10 @@ On macOS 15.0 and later, the visibility of the scroll background helps achieve t
 
 ## See Also
 
-- [func scrollClipDisabled(Bool) -> some View](view/scrollclipdisabled(_:).md)
+### Managing content visibility
+- [func scrollClipDisabled(Bool) -> some View](./scrollclipdisabled%28_%29.md)
   Sets whether a scroll view clips its content to its bounds.
-- [struct ScrollContentOffsetAdjustmentBehavior](scrollcontentoffsetadjustmentbehavior.md)
+- [struct ScrollContentOffsetAdjustmentBehavior](../scrollcontentoffsetadjustmentbehavior.md)
   A type that defines the different kinds of content offset adjusting behaviors a scroll view can have.
 
 

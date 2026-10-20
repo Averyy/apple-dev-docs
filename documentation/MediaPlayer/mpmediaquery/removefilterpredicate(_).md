@@ -1,7 +1,8 @@
 # removeFilterPredicate(_:)
 
 **Framework**: Media Player  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a filter predicate from a query.
 
@@ -17,23 +18,28 @@ Removes a filter predicate from a query.
 func removeFilterPredicate(_ predicate: MPMediaPredicate)
 ```
 
+```objc
+- (void) removeFilterPredicate:(MPMediaPredicate *) predicate;
+```
+
 ## Parameters
 
 - `predicate`: The media predicate to remove from the set of predicates for the query.
 
 ## See Also
 
-- [var filterPredicates: Set<MPMediaPredicate>?](mpmediaquery/filterpredicates.md)
+### Configuring media queries
+- [var filterPredicates: Set<MPMediaPredicate>?](./filterpredicates.md)
   The media property predicates of the media query.
-- [func addFilterPredicate(MPMediaPredicate)](mpmediaquery/addfilterpredicate(_:).md)
+- [func addFilterPredicate(MPMediaPredicate)](./addfilterpredicate%28_%29.md)
   Adds a media property predicate to a query.
-- [var groupingType: MPMediaGrouping](mpmediaquery/groupingtype.md)
+- [var groupingType: MPMediaGrouping](./groupingtype.md)
   The grouping for collections retrieved with the media query.
-- [var itemSections: [MPMediaQuerySection]?](mpmediaquery/itemsections.md)
+- [var itemSections: [MPMediaQuerySection]?](./itemsections.md)
   An array representing the section grouping of the query’s specified media items.
-- [var collectionSections: [MPMediaQuerySection]?](mpmediaquery/collectionsections.md)
+- [var collectionSections: [MPMediaQuerySection]?](./collectionsections.md)
   An array representing the section grouping of the query’s specified media item collections.
-- [enum MPMediaGrouping](mpmediagrouping.md)
+- [enum MPMediaGrouping](../mpmediagrouping.md)
   Keys used to configure a media query.
 
 

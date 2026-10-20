@@ -1,7 +1,8 @@
 # CSUserQuery.Suggestions
 
 **Framework**: Core Spotlight  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence that contains the suggested completions for a search string.
 
@@ -21,26 +22,27 @@ struct Suggestions
 ## Topics
 
 ### Structures
-- [CSUserQuery.Suggestions.Iterator](csuserquery/suggestions-swift.struct/iterator.md)
+- [CSUserQuery.Suggestions.Iterator](./suggestions-swift.struct/iterator.md)
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var responses: CSUserQuery.Responses](csuserquery/responses-swift.property.md)
+### Executing the query automatically
+- [var responses: CSUserQuery.Responses](./responses-swift.property.md)
   The matching results and suggestions for the current query string.
-- [var suggestions: CSUserQuery.Suggestions](csuserquery/suggestions-swift.property.md)
+- [var suggestions: CSUserQuery.Suggestions](./suggestions-swift.property.md)
   An asynchronous sequence of suggested completions for the current query text.
-- [CSUserQuery.Responses](csuserquery/responses-swift.struct.md)
+- [CSUserQuery.Responses](./responses-swift.struct.md)
   An asynchronous sequence that contains the results and suggestions for a query string.
-- [CSUserQuery.Item](csuserquery/item.md)
+- [CSUserQuery.Item](./item.md)
   A search result that the query returns in a response.
-- [CSUserQuery.Suggestion](csuserquery/suggestion.md)
+- [CSUserQuery.Suggestion](./suggestion.md)
   A suggested text completion for a query’s search term.
 
 

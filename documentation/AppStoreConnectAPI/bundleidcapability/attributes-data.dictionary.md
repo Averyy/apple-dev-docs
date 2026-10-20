@@ -1,7 +1,8 @@
 # BundleIdCapability.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a Bundle ID Capabilities resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a Bundle ID Capabilities resource.
 
 ## Declaration
 
-```swift
+```
 object BundleIdCapability.Attributes
 ```
 

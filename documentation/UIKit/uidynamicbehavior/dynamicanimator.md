@@ -1,7 +1,8 @@
 # dynamicAnimator
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dynamic animator that the dynamic behavior is associated with.
 
@@ -9,7 +10,7 @@ The dynamic animator that the dynamic behavior is associated with.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ The dynamic animator that the dynamic behavior is associated with.
 var dynamicAnimator: UIDynamicAnimator? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UIDynamicAnimator * dynamicAnimator;
+```
+
 #### Discussion
 
 If the dynamic behavior is not associated with a dynamic animator, the value of this property is `nil`.
 
 ## See Also
 
-- [func willMove(to: UIDynamicAnimator?)](uidynamicbehavior/willmove(to:).md)
+### Responding to changes in the behavior tree
+- [func willMove(to: UIDynamicAnimator?)](./willmove%28to%29.md)
   Called when the dynamic behavior is added to, or removed from, a dynamic animator.
 
 

@@ -1,7 +1,8 @@
 # description
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Textual description of this correction type.
 

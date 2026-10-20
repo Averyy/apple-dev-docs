@@ -1,7 +1,8 @@
 # text
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string form of this expression.
 

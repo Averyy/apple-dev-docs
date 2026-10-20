@@ -1,23 +1,30 @@
 # requestMediaDataWhenReady(on:using:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Instructs the target to invoke a client-supplied block repeatedly, at its convenience, in order to gather sample buffers for playback.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.1+
-- macOS 10.13+
-- tvOS 11.0+
-- visionOS 1.0+
-- watchOS 4.0+
+- iOS 11.0+ - Deprecated in 27.0
+- iPadOS 11.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.13+ - Deprecated in 27.0
+- tvOS 11.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+- watchOS 4.0+ - Deprecated in 27.0
+
+> **Deprecated**: Attach renderer to a render synchronizer with sampleBufferReceiver(adding:) and use the receiver to enqueue samples on a detached Task instead
 
 ## Declaration
 
 ```swift
 func requestMediaDataWhenReady(on queue: dispatch_queue_t, using block: @escaping @Sendable () -> Void)
+```
+
+```objc
+- (void) requestMediaDataWhenReadyOnQueue:(dispatch_queue_t) queue usingBlock:(void (^)()) block;
 ```
 
 #### Discussion

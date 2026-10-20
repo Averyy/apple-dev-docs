@@ -1,7 +1,8 @@
 # GeocoderLookupOptions
 
 **Framework**: MapKit JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Interface
 
 Options that constrain geocoder lookup results to a specific area or a specific language.
 
@@ -10,37 +11,38 @@ Options that constrain geocoder lookup results to a specific area or a specific 
 
 ## Declaration
 
-```swift
+```
 interface GeocoderLookupOptions
 ```
 
 #### Overview
 
-Configure [`GeocoderLookupOptions`](geocoderlookupoptions.md) when performing a [`lookup()`](geocoder/lookup.md) to constrain geocoder results to a specific area or return results in a specific language.
+Configure [`GeocoderLookupOptions`](./geocoderlookupoptions.md) when performing a [`lookup()`](./geocoder/lookup.md) to constrain geocoder results to a specific area or return results in a specific language.
 
 ## Topics
 
 ### Options
-- [coordinate](geocoderlookupoptions/coordinate.md)
+- [coordinate](./geocoderlookupoptions/coordinate.md)
   Coordinates for constraining the lookup results.
-- [language](geocoderlookupoptions/language.md)
+- [language](./geocoderlookupoptions/language.md)
   The language to use when displaying the lookup results.
-- [limitToCountries](geocoderlookupoptions/limittocountries.md)
+- [limitToCountries](./geocoderlookupoptions/limittocountries.md)
   A list of countries for constraining the lookup results.
-- [region](geocoderlookupoptions/region.md)
+- [region](./geocoderlookupoptions/region.md)
   A region for constraining lookup results.
-- [signal](geocoderlookupoptions/signal.md)
+- [signal](./geocoderlookupoptions/signal.md)
   A signal object allowing you to cancel the request.
 
 ## See Also
 
-- [lookup(place, options)](geocoder/lookup.md)
+### Getting geocoder results
+- [lookup(place, options)](./geocoder/lookup.md)
   Converts an address to geographic coordinates.
-- [reverseLookup(coordinate, options)](geocoder/reverselookup.md)
+- [reverseLookup(coordinate, options)](./geocoder/reverselookup.md)
   Converts a geographic coordinate to an address.
-- [interface GeocoderReverseLookupOptions](geocoderreverselookupoptions.md)
+- [interface GeocoderReverseLookupOptions](./geocoderreverselookupoptions.md)
   An option that constrains reverse lookup results to a specific language.
-- [interface GeocoderResponse](geocoderresponse.md)
+- [interface GeocoderResponse](./geocoderresponse.md)
   The response from a geocoder lookup or reverse lookup.
 
 

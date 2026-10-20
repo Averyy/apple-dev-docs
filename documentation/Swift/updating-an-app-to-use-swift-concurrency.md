@@ -1,6 +1,8 @@
 # Updating an app to use Swift concurrency
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Sample Code  
+**Download**: [UpdatingAnAppToUseSwiftConcurrency.zip](https://docs-assets.developer.apple.com/published/438c082985aa/UpdatingAnAppToUseSwiftConcurrency.zip)
 
 Improve your app’s performance by refactoring your code to take advantage of asynchronous functions in Swift.
 
@@ -13,18 +15,18 @@ Improve your app’s performance by refactoring your code to take advantage of a
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC21 session [`10194: Swift Concurrency: Update a Sample App`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10194).
+> **Note**: This sample code project is associated with WWDC21 session [10194: Swift Concurrency: Update a Sample App](https://developer.apple.com/wwdc21/10194).
 
 Swift concurrency provides a standard set of language tools and techniques for concurrent programming. However, you may already have an existing project built with concurrency that uses other frameworks and techniques. You don’t have to convert all of your code all at once; instead, you can use specific refactoring techniques to convert your code one piece at time.
 
 This sample provides two separate versions of the Coffee Tracker app:
 
-- The original version uses completion handlers to query the HealthKit SDK and to respond to `CLKComplicationDataSource` calls, and dispatch queues to isolate concurrent access to memory. For more information on the original version, see [`Creating and updating a complication’s timeline`](https://developer.apple.com/documentation/clockkit/creating-and-updating-a-complication-s-timeline).
+- The original version uses completion handlers to query the HealthKit SDK and to respond to `CLKComplicationDataSource` calls, and dispatch queues to isolate concurrent access to memory. For more information on the original version, see [Creating and updating a complication’s timeline](../ClockKit/creating-and-updating-a-complication-s-timeline.md).
 - The updated version uses Swift’s concurrency features to provide clearer code with better error checking at compile time. It replaces the completion handlers with `async` functions, and uses actors to guarantee safe access to data.
 
 Watch the session to see the process step by step, and then compare the two projects to see the differences.
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 To add the complication to an active watch face, start by building and running the sample code project in the simulator, and follow these steps:
 
@@ -34,7 +36,7 @@ To add the complication to an active watch face, start by building and running t
 4. Scroll to the Coffee Tracker complication, and then click the Digital Crown again to save your changes.
 5. Tap the Coffee Tracker complication to go back to the app.
 
-For more information on setting up watch faces, see [`Change the watch face on your Apple Watch`](https://developer.apple.comhttps://support.apple.com/en-us/HT205536).
+For more information on setting up watch faces, see [Change the watch face on your Apple Watch](https://support.apple.com/en-us/HT205536).
 
 After configuring and running the Coffee Tracker app, you can test the background updates. Make sure the Coffee Tracker complication appears on the active watch face. Then build and run the app in Simulator, and follow these steps:
 
@@ -46,7 +48,7 @@ After configuring and running the Coffee Tracker app, you can test the backgroun
 
 Coffee Tracker updates the complication within 15 minutes; however, the update may be delayed based on the system’s current state.
 
-##### Convert Completion Handlers to Use Asynchronous Methods
+##### Convert completion handlers to use asynchronous methods
 
 The `HealthKitController` type contains several calls to the HealthKit SDK. In SDKs that support Swift concurrency, frameworks add `async`-`await` versions of most functions that previously took completion handlers. You can remove completion handlers by updating these calls to use the `async`-`await` versions. You suspend the `store.save()` operation by adding the `await` keyword. Execution resumes after the `await` completes. An `async` function can also be a throwing function, which you call by prepending `try await` to the function call. Wrap the call in a `do-catch` statement instead of using an `Error?` type as a parameter to the completion handler.
 
@@ -60,7 +62,7 @@ do {
 }
 ```
 
-In some cases an SDK call requires using a completion handler. For example, a call to [`init(type:predicate:anchor:limit:resultsHandler:)`](https://developer.apple.com/documentation/healthkit/hkanchoredobjectquery/init(type:predicate:anchor:limit:resultshandler:)) takes a completion handler, but the call that needs to `await` is the call to [`execute(_:)`](https://developer.apple.com/documentation/healthkit/hkhealthstore/execute(_:)).
+In some cases an SDK call requires using a completion handler. For example, a call to [`init(type:predicate:anchor:limit:resultsHandler:)`](../HealthKit/hkanchoredobjectquery/init%28type,predicate,anchor,limit,resultshandler%29.md) takes a completion handler, but the call that needs to `await` is the call to [`execute(_:)`](../HealthKit/hkhealthstore/execute%28_%29.md).
 
 To `await` the results of a completion handler in these cases, add a `continuation`:
 
@@ -121,7 +123,7 @@ case let backgroundTask as WKApplicationRefreshBackgroundTask:
     }
 ```
 
-##### Put the Coffee Data Class on the Main Actor
+##### Put the coffee data class on the main actor
 
 The `CoffeeData` class implements `ObservableObject` and has an `@Published` property to feed the SwiftUI views. To ensure that all updates to this property are made on the main thread, place the type on the main actor:
 
@@ -140,9 +142,9 @@ Update the `drinksUpdated()` method to call the `CoffeeDataStore` actor using an
 
 Calls to the `CoffeeData` object from SwiftUI views don’t require any use of `await` as these views are also on the main actor due to their use of `@EnvironmentObject`.
 
-##### Replace Delegates and Completion Handlers with Async Methods
+##### Replace delegates and completion handlers with async methods
 
-Several methods on the [`CLKComplicationDataSource`](https://developer.apple.com/documentation/clockkit/clkcomplicationdatasource) protocol used to configure the app’s timeline take completion handlers, which you can replace with their `async` equivalents:
+Several methods on the [`CLKComplicationDataSource`](../ClockKit/clkcomplicationdatasource.md) protocol used to configure the app’s timeline take completion handlers, which you can replace with their `async` equivalents:
 
 ```swift
 // Define whether the complication is visible when the watch is unlocked.
@@ -154,9 +156,10 @@ func privacyBehavior(for complication: CLKComplication) async -> CLKComplication
 
 ## See Also
 
-- [Code-along: Elevating an app with Swift concurrency](code-along-elevating-an-app-with-swift-concurrency.md)
+### Essentials
+- [Code-along: Elevating an app with Swift concurrency](./code-along-elevating-an-app-with-swift-concurrency.md)
   Code along with the WWDC presenter to elevate a SwiftUI app with Swift concurrency.
-- [Updating an app to use strict concurrency](updating-an-app-to-use-strict-concurrency.md)
+- [Updating an app to use strict concurrency](./updating-an-app-to-use-strict-concurrency.md)
   Use this code to follow along with a guide to migrating your code to take advantage of the full concurrency protection that the Swift 6 language mode provides.
 
 

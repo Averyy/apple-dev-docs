@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The size of the volume.
@@ -12,7 +13,7 @@ The size of the volume.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

@@ -1,7 +1,8 @@
 # significantTimeChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -16,16 +17,19 @@
 static var significantTimeChange: NotificationCenter.BaseMessageIdentifier<UIApplication.SignificantTimeChangeMessage> { get }
 ```
 
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<UIApplication.SignificantTimeChangeMessage>`.
+
 ## See Also
 
-- [static var didFinishLaunching: NotificationCenter.BaseMessageIdentifier<UIApplication.DidFinishLaunchingMessage>](notificationcenter/messageidentifier/didfinishlaunching.md)
-- [static var didBecomeActive: NotificationCenter.BaseMessageIdentifier<UIApplication.DidBecomeActiveMessage>](notificationcenter/messageidentifier/didbecomeactive-2hcfs.md)
-- [static var didEnterBackground: NotificationCenter.BaseMessageIdentifier<UIApplication.DidEnterBackgroundMessage>](notificationcenter/messageidentifier/didenterbackground-1u5sm.md)
-- [static var willEnterForeground: NotificationCenter.BaseMessageIdentifier<UIApplication.WillEnterForegroundMessage>](notificationcenter/messageidentifier/willenterforeground-95zi8.md)
-- [static var willResignActive: NotificationCenter.BaseMessageIdentifier<UIApplication.WillResignActiveMessage>](notificationcenter/messageidentifier/willresignactive-4rf2p.md)
-- [static var didReceiveMemoryWarning: NotificationCenter.BaseMessageIdentifier<UIApplication.DidReceiveMemoryWarningMessage>](notificationcenter/messageidentifier/didreceivememorywarning.md)
-- [static var backgroundRefreshStatusDidChange: NotificationCenter.BaseMessageIdentifier<UIApplication.BackgroundRefreshStatusDidChangeMessage>](notificationcenter/messageidentifier/backgroundrefreshstatusdidchange.md)
-- [static var userDidTakeScreenshot: NotificationCenter.BaseMessageIdentifier<UIApplication.UserDidTakeScreenshotMessage>](notificationcenter/messageidentifier/userdidtakescreenshot.md)
+### Identifying UIKit app life cycle messages
+- [static var didFinishLaunching: NotificationCenter.BaseMessageIdentifier<UIApplication.DidFinishLaunchingMessage>](./didfinishlaunching.md)
+- [static var didBecomeActive: NotificationCenter.BaseMessageIdentifier<UIApplication.DidBecomeActiveMessage>](./didbecomeactive-2hcfs.md)
+- [static var didEnterBackground: NotificationCenter.BaseMessageIdentifier<UIApplication.DidEnterBackgroundMessage>](./didenterbackground-1u5sm.md)
+- [static var willEnterForeground: NotificationCenter.BaseMessageIdentifier<UIApplication.WillEnterForegroundMessage>](./willenterforeground-95zi8.md)
+- [static var willResignActive: NotificationCenter.BaseMessageIdentifier<UIApplication.WillResignActiveMessage>](./willresignactive-4rf2p.md)
+- [static var didReceiveMemoryWarning: NotificationCenter.BaseMessageIdentifier<UIApplication.DidReceiveMemoryWarningMessage>](./didreceivememorywarning.md)
+- [static var backgroundRefreshStatusDidChange: NotificationCenter.BaseMessageIdentifier<UIApplication.BackgroundRefreshStatusDidChangeMessage>](./backgroundrefreshstatusdidchange.md)
+- [static var userDidTakeScreenshot: NotificationCenter.BaseMessageIdentifier<UIApplication.UserDidTakeScreenshotMessage>](./userdidtakescreenshot.md)
 
 
 ---

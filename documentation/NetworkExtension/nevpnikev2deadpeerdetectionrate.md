@@ -1,7 +1,8 @@
 # NEVPNIKEv2DeadPeerDetectionRate
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of values for the frequency at which the IKEv2 client runs the dead peer detection algorithm.
 
@@ -19,47 +20,52 @@ An enumeration of values for the frequency at which the IKEv2 client runs the de
 enum NEVPNIKEv2DeadPeerDetectionRate
 ```
 
+```c
+enum NEVPNIKEv2DeadPeerDetectionRate : NSInteger;
+```
+
 ## Topics
 
 ### Detection rates
-- [NEVPNIKEv2DeadPeerDetectionRate.none](nevpnikev2deadpeerdetectionrate/none.md)
+- [NEVPNIKEv2DeadPeerDetectionRate.none](./nevpnikev2deadpeerdetectionrate/none.md)
   Do not perform dead peer detection.
-- [NEVPNIKEv2DeadPeerDetectionRate.low](nevpnikev2deadpeerdetectionrate/low.md)
+- [NEVPNIKEv2DeadPeerDetectionRate.low](./nevpnikev2deadpeerdetectionrate/low.md)
   Run dead peer detection once every 30 minutes. If the peer does not respond, retry 5 times at 1 second intervals before declaring the peer dead and terminating the session.
-- [NEVPNIKEv2DeadPeerDetectionRate.medium](nevpnikev2deadpeerdetectionrate/medium.md)
+- [NEVPNIKEv2DeadPeerDetectionRate.medium](./nevpnikev2deadpeerdetectionrate/medium.md)
   Run dead peer detection once every 10 minutes. If the peer does not respond, retry 5 times at 1 second intervals before declaring the peer dead and terminating the session.
-- [NEVPNIKEv2DeadPeerDetectionRate.high](nevpnikev2deadpeerdetectionrate/high.md)
+- [NEVPNIKEv2DeadPeerDetectionRate.high](./nevpnikev2deadpeerdetectionrate/high.md)
   Run dead peer detection once every 1 minute. If the peer does not respond, retry 5 times at 1 second intervals before declaring the peer dead and terminating the session.
 ### Initializers
-- [init?(rawValue: Int)](nevpnikev2deadpeerdetectionrate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nevpnikev2deadpeerdetectionrate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var deadPeerDetectionRate: NEVPNIKEv2DeadPeerDetectionRate](nevpnprotocolikev2/deadpeerdetectionrate.md)
+### Accessing other IKEv2 properties
+- [var deadPeerDetectionRate: NEVPNIKEv2DeadPeerDetectionRate](./nevpnprotocolikev2/deadpeerdetectionrate.md)
   The frequency at which the IKEv2 client will run the dead peer detection algorithm.
-- [var useConfigurationAttributeInternalIPSubnet: Bool](nevpnprotocolikev2/useconfigurationattributeinternalipsubnet.md)
+- [var useConfigurationAttributeInternalIPSubnet: Bool](./nevpnprotocolikev2/useconfigurationattributeinternalipsubnet.md)
   A Boolean indicating whether or not the IKEv2 client should use the INTERNAL_IP4_SUBNET and/or INTERNAL_IP6_SUBNET attributes sent by the IKEv2 server.
-- [var disableMOBIKE: Bool](nevpnprotocolikev2/disablemobike.md)
+- [var disableMOBIKE: Bool](./nevpnprotocolikev2/disablemobike.md)
   A Boolean indicating whether or not MOBIKE should be disabled for the IKEv2 sessions.
-- [var disableRedirect: Bool](nevpnprotocolikev2/disableredirect.md)
+- [var disableRedirect: Bool](./nevpnprotocolikev2/disableredirect.md)
   A Boolean indicating whether or not IKEv2 server redirects are disabled.
-- [var enablePFS: Bool](nevpnprotocolikev2/enablepfs.md)
+- [var enablePFS: Bool](./nevpnprotocolikev2/enablepfs.md)
   A Boolean indicating whether or not Perfect Forward Secrecy is enabled.
-- [var enableRevocationCheck: Bool](nevpnprotocolikev2/enablerevocationcheck.md)
+- [var enableRevocationCheck: Bool](./nevpnprotocolikev2/enablerevocationcheck.md)
   Enable revocation checking of the IKEv2 server certificate.
-- [var strictRevocationCheck: Bool](nevpnprotocolikev2/strictrevocationcheck.md)
+- [var strictRevocationCheck: Bool](./nevpnprotocolikev2/strictrevocationcheck.md)
   Require a “not revoked” result when checking if the certificate identifying the server is revoked.
-- [var mtu: Int](nevpnprotocolikev2/mtu.md)
+- [var mtu: Int](./nevpnprotocolikev2/mtu.md)
   The Maximum Transmission Unit (MTU) size in bytes to assign to the tunnel interface.
 
 

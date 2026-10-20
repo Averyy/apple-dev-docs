@@ -1,14 +1,15 @@
 # SetHandler
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.4+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetHandler(OSAction *action, OSDispatchMethod supermethod);
 ```
 

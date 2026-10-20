@@ -1,7 +1,8 @@
 # SpotlightSearchTool.SearchReply.QueryToken
 
 **Framework**: Core Spotlight  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An opaque type you use to identify a single call to the Spotlight search tool.
 
@@ -20,23 +21,24 @@ struct QueryToken
 
 #### Overview
 
-When processing a request, a model might call the Spotlight search tool multiple times to retrieve results. Each time the model calls the Spotlight search tool’s [`call(arguments:)`](https://developer.apple.com/documentation/foundationmodels/tool/call(arguments:)) method, the tool generates a new `QueryToken` to track that request. When delivering results to your app, the tool includes this token in the [`SpotlightSearchTool.SearchReply`](spotlightsearchtool/searchreply.md) structures it delivers. Use the token to associate that data with a specific query.
+When processing a request, a model might call the Spotlight search tool multiple times to retrieve results. Each time the model calls the Spotlight search tool’s [`call(arguments:)`](../../../FoundationModels/tool/call%28arguments%29.md) method, the tool generates a new `QueryToken` to track that request. When delivering results to your app, the tool includes this token in the [`SpotlightSearchTool.SearchReply`](../searchreply.md) structures it delivers. Use the token to associate that data with a specific query.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let queryToken: SpotlightSearchTool.SearchReply.QueryToken](spotlightsearchtool/searchreply/querytoken-swift.property.md)
+### Getting the tokens
+- [let queryToken: SpotlightSearchTool.SearchReply.QueryToken](./querytoken-swift.property.md)
   An opaque value you use to identify the query that generated the reply.
-- [let stageToken: SpotlightSearchTool.SearchReply.StageToken](spotlightsearchtool/searchreply/stagetoken-swift.property.md)
+- [let stageToken: SpotlightSearchTool.SearchReply.StageToken](./stagetoken-swift.property.md)
   An opaque value you use to identify the pipeline stage that generated the reply.
-- [SpotlightSearchTool.SearchReply.StageToken](spotlightsearchtool/searchreply/stagetoken-swift.struct.md)
+- [SpotlightSearchTool.SearchReply.StageToken](./stagetoken-swift.struct.md)
   An opaque type you use to identify a single pipeline stage within the Spotlight search tool.
 
 

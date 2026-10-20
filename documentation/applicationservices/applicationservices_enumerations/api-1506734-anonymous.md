@@ -5,12 +5,12 @@
 ## Topics
 
 ### Constants
-- [var kPMScalingCenterOnImgArea: Int](kpmscalingcenteronimgarea.md)
-- [var kPMScalingCenterOnPaper: Int](kpmscalingcenteronpaper.md)
-- [var kPMScalingPinBottomLeft: Int](kpmscalingpinbottomleft.md)
-- [var kPMScalingPinBottomRight: Int](kpmscalingpinbottomright.md)
-- [var kPMScalingPinTopLeft: Int](kpmscalingpintopleft.md)
-- [var kPMScalingPinTopRight: Int](kpmscalingpintopright.md)
+- [var kPMScalingCenterOnImgArea: Int](../kpmscalingcenteronimgarea.md)
+- [var kPMScalingCenterOnPaper: Int](../kpmscalingcenteronpaper.md)
+- [var kPMScalingPinBottomLeft: Int](../kpmscalingpinbottomleft.md)
+- [var kPMScalingPinBottomRight: Int](../kpmscalingpinbottomright.md)
+- [var kPMScalingPinTopLeft: Int](../kpmscalingpintopleft.md)
+- [var kPMScalingPinTopRight: Int](../kpmscalingpintopright.md)
 
 
 ---

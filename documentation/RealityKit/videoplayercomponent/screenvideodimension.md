@@ -1,7 +1,8 @@
 # screenVideoDimension
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The video resolution size.
 
@@ -25,13 +26,14 @@ This property has the format `[width, height]`, for example, `[1920, 1080]`.
 
 ## See Also
 
-- [var avPlayer: AVPlayer?](videoplayercomponent/avplayer.md)
+### Accessing video player properties
+- [var avPlayer: AVPlayer?](./avplayer.md)
   The AV player that the component plays.
-- [var playerScreenSize: SIMD2<Float>](videoplayercomponent/playerscreensize.md)
+- [var playerScreenSize: SIMD2<Float>](./playerscreensize.md)
   The screen entity size of the current video player in meters.
-- [var videoRenderer: AVSampleBufferVideoRenderer?](videoplayercomponent/videorenderer.md)
+- [var videoRenderer: AVSampleBufferVideoRenderer?](./videorenderer.md)
   The component’s video renderer.
-- [var viewingMode: VideoPlaybackController.ViewingMode?](videoplayercomponent/viewingmode.md)
+- [var viewingMode: VideoPlaybackController.ViewingMode?](./viewingmode.md)
   The current content-viewing mode for video playback.
 
 

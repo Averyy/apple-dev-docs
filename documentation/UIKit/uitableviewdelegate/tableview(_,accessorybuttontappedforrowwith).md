@@ -1,7 +1,8 @@
 # tableView(_:accessoryButtonTappedForRowWith:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the user tapped the detail button for the specified row.
 
@@ -18,9 +19,13 @@ Tells the delegate that the user tapped the detail button for the specified row.
 optional func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath)
 ```
 
+```objc
+- (void) tableView:(UITableView *) tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *) indexPath;
+```
+
 ## Mentions
 
-- [Handling row selection in a table view](handling-row-selection-in-a-table-view.md)
+- [Handling row selection in a table view](../handling-row-selection-in-a-table-view.md)
 
 #### Discussion
 

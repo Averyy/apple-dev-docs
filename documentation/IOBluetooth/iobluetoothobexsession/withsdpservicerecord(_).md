@@ -1,17 +1,22 @@
 # withSDPServiceRecord(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a Bluetooth-based OBEX Session using an SDP service record, typically obtained from a device/service browser window controller.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func withSDPServiceRecord(_ inSDPServiceRecord: IOBluetoothSDPServiceRecord!) -> Self!
+```
+
+```objc
++ (instancetype) withSDPServiceRecord:(IOBluetoothSDPServiceRecord *) inSDPServiceRecord;
 ```
 
 #### Return Value

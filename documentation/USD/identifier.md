@@ -1,6 +1,7 @@
 # identifier
 
-**Framework**: USD
+**Framework**: USD  
+**Role**: Article
 
 A string value that identifies the app-specific notification.
 
@@ -16,9 +17,10 @@ uniform string identifier
 
 ## See Also
 
-- [info:id](info-id.md)
+### Properties
+- [info:id](./info-id.md)
   The action’s unique identifier.
-- [affectedObjects](affectedobjects.md)
+- [affectedObjects](./affectedobjects.md)
   A list of prims that respond to the notification.
 
 

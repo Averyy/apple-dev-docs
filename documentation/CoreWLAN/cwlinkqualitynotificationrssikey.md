@@ -1,15 +1,22 @@
 # CWLinkQualityNotificationRSSIKey
 
 **Framework**: Core WLAN  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS 10.6+
+- macOS 10.6+ - Deprecated in 10.10
+
+> **Deprecated**: Use -[CWWiFiClient startMonitoringEventWithType:error:] with the CWEventTypeLinkQualityDidChange event type
 
 ## Declaration
 
 ```swift
 let CWLinkQualityNotificationRSSIKey: String
+```
+
+```c
+extern NSString * const CWLinkQualityNotificationRSSIKey;
 ```
 
 #### Discussion
@@ -18,8 +25,9 @@ NSNumber containing the current RSSI value for the WLAN interface. Found in the 
 
 ## See Also
 
-- [let CWErrorDomain: String](cwerrordomain.md)
-- [let CWLinkQualityNotificationTransmitRateKey: String](cwlinkqualitynotificationtransmitratekey.md)
+### Constants
+- [let CWErrorDomain: String](./cwerrordomain.md)
+- [let CWLinkQualityNotificationTransmitRateKey: String](./cwlinkqualitynotificationtransmitratekey.md)
 
 
 ---

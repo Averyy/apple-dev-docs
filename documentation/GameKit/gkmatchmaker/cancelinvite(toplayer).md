@@ -1,21 +1,28 @@
 # cancelInvite(toPlayer:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels a pending invitation to another player.
 
 **Availability**:
-- iOS 6.0+
-- iPadOS 6.0+
-- Mac Catalyst 13.1+
-- macOS 10.9+
-- visionOS 1.0+
+- iOS 6.0+ - Deprecated in 8.0
+- iPadOS 6.0+ - Deprecated in 8.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.9+ - Deprecated in 10.10
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use the [`cancelPendingInvite(to:)`](./cancelpendinginvite%28to%29.md) method instead.
 
 ## Declaration
 
 ```swift
 func cancelInvite(toPlayer playerID: String)
+```
+
+```objc
+- (void) cancelInviteToPlayer:(NSString *) playerID;
 ```
 
 ## Parameters
@@ -24,9 +31,10 @@ func cancelInvite(toPlayer playerID: String)
 
 ## See Also
 
-- [func findPlayers(forHostedMatchRequest: GKMatchRequest, withCompletionHandler: (([String]?, (any Error)?) -> Void)?)](gkmatchmaker/findplayers(forhostedmatchrequest:withcompletionhandler:).md)
+### Deprecated Methods
+- [func findPlayers(forHostedMatchRequest: GKMatchRequest, withCompletionHandler: (([String]?, (any Error)?) -> Void)?)](./findplayers%28forhostedmatchrequest,withcompletionhandler%29.md)
   Initiates a request to find players for a hosted match.
-- [func startBrowsingForNearbyPlayers(reachableHandler: ((String, Bool) -> Void)?)](gkmatchmaker/startbrowsingfornearbyplayers(reachablehandler:).md)
+- [func startBrowsingForNearbyPlayers(reachableHandler: ((String, Bool) -> Void)?)](./startbrowsingfornearbyplayers%28reachablehandler%29.md)
   Enables the matchmaking process to find nearby players through Bluetooth or WiFi, but only on the same subnet.
 
 

@@ -1,14 +1,15 @@
 # CSMAGIC_EMBEDDED_DER_ENTITLEMENTS
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 CSMAGIC_EMBEDDED_DER_ENTITLEMENTS = 0xfade7172
 ```
 

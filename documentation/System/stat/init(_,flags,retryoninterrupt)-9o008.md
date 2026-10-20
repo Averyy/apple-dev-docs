@@ -1,7 +1,8 @@
 # init(_:flags:retryOnInterrupt:)
 
 **Framework**: System  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a `Stat` struct from an `UnsafePointer<CChar>` path and `Flags`.
 

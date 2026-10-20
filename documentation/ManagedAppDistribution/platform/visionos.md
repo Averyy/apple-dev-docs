@@ -1,7 +1,8 @@
 # visionOS
 
 **Framework**: ManagedAppDistribution  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 visionOS is a supported platform.
 

@@ -1,7 +1,8 @@
 # GetCurrentClientIOTime
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the current sample/host time pair in the ring buffer written to or read from by the client
 
@@ -10,7 +11,7 @@ Gets the current sample/host time pair in the ring buffer written to or read fro
 
 ## Declaration
 
-```swift
+```c
 void GetCurrentClientIOTime(bool in_is_input, uint64_t *out_sample_time, uint64_t *out_host_time);
 ```
 
@@ -22,15 +23,16 @@ void GetCurrentClientIOTime(bool in_is_input, uint64_t *out_sample_time, uint64_
 
 ## See Also
 
-- [StartIO](iouservideodevice/startio.md)
+### Performing I/O
+- [StartIO](./startio.md)
   Tells the device to start IO.
-- [StopIO](iouservideodevice/stopio.md)
+- [StopIO](./stopio.md)
   Tells the device to stop IO.
-- [IOUserVideoStartStopFlags](videodriverkit/iouservideostartstopflags.md)
+- [IOUserVideoStartStopFlags](../videodriverkit-page/iouservideostartstopflags.md)
   Flags used to indicate how I/O is starting or stopping.
-- [SetIOOperationHandler](iouservideodevice/setiooperationhandler.md)
+- [SetIOOperationHandler](./setiooperationhandler.md)
   Sets the IOOperationHandler block on the device.
-- [IOOperationHandler](videodriverkit/iooperationhandler.md)
+- [IOOperationHandler](../videodriverkit-page/iooperationhandler.md)
   A block that tells the device to perform a video IO operation.
 
 

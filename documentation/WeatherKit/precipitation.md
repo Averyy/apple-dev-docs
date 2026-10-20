@@ -1,7 +1,8 @@
 # Precipitation
 
 **Framework**: WeatherKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The form of precipitation.
 
@@ -23,48 +24,49 @@ enum Precipitation
 ## Topics
 
 ### Specifying precipitation types
-- [Precipitation.hail](precipitation/hail.md)
+- [Precipitation.hail](./precipitation/hail.md)
   A form of precipitation consisting of solid ice.
-- [Precipitation.mixed](precipitation/mixed.md)
+- [Precipitation.mixed](./precipitation/mixed.md)
   Wintry Mix.
-- [Precipitation.rain](precipitation/rain.md)
+- [Precipitation.rain](./precipitation/rain.md)
   Rain.
-- [Precipitation.sleet](precipitation/sleet.md)
+- [Precipitation.sleet](./precipitation/sleet.md)
   A form of precipitation consisting of ice pellets.
-- [Precipitation.snow](precipitation/snow.md)
+- [Precipitation.snow](./precipitation/snow.md)
   Snow.
-- [Precipitation.none](precipitation/none.md)
+- [Precipitation.none](./precipitation/none.md)
   No precipitation.
 ### Describing the precipitation
-- [var accessibilityDescription: String](precipitation/accessibilitydescription.md)
+- [var accessibilityDescription: String](./precipitation/accessibilitydescription.md)
   A localized accessibility description describing the form of precipitation.
-- [var description: String](precipitation/description.md)
+- [var description: String](./precipitation/description.md)
   A localized string describing the form of precipitation.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum PressureTrend](pressuretrend.md)
+### Characteristics
+- [enum PressureTrend](./pressuretrend.md)
   The atmospheric pressure change over time.
-- [struct UVIndex](uvindex.md)
+- [struct UVIndex](./uvindex.md)
   The expected intensity of ultraviolet radiation from the sun.
-- [struct Wind](wind.md)
+- [struct Wind](./wind.md)
   Contains wind data of speed, direction, and gust.
-- [enum WeatherCondition](weathercondition.md)
+- [enum WeatherCondition](./weathercondition.md)
   A description of the current weather condition.
 
 

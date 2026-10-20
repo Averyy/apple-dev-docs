@@ -1,7 +1,8 @@
 # localizedName
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized name of this table for user display.
 
@@ -18,6 +19,10 @@ The localized name of this table for user display.
 
 ```swift
 var localizedName: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * localizedName;
 ```
 
 

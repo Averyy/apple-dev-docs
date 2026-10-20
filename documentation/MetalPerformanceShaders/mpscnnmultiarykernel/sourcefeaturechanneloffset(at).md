@@ -1,7 +1,8 @@
 # sourceFeatureChannelOffset(at:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func sourceFeatureChannelOffset(at index: Int) -> Int
+```
+
+```objc
+- (NSUInteger) sourceFeatureChannelOffsetAtIndex:(NSUInteger) index;
 ```
 
 

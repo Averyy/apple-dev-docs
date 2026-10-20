@@ -1,7 +1,8 @@
 # name
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of this property.
 
@@ -21,7 +22,7 @@ var name: USDToken { get }
 
 #### Discussion
 
-A property’s name is the last component of its [`path`](usdprim/property/path.md). `name` is equivalent to the `USDLayer.Path/name` of that path.
+A property’s name is the last component of its [`path`](./path.md). `name` is equivalent to the `USDLayer.Path/name` of that path.
 
 
 ---

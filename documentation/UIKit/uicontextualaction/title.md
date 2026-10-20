@@ -1,7 +1,8 @@
 # title
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title displayed on the action button.
 
@@ -17,11 +18,16 @@ The title displayed on the action button.
 var title: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * title;
+```
+
 ## See Also
 
-- [var backgroundColor: UIColor!](uicontextualaction/backgroundcolor.md)
+### Configuring the appearance
+- [var backgroundColor: UIColor!](./backgroundcolor.md)
   The background color of the action button.
-- [var image: UIImage?](uicontextualaction/image.md)
+- [var image: UIImage?](./image.md)
   The image to display in the action button.
 
 

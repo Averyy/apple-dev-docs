@@ -1,7 +1,8 @@
 # appearance
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The overall appearance of the list.
 
@@ -10,7 +11,7 @@ The overall appearance of the list.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,9 +21,10 @@ var appearance: UICollectionLayoutListConfiguration.Appearance { get }
 
 ## See Also
 
-- [var backgroundColor: UIColor?](uicollectionlayoutlistconfiguration-swift.struct/backgroundcolor.md)
+### Configuring appearance
+- [var backgroundColor: UIColor?](./backgroundcolor.md)
   The background color of the list.
-- [UICollectionLayoutListConfiguration.Appearance](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum.md)
+- [UICollectionLayoutListConfiguration.Appearance](./appearance-swift.enum.md)
   Constants that describe the appearance of the list.
 
 

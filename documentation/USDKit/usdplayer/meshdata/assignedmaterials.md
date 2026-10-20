@@ -1,7 +1,8 @@
 # assignedMaterials
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Material IDs bound to each mesh part, in order.
 

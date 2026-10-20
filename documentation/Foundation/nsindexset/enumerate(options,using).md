@@ -1,7 +1,8 @@
 # enumerate(options:using:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes a given Block over the index set’s indexes, using the specified enumeration options.
 
@@ -20,25 +21,34 @@ Executes a given Block over the index set’s indexes, using the specified enume
 func enumerate(options opts: NSEnumerationOptions = [], using block: (Int, UnsafeMutablePointer<ObjCBool>) -> Void)
 ```
 
+```objc
+- (void) enumerateIndexesWithOptions:(NSEnumerationOptions) opts usingBlock:(void (^)(NSUInteger idx, BOOL *stop)) block;
+```
+
 #### Discussion
 
 This method executes synchronously.
 
 ## Parameters
 
-- `opts`: A bitmask that specifies the options for the enumeration (whether it should be performed concurrently and whether it should be performed in reverse order). See [`NSEnumerationOptions`](nsenumerationoptions.md) for the supported values.
-- `block`: The Block to apply to elements in the set. The Block takes two arguments: - **idx**: The index of the object.
-- **stop**: A reference to a Boolean value. The block can set the value to [`true`](https://developer.apple.com/documentation/swift/true) to stop further processing of the set. The `stop` argument is an out-only argument. You should only ever set this Boolean to YES within the Block.
+- `opts`: A bitmask that specifies the options for the enumeration (whether it should be performed concurrently and whether it should be performed in reverse order). See [`NSEnumerationOptions`](../nsenumerationoptions.md) for the supported values.
+- `block`: The Block to apply to elements in the set.
+
+  The Block takes two arguments:
+
+  - **idx**: The index of the object.
+  - **stop**: A reference to a Boolean value. The block can set the value to [`true`](../../Swift/true.md) to stop further processing of the set. The `stop` argument is an out-only argument. You should only ever set this Boolean to YES within the Block.
 
 ## See Also
 
-- [func enumerate((Int, UnsafeMutablePointer<ObjCBool>) -> Void)](nsindexset/enumerate(_:).md)
+### Enumerating Indexes
+- [func enumerate((Int, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumerate%28_%29.md)
   Executes a given Block using each object in the index set.
-- [func enumerate(in: NSRange, options: NSEnumerationOptions, using: (Int, UnsafeMutablePointer<ObjCBool>) -> Void)](nsindexset/enumerate(in:options:using:).md)
+- [func enumerate(in: NSRange, options: NSEnumerationOptions, using: (Int, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumerate%28in,options,using%29.md)
   Executes a given Block using the indexes in the specified range, using the specified enumeration options.
-- [func makeIterator() -> NSIndexSetIterator](nsindexset/makeiterator.md)
+- [func makeIterator() -> NSIndexSetIterator](./makeiterator%28%29.md)
   Returns an *iterator* over the elements of this *sequence*.
-- [struct NSIndexSetIterator](nsindexsetiterator.md)
+- [struct NSIndexSetIterator](../nsindexsetiterator.md)
   An iterator suitable for enumerating the elements of an index set.
 
 

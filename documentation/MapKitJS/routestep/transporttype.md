@@ -1,7 +1,8 @@
 # transportType
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transport type of the step.
 
@@ -10,7 +11,7 @@ The transport type of the step.
 
 ## Declaration
 
-```swift
+```
 transportType: TransportType | null;
 ```
 
@@ -20,9 +21,10 @@ This property reflects the transport type employed by the step and may differ fr
 
 ## See Also
 
-- [instructions](routestep/instructions.md)
+### Route step details
+- [instructions](./instructions.md)
   The written instructions for following the path that the step represents.
-- [distance](routestep/distance.md)
+- [distance](./distance.md)
   The step distance, in meters.
 
 

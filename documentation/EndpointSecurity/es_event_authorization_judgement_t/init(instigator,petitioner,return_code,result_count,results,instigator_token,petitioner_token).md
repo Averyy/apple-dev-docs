@@ -1,11 +1,12 @@
 # init(instigator:petitioner:return_code:result_count:results:instigator_token:petitioner_token:)
 
 **Framework**: Endpoint Security  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 

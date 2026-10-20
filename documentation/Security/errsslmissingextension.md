@@ -1,7 +1,8 @@
 # errSSLMissingExtension
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Missing extension.
 
@@ -18,6 +19,10 @@ Missing extension.
 
 ```swift
 var errSSLMissingExtension: OSStatus { get }
+```
+
+```c
+errSSLMissingExtension
 ```
 
 

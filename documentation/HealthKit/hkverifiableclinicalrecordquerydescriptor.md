@@ -1,7 +1,8 @@
 # HKVerifiableClinicalRecordQueryDescriptor
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A query interface that provides one-time access to a SMART Health Card or EU Digital COVID Certificate using Swift concurrency.
 
@@ -10,7 +11,7 @@ A query interface that provides one-time access to a SMART Health Card or EU Dig
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,7 @@ struct HKVerifiableClinicalRecordQueryDescriptor
 
 #### Overview
 
-Use [`HKVerifiableClinicalRecordQueryDescriptor`](hkverifiableclinicalrecordquerydescriptor.md) to read verifiable clinical records.
+Use [`HKVerifiableClinicalRecordQueryDescriptor`](./hkverifiableclinicalrecordquerydescriptor.md) to read verifiable clinical records.
 
 ```swift
 // Calculate the start and end dates.
@@ -54,46 +55,47 @@ for record in records {
 }
 ```
 
-When you call the descriptor’s [`result(for:)`](hkverifiableclinicalrecordquerydescriptor/result(for:).md) method, it creates and executes an [`HKVerifiableClinicalRecordQuery`](hkverifiableclinicalrecordquery.md) in the background, passing the results as an array of [`HKVerifiableClinicalRecord`](hkverifiableclinicalrecord.md) instances.
+When you call the descriptor’s [`result(for:)`](./hkverifiableclinicalrecordquerydescriptor/result%28for%29.md) method, it creates and executes an [`HKVerifiableClinicalRecordQuery`](./hkverifiableclinicalrecordquery.md) in the background, passing the results as an array of [`HKVerifiableClinicalRecord`](./hkverifiableclinicalrecord.md) instances.
 
 Unlike other HealthKit queries, you don’t need to request permission to read verifiable health records before using this descriptor. HealthKit prompts the user for permission to read the records each time your app runs the underlying query.
 
-> **Note**:  Running an [`HKVerifiableClinicalRecordQuery`](hkverifiableclinicalrecordquery.md) requires a special entitlement from Apple, or the query fails with an [`HKError.Code.errorAuthorizationDenied`](hkerror/code/errorauthorizationdenied.md) error. To request the entitlement, see [`Request Access to the Verifiable Health Records Entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/verifiable-health-records/).
+> **Note**:  Running an [`HKVerifiableClinicalRecordQuery`](./hkverifiableclinicalrecordquery.md) requires a special entitlement from Apple, or the query fails with an [`HKError.Code.errorAuthorizationDenied`](./hkerror/code/errorauthorizationdenied.md) error. To request the entitlement, see [Request Access to the Verifiable Health Records Entitlement](https://developer.apple.com/contact/request/verifiable-health-records/).
 
 ## Topics
 
 ### Creating Query Descriptors
-- [init(recordTypes: [HKVerifiableClinicalRecordCredentialType], sourceTypes: [HKVerifiableClinicalRecordSourceType], predicate: NSPredicate?)](hkverifiableclinicalrecordquerydescriptor/init(recordtypes:sourcetypes:predicate:).md)
+- [init(recordTypes: [HKVerifiableClinicalRecordCredentialType], sourceTypes: [HKVerifiableClinicalRecordSourceType], predicate: NSPredicate?)](./hkverifiableclinicalrecordquerydescriptor/init%28recordtypes,sourcetypes,predicate%29.md)
   Creates a query descriptor for reading verifiable clinical records.
 ### Running Queries
-- [func result(for: HKHealthStore) async throws -> [HKVerifiableClinicalRecord]](hkverifiableclinicalrecordquerydescriptor/result(for:).md)
+- [func result(for: HKHealthStore) async throws -> [HKVerifiableClinicalRecord]](./hkverifiableclinicalrecordquerydescriptor/result%28for%29.md)
   Runs a one-shot query that asynchronously reads matching clinical records.
 ### Accessing Query Properties
-- [var recordTypes: [HKVerifiableClinicalRecordCredentialType]](hkverifiableclinicalrecordquerydescriptor/recordtypes.md)
+- [var recordTypes: [HKVerifiableClinicalRecordCredentialType]](./hkverifiableclinicalrecordquerydescriptor/recordtypes.md)
   The types of records returned by this query.
-- [var sourceTypes: [HKVerifiableClinicalRecordSourceType]](hkverifiableclinicalrecordquerydescriptor/sourcetypes.md)
+- [var sourceTypes: [HKVerifiableClinicalRecordSourceType]](./hkverifiableclinicalrecordquerydescriptor/sourcetypes.md)
   The source for the verifiable clinical records, for example from a SMART Health Card or an EU Digital COVID Certificate.
-- [var predicate: NSPredicate?](hkverifiableclinicalrecordquerydescriptor/predicate.md)
+- [var predicate: NSPredicate?](./hkverifiableclinicalrecordquerydescriptor/predicate.md)
   A predicate that limits the results returned by the query.
 ### Default Implementations
-- [HKAsyncQuery Implementations](hkverifiableclinicalrecordquerydescriptor/hkasyncquery-implementations.md)
+- [HKAsyncQuery Implementations](./hkverifiableclinicalrecordquerydescriptor/hkasyncquery-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [HKAsyncQuery](hkasyncquery.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [HKAsyncQuery](./hkasyncquery.md)
 
 ## See Also
 
-- [class HKVerifiableClinicalRecordQuery](hkverifiableclinicalrecordquery.md)
+### Clinical record queries
+- [class HKVerifiableClinicalRecordQuery](./hkverifiableclinicalrecordquery.md)
   A query for one-time access to a SMART Health Card or EU Digital COVID Certificate.
-- [struct HKVerifiableClinicalRecordSourceType](hkverifiableclinicalrecordsourcetype.md)
+- [struct HKVerifiableClinicalRecordSourceType](./hkverifiableclinicalrecordsourcetype.md)
   The source type for the verifiable clinical record.
-- [struct HKVerifiableClinicalRecordCredentialType](hkverifiableclinicalrecordcredentialtype.md)
+- [struct HKVerifiableClinicalRecordCredentialType](./hkverifiableclinicalrecordcredentialtype.md)
   The type of record returned by a verifiable clinical record query.
-- [class HKDocumentQuery](hkdocumentquery.md)
+- [class HKDocumentQuery](./hkdocumentquery.md)
   A query that returns a snapshot of all matching documents currently saved in the HealthKit store.
 
 

@@ -1,7 +1,8 @@
 # showsTabBadge
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An indicator you use to call attention to the tab.
 
@@ -16,6 +17,10 @@ An indicator you use to call attention to the tab.
 var showsTabBadge: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL showsTabBadge;
+```
+
 #### Discussion
 
 Set this property to `true` to display a small red indicator on the tab to show that it requires action from the user, or is displaying ephemeral information.
@@ -24,11 +29,12 @@ CarPlay only displays the indicator when the template is a root-template of a ta
 
 ## See Also
 
-- [var tabTitle: String?](cptemplate/tabtitle.md)
+### Accessing Tab Information
+- [var tabTitle: String?](./tabtitle.md)
   A short title that describes the content of the tab.
-- [var tabImage: UIImage?](cptemplate/tabimage.md)
+- [var tabImage: UIImage?](./tabimage.md)
   An image that represents the content of the tab.
-- [var tabSystemItem: UITabBarItem.SystemItem](cptemplate/tabsystemitem.md)
+- [var tabSystemItem: UITabBarItem.SystemItem](./tabsystemitem.md)
   A system object that provides a title and image for common tab content, such as contacts or favorites.
 
 

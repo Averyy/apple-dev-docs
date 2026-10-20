@@ -1,7 +1,8 @@
 # isProximityMonitoringEnabled
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether proximity monitoring is enabled.
 
@@ -9,7 +10,7 @@ A Boolean value that indicates whether proximity monitoring is enabled.
 - iOS 3.0+
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,20 @@ A Boolean value that indicates whether proximity monitoring is enabled.
 var isProximityMonitoringEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isProximityMonitoringEnabled) BOOL proximityMonitoringEnabled;
+```
+
 #### Discussion
 
-Enable proximity monitoring only when your application needs to be notified of changes to the proximity state. Otherwise, disable proximity monitoring. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+Enable proximity monitoring only when your application needs to be notified of changes to the proximity state. Otherwise, disable proximity monitoring. The default value is [`false`](../../Swift/false.md).
 
-Not all iOS devices have proximity sensors. To determine if proximity monitoring is available, attempt to enable it. If the value of the [`isProximityMonitoringEnabled`](uidevice/isproximitymonitoringenabled.md) property remains [`false`](https://developer.apple.com/documentation/swift/false), proximity monitoring isn’t available.
+Not all iOS devices have proximity sensors. To determine if proximity monitoring is available, attempt to enable it. If the value of the [`isProximityMonitoringEnabled`](./isproximitymonitoringenabled.md) property remains [`false`](../../Swift/false.md), proximity monitoring isn’t available.
 
 ## See Also
 
-- [var proximityState: Bool](uidevice/proximitystate.md)
+### Using the proximity sensor
+- [var proximityState: Bool](./proximitystate.md)
   A Boolean value that indicates whether the proximity sensor is close to the user.
 
 

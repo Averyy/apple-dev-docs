@@ -1,14 +1,15 @@
 # HPKEPublicKeySerialization Implementations
 
-**Framework**: Apple CryptoKit
+**Framework**: Apple CryptoKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init<D>(D, kem: HPKE.KEM) throws](curve25519/keyagreement/publickey/init(_:kem:).md)
+- [init<D>(D, kem: HPKE.KEM) throws](./init%28_,kem%29.md)
   Creates a Curve25519 elliptic curve public key for use with Diffie-Hellman key exchange.
 ### Instance Methods
-- [func hpkeRepresentation(kem: HPKE.KEM) throws -> Data](curve25519/keyagreement/publickey/hpkerepresentation(kem:).md)
+- [func hpkeRepresentation(kem: HPKE.KEM) throws -> Data](./hpkerepresentation%28kem%29.md)
   Creates a serialized representation of the public key.
 
 

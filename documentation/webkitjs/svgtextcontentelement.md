@@ -1,7 +1,8 @@
 # SVGTextContentElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,34 +10,34 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGTextContentElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [lengthAdjust](svgtextcontentelement/1631583-lengthadjust.md)
-- [textLength](svgtextcontentelement/1634535-textlength.md)
+- [lengthAdjust](./svgtextcontentelement/api-1631583-lengthadjust.md)
+- [textLength](./svgtextcontentelement/api-1634535-textlength.md)
 ### Instance Methods
-- [getCharNumAtPosition](svgtextcontentelement/1629514-getcharnumatposition.md)
-- [getComputedTextLength](svgtextcontentelement/1632720-getcomputedtextlength.md)
-- [getEndPositionOfChar](svgtextcontentelement/1630565-getendpositionofchar.md)
-- [getExtentOfChar](svgtextcontentelement/1628974-getextentofchar.md)
-- [getNumberOfChars](svgtextcontentelement/1630730-getnumberofchars.md)
-- [getRotationOfChar](svgtextcontentelement/1630073-getrotationofchar.md)
-- [getStartPositionOfChar](svgtextcontentelement/1629833-getstartpositionofchar.md)
-- [getSubStringLength](svgtextcontentelement/1633712-getsubstringlength.md)
-- [selectSubString](svgtextcontentelement/1628900-selectsubstring.md)
+- [getCharNumAtPosition](./svgtextcontentelement/api-1629514-getcharnumatposition.md)
+- [getComputedTextLength](./svgtextcontentelement/api-1632720-getcomputedtextlength.md)
+- [getEndPositionOfChar](./svgtextcontentelement/api-1630565-getendpositionofchar.md)
+- [getExtentOfChar](./svgtextcontentelement/api-1628974-getextentofchar.md)
+- [getNumberOfChars](./svgtextcontentelement/api-1630730-getnumberofchars.md)
+- [getRotationOfChar](./svgtextcontentelement/api-1630073-getrotationofchar.md)
+- [getStartPositionOfChar](./svgtextcontentelement/api-1629833-getstartpositionofchar.md)
+- [getSubStringLength](./svgtextcontentelement/api-1633712-getsubstringlength.md)
+- [selectSubString](./svgtextcontentelement/api-1628900-selectsubstring.md)
 ### Miscellaneous
-- [LENGTHADJUST_SPACING](svgtextcontentelement/1633666-lengthadjust_spacing.md)
-- [LENGTHADJUST_SPACINGANDGLYPHS](svgtextcontentelement/1632147-lengthadjust_spacingandglyphs.md)
-- [LENGTHADJUST_UNKNOWN](svgtextcontentelement/1632240-lengthadjust_unknown.md)
+- [LENGTHADJUST_SPACING](./svgtextcontentelement/api-1633666-lengthadjust_spacing.md)
+- [LENGTHADJUST_SPACINGANDGLYPHS](./svgtextcontentelement/api-1632147-lengthadjust_spacingandglyphs.md)
+- [LENGTHADJUST_UNKNOWN](./svgtextcontentelement/api-1632240-lengthadjust_unknown.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGGraphicsElement](svggraphicselement.md)
+- [SVGGraphicsElement](./svggraphicselement.md)
 
 
 ---

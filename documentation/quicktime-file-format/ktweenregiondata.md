@@ -1,9 +1,12 @@
 # kTweenRegionData
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An atom that contains the data for a QuickDraw region.
+
+> **Deprecated**: Tween media is deprecated in the QuickTime file format. The information that follows documents existing content containing tween media and should not be used for new development.
 
 #### Overview
 
@@ -19,9 +22,10 @@ Either a `kTweenPictureData` or `kTweenRegionData` atom is required for a `kTwee
 
 ## See Also
 
-- [kTweenPictureData](ktweenpicturedata.md)
+### Region Tween Atoms
+- [kTweenPictureData](./ktweenpicturedata.md)
   An atom that contains the data for a QuickDraw picture.
-- [kTweenSequenceElement](ktweensequenceelement.md)
+- [kTweenSequenceElement](./ktweensequenceelement.md)
   An atom that specifies an entry in a tween sequence.
 
 

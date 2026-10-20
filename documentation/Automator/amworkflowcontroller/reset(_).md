@@ -1,7 +1,8 @@
 # reset(_:)
 
 **Framework**: Automator  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops a workflow, clears any action results, and resets the workflow back to an un-run state.
 
@@ -16,19 +17,24 @@ Stops a workflow, clears any action results, and resets the workflow back to an 
 func reset(_ sender: Any)
 ```
 
+```objc
+- (void) reset:(id) sender;
+```
+
 ## Parameters
 
 - `sender`: Object that initiated the reset action.
 
 ## See Also
 
-- [func pause(Any)](amworkflowcontroller/pause(_:).md)
+### Controlling the Workflow
+- [func pause(Any)](./pause%28_%29.md)
   Pauses a workflow that’s running.
-- [func run(Any)](amworkflowcontroller/run(_:).md)
+- [func run(Any)](./run%28_%29.md)
   Runs the associated workflow, after first clearing any results stored by its actions during any previous run.
-- [func step(Any)](amworkflowcontroller/step(_:).md)
+- [func step(Any)](./step%28_%29.md)
   In a paused workflow, runs the next action in the workflow and then pauses again.
-- [func stop(Any)](amworkflowcontroller/stop(_:).md)
+- [func stop(Any)](./stop%28_%29.md)
   Stops the associated workflow.
 
 

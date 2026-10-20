@@ -1,7 +1,8 @@
 # ResetFocusAction
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An environment value that provides the ability to reevaluate default focus.
 
@@ -18,7 +19,7 @@ struct ResetFocusAction
 
 #### Overview
 
-Get the [`resetFocus`](environmentvalues/resetfocus.md) environment value and call it as a function to force a default focus reevaluation at runtime.
+Get the [`resetFocus`](./environmentvalues/resetfocus.md) environment value and call it as a function to force a default focus reevaluation at runtime.
 
 ```swift
 @Namespace var mainNamespace
@@ -34,12 +35,13 @@ var body: some View {
 ## Topics
 
 ### Calling the action
-- [func callAsFunction(in: Namespace.ID)](resetfocusaction/callasfunction(in:).md)
+- [func callAsFunction(in: Namespace.ID)](./resetfocusaction/callasfunction%28in%29.md)
   Asks the focus sytem to reevaluate the default focus item.
 
 ## See Also
 
-- [var resetFocus: ResetFocusAction](environmentvalues/resetfocus.md)
+### Resetting focus
+- [var resetFocus: ResetFocusAction](./environmentvalues/resetfocus.md)
   An action that requests the focus system to reevaluate default focus.
 
 

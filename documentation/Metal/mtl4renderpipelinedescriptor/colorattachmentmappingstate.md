@@ -1,7 +1,8 @@
 # colorAttachmentMappingState
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configures a logical-to-physical rendering remap state.
 
@@ -19,9 +20,13 @@ Configures a logical-to-physical rendering remap state.
 var colorAttachmentMappingState: MTL4LogicalToPhysicalColorAttachmentMappingState { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MTL4LogicalToPhysicalColorAttachmentMappingState colorAttachmentMappingState;
+```
+
 #### Discussion
 
-Use this property to assign how a [`MTL4RenderCommandEncoder`](mtl4rendercommandencoder.md) instance maps the output of your fragment shader to physical color attachments.
+Use this property to assign how a [`MTL4RenderCommandEncoder`](../mtl4rendercommandencoder.md) instance maps the output of your fragment shader to physical color attachments.
 
 
 ---

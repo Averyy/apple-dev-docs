@@ -1,7 +1,8 @@
 # webDomains
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional set of web domains to include in a report.
 

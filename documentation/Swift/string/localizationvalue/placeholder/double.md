@@ -1,7 +1,8 @@
 # String.LocalizationValue.Placeholder.double
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The double-precision floating-point type, as used for replacement values with the localized string placeholder syntax.
 
@@ -28,13 +29,14 @@ The various `String(localized:)` initializers apply a locale-appropriate `Format
 
 ## See Also
 
-- [String.LocalizationValue.Placeholder.int](string/localizationvalue/placeholder/int.md)
+### Placeholder types
+- [String.LocalizationValue.Placeholder.int](./int.md)
   The signed integer type, as used for replacement values with the localized string placeholder syntax.
-- [String.LocalizationValue.Placeholder.uint](string/localizationvalue/placeholder/uint.md)
+- [String.LocalizationValue.Placeholder.uint](./uint.md)
   The unsigned integer type, as used for replacement values with the localized string placeholder syntax.
-- [String.LocalizationValue.Placeholder.float](string/localizationvalue/placeholder/float.md)
+- [String.LocalizationValue.Placeholder.float](./float.md)
   The single-precision floating-point type, as used for replacement values with the localized string placeholder syntax.
-- [String.LocalizationValue.Placeholder.object](string/localizationvalue/placeholder/object.md)
+- [String.LocalizationValue.Placeholder.object](./object.md)
   The object type, as used for replacement values with the localized string placeholder syntax.
 
 

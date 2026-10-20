@@ -1,7 +1,8 @@
 # shortGuid
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A global unique identifier for a shared record.
 
@@ -10,7 +11,7 @@ A global unique identifier for a shared record.
 
 ## Declaration
 
-```swift
+```
 attribute string shortGuid;
 ```
 

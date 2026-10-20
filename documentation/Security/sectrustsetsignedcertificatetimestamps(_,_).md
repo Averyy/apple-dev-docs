@@ -1,7 +1,8 @@
 # SecTrustSetSignedCertificateTimestamps(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Attaches signed certificate timestamp data to a trust object.
 
@@ -20,18 +21,22 @@ Attaches signed certificate timestamp data to a trust object.
 func SecTrustSetSignedCertificateTimestamps(_ trust: SecTrust, _ sctArray: CFArray?) -> OSStatus
 ```
 
+```c
+OSStatus SecTrustSetSignedCertificateTimestamps(SecTrustRef trust, CFArrayRef sctArray);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
-Use this function to provide secure certificate timestamps, which might be obtained during a TLS/SSL handshake, as input to a trust evaluation. For more information, see [`RFC 6962`](https://developer.apple.comhttps://tools.ietf.org/html/rfc6962).
+Use this function to provide secure certificate timestamps, which might be obtained during a TLS/SSL handshake, as input to a trust evaluation. For more information, see [RFC 6962](https://tools.ietf.org/html/rfc6962).
 
 ## Parameters
 
 - `trust`: The trust object to which the timestamp data should be attached.
-- `sctArray`: An array of [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) instances, each of which contains a signed certificate timestamp.
+- `sctArray`: An array of [`CFData`](../CoreFoundation/cfdata.md) instances, each of which contains a signed certificate timestamp.
 
 
 ---

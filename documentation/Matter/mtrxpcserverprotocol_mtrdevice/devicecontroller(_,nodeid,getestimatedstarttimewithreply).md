@@ -2,6 +2,7 @@
 
 **Framework**: Matter  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,7 +17,15 @@
 ## Declaration
 
 ```swift
+func deviceController(_ controller: UUID, nodeID: NSNumber, getEstimatedStartTimeWithReply reply: @escaping @Sendable (Date?) -> Void)
+```
+
+```swift
 func deviceControllerGetEstimatedStartTime(_ controller: UUID, nodeID: NSNumber) async -> Date?
+```
+
+```objc
+- (void) deviceController:(NSUUID *) controller nodeID:(NSNumber *) nodeID getEstimatedStartTimeWithReply:(void (^)(NSDate *estimatedStartTime)) reply;
 ```
 
 

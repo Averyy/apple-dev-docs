@@ -1,7 +1,8 @@
 # kIOUSBDeviceRequestRecipientValueOther
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The other recipient value.
 
@@ -10,7 +11,7 @@ The other recipient value.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBDeviceRequestRecipientValueOther = 3
 ```
 

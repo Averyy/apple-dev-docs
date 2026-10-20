@@ -1,7 +1,8 @@
 # new ImageAnnotation(location, options)
 
 **Framework**: MapKit JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Constructor
 
 Creates an image annotation with an image and a coordinate.
 
@@ -10,7 +11,7 @@ Creates an image annotation with an image and a coordinate.
 
 ## Declaration
 
-```swift
+```
 constructor(
     location: CoordinateData | Place | SearchAutocompleteResult,
     options: ImageAnnotationConstructorOptions,
@@ -51,11 +52,12 @@ map.addAnnotation(pinAnnotation);
 ## Parameters
 
 - `location`: The coordinate where this annotation appears.
-- `options`: A hash of properties that initialize the annotation. The `options` hash needs to include [`image`](imageannotationconstructoroptions/image.md). MapKit JS displays an optional `title` and `subtitle` in a callout if they’re present.
+- `options`: A hash of properties that initialize the annotation. The `options` hash needs to include [`image`](../imageannotationconstructoroptions/image.md). MapKit JS displays an optional `title` and `subtitle` in a callout if they’re present.
 
 ## See Also
 
-- [interface ImageAnnotationConstructorOptions](imageannotationconstructoroptions.md)
+### Creating an image annotation
+- [interface ImageAnnotationConstructorOptions](../imageannotationconstructoroptions.md)
   An object containing options for creating an image annotation.
 
 

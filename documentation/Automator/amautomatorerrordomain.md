@@ -1,7 +1,8 @@
 # AMAutomatorErrorDomain
 
 **Framework**: Automator  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A string that identifies the Automator error domain.
 
@@ -15,13 +16,18 @@ A string that identifies the Automator error domain.
 var AMAutomatorErrorDomain: String { get }
 ```
 
+```c
+#define AMAutomatorErrorDomain
+```
+
 ## See Also
 
-- [var AMActionErrorKey: String](amactionerrorkey.md)
+### Errors
+- [var AMActionErrorKey: String](./amactionerrorkey.md)
   A key to retrieve the action that caused an error.
-- [struct AMError](amerror.md)
+- [struct AMError](./amerror.md)
   An Automator error.
-- [AMError.Code](amerror/code.md)
+- [AMError.Code](./amerror/code.md)
   Automator error codes.
 
 

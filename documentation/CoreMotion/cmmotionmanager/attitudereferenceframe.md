@@ -1,7 +1,8 @@
 # attitudeReferenceFrame
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns either the reference frame currently being used or the default attitude reference frame.
 
@@ -18,21 +19,27 @@ Returns either the reference frame currently being used or the default attitude 
 var attitudeReferenceFrame: CMAttitudeReferenceFrame { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMAttitudeReferenceFrame attitudeReferenceFrame;
+```
+
 ## Mentions
 
-- [Getting processed device-motion data](getting-processed-device-motion-data.md)
+- [Getting processed device-motion data](../getting-processed-device-motion-data.md)
 
 #### Discussion
 
-If the device-motion service is active, this property returns the reference frame currently in use. If the service is inactive, but your app started it at some point since launch, this property contains the last reference frame you used. If you haven’t started the device-motion service since app launch, this property returns the default frame of reference, which is [`xArbitraryZVertical`](cmattitudereferenceframe/xarbitraryzvertical.md).
+If the device-motion service is active, this property returns the reference frame currently in use. If the service is inactive, but your app started it at some point since launch, this property contains the last reference frame you used. If you haven’t started the device-motion service since app launch, this property returns the default frame of reference, which is [`xArbitraryZVertical`](../cmattitudereferenceframe/xarbitraryzvertical.md).
 
 If device motion is not available on the current device, the value of this property is undefined.
 
 ## See Also
 
-- [var isDeviceMotionAvailable: Bool](cmmotionmanager/isdevicemotionavailable.md)
+### Related Documentation
+- [var isDeviceMotionAvailable: Bool](./isdevicemotionavailable.md)
   A Boolean value that indicates whether the device-motion service is available on the device.
-- [class func availableAttitudeReferenceFrames() -> CMAttitudeReferenceFrame](cmmotionmanager/availableattitudereferenceframes.md)
+### Accessing Attitude Reference Frames
+- [class func availableAttitudeReferenceFrames() -> CMAttitudeReferenceFrame](./availableattitudereferenceframes%28%29.md)
   Returns a bitmask of the available reference frames for reporting the attitude of the current device.
 
 

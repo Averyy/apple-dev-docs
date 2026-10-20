@@ -1,12 +1,13 @@
 # save()
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Saves all the changes made since the last save.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ Saves all the changes made since the last save.
 func save() -> Bool
 ```
 
+```objc
+- (BOOL) save;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successful or there were no changes; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if successful or there were no changes; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func hasUnsavedChanges() -> Bool](abaddressbook-swift.class/hasunsavedchanges.md)
+### Saving and Detecting Changes
+- [func hasUnsavedChanges() -> Bool](./hasunsavedchanges%28%29.md)
   Indicates whether an address book has changes that have not been saved to the Address Book database.
-- [func saveAndReturnError() throws](abaddressbook-swift.class/saveandreturnerror.md)
+- [func saveAndReturnError() throws](./saveandreturnerror%28%29.md)
   Saves all the changes made since the last save.
 
 

@@ -1,7 +1,8 @@
 # textLayoutGuide
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A guide for positioning the primary text in the content view.
 
@@ -18,6 +19,10 @@ A guide for positioning the primary text in the content view.
 var textLayoutGuide: UILayoutGuide? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) UILayoutGuide * textLayoutGuide;
+```
+
 #### Discussion
 
 If the configuration doesn’t specify primary text, the value of this property is `nil`.
@@ -26,9 +31,10 @@ If you apply a new configuration without primary text to the content view, the s
 
 ## See Also
 
-- [var secondaryTextLayoutGuide: UILayoutGuide?](uilistcontentview/secondarytextlayoutguide.md)
+### Managing the content layout
+- [var secondaryTextLayoutGuide: UILayoutGuide?](./secondarytextlayoutguide.md)
   A guide for positioning the secondary text in the content view.
-- [var imageLayoutGuide: UILayoutGuide?](uilistcontentview/imagelayoutguide.md)
+- [var imageLayoutGuide: UILayoutGuide?](./imagelayoutguide.md)
   A guide for positioning the image in the content view.
 
 

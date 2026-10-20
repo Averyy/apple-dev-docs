@@ -1,6 +1,7 @@
 # Expanding generation with tool calling
 
-**Framework**: Foundation Models
+**Framework**: Foundation Models  
+**Role**: Article
 
 Build tools that enable the model to perform tasks that are specific to your use case.
 
@@ -12,17 +13,17 @@ You can create tools that enable the model to:
 
 - Query entries from your app’s database and reference them in its answer.
 - Perform actions within your app, like adjusting the difficulty in a game or making a web request to get additional information.
-- Integrate with other frameworks, like [`Contacts`](https://developer.apple.com/documentation/contacts) or [`HealthKit`](https://developer.apple.com/documentation/healthkit), that use existing privacy and security mechanisms.
+- Integrate with other frameworks, like [Contacts](../Contacts/Contacts.md) or [HealthKit](../HealthKit/HealthKit.md), that use existing privacy and security mechanisms.
 
-#### Create a Custom Tool for Your Task
+#### Create a custom tool for your task
 
 When you prompt the model with a question or make a request, the model decides whether it can provide an answer or if it needs the help of a tool. When the model determines that a tool can help, it calls the tool with additional arguments that the tool can use. After the tool completes the task, it returns control back to the model with information about what the tool did. The model can then use the output of the tool when it provides the final response.
 
 Before creating a tool, it’s helpful to understand the pattern the framework follows when using the tool you provide. The framework processes a request in six phases that the following diagram shows:
 
-![A flow diagram with two columns, App and Model. In the App column, a prompt](/images/com.apple.foundationmodels/expanding-generation-with-tool-calling-sequence@2x.png)
+![A flow diagram with two columns, App and Model. In the App column, a prompt](https://developer.apple.com/tutorials/images/com.apple.foundationmodels/expanding-generation-with-tool-calling-sequence@2x.png)
 
-A tool conforms to [`Tool`](tool.md) and contains the arguments that the tool accepts, and a method that the model calls when it wants to use the tool. You can call [`call(arguments:)`](tool/call(arguments:).md) concurrently with itself or with other tools. The following example shows a tool that accepts a search term and a number of recipes to retrieve:
+A tool conforms to [`Tool`](./tool.md) and contains the arguments that the tool accepts, and a method that the model calls when it wants to use the tool. You can call [`call(arguments:)`](./tool/call%28arguments%29.md) concurrently with itself or with other tools. The following example shows a tool that accepts a search term and a number of recipes to retrieve:
 
 ```swift
 struct BreadDatabaseTool: Tool {
@@ -54,11 +55,11 @@ struct BreadDatabaseTool: Tool {
 }
 ```
 
-When you provide descriptions to generable properties, you help the model understand the semantics of the arguments. Keep descriptions as short as possible because long descriptions take up context size and can introduce latency. For more information on managing the context window size, see [`Managing the context window`](managing-the-context-window.md).
+When you provide descriptions to generable properties, you help the model understand the semantics of the arguments. Keep descriptions as short as possible because long descriptions take up context size and can introduce latency. For more information on managing the context window size, see [Managing the context window](./managing-the-context-window.md).
 
-Tools use guided generation for the [`Arguments`](tool/arguments.md) property. For more information about guided generation, see [`Generating Swift data structures with guided generation`](generating-swift-data-structures-with-guided-generation.md).
+Tools use guided generation for the [`Arguments`](./tool/arguments.md) property. For more information about guided generation, see [Generating Swift data structures with guided generation](./generating-swift-data-structures-with-guided-generation.md).
 
-#### Provide a Session with the Tool You Create
+#### Provide a session with the tool you create
 
 When you create a session, you can provide a list of tools that are relevant to the task you want to complete. The tools you provide are available for all future interactions with the session. The following example initializes a session with a tool that the model can call when it determines that it would help satisfy the prompt:
 
@@ -72,7 +73,7 @@ let response = try await session.respond(
 )
 ```
 
-Tool output can be a string, a [`GeneratedContent`](generatedcontent.md) object, or any `@Generable` type. The model can call a tool multiple times in parallel to satisfy the request, like when retrieving weather details for several cities:
+Tool output can be a string, a [`GeneratedContent`](./generatedcontent.md) object, or any `@Generable` type. The model can call a tool multiple times in parallel to satisfy the request, like when retrieving weather details for several cities:
 
 ```swift
 struct WeatherTool: Tool {
@@ -110,13 +111,13 @@ let response = try await session.respond(
 )
 ```
 
-#### Configure the Tool Calling Mode
+#### Configure the tool calling mode
 
-By default, the model decides whether to call a tool based on the prompt. However, there are cases where you have additional context that the model doesn’t, such as the state of the UI or a rule that the model must always call a tool before responding to the person. Use [`GenerationOptions.ToolCallingMode`](generationoptions/toolcallingmode-swift.struct.md) to control how the model interacts with tools for a given request. Tool calling mode supports three modes:
+By default, the model decides whether to call a tool based on the prompt. However, there are cases where you have additional context that the model doesn’t, such as the state of the UI or a rule that the model must always call a tool before responding to the person. Use [`GenerationOptions.ToolCallingMode`](./generationoptions/toolcallingmode-swift.struct.md) to control how the model interacts with tools for a given request. Tool calling mode supports three modes:
 
-- **[`allowed`](generationoptions/toolcallingmode-swift.struct/allowed.md)**: The model may call tools. This is the default behavior.
-- **[`required`](generationoptions/toolcallingmode-swift.struct/required.md)**: The model must call one or more tools before it can respond.
-- **[`disallowed`](generationoptions/toolcallingmode-swift.struct/disallowed.md)**: The model can’t call any tools and responds using only its own knowledge.
+- **[`allowed`](./generationoptions/toolcallingmode-swift.struct/allowed.md)**: The model may call tools. This is the default behavior.
+- **[`required`](./generationoptions/toolcallingmode-swift.struct/required.md)**: The model must call one or more tools before it can respond.
+- **[`disallowed`](./generationoptions/toolcallingmode-swift.struct/disallowed.md)**: The model can’t call any tools and responds using only its own knowledge.
 
 The following example uses the `.required` mode to ensure the model always queries a database before answering:
 
@@ -140,9 +141,9 @@ let response = try await session.respond(
 )
 ```
 
-> ❗ **Important**: When you set the mode to [`required`](generationoptions/toolcallingmode-swift.struct/required.md), you must define an exit condition by either throwing an error from a tool’s [`call(arguments:)`](tool/call(arguments:).md) method or by changing the mode dynamically using a [`LanguageModelSession.DynamicProfile`](languagemodelsession/dynamicprofile.md); otherwise, the model continues to call the tool.
+> ❗ **Important**: When you set the mode to [`required`](./generationoptions/toolcallingmode-swift.struct/required.md), you must define an exit condition by either throwing an error from a tool’s [`call(arguments:)`](./tool/call%28arguments%29.md) method or by changing the mode dynamically using a [`LanguageModelSession.DynamicProfile`](./languagemodelsession/dynamicprofile.md); otherwise, the model continues to call the tool.
 
-The following changes the mode from [`required`](generationoptions/toolcallingmode-swift.struct/required.md) to [`allowed`](generationoptions/toolcallingmode-swift.struct/allowed.md) after the first tool call, which lets the model produce a final response:
+The following changes the mode from [`required`](./generationoptions/toolcallingmode-swift.struct/required.md) to [`allowed`](./generationoptions/toolcallingmode-swift.struct/allowed.md) after the first tool call, which lets the model produce a final response:
 
 ```swift
 extension SessionPropertyValues {
@@ -166,9 +167,9 @@ struct RecipeDynamicProfile: LanguageModelSession.DynamicProfile {
 }
 ```
 
-#### Handle Errors Thrown By a Tool
+#### Handle errors thrown by a tool
 
-When an error happens during tool calling, the session throws a [`LanguageModelSession.ToolCallError`](languagemodelsession/toolcallerror.md) with the underlying error and includes the tool that throws the error. This helps you understand the error that happened during the tool call, and any custom error types that your tool produces. You can throw errors from your tools to escape calls when you detect something is wrong, like when the person using your app doesn’t allow access to the required data or a network call is taking longer than expected. Alternatively, your tool can return a string that briefly tells the model what didn’t work, like “Cannot access the database.”
+When an error happens during tool calling, the session throws a [`LanguageModelSession.ToolCallError`](./languagemodelsession/toolcallerror.md) with the underlying error and includes the tool that throws the error. This helps you understand the error that happened during the tool call, and any custom error types that your tool produces. You can throw errors from your tools to escape calls when you detect something is wrong, like when the person using your app doesn’t allow access to the required data or a network call is taking longer than expected. Alternatively, your tool can return a string that briefly tells the model what didn’t work, like “Cannot access the database.”
 
 ```swift
 do {
@@ -189,7 +190,7 @@ do {
 }
 ```
 
-When errors are thrown from a tool, the framework rolls back the transcript to a previously known valid state. Use [`transcriptErrorHandlingPolicy`](languagemodelsession/transcripterrorhandlingpolicy.md) to define whether the session preserves the transcript an error occurs or if it reverts back to before the last request. When preserving the transcript, the last entry may be partially generated. If you use [`LanguageModelSession.DynamicProfile`](languagemodelsession/dynamicprofile.md), attach the [`transcriptErrorHandlingPolicy(_:)`](languagemodelsession/dynamicprofile/transcripterrorhandlingpolicy(_:).md) modifier to specify the error handling policy:
+When errors are thrown from a tool, the framework rolls back the transcript to a previously known valid state. Use [`transcriptErrorHandlingPolicy`](./languagemodelsession/transcripterrorhandlingpolicy.md) to define whether the session preserves the transcript an error occurs or if it reverts back to before the last request. When preserving the transcript, the last entry may be partially generated. If you use [`LanguageModelSession.DynamicProfile`](./languagemodelsession/dynamicprofile.md), attach the [`transcriptErrorHandlingPolicy(_:)`](./languagemodelsession/dynamicprofile/transcripterrorhandlingpolicy%28_%29.md) modifier to specify the error handling policy:
 
 ```swift
 // Configure a profile to preserve the transcript when an error occurs.
@@ -200,9 +201,9 @@ Profile {
 .transcriptErrorHandlingPolicy(.preserveTranscript)
 ```
 
-#### Inspect the Call Graph
+#### Inspect the call graph
 
-A session contains an observable [`transcript`](languagemodelsession/transcript.md) property that allows you to track when, and how many times, the model calls your tools. A transcript also provides the ability to construct a representation of the call graph for debugging purposes and pairs well with [`SwiftUI`](https://developer.apple.com/documentation/swiftui) to visualize session history.
+A session contains an observable [`transcript`](./languagemodelsession/transcript.md) property that allows you to track when, and how many times, the model calls your tools. A transcript also provides the ability to construct a representation of the call graph for debugging purposes and pairs well with [SwiftUI](../SwiftUI/SwiftUI.md) to visualize session history.
 
 ```swift
 struct MyHistoryView: View {
@@ -244,9 +245,10 @@ struct MyHistoryView: View {
 
 ## See Also
 
-- [Generate dynamic game content with guided generation and tools](generate-dynamic-game-content-with-guided-generation-and-tools.md)
+### Tools
+- [Generate dynamic game content with guided generation and tools](./generate-dynamic-game-content-with-guided-generation-and-tools.md)
   Make gameplay more lively with AI generated dialog and encounters personalized to the player.
-- [protocol Tool](tool.md)
+- [protocol Tool](./tool.md)
   A tool that a model can call to gather information at runtime or perform side effects.
 
 

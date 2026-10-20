@@ -1,7 +1,8 @@
 # body
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The root view of the view hierarchy to display for your interface controller.
 

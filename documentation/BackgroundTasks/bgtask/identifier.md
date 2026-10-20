@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Background Tasks  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string identifier of the task.
 
@@ -18,9 +19,13 @@ The string identifier of the task.
 var identifier: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * identifier;
+```
+
 #### Discussion
 
-The identifier is the same as the one used to register the launch handler in [`register(forTaskWithIdentifier:using:launchHandler:)`](bgtaskscheduler/register(fortaskwithidentifier:using:launchhandler:).md).
+The identifier is the same as the one used to register the launch handler in [`register(forTaskWithIdentifier:using:launchHandler:)`](../bgtaskscheduler/register%28fortaskwithidentifier,using,launchhandler%29.md).
 
 
 ---

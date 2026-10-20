@@ -1,7 +1,8 @@
 # LightmapResource.BakeType.finalShadedColor
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Lightmaps with this type contain the final shaded color. No runtime shading calculations are performed for objects using this type of lightmap.
 
@@ -21,8 +22,9 @@ case finalShadedColor
 
 ## See Also
 
-- [LightmapResource.BakeType.indirectDiffuseIrradiance](lightmapresource/baketype/indirectdiffuseirradiance.md)
-- [LightmapResource.BakeType.ambientOcclusion](lightmapresource/baketype/ambientocclusion.md)
+### Specifying the bake type
+- [LightmapResource.BakeType.indirectDiffuseIrradiance](./indirectdiffuseirradiance.md)
+- [LightmapResource.BakeType.ambientOcclusion](./ambientocclusion.md)
 
 
 ---

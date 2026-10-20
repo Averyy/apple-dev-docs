@@ -1,7 +1,8 @@
 # containsValue(forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether an encoded value is available for a string.
 
@@ -20,6 +21,10 @@ Returns a Boolean value that indicates whether an encoded value is available for
 func containsValue(forKey key: String) -> Bool
 ```
 
+```objc
+- (BOOL) containsValueForKey:(NSString *) key;
+```
+
 #### Discussion
 
 Subclasses must override this method if they perform keyed coding.
@@ -28,11 +33,12 @@ The string is passed as `key`.
 
 ## See Also
 
-- [var allowsKeyedCoding: Bool](nscoder/allowskeyedcoding.md)
+### Inspecting a Coder
+- [var allowsKeyedCoding: Bool](./allowskeyedcoding.md)
   A Boolean value that indicates whether the receiver supports keyed coding of objects.
-- [var decodingFailurePolicy: NSCoder.DecodingFailurePolicy](nscoder/decodingfailurepolicy-swift.property.md)
+- [var decodingFailurePolicy: NSCoder.DecodingFailurePolicy](./decodingfailurepolicy-swift.property.md)
   The action the coder should take when decoding fails.
-- [NSCoder.DecodingFailurePolicy](nscoder/decodingfailurepolicy-swift.enum.md)
+- [NSCoder.DecodingFailurePolicy](./decodingfailurepolicy-swift.enum.md)
   Policies describing the action the coder should take when encountering decode failures.
 
 

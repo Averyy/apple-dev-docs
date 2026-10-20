@@ -1,11 +1,12 @@
 # CustomStringConvertible Implementations
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var description: String](scene/anchorcollection/description.md)
+- [var description: String](./description.md)
   A textual representation of this instance.
 
 

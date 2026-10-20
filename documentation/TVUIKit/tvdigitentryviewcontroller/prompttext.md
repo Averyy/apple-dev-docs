@@ -1,7 +1,8 @@
 # promptText
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A prompt that displays any additional required information.
 
@@ -14,17 +15,22 @@ A prompt that displays any additional required information.
 var promptText: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * promptText;
+```
+
 #### Discussion
 
 The prompt text is displayed immediately below the title text.
 
 ## See Also
 
-- [var numberOfDigits: Int](tvdigitentryviewcontroller/numberofdigits.md)
+### Configuring the Digit Entry View
+- [var numberOfDigits: Int](./numberofdigits.md)
   The number of required digits.
-- [var titleText: String?](tvdigitentryviewcontroller/titletext.md)
+- [var titleText: String?](./titletext.md)
   The title of the digit entry view.
-- [var isSecureDigitEntry: Bool](tvdigitentryviewcontroller/issecuredigitentry.md)
+- [var isSecureDigitEntry: Bool](./issecuredigitentry.md)
   A Boolean value that indicates whether an entered digit is immediately obscured.
 
 

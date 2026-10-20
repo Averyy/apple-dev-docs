@@ -1,7 +1,8 @@
 # Storefront.Storefronts
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence that listens for changes to the storefront.
 
@@ -23,13 +24,14 @@ struct Storefronts
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static var updates: Storefront.Storefronts](storefront/updates.md)
+### Listening for storefront changes
+- [static var updates: Storefront.Storefronts](./updates.md)
   The asynchronous sequence that emits storefront information when the system updates the storefront.
 
 

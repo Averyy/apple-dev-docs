@@ -1,7 +1,8 @@
 # CampaignUpdate.DailyBudget
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Request wrapper for updating a campaign’s daily budget amount.
 
@@ -10,7 +11,7 @@ Request wrapper for updating a campaign’s daily budget amount.
 
 ## Declaration
 
-```swift
+```
 object CampaignUpdate.DailyBudget
 ```
 
@@ -18,11 +19,11 @@ object CampaignUpdate.DailyBudget
 
 To change a campaign’s daily spend cap, use this object. Submitting a new value replaces the current daily budget outright and doesn’t affect `sharedBudgets`, which are managed independently.
 
-See [`DailyBudgetUpdate`](dailybudgetupdate.md) for the full field reference.
+See [`DailyBudgetUpdate`](../dailybudgetupdate.md) for the full field reference.
 
 ## Properties
 
-- `value` (Money): The new daily budget amount as a Money object with `amount` (decimal string) and ISO 4217 `currency` code. See [`Money`](money.md).
+- `value` (Money): The new daily budget amount as a Money object with `amount` (decimal string) and ISO 4217 `currency` code. See [`Money`](../money.md).
 
 
 ---

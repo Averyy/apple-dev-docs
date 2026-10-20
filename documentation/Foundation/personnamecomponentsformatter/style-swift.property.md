@@ -1,7 +1,8 @@
 # style
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The formatting style of the receiver.
 
@@ -20,13 +21,18 @@ The formatting style of the receiver.
 var style: PersonNameComponentsFormatter.Style { get set }
 ```
 
+```objc
+@property NSPersonNameComponentsFormatterStyle style;
+```
+
 #### Discussion
 
 Styles specify which name components are used to create a string representation, and how. Examples of name components formatter styles include `long` and `abbreviated`.
 
 ## See Also
 
-- [var isPhonetic: Bool](personnamecomponentsformatter/isphonetic.md)
+### Configuring Formatter Behavior
+- [var isPhonetic: Bool](./isphonetic.md)
   A Boolean value that specifies whether the receiver should use only the phonetic representations of name components.
 
 

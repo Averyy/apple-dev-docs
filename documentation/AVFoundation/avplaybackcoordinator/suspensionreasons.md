@@ -1,7 +1,8 @@
 # suspensionReasons
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reasons a coordinator is currently unable to participate in a group playback activity.
 
@@ -19,15 +20,20 @@ The reasons a coordinator is currently unable to participate in a group playback
 var suspensionReasons: [AVCoordinatedPlaybackSuspension.Reason] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSString *> * suspensionReasons;
+```
+
 #### Discussion
 
 The coordinator doesn’t respond to changes in group playback state when this property value contains suspension reasons.
 
-> **Note**:  To observe changes to this property value, register for notifications of type [`suspensionReasonsDidChangeNotification`](avplaybackcoordinator/suspensionreasonsdidchangenotification.md).
+> **Note**:  To observe changes to this property value, register for notifications of type [`suspensionReasonsDidChangeNotification`](./suspensionreasonsdidchangenotification.md).
 
 ## See Also
 
-- [class let suspensionReasonsDidChangeNotification: NSNotification.Name](avplaybackcoordinator/suspensionreasonsdidchangenotification.md)
+### Observing suspension reasons
+- [class let suspensionReasonsDidChangeNotification: NSNotification.Name](./suspensionreasonsdidchangenotification.md)
   A notification that the coordinator posts when its suspension reasons change.
 
 

@@ -1,7 +1,8 @@
 # BEBrowserContentFilter
 
 **Framework**: BrowserKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 27.0+
@@ -13,22 +14,26 @@
 class BEBrowserContentFilter
 ```
 
+```objc
+@interface BEBrowserContentFilter : NSObject
+```
+
 ## Topics
 
 ### Instance Methods
-- [func evaluateURL(URL, completionHandler: (Bool) -> Void)](bebrowsercontentfilter/evaluateurl(_:completionhandler:).md)
+- [func evaluateURL(URL, completionHandler: (Bool) -> Void)](./bebrowsercontentfilter/evaluateurl%28_,completionhandler%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

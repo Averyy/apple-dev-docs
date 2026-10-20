@@ -1,7 +1,8 @@
 # path
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The path of the shape.
 

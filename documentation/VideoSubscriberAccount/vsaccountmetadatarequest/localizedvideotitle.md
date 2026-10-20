@@ -1,7 +1,8 @@
 # localizedVideoTitle
 
 **Framework**: Video Subscriber Account  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A short, user-presentable name for the video that the user wants to play.
 
@@ -9,7 +10,7 @@ A short, user-presentable name for the video that the user wants to play.
 - iOS 10.0+
 - iPadOS 10.0+
 - Mac Catalyst 10.0+
-- macOS ?+
+- macOS
 - tvOS 10.0+
 - visionOS 1.0+
 
@@ -17,6 +18,10 @@ A short, user-presentable name for the video that the user wants to play.
 
 ```swift
 var localizedVideoTitle: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * localizedVideoTitle;
 ```
 
 #### Discussion
@@ -27,13 +32,14 @@ A value is not required if your app isn’t sending the request to play a specif
 
 ## See Also
 
-- [var isInterruptionAllowed: Bool](vsaccountmetadatarequest/isinterruptionallowed.md)
+### Specifying Additional Options
+- [var isInterruptionAllowed: Bool](./isinterruptionallowed.md)
   A Boolean value that indicates whether your app can prompt the user to authenticate to complete the request.
-- [var featuredAccountProviderIdentifiers: [String]](vsaccountmetadatarequest/featuredaccountprovideridentifiers.md)
+- [var featuredAccountProviderIdentifiers: [String]](./featuredaccountprovideridentifiers.md)
   The providers your app lists prominently during authentication.
-- [var forceAuthentication: Bool](vsaccountmetadatarequest/forceauthentication.md)
+- [var forceAuthentication: Bool](./forceauthentication.md)
   A Boolean value that indicates whether the app ignores cached credentials.
-- [var applicationAccountProviders: [VSAccountApplicationProvider]?](vsaccountmetadatarequest/applicationaccountproviders.md)
+- [var applicationAccountProviders: [VSAccountApplicationProvider]?](./applicationaccountproviders.md)
   An array of application-specific providers to add to the list of account providers.
 
 

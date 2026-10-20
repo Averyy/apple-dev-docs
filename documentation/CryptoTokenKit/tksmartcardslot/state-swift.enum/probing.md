@@ -1,7 +1,8 @@
 # TKSmartCardSlot.State.probing
 
 **Framework**: CryptoTokenKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 9.0+
@@ -18,16 +19,21 @@
 case probing
 ```
 
+```c
+TKSmartCardSlotStateProbing
+```
+
 #### Discussion
 
 A Smart Card was inserted into the slot and an initial probe is in underway.
 
 ## See Also
 
-- [TKSmartCardSlot.State.missing](tksmartcardslot/state-swift.enum/missing.md)
-- [TKSmartCardSlot.State.empty](tksmartcardslot/state-swift.enum/empty.md)
-- [TKSmartCardSlot.State.muteCard](tksmartcardslot/state-swift.enum/mutecard.md)
-- [TKSmartCardSlot.State.validCard](tksmartcardslot/state-swift.enum/validcard.md)
+### Constants
+- [TKSmartCardSlot.State.missing](./missing.md)
+- [TKSmartCardSlot.State.empty](./empty.md)
+- [TKSmartCardSlot.State.muteCard](./mutecard.md)
+- [TKSmartCardSlot.State.validCard](./validcard.md)
 
 
 ---

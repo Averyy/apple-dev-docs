@@ -1,7 +1,8 @@
 # VTTCue
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,28 +10,28 @@
 
 ## Declaration
 
-```swift
+```
 interface VTTCue
 ```
 
 ## Topics
 
 ### Instance Properties
-- [align](vttcue/1633713-align.md)
-- [line](vttcue/1632680-line.md)
-- [position](vttcue/1631147-position.md)
-- [regionId](vttcue/1777887-regionid.md)
-- [size](vttcue/1630294-size.md)
-- [snapToLines](vttcue/1632381-snaptolines.md)
-- [text](vttcue/1630187-text.md)
-- [vertical](vttcue/1630989-vertical.md)
+- [align](./vttcue/api-1633713-align.md)
+- [line](./vttcue/api-1632680-line.md)
+- [position](./vttcue/api-1631147-position.md)
+- [regionId](./vttcue/api-1777887-regionid.md)
+- [size](./vttcue/api-1630294-size.md)
+- [snapToLines](./vttcue/api-1632381-snaptolines.md)
+- [text](./vttcue/api-1630187-text.md)
+- [vertical](./vttcue/api-1630989-vertical.md)
 ### Instance Methods
-- [getCueAsHTML](vttcue/1631456-getcueashtml.md)
+- [getCueAsHTML](./vttcue/api-1631456-getcueashtml.md)
 
 ## Relationships
 
 ### Inherits From
-- [TextTrackCue](texttrackcue.md)
+- [TextTrackCue](./texttrackcue.md)
 
 
 ---

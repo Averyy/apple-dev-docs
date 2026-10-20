@@ -1,7 +1,8 @@
 # index(after:)
 
 **Framework**: PaperKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index immediately after the given index.
 

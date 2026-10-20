@@ -1,7 +1,8 @@
 # errorCorrectedPayload
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The error-corrected payload containing the data encoded in the PDF417 code symbol.
 
@@ -19,6 +20,10 @@ The error-corrected payload containing the data encoded in the PDF417 code symbo
 var errorCorrectedPayload: Data { get }
 ```
 
+```objc
+@property (readonly) NSData * errorCorrectedPayload;
+```
+
 #### Discussion
 
 The first codeword indicates the number of data codewords in the errorCorrectedPayload.
@@ -27,11 +32,12 @@ PDF417 codes are comprised of a start character on the left and a stop character
 
 ## See Also
 
-- [var isCompact: Bool](cipdf417codedescriptor/iscompact-swift.property.md)
+### Examining a Descriptor
+- [var isCompact: Bool](./iscompact-swift.property.md)
   A boolean value telling if the PDF417 code is compact.
-- [var rowCount: Int](cipdf417codedescriptor/rowcount-swift.property.md)
+- [var rowCount: Int](./rowcount-swift.property.md)
   The number of rows in the PDF417 code symbol.
-- [var columnCount: Int](cipdf417codedescriptor/columncount-swift.property.md)
+- [var columnCount: Int](./columncount-swift.property.md)
   The number of columns in the PDF417 code symbol.
 
 

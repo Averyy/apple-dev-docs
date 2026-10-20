@@ -1,7 +1,8 @@
 # startItemPlayParameters
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The item identified by the play parameters to play first.
 
@@ -18,15 +19,20 @@ The item identified by the play parameters to play first.
 var startItemPlayParameters: MPMusicPlayerPlayParameters? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) MPMusicPlayerPlayParameters * startItemPlayParameters;
+```
+
 #### Discussion
 
-When this property isn’t set, the value is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) and the first item in the queue is the first item to play.
+When this property isn’t set, the value is [`nil`](../../ObjectiveC/nil-227m0.md) and the first item in the queue is the first item to play.
 
 ## See Also
 
-- [var playParametersQueue: [MPMusicPlayerPlayParameters]](mpmusicplayerplayparametersqueuedescriptor/playparametersqueue.md)
+### Accessing the play parameters
+- [var playParametersQueue: [MPMusicPlayerPlayParameters]](./playparametersqueue.md)
   An array containing the play parameters returned from querying MusicKit.
-- [class MPMusicPlayerPlayParameters](mpmusicplayerplayparameters.md)
+- [class MPMusicPlayerPlayParameters](../mpmusicplayerplayparameters.md)
   The MusicKit parameters that describe items to play.
 
 

@@ -1,7 +1,8 @@
 # HttpHeader
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A name-value pair representing an HTTP header included in an upload operation request.
 
@@ -10,7 +11,7 @@ A name-value pair representing an HTTP header included in an upload operation re
 
 ## Declaration
 
-```swift
+```
 object HttpHeader
 ```
 

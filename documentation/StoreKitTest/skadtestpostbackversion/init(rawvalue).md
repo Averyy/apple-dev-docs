@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: StoreKit Test  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a version object with the supplied raw value.
 

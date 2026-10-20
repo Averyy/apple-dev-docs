@@ -1,23 +1,25 @@
 # OSDictionaryApply
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 bool OSDictionaryApply(OSDictionaryPtr obj, OSDictionaryApplier applier);
 ```
 
 ## See Also
 
-- [OSDictionaryApplier](osdictionaryapplier.md)
+### Modifying the Dictionary Items
+- [OSDictionaryApplier](./osdictionaryapplier.md)
 
 
 ---

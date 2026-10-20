@@ -1,7 +1,8 @@
 # attractionStrength
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The particles are attracted to the `attractionCenter` by this amount. Defaults to 0.
 

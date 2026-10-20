@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object you use to receive life-cycle events associated with the scene.
 
@@ -18,13 +19,18 @@ The object you use to receive life-cycle events associated with the scene.
 var delegate: (any UISceneDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) id<UISceneDelegate> delegate;
+```
+
 #### Discussion
 
 The system creates a default delegate object based on the the class name you provide in your app’s `Info.plist` file, or that your app delegate specifies when configuring the scene. You can change this default delegate object later, as needed.
 
 ## See Also
 
-- [protocol UISceneDelegate](uiscenedelegate.md)
+### Managing the life cycle of a scene
+- [protocol UISceneDelegate](../uiscenedelegate.md)
   The core methods you use to respond to life-cycle events occurring within a scene.
 
 

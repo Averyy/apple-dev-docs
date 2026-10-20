@@ -1,7 +1,8 @@
 # PredicateExpressions.ClosedRange
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -21,23 +22,23 @@ struct ClosedRange<LHS, RHS> where LHS : PredicateExpression, RHS : PredicateExp
 ## Topics
 
 ### Initializers
-- [init(lower: LHS, upper: RHS)](predicateexpressions/closedrange/init(lower:upper:).md)
+- [init(lower: LHS, upper: RHS)](./closedrange/init%28lower,upper%29.md)
 ### Instance Properties
-- [let lower: LHS](predicateexpressions/closedrange/lower.md)
-- [let upper: RHS](predicateexpressions/closedrange/upper.md)
+- [let lower: LHS](./closedrange/lower.md)
+- [let upper: RHS](./closedrange/upper.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Escapable](../swift/escapable.md)
-- [PredicateExpression](predicateexpression.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [StandardPredicateExpression](standardpredicateexpression.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Escapable](../../Swift/escapable.md)
+- [PredicateExpression](../predicateexpression.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [StandardPredicateExpression](../standardpredicateexpression.md)
 
 
 ---

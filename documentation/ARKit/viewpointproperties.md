@@ -1,7 +1,8 @@
 # ViewpointProperties
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The ViewpointProperties is a record of render camera transforms at some particular time.
 
@@ -17,23 +18,24 @@ struct ViewpointProperties
 ## Topics
 
 ### Instance Properties
-- [var description: String](viewpointproperties/description.md)
+- [var description: String](./viewpointproperties/description.md)
   Textual representation of the viewpoint properties.
-- [var deviceFromLeftViewpointTransform: simd_float4x4](viewpointproperties/devicefromleftviewpointtransform.md)
+- [var deviceFromLeftViewpointTransform: simd_float4x4](./viewpointproperties/devicefromleftviewpointtransform.md)
   The transformation matrix that converts from the left viewpoint to the device’s coordinate space.
-- [var deviceFromRightViewpointTransform: simd_float4x4](viewpointproperties/devicefromrightviewpointtransform.md)
+- [var deviceFromRightViewpointTransform: simd_float4x4](./viewpointproperties/devicefromrightviewpointtransform.md)
   The transformation matrix that converts from the left viewpoint to the device’s coordinate space.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class StereoPropertiesProvider](stereopropertiesprovider.md)
+### Rendering
+- [class StereoPropertiesProvider](./stereopropertiesprovider.md)
   The StereoPropertiesProvider serves the latest viewpoint properties on the device.
 
 

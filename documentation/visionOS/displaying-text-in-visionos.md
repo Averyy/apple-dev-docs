@@ -1,6 +1,8 @@
 # Displaying text in visionOS
 
-**Framework**: visionOS
+**Framework**: visionOS  
+**Role**: Sample Code  
+**Download**: [DisplayingTextInVisionOS.zip](https://docs-assets.developer.apple.com/published/5587970351ca/DisplayingTextInVisionOS.zip)
 
 Create styled text in a window using SwiftUI.
 
@@ -19,9 +21,9 @@ This sample app uses SwiftUI views to display text in four distinct styles:
 
 The following image shows how the scene renders in visionOS:
 
-![](/images/com.apple.visionOS/sample-text-1-main-view.png)
+![](https://developer.apple.com/tutorials/images/com.apple.visionOS/sample-text-1-main-view.png)
 
-The app’s main view displays four lines of text by creating a [`Text`](https://developer.apple.com/documentation/swiftui/text) instance for each line:
+The app’s main view displays four lines of text by creating a [`Text`](../SwiftUI/text.md) instance for each line:
 
 ```swift
 struct SwiftUIText: View {
@@ -50,7 +52,8 @@ SwiftUI provides the `Text` view and its modifiers, which the app uses to make e
 
 ## See Also
 
-- [Adding a depth effect to text in visionOS](adding-a-depth-effect-to-text-in-visionos.md)
+### Drawing text
+- [Adding a depth effect to text in visionOS](./adding-a-depth-effect-to-text-in-visionos.md)
   Create text that expands out of a window using stacked SwiftUI text views.
 
 

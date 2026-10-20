@@ -1,7 +1,8 @@
 # pollingOption
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 RF polling types to perform tag discovery.
 

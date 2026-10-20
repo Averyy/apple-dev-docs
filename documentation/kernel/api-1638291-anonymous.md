@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOBlitSynchronizeFlushHostWrites](1638291-anonymous/kioblitsynchronizeflushhostwrites.md)
-- [kIOBlitSynchronizeWaitBeamExit](1638291-anonymous/kioblitsynchronizewaitbeamexit.md)
+- [kIOBlitSynchronizeFlushHostWrites](./api-1638291-anonymous/kioblitsynchronizeflushhostwrites.md)
+- [kIOBlitSynchronizeWaitBeamExit](./api-1638291-anonymous/kioblitsynchronizewaitbeamexit.md)
 
 
 ---

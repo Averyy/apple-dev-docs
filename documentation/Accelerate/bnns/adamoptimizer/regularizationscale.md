@@ -1,7 +1,8 @@
 # regularizationScale
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that specifies the regularization scaling factor.
 
@@ -11,8 +12,10 @@ A value that specifies the regularization scaling factor.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,29 +25,30 @@ var regularizationScale: Float { get set }
 
 ## See Also
 
-- [var learningRate: Float](bnns/adamoptimizer/learningrate.md)
+### Inspecting the Properties of an Adam Optimizer
+- [var learningRate: Float](./learningrate.md)
   A value that specifies the learning rate.
-- [var beta1: Float](bnns/adamoptimizer/beta1.md)
+- [var beta1: Float](./beta1.md)
   A value that specifies the first-moment constant, in the range `0` to `1`.
-- [var beta2: Float](bnns/adamoptimizer/beta2.md)
+- [var beta2: Float](./beta2.md)
   A value that specifies the second-moment constant, in the range `0` to `1`.
-- [var timeStep: Float](bnns/adamoptimizer/timestep.md)
+- [var timeStep: Float](./timestep.md)
   A value that’s at least `1` and represents the optimizer’s current time.
-- [var epsilon: Float](bnns/adamoptimizer/epsilon.md)
+- [var epsilon: Float](./epsilon.md)
   The epsilon value you use to improve numerical stability.
-- [var gradientScale: Float](bnns/adamoptimizer/gradientscale.md)
+- [var gradientScale: Float](./gradientscale.md)
   A value that specifies the gradient scaling factor.
-- [var gradientBounds: ClosedRange<Float>?](bnns/adamoptimizer/gradientbounds.md)
+- [var gradientBounds: ClosedRange<Float>?](./gradientbounds.md)
   The values for the minimum and maximum gradients.
-- [var gradientClipping: BNNS.GradientClipping](bnns/adamoptimizer/gradientclipping.md)
+- [var gradientClipping: BNNS.GradientClipping](./gradientclipping.md)
   The gradient clipping.
-- [var regularizationFunction: BNNSOptimizerRegularizationFunction](bnns/adamoptimizer/regularizationfunction.md)
+- [var regularizationFunction: BNNSOptimizerRegularizationFunction](./regularizationfunction.md)
   The variable that specifies the regularization function.
-- [var usesAMSGrad: Bool](bnns/adamoptimizer/usesamsgrad.md)
+- [var usesAMSGrad: Bool](./usesamsgrad.md)
   A Boolean value that specifies whether to use the AMSGrad variant.
-- [var accumulatorCountMultiplier: Int](bnns/adamoptimizer/accumulatorcountmultiplier.md)
+- [var accumulatorCountMultiplier: Int](./accumulatorcountmultiplier.md)
   The number of accumulators required for each parameter.
-- [BNNS.GradientClipping](bnns/gradientclipping.md)
+- [BNNS.GradientClipping](../gradientclipping.md)
   Constants that describe clipping functions.
 
 

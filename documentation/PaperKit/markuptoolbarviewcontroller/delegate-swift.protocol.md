@@ -1,7 +1,8 @@
 # MarkupToolbarViewController.Delegate
 
 **Framework**: PaperKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The delegate for a PaperKit toolbar.
 
@@ -18,24 +19,24 @@ protocol Delegate : AnyObject
 ## Topics
 
 ### Inserting content
-- [func markupToolbarViewController(MarkupToolbarViewController, insertNewShape: ShapeConfiguration.Shape)](markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontroller(_:insertnewshape:).md)
+- [func markupToolbarViewController(MarkupToolbarViewController, insertNewShape: ShapeConfiguration.Shape)](./delegate-swift.protocol/markuptoolbarviewcontroller%28_,insertnewshape%29.md)
   Add a new shape on top of the paper.
-- [func markupToolbarViewControllerInsertNewTextbox(MarkupToolbarViewController)](markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontrollerinsertnewtextbox(_:).md)
+- [func markupToolbarViewControllerInsertNewTextbox(MarkupToolbarViewController)](./delegate-swift.protocol/markuptoolbarviewcontrollerinsertnewtextbox%28_%29.md)
   Add a new textbox on top of the paper.
-- [func markupToolbarViewController(MarkupToolbarViewController, insertNewLineWithStartMarker: Bool, endMarker: Bool)](markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontroller(_:insertnewlinewithstartmarker:endmarker:).md)
+- [func markupToolbarViewController(MarkupToolbarViewController, insertNewLineWithStartMarker: Bool, endMarker: Bool)](./delegate-swift.protocol/markuptoolbarviewcontroller%28_,insertnewlinewithstartmarker,endmarker%29.md)
   Add a new line on top of the paper.
-- [func markupToolbarViewController(MarkupToolbarViewController, insertNewContents: PaperMarkup)](markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontroller(_:insertnewcontents:).md)
+- [func markupToolbarViewController(MarkupToolbarViewController, insertNewContents: PaperMarkup)](./delegate-swift.protocol/markuptoolbarviewcontroller%28_,insertnewcontents%29.md)
   Add new content on top of the paper.
 ### Responding to changes
-- [func markupToolbarViewControllerSelectedIndirectPointerTouchModeChanged(MarkupToolbarViewController)](markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontrollerselectedindirectpointertouchmodechanged(_:).md)
+- [func markupToolbarViewControllerSelectedIndirectPointerTouchModeChanged(MarkupToolbarViewController)](./delegate-swift.protocol/markuptoolbarviewcontrollerselectedindirectpointertouchmodechanged%28_%29.md)
   Called when the `selectedIndirectPointerTouchMode` changes.
-- [func markupToolbarViewControllerSelectedDrawingToolChanged(MarkupToolbarViewController)](markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontrollerselecteddrawingtoolchanged(_:).md)
+- [func markupToolbarViewControllerSelectedDrawingToolChanged(MarkupToolbarViewController)](./delegate-swift.protocol/markuptoolbarviewcontrollerselecteddrawingtoolchanged%28_%29.md)
   Called when the `selectedDrawingTool` changes.
 
 ## Relationships
 
 ### Conforming Types
-- [PaperMarkupViewController](papermarkupviewcontroller.md)
+- [PaperMarkupViewController](../papermarkupviewcontroller.md)
 
 
 ---

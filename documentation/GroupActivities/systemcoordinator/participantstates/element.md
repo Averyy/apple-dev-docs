@@ -1,7 +1,8 @@
 # SystemCoordinator.ParticipantStates.Element
 
 **Framework**: Group Activities  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of element produced by this asynchronous sequence.
 
@@ -16,9 +17,10 @@ typealias Element = SystemCoordinator.ParticipantState
 
 ## See Also
 
-- [func makeAsyncIterator() -> SystemCoordinator.ParticipantStates.Iterator](systemcoordinator/participantstates/makeasynciterator.md)
+### Creating an iterator
+- [func makeAsyncIterator() -> SystemCoordinator.ParticipantStates.Iterator](./makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces elements of this asynchronous sequence.
-- [SystemCoordinator.ParticipantStates.Iterator](systemcoordinator/participantstates/iterator.md)
+- [SystemCoordinator.ParticipantStates.Iterator](./iterator.md)
 
 
 ---

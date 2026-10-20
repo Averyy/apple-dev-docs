@@ -1,7 +1,8 @@
 # zero
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 7.0+
@@ -20,7 +21,8 @@ static var zero: CGVector { get }
 
 ## See Also
 
-- [init()](cgvector/init.md)
+### Special Values
+- [init()](./init%28%29.md)
   Creates a vector whose components are both zero.
 
 

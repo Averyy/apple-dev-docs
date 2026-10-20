@@ -1,7 +1,8 @@
 # errSecInvalidPassthroughID
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid passthrough ID was detected.
 
@@ -18,6 +19,10 @@ An invalid passthrough ID was detected.
 
 ```swift
 var errSecInvalidPassthroughID: OSStatus { get }
+```
+
+```c
+errSecInvalidPassthroughID
 ```
 
 

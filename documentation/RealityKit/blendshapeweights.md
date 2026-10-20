@@ -1,7 +1,8 @@
 # BlendShapeWeights
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of animatable weight values that collectively represent the blending amounts for all the blend shapes’ blend targets.
 
@@ -22,60 +23,61 @@ struct BlendShapeWeights
 ## Topics
 
 ### Operators
-- [static func == (BlendShapeWeights, BlendShapeWeights) -> Bool](blendshapeweights/==(_:_:).md)
+- [static func == (BlendShapeWeights, BlendShapeWeights) -> Bool](./blendshapeweights/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two collections of weights are equal.
 ### Initializers
-- [init()](blendshapeweights/init.md)
+- [init()](./blendshapeweights/init%28%29.md)
   Initializes a collection of animatable weights for a blend shape.
-- [init<S>(S)](blendshapeweights/init(_:).md)
+- [init<S>(S)](./blendshapeweights/init%28_%29.md)
   Initializes a collection of weights for a single blend shape.
-- [init(arrayLiteral: Float...)](blendshapeweights/init(arrayliteral:).md)
+- [init(arrayLiteral: Float...)](./blendshapeweights/init%28arrayliteral%29.md)
   Creates a collection of animatable weights using the argument elements for a blend shape.
 ### Instance Properties
-- [var endIndex: BlendShapeWeights.Index](blendshapeweights/endindex.md)
+- [var endIndex: BlendShapeWeights.Index](./blendshapeweights/endindex.md)
   An index to the last weight in the collection.
-- [var startIndex: BlendShapeWeights.Index](blendshapeweights/startindex.md)
+- [var startIndex: BlendShapeWeights.Index](./blendshapeweights/startindex.md)
   An index to the first weight in the collection.
 ### Instance Methods
-- [func index(after: BlendShapeWeights.Index) -> BlendShapeWeights.Index](blendshapeweights/index(after:).md)
+- [func index(after: BlendShapeWeights.Index) -> BlendShapeWeights.Index](./blendshapeweights/index%28after%29.md)
   Returns the position in the sequence of the weight that follows the given position.
-- [func index(before: BlendShapeWeights.Index) -> BlendShapeWeights.Index](blendshapeweights/index(before:).md)
+- [func index(before: BlendShapeWeights.Index) -> BlendShapeWeights.Index](./blendshapeweights/index%28before%29.md)
   Returns the position in the sequence of the weight that preceeds the given position.
 ### Subscripts
-- [subscript(BlendShapeWeights.Index) -> Float](blendshapeweights/subscript(_:).md)
+- [subscript(BlendShapeWeights.Index) -> Float](./blendshapeweights/subscript%28_%29.md)
   Accesses a single weight in the collection at the given index.
 ### Type Aliases
-- [BlendShapeWeights.ArrayLiteralElement](blendshapeweights/arrayliteralelement.md)
+- [BlendShapeWeights.ArrayLiteralElement](./blendshapeweights/arrayliteralelement.md)
   The type of the elements of an array literal.
-- [BlendShapeWeights.Element](blendshapeweights/element.md)
+- [BlendShapeWeights.Element](./blendshapeweights/element.md)
   An individual weight in the collection.
-- [BlendShapeWeights.Index](blendshapeweights/index.md)
+- [BlendShapeWeights.Index](./blendshapeweights/index.md)
   A position of an individual weight in the collection.
 
 ## Relationships
 
 ### Conforms To
-- [AnimatableData](animatabledata.md)
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [MutableCollection](../swift/mutablecollection.md)
-- [Sequence](../swift/sequence.md)
+- [AnimatableData](./animatabledata.md)
+- [BidirectionalCollection](../Swift/bidirectionalcollection.md)
+- [Collection](../Swift/collection.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [MutableCollection](../Swift/mutablecollection.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [struct BlendShapeWeightsComponent](blendshapeweightscomponent.md)
+### Blend shape management
+- [struct BlendShapeWeightsComponent](./blendshapeweightscomponent.md)
   A component that provides access to the current weights associated with all blend shape meshes on an entity.
-- [class BlendShapeWeightsMapping](blendshapeweightsmapping.md)
+- [class BlendShapeWeightsMapping](./blendshapeweightsmapping.md)
   A mapping of blend weights to the target meshes that those weights affect.
-- [struct BlendShapeWeightsData](blendshapeweightsdata.md)
+- [struct BlendShapeWeightsData](./blendshapeweightsdata.md)
   A structure that encapsulates the blend shape name, blend shape weights and the names of those weights to be stored by the blend shape weights set.
-- [struct BlendShapeWeightsSet](blendshapeweightsset.md)
+- [struct BlendShapeWeightsSet](./blendshapeweightsset.md)
   A custom collection of named blend shape weights.
 
 

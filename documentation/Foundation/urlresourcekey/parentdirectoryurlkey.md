@@ -1,7 +1,8 @@
 # parentDirectoryURLKey
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The container directory of the resource.
 
@@ -20,15 +21,20 @@ The container directory of the resource.
 static let parentDirectoryURLKey: URLResourceKey
 ```
 
+```c
+extern NSURLResourceKey const NSURLParentDirectoryURLKey;
+```
+
 #### Discussion
 
 The corresponding value is a read-only `NSURL` object, or `nil` if the resource is the root directory of its volume.
 
 ## See Also
 
-- [static let isDirectoryKey: URLResourceKey](urlresourcekey/isdirectorykey.md)
+### Directory keys
+- [static let isDirectoryKey: URLResourceKey](./isdirectorykey.md)
   A key for determining whether the resource is a directory.
-- [static let directoryEntryCountKey: URLResourceKey](urlresourcekey/directoryentrycountkey.md)
+- [static let directoryEntryCountKey: URLResourceKey](./directoryentrycountkey.md)
   The key for a count of items in the directory.
 
 

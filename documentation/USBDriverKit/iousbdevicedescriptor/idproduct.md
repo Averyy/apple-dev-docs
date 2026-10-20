@@ -1,7 +1,8 @@
 # idProduct
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The product ID assigned by the manufacturer.
 
@@ -10,37 +11,38 @@ The product ID assigned by the manufacturer.
 
 ## Declaration
 
-```swift
+```c
 uint16_t idProduct;
 ```
 
 ## See Also
 
-- [bLength](iousbdevicedescriptor/blength.md)
+### Getting the Device Properties
+- [bLength](./blength.md)
   The length of the descriptor in bytes.
-- [bDescriptorType](iousbdevicedescriptor/bdescriptortype.md)
+- [bDescriptorType](./bdescriptortype.md)
   The type of the descriptor.
-- [bcdUSB](iousbdevicedescriptor/bcdusb.md)
+- [bcdUSB](./bcdusb.md)
   The USB specification release number with which the device complies.
-- [bDeviceClass](iousbdevicedescriptor/bdeviceclass.md)
+- [bDeviceClass](./bdeviceclass.md)
   The class code indicating the behavior of this device.
-- [bDeviceSubClass](iousbdevicedescriptor/bdevicesubclass.md)
+- [bDeviceSubClass](./bdevicesubclass.md)
   The subclass code that further defines the behavior of this device.
-- [bDeviceProtocol](iousbdevicedescriptor/bdeviceprotocol.md)
+- [bDeviceProtocol](./bdeviceprotocol.md)
   The protocol that the device supports.
-- [bMaxPacketSize0](iousbdevicedescriptor/bmaxpacketsize0.md)
+- [bMaxPacketSize0](./bmaxpacketsize0.md)
   The maximum packet size for endpoint `0`, specified as an exponent value.
-- [idVendor](iousbdevicedescriptor/idvendor.md)
+- [idVendor](./idvendor.md)
   The ID of the device’s manufacturer.
-- [bcdDevice](iousbdevicedescriptor/bcddevice.md)
+- [bcdDevice](./bcddevice.md)
   The release number of the device, specified as a binary-coded decimal number.
-- [iManufacturer](iousbdevicedescriptor/imanufacturer.md)
+- [iManufacturer](./imanufacturer.md)
   The index of the string descriptor that describes the manufacturer.
-- [iProduct](iousbdevicedescriptor/iproduct.md)
+- [iProduct](./iproduct.md)
   The index of the string descriptor that describes the product.
-- [iSerialNumber](iousbdevicedescriptor/iserialnumber.md)
+- [iSerialNumber](./iserialnumber.md)
   The index of the string descriptor that describes the device’s serial number.
-- [bNumConfigurations](iousbdevicedescriptor/bnumconfigurations.md)
+- [bNumConfigurations](./bnumconfigurations.md)
   The number of configurations that the device supports.
 
 

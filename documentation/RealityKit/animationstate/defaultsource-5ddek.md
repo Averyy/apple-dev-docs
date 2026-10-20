@@ -1,7 +1,8 @@
 # defaultSource
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the  joint transforms representing the default source value.
 
@@ -19,9 +20,11 @@ Returns the  joint transforms representing the default source value.
 var defaultSource: JointTransforms? { get }
 ```
 
+Available when `Value` is `JointTransforms`.
+
 #### Discussion
 
-See  [`defaultSource`](animationstateprotocol/defaultsource.md) for  more about the default source value.
+See  [`defaultSource`](../animationstateprotocol/defaultsource.md) for  more about the default source value.
 
 
 ---

@@ -1,19 +1,24 @@
 # cardConfigurationIdentifier
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- macOS ?+
+- macOS
 - visionOS 2.0+
 
 ## Declaration
 
 ```swift
 var cardConfigurationIdentifier: String { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nonnull) NSString * cardConfigurationIdentifier;
 ```
 
 

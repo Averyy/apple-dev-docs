@@ -1,14 +1,15 @@
 # fd_set
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct fd_set {
     ...
 } fd_set;
@@ -17,7 +18,7 @@ typedef struct fd_set {
 ## Topics
 
 ### Instance Properties
-- [fds_bits](fd_set/1569380-fds_bits.md)
+- [fds_bits](./fd_set/api-1569380-fds_bits.md)
 
 
 ---

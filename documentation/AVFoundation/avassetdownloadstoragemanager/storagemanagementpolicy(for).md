@@ -1,7 +1,8 @@
 # storageManagementPolicy(for:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the storage management policy for a downloaded asset.
 
@@ -18,6 +19,10 @@ Returns the storage management policy for a downloaded asset.
 func storageManagementPolicy(for downloadStorageURL: URL) -> AVAssetDownloadStorageManagementPolicy?
 ```
 
+```objc
+- (AVAssetDownloadStorageManagementPolicy *) storageManagementPolicyForURL:(NSURL *) downloadStorageURL;
+```
+
 #### Return Value
 
 The storage management policy for the asset, or `nil` if one isn’t set.
@@ -28,7 +33,8 @@ The storage management policy for the asset, or `nil` if one isn’t set.
 
 ## See Also
 
-- [func setStorageManagementPolicy(AVAssetDownloadStorageManagementPolicy, for: URL)](avassetdownloadstoragemanager/setstoragemanagementpolicy(_:for:).md)
+### Setting the storage policy
+- [func setStorageManagementPolicy(AVAssetDownloadStorageManagementPolicy, for: URL)](./setstoragemanagementpolicy%28_,for%29.md)
   Sets a storage policy for the downloaded asset.
 
 

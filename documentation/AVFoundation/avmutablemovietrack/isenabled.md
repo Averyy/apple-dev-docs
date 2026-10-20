@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the track’s container enables it.
 
@@ -19,23 +20,28 @@ A Boolean value that indicates whether the track’s container enables it.
 var isEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isEnabled) BOOL enabled;
+```
+
 #### Discussion
 
-For file-based media, you can change its [`isEnabled`](avplayeritemtrack/isenabled.md) presentation state using [`AVPlayerItemTrack`](avplayeritemtrack.md).
+For file-based media, you can change its [`isEnabled`](../avplayeritemtrack/isenabled.md) presentation state using [`AVPlayerItemTrack`](../avplayeritemtrack.md).
 
 ## See Also
 
-- [var isPlayable: Bool](avmutablemovietrack/isplayable.md)
+### Accessing track information
+- [var isPlayable: Bool](./isplayable.md)
   A Boolean value that indicates whether the track is playable in the current environment.
-- [var isDecodable: Bool](avmutablemovietrack/isdecodable.md)
+- [var isDecodable: Bool](./isdecodable.md)
   A Boolean value that indicates whether the track is decodable in the current environment.
-- [var isSelfContained: Bool](avmutablemovietrack/isselfcontained.md)
+- [var isSelfContained: Bool](./isselfcontained.md)
   A Boolean value that indicates whether this track references sample data only within its container file.
-- [var hasProtectedContent: Bool](avmutablemovietrack/hasprotectedcontent.md)
+- [var hasProtectedContent: Bool](./hasprotectedcontent.md)
   A Boolean value that indicates whether a track contains protected content.
-- [var totalSampleDataLength: Int64](avmutablemovietrack/totalsampledatalength.md)
+- [var totalSampleDataLength: Int64](./totalsampledatalength.md)
   The total number of bytes of sample data the track requires.
-- [func hasMediaCharacteristic(AVMediaCharacteristic) -> Bool](avmutablemovietrack/hasmediacharacteristic(_:).md)
+- [func hasMediaCharacteristic(AVMediaCharacteristic) -> Bool](./hasmediacharacteristic%28_%29.md)
   Returns a Boolean value that indicates whether the track references media with the specified media characteristic.
 
 

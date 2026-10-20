@@ -1,7 +1,8 @@
 # tintColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tint color applied to the image view.
 
@@ -10,7 +11,7 @@ The tint color applied to the image view.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

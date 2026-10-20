@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foveated Streaming  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Constructs an ID from a UUID.
 

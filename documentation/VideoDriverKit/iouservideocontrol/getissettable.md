@@ -1,7 +1,8 @@
 # GetIsSettable
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating if the control value can be set.
 
@@ -10,7 +11,7 @@ Returns a Boolean value indicating if the control value can be set.
 
 ## Declaration
 
-```swift
+```c
 bool GetIsSettable();
 ```
 
@@ -20,13 +21,14 @@ True if the control value can be set.
 
 ## See Also
 
-- [GetControlScope](iouservideocontrol/getcontrolscope.md)
+### Working with control properties
+- [GetControlScope](./getcontrolscope.md)
   Returns an object property scope for the control.
-- [IOUserVideoObjectPropertyScope](videodriverkit/iouservideoobjectpropertyscope.md)
+- [IOUserVideoObjectPropertyScope](../videodriverkit-page/iouservideoobjectpropertyscope.md)
   A four character code which, along with the selector and element, identifies a specific piece of information about a video object.
-- [IOUserVideoObjectPropertyElement](videodriverkit/iouservideoobjectpropertyelement.md)
+- [IOUserVideoObjectPropertyElement](../videodriverkit-page/iouservideoobjectpropertyelement.md)
   An integer that identifies, along with the property selector and scope, a specific piece of information about a video object.
-- [GetControlElement](iouservideocontrol/getcontrolelement.md)
+- [GetControlElement](./getcontrolelement.md)
   Returns an object property element for the control.
 
 

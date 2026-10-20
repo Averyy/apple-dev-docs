@@ -1,7 +1,8 @@
 # indexOfItem(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index of the item in the snapshot with the specified identifier.
 
@@ -24,15 +25,16 @@ The index of the item in the snapshot, or `nil` if the item with the specified i
 
 ## See Also
 
-- [var itemIdentifiers: [ItemIdentifierType]](nsdiffabledatasourcesnapshot-swift.struct/itemidentifiers.md)
+### Identifying Items and Sections
+- [var itemIdentifiers: [ItemIdentifierType]](./itemidentifiers.md)
   The identifiers of all of the items in the snapshot.
-- [var sectionIdentifiers: [SectionIdentifierType]](nsdiffabledatasourcesnapshot-swift.struct/sectionidentifiers.md)
+- [var sectionIdentifiers: [SectionIdentifierType]](./sectionidentifiers.md)
   The identifiers of all of the sections in the snapshot.
-- [func indexOfSection(SectionIdentifierType) -> Int?](nsdiffabledatasourcesnapshot-swift.struct/indexofsection(_:).md)
+- [func indexOfSection(SectionIdentifierType) -> Int?](./indexofsection%28_%29.md)
   Returns the index of the section of the snapshot with the specified identifier.
-- [func itemIdentifiers(inSection: SectionIdentifierType) -> [ItemIdentifierType]](nsdiffabledatasourcesnapshot-swift.struct/itemidentifiers(insection:).md)
+- [func itemIdentifiers(inSection: SectionIdentifierType) -> [ItemIdentifierType]](./itemidentifiers%28insection%29.md)
   Returns the identifiers of all of the items in the specified section of the snapshot.
-- [func sectionIdentifier(containingItem: ItemIdentifierType) -> SectionIdentifierType?](nsdiffabledatasourcesnapshot-swift.struct/sectionidentifier(containingitem:).md)
+- [func sectionIdentifier(containingItem: ItemIdentifierType) -> SectionIdentifierType?](./sectionidentifier%28containingitem%29.md)
   Returns the identifier of the section containing the specified item in the snapshot.
 
 

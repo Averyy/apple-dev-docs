@@ -1,7 +1,8 @@
 # init(distribution:dataType:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Class method to initialize a distribution descriptor.
 
@@ -17,6 +18,10 @@ Class method to initialize a distribution descriptor.
 
 ```swift
 convenience init?(distribution: MPSGraphRandomDistribution, dataType: MPSDataType)
+```
+
+```objc
++ (instancetype) descriptorWithDistribution:(MPSGraphRandomDistribution) distribution dataType:(MPSDataType) dataType;
 ```
 
 

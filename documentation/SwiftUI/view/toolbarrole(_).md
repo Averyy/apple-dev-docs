@@ -1,7 +1,8 @@
 # toolbarRole(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the semantic role for the content populating the toolbar.
 
@@ -42,7 +43,8 @@ ContentView()
 
 ## See Also
 
-- [struct ToolbarRole](toolbarrole.md)
+### Specifying the role of toolbar content
+- [struct ToolbarRole](../toolbarrole.md)
   The purpose of content that populates the toolbar.
 
 

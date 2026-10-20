@@ -1,7 +1,8 @@
 # right
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A vector with values `[1, 0, 0]`.
 

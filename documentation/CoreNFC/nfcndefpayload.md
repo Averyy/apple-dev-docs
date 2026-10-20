@@ -1,7 +1,8 @@
 # NFCNDEFPayload
 
 **Framework**: Core NFC  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A payload record in an NFC NDEF message.
 
@@ -16,9 +17,13 @@ A payload record in an NFC NDEF message.
 class NFCNDEFPayload
 ```
 
+```objc
+@interface NFCNDEFPayload : NSObject
+```
+
 ## Mentions
 
-- [Adding Support for Background Tag Reading](adding-support-for-background-tag-reading.md)
+- [Adding Support for Background Tag Reading](./adding-support-for-background-tag-reading.md)
 
 #### Overview
 
@@ -27,53 +32,54 @@ An NDEF message payload consists of the Type Name Format field (as defined by th
 ## Topics
 
 ### Creating a Payload Record
-- [class func wellKnownTypeURIPayload(url: URL) -> Self?](nfcndefpayload/wellknowntypeuripayload(url:).md)
+- [class func wellKnownTypeURIPayload(url: URL) -> Self?](./nfcndefpayload/wellknowntypeuripayload%28url%29.md)
   Creates a payload record with a URI specified as a URL.
-- [class func wellKnownTypeURIPayload(string: String) -> Self?](nfcndefpayload/wellknowntypeuripayload(string:).md)
+- [class func wellKnownTypeURIPayload(string: String) -> Self?](./nfcndefpayload/wellknowntypeuripayload%28string%29.md)
   Creates a payload record with a URI specified as a string.
-- [class func wellKnownTypeTextPayload(string: String, locale: Locale) -> Self?](nfcndefpayload/wellknowntypetextpayload(string:locale:).md)
+- [class func wellKnownTypeTextPayload(string: String, locale: Locale) -> Self?](./nfcndefpayload/wellknowntypetextpayload%28string,locale%29.md)
   Creates a payload record with text.
-- [init(format: NFCTypeNameFormat, type: Data, identifier: Data, payload: Data)](nfcndefpayload/init(format:type:identifier:payload:).md)
+- [init(format: NFCTypeNameFormat, type: Data, identifier: Data, payload: Data)](./nfcndefpayload/init%28format,type,identifier,payload%29.md)
   Creates a payload record with the specified format, type, identifier, and payload data.
-- [init(format: NFCTypeNameFormat, type: Data, identifier: Data, payload: Data, chunkSize: Int)](nfcndefpayload/init(format:type:identifier:payload:chunksize:).md)
+- [init(format: NFCTypeNameFormat, type: Data, identifier: Data, payload: Data, chunkSize: Int)](./nfcndefpayload/init%28format,type,identifier,payload,chunksize%29.md)
   Creates a payload record with the specified format, type, identifier, payload data, and data chunk size.
-- [class func wellKnowTypeTextPayload(string: String, locale: Locale) -> Self?](nfcndefpayload/wellknowtypetextpayload(string:locale:).md)
+- [class func wellKnowTypeTextPayload(string: String, locale: Locale) -> Self?](./nfcndefpayload/wellknowtypetextpayload%28string,locale%29.md)
   Creates a payload record with text.
 ### Getting Information About a Payload Record
-- [var identifier: Data](nfcndefpayload/identifier.md)
+- [var identifier: Data](./nfcndefpayload/identifier.md)
   The identifier of the payload, as defined by the NDEF specification.
-- [var payload: Data](nfcndefpayload/payload.md)
+- [var payload: Data](./nfcndefpayload/payload.md)
   The payload, as defined by the NDEF specification.
-- [var type: Data](nfcndefpayload/type.md)
+- [var type: Data](./nfcndefpayload/type.md)
   The type of the payload, as defined by the NDEF specification.
-- [var typeNameFormat: NFCTypeNameFormat](nfcndefpayload/typenameformat.md)
+- [var typeNameFormat: NFCTypeNameFormat](./nfcndefpayload/typenameformat.md)
   The Type Name Format field of the payload, as defined by the NDEF specification.
-- [enum NFCTypeNameFormat](nfctypenameformat.md)
+- [enum NFCTypeNameFormat](./nfctypenameformat.md)
   The Type Name Format values that specify the content type for the payload data in an NFC NDEF message.
 ### Getting the URI from a Payload Record
-- [func wellKnownTypeURIPayload() -> URL?](nfcndefpayload/wellknowntypeuripayload.md)
+- [func wellKnownTypeURIPayload() -> URL?](./nfcndefpayload/wellknowntypeuripayload%28%29.md)
   Returns the URL of a valid Well Known Type URI payload.
 ### Getting Text from a Payload Record
-- [func wellKnownTypeTextPayload() -> (String?, Locale?)](nfcndefpayload/wellknowntypetextpayload.md)
+- [func wellKnownTypeTextPayload() -> (String?, Locale?)](./nfcndefpayload/wellknowntypetextpayload%28%29.md)
   Returns the text and locale of a valid Well Known Type Text payload.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class NFCNDEFMessage](nfcndefmessage.md)
+### NDEF messages and payloads
+- [class NFCNDEFMessage](./nfcndefmessage.md)
   An NFC NDEF message consisting of an array of payload records.
 
 

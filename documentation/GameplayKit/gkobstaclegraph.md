@@ -1,7 +1,8 @@
 # GKObstacleGraph
 
 **Framework**: GameplayKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A navigation graph for 2D game worlds that creates a minimal network for precise pathfinding around obstacles.
 
@@ -19,83 +20,88 @@ A navigation graph for 2D game worlds that creates a minimal network for precise
 class GKObstacleGraph<NodeType> where NodeType : GKGraphNode2D
 ```
 
+```objc
+@interface GKObstacleGraph : GKGraph
+```
+
 #### Overview
 
-You create an obstacle graph with a collection of [`GKObstacle`](gkobstacle.md) objects. To use the graph for pathfinding, you add [`GKGraphNode2D`](gkgraphnode2d.md) objects representing points of interest (such as the current position of a game character and the location it needs to find a route to). Then use methods of the superclass [`GKGraph`](gkgraph.md) to find routes through the graph.
+You create an obstacle graph with a collection of [`GKObstacle`](./gkobstacle.md) objects. To use the graph for pathfinding, you add [`GKGraphNode2D`](./gkgraphnode2d.md) objects representing points of interest (such as the current position of a game character and the location it needs to find a route to). Then use methods of the superclass [`GKGraph`](./gkgraph.md) to find routes through the graph.
 
-Unlike the related [`GKMeshGraph`](gkmeshgraph.md) class, an obstacle graph creates a minimal network of graph nodes, resulting in paths that are efficient but not smooth.
+Unlike the related [`GKMeshGraph`](./gkmeshgraph.md) class, an obstacle graph creates a minimal network of graph nodes, resulting in paths that are efficient but not smooth.
 
-To learn more about graphs and pathfinding, see [`Pathfinding`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/Pathfinding.html#//apple_ref/doc/uid/TP40015172-CH3) in [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
+To learn more about graphs and pathfinding, see [Pathfinding](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/Pathfinding.html#//apple_ref/doc/uid/TP40015172-CH3) in [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 ## Topics
 
 ### Creating a Graph
-- [init(obstacles: [GKPolygonObstacle], bufferRadius: Float, nodeClass: AnyClass)](gkobstaclegraph/init(obstacles:bufferradius:nodeclass:).md)
+- [init(obstacles: [GKPolygonObstacle], bufferRadius: Float, nodeClass: AnyClass)](./gkobstaclegraph/init%28obstacles,bufferradius,nodeclass%29.md)
   Initializes a graph with the specified list of obstacles, using the specified node class.
-- [init(obstacles: [GKPolygonObstacle], bufferRadius: Float)](gkobstaclegraph/init(obstacles:bufferradius:).md)
+- [init(obstacles: [GKPolygonObstacle], bufferRadius: Float)](./gkobstaclegraph/init%28obstacles,bufferradius%29.md)
   Initializes a graph with the specified list of obstacles.
 ### Working with Obstacles
-- [var obstacles: [GKPolygonObstacle]](gkobstaclegraph/obstacles.md)
+- [var obstacles: [GKPolygonObstacle]](./gkobstaclegraph/obstacles.md)
   The list of obstacle objects in the graph, each of which describes a polygon-shaped impassable area.
-- [func addObstacles([GKPolygonObstacle])](gkobstaclegraph/addobstacles(_:).md)
+- [func addObstacles([GKPolygonObstacle])](./gkobstaclegraph/addobstacles%28_%29.md)
   Adds new obstacles to the graph.
-- [func removeObstacles([GKPolygonObstacle])](gkobstaclegraph/removeobstacles(_:).md)
+- [func removeObstacles([GKPolygonObstacle])](./gkobstaclegraph/removeobstacles%28_%29.md)
   Removes the specified obstacle from the graph.
-- [func removeAllObstacles()](gkobstaclegraph/removeallobstacles.md)
+- [func removeAllObstacles()](./gkobstaclegraph/removeallobstacles%28%29.md)
   Removes all obstacles from the graph.
-- [func nodes(for: GKPolygonObstacle) -> [NodeType]](gkobstaclegraph/nodes(for:).md)
+- [func nodes(for: GKPolygonObstacle) -> [NodeType]](./gkobstaclegraph/nodes%28for%29.md)
   Returns the group of nodes corresponding to an obstacle in the graph.
 ### Working with Nodes
-- [func connectUsingObstacles(node: NodeType)](gkobstaclegraph/connectusingobstacles(node:).md)
+- [func connectUsingObstacles(node: NodeType)](./gkobstaclegraph/connectusingobstacles%28node%29.md)
   Adds the specified node to the graph, connecting it to its nearest neighbors without creating connections that pass through obstacles or their buffer regions.
-- [func connectUsingObstacles(node: NodeType, ignoring: [GKPolygonObstacle])](gkobstaclegraph/connectusingobstacles(node:ignoring:).md)
+- [func connectUsingObstacles(node: NodeType, ignoring: [GKPolygonObstacle])](./gkobstaclegraph/connectusingobstacles%28node,ignoring%29.md)
   Adds the specified node to the graph, connecting it to its nearest neighbors while ignoring the area occupied by the specified obstacles.
-- [func connectUsingObstacles(node: NodeType, ignoringBufferRadiusOf: [GKPolygonObstacle])](gkobstaclegraph/connectusingobstacles(node:ignoringbufferradiusof:).md)
+- [func connectUsingObstacles(node: NodeType, ignoringBufferRadiusOf: [GKPolygonObstacle])](./gkobstaclegraph/connectusingobstacles%28node,ignoringbufferradiusof%29.md)
   Adds the specified node to the graph, connecting it to its nearest neighbors while ignoring the buffer regions around the specified obstacles.
-- [var bufferRadius: Float](gkobstaclegraph/bufferradius.md)
+- [var bufferRadius: Float](./gkobstaclegraph/bufferradius.md)
   The distance from obstacle edges that should also be considered impassable.
 ### Locking Node Connections
-- [func lockConnection(from: NodeType, to: NodeType)](gkobstaclegraph/lockconnection(from:to:).md)
+- [func lockConnection(from: NodeType, to: NodeType)](./gkobstaclegraph/lockconnection%28from,to%29.md)
   Prevents the specified nodes from being disconnected due to the addition of obstacles.
-- [func unlockConnection(from: NodeType, to: NodeType)](gkobstaclegraph/unlockconnection(from:to:).md)
+- [func unlockConnection(from: NodeType, to: NodeType)](./gkobstaclegraph/unlockconnection%28from,to%29.md)
   Allows the specified nodes to be disconnected due to the addition of obstacles.
-- [func isConnectionLocked(from: NodeType, to: NodeType) -> Bool](gkobstaclegraph/isconnectionlocked(from:to:).md)
+- [func isConnectionLocked(from: NodeType, to: NodeType) -> Bool](./gkobstaclegraph/isconnectionlocked%28from,to%29.md)
   Returns a Boolean value indicating whether the specified nodes are protected from disconnection due to the addition of obstacles.
 ### Instance Methods
-- [func classForGenericArgument(at: Int) -> AnyClass](gkobstaclegraph/classforgenericargument(at:).md)
+- [func classForGenericArgument(at: Int) -> AnyClass](./gkobstaclegraph/classforgenericargument%28at%29.md)
 ### Initializers
-- [convenience init(nodes: [GKGraphNode])](gkobstaclegraph/init(nodes:).md)
+- [convenience init(nodes: [GKGraphNode])](./gkobstaclegraph/init%28nodes%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [GKGraph](gkgraph.md)
+- [GKGraph](./gkgraph.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class GKGraph](gkgraph.md)
+### Pathfinding
+- [class GKGraph](./gkgraph.md)
   A collection of nodes that describes the navigability of a game world and provides *pathfinding* methods to search for routes through that space.
-- [class GKMeshGraph](gkmeshgraph.md)
+- [class GKMeshGraph](./gkmeshgraph.md)
   A navigation graph for 2D game worlds that creates a space-filling network for smooth pathfinding around obstacles.
-- [class GKGridGraph](gkgridgraph.md)
+- [class GKGridGraph](./gkgridgraph.md)
   A navigation graph for 2D game worlds where movement is constrained to an integer grid.
-- [class GKGraphNode](gkgraphnode.md)
+- [class GKGraphNode](./gkgraphnode.md)
   A single node in a navigation graph for use in pathfinding.
-- [class GKGraphNode2D](gkgraphnode2d.md)
+- [class GKGraphNode2D](./gkgraphnode2d.md)
   A node in a navigation graph, associated with a point in continuous 2D space.
-- [class GKGraphNode3D](gkgraphnode3d.md)
+- [class GKGraphNode3D](./gkgraphnode3d.md)
   A node in a navigation graph, associated with a point in continuous 3D space.
-- [class GKGridGraphNode](gkgridgraphnode.md)
+- [class GKGridGraphNode](./gkgridgraphnode.md)
   A node in a navigation graph, associated with a position on a discrete two-dimensional grid.
 
 

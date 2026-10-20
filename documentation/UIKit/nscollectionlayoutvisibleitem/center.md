@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The center point of the item’s frame rectangle.
@@ -19,15 +20,20 @@ The center point of the item’s frame rectangle.
 var center: CGPoint { get set }
 ```
 
+```objc
+@property (nonatomic) CGPoint center;
+```
+
 ## See Also
 
-- [var frame: CGRect](nscollectionlayoutvisibleitem/frame.md)
+### Configuring position
+- [var frame: CGRect](./frame.md)
   The frame rectangle, which describes the item’s location and size in its section’s coordinate system.
-- [var bounds: CGRect](nscollectionlayoutvisibleitem/bounds.md)
+- [var bounds: CGRect](./bounds.md)
   The bounds rectangle, which describes the item’s location and size in its own coordinate system.
-- [var transform: CGAffineTransform](nscollectionlayoutvisibleitem/transform.md)
+- [var transform: CGAffineTransform](./transform.md)
   The transform applied to the item, relative to the center of its bounds.
-- [var transform3D: CATransform3D](nscollectionlayoutvisibleitem/transform3d.md)
+- [var transform3D: CATransform3D](./transform3d.md)
   The 3D transform applied to the item.
 
 

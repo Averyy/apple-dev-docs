@@ -1,7 +1,8 @@
 # init(title:description:defaultUnit:requestValueDialog:inputConnectionBehavior:optionsProvider:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an app intent parameter with a list of selectable options.
 
@@ -19,6 +20,8 @@ Creates an app intent parameter with a list of selectable options.
 ```swift
 convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource? = nil, defaultUnit: IntentParameter<Value>.DurationUnit? = nil, requestValueDialog: IntentDialog? = nil, inputConnectionBehavior: InputConnectionBehavior = .default, optionsProvider: OptionsProvider) where OptionsProvider : DynamicOptionsProvider, OptionsProvider.DefaultValue.ValueType == Duration
 ```
+
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Duration`.
 
 ## Parameters
 

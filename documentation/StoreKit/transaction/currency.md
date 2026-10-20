@@ -1,7 +1,8 @@
 # currency
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currency of the price of the product.
 
@@ -23,17 +24,18 @@ var currency: Locale.Currency? { get }
 
 #### Discussion
 
-The [`currency`](transaction/currency.md) property represents the currency of the product’s [`price`](transaction/price.md) that the system records at the time of purchase.
+The [`currency`](./currency.md) property represents the currency of the product’s [`price`](./price.md) that the system records at the time of purchase.
 
-> ❗ **Important**:  For financial and accounting purposes, use the App Store Connect reporting tools. For more information, see [`Download financial reports`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports) and [`Overview of reporting tools`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/measure-app-performance/overview-of-reporting-tools).
+> ❗ **Important**:  For financial and accounting purposes, use the App Store Connect reporting tools. For more information, see [Download financial reports](https://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports) and [Overview of reporting tools](https://developer.apple.com/help/app-store-connect/measure-app-performance/overview-of-reporting-tools).
 
-Don’t use [`currency`](transaction/currency.md) to infer the storefront. Use the [`storefront`](transaction/storefront.md) value in the transaction instead.
+Don’t use [`currency`](./currency.md) to infer the storefront. Use the [`storefront`](./storefront.md) value in the transaction instead.
 
-To access the transaction’s currency on systems earlier than iOS 16, iPadOS 16, macOS 13, tvOS 16, and watchOS 9, use [`currencyCode`](product/subscriptioninfo/renewalinfo/currencycode.md).
+To access the transaction’s currency on systems earlier than iOS 16, iPadOS 16, macOS 13, tvOS 16, and watchOS 9, use [`currencyCode`](../product/subscriptioninfo/renewalinfo/currencycode.md).
 
 ## See Also
 
-- [var price: Decimal?](transaction/price.md)
+### Getting the product price and currency
+- [var price: Decimal?](./price.md)
   The price of the Apple In-App Purchase that the system records in the transaction.
 
 

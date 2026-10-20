@@ -1,7 +1,8 @@
 # color
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color of the ink.
 
@@ -23,11 +24,12 @@ The alpha of the final color may vary due to input from Apple Pencil. For exampl
 
 ## See Also
 
-- [var color: NSColor](pkinkingtool-swift.struct/color-22zaw.md)
+### Getting the inking tool attributes
+- [var color: NSColor](./color-22zaw.md)
   The color of the ink.
-- [var width: CGFloat](pkinkingtool-swift.struct/width.md)
+- [var width: CGFloat](./width.md)
   The width of the ink.
-- [var ink: PKInk](pkinkingtool-swift.struct/ink.md)
+- [var ink: PKInk](./ink.md)
   The ink used by this inking tool.
 
 

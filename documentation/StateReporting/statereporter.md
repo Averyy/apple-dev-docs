@@ -1,7 +1,8 @@
 # StateReporter
 
 **Framework**: StateReporting  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object unique per domain that records state transitions and volatile metadata updates.
 
@@ -22,15 +23,15 @@ final class StateReporter<StableMetadata, VolatileMetadata> where StableMetadata
 
 ## Mentions
 
-- [Getting started with StateReporting](getting-started-with-statereporting.md)
+- [Getting started with StateReporting](./getting-started-with-statereporting.md)
 
 #### Overview
 
-`StateReporter` is the central object for recording your feature’s or subsystem’s current state. You obtain an instance through the [`reporter(for:stableMetadata:volatileMetadata:)`](statereporter/reporter(for:stablemetadata:volatilemetadata:).md) method, which guarantees that every caller using the same domain string receives the same object. Attempting to call the method with different generic type arguments for an already-registered domain is a fatal error.
+`StateReporter` is the central object for recording your feature’s or subsystem’s current state. You obtain an instance through the [`reporter(for:stableMetadata:volatileMetadata:)`](./statereporter/reporter%28for,stablemetadata,volatilemetadata%29.md) method, which guarantees that every caller using the same domain string receives the same object. Attempting to call the method with different generic type arguments for an already-registered domain is a fatal error.
 
-A state is uniquely identified by the combination of a label and stable metadata. A transition to a new state occurs when either changes; reporting the same label and stable metadata is a no-op. *Volatile metadata* provides additional context within an ongoing state and is discarded when the next transition begins. Both stable and volatile metadata are expressed as types conforming to [`ReportableMetadata`](reportablemetadata.md), which can be synthesized automatically with the [`ReportableMetadata()`](reportablemetadata().md) macro.
+A state is uniquely identified by the combination of a label and stable metadata. A transition to a new state occurs when either changes; reporting the same label and stable metadata is a no-op. *Volatile metadata* provides additional context within an ongoing state and is discarded when the next transition begins. Both stable and volatile metadata are expressed as types conforming to [`ReportableMetadata`](./reportablemetadata.md), which can be synthesized automatically with the [`ReportableMetadata()`](./reportablemetadata%28%29.md) macro.
 
-Call [`reportTransition(to:stableMetadata:volatileMetadata:)`](statereporter/reporttransition(to:stablemetadata:volatilemetadata:).md) whenever your feature transitions to a new state. Pass `nil` as the label to signal that no state is active. Call [`reportVolatileMetadataUpdate(_:)`](statereporter/reportvolatilemetadataupdate(_:).md) to update volatile metadata without beginning a new state transition. Calling either method more frequently than user interaction timescales can trigger rate limiting, causing state updates to go unlogged.
+Call [`reportTransition(to:stableMetadata:volatileMetadata:)`](./statereporter/reporttransition%28to,stablemetadata,volatilemetadata%29.md) whenever your feature transitions to a new state. Pass `nil` as the label to signal that no state is active. Call [`reportVolatileMetadataUpdate(_:)`](./statereporter/reportvolatilemetadataupdate%28_%29.md) to update volatile metadata without beginning a new state transition. Calling either method more frequently than user interaction timescales can trigger rate limiting, causing state updates to go unlogged.
 
 ```swift
 let reporter = StateReporter.reporter(
@@ -46,27 +47,27 @@ reporter.reportTransition(
 )
 ```
 
-For Objective-C, use [`SRStateReporter`](srstatereporter.md).
+For Objective-C, use [`SRStateReporter`](./srstatereporter.md).
 
 ## Topics
 
 ### Instance Properties
-- [let domain: String](statereporter/domain.md)
+- [let domain: String](./statereporter/domain.md)
   The reverse DNS-style domain name that identifies this reporter.
 ### Instance Methods
-- [func reportTransition(to: String?, stableMetadata: StableMetadata?, volatileMetadata: VolatileMetadata?)](statereporter/reporttransition(to:stablemetadata:volatilemetadata:).md)
+- [func reportTransition(to: String?, stableMetadata: StableMetadata?, volatileMetadata: VolatileMetadata?)](./statereporter/reporttransition%28to,stablemetadata,volatilemetadata%29.md)
   Reports a transition to a new state.
-- [func reportVolatileMetadataUpdate(VolatileMetadata?)](statereporter/reportvolatilemetadataupdate(_:).md)
+- [func reportVolatileMetadataUpdate(VolatileMetadata?)](./statereporter/reportvolatilemetadataupdate%28_%29.md)
   Updates the volatile metadata within the current state without beginning a new transition.
 ### Type Methods
-- [static func reporter(for: String, stableMetadata: StableMetadata.Type, volatileMetadata: VolatileMetadata.Type) -> StateReporter<StableMetadata, VolatileMetadata>](statereporter/reporter(for:stablemetadata:volatilemetadata:).md)
+- [static func reporter(for: String, stableMetadata: StableMetadata.Type, volatileMetadata: VolatileMetadata.Type) -> StateReporter<StableMetadata, VolatileMetadata>](./statereporter/reporter%28for,stablemetadata,volatilemetadata%29.md)
   Returns the reporter instance unique to the given domain and metadata types.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,28 +1,30 @@
 # LeftSurroundDirect
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 LeftSurroundDirect
 ```
 
 ## See Also
 
-- [CenterSurround](videodriverkit/iouservideochannellabel/centersurround.md)
+### Surround channels
+- [CenterSurround](./centersurround.md)
   WAVE: “Back Center” or plain “Rear Surround”
-- [CenterSurroundDirect](videodriverkit/iouservideochannellabel/centersurrounddirect.md)
+- [CenterSurroundDirect](./centersurrounddirect.md)
   back center, non diffuse
-- [LeftSurround](videodriverkit/iouservideochannellabel/leftsurround.md)
-- [RearSurroundLeft](videodriverkit/iouservideochannellabel/rearsurroundleft.md)
-- [RearSurroundRight](videodriverkit/iouservideochannellabel/rearsurroundright.md)
-- [RightSurround](videodriverkit/iouservideochannellabel/rightsurround.md)
-- [RightSurroundDirect](videodriverkit/iouservideochannellabel/rightsurrounddirect.md)
+- [LeftSurround](./leftsurround.md)
+- [RearSurroundLeft](./rearsurroundleft.md)
+- [RearSurroundRight](./rearsurroundright.md)
+- [RightSurround](./rightsurround.md)
+- [RightSurroundDirect](./rightsurrounddirect.md)
 
 
 ---

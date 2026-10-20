@@ -1,7 +1,8 @@
 # IOUSBHostDeviceRequestType(_:_:_:)
 
 **Framework**: IOUSBHost  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates the request type field of a device request.
 
@@ -13,6 +14,10 @@ Creates the request type field of a device request.
 
 ```swift
 func IOUSBHostDeviceRequestType(_ direction: tIOUSBDeviceRequestDirectionValue, _ type: tIOUSBDeviceRequestTypeValue, _ recipient: tIOUSBDeviceRequestRecipientValue) -> UInt8
+```
+
+```c
+static uint8_t IOUSBHostDeviceRequestType(tIOUSBDeviceRequestDirectionValue direction, tIOUSBDeviceRequestTypeValue type, tIOUSBDeviceRequestRecipientValue recipient);
 ```
 
 #### Return Value
@@ -27,7 +32,8 @@ The request type.
 
 ## See Also
 
-- [let IOUSBHostDefaultControlCompletionTimeout: TimeInterval](iousbhostdefaultcontrolcompletiontimeout.md)
+### Sending Device Requests
+- [let IOUSBHostDefaultControlCompletionTimeout: TimeInterval](./iousbhostdefaultcontrolcompletiontimeout.md)
   The default completion timeout for input/output requests.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the quotient and remainder of this value divided by the given value.
@@ -40,11 +41,18 @@ let (q, r) = x.quotientAndRemainder(dividingBy: 933)
 
 - `rhs`: The value to divide this value by.
 
+## Default Implementations
+
+### BinaryInteger Implementations
+- [func quotientAndRemainder(dividingBy: Self) -> (quotient: Self, remainder: Self)](./quotientandremainder%28dividingby%29-3pj1x.md)
+  Returns the quotient and remainder of this value divided by the given value.
+
 ## See Also
 
-- [Binary Integer Operators](binary-integer-operators.md)
+### Performing Calculations
+- [Binary Integer Operators](../binary-integer-operators.md)
   Perform arithmetic and bitwise operations or compare values.
-- [func isMultiple(of: Self) -> Bool](binaryinteger/ismultiple(of:).md)
+- [func isMultiple(of: Self) -> Bool](./ismultiple%28of%29.md)
   Returns `true` if this value is a multiple of the given value, and `false` otherwise.
 
 

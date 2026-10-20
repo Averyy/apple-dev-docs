@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default menu bar extra style.
 
@@ -14,11 +15,14 @@ The default menu bar extra style.
 static var automatic: AutomaticMenuBarExtraStyle { get }
 ```
 
+Available when `Self` is `AutomaticMenuBarExtraStyle`.
+
 ## See Also
 
-- [static var menu: PullDownMenuBarExtraStyle](menubarextrastyle/menu.md)
+### Getting menu bar extra styles
+- [static var menu: PullDownMenuBarExtraStyle](./menu.md)
   A menu bar extra style that renders its contents as a menu that pulls down from the icon in the menu bar.
-- [static var window: WindowMenuBarExtraStyle](menubarextrastyle/window.md)
+- [static var window: WindowMenuBarExtraStyle](./window.md)
   A menu bar extra style that renders its contents in a popover-like window.
 
 

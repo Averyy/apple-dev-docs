@@ -1,7 +1,8 @@
 # kAXSliderRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A slider control.
 
@@ -12,6 +13,10 @@ A slider control.
 
 ```swift
 var kAXSliderRole: String { get }
+```
+
+```c
+#define kAXSliderRole
 ```
 
 

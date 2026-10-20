@@ -1,7 +1,8 @@
 # subtitle
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subtitle associated with this element.
 
@@ -14,6 +15,10 @@ The subtitle associated with this element.
 
 ```swift
 var subtitle: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * subtitle;
 ```
 
 

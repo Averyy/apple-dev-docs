@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/examples/tensor_parallelism.htm
 
 # Tensor Parallelism
 
-**
-
-- [.rst](../_sources/examples/tensor_parallelism.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# Tensor Parallelism
-
- Table of contents 
-
-## Contents
-
-# Tensor Parallelism
-
 In this example, we will explore how tensor parallelism (TP) works in MLX.  We
 will start with an overview of the distributed layers in `mlx.nn` and then
 show how to do tensor parallelism Llama-style transformer models.
@@ -42,49 +15,49 @@ show how to do tensor parallelism Llama-style transformer models.
 ### AllToShardedLinear
 
 This layer replicates a common input and shards the weight matrix along the
-output dimension across all devices in the [mlx.core.distributed.Group](../python/_autosummary/mlx.core.distributed.Group.html#mlx.core.distributed.Group).
+output dimension across all devices in the [mlx.core.distributed.Group](../python/_autosummary/mlx.core.distributed.Group.md#mlx.core.distributed.Group).
 The layer produces a sharded output.
 
-For example, consider an [mlx.nn.AllToShardedLinear](../python/nn/_autosummary/mlx.nn.AllToShardedLinear.html#mlx.nn.AllToShardedLinear) layer with
+For example, consider an [mlx.nn.AllToShardedLinear](../python/nn/_autosummary/mlx.nn.AllToShardedLinear.md#mlx.nn.AllToShardedLinear) layer with
 `input_dims=2` and `output_dims=2`, a batched input of shape `(4, 2)`,
 and a device group with 2 devices. The layer shards the weight matrix along the
 output dimension across the two devices, where each device receives the full
 input and computes a partial output.
 
-![column-wise tensor parallelism](../_static/tp_inference/all-to-sharded-linear.png)
+![column-wise tensor parallelism](https://ml-explore.github.io/mlx/build/html/_static/tp_inference/all-to-sharded-linear.png)
 
 This layer does not automatically gather all outputs from each device. This is
 an intended and [useful design choice](#useful-design-choices).
 
-[QuantizedAllToShardedLinear](../python/nn/_autosummary/mlx.nn.QuantizedAllToShardedLinear.html#mlx.nn.QuantizedAllToShardedLinear) is
-the quantized equivalent of [mlx.nn.AllToShardedLinear](../python/nn/_autosummary/mlx.nn.AllToShardedLinear.html#mlx.nn.AllToShardedLinear).  Similar to
-[mlx.nn.QuantizedLinear](../python/nn/_autosummary/mlx.nn.QuantizedLinear.html#mlx.nn.QuantizedLinear), its parameters are frozen and will not be
+[QuantizedAllToShardedLinear](../python/nn/_autosummary/mlx.nn.QuantizedAllToShardedLinear.md#mlx.nn.QuantizedAllToShardedLinear) is
+the quantized equivalent of [mlx.nn.AllToShardedLinear](../python/nn/_autosummary/mlx.nn.AllToShardedLinear.md#mlx.nn.AllToShardedLinear).  Similar to
+[mlx.nn.QuantizedLinear](../python/nn/_autosummary/mlx.nn.QuantizedLinear.md#mlx.nn.QuantizedLinear), its parameters are frozen and will not be
 included in any gradient computation.
 
 ### ShardedToAllLinear
 
 This layer expects inputs that are sharded along the feature dimension and
 shards the weight matrix along the input dimension across all devices in the
-[mlx.core.distributed.Group](../python/_autosummary/mlx.core.distributed.Group.html#mlx.core.distributed.Group). The layer automatically aggregates the
-results using [mlx.core.distributed.all_sum](../python/_autosummary/mlx.core.distributed.all_sum.html#mlx.core.distributed.all_sum), so all devices in the
+[mlx.core.distributed.Group](../python/_autosummary/mlx.core.distributed.Group.md#mlx.core.distributed.Group). The layer automatically aggregates the
+results using [mlx.core.distributed.all_sum](../python/_autosummary/mlx.core.distributed.all_sum.md#mlx.core.distributed.all_sum), so all devices in the
 group will have the same result.
 
-For example, consider an [mlx.nn.ShardedToAllLinear](../python/nn/_autosummary/mlx.nn.ShardedToAllLinear.html#mlx.nn.ShardedToAllLinear) layer with
+For example, consider an [mlx.nn.ShardedToAllLinear](../python/nn/_autosummary/mlx.nn.ShardedToAllLinear.md#mlx.nn.ShardedToAllLinear) layer with
 `input_dims=2` and `output_dims=2`, a batched input of shape `(4, 2)`,
 and a device group with 2 devices. The layer shards the weight matrix along the
 input dimension across the two devices. Each device computes a `(4,2)`
 output, which is then aggregated with all other device outputs to get layer
 output.
 
-> 
+> ![row-wise tensor parallelism](https://ml-explore.github.io/mlx/build/html/_static/tp_inference/sharded-to-all-linear.png)
 
 This layer does not automatically shard the inputs along the feature dimension
 for you. It is necessary to create a “partial” input structure to feed into the
 layer. This is an intended and [useful design choice](#useful-design-choices).
 
-[QuantizedShardedToAllLinear](../python/nn/_autosummary/mlx.nn.QuantizedShardedToAllLinear.html#mlx.nn.QuantizedShardedToAllLinear) is
-the quantized equivalent of [mlx.nn.ShardedToAllLinear](../python/nn/_autosummary/mlx.nn.ShardedToAllLinear.html#mlx.nn.ShardedToAllLinear).  Similar to
-[mlx.nn.QuantizedLinear](../python/nn/_autosummary/mlx.nn.QuantizedLinear.html#mlx.nn.QuantizedLinear), its parameters are frozen and will not be
+[QuantizedShardedToAllLinear](../python/nn/_autosummary/mlx.nn.QuantizedShardedToAllLinear.md#mlx.nn.QuantizedShardedToAllLinear) is
+the quantized equivalent of [mlx.nn.ShardedToAllLinear](../python/nn/_autosummary/mlx.nn.ShardedToAllLinear.md#mlx.nn.ShardedToAllLinear).  Similar to
+[mlx.nn.QuantizedLinear](../python/nn/_autosummary/mlx.nn.QuantizedLinear.md#mlx.nn.QuantizedLinear), its parameters are frozen and will not be
 included in any gradient computation.
 
 ## Shard Utility Functions
@@ -92,16 +65,16 @@ included in any gradient computation.
 ### shard_linear
 
 Converts a regular linear layer into a tensor parallel layer that distributes
-computation across multiple devices. Takes an existing [mlx.nn.Linear](../python/nn/_autosummary/mlx.nn.Linear.html#mlx.nn.Linear)
-or [mlx.nn.QuantizedLinear](../python/nn/_autosummary/mlx.nn.QuantizedLinear.html#mlx.nn.QuantizedLinear) layer and returns a new distributed layer
-(either [mlx.nn.AllToShardedLinear](../python/nn/_autosummary/mlx.nn.AllToShardedLinear.html#mlx.nn.AllToShardedLinear) or
-[mlx.nn.ShardedToAllLinear](../python/nn/_autosummary/mlx.nn.ShardedToAllLinear.html#mlx.nn.ShardedToAllLinear), depending on the sharding type). The
+computation across multiple devices. Takes an existing [mlx.nn.Linear](../python/nn/_autosummary/mlx.nn.Linear.md#mlx.nn.Linear)
+or [mlx.nn.QuantizedLinear](../python/nn/_autosummary/mlx.nn.QuantizedLinear.md#mlx.nn.QuantizedLinear) layer and returns a new distributed layer
+(either [mlx.nn.AllToShardedLinear](../python/nn/_autosummary/mlx.nn.AllToShardedLinear.md#mlx.nn.AllToShardedLinear) or
+[mlx.nn.ShardedToAllLinear](../python/nn/_autosummary/mlx.nn.ShardedToAllLinear.md#mlx.nn.ShardedToAllLinear), depending on the sharding type). The
 original layer is not modified.
 
 ### shard_inplace
 
 Splits the parameters of an existing layer across multiple devices by modifying
-the layer in-place. Unlike [shard_linear](../python/nn/_autosummary/mlx.nn.layers.distributed.shard_linear.html#mlx.nn.layers.distributed.shard_linear), this function does not create a new
+the layer in-place. Unlike [shard_linear](../python/nn/_autosummary/mlx.nn.layers.distributed.shard_linear.md#mlx.nn.layers.distributed.shard_linear), this function does not create a new
 layer or add distributed communication. The layer itself must handle
 distributed communication if needed.
 
@@ -114,8 +87,8 @@ output of the former layer is exactly the input needed needed for the latter.
 This removes the need for an intermediate gather step between the layers,
 reducing communication overhead.
 
-This is why [mlx.nn.AllToShardedLinear](../python/nn/_autosummary/mlx.nn.AllToShardedLinear.html#mlx.nn.AllToShardedLinear) does not aggregate results
-automatically and why [mlx.nn.ShardedToAllLinear](../python/nn/_autosummary/mlx.nn.ShardedToAllLinear.html#mlx.nn.ShardedToAllLinear) does not shard inputs
+This is why [mlx.nn.AllToShardedLinear](../python/nn/_autosummary/mlx.nn.AllToShardedLinear.md#mlx.nn.AllToShardedLinear) does not aggregate results
+automatically and why [mlx.nn.ShardedToAllLinear](../python/nn/_autosummary/mlx.nn.ShardedToAllLinear.md#mlx.nn.ShardedToAllLinear) does not shard inputs
 automatically. It is so that they can be placed in successive order and work
 together easily.
 
@@ -132,7 +105,7 @@ l2 = nn.ShardedToAllLinear(2, 2, bias=False)
 l2_out = l2(l1_out) # (4, 2) output
 ```
 
-![two layer tensor parallelism](../_static/tp_inference/column-row-tp.png)
+![two layer tensor parallelism](https://ml-explore.github.io/mlx/build/html/_static/tp_inference/column-row-tp.png)
 
 A visualization of the simple MLX model using all-to-sharded then sharded-to-all tensor parallelism across 2 devices.
 
@@ -156,7 +129,7 @@ rank = world.rank()
 
 Next, let’s look at the current architecture of the transformer block and see how we can apply tensor parallelism:
 
-![llama transformer example](../_static/tp_inference/llama-transformer.png)
+![llama transformer example](https://ml-explore.github.io/mlx/build/html/_static/tp_inference/llama-transformer.png)
 
 This architecture has two natural places where
 tensor parallelism can be applied: the attention block and the FFN
@@ -182,8 +155,8 @@ correctly with sharded Q, K, V tensors because the matrix multiplications are
 performed along the sharded feature dimension, and the results remain
 properly sharded for the subsequent sharded-to-all layer.
 
-To implement sharding in our Llama inference, we use [shard_linear](../python/nn/_autosummary/mlx.nn.layers.distributed.shard_linear.html#mlx.nn.layers.distributed.shard_linear) to get sharded linear layers with
-distributed communication. This is easier than using [shard_inplace](../python/nn/_autosummary/mlx.nn.layers.distributed.shard_inplace.html#mlx.nn.layers.distributed.shard_inplace) and implementing the steps manually
+To implement sharding in our Llama inference, we use [shard_linear](../python/nn/_autosummary/mlx.nn.layers.distributed.shard_linear.md#mlx.nn.layers.distributed.shard_linear) to get sharded linear layers with
+distributed communication. This is easier than using [shard_inplace](../python/nn/_autosummary/mlx.nn.layers.distributed.shard_inplace.md#mlx.nn.layers.distributed.shard_inplace) and implementing the steps manually
 in the `__call__` function.
 
 The following code shows how to shard the Attention block. The Q, K, and V
@@ -230,5 +203,3 @@ if world.size() > 1:
 This allows us to use the llama inference file as normal when running
 `python llama.py`, but now we can also run it across two (or more)
 devices via `mlx.launch -n 2 llama.py`.
-
-** Contents

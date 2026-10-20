@@ -1,7 +1,8 @@
 # kAXImageRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An image.
 
@@ -12,6 +13,10 @@ An image.
 
 ```swift
 var kAXImageRole: String { get }
+```
+
+```c
+#define kAXImageRole
 ```
 
 

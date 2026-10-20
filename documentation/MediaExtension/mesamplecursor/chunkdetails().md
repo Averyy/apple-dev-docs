@@ -1,7 +1,8 @@
 # chunkDetails()
 
 **Framework**: MediaExtension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns information about the chunk that holds the sample indicated by the cursor.
 
@@ -14,6 +15,10 @@ Returns information about the chunk that holds the sample indicated by the curso
 optional func chunkDetails() throws -> MESampleCursorChunk
 ```
 
+```objc
+- (MESampleCursorChunk *) chunkDetailsReturningError:(NSError **) error;
+```
+
 #### Return Value
 
 A sample cursor chunk.
@@ -22,15 +27,16 @@ A sample cursor chunk.
 
 If the sample resides in a contiguous chunk of the file among similar samples, this method returns information about that chunk.
 
-> **Note**:  If a cursor implements this method, it also needs to implement [`sampleLocation()`](mesamplecursor/samplelocation().md) to get samples inside the chunk’s location.
+> **Note**:  If a cursor implements this method, it also needs to implement [`sampleLocation()`](./samplelocation%28%29.md) to get samples inside the chunk’s location.
 
-It may not be practical to use this method with some media assets. In this case, or if the cursor doesn’t support this method, it returns [`MEError.Code.locationNotAvailable`](meerror-swift.struct/code/locationnotavailable.md), which indicates to use [`loadSampleBufferContainingSamples(to:completionHandler:)`](mesamplecursor/loadsamplebuffercontainingsamples(to:completionhandler:).md) to load the sample data instead.
+It may not be practical to use this method with some media assets. In this case, or if the cursor doesn’t support this method, it returns [`MEError.Code.locationNotAvailable`](../meerror-swift.struct/code/locationnotavailable.md), which indicates to use [`loadSampleBufferContainingSamples(to:completionHandler:)`](./loadsamplebuffercontainingsamples%28to,completionhandler%29.md) to load the sample data instead.
 
 ## See Also
 
-- [func sampleLocation() throws -> MESampleLocation](mesamplecursor/samplelocation.md)
+### Sending samples to a pipeline
+- [func sampleLocation() throws -> MESampleLocation](./samplelocation%28%29.md)
   Returns the location and byte source of the sample indicated by the cursor.
-- [func loadSampleBufferContainingSamples(to: (any MESampleCursor)?, completionHandler: (CMSampleBuffer?, (any Error)?) -> Void)](mesamplecursor/loadsamplebuffercontainingsamples(to:completionhandler:).md)
+- [func loadSampleBufferContainingSamples(to: (any MESampleCursor)?, completionHandler: (CMSampleBuffer?, (any Error)?) -> Void)](./loadsamplebuffercontainingsamples%28to,completionhandler%29.md)
   Builds a sample buffer that contains the samples at the cursor that you specify.
 
 

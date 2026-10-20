@@ -1,7 +1,8 @@
 # flagOptions
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 `CVSMPTETimeFlags` representation of `CVSMPTETime.flags`
 

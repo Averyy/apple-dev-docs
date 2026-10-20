@@ -1,7 +1,8 @@
 # Chart3DSurfaceStyle
 
 **Framework**: Swift Charts  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 26.0+
@@ -19,27 +20,28 @@ protocol Chart3DSurfaceStyle : Hashable
 ## Topics
 
 ### Type Properties
-- [static var heightBased: BasicChart3DSurfaceStyle](chart3dsurfacestyle/heightbased.md)
+- [static var heightBased: BasicChart3DSurfaceStyle](./chart3dsurfacestyle/heightbased.md)
   Height (Y) based style.
-- [static var normalBased: BasicChart3DSurfaceStyle](chart3dsurfacestyle/normalbased.md)
+- [static var normalBased: BasicChart3DSurfaceStyle](./chart3dsurfacestyle/normalbased.md)
   Surface normal based style.
 ### Type Methods
-- [static func heightBased(Gradient, yRange: ClosedRange<CGFloat>?) -> Self](chart3dsurfacestyle/heightbased(_:yrange:).md)
+- [static func heightBased(Gradient, yRange: ClosedRange<CGFloat>?) -> Self](./chart3dsurfacestyle/heightbased%28_,yrange%29.md)
   Height (Y) based style with gradient and Y range.
-- [static func heightBased(yRange: ClosedRange<CGFloat>) -> Self](chart3dsurfacestyle/heightbased(yrange:).md)
+- [static func heightBased(yRange: ClosedRange<CGFloat>) -> Self](./chart3dsurfacestyle/heightbased%28yrange%29.md)
   Height (Y) based style with Y range.
 
 ## Relationships
 
 ### Inherits From
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 ### Conforming Types
-- [BasicChart3DSurfaceStyle](basicchart3dsurfacestyle.md)
+- [BasicChart3DSurfaceStyle](./basicchart3dsurfacestyle.md)
 
 ## See Also
 
-- [struct BasicChart3DSurfaceStyle](basicchart3dsurfacestyle.md)
+### Configuring surfaces
+- [struct BasicChart3DSurfaceStyle](./basicchart3dsurfacestyle.md)
 
 
 ---

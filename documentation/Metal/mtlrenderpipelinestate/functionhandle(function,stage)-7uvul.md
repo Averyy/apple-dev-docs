@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a function handle for a shader.
@@ -20,16 +21,21 @@ Creates a function handle for a shader.
 func functionHandle(function: any MTLFunction, stage: MTLRenderStages) -> (any MTLFunctionHandle)?
 ```
 
+```objc
+- (id<MTLFunctionHandle>) functionHandleWithFunction:(id<MTLFunction>) function stage:(MTLRenderStages) stage;
+```
+
 ## Parameters
 
-- `function`: An [`MTLFunction`](mtlfunction.md) instance that represents the shader the method creates a handle for.
-- `stage`: An [`MTLRenderStages`](mtlrenderstages.md) instance that represents the rendering stage that invokes the shader that `function` represents.
+- `function`: An [`MTLFunction`](../mtlfunction.md) instance that represents the shader the method creates a handle for.
+- `stage`: An [`MTLRenderStages`](../mtlrenderstages.md) instance that represents the rendering stage that invokes the shader that `function` represents.
 
 ## See Also
 
-- [func makeVisibleFunctionTable(descriptor: MTLVisibleFunctionTableDescriptor, stage: MTLRenderStages) -> (any MTLVisibleFunctionTable)?](mtlrenderpipelinestate/makevisiblefunctiontable(descriptor:stage:).md)
+### Creating function handles and tables
+- [func makeVisibleFunctionTable(descriptor: MTLVisibleFunctionTableDescriptor, stage: MTLRenderStages) -> (any MTLVisibleFunctionTable)?](./makevisiblefunctiontable%28descriptor,stage%29.md)
   Creates a new visible function table.
-- [func makeIntersectionFunctionTable(descriptor: MTLIntersectionFunctionTableDescriptor, stage: MTLRenderStages) -> (any MTLIntersectionFunctionTable)?](mtlrenderpipelinestate/makeintersectionfunctiontable(descriptor:stage:).md)
+- [func makeIntersectionFunctionTable(descriptor: MTLIntersectionFunctionTableDescriptor, stage: MTLRenderStages) -> (any MTLIntersectionFunctionTable)?](./makeintersectionfunctiontable%28descriptor,stage%29.md)
   Creates a new intersection function table.
 
 

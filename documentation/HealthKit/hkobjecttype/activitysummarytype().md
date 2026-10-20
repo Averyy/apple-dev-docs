@@ -1,7 +1,8 @@
 # activitySummaryType()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the shared activity summary type.
 
@@ -19,15 +20,19 @@ Returns the shared activity summary type.
 class func activitySummaryType() -> HKActivitySummaryType
 ```
 
+```objc
++ (HKActivitySummaryType *) activitySummaryType;
+```
+
 #### Return Value
 
-The shared [`HKActivitySummaryType`](hkactivitysummarytype.md) instance.
+The shared [`HKActivitySummaryType`](../hkactivitysummarytype.md) instance.
 
 #### Discussion
 
-This method returns an instance of the [`HKActivitySummaryType`](hkactivitysummarytype.md) concrete subclass. Use this type to request permission to read [`HKActivitySummary`](hkactivitysummary.md) objects from the HealthKit store.
+This method returns an instance of the [`HKActivitySummaryType`](../hkactivitysummarytype.md) concrete subclass. Use this type to request permission to read [`HKActivitySummary`](../hkactivitysummary.md) objects from the HealthKit store.
 
-> **Note**:  You cannot request permission to share [`HKActivitySummary`](hkactivitysummary.md) objects.
+> **Note**:  You cannot request permission to share [`HKActivitySummary`](../hkactivitysummary.md) objects.
 
 
 ---

@@ -1,7 +1,8 @@
 # LivePhotosKit.PlaybackStyle
 
 **Framework**: LivePhotosKit JS  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible playback styles.
 
@@ -10,7 +11,7 @@ Possible playback styles.
 
 ## Declaration
 
-```swift
+```
 interface LivePhotosKit.PlaybackStyle {
 	const PlaybackStyleLiteral default;
 	const PlaybackStyleLiteral FULL;
@@ -22,16 +23,17 @@ interface LivePhotosKit.PlaybackStyle {
 ## Topics
 
 ### Enumeration Cases
-- [FULL](livephotoskit.playbackstyle/full.md)
+- [FULL](./livephotoskit.playbackstyle/full.md)
   Play the entire motion content including transition effects at the start and end.
-- [HINT](livephotoskit.playbackstyle/hint.md)
+- [HINT](./livephotoskit.playbackstyle/hint.md)
   Play a short section of the motion content.
-- [LOOP](livephotoskit.playbackstyle/loop.md)
-- [default](livephotoskit.playbackstyle/default.md)
+- [LOOP](./livephotoskit.playbackstyle/loop.md)
+- [default](./livephotoskit.playbackstyle/default.md)
 
 ## See Also
 
-- [LivePhotosKit.Errors](livephotoskit.errors.md)
+### Enumerations
+- [LivePhotosKit.Errors](./livephotoskit.errors.md)
   The errors that can occur when playing a LivePhoto.
 
 

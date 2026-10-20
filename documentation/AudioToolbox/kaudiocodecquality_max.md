@@ -1,15 +1,16 @@
 # kAudioCodecQuality_Max
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,12 +18,17 @@
 var kAudioCodecQuality_Max: UInt32 { get }
 ```
 
+```c
+kAudioCodecQuality_Max
+```
+
 ## See Also
 
-- [var kAudioCodecQuality_High: UInt32](kaudiocodecquality_high.md)
-- [var kAudioCodecQuality_Low: UInt32](kaudiocodecquality_low.md)
-- [var kAudioCodecQuality_Medium: UInt32](kaudiocodecquality_medium.md)
-- [var kAudioCodecQuality_Min: UInt32](kaudiocodecquality_min.md)
+### Constants
+- [var kAudioCodecQuality_High: UInt32](./kaudiocodecquality_high.md)
+- [var kAudioCodecQuality_Low: UInt32](./kaudiocodecquality_low.md)
+- [var kAudioCodecQuality_Medium: UInt32](./kaudiocodecquality_medium.md)
+- [var kAudioCodecQuality_Min: UInt32](./kaudiocodecquality_min.md)
 
 
 ---

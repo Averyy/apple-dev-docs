@@ -1,7 +1,8 @@
 # invalidateLayout()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Signals that the layout has been invalidated, and that the scrubber control should perform a new layout pass.
 
@@ -14,13 +15,18 @@ Signals that the layout has been invalidated, and that the scrubber control shou
 func invalidateLayout()
 ```
 
+```objc
+- (void) invalidateLayout;
+```
+
 ## See Also
 
-- [class var layoutAttributesClass: AnyClass](nsscrubberlayout/layoutattributesclass.md)
+### Configuring a scrubber layout
+- [class var layoutAttributesClass: AnyClass](./layoutattributesclass.md)
   A property containing a class that describes layout attributes.
-- [var scrubber: NSScrubber?](nsscrubberlayout/scrubber.md)
+- [var scrubber: NSScrubber?](./scrubber.md)
   The scrubber control that this layout is assigned to.
-- [var visibleRect: NSRect](nsscrubberlayout/visiblerect.md)
+- [var visibleRect: NSRect](./visiblerect.md)
   The currently visible rectangle, in the coordinate space of the scrubber content.
 
 

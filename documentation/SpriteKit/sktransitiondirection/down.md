@@ -1,7 +1,8 @@
 # SKTransitionDirection.down
 
 **Framework**: SpriteKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The transition goes down.
 
@@ -10,7 +11,7 @@ The transition goes down.
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
 - macOS 10.9+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,18 @@ The transition goes down.
 case down
 ```
 
+```c
+SKTransitionDirectionDown
+```
+
 ## See Also
 
-- [SKTransitionDirection.up](sktransitiondirection/up.md)
+### Constants
+- [SKTransitionDirection.up](./up.md)
   The transition goes up.
-- [SKTransitionDirection.right](sktransitiondirection/right.md)
+- [SKTransitionDirection.right](./right.md)
   The transition goes right.
-- [SKTransitionDirection.left](sktransitiondirection/left.md)
+- [SKTransitionDirection.left](./left.md)
   The transition goes left.
 
 

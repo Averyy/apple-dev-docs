@@ -1,7 +1,8 @@
 # contactFieldUserInfoKey
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Payment error key that indicates errors with the contact information.
 
@@ -19,15 +20,19 @@ Payment error key that indicates errors with the contact information.
 static let contactFieldUserInfoKey: PKPaymentErrorKey
 ```
 
+```c
+extern PKPaymentErrorKey const PKPaymentErrorContactFieldUserInfoKey;
+```
+
 #### Discussion
 
-See [`PKContactField`](pkcontactfield.md) for the values to use with this key.
+See [`PKContactField`](../pkcontactfield.md) for the values to use with this key.
 
-Use this key with the error code [`PKPaymentError.Code.shippingContactInvalidError`](pkpaymenterror/code/shippingcontactinvaliderror.md) to indicate an error in the name, email address, phone number, or the shipping address as a whole.
+Use this key with the error code [`PKPaymentError.Code.shippingContactInvalidError`](../pkpaymenterror/code/shippingcontactinvaliderror.md) to indicate an error in the name, email address, phone number, or the shipping address as a whole.
 
-Use this key with the error code [`billingContactInvalidError`](pkpaymenterror/billingcontactinvaliderror.md)  to indicate an error with the billing address as a whole, or billing name.
+Use this key with the error code [`billingContactInvalidError`](../pkpaymenterror/billingcontactinvaliderror.md)  to indicate an error with the billing address as a whole, or billing name.
 
-The example code in [`Listing 1`](https://developer.apple.comhttps://developer.apple.com/library/archive/qa/qa1639/_index.html#//apple_ref/doc/uid/DTS40008751-CH1-SOURCECODE2) shows the [`contactFieldUserInfoKey`](pkpaymenterrorkey/contactfielduserinfokey.md) used to indicate a phone number error.
+The example code in [Listing 1](https://developer.apple.com/library/archive/qa/qa1639/_index.html#//apple_ref/doc/uid/DTS40008751-CH1-SOURCECODE2) shows the [`contactFieldUserInfoKey`](./contactfielduserinfokey.md) used to indicate a phone number error.
 
 The following example shows an error indicating a problem with the shipping contact’s phone number.
 
@@ -40,7 +45,8 @@ let phoneError = NSError.init(domain: PKPaymentErrorDomain,
 
 ## See Also
 
-- [static let postalAddressUserInfoKey: PKPaymentErrorKey](pkpaymenterrorkey/postaladdressuserinfokey.md)
+### Error keys
+- [static let postalAddressUserInfoKey: PKPaymentErrorKey](./postaladdressuserinfokey.md)
   Payment error key that indicates errors with the postal address.
 
 

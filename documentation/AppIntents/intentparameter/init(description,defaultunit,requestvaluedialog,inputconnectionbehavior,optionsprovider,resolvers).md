@@ -1,7 +1,8 @@
 # init(description:defaultUnit:requestValueDialog:inputConnectionBehavior:optionsProvider:resolvers:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an app intent parameter with a list of selectable options that can convert the selected value.
 
@@ -19,6 +20,8 @@ Creates an app intent parameter with a list of selectable options that can conve
 ```swift
 convenience init<Spec, OptionsProvider>(description: LocalizedStringResource? = nil, defaultUnit: IntentParameter<Value>.DurationUnit? = nil, requestValueDialog: IntentDialog? = nil, inputConnectionBehavior: InputConnectionBehavior = .default, optionsProvider: OptionsProvider, @ResolverSpecificationBuilder<Value.UnwrappedType> resolvers: @escaping () -> Spec) where Spec : ResolverSpecification, OptionsProvider : DynamicOptionsProvider, OptionsProvider.DefaultValue.ValueType == Duration
 ```
+
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Duration`.
 
 ## Parameters
 

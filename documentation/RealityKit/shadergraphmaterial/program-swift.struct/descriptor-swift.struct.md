@@ -1,7 +1,8 @@
 # ShaderGraphMaterial.Program.Descriptor
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -20,33 +21,34 @@ struct Descriptor
 ## Topics
 
 ### Creating a descriptor
-- [init(shaderGraph: ShaderGraph, lightingModel: LightingModel, isColorDitheringEnabled: Bool, blendMode: MaterialParameterTypes.BlendMode?, inputValues: [String : MaterialParameters.Value], constantValues: MTLFunctionConstantValues)](shadergraphmaterial/program-swift.struct/descriptor-swift.struct/init(shadergraph:lightingmodel:iscolorditheringenabled:blendmode:inputvalues:constantvalues:).md)
+- [init(shaderGraph: ShaderGraph, lightingModel: LightingModel, isColorDitheringEnabled: Bool, blendMode: MaterialParameterTypes.BlendMode?, inputValues: [String : MaterialParameters.Value], constantValues: MTLFunctionConstantValues)](./descriptor-swift.struct/init%28shadergraph,lightingmodel,iscolorditheringenabled,blendmode,inputvalues,constantvalues%29.md)
   Creates a descriptor with explicit configuration.
-- [init(inferredFrom: ShaderGraph, inputValues: [String : MaterialParameters.Value], constantValues: MTLFunctionConstantValues) throws](shadergraphmaterial/program-swift.struct/descriptor-swift.struct/init(inferredfrom:inputvalues:constantvalues:).md)
+- [init(inferredFrom: ShaderGraph, inputValues: [String : MaterialParameters.Value], constantValues: MTLFunctionConstantValues) throws](./descriptor-swift.struct/init%28inferredfrom,inputvalues,constantvalues%29.md)
   Creates a descriptor by inferring configuration from a shader graph.
 ### Specifying the shader graph
-- [var shaderGraph: ShaderGraph](shadergraphmaterial/program-swift.struct/descriptor-swift.struct/shadergraph.md)
+- [var shaderGraph: ShaderGraph](./descriptor-swift.struct/shadergraph.md)
   The shader graph that describes the shading logic for this program.
-- [var inputValues: [String : MaterialParameters.Value]](shadergraphmaterial/program-swift.struct/descriptor-swift.struct/inputvalues.md)
+- [var inputValues: [String : MaterialParameters.Value]](./descriptor-swift.struct/inputvalues.md)
   Initial values for the inputs declared in `shaderNodeGraph`.
-- [var constantValues: MTLFunctionConstantValues](shadergraphmaterial/program-swift.struct/descriptor-swift.struct/constantvalues.md)
+- [var constantValues: MTLFunctionConstantValues](./descriptor-swift.struct/constantvalues.md)
   Values for the function constant inputs declared in `shaderNodeGraph`.
 ### Configuring rendering
-- [var lightingModel: LightingModel](shadergraphmaterial/program-swift.struct/descriptor-swift.struct/lightingmodel.md)
+- [var lightingModel: LightingModel](./descriptor-swift.struct/lightingmodel.md)
   The lighting model to use when rendering this material.
-- [var blendMode: MaterialParameterTypes.BlendMode?](shadergraphmaterial/program-swift.struct/descriptor-swift.struct/blendmode.md)
+- [var blendMode: MaterialParameterTypes.BlendMode?](./descriptor-swift.struct/blendmode.md)
   How materials using this program blend with content behind them.
-- [var isColorDitheringEnabled: Bool](shadergraphmaterial/program-swift.struct/descriptor-swift.struct/iscolorditheringenabled.md)
+- [var isColorDitheringEnabled: Bool](./descriptor-swift.struct/iscolorditheringenabled.md)
   Whether to dither color values before writing to the frame buffer.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../../Swift/equatable.md)
 
 ## See Also
 
-- [var descriptor: ShaderGraphMaterial.Program.Descriptor](shadergraphmaterial/program-swift.struct/descriptor-swift.property.md)
+### Accessing the descriptor
+- [var descriptor: ShaderGraphMaterial.Program.Descriptor](./descriptor-swift.property.md)
   The descriptor used to create this program.
 
 

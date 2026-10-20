@@ -1,7 +1,8 @@
 # IOUserVideoDirectionControl
 
 **Framework**: VideoDriverKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A control object that supports Boolean values.
 
@@ -10,60 +11,61 @@ A control object that supports Boolean values.
 
 ## Declaration
 
-```swift
+```cpp
 class IOUserVideoDirectionControl;
 ```
 
 ## Topics
 
 ### Creating a direction control
-- [Create](iouservideodirectioncontrol/create.md)
+- [Create](./iouservideodirectioncontrol/create.md)
   A static factory method that allocates and initializes a video direction control.
-- [init](iouservideodirectioncontrol/init.md)
+- [init](./iouservideodirectioncontrol/init.md)
   Initializes a video direction control.
-- [IOUserVideoDriver](iouservideodriver.md)
+- [IOUserVideoDriver](./iouservideodriver.md)
   A video driver.
-- [IOUserVideoObjectPropertyElement](videodriverkit/iouservideoobjectpropertyelement.md)
+- [IOUserVideoObjectPropertyElement](./videodriverkit-page/iouservideoobjectpropertyelement.md)
   An integer that identifies, along with the property selector and scope, a specific piece of information about a video object.
-- [IOUserVideoObjectPropertyScope](videodriverkit/iouservideoobjectpropertyscope.md)
+- [IOUserVideoObjectPropertyScope](./videodriverkit-page/iouservideoobjectpropertyscope.md)
   A four character code which, along with the selector and element, identifies a specific piece of information about a video object.
 ### Freeing a slider control
-- [free](iouservideodirectioncontrol/free.md)
+- [free](./iouservideodirectioncontrol/free.md)
   Frees the video direction control.
 ### Getting information about the class
-- [GetClassID](iouservideodirectioncontrol/getclassid.md)
+- [GetClassID](./iouservideodirectioncontrol/getclassid.md)
   Gets the class identifier of the object.
-- [GetBaseClassID](iouservideodirectioncontrol/getbaseclassid.md)
+- [GetBaseClassID](./iouservideodirectioncontrol/getbaseclassid.md)
   Gets the class identifier of the base class object.
-- [IOUserVideoClassID](videodriverkit/iouservideoclassid.md)
+- [IOUserVideoClassID](./videodriverkit-page/iouservideoclassid.md)
   Video class identifiers of an video object.
 ### Supporting value changes
-- [HandleChangeControlValue](iouservideodirectioncontrol/handlechangecontrolvalue.md)
+- [HandleChangeControlValue](./iouservideodirectioncontrol/handlechangecontrolvalue.md)
   The system calls this virtual method when the control’s value changes.
 ### Accessing the value
-- [SetControlValue](iouservideodirectioncontrol/setcontrolvalue.md)
+- [SetControlValue](./iouservideodirectioncontrol/setcontrolvalue.md)
   Sets the current control value.
-- [GetControlValue](iouservideodirectioncontrol/getcontrolvalue.md)
+- [GetControlValue](./iouservideodirectioncontrol/getcontrolvalue.md)
   Gets the current value of the control.
 
 ## Relationships
 
 ### Inherits From
-- [IOUserVideoControl](iouservideocontrol.md)
+- [IOUserVideoControl](./iouservideocontrol.md)
 
 ## See Also
 
-- [IOUserVideoControl](iouservideocontrol.md)
+### Video controls
+- [IOUserVideoControl](./iouservideocontrol.md)
   A base class for control objects.
-- [IOUserVideoBooleanControl](iouservideobooleancontrol.md)
+- [IOUserVideoBooleanControl](./iouservideobooleancontrol.md)
   A control object that supports Boolean values.
-- [IOUserVideoStereoPanControl](iouservideostereopancontrol.md)
+- [IOUserVideoStereoPanControl](./iouservideostereopancontrol.md)
   A control object that supports panning between stereo channels.
-- [IOUserVideoSliderControl](iouservideoslidercontrol.md)
+- [IOUserVideoSliderControl](./iouservideoslidercontrol.md)
   A control object that supports a 32-bit unsigned integer value slider.
-- [IOUserVideoSelectorControl](iouservideoselectorcontrol.md)
+- [IOUserVideoSelectorControl](./iouservideoselectorcontrol.md)
   A control object that supports a 32-bit unsigned integer selector value.
-- [IOUserVideoLevelControl](iouservideolevelcontrol.md)
+- [IOUserVideoLevelControl](./iouservideolevelcontrol.md)
   A control object that supports a float value level.
 
 

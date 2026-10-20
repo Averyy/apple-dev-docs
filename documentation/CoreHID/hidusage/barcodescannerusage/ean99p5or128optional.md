@@ -1,7 +1,8 @@
 # HIDUsage.BarcodeScannerUsage.ean99P5Or128Optional
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 15.0+

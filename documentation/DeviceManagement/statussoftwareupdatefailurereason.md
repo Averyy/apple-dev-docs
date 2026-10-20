@@ -1,7 +1,8 @@
 # StatusSoftwareUpdateFailureReason
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The status item that reports the device’s software update failure reason.
 
@@ -15,18 +16,18 @@ The status item that reports the device’s software update failure reason.
 
 ## Declaration
 
-```swift
+```
 object StatusSoftwareUpdateFailureReason
 ```
 
 ## Mentions
 
-- [Deploying software updates using declarative management](deploying-software-updates-using-declarative-management.md)
-- [Phases of software update enforcement](phases-of-software-update-enforcement.md)
+- [Deploying software updates using declarative management](./deploying-software-updates-using-declarative-management.md)
+- [Phases of software update enforcement](./phases-of-software-update-enforcement.md)
 
 #### Discussion
 
-##### Status Item Availability
+##### Status item availability
 
 |  |  |
 | --- | --- |
@@ -37,7 +38,7 @@ object StatusSoftwareUpdateFailureReason
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS |
 | Allowed in user scope | N/A |
 
-##### Status Item Example
+##### Status item example
 
 ```json
 {
@@ -52,7 +53,7 @@ object StatusSoftwareUpdateFailureReason
 ## Topics
 
 ### Objects
-- [object StatusSoftwareUpdateFailureReasonDictionaryObject](statussoftwareupdatefailurereasondictionaryobject.md)
+- [object StatusSoftwareUpdateFailureReasonDictionaryObject](./statussoftwareupdatefailurereasondictionaryobject.md)
   Details about a software update failure.
 
 ## Properties
@@ -61,15 +62,16 @@ object StatusSoftwareUpdateFailureReason
 
 ## See Also
 
-- [object StatusSoftwareUpdateBetaEnrollment](statussoftwareupdatebetaenrollment.md)
+### Software update items
+- [object StatusSoftwareUpdateBetaEnrollment](./statussoftwareupdatebetaenrollment.md)
   The status item that reports the device’s enrolled beta program.
-- [object StatusSoftwareUpdateDeviceID](statussoftwareupdatedeviceid.md)
+- [object StatusSoftwareUpdateDeviceID](./statussoftwareupdatedeviceid.md)
   The status item that reports the device’s software update device ID.
-- [object StatusSoftwareUpdateInstallReason](statussoftwareupdateinstallreason.md)
+- [object StatusSoftwareUpdateInstallReason](./statussoftwareupdateinstallreason.md)
   The status item that reports the device’s pending software update reason.
-- [object StatusSoftwareUpdateInstallState](statussoftwareupdateinstallstate.md)
+- [object StatusSoftwareUpdateInstallState](./statussoftwareupdateinstallstate.md)
   The status item that reports the device’s software update install state.
-- [object StatusSoftwareUpdatePendingVersion](statussoftwareupdatependingversion.md)
+- [object StatusSoftwareUpdatePendingVersion](./statussoftwareupdatependingversion.md)
   The status item that reports the device’s pending software update version.
 
 

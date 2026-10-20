@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asks the delegate to provide the bounding paths for the specified text in your view.
@@ -15,14 +16,22 @@ Asks the delegate to provide the bounding paths for the specified text in your v
 ## Declaration
 
 ```swift
+func writingToolsCoordinator(_ writingToolsCoordinator: UIWritingToolsCoordinator, requestsBoundingBezierPathsFor range: NSRange, in context: UIWritingToolsCoordinator.Context, completion: @escaping @Sendable ([UIBezierPath]) -> Void)
+```
+
+```swift
 func writingToolsCoordinator(_ writingToolsCoordinator: UIWritingToolsCoordinator, boundingBezierPathsFor range: NSRange, context: UIWritingToolsCoordinator.Context) async -> [UIBezierPath]
+```
+
+```objc
+- (void) writingToolsCoordinator:(UIWritingToolsCoordinator *) writingToolsCoordinator requestsBoundingBezierPathsForRange:(NSRange) range inContext:(UIWritingToolsCoordinatorContext *) context completion:(void (^)(NSArray<UIBezierPath *> *)) completion;
 ```
 
 #### Discussion
 
 After applying proofreading marks to your view’s text, Writing Tools lets the person accept or reject individual suggestions. To facilitate interactions, the coordinator asks your delegate to provide one or more Bezier paths that surround those proofreading suggestions. For each distinct range of text with a suggestion, it calls this method to get the Bezier paths that surround the corresponding text.
 
-After you determine the location of the specified range of text in your view’s text storage, call the [`enumerateTextSegments(in:type:options:using:)`](https://developer.apple.com/documentation/appkit/nstextlayoutmanager/enumeratetextsegments(in:type:options:using:)) method of your view’s [`NSTextLayoutManager`](nstextlayoutmanager.md) to compute the selection rectangles for that text. That method finds the text segments that contain the text and returns the frame rectangle for each one. Create a Bezier path for each rectangle, and convert the coordinates of each path to the coordinate space of the view in your coordinator’s [`decorationContainerView`](uiwritingtoolscoordinator/decorationcontainerview.md) property. Pass the resulting paths to the completion handler.
+After you determine the location of the specified range of text in your view’s text storage, call the [`enumerateTextSegments(in:type:options:using:)`](../../../AppKit/nstextlayoutmanager/enumeratetextsegments%28in,type,options,using%29.md) method of your view’s [`NSTextLayoutManager`](../../nstextlayoutmanager.md) to compute the selection rectangles for that text. That method finds the text segments that contain the text and returns the frame rectangle for each one. Create a Bezier path for each rectangle, and convert the coordinates of each path to the coordinate space of the view in your coordinator’s [`decorationContainerView`](../decorationcontainerview.md) property. Pass the resulting paths to the completion handler.
 
 ## Parameters
 
@@ -33,9 +42,10 @@ After you determine the location of the specified range of text in your view’s
 
 ## See Also
 
-- [func writingToolsCoordinator(UIWritingToolsCoordinator, requestsUnderlinePathsFor: NSRange, in: UIWritingToolsCoordinator.Context, completion: ([UIBezierPath]) -> Void)](uiwritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:requestsunderlinepathsfor:in:completion:).md)
+### Displaying proofreading marks
+- [func writingToolsCoordinator(UIWritingToolsCoordinator, requestsUnderlinePathsFor: NSRange, in: UIWritingToolsCoordinator.Context, completion: ([UIBezierPath]) -> Void)](./writingtoolscoordinator%28_,requestsunderlinepathsfor,in,completion%29.md)
   Asks the delegate to provide an underline shape for the specified text during a proofreading session.
-- [func writingToolsCoordinator(UIWritingToolsCoordinator, requestsRangeInContextWithIdentifierFor: CGPoint, completion: (NSRange, UUID) -> Void)](uiwritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:requestsrangeincontextwithidentifierfor:completion:).md)
+- [func writingToolsCoordinator(UIWritingToolsCoordinator, requestsRangeInContextWithIdentifierFor: CGPoint, completion: (NSRange, UUID) -> Void)](./writingtoolscoordinator%28_,requestsrangeincontextwithidentifierfor,completion%29.md)
   Asks the delegate to provide the location of the character at the specified point in your view’s coordinate system.
 
 

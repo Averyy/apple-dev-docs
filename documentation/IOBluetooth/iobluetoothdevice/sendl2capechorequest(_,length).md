@@ -1,17 +1,22 @@
 # sendL2CAPEchoRequest(_:length:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Send an echo request over the L2CAP connection to a remote device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func sendL2CAPEchoRequest(_ data: UnsafeMutableRawPointer!, length: UInt16) -> IOReturn
+```
+
+```objc
+- (IOReturn) sendL2CAPEchoRequest:(void *) data length:(UInt16) length;
 ```
 
 #### Return Value

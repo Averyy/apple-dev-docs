@@ -1,7 +1,8 @@
 # whenUserSignsOut
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an object representing a deferred or asynchronous operation that resolves when the user signs out.
 
@@ -10,17 +11,17 @@ Returns an object representing a deferred or asynchronous operation that resolve
 
 ## Declaration
 
-```swift
+```
 Promise<Undefined, CloudKit.CKError> whenUserSignsOut();
 ```
 
 #### Return Value
 
-A `Promise` object that resolves to `Undefined` when the user signs out, or rejects to a [`CKError`](cloudkit/ckerror.md) object.
+A `Promise` object that resolves to `Undefined` when the user signs out, or rejects to a [`CKError`](../cloudkit/ckerror.md) object.
 
 #### Discussion
 
-Use the [`whenUserSignsOut`](cloudkit.container/whenusersignsout.md) method to call a function when the user signs out.
+Use the [`whenUserSignsOut`](./whenusersignsout.md) method to call a function when the user signs out.
 
 ```javascript
 myContainer.whenUserSignsOut().then(function() {
@@ -30,9 +31,10 @@ myContainer.whenUserSignsOut().then(function() {
 
 ## See Also
 
-- [setUpAuth](cloudkit.container/setupauth.md)
+### Authenticating Users
+- [setUpAuth](./setupauth.md)
   Determines whether a user is signed in and presents an appropriate sign in or sign out button.
-- [whenUserSignsIn](cloudkit.container/whenusersignsin.md)
+- [whenUserSignsIn](./whenusersignsin.md)
   Returns an object representing a deferred or asynchronous operation that resolves when the user signs in.
 
 

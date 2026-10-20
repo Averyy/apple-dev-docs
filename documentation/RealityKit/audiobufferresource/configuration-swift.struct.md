@@ -1,7 +1,8 @@
 # AudioBufferResource.Configuration
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -20,21 +21,21 @@ struct Configuration
 ## Topics
 
 ### Initializers
-- [init(shouldLoop: Bool, shouldRandomizeStartTime: Bool, normalization: AudioResource.Normalization?, calibration: AudioResource.Calibration?, mixGroupName: String?)](audiobufferresource/configuration-swift.struct/init(shouldloop:shouldrandomizestarttime:normalization:calibration:mixgroupname:).md)
+- [init(shouldLoop: Bool, shouldRandomizeStartTime: Bool, normalization: AudioResource.Normalization?, calibration: AudioResource.Calibration?, mixGroupName: String?)](./configuration-swift.struct/init%28shouldloop,shouldrandomizestarttime,normalization,calibration,mixgroupname%29.md)
 ### Instance Properties
-- [var calibration: AudioResource.Calibration?](audiobufferresource/configuration-swift.struct/calibration.md)
-- [var mixGroupName: String?](audiobufferresource/configuration-swift.struct/mixgroupname.md)
-- [var normalization: AudioResource.Normalization?](audiobufferresource/configuration-swift.struct/normalization.md)
-- [var shouldLoop: Bool](audiobufferresource/configuration-swift.struct/shouldloop.md)
-- [var shouldRandomizeStartTime: Bool](audiobufferresource/configuration-swift.struct/shouldrandomizestarttime.md)
+- [var calibration: AudioResource.Calibration?](./configuration-swift.struct/calibration.md)
+- [var mixGroupName: String?](./configuration-swift.struct/mixgroupname.md)
+- [var normalization: AudioResource.Normalization?](./configuration-swift.struct/normalization.md)
+- [var shouldLoop: Bool](./configuration-swift.struct/shouldloop.md)
+- [var shouldRandomizeStartTime: Bool](./configuration-swift.struct/shouldrandomizestarttime.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

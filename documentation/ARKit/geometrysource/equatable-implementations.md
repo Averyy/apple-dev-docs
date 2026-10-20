@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: ARKit
+**Framework**: ARKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (GeometrySource, GeometrySource) -> Bool](geometrysource/==(_:_:).md)
+- [static func == (GeometrySource, GeometrySource) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two geometry sources are equal.
 
 

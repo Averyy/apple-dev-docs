@@ -1,14 +1,15 @@
 # init(content:)
 
 **Framework**: IdentityDocumentServicesUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an ISO 18013 mobile document raw request scene.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 

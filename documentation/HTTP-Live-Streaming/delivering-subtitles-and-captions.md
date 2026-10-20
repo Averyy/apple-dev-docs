@@ -1,6 +1,7 @@
 # Delivering WebVTT subtitles and captions in HLS
 
-**Framework**: HTTP Live Streaming
+**Framework**: HTTP Live Streaming  
+**Role**: Article
 
 Add WebVTT subtitle and caption tracks to your HTTP Live Streaming (HLS) streams, and declare their absence when a stream doesn’t carry captions.
 
@@ -16,7 +17,7 @@ The following sample stream variant declares that no closed captions are availab
 #EXT-X-STREAM-INF:BANDWIDTH=2500000,RESOLUTION=1920x1080,CODECS="avc1.4d401f,mp4a.40.2",CLOSED-CAPTIONS=NONE
 ```
 
-#### Configure Subtitle Tracks in the Multivariant Playlist
+#### Configure subtitle tracks in the multivariant playlist
 
 The following attributes apply to `EXT-X-MEDIA` tags with `TYPE=SUBTITLES` in your multivariant playlist:
 
@@ -31,7 +32,7 @@ The following attributes apply to `EXT-X-MEDIA` tags with `TYPE=SUBTITLES` in yo
 | 7 | `AUTOSELECT` | Auto-selects based on device language | No, but recommended | `YES`/`NO` |
 | 8 | `FORCED` | Indicates forced subtitles | If applicable | `YES`/`NO` |
 
-#### Synchronize Subtitle Timing with Video Segments
+#### Synchronize subtitle timing with video segments
 
 Follow these guidelines to keep subtitle cues aligned with the audio and video timeline:
 
@@ -39,7 +40,7 @@ Follow these guidelines to keep subtitle cues aligned with the audio and video t
 - **Overlap handling**: Avoid overlapping cue times.
 - **Precision**: Align cue start and end times to the actual audio boundaries; WebVTT timestamps use millisecond precision (HH:MM:SS.mmm).
 
-#### Format Caption Text for Readability
+#### Format caption text for readability
 
 Follow these general accessibility guidelines when you author caption text, as targets rather than hard HLS requirements:
 
@@ -50,17 +51,17 @@ Follow these general accessibility guidelines when you author caption text, as t
 
 ## See Also
 
-- [Authoring multivariant and media playlists](multivariant-and-media-playlists.md)
+- [Authoring multivariant and media playlists](./multivariant-and-media-playlists.md)
   Author the HTTP Live Streaming (HLS) multivariant and media playlists that Apple Podcasts requires, with the tags and attributes each playlist uses.
-- [Encoding media for HLS](encoding-media.md)
+- [Encoding media for HLS](./encoding-media.md)
   Encode audio and video for HTTP Live Streaming (HLS) delivery to Apple Podcasts.
-- [Configuring delivery for HLS](configuring-delivery.md)
+- [Configuring delivery for HLS](./configuring-delivery.md)
   Format media URLs and origin domain access for HTTP Live Streaming (HLS) delivery to Apple Podcasts.
-- [Delivering ad interstitials in podcast streams](delivering-ad-interstitials.md)
+- [Delivering ad interstitials in podcast streams](./delivering-ad-interstitials.md)
   Insert ad interstitials into HTTP Live Streaming (HLS) media playlists.
-- [Reviewing sample playlists and validating streams](examples-and-validation.md)
+- [Reviewing sample playlists and validating streams](./examples-and-validation.md)
   Reference sample multivariant and video-on-demand (VOD) media playlists, and validate your HTTP Live Streaming (HLS) streams with Media Stream Validator.
-- [Handling downloads and playback](downloads-and-playback.md)
+- [Handling downloads and playback](./downloads-and-playback.md)
   Handle Apple Podcasts’ download and playback behavior, including hybrid audio/video streaming, non-video modes, and user-agent identification.
 
 

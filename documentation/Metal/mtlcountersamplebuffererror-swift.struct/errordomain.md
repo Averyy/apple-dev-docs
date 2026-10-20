@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The current counter sample buffer error domain.
 
@@ -21,7 +22,8 @@ static var errorDomain: String { get }
 
 ## See Also
 
-- [let MTLCounterErrorDomain: String](mtlcountererrordomain.md)
+### Error domain
+- [let MTLCounterErrorDomain: String](../mtlcountererrordomain.md)
   The domain for Metal counter sample buffer errors.
 
 

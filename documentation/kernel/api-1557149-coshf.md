@@ -1,24 +1,26 @@
 # coshf
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 float coshf(float);
 ```
 
 ## See Also
 
-- [cos](1557361-cos.md)
-- [cosf](1532192-cosf.md)
-- [cosh](1557145-cosh.md)
-- [coshl](1557214-coshl.md)
-- [cosl](1557255-cosl.md)
+### Cosine
+- [cos](./api-1557361-cos.md)
+- [cosf](./api-1532192-cosf.md)
+- [cosh](./api-1557145-cosh.md)
+- [coshl](./api-1557214-coshl.md)
+- [cosl](./api-1557255-cosl.md)
 
 
 ---

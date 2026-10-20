@@ -1,7 +1,8 @@
 # init(ianaName:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance from the name of the IANA registry “charset”.
 

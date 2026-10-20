@@ -1,7 +1,8 @@
 # locale
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The locale to use when formatting items in the list.
 
@@ -20,13 +21,18 @@ The locale to use when formatting items in the list.
 var locale: Locale! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) NSLocale * locale;
+```
+
 #### Discussion
 
-The default value is [`autoupdatingCurrent`](nslocale/autoupdatingcurrent.md). If you set this property to `nil`, the formatter resets to using [`autoupdatingCurrent`](nslocale/autoupdatingcurrent.md).
+The default value is [`autoupdatingCurrent`](../nslocale/autoupdatingcurrent.md). If you set this property to `nil`, the formatter resets to using [`autoupdatingCurrent`](../nslocale/autoupdatingcurrent.md).
 
 ## See Also
 
-- [var itemFormatter: Formatter?](listformatter/itemformatter.md)
+### Configuring Formatter Options
+- [var itemFormatter: Formatter?](./itemformatter.md)
   An object that formats each item in the list.
 
 

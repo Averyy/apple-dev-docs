@@ -1,7 +1,8 @@
 # ActionEvent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The structure returned to all action event handlers.
 
@@ -25,39 +26,40 @@ Actions perform their function within one or more custom event handlers associat
 
 The event structure contains useful information for an action to perform its function when an action event is raised.
 
-> ❗ **Important**: Do not store [`ActionEvent`](actionevent.md) instances beyond the event handler’s scope. The event contains references (like `actionStatus`) that are only valid during the callback. Storing the event and accessing it later results in undefined behavior.
+> ❗ **Important**: Do not store [`ActionEvent`](./actionevent.md) instances beyond the event handler’s scope. The event contains references (like `actionStatus`) that are only valid during the callback. Storing the event and accessing it later results in undefined behavior.
 
 ## Topics
 
 ### Instance Properties
-- [let action: ActionType](actionevent/action.md)
+- [let action: ActionType](./actionevent/action.md)
   The action parameter data that remains constant across one or more events intervals defined for the action animation.
-- [var animationState: (any AnimationStateProtocol)?](actionevent/animationstate.md)
+- [var animationState: (any AnimationStateProtocol)?](./actionevent/animationstate.md)
   The animation state for the action.
-- [let duration: TimeInterval](actionevent/duration.md)
+- [let duration: TimeInterval](./actionevent/duration.md)
   The duration of the the event.
-- [var entity: Entity?](actionevent/entity.md)
+- [var entity: Entity?](./actionevent/entity.md)
   The entity that owns the `BehaviorTreeComponent` and initiated this action.
-- [let parameter: ActionType.EventParameterType?](actionevent/parameter.md)
+- [let parameter: ActionType.EventParameterType?](./actionevent/parameter.md)
   The event parameter data that can vary for each event.
-- [let playbackController: AnimationPlaybackController](actionevent/playbackcontroller.md)
+- [let playbackController: AnimationPlaybackController](./actionevent/playbackcontroller.md)
   The animation playback controller that manages the animation executing the action.
-- [let reversed: Bool](actionevent/reversed.md)
+- [let reversed: Bool](./actionevent/reversed.md)
   A Boolean value that indicates reverse playback when true.
-- [let startTime: TimeInterval](actionevent/starttime.md)
+- [let startTime: TimeInterval](./actionevent/starttime.md)
   The start time of the current event.
-- [let targetEntity: Entity?](actionevent/targetentity.md)
+- [let targetEntity: Entity?](./actionevent/targetentity.md)
   The entity the bind target references.
 
 ## See Also
 
-- [struct AnimationState](animationstate.md)
+### Action events
+- [struct AnimationState](./animationstate.md)
   The concretely typed animation state structure.
-- [struct ActionEventType](actioneventtype.md)
+- [struct ActionEventType](./actioneventtype.md)
   A set of events that an action responds to.
-- [struct ActionEventDefinition](actioneventdefinition.md)
+- [struct ActionEventDefinition](./actioneventdefinition.md)
   Defines an action event interval, and any associated parameters.
-- [protocol AnimationStateProtocol](animationstateprotocol.md)
+- [protocol AnimationStateProtocol](./animationstateprotocol.md)
   The protocol representing the current animation state of an action animation.
 
 

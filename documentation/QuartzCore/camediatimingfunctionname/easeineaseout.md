@@ -1,7 +1,8 @@
 # easeInEaseOut
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Ease-in-ease-out pacing, which causes an animation to begin slowly, accelerate through the middle of its duration, and then slow again before completing.
 
@@ -19,6 +20,10 @@ Ease-in-ease-out pacing, which causes an animation to begin slowly, accelerate t
 static let easeInEaseOut: CAMediaTimingFunctionName
 ```
 
+```c
+extern CAMediaTimingFunctionName const kCAMediaTimingFunctionEaseInEaseOut;
+```
+
 #### Discussion
 
 This is a Bézier timing function with the control points (0.42,0.0) and (0.58,1.0).
@@ -34,17 +39,18 @@ verticalAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFun
 
 A layer animated with the animation created by the code above and with linearly interpolated horizontal movement would describe a path similar to the following figure.
 
-![Path taken using ease-in-ease-out timing function](/images/com.apple.quartzcore/media-2776818@2x.png)
+![Path taken using ease-in-ease-out timing function](https://developer.apple.com/tutorials/images/com.apple.quartzcore/media-2776818@2x.png)
 
 ## See Also
 
-- [static let linear: CAMediaTimingFunctionName](camediatimingfunctionname/linear.md)
+### Constants
+- [static let linear: CAMediaTimingFunctionName](./linear.md)
   Linear pacing, which causes an animation to occur evenly over its duration.
-- [static let easeIn: CAMediaTimingFunctionName](camediatimingfunctionname/easein.md)
+- [static let easeIn: CAMediaTimingFunctionName](./easein.md)
   Ease-in pacing, which causes an animation to begin slowly and then speed up as it progresses.
-- [static let easeOut: CAMediaTimingFunctionName](camediatimingfunctionname/easeout.md)
+- [static let easeOut: CAMediaTimingFunctionName](./easeout.md)
   Ease-out pacing, which causes an animation to begin quickly and then slow as it progresses.
-- [static let `default`: CAMediaTimingFunctionName](camediatimingfunctionname/default.md)
+- [static let `default`: CAMediaTimingFunctionName](./default.md)
   The system default timing function. Use this function to ensure that the timing of your animations matches that of most system animations.
 
 

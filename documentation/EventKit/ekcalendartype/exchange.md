@@ -1,17 +1,18 @@
 # EKCalendarType.exchange
 
 **Framework**: EventKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An Exchange calendar.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,15 +20,20 @@ An Exchange calendar.
 case exchange
 ```
 
+```c
+EKCalendarTypeExchange
+```
+
 ## See Also
 
-- [EKCalendarType.local](ekcalendartype/local.md)
+### Constants
+- [EKCalendarType.local](./local.md)
   A local calendar.
-- [EKCalendarType.calDAV](ekcalendartype/caldav.md)
+- [EKCalendarType.calDAV](./caldav.md)
   A CalDAV or iCloud calendar.
-- [EKCalendarType.subscription](ekcalendartype/subscription.md)
+- [EKCalendarType.subscription](./subscription.md)
   A locally subscribed calendar.
-- [EKCalendarType.birthday](ekcalendartype/birthday.md)
+- [EKCalendarType.birthday](./birthday.md)
   A birthday calendar.
 
 

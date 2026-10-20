@@ -1,7 +1,8 @@
 # DisclosureGroup
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that shows or hides another content view, based on the state of a disclosure control.
 
@@ -21,7 +22,7 @@ struct DisclosureGroup<Label, Content> where Label : View, Content : View
 
 ## Mentions
 
-- [Displaying data in lists](displaying-data-in-lists.md)
+- [Displaying data in lists](./displaying-data-in-lists.md)
 
 #### Overview
 
@@ -51,25 +52,26 @@ var body: some View {
 ## Topics
 
 ### Creating a disclosure group
-- [init(_:content:)](disclosuregroup/init(_:content:).md)
+- [init(_:content:)](./disclosuregroup/init%28_,content%29.md)
   Creates a disclosure group, using a provided localized string resource to create a text view for the label.
-- [init(content: () -> Content, label: () -> Label)](disclosuregroup/init(content:label:).md)
+- [init(content: () -> Content, label: () -> Label)](./disclosuregroup/init%28content,label%29.md)
   Creates a disclosure group with the given label and content views.
-- [init(_:isExpanded:content:)](disclosuregroup/init(_:isexpanded:content:).md)
+- [init(_:isExpanded:content:)](./disclosuregroup/init%28_,isexpanded,content%29.md)
   Creates a disclosure group, using a provided localized string resource to create a text view for the label, and a binding to the expansion state (expanded or collapsed).
-- [init(isExpanded: Binding<Bool>, content: () -> Content, label: () -> Label)](disclosuregroup/init(isexpanded:content:label:).md)
+- [init(isExpanded: Binding<Bool>, content: () -> Content, label: () -> Label)](./disclosuregroup/init%28isexpanded,content,label%29.md)
   Creates a disclosure group with the given label and content views, and a binding to the expansion state (expanded or collapsed).
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct OutlineGroup](outlinegroup.md)
+### Disclosing information progressively
+- [struct OutlineGroup](./outlinegroup.md)
   A structure that computes views and disclosure groups on demand from an underlying collection of tree-structured, identified data.
-- [func disclosureGroupStyle<S>(S) -> some View](view/disclosuregroupstyle(_:).md)
+- [func disclosureGroupStyle<S>(S) -> some View](./view/disclosuregroupstyle%28_%29.md)
   Sets the style for disclosure groups within this view.
 
 

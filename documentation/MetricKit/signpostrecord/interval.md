@@ -1,7 +1,8 @@
 # interval
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Time interval for the signpost For instant signposts, start and end are the same (duration == 0)
 

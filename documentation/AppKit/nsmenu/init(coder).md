@@ -1,10 +1,11 @@
 # init(coder:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 init(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init(title: String)](nsmenu/init(title:).md)
+### Creating an NSMenu Object
+- [init(title: String)](./init%28title%29.md)
   Initializes and returns a menu having the specified title and with autoenabling of menu items turned on.
 
 

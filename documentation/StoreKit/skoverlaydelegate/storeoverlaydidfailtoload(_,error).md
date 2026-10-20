@@ -1,7 +1,8 @@
 # storeOverlayDidFailToLoad(_:error:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates that an overlay failed to load.
 
@@ -15,6 +16,10 @@ Indicates that an overlay failed to load.
 
 ```swift
 optional func storeOverlayDidFailToLoad(_ overlay: SKOverlay, error: any Error)
+```
+
+```objc
+- (void) storeOverlay:(SKOverlay *) overlay didFailToLoadWithError:(NSError *) error;
 ```
 
 #### Discussion

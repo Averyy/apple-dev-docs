@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an asset path from a string identifier.
 

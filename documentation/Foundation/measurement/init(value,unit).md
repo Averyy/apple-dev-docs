@@ -1,7 +1,8 @@
 # init(value:unit:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a `Measurement` given a specified value and unit.
 

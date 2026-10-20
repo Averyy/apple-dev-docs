@@ -1,7 +1,8 @@
 # VNVideoProcessor.Cadence
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that defines the cadence at which to process video.
 
@@ -19,29 +20,34 @@ An object that defines the cadence at which to process video.
 class Cadence
 ```
 
+```objc
+@interface VNVideoProcessorCadence : NSObject
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [VNVideoProcessor.FrameRateCadence](vnvideoprocessor/frameratecadence.md)
-- [VNVideoProcessor.TimeIntervalCadence](vnvideoprocessor/timeintervalcadence.md)
+- [VNVideoProcessor.FrameRateCadence](./frameratecadence.md)
+- [VNVideoProcessor.TimeIntervalCadence](./timeintervalcadence.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var cadence: VNVideoProcessor.Cadence?](vnvideoprocessor/requestprocessingoptions/cadence.md)
+### Configuring Options
+- [var cadence: VNVideoProcessor.Cadence?](./requestprocessingoptions/cadence.md)
   The cadence the video processor maintains to process the request.
-- [VNVideoProcessor.FrameRateCadence](vnvideoprocessor/frameratecadence.md)
+- [VNVideoProcessor.FrameRateCadence](./frameratecadence.md)
   An object that defines a frame-based cadence for processing a video stream.
-- [VNVideoProcessor.TimeIntervalCadence](vnvideoprocessor/timeintervalcadence.md)
+- [VNVideoProcessor.TimeIntervalCadence](./timeintervalcadence.md)
   An object that defines a time-based cadence for processing a video stream.
 
 

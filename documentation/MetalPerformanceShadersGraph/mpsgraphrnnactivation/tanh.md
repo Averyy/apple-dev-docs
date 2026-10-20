@@ -1,7 +1,8 @@
 # MPSGraphRNNActivation.tanh
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Defines a Tanh activation.
 
@@ -17,6 +18,10 @@ Defines a Tanh activation.
 
 ```swift
 case tanh
+```
+
+```c
+MPSGraphRNNActivationTanh
 ```
 
 

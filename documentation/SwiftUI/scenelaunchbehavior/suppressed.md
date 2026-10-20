@@ -1,7 +1,8 @@
 # suppressed
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The suppressed behavior. The scene will not present itself in the absence of any previously restored scenes.
 

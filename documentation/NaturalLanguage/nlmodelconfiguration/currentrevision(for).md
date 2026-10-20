@@ -1,7 +1,8 @@
 # currentRevision(for:)
 
 **Framework**: Natural Language  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the current Natural Language framework version in the OS.
 
@@ -20,21 +21,26 @@ Returns the current Natural Language framework version in the OS.
 class func currentRevision(for type: NLModel.ModelType) -> Int
 ```
 
+```objc
++ (NSUInteger) currentRevisionForType:(NLModelType) type;
+```
+
 #### Return Value
 
 A version number.
 
 ## See Also
 
-- [var language: NLLanguage?](nlmodelconfiguration/language.md)
+### Accessing the configuration
+- [var language: NLLanguage?](./language.md)
   The language the model supports.
-- [var revision: Int](nlmodelconfiguration/revision.md)
+- [var revision: Int](./revision.md)
   The version of the Natural Language framework that trained the model.
-- [class func supportedRevisions(for: NLModel.ModelType) -> IndexSet](nlmodelconfiguration/supportedrevisions(for:).md)
+- [class func supportedRevisions(for: NLModel.ModelType) -> IndexSet](./supportedrevisions%28for%29.md)
   Returns the versions of the Natural Language framework the OS supports.
-- [var type: NLModel.ModelType](nlmodelconfiguration/type.md)
+- [var type: NLModel.ModelType](./type.md)
   The natural language model type of the model.
-- [NLModel.ModelType](nlmodel/modeltype.md)
+- [NLModel.ModelType](../nlmodel/modeltype.md)
   The different types of a natural language model.
 
 

@@ -1,7 +1,8 @@
 # ATSFontGetHorizontalMetrics(_:_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.1+ - Deprecated in 13.1
@@ -10,6 +11,10 @@
 
 ```swift
 func ATSFontGetHorizontalMetrics(_ iFont: ATSFontRef, _ iOptions: ATSOptionFlags, _ oMetrics: UnsafeMutablePointer<ATSFontMetrics>!) -> OSStatus
+```
+
+```c
+OSStatus ATSFontGetHorizontalMetrics(ATSFontRef iFont, ATSOptionFlags iOptions, ATSFontMetrics *oMetrics);
 ```
 
 

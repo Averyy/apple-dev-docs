@@ -1,7 +1,8 @@
 # strides
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines strides for spatial dimensions. Must be four numbers, one for each spatial dimension, fastest running index last.
 
@@ -17,6 +18,10 @@ Defines strides for spatial dimensions. Must be four numbers, one for each spati
 
 ```swift
 var strides: [NSNumber] { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite) NSArray<NSNumber *> * strides;
 ```
 
 #### Discussion

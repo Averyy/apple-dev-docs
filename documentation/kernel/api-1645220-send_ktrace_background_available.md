@@ -1,14 +1,15 @@
 # send_ktrace_background_available
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t send_ktrace_background_available(mach_port_t ktrace_background_port);
 ```
 

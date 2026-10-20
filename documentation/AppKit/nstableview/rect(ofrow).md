@@ -1,17 +1,22 @@
 # rect(ofRow:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the rectangle containing the row at the specified index.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func rect(ofRow row: Int) -> NSRect
+```
+
+```objc
+- (NSRect) rectOfRow:(NSInteger) row;
 ```
 
 #### Return Value
@@ -20,7 +25,7 @@ The rectangle containing the row at `rowIndex`. Returns `NSZeroRect` if `rowInde
 
 #### Discussion
 
-You can use this method to update a single row more efficiently than sending the table view a [`reloadData()`](nstableview/reloaddata().md) message.
+You can use this method to update a single row more efficiently than sending the table view a [`reloadData()`](./reloaddata%28%29.md) message.
 
 ```objc
 [aTableView setNeedsDisplayInRect:[aTableView rectOfRow:row]];
@@ -28,31 +33,32 @@ You can use this method to update a single row more efficiently than sending the
 
 ## See Also
 
-- [var userInterfaceLayoutDirection: NSUserInterfaceLayoutDirection](nstableview/userinterfacelayoutdirection.md)
+### Layout Support
+- [var userInterfaceLayoutDirection: NSUserInterfaceLayoutDirection](./userinterfacelayoutdirection.md)
   The layout direction of the user interface.
-- [func rect(ofColumn: Int) -> NSRect](nstableview/rect(ofcolumn:).md)
+- [func rect(ofColumn: Int) -> NSRect](./rect%28ofcolumn%29.md)
   Returns the rectangle containing the column at the specified index.
-- [func rows(in: NSRect) -> NSRange](nstableview/rows(in:).md)
+- [func rows(in: NSRect) -> NSRange](./rows%28in%29.md)
   Returns a range of indexes for the rows that lie wholly or partially within the vertical boundaries of the specified rectangle.
-- [func columnIndexes(in: NSRect) -> IndexSet](nstableview/columnindexes(in:).md)
+- [func columnIndexes(in: NSRect) -> IndexSet](./columnindexes%28in%29.md)
   Returns the indexes of the table view’s columns that intersect the specified rectangle.
-- [func column(at: NSPoint) -> Int](nstableview/column(at:).md)
+- [func column(at: NSPoint) -> Int](./column%28at%29.md)
   Returns the index of the column the specified point lies in.
-- [func row(at: NSPoint) -> Int](nstableview/row(at:).md)
+- [func row(at: NSPoint) -> Int](./row%28at%29.md)
   Returns the index of the row the specified point lies in.
-- [func frameOfCell(atColumn: Int, row: Int) -> NSRect](nstableview/frameofcell(atcolumn:row:).md)
+- [func frameOfCell(atColumn: Int, row: Int) -> NSRect](./frameofcell%28atcolumn,row%29.md)
   Returns a rectangle locating the cell that lies at the intersection of the specified column and row.
-- [var columnAutoresizingStyle: NSTableView.ColumnAutoresizingStyle](nstableview/columnautoresizingstyle-swift.property.md)
+- [var columnAutoresizingStyle: NSTableView.ColumnAutoresizingStyle](./columnautoresizingstyle-swift.property.md)
   The table view’s column autoresizing style.
-- [func sizeLastColumnToFit()](nstableview/sizelastcolumntofit.md)
+- [func sizeLastColumnToFit()](./sizelastcolumntofit%28%29.md)
   Resizes the last column so the table view fits exactly within its enclosing clip view.
-- [func noteNumberOfRowsChanged()](nstableview/notenumberofrowschanged.md)
+- [func noteNumberOfRowsChanged()](./notenumberofrowschanged%28%29.md)
   Informs the table view that the number of records in its data source has changed.
-- [func tile()](nstableview/tile.md)
+- [func tile()](./tile%28%29.md)
   Properly sizes the table view and its header view and marks it as needing display.
-- [func sizeToFit()](nstableview/sizetofit.md)
+- [func sizeToFit()](./sizetofit%28%29.md)
   Sizes the  table view based on a uniform column autoresizing style.
-- [func noteHeightOfRows(withIndexesChanged: IndexSet)](nstableview/noteheightofrows(withindexeschanged:).md)
+- [func noteHeightOfRows(withIndexesChanged: IndexSet)](./noteheightofrows%28withindexeschanged%29.md)
   Informs the table view that the rows specified in `indexSet` have changed height.
 
 

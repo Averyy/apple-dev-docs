@@ -1,18 +1,21 @@
 # edgesIgnoringSafeArea(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the view’s proposed area to extend outside the screen’s safe areas.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.0+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.2
+- tvOS 13.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 6.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`ignoresSafeArea(_:edges:)`](./ignoressafearea%28_,edges%29.md) instead.
 
 ## Declaration
 
@@ -42,7 +45,7 @@ VStack {
 .border(Color.gray)
 ```
 
-![A screenshot showing a view whose bounds exceed the safe area of the screen.](/images/com.apple.SwiftUI/SwiftUI-View-edgesIgnoringSafeArea@2x.png)
+![A screenshot showing a view whose bounds exceed the safe area of the screen.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-edgesIgnoringSafeArea@2x.png)
 
 Depending on the surrounding view hierarchy, SwiftUI may not honor an `edgesIgnoringSafeArea(_:)` request. This can happen, for example, if the view is inside a container that respects the screen’s safe area. In that case you may need to apply `edgesIgnoringSafeArea(_:)` to the container instead.
 
@@ -52,9 +55,10 @@ Depending on the surrounding view hierarchy, SwiftUI may not honor an `edgesIgno
 
 ## See Also
 
-- [func frame() -> some View](view/frame.md)
+### Layout modifiers
+- [func frame() -> some View](./frame%28%29.md)
   Positions this view within an invisible frame.
-- [func coordinateSpace<T>(name: T) -> some View](view/coordinatespace(name:).md)
+- [func coordinateSpace<T>(name: T) -> some View](./coordinatespace%28name%29.md)
   Assigns a name to the view’s coordinate space, so other code can operate on dimensions like points and sizes relative to the named space.
 
 

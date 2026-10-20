@@ -1,7 +1,8 @@
 # init(data:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a key from the given data.
 
@@ -26,7 +27,8 @@ init<D>(data: D) where D : ContiguousBytes
 
 ## See Also
 
-- [init(size: SymmetricKeySize)](symmetrickey/init(size:).md)
+### Creating a key
+- [init(size: SymmetricKeySize)](./init%28size%29.md)
   Generates a new random key of the given size.
 
 

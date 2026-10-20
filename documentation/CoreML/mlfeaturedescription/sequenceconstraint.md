@@ -1,7 +1,8 @@
 # sequenceConstraint
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The constraints for a sequence feature.
 
@@ -20,23 +21,28 @@ The constraints for a sequence feature.
 var sequenceConstraint: MLSequenceConstraint? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) MLSequenceConstraint * sequenceConstraint;
+```
+
 ## See Also
 
-- [var stateConstraint: MLStateConstraint?](mlfeaturedescription/stateconstraint.md)
+### Accessing feature constraints
+- [var stateConstraint: MLStateConstraint?](./stateconstraint.md)
   The state feature value constraint.
-- [var imageConstraint: MLImageConstraint?](mlfeaturedescription/imageconstraint.md)
+- [var imageConstraint: MLImageConstraint?](./imageconstraint.md)
   The size and format constraints for an image feature.
-- [class MLImageConstraint](mlimageconstraint.md)
+- [class MLImageConstraint](../mlimageconstraint.md)
   The width, height, and pixel format constraints of an image feature.
-- [var dictionaryConstraint: MLDictionaryConstraint?](mlfeaturedescription/dictionaryconstraint.md)
+- [var dictionaryConstraint: MLDictionaryConstraint?](./dictionaryconstraint.md)
   The constraint for a dictionary feature.
-- [class MLDictionaryConstraint](mldictionaryconstraint.md)
+- [class MLDictionaryConstraint](../mldictionaryconstraint.md)
   The constraint on the keys for a dictionary feature.
-- [var multiArrayConstraint: MLMultiArrayConstraint?](mlfeaturedescription/multiarrayconstraint.md)
+- [var multiArrayConstraint: MLMultiArrayConstraint?](./multiarrayconstraint.md)
   The constraints on a multidimensional array feature.
-- [class MLMultiArrayConstraint](mlmultiarrayconstraint.md)
+- [class MLMultiArrayConstraint](../mlmultiarrayconstraint.md)
   The shape and data type constraints for a multidimensional array feature.
-- [class MLSequenceConstraint](mlsequenceconstraint.md)
+- [class MLSequenceConstraint](../mlsequenceconstraint.md)
   The constraints for a sequence feature.
 
 

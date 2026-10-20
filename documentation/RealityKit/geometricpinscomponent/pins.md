@@ -1,7 +1,8 @@
 # pins
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sequence of geometric pins the component owns.
 

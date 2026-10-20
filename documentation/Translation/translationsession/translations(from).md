@@ -1,7 +1,8 @@
 # translations(from:)
 
 **Framework**: Translation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Translates multiple strings of text of the same language, returning the results all at once when complete.
 
@@ -25,7 +26,7 @@ An array of responses containing the text translations matching the order they w
 
 This function translates multiple strings as a batch and might display different UI depending on the state of the translation. The app doesn’t need to install the required languages before calling this method.
 
-Pass in the strings of text you want to translate as an array of the [`TranslationSession.Request`](translationsession/request.md) type. To create requests for attributed strings, use `Request/init(sourceText:clientIdentifier:)-(AttributedString)`. This method takes longer to return than [`translate(batch:)`](translationsession/translate(batch:).md), but it has the advantage of not mapping translation requests to responses. The responses return in the same order the requests are sent.
+Pass in the strings of text you want to translate as an array of the [`TranslationSession.Request`](./request.md) type. To create requests for attributed strings, use `Request/init(sourceText:clientIdentifier:)-(AttributedString)`. This method takes longer to return than [`translate(batch:)`](./translate%28batch%29.md), but it has the advantage of not mapping translation requests to responses. The responses return in the same order the requests are sent.
 
 If the required languages for translation have already downloaded and the source language is clear, this function returns results without showing any further prompts to the person.
 
@@ -39,12 +40,12 @@ This function throws an `Error` if:
 
 - The person doesn’t agree to downloading the languages
 - The person dismisses the progress view during language downloads
-- [`TranslationSession`](translationsession.md)  fails system validation
+- [`TranslationSession`](../translationsession.md)  fails system validation
 - The session doesn’t allow requesting downloads and languages aren’t installed
 - You already cancelled the session
 - Something goes wrong during translation
 
-If a person dismisses the progress view while the languages download, the system throws a [`userCancelled`](https://developer.apple.com/documentation/foundation/cocoaerror/code/usercancelled) error, and the languages continue to download in the background.
+If a person dismisses the progress view while the languages download, the system throws a [`userCancelled`](../../Foundation/cocoaerror/code/usercancelled.md) error, and the languages continue to download in the background.
 
 > **Note**: Calls to this function can take several minutes while languages download.
 
@@ -54,17 +55,18 @@ If a person dismisses the progress view while the languages download, the system
 
 ## See Also
 
-- [func translate(AttributedString) async throws -> TranslationSession.Response](translationsession/translate(_:)-59zi2.md)
+### Translating the text
+- [func translate(AttributedString) async throws -> TranslationSession.Response](./translate%28_%29-59zi2.md)
   Translates a formatted string of text, preserving formatting in the translation.
-- [func translate(String) async throws -> TranslationSession.Response](translationsession/translate(_:)-4m20l.md)
+- [func translate(String) async throws -> TranslationSession.Response](./translate%28_%29-4m20l.md)
   Translates a single string of text.
-- [func translate(batch: [TranslationSession.Request]) -> TranslationSession.BatchResponse](translationsession/translate(batch:).md)
+- [func translate(batch: [TranslationSession.Request]) -> TranslationSession.BatchResponse](./translate%28batch%29.md)
   Translates multiple strings of text of the same language, returning a sequence of responses as they’re available.
-- [TranslationSession.Request](translationsession/request.md)
+- [TranslationSession.Request](./request.md)
   A translation request containing a single item of text to translate.
-- [TranslationSession.Response](translationsession/response.md)
+- [TranslationSession.Response](./response.md)
   The response to a translation request.
-- [TranslationSession.BatchResponse](translationsession/batchresponse.md)
+- [TranslationSession.BatchResponse](./batchresponse.md)
   A type that provides asynchronous access to translation responses.
 
 

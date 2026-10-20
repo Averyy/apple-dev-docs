@@ -1,7 +1,8 @@
 # init(audioSession:)
 
 **Framework**: Core Haptics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a haptic engine from an audio session.
 
@@ -19,19 +20,24 @@ Creates a haptic engine from an audio session.
 init(audioSession: AVAudioSession?) throws
 ```
 
+```objc
+- (instancetype) initWithAudioSession:(AVAudioSession *) audioSession error:(NSError **) error;
+```
+
 #### Discussion
 
-Create your haptic engine with this initializer if you want the audio behavior of your engine to match other audio APIs in your app. For example, if you’re using [`AVAudioSession`](https://developer.apple.com/documentation/avfaudio/avaudiosession) to manage audio elsewhere in your app, then you want to share the session’s [`sharedInstance()`](https://developer.apple.com/documentation/avfaudio/avaudiosession/sharedinstance()). In this case, the engine mutes and routes audio in accordance with the passed session.
+Create your haptic engine with this initializer if you want the audio behavior of your engine to match other audio APIs in your app. For example, if you’re using [`AVAudioSession`](../../AVFAudio/avaudiosession.md) to manage audio elsewhere in your app, then you want to share the session’s [`sharedInstance()`](../../AVFAudio/avaudiosession/sharedinstance%28%29.md). In this case, the engine mutes and routes audio in accordance with the passed session.
 
-Otherwise, if you don’t pass it a session, it won’t behave the same way as elsewhere in app; audio behaves like [`UIKit`](https://developer.apple.com/documentation/uikit), without syncing to a specific session. You should pass `nil` when you need the engine only for playing haptics.
+Otherwise, if you don’t pass it a session, it won’t behave the same way as elsewhere in app; audio behaves like [UIKit](../../UIKit/UIKit.md), without syncing to a specific session. You should pass `nil` when you need the engine only for playing haptics.
 
 ## Parameters
 
-- `audioSession`: The shared audio session, if you’re already using one in your app, to sync with the created engine. For example, pass in [`sharedInstance()`](https://developer.apple.com/documentation/avfaudio/avaudiosession/sharedinstance()) if you’re using audio from [`AVAudioSession`](https://developer.apple.com/documentation/avfaudio/avaudiosession). Pass in `nil` to use default [`UIKit`](https://developer.apple.com/documentation/uikit) audio behavior.
+- `audioSession`: The shared audio session, if you’re already using one in your app, to sync with the created engine. For example, pass in [`sharedInstance()`](../../AVFAudio/avaudiosession/sharedinstance%28%29.md) if you’re using audio from [`AVAudioSession`](../../AVFAudio/avaudiosession.md). Pass in `nil` to use default [UIKit](../../UIKit/UIKit.md) audio behavior.
 
 ## See Also
 
-- [init() throws](chhapticengine/init.md)
+### Initializing a Haptic Engine
+- [init() throws](./init%28%29.md)
   Creates an instance of the haptic engine.
 
 

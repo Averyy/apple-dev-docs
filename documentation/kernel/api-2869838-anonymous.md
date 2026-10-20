@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,7 +18,7 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [THREAD_CALL_OPTIONS_ONCE](2869838-anonymous/thread_call_options_once.md)
+- [THREAD_CALL_OPTIONS_ONCE](./api-2869838-anonymous/thread_call_options_once.md)
 
 
 ---

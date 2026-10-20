@@ -1,15 +1,20 @@
 # NSPathControl.Style.popUp
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case popUp
+```
+
+```c
+NSPathStylePopUp
 ```
 
 #### Discussion
@@ -18,7 +23,8 @@ The pop-up display style and behavior. Only the last path component is displayed
 
 ## See Also
 
-- [NSPathControl.Style.standard](nspathcontrol/style/standard.md)
+### Constants
+- [NSPathControl.Style.standard](./standard.md)
 
 
 ---

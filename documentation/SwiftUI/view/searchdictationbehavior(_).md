@@ -1,7 +1,8 @@
 # searchDictationBehavior(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the dictation behavior for any search fields configured by the searchable modifier.
 
@@ -20,15 +21,16 @@ func searchDictationBehavior(_ dictationBehavior: TextInputDictationBehavior) ->
 
 #### Discussion
 
-By default, search fields on visionOS will automatically start dictation when looking at the dictation button in the search field. You can change this behavior by providing a value of [`preventDictation`](textinputdictationbehavior/preventdictation.md) to this modifier.
+By default, search fields on visionOS will automatically start dictation when looking at the dictation button in the search field. You can change this behavior by providing a value of [`preventDictation`](../textinputdictationbehavior/preventdictation.md) to this modifier.
 
-See the [`TextInputDictationBehavior`](textinputdictationbehavior.md) type for more information on the available dictation behaviors.
+See the [`TextInputDictationBehavior`](../textinputdictationbehavior.md) type for more information on the available dictation behaviors.
 
 ## See Also
 
-- [struct TextInputDictationActivation](textinputdictationactivation.md)
+### Dictating text
+- [struct TextInputDictationActivation](../textinputdictationactivation.md)
   A configuration that determines what starts dictation in a search field.
-- [struct TextInputDictationBehavior](textinputdictationbehavior.md)
+- [struct TextInputDictationBehavior](../textinputdictationbehavior.md)
   A behavior that determines whether a search field offers dictation, and what starts it.
 
 

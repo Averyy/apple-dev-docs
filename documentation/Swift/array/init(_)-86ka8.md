@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Constructs an Array with the elements of an MLUntypedColumn.
 
@@ -19,9 +20,12 @@ Constructs an Array with the elements of an MLUntypedColumn.
 init(_ untypedColumn: MLUntypedColumn)
 ```
 
+Available when `Element` is `MLDataValue`.
+
 ## See Also
 
-- [init(MLDataColumn<Element>)](array/init(_:)-2ln1a.md)
+### Converting Between Arrays and Create ML Types
+- [init(MLDataColumn<Element>)](./init%28_%29-2ln1a.md)
   Constructs an Array with the elements of a DataColumn.
 
 

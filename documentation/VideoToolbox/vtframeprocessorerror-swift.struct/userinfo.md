@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user-info dictionary for an error that was bridged from NSError.
 
@@ -21,9 +22,10 @@ var userInfo: [String : Any] { get }
 
 ## See Also
 
-- [var code: Self.Code](vtframeprocessorerror-swift.struct/code-swift.property.md)
-- [var errorCode: Int](vtframeprocessorerror-swift.struct/errorcode.md)
-- [var errorUserInfo: [String : Any]](vtframeprocessorerror-swift.struct/erroruserinfo.md)
+### Error information
+- [var code: Self.Code](./code-swift.property.md)
+- [var errorCode: Int](./errorcode.md)
+- [var errorUserInfo: [String : Any]](./erroruserinfo.md)
 
 
 ---

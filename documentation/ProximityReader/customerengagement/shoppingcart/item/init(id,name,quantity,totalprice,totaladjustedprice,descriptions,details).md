@@ -1,7 +1,8 @@
 # init(id:name:quantity:totalPrice:totalAdjustedPrice:descriptions:details:)
 
 **Framework**: ProximityReader  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+

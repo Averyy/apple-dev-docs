@@ -1,7 +1,8 @@
 # significandBitCount
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The available number of fractional significand bits.
 

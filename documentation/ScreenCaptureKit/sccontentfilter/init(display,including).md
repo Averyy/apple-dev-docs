@@ -1,7 +1,8 @@
 # init(display:including:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a filter that captures only specific windows from a display.
 
@@ -15,6 +16,10 @@ Creates a filter that captures only specific windows from a display.
 init(display: SCDisplay, including includedWindows: [SCWindow])
 ```
 
+```objc
+- (instancetype) initWithDisplay:(SCDisplay *) display includingWindows:(NSArray<SCWindow *> *) includedWindows;
+```
+
 ## Parameters
 
 - `display`: A display to capture.
@@ -22,13 +27,14 @@ init(display: SCDisplay, including includedWindows: [SCWindow])
 
 ## See Also
 
-- [init(desktopIndependentWindow: SCWindow)](sccontentfilter/init(desktopindependentwindow:).md)
+### Creating a filter
+- [init(desktopIndependentWindow: SCWindow)](./init%28desktopindependentwindow%29.md)
   Creates a filter that captures only the specified window.
-- [init(display: SCDisplay, excludingWindows: [SCWindow])](sccontentfilter/init(display:excludingwindows:).md)
+- [init(display: SCDisplay, excludingWindows: [SCWindow])](./init%28display,excludingwindows%29.md)
   Creates a filter that captures the contents of a display, excluding the specified windows.
-- [init(display: SCDisplay, including: [SCRunningApplication], exceptingWindows: [SCWindow])](sccontentfilter/init(display:including:exceptingwindows:).md)
+- [init(display: SCDisplay, including: [SCRunningApplication], exceptingWindows: [SCWindow])](./init%28display,including,exceptingwindows%29.md)
   Creates a filter that captures a display, including only windows of the specified apps.
-- [init(display: SCDisplay, excludingApplications: [SCRunningApplication], exceptingWindows: [SCWindow])](sccontentfilter/init(display:excludingapplications:exceptingwindows:).md)
+- [init(display: SCDisplay, excludingApplications: [SCRunningApplication], exceptingWindows: [SCWindow])](./init%28display,excludingapplications,exceptingwindows%29.md)
   Creates a filter that captures a display, excluding windows of the specified apps.
 
 

@@ -1,12 +1,13 @@
 # NSTabView.TabType.topTabsBezelBorder
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The view includes tabs on the top of the view and has a bezeled border (the default).
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ The view includes tabs on the top of the view and has a bezeled border (the defa
 case topTabsBezelBorder
 ```
 
+```c
+NSTopTabsBezelBorder
+```
+
 ## See Also
 
-- [NSTabView.TabType.noTabsBezelBorder](nstabview/tabtype/notabsbezelborder.md)
+### Constants
+- [NSTabView.TabType.noTabsBezelBorder](./notabsbezelborder.md)
   The view does not include tabs and has a bezeled border.
-- [NSTabView.TabType.noTabsLineBorder](nstabview/tabtype/notabslineborder.md)
+- [NSTabView.TabType.noTabsLineBorder](./notabslineborder.md)
   The view does not include tabs and has a lined border.
-- [NSTabView.TabType.noTabsNoBorder](nstabview/tabtype/notabsnoborder.md)
+- [NSTabView.TabType.noTabsNoBorder](./notabsnoborder.md)
   The view does not include tabs and has no border.
-- [NSTabView.TabType.bottomTabsBezelBorder](nstabview/tabtype/bottomtabsbezelborder.md)
+- [NSTabView.TabType.bottomTabsBezelBorder](./bottomtabsbezelborder.md)
   Tabs are on the bottom of the view with a bezeled border.
-- [NSTabView.TabType.leftTabsBezelBorder](nstabview/tabtype/lefttabsbezelborder.md)
+- [NSTabView.TabType.leftTabsBezelBorder](./lefttabsbezelborder.md)
   Tabs are on the left of the view with a bezeled border.
-- [NSTabView.TabType.rightTabsBezelBorder](nstabview/tabtype/righttabsbezelborder.md)
+- [NSTabView.TabType.rightTabsBezelBorder](./righttabsbezelborder.md)
   Tabs are on the right of the view with a bezeled border.
 
 

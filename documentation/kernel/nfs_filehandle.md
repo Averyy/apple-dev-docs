@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct nfs_filehandle {
     ...
 };
@@ -17,10 +17,10 @@ struct nfs_filehandle {
 ## Topics
 
 ### Instance Properties
-- [nfh_fhp](nfs_filehandle/3944824-nfh_fhp.md)
-- [nfh_fid](nfs_filehandle/3944825-nfh_fid.md)
-- [nfh_len](nfs_filehandle/3944826-nfh_len.md)
-- [nfh_xh](nfs_filehandle/3944827-nfh_xh.md)
+- [nfh_fhp](./nfs_filehandle/api-3944824-nfh_fhp.md)
+- [nfh_fid](./nfs_filehandle/api-3944825-nfh_fid.md)
+- [nfh_len](./nfs_filehandle/api-3944826-nfh_len.md)
+- [nfh_xh](./nfs_filehandle/api-3944827-nfh_xh.md)
 
 
 ---

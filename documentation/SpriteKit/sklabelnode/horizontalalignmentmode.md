@@ -1,18 +1,19 @@
 # horizontalAlignmentMode
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The horizontal position of the text within the node.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,21 +21,26 @@ The horizontal position of the text within the node.
 var horizontalAlignmentMode: SKLabelHorizontalAlignmentMode { get set }
 ```
 
+```objc
+@property (nonatomic) SKLabelHorizontalAlignmentMode horizontalAlignmentMode;
+```
+
 ## Mentions
 
-- [Adding Text to a Scene](adding-text-to-a-scene.md)
+- [Adding Text to a Scene](../adding-text-to-a-scene.md)
 
 #### Discussion
 
-The possible values for this property are listed in [`SKLabelHorizontalAlignmentMode`](sklabelhorizontalalignmentmode.md). The default value of this property is [`SKLabelHorizontalAlignmentMode.center`](sklabelhorizontalalignmentmode/center.md).
+The possible values for this property are listed in [`SKLabelHorizontalAlignmentMode`](../sklabelhorizontalalignmentmode.md). The default value of this property is [`SKLabelHorizontalAlignmentMode.center`](../sklabelhorizontalalignmentmode/center.md).
 
 ## See Also
 
-- [var verticalAlignmentMode: SKLabelVerticalAlignmentMode](sklabelnode/verticalalignmentmode.md)
+### Controlling a Label’s Alignment
+- [var verticalAlignmentMode: SKLabelVerticalAlignmentMode](./verticalalignmentmode.md)
   The vertical position of the text within the node.
-- [enum SKLabelVerticalAlignmentMode](sklabelverticalalignmentmode.md)
+- [enum SKLabelVerticalAlignmentMode](../sklabelverticalalignmentmode.md)
   Options for aligning text vertically.
-- [enum SKLabelHorizontalAlignmentMode](sklabelhorizontalalignmentmode.md)
+- [enum SKLabelHorizontalAlignmentMode](../sklabelhorizontalalignmentmode.md)
   Options for aligning text horizontally.
 
 

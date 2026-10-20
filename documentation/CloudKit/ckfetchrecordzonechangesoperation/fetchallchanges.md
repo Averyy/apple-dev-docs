@@ -1,7 +1,8 @@
 # fetchAllChanges
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to send repeated requests to the server.
 
@@ -20,19 +21,24 @@ A Boolean value that indicates whether to send repeated requests to the server.
 var fetchAllChanges: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL fetchAllChanges;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the operation sends repeat requests to the server until it fetches all changes. CloudKit executes the handler you set on the [`recordZoneFetchResultBlock`](ckfetchrecordzonechangesoperation/recordzonefetchresultblock.md) property with a change token after each request.
+If [`true`](../../Swift/true.md), the operation sends repeat requests to the server until it fetches all changes. CloudKit executes the handler you set on the [`recordZoneFetchResultBlock`](./recordzonefetchresultblock.md) property with a change token after each request.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var configurationsByRecordZoneID: [CKRecordZone.ID : CKFetchRecordZoneChangesOperation.ZoneConfiguration]?](ckfetchrecordzonechangesoperation/configurationsbyrecordzoneid.md)
+### Configuring the Zone Change Operation
+- [var configurationsByRecordZoneID: [CKRecordZone.ID : CKFetchRecordZoneChangesOperation.ZoneConfiguration]?](./configurationsbyrecordzoneid.md)
   A dictionary of configurations for fetching change operations by zone identifier.
-- [CKFetchRecordZoneChangesOperation.ZoneConfiguration](ckfetchrecordzonechangesoperation/zoneconfiguration.md)
+- [CKFetchRecordZoneChangesOperation.ZoneConfiguration](./zoneconfiguration.md)
   A configuration object that describes the information to fetch from a record zone.
-- [var recordZoneIDs: [CKRecordZone.ID]?](ckfetchrecordzonechangesoperation/recordzoneids.md)
+- [var recordZoneIDs: [CKRecordZone.ID]?](./recordzoneids.md)
   The IDs of the record zones that contain the records to fetch.
 
 

@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 Action action;
 ```
 
@@ -15,12 +15,13 @@ The action method called when an event has been delivered
 
 ## See Also
 
-- [workLoop](ioeventsource/workloop.md)
-- [reserved](ioeventsource/reserved.md)
-- [refcon](ioeventsource/refcon.md)
-- [owner](ioeventsource/owner.md)
-- [eventChainNext](ioeventsource/eventchainnext.md)
-- [enabled](ioeventsource/enabled.md)
+### Instance Variables
+- [workLoop](./workloop.md)
+- [reserved](./reserved.md)
+- [refcon](./refcon.md)
+- [owner](./owner.md)
+- [eventChainNext](./eventchainnext.md)
+- [enabled](./enabled.md)
 
 
 ---

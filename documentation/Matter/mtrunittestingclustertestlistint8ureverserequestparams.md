@@ -1,7 +1,8 @@
 # MTRUnitTestingClusterTestListInt8UReverseRequestParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.4+
@@ -18,27 +19,31 @@
 class MTRUnitTestingClusterTestListInt8UReverseRequestParams
 ```
 
+```objc
+@interface MTRUnitTestingClusterTestListInt8UReverseRequestParams : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var arg1: [Any]](mtrunittestingclustertestlistint8ureverserequestparams/arg1.md)
-- [var serverSideProcessingTimeout: NSNumber?](mtrunittestingclustertestlistint8ureverserequestparams/serversideprocessingtimeout.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrunittestingclustertestlistint8ureverserequestparams/timedinvoketimeoutms.md)
+- [var arg1: [Any]](./mtrunittestingclustertestlistint8ureverserequestparams/arg1.md)
+- [var serverSideProcessingTimeout: NSNumber?](./mtrunittestingclustertestlistint8ureverserequestparams/serversideprocessingtimeout.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrunittestingclustertestlistint8ureverserequestparams/timedinvoketimeoutms.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MTRTestClusterClusterTestListInt8UReverseRequestParams](mtrtestclusterclustertestlistint8ureverserequestparams.md)
+- [MTRTestClusterClusterTestListInt8UReverseRequestParams](./mtrtestclusterclustertestlistint8ureverserequestparams.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

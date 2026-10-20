@@ -1,7 +1,8 @@
 # sampleBufferAttachments
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of counter sample buffer attachments that you configure for a blit pass.
 
@@ -19,9 +20,13 @@ An array of counter sample buffer attachments that you configure for a blit pass
 var sampleBufferAttachments: MTLBlitPassSampleBufferAttachmentDescriptorArray { get }
 ```
 
+```objc
+@property (readonly) MTLBlitPassSampleBufferAttachmentDescriptorArray * sampleBufferAttachments;
+```
+
 #### Discussion
 
-See [`Sampling GPU data into counter sample buffers`](sampling-gpu-data-into-counter-sample-buffers.md) for more context about configuring this property. That article is one of a series of articles in [`GPU counters and counter sample buffers`](gpu-counters-and-counter-sample-buffers.md).
+See [Sampling GPU data into counter sample buffers](../sampling-gpu-data-into-counter-sample-buffers.md) for more context about configuring this property. That article is one of a series of articles in [GPU counters and counter sample buffers](../gpu-counters-and-counter-sample-buffers.md).
 
 
 ---

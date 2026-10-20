@@ -1,10 +1,11 @@
 # init(serverResponseOpCode:headerDataPtr:headerDataLength:flags:constants:)
 
 **Framework**: IOBluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

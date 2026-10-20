@@ -1,14 +1,15 @@
 # thread_wakeup_nthreads_prim
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t thread_wakeup_nthreads_prim(event_t event, uint32_t nthreads, wait_result_t result);
 ```
 

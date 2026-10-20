@@ -1,44 +1,46 @@
 # IOHistogramReporter
 
 **Framework**: DriverKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 class IOHistogramReporter;
 ```
 
 ## Topics
 
 ### Instance Methods
-- [addChannel](iohistogramreporter/addchannel.md)
-- [initWith](iohistogramreporter/initwith.md)
-- [overrideBucketValues](iohistogramreporter/overridebucketvalues.md)
-- [tallyValue](iohistogramreporter/tallyvalue.md)
+- [addChannel](./iohistogramreporter/addchannel.md)
+- [initWith](./iohistogramreporter/initwith.md)
+- [overrideBucketValues](./iohistogramreporter/overridebucketvalues.md)
+- [tallyValue](./iohistogramreporter/tallyvalue.md)
 ### Type Methods
-- [with](iohistogramreporter/with.md)
+- [with](./iohistogramreporter/with.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOReporter](ioreporter.md)
+- [IOReporter](./ioreporter.md)
 
 ## See Also
 
-- [IOReportLegend](ioreportlegend.md)
-- [IOReporter](ioreporter.md)
-- [IOServiceStateNotificationDispatchSource](ioservicestatenotificationdispatchsource.md)
-- [IOSimpleReporter](iosimplereporter.md)
-- [IOStateReporter](iostatereporter.md)
-- [OSBundle](osbundle.md)
-- [OSMappedFile](osmappedfile.md)
+### Classes
+- [IOReportLegend](./ioreportlegend.md)
+- [IOReporter](./ioreporter.md)
+- [IOServiceStateNotificationDispatchSource](./ioservicestatenotificationdispatchsource.md)
+- [IOSimpleReporter](./iosimplereporter.md)
+- [IOStateReporter](./iostatereporter.md)
+- [OSBundle](./osbundle.md)
+- [OSMappedFile](./osmappedfile.md)
 
 
 ---

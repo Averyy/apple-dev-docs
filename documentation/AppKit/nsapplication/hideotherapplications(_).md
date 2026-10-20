@@ -1,17 +1,22 @@
 # hideOtherApplications(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hides all apps, except the receiver.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func hideOtherApplications(_ sender: Any?)
+```
+
+```objc
+- (void) hideOtherApplications:(id) sender;
 ```
 
 ## Parameters
@@ -20,7 +25,8 @@ func hideOtherApplications(_ sender: Any?)
 
 ## See Also
 
-- [func unhideAllApplications(Any?)](nsapplication/unhideallapplications(_:).md)
+### Hiding apps
+- [func unhideAllApplications(Any?)](./unhideallapplications%28_%29.md)
   Unhides all apps, including the receiver.
 
 

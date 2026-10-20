@@ -6,23 +6,6 @@ url: https://ml-explore.github.io/mlx-data/build/html/python/_autosummary/mlx.da
 
 # mlx.data.datasets.load_wikitext_lines
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.data.datasets.load_wikitext_lines.rst)
-- **
-
-.pdf
-
-**
-
-# mlx.data.datasets.load_wikitext_lines
-
- Table of contents 
-
-## Contents
-
-# mlx.data.datasets.load_wikitext_lines
-
 **mlx.data.datasets.load_wikitext_lines(*root=None*, *split='train'*, *subset='wikitext-103-raw'*, *quiet=False*, *validate_download=True*)**
 : Fetch the WikiText dataset and load it as a stream of lines.
 
@@ -34,5 +17,3 @@ none is given the `~/.cache/mlx.data/wikitext` is used.
 **subset** ([str](https://docs.python.org/3/library/stdtypes.html#str)) – The subset to use. It should be one of wikitext-103,
 wikitext-103-raw, wikitext-2, wikitext-2-raw . (default: wikitext-103-raw)
 **quiet** ([bool](https://docs.python.org/3/library/functions.html#bool)) – If true do not show progress bars.
-
-** Contents

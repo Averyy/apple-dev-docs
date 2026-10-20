@@ -1,7 +1,8 @@
 # states
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptions of the function’s states.
 

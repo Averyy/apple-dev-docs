@@ -1,7 +1,8 @@
 # UCCreateCollator(_:_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an object encapsulating locale and collation information, for the purpose of performing Unicode string comparison.
 
@@ -14,15 +15,19 @@ Creates an object encapsulating locale and collation information, for the purpos
 func UCCreateCollator(_ locale: LocaleRef!, _ opVariant: LocaleOperationVariant, _ options: UCCollateOptions, _ collatorRef: UnsafeMutablePointer<CollatorRef?>!) -> OSStatus
 ```
 
-#### Return_value
+```c
+OSStatus UCCreateCollator(LocaleRef locale, LocaleOperationVariant opVariant, UCCollateOptions options, CollatorRef *collatorRef);
+```
+
+#### Return Value
 
 A result code.  The function can return memory errors and `paramErr`, for example, if the `collatorRef` parameter is `NULL`. It can also return resource errors in Mac OS 9 and CarbonLib.
 
 #### Discussion
 
-To perform Unicode string comparison, you must supply locale and collation specifications to a collation function such as  [`UCCompareText(_:_:_:_:_:_:_:)`](1390642-uccomparetext.md). You provide this information by means of a collator object, created via the `UCCreateCollator` function. When finished with the collator object, you dispose of it using the function  [`UCDisposeCollator(_:)`](1390435-ucdisposecollator.md). 
+To perform Unicode string comparison, you must supply locale and collation specifications to a collation function such as  [`UCCompareText(_:_:_:_:_:_:_:)`](./api-1390642-uccomparetext.md). You provide this information by means of a collator object, created via the `UCCreateCollator` function. When finished with the collator object, you dispose of it using the function  [`UCDisposeCollator(_:)`](./api-1390435-ucdisposecollator.md). 
 
-##### 1770072
+##### Special Considerations
 
 The collator object is allocated in the current heap. This function can move memory.
 
@@ -35,17 +40,18 @@ The collator object is allocated in the current heap. This function can move mem
 
 ## See Also
 
-- [func UCCompareText(CollatorRef!, UnsafePointer<UniChar>!, Int, UnsafePointer<UniChar>!, Int, UnsafeMutablePointer<DarwinBoolean>!, UnsafeMutablePointer<Int32>!) -> OSStatus](1390642-uccomparetext.md)
+### Comparing Unicode Strings
+- [func UCCompareText(CollatorRef!, UnsafePointer<UniChar>!, Int, UnsafePointer<UniChar>!, Int, UnsafeMutablePointer<DarwinBoolean>!, UnsafeMutablePointer<Int32>!) -> OSStatus](./api-1390642-uccomparetext.md)
   Uses locale-specific collation information to compare Unicode strings.
-- [func UCGetCollationKey(CollatorRef!, UnsafePointer<UniChar>!, Int, Int, UnsafeMutablePointer<Int>!, UnsafeMutablePointer<UCCollationValue>!) -> OSStatus](1390468-ucgetcollationkey.md)
+- [func UCGetCollationKey(CollatorRef!, UnsafePointer<UniChar>!, Int, Int, UnsafeMutablePointer<Int>!, UnsafeMutablePointer<UCCollationValue>!) -> OSStatus](./api-1390468-ucgetcollationkey.md)
   Uses locale-specific collation information to generate a collation key for a Unicode string.
-- [func UCCompareCollationKeys(UnsafePointer<UCCollationValue>!, Int, UnsafePointer<UCCollationValue>!, Int, UnsafeMutablePointer<DarwinBoolean>!, UnsafeMutablePointer<Int32>!) -> OSStatus](1390378-uccomparecollationkeys.md)
+- [func UCCompareCollationKeys(UnsafePointer<UCCollationValue>!, Int, UnsafePointer<UCCollationValue>!, Int, UnsafeMutablePointer<DarwinBoolean>!, UnsafeMutablePointer<Int32>!) -> OSStatus](./api-1390378-uccomparecollationkeys.md)
   Uses collation keys to compare Unicode strings.
-- [func UCDisposeCollator(UnsafeMutablePointer<CollatorRef?>!) -> OSStatus](1390435-ucdisposecollator.md)
+- [func UCDisposeCollator(UnsafeMutablePointer<CollatorRef?>!) -> OSStatus](./api-1390435-ucdisposecollator.md)
   Disposes a collator object.
-- [func UCCompareTextDefault(UCCollateOptions, UnsafePointer<UniChar>!, Int, UnsafePointer<UniChar>!, Int, UnsafeMutablePointer<DarwinBoolean>!, UnsafeMutablePointer<Int32>!) -> OSStatus](1390472-uccomparetextdefault.md)
+- [func UCCompareTextDefault(UCCollateOptions, UnsafePointer<UniChar>!, Int, UnsafePointer<UniChar>!, Int, UnsafeMutablePointer<DarwinBoolean>!, UnsafeMutablePointer<Int32>!) -> OSStatus](./api-1390472-uccomparetextdefault.md)
   Uses the default system locale to compare Unicode strings.
-- [func UCCompareTextNoLocale(UCCollateOptions, UnsafePointer<UniChar>!, Int, UnsafePointer<UniChar>!, Int, UnsafeMutablePointer<DarwinBoolean>!, UnsafeMutablePointer<Int32>!) -> OSStatus](1390513-uccomparetextnolocale.md)
+- [func UCCompareTextNoLocale(UCCollateOptions, UnsafePointer<UniChar>!, Int, UnsafePointer<UniChar>!, Int, UnsafeMutablePointer<DarwinBoolean>!, UnsafeMutablePointer<Int32>!) -> OSStatus](./api-1390513-uccomparetextnolocale.md)
   Uses a fixed, locale-insensitive order to compare Unicode strings.
 
 

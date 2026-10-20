@@ -1,7 +1,8 @@
 # WorldRecenterPhase.began
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The app has begun to fade out. It is not re-positioned yet.
 

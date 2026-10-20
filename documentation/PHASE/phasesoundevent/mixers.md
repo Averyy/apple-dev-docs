@@ -1,7 +1,8 @@
 # mixers
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Nodes in the event tree that control the volume of their child nodes.
 
@@ -19,9 +20,14 @@ Nodes in the event tree that control the volume of their child nodes.
 var mixers: [String : PHASEMixer] { get }
 ```
 
+```objc
+@property (copy, readonly) NSDictionary<NSString *,PHASEMixer *> * mixers;
+```
+
 ## See Also
 
-- [var metaParameters: [String : PHASEMetaParameter]](phasesoundevent/metaparameters.md)
+### Configuring Mixers and Metaparameters
+- [var metaParameters: [String : PHASEMetaParameter]](./metaparameters.md)
   The object’s meta parameters.
 
 

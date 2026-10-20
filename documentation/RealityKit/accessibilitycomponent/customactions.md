@@ -1,7 +1,8 @@
 # customActions
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of custom actions supported by the entity, identified by their localized string key.
 
@@ -11,7 +12,7 @@ An array of custom actions supported by the entity, identified by their localize
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ var customActions: [LocalizedStringResource]
 
 ## See Also
 
-- [var customContent: [AccessibilityComponent.CustomContent]](accessibilitycomponent/customcontent-swift.property.md)
+### Specifying custom data
+- [var customContent: [AccessibilityComponent.CustomContent]](./customcontent-swift.property.md)
   An array of custom content objects that deliver accessibility information.
 
 

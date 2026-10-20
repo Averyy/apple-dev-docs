@@ -1,7 +1,8 @@
 # kMDItemFSSize
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The size, in bytes, of the file on disk. A CFNumber.
 
@@ -12,6 +13,10 @@ The size, in bytes, of the file on disk. A CFNumber.
 
 ```swift
 let kMDItemFSSize: CFString!
+```
+
+```c
+const CFStringRef kMDItemFSSize;
 ```
 
 

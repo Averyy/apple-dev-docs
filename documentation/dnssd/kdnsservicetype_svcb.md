@@ -1,7 +1,8 @@
 # kDNSServiceType_SVCB
 
 **Framework**: dnssd  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var kDNSServiceType_SVCB: Int { get }
+```
+
+```c
+kDNSServiceType_SVCB
 ```
 
 

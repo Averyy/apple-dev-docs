@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text description of the dock accessory state.
 
@@ -19,11 +20,12 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [let name: String](dockaccessory/identifier-swift.struct/name.md)
+### Getting properties
+- [let name: String](./name.md)
   The dock accessory’s name.
-- [let category: DockAccessory.Category](dockaccessory/identifier-swift.struct/category.md)
+- [let category: DockAccessory.Category](./category.md)
   The dock accessory’s category.
-- [let uuid: UUID](dockaccessory/identifier-swift.struct/uuid.md)
+- [let uuid: UUID](./uuid.md)
   The dock accessory’s unique identifier.
 
 

@@ -1,7 +1,8 @@
 # NSFileManagerUploadLocalVersionConflictPolicy.conflictPolicyDefault
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Resolves the conflict using the policy defined by the file provider.
 
@@ -18,9 +19,14 @@ Resolves the conflict using the policy defined by the file provider.
 case conflictPolicyDefault
 ```
 
+```c
+NSFileManagerUploadConflictPolicyDefault
+```
+
 ## See Also
 
-- [NSFileManagerUploadLocalVersionConflictPolicy.conflictPolicyFailOnConflict](nsfilemanageruploadlocalversionconflictpolicy/conflictpolicyfailonconflict.md)
+### Working with conflict policies
+- [NSFileManagerUploadLocalVersionConflictPolicy.conflictPolicyFailOnConflict](./conflictpolicyfailonconflict.md)
   Resolves the conflict by causing the upload to fail.
 
 

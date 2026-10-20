@@ -1,7 +1,8 @@
 # Atan
 
 **Framework**: ShaderGraph  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: ShaderGraph Node
 
 The arctangent of the incoming value in radians.
 
@@ -15,37 +16,118 @@ The arctangent of the incoming value in radians.
 
 #### Parameter Types
 
+**Inverse Tan (half)**:
+
+| Input | Type |
+| --- | --- |
+| `Y Over X` | Half |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Half |
+
+**Inverse Tan (float)**:
+
+| Input | Type |
+| --- | --- |
+| `Y Over X` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Float |
+
+**Inverse Tan (vector4h)**:
+
+| Input | Type |
+| --- | --- |
+| `Y Over X` | Vector4h |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector4h |
+
+**Inverse Tan (vector2f)**:
+
+| Input | Type |
+| --- | --- |
+| `Y Over X` | Vector2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector2f |
+
+**Inverse Tan (vector4f)**:
+
+| Input | Type |
+| --- | --- |
+| `Y Over X` | Vector4f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector4f |
+
+**Inverse Tan (vector3h)**:
+
+| Input | Type |
+| --- | --- |
+| `Y Over X` | Vector3h |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector3h |
+
+**Inverse Tan (vector3f)**:
+
+| Input | Type |
+| --- | --- |
+| `Y Over X` | Vector3f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector3f |
+
+**Inverse Tan (vector2h)**:
+
+| Input | Type |
+| --- | --- |
+| `Y Over X` | Vector2h |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector2h |
+
 ## See Also
 
-- [Add](math/add.md)
+### Nodes
+- [Add](./add.md)
   Adds two values.
-- [Subtract](math/subtract.md)
+- [Subtract](./subtract.md)
   Subtracts two values.
-- [Multiply](math/multiply.md)
+- [Multiply](./multiply.md)
   Multiplies two values.
-- [Divide](math/divide.md)
+- [Divide](./divide.md)
   Divides two values.
-- [Modulo](math/modulo.md)
+- [Modulo](./modulo.md)
   Outputs the remaining fraction after dividing the input by a value and subtracting the integer portion.
-- [Abs](math/abs.md)
+- [Abs](./abs.md)
   Outputs the per-channel absolute value of the input.
-- [Floor](math/floor.md)
+- [Floor](./floor.md)
   Outputs the nearest integer value, per-channel, less than or equal to the incoming values.
-- [Ceiling](math/ceiling.md)
+- [Ceiling](./ceiling.md)
   Outputs the nearest integer value, per-channel, greater than or equal to the incoming values.
-- [Power](math/power.md)
+- [Power](./power.md)
   Raises the incoming value to an exponent.
-- [Sin](math/sin.md)
+- [Sin](./sin.md)
   The sine of the incoming value in radians.
-- [Cos](math/cos.md)
+- [Cos](./cos.md)
   The cosine of the incoming value in radians.
-- [Tan](math/tan.md)
+- [Tan](./tan.md)
   The tangent of the incoming value in radians.
-- [Asin](math/asin.md)
+- [Asin](./asin.md)
   The arcsine of the incoming value in radians.
-- [Acos](math/acos.md)
+- [Acos](./acos.md)
   The arccosine of the incoming value in radians.
-- [Atan2](math/atan2.md)
+- [Atan2](./atan2.md)
   The arctangent of the expression (iny/inx) in radians.
 
 

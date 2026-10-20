@@ -1,7 +1,8 @@
 # USDLayer.Path.Kind.empty
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The path is empty.
 

@@ -1,15 +1,16 @@
 # UIInterfaceOrientation.portrait
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device is in portrait mode, with the device upright and the Home button on the bottom.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -17,15 +18,20 @@ The device is in portrait mode, with the device upright and the Home button on t
 case portrait
 ```
 
+```c
+UIInterfaceOrientationPortrait
+```
+
 ## See Also
 
-- [UIInterfaceOrientation.unknown](uiinterfaceorientation/unknown.md)
+### Orientations
+- [UIInterfaceOrientation.unknown](./unknown.md)
   The orientation of the device is unknown.
-- [UIInterfaceOrientation.portraitUpsideDown](uiinterfaceorientation/portraitupsidedown.md)
+- [UIInterfaceOrientation.portraitUpsideDown](./portraitupsidedown.md)
   The device is in portrait mode but is upside down, with the device upright and the Home button at the top.
-- [UIInterfaceOrientation.landscapeLeft](uiinterfaceorientation/landscapeleft.md)
+- [UIInterfaceOrientation.landscapeLeft](./landscapeleft.md)
   The device is in landscape mode, with the device upright and the Home button on the left.
-- [UIInterfaceOrientation.landscapeRight](uiinterfaceorientation/landscaperight.md)
+- [UIInterfaceOrientation.landscapeRight](./landscaperight.md)
   The device is in landscape mode, with the device upright and the Home button on the right.
 
 

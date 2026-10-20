@@ -1,19 +1,20 @@
 # copyObject
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Obtain the result of the deserialization performed by createFromBytes().
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 OSObjectPtr copyObject();
 ```
 
@@ -27,9 +28,10 @@ Obtain the result of the deserialization performed by createFromBytes().
 
 ## See Also
 
-- [OSCreateObjectFromSerialization](oscreateobjectfromserialization.md)
-- [OSSerializationGetBytes](osserializationgetbytes.md)
-- [finalizeBuffer](osserialization/finalizebuffer.md)
+### Getting the Serialized Content
+- [OSCreateObjectFromSerialization](../oscreateobjectfromserialization.md)
+- [OSSerializationGetBytes](../osserializationgetbytes.md)
+- [finalizeBuffer](./finalizebuffer.md)
   Obtain the result of the serialization performed by createFromObject().
 
 

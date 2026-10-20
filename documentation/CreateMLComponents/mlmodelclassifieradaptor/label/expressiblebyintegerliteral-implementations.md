@@ -1,11 +1,12 @@
 # ExpressibleByIntegerLiteral Implementations
 
-**Framework**: Create ML Components
+**Framework**: Create ML Components  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(integerLiteral: Int)](mlmodelclassifieradaptor/label/init(integerliteral:).md)
+- [init(integerLiteral: Int)](./init%28integerliteral%29.md)
   Creates a Label with an integer literal.
 
 

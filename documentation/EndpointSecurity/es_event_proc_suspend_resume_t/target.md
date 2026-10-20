@@ -1,13 +1,14 @@
 # target
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The process targeted by this event.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,18 @@ The process targeted by this event.
 var target: UnsafeMutablePointer<es_process_t>?
 ```
 
+```c
+es_process_t * target;
+```
+
 ## See Also
 
-- [var type: es_proc_suspend_resume_type_t](es_event_proc_suspend_resume_t/type.md)
+### Inspecting Event Properties
+- [var type: es_proc_suspend_resume_type_t](./type.md)
   The type of event: suspend, resume, or socket shutdown.
-- [struct es_proc_suspend_resume_type_t](es_proc_suspend_resume_type_t.md)
+- [struct es_proc_suspend_resume_type_t](../es_proc_suspend_resume_type_t.md)
   The type of a process suspension or resumption event.
-- [var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)](es_event_proc_suspend_resume_t/reserved.md)
+- [var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)](./reserved.md)
   An unused field reserved for future use.
 
 

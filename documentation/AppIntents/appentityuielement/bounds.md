@@ -1,7 +1,8 @@
 # bounds
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bounds of the content in the view’s local coordinate space.
 

@@ -1,7 +1,8 @@
 # nonSpatial
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A non-spatial video configuration.
 
@@ -21,9 +22,10 @@ static var nonSpatial: AVSpatialVideoConfiguration { get }
 
 ## See Also
 
-- [init()](avspatialvideoconfiguration-swift.struct/init.md)
+### Creating a configuration
+- [init()](./init%28%29.md)
   Initializes an AVSpatialVideoConfiguration instance with all the properties set to nil.
-- [init(formatDescription: CMFormatDescription)](avspatialvideoconfiguration-swift.struct/init(formatdescription:).md)
+- [init(formatDescription: CMFormatDescription)](./init%28formatdescription%29.md)
   Initializes an AVSpatialVideoConfiguration with a format description.
 
 

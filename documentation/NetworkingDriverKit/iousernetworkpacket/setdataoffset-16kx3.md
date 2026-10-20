@@ -1,16 +1,17 @@
 # SetDataOffset
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the offset to the beginning of the packet’s data to the specified value.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t SetDataOffset(uint16_t offset);
 ```
 
@@ -24,11 +25,12 @@ virtual kern_return_t SetDataOffset(uint16_t offset);
 
 ## See Also
 
-- [SetHeadroom](iousernetworkpacket/setheadroom.md)
+### Configuring the Packet State Information
+- [SetHeadroom](./setheadroom.md)
   Changes the number of bytes to reserve at the front of the packet’s buffer to the specified value.
-- [SetLinkHeaderLength](iousernetworkpacket/setlinkheaderlength-9fqmg.md)
+- [SetLinkHeaderLength](./setlinkheaderlength-9fqmg.md)
   Changes the number of bytes to use for the link header to the specified value.
-- [SetDataLength](iousernetworkpacket/setdatalength-788b.md)
+- [SetDataLength](./setdatalength-788b.md)
   Changes the number of bytes of data in the packet to the specified value.
 
 

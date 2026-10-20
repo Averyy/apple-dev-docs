@@ -1,18 +1,21 @@
 # init(selection:label:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a picker that displays a custom label.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 27.2 (renamed: Picker(selection:content:label:))
+- iPadOS 13.0+ - Deprecated in 27.2 (renamed: Picker(selection:content:label:))
+- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: Picker(selection:content:label:))
+- macOS 10.15+ - Deprecated in 27.2 (renamed: Picker(selection:content:label:))
+- tvOS 13.0+ - Deprecated in 27.2 (renamed: Picker(selection:content:label:))
+- visionOS 1.0+ - Deprecated in 27.2 (renamed: Picker(selection:content:label:))
+- watchOS 6.0+ - Deprecated in 27.2 (renamed: Picker(selection:content:label:))
+
+> **Deprecated**: Use [`init(selection:content:label:)`](./init%28selection,content,label%29.md) instead.
 
 ## Declaration
 
@@ -20,6 +23,8 @@ Creates a picker that displays a custom label.
 nonisolated
 init(selection: Binding<SelectionValue>, label: Label, @ContentBuilder content: () -> Content)
 ```
+
+Available when `Label` conforms to `View`, `SelectionValue` conforms to `Hashable`, and `Content` conforms to `View`.
 
 ## Parameters
 
@@ -29,9 +34,10 @@ init(selection: Binding<SelectionValue>, label: Label, @ContentBuilder content: 
 
 ## See Also
 
-- [init(_:selection:content:)](picker/init(_:selection:content:).md)
+### Creating a picker
+- [init(_:selection:content:)](./init%28_,selection,content%29.md)
   Creates a picker that generates its label from a localized string resource.
-- [init(selection: Binding<SelectionValue>, content: () -> Content, label: () -> Label)](picker/init(selection:content:label:).md)
+- [init(selection: Binding<SelectionValue>, content: () -> Content, label: () -> Label)](./init%28selection,content,label%29.md)
   Creates a picker that displays a custom label.
 
 

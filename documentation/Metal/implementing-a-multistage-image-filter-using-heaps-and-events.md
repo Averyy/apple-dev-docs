@@ -1,6 +1,8 @@
 # Implementing a multistage image filter using heaps and events
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Sample Code  
+**Download**: [ImplementingAMultistageImageFilterUsingHeapsAndEvents.zip](https://docs-assets.developer.apple.com/published/3371950c95fa/ImplementingAMultistageImageFilterUsingHeapsAndEvents.zip)
 
 Use events to synchronize access to resources allocated on a heap.
 
@@ -21,25 +23,25 @@ This sample demonstrates:
 - Using aliasing to reduce the amount of memory used for temporary resources
 - Using events to manage dependencies between encoders that produce and consume dynamic textures
 
-![Screenshot of the sample app running to show a filtered image.](/images/com.apple.metal/image-filtering-with-heaps-and-events-1-ImageFilterGraphWithHeapsAndEvents.png)
+![Screenshot of the sample app running to show a filtered image.](https://developer.apple.com/tutorials/images/com.apple.metal/image-filtering-with-heaps-and-events-1-ImageFilterGraphWithHeapsAndEvents.png)
 
-This implementation minimizes memory usage in an orderly fashion for a filter graph with a downsample and Gaussian blur filter. For more information, including implementation details about heaps for static and dynamic textures, see [`Implementing a multistage image filter using heaps and fences`](implementing-a-multistage-image-filter-using-heaps-and-fences.md).
+This implementation minimizes memory usage in an orderly fashion for a filter graph with a downsample and Gaussian blur filter. For more information, including implementation details about heaps for static and dynamic textures, see [Implementing a multistage image filter using heaps and fences](./implementing-a-multistage-image-filter-using-heaps-and-fences.md).
 
-##### Getting Started
+##### Getting started
 
 The Xcode project contains schemes for running the sample on macOS, iOS, or tvOS.  The default scheme is macOS, which runs the sample as is on your Mac.
 
-##### Compare Events with Fences
+##### Compare events with fences
 
-The [`MTLFence`](mtlfence.md) API allows you to specify synchronization points in your app that wait for a workload to complete execution, provided that execution begins *before* a fence is encountered. However, this synchronization mechanism means that your app can’t wait for a workload to complete execution if the execution begins *after* a fence is encountered. A fence can wait for workloads that have already begun, but it can’t wait for future workloads.
+The [`MTLFence`](./mtlfence.md) API allows you to specify synchronization points in your app that wait for a workload to complete execution, provided that execution begins *before* a fence is encountered. However, this synchronization mechanism means that your app can’t wait for a workload to complete execution if the execution begins *after* a fence is encountered. A fence can wait for workloads that have already begun, but it can’t wait for future workloads.
 
 Fences work well in an image filter graph because each filter in the graph is applied sequentially. You can use a fence to wait for one filter to complete execution before you begin executing another.
 
-In contrast, although the [`MTLEvent`](mtlevent.md) API also allows you to specify similar synchronization points in your app, it allows for more flexibility than the `MTLFence` API. Unlike fences, events can wait for workloads that have already begun, as well as future workloads. Additionally, events are specified outside command encoder boundaries, not between the encoded commands of a command encoder. Because the event synchronization mechanism is implemented in the command buffer scheduler, events block workloads at the command buffer level within the GPU. Therefore, command buffers on one queue can execute while a command buffer on another queue is blocked by an event.
+In contrast, although the [`MTLEvent`](./mtlevent.md) API also allows you to specify similar synchronization points in your app, it allows for more flexibility than the `MTLFence` API. Unlike fences, events can wait for workloads that have already begun, as well as future workloads. Additionally, events are specified outside command encoder boundaries, not between the encoded commands of a command encoder. Because the event synchronization mechanism is implemented in the command buffer scheduler, events block workloads at the command buffer level within the GPU. Therefore, command buffers on one queue can execute while a command buffer on another queue is blocked by an event.
 
 Events also work well in an image filter graph because they provide the equivalent functionality of fences. However, events are easier to specify and track because their synchronization mechanism is managed with a discrete signal value that increases monotonically. Using this signal value, events insert a strict execution order between command encoder boundaries in the GPU.
 
-##### Implement an Event Wrapper for Synchronization Routines
+##### Implement an event wrapper for synchronization routines
 
 The sample wraps the `MTLEvent` API in the `AAPLEventWrapper` protocol accessed through an `AAPLSingleDeviceEventWrapper` object. This convenience wrapper encapsulates the main synchronization mechanism, and primarily manages the discrete signal value through the `_signalCounter` variable.
 
@@ -71,9 +73,9 @@ The sample calls the `signal:` method to signal that a workload has completed ex
 }
 ```
 
-> **Note**: You can reimplement this wrapper to support any other type of synchronization primitive, such as [`MTLSharedEvent`](mtlsharedevent.md), [`MTLFence`](mtlfence.md), or CPU-side routines.
+> **Note**: You can reimplement this wrapper to support any other type of synchronization primitive, such as [`MTLSharedEvent`](./mtlsharedevent.md), [`MTLFence`](./mtlfence.md), or CPU-side routines.
 
-##### Manage Dependencies Between Filters
+##### Manage dependencies between filters
 
 The sample uses `_event` to control access to dynamic textures allocated from `_scratchHeap` and prevent GPU race conditions in the filter graph. The event ensures that operations on dynamic textures are completed before the filter graph begins subsequent operations that depend on the result of previous operations.
 
@@ -126,9 +128,9 @@ The second filter, implemented by the sample in `AAPLGaussianBlurFilter`, calls 
 [event wait:commandBuffer];
 ```
 
-![Timeline diagram that shows how an event manages dependencies between filters.](/images/com.apple.metal/image-filtering-with-heaps-and-events-2-EventBetweenFilters.png)
+![Timeline diagram that shows how an event manages dependencies between filters.](https://developer.apple.com/tutorials/images/com.apple.metal/image-filtering-with-heaps-and-events-2-EventBetweenFilters.png)
 
-##### Reuse Memory and Manage Dependencies Within a Filter
+##### Reuse memory and manage dependencies within a filter
 
 The Gaussian blur filter performs a horizontal blur and a vertical blur for each mipmap level of the dynamic texture produced by the downsample filter. For each mipmap level, the sample allocates a temporary texture, `intermediaryTexture`, from the dynamic textures heap.
 
@@ -197,9 +199,9 @@ This memory reuse creates dynamic texture dependencies between mipmap levels. Th
 
 Because the sample already calls the `wait:` method to wait for the downsample filter to complete its work, the sample leverages this same call to wait for any previous mipmap levels to complete their work before beginning a new mipmap level iteration.
 
-![Timeline diagram that shows how an event manages dependencies within a filter.](/images/com.apple.metal/image-filtering-with-heaps-and-events-3-EventWithinFilter.png)
+![Timeline diagram that shows how an event manages dependencies within a filter.](https://developer.apple.com/tutorials/images/com.apple.metal/image-filtering-with-heaps-and-events-3-EventWithinFilter.png)
 
-##### Manage Dependencies Between Frames
+##### Manage dependencies between frames
 
 The sample calls the `wait:` method to wait for the filter graph to complete execution before rendering the filtered image to a drawable.
 
@@ -227,21 +229,22 @@ Finally, the sample calls the `signal:` method to indicate that the frame has be
 [commandBuffer commit];
 ```
 
-![Timeline diagram that shows how an event manages dependencies between frames.](/images/com.apple.metal/image-filtering-with-heaps-and-events-4-EventBetweenFrames.png)
+![Timeline diagram that shows how an event manages dependencies between frames.](https://developer.apple.com/tutorials/images/com.apple.metal/image-filtering-with-heaps-and-events-4-EventBetweenFrames.png)
 
 ## See Also
 
-- [Using argument buffers with resource heaps](using-argument-buffers-with-resource-heaps.md)
+### Resource memory allocation and management
+- [Using argument buffers with resource heaps](./using-argument-buffers-with-resource-heaps.md)
   Reduce CPU overhead by using arrays inside argument buffers and combining them with resource heaps.
-- [Implementing a multistage image filter using heaps and fences](implementing-a-multistage-image-filter-using-heaps-and-fences.md)
+- [Implementing a multistage image filter using heaps and fences](./implementing-a-multistage-image-filter-using-heaps-and-fences.md)
   Use fences to synchronize access to resources allocated on a heap.
-- [protocol MTLHeap](mtlheap.md)
+- [protocol MTLHeap](./mtlheap.md)
   A memory pool from which you can suballocate resources.
-- [class MTLHeapDescriptor](mtlheapdescriptor.md)
+- [class MTLHeapDescriptor](./mtlheapdescriptor.md)
   A configuration that customizes the behavior for a Metal memory heap.
-- [enum MTLHeapType](mtlheaptype.md)
+- [enum MTLHeapType](./mtlheaptype.md)
   The options you use to choose the heap type.
-- [struct MTLSizeAndAlign](mtlsizeandalign.md)
+- [struct MTLSizeAndAlign](./mtlsizeandalign.md)
   The size and alignment of a resource, in bytes.
 
 

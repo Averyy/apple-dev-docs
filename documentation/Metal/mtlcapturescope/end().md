@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells Metal to stop recording command information.
@@ -20,9 +21,14 @@ Tells Metal to stop recording command information.
 func end()
 ```
 
+```objc
+- (void) endScope;
+```
+
 ## See Also
 
-- [func begin()](mtlcapturescope/begin.md)
+### Defining capture scope boundaries
+- [func begin()](./begin%28%29.md)
   Tells Metal to begin recording command information.
 
 

@@ -1,7 +1,8 @@
 # session(_:didUpdate:)
 
 **Framework**: Nearby Interaction  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies you when the session updates nearby objects.
 
@@ -17,21 +18,25 @@ Notifies you when the session updates nearby objects.
 optional func session(_ session: NISession, didUpdate nearbyObjects: [NINearbyObject])
 ```
 
+```objc
+- (void) session:(NISession *) session didUpdateNearbyObjects:(NSArray<__kindof NINearbyObject *> *) nearbyObjects;
+```
+
 ## Mentions
 
-- [Initiating and maintaining a session](initiating-and-maintaining-a-session.md)
+- [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md)
 
 #### Discussion
 
 Implement this callback to receive new nearby object updates for the argument session.
 
-In Swift, if a peer is out of range or line of sight, the delegate reads the [`distance`](ninearbyobject/distance-676dm.md) and [`direction`](ninearbyobject/direction-4qh5w.md) as `nil`. An app can monitor this state and guide a person into range as necessary. For more information, see [`Initiating and maintaining a session`](initiating-and-maintaining-a-session.md).
+In Swift, if a peer is out of range or line of sight, the delegate reads the [`distance`](../ninearbyobject/distance-676dm.md) and [`direction`](../ninearbyobject/direction-4qh5w.md) as `nil`. An app can monitor this state and guide a person into range as necessary. For more information, see [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md).
 
-In Objective-C, if a peer is out of range or line of sight, the delegate reads the [`distance`](ninearbyobject/distance-676dm.md) as [`NINearbyObjectDistanceNotAvailable`](ninearbyobjectdistancenotavailable.md), and [`direction`](ninearbyobject/direction-4qh5w.md) as [`NINearbyObjectDirectionNotAvailable`](ninearbyobjectdirectionnotavailable.md).
+In Objective-C, if a peer is out of range or line of sight, the delegate reads the [`distance`](../ninearbyobject/distance-676dm.md) as [`NINearbyObjectDistanceNotAvailable`](../ninearbyobjectdistancenotavailable.md), and [`direction`](../ninearbyobject/direction-4qh5w.md) as [`NINearbyObjectDirectionNotAvailable`](../ninearbyobjectdirectionnotavailable.md).
 
-An app can monitor this state and guide the user into range as necessary. For more information, see [`Initiating and maintaining a session`](initiating-and-maintaining-a-session.md).
+An app can monitor this state and guide the user into range as necessary. For more information, see [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md).
 
-##### Provide Feedback Based on Proximity
+##### Provide feedback based on proximity
 
 Apps can react to positional information in an interaction session to create spatial awareness. For example, an app can play audio, invoke haptics, or display visual feedback when a peer is nearby. The following code calls two functions: it calls `enableFunctionalityA` when the device achieves a 1.5-meter proximity to the peer device, and `enableFunctionalityB` when the device achieves a 3-meter proximity to the peer device.
 
@@ -71,11 +76,12 @@ func session(_ session: NISession, didUpdate nearbyObjects: [NINearbyObject]) {
 
 ## See Also
 
-- [func session(NISession, didGenerateShareableConfigurationData: Data, for: NINearbyObject)](nisessiondelegate/session(_:didgenerateshareableconfigurationdata:for:).md)
+### Monitoring peers
+- [func session(NISession, didGenerateShareableConfigurationData: Data, for: NINearbyObject)](./session%28_,didgenerateshareableconfigurationdata,for%29.md)
   Provides configuration data to share with a third-party accessory.
-- [func session(NISession, didRemove: [NINearbyObject], reason: NINearbyObject.RemovalReason)](nisessiondelegate/session(_:didremove:reason:).md)
+- [func session(NISession, didRemove: [NINearbyObject], reason: NINearbyObject.RemovalReason)](./session%28_,didremove,reason%29.md)
   Notifies you when the session removes one or more nearby objects.
-- [NINearbyObject.RemovalReason](ninearbyobject/removalreason.md)
+- [NINearbyObject.RemovalReason](../ninearbyobject/removalreason.md)
   The reason a session removed a nearby object.
 
 

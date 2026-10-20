@@ -1,7 +1,8 @@
 # electrodermalActivity
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A quantity sample type that measures electrodermal activity.
 
@@ -19,29 +20,34 @@ A quantity sample type that measures electrodermal activity.
 static let electrodermalActivity: HKQuantityTypeIdentifier
 ```
 
+```c
+extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierElectrodermalActivity;
+```
+
 #### Discussion
 
-Electrodermal activity measures the conductance of the user’s skin. This conductance increases as the activity of the sweat glands increases. These samples use conductance units (described in [`HKUnit`](hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)).
+Electrodermal activity measures the conductance of the user’s skin. This conductance increases as the activity of the sweat glands increases. These samples use conductance units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 
 ## See Also
 
-- [static let bloodAlcoholContent: HKQuantityTypeIdentifier](hkquantitytypeidentifier/bloodalcoholcontent.md)
+### Lab and test results
+- [static let bloodAlcoholContent: HKQuantityTypeIdentifier](./bloodalcoholcontent.md)
   A quantity sample type that measures the user’s blood alcohol content.
-- [static let bloodGlucose: HKQuantityTypeIdentifier](hkquantitytypeidentifier/bloodglucose.md)
+- [static let bloodGlucose: HKQuantityTypeIdentifier](./bloodglucose.md)
   A quantity sample type that measures the user’s blood glucose level.
-- [static let forcedExpiratoryVolume1: HKQuantityTypeIdentifier](hkquantitytypeidentifier/forcedexpiratoryvolume1.md)
+- [static let forcedExpiratoryVolume1: HKQuantityTypeIdentifier](./forcedexpiratoryvolume1.md)
   A quantity sample type that measures the amount of air that can be forcibly exhaled from the lungs during the first second of a forced exhalation.
-- [static let forcedVitalCapacity: HKQuantityTypeIdentifier](hkquantitytypeidentifier/forcedvitalcapacity.md)
+- [static let forcedVitalCapacity: HKQuantityTypeIdentifier](./forcedvitalcapacity.md)
   A quantity sample type that measures the amount of air that can be forcibly exhaled from the lungs after taking the deepest breath possible.
-- [static let inhalerUsage: HKQuantityTypeIdentifier](hkquantitytypeidentifier/inhalerusage.md)
+- [static let inhalerUsage: HKQuantityTypeIdentifier](./inhalerusage.md)
   A quantity sample type that measures the number of puffs the user takes from their inhaler.
-- [static let insulinDelivery: HKQuantityTypeIdentifier](hkquantitytypeidentifier/insulindelivery.md)
+- [static let insulinDelivery: HKQuantityTypeIdentifier](./insulindelivery.md)
   A quantity sample that measures the amount of insulin delivered.
-- [static let numberOfTimesFallen: HKQuantityTypeIdentifier](hkquantitytypeidentifier/numberoftimesfallen.md)
+- [static let numberOfTimesFallen: HKQuantityTypeIdentifier](./numberoftimesfallen.md)
   A quantity sample type that measures the number of times the user fell.
-- [static let peakExpiratoryFlowRate: HKQuantityTypeIdentifier](hkquantitytypeidentifier/peakexpiratoryflowrate.md)
+- [static let peakExpiratoryFlowRate: HKQuantityTypeIdentifier](./peakexpiratoryflowrate.md)
   A quantity sample type that measures the user’s maximum flow rate generated during a forceful exhalation.
-- [static let peripheralPerfusionIndex: HKQuantityTypeIdentifier](hkquantitytypeidentifier/peripheralperfusionindex.md)
+- [static let peripheralPerfusionIndex: HKQuantityTypeIdentifier](./peripheralperfusionindex.md)
   A quantity sample type that measures the user’s peripheral perfusion index.
 
 

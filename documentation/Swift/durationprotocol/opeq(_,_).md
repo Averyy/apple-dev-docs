@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: op  
+**Role**: Operator  
 **Required**: Yes
 
 **Availability**:
@@ -18,6 +19,11 @@
 ```swift
 static func /= (lhs: inout Self, rhs: Int)
 ```
+
+## Default Implementations
+
+### DurationProtocol Implementations
+- [static func /= (inout Self, Int)](./opeq%28_,_%29-53vlk.md)
 
 
 ---

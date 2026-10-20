@@ -1,7 +1,8 @@
 # width
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of the measurement unit.
 
@@ -22,7 +23,7 @@ var width: Measurement<UnitType>.FormatStyle.UnitWidth
 
 #### Discussion
 
-The `width` property specifies the display of the measurement unit. The possible values are [`abbreviated`](measurement/formatstyle/unitwidth/abbreviated.md), [`narrow`](measurement/formatstyle/unitwidth/narrow.md), and [`wide`](measurement/formatstyle/unitwidth/wide.md). The format style represents the unit in the shortest notation available.
+The `width` property specifies the display of the measurement unit. The possible values are [`abbreviated`](./unitwidth/abbreviated.md), [`narrow`](./unitwidth/narrow.md), and [`wide`](./unitwidth/wide.md). The format style represents the unit in the shortest notation available.
 
 The following example shows *100 degrees Fahrenheit* in each width for the `en_US` locale.
 
@@ -35,17 +36,18 @@ temperatureMeasurement.formatted(.measurement(width: .narrow)) // 100°
 
 ## See Also
 
-- [Measurement.FormatStyle.UnitWidth](measurement/formatstyle/unitwidth.md)
+### Modifying a measurement format style
+- [Measurement.FormatStyle.UnitWidth](./unitwidth.md)
   Specifies the width of the unit, determining the textual representation.
-- [var numberFormatStyle: FloatingPointFormatStyle<Double>?](measurement/formatstyle/numberformatstyle.md)
+- [var numberFormatStyle: FloatingPointFormatStyle<Double>?](./numberformatstyle.md)
   The formatting of the measurement value.
-- [var usage: MeasurementFormatUnitUsage<UnitType>?](measurement/formatstyle/usage.md)
+- [var usage: MeasurementFormatUnitUsage<UnitType>?](./usage.md)
   The intended purpose of the formatted measurement.
-- [var hidesScaleName: Bool](measurement/formatstyle/hidesscalename.md)
+- [var hidesScaleName: Bool](./hidesscalename.md)
   The visibility of the unit name of a temperature.
-- [var locale: Locale](measurement/formatstyle/locale.md)
+- [var locale: Locale](./locale.md)
   The locale of the format style.
-- [func locale(Locale) -> Measurement<UnitType>.FormatStyle](measurement/formatstyle/locale(_:).md)
+- [func locale(Locale) -> Measurement<UnitType>.FormatStyle](./locale%28_%29.md)
   Modifies the measurement format style to use the specified locale.
 
 

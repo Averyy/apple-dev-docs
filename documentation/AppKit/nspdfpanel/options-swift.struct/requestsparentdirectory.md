@@ -1,9 +1,10 @@
 # requestsParentDirectory
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-The PDF panel doesn’t show a name field; instead, it allows the user to identify a directory in which to save multiple PDF files. If you set this flag, you’re responsible for appending a filename and the “pdf” extension to the resulting  URL value in the [`NSPDFInfo`](nspdfinfo.md) object before proceeding with the creation of the PDF file (or calling the `takeSettingsFromPDFInfo` method of [`NSPrintInfo`](nsprintinfo.md)).
+The PDF panel doesn’t show a name field; instead, it allows the user to identify a directory in which to save multiple PDF files. If you set this flag, you’re responsible for appending a filename and the “pdf” extension to the resulting  URL value in the [`NSPDFInfo`](../../nspdfinfo.md) object before proceeding with the creation of the PDF file (or calling the `takeSettingsFromPDFInfo` method of [`NSPrintInfo`](../../nsprintinfo.md)).
 
 **Availability**:
 - macOS 10.9+
@@ -14,11 +15,16 @@ The PDF panel doesn’t show a name field; instead, it allows the user to identi
 static var requestsParentDirectory: NSPDFPanel.Options { get }
 ```
 
+```c
+NSPDFPanelRequestsParentDirectory
+```
+
 ## See Also
 
-- [static var showsPaperSize: NSPDFPanel.Options](nspdfpanel/options-swift.struct/showspapersize.md)
+### Constants
+- [static var showsPaperSize: NSPDFPanel.Options](./showspapersize.md)
   The PDF panel shows a menu of paper sizes.
-- [static var showsOrientation: NSPDFPanel.Options](nspdfpanel/options-swift.struct/showsorientation.md)
+- [static var showsOrientation: NSPDFPanel.Options](./showsorientation.md)
   The PDF panel shows the current orientation of the PDF contents, such as landscape or portrait.
 
 

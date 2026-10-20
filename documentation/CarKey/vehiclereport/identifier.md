@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: CarKey  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string you use to identify the vehicle when making requests.
 
@@ -24,7 +25,8 @@ Use this string to differentiate vehicles associated with the session, and to en
 
 ## See Also
 
-- [var isConnected: Bool](vehiclereport/isconnected.md)
+### Getting the Vehicle Details
+- [var isConnected: Bool](./isconnected.md)
   A Boolean value that indicates whether the vehicle is currently connected over Bluetooth.
 
 

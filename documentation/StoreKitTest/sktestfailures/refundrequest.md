@@ -1,7 +1,8 @@
 # SKTestFailures.RefundRequest
 
 **Framework**: StoreKit Test  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.0+
@@ -19,27 +20,28 @@ enum RefundRequest
 ## Topics
 
 ### Enumeration Cases
-- [SKTestFailures.RefundRequest.generic(_:)](sktestfailures/refundrequest/generic(_:).md)
-- [case refundRequest(Transaction.RefundRequestError)](sktestfailures/refundrequest/refundrequest(_:).md)
+- [SKTestFailures.RefundRequest.generic(_:)](./refundrequest/generic%28_%29.md)
+- [case refundRequest(Transaction.RefundRequestError)](./refundrequest/refundrequest%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [SKTestFailure](sktestfailure.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [SKTestFailure](../sktestfailure.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [SKTestFailures.AppStoreSync](sktestfailures/appstoresync.md)
-- [SKTestFailures.AppTransaction](sktestfailures/apptransaction.md)
-- [SKTestFailures.LoadProducts](sktestfailures/loadproducts.md)
-- [SKTestFailures.ManageSubscriptions](sktestfailures/managesubscriptions.md)
-- [SKTestFailures.OfferCodeRedeem](sktestfailures/offercoderedeem.md)
-- [SKTestFailures.Purchase](sktestfailures/purchase.md)
-- [SKTestFailures.SubscriptionStatus](sktestfailures/subscriptionstatus.md)
-- [SKTestFailures.Verification](sktestfailures/verification.md)
+### Enumerations
+- [SKTestFailures.AppStoreSync](./appstoresync.md)
+- [SKTestFailures.AppTransaction](./apptransaction.md)
+- [SKTestFailures.LoadProducts](./loadproducts.md)
+- [SKTestFailures.ManageSubscriptions](./managesubscriptions.md)
+- [SKTestFailures.OfferCodeRedeem](./offercoderedeem.md)
+- [SKTestFailures.Purchase](./purchase.md)
+- [SKTestFailures.SubscriptionStatus](./subscriptionstatus.md)
+- [SKTestFailures.Verification](./verification.md)
 
 
 ---

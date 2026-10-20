@@ -1,12 +1,13 @@
 # CFXMLExternalID
 
 **Framework**: Core Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Contains the system and public IDs for an external entity reference.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,47 +15,52 @@ Contains the system and public IDs for an external entity reference.
 struct CFXMLExternalID
 ```
 
+```c
+typedef struct { ... } CFXMLExternalID;
+```
+
 #### Overview
 
-This structure is part of the definition of the [`CFXMLDocumentTypeInfo`](cfxmldocumenttypeinfo.md), [`CFXMLNotationInfo`](cfxmlnotationinfo.md), and [`CFXMLEntityInfo`](cfxmlentityinfo.md) structures.
+This structure is part of the definition of the [`CFXMLDocumentTypeInfo`](./cfxmldocumenttypeinfo.md), [`CFXMLNotationInfo`](./cfxmlnotationinfo.md), and [`CFXMLEntityInfo`](./cfxmlentityinfo.md) structures.
 
 ## Topics
 
 ### Initializers
-- [init()](cfxmlexternalid/init.md)
-- [init(systemID: Unmanaged<CFURL>!, publicID: Unmanaged<CFString>!)](cfxmlexternalid/init(systemid:publicid:).md)
+- [init()](./cfxmlexternalid/init%28%29.md)
+- [init(systemID: Unmanaged<CFURL>!, publicID: Unmanaged<CFString>!)](./cfxmlexternalid/init%28systemid,publicid%29.md)
 ### Instance Properties
-- [var publicID: Unmanaged<CFString>!](cfxmlexternalid/publicid.md)
+- [var publicID: Unmanaged<CFString>!](./cfxmlexternalid/publicid.md)
   The publicID string.
-- [var systemID: Unmanaged<CFURL>!](cfxmlexternalid/systemid.md)
+- [var systemID: Unmanaged<CFURL>!](./cfxmlexternalid/systemid.md)
   The systemID URL.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [struct CFXMLAttributeDeclarationInfo](cfxmlattributedeclarationinfo.md)
+### Data Types
+- [struct CFXMLAttributeDeclarationInfo](./cfxmlattributedeclarationinfo.md)
   Contains information about an element attribute definition.
-- [struct CFXMLAttributeListDeclarationInfo](cfxmlattributelistdeclarationinfo.md)
+- [struct CFXMLAttributeListDeclarationInfo](./cfxmlattributelistdeclarationinfo.md)
   Contains a list of the attributes associated with an element.
-- [struct CFXMLDocumentInfo](cfxmldocumentinfo.md)
+- [struct CFXMLDocumentInfo](./cfxmldocumentinfo.md)
   Contains the source URL and text encoding information for the XML document.
-- [struct CFXMLDocumentTypeInfo](cfxmldocumenttypeinfo.md)
+- [struct CFXMLDocumentTypeInfo](./cfxmldocumenttypeinfo.md)
   Contains the external ID of the DTD.
-- [struct CFXMLElementInfo](cfxmlelementinfo.md)
+- [struct CFXMLElementInfo](./cfxmlelementinfo.md)
   Contains a list of element attributes packaged as CFDictionary key/value pairs.
-- [struct CFXMLElementTypeDeclarationInfo](cfxmlelementtypedeclarationinfo.md)
+- [struct CFXMLElementTypeDeclarationInfo](./cfxmlelementtypedeclarationinfo.md)
   Contains a description of the element type.
-- [struct CFXMLEntityInfo](cfxmlentityinfo.md)
+- [struct CFXMLEntityInfo](./cfxmlentityinfo.md)
   Contains information describing an XML entity.
-- [struct CFXMLEntityReferenceInfo](cfxmlentityreferenceinfo.md)
+- [struct CFXMLEntityReferenceInfo](./cfxmlentityreferenceinfo.md)
   Contains information describing an XML entity reference.
-- [struct CFXMLNotationInfo](cfxmlnotationinfo.md)
+- [struct CFXMLNotationInfo](./cfxmlnotationinfo.md)
   Contains the external ID of the notation.
-- [struct CFXMLProcessingInstructionInfo](cfxmlprocessinginstructioninfo.md)
+- [struct CFXMLProcessingInstructionInfo](./cfxmlprocessinginstructioninfo.md)
   Contains the text of the processing instruction.
 
 

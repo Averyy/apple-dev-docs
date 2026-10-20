@@ -1,7 +1,8 @@
 # isEligibleForIntroOffer(for:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that determines the customer’s eligibility for an introductory offer within the provided subscription group.
 
@@ -34,11 +35,12 @@ This value may be `true` even if you haven’t set up an introductory offer in A
 
 ## See Also
 
-- [var isEligibleForIntroOffer: Bool](product/subscriptioninfo/iseligibleforintrooffer.md)
+### Getting introductory offer details
+- [var isEligibleForIntroOffer: Bool](./iseligibleforintrooffer.md)
   A Boolean value that indicates whether the customer is eligible for an introductory offer.
-- [let introductoryOffer: Product.SubscriptionOffer?](product/subscriptioninfo/introductoryoffer.md)
+- [let introductoryOffer: Product.SubscriptionOffer?](./introductoryoffer.md)
   Information about the introductory offer available for the auto-renewable subscription.
-- [Product.SubscriptionOffer](product/subscriptionoffer.md)
+- [Product.SubscriptionOffer](../subscriptionoffer.md)
   Information about a subscription offer that you configure in App Store Connect.
 
 

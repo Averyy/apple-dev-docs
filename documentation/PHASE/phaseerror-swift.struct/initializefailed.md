@@ -1,17 +1,18 @@
 # initializeFailed
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error that indicates the engine failed to initialize.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ static var initializeFailed: PHASEError.Code { get }
 
 ## See Also
 
-- [static var invalidObject: PHASEError.Code](phaseerror-swift.struct/invalidobject.md)
+### Identifying an Error Cause
+- [static var invalidObject: PHASEError.Code](./invalidobject.md)
   An error that indicates an object is invalid in a specific context.
 
 

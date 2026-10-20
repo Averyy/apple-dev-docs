@@ -1,7 +1,8 @@
 # applying(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a simd vector that’s transformed by the specified projective transform.
 
@@ -19,6 +20,8 @@ Returns a simd vector that’s transformed by the specified projective transform
 ```swift
 func applying(_ transform: ProjectiveTransform3DFloat) -> simd_float3
 ```
+
+Available when `Scalar` is `Float`.
 
 #### Discussion
 

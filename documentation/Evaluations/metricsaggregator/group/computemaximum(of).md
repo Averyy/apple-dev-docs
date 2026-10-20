@@ -1,7 +1,8 @@
 # computeMaximum(of:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the maximum value of a metric and adds it to the group.
 

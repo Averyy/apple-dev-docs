@@ -1,7 +1,8 @@
 # priority
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current task’s priority.
 
@@ -22,9 +23,9 @@ var priority: TaskPriority { get }
 
 #### Discussion
 
-> **Note**: `TaskPriority`
+> **See Also**: `TaskPriority`
 
-> **Note**: `Task.currentPriority`
+> **See Also**: `Task.currentPriority`
 
 
 ---

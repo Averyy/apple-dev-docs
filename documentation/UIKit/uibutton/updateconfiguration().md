@@ -1,7 +1,8 @@
 # updateConfiguration()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the button configuration in response to a button state change.
 
@@ -18,19 +19,24 @@ Updates the button configuration in response to a button state change.
 func updateConfiguration()
 ```
 
+```objc
+- (void) updateConfiguration;
+```
+
 #### Discussion
 
 Override this method in your subclass to respond changes to the button’s state. Make any necessary changes and update the button’s configuration.
 
-Don’t call this method directly. Call [`setNeedsUpdateConfiguration()`](uibutton/setneedsupdateconfiguration().md) to request an update to your button.
+Don’t call this method directly. Call [`setNeedsUpdateConfiguration()`](./setneedsupdateconfiguration%28%29.md) to request an update to your button.
 
-In iOS 18 and later, UIKit supports automatic trait tracking inside this method for traits from this button’s `traitCollection`. For more information, see [`Automatic trait tracking`](automatic-trait-tracking.md).
+In iOS 18 and later, UIKit supports automatic trait tracking inside this method for traits from this button’s `traitCollection`. For more information, see [Automatic trait tracking](../automatic-trait-tracking.md).
 
-This method supports automatic observation tracking. For more information, see [`Updating views automatically with observation tracking in UIKit`](updating-views-automatically-with-observation-tracking-in-uikit.md).
+This method supports automatic observation tracking. For more information, see [Updating views automatically with observation tracking in UIKit](../updating-views-automatically-with-observation-tracking-in-uikit.md).
 
 ## See Also
 
-- [var configurationUpdateHandler: UIButton.ConfigurationUpdateHandler?](uibutton/configurationupdatehandler-swift.property.md)
+### Observing data in buttons
+- [var configurationUpdateHandler: UIButton.ConfigurationUpdateHandler?](./configurationupdatehandler-swift.property.md)
   A closure that executes when the button state changes.
 
 

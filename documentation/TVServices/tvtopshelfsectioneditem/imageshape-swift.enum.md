@@ -1,7 +1,8 @@
 # TVTopShelfSectionedItem.ImageShape
 
 **Framework**: TV Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating the aspect ratio of an image.
 
@@ -14,31 +15,36 @@ Constants indicating the aspect ratio of an image.
 enum ImageShape
 ```
 
+```c
+enum TVTopShelfSectionedItemImageShape : NSInteger;
+```
+
 ## Topics
 
 ### Image Shapes
-- [TVTopShelfSectionedItem.ImageShape.square](tvtopshelfsectioneditem/imageshape-swift.enum/square.md)
+- [TVTopShelfSectionedItem.ImageShape.square](./imageshape-swift.enum/square.md)
   An image with a 1:1 aspect ratio.
-- [TVTopShelfSectionedItem.ImageShape.poster](tvtopshelfsectioneditem/imageshape-swift.enum/poster.md)
+- [TVTopShelfSectionedItem.ImageShape.poster](./imageshape-swift.enum/poster.md)
   A poster-shaped image with a 2:3 aspect ratio.
-- [TVTopShelfSectionedItem.ImageShape.hdtv](tvtopshelfsectioneditem/imageshape-swift.enum/hdtv.md)
+- [TVTopShelfSectionedItem.ImageShape.hdtv](./imageshape-swift.enum/hdtv.md)
   An image with a 16:9 aspect ratio.
 ### Initializers
-- [init?(rawValue: Int)](tvtopshelfsectioneditem/imageshape-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./imageshape-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class func imageSize(for: TVTopShelfSectionedItem.ImageShape) -> CGSize](tvtopshelfsectionedcontent/imagesize(for:).md)
+### Getting the Image Size Information
+- [class func imageSize(for: TVTopShelfSectionedItem.ImageShape) -> CGSize](../tvtopshelfsectionedcontent/imagesize%28for%29.md)
   Returns the dimensions to use for images of the specified shape.
 
 

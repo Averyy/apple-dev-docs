@@ -1,7 +1,8 @@
 # keySetRead(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func keySetRead(with params: MTRGroupKeyManagementClusterKeySetReadParams, completion: @escaping @Sendable (MTRGroupKeyManagementClusterKeySetReadResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func keySetRead(with params: MTRGroupKeyManagementClusterKeySetReadParams) async throws -> MTRGroupKeyManagementClusterKeySetReadResponseParams
+```
+
+```objc
+- (void) keySetReadWithParams:(MTRGroupKeyManagementClusterKeySetReadParams *) params completion:(void (^)(MTRGroupKeyManagementClusterKeySetReadResponseParams *data, NSError *error)) completion;
 ```
 
 

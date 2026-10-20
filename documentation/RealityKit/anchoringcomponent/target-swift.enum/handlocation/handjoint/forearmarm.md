@@ -1,7 +1,8 @@
 # forearmArm
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An anchor location at the elbow end of forearm on the back of hand.
 

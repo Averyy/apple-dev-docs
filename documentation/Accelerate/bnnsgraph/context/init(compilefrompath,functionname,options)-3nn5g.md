@@ -1,7 +1,8 @@
 # init(compileFromPath:functionName:options:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new context that wraps a graph object which represents the compiled `.mlmodelc` file.
 
@@ -11,7 +12,7 @@ Returns a new context that wraps a graph object which represents the compiled `.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -22,9 +23,9 @@ init(compileFromPath path: String, functionName: String? = nil, options: BNNSGra
 
 #### Discussion
 
-> **Note**: `BNNSGraphCompileFromFile`
+> **See Also**: `BNNSGraphCompileFromFile`
 
-> **Note**: `BNNSGraphContextMake`
+> **See Also**: `BNNSGraphContextMake`
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # rangeNotRequired
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the value that causes the framework enumerate text segment rectangles, but avoids preparing a range object.
 
@@ -14,15 +15,20 @@ Returns the value that causes the framework enumerate text segment rectangles, b
 static var rangeNotRequired: NSTextLayoutManager.SegmentOptions { get }
 ```
 
+```c
+NSTextLayoutManagerSegmentOptionsRangeNotRequired
+```
+
 ## See Also
 
-- [static var headSegmentExtended: NSTextLayoutManager.SegmentOptions](nstextlayoutmanager/segmentoptions/headsegmentextended.md)
+### Getting segment options
+- [static var headSegmentExtended: NSTextLayoutManager.SegmentOptions](./headsegmentextended.md)
   Returns the value that causes the framework to extend the segment to the tail edge.
-- [static var middleFragmentsExcluded: NSTextLayoutManager.SegmentOptions](nstextlayoutmanager/segmentoptions/middlefragmentsexcluded.md)
+- [static var middleFragmentsExcluded: NSTextLayoutManager.SegmentOptions](./middlefragmentsexcluded.md)
   Returns the value that causes the framework to enumerate segments in only the first and last line fragments.
-- [static var tailSegmentExtended: NSTextLayoutManager.SegmentOptions](nstextlayoutmanager/segmentoptions/tailsegmentextended.md)
+- [static var tailSegmentExtended: NSTextLayoutManager.SegmentOptions](./tailsegmentextended.md)
   Returns the value that causes the framework to extend the segment to the tail edge.
-- [static var upstreamAffinity: NSTextLayoutManager.SegmentOptions](nstextlayoutmanager/segmentoptions/upstreamaffinity.md)
+- [static var upstreamAffinity: NSTextLayoutManager.SegmentOptions](./upstreamaffinity.md)
   Returns the value that causes the framework to the place the segment based on the upstream affinity for an empty range.
 
 

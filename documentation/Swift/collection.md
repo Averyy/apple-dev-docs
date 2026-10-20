@@ -1,7 +1,8 @@
 # Collection
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A sequence whose elements can be traversed multiple times, nondestructively, and accessed by an indexed subscript.
 
@@ -166,200 +167,201 @@ The performance of some collection operations depends on the type of index that 
 ## Topics
 
 ### Accessing a Collection’s Elements
-- [subscript(Self.Index) -> Self.Element](collection/subscript(_:)-887tm.md)
+- [subscript(Self.Index) -> Self.Element](./collection/subscript%28_%29-887tm.md)
   Accesses the element at the specified position.
 ### Selecting and Excluding Elements
-- [func popFirst() -> Self.Element?](collection/popfirst.md)
+- [func popFirst() -> Self.Element?](./collection/popfirst%28%29.md)
   Removes and returns the first element of the collection.
-- [func removeFirst() -> Self.Element](collection/removefirst.md)
+- [func removeFirst() -> Self.Element](./collection/removefirst%28%29.md)
   Removes and returns the first element of the collection.
-- [func removeFirst(Int)](collection/removefirst(_:).md)
+- [func removeFirst(Int)](./collection/removefirst%28_%29.md)
   Removes the specified number of elements from the beginning of the collection.
 ### Manipulating Indices
-- [var startIndex: Self.Index](collection/startindex.md)
+- [var startIndex: Self.Index](./collection/startindex.md)
   The position of the first element in a nonempty collection.
-- [var endIndex: Self.Index](collection/endindex.md)
+- [var endIndex: Self.Index](./collection/endindex.md)
   The collection’s “past the end” position—that is, the position one greater than the last valid subscript argument.
-- [var indices: Self.Indices](collection/indices-9kkbf.md)
+- [var indices: Self.Indices](./collection/indices-9kkbf.md)
   The indices that are valid for subscripting the collection, in ascending order.
-- [func index(after: Self.Index) -> Self.Index](collection/index(after:).md)
+- [func index(after: Self.Index) -> Self.Index](./collection/index%28after%29.md)
   Returns the position immediately after the given index.
-- [func formIndex(inout Self.Index, offsetBy: Int)](collection/formindex(_:offsetby:)-393pr.md)
+- [func formIndex(inout Self.Index, offsetBy: Int)](./collection/formindex%28_,offsetby%29-393pr.md)
   Offsets the given index by the specified distance.
-- [func formIndex(inout Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Bool](collection/formindex(_:offsetby:limitedby:)-6jwra.md)
+- [func formIndex(inout Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Bool](./collection/formindex%28_,offsetby,limitedby%29-6jwra.md)
   Offsets the given index by the specified distance, or so that it equals the given limiting index.
 ### Iterating Over a Collection’s Elements
-- [func makeIterator() -> Self.Iterator](collection/makeiterator.md)
+- [func makeIterator() -> Self.Iterator](./collection/makeiterator%28%29.md)
   Returns an iterator over the elements of the collection.
 ### Splitting and Joining Elements
-- [func split(separator: Self.Element, maxSplits: Int, omittingEmptySubsequences: Bool) -> [Self.SubSequence]](collection/split(separator:maxsplits:omittingemptysubsequences:)-6c22.md)
+- [func split(separator: Self.Element, maxSplits: Int, omittingEmptySubsequences: Bool) -> [Self.SubSequence]](./collection/split%28separator,maxsplits,omittingemptysubsequences%29-6c22.md)
   Returns the longest possible subsequences of the collection, in order, around elements equal to the given element.
-- [func split<C>(separator: C, maxSplits: Int, omittingEmptySubsequences: Bool) -> [Self.SubSequence]](collection/split(separator:maxsplits:omittingemptysubsequences:)-9esbr.md)
+- [func split<C>(separator: C, maxSplits: Int, omittingEmptySubsequences: Bool) -> [Self.SubSequence]](./collection/split%28separator,maxsplits,omittingemptysubsequences%29-9esbr.md)
   Returns the longest possible subsequences of the collection, in order, around elements equal to the given separator.
-- [func split(maxSplits: Int, omittingEmptySubsequences: Bool, whereSeparator: (Self.Element) throws -> Bool) rethrows -> [Self.SubSequence]](collection/split(maxsplits:omittingemptysubsequences:whereseparator:).md)
+- [func split(maxSplits: Int, omittingEmptySubsequences: Bool, whereSeparator: (Self.Element) throws -> Bool) rethrows -> [Self.SubSequence]](./collection/split%28maxsplits,omittingemptysubsequences,whereseparator%29.md)
   Returns the longest possible subsequences of the collection, in order, that don’t contain elements satisfying the given predicate.
 ### Related Collection Types
-- [struct DiscontiguousSlice](discontiguousslice.md)
+- [struct DiscontiguousSlice](./discontiguousslice.md)
   A collection wrapper that provides access to the elements of a collection, indexed by a set of indices.
 ### Associated Types
-- [associatedtype Element](collection/element.md)
+- [associatedtype Element](./collection/element.md)
   A type representing the sequence’s elements.
-- [associatedtype Index : Comparable](collection/index.md)
+- [associatedtype Index : Comparable](./collection/index.md)
   A type that represents a position in the collection.
-- [associatedtype Indices : Collection = DefaultIndices<Self>](collection/indices-swift.associatedtype.md)
+- [associatedtype Indices : Collection = DefaultIndices<Self>](./collection/indices-swift.associatedtype.md)
   A type that represents the indices that are valid for subscripting the collection, in ascending order.
-- [associatedtype Iterator = IndexingIterator<Self>](collection/iterator.md)
+- [associatedtype Iterator = IndexingIterator<Self>](./collection/iterator.md)
   A type that provides the collection’s iteration interface and encapsulates its iteration state.
-- [associatedtype SubSequence : Collection = Slice<Self>](collection/subsequence.md)
+- [associatedtype SubSequence : Collection = Slice<Self>](./collection/subsequence.md)
   A collection representing a contiguous subrange of this collection’s elements. The subsequence shares indices with the original collection.
 ### Instance Properties
-- [var count: Int](collection/count.md)
+- [var count: Int](./collection/count.md)
   The number of elements in the collection.
-- [var first: Self.Element?](collection/first.md)
+- [var first: Self.Element?](./collection/first.md)
   The first element of the collection.
-- [var isEmpty: Bool](collection/isempty.md)
+- [var isEmpty: Bool](./collection/isempty.md)
   A Boolean value indicating whether the collection is empty.
 ### Instance Methods
-- [func contains<C>(C) -> Bool](collection/contains(_:).md)
+- [func contains<C>(C) -> Bool](./collection/contains%28_%29.md)
   Returns a Boolean value indicating whether the collection contains the given sequence.
-- [func distance(from: Self.Index, to: Self.Index) -> Int](collection/distance(from:to:).md)
+- [func distance(from: Self.Index, to: Self.Index) -> Int](./collection/distance%28from,to%29.md)
   Returns the distance between two indices.
-- [func drop(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](collection/drop(while:).md)
+- [func drop(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](./collection/drop%28while%29.md)
   Returns a subsequence by skipping elements while `predicate` returns `true` and returning the remaining elements.
-- [func dropFirst(Int) -> Self.SubSequence](collection/dropfirst(_:).md)
+- [func dropFirst(Int) -> Self.SubSequence](./collection/dropfirst%28_%29.md)
   Returns a subsequence containing all but the given number of initial elements.
-- [func dropLast(Int) -> Self.SubSequence](collection/droplast(_:).md)
+- [func dropLast(Int) -> Self.SubSequence](./collection/droplast%28_%29.md)
   Returns a subsequence containing all but the specified number of final elements.
-- [func firstIndex(of: Self.Element) -> Self.Index?](collection/firstindex(of:).md)
+- [func firstIndex(of: Self.Element) -> Self.Index?](./collection/firstindex%28of%29.md)
   Returns the first index where the specified value appears in the collection.
-- [func firstIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?](collection/firstindex(where:).md)
+- [func firstIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?](./collection/firstindex%28where%29.md)
   Returns the first index in which an element of the collection satisfies the given predicate.
-- [func firstRange<C>(of: C) -> Range<Self.Index>?](collection/firstrange(of:).md)
+- [func firstRange<C>(of: C) -> Range<Self.Index>?](./collection/firstrange%28of%29.md)
   Finds and returns the range of the first occurrence of a given collection within this collection.
-- [func flatMap((Self.Element) throws -> String?) rethrows -> [String]](collection/flatmap(_:).md)
-- [func formIndex<T>(inout Self.Index, offsetBy: T)](collection/formindex(_:offsetby:)-9q9sx.md)
-- [func formIndex<T>(inout Self.Index, offsetBy: T, limitedBy: Self.Index) -> Bool](collection/formindex(_:offsetby:limitedby:)-6ovn.md)
-- [func formIndex(after: inout Self.Index)](collection/formindex(after:).md)
+- [func flatMap((Self.Element) throws -> String?) rethrows -> [String]](./collection/flatmap%28_%29.md)
+- [func formIndex<T>(inout Self.Index, offsetBy: T)](./collection/formindex%28_,offsetby%29-9q9sx.md)
+- [func formIndex<T>(inout Self.Index, offsetBy: T, limitedBy: Self.Index) -> Bool](./collection/formindex%28_,offsetby,limitedby%29-6ovn.md)
+- [func formIndex(after: inout Self.Index)](./collection/formindex%28after%29.md)
   Replaces the given index with its successor.
-- [func index(Self.Index, offsetBy: Int) -> Self.Index](collection/index(_:offsetby:).md)
+- [func index(Self.Index, offsetBy: Int) -> Self.Index](./collection/index%28_,offsetby%29.md)
   Returns an index that is the specified distance from the given index.
-- [func index(Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Self.Index?](collection/index(_:offsetby:limitedby:).md)
+- [func index(Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Self.Index?](./collection/index%28_,offsetby,limitedby%29.md)
   Returns an index that is the specified distance from the given index, unless that distance is beyond a given limiting index.
-- [func index(of: Self.Element) -> Self.Index?](collection/index(of:).md)
+- [func index(of: Self.Element) -> Self.Index?](./collection/index%28of%29.md)
   Returns the first index where the specified value appears in the collection.
-- [func indices(of: Self.Element) -> RangeSet<Self.Index>](collection/indices(of:).md)
+- [func indices(of: Self.Element) -> RangeSet<Self.Index>](./collection/indices%28of%29.md)
   Returns the indices of all the elements that are equal to the given element.
-- [func indices(where: (Self.Element) throws -> Bool) rethrows -> RangeSet<Self.Index>](collection/indices(where:).md)
+- [func indices(where: (Self.Element) throws -> Bool) rethrows -> RangeSet<Self.Index>](./collection/indices%28where%29.md)
   Returns the indices of all the elements that match the given predicate.
-- [func map<T, E>((Self.Element) throws(E) -> T) throws(E) -> [T]](collection/map(_:).md)
+- [func map<T, E>((Self.Element) throws(E) -> T) throws(E) -> [T]](./collection/map%28_%29.md)
   Returns an array containing the results of mapping the given closure over the sequence’s elements.
-- [func prefix(Int) -> Self.SubSequence](collection/prefix(_:).md)
+- [func prefix(Int) -> Self.SubSequence](./collection/prefix%28_%29.md)
   Returns a subsequence, up to the specified maximum length, containing the initial elements of the collection.
-- [func prefix(through: Self.Index) -> Self.SubSequence](collection/prefix(through:).md)
+- [func prefix(through: Self.Index) -> Self.SubSequence](./collection/prefix%28through%29.md)
   Returns a subsequence from the start of the collection through the specified position.
-- [func prefix(upTo: Self.Index) -> Self.SubSequence](collection/prefix(upto:).md)
+- [func prefix(upTo: Self.Index) -> Self.SubSequence](./collection/prefix%28upto%29.md)
   Returns a subsequence from the start of the collection up to, but not including, the specified position.
-- [func prefix(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](collection/prefix(while:).md)
+- [func prefix(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](./collection/prefix%28while%29.md)
   Returns a subsequence containing the initial elements until `predicate` returns `false` and skipping the remaining elements.
-- [func randomElement() -> Self.Element?](collection/randomelement.md)
+- [func randomElement() -> Self.Element?](./collection/randomelement%28%29.md)
   Returns a random element of the collection.
-- [func randomElement<T>(using: inout T) -> Self.Element?](collection/randomelement(using:).md)
+- [func randomElement<T>(using: inout T) -> Self.Element?](./collection/randomelement%28using%29.md)
   Returns a random element of the collection, using the given generator as a source for randomness.
-- [func ranges<C>(of: C) -> [Range<Self.Index>]](collection/ranges(of:).md)
+- [func ranges<C>(of: C) -> [Range<Self.Index>]](./collection/ranges%28of%29.md)
   Finds and returns the ranges of the all occurrences of a given sequence within the collection.
-- [func removingSubranges(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](collection/removingsubranges(_:).md)
+- [func removingSubranges(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](./collection/removingsubranges%28_%29.md)
   Returns a collection of the elements in this collection that are not represented by the given range set.
-- [func saveJSONLines(to: URL, includeReportMetadata: Bool, includeTranscripts: Bool) throws -> URL](collection/savejsonlines(to:includereportmetadata:includetranscripts:).md)
+- [func saveJSONLines(to: URL, includeReportMetadata: Bool, includeTranscripts: Bool) throws -> URL](./collection/savejsonlines%28to,includereportmetadata,includetranscripts%29.md)
   Saves the array of evaluation results as a JSONL file
-- [func suffix(Int) -> Self.SubSequence](collection/suffix(_:).md)
+- [func suffix(Int) -> Self.SubSequence](./collection/suffix%28_%29.md)
   Returns a subsequence, up to the given maximum length, containing the final elements of the collection.
-- [func suffix(from: Self.Index) -> Self.SubSequence](collection/suffix(from:).md)
+- [func suffix(from: Self.Index) -> Self.SubSequence](./collection/suffix%28from%29.md)
   Returns a subsequence from the specified position to the end of the collection.
-- [func trimPrefix<Prefix>(Prefix)](collection/trimprefix(_:).md)
+- [func trimPrefix<Prefix>(Prefix)](./collection/trimprefix%28_%29.md)
   Removes `prefix` from the start of the collection.
-- [func trimPrefix(while: (Self.Element) throws -> Bool) throws](collection/trimprefix(while:).md)
-- [func trimmingPrefix<Prefix>(Prefix) -> Self.SubSequence](collection/trimmingprefix(_:).md)
+- [func trimPrefix(while: (Self.Element) throws -> Bool) throws](./collection/trimprefix%28while%29.md)
+- [func trimmingPrefix<Prefix>(Prefix) -> Self.SubSequence](./collection/trimmingprefix%28_%29.md)
   Returns a new collection of the same type by removing `prefix` from the start of the collection.
-- [func trimmingPrefix(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](collection/trimmingprefix(while:).md)
+- [func trimmingPrefix(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](./collection/trimmingprefix%28while%29.md)
 ### Subscripts
-- [subscript(Range<Self.Index>) -> Self.SubSequence](collection/subscript(_:)-1jxub.md)
+- [subscript(Range<Self.Index>) -> Self.SubSequence](./collection/subscript%28_%29-1jxub.md)
   Accesses a contiguous subrange of the collection’s elements.
 ### Type Aliases
-- [Collection.IndexDistance](collection/indexdistance.md)
+- [Collection.IndexDistance](./collection/indexdistance.md)
 
 ## Relationships
 
 ### Inherits From
-- [Sequence](sequence.md)
+- [Sequence](./sequence.md)
 ### Inherited By
-- [BidirectionalCollection](bidirectionalcollection.md)
-- [LazyCollectionProtocol](lazycollectionprotocol.md)
-- [MutableCollection](mutablecollection.md)
-- [RandomAccessCollection](randomaccesscollection.md)
-- [RangeReplaceableCollection](rangereplaceablecollection.md)
-- [StringProtocol](stringprotocol.md)
+- [BidirectionalCollection](./bidirectionalcollection.md)
+- [LazyCollectionProtocol](./lazycollectionprotocol.md)
+- [MutableCollection](./mutablecollection.md)
+- [RandomAccessCollection](./randomaccesscollection.md)
+- [RangeReplaceableCollection](./rangereplaceablecollection.md)
+- [StringProtocol](./stringprotocol.md)
 ### Conforming Types
-- [AnyBidirectionalCollection](anybidirectionalcollection.md)
-- [AnyCollection](anycollection.md)
-- [AnyRandomAccessCollection](anyrandomaccesscollection.md)
-- [AnyRegexOutput](anyregexoutput.md)
-- [Array](array.md)
-- [ArraySlice](arrayslice.md)
-- [ClosedRange](closedrange.md)
-- [CollectionDifference](collectiondifference.md)
-- [CollectionOfOne](collectionofone.md)
-- [ContiguousArray](contiguousarray.md)
-- [DefaultIndices](defaultindices.md)
-- [Dictionary](dictionary.md)
-- [Dictionary.Keys](dictionary/keys-swift.struct.md)
-- [Dictionary.Values](dictionary/values-swift.struct.md)
-- [DiscontiguousSlice](discontiguousslice.md)
-- [EmptyCollection](emptycollection.md)
-- [EnumeratedSequence](enumeratedsequence.md)
-- [FlattenSequence](flattensequence.md)
-- [Int.Words](int/words-swift.struct.md)
-- [Int16.Words](int16/words-swift.struct.md)
-- [Int32.Words](int32/words-swift.struct.md)
-- [Int64.Words](int64/words-swift.struct.md)
-- [Int8.Words](int8/words-swift.struct.md)
-- [KeyValuePairs](keyvaluepairs.md)
-- [LazyDropWhileSequence](lazydropwhilesequence.md)
-- [LazyFilterSequence](lazyfiltersequence.md)
-- [LazyMapSequence](lazymapsequence.md)
-- [LazyPrefixWhileSequence](lazyprefixwhilesequence.md)
-- [LazySequence](lazysequence.md)
-- [Range](range.md)
-- [RangeSet.Ranges](rangeset/ranges-swift.struct.md)
-- [Repeated](repeated.md)
-- [ReversedCollection](reversedcollection.md)
-- [Set](set.md)
-- [Slice](slice.md)
-- [String](string.md)
-- [String.UTF16View](string/utf16view.md)
-- [String.UTF8View](string/utf8view.md)
-- [String.UnicodeScalarView](string/unicodescalarview.md)
-- [Substring](substring.md)
-- [Substring.UTF16View](substring/utf16view.md)
-- [Substring.UTF8View](substring/utf8view.md)
-- [Substring.UnicodeScalarView](substring/unicodescalarview.md)
-- [UInt.Words](uint/words-swift.struct.md)
-- [UInt128.Words](uint128/words-swift.struct.md)
-- [UInt16.Words](uint16/words-swift.struct.md)
-- [UInt32.Words](uint32/words-swift.struct.md)
-- [UInt64.Words](uint64/words-swift.struct.md)
-- [UInt8.Words](uint8/words-swift.struct.md)
-- [Unicode.Scalar.UTF16View](unicode/scalar/utf16view.md)
-- [Unicode.Scalar.UTF8View](unicode/scalar/utf8view.md)
-- [UnsafeBufferPointer](unsafebufferpointer.md)
-- [UnsafeMutableBufferPointer](unsafemutablebufferpointer.md)
-- [UnsafeMutableRawBufferPointer](unsafemutablerawbufferpointer.md)
-- [UnsafeRawBufferPointer](unsaferawbufferpointer.md)
+- [AnyBidirectionalCollection](./anybidirectionalcollection.md)
+- [AnyCollection](./anycollection.md)
+- [AnyRandomAccessCollection](./anyrandomaccesscollection.md)
+- [AnyRegexOutput](./anyregexoutput.md)
+- [Array](./array.md)
+- [ArraySlice](./arrayslice.md)
+- [ClosedRange](./closedrange.md)
+- [CollectionDifference](./collectiondifference.md)
+- [CollectionOfOne](./collectionofone.md)
+- [ContiguousArray](./contiguousarray.md)
+- [DefaultIndices](./defaultindices.md)
+- [Dictionary](./dictionary.md)
+- [Dictionary.Keys](./dictionary/keys-swift.struct.md)
+- [Dictionary.Values](./dictionary/values-swift.struct.md)
+- [DiscontiguousSlice](./discontiguousslice.md)
+- [EmptyCollection](./emptycollection.md)
+- [EnumeratedSequence](./enumeratedsequence.md)
+- [FlattenSequence](./flattensequence.md)
+- [Int.Words](./int/words-swift.struct.md)
+- [Int16.Words](./int16/words-swift.struct.md)
+- [Int32.Words](./int32/words-swift.struct.md)
+- [Int64.Words](./int64/words-swift.struct.md)
+- [Int8.Words](./int8/words-swift.struct.md)
+- [KeyValuePairs](./keyvaluepairs.md)
+- [LazyDropWhileSequence](./lazydropwhilesequence.md)
+- [LazyFilterSequence](./lazyfiltersequence.md)
+- [LazyMapSequence](./lazymapsequence.md)
+- [LazyPrefixWhileSequence](./lazyprefixwhilesequence.md)
+- [LazySequence](./lazysequence.md)
+- [Range](./range.md)
+- [RangeSet.Ranges](./rangeset/ranges-swift.struct.md)
+- [Repeated](./repeated.md)
+- [ReversedCollection](./reversedcollection.md)
+- [Set](./set.md)
+- [Slice](./slice.md)
+- [String](./string.md)
+- [String.UTF16View](./string/utf16view.md)
+- [String.UTF8View](./string/utf8view.md)
+- [String.UnicodeScalarView](./string/unicodescalarview.md)
+- [Substring](./substring.md)
+- [Substring.UTF16View](./substring/utf16view.md)
+- [Substring.UTF8View](./substring/utf8view.md)
+- [Substring.UnicodeScalarView](./substring/unicodescalarview.md)
+- [UInt.Words](./uint/words-swift.struct.md)
+- [UInt128.Words](./uint128/words-swift.struct.md)
+- [UInt16.Words](./uint16/words-swift.struct.md)
+- [UInt32.Words](./uint32/words-swift.struct.md)
+- [UInt64.Words](./uint64/words-swift.struct.md)
+- [UInt8.Words](./uint8/words-swift.struct.md)
+- [Unicode.Scalar.UTF16View](./unicode/scalar/utf16view.md)
+- [Unicode.Scalar.UTF8View](./unicode/scalar/utf8view.md)
+- [UnsafeBufferPointer](./unsafebufferpointer.md)
+- [UnsafeMutableBufferPointer](./unsafemutablebufferpointer.md)
+- [UnsafeMutableRawBufferPointer](./unsafemutablerawbufferpointer.md)
+- [UnsafeRawBufferPointer](./unsaferawbufferpointer.md)
 
 ## See Also
 
-- [protocol IteratorProtocol](iteratorprotocol.md)
+### First Steps
+- [protocol IteratorProtocol](./iteratorprotocol.md)
   A type that supplies the values of a sequence one at a time.
-- [protocol Sequence](sequence.md)
+- [protocol Sequence](./sequence.md)
   A type that provides sequential, iterated access to its elements.
 
 

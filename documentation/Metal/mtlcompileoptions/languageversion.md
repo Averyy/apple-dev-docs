@@ -1,7 +1,8 @@
 # languageVersion
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The language version for interpreting the library source code.
 
@@ -19,29 +20,35 @@ The language version for interpreting the library source code.
 var languageVersion: MTLLanguageVersion { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MTLLanguageVersion languageVersion;
+```
+
 #### Discussion
 
 By default, Metal uses the most recent language version.
 
 ## See Also
 
-- [enum MTLLanguageVersion](mtllanguageversion.md)
+### Related Documentation
+- [enum MTLLanguageVersion](../mtllanguageversion.md)
   Metal shading language versions.
-- [var enableLogging: Bool](mtlcompileoptions/enablelogging.md)
+### Configuring the compiler options
+- [var enableLogging: Bool](./enablelogging.md)
   A Boolean value that enables shader logging.
-- [var mathMode: MTLMathMode](mtlcompileoptions/mathmode.md)
+- [var mathMode: MTLMathMode](./mathmode.md)
   An indication of whether the compiler can perform optimizations for floating-point arithmetic that may violate the IEEE 754 standard.
-- [var mathFloatingPointFunctions: MTLMathFloatingPointFunctions](mtlcompileoptions/mathfloatingpointfunctions.md)
+- [var mathFloatingPointFunctions: MTLMathFloatingPointFunctions](./mathfloatingpointfunctions.md)
   The FP32 math functions Metal uses.
-- [var preserveInvariance: Bool](mtlcompileoptions/preserveinvariance.md)
+- [var preserveInvariance: Bool](./preserveinvariance.md)
   A Boolean value that indicates whether the compiler compiles vertex shaders conservatively to generate consistent position calculations.
-- [var preprocessorMacros: [String : NSObject]?](mtlcompileoptions/preprocessormacros.md)
+- [var preprocessorMacros: [String : NSObject]?](./preprocessormacros.md)
   A list of preprocessor macros to apply when compiling the library source.
-- [var optimizationLevel: MTLLibraryOptimizationLevel](mtlcompileoptions/optimizationlevel.md)
+- [var optimizationLevel: MTLLibraryOptimizationLevel](./optimizationlevel.md)
   An option that tells the compiler what to prioritize when it compiles Metal shader code.
-- [var libraries: [any MTLDynamicLibrary]?](mtlcompileoptions/libraries.md)
+- [var libraries: [any MTLDynamicLibrary]?](./libraries.md)
   An array of dynamic libraries the Metal compiler links against.
-- [var fastMathEnabled: Bool](mtlcompileoptions/fastmathenabled.md)
+- [var fastMathEnabled: Bool](./fastmathenabled.md)
   A Boolean value that indicates whether the compiler can perform optimizations for floating-point arithmetic that may violate the IEEE 754 standard.
 
 

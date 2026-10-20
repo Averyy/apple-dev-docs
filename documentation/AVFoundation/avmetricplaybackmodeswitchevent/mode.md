@@ -1,7 +1,8 @@
 # mode
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the mode into which playback entered.
 
@@ -18,6 +19,10 @@ Returns the mode into which playback entered.
 
 ```swift
 var mode: AVMetricPlaybackMode { get }
+```
+
+```objc
+@property (readonly) AVMetricPlaybackMode mode;
 ```
 
 

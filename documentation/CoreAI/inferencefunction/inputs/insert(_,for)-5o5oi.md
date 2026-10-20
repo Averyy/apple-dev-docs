@@ -1,7 +1,8 @@
 # insert(_:for:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts a typed array view as the input with the specified name.
 
@@ -25,9 +26,10 @@ mutating func insert<Element>(_ view: consuming NDArray.View<Element>, for input
 
 ## See Also
 
-- [func insert(consuming NDArray.RawView, for: String)](inferencefunction/inputs/insert(_:for:)-3eg32.md)
+### Adding inputs
+- [func insert(consuming NDArray.RawView, for: String)](./insert%28_,for%29-3eg32.md)
   Inserts a raw array view as the input with the specified name.
-- [func insert(borrowing some InferenceValue.ViewRepresentable & ~Copyable, for: String)](inferencefunction/inputs/insert(_:for:)-2htrp.md)
+- [func insert(borrowing some InferenceValue.ViewRepresentable & ~Copyable, for: String)](./insert%28_,for%29-2htrp.md)
   Inserts a view of the value as the input with the specified name.
 
 

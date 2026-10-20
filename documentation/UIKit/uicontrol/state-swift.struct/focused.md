@@ -1,7 +1,8 @@
 # focused
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The focused state of a control.
 
@@ -18,23 +19,28 @@ The focused state of a control.
 static var focused: UIControl.State { get }
 ```
 
+```c
+UIControlStateFocused
+```
+
 #### Discussion
 
 In focus-based navigation systems, a control enters this state when it receives the focus. A focused control changes its appearance to indicate that it has focus, and this appearance differs from the appearance of the control when it’s highlighted or selected. Further interactions with the control can result in it also becoming highlighted or selected.
 
 ## See Also
 
-- [static var normal: UIControl.State](uicontrol/state-swift.struct/normal.md)
+### Constants
+- [static var normal: UIControl.State](./normal.md)
   The normal, or default, state of a control where the control is enabled but neither selected nor highlighted.
-- [static var highlighted: UIControl.State](uicontrol/state-swift.struct/highlighted.md)
+- [static var highlighted: UIControl.State](./highlighted.md)
   The highlighted state of a control.
-- [static var disabled: UIControl.State](uicontrol/state-swift.struct/disabled.md)
+- [static var disabled: UIControl.State](./disabled.md)
   The disabled state of a control.
-- [static var selected: UIControl.State](uicontrol/state-swift.struct/selected.md)
+- [static var selected: UIControl.State](./selected.md)
   The selected state of a control.
-- [static var application: UIControl.State](uicontrol/state-swift.struct/application.md)
+- [static var application: UIControl.State](./application.md)
   Additional control-state flags available for app use.
-- [static var reserved: UIControl.State](uicontrol/state-swift.struct/reserved.md)
+- [static var reserved: UIControl.State](./reserved.md)
   Control-state flags reserved for internal framework use.
 
 

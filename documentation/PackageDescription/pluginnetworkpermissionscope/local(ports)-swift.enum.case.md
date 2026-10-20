@@ -1,7 +1,8 @@
 # PluginNetworkPermissionScope.local(ports:)
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Allow local network connections; can be limited to a list of allowed ports.
 

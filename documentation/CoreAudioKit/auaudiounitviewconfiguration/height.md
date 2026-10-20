@@ -1,7 +1,8 @@
 # height
 
 **Framework**: CoreAudioKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configured height.
 
@@ -18,11 +19,24 @@ The configured height.
 var height: CGFloat { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```objc
+@property (nonatomic, readonly) CGFloat height;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) CGFloat height;
+```
+
 ## See Also
 
-- [var width: CGFloat](auaudiounitviewconfiguration/width.md)
+### Accessing Settings
+- [var width: CGFloat](./width.md)
   The configured width.
-- [var hostHasController: Bool](auaudiounitviewconfiguration/hosthascontroller.md)
+- [var hostHasController: Bool](./hosthascontroller.md)
   A Boolean value that indicates whether the host shows its own control surface in this view configuration.
 
 

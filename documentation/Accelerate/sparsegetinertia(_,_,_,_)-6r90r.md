@@ -1,7 +1,8 @@
 # SparseGetInertia(_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the inertia of a single-precision *LDLᵀ* factorization.
 
@@ -20,36 +21,41 @@ Returns the inertia of a single-precision *LDLᵀ* factorization.
 func SparseGetInertia(_ Factored: SparseOpaqueFactorization_Float, _ num_positive: UnsafeMutablePointer<Int32>, _ num_zero: UnsafeMutablePointer<Int32>, _ num_negative: UnsafeMutablePointer<Int32>) -> Int32
 ```
 
+```c
+int SparseGetInertia(SparseOpaqueFactorization_Float Factored, int *num_positive, int *num_zero, int *num_negative);
+```
+
 #### Return Value
 
 `0` on success; otherwise, a nonzero value on error.
 
 #### Discussion
 
-This function returns the number of negative, zero, and positive pivots that the sparse factorization functions, [`SparseFactor(_:_:)`](sparsefactor(_:_:)-38shj.md) and [`SparseFactor(_:_:_:_:)`](sparsefactor(_:_:_:_:)-8apyz.md), take during an *LDLᵀ* factorization.
+This function returns the number of negative, zero, and positive pivots that the sparse factorization functions, [`SparseFactor(_:_:)`](./sparsefactor%28_,_%29-38shj.md) and [`SparseFactor(_:_:_:_:)`](./sparsefactor%28_,_,_,_%29-8apyz.md), take during an *LDLᵀ* factorization.
 
-In some cases — for example, when the original matrix’s eigenvalues are close to zero — the computed numerical inertia may not be an accurate reflection of the true inertia. In such cases, the computed numerical inertia is dependent on the [`zeroTolerance`](sparsenumericfactoroptions/zerotolerance.md) and [`pivotTolerance`](sparsenumericfactoroptions/pivottolerance.md) values of the [`SparseNumericFactorOptions`](sparsenumericfactoroptions.md) structure.
+In some cases — for example, when the original matrix’s eigenvalues are close to zero — the computed numerical inertia may not be an accurate reflection of the true inertia. In such cases, the computed numerical inertia is dependent on the [`zeroTolerance`](./sparsenumericfactoroptions/zerotolerance.md) and [`pivotTolerance`](./sparsenumericfactoroptions/pivottolerance.md) values of the [`SparseNumericFactorOptions`](./sparsenumericfactoroptions.md) structure.
 
-> ❗ **Important**:  This function supports only [`SparseFactorizationLDLTTPP`](sparsefactorizationldlttpp.md) factorizations.
+> ❗ **Important**:  This function supports only [`SparseFactorizationLDLTTPP`](./sparsefactorizationldlttpp.md) factorizations.
 
 ## Parameters
 
-- `Factored`: The [`SparseFactorizationLDLTTPP`](sparsefactorizationldlttpp.md) factorization.
+- `Factored`: The [`SparseFactorizationLDLTTPP`](./sparsefactorizationldlttpp.md) factorization.
 - `num_positive`: On return, the number of positive pivots the sparse factorization functions take during the factorization of `Factored`.
 - `num_zero`: On return, the number of zero pivots the sparse factorization functions take during the factorization of `Factored`.
 - `num_negative`: On return, the number of negative pivots the sparse factorization functions take during the factorization of `Factored`.
 
 ## See Also
 
-- [func SparseGetInertia(SparseOpaqueFactorization_Double, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>) -> Int32](sparsegetinertia(_:_:_:_:)-2ykzq.md)
+### Factorization inertia functions
+- [func SparseGetInertia(SparseOpaqueFactorization_Double, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>) -> Int32](./sparsegetinertia%28_,_,_,_%29-2ykzq.md)
   Returns the inertia of a double-precision *LDLᵀ* factorization.
-- [func SparseGetInertia(SparseOpaqueFactorization_Complex_Double, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>) -> Int32](sparsegetinertia(_:_:_:_:)-2gc7f.md)
+- [func SparseGetInertia(SparseOpaqueFactorization_Complex_Double, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>) -> Int32](./sparsegetinertia%28_,_,_,_%29-2gc7f.md)
   Returns the inertia of an LDLT factorization in complex double.
-- [func SparseGetInertia(SparseOpaqueFactorization_Complex_Float, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>) -> Int32](sparsegetinertia(_:_:_:_:)-6ca5h.md)
+- [func SparseGetInertia(SparseOpaqueFactorization_Complex_Float, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>) -> Int32](./sparsegetinertia%28_,_,_,_%29-6ca5h.md)
   Returns the inertia of an LDLT factorization in complex float.
-- [struct SparseUpdate_t](sparseupdate_t.md)
+- [struct SparseUpdate_t](./sparseupdate_t.md)
   Low-rank update algorithm selector
-- [var SparseUpdatePartialRefactor: SparseUpdate_t](sparseupdatepartialrefactor.md)
+- [var SparseUpdatePartialRefactor: SparseUpdate_t](./sparseupdatepartialrefactor.md)
   Low-rank update algorithm selector
 
 

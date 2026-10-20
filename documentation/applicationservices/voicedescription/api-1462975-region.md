@@ -1,7 +1,8 @@
 # region
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A code that indicates the region represented by the voice.
 
@@ -12,6 +13,10 @@ A code that indicates the region represented by the voice.
 
 ```swift
 var region: Int16
+```
+
+```c
+SInt16 region;
 ```
 
 

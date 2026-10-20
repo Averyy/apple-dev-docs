@@ -1,7 +1,8 @@
 # HIShapeGetAsQDRgn(_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 func HIShapeGetAsQDRgn(_ inShape: HIShape!, _ outRgn: RgnHandle!) -> OSStatus
+```
+
+```c
+OSStatus HIShapeGetAsQDRgn(HIShapeRef inShape, RgnHandle outRgn);
 ```
 
 

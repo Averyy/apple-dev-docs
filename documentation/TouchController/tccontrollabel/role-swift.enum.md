@@ -1,7 +1,8 @@
 # TCControlLabel.Role
 
 **Framework**: Touch Controller  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Defines the role for a control label. This determines the type of control on the touch controller’s associated GCController.
 
@@ -16,29 +17,34 @@ Defines the role for a control label. This determines the type of control on the
 enum Role
 ```
 
+```c
+enum TCControlLabelRole : NSInteger;
+```
+
 ## Topics
 
 ### Roles
-- [TCControlLabel.Role.button](tccontrollabel/role-swift.enum/button.md)
+- [TCControlLabel.Role.button](./role-swift.enum/button.md)
   A label for a button input controller.
-- [TCControlLabel.Role.directionPad](tccontrollabel/role-swift.enum/directionpad.md)
+- [TCControlLabel.Role.directionPad](./role-swift.enum/directionpad.md)
   A label for a direction pad controller.
 ### Creating a role
-- [init?(rawValue: Int)](tccontrollabel/role-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./role-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var role: TCControlLabel.Role](tccontrollabel/role-swift.property.md)
+### Inspecting the control
+- [var role: TCControlLabel.Role](./role-swift.property.md)
   The type of the control label.
 
 

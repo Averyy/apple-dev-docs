@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and initializes a decimal with the provided integer value.
 
@@ -22,17 +23,18 @@ init(_ value: Int64)
 
 ## See Also
 
-- [init?<T>(exactly: T)](decimal/init(exactly:).md)
+### Creating a decimal from an integer
+- [init?<T>(exactly: T)](./init%28exactly%29.md)
   Creates a new decimal value exactly representing the provided integer.
-- [init(Int)](decimal/init(_:)-2tcho.md)
+- [init(Int)](./init%28_%29-2tcho.md)
   Creates and initializes a decimal with the provided integer value.
-- [init(Int8)](decimal/init(_:)-4gk29.md)
+- [init(Int8)](./init%28_%29-4gk29.md)
   Creates and initializes a decimal with the provided integer value.
-- [init(Int16)](decimal/init(_:)-5aznh.md)
+- [init(Int16)](./init%28_%29-5aznh.md)
   Creates and initializes a decimal with the provided integer value.
-- [init(Int32)](decimal/init(_:)-7dmlc.md)
+- [init(Int32)](./init%28_%29-7dmlc.md)
   Creates and initializes a decimal with the provided integer value.
-- [init(integerLiteral: Int)](decimal/init(integerliteral:).md)
+- [init(integerLiteral: Int)](./init%28integerliteral%29.md)
   Creates and initializes a decimal with the provided integer value.
 
 

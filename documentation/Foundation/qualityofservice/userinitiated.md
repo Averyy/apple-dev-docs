@@ -1,7 +1,8 @@
 # QualityOfService.userInitiated
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 8.0+
@@ -18,16 +19,21 @@
 case userInitiated
 ```
 
+```c
+NSQualityOfServiceUserInitiated
+```
+
 #### Discussion
 
 Used for performing work that has been explicitly requested by the user, and for which results must be immediately presented in order to allow for further user interaction. For example, loading an email after a user has selected it in a message list.
 
 ## See Also
 
-- [QualityOfService.userInteractive](qualityofservice/userinteractive.md)
-- [QualityOfService.utility](qualityofservice/utility.md)
-- [QualityOfService.background](qualityofservice/background.md)
-- [QualityOfService.default](qualityofservice/default.md)
+### Constants
+- [QualityOfService.userInteractive](./userinteractive.md)
+- [QualityOfService.utility](./utility.md)
+- [QualityOfService.background](./background.md)
+- [QualityOfService.default](./default.md)
 
 
 ---

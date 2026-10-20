@@ -1,7 +1,8 @@
 # TextProxy
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A proxy for a text view that custom text renderers use.
 
@@ -23,18 +24,19 @@ struct TextProxy
 ## Topics
 
 ### Instance Methods
-- [func sizeThatFits(ProposedViewSize) -> CGSize](textproxy/sizethatfits(_:).md)
+- [func sizeThatFits(ProposedViewSize) -> CGSize](./textproxy/sizethatfits%28_%29.md)
   Returns the space needed by the text view, for a proposed size.
 
 ## See Also
 
-- [Creating visual effects with SwiftUI](creating-visual-effects-with-swiftui.md)
+### Rendering text
+- [Creating visual effects with SwiftUI](./creating-visual-effects-with-swiftui.md)
   Add scroll effects, rich color treatments, custom transitions, and advanced effects using shaders and a text renderer.
-- [protocol TextAttribute](textattribute.md)
+- [protocol TextAttribute](./textattribute.md)
   A value that you can attach to text views and that text renderers can query.
-- [func textRenderer<T>(T) -> some View](view/textrenderer(_:).md)
+- [func textRenderer<T>(T) -> some View](./view/textrenderer%28_%29.md)
   Returns a new view such that any text views within it will use `renderer` to draw themselves.
-- [protocol TextRenderer](textrenderer.md)
+- [protocol TextRenderer](./textrenderer.md)
   A value that can replace the default text view rendering behavior.
 
 

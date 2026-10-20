@@ -1,7 +1,8 @@
 # DeviceFitStatus.eyesBackward
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 User’s eyes are positioned farther from the display than the optimal device fit range.
 

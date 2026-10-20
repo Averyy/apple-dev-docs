@@ -1,7 +1,8 @@
 # detached(name:priority:operation:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Runs the given throwing operation asynchronously as part of a new *unstructured* *detached* top-level task.
 
@@ -20,6 +21,8 @@ Runs the given throwing operation asynchronously as part of a new *unstructured*
 @discardableResult
 static func detached(name: String? = nil, priority: TaskPriority? = nil, operation: sending @escaping @isolated(any) () async throws -> Success) -> Task<Success, any Error>
 ```
+
+Available when `Success` conforms to `Sendable` and `Failure` is `any Error`.
 
 #### Return Value
 
@@ -41,11 +44,12 @@ You need to keep a reference to the task if you want to cancel it by calling the
 
 ## See Also
 
-- [static func detached(name: String?, priority: TaskPriority?, operation: sending () async -> Success) -> Task<Success, Never>](task/detached(name:priority:operation:)-9xki7.md)
+### Creating a Detached Task
+- [static func detached(name: String?, priority: TaskPriority?, operation: sending () async -> Success) -> Task<Success, Never>](./detached%28name,priority,operation%29-9xki7.md)
   Runs the given nonthrowing operation asynchronously as part of a new *unstructured* *detached* top-level task.
-- [static func detached(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> Success) -> Task<Success, any Error>](task/detached(name:executorpreference:priority:operation:)-6r16s.md)
+- [static func detached(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> Success) -> Task<Success, any Error>](./detached%28name,executorpreference,priority,operation%29-6r16s.md)
   Runs the given throwing operation asynchronously as part of a new *unstructured* *detached* top-level task.
-- [static func detached(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async -> Success) -> Task<Success, Never>](task/detached(name:executorpreference:priority:operation:)-75ffe.md)
+- [static func detached(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async -> Success) -> Task<Success, Never>](./detached%28name,executorpreference,priority,operation%29-75ffe.md)
   Runs the given nonthrowing operation asynchronously as part of a new *unstructured* *detached* top-level task.
 
 

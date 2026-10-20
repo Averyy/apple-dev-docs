@@ -1,7 +1,8 @@
 # withUnsafeCurrentTask(body:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Calls a closure with an unsafe reference to the current task.
 
@@ -36,7 +37,8 @@ Storing an unsafe reference to a task doesn’t affect the task’s actual life 
 
 ## See Also
 
-- [func withUnsafeCurrentTask<T>(body: nonisolated(nonsending) (UnsafeCurrentTask?) async throws -> T) async rethrows -> T](withunsafecurrenttask(body:)-udlb.md)
+### Getting an Unsafe Reference to the Current Task
+- [func withUnsafeCurrentTask<T>(body: nonisolated(nonsending) (UnsafeCurrentTask?) async throws -> T) async rethrows -> T](./withunsafecurrenttask%28body%29-udlb.md)
   Calls a closure with an unsafe reference to the current task.
 
 

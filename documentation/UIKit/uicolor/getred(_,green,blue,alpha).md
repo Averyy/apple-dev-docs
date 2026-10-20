@@ -1,7 +1,8 @@
 # getRed(_:green:blue:alpha:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the components that form the color in the RGB color space.
 
@@ -9,7 +10,7 @@ Returns the components that form the color in the RGB color space.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,9 +20,13 @@ Returns the components that form the color in the RGB color space.
 func getRed(_ red: UnsafeMutablePointer<CGFloat>?, green: UnsafeMutablePointer<CGFloat>?, blue: UnsafeMutablePointer<CGFloat>?, alpha: UnsafeMutablePointer<CGFloat>?) -> Bool
 ```
 
+```objc
+- (BOOL) getRed:(CGFloat *) red green:(CGFloat *) green blue:(CGFloat *) blue alpha:(CGFloat *) alpha;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the color could be converted, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the color could be converted, [`false`](../../Swift/false.md) otherwise.
 
 #### Discussion
 
@@ -36,19 +41,20 @@ If the color is in a compatible color space, it converts into RGB format and its
 
 ## See Also
 
-- [Determining color values with color spaces](determining-color-values-with-color-spaces.md)
+### Getting the color information
+- [Determining color values with color spaces](../determining-color-values-with-color-spaces.md)
   Change the system’s interpretation of a color value for display by selecting a color space.
-- [var cgColor: CGColor](uicolor/cgcolor.md)
+- [var cgColor: CGColor](./cgcolor.md)
   The Quartz color that corresponds to the color object.
-- [var ciColor: CIColor](uicolor/cicolor.md)
+- [var ciColor: CIColor](./cicolor.md)
   The Core Image color that corresponds to the color object.
-- [func getHue(UnsafeMutablePointer<CGFloat>?, saturation: UnsafeMutablePointer<CGFloat>?, brightness: UnsafeMutablePointer<CGFloat>?, alpha: UnsafeMutablePointer<CGFloat>?) -> Bool](uicolor/gethue(_:saturation:brightness:alpha:).md)
+- [func getHue(UnsafeMutablePointer<CGFloat>?, saturation: UnsafeMutablePointer<CGFloat>?, brightness: UnsafeMutablePointer<CGFloat>?, alpha: UnsafeMutablePointer<CGFloat>?) -> Bool](./gethue%28_,saturation,brightness,alpha%29.md)
   Returns the components that form the color in the HSB color space.
-- [func getWhite(UnsafeMutablePointer<CGFloat>?, alpha: UnsafeMutablePointer<CGFloat>?) -> Bool](uicolor/getwhite(_:alpha:).md)
+- [func getWhite(UnsafeMutablePointer<CGFloat>?, alpha: UnsafeMutablePointer<CGFloat>?) -> Bool](./getwhite%28_,alpha%29.md)
   Returns the grayscale components of the color.
-- [var linearExposure: CGFloat](uicolor/linearexposure.md)
+- [var linearExposure: CGFloat](./linearexposure.md)
   The linear brightness multiplier that was applied when generating this color. Colors created with an exposure by UIColor create CGColors that are tagged with a contentHeadroom value. While CGColors created without a contentHeadroom tag will return 0 from CGColorGetHeadroom, UIColors generated in a similar fashion return a linearExposure of 1.0.
-- [var accessibilityName: String](uicolor/accessibilityname.md)
+- [var accessibilityName: String](./accessibilityname.md)
   A localized description of the color for accessibility attributes.
 
 

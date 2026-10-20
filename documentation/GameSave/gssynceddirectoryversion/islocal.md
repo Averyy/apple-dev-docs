@@ -1,7 +1,8 @@
 # isLocal
 
 **Framework**: GameSave  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 `YES` if the directory version is local; otherwise `NO`.
 
@@ -16,6 +17,10 @@
 
 ```swift
 var isLocal: Bool { get }
+```
+
+```objc
+@property (readonly) BOOL isLocal;
 ```
 
 

@@ -1,7 +1,8 @@
 # contents
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of content types that map to corresponding string text suggestions for AutoFill functionality.
 
@@ -15,6 +16,10 @@ A dictionary of content types that map to corresponding string text suggestions 
 
 ```swift
 var contents: [UITextContentType : String] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSDictionary<NSString *,NSString *> * contents;
 ```
 
 

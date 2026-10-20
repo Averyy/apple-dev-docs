@@ -1,7 +1,8 @@
 # wrappedElementType
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying type of the column’s elements.
 
@@ -22,13 +23,14 @@ var wrappedElementType: any Any.Type { get }
 
 ## See Also
 
-- [var name: String](anycolumn/name.md)
+### Inspecting a Type-Erased Column
+- [var name: String](./name.md)
   The name of the column.
-- [var count: Int](anycolumn/count.md)
+- [var count: Int](./count.md)
   The number of elements in the column.
-- [var missingCount: Int](anycolumn/missingcount.md)
+- [var missingCount: Int](./missingcount.md)
   The number of missing elements in the column.
-- [func isNil(at: Int) -> Bool](anycolumn/isnil(at:).md)
+- [func isNil(at: Int) -> Bool](./isnil%28at%29.md)
   Returns a Boolean that indicates whether the element at the index is missing.
 
 

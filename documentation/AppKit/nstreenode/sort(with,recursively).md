@@ -1,7 +1,8 @@
 # sort(with:recursively:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sorts the receiver’s subtree using the values of the represented objects with the specified sort descriptors.
 
@@ -12,6 +13,10 @@ Sorts the receiver’s subtree using the values of the represented objects with 
 
 ```swift
 func sort(with sortDescriptors: [NSSortDescriptor], recursively: Bool)
+```
+
+```objc
+- (void) sortWithSortDescriptors:(NSArray<NSSortDescriptor *> *) sortDescriptors recursively:(BOOL) recursively;
 ```
 
 #### Discussion

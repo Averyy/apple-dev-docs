@@ -1,7 +1,8 @@
 # UNError
 
 **Framework**: User Notifications  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represents a notification error.
 
@@ -23,49 +24,50 @@ struct UNError
 ## Topics
 
 ### Type Properties
-- [static var notificationsNotAllowed: UNError.Code](unerror/notificationsnotallowed.md)
+- [static var notificationsNotAllowed: UNError.Code](./unerror/notificationsnotallowed.md)
   Notifications are not allowed.
-- [static var attachmentInvalidURL: UNError.Code](unerror/attachmentinvalidurl.md)
+- [static var attachmentInvalidURL: UNError.Code](./unerror/attachmentinvalidurl.md)
   The URL for an attachment was invalid.
-- [static var attachmentUnrecognizedType: UNError.Code](unerror/attachmentunrecognizedtype.md)
+- [static var attachmentUnrecognizedType: UNError.Code](./unerror/attachmentunrecognizedtype.md)
   The file type of an attachment is not supported.
-- [static var attachmentInvalidFileSize: UNError.Code](unerror/attachmentinvalidfilesize.md)
+- [static var attachmentInvalidFileSize: UNError.Code](./unerror/attachmentinvalidfilesize.md)
   An attachment is too large.
-- [static var attachmentNotInDataStore: UNError.Code](unerror/attachmentnotindatastore.md)
+- [static var attachmentNotInDataStore: UNError.Code](./unerror/attachmentnotindatastore.md)
   The specified attachment is not in the system data store.
-- [static var attachmentMoveIntoDataStoreFailed: UNError.Code](unerror/attachmentmoveintodatastorefailed.md)
+- [static var attachmentMoveIntoDataStoreFailed: UNError.Code](./unerror/attachmentmoveintodatastorefailed.md)
   An error occurred when trying to move an attachment to the system data store.
-- [static var attachmentCorrupt: UNError.Code](unerror/attachmentcorrupt.md)
+- [static var attachmentCorrupt: UNError.Code](./unerror/attachmentcorrupt.md)
   The file for an attachment is corrupt.
-- [static var notificationInvalidNoDate: UNError.Code](unerror/notificationinvalidnodate.md)
+- [static var notificationInvalidNoDate: UNError.Code](./unerror/notificationinvalidnodate.md)
   The notification does not have an associated date, but should.
-- [static var notificationInvalidNoContent: UNError.Code](unerror/notificationinvalidnocontent.md)
+- [static var notificationInvalidNoContent: UNError.Code](./unerror/notificationinvalidnocontent.md)
   The notification has no user-facing content, but should.
-- [static var contentProvidingInvalid: UNError.Code](unerror/contentprovidinginvalid.md)
-- [static var contentProvidingObjectNotAllowed: UNError.Code](unerror/contentprovidingobjectnotallowed.md)
-- [static var badgeInputInvalid: UNError.Code](unerror/badgeinputinvalid.md)
+- [static var contentProvidingInvalid: UNError.Code](./unerror/contentprovidinginvalid.md)
+- [static var contentProvidingObjectNotAllowed: UNError.Code](./unerror/contentprovidingobjectnotallowed.md)
+- [static var badgeInputInvalid: UNError.Code](./unerror/badgeinputinvalid.md)
 ### Error Information
-- [static var errorDomain: String](unerror/errordomain.md)
-- [let UNErrorDomain: String](unerrordomain.md)
+- [static var errorDomain: String](./unerror/errordomain.md)
+- [let UNErrorDomain: String](./unerrordomain.md)
   The error domain for notifications.
-- [UNError.Code](unerror/code.md)
+- [UNError.Code](./unerror/code.md)
   Constants that identify notification errors.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [UNError.Code](unerror/code.md)
+### Handling errors
+- [UNError.Code](./unerror/code.md)
   Constants that identify notification errors.
-- [let UNErrorDomain: String](unerrordomain.md)
+- [let UNErrorDomain: String](./unerrordomain.md)
   The error domain for notifications.
 
 

@@ -1,7 +1,8 @@
 # kIOUserAudioObjectIDDriver
 
 **Framework**: AudioDriverKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The audio object ID of the driver.
 
@@ -10,13 +11,13 @@ The audio object ID of the driver.
 
 ## Declaration
 
-```swift
+```cpp
 constexpr const IOUserAudioObjectID kIOUserAudioObjectIDDriver;
 ```
 
 #### Discussion
 
-This [`IOUserAudioObjectID`](audiodriverkit/iouseraudioobjectid.md) always refers to the one and only instance of the [`IOUserAudioDriver`](iouseraudiodriver.md).
+This [`IOUserAudioObjectID`](./iouseraudioobjectid.md) always refers to the one and only instance of the [`IOUserAudioDriver`](../iouseraudiodriver.md).
 
 
 ---

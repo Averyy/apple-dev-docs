@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The value along the axis, in unit coordinates.
@@ -20,13 +21,18 @@ The value along the axis, in unit coordinates.
 var value: Float { get }
 ```
 
+```objc
+@property (readonly) float value;
+```
+
 ## See Also
 
-- [var valueDidChangeHandler: ((any GCPhysicalInputElement, any GCAxisInput, Float) -> Void)?](gcaxisinput/valuedidchangehandler.md)
+### Getting the value
+- [var valueDidChangeHandler: ((any GCPhysicalInputElement, any GCAxisInput, Float) -> Void)?](./valuedidchangehandler.md)
   The block that the input object calls when the value changes.
-- [var lastValueTimestamp: TimeInterval](gcaxisinput/lastvaluetimestamp.md)
+- [var lastValueTimestamp: TimeInterval](./lastvaluetimestamp.md)
   The time of the most recent value change.
-- [var lastValueLatency: TimeInterval](gcaxisinput/lastvaluelatency.md)
+- [var lastValueLatency: TimeInterval](./lastvaluelatency.md)
   The time in seconds between the last value change and the current time.
 
 

@@ -1,7 +1,8 @@
 # CustomPlaygroundDisplayConvertible
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that supplies a custom description for playground logging.
 
@@ -43,7 +44,7 @@ Playground logging generates a richer, more specialized description of core type
 
 Playground logging may also be able to support specialized descriptions of other types.
 
-#### Conforming to the Customplaygrounddisplayconvertible Protocol
+#### Conforming to the CustomPlaygroundDisplayConvertible Protocol
 
 To add `CustomPlaygroundDisplayConvertible` conformance to your custom type, implement the `playgroundDescription` property. If your implementation returns an instance of one of the types above, that type’s specialized description is used. If you return any other type, a structured description is generated.
 
@@ -54,18 +55,19 @@ If your type’s `playgroundDescription` returns an instance which itself confor
 ## Topics
 
 ### Instance Properties
-- [var playgroundDescription: Any](customplaygrounddisplayconvertible/playgrounddescription.md)
+- [var playgroundDescription: Any](./customplaygrounddisplayconvertible/playgrounddescription.md)
   A custom playground description for this instance.
 
 ## See Also
 
-- [protocol CustomReflectable](customreflectable.md)
+### Customizing Your Type’s Reflection
+- [protocol CustomReflectable](./customreflectable.md)
   A type that explicitly supplies its own mirror.
-- [protocol CustomLeafReflectable](customleafreflectable.md)
+- [protocol CustomLeafReflectable](./customleafreflectable.md)
   A type that explicitly supplies its own mirror, but whose descendant classes are not represented in the mirror unless they also override `customMirror`.
-- [typealias PlaygroundQuickLook](playgroundquicklook.md)
+- [typealias PlaygroundQuickLook](./playgroundquicklook.md)
   The sum of types that can be used as a Quick Look representation.
-- [macro DebugDescription()](debugdescription().md)
+- [macro DebugDescription()](./debugdescription%28%29.md)
   Converts description definitions to a debugger Type Summary.
 
 

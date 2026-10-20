@@ -1,7 +1,8 @@
 # TKError.Code.badParameter
 
 **Framework**: CryptoTokenKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An invalid parameter was provided.
 
@@ -20,27 +21,32 @@ An invalid parameter was provided.
 case badParameter
 ```
 
+```c
+TKErrorCodeBadParameter
+```
+
 ## See Also
 
-- [TKError.Code.notImplemented](tkerror/code/notimplemented.md)
+### Error Codes
+- [TKError.Code.notImplemented](./notimplemented.md)
   The functionality is not implemented.
-- [TKError.Code.communicationError](tkerror/code/communicationerror.md)
+- [TKError.Code.communicationError](./communicationerror.md)
   A communication error occurred.
-- [TKError.Code.corruptedData](tkerror/code/corrupteddata.md)
+- [TKError.Code.corruptedData](./corrupteddata.md)
   The data was corrupted.
-- [TKError.Code.canceledByUser](tkerror/code/canceledbyuser.md)
+- [TKError.Code.canceledByUser](./canceledbyuser.md)
   The operation was canceled by the user.
-- [TKError.Code.authenticationFailed](tkerror/code/authenticationfailed.md)
+- [TKError.Code.authenticationFailed](./authenticationfailed.md)
   Authentication failed.
-- [TKError.Code.objectNotFound](tkerror/code/objectnotfound.md)
+- [TKError.Code.objectNotFound](./objectnotfound.md)
   The object was not found.
-- [TKError.Code.tokenNotFound](tkerror/code/tokennotfound.md)
+- [TKError.Code.tokenNotFound](./tokennotfound.md)
   The token was not found.
-- [TKError.Code.authenticationNeeded](tkerror/code/authenticationneeded.md)
+- [TKError.Code.authenticationNeeded](./authenticationneeded.md)
   Authentication is needed.
-- [static var TKErrorAuthenticationFailed: TKError.Code](tkerror/code/tkerrorauthenticationfailed.md)
-- [static var TKErrorObjectNotFound: TKError.Code](tkerror/code/tkerrorobjectnotfound.md)
-- [static var TKErrorTokenNotFound: TKError.Code](tkerror/code/tkerrortokennotfound.md)
+- [static var TKErrorAuthenticationFailed: TKError.Code](./tkerrorauthenticationfailed.md)
+- [static var TKErrorObjectNotFound: TKError.Code](./tkerrorobjectnotfound.md)
+- [static var TKErrorTokenNotFound: TKError.Code](./tkerrortokennotfound.md)
 
 
 ---

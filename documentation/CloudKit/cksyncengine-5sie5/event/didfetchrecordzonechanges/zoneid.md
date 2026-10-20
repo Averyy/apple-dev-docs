@@ -1,7 +1,8 @@
 # zoneID
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The associated record zone’s unique identifier.
 
@@ -11,7 +12,7 @@ The associated record zone’s unique identifier.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

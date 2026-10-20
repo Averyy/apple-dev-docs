@@ -1,7 +1,8 @@
 # SceneStorage
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A property wrapper type that reads and writes to persisted, per-scene storage.
 
@@ -36,33 +37,34 @@ If the `Scene` is explicitly destroyed (e.g. the switcher snapshot is destroyed 
 ## Topics
 
 ### Storing a value
-- [init(wrappedValue:_:)](scenestorage/init(wrappedvalue:_:).md)
+- [init(wrappedValue:_:)](./scenestorage/init%28wrappedvalue,_%29.md)
   Creates a property that can save and restore an integer, transforming it to a `RawRepresentable` data type.
-- [init(_:)](scenestorage/init(_:).md)
+- [init(_:)](./scenestorage/init%28_%29.md)
   Creates a property that can save and restore an Optional boolean.
 ### Getting the value
-- [var wrappedValue: Value](scenestorage/wrappedvalue.md)
+- [var wrappedValue: Value](./scenestorage/wrappedvalue.md)
   The underlying value referenced by the state variable.
-- [var projectedValue: Binding<Value>](scenestorage/projectedvalue.md)
+- [var projectedValue: Binding<Value>](./scenestorage/projectedvalue.md)
   A binding to the state value.
 ### Initializers
-- [init(wrappedValue: Value, String, store: UserDefaults?)](scenestorage/init(wrappedvalue:_:store:).md)
+- [init(wrappedValue: Value, String, store: UserDefaults?)](./scenestorage/init%28wrappedvalue,_,store%29.md)
   Creates a property that can save and restore tab sidebar customizations.
 
 ## Relationships
 
 ### Conforms To
-- [DynamicProperty](dynamicproperty.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [DynamicProperty](./dynamicproperty.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Restoring your app’s state with SwiftUI](restoring-your-app-s-state-with-swiftui.md)
+### Saving state across app launches
+- [Restoring your app’s state with SwiftUI](./restoring-your-app-s-state-with-swiftui.md)
   Provide app continuity for users by preserving their current activities.
-- [func defaultAppStorage(UserDefaults) -> some View](view/defaultappstorage(_:).md)
+- [func defaultAppStorage(UserDefaults) -> some View](./view/defaultappstorage%28_%29.md)
   The default store used by `AppStorage` contained within the view.
-- [struct AppStorage](appstorage.md)
+- [struct AppStorage](./appstorage.md)
   A property wrapper type that reflects a value from `UserDefaults` and invalidates a view on a change in value in that user default.
 
 

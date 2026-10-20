@@ -1,7 +1,8 @@
 # SKSummaryGetSentenceSummaryInfo(_:_:_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets detailed information about a body of text for constructing a custom sentence-based summary string.
 
@@ -14,7 +15,11 @@ Gets detailed information about a body of text for constructing a custom sentenc
 func SKSummaryGetSentenceSummaryInfo(_ summary: SKSummary!, _ numSentencesInSummary: CFIndex, _ outRankOrderOfSentences: UnsafeMutablePointer<CFIndex>!, _ outSentenceIndexOfSentences: UnsafeMutablePointer<CFIndex>!, _ outParagraphIndexOfSentences: UnsafeMutablePointer<CFIndex>!) -> CFIndex
 ```
 
-#### Return_value
+```c
+CFIndex SKSummaryGetSentenceSummaryInfo(SKSummaryRef summary, CFIndex numSentencesInSummary, CFIndex *outRankOrderOfSentences, CFIndex *outSentenceIndexOfSentences, CFIndex *outParagraphIndexOfSentences);
+```
+
+#### Return Value
 
 The number of sentences in the summary.
 
@@ -23,28 +28,29 @@ The number of sentences in the summary.
 - `summary`: The summarization object containing the text from which you want to build a summary.
 - `numSentencesInSummary`: The maximum number of sentences you want in the summary.
 - `outRankOrderOfSentences`: On input, a pointer to an array of CFIndex objects. On output, points to the previously allocated array, which now lists the summarization relevance rank of each sentence in the original text. The most important sentence gets a rank of 1. The array size must equal `numSentencesInSummary`, or else be `NULL` if you don’t want to get the rank orders.
-- `outSentenceIndexOfSentences`: On input, a pointer to an array of CFIndex objects. On output, points to the previously allocated array, which now contains the ordinal number for each sentence in the original text. Use the [`SKSummaryCopySentenceAtIndex(_:_:)`](1450287-sksummarycopysentenceatindex.md) function with one of these numbers to get the corresponding sentence. The array size must equal `numSentencesInSummary`, or else be `NULL` if you don’t want to get the ordinal numbers of the sentences.
+- `outSentenceIndexOfSentences`: On input, a pointer to an array of CFIndex objects. On output, points to the previously allocated array, which now contains the ordinal number for each sentence in the original text. Use the [`SKSummaryCopySentenceAtIndex(_:_:)`](./api-1450287-sksummarycopysentenceatindex.md) function with one of these numbers to get the corresponding sentence. The array size must equal `numSentencesInSummary`, or else be `NULL` if you don’t want to get the ordinal numbers of the sentences.
 - `outParagraphIndexOfSentences`: On input, a pointer to an array of CFIndex objects. On output, points to the previously allocated array, which now contains the ordinal number for the paragraph that each corresponding sentence, referenced in `outSentenceIndexOfSentences`, appears in. The array size must equal `numSentencesInSummary`, or else be `NULL` if you don’t want to get the ordinal numbers of the sentences.
 
 ## See Also
 
-- [func SKSummaryCreateWithString(CFString!) -> Unmanaged<SKSummary>!](1446229-sksummarycreatewithstring.md)
+### Working With Summarization
+- [func SKSummaryCreateWithString(CFString!) -> Unmanaged<SKSummary>!](./api-1446229-sksummarycreatewithstring.md)
   Creates a summary object based on a text string.
-- [func SKSummaryGetParagraphSummaryInfo(SKSummary!, CFIndex, UnsafeMutablePointer<CFIndex>!, UnsafeMutablePointer<CFIndex>!) -> CFIndex](1447517-sksummarygetparagraphsummaryinfo.md)
+- [func SKSummaryGetParagraphSummaryInfo(SKSummary!, CFIndex, UnsafeMutablePointer<CFIndex>!, UnsafeMutablePointer<CFIndex>!) -> CFIndex](./api-1447517-sksummarygetparagraphsummaryinfo.md)
   Gets detailed information about a body of text for constructing a custom paragraph-based summary string.
-- [func SKSummaryGetSentenceCount(SKSummary!) -> CFIndex](1450009-sksummarygetsentencecount.md)
+- [func SKSummaryGetSentenceCount(SKSummary!) -> CFIndex](./api-1450009-sksummarygetsentencecount.md)
   Gets the number of sentences in a summarization object.
-- [func SKSummaryGetParagraphCount(SKSummary!) -> CFIndex](1449304-sksummarygetparagraphcount.md)
+- [func SKSummaryGetParagraphCount(SKSummary!) -> CFIndex](./api-1449304-sksummarygetparagraphcount.md)
   Gets the number of paragraphs in a summarization object.
-- [func SKSummaryCopySentenceAtIndex(SKSummary!, CFIndex) -> Unmanaged<CFString>!](1450287-sksummarycopysentenceatindex.md)
+- [func SKSummaryCopySentenceAtIndex(SKSummary!, CFIndex) -> Unmanaged<CFString>!](./api-1450287-sksummarycopysentenceatindex.md)
   Gets a specified sentence from the text in a summarization object.
-- [func SKSummaryCopyParagraphAtIndex(SKSummary!, CFIndex) -> Unmanaged<CFString>!](1445711-sksummarycopyparagraphatindex.md)
+- [func SKSummaryCopyParagraphAtIndex(SKSummary!, CFIndex) -> Unmanaged<CFString>!](./api-1445711-sksummarycopyparagraphatindex.md)
   Gets a specified paragraph from the text in a summarization object.
-- [func SKSummaryCopySentenceSummaryString(SKSummary!, CFIndex) -> Unmanaged<CFString>!](1449700-sksummarycopysentencesummarystri.md)
+- [func SKSummaryCopySentenceSummaryString(SKSummary!, CFIndex) -> Unmanaged<CFString>!](./api-1449700-sksummarycopysentencesummarystri.md)
   Gets a text string consisting of a summary with, at most, the requested number of sentences.
-- [func SKSummaryCopyParagraphSummaryString(SKSummary!, CFIndex) -> Unmanaged<CFString>!](1449746-sksummarycopyparagraphsummarystr.md)
+- [func SKSummaryCopyParagraphSummaryString(SKSummary!, CFIndex) -> Unmanaged<CFString>!](./api-1449746-sksummarycopyparagraphsummarystr.md)
   Gets a text string consisting of a summary with, at most, the requested number of paragraphs.
-- [func SKSummaryGetTypeID() -> CFTypeID](1444796-sksummarygettypeid.md)
+- [func SKSummaryGetTypeID() -> CFTypeID](./api-1444796-sksummarygettypeid.md)
   Gets the type identifier for Search Kit summarization objects.
 
 

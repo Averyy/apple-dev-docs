@@ -1,7 +1,8 @@
 # addressString
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string used to initialize the geocoder.
 
@@ -20,13 +21,18 @@ The string used to initialize the geocoder.
 var addressString: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * addressString;
+```
+
 ## See Also
 
-- [func getMapItems(completionHandler: ([MKMapItem]?, (any Error)?) -> Void)](mkgeocodingrequest/getmapitems(completionhandler:).md)
+### Getting information about the geocoder
+- [func getMapItems(completionHandler: ([MKMapItem]?, (any Error)?) -> Void)](./getmapitems%28completionhandler%29.md)
   Returns the map items relevant to the geocoded location.
-- [var preferredLocale: Locale?](mkgeocodingrequest/preferredlocale.md)
+- [var preferredLocale: Locale?](./preferredlocale.md)
   A value that indicates the default locale the geocoder should use when processing requests.
-- [var region: MKCoordinateRegion](mkgeocodingrequest/region.md)
+- [var region: MKCoordinateRegion](./region.md)
   The geographic region for the framework to use as the bounds for the request; defaults to a region that covers the whole world.
 
 

@@ -1,7 +1,8 @@
 # constant(name:values:shape:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers and returns a tensor with the specified shape that contains constant data, such as weight or bias values.
 
@@ -24,7 +25,7 @@ func constant<T>(name: String? = nil, values: some AccelerateBuffer, shape: [Int
 
 For example, the following code defines the tensor `y` that contains the single-precision values `[1, 2, 3, 4, 5, 6, 7, 8]`:
 
-```None
+```
        let context = try BNNSGraph.makeContext ({
            builder in
 

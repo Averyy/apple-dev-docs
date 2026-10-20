@@ -1,7 +1,8 @@
 # init(undefined:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an undefined feature value of a specific type.
 
@@ -22,7 +23,8 @@ init(undefined type: MLFeatureType)
 
 ## See Also
 
-- [init(_:)](mlsendablefeaturevalue/init(_:).md)
+### Creating a sendable feature value
+- [init(_:)](./init%28_%29.md)
   Creates a feature value containing a double-precision floating-point value.
 
 

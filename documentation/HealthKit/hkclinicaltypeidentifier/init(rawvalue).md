@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new clinical record type identifier for the provided string.
 

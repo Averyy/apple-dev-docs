@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,12 +18,12 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kBluetoothLEMaxTXOctetsDefault](1640226-anonymous/kbluetoothlemaxtxoctetsdefault.md)
-- [kBluetoothLEMaxTXOctetsMax](1640226-anonymous/kbluetoothlemaxtxoctetsmax.md)
-- [kBluetoothLEMaxTXOctetsMin](1640226-anonymous/kbluetoothlemaxtxoctetsmin.md)
-- [kBluetoothLEMaxTXTimeDefault](1640226-anonymous/kbluetoothlemaxtxtimedefault.md)
-- [kBluetoothLEMaxTXTimeMax](1640226-anonymous/kbluetoothlemaxtxtimemax.md)
-- [kBluetoothLEMaxTXTimeMin](1640226-anonymous/kbluetoothlemaxtxtimemin.md)
+- [kBluetoothLEMaxTXOctetsDefault](./api-1640226-anonymous/kbluetoothlemaxtxoctetsdefault.md)
+- [kBluetoothLEMaxTXOctetsMax](./api-1640226-anonymous/kbluetoothlemaxtxoctetsmax.md)
+- [kBluetoothLEMaxTXOctetsMin](./api-1640226-anonymous/kbluetoothlemaxtxoctetsmin.md)
+- [kBluetoothLEMaxTXTimeDefault](./api-1640226-anonymous/kbluetoothlemaxtxtimedefault.md)
+- [kBluetoothLEMaxTXTimeMax](./api-1640226-anonymous/kbluetoothlemaxtxtimemax.md)
+- [kBluetoothLEMaxTXTimeMin](./api-1640226-anonymous/kbluetoothlemaxtxtimemin.md)
 
 
 ---

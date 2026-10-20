@@ -1,7 +1,8 @@
 # event
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The metal event object to be signaled or waited for.
 

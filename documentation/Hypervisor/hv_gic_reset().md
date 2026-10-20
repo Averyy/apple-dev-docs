@@ -1,7 +1,8 @@
 # hv_gic_reset()
 
 **Framework**: Hypervisor  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Resets the generic interrupt controller (GIC) device.
 
@@ -14,9 +15,13 @@ Resets the generic interrupt controller (GIC) device.
 func hv_gic_reset() -> hv_return_t
 ```
 
+```c
+extern hv_return_t hv_gic_reset();
+```
+
 #### Return Value
 
-[`HV_SUCCESS`](hv_success.md) on success, an error code otherwise.
+[`HV_SUCCESS`](./hv_success.md) on success, an error code otherwise.
 
 #### Discussion
 

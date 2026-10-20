@@ -1,7 +1,8 @@
 # kDNSServiceAAAAPolicyNone
 
 **Framework**: dnssd  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var kDNSServiceAAAAPolicyNone: DNSServiceAAAAPolicy { get }
+```
+
+```c
+kDNSServiceAAAAPolicyNone
 ```
 
 

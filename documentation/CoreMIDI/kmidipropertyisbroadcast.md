@@ -1,7 +1,8 @@
 # kMIDIPropertyIsBroadcast
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value that indicates whether the endpoint broadcasts messages to all of the other endpoints in the device.
 
@@ -18,19 +19,24 @@ A Boolean value that indicates whether the endpoint broadcasts messages to all o
 let kMIDIPropertyIsBroadcast: CFString
 ```
 
+```c
+extern CFStringRef const kMIDIPropertyIsBroadcast;
+```
+
 #### Discussion
 
 Only the owning driver may set this property.
 
 ## See Also
 
-- [let kMIDIPropertyCanRoute: CFString](kmidipropertycanroute.md)
+### Connections
+- [let kMIDIPropertyCanRoute: CFString](./kmidipropertycanroute.md)
   A Boolean value that indicates whether the device or entity can route messages to or from external MIDI devices.
-- [let kMIDIPropertyConnectionUniqueID: CFString](kmidipropertyconnectionuniqueid.md)
+- [let kMIDIPropertyConnectionUniqueID: CFString](./kmidipropertyconnectionuniqueid.md)
   The unique identifier of an external device attached to this connection.
-- [let kMIDIPropertyIsEmbeddedEntity: CFString](kmidipropertyisembeddedentity.md)
+- [let kMIDIPropertyIsEmbeddedEntity: CFString](./kmidipropertyisembeddedentity.md)
   A Boolean value that indicates whether this entity or endpoint has external MIDI connections.
-- [let kMIDIPropertySingleRealtimeEntity: CFString](kmidipropertysinglerealtimeentity.md)
+- [let kMIDIPropertySingleRealtimeEntity: CFString](./kmidipropertysinglerealtimeentity.md)
   The 0-based index of the entity on which incoming real-time messages from the device appear to have originated.
 
 

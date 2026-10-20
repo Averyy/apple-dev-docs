@@ -1,7 +1,8 @@
 # image(_:color:size:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new calendar view decoration with the image, color, and size that you specify.
 
@@ -9,7 +10,7 @@ Creates a new calendar view decoration with the image, color, and size that you 
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -26,9 +27,9 @@ A calendar view decoration.
 
 The image defaults to `circlebadge.fill` if you don’t specify it.
 
-The color defaults to [`systemFill`](uicolor/systemfill.md) if you don’t specify it.
+The color defaults to [`systemFill`](../../uicolor/systemfill.md) if you don’t specify it.
 
-The size defaults to [`UICalendarView.DecorationSize.medium`](uicalendarview/decorationsize/medium.md) if nil.
+The size defaults to [`UICalendarView.DecorationSize.medium`](../decorationsize/medium.md) if nil.
 
 ## Parameters
 

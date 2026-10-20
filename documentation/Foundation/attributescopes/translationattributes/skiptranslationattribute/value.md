@@ -1,7 +1,8 @@
 # AttributeScopes.TranslationAttributes.SkipTranslationAttribute.Value
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that stores whether to exclude the associated text range from translation.
 
@@ -26,7 +27,8 @@ When `true`, the text isn’t translated.
 
 ## See Also
 
-- [static let name: String](attributescopes/translationattributes/skiptranslationattribute/name.md)
+### Using attrubute properties
+- [static let name: String](./name.md)
   The identifier of the attribute for serialization and identification.
 
 

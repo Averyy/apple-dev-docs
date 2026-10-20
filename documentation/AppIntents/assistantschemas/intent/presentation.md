@@ -1,7 +1,8 @@
 # presentation
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.0+
@@ -17,6 +18,8 @@
 ```swift
 static var presentation: some AssistantSchemas.PresentationIntent { get }
 ```
+
+Available when `Self` is `AssistantSchemas.IntentSchema`.
 
 
 ---

@@ -1,7 +1,8 @@
 # PlaneAnchor.Geometry
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The geometry of a plane anchor.
 
@@ -17,31 +18,32 @@ struct Geometry
 ## Topics
 
 ### Inspecting plane geometry
-- [var meshFaces: GeometryElement](planeanchor/geometry-swift.struct/meshfaces.md)
+- [var meshFaces: GeometryElement](./geometry-swift.struct/meshfaces.md)
   The faces in the mesh that describes a plane.
-- [var meshVertices: GeometrySource](planeanchor/geometry-swift.struct/meshvertices.md)
+- [var meshVertices: GeometrySource](./geometry-swift.struct/meshvertices.md)
   The vertices in the mesh that describes a plane.
-- [var extent: PlaneAnchor.Geometry.Extent](planeanchor/geometry-swift.struct/extent-swift.property.md)
+- [var extent: PlaneAnchor.Geometry.Extent](./geometry-swift.struct/extent-swift.property.md)
   The size of a plane.
-- [PlaneAnchor.Geometry.Extent](planeanchor/geometry-swift.struct/extent-swift.struct.md)
+- [PlaneAnchor.Geometry.Extent](./geometry-swift.struct/extent-swift.struct.md)
   The size of a plane.
 ### Instance Properties
-- [var description: String](planeanchor/geometry-swift.struct/description.md)
+- [var description: String](./geometry-swift.struct/description.md)
   A textual representation of this geometry.
 ### Default Implementations
-- [Equatable Implementations](planeanchor/geometry-swift.struct/equatable-implementations.md)
+- [Equatable Implementations](./geometry-swift.struct/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var geometry: PlaneAnchor.Geometry](planeanchor/geometry-swift.property.md)
+### Getting the shape of a plane anchor
+- [var geometry: PlaneAnchor.Geometry](./geometry-swift.property.md)
   Get the geometry of the plane in the anchor’s coordinate system.
 
 

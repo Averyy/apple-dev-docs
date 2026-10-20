@@ -1,17 +1,18 @@
 # HKSeriesSample
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract base class that defines samples that contain a series of items.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,52 +20,57 @@ An abstract base class that defines samples that contain a series of items.
 class HKSeriesSample
 ```
 
+```objc
+@interface HKSeriesSample : HKSample
+```
+
 #### Overview
 
-Never instantiate [`HKSeriesSample`](hkseriessample.md) objects directly. Instead, user one of the concrete subclasses (for example, the [`HKWorkoutRoute`](hkworkoutroute.md) class).
+Never instantiate [`HKSeriesSample`](./hkseriessample.md) objects directly. Instead, user one of the concrete subclasses (for example, the [`HKWorkoutRoute`](./hkworkoutroute.md) class).
 
 ## Topics
 
 ### Accessing the series
-- [var count: Int](hkseriessample/count.md)
+- [var count: Int](./hkseriessample/count.md)
   The number of items in the series.
 
 ## Relationships
 
 ### Inherits From
-- [HKSample](hksample.md)
+- [HKSample](./hksample.md)
 ### Inherited By
-- [HKHeartbeatSeriesSample](hkheartbeatseriessample.md)
-- [HKWorkoutRoute](hkworkoutroute.md)
+- [HKHeartbeatSeriesSample](./hkheartbeatseriessample.md)
+- [HKWorkoutRoute](./hkworkoutroute.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Creating a workout route](creating-a-workout-route.md)
+### Route data
+- [Creating a workout route](./creating-a-workout-route.md)
   Record the user’s route during a workout.
-- [Reading route data](reading-route-data.md)
+- [Reading route data](./reading-route-data.md)
   Access the user’s route for a workout.
-- [class HKWorkoutRouteBuilder](hkworkoutroutebuilder.md)
+- [class HKWorkoutRouteBuilder](./hkworkoutroutebuilder.md)
   A builder object that incrementally constructs a workout route.
-- [class HKWorkoutRoute](hkworkoutroute.md)
+- [class HKWorkoutRoute](./hkworkoutroute.md)
   A sample that contains a workout’s route data.
-- [struct HKWorkoutRouteQueryDescriptor](hkworkoutroutequerydescriptor.md)
+- [struct HKWorkoutRouteQueryDescriptor](./hkworkoutroutequerydescriptor.md)
   A query interface that reads the location data stored in a workout route using Swift concurrency.
-- [class HKWorkoutRouteQuery](hkworkoutroutequery.md)
+- [class HKWorkoutRouteQuery](./hkworkoutroutequery.md)
   A query to access the location data stored in a workout route.
-- [let HKWorkoutRouteTypeIdentifier: String](hkworkoutroutetypeidentifier.md)
+- [let HKWorkoutRouteTypeIdentifier: String](./hkworkoutroutetypeidentifier.md)
   A series sample containing location data that defines the route the user took during a workout.
-- [class HKSeriesBuilder](hkseriesbuilder.md)
+- [class HKSeriesBuilder](./hkseriesbuilder.md)
   An abstract base class for building series samples.
 
 

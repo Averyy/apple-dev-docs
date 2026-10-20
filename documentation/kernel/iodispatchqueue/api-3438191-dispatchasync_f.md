@@ -1,7 +1,8 @@
 # DispatchAsync_f
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Schedule a C-style function for asynchrous execution on the current queue.
 
@@ -11,7 +12,7 @@ Schedule a C-style function for asynchrous execution on the current queue.
 
 ## Declaration
 
-```swift
+```c
 void DispatchAsync_f(void *context, IODispatchFunction function);
 ```
 
@@ -26,11 +27,12 @@ This method schedules the function for execution on the queue and returns immedi
 
 ## See Also
 
-- [- DispatchAsync](iodispatchqueue/3438190-dispatchasync.md)
+### Executing a Task Asynchronously
+- [- DispatchAsync](./api-3438190-dispatchasync.md)
   Schedule a block for asynchronous execution on the current queue.
-- [IODispatchBlock](../driverkit/iodispatchblock.md)
+- [IODispatchBlock](../../DriverKit/iodispatchblock.md)
   A block to execute on a dispatch queue. 
-- [IODispatchFunction](../driverkit/iodispatchfunction.md)
+- [IODispatchFunction](../../DriverKit/iodispatchfunction.md)
   A C-style function to execute on a dispatch queue.
 
 

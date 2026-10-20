@@ -1,14 +1,15 @@
 # timeRangeOfTransition(before:)
 
 **Framework**: Cinematic  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The time range during which the focus transitioned toward the given decision.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 14.0+
 - tvOS 17.0+
 

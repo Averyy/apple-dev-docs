@@ -1,7 +1,8 @@
 # encryptionScope
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The encryption scope determines the granularity at which CloudKit stores encryption keys within the zone.
 
@@ -18,6 +19,10 @@ The encryption scope determines the granularity at which CloudKit stores encrypt
 
 ```swift
 var encryptionScope: CKRecordZone.EncryptionScope { get set }
+```
+
+```objc
+@property (assign) CKRecordZoneEncryptionScope encryptionScope;
 ```
 
 #### Discussion

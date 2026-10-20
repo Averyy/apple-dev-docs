@@ -1,7 +1,8 @@
 # showEffectsView
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies whether a trailing glow displays during dictation.
 
@@ -14,13 +15,18 @@ Specifies whether a trailing glow displays during dictation.
 static var showEffectsView: NSTextInsertionIndicator.AutomaticModeOptions { get }
 ```
 
+```c
+NSTextInsertionIndicatorAutomaticModeOptionsShowEffectsView
+```
+
 ## Mentions
 
-- [Adopting the system text cursor in custom text views](adopting-the-system-text-cursor-in-custom-text-views.md)
+- [Adopting the system text cursor in custom text views](../../adopting-the-system-text-cursor-in-custom-text-views.md)
 
 ## See Also
 
-- [static var showWhileTracking: NSTextInsertionIndicator.AutomaticModeOptions](nstextinsertionindicator/automaticmodeoptions-swift.struct/showwhiletracking.md)
+### Configuring automatic mode options
+- [static var showWhileTracking: NSTextInsertionIndicator.AutomaticModeOptions](./showwhiletracking.md)
   Specifies whether the insertion indicator shows during a tracking loop.
 
 

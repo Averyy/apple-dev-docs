@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: App Intents Testing  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Retrieves a type definition using its identifier.
 

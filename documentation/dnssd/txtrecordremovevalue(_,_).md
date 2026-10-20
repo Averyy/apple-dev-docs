@@ -1,7 +1,8 @@
 # TXTRecordRemoveValue(_:_:)
 
 **Framework**: dnssd  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Removes a key from a TXTRecordRef.
 
@@ -20,9 +21,13 @@ Removes a key from a TXTRecordRef.
 func TXTRecordRemoveValue(_ txtRecord: UnsafeMutablePointer<TXTRecordRef>!, _ key: UnsafePointer<CChar>!) -> DNSServiceErrorType
 ```
 
+```c
+DNSServiceErrorType TXTRecordRemoveValue(TXTRecordRef *txtRecord, const char *key);
+```
+
 #### Return Value
 
-Returns [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md) on success. Returns kDNSServiceErr_NoSuchKey if the “key” does not exist in the TXTRecordRef.
+Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) on success. Returns kDNSServiceErr_NoSuchKey if the “key” does not exist in the TXTRecordRef.
 
 ## Parameters
 
@@ -31,15 +36,16 @@ Returns [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md) on success. Return
 
 ## See Also
 
-- [func TXTRecordCreate(UnsafeMutablePointer<TXTRecordRef>!, UInt16, UnsafeMutableRawPointer!)](txtrecordcreate(_:_:_:).md)
+### TXT Record Construction Functions
+- [func TXTRecordCreate(UnsafeMutablePointer<TXTRecordRef>!, UInt16, UnsafeMutableRawPointer!)](./txtrecordcreate%28_,_,_%29.md)
   Creates a new empty TXTRecordRef referencing the specified storage.
-- [func TXTRecordDeallocate(UnsafeMutablePointer<TXTRecordRef>!)](txtrecorddeallocate(_:).md)
+- [func TXTRecordDeallocate(UnsafeMutablePointer<TXTRecordRef>!)](./txtrecorddeallocate%28_%29.md)
   Releases resources associated with a TXT record.
-- [func TXTRecordGetBytesPtr(UnsafePointer<TXTRecordRef>!) -> UnsafeRawPointer!](txtrecordgetbytesptr(_:).md)
+- [func TXTRecordGetBytesPtr(UnsafePointer<TXTRecordRef>!) -> UnsafeRawPointer!](./txtrecordgetbytesptr%28_%29.md)
   Allows you to retrieve a pointer to the raw bytes within a TXTRecordRef.
-- [func TXTRecordGetLength(UnsafePointer<TXTRecordRef>!) -> UInt16](txtrecordgetlength(_:).md)
+- [func TXTRecordGetLength(UnsafePointer<TXTRecordRef>!) -> UInt16](./txtrecordgetlength%28_%29.md)
   Allows you to determine the length of the raw bytes within a TXTRecordRef.
-- [func TXTRecordSetValue(UnsafeMutablePointer<TXTRecordRef>!, UnsafePointer<CChar>!, UInt8, UnsafeRawPointer!) -> DNSServiceErrorType](txtrecordsetvalue(_:_:_:_:).md)
+- [func TXTRecordSetValue(UnsafeMutablePointer<TXTRecordRef>!, UnsafePointer<CChar>!, UInt8, UnsafeRawPointer!) -> DNSServiceErrorType](./txtrecordsetvalue%28_,_,_,_%29.md)
   Adds a key (optionally with value) to a TXTRecordRef.
 
 

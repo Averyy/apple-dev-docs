@@ -1,7 +1,8 @@
 # saveImagesAsJPEGOption
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.4+
@@ -17,12 +18,17 @@
 static let saveImagesAsJPEGOption: PDFDocumentWriteOption
 ```
 
+```c
+extern PDFDocumentWriteOption const PDFDocumentSaveImagesAsJPEGOption;
+```
+
 ## See Also
 
-- [static let accessPermissionsOption: PDFDocumentWriteOption](pdfdocumentwriteoption/accesspermissionsoption.md)
-- [static let burnInAnnotationsOption: PDFDocumentWriteOption](pdfdocumentwriteoption/burninannotationsoption.md)
-- [static let optimizeImagesForScreenOption: PDFDocumentWriteOption](pdfdocumentwriteoption/optimizeimagesforscreenoption.md)
-- [static let saveTextFromOCROption: PDFDocumentWriteOption](pdfdocumentwriteoption/savetextfromocroption.md)
+### Type Properties
+- [static let accessPermissionsOption: PDFDocumentWriteOption](./accesspermissionsoption.md)
+- [static let burnInAnnotationsOption: PDFDocumentWriteOption](./burninannotationsoption.md)
+- [static let optimizeImagesForScreenOption: PDFDocumentWriteOption](./optimizeimagesforscreenoption.md)
+- [static let saveTextFromOCROption: PDFDocumentWriteOption](./savetextfromocroption.md)
 
 
 ---

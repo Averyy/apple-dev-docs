@@ -1,7 +1,8 @@
 # stateOrder
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Valid in version kIOPMPowerStateVersion2 or greater of this structure. Defines ordering of power states independently of the power state ordinal.
 
@@ -10,7 +11,7 @@ Valid in version kIOPMPowerStateVersion2 or greater of this structure. Defines o
 
 ## Declaration
 
-```swift
+```c
 unsigned long stateOrder;
 ```
 

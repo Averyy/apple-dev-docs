@@ -1,7 +1,8 @@
 # supportsMetal4FX(_:)
 
 **Framework**: MetalFX  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Queries whether a Metal device supports frame interpolation compatible with a Metal 4 command buffer.
 
@@ -18,9 +19,13 @@ Queries whether a Metal device supports frame interpolation compatible with a Me
 class func supportsMetal4FX(_ device: any MTLDevice) -> Bool
 ```
 
+```objc
++ (BOOL) supportsMetal4FX:(id<MTLDevice>) device;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the device supports frame interpolation for Metal 4, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the device supports frame interpolation for Metal 4, [`false`](../../Swift/false.md) otherwise.
 
 ## Parameters
 

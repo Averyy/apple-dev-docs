@@ -1,7 +1,8 @@
 # AVAssetWritingPlanner
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 AVAssetWritingPlanner orchestrates incremental writing of media files.
 
@@ -17,6 +18,10 @@ AVAssetWritingPlanner orchestrates incremental writing of media files.
 
 ```swift
 class AVAssetWritingPlanner
+```
+
+```objc
+@interface AVAssetWritingPlanner : NSObject
 ```
 
 #### Overview
@@ -35,56 +40,57 @@ AVAssetWritingPlanner is able to recognize when a plan-in-progress matching the 
 ## Topics
 
 ### Creating a planner
-- [convenience init(directoryForTemporaryFiles: URL) throws](avassetwritingplanner/init(directoryfortemporaryfiles:).md)
+- [convenience init(directoryForTemporaryFiles: URL) throws](./avassetwritingplanner/init%28directoryfortemporaryfiles%29.md)
   Creates an instance of AVAssetWritingPlanner given a unique file directory to host all incremental segment files and other intermediate files.
 ### Planning tracks
-- [func plan(AVAssetTrackPlan, segmentHandler: (AVPlannedSegmentWritingRequest) async throws -> AVAssetWritingPlanner.SegmentResult)](avassetwritingplanner/plan(_:segmenthandler:).md)
+- [func plan(AVAssetTrackPlan, segmentHandler: (AVPlannedSegmentWritingRequest) async throws -> AVAssetWritingPlanner.SegmentResult)](./avassetwritingplanner/plan%28_,segmenthandler%29.md)
   Adds a track plan with manual segment completion control.
 ### Executing the plan
-- [func executePlan() async throws -> AVComposition](avassetwritingplanner/executeplan.md)
+- [func executePlan() async throws -> AVComposition](./avassetwritingplanner/executeplan%28%29.md)
   Starts the incremental segment writing.
 ### Getting segment boundary guidance
-- [static func segmentBoundaryGuidelinesForVideo(codecType: AVVideoCodecType, encoderSpecification: [String : any Sendable]) -> AVAssetWritingPlanner.SegmentBoundaryGuidelines](avassetwritingplanner/segmentboundaryguidelinesforvideo(codectype:encoderspecification:).md)
+- [static func segmentBoundaryGuidelinesForVideo(codecType: AVVideoCodecType, encoderSpecification: [String : any Sendable]) -> AVAssetWritingPlanner.SegmentBoundaryGuidelines](./avassetwritingplanner/segmentboundaryguidelinesforvideo%28codectype,encoderspecification%29.md)
   Returns segment boundary guidelines that help clients determine how to segment compression video tracks with best results.
-- [class func segmentBoundaryRecommendations(forVideoTrack: AVAssetTrack, minimumSegmentDuration: CMTime, minimumSegmentFrameCount: Int) -> [AVPlannedVideoSegmentConfiguration]](avassetwritingplanner/segmentboundaryrecommendations(forvideotrack:minimumsegmentduration:minimumsegmentframecount:).md)
+- [class func segmentBoundaryRecommendations(forVideoTrack: AVAssetTrack, minimumSegmentDuration: CMTime, minimumSegmentFrameCount: Int) -> [AVPlannedVideoSegmentConfiguration]](./avassetwritingplanner/segmentboundaryrecommendations%28forvideotrack,minimumsegmentduration,minimumsegmentframecount%29.md)
   Returns segment boundary recommendations for a given source video asset track.
 ### Getting progress
-- [var progress: AVAssetWritingPlannerProgress](avassetwritingplanner/progress.md)
+- [var progress: AVAssetWritingPlannerProgress](./avassetwritingplanner/progress.md)
   The current progress of the AVAssetWritingPlanner.
 ### Configuring segment boundaries
-- [AVAssetWritingPlanner.SegmentBoundaryGuidelines](avassetwritingplanner/segmentboundaryguidelines.md)
+- [AVAssetWritingPlanner.SegmentBoundaryGuidelines](./avassetwritingplanner/segmentboundaryguidelines.md)
   AVPlannedVideoSegmentBoundaryGuidelines provides guidance on determining planned segment boundaries for a video track in an incremental writing session executed by the AVAssetWritingPlanner.
 ### Handling segment results
-- [AVAssetWritingPlanner.SegmentResult](avassetwritingplanner/segmentresult.md)
+- [AVAssetWritingPlanner.SegmentResult](./avassetwritingplanner/segmentresult.md)
   Result type for manual segment completion control.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVAssetWritingPlannerProgress](avassetwritingplannerprogress.md)
+### Planned export
+- [class AVAssetWritingPlannerProgress](./avassetwritingplannerprogress.md)
   AVAssetWritingPlannerProgress tracks the progress of incremental writing for each track in an AVAssetWritingPlanner session.
-- [class AVAssetTrackPlan](avassettrackplan.md)
+- [class AVAssetTrackPlan](./avassettrackplan.md)
   AVAssetTrackPlan holds information about a track and how it should be segmented and executed in an incremental writing session.
-- [class AVAssetVideoTrackPlan](avassetvideotrackplan.md)
+- [class AVAssetVideoTrackPlan](./avassetvideotrackplan.md)
   AVAssetVideoTrackPlan holds information about a track and how it should be segmented and executed in an incremental writing session.
-- [class AVPlannedSegmentConfiguration](avplannedsegmentconfiguration.md)
+- [class AVPlannedSegmentConfiguration](./avplannedsegmentconfiguration.md)
   AVPlannedSegmentConfiguration describes the requirements for a planned segment in an incremental writing session executed by the AVAssetWritingPlanner. Subclasses of this type that are used from Swift must fulfill the requirements of a Sendable type.
-- [class AVPlannedVideoSegmentConfiguration](avplannedvideosegmentconfiguration.md)
+- [class AVPlannedVideoSegmentConfiguration](./avplannedvideosegmentconfiguration.md)
   AVPlannedVideoSegmentConfiguration describes the requirements for a planned video segment in an incremental writing session executed by the AVAssetWritingPlanner.
-- [class AVPlannedSegmentWritingRequest](avplannedsegmentwritingrequest.md)
+- [class AVPlannedSegmentWritingRequest](./avplannedsegmentwritingrequest.md)
   AVPlannedSegmentWritingRequest encompasses a request from the AVAssetWritingPlanner to the client code to write one incremental track segment.
-- [class AVPlannedVideoSegmentWritingRequest](avplannedvideosegmentwritingrequest.md)
+- [class AVPlannedVideoSegmentWritingRequest](./avplannedvideosegmentwritingrequest.md)
   AVPlannedVideoSegmentWritingRequest encompasses a request from the AVAssetWritingPlanner to the client code to write one incremental video track segment with compression.
 
 

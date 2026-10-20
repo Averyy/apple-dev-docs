@@ -1,7 +1,8 @@
 # count
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of quantities contained in this sample.
 
@@ -19,21 +20,27 @@ The number of quantities contained in this sample.
 var count: Int { get }
 ```
 
+```objc
+@property (assign, readonly) NSInteger count;
+```
+
 ## Mentions
 
-- [Accessing condensed workout samples](accessing-condensed-workout-samples.md)
+- [Accessing condensed workout samples](../accessing-condensed-workout-samples.md)
 
 #### Discussion
 
-Samples created using one of the `init()` methods have a [`count`](hkquantitysample/count.md) of `1`. Samples created using an [`HKQuantitySeriesSampleBuilder`](hkquantityseriessamplebuilder.md) may have a [`count`](hkquantitysample/count.md) greater than `1`.
+Samples created using one of the `init()` methods have a [`count`](./count.md) of `1`. Samples created using an [`HKQuantitySeriesSampleBuilder`](../hkquantityseriessamplebuilder.md) may have a [`count`](./count.md) greater than `1`.
 
 ## See Also
 
-- [class HKQuantitySeriesSampleQuery](hkquantityseriessamplequery.md)
+### Related Documentation
+- [class HKQuantitySeriesSampleQuery](../hkquantityseriessamplequery.md)
   A query that accesses the series data associated with a quantity sample.
-- [var quantity: HKQuantity](hkquantitysample/quantity.md)
+### Getting Property Data
+- [var quantity: HKQuantity](./quantity.md)
   The quantity for this sample.
-- [var quantityType: HKQuantityType](hkquantitysample/quantitytype.md)
+- [var quantityType: HKQuantityType](./quantitytype.md)
   The quantity type for this sample.
 
 

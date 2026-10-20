@@ -1,7 +1,8 @@
 # kAXFocusedUIElementChangedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The focused accessibility object has changed.
 
@@ -12,6 +13,10 @@ The focused accessibility object has changed.
 
 ```swift
 var kAXFocusedUIElementChangedNotification: String { get }
+```
+
+```c
+#define kAXFocusedUIElementChangedNotification
 ```
 
 

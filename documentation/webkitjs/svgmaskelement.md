@@ -1,7 +1,8 @@
 # SVGMaskElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,24 +10,24 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGMaskElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [height](svgmaskelement/1632550-height.md)
-- [maskContentUnits](svgmaskelement/1632453-maskcontentunits.md)
-- [maskUnits](svgmaskelement/1629469-maskunits.md)
-- [width](svgmaskelement/1631080-width.md)
-- [x](svgmaskelement/1634072-x.md)
-- [y](svgmaskelement/1629883-y.md)
+- [height](./svgmaskelement/api-1632550-height.md)
+- [maskContentUnits](./svgmaskelement/api-1632453-maskcontentunits.md)
+- [maskUnits](./svgmaskelement/api-1629469-maskunits.md)
+- [width](./svgmaskelement/api-1631080-width.md)
+- [x](./svgmaskelement/api-1634072-x.md)
+- [y](./svgmaskelement/api-1629883-y.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGElement](svgelement.md)
+- [SVGElement](./svgelement.md)
 
 
 ---

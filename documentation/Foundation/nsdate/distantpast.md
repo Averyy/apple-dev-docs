@@ -1,7 +1,8 @@
 # distantPast
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A date object representing a date in the distant past.
 
@@ -20,9 +21,13 @@ A date object representing a date in the distant past.
 class var distantPast: Date { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSDate * distantPast;
+```
+
 #### Return Value
 
-An [`NSDate`](nsdate.md) object representing a date in the distant past (in terms of centuries).
+An [`NSDate`](../nsdate.md) object representing a date in the distant past (in terms of centuries).
 
 #### Discussion
 
@@ -30,7 +35,8 @@ You can use this object as a control date, a guaranteed temporal boundary.
 
 ## See Also
 
-- [class var distantFuture: Date](nsdate/distantfuture.md)
+### Getting Temporal Boundaries
+- [class var distantFuture: Date](./distantfuture.md)
   A date object representing a date in the distant future.
 
 

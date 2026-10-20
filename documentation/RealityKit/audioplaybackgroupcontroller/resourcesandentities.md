@@ -1,7 +1,8 @@
 # resourcesAndEntities
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The resource and entity tuples that comprise the playback group
 

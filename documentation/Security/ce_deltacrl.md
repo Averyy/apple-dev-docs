@@ -1,7 +1,8 @@
 # CE_DeltaCrl
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias CE_DeltaCrl = uint32
+```
+
+```c
+typedef uint32 CE_DeltaCrl;
 ```
 
 

@@ -1,7 +1,8 @@
 # NEEvaluateConnectionRuleAction
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 8.0+
@@ -17,29 +18,34 @@
 enum NEEvaluateConnectionRuleAction
 ```
 
+```c
+enum NEEvaluateConnectionRuleAction : NSInteger;
+```
+
 ## Topics
 
 ### Rule Actions
-- [NEEvaluateConnectionRuleAction.connectIfNeeded](neevaluateconnectionruleaction/connectifneeded.md)
+- [NEEvaluateConnectionRuleAction.connectIfNeeded](./neevaluateconnectionruleaction/connectifneeded.md)
   Start the VPN if connections to the matching hostname cannot be resolved.
-- [NEEvaluateConnectionRuleAction.neverConnect](neevaluateconnectionruleaction/neverconnect.md)
+- [NEEvaluateConnectionRuleAction.neverConnect](./neevaluateconnectionruleaction/neverconnect.md)
   Do not start the VPN.
 ### Initializers
-- [init?(rawValue: Int)](neevaluateconnectionruleaction/init(rawvalue:).md)
+- [init?(rawValue: Int)](./neevaluateconnectionruleaction/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var action: NEEvaluateConnectionRuleAction](neevaluateconnectionrule/action.md)
+### Accessing the Rule Action
+- [var action: NEEvaluateConnectionRuleAction](./neevaluateconnectionrule/action.md)
   The action to take if the properties of the network connection being established match the rule.
 
 

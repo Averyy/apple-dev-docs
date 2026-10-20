@@ -1,7 +1,8 @@
 # SpatialTemplateElementDirection
 
 **Framework**: Group Activities  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The initial direction a participant faces when an activity starts.
 
@@ -42,45 +43,46 @@ struct TableTennis: SpatialTemplate {
 ## Topics
 
 ### Looking at a specific location
-- [static func lookingAt(any SpatialTemplateElement) -> SpatialTemplateElementDirection](spatialtemplateelementdirection/lookingat(_:)-70j0i.md)
+- [static func lookingAt(any SpatialTemplateElement) -> SpatialTemplateElementDirection](./spatialtemplateelementdirection/lookingat%28_%29-70j0i.md)
   Creates a direction that orients the participant to face another template element.
-- [static func lookingAt(SpatialTemplateElementPosition) -> SpatialTemplateElementDirection](spatialtemplateelementdirection/lookingat(_:)-1d7ak.md)
+- [static func lookingAt(SpatialTemplateElementPosition) -> SpatialTemplateElementDirection](./spatialtemplateelementdirection/lookingat%28_%29-1d7ak.md)
   Creates a direction that orients the participant to face the specified point in the shared coordinate space.
 ### Looking along an axis
-- [static func alignedWith(appAxis: SpatialTemplateElementAxis) -> SpatialTemplateElementDirection](spatialtemplateelementdirection/alignedwith(appaxis:).md)
+- [static func alignedWith(appAxis: SpatialTemplateElementAxis) -> SpatialTemplateElementDirection](./spatialtemplateelementdirection/alignedwith%28appaxis%29.md)
   Creates a direction that orients the participant to look along the specified axis in the direction of the app’s content.
-- [struct SpatialTemplateElementAxis](spatialtemplateelementaxis.md)
+- [struct SpatialTemplateElementAxis](./spatialtemplateelementaxis.md)
   An axis to use when aligning elements in a spatial template.
 ### Rotating the element
-- [func rotatedBy(Angle2D) -> SpatialTemplateElementDirection](spatialtemplateelementdirection/rotatedby(_:).md)
+- [func rotatedBy(Angle2D) -> SpatialTemplateElementDirection](./spatialtemplateelementdirection/rotatedby%28_%29.md)
   Returns a new direction structure that adds the specified rotation angle to the current direction’s value.
 ### Operators
-- [static func + (SpatialTemplateElementDirection, Angle2D) -> SpatialTemplateElementDirection](spatialtemplateelementdirection/+(_:_:).md)
+- [static func + (SpatialTemplateElementDirection, Angle2D) -> SpatialTemplateElementDirection](./spatialtemplateelementdirection/plus%28_,_%29.md)
   Adds the y-axis rotations for the specified values together and returns a new structure with the result.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Building a guessing game for visionOS](building-a-guessing-game-for-visionos.md)
+### Custom spatial templates
+- [Building a guessing game for visionOS](./building-a-guessing-game-for-visionos.md)
   Create a team-based guessing game for visionOS using Group Activities.
-- [protocol SpatialTemplate](spatialtemplate.md)
+- [protocol SpatialTemplate](./spatialtemplate.md)
   An interface you use to create custom arrangements of spatial Personas in a scene.
-- [struct SpatialTemplatePreference](spatialtemplatepreference.md)
+- [struct SpatialTemplatePreference](./spatialtemplatepreference.md)
   A structure that specifies the preferred arrangement of participant spatial Personas in a shared simulation space.
-- [struct SpatialTemplateSeatElement](spatialtemplateseatelement.md)
+- [struct SpatialTemplateSeatElement](./spatialtemplateseatelement.md)
   A spatial template element that represents a seat for a participant in the activity.
-- [protocol SpatialTemplateElement](spatialtemplateelement.md)
+- [protocol SpatialTemplateElement](./spatialtemplateelement.md)
   An interface that defines an element in your spatial template.
-- [struct SpatialTemplateElementPosition](spatialtemplateelementposition.md)
+- [struct SpatialTemplateElementPosition](./spatialtemplateelementposition.md)
   A type that defines the position of an element in a spatial template.
-- [protocol SpatialTemplateRole](spatialtemplaterole.md)
+- [protocol SpatialTemplateRole](./spatialtemplaterole.md)
   An interface for defining roles that you assign to the participants of a group activity.
 
 

@@ -1,7 +1,8 @@
 # opcode
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The opcode for the phoneme.
 
@@ -12,6 +13,10 @@ The opcode for the phoneme.
 
 ```swift
 var opcode: Int16
+```
+
+```c
+SInt16 opcode;
 ```
 
 

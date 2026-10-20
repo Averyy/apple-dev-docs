@@ -1,7 +1,8 @@
 # separateBySource
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option indicating that the system calculates the specified statistics separately for each source.
 
@@ -19,19 +20,24 @@ An option indicating that the system calculates the specified statistics separat
 static var separateBySource: HKStatisticsOptions { get }
 ```
 
+```c
+HKStatisticsOptionSeparateBySource
+```
+
 ## See Also
 
-- [static var discreteAverage: HKStatisticsOptions](hkstatisticsoptions/discreteaverage.md)
+### Constants
+- [static var discreteAverage: HKStatisticsOptions](./discreteaverage.md)
   An option indicating that the system calculates the average quantity for the samples.
-- [static var discreteMin: HKStatisticsOptions](hkstatisticsoptions/discretemin.md)
+- [static var discreteMin: HKStatisticsOptions](./discretemin.md)
   An option indicating that the system calculates the minimum quantity for the samples.
-- [static var discreteMax: HKStatisticsOptions](hkstatisticsoptions/discretemax.md)
+- [static var discreteMax: HKStatisticsOptions](./discretemax.md)
   An option indicating that the system calculates the maximum quantity for the samples.
-- [static var cumulativeSum: HKStatisticsOptions](hkstatisticsoptions/cumulativesum.md)
+- [static var cumulativeSum: HKStatisticsOptions](./cumulativesum.md)
   An option indicating that the system calculates the sum of all the quantities for the samples.
-- [static var mostRecent: HKStatisticsOptions](hkstatisticsoptions/mostrecent.md)
+- [static var mostRecent: HKStatisticsOptions](./mostrecent.md)
   An option indicating that the system returns the most recent quantity from the matching samples.
-- [static var duration: HKStatisticsOptions](hkstatisticsoptions/duration.md)
+- [static var duration: HKStatisticsOptions](./duration.md)
   An option indicating that the system calculates the total duration covering all the samples.
 
 

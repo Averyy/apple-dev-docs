@@ -1,7 +1,8 @@
 # SKTransitionDirection.left
 
 **Framework**: SpriteKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The transition goes left.
 
@@ -10,7 +11,7 @@ The transition goes left.
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
 - macOS 10.9+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,18 @@ The transition goes left.
 case left
 ```
 
+```c
+SKTransitionDirectionLeft
+```
+
 ## See Also
 
-- [SKTransitionDirection.up](sktransitiondirection/up.md)
+### Constants
+- [SKTransitionDirection.up](./up.md)
   The transition goes up.
-- [SKTransitionDirection.down](sktransitiondirection/down.md)
+- [SKTransitionDirection.down](./down.md)
   The transition goes down.
-- [SKTransitionDirection.right](sktransitiondirection/right.md)
+- [SKTransitionDirection.right](./right.md)
   The transition goes right.
 
 

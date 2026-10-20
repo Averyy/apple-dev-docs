@@ -1,7 +1,8 @@
 # model
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Core ML model.
 
@@ -21,9 +22,10 @@ var model: MLModel { get set }
 
 ## See Also
 
-- [MLRandomForestClassifier.ModelParameters](mlrandomforestclassifier/modelparameters-swift.struct.md)
+### Inspecting a random forest classifier
+- [MLRandomForestClassifier.ModelParameters](./modelparameters-swift.struct.md)
   Parameters that affect the process of training a model.
-- [let modelParameters: MLRandomForestClassifier.ModelParameters](mlrandomforestclassifier/modelparameters-swift.property.md)
+- [let modelParameters: MLRandomForestClassifier.ModelParameters](./modelparameters-swift.property.md)
   The underlying parameters used when training the model.
 
 

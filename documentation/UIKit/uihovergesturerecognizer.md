@@ -1,7 +1,8 @@
 # UIHoverGestureRecognizer
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A continuous gesture recognizer that interprets pointer movement over a view.
 
@@ -17,9 +18,13 @@ A continuous gesture recognizer that interprets pointer movement over a view.
 class UIHoverGestureRecognizer
 ```
 
+```objc
+@interface UIHoverGestureRecognizer : UIGestureRecognizer
+```
+
 ## Mentions
 
-- [Optimizing your iPad app for Mac](optimizing-your-ipad-app-for-mac.md)
+- [Optimizing your iPad app for Mac](./optimizing-your-ipad-app-for-mac.md)
 
 #### Overview
 
@@ -27,7 +32,7 @@ On macOS and iPadOS devices, a person can move the pointer over user interface e
 
 > **Note**:  On iOS, this class doesn’t recognize gestures.
 
-To provide this experience in your app, add a hover gesture recognizer that reacts as the pointer moves over the view. Provide the gesture recognizer with a `target` and `action` that the system calls when the pointer enters, exits, and moves across the view. [`UIHoverGestureRecognizer`](uihovergesturerecognizer.md) has no effect when your app runs in iOS. The following code changes the button’s default color to red as the pointer moves over the button.
+To provide this experience in your app, add a hover gesture recognizer that reacts as the pointer moves over the view. Provide the gesture recognizer with a `target` and `action` that the system calls when the pointer enters, exits, and moves across the view. [`UIHoverGestureRecognizer`](./uihovergesturerecognizer.md) has no effect when your app runs in iOS. The following code changes the button’s default color to red as the pointer moves over the button.
 
 ```swift
 class ViewController: UIViewController {
@@ -58,38 +63,39 @@ class ViewController: UIViewController {
 ## Topics
 
 ### Supporting Apple Pencil hover
-- [var altitudeAngle: CGFloat](uihovergesturerecognizer/altitudeangle.md)
+- [var altitudeAngle: CGFloat](./uihovergesturerecognizer/altitudeangle.md)
   A value that represents the altitude angle of the hovering pointing device.
-- [func azimuthAngle(in: UIView?) -> CGFloat](uihovergesturerecognizer/azimuthangle(in:).md)
+- [func azimuthAngle(in: UIView?) -> CGFloat](./uihovergesturerecognizer/azimuthangle%28in%29.md)
   A value that represents the azimuth angle of the hovering pointing device in the specified view.
-- [func azimuthUnitVector(in: UIView?) -> CGVector](uihovergesturerecognizer/azimuthunitvector(in:).md)
+- [func azimuthUnitVector(in: UIView?) -> CGVector](./uihovergesturerecognizer/azimuthunitvector%28in%29.md)
   A value that represents the azimuth unit vector of the hovering pointing device in the specified view.
-- [var rollAngle: CGFloat](uihovergesturerecognizer/rollangle.md)
+- [var rollAngle: CGFloat](./uihovergesturerecognizer/rollangle.md)
   A value that represents the current barrel-roll angle of Apple Pencil.
-- [var zOffset: CGFloat](uihovergesturerecognizer/zoffset.md)
+- [var zOffset: CGFloat](./uihovergesturerecognizer/zoffset.md)
   A value that represents the normalized distance between the screen and a hovering pointing device, such as Apple Pencil.
 
 ## Relationships
 
 ### Inherits From
-- [UIGestureRecognizer](uigesturerecognizer.md)
+- [UIGestureRecognizer](./uigesturerecognizer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Navigating an app’s user interface using a keyboard](navigating-an-app-s-user-interface-using-a-keyboard.md)
+### User interactions
+- [Navigating an app’s user interface using a keyboard](./navigating-an-app-s-user-interface-using-a-keyboard.md)
   Navigate between user interface elements using a keyboard and focusable UI elements in iPad apps and apps built with Mac Catalyst.
-- [Adding menus and shortcuts to the menu bar and user interface](adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md)
+- [Adding menus and shortcuts to the menu bar and user interface](./adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md)
   Provide quick access to useful actions by adding menus and keyboard shortcuts to your Mac app built with Mac Catalyst.
-- [Handling key presses made on a physical keyboard](handling-key-presses-made-on-a-physical-keyboard.md)
+- [Handling key presses made on a physical keyboard](./handling-key-presses-made-on-a-physical-keyboard.md)
   Detect when someone presses and releases keys on a physical keyboard.
 
 

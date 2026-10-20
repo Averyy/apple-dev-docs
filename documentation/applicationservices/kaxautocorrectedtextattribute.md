@@ -1,7 +1,8 @@
 # kAXAutocorrectedTextAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A `CFBooleanRef` value that indicates whether the text was autocorrected.
 
@@ -12,6 +13,10 @@ A `CFBooleanRef` value that indicates whether the text was autocorrected.
 
 ```swift
 var kAXAutocorrectedTextAttribute: Unmanaged<CFString>
+```
+
+```c
+CFStringRef kAXAutocorrectedTextAttribute;
 ```
 
 #### Discussion

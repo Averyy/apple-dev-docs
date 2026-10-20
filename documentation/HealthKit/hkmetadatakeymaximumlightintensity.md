@@ -1,7 +1,8 @@
 # HKMetadataKeyMaximumLightIntensity
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that indicates the maximum intensity of light for an outdoor time sample.
 
@@ -19,15 +20,20 @@ A key that indicates the maximum intensity of light for an outdoor time sample.
 let HKMetadataKeyMaximumLightIntensity: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyMaximumLightIntensity;
+```
+
 #### Discussion
 
-The expected value type is an [`HKQuantity`](hkquantity.md) expressed in [`lux()`](hkunit/lux().md).
+The expected value type is an [`HKQuantity`](./hkquantity.md) expressed in [`lux()`](./hkunit/lux%28%29.md).
 
 ## See Also
 
-- [let HKDataTypeIdentifierStateOfMind: String](hkdatatypeidentifierstateofmind.md)
-- [let HKMetadataKeyAppleFitnessPlusCatalogIdentifier: String](hkmetadatakeyapplefitnesspluscatalogidentifier.md)
-- [let HKPredicateKeyPathWorkoutEffortRelationship: String](hkpredicatekeypathworkouteffortrelationship.md)
+### Constants
+- [let HKDataTypeIdentifierStateOfMind: String](./hkdatatypeidentifierstateofmind.md)
+- [let HKMetadataKeyAppleFitnessPlusCatalogIdentifier: String](./hkmetadatakeyapplefitnesspluscatalogidentifier.md)
+- [let HKPredicateKeyPathWorkoutEffortRelationship: String](./hkpredicatekeypathworkouteffortrelationship.md)
 
 
 ---

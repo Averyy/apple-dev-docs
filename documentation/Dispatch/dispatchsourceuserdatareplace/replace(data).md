@@ -1,18 +1,19 @@
 # replace(data:)
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the current pending data with the new value you provide.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 

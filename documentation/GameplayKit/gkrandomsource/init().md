@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new random source object.
 
@@ -19,15 +20,19 @@ Initializes a new random source object.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 An independent random source.
 
 #### Discussion
 
-This initializer returns a new random source instance that does not share state with any other randomizer and is suitable for most gameplay uses. Which random source class this initializer creates is may change between OS releases (currently, this initializer returns a [`GKARC4RandomSource`](gkarc4randomsource.md) instance). Use this initializer when the choice of randomization algorithm does not matter. If you need a specific randomization algorithm, call the initializer for a specific [`GKRandomSource`](gkrandomsource.md) subclass.
+This initializer returns a new random source instance that does not share state with any other randomizer and is suitable for most gameplay uses. Which random source class this initializer creates is may change between OS releases (currently, this initializer returns a [`GKARC4RandomSource`](../gkarc4randomsource.md) instance). Use this initializer when the choice of randomization algorithm does not matter. If you need a specific randomization algorithm, call the initializer for a specific [`GKRandomSource`](../gkrandomsource.md) subclass.
 
-For more information, see [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
+For more information, see [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 
 ---

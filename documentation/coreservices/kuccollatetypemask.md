@@ -1,7 +1,8 @@
 # kUCCollateTypeMask
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 You can use this mask to directly test bits 24-31 of a `UCCollateOptions` value.
 

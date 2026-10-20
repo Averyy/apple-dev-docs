@@ -1,7 +1,8 @@
 # Add an Alternative Distribution Domain
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Add an alternative distribution domain to your account.
 
@@ -10,9 +11,9 @@ Add an alternative distribution domain to your account.
 
 ## Mentions
 
-- [Configuring alternative marketplaces and alternative marketplace apps](configuring-alternative-marketplaces-and-alternative-marketplace-apps.md)
-- [Configuring apps for web distribution](configuring-apps-for-web-distribution.md)
-- [Creating and configuring keys for web distribution](creating-and-configuring-keys-for-web-distribution.md)
+- [Configuring alternative marketplaces and alternative marketplace apps](./configuring-alternative-marketplaces-and-alternative-marketplace-apps.md)
+- [Configuring apps for web distribution](./configuring-apps-for-web-distribution.md)
+- [Creating and configuring keys for web distribution](./creating-and-configuring-keys-for-web-distribution.md)
 
 #### Discussion
 
@@ -20,7 +21,7 @@ Add an alternative distribution domain to your account.
 
 **Request**:
 
-```None
+```
 POST https://api.appstoreconnect.apple.com/v1/alternativeDistributionDomains
 ```
 
@@ -50,13 +51,29 @@ POST https://api.appstoreconnect.apple.com/v1/alternativeDistributionDomains
 
 `POST https://api.appstoreconnect.apple.com/v1/alternativeDistributionDomains`
 
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `AlternativeDistributionDomainCreateRequest`
+
+## Responses
+
+- `201` Created (`AlternativeDistributionDomainResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `409` Conflict (`ErrorResponse`, `application/json`)
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
+
 ## See Also
 
-- [Read Alternative Distribution Domain Information](get-v1-alternativedistributiondomains-_id_.md)
+### Managing domains
+- [Read Alternative Distribution Domain Information](./get-v1-alternativedistributiondomains-_id_.md)
   Read information for a specific alternative distribution domain.
-- [List Alternative Distribution Domains](get-v1-alternativedistributiondomains.md)
+- [List Alternative Distribution Domains](./get-v1-alternativedistributiondomains.md)
   List all the alternative distribution domains for your account.
-- [Delete an Alternative Distribution Domain](delete-v1-alternativedistributiondomains-_id_.md)
+- [Delete an Alternative Distribution Domain](./delete-v1-alternativedistributiondomains-_id_.md)
   Delete the alternative distribution search domain for an app.
 
 

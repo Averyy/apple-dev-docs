@@ -1,7 +1,8 @@
 # AXFeatureOverrideSessionError.Code
 
 **Framework**: Accessibility  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.2+
@@ -13,37 +14,42 @@
 enum Code
 ```
 
+```c
+enum AXFeatureOverrideSessionError : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [AXFeatureOverrideSessionError.Code.appNotEntitled](axfeatureoverridesessionerror-swift.struct/code/appnotentitled.md)
-- [AXFeatureOverrideSessionError.Code.overrideIsAlreadyActive](axfeatureoverridesessionerror-swift.struct/code/overrideisalreadyactive.md)
-- [AXFeatureOverrideSessionError.Code.overrideNotFoundForUUID](axfeatureoverridesessionerror-swift.struct/code/overridenotfoundforuuid.md)
-- [AXFeatureOverrideSessionError.Code.undefined](axfeatureoverridesessionerror-swift.struct/code/undefined.md)
+- [AXFeatureOverrideSessionError.Code.appNotEntitled](./code/appnotentitled.md)
+- [AXFeatureOverrideSessionError.Code.overrideIsAlreadyActive](./code/overrideisalreadyactive.md)
+- [AXFeatureOverrideSessionError.Code.overrideNotFoundForUUID](./code/overridenotfoundforuuid.md)
+- [AXFeatureOverrideSessionError.Code.undefined](./code/undefined.md)
 ### Initializers
-- [init?(rawValue: Int)](axfeatureoverridesessionerror-swift.struct/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AXFeatureOverrideSession](axfeatureoverridesession.md)
+### Override sessions
+- [class AXFeatureOverrideSession](../axfeatureoverridesession.md)
   A token object that represents an override session held by your app.
-- [class AXFeatureOverrideSessionManager](axfeatureoverridesessionmanager.md)
+- [class AXFeatureOverrideSessionManager](../axfeatureoverridesessionmanager.md)
   A manager class to begin and end accessibility feature override sessions. Multiple override sessions are reconciled by combining the requests, preferring feature enablement. Ending all sessions restores the prior state of Accessibility feature enablement. Your app must be entitled with com.apple.developer.accessibility.merchant-api-control.
-- [AXFeatureOverrideSession.Options](axfeatureoverridesession/options.md)
+- [AXFeatureOverrideSession.Options](../axfeatureoverridesession/options.md)
   Options indicating which Accessibility features will be turned on or off when an override session is held by your app.
-- [let AXFeatureOverrideSessionErrorDomain: String](axfeatureoverridesessionerrordomain.md)
-- [struct AXFeatureOverrideSessionError](axfeatureoverridesessionerror-swift.struct.md)
-- [com.apple.developer.accessibility.merchant-api-control](../bundleresources/entitlements/com.apple.developer.accessibility.merchant-api-control.md)
+- [let AXFeatureOverrideSessionErrorDomain: String](../axfeatureoverridesessionerrordomain.md)
+- [struct AXFeatureOverrideSessionError](../axfeatureoverridesessionerror-swift.struct.md)
+- [com.apple.developer.accessibility.merchant-api-control](../../BundleResources/entitlements/com.apple.developer.accessibility.merchant-api-control.md)
 
 
 ---

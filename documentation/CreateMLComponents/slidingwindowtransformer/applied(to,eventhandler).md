@@ -1,7 +1,8 @@
 # applied(to:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Extracts a window sequence from the input sequence
 
@@ -31,7 +32,8 @@ An async sequence of windowed outputs.
 
 ## See Also
 
-- [SlidingWindowTransformer.WindowSequence](slidingwindowtransformer/windowsequence.md)
+### Performing the transformation
+- [SlidingWindowTransformer.WindowSequence](./windowsequence.md)
   An async sequence of windows.
 
 

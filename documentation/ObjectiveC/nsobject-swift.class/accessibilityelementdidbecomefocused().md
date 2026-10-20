@@ -1,7 +1,8 @@
 # accessibilityElementDidBecomeFocused()
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent after an assistive technology has set its virtual focus on the accessibility element.
 
@@ -9,7 +10,7 @@ Sent after an assistive technology has set its virtual focus on the accessibilit
 - iOS 4.0+
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,17 +20,22 @@ Sent after an assistive technology has set its virtual focus on the accessibilit
 func accessibilityElementDidBecomeFocused()
 ```
 
+```objc
+- (void) accessibilityElementDidBecomeFocused;
+```
+
 #### Discussion
 
 Override `accessibilityElementDidBecomeFocused` if you need to know when an assistive technology has set its virtual focus on an accessibility element.
 
 ## See Also
 
-- [func accessibilityElementDidLoseFocus()](nsobject-swift.class/accessibilityelementdidlosefocus.md)
+### Getting focus information
+- [func accessibilityElementDidLoseFocus()](./accessibilityelementdidlosefocus%28%29.md)
   Sent after an assistive technology has removed its virtual focus from an accessibility element.
-- [func accessibilityElementIsFocused() -> Bool](nsobject-swift.class/accessibilityelementisfocused.md)
+- [func accessibilityElementIsFocused() -> Bool](./accessibilityelementisfocused%28%29.md)
   Returns a Boolean value indicating whether an assistive technology is focused on the accessibility element.
-- [func accessibilityAssistiveTechnologyFocusedIdentifiers() -> Set<UIAccessibility.AssistiveTechnologyIdentifier>?](nsobject-swift.class/accessibilityassistivetechnologyfocusedidentifiers.md)
+- [func accessibilityAssistiveTechnologyFocusedIdentifiers() -> Set<UIAccessibility.AssistiveTechnologyIdentifier>?](./accessibilityassistivetechnologyfocusedidentifiers%28%29.md)
   Returns a set of identifier keys indicating which assistive app has focus on the accessibility element.
 
 

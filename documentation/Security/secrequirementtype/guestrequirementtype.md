@@ -1,7 +1,8 @@
 # SecRequirementType.guestRequirementType
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 What guests this code may run.
 
@@ -13,6 +14,10 @@ What guests this code may run.
 
 ```swift
 case guestRequirementType
+```
+
+```c
+kSecGuestRequirementType
 ```
 
 

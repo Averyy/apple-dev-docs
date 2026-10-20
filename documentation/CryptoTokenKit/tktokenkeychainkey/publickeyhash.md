@@ -1,7 +1,8 @@
 # publicKeyHash
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The SHA1 hash of the raw public key.
 
@@ -20,26 +21,31 @@ The SHA1 hash of the raw public key.
 var publicKeyHash: Data? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSData * publicKeyHash;
+```
+
 #### Discussion
 
 This property is equivalent to the `kSecAttrApplicationLabel` type attribute.
 
 ## See Also
 
-- [var keyType: String](tktokenkeychainkey/keytype.md)
-  The type of the key. Currently, only [`kSecAttrKeyTypeRSA`](https://developer.apple.com/documentation/security/ksecattrkeytypersa) and `kSecAttrKeyTypeECSECPrimeRandom` are supported values.
-- [var keySizeInBits: Int](tktokenkeychainkey/keysizeinbits.md)
-- [var applicationTag: Data?](tktokenkeychainkey/applicationtag.md)
+### Accessing Key Attributes
+- [var keyType: String](./keytype.md)
+  The type of the key. Currently, only [`kSecAttrKeyTypeRSA`](../../Security/ksecattrkeytypersa.md) and `kSecAttrKeyTypeECSECPrimeRandom` are supported values.
+- [var keySizeInBits: Int](./keysizeinbits.md)
+- [var applicationTag: Data?](./applicationtag.md)
   The private tag data.
-- [var publicKeyData: Data?](tktokenkeychainkey/publickeydata.md)
+- [var publicKeyData: Data?](./publickeydata.md)
   The public key data.
-- [var canDecrypt: Bool](tktokenkeychainkey/candecrypt.md)
+- [var canDecrypt: Bool](./candecrypt.md)
   Whether the key can be used to decrypt data.
-- [var canSign: Bool](tktokenkeychainkey/cansign.md)
+- [var canSign: Bool](./cansign.md)
   Whether the key can be used to sign data.
-- [var canPerformKeyExchange: Bool](tktokenkeychainkey/canperformkeyexchange.md)
+- [var canPerformKeyExchange: Bool](./canperformkeyexchange.md)
   Whether the key can be used to perform Diffie-Hellman style cryptographic key exchange.
-- [var isSuitableForLogin: Bool](tktokenkeychainkey/issuitableforlogin.md)
+- [var isSuitableForLogin: Bool](./issuitableforlogin.md)
   Whether the key can be used for system login.
 
 

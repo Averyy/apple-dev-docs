@@ -1,7 +1,8 @@
 # makeSendCount
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Access the make-send count.
 
@@ -19,6 +20,8 @@ Access the make-send count.
 ```swift
 var makeSendCount: mach_port_mscount_t { get set }
 ```
+
+Available when `RightType` is `Mach.ReceiveRight`.
 
 #### Discussion
 

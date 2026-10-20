@@ -1,7 +1,8 @@
 # qos
 
 **Framework**: Dispatch  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dispatch queue quality of service.
 
@@ -11,7 +12,7 @@ The dispatch queue quality of service.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ var qos: DispatchQoS
 
 ## See Also
 
-- [var flags: DispatchWorkItemFlags](dispatchqueue/scheduleroptions/flags.md)
+### Inspecting Scheduler Options
+- [var flags: DispatchWorkItemFlags](./flags.md)
   The dispatch queue work item flags.
-- [var group: DispatchGroup?](dispatchqueue/scheduleroptions/group.md)
+- [var group: DispatchGroup?](./group.md)
   The dispatch group, if any, to use when performing actions.
 
 

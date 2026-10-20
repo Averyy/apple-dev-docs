@@ -1,7 +1,8 @@
 # BNNSShuffleTypeDepthToSpaceNCHW
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.4+
@@ -18,16 +19,21 @@
 var BNNSShuffleTypeDepthToSpaceNCHW: BNNSShuffleType { get }
 ```
 
+```c
+BNNSShuffleTypeDepthToSpaceNCHW
+```
+
 ## See Also
 
-- [init(UInt32)](bnnsshuffletype/init(_:).md)
-- [init(rawValue: UInt32)](bnnsshuffletype/init(rawvalue:).md)
-- [var rawValue: UInt32](bnnsshuffletype/rawvalue.md)
-- [var BNNSShuffleTypePixelShuffleNCHW: BNNSShuffleType](bnnsshuffletypepixelshufflenchw.md)
+### Constants
+- [init(UInt32)](./bnnsshuffletype/init%28_%29.md)
+- [init(rawValue: UInt32)](./bnnsshuffletype/init%28rawvalue%29.md)
+- [var rawValue: UInt32](./bnnsshuffletype/rawvalue.md)
+- [var BNNSShuffleTypePixelShuffleNCHW: BNNSShuffleType](./bnnsshuffletypepixelshufflenchw.md)
   The pixel shuffle for the NCHW (batch, channels, height, width) format, equivalent to depth-to-space in Column Row Depth (CRD) mode.
-- [var BNNSShuffleTypePixelUnshuffleNCHW: BNNSShuffleType](bnnsshuffletypepixelunshufflenchw.md)
+- [var BNNSShuffleTypePixelUnshuffleNCHW: BNNSShuffleType](./bnnsshuffletypepixelunshufflenchw.md)
   The pixel unshuffle for the NCHW (batch, channels, height, width) format, equivalent to space-to-depth in Column Row Depth (CRD) mode.
-- [var BNNSShuffleTypeSpaceToDepthNCHW: BNNSShuffleType](bnnsshuffletypespacetodepthnchw.md)
+- [var BNNSShuffleTypeSpaceToDepthNCHW: BNNSShuffleType](./bnnsshuffletypespacetodepthnchw.md)
 
 
 ---

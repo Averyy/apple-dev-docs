@@ -1,7 +1,8 @@
 # init(textAttachment:parentView:textLayoutManager:location:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new text attachment view whose content starts at the location you provide.
 
@@ -18,12 +19,16 @@ Creates a new text attachment view whose content starts at the location you prov
 init(textAttachment: NSTextAttachment, parentView: UIView?, textLayoutManager: NSTextLayoutManager?, location: any NSTextLocation)
 ```
 
+```objc
+- (instancetype) initWithTextAttachment:(NSTextAttachment *) textAttachment parentView:(UIView *) parentView textLayoutManager:(NSTextLayoutManager *) textLayoutManager location:(id<NSTextLocation>) location;
+```
+
 ## Parameters
 
-- `textAttachment`: The [`NSTextAttachment`](nstextattachment.md) for this view.
+- `textAttachment`: The [`NSTextAttachment`](../nstextattachment.md) for this view.
 - `parentView`: The parent view of this attachment.
-- `textLayoutManager`: The [`NSTextLayoutManager`](nstextlayoutmanager.md) for this view.
-- `location`: The [`NSTextLocation`](nstextlocation.md) that identifies the start of the text.
+- `textLayoutManager`: The [`NSTextLayoutManager`](../nstextlayoutmanager.md) for this view.
+- `location`: The [`NSTextLocation`](../nstextlocation.md) that identifies the start of the text.
 
 
 ---

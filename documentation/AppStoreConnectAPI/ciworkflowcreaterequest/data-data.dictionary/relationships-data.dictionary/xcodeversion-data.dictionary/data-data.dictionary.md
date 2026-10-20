@@ -1,7 +1,8 @@
 # CiWorkflowCreateRequest.Data.Relationships.XcodeVersion.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of the Xcode Versions resource that you’re relating with the Workflows resource you’re creating.
 
@@ -10,7 +11,7 @@ The type and ID of the Xcode Versions resource that you’re relating with the W
 
 ## Declaration
 
-```swift
+```
 object CiWorkflowCreateRequest.Data.Relationships.XcodeVersion.Data
 ```
 
@@ -18,6 +19,8 @@ object CiWorkflowCreateRequest.Data.Relationships.XcodeVersion.Data
 
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Xcode Versions resource.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `ciXcodeVersions`
 
 
 ---

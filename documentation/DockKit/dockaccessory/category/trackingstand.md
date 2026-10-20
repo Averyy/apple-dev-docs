@@ -1,7 +1,8 @@
 # DockAccessory.Category.trackingStand
 
 **Framework**: DockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The dock accessory is a tracking stand.
 
@@ -19,7 +20,8 @@ case trackingStand
 
 ## See Also
 
-- [var debugDescription: String](dockaccessory/category/debugdescription.md)
+### Getting properties
+- [var debugDescription: String](./debugdescription.md)
   The text description of the dock accessory state.
 
 

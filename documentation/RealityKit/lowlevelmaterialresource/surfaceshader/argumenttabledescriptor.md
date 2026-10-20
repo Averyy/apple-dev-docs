@@ -1,7 +1,8 @@
 # argumentTableDescriptor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The argument table descriptor for this surface shader, or `nil` if it takes no per-draw arguments.
 
@@ -19,7 +20,8 @@ final var argumentTableDescriptor: LowLevelArgumentTable.Descriptor? { get }
 
 ## See Also
 
-- [var parameterMapping: LowLevelMaterialParameterMapping?](lowlevelmaterialresource/surfaceshader/parametermapping.md)
+### Configuring shader parameters
+- [var parameterMapping: LowLevelMaterialParameterMapping?](./parametermapping.md)
   The parameter name-to-slot mapping for this surface shader function, or `nil` if it takes no custom parameters.
 
 

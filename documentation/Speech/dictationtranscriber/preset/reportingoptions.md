@@ -1,7 +1,8 @@
 # reportingOptions
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Options relating to the transcriber’s result delivery appropriate for this preset.
 
@@ -20,11 +21,12 @@ var reportingOptions: Set<DictationTranscriber.ReportingOption>
 
 ## See Also
 
-- [var attributeOptions: Set<DictationTranscriber.ResultAttributeOption>](dictationtranscriber/preset/attributeoptions.md)
+### Getting preset properties
+- [var attributeOptions: Set<DictationTranscriber.ResultAttributeOption>](./attributeoptions.md)
   Options relating to the attributes of the transcription appropriate for this preset.
-- [var contentHints: Set<DictationTranscriber.ContentHint>](dictationtranscriber/preset/contenthints.md)
+- [var contentHints: Set<DictationTranscriber.ContentHint>](./contenthints.md)
   Expected characteristics of the spoken audio appropriate for this preset.
-- [var transcriptionOptions: Set<DictationTranscriber.TranscriptionOption>](dictationtranscriber/preset/transcriptionoptions.md)
+- [var transcriptionOptions: Set<DictationTranscriber.TranscriptionOption>](./transcriptionoptions.md)
   Options relating to the text of the transcription appropriate for this preset.
 
 

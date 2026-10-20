@@ -1,7 +1,8 @@
 # init(largeBlob:prf:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an extension output instance.
 

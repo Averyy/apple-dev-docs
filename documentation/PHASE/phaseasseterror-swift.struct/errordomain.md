@@ -1,15 +1,16 @@
 # errorDomain
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 

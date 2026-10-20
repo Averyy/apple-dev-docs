@@ -1,7 +1,8 @@
 # TxDataAvailable
 
 **Framework**: USBSerialDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies your driver that the system has data for you to transmit to the device.
 
@@ -10,7 +11,7 @@ Notifies your driver that the system has data for you to transmit to the device.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void TxDataAvailable();
 ```
 
@@ -20,11 +21,12 @@ The default implementation of this method initiates an asynchronous operation to
 
 ## See Also
 
-- [handleRxPacket](iouserusbserial/handlerxpacket.md)
+### Transmitting and Receiving Data
+- [handleRxPacket](./handlerxpacket.md)
   Processes the data received from the USB device.
-- [RxFreeSpaceAvailable](iouserusbserial/rxfreespaceavailable.md)
+- [RxFreeSpaceAvailable](./rxfreespaceavailable.md)
   Notifies your driver that buffer space is available for your device’s data.
-- [handleInterruptPacket](iouserusbserial/handleinterruptpacket.md)
+- [handleInterruptPacket](./handleinterruptpacket.md)
   Processes an interrupt packet that originated from the device.
 
 

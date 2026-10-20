@@ -1,7 +1,8 @@
 # current()
 
 **Framework**: Wi-Fi Aware  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches a one-time snapshot of all paired devices that are currently known and  accessible to your app.
 
@@ -18,11 +19,11 @@ func current() async throws -> WAPairedDevice.DevicesSequence.Element?
 
 #### Return Value
 
-A single [`WAPairedDevice.Devices`](wapaireddevice/devices.md) element holding a snapshot of the currently paired devices known to the app, or `nil` if the sequence has no more values.
+A single [`WAPairedDevice.Devices`](../devices.md) element holding a snapshot of the currently paired devices known to the app, or `nil` if the sequence has no more values.
 
 #### Discussion
 
-The [`WAPairedDevice.Devices`](wapaireddevice/devices.md) dictionary holds a snapshot of the currently paired devices that are known and accessible to your app. This method returns an empty dictionary if there are no paired devices known to your app. The following code is an example of how to use `current()` to return the first `Devices` snapshot in the sequence:
+The [`WAPairedDevice.Devices`](../devices.md) dictionary holds a snapshot of the currently paired devices that are known and accessible to your app. This method returns an empty dictionary if there are no paired devices known to your app. The following code is an example of how to use `current()` to return the first `Devices` snapshot in the sequence:
 
 ```swift
 guard let devices = try await WAPairedDevice.allDevices.current() { return }
@@ -36,11 +37,11 @@ for try await devices in WAPairedDevice.allDevices {
 }
 ```
 
-> **Note**: An error if the system can’t read the sequence, or if the app isn’t permitted to access Wi-Fi Aware devices.
+> **Throws**: An error if the system can’t read the sequence, or if the app isn’t permitted to access Wi-Fi Aware devices.
 
-> **Note**: [`allDevices`](wapaireddevice/alldevices.md)
+> **See Also**: [`allDevices`](../alldevices.md)
 
-> **Note**: [`allDevices(matching:)`](wapaireddevice/alldevices(matching:).md)
+> **See Also**: [`allDevices(matching:)`](../alldevices%28matching%29.md)
 
 
 ---

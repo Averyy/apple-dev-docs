@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: subscript  
+**Role**: Instance Subscript  
 **Required**: Yes
 
 The buffer for a given semantic. There can only be one buffer for any given ID.
@@ -12,7 +13,7 @@ The buffer for a given semantic. There can only be one buffer for any given ID.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

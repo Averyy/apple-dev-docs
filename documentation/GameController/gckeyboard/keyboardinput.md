@@ -1,7 +1,8 @@
 # keyboardInput
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The controller profile for the keyboard.
 
@@ -17,6 +18,10 @@ The controller profile for the keyboard.
 
 ```swift
 var keyboardInput: GCKeyboardInput? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) GCKeyboardInput * keyboardInput;
 ```
 
 #### Discussion

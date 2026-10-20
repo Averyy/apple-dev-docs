@@ -1,7 +1,8 @@
 # init(transformComponent:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a transform object to match the specified transform component.
 
@@ -19,13 +20,17 @@ Initializes a transform object to match the specified transform component.
 convenience init(transformComponent component: any MDLTransformComponent)
 ```
 
+```objc
+- (instancetype) initWithTransformComponent:(id<MDLTransformComponent>) component;
+```
+
 #### Return Value
 
 A new transform object.
 
 #### Discussion
 
-Use this method to copy transformation from any object that adopts the [`MDLTransformComponent`](mdltransformcomponent.md) protocol (such as another [`MDLTransform`](mdltransform.md) instance).
+Use this method to copy transformation from any object that adopts the [`MDLTransformComponent`](../mdltransformcomponent.md) protocol (such as another [`MDLTransform`](../mdltransform.md) instance).
 
 ## Parameters
 
@@ -33,12 +38,13 @@ Use this method to copy transformation from any object that adopts the [`MDLTran
 
 ## See Also
 
-- [convenience init(identity: ())](mdltransform/init(identity:).md)
+### Creating a Transform Object
+- [convenience init(identity: ())](./init%28identity%29.md)
   Initializes a transform object to the identity transformation.
-- [convenience init(matrix: matrix_float4x4)](mdltransform/init(matrix:).md)
+- [convenience init(matrix: matrix_float4x4)](./init%28matrix%29.md)
   Initializes a transform object with the specified transform matrix.
-- [convenience init(matrix: matrix_float4x4, resetsTransform: Bool)](mdltransform/init(matrix:resetstransform:).md)
-- [convenience init(transformComponent: any MDLTransformComponent, resetsTransform: Bool)](mdltransform/init(transformcomponent:resetstransform:).md)
+- [convenience init(matrix: matrix_float4x4, resetsTransform: Bool)](./init%28matrix,resetstransform%29.md)
+- [convenience init(transformComponent: any MDLTransformComponent, resetsTransform: Bool)](./init%28transformcomponent,resetstransform%29.md)
 
 
 ---

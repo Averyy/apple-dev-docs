@@ -1,6 +1,8 @@
 # Searching indexed content with natural language
 
-**Framework**: Core Spotlight
+**Framework**: Core Spotlight  
+**Role**: Sample Code  
+**Download**: [SearchingIndexedContentWithNaturalLanguage.zip](https://docs-assets.developer.apple.com/published/799313884e7c/SearchingIndexedContentWithNaturalLanguage.zip)
 
 Give a language model access to your app’s Core Spotlight index to enable natural-language queries over searchable content.
 
@@ -12,25 +14,25 @@ Give a language model access to your app’s Core Spotlight index to enable natu
 
 #### Overview
 
-This sample demonstrates [`SpotlightSearchTool`](spotlightsearchtool.md), a type that connects a Foundation Models language-model session to your app’s Core Spotlight index. Using `SpotlightSearchTool`, the language model can search, filter, and reason about your indexed content, turning a metadata-based index into a conversational search experience.
+This sample demonstrates [`SpotlightSearchTool`](./spotlightsearchtool.md), a type that connects a Foundation Models language-model session to your app’s Core Spotlight index. Using `SpotlightSearchTool`, the language model can search, filter, and reason about your indexed content, turning a metadata-based index into a conversational search experience.
 
-![A person asks “What hikes are by the ocean?” in the sample app’s search field. Matching trail cards, including Crystal Cove State Park and Lands End Trail, appear above a streamed summary of nearby coastal hikes.](/images/com.apple.corespotlight/spotlightsearchtool-hero@2x.png)
+![A person asks “What hikes are by the ocean?” in the sample app’s search field. Matching trail cards, including Crystal Cove State Park and Lands End Trail, appear above a streamed summary of nearby coastal hikes.](https://developer.apple.com/tutorials/images/com.apple.corespotlight/spotlightsearchtool-hero@2x.png)
 
-The app indexes a collection of hiking trail entries as [`CSSearchableItem`](cssearchableitem.md) objects, then lets people ask natural-language questions like “Which trails in California have water features?” The language model uses the tool to query the index and streams a response alongside the matching trail results.
+The app indexes a collection of hiking trail entries as [`CSSearchableItem`](./cssearchableitem.md) objects, then lets people ask natural-language questions like “Which trails in California have water features?” The language model uses the tool to query the index and streams a response alongside the matching trail results.
 
-> **Note**: This sample code project is associated with WWDC26 session [`246: LLM search using Core Spotlight`](https://developer.apple.comhttps://developer.apple.com/wwdc26/246/).
+> **Note**: This sample code project is associated with WWDC26 session [246: LLM search using Core Spotlight](https://developer.apple.com/wwdc26/246/).
 
-#### Configure the Sample Code Project
+#### Configure the sample code project
 
 This sample requires a device that supports Apple Intelligence, running iOS 27 or later.
 
 Before you build and run the sample, turn on Apple Intelligence by opening Settings > Apple Intelligence & Siri.
 
-By default, the sample runs searches on the on-device system language model, so the project builds and runs without additional configuration. For best search performance, route searches to *Private Cloud Compute* (PCC) models designed for Apple Intelligence. For more information, see [`Adopt Private Cloud Compute`](searching-indexed-content-with-natural-language#Adopt-Private-Cloud-Compute.md).
+By default, the sample runs searches on the on-device system language model, so the project builds and runs without additional configuration. For best search performance, route searches to *Private Cloud Compute* (PCC) models designed for Apple Intelligence. For more information, see [Adopt Private Cloud Compute](./searching-indexed-content-with-natural-language.md#Adopt-Private-Cloud-Compute).
 
-#### Provide Search Attributes to the Language Model
+#### Provide search attributes to the language model
 
-The sample creates a [`SpotlightSearchTool`](spotlightsearchtool.md) configured with a Core Spotlight source to let the language model search the indexed content. The `fetchAttributes` parameter specifies which item attributes the tool returns to the model, providing the information it uses to answer questions about trails. The sample includes both built-in attributes and a custom distance attribute that the app indexes for each trail:
+The sample creates a [`SpotlightSearchTool`](./spotlightsearchtool.md) configured with a Core Spotlight source to let the language model search the indexed content. The `fetchAttributes` parameter specifies which item attributes the tool returns to the model, providing the information it uses to answer questions about trails. The sample includes both built-in attributes and a custom distance attribute that the app indexes for each trail:
 
 ```swift
 let fetchAttributes: [SearchableItemAttribute] = [
@@ -51,7 +53,7 @@ let fetchAttributes: [SearchableItemAttribute] = [
 
 #### Adopt Private Cloud Compute
 
-By default, the sample searches your app’s Spotlight index using the on-device [`SystemLanguageModel`](https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel), so the project builds and runs without additional configuration.
+By default, the sample searches your app’s Spotlight index using the on-device [`SystemLanguageModel`](../FoundationModels/systemlanguagemodel.md), so the project builds and runs without additional configuration.
 
 The sample’s view model exposes the language model it uses as a `foundationModel` property:
 
@@ -62,9 +64,9 @@ let foundationModel = SystemLanguageModel()
 // let foundationModel = PrivateCloudComputeLanguageModel()
 ```
 
-For best search performance that takes advantage of server models, route searches through *Private Cloud Compute* (PCC) instead. For eligibility and setup, see [`Adding server-side intelligence with Private Cloud Compute`](https://developer.apple.com/documentation/foundationmodels/adding-server-side-intelligence-with-private-cloud-compute).
+For best search performance that takes advantage of server models, route searches through *Private Cloud Compute* (PCC) instead. For eligibility and setup, see [Adding server-side intelligence with Private Cloud Compute](../FoundationModels/adding-server-side-intelligence-with-private-cloud-compute.md).
 
-To adopt PCC, initialize `foundationModel` with [`PrivateCloudComputeLanguageModel`](https://developer.apple.com/documentation/foundationmodels/privatecloudcomputelanguagemodel). When `foundationModel` is the PCC model, the sample uses the [`SpotlightSearchTool.GuidanceLevel.complete`](spotlightsearchtool/guidancelevel/complete.md) guide for richer query construction; on device. When `foundationModel` is the on-device model, the sample uses the [`SpotlightSearchTool.GuidanceLevel.focused(_:)`](spotlightsearchtool/guidancelevel/focused(_:).md) guide and provides more explicit search instructions to suit the smaller model.
+To adopt PCC, initialize `foundationModel` with [`PrivateCloudComputeLanguageModel`](../FoundationModels/privatecloudcomputelanguagemodel.md). When `foundationModel` is the PCC model, the sample uses the [`SpotlightSearchTool.GuidanceLevel.complete`](./spotlightsearchtool/guidancelevel/complete.md) guide for richer query construction; on device. When `foundationModel` is the on-device model, the sample uses the [`SpotlightSearchTool.GuidanceLevel.focused(_:)`](./spotlightsearchtool/guidancelevel/focused%28_%29.md) guide and provides more explicit search instructions to suit the smaller model.
 
 ```swift
 // A Boolean value that indicates whether the search tool uses an on-device or PCC model.
@@ -92,9 +94,9 @@ private func makeSpotlightTool() -> SpotlightSearchTool {
 }
 ```
 
-#### Stream Responses From the Language Model
+#### Stream responses from the language model
 
-The sample passes the search tool to a [`LanguageModelSession`](https://developer.apple.com/documentation/foundationmodels/languagemodelsession) along with system instructions that describe the indexed data. When a person submits a query, the session calls the tool to find matching entries and streams a natural-language response. The sample creates a fresh session and tool for each search so every query starts with fresh context:
+The sample passes the search tool to a [`LanguageModelSession`](../FoundationModels/languagemodelsession.md) along with system instructions that describe the indexed data. When a person submits a query, the session calls the tool to find matching entries and streams a natural-language response. The sample creates a fresh session and tool for each search so every query starts with fresh context:
 
 ```swift
 let session = LanguageModelSession(
@@ -112,9 +114,9 @@ do {
 }
 ```
 
-#### Display Search Results Alongside the Response
+#### Display search results alongside the response
 
-The search tool provides an asynchronous stream of search replies as the model processes the query. Each reply’s `content` is a discriminated union: matches arrive as [`SpotlightSearchTool.SearchReply.Content.items(_:)`](spotlightsearchtool/searchreply/content-swift.enum/items(_:).md), [`SpotlightSearchTool.SearchReply.Content.scoredItems(_:)`](spotlightsearchtool/searchreply/content-swift.enum/scoreditems(_:).md), or [`SpotlightSearchTool.SearchReply.Content.groupedItems(_:)`](spotlightsearchtool/searchreply/content-swift.enum/groupeditems(_:).md) that provide wrapped [`SearchableItem`](searchableitem.md) results. Additionally, the model may also return other [`SpotlightSearchTool.SearchReply.Content`](spotlightsearchtool/searchreply/content-swift.enum.md) enumeration values as replies, depending on the query.
+The search tool provides an asynchronous stream of search replies as the model processes the query. Each reply’s `content` is a discriminated union: matches arrive as [`SpotlightSearchTool.SearchReply.Content.items(_:)`](./spotlightsearchtool/searchreply/content-swift.enum/items%28_%29.md), [`SpotlightSearchTool.SearchReply.Content.scoredItems(_:)`](./spotlightsearchtool/searchreply/content-swift.enum/scoreditems%28_%29.md), or [`SpotlightSearchTool.SearchReply.Content.groupedItems(_:)`](./spotlightsearchtool/searchreply/content-swift.enum/groupeditems%28_%29.md) that provide wrapped [`SearchableItem`](./searchableitem.md) results. Additionally, the model may also return other [`SpotlightSearchTool.SearchReply.Content`](./spotlightsearchtool/searchreply/content-swift.enum.md) enumeration values as replies, depending on the query.
 
 The sample listens for results on this stream and updates the UI as items arrive, so trail cards appear before the model finishes generating its text summary. Because the model can issue multiple queries while refining results, the sample deduplicates by `uniqueIdentifier` to avoid showing the same trail twice. The sample unwraps each `SearchableItem` to the underlying `CSSearchableItem` at this boundary, and the rest of the UI works directly with Core Spotlight’s own item type:
 
@@ -143,9 +145,9 @@ private func listenForSearchResults(from tool: SpotlightSearchTool) -> Task<Void
 }
 ```
 
-#### Index Searchable Items with Core Spotlight
+#### Index searchable items with Core Spotlight
 
-The sample loads trail data from a property list at launch and indexes each entry as a [`CSSearchableItem`](cssearchableitem.md). Each item includes attributes like title, location, keywords, and duration. The indexer uses [`beginBatch()`](cssearchableindex/beginbatch().md) and [`endBatch(withClientState:completionHandler:)`](cssearchableindex/endbatch(withclientstate:completionhandler:).md) to group the work into a single transaction, and records client state so it can skip reindexing on subsequent launches:
+The sample loads trail data from a property list at launch and indexes each entry as a [`CSSearchableItem`](./cssearchableitem.md). Each item includes attributes like title, location, keywords, and duration. The indexer uses [`beginBatch()`](./cssearchableindex/beginbatch%28%29.md) and [`endBatch(withClientState:completionHandler:)`](./cssearchableindex/endbatch%28withclientstate,completionhandler%29.md) to group the work into a single transaction, and records client state so it can skip reindexing on subsequent launches:
 
 ```swift
 func indexAllItems() async {
@@ -165,11 +167,12 @@ func indexAllItems() async {
 }
 ```
 
-The indexer conforms to [`CSSearchableIndexDelegate`](cssearchableindexdelegate.md) so the system can request full searchable items when needed during hydration, which enriches the generated response.
+The indexer conforms to [`CSSearchableIndexDelegate`](./cssearchableindexdelegate.md) so the system can request full searchable items when needed during hydration, which enriches the generated response.
 
 ## See Also
 
-- [Making your indexed content available to Foundation Models](making-your-indexed-content-available-to-foundation-models.md)
+### Essentials
+- [Making your indexed content available to Foundation Models](./making-your-indexed-content-available-to-foundation-models.md)
   Make the content you index for Spotlight available to Foundation models to help generate responses to prompts.
 
 

@@ -1,7 +1,8 @@
 # vDSP_svdiv
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Divides a single-precision scalar value by a single-precision vector.
 
@@ -10,7 +11,7 @@ Divides a single-precision scalar value by a single-precision vector.
 
 ## Declaration
 
-```swift
+```c
 void vDSP_svdiv(const float *__A, const float *__B, vDSP_Stride __IB, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
@@ -27,7 +28,7 @@ The operation is:
     C[n] = A / B[n];
 ```
 
-The following code shows an example of using [`vDSP_vsdiv`](https://developer.apple.com/documentation/accelerate/vdsp_vsdiv):
+The following code shows an example of using [`vDSP_vsdiv`](../Accelerate/vdsp_vsdiv.md):
 
 ```swift
 let stride = vDSP_Stride(1)

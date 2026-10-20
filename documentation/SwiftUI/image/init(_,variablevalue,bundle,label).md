@@ -1,7 +1,8 @@
 # init(_:variableValue:bundle:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a labeled image that you can use as content for controls, with the specified label and variable value.
 
@@ -24,7 +25,7 @@ init(_ name: String, variableValue: Double?, bundle: Bundle? = nil, label: Text)
 
 This initializer creates an image using a using a symbol in the specified bundle. The rendered symbol may alter its appearance to represent the value provided in `variableValue`.
 
-> **Note**: See WWDC22 session [`10158: Adopt variable color in SF Symbols`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10158/) for details on how to create symbols that support variable values.
+> **Note**: See WWDC22 session [10158: Adopt variable color in SF Symbols](https://developer.apple.com/wwdc22/10158/) for details on how to create symbols that support variable values.
 
 ## Parameters
 
@@ -35,9 +36,10 @@ This initializer creates an image using a using a symbol in the specified bundle
 
 ## See Also
 
-- [init(String, bundle: Bundle?, label: Text)](image/init(_:bundle:label:).md)
+### Creating an image for use as a control
+- [init(String, bundle: Bundle?, label: Text)](./init%28_,bundle,label%29.md)
   Creates a labeled image that you can use as content for controls, with the specified label.
-- [init(CGImage, scale: CGFloat, orientation: Image.Orientation, label: Text)](image/init(_:scale:orientation:label:).md)
+- [init(CGImage, scale: CGFloat, orientation: Image.Orientation, label: Text)](./init%28_,scale,orientation,label%29.md)
   Creates a labeled image based on a Core Graphics image instance, usable as content for controls.
 
 

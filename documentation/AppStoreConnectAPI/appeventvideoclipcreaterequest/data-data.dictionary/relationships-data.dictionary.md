@@ -1,23 +1,26 @@
 # AppEventVideoClipCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
 **Availability**:
-- App Store Connect API 1.7+
+- App Store Connect API 1.7+ - Deprecated in 4.5
+
+> **Deprecated**: This object is deprecated. Use [`AppAssetLibraryVideoCreateRequest`](../../appassetlibraryvideocreaterequest.md) instead.
 
 ## Declaration
 
-```swift
+```
 object AppEventVideoClipCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppEventVideoClipCreateRequest.Data.Relationships.AppEventLocalization](appeventvideoclipcreaterequest/data-data.dictionary/relationships-data.dictionary/appeventlocalization-data.dictionary.md)
+- [object AppEventVideoClipCreateRequest.Data.Relationships.AppEventLocalization](./relationships-data.dictionary/appeventlocalization-data.dictionary.md)
 
 ## Properties
 
@@ -25,7 +28,8 @@ object AppEventVideoClipCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object AppEventVideoClipCreateRequest.Data.Attributes](appeventvideoclipcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object AppEventVideoClipCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an app event video clip create request resource.
 
 

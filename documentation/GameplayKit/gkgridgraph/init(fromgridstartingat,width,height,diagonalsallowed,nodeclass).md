@@ -1,7 +1,8 @@
 # init(fromGridStartingAt:width:height:diagonalsAllowed:nodeClass:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a graph that describes an integer grid with the specified dimensions, using the specified node class.
 
@@ -19,29 +20,34 @@ Initializes a graph that describes an integer grid with the specified dimensions
 init(fromGridStartingAt position: vector_int2, width: Int32, height: Int32, diagonalsAllowed: Bool, nodeClass: AnyClass)
 ```
 
+```objc
+- (instancetype) initFromGridStartingAt:(vector_int2) position width:(int) width height:(int) height diagonalsAllowed:(BOOL) diagonalsAllowed nodeClass:(Class) nodeClass;
+```
+
 #### Return Value
 
 A new grid graph.
 
 #### Discussion
 
-Use the `nodeClass` parameter to create a graph using a custom subclass of [`GKGridGraphNode`](gkgridgraphnode.md). For example, your custom node class might override the [`cost(to:)`](gkgraphnode/cost(to:).md) method so that some nodes are more costly than others to travel through. Pathfinding in such a graph would favor indirect routes when a direct route has a higher cost.
+Use the `nodeClass` parameter to create a graph using a custom subclass of [`GKGridGraphNode`](../gkgridgraphnode.md). For example, your custom node class might override the [`cost(to:)`](../gkgraphnode/cost%28to%29.md) method so that some nodes are more costly than others to travel through. Pathfinding in such a graph would favor indirect routes when a direct route has a higher cost.
 
 All connections created through this method are bidirectional.
 
-For more information, see [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
+For more information, see [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 ## Parameters
 
 - `position`: The lowest x- and y-coordinates to appear in the grid.
 - `width`: The number of possible x-coordinates in the grid.
 - `height`: The number of possible y-coordinates in the grid.
-- `diagonalsAllowed`: [`true`](https://developer.apple.com/documentation/swift/true) to connect nodes in the grid to their diagonal neighbors; [`false`](https://developer.apple.com/documentation/swift/false) to connect nodes only to their horizontal and vertical neighbors.
-- `nodeClass`: The [`GKGridGraphNode`](gkgridgraphnode.md) subclass to use for nodes in the graph.
+- `diagonalsAllowed`: [`true`](../../Swift/true.md) to connect nodes in the grid to their diagonal neighbors; [`false`](../../Swift/false.md) to connect nodes only to their horizontal and vertical neighbors.
+- `nodeClass`: The [`GKGridGraphNode`](../gkgridgraphnode.md) subclass to use for nodes in the graph.
 
 ## See Also
 
-- [init(fromGridStartingAt: vector_int2, width: Int32, height: Int32, diagonalsAllowed: Bool)](gkgridgraph/init(fromgridstartingat:width:height:diagonalsallowed:).md)
+### Creating a Graph
+- [init(fromGridStartingAt: vector_int2, width: Int32, height: Int32, diagonalsAllowed: Bool)](./init%28fromgridstartingat,width,height,diagonalsallowed%29.md)
   Initializes a graph that describes an integer grid with the specified dimensions.
 
 

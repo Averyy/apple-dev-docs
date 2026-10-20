@@ -1,7 +1,8 @@
 # userInterfaceDirectionPolicy
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The directionality of user interface elements.
 

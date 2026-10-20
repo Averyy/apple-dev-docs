@@ -1,7 +1,8 @@
 # useMultiPassSearch
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -19,9 +20,10 @@ final var useMultiPassSearch: Bool { get }
 
 ## See Also
 
-- [var label: String?](vtmotionestimationsession/label.md)
-- [var motionVectorSize: VTMotionEstimationSession.BlockSize](vtmotionestimationsession/motionvectorsize.md)
-- [var sourcePixelBufferAttributes: [String : any Sendable]](vtmotionestimationsession/sourcepixelbufferattributes.md)
+### Inspecting the session
+- [var label: String?](./label.md)
+- [var motionVectorSize: VTMotionEstimationSession.BlockSize](./motionvectorsize.md)
+- [var sourcePixelBufferAttributes: [String : any Sendable]](./sourcepixelbufferattributes.md)
 
 
 ---

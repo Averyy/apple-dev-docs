@@ -1,7 +1,8 @@
 # DADiskMountOptions
 
 **Framework**: Disk Arbitration  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Options for DADiskMount().
 
@@ -15,25 +16,30 @@ Options for DADiskMount().
 typealias DADiskMountOptions = UInt32
 ```
 
+```c
+typedef UInt32 DADiskMountOptions;
+```
+
 ## Topics
 
 ### Constants
-- [var kDADiskMountOptionWhole: Int](kdadiskmountoptionwhole.md)
+- [var kDADiskMountOptionWhole: Int](./kdadiskmountoptionwhole.md)
   Mount the volumes tied to the whole disk object.
 
 ## See Also
 
-- [typealias DADiskClaimOptions](dadiskclaimoptions.md)
+### Data Types
+- [typealias DADiskClaimOptions](./dadiskclaimoptions.md)
   Options for DADiskClaim().
-- [typealias DADiskEjectOptions](dadiskejectoptions.md)
+- [typealias DADiskEjectOptions](./dadiskejectoptions.md)
   Options for DADiskEject().
-- [typealias DADiskOptions](dadiskoptions.md)
+- [typealias DADiskOptions](./dadiskoptions.md)
   Options for DADiskGetOptions() and DADiskSetOptions().
-- [typealias DADiskRenameOptions](dadiskrenameoptions.md)
+- [typealias DADiskRenameOptions](./dadiskrenameoptions.md)
   Options for DADiskRename().
-- [typealias DADiskUnmountOptions](dadiskunmountoptions.md)
+- [typealias DADiskUnmountOptions](./dadiskunmountoptions.md)
   Options for DADiskUnmount().
-- [typealias DAReturn](dareturn.md)
+- [typealias DAReturn](./dareturn.md)
   A return code.
 
 

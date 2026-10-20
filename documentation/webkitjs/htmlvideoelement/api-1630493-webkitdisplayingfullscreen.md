@@ -1,7 +1,8 @@
 # webkitDisplayingFullscreen
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 A Boolean value indicating whether the video is displaying in fullscreen mode.
 
@@ -11,7 +12,7 @@ A Boolean value indicating whether the video is displaying in fullscreen mode.
 
 ## Declaration
 
-```swift
+```
 readonly attribute boolean webkitDisplayingFullscreen;
 ```
 
@@ -21,18 +22,19 @@ readonly attribute boolean webkitDisplayingFullscreen;
 
 ## See Also
 
-- [webkitEnterFullscreen](htmlvideoelement/1633500-webkitenterfullscreen.md)
+### Displaying Video Fullscreen
+- [webkitEnterFullscreen](./api-1633500-webkitenterfullscreen.md)
   Enters fullscreen mode.
-- [webkitExitFullscreen](htmlvideoelement/1629468-webkitexitfullscreen.md)
+- [webkitExitFullscreen](./api-1629468-webkitexitfullscreen.md)
   Exits fullscreen mode.
-- [webkitSupportsFullscreen](htmlvideoelement/1628805-webkitsupportsfullscreen.md)
+- [webkitSupportsFullscreen](./api-1628805-webkitsupportsfullscreen.md)
   A Boolean value indicating whether the video can be played in fullscreen mode.
-- [webkitWirelessVideoPlaybackDisabled](htmlvideoelement/1630084-webkitwirelessvideoplaybackdisab.md)
+- [webkitWirelessVideoPlaybackDisabled](./api-1630084-webkitwirelessvideoplaybackdisab.md)
   A Boolean value indicating whether wireless video playback is disabled.
-- [webkitEnterFullScreen](htmlvideoelement/1630649-webkitenterfullscreen.md)
-  Use [`webkitEnterFullscreen`](htmlvideoelement/1633500-webkitenterfullscreen.md).
-- [webkitExitFullScreen](htmlvideoelement/1628991-webkitexitfullscreen.md)
-  Use [`webkitExitFullscreen`](htmlvideoelement/1629468-webkitexitfullscreen.md).
+- [webkitEnterFullScreen](./api-1630649-webkitenterfullscreen.md)
+  Use [`webkitEnterFullscreen`](./api-1633500-webkitenterfullscreen.md).
+- [webkitExitFullScreen](./api-1628991-webkitexitfullscreen.md)
+  Use [`webkitExitFullscreen`](./api-1629468-webkitexitfullscreen.md).
 
 
 ---

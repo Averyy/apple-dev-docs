@@ -1,17 +1,22 @@
 # init(textCell:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a text field cell that displays the specified string.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init(textCell string: String)
+```
+
+```objc
+- (instancetype) initTextCell:(NSString *) string;
 ```
 
 #### Return Value
@@ -24,7 +29,8 @@ A text field cell that displays a string.
 
 ## See Also
 
-- [init(coder: NSCoder)](nstextfieldcell/init(coder:).md)
+### Creating a Text Field Cell
+- [init(coder: NSCoder)](./init%28coder%29.md)
   Initializes a text field cell from data in the provided unarchiver.
 
 

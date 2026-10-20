@@ -1,6 +1,8 @@
 # Reading multiview 3D video files
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: Sample Code  
+**Download**: [ReadingMultiview3DVideoFiles.zip](https://docs-assets.developer.apple.com/published/03b0a926288f/ReadingMultiview3DVideoFiles.zip)
 
 Render single images for the left eye and right eye from a multiview High Efficiency Video Coding format file by reading individual video frames.
 
@@ -14,11 +16,11 @@ Multiview High Efficiency Video Coding (MV-HEVC) media files contain information
 
 Previewing and testing MV-HEVC files without hardware requires the ability to load, view, and step through the video data on a timeline. This sample app opens a media file, checking for the MV-HEVC format, then presents a view containing the individual frames at the timestamp. Step through the timeline by dragging the slider to a specific timestamp, or advance to the next frame by pressing the Space bar.
 
-For the full details of the MV-HEVC format, see [`Apple HEVC Stereo Video - Interoperability Profile (PDF)`](https://developer.apple.comhttps://developer.apple.com/av-foundation/HEVC-Stereo-Video-Profile.pdf) and [`ISO Base Media File Format and Apple HEVC Stereo Video (PDF)`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Stereo-Video-ISOBMFF-Extensions.pdf).
+For the full details of the MV-HEVC format, see [Apple HEVC Stereo Video - Interoperability Profile (PDF)](https://developer.apple.com/av-foundation/HEVC-Stereo-Video-Profile.pdf) and [ISO Base Media File Format and Apple HEVC Stereo Video (PDF)](https://developer.apple.com/av-foundation/Stereo-Video-ISOBMFF-Extensions.pdf).
 
-##### Load and Inspect the Media Asset
+##### Load and inspect the media asset
 
-The app first displays a button labeled Open MVHEVC File. When selected, the button presents an [`NSOpenPanel`](https://developer.apple.com/documentation/appkit/nsopenpanel) for choosing video media. Next, the app initializes a `MediaDetailViewModel`, loading this file as an [`AVURLAsset`](avurlasset.md). Before opening the file to present any elements for a stereo video frame, the app ensures a playable, readable file, and gets its total length in time. This is all performed in the initializer.
+The app first displays a button labeled Open MVHEVC File. When selected, the button presents an [`NSOpenPanel`](../AppKit/nsopenpanel.md) for choosing video media. Next, the app initializes a `MediaDetailViewModel`, loading this file as an [`AVURLAsset`](./avurlasset.md). Before opening the file to present any elements for a stereo video frame, the app ensures a playable, readable file, and gets its total length in time. This is all performed in the initializer.
 
 ```swift
 init(filename: URL) {
@@ -36,16 +38,16 @@ init(filename: URL) {
 }
 ```
 
-##### Load Track Data and Timestamps
+##### Load track data and timestamps
 
-After confirming the track is readable video data, the app initializes a `StereoViewModel`by calling [`loadTracks(withMediaCharacteristic:completionHandler:)`](avasset/loadtracks(withmediacharacteristic:completionhandler:).md) requesting a [`containsStereoMultiviewVideo`](avmediacharacteristic/containsstereomultiviewvideo.md) track. This check confirms that the file meets the MV-HEVC specification and has valid stereo data.
+After confirming the track is readable video data, the app initializes a `StereoViewModel`by calling [`loadTracks(withMediaCharacteristic:completionHandler:)`](./avasset/loadtracks%28withmediacharacteristic,completionhandler%29.md) requesting a [`containsStereoMultiviewVideo`](./avmediacharacteristic/containsstereomultiviewvideo.md) track. This check confirms that the file meets the MV-HEVC specification and has valid stereo data.
 
 ```swift
 if let track = try await asset.loadTracks(withMediaCharacteristic: .containsStereoMultiviewVideo).first {
     self.track = track
 ```
 
-Next, the app pulls available timestamps for each frame in the track by calling `presentationTimesFor(track:asset:)`. The app places a video sample cursor at the start of the track with [`makeSampleCursorAtFirstSampleInDecodeOrder()`](avassettrack/makesamplecursoratfirstsampleindecodeorder().md), then creates a new [`AVSampleBufferGenerator`](avsamplebuffergenerator.md) and [`AVSampleBufferRequest`](avsamplebufferrequest.md).
+Next, the app pulls available timestamps for each frame in the track by calling `presentationTimesFor(track:asset:)`. The app places a video sample cursor at the start of the track with [`makeSampleCursorAtFirstSampleInDecodeOrder()`](./avassettrack/makesamplecursoratfirstsampleindecodeorder%28%29.md), then creates a new [`AVSampleBufferGenerator`](./avsamplebuffergenerator.md) and [`AVSampleBufferRequest`](./avsamplebufferrequest.md).
 
 ```swift
 guard let cursor = track.makeSampleCursorAtFirstSampleInDecodeOrder() else {
@@ -57,7 +59,7 @@ let request = AVSampleBufferRequest(start: cursor)
 var numSamples: Int64 = 0
 ```
 
-To read the timestamps, obtain the sample buffer for the current cursor from [`makeSampleBuffer(for:)`](avsamplebuffergenerator/makesamplebuffer(for:).md), then add the [`presentationTimeStamp`](https://developer.apple.com/documentation/coremedia/cmsamplebuffer/presentationtimestamp) for the frame. The cursor steps forward by calling [`stepInDecodeOrder(byCount:)`](avsamplecursor/stepindecodeorder(bycount:).md), reading and caching timestamps for each frame in the buffer. When `stepInDecodeOrder(byCount:)` returns no next frame, sample times are in the cache and reading the video track completes.
+To read the timestamps, obtain the sample buffer for the current cursor from [`makeSampleBuffer(for:)`](./avsamplebuffergenerator/makesamplebuffer%28for%29.md), then add the [`presentationTimeStamp`](../CoreMedia/cmsamplebuffer/presentationtimestamp.md) for the frame. The cursor steps forward by calling [`stepInDecodeOrder(byCount:)`](./avsamplecursor/stepindecodeorder%28bycount%29.md), reading and caching timestamps for each frame in the buffer. When `stepInDecodeOrder(byCount:)` returns no next frame, sample times are in the cache and reading the video track completes.
 
 ```swift
 repeat {
@@ -67,9 +69,9 @@ repeat {
 } while numSamples == 1
 ```
 
-##### Load Video Layer Information
+##### Load video layer information
 
-After preparing timestamps, the app calls `loadVideoLayerIdsForTrack()` to get the layer IDs for the two tracks associated with the left and right eyes. The app calls [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md)to retrieve metadata, then filters the layer data out of the first available track’s [`tagCollections`](https://developer.apple.com/documentation/coremedia/cmformatdescription/tagcollections). The filter predicate is [`value(onlyIfMatching:)`](https://developer.apple.com/documentation/coremedia/cmtag-swift.class/value(onlyifmatching:)), extracting only video layer IDs.
+After preparing timestamps, the app calls `loadVideoLayerIdsForTrack()` to get the layer IDs for the two tracks associated with the left and right eyes. The app calls [`load(_:isolation:)`](./avasynchronouskeyvalueloading/load%28_,isolation%29.md)to retrieve metadata, then filters the layer data out of the first available track’s [`tagCollections`](../CoreMedia/cmformatdescription/tagcollections.md). The filter predicate is [`value(onlyIfMatching:)`](../CoreMedia/cmtag-swift.class/value%28onlyifmatching%29.md), extracting only video layer IDs.
 
 ```swift
 private func loadVideoLayerIdsForTrack(_ videoTrack: AVAssetTrack) async throws -> [Int64]? {
@@ -84,9 +86,9 @@ private func loadVideoLayerIdsForTrack(_ videoTrack: AVAssetTrack) async throws 
 }
 ```
 
-##### Load Video Frames From Buffers
+##### Load video frames from buffers
 
-With the timestamp and left eye and right eye video layers identified, `readBufferFromAsset(at:)` calls the `readNextBufferFromAsset()` method of the app to retrieve and display the frame data. The method starts with a series of `guard` checks to ensure read access to the track, creates a local copy of the sample buffer by calling [`copyNextSampleBuffer()`](avassetreaderoutput/copynextsamplebuffer().md), and retrieves the tagged video buffers from the track.
+With the timestamp and left eye and right eye video layers identified, `readBufferFromAsset(at:)` calls the `readNextBufferFromAsset()` method of the app to retrieve and display the frame data. The method starts with a series of `guard` checks to ensure read access to the track, creates a local copy of the sample buffer by calling [`copyNextSampleBuffer()`](./avassetreaderoutput/copynextsamplebuffer%28%29.md), and retrieves the tagged video buffers from the track.
 
 ```swift
 guard let assetReader, let trackOutput else {
@@ -110,7 +112,7 @@ guard taggedBuffers.count == 2 else {
 }
 ```
 
-The app parses each [`CMTaggedBuffer.Buffer.pixelBuffer(_:)`](https://developer.apple.com/documentation/coremedia/cmtaggedbuffer/buffer-swift.enum/pixelbuffer(_:)) from the returned sample buffers into an image for display using [`init(cvPixelBuffer:)`](https://developer.apple.com/documentation/coreimage/ciimage/init(cvpixelbuffer:)-3wng7). The app creates an [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage) and sets it to the view content as either `leftEye` or `rightEye` depending on whether the view contains a [`stereoView(_:)`](https://developer.apple.com/documentation/coremedia/cmtag-swift.class/stereoview(_:)) for the left or right eye.
+The app parses each [`CMTaggedBuffer.Buffer.pixelBuffer(_:)`](../CoreMedia/cmtaggedbuffer/buffer-swift.enum/pixelbuffer%28_%29.md) from the returned sample buffers into an image for display using [`init(cvPixelBuffer:)`](../CoreImage/ciimage/init%28cvpixelbuffer%29-3wng7.md). The app creates an [`NSImage`](../AppKit/nsimage.md) and sets it to the view content as either `leftEye` or `rightEye` depending on whether the view contains a [`stereoView(_:)`](../CoreMedia/cmtag-swift.class/stereoview%28_%29.md) for the left or right eye.
 
 ```swift
 taggedBuffers.forEach { taggedBuffer in
@@ -140,19 +142,20 @@ taggedBuffers.forEach { taggedBuffer in
 
 ## See Also
 
-- [class AVAssetReader](avassetreader.md)
+### Media reading
+- [class AVAssetReader](./avassetreader.md)
   An object that reads media data from an asset.
-- [class AVAssetReaderOutput](avassetreaderoutput.md)
+- [class AVAssetReaderOutput](./avassetreaderoutput.md)
   An abstract class that defines the interface to read media samples from an asset reader.
-- [class AVAssetReaderTrackOutput](avassetreadertrackoutput.md)
+- [class AVAssetReaderTrackOutput](./avassetreadertrackoutput.md)
   An object that reads media data from a single track of an asset.
-- [class AVAssetReaderAudioMixOutput](avassetreaderaudiomixoutput.md)
+- [class AVAssetReaderAudioMixOutput](./avassetreaderaudiomixoutput.md)
   An object that reads audio samples that result from mixing audio from one or more tracks.
-- [class AVAssetReaderVideoCompositionOutput](avassetreadervideocompositionoutput.md)
+- [class AVAssetReaderVideoCompositionOutput](./avassetreadervideocompositionoutput.md)
   An object that reads composited video frames from one or more tracks of an asset.
-- [class AVAssetReaderSampleReferenceOutput](avassetreadersamplereferenceoutput.md)
+- [class AVAssetReaderSampleReferenceOutput](./avassetreadersamplereferenceoutput.md)
   An object that reads sample references from an asset track.
-- [class AVAssetReaderOutputMetadataAdaptor](avassetreaderoutputmetadataadaptor.md)
+- [class AVAssetReaderOutputMetadataAdaptor](./avassetreaderoutputmetadataadaptor.md)
   An object that creates timed metadata group objects for an asset track.
 
 

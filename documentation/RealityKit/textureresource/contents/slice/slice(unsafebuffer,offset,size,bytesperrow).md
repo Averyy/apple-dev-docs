@@ -1,7 +1,8 @@
 # slice(unsafeBuffer:offset:size:bytesPerRow:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Specifies a single mipmap level slice of a texture resource with pixel data that RealityKit copies from a Metal buffer.
 
@@ -21,7 +22,7 @@ static func slice(unsafeBuffer buffer: any MTLBuffer, offset: Int = 0, size: Int
 
 #### Discussion
 
-> ❗ **Important**: A [`TextureResource.Contents.Slice`](textureresource/contents/slice.md) that you create with this function and use to create a [`TextureResource`](textureresource.md) copies from the source buffer. That copy occurs when initializing the texture resource. The caller is responsible for ensuring that the system doesn’t modify the source Metal buffer while copying it to a texture.
+> ❗ **Important**: A [`TextureResource.Contents.Slice`](../slice.md) that you create with this function and use to create a [`TextureResource`](../../../textureresource.md) copies from the source buffer. That copy occurs when initializing the texture resource. The caller is responsible for ensuring that the system doesn’t modify the source Metal buffer while copying it to a texture.
 
 ## Parameters
 
@@ -32,7 +33,8 @@ static func slice(unsafeBuffer buffer: any MTLBuffer, offset: Int = 0, size: Int
 
 ## See Also
 
-- [static func slice(data: Data, bytesPerRow: Int) -> TextureResource.Contents.Slice](textureresource/contents/slice/slice(data:bytesperrow:).md)
+### Creating a texture slice
+- [static func slice(data: Data, bytesPerRow: Int) -> TextureResource.Contents.Slice](./slice%28data,bytesperrow%29.md)
   Specifies a single mipmap level slice of a texture resource with pixel data that RealityKit copies from a byte buffer.
 
 

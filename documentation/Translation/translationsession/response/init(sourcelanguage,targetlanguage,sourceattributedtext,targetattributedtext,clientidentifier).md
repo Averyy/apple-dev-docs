@@ -1,7 +1,8 @@
 # init(sourceLanguage:targetLanguage:sourceAttributedText:targetAttributedText:clientIdentifier:)
 
 **Framework**: Translation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance of a translation response with formatted text.
 
@@ -23,7 +24,8 @@ You don’t normally use this initializer directly. Instead, let the translation
 
 ## See Also
 
-- [init(sourceLanguage: Locale.Language, targetLanguage: Locale.Language, sourceText: String, targetText: String, clientIdentifier: String?)](translationsession/response/init(sourcelanguage:targetlanguage:sourcetext:targettext:clientidentifier:).md)
+### Initializing a response
+- [init(sourceLanguage: Locale.Language, targetLanguage: Locale.Language, sourceText: String, targetText: String, clientIdentifier: String?)](./init%28sourcelanguage,targetlanguage,sourcetext,targettext,clientidentifier%29.md)
   Creates an instance of a translation response.
 
 

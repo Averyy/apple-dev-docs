@@ -1,7 +1,8 @@
 # AXError.notificationAlreadyRegistered
 
 **Framework**: Application Services  
-**Kind**: enumelt
+**Kind**: enumelt  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+

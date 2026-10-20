@@ -1,7 +1,8 @@
 # SecAuthenticationType.httpBasic
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies HTTP Basic authentication.
 
@@ -13,6 +14,10 @@ Specifies HTTP Basic authentication.
 
 ```swift
 case httpBasic
+```
+
+```c
+kSecAuthenticationTypeHTTPBasic
 ```
 
 

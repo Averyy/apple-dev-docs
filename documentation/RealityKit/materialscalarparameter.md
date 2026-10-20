@@ -1,7 +1,8 @@
 # MaterialScalarParameter
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The scalar parameter applied to a material.
 
@@ -11,7 +12,7 @@ The scalar parameter applied to a material.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,42 +23,43 @@ enum MaterialScalarParameter
 ## Topics
 
 ### Getting scalar parameters
-- [MaterialScalarParameter.float(_:)](materialscalarparameter/float(_:).md)
+- [MaterialScalarParameter.float(_:)](./materialscalarparameter/float%28_%29.md)
   A scalar, single-precision value.
-- [MaterialScalarParameter.texture(_:)](materialscalarparameter/texture(_:).md)
+- [MaterialScalarParameter.texture(_:)](./materialscalarparameter/texture%28_%29.md)
   A one-channel texture.
 ### Creating a scalar parameter
-- [init(floatLiteral: Float)](materialscalarparameter/init(floatliteral:).md)
+- [init(floatLiteral: Float)](./materialscalarparameter/init%28floatliteral%29.md)
   Creates a scalar parameter from a floating-point literal.
-- [init(integerLiteral: Int)](materialscalarparameter/init(integerliteral:).md)
+- [init(integerLiteral: Int)](./materialscalarparameter/init%28integerliteral%29.md)
   Creates a scalar parameter from an integer literal.
 ### Operators
-- [static func == (MaterialScalarParameter, MaterialScalarParameter) -> Bool](materialscalarparameter/==(_:_:).md)
+- [static func == (MaterialScalarParameter, MaterialScalarParameter) -> Bool](./materialscalarparameter/eqeq%28_,_%29.md)
   Indicates whether two scalar parameters are equal.
 ### Instance Methods
-- [func hash(into: inout Hasher)](materialscalarparameter/hash(into:).md)
+- [func hash(into: inout Hasher)](./materialscalarparameter/hash%28into%29.md)
   Hashes the essential components of the scalar parameter by feeding them into the given hash function.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByFloatLiteral](../swift/expressiblebyfloatliteral.md)
-- [ExpressibleByIntegerLiteral](../swift/expressiblebyintegerliteral.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByFloatLiteral](../Swift/expressiblebyfloatliteral.md)
+- [ExpressibleByIntegerLiteral](../Swift/expressiblebyintegerliteral.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [protocol Material](material.md)
+### Material types
+- [protocol Material](./material.md)
   A type that describes the material aspects of a mesh, like color and texture.
-- [typealias Color](material/color.md)
+- [typealias Color](./material/color.md)
   An alias for the color type that’s appropriate for the current platform.
-- [typealias Parameters](material/parameters.md)
+- [typealias Parameters](./material/parameters.md)
   The parameter type that custom materials uses for properties the framework passes to shader functions.
-- [struct MaterialParameterTypes](materialparametertypes.md)
+- [struct MaterialParameterTypes](./materialparametertypes.md)
   A set of types that material parameters can use.
-- [struct MaterialParameters](materialparameters.md)
-- [enum MaterialColorParameter](materialcolorparameter.md)
+- [struct MaterialParameters](./materialparameters.md)
+- [enum MaterialColorParameter](./materialcolorparameter.md)
   The color parameter applied to a material.
 
 

@@ -1,7 +1,8 @@
 # metadata(forFormat:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of metadata items—one for each metadata item in the container of a given format.
 
@@ -20,6 +21,10 @@ Returns an array of metadata items—one for each metadata item in the container
 func metadata(forFormat format: String) -> [AVMetadataItem]
 ```
 
+```objc
+- (NSArray<AVMetadataItem *> *) metadataForFormat:(NSString *) format;
+```
+
 #### Return Value
 
 An array of `AVMetadataItem` objects, one for each metadata item in the container of format, or `nil` if there is no metadata of the specified format.
@@ -30,9 +35,10 @@ An array of `AVMetadataItem` objects, one for each metadata item in the containe
 
 ## See Also
 
-- [var commonMetadata: [AVMetadataItem]](avmediaselectionoption/commonmetadata.md)
+### Managing metadata
+- [var commonMetadata: [AVMetadataItem]](./commonmetadata.md)
   An array of metadata items for each common metadata key for which a value is available.
-- [var availableMetadataFormats: [String]](avmediaselectionoption/availablemetadataformats.md)
+- [var availableMetadataFormats: [String]](./availablemetadataformats.md)
   The metadata formats that contain metadata associated with the option.
 
 

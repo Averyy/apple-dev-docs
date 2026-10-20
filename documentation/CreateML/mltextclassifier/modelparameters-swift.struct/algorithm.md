@@ -1,7 +1,8 @@
 # algorithm
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parameter’s algorithm setting.
 
@@ -20,11 +21,12 @@ var algorithm: MLTextClassifier.ModelAlgorithmType
 
 ## See Also
 
-- [var language: NLLanguage?](mltextclassifier/modelparameters-swift.struct/language.md)
+### Accessing parameters
+- [var language: NLLanguage?](./language.md)
   The parameter’s language setting.
-- [var validation: MLTextClassifier.ModelParameters.ValidationData](mltextclassifier/modelparameters-swift.struct/validation.md)
+- [var validation: MLTextClassifier.ModelParameters.ValidationData](./validation.md)
   The validation dataset.
-- [var maxIterations: Int?](mltextclassifier/modelparameters-swift.struct/maxiterations.md)
+- [var maxIterations: Int?](./maxiterations.md)
   The maximum number of training iterations.
 
 

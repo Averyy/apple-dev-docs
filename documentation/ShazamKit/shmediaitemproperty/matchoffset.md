@@ -1,7 +1,8 @@
 # matchOffset
 
 **Framework**: ShazamKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key to access the match offset property of a matched media item.
 
@@ -20,9 +21,14 @@ The key to access the match offset property of a matched media item.
 static let matchOffset: SHMediaItemProperty
 ```
 
+```c
+extern SHMediaItemProperty const SHMediaItemMatchOffset;
+```
+
 ## See Also
 
-- [static let frequencySkew: SHMediaItemProperty](shmediaitemproperty/frequencyskew.md)
+### Matched media item property keys
+- [static let frequencySkew: SHMediaItemProperty](./frequencyskew.md)
   The key to access the frequency skew property of a matched media item.
 
 

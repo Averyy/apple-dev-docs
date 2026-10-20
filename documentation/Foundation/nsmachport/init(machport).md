@@ -1,7 +1,8 @@
 # init(machPort:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly allocated `NSMachPort` object with a given Mach port.
 
@@ -20,6 +21,10 @@ Initializes a newly allocated `NSMachPort` object with a given Mach port.
 init(machPort: UInt32)
 ```
 
+```objc
+- (instancetype) initWithMachPort:(uint32_t) machPort;
+```
+
 #### Return Value
 
 Returns an initialized `NSMachPort` object that uses `machPort` to send or receive messages. The returned object might be different than the original receiver
@@ -36,11 +41,12 @@ This method is the designated initializer for the `NSMachPort` class.
 
 ## See Also
 
-- [class func port(withMachPort: UInt32) -> Port](nsmachport/port(withmachport:).md)
+### Creating and Initializing
+- [class func port(withMachPort: UInt32) -> Port](./port%28withmachport%29.md)
   Creates and returns a port object configured with the given Mach port.
-- [class func port(withMachPort: UInt32, options: NSMachPort.Options) -> Port](nsmachport/port(withmachport:options:).md)
+- [class func port(withMachPort: UInt32, options: NSMachPort.Options) -> Port](./port%28withmachport,options%29.md)
   Creates and returns a port object configured with the specified options and the given Mach port.
-- [init(machPort: UInt32, options: NSMachPort.Options)](nsmachport/init(machport:options:).md)
+- [init(machPort: UInt32, options: NSMachPort.Options)](./init%28machport,options%29.md)
   Initializes a newly allocated `NSMachPort` object with a given Mach port and the specified options.
 
 

@@ -1,7 +1,8 @@
 # AVExperienceController.Experience.immersive
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates an experience in which the video extends beyond the app window boundaries/container.
 
@@ -20,11 +21,12 @@ It is valid to transition to `immersive` even when the `AVPlayerViewController` 
 
 ## See Also
 
-- [AVExperienceController.Experience.embedded](avexperiencecontroller/experience-swift.enum/embedded.md)
+### Supported experiences
+- [AVExperienceController.Experience.embedded](./embedded.md)
   An experience where the video embeds within its original container.
-- [AVExperienceController.Experience.expanded](avexperiencecontroller/experience-swift.enum/expanded.md)
+- [AVExperienceController.Experience.expanded](./expanded.md)
   An experience where the system places the video outside of its original container.
-- [AVExperienceController.Experience.multiview](avexperiencecontroller/experience-swift.enum/multiview.md)
+- [AVExperienceController.Experience.multiview](./multiview.md)
   An experience where multiple videos play together.
 
 

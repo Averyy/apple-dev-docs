@@ -1,7 +1,8 @@
 # flushCollection
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Removes and drops references to all members of dictionary.
 
@@ -11,21 +12,22 @@ Removes and drops references to all members of dictionary.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void flushCollection(void);
 ```
 
 ## See Also
 
-- [+ withCapacity](osdictionary/3180907-withcapacity.md)
+### Creating a Dictionary
+- [+ withCapacity](./api-3180907-withcapacity.md)
   Allocates an OSDictionary object with preallocated capacity.
-- [+ withDictionary](osdictionary/3180908-withdictionary.md)
+- [+ withDictionary](./api-3180908-withdictionary.md)
   Allocates an OSDictionary object with given members and preallocated capacity.
-- [+ withObjects](osdictionary/3180909-withobjects.md)
+- [+ withObjects](./api-3180909-withobjects.md)
   Allocates an OSDictionary object with given members and preallocated capacity.
-- [- merge](osdictionary/3180904-merge.md)
+- [- merge](./api-3180904-merge.md)
   Adds all members of a dictionary to this dictionary.
-- [- free](osdictionary/3180898-free.md)
+- [- free](./api-3180898-free.md)
 
 
 ---

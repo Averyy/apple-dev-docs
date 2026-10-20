@@ -1,7 +1,8 @@
 # newShippingMethods
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of available shipping methods.
 
@@ -11,17 +12,18 @@ The list of available shipping methods.
 
 ## Declaration
 
-```swift
+```
 sequence <ApplePayShippingMethod> newShippingMethods;
 ```
 
 ## See Also
 
-- [newLineItems](applepaycouponcodeupdate/newlineitems.md)
+### Setting updated transaction details
+- [newLineItems](./newlineitems.md)
   The list of updated line items incorporating the coupon code update.
-- [newTotal](applepaycouponcodeupdate/newtotal.md)
+- [newTotal](./newtotal.md)
   The updated total resulting from the coupon code update.
-- [errors](applepaycouponcodeupdate/errors.md)
+- [errors](./errors.md)
   A list of errors resulting from the coupon code update.
 
 

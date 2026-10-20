@@ -1,7 +1,8 @@
 # loadMetadata(for:completionHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads metadata items that a track contains for the specified format.
 
@@ -17,22 +18,33 @@ Loads metadata items that a track contains for the specified format.
 ## Declaration
 
 ```swift
+func loadMetadata(for format: AVMetadataFormat, completionHandler: @escaping @Sendable ([AVMetadataItem]?, (any Error)?) -> Void)
+```
+
+```swift
 func loadMetadata(for format: AVMetadataFormat) async throws -> [AVMetadataItem]
+```
+
+```objc
+- (void) loadMetadataForFormat:(AVMetadataFormat) format completionHandler:(void (^)(NSArray<AVMetadataItem *> *, NSError *)) completionHandler;
 ```
 
 ## Parameters
 
 - `format`: The format of the metadata items to load.
-- `completionHandler`: A callback that the system invokes after it finishes the loading request. It passes the completion handler the following parameters: - **metadata**: The loaded metadata, or an empty array if no metadata items for the specified format exist. The value is `nil` if an error occurs.
-- **error**: An error object if the request fails; otherwise, nil.
+- `completionHandler`: A callback that the system invokes after it finishes the loading request. It passes the completion handler the following parameters:
+
+  - **metadata**: The loaded metadata, or an empty array if no metadata items for the specified format exist. The value is `nil` if an error occurs.
+  - **error**: An error object if the request fails; otherwise, nil.
 
 ## See Also
 
-- [static var metadata: AVAsyncProperty<Root, [AVMetadataItem]>](avpartialasyncproperty/metadata-6e14c.md)
+### Loading metadata
+- [static var metadata: AVAsyncProperty<Root, [AVMetadataItem]>](../avpartialasyncproperty/metadata-6e14c.md)
   An array of metadata items for all metadata identifiers that have a value.
-- [static var commonMetadata: AVAsyncProperty<Root, [AVMetadataItem]>](avpartialasyncproperty/commonmetadata-73m58.md)
+- [static var commonMetadata: AVAsyncProperty<Root, [AVMetadataItem]>](../avpartialasyncproperty/commonmetadata-73m58.md)
   An array of metadata items for all common metadata keys that have a value.
-- [static var availableMetadataFormats: AVAsyncProperty<Root, [AVMetadataFormat]>](avpartialasyncproperty/availablemetadataformats-5p9xg.md)
+- [static var availableMetadataFormats: AVAsyncProperty<Root, [AVMetadataFormat]>](../avpartialasyncproperty/availablemetadataformats-5p9xg.md)
   An array of metadata formats available for the track.
 
 

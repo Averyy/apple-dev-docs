@@ -7,7 +7,7 @@ Returns a dictionary with the properties of a given IOKit object.
 
 ## Declaration
 
-```swift
+```
 fromPath(filePath)
 ```
 
@@ -17,15 +17,17 @@ fromPath(filePath)
 
 ## See Also
 
-- [matchingClass](ioregistry/1812186-matchingclass.md)
+### Accessing the IOKit Registry
+- [matchingClass](./api-1812186-matchingclass.md)
   Returns the IOKit objects of a given class.
-- [matchingName](ioregistry/1812200-matchingname.md)
+- [matchingName](./api-1812200-matchingname.md)
   Returns the IOKit objects of the specified name.
-- [childrenOf](ioregistry/1812215-childrenof.md)
+- [childrenOf](./api-1812215-childrenof.md)
   Returns the children of the given IOKit object.
-- [parentsOf](ioregistry/1812225-parentsof.md)
+- [parentsOf](./api-1812225-parentsof.md)
   Returns the parents of the given IOKit object.
-- [Installer JS](installer_js.md)
+### Related Documentation
+- [Installer JS](../installer_js.md)
   Manage and customize the installation and distribution experience.
 
 

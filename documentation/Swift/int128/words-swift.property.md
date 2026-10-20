@@ -1,7 +1,8 @@
 # words
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection containing the words of this value’s binary representation, in order from the least significant to most significant.
 

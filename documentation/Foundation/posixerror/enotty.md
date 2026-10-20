@@ -1,7 +1,8 @@
 # ENOTTY
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Inappropriate ioctl for device.
 

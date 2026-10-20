@@ -1,7 +1,8 @@
 # name
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attribute’s local name.
 

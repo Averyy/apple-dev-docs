@@ -1,6 +1,7 @@
 # Creating enhanced security helper extensions
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Reduce opportunities for an attacker to target your app through its extensions.
 
@@ -8,9 +9,9 @@ Reduce opportunities for an attacker to target your app through its extensions.
 
 Separating sensitive calculations, such as handling data from untrusted sources, into extensions that the system runs as separate processes from your app reduces the opportunity for attackers to target the sensitive calculation and gain access to other parts of your app or the system. Create Enhanced Security helper extensions on iOS, iPadOS, and macOS to enforce tighter sandbox restrictions, and enable compiler and runtime security protections.
 
-##### Define the Extension Point in Your App
+##### Define the extension point in your app
 
-Add the `EX_ENABLE_EXTENSION_POINT_GENERATION` user-defined build setting with the value `YES` to your app target’s build setting. In your app’s source code, create an extension to [`AppExtensionPoint`](https://developer.apple.com/documentation/extensionfoundation/appextensionpoint) that defines your app’s extension point. Give the extension point the [`AppExtensionPoint.Name`](https://developer.apple.com/documentation/extensionfoundation/appextensionpoint/name) of your choosing, and the [`AppExtensionPoint.EnhancedSecurity`](https://developer.apple.com/documentation/extensionfoundation/appextensionpoint/enhancedsecurity) attribute to tell the system to run your extension in the Enhanced Security runtime:
+Add the `EX_ENABLE_EXTENSION_POINT_GENERATION` user-defined build setting with the value `YES` to your app target’s build setting. In your app’s source code, create an extension to [`AppExtensionPoint`](../ExtensionFoundation/appextensionpoint.md) that defines your app’s extension point. Give the extension point the [`AppExtensionPoint.Name`](../ExtensionFoundation/appextensionpoint/name.md) of your choosing, and the [`AppExtensionPoint.EnhancedSecurity`](../ExtensionFoundation/appextensionpoint/enhancedsecurity.md) attribute to tell the system to run your extension in the Enhanced Security runtime:
 
 ```swift
 import ExtensionFoundation
@@ -24,7 +25,7 @@ extension AppExtensionPoint {
 }
 ```
 
-##### Create the Extension
+##### Create the extension
 
 Follow these steps to create the extension:
 
@@ -33,7 +34,7 @@ Follow these steps to create the extension:
 3. In the Xcode Project navigator, delete the extension target’s `Info.plist` file.
 4. In the target build settings editor, delete the `INFOPLIST_FILE` build setting for the extension target.
 
-Edit the main source file for the extension, so that the [`AppExtensionPoint.Identifier`](https://developer.apple.com/documentation/extensionfoundation/appextensionpoint/identifier) for the extension point it binds to has your app’s bundle ID as the host identifier, and the name you gave the extension point in the previous section:
+Edit the main source file for the extension, so that the [`AppExtensionPoint.Identifier`](../ExtensionFoundation/appextensionpoint/identifier.md) for the extension point it binds to has your app’s bundle ID as the host identifier, and the name you gave the extension point in the previous section:
 
 ```swift
 import ExtensionFoundation
@@ -49,9 +50,9 @@ struct MyAppHelper: ExampleExtension {
 
 Write the code to implement your extension’s behavior. The system runs your extension in a sandbox that restricts access to most system services and frameworks. In particular, your extension can’t present UI. Instead, it must communicate with its host app, and ask the app to present UI and interact with other system services on the extension’s behalf.
 
-##### Discover and Launch the Extension
+##### Discover and launch the extension
 
-In your app, create an [`AppExtensionPoint.Monitor`](https://developer.apple.com/documentation/extensionfoundation/appextensionpoint/monitor) to discover the Enhanced Security extension:
+In your app, create an [`AppExtensionPoint.Monitor`](../ExtensionFoundation/appextensionpoint/monitor.md) to discover the Enhanced Security extension:
 
 ```swift
 let monitor = try await AppExtensionPoint.Monitor(appExtensionPoint: AppExtensionPoint.exampleExtension)
@@ -60,7 +61,7 @@ guard let identity = monitor.identities.first else {
 } 
 ```
 
-The `identity` represents the bundle for the Enhanced Security extension you created in the previous section. Create an [`AppExtensionProcess`](https://developer.apple.com/documentation/extensionfoundation/appextensionprocess) with that bundle to launch the extension:
+The `identity` represents the bundle for the Enhanced Security extension you created in the previous section. Create an [`AppExtensionProcess`](../ExtensionFoundation/appextensionprocess.md) with that bundle to launch the extension:
 
 ```swift
 do {
@@ -74,11 +75,11 @@ catch let error {
 }
 ```
 
-##### Communicate Between the App and the Extension
+##### Communicate between the app and the extension
 
-Use [`XPCSession`](https://developer.apple.com/documentation/xpc/xpcsession) to handle communication between your app and its Enhanced Security extension. For more information, see [`Creating XPC services`](https://developer.apple.com/documentation/xpc/creating-xpc-services).
+Use [`XPCSession`](../XPC/xpcsession.md) to handle communication between your app and its Enhanced Security extension. For more information, see [Creating XPC services](../XPC/creating-xpc-services.md).
 
-Define structures that conform to [`Codable`](https://developer.apple.com/documentation/swift/codable) in code you share between the app and extension, and create instances of those structures to send over XPC using the session you create:
+Define structures that conform to [`Codable`](../Swift/codable.md) in code you share between the app and extension, and create instances of those structures to send over XPC using the session you create:
 
 ```swift
 struct Message: Identifiable, Codable {
@@ -91,7 +92,7 @@ struct Message: Identifiable, Codable {
 }
 ```
 
-Call [`makeXPCSession()`](https://developer.apple.com/documentation/extensionfoundation/appextensionprocess/makexpcsession()) in your app to create an `XPCSession` you use to send messages to the extension:
+Call [`makeXPCSession()`](../ExtensionFoundation/appextensionprocess/makexpcsession%28%29.md) in your app to create an `XPCSession` you use to send messages to the extension:
 
 ```swift
 do {
@@ -128,7 +129,7 @@ let response = try await withCheckedThrowingContinuation { continuation in
 // Interpret the response from the extension.
 ```
 
-In the extension, create a [`ConnectionHandler`](https://developer.apple.com/documentation/extensionfoundation/connectionhandler) to accept incoming connections from the app. Call the [`init(onSessionRequest:)`](https://developer.apple.com/documentation/extensionfoundation/connectionhandler/init(onsessionrequest:)) initializer, and use the closure to accept the XPC connection and create a session.
+In the extension, create a [`ConnectionHandler`](../ExtensionFoundation/connectionhandler.md) to accept incoming connections from the app. Call the [`init(onSessionRequest:)`](../ExtensionFoundation/connectionhandler/init%28onsessionrequest%29.md) initializer, and use the closure to accept the XPC connection and create a session.
 
 ```swift
 extension ExampleExtension {
@@ -154,19 +155,20 @@ fileprivate struct MessageHandler<E: ExampleExtension>: XPCPeerHandler, Sendable
 
 ```
 
-##### Adopt Other Security Hardening Features
+##### Adopt other security hardening features
 
-Enhanced security extensions use the same compiler and runtime security features as apps that adopt the Enhanced Security capability. For more information, see [`Enabling enhanced security for your app`](enabling-enhanced-security-for-your-app.md).
+Enhanced security extensions use the same compiler and runtime security features as apps that adopt the Enhanced Security capability. For more information, see [Enabling enhanced security for your app](./enabling-enhanced-security-for-your-app.md).
 
 ## See Also
 
-- [Verifying the origin of your XCFrameworks](verifying-the-origin-of-your-xcframeworks.md)
+### Security and privacy
+- [Verifying the origin of your XCFrameworks](./verifying-the-origin-of-your-xcframeworks.md)
   Discover who signed a framework, and take action when that changes.
-- [Enabling enhanced security for your app](enabling-enhanced-security-for-your-app.md)
+- [Enabling enhanced security for your app](./enabling-enhanced-security-for-your-app.md)
   Detect out-of-bounds memory access, use of freed memory, and other potential vulnerabilities.
-- [Adopting type-aware memory allocation](adopting-type-aware-memory-allocation.md)
+- [Adopting type-aware memory allocation](./adopting-type-aware-memory-allocation.md)
   Reduce the opportunities to treat pointers as data in your code.
-- [Conforming to Mach IPC security restrictions](conforming-to-mach-ipc-security-restrictions.md)
+- [Conforming to Mach IPC security restrictions](./conforming-to-mach-ipc-security-restrictions.md)
   Avoid crashes and potentially insecure situations associated with Mach messages.
 
 

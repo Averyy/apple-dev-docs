@@ -5,11 +5,11 @@
 ## Topics
 
 ### Constants
-- [var kPMPrinterIdle: Int](kpmprinteridle.md)
+- [var kPMPrinterIdle: Int](../kpmprinteridle.md)
   Specifies the idle state.
-- [var kPMPrinterProcessing: Int](kpmprinterprocessing.md)
+- [var kPMPrinterProcessing: Int](../kpmprinterprocessing.md)
   Specifies the processing state.
-- [var kPMPrinterStopped: Int](kpmprinterstopped.md)
+- [var kPMPrinterStopped: Int](../kpmprinterstopped.md)
   Specifies the stopped state.
 
 

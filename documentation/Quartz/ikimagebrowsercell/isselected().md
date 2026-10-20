@@ -1,7 +1,8 @@
 # isSelected()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the cell is selected.
 
@@ -14,9 +15,13 @@ Returns whether the cell is selected.
 func isSelected() -> Bool
 ```
 
+```objc
+- (BOOL) isSelected;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the cell is selected, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the cell is selected, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -24,8 +29,9 @@ Subclasses should not override this method.
 
 ## See Also
 
-- [func selectionFrame() -> NSRect](ikimagebrowsercell/selectionframe.md)
-  Returns the receiver’s selection frame rectangle, which defines the position of the selection rectangle in its [`IKImageBrowserView`](ikimagebrowserview.md).
+### Selection Handling
+- [func selectionFrame() -> NSRect](./selectionframe%28%29.md)
+  Returns the receiver’s selection frame rectangle, which defines the position of the selection rectangle in its [`IKImageBrowserView`](../ikimagebrowserview.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # MIDIExternalDeviceCreate(_:_:_:_:)
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an external MIDI device.
 
@@ -16,6 +17,10 @@ Creates an external MIDI device.
 
 ```swift
 func MIDIExternalDeviceCreate(_ name: CFString, _ manufacturer: CFString, _ model: CFString, _ outDevice: UnsafeMutablePointer<MIDIDeviceRef>) -> OSStatus
+```
+
+```c
+extern OSStatus MIDIExternalDeviceCreate(CFStringRef name, CFStringRef manufacturer, CFStringRef model, MIDIDeviceRef *outDevice);
 ```
 
 #### Return Value
@@ -35,9 +40,10 @@ Non-drivers may call this function to create external devices.
 
 ## See Also
 
-- [func MIDISetupAddExternalDevice(MIDIDeviceRef) -> OSStatus](midisetupaddexternaldevice(_:).md)
+### Managing External Devices
+- [func MIDISetupAddExternalDevice(MIDIDeviceRef) -> OSStatus](./midisetupaddexternaldevice%28_%29.md)
   Adds an external MIDI device to the current MIDI setup.
-- [func MIDISetupRemoveExternalDevice(MIDIDeviceRef) -> OSStatus](midisetupremoveexternaldevice(_:).md)
+- [func MIDISetupRemoveExternalDevice(MIDIDeviceRef) -> OSStatus](./midisetupremoveexternaldevice%28_%29.md)
   Removes an external MIDI device from the current MIDI setup.
 
 

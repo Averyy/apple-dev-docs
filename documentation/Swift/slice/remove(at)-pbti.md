@@ -1,7 +1,8 @@
 # remove(at:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 8.0+
@@ -17,6 +18,8 @@
 ```swift
 mutating func remove(at i: Slice<Base>.Index) -> Base.Element
 ```
+
+Available when `Base` conforms to `BidirectionalCollection` and `RangeReplaceableCollection`.
 
 
 ---

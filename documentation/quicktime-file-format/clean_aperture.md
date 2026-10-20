@@ -1,13 +1,14 @@
 # Clean aperture ('clap')
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An extension that defines the relationship between the pixels in a stored image and a canonical rectangular region of a video system from which it was captured or to which it will be displayed.
 
 ## Mentions
 
-- [QuickTime File Format change log](revision_history.md)
+- [QuickTime File Format change log](./revision_history.md)
 
 #### Overview
 
@@ -22,36 +23,37 @@ These values are given as ratios of two 32-bit numbers, so that applications can
 ## Topics
 
 ### Data fields
-- [Size](clean_aperture/size.md)
+- [Size](./clean_aperture/size.md)
   A 32-bit unsigned integer.
-- [Type](clean_aperture/type.md)
+- [Type](./clean_aperture/type.md)
   A 32-bit unsigned integer.
-- [apertureWidth_N](clean_aperture/aperturewidth_n.md)
+- [apertureWidth_N](./clean_aperture/aperturewidth_n.md)
   A 32-bit signed integer containing either the width of the clean aperture in pixels or the numerator portion of a fractional width.
-- [apertureWidth_D](clean_aperture/aperturewidth_d.md)
+- [apertureWidth_D](./clean_aperture/aperturewidth_d.md)
   A 32-bit signed integer containing either the denominator portion of a fractional width or the number 1.
-- [apertureHeight_N](clean_aperture/apertureheight_n.md)
+- [apertureHeight_N](./clean_aperture/apertureheight_n.md)
   A 32-bit signed integer containing either the height of the clean aperture in picture lines or the numerator portion of a fractional height.
-- [apertureHeight_D](clean_aperture/apertureheight_d.md)
+- [apertureHeight_D](./clean_aperture/apertureheight_d.md)
   A 32-bit signed integer containing either the denominator portion of a fractional height or the number 1.
-- [horizOff_N](clean_aperture/horizoff_n.md)
+- [horizOff_N](./clean_aperture/horizoff_n.md)
   A 32-bit signed integer containing either the horizontal offset of the clean aperture center minus (width–1)/2 or the numerator portion of a fractional offset.
-- [horizOff_D](clean_aperture/horizoff_d.md)
+- [horizOff_D](./clean_aperture/horizoff_d.md)
   A 32-bit signed integer containing either the denominator portion of the horizontal offset or the number 1.
-- [vertOff_N](clean_aperture/vertoff_n.md)
+- [vertOff_N](./clean_aperture/vertoff_n.md)
   A 32-bit signed integer containing either the vertical offset of the clean aperture center minus (height–1)/2 or the numerator portion of a fractional offset.
-- [vertOff_D](clean_aperture/vertoff_d.md)
+- [vertOff_D](./clean_aperture/vertoff_d.md)
   A 32-bit signed integer containing either the denominator portion of the vertical offset or the number 1.
 
 ## See Also
 
-- [Pixel aspect ratio ('pasp')](pixel_aspect_ratio.md)
+### Extending video sample descriptions
+- [Pixel aspect ratio ('pasp')](./pixel_aspect_ratio.md)
   An extension that specifies the height-to-width ratio of pixels found in the video sample.
-- [MPEG-4 elementary stream descriptor atom ('esds')](mpeg-4_elementary_stream_descriptor_atom.md)
+- [MPEG-4 elementary stream descriptor atom ('esds')](./mpeg-4_elementary_stream_descriptor_atom.md)
   A required extension to the video sample description for MPEG-4 video.
-- [AVC decoder configuration atom ('avcC')](avc_decoder_configuration_atom.md)
+- [AVC decoder configuration atom ('avcC')](./avc_decoder_configuration_atom.md)
   A required extension to the video sample description for H.264 video.
-- [Color parameter atom ('colr')](color_parameter_atom.md)
+- [Color parameter atom ('colr')](./color_parameter_atom.md)
   A required extension for uncompressed Y´CbCr data formats.
 
 

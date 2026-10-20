@@ -1,7 +1,8 @@
 # preservesShuffleMode
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the shuffle mode is preserved between playback sessions.
 
@@ -20,13 +21,18 @@ A Boolean value that indicates whether the shuffle mode is preserved between pla
 var preservesShuffleMode: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL preservesShuffleMode;
+```
+
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/swift/true), the shuffle mode is preserved between playback sessions.
+When set to [`true`](../../Swift/true.md), the shuffle mode is preserved between playback sessions.
 
 ## See Also
 
-- [var shuffleType: MPShuffleType](mpchangeshufflemodecommandevent/shuffletype.md)
+### Changing the shuffle mode
+- [var shuffleType: MPShuffleType](./shuffletype.md)
   The shuffle type used when fulfilling the event request.
 
 

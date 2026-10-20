@@ -1,7 +1,8 @@
 # AppStoreVersionPromotionCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an App Store version promotion.
 
@@ -10,24 +11,25 @@ The request body you use to create an App Store version promotion.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionPromotionCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreVersionPromotionCreateRequest.Data.Relationships](appstoreversionpromotioncreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object AppStoreVersionPromotionCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
 - `relationships` (AppStoreVersionPromotionCreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appStoreVersionPromotions`
 
 ## See Also
 
-- [object AppStoreVersionPromotionResponse](appstoreversionpromotionresponse.md)
+### Objects
+- [object AppStoreVersionPromotionResponse](../appstoreversionpromotionresponse.md)
   A response containing a single App Store version promotion configuration.
 
 

@@ -1,20 +1,25 @@
 # intersectionFunctionBuffer
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var intersectionFunctionBuffer: UInt64
+```
+
+```c
+uint64_t intersectionFunctionBuffer;
 ```
 
 #### Discussion

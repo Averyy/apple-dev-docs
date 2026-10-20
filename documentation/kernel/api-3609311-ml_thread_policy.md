@@ -1,14 +1,15 @@
 # ml_thread_policy
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void ml_thread_policy(thread_t thread, unsigned int policy_id, unsigned int policy_info);
 ```
 

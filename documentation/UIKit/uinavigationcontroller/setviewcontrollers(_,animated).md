@@ -1,7 +1,8 @@
 # setViewControllers(_:animated:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the view controllers currently managed by the navigation controller with the specified items.
 
@@ -9,13 +10,17 @@ Replaces the view controllers currently managed by the navigation controller wit
 - iOS 3.0+
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func setViewControllers(_ viewControllers: [UIViewController], animated: Bool)
+```
+
+```objc
+- (void) setViewControllers:(NSArray<UIViewController *> *) viewControllers animated:(BOOL) animated;
 ```
 
 #### Discussion
@@ -27,15 +32,16 @@ If animations are enabled, this method decides which type of transition to perfo
 ## Parameters
 
 - `viewControllers`: The view controllers to place in the stack. The front-to-back order of the controllers in this array represents the new bottom-to-top order of the controllers in the navigation stack. Thus, the last item added to the array becomes the top item of the navigation stack.
-- `animated`: If [`true`](https://developer.apple.com/documentation/swift/true), animate the pushing or popping of the top view controller. If [`false`](https://developer.apple.com/documentation/swift/false), replace the view controllers without any animations.
+- `animated`: If [`true`](../../Swift/true.md), animate the pushing or popping of the top view controller. If [`false`](../../Swift/false.md), replace the view controllers without any animations.
 
 ## See Also
 
-- [var topViewController: UIViewController?](uinavigationcontroller/topviewcontroller.md)
+### Accessing items on the navigation stack
+- [var topViewController: UIViewController?](./topviewcontroller.md)
   The view controller at the top of the navigation stack.
-- [var visibleViewController: UIViewController?](uinavigationcontroller/visibleviewcontroller.md)
+- [var visibleViewController: UIViewController?](./visibleviewcontroller.md)
   The view controller associated with the currently visible view in the navigation interface.
-- [var viewControllers: [UIViewController]](uinavigationcontroller/viewcontrollers.md)
+- [var viewControllers: [UIViewController]](./viewcontrollers.md)
   The view controllers currently on the navigation stack.
 
 

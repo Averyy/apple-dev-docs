@@ -1,7 +1,8 @@
 # whitespace
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A character class that matches any element that is classified as whitespace.
 
@@ -20,17 +21,20 @@ A character class that matches any element that is classified as whitespace.
 static var whitespace: CharacterClass { get }
 ```
 
+Available when `Self` is `CharacterClass`.
+
 #### Discussion
 
 This character class is equivalent to `\s` in regex syntax.
 
 ## See Also
 
-- [static var horizontalWhitespace: CharacterClass](regexcomponent/horizontalwhitespace.md)
+### Matching whitespace and line endings
+- [static var horizontalWhitespace: CharacterClass](./horizontalwhitespace.md)
   A character class that matches any element that is classified as horizontal whitespace.
-- [static var newlineSequence: CharacterClass](regexcomponent/newlinesequence.md)
+- [static var newlineSequence: CharacterClass](./newlinesequence.md)
   A character class that matches any newline sequence.
-- [static var verticalWhitespace: CharacterClass](regexcomponent/verticalwhitespace.md)
+- [static var verticalWhitespace: CharacterClass](./verticalwhitespace.md)
   A character class that matches any element that is classified as vertical whitespace.
 
 

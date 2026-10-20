@@ -1,7 +1,8 @@
 # NFCMiFareFamily.unknown
 
 **Framework**: Core NFC  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An identifier that indicates a compatible ISO14443 Type A tag.
 
@@ -16,13 +17,18 @@ An identifier that indicates a compatible ISO14443 Type A tag.
 case unknown
 ```
 
+```c
+NFCMiFareUnknown
+```
+
 ## See Also
 
-- [NFCMiFareFamily.ultralight](nfcmifarefamily/ultralight.md)
+### Product Families
+- [NFCMiFareFamily.ultralight](./ultralight.md)
   An identifier that indicates the MIFARE Ultralight® product family.
-- [NFCMiFareFamily.plus](nfcmifarefamily/plus.md)
+- [NFCMiFareFamily.plus](./plus.md)
   An identifier that indicates the MIFARE Plus® product family.
-- [NFCMiFareFamily.desfire](nfcmifarefamily/desfire.md)
+- [NFCMiFareFamily.desfire](./desfire.md)
   An identifier that indicates the MIFARE® DESFire® product family.
 
 

@@ -1,15 +1,16 @@
 # Equatable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](int/!=(_:_:)-280fd.md)
+- [static func != (Self, Self) -> Bool](./noteq%28_,_%29-280fd.md)
   Returns a Boolean value indicating whether two values are not equal.
-- [static func != (borrowing Self, borrowing Self) -> Bool](int/!=(_:_:)-9vqmf.md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](./noteq%28_,_%29-9vqmf.md)
   Returns a Boolean value indicating whether two values are not equal.
-- [static func == (Self, Self) -> Bool](int/==(_:_:)-4wfum.md)
+- [static func == (Self, Self) -> Bool](./eqeq%28_,_%29-4wfum.md)
   Returns a Boolean value indicating whether two values are equal.
 
 

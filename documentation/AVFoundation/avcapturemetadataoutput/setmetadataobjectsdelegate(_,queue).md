@@ -1,7 +1,8 @@
 # setMetadataObjectsDelegate(_:queue:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the delegate and dispatch queue to use handle callbacks.
 
@@ -18,22 +19,27 @@ Sets the delegate and dispatch queue to use handle callbacks.
 func setMetadataObjectsDelegate(_ objectsDelegate: (any AVCaptureMetadataOutputObjectsDelegate)?, queue objectsCallbackQueue: dispatch_queue_t?)
 ```
 
+```objc
+- (void) setMetadataObjectsDelegate:(id<AVCaptureMetadataOutputObjectsDelegate>) objectsDelegate queue:(dispatch_queue_t) objectsCallbackQueue;
+```
+
 #### Discussion
 
 When new metadata objects are captured from the receiver’s connection, they are vended to the delegate object. All delegate methods are executed on the dispatch queue specified in the `objectsCallbackQueue` parameter. To ensure that metadata objects are processed in a timely manner and not dropped, you should specify a dispatch queue dedicated to processing the objects or that is otherwise not busy.
 
 ## Parameters
 
-- `objectsDelegate`: The delegate object to notify when new metadata objects become available. This object must conform to the [`AVCaptureMetadataOutputObjectsDelegate`](avcapturemetadataoutputobjectsdelegate.md) protocol.
+- `objectsDelegate`: The delegate object to notify when new metadata objects become available. This object must conform to the [`AVCaptureMetadataOutputObjectsDelegate`](../avcapturemetadataoutputobjectsdelegate.md) protocol.
 - `objectsCallbackQueue`: The dispatch queue on which to execute the delegate’s methods. This queue must be a serial queue to ensure that metadata objects are delivered in the order in which they were received. If the `objectsDelegate` parameter is `nil`, you may specify `nil` for this parameter too; otherwise, you must specify a valid dispatch queue.
 
 ## See Also
 
-- [var metadataObjectsDelegate: (any AVCaptureMetadataOutputObjectsDelegate)?](avcapturemetadataoutput/metadataobjectsdelegate.md)
+### Receiving captured metadata objects
+- [var metadataObjectsDelegate: (any AVCaptureMetadataOutputObjectsDelegate)?](./metadataobjectsdelegate.md)
   The delegate of the capture metadata output object.
-- [var metadataObjectsCallbackQueue: dispatch_queue_t?](avcapturemetadataoutput/metadataobjectscallbackqueue.md)
+- [var metadataObjectsCallbackQueue: dispatch_queue_t?](./metadataobjectscallbackqueue.md)
   The dispatch queue on which to execute the delegate’s methods.
-- [protocol AVCaptureMetadataOutputObjectsDelegate](avcapturemetadataoutputobjectsdelegate.md)
+- [protocol AVCaptureMetadataOutputObjectsDelegate](../avcapturemetadataoutputobjectsdelegate.md)
   Methods for receiving metadata produced by a metadata capture output.
 
 

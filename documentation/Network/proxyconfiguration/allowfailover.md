@@ -1,7 +1,8 @@
 # allowFailover
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether or not a proxy configuration allows failover to non-proxied connections. Failover isn’t allowed by default.
 
@@ -22,7 +23,8 @@ var allowFailover: Bool { get set }
 
 ## See Also
 
-- [func applyCredential(username: String, password: String)](proxyconfiguration/applycredential(username:password:).md)
+### Customizing Proxy Behavior
+- [func applyCredential(username: String, password: String)](./applycredential%28username,password%29.md)
   Sets a username and password to use as authentication for a proxy configuration.
 
 

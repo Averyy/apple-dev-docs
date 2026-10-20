@@ -1,7 +1,8 @@
 # correlationType
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type for this correlation.
 
@@ -19,15 +20,20 @@ The type for this correlation.
 var correlationType: HKCorrelationType { get }
 ```
 
+```objc
+@property (readonly) HKCorrelationType * correlationType;
+```
+
 #### Discussion
 
-For a complete list of correlation type identifiers, see [`HKCorrelationTypeIdentifier`](hkcorrelationtypeidentifier.md).
+For a complete list of correlation type identifiers, see [`HKCorrelationTypeIdentifier`](../hkcorrelationtypeidentifier.md).
 
 ## See Also
 
-- [var objects: Set<HKSample>](hkcorrelation/objects.md)
+### Getting Correlation Data
+- [var objects: Set<HKSample>](./objects.md)
   The set of sample objects that make up the correlation.
-- [func objects(for: HKObjectType) -> Set<HKSample>](hkcorrelation/objects(for:).md)
+- [func objects(for: HKObjectType) -> Set<HKSample>](./objects%28for%29.md)
   Returns a set containing all the objects of the specified type in the correlation.
 
 

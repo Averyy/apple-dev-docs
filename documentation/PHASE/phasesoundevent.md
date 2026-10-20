@@ -1,7 +1,8 @@
 # PHASESoundEvent
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that determines which audio to play.
 
@@ -19,22 +20,26 @@ An object that determines which audio to play.
 class PHASESoundEvent
 ```
 
+```objc
+@interface PHASESoundEvent : NSObject
+```
+
 ## Mentions
 
-- [Playing sound from a location in a 3D scene](playing-sound-from-a-location-in-a-3d-scene.md)
+- [Playing sound from a location in a 3D scene](./playing-sound-from-a-location-in-a-3d-scene.md)
 
 #### Overview
 
 A sound event represents a logic tree, or hierarchy, that defines what, when, and how the framework plays a sound at runtime. You configure the tree with conditions based on your app’s state. When you invoke a sound event’s root node at runtime, the framework navigates the tree by branching based on the logic, landing on a playable node that sends the right audio to the output device:
 
 - To invoke a specific one-time sound, create a sound event from a single sampler node.
-- To invoke a sound event that tailors its sound based on your app’s state, define a sound event hierarchy containing one or more control nodes; see [`Sound Event Nodes`](sound-event-nodes.md). For example, to play either footsteps or a jumping noise depending on the hero’s state, you configure a switch node that navigates based on the hero’s hypothetical `isJumping` metaparameter.
+- To invoke a sound event that tailors its sound based on your app’s state, define a sound event hierarchy containing one or more control nodes; see [Sound Event Nodes](./sound-event-nodes.md). For example, to play either footsteps or a jumping noise depending on the hero’s state, you configure a switch node that navigates based on the hero’s hypothetical `isJumping` metaparameter.
 
-For sound event nodes that play audio, the asset’s [`playbackMode`](phasesamplernodedefinition/playbackmode.md) determines whether the audio loops. One-time sound events stop automatically at the end of the audio data. Looping sound events (those with [`playbackMode`](phasesamplernodedefinition/playbackmode.md) `=` [`PHASEPlaybackMode.looping`](phaseplaybackmode/looping.md)) require you to explicitly call [`stopAndInvalidate()`](phasesoundevent/stopandinvalidate().md) to stop the audio.
+For sound event nodes that play audio, the asset’s [`playbackMode`](./phasesamplernodedefinition/playbackmode.md) determines whether the audio loops. One-time sound events stop automatically at the end of the audio data. Looping sound events (those with [`playbackMode`](./phasesamplernodedefinition/playbackmode.md) `=` [`PHASEPlaybackMode.looping`](./phaseplaybackmode/looping.md)) require you to explicitly call [`stopAndInvalidate()`](./phasesoundevent/stopandinvalidate%28%29.md) to stop the audio.
 
-##### Playing a One Shot Channel Based Sound
+##### Playing a one-shot channel-based sound
 
-Apps create a sound event by requesting one from a sound event node asset. To create a sound event node asset, combine a sound asset (the source audio data) with a mixer object (which combines sound layers for output) to create a node, and add the node to the asset registry. By creating a sound event from a sampler node ([`PHASESamplerNodeDefinition`](phasesamplernodedefinition.md)), the following code plays an audio file once before discarding it.
+Apps create a sound event by requesting one from a sound event node asset. To create a sound event node asset, combine a sound asset (the source audio data) with a mixer object (which combines sound layers for output) to create a node, and add the node to the asset registry. By creating a sound event from a sampler node ([`PHASESamplerNodeDefinition`](./phasesamplernodedefinition.md)), the following code plays an audio file once before discarding it.
 
 ```swift
 // Create a channel layout for audio types that contain no channel metadata. 
@@ -70,7 +75,7 @@ do {
 } catch { print ("Failed to register the sound event node.") }
 ```
 
-The resulting node asset represents a template for audio that’s ready for playback. To play the audio, spawn a sound event off of the node asset and call [`start(completion:)`](phasesoundevent/start(completion:).md) to invoke the sound event.
+The resulting node asset represents a template for audio that’s ready for playback. To play the audio, spawn a sound event off of the node asset and call [`start(completion:)`](./phasesoundevent/start%28completion%29.md) to invoke the sound event.
 
 ```swift
 // Create a playable sound event from the template sound event asset.
@@ -84,89 +89,90 @@ do {
 bangSoundEvent.start()
 ```
 
-> ❗ **Important**:  To play the same sound asset again, create another sound event object. After the first [`start(completion:)`](phasesoundevent/start(completion:).md) call on a particular `PHASESoundEvent` instance, subsequent calls have no effect.
+> ❗ **Important**:  To play the same sound asset again, create another sound event object. After the first [`start(completion:)`](./phasesoundevent/start%28completion%29.md) call on a particular `PHASESoundEvent` instance, subsequent calls have no effect.
 
 ## Topics
 
 ### Creating a Sound Event
-- [init(engine: PHASEEngine, assetIdentifier: String) throws](phasesoundevent/init(engine:assetidentifier:).md)
+- [init(engine: PHASEEngine, assetIdentifier: String) throws](./phasesoundevent/init%28engine,assetidentifier%29.md)
   Creates a sound event node with the given asset.
-- [init(engine: PHASEEngine, assetIdentifier: String, mixerParameters: PHASEMixerParameters) throws](phasesoundevent/init(engine:assetidentifier:mixerparameters:).md)
+- [init(engine: PHASEEngine, assetIdentifier: String, mixerParameters: PHASEMixerParameters) throws](./phasesoundevent/init%28engine,assetidentifier,mixerparameters%29.md)
   Creates a sound event node with the given asset and mixer parameters.
 ### Configuring Mixers and Metaparameters
-- [var mixers: [String : PHASEMixer]](phasesoundevent/mixers.md)
+- [var mixers: [String : PHASEMixer]](./phasesoundevent/mixers.md)
   Nodes in the event tree that control the volume of their child nodes.
-- [var metaParameters: [String : PHASEMetaParameter]](phasesoundevent/metaparameters.md)
+- [var metaParameters: [String : PHASEMetaParameter]](./phasesoundevent/metaparameters.md)
   The object’s meta parameters.
 ### Preparing Playback
-- [func prepare(completion: ((PHASESoundEvent.PrepareHandlerReason) -> Void)?)](phasesoundevent/prepare(completion:).md)
+- [func prepare(completion: ((PHASESoundEvent.PrepareHandlerReason) -> Void)?)](./phasesoundevent/prepare%28completion%29.md)
   Enables a sound event to play and runs the argument code when the sound event plays back.
-- [PHASESoundEvent.PrepareHandlerReason](phasesoundevent/preparehandlerreason.md)
+- [PHASESoundEvent.PrepareHandlerReason](./phasesoundevent/preparehandlerreason.md)
   Indicates the results of sound-event preparation.
-- [var prepareState: PHASESoundEvent.PrepareState](phasesoundevent/preparestate-swift.property.md)
+- [var prepareState: PHASESoundEvent.PrepareState](./phasesoundevent/preparestate-swift.property.md)
   The status of sound-event preparation.
-- [PHASESoundEvent.PrepareState](phasesoundevent/preparestate-swift.enum.md)
+- [PHASESoundEvent.PrepareState](./phasesoundevent/preparestate-swift.enum.md)
   Indicates the state of sound-event preparation.
 ### Checking Playback Status
-- [var renderingState: PHASESoundEvent.RenderingState](phasesoundevent/renderingstate-swift.property.md)
+- [var renderingState: PHASESoundEvent.RenderingState](./phasesoundevent/renderingstate-swift.property.md)
   The sound event’s playback status.
-- [PHASESoundEvent.RenderingState](phasesoundevent/renderingstate-swift.enum.md)
+- [PHASESoundEvent.RenderingState](./phasesoundevent/renderingstate-swift.enum.md)
   The playback status of audio.
 ### Providing Buffered Data
-- [var pushStreamNodes: [String : PHASEPushStreamNode]](phasesoundevent/pushstreamnodes.md)
+- [var pushStreamNodes: [String : PHASEPushStreamNode]](./phasesoundevent/pushstreamnodes.md)
   A collection of audio streams for playback.
 ### Starting Playback
-- [func start(completion: ((PHASESoundEvent.StartHandlerReason) -> Void)?)](phasesoundevent/start(completion:).md)
+- [func start(completion: ((PHASESoundEvent.StartHandlerReason) -> Void)?)](./phasesoundevent/start%28completion%29.md)
   Invokes the sound event and runs the specified code on completion.
-- [PHASESoundEvent.StartHandlerReason](phasesoundevent/starthandlerreason.md)
+- [PHASESoundEvent.StartHandlerReason](./phasesoundevent/starthandlerreason.md)
   Indicates the status after starting a sound event.
 ### Seeking a Time
-- [func seek(to: Double, completion: ((PHASESoundEvent.SeekHandlerReason) -> Void)?)](phasesoundevent/seek(to:completion:).md)
+- [func seek(to: Double, completion: ((PHASESoundEvent.SeekHandlerReason) -> Void)?)](./phasesoundevent/seek%28to,completion%29.md)
   Advances the sound event’s playback position to a specific time.
-- [PHASESoundEvent.SeekHandlerReason](phasesoundevent/seekhandlerreason.md)
+- [PHASESoundEvent.SeekHandlerReason](./phasesoundevent/seekhandlerreason.md)
   Indicates the status after a sound event changes its playback position.
 ### Pausing Playback
-- [func pause()](phasesoundevent/pause.md)
+- [func pause()](./phasesoundevent/pause%28%29.md)
   Pauses the sound event.
-- [func resume()](phasesoundevent/resume.md)
+- [func resume()](./phasesoundevent/resume%28%29.md)
   Resumes the sound event.
 ### Stopping Playback
-- [func stopAndInvalidate()](phasesoundevent/stopandinvalidate.md)
+- [func stopAndInvalidate()](./phasesoundevent/stopandinvalidate%28%29.md)
   Stops a sound event and prevents it from resuming.
-- [var isIndefinite: Bool](phasesoundevent/isindefinite.md)
+- [var isIndefinite: Bool](./phasesoundevent/isindefinite.md)
   A Boolean value that indicates whether the sound loops or stops on its own.
 ### Instance Properties
-- [var pullStreamNodes: [String : PHASEPullStreamNode]](phasesoundevent/pullstreamnodes.md)
+- [var pullStreamNodes: [String : PHASEPullStreamNode]](./phasesoundevent/pullstreamnodes.md)
 ### Instance Methods
-- [func resume(at: AVAudioTime?)](phasesoundevent/resume(at:).md)
-- [func seek(to: Double, resumeAt: AVAudioTime, completion: ((PHASESoundEvent.SeekHandlerReason) -> Void)?)](phasesoundevent/seek(to:resumeat:completion:).md)
-- [func start(at: AVAudioTime?, completion: ((PHASESoundEvent.StartHandlerReason) -> Void)?)](phasesoundevent/start(at:completion:).md)
+- [func resume(at: AVAudioTime?)](./phasesoundevent/resume%28at%29.md)
+- [func seek(to: Double, resumeAt: AVAudioTime, completion: ((PHASESoundEvent.SeekHandlerReason) -> Void)?)](./phasesoundevent/seek%28to,resumeat,completion%29.md)
+- [func start(at: AVAudioTime?, completion: ((PHASESoundEvent.StartHandlerReason) -> Void)?)](./phasesoundevent/start%28at,completion%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASESoundAsset](phasesoundasset.md)
+### Audio Selection and Playback
+- [class PHASESoundAsset](./phasesoundasset.md)
   A sound resource stored in the asset registry.
-- [PHASESoundEvent.RenderingState](phasesoundevent/renderingstate-swift.enum.md)
+- [PHASESoundEvent.RenderingState](./phasesoundevent/renderingstate-swift.enum.md)
   The playback status of audio.
-- [class PHASESoundEventNodeDefinition](phasesoundeventnodedefinition.md)
+- [class PHASESoundEventNodeDefinition](./phasesoundeventnodedefinition.md)
   A base class for sound event nodes that connect to form a node hierarchy.
-- [class PHASESoundEventNodeAsset](phasesoundeventnodeasset.md)
+- [class PHASESoundEventNodeAsset](./phasesoundeventnodeasset.md)
   A template object for sounds that can play in reaction to environmental state.
-- [class PHASEAsset](phaseasset.md)
+- [class PHASEAsset](./phaseasset.md)
   A base class that adds a name to framework assets.
-- [Sound Event Nodes](sound-event-nodes.md)
+- [Sound Event Nodes](./sound-event-nodes.md)
   Objects that connect to form a hierarchical tree of audio actions.
 
 

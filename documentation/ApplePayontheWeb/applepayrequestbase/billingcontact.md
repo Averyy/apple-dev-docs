@@ -1,7 +1,8 @@
 # billingContact
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A prepopulated billing address.
 
@@ -11,7 +12,7 @@ A prepopulated billing address.
 
 ## Declaration
 
-```swift
+```
 ApplePayPaymentContact billingContact;
 ```
 
@@ -19,13 +20,14 @@ ApplePayPaymentContact billingContact;
 
 If you have an up-to-date billing address for the customer on file, you can set it here. This billing address appears in the payment sheet. The user can either use the address you specify or select a different address.
 
-> **Note**:  If you supply a billing address, you must also request `“postalAddress”` in [`requiredBillingContactFields`](applepaypaymentrequest/requiredbillingcontactfields.md).
+> **Note**:  If you supply a billing address, you must also request `“postalAddress”` in [`requiredBillingContactFields`](../applepaypaymentrequest/requiredbillingcontactfields.md).
 
 ## See Also
 
-- [shippingContact](applepayrequestbase/shippingcontact.md)
+### Setting contact information
+- [shippingContact](./shippingcontact.md)
   The customer’s address, used for sending products or services for to the person.
-- [shippingContactEditingMode](applepayrequestbase/shippingcontacteditingmode.md)
+- [shippingContactEditingMode](./shippingcontacteditingmode.md)
   A value that indicates whether the shipping mode prevents the user from editing the shipping address.
 
 

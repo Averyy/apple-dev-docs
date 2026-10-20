@@ -1,7 +1,8 @@
 # string(from:style:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the contact name, formatted with the specified formatter.
 
@@ -19,6 +20,10 @@ Returns the contact name, formatted with the specified formatter.
 class func string(from contact: CNContact, style: CNContactFormatterStyle) -> String?
 ```
 
+```objc
++ (NSString *) stringFromContact:(CNContact *) contact style:(CNContactFormatterStyle) style;
+```
+
 #### Return Value
 
 The formatted contact name.
@@ -30,7 +35,8 @@ The formatted contact name.
 
 ## See Also
 
-- [func string(from: CNContact) -> String?](cncontactformatter/string(from:).md)
+### Creating a formatted string
+- [func string(from: CNContact) -> String?](./string%28from%29.md)
   Formats the contact name.
 
 

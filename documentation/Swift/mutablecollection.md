@@ -1,7 +1,8 @@
 # MutableCollection
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A collection that supports subscript assignment.
 
@@ -44,7 +45,7 @@ print(numbers)
 
 The `MutableCollection` protocol allows changing the values of a collection’s elements but not the length of the collection itself. For operations that require adding or removing elements, see the `RangeReplaceableCollection` protocol instead.
 
-### Conforming to the Mutablecollection Protocol
+### Conforming to the MutableCollection Protocol
 
 To add conformance to the `MutableCollection` protocol to your own custom collection, upgrade your type’s subscript to support both read and write access.
 
@@ -62,64 +63,65 @@ let y = x
 ## Topics
 
 ### Associated Types
-- [associatedtype Element](mutablecollection/element.md)
+- [associatedtype Element](./mutablecollection/element.md)
   A type representing the sequence’s elements.
-- [associatedtype Index](mutablecollection/index.md)
+- [associatedtype Index](./mutablecollection/index.md)
   A type that represents a position in the collection.
-- [associatedtype SubSequence](mutablecollection/subsequence.md)
+- [associatedtype SubSequence](./mutablecollection/subsequence.md)
   A collection representing a contiguous subrange of this collection’s elements. The subsequence shares indices with the original collection.
 ### Instance Methods
-- [func move(fromOffsets: IndexSet, toOffset: Int)](mutablecollection/move(fromoffsets:tooffset:).md)
+- [func move(fromOffsets: IndexSet, toOffset: Int)](./mutablecollection/move%28fromoffsets,tooffset%29.md)
   Moves all the elements at the specified offsets to the specified destination offset, preserving ordering.
-- [func moveSubranges(RangeSet<Self.Index>, to: Self.Index) -> Range<Self.Index>](mutablecollection/movesubranges(_:to:).md)
+- [func moveSubranges(RangeSet<Self.Index>, to: Self.Index) -> Range<Self.Index>](./mutablecollection/movesubranges%28_,to%29.md)
   Moves the elements in the given subranges to just before the element at the specified index.
-- [func partition(by: (Self.Element) throws -> Bool) rethrows -> Self.Index](mutablecollection/partition(by:).md)
+- [func partition(by: (Self.Element) throws -> Bool) rethrows -> Self.Index](./mutablecollection/partition%28by%29.md)
   Reorders the elements of the collection such that all the elements that match the given predicate are after all the elements that don’t match.
-- [func removeSubranges(RangeSet<Self.Index>)](mutablecollection/removesubranges(_:).md)
+- [func removeSubranges(RangeSet<Self.Index>)](./mutablecollection/removesubranges%28_%29.md)
   Removes the elements at the given indices.
-- [func reverse()](mutablecollection/reverse.md)
+- [func reverse()](./mutablecollection/reverse%28%29.md)
   Reverses the elements of the collection in place.
-- [func shuffle()](mutablecollection/shuffle.md)
+- [func shuffle()](./mutablecollection/shuffle%28%29.md)
   Shuffles the collection in place.
-- [func shuffle<T>(using: inout T)](mutablecollection/shuffle(using:).md)
+- [func shuffle<T>(using: inout T)](./mutablecollection/shuffle%28using%29.md)
   Shuffles the collection in place, using the given generator as a source for randomness.
-- [func sort()](mutablecollection/sort.md)
+- [func sort()](./mutablecollection/sort%28%29.md)
   Sorts the collection in place.
-- [func sort(by: (Self.Element, Self.Element) throws -> Bool) rethrows](mutablecollection/sort(by:).md)
+- [func sort(by: (Self.Element, Self.Element) throws -> Bool) rethrows](./mutablecollection/sort%28by%29.md)
   Sorts the collection in place, using the given predicate as the comparison between elements.
-- [func sort<Comparator>(using: Comparator)](mutablecollection/sort(using:)-694fo.md)
+- [func sort<Comparator>(using: Comparator)](./mutablecollection/sort%28using%29-694fo.md)
   Sorts the collection using the given comparator to compare elements.
-- [func sort<S, Comparator>(using: S)](mutablecollection/sort(using:)-9a05g.md)
+- [func sort<S, Comparator>(using: S)](./mutablecollection/sort%28using%29-9a05g.md)
   Sorts the collection using the given array of `SortComparator`s to compare elements.
-- [func swapAt(Self.Index, Self.Index)](mutablecollection/swapat(_:_:).md)
+- [func swapAt(Self.Index, Self.Index)](./mutablecollection/swapat%28_,_%29.md)
   Exchanges the values at the specified indices of the collection.
-- [func withContiguousMutableStorageIfAvailable<R>((inout UnsafeMutableBufferPointer<Self.Element>) throws -> R) rethrows -> R?](mutablecollection/withcontiguousmutablestorageifavailable(_:).md)
+- [func withContiguousMutableStorageIfAvailable<R>((inout UnsafeMutableBufferPointer<Self.Element>) throws -> R) rethrows -> R?](./mutablecollection/withcontiguousmutablestorageifavailable%28_%29.md)
   Executes a closure on the collection’s contiguous storage.
 ### Subscripts
-- [subscript(Range<Self.Index>) -> Self.SubSequence](mutablecollection/subscript(_:)-31dgt.md)
+- [subscript(Range<Self.Index>) -> Self.SubSequence](./mutablecollection/subscript%28_%29-31dgt.md)
   Accesses a contiguous subrange of the collection’s elements.
-- [subscript(Self.Index) -> Self.Element](mutablecollection/subscript(_:)-7tq68.md)
+- [subscript(Self.Index) -> Self.Element](./mutablecollection/subscript%28_%29-7tq68.md)
   Accesses the element at the specified position.
 
 ## Relationships
 
 ### Inherits From
-- [Collection](collection.md)
-- [Sequence](sequence.md)
+- [Collection](./collection.md)
+- [Sequence](./sequence.md)
 ### Conforming Types
-- [Array](array.md)
-- [ArraySlice](arrayslice.md)
-- [CollectionOfOne](collectionofone.md)
-- [ContiguousArray](contiguousarray.md)
-- [Dictionary.Values](dictionary/values-swift.struct.md)
-- [EmptyCollection](emptycollection.md)
-- [Slice](slice.md)
-- [UnsafeMutableBufferPointer](unsafemutablebufferpointer.md)
-- [UnsafeMutableRawBufferPointer](unsafemutablerawbufferpointer.md)
+- [Array](./array.md)
+- [ArraySlice](./arrayslice.md)
+- [CollectionOfOne](./collectionofone.md)
+- [ContiguousArray](./contiguousarray.md)
+- [Dictionary.Values](./dictionary/values-swift.struct.md)
+- [EmptyCollection](./emptycollection.md)
+- [Slice](./slice.md)
+- [UnsafeMutableBufferPointer](./unsafemutablebufferpointer.md)
+- [UnsafeMutableRawBufferPointer](./unsafemutablerawbufferpointer.md)
 
 ## See Also
 
-- [protocol RangeReplaceableCollection](rangereplaceablecollection.md)
+### Collection Mutability
+- [protocol RangeReplaceableCollection](./rangereplaceablecollection.md)
   A collection that supports replacement of an arbitrary subrange of elements with the elements of another collection.
 
 

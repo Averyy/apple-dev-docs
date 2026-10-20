@@ -1,7 +1,8 @@
 # FilePath.Component.Kind
 
 **Framework**: System  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Whether a component is a regular file or directory name, or a special directory `.` or `..`
 
@@ -24,22 +25,22 @@ enum Kind
 ## Topics
 
 ### Enumeration Cases
-- [FilePath.Component.Kind.currentDirectory](filepath/component/kind-swift.enum/currentdirectory.md)
+- [FilePath.Component.Kind.currentDirectory](./kind-swift.enum/currentdirectory.md)
   The special directory `.`, representing the current directory.
-- [FilePath.Component.Kind.parentDirectory](filepath/component/kind-swift.enum/parentdirectory.md)
+- [FilePath.Component.Kind.parentDirectory](./kind-swift.enum/parentdirectory.md)
   The special directory `..`, representing the parent directory.
-- [FilePath.Component.Kind.regular](filepath/component/kind-swift.enum/regular.md)
+- [FilePath.Component.Kind.regular](./kind-swift.enum/regular.md)
   A file or directory name
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

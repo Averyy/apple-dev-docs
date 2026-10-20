@@ -1,7 +1,8 @@
 # setObservationInfo(_:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the observation info of the managed object.
 
@@ -17,9 +18,13 @@ Sets the observation info of the managed object.
 func setObservationInfo(_ inObservationInfo: UnsafeMutableRawPointer?)
 ```
 
+```objc
+- (void) setObservationInfo:(void *) inObservationInfo;
+```
+
 #### Discussion
 
-For more about observation information, see [`Key-Value Observing Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
+For more about observation information, see [Key-Value Observing Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
 
 ## Parameters
 
@@ -27,19 +32,20 @@ For more about observation information, see [`Key-Value Observing Programming Gu
 
 ## See Also
 
-- [func didAccessValue(forKey: String?)](nsmanagedobject/didaccessvalue(forkey:).md)
+### Supporting Key-Value Observing
+- [func didAccessValue(forKey: String?)](./didaccessvalue%28forkey%29.md)
   Provides support for key-value observing access notification.
-- [func observationInfo() -> UnsafeMutableRawPointer?](nsmanagedobject/observationinfo.md)
+- [func observationInfo() -> UnsafeMutableRawPointer?](./observationinfo%28%29.md)
   Returns the observation info of the managed object.
-- [func willAccessValue(forKey: String?)](nsmanagedobject/willaccessvalue(forkey:).md)
+- [func willAccessValue(forKey: String?)](./willaccessvalue%28forkey%29.md)
   Provides support for key-value observing access notification.
-- [func didChangeValue(forKey: String)](nsmanagedobject/didchangevalue(forkey:).md)
+- [func didChangeValue(forKey: String)](./didchangevalue%28forkey%29.md)
   Provides an opportunity to respond when a value of a given property has changed.
-- [func didChangeValue(forKey: String, withSetMutation: NSKeyValueSetMutationKind, using: Set<AnyHashable>)](nsmanagedobject/didchangevalue(forkey:withsetmutation:using:).md)
+- [func didChangeValue(forKey: String, withSetMutation: NSKeyValueSetMutationKind, using: Set<AnyHashable>)](./didchangevalue%28forkey,withsetmutation,using%29.md)
   Provides an opportunity to respond when a change was made to a specified to-many relationship.
-- [func willChangeValue(forKey: String)](nsmanagedobject/willchangevalue(forkey:).md)
+- [func willChangeValue(forKey: String)](./willchangevalue%28forkey%29.md)
   Provides an opportunity to respond when a value of a given property is about to change.
-- [func willChangeValue(forKey: String, withSetMutation: NSKeyValueSetMutationKind, using: Set<AnyHashable>)](nsmanagedobject/willchangevalue(forkey:withsetmutation:using:).md)
+- [func willChangeValue(forKey: String, withSetMutation: NSKeyValueSetMutationKind, using: Set<AnyHashable>)](./willchangevalue%28forkey,withsetmutation,using%29.md)
   Provides an opportunity to respond when a change is about to be made to a specified to-many relationship.
 
 

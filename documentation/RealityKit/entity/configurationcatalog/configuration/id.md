@@ -1,7 +1,8 @@
 # id
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A name that identifies the configuration.
 

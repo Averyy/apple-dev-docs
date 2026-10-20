@@ -1,7 +1,8 @@
 # canonicalWebPageURL
 
 **Framework**: Quick Look  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional canonical web page URL for the 3D content that will be shared.
 
@@ -15,6 +16,10 @@ An optional canonical web page URL for the 3D content that will be shared.
 
 ```swift
 var canonicalWebPageURL: URL? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) NSURL * canonicalWebPageURL;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # recordLabels
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the relationship property that returns the record labels for the album.
 
@@ -19,6 +20,8 @@ An identifier for the relationship property that returns the record labels for t
 ```swift
 static let recordLabels: MusicRelationshipProperty<Album, RecordLabel>
 ```
+
+Available when `Root` is `Album`.
 
 
 ---

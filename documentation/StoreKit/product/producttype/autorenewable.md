@@ -1,7 +1,8 @@
 # autoRenewable
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An auto-renewable subscription.
 
@@ -22,11 +23,12 @@ static let autoRenewable: Product.ProductType
 
 ## See Also
 
-- [static let consumable: Product.ProductType](product/producttype/consumable.md)
+### Getting the Product Type
+- [static let consumable: Product.ProductType](./consumable.md)
   A consumable Apple In-App Purchase.
-- [static let nonConsumable: Product.ProductType](product/producttype/nonconsumable.md)
+- [static let nonConsumable: Product.ProductType](./nonconsumable.md)
   A non-consumable Apple In-App Purchase.
-- [static let nonRenewable: Product.ProductType](product/producttype/nonrenewable.md)
+- [static let nonRenewable: Product.ProductType](./nonrenewable.md)
   A non-renewing subscription.
 
 

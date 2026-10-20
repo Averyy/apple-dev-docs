@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.PoolingFunction.max
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A function for pooling that computes the maximum of each element in the pooling kernel.
 

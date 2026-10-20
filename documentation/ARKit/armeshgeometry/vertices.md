@@ -1,7 +1,8 @@
 # vertices
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The vertices of the mesh.
 
@@ -15,9 +16,13 @@ The vertices of the mesh.
 var vertices: ARGeometrySource { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) ARGeometrySource * vertices;
+```
+
 #### Discussion
 
-The [`count`](argeometrysource/count.md) equals the total number of vertices. Since each vertex is the type `SIMD3<Float>`, [`componentsPerVector`](argeometrysource/componentspervector.md) is three.
+The [`count`](../argeometrysource/count.md) equals the total number of vertices. Since each vertex is the type `SIMD3<Float>`, [`componentsPerVector`](../argeometrysource/componentspervector.md) is three.
 
 The following code demonstrates retrieving a vertex at a particular index.
 
@@ -34,7 +39,8 @@ extension ARMeshGeometry {
 
 ## See Also
 
-- [class ARGeometrySource](argeometrysource.md)
+### Accessing Geometry Data
+- [class ARGeometrySource](../argeometrysource.md)
   Mesh data in a buffer-based array.
 
 

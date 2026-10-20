@@ -1,17 +1,22 @@
 # init(asset:)
 
 **Framework**: WatchKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a player item for the specified audio file asset.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 6.0
 
 ## Declaration
 
 ```swift
 init(asset: WKAudioFileAsset)
+```
+
+```objc
++ (WKAudioFilePlayerItem *) playerItemWithAsset:(WKAudioFileAsset *) asset;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # AIModelAsset.Summary.OperationCount
 
 **Framework**: Core AI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A model operation and the number of times it occurs.
 
@@ -21,22 +22,23 @@ struct OperationCount
 ## Topics
 
 ### Inspecting operation details
-- [var operationName: String](aimodelasset/summary/operationcount/operationname.md)
+- [var operationName: String](./operationcount/operationname.md)
   The name of the operation.
-- [var count: Int](aimodelasset/summary/operationcount/count.md)
+- [var count: Int](./operationcount/count.md)
   The number of times this operation occurs in the model.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [AIModelAsset.Summary.StorageType](aimodelasset/summary/storagetype.md)
+### Supporting types
+- [AIModelAsset.Summary.StorageType](./storagetype.md)
   A scalar storage type and the number of elements that use it.
 
 

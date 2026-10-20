@@ -1,7 +1,8 @@
 # VerticalPageTabViewStyle.TransitionStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transition style used between tabs.
 
@@ -17,17 +18,18 @@ struct TransitionStyle
 ## Topics
 
 ### Getting the transition styles
-- [static let automatic: VerticalPageTabViewStyle.TransitionStyle](verticalpagetabviewstyle/transitionstyle/automatic.md)
+- [static let automatic: VerticalPageTabViewStyle.TransitionStyle](./transitionstyle/automatic.md)
   Automatic transition style
-- [static let blur: VerticalPageTabViewStyle.TransitionStyle](verticalpagetabviewstyle/transitionstyle/blur.md)
+- [static let blur: VerticalPageTabViewStyle.TransitionStyle](./transitionstyle/blur.md)
   A transition style that blurs content between each tab
-- [static let identity: VerticalPageTabViewStyle.TransitionStyle](verticalpagetabviewstyle/transitionstyle/identity.md)
+- [static let identity: VerticalPageTabViewStyle.TransitionStyle](./transitionstyle/identity.md)
   A transition style that has no animation between each tab
 
 ## See Also
 
-- [init()](verticalpagetabviewstyle/init.md)
-- [init(transitionStyle: VerticalPageTabViewStyle.TransitionStyle)](verticalpagetabviewstyle/init(transitionstyle:).md)
+### Creating the tab view style
+- [init()](./init%28%29.md)
+- [init(transitionStyle: VerticalPageTabViewStyle.TransitionStyle)](./init%28transitionstyle%29.md)
   Creates a new `VerticalPageTabViewStyle` with a transition style.
 
 

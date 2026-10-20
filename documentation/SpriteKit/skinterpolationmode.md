@@ -1,18 +1,19 @@
 # SKInterpolationMode
 
 **Framework**: SpriteKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The modes used to interpolate between keyframes in the sequence.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,31 +21,36 @@ The modes used to interpolate between keyframes in the sequence.
 enum SKInterpolationMode
 ```
 
+```c
+enum SKInterpolationMode : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [SKInterpolationMode.linear](skinterpolationmode/linear.md)
+- [SKInterpolationMode.linear](./skinterpolationmode/linear.md)
   Values between two keyframes are interpolated linearly.
-- [SKInterpolationMode.spline](skinterpolationmode/spline.md)
+- [SKInterpolationMode.spline](./skinterpolationmode/spline.md)
   Values between two keyframes using a spline curve.
-- [SKInterpolationMode.step](skinterpolationmode/step.md)
+- [SKInterpolationMode.step](./skinterpolationmode/step.md)
   Values between two keyframes are not interpolated. Instead, the value is that of the most recent keyframe.
 ### Initializers
-- [init?(rawValue: Int)](skinterpolationmode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./skinterpolationmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum SKRepeatMode](skrepeatmode.md)
+### Constants
+- [enum SKRepeatMode](./skrepeatmode.md)
   The modes used to determine how the sequence repeats.
 
 

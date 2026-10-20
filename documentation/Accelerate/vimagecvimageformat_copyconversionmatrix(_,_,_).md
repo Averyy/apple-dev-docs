@@ -1,7 +1,8 @@
 # vImageCVImageFormat_CopyConversionMatrix(_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Copies an RGB-to-YpCbCr conversion matrix to an image format’s internal matrix.
 
@@ -20,21 +21,26 @@ Copies an RGB-to-YpCbCr conversion matrix to an image format’s internal matrix
 func vImageCVImageFormat_CopyConversionMatrix(_ format: vImageCVImageFormat, _ matrix: UnsafeRawPointer, _ inType: vImageMatrixType) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageCVImageFormat_CopyConversionMatrix(vImageCVImageFormatRef format, const void *matrix, vImageMatrixType inType);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
 ## Parameters
 
-- `format`: The destination [`vImageCVImageFormat`](vimagecvimageformat.md) instance.
+- `format`: The destination [`vImageCVImageFormat`](./vimagecvimageformat.md) instance.
 - `matrix`: The matrix that the function copies to the destination image format.
 - `inType`: The type of the matrix.
 
 ## See Also
 
-- [func vImageCVImageFormat_GetConversionMatrix(vImageConstCVImageFormat, UnsafeMutablePointer<vImageMatrixType>!) -> UnsafeRawPointer!](vimagecvimageformat_getconversionmatrix(_:_:).md)
+### Querying and setting the conversion matrix
+- [func vImageCVImageFormat_GetConversionMatrix(vImageConstCVImageFormat, UnsafeMutablePointer<vImageMatrixType>!) -> UnsafeRawPointer!](./vimagecvimageformat_getconversionmatrix%28_,_%29.md)
   Returns a pointer to the RGB-to-YpCbCr conversion matrix of a Core Video image format.
 
 

@@ -1,7 +1,8 @@
 # Text.TruncationMode.tail
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Truncate at the end of the line.
 
@@ -26,9 +27,10 @@ Use this kind of truncation to omit characters from the end of the string. For e
 
 ## See Also
 
-- [Text.TruncationMode.head](text/truncationmode/head.md)
+### Getting text truncation modes
+- [Text.TruncationMode.head](./head.md)
   Truncate at the beginning of the line.
-- [Text.TruncationMode.middle](text/truncationmode/middle.md)
+- [Text.TruncationMode.middle](./middle.md)
   Truncate in the middle of the line.
 
 

@@ -1,7 +1,8 @@
 # withUnsafeMutablePointerToElements(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Call `body` with an `UnsafeMutablePointer` to the `Element` storage.
 

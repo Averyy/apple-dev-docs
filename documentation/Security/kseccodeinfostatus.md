@@ -1,7 +1,8 @@
 # kSecCodeInfoStatus
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is the set of code status flags for the running code.
 
@@ -15,11 +16,15 @@ A key whose value is the set of code status flags for the running code.
 let kSecCodeInfoStatus: CFString
 ```
 
+```c
+extern CFStringRef const kSecCodeInfoStatus;
+```
+
 #### Discussion
 
-The value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object. This is a snapshot taken at the time the function is executed and may be out of date by the time you examine it. Note, however, that some flag values cannot be changed and are therefore permanently reliable. See [`SecCodeStatus`](seccodestatus.md) for a list of possible values.
+The value is a [`CFNumber`](../CoreFoundation/cfnumber.md) object. This is a snapshot taken at the time the function is executed and may be out of date by the time you examine it. Note, however, that some flag values cannot be changed and are therefore permanently reliable. See [`SecCodeStatus`](./seccodestatus.md) for a list of possible values.
 
-Specify the [`kSecCSDynamicInformation`](kseccsdynamicinformation.md) flag when calling the [`SecCodeCopySigningInformation(_:_:_:)`](seccodecopysigninginformation(_:_:_:).md) function to get this information.
+Specify the [`kSecCSDynamicInformation`](./kseccsdynamicinformation.md) flag when calling the [`SecCodeCopySigningInformation(_:_:_:)`](./seccodecopysigninginformation%28_,_,_%29.md) function to get this information.
 
 
 ---

@@ -1,21 +1,26 @@
 # synchronizeOptimizerData()
 
 **Framework**: ML Compute  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Synchronizes the optimizer data in host memory.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
 ```swift
 func synchronizeOptimizerData() -> Bool
+```
+
+```objc
+- (BOOL) synchronizeOptimizerData;
 ```
 
 #### Return Value
@@ -24,7 +29,7 @@ func synchronizeOptimizerData() -> Bool
 
 #### Discussion
 
-This method synchronizes the [`optimizerData`](mlctensor/optimizerdata.md) in host memory with latest contents in device memory.
+This method synchronizes the [`optimizerData`](./optimizerdata.md) in host memory with latest contents in device memory.
 
 Only call this method once the graph, with which you used this tensor, finishes execution; otherwise the results in device memory may not be up to date.
 
@@ -32,13 +37,14 @@ Only call this method once the graph, with which you used this tensor, finishes 
 
 ## See Also
 
-- [func synchronizeData() -> Bool](mlctensor/synchronizedata.md)
+### Managing Tensor Data
+- [func synchronizeData() -> Bool](./synchronizedata%28%29.md)
   Synchronizes the data in host memory.
-- [func copyDataFromDeviceMemory(toBytes: UnsafeMutableRawPointer, length: Int, synchronizeWithDevice: Bool) -> Bool](mlctensor/copydatafromdevicememory(tobytes:length:synchronizewithdevice:).md)
+- [func copyDataFromDeviceMemory(toBytes: UnsafeMutableRawPointer, length: Int, synchronizeWithDevice: Bool) -> Bool](./copydatafromdevicememory%28tobytes,length,synchronizewithdevice%29.md)
   Copies tensor data from device memory to user-specified memory.
-- [func bindAndWriteData(MLCTensorData, to: MLCDevice) -> Bool](mlctensor/bindandwritedata(_:to:).md)
+- [func bindAndWriteData(MLCTensorData, to: MLCDevice) -> Bool](./bindandwritedata%28_,to%29.md)
   Associates the given data to the tensor, and if the device is a GPU, also copies the data to the device memory.
-- [func bindOptimizerData([MLCTensorData], deviceData: [MLCTensorOptimizerDeviceData]?) -> Bool](mlctensor/bindoptimizerdata(_:devicedata:).md)
+- [func bindOptimizerData([MLCTensorData], deviceData: [MLCTensorOptimizerDeviceData]?) -> Bool](./bindoptimizerdata%28_,devicedata%29.md)
   Associates the optimizer and device data buffers you specify to the tensor.
 
 

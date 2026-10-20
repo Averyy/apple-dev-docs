@@ -1,7 +1,8 @@
 # name
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the user.
 
@@ -19,14 +20,20 @@ The name of the user.
 var name: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * name;
+```
+
 #### Discussion
 
 User names must be unique.
 
 ## See Also
 
-- [HomeKit Developer Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/HomeKitDeveloperGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40015050)
-- [var uniqueIdentifier: UUID](hmuser/uniqueidentifier.md)
+### Related Documentation
+- [HomeKit Developer Guide](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/HomeKitDeveloperGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40015050)
+### Getting Information About the User
+- [var uniqueIdentifier: UUID](./uniqueidentifier.md)
   A unique identifier for the user.
 
 

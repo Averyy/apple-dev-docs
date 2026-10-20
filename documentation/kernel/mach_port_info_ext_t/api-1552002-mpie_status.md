@@ -1,14 +1,15 @@
 # mpie_status
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 mach_port_status_t mpie_status;
 ```
 

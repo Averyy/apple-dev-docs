@@ -1,7 +1,8 @@
 # init(id:pose:)
 
 **Framework**: TabletopKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a position and rotation on the table for a specific piece of equipment.
 

@@ -1,7 +1,8 @@
 # MPSCNNNeuronSoftPlus
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A parametric softplus neuron filter.
 
@@ -19,64 +20,69 @@ A parametric softplus neuron filter.
 class MPSCNNNeuronSoftPlus
 ```
 
+```objc
+@interface MPSCNNNeuronSoftPlus : MPSCNNNeuron
+```
+
 #### Overview
 
 For each pixel in an image, the filter applies the following function:
 
-![f(x) = a * log(1 + e^(b * x))](/images/com.apple.metalperformanceshaders/media-2903546@2x.png)
+![f(x) = a * log(1 + e^(b * x))](https://developer.apple.com/tutorials/images/com.apple.metalperformanceshaders/media-2903546@2x.png)
 
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, a: Float, b: Float)](mpscnnneuronsoftplus/init(device:a:b:).md)
+- [init(device: any MTLDevice, a: Float, b: Float)](./mpscnnneuronsoftplus/init%28device,a,b%29.md)
   Initializes a parametric softplus neuron filter.
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNNeuron](mpscnnneuron.md)
+- [MPSCNNNeuron](./mpscnnneuron.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSCNNNeuronAbsolute](mpscnnneuronabsolute.md)
+### Neuron Layers
+- [class MPSCNNNeuronAbsolute](./mpscnnneuronabsolute.md)
   An absolute neuron filter.
-- [class MPSCNNNeuronELU](mpscnnneuronelu.md)
+- [class MPSCNNNeuronELU](./mpscnnneuronelu.md)
   A parametric ELU neuron filter.
-- [class MPSCNNNeuronHardSigmoid](mpscnnneuronhardsigmoid.md)
+- [class MPSCNNNeuronHardSigmoid](./mpscnnneuronhardsigmoid.md)
   A hard sigmoid neuron filter.
-- [class MPSCNNNeuronLinear](mpscnnneuronlinear.md)
+- [class MPSCNNNeuronLinear](./mpscnnneuronlinear.md)
   A linear neuron filter.
-- [class MPSCNNNeuronPReLU](mpscnnneuronprelu.md)
+- [class MPSCNNNeuronPReLU](./mpscnnneuronprelu.md)
   A parametric ReLU (Rectified Linear Unit) neuron filter.
-- [class MPSCNNNeuronReLUN](mpscnnneuronrelun.md)
+- [class MPSCNNNeuronReLUN](./mpscnnneuronrelun.md)
   A ReLUN neuron filter.
-- [class MPSCNNNeuronReLU](mpscnnneuronrelu.md)
+- [class MPSCNNNeuronReLU](./mpscnnneuronrelu.md)
   A ReLU (Rectified Linear Unit) neuron filter.
-- [class MPSCNNNeuronSigmoid](mpscnnneuronsigmoid.md)
+- [class MPSCNNNeuronSigmoid](./mpscnnneuronsigmoid.md)
   A sigmoid neuron filter.
-- [class MPSCNNNeuronSoftSign](mpscnnneuronsoftsign.md)
+- [class MPSCNNNeuronSoftSign](./mpscnnneuronsoftsign.md)
   A softsign neuron filter.
-- [class MPSCNNNeuronTanH](mpscnnneurontanh.md)
+- [class MPSCNNNeuronTanH](./mpscnnneurontanh.md)
   A hyperbolic tangent neuron filter.
-- [class MPSCNNNeuron](mpscnnneuron.md)
+- [class MPSCNNNeuron](./mpscnnneuron.md)
   A filter that applies a neuron activation function.
-- [class MPSCNNNeuronExponential](mpscnnneuronexponential.md)
+- [class MPSCNNNeuronExponential](./mpscnnneuronexponential.md)
   An exponential neuron filter.
-- [class MPSCNNNeuronGradient](mpscnnneurongradient.md)
+- [class MPSCNNNeuronGradient](./mpscnnneurongradient.md)
   A gradient neuron filter.
-- [class MPSCNNNeuronLogarithm](mpscnnneuronlogarithm.md)
+- [class MPSCNNNeuronLogarithm](./mpscnnneuronlogarithm.md)
   A logarithm neuron filter.
-- [class MPSCNNNeuronPower](mpscnnneuronpower.md)
+- [class MPSCNNNeuronPower](./mpscnnneuronpower.md)
   A power neuron filter.
 
 

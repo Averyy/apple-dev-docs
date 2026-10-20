@@ -1,7 +1,8 @@
 # noUpdate
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A sentinel instance that indicates no free space update occurred.
 
@@ -12,6 +13,10 @@ A sentinel instance that indicates no free space update occurred.
 
 ```swift
 class var noUpdate: FSFreeSpace { get }
+```
+
+```objc
+@property (class, readonly) FSFreeSpace * noUpdate;
 ```
 
 

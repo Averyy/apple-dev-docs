@@ -1,7 +1,8 @@
 # vrsqrtf(_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 For each vector element, calculates the inverse of the square root of `X`.
 
@@ -10,7 +11,7 @@ For each vector element, calculates the inverse of the square root of `X`.
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,32 +21,37 @@ For each vector element, calculates the inverse of the square root of `X`.
 func vrsqrtf(_: vFloat) -> vFloat
 ```
 
+```c
+extern vFloat vrsqrtf(vFloat );
+```
+
 ## See Also
 
-- [func vceilf(vFloat) -> vFloat](vceilf(_:).md)
+### Floating-Point Arithmetic and Auxiliary Functions (from vfp.h)
+- [func vceilf(vFloat) -> vFloat](./vceilf%28_%29.md)
   Computes the ceiling of values in a vector of floating-point values.
-- [func vcopysignf(vFloat, vFloat) -> vFloat](vcopysignf(_:_:).md)
+- [func vcopysignf(vFloat, vFloat) -> vFloat](./vcopysignf%28_,_%29.md)
   For each vector element, produces a value with the magnitude of `arg2` and sign `arg1`.  Note that the order of the arguments matches the recommendation of the IEEE 754 floating-point standard, which is opposite from the SANE copysign function.
-- [func vdivf(vFloat, vFloat) -> vFloat](vdivf(_:_:).md)
+- [func vdivf(vFloat, vFloat) -> vFloat](./vdivf%28_,_%29.md)
   For each vector element, calculates `A`/`B`.
-- [func vfabf(vFloat) -> vFloat](vfabf(_:).md)
+- [func vfabf(vFloat) -> vFloat](./vfabf%28_%29.md)
   For each vector element, calculates the absolute value of `v`.
-- [func vfabsf(vFloat) -> vFloat](vfabsf(_:).md)
-- [func vfloorf(vFloat) -> vFloat](vfloorf(_:).md)
+- [func vfabsf(vFloat) -> vFloat](./vfabsf%28_%29.md)
+- [func vfloorf(vFloat) -> vFloat](./vfloorf%28_%29.md)
   Computes the floor of values in a vector of floating-point values.
-- [func vintf(vFloat) -> vFloat](vintf(_:).md)
+- [func vintf(vFloat) -> vFloat](./vintf%28_%29.md)
   Truncates the decimal portion of a vector of floating-point values.
-- [func vnintf(vFloat) -> vFloat](vnintf(_:).md)
+- [func vnintf(vFloat) -> vFloat](./vnintf%28_%29.md)
   Rounds to the nearest integer (nearest even for ties).
-- [func vnextafterf(vFloat, vFloat) -> vFloat](vnextafterf(_:_:).md)
+- [func vnextafterf(vFloat, vFloat) -> vFloat](./vnextafterf%28_,_%29.md)
   For each vector element, calculates the next representable value after `x` in the direction of `y`.  If `x` is equal to `y`, then `y` is returned.
-- [func vrecf(vFloat) -> vFloat](vrecf(_:).md)
+- [func vrecf(vFloat) -> vFloat](./vrecf%28_%29.md)
   Computes the reciprocal of values in a vector.
-- [func vsqrtf(vFloat) -> vFloat](vsqrtf(_:).md)
+- [func vsqrtf(vFloat) -> vFloat](./vsqrtf%28_%29.md)
   For each vector element, calculates the square root of `X`.
-- [func vtablelookup(vSInt32, UnsafeMutablePointer<UInt32>) -> vUInt32](vtablelookup(_:_:).md)
+- [func vtablelookup(vSInt32, UnsafeMutablePointer<UInt32>) -> vUInt32](./vtablelookup%28_,_%29.md)
   For each vector element of `Index_Vect`, returns the corresponding value from `Table`.
-- [func vtruncf(vFloat) -> vFloat](vtruncf(_:).md)
+- [func vtruncf(vFloat) -> vFloat](./vtruncf%28_%29.md)
 
 
 ---

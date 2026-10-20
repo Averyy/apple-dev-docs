@@ -1,7 +1,8 @@
 # nw_parameters_attribution_t
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The entities that can make a network request.
 
@@ -20,39 +21,44 @@ The entities that can make a network request.
 enum nw_parameters_attribution_t
 ```
 
+```c
+enum nw_parameters_attribution_t : uint8_t;
+```
+
 #### Overview
 
-Use one of these values when setting the `attribution` parameter of a network request with the [`nw_parameters_get_attribution(_:)`](nw_parameters_get_attribution(_:).md) method. If you don’t set a value, the system assumes [`nw_parameters_attribution_t.developer`](nw_parameters_attribution_t/developer.md).
+Use one of these values when setting the `attribution` parameter of a network request with the [`nw_parameters_get_attribution(_:)`](./nw_parameters_get_attribution%28_%29.md) method. If you don’t set a value, the system assumes [`nw_parameters_attribution_t.developer`](./nw_parameters_attribution_t/developer.md).
 
 ## Topics
 
 ### Request Sources
-- [nw_parameters_attribution_t.developer](nw_parameters_attribution_t/developer.md)
+- [nw_parameters_attribution_t.developer](./nw_parameters_attribution_t/developer.md)
   A developer-initiated network request.
-- [nw_parameters_attribution_t.user](nw_parameters_attribution_t/user.md)
+- [nw_parameters_attribution_t.user](./nw_parameters_attribution_t/user.md)
   The user explicitly directs the app to make a network request.
 ### Initializers
-- [init?(rawValue: UInt8)](nw_parameters_attribution_t/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./nw_parameters_attribution_t/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Inspecting app activity data](inspecting-app-activity-data.md)
+### Traffic Attribution
+- [Inspecting app activity data](./inspecting-app-activity-data.md)
   Verify that your app accesses only the user data and network resources that you expect it to access.
-- [Indicating the source of network activity](indicating-the-source-of-network-activity.md)
+- [Indicating the source of network activity](./indicating-the-source-of-network-activity.md)
   Control whether the App Privacy Report attributes network traffic to the app or to the user.
-- [func nw_parameters_set_attribution(nw_parameters_t, nw_parameters_attribution_t)](nw_parameters_set_attribution(_:_:).md)
+- [func nw_parameters_set_attribution(nw_parameters_t, nw_parameters_attribution_t)](./nw_parameters_set_attribution%28_,_%29.md)
   Sets a flag that indicates whether the network request originates from the developer or the user.
-- [func nw_parameters_get_attribution(nw_parameters_t) -> nw_parameters_attribution_t](nw_parameters_get_attribution(_:).md)
+- [func nw_parameters_get_attribution(nw_parameters_t) -> nw_parameters_attribution_t](./nw_parameters_get_attribution%28_%29.md)
   Gets a flag that indicates whether the network request originates from the developer or the user.
 
 

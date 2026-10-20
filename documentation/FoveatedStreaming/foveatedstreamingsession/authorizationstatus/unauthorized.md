@@ -1,7 +1,8 @@
 # FoveatedStreamingSession.AuthorizationStatus.unauthorized
 
 **Framework**: Foveated Streaming  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user has denied this capability, or the capability is otherwise unavailable.
 

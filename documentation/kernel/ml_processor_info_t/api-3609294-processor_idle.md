@@ -1,14 +1,15 @@
 # processor_idle
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 processor_idle_t processor_idle;
 ```
 

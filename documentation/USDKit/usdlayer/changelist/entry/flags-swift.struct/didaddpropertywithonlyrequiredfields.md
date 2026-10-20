@@ -1,7 +1,8 @@
 # didAddPropertyWithOnlyRequiredFields
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether a property with only required fields was added.
 

@@ -1,11 +1,12 @@
 # Scalable3DProtocol Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func scaledBy(x: Float, y: Float, z: Float) -> Rect3DFloat](rect3dfloat/scaledby(x:y:z:).md)
+- [func scaledBy(x: Float, y: Float, z: Float) -> Rect3DFloat](./scaledby%28x,y,z%29.md)
   Returns the rectangle scaled by the specified values.
 
 

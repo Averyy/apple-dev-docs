@@ -1,7 +1,8 @@
 # update(_:with:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates a transformer with a new sequence of examples.
 
@@ -19,6 +20,8 @@ Updates a transformer with a new sequence of examples.
 ```swift
 func update<InputSequence>(_ transformer: inout LinearRegressor<Scalar>.Transformer, with input: InputSequence, eventHandler: EventHandler?) async throws where InputSequence : Sequence, InputSequence.Element == AnnotatedFeature<MLShapedArray<Scalar>, Scalar>
 ```
+
+Available when `Scalar` conforms to `MLShapedArrayScalar` and `BinaryFloatingPoint`.
 
 ## Parameters
 

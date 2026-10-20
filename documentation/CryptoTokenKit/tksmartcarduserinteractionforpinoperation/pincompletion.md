@@ -1,7 +1,8 @@
 # pinCompletion
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The conditions under which PIN entry should be considered complete.
 
@@ -20,9 +21,14 @@ The conditions under which PIN entry should be considered complete.
 var pinCompletion: TKSmartCardUserInteractionForPINOperation.Completion { get set }
 ```
 
+```objc
+@property TKSmartCardPINCompletion PINCompletion;
+```
+
 ## See Also
 
-- [TKSmartCardUserInteractionForPINOperation.Completion](tksmartcarduserinteractionforpinoperation/completion.md)
+### Managing Pin Completion
+- [TKSmartCardUserInteractionForPINOperation.Completion](./completion.md)
 
 
 ---

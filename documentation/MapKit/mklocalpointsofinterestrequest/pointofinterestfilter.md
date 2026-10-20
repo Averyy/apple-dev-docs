@@ -1,7 +1,8 @@
 # pointOfInterestFilter
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A filter that lists points of interest categories to include or exclude.
 
@@ -21,13 +22,18 @@ A filter that lists points of interest categories to include or exclude.
 var pointOfInterestFilter: MKPointOfInterestFilter? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) MKPointOfInterestFilter * pointOfInterestFilter;
+```
+
 ## See Also
 
-- [var region: MKCoordinateRegion](mklocalpointsofinterestrequest/region.md)
+### Configuring the request parameters
+- [var region: MKCoordinateRegion](./region.md)
   The region of the bounding box of the request provided or the derived bounding box of the circle created by the radius.
-- [var coordinate: CLLocationCoordinate2D](mklocalpointsofinterestrequest/coordinate.md)
+- [var coordinate: CLLocationCoordinate2D](./coordinate.md)
   The center of the point of request as latitude and longitude.
-- [var radius: CLLocationDistance](mklocalpointsofinterestrequest/radius.md)
+- [var radius: CLLocationDistance](./radius.md)
   The distance provided in meters or the longest distance derived from the center point to the region’s bounding box.
 
 

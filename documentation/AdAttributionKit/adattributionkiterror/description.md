@@ -1,7 +1,8 @@
 # description
 
 **Framework**: AdAttributionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that describes the error.
 

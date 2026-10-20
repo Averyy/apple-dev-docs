@@ -1,12 +1,15 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a WatchKit extension delegate adaptor using an observable delegate.
 
 **Availability**:
-- watchOS 10.0+
+- watchOS 10.0+ - Deprecated in 10.0
+
+> **Deprecated**: Use WKApplicationDelegateAdaptor with a WKApplicationDelegate instead.
 
 ## Declaration
 
@@ -15,9 +18,23 @@ Creates a WatchKit extension delegate adaptor using an observable delegate.
 @preconcurrency init(_ delegateType: DelegateType.Type = DelegateType.self)
 ```
 
+Available when `DelegateType` inherits `NSObject`, `DelegateType` conforms to `Observable`, and `DelegateType` conforms to `WKExtensionDelegate`.
+
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency init(_ delegateType: DelegateType.Type = DelegateType.self)
+```
+
+```swift
+@MainActor
+@preconcurrency init(_ delegateType: DelegateType.Type = DelegateType.self)
+```
+
 #### Discussion
 
-Call this initializer indirectly by creating a property with the [`WKExtensionDelegateAdaptor`](wkextensiondelegateadaptor.md) property wrapper from inside your [`App`](app.md) declaration:
+Call this initializer indirectly by creating a property with the [`WKExtensionDelegateAdaptor`](../wkextensiondelegateadaptor.md) property wrapper from inside your [`App`](../app.md) declaration:
 
 ```swift
 @main
@@ -30,17 +47,17 @@ struct MyApp: App {
 
 SwiftUI initializes the delegate and manages its lifetime, calling it as needed to handle extension delegate callbacks.
 
-SwiftUI invokes this method when your app delegate conforms to the [`Observable`](https://developer.apple.com/documentation/observation/observable) protocol. In this case, SwiftUI automatically places the delegate in the [`Environment`](environment.md). You can access such a delegate from any scene or view in your app using the [`Environment`](environment.md) property wrapper:
+SwiftUI invokes this method when your app delegate conforms to the [`Observable`](../../Observation/observable.md) protocol. In this case, SwiftUI automatically places the delegate in the [`Environment`](../environment.md). You can access such a delegate from any scene or view in your app using the [`Environment`](../environment.md) property wrapper:
 
 ```swift
 @Environment(MyAppDelegate.self) private var appDelegate
 ```
 
-If your delegate isn’t observable, SwiftUI invokes the [`init(_:)`](wkextensiondelegateadaptor/init(_:)-2556.md) initializer rather than this one, and doesn’t put the delegate instance in the environment.
+If your delegate isn’t observable, SwiftUI invokes the [`init(_:)`](./init%28_%29-2556.md) initializer rather than this one, and doesn’t put the delegate instance in the environment.
 
 ## Parameters
 
-- `delegateType`: The type of extension delegate that you define in your app, which conforms to the [`WKExtensionDelegate`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate) and [`Observable`](https://developer.apple.com/documentation/observation/observable) protocols.
+- `delegateType`: The type of extension delegate that you define in your app, which conforms to the [`WKExtensionDelegate`](../../WatchKit/wkextensiondelegate.md) and [`Observable`](../../Observation/observable.md) protocols.
 
 
 ---

@@ -1,7 +1,8 @@
 # dangi
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -18,35 +19,40 @@
 static let dangi: NSCalendar.Identifier
 ```
 
+```c
+extern NSCalendarIdentifier const NSCalendarIdentifierDangi;
+```
+
 ## See Also
 
-- [static let gregorian: NSCalendar.Identifier](nscalendar/identifier/gregorian.md)
+### Calendar identifiers
+- [static let gregorian: NSCalendar.Identifier](./gregorian.md)
   Identifier for the Gregorian calendar.
-- [static let ISO8601: NSCalendar.Identifier](nscalendar/identifier/iso8601.md)
+- [static let ISO8601: NSCalendar.Identifier](./iso8601.md)
   Identifier for the ISO8601 calendar.
-- [static let bangla: NSCalendar.Identifier](nscalendar/identifier/bangla.md)
-- [static let buddhist: NSCalendar.Identifier](nscalendar/identifier/buddhist.md)
+- [static let bangla: NSCalendar.Identifier](./bangla.md)
+- [static let buddhist: NSCalendar.Identifier](./buddhist.md)
   Identifier for the Buddhist calendar.
-- [static let chinese: NSCalendar.Identifier](nscalendar/identifier/chinese.md)
+- [static let chinese: NSCalendar.Identifier](./chinese.md)
   Identifier for the Chinese calendar.
-- [static let coptic: NSCalendar.Identifier](nscalendar/identifier/coptic.md)
+- [static let coptic: NSCalendar.Identifier](./coptic.md)
   Identifier for the Coptic calendar.
-- [static let ethiopicAmeteAlem: NSCalendar.Identifier](nscalendar/identifier/ethiopicametealem.md)
+- [static let ethiopicAmeteAlem: NSCalendar.Identifier](./ethiopicametealem.md)
   Identifier for the Ethiopic (Amete Alem) calendar.
-- [static let ethiopicAmeteMihret: NSCalendar.Identifier](nscalendar/identifier/ethiopicametemihret.md)
+- [static let ethiopicAmeteMihret: NSCalendar.Identifier](./ethiopicametemihret.md)
   Identifier for the Ethiopic (Amete Mihret) calendar.
-- [static let gujarati: NSCalendar.Identifier](nscalendar/identifier/gujarati.md)
-- [static let hebrew: NSCalendar.Identifier](nscalendar/identifier/hebrew.md)
+- [static let gujarati: NSCalendar.Identifier](./gujarati.md)
+- [static let hebrew: NSCalendar.Identifier](./hebrew.md)
   Identifier for the Hebrew calendar.
-- [static let indian: NSCalendar.Identifier](nscalendar/identifier/indian.md)
+- [static let indian: NSCalendar.Identifier](./indian.md)
   Identifier for the Indian calendar.
-- [static let islamic: NSCalendar.Identifier](nscalendar/identifier/islamic.md)
+- [static let islamic: NSCalendar.Identifier](./islamic.md)
   Identifier for the Islamic calendar.
-- [static let islamicCivil: NSCalendar.Identifier](nscalendar/identifier/islamiccivil.md)
+- [static let islamicCivil: NSCalendar.Identifier](./islamiccivil.md)
   Identifier for the Islamic civil calendar.
-- [static let islamicTabular: NSCalendar.Identifier](nscalendar/identifier/islamictabular.md)
+- [static let islamicTabular: NSCalendar.Identifier](./islamictabular.md)
   Identifier for a tabular Islamic calendar.
-- [static let islamicUmmAlQura: NSCalendar.Identifier](nscalendar/identifier/islamicummalqura.md)
+- [static let islamicUmmAlQura: NSCalendar.Identifier](./islamicummalqura.md)
   Identifier for the Islamic Umm al-Qura calendar.
 
 

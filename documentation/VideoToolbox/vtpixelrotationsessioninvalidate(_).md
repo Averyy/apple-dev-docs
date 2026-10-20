@@ -1,7 +1,8 @@
 # VTPixelRotationSessionInvalidate(_:)
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Tears down a pixel rotation session.
 
@@ -19,6 +20,10 @@ Tears down a pixel rotation session.
 func VTPixelRotationSessionInvalidate(_ session: VTPixelRotationSession)
 ```
 
+```c
+extern void VTPixelRotationSessionInvalidate(VTPixelRotationSessionRef session);
+```
+
 #### Discussion
 
 When a pixel rotation session’s retain count reaches zero, the system automatically invalidates it. However, because other processes may retain a session, it can be hard to predict when the invalidation occurs. Calling this function ensures a deterministic, orderly teardown.
@@ -29,7 +34,8 @@ When a pixel rotation session’s retain count reaches zero, the system automati
 
 ## See Also
 
-- [func VTPixelRotationSessionCreate(CFAllocator?, UnsafeMutablePointer<VTPixelRotationSession?>) -> OSStatus](vtpixelrotationsessioncreate(_:_:).md)
+### Managing a Session
+- [func VTPixelRotationSessionCreate(CFAllocator?, UnsafeMutablePointer<VTPixelRotationSession?>) -> OSStatus](./vtpixelrotationsessioncreate%28_,_%29.md)
   Creates a session to rotate images between pixel buffers.
 
 

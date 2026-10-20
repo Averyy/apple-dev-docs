@@ -1,14 +1,15 @@
 # mbuf_stats
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 void mbuf_stats(struct mbuf_stat *stats);
 ```
 

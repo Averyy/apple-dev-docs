@@ -1,7 +1,8 @@
 # Orientation
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 Asset orientation and aspect ratio classification.
 
@@ -10,21 +11,27 @@ Asset orientation and aspect ratio classification.
 
 ## Declaration
 
-```swift
+```
 string Orientation
 ```
 
+## Possible Values
+
+- `PORTRAIT`: The asset is taller than it is wide (height > width).
+- `LANDSCAPE`: The asset is wider than it is tall (width > height).
+- `SQUARE`: The asset has equal width and height.
+
 #### Discussion
 
-The `Orientation` classifies the aspect ratio of an image or video asset. The system determines the value from the asset’s pixel dimensions when you upload the asset, and returns it as part of the [`Asset`](asset.md) record.
+The `Orientation` classifies the aspect ratio of an image or video asset. The system determines the value from the asset’s pixel dimensions when you upload the asset, and returns it as part of the [`Asset`](./asset.md) record.
 
 ## See Also
 
-- [type AssetType](assettype.md)
+- [type AssetType](./assettype.md)
   The media type of an asset.
-- [type ImageType](imagetype.md)
+- [type ImageType](./imagetype.md)
   Image format type for an uploaded asset.
-- [type AssetEligibilityStatus](asseteligibilitystatus.md)
+- [type AssetEligibilityStatus](./asseteligibilitystatus.md)
   Overall eligibility status for an asset’s policy evaluation.
 
 

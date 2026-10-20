@@ -1,7 +1,8 @@
 # com.apple.developer.private-cloud-compute
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether the app can use Private Cloud Compute.
 
@@ -12,17 +13,20 @@ A Boolean value that indicates whether the app can use Private Cloud Compute.
 - visionOS 27.0+
 - watchOS 27.0+
 
+## Details
+
+- **Name**: `com.apple.developer.private-cloud-compute`
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `NO`
 
 #### Discussion
 
-To develop with PCC you must meet certain eligibility requirements. To learn more and request access to the managed entitlement, see [`Accessing Private Cloud Compute`](https://developer.apple.comhttps://developer.apple.com/private-cloud-compute/).
+To develop with PCC you must meet certain eligibility requirements. To learn more and request access to the managed entitlement, see [Accessing Private Cloud Compute](https://developer.apple.com/private-cloud-compute/).
 
-For more information about using this entitlement, see [`Adding server-side intelligence with Private Cloud Compute`](https://developer.apple.com/documentation/foundationmodels/adding-server-side-intelligence-with-private-cloud-compute).
+For more information about using this entitlement, see [Adding server-side intelligence with Private Cloud Compute](../../FoundationModels/adding-server-side-intelligence-with-private-cloud-compute.md).
 
 
 ---

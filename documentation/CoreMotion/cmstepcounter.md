@@ -1,20 +1,27 @@
 # CMStepCounter
 
 **Framework**: Core Motion  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The number of steps the user has taken with the device.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 7.0+ - Deprecated in 8.0
+- iPadOS 7.0+ - Deprecated in 8.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use the [`CMPedometer`](./cmpedometer.md) class instead.
 
 ## Declaration
 
 ```swift
 class CMStepCounter
+```
+
+```objc
+@interface CMStepCounter : NSObject
 ```
 
 #### Overview
@@ -24,44 +31,45 @@ Step information is gathered on devices with the appropriate built-in hardware a
 ## Topics
 
 ### Determining Step Counting Availability
-- [class func isStepCountingAvailable() -> Bool](cmstepcounter/isstepcountingavailable.md)
+- [class func isStepCountingAvailable() -> Bool](./cmstepcounter/isstepcountingavailable%28%29.md)
   Returns a Boolean indicating whether step-counting support is available on the current device.
 ### Starting and Stopping Step Counting Updates
-- [func startStepCountingUpdates(to: OperationQueue, updateOn: Int, withHandler: CMStepUpdateHandler)](cmstepcounter/startstepcountingupdates(to:updateon:withhandler:).md)
+- [func startStepCountingUpdates(to: OperationQueue, updateOn: Int, withHandler: CMStepUpdateHandler)](./cmstepcounter/startstepcountingupdates%28to,updateon,withhandler%29.md)
   Starts the delivery of current step-counting data to your app.
-- [func stopStepCountingUpdates()](cmstepcounter/stopstepcountingupdates.md)
+- [func stopStepCountingUpdates()](./cmstepcounter/stopstepcountingupdates%28%29.md)
   Stops the delivery of step-counting updates to your app.
-- [typealias CMStepUpdateHandler](cmstepupdatehandler.md)
+- [typealias CMStepUpdateHandler](./cmstepupdatehandler.md)
   A block that reports the number of steps recorded since updates began.
 ### Getting Historical Step Counting Data
-- [func queryStepCountStarting(from: Date, to: Date, to: OperationQueue, withHandler: CMStepQueryHandler)](cmstepcounter/querystepcountstarting(from:to:to:withhandler:).md)
+- [func queryStepCountStarting(from: Date, to: Date, to: OperationQueue, withHandler: CMStepQueryHandler)](./cmstepcounter/querystepcountstarting%28from,to,to,withhandler%29.md)
   Gathers and returns historical step count data for the specified time period.
-- [typealias CMStepQueryHandler](cmstepqueryhandler.md)
+- [typealias CMStepQueryHandler](./cmstepqueryhandler.md)
   A block that reports the number of steps for a query operation.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CMPedometer](cmpedometer.md)
+### Pedometer and fitness
+- [class CMPedometer](./cmpedometer.md)
   An object for fetching the system-generated live walking data.
-- [class CMPedometerData](cmpedometerdata.md)
+- [class CMPedometerData](./cmpedometerdata.md)
   Information about the distance traveled by a user on foot.
-- [class CMPedometerEvent](cmpedometerevent.md)
+- [class CMPedometerEvent](./cmpedometerevent.md)
   A change in the user’s pedestrian activity.
-- [class CMOdometerData](cmodometerdata.md)
+- [class CMOdometerData](./cmodometerdata.md)
   A class that represents odometer data for workouts.
-- [class CMHighFrequencyHeartRateData](cmhighfrequencyheartratedata.md)
+- [class CMHighFrequencyHeartRateData](./cmhighfrequencyheartratedata.md)
   A class that represents heart rate data collected at 1 Hz.
 
 

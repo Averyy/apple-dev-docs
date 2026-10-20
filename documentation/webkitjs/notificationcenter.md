@@ -1,23 +1,24 @@
 # NotificationCenter
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
 
 ## Declaration
 
-```swift
+```
 interface NotificationCenter
 ```
 
 ## Topics
 
 ### Instance Methods
-- [checkPermission](notificationcenter/1631220-checkpermission.md)
-- [createNotification](notificationcenter/1630939-createnotification.md)
-- [requestPermission](notificationcenter/1630391-requestpermission.md)
+- [checkPermission](./notificationcenter/api-1631220-checkpermission.md)
+- [createNotification](./notificationcenter/api-1630939-createnotification.md)
+- [requestPermission](./notificationcenter/api-1630391-requestpermission.md)
 
 
 ---

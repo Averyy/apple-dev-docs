@@ -1,7 +1,8 @@
 # queue
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The queue for servicing input/output requests.
 
@@ -15,19 +16,24 @@ The queue for servicing input/output requests.
 var queue: dispatch_queue_t { get }
 ```
 
+```objc
+@property (readonly) dispatch_queue_t queue;
+```
+
 #### Discussion
 
 Use this queue only for asynchronous input/output requests.
 
 ## See Also
 
-- [struct IOUSBHostObjectInitOptions](iousbhostobjectinitoptions.md)
+### Managing the Object Life Cycle
+- [struct IOUSBHostObjectInitOptions](../iousbhostobjectinitoptions.md)
   Options for initializing the host object.
-- [typealias IOUSBHostInterestHandler](iousbhostinteresthandler.md)
+- [typealias IOUSBHostInterestHandler](../iousbhostinteresthandler.md)
   The callback that handles underlying service-state changes.
-- [var ioService: io_service_t](iousbhostobject/ioservice.md)
+- [var ioService: io_service_t](./ioservice.md)
   A reference to the kernel object.
-- [func destroy()](iousbhostobject/destroy.md)
+- [func destroy()](./destroy%28%29.md)
   Removes underlying allocations and connections from the USB host object.
 
 

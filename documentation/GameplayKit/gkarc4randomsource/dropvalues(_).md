@@ -1,7 +1,8 @@
 # dropValues(_:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Skips the specified number of values in the random sequence.
 
@@ -17,6 +18,10 @@ Skips the specified number of values in the random sequence.
 
 ```swift
 func dropValues(_ count: Int)
+```
+
+```objc
+- (void) dropValuesWithCount:(NSUInteger) count;
 ```
 
 #### Discussion

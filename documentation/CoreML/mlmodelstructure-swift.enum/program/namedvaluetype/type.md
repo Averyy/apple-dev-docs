@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the parameter.
 
@@ -22,7 +23,8 @@ let type: MLModelStructure.Program.ValueType
 
 ## See Also
 
-- [let name: String](mlmodelstructure-swift.enum/program/namedvaluetype/name.md)
+### Accessing the properties
+- [let name: String](./name.md)
   The name of the parameter.
 
 

@@ -1,7 +1,8 @@
 # CGPDFScannerGetContentStream(_:)
 
 **Framework**: Core Graphics  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the content stream associated with a PDF scanner object.
 
@@ -10,7 +11,7 @@ Returns the content stream associated with a PDF scanner object.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns the content stream associated with a PDF scanner object.
 
 ```swift
 func CGPDFScannerGetContentStream(_ scanner: CGPDFScannerRef) -> CGPDFContentStreamRef
+```
+
+```c
+extern CGPDFContentStreamRefCGPDFScannerGetContentStream(CGPDFScannerRef scanner);
 ```
 
 #### Return Value
@@ -30,7 +35,8 @@ The content stream associated with `scanner`.
 
 ## See Also
 
-- [func CGPDFScannerScan(CGPDFScannerRef) -> Bool](cgpdfscannerscan(_:).md)
+### Parsing Content
+- [func CGPDFScannerScan(CGPDFScannerRef) -> Bool](./cgpdfscannerscan%28_%29.md)
   Parses the content stream of a PDF scanner object.
 
 

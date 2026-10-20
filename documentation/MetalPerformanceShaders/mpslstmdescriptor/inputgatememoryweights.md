@@ -1,7 +1,8 @@
 # inputGateMemoryWeights
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,24 +18,29 @@
 var inputGateMemoryWeights: (any MPSCNNConvolutionDataSource)? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, readwrite, nullable) id<MPSCNNConvolutionDataSource> inputGateMemoryWeights;
+```
+
 ## See Also
 
-- [var cellGateInputWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/cellgateinputweights.md)
-- [var cellGateMemoryWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/cellgatememoryweights.md)
-- [var cellGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/cellgaterecurrentweights.md)
-- [var cellToOutputNeuronParamA: Float](mpslstmdescriptor/celltooutputneuronparama.md)
-- [var cellToOutputNeuronParamB: Float](mpslstmdescriptor/celltooutputneuronparamb.md)
-- [var cellToOutputNeuronType: MPSCNNNeuronType](mpslstmdescriptor/celltooutputneurontype.md)
-- [enum MPSCNNNeuronType](mpscnnneurontype.md)
+### Instance Properties
+- [var cellGateInputWeights: (any MPSCNNConvolutionDataSource)?](./cellgateinputweights.md)
+- [var cellGateMemoryWeights: (any MPSCNNConvolutionDataSource)?](./cellgatememoryweights.md)
+- [var cellGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](./cellgaterecurrentweights.md)
+- [var cellToOutputNeuronParamA: Float](./celltooutputneuronparama.md)
+- [var cellToOutputNeuronParamB: Float](./celltooutputneuronparamb.md)
+- [var cellToOutputNeuronType: MPSCNNNeuronType](./celltooutputneurontype.md)
+- [enum MPSCNNNeuronType](../mpscnnneurontype.md)
   The types of neuron filter to append to a convolution.
-- [var forgetGateInputWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/forgetgateinputweights.md)
-- [var forgetGateMemoryWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/forgetgatememoryweights.md)
-- [var forgetGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/forgetgaterecurrentweights.md)
-- [var inputGateInputWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/inputgateinputweights.md)
-- [var inputGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/inputgaterecurrentweights.md)
-- [var memoryWeightsAreDiagonal: Bool](mpslstmdescriptor/memoryweightsarediagonal.md)
-- [var outputGateInputWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/outputgateinputweights.md)
-- [var outputGateMemoryWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/outputgatememoryweights.md)
+- [var forgetGateInputWeights: (any MPSCNNConvolutionDataSource)?](./forgetgateinputweights.md)
+- [var forgetGateMemoryWeights: (any MPSCNNConvolutionDataSource)?](./forgetgatememoryweights.md)
+- [var forgetGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](./forgetgaterecurrentweights.md)
+- [var inputGateInputWeights: (any MPSCNNConvolutionDataSource)?](./inputgateinputweights.md)
+- [var inputGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](./inputgaterecurrentweights.md)
+- [var memoryWeightsAreDiagonal: Bool](./memoryweightsarediagonal.md)
+- [var outputGateInputWeights: (any MPSCNNConvolutionDataSource)?](./outputgateinputweights.md)
+- [var outputGateMemoryWeights: (any MPSCNNConvolutionDataSource)?](./outputgatememoryweights.md)
 
 
 ---

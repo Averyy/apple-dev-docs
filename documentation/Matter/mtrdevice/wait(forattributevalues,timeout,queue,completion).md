@@ -1,7 +1,8 @@
 # wait(forAttributeValues:timeout:queue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets up the provided completion to be called when any of the following happens:
 
@@ -18,6 +19,10 @@ Sets up the provided completion to be called when any of the following happens:
 
 ```swift
 func wait(forAttributeValues values: [MTRAttributePath : [String : Any]], timeout: TimeInterval, queue: dispatch_queue_t, completion: @escaping ((any Error)?) -> Void) -> MTRAttributeValueWaiter
+```
+
+```objc
+- (MTRAttributeValueWaiter *) waitForAttributeValues:(NSDictionary<MTRAttributePath *,NSDictionary<NSString *,id> *> *) values timeout:(NSTimeInterval) timeout queue:(dispatch_queue_t) queue completion:(void (^)(NSError *error)) completion;
 ```
 
 #### Discussion

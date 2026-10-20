@@ -1,7 +1,8 @@
 # BetaPublicLinkUsagesV1MetricResponse.Data.DataPoints
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The time-series data points for TestFlight public link usage metrics.
 
@@ -10,14 +11,14 @@ The time-series data points for TestFlight public link usage metrics.
 
 ## Declaration
 
-```swift
+```
 object BetaPublicLinkUsagesV1MetricResponse.Data.DataPoints
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BetaPublicLinkUsagesV1MetricResponse.Data.DataPoints.Values](betapubliclinkusagesv1metricresponse/data-data.dictionary/datapoints-data.dictionary/values-data.dictionary.md)
+- [object BetaPublicLinkUsagesV1MetricResponse.Data.DataPoints.Values](./datapoints-data.dictionary/values-data.dictionary.md)
   The tester enrollment values within a single data point of the public link usage metric.
 
 ## Properties

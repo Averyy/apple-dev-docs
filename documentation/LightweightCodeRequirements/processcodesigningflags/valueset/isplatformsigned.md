@@ -1,7 +1,8 @@
 # isPlatformSigned
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Flag indicating that the binary has been identified as a platform binary (Apple Signed).
 

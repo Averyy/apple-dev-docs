@@ -1,7 +1,8 @@
 # DevicePickerSupportedAction
 
 **Framework**: DeviceDiscoveryUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An environment value that indicates whether the current device supports device discovery.
 
@@ -39,16 +40,17 @@ struct SettingsView: View {
 ## Topics
 
 ### Checking for support
-- [func callAsFunction(NWBrowser.Descriptor, parameters: (() -> NWParameters)?) -> Bool](devicepickersupportedaction/callasfunction(_:parameters:).md)
+- [func callAsFunction(NWBrowser.Descriptor, parameters: (() -> NWParameters)?) -> Bool](./devicepickersupportedaction/callasfunction%28_,parameters%29.md)
   Returns a Boolean value that indicates whether the current device supports device discovery.
 
 ## See Also
 
-- [struct DevicePicker](devicepicker.md)
+### Pairing with nearby devices
+- [struct DevicePicker](./devicepicker.md)
   A SwiftUI view that displays other devices on the network, and creates an encrypted connection to a copy of your app running on that device.
-- [class DDDevicePickerViewController](dddevicepickerviewcontroller.md)
+- [class DDDevicePickerViewController](./dddevicepickerviewcontroller.md)
   A UIKit view that displays other devices on the network, and creates an encrypted connection to a copy of your app running on that device.
-- [Connecting a tvOS app to other devices over the local network](connecting-a-tvos-app-to-other-devices-over-the-local-network.md)
+- [Connecting a tvOS app to other devices over the local network](./connecting-a-tvos-app-to-other-devices-over-the-local-network.md)
   Display a view in your tvOS app that lists available iOS, iPadOS, and watchOS devices that the user can connect to over their local network.
 
 

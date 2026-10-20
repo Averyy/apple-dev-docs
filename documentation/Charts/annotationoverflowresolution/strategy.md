@@ -1,7 +1,8 @@
 # AnnotationOverflowResolution.Strategy
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Strategies for annotation overflow resolution.
 
@@ -23,16 +24,16 @@ struct Strategy
 ## Topics
 
 ### Type Properties
-- [static let automatic: AnnotationOverflowResolution.Strategy](annotationoverflowresolution/strategy/automatic.md)
+- [static let automatic: AnnotationOverflowResolution.Strategy](./strategy/automatic.md)
   Automatically chooses a overflow resolution.
-- [static let disabled: AnnotationOverflowResolution.Strategy](annotationoverflowresolution/strategy/disabled.md)
+- [static let disabled: AnnotationOverflowResolution.Strategy](./strategy/disabled.md)
   Places the annotation “as-is”.
-- [static let fit: AnnotationOverflowResolution.Strategy](annotationoverflowresolution/strategy/fit.md)
+- [static let fit: AnnotationOverflowResolution.Strategy](./strategy/fit.md)
   Fits the annotation automatically, adjusting its position to ensure it doesn’t overflow.
-- [static let padScale: AnnotationOverflowResolution.Strategy](annotationoverflowresolution/strategy/padscale.md)
+- [static let padScale: AnnotationOverflowResolution.Strategy](./strategy/padscale.md)
   Pads the scale of the chart to make space for the annotation.
 ### Type Methods
-- [static func fit(to: AnnotationOverflowResolution.Boundary) -> AnnotationOverflowResolution.Strategy](annotationoverflowresolution/strategy/fit(to:).md)
+- [static func fit(to: AnnotationOverflowResolution.Boundary) -> AnnotationOverflowResolution.Strategy](./strategy/fit%28to%29.md)
   Fits the annotation to the given boundary, adjusting its position to ensure it doesn’t overflow.
 
 

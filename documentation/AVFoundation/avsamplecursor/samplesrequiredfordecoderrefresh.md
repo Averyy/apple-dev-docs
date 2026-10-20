@@ -1,7 +1,8 @@
 # samplesRequiredForDecoderRefresh
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of samples prior to the current sample, in decode order, the decoder requires to achieve a coherent output at the current decode time.
 
@@ -20,6 +21,10 @@ The number of samples prior to the current sample, in decode order, the decoder 
 var samplesRequiredForDecoderRefresh: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger samplesRequiredForDecoderRefresh;
+```
+
 #### Discussion
 
 This property value is 0 when the decoder doesn’t require samples for refresh or when the track doesn’t contain this information.
@@ -28,9 +33,10 @@ Some sample sequences don’t indicate sample dependencies and instead indicate 
 
 ## See Also
 
-- [func maySamplesWithEarlierDecodeTimeStampsHavePresentationTimeStamps(laterThan: AVSampleCursor) -> Bool](avsamplecursor/maysampleswithearlierdecodetimestampshavepresentationtimestamps(laterthan:).md)
+### Accessing samples
+- [func maySamplesWithEarlierDecodeTimeStampsHavePresentationTimeStamps(laterThan: AVSampleCursor) -> Bool](./maysampleswithearlierdecodetimestampshavepresentationtimestamps%28laterthan%29.md)
   Determines whether a sample earlier in decode order can have a presentation timestamp later than that of the specified sample cursor.
-- [func maySamplesWithLaterDecodeTimeStampsHavePresentationTimeStamps(earlierThan: AVSampleCursor) -> Bool](avsamplecursor/maysampleswithlaterdecodetimestampshavepresentationtimestamps(earlierthan:).md)
+- [func maySamplesWithLaterDecodeTimeStampsHavePresentationTimeStamps(earlierThan: AVSampleCursor) -> Bool](./maysampleswithlaterdecodetimestampshavepresentationtimestamps%28earlierthan%29.md)
   Determines whether a sample later in decode order can have a presentation timestamp earlier than that of the specified sample cursor.
 
 

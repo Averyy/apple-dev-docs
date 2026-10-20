@@ -1,7 +1,8 @@
 # init(shape:filter:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a trigger volume with the given shape and collision filter.
 
@@ -11,7 +12,7 @@ Creates a trigger volume with the given shape and collision filter.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -27,9 +28,10 @@ Creates a trigger volume with the given shape and collision filter.
 
 ## See Also
 
-- [init()](triggervolume/init.md)
+### Creating a trigger volume
+- [init()](./init%28%29.md)
   Creates a trigger volume.
-- [init(shapes: [ShapeResource], filter: CollisionFilter)](triggervolume/init(shapes:filter:).md)
+- [init(shapes: [ShapeResource], filter: CollisionFilter)](./init%28shapes,filter%29.md)
   Creates a trigger volume with the given composite shape and collision filter.
 
 

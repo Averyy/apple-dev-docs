@@ -1,7 +1,8 @@
 # NEAppPushManagerError
 
 **Framework**: Network Extension  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An error that the push manager encounters.
 
@@ -20,35 +21,36 @@ struct NEAppPushManagerError
 ## Topics
 
 ### Inspecting error properties
-- [NEAppPushManagerError.Code](neapppushmanagererror-swift.struct/code.md)
+- [NEAppPushManagerError.Code](./neapppushmanagererror-swift.struct/code.md)
   Error codes that the local push API declares.
 ### Error constants
-- [static var configurationInvalid: NEAppPushManagerError.Code](neapppushmanagererror-swift.struct/configurationinvalid.md)
+- [static var configurationInvalid: NEAppPushManagerError.Code](./neapppushmanagererror-swift.struct/configurationinvalid.md)
   An error that indicates the app push configuration is invalid.
-- [static var configurationNotLoaded: NEAppPushManagerError.Code](neapppushmanagererror-swift.struct/configurationnotloaded.md)
+- [static var configurationNotLoaded: NEAppPushManagerError.Code](./neapppushmanagererror-swift.struct/configurationnotloaded.md)
   An error that indicates the manager hasn’t loaded the app push configuration.
-- [static var inactiveSession: NEAppPushManagerError.Code](neapppushmanagererror-swift.struct/inactivesession.md)
+- [static var inactiveSession: NEAppPushManagerError.Code](./neapppushmanagererror-swift.struct/inactivesession.md)
   An error that indicates an invalid attempt to perform an operation on an inactive session.
-- [static var internalError: NEAppPushManagerError.Code](neapppushmanagererror-swift.struct/internalerror.md)
+- [static var internalError: NEAppPushManagerError.Code](./neapppushmanagererror-swift.struct/internalerror.md)
   An error that indicates an internal error in the local push connectivity framework.
 ### Type Properties
-- [static var errorDomain: String](neapppushmanagererror-swift.struct/errordomain.md)
+- [static var errorDomain: String](./neapppushmanagererror-swift.struct/errordomain.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let NEAppPushErrorDomain: String](neapppusherrordomain.md)
+### Handling errors
+- [let NEAppPushErrorDomain: String](./neapppusherrordomain.md)
   The error domain string for local push errors.
-- [NEAppPushManagerError.Code](neapppushmanagererror-swift.struct/code.md)
+- [NEAppPushManagerError.Code](./neapppushmanagererror-swift.struct/code.md)
   Error codes that the local push API declares.
 
 

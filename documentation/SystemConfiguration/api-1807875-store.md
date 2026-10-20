@@ -1,14 +1,16 @@
 # store
 
-**Framework**: System Configuration
+**Framework**: System Configuration  
+**Role**: Article
 
 The dynamic store session.
 
 ## See Also
 
-- [changedKeys](1807876-changedkeys.md)
+### Fields
+- [changedKeys](./api-1807876-changedkeys.md)
   The list of changed keys.
-- [info](1807877-info.md)
+- [info](./api-1807877-info.md)
   A C pointer to a user-specified block of data.
 
 

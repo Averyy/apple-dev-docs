@@ -2,6 +2,7 @@
 
 **Framework**: Model I/O  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The data size of the buffer, in bytes.
@@ -20,11 +21,16 @@ The data size of the buffer, in bytes.
 var length: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger length;
+```
+
 ## See Also
 
-- [func fill(Data, offset: Int)](mdlmeshbuffer/fill(_:offset:).md)
+### Working with Data in a Buffer
+- [func fill(Data, offset: Int)](./fill%28_,offset%29.md)
   Writes the specified data into the buffer.
-- [func map() -> MDLMeshBufferMap](mdlmeshbuffer/map.md)
+- [func map() -> MDLMeshBufferMap](./map%28%29.md)
   Provides direct, read-only access to the buffer’s contents.
 
 

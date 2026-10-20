@@ -1,7 +1,8 @@
 # PaymentCardReaderError.storeAndForwardTokenIssuerChanged
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the current Store and Forward mode has payments from a different token issuer.
 

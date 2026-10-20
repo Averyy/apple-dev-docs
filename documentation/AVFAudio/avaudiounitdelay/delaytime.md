@@ -1,7 +1,8 @@
 # delayTime
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time for the input signal to reach the output.
 
@@ -19,17 +20,22 @@ The time for the input signal to reach the output.
 var delayTime: TimeInterval { get set }
 ```
 
+```objc
+@property (nonatomic) NSTimeInterval delayTime;
+```
+
 #### Discussion
 
 You specify the delay in seconds. The default value is `1`. The valid range of values is `0` to `2` seconds.
 
 ## See Also
 
-- [var feedback: Float](avaudiounitdelay/feedback.md)
+### Configuring the delay
+- [var feedback: Float](./feedback.md)
   The amount of the output signal that feeds back into the delay line.
-- [var lowPassCutoff: Float](avaudiounitdelay/lowpasscutoff.md)
+- [var lowPassCutoff: Float](./lowpasscutoff.md)
   The cutoff frequency above which high frequency content rolls off, in hertz.
-- [var wetDryMix: Float](avaudiounitdelay/wetdrymix.md)
+- [var wetDryMix: Float](./wetdrymix.md)
   The blend of the wet and dry signals.
 
 

@@ -1,7 +1,8 @@
 # stages
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The migration stages.
 
@@ -18,6 +19,10 @@ The migration stages.
 
 ```swift
 var stages: [NSMigrationStage] { get }
+```
+
+```objc
+@property (strong, readonly) NSArray<__kindof NSMigrationStage *> * stages;
 ```
 
 #### Discussion

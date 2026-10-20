@@ -1,7 +1,8 @@
 # first()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -17,6 +18,8 @@
 ```swift
 func first() -> Result<Result<Success, Failure>.Publisher.Output, Failure>.Publisher
 ```
+
+Available when `Failure` conforms to `Error`.
 
 
 ---

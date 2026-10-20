@@ -1,7 +1,8 @@
 # doubleValue
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The numeric value of this metric.
 
@@ -29,13 +30,14 @@ var doubleValue: Double? { get }
 
 ## See Also
 
-- [let name: String](metric/name.md)
+### Inspecting a result
+- [let name: String](./name.md)
   The name of the metric, used as the DataFrame column name.
-- [let value: Metric.Value](metric/value-swift.property.md)
+- [let value: Metric.Value](./value-swift.property.md)
   The result value of this metric.
-- [let rationale: String?](metric/rationale.md)
+- [let rationale: String?](./rationale.md)
   An optional rationale describing the result.
-- [Metric.Value](metric/value-swift.enum.md)
+- [Metric.Value](./value-swift.enum.md)
   A metric result value.
 
 

@@ -1,7 +1,8 @@
 # MPSGraphForLoopBodyBlock
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A block for the body in the for loop.
 
@@ -17,6 +18,10 @@ A block for the body in the for loop.
 
 ```swift
 typealias MPSGraphForLoopBodyBlock = (MPSGraphTensor, [MPSGraphTensor]) -> [MPSGraphTensor]
+```
+
+```c
+typedef NSArray<MPSGraphTensor *> *(^)(MPSGraphTensor *, NSArray<MPSGraphTensor *> *) MPSGraphForLoopBodyBlock;
 ```
 
 #### Return Value

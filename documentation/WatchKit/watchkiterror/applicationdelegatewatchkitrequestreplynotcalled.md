@@ -1,12 +1,13 @@
 # applicationDelegateWatchKitRequestReplyNotCalled
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An unresponsive delegate error.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,16 @@ WatchKit no longer uses this error code.
 
 ## See Also
 
-- [static var downloadFailed: WatchKitError.Code](watchkiterror/downloadfailed.md)
+### Accessing Error Codes
+- [static var downloadFailed: WatchKitError.Code](./downloadfailed.md)
   A download error.
-- [static var invalidArgument: WatchKitError.Code](watchkiterror/invalidargument.md)
+- [static var invalidArgument: WatchKitError.Code](./invalidargument.md)
   An invalid argument error.
-- [static var mediaPlayerFailed: WatchKitError.Code](watchkiterror/mediaplayerfailed.md)
+- [static var mediaPlayerFailed: WatchKitError.Code](./mediaplayerfailed.md)
   A media player error.
-- [static var recordingFailed: WatchKitError.Code](watchkiterror/recordingfailed.md)
+- [static var recordingFailed: WatchKitError.Code](./recordingfailed.md)
   An audio recording error.
-- [static var unknown: WatchKitError.Code](watchkiterror/unknown.md)
+- [static var unknown: WatchKitError.Code](./unknown.md)
   An unknown error.
 
 

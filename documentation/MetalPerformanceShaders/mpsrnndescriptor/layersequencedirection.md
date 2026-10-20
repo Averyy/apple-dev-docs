@@ -1,7 +1,8 @@
 # layerSequenceDirection
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,12 +18,17 @@
 var layerSequenceDirection: MPSRNNSequenceDirection { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MPSRNNSequenceDirection layerSequenceDirection;
+```
+
 ## See Also
 
-- [var inputFeatureChannels: Int](mpsrnndescriptor/inputfeaturechannels.md)
-- [var outputFeatureChannels: Int](mpsrnndescriptor/outputfeaturechannels.md)
-- [var useFloat32Weights: Bool](mpsrnndescriptor/usefloat32weights.md)
-- [var useLayerInputUnitTransformMode: Bool](mpsrnndescriptor/uselayerinputunittransformmode.md)
+### Instance Properties
+- [var inputFeatureChannels: Int](./inputfeaturechannels.md)
+- [var outputFeatureChannels: Int](./outputfeaturechannels.md)
+- [var useFloat32Weights: Bool](./usefloat32weights.md)
+- [var useLayerInputUnitTransformMode: Bool](./uselayerinputunittransformmode.md)
 
 
 ---

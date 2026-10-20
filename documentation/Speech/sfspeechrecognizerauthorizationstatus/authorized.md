@@ -1,7 +1,8 @@
 # SFSpeechRecognizerAuthorizationStatus.authorized
 
 **Framework**: Speech  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user granted your app’s request to perform speech recognition.
 
@@ -18,13 +19,18 @@ The user granted your app’s request to perform speech recognition.
 case authorized
 ```
 
+```c
+SFSpeechRecognizerAuthorizationStatusAuthorized
+```
+
 ## See Also
 
-- [SFSpeechRecognizerAuthorizationStatus.notDetermined](sfspeechrecognizerauthorizationstatus/notdetermined.md)
+### Authorization statuses
+- [SFSpeechRecognizerAuthorizationStatus.notDetermined](./notdetermined.md)
   The app’s authorization status has not yet been determined.
-- [SFSpeechRecognizerAuthorizationStatus.denied](sfspeechrecognizerauthorizationstatus/denied.md)
+- [SFSpeechRecognizerAuthorizationStatus.denied](./denied.md)
   The user denied your app’s request to perform speech recognition.
-- [SFSpeechRecognizerAuthorizationStatus.restricted](sfspeechrecognizerauthorizationstatus/restricted.md)
+- [SFSpeechRecognizerAuthorizationStatus.restricted](./restricted.md)
   The device prevents your app from performing speech recognition.
 
 

@@ -1,7 +1,8 @@
 # PhysicsPrismaticJoint
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A joint that allows movement along a straight line, similar to a sliding drawer.
 
@@ -21,38 +22,39 @@ struct PhysicsPrismaticJoint
 
 #### Overview
 
-`PhysicsPrismaticJoint`, also called a “slider joint”, allows one linear degree of freedom along the x-axis between two [`Entity`](entity.md) pins.
+`PhysicsPrismaticJoint`, also called a “slider joint”, allows one linear degree of freedom along the x-axis between two [`Entity`](./entity.md) pins.
 
-> 💡 **Tip**: Pass an orientation when creating the [`GeometricPin`](geometricpin.md) instances to change the axis of rotation.
+> 💡 **Tip**: Pass an orientation when creating the [`GeometricPin`](./geometricpin.md) instances to change the axis of rotation.
 
 ## Topics
 
 ### Initializers
-- [init(pin0: GeometricPin, pin1: GeometricPin, linearLimit: ClosedRange<Float>?, checksForInternalCollisions: Bool)](physicsprismaticjoint/init(pin0:pin1:linearlimit:checksforinternalcollisions:).md)
+- [init(pin0: GeometricPin, pin1: GeometricPin, linearLimit: ClosedRange<Float>?, checksForInternalCollisions: Bool)](./physicsprismaticjoint/init%28pin0,pin1,linearlimit,checksforinternalcollisions%29.md)
   Creates a new prismatic joint.
 ### Instance Properties
-- [var linearLimit: ClosedRange<Float>?](physicsprismaticjoint/linearlimit.md)
+- [var linearLimit: ClosedRange<Float>?](./physicsprismaticjoint/linearlimit.md)
   A limit of the translation between the pins in the direction of the x-axis.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [PhysicsJoint](physicsjoint.md)
+- [Equatable](../Swift/equatable.md)
+- [PhysicsJoint](./physicsjoint.md)
 
 ## See Also
 
-- [struct PhysicsRevoluteJoint](physicsrevolutejoint.md)
+### Built-in joint types
+- [struct PhysicsRevoluteJoint](./physicsrevolutejoint.md)
   A joint that allows one degree of rotational freedom between two entity pins, similar to a door swinging on its hinges.
-- [struct PhysicsSphericalJoint](physicssphericaljoint.md)
+- [struct PhysicsSphericalJoint](./physicssphericaljoint.md)
   A spherical joint that allows free rotational movement between two entities’ pins.
-- [struct PhysicsCustomJoint](physicscustomjoint.md)
+- [struct PhysicsCustomJoint](./physicscustomjoint.md)
   A joint with six degrees of freedom that can be individually specified.
-- [struct PhysicsDistanceJoint](physicsdistancejoint.md)
+- [struct PhysicsDistanceJoint](./physicsdistancejoint.md)
   A joint that maintains a minimum and maximum distance between two entity pins.
-- [struct PhysicsFixedJoint](physicsfixedjoint.md)
+- [struct PhysicsFixedJoint](./physicsfixedjoint.md)
   A joint that rigidly connects two entity pins, with zero degrees of freedom.
-- [struct PhysicsJoints](physicsjoints.md)
+- [struct PhysicsJoints](./physicsjoints.md)
   A collection of physics joints.
 
 

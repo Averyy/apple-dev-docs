@@ -1,7 +1,8 @@
 # ScrollTargetBehavior.Properties
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The properties of a scroll behavior
 

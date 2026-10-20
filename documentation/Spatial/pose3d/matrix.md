@@ -1,7 +1,8 @@
 # matrix
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pose’s underlying matrix.
 
@@ -11,7 +12,7 @@ The pose’s underlying matrix.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,11 +23,12 @@ var matrix: simd_double4x4 { get }
 
 ## See Also
 
-- [var position: Point3D](pose3d/position.md)
+### Inspecting a 3D pose’s properties
+- [var position: Point3D](./position.md)
   The pose’s position.
-- [var rotation: Rotation3D](pose3d/rotation.md)
+- [var rotation: Rotation3D](./rotation.md)
   The pose’s rotation.
-- [var inverse: Pose3D](pose3d/inverse.md)
+- [var inverse: Pose3D](./inverse.md)
   The pose’s inverse.
 
 

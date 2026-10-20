@@ -1,7 +1,8 @@
 # absoluteSquare(tensor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the absolute square of the input tensor elements.
 
@@ -17,6 +18,10 @@ Returns the absolute square of the input tensor elements.
 
 ```swift
 func absoluteSquare(tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) absoluteSquareWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

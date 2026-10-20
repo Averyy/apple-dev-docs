@@ -1,7 +1,8 @@
 # sendSecurityMessage(_:)
 
 **Framework**: Accessory Transport Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a security message to the system.
 
@@ -16,7 +17,7 @@ func sendSecurityMessage(_ message: SecurityMessage) throws(AccessorySecuritySes
 
 #### Discussion
 
-Use this method to initiate key exchange by sending a [`SecurityMessage`](securitymessage.md) with [`SecurityMessage.KeyType.publicKey`](securitymessage/keytype-swift.enum/publickey.md). The system responds by calling your handler’s [`messageReceived(_:completion:)`](accessorysecuritysession/eventhandler/messagereceived(_:completion:).md) method with encapsulated key material.
+Use this method to initiate key exchange by sending a [`SecurityMessage`](../securitymessage.md) with [`SecurityMessage.KeyType.publicKey`](../securitymessage/keytype-swift.enum/publickey.md). The system responds by calling your handler’s [`messageReceived(_:completion:)`](./eventhandler/messagereceived%28_,completion%29.md) method with encapsulated key material.
 
 ## Parameters
 
@@ -24,7 +25,8 @@ Use this method to initiate key exchange by sending a [`SecurityMessage`](securi
 
 ## See Also
 
-- [func cancel(error: AccessorySecuritySession.Error?)](accessorysecuritysession/cancel(error:).md)
+### Managing the session life cycle
+- [func cancel(error: AccessorySecuritySession.Error?)](./cancel%28error%29.md)
   Cancels the security session.
 
 

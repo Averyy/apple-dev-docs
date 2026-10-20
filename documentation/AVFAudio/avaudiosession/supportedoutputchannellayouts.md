@@ -1,7 +1,8 @@
 # supportedOutputChannelLayouts
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of channel layouts that the current route supports.
 
@@ -17,34 +18,39 @@ The array of channel layouts that the current route supports.
 var supportedOutputChannelLayouts: [AVAudioChannelLayout] { get }
 ```
 
+```objc
+@property (readonly) NSArray<AVAudioChannelLayout *> * supportedOutputChannelLayouts;
+```
+
 #### Discussion
 
 The possible channel layouts for this property are:
 
-- [`kAudioChannelLayoutTag_Stereo`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_stereo)
-- [`kAudioChannelLayoutTag_AAC_5_1`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_aac_5_1)
-- [`kAudioChannelLayoutTag_MPEG_7_1_C`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_mpeg_7_1_c)
-- [`kAudioChannelLayoutTag_Atmos_5_1_2`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_atmos_5_1_2)
-- [`kAudioChannelLayoutTag_Atmos_5_1_4`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_atmos_5_1_4)
-- [`kAudioChannelLayoutTag_Atmos_7_1_2`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_atmos_7_1_2)
-- [`kAudioChannelLayoutTag_Atmos_7_1_4`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_atmos_7_1_4)
-- [`kAudioChannelLayoutTag_Atmos_9_1_6`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_atmos_9_1_6)
+- [`kAudioChannelLayoutTag_Stereo`](../../CoreAudioTypes/kaudiochannellayouttag_stereo.md)
+- [`kAudioChannelLayoutTag_AAC_5_1`](../../CoreAudioTypes/kaudiochannellayouttag_aac_5_1.md)
+- [`kAudioChannelLayoutTag_MPEG_7_1_C`](../../CoreAudioTypes/kaudiochannellayouttag_mpeg_7_1_c.md)
+- [`kAudioChannelLayoutTag_Atmos_5_1_2`](../../CoreAudioTypes/kaudiochannellayouttag_atmos_5_1_2.md)
+- [`kAudioChannelLayoutTag_Atmos_5_1_4`](../../CoreAudioTypes/kaudiochannellayouttag_atmos_5_1_4.md)
+- [`kAudioChannelLayoutTag_Atmos_7_1_2`](../../CoreAudioTypes/kaudiochannellayouttag_atmos_7_1_2.md)
+- [`kAudioChannelLayoutTag_Atmos_7_1_4`](../../CoreAudioTypes/kaudiochannellayouttag_atmos_7_1_4.md)
+- [`kAudioChannelLayoutTag_Atmos_9_1_6`](../../CoreAudioTypes/kaudiochannellayouttag_atmos_9_1_6.md)
 
-This value returns an empty array when the audio session is inactive, ineligible for Now Playing, or the port type isn’t [`carAudio`](avaudiosession/port/caraudio.md) or, in iOS 18 or later, [`airPlay`](avaudiosession/port/airplay.md).
+This value returns an empty array when the audio session is inactive, ineligible for Now Playing, or the port type isn’t [`carAudio`](./port/caraudio.md) or, in iOS 18 or later, [`airPlay`](./port/airplay.md).
 
-Use [`renderingCapabilitiesChangeNotification`](avaudiosession/renderingcapabilitieschangenotification.md) to listen for updates from the system.
+Use [`renderingCapabilitiesChangeNotification`](./renderingcapabilitieschangenotification.md) to listen for updates from the system.
 
 ## See Also
 
-- [var renderingMode: AVAudioSession.RenderingMode](avaudiosession/renderingmode-swift.property.md)
+### Inspecting rendering capabilities
+- [var renderingMode: AVAudioSession.RenderingMode](./renderingmode-swift.property.md)
   The current audio session’s rendering mode.
-- [AVAudioSession.RenderingMode](avaudiosession/renderingmode-swift.enum.md)
+- [AVAudioSession.RenderingMode](./renderingmode-swift.enum.md)
   Audio session rendering mode identifiers.
-- [class let renderingModeChangeNotification: NSNotification.Name](avaudiosession/renderingmodechangenotification.md)
+- [class let renderingModeChangeNotification: NSNotification.Name](./renderingmodechangenotification.md)
   A notification the system posts when the rendering mode changes.
-- [class let renderingCapabilitiesChangeNotification: NSNotification.Name](avaudiosession/renderingcapabilitieschangenotification.md)
+- [class let renderingCapabilitiesChangeNotification: NSNotification.Name](./renderingcapabilitieschangenotification.md)
   A notification the system posts when the rendering capabilities change.
-- [class let spatialPlaybackCapabilitiesChangedNotification: NSNotification.Name](avaudiosession/spatialplaybackcapabilitieschangednotification.md)
+- [class let spatialPlaybackCapabilitiesChangedNotification: NSNotification.Name](./spatialplaybackcapabilitieschangednotification.md)
   A notification the system posts when its spatial playback capabilities change.
 
 

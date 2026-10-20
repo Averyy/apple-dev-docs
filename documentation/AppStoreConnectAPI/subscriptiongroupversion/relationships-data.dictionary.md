@@ -1,7 +1,8 @@
 # SubscriptionGroupVersion.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,16 +11,16 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionGroupVersion.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionGroupVersion.Relationships.SubscriptionGroup](subscriptiongroupversion/relationships-data.dictionary/subscriptiongroup-data.dictionary.md)
+- [object SubscriptionGroupVersion.Relationships.SubscriptionGroup](./relationships-data.dictionary/subscriptiongroup-data.dictionary.md)
   The subscription group for the subscription group version.
-- [object SubscriptionGroupVersion.Relationships.Localizations](subscriptiongroupversion/relationships-data.dictionary/localizations-data.dictionary.md)
+- [object SubscriptionGroupVersion.Relationships.Localizations](./relationships-data.dictionary/localizations-data.dictionary.md)
   The localizations for the subscription group version.
 
 ## Properties
@@ -29,7 +30,8 @@ object SubscriptionGroupVersion.Relationships
 
 ## See Also
 
-- [object SubscriptionGroupVersion.Attributes](subscriptiongroupversion/attributes-data.dictionary.md)
+### Objects and types
+- [object SubscriptionGroupVersion.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a subscription group version resource.
 
 

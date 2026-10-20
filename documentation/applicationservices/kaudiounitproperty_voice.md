@@ -1,7 +1,8 @@
 # kAudioUnitProperty_Voice
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The voice property in the speech synthesis audio unit.
 

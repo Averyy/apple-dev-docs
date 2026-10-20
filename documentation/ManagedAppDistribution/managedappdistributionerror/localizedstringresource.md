@@ -1,7 +1,8 @@
 # localizedStringResource
 
 **Framework**: ManagedAppDistribution  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of localized error strings.
 
@@ -20,15 +21,16 @@ var localizedStringResource: LocalizedStringResource { get }
 
 ## See Also
 
-- [var description: String](managedappdistributionerror/description.md)
+### Providing error information
+- [var description: String](./description.md)
   A localized description of the error.
-- [var errorDescription: String?](managedappdistributionerror/errordescription.md)
+- [var errorDescription: String?](./errordescription.md)
   A brief description of the error.
-- [var failureReason: String?](managedappdistributionerror/failurereason.md)
+- [var failureReason: String?](./failurereason.md)
   A detailed description of the error.
-- [var recoveryOptions: [String]](managedappdistributionerror/recoveryoptions.md)
+- [var recoveryOptions: [String]](./recoveryoptions.md)
   A set of possible recovery options to present.
-- [var recoverySuggestion: String?](managedappdistributionerror/recoverysuggestion.md)
+- [var recoverySuggestion: String?](./recoverysuggestion.md)
   A suggestion for recovering from the error.
 
 

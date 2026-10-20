@@ -1,7 +1,8 @@
 # isAnimating
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a Boolean value indicating whether the animation is running.
 
@@ -9,7 +10,7 @@ Returns a Boolean value indicating whether the animation is running.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,23 +19,28 @@ Returns a Boolean value indicating whether the animation is running.
 var isAnimating: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isAnimating) BOOL animating;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the animation is running; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the animation is running; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var animationImages: [UIImage]?](uiimageview/animationimages.md)
-  An array of [`UIImage`](uiimage.md) objects to use for an animation.
-- [var highlightedAnimationImages: [UIImage]?](uiimageview/highlightedanimationimages.md)
-  An array of [`UIImage`](uiimage.md) objects to use for an animation when the view is highlighted.
-- [var animationDuration: TimeInterval](uiimageview/animationduration.md)
+### Animating a sequence of images
+- [var animationImages: [UIImage]?](./animationimages.md)
+  An array of [`UIImage`](../uiimage.md) objects to use for an animation.
+- [var highlightedAnimationImages: [UIImage]?](./highlightedanimationimages.md)
+  An array of [`UIImage`](../uiimage.md) objects to use for an animation when the view is highlighted.
+- [var animationDuration: TimeInterval](./animationduration.md)
   The amount of time it takes to go through one cycle of the images.
-- [var animationRepeatCount: Int](uiimageview/animationrepeatcount.md)
+- [var animationRepeatCount: Int](./animationrepeatcount.md)
   Specifies the number of times to repeat the animation.
-- [func startAnimating()](uiimageview/startanimating.md)
+- [func startAnimating()](./startanimating%28%29.md)
   Starts animating the images in the receiver.
-- [func stopAnimating()](uiimageview/stopanimating.md)
+- [func stopAnimating()](./stopanimating%28%29.md)
   Stops animating the images in the receiver.
 
 

@@ -7,8 +7,8 @@ Values that tell the Universal Access zoom feature what type of event is causing
 ## Topics
 
 ### Constants
-- [var kUAZoomFocusTypeOther: Int](kuazoomfocustypeother.md)
-- [var kUAZoomFocusTypeInsertionPoint: Int](kuazoomfocustypeinsertionpoint.md)
+- [var kUAZoomFocusTypeOther: Int](../kuazoomfocustypeother.md)
+- [var kUAZoomFocusTypeInsertionPoint: Int](../kuazoomfocustypeinsertionpoint.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # linkerSigned
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 static var linkerSigned: SecCodeSignatureFlags { get }
+```
+
+```c
+kSecCodeSignatureLinkerSigned
 ```
 
 

@@ -1,7 +1,8 @@
 # iterations
 
 **Framework**: WorkoutKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of times the interval block repeats its steps.
 
@@ -20,7 +21,8 @@ var iterations: Int { get set }
 
 ## See Also
 
-- [var steps: [IntervalStep]](intervalblock/steps.md)
+### Accessing interval block properties
+- [var steps: [IntervalStep]](./steps.md)
   A series of work and recovery steps for the interval block.
 
 

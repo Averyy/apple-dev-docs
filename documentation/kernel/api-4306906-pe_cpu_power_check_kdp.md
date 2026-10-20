@@ -1,14 +1,15 @@
 # PE_cpu_power_check_kdp
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 14.2+
 
 ## Declaration
 
-```swift
+```c
 bool PE_cpu_power_check_kdp(int cpu_id);
 ```
 

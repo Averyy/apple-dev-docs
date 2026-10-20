@@ -1,7 +1,8 @@
 # IOSurfaceMemoryLedgerFlags
 
 **Framework**: IOSurface  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 11.0+
@@ -17,32 +18,37 @@
 struct IOSurfaceMemoryLedgerFlags
 ```
 
+```c
+enum IOSurfaceMemoryLedgerFlags : uint32_t;
+```
+
 ## Topics
 
 ### Type Properties
-- [static var noFootprint: IOSurfaceMemoryLedgerFlags](iosurfacememoryledgerflags/nofootprint.md)
+- [static var noFootprint: IOSurfaceMemoryLedgerFlags](./iosurfacememoryledgerflags/nofootprint.md)
 ### Initializers
-- [init(rawValue: UInt32)](iosurfacememoryledgerflags/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./iosurfacememoryledgerflags/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [enum IOSurfaceComponentName](iosurfacecomponentname.md)
-- [enum IOSurfaceComponentRange](iosurfacecomponentrange.md)
-- [enum IOSurfaceComponentType](iosurfacecomponenttype.md)
-- [enum IOSurfaceMemoryLedgerTags](iosurfacememoryledgertags.md)
-- [enum IOSurfaceSubsampling](iosurfacesubsampling.md)
+### Enumerations
+- [enum IOSurfaceComponentName](./iosurfacecomponentname.md)
+- [enum IOSurfaceComponentRange](./iosurfacecomponentrange.md)
+- [enum IOSurfaceComponentType](./iosurfacecomponenttype.md)
+- [enum IOSurfaceMemoryLedgerTags](./iosurfacememoryledgertags.md)
+- [enum IOSurfaceSubsampling](./iosurfacesubsampling.md)
 
 
 ---

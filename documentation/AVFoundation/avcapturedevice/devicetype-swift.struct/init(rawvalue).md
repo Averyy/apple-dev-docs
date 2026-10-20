@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a capture device type with a string value.
 

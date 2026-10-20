@@ -1,7 +1,8 @@
 # alternatingContentBackgroundColors
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The colors to use for alternating content, typically found in table views and collection views.
 
@@ -14,11 +15,16 @@ The colors to use for alternating content, typically found in table views and co
 class var alternatingContentBackgroundColors: [NSColor] { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSArray<NSColor *> * alternatingContentBackgroundColors;
+```
+
 ## See Also
 
-- [class var gridColor: NSColor](nscolor/gridcolor.md)
+### Table colors
+- [class var gridColor: NSColor](./gridcolor.md)
   The color to use for the optional gridlines, such as those in a table view.
-- [class var headerTextColor: NSColor](nscolor/headertextcolor.md)
+- [class var headerTextColor: NSColor](./headertextcolor.md)
   The color to use for text in header cells in table views and outline views.
 
 

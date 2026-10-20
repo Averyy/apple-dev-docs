@@ -1,7 +1,8 @@
 # upstream
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The publisher from which this publisher receives elements.
 
@@ -22,9 +23,10 @@ let upstream: Upstream
 
 ## See Also
 
-- [let initial: Output](publishers/reduce/initial.md)
+### Inspecting publisher properties
+- [let initial: Output](./initial.md)
   The initial value provided on the first invocation of the closure.
-- [let nextPartialResult: (Output, Upstream.Output) -> Output](publishers/reduce/nextpartialresult.md)
+- [let nextPartialResult: (Output, Upstream.Output) -> Output](./nextpartialresult.md)
   A closure that takes the previously-accumulated value and the next element from the upstream publisher to produce a new value.
 
 

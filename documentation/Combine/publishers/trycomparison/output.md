@@ -1,7 +1,8 @@
 # Publishers.TryComparison.Output
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of values published by this publisher.
 
@@ -26,7 +27,8 @@ This publisher uses its upsteam publisher’s output type.
 
 ## See Also
 
-- [Publishers.TryComparison.Failure](publishers/trycomparison/failure.md)
+### Declaring supporting types
+- [Publishers.TryComparison.Failure](./failure.md)
   The kind of errors this publisher might publish.
 
 

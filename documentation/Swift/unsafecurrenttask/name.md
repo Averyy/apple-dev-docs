@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Return the task’s name, if it was set during its creation.
 

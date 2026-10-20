@@ -1,7 +1,8 @@
 # vendorID
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Vendor Identifier associated with the device.
 
@@ -19,6 +20,10 @@ The Vendor Identifier associated with the device.
 ```swift
 @NSCopying
 var vendorID: NSNumber? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSNumber * vendorID;
 ```
 
 #### Discussion

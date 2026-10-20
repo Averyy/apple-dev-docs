@@ -5,15 +5,15 @@
 ## Topics
 
 ### Constants
-- [var vmAddressNotInFileViewErr: Int](vmaddressnotinfileviewerr.md)
-- [var vmBusyBackingFileErr: Int](vmbusybackingfileerr.md)
-- [var vmFileViewAccessErr: Int](vmfileviewaccesserr.md)
-- [var vmInvalidBackingFileIDErr: Int](vminvalidbackingfileiderr.md)
-- [var vmInvalidFileViewIDErr: Int](vminvalidfileviewiderr.md)
-- [var vmInvalidOwningProcessErr: Int](vminvalidowningprocesserr.md)
-- [var vmMappingPrivilegesErr: Int](vmmappingprivilegeserr.md)
-- [var vmNoMoreBackingFilesErr: Int](vmnomorebackingfileserr.md)
-- [var vmNoMoreFileViewsErr: Int](vmnomorefileviewserr.md)
+- [var vmAddressNotInFileViewErr: Int](../../vmaddressnotinfileviewerr.md)
+- [var vmBusyBackingFileErr: Int](../../vmbusybackingfileerr.md)
+- [var vmFileViewAccessErr: Int](../../vmfileviewaccesserr.md)
+- [var vmInvalidBackingFileIDErr: Int](../../vminvalidbackingfileiderr.md)
+- [var vmInvalidFileViewIDErr: Int](../../vminvalidfileviewiderr.md)
+- [var vmInvalidOwningProcessErr: Int](../../vminvalidowningprocesserr.md)
+- [var vmMappingPrivilegesErr: Int](../../vmmappingprivilegeserr.md)
+- [var vmNoMoreBackingFilesErr: Int](../../vmnomorebackingfileserr.md)
+- [var vmNoMoreFileViewsErr: Int](../../vmnomorefileviewserr.md)
 
 
 ---

@@ -1,6 +1,7 @@
 # Removing the title bar in your Mac app built with Mac Catalyst
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Article
 
 Display content that fills the entire height of a window by removing the title bar.
 
@@ -12,11 +13,11 @@ Some Mac apps such as Messages and Contacts have no title bar in their main wind
 
 The following image illustrates these styles in two windows. The first window displays a title bar, while the second has none.
 
-![Screenshot of two windows, one stacked above the other, with a dark background in the content area of each window.](/images/com.apple.uikit/media-3507886@2x.png)
+![Screenshot of two windows, one stacked above the other, with a dark background in the content area of each window.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-3507886@2x.png)
 
-##### Remove the Title Bar
+##### Remove the title bar
 
-If you choose to design your window without a title bar, you must remove it from the window. To remove the title bar, set the title bar’s [`titleVisibility`](uititlebar/titlevisibility.md) property to [`UITitlebarTitleVisibility.hidden`](uititlebartitlevisibility/hidden.md) and the [`toolbar`](uititlebar/toolbar.md) property to `nil`. The following code shows how to remove the title bar and its separator from the window during the setup of a new scene.
+If you choose to design your window without a title bar, you must remove it from the window. To remove the title bar, set the title bar’s [`titleVisibility`](./uititlebar/titlevisibility.md) property to [`UITitlebarTitleVisibility.hidden`](./uititlebartitlevisibility/hidden.md) and the [`toolbar`](./uititlebar/toolbar.md) property to `nil`. The following code shows how to remove the title bar and its separator from the window during the setup of a new scene.
 
 ```swift
 func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -35,15 +36,16 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
 
 ## See Also
 
-- [UIKit Catalog: Creating and customizing views and controls](uikit-catalog-creating-and-customizing-views-and-controls.md)
+### User interface
+- [UIKit Catalog: Creating and customizing views and controls](./uikit-catalog-creating-and-customizing-views-and-controls.md)
   Customize your app’s user interface with views and controls.
-- [Building and improving your app with Mac Catalyst](building-and-improving-your-app-with-mac-catalyst.md)
+- [Building and improving your app with Mac Catalyst](./building-and-improving-your-app-with-mac-catalyst.md)
   Improve your iPadOS app with Mac Catalyst by supporting native controls, multiple windows, sharing, printing, menus and keyboard shortcuts.
-- [Displaying a checkbox in your Mac app built with Mac Catalyst](displaying-a-checkbox-in-your-mac-app-built-with-mac-catalyst.md)
+- [Displaying a checkbox in your Mac app built with Mac Catalyst](./displaying-a-checkbox-in-your-mac-app-built-with-mac-catalyst.md)
   Present a switch control as a Mac-style checkbox when your app runs in the Mac user interface idiom.
-- [Toolbar](toolbar.md)
+- [Toolbar](./toolbar.md)
   Provide a space for controls under a window’s title bar and above your custom content.
-- [Touch Bar](../appkit/touch-bar.md)
+- [Touch Bar](../AppKit/touch-bar.md)
   Display interactive content and controls in the Touch Bar.
 
 

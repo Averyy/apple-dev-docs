@@ -1,7 +1,8 @@
 # intersects(_:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether a ray intersects a rectangle.
 
@@ -11,7 +12,7 @@ Returns a Boolean value that indicates whether a ray intersects a rectangle.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -30,13 +31,14 @@ A Boolean value that indicates whether the ray intersects the rectangle.
 
 ## See Also
 
-- [var isFinite: Bool](ray3d/isfinite.md)
+### Checking characteristics
+- [var isFinite: Bool](./isfinite.md)
   A Boolean value that indicates whether all of the values of the ray are finite.
-- [var isNaN: Bool](ray3d/isnan.md)
+- [var isNaN: Bool](./isnan.md)
   A Boolean value that indicates whether the ray contains any NaN values.
-- [var isZero: Bool](ray3d/iszero.md)
+- [var isZero: Bool](./iszero.md)
   A Boolean value that indicates whether all of the values of the ray are zero.
-- [func intersects(sphereOrigin: Point3D, sphereRadius: Double) -> Bool](ray3d/intersects(sphereorigin:sphereradius:).md)
+- [func intersects(sphereOrigin: Point3D, sphereRadius: Double) -> Bool](./intersects%28sphereorigin,sphereradius%29.md)
   Returns a Boolean value that indicates whether the ray intersects a specified sphere.
 
 

@@ -1,7 +1,8 @@
 # getFirstObject
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 21.0+
@@ -9,7 +10,15 @@
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+OSObject * getFirstObject(void);
+```
+
+*macOS*
+
+```cpp
 virtual OSObject * getFirstObject(void);
 ```
 

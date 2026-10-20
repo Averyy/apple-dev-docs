@@ -1,7 +1,8 @@
 # HKVisionPrescriptionTypeIdentifier
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A type identifier for vision prescription samples.
 
@@ -17,6 +18,10 @@ A type identifier for vision prescription samples.
 
 ```swift
 let HKVisionPrescriptionTypeIdentifier: String
+```
+
+```c
+extern NSString * const HKVisionPrescriptionTypeIdentifier;
 ```
 
 

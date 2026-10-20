@@ -1,6 +1,7 @@
 # aspectFill
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Stretches an image to fill the containing bounding box.
 
@@ -8,25 +9,26 @@ Stretches an image to fill the containing bounding box.
 
 Use the `aspectFill` attribute to display an image that fills the bounding box while keeping the aspect of image intact.
 
-##### Values for Aspectfill
+##### Values for aspectFill
 
 - **boolean**: The image fills the entire screen when set to `true`.
 
-##### Elements That Use Aspectfill
+##### Elements that use aspectFill
 
-- [`img`](img.md) inside of a `oneupTemplate` element only
+- [img](./img.md) inside of a `oneupTemplate` element only
 
 ## See Also
 
-- [contentsMode](contentsmode.md)
+### Image Display
+- [contentsMode](./contentsmode.md)
   Specifies how an image is expanded to fill its containing element.
-- [opaque](opaque.md)
+- [opaque](./opaque.md)
   Indicates whether an image has a transparent background.
-- [mode](mode.md)
+- [mode](./mode.md)
   Specifies how an image is displayed.
-- [type](type.md)
+- [type](./type.md)
   Specifies how a badge is drawn.
-- [value](value.md)
+- [value](./value.md)
   Specifies the value used for a fillable element.
 
 

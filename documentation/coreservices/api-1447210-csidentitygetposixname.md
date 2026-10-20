@@ -1,7 +1,8 @@
 # CSIdentityGetPosixName(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -11,6 +12,10 @@
 
 ```swift
 func CSIdentityGetPosixName(_ identity: CSIdentity!) -> Unmanaged<CFString>!
+```
+
+```c
+CFStringRef CSIdentityGetPosixName(CSIdentityRef identity);
 ```
 
 

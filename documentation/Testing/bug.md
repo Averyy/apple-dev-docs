@@ -1,18 +1,19 @@
 # Bug
 
 **Framework**: Swift Testing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents a bug report tracked by a test.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 
@@ -24,57 +25,58 @@ struct Bug
 
 ## Mentions
 
-- [Interpreting bug identifiers](bugidentifiers.md)
-- [Adding comments to tests](addingcomments.md)
+- [Interpreting bug identifiers](./bugidentifiers.md)
+- [Adding comments to tests](./addingcomments.md)
 
 #### Overview
 
 To add this trait to a test, use one of the following functions:
 
-- [`bug(_:_:)`](trait/bug(_:_:).md)
-- [`bug(_:id:_:)`](trait/bug(_:id:_:)-10yf5.md)
-- [`bug(_:id:_:)`](trait/bug(_:id:_:)-3vtpl.md)
+- [`bug(_:_:)`](./trait/bug%28_,_%29.md)
+- [`bug(_:id:_:)`](./trait/bug%28_,id,_%29-10yf5.md)
+- [`bug(_:id:_:)`](./trait/bug%28_,id,_%29-3vtpl.md)
 
 ## Topics
 
 ### Instance Properties
-- [var id: String?](bug/id.md)
+- [var id: String?](./bug/id.md)
   A unique identifier in this bug’s associated bug-tracking system, if available.
-- [var title: Comment?](bug/title.md)
+- [var title: Comment?](./bug/title.md)
   The human-readable title of the bug, if specified by the test author.
-- [var url: String?](bug/url.md)
+- [var url: String?](./bug/url.md)
   A URL that links to more information about the bug, if available.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SuiteTrait](suitetrait.md)
-- [TestTrait](testtrait.md)
-- [Trait](trait.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SuiteTrait](./suitetrait.md)
+- [TestTrait](./testtrait.md)
+- [Trait](./trait.md)
 
 ## See Also
 
-- [struct Comment](comment.md)
+### Supporting types
+- [struct Comment](./comment.md)
   A type that represents a comment related to a test.
-- [struct ConditionTrait](conditiontrait.md)
+- [struct ConditionTrait](./conditiontrait.md)
   A type that defines a condition which must be satisfied for the testing library to enable a test.
-- [struct IssueHandlingTrait](issuehandlingtrait.md)
+- [struct IssueHandlingTrait](./issuehandlingtrait.md)
   A type that allows transforming or filtering the issues recorded by a test.
-- [struct ParallelizationTrait](parallelizationtrait.md)
+- [struct ParallelizationTrait](./parallelizationtrait.md)
   A type that defines whether the testing library runs this test serially or in parallel.
-- [struct Tag](tag.md)
+- [struct Tag](./tag.md)
   A type representing a tag that can be applied to a test.
-- [struct List](tag/list.md)
+- [struct List](./tag/list.md)
   A type representing one or more tags applied to a test.
-- [struct TimeLimitTrait](timelimittrait.md)
+- [struct TimeLimitTrait](./timelimittrait.md)
   A type that defines a time limit to apply to a test.
 
 

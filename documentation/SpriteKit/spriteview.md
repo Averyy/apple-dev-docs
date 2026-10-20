@@ -1,7 +1,8 @@
 # SpriteView
 
 **Framework**: SpriteKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A SwiftUI view that renders a SpriteKit scene.
 
@@ -11,7 +12,7 @@ A SwiftUI view that renders a SpriteKit scene.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -24,18 +25,18 @@ A SwiftUI view that renders a SpriteKit scene.
 ## Topics
 
 ### Creating a Sprite View
-- [init(scene: SKScene, transition: SKTransition?, isPaused: Bool, preferredFramesPerSecond: Int)](spriteview/init(scene:transition:ispaused:preferredframespersecond:).md)
-- [init(scene: SKScene, transition: SKTransition?, isPaused: Bool, preferredFramesPerSecond: Int, options: SpriteView.Options, shouldRender: (TimeInterval) -> Bool)](spriteview/init(scene:transition:ispaused:preferredframespersecond:options:shouldrender:).md)
-- [init(scene: SKScene, transition: SKTransition?, isPaused: Bool, preferredFramesPerSecond: Int, options: SpriteView.Options, debugOptions: SpriteView.DebugOptions, shouldRender: (TimeInterval) -> Bool)](spriteview/init(scene:transition:ispaused:preferredframespersecond:options:debugoptions:shouldrender:).md)
-- [SpriteView.Options](spriteview/options.md)
-- [SpriteView.DebugOptions](spriteview/debugoptions.md)
+- [init(scene: SKScene, transition: SKTransition?, isPaused: Bool, preferredFramesPerSecond: Int)](./spriteview/init%28scene,transition,ispaused,preferredframespersecond%29.md)
+- [init(scene: SKScene, transition: SKTransition?, isPaused: Bool, preferredFramesPerSecond: Int, options: SpriteView.Options, shouldRender: (TimeInterval) -> Bool)](./spriteview/init%28scene,transition,ispaused,preferredframespersecond,options,shouldrender%29.md)
+- [init(scene: SKScene, transition: SKTransition?, isPaused: Bool, preferredFramesPerSecond: Int, options: SpriteView.Options, debugOptions: SpriteView.DebugOptions, shouldRender: (TimeInterval) -> Bool)](./spriteview/init%28scene,transition,ispaused,preferredframespersecond,options,debugoptions,shouldrender%29.md)
+- [SpriteView.Options](./spriteview/options.md)
+- [SpriteView.DebugOptions](./spriteview/debugoptions.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 
 ---

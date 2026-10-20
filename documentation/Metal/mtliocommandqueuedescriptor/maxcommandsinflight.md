@@ -1,7 +1,8 @@
 # maxCommandsInFlight
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the largest number of individual commands that an input/output command queue can run at a time.
 
@@ -19,17 +20,22 @@ Sets the largest number of individual commands that an input/output command queu
 var maxCommandsInFlight: Int { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSUInteger maxCommandsInFlight;
+```
+
 #### Discussion
 
 Set to `0` to instruct Metal to select an appropriate value for you — based on the system’s available memory.
 
 ## See Also
 
-- [var priority: MTLIOPriority](mtliocommandqueuedescriptor/priority.md)
+### Configuring the input/output command queue
+- [var priority: MTLIOPriority](./priority.md)
   Configures the priority for a new input/output command queue.
-- [var type: MTLIOCommandQueueType](mtliocommandqueuedescriptor/type.md)
+- [var type: MTLIOCommandQueueType](./type.md)
   Configures the queue type for a new input/output command queue.
-- [var maxCommandBufferCount: Int](mtliocommandqueuedescriptor/maxcommandbuffercount.md)
+- [var maxCommandBufferCount: Int](./maxcommandbuffercount.md)
   Sets the largest number of outstanding input/output command buffers a queue can have at any point in time.
 
 

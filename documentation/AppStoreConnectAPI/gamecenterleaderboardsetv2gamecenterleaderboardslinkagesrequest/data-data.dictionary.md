@@ -1,14 +1,15 @@
 # GameCenterLeaderboardSetV2GameCenterLeaderboardsLinkagesRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardSetV2GameCenterLeaderboardsLinkagesRequest.Data
 ```
 
@@ -20,7 +21,7 @@ object GameCenterLeaderboardSetV2GameCenterLeaderboardsLinkagesRequest.Data
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterLeaderboards`
 
 
 ---

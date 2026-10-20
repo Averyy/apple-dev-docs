@@ -1,7 +1,8 @@
 # frameCount
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total Metal drawable count
 
@@ -19,9 +20,10 @@ let frameCount: Int
 
 ## See Also
 
-- [let framesPerSecond: Measurement<UnitFrequency>](metalframeratemetric/framespersecond.md)
+### Frame rate
+- [let framesPerSecond: Measurement<UnitFrequency>](./framespersecond.md)
   The frame rate associated with this `CAMetalLayer`
-- [let activeDrawingDuration: Measurement<UnitDuration>](metalframeratemetric/activedrawingduration.md)
+- [let activeDrawingDuration: Measurement<UnitDuration>](./activedrawingduration.md)
   The duration of time spent actively producing new frames
 
 

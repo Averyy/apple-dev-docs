@@ -1,7 +1,8 @@
 # parts
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The individual parts of the MMS message.
 
@@ -20,11 +21,12 @@ When sending an MMS, add the individual parts to this array. When receiving an M
 
 ## See Also
 
-- [struct MMSPartContent](mmspartcontent.md)
+### Accessing content properties
+- [struct MMSPartContent](../mmspartcontent.md)
   A structure that defines custom headers within MMS content.
-- [var subject: String?](mmscontent/subject.md)
+- [var subject: String?](./subject.md)
   The subject of the MMS message.
-- [var headers: [String : String]](mmscontent/headers.md)
+- [var headers: [String : String]](./headers.md)
   Additional headers in a received MMS message, as a key-value dictionary of strings.
 
 

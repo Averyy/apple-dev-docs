@@ -1,7 +1,8 @@
 # OSLogEnumerator
 
 **Framework**: OSLog  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An enumerator that can access and list log entries.
 
@@ -20,31 +21,36 @@ An enumerator that can access and list log entries.
 class OSLogEnumerator
 ```
 
+```objc
+@interface OSLogEnumerator : NSEnumerator
+```
+
 ## Topics
 
 ### Enumerator Options
-- [OSLogEnumerator.Options](oslogenumerator/options.md)
+- [OSLogEnumerator.Options](./oslogenumerator/options.md)
   Option to control the direction of the iteration.
 
 ## Relationships
 
 ### Inherits From
-- [NSEnumerator](../foundation/nsenumerator.md)
+- [NSEnumerator](../Foundation/nsenumerator.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSFastEnumeration](../foundation/nsfastenumeration.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSFastEnumeration](../Foundation/nsfastenumeration.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [class OSLogStore](oslogstore.md)
+### Read Log Entries
+- [class OSLogStore](./oslogstore.md)
   A set of entries from the unified logging system.
 
 

@@ -1,7 +1,8 @@
 # MTLVertexFormat.int3
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A three-component vector with 32-bit, signed integer values.
 
@@ -10,7 +11,7 @@ A three-component vector with 32-bit, signed integer values.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,21 +20,26 @@ A three-component vector with 32-bit, signed integer values.
 case int3
 ```
 
+```c
+MTLVertexFormatInt3
+```
+
 ## See Also
 
-- [MTLVertexFormat.int](mtlvertexformat/int.md)
+### 32-bit integer formats
+- [MTLVertexFormat.int](./int.md)
   A 32-bit, signed integer value.
-- [MTLVertexFormat.int2](mtlvertexformat/int2.md)
+- [MTLVertexFormat.int2](./int2.md)
   A two-component vector with 32-bit, signed integer values.
-- [MTLVertexFormat.int4](mtlvertexformat/int4.md)
+- [MTLVertexFormat.int4](./int4.md)
   A four-component vector with 32-bit, signed integer values.
-- [MTLVertexFormat.uint](mtlvertexformat/uint.md)
+- [MTLVertexFormat.uint](./uint.md)
   A 32-bit, unsigned integer value.
-- [MTLVertexFormat.uint2](mtlvertexformat/uint2.md)
+- [MTLVertexFormat.uint2](./uint2.md)
   A two-component vector with 32-bit, unsigned integer values.
-- [MTLVertexFormat.uint3](mtlvertexformat/uint3.md)
+- [MTLVertexFormat.uint3](./uint3.md)
   A three-component vector with 32-bit, unsigned integer values.
-- [MTLVertexFormat.uint4](mtlvertexformat/uint4.md)
+- [MTLVertexFormat.uint4](./uint4.md)
   A four-component vector with 32-bit, unsigned integer values.
 
 

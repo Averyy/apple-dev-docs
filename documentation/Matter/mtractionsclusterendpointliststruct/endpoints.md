@@ -1,7 +1,8 @@
 # endpoints
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 var endpoints: [Any] { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSArray * endpoints;
 ```
 
 

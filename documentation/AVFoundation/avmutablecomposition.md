@@ -1,7 +1,8 @@
 # AVMutableComposition
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that you use to create a new composition from existing assets.
 
@@ -18,6 +19,10 @@ An object that you use to create a new composition from existing assets.
 
 ```swift
 class AVMutableComposition
+```
+
+```objc
+@interface AVMutableComposition : AVComposition
 ```
 
 #### Overview
@@ -37,72 +42,73 @@ let playerItem = AVPlayerItem(asset: composition)
 ## Topics
 
 ### Creating a composition
-- [convenience init(urlAssetInitializationOptions: [String : Any]?)](avmutablecomposition/init(urlassetinitializationoptions:)-rh4y.md)
+- [convenience init(urlAssetInitializationOptions: [String : Any]?)](./avmutablecomposition/init%28urlassetinitializationoptions%29-rh4y.md)
   Creates a mutable composition that uses the specified initialization options.
 ### Loading tracks
-- [static var tracks: AVAsyncProperty<Root, [AVMutableCompositionTrack]>](avpartialasyncproperty/tracks-92p4a.md)
+- [static var tracks: AVAsyncProperty<Root, [AVMutableCompositionTrack]>](./avpartialasyncproperty/tracks-92p4a.md)
   The tracks that a composition contains.
-- [func loadTrack(withTrackID: CMPersistentTrackID, completionHandler: (AVMutableCompositionTrack?, (any Error)?) -> Void)](avmutablecomposition/loadtrack(withtrackid:completionhandler:).md)
+- [func loadTrack(withTrackID: CMPersistentTrackID, completionHandler: (AVMutableCompositionTrack?, (any Error)?) -> Void)](./avmutablecomposition/loadtrack%28withtrackid,completionhandler%29.md)
   Loads a track that contains the specified identifier.
-- [func loadTracks(withMediaType: AVMediaType, completionHandler: ([AVMutableCompositionTrack]?, (any Error)?) -> Void)](avmutablecomposition/loadtracks(withmediatype:completionhandler:).md)
+- [func loadTracks(withMediaType: AVMediaType, completionHandler: ([AVMutableCompositionTrack]?, (any Error)?) -> Void)](./avmutablecomposition/loadtracks%28withmediatype,completionhandler%29.md)
   Loads tracks that contain media of a specified type.
-- [func loadTracks(withMediaCharacteristic: AVMediaCharacteristic, completionHandler: ([AVMutableCompositionTrack]?, (any Error)?) -> Void)](avmutablecomposition/loadtracks(withmediacharacteristic:completionhandler:).md)
+- [func loadTracks(withMediaCharacteristic: AVMediaCharacteristic, completionHandler: ([AVMutableCompositionTrack]?, (any Error)?) -> Void)](./avmutablecomposition/loadtracks%28withmediacharacteristic,completionhandler%29.md)
   Loads tracks that contain media of a specified characteristic.
 ### Accessing tracks
-- [var tracks: [AVMutableCompositionTrack]](avmutablecomposition/tracks.md)
+- [var tracks: [AVMutableCompositionTrack]](./avmutablecomposition/tracks.md)
   The tracks that a composition contains.
-- [func track(withTrackID: CMPersistentTrackID) -> AVMutableCompositionTrack?](avmutablecomposition/track(withtrackid:).md)
+- [func track(withTrackID: CMPersistentTrackID) -> AVMutableCompositionTrack?](./avmutablecomposition/track%28withtrackid%29.md)
   Returns a track that contains the specified identifier.
-- [func tracks(withMediaType: AVMediaType) -> [AVMutableCompositionTrack]](avmutablecomposition/tracks(withmediatype:).md)
+- [func tracks(withMediaType: AVMediaType) -> [AVMutableCompositionTrack]](./avmutablecomposition/tracks%28withmediatype%29.md)
   Returns tracks that contain media of a specified type.
-- [func tracks(withMediaCharacteristic: AVMediaCharacteristic) -> [AVMutableCompositionTrack]](avmutablecomposition/tracks(withmediacharacteristic:).md)
+- [func tracks(withMediaCharacteristic: AVMediaCharacteristic) -> [AVMutableCompositionTrack]](./avmutablecomposition/tracks%28withmediacharacteristic%29.md)
   Returns tracks that contain media of a specified characteristic.
 ### Managing composition tracks
-- [func mutableTrack(compatibleWith: AVAssetTrack) -> AVMutableCompositionTrack?](avmutablecomposition/mutabletrack(compatiblewith:).md)
+- [func mutableTrack(compatibleWith: AVAssetTrack) -> AVMutableCompositionTrack?](./avmutablecomposition/mutabletrack%28compatiblewith%29.md)
   Returns a composition track into which you can insert any time range of the specified asset track.
-- [func addMutableTrack(withMediaType: AVMediaType, preferredTrackID: CMPersistentTrackID) -> AVMutableCompositionTrack?](avmutablecomposition/addmutabletrack(withmediatype:preferredtrackid:).md)
+- [func addMutableTrack(withMediaType: AVMediaType, preferredTrackID: CMPersistentTrackID) -> AVMutableCompositionTrack?](./avmutablecomposition/addmutabletrack%28withmediatype,preferredtrackid%29.md)
   Adds an empty track to a composition.
-- [func removeTrack(AVCompositionTrack)](avmutablecomposition/removetrack(_:).md)
+- [func removeTrack(AVCompositionTrack)](./avmutablecomposition/removetrack%28_%29.md)
   Removes a specified track from the composition.
 ### Managing Cinematic tracks
-- [func addTracks(for: CNAssetInfo, preferredStartingTrackID: CMPersistentTrackID) -> CNCompositionInfo](avmutablecomposition/addtracks(for:preferredstartingtrackid:).md)
+- [func addTracks(for: CNAssetInfo, preferredStartingTrackID: CMPersistentTrackID) -> CNCompositionInfo](./avmutablecomposition/addtracks%28for,preferredstartingtrackid%29.md)
 ### Managing time ranges
-- [func removeTimeRange(CMTimeRange)](avmutablecomposition/removetimerange(_:).md)
+- [func removeTimeRange(CMTimeRange)](./avmutablecomposition/removetimerange%28_%29.md)
   Removes a specified time range from all tracks of the composition.
-- [func scaleTimeRange(CMTimeRange, toDuration: CMTime)](avmutablecomposition/scaletimerange(_:toduration:).md)
+- [func scaleTimeRange(CMTimeRange, toDuration: CMTime)](./avmutablecomposition/scaletimerange%28_,toduration%29.md)
   Changes the duration of all tracks in a given time range.
-- [func insertEmptyTimeRange(CMTimeRange)](avmutablecomposition/insertemptytimerange(_:).md)
+- [func insertEmptyTimeRange(CMTimeRange)](./avmutablecomposition/insertemptytimerange%28_%29.md)
   Adds or extends an empty time range within all tracks of the composition.
-- [func insertTimeRange(CMTimeRange, of: AVAsset, at: CMTime, completionHandler: ((any Error)?) -> Void)](avmutablecomposition/inserttimerange(_:of:at:completionhandler:).md)
+- [func insertTimeRange(CMTimeRange, of: AVAsset, at: CMTime, completionHandler: ((any Error)?) -> Void)](./avmutablecomposition/inserttimerange%28_,of,at,completionhandler%29.md)
   Inserts all tracks of an asset for a time range into a composition.
-- [func insertTimeRange(CMTimeRange, of: AVAsset, at: CMTime) throws](avmutablecomposition/inserttimerange(_:of:at:).md)
+- [func insertTimeRange(CMTimeRange, of: AVAsset, at: CMTime) throws](./avmutablecomposition/inserttimerange%28_,of,at%29.md)
   Inserts all the tracks within a given time range of a specified asset into the composition.
 ### Configuring video size
-- [var naturalSize: CGSize](avmutablecomposition/naturalsize.md)
+- [var naturalSize: CGSize](./avmutablecomposition/naturalsize.md)
   The encoded or authored size of the visual portion of the asset.
 ### Instance methods
-- [func insertTimeRange(CMTimeRange, of: AVAsset, at: CMTime, isolation: isolated (any Actor)?) async throws](avmutablecomposition/inserttimerange(_:of:at:isolation:).md)
+- [func insertTimeRange(CMTimeRange, of: AVAsset, at: CMTime, isolation: isolated (any Actor)?) async throws](./avmutablecomposition/inserttimerange%28_,of,at,isolation%29.md)
 ### Initializers
-- [convenience init(URLAssetInitializationOptions: [String : Any]?)](avmutablecomposition/init(urlassetinitializationoptions:)-6codz.md)
+- [convenience init(URLAssetInitializationOptions: [String : Any]?)](./avmutablecomposition/init%28urlassetinitializationoptions%29-6codz.md)
 
 ## Relationships
 
 ### Inherits From
-- [AVComposition](avcomposition.md)
+- [AVComposition](./avcomposition.md)
 ### Conforms To
-- [AVAsynchronousKeyValueLoading](avasynchronouskeyvalueloading.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [AVAsynchronousKeyValueLoading](./avasynchronouskeyvalueloading.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVMutableCompositionTrack](avmutablecompositiontrack.md)
+### Mutable compositions
+- [class AVMutableCompositionTrack](./avmutablecompositiontrack.md)
   A mutable track in a composition that you use to insert, remove, and scale track segments without affecting their low-level representation.
 
 

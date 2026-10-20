@@ -1,7 +1,8 @@
 # coreSpotlightDisplayNameExpression
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The expression that computes the CoreSpotlight display name for instances of the entity.
 
@@ -20,19 +21,24 @@ The expression that computes the CoreSpotlight display name for instances of the
 var coreSpotlightDisplayNameExpression: NSExpression { get set }
 ```
 
+```objc
+@property (nonatomic, retain) NSExpression * coreSpotlightDisplayNameExpression;
+```
+
 ## See Also
 
-- [var name: String?](nsentitydescription/name.md)
+### Getting descriptive information
+- [var name: String?](./name.md)
   The entity name of the receiver.
-- [var managedObjectModel: NSManagedObjectModel](nsentitydescription/managedobjectmodel.md)
+- [var managedObjectModel: NSManagedObjectModel](./managedobjectmodel.md)
   The managed object model with which the receiver is associated.
-- [var managedObjectClassName: String!](nsentitydescription/managedobjectclassname.md)
+- [var managedObjectClassName: String!](./managedobjectclassname.md)
   The name of the class that represents the receiver’s entity.
-- [var renamingIdentifier: String?](nsentitydescription/renamingidentifier.md)
+- [var renamingIdentifier: String?](./renamingidentifier.md)
   The renaming identifier for the receiver.
-- [var isAbstract: Bool](nsentitydescription/isabstract.md)
+- [var isAbstract: Bool](./isabstract.md)
   A Boolean value that indicates whether the receiver represents an abstract entity.
-- [var userInfo: [AnyHashable : Any]?](nsentitydescription/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./userinfo.md)
   The user info dictionary of the receiver.
 
 

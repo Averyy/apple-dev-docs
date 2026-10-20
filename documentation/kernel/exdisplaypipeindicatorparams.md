@@ -1,14 +1,15 @@
 # EXDisplayPipeIndicatorParams
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct EXDisplayPipeIndicatorParams {
     ...
 } EXDisplayPipeIndicatorParams;
@@ -17,9 +18,9 @@ typedef struct EXDisplayPipeIndicatorParams {
 ## Topics
 
 ### Instance Properties
-- [alpha](exdisplaypipeindicatorparams/4460340-alpha.md)
-- [x](exdisplaypipeindicatorparams/4460341-x.md)
-- [y](exdisplaypipeindicatorparams/4460342-y.md)
+- [alpha](./exdisplaypipeindicatorparams/api-4460340-alpha.md)
+- [x](./exdisplaypipeindicatorparams/api-4460341-x.md)
+- [y](./exdisplaypipeindicatorparams/api-4460342-y.md)
 
 
 ---

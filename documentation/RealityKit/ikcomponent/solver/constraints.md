@@ -1,7 +1,8 @@
 # constraints
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection of all of the constraint update stage objects of the solver instance.
 
@@ -21,7 +22,7 @@ var constraints: IKComponent.ConstraintCollection
 
 #### Discussion
 
-The order matches the order in the rig [`constraints`](ikrig/constraints.md).
+The order matches the order in the rig [`constraints`](../../ikrig/constraints.md).
 
 
 ---

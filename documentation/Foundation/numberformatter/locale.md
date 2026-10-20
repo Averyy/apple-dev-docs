@@ -1,7 +1,8 @@
 # locale
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The locale of the receiver.
 
@@ -20,13 +21,18 @@ The locale of the receiver.
 var locale: Locale! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) NSLocale * locale;
+```
+
 #### Discussion
 
 The locale determines the default values for many formatter attributes, such as ISO region and language codes, currency code, calendar, system of measurement, and decimal separator.
 
 ## See Also
 
-- [var localizesFormat: Bool](numberformatter/localizesformat.md)
+### Managing Localization of Numbers
+- [var localizesFormat: Bool](./localizesformat.md)
   Determines whether the dollar sign character (`$`), decimal separator character (`.`), and thousand separator character (`,`) are converted to appropriately localized characters as specified by the user’s localization preference.
 
 

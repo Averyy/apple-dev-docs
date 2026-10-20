@@ -1,7 +1,8 @@
 # Song.Prices.Price
 
 **Framework**: Apple Music Feed  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Information about a pricing offer.
 
@@ -10,13 +11,13 @@ Information about a pricing offer.
 
 ## Declaration
 
-```swift
+```
 object Song.Prices.Price
 ```
 
 #### Discussion
 
-See the [`Song.Prices`](song/prices-data.dictionary.md) data example.
+See the [`Song.Prices`](../prices-data.dictionary.md) data example.
 
 ## Properties
 

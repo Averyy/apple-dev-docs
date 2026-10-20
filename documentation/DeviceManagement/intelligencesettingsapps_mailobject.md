@@ -1,7 +1,8 @@
 # IntelligenceSettingsApps_MailObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 If present, configures Mail Intelligence features.
 
@@ -14,22 +15,27 @@ If present, configures Mail Intelligence features.
 
 ## Declaration
 
-```swift
+```
 object IntelligenceSettingsApps_MailObject
 ```
 
 ## Properties
 
 - `AllowSmartReplies` (boolean): If `false`, disables Mail Smart Replies.
+
+  **Default**: `true`
 - `AllowSummary` (boolean): If `false`, disables Mail Summary.
+
+  **Default**: `true`
 
 ## See Also
 
-- [object IntelligenceSettingsApps_CalendarObject](intelligencesettingsapps_calendarobject.md)
+### Objects
+- [object IntelligenceSettingsApps_CalendarObject](./intelligencesettingsapps_calendarobject.md)
   If present, configures Calendar and Reminders Intelligence features.
-- [object IntelligenceSettingsApps_NotesObject](intelligencesettingsapps_notesobject.md)
+- [object IntelligenceSettingsApps_NotesObject](./intelligencesettingsapps_notesobject.md)
   If present, configures Notes Intelligence features.
-- [object IntelligenceSettingsApps_SafariObject](intelligencesettingsapps_safariobject.md)
+- [object IntelligenceSettingsApps_SafariObject](./intelligencesettingsapps_safariobject.md)
   If present, configures Safari intelligence features.
 
 

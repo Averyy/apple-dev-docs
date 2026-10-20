@@ -1,7 +1,8 @@
 # value(_:_:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 18.0+
@@ -17,6 +18,8 @@
 ```swift
 static func value(_ label: some StringProtocol, _ value: DataValue) -> PlottableProjection<DataElement, DataValue>
 ```
+
+Available when `DataValue` conforms to `Plottable`.
 
 
 ---

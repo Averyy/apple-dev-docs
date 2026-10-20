@@ -1,7 +1,8 @@
 # PHASEConeDirectivityModelSubbandParameters
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A data set that projects sound of a certain frequency outward in the shape of a cone.
 
@@ -19,53 +20,58 @@ A data set that projects sound of a certain frequency outward in the shape of a 
 class PHASEConeDirectivityModelSubbandParameters
 ```
 
+```objc
+@interface PHASEConeDirectivityModelSubbandParameters : NSObject
+```
+
 #### Overview
 
-This class defines one subband in the [`PHASEConeDirectivityModelParameters`](phaseconedirectivitymodelparameters.md) class’s `subbands`. The inner and outer angles you define with [`setAngles(innerAngle:outerAngle:)`](phaseconedirectivitymodelsubbandparameters/setangles(innerangle:outerangle:).md) describe a cone that directs sound of a given [`frequency`](phasecardioiddirectivitymodelsubbandparameters/frequency.md) toward the listener. The cone’s point rests at the 3D position of the sound source. The framework adjusts the volume of the sound according to location of the listener in the 3D scene:
+This class defines one subband in the [`PHASEConeDirectivityModelParameters`](./phaseconedirectivitymodelparameters.md) class’s `subbands`. The inner and outer angles you define with [`setAngles(innerAngle:outerAngle:)`](./phaseconedirectivitymodelsubbandparameters/setangles%28innerangle,outerangle%29.md) describe a cone that directs sound of a given [`frequency`](./phasecardioiddirectivitymodelsubbandparameters/frequency.md) toward the listener. The cone’s point rests at the 3D position of the sound source. The framework adjusts the volume of the sound according to location of the listener in the 3D scene:
 
-- If the listener positions in an area outside of the subband’s [`outerAngle`](phaseconedirectivitymodelsubbandparameters/outerangle.md), the sound emanates from the source at the volume defined by [`outerGain`](phaseconedirectivitymodelsubbandparameters/outergain.md).
-- If the listener positions inside the area defined by [`innerAngle`](phaseconedirectivitymodelsubbandparameters/innerangle.md), the sound emanates from the source at maximum volume.
-- If the listener positions in between the outer and inner angles, the framework blends the volume to a value between [`outerGain`](phaseconedirectivitymodelsubbandparameters/outergain.md) and the maximum.
+- If the listener positions in an area outside of the subband’s [`outerAngle`](./phaseconedirectivitymodelsubbandparameters/outerangle.md), the sound emanates from the source at the volume defined by [`outerGain`](./phaseconedirectivitymodelsubbandparameters/outergain.md).
+- If the listener positions inside the area defined by [`innerAngle`](./phaseconedirectivitymodelsubbandparameters/innerangle.md), the sound emanates from the source at maximum volume.
+- If the listener positions in between the outer and inner angles, the framework blends the volume to a value between [`outerGain`](./phaseconedirectivitymodelsubbandparameters/outergain.md) and the maximum.
 
 ## Topics
 
 ### Creating Cone Directivity Subband Parameters
-- [init()](phaseconedirectivitymodelsubbandparameters/init.md)
+- [init()](./phaseconedirectivitymodelsubbandparameters/init%28%29.md)
   Creates a data set that projects sound of a certain frequency outward in the shape of a cone.
 ### Sizing the Subband
-- [var frequency: Double](phaseconedirectivitymodelsubbandparameters/frequency.md)
+- [var frequency: Double](./phaseconedirectivitymodelsubbandparameters/frequency.md)
   A frequency in the audio spectrum where the subband resonates most.
 ### Shaping Directivity
-- [var innerAngle: Double](phaseconedirectivitymodelsubbandparameters/innerangle.md)
+- [var innerAngle: Double](./phaseconedirectivitymodelsubbandparameters/innerangle.md)
   An angle, in degrees, that determines the size of the audio emitting area inside the cone.
-- [var outerAngle: Double](phaseconedirectivitymodelsubbandparameters/outerangle.md)
+- [var outerAngle: Double](./phaseconedirectivitymodelsubbandparameters/outerangle.md)
   An angle, in degrees, that determines the size of the audio emitting area outside the cone.
-- [var outerGain: Double](phaseconedirectivitymodelsubbandparameters/outergain.md)
+- [var outerGain: Double](./phaseconedirectivitymodelsubbandparameters/outergain.md)
   The loudness of the audio the outside area of the cone emits.
-- [func setAngles(innerAngle: Double, outerAngle: Double)](phaseconedirectivitymodelsubbandparameters/setangles(innerangle:outerangle:).md)
+- [func setAngles(innerAngle: Double, outerAngle: Double)](./phaseconedirectivitymodelsubbandparameters/setangles%28innerangle,outerangle%29.md)
   Configures a focus area for cone-based sound directivity.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASECardioidDirectivityModelParameters](phasecardioiddirectivitymodelparameters.md)
+### Sound Directivity
+- [class PHASECardioidDirectivityModelParameters](./phasecardioiddirectivitymodelparameters.md)
   An object that directs sound in a heart-shaped curve surrounding a sound source.
-- [class PHASECardioidDirectivityModelSubbandParameters](phasecardioiddirectivitymodelsubbandparameters.md)
+- [class PHASECardioidDirectivityModelSubbandParameters](./phasecardioiddirectivitymodelsubbandparameters.md)
   A data set that projects sound of a certain frequency outward in the shape of a heart.
-- [class PHASEConeDirectivityModelParameters](phaseconedirectivitymodelparameters.md)
+- [class PHASEConeDirectivityModelParameters](./phaseconedirectivitymodelparameters.md)
   An object that directs sound in a cone-shaped curve that extends from a sound source.
-- [class PHASEDirectivityModelParameters](phasedirectivitymodelparameters.md)
+- [class PHASEDirectivityModelParameters](./phasedirectivitymodelparameters.md)
   A base class for objects that direct sound.
 
 

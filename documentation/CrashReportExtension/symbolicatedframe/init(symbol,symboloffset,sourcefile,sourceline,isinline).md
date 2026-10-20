@@ -1,15 +1,16 @@
 # init(symbol:symbolOffset:sourceFile:sourceLine:isInline:)
 
 **Framework**: CrashReportExtension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
 - macOS 27.0+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 

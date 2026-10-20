@@ -1,7 +1,8 @@
 # VSUserAccountManager.AutoSignInTokenUpdateContext
 
 **Framework**: Video Subscriber Account  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that contains information about a person’s choice in the Automatic Sign-In prompt.
 
@@ -18,33 +19,34 @@ struct AutoSignInTokenUpdateContext
 
 ## Mentions
 
-- [Signing people in to their media accounts automatically](signing-people-in-to-media-apps-automatically.md)
+- [Signing people in to their media accounts automatically](../signing-people-in-to-media-apps-automatically.md)
 
 #### Overview
 
-The framework returns an instance of this structure when your app calls [`requestAutoSignInAuthorization()`](vsuseraccountmanager/requestautosigninauthorization().md) to prompt a person for approval to opt in to Automatic Sign-In.
+The framework returns an instance of this structure when your app calls [`requestAutoSignInAuthorization()`](./requestautosigninauthorization%28%29.md) to prompt a person for approval to opt in to Automatic Sign-In.
 
-Check the [`authorization`](vsautosignintokenupdatecontext/authorization.md) property of this structure to determine the person’s answer to the prompt. If the value is [`VSUserAccountManager.AutoSignInAuthorization.granted`](vsuseraccountmanager/autosigninauthorization/granted.md), generate a sign in token and pass the instance of this structure and the newly-generated token to the framework using the [`updateAutoSignInToken(_:updateContext:)`](vsuseraccountmanager/updateautosignintoken(_:updatecontext:).md) method.
+Check the [`authorization`](../vsautosignintokenupdatecontext/authorization.md) property of this structure to determine the person’s answer to the prompt. If the value is [`VSUserAccountManager.AutoSignInAuthorization.granted`](./autosigninauthorization/granted.md), generate a sign in token and pass the instance of this structure and the newly-generated token to the framework using the [`updateAutoSignInToken(_:updateContext:)`](./updateautosignintoken%28_,updatecontext%29.md) method.
 
 ## Topics
 
 ### Determining status
-- [var authorization: VSUserAccountManager.AutoSignInAuthorization](vsuseraccountmanager/autosignintokenupdatecontext/authorization.md)
+- [var authorization: VSUserAccountManager.AutoSignInAuthorization](./autosignintokenupdatecontext/authorization.md)
   A state that represents a person’s approval of Automatic Sign-In.
 
 ## See Also
 
-- [VSUserAccountManager.AutoSignInToken](vsuseraccountmanager/autosignintoken-swift.struct.md)
+### Signing people in automatically
+- [VSUserAccountManager.AutoSignInToken](./autosignintoken-swift.struct.md)
   A value that represents a person’s account and their consent to Automatic Sign-In.
-- [VSUserAccountManager.AutoSignInAuthorization](vsuseraccountmanager/autosigninauthorization.md)
+- [VSUserAccountManager.AutoSignInAuthorization](./autosigninauthorization.md)
   The possible states the framework sets for Automatic Sign-In.
-- [var autoSignInToken: VSUserAccountManager.AutoSignInToken](vsuseraccountmanager/autosignintoken-swift.property.md)
+- [var autoSignInToken: VSUserAccountManager.AutoSignInToken](./autosignintoken-swift.property.md)
   The current Automatic Sign-In token.
-- [func deleteAutoSignInToken() async throws](vsuseraccountmanager/deleteautosignintoken.md)
+- [func deleteAutoSignInToken() async throws](./deleteautosignintoken%28%29.md)
   Deletes the value of the current Automatic Sign-In token.
-- [func requestAutoSignInAuthorization() async throws -> VSUserAccountManager.AutoSignInTokenUpdateContext](vsuseraccountmanager/requestautosigninauthorization.md)
+- [func requestAutoSignInAuthorization() async throws -> VSUserAccountManager.AutoSignInTokenUpdateContext](./requestautosigninauthorization%28%29.md)
   Presents a modal sheet that offers a person to opt in to Automatic Sign-In.
-- [func updateAutoSignInToken(String, updateContext: VSUserAccountManager.AutoSignInTokenUpdateContext) async throws](vsuseraccountmanager/updateautosignintoken(_:updatecontext:).md)
+- [func updateAutoSignInToken(String, updateContext: VSUserAccountManager.AutoSignInTokenUpdateContext) async throws](./updateautosignintoken%28_,updatecontext%29.md)
   Sets the current Automatic Sign-In token.
 
 

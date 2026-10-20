@@ -1,7 +1,8 @@
 # id
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A stable identifier that uniquely identifies this network.
 
@@ -18,7 +19,8 @@ var id: WINetworkSharingProvider.Network.ID { get }
 
 ## See Also
 
-- [WINetworkSharingProvider.Network.ID](winetworksharingprovider/network/id-swift.struct.md)
+### Identifying a network
+- [WINetworkSharingProvider.Network.ID](./id-swift.struct.md)
   An opaque identifier for a given network.
 
 

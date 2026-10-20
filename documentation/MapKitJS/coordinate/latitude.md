@@ -1,7 +1,8 @@
 # latitude
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The latitude, in degrees.
 
@@ -10,7 +11,7 @@ The latitude, in degrees.
 
 ## Declaration
 
-```swift
+```
 latitude: number;
 ```
 
@@ -20,7 +21,8 @@ Positive values indicate latitudes north of the equator. Negative values indicat
 
 ## See Also
 
-- [longitude](coordinate/longitude.md)
+### Defining the coordinates
+- [longitude](./longitude.md)
   The longitude, in degrees.
 
 

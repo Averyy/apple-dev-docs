@@ -1,7 +1,8 @@
 # circular
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -17,9 +18,14 @@
 static let circular: CALayerCornerCurve
 ```
 
+```c
+extern CALayerCornerCurve const kCACornerCurveCircular;
+```
+
 ## See Also
 
-- [static let continuous: CALayerCornerCurve](calayercornercurve/continuous.md)
+### Type Properties
+- [static let continuous: CALayerCornerCurve](./continuous.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # ScmRepositoryResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that read a single SCM repository connected to Xcode Cloud.
 
@@ -10,7 +11,7 @@ The response body for endpoints that read a single SCM repository connected to X
 
 ## Declaration
 
-```swift
+```
 object ScmRepositoryResponse
 ```
 
@@ -18,16 +19,19 @@ object ScmRepositoryResponse
 
 - `data` (ScmRepository) *(required)*: The resource data.
 - `included` ([*]): The requested relationship data.
+
+  **Allowed Types**: `ScmGitReference`, `ScmProvider`
 - `links` (DocumentLinks) *(required)*: The navigational links that include the self-link.
 
 ## See Also
 
-- [object ScmRepository](scmrepository.md)
+### Objects
+- [object ScmRepository](./scmrepository.md)
   A source code repository connected to Xcode Cloud, used as the source for workflow builds.
-- [object ScmRepositoriesResponse](scmrepositoriesresponse.md)
+- [object ScmRepositoriesResponse](./scmrepositoriesresponse.md)
   The response body for endpoints that list SCM repositories connected to Xcode Cloud.
-- [object ScmRepositoryGitReferencesLinkagesResponse](scmrepositorygitreferenceslinkagesresponse.md)
-- [object ScmRepositoryPullRequestsLinkagesResponse](scmrepositorypullrequestslinkagesresponse.md)
+- [object ScmRepositoryGitReferencesLinkagesResponse](./scmrepositorygitreferenceslinkagesresponse.md)
+- [object ScmRepositoryPullRequestsLinkagesResponse](./scmrepositorypullrequestslinkagesresponse.md)
 
 
 ---

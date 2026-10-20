@@ -1,7 +1,8 @@
 # CLLocationButtonIcon
 
 **Framework**: CoreLocationUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify styles for the location arrow icon on the button.
 
@@ -16,31 +17,36 @@ Constants that specify styles for the location arrow icon on the button.
 enum CLLocationButtonIcon
 ```
 
+```c
+enum CLLocationButtonIcon : NSInteger;
+```
+
 ## Topics
 
 ### Customizing icon styles
-- [CLLocationButtonIcon.none](cllocationbuttonicon/none.md)
+- [CLLocationButtonIcon.none](./cllocationbuttonicon/none.md)
   A style that doesn’t display an icon.
-- [CLLocationButtonIcon.arrowFilled](cllocationbuttonicon/arrowfilled.md)
+- [CLLocationButtonIcon.arrowFilled](./cllocationbuttonicon/arrowfilled.md)
   A style that displays a filled arrow icon.
-- [CLLocationButtonIcon.arrowOutline](cllocationbuttonicon/arrowoutline.md)
+- [CLLocationButtonIcon.arrowOutline](./cllocationbuttonicon/arrowoutline.md)
   A style that displays an unfilled, outline arrow icon.
 ### Initializers
-- [init?(rawValue: Int)](cllocationbuttonicon/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cllocationbuttonicon/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum CLLocationButtonLabel](cllocationbuttonlabel.md)
+### Button customization
+- [enum CLLocationButtonLabel](./cllocationbuttonlabel.md)
   Constants that specify the text of the button label.
 
 

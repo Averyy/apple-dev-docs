@@ -1,7 +1,8 @@
 # NSVoIPUsageDescription
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A message that tells people why your app receives voice-over-IP (VoIP) calls in the background.
 
@@ -11,13 +12,14 @@ A message that tells people why your app receives voice-over-IP (VoIP) calls in 
 - tvOS 10.0+
 - watchOS 3.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSVoIPUsageDescription` (Privacy - VoIP Usage Description)
+- **Type**: string
 
 #### Discussion
 
-For more information, see [`CallKit`](https://developer.apple.com/documentation/callkit).
+For more information, see [CallKit](../../CallKit/CallKit.md).
 
 
 ---

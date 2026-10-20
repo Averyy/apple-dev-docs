@@ -1,7 +1,8 @@
 # format(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a locale-aware string representation of the value.
 
@@ -26,7 +27,7 @@ A string representation of the provided sequence.
 
 #### Discussion
 
-The [`format(_:)`](listformatstyle/format(_:).md) instance method generates a string from the provided sequence. Once you create a style, you can use it to format similar sequences multiple times. For example:
+The [`format(_:)`](./format%28_%29.md) instance method generates a string from the provided sequence. Once you create a style, you can use it to format similar sequences multiple times. For example:
 
 ```swift
 let percentStyle = ListFormatStyle<IntegerFormatStyle.Percent, [Int]>(memberStyle: .percent)

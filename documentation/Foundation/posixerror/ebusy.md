@@ -1,7 +1,8 @@
 # EBUSY
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Device / Resource busy.
 

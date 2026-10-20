@@ -1,7 +1,8 @@
 # kCGImagePropertyIPTCContact
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The contact information for getting details about the image.
 
@@ -20,19 +21,24 @@ The contact information for getting details about the image.
 let kCGImagePropertyIPTCContact: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyIPTCContact;
+```
+
 ## See Also
 
-- [let kCGImagePropertyIPTCByline: CFString](kcgimagepropertyiptcbyline.md)
+### Personnel
+- [let kCGImagePropertyIPTCByline: CFString](./kcgimagepropertyiptcbyline.md)
   The name of the person who created the image.
-- [let kCGImagePropertyIPTCBylineTitle: CFString](kcgimagepropertyiptcbylinetitle.md)
+- [let kCGImagePropertyIPTCBylineTitle: CFString](./kcgimagepropertyiptcbylinetitle.md)
   The title of the person who created the image.
-- [let kCGImagePropertyIPTCSource: CFString](kcgimagepropertyiptcsource.md)
+- [let kCGImagePropertyIPTCSource: CFString](./kcgimagepropertyiptcsource.md)
   The original owner of the image.
-- [let kCGImagePropertyIPTCWriterEditor: CFString](kcgimagepropertyiptcwritereditor.md)
+- [let kCGImagePropertyIPTCWriterEditor: CFString](./kcgimagepropertyiptcwritereditor.md)
   The name of the person who wrote or edited the description of the image.
-- [let kCGImagePropertyIPTCCreatorContactInfo: CFString](kcgimagepropertyiptccreatorcontactinfo.md)
+- [let kCGImagePropertyIPTCCreatorContactInfo: CFString](./kcgimagepropertyiptccreatorcontactinfo.md)
   The creator’s contact info.
-- [IPTC Creator Contact Info Dictionary Keys](iptc-creator-contact-info-dictionary-keys.md)
+- [IPTC Creator Contact Info Dictionary Keys](./iptc-creator-contact-info-dictionary-keys.md)
   Keys for an image that uses International Press Telecommunications Council (IPTC) metadata.
 
 

@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines if the tab is enabled. When NO, tabs will have a disabled appearance and cannot be selected by the user. Default is YES.
 
@@ -16,6 +17,10 @@ Determines if the tab is enabled. When NO, tabs will have a disabled appearance 
 
 ```swift
 var isEnabled: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign, getter=isEnabled) BOOL enabled;
 ```
 
 

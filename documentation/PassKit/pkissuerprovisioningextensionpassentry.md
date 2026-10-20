@@ -1,7 +1,8 @@
 # PKIssuerProvisioningExtensionPassEntry
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents an item available to add to as a Wallet pass.
 
@@ -9,7 +10,7 @@ An object that represents an item available to add to as a Wallet pass.
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,37 +19,42 @@ An object that represents an item available to add to as a Wallet pass.
 class PKIssuerProvisioningExtensionPassEntry
 ```
 
+```objc
+@interface PKIssuerProvisioningExtensionPassEntry : NSObject
+```
+
 ## Topics
 
 ### Information for displaying an addable card
-- [var art: CGImage](pkissuerprovisioningextensionpassentry/art.md)
+- [var art: CGImage](./pkissuerprovisioningextensionpassentry/art.md)
   An image to that the system displays to the user when they add or select the card.
-- [var title: String](pkissuerprovisioningextensionpassentry/title.md)
+- [var title: String](./pkissuerprovisioningextensionpassentry/title.md)
   A name for the pass that the system displays to the user when they add or select the card.
-- [var identifier: String](pkissuerprovisioningextensionpassentry/identifier.md)
+- [var identifier: String](./pkissuerprovisioningextensionpassentry/identifier.md)
   A developer-defined value you use to identify the card.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [PKIssuerProvisioningExtensionPaymentPassEntry](pkissuerprovisioningextensionpaymentpassentry.md)
+- [PKIssuerProvisioningExtensionPaymentPassEntry](./pkissuerprovisioningextensionpaymentpassentry.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func passEntries(completion: ([PKIssuerProvisioningExtensionPassEntry]) -> Void)](pkissuerprovisioningextensionhandler/passentries(completion:).md)
+### Returning available passes
+- [func passEntries(completion: ([PKIssuerProvisioningExtensionPassEntry]) -> Void)](./pkissuerprovisioningextensionhandler/passentries%28completion%29.md)
   Reports the list of passes available to add to an iPhone.
-- [func remotePassEntries(completion: ([PKIssuerProvisioningExtensionPassEntry]) -> Void)](pkissuerprovisioningextensionhandler/remotepassentries(completion:).md)
+- [func remotePassEntries(completion: ([PKIssuerProvisioningExtensionPassEntry]) -> Void)](./pkissuerprovisioningextensionhandler/remotepassentries%28completion%29.md)
   Reports the list of passes available to add to an Apple Watch.
-- [class PKIssuerProvisioningExtensionPaymentPassEntry](pkissuerprovisioningextensionpaymentpassentry.md)
+- [class PKIssuerProvisioningExtensionPaymentPassEntry](./pkissuerprovisioningextensionpaymentpassentry.md)
   An object that represents a payment card available to add as a payment pass.
 
 

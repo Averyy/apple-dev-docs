@@ -1,7 +1,8 @@
 # AnchorStateEvents.WillUnanchor.Reason.authorizationFailed
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Anchor type is not authorized
 

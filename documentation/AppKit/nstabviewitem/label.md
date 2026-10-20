@@ -1,12 +1,13 @@
 # label
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the label text for the receiver to `label`.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ Sets the label text for the receiver to `label`.
 var label: String { get set }
 ```
 
+```objc
+@property (copy) NSString * label;
+```
+
 ## See Also
 
-- [func drawLabel(Bool, in: NSRect)](nstabviewitem/drawlabel(_:in:).md)
+### Working with Labels
+- [func drawLabel(Bool, in: NSRect)](./drawlabel%28_,in%29.md)
   Draws the receiver’s label in `tabRect`, which is the area between the curved end caps.
-- [func sizeOfLabel(Bool) -> NSSize](nstabviewitem/sizeoflabel(_:).md)
+- [func sizeOfLabel(Bool) -> NSSize](./sizeoflabel%28_%29.md)
   Calculates the size of the receiver’s label.
 
 

@@ -1,34 +1,36 @@
 # SetEnableWithCompletion
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enables or disables the timer.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t SetEnableWithCompletion(bool enable, IODispatchSourceCancelHandler handler);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](kioreturnsuccess.md) on success, or another value if an error occurs. See [`Error Codes`](error-codes.md).
+[`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../error-codes.md).
 
 ## Parameters
 
-- `enable`: A Boolean value that indicates whether to enable or disable the timer. Specify [`true`](https://developer.apple.com/documentation/swift/true) to enable the timer or [`false`](https://developer.apple.com/documentation/swift/false) to disable it.
+- `enable`: A Boolean value that indicates whether to enable or disable the timer. Specify [`true`](../../Swift/true.md) to enable the timer or [`false`](../../Swift/false.md) to disable it.
 - `handler`: An optional block to execute after any pending handlers of a newly disabled timer finish executing.
 
 ## See Also
 
-- [Cancel](iotimerdispatchsource/cancel.md)
+### Starting and Stopping the Timer Source
+- [Cancel](./cancel.md)
   Cancels all callbacks from the event source.
 
 

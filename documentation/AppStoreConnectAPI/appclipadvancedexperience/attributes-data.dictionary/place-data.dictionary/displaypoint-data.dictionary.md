@@ -1,7 +1,8 @@
 # AppClipAdvancedExperience.Attributes.Place.DisplayPoint
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A point-based representation of a place in Apple Maps.
 
@@ -10,14 +11,14 @@ A point-based representation of a place in Apple Maps.
 
 ## Declaration
 
-```swift
+```
 object AppClipAdvancedExperience.Attributes.Place.DisplayPoint
 ```
 
 ## Topics
 
 ### Objects
-- [object AppClipAdvancedExperience.Attributes.Place.DisplayPoint.Coordinates](appclipadvancedexperience/attributes-data.dictionary/place-data.dictionary/displaypoint-data.dictionary/coordinates-data.dictionary.md)
+- [object AppClipAdvancedExperience.Attributes.Place.DisplayPoint.Coordinates](./displaypoint-data.dictionary/coordinates-data.dictionary.md)
   The coordinates for a point of interest or business in Apple Maps.
 
 ## Properties
@@ -25,11 +26,14 @@ object AppClipAdvancedExperience.Attributes.Place.DisplayPoint
 - `coordinates` (AppClipAdvancedExperience.Attributes.Place.DisplayPoint.Coordinates): The GPS coordinates of a place in Apple Maps you associate with the Advanced App Clip experience.
 - `source` (string): A string that describes the means by which you captured the data for a display point.
 
+  **Allowed Values**: `CALCULATED`, `MANUALLY_PLACED`
+
 ## See Also
 
-- [object AppClipAdvancedExperience.Attributes.Place.MainAddress](appclipadvancedexperience/attributes-data.dictionary/place-data.dictionary/mainaddress-data.dictionary.md)
+### Objects
+- [object AppClipAdvancedExperience.Attributes.Place.MainAddress](./mainaddress-data.dictionary.md)
   The main address for a point of interest or business in Apple Maps.
-- [object AppClipAdvancedExperience.Attributes.Place.PhoneNumber](appclipadvancedexperience/attributes-data.dictionary/place-data.dictionary/phonenumber-data.dictionary.md)
+- [object AppClipAdvancedExperience.Attributes.Place.PhoneNumber](./phonenumber-data.dictionary.md)
   The phone number of a point of interest or business in Apple Maps.
 
 

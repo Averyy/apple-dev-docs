@@ -1,18 +1,19 @@
 # AVPlayer.RateDidChangeReason
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents a rate change reason.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,35 +21,40 @@ A structure that represents a rate change reason.
 struct RateDidChangeReason
 ```
 
+```c
+typedef NSString * AVPlayerRateDidChangeReason;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: String)](avplayer/ratedidchangereason/init(rawvalue:).md)
+- [init(rawValue: String)](./ratedidchangereason/init%28rawvalue%29.md)
   Creates a reason with a string value.
 ### Rate change reasons
-- [static let appBackgrounded: AVPlayer.RateDidChangeReason](avplayer/ratedidchangereason/appbackgrounded.md)
+- [static let appBackgrounded: AVPlayer.RateDidChangeReason](./ratedidchangereason/appbackgrounded.md)
   An app transitions to the background.
-- [static let audioSessionInterrupted: AVPlayer.RateDidChangeReason](avplayer/ratedidchangereason/audiosessioninterrupted.md)
+- [static let audioSessionInterrupted: AVPlayer.RateDidChangeReason](./ratedidchangereason/audiosessioninterrupted.md)
   The system interrupts the app’s audio session.
-- [static let setRateCalled: AVPlayer.RateDidChangeReason](avplayer/ratedidchangereason/setratecalled.md)
+- [static let setRateCalled: AVPlayer.RateDidChangeReason](./ratedidchangereason/setratecalled.md)
   An app makes a call to set the player’s rate.
-- [static let setRateFailed: AVPlayer.RateDidChangeReason](avplayer/ratedidchangereason/setratefailed.md)
+- [static let setRateFailed: AVPlayer.RateDidChangeReason](./ratedidchangereason/setratefailed.md)
   An attempt to change the player’s rate fails.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class let rateDidChangeOriginatingParticipantKey: String](avplayer/ratedidchangeoriginatingparticipantkey.md)
+### User information keys
+- [class let rateDidChangeOriginatingParticipantKey: String](./ratedidchangeoriginatingparticipantkey.md)
   A key to retrieve the identifier of the participant that originates the rate change.
-- [class let rateDidChangeReasonKey: String](avplayer/ratedidchangereasonkey.md)
+- [class let rateDidChangeReasonKey: String](./ratedidchangereasonkey.md)
   A key to retrieve the reason for the rate change.
 
 

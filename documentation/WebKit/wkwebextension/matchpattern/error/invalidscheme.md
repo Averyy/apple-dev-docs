@@ -1,7 +1,8 @@
 # invalidScheme
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the scheme component was invalid.
 

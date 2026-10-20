@@ -1,7 +1,8 @@
 # value
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The constant value for the generated noise.
 
@@ -17,6 +18,10 @@ The constant value for the generated noise.
 
 ```swift
 var value: Double { get set }
+```
+
+```objc
+@property (nonatomic) double value;
 ```
 
 #### Discussion

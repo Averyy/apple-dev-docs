@@ -1,7 +1,8 @@
 # prefetchDataSource
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.13+
@@ -12,9 +13,14 @@
 weak var prefetchDataSource: (any NSCollectionViewPrefetching)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSCollectionViewPrefetching> prefetchDataSource;
+```
+
 ## See Also
 
-- [protocol NSCollectionViewPrefetching](nscollectionviewprefetching.md)
+### Prefetching Collection View Cells and Data
+- [protocol NSCollectionViewPrefetching](../nscollectionviewprefetching.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # TCControlContents
 
 **Framework**: Touch Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Represents the visual contents of a touch control.
 
@@ -16,57 +17,62 @@ Represents the visual contents of a touch control.
 class TCControlContents
 ```
 
+```objc
+@interface TCControlContents : NSObject
+```
+
 ## Topics
 
 ### Creating control contents
-- [convenience init(images: [TCControlImage])](tccontrolcontents/init(images:).md)
+- [convenience init(images: [TCControlImage])](./tccontrolcontents/init%28images%29.md)
   Creates a new instance with the specified images.
 ### Getting the images
-- [var images: [TCControlImage]](tccontrolcontents/images.md)
+- [var images: [TCControlImage]](./tccontrolcontents/images.md)
   The array of objects used to render the control.
 ### Accessing button contents
-- [class func buttonContents(forSystemImageNamed: String, size: CGSize, shape: TCControlContents.ButtonShape, controller: TCTouchController) -> TCControlContents](tccontrolcontents/buttoncontents(forsystemimagenamed:size:shape:controller:).md)
+- [class func buttonContents(forSystemImageNamed: String, size: CGSize, shape: TCControlContents.ButtonShape, controller: TCTouchController) -> TCControlContents](./tccontrolcontents/buttoncontents%28forsystemimagenamed,size,shape,controller%29.md)
   The button contents for the specified system image name, size, and shape.
-- [TCControlContents.ButtonShape](tccontrolcontents/buttonshape.md)
+- [TCControlContents.ButtonShape](./tccontrolcontents/buttonshape.md)
   Defines the visual shape of a button.
 ### Accessing directional pad contents
-- [class func directionPadContents(label: TCControlLabel, size: CGSize, style: TCControlContents.DpadElementStyle, direction: TCControlContents.DpadDirection, controller: TCTouchController) -> TCControlContents](tccontrolcontents/directionpadcontents(label:size:style:direction:controller:).md)
+- [class func directionPadContents(label: TCControlLabel, size: CGSize, style: TCControlContents.DpadElementStyle, direction: TCControlContents.DpadDirection, controller: TCTouchController) -> TCControlContents](./tccontrolcontents/directionpadcontents%28label,size,style,direction,controller%29.md)
   The direction pad contents for the specified label, size, style, and direction.
-- [TCControlContents.DpadDirection](tccontrolcontents/dpaddirection.md)
+- [TCControlContents.DpadDirection](./tccontrolcontents/dpaddirection.md)
   Defines the direction of a direction pad visual.
-- [TCControlContents.DpadElementStyle](tccontrolcontents/dpadelementstyle.md)
+- [TCControlContents.DpadElementStyle](./tccontrolcontents/dpadelementstyle.md)
   Defines the visual style of the individual up/down/left/right elements of a direction pad.
 ### Accessing switch contents
-- [class func switchedOnContents(forSystemImageNamed: String, size: CGSize, shape: TCControlContents.ButtonShape, controller: TCTouchController) -> TCControlContents](tccontrolcontents/switchedoncontents(forsystemimagenamed:size:shape:controller:).md)
+- [class func switchedOnContents(forSystemImageNamed: String, size: CGSize, shape: TCControlContents.ButtonShape, controller: TCTouchController) -> TCControlContents](./tccontrolcontents/switchedoncontents%28forsystemimagenamed,size,shape,controller%29.md)
   The switch contents for the specified system image name, size, and shape.
 ### Accessing throttle contents
-- [class func throttleBackgroundContents(size: CGSize, controller: TCTouchController) -> TCControlContents](tccontrolcontents/throttlebackgroundcontents(size:controller:).md)
+- [class func throttleBackgroundContents(size: CGSize, controller: TCTouchController) -> TCControlContents](./tccontrolcontents/throttlebackgroundcontents%28size,controller%29.md)
   The throttle background contents for the specified size.
-- [class func throttleIndicatorContents(size: CGSize, controller: TCTouchController) -> TCControlContents](tccontrolcontents/throttleindicatorcontents(size:controller:).md)
+- [class func throttleIndicatorContents(size: CGSize, controller: TCTouchController) -> TCControlContents](./tccontrolcontents/throttleindicatorcontents%28size,controller%29.md)
   The throttle indicator contents for the specified size.
 ### Accessing thumbstick contents
-- [class func thumbstickStickBackgroundContents(size: CGSize, controller: TCTouchController) -> TCControlContents](tccontrolcontents/thumbstickstickbackgroundcontents(size:controller:).md)
+- [class func thumbstickStickBackgroundContents(size: CGSize, controller: TCTouchController) -> TCControlContents](./tccontrolcontents/thumbstickstickbackgroundcontents%28size,controller%29.md)
   The thumbstick background contents for the specified size.
-- [class func thumbstickStickContents(size: CGSize, controller: TCTouchController) -> TCControlContents](tccontrolcontents/thumbstickstickcontents(size:controller:).md)
+- [class func thumbstickStickContents(size: CGSize, controller: TCTouchController) -> TCControlContents](./tccontrolcontents/thumbstickstickcontents%28size,controller%29.md)
   The thumbstick stick contents for the specified size.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class TCControlImage](tccontrolimage.md)
+### Visuals
+- [class TCControlImage](./tccontrolimage.md)
   Represents an image to be rendered using Metal.
-- [protocol TCControlLayout](tccontrollayout.md)
+- [protocol TCControlLayout](./tccontrollayout.md)
   A protocol defining the controlLayout properties for a control.
 
 

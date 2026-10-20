@@ -1,7 +1,8 @@
 # startDate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The start date for the metadata date range group.
 
@@ -20,13 +21,18 @@ The start date for the metadata date range group.
 var startDate: Date { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSDate * startDate;
+```
+
 #### Discussion
 
 The `startDate` defines the starting date on the timeline for which the associated metadata is valid.
 
 ## See Also
 
-- [var endDate: Date?](avdaterangemetadatagroup/enddate.md)
+### Accessing the date range
+- [var endDate: Date?](./enddate.md)
   The end date for the metadata date range group.
 
 

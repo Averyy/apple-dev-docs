@@ -1,7 +1,8 @@
 # CNLabelContactRelationGirlfriend
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The label for the contact’s girlfriend.
 
@@ -19,19 +20,24 @@ The label for the contact’s girlfriend.
 let CNLabelContactRelationGirlfriend: String
 ```
 
+```c
+extern NSString * const CNLabelContactRelationGirlfriend;
+```
+
 ## See Also
 
-- [let CNLabelContactRelationBoyfriend: String](cnlabelcontactrelationboyfriend.md)
+### Getting acquaintance relationship labels
+- [let CNLabelContactRelationBoyfriend: String](./cnlabelcontactrelationboyfriend.md)
   The label for the contact’s boyfriend.
-- [let CNLabelContactRelationColleague: String](cnlabelcontactrelationcolleague.md)
+- [let CNLabelContactRelationColleague: String](./cnlabelcontactrelationcolleague.md)
   The label for the contact’s colleague.
-- [let CNLabelContactRelationFemaleFriend: String](cnlabelcontactrelationfemalefriend.md)
+- [let CNLabelContactRelationFemaleFriend: String](./cnlabelcontactrelationfemalefriend.md)
   The label for the contact’s female friend.
-- [let CNLabelContactRelationFriend: String](cnlabelcontactrelationfriend.md)
+- [let CNLabelContactRelationFriend: String](./cnlabelcontactrelationfriend.md)
   The label for the contact’s friend.
-- [let CNLabelContactRelationGirlfriendOrBoyfriend: String](cnlabelcontactrelationgirlfriendorboyfriend.md)
+- [let CNLabelContactRelationGirlfriendOrBoyfriend: String](./cnlabelcontactrelationgirlfriendorboyfriend.md)
   The label for the contact’s girlfriend or boyfriend.
-- [let CNLabelContactRelationMaleFriend: String](cnlabelcontactrelationmalefriend.md)
+- [let CNLabelContactRelationMaleFriend: String](./cnlabelcontactrelationmalefriend.md)
   The label for the contact’s male friend.
 
 

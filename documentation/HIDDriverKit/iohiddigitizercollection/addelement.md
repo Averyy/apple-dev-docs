@@ -1,22 +1,24 @@
 # addElement
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```c
 void addElement(IOHIDElement *element);
 ```
 
 ## See Also
 
-- [getParentCollection](iohiddigitizercollection/getparentcollection.md)
-- [getElements](iohiddigitizercollection/getelements.md)
+### Managing the Collection Elements
+- [getParentCollection](./getparentcollection.md)
+- [getElements](./getelements.md)
 
 
 ---

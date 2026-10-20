@@ -1,7 +1,8 @@
 # CSSM_ACL_SUBJECT_TYPE_PARTITION
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var CSSM_ACL_SUBJECT_TYPE_PARTITION: Int { get }
+```
+
+```c
+CSSM_ACL_SUBJECT_TYPE_PARTITION
 ```
 
 

@@ -1,7 +1,8 @@
 # value
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current value of the gauge.
 
@@ -25,11 +26,12 @@ The valid range is  `0.0...1.0`.
 
 ## See Also
 
-- [var currentValueLabel: GaugeStyleConfiguration.CurrentValueLabel?](gaugestyleconfiguration/currentvaluelabel-swift.property.md)
+### Setting the value
+- [var currentValueLabel: GaugeStyleConfiguration.CurrentValueLabel?](./currentvaluelabel-swift.property.md)
   A view that describes the current value.
-- [GaugeStyleConfiguration.CurrentValueLabel](gaugestyleconfiguration/currentvaluelabel-swift.struct.md)
+- [GaugeStyleConfiguration.CurrentValueLabel](./currentvaluelabel-swift.struct.md)
   A type-erased value label of a gauge that contains the current value.
-- [GaugeStyleConfiguration.MarkedValueLabel](gaugestyleconfiguration/markedvaluelabel.md)
+- [GaugeStyleConfiguration.MarkedValueLabel](./markedvaluelabel.md)
   A type-erased label describing a specific value of a gauge.
 
 

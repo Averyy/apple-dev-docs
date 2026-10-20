@@ -1,7 +1,8 @@
 # angle
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The angle of the observed horizon.
 

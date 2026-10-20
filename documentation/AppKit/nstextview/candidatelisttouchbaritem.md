@@ -1,7 +1,8 @@
 # candidateListTouchBarItem
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12.2+
@@ -12,11 +13,16 @@
 var candidateListTouchBarItem: NSCandidateListTouchBarItem<AnyObject>? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) NSCandidateListTouchBarItem * candidateListTouchBarItem;
+```
+
 ## See Also
 
-- [var allowsCharacterPickerTouchBarItem: Bool](nstextview/allowscharacterpickertouchbaritem.md)
-- [func updateTextTouchBarItems()](nstextview/updatetexttouchbaritems.md)
-- [func updateTouchBarItemIdentifiers()](nstextview/updatetouchbaritemidentifiers.md)
+### Interacting with the Touch Bar
+- [var allowsCharacterPickerTouchBarItem: Bool](./allowscharacterpickertouchbaritem.md)
+- [func updateTextTouchBarItems()](./updatetexttouchbaritems%28%29.md)
+- [func updateTouchBarItemIdentifiers()](./updatetouchbaritemidentifiers%28%29.md)
 
 
 ---

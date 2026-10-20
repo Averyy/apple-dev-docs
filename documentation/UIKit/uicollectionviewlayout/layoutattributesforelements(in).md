@@ -1,16 +1,17 @@
 # layoutAttributesForElements(in:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the layout attributes for all of the cells and views in the specified rectangle.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,9 +19,13 @@ Retrieves the layout attributes for all of the cells and views in the specified 
 func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]?
 ```
 
+```objc
+- (NSArray<__kindof UICollectionViewLayoutAttributes *> *) layoutAttributesForElementsInRect:(CGRect) rect;
+```
+
 #### Return Value
 
-An array of [`UICollectionViewLayoutAttributes`](uicollectionviewlayoutattributes.md) objects representing the layout information for the cells and views. The default implementation returns `nil`.
+An array of [`UICollectionViewLayoutAttributes`](../uicollectionviewlayoutattributes.md) objects representing the layout information for the cells and views. The default implementation returns `nil`.
 
 #### Discussion
 
@@ -34,21 +39,22 @@ When creating the layout attributes, always create an attributes object that rep
 
 ## See Also
 
-- [class var layoutAttributesClass: AnyClass](uicollectionviewlayout/layoutattributesclass.md)
+### Providing layout attributes
+- [class var layoutAttributesClass: AnyClass](./layoutattributesclass.md)
   The class to use when creating layout attributes objects.
-- [func prepare()](uicollectionviewlayout/prepare.md)
+- [func prepare()](./prepare%28%29.md)
   Tells the layout object to update the current layout.
-- [func layoutAttributesForItem(at: IndexPath) -> UICollectionViewLayoutAttributes?](uicollectionviewlayout/layoutattributesforitem(at:).md)
+- [func layoutAttributesForItem(at: IndexPath) -> UICollectionViewLayoutAttributes?](./layoutattributesforitem%28at%29.md)
   Retrieves layout information for an item at the specified index path with a corresponding cell.
-- [func layoutAttributesForInteractivelyMovingItem(at: IndexPath, withTargetPosition: CGPoint) -> UICollectionViewLayoutAttributes](uicollectionviewlayout/layoutattributesforinteractivelymovingitem(at:withtargetposition:).md)
+- [func layoutAttributesForInteractivelyMovingItem(at: IndexPath, withTargetPosition: CGPoint) -> UICollectionViewLayoutAttributes](./layoutattributesforinteractivelymovingitem%28at,withtargetposition%29.md)
   Retrieves the layout attributes of an item when it is being moved interactively by the user.
-- [func layoutAttributesForSupplementaryView(ofKind: String, at: IndexPath) -> UICollectionViewLayoutAttributes?](uicollectionviewlayout/layoutattributesforsupplementaryview(ofkind:at:).md)
+- [func layoutAttributesForSupplementaryView(ofKind: String, at: IndexPath) -> UICollectionViewLayoutAttributes?](./layoutattributesforsupplementaryview%28ofkind,at%29.md)
   Retrieves the layout attributes for the specified supplementary view.
-- [func layoutAttributesForDecorationView(ofKind: String, at: IndexPath) -> UICollectionViewLayoutAttributes?](uicollectionviewlayout/layoutattributesfordecorationview(ofkind:at:).md)
+- [func layoutAttributesForDecorationView(ofKind: String, at: IndexPath) -> UICollectionViewLayoutAttributes?](./layoutattributesfordecorationview%28ofkind,at%29.md)
   Retrieves the layout attributes for the specified decoration view.
-- [func targetContentOffset(forProposedContentOffset: CGPoint) -> CGPoint](uicollectionviewlayout/targetcontentoffset(forproposedcontentoffset:).md)
+- [func targetContentOffset(forProposedContentOffset: CGPoint) -> CGPoint](./targetcontentoffset%28forproposedcontentoffset%29.md)
   Retrieves the content offset to use after an animated layout update or change.
-- [func targetContentOffset(forProposedContentOffset: CGPoint, withScrollingVelocity: CGPoint) -> CGPoint](uicollectionviewlayout/targetcontentoffset(forproposedcontentoffset:withscrollingvelocity:).md)
+- [func targetContentOffset(forProposedContentOffset: CGPoint, withScrollingVelocity: CGPoint) -> CGPoint](./targetcontentoffset%28forproposedcontentoffset,withscrollingvelocity%29.md)
   Retrieves the point at which to stop scrolling.
 
 

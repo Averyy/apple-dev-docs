@@ -1,7 +1,8 @@
 # newRecurringPaymentRequest
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An updated request for a recurring payment.
 
@@ -11,19 +12,20 @@ An updated request for a recurring payment.
 
 ## Declaration
 
-```swift
+```
 ApplePayRecurringPaymentRequest newRecurringPaymentRequest;
 ```
 
 #### Discussion
 
-Provide this object to update the [`recurringPaymentRequest`](applepaypaymentrequest/recurringpaymentrequest.md) value in the original [`ApplePayPaymentRequest`](applepaypaymentrequest.md), if necessary, after the user updated their payment method.
+Provide this object to update the [`recurringPaymentRequest`](../applepaypaymentrequest/recurringpaymentrequest.md) value in the original [`ApplePayPaymentRequest`](../applepaypaymentrequest.md), if necessary, after the user updated their payment method.
 
-> ❗ **Important**:  You can’t use this property with [`newMultiTokenContexts`](applepaypaymentmethodupdate/newmultitokencontexts.md) or [`newAutomaticReloadPaymentRequest`](applepaypaymentmethodupdate/newautomaticreloadpaymentrequest.md) properties. Simultaneous use of these properties results in an error and cancels the payment request.
+> ❗ **Important**:  You can’t use this property with [`newMultiTokenContexts`](./newmultitokencontexts.md) or [`newAutomaticReloadPaymentRequest`](./newautomaticreloadpaymentrequest.md) properties. Simultaneous use of these properties results in an error and cancels the payment request.
 
 ## See Also
 
-- [ApplePayRecurringPaymentRequest](applepayrecurringpaymentrequest.md)
+### Updating recurring payments
+- [ApplePayRecurringPaymentRequest](../applepayrecurringpaymentrequest.md)
   A dictionary that represents a request to set up a recurring payment, typically a subscription.
 
 

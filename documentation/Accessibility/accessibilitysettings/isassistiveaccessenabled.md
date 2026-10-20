@@ -1,7 +1,8 @@
 # isAssistiveAccessEnabled
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether Assistive Access is running.
 
@@ -20,9 +21,13 @@ A Boolean value that indicates whether Assistive Access is running.
 static var isAssistiveAccessEnabled: Bool { get }
 ```
 
+```c
+extern BOOL AXAssistiveAccessEnabled();
+```
+
 ## Mentions
 
-- [Optimizing your app for Assistive Access](optimizing-your-app-for-assistive-access.md)
+- [Optimizing your app for Assistive Access](../optimizing-your-app-for-assistive-access.md)
 
 #### Discussion
 
@@ -30,11 +35,13 @@ The value of this property doesn’t change during a process’s lifetime, so it
 
 ## See Also
 
-- [var accessibilityAssistiveAccessEnabled: Bool](../swiftui/environmentvalues/accessibilityassistiveaccessenabled.md)
+### Related Documentation
+- [var accessibilityAssistiveAccessEnabled: Bool](../../SwiftUI/environmentvalues/accessibilityassistiveaccessenabled.md)
   A Boolean value that indicates whether Assistive Access is in use.
-- [Assistive Access](assistive-access.md)
+### Supporting cognitive accessibility features
+- [Assistive Access](../assistive-access.md)
   A mode that tailors the iOS and iPadOS experience for people with cognitive disabilities.
-- [UISupportsFullScreenInAssistiveAccess](../bundleresources/information-property-list/uisupportsfullscreeninassistiveaccess.md)
+- [UISupportsFullScreenInAssistiveAccess](../../BundleResources/information-property-list/uisupportsfullscreeninassistiveaccess.md)
   A Boolean value that indicates if an iOS or iPadOS app appears as full screen in Assistive Access.
 
 

@@ -1,7 +1,8 @@
 # Core Bluetooth
 
 **Framework**: Core Bluetooth  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Communicate with Bluetooth low energy and BR/EDR (“Classic”) Devices.
 
@@ -22,92 +23,93 @@ Don’t subclass any of the classes of the Core Bluetooth framework. Overriding 
 
 Core Bluetooth background execution modes aren’t supported in iPad apps running on macOS.
 
-In iOS 26 and later, your app can continue certain activities in the background if the app starts a Live Activity before it goes to the background. If your app has an instantiated [`CBManager`](cbmanager.md) and starts a Live Activity, it can use the same privileges while in the background that it uses when it is in the foreground. This means activities like scanning without providing service UUID’s and scanning with duplicates filter disabled will be allowed while in the background. For more information about creating Live Activities, see [`ActivityKit`](https://developer.apple.comhttps://developer.apple.com/documentation/ActivityKit).
+In iOS 26 and later, your app can continue certain activities in the background if the app starts a Live Activity before it goes to the background. If your app has an instantiated [`CBManager`](./cbmanager.md) and starts a Live Activity, it can use the same privileges while in the background that it uses when it is in the foreground. This means activities like scanning without providing service UUID’s and scanning with duplicates filter disabled will be allowed while in the background. For more information about creating Live Activities, see [ActivityKit](../ActivityKit/ActivityKit.md).
 
-> ❗ **Important**:  Your app will crash if its `Info.plist` doesn’t include usage description keys for the types of data it needs to access. To access Core Bluetooth APIs on apps linked on or after iOS 13, include the [`NSBluetoothAlwaysUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsbluetoothalwaysusagedescription) key. In iOS 12 and earlier, include [`NSBluetoothPeripheralUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsbluetoothperipheralusagedescription) to access Bluetooth peripheral data.
+> ❗ **Important**:  Your app will crash if its `Info.plist` doesn’t include usage description keys for the types of data it needs to access. To access Core Bluetooth APIs on apps linked on or after iOS 13, include the [`NSBluetoothAlwaysUsageDescription`](../BundleResources/information-property-list/nsbluetoothalwaysusagedescription.md) key. In iOS 12 and earlier, include [`NSBluetoothPeripheralUsageDescription`](../BundleResources/information-property-list/nsbluetoothperipheralusagedescription.md) to access Bluetooth peripheral data.
 
 ## Topics
 
 ### Centrals
-- [class CBCentral](cbcentral.md)
+- [class CBCentral](./cbcentral.md)
   A remote device connected to a local app, which is acting as a peripheral.
-- [class CBCentralManager](cbcentralmanager.md)
+- [class CBCentralManager](./cbcentralmanager.md)
   An object that scans for, discovers, connects to, and manages peripherals.
-- [protocol CBCentralManagerDelegate](cbcentralmanagerdelegate.md)
+- [protocol CBCentralManagerDelegate](./cbcentralmanagerdelegate.md)
   A protocol that provides updates for the discovery and management of peripheral devices.
 ### Peripherals
-- [class CBPeripheral](cbperipheral.md)
+- [class CBPeripheral](./cbperipheral.md)
   A remote peripheral device.
-- [protocol CBPeripheralDelegate](cbperipheraldelegate.md)
+- [protocol CBPeripheralDelegate](./cbperipheraldelegate.md)
   A protocol that provides updates on the use of a peripheral’s services.
-- [class CBPeripheralManager](cbperipheralmanager.md)
+- [class CBPeripheralManager](./cbperipheralmanager.md)
   An object that manages and advertises peripheral services exposed by this app.
-- [protocol CBPeripheralManagerDelegate](cbperipheralmanagerdelegate.md)
+- [protocol CBPeripheralManagerDelegate](./cbperipheralmanagerdelegate.md)
   A protocol that provides updates for local peripheral state and interactions with remote central devices.
-- [class CBAttribute](cbattribute.md)
+- [class CBAttribute](./cbattribute.md)
   A representation of common aspects of services offered by a peripheral.
-- [struct CBAttributePermissions](cbattributepermissions.md)
+- [struct CBAttributePermissions](./cbattributepermissions.md)
   Values that represent the read, write, and encryption permissions for a characteristic’s value.
 ### Data Transfer
-- [Transferring Data Between Bluetooth Low Energy Devices](transferring-data-between-bluetooth-low-energy-devices.md)
+- [Transferring Data Between Bluetooth Low Energy Devices](./transferring-data-between-bluetooth-low-energy-devices.md)
   Create a Bluetooth low energy central and peripheral device, and allow them to discover each other and exchange data.
 ### Channel Sounding
-- [Measuring distance between devices using Channel Sounding](measuring-distance-between-devices-using-channel-sounding.md)
+- [Measuring distance between devices using Channel Sounding](./measuring-distance-between-devices-using-channel-sounding.md)
   Measure the distance between two Bluetooth Low Energy devices in real time with Channel Sounding.
-- [class CBChannelSoundingProcedureResults](cbchannelsoundingprocedureresults.md)
-- [class CBChannelSoundingSessionConfiguration](cbchannelsoundingsessionconfiguration.md)
-- [let CBUUIDCharacteristicObservationScheduleString: String](cbuuidcharacteristicobservationschedulestring.md)
+- [class CBChannelSoundingProcedureResults](./cbchannelsoundingprocedureresults.md)
+- [class CBChannelSoundingSessionConfiguration](./cbchannelsoundingsessionconfiguration.md)
+- [let CBUUIDCharacteristicObservationScheduleString: String](./cbuuidcharacteristicobservationschedulestring.md)
 ### Services
-- [class CBService](cbservice.md)
+- [class CBService](./cbservice.md)
   A collection of data and associated behaviors that accomplish a function or feature of a device.
-- [class CBMutableService](cbmutableservice.md)
+- [class CBMutableService](./cbmutableservice.md)
   A service with writeable property values.
-- [class CBCharacteristic](cbcharacteristic.md)
+- [class CBCharacteristic](./cbcharacteristic.md)
   A characteristic of a remote peripheral’s service.
-- [class CBMutableCharacteristic](cbmutablecharacteristic.md)
+- [class CBMutableCharacteristic](./cbmutablecharacteristic.md)
   A characteristic of a local peripheral’s service.
-- [class CBDescriptor](cbdescriptor.md)
+- [class CBDescriptor](./cbdescriptor.md)
   An object that provides further information about a remote peripheral’s characteristic.
-- [class CBMutableDescriptor](cbmutabledescriptor.md)
+- [class CBMutableDescriptor](./cbmutabledescriptor.md)
   An object that provides additional information about a local peripheral’s characteristic.
 ### Supporting Types
-- [class CBManager](cbmanager.md)
+- [class CBManager](./cbmanager.md)
   The abstract base class that manages central and peripheral objects.
-- [class CBATTRequest](cbattrequest.md)
+- [class CBATTRequest](./cbattrequest.md)
   A request that uses the Attribute Protocol (ATT).
-- [class CBPeer](cbpeer.md)
+- [class CBPeer](./cbpeer.md)
   An object that represents a remote device.
-- [class CBUUID](cbuuid.md)
+- [class CBUUID](./cbuuid.md)
   A universally unique identifier, as defined by Bluetooth standards.
 ### Bluetooth Classic Support
-- [Using Core Bluetooth Classic](using-core-bluetooth-classic.md)
+- [Using Core Bluetooth Classic](./using-core-bluetooth-classic.md)
   Discover and communicate with a Bluetooth Classic device by using the Core Bluetooth APIs.
 ### Errors
-- [struct CBError](cberror-swift.struct.md)
+- [struct CBError](./cberror-swift.struct.md)
   An error that Core Bluetooth returns during Bluetooth transactions.
-- [let CBErrorDomain: String](cberrordomain.md)
+- [let CBErrorDomain: String](./cberrordomain.md)
   The domain for Core Bluetooth errors.
-- [CBError.Code](cberror-swift.struct/code.md)
+- [CBError.Code](./cberror-swift.struct/code.md)
   The codes for errors that Core Bluetooth returns during Bluetooth transactions.
-- [struct CBATTError](cbatterror-swift.struct.md)
+- [struct CBATTError](./cbatterror-swift.struct.md)
   An error that Core Bluetooth returns while using Attribute Protocol (ATT).
-- [let CBATTErrorDomain: String](cbatterrordomain.md)
+- [let CBATTErrorDomain: String](./cbatterrordomain.md)
   The domain for Core Bluetooth ATT errors.
-- [CBATTError.Code](cbatterror-swift.struct/code.md)
+- [CBATTError.Code](./cbatterror-swift.struct/code.md)
   The possible errors returned by a GATT server (a remote peripheral) during Bluetooth low energy ATT transactions.
-- [struct CBATTError](cbatterror-swift.struct.md)
+- [struct CBATTError](./cbatterror-swift.struct.md)
   An error that Core Bluetooth returns while using Attribute Protocol (ATT).
 ### Deprecated
-- [enum CBCentralManagerState](cbcentralmanagerstate.md)
+- [enum CBCentralManagerState](./cbcentralmanagerstate.md)
   Values that represent the current state of a central manager object.
-- [enum CBPeripheralManagerState](cbperipheralmanagerstate.md)
+- [enum CBPeripheralManagerState](./cbperipheralmanagerstate.md)
   Values that represent the current state of the peripheral manager.
-- [Deprecated Constants](deprecated-constants.md)
+- [Deprecated Constants](./deprecated-constants.md)
   This document describes the constants found in the Core Bluetooth framework.
 
 ## See Also
 
-- [Core Bluetooth Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/AboutCoreBluetooth/Introduction.html#//apple_ref/doc/uid/TP40013257)
+### Related Documentation
+- [Core Bluetooth Programming Guide](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/AboutCoreBluetooth/Introduction.html#//apple_ref/doc/uid/TP40013257)
 
 
 ---

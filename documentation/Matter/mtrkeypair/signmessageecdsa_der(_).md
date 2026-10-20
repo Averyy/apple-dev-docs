@@ -1,7 +1,8 @@
 # signMessageECDSA_DER(_:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 optional func signMessageECDSA_DER(_ message: Data) -> Data
+```
+
+```objc
+- (NSData *) signMessageECDSA_DER:(NSData *) message;
 ```
 
 

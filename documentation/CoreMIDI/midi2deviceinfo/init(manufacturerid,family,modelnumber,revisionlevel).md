@@ -1,7 +1,8 @@
 # init(manufacturerID:family:modelNumber:revisionLevel:)
 
 **Framework**: Core MIDI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 init(manufacturerID: MIDI2DeviceManufacturer, family: MIDIUInteger14, modelNumber: MIDIUInteger14, revisionLevel: MIDI2DeviceRevisionLevel)
+```
+
+```objc
+- (instancetype) initWithManufacturerID:(MIDI2DeviceManufacturer) manufacturerID family:(MIDIUInteger14) family modelNumber:(MIDIUInteger14) modelNumber revisionLevel:(MIDI2DeviceRevisionLevel) revisionLevel;
 ```
 
 

@@ -1,7 +1,8 @@
 # readAttributeListNullablesAndOptionalsStruct(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeListNullablesAndOptionalsStruct(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeListNullablesAndOptionalsStruct() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeListNullablesAndOptionalsStructWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

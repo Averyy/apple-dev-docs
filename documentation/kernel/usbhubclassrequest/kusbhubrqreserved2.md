@@ -1,7 +1,8 @@
 # kUSBHubRqReserved2
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 A reserved request.
 
@@ -10,7 +11,7 @@ A reserved request.
 
 ## Declaration
 
-```swift
+```c
 kUSBHubRqReserved2 = 4
 ```
 

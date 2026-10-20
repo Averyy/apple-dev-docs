@@ -1,7 +1,8 @@
 # clipContents
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that enables the clipping feature.
 
@@ -21,7 +22,7 @@ static let clipContents: PortalComponent.Options
 
 #### Discussion
 
-If this option is in the option set, the user-defined geometry for [`clippingMode`](portalcomponent/clippingmode-swift.property.md) clips the contents within the portal world.
+If this option is in the option set, the user-defined geometry for [`clippingMode`](../clippingmode-swift.property.md) clips the contents within the portal world.
 
 
 ---

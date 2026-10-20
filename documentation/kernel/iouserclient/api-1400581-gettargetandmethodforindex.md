@@ -1,14 +1,15 @@
 # getTargetAndMethodForIndex
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOExternalMethod * getTargetAndMethodForIndex(IOService **targetP, UInt32 index);
 ```
 

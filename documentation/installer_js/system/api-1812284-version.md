@@ -11,9 +11,10 @@ The dictionary contains the contents of `/System/Library/CoreServices/SystemVers
 
 ## See Also
 
-- [sysctl](system/1812308-sysctl.md)
+### Accessing System Information
+- [sysctl](./api-1812308-sysctl.md)
   Provides the result of a `sysctlbyname()` call using the given selector.
-- [users.desktopSessionCount](system/1812277-users_desktopsessioncount.md)
+- [users.desktopSessionCount](./api-1812277-users_desktopsessioncount.md)
   The number of logged-in users.
 
 

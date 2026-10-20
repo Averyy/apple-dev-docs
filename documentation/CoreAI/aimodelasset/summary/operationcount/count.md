@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of times this operation occurs in the model.
 
@@ -20,7 +21,8 @@ var count: Int { get }
 
 ## See Also
 
-- [var operationName: String](aimodelasset/summary/operationcount/operationname.md)
+### Inspecting operation details
+- [var operationName: String](./operationname.md)
   The name of the operation.
 
 

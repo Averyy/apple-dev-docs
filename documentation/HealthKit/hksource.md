@@ -1,7 +1,8 @@
 # HKSource
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object indicating the app or device that created a HealthKit sample
 
@@ -19,6 +20,10 @@ An object indicating the app or device that created a HealthKit sample
 class HKSource
 ```
 
+```objc
+@interface HKSource : NSObject
+```
+
 #### Overview
 
 Sources include apps and devices that save data to the HealthKit store. Currently, HealthKit supports only the direct import of data from Bluetooth LE heart rate monitors. All other devices need a companion app to collect and save the data to HealthKit.
@@ -26,42 +31,43 @@ Sources include apps and devices that save data to the HealthKit store. Currentl
 ## Topics
 
 ### Getting the Current Source
-- [class func `default`() -> HKSource](hksource/default.md)
+- [class func `default`() -> HKSource](./hksource/default%28%29.md)
   Returns a source object for the current app.
 ### Getting Property Data
-- [var bundleIdentifier: String](hksource/bundleidentifier.md)
+- [var bundleIdentifier: String](./hksource/bundleidentifier.md)
   The source’s bundle identifier.
-- [var name: String](hksource/name.md)
+- [var name: String](./hksource/name.md)
   The source’s name.
 ### Initializers
-- [init?(coder: NSCoder)](hksource/init(coder:).md)
+- [init?(coder: NSCoder)](./hksource/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct HKSourceQueryDescriptor](hksourcequerydescriptor.md)
+### Sources and devices
+- [struct HKSourceQueryDescriptor](./hksourcequerydescriptor.md)
   A query interface that uses Swift concurrency to read the apps and devices that produced the matching samples.
-- [class HKSourceRevision](hksourcerevision.md)
+- [class HKSourceRevision](./hksourcerevision.md)
   An object indicating the source of a HealthKit sample.
-- [class HKDevice](hkdevice.md)
+- [class HKDevice](./hkdevice.md)
   A device that generates data for HealthKit.
-- [class HKSourceQuery](hksourcequery.md)
+- [class HKSourceQuery](./hksourcequery.md)
   A query that returns a list of sources, such as apps and devices, that have saved matching queries to the HealthKit store.
 
 

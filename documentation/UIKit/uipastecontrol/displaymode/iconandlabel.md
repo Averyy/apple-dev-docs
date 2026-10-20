@@ -1,7 +1,8 @@
 # UIPasteControl.DisplayMode.iconAndLabel
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A display mode for a button that composes an icon and a textual label.
 
@@ -17,17 +18,22 @@ A display mode for a button that composes an icon and a textual label.
 case iconAndLabel
 ```
 
+```c
+UIPasteControlDisplayModeIconAndLabel
+```
+
 #### Discussion
 
 The icon looks like a sheet of paper above a clipboard, and the label’s text reads “Paste”.
 
-The value you set for [`baseForegroundColor`](uipastecontrol/configuration-swift.class/baseforegroundcolor.md) colors the icon and text.
+The value you set for [`baseForegroundColor`](../configuration-swift.class/baseforegroundcolor.md) colors the icon and text.
 
 ## See Also
 
-- [UIPasteControl.DisplayMode.iconOnly](uipastecontrol/displaymode/icononly.md)
+### Choosing a display mode
+- [UIPasteControl.DisplayMode.iconOnly](./icononly.md)
   A display mode for an icon button.
-- [UIPasteControl.DisplayMode.labelOnly](uipastecontrol/displaymode/labelonly.md)
+- [UIPasteControl.DisplayMode.labelOnly](./labelonly.md)
   A display mode for a textual label.
 
 

@@ -1,7 +1,8 @@
 # stringValue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string representation of the badge as it would appear when the badge is displayed.
 

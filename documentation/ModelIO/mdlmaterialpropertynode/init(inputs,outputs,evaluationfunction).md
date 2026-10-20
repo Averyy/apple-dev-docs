@@ -1,7 +1,8 @@
 # init(inputs:outputs:evaluationFunction:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 10.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(inputs: [MDLMaterialProperty], outputs: [MDLMaterialProperty], evaluationFunction function: @escaping (MDLMaterialPropertyNode) -> Void)
+```
+
+```objc
+- (instancetype) initWithInputs:(NSArray<MDLMaterialProperty *> *) inputs outputs:(NSArray<MDLMaterialProperty *> *) outputs evaluationFunction:(void (^)(MDLMaterialPropertyNode *)) function;
 ```
 
 

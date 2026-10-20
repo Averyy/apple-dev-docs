@@ -1,7 +1,8 @@
 # books
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Assistant schema conformance for app intents that offer ebook and audiobook viewing and rendering functionality.
 
@@ -19,6 +20,8 @@ Assistant schema conformance for app intents that offer ebook and audiobook view
 ```swift
 static var books: some AssistantSchemas.BooksIntent { get }
 ```
+
+Available when `Self` is `AssistantSchemas.IntentSchema`.
 
 
 ---

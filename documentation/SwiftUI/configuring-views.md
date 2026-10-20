@@ -1,6 +1,7 @@
 # Configuring views
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: Article
 
 Adjust the characteristics of a view by applying view modifiers.
 
@@ -14,11 +15,11 @@ In SwiftUI, you assemble views into a hierarchy that describes your app’s user
 - Conditionally present modal views, like popovers.
 - Configure supporting views, like toolbars.
 
-Because view modifiers are Swift methods with behavior provided by the [`View`](view.md) protocol, you can apply them to any type that conforms to the [`View`](view.md) protocol. That includes built-in views like [`Text`](text.md), [`Image`](image.md), and [`Button`](button.md), as well as views that you define.
+Because view modifiers are Swift methods with behavior provided by the [`View`](./view.md) protocol, you can apply them to any type that conforms to the [`View`](./view.md) protocol. That includes built-in views like [`Text`](./text.md), [`Image`](./image.md), and [`Button`](./button.md), as well as views that you define.
 
-##### Configure a View with a Modifier
+##### Configure a view with a modifier
 
-Like other Swift methods, a modifier operates on an instance — a view of some kind in this case — and can optionally take input parameters. For example, you can apply the [`foregroundStyle(_:)`](view/foregroundstyle(_:).md) modifier to set the color of a [`Text`](text.md) view:
+Like other Swift methods, a modifier operates on an instance — a view of some kind in this case — and can optionally take input parameters. For example, you can apply the [`foregroundStyle(_:)`](./view/foregroundstyle%28_%29.md) modifier to set the color of a [`Text`](./text.md) view:
 
 ```swift
 Text("Hello, World!")
@@ -27,13 +28,13 @@ Text("Hello, World!")
 
 Modifiers return a view that wraps the original view and replaces it in the view hierarchy. You can think of the two lines in the example above as resolving to a single view that displays red text.
 
-![A screenshot of a rendered text view showing the text Hello World in a foreground color.](/images/com.apple.SwiftUI/Configuring-Views-1@2x.png)
+![A screenshot of a rendered text view showing the text Hello World in a foreground color.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Configuring-Views-1@2x.png)
 
-While the code above follows the rules of Swift, the code’s structure might be unfamiliar for developers new to SwiftUI. SwiftUI uses a declarative approach, where you declare and configure a view at the point in your code that corresponds to the view’s position in the view hierarchy. For more information, see [`Declaring a custom view`](declaring-a-custom-view.md).
+While the code above follows the rules of Swift, the code’s structure might be unfamiliar for developers new to SwiftUI. SwiftUI uses a declarative approach, where you declare and configure a view at the point in your code that corresponds to the view’s position in the view hierarchy. For more information, see [Declaring a custom view](./declaring-a-custom-view.md).
 
-##### Chain Modifiers to Achieve Complex Effects
+##### Chain modifiers to achieve complex effects
 
-You commonly chain modifiers, each wrapping the result of the previous one, by calling them one after the other. For example, you can wrap a text view in an invisible box with a given width using the [`frame(width:height:alignment:)`](view/frame(width:height:alignment:).md) modifier to influence its layout, and then use the [`border(_:width:)`](view/border(_:width:).md) modifier to draw an outline around that:
+You commonly chain modifiers, each wrapping the result of the previous one, by calling them one after the other. For example, you can wrap a text view in an invisible box with a given width using the [`frame(width:height:alignment:)`](./view/frame%28width,height,alignment%29.md) modifier to influence its layout, and then use the [`border(_:width:)`](./view/border%28_,width%29.md) modifier to draw an outline around that:
 
 ```swift
 Text("Title")
@@ -43,7 +44,7 @@ Text("Title")
 
 The order in which you apply modifiers matters. For example, the border that results from the code above outlines the full width of the frame.
 
-![A screenshot of a text view displaying the string Title, outlined by a gray rectangle that’s wider than the string it encloses, leaving empty space inside the rectangle on either side of the string. A caption reads, Apply the frame first.](/images/com.apple.SwiftUI/Configuring-Views-2@2x.png)
+![A screenshot of a text view displaying the string Title, outlined by a gray rectangle that’s wider than the string it encloses, leaving empty space inside the rectangle on either side of the string. A caption reads, Apply the frame first.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Configuring-Views-2@2x.png)
 
 By specifying the frame modifier after the border modifier, SwiftUI applies the border only to the text view, which never takes more space than it needs to render its contents.
 
@@ -55,13 +56,13 @@ Text("Title")
 
 Wrapping that view in an invisible one with a fixed 100 point width affects the layout of the composite view, but has no effect on the border.
 
-![A screenshot of a text view displaying the string Title, outlined by a gray rectangle that closely surrounds the text. A caption reads, Apply the border first.](/images/com.apple.SwiftUI/Configuring-Views-3@2x.png)
+![A screenshot of a text view displaying the string Title, outlined by a gray rectangle that closely surrounds the text. A caption reads, Apply the border first.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Configuring-Views-3@2x.png)
 
-##### Configure Child Views
+##### Configure child views
 
-You can apply any view modifier defined by the [`View`](view.md) protocol to any concrete view, even when the modifier doesn’t have an immediate effect on its target view. The effects of a modifier propagate to child views that don’t explicitly override the modifier.
+You can apply any view modifier defined by the [`View`](./view.md) protocol to any concrete view, even when the modifier doesn’t have an immediate effect on its target view. The effects of a modifier propagate to child views that don’t explicitly override the modifier.
 
-For example, a [`VStack`](vstack.md) instance on its own acts only to vertically stack other views — it doesn’t have any text to display. Therefore, applying a [`font(_:)`](view/font(_:).md) modifier to the stack has no effect on the stack. Yet the font modifier does apply to any of the stack’s child views, some of which might display text. You can, however, locally override the stack’s modifier by adding another to a specific child view:
+For example, a [`VStack`](./vstack.md) instance on its own acts only to vertically stack other views — it doesn’t have any text to display. Therefore, applying a [`font(_:)`](./view/font%28_%29.md) modifier to the stack has no effect on the stack. Yet the font modifier does apply to any of the stack’s child views, some of which might display text. You can, however, locally override the stack’s modifier by adding another to a specific child view:
 
 ```swift
 VStack {
@@ -73,11 +74,11 @@ VStack {
 .font(.body) // Set a default font for text in the stack.
 ```
 
-![A screenshot of a vertical stack of text views. The first appears in a larger, title font, and reads Title. The others appear in a smaller, body font and read First body line and Second body line, respectively.](/images/com.apple.SwiftUI/Configuring-Views-4@2x.png)
+![A screenshot of a vertical stack of text views. The first appears in a larger, title font, and reads Title. The others appear in a smaller, body font and read First body line and Second body line, respectively.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Configuring-Views-4@2x.png)
 
-##### Use View Specific Modifiers
+##### Use view-specific modifiers
 
-While many view types rely on standard view modifiers for customization and control, some views do define modifiers that are specific to that view type. You can’t use such a modifier on anything but the appropriate kind of view. For example, [`Text`](text.md) defines the [`bold()`](text/bold().md) modifier as a convenience for adding a bold effect to the view’s text. While you can use [`font(_:)`](view/font(_:).md) on any view because it’s part of the [`View`](view.md) protocol, you can use [`bold()`](text/bold().md) only on [`Text`](text.md) views. As a result, you can’t use it on a container view:
+While many view types rely on standard view modifiers for customization and control, some views do define modifiers that are specific to that view type. You can’t use such a modifier on anything but the appropriate kind of view. For example, [`Text`](./text.md) defines the [`bold()`](./text/bold%28%29.md) modifier as a convenience for adding a bold effect to the view’s text. While you can use [`font(_:)`](./view/font%28_%29.md) on any view because it’s part of the [`View`](./view.md) protocol, you can use [`bold()`](./text/bold%28%29.md) only on [`Text`](./text.md) views. As a result, you can’t use it on a container view:
 
 ```swift
 VStack {
@@ -86,7 +87,7 @@ VStack {
 .bold() // Fails because 'VStack' doesn't have a 'bold' modifier.
 ```
 
-You also can’t use it on a [`Text`](text.md) view after applying another general modifier because general modifiers return an [`opaque type`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/OpaqueTypes.html). For example, the return value from the padding modifier isn’t [`Text`](text.md), but rather an opaque result type that can’t take a bold modifier:
+You also can’t use it on a [`Text`](./text.md) view after applying another general modifier because general modifiers return an [opaque type](https://docs.swift.org/swift-book/LanguageGuide/OpaqueTypes.html). For example, the return value from the padding modifier isn’t [`Text`](./text.md), but rather an opaque result type that can’t take a bold modifier:
 
 ```swift
 Text("Hello, world!")
@@ -94,7 +95,7 @@ Text("Hello, world!")
     .bold() // Fails because 'some View' doesn't have a 'bold' modifier.
 ```
 
-Instead, apply the bold modifier directly to the [`Text`](text.md) view and then add the padding:
+Instead, apply the bold modifier directly to the [`Text`](./text.md) view and then add the padding:
 
 ```swift
 Text("Hello, world!")
@@ -104,31 +105,32 @@ Text("Hello, world!")
 
 ## See Also
 
-- [Reducing view modifier maintenance](reducing-view-modifier-maintenance.md)
+### Modifying a view
+- [Reducing view modifier maintenance](./reducing-view-modifier-maintenance.md)
   Bundle view modifiers that you regularly reuse into a custom view modifier.
-- [func modifier<T>(T) -> ModifiedContent<Self, T>](view/modifier(_:).md)
+- [func modifier<T>(T) -> ModifiedContent<Self, T>](./view/modifier%28_%29.md)
   Applies a modifier to a view and returns a new view.
-- [protocol ViewModifier](viewmodifier.md)
+- [protocol ViewModifier](./viewmodifier.md)
   A modifier that you apply to a view or another view modifier, producing a different version of the original value.
-- [struct EmptyModifier](emptymodifier.md)
+- [struct EmptyModifier](./emptymodifier.md)
   An empty, or identity, modifier, used during development to switch modifiers at compile time.
-- [struct ModifiedContent](modifiedcontent.md)
+- [struct ModifiedContent](./modifiedcontent.md)
   A value with a modifier applied to it.
-- [protocol EnvironmentalModifier](environmentalmodifier.md)
+- [protocol EnvironmentalModifier](./environmentalmodifier.md)
   A modifier that must resolve to a concrete modifier in an environment before use.
-- [struct ManipulableModifier](manipulablemodifier.md)
+- [struct ManipulableModifier](./manipulablemodifier.md)
   A view modifier that lets hand gestures move, rotate, and scale a view.
-- [struct ManipulableResponderModifier](manipulablerespondermodifier.md)
+- [struct ManipulableResponderModifier](./manipulablerespondermodifier.md)
   A view modifier that makes a view respond to manipulation hand gestures.
-- [struct ManipulableTransformBindingModifier](manipulabletransformbindingmodifier.md)
+- [struct ManipulableTransformBindingModifier](./manipulabletransformbindingmodifier.md)
   A view modifier that applies a 3D affine transform to a view and lets hand gestures change it.
-- [struct ManipulationGeometryModifier](manipulationgeometrymodifier.md)
+- [struct ManipulationGeometryModifier](./manipulationgeometrymodifier.md)
   A view modifier that tracks the geometry a manipulation gesture acts on.
-- [struct ManipulationGestureModifier](manipulationgesturemodifier.md)
+- [struct ManipulationGestureModifier](./manipulationgesturemodifier.md)
   A view modifier that recognizes manipulation hand gestures and reports their state through a binding.
-- [struct ManipulationUsingGestureStateModifier](manipulationusinggesturestatemodifier.md)
+- [struct ManipulationUsingGestureStateModifier](./manipulationusinggesturestatemodifier.md)
   A view modifier that applies the manipulation state from a gesture on another view.
-- [enum Manipulable](manipulable.md)
+- [enum Manipulable](./manipulable.md)
   A namespace for various manipulable related types.
 
 

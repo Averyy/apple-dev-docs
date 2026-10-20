@@ -1,23 +1,28 @@
 # reflectionFalloffEnd
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance from the floor at which scene contents are no longer reflected. Animatable.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 var reflectionFalloffEnd: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic) CGFloat reflectionFalloffEnd;
 ```
 
 #### Discussion
@@ -26,17 +31,18 @@ SceneKit can render reflections on a floor using an opacity gradient (or falloff
 
 If this property’s value is `0.0` (the default), SceneKit does not render the reflection with an opacity falloff—all scene contents are visible in the reflection regardless of their distance from the floor.
 
-You can animate changes to this property’s value. See [`Animating SceneKit Content`](animating-scenekit-content.md).
+You can animate changes to this property’s value. See [Animating SceneKit Content](../animating-scenekit-content.md).
 
 ## See Also
 
-- [var reflectivity: CGFloat](scnfloor/reflectivity.md)
+### Adding Reflections to a Floor
+- [var reflectivity: CGFloat](./reflectivity.md)
   The intensity of the scene’s reflection on the floor. Animatable.
-- [var reflectionFalloffStart: CGFloat](scnfloor/reflectionfalloffstart.md)
+- [var reflectionFalloffStart: CGFloat](./reflectionfalloffstart.md)
   The distance from the floor at which scene contents are reflected at full intensity. Animatable.
-- [var reflectionResolutionScaleFactor: CGFloat](scnfloor/reflectionresolutionscalefactor.md)
+- [var reflectionResolutionScaleFactor: CGFloat](./reflectionresolutionscalefactor.md)
   The resolution scale factor of the offscreen buffer that SceneKit uses to render reflections.
-- [var reflectionCategoryBitMask: Int](scnfloor/reflectioncategorybitmask.md)
+- [var reflectionCategoryBitMask: Int](./reflectioncategorybitmask.md)
   A mask that defines which categories of other objects show reflections on the floor.
 
 

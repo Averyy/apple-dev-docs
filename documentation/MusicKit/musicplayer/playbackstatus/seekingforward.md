@@ -1,7 +1,8 @@
 # MusicPlayer.PlaybackStatus.seekingForward
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The music player is seeking forward.
 

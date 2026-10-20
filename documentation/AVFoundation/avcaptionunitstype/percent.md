@@ -1,15 +1,16 @@
 # AVCaptionUnitsType.percent
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A percentage-based unit type.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -17,11 +18,16 @@ A percentage-based unit type.
 case percent
 ```
 
+```c
+AVCaptionUnitsTypePercent
+```
+
 ## See Also
 
-- [AVCaptionUnitsType.cells](avcaptionunitstype/cells.md)
+### Unit types
+- [AVCaptionUnitsType.cells](./cells.md)
   A cell-based unit type.
-- [AVCaptionUnitsType.unspecified](avcaptionunitstype/unspecified.md)
+- [AVCaptionUnitsType.unspecified](./unspecified.md)
   An unspecified unit type.
 
 

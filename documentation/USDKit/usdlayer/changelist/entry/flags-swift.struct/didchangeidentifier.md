@@ -1,7 +1,8 @@
 # didChangeIdentifier
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the layer’s identifier changed.
 

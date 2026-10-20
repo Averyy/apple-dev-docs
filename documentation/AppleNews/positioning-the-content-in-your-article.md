@@ -1,16 +1,17 @@
 # Positioning the Content in Your Article
 
-**Framework**: Apple News
+**Framework**: Apple News  
+**Role**: Article
 
 Align article components with columns in your layout.
 
 #### Overview
 
-You set the number of columns you want in your design using the `layout` property of Article Document. To determine the position for a component, like a heading, you align the left edge of the component with a column in your layout. (The component automatically lines up with the left edge of the column.) See [`Layout`](https://developer.apple.com/documentation/applenewsformat/layout) and [`Planning the Layout for Your Article`](planning-the-layout-for-your-article.md).
+You set the number of columns you want in your design using the `layout` property of Article Document. To determine the position for a component, like a heading, you align the left edge of the component with a column in your layout. (The component automatically lines up with the left edge of the column.) See [`Layout`](https://developer.apple.com/documentation/applenewsformat/layout) and [Planning the Layout for Your Article](./planning-the-layout-for-your-article.md).
 
 Layout columns are numbered from left to right starting with 0. You use this column system to figure out the positioning for all the components in your article and then, in your `article.json` file, you use a [`ComponentLayout`](https://developer.apple.com/documentation/applenewsformat/componentlayout) object to specify the position settings.
 
-![Screenshot of an article with a caption and pull quote on iPad.](/images/com.apple.applenews/media-4087463@2x.png)
+![Screenshot of an article with a caption and pull quote on iPad.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-4087463@2x.png)
 
 ##### Specify Positions for Components
 
@@ -37,7 +38,7 @@ The following code example shows a component layout object called `heading1Layou
 
 > 💡 **Tip**:  For best results, the sum of the `columnStart` value and the `columnSpan` value shouldn’t exceed the number of columns available for the component. Otherwise, your article may not render as expected.
 
-##### Fine Tune the Position of Components
+##### Fine-Tune the Position of Components
 
 You can use the `margin` property of a [`ComponentLayout`](https://developer.apple.com/documentation/applenewsformat/componentlayout) object to specify the top and bottom margins (in points) for a component and to create space above and below the component.  Specify a single number to use for both measurements, or — to specify different settings for the top and bottom margins — use the [`Margin`](https://developer.apple.com/documentation/applenewsformat/margin) object.
 
@@ -97,7 +98,7 @@ In the following code example, the `image` object ignores the left and right mar
 }
 ```
 
-###### What Changed in Ios 13 Ipados 13 and Macos 1015
+###### What Changed in iOS 13, iPadOS 13, and macOS 10.15
 
 Prior to iOS 13, iPadOS 13, and macOS 10.15, the `ignoreDocumentMargin` property of the [`ComponentLayout`](https://developer.apple.com/documentation/applenewsformat/componentlayout) object caused a component to span the entire screen.
 
@@ -109,27 +110,28 @@ If you previously used the `ignoreDocumentMargin` property, you must update your
 
 The following figure shows an `image` object with `ignoreViewportPadding` set to `true`.
 
-![Screenshot showing the image object spanning the entire iPad screen.](/images/com.apple.applenews/media-4099659@2x.png)
+![Screenshot showing the image object spanning the entire iPad screen.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-4099659@2x.png)
 
 To make the image object span only the document width plus margin, set `ignoreDocumentMargin` to `true` and `ignoreViewportPadding` to `false`.
 
 ## See Also
 
-- [Planning the Layout for Your Article](planning-the-layout-for-your-article.md)
+### Article Layout
+- [Planning the Layout for Your Article](./planning-the-layout-for-your-article.md)
   Define a layout that supports the look you want for your article.
-- [Wrapping Text Around a Component](wrapping-text-around-a-component.md)
+- [Wrapping Text Around a Component](./wrapping-text-around-a-component.md)
   Define the layout of a text component to wrap around another component.
-- [object Layout](../applenewsformat/layout.md)
+- [object Layout](https://developer.apple.com/documentation/applenewsformat/layout)
   The object for defining columns, gutters, and margins for your article’s designed width.
-- [object ComponentLayout](../applenewsformat/componentlayout.md)
+- [object ComponentLayout](https://developer.apple.com/documentation/applenewsformat/componentlayout)
   The object for defining the positioning for a specific component within the article’s column system.
-- [object Anchor](../applenewsformat/anchor.md)
+- [object Anchor](https://developer.apple.com/documentation/applenewsformat/anchor)
   The object for anchoring one component to another component in your article’s layout.
-- [object Margin](../applenewsformat/margin.md)
+- [object Margin](https://developer.apple.com/documentation/applenewsformat/margin)
   The object for defining the space above and below a component.
-- [object AutoPlacementLayout](../applenewsformat/autoplacementlayout.md)
+- [object AutoPlacementLayout](https://developer.apple.com/documentation/applenewsformat/autoplacementlayout)
   The object for defining the margin above and below advertising components.
-- [object AdvertisingLayout](../applenewsformat/advertisinglayout.md)
+- [object AdvertisingLayout](https://developer.apple.com/documentation/applenewsformat/advertisinglayout)
   The object for defining the margin above and below advertising components.
 
 

@@ -1,7 +1,8 @@
 # Curator.Kind
 
 **Framework**: MusicKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The available kinds of curators.
 
@@ -23,20 +24,20 @@ enum Kind
 ## Topics
 
 ### Enumeration Cases
-- [Curator.Kind.editorial](curator/kind-swift.enum/editorial.md)
+- [Curator.Kind.editorial](./kind-swift.enum/editorial.md)
   Indicates that the curator is an Apple Music curator.
-- [Curator.Kind.external](curator/kind-swift.enum/external.md)
+- [Curator.Kind.external](./kind-swift.enum/external.md)
   Indicates that the curator is an external, third-party curator.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

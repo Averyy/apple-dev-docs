@@ -1,7 +1,8 @@
 # UICollectionLayoutListConfiguration.FooterMode.supplementary
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A footer mode that uses supplementary views to show footers.
 
@@ -10,7 +11,7 @@ A footer mode that uses supplementary views to show footers.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,14 @@ case supplementary
 
 #### Discussion
 
-Choose this footer mode to use supplementary views with [`elementKindSectionFooter`](uicollectionview/elementkindsectionfooter.md) as the section footer.
+Choose this footer mode to use supplementary views with [`elementKindSectionFooter`](../../uicollectionview/elementkindsectionfooter.md) as the section footer.
 
-By default, lists that use the [`UICollectionLayoutListConfiguration.Appearance.plain`](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/plain.md) and [`UICollectionLayoutListConfiguration.Appearance.sidebarPlain`](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/sidebarplain.md) list appearances use pinned footers. You must use this footer mode if you want to opt into this default pinning behavior.
+By default, lists that use the [`UICollectionLayoutListConfiguration.Appearance.plain`](../appearance-swift.enum/plain.md) and [`UICollectionLayoutListConfiguration.Appearance.sidebarPlain`](../appearance-swift.enum/sidebarplain.md) list appearances use pinned footers. You must use this footer mode if you want to opt into this default pinning behavior.
 
 ## See Also
 
-- [UICollectionLayoutListConfiguration.FooterMode.none](uicollectionlayoutlistconfiguration-swift.struct/footermode-swift.enum/none.md)
+### Footer modes
+- [UICollectionLayoutListConfiguration.FooterMode.none](./none.md)
   No footers are shown.
 
 

@@ -1,7 +1,8 @@
 # VTFrameSiloGetProgressOfCurrentPass(_:progressOut:)
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets the progress of the current pass.
 
@@ -19,6 +20,10 @@ Gets the progress of the current pass.
 func VTFrameSiloGetProgressOfCurrentPass(_ silo: VTFrameSilo, progressOut: UnsafeMutablePointer<Float32>) -> OSStatus
 ```
 
+```c
+extern OSStatus VTFrameSiloGetProgressOfCurrentPass(VTFrameSiloRef silo, Float32 *progressOut);
+```
+
 #### Return Value
 
 `kVTFrameSiloInvalidTimeRangeErr` if any time ranges are non-numeric, overlap or are not in ascending order.
@@ -34,7 +39,8 @@ Calculates the current progress based on the most recent sample buffer added and
 
 ## See Also
 
-- [func VTFrameSiloGetTypeID() -> CFTypeID](vtframesilogettypeid().md)
+### Inspecting Frame Silos
+- [func VTFrameSiloGetTypeID() -> CFTypeID](./vtframesilogettypeid%28%29.md)
   Retrieves the Core Foundation type identifier for the frame silo object.
 
 

@@ -1,7 +1,8 @@
 # aliases
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The element’s aliases you use when accessing it with the subscript notation.
 
@@ -17,6 +18,10 @@ The element’s aliases you use when accessing it with the subscript notation.
 
 ```swift
 var aliases: Set<String> { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSSet<NSString *> * aliases;
 ```
 
 

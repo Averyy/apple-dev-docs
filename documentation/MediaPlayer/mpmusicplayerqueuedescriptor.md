@@ -1,7 +1,8 @@
 # MPMusicPlayerQueueDescriptor
 
 **Framework**: Media Player  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The abstract base class for audio media item and store queue descriptors.
 
@@ -18,35 +19,40 @@ The abstract base class for audio media item and store queue descriptors.
 class MPMusicPlayerQueueDescriptor
 ```
 
+```objc
+@interface MPMusicPlayerQueueDescriptor : NSObject
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MPMusicPlayerMediaItemQueueDescriptor](mpmusicplayermediaitemqueuedescriptor.md)
-- [MPMusicPlayerPlayParametersQueueDescriptor](mpmusicplayerplayparametersqueuedescriptor.md)
-- [MPMusicPlayerStoreQueueDescriptor](mpmusicplayerstorequeuedescriptor.md)
+- [MPMusicPlayerMediaItemQueueDescriptor](./mpmusicplayermediaitemqueuedescriptor.md)
+- [MPMusicPlayerPlayParametersQueueDescriptor](./mpmusicplayerplayparametersqueuedescriptor.md)
+- [MPMusicPlayerStoreQueueDescriptor](./mpmusicplayerstorequeuedescriptor.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPMusicPlayerControllerQueue](mpmusicplayercontrollerqueue.md)
+### Media player queues
+- [class MPMusicPlayerControllerQueue](./mpmusicplayercontrollerqueue.md)
   An immutable queue containing the media items to play.
-- [class MPMusicPlayerControllerMutableQueue](mpmusicplayercontrollermutablequeue.md)
+- [class MPMusicPlayerControllerMutableQueue](./mpmusicplayercontrollermutablequeue.md)
   A mutable queue containing the media items to play.
-- [class MPMusicPlayerApplicationController](mpmusicplayerapplicationcontroller.md)
+- [class MPMusicPlayerApplicationController](./mpmusicplayerapplicationcontroller.md)
   A media player object that you use to revise the queue that’s currently playing.
-- [class MPMusicPlayerMediaItemQueueDescriptor](mpmusicplayermediaitemqueuedescriptor.md)
+- [class MPMusicPlayerMediaItemQueueDescriptor](./mpmusicplayermediaitemqueuedescriptor.md)
   A set of properties and methods for modifying audio media items in the player’s media queue.
-- [class MPMusicPlayerStoreQueueDescriptor](mpmusicplayerstorequeuedescriptor.md)
+- [class MPMusicPlayerStoreQueueDescriptor](./mpmusicplayerstorequeuedescriptor.md)
   A set of properties and methods for modifying items, based on their store identifier, in the player’s queue.
-- [class MPMusicPlayerPlayParametersQueueDescriptor](mpmusicplayerplayparametersqueuedescriptor.md)
+- [class MPMusicPlayerPlayParametersQueueDescriptor](./mpmusicplayerplayparametersqueuedescriptor.md)
   A set of properties and methods for modifying how to play items, based on play parameters the framework returns.
 
 

@@ -1,7 +1,8 @@
 # prefix(while:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an asynchronous sequence, containing the initial, consecutive elements of the base sequence that satisfy the given predicate.
 
@@ -46,7 +47,8 @@ for try await number in stream {
 
 ## See Also
 
-- [func prefix(Int) -> AsyncPrefixSequence<Self>](asyncstream/prefix(_:).md)
+### Selecting Elements
+- [func prefix(Int) -> AsyncPrefixSequence<Self>](./prefix%28_%29.md)
   Returns an asynchronous sequence, up to the specified maximum length, containing the initial elements of the base asynchronous sequence.
 
 

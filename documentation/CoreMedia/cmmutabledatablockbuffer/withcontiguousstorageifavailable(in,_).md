@@ -1,7 +1,8 @@
 # withContiguousStorageIfAvailable(in:_:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Access contents of the buffer if available as contiguous memory block.
 

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: ExtensionFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new monitor without any extension points.
 
@@ -22,11 +23,12 @@ init()
 
 #### Discussion
 
-After using this initializer, call the [`addAppExtensionPoint(_:)`](appextensionpoint/monitor/addappextensionpoint(_:).md) method to add an extension point to monitor.
+After using this initializer, call the [`addAppExtensionPoint(_:)`](./addappextensionpoint%28_%29.md) method to add an extension point to monitor.
 
 ## See Also
 
-- [convenience init(appExtensionPoint: AppExtensionPoint) async throws](appextensionpoint/monitor/init(appextensionpoint:).md)
+### Creating a monitor
+- [convenience init(appExtensionPoint: AppExtensionPoint) async throws](./init%28appextensionpoint%29.md)
   Creates a new monitor and configures it with the specified extension point.
 
 

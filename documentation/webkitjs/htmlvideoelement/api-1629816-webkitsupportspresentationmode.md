@@ -1,7 +1,8 @@
 # webkitSupportsPresentationMode
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 A Boolean value indicating whether the video can be played in presentation mode.
 
@@ -11,7 +12,7 @@ A Boolean value indicating whether the video can be played in presentation mode.
 
 ## Declaration
 
-```swift
+```
 boolean webkitSupportsPresentationMode(
     VideoPresentationMode mode
 );
@@ -23,11 +24,12 @@ boolean webkitSupportsPresentationMode(
 
 ## See Also
 
-- [webkitSetPresentationMode](htmlvideoelement/1631224-webkitsetpresentationmode.md)
+### Displaying Presentation Mode
+- [webkitSetPresentationMode](./api-1631224-webkitsetpresentationmode.md)
   Sets the presentation mode for video playback. 
-- [webkitPresentationMode](htmlvideoelement/1631913-webkitpresentationmode.md)
+- [webkitPresentationMode](./api-1631913-webkitpresentationmode.md)
   A property indicating the presentation mode. 
-- [playsInline](htmlvideoelement/2528111-playsinline.md)
+- [playsInline](./api-2528111-playsinline.md)
   A Boolean value indicating whether the video plays inline.
 
 

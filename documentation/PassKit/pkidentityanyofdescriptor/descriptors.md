@@ -1,7 +1,8 @@
 # descriptors
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Set of requested descriptors for the composite document descriptor.
 
@@ -15,6 +16,10 @@ Set of requested descriptors for the composite document descriptor.
 
 ```swift
 var descriptors: [any PKIdentityDocumentDescriptor] { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSArray<id<PKIdentityDocumentDescriptor>> * descriptors;
 ```
 
 

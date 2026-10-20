@@ -1,7 +1,8 @@
 # UICollectionLayoutSectionOrthogonalScrollingProperties.Bounce.never
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The orthogonal scroll view stops scrolling immediately when it encounters a content boundary without bouncing.
 
@@ -18,11 +19,16 @@ The orthogonal scroll view stops scrolling immediately when it encounters a cont
 case never
 ```
 
+```c
+UICollectionLayoutSectionOrthogonalScrollingBounceNever
+```
+
 ## See Also
 
-- [UICollectionLayoutSectionOrthogonalScrollingProperties.Bounce.always](uicollectionlayoutsectionorthogonalscrollingproperties/bounce-swift.enum/always.md)
+### Selecting bounce options
+- [UICollectionLayoutSectionOrthogonalScrollingProperties.Bounce.always](./always.md)
   The orthogonal scroll view bounces even if the content is smaller than its bounds.
-- [UICollectionLayoutSectionOrthogonalScrollingProperties.Bounce.automatic](uicollectionlayoutsectionorthogonalscrollingproperties/bounce-swift.enum/automatic.md)
+- [UICollectionLayoutSectionOrthogonalScrollingProperties.Bounce.automatic](./automatic.md)
   The orthogonal scroll view bounces when it encounters a content boundary.
 
 

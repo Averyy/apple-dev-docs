@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Core WLAN  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that provides Wi-Fi event handling.
 
@@ -14,9 +15,13 @@ An object that provides Wi-Fi event handling.
 weak var delegate: AnyObject? { get set }
 ```
 
+```objc
+@property (nonatomic, weak) id delegate;
+```
+
 #### Discussion
 
-When a client registers for Wi-Fi events with the [`startMonitoringEvent(with:)`](cwwificlient/startmonitoringevent(with:).md) method, the client’s delegate receives messages in response to Wi-Fi events. The delegate should adopt the [`CWEventDelegate`](cweventdelegate.md) protocol to receive these messages.
+When a client registers for Wi-Fi events with the [`startMonitoringEvent(with:)`](./startmonitoringevent%28with%29.md) method, the client’s delegate receives messages in response to Wi-Fi events. The delegate should adopt the [`CWEventDelegate`](../cweventdelegate.md) protocol to receive these messages.
 
 
 ---

@@ -1,7 +1,8 @@
 # imageView
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image view associated with the poster view.
 
@@ -14,17 +15,22 @@ The image view associated with the poster view.
 var imageView: UIImageView { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) UIImageView * imageView;
+```
+
 #### Discussion
 
-Use the image view to add additional information, such as overlays or badges, to the main content image. Don’t set an image directly on the image view. Always use the poster view’s [`image`](tvposterview/image.md) property.
+Use the image view to add additional information, such as overlays or badges, to the main content image. Don’t set an image directly on the image view. Always use the poster view’s [`image`](./image.md) property.
 
 ## See Also
 
-- [var image: UIImage?](tvposterview/image.md)
+### Configuring a Poster View
+- [var image: UIImage?](./image.md)
   The image for the poster view.
-- [var title: String?](tvposterview/title.md)
+- [var title: String?](./title.md)
   The title for the poster view.
-- [var subtitle: String?](tvposterview/subtitle.md)
+- [var subtitle: String?](./subtitle.md)
   The subtitle for the poster view.
 
 

@@ -1,7 +1,8 @@
 # sharedSecretFromKeyAgreement(with:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes a shared secret with the provided public key from another party.
 
@@ -30,7 +31,8 @@ The computed shared secret.
 
 ## See Also
 
-- [struct SharedSecret](sharedsecret.md)
+### Creating a shared secret
+- [struct SharedSecret](../../../sharedsecret.md)
   A key agreement result from which you can derive a symmetric cryptographic key.
 
 

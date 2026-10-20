@@ -1,7 +1,8 @@
 # URLSession.DelayedRequestDisposition.cancel
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A disposition indicating that the task should be canceled.
 
@@ -20,11 +21,16 @@ A disposition indicating that the task should be canceled.
 case cancel
 ```
 
+```c
+NSURLSessionDelayedRequestCancel
+```
+
 ## See Also
 
-- [URLSession.DelayedRequestDisposition.continueLoading](urlsession/delayedrequestdisposition/continueloading.md)
+### Dispositions
+- [URLSession.DelayedRequestDisposition.continueLoading](./continueloading.md)
   A disposition indicating that the task should proceed with the original request.
-- [URLSession.DelayedRequestDisposition.useNewRequest](urlsession/delayedrequestdisposition/usenewrequest.md)
+- [URLSession.DelayedRequestDisposition.useNewRequest](./usenewrequest.md)
   A disposition indicating that the task should use a new request to perform the network load.
 
 

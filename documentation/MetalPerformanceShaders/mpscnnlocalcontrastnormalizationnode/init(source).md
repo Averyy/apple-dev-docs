@@ -1,7 +1,8 @@
 # init(source:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -17,9 +18,14 @@
 init(source sourceNode: MPSNNImageNode)
 ```
 
+```objc
+- (instancetype) initWithSource:(MPSNNImageNode *) sourceNode;
+```
+
 ## See Also
 
-- [init(source: MPSNNImageNode, kernelSize: Int)](mpscnnlocalcontrastnormalizationnode/init(source:kernelsize:).md)
+### Initializers
+- [init(source: MPSNNImageNode, kernelSize: Int)](./init%28source,kernelsize%29.md)
 
 
 ---

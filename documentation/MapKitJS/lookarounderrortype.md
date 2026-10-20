@@ -1,7 +1,8 @@
 # LookAroundErrorType
 
 **Framework**: MapKit JS  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that describes errors than can occur when starting a Look Around view.
 
@@ -10,7 +11,7 @@ Values that describes errors than can occur when starting a Look Around view.
 
 ## Declaration
 
-```swift
+```
 const LookAroundErrorType: Readonly<{
     readonly AvailabilityError: "availability-error";
     readonly BrowserError: "browser-error";
@@ -24,18 +25,19 @@ type LookAroundErrorType =
 ## Topics
 
 ### Enumeration Cases
-- [AvailabilityError](lookarounderrortype/availabilityerror.md)
+- [AvailabilityError](./lookarounderrortype/availabilityerror.md)
   An error type that indicates the requested Look Around view isn’t available.
-- [BrowserError](lookarounderrortype/browsererror.md)
+- [BrowserError](./lookarounderrortype/browsererror.md)
   An error type that indicates the browser doesn’t support the Look Around experience.
-- [ServiceError](lookarounderrortype/serviceerror.md)
+- [ServiceError](./lookarounderrortype/serviceerror.md)
   An error type that indicates the service supporting the Look Around view isn’t available.
-- [UnknownError](lookarounderrortype/unknownerror.md)
+- [UnknownError](./lookarounderrortype/unknownerror.md)
   An error type that indicates the Look Around view encountered an unknown error.
 
 ## See Also
 
-- [type LookAroundErrorEvent](lookarounderrorevent.md)
+### Events and event properties
+- [type LookAroundErrorEvent](./lookarounderrorevent.md)
   A custom event object that contains information about the error when starting a Look Around view.
 
 

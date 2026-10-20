@@ -1,17 +1,18 @@
 # scroll(_:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initiates a scroll in the layer’s closest ancestor scroll layer so that the specified point lies at the origin of the scroll layer.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,13 @@ Initiates a scroll in the layer’s closest ancestor scroll layer so that the sp
 func scroll(_ p: CGPoint)
 ```
 
+```objc
+- (void) scrollPoint:(CGPoint) p;
+```
+
 #### Discussion
 
-If the layer is not contained by a [`CAScrollLayer`](cascrolllayer.md) object, this method does nothing.
+If the layer is not contained by a [`CAScrollLayer`](../cascrolllayer.md) object, this method does nothing.
 
 ## Parameters
 
@@ -29,9 +34,10 @@ If the layer is not contained by a [`CAScrollLayer`](cascrolllayer.md) object, t
 
 ## See Also
 
-- [var visibleRect: CGRect](calayer/visiblerect.md)
+### Scrolling
+- [var visibleRect: CGRect](./visiblerect.md)
   The visible region of the layer in its own coordinate space.
-- [func scrollRectToVisible(CGRect)](calayer/scrollrecttovisible(_:).md)
+- [func scrollRectToVisible(CGRect)](./scrollrecttovisible%28_%29.md)
   Initiates a scroll in the layer’s closest ancestor scroll layer so that the specified rectangle becomes visible.
 
 

@@ -1,7 +1,8 @@
 # init(bytesNoCopy:length:encoding:deallocator:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 convenience init?(bytesNoCopy bytes: UnsafeMutableRawPointer, length len: Int, encoding: UInt, deallocator: ((UnsafeMutableRawPointer, Int) -> Void)? = nil)
+```
+
+```objc
+- (instancetype) initWithBytesNoCopy:(void *) bytes length:(NSUInteger) len encoding:(NSStringEncoding) encoding deallocator:(void (^)(void *, NSUInteger )) deallocator;
 ```
 
 

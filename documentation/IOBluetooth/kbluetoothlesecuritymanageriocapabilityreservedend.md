@@ -1,10 +1,11 @@
 # kBluetoothLESecurityManagerIOCapabilityReservedEnd
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,14 +13,19 @@
 var kBluetoothLESecurityManagerIOCapabilityReservedEnd: BluetoothLESecurityManagerIOCapability { get }
 ```
 
+```c
+kBluetoothLESecurityManagerIOCapabilityReservedEnd
+```
+
 ## See Also
 
-- [var kBluetoothLESecurityManagerIOCapabilityDisplayOnly: BluetoothLESecurityManagerIOCapability](kbluetoothlesecuritymanageriocapabilitydisplayonly.md)
-- [var kBluetoothLESecurityManagerIOCapabilityDisplayYesNo: BluetoothLESecurityManagerIOCapability](kbluetoothlesecuritymanageriocapabilitydisplayyesno.md)
-- [var kBluetoothLESecurityManagerIOCapabilityKeyboardDisplay: BluetoothLESecurityManagerIOCapability](kbluetoothlesecuritymanageriocapabilitykeyboarddisplay.md)
-- [var kBluetoothLESecurityManagerIOCapabilityKeyboardOnly: BluetoothLESecurityManagerIOCapability](kbluetoothlesecuritymanageriocapabilitykeyboardonly.md)
-- [var kBluetoothLESecurityManagerIOCapabilityNoInputNoOutput: BluetoothLESecurityManagerIOCapability](kbluetoothlesecuritymanageriocapabilitynoinputnooutput.md)
-- [var kBluetoothLESecurityManagerIOCapabilityReservedStart: BluetoothLESecurityManagerIOCapability](kbluetoothlesecuritymanageriocapabilityreservedstart.md)
+### Constants
+- [var kBluetoothLESecurityManagerIOCapabilityDisplayOnly: BluetoothLESecurityManagerIOCapability](./kbluetoothlesecuritymanageriocapabilitydisplayonly.md)
+- [var kBluetoothLESecurityManagerIOCapabilityDisplayYesNo: BluetoothLESecurityManagerIOCapability](./kbluetoothlesecuritymanageriocapabilitydisplayyesno.md)
+- [var kBluetoothLESecurityManagerIOCapabilityKeyboardDisplay: BluetoothLESecurityManagerIOCapability](./kbluetoothlesecuritymanageriocapabilitykeyboarddisplay.md)
+- [var kBluetoothLESecurityManagerIOCapabilityKeyboardOnly: BluetoothLESecurityManagerIOCapability](./kbluetoothlesecuritymanageriocapabilitykeyboardonly.md)
+- [var kBluetoothLESecurityManagerIOCapabilityNoInputNoOutput: BluetoothLESecurityManagerIOCapability](./kbluetoothlesecuritymanageriocapabilitynoinputnooutput.md)
+- [var kBluetoothLESecurityManagerIOCapabilityReservedStart: BluetoothLESecurityManagerIOCapability](./kbluetoothlesecuritymanageriocapabilityreservedstart.md)
 
 
 ---

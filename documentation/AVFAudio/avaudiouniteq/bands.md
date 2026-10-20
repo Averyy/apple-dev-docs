@@ -1,7 +1,8 @@
 # bands
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of equalizer filter parameters.
 
@@ -19,15 +20,20 @@ An array of equalizer filter parameters.
 var bands: [AVAudioUnitEQFilterParameters] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVAudioUnitEQFilterParameters *> * bands;
+```
+
 #### Discussion
 
 The number of elements in the array is equal to the number of bands.
 
 ## See Also
 
-- [class AVAudioUnitEQFilterParameters](avaudiouniteqfilterparameters.md)
+### Configuring equalizer bands
+- [class AVAudioUnitEQFilterParameters](../avaudiouniteqfilterparameters.md)
   An object that encapsulates the parameters that the equalizer uses.
-- [var globalGain: Float](avaudiouniteq/globalgain.md)
+- [var globalGain: Float](./globalgain.md)
   The overall gain adjustment that the audio unit applies to the signal, in decibels.
 
 

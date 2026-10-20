@@ -1,23 +1,28 @@
 # CFShow(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Prints a description of a Core Foundation object to stderr.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFShow(_ obj: CFTypeRef!)
+```
+
+```c
+extern void CFShow(CFTypeRef obj);
 ```
 
 #### Discussion
@@ -43,11 +48,12 @@ You can also incorporate calls to `CFShow` in a test version of your code to pri
 
 ## See Also
 
-- [func CFCopyDescription(CFTypeRef!) -> CFString!](cfcopydescription(_:).md)
+### Miscellaneous Functions
+- [func CFCopyDescription(CFTypeRef!) -> CFString!](./cfcopydescription%28_%29.md)
   Returns a textual description of a Core Foundation object.
-- [func CFCopyTypeIDDescription(CFTypeID) -> CFString!](cfcopytypeiddescription(_:).md)
+- [func CFCopyTypeIDDescription(CFTypeID) -> CFString!](./cfcopytypeiddescription%28_%29.md)
   Returns a textual description of a Core Foundation type, as identified by its type ID, which can be used when debugging.
-- [func CFGetTypeID(CFTypeRef!) -> CFTypeID](cfgettypeid(_:).md)
+- [func CFGetTypeID(CFTypeRef!) -> CFTypeID](./cfgettypeid%28_%29.md)
   Returns the unique identifier of an opaque type to which a Core Foundation object belongs.
 
 

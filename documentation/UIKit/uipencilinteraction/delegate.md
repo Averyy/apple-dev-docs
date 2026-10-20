@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that handles the double-tap or squeeze interactions a person makes on Apple Pencil.
 
@@ -17,9 +18,14 @@ The object that handles the double-tap or squeeze interactions a person makes on
 weak var delegate: (any UIPencilInteractionDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UIPencilInteractionDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol UIPencilInteractionDelegate](uipencilinteractiondelegate.md)
+### Handling interactions
+- [protocol UIPencilInteractionDelegate](../uipencilinteractiondelegate.md)
   The interface an object implements to handle double taps or squeezes a person makes on Apple Pencil.
 
 

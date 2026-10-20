@@ -1,7 +1,8 @@
 # kCMMetadataIdentifier_ITUT_T35MetadataSMPTE2094_50
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 27.0+
@@ -18,9 +19,13 @@
 let kCMMetadataIdentifier_ITUT_T35MetadataSMPTE2094_50: CFString
 ```
 
+```c
+extern CFStringRef const kCMMetadataIdentifier_ITUT_T35MetadataSMPTE2094_50;
+```
+
 #### Discussion
 
-```None
+```
 SMPTE ST2094-50 HDR metadata. (it35 keyspace)
 Expected data type is kCMMetadataDataType_QuickTimeMetadataSMPTE2094_50.
 ```

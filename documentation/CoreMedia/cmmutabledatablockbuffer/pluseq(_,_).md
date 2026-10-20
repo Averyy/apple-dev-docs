@@ -1,7 +1,8 @@
 # +=(_:_:)
 
 **Framework**: Core Media  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Appends the bytes of another block buffer without copying.
 

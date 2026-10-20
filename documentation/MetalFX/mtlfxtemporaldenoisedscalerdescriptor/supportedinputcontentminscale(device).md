@@ -1,7 +1,8 @@
 # supportedInputContentMinScale(device:)
 
 **Framework**: MetalFX  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the smallest temporal scaling factor the device supports as a floating-point value.
 
@@ -16,6 +17,10 @@ Returns the smallest temporal scaling factor the device supports as a floating-p
 
 ```swift
 class func supportedInputContentMinScale(device: any MTLDevice) -> Float
+```
+
+```objc
++ (float) supportedInputContentMinScaleForDevice:(id<MTLDevice>) device;
 ```
 
 #### Return Value

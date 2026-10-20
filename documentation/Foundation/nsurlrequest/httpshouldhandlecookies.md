@@ -1,7 +1,8 @@
 # httpShouldHandleCookies
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the default cookie handling will be used for this request.
 
@@ -20,19 +21,25 @@ A Boolean value that indicates whether the default cookie handling will be used 
 var httpShouldHandleCookies: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL HTTPShouldHandleCookies;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the default cookie handling will be used for this request, [`false`](https://developer.apple.com/documentation/swift/false) otherwise. The default is [`true`](https://developer.apple.com/documentation/swift/true).
+[`true`](../../Swift/true.md) if the default cookie handling will be used for this request, [`false`](../../Swift/false.md) otherwise. The default is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var httpShouldHandleCookies: Bool](nsmutableurlrequest/httpshouldhandlecookies.md)
+### Related Documentation
+- [var httpShouldHandleCookies: Bool](../nsmutableurlrequest/httpshouldhandlecookies.md)
   A Boolean value that indicates whether the request should use the default cookie handling for the request.
-- [var timeoutInterval: TimeInterval](nsurlrequest/timeoutinterval.md)
+### Controlling request behavior
+- [var timeoutInterval: TimeInterval](./timeoutinterval.md)
   The request’s timeout interval, in seconds.
-- [var httpShouldUsePipelining: Bool](nsurlrequest/httpshouldusepipelining.md)
+- [var httpShouldUsePipelining: Bool](./httpshouldusepipelining.md)
   A Boolean value that indicates whether the request should continue transmitting data before receiving a response from an earlier transmission.
-- [var allowsCellularAccess: Bool](nsurlrequest/allowscellularaccess.md)
+- [var allowsCellularAccess: Bool](./allowscellularaccess.md)
   A Boolean value that indicates whether the request is allowed to use the cellular radio (if present).
 
 

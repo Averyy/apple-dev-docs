@@ -1,7 +1,8 @@
 # MTLFunctionLogDebugLocation
 
 **Framework**: Metal  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The source code that logged a debug message.
 
@@ -19,30 +20,35 @@ The source code that logged a debug message.
 protocol MTLFunctionLogDebugLocation : NSObjectProtocol
 ```
 
+```objc
+@protocol MTLFunctionLogDebugLocation <NSObject>
+```
+
 ## Topics
 
 ### Inspecting the location details
-- [var functionName: String?](mtlfunctionlogdebuglocation/functionname.md)
+- [var functionName: String?](./mtlfunctionlogdebuglocation/functionname.md)
   The name of the shader function.
-- [var url: URL?](mtlfunctionlogdebuglocation/url.md)
+- [var url: URL?](./mtlfunctionlogdebuglocation/url.md)
   The URL of the file that contains the shader function.
-- [var line: Int](mtlfunctionlogdebuglocation/line.md)
+- [var line: Int](./mtlfunctionlogdebuglocation/line.md)
   The line that the log message appears on.
-- [var column: Int](mtlfunctionlogdebuglocation/column.md)
+- [var column: Int](./mtlfunctionlogdebuglocation/column.md)
   The column where the log message appears.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var debugLocation: (any MTLFunctionLogDebugLocation)?](mtlfunctionlog/debuglocation.md)
+### Getting execution details
+- [var debugLocation: (any MTLFunctionLogDebugLocation)?](./mtlfunctionlog/debuglocation.md)
   If known, the location of the logging command within a shader source file.
-- [var encoderLabel: String?](mtlfunctionlog/encoderlabel.md)
+- [var encoderLabel: String?](./mtlfunctionlog/encoderlabel.md)
   The label for the encoder that logged the message.
-- [var function: (any MTLFunction)?](mtlfunctionlog/function.md)
+- [var function: (any MTLFunction)?](./mtlfunctionlog/function.md)
   When known, the function object corresponding to the logged message.
 
 

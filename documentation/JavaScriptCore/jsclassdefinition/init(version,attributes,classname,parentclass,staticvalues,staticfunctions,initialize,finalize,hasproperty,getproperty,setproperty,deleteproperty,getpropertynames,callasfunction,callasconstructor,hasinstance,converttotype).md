@@ -1,7 +1,8 @@
 # init(version:attributes:className:parentClass:staticValues:staticFunctions:initialize:finalize:hasProperty:getProperty:setProperty:deleteProperty:getPropertyNames:callAsFunction:callAsConstructor:hasInstance:convertToType:)
 
 **Framework**: JavaScriptCore  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a class definition with the specified values.
 
@@ -21,9 +22,10 @@ init(version: Int32, attributes: JSClassAttributes, className: UnsafePointer<CCh
 
 ## See Also
 
-- [init()](jsclassdefinition/init.md)
+### Creating a Class Definition
+- [init()](./init%28%29.md)
   Creates an empty class definition.
-- [typealias JSClassAttributes](jsclassattributes.md)
+- [typealias JSClassAttributes](../jsclassattributes.md)
   A set of JavaScript class attributes.
 
 

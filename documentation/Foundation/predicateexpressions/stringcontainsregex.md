@@ -1,7 +1,8 @@
 # PredicateExpressions.StringContainsRegex
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -21,23 +22,23 @@ struct StringContainsRegex<Subject, Regex> where Subject : PredicateExpression, 
 ## Topics
 
 ### Initializers
-- [init(subject: Subject, regex: Regex)](predicateexpressions/stringcontainsregex/init(subject:regex:).md)
+- [init(subject: Subject, regex: Regex)](./stringcontainsregex/init%28subject,regex%29.md)
 ### Instance Properties
-- [let regex: Regex](predicateexpressions/stringcontainsregex/regex.md)
-- [let subject: Subject](predicateexpressions/stringcontainsregex/subject.md)
+- [let regex: Regex](./stringcontainsregex/regex.md)
+- [let subject: Subject](./stringcontainsregex/subject.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Escapable](../swift/escapable.md)
-- [PredicateExpression](predicateexpression.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [StandardPredicateExpression](standardpredicateexpression.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Escapable](../../Swift/escapable.md)
+- [PredicateExpression](../predicateexpression.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [StandardPredicateExpression](../standardpredicateexpression.md)
 
 
 ---

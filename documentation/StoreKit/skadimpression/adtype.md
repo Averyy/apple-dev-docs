@@ -1,7 +1,8 @@
 # adType
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the ad.
 
@@ -16,15 +17,20 @@ The type of the ad.
 var adType: String? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSString * adType;
+```
+
 #### Discussion
 
 This property is not used.
 
 ## See Also
 
-- [var adDescription: String?](skadimpression/addescription.md)
+### Describing ads
+- [var adDescription: String?](./addescription.md)
   A human-readable description of the ad.
-- [var adPurchaserName: String?](skadimpression/adpurchasername.md)
+- [var adPurchaserName: String?](./adpurchasername.md)
   The name of the entity that purchased the ad.
 
 

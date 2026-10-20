@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The amount to adjust the exposure of the image by.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ The amount to adjust the exposure of the image by.
 var ev: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float EV;
+```
+
 ## See Also
 
-- [var inputImage: CIImage?](ciexposureadjust/inputimage.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
 
 

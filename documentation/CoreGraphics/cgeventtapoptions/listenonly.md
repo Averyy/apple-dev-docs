@@ -1,16 +1,21 @@
 # CGEventTapOptions.listenOnly
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 case listenOnly
+```
+
+```c
+kCGEventTapOptionListenOnly
 ```
 
 #### Discussion
@@ -19,7 +24,8 @@ Specifies that a new event tap is a passive listener.
 
 ## See Also
 
-- [CGEventTapOptions.defaultTap](cgeventtapoptions/defaulttap.md)
+### Constants
+- [CGEventTapOptions.defaultTap](./defaulttap.md)
 
 
 ---

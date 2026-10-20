@@ -1,7 +1,8 @@
 # CFStreamErrorHTTPAuthentication.badPassword
 
 **Framework**: CFNetwork  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Password is in a format that is not suitable for the request. Currently, passwords are decoded using `kCFStringEncodingISOLatin1`.
 
@@ -19,11 +20,16 @@ Password is in a format that is not suitable for the request. Currently, passwor
 case badPassword
 ```
 
+```c
+kCFStreamErrorHTTPAuthenticationBadPassword
+```
+
 ## See Also
 
-- [CFStreamErrorHTTPAuthentication.typeUnsupported](cfstreamerrorhttpauthentication/typeunsupported.md)
+### Constants
+- [CFStreamErrorHTTPAuthentication.typeUnsupported](./typeunsupported.md)
   Specified authentication type is not supported.
-- [CFStreamErrorHTTPAuthentication.badUserName](cfstreamerrorhttpauthentication/badusername.md)
+- [CFStreamErrorHTTPAuthentication.badUserName](./badusername.md)
   User name is in a format that is not suitable for the request. Currently, user names are decoded using `kCFStringEncodingISOLatin1`.
 
 

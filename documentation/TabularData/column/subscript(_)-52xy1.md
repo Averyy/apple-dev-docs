@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: TabularData  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses a contiguous range of elements with a range expression.
 
@@ -26,9 +27,10 @@ subscript<R>(range: R) -> ColumnSlice<WrappedElement> where R : RangeExpression,
 
 ## See Also
 
-- [subscript(Int) -> Column<WrappedElement>.Element](column/subscript(_:)-qm4d.md)
+### Accessing Elements
+- [subscript(Int) -> Column<WrappedElement>.Element](./subscript%28_%29-qm4d.md)
   Accesses an element at an index.
-- [subscript(Range<Int>) -> ColumnSlice<WrappedElement>](column/subscript(_:)-gne9.md)
+- [subscript(Range<Int>) -> ColumnSlice<WrappedElement>](./subscript%28_%29-gne9.md)
   Accesses a contiguous range of elements.
 
 

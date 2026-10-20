@@ -1,7 +1,8 @@
 # AppStore
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures macOS App Store restrictions.
 
@@ -10,7 +11,7 @@ The payload that configures macOS App Store restrictions.
 
 ## Declaration
 
-```swift
+```
 object AppStore
 ```
 
@@ -18,7 +19,7 @@ object AppStore
 
 Specify `com.apple.appstore` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.appstore` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -72,10 +73,26 @@ Specify `com.apple.appstore` as the payload type.
 
 ## Properties
 
-- `DisableSoftwareUpdateNotifications` (boolean): If `true`, the system disables software update notifications. Available: macOS 10.10+
-- `restrict-store-disable-app-adoption` (boolean): If `true`, the system disables app adoption by users. Available: macOS 10.10+
-- `restrict-store-require-admin-to-install` (boolean): If `true`, the system restricts app installations to admin users only. Deprecated in macOS 10.14. Use the `com.apple.SoftwareUpdate` payload key `restrict-software-update-require-admin-to-install` instead. Deprecated: macOS 10.14+
-- `restrict-store-softwareupdate-only` (boolean): If `true`, the system prevents App Store from launching. Restricts installations to software updates only in macOS 10.10 through 10.13. Available: macOS 10.10+
+- `DisableSoftwareUpdateNotifications` (boolean): If `true`, the system disables software update notifications.
+
+  Available: macOS 10.10+
+
+  **Default**: `false`
+- `restrict-store-disable-app-adoption` (boolean): If `true`, the system disables app adoption by users.
+
+  Available: macOS 10.10+
+
+  **Default**: `false`
+- `restrict-store-require-admin-to-install` (boolean) *(deprecated)*: If `true`, the system restricts app installations to admin users only. Deprecated in macOS 10.14. Use the `com.apple.SoftwareUpdate` payload key `restrict-software-update-require-admin-to-install` instead.
+
+  Deprecated: macOS 10.14+
+
+  **Default**: `false`
+- `restrict-store-softwareupdate-only` (boolean): If `true`, the system prevents App Store from launching. Restricts installations to software updates only in macOS 10.10 through 10.13.
+
+  Available: macOS 10.10+
+
+  **Default**: `false`
 
 
 ---

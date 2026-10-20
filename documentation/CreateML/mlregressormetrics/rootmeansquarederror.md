@@ -1,7 +1,8 @@
 # rootMeanSquaredError
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A common metric used to determine the deviation between correct and predicted values.
 
@@ -21,15 +22,16 @@ var rootMeanSquaredError: Double { get }
 
 ## Mentions
 
-- [Improving Your Model’s Accuracy](improving-your-model-s-accuracy.md)
+- [Improving Your Model’s Accuracy](../improving-your-model-s-accuracy.md)
 
 #### Discussion
 
-The [`rootMeanSquaredError`](mlregressormetrics/rootmeansquarederror.md) is calculated by taking the square-root of the average squared distance between the correct and predicted value.
+The [`rootMeanSquaredError`](./rootmeansquarederror.md) is calculated by taking the square-root of the average squared distance between the correct and predicted value.
 
 ## See Also
 
-- [var maximumError: Double](mlregressormetrics/maximumerror.md)
+### Understanding the model
+- [var maximumError: Double](./maximumerror.md)
   The largest absolute difference between the expected values and the model’s predicted values during testing or training.
 
 

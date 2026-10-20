@@ -1,7 +1,8 @@
 # YDelta
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The delta value of the Y position.
 
@@ -10,15 +11,16 @@ The delta value of the Y position.
 
 ## Declaration
 
-```swift
+```c
 SInt16 YDelta;
 ```
 
 ## See Also
 
-- [XDelta](iousbmousedata/1546115-xdelta.md)
+### Getting the Properties
+- [XDelta](./api-1546115-xdelta.md)
   The delta value of the X position.
-- [buttons](iousbmousedata/1546455-buttons.md)
+- [buttons](./api-1546455-buttons.md)
   The value of the mouse buttons.
 
 

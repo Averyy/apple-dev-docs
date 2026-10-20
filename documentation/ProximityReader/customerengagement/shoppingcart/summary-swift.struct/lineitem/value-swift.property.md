@@ -1,7 +1,8 @@
 # value
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stored string or decimal representation of the line item.
 

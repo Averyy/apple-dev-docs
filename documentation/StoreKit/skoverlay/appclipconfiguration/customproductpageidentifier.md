@@ -1,7 +1,8 @@
 # customProductPageIdentifier
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier for a parent app’s custom product page.
 
@@ -15,6 +16,10 @@ An identifier for a parent app’s custom product page.
 
 ```swift
 var customProductPageIdentifier: String? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) NSString * customProductPageIdentifier;
 ```
 
 #### Discussion

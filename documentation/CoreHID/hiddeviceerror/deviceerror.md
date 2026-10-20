@@ -1,7 +1,8 @@
 # HIDDeviceError.deviceError
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 There was an error with the device that couldn’t be further determined.
 

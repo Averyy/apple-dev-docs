@@ -1,7 +1,8 @@
 # items
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The items included in this subscription.
 
@@ -22,12 +23,13 @@ let items: [Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item]
 
 ## See Also
 
-- [let consistencyToken: String](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/consistencytoken.md)
-- [let description: String](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/description.md)
-- [let displayName: String](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/displayname.md)
-- [let period: SubscriptionPeriod](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/period.md)
-- [let requestReferenceID: String](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/requestreferenceid.md)
-- [let taxCode: String](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/taxcode.md)
+### Instance Properties
+- [let consistencyToken: String](./consistencytoken.md)
+- [let description: String](./description.md)
+- [let displayName: String](./displayname.md)
+- [let period: SubscriptionPeriod](./period.md)
+- [let requestReferenceID: String](./requestreferenceid.md)
+- [let taxCode: String](./taxcode.md)
 
 
 ---

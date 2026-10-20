@@ -1,7 +1,8 @@
 # init(controlPoint1:controlPoint2:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the object with the specified control points for a cubic Bézier curve.
 
@@ -16,6 +17,10 @@ Initializes the object with the specified control points for a cubic Bézier cur
 
 ```swift
 init(controlPoint1 point1: CGPoint, controlPoint2 point2: CGPoint)
+```
+
+```objc
+- (instancetype) initWithControlPoint1:(CGPoint) point1 controlPoint2:(CGPoint) point2;
 ```
 
 #### Return Value
@@ -33,11 +38,12 @@ Use this method to initialize the timing curve with a custom cubic Bézier curve
 
 ## See Also
 
-- [init()](uicubictimingparameters/init.md)
+### Initializing a cubic timing parameters object
+- [init()](./init%28%29.md)
   Initializes the object with the system’s default timing curve.
-- [init(animationCurve: UIView.AnimationCurve)](uicubictimingparameters/init(animationcurve:).md)
+- [init(animationCurve: UIView.AnimationCurve)](./init%28animationcurve%29.md)
   Initializes the object with the specified UIKit timing curve.
-- [init?(coder: NSCoder)](uicubictimingparameters/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a timing parameters object from data in an unarchiver.
 
 

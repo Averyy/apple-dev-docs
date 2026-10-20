@@ -1,7 +1,8 @@
 # OSLogBoolFormat
 
 **Framework**: os  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The formatting options for Boolean values.
 
@@ -11,7 +12,7 @@ The formatting options for Boolean values.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -22,31 +23,32 @@ enum OSLogBoolFormat
 
 ## Mentions
 
-- [Generating Log Messages from Your Code](generating-log-messages-from-your-code.md)
+- [Generating Log Messages from Your Code](./generating-log-messages-from-your-code.md)
 
 ## Topics
 
 ### Getting the Boolean Format Options
-- [OSLogBoolFormat.truth](oslogboolformat/truth.md)
+- [OSLogBoolFormat.truth](./oslogboolformat/truth.md)
   An option to format Boolean values as true or false strings.
-- [OSLogBoolFormat.answer](oslogboolformat/answer.md)
+- [OSLogBoolFormat.answer](./oslogboolformat/answer.md)
   An option to format Boolean values as yes or no strings.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [struct OSLogIntegerFormatting](oslogintegerformatting.md)
+### Value Formatters
+- [struct OSLogIntegerFormatting](./oslogintegerformatting.md)
   The formatting options for integer values.
-- [enum OSLogInt32ExtendedFormat](oslogint32extendedformat.md)
+- [enum OSLogInt32ExtendedFormat](./oslogint32extendedformat.md)
   The formatting options for 32-bit integer values.
-- [struct OSLogFloatFormatting](oslogfloatformatting.md)
+- [struct OSLogFloatFormatting](./oslogfloatformatting.md)
   The formatting options for double and floating-point numbers.
-- [enum OSLogPointerFormat](oslogpointerformat.md)
+- [enum OSLogPointerFormat](./oslogpointerformat.md)
   The formatting options for pointer data.
 
 

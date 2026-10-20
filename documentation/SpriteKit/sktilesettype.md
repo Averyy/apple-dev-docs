@@ -1,7 +1,8 @@
 # SKTileSetType
 
 **Framework**: SpriteKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration defining how tiles are arranged.
 
@@ -20,37 +21,42 @@ An enumeration defining how tiles are arranged.
 enum SKTileSetType
 ```
 
+```c
+enum SKTileSetType : NSUInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [SKTileSetType.grid](sktilesettype/grid.md)
-- [SKTileSetType.hexagonalFlat](sktilesettype/hexagonalflat.md)
-- [SKTileSetType.hexagonalPointy](sktilesettype/hexagonalpointy.md)
-- [SKTileSetType.isometric](sktilesettype/isometric.md)
+- [SKTileSetType.grid](./sktilesettype/grid.md)
+- [SKTileSetType.hexagonalFlat](./sktilesettype/hexagonalflat.md)
+- [SKTileSetType.hexagonalPointy](./sktilesettype/hexagonalpointy.md)
+- [SKTileSetType.isometric](./sktilesettype/isometric.md)
 ### Initializers
-- [init?(rawValue: UInt)](sktilesettype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./sktilesettype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var defaultTileGroup: SKTileGroup?](sktileset/defaulttilegroup.md)
+### Accessing or Reading a Tile Set’s Properties
+- [var defaultTileGroup: SKTileGroup?](./sktileset/defaulttilegroup.md)
   The tile set’s default tile group.
-- [var defaultTileSize: CGSize](sktileset/defaulttilesize.md)
+- [var defaultTileSize: CGSize](./sktileset/defaulttilesize.md)
   The tile set’s default tile size.
-- [var name: String?](sktileset/name.md)
+- [var name: String?](./sktileset/name.md)
   A name associated with the tile set.
-- [var tileGroups: [SKTileGroup]](sktileset/tilegroups.md)
+- [var tileGroups: [SKTileGroup]](./sktileset/tilegroups.md)
   The tile set’s array of tile group objects.
-- [var type: SKTileSetType](sktileset/type.md)
+- [var type: SKTileSetType](./sktileset/type.md)
   The tile set’s type.
 
 

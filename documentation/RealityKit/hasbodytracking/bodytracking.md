@@ -1,7 +1,8 @@
 # bodyTracking
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The body-tracking component for the body-tracked entity.
 

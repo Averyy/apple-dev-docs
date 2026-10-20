@@ -1,7 +1,8 @@
 # arrayLength
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of array elements for this texture.
 

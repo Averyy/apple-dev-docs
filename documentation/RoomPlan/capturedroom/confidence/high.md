@@ -1,7 +1,8 @@
 # CapturedRoom.Confidence.high
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A confidence value that represents a high level of certainty.
 
@@ -18,9 +19,10 @@ case high
 
 ## See Also
 
-- [CapturedRoom.Confidence.medium](capturedroom/confidence/medium.md)
+### Assessing a confidence value
+- [CapturedRoom.Confidence.medium](./medium.md)
   A confidence value that represents a medium level of certainty.
-- [CapturedRoom.Confidence.low](capturedroom/confidence/low.md)
+- [CapturedRoom.Confidence.low](./low.md)
   A confidence value that represents a low level of certainty.
 
 

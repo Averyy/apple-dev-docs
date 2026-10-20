@@ -1,7 +1,8 @@
 # init(upstream:other:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that republishes elements until another publisher emits an element.
 

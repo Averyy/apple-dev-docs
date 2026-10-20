@@ -1,7 +1,8 @@
 # addedSamples
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing the matching samples added to the HealthKit store.
 
@@ -10,7 +11,7 @@ An array containing the matching samples added to the HealthKit store.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -21,9 +22,10 @@ let addedSamples: [Sample]
 
 ## See Also
 
-- [let deletedObjects: [HKDeletedObject]](hkanchoredobjectquerydescriptor/result/deletedobjects.md)
+### Accessing the Results
+- [let deletedObjects: [HKDeletedObject]](./deletedobjects.md)
   An array of objects deleted from the HealthKit store.
-- [let newAnchor: HKQueryAnchor](hkanchoredobjectquerydescriptor/result/newanchor.md)
+- [let newAnchor: HKQueryAnchor](./newanchor.md)
   A value corresponding to the last sample that the anchor query has returned.
 
 

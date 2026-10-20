@@ -1,14 +1,15 @@
 # withName
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 static IOUserNetworkPacketBufferPool * withName(const char *poolName, OSObject *owner, IONetworkPacketType packetType, const IOUserNetworkPacketBufferPoolOptions *options);
 ```
 

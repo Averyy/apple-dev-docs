@@ -1,14 +1,15 @@
 # IOUSBHostCICommandMessageData0DeviceAddressPhase
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 IOUSBHostCICommandMessageData0DeviceAddressPhase = IOUSBBitRangePhase(0, 7)
 ```
 

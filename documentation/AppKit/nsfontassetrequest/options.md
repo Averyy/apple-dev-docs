@@ -1,7 +1,8 @@
 # NSFontAssetRequest.Options
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.13+
@@ -12,28 +13,33 @@
 struct Options
 ```
 
+```c
+enum NSFontAssetRequestOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Options
-- [static var usesStandardUI: NSFontAssetRequest.Options](nsfontassetrequest/options/usesstandardui.md)
+- [static var usesStandardUI: NSFontAssetRequest.Options](./options/usesstandardui.md)
 ### Initializers
-- [init(rawValue: UInt)](nsfontassetrequest/options/init(rawvalue:).md)
+- [init(rawValue: UInt)](./options/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [init(fontDescriptors: [NSFontDescriptor], options: NSFontAssetRequest.Options)](nsfontassetrequest/init(fontdescriptors:options:).md)
+### Creating a Font Asset Request
+- [init(fontDescriptors: [NSFontDescriptor], options: NSFontAssetRequest.Options)](./init%28fontdescriptors,options%29.md)
 
 
 ---

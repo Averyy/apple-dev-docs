@@ -1,17 +1,22 @@
 # init(textCell:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an NSCell object initialized with the specified string and set to have the cell’s default menu.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init(textCell string: String)
+```
+
+```objc
+- (instancetype) initTextCell:(NSString *) string;
 ```
 
 #### Return Value
@@ -20,9 +25,9 @@ An initialized `NSCell` object, or `nil` if the cell could not be initialized.
 
 #### Discussion
 
-If no field editor (a shared [`NSText`](nstext.md) object) has been created for all `NSCell` objects, one is created.
+If no field editor (a shared [`NSText`](../nstext.md) object) has been created for all `NSCell` objects, one is created.
 
-This is one of four designated initializers you must implement when subclassing. See [`Designated Initializers`](nscell#Designated-Initializers.md) for the complete list.
+This is one of four designated initializers you must implement when subclassing. See [Designated Initializers](../nscell.md#Designated-Initializers) for the complete list.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ This is one of four designated initializers you must implement when subclassing.
 
 ## See Also
 
-- [init(imageCell: NSImage?)](nscell/init(imagecell:).md)
+### Initializing a Cell
+- [init(imageCell: NSImage?)](./init%28imagecell%29.md)
   Returns an `NSCell` object initialized with the specified image and set to have the cell’s default menu.
 
 

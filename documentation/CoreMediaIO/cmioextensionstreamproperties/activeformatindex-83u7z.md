@@ -1,7 +1,8 @@
 # activeFormatIndex
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the active format.
 
@@ -19,15 +20,16 @@ var activeFormatIndex: Int? { get set }
 
 #### Discussion
 
-This value represents the index of the active format in the source’s [`formats`](cmioextensionstreamsource/formats.md) array.
+This value represents the index of the active format in the source’s [`formats`](../cmioextensionstreamsource/formats.md) array.
 
-The key for this property is [`streamActiveFormatIndex`](cmioextensionproperty/streamactiveformatindex.md).
+The key for this property is [`streamActiveFormatIndex`](../cmioextensionproperty/streamactiveformatindex.md).
 
 ## See Also
 
-- [var frameDuration: CMTime?](cmioextensionstreamproperties/frameduration-4rnl9.md)
+### Configuring Source Properties
+- [var frameDuration: CMTime?](./frameduration-4rnl9.md)
   The duration of the frame.
-- [var maxFrameDuration: CMTime?](cmioextensionstreamproperties/maxframeduration-5qqg.md)
+- [var maxFrameDuration: CMTime?](./maxframeduration-5qqg.md)
   The maximum duration of a frame.
 
 

@@ -1,7 +1,8 @@
 # ASDiscoveryDescriptor.Range.default
 
 **Framework**: AccessorySetupKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default range in which to discover accessories.
 
@@ -15,9 +16,14 @@ The default range in which to discover accessories.
 case `default`
 ```
 
+```c
+ASDiscoveryDescriptorRangeDefault
+```
+
 ## See Also
 
-- [ASDiscoveryDescriptor.Range.immediate](asdiscoverydescriptor/range/immediate.md)
+### Bluetooth options
+- [ASDiscoveryDescriptor.Range.immediate](./immediate.md)
   A range in the immediate vicinity of the device performing accessory discovery.
 
 

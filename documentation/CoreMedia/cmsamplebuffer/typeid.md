@@ -1,7 +1,8 @@
 # typeID
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the type identifier of sample buffer objects.
 

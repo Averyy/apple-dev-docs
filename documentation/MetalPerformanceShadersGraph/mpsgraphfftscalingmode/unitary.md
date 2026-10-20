@@ -1,7 +1,8 @@
 # MPSGraphFFTScalingMode.unitary
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Scales the FFT result with reciprocal square root of the total FFT size over all transformed dimensions, resulting in signal strength conserving transformation.
 
@@ -17,6 +18,10 @@ Scales the FFT result with reciprocal square root of the total FFT size over all
 
 ```swift
 case unitary
+```
+
+```c
+MPSGraphFFTScalingModeUnitary
 ```
 
 

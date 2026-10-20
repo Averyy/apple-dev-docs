@@ -1,9 +1,10 @@
 # makeStream(of:bufferingPolicy:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
-Initializes a new [`AsyncStream`](asyncstream.md) and an [`AsyncStream.Continuation`](asyncstream/continuation.md).
+Initializes a new [`AsyncStream`](../asyncstream.md) and an [`AsyncStream.Continuation`](./continuation.md).
 
 **Availability**:
 - iOS 13.0+

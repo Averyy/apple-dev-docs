@@ -1,7 +1,8 @@
 # uniformLeftRadius(_:topRightRadius:bottomRightRadius:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A configuration that applies the `leftRadius` uniformly to the top-left and bottom-left corners, with optional independent radii for the top-right and bottom-right corners. When the uniform corners differ, it uses the largest of the resolved corner radii.
 
@@ -12,6 +13,10 @@ A configuration that applies the `leftRadius` uniformly to the top-left and bott
 
 ```swift
 class func uniformLeftRadius(_ leftRadius: NSViewCornerRadius, topRightRadius: NSViewCornerRadius?, bottomRightRadius: NSViewCornerRadius?) -> NSViewCornerConfiguration
+```
+
+```objc
++ (NSViewCornerConfiguration *) configurationWithUniformLeftRadius:(NSViewCornerRadius *) leftRadius topRightRadius:(NSViewCornerRadius *) topRightRadius bottomRightRadius:(NSViewCornerRadius *) bottomRightRadius;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # translate(_:)
 
 **Framework**: Translation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Translates a formatted string of text, preserving formatting in the translation.
 
@@ -23,24 +24,24 @@ The response that contains the text translation with formatting preserved.
 
 #### Discussion
 
-Use this method to translate text that includes formatting like bold text or links, and preserve that formatting in the translated result. The framework aligns formatting between the source and target languages so that formatted words in the source remain formatted in the translation. Custom attributes, such as timestamps for synchronized captions or lyrics, are also preserved. For examples of translating attributed strings, see [`attributedSourceText`](translationsession/request/attributedsourcetext.md).
+Use this method to translate text that includes formatting like bold text or links, and preserve that formatting in the translated result. The framework aligns formatting between the source and target languages so that formatted words in the source remain formatted in the translation. Custom attributes, such as timestamps for synchronized captions or lyrics, are also preserved. For examples of translating attributed strings, see [`attributedSourceText`](./request/attributedsourcetext.md).
 
 This function translates a single line of text and might display different UI depending on the state of the translation. The app doesn’t need to install the required languages before calling this method. The function handles translation based on language availability:
 
 - If the required languages are already downloaded and the source language is clear, the function returns results without showing any UI to the person.
 - If the source or target language aren’t installed, the framework asks the person for permission to download the languages. During the download a progress indicator displays. After it completes, the framework performs the translation.
-- If the [`sourceLanguage`](translationsession/sourcelanguage.md) is `nil` and the framework can’t detect it from the content, the framework prompts the person to choose the source language.
+- If the [`sourceLanguage`](./sourcelanguage.md) is `nil` and the framework can’t detect it from the content, the framework prompts the person to choose the source language.
 
 This function throws an `Error` if:
 
 - The person doesn’t agree to downloading the languages
 - The person dismisses the progress view during language downloads
-- [`TranslationSession`](translationsession.md) fails system validation
+- [`TranslationSession`](../translationsession.md) fails system validation
 - The session doesn’t allow requesting downloads and languages aren’t installed
 - You already cancelled the session
 - Something goes wrong during translation
 
-If a person dismisses the progress view while the languages download, the system throws a [`userCancelled`](https://developer.apple.com/documentation/foundation/cocoaerror/code/usercancelled) error, and the languages continue to download in the background.
+If a person dismisses the progress view while the languages download, the system throws a [`userCancelled`](../../Foundation/cocoaerror/code/usercancelled.md) error, and the languages continue to download in the background.
 
 > **Note**: This function call can take several minutes while languages download.
 
@@ -50,17 +51,18 @@ If a person dismisses the progress view while the languages download, the system
 
 ## See Also
 
-- [func translate(String) async throws -> TranslationSession.Response](translationsession/translate(_:)-4m20l.md)
+### Translating the text
+- [func translate(String) async throws -> TranslationSession.Response](./translate%28_%29-4m20l.md)
   Translates a single string of text.
-- [func translate(batch: [TranslationSession.Request]) -> TranslationSession.BatchResponse](translationsession/translate(batch:).md)
+- [func translate(batch: [TranslationSession.Request]) -> TranslationSession.BatchResponse](./translate%28batch%29.md)
   Translates multiple strings of text of the same language, returning a sequence of responses as they’re available.
-- [func translations(from: [TranslationSession.Request]) async throws -> [TranslationSession.Response]](translationsession/translations(from:).md)
+- [func translations(from: [TranslationSession.Request]) async throws -> [TranslationSession.Response]](./translations%28from%29.md)
   Translates multiple strings of text of the same language, returning the results all at once when complete.
-- [TranslationSession.Request](translationsession/request.md)
+- [TranslationSession.Request](./request.md)
   A translation request containing a single item of text to translate.
-- [TranslationSession.Response](translationsession/response.md)
+- [TranslationSession.Response](./response.md)
   The response to a translation request.
-- [TranslationSession.BatchResponse](translationsession/batchresponse.md)
+- [TranslationSession.BatchResponse](./batchresponse.md)
   A type that provides asynchronous access to translation responses.
 
 

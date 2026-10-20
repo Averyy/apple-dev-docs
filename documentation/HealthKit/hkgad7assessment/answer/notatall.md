@@ -1,7 +1,8 @@
 # HKGAD7Assessment.Answer.notAtAll
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case notAtAll
+```
+
+```c
+HKGAD7AssessmentAnswerNotAtAll
 ```
 
 

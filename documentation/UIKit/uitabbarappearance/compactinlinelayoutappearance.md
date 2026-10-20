@@ -1,7 +1,8 @@
 # compactInlineLayoutAppearance
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The appearance attributes for items displayed with an inline style in a compact environment.
 
@@ -19,13 +20,18 @@ The appearance attributes for items displayed with an inline style in a compact 
 var compactInlineLayoutAppearance: UITabBarItemAppearance { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) UITabBarItemAppearance * compactInlineLayoutAppearance;
+```
+
 #### Discussion
 
 If you didn’t provide a set of explicit attributes at initialization time, UIKit provides an object with default attributes.
 
 ## See Also
 
-- [var inlineLayoutAppearance: UITabBarItemAppearance](uitabbarappearance/inlinelayoutappearance.md)
+### Configuring inline item appearances
+- [var inlineLayoutAppearance: UITabBarItemAppearance](./inlinelayoutappearance.md)
   The appearance attributes for items displayed with an inline style.
 
 

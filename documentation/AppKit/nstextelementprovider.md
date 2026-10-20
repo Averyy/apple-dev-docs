@@ -1,7 +1,8 @@
 # NSTextElementProvider
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol the text content manager and its concrete subclasses conform to, which defines the interface for interacting with custom content types of a text document.
 
@@ -14,46 +15,51 @@ A protocol the text content manager and its concrete subclasses conform to, whic
 protocol NSTextElementProvider : NSObjectProtocol
 ```
 
+```objc
+@protocol NSTextElementProvider <NSObject>
+```
+
 ## Topics
 
 ### Accessing the range of the text element
-- [var documentRange: NSTextRange](nstextelementprovider/documentrange.md)
+- [var documentRange: NSTextRange](./nstextelementprovider/documentrange.md)
   Describes the starting and ending locations for the document.
 ### Accessing and updating the text
-- [func enumerateTextElements(from: (any NSTextLocation)?, options: NSTextContentManager.EnumerationOptions, using: (NSTextElement) -> Bool) -> (any NSTextLocation)?](nstextelementprovider/enumeratetextelements(from:options:using:).md)
+- [func enumerateTextElements(from: (any NSTextLocation)?, options: NSTextContentManager.EnumerationOptions, using: (NSTextElement) -> Bool) -> (any NSTextLocation)?](./nstextelementprovider/enumeratetextelements%28from,options,using%29.md)
   Enumerates text elements starting at the text location you provide.
-- [NSTextLayoutFragment.EnumerationOptions](nstextlayoutfragment/enumerationoptions.md)
+- [NSTextLayoutFragment.EnumerationOptions](./nstextlayoutfragment/enumerationoptions.md)
   Values that describe options for enumerating text layout fragments.
-- [func location(any NSTextLocation, offsetBy: Int) -> (any NSTextLocation)?](nstextelementprovider/location(_:offsetby:).md)
+- [func location(any NSTextLocation, offsetBy: Int) -> (any NSTextLocation)?](./nstextelementprovider/location%28_,offsetby%29.md)
   Returns a new location from location with offset you provide.
-- [func replaceContents(in: NSTextRange, with: [NSTextElement]?)](nstextelementprovider/replacecontents(in:with:).md)
+- [func replaceContents(in: NSTextRange, with: [NSTextElement]?)](./nstextelementprovider/replacecontents%28in,with%29.md)
   Replaces the characters specified by range with the text elements you provide.
 ### Adjusting the range of the text element
-- [func adjustedRange(from: NSTextRange, forEditingTextSelection: Bool) -> NSTextRange?](nstextelementprovider/adjustedrange(from:foreditingtextselection:).md)
+- [func adjustedRange(from: NSTextRange, forEditingTextSelection: Bool) -> NSTextRange?](./nstextelementprovider/adjustedrange%28from,foreditingtextselection%29.md)
   A method you implement if the location backing store requires manual adjustment after editing.
-- [func offset(from: any NSTextLocation, to: any NSTextLocation) -> Int](nstextelementprovider/offset(from:to:).md)
+- [func offset(from: any NSTextLocation, to: any NSTextLocation) -> Int](./nstextelementprovider/offset%28from,to%29.md)
   Returns the offset between the two specified locations.
 ### Controlling synchronization with the backing store
-- [func synchronizeToBackingStore((((any Error)?) -> Void)?)](nstextelementprovider/synchronizetobackingstore(_:).md)
+- [func synchronizeToBackingStore((((any Error)?) -> Void)?)](./nstextelementprovider/synchronizetobackingstore%28_%29.md)
   Synchronizes changes to the backing store.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [NSTextContentManager](nstextcontentmanager.md)
-- [NSTextContentStorage](nstextcontentstorage.md)
+- [NSTextContentManager](./nstextcontentmanager.md)
+- [NSTextContentStorage](./nstextcontentstorage.md)
 
 ## See Also
 
-- [Enriching your text in text views](../uikit/enriching-your-text-in-text-views.md)
+### Content elements
+- [Enriching your text in text views](../UIKit/enriching-your-text-in-text-views.md)
   Support line numbering, section collapsing, inline attachment caching, exclusion paths, text attachments, and text lists in a text view.
-- [class NSTextParagraph](nstextparagraph.md)
+- [class NSTextParagraph](./nstextparagraph.md)
   A class that represents a single paragraph backed by an attributed string as the contents.
-- [class NSTextListElement](nstextlistelement.md)
+- [class NSTextListElement](./nstextlistelement.md)
   A class that represents a text list node.
-- [class NSTextElement](nstextelement.md)
+- [class NSTextElement](./nstextelement.md)
   An abstract base class that represents the smallest units of text layout such as paragraphs or attachments.
 
 

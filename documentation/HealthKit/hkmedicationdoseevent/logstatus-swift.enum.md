@@ -1,7 +1,8 @@
 # HKMedicationDoseEvent.LogStatus
 
 **Framework**: HealthKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The statuses the system assigns to a logged medication dose event.
 
@@ -19,33 +20,37 @@ The statuses the system assigns to a logged medication dose event.
 enum LogStatus
 ```
 
+```c
+enum HKMedicationDoseEventLogStatus : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [HKMedicationDoseEvent.LogStatus.notInteracted](hkmedicationdoseevent/logstatus-swift.enum/notinteracted.md)
+- [HKMedicationDoseEvent.LogStatus.notInteracted](./logstatus-swift.enum/notinteracted.md)
   The person doesn’t interact with a scheduled medication reminder.
-- [HKMedicationDoseEvent.LogStatus.notLogged](hkmedicationdoseevent/logstatus-swift.enum/notlogged.md)
+- [HKMedicationDoseEvent.LogStatus.notLogged](./logstatus-swift.enum/notlogged.md)
   The person undoes a previously logged medication status.
-- [HKMedicationDoseEvent.LogStatus.notificationNotSent](hkmedicationdoseevent/logstatus-swift.enum/notificationnotsent.md)
+- [HKMedicationDoseEvent.LogStatus.notificationNotSent](./logstatus-swift.enum/notificationnotsent.md)
   The system assigns this status when it fails to deliver a scheduled medication notification.
-- [HKMedicationDoseEvent.LogStatus.skipped](hkmedicationdoseevent/logstatus-swift.enum/skipped.md)
+- [HKMedicationDoseEvent.LogStatus.skipped](./logstatus-swift.enum/skipped.md)
   The person logs that they skipped the medication dose.
-- [HKMedicationDoseEvent.LogStatus.snoozed](hkmedicationdoseevent/logstatus-swift.enum/snoozed.md)
+- [HKMedicationDoseEvent.LogStatus.snoozed](./logstatus-swift.enum/snoozed.md)
   The person snoozes a scheduled medication notification.
-- [HKMedicationDoseEvent.LogStatus.taken](hkmedicationdoseevent/logstatus-swift.enum/taken.md)
+- [HKMedicationDoseEvent.LogStatus.taken](./logstatus-swift.enum/taken.md)
   The person logs that they took the medication dose.
 ### Initializers
-- [init?(rawValue: Int)](hkmedicationdoseevent/logstatus-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./logstatus-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # DoAsyncUnmap
 
 **Framework**: BlockStorageDeviceDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends an asynchronous request to the dext to reclaim storage by unmapping.
 
@@ -10,39 +11,40 @@ Sends an asynchronous request to the dext to reclaim storage by unmapping.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t DoAsyncUnmap(uint32_t requestID, IOMemoryDescriptor *buffer, uint32_t numOfRanges);
 ```
 
 #### Return Value
 
-A value that indicates the unmap result. [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) indicates success. For error definitions, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants).
+A value that indicates the unmap result. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
 #### Discussion
 
-When the unmap operation completes, the dext calls your [`Complete`](iouserblockstoragedevice/complete.md) method with the results of the operation.
+When the unmap operation completes, the dext calls your [`Complete`](./complete.md) method with the results of the operation.
 
 ## Parameters
 
-- `requestID`: An opaque identifier. After the dext completes the request, it calls [`Complete`](iouserblockstoragedevice/complete.md) and sends this value as a parameter.
+- `requestID`: An opaque identifier. After the dext completes the request, it calls [`Complete`](./complete.md) and sends this value as a parameter.
 - `buffer`: A memory buffer containing the block ranges to unmap.
 - `numOfRanges`: The number of ranges in `buffer`.
 
 ## See Also
 
-- [BlockRange](blockrange.md)
+### Accessing the Device
+- [BlockRange](../blockrange.md)
   A structure that represents a range of blocks.
-- [DoAsyncSynchronize](iouserblockstoragedevice/doasyncsynchronize.md)
+- [DoAsyncSynchronize](./doasyncsynchronize.md)
   Forces the hardware buffer to flush data blocks to the media.
-- [DoAsyncEjectMedia](iouserblockstoragedevice/doasyncejectmedia.md)
+- [DoAsyncEjectMedia](./doasyncejectmedia.md)
   Ejects the media.
-- [Complete](iouserblockstoragedevice/complete.md)
+- [Complete](./complete.md)
   Indicates that the dext completed an asynchronous call.
-- [DoAsyncReadWrite](iouserblockstoragedevice/doasyncreadwrite.md)
+- [DoAsyncReadWrite](./doasyncreadwrite.md)
   Starts an asynchronous read or write operation.
-- [IOUserStorageOptions](iouserstorageoptions.md)
+- [IOUserStorageOptions](../iouserstorageoptions.md)
   Options that affect the performance of read-write operations.
-- [CompleteIO](iouserblockstoragedevice/completeio.md)
+- [CompleteIO](./completeio.md)
   Indicates that the dext completed an asynchronous read-write call.
 
 

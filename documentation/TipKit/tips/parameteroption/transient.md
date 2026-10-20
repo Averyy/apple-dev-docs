@@ -1,7 +1,8 @@
 # ParameterOption.transient
 
 **Framework**: TipKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that resets the parameter value the first time it is referenced.
 
@@ -34,7 +35,8 @@ struct LandmarksUser {
 
 ## See Also
 
-- [struct Parameter](tips/parameter.md)
+### Related Documentation
+- [struct Parameter](../parameter.md)
   A type that monitors the state of its wrapped value to reevaluate any dependent tip rules when the value changes.
 
 

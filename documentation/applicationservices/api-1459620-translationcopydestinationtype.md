@@ -1,7 +1,8 @@
 # TranslationCopyDestinationType(_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.3+
@@ -10,6 +11,10 @@
 
 ```swift
 func TranslationCopyDestinationType(_ inTranslation: Translation!, _ outDestinationType: UnsafeMutablePointer<Unmanaged<CFString>?>!) -> OSStatus
+```
+
+```c
+OSStatus TranslationCopyDestinationType(TranslationRef inTranslation, CFStringRef *outDestinationType);
 ```
 
 

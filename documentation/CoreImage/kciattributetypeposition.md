@@ -1,17 +1,18 @@
 # kCIAttributeTypePosition
 
 **Framework**: Core Image  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A two-dimensional location in the working coordinate space. (A 2-element vector type.)
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,13 +20,18 @@ A two-dimensional location in the working coordinate space. (A 2-element vector 
 let kCIAttributeTypePosition: String
 ```
 
+```c
+extern NSString * const kCIAttributeTypePosition;
+```
+
 ## See Also
 
-- [let kCIAttributeTypeOffset: String](kciattributetypeoffset.md)
+### Constants
+- [let kCIAttributeTypeOffset: String](./kciattributetypeoffset.md)
   An offset. (A 2-element vector type.)
-- [let kCIAttributeTypePosition3: String](kciattributetypeposition3.md)
+- [let kCIAttributeTypePosition3: String](./kciattributetypeposition3.md)
   A three-dimensional location in the working coordinate space. (A 3-element vector type.)
-- [let kCIAttributeTypeRectangle: String](kciattributetyperectangle.md)
+- [let kCIAttributeTypeRectangle: String](./kciattributetyperectangle.md)
   A Core Image vector that specifies the *x* and *y* values of the rectangle origin, and the width (*w*) and height (*h*) of the rectangle. The vector takes the form [*x*, *y*, *w*, *h*]. (A 4-element vector type.)
 
 

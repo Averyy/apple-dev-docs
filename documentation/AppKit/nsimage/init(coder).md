@@ -1,12 +1,13 @@
 # init(coder:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns an image object from data in an unarchiver.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ Initializes and returns an image object from data in an unarchiver.
 init(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [convenience init?(data: Data)](nsimage/init(data:).md)
+### Creating Images from Existing Data
+- [convenience init?(data: Data)](./init%28data%29.md)
   Initializes and returns an image object using the provided image data.
-- [convenience init?(dataIgnoringOrientation: Data)](nsimage/init(dataignoringorientation:).md)
+- [convenience init?(dataIgnoringOrientation: Data)](./init%28dataignoringorientation%29.md)
   Initializes and returns an image object using the provided image data and ignoring the EXIF orientation tags.
-- [convenience init(cgImage: CGImage, size: NSSize)](nsimage/init(cgimage:size:)-8oznv.md)
+- [convenience init(cgImage: CGImage, size: NSSize)](./init%28cgimage,size%29-8oznv.md)
   Creates a new image using the contents of the provided image.
-- [convenience init?(pasteboard: NSPasteboard)](nsimage/init(pasteboard:).md)
+- [convenience init?(pasteboard: NSPasteboard)](./init%28pasteboard%29.md)
   Initializes and returns an image object with data from the specified pasteboard.
 
 

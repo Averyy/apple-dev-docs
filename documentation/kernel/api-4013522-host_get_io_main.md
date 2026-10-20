@@ -1,14 +1,15 @@
 # host_get_io_main
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t host_get_io_main(host_t host, io_main_t *io_main);
 ```
 

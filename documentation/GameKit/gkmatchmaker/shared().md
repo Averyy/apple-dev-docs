@@ -1,7 +1,8 @@
 # shared()
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the singleton matchmaker instance.
 
@@ -17,6 +18,10 @@ Returns the singleton matchmaker instance.
 
 ```swift
 class func shared() -> GKMatchmaker
+```
+
+```objc
++ (GKMatchmaker *) sharedMatchmaker;
 ```
 
 #### Return Value

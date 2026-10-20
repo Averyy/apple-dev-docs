@@ -1,7 +1,8 @@
 # origin
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the left edge of the element’s baseline, relative to the text view.
 

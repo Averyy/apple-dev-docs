@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,11 +18,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kDefaultProbeRanking](1645755-anonymous/kdefaultproberanking.md)
-- [kFirstOrderRanking](1645755-anonymous/kfirstorderranking.md)
-- [kPeripheralDeviceTypeNoMatch](1645755-anonymous/kperipheraldevicetypenomatch.md)
-- [kSecondOrderRanking](1645755-anonymous/ksecondorderranking.md)
-- [kThirdOrderRanking](1645755-anonymous/kthirdorderranking.md)
+- [kDefaultProbeRanking](./api-1645755-anonymous/kdefaultproberanking.md)
+- [kFirstOrderRanking](./api-1645755-anonymous/kfirstorderranking.md)
+- [kPeripheralDeviceTypeNoMatch](./api-1645755-anonymous/kperipheraldevicetypenomatch.md)
+- [kSecondOrderRanking](./api-1645755-anonymous/ksecondorderranking.md)
+- [kThirdOrderRanking](./api-1645755-anonymous/kthirdorderranking.md)
 
 
 ---

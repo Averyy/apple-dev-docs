@@ -1,7 +1,8 @@
 # inverse
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a copy of the curve with its x and y components swapped.
 

@@ -1,7 +1,8 @@
 # validation
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The validation data source.
 
@@ -20,13 +21,14 @@ If you don’t specify validation data, the training process automatically sets 
 
 ## See Also
 
-- [var validationData: MLDataTable?](mlactivityclassifier/modelparameters-swift.struct/validationdata.md)
+### Accessing the training parameters
+- [var validationData: MLDataTable?](./validationdata.md)
   The activity classifier’s validation dataset.
-- [var batchSize: Int?](mlactivityclassifier/modelparameters-swift.struct/batchsize.md)
+- [var batchSize: Int?](./batchsize.md)
   The number of sequence chunks the training session uses per iteration.
-- [var maximumIterations: Int?](mlactivityclassifier/modelparameters-swift.struct/maximumiterations.md)
+- [var maximumIterations: Int?](./maximumiterations.md)
   The maximum number of iterations over the training data the training session uses.
-- [var predictionWindowSize: Int?](mlactivityclassifier/modelparameters-swift.struct/predictionwindowsize.md)
+- [var predictionWindowSize: Int?](./predictionwindowsize.md)
   The number of samples for each labeled activity.
 
 

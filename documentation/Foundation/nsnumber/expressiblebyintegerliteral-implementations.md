@@ -1,11 +1,12 @@
 # ExpressibleByIntegerLiteral Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [convenience init(integerLiteral: Int)](nsnumber/init(integerliteral:).md)
+- [convenience init(integerLiteral: Int)](./init%28integerliteral%29.md)
   Create an instance initialized to `value`.
 
 

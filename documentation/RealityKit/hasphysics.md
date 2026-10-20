@@ -1,7 +1,8 @@
 # HasPhysics
 
 **Framework**: RealityKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface that combines the physics body and physics motion interfaces.
 
@@ -11,7 +12,7 @@ An interface that combines the physics body and physics motion interfaces.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,18 +24,19 @@ An interface that combines the physics body and physics motion interfaces.
 ## Relationships
 
 ### Inherits From
-- [HasCollision](hascollision.md)
-- [HasPhysicsBody](hasphysicsbody.md)
-- [HasPhysicsMotion](hasphysicsmotion.md)
-- [HasTransform](hastransform.md)
+- [HasCollision](./hascollision.md)
+- [HasPhysicsBody](./hasphysicsbody.md)
+- [HasPhysicsMotion](./hasphysicsmotion.md)
+- [HasTransform](./hastransform.md)
 ### Conforming Types
-- [ModelEntity](modelentity.md)
+- [ModelEntity](./modelentity.md)
 
 ## See Also
 
-- [protocol HasPhysicsBody](hasphysicsbody.md)
+### Entity compliance
+- [protocol HasPhysicsBody](./hasphysicsbody.md)
   An interface that enables physics simulations based on the rules of Newtonian mechanics.
-- [protocol HasPhysicsMotion](hasphysicsmotion.md)
+- [protocol HasPhysicsMotion](./hasphysicsmotion.md)
   An interface that provides velocity properties for physics simulations.
 
 

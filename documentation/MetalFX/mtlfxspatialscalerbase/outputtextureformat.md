@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The pixel format of the output color texture for this this scaler.
@@ -18,6 +19,10 @@ The pixel format of the output color texture for this this scaler.
 
 ```swift
 var outputTextureFormat: MTLPixelFormat { get }
+```
+
+```objc
+@property (nonatomic, readonly) MTLPixelFormat outputTextureFormat;
 ```
 
 

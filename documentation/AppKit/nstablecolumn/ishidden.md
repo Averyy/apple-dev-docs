@@ -1,7 +1,8 @@
 # isHidden
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the table column is hidden.
 
@@ -14,11 +15,15 @@ A Boolean that indicates whether the table column is hidden.
 var isHidden: Bool { get set }
 ```
 
+```objc
+@property (getter=isHidden) BOOL hidden;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the table column is hidden. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+When the value of this property is [`true`](../../Swift/true.md), the table column is hidden. The default value is [`false`](../../Swift/false.md).
 
-Columns that are hidden still exist in the table view object’s [`tableColumns`](nstableview/tablecolumns.md) array and are included in the table view’s [`numberOfColumns`](nstableview/numberofcolumns.md) count.
+Columns that are hidden still exist in the table view object’s [`tableColumns`](../nstableview/tablecolumns.md) array and are included in the table view’s [`numberOfColumns`](../nstableview/numberofcolumns.md) count.
 
 The hidden state is stored when the table view autosaves the table column state.
 

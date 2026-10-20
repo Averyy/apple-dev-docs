@@ -1,7 +1,8 @@
 # propertyList()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a serializable property list that’s sufficient to identify the option within its group.
 
@@ -20,13 +21,17 @@ Returns a serializable property list that’s sufficient to identify the option 
 func propertyList() -> Any
 ```
 
+```objc
+- (id) propertyList;
+```
+
 #### Return Value
 
-A serializable property list that you can use to obtain an instance of [`AVMediaSelectionOption`](avmediaselectionoption.md) representing the same option as the receiver using [`mediaSelectionOption(withPropertyList:)`](avmediaselectiongroup/mediaselectionoption(withpropertylist:).md).
+A serializable property list that you can use to obtain an instance of [`AVMediaSelectionOption`](../avmediaselectionoption.md) representing the same option as the receiver using [`mediaSelectionOption(withPropertyList:)`](../avmediaselectiongroup/mediaselectionoption%28withpropertylist%29.md).
 
 #### Discussion
 
-You can serialize the returned property list using [`PropertyListSerialization`](https://developer.apple.com/documentation/foundation/propertylistserialization).
+You can serialize the returned property list using [`PropertyListSerialization`](../../Foundation/propertylistserialization.md).
 
 
 ---

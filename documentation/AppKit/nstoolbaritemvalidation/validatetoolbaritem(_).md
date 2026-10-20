@@ -2,12 +2,13 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Determines whether to enable or disable the toolbar item.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -16,13 +17,17 @@ Determines whether to enable or disable the toolbar item.
 func validateToolbarItem(_ item: NSToolbarItem) -> Bool
 ```
 
+```objc
+- (BOOL) validateToolbarItem:(NSToolbarItem *) item;
+```
+
 #### Discussion
 
-If this method is implemented and returns [`false`](https://developer.apple.com/documentation/swift/false), [`NSToolbar`](nstoolbar.md) will disable `item`. Returning [`true`](https://developer.apple.com/documentation/swift/true) causes `item` to be enabled.
+If this method is implemented and returns [`false`](../../Swift/false.md), [`NSToolbar`](../nstoolbar.md) will disable `item`. Returning [`true`](../../Swift/true.md) causes `item` to be enabled.
 
-[`NSToolbar`](nstoolbar.md) only calls this method for image items.
+[`NSToolbar`](../nstoolbar.md) only calls this method for image items.
 
-> **Note**:  [`validateToolbarItem:`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/validatetoolbaritem:) is called very frequently, so it must be efficient.
+> **Note**:  [`validateToolbarItem:`](../../ObjectiveC/nsobject-swift.class/validatetoolbaritem_.md) is called very frequently, so it must be efficient.
 
 If the receiver is the `target` for the actions of multiple toolbar items, it’s necessary to determine which toolbar item `item` refers to by testing the `itemIdentifier`.
 
@@ -44,13 +49,14 @@ If the receiver is the `target` for the actions of multiple toolbar items, it’
 
 ## See Also
 
-- [func validateVisibleItems()](nstoolbar/validatevisibleitems.md)
+### Related Documentation
+- [func validateVisibleItems()](../nstoolbar/validatevisibleitems%28%29.md)
   Validates the toolbar’s visible items during a window update.
-- [var action: Selector?](nstoolbaritem/action.md)
+- [var action: Selector?](../nstoolbaritem/action.md)
   The action method to call when someone clicks on the toolbar item.
-- [var target: AnyObject?](nstoolbaritem/target.md)
+- [var target: AnyObject?](../nstoolbaritem/target.md)
   The object that defines the action method the toolbar item calls when clicked.
-- [func validate()](nstoolbaritem/validate.md)
+- [func validate()](../nstoolbaritem/validate%28%29.md)
   Validates the toolbar item’s menu and its ability to perfrom its action.
 
 

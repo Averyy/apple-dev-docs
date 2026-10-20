@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Location  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 7.0+

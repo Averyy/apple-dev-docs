@@ -1,7 +1,8 @@
 # bounds
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bounding box that defines the clipping region in the entity’s local coordinate space.
 

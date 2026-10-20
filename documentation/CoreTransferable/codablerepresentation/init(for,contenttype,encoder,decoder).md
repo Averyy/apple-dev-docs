@@ -1,7 +1,8 @@
 # init(for:contentType:encoder:decoder:)
 
 **Framework**: Core Transferable  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a transfer representation for a given type with the encoder and decoder you supply.
 
@@ -29,7 +30,8 @@ init(for itemType: Item.Type = Item.self, contentType: UTType, encoder: Encoder,
 
 ## See Also
 
-- [init(for: Item.Type, contentType: UTType)](codablerepresentation/init(for:contenttype:).md)
+### Creating a transfer representation
+- [init(for: Item.Type, contentType: UTType)](./init%28for,contenttype%29.md)
   Creates a transfer representation for a given type and type identifier.
 
 

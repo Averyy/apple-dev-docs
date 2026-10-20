@@ -1,7 +1,8 @@
 # offset(x:yStart:yEnd:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies an offset to the chart content.
 
@@ -33,15 +34,16 @@ The `yStart` and `yEnd` offset values apply only to marks that have such propert
 
 ## See Also
 
-- [func offset(CGSize) -> some ChartContent](chartcontent/offset(_:).md)
+### Positioning marks
+- [func offset(CGSize) -> some ChartContent](./offset%28_%29.md)
   Applies an offset that you specify as a size to the chart content.
-- [func offset(x: CGFloat, y: CGFloat) -> some ChartContent](chartcontent/offset(x:y:).md)
+- [func offset(x: CGFloat, y: CGFloat) -> some ChartContent](./offset%28x,y%29.md)
   Applies a vertical and horizontal offset to the chart content.
-- [func offset(xStart: CGFloat, xEnd: CGFloat, y: CGFloat) -> some ChartContent](chartcontent/offset(xstart:xend:y:).md)
+- [func offset(xStart: CGFloat, xEnd: CGFloat, y: CGFloat) -> some ChartContent](./offset%28xstart,xend,y%29.md)
   Applies an offset to the chart content.
-- [func offset(xStart: CGFloat, xEnd: CGFloat, yStart: CGFloat, yEnd: CGFloat) -> some ChartContent](chartcontent/offset(xstart:xend:ystart:yend:).md)
+- [func offset(xStart: CGFloat, xEnd: CGFloat, yStart: CGFloat, yEnd: CGFloat) -> some ChartContent](./offset%28xstart,xend,ystart,yend%29.md)
   Applies an offset to the chart content.
-- [func alignsMarkStylesWithPlotArea(Bool) -> some ChartContent](chartcontent/alignsmarkstyleswithplotarea(_:).md)
+- [func alignsMarkStylesWithPlotArea(Bool) -> some ChartContent](./alignsmarkstyleswithplotarea%28_%29.md)
   Aligns this item’s styles with the chart’s plot area.
 
 

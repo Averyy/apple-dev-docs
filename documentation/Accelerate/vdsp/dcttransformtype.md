@@ -1,7 +1,8 @@
 # vDSP.DCTTransformType
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that describes the discrete cosine transform types.
 
@@ -11,7 +12,7 @@ An enumeration that describes the discrete cosine transform types.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -23,26 +24,27 @@ enum DCTTransformType
 ## Topics
 
 ### Discrete Cosine Transform Type Constants
-- [vDSP.DCTTransformType.II](vdsp/dcttransformtype/ii.md)
+- [vDSP.DCTTransformType.II](./dcttransformtype/ii.md)
   A constant that represents a type-II discrete cosine transform.
-- [vDSP.DCTTransformType.III](vdsp/dcttransformtype/iii.md)
+- [vDSP.DCTTransformType.III](./dcttransformtype/iii.md)
   A constant that represents a type-III discrete cosine transform.
-- [vDSP.DCTTransformType.IV](vdsp/dcttransformtype/iv.md)
+- [vDSP.DCTTransformType.IV](./dcttransformtype/iv.md)
   A constant that represents a type-IV discrete cosine transform.
 ### Instance Properties
-- [var dctType: vDSP_DCT_Type](vdsp/dcttransformtype/dcttype.md)
+- [var dctType: vDSP_DCT_Type](./dcttransformtype/dcttype.md)
   The vDSP DCT type of this value.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [class DCT](vdsp/dct.md)
+### Objects that Simplify Discrete Cosine Transforms
+- [class DCT](./dct.md)
   A single-precision discrete cosine transform.
 
 

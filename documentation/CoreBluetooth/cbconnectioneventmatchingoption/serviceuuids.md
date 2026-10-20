@@ -1,7 +1,8 @@
 # serviceUUIDs
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An array that represents service identifiers to match.
 
@@ -19,13 +20,18 @@ An array that represents service identifiers to match.
 static let serviceUUIDs: CBConnectionEventMatchingOption
 ```
 
+```c
+extern CBConnectionEventMatchingOption const CBConnectionEventMatchingOptionServiceUUIDs;
+```
+
 #### Discussion
 
-A connected peer with any matching service UUIDs results in a call to [`centralManager(_:connectionEventDidOccur:for:)`](cbcentralmanagerdelegate/centralmanager(_:connectioneventdidoccur:for:).md).
+A connected peer with any matching service UUIDs results in a call to [`centralManager(_:connectionEventDidOccur:for:)`](../cbcentralmanagerdelegate/centralmanager%28_,connectioneventdidoccur,for%29.md).
 
 ## See Also
 
-- [static let peripheralUUIDs: CBConnectionEventMatchingOption](cbconnectioneventmatchingoption/peripheraluuids.md)
+### Matching Options
+- [static let peripheralUUIDs: CBConnectionEventMatchingOption](./peripheraluuids.md)
   An array of UUID objects that represents peripherals to match.
 
 

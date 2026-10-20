@@ -1,17 +1,22 @@
 # init(imageProvider:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new template from the provided image.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
 
 ## Declaration
 
 ```swift
 init(imageProvider: CLKFullColorImageProvider)
+```
+
+```objc
+- (instancetype) initWithImageProvider:(CLKFullColorImageProvider *) imageProvider;
 ```
 
 ## Parameters

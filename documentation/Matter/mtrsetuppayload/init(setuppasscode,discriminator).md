@@ -1,7 +1,8 @@
 # init(setupPasscode:discriminator:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.2+
@@ -16,6 +17,10 @@
 
 ```swift
 init(setupPasscode: NSNumber, discriminator: NSNumber)
+```
+
+```objc
+- (instancetype) initWithSetupPasscode:(NSNumber *) setupPasscode discriminator:(NSNumber *) discriminator;
 ```
 
 

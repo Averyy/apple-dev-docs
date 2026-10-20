@@ -1,7 +1,8 @@
 # anchorEntity(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A path for the scene’s anchor entity.
 
@@ -11,7 +12,7 @@ A path for the scene’s anchor entity.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

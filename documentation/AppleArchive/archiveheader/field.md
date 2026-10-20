@@ -1,7 +1,8 @@
 # ArchiveHeader.Field
 
 **Framework**: Apple Archive  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that describes the type, key, and value of a header field.
 
@@ -11,7 +12,7 @@ An enumeration that describes the type, key, and value of a header field.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -23,37 +24,38 @@ enum Field
 ## Topics
 
 ### Field Constants
-- [case blob(key: ArchiveHeader.FieldKey, size: UInt64, offset: UInt64)](archiveheader/field/blob(key:size:offset:).md)
+- [case blob(key: ArchiveHeader.FieldKey, size: UInt64, offset: UInt64)](./field/blob%28key,size,offset%29.md)
   An enumeration that indicates the field is a data blob.
-- [case flag(key: ArchiveHeader.FieldKey)](archiveheader/field/flag(key:).md)
+- [case flag(key: ArchiveHeader.FieldKey)](./field/flag%28key%29.md)
   An enumeration that indicates the field is a flag.
-- [case hash(key: ArchiveHeader.FieldKey, hashFunction: ArchiveHash, value: ContiguousArray<UInt8>)](archiveheader/field/hash(key:hashfunction:value:).md)
+- [case hash(key: ArchiveHeader.FieldKey, hashFunction: ArchiveHash, value: ContiguousArray<UInt8>)](./field/hash%28key,hashfunction,value%29.md)
   An enumeration that indicates the field is a hash.
-- [case string(key: ArchiveHeader.FieldKey, value: String)](archiveheader/field/string(key:value:).md)
+- [case string(key: ArchiveHeader.FieldKey, value: String)](./field/string%28key,value%29.md)
   An enumeration that indicates the field is a string.
-- [case timespec(key: ArchiveHeader.FieldKey, value: timespec)](archiveheader/field/timespec(key:value:).md)
+- [case timespec(key: ArchiveHeader.FieldKey, value: timespec)](./field/timespec%28key,value%29.md)
   An enumeration that indicates the field is a time value.
-- [case uint(key: ArchiveHeader.FieldKey, value: UInt64)](archiveheader/field/uint(key:value:).md)
+- [case uint(key: ArchiveHeader.FieldKey, value: UInt64)](./field/uint%28key,value%29.md)
   An enumeration that indicates the field is an unsigned integer.
 ### Instance Properties
-- [var key: ArchiveHeader.FieldKey](archiveheader/field/key.md)
+- [var key: ArchiveHeader.FieldKey](./field/key.md)
   The field key of this field.
-- [var type: ArchiveHeader.FieldType](archiveheader/field/type.md)
+- [var type: ArchiveHeader.FieldType](./field/type.md)
   The field type of this field.
 
 ## See Also
 
-- [func field(forKey: ArchiveHeader.FieldKey) -> ArchiveHeader.Field?](archiveheader/field(forkey:).md)
+### Manipulating Fields
+- [func field(forKey: ArchiveHeader.FieldKey) -> ArchiveHeader.Field?](./field%28forkey%29.md)
   Returns the field for a specified key.
-- [ArchiveHeader.FieldKey](archiveheader/fieldkey-swift.struct.md)
+- [ArchiveHeader.FieldKey](./fieldkey-swift.struct.md)
   A type that’s an alias for the field key structure.
-- [var fieldType: ArchiveHeader._FieldTypes](archiveheader/fieldtype-swift.property.md)
+- [var fieldType: ArchiveHeader._FieldTypes](./fieldtype-swift.property.md)
   The field types of the archive header.
-- [ArchiveHeader.FieldType](archiveheader/fieldtype-swift.struct.md)
+- [ArchiveHeader.FieldType](./fieldtype-swift.struct.md)
   Constants that specify the field type of an archive header.
-- [var fieldKey: ArchiveHeader._FieldKeys](archiveheader/fieldkey-swift.property.md)
+- [var fieldKey: ArchiveHeader._FieldKeys](./fieldkey-swift.property.md)
   The field keys of the archive header.
-- [ArchiveHeader.FieldKeySet](archiveheader/fieldkeyset.md)
+- [ArchiveHeader.FieldKeySet](./fieldkeyset.md)
   An object that represents a field key set.
 
 

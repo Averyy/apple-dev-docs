@@ -1,7 +1,8 @@
 # compileModel(at:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 16.0+
@@ -17,9 +18,20 @@
 class func compileModel(at modelURL: URL) async throws -> URL
 ```
 
+**Other overloads**:
+
+```swift
+class func compileModel(at url: URL) async throws -> URL
+```
+
+```swift
+class func compileModel(at modelURL: URL) throws -> URL
+```
+
 ## See Also
 
-- [class func compileModel(at: URL, completionHandler: (Result<URL, any Error>) -> Void)](mlmodel/compilemodel(at:completionhandler:).md)
+### Compiling a model
+- [class func compileModel(at: URL, completionHandler: (Result<URL, any Error>) -> Void)](./compilemodel%28at,completionhandler%29.md)
   Compile a model for a device.
 
 

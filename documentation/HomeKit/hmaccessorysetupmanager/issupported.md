@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 class var isSupported: Bool { get }
+```
+
+```objc
+@property (class, assign, readonly, getter=isSupported) BOOL supported;
 ```
 
 #### Discussion

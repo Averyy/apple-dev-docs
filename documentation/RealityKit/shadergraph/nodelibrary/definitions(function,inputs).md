@@ -1,7 +1,8 @@
 # definitions(function:inputs:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns all definitions that implement the given function with the specified input types, in order.
 
@@ -15,6 +16,12 @@ Returns all definitions that implement the given function with the specified inp
 
 ```swift
 final func definitions(function: String, inputs inputTypes: ShaderGraph.DataType...) -> [ShaderGraph.NodeDefinition]
+```
+
+**Other overloads**:
+
+```swift
+final func definitions(function: String, inputs inputTypes: [ShaderGraph.DataType]) -> [ShaderGraph.NodeDefinition]
 ```
 
 

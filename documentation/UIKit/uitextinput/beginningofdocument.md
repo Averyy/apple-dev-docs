@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The text position for the beginning of a document.
@@ -10,7 +11,7 @@ The text position for the beginning of a document.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,15 +20,20 @@ The text position for the beginning of a document.
 var beginningOfDocument: UITextPosition { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UITextPosition * beginningOfDocument;
+```
+
 ## See Also
 
-- [func textRange(from: UITextPosition, to: UITextPosition) -> UITextRange?](uitextinput/textrange(from:to:).md)
+### Computing text ranges and text positions
+- [func textRange(from: UITextPosition, to: UITextPosition) -> UITextRange?](./textrange%28from,to%29.md)
   Returns the range between two text positions.
-- [func position(from: UITextPosition, offset: Int) -> UITextPosition?](uitextinput/position(from:offset:).md)
+- [func position(from: UITextPosition, offset: Int) -> UITextPosition?](./position%28from,offset%29.md)
   Returns the text position at a specified offset from another text position.
-- [func position(from: UITextPosition, in: UITextLayoutDirection, offset: Int) -> UITextPosition?](uitextinput/position(from:in:offset:).md)
+- [func position(from: UITextPosition, in: UITextLayoutDirection, offset: Int) -> UITextPosition?](./position%28from,in,offset%29.md)
   Returns the text position at a specified offset in a specified direction from another text position.
-- [var endOfDocument: UITextPosition](uitextinput/endofdocument.md)
+- [var endOfDocument: UITextPosition](./endofdocument.md)
   The text position for the end of a document.
 
 

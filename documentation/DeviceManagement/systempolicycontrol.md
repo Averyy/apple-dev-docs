@@ -1,7 +1,8 @@
 # SystemPolicyControl
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures the system policy for assessments.
 
@@ -10,7 +11,7 @@ The payload that configures the system policy for assessments.
 
 ## Declaration
 
-```swift
+```
 object SystemPolicyControl
 ```
 
@@ -18,7 +19,7 @@ object SystemPolicyControl
 
 Specify `com.apple.systempolicy.control` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.systempolicy.control` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -70,17 +71,24 @@ Specify `com.apple.systempolicy.control` as the payload type.
 
 ## Properties
 
-- `AllowIdentifiedDevelopers` (boolean): If `true`, enables Gatekeeper’s “Mac App Store and identified developers” option. If `false`, enables Gatekeeper’s “Mac App Store” option. If the value of `EnableAssessment` isn’t set to `true`, this key has no effect.
+- `AllowIdentifiedDevelopers` (boolean): If `true`, enables Gatekeeper’s “Mac App Store and identified developers” option.
+
+  If `false`, enables Gatekeeper’s “Mac App Store” option.
+
+  If the value of `EnableAssessment` isn’t set to `true`, this key has no effect.
 - `EnableAssessment` (boolean): If `true`, enables Gatekeeper. If `false`, disables Gatekeeper.
-- `EnableXProtectMalwareUpload` (boolean): If `false`, prevents Gatekeeper from prompting the user to upload blocked malware to Apple for purposes of improving malware detection. Available: macOS 15+
+- `EnableXProtectMalwareUpload` (boolean): If `false`, prevents Gatekeeper from prompting the user to upload blocked malware to Apple for purposes of improving malware detection.
+
+  Available: macOS 15+
 
 ## See Also
 
-- [object SystemPolicyKernelExtensions](systempolicykernelextensions.md)
+### System policy
+- [object SystemPolicyKernelExtensions](./systempolicykernelextensions.md)
   The payload that configures the kernel extension policies.
-- [object SystemPolicyManaged](systempolicymanaged.md)
+- [object SystemPolicyManaged](./systempolicymanaged.md)
   The payload that configures the Finder’s contextual menu to bypass the system policy.
-- [object SystemPolicyRule](systempolicyrule.md)
+- [object SystemPolicyRule](./systempolicyrule.md)
   The payload that configures the system policy.
 
 

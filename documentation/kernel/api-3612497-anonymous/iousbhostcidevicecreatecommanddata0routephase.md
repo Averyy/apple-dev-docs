@@ -1,14 +1,15 @@
 # IOUSBHostCIDeviceCreateCommandData0RoutePhase
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 IOUSBHostCIDeviceCreateCommandData0RoutePhase = IOUSBBitRangePhase(4, 23)
 ```
 

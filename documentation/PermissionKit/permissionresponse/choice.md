@@ -1,7 +1,8 @@
 # choice
 
 **Framework**: PermissionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The choice made by the person initiating this response.
 
@@ -20,7 +21,8 @@ let choice: PermissionChoice
 
 ## See Also
 
-- [let question: PermissionQuestion<Topic>](permissionresponse/question.md)
+### Getting response information
+- [let question: PermissionQuestion<Topic>](./question.md)
   The original question that this response answers.
 
 

@@ -1,7 +1,8 @@
 # isPlayable
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the media selection option is playable.
 
@@ -20,9 +21,13 @@ A Boolean value that indicates whether the media selection option is playable.
 var isPlayable: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isPlayable) BOOL playable;
+```
+
 #### Discussion
 
-If the media data associated with the option cannot be decoded or otherwise rendered, the value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+If the media data associated with the option cannot be decoded or otherwise rendered, the value of this property is [`false`](../../Swift/false.md).
 
 
 ---

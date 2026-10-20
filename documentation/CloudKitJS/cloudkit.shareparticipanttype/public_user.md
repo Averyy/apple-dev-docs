@@ -1,7 +1,8 @@
 # PUBLIC_USER
 
 **Framework**: CloudKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Participants who accepted a shared record by accessing the share URL.
 
@@ -10,17 +11,18 @@ Participants who accepted a shared record by accessing the share URL.
 
 ## Declaration
 
-```swift
+```
 const String PUBLIC_USER;
 ```
 
 ## See Also
 
-- [OWNER](cloudkit.shareparticipanttype/owner.md)
+### Enumeration Cases
+- [OWNER](./owner.md)
   The owner of the shared record who can add private users but not add public users.
-- [PRIVATE_USER](cloudkit.shareparticipanttype/private_user.md)
+- [PRIVATE_USER](./private_user.md)
   Participants who were invited to share the record by the owner.
-- [UNKNOWN](cloudkit.shareparticipanttype/unknown.md)
+- [UNKNOWN](./unknown.md)
   Unknown type of participant.
 
 

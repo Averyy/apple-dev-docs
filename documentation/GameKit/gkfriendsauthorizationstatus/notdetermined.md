@@ -1,7 +1,8 @@
 # GKFriendsAuthorizationStatus.notDetermined
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The player hasn’t choosen whether your game may access their friends list.
 
@@ -20,17 +21,22 @@ The player hasn’t choosen whether your game may access their friends list.
 case notDetermined
 ```
 
+```c
+GKFriendsAuthorizationStatusNotDetermined
+```
+
 ## Mentions
 
-- [Connecting players with their friends in your game](connecting-players-with-their-friends-in-your-game.md)
+- [Connecting players with their friends in your game](../connecting-players-with-their-friends-in-your-game.md)
 
 ## See Also
 
-- [GKFriendsAuthorizationStatus.authorized](gkfriendsauthorizationstatus/authorized.md)
+### Authorization Statuses
+- [GKFriendsAuthorizationStatus.authorized](./authorized.md)
   The player authorized your game to access their list of friends.
-- [GKFriendsAuthorizationStatus.denied](gkfriendsauthorizationstatus/denied.md)
+- [GKFriendsAuthorizationStatus.denied](./denied.md)
   Access to the player’s friends’ data denied.
-- [GKFriendsAuthorizationStatus.restricted](gkfriendsauthorizationstatus/restricted.md)
+- [GKFriendsAuthorizationStatus.restricted](./restricted.md)
   Access to the player’s list of friends restricted.
 
 

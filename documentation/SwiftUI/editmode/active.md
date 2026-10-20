@@ -1,7 +1,8 @@
 # EditMode.active
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user can edit the view content.
 
@@ -20,13 +21,14 @@ case active
 
 #### Discussion
 
-The [`isEditing`](editmode/isediting.md) property is `true` in this state.
+The [`isEditing`](./isediting.md) property is `true` in this state.
 
 ## See Also
 
-- [EditMode.inactive](editmode/inactive.md)
+### Getting edit modes
+- [EditMode.inactive](./inactive.md)
   The user can’t edit the view content.
-- [EditMode.transient](editmode/transient.md)
+- [EditMode.transient](./transient.md)
   The view is in a temporary edit mode.
 
 

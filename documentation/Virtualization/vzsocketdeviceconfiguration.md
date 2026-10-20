@@ -1,7 +1,8 @@
 # VZSocketDeviceConfiguration
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The common configuration traits for socket device requests.
 
@@ -14,28 +15,33 @@ The common configuration traits for socket device requests.
 class VZSocketDeviceConfiguration
 ```
 
+```objc
+@interface VZSocketDeviceConfiguration : NSObject
+```
+
 #### Overview
 
-Don’t create a [`VZSocketDeviceConfiguration`](vzsocketdeviceconfiguration.md) object directly. Instead, create a [`VZVirtioSocketDeviceConfiguration`](vzvirtiosocketdeviceconfiguration.md) object and add it to your virtual machine’s configuration.
+Don’t create a [`VZSocketDeviceConfiguration`](./vzsocketdeviceconfiguration.md) object directly. Instead, create a [`VZVirtioSocketDeviceConfiguration`](./vzvirtiosocketdeviceconfiguration.md) object and add it to your virtual machine’s configuration.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [VZVirtioSocketDeviceConfiguration](vzvirtiosocketdeviceconfiguration.md)
+- [VZVirtioSocketDeviceConfiguration](./vzvirtiosocketdeviceconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZVirtioSocketDeviceConfiguration](vzvirtiosocketdeviceconfiguration.md)
+### Configurations
+- [class VZVirtioSocketDeviceConfiguration](./vzvirtiosocketdeviceconfiguration.md)
   A configuration object that requests the creation of a socket device to communicate with the guest system.
 
 

@@ -1,18 +1,19 @@
 # CTFramePathFillRule.windingNumber
 
 **Framework**: Core Text  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Paints the area using the nonzero winding number rule.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ Paints the area using the nonzero winding number rule.
 case windingNumber
 ```
 
+```c
+kCTFramePathFillWindingNumber
+```
+
 #### Discussion
 
-Text is filled in the area that would be painted if the path were given to [`CGContextFillPath`](https://developer.apple.com/documentation/coregraphics/cgcontextfillpath).
+Text is filled in the area that would be painted if the path were given to [`CGContextFillPath`](../../CoreGraphics/cgcontextfillpath.md).
 
 ## See Also
 
-- [CTFramePathFillRule.evenOdd](ctframepathfillrule/evenodd.md)
+### Enumeration Cases
+- [CTFramePathFillRule.evenOdd](./evenodd.md)
   Paints the area using the even-odd fill rule.
 
 

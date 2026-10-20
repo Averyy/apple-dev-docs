@@ -1,7 +1,8 @@
 # USDPrim.Reference
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A reference to an external layer or asset.
 
@@ -26,42 +27,43 @@ References are composition arcs that bring content from another layer into this 
 ## Topics
 
 ### Initializers
-- [init(assetPath: String?, primPath: USDLayer.Path?, layerOffset: USDLayer.TimeOffset, customData: Dictionary<String, USDValue>)](usdprim/reference/init(assetpath:primpath:layeroffset:customdata:).md)
+- [init(assetPath: String?, primPath: USDLayer.Path?, layerOffset: USDLayer.TimeOffset, customData: Dictionary<String, USDValue>)](./reference/init%28assetpath,primpath,layeroffset,customdata%29.md)
   Creates a reference.
 ### Instance Properties
-- [var assetPath: String?](usdprim/reference/assetpath.md)
+- [var assetPath: String?](./reference/assetpath.md)
   The asset path the reference targets, or `nil` for an internal reference.
-- [var customData: Dictionary<String, USDValue>](usdprim/reference/customdata.md)
+- [var customData: Dictionary<String, USDValue>](./reference/customdata.md)
   Custom metadata authored alongside the reference.
-- [var isInternal: Bool](usdprim/reference/isinternal.md)
+- [var isInternal: Bool](./reference/isinternal.md)
   Whether this is an internal reference (empty asset path).
-- [var layerOffset: USDLayer.TimeOffset](usdprim/reference/layeroffset.md)
+- [var layerOffset: USDLayer.TimeOffset](./reference/layeroffset.md)
   Time-axis remap applied to the reference’s animation.
-- [var primPath: USDLayer.Path?](usdprim/reference/primpath.md)
+- [var primPath: USDLayer.Path?](./reference/primpath.md)
   The target prim path within the referenced asset, or `nil` to use the asset’s default prim.
 ### Instance Methods
-- [func setCustomData(String, to: USDValue)](usdprim/reference/setcustomdata(_:to:).md)
+- [func setCustomData(String, to: USDValue)](./reference/setcustomdata%28_,to%29.md)
   Sets `key` in `customData` to `value`.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var references: USDPrim.ReferenceCollection](usdprim/references.md)
+### Composing references and payloads
+- [var references: USDPrim.ReferenceCollection](./references.md)
   The reference composition arcs on this prim.
-- [USDPrim.ReferenceCollection](usdprim/referencecollection.md)
+- [USDPrim.ReferenceCollection](./referencecollection.md)
   Manages reference composition arcs on a prim.
-- [USDPrim.Payload](usdprim/payload.md)
+- [USDPrim.Payload](./payload.md)
   A payload to an external asset.
-- [USDPrim.ListPosition](usdprim/listposition.md)
+- [USDPrim.ListPosition](./listposition.md)
   Where a new composition arc should be inserted relative to existing arcs.
 
 

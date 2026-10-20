@@ -1,7 +1,8 @@
 # name
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of this attribute.
 
@@ -21,7 +22,7 @@ var name: USDToken { get }
 
 #### Discussion
 
-An attribute’s name is the last component of its [`path`](usdprim/attribute/path.md). This property is equivalent to the `USDLayer.Path/name` property of that path.
+An attribute’s name is the last component of its [`path`](./path.md). This property is equivalent to the `USDLayer.Path/name` property of that path.
 
 
 ---

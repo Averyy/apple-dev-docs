@@ -1,7 +1,8 @@
 # init(headroom:colorSpace:red:green:blue:alpha:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 init?(headroom: Float, colorSpace space: CGColorSpace, red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)
+```
+
+```c
+extern CGColorRefCGColorCreateWithContentHeadroom(float headroom, CGColorSpaceRef space, CGFloat red, CGFloat green, CGFloat blue, CGFloat alpha);
 ```
 
 

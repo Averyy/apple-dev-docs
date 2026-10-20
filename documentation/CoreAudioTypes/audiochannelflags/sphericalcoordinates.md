@@ -1,7 +1,8 @@
 # sphericalCoordinates
 
 **Framework**: Core Audio Types  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag that indicates the channel uses the speaker position’s spherical coordinates.
 
@@ -20,15 +21,20 @@ A flag that indicates the channel uses the speaker position’s spherical coordi
 static var sphericalCoordinates: AudioChannelFlags { get }
 ```
 
+```c
+kAudioChannelFlags_SphericalCoordinates
+```
+
 #### Discussion
 
-This flag is mutually exclusive with [`rectangularCoordinates`](audiochannelflags/rectangularcoordinates.md).
+This flag is mutually exclusive with [`rectangularCoordinates`](./rectangularcoordinates.md).
 
 ## See Also
 
-- [static var meters: AudioChannelFlags](audiochannelflags/meters.md)
+### Flags
+- [static var meters: AudioChannelFlags](./meters.md)
   A flag that indicates that unit values are in meters.
-- [static var rectangularCoordinates: AudioChannelFlags](audiochannelflags/rectangularcoordinates.md)
+- [static var rectangularCoordinates: AudioChannelFlags](./rectangularcoordinates.md)
   A flag that indicates the channel uses the speaker position’s cartesian coordinates.
 
 

@@ -1,7 +1,8 @@
 # endpoint
 
 **Framework**: DeviceDiscoveryUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A network connection endpoint for the device that a person selected.
 

@@ -1,7 +1,8 @@
 # fontResolutionContext
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Information used to resolve a font.
 
@@ -22,7 +23,7 @@ var fontResolutionContext: Font.Context { get }
 
 #### Discussion
 
-> **Note**: [`resolve(in:)`](font/resolve(in:).md)
+> **See Also**: [`resolve(in:)`](../font/resolve%28in%29.md)
 
 
 ---

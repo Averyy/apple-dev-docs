@@ -1,7 +1,8 @@
 # backgroundColor
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view’s background color.
 
@@ -15,8 +16,28 @@ The view’s background color.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+var backgroundColor: UIColor { get set }
+```
+
+*macOS*
+
 ```swift
 var backgroundColor: NSColor { get set }
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, strong) UIColor * backgroundColor;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic, strong) NSColor * backgroundColor;
 ```
 
 #### Discussion
@@ -25,7 +46,8 @@ A view’s background is the area displayed to either side of a PDF document’s
 
 ## See Also
 
-- [func takeBackgroundColorFrom(Any)](pdfview/takebackgroundcolorfrom(_:).md)
+### Setting Background Color
+- [func takeBackgroundColorFrom(Any)](./takebackgroundcolorfrom%28_%29.md)
   Sets the view’s background color to the specified color.
 
 

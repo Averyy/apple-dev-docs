@@ -1,7 +1,8 @@
 # RemoveObject
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes an audio object from the driver.
 
@@ -10,27 +11,28 @@ Removes an audio object from the driver.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t RemoveObject(IOUserAudioObject *in_object);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
-If the remove succeeds, the object’s reference count decrements by one. The caller should also call [`PropertiesChanged`](iouseraudiodriver/propertieschanged.md) to notify the host of any changes.
+If the remove succeeds, the object’s reference count decrements by one. The caller should also call [`PropertiesChanged`](./propertieschanged.md) to notify the host of any changes.
 
 ## Parameters
 
-- `in_object`: The [`IOUserAudioObjectID`](audiodriverkit/iouseraudioobjectid.md) to remove from the driver.
+- `in_object`: The [`IOUserAudioObjectID`](../audiodriverkit-page/iouseraudioobjectid.md) to remove from the driver.
 
 ## See Also
 
-- [AddObject](iouseraudiodriver/addobject.md)
+### Working with Audio Objects
+- [AddObject](./addobject.md)
   Adds an audio object to the driver.
-- [GetAudioObjectForObjectID](iouseraudiodriver/getaudioobjectforobjectid.md)
+- [GetAudioObjectForObjectID](./getaudioobjectforobjectid.md)
   Gets a pointer to an audio object, given the object’s identifier.
 
 

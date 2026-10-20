@@ -1,7 +1,8 @@
 # constraints
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The constraints held by the view.
 
@@ -9,7 +10,7 @@ The constraints held by the view.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,20 @@ The constraints held by the view.
 var constraints: [NSLayoutConstraint] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<__kindof NSLayoutConstraint *> * constraints;
+```
+
 ## See Also
 
-- [func addConstraint(NSLayoutConstraint)](uiview/addconstraint(_:).md)
+### Managing the view’s constraints
+- [func addConstraint(NSLayoutConstraint)](./addconstraint%28_%29.md)
   Adds a constraint on the layout of the receiving view or its subviews.
-- [func addConstraints([NSLayoutConstraint])](uiview/addconstraints(_:).md)
+- [func addConstraints([NSLayoutConstraint])](./addconstraints%28_%29.md)
   Adds multiple constraints on the layout of the receiving view or its subviews.
-- [func removeConstraint(NSLayoutConstraint)](uiview/removeconstraint(_:).md)
+- [func removeConstraint(NSLayoutConstraint)](./removeconstraint%28_%29.md)
   Removes the specified constraint from the view.
-- [func removeConstraints([NSLayoutConstraint])](uiview/removeconstraints(_:).md)
+- [func removeConstraints([NSLayoutConstraint])](./removeconstraints%28_%29.md)
   Removes the specified constraints from the view.
 
 

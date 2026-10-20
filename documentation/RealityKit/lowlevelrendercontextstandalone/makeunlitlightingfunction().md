@@ -1,7 +1,8 @@
 # makeUnlitLightingFunction()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an unlit lighting function that emits the surface emissive color directly, without any lighting calculations.
 
@@ -19,11 +20,12 @@ final func makeUnlitLightingFunction() -> sending LowLevelMaterialResource.Light
 
 #### Return Value
 
-An unlit [`LowLevelMaterialResource.LightingFunction`](lowlevelmaterialresource/lightingfunction.md).
+An unlit [`LowLevelMaterialResource.LightingFunction`](../lowlevelmaterialresource/lightingfunction.md).
 
 ## See Also
 
-- [func makeImageBasedLightingFunction() -> sending LowLevelMaterialResource.LightingFunction](lowlevelrendercontextstandalone/makeimagebasedlightingfunction.md)
+### Creating lighting functions
+- [func makeImageBasedLightingFunction() -> sending LowLevelMaterialResource.LightingFunction](./makeimagebasedlightingfunction%28%29.md)
   Returns a lighting function using image-based lighting (IBL).
 
 

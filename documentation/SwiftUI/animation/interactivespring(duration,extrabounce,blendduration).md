@@ -1,7 +1,8 @@
 # interactiveSpring(duration:extraBounce:blendDuration:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A convenience for a `spring` animation with a lower `response` value, intended for driving interactive animations.
 

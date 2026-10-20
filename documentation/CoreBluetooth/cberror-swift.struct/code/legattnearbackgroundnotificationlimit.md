@@ -1,7 +1,8 @@
 # CBError.Code.leGattNearBackgroundNotificationLimit
 
 **Framework**: Core Bluetooth  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - watchOS 9.0+
@@ -10,6 +11,10 @@
 
 ```swift
 case leGattNearBackgroundNotificationLimit
+```
+
+```c
+CBErrorLeGattNearBackgroundNotificationLimit
 ```
 
 

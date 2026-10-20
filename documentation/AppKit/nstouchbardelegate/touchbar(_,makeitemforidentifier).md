@@ -1,7 +1,8 @@
 # touchBar(_:makeItemForIdentifier:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate object for the bar item for the specified bar and item identifier.
 
@@ -18,13 +19,17 @@ Asks the delegate object for the bar item for the specified bar and item identif
 optional func touchBar(_ touchBar: NSTouchBar, makeItemForIdentifier identifier: NSTouchBarItem.Identifier) -> NSTouchBarItem?
 ```
 
+```objc
+- (NSTouchBarItem *) touchBar:(NSTouchBar *) touchBar makeItemForIdentifier:(NSTouchBarItemIdentifier) identifier;
+```
+
 #### Return Value
 
 A fully initialized bar item for the specified bar and identifier.
 
 #### Discussion
 
-When the system needs to populate a bar’s items array, the system calls this delegate method to retrieve an item if that item can’t be found in the bar’s private array or in the bar’s [`templateItems`](nstouchbar/templateitems.md) property.
+When the system needs to populate a bar’s items array, the system calls this delegate method to retrieve an item if that item can’t be found in the bar’s private array or in the bar’s [`templateItems`](../nstouchbar/templateitems.md) property.
 
 ## Parameters
 

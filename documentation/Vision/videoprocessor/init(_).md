@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a video processor to perform framework requests against the video asset you specify.
 
@@ -22,7 +23,7 @@ init(_ videoURL: URL)
 
 ## Parameters
 
-- `videoURL`: The video asset in a video format that [`AVFoundation`](https://developer.apple.com/documentation/avfoundation) supports.
+- `videoURL`: The video asset in a video format that [AVFoundation](../../AVFoundation/AVFoundation.md) supports.
 
 
 ---

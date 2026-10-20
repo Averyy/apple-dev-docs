@@ -1,7 +1,8 @@
 # Image.TemplateRenderingMode.template
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that renders all non-transparent pixels as the foreground color.
 
@@ -22,7 +23,8 @@ case template
 
 ## See Also
 
-- [Image.TemplateRenderingMode.original](image/templaterenderingmode/original.md)
+### Getting rendering modes
+- [Image.TemplateRenderingMode.original](./original.md)
   A mode that renders pixels of bitmap images as-is.
 
 

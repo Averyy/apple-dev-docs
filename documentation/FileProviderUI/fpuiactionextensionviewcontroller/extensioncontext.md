@@ -1,7 +1,8 @@
 # extensionContext
 
 **Framework**: File Provider UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The extension context provided by the host app.
 
@@ -18,13 +19,18 @@ The extension context provided by the host app.
 var extensionContext: FPUIActionExtensionContext { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) FPUIActionExtensionContext * extensionContext;
+```
+
 ## See Also
 
-- [func prepare(forAction: String, itemIdentifiers: [NSFileProviderItemIdentifier])](fpuiactionextensionviewcontroller/prepare(foraction:itemidentifiers:).md)
+### Working with Actions
+- [func prepare(forAction: String, itemIdentifiers: [NSFileProviderItemIdentifier])](./prepare%28foraction,itemidentifiers%29.md)
   Performs any necessary setup or configuration for the specified action.
-- [func prepare(forError: any Error)](fpuiactionextensionviewcontroller/prepare(forerror:).md)
+- [func prepare(forError: any Error)](./prepare%28forerror%29.md)
   Performs any necessary setup or configuration when an authentication error occurs.
-- [class FPUIActionExtensionContext](fpuiactionextensioncontext.md)
+- [class FPUIActionExtensionContext](../fpuiactionextensioncontext.md)
   An extension context provided to File Provider UI extensions.
 
 

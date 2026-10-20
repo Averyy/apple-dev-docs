@@ -1,7 +1,8 @@
 # AUParameterGroup
 
 **Framework**: Audio Toolbox  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A parameter group object represents a group of related audio unit parameters.
 
@@ -19,43 +20,48 @@ A parameter group object represents a group of related audio unit parameters.
 class AUParameterGroup
 ```
 
+```objc
+@interface AUParameterGroup : AUParameterNode
+```
+
 #### Overview
 
-A parameter group is KVC-compliant for its children. For example, calling the parameter group’s [`value(forKey:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/value(forkey:)) method, with a key value of *volume*, returns a child whose [`identifier`](auparameternode/identifier.md) value matches that key.
+A parameter group is KVC-compliant for its children. For example, calling the parameter group’s [`value(forKey:)`](../ObjectiveC/nsobject-swift.class/value%28forkey%29.md) method, with a key value of *volume*, returns a child whose [`identifier`](./auparameternode/identifier.md) value matches that key.
 
 ## Topics
 
 ### Obtaining Group Parameters
-- [var allParameters: [AUParameter]](auparametergroup/allparameters.md)
+- [var allParameters: [AUParameter]](./auparametergroup/allparameters.md)
   Returns a flat array of all parameters in the group, including those in child groups.
-- [var children: [AUParameterNode]](auparametergroup/children.md)
+- [var children: [AUParameterNode]](./auparametergroup/children.md)
   The group’s child nodes.
 ### Initializers
-- [init?(coder: NSCoder)](auparametergroup/init(coder:).md)
+- [init?(coder: NSCoder)](./auparametergroup/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [AUParameterNode](auparameternode.md)
+- [AUParameterNode](./auparameternode.md)
 ### Inherited By
-- [AUParameterTree](auparametertree.md)
+- [AUParameterTree](./auparametertree.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class AUParameter](auparameter.md)
+### Parameters
+- [class AUParameter](./auparameter.md)
   An object that represents a single audio unit parameter.
-- [class AUParameterNode](auparameternode.md)
+- [class AUParameterNode](./auparameternode.md)
   An object that represents a node in an audio unit’s parameter tree.
-- [class AUParameterTree](auparametertree.md)
+- [class AUParameterTree](./auparametertree.md)
   An object that represents a top-level group node that contains all of an audio unit’s parameters.
 
 

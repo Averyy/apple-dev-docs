@@ -1,7 +1,8 @@
 # isRoamingEnabled
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether or not roaming is enabled on a Hotspot 2.0 Wi-Fi network.
 
@@ -17,19 +18,24 @@ A Boolean value indicating whether or not roaming is enabled on a Hotspot 2.0 Wi
 var isRoamingEnabled: Bool { get set }
 ```
 
+```objc
+@property (getter=isRoamingEnabled) BOOL roamingEnabled;
+```
+
 #### Discussion
 
 If `true`, the HS 2.0 Wi-Fi- network can connect to networks of roaming service providers. The default value is `false`.
 
 ## See Also
 
-- [var domainName: String](nehotspoths20settings/domainname.md)
+### Accessing Hotspot 2.0 properties
+- [var domainName: String](./domainname.md)
   The domain name of a Hotspot 2.0 Wi-Fi Network.
-- [var mccAndMNCs: [String]](nehotspoths20settings/mccandmncs.md)
+- [var mccAndMNCs: [String]](./mccandmncs.md)
   An array of Mobile Country Code (MCC) and Mobile Network Code  (MNC) pairs used for Wi-Fi Hotspot 2.0 negotiation.
-- [var naiRealmNames: [String]](nehotspoths20settings/nairealmnames.md)
+- [var naiRealmNames: [String]](./nairealmnames.md)
   An array of Network Access Identifier (NAI) realm name strings used for Wi-Fi Hotspot 2.0 negotiation.
-- [var roamingConsortiumOIs: [String]](nehotspoths20settings/roamingconsortiumois.md)
+- [var roamingConsortiumOIs: [String]](./roamingconsortiumois.md)
   An array of Roaming Consortium Organization (RCO) identifiers used for Wi-Fi Hotspot 2.0 negotiation.
 
 

@@ -1,17 +1,20 @@
 # SecKeyEncrypt(_:_:_:_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Encrypts a block of plaintext.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- tvOS 4.0+
-- visionOS 1.0+
-- watchOS 1.0+
+- iOS 2.0+ - Deprecated in 15.0
+- iPadOS 2.0+ - Deprecated in 15.0
+- Mac Catalyst 13.1+ - Deprecated in 15.0
+- tvOS 4.0+ - Deprecated in 15.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 1.0+ - Deprecated in 8.0
+
+> **Deprecated**: Use SecKeyCreateEncryptedData
 
 ## Declaration
 
@@ -19,9 +22,13 @@ Encrypts a block of plaintext.
 func SecKeyEncrypt(_ key: SecKey, _ padding: SecPadding, _ plainText: UnsafePointer<UInt8>, _ plainTextLen: Int, _ cipherText: UnsafeMutablePointer<UInt8>, _ cipherTextLen: UnsafeMutablePointer<Int>) -> OSStatus
 ```
 
+```c
+OSStatus SecKeyEncrypt(SecKeyRef key, SecPadding padding, const uint8_t *plainText, size_t plainTextLen, uint8_t *cipherText, size_t *cipherTextLen);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
@@ -30,9 +37,9 @@ The input buffer (`plainText`) can be the same as the output buffer (`cipherText
 ## Parameters
 
 - `key`: Public key with which to encrypt the data.
-- `padding`: The type of padding to use. Possible values are listed in [`SecPadding`](secpadding.md). Typically, [`PKCS1`](secpadding/pkcs1.md) is used, which adds PKCS1 padding before encryption. If you specify [`kSecPaddingNone`](secpadding/ksecpaddingnone.md), the data is encrypted as-is.
+- `padding`: The type of padding to use. Possible values are listed in [`SecPadding`](./secpadding.md). Typically, [`PKCS1`](./secpadding/pkcs1.md) is used, which adds PKCS1 padding before encryption. If you specify [`kSecPaddingNone`](./secpadding/ksecpaddingnone.md), the data is encrypted as-is.
 - `plainText`: The data to encrypt.
-- `plainTextLen`: Length in bytes of the data in the `plainText` buffer. This must be less than or equal to the value returned by the [`SecKeyGetBlockSize(_:)`](seckeygetblocksize(_:).md) function. When PKCS1 padding is performed, the maximum length of data that can be encrypted is 11 bytes less than the value returned by the [`SecKeyGetBlockSize(_:)`](seckeygetblocksize(_:).md) function (`secKeyGetBlockSize() - 11`).
+- `plainTextLen`: Length in bytes of the data in the `plainText` buffer. This must be less than or equal to the value returned by the [`SecKeyGetBlockSize(_:)`](./seckeygetblocksize%28_%29.md) function. When PKCS1 padding is performed, the maximum length of data that can be encrypted is 11 bytes less than the value returned by the [`SecKeyGetBlockSize(_:)`](./seckeygetblocksize%28_%29.md) function (`secKeyGetBlockSize() - 11`).
 - `cipherText`: On return, the encrypted text.
 - `cipherTextLen`: On entry, the size of the buffer provided in the `cipherText` parameter. On return, the amount of data actually placed in the buffer.
 

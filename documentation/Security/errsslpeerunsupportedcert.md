@@ -1,7 +1,8 @@
 # errSSLPeerUnsupportedCert
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An unsupported certificate format was encountered.
 
@@ -18,6 +19,10 @@ An unsupported certificate format was encountered.
 
 ```swift
 var errSSLPeerUnsupportedCert: OSStatus { get }
+```
+
+```c
+errSSLPeerUnsupportedCert
 ```
 
 

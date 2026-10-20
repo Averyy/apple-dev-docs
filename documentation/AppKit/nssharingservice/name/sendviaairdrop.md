@@ -1,7 +1,8 @@
 # sendViaAirDrop
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A service that sends an item provider’s contents to another device using AirDrop.
 
@@ -14,21 +15,26 @@ A service that sends an item provider’s contents to another device using AirDr
 static let sendViaAirDrop: NSSharingService.Name
 ```
 
+```c
+extern NSSharingServiceName const NSSharingServiceNameSendViaAirDrop;
+```
+
 ## See Also
 
-- [static let addToAperture: NSSharingService.Name](nssharingservice/name/addtoaperture.md)
+### Sharing Service Names
+- [static let addToAperture: NSSharingService.Name](./addtoaperture.md)
   A service that shares an item provider’s contents with Aperture.
-- [static let addToIPhoto: NSSharingService.Name](nssharingservice/name/addtoiphoto.md)
+- [static let addToIPhoto: NSSharingService.Name](./addtoiphoto.md)
   A service that shares an item provider’s contents with iPhoto.
-- [static let addToSafariReadingList: NSSharingService.Name](nssharingservice/name/addtosafarireadinglist.md)
+- [static let addToSafariReadingList: NSSharingService.Name](./addtosafarireadinglist.md)
   A service that shares an item provider’s contents with Safari’s Reading List.
-- [static let cloudSharing: NSSharingService.Name](nssharingservice/name/cloudsharing.md)
+- [static let cloudSharing: NSSharingService.Name](./cloudsharing.md)
   A service that shares an item provider’s contents with other iCloud users.
-- [static let composeEmail: NSSharingService.Name](nssharingservice/name/composeemail.md)
+- [static let composeEmail: NSSharingService.Name](./composeemail.md)
   A service that uses an item provider’s contents to compose an email.
-- [static let composeMessage: NSSharingService.Name](nssharingservice/name/composemessage.md)
+- [static let composeMessage: NSSharingService.Name](./composemessage.md)
   A service that uses an item provider’s contents to compose a message.
-- [static let useAsDesktopPicture: NSSharingService.Name](nssharingservice/name/useasdesktoppicture.md)
+- [static let useAsDesktopPicture: NSSharingService.Name](./useasdesktoppicture.md)
   A service that sets the item provider’s contents as the current user’s desktop picture.
 
 

@@ -1,10 +1,13 @@
 # NSScaleToFit
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.10
+
+> **Deprecated**: Use NSImageScaleAxesIndependently instead
 
 ## Declaration
 
@@ -12,14 +15,19 @@
 static var NSScaleToFit: NSImageScaling { get }
 ```
 
+```c
+NSScaleToFit
+```
+
 #### Discussion
 
-Use [`NSImageScaling.scaleAxesIndependently`](nsimagescaling/scaleaxesindependently.md).
+Use [`NSImageScaling.scaleAxesIndependently`](./scaleaxesindependently.md).
 
 ## See Also
 
-- [static var NSScaleNone: NSImageScaling](nsimagescaling/nsscalenone.md)
-- [static var NSScaleProportionally: NSImageScaling](nsimagescaling/nsscaleproportionally.md)
+### Deprecated
+- [static var NSScaleNone: NSImageScaling](./nsscalenone.md)
+- [static var NSScaleProportionally: NSImageScaling](./nsscaleproportionally.md)
 
 
 ---

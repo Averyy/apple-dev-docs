@@ -1,7 +1,8 @@
 # signatureData
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The result of signing the data provided by the caller using the requested digital identity.
 
@@ -21,7 +22,8 @@ The pass determines the signature data format.
 
 ## See Also
 
-- [let certificate: JPKIPassContents.Certificate<IdentityType>](jpkipasscontents/signature/certificate.md)
+### Defining the certificate and signed data
+- [let certificate: JPKIPassContents.Certificate<IdentityType>](./certificate.md)
   The certificate associated with an identity document.
 
 

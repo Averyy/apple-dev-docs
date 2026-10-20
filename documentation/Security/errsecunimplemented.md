@@ -1,7 +1,8 @@
 # errSecUnimplemented
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A function or operation is not implemented.
 
@@ -18,6 +19,10 @@ A function or operation is not implemented.
 
 ```swift
 var errSecUnimplemented: OSStatus { get }
+```
+
+```c
+errSecUnimplemented
 ```
 
 

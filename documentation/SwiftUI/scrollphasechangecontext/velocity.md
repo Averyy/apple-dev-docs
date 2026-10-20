@@ -1,7 +1,8 @@
 # velocity
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The velocity of the scroll view at the time of the scroll phase change.
 

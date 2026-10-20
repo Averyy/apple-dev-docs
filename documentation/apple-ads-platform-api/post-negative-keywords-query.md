@@ -1,7 +1,8 @@
 # Query Negative Keywords
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Query negative keywords using structured filters, sorting, and pagination.
 
@@ -19,7 +20,7 @@ This endpoint queries negative keywords using a standard `QueryRequest` body. Th
 - The `campaignId` field only supports `EQUALS`.
 - Filtering by `id` (`EQUALS` or `IN`) is exempt from the `adGroupId` requirement, since `id` already fully bounds the query.
 
-See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
 ##### Filterable Fields
 
@@ -29,10 +30,10 @@ See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supporte
 | `adGroupId` | integer | `EQUALS`, `IN`, `NOT_EQUALS`, `IS_NULL`, `IS_NOT_NULL` | Yes | The ad group this negative keyword belongs to. Null if defined at campaign level. |
 | `campaignId` | integer | `EQUALS` | Yes | The campaign ID. Negative keywords can be defined at campaign or ad group level. |
 | `text` | string | `EQUALS`, `STARTS_WITH` |  | The original advertiser-given keyword text. |
-| `matchType` | string (enum) | `EQUALS`, `IN` |  | Match type for this negative keyword. See [`KeywordMatchType`](keywordmatchtype.md). |
-| `status` | string (enum) | `EQUALS`, `IN` |  | Whether the negative keyword is active or paused. See [`NegativeKeywordStatus`](negativekeywordstatus.md). |
+| `matchType` | string (enum) | `EQUALS`, `IN` |  | Match type for this negative keyword. See [`KeywordMatchType`](./keywordmatchtype.md). |
+| `status` | string (enum) | `EQUALS`, `IN` |  | Whether the negative keyword is active or paused. See [`NegativeKeywordStatus`](./negativekeywordstatus.md). |
 
-The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
+The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
 #### Payload Examples
 
@@ -281,17 +282,34 @@ POST /v1/negative-keywords/query
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `QueryRequest`
+
+## Responses
+
+- `200` OK (`NegativeKeywordQueryResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`ErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create a Negative Keyword](post-negative-keywords.md)
+- [Create a Negative Keyword](./post-negative-keywords.md)
   Create a negative keyword at the campaign or ad group level to prevent ads from showing for unwanted search terms.
-- [Get a Negative Keyword](get-negative-keywords-_id_.md)
+- [Get a Negative Keyword](./get-negative-keywords-_id_.md)
   Retrieve a single negative keyword by its unique identifier.
-- [Update a Negative Keyword](put-negative-keywords-_id_.md)
+- [Update a Negative Keyword](./put-negative-keywords-_id_.md)
   Update a negative keyword’s status to enable or pause its search term exclusion.
-- [Delete a Negative Keyword](delete-negative-keywords-_id_.md)
+- [Delete a Negative Keyword](./delete-negative-keywords-_id_.md)
   Soft-delete a negative keyword by ID.
 
 

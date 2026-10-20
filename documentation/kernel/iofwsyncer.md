@@ -1,50 +1,52 @@
 # IOFWSyncer
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```cpp
 class IOFWSyncer : OSObject
 ```
 
 ## Topics
 
 ### Instance Methods
-- [- free](iofwsyncer/1387009-free.md)
-- [- getMetaClass](iofwsyncer/1387011-getmetaclass.md)
-- [- init](iofwsyncer/1387007-init.md)
-- [- privateSignal](iofwsyncer/1386999-privatesignal.md)
-- [- reinit](iofwsyncer/1386997-reinit.md)
-- [- signal](iofwsyncer/1387005-signal.md)
-- [- wait](iofwsyncer/1387013-wait.md)
+- [- free](./iofwsyncer/api-1387009-free.md)
+- [- getMetaClass](./iofwsyncer/api-1387011-getmetaclass.md)
+- [- init](./iofwsyncer/api-1387007-init.md)
+- [- privateSignal](./iofwsyncer/api-1386999-privatesignal.md)
+- [- reinit](./iofwsyncer/api-1386997-reinit.md)
+- [- signal](./iofwsyncer/api-1387005-signal.md)
+- [- wait](./iofwsyncer/api-1387013-wait.md)
 ### Type Methods
-- [+ create](iofwsyncer/1387001-create.md)
+- [+ create](./iofwsyncer/api-1387001-create.md)
 
 ## Relationships
 
 ### Inherits From
-- [OSObject](osobject.md)
+- [OSObject](./osobject.md)
 
 ## See Also
 
-- [UCInfo](ucinfo.md)
-- [IOLocalConfigDirectory](iolocalconfigdirectory.md)
-- [IOConfigDirectory](ioconfigdirectory.md)
-- [IOFireWireDuplicateGUIDList](iofirewireduplicateguidlist.md)
-- [IOFireWireIRMAllocation](iofirewireirmallocation.md)
-- [IOFireWireMultiIsochReceiveListener](iofirewiremultiisochreceivelistener.md)
-- [IOFWPHYPacketListener](iofwphypacketlistener.md)
-- [IOFireWireMultiIsochReceivePacket](iofirewiremultiisochreceivepacket.md)
-- [IOFireWirePowerManager](iofirewirepowermanager.md)
-- [IOFWIsochChannel](iofwisochchannel.md)
-- [IOFWIsochPort](iofwisochport.md)
-- [IOFWLocalIsochPort](iofwlocalisochport.md)
-- [IOFWUserObjectExporter](iofwuserobjectexporter.md)
+### FireWire Types
+- [UCInfo](./ucinfo.md)
+- [IOLocalConfigDirectory](./iolocalconfigdirectory.md)
+- [IOConfigDirectory](./ioconfigdirectory.md)
+- [IOFireWireDuplicateGUIDList](./iofirewireduplicateguidlist.md)
+- [IOFireWireIRMAllocation](./iofirewireirmallocation.md)
+- [IOFireWireMultiIsochReceiveListener](./iofirewiremultiisochreceivelistener.md)
+- [IOFWPHYPacketListener](./iofwphypacketlistener.md)
+- [IOFireWireMultiIsochReceivePacket](./iofirewiremultiisochreceivepacket.md)
+- [IOFireWirePowerManager](./iofirewirepowermanager.md)
+- [IOFWIsochChannel](./iofwisochchannel.md)
+- [IOFWIsochPort](./iofwisochport.md)
+- [IOFWLocalIsochPort](./iofwlocalisochport.md)
+- [IOFWUserObjectExporter](./iofwuserobjectexporter.md)
 
 
 ---

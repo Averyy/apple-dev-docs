@@ -1,7 +1,8 @@
 # retry
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A scan hasn’t completely traversed the CVBufferPool due to a concurrent operation. The client can retry the scan.
 

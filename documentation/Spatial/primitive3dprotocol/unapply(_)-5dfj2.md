@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Unapplies a pose.
@@ -24,6 +25,16 @@ mutating func unapply(_ pose: Self.Pose)
 ## Parameters
 
 - `pose`: The pose.
+
+## Default Implementations
+
+### Primitive3DProtocol Implementations
+- [func unapply(Self.Pose)](./unapply%28_%29-2vz7p.md)
+  Unapplies a pose.
+- [func unapply(Self.AffineTransform)](./unapply%28_%29-2wwwi.md)
+  Unapplies an affine transform.
+- [func unapply(Self.ProjectiveTransform)](./unapply%28_%29-4ip05.md)
+  Unapplies a projective transform.
 
 
 ---

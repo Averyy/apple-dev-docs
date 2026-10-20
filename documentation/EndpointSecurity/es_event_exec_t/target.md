@@ -1,13 +1,14 @@
 # target
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The process to execute.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,14 @@ The process to execute.
 var target: UnsafeMutablePointer<es_process_t>
 ```
 
+```c
+es_process_t * target;
+```
+
 ## See Also
 
-- [struct es_process_t](es_process_t.md)
+### Inspecting Event Properties
+- [struct es_process_t](../es_process_t.md)
   A type that describes a process, as delivered by an Endpoint Security message.
 
 

@@ -1,7 +1,8 @@
 # Entry()
 
 **Framework**: SwiftUI  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Creates an environment values, transaction, container values, or focused values entry.
 
@@ -23,11 +24,11 @@ Creates an environment values, transaction, container values, or focused values 
 
 ## Mentions
 
-- [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
+- [Building and customizing the menu bar with SwiftUI](./building-and-customizing-the-menu-bar-with-swiftui.md)
 
 #### Environment Values
 
-Create [`EnvironmentValues`](environmentvalues.md) entries by extending the [`EnvironmentValues`](environmentvalues.md) structure with new properties and attaching the @Entry macro to the variable declarations:
+Create [`EnvironmentValues`](./environmentvalues.md) entries by extending the [`EnvironmentValues`](./environmentvalues.md) structure with new properties and attaching the @Entry macro to the variable declarations:
 
 ```swift
 extension EnvironmentValues {
@@ -38,7 +39,7 @@ extension EnvironmentValues {
 
 #### Transaction Values
 
-Create [`Transaction`](transaction.md) entries by extending the [`Transaction`](transaction.md) structure with new properties and attaching the @Entry macro to the variable declarations:
+Create [`Transaction`](./transaction.md) entries by extending the [`Transaction`](./transaction.md) structure with new properties and attaching the @Entry macro to the variable declarations:
 
 ```swift
 extension Transaction {
@@ -48,7 +49,7 @@ extension Transaction {
 
 #### Container Values
 
-Create [`ContainerValues`](containervalues.md) entries by extending the [`ContainerValues`](containervalues.md) structure with new properties and attaching the @Entry macro to the variable declarations:
+Create [`ContainerValues`](./containervalues.md) entries by extending the [`ContainerValues`](./containervalues.md) structure with new properties and attaching the @Entry macro to the variable declarations:
 
 ```swift
 extension ContainerValues {
@@ -58,9 +59,9 @@ extension ContainerValues {
 
 #### Focused Values
 
-Since the default value for [`FocusedValues`](focusedvalues.md) is always `nil`, [`FocusedValues`](focusedvalues.md) entries cannot specify a different default value and must have an Optional type.
+Since the default value for [`FocusedValues`](./focusedvalues.md) is always `nil`, [`FocusedValues`](./focusedvalues.md) entries cannot specify a different default value and must have an Optional type.
 
-Create [`FocusedValues`](focusedvalues.md) entries by extending the [`FocusedValues`](focusedvalues.md) structure with new properties and attaching the @Entry macro to the variable declarations:
+Create [`FocusedValues`](./focusedvalues.md) entries by extending the [`FocusedValues`](./focusedvalues.md) structure with new properties and attaching the @Entry macro to the variable declarations:
 
 ```swift
 extension FocusedValues {
@@ -70,19 +71,20 @@ extension FocusedValues {
 
 ## See Also
 
-- [func withTransaction<Result>(Transaction, () throws -> Result) rethrows -> Result](withtransaction(_:_:).md)
+### Moving an animation to another view
+- [func withTransaction<Result>(Transaction, () throws -> Result) rethrows -> Result](./withtransaction%28_,_%29.md)
   Executes a closure with the specified transaction and returns the result.
-- [func withTransaction<R, V>(WritableKeyPath<Transaction, V>, V, () throws -> R) rethrows -> R](withtransaction(_:_:_:).md)
+- [func withTransaction<R, V>(WritableKeyPath<Transaction, V>, V, () throws -> R) rethrows -> R](./withtransaction%28_,_,_%29.md)
   Executes a closure with the specified transaction key path and value and returns the result.
-- [func transaction((inout Transaction) -> Void) -> some View](view/transaction(_:).md)
+- [func transaction((inout Transaction) -> Void) -> some View](./view/transaction%28_%29.md)
   Applies the given transaction mutation function to all animations used within the view.
-- [func transaction(value: some Equatable, (inout Transaction) -> Void) -> some View](view/transaction(value:_:).md)
+- [func transaction(value: some Equatable, (inout Transaction) -> Void) -> some View](./view/transaction%28value,_%29.md)
   Applies the given transaction mutation function to all animations used within the view.
-- [func transaction<V>((inout Transaction) -> Void, body: (PlaceholderContentView<Self>) -> V) -> some View](view/transaction(_:body:).md)
+- [func transaction<V>((inout Transaction) -> Void, body: (PlaceholderContentView<Self>) -> V) -> some View](./view/transaction%28_,body%29.md)
   Applies the given transaction mutation function to all animations used within the `body` closure.
-- [struct Transaction](transaction.md)
+- [struct Transaction](./transaction.md)
   The context of the current state-processing update.
-- [protocol TransactionKey](transactionkey.md)
+- [protocol TransactionKey](./transactionkey.md)
   A key for accessing values in a transaction.
 
 

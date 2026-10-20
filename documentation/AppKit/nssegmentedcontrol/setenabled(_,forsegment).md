@@ -1,12 +1,13 @@
 # setEnabled(_:forSegment:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the enabled state of the specified segment
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,14 +15,19 @@ Sets the enabled state of the specified segment
 func setEnabled(_ enabled: Bool, forSegment segment: Int)
 ```
 
+```objc
+- (void) setEnabled:(BOOL) enabled forSegment:(NSInteger) segment;
+```
+
 ## Parameters
 
-- `enabled`: [`true`](https://developer.apple.com/documentation/swift/true) to enable the segment; otherwise, [`false`](https://developer.apple.com/documentation/swift/false) to disable it.
-- `segment`: The index of the segment you want to enable or disable. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/foundation/nsexceptionname/rangeexception)) if the index is out of bounds.
+- `enabled`: [`true`](../../Swift/true.md) to enable the segment; otherwise, [`false`](../../Swift/false.md) to disable it.
+- `segment`: The index of the segment you want to enable or disable. This method raises an exception ([`rangeException`](../../Foundation/nsexceptionname/rangeexception.md)) if the index is out of bounds.
 
 ## See Also
 
-- [func isEnabled(forSegment: Int) -> Bool](nssegmentedcontrol/isenabled(forsegment:).md)
+### Enabling and disabling segments
+- [func isEnabled(forSegment: Int) -> Bool](./isenabled%28forsegment%29.md)
   Returns a Boolean value indicating whether the specified segment is enabled.
 
 

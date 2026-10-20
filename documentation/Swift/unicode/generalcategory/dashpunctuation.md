@@ -1,7 +1,8 @@
 # Unicode.GeneralCategory.dashPunctuation
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A dash or hyphen punctuation mark.
 
@@ -22,7 +23,7 @@ case dashPunctuation
 
 #### Discussion
 
-This value corresponds to the category `Dash_Punctuation` (abbreviated `Pd`) in the [`Unicode Standard`](https://developer.apple.comhttps://unicode.org/reports/tr44/#General_Category_Values).
+This value corresponds to the category `Dash_Punctuation` (abbreviated `Pd`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 
 
 ---

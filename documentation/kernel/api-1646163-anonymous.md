@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,12 +18,12 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOServiceFirstMatchState](1646163-anonymous/kioservicefirstmatchstate.md)
-- [kIOServiceFirstPublishState](1646163-anonymous/kioservicefirstpublishstate.md)
-- [kIOServiceInactiveState](1646163-anonymous/kioserviceinactivestate.md)
-- [kIOServiceMatchedState](1646163-anonymous/kioservicematchedstate.md)
-- [kIOServiceRegisteredState](1646163-anonymous/kioserviceregisteredstate.md)
-- [kIOServiceReservedMatchState](1646163-anonymous/kioservicereservedmatchstate.md)
+- [kIOServiceFirstMatchState](./api-1646163-anonymous/kioservicefirstmatchstate.md)
+- [kIOServiceFirstPublishState](./api-1646163-anonymous/kioservicefirstpublishstate.md)
+- [kIOServiceInactiveState](./api-1646163-anonymous/kioserviceinactivestate.md)
+- [kIOServiceMatchedState](./api-1646163-anonymous/kioservicematchedstate.md)
+- [kIOServiceRegisteredState](./api-1646163-anonymous/kioserviceregisteredstate.md)
+- [kIOServiceReservedMatchState](./api-1646163-anonymous/kioservicereservedmatchstate.md)
 
 
 ---

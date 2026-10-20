@@ -1,7 +1,8 @@
 # amount
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The nonnegative cost associated with this shipping method.
 
@@ -11,7 +12,7 @@ The nonnegative cost associated with this shipping method.
 
 ## Declaration
 
-```swift
+```
 required DOMString amount;
 ```
 
@@ -21,15 +22,16 @@ The amount must be nonnegative to pass validation.
 
 ## See Also
 
-- [label](applepayshippingmethod/label.md)
+### Working with shipping method properties
+- [label](./label.md)
   A short description of the shipping method.
-- [detail](applepayshippingmethod/detail.md)
+- [detail](./detail.md)
   Additional description of the shipping method.
-- [dateComponentsRange](applepayshippingmethod/datecomponentsrange.md)
+- [dateComponentsRange](./datecomponentsrange.md)
   The expected range of dates for shipping or picking up an item.
-- [identifier](applepayshippingmethod/identifier.md)
+- [identifier](./identifier.md)
   A client-defined value used to identify this shipping method.
-- [ApplePayDateComponentsRange](applepaydatecomponentsrange.md)
+- [ApplePayDateComponentsRange](../applepaydatecomponentsrange.md)
   A dictionary that specifies the start and end dates for a range of time.
 
 

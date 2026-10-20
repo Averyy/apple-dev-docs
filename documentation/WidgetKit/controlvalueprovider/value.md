@@ -2,6 +2,7 @@
 
 **Framework**: WidgetKit  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of value provided to the template.
@@ -21,7 +22,7 @@ associatedtype Value
 
 #### Discussion
 
-When you create a custom provider, Swift infers this type from your implementation of the required [`previewValue`](controlvalueprovider/previewvalue.md) property and [`currentValue()`](controlvalueprovider/currentvalue().md) method.
+When you create a custom provider, Swift infers this type from your implementation of the required [`previewValue`](./previewvalue.md) property and [`currentValue()`](./currentvalue%28%29.md) method.
 
 
 ---

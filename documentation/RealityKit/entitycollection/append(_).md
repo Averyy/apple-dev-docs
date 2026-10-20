@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Adds the specified entity to the end of this collection.
@@ -27,6 +28,12 @@ mutating func append(_ entity: Entity)
 ## Parameters
 
 - `entity`: The entity to add to the collection.
+
+## Default Implementations
+
+### EntityCollection Implementations
+- [func append(Entity)](./append%28_%29-8ughl.md)
+  Adds the specified entity to the end of this collection.
 
 
 ---

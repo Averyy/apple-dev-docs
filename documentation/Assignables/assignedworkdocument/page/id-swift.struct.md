@@ -1,7 +1,8 @@
 # AssignedWorkDocument.Page.ID
 
 **Framework**: Assignables  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type representing the stable identity of this page.
 
@@ -9,7 +10,7 @@ A type representing the stable identity of this page.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,25 +21,26 @@ struct ID
 ## Topics
 
 ### Getting the page identifier
-- [var assignableDocumentPageID: AssignableDocument.Page.ID](assignedworkdocument/page/id-swift.struct/assignabledocumentpageid.md)
-  The [`AssignableDocument`](assignabledocument.md)  page ID that this work page ID corresponds to.
+- [var assignableDocumentPageID: AssignableDocument.Page.ID](./id-swift.struct/assignabledocumentpageid.md)
+  The [`AssignableDocument`](../../assignabledocument.md)  page ID that this work page ID corresponds to.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [DocumentElementID](documentelementid.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Decodable](../../../Swift/decodable.md)
+- [DocumentElementID](../../documentelementid.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 ## See Also
 
-- [var assignableDocumentPageID: AssignableDocument.Page.ID](assignedworkdocument/page/assignabledocumentpageid.md)
-  The [`AssignableDocument`](assignabledocument.md)  page ID that this work page ID corresponds to.
-- [var id: AssignedWorkDocument.Page.ID](assignedworkdocument/page/id-swift.property.md)
+### Inspecting the properties
+- [var assignableDocumentPageID: AssignableDocument.Page.ID](./assignabledocumentpageid.md)
+  The [`AssignableDocument`](../../assignabledocument.md)  page ID that this work page ID corresponds to.
+- [var id: AssignedWorkDocument.Page.ID](./id-swift.property.md)
   The stable identity of this page.
-- [AssignedWorkDocument.Page.Document](assignedworkdocument/page/document.md)
+- [AssignedWorkDocument.Page.Document](./document.md)
   The document type this element is for.
 
 

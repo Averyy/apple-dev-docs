@@ -1,7 +1,8 @@
 # maximumValueAccessory
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The accessory that appears at the end of the slider with the maximum value.
 
@@ -17,11 +18,16 @@ The accessory that appears at the end of the slider with the maximum value.
 var maximumValueAccessory: NSSliderAccessory? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSSliderAccessory * maximumValueAccessory;
+```
+
 ## See Also
 
-- [var minimumValueAccessory: NSSliderAccessory?](nsslidertouchbaritem/minimumvalueaccessory.md)
+### Configuring slider accessories
+- [var minimumValueAccessory: NSSliderAccessory?](./minimumvalueaccessory.md)
   The accessory that appears at the end of the slider with the minimum value.
-- [var valueAccessoryWidth: NSSliderAccessory.Width](nsslidertouchbaritem/valueaccessorywidth.md)
+- [var valueAccessoryWidth: NSSliderAccessory.Width](./valueaccessorywidth.md)
   The width of the value accessories that appear at either end of the slider.
 
 

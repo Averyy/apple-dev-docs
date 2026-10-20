@@ -1,7 +1,8 @@
 # NSURLRequest
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A URL load request that is independent of protocol or URL scheme.
 
@@ -20,19 +21,23 @@ A URL load request that is independent of protocol or URL scheme.
 class NSURLRequest
 ```
 
+```objc
+@interface NSURLRequest : NSObject
+```
+
 #### Overview
 
 Use this type in Swift when you need reference semantics or other Foundation-specific behavior.
 
-[`NSURLRequest`](nsurlrequest.md) encapsulates two essential properties of a load request: the URL to load and the policies used to load it. In addition, for HTTP and HTTPS requests, [`URLRequest`](urlrequest.md) includes the HTTP method (`GET`, `POST`, and so on) and the HTTP headers. Finally, custom protocols can support custom properties as explained in [`Custom protocol properties`](nsurlrequest#Custom-protocol-properties.md).
+[`NSURLRequest`](./nsurlrequest.md) encapsulates two essential properties of a load request: the URL to load and the policies used to load it. In addition, for HTTP and HTTPS requests, [`URLRequest`](./urlrequest.md) includes the HTTP method (`GET`, `POST`, and so on) and the HTTP headers. Finally, custom protocols can support custom properties as explained in [Custom protocol properties](./nsurlrequest.md#Custom-protocol-properties).
 
-[`NSURLRequest`](nsurlrequest.md) only represents information about the request. Use other classes, such as [`URLSession`](urlsession.md), to send the request to a server. See [`Fetching website data into memory`](fetching-website-data-into-memory.md) and [`Uploading data to a website`](uploading-data-to-a-website.md) for an introduction to these techniques.
+[`NSURLRequest`](./nsurlrequest.md) only represents information about the request. Use other classes, such as [`URLSession`](./urlsession.md), to send the request to a server. See [Fetching website data into memory](./fetching-website-data-into-memory.md) and [Uploading data to a website](./uploading-data-to-a-website.md) for an introduction to these techniques.
 
-The mutable subclass of [`NSURLRequest`](nsurlrequest.md) is [`NSMutableURLRequest`](nsmutableurlrequest.md).
+The mutable subclass of [`NSURLRequest`](./nsurlrequest.md) is [`NSMutableURLRequest`](./nsmutableurlrequest.md).
 
-> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`URLRequest`](urlrequest.md) structure, which bridges to the [`NSURLRequest`](nsurlrequest.md) class and its mutable subclass, [`NSMutableURLRequest`](nsmutableurlrequest.md). For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/swift/working-with-foundation-types).
+> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`URLRequest`](./urlrequest.md) structure, which bridges to the [`NSURLRequest`](./nsurlrequest.md) class and its mutable subclass, [`NSMutableURLRequest`](./nsmutableurlrequest.md). For more information about value types, see [Working with Foundation Types](../Swift/working-with-foundation-types.md).
 
-##### Reserved Http Headers
+##### Reserved HTTP headers
 
 The URL Loading System handles various aspects of the HTTP protocol for you (HTTP/1.1 persistent connections, proxies, authentication, and so on). As part of this support, the URL Loading System takes responsibility for certain HTTP headers:
 
@@ -51,111 +56,112 @@ The URL Loading System sets the `Content-Length` header based on whether the req
 - If so, it uses the identity transfer encoding and sets the `Content-Length` header to that known length. You see this when you set the request body to a data object.
 - If not, it uses the chunked transfer encoding and omits the `Content-Length` header. You see this when you set the request body to a stream.
 
-##### Custom Protocol Properties
+##### Custom protocol properties
 
-If you implement a custom URL protocol by subclassing [`URLProtocol`](urlprotocol.md), and it needs protocol-specific properties, extend [`NSURLRequest`](nsurlrequest.md) with accessor methods for those custom properties. In your accessor methods, call [`property(forKey:in:)`](urlprotocol/property(forkey:in:).md) and [`setProperty(_:forKey:in:)`](urlprotocol/setproperty(_:forkey:in:).md) to associate property values with the request.
+If you implement a custom URL protocol by subclassing [`URLProtocol`](./urlprotocol.md), and it needs protocol-specific properties, extend [`NSURLRequest`](./nsurlrequest.md) with accessor methods for those custom properties. In your accessor methods, call [`property(forKey:in:)`](./urlprotocol/property%28forkey,in%29.md) and [`setProperty(_:forKey:in:)`](./urlprotocol/setproperty%28_,forkey,in%29.md) to associate property values with the request.
 
 ## Topics
 
 ### Creating requests
-- [convenience init(url: URL)](nsurlrequest/init(url:)-7dmpd.md)
+- [convenience init(url: URL)](./nsurlrequest/init%28url%29-7dmpd.md)
   Creates a URL request for a specified URL.
-- [init(url: URL, cachePolicy: NSURLRequest.CachePolicy, timeoutInterval: TimeInterval)](nsurlrequest/init(url:cachepolicy:timeoutinterval:)-2giyj.md)
+- [init(url: URL, cachePolicy: NSURLRequest.CachePolicy, timeoutInterval: TimeInterval)](./nsurlrequest/init%28url,cachepolicy,timeoutinterval%29-2giyj.md)
   Creates a URL request with the specified URL, cache policy, and timeout values.
 ### Working with a cache policy
-- [var cachePolicy: NSURLRequest.CachePolicy](nsurlrequest/cachepolicy-swift.property.md)
+- [var cachePolicy: NSURLRequest.CachePolicy](./nsurlrequest/cachepolicy-swift.property.md)
   The request’s cache policy.
-- [NSURLRequest.CachePolicy](nsurlrequest/cachepolicy-swift.enum.md)
+- [NSURLRequest.CachePolicy](./nsurlrequest/cachepolicy-swift.enum.md)
   The constants used to specify interaction with the cached responses.
 ### Accessing request components
-- [var httpMethod: String?](nsurlrequest/httpmethod.md)
+- [var httpMethod: String?](./nsurlrequest/httpmethod.md)
   The HTTP request method.
-- [var url: URL?](nsurlrequest/url.md)
+- [var url: URL?](./nsurlrequest/url.md)
   The URL being requested.
-- [var httpBody: Data?](nsurlrequest/httpbody.md)
+- [var httpBody: Data?](./nsurlrequest/httpbody.md)
   The request body.
-- [var httpBodyStream: InputStream?](nsurlrequest/httpbodystream.md)
+- [var httpBodyStream: InputStream?](./nsurlrequest/httpbodystream.md)
   The request body as an input stream.
-- [var mainDocumentURL: URL?](nsurlrequest/maindocumenturl.md)
+- [var mainDocumentURL: URL?](./nsurlrequest/maindocumenturl.md)
   The main document URL associated with the request.
 ### Getting header fields
-- [var allHTTPHeaderFields: [String : String]?](nsurlrequest/allhttpheaderfields.md)
+- [var allHTTPHeaderFields: [String : String]?](./nsurlrequest/allhttpheaderfields.md)
   A dictionary containing all of the HTTP header fields for a request.
-- [func value(forHTTPHeaderField: String) -> String?](nsurlrequest/value(forhttpheaderfield:).md)
+- [func value(forHTTPHeaderField: String) -> String?](./nsurlrequest/value%28forhttpheaderfield%29.md)
   Returns the value of the specified HTTP header field.
 ### Controlling request behavior
-- [var timeoutInterval: TimeInterval](nsurlrequest/timeoutinterval.md)
+- [var timeoutInterval: TimeInterval](./nsurlrequest/timeoutinterval.md)
   The request’s timeout interval, in seconds.
-- [var httpShouldHandleCookies: Bool](nsurlrequest/httpshouldhandlecookies.md)
+- [var httpShouldHandleCookies: Bool](./nsurlrequest/httpshouldhandlecookies.md)
   A Boolean value that indicates whether the default cookie handling will be used for this request.
-- [var httpShouldUsePipelining: Bool](nsurlrequest/httpshouldusepipelining.md)
+- [var httpShouldUsePipelining: Bool](./nsurlrequest/httpshouldusepipelining.md)
   A Boolean value that indicates whether the request should continue transmitting data before receiving a response from an earlier transmission.
-- [var allowsCellularAccess: Bool](nsurlrequest/allowscellularaccess.md)
+- [var allowsCellularAccess: Bool](./nsurlrequest/allowscellularaccess.md)
   A Boolean value that indicates whether the request is allowed to use the cellular radio (if present).
 ### Supporting limited modes
-- [var allowsConstrainedNetworkAccess: Bool](nsurlrequest/allowsconstrainednetworkaccess.md)
+- [var allowsConstrainedNetworkAccess: Bool](./nsurlrequest/allowsconstrainednetworkaccess.md)
   A Boolean value that indicates whether connections may use the network when the user has specified Low Data Mode.
-- [var allowsExpensiveNetworkAccess: Bool](nsurlrequest/allowsexpensivenetworkaccess.md)
+- [var allowsExpensiveNetworkAccess: Bool](./nsurlrequest/allowsexpensivenetworkaccess.md)
   A Boolean value that indicates whether connections may use a network interface that the system considers expensive.
 ### Accessing the service type
-- [var networkServiceType: NSURLRequest.NetworkServiceType](nsurlrequest/networkservicetype-swift.property.md)
+- [var networkServiceType: NSURLRequest.NetworkServiceType](./nsurlrequest/networkservicetype-swift.property.md)
   The network service type of the request.
-- [NSURLRequest.NetworkServiceType](nsurlrequest/networkservicetype-swift.enum.md)
+- [NSURLRequest.NetworkServiceType](./nsurlrequest/networkservicetype-swift.enum.md)
   Constants that specify how a request uses network resources.
 ### Supporting secure coding
-- [class var supportsSecureCoding: Bool](nsurlrequest/supportssecurecoding.md)
-  A Boolean value indicating whether the [`NSURLRequest`](nsurlrequest.md) implements the [`NSSecureCoding`](nssecurecoding.md) protocol.
+- [class var supportsSecureCoding: Bool](./nsurlrequest/supportssecurecoding.md)
+  A Boolean value indicating whether the [`NSURLRequest`](./nsurlrequest.md) implements the [`NSSecureCoding`](./nssecurecoding.md) protocol.
 ### Indicating the source of the request
-- [var attribution: NSURLRequest.Attribution](nsurlrequest/attribution-swift.property.md)
+- [var attribution: NSURLRequest.Attribution](./nsurlrequest/attribution-swift.property.md)
   The entity that initiates the network request.
-- [NSURLRequest.Attribution](nsurlrequest/attribution-swift.enum.md)
+- [NSURLRequest.Attribution](./nsurlrequest/attribution-swift.enum.md)
   The entities that can make a network request.
 ### Initializers
-- [convenience init(URL: URL)](nsurlrequest/init(url:)-9mck0.md)
-- [convenience init(URL: URL)](nsurlrequest/init(url:)-9plp8.md)
-- [init(URL: URL, cachePolicy: NSURLRequest.CachePolicy, timeoutInterval: TimeInterval)](nsurlrequest/init(url:cachepolicy:timeoutinterval:)-59r40.md)
-- [convenience init(URL: URL, cachePolicy: NSURLRequest.CachePolicy, timeoutInterval: TimeInterval)](nsurlrequest/init(url:cachepolicy:timeoutinterval:)-7xiv0.md)
-- [init?(coder: NSCoder)](nsurlrequest/init(coder:).md)
+- [convenience init(URL: URL)](./nsurlrequest/init%28url%29-9mck0.md)
+- [convenience init(URL: URL)](./nsurlrequest/init%28url%29-9plp8.md)
+- [init(URL: URL, cachePolicy: NSURLRequest.CachePolicy, timeoutInterval: TimeInterval)](./nsurlrequest/init%28url,cachepolicy,timeoutinterval%29-59r40.md)
+- [convenience init(URL: URL, cachePolicy: NSURLRequest.CachePolicy, timeoutInterval: TimeInterval)](./nsurlrequest/init%28url,cachepolicy,timeoutinterval%29-7xiv0.md)
+- [init?(coder: NSCoder)](./nsurlrequest/init%28coder%29.md)
 ### Instance Properties
-- [var allowsPersistentDNS: Bool](nsurlrequest/allowspersistentdns.md)
+- [var allowsPersistentDNS: Bool](./nsurlrequest/allowspersistentdns.md)
   A Boolean value that indicates whether storing and usage of DNS answers in a persistent per-process cache is allowed.
-- [var allowsUltraConstrainedNetworkAccess: Bool](nsurlrequest/allowsultraconstrainednetworkaccess.md)
+- [var allowsUltraConstrainedNetworkAccess: Bool](./nsurlrequest/allowsultraconstrainednetworkaccess.md)
   A Boolean value that indicates whether a connection created with this request is allowed to use network interfaces which have been marked as ultra constrained.
-- [var assumesHTTP3Capable: Bool](nsurlrequest/assumeshttp3capable.md)
+- [var assumesHTTP3Capable: Bool](./nsurlrequest/assumeshttp3capable.md)
   A Boolean value that indicates whether the server is assumed to support HTTP/3.
-- [var cookiePartitionIdentifier: String?](nsurlrequest/cookiepartitionidentifier.md)
-- [var requiresDNSSECValidation: Bool](nsurlrequest/requiresdnssecvalidation.md)
+- [var cookiePartitionIdentifier: String?](./nsurlrequest/cookiepartitionidentifier.md)
+- [var requiresDNSSECValidation: Bool](./nsurlrequest/requiresdnssecvalidation.md)
   A Boolean value that indicates whether a request requires DNSSEC validation during DNS lookup.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [NSMutableURLRequest](nsmutableurlrequest.md)
+- [NSMutableURLRequest](./nsmutableurlrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSMutableCopying](nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSMutableCopying](./nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
 
 ## See Also
 
-- [struct URLRequest](urlrequest.md)
+### Requests and responses
+- [struct URLRequest](./urlrequest.md)
   A URL load request that is independent of protocol or URL scheme.
-- [class NSMutableURLRequest](nsmutableurlrequest.md)
+- [class NSMutableURLRequest](./nsmutableurlrequest.md)
   A mutable URL load request that is independent of protocol or URL scheme.
-- [class URLResponse](urlresponse.md)
+- [class URLResponse](./urlresponse.md)
   The metadata associated with the response to a URL load request, independent of protocol and URL scheme.
-- [class HTTPURLResponse](httpurlresponse.md)
+- [class HTTPURLResponse](./httpurlresponse.md)
   The metadata associated with the response to an HTTP protocol URL load request.
 
 

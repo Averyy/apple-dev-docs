@@ -1,7 +1,8 @@
 # VNContoursObservation
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents the detected contours in an image.
 
@@ -19,43 +20,48 @@ An object that represents the detected contours in an image.
 class VNContoursObservation
 ```
 
+```objc
+@interface VNContoursObservation : VNObservation
+```
+
 ## Topics
 
 ### Inspecting the Observation
-- [var contourCount: Int](vncontoursobservation/contourcount.md)
+- [var contourCount: Int](./vncontoursobservation/contourcount.md)
   The total number of detected contours.
-- [var normalizedPath: CGPath](vncontoursobservation/normalizedpath.md)
+- [var normalizedPath: CGPath](./vncontoursobservation/normalizedpath.md)
   The detected contours as a path object in normalized coordinates.
-- [var topLevelContours: [VNContour]](vncontoursobservation/toplevelcontours.md)
+- [var topLevelContours: [VNContour]](./vncontoursobservation/toplevelcontours.md)
   An array of contours that don’t have another contour enclosing them.
-- [var topLevelContourCount: Int](vncontoursobservation/toplevelcontourcount.md)
+- [var topLevelContourCount: Int](./vncontoursobservation/toplevelcontourcount.md)
   The total number of detected top-level contours.
-- [func contour(at: Int) throws -> VNContour](vncontoursobservation/contour(at:)-9on0y.md)
+- [func contour(at: Int) throws -> VNContour](./vncontoursobservation/contour%28at%29-9on0y.md)
   Retrieves the contour object at the specified index, irrespective of hierarchy.
-- [func contour(at: IndexPath) throws -> VNContour](vncontoursobservation/contour(at:)-52odo.md)
+- [func contour(at: IndexPath) throws -> VNContour](./vncontoursobservation/contour%28at%29-52odo.md)
   Retrieves the contour object at the specified index path.
-- [class VNContour](vncontour.md)
+- [class VNContour](./vncontour.md)
   A class that represents a detected contour in an image.
 
 ## Relationships
 
 ### Inherits From
-- [VNObservation](vnobservation.md)
+- [VNObservation](./vnobservation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [VNRequestRevisionProviding](vnrequestrevisionproviding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [VNRequestRevisionProviding](./vnrequestrevisionproviding.md)
 
 ## See Also
 
-- [var results: [VNContoursObservation]?](vndetectcontoursrequest/results.md)
+### Accessing the Results
+- [var results: [VNContoursObservation]?](./vndetectcontoursrequest/results.md)
   The results of the request to detect contours.
 
 

@@ -1,9 +1,10 @@
 # XCTWaiterDelegate
 
 **Framework**: XCTest  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
-Defines methods that are called when [`XCTWaiter`](xctwaiter.md) expectations are fulfilled correctly or incorrectly.
+Defines methods that are called when [`XCTWaiter`](./xctwaiter.md) expectations are fulfilled correctly or incorrectly.
 
 ## Declaration
 
@@ -11,36 +12,41 @@ Defines methods that are called when [`XCTWaiter`](xctwaiter.md) expectations ar
 protocol XCTWaiterDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol XCTWaiterDelegate <NSObject>
+```
+
 #### Overview
 
-[`XCTestCase`](xctestcase.md) instances automatically conform to the [`XCTWaiterDelegate`](xctwaiterdelegate.md) protocol. If you pass a test case instance as the delegate property of [`XCTWaiter`](xctwaiter.md)’s [`init(delegate:)`](xctwaiter/init(delegate:).md) initializer, that test case will automatically report timeouts and other unexpected events as test failures.
+[`XCTestCase`](./xctestcase.md) instances automatically conform to the [`XCTWaiterDelegate`](./xctwaiterdelegate.md) protocol. If you pass a test case instance as the delegate property of [`XCTWaiter`](./xctwaiter.md)’s [`init(delegate:)`](./xctwaiter/init%28delegate%29.md) initializer, that test case will automatically report timeouts and other unexpected events as test failures.
 
 ## Topics
 
 ### Timeout Events
-- [func waiter(XCTWaiter, didTimeoutWithUnfulfilledExpectations: [XCTestExpectation])](xctwaiterdelegate/waiter(_:didtimeoutwithunfulfilledexpectations:).md)
+- [func waiter(XCTWaiter, didTimeoutWithUnfulfilledExpectations: [XCTestExpectation])](./xctwaiterdelegate/waiter%28_,didtimeoutwithunfulfilledexpectations%29.md)
   Invoked when not all waited on expectations are fulfilled during the timeout period.
-- [func nestedWaiter(XCTWaiter, wasInterruptedByTimedOutWaiter: XCTWaiter)](xctwaiterdelegate/nestedwaiter(_:wasinterruptedbytimedoutwaiter:).md)
+- [func nestedWaiter(XCTWaiter, wasInterruptedByTimedOutWaiter: XCTWaiter)](./xctwaiterdelegate/nestedwaiter%28_,wasinterruptedbytimedoutwaiter%29.md)
   Invoked when the waiter is interrupted prior to its expectations being fulfilled or timing out.
 ### Order of Fulfillment Events
-- [func waiter(XCTWaiter, fulfillmentDidViolateOrderingConstraintsFor: XCTestExpectation, requiredExpectation: XCTestExpectation)](xctwaiterdelegate/waiter(_:fulfillmentdidviolateorderingconstraintsfor:requiredexpectation:).md)
+- [func waiter(XCTWaiter, fulfillmentDidViolateOrderingConstraintsFor: XCTestExpectation, requiredExpectation: XCTestExpectation)](./xctwaiterdelegate/waiter%28_,fulfillmentdidviolateorderingconstraintsfor,requiredexpectation%29.md)
   Invoked when a waiter is enforcing fulfillment order and an expectation is fulfilled in the wrong order.
 ### Inverted Expectation Events
-- [func waiter(XCTWaiter, didFulfillInvertedExpectation: XCTestExpectation)](xctwaiterdelegate/waiter(_:didfulfillinvertedexpectation:).md)
+- [func waiter(XCTWaiter, didFulfillInvertedExpectation: XCTestExpectation)](./xctwaiterdelegate/waiter%28_,didfulfillinvertedexpectation%29.md)
   Invoked when an expectation whose `isInverted` property is set to `true` is fulfilled.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [XCTestCase](xctestcase.md)
+- [XCTestCase](./xctestcase.md)
 
 ## See Also
 
-- [var delegate: (any XCTWaiterDelegate)?](xctwaiter/delegate.md)
+### Responding to Expectation Fulfilment
+- [var delegate: (any XCTWaiterDelegate)?](./xctwaiter/delegate.md)
   The delegate to which expectation fulfillment events will be reported.
-- [var fulfilledExpectations: [XCTestExpectation]](xctwaiter/fulfilledexpectations.md)
+- [var fulfilledExpectations: [XCTestExpectation]](./xctwaiter/fulfilledexpectations.md)
   An array of expectations that were fulfilled, in order, up until the waiter stopped waiting.
 
 

@@ -1,7 +1,8 @@
 # apply(_:animatingDifferences:completion:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the UI to reflect the state of the data in the specified snapshot, optionally animating the UI changes and executing a completion handler.
 
@@ -21,12 +22,13 @@ It’s safe to call this method from a background queue, but you must do so cons
 ## Parameters
 
 - `snapshot`: The snapshot reflecting the new state of the data in the collection view.
-- `animatingDifferences`: If [`true`](https://developer.apple.com/documentation/swift/true), the diffable data source computes the difference between the collection view’s current state and the new state in the snapshot, which is an O(*n*) operation, where *n* is the number of items in the snapshot. The differences in the UI between the current state and new state are animated. If [`false`](https://developer.apple.com/documentation/swift/false), the collection view UI is set to the new state without any animations, with no additional overhead for computing a diff. Any ongoing item animations are interrupted and the collection view’s content is reloaded immediately.
+- `animatingDifferences`: If [`true`](../../Swift/true.md), the diffable data source computes the difference between the collection view’s current state and the new state in the snapshot, which is an O(*n*) operation, where *n* is the number of items in the snapshot. The differences in the UI between the current state and new state are animated. If [`false`](../../Swift/false.md), the collection view UI is set to the new state without any animations, with no additional overhead for computing a diff. Any ongoing item animations are interrupted and the collection view’s content is reloaded immediately.
 - `completion`: A closure to be executed when the animations are complete. This closure has no return value and takes no parameters. The system calls this closure from the main queue.
 
 ## See Also
 
-- [func snapshot() -> NSDiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>](nscollectionviewdiffabledatasource-axww/snapshot.md)
+### Updating Data
+- [func snapshot() -> NSDiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>](./snapshot%28%29.md)
   Returns a representation of the current state of the data in the collection view.
 
 

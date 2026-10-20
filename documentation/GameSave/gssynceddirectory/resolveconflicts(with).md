@@ -1,7 +1,8 @@
 # resolveConflicts(with:)
 
 **Framework**: GameSave  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates that you resolved a conflict.
 
@@ -18,11 +19,15 @@ Indicates that you resolved a conflict.
 func resolveConflicts(with version: GSSyncedDirectoryVersion)
 ```
 
+```objc
+- (void) resolveConflictsWithVersion:(GSSyncedDirectoryVersion *) version;
+```
+
 #### Discussion
 
 If you’re implementing your own conflict resolution, read all of the conflicting versions, and modify one of them to incorporate the state and changes from the others. Then call this method, passing that version.
 
-Call this method only when the directory is in the [`GSSyncState.conflicted`](gssyncstate/conflicted.md) state.
+Call this method only when the directory is in the [`GSSyncState.conflicted`](../gssyncstate/conflicted.md) state.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ Call this method only when the directory is in the [`GSSyncState.conflicted`](gs
 
 ## See Also
 
-- [class GSSyncedDirectoryVersion](gssynceddirectoryversion.md)
+### Resolving conflicts
+- [class GSSyncedDirectoryVersion](../gssynceddirectoryversion.md)
 
 
 ---

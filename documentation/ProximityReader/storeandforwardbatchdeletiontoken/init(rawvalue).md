@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: ProximityReader  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a token with the string your payment service provider provides.
 

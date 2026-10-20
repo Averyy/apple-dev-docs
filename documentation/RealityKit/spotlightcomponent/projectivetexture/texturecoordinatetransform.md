@@ -1,7 +1,8 @@
 # SpotLightComponent.ProjectiveTexture.TextureCoordinateTransform
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 27.0+
@@ -19,7 +20,8 @@ typealias TextureCoordinateTransform = MaterialParameterTypes.TextureCoordinateT
 
 ## See Also
 
-- [var coordinateTransform: SpotLightComponent.ProjectiveTexture.TextureCoordinateTransform](spotlightcomponent/projectivetexture/coordinatetransform.md)
+### Transforming texture coordinates
+- [var coordinateTransform: SpotLightComponent.ProjectiveTexture.TextureCoordinateTransform](./coordinatetransform.md)
   The coordinate transform for the projective texture
 
 

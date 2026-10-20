@@ -1,7 +1,8 @@
 # translationPresentation(isPresented:text:attachmentAnchor:arrowEdge:replacementAction:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a translation popover when a given condition is true.
 
@@ -72,17 +73,18 @@ While this function does support long strings of text, it works best with short 
 
 - `isPresented`: A binding to a Boolean value that determines whether to present the popover.
 - `text`: The text to be translated. Changing this after the popover presents has no effect.
-- `attachmentAnchor`: The positioning anchor that defines the attachment point of the popover. The default is [`bounds`](anchor/source/bounds.md).
-- `arrowEdge`: The edge of the `attachmentAnchor` that defines the location of the popover’s arrow in macOS. The default is [`Edge.top`](edge/top.md). iOS ignores this parameter.
+- `attachmentAnchor`: The positioning anchor that defines the attachment point of the popover. The default is [`bounds`](../anchor/source/bounds.md).
+- `arrowEdge`: The edge of the `attachmentAnchor` that defines the location of the popover’s arrow in macOS. The default is [`Edge.top`](../edge/top.md). iOS ignores this parameter.
 - `replacementAction`: An optional action to perform when someone interacts with the “Replace with Translation” button. The “Replace with Translation” button appears when you provide this action.
 
 ## See Also
 
-- [func translationTask(TranslationSession.Configuration?, action: (TranslationSession) async -> Void) -> some View](view/translationtask(_:action:).md)
+### Showing a translation
+- [func translationTask(TranslationSession.Configuration?, action: (TranslationSession) async -> Void) -> some View](./translationtask%28_,action%29.md)
   Adds a task to perform before this view appears or when the translation configuration changes.
-- [func translationTask(source: Locale.Language?, target: Locale.Language?, action: (TranslationSession) async -> Void) -> some View](view/translationtask(source:target:action:).md)
+- [func translationTask(source: Locale.Language?, target: Locale.Language?, action: (TranslationSession) async -> Void) -> some View](./translationtask%28source,target,action%29.md)
   Adds a task to perform before this view appears or when the specified source or target languages change.
-- [func translationTask(source: Locale.Language?, target: Locale.Language?, preferredStrategy: TranslationSession.Strategy, action: (TranslationSession) async -> Void) -> some View](view/translationtask(source:target:preferredstrategy:action:).md)
+- [func translationTask(source: Locale.Language?, target: Locale.Language?, preferredStrategy: TranslationSession.Strategy, action: (TranslationSession) async -> Void) -> some View](./translationtask%28source,target,preferredstrategy,action%29.md)
   Adds a task to perform before this view appears or when the specified source or target languages change.
 
 

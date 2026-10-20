@@ -2,21 +2,26 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value indicating whether the transition is currently interactive.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var isInteractive: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isInteractive) BOOL interactive;
 ```
 
 #### Discussion
@@ -27,9 +32,10 @@ Interactive transitions are drive by user-generated events. One common scenario 
 
 ## See Also
 
-- [var isAnimated: Bool](uiviewcontrollercontexttransitioning/isanimated.md)
+### Getting the transition behaviors
+- [var isAnimated: Bool](./isanimated.md)
   A Boolean value indicating whether the transition should be animated.
-- [var presentationStyle: UIModalPresentationStyle](uiviewcontrollercontexttransitioning/presentationstyle.md)
+- [var presentationStyle: UIModalPresentationStyle](./presentationstyle.md)
   Returns the presentation style for the view controller transition.
 
 

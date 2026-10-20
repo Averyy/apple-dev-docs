@@ -1,7 +1,8 @@
 # Calendar.RecurrenceRule.Weekday.nth(_:_:)
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Repeat on the n-th instance of the specified weekday in a month, if the recurrence has a monthly frequency. If the recurrence has a yearly frequency, repeat on the n-th week of the year.
 

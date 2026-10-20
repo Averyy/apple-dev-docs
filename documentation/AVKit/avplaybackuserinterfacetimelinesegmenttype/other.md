@@ -1,7 +1,8 @@
 # AVPlaybackUserInterfaceTimelineSegmentType.other
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The segment contains auxiliary content of an unspecified type.
 
@@ -14,6 +15,10 @@ The segment contains auxiliary content of an unspecified type.
 
 ```swift
 case other
+```
+
+```c
+AVPlaybackUserInterfaceTimelineSegmentTypeOther
 ```
 
 

@@ -1,7 +1,8 @@
 # objectID
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for each detected object type (face, body, hands, heads, salient objects and focus-tracked objects) in a collection.
 
@@ -18,27 +19,32 @@ A unique identifier for each detected object type (face, body, hands, heads, sal
 var objectID: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger objectID;
+```
+
 #### Discussion
 
-Defaults to a value of -1 when invalid or not available. When used in conjunction with an [`AVCaptureMetadataOutput`](avcapturemetadataoutput.md), each newly detected object that enters the scene is assigned a unique identifier. [`objectID`](avmetadataobject/objectid.md)s are never re-used as objects leave the picture and new ones enter. Objects that leave the picture and then re-enter are assigned a new [`objectID`](avmetadataobject/objectid.md). Focus-tracked objects are an exception. They retain the same [`objectID`](avmetadataobject/objectid.md) when leaving and re-entering the picture.
+Defaults to a value of -1 when invalid or not available. When used in conjunction with an [`AVCaptureMetadataOutput`](../avcapturemetadataoutput.md), each newly detected object that enters the scene is assigned a unique identifier. [`objectID`](./objectid.md)s are never re-used as objects leave the picture and new ones enter. Objects that leave the picture and then re-enter are assigned a new [`objectID`](./objectid.md). Focus-tracked objects are an exception. They retain the same [`objectID`](./objectid.md) when leaving and re-entering the picture.
 
 ## See Also
 
-- [var bounds: CGRect](avmetadataobject/bounds.md)
+### Inspecting the metadata
+- [var bounds: CGRect](./bounds.md)
   The bounding rectangle associated with the metadata.
-- [var duration: CMTime](avmetadataobject/duration.md)
+- [var duration: CMTime](./duration.md)
   The duration of the media associated with this metadata object.
-- [var time: CMTime](avmetadataobject/time.md)
+- [var time: CMTime](./time.md)
   The media time value associated with the metadata object.
-- [var type: AVMetadataObject.ObjectType](avmetadataobject/type.md)
+- [var type: AVMetadataObject.ObjectType](./type.md)
   The type of metadata that this object provides.
-- [AVMetadataObject.ObjectType](avmetadataobject/objecttype.md)
+- [AVMetadataObject.ObjectType](./objecttype.md)
   Constants that identify metadata object types.
-- [var isFixedFocus: Bool](avmetadataobject/isfixedfocus.md)
+- [var isFixedFocus: Bool](./isfixedfocus.md)
   A BOOL indicating whether this metadata object represents a fixed focus.
-- [var cinematicVideoFocusMode: AVCaptureDevice.CinematicVideoFocusMode](avmetadataobject/cinematicvideofocusmode.md)
+- [var cinematicVideoFocusMode: AVCaptureDevice.CinematicVideoFocusMode](./cinematicvideofocusmode.md)
   The current focus mode when an object is detected during a Cinematic Video recording.
-- [var groupID: Int](avmetadataobject/groupid.md)
+- [var groupID: Int](./groupid.md)
   An identifier associated with a metadata object used to group it with other metadata objects belonging to a common parent.
 
 

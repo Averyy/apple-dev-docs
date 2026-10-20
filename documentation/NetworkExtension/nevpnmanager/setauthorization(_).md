@@ -1,7 +1,8 @@
 # setAuthorization(_:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11+
@@ -12,15 +13,20 @@
 func setAuthorization(_ authorization: AuthorizationRef)
 ```
 
+```objc
+- (void) setAuthorization:(AuthorizationRef) authorization;
+```
+
 ## See Also
 
-- [class func shared() -> NEVPNManager](nevpnmanager/shared.md)
+### Managing VPN configurations
+- [class func shared() -> NEVPNManager](./shared%28%29.md)
   Access the single instance of `NEVPNManager`.
-- [func loadFromPreferences(completionHandler: ((any Error)?) -> Void)](nevpnmanager/loadfrompreferences(completionhandler:).md)
+- [func loadFromPreferences(completionHandler: ((any Error)?) -> Void)](./loadfrompreferences%28completionhandler%29.md)
   Load the VPN configuration from the Network Extension preferences.
-- [func saveToPreferences(completionHandler: (((any Error)?) -> Void)?)](nevpnmanager/savetopreferences(completionhandler:).md)
+- [func saveToPreferences(completionHandler: (((any Error)?) -> Void)?)](./savetopreferences%28completionhandler%29.md)
   Save the VPN configuration in the Network Extension preferences.
-- [func removeFromPreferences(completionHandler: (((any Error)?) -> Void)?)](nevpnmanager/removefrompreferences(completionhandler:).md)
+- [func removeFromPreferences(completionHandler: (((any Error)?) -> Void)?)](./removefrompreferences%28completionhandler%29.md)
   Remove the VPN configuration from the Network Extension preferences.
 
 

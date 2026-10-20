@@ -1,7 +1,8 @@
 # IOUserVideoObjectID
 
 **Framework**: VideoDriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A handle for a a specific video object.
 
@@ -10,17 +11,18 @@ A handle for a a specific video object.
 
 ## Declaration
 
-```swift
+```c
 typedef uint32_t IOUserVideoObjectID;
 ```
 
 ## See Also
 
-- [StartDevice](iouservideodriver/startdevice.md)
+### Starting and stopping the driver
+- [StartDevice](../iouservideodriver/startdevice.md)
   Tells the driver to start IO on an video device.
-- [StopDevice](iouservideodriver/stopdevice.md)
+- [StopDevice](../iouservideodriver/stopdevice.md)
   Tells the driver to stop IO on an video device.
-- [IOUserVideoStartStopFlags](videodriverkit/iouservideostartstopflags.md)
+- [IOUserVideoStartStopFlags](./iouservideostartstopflags.md)
   Flags used to indicate how I/O is starting or stopping.
 
 

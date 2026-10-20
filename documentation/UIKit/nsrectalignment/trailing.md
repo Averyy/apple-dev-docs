@@ -1,7 +1,8 @@
 # NSRectAlignment.trailing
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Aligns to the trailing edge.
 
@@ -19,23 +20,28 @@ Aligns to the trailing edge.
 case trailing
 ```
 
+```c
+NSRectAlignmentTrailing
+```
+
 ## See Also
 
-- [NSRectAlignment.none](nsrectalignment/none.md)
+### Alignments
+- [NSRectAlignment.none](./none.md)
   Has no specified alignment.
-- [NSRectAlignment.top](nsrectalignment/top.md)
+- [NSRectAlignment.top](./top.md)
   Aligns to the top edge.
-- [NSRectAlignment.topLeading](nsrectalignment/topleading.md)
+- [NSRectAlignment.topLeading](./topleading.md)
   Aligns to the top and leading edges.
-- [NSRectAlignment.leading](nsrectalignment/leading.md)
+- [NSRectAlignment.leading](./leading.md)
   Aligns to the leading edge.
-- [NSRectAlignment.bottomLeading](nsrectalignment/bottomleading.md)
+- [NSRectAlignment.bottomLeading](./bottomleading.md)
   Aligns to the bottom and leading edges.
-- [NSRectAlignment.bottom](nsrectalignment/bottom.md)
+- [NSRectAlignment.bottom](./bottom.md)
   Aligns to the bottom edge.
-- [NSRectAlignment.bottomTrailing](nsrectalignment/bottomtrailing.md)
+- [NSRectAlignment.bottomTrailing](./bottomtrailing.md)
   Aligns to the bottom and trailing edges.
-- [NSRectAlignment.topTrailing](nsrectalignment/toptrailing.md)
+- [NSRectAlignment.topTrailing](./toptrailing.md)
   Aligns to the top and trailing edges.
 
 

@@ -1,7 +1,8 @@
 # timeRange
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -19,8 +20,9 @@ var timeRange: CMTimeRange
 
 ## See Also
 
-- [var end: CGAffineTransform](avvideocompositionlayerinstruction/transformramp/end.md)
-- [var start: CGAffineTransform](avvideocompositionlayerinstruction/transformramp/start.md)
+### Inspecting the transform ramp
+- [var end: CGAffineTransform](./end.md)
+- [var start: CGAffineTransform](./start.md)
 
 
 ---

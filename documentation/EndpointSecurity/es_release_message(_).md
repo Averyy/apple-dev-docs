@@ -1,7 +1,8 @@
 # es_release_message(_:)
 
 **Framework**: Endpoint Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Releases a previously-retained message.
 
@@ -14,13 +15,18 @@ Releases a previously-retained message.
 func es_release_message(_ msg: UnsafePointer<es_message_t>)
 ```
 
+```c
+extern void es_release_message(const es_message_t *msg);
+```
+
 ## Parameters
 
 - `msg`: The message to release.
 
 ## See Also
 
-- [func es_retain_message(UnsafePointer<es_message_t>)](es_retain_message(_:).md)
+### Retaining and Releasing Messages
+- [func es_retain_message(UnsafePointer<es_message_t>)](./es_retain_message%28_%29.md)
   Retains the given message, extending its lifetime until released.
 
 

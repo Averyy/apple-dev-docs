@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an authorization operation using the specified raw string value.
 
@@ -24,7 +25,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](asauthorizationproviderauthorizationoperation/init(_:).md)
+### Creating Operations
+- [init(String)](./init%28_%29.md)
   Creates an authorization operation using the specified string value.
 
 

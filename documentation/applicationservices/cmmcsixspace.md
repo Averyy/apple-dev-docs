@@ -1,7 +1,8 @@
 # cmMCSixSpace
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A six-channel multichannel (HiFi) data color space.
 

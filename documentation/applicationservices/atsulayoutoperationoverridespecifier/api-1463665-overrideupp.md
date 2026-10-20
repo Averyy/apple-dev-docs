@@ -1,7 +1,8 @@
 # overrideUPP
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var overrideUPP: ATSUDirectLayoutOperationOverrideUPP!
+```
+
+```c
+ATSUDirectLayoutOperationOverrideUPP overrideUPP;
 ```
 
 

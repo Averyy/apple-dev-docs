@@ -1,7 +1,8 @@
 # accessibilityLargeContentViewerEnabled
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the Large Content Viewer is enabled.
 
@@ -22,15 +23,16 @@ var accessibilityLargeContentViewerEnabled: Bool { get }
 
 #### Discussion
 
-The system can automatically provide a large content view with [`accessibilityShowsLargeContentViewer()`](view/accessibilityshowslargecontentviewer().md) or you can provide your own with [`accessibilityShowsLargeContentViewer(_:)`](view/accessibilityshowslargecontentviewer(_:).md).
+The system can automatically provide a large content view with [`accessibilityShowsLargeContentViewer()`](../view/accessibilityshowslargecontentviewer%28%29.md) or you can provide your own with [`accessibilityShowsLargeContentViewer(_:)`](../view/accessibilityshowslargecontentviewer%28_%29.md).
 
 While it is not necessary to check this value before adding a large content view, it may be helpful if you need to adjust the behavior of a gesture. For example, a button with a long press handler might increase its long press duration so the user can read the text in the large content viewer first.
 
 ## See Also
 
-- [func accessibilityShowsLargeContentViewer() -> some View](view/accessibilityshowslargecontentviewer.md)
+### Enlarging content
+- [func accessibilityShowsLargeContentViewer() -> some View](../view/accessibilityshowslargecontentviewer%28%29.md)
   Adds a default large content view to be shown by the large content viewer.
-- [func accessibilityShowsLargeContentViewer<V>(() -> V) -> some View](view/accessibilityshowslargecontentviewer(_:).md)
+- [func accessibilityShowsLargeContentViewer<V>(() -> V) -> some View](../view/accessibilityshowslargecontentviewer%28_%29.md)
   Adds a custom large content view to be shown by the large content viewer.
 
 

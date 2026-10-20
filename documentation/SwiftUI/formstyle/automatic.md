@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default form style.
 
@@ -21,11 +22,14 @@ The default form style.
 @export(implementation) @preconcurrency static var automatic: AutomaticFormStyle { get }
 ```
 
+Available when `Self` is `AutomaticFormStyle`.
+
 ## See Also
 
-- [static var columns: ColumnsFormStyle](formstyle/columns.md)
+### Getting built-in form styles
+- [static var columns: ColumnsFormStyle](./columns.md)
   A non-scrolling form style with a trailing aligned column of labels next to a leading aligned column of values.
-- [static var grouped: GroupedFormStyle](formstyle/grouped.md)
+- [static var grouped: GroupedFormStyle](./grouped.md)
   A form style with grouped rows.
 
 

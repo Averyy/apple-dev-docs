@@ -1,7 +1,8 @@
 # MTRClusterElectricalPowerMeasurement
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 17.6+
@@ -18,47 +19,51 @@
 class MTRClusterElectricalPowerMeasurement
 ```
 
+```objc
+@interface MTRClusterElectricalPowerMeasurement : MTRGenericCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclusterelectricalpowermeasurement/init(device:endpointid:queue:).md)
+- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrclusterelectricalpowermeasurement/init%28device,endpointid,queue%29.md)
 ### Instance Methods
-- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterelectricalpowermeasurement/readattributeacceptedcommandlist(with:).md)
-- [func readAttributeAccuracy(with: MTRReadParams?) -> [String : Any]?](mtrclusterelectricalpowermeasurement/readattributeaccuracy(with:).md)
-- [func readAttributeActiveCurrent(with: MTRReadParams?) -> [String : Any]?](mtrclusterelectricalpowermeasurement/readattributeactivecurrent(with:).md)
-- [func readAttributeActivePower(with: MTRReadParams?) -> [String : Any]?](mtrclusterelectricalpowermeasurement/readattributeactivepower(with:).md)
-- [func readAttributeApparentCurrent(with: MTRReadParams?) -> [String : Any]?](mtrclusterelectricalpowermeasurement/readattributeapparentcurrent(with:).md)
-- [func readAttributeApparentPower(with: MTRReadParams?) -> [String : Any]?](mtrclusterelectricalpowermeasurement/readattributeapparentpower(with:).md)
-- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclusterelectricalpowermeasurement/readattributeattributelist(with:).md)
-- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclusterelectricalpowermeasurement/readattributeclusterrevision(with:).md)
-- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclusterelectricalpowermeasurement/readattributefeaturemap(with:).md)
-- [func readAttributeFrequency(with: MTRReadParams?) -> [String : Any]?](mtrclusterelectricalpowermeasurement/readattributefrequency(with:).md)
-- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterelectricalpowermeasurement/readattributegeneratedcommandlist(with:).md)
-- [func readAttributeHarmonicCurrents(with: MTRReadParams?) -> [String : Any]?](mtrclusterelectricalpowermeasurement/readattributeharmoniccurrents(with:).md)
-- [func readAttributeHarmonicPhases(with: MTRReadParams?) -> [String : Any]?](mtrclusterelectricalpowermeasurement/readattributeharmonicphases(with:).md)
-- [func readAttributeNeutralCurrent(with: MTRReadParams?) -> [String : Any]?](mtrclusterelectricalpowermeasurement/readattributeneutralcurrent(with:).md)
-- [func readAttributeNumberOfMeasurementTypes(with: MTRReadParams?) -> [String : Any]?](mtrclusterelectricalpowermeasurement/readattributenumberofmeasurementtypes(with:).md)
-- [func readAttributePowerFactor(with: MTRReadParams?) -> [String : Any]?](mtrclusterelectricalpowermeasurement/readattributepowerfactor(with:).md)
-- [func readAttributePowerMode(with: MTRReadParams?) -> [String : Any]?](mtrclusterelectricalpowermeasurement/readattributepowermode(with:).md)
-- [func readAttributeRMSCurrent(with: MTRReadParams?) -> [String : Any]?](mtrclusterelectricalpowermeasurement/readattributermscurrent(with:).md)
-- [func readAttributeRMSPower(with: MTRReadParams?) -> [String : Any]?](mtrclusterelectricalpowermeasurement/readattributermspower(with:).md)
-- [func readAttributeRMSVoltage(with: MTRReadParams?) -> [String : Any]?](mtrclusterelectricalpowermeasurement/readattributermsvoltage(with:).md)
-- [func readAttributeRanges(with: MTRReadParams?) -> [String : Any]?](mtrclusterelectricalpowermeasurement/readattributeranges(with:).md)
-- [func readAttributeReactiveCurrent(with: MTRReadParams?) -> [String : Any]?](mtrclusterelectricalpowermeasurement/readattributereactivecurrent(with:).md)
-- [func readAttributeReactivePower(with: MTRReadParams?) -> [String : Any]?](mtrclusterelectricalpowermeasurement/readattributereactivepower(with:).md)
-- [func readAttributeVoltage(with: MTRReadParams?) -> [String : Any]?](mtrclusterelectricalpowermeasurement/readattributevoltage(with:).md)
+- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterelectricalpowermeasurement/readattributeacceptedcommandlist%28with%29.md)
+- [func readAttributeAccuracy(with: MTRReadParams?) -> [String : Any]?](./mtrclusterelectricalpowermeasurement/readattributeaccuracy%28with%29.md)
+- [func readAttributeActiveCurrent(with: MTRReadParams?) -> [String : Any]?](./mtrclusterelectricalpowermeasurement/readattributeactivecurrent%28with%29.md)
+- [func readAttributeActivePower(with: MTRReadParams?) -> [String : Any]?](./mtrclusterelectricalpowermeasurement/readattributeactivepower%28with%29.md)
+- [func readAttributeApparentCurrent(with: MTRReadParams?) -> [String : Any]?](./mtrclusterelectricalpowermeasurement/readattributeapparentcurrent%28with%29.md)
+- [func readAttributeApparentPower(with: MTRReadParams?) -> [String : Any]?](./mtrclusterelectricalpowermeasurement/readattributeapparentpower%28with%29.md)
+- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterelectricalpowermeasurement/readattributeattributelist%28with%29.md)
+- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](./mtrclusterelectricalpowermeasurement/readattributeclusterrevision%28with%29.md)
+- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](./mtrclusterelectricalpowermeasurement/readattributefeaturemap%28with%29.md)
+- [func readAttributeFrequency(with: MTRReadParams?) -> [String : Any]?](./mtrclusterelectricalpowermeasurement/readattributefrequency%28with%29.md)
+- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterelectricalpowermeasurement/readattributegeneratedcommandlist%28with%29.md)
+- [func readAttributeHarmonicCurrents(with: MTRReadParams?) -> [String : Any]?](./mtrclusterelectricalpowermeasurement/readattributeharmoniccurrents%28with%29.md)
+- [func readAttributeHarmonicPhases(with: MTRReadParams?) -> [String : Any]?](./mtrclusterelectricalpowermeasurement/readattributeharmonicphases%28with%29.md)
+- [func readAttributeNeutralCurrent(with: MTRReadParams?) -> [String : Any]?](./mtrclusterelectricalpowermeasurement/readattributeneutralcurrent%28with%29.md)
+- [func readAttributeNumberOfMeasurementTypes(with: MTRReadParams?) -> [String : Any]?](./mtrclusterelectricalpowermeasurement/readattributenumberofmeasurementtypes%28with%29.md)
+- [func readAttributePowerFactor(with: MTRReadParams?) -> [String : Any]?](./mtrclusterelectricalpowermeasurement/readattributepowerfactor%28with%29.md)
+- [func readAttributePowerMode(with: MTRReadParams?) -> [String : Any]?](./mtrclusterelectricalpowermeasurement/readattributepowermode%28with%29.md)
+- [func readAttributeRMSCurrent(with: MTRReadParams?) -> [String : Any]?](./mtrclusterelectricalpowermeasurement/readattributermscurrent%28with%29.md)
+- [func readAttributeRMSPower(with: MTRReadParams?) -> [String : Any]?](./mtrclusterelectricalpowermeasurement/readattributermspower%28with%29.md)
+- [func readAttributeRMSVoltage(with: MTRReadParams?) -> [String : Any]?](./mtrclusterelectricalpowermeasurement/readattributermsvoltage%28with%29.md)
+- [func readAttributeRanges(with: MTRReadParams?) -> [String : Any]?](./mtrclusterelectricalpowermeasurement/readattributeranges%28with%29.md)
+- [func readAttributeReactiveCurrent(with: MTRReadParams?) -> [String : Any]?](./mtrclusterelectricalpowermeasurement/readattributereactivecurrent%28with%29.md)
+- [func readAttributeReactivePower(with: MTRReadParams?) -> [String : Any]?](./mtrclusterelectricalpowermeasurement/readattributereactivepower%28with%29.md)
+- [func readAttributeVoltage(with: MTRReadParams?) -> [String : Any]?](./mtrclusterelectricalpowermeasurement/readattributevoltage%28with%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericCluster](mtrgenericcluster.md)
+- [MTRGenericCluster](./mtrgenericcluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

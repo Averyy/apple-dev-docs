@@ -1,7 +1,8 @@
 # startDate
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date when the activity was initially started.
 
@@ -19,15 +20,20 @@ The date when the activity was initially started.
 var startDate: Date? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) NSDate * startDate;
+```
+
 ## See Also
 
-- [var duration: TimeInterval](gkgameactivity/duration.md)
+### Getting the activity properties
+- [var duration: TimeInterval](./duration.md)
   The total time elapsed while in active state.
-- [var endDate: Date?](gkgameactivity/enddate.md)
+- [var endDate: Date?](./enddate.md)
   The date when the activity was officially ended.
-- [var creationDate: Date](gkgameactivity/creationdate.md)
+- [var creationDate: Date](./creationdate.md)
   The date when the activity was created.
-- [var lastResumeDate: Date?](gkgameactivity/lastresumedate.md)
+- [var lastResumeDate: Date?](./lastresumedate.md)
   The date when the activity was last resumed.
 
 

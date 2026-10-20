@@ -1,7 +1,8 @@
 # DeviceActivityReportExtension
 
 **Framework**: Device Activity  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An app extension that reports device activity data.
 
@@ -18,29 +19,30 @@ protocol DeviceActivityReportExtension : AppExtension
 
 #### Overview
 
-Your extension is provided with the data that your app requests when it instantiates a `DeviceActivityReport`, which it uses to render a [`View`](https://developer.apple.com/documentation/swiftui/view) representing the user’s device activity.
+Your extension is provided with the data that your app requests when it instantiates a `DeviceActivityReport`, which it uses to render a [`View`](../SwiftUI/view.md) representing the user’s device activity.
 
 ## Topics
 
 ### Associated Types
-- [associatedtype Body : DeviceActivityReportScene](deviceactivityreportextension/body-swift.associatedtype.md)
+- [associatedtype Body : DeviceActivityReportScene](./deviceactivityreportextension/body-swift.associatedtype.md)
   The body of the extension’s scene.
 ### Instance Properties
-- [var body: Self.Body](deviceactivityreportextension/body-swift.property.md)
-  A body containing a [`DeviceActivityReportScene`](deviceactivityreportscene.md) for each context that your extension supports.
+- [var body: Self.Body](./deviceactivityreportextension/body-swift.property.md)
+  A body containing a [`DeviceActivityReportScene`](./deviceactivityreportscene.md) for each context that your extension supports.
 
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../extensionfoundation/appextension.md)
+- [AppExtension](../ExtensionFoundation/appextension.md)
 
 ## See Also
 
-- [struct DeviceActivityReport](deviceactivityreport.md)
+### Report activity
+- [struct DeviceActivityReport](./deviceactivityreport.md)
   A view that reports the user’s application, category, and web domain activity in a privacy-preserving way.
-- [protocol DeviceActivityReportScene](deviceactivityreportscene.md)
+- [protocol DeviceActivityReportScene](./deviceactivityreportscene.md)
   Defines a custom device activity report scene.
-- [struct DeviceActivityReportBuilder](deviceactivityreportbuilder.md)
+- [struct DeviceActivityReportBuilder](./deviceactivityreportbuilder.md)
   A result builder that combines one or more `DeviceActivityReportScene`s into a single scene.
 
 

@@ -1,7 +1,8 @@
 # CMTimeMaximum(_:_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the greater of two time values.
 
@@ -20,6 +21,10 @@ Returns the greater of two time values.
 func CMTimeMaximum(_ time1: CMTime, _ time2: CMTime) -> CMTime
 ```
 
+```c
+extern CMTime CMTimeMaximum(CMTime time1, CMTime time2);
+```
+
 #### Return Value
 
 The greater of the two times.
@@ -31,9 +36,10 @@ The greater of the two times.
 
 ## See Also
 
-- [func CMTimeCompare(CMTime, CMTime) -> Int32](cmtimecompare(_:_:).md)
+### Comparing Times
+- [func CMTimeCompare(CMTime, CMTime) -> Int32](./cmtimecompare%28_,_%29.md)
   Returns the numerical relationship of two times.
-- [func CMTimeMinimum(CMTime, CMTime) -> CMTime](cmtimeminimum(_:_:).md)
+- [func CMTimeMinimum(CMTime, CMTime) -> CMTime](./cmtimeminimum%28_,_%29.md)
   Returns the lesser of two time values.
 
 

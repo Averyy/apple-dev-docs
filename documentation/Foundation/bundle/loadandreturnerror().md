@@ -1,7 +1,8 @@
 # loadAndReturnError()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads the bundle’s executable code and returns any errors.
 
@@ -20,9 +21,13 @@ Loads the bundle’s executable code and returns any errors.
 func loadAndReturnError() throws
 ```
 
+```objc
+- (BOOL) loadAndReturnError:(NSError **) error;
+```
+
 #### Discussion
 
-If this method returns [`false`](https://developer.apple.com/documentation/swift/false) and you pass a value for the `error` parameter, a suitable error object is returned in that parameter. Potential errors returned are in the Cocoa error domain and include the types that follow. For a full list of error types, see `FoundationErrors.h`.
+If this method returns [`false`](../../Swift/false.md) and you pass a value for the `error` parameter, a suitable error object is returned in that parameter. Potential errors returned are in the Cocoa error domain and include the types that follow. For a full list of error types, see `FoundationErrors.h`.
 
 - `NSFileNoSuchFileError` - returned if the bundle’s executable file was not located.
 - `NSExecutableNotLoadableError` - returned if the bundle’s executable file exists but could not be loaded. This error is returned if the executable is not recognized as a loadable executable. It can also be returned if the executable is a PEF/CFM executable but the current process does not support that type of executable.
@@ -33,21 +38,24 @@ If this method returns [`false`](https://developer.apple.com/documentation/swift
 
 The error object may contain additional debugging information in its description that you can use to identify the cause of the error. (This debugging information should not be displayed to the user.) You can obtain the debugging information by invoking the error object’s `description` method in your code or by using the `print-object` command on the error object in gdb.
 
-> **Note**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## See Also
 
-- [var executableArchitectures: [NSNumber]?](bundle/executablearchitectures.md)
+### Loading code from a bundle
+- [var executableArchitectures: [NSNumber]?](./executablearchitectures.md)
   An array of numbers indicating the architecture types supported by the bundle’s executable.
-- [func preflight() throws](bundle/preflight.md)
+- [func preflight() throws](./preflight%28%29.md)
   Returns a Boolean value indicating whether the bundle’s executable code could be loaded successfully.
-- [func load() -> Bool](bundle/load.md)
+- [func load() -> Bool](./load%28%29.md)
   Dynamically loads the bundle’s executable code into a running program, if the code has not already been loaded.
-- [func unload() -> Bool](bundle/unload.md)
+- [func unload() -> Bool](./unload%28%29.md)
   Unloads the code associated with the receiver.
-- [var isLoaded: Bool](bundle/isloaded.md)
+- [var isLoaded: Bool](./isloaded.md)
   The load status of a bundle.
-- [Mach-O Architecture](1495005-mach-o-architecture.md)
+- [Mach-O Architecture](../api-1495005-mach-o-architecture.md)
   Constants that describe the CPU types that a bundle’s executable code supports.
 
 

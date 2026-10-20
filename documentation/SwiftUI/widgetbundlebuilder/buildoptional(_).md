@@ -1,7 +1,8 @@
 # buildOptional(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Produces an optional widget for conditional statements in multi-statement closures that’s only visible when the condition evaluates to true.
 
@@ -22,7 +23,7 @@ static func buildOptional(_ widget: (any Widget & _LimitedAvailabilityWidgetMark
 
 #### Discussion
 
-Conditional statements in a [`WidgetBundleBuilder`](widgetbundlebuilder.md) can contain an `if` statement but not an `else` statement, and the condition can only perform a compiler check for availability, like in the following code:
+Conditional statements in a [`WidgetBundleBuilder`](../widgetbundlebuilder.md) can contain an `if` statement but not an `else` statement, and the condition can only perform a compiler check for availability, like in the following code:
 
 ```swift
 var body: some Widget {
@@ -36,12 +37,13 @@ var body: some Widget {
 
 ## See Also
 
-- [static func buildBlock() -> some Widget](widgetbundlebuilder/buildblock.md)
+### Bundling widgets
+- [static func buildBlock() -> some Widget](./buildblock%28%29.md)
   Builds an empty Widget from a block containing no statements, `{ }`.
-- [static buildBlock(_:)](widgetbundlebuilder/buildblock(_:).md)
-- [static buildExpression(_:)](widgetbundlebuilder/buildexpression(_:).md)
+- [static buildBlock(_:)](./buildblock%28_%29.md)
+- [static buildExpression(_:)](./buildexpression%28_%29.md)
   Builds an expression within the builder.
-- [static buildLimitedAvailability(_:)](widgetbundlebuilder/buildlimitedavailability(_:).md)
+- [static buildLimitedAvailability(_:)](./buildlimitedavailability%28_%29.md)
   Builds an availability check within the builder
 
 

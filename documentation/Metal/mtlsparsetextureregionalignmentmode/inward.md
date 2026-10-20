@@ -1,7 +1,8 @@
 # MTLSparseTextureRegionAlignmentMode.inward
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The tile region ignores partially covered tiles.
 
@@ -19,13 +20,18 @@ The tile region ignores partially covered tiles.
 case inward
 ```
 
+```c
+MTLSparseTextureRegionAlignmentModeInward
+```
+
 ## Mentions
 
-- [Converting between pixel regions and sparse tile regions](converting-between-pixel-regions-and-sparse-tile-regions.md)
+- [Converting between pixel regions and sparse tile regions](../converting-between-pixel-regions-and-sparse-tile-regions.md)
 
 ## See Also
 
-- [MTLSparseTextureRegionAlignmentMode.outward](mtlsparsetextureregionalignmentmode/outward.md)
+### Specifying the alignment mode
+- [MTLSparseTextureRegionAlignmentMode.outward](./outward.md)
   The tile region includes any partially covered tiles.
 
 

@@ -1,7 +1,8 @@
 # isRecording
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether recording is in progress.
 
@@ -18,27 +19,32 @@ Indicates whether recording is in progress.
 var isRecording: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isRecording) BOOL recording;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the file output currently has a file to which it is writing new samples, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+The value of this property is [`true`](../../Swift/true.md) when the file output currently has a file to which it is writing new samples, [`false`](../../Swift/false.md) otherwise.
 
 ## See Also
 
-- [var delegate: (any AVCaptureFileOutputDelegate)?](avcapturefileoutput/delegate.md)
+### Setting file output properties
+- [var delegate: (any AVCaptureFileOutputDelegate)?](./delegate.md)
   The delegate object for the capture file output.
-- [var maxRecordedDuration: CMTime](avcapturefileoutput/maxrecordedduration.md)
+- [var maxRecordedDuration: CMTime](./maxrecordedduration.md)
   The longest duration allowed for the recording.
-- [var maxRecordedFileSize: Int64](avcapturefileoutput/maxrecordedfilesize.md)
+- [var maxRecordedFileSize: Int64](./maxrecordedfilesize.md)
   The maximum size, in bytes, of the data that should be recorded by the receiver.
-- [var minFreeDiskSpaceLimit: Int64](avcapturefileoutput/minfreediskspacelimit.md)
+- [var minFreeDiskSpaceLimit: Int64](./minfreediskspacelimit.md)
   The minimum amount of free space, in bytes, required for recording to continue on a given volume.
-- [var outputFileURL: URL?](avcapturefileoutput/outputfileurl.md)
+- [var outputFileURL: URL?](./outputfileurl.md)
   The URL to which output is directed.
-- [var recordedDuration: CMTime](avcapturefileoutput/recordedduration.md)
+- [var recordedDuration: CMTime](./recordedduration.md)
   Indicates the duration of the media recorded to the current output file.
-- [var recordedFileSize: Int64](avcapturefileoutput/recordedfilesize.md)
+- [var recordedFileSize: Int64](./recordedfilesize.md)
   Indicates the size, in bytes, of the data recorded to the current output file.
-- [var isRecordingPaused: Bool](avcapturefileoutput/isrecordingpaused.md)
+- [var isRecordingPaused: Bool](./isrecordingpaused.md)
   Indicates whether recording to the current output file is paused.
 
 

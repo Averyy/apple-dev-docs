@@ -1,7 +1,8 @@
 # init(array:range:copyItems:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly allocated set with the objects that are contained in the specified range of an array, optionally copying the items.
 
@@ -20,37 +21,44 @@ Initializes a newly allocated set with the objects that are contained in the spe
 convenience init(array set: [Any], range: NSRange, copyItems flag: Bool)
 ```
 
+```objc
+- (instancetype) initWithArray:(NSArray<id> *) set range:(NSRange) range copyItems:(BOOL) flag;
+```
+
 #### Return Value
 
 An initialized ordered set containing a uniqued collection of the objects contained in specified range of the array.
 
 ## Parameters
 
-- `set`: An array of objects to add to the new set. If the same object appears more than once in array, it is represented only once in the returned ordered set.
+- `set`: An array of objects to add to the new set.
+
+  If the same object appears more than once in array, it is represented only once in the returned ordered set.
 - `range`: The range of objects in `array` to add to the ordered set.
-- `flag`: If [`true`](https://developer.apple.com/documentation/swift/true) the objects are copied to the ordered set; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+- `flag`: If [`true`](../../Swift/true.md) the objects are copied to the ordered set; otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [convenience init(array: [Any])](nsorderedset/init(array:).md)
+### Initializing an Ordered Set
+- [convenience init(array: [Any])](./init%28array%29.md)
   Initializes a newly allocated set with the objects that are contained in a given array.
-- [convenience init(array: [Any], copyItems: Bool)](nsorderedset/init(array:copyitems:).md)
+- [convenience init(array: [Any], copyItems: Bool)](./init%28array,copyitems%29.md)
   Initializes a newly allocated set with the objects that are contained in a given array, optionally copying the items.
-- [convenience init(object: Any)](nsorderedset/init(object:).md)
+- [convenience init(object: Any)](./init%28object%29.md)
   Initializes a new ordered set with the object.
-- [init(objects: UnsafePointer<AnyObject>?, count: Int)](nsorderedset/init(objects:count:)-2ai32.md)
+- [init(objects: UnsafePointer<AnyObject>?, count: Int)](./init%28objects,count%29-2ai32.md)
   Initializes a newly allocated set with a specified number of objects from a given C array of objects.
-- [convenience init(orderedSet: NSOrderedSet)](nsorderedset/init(orderedset:).md)
+- [convenience init(orderedSet: NSOrderedSet)](./init%28orderedset%29.md)
   Initializes a new ordered set with the contents of a set.
-- [convenience init(orderedSet: NSOrderedSet, copyItems: Bool)](nsorderedset/init(orderedset:copyitems:).md)
+- [convenience init(orderedSet: NSOrderedSet, copyItems: Bool)](./init%28orderedset,copyitems%29.md)
   Initializes a new ordered set with the contents of a set, optionally copying the items.
-- [convenience init(orderedSet: NSOrderedSet, range: NSRange, copyItems: Bool)](nsorderedset/init(orderedset:range:copyitems:).md)
+- [convenience init(orderedSet: NSOrderedSet, range: NSRange, copyItems: Bool)](./init%28orderedset,range,copyitems%29.md)
   Initializes a new ordered set with the contents of an ordered set, optionally copying the items.
-- [convenience init(set: Set<AnyHashable>)](nsorderedset/init(set:).md)
+- [convenience init(set: Set<AnyHashable>)](./init%28set%29.md)
   Initializes a new ordered set with the contents of a set.
-- [convenience init(set: Set<AnyHashable>, copyItems: Bool)](nsorderedset/init(set:copyitems:).md)
+- [convenience init(set: Set<AnyHashable>, copyItems: Bool)](./init%28set,copyitems%29.md)
   Initializes a new ordered set with the contents of a set, optionally copying the objects in the set.
-- [init()](nsorderedset/init.md)
+- [init()](./init%28%29.md)
   Initializes a newly allocated ordered set.
 
 

@@ -1,7 +1,8 @@
 # endDate
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The end of the time period included in these statistics.
 
@@ -19,17 +20,22 @@ The end of the time period included in these statistics.
 var endDate: Date { get }
 ```
 
+```objc
+@property (strong, readonly) NSDate * endDate;
+```
+
 #### Discussion
 
 This property contains the end date for the statistics. If you calculated these statistics using a statistics query, this is the latest end date from all the samples that match the query. If you calculated these statistics using a statistics collection query, this is the end of the time interval for that particular collection of statistics.
 
 ## See Also
 
-- [var startDate: Date](hkstatistics/startdate.md)
+### Getting Property Data
+- [var startDate: Date](./startdate.md)
   The start of the time period included in these statistics.
-- [var quantityType: HKQuantityType](hkstatistics/quantitytype.md)
+- [var quantityType: HKQuantityType](./quantitytype.md)
   The quantity type of the samples used to calculate these statistics.
-- [var sources: [HKSource]?](hkstatistics/sources.md)
+- [var sources: [HKSource]?](./sources.md)
   An array containing all the sources contributing to these statistics.
 
 

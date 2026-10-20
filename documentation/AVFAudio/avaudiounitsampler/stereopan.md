@@ -1,7 +1,8 @@
 # stereoPan
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An adjustment for the stereo panning of all the played notes.
 
@@ -19,17 +20,22 @@ An adjustment for the stereo panning of all the played notes.
 var stereoPan: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float stereoPan;
+```
+
 #### Discussion
 
 The default value is `0.0`, and the range of valid values is `-100.0` to `100.0`.
 
 ## See Also
 
-- [var globalTuning: Float](avaudiounitsampler/globaltuning.md)
+### Getting and setting sampler values
+- [var globalTuning: Float](./globaltuning.md)
   An adjustment for the tuning of all the played notes.
-- [var overallGain: Float](avaudiounitsampler/overallgain.md)
+- [var overallGain: Float](./overallgain.md)
   An adjustment for the gain of all the played notes, in decibels.
-- [var masterGain: Float](avaudiounitsampler/mastergain.md)
+- [var masterGain: Float](./mastergain.md)
   An adjustment for the gain of all the played notes, in decibels.
 
 

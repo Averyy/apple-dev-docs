@@ -1,7 +1,8 @@
 # WaveShaperNode
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface WaveShaperNode
 ```
 
 ## Topics
 
 ### Instance Properties
-- [curve](waveshapernode/1631351-curve.md)
-- [oversample](waveshapernode/1633027-oversample.md)
+- [curve](./waveshapernode/api-1631351-curve.md)
+- [oversample](./waveshapernode/api-1633027-oversample.md)
 
 ## Relationships
 
 ### Inherits From
-- [AudioNode](audionode.md)
+- [AudioNode](./audionode.md)
 
 
 ---

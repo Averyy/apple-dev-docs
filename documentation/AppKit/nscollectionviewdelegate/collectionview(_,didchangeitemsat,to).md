@@ -1,7 +1,8 @@
 # collectionView(_:didChangeItemsAt:to:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate that the highlight state of the specified items changed.
 
@@ -15,6 +16,10 @@ Notifies the delegate that the highlight state of the specified items changed.
 optional func collectionView(_ collectionView: NSCollectionView, didChangeItemsAt indexPaths: Set<IndexPath>, to highlightState: NSCollectionViewItem.HighlightState)
 ```
 
+```objc
+- (void) collectionView:(NSCollectionView *) collectionView didChangeItemsAtIndexPaths:(NSSet<NSIndexPath *> *) indexPaths toHighlightState:(NSCollectionViewItemHighlightState) highlightState;
+```
+
 #### Discussion
 
 After the highlight state of one or more items changes successfully, the collection view calls this method to report the change. Use this method to respond to the change and to make any necessary adjustments to your content or the collection view.
@@ -22,12 +27,13 @@ After the highlight state of one or more items changes successfully, the collect
 ## Parameters
 
 - `collectionView`: The collection view notifying you of the highlight change.
-- `indexPaths`: The set of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects corresponding to the items whose highlight state changed.
+- `indexPaths`: The set of [`NSIndexPath`](../../Foundation/nsindexpath.md) objects corresponding to the items whose highlight state changed.
 - `highlightState`: The new highlight state of the items.
 
 ## See Also
 
-- [func collectionView(NSCollectionView, shouldChangeItemsAt: Set<IndexPath>, to: NSCollectionViewItem.HighlightState) -> Set<IndexPath>](nscollectionviewdelegate/collectionview(_:shouldchangeitemsat:to:).md)
+### Managing Item Highlighting
+- [func collectionView(NSCollectionView, shouldChangeItemsAt: Set<IndexPath>, to: NSCollectionViewItem.HighlightState) -> Set<IndexPath>](./collectionview%28_,shouldchangeitemsat,to%29.md)
   Asks the delegate to approve the pending highlighting of the specified items.
 
 

@@ -1,7 +1,8 @@
 # GetOutputQueue
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the memory descriptor used for video IO that was initialized with or set on the video stream.
 
@@ -10,7 +11,7 @@ Gets the memory descriptor used for video IO that was initialized with or set on
 
 ## Declaration
 
-```swift
+```c
 IOStreamBufferQueue * GetOutputQueue();
 ```
 
@@ -20,17 +21,18 @@ A pointer to the output buffer queue for the stream, or `NULL` if the stream is 
 
 ## See Also
 
-- [GetInputQueue](iouservideostream/getinputqueue.md)
+### Working with queues
+- [GetInputQueue](./getinputqueue.md)
   Gets the buffer queue for the stream.
-- [createQueues](iouservideostream/createqueues.md)
+- [createQueues](./createqueues.md)
   Creates the shared input and output queues, without regard to whether the stream is open or not.
-- [destroyQueues](iouservideostream/destroyqueues.md)
+- [destroyQueues](./destroyqueues.md)
   Releases the shared input and output queues.
-- [dequeueInputEntry](iouservideostream/dequeueinputentry.md)
-- [enqueueOutputEntry](iouservideostream/enqueueoutputentry.md)
-- [SendBufferQueueChange](iouservideostream/sendbufferqueuechange.md)
+- [dequeueInputEntry](./dequeueinputentry.md)
+- [enqueueOutputEntry](./enqueueoutputentry.md)
+- [SendBufferQueueChange](./sendbufferqueuechange.md)
   Sends a notification to the host that the buffer queue has changed.
-- [IOStreamBufferQueue](iostreambufferqueue.md)
+- [IOStreamBufferQueue](../iostreambufferqueue.md)
 
 
 ---

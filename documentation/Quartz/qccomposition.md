@@ -1,12 +1,15 @@
 # QCComposition
 
 **Framework**: Quartz  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The `QCComposition` class represents a Quartz Composer composition that either:
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -14,9 +17,13 @@ The `QCComposition` class represents a Quartz Composer composition that either:
 class QCComposition
 ```
 
+```objc
+@interface QCComposition : NSObject
+```
+
 #### Overview
 
-- comes from the system-wide composition repository  (`/Library/Compositions` and `~/Library/Compositions`) where it can be accessed by any application through the methods of the [`QCCompositionRepository`](qccompositionrepository.md) class
+- comes from the system-wide composition repository  (`/Library/Compositions` and `~/Library/Compositions`) where it can be accessed by any application through the methods of the [`QCCompositionRepository`](./qccompositionrepository.md) class
 - is created from an arbitrary source (typically a file on disk) using one of its methods
 
 This class cannot be subclassed.
@@ -26,72 +33,73 @@ A `QCComposition` object has the following information associated with it and th
 - Attributes include the name and description of the composition, copyright information, and whether or not its provided by macOS (built-in).
 - The protocols that the composition conforms to. A *composition protocol*  defines a set of required and optional input parameters and output results.
 
-Many methods of the [`QCRenderer`](qcrenderer.md), [`QCCompositionLayer`](qccompositionlayer.md), and [`QCView`](qcview.md) classes take a `QCComposition` object as a parameter.
+Many methods of the [`QCRenderer`](./qcrenderer.md), [`QCCompositionLayer`](./qccompositionlayer.md), and [`QCView`](./qcview.md) classes take a `QCComposition` object as a parameter.
 
 ## Topics
 
 ### Creating a Composition
-- [init!(file: String!)](qccomposition/init(file:).md)
+- [init!(file: String!)](./qccomposition/init%28file%29.md)
   Returns a composition object initialized with a Quartz Composer composition file.
-- [init!(data: Data!)](qccomposition/init(data:).md)
+- [init!(data: Data!)](./qccomposition/init%28data%29.md)
   Returns a composition object  initialized with the contents of a Quartz Composer composition file.
 ### Getting Information About a Composition
-- [func attributes() -> [AnyHashable : Any]!](qccomposition/attributes.md)
+- [func attributes() -> [AnyHashable : Any]!](./qccomposition/attributes%28%29.md)
   Returns the attributes of the composition.
-- [func protocols() -> [Any]!](qccomposition/protocols.md)
+- [func protocols() -> [Any]!](./qccomposition/protocols%28%29.md)
   Returns the list of protocols to which the composition conforms.
-- [func identifier() -> String!](qccomposition/identifier.md)
+- [func identifier() -> String!](./qccomposition/identifier%28%29.md)
   Returns the unique and persistent identifier for the composition from the composition repository.
 ### Getting Port Keys
-- [func inputKeys() -> [Any]!](qccomposition/inputkeys.md)
+- [func inputKeys() -> [Any]!](./qccomposition/inputkeys%28%29.md)
   Returns an array listing the keys that identify the input ports of the root patch of the composition.
-- [func outputKeys() -> [Any]!](qccomposition/outputkeys.md)
+- [func outputKeys() -> [Any]!](./qccomposition/outputkeys%28%29.md)
   Returns an array listing the keys that identify the output ports of the root patch of the composition.
 ### Constants
-- [Attribute Keys](attribute-keys.md)
+- [Attribute Keys](./attribute-keys.md)
   Attributes of a composition.
-- [Composition Categories](composition-categories.md)
+- [Composition Categories](./composition-categories.md)
   Categories for compositions.
-- [Standard Protocol Input Keys](standard-protocol-input-keys.md)
+- [Standard Protocol Input Keys](./standard-protocol-input-keys.md)
   Input ports of a composition.
-- [Standard Protocol Output Keys](standard-protocol-output-keys.md)
+- [Standard Protocol Output Keys](./standard-protocol-output-keys.md)
   Output ports of a composition.
-- [Standard Protocols](standard-protocols.md)
+- [Standard Protocols](./standard-protocols.md)
   Protocols for a composition.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class QCCompositionLayer](qccompositionlayer.md)
+### Classes
+- [class QCCompositionLayer](./qccompositionlayer.md)
   A layer that loads, plays, and controls Quartz Composer compositions in a Core Animation layer hierarchy.
-- [class QCCompositionParameterView](qccompositionparameterview.md)
-  A class that allows users to edit the input parameters of a composition in real time. The composition can be rendering in any of the following objects: [`QCRenderer`](qcrenderer.md), [`QCView`](qcview.md), or [`QCCompositionLayer`](qccompositionlayer.md).
-- [class QCCompositionPickerPanel](qccompositionpickerpanel.md)
+- [class QCCompositionParameterView](./qccompositionparameterview.md)
+  A class that allows users to edit the input parameters of a composition in real time. The composition can be rendering in any of the following objects: [`QCRenderer`](./qcrenderer.md), [`QCView`](./qcview.md), or [`QCCompositionLayer`](./qccompositionlayer.md).
+- [class QCCompositionPickerPanel](./qccompositionpickerpanel.md)
   The `QCCompositionPickerPanel` class represents a utility window that allows users to browse compositions that are in the Quartz Composer composition repository and, if supported, preview the composition. The `QCCompositionPickerPanel` class cannot be subclassed.
-- [class QCCompositionPickerView](qccompositionpickerview.md)
+- [class QCCompositionPickerView](./qccompositionpickerview.md)
   The `QCCompositionPickerView` class allows users to browse compositions that are in the Quartz Composer composition repository, and to preview them. You can set the default input parameters for a composition preview  by using the method setDefaultValue:forInputKey:.
-- [class QCCompositionRepository](qccompositionrepository.md)
+- [class QCCompositionRepository](./qccompositionrepository.md)
   The `QCCompositionRepository` class represents a system-wide centralized repository of built-in and installed Quartz Composer compositions (`/Library/Compositions` and `~/Library/Compositions`). The `QCCompositionRepository` class cannot be subclassed.
-- [class QCPatchController](qcpatchcontroller.md)
-- [class QCPlugIn](qcplugin.md)
+- [class QCPatchController](./qcpatchcontroller.md)
+- [class QCPlugIn](./qcplugin.md)
   A base class to subclass for writing custom patches.
-- [class QCPlugInViewController](qcpluginviewcontroller.md)
+- [class QCPlugInViewController](./qcpluginviewcontroller.md)
   The `QCPlugInViewController` class communicates (through Cocoa bindings) between a custom patch and the view used for the internal settings of the custom patch. Only custom patches that use internal settings exposed to the user need to use the `QCPlugInViewController` class.
-- [class QCRenderer](qcrenderer.md)
+- [class QCRenderer](./qcrenderer.md)
   A base class for low-level rendering.
-- [class QCView](qcview.md)
+- [class QCView](./qcview.md)
   The `QCView` class is a custom `NSView` class that loads, plays, and controls Quartz Composer compositions. It is an autonomous view that is driven by an internal timer running on the main thread.
 
 

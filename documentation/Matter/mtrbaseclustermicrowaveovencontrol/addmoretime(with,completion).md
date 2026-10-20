@@ -1,7 +1,8 @@
 # addMoreTime(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command AddMoreTime
 
@@ -17,7 +18,15 @@ Command AddMoreTime
 ## Declaration
 
 ```swift
+func addMoreTime(with params: MTRMicrowaveOvenControlClusterAddMoreTimeParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func addMoreTime(with params: MTRMicrowaveOvenControlClusterAddMoreTimeParams) async throws
+```
+
+```objc
+- (void) addMoreTimeWithParams:(MTRMicrowaveOvenControlClusterAddMoreTimeParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

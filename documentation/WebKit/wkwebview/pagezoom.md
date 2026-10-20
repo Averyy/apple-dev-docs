@@ -1,7 +1,8 @@
 # pageZoom
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scale factor by which the web view scales content relative to its bounds.
 
@@ -18,17 +19,22 @@ The scale factor by which the web view scales content relative to its bounds.
 var pageZoom: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat pageZoom;
+```
+
 #### Discussion
 
 The default value of this property is `1.0`, which displays the content without any scaling. Changing the value of this property is equivalent to setting the CSS `zoom` property on all page content.
 
 ## See Also
 
-- [var allowsMagnification: Bool](wkwebview/allowsmagnification.md)
+### Scaling content
+- [var allowsMagnification: Bool](./allowsmagnification.md)
   A Boolean value that indicates whether magnify gestures change the web view’s magnification.
-- [var magnification: CGFloat](wkwebview/magnification.md)
+- [var magnification: CGFloat](./magnification.md)
   The factor by which the page content is currently scaled.
-- [func setMagnification(CGFloat, centeredAt: CGPoint)](wkwebview/setmagnification(_:centeredat:).md)
+- [func setMagnification(CGFloat, centeredAt: CGPoint)](./setmagnification%28_,centeredat%29.md)
   Scales the page content and centers the result on the specified point.
 
 

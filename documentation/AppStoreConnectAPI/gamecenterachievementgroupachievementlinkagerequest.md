@@ -1,23 +1,26 @@
 # GameCenterAchievementGroupAchievementLinkageRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to attach an achievement to an achievement group.
 
 **Availability**:
-- App Store Connect API 3.0+
+- App Store Connect API 3.0+ - Deprecated in 3.7
+
+> **Deprecated**: This object is deprecated.
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementGroupAchievementLinkageRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterAchievementGroupAchievementLinkageRequest.Data](gamecenterachievementgroupachievementlinkagerequest/data-data.dictionary.md)
+- [object GameCenterAchievementGroupAchievementLinkageRequest.Data](./gamecenterachievementgroupachievementlinkagerequest/data-data.dictionary.md)
   The resource linkage data for setting the group achievement associated with a Game Center achievement.
 
 ## Properties
@@ -26,34 +29,35 @@ object GameCenterAchievementGroupAchievementLinkageRequest
 
 ## See Also
 
-- [object GameCenterAchievementV2](gamecenterachievementv2.md)
+### Objects
+- [object GameCenterAchievementV2](./gamecenterachievementv2.md)
   The data structure that represents a Game Center achievement v2 resource.
-- [object GameCenterAchievementV2CreateRequest](gamecenterachievementv2createrequest.md)
+- [object GameCenterAchievementV2CreateRequest](./gamecenterachievementv2createrequest.md)
   The request body you use to create a Game Center achievement v2.
-- [object GameCenterAchievementV2Response](gamecenterachievementv2response.md)
+- [object GameCenterAchievementV2Response](./gamecenterachievementv2response.md)
   A response that contains a single Game Center achievement v2 resource.
-- [object GameCenterAchievementV2UpdateRequest](gamecenterachievementv2updaterequest.md)
+- [object GameCenterAchievementV2UpdateRequest](./gamecenterachievementv2updaterequest.md)
   The request body you use to update a Game Center achievement v2.
-- [object GameCenterAchievementsV2Response](gamecenterachievementsv2response.md)
+- [object GameCenterAchievementsV2Response](./gamecenterachievementsv2response.md)
   A response that contains a single Game Center achievement v2 resource.
-- [object GameCenterAchievementV2ActivityLinkageRequest](gamecenterachievementv2activitylinkagerequest.md)
+- [object GameCenterAchievementV2ActivityLinkageRequest](./gamecenterachievementv2activitylinkagerequest.md)
   The data structure that represents a Game Center achievement v2 activity linkage request resource.
-- [object GameCenterAchievementV2VersionsLinkagesResponse](gamecenterachievementv2versionslinkagesresponse.md)
+- [object GameCenterAchievementV2VersionsLinkagesResponse](./gamecenterachievementv2versionslinkagesresponse.md)
   A response that contains a list of Game Center achievement v2 version linkage resources.
-- [object GameCenterAchievement](gamecenterachievement.md)
+- [object GameCenterAchievement](./gamecenterachievement.md)
   A reward in Game Center that players earn by completing specific challenges or milestones in a game.
-- [object GameCenterAchievementCreateRequest](gamecenterachievementcreaterequest.md)
+- [object GameCenterAchievementCreateRequest](./gamecenterachievementcreaterequest.md)
   A request body you use to create a Game Center achievement.
-- [object GameCenterAchievementGroupAchievementLinkageResponse](gamecenterachievementgroupachievementlinkageresponse.md)
+- [object GameCenterAchievementGroupAchievementLinkageResponse](./gamecenterachievementgroupachievementlinkageresponse.md)
   A response body that contains the ID of a single related resource.
-- [object GameCenterAchievementResponse](gamecenterachievementresponse.md)
+- [object GameCenterAchievementResponse](./gamecenterachievementresponse.md)
   The response body for endpoints that create, read, or modify a single Game Center achievement.
-- [object GameCenterAchievementUpdateRequest](gamecenterachievementupdaterequest.md)
+- [object GameCenterAchievementUpdateRequest](./gamecenterachievementupdaterequest.md)
   The request body you use to update a Game Center achievement.
-- [object GameCenterAchievementsResponse](gamecenterachievementsresponse.md)
+- [object GameCenterAchievementsResponse](./gamecenterachievementsresponse.md)
   The response body for endpoints that list Game Center achievements.
-- [object GameCenterAchievementActivityLinkageRequest](gamecenterachievementactivitylinkagerequest.md)
-- [object GameCenterAchievementLocalizationsLinkagesResponse](gamecenterachievementlocalizationslinkagesresponse.md)
+- [object GameCenterAchievementActivityLinkageRequest](./gamecenterachievementactivitylinkagerequest.md)
+- [object GameCenterAchievementLocalizationsLinkagesResponse](./gamecenterachievementlocalizationslinkagesresponse.md)
 
 
 ---

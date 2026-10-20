@@ -1,7 +1,8 @@
 # SwiftLanguageMode
 
 **Framework**: PackageDescription  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The Swift language mode used to compile Swift sources in the package
 
@@ -14,41 +15,42 @@ enum SwiftLanguageMode
 ## Topics
 
 ### Swift Language Modes
-- [SwiftLanguageMode.v6](swiftlanguagemode/v6.md)
+- [SwiftLanguageMode.v6](./swiftlanguagemode/v6.md)
   The identifier for the Swift 6 language version.
-- [SwiftLanguageMode.v5](swiftlanguagemode/v5.md)
+- [SwiftLanguageMode.v5](./swiftlanguagemode/v5.md)
   The identifier for the Swift 5 language version.
-- [SwiftLanguageMode.v4_2](swiftlanguagemode/v4_2.md)
+- [SwiftLanguageMode.v4_2](./swiftlanguagemode/v4_2.md)
   The identifier for the Swift 4.2 language version.
-- [SwiftLanguageMode.v4](swiftlanguagemode/v4.md)
+- [SwiftLanguageMode.v4](./swiftlanguagemode/v4.md)
   The identifier for the Swift 4 language version.
-- [SwiftLanguageMode.version(_:)](swiftlanguagemode/version(_:).md)
+- [SwiftLanguageMode.version(_:)](./swiftlanguagemode/version%28_%29.md)
   A user-defined value for the Swift version.
-- [SwiftLanguageMode.v3](swiftlanguagemode/v3.md)
+- [SwiftLanguageMode.v3](./swiftlanguagemode/v3.md)
   The identifier for the Swift 3 language version.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
 
 ## See Also
 
-- [enum CLanguageStandard](clanguagestandard.md)
+### Declaring Supported Languages
+- [enum CLanguageStandard](./clanguagestandard.md)
   The supported C language standard you use to compile C sources in the package.
-- [enum CXXLanguageStandard](cxxlanguagestandard.md)
+- [enum CXXLanguageStandard](./cxxlanguagestandard.md)
   The supported C++ language standard you use to compile C++ sources in the package.
-- [var swiftLanguageModes: [SwiftLanguageMode]?](package/swiftlanguagemodes.md)
+- [var swiftLanguageModes: [SwiftLanguageMode]?](./package/swiftlanguagemodes.md)
   The list of Swift language modes with which this package is compatible.
-- [var cLanguageStandard: CLanguageStandard?](package/clanguagestandard.md)
+- [var cLanguageStandard: CLanguageStandard?](./package/clanguagestandard.md)
   The C language standard to use for all C targets in this package.
-- [var cxxLanguageStandard: CXXLanguageStandard?](package/cxxlanguagestandard.md)
+- [var cxxLanguageStandard: CXXLanguageStandard?](./package/cxxlanguagestandard.md)
   The C++ language standard to use for all C++ targets in this package.
-- [typealias SwiftVersion](swiftversion.md)
+- [typealias SwiftVersion](./swiftversion.md)
   Type alias to previous name for backward source compatibility
-- [var swiftLanguageVersions: [SwiftVersion]?](package/swiftlanguageversions.md)
+- [var swiftLanguageVersions: [SwiftVersion]?](./package/swiftlanguageversions.md)
   Legacy property name, accesses value of `swiftLanguageModes`
 
 

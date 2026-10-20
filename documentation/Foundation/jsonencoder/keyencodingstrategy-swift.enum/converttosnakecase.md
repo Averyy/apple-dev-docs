@@ -1,7 +1,8 @@
 # JSONEncoder.KeyEncodingStrategy.convertToSnakeCase
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A key encoding strategy that converts camel-case keys to snake-case keys.
 
@@ -22,9 +23,9 @@ case convertToSnakeCase
 
 #### Discussion
 
-Camel-case and snake-case are two common approaches for combining words when naming parts of an API. The Swift [`API Design Guidelines`](https://developer.apple.comhttps://swift.org/documentation/api-design-guidelines/#general-conventions) recommend using camel-case names. Some JSON APIs adopt snake-case; use this strategy when you encounter such an API.
+Camel-case and snake-case are two common approaches for combining words when naming parts of an API. The Swift [API Design Guidelines](https://swift.org/documentation/api-design-guidelines/#general-conventions) recommend using camel-case names. Some JSON APIs adopt snake-case; use this strategy when you encounter such an API.
 
-This strategy uses [`uppercaseLetters`](characterset/uppercaseletters.md) and [`lowercaseLetters`](characterset/lowercaseletters.md) to determine the boundaries between words, and the [`system`](nslocale/system.md) locale when converting uppercase letters to lowercase letters.
+This strategy uses [`uppercaseLetters`](../../characterset/uppercaseletters.md) and [`lowercaseLetters`](../../characterset/lowercaseletters.md) to determine the boundaries between words, and the [`system`](../../nslocale/system.md) locale when converting uppercase letters to lowercase letters.
 
 This strategy follows these steps to convert key names to snake-case:
 
@@ -67,9 +68,11 @@ encodeAndPrint()
 
 ## See Also
 
-- [JSONDecoder.KeyDecodingStrategy.convertFromSnakeCase](jsondecoder/keydecodingstrategy-swift.enum/convertfromsnakecase.md)
+### Related Documentation
+- [JSONDecoder.KeyDecodingStrategy.convertFromSnakeCase](../../jsondecoder/keydecodingstrategy-swift.enum/convertfromsnakecase.md)
   A key decoding strategy that converts snake-case keys to camel-case keys.
-- [JSONEncoder.KeyEncodingStrategy.useDefaultKeys](jsonencoder/keyencodingstrategy-swift.enum/usedefaultkeys.md)
+### Built-in Encoding
+- [JSONEncoder.KeyEncodingStrategy.useDefaultKeys](./usedefaultkeys.md)
   A key encoding strategy that doesn’t change key names during encoding.
 
 

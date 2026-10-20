@@ -1,7 +1,8 @@
 # HistoricalComparison.snowfallAmount(_:)
 
 **Framework**: WeatherKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The comparison relates to the amount of snowfall at the location averaged over the past 30 days.
 

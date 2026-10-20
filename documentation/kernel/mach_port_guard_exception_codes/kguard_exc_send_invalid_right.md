@@ -1,14 +1,15 @@
 # kGUARD_EXC_SEND_INVALID_RIGHT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 kGUARD_EXC_SEND_INVALID_RIGHT = 1u << 18
 ```
 

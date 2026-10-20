@@ -1,7 +1,8 @@
 # tls_ciphersuite_group_t.ats
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.0+
@@ -16,6 +17,10 @@
 
 ```swift
 case ats
+```
+
+```c
+tls_ciphersuite_group_ats
 ```
 
 

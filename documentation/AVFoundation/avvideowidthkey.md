@@ -1,7 +1,8 @@
 # AVVideoWidthKey
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key to access the width of the video in pixels.
 
@@ -19,19 +20,24 @@ A key to access the width of the video in pixels.
 let AVVideoWidthKey: String
 ```
 
+```c
+extern NSString * const AVVideoWidthKey;
+```
+
 #### Discussion
 
 The corresponding value is an instance of `NSNumber`.
 
 ## See Also
 
-- [let AVVideoHeightKey: String](avvideoheightkey.md)
+### Geometry
+- [let AVVideoHeightKey: String](./avvideoheightkey.md)
   A key to access the height of the video in pixels.
-- [let AVVideoPixelAspectRatioKey: String](avvideopixelaspectratiokey.md)
+- [let AVVideoPixelAspectRatioKey: String](./avvideopixelaspectratiokey.md)
   A key to access the video’s pixel aspect ratio.
-- [let AVVideoPixelAspectRatioVerticalSpacingKey: String](avvideopixelaspectratioverticalspacingkey.md)
+- [let AVVideoPixelAspectRatioVerticalSpacingKey: String](./avvideopixelaspectratioverticalspacingkey.md)
   A key to access the pixel aspect ratio vertical spacing.
-- [let AVVideoPixelAspectRatioHorizontalSpacingKey: String](avvideopixelaspectratiohorizontalspacingkey.md)
+- [let AVVideoPixelAspectRatioHorizontalSpacingKey: String](./avvideopixelaspectratiohorizontalspacingkey.md)
   A key to access the pixel aspect ratio horizontal spacing.
 
 

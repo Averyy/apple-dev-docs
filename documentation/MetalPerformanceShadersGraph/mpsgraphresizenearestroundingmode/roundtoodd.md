@@ -1,7 +1,8 @@
 # MPSGraphResizeNearestRoundingMode.roundToOdd
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Rounds values to the nearest integer value, with 0.5f rounding toward the closest odd value.
 
@@ -17,6 +18,10 @@ Rounds values to the nearest integer value, with 0.5f rounding toward the closes
 
 ```swift
 case roundToOdd
+```
+
+```c
+MPSGraphResizeNearestRoundingModeRoundToOdd
 ```
 
 

@@ -1,7 +1,8 @@
 # minimumTolerance
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum tolerance allowed by the immediate scheduler.
 
@@ -22,7 +23,8 @@ var minimumTolerance: ImmediateScheduler.SchedulerTimeType.Stride { get }
 
 ## See Also
 
-- [var now: ImmediateScheduler.SchedulerTimeType](immediatescheduler/now.md)
+### Accessing scheduler time properties
+- [var now: ImmediateScheduler.SchedulerTimeType](./now.md)
   The immediate scheduler’s definition of the current moment in time.
 
 

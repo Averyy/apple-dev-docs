@@ -1,7 +1,8 @@
 # groupID
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio unit channel that handles the event.
 
@@ -19,19 +20,24 @@ The audio unit channel that handles the event.
 var groupID: UInt32 { get set }
 ```
 
+```objc
+@property (readwrite) UInt32 groupID;
+```
+
 #### Discussion
 
-The valid range of values are between `0` and `15`, but can be higher if the [`AVMusicTrack`](avmusictrack.md) destination audio unit supports more channels.
+The valid range of values are between `0` and `15`, but can be higher if the [`AVMusicTrack`](../avmusictrack.md) destination audio unit supports more channels.
 
 ## See Also
 
-- [var midiNote: Float](avextendednoteonevent/midinote.md)
+### Configuring a note-on event
+- [var midiNote: Float](./midinote.md)
   The MIDI note number.
-- [var velocity: Float](avextendednoteonevent/velocity.md)
+- [var velocity: Float](./velocity.md)
   The MDI velocity.
-- [var instrumentID: UInt32](avextendednoteonevent/instrumentid.md)
+- [var instrumentID: UInt32](./instrumentid.md)
   The instrument identifier.
-- [var duration: AVMusicTimeStamp](avextendednoteonevent/duration.md)
+- [var duration: AVMusicTimeStamp](./duration.md)
   The duration of the event, in beats.
 
 

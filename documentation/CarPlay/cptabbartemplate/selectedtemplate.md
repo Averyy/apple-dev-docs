@@ -1,7 +1,8 @@
 # selectedTemplate
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently selected template in the tab bar.
 
@@ -14,6 +15,10 @@ The currently selected template in the tab bar.
 
 ```swift
 var selectedTemplate: CPTemplate? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) CPTemplate * selectedTemplate;
 ```
 
 

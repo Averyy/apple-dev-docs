@@ -1,7 +1,8 @@
 # sourceName
 
 **Framework**: Accessory Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A display name for the bundle that sent the notification.
 
@@ -16,11 +17,12 @@ let sourceName: String
 
 ## See Also
 
-- [let identifier: AccessoryNotification.Identifier](accessorynotification/identifier-swift.property.md)
+### Identifying and grouping notifications
+- [let identifier: AccessoryNotification.Identifier](./identifier-swift.property.md)
   A structure that uniquely identifies the notification.
-- [AccessoryNotification.Identifier](accessorynotification/identifier-swift.struct.md)
+- [AccessoryNotification.Identifier](./identifier-swift.struct.md)
   A structure that uniquely identifies a notification.
-- [let threadIdentifier: String?](accessorynotification/threadidentifier.md)
+- [let threadIdentifier: String?](./threadidentifier.md)
   An identifier that groups notifications that belong to the same thread.
 
 

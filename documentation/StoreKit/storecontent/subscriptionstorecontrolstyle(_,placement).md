@@ -1,7 +1,8 @@
 # subscriptionStoreControlStyle(_:placement:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -21,10 +22,11 @@ func subscriptionStoreControlStyle<S>(_ style: S, placement: S.Placement = .auto
 
 ## See Also
 
-- [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some StoreContent](storecontent/subscriptionstoreoptiongroupstyle(_:).md)
-- [func subscriptionStoreButtonLabel(SubscriptionStoreButtonLabel) -> some StoreContent](storecontent/subscriptionstorebuttonlabel(_:).md)
-- [func storeButton(Visibility, for: StoreButtonKind...) -> some StoreContent](storecontent/storebutton(_:for:).md)
-- [func productDescription(Visibility) -> some StoreContent](storecontent/productdescription(_:).md)
+### Configuring store content
+- [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some StoreContent](./subscriptionstoreoptiongroupstyle%28_%29.md)
+- [func subscriptionStoreButtonLabel(SubscriptionStoreButtonLabel) -> some StoreContent](./subscriptionstorebuttonlabel%28_%29.md)
+- [func storeButton(Visibility, for: StoreButtonKind...) -> some StoreContent](./storebutton%28_,for%29.md)
+- [func productDescription(Visibility) -> some StoreContent](./productdescription%28_%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # renameColumn(named:to:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the name of an existing column.
 

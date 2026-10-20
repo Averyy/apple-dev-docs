@@ -1,34 +1,37 @@
 # SFSafariWebsiteAccess
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 The webpages a Safari extension can access.
 
 **Availability**:
 - macOS 10.11.5+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `SFSafariWebsiteAccess`
+- **Type**: dictionary
 
 ## Topics
 
 ### Access Configuration
-- [Allowed Domains](information-property-list/nsextension/sfsafariwebsiteaccess/allowed-domains.md)
+- [Allowed Domains](./sfsafariwebsiteaccess/allowed-domains.md)
   The domains that a Safari extension is allowed access to.
-- [Level](information-property-list/nsextension/sfsafariwebsiteaccess/level.md)
+- [Level](./sfsafariwebsiteaccess/level.md)
   The level of a Safari extension’s website access.
 
 ## See Also
 
-- [SFSafariContentScript](information-property-list/nsextension/sfsafaricontentscript.md)
+### SafariServices
+- [SFSafariContentScript](./sfsafaricontentscript.md)
   The content scripts for a Safari extension.
-- [SFSafariContextMenu](information-property-list/nsextension/sfsafaricontextmenu.md)
+- [SFSafariContextMenu](./sfsafaricontextmenu.md)
   The context menu items for a Safari extension.
-- [SFSafariStyleSheet](information-property-list/nsextension/sfsafaristylesheet.md)
+- [SFSafariStyleSheet](./sfsafaristylesheet.md)
   The style sheet for a Safari extension.
-- [SFSafariToolbarItem](information-property-list/nsextension/sfsafaritoolbaritem.md)
+- [SFSafariToolbarItem](./sfsafaritoolbaritem.md)
   The items to add to the toolbar for a Safari extension.
 
 

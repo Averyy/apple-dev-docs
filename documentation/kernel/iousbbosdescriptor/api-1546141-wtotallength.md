@@ -1,7 +1,8 @@
 # wTotalLength
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The length of this descriptor and all of its subdescriptors.
 
@@ -10,17 +11,18 @@ The length of this descriptor and all of its subdescriptors.
 
 ## Declaration
 
-```swift
+```c
 uint16_t wTotalLength;
 ```
 
 ## See Also
 
-- [bLength](iousbbosdescriptor/1545985-blength.md)
+### Getting the Properties
+- [bLength](./api-1545985-blength.md)
   The size of the descriptor.
-- [bDescriptorType](iousbbosdescriptor/1546245-bdescriptortype.md)
+- [bDescriptorType](./api-1546245-bdescriptortype.md)
   The type of the descriptor.
-- [bNumDeviceCaps](iousbbosdescriptor/1546040-bnumdevicecaps.md)
+- [bNumDeviceCaps](./api-1546040-bnumdevicecaps.md)
   The number of separate device capability descriptors in the binary object store.
 
 

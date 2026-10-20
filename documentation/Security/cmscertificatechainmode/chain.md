@@ -1,7 +1,8 @@
 # CMSCertificateChainMode.chain
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Include the signer certificate chain up to but not including the root certificate.
 
@@ -13,6 +14,10 @@ Include the signer certificate chain up to but not including the root certificat
 
 ```swift
 case chain
+```
+
+```c
+kCMSCertificateChain
 ```
 
 

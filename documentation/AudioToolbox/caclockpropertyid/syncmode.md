@@ -1,10 +1,11 @@
 # CAClockPropertyID.syncMode
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,20 +13,25 @@
 case syncMode
 ```
 
+```c
+kCAClockProperty_SyncMode
+```
+
 ## See Also
 
-- [CAClockPropertyID.internalTimebase](caclockpropertyid/internaltimebase.md)
-- [CAClockPropertyID.midiClockDestinations](caclockpropertyid/midiclockdestinations.md)
-- [CAClockPropertyID.mtcDestinations](caclockpropertyid/mtcdestinations.md)
-- [CAClockPropertyID.mtcFreewheelTime](caclockpropertyid/mtcfreewheeltime.md)
-- [CAClockPropertyID.meterTrack](caclockpropertyid/metertrack.md)
-- [CAClockPropertyID.name](caclockpropertyid/name.md)
-- [CAClockPropertyID.smpteFormat](caclockpropertyid/smpteformat.md)
-- [CAClockPropertyID.smpteOffset](caclockpropertyid/smpteoffset.md)
-- [CAClockPropertyID.sendMIDISPP](caclockpropertyid/sendmidispp.md)
-- [CAClockPropertyID.syncSource](caclockpropertyid/syncsource.md)
-- [CAClockPropertyID.tempoMap](caclockpropertyid/tempomap.md)
-- [CAClockPropertyID.timebaseSource](caclockpropertyid/timebasesource.md)
+### Constants
+- [CAClockPropertyID.internalTimebase](./internaltimebase.md)
+- [CAClockPropertyID.midiClockDestinations](./midiclockdestinations.md)
+- [CAClockPropertyID.mtcDestinations](./mtcdestinations.md)
+- [CAClockPropertyID.mtcFreewheelTime](./mtcfreewheeltime.md)
+- [CAClockPropertyID.meterTrack](./metertrack.md)
+- [CAClockPropertyID.name](./name.md)
+- [CAClockPropertyID.smpteFormat](./smpteformat.md)
+- [CAClockPropertyID.smpteOffset](./smpteoffset.md)
+- [CAClockPropertyID.sendMIDISPP](./sendmidispp.md)
+- [CAClockPropertyID.syncSource](./syncsource.md)
+- [CAClockPropertyID.tempoMap](./tempomap.md)
+- [CAClockPropertyID.timebaseSource](./timebasesource.md)
 
 
 ---

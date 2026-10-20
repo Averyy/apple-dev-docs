@@ -1,7 +1,8 @@
 # last
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The last element of the collection.
 
@@ -32,7 +33,7 @@ if let lastNumber = numbers.last {
 // Prints "50"
 ```
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

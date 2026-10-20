@@ -1,7 +1,8 @@
 # color
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color to use for the separators of the item the configuration applies to.
 
@@ -9,7 +10,7 @@ The color to use for the separators of the item the configuration applies to.
 - iOS 14.5+
 - iPadOS 14.5+
 - Mac Catalyst 14.5+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,10 @@ var color: UIColor { get set }
 
 ## See Also
 
-- [var multipleSelectionColor: UIColor](uilistseparatorconfiguration-swift.struct/multipleselectioncolor.md)
+### Configuring separator appearance
+- [var multipleSelectionColor: UIColor](./multipleselectioncolor.md)
   The color to use for the separators of the item the configuration applies to when the item is in a multiple-selection group.
-- [var visualEffect: UIVisualEffect?](uilistseparatorconfiguration-swift.struct/visualeffect.md)
+- [var visualEffect: UIVisualEffect?](./visualeffect.md)
   The visual effect to use for the separators of the item the configuration applies to.
 
 

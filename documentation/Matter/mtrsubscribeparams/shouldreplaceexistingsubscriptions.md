@@ -1,7 +1,8 @@
 # shouldReplaceExistingSubscriptions
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 var shouldReplaceExistingSubscriptions: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign, getter=shouldReplaceExistingSubscriptions) BOOL replaceExistingSubscriptions;
 ```
 
 

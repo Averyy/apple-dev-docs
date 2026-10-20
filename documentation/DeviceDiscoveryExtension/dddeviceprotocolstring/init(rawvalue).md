@@ -1,16 +1,17 @@
 # init(rawValue:)
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a string for the manner in which an app interacts with a device.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # CMBufferQueueSetValidationHandler(_:_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 A validation handler for the queue to call before enqueuing buffers.
 
@@ -20,13 +21,18 @@ A validation handler for the queue to call before enqueuing buffers.
 func CMBufferQueueSetValidationHandler(_ queue: CMBufferQueue, _ handler: @escaping CMBufferValidationHandler) -> OSStatus
 ```
 
+```c
+extern OSStatus CMBufferQueueSetValidationHandler(CMBufferQueueRef queue, CMBufferValidationHandler handler);
+```
+
 ## See Also
 
-- [typealias CMBufferValidationHandler](cmbuffervalidationhandler.md)
+### Validating a Queue
+- [typealias CMBufferValidationHandler](./cmbuffervalidationhandler.md)
   A type alias for a handler that tests whether a buffer is in a valid state to add to a queue.
-- [func CMBufferQueueSetValidationCallback(CMBufferQueue, callback: CMBufferValidationCallback, refcon: UnsafeMutableRawPointer?) -> OSStatus](cmbufferqueuesetvalidationcallback(_:callback:refcon:).md)
+- [func CMBufferQueueSetValidationCallback(CMBufferQueue, callback: CMBufferValidationCallback, refcon: UnsafeMutableRawPointer?) -> OSStatus](./cmbufferqueuesetvalidationcallback%28_,callback,refcon%29.md)
   A validation callback for the queue to call before enqueuing buffers.
-- [typealias CMBufferValidationCallback](cmbuffervalidationcallback.md)
+- [typealias CMBufferValidationCallback](./cmbuffervalidationcallback.md)
   A type alias for a callback that tests whether a buffer is in a valid state to add to a queue.
 
 

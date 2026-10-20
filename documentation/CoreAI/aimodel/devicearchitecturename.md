@@ -1,7 +1,8 @@
 # deviceArchitectureName
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Core AI architecture name of the current device.
 
@@ -20,7 +21,7 @@ static var deviceArchitectureName: String { get }
 
 ## Mentions
 
-- [Compiling Core AI models ahead of time](compiling-core-ai-models-ahead-of-time.md)
+- [Compiling Core AI models ahead of time](../compiling-core-ai-models-ahead-of-time.md)
 
 #### Discussion
 
@@ -28,7 +29,8 @@ When compiling model assets ahead of time with `xcrun coreai-build compile`, the
 
 ## See Also
 
-- [var bookmarkData: Data](aimodel/bookmarkdata.md)
+### Inspecting a model
+- [var bookmarkData: Data](./bookmarkdata.md)
   Create a bookmark for this AIModel’s cached specialized asset entry as serialized data.
 
 

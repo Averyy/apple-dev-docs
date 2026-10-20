@@ -1,7 +1,8 @@
 # init(title:message:preferredStyle:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a view controller for displaying an alert.
 
@@ -9,7 +10,7 @@ Creates and returns a view controller for displaying an alert.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,17 @@ Creates and returns a view controller for displaying an alert.
 convenience init(title: String?, message: String?, preferredStyle: UIAlertController.Style)
 ```
 
+```objc
++ (instancetype) alertControllerWithTitle:(NSString *) title message:(NSString *) message preferredStyle:(UIAlertControllerStyle) preferredStyle;
+```
+
 #### Return Value
 
 An initialized alert controller object.
 
 #### Discussion
 
-After creating the alert controller, configure any actions that you want people to be able to perform by calling the [`addAction(_:)`](uialertcontroller/addaction(_:).md) method one or more times. When specifying a preferred style of [`UIAlertController.Style.alert`](uialertcontroller/style/alert.md), you may also configure one or more text fields to display in addition to the actions.
+After creating the alert controller, configure any actions that you want people to be able to perform by calling the [`addAction(_:)`](./addaction%28_%29.md) method one or more times. When specifying a preferred style of [`UIAlertController.Style.alert`](./style/alert.md), you may also configure one or more text fields to display in addition to the actions.
 
 ## Parameters
 

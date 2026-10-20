@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the receiver.
 
@@ -20,13 +21,18 @@ The name of the receiver.
 var name: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * name;
+```
+
 ## See Also
 
-- [var threadDictionary: NSMutableDictionary](thread/threaddictionary.md)
+### Working with Thread Properties
+- [var threadDictionary: NSMutableDictionary](./threaddictionary.md)
   The thread object’s dictionary.
-- [let NSAssertionHandlerKey: String](nsassertionhandlerkey.md)
+- [let NSAssertionHandlerKey: String](../nsassertionhandlerkey.md)
   A key with a corresponding value in the thread dictionary.
-- [var stackSize: Int](thread/stacksize.md)
+- [var stackSize: Int](./stacksize.md)
   The stack size of the receiver, in bytes.
 
 

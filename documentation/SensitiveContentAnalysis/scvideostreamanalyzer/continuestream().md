@@ -1,7 +1,8 @@
 # continueStream()
 
 **Framework**: Sensitive Content Analysis  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates that your app is ready to resume video stream analysis.
 
@@ -16,13 +17,18 @@ Indicates that your app is ready to resume video stream analysis.
 func continueStream()
 ```
 
+```objc
+- (void) continueStream;
+```
+
 #### Discussion
 
 When the framework detects sensitive content in the video stream, it pauses analysis and begins censoring the stream’s video frames. Call this method to resume analysis and stop censoring video frames when your app is ready to show the stream again.
 
 ## See Also
 
-- [var analysis: SCSensitivityAnalysis?](scvideostreamanalyzer/analysis.md)
+### Responding to sensitive content
+- [var analysis: SCSensitivityAnalysis?](./analysis.md)
   The results of the first detected sensitive video frame.
 
 

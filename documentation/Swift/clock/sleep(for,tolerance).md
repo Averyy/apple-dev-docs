@@ -1,7 +1,8 @@
 # sleep(for:tolerance:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Suspends for the given duration.
 

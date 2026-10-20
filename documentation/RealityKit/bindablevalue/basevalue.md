@@ -1,7 +1,8 @@
 # baseValue
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that reflects the state of the animated property before or after an animation.
 
@@ -11,7 +12,7 @@ A value that reflects the state of the animated property before or after an anim
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ var baseValue: T
 
 ## See Also
 
-- [var value: T](bindablevalue/value.md)
+### Accessing the value
+- [var value: T](./value.md)
   The main accessor for the bind value.
-- [var animatedValue: T?](bindablevalue/animatedvalue.md)
+- [var animatedValue: T?](./animatedvalue.md)
   A value that represents the state of the animated property as an animation progresses.
 
 

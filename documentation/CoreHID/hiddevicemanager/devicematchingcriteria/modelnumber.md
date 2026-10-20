@@ -1,7 +1,8 @@
 # modelNumber
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The model number for the device.
 

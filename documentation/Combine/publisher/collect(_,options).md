@@ -1,7 +1,8 @@
 # collect(_:options:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Collects elements by a given time-grouping strategy, and emits a single array of the collection.
 
@@ -22,7 +23,7 @@ func collect<S>(_ strategy: Publishers.TimeGroupingStrategy<S>, options: S.Sched
 
 ## Mentions
 
-- [Processing Published Elements with Subscribers](processing-published-elements-with-subscribers.md)
+- [Processing Published Elements with Subscribers](../processing-published-elements-with-subscribers.md)
 
 #### Return Value
 
@@ -30,11 +31,11 @@ A publisher that collects elements by a given strategy, and emits a single array
 
 #### Discussion
 
-Use [`collect(_:options:)`](publisher/collect(_:options:).md) to emit arrays of elements on a schedule specified by a [`Scheduler`](scheduler.md) and `Stride` that you provide. At the end of each scheduled interval, the publisher sends an array that contains the items it collected. If the upstream publisher finishes before filling the buffer, the publisher sends an array that contains items it received. This may be fewer than the number of elements specified in the requested `Stride`.
+Use [`collect(_:options:)`](./collect%28_,options%29.md) to emit arrays of elements on a schedule specified by a [`Scheduler`](../scheduler.md) and `Stride` that you provide. At the end of each scheduled interval, the publisher sends an array that contains the items it collected. If the upstream publisher finishes before filling the buffer, the publisher sends an array that contains items it received. This may be fewer than the number of elements specified in the requested `Stride`.
 
 If the upstream publisher fails with an error, this publisher forwards the error to the downstream receiver instead of sending its output.
 
-The example above collects timestamps generated on a one-second [`Timer`](https://developer.apple.com/documentation/foundation/timer) in groups (`Stride`) of five.
+The example above collects timestamps generated on a one-second [`Timer`](../../Foundation/timer.md) in groups (`Stride`) of five.
 
 ```swift
 let sub = Timer.publish(every: 1, on: .main, in: .default)
@@ -56,17 +57,18 @@ let sub = Timer.publish(every: 1, on: .main, in: .default)
 
 ## See Also
 
-- [func collect() -> Publishers.Collect<Self>](publisher/collect.md)
+### Reducing elements
+- [func collect() -> Publishers.Collect<Self>](./collect%28%29.md)
   Collects all received elements, and emits a single array of the collection when the upstream publisher finishes.
-- [func collect(Int) -> Publishers.CollectByCount<Self>](publisher/collect(_:).md)
+- [func collect(Int) -> Publishers.CollectByCount<Self>](./collect%28_%29.md)
   Collects up to the specified number of elements, and then emits a single array of the collection.
-- [Publishers.TimeGroupingStrategy](publishers/timegroupingstrategy.md)
+- [Publishers.TimeGroupingStrategy](../publishers/timegroupingstrategy.md)
   A strategy for collecting received elements.
-- [func ignoreOutput() -> Publishers.IgnoreOutput<Self>](publisher/ignoreoutput.md)
+- [func ignoreOutput() -> Publishers.IgnoreOutput<Self>](./ignoreoutput%28%29.md)
   Ignores all upstream elements, but passes along the upstream publisher’s completion state (finished or failed).
-- [func reduce<T>(T, (T, Self.Output) -> T) -> Publishers.Reduce<Self, T>](publisher/reduce(_:_:).md)
+- [func reduce<T>(T, (T, Self.Output) -> T) -> Publishers.Reduce<Self, T>](./reduce%28_,_%29.md)
   Applies a closure that collects each element of a stream and publishes a final result upon completion.
-- [func tryReduce<T>(T, (T, Self.Output) throws -> T) -> Publishers.TryReduce<Self, T>](publisher/tryreduce(_:_:).md)
+- [func tryReduce<T>(T, (T, Self.Output) throws -> T) -> Publishers.TryReduce<Self, T>](./tryreduce%28_,_%29.md)
   Applies an error-throwing closure that collects each element of a stream and publishes a final result upon completion.
 
 

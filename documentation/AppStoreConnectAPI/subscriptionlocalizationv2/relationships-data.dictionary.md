@@ -1,7 +1,8 @@
 # SubscriptionLocalizationV2.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionLocalizationV2.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionLocalizationV2.Relationships.Version](subscriptionlocalizationv2/relationships-data.dictionary/version-data.dictionary.md)
+- [object SubscriptionLocalizationV2.Relationships.Version](./relationships-data.dictionary/version-data.dictionary.md)
 
 ## Properties
 
@@ -25,7 +26,8 @@ object SubscriptionLocalizationV2.Relationships
 
 ## See Also
 
-- [object SubscriptionLocalizationV2.Attributes](subscriptionlocalizationv2/attributes-data.dictionary.md)
+### Objects and types
+- [object SubscriptionLocalizationV2.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a SubscriptionLocalizationV2 resource.
 
 

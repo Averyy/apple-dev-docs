@@ -1,7 +1,8 @@
 # BetaAppClipInvocationCreateRequest.Data.Relationships.BuildBundle
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationship to the Build Bundles resource you set with the request that creates a Beta App Clip Invocations resource.
 
@@ -10,14 +11,14 @@ The relationship to the Build Bundles resource you set with the request that cre
 
 ## Declaration
 
-```swift
+```
 object BetaAppClipInvocationCreateRequest.Data.Relationships.BuildBundle
 ```
 
 ## Topics
 
 ### Objects
-- [object BetaAppClipInvocationCreateRequest.Data.Relationships.BuildBundle.Data](betaappclipinvocationcreaterequest/data-data.dictionary/relationships-data.dictionary/buildbundle-data.dictionary/data-data.dictionary.md)
+- [object BetaAppClipInvocationCreateRequest.Data.Relationships.BuildBundle.Data](./buildbundle-data.dictionary/data-data.dictionary.md)
   The type and ID of the Build Bundles resource that you’re relating with the Beta App Clip Invocations resource you’re creating.
 
 ## Properties
@@ -26,7 +27,8 @@ object BetaAppClipInvocationCreateRequest.Data.Relationships.BuildBundle
 
 ## See Also
 
-- [object BetaAppClipInvocationCreateRequest.Data.Relationships.BetaAppClipInvocationLocalizations](betaappclipinvocationcreaterequest/data-data.dictionary/relationships-data.dictionary/betaappclipinvocationlocalizations-data.dictionary.md)
+### Objects
+- [object BetaAppClipInvocationCreateRequest.Data.Relationships.BetaAppClipInvocationLocalizations](./betaappclipinvocationlocalizations-data.dictionary.md)
   The relationship to the Beta App Clip Invocation Localizations resource you set with the request that creates a Beta App Clip Invocations resource.
 
 

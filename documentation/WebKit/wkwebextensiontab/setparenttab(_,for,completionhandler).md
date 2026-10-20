@@ -1,7 +1,8 @@
 # setParentTab(_:for:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to set or clear the parent tab for the tab.
 
@@ -15,7 +16,15 @@ Called to set or clear the parent tab for the tab.
 ## Declaration
 
 ```swift
+optional func setParentTab(_ parentTab: (any WKWebExtensionTab)?, for context: WKWebExtensionContext, completionHandler: @escaping ((any Error)?) -> Void)
+```
+
+```swift
 optional func setParentTab(_ parentTab: (any WKWebExtensionTab)?, for context: WKWebExtensionContext) async throws
+```
+
+```objc
+- (void) setParentTab:(id<WKWebExtensionTab>) parentTab forWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -30,7 +39,8 @@ No action is performed if not implemented.
 
 ## See Also
 
-- [func parentTab(for: WKWebExtensionContext) -> (any WKWebExtensionTab)?](wkwebextensiontab/parenttab(for:).md)
+### Related Documentation
+- [func parentTab(for: WKWebExtensionContext) -> (any WKWebExtensionTab)?](./parenttab%28for%29.md)
   Called when the parent tab for the tab is needed.
 
 

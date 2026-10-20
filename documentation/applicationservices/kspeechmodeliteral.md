@@ -1,9 +1,10 @@
 # kSpeechModeLiteral
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-When the speech channel is in text-processing mode, indicates that characters and digits are spoken literally (for example, “cat” is spoken as “C-A-T” and “12” is spoken as "one, two"). Use this value with [`kSpeechCharacterModeProperty`](kspeechcharactermodeproperty.md) and [`kSpeechNumberModeProperty`](kspeechnumbermodeproperty.md).
+When the speech channel is in text-processing mode, indicates that characters and digits are spoken literally (for example, “cat” is spoken as “C-A-T” and “12” is spoken as "one, two"). Use this value with [`kSpeechCharacterModeProperty`](./kspeechcharactermodeproperty.md) and [`kSpeechNumberModeProperty`](./kspeechnumbermodeproperty.md).
 
 **Availability**:
 - macOS 10.5+
@@ -12,6 +13,10 @@ When the speech channel is in text-processing mode, indicates that characters an
 
 ```swift
 let kSpeechModeLiteral: CFString
+```
+
+```c
+const CFStringRef kSpeechModeLiteral;
 ```
 
 

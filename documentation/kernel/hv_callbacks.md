@@ -1,14 +1,15 @@
 # hv_callbacks
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 hv_callbacks_t hv_callbacks;
 ```
 

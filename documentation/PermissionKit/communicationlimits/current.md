@@ -1,7 +1,8 @@
 # current
 
 **Framework**: PermissionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The singleton app instance.
 

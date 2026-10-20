@@ -1,7 +1,8 @@
 # addTorque(_:relativeTo:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies a torque to the physics body at its center of mass.
 
@@ -11,7 +12,7 @@ Applies a torque to the physics body at its center of mass.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,7 +23,7 @@ Applies a torque to the physics body at its center of mass.
 
 #### Discussion
 
-The physics simulator applies the added torque until the end of the frame interval. To continue exerting the torque after that time, add the torque again with another call to the method. Handle the [`SceneEvents.Update`](sceneevents/update.md) event to receive an indication of when the frame interval ends. For an app that renders at 60 frames per second (fps), this event occurs about once per 16 milliseconds.
+The physics simulator applies the added torque until the end of the frame interval. To continue exerting the torque after that time, add the torque again with another call to the method. Handle the [`SceneEvents.Update`](../sceneevents/update.md) event to receive an indication of when the frame interval ends. For an app that renders at 60 frames per second (fps), this event occurs about once per 16 milliseconds.
 
 ## Parameters
 
@@ -31,11 +32,12 @@ The physics simulator applies the added torque until the end of the frame interv
 
 ## See Also
 
-- [func addForce(SIMD3<Float>, relativeTo: Entity?)](hasphysicsbody/addforce(_:relativeto:).md)
+### Adding and clearing forces
+- [func addForce(SIMD3<Float>, relativeTo: Entity?)](./addforce%28_,relativeto%29.md)
   Applies a force to the physics body at its center of mass.
-- [func addForce(SIMD3<Float>, at: SIMD3<Float>, relativeTo: Entity?)](hasphysicsbody/addforce(_:at:relativeto:).md)
+- [func addForce(SIMD3<Float>, at: SIMD3<Float>, relativeTo: Entity?)](./addforce%28_,at,relativeto%29.md)
   Applies a force to the physics body at the specified position.
-- [func clearForcesAndTorques()](hasphysicsbody/clearforcesandtorques.md)
+- [func clearForcesAndTorques()](./clearforcesandtorques%28%29.md)
   Clears all forces previously added to the physics body.
 
 

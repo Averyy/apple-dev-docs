@@ -1,19 +1,21 @@
 # Quartz Data Types
 
-**Framework**: Quartz
+**Framework**: Quartz  
+**Role**: API Collection
 
 ## Topics
 
 ### Data Types
-- [typealias QCPlugInBufferReleaseCallback](qcpluginbufferreleasecallback.md)
-- [typealias QCPlugInTextureReleaseCallback](qcplugintexturereleasecallback.md)
+- [typealias QCPlugInBufferReleaseCallback](./qcpluginbufferreleasecallback.md)
+- [typealias QCPlugInTextureReleaseCallback](./qcplugintexturereleasecallback.md)
 
 ## See Also
 
-- [Quartz Constants](quartz-constants.md)
-- [Quartz Enumerations](quartz-enumerations.md)
-- [Quartz Composer Constants](quartz-composer-constants.md)
-- [Quartz Composer Enumerations](quartz-composer-enumerations.md)
+### Reference
+- [Quartz Constants](./quartz-constants.md)
+- [Quartz Enumerations](./quartz-enumerations.md)
+- [Quartz Composer Constants](./quartz-composer-constants.md)
+- [Quartz Composer Enumerations](./quartz-composer-enumerations.md)
 
 
 ---

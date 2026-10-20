@@ -1,7 +1,8 @@
 # texture
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The material’s clearcoat normal map.
 

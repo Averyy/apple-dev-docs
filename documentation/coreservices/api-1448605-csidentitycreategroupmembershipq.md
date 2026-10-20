@@ -1,7 +1,8 @@
 # CSIdentityCreateGroupMembershipQuery(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func CSIdentityCreateGroupMembershipQuery(_ allocator: CFAllocator!, _ group: CSIdentity!) -> Unmanaged<CSIdentityQuery>!
+```
+
+```c
+CSIdentityQueryRef CSIdentityCreateGroupMembershipQuery(CFAllocatorRef allocator, CSIdentityRef group);
 ```
 
 

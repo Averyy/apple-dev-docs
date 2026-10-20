@@ -1,7 +1,8 @@
 # SecPreferencesDomain.system
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the system or daemon preference domain preferences.
 
@@ -13,6 +14,10 @@ Indicates the system or daemon preference domain preferences.
 
 ```swift
 case system
+```
+
+```c
+kSecPreferencesDomainSystem
 ```
 
 

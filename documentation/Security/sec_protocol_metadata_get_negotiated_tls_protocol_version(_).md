@@ -1,7 +1,8 @@
 # sec_protocol_metadata_get_negotiated_tls_protocol_version(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 13.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func sec_protocol_metadata_get_negotiated_tls_protocol_version(_ metadata: sec_protocol_metadata_t) -> tls_protocol_version_t
+```
+
+```c
+tls_protocol_version_t sec_protocol_metadata_get_negotiated_tls_protocol_version(sec_protocol_metadata_t metadata);
 ```
 
 #### Return Value

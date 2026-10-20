@@ -1,7 +1,8 @@
 # isPreview
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this content corresponds to a subscription video preview.
 

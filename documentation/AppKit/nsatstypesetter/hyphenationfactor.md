@@ -1,12 +1,13 @@
 # hyphenationFactor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The threshold controlling when hyphenation is attempted.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The threshold controlling when hyphenation is attempted.
 var hyphenationFactor: Float { get set }
 ```
 
+```objc
+@property float hyphenationFactor;
+```
+
 ## See Also
 
-- [var layoutManager: NSLayoutManager?](nsatstypesetter/layoutmanager.md)
+### Accessing the layout manager
+- [var layoutManager: NSLayoutManager?](./layoutmanager.md)
   The layout manager for the text being typeset.
-- [var usesFontLeading: Bool](nsatstypesetter/usesfontleading.md)
+- [var usesFontLeading: Bool](./usesfontleading.md)
   A Boolean value controlling whether the typesetter uses the leading (or line gap) value specified in the font metric information.
-- [var typesetterBehavior: NSLayoutManager.TypesetterBehavior](nsatstypesetter/typesetterbehavior.md)
+- [var typesetterBehavior: NSLayoutManager.TypesetterBehavior](./typesetterbehavior.md)
   The current typesetter behavior value.
-- [var bidiProcessingEnabled: Bool](nsatstypesetter/bidiprocessingenabled.md)
+- [var bidiProcessingEnabled: Bool](./bidiprocessingenabled.md)
   A Boolean value controlling whether the typesetter performs bidirectional text processing.
 
 

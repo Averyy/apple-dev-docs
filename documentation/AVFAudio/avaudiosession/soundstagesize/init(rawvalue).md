@@ -1,10 +1,11 @@
 # init(rawValue:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

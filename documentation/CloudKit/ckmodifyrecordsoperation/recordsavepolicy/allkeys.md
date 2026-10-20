@@ -1,7 +1,8 @@
 # CKModifyRecordsOperation.RecordSavePolicy.allKeys
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A policy that instructs CloudKit to save all keys of a record, even those without changes.
 
@@ -10,7 +11,7 @@ A policy that instructs CloudKit to save all keys of a record, even those withou
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,17 +21,22 @@ A policy that instructs CloudKit to save all keys of a record, even those withou
 case allKeys
 ```
 
+```c
+CKRecordSaveAllKeys
+```
+
 #### Discussion
 
-> ❗ **Important**: This policy doesn’t compare record change tags. To only save changes to the most recent version of a record, use [`CKModifyRecordsOperation.RecordSavePolicy.ifServerRecordUnchanged`](ckmodifyrecordsoperation/recordsavepolicy/ifserverrecordunchanged.md) instead.
+> ❗ **Important**: This policy doesn’t compare record change tags. To only save changes to the most recent version of a record, use [`CKModifyRecordsOperation.RecordSavePolicy.ifServerRecordUnchanged`](./ifserverrecordunchanged.md) instead.
 
-This policy causes CloudKit to overwrite any existing values on the server. It’s possible for a server record to contain keys that aren’t present locally. Another client might add keys to the record after you fetch it. Also, if you use the [`desiredKeys`](ckfetchrecordsoperation/desiredkeys-34l1l.md) property to request a subset of keys during a fetch operation, saving that same record modifies only those keys that you include in the fetch and any keys you add to the record after that.
+This policy causes CloudKit to overwrite any existing values on the server. It’s possible for a server record to contain keys that aren’t present locally. Another client might add keys to the record after you fetch it. Also, if you use the [`desiredKeys`](../../ckfetchrecordsoperation/desiredkeys-34l1l.md) property to request a subset of keys during a fetch operation, saving that same record modifies only those keys that you include in the fetch and any keys you add to the record after that.
 
 ## See Also
 
-- [CKModifyRecordsOperation.RecordSavePolicy.ifServerRecordUnchanged](ckmodifyrecordsoperation/recordsavepolicy/ifserverrecordunchanged.md)
+### Save Policies
+- [CKModifyRecordsOperation.RecordSavePolicy.ifServerRecordUnchanged](./ifserverrecordunchanged.md)
   A policy that instructs CloudKit to only proceed if the record’s change tag matches that of the server’s copy.
-- [CKModifyRecordsOperation.RecordSavePolicy.changedKeys](ckmodifyrecordsoperation/recordsavepolicy/changedkeys.md)
+- [CKModifyRecordsOperation.RecordSavePolicy.changedKeys](./changedkeys.md)
   A policy that instructs CloudKit to save only the fields of a record that contain changes.
 
 

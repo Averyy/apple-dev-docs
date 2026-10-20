@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The angle of the pattern.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The angle of the pattern.
 var angle: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float angle;
+```
+
 ## See Also
 
-- [var center: CGPoint](cihatchedscreen/center.md)
+### Instance Properties
+- [var center: CGPoint](./center.md)
   The x and y position to use as the center of the hatched screen pattern.
-- [var inputImage: CIImage?](cihatchedscreen/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var sharpness: Float](cihatchedscreen/sharpness.md)
+- [var sharpness: Float](./sharpness.md)
   The amount of sharpening to apply.
-- [var width: Float](cihatchedscreen/width.md)
+- [var width: Float](./width.md)
   The distance between lines in the pattern.
 
 

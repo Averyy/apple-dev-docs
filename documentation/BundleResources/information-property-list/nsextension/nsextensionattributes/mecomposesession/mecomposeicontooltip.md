@@ -1,18 +1,21 @@
 # MEComposeIconToolTip
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 **Availability**:
 - macOS 12.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `MEComposeIconToolTip`
+- **Type**: string
 
 ## See Also
 
-- [MEComposeIcon](information-property-list/nsextension/nsextensionattributes/mecomposesession/mecomposeicon.md)
+### Property List Keys
+- [MEComposeIcon](./mecomposeicon.md)
 
 
 ---

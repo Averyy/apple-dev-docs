@@ -1,7 +1,8 @@
 # UnitIlluminance
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A unit of measure for illuminance.
 
@@ -20,53 +21,58 @@ A unit of measure for illuminance.
 class UnitIlluminance
 ```
 
+```objc
+@interface NSUnitIlluminance : NSDimension
+```
+
 #### Overview
 
-You typically use instances of [`UnitIlluminance`](unitilluminance.md) to represent specific quantities of illuminance using the [`NSMeasurement`](nsmeasurement.md) class.
+You typically use instances of [`UnitIlluminance`](./unitilluminance.md) to represent specific quantities of illuminance using the [`NSMeasurement`](./nsmeasurement.md) class.
 
 ##### Illuminance
 
 Illuminance is the luminous flux incident on a surface. The SI unit for illuminance is the lux (lx), which is derived as one lumen per square meter (1lm / 1m2).
 
-The [`UnitIlluminance`](unitilluminance.md) class defines its [`baseUnit()`](dimension/baseunit().md) as [`lux`](unitilluminance/lux.md).
+The [`UnitIlluminance`](./unitilluminance.md) class defines its [`baseUnit()`](./dimension/baseunit%28%29.md) as [`lux`](./unitilluminance/lux.md).
 
 | Name | Method | Symbol |
 | --- | --- | --- |
-| Lux | [`lux`](unitilluminance/lux.md) | lx |
+| Lux | [`lux`](./unitilluminance/lux.md) | lx |
 
 ## Topics
 
 ### Accessing the Base Unit
-- [class func baseUnit() -> Self](dimension/baseunit.md)
+- [class func baseUnit() -> Self](./dimension/baseunit%28%29.md)
   Returns the base unit.
 ### Accesing Predefined Units
-- [class var lux: UnitIlluminance](unitilluminance/lux.md)
+- [class var lux: UnitIlluminance](./unitilluminance/lux.md)
   The lux unit of illuminance.
 
 ## Relationships
 
 ### Inherits From
-- [Dimension](dimension.md)
+- [Dimension](./dimension.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UnitEnergy](unitenergy.md)
+### Energy, Heat, and Light
+- [class UnitEnergy](./unitenergy.md)
   A unit of measure for energy.
-- [class UnitPower](unitpower.md)
+- [class UnitPower](./unitpower.md)
   A unit of measure for power.
-- [class UnitTemperature](unittemperature.md)
+- [class UnitTemperature](./unittemperature.md)
   A unit of measure for temperature.
 
 

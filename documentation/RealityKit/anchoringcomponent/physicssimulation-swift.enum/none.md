@@ -1,7 +1,8 @@
 # AnchoringComponent.PhysicsSimulation.none
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Opts out the entity and its descendants from having their own physics space.
 
@@ -23,7 +24,7 @@ case none
 
 `none` implies the anchor entity does not have its own physics simulation.
 
-It will use the regular rules to determine which physics simulation the entity is a part of. For more about the rules, please check [`PhysicsSimulationComponent`](physicssimulationcomponent.md).
+It will use the regular rules to determine which physics simulation the entity is a part of. For more about the rules, please check [`PhysicsSimulationComponent`](../../physicssimulationcomponent.md).
 
 
 ---

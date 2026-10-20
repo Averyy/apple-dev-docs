@@ -1,7 +1,8 @@
 # subtitle
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A subtitle that the template displays in addition to the contact’s name.
 
@@ -16,19 +17,24 @@ A subtitle that the template displays in addition to the contact’s name.
 var subtitle: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * subtitle;
+```
+
 #### Discussion
 
 Use this property to display secondary information about the contact. For example, their job title or email address.
 
-The default value is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0).
+The default value is [`nil`](../../ObjectiveC/nil-227m0.md).
 
 ## See Also
 
-- [var image: UIImage](cpcontact/image.md)
+### Configuring the Contact’s Attributes
+- [var image: UIImage](./image.md)
   The contact’s image.
-- [var name: String](cpcontact/name.md)
+- [var name: String](./name.md)
   The contact’s name.
-- [var informativeText: String?](cpcontact/informativetext.md)
+- [var informativeText: String?](./informativetext.md)
   Additional text that the template displays.
 
 

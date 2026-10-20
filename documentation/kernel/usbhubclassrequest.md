@@ -10,7 +10,7 @@ A structure that provides USB hub requests.
 
 ## Declaration
 
-```swift
+```c
 enum USBHubClassRequest : unsigned int {
     ...
 };
@@ -19,128 +19,129 @@ enum USBHubClassRequest : unsigned int {
 ## Topics
 
 ### Constants
-- [kUSBHubRqClearFeature](usbhubclassrequest/kusbhubrqclearfeature.md)
+- [kUSBHubRqClearFeature](./usbhubclassrequest/kusbhubrqclearfeature.md)
   A request to clear a feature.
-- [kUSBHubRqGetConfig](usbhubclassrequest/kusbhubrqgetconfig.md)
+- [kUSBHubRqGetConfig](./usbhubclassrequest/kusbhubrqgetconfig.md)
   A request to get a configuration.
-- [kUSBHubRqGetDescriptor](usbhubclassrequest/kusbhubrqgetdescriptor.md)
+- [kUSBHubRqGetDescriptor](./usbhubclassrequest/kusbhubrqgetdescriptor.md)
   A request to obtain a descriptor.
-- [kUSBHubRqGetInterface](usbhubclassrequest/kusbhubrqgetinterface.md)
+- [kUSBHubRqGetInterface](./usbhubclassrequest/kusbhubrqgetinterface.md)
   A request to get an interface.
-- [kUSBHubRqGetState](usbhubclassrequest/kusbhubrqgetstate.md)
+- [kUSBHubRqGetState](./usbhubclassrequest/kusbhubrqgetstate.md)
   A request to get state.
-- [kUSBHubRqGetStatus](usbhubclassrequest/kusbhubrqgetstatus.md)
+- [kUSBHubRqGetStatus](./usbhubclassrequest/kusbhubrqgetstatus.md)
   A request to get status.
-- [kUSBHubRqReserved2](usbhubclassrequest/kusbhubrqreserved2.md)
+- [kUSBHubRqReserved2](./usbhubclassrequest/kusbhubrqreserved2.md)
   A reserved request.
-- [kUSBHubRqSetAddress](usbhubclassrequest/kusbhubrqsetaddress.md)
+- [kUSBHubRqSetAddress](./usbhubclassrequest/kusbhubrqsetaddress.md)
   A request to set an address.
-- [kUSBHubRqSetConfig](usbhubclassrequest/kusbhubrqsetconfig.md)
+- [kUSBHubRqSetConfig](./usbhubclassrequest/kusbhubrqsetconfig.md)
   A request to set a configuration.
-- [kUSBHubRqSetDescriptor](usbhubclassrequest/kusbhubrqsetdescriptor.md)
+- [kUSBHubRqSetDescriptor](./usbhubclassrequest/kusbhubrqsetdescriptor.md)
   A request to set a descriptor.
-- [kUSBHubRqSetFeature](usbhubclassrequest/kusbhubrqsetfeature.md)
+- [kUSBHubRqSetFeature](./usbhubclassrequest/kusbhubrqsetfeature.md)
   A request to set a feature.
-- [kUSBHubRqSetInterface](usbhubclassrequest/kusbhubrqsetinterface.md)
+- [kUSBHubRqSetInterface](./usbhubclassrequest/kusbhubrqsetinterface.md)
   A request to set an interface.
 
 ## See Also
 
-- [tIOUSB20BusCurrent](tiousb20buscurrent.md)
+### USB Types
+- [tIOUSB20BusCurrent](./tiousb20buscurrent.md)
   Constants for the available current levels for USB 2.0 devices.
-- [tIOUSB30BusCurrent](tiousb30buscurrent.md)
+- [tIOUSB30BusCurrent](./tiousb30buscurrent.md)
   Constants for the available power levels of USB 3.0 devices.
-- [tIOUSB30DeviceNotificationType](tiousb30devicenotificationtype.md)
+- [tIOUSB30DeviceNotificationType](./tiousb30devicenotificationtype.md)
   Constants indicating the type of a device notification.
-- [tIOUSB30HubExtStatus](tiousb30hubextstatus.md)
+- [tIOUSB30HubExtStatus](./tiousb30hubextstatus.md)
   Bit masks for getting port status values.
-- [tIOUSB30HubPortStatusCode](tiousb30hubportstatuscode.md)
+- [tIOUSB30HubPortStatusCode](./tiousb30hubportstatuscode.md)
   Constants for the port status type codes.
-- [tIOUSB30LinkStateTimeout](tiousb30linkstatetimeout.md)
+- [tIOUSB30LinkStateTimeout](./tiousb30linkstatetimeout.md)
   Constants for the link state timeout values on USB 3.0 devices.
-- [tIOUSB30ResetTimeout](tiousb30resettimeout.md)
+- [tIOUSB30ResetTimeout](./tiousb30resettimeout.md)
   Constants for the reset timeout values on USB 3.0 devices.
-- [tIOUSB30TimingParameters](tiousb30timingparameters.md)
+- [tIOUSB30TimingParameters](./tiousb30timingparameters.md)
   Constants for USB 3.0 timing parameters.
-- [tIOUSBBusVoltage](tiousbbusvoltage.md)
+- [tIOUSBBusVoltage](./tiousbbusvoltage.md)
   A constant for the USB bus voltage.
-- [tIOUSBDeviceCapabilityType](tiousbdevicecapabilitytype.md)
+- [tIOUSBDeviceCapabilityType](./tiousbdevicecapabilitytype.md)
   Constants for the device capability types.
-- [tIOUSBDeviceRequest](tiousbdevicerequest.md)
+- [tIOUSBDeviceRequest](./tiousbdevicerequest.md)
   Constants for configuring a device request.
-- [tIOUSBDeviceRequestDirectionValue](tiousbdevicerequestdirectionvalue.md)
+- [tIOUSBDeviceRequestDirectionValue](./tiousbdevicerequestdirectionvalue.md)
   Enumerated device request direction values.
-- [tIOUSBDeviceRequestRecipientValue](tiousbdevicerequestrecipientvalue.md)
+- [tIOUSBDeviceRequestRecipientValue](./tiousbdevicerequestrecipientvalue.md)
   Constants indicating the type of object that receives the results of a request.
-- [tIOUSBDeviceRequestTypeValue](tiousbdevicerequesttypevalue.md)
+- [tIOUSBDeviceRequestTypeValue](./tiousbdevicerequesttypevalue.md)
   Constants indicating the type of request to make from a device.
-- [tIOUSBEndpointDirection](tiousbendpointdirection.md)
+- [tIOUSBEndpointDirection](./tiousbendpointdirection.md)
   The direction of data transfers on an endpoint.
-- [tIOUSBEndpointSynchronizationType](tiousbendpointsynchronizationtype.md)
+- [tIOUSBEndpointSynchronizationType](./tiousbendpointsynchronizationtype.md)
   Constants for the endpoint synchronization types.
-- [tIOUSBEndpointType](tiousbendpointtype.md)
+- [tIOUSBEndpointType](./tiousbendpointtype.md)
   Constants describing the types of endpoints.
-- [tIOUSBEndpointUsageType](tiousbendpointusagetype.md)
+- [tIOUSBEndpointUsageType](./tiousbendpointusagetype.md)
   Constants for the endpoint usage types.
-- [tIOUSBHostConnectionSpeed](tiousbhostconnectionspeed.md)
+- [tIOUSBHostConnectionSpeed](./tiousbhostconnectionspeed.md)
   Constants indicating the connection speed of the device.
-- [tIOUSBHostPortStatus](tiousbhostportstatus.md)
+- [tIOUSBHostPortStatus](./tiousbhostportstatus.md)
   Constants indicating the state of a port.
-- [tIOUSBHostPortType](tiousbhostporttype.md)
+- [tIOUSBHostPortType](./tiousbhostporttype.md)
   Constants indicating a port’s type.
-- [tIOUSBLanguageID](tiousblanguageid.md)
+- [tIOUSBLanguageID](./tiousblanguageid.md)
   Constants for the USB language identifiers.
-- [tInternalUSBHostConnectionSpeed](tinternalusbhostconnectionspeed.md)
+- [tInternalUSBHostConnectionSpeed](./tinternalusbhostconnectionspeed.md)
   Constants for the internal USB host connection speed.
-- [tUSBHostConnectionSpeed](tusbhostconnectionspeed.md)
+- [tUSBHostConnectionSpeed](./tusbhostconnectionspeed.md)
   Constants for the USB host connection speed.
-- [tUSBHostDeviceAddress](tusbhostdeviceaddress.md)
+- [tUSBHostDeviceAddress](./tusbhostdeviceaddress.md)
   The USB host device address.
-- [tUSBHostPortStatus](tusbhostportstatus.md)
+- [tUSBHostPortStatus](./tusbhostportstatus.md)
   Constants for the USB host port status.
-- [tUSBHostPortType](tusbhostporttype.md)
+- [tUSBHostPortType](./tusbhostporttype.md)
   Constants for the USB host port type.
-- [IOUSBGetFrameStruct](iousbgetframestruct.md)
+- [IOUSBGetFrameStruct](./iousbgetframestruct.md)
   A structure that contains frame information.
-- [IOUSBHostIOSourceClientRecord](iousbhostiosourceclientrecord.md)
+- [IOUSBHostIOSourceClientRecord](./iousbhostiosourceclientrecord.md)
   The USB host input/output source client record.
-- [IOUSBIsocFrame](iousbisocframe.md)
+- [IOUSBIsocFrame](./iousbisocframe.md)
   A structure for encoding information about a single frame in an isochronous transfer.
-- [IOUSBIsocStruct](iousbisocstruct.md)
+- [IOUSBIsocStruct](./iousbisocstruct.md)
   An internal structure to pass parameters between IOUSBLib and UserClient.
-- [IOUSBLowLatencyIsocFrame](iousblowlatencyisocframe.md)
+- [IOUSBLowLatencyIsocFrame](./iousblowlatencyisocframe.md)
   A structure for encoding information about each low-latency isochronous frame.
-- [IOUSBLowLatencyIsocStruct](iousblowlatencyisocstruct.md)
+- [IOUSBLowLatencyIsocStruct](./iousblowlatencyisocstruct.md)
   An internal structure to pass parameters between IOUSBLib and UserClient.
-- [IOUSBKeyboardData](iousbkeyboarddata.md)
+- [IOUSBKeyboardData](./iousbkeyboarddata.md)
   A structure containing USB keyboard data.
-- [IOUSBKeyboardDataPtr](iousbkeyboarddataptr.md)
+- [IOUSBKeyboardDataPtr](./iousbkeyboarddataptr.md)
   A pointer to a structure containing USB keyboard data.
-- [IOUSBMouseData](iousbmousedata.md)
+- [IOUSBMouseData](./iousbmousedata.md)
   A structure containing USB mouse data.
-- [IOUSBMouseDataPtr](iousbmousedataptr.md)
+- [IOUSBMouseDataPtr](./iousbmousedataptr.md)
   A pointer to a structure containing USB mouse data.
-- [IOUSBMatch](iousbmatch.md)
+- [IOUSBMatch](./iousbmatch.md)
   A structure for matching USB devices.
-- [USBClassSpecificDesc](usbclassspecificdesc.md)
+- [USBClassSpecificDesc](./usbclassspecificdesc.md)
   A class-specific descriptor.
-- [USBDeviceAddress](usbdeviceaddress.md)
+- [USBDeviceAddress](./usbdeviceaddress.md)
   A USB device address.
-- [USBDeviceInformationBits](usbdeviceinformationbits.md)
+- [USBDeviceInformationBits](./usbdeviceinformationbits.md)
   The state of a USB device.
-- [USBLowLatencyBufferType](usblowlatencybuffertype.md)
+- [USBLowLatencyBufferType](./usblowlatencybuffertype.md)
   Specifies which kind of low-latency buffer to create.
-- [USBNotificationTypes](usbnotificationtypes.md)
+- [USBNotificationTypes](./usbnotificationtypes.md)
   Defines types of USB notifications.
-- [USBPhysicalAddress32](usbphysicaladdress32.md)
+- [USBPhysicalAddress32](./usbphysicaladdress32.md)
   A 32-bit USB physical address.
-- [USBPowerRequestTypes](usbpowerrequesttypes.md)
+- [USBPowerRequestTypes](./usbpowerrequesttypes.md)
   Specifies the kind of power to reserve.
-- [USBReEnumerateOptions](usbreenumerateoptions.md)
+- [USBReEnumerateOptions](./usbreenumerateoptions.md)
   Options for reenumerating a device.
-- [USBStatus](usbstatus.md)
+- [USBStatus](./usbstatus.md)
   The value of the USB device status.
-- [USBStatusPtr](usbstatusptr.md)
+- [USBStatusPtr](./usbstatusptr.md)
   A pointer to a USB status.
 
 

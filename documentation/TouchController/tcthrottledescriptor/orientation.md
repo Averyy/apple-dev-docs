@@ -1,7 +1,8 @@
 # orientation
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The orientation of the throttle.
 
@@ -16,29 +17,34 @@ The orientation of the throttle.
 var orientation: TCThrottle.Orientation { get set }
 ```
 
+```objc
+@property (nonatomic, assign) TCThrottleOrientation orientation;
+```
+
 ## See Also
 
-- [var backgroundContents: TCControlContents?](tcthrottledescriptor/backgroundcontents.md)
+### Inspecting the descriptor
+- [var backgroundContents: TCControlContents?](./backgroundcontents.md)
   The contents for the background of the throttle.
-- [var baseValue: CGFloat](tcthrottledescriptor/basevalue.md)
+- [var baseValue: CGFloat](./basevalue.md)
   The initial value of this control.
-- [var highlightDuration: TimeInterval](tcthrottledescriptor/highlightduration.md)
+- [var highlightDuration: TimeInterval](./highlightduration.md)
   The time it takes for a highlight to fade away, in seconds.
-- [var indicatorContents: TCControlContents?](tcthrottledescriptor/indicatorcontents.md)
+- [var indicatorContents: TCControlContents?](./indicatorcontents.md)
   The contents for the indicator of the throttle.
-- [var indicatorSize: CGSize](tcthrottledescriptor/indicatorsize.md)
+- [var indicatorSize: CGSize](./indicatorsize.md)
   The size (width, height) of the indicator itself in points.
-- [var label: TCControlLabel](tcthrottledescriptor/label.md)
+- [var label: TCControlLabel](./label.md)
   The label associated with the throttle.
-- [var offset: CGPoint](tcthrottledescriptor/offset.md)
+- [var offset: CGPoint](./offset.md)
   The control’s offset from the anchor, which determines its position.
-- [var size: CGSize](tcthrottledescriptor/size.md)
+- [var size: CGSize](./size.md)
   The size (width, height) of the throttle in points.
-- [var snapsToBaseValue: Bool](tcthrottledescriptor/snapstobasevalue.md)
+- [var snapsToBaseValue: Bool](./snapstobasevalue.md)
   A Boolean value that indicates whether the control reverts to it’s base value.
-- [var throttleSize: CGSize](tcthrottledescriptor/throttlesize.md)
+- [var throttleSize: CGSize](./throttlesize.md)
   The size (width, height) of the throttle itself, providing boundaries for the indicator, in points.
-- [var zIndex: Int](tcthrottledescriptor/zindex.md)
+- [var zIndex: Int](./zindex.md)
   The z-index of the throttle. A lower z-index is drawn first.
 
 

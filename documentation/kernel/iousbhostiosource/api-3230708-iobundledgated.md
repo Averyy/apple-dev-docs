@@ -1,14 +1,15 @@
 # ioBundledGated
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn ioBundledGated(tInternalDataTransferParameters & parameters);
 ```
 

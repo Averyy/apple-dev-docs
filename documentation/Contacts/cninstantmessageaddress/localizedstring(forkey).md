@@ -1,7 +1,8 @@
 # localizedString(forKey:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a string containing the localized property name.
 
@@ -19,19 +20,24 @@ Returns a string containing the localized property name.
 class func localizedString(forKey key: String) -> String
 ```
 
+```objc
++ (NSString *) localizedStringForKey:(NSString *) key;
+```
+
 #### Return Value
 
 A string containing the localized property name.
 
 ## Parameters
 
-- `key`: The address property key. Specify [`CNInstantMessageAddressUsernameKey`](cninstantmessageaddressusernamekey.md) or [`CNInstantMessageAddressServiceKey`](cninstantmessageaddressservicekey.md).
+- `key`: The address property key. Specify [`CNInstantMessageAddressUsernameKey`](../cninstantmessageaddressusernamekey.md) or [`CNInstantMessageAddressServiceKey`](../cninstantmessageaddressservicekey.md).
 
 ## See Also
 
-- [let CNInstantMessageAddressUsernameKey: String](cninstantmessageaddressusernamekey.md)
+### Getting Localized Address Information
+- [let CNInstantMessageAddressUsernameKey: String](../cninstantmessageaddressusernamekey.md)
   Instant message address username key.
-- [let CNInstantMessageAddressServiceKey: String](cninstantmessageaddressservicekey.md)
+- [let CNInstantMessageAddressServiceKey: String](../cninstantmessageaddressservicekey.md)
   Instant message address service key.
 
 

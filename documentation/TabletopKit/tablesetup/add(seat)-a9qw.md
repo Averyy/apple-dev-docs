@@ -1,7 +1,8 @@
 # add(seat:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Add the given seat to the table setup.
 
@@ -20,10 +21,11 @@ mutating func add(seat: some TableSeat)
 
 ## See Also
 
-- [func add(seat: some EntityTableSeat)](tablesetup/add(seat:)-4alrc.md)
-- [func add(seats: some Sequence)](tablesetup/add(seats:)-4068d.md)
+### Adding seats to place players
+- [func add(seat: some EntityTableSeat)](./add%28seat%29-4alrc.md)
+- [func add(seats: some Sequence)](./add%28seats%29-4068d.md)
   Add the given seats to the table setup.
-- [func add(seats: some Sequence)](tablesetup/add(seats:)-4asnu.md)
+- [func add(seats: some Sequence)](./add%28seats%29-4asnu.md)
 
 
 ---

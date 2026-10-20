@@ -1,7 +1,8 @@
 # key
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
@@ -14,8 +15,9 @@ var key: String { get }
 
 ## See Also
 
-- [var details: VTRAWProcessingSession.Parameter.Details](vtrawprocessingsession/parameter/booleanparameter/details.md)
-- [var values: VTRAWProcessingSession.Parameter.Values<Bool>](vtrawprocessingsession/parameter/booleanparameter/values.md)
+### Instance Properties
+- [var details: VTRAWProcessingSession.Parameter.Details](./details.md)
+- [var values: VTRAWProcessingSession.Parameter.Values<Bool>](./values.md)
 
 
 ---

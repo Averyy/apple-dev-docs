@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Foundation  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the bytes at the specified range of indexes.
 

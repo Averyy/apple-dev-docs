@@ -1,14 +1,15 @@
 # IteratorProtocol Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func next() -> (key: Key, value: Value)?](dictionary/iterator/next.md)
+- [func next() -> (key: Key, value: Value)?](./next%28%29.md)
   Advances to the next element and returns it, or `nil` if no next element exists.
 ### Type Aliases
-- [Dictionary.Iterator.Element](dictionary/iterator/element.md)
+- [Dictionary.Iterator.Element](./element.md)
   The type of element traversed by the iterator.
 
 

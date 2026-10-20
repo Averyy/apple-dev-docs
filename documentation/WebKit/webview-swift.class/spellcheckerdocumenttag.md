@@ -1,12 +1,13 @@
 # spellCheckerDocumentTag
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The spell-checker document tag for this document.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,25 +15,31 @@ The spell-checker document tag for this document.
 var spellCheckerDocumentTag: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger spellCheckerDocumentTag;
+```
+
 #### Discussion
 
-A tag identifying the receiver’s text as a document for the spell-checker server. See the [`NSSpellChecker`](https://developer.apple.com/documentation/appkit/nsspellchecker) and NSSpellServer class specifications for more information on how this tag is used.
+A tag identifying the receiver’s text as a document for the spell-checker server. See the [`NSSpellChecker`](../../AppKit/nsspellchecker.md) and NSSpellServer class specifications for more information on how this tag is used.
 
 ## See Also
 
-- [var spellCheckerDocumentTag: Int](../appkit/nstextview/spellcheckerdocumenttag.md)
+### Related Documentation
+- [var spellCheckerDocumentTag: Int](../../AppKit/nstextview/spellcheckerdocumenttag.md)
   A tag identifying the text view’s text as a document for the spell checker server.
-- [var isEditable: Bool](webview-swift.class/iseditable.md)
+### Getting and Setting Document Editing Attributes
+- [var isEditable: Bool](./iseditable.md)
   A Boolean that indicates whether the user is allowed to edit the document.
-- [var smartInsertDeleteEnabled: Bool](webview-swift.class/smartinsertdeleteenabled.md)
+- [var smartInsertDeleteEnabled: Bool](./smartinsertdeleteenabled.md)
   A Boolean that indicates whether smart-space insertion and deletion is enabled.
-- [var isContinuousSpellCheckingEnabled: Bool](webview-swift.class/iscontinuousspellcheckingenabled.md)
+- [var isContinuousSpellCheckingEnabled: Bool](./iscontinuousspellcheckingenabled.md)
   A Boolean that indicates whether the web view has continuous spell-checking enabled.
-- [var undoManager: UndoManager!](webview-swift.class/undomanager.md)
+- [var undoManager: UndoManager!](./undomanager.md)
   The receiver’s undo manager.
-- [var editingDelegate: (any WebEditingDelegate)!](webview-swift.class/editingdelegate.md)
+- [var editingDelegate: (any WebEditingDelegate)!](./editingdelegate.md)
   The receiver’s editing delegate.
-- [func editableDOMRange(for: NSPoint) -> DOMRange!](webview-swift.class/editabledomrange(for:).md)
+- [func editableDOMRange(for: NSPoint) -> DOMRange!](./editabledomrange%28for%29.md)
   Returns the editable DOM object located at a given point.
 
 

@@ -1,18 +1,19 @@
 # BNNSDescriptorType
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that describe the input and output types of an arithmetic operation.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,51 +21,56 @@ Constants that describe the input and output types of an arithmetic operation.
 struct BNNSDescriptorType
 ```
 
+```c
+typedef enum { ... } BNNSDescriptorType;
+```
+
 ## Topics
 
 ### Descriptor Types
-- [init(UInt32)](bnnsdescriptortype/init(_:).md)
-- [init(rawValue: UInt32)](bnnsdescriptortype/init(rawvalue:).md)
-- [var rawValue: UInt32](bnnsdescriptortype/rawvalue.md)
-- [var BNNSConstant: BNNSDescriptorType](bnnsconstant.md)
+- [init(UInt32)](./bnnsdescriptortype/init%28_%29.md)
+- [init(rawValue: UInt32)](./bnnsdescriptortype/init%28rawvalue%29.md)
+- [var rawValue: UInt32](./bnnsdescriptortype/rawvalue.md)
+- [var BNNSConstant: BNNSDescriptorType](./bnnsconstant.md)
   A constant that doesn’t have a gradient.
-- [var BNNSParameter: BNNSDescriptorType](bnnsparameter.md)
+- [var BNNSParameter: BNNSDescriptorType](./bnnsparameter.md)
   A parameter that’s trainable, such as weights or bias.
-- [var BNNSSample: BNNSDescriptorType](bnnssample.md)
+- [var BNNSSample: BNNSDescriptorType](./bnnssample.md)
   A sample such as input or output.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class UnaryArithmeticLayer](bnns/unaryarithmeticlayer.md)
+### Arithmetic layers
+- [class UnaryArithmeticLayer](./bnns/unaryarithmeticlayer.md)
   A layer object that wraps a unary arithmetic filter and manages its deinitialization.
-- [class BinaryArithmeticLayer](bnns/binaryarithmeticlayer.md)
+- [class BinaryArithmeticLayer](./bnns/binaryarithmeticlayer.md)
   A layer object that wraps a binary arithmetic filter and manages its deinitialization.
-- [class TernaryArithmeticLayer](bnns/ternaryarithmeticlayer.md)
+- [class TernaryArithmeticLayer](./bnns/ternaryarithmeticlayer.md)
   A layer object that wraps a ternary arithmetic filter and manages its deinitialization.
-- [struct BNNSArithmeticUnary](bnnsarithmeticunary.md)
+- [struct BNNSArithmeticUnary](./bnnsarithmeticunary.md)
   A structure that contains the input and output of an arithmetic operation with a single input.
-- [struct BNNSArithmeticBinary](bnnsarithmeticbinary.md)
+- [struct BNNSArithmeticBinary](./bnnsarithmeticbinary.md)
   A structure that contains the inputs and output of an arithmetic operation with two inputs.
-- [struct BNNSArithmeticTernary](bnnsarithmeticternary.md)
+- [struct BNNSArithmeticTernary](./bnnsarithmeticternary.md)
   A structure that contains the inputs and output of an arithmetic operation with three inputs.
-- [struct BNNSArithmeticFunction](bnnsarithmeticfunction.md)
+- [struct BNNSArithmeticFunction](./bnnsarithmeticfunction.md)
   Constants that define arithmetic operations.
-- [struct BNNSLayerParametersArithmetic](bnnslayerparametersarithmetic.md)
+- [struct BNNSLayerParametersArithmetic](./bnnslayerparametersarithmetic.md)
   A structure that contains the parameters of an arithmetic layer.
-- [func BNNSFilterCreateLayerArithmetic(UnsafePointer<BNNSLayerParametersArithmetic>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](bnnsfiltercreatelayerarithmetic(_:_:).md)
+- [func BNNSFilterCreateLayerArithmetic(UnsafePointer<BNNSLayerParametersArithmetic>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](./bnnsfiltercreatelayerarithmetic%28_,_%29.md)
   Returns a new arithmetic layer.
-- [func BNNSArithmeticFilterApplyBatch(BNNSFilter?, Int, Int, UnsafeMutablePointer<UnsafeRawPointer>, UnsafePointer<Int>, UnsafeMutableRawPointer, Int) -> Int32](bnnsarithmeticfilterapplybatch(_:_:_:_:_:_:_:).md)
+- [func BNNSArithmeticFilterApplyBatch(BNNSFilter?, Int, Int, UnsafeMutablePointer<UnsafeRawPointer>, UnsafePointer<Int>, UnsafeMutableRawPointer, Int) -> Int32](./bnnsarithmeticfilterapplybatch%28_,_,_,_,_,_,_%29.md)
   Applies an arithmetic filter to a set of input objects, writing the result to a set of output objects.
-- [func BNNSArithmeticFilterApplyBackwardBatch(BNNSFilter?, Int, Int, UnsafeMutablePointer<UnsafeRawPointer?>?, UnsafePointer<Int>?, UnsafeMutablePointer<UnsafeMutablePointer<BNNSNDArrayDescriptor>>, UnsafePointer<Int>, UnsafeRawPointer?, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>, Int) -> Int32](bnnsarithmeticfilterapplybackwardbatch(_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func BNNSArithmeticFilterApplyBackwardBatch(BNNSFilter?, Int, Int, UnsafeMutablePointer<UnsafeRawPointer?>?, UnsafePointer<Int>?, UnsafeMutablePointer<UnsafeMutablePointer<BNNSNDArrayDescriptor>>, UnsafePointer<Int>, UnsafeRawPointer?, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>, Int) -> Int32](./bnnsarithmeticfilterapplybackwardbatch%28_,_,_,_,_,_,_,_,_,_,_%29.md)
   Applies an arithmetic filter backward to generate input gradients.
 
 

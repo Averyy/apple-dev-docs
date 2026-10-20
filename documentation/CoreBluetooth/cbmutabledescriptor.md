@@ -1,7 +1,8 @@
 # CBMutableDescriptor
 
 **Framework**: Core Bluetooth  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides additional information about a local peripheral’s characteristic.
 
@@ -20,41 +21,46 @@ An object that provides additional information about a local peripheral’s char
 class CBMutableDescriptor
 ```
 
+```objc
+@interface CBMutableDescriptor : CBDescriptor
+```
+
 #### Overview
 
-You use the [`CBMutableDescriptor`](cbmutabledescriptor.md) class to create a local characteristic descriptor. After you create a descriptor and associate it with a local characteristic, you can publish it to the peripheral’s local database using the [`add(_:)`](cbperipheralmanager/add(_:).md) method of the [`CBPeripheralManager`](cbperipheralmanager.md) class. This also publishes the characteristic and local service to which the descriptor belongs. After you publish a local descriptor, Core Bluetooth caches the descriptor and you can no longer make changes to it.
+You use the [`CBMutableDescriptor`](./cbmutabledescriptor.md) class to create a local characteristic descriptor. After you create a descriptor and associate it with a local characteristic, you can publish it to the peripheral’s local database using the [`add(_:)`](./cbperipheralmanager/add%28_%29.md) method of the [`CBPeripheralManager`](./cbperipheralmanager.md) class. This also publishes the characteristic and local service to which the descriptor belongs. After you publish a local descriptor, Core Bluetooth caches the descriptor and you can no longer make changes to it.
 
-[`CBUUID`](cbuuid.md) details predefined descriptor types and their corresponding value types. That said, only two of these are currently supported when creating local, mutable descriptors: the characteristic user description descriptor and the characteristic format descriptor. [`CBUUID`](cbuuid.md) declares these as the constants [`CBUUIDCharacteristicUserDescriptionString`](cbuuidcharacteristicuserdescriptionstring.md) and [`CBUUIDCharacteristicFormatString`](cbuuidcharacteristicformatstring.md), respectively. The system automatically creates the extended properties descriptor and the client configuration descriptor, depending on the properties of the characteristic to which the descriptor belongs.
+[`CBUUID`](./cbuuid.md) details predefined descriptor types and their corresponding value types. That said, only two of these are currently supported when creating local, mutable descriptors: the characteristic user description descriptor and the characteristic format descriptor. [`CBUUID`](./cbuuid.md) declares these as the constants [`CBUUIDCharacteristicUserDescriptionString`](./cbuuidcharacteristicuserdescriptionstring.md) and [`CBUUIDCharacteristicFormatString`](./cbuuidcharacteristicformatstring.md), respectively. The system automatically creates the extended properties descriptor and the client configuration descriptor, depending on the properties of the characteristic to which the descriptor belongs.
 
 ## Topics
 
 ### Creating a Mutable Descriptor
-- [init(type: CBUUID, value: Any?)](cbmutabledescriptor/init(type:value:).md)
+- [init(type: CBUUID, value: Any?)](./cbmutabledescriptor/init%28type,value%29.md)
   Creates a mutable descriptor with a specified value.
 
 ## Relationships
 
 ### Inherits From
-- [CBDescriptor](cbdescriptor.md)
+- [CBDescriptor](./cbdescriptor.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CBService](cbservice.md)
+### Services
+- [class CBService](./cbservice.md)
   A collection of data and associated behaviors that accomplish a function or feature of a device.
-- [class CBMutableService](cbmutableservice.md)
+- [class CBMutableService](./cbmutableservice.md)
   A service with writeable property values.
-- [class CBCharacteristic](cbcharacteristic.md)
+- [class CBCharacteristic](./cbcharacteristic.md)
   A characteristic of a remote peripheral’s service.
-- [class CBMutableCharacteristic](cbmutablecharacteristic.md)
+- [class CBMutableCharacteristic](./cbmutablecharacteristic.md)
   A characteristic of a local peripheral’s service.
-- [class CBDescriptor](cbdescriptor.md)
+- [class CBDescriptor](./cbdescriptor.md)
   An object that provides further information about a remote peripheral’s characteristic.
 
 

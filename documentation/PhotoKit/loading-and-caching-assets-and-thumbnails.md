@@ -1,6 +1,7 @@
 # Loading and Caching Assets and Thumbnails
 
-**Framework**: PhotoKit
+**Framework**: PhotoKit  
+**Role**: Article
 
 Request image, video, or Live Photos content, and cache for quick reuse.
 
@@ -10,13 +11,14 @@ Photos automatically downloads or generates images to your specification, cachin
 
 ## See Also
 
-- [Delivering an Enhanced Privacy Experience in Your Photos App](delivering-an-enhanced-privacy-experience-in-your-photos-app.md)
+### Articles
+- [Delivering an Enhanced Privacy Experience in Your Photos App](./delivering-an-enhanced-privacy-experience-in-your-photos-app.md)
   Adopt the latest privacy enhancements to deliver advanced user-privacy controls.
-- [Fetching Objects and Requesting Changes](fetching-objects-and-requesting-changes.md)
+- [Fetching Objects and Requesting Changes](./fetching-objects-and-requesting-changes.md)
   Get assets, asset collections, and collection lists matching a specified query.
-- [Displaying Live Photos](displaying-live-photos.md)
+- [Displaying Live Photos](./displaying-live-photos.md)
   Provide the same interactive playback of Live Photos as in the iOS Photos app.
-- [Creating Photo Editing Extensions](creating-photo-editing-extensions.md)
+- [Creating Photo Editing Extensions](./creating-photo-editing-extensions.md)
   Provide custom functionality in the Photos app by bundling an app extension.
 
 

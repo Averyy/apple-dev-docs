@@ -2,18 +2,19 @@
 
 **Framework**: Core Data  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The number of objects (rows) in the section.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -21,10 +22,16 @@ The number of objects (rows) in the section.
 var numberOfObjects: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger numberOfObjects;
+```
+
 ## See Also
 
-- [Core Data Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075)
-- [var objects: [Any]?](nsfetchedresultssectioninfo/objects.md)
+### Related Documentation
+- [Core Data Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075)
+### Accessing Objects
+- [var objects: [Any]?](./objects.md)
   The array of objects in the section.
 
 

@@ -1,7 +1,8 @@
 # init(exactly:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new value, if the given integer can be represented exactly.
 
@@ -20,6 +21,8 @@ Creates a new value, if the given integer can be represented exactly.
 init?<Source>(exactly value: Source) where Source : BinaryInteger
 ```
 
+Available when `RawSignificand` conforms to `FixedWidthInteger`.
+
 #### Discussion
 
 If the given integer cannot be represented exactly, the result is `nil`.
@@ -30,16 +33,17 @@ If the given integer cannot be represented exactly, the result is `nil`.
 
 ## See Also
 
-- [init?<Source>(exactly: Source)](float/init(exactly:)-8esr8.md)
+### Converting with No Loss of Precision
+- [init?<Source>(exactly: Source)](./init%28exactly%29-8esr8.md)
   Creates a new instance from the given value, if it can be represented exactly.
-- [init?(exactly: Double)](float/init(exactly:)-89na7.md)
+- [init?(exactly: Double)](./init%28exactly%29-89na7.md)
   Creates a new instance initialized to the given value, if it can be represented without rounding.
-- [init?(exactly: Float)](float/init(exactly:)-89pn7.md)
+- [init?(exactly: Float)](./init%28exactly%29-89pn7.md)
   Creates a new instance initialized to the given value, if it can be represented without rounding.
-- [init?(exactly: Float80)](float/init(exactly:)-6l5fa.md)
+- [init?(exactly: Float80)](./init%28exactly%29-6l5fa.md)
   Creates a new instance initialized to the given value, if it can be represented without rounding.
-- [init?(exactly: NSNumber)](float/init(exactly:)-zknq.md)
-- [init?(exactly: Float16)](float/init(exactly:)-8ho5q.md)
+- [init?(exactly: NSNumber)](./init%28exactly%29-zknq.md)
+- [init?(exactly: Float16)](./init%28exactly%29-8ho5q.md)
   Creates a new instance initialized to the given value, if it can be represented without rounding.
 
 

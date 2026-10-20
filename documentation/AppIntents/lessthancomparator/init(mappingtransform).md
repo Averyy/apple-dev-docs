@@ -1,7 +1,8 @@
 # init(mappingTransform:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Declares support for `Comparable` `>` comparisons between a property and user-supplied values.
 
@@ -11,7 +12,7 @@ Declares support for `Comparable` `>` comparisons between a property and user-su
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -26,9 +27,10 @@ init(mappingTransform: @escaping (PropertyType.UnwrappedType) -> ComparatorMappi
 
 ## See Also
 
-- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](lessthancomparator/init(withresolvers:mappingtransform:).md)
+### Creating a comparator
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](./init%28withresolvers,mappingtransform%29.md)
   Declares support for `Comparable` `>` comparisons between a property and user-supplied values.
-- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](lessthancomparator/init(withresolvers:mappingtransform:).md)
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](./init%28withresolvers,mappingtransform%29.md)
   Declares support for `Comparable` `>` comparisons between a property and user-supplied values.
 
 

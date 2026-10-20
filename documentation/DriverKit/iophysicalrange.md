@@ -1,25 +1,26 @@
 # IOPhysicalRange
 
 **Framework**: DriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef struct { ... } IOPhysicalRange;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [address](iophysicalrange/address.md)
-- [length](iophysicalrange/length.md)
+- [address](./iophysicalrange/address.md)
+- [length](./iophysicalrange/length.md)
 
 
 ---

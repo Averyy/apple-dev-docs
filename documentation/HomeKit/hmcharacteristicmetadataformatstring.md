@@ -1,7 +1,8 @@
 # HMCharacteristicMetadataFormatString
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates that the characteristic has string values.
 
@@ -17,6 +18,10 @@ Indicates that the characteristic has string values.
 
 ```swift
 let HMCharacteristicMetadataFormatString: String
+```
+
+```c
+extern NSString * const HMCharacteristicMetadataFormatString;
 ```
 
 

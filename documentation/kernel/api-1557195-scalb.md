@@ -1,14 +1,15 @@
 # scalb
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 double scalb(double, double);
 ```
 

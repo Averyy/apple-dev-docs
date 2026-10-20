@@ -1,7 +1,8 @@
 # MusicCatalogSearchRequest
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A request that your app uses to fetch items from the Apple Music catalog using a search term.
 
@@ -23,28 +24,29 @@ struct MusicCatalogSearchRequest
 ## Topics
 
 ### Initializers
-- [init(term: String, types: [any MusicCatalogSearchable.Type])](musiccatalogsearchrequest/init(term:types:).md)
+- [init(term: String, types: [any MusicCatalogSearchable.Type])](./musiccatalogsearchrequest/init%28term,types%29.md)
   Creates a catalog search request for a specified search term and list of catalog searchable types.
 ### Instance Properties
-- [var includeTopResults: Bool](musiccatalogsearchrequest/includetopresults.md)
+- [var includeTopResults: Bool](./musiccatalogsearchrequest/includetopresults.md)
   A Boolean value that indicates whether to request top search results.
-- [var limit: Int?](musiccatalogsearchrequest/limit.md)
+- [var limit: Int?](./musiccatalogsearchrequest/limit.md)
   A limit for the number of items to return in the catalog search response.
-- [var offset: Int?](musiccatalogsearchrequest/offset.md)
+- [var offset: Int?](./musiccatalogsearchrequest/offset.md)
   An offset for the request.
-- [let term: String](musiccatalogsearchrequest/term.md)
+- [let term: String](./musiccatalogsearchrequest/term.md)
   The search term for the request.
-- [var types: [any MusicCatalogSearchable.Type]](musiccatalogsearchrequest/types.md)
+- [var types: [any MusicCatalogSearchable.Type]](./musiccatalogsearchrequest/types.md)
   The list of requested catalog searchable types.
 ### Instance Methods
-- [func response() async throws -> MusicCatalogSearchResponse](musiccatalogsearchrequest/response.md)
+- [func response() async throws -> MusicCatalogSearchResponse](./musiccatalogsearchrequest/response%28%29.md)
   Fetches items of the requested catalog searchable types that match the search term of the request.
 
 ## See Also
 
-- [struct MusicCatalogSearchResponse](musiccatalogsearchresponse.md)
+### Catalog Search
+- [struct MusicCatalogSearchResponse](./musiccatalogsearchresponse.md)
   An object that contains results for a catalog search request.
-- [protocol MusicCatalogSearchable](musiccatalogsearchable.md)
+- [protocol MusicCatalogSearchable](./musiccatalogsearchable.md)
   A protocol for music items that your app can fetch by using a catalog search request.
 
 

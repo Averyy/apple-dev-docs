@@ -1,7 +1,8 @@
 # previewPanel(_:transitionImageFor:contentRect:)
 
 **Framework**: Quick Look UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the image to use for the transition zoom effect for a given item.
 
@@ -14,13 +15,17 @@ Returns the image to use for the transition zoom effect for a given item.
 optional func previewPanel(_ panel: QLPreviewPanel!, transitionImageFor item: (any QLPreviewItem)!, contentRect: UnsafeMutablePointer<NSRect>!) -> Any!
 ```
 
+```objc
+- (id) previewPanel:(QLPreviewPanel *) panel transitionImageForPreviewItem:(id<QLPreviewItem>) item contentRect:(NSRect *) contentRect;
+```
+
 #### Return Value
 
 The image to use for the transition zoom effect for the `item`.
 
 #### Discussion
 
-The system invokes this optional method when the preview panel opens or closes to provide a smooth transition when zooming. The return type of the function should be an instance of [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage).
+The system invokes this optional method when the preview panel opens or closes to provide a smooth transition when zooming. The return type of the function should be an instance of [`NSImage`](../../AppKit/nsimage.md).
 
 ## Parameters
 
@@ -30,9 +35,10 @@ The system invokes this optional method when the preview panel opens or closes t
 
 ## See Also
 
-- [func previewPanel(QLPreviewPanel!, handle: NSEvent!) -> Bool](qlpreviewpaneldelegate/previewpanel(_:handle:).md)
+### Optional Methods
+- [func previewPanel(QLPreviewPanel!, handle: NSEvent!) -> Bool](./previewpanel%28_,handle%29.md)
   Handles an event that the preview panel receives, but doesn’t handle.
-- [func previewPanel(QLPreviewPanel!, sourceFrameOnScreenFor: (any QLPreviewItem)!) -> NSRect](qlpreviewpaneldelegate/previewpanel(_:sourceframeonscreenfor:).md)
+- [func previewPanel(QLPreviewPanel!, sourceFrameOnScreenFor: (any QLPreviewItem)!) -> NSRect](./previewpanel%28_,sourceframeonscreenfor%29.md)
   Returns the screen rectangle for a given preview item.
 
 

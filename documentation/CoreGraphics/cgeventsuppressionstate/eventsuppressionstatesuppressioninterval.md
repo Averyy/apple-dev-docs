@@ -1,13 +1,14 @@
 # CGEventSuppressionState.eventSuppressionStateSuppressionInterval
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that certain local hardware events may be suppressed for a short interval after posting an event.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,11 +16,16 @@ Specifies that certain local hardware events may be suppressed for a short inter
 case eventSuppressionStateSuppressionInterval
 ```
 
+```c
+kCGEventSuppressionStateSuppressionInterval
+```
+
 ## See Also
 
-- [CGEventSuppressionState.eventSuppressionStateRemoteMouseDrag](cgeventsuppressionstate/eventsuppressionstateremotemousedrag.md)
+### Constants
+- [CGEventSuppressionState.eventSuppressionStateRemoteMouseDrag](./eventsuppressionstateremotemousedrag.md)
   Specifies that certain local hardware events may be suppressed during a mouse drag operation (mouse movement with the left or only mouse button down).
-- [CGEventSuppressionState.numberOfEventSuppressionStates](cgeventsuppressionstate/numberofeventsuppressionstates.md)
+- [CGEventSuppressionState.numberOfEventSuppressionStates](./numberofeventsuppressionstates.md)
 
 
 ---

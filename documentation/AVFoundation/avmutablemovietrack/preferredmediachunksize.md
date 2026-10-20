@@ -1,7 +1,8 @@
 # preferredMediaChunkSize
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum size to use for each chunk of sample data written to the file for file types that support media chunk duration.
 
@@ -19,6 +20,10 @@ The maximum size to use for each chunk of sample data written to the file for fi
 var preferredMediaChunkSize: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSInteger preferredMediaChunkSize;
+```
+
 #### Discussion
 
 The total size of the samples in a chunk can be no greater than the preferred chunk size, or the size of a single sample if the single sample’s size is greater than the preferred chunk size. The default media chunk duration is `1024 * 1024` bytes. Setting a negative value for the chunk duration will cause an error.
@@ -27,9 +32,10 @@ A larger chunk size can result in fewer reads from the storage container, at the
 
 ## See Also
 
-- [var preferredMediaChunkAlignment: Int](avmutablemovietrack/preferredmediachunkalignment.md)
+### Accessing media chunks
+- [var preferredMediaChunkAlignment: Int](./preferredmediachunkalignment.md)
   The boundary for media chunk alignment for file types that support media chunk alignment.
-- [var preferredMediaChunkDuration: CMTime](avmutablemovietrack/preferredmediachunkduration.md)
+- [var preferredMediaChunkDuration: CMTime](./preferredmediachunkduration.md)
   The maximum duration to use for each chunk of sample data written to the file for file types that support media chunk duration.
 
 

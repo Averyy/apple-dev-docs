@@ -1,7 +1,8 @@
 # fileCreationDate
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The creation date of the file.
 
@@ -18,9 +19,14 @@ The creation date of the file.
 var fileCreationDate: Date? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSDate * fileCreationDate;
+```
+
 ## See Also
 
-- [var fileModificationDate: Date?](iccamerafile/filemodificationdate.md)
+### Determining When a File Was Created or Modified
+- [var fileModificationDate: Date?](./filemodificationdate.md)
   The modification date of the file.
 
 

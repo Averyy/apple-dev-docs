@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Request.poses
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Requests the estimated pose of the camera in each shot (relative to the common estimated coordinate system shared with the `.bounds` request).
 
@@ -19,7 +20,7 @@ case poses
 
 #### Discussion
 
-Once initial photogrammetric calculations are complete, a [`PhotogrammetrySession.Poses`](photogrammetrysession/poses.md) object will be returned with the estimated camera pose for each sample that was used in the reconstruction.
+Once initial photogrammetric calculations are complete, a [`PhotogrammetrySession.Poses`](../poses.md) object will be returned with the estimated camera pose for each sample that was used in the reconstruction.
 
 
 ---

@@ -1,7 +1,8 @@
 # errSSLNegotiation
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The cipher suite negotiation failed.
 
@@ -18,6 +19,10 @@ The cipher suite negotiation failed.
 
 ```swift
 var errSSLNegotiation: OSStatus { get }
+```
+
+```c
+errSSLNegotiation
 ```
 
 

@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct chain_len_stats {
     ...
 };
@@ -17,11 +17,11 @@ struct chain_len_stats {
 ## Topics
 
 ### Instance Properties
-- [cls_five_or_more](chain_len_stats/3943860-cls_five_or_more.md)
-- [cls_four](chain_len_stats/3943861-cls_four.md)
-- [cls_one](chain_len_stats/3943862-cls_one.md)
-- [cls_three](chain_len_stats/3943863-cls_three.md)
-- [cls_two](chain_len_stats/3943864-cls_two.md)
+- [cls_five_or_more](./chain_len_stats/api-3943860-cls_five_or_more.md)
+- [cls_four](./chain_len_stats/api-3943861-cls_four.md)
+- [cls_one](./chain_len_stats/api-3943862-cls_one.md)
+- [cls_three](./chain_len_stats/api-3943863-cls_three.md)
+- [cls_two](./chain_len_stats/api-3943864-cls_two.md)
 
 
 ---

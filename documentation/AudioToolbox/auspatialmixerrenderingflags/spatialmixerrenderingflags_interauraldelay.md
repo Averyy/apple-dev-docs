@@ -1,15 +1,16 @@
 # spatialMixerRenderingFlags_InterAuralDelay
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,9 +18,14 @@
 static var spatialMixerRenderingFlags_InterAuralDelay: AUSpatialMixerRenderingFlags { get }
 ```
 
+```c
+kSpatialMixerRenderingFlags_InterAuralDelay
+```
+
 ## See Also
 
-- [static var spatialMixerRenderingFlags_DistanceAttenuation: AUSpatialMixerRenderingFlags](auspatialmixerrenderingflags/spatialmixerrenderingflags_distanceattenuation.md)
+### Constants
+- [static var spatialMixerRenderingFlags_DistanceAttenuation: AUSpatialMixerRenderingFlags](./spatialmixerrenderingflags_distanceattenuation.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # endTimeZone
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time zone for the event’s end date.
 
@@ -20,15 +21,20 @@ The time zone for the event’s end date.
 var endTimeZone: TimeZone? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSTimeZone * endTimeZone;
+```
+
 ## See Also
 
-- [var isAllDay: Bool](ddmatchcalendarevent/isallday.md)
+### Getting event details
+- [var isAllDay: Bool](./isallday.md)
   A Boolean value that indicates whether the event is an all-day event.
-- [var endDate: Date?](ddmatchcalendarevent/enddate.md)
+- [var endDate: Date?](./enddate.md)
   A date that represents the end of the event.
-- [var startDate: Date?](ddmatchcalendarevent/startdate.md)
+- [var startDate: Date?](./startdate.md)
   A date that represents the start of the event.
-- [var startTimeZone: TimeZone?](ddmatchcalendarevent/starttimezone.md)
+- [var startTimeZone: TimeZone?](./starttimezone.md)
   The time zone for the event’s start date.
 
 

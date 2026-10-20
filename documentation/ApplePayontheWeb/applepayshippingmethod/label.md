@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A short description of the shipping method.
 
@@ -11,21 +12,22 @@ A short description of the shipping method.
 
 ## Declaration
 
-```swift
+```
 required DOMString label;
 ```
 
 ## See Also
 
-- [detail](applepayshippingmethod/detail.md)
+### Working with shipping method properties
+- [detail](./detail.md)
   Additional description of the shipping method.
-- [dateComponentsRange](applepayshippingmethod/datecomponentsrange.md)
+- [dateComponentsRange](./datecomponentsrange.md)
   The expected range of dates for shipping or picking up an item.
-- [identifier](applepayshippingmethod/identifier.md)
+- [identifier](./identifier.md)
   A client-defined value used to identify this shipping method.
-- [amount](applepayshippingmethod/amount.md)
+- [amount](./amount.md)
   The nonnegative cost associated with this shipping method.
-- [ApplePayDateComponentsRange](applepaydatecomponentsrange.md)
+- [ApplePayDateComponentsRange](../applepaydatecomponentsrange.md)
   A dictionary that specifies the start and end dates for a range of time.
 
 

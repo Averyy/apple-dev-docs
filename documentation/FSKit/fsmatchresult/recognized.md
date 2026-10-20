@@ -1,7 +1,8 @@
 # FSMatchResult.recognized
 
 **Framework**: FSKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The probe recognizes the resource but can’t use it.
 
@@ -14,17 +15,22 @@ The probe recognizes the resource but can’t use it.
 case recognized
 ```
 
+```c
+FSMatchResultRecognized
+```
+
 #### Discussion
 
 This match result is appropriate when the file system module identifies the resource’s format but can’t use it. For example, if the resource uses a newer version than the module supports, the module can name the resource but can’t safely do anything with it.
 
 ## See Also
 
-- [FSMatchResult.usable](fsmatchresult/usable.md)
+### Working with match results
+- [FSMatchResult.usable](./usable.md)
   The probe recognizes the resource and is ready to use it.
-- [FSMatchResult.usableButLimited](fsmatchresult/usablebutlimited.md)
+- [FSMatchResult.usableButLimited](./usablebutlimited.md)
   The probe recognizes the resource and is ready to use it, but only in a limited capacity.
-- [FSMatchResult.notRecognized](fsmatchresult/notrecognized.md)
+- [FSMatchResult.notRecognized](./notrecognized.md)
   The probe doesn’t recognize the resource.
 
 

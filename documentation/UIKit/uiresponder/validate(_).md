@@ -1,7 +1,8 @@
 # validate(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the receiving responder to validate the command.
 
@@ -18,6 +19,10 @@ Asks the receiving responder to validate the command.
 func validate(_ command: UICommand)
 ```
 
+```objc
+- (void) validateCommand:(UICommand *) command;
+```
+
 #### Discussion
 
 Override this method in your view controller to make changes to a command before the command system renders it as a menu item.
@@ -28,11 +33,12 @@ Override this method in your view controller to make changes to a command before
 
 ## See Also
 
-- [func buildMenu(with: any UIMenuBuilder)](uiresponder/buildmenu(with:).md)
+### Building and validating commands
+- [func buildMenu(with: any UIMenuBuilder)](./buildmenu%28with%29.md)
   Asks the receiving responder to add and remove items from a menu system.
-- [func canPerformAction(Selector, withSender: Any?) -> Bool](uiresponder/canperformaction(_:withsender:).md)
+- [func canPerformAction(Selector, withSender: Any?) -> Bool](./canperformaction%28_,withsender%29.md)
   Requests the receiving responder to enable or disable the specified command in the user interface.
-- [func target(forAction: Selector, withSender: Any?) -> Any?](uiresponder/target(foraction:withsender:).md)
+- [func target(forAction: Selector, withSender: Any?) -> Any?](./target%28foraction,withsender%29.md)
   Returns the target object that responds to an action.
 
 

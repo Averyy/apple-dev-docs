@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new frame-based cadence with a frame rate.
 
@@ -19,13 +20,18 @@ Creates a new frame-based cadence with a frame rate.
 init(_ frameRate: Int)
 ```
 
+```objc
+- (instancetype) initWithFrameRate:(NSInteger) frameRate;
+```
+
 ## Parameters
 
 - `frameRate`: The frame rate at which to process video.
 
 ## See Also
 
-- [init(frameRate: Int)](vnvideoprocessor/frameratecadence/init(framerate:).md)
+### Creating a Cadence
+- [init(frameRate: Int)](./init%28framerate%29.md)
 
 
 ---

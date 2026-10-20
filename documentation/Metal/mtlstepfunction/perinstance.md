@@ -1,7 +1,8 @@
 # MTLStepFunction.perInstance
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The function fetches data based on the instance index.
 
@@ -19,23 +20,28 @@ The function fetches data based on the instance index.
 case perInstance
 ```
 
+```c
+MTLStepFunctionPerInstance
+```
+
 ## See Also
 
-- [MTLStepFunction.constant](mtlstepfunction/constant.md)
+### Step options
+- [MTLStepFunction.constant](./constant.md)
   The function fetches attribute data once.
-- [MTLStepFunction.perPatch](mtlstepfunction/perpatch.md)
+- [MTLStepFunction.perPatch](./perpatch.md)
   The post-tessellation function fetches data based on the patch index of the patch.
-- [MTLStepFunction.perPatchControlPoint](mtlstepfunction/perpatchcontrolpoint.md)
+- [MTLStepFunction.perPatchControlPoint](./perpatchcontrolpoint.md)
   The post-tessellation function fetches data based on the control-point indices associated with the patch.
-- [MTLStepFunction.perVertex](mtlstepfunction/pervertex.md)
+- [MTLStepFunction.perVertex](./pervertex.md)
   The vertex function fetches data for every vertex.
-- [MTLStepFunction.threadPositionInGridX](mtlstepfunction/threadpositioningridx.md)
+- [MTLStepFunction.threadPositionInGridX](./threadpositioningridx.md)
   The compute function fetches data based on the thread’s `x` coordinate.
-- [MTLStepFunction.threadPositionInGridY](mtlstepfunction/threadpositioningridy.md)
+- [MTLStepFunction.threadPositionInGridY](./threadpositioningridy.md)
   The compute function fetches data based on the thread’s `y` coordinate.
-- [MTLStepFunction.threadPositionInGridXIndexed](mtlstepfunction/threadpositioningridxindexed.md)
+- [MTLStepFunction.threadPositionInGridXIndexed](./threadpositioningridxindexed.md)
   The compute function fetches data by using the thread’s `x` coordinate to look up a value in the index buffer.
-- [MTLStepFunction.threadPositionInGridYIndexed](mtlstepfunction/threadpositioningridyindexed.md)
+- [MTLStepFunction.threadPositionInGridYIndexed](./threadpositioningridyindexed.md)
   The compute function fetches data by using the thread’s `y` coordinate to look up a value in the index buffer.
 
 

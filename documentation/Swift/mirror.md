@@ -1,7 +1,8 @@
 # Mirror
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A representation of the substructure and display style of an instance of any type.
 
@@ -43,59 +44,60 @@ To customize the mirror representation of a custom type, add conformance to the 
 ## Topics
 
 ### Querying Descendants
-- [func descendant(any MirrorPath, any MirrorPath...) -> Any?](mirror/descendant(_:_:).md)
+- [func descendant(any MirrorPath, any MirrorPath...) -> Any?](./mirror/descendant%28_,_%29.md)
   Returns a specific descendant of the reflected subject, or `nil` if no such descendant exists.
-- [protocol MirrorPath](mirrorpath.md)
+- [protocol MirrorPath](./mirrorpath.md)
   A protocol for legitimate arguments to `Mirror`’s `descendant` method.
 ### Initializers
-- [init<Subject>(Subject, children: KeyValuePairs<String, Any>, displayStyle: Mirror.DisplayStyle?, ancestorRepresentation: Mirror.AncestorRepresentation)](mirror/init(_:children:displaystyle:ancestorrepresentation:)-34d91.md)
+- [init<Subject>(Subject, children: KeyValuePairs<String, Any>, displayStyle: Mirror.DisplayStyle?, ancestorRepresentation: Mirror.AncestorRepresentation)](./mirror/init%28_,children,displaystyle,ancestorrepresentation%29-34d91.md)
   Creates a mirror representing the given subject using a dictionary literal for the structure.
-- [init<Subject, C>(Subject, children: C, displayStyle: Mirror.DisplayStyle?, ancestorRepresentation: Mirror.AncestorRepresentation)](mirror/init(_:children:displaystyle:ancestorrepresentation:)-4af97.md)
+- [init<Subject, C>(Subject, children: C, displayStyle: Mirror.DisplayStyle?, ancestorRepresentation: Mirror.AncestorRepresentation)](./mirror/init%28_,children,displaystyle,ancestorrepresentation%29-4af97.md)
   Creates a mirror representing the given subject with a specified structure.
-- [init<Subject, C>(Subject, unlabeledChildren: C, displayStyle: Mirror.DisplayStyle?, ancestorRepresentation: Mirror.AncestorRepresentation)](mirror/init(_:unlabeledchildren:displaystyle:ancestorrepresentation:).md)
+- [init<Subject, C>(Subject, unlabeledChildren: C, displayStyle: Mirror.DisplayStyle?, ancestorRepresentation: Mirror.AncestorRepresentation)](./mirror/init%28_,unlabeledchildren,displaystyle,ancestorrepresentation%29.md)
   Creates a mirror representing the given subject with unlabeled children.
-- [init(reflecting: Any)](mirror/init(reflecting:).md)
+- [init(reflecting: Any)](./mirror/init%28reflecting%29.md)
   Creates a mirror that reflects on the given instance.
-- [init(reflectingForTest: some Any)](mirror/init(reflectingfortest:)-5t8yc.md)
+- [init(reflectingForTest: some Any)](./mirror/init%28reflectingfortest%29-5t8yc.md)
   Initialize this instance so that it can be presented in a test’s output.
-- [init(reflectingForTest: some CustomTestReflectable)](mirror/init(reflectingfortest:)-6nh7d.md)
+- [init(reflectingForTest: some CustomTestReflectable)](./mirror/init%28reflectingfortest%29-6nh7d.md)
   Initialize this instance so that it can be presented in a test’s output.
 ### Instance Properties
-- [let children: Mirror.Children](mirror/children-swift.property.md)
+- [let children: Mirror.Children](./mirror/children-swift.property.md)
   A collection of `Child` elements describing the structure of the reflected subject.
-- [let displayStyle: Mirror.DisplayStyle?](mirror/displaystyle-swift.property.md)
+- [let displayStyle: Mirror.DisplayStyle?](./mirror/displaystyle-swift.property.md)
   A suggested display style for the reflected subject.
-- [let subjectType: any Any.Type](mirror/subjecttype.md)
+- [let subjectType: any Any.Type](./mirror/subjecttype.md)
   The static type of the subject being reflected.
-- [var superclassMirror: Mirror?](mirror/superclassmirror.md)
+- [var superclassMirror: Mirror?](./mirror/superclassmirror.md)
   A mirror of the subject’s superclass, if one exists.
 ### Type Aliases
-- [typealias Child](mirror/child.md)
+- [typealias Child](./mirror/child.md)
   An element of the reflected instance’s structure.
-- [typealias Children](mirror/children-swift.typealias.md)
+- [typealias Children](./mirror/children-swift.typealias.md)
   The type used to represent substructure.
 ### Enumerations
-- [Mirror.AncestorRepresentation](mirror/ancestorrepresentation.md)
+- [Mirror.AncestorRepresentation](./mirror/ancestorrepresentation.md)
   The representation to use for ancestor classes.
-- [Mirror.DisplayStyle](mirror/displaystyle-swift.enum.md)
+- [Mirror.DisplayStyle](./mirror/displaystyle-swift.enum.md)
   A suggestion of how a mirror’s subject is to be interpreted.
 ### Default Implementations
-- [CustomReflectable Implementations](mirror/customreflectable-implementations.md)
-- [CustomStringConvertible Implementations](mirror/customstringconvertible-implementations.md)
+- [CustomReflectable Implementations](./mirror/customreflectable-implementations.md)
+- [CustomStringConvertible Implementations](./mirror/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
-- [CustomReflectable](customreflectable.md)
-- [CustomStringConvertible](customstringconvertible.md)
-- [Escapable](escapable.md)
+- [Copyable](./copyable.md)
+- [CustomReflectable](./customreflectable.md)
+- [CustomStringConvertible](./customstringconvertible.md)
+- [Escapable](./escapable.md)
 
 ## See Also
 
-- [struct ObjectIdentifier](objectidentifier.md)
+### Querying Runtime Values
+- [struct ObjectIdentifier](./objectidentifier.md)
   A unique identifier for a class instance, actor instance, or metatype.
-- [func type<T, Metatype>(of: borrowing T) -> Metatype](type(of:).md)
+- [func type<T, Metatype>(of: borrowing T) -> Metatype](./type%28of%29.md)
   Returns the dynamic type of a value.
 
 

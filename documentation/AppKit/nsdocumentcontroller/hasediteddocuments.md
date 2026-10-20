@@ -1,12 +1,13 @@
 # hasEditedDocuments
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the receiver has any documents with unsaved changes.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,26 @@ A Boolean value indicating whether the receiver has any documents with unsaved c
 var hasEditedDocuments: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL hasEditedDocuments;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the document controller contains documents with unsaved changes; otherwise, the value is [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](../../Swift/true.md) if the document controller contains documents with unsaved changes; otherwise, the value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var documents: [NSDocument]](nsdocumentcontroller/documents.md)
+### Managing Documents
+- [var documents: [NSDocument]](./documents.md)
   The document objects managed by the receiver.
-- [func addDocument(NSDocument)](nsdocumentcontroller/adddocument(_:).md)
+- [func addDocument(NSDocument)](./adddocument%28_%29.md)
   Adds the given document to the list of open documents.
-- [var currentDocument: NSDocument?](nsdocumentcontroller/currentdocument.md)
+- [var currentDocument: NSDocument?](./currentdocument.md)
   The document object associated with the main window.
-- [func document(for: NSWindow) -> NSDocument?](nsdocumentcontroller/document(for:)-a5yd.md)
+- [func document(for: NSWindow) -> NSDocument?](./document%28for%29-a5yd.md)
   Returns the document object whose window controller owns a specified window.
-- [func removeDocument(NSDocument)](nsdocumentcontroller/removedocument(_:).md)
+- [func removeDocument(NSDocument)](./removedocument%28_%29.md)
   Removes the given document from the list of open documents.
 
 

@@ -10,40 +10,41 @@ The resource was not found.
 
 ## Declaration
 
-```swift
+```
 const String NOT_FOUND;
 ```
 
 ## See Also
 
-- [ACCESS_DENIED](cloudkit.ckerror/access_denied.md)
+### Constants
+- [ACCESS_DENIED](./access_denied.md)
   You don’t have permission to access the endpoint, record, zone, or database.
-- [ATOMIC_ERROR](cloudkit.ckerror/atomic_error.md)
+- [ATOMIC_ERROR](./atomic_error.md)
   An atomic batch operation failed.
-- [AUTH_PERSIST_ERROR](cloudkit.ckerror/auth_persist_error.md)
-- [AUTHENTICATION_FAILED](cloudkit.ckerror/authentication_failed.md)
+- [AUTH_PERSIST_ERROR](./auth_persist_error.md)
+- [AUTHENTICATION_FAILED](./authentication_failed.md)
   Authentication was rejected.
-- [AUTHENTICATION_REQUIRED](cloudkit.ckerror/authentication_required.md)
+- [AUTHENTICATION_REQUIRED](./authentication_required.md)
   The request requires authentication but none was provided.
-- [BAD_REQUEST](cloudkit.ckerror/bad_request.md)
+- [BAD_REQUEST](./bad_request.md)
   The request was not valid.
-- [CONFIGURATION_ERROR](cloudkit.ckerror/configuration_error.md)
+- [CONFIGURATION_ERROR](./configuration_error.md)
   CloudKit JS configuration error. For example, no containers are configured.
-- [CONFLICT](cloudkit.ckerror/conflict.md)
+- [CONFLICT](./conflict.md)
   The `recordChangeTag` value expired. (Retry the request with the latest tag.)
-- [EXISTS](cloudkit.ckerror/exists.md)
+- [EXISTS](./exists.md)
   The resource that you attempted to create already exists.
-- [INTERNAL_ERROR](cloudkit.ckerror/internal_error.md)
+- [INTERNAL_ERROR](./internal_error.md)
   An internal error occurred.
-- [INVALID_ARGUMENTS](cloudkit.ckerror/invalid_arguments.md)
+- [INVALID_ARGUMENTS](./invalid_arguments.md)
   The parameters you provided for this method are invalid.
-- [NETWORK_ERROR](cloudkit.ckerror/network_error.md)
+- [NETWORK_ERROR](./network_error.md)
   A network error occurred, such as a connection time out.
-- [QUOTA_EXCEEDED](cloudkit.ckerror/quota_exceeded.md)
+- [QUOTA_EXCEEDED](./quota_exceeded.md)
   If accessing the public database, you  exceeded the app’s quota. If accessing the private database, you exceeded the user’s iCloud quota.
-- [SERVICE_UNAVAILABLE](cloudkit.ckerror/service_unavailable.md)
+- [SERVICE_UNAVAILABLE](./service_unavailable.md)
   The CloudKit service could not be reached.
-- [SHARE_UI_TIMEOUT](cloudkit.ckerror/share_ui_timeout.md)
+- [SHARE_UI_TIMEOUT](./share_ui_timeout.md)
   The share UI failed to load and timed out.
 
 

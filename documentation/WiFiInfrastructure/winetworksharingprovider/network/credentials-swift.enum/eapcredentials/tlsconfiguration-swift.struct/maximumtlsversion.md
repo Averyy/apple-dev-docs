@@ -1,7 +1,8 @@
 # maximumTLSVersion
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The newest version of Transport Layer Security (TLS) that this configuration accepts to authenticate this network.
 

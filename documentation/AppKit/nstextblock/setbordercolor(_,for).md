@@ -1,17 +1,22 @@
 # setBorderColor(_:for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the border color of the specified edge of the text block.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 27.0
 
 ## Declaration
 
 ```swift
 func setBorderColor(_ color: NSColor?, for edge: NSRectEdge)
+```
+
+```objc
+- (void) setBorderColor:(NSColor *) color forEdge:(NSRectEdge) edge;
 ```
 
 #### Discussion
@@ -25,16 +30,18 @@ This setting has no visible effect unless the border width is larger than the de
 
 ## See Also
 
-- [func setWidth(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Layer)](nstextblock/setwidth(_:type:for:).md)
+### Related Documentation
+- [func setWidth(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Layer)](./setwidth%28_,type,for%29.md)
   Sets the width of all edges of a specified layer of the text block.
-- [func setWidth(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Layer, edge: NSRectEdge)](nstextblock/setwidth(_:type:for:edge:).md)
+### Deprecated
+- [func setWidth(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Layer, edge: NSRectEdge)](./setwidth%28_,type,for,edge%29.md)
   Sets the width of a specified edge of a specified layer of the text block.
-- [func width(for: NSTextBlock.Layer, edge: NSRectEdge) -> CGFloat](nstextblock/width(for:edge:).md)
+- [func width(for: NSTextBlock.Layer, edge: NSRectEdge) -> CGFloat](./width%28for,edge%29.md)
   Returns the width of an edge of a specified layer of the text block.
-- [func widthValueType(for: NSTextBlock.Layer, edge: NSRectEdge) -> NSTextBlock.ValueType](nstextblock/widthvaluetype(for:edge:).md)
+- [func widthValueType(for: NSTextBlock.Layer, edge: NSRectEdge) -> NSTextBlock.ValueType](./widthvaluetype%28for,edge%29.md)
   Returns the value type of an edge of a specified layer of the text block.
-- [func borderColor(for: NSRectEdge) -> NSColor?](nstextblock/bordercolor(for:)-273pl.md)
-- [func borderColor(for: CGRectEdge) -> NSColor?](nstextblock/bordercolor(for:)-5m8cr.md)
+- [func borderColor(for: NSRectEdge) -> NSColor?](./bordercolor%28for%29-273pl.md)
+- [func borderColor(for: CGRectEdge) -> NSColor?](./bordercolor%28for%29-5m8cr.md)
 
 
 ---

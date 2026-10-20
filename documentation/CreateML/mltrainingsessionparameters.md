@@ -1,7 +1,8 @@
 # MLTrainingSessionParameters
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The configuration settings for a training session.
 
@@ -22,31 +23,32 @@ struct MLTrainingSessionParameters
 ## Topics
 
 ### Creating a session’s parameters
-- [init(sessionDirectory: URL?, reportInterval: Int, checkpointInterval: Int, iterations: Int)](mltrainingsessionparameters/init(sessiondirectory:reportinterval:checkpointinterval:iterations:).md)
+- [init(sessionDirectory: URL?, reportInterval: Int, checkpointInterval: Int, iterations: Int)](./mltrainingsessionparameters/init%28sessiondirectory,reportinterval,checkpointinterval,iterations%29.md)
   Creates a set of parameters for a training session.
 ### Configuring the session’s parameters
-- [let sessionDirectory: URL?](mltrainingsessionparameters/sessiondirectory.md)
+- [let sessionDirectory: URL?](./mltrainingsessionparameters/sessiondirectory.md)
   The location in the file system where the session stores its progress.
-- [var reportInterval: Int](mltrainingsessionparameters/reportinterval.md)
+- [var reportInterval: Int](./mltrainingsessionparameters/reportinterval.md)
   The number of iterations the session completes before it reports its progress.
-- [var checkpointInterval: Int](mltrainingsessionparameters/checkpointinterval.md)
+- [var checkpointInterval: Int](./mltrainingsessionparameters/checkpointinterval.md)
   The number of iterations the session completes before it saves a checkpoint.
-- [var iterations: Int](mltrainingsessionparameters/iterations.md)
+- [var iterations: Int](./mltrainingsessionparameters/iterations.md)
   The maximum number of iterations for the training session.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class MLJob](mljob.md)
+### Model training Control
+- [class MLJob](./mljob.md)
   The representation of a model’s asynchronous training session you use to monitor the session’s progress or terminate its execution.
-- [class MLTrainingSession](mltrainingsession.md)
+- [class MLTrainingSession](./mltrainingsession.md)
   The current state of a model’s asynchronous training session.
-- [struct MLCheckpoint](mlcheckpoint.md)
+- [struct MLCheckpoint](./mlcheckpoint.md)
   The state of a model’s asynchronous training session at a specific point in time during the feature extraction or training phase.
 
 

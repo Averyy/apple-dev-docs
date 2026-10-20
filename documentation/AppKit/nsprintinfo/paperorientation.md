@@ -1,7 +1,8 @@
 # NSPrintInfo.PaperOrientation
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the orientation of printing on a page.
 
@@ -14,47 +15,52 @@ Constants that describe the orientation of printing on a page.
 enum PaperOrientation
 ```
 
+```c
+enum NSPaperOrientation : NSInteger;
+```
+
 ## Topics
 
 ### Orientations
-- [NSPrintInfo.PaperOrientation.portrait](nsprintinfo/paperorientation/portrait.md)
+- [NSPrintInfo.PaperOrientation.portrait](./paperorientation/portrait.md)
   Pages are printed in portrait orientation.
-- [NSPrintInfo.PaperOrientation.landscape](nsprintinfo/paperorientation/landscape.md)
+- [NSPrintInfo.PaperOrientation.landscape](./paperorientation/landscape.md)
   Pages are printed in landscape orientation.
 ### Initializers
-- [init?(rawValue: Int)](nsprintinfo/paperorientation/init(rawvalue:).md)
+- [init?(rawValue: Int)](./paperorientation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var paperSize: NSSize](nsprintinfo/papersize.md)
+### Managing the Printing Rectangle
+- [var paperSize: NSSize](./papersize.md)
   The size of the paper.
-- [var topMargin: CGFloat](nsprintinfo/topmargin.md)
+- [var topMargin: CGFloat](./topmargin.md)
   The top margin to the specified size.
-- [var bottomMargin: CGFloat](nsprintinfo/bottommargin.md)
+- [var bottomMargin: CGFloat](./bottommargin.md)
   The height of the bottom margin.
-- [var leftMargin: CGFloat](nsprintinfo/leftmargin.md)
+- [var leftMargin: CGFloat](./leftmargin.md)
   The width of the left margin.
-- [var rightMargin: CGFloat](nsprintinfo/rightmargin.md)
+- [var rightMargin: CGFloat](./rightmargin.md)
   The width of the right margin.
-- [var imageablePageBounds: NSRect](nsprintinfo/imageablepagebounds.md)
+- [var imageablePageBounds: NSRect](./imageablepagebounds.md)
   The imageable area of a sheet of paper specified by the print info.
-- [var orientation: NSPrintInfo.PaperOrientation](nsprintinfo/orientation-swift.property.md)
+- [var orientation: NSPrintInfo.PaperOrientation](./orientation-swift.property.md)
   The orientation attribute.
-- [var paperName: NSPrinter.PaperName?](nsprintinfo/papername.md)
+- [var paperName: NSPrinter.PaperName?](./papername.md)
   The name of the currently selected paper size.
-- [NSPrinter.PaperName](nsprinter/papername.md)
+- [NSPrinter.PaperName](../nsprinter/papername.md)
   The type you use to specify the name of a type of paper.
-- [var localizedPaperName: String?](nsprintinfo/localizedpapername.md)
+- [var localizedPaperName: String?](./localizedpapername.md)
   The human-readable name of the currently selected paper size, suitable for presentation in user interfaces.
 
 

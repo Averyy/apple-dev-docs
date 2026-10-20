@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The timestamp that contains the time corresponding to the location acquisition.
 
@@ -10,7 +11,7 @@ The timestamp that contains the time corresponding to the location acquisition.
 
 ## Declaration
 
-```swift
+```
 readonly timestamp: Date;
 ```
 

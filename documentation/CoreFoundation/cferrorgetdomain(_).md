@@ -1,7 +1,8 @@
 # CFErrorGetDomain(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the error domain for a given CFError.
 
@@ -20,9 +21,13 @@ Returns the error domain for a given CFError.
 func CFErrorGetDomain(_ err: CFError!) -> CFErrorDomain!
 ```
 
+```c
+extern CFErrorDomainCFErrorGetDomain(CFErrorRef err);
+```
+
 #### Return Value
 
-The error domain for `err`. Ownership follows the [`The Get Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
+The error domain for `err`. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 
 ## Parameters
 
@@ -30,15 +35,16 @@ The error domain for `err`. Ownership follows the [`The Get Rule`](https://devel
 
 ## See Also
 
-- [func CFErrorGetCode(CFError!) -> CFIndex](cferrorgetcode(_:).md)
+### Getting Information About an Error
+- [func CFErrorGetCode(CFError!) -> CFIndex](./cferrorgetcode%28_%29.md)
   Returns the error code for a given CFError.
-- [func CFErrorCopyUserInfo(CFError!) -> CFDictionary!](cferrorcopyuserinfo(_:).md)
+- [func CFErrorCopyUserInfo(CFError!) -> CFDictionary!](./cferrorcopyuserinfo%28_%29.md)
   Returns the user info dictionary for a given CFError.
-- [func CFErrorCopyDescription(CFError!) -> CFString!](cferrorcopydescription(_:).md)
+- [func CFErrorCopyDescription(CFError!) -> CFString!](./cferrorcopydescription%28_%29.md)
   Returns a human-presentable description for a given error.
-- [func CFErrorCopyFailureReason(CFError!) -> CFString!](cferrorcopyfailurereason(_:).md)
+- [func CFErrorCopyFailureReason(CFError!) -> CFString!](./cferrorcopyfailurereason%28_%29.md)
   Returns a human-presentable failure reason for a given error.
-- [func CFErrorCopyRecoverySuggestion(CFError!) -> CFString!](cferrorcopyrecoverysuggestion(_:).md)
+- [func CFErrorCopyRecoverySuggestion(CFError!) -> CFString!](./cferrorcopyrecoverysuggestion%28_%29.md)
   Returns a human presentable recovery suggestion for a given error.
 
 

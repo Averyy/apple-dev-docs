@@ -1,7 +1,8 @@
 # kernelDiameter
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The diameter, in pixels, of the filter window.
 
@@ -17,6 +18,10 @@ The diameter, in pixels, of the filter window.
 
 ```swift
 var kernelDiameter: Int { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSUInteger kernelDiameter;
 ```
 
 #### Discussion

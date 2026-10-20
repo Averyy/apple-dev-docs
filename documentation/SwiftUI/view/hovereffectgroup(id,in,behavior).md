@@ -1,9 +1,10 @@
 # hoverEffectGroup(id:in:behavior:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Adds a [`HoverEffectGroup`](hovereffectgroup.md) to all effects defined on descendant views, and activates the group whenever this view or any descendant views are hovered.
+Adds a [`HoverEffectGroup`](../hovereffectgroup.md) to all effects defined on descendant views, and activates the group whenever this view or any descendant views are hovered.
 
 **Availability**:
 - visionOS 2.0+
@@ -50,7 +51,7 @@ struct EffectView: View {
 
 The effect group is uniquely identified by combining the `id` and `namespace` parameters. If an `id` is not provided, the effect will be identified by the `namespace` alone. Providing a `name` is useful when creating effects that use multiple, related groups.
 
-The default behavior of a matched effect is to activate the effect group when hovered. The `behavior` parameter can be used to choose alternative behaviors. See [`HoverEffectGroup.Behavior`](hovereffectgroup/behavior.md) for all possible behaviors.
+The default behavior of a matched effect is to activate the effect group when hovered. The `behavior` parameter can be used to choose alternative behaviors. See [`HoverEffectGroup.Behavior`](../hovereffectgroup/behavior.md) for all possible behaviors.
 
 ## Parameters
 
@@ -60,33 +61,34 @@ The default behavior of a matched effect is to activate the effect group when ho
 
 ## See Also
 
-- [func hoverEffect(HoverEffect) -> some View](view/hovereffect(_:).md)
+### Changing view appearance for hover events
+- [func hoverEffect(HoverEffect) -> some View](./hovereffect%28_%29.md)
   Applies a hover effect to this view.
-- [struct HoverEffect](hovereffect.md)
+- [struct HoverEffect](../hovereffect.md)
   An effect applied when the pointer hovers over a view.
-- [func hoverEffect(some CustomHoverEffect, in: HoverEffectGroup?, isEnabled: Bool) -> some View](view/hovereffect(_:in:isenabled:).md)
-  Applies a hover effect to this view, optionally adding it to a [`HoverEffectGroup`](hovereffectgroup.md).
-- [func hoverEffect(in: HoverEffectGroup?, isEnabled: Bool, body: (EmptyHoverEffectContent, Bool, GeometryProxy) -> some HoverEffectContent) -> some View](view/hovereffect(in:isenabled:body:).md)
+- [func hoverEffect(some CustomHoverEffect, in: HoverEffectGroup?, isEnabled: Bool) -> some View](./hovereffect%28_,in,isenabled%29.md)
+  Applies a hover effect to this view, optionally adding it to a [`HoverEffectGroup`](../hovereffectgroup.md).
+- [func hoverEffect(in: HoverEffectGroup?, isEnabled: Bool, body: (EmptyHoverEffectContent, Bool, GeometryProxy) -> some HoverEffectContent) -> some View](./hovereffect%28in,isenabled,body%29.md)
   Applies a hover effect to this view described by the given closure.
-- [protocol CustomHoverEffect](customhovereffect.md)
+- [protocol CustomHoverEffect](../customhovereffect.md)
   A type that represents how a view should change when a pointer hovers over a view, or when someone looks at the view.
-- [struct ContentHoverEffect](contenthovereffect.md)
+- [struct ContentHoverEffect](../contenthovereffect.md)
   A `CustomHoverEffect` that applies effects to a view on hover using a closure.
-- [struct HoverEffectGroup](hovereffectgroup.md)
+- [struct HoverEffectGroup](../hovereffectgroup.md)
   Describes a grouping of effects that activate together.
-- [func hoverEffectGroup() -> some View](view/hovereffectgroup.md)
-  Adds an implicit [`HoverEffectGroup`](hovereffectgroup.md) to all effects defined on descendant views, so that all effects added to subviews activate as a group whenever this view or any descendant views are hovered.
-- [func hoverEffectGroup(HoverEffectGroup?) -> some View](view/hovereffectgroup(_:).md)
-  Adds a [`HoverEffectGroup`](hovereffectgroup.md) to all effects defined on descendant views, and activates the group whenever this view or any descendant views are hovered.
-- [struct GroupHoverEffect](grouphovereffect.md)
+- [func hoverEffectGroup() -> some View](./hovereffectgroup%28%29.md)
+  Adds an implicit [`HoverEffectGroup`](../hovereffectgroup.md) to all effects defined on descendant views, so that all effects added to subviews activate as a group whenever this view or any descendant views are hovered.
+- [func hoverEffectGroup(HoverEffectGroup?) -> some View](./hovereffectgroup%28_%29.md)
+  Adds a [`HoverEffectGroup`](../hovereffectgroup.md) to all effects defined on descendant views, and activates the group whenever this view or any descendant views are hovered.
+- [struct GroupHoverEffect](../grouphovereffect.md)
   A `CustomHoverEffect` that activates a named group of effects.
-- [protocol HoverEffectContent](hovereffectcontent.md)
+- [protocol HoverEffectContent](../hovereffectcontent.md)
   A type that describes the effects of a view for a particular hover effect phase.
-- [struct EmptyHoverEffectContent](emptyhovereffectcontent.md)
+- [struct EmptyHoverEffectContent](../emptyhovereffectcontent.md)
   An empty base effect that you use to build other effects.
-- [func handPointerBehavior(HandPointerBehavior?) -> some View](view/handpointerbehavior(_:).md)
+- [func handPointerBehavior(HandPointerBehavior?) -> some View](./handpointerbehavior%28_%29.md)
   Sets the behavior of the hand pointer while the user is interacting with the view.
-- [struct HandPointerBehavior](handpointerbehavior.md)
+- [struct HandPointerBehavior](../handpointerbehavior.md)
   A behavior that can be applied to the hand pointer while the user is interacting with a view.
 
 

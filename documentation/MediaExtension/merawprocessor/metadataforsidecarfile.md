@@ -1,7 +1,8 @@
 # metadataForSidecarFile
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 26.0+
@@ -10,6 +11,10 @@
 
 ```swift
 optional var metadataForSidecarFile: Data { get }
+```
+
+```objc
+@property (readonly) NSData * metadataForSidecarFile;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # canAddNode(_:)
 
 **Framework**: Compute Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the given node can be added to the graph.
 
@@ -12,7 +13,7 @@ Returns whether the given node can be added to the graph.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -22,11 +23,11 @@ func canAddNode(_ node: ComputeNodeGraph.Node) -> Bool
 
 #### Return Value
 
-`true` if calling [`addNode(_:)`](computenodegraph/addnode(_:).md) with this node would succeed.
+`true` if calling [`addNode(_:)`](./addnode%28_%29.md) with this node would succeed.
 
 #### Discussion
 
-This is the non-throwing preflight check for [`addNode(_:)`](computenodegraph/addnode(_:).md). Use it to validate a node — for example, to gate UI affordances — without modifying the graph.
+This is the non-throwing preflight check for [`addNode(_:)`](./addnode%28_%29.md). Use it to validate a node — for example, to gate UI affordances — without modifying the graph.
 
 ## Parameters
 

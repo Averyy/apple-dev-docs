@@ -1,23 +1,25 @@
 # SubtractFWCycleTimeFromFWCycleTime
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 UInt32 SubtractFWCycleTimeFromFWCycleTime(UInt32 cycleTime1, UInt32 cycleTime2);
 ```
 
 ## See Also
 
-- [AddFWCycleTimeToFWCycleTime](1589089-addfwcycletimetofwcycletime.md)
-- [IOFWGetAbsoluteTime](1589086-iofwgetabsolutetime.md)
-- [FWComputeCRC16](1589088-fwcomputecrc16.md)
-- [FWUpdateCRC16](1589087-fwupdatecrc16.md)
+### Utilities
+- [AddFWCycleTimeToFWCycleTime](./api-1589089-addfwcycletimetofwcycletime.md)
+- [IOFWGetAbsoluteTime](./api-1589086-iofwgetabsolutetime.md)
+- [FWComputeCRC16](./api-1589088-fwcomputecrc16.md)
+- [FWUpdateCRC16](./api-1589087-fwupdatecrc16.md)
 
 
 ---

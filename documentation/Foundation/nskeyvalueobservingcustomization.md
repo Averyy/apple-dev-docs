@@ -1,7 +1,8 @@
 # NSKeyValueObservingCustomization
 
 **Framework**: Foundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Conforming to NSKeyValueObservingCustomization is not required to use Key-Value Observing. Provide an implementation of these functions if you need to disable auto-notifying for a key, or add dependent keys
 
@@ -23,17 +24,18 @@ protocol NSKeyValueObservingCustomization : NSObjectProtocol
 ## Topics
 
 ### Type Methods
-- [static func automaticallyNotifiesObservers(for: AnyKeyPath) -> Bool](nskeyvalueobservingcustomization/automaticallynotifiesobservers(for:).md)
-- [static func keyPathsAffectingValue(for: AnyKeyPath) -> Set<AnyKeyPath>](nskeyvalueobservingcustomization/keypathsaffectingvalue(for:).md)
+- [static func automaticallyNotifiesObservers(for: AnyKeyPath) -> Bool](./nskeyvalueobservingcustomization/automaticallynotifiesobservers%28for%29.md)
+- [static func keyPathsAffectingValue(for: AnyKeyPath) -> Set<AnyKeyPath>](./nskeyvalueobservingcustomization/keypathsaffectingvalue%28for%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol DiscreteFormatStyle](discreteformatstyle.md)
+### Protocols
+- [protocol DiscreteFormatStyle](./discreteformatstyle.md)
   A format style that transforms a continuous input into a discrete output and provides information about its discretization boundaries.
 
 

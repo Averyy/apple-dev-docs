@@ -1,7 +1,8 @@
 # fileProviderErrorForCollision(with:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a properly formatted error object with a `NSFileProviderItemCollisionError` error code.
 
@@ -16,6 +17,10 @@ Returns a properly formatted error object with a `NSFileProviderItemCollisionErr
 
 ```swift
 class func fileProviderErrorForCollision(with existingItem: NSFileProviderItem) -> Self
+```
+
+```objc
++ (instancetype) fileProviderErrorForCollisionWithItem:(NSFileProviderItem) existingItem;
 ```
 
 

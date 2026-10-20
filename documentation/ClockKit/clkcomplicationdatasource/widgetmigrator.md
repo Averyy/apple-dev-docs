@@ -1,7 +1,8 @@
 # widgetMigrator
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A migrator that maps ClockKit complications to their WidgetKit replacements.
 
@@ -14,9 +15,13 @@ A migrator that maps ClockKit complications to their WidgetKit replacements.
 optional var widgetMigrator: any CLKComplicationWidgetMigrator { get }
 ```
 
+```objc
+@property (nonatomic, readonly) id<CLKComplicationWidgetMigrator> widgetMigrator;
+```
+
 #### Discussion
 
-Implement this to provide an instance that can migrate a user’s ClockKit complications to their WidgetKit replacements. For example, update your data source so that it also conforms to the [`CLKComplicationWidgetMigrator`](clkcomplicationwidgetmigrator.md) protocol.
+Implement this to provide an instance that can migrate a user’s ClockKit complications to their WidgetKit replacements. For example, update your data source so that it also conforms to the [`CLKComplicationWidgetMigrator`](../clkcomplicationwidgetmigrator.md) protocol.
 
 ```swift
 class ComplicationController: NSObject, CLKComplicationDataSource, CLKComplicationWidgetMigrator {
@@ -24,7 +29,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource, CLKComplicati
 }
 ```
 
-Then, have its [`widgetMigrator`](clkcomplicationdatasource/widgetmigrator.md) property return `self`.
+Then, have its [`widgetMigrator`](./widgetmigrator.md) property return `self`.
 
 ```swift
 var widgetMigrator: CLKComplicationWidgetMigrator {
@@ -32,7 +37,7 @@ var widgetMigrator: CLKComplicationWidgetMigrator {
 }
 ```
 
-Finally, implement the [`getWidgetConfiguration(from:completionHandler:)`](clkcomplicationwidgetmigrator/getwidgetconfiguration(from:completionhandler:).md) method. This method determines the best WidgetKit configuration for the given complication descriptor. The following example uses the Swift async version of the method.
+Finally, implement the [`getWidgetConfiguration(from:completionHandler:)`](../clkcomplicationwidgetmigrator/getwidgetconfiguration%28from,completionhandler%29.md) method. This method determines the best WidgetKit configuration for the given complication descriptor. The following example uses the Swift async version of the method.
 
 ```swift
 func widgetConfiguration(from complicationDescriptor: CLKComplicationDescriptor) async -> CLKComplicationWidgetMigrationConfiguration? {
@@ -64,15 +69,16 @@ func widgetConfiguration(from complicationDescriptor: CLKComplicationDescriptor)
 
 ## See Also
 
-- [class CLKComplicationStaticWidgetMigrationConfiguration](clkcomplicationstaticwidgetmigrationconfiguration.md)
+### Migrating to WidgetKit
+- [class CLKComplicationStaticWidgetMigrationConfiguration](../clkcomplicationstaticwidgetmigrationconfiguration.md)
   A configuration object that specifies a static complication in WidgetKit.
-- [class CLKComplicationAppIntentWidgetMigrationConfiguration](clkcomplicationappintentwidgetmigrationconfiguration.md)
+- [class CLKComplicationAppIntentWidgetMigrationConfiguration](../clkcomplicationappintentwidgetmigrationconfiguration.md)
   A configuration object that specifies a WidgetKit complication that uses app intents.
-- [class CLKComplicationIntentWidgetMigrationConfiguration](clkcomplicationintentwidgetmigrationconfiguration.md)
+- [class CLKComplicationIntentWidgetMigrationConfiguration](../clkcomplicationintentwidgetmigrationconfiguration.md)
   A configuration object that specifies an intents-based complication in WidgetKit.
-- [protocol CLKComplicationWidgetMigrator](clkcomplicationwidgetmigrator.md)
+- [protocol CLKComplicationWidgetMigrator](../clkcomplicationwidgetmigrator.md)
   A protocol that maps ClockKit complications to their WidgetKit replacements.
-- [class CLKComplicationWidgetMigrationConfiguration](clkcomplicationwidgetmigrationconfiguration.md)
+- [class CLKComplicationWidgetMigrationConfiguration](../clkcomplicationwidgetmigrationconfiguration.md)
   An abstract class that specifies WidgetKit complications.
 
 

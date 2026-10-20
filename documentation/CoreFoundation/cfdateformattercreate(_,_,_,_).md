@@ -1,18 +1,19 @@
 # CFDateFormatterCreate(_:_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a new CFDateFormatter object, localized to the given locale, which will format dates to the given date and time styles.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Creates a new CFDateFormatter object, localized to the given locale, which will 
 func CFDateFormatterCreate(_ allocator: CFAllocator!, _ locale: CFLocale!, _ dateStyle: CFDateFormatterStyle, _ timeStyle: CFDateFormatterStyle) -> CFDateFormatter!
 ```
 
+```c
+extern CFDateFormatterRefCFDateFormatterCreate(CFAllocatorRef allocator, CFLocaleRef locale, CFDateFormatterStyle dateStyle, CFDateFormatterStyle timeStyle);
+```
+
 #### Return Value
 
-A new date formatter, localized to the given locale, which will format dates to the given date and time styles. Returns `NULL` if there was a problem creating the object. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A new date formatter, localized to the given locale, which will format dates to the given date and time styles. Returns `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 #### Discussion
 
@@ -45,9 +50,9 @@ CFShow(dateAsString);
 ## Parameters
 
 - `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
-- `locale`: The locale to use for localization. If `NULL` uses the default system local. Use [`CFLocaleCopyCurrent()`](cflocalecopycurrent().md) to specify the locale of the current user.
-- `dateStyle`: The date style to use when formatting dates. See [`Date Formatter Styles`](date_formatter_styles.md) for possible values.
-- `timeStyle`: The time style to use when formatting times. See [`Date Formatter Styles`](date_formatter_styles.md) for possible values.
+- `locale`: The locale to use for localization. If `NULL` uses the default system local. Use [`CFLocaleCopyCurrent()`](./cflocalecopycurrent%28%29.md) to specify the locale of the current user.
+- `dateStyle`: The date style to use when formatting dates. See [Date Formatter Styles](./date_formatter_styles.md) for possible values.
+- `timeStyle`: The time style to use when formatting times. See [Date Formatter Styles](./date_formatter_styles.md) for possible values.
 
 
 ---

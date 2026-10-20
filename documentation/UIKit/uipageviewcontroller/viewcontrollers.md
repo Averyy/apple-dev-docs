@@ -1,7 +1,8 @@
 # viewControllers
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view controllers displayed by the page view controller.
 
@@ -9,7 +10,7 @@ The view controllers displayed by the page view controller.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,14 +19,19 @@ The view controllers displayed by the page view controller.
 var viewControllers: [UIViewController]? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSArray<__kindof UIViewController *> * viewControllers;
+```
+
 ## See Also
 
-- [func setViewControllers([UIViewController]?, direction: UIPageViewController.NavigationDirection, animated: Bool, completion: ((Bool) -> Void)?)](uipageviewcontroller/setviewcontrollers(_:direction:animated:completion:).md)
+### Providing Content
+- [func setViewControllers([UIViewController]?, direction: UIPageViewController.NavigationDirection, animated: Bool, completion: ((Bool) -> Void)?)](./setviewcontrollers%28_,direction,animated,completion%29.md)
   Sets the view controllers to be displayed.
-- [UIPageViewController.NavigationDirection](uipageviewcontroller/navigationdirection.md)
+- [UIPageViewController.NavigationDirection](./navigationdirection.md)
   Directions for page-turn transitions.
-- [var gestureRecognizers: [UIGestureRecognizer]](uipageviewcontroller/gesturerecognizers.md)
-  An array of [`UIGestureRecognizer`](uigesturerecognizer.md) objects that are configured to handle user interaction.
+- [var gestureRecognizers: [UIGestureRecognizer]](./gesturerecognizers.md)
+  An array of [`UIGestureRecognizer`](../uigesturerecognizer.md) objects that are configured to handle user interaction.
 
 
 ---

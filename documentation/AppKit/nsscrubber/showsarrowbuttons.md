@@ -1,7 +1,8 @@
 # showsArrowButtons
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that specifies whether arrow buttons should be displayed at the leading and trailing edges of the scrubber.
 
@@ -14,17 +15,22 @@ A Boolean value that specifies whether arrow buttons should be displayed at the 
 var showsArrowButtons: Bool { get set }
 ```
 
+```objc
+@property BOOL showsArrowButtons;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var backgroundColor: NSColor?](nsscrubber/backgroundcolor.md)
+### Configuring the scrubber’s appearance
+- [var backgroundColor: NSColor?](./backgroundcolor.md)
   The color displayed behind the scrubber content.
-- [var backgroundView: NSView?](nsscrubber/backgroundview.md)
+- [var backgroundView: NSView?](./backgroundview.md)
   A view that is displayed behind the scrubber content.
-- [var showsAdditionalContentIndicators: Bool](nsscrubber/showsadditionalcontentindicators.md)
+- [var showsAdditionalContentIndicators: Bool](./showsadditionalcontentindicators.md)
   A Boolean value that specifies whether the scrubber should display the existence of additional items beyond the leading and trailing edges.
 
 

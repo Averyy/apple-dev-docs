@@ -1,7 +1,8 @@
 # init(capacity:copying:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new array with the specified initial capacity, holding a copy of the contents of a given sequence.
 

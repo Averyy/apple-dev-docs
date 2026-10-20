@@ -1,7 +1,8 @@
 # learnTogether
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A shared learning activity, such as studying a topic together.
 

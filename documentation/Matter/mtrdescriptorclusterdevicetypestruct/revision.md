@@ -1,7 +1,8 @@
 # revision
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.2+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var revision: NSNumber { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSNumber * revision;
 ```
 
 

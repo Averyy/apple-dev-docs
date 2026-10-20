@@ -1,7 +1,8 @@
 # availableSendBuffer
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of available bytes in the TCP send buffer.
 
@@ -22,7 +23,8 @@ var availableSendBuffer: UInt32 { get }
 
 ## See Also
 
-- [var availableReceiveBuffer: UInt32](nwprotocoltcp/metadata/availablereceivebuffer.md)
+### Inspecting TCP State
+- [var availableReceiveBuffer: UInt32](./availablereceivebuffer.md)
   The number of available bytes in the TCP receive buffer.
 
 

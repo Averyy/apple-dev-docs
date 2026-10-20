@@ -1,7 +1,8 @@
 # session(_:didUpdate:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides a newly captured camera image and accompanying AR information to the delegate.
 
@@ -15,13 +16,17 @@ Provides a newly captured camera image and accompanying AR information to the de
 optional func session(_ session: ARSession, didUpdate frame: ARFrame)
 ```
 
+```objc
+- (void) session:(ARSession *) session didUpdateFrame:(ARFrame *) frame;
+```
+
 ## Mentions
 
-- [Displaying an AR Experience with Metal](displaying-an-ar-experience-with-metal.md)
+- [Displaying an AR Experience with Metal](../displaying-an-ar-experience-with-metal.md)
 
 #### Discussion
 
-Implement this method if you provide your own display for rendering an AR experience. The provided [`ARFrame`](arframe.md) object contains the latest image captured from the device camera, which you can render as a scene background, as well as information about camera parameters and anchor transforms you can use for rendering virtual content on top of the camera image.
+Implement this method if you provide your own display for rendering an AR experience. The provided [`ARFrame`](../arframe.md) object contains the latest image captured from the device camera, which you can render as a scene background, as well as information about camera parameters and anchor transforms you can use for rendering virtual content on top of the camera image.
 
 ## Parameters
 

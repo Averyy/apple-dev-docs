@@ -1,7 +1,8 @@
 # intersects(_:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether two rectangles intersect.
 
@@ -20,6 +21,10 @@ Returns a Boolean value that indicates whether two rectangles intersect.
 func intersects(_ other: Rect3D) -> Bool
 ```
 
+```c
+static bool SPRect3DIntersectsRect(SPRect3D rect, SPRect3D other);
+```
+
 #### Return Value
 
 A Boolean value that indicates whether two rectangles intersect.
@@ -30,9 +35,10 @@ A Boolean value that indicates whether two rectangles intersect.
 
 ## See Also
 
-- [func contains(anyOf: [Point3D]) -> Bool](rect3d/contains(anyof:).md)
+### Checking characteristics
+- [func contains(anyOf: [Point3D]) -> Bool](./contains%28anyof%29.md)
   Returns a Boolean value that indicates whether the rectangle contains any of the specified points.
-- [var isEmpty: Bool](rect3d/isempty.md)
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value that indicates whether two or three of the dimensions are zero.
 
 

@@ -1,7 +1,8 @@
 # coordinate
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A 2D coordinate that corresponds to the latitude and longitude of the specified map point.
 
@@ -20,11 +21,16 @@ A 2D coordinate that corresponds to the latitude and longitude of the specified 
 var coordinate: CLLocationCoordinate2D { get }
 ```
 
+```c
+extern CLLocationCoordinate2D MKCoordinateForMapPoint(MKMapPoint mapPoint);
+```
+
 ## See Also
 
-- [var x: Double](mkmappoint/x.md)
+### Getting the point coordinates
+- [var x: Double](./x.md)
   The location of the point along the x-axis of the map.
-- [var y: Double](mkmappoint/y.md)
+- [var y: Double](./y.md)
   The location of the point along the y-axis of the map.
 
 

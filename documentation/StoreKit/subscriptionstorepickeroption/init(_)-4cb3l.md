@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -18,10 +19,13 @@
 @preconcurrency init(_ option: SubscriptionStoreControlStyleConfiguration.Option) where Label == AutomaticSubscriptionStorePickerOptionLabel
 ```
 
+Available when `Label` conforms to `View`.
+
 ## See Also
 
-- [init(SubscriptionStoreControlStyleConfiguration.PickerOption)](subscriptionstorepickeroption/init(_:)-3iu97.md)
-- [init(SubscriptionStoreControlStyleConfiguration.Option, label: (SubscriptionStoreControlStyleConfiguration.PickerOption) -> Label)](subscriptionstorepickeroption/init(_:label:).md)
+### Creating a subscription picker option
+- [init(SubscriptionStoreControlStyleConfiguration.PickerOption)](./init%28_%29-3iu97.md)
+- [init(SubscriptionStoreControlStyleConfiguration.Option, label: (SubscriptionStoreControlStyleConfiguration.PickerOption) -> Label)](./init%28_,label%29.md)
 
 
 ---

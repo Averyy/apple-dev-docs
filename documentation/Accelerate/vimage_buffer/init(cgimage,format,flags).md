@@ -1,7 +1,8 @@
 # init(cgImage:format:flags:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new buffer with the contents of a Core Graphics image using the supplied image format.
 
@@ -11,7 +12,7 @@ Creates a new buffer with the contents of a Core Graphics image using the suppli
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ init(cgImage: CGImage, format: vImage_CGImageFormat, flags options: vImage.Optio
 
 ## Mentions
 
-- [Creating and Populating Buffers from Core Graphics Images](creating-and-populating-buffers-from-core-graphics-images.md)
+- [Creating and Populating Buffers from Core Graphics Images](../creating-and-populating-buffers-from-core-graphics-images.md)
 
 #### Discussion
 
@@ -50,9 +51,10 @@ let buffer = try vImage_Buffer(cgImage: cgImage,
 
 ## See Also
 
-- [init(cgImage: CGImage, flags: vImage.Options) throws](vimage_buffer/init(cgimage:flags:).md)
+### Consuming and producing Core Graphics images
+- [init(cgImage: CGImage, flags: vImage.Options) throws](./init%28cgimage,flags%29.md)
   Creates a new buffer with the contents of a Core Graphics image.
-- [func createCGImage(format: vImage_CGImageFormat, flags: vImage.Options) throws -> CGImage](vimage_buffer/createcgimage(format:flags:).md)
+- [func createCGImage(format: vImage_CGImageFormat, flags: vImage.Options) throws -> CGImage](./createcgimage%28format,flags%29.md)
   Creates a Core Graphics image from the vImage buffer.
 
 

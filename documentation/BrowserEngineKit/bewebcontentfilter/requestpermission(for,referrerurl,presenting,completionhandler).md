@@ -1,7 +1,8 @@
 # requestPermission(for:referrerURL:presenting:completionHandler:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -10,7 +11,15 @@
 ## Declaration
 
 ```swift
+func requestPermission(for url: URL, referrerURL: URL?, presenting presentingView: UIView?, completionHandler: @escaping @Sendable (BEWebContentFilter.PermissionDecision, (any Error)?) -> Void)
+```
+
+```swift
 func requestPermission(for url: URL, referrerURL: URL?, presenting presentingView: UIView?) async throws -> BEWebContentFilter.PermissionDecision
+```
+
+```objc
+- (void) requestPermissionForURL:(NSURL *) url referrerURL:(NSURL *) referrerURL presentingView:(UIView *) presentingView completionHandler:(void (^)(BEWebContentFilterPermissionDecision result, NSError *error)) completionHandler;
 ```
 
 #### Discussion

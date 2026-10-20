@@ -1,7 +1,8 @@
 # help(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds help text to a view using a localized string resource that you provide.
 
@@ -21,9 +22,26 @@ Adds help text to a view using a localized string resource that you provide.
 nonisolated func help(_ textKey: LocalizedStringResource) -> some View
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func help(_ text: Text) -> some View
+```
+
+```swift
+nonisolated
+func help(_ textKey: LocalizedStringKey) -> some View
+```
+
+```swift
+nonisolated
+func help<S>(_ text: S) -> some View where S : StringProtocol
+```
+
 #### Discussion
 
-Adding help to a view configures the view’s accessibility hint and its help tag (also called a *tooltip*) in macOS or visionOS. For more information on using help tags, see [`Offering help`](https://developer.apple.com/design/human-interface-guidelines/offering-help) in the Human Interface Guidelines.
+Adding help to a view configures the view’s accessibility hint and its help tag (also called a *tooltip*) in macOS or visionOS. For more information on using help tags, see [Offering help](https://developer.apple.com/design/human-interface-guidelines/offering-help) in the Human Interface Guidelines.
 
 ```swift
 Button(action: composeMessage) {

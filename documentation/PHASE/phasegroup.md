@@ -1,7 +1,8 @@
 # PHASEGroup
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container that shares audio parameters with a collection of sounds.
 
@@ -17,6 +18,10 @@ A container that shares audio parameters with a collection of sounds.
 
 ```swift
 class PHASEGroup
+```
+
+```objc
+@interface PHASEGroup : NSObject
 ```
 
 #### Overview
@@ -95,59 +100,60 @@ NSError* myError = nil;
 ## Topics
 
 ### Creating a Group
-- [init(identifier: String)](phasegroup/init(identifier:).md)
+- [init(identifier: String)](./phasegroup/init%28identifier%29.md)
   Creates a group with a unique name.
 ### Identifying the Group
-- [var identifier: String](phasegroup/identifier.md)
+- [var identifier: String](./phasegroup/identifier.md)
   A unique name for the group.
 ### Defining the Group
-- [func register(engine: PHASEEngine)](phasegroup/register(engine:).md)
+- [func register(engine: PHASEEngine)](./phasegroup/register%28engine%29.md)
   Adds the group to the engine’s dictionary.
-- [func unregisterFromEngine()](phasegroup/unregisterfromengine.md)
+- [func unregisterFromEngine()](./phasegroup/unregisterfromengine%28%29.md)
   Removes the group from the engine’s dictionary.
 ### Conrolling Loudness
-- [var gain: Double](phasegroup/gain.md)
+- [var gain: Double](./phasegroup/gain.md)
   Modifies the volume of the group’s sounds.
-- [func fadeGain(gain: Double, duration: Double, curveType: PHASECurveType)](phasegroup/fadegain(gain:duration:curvetype:).md)
+- [func fadeGain(gain: Double, duration: Double, curveType: PHASECurveType)](./phasegroup/fadegain%28gain,duration,curvetype%29.md)
   Adjusts the volume of the sounds in a group gradually.
 ### Adjusting Playback Speed
-- [var rate: Double](phasegroup/rate.md)
+- [var rate: Double](./phasegroup/rate.md)
   The group’s playback speed.
-- [func fadeRate(rate: Double, duration: Double, curveType: PHASECurveType)](phasegroup/faderate(rate:duration:curvetype:).md)
+- [func fadeRate(rate: Double, duration: Double, curveType: PHASECurveType)](./phasegroup/faderate%28rate,duration,curvetype%29.md)
   Adjusts the playback speed of the sounds in a group gradually.
 ### Silencing Sounds
-- [func mute()](phasegroup/mute.md)
+- [func mute()](./phasegroup/mute%28%29.md)
   Silences the group.
-- [func unmute()](phasegroup/unmute.md)
+- [func unmute()](./phasegroup/unmute%28%29.md)
   Restores the group’s volume.
-- [var isMuted: Bool](phasegroup/ismuted.md)
+- [var isMuted: Bool](./phasegroup/ismuted.md)
   A Boolean value that indicates whether the app silences the group.
-- [func solo()](phasegroup/solo.md)
+- [func solo()](./phasegroup/solo%28%29.md)
   Silences all other groups.
-- [func unsolo()](phasegroup/unsolo.md)
+- [func unsolo()](./phasegroup/unsolo%28%29.md)
   Restores the other groups’ volume.
-- [var isSoloed: Bool](phasegroup/issoloed.md)
+- [var isSoloed: Bool](./phasegroup/issoloed.md)
   A Boolean value that indicates whether the app silences all groups other than this group.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASEGroupPreset](phasegrouppreset.md)
+### Sound Grouping and Management
+- [class PHASEGroupPreset](./phasegrouppreset.md)
   A collection of settings for groups.
-- [class PHASEGroupPresetSetting](phasegrouppresetsetting.md)
+- [class PHASEGroupPresetSetting](./phasegrouppresetsetting.md)
   Settings for group presets.
-- [class PHASEDucker](phaseducker.md)
+- [class PHASEDucker](./phaseducker.md)
   An object that manages competing sounds.
 
 

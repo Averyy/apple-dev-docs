@@ -1,32 +1,33 @@
 # IOUserNetworkRxCompletionQueueCompat
 
 **Framework**: NetworkingDriverKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 class IOUserNetworkRxCompletionQueueCompat;
 ```
 
 ## Topics
 
 ### Instance Methods
-- [free](iousernetworkrxcompletionqueuecompat/free.md)
-- [init](iousernetworkrxcompletionqueuecompat/init.md)
-- [initWithPool](iousernetworkrxcompletionqueuecompat/initwithpool.md)
-- [setPacketPoller](iousernetworkrxcompletionqueuecompat/setpacketpoller.md)
+- [free](./iousernetworkrxcompletionqueuecompat/free.md)
+- [init](./iousernetworkrxcompletionqueuecompat/init.md)
+- [initWithPool](./iousernetworkrxcompletionqueuecompat/initwithpool.md)
+- [setPacketPoller](./iousernetworkrxcompletionqueuecompat/setpacketpoller.md)
 ### Type Methods
-- [Create](iousernetworkrxcompletionqueuecompat/create.md)
-- [withPool](iousernetworkrxcompletionqueuecompat/withpool.md)
+- [Create](./iousernetworkrxcompletionqueuecompat/create.md)
+- [withPool](./iousernetworkrxcompletionqueuecompat/withpool.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOUserNetworkPacketQueueCompat](iousernetworkpacketqueuecompat.md)
+- [IOUserNetworkPacketQueueCompat](./iousernetworkpacketqueuecompat.md)
 
 
 ---

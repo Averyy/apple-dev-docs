@@ -1,7 +1,8 @@
 # UICellAccessory.DetailOptions
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Configuration options for a detail accessory.
 
@@ -10,7 +11,7 @@ Configuration options for a detail accessory.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - tvOS 15.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,19 +22,20 @@ struct DetailOptions
 ## Topics
 
 ### Creating configuration options
-- [init(isHidden: Bool?, reservedLayoutWidth: UICellAccessory.LayoutDimension?, tintColor: UIColor?)](uicellaccessory-swift.struct/detailoptions/init(ishidden:reservedlayoutwidth:tintcolor:).md)
+- [init(isHidden: Bool?, reservedLayoutWidth: UICellAccessory.LayoutDimension?, tintColor: UIColor?)](./detailoptions/init%28ishidden,reservedlayoutwidth,tintcolor%29.md)
   Creates a detail accessory options structure.
 ### Accessing configuration options
-- [var isHidden: Bool](uicellaccessory-swift.struct/detailoptions/ishidden.md)
+- [var isHidden: Bool](./detailoptions/ishidden.md)
   A Boolean value that determines whether the cell hides the accessory.
-- [var reservedLayoutWidth: UICellAccessory.LayoutDimension](uicellaccessory-swift.struct/detailoptions/reservedlayoutwidth.md)
+- [var reservedLayoutWidth: UICellAccessory.LayoutDimension](./detailoptions/reservedlayoutwidth.md)
   The layout width that the system reserves for the accessory, and then centers the accessory within.
-- [var tintColor: UIColor?](uicellaccessory-swift.struct/detailoptions/tintcolor.md)
+- [var tintColor: UIColor?](./detailoptions/tintcolor.md)
   The tint color to apply to the accessory.
 
 ## See Also
 
-- [static func detail(displayed: UICellAccessory.DisplayedState, options: UICellAccessory.DetailOptions, actionHandler: UICellAccessory.ActionHandler?) -> UICellAccessory](uicellaccessory-swift.struct/detail(displayed:options:actionhandler:).md)
+### Creating a detail accessory
+- [static func detail(displayed: UICellAccessory.DisplayedState, options: UICellAccessory.DetailOptions, actionHandler: UICellAccessory.ActionHandler?) -> UICellAccessory](./detail%28displayed,options,actionhandler%29.md)
   Creates a detail system accessory with the specified display state, configuration options, and optional action handler.
 
 

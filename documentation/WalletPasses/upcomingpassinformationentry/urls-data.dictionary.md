@@ -1,7 +1,8 @@
 # UpcomingPassInformationEntry.URLs
 
 **Framework**: Wallet Passes  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object with links to information about the upcoming pass information entry.
 
@@ -12,7 +13,7 @@ An object with links to information about the upcoming pass information entry.
 
 ## Declaration
 
-```swift
+```
 object UpcomingPassInformationEntry.URLs
 ```
 
@@ -29,7 +30,7 @@ Use as deep a link as possible for each URL.
 - `contactVenuePhoneNumber` (string): The preferred phone number to contact the venue, event, or issuer.
 - `contactVenueWebsite` (string): A URL that links the user to the website of the venue, event, or issuer.
 - `directionsInformationURL` (string): A URL that links to content you have about getting to the venue.
-- `merchandiseURL` (string): A URL that links to order merchandise for the specific event. This can be a ship-to-home ecommerce site, a pre-order to pickup at the venue, or other appropriate merchandise flow. This link can also be updated throughout the user’s journey to provide more accurately tailored links at certain times. For example, before versus after a user enters an event. This can be done through a pass update. For more information on updating a pass, see [`Distributing and updating a pass`](distributing-and-updating-a-pass.md).
+- `merchandiseURL` (string): A URL that links to order merchandise for the specific event. This can be a ship-to-home ecommerce site, a pre-order to pickup at the venue, or other appropriate merchandise flow. This link can also be updated throughout the user’s journey to provide more accurately tailored links at certain times. For example, before versus after a user enters an event. This can be done through a pass update. For more information on updating a pass, see [Distributing and updating a pass](../distributing-and-updating-a-pass.md).
 - `orderFoodURL` (string): A URL that links out to the food-ordering page for the venue. This can be in-seat food delivery, pre-order for pickup at a vendor, or other appropriate food-ordering service.
 - `parkingInformationURL` (string): A URL that links to any information you have about parking.
 - `purchaseParkingURL` (string): A URL that links to your experience to buy or access prepaid parking or general parking information.
@@ -39,13 +40,14 @@ Use as deep a link as possible for each URL.
 
 ## See Also
 
-- [object UpcomingPassInformationEntry.AdditionalInfoFields](upcomingpassinformationentry/additionalinfofields-data.dictionary.md)
+### Adding information to multievent passes
+- [object UpcomingPassInformationEntry.AdditionalInfoFields](./additionalinfofields-data.dictionary.md)
   The fields of information that display in the Additional Info section below a pass.
-- [object UpcomingPassInformationEntry.BackFields](upcomingpassinformationentry/backfields-data.dictionary.md)
+- [object UpcomingPassInformationEntry.BackFields](./backfields-data.dictionary.md)
   The fields of information displayed in the details view  of the upcoming pass information entry.
-- [object UpcomingPassInformationEntry.DateInformation](upcomingpassinformationentry/dateinformation-data.dictionary.md)
+- [object UpcomingPassInformationEntry.DateInformation](./dateinformation-data.dictionary.md)
   Information about the start and end time of the upcoming pass information entry.
-- [object UpcomingPassInformationEntry.Images](upcomingpassinformationentry/images-data.dictionary.md)
+- [object UpcomingPassInformationEntry.Images](./images-data.dictionary.md)
   A collection of image names used to populate images in the details view.
 
 

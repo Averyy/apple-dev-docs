@@ -1,7 +1,8 @@
 # uuidString
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The UUID represented as a string.
 
@@ -20,9 +21,14 @@ The UUID represented as a string.
 var uuidString: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * UUIDString;
+```
+
 ## See Also
 
-- [var data: Data](cbuuid/data.md)
+### Inspecting CBUUID Properties
+- [var data: Data](./data.md)
   The data of the UUID.
 
 

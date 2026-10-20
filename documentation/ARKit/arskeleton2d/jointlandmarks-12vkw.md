@@ -1,7 +1,8 @@
 # jointLandmarks
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The joint landmarks in normalized coordinates.
 
@@ -22,7 +23,8 @@ The joint landmarks are normalized within the range [0..1] in the coordinate spa
 
 ## See Also
 
-- [func landmark(for: ARSkeleton.JointName) -> simd_float2?](arskeleton2d/landmark(for:).md)
+### Getting Joint Landmarks
+- [func landmark(for: ARSkeleton.JointName) -> simd_float2?](./landmark%28for%29.md)
   Returns the location of a joint with a given name.
 
 

@@ -1,7 +1,8 @@
 # browOuterUpLeft
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The coefficient describing upward movement of the outer portion of the left eyebrow.
 
@@ -15,31 +16,36 @@ The coefficient describing upward movement of the outer portion of the left eyeb
 static let browOuterUpLeft: ARFaceAnchor.BlendShapeLocation
 ```
 
+```c
+extern ARBlendShapeLocation const ARBlendShapeLocationBrowOuterUpLeft;
+```
+
 #### Discussion
 
-The figure below shows a face geometry (see [`ARSCNFaceGeometry`](arscnfacegeometry.md)) in two states, demonstrating values of `0.0` and `1.0` for this coefficient. In both states, the values for all other [`ARFaceAnchor.BlendShapeLocation`](arfaceanchor/blendshapelocation.md) coefficients are set to `0.0`.
+The figure below shows a face geometry (see [`ARSCNFaceGeometry`](../../arscnfacegeometry.md)) in two states, demonstrating values of `0.0` and `1.0` for this coefficient. In both states, the values for all other [`ARFaceAnchor.BlendShapeLocation`](../blendshapelocation.md) coefficients are set to `0.0`.
 
-![None](/images/com.apple.arkit/media-2930089@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.arkit/media-2930089@2x.png)
 
 ## See Also
 
-- [static let browDownLeft: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/browdownleft.md)
+### Eyebrows, Cheeks, and Nose
+- [static let browDownLeft: ARFaceAnchor.BlendShapeLocation](./browdownleft.md)
   The coefficient describing downward movement of the outer portion of the left eyebrow.
-- [static let browDownRight: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/browdownright.md)
+- [static let browDownRight: ARFaceAnchor.BlendShapeLocation](./browdownright.md)
   The coefficient describing downward movement of the outer portion of the right eyebrow.
-- [static let browInnerUp: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/browinnerup.md)
+- [static let browInnerUp: ARFaceAnchor.BlendShapeLocation](./browinnerup.md)
   The coefficient describing upward movement of the inner portion of both eyebrows.
-- [static let browOuterUpRight: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/browouterupright.md)
+- [static let browOuterUpRight: ARFaceAnchor.BlendShapeLocation](./browouterupright.md)
   The coefficient describing upward movement of the outer portion of the right eyebrow.
-- [static let cheekPuff: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/cheekpuff.md)
+- [static let cheekPuff: ARFaceAnchor.BlendShapeLocation](./cheekpuff.md)
   The coefficient describing outward movement of both cheeks.
-- [static let cheekSquintLeft: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/cheeksquintleft.md)
+- [static let cheekSquintLeft: ARFaceAnchor.BlendShapeLocation](./cheeksquintleft.md)
   The coefficient describing upward movement of the cheek around and below the left eye.
-- [static let cheekSquintRight: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/cheeksquintright.md)
+- [static let cheekSquintRight: ARFaceAnchor.BlendShapeLocation](./cheeksquintright.md)
   The coefficient describing upward movement of the cheek around and below the right eye.
-- [static let noseSneerLeft: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/nosesneerleft.md)
+- [static let noseSneerLeft: ARFaceAnchor.BlendShapeLocation](./nosesneerleft.md)
   The coefficient describing a raising of the left side of the nose around the nostril.
-- [static let noseSneerRight: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/nosesneerright.md)
+- [static let noseSneerRight: ARFaceAnchor.BlendShapeLocation](./nosesneerright.md)
   The coefficient describing a raising of the right side of the nose around the nostril.
 
 

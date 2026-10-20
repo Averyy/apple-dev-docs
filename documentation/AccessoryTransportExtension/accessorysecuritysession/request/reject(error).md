@@ -1,7 +1,8 @@
 # reject(error:)
 
 **Framework**: Accessory Transport Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Rejects the session request with an optional error.
 
@@ -20,9 +21,10 @@ final func reject(error: AccessorySecuritySession.Error?) -> AccessorySecuritySe
 
 ## See Also
 
-- [func accept<Handler>(() -> Handler) -> AccessorySecuritySession.Request.Decision](accessorysecuritysession/request/accept(_:).md)
+### Responding to the request
+- [func accept<Handler>(() -> Handler) -> AccessorySecuritySession.Request.Decision](./accept%28_%29.md)
   Accepts the session request with an event handler.
-- [AccessorySecuritySession.Request.Decision](accessorysecuritysession/request/decision.md)
+- [AccessorySecuritySession.Request.Decision](./decision.md)
   A structure that represents the decision to accept or reject a session request.
 
 

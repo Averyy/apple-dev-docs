@@ -1,7 +1,8 @@
 # NSSaveOptions.ask
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the user should be asked before saving any modified documents on closing. When no option is specified, this is the default.
 
@@ -15,11 +16,16 @@ Indicates the user should be asked before saving any modified documents on closi
 case ask
 ```
 
+```c
+NSSaveOptionsAsk
+```
+
 ## See Also
 
-- [NSSaveOptions.yes](nssaveoptions/yes.md)
+### Constants
+- [NSSaveOptions.yes](./yes.md)
   Indicates a modified document should be saved on closing without asking the user.
-- [NSSaveOptions.no](nssaveoptions/no.md)
+- [NSSaveOptions.no](./no.md)
   Indicates a modified document should not be saved on closing.
 
 

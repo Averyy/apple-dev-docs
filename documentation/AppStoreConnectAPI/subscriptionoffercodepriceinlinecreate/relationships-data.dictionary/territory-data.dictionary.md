@@ -1,21 +1,22 @@
 # SubscriptionOfferCodePriceInlineCreate.Relationships.Territory
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 2.0+
 
 ## Declaration
 
-```swift
+```
 object SubscriptionOfferCodePriceInlineCreate.Relationships.Territory
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionOfferCodePriceInlineCreate.Relationships.Territory.Data](subscriptionoffercodepriceinlinecreate/relationships-data.dictionary/territory-data.dictionary/data-data.dictionary.md)
+- [object SubscriptionOfferCodePriceInlineCreate.Relationships.Territory.Data](./territory-data.dictionary/data-data.dictionary.md)
   The request body you use to update a subscription offer code price inline create.
 
 ## Properties
@@ -24,7 +25,8 @@ object SubscriptionOfferCodePriceInlineCreate.Relationships.Territory
 
 ## See Also
 
-- [object SubscriptionOfferCodePriceInlineCreate.Relationships.SubscriptionPricePoint.Data](subscriptionoffercodepriceinlinecreate/relationships-data.dictionary/subscriptionpricepoint-data.dictionary/data-data.dictionary.md)
+### Objects
+- [object SubscriptionOfferCodePriceInlineCreate.Relationships.SubscriptionPricePoint.Data](./subscriptionpricepoint-data.dictionary/data-data.dictionary.md)
   The request body you use to update a subscription offer code price inline create.
 
 

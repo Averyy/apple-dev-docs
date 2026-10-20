@@ -1,7 +1,8 @@
 # NSExecutableNotLoadableError
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The executable type isn’t loadable in the current process.
 
@@ -22,17 +23,18 @@ var NSExecutableNotLoadableError: Int { get }
 
 ## See Also
 
-- [var NSExecutableErrorMinimum: Int](nsexecutableerrorminimum-swift.var.md)
+### Errors
+- [var NSExecutableErrorMinimum: Int](./nsexecutableerrorminimum-swift.var.md)
   The beginning of the range of error codes reserved for errors related to executable files.
-- [var NSExecutableArchitectureMismatchError: Int](nsexecutablearchitecturemismatcherror-swift.var.md)
+- [var NSExecutableArchitectureMismatchError: Int](./nsexecutablearchitecturemismatcherror-swift.var.md)
   The executable doesn’t provide an architecture compatible with the current process.
-- [var NSExecutableRuntimeMismatchError: Int](nsexecutableruntimemismatcherror-swift.var.md)
+- [var NSExecutableRuntimeMismatchError: Int](./nsexecutableruntimemismatcherror-swift.var.md)
   The executable has Objective-C runtime information that’s incompatible with the current process.
-- [var NSExecutableLoadError: Int](nsexecutableloaderror-swift.var.md)
+- [var NSExecutableLoadError: Int](./nsexecutableloaderror-swift.var.md)
   Executable cannot be loaded for an otherwise-unspecified reason.
-- [var NSExecutableLinkError: Int](nsexecutablelinkerror-swift.var.md)
+- [var NSExecutableLinkError: Int](./nsexecutablelinkerror-swift.var.md)
   The executable failed due to linking issues.
-- [var NSExecutableErrorMaximum: Int](nsexecutableerrormaximum-swift.var.md)
+- [var NSExecutableErrorMaximum: Int](./nsexecutableerrormaximum-swift.var.md)
   The end of the range of error codes reserved for errors related to executable files.
 
 

@@ -1,7 +1,8 @@
 # findPrevious()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Highlights the previously found result in the document, relative to the currently highlighted result.
 
@@ -17,15 +18,20 @@ Highlights the previously found result in the document, relative to the currentl
 func findPrevious()
 ```
 
+```objc
+- (void) findPrevious;
+```
+
 ## See Also
 
-- [var delegate: (any UIFindInteractionDelegate)?](uifindinteraction/delegate.md)
+### Managing find interactions
+- [var delegate: (any UIFindInteractionDelegate)?](./delegate.md)
   An object that updates your app’s presentation and provides the session object for managing the interaction’s search.
-- [func presentFindNavigator(showingReplace: Bool)](uifindinteraction/presentfindnavigator(showingreplace:).md)
+- [func presentFindNavigator(showingReplace: Bool)](./presentfindnavigator%28showingreplace%29.md)
   Begins a search, displaying the find panel.
-- [func dismissFindNavigator()](uifindinteraction/dismissfindnavigator.md)
+- [func dismissFindNavigator()](./dismissfindnavigator%28%29.md)
   Dismisses the find panel, if present.
-- [func findNext()](uifindinteraction/findnext.md)
+- [func findNext()](./findnext%28%29.md)
   Highlights the next found result in the content, relative to the currently highlighted result.
 
 

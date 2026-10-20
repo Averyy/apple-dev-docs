@@ -1,7 +1,8 @@
 # init(features:annotations:inputWindowSize:forecastWindowSize:stride:shufflesElements:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a batch sequence.
 

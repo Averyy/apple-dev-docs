@@ -1,16 +1,21 @@
 # responsible_token
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var responsible_token: UnsafeMutablePointer<audit_token_t>?
+```
+
+```c
+audit_token_t * responsible_token;
 ```
 
 

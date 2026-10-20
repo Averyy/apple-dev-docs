@@ -1,21 +1,22 @@
 # GameCenterChallengeVersionInlineCreate.Relationships.Challenge
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 4.3+
 
 ## Declaration
 
-```swift
+```
 object GameCenterChallengeVersionInlineCreate.Relationships.Challenge
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterChallengeVersionInlineCreate.Relationships.Challenge.Data](gamecenterchallengeversioninlinecreate/relationships-data.dictionary/challenge-data.dictionary/data-data.dictionary.md)
+- [object GameCenterChallengeVersionInlineCreate.Relationships.Challenge.Data](./challenge-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

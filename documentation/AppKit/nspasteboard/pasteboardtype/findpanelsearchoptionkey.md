@@ -1,12 +1,13 @@
 # NSPasteboard.PasteboardType.FindPanelSearchOptionKey
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Search options for the find panel.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,28 +15,33 @@ Search options for the find panel.
 struct FindPanelSearchOptionKey
 ```
 
+```c
+typedef NSString * NSPasteboardTypeFindPanelSearchOptionKey;
+```
+
 ## Topics
 
 ### Search Option Keys
-- [static let findPanelCaseInsensitiveSearch: NSPasteboard.PasteboardType.FindPanelSearchOptionKey](nspasteboard/pasteboardtype/findpanelsearchoptionkey/findpanelcaseinsensitivesearch.md)
+- [static let findPanelCaseInsensitiveSearch: NSPasteboard.PasteboardType.FindPanelSearchOptionKey](./findpanelsearchoptionkey/findpanelcaseinsensitivesearch.md)
   A Boolean value indicating whether the search is case-insensitive.
-- [static let findPanelSubstringMatch: NSPasteboard.PasteboardType.FindPanelSearchOptionKey](nspasteboard/pasteboardtype/findpanelsearchoptionkey/findpanelsubstringmatch.md)
+- [static let findPanelSubstringMatch: NSPasteboard.PasteboardType.FindPanelSearchOptionKey](./findpanelsearchoptionkey/findpanelsubstringmatch.md)
   A number object containing the match type to use in the find panel.
 ### Initializers
-- [init(rawValue: String)](nspasteboard/pasteboardtype/findpanelsearchoptionkey/init(rawvalue:).md)
+- [init(rawValue: String)](./findpanelsearchoptionkey/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSPasteboard.PasteboardType.TextFinderOptionKey](nspasteboard/pasteboardtype/textfinderoptionkey.md)
+### Option Keys
+- [NSPasteboard.PasteboardType.TextFinderOptionKey](./textfinderoptionkey.md)
   Search options for text in Finder.
 
 

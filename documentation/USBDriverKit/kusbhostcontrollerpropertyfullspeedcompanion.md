@@ -1,28 +1,30 @@
 # kUSBHostControllerPropertyFullSpeedCompanion
 
 **Framework**: USBDriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 #define kUSBHostControllerPropertyFullSpeedCompanion
 ```
 
 ## See Also
 
-- [kUSBHostControllerPropertyCompanion](kusbhostcontrollerpropertycompanion.md)
-- [kUSBHostControllerPropertyRTD3Supported](kusbhostcontrollerpropertyrtd3supported.md)
-- [kUSBHostControllerPropertySleepSupported](kusbhostcontrollerpropertysleepsupported.md)
-- [kUSBHostControllerPropertyLowSpeedCompanion](kusbhostcontrollerpropertylowspeedcompanion.md)
-- [kUSBHostControllerPropertyHighSpeedCompanion](kusbhostcontrollerpropertyhighspeedcompanion.md)
-- [kUSBHostControllerPropertySuperSpeedCompanion](kusbhostcontrollerpropertysuperspeedcompanion.md)
-- [kUSBHostControllerPropertyCompanionControllerName](kusbhostcontrollerpropertycompanioncontrollername.md)
-- [kUSBHostControllerPropertyPersistFullSpeedIsochronous](kusbhostcontrollerpropertypersistfullspeedisochronous.md)
-- [kUSBHostControllerPropertyIsochronousRequiresContiguous](kusbhostcontrollerpropertyisochronousrequirescontiguous.md)
+### Host Controller Properties
+- [kUSBHostControllerPropertyCompanion](./kusbhostcontrollerpropertycompanion.md)
+- [kUSBHostControllerPropertyRTD3Supported](./kusbhostcontrollerpropertyrtd3supported.md)
+- [kUSBHostControllerPropertySleepSupported](./kusbhostcontrollerpropertysleepsupported.md)
+- [kUSBHostControllerPropertyLowSpeedCompanion](./kusbhostcontrollerpropertylowspeedcompanion.md)
+- [kUSBHostControllerPropertyHighSpeedCompanion](./kusbhostcontrollerpropertyhighspeedcompanion.md)
+- [kUSBHostControllerPropertySuperSpeedCompanion](./kusbhostcontrollerpropertysuperspeedcompanion.md)
+- [kUSBHostControllerPropertyCompanionControllerName](./kusbhostcontrollerpropertycompanioncontrollername.md)
+- [kUSBHostControllerPropertyPersistFullSpeedIsochronous](./kusbhostcontrollerpropertypersistfullspeedisochronous.md)
+- [kUSBHostControllerPropertyIsochronousRequiresContiguous](./kusbhostcontrollerpropertyisochronousrequirescontiguous.md)
 
 
 ---

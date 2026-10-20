@@ -1,7 +1,8 @@
 # mNumberChannels
 
 **Framework**: Core Audio Types  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of interleaved channels in the buffer.
 
@@ -20,15 +21,20 @@ The number of interleaved channels in the buffer.
 var mNumberChannels: UInt32
 ```
 
+```c
+UInt32 mNumberChannels;
+```
+
 #### Discussion
 
 A value of `1` indicates the buffer is noninterleaved.
 
 ## See Also
 
-- [var mDataByteSize: UInt32](audiobuffer/mdatabytesize.md)
+### Accessing the Audio
+- [var mDataByteSize: UInt32](./mdatabytesize.md)
   The number of bytes in the buffer.
-- [var mData: UnsafeMutableRawPointer?](audiobuffer/mdata.md)
+- [var mData: UnsafeMutableRawPointer?](./mdata.md)
   A pointer to a buffer of audio data.
 
 

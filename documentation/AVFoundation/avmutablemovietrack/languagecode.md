@@ -1,7 +1,8 @@
 # languageCode
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The language code of the track.
 
@@ -19,13 +20,18 @@ The language code of the track.
 var languageCode: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * languageCode;
+```
+
 #### Discussion
 
 The value is an ISO 639-2/T language code, or `nil` if the track doesn’t specify a language code.
 
 ## See Also
 
-- [var extendedLanguageTag: String?](avmutablemovietrack/extendedlanguagetag.md)
+### Accessing language support
+- [var extendedLanguageTag: String?](./extendedlanguagetag.md)
   The language tag of the track.
 
 

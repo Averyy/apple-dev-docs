@@ -1,7 +1,8 @@
 # distances
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The system of measurement that displays on the map.
 
@@ -10,44 +11,45 @@ The system of measurement that displays on the map.
 
 ## Declaration
 
-```swift
+```
 get distances(): DistanceUnitSystem;
 set distances(distances: DistanceUnitSystem);
 ```
 
 ## Mentions
 
-- [MapKit JS 5](mapkit-js-5.md)
+- [MapKit JS 5](../mapkit-js-5.md)
 
 #### Discussion
 
-Sets the system of measurement for displaying map distances. See [`DistanceUnitSystem`](distanceunitsystem.md) for accepted values.
+Sets the system of measurement for displaying map distances. See [`DistanceUnitSystem`](../distanceunitsystem.md) for accepted values.
 
-This property applies to the scale, if it displays. The default value is [`Adaptive`](distanceunitsystem/adaptive.md), which means that the measurement system depends on the map’s set [`language`](mapkitinitializationoptions/language.md). This property affects displayed distances only; it doesn’t affect data that returns from a service, such as [`Directions`](directions.md).
+This property applies to the scale, if it displays. The default value is [`Adaptive`](../distanceunitsystem/adaptive.md), which means that the measurement system depends on the map’s set [`language`](../mapkitinitializationoptions/language.md). This property affects displayed distances only; it doesn’t affect data that returns from a service, such as [`Directions`](../directions.md).
 
 ## Topics
 
 ### Distances
-- [const DistanceUnitSystem](distanceunitsystem.md)
+- [const DistanceUnitSystem](../distanceunitsystem.md)
   Constants that indicate the system of measurement that displays on the map.
 
 ## See Also
 
-- [colorScheme](map/colorscheme.md)
+### Configuring the map’s appearance
+- [colorScheme](./colorscheme.md)
   The map’s color scheme when displaying standard or muted standard map types.
-- [mapType](map/maptype.md)
+- [mapType](./maptype.md)
   The type of data that the map displays.
-- [padding](map/padding.md)
+- [padding](./padding.md)
   The map’s inset margins.
-- [pointOfInterestFilter](map/pointofinterestfilter.md)
+- [pointOfInterestFilter](./pointofinterestfilter.md)
   The filter that determines the points of interest that display on the map.
-- [showsPointsOfInterest](map/showspointsofinterest.md)
+- [showsPointsOfInterest](./showspointsofinterest.md)
   A Boolean value that determines whether the map displays points of interest.
-- [showItems(items, options)](map/showitems.md)
+- [showItems(items, options)](./showitems.md)
   Adjusts the map’s visible region to bring the specified overlays and annotations into view.
-- [interface MapShowItemsOptions](mapshowitemsoptions.md)
+- [interface MapShowItemsOptions](../mapshowitemsoptions.md)
   Options that determine the map parameters to use when showing items.
-- [tintColor](map/tintcolor.md)
+- [tintColor](./tintcolor.md)
   The CSS color that MapKit JS uses for user interface controls on the map.
 
 

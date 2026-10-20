@@ -1,7 +1,8 @@
 # EditingMode
 
 **Framework**: Quick Look  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - visionOS 2.0+

@@ -1,7 +1,8 @@
 # value
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An empty array.
 
@@ -10,7 +11,7 @@ An empty array.
 
 ## Declaration
 
-```swift
+```
 attribute string[]? value;
 ```
 

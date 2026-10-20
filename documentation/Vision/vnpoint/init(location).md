@@ -1,7 +1,8 @@
 # init(location:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a point object from the specified Core Graphics point.
 
@@ -19,18 +20,23 @@ Creates a point object from the specified Core Graphics point.
 convenience init(location: CGPoint)
 ```
 
+```objc
+- (instancetype) initWithLocation:(CGPoint) location;
+```
+
 ## Parameters
 
 - `location`: The Core Graphics point.
 
 ## See Also
 
-- [init(x: Double, y: Double)](vnpoint/init(x:y:).md)
+### Creating a Point
+- [init(x: Double, y: Double)](./init%28x,y%29.md)
   Creates a point object with the specified coordinates.
-- [init?(coder: NSCoder)](vnpoint/init(coder:).md)
-- [class func apply(VNVector, to: VNPoint) -> VNPoint](vnpoint/apply(_:to:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
+- [class func apply(VNVector, to: VNPoint) -> VNPoint](./apply%28_,to%29.md)
   Creates a point object that’s shifted by the X and Y offsets of the specified vector.
-- [class var zero: VNPoint](vnpoint/zero.md)
+- [class var zero: VNPoint](./zero.md)
   A point object that represents the origin.
 
 

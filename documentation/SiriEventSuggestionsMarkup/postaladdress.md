@@ -1,7 +1,8 @@
 # PostalAddress
 
 **Framework**: Siri Event Suggestions Markup  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A specific geographic location.
 
@@ -10,7 +11,7 @@ A specific geographic location.
 
 ## Declaration
 
-```swift
+```
 object PostalAddress
 ```
 
@@ -20,7 +21,7 @@ Prefer a physical address, not an administrative mailing address, to help Siri a
 
 ## Properties
 
-- `@type` (string) *(required)*
+- `@type` (string) *(required)*: **Allowed Values**: `PostalAddress`
 - `addressCountry` (string) *(required)*: The country.
 - `addressLocality` (string) *(required)*: The city or town.
 - `addressRegion` (string): The region containing the locality.
@@ -29,15 +30,16 @@ Prefer a physical address, not an administrative mailing address, to help Siri a
 
 ## See Also
 
-- [object Person](person.md)
+### Common Reservation Data
+- [object Person](./person.md)
   A passenger, diner, lodging guest, or event attendee.
-- [object Ticket](ticket.md)
+- [object Ticket](./ticket.md)
   Details about a ticket for transportation or an event.
-- [object Seat](seat.md)
+- [object Seat](./seat.md)
   The specific location reserved for the passenger.
-- [object Organization](organization.md)
+- [object Organization](./organization.md)
   A business, transportation provider, or event organizer.
-- [object Place](place.md)
+- [object Place](./place.md)
   A business, transportation hub, or event venue.
 
 

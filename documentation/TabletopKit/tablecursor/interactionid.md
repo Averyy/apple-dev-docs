@@ -1,7 +1,8 @@
 # interactionID
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the interaction manipulating the equipment corresponding to this cursor.
 

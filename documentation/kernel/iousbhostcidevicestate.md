@@ -1,23 +1,24 @@
 # IOUSBHostCIDeviceState
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum IOUSBHostCIDeviceState IOUSBHostCIDeviceState;
 ```
 
 ## Topics
 
 ### Constants
-- [IOUSBHostCIDeviceStateActive](iousbhostcidevicestate/iousbhostcidevicestateactive.md)
-- [IOUSBHostCIDeviceStateDestroyed](iousbhostcidevicestate/iousbhostcidevicestatedestroyed.md)
-- [IOUSBHostCIDeviceStatePaused](iousbhostcidevicestate/iousbhostcidevicestatepaused.md)
+- [IOUSBHostCIDeviceStateActive](./iousbhostcidevicestate/iousbhostcidevicestateactive.md)
+- [IOUSBHostCIDeviceStateDestroyed](./iousbhostcidevicestate/iousbhostcidevicestatedestroyed.md)
+- [IOUSBHostCIDeviceStatePaused](./iousbhostcidevicestate/iousbhostcidevicestatepaused.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # kAEDescArray
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Array items consist of descriptors of different descriptor types with data of variable size.
 

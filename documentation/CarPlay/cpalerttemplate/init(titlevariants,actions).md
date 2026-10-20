@@ -1,7 +1,8 @@
 # init(titleVariants:actions:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an alert template.
 
@@ -16,6 +17,10 @@ Creates an alert template.
 init(titleVariants: [String], actions: [CPAlertAction])
 ```
 
+```objc
+- (instancetype) initWithTitleVariants:(NSArray<NSString *> *) titleVariants actions:(NSArray<CPAlertAction *> *) actions;
+```
+
 #### Return Value
 
 A newly initialized alert template.
@@ -27,7 +32,8 @@ A newly initialized alert template.
 
 ## See Also
 
-- [class var maximumActionCount: Int](cpalerttemplate/maximumactioncount.md)
+### Creating an Alert Template
+- [class var maximumActionCount: Int](./maximumactioncount.md)
   The maximum number of actions allowed in an alert template.
 
 

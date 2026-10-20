@@ -1,7 +1,8 @@
 # readAttributeAttributeList(with:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.4+
@@ -16,6 +17,10 @@
 
 ```swift
 func readAttributeAttributeList(with params: MTRReadParams?) -> [String : Any]?
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) readAttributeAttributeListWithParams:(MTRReadParams *) params;
 ```
 
 

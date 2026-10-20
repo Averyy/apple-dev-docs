@@ -1,7 +1,8 @@
 # cachePolicy
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The request’s cache policy.
 
@@ -22,9 +23,10 @@ var cachePolicy: URLRequest.CachePolicy { get set }
 
 ## See Also
 
-- [URLRequest.CachePolicy](urlrequest/cachepolicy-swift.typealias.md)
+### Working with a cache policy
+- [URLRequest.CachePolicy](./cachepolicy-swift.typealias.md)
   An alias for the cache policy.
-- [NSURLRequest.CachePolicy](nsurlrequest/cachepolicy-swift.enum.md)
+- [NSURLRequest.CachePolicy](../nsurlrequest/cachepolicy-swift.enum.md)
   The constants used to specify interaction with the cached responses.
 
 

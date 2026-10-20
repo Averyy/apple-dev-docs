@@ -1,7 +1,8 @@
 # UIPrintInfo.Orientation.landscape
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Pages are printed in landscape orientation.
 
@@ -17,9 +18,14 @@ Pages are printed in landscape orientation.
 case landscape
 ```
 
+```c
+UIPrintInfoOrientationLandscape
+```
+
 ## See Also
 
-- [UIPrintInfo.Orientation.portrait](uiprintinfo/orientation-swift.enum/portrait.md)
+### Constants
+- [UIPrintInfo.Orientation.portrait](./portrait.md)
   Pages are printed in portrait orientation.
 
 

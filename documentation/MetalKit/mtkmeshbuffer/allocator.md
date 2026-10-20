@@ -1,7 +1,8 @@
 # allocator
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The allocator object used to create this mesh buffer.
 
@@ -19,13 +20,18 @@ The allocator object used to create this mesh buffer.
 var allocator: MTKMeshBufferAllocator { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nonnull) MTKMeshBufferAllocator * allocator;
+```
+
 #### Discussion
 
 The allocator uses Model I/O for copy and re-layout operations, such as when a new vertex descriptor is applied to an existing vertex buffer.
 
 ## See Also
 
-- [var type: MDLMeshBufferType](mtkmeshbuffer/type.md)
+### Originating Objects
+- [var type: MDLMeshBufferType](./type.md)
   The type of data contained in the originating Model I/O buffer.
 
 

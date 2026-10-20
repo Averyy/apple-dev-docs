@@ -1,7 +1,8 @@
 # scaled(by:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scale the scattering data by a frequency-dependent scalar value between -1 and 1.
 

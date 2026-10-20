@@ -1,7 +1,8 @@
 # kCMSampleBufferConduitNotification_ResetOutput
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Posted on a conduit of sample buffers to request invalidation of pending output data.
 
@@ -20,19 +21,24 @@ Posted on a conduit of sample buffers to request invalidation of pending output 
 let kCMSampleBufferConduitNotification_ResetOutput: CFString
 ```
 
+```c
+extern CFStringRef const kCMSampleBufferConduitNotification_ResetOutput;
+```
+
 ## See Also
 
-- [let kCMSampleBufferConduitNotification_InhibitOutputUntil: CFString](kcmsamplebufferconduitnotification_inhibitoutputuntil.md)
+### Sample Buffer Conduit Notifications
+- [let kCMSampleBufferConduitNotification_InhibitOutputUntil: CFString](./kcmsamplebufferconduitnotification_inhibitoutputuntil.md)
   Posted on a conduit of sample buffers to announce a coming discontinuity.
-- [let kCMSampleBufferConduitNotification_UpcomingOutputPTSRangeChanged: CFString](kcmsamplebufferconduitnotification_upcomingoutputptsrangechanged.md)
+- [let kCMSampleBufferConduitNotification_UpcomingOutputPTSRangeChanged: CFString](./kcmsamplebufferconduitnotification_upcomingoutputptsrangechanged.md)
   Posted on a conduit of video sample buffers to report information about the range of upcoming output presentation timestamps.
-- [let kCMSampleBufferConduitNotificationParameter_UpcomingOutputPTSRangeMayOverlapQueuedOutputPTSRange: CFString](kcmsamplebufferconduitnotificationparameter_upcomingoutputptsrangemayoverlapqueuedoutputptsrange.md)
+- [let kCMSampleBufferConduitNotificationParameter_UpcomingOutputPTSRangeMayOverlapQueuedOutputPTSRange: CFString](./kcmsamplebufferconduitnotificationparameter_upcomingoutputptsrangemayoverlapqueuedoutputptsrange.md)
   Indicates that the presentation timestamps of upcoming output samples may overlap those of samples queued for output (type `CFBoolean`).
-- [let kCMSampleBufferConduitNotificationParameter_MinUpcomingOutputPTS: CFString](kcmsamplebufferconduitnotificationparameter_minupcomingoutputpts.md)
+- [let kCMSampleBufferConduitNotificationParameter_MinUpcomingOutputPTS: CFString](./kcmsamplebufferconduitnotificationparameter_minupcomingoutputpts.md)
   Specifies the minimum presentation timestamp of upcoming output samples (type `CFDictionary`).
-- [let kCMSampleBufferConduitNotificationParameter_MaxUpcomingOutputPTS: CFString](kcmsamplebufferconduitnotificationparameter_maxupcomingoutputpts.md)
+- [let kCMSampleBufferConduitNotificationParameter_MaxUpcomingOutputPTS: CFString](./kcmsamplebufferconduitnotificationparameter_maxupcomingoutputpts.md)
   Specifies the maximum presentation timestamp of upcoming output samples (type `CFDictionary`).
-- [let kCMSampleBufferConduitNotificationParameter_ResumeTag: CFString](kcmsamplebufferconduitnotificationparameter_resumetag.md)
+- [let kCMSampleBufferConduitNotificationParameter_ResumeTag: CFString](./kcmsamplebufferconduitnotificationparameter_resumetag.md)
   Specifies a tag to be attached to the first sample buffer following a discontinuity (type `CFNumber`).
 
 

@@ -1,7 +1,8 @@
 # init(stringLiteral:)
 
 **Framework**: System  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a file path root from a string literal.
 

@@ -1,7 +1,8 @@
 # MKDistanceFormatter.Units.metric
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The format uses metric units.
 
@@ -20,19 +21,24 @@ The format uses metric units.
 case metric
 ```
 
+```c
+MKDistanceFormatterUnitsMetric
+```
+
 ## See Also
 
-- [MKDistanceFormatter.Units.default](mkdistanceformatter/units-swift.enum/default.md)
+### Constants
+- [MKDistanceFormatter.Units.default](./default.md)
   The format uses the locale information to determine which units to use.
-- [MKDistanceFormatter.Units.imperial](mkdistanceformatter/units-swift.enum/imperial.md)
+- [MKDistanceFormatter.Units.imperial](./imperial.md)
   The format uses imperial units.
-- [MKDistanceFormatter.Units.imperialWithYards](mkdistanceformatter/units-swift.enum/imperialwithyards.md)
+- [MKDistanceFormatter.Units.imperialWithYards](./imperialwithyards.md)
   The format uses imperial units that include measurements in yards.
-- [MKDistanceFormatter.Units.default](mkdistanceformatter/units-swift.enum/default.md)
+- [MKDistanceFormatter.Units.default](./default.md)
   The format uses the locale information to determine which units to use.
-- [MKDistanceFormatter.Units.imperial](mkdistanceformatter/units-swift.enum/imperial.md)
+- [MKDistanceFormatter.Units.imperial](./imperial.md)
   The format uses imperial units.
-- [MKDistanceFormatter.Units.imperialWithYards](mkdistanceformatter/units-swift.enum/imperialwithyards.md)
+- [MKDistanceFormatter.Units.imperialWithYards](./imperialwithyards.md)
   The format uses imperial units that include measurements in yards.
 
 

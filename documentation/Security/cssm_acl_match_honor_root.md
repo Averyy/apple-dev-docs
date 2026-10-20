@@ -1,7 +1,8 @@
 # CSSM_ACL_MATCH_HONOR_ROOT
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_ACL_MATCH_HONOR_ROOT: Int { get }
+```
+
+```c
+CSSM_ACL_MATCH_HONOR_ROOT
 ```
 
 

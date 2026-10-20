@@ -1,7 +1,8 @@
 # StoreAndForwardBatch
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that stores the data to send to the payment service provider to process.
 
@@ -23,39 +24,40 @@ The framework invokes these payments using a Store and Forward session.
 ## Topics
 
 ### Getting the batch details
-- [let id: String](storeandforwardbatch/id.md)
+- [let id: String](./storeandforwardbatch/id.md)
   The unique identifier for the batch.
-- [let count: Int](storeandforwardbatch/count.md)
+- [let count: Int](./storeandforwardbatch/count.md)
   The number of payments this batch includes.
-- [let intermediateCertificate: [String]](storeandforwardbatch/intermediatecertificate.md)
+- [let intermediateCertificate: [String]](./storeandforwardbatch/intermediatecertificate.md)
   An array that contains the intermediate certificates that the system uses to sign the leaf certificate.
-- [let leafCertificate: String](storeandforwardbatch/leafcertificate.md)
+- [let leafCertificate: String](./storeandforwardbatch/leafcertificate.md)
   The leaf certificate the framework uses to sign this batch.
-- [let payments: [StoreAndForwardBatch.StoredPaymentCardReadResult]](storeandforwardbatch/payments.md)
+- [let payments: [StoreAndForwardBatch.StoredPaymentCardReadResult]](./storeandforwardbatch/payments.md)
   The payments that are part of the batch.
-- [let signature: String](storeandforwardbatch/signature.md)
+- [let signature: String](./storeandforwardbatch/signature.md)
   The signature, as a Base64-encoded string, that guarantees the integrity of the batch.
 ### Getting the results
-- [StoreAndForwardBatch.StoredPaymentCardReadResult](storeandforwardbatch/storedpaymentcardreadresult.md)
+- [StoreAndForwardBatch.StoredPaymentCardReadResult](./storeandforwardbatch/storedpaymentcardreadresult.md)
   A result structure that represents each payment the framework read using a Store and Forward session.
 
 ## Relationships
 
 ### Conforms To
-- [Encodable](../swift/encodable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Encodable](../Swift/encodable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct StoreAndForwardBatchDeletionToken](storeandforwardbatchdeletiontoken.md)
+### Store and Forward mode
+- [struct StoreAndForwardBatchDeletionToken](./storeandforwardbatchdeletiontoken.md)
   A secure token that you use to delete a Store and Forward batch.
-- [class StoreAndForwardPaymentCardReaderSession](storeandforwardpaymentcardreadersession.md)
+- [class StoreAndForwardPaymentCardReaderSession](./storeandforwardpaymentcardreadersession.md)
   The object you use to start reading a contactless payment or loyalty card in Store and Forward mode.
-- [struct StoreAndForwardStatus](storeandforwardstatus.md)
+- [struct StoreAndForwardStatus](./storeandforwardstatus.md)
   A structure that describes the Store and Forward session status.
-- [struct PaymentCardReaderStore](paymentcardreaderstore.md)
+- [struct PaymentCardReaderStore](./paymentcardreaderstore.md)
   A structure that manages the store that contains all the Store and Forward reads.
 
 

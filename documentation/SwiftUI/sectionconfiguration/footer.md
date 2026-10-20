@@ -1,7 +1,8 @@
 # footer
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contents of the section footer.
 

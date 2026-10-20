@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns the unit instance described by the provided string.
 
@@ -19,9 +20,13 @@ Returns the unit instance described by the provided string.
 convenience init(from string: String)
 ```
 
+```objc
++ (instancetype) unitFromString:(NSString *) string;
+```
+
 #### Return Value
 
-The unit object described by the string. If the string does not represent a valid unit, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception)).
+The unit object described by the string. If the string does not represent a valid unit, this method throws an exception ([`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md)).
 
 #### Discussion
 
@@ -76,7 +81,7 @@ Each SI unit can also take an optional prefix. Valid prefix strings are listed i
 | `G` | Giga- | 1.0e9 |
 | `T` | Tera- | 1.0e12 |
 
-The [`HKUnit`](hkunit.md) class also supports a number of non-SI units, as shown in the following table.
+The [`HKUnit`](../hkunit.md) class also supports a number of non-SI units, as shown in the following table.
 
 | String | Unit name | Unit type |
 | --- | --- | --- |
@@ -133,9 +138,10 @@ You can create more complex, compound units by mathematically combining multiple
 
 ## See Also
 
-- [var unitString: String](hkunit/unitstring.md)
+### Working with units
+- [var unitString: String](./unitstring.md)
   A string representation of the unit object.
-- [func isNull() -> Bool](hkunit/isnull.md)
+- [func isNull() -> Bool](./isnull%28%29.md)
   Returns a Boolean value indicating whether the unit is null.
 
 

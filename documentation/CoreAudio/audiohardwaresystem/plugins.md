@@ -1,12 +1,13 @@
 # plugins
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of AudioHardwarePlugins that represent all the plugin objects on the system.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

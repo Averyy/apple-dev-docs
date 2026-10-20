@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the action is enabled.
 
@@ -16,6 +17,10 @@ A Boolean value indicating whether the action is enabled.
 
 ```swift
 var isEnabled: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isEnabled) BOOL enabled;
 ```
 
 

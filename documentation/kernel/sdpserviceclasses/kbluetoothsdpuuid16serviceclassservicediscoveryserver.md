@@ -1,14 +1,15 @@
 # kBluetoothSDPUUID16ServiceClassServiceDiscoveryServer
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPUUID16ServiceClassServiceDiscoveryServer = 0x1000
 ```
 

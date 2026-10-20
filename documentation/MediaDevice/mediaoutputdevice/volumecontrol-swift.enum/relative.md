@@ -1,9 +1,10 @@
 # MediaOutputDevice.VolumeControl.relative
 
 **Framework**: Media Device  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-Relative volume control is supported, [`changeVolume(by:for:)`](mediadeviceextension/changevolume(by:for:).md) must be used to change the volume.
+Relative volume control is supported, [`changeVolume(by:for:)`](../../mediadeviceextension/changevolume%28by,for%29.md) must be used to change the volume.
 
 **Availability**:
 - iOS 27.0+
@@ -18,7 +19,7 @@ case relative
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../../creating-a-media-device-extension.md)
 
 #### Discussion
 

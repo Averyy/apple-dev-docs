@@ -1,7 +1,8 @@
 # errAuthorizationExternalizeNotAllowed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The Security Server denied externalization of the authorization reference.
 
@@ -13,6 +14,10 @@ The Security Server denied externalization of the authorization reference.
 
 ```swift
 var errAuthorizationExternalizeNotAllowed: OSStatus { get }
+```
+
+```c
+errAuthorizationExternalizeNotAllowed
 ```
 
 

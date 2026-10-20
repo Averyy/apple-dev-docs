@@ -1,7 +1,8 @@
 # kSecAttrCanWrap
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a Boolean that indicates whether the cryptographic key can be used for wrapping.
 
@@ -20,11 +21,15 @@ A key whose value is a Boolean that indicates whether the cryptographic key can 
 let kSecAttrCanWrap: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrCanWrap;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean) and indicates whether this cryptographic key can be used to wrap another key.
+The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md) and indicates whether this cryptographic key can be used to wrap another key.
 
-On key creation, if not explicitly specified, this attribute defaults to [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse) for private keys and [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue) for public keys.
+On key creation, if not explicitly specified, this attribute defaults to [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md) for private keys and [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) for public keys.
 
 
 ---

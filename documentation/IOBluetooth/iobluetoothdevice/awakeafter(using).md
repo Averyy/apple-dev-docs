@@ -1,15 +1,20 @@
 # awakeAfter(using:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func awakeAfter(using coder: NSCoder!) -> Any!
+```
+
+```objc
+- (id) awakeAfterUsingCoder:(NSCoder *) coder;
 ```
 
 

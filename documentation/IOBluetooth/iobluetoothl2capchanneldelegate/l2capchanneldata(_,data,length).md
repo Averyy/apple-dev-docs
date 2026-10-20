@@ -1,15 +1,20 @@
 # l2capChannelData(_:data:length:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional func l2capChannelData(_ l2capChannel: IOBluetoothL2CAPChannel!, data dataPointer: UnsafeMutableRawPointer!, length dataLength: Int)
+```
+
+```objc
+- (void) l2capChannelData:(IOBluetoothL2CAPChannel *) l2capChannel data:(void *) dataPointer length:(size_t) dataLength;
 ```
 
 

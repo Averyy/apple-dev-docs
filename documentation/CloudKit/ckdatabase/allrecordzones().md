@@ -1,7 +1,8 @@
 # allRecordZones()
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches all record zones from the current database.
 
@@ -11,7 +12,7 @@ Fetches all record zones from the current database.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration

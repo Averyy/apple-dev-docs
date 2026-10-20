@@ -1,7 +1,8 @@
 # vDSP.SortOrder
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the sorting order.
 
@@ -11,7 +12,7 @@ Constants that specify the sorting order.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -23,25 +24,26 @@ enum SortOrder
 ## Topics
 
 ### Enumeration Cases
-- [vDSP.SortOrder.ascending](vdsp/sortorder/ascending.md)
+- [vDSP.SortOrder.ascending](./sortorder/ascending.md)
   An ascending search.
-- [vDSP.SortOrder.descending](vdsp/sortorder/descending.md)
+- [vDSP.SortOrder.descending](./sortorder/descending.md)
   A descending search.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
 
 ## See Also
 
-- [static func sort<V>(inout V, sortOrder: vDSP.SortOrder)](vdsp/sort(_:sortorder:)-wx0w.md)
+### Vector sorting functions
+- [static func sort<V>(inout V, sortOrder: vDSP.SortOrder)](./sort%28_,sortorder%29-wx0w.md)
   Sorts a vector of single-precision values in-place.
-- [static func sort<V>(inout V, sortOrder: vDSP.SortOrder)](vdsp/sort(_:sortorder:)-418g0.md)
+- [static func sort<V>(inout V, sortOrder: vDSP.SortOrder)](./sort%28_,sortorder%29-418g0.md)
   Sorts a vector of double-precision values in-place.
 
 

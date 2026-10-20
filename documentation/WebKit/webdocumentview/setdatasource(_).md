@@ -2,17 +2,22 @@
 
 **Framework**: WebKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Invoked when the data source for this document has been changed.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 func setDataSource(_ dataSource: WebDataSource!)
+```
+
+```objc
+- (void) setDataSource:(WebDataSource *) dataSource;
 ```
 
 ## Parameters
@@ -21,8 +26,10 @@ func setDataSource(_ dataSource: WebDataSource!)
 
 ## See Also
 
-- [WebKit Objective-C Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DisplayWebContent/DisplayWebContent.html#//apple_ref/doc/uid/10000164i)
-- [func dataSourceUpdated(WebDataSource!)](webdocumentview/datasourceupdated(_:).md)
+### Related Documentation
+- [WebKit Objective-C Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DisplayWebContent/DisplayWebContent.html#//apple_ref/doc/uid/10000164i)
+### Setting the data source
+- [func dataSourceUpdated(WebDataSource!)](./datasourceupdated%28_%29.md)
   Invoked when additional data has been received.
 
 

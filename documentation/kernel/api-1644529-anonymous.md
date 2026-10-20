@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,13 +18,13 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kScaleCanBorderInsetOnlyMask](1644529-anonymous/kscalecanborderinsetonlymask.md)
-- [kScaleCanDownSamplePixelsMask](1644529-anonymous/kscalecandownsamplepixelsmask.md)
-- [kScaleCanRotateMask](1644529-anonymous/kscalecanrotatemask.md)
-- [kScaleCanScaleInterlacedMask](1644529-anonymous/kscalecanscaleinterlacedmask.md)
-- [kScaleCanSupportInsetMask](1644529-anonymous/kscalecansupportinsetmask.md)
-- [kScaleCanUpSamplePixelsMask](1644529-anonymous/kscalecanupsamplepixelsmask.md)
-- [kScaleStretchOnlyMask](1644529-anonymous/kscalestretchonlymask.md)
+- [kScaleCanBorderInsetOnlyMask](./api-1644529-anonymous/kscalecanborderinsetonlymask.md)
+- [kScaleCanDownSamplePixelsMask](./api-1644529-anonymous/kscalecandownsamplepixelsmask.md)
+- [kScaleCanRotateMask](./api-1644529-anonymous/kscalecanrotatemask.md)
+- [kScaleCanScaleInterlacedMask](./api-1644529-anonymous/kscalecanscaleinterlacedmask.md)
+- [kScaleCanSupportInsetMask](./api-1644529-anonymous/kscalecansupportinsetmask.md)
+- [kScaleCanUpSamplePixelsMask](./api-1644529-anonymous/kscalecanupsamplepixelsmask.md)
+- [kScaleStretchOnlyMask](./api-1644529-anonymous/kscalestretchonlymask.md)
 
 
 ---

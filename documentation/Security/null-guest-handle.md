@@ -1,13 +1,14 @@
 # Null Guest Handle
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: API Collection
 
 Use this special value to stand in for a null guest object.
 
 ## Topics
 
 ### Constants
-- [var kSecNoGuest: SecGuestRef](ksecnoguest.md)
+- [var kSecNoGuest: SecGuestRef](./ksecnoguest.md)
   Not a valid `SecGuestRef` object.
 
 

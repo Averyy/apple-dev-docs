@@ -1,7 +1,8 @@
 # bounds
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rectangle that holds discovered feature.
 
@@ -10,7 +11,7 @@ The rectangle that holds discovered feature.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,13 +20,18 @@ The rectangle that holds discovered feature.
 var bounds: CGRect { get }
 ```
 
+```objc
+@property (assign, readonly) CGRect bounds;
+```
+
 #### Discussion
 
 The rectangle is in the coordinate system of the image.
 
 ## See Also
 
-- [var type: String](cifeature/type.md)
+### Feature Properties
+- [var type: String](./type.md)
   The type of feature that was discovered.
 
 

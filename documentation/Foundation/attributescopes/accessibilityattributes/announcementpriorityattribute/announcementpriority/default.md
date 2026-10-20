@@ -1,7 +1,8 @@
 # AttributeScopes.AccessibilityAttributes.AnnouncementPriorityAttribute.AnnouncementPriority.default
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Announcements will interrupt existing speech, but are interruptible if a new speech utterance is started.
 

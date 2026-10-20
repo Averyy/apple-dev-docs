@@ -1,7 +1,8 @@
 # interactionShouldBegin(_:at:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate whether the text interaction should begin.
 
@@ -17,9 +18,13 @@ Asks the delegate whether the text interaction should begin.
 optional func interactionShouldBegin(_ interaction: UITextInteraction, at point: CGPoint) -> Bool
 ```
 
+```objc
+- (BOOL) interactionShouldBegin:(UITextInteraction *) interaction atPoint:(CGPoint) point;
+```
+
 #### Return Value
 
-A Boolean value indicating whether the interaction should begin. Return [`true`](https://developer.apple.com/documentation/swift/true) to let the interaction begin; otherwise, return [`false`](https://developer.apple.com/documentation/swift/false) to prevent the interaction from beginning.
+A Boolean value indicating whether the interaction should begin. Return [`true`](../../Swift/true.md) to let the interaction begin; otherwise, return [`false`](../../Swift/false.md) to prevent the interaction from beginning.
 
 ## Parameters
 
@@ -28,9 +33,10 @@ A Boolean value indicating whether the interaction should begin. Return [`true`]
 
 ## See Also
 
-- [func interactionWillBegin(UITextInteraction)](uitextinteractiondelegate/interactionwillbegin(_:).md)
+### Handling text interaction events
+- [func interactionWillBegin(UITextInteraction)](./interactionwillbegin%28_%29.md)
   Tells the delegate that the text interaction will begin.
-- [func interactionDidEnd(UITextInteraction)](uitextinteractiondelegate/interactiondidend(_:).md)
+- [func interactionDidEnd(UITextInteraction)](./interactiondidend%28_%29.md)
   Tells the delegate that the text interaction ended.
 
 

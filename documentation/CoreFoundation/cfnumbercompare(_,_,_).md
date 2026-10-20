@@ -1,18 +1,19 @@
 # CFNumberCompare(_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Compares two CFNumber objects and returns a comparison result.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Compares two CFNumber objects and returns a comparison result.
 func CFNumberCompare(_ number: CFNumber!, _ otherNumber: CFNumber!, _ context: UnsafeMutableRawPointer!) -> CFComparisonResult
 ```
 
+```c
+extern CFComparisonResult CFNumberCompare(CFNumberRef number, CFNumberRef otherNumber, void *context);
+```
+
 #### Return Value
 
-A [`CFComparisonResult`](cfcomparisonresult.md) constant that indicates whether `number` is equal to, less than, or greater than `otherNumber`.
+A [`CFComparisonResult`](./cfcomparisonresult.md) constant that indicates whether `number` is equal to, less than, or greater than `otherNumber`.
 
 #### Discussion
 

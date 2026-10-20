@@ -1,16 +1,17 @@
 # Migrating to new navigation types
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: Article
 
 Improve navigation behavior in your app by replacing navigation views with navigation stacks and navigation split views.
 
 #### Overview
 
-If your app has a minimum deployment target of iOS 16, iPadOS 16, macOS 13, tvOS 16, watchOS 9, or visionOS 1, or later, transition away from using [`NavigationView`](navigationview.md). In its place, use [`NavigationStack`](navigationstack.md) and [`NavigationSplitView`](navigationsplitview.md) instances. How you use these depends on whether you perform navigation in one column or across multiple columns. With these newer containers, you get better control over view presentation, container configuration, and programmatic navigation.
+If your app has a minimum deployment target of iOS 16, iPadOS 16, macOS 13, tvOS 16, watchOS 9, or visionOS 1, or later, transition away from using [`NavigationView`](./navigationview.md). In its place, use [`NavigationStack`](./navigationstack.md) and [`NavigationSplitView`](./navigationsplitview.md) instances. How you use these depends on whether you perform navigation in one column or across multiple columns. With these newer containers, you get better control over view presentation, container configuration, and programmatic navigation.
 
-##### Update Single Column Navigation
+##### Update single column navigation
 
-If your app uses a [`NavigationView`](navigationview.md) that you style using the [`stack`](navigationviewstyle/stack.md) navigation view style, where people navigate by pushing a new view onto a stack, switch to [`NavigationStack`](navigationstack.md).
+If your app uses a [`NavigationView`](./navigationview.md) that you style using the [`stack`](./navigationviewstyle/stack.md) navigation view style, where people navigate by pushing a new view onto a stack, switch to [`NavigationStack`](./navigationstack.md).
 
 In particular, stop doing this:
 
@@ -29,9 +30,9 @@ NavigationStack {
 }
 ```
 
-##### Update Multicolumn Navigation
+##### Update multicolumn navigation
 
-If your app uses a two- or three-column [`NavigationView`](navigationview.md), or for apps that have multiple columns in some cases and a single column in others — which is typical for apps that run on iPhone and iPad — switch to [`NavigationSplitView`](navigationsplitview.md).
+If your app uses a two- or three-column [`NavigationView`](./navigationview.md), or for apps that have multiple columns in some cases and a single column in others — which is typical for apps that run on iPhone and iPad — switch to [`NavigationSplitView`](./navigationsplitview.md).
 
 Instead of using a two-column navigation view:
 
@@ -42,7 +43,7 @@ NavigationView { // This is deprecated.
 }
 ```
 
-Create a navigation split view that has explicit sidebar and detail content using the [`init(sidebar:detail:)`](navigationsplitview/init(sidebar:detail:).md) initializer:
+Create a navigation split view that has explicit sidebar and detail content using the [`init(sidebar:detail:)`](./navigationsplitview/init%28sidebar,detail%29.md) initializer:
 
 ```swift
 NavigationSplitView {
@@ -62,7 +63,7 @@ NavigationView { // This is deprecated.
 }
 ```
 
-Create a navigation split view that has explicit sidebar, content, and detail components using the [`init(sidebar:content:detail:)`](navigationsplitview/init(sidebar:content:detail:).md) initializer:
+Create a navigation split view that has explicit sidebar, content, and detail components using the [`init(sidebar:content:detail:)`](./navigationsplitview/init%28sidebar,content,detail%29.md) initializer:
 
 ```swift
 NavigationSplitView {
@@ -74,11 +75,11 @@ NavigationSplitView {
 }
 ```
 
-If you need navigation within a column, embed a navigation stack in that column. This arrangement provides finer control over what each column displays. [`NavigationSplitView`](navigationsplitview.md) also enables you to customize column visibility and width.
+If you need navigation within a column, embed a navigation stack in that column. This arrangement provides finer control over what each column displays. [`NavigationSplitView`](./navigationsplitview.md) also enables you to customize column visibility and width.
 
-##### Update Programmatic Navigation
+##### Update programmatic navigation
 
-If you perform programmatic navigation using one of the [`NavigationLink`](navigationlink.md) initializers that has an `isActive` input parameter, move the automation to the enclosing stack. Do this by changing your navigation links to use the [`init(value:label:)`](navigationlink/init(value:label:).md) initializer, then use one of the navigation stack initializers that takes a path input, like [`init(path:root:)`](navigationstack/init(path:root:).md).
+If you perform programmatic navigation using one of the [`NavigationLink`](./navigationlink.md) initializers that has an `isActive` input parameter, move the automation to the enclosing stack. Do this by changing your navigation links to use the [`init(value:label:)`](./navigationlink/init%28value,label%29.md) initializer, then use one of the navigation stack initializers that takes a path input, like [`init(path:root:)`](./navigationstack/init%28path,root%29.md).
 
 For example, if you have a navigation view with links that activate in response to individual state variables:
 
@@ -126,11 +127,11 @@ var body: some View {
 }
 ```
 
-This version uses the [`navigationDestination(for:destination:)`](view/navigationdestination(for:destination:).md) view modifier to detach the presented data from the corresponding view. That makes it possible for the `path` array to represent every view on the stack. Changes that you make to the array affect what the container displays right now, as well as what people encounter as they navigate through the stack. You can support even more sophisticated programmatic navigation if you use a [`NavigationPath`](navigationpath.md) to store the path information, rather than a plain collection of data. For more information, see [`NavigationStack`](navigationstack.md).
+This version uses the [`navigationDestination(for:destination:)`](./view/navigationdestination%28for,destination%29.md) view modifier to detach the presented data from the corresponding view. That makes it possible for the `path` array to represent every view on the stack. Changes that you make to the array affect what the container displays right now, as well as what people encounter as they navigate through the stack. You can support even more sophisticated programmatic navigation if you use a [`NavigationPath`](./navigationpath.md) to store the path information, rather than a plain collection of data. For more information, see [`NavigationStack`](./navigationstack.md).
 
-##### Update Selection Based Navigation
+##### Update selection-based navigation
 
-If you perform programmatic navigation on [`List`](list.md) elements that use one of the [`NavigationLink`](navigationlink.md) initializers with a `selection` input parameter, you can move the selection to the list. For example, suppose you have a navigation view with links that activate in response to a `selection` state variable:
+If you perform programmatic navigation on [`List`](./list.md) elements that use one of the [`NavigationLink`](./navigationlink.md) initializers with a `selection` input parameter, you can move the selection to the list. For example, suppose you have a navigation view with links that activate in response to a `selection` state variable:
 
 ```swift
 let colors: [Color] = [.purple, .pink, .orange]
@@ -170,9 +171,9 @@ var body: some View {
 
 The list coordinates with the navigation logic so that changing the selection state variable in another part of your code activates the navigation link with the corresponding color. Similarly, if someone chooses the navigation link associated with a particular color, the list updates the selection value that other parts of your code can read.
 
-##### Provide Backward Compatibility with an Availability Check
+##### Provide backward compatibility with an availability check
 
-If your app needs to run on platform versions earlier than iOS 16, iPadOS 16, macOS 13, tvOS 16, watchOS 9, or visionOS 1, you can start migration while continuing to support older clients by using an [`availability condition`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/statements/#Availability-Condition). For example, you can create a custom wrapper view that conditionally uses either [`NavigationSplitView`](navigationsplitview.md) or [`NavigationView`](navigationview.md):
+If your app needs to run on platform versions earlier than iOS 16, iPadOS 16, macOS 13, tvOS 16, watchOS 9, or visionOS 1, you can start migration while continuing to support older clients by using an [availability condition](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/statements/#Availability-Condition). For example, you can create a custom wrapper view that conditionally uses either [`NavigationSplitView`](./navigationsplitview.md) or [`NavigationView`](./navigationview.md):
 
 ```swift
 struct NavigationSplitViewWrapper<Sidebar, Content, Detail>: View
@@ -215,25 +216,26 @@ struct NavigationSplitViewWrapper<Sidebar, Content, Detail>: View
 }
 ```
 
-Customize the wrapper to meet your app’s needs. For example, you can add a navigation split view style modifier like [`navigationSplitViewStyle(_:)`](view/navigationsplitviewstyle(_:).md) to the [`NavigationSplitView`](navigationsplitview.md) in the appropriate branch of the availability check.
+Customize the wrapper to meet your app’s needs. For example, you can add a navigation split view style modifier like [`navigationSplitViewStyle(_:)`](./view/navigationsplitviewstyle%28_%29.md) to the [`NavigationSplitView`](./navigationsplitview.md) in the appropriate branch of the availability check.
 
 ## See Also
 
-- [Bringing robust navigation structure to your SwiftUI app](bringing-robust-navigation-structure-to-your-swiftui-app.md)
+### Presenting views in columns
+- [Bringing robust navigation structure to your SwiftUI app](./bringing-robust-navigation-structure-to-your-swiftui-app.md)
   Use navigation links, stacks, destinations, and paths to provide a streamlined experience for all platforms, as well as behaviors such as deep linking and state restoration.
-- [struct NavigationSplitView](navigationsplitview.md)
+- [struct NavigationSplitView](./navigationsplitview.md)
   A view that presents views in two or three columns, where selections in leading columns control presentations in subsequent columns.
-- [func navigationSplitViewStyle<S>(S) -> some View](view/navigationsplitviewstyle(_:).md)
+- [func navigationSplitViewStyle<S>(S) -> some View](./view/navigationsplitviewstyle%28_%29.md)
   Sets the style for navigation split views within this view.
-- [func navigationSplitViewColumnWidth(CGFloat) -> some View](view/navigationsplitviewcolumnwidth(_:).md)
+- [func navigationSplitViewColumnWidth(CGFloat) -> some View](./view/navigationsplitviewcolumnwidth%28_%29.md)
   Sets a fixed, preferred width for the column containing this view.
-- [func navigationSplitViewColumnWidth(min: CGFloat?, ideal: CGFloat, max: CGFloat?) -> some View](view/navigationsplitviewcolumnwidth(min:ideal:max:).md)
+- [func navigationSplitViewColumnWidth(min: CGFloat?, ideal: CGFloat, max: CGFloat?) -> some View](./view/navigationsplitviewcolumnwidth%28min,ideal,max%29.md)
   Sets a flexible, preferred width for the column containing this view.
-- [struct NavigationSplitViewVisibility](navigationsplitviewvisibility.md)
+- [struct NavigationSplitViewVisibility](./navigationsplitviewvisibility.md)
   The visibility of the leading columns in a navigation split view.
-- [struct NavigationLink](navigationlink.md)
+- [struct NavigationLink](./navigationlink.md)
   A view that controls a navigation presentation.
-- [struct NavigationView](navigationview.md)
+- [struct NavigationView](./navigationview.md)
   A view for presenting a stack of views that represents a visible path in a navigation hierarchy.
 
 

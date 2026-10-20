@@ -1,7 +1,8 @@
 # systemPrefersReducedResourceUsage
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A boolean value indicating whether the system would prefer the app to reduce its overall resource usage.
 

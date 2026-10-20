@@ -1,7 +1,8 @@
 # HasMIDI
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates the box’s MIDI support.
 
@@ -10,7 +11,7 @@ Returns a Boolean value that indicates the box’s MIDI support.
 
 ## Declaration
 
-```swift
+```c
 bool HasMIDI();
 ```
 
@@ -24,15 +25,16 @@ This method synchronizes by using the work queue created by the object.
 
 ## See Also
 
-- [SetHasAudio](iouseraudiobox/sethasaudio.md)
+### Determining Media Support
+- [SetHasAudio](./sethasaudio.md)
   Sets a Boolean value that indicates the box’s audio support.
-- [HasAudio](iouseraudiobox/hasaudio.md)
+- [HasAudio](./hasaudio.md)
   Returns a Boolean value that indicates the box’s audio support.
-- [SetHasVideo](iouseraudiobox/sethasvideo.md)
+- [SetHasVideo](./sethasvideo.md)
   Sets a Boolean value that indicates the box’s video support.
-- [HasVideo](iouseraudiobox/hasvideo.md)
+- [HasVideo](./hasvideo.md)
   Returns a Boolean value that indicates the box’s video support.
-- [SetHasMIDI](iouseraudiobox/sethasmidi.md)
+- [SetHasMIDI](./sethasmidi.md)
   Sets a Boolean value that indicates the box’s MIDI support.
 
 

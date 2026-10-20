@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an angle.
 
@@ -22,19 +23,20 @@ init()
 
 ## See Also
 
-- [init(radians: Double)](angle2d/init(radians:)-3zcwo.md)
+### Creating an angle structure
+- [init(radians: Double)](./init%28radians%29-3zcwo.md)
   Creates an angle with the specified double-precision radians.
-- [init(radians: Double)](angle2d/init(radians:)-6s7o6.md)
+- [init(radians: Double)](./init%28radians%29-6s7o6.md)
   Creates an angle with the specified double-precision radians.
-- [init<T>(radians: T)](angle2d/init(radians:)-74ym2.md)
+- [init<T>(radians: T)](./init%28radians%29-74ym2.md)
   Creates an angle with the specified floating-point radians.
-- [init<T>(degrees: T)](angle2d/init(degrees:)-2obd.md)
+- [init<T>(degrees: T)](./init%28degrees%29-2obd.md)
   Creates an angle with the specified floating-point degrees.
-- [init(degrees: Double)](angle2d/init(degrees:)-7y9lb.md)
+- [init(degrees: Double)](./init%28degrees%29-7y9lb.md)
   Creates an angle with the specified double-precision degrees.
-- [static func degrees(Double) -> Angle2D](angle2d/degrees(_:).md)
+- [static func degrees(Double) -> Angle2D](./degrees%28_%29.md)
   Returns a new angle structure with the specified double-precision degrees.
-- [static func radians(Double) -> Angle2D](angle2d/radians(_:).md)
+- [static func radians(Double) -> Angle2D](./radians%28_%29.md)
   Returns a new angle structure with the specified double-precision radians.
 
 

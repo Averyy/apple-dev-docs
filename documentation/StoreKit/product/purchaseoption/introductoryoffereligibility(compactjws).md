@@ -1,7 +1,8 @@
 # introductoryOfferEligibility(compactJWS:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Set the eligibility of an introductory offer for a purchase.
 
@@ -23,11 +24,11 @@ static func introductoryOfferEligibility(compactJWS: String) -> Product.Purchase
 
 ## Mentions
 
-- [Generating JWS to sign App Store requests](generating-jws-to-sign-app-store-requests.md)
+- [Generating JWS to sign App Store requests](../../generating-jws-to-sign-app-store-requests.md)
 
 #### Discussion
 
-For information about generating and signing this JWT, see [`Include custom claims for introductory offer eligibility`](generating-jws-to-sign-app-store-requests#Include-custom-claims-for-introductory-offer-eligibility.md).
+For information about generating and signing this JWT, see [Include custom claims for introductory offer eligibility](../../generating-jws-to-sign-app-store-requests.md#Include-custom-claims-for-introductory-offer-eligibility).
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # allowedTouchTypes
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The types of touch interactions the view allows.
 
@@ -14,11 +15,16 @@ The types of touch interactions the view allows.
 var allowedTouchTypes: NSTouch.TouchTypeMask { get set }
 ```
 
+```objc
+@property NSTouchTypeMask allowedTouchTypes;
+```
+
 ## See Also
 
-- [var wantsRestingTouches: Bool](nsview/wantsrestingtouches.md)
+### Handling Touch Events
+- [var wantsRestingTouches: Bool](./wantsrestingtouches.md)
   A Boolean value indicating whether the view wants resting touches.
-- [var candidateListTouchBarItem: NSCandidateListTouchBarItem<AnyObject>?](nsview/candidatelisttouchbaritem.md)
+- [var candidateListTouchBarItem: NSCandidateListTouchBarItem<AnyObject>?](./candidatelisttouchbaritem.md)
 
 
 ---

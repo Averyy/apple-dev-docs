@@ -1,7 +1,8 @@
 # default
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default level of details.
 
@@ -19,7 +20,7 @@ static let `default`: LevelOfDetail
 
 ## Mentions
 
-- [Updating your widgets for visionOS](updating-your-widgets-for-visionos.md)
+- [Updating your widgets for visionOS](../updating-your-widgets-for-visionos.md)
 
 #### Discussion
 

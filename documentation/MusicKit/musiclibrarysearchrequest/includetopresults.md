@@ -1,7 +1,8 @@
 # includeTopResults
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to request top search results.
 

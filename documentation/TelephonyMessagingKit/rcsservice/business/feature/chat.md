@@ -1,7 +1,8 @@
 # RCSService.Business.Feature.chat
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Chat feature.
 

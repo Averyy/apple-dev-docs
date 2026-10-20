@@ -1,18 +1,19 @@
 # kCMAudioCodecType_AAC_AudibleProtected
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Audible’s protected AAC.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ Audible’s protected AAC.
 var kCMAudioCodecType_AAC_AudibleProtected: CMAudioCodecType { get }
 ```
 
+```c
+kCMAudioCodecType_AAC_AudibleProtected
+```
+
 ## See Also
 
-- [var kCMAudioCodecType_AAC_LCProtected: CMAudioCodecType](kcmaudiocodectype_aac_lcprotected.md)
+### Constants
+- [var kCMAudioCodecType_AAC_LCProtected: CMAudioCodecType](./kcmaudiocodectype_aac_lcprotected.md)
   iTMS protected low-complexity AAC.
 
 

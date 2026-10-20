@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new host audio output stream sink instance.
 
@@ -12,6 +13,10 @@ Creates a new host audio output stream sink instance.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

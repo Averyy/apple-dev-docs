@@ -1,7 +1,8 @@
 # menu(_:willHighlight:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked to indicate that a menu is about to highlight a given item.
 
@@ -15,6 +16,10 @@ Invoked to indicate that a menu is about to highlight a given item.
 optional func menu(_ menu: NSMenu, willHighlight item: NSMenuItem?)
 ```
 
+```objc
+- (void) menu:(NSMenu *) menu willHighlightItem:(NSMenuItem *) item;
+```
+
 #### Discussion
 
 Only one item per menu can be highlighted at a time. If `item` is `nil`, it means that all items in the menu are about to be unhighlighted.
@@ -26,7 +31,8 @@ Only one item per menu can be highlighted at a time. If `item` is `nil`, it mean
 
 ## See Also
 
-- [var highlightedItem: NSMenuItem?](nsmenu/highlighteditem.md)
+### Related Documentation
+- [var highlightedItem: NSMenuItem?](../nsmenu/highlighteditem.md)
   Indicates the currently highlighted item in the menu.
 
 

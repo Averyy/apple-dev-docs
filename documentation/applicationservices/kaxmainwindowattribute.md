@@ -1,7 +1,8 @@
 # kAXMainWindowAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The accessibility object representing this application’s main window. This attribute is recommended for all application-level accessibility objects.
 
@@ -12,6 +13,10 @@ The accessibility object representing this application’s main window. This att
 
 ```swift
 var kAXMainWindowAttribute: String { get }
+```
+
+```c
+#define kAXMainWindowAttribute
 ```
 
 

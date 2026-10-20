@@ -1,17 +1,18 @@
 # count
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of items in the series.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,9 +20,13 @@ The number of items in the series.
 var count: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger count;
+```
+
 #### Discussion
 
-You can access the items in the series using the corresponding query. For example, to access route data, use a [`HKWorkoutRouteQuery`](hkworkoutroutequery.md) object.
+You can access the items in the series using the corresponding query. For example, to access route data, use a [`HKWorkoutRouteQuery`](../hkworkoutroutequery.md) object.
 
 
 ---

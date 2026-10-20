@@ -1,7 +1,8 @@
 # ValidationCategory
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A constraint that tests whether a code file or running process is signed in a way that conforms to the specified validation category.
 
@@ -27,57 +28,58 @@ Validation categories are an indication of the type of signature on the file and
 ## Topics
 
 ### Structures
-- [ValidationCategory.Value](validationcategory/value.md)
+- [ValidationCategory.Value](./validationcategory/value.md)
   Supported Validation categories for signatures
 ### Initializers
-- [init(ValidationCategory.Value)](validationcategory/init(_:).md)
+- [init(ValidationCategory.Value)](./validationcategory/init%28_%29.md)
   Matches if the file or process is signed in a way that conforms to the specified category.
-- [init(from: any Decoder) throws](validationcategory/init(from:).md)
+- [init(from: any Decoder) throws](./validationcategory/init%28from%29.md)
   Create a new instance by decoding from the given decoder
 ### Instance Methods
-- [func encode(to: any Encoder) throws](validationcategory/encode(to:).md)
+- [func encode(to: any Encoder) throws](./validationcategory/encode%28to%29.md)
   Encodes this value into the given encoder
 ### Type Aliases
-- [ValidationCategory.DataType](validationcategory/datatype.md)
+- [ValidationCategory.DataType](./validationcategory/datatype.md)
   The basic input data type for this constraint: `ValidationCategoryType`.
-- [ValidationCategory.OutType](validationcategory/outtype.md)
-  The type of this constraint: [`ValidationCategory`](validationcategory.md).
+- [ValidationCategory.OutType](./validationcategory/outtype.md)
+  The type of this constraint: [`ValidationCategory`](./validationcategory.md).
 ### Type Methods
-- [static func `in`([ValidationCategory.DataType]) -> ValidationCategory.OutType](validationcategory/in(_:)-1skt4.md)
+- [static func `in`([ValidationCategory.DataType]) -> ValidationCategory.OutType](./validationcategory/in%28_%29-1skt4.md)
   Matches if the file or process is signed in a way that conforms to any of the specified categories.
-- [static func `in`(ValidationCategory.DataType...) -> ValidationCategory.OutType](validationcategory/in(_:)-94p2z.md)
+- [static func `in`(ValidationCategory.DataType...) -> ValidationCategory.OutType](./validationcategory/in%28_%29-94p2z.md)
   Matches if the file or process is signed in a way that conforms to any of the specified categories.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [LaunchConstraint](launchconstraint.md)
-- [OnDiskConstraint](ondiskconstraint.md)
-- [ProcessConstraint](processconstraint.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [LaunchConstraint](./launchconstraint.md)
+- [OnDiskConstraint](./ondiskconstraint.md)
+- [ProcessConstraint](./processconstraint.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CodeDirectoryHash](codedirectoryhash.md)
+### Testing properties of executable code
+- [struct CodeDirectoryHash](./codedirectoryhash.md)
   A constraint that matches the hash of a code directory of a code file or of a running or launching process.
-- [class EntitlementsQuery](entitlementsquery.md)
+- [class EntitlementsQuery](./entitlementsquery.md)
   A constraint that tests values in the entitlements dictionary associated with a process or code file.
-- [struct InfoPlistHash](infoplisthash.md)
+- [struct InfoPlistHash](./infoplisthash.md)
   A constraint that tests the specified hash against the Information property list hash stored in the code signature of the process or code file.
-- [struct IsInitProcess](isinitprocess.md)
+- [struct IsInitProcess](./isinitprocess.md)
   A constraint that tests whether a process is the operating system’s initial process.
-- [struct IsMainBinary](ismainbinary.md)
+- [struct IsMainBinary](./ismainbinary.md)
   A constraint that tests whether a code file is a main binary.
-- [struct IsSIPProtected](issipprotected.md)
+- [struct IsSIPProtected](./issipprotected.md)
   A constraint that tests whether a code file or process is on a volume protected by System Integrity Protection (SIP).
-- [struct PlatformType](platformtype.md)
+- [struct PlatformType](./platformtype.md)
   A constraint that tests whether a code file or running process targets a given platform.
-- [struct SigningIdentifier](signingidentifier.md)
+- [struct SigningIdentifier](./signingidentifier.md)
   A constraint that tests whether the provided signing identifier matches the signature attached to the code.
-- [struct TeamIdentifier](teamidentifier.md)
+- [struct TeamIdentifier](./teamidentifier.md)
   A constraint that tests whether the provided team identifier matches the team identified in the code signature.
 
 

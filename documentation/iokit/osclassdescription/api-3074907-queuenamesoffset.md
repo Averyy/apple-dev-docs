@@ -1,7 +1,8 @@
 # queueNamesOffset
 
 **Framework**: IOKit  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var queueNamesOffset: UInt32
+```
+
+```c
+uint32_t queueNamesOffset;
 ```
 
 

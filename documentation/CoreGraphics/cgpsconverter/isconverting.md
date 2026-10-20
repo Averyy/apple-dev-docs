@@ -1,7 +1,8 @@
 # isConverting
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Checks whether the converter is currently converting data.
 
@@ -13,6 +14,10 @@ Checks whether the converter is currently converting data.
 
 ```swift
 var isConverting: Bool { get }
+```
+
+```c
+extern bool CGPSConverterIsConverting(CGPSConverterRef converter);
 ```
 
 

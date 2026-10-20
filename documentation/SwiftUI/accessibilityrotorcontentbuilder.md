@@ -1,7 +1,8 @@
 # AccessibilityRotorContentBuilder
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Result builder you use to generate rotor entry content.
 
@@ -24,16 +25,17 @@ struct AccessibilityRotorContentBuilder
 ## Topics
 
 ### Building navigation content
-- [static buildBlock(_:)](accessibilityrotorcontentbuilder/buildblock(_:).md)
-- [static func buildIf<Content>(Content?) -> some AccessibilityRotorContent](accessibilityrotorcontentbuilder/buildif(_:).md)
-- [static func buildExpression<Content>(Content) -> Content](accessibilityrotorcontentbuilder/buildexpression(_:).md)
+- [static buildBlock(_:)](./accessibilityrotorcontentbuilder/buildblock%28_%29.md)
+- [static func buildIf<Content>(Content?) -> some AccessibilityRotorContent](./accessibilityrotorcontentbuilder/buildif%28_%29.md)
+- [static func buildExpression<Content>(Content) -> Content](./accessibilityrotorcontentbuilder/buildexpression%28_%29.md)
   Builds an expression within the builder.
 
 ## See Also
 
-- [protocol AccessibilityRotorContent](accessibilityrotorcontent.md)
+### Creating rotors
+- [protocol AccessibilityRotorContent](./accessibilityrotorcontent.md)
   Content within an accessibility rotor.
-- [struct AccessibilityRotorEntry](accessibilityrotorentry.md)
+- [struct AccessibilityRotorEntry](./accessibilityrotorentry.md)
   A struct representing an entry in an Accessibility Rotor.
 
 

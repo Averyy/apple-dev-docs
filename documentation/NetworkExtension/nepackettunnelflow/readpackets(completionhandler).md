@@ -1,7 +1,8 @@
 # readPackets(completionHandler:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reads IP packets from the TUN interface.
 
@@ -16,7 +17,15 @@ Reads IP packets from the TUN interface.
 ## Declaration
 
 ```swift
+func readPackets(completionHandler: @escaping @Sendable ([Data], [NSNumber]) -> Void)
+```
+
+```swift
 func readPackets() async -> ([Data], [NSNumber])
+```
+
+```objc
+- (void) readPacketsWithCompletionHandler:(void (^)(NSArray<NSData *> *packets, NSArray<NSNumber *> *protocols)) completionHandler;
 ```
 
 #### Discussion
@@ -29,11 +38,12 @@ Each call to this method results in a single execution of the completion handler
 
 ## See Also
 
-- [func readPacketObjects(completionHandler: ([NEPacket]) -> Void)](nepackettunnelflow/readpacketobjects(completionhandler:).md)
+### Handling IP packets
+- [func readPacketObjects(completionHandler: ([NEPacket]) -> Void)](./readpacketobjects%28completionhandler%29.md)
   Read multiple IP packets from the TUN interface.
-- [func writePacketObjects([NEPacket]) -> Bool](nepackettunnelflow/writepacketobjects(_:).md)
+- [func writePacketObjects([NEPacket]) -> Bool](./writepacketobjects%28_%29.md)
   Write multiple IP packets to the TUN interface.
-- [func writePackets([Data], withProtocols: [NSNumber]) -> Bool](nepackettunnelflow/writepackets(_:withprotocols:).md)
+- [func writePackets([Data], withProtocols: [NSNumber]) -> Bool](./writepackets%28_,withprotocols%29.md)
   Writes IP packets to the TUN interface.
 
 

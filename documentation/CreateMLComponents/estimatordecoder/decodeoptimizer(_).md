@@ -2,6 +2,7 @@
 
 **Framework**: Create ML Components  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Decodes an optimizer value.
@@ -27,7 +28,8 @@ Decoding an optimizer lets you resume fitting.
 
 ## See Also
 
-- [func decode<T>(T.Type) throws -> T](estimatordecoder/decode(_:).md)
+### Decoding values
+- [func decode<T>(T.Type) throws -> T](./decode%28_%29.md)
   Decodes a value.
 
 

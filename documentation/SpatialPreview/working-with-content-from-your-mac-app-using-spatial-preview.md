@@ -1,6 +1,8 @@
 # Working with content from your Mac app using Spatial Preview
 
-**Framework**: Spatial Preview
+**Framework**: Spatial Preview  
+**Role**: Sample Code  
+**Download**: [WorkingWithContentFromYourMacAppUsingSpatialPreview.zip](https://docs-assets.developer.apple.com/published/b11f4074452d/WorkingWithContentFromYourMacAppUsingSpatialPreview.zip)
 
 Send and update documents, and work with 3D content live from your Mac app to a visionOS device.
 
@@ -15,11 +17,12 @@ The Spatial Preview framework enables Mac apps to send content to a nearby Apple
 - **`DocumentPreviewSession`**: A spatial photo gallery example that streams stereo HEIC images to Apple Vision Pro so people can browse spatial photos immersively without leaving the Mac workflow.
 - **`USDPreviewSession`**: A 3D interior design example that uses USD to adjust furniture layouts live with override layers, and an asset-review workflow that uses text annotations.
 
-> **Note**: This sample code project is associated with WWDC26 session 282: [`Discover the Spatial Preview framework`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2026/282).
+> **Note**: This sample code project is associated with WWDC26 session 282: [Discover the Spatial Preview framework](https://developer.apple.com/videos/play/wwdc2026/282).
 
 ## See Also
 
-- [Bridging an external USD runtime to Spatial Preview](bridging-an-external-usd-runtime-to-spatial-preview.md)
+### Essentials
+- [Bridging an external USD runtime to Spatial Preview](./bridging-an-external-usd-runtime-to-spatial-preview.md)
   Sync edits between an app with its own OpenUSD runtime and a Spatial Preview session using a shared layer as the exchange mechanism.
 
 

@@ -1,7 +1,8 @@
 # withExclusiveControl(before:_:)
 
 **Framework**: Background Assets  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to acquire immediate, exclusive control over the download manager before the specified date.
 
@@ -26,9 +27,9 @@ final func withExclusiveControl<ReturnType>(before date: Date, _ body: @escaping
 
 #### Discussion
 
-To avoid races between your main app and your downloader extension, perform operations on the download manager—*e.g.*, fetching current downloads, scheduling new downloads, *etc.*—while maintaining exclusive control over it. Use this method instead of [`withExclusiveControl(_:)`](badownloadmanager/withexclusivecontrol(_:)-1rf9w.md) to enforce that the attempt to acquire exclusive control fail if the system can’t fulfill it before a particular date. Unlike [`withExclusiveControl(beforeDate:perform:)`](badownloadmanager/withexclusivecontrol(beforedate:perform:).md), this method waits for exclusive control to be acquired and then relinquished before it returns.
+To avoid races between your main app and your downloader extension, perform operations on the download manager—*e.g.*, fetching current downloads, scheduling new downloads, *etc.*—while maintaining exclusive control over it. Use this method instead of [`withExclusiveControl(_:)`](./withexclusivecontrol%28_%29-1rf9w.md) to enforce that the attempt to acquire exclusive control fail if the system can’t fulfill it before a particular date. Unlike [`withExclusiveControl(beforeDate:perform:)`](./withexclusivecontrol%28beforedate,perform%29.md), this method waits for exclusive control to be acquired and then relinquished before it returns.
 
-> **Note**: When `body` throws or when exclusive control over the download manager can’t be acquired before `date`.
+> **Throws**: When `body` throws or when exclusive control over the download manager can’t be acquired before `date`.
 
 ## Parameters
 

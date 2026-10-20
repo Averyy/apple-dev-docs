@@ -1,14 +1,15 @@
 # publishFeature
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.2+
 
 ## Declaration
 
-```swift
+```c
 void publishFeature(const char *feature, uint32_t supportedWhere, uint32_t *uniqueFeatureID);
 ```
 

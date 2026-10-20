@@ -1,25 +1,27 @@
 # OSObjectRetain
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 void OSObjectRetain(OSObjectPtr container);
 ```
 
 ## See Also
 
-- [OSObjectAllocate](osobjectallocate.md)
+### Object Support
+- [OSObjectAllocate](./osobjectallocate.md)
   Helper function for OSTypeAlloc(). Not to be called directly.
-- [OSObjectRelease](osobjectrelease.md)
+- [OSObjectRelease](./osobjectrelease.md)
 
 
 ---

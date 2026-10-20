@@ -1,7 +1,8 @@
 # scrubber(_:layout:sizeForItemAt:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for the size of each item in a scrubber whose items are arranged in a flow layout.
 
@@ -12,6 +13,10 @@ Asks the delegate for the size of each item in a scrubber whose items are arrang
 
 ```swift
 optional func scrubber(_ scrubber: NSScrubber, layout: NSScrubberFlowLayout, sizeForItemAt itemIndex: Int) -> NSSize
+```
+
+```objc
+- (NSSize) scrubber:(NSScrubber *) scrubber layout:(NSScrubberFlowLayout *) layout sizeForItemAtIndex:(NSInteger) itemIndex;
 ```
 
 #### Return Value

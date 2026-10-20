@@ -1,7 +1,8 @@
 # normalizationGradient(withIncomingGradientTensor:sourceTensor:mean:varianceTensor:gammaTensor:gammaGradientTensor:betaGradientTensor:reductionAxes:epsilon:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a normalization input gradient operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a normalization input gradient operation and returns the result tensor.
 
 ```swift
 func normalizationGradient(withIncomingGradientTensor incomingGradientTensor: MPSGraphTensor, sourceTensor: MPSGraphTensor, mean meanTensor: MPSGraphTensor, varianceTensor: MPSGraphTensor, gammaTensor gamma: MPSGraphTensor?, gammaGradientTensor gammaGradient: MPSGraphTensor?, betaGradientTensor betaGradient: MPSGraphTensor?, reductionAxes axes: [NSNumber], epsilon: Float, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) normalizationGradientWithIncomingGradientTensor:(MPSGraphTensor *) incomingGradientTensor sourceTensor:(MPSGraphTensor *) sourceTensor meanTensor:(MPSGraphTensor *) meanTensor varianceTensor:(MPSGraphTensor *) varianceTensor gammaTensor:(MPSGraphTensor *) gamma gammaGradientTensor:(MPSGraphTensor *) gammaGradient betaGradientTensor:(MPSGraphTensor *) betaGradient reductionAxes:(NSArray<NSNumber *> *) axes epsilon:(float) epsilon name:(NSString *) name;
 ```
 
 #### Discussion

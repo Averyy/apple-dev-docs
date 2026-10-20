@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOAudioDeviceCanBeDefaultInput](1646425-anonymous/kioaudiodevicecanbedefaultinput.md)
-- [kIOAudioDeviceCanBeDefaultNothing](1646425-anonymous/kioaudiodevicecanbedefaultnothing.md)
-- [kIOAudioDeviceCanBeDefaultOutput](1646425-anonymous/kioaudiodevicecanbedefaultoutput.md)
-- [kIOAudioDeviceCanBeSystemOutput](1646425-anonymous/kioaudiodevicecanbesystemoutput.md)
+- [kIOAudioDeviceCanBeDefaultInput](./api-1646425-anonymous/kioaudiodevicecanbedefaultinput.md)
+- [kIOAudioDeviceCanBeDefaultNothing](./api-1646425-anonymous/kioaudiodevicecanbedefaultnothing.md)
+- [kIOAudioDeviceCanBeDefaultOutput](./api-1646425-anonymous/kioaudiodevicecanbedefaultoutput.md)
+- [kIOAudioDeviceCanBeSystemOutput](./api-1646425-anonymous/kioaudiodevicecanbesystemoutput.md)
 
 
 ---

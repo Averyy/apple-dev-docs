@@ -1,7 +1,8 @@
 # languageComponents
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Unicode language identifier part of a locale.
 
@@ -22,7 +23,8 @@ var languageComponents: Locale.Language.Components
 
 ## See Also
 
-- [Locale.Language.Components](locale/language-swift.struct/components.md)
+### Specifying language components
+- [Locale.Language.Components](../language-swift.struct/components.md)
   A type that identifies a language by its various components.
 
 

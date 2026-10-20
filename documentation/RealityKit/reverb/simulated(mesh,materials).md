@@ -1,7 +1,8 @@
 # simulated(mesh:materials:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A reverb that is simulated from a reverb mesh and materials.
 
@@ -38,7 +39,7 @@ As spatial audio sources move through the space, the reverb updates dynamically 
 ## Parameters
 
 - `mesh`: The reverb mesh resource that defines the acoustic geometry of the space.
-- `materials`: An array of audio materials that define how each surface absorbs and scatters sound. Each element corresponds to a material index in the mesh. Defaults to [`default`](audio/material/default.md).
+- `materials`: An array of audio materials that define how each surface absorbs and scatters sound. Each element corresponds to a material index in the mesh. Defaults to [`default`](../audio/material/default.md).
 
 
 ---

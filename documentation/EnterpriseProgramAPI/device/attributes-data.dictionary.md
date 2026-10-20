@@ -1,24 +1,25 @@
 # Device.Attributes
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a Devices resource.
 
 ## Declaration
 
-```swift
+```
 object Device.Attributes
 ```
 
 ## Properties
 
 - `addedDate` (date-time)
-- `deviceClass` (string)
+- `deviceClass` (string): **Allowed Values**: `APPLE_WATCH`, `IPAD`, `IPHONE`, `IPOD`, `APPLE_TV`, `MAC`
 - `model` (string)
 - `name` (string)
 - `platform` (BundleIdPlatform)
-- `status` (string)
+- `status` (string): **Allowed Values**: `ENABLED`, `DISABLED`
 - `udid` (string)
 
 

@@ -1,7 +1,8 @@
 # StatusScreenSharingConnectionGroupUnresolvedConnections
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The status item that lists connection groups with member connection references that the device couldn’t resolve.
 
@@ -10,13 +11,13 @@ The status item that lists connection groups with member connection references t
 
 ## Declaration
 
-```swift
+```
 object StatusScreenSharingConnectionGroupUnresolvedConnections
 ```
 
 #### Discussion
 
-##### Status Item Availability
+##### Status item availability
 
 |  |  |
 | --- | --- |
@@ -27,7 +28,7 @@ object StatusScreenSharingConnectionGroupUnresolvedConnections
 | Allowed in system scope | macOS |
 | Allowed in user scope | macOS |
 
-##### Status Item Example
+##### Status item example
 
 **New or updated connection group**:
 
@@ -76,7 +77,7 @@ Reports a removed connection group.
 ## Topics
 
 ### Objects
-- [object StatusScreenSharingConnectionGroupUnresolvedConnectionsUnresolvedGroupObject](statusscreensharingconnectiongroupunresolvedconnectionsunresolvedgroupobject.md)
+- [object StatusScreenSharingConnectionGroupUnresolvedConnectionsUnresolvedGroupObject](./statusscreensharingconnectiongroupunresolvedconnectionsunresolvedgroupobject.md)
   The status item that contains an unresolved connection group.
 
 ## Properties
@@ -85,7 +86,8 @@ Reports a removed connection group.
 
 ## See Also
 
-- [object StatusServicesBackgroundTask](statusservicesbackgroundtask.md)
+### Miscellaneous items
+- [object StatusServicesBackgroundTask](./statusservicesbackgroundtask.md)
   The status item that reports the device’s background task details.
 
 

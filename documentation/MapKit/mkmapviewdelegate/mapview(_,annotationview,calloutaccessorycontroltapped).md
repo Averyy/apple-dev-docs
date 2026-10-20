@@ -1,7 +1,8 @@
 # mapView(_:annotationView:calloutAccessoryControlTapped:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the user taps one of the annotation view’s accessory buttons.
 
@@ -17,11 +18,15 @@ Tells the delegate when the user taps one of the annotation view’s accessory b
 optional func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl)
 ```
 
+```objc
+- (void) mapView:(MKMapView *) mapView annotationView:(MKAnnotationView *) view calloutAccessoryControlTapped:(UIControl *) control;
+```
+
 #### Discussion
 
-Accessory views contain custom content and the map view positions it on either side of the annotation title text. If a view you specify is a descendant of the [`UIControl`](https://developer.apple.com/documentation/uikit/uicontrol) class, the map view calls this method as a convenience whenever the user taps your view. You can use this method to respond to taps and perform any actions associated with that control. For example, if your control displays additional information about the annotation, you can use this method to present a modal panel with that information.
+Accessory views contain custom content and the map view positions it on either side of the annotation title text. If a view you specify is a descendant of the [`UIControl`](../../UIKit/uicontrol.md) class, the map view calls this method as a convenience whenever the user taps your view. You can use this method to respond to taps and perform any actions associated with that control. For example, if your control displays additional information about the annotation, you can use this method to present a modal panel with that information.
 
-If your custom accessory views aren’t descendants of the [`UIControl`](https://developer.apple.com/documentation/uikit/uicontrol) class, the map view doesn’t call this method.
+If your custom accessory views aren’t descendants of the [`UIControl`](../../UIKit/uicontrol.md) class, the map view doesn’t call this method.
 
 ## Parameters
 
@@ -31,11 +36,12 @@ If your custom accessory views aren’t descendants of the [`UIControl`](https:/
 
 ## See Also
 
-- [func mapView(MKMapView, viewFor: any MKAnnotation) -> MKAnnotationView?](mkmapviewdelegate/mapview(_:viewfor:)-8humz.md)
+### Managing annotation views
+- [func mapView(MKMapView, viewFor: any MKAnnotation) -> MKAnnotationView?](./mapview%28_,viewfor%29-8humz.md)
   Returns the view associated with the specified annotation object.
-- [func mapView(MKMapView, didAdd: [MKAnnotationView])](mkmapviewdelegate/mapview(_:didadd:)-44xon.md)
+- [func mapView(MKMapView, didAdd: [MKAnnotationView])](./mapview%28_,didadd%29-44xon.md)
   Tells the delegate when the map view adds one or more annotation views to the map.
-- [func mapView(MKMapView, clusterAnnotationForMemberAnnotations: [any MKAnnotation]) -> MKClusterAnnotation](mkmapviewdelegate/mapview(_:clusterannotationformemberannotations:).md)
+- [func mapView(MKMapView, clusterAnnotationForMemberAnnotations: [any MKAnnotation]) -> MKClusterAnnotation](./mapview%28_,clusterannotationformemberannotations%29.md)
   Asks the delegate to provide a cluster annotation object for the specified annotations.
 
 

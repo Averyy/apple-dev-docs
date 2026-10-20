@@ -1,7 +1,8 @@
 # appRequestedSharing
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the container app requested network sharing.
 
@@ -18,11 +19,12 @@ let appRequestedSharing: Bool
 
 #### Discussion
 
-The system sets this flag when your container app calls [`askToShare()`](winetworksharingcontroller/asktoshare().md).
+The system sets this flag when your container app calls [`askToShare()`](../../winetworksharingcontroller/asktoshare%28%29.md).
 
 ## See Also
 
-- [let newShareableNetworkAvailable: Bool](winetworksharingprovider/networkevent/newshareablenetworkavailable.md)
+### Getting event signals
+- [let newShareableNetworkAvailable: Bool](./newshareablenetworkavailable.md)
   A Boolean value that indicates whether the system detected available networks your app extension may request from people.
 
 

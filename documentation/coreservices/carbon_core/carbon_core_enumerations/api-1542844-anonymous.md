@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var typeAuditToken: DescType](typeaudittoken.md)
+- [var typeAuditToken: DescType](../../typeaudittoken.md)
 
 
 ---

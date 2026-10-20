@@ -1,7 +1,8 @@
 # BEResponderEditActions
 
 **Framework**: BrowserEngineKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods that defines extended interactions in browser text views.
 
@@ -17,51 +18,56 @@ A set of methods that defines extended interactions in browser text views.
 protocol BEResponderEditActions : UIResponderStandardEditActions
 ```
 
+```objc
+@protocol BEResponderEditActions <UIResponderStandardEditActions>
+```
+
 ## Mentions
 
-- [Supporting extended text interactions](support-extended-text-interactions.md)
+- [Supporting extended text interactions](./support-extended-text-interactions.md)
 
 #### Overview
 
-Implement the methods in this protocol to support text interactions in your browser text view that conforms to [`BETextInput`](betextinput.md). To get the system’s standard behavior for an interaction, call [`BETextInteraction`](betextinteraction.md) methods in your implementation. For more information, see [`Supporting extended text interactions`](support-extended-text-interactions.md).
+Implement the methods in this protocol to support text interactions in your browser text view that conforms to [`BETextInput`](./betextinput.md). To get the system’s standard behavior for an interaction, call [`BETextInteraction`](./betextinteraction.md) methods in your implementation. For more information, see [Supporting extended text interactions](./support-extended-text-interactions.md).
 
 ## Topics
 
 ### Finding and replacing text
-- [func findSelected(Any?)](berespondereditactions/findselected(_:).md)
+- [func findSelected(Any?)](./berespondereditactions/findselected%28_%29.md)
   Begins a search for the selected content in your browser text view.
-- [func promptForReplace(Any?)](berespondereditactions/promptforreplace(_:).md)
+- [func promptForReplace(Any?)](./berespondereditactions/promptforreplace%28_%29.md)
   Shows potential replacements for the selected content.
-- [func replace(Any?)](berespondereditactions/replace(_:).md)
+- [func replace(Any?)](./berespondereditactions/replace%28_%29.md)
   Removes the selected text and inputs the chosen replacement text.
-- [func addShortcut(Any?)](berespondereditactions/addshortcut(_:).md)
+- [func addShortcut(Any?)](./berespondereditactions/addshortcut%28_%29.md)
   Adds a text-replacement shortcut to the edit dictionary.
 ### Defining and sharing text
-- [func lookup(Any?)](berespondereditactions/lookup(_:).md)
+- [func lookup(Any?)](./berespondereditactions/lookup%28_%29.md)
   Presents a dictionary definition for the selected content.
-- [func share(Any?)](berespondereditactions/share(_:).md)
+- [func share(Any?)](./berespondereditactions/share%28_%29.md)
   Presents UI for sharing the selected text.
 ### Translating and transliterating text
-- [func translate(Any?)](berespondereditactions/translate(_:).md)
+- [func translate(Any?)](./berespondereditactions/translate%28_%29.md)
   Presents a translation of the selected text.
-- [func transliterateChinese(Any?)](berespondereditactions/transliteratechinese(_:).md)
+- [func transliterateChinese(Any?)](./berespondereditactions/transliteratechinese%28_%29.md)
   Converts the selected text between traditional and simplified Chinese.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
 ### Inherited By
-- [BETextInput](betextinput.md)
+- [BETextInput](./betextinput.md)
 
 ## See Also
 
-- [class BETextInteraction](betextinteraction.md)
+### Interaction responses
+- [class BETextInteraction](./betextinteraction.md)
   An interaction you add to a text view to support extended text gestures.
-- [protocol BETextInteractionDelegate](betextinteractiondelegate.md)
+- [protocol BETextInteractionDelegate](./betextinteractiondelegate.md)
   A set of methods that informs you about selection changes in text views.
-- [enum BEGestureType](begesturetype.md)
+- [enum BEGestureType](./begesturetype.md)
   The types of touch gestures that operate on input text.
 
 

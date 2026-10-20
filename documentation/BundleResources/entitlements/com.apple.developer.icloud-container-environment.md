@@ -1,7 +1,8 @@
 # com.apple.developer.icloud-container-environment
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The development or production environment to use for the iCloud containers.
 
@@ -13,19 +14,26 @@ The development or production environment to use for the iCloud containers.
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
 
+- **Name**: `com.apple.developer.icloud-container-environment`
+- **Type**: string
 
-**Type**: string
+## Possible Values
+
+- `Development`
+- `Production`
 
 ## See Also
 
-- [com.apple.developer.icloud-container-development-container-identifiers](entitlements/com.apple.developer.icloud-container-development-container-identifiers.md)
+### iCloud
+- [com.apple.developer.icloud-container-development-container-identifiers](./com.apple.developer.icloud-container-development-container-identifiers.md)
   The container identifiers for the iCloud development environment.
-- [iCloud Container Identifiers Entitlement](entitlements/com.apple.developer.icloud-container-identifiers.md)
+- [iCloud Container Identifiers Entitlement](./com.apple.developer.icloud-container-identifiers.md)
   The container identifiers for the iCloud production environment.
-- [iCloud Services Entitlement](entitlements/com.apple.developer.icloud-services.md)
+- [iCloud Services Entitlement](./com.apple.developer.icloud-services.md)
   The iCloud services used by the app.
-- [iCloud Key-Value Store Entitlement](entitlements/com.apple.developer.ubiquity-kvstore-identifier.md)
+- [iCloud Key-Value Store Entitlement](./com.apple.developer.ubiquity-kvstore-identifier.md)
   The container identifier to use for iCloud key-value storage.
 
 

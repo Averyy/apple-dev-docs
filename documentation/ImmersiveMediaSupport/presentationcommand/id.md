@@ -1,7 +1,8 @@
 # id
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.4+
@@ -18,9 +19,10 @@ var id: Int { get }
 
 ## See Also
 
-- [var duration: CMTime](presentationcommand/duration.md)
-- [var offset: CMTime?](presentationcommand/offset.md)
-- [var time: CMTime](presentationcommand/time.md)
+### Instance Properties
+- [var duration: CMTime](./duration.md)
+- [var offset: CMTime?](./offset.md)
+- [var time: CMTime](./time.md)
 
 
 ---

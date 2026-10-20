@@ -1,14 +1,15 @@
 # MBUF_PKTHDR
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 MBUF_PKTHDR = 0x0002
 ```
 

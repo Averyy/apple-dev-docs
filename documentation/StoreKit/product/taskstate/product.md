@@ -1,7 +1,8 @@
 # product
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The product value if the task was successful.
 

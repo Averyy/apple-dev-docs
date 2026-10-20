@@ -1,7 +1,8 @@
 # init(value:andOwner:)
 
 **Framework**: JavaScriptCore  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a managed value and associates it with an owner.
 
@@ -19,13 +20,17 @@ Creates a managed value and associates it with an owner.
 init!(value: JSValue!, andOwner owner: Any!)
 ```
 
+```objc
++ (JSManagedValue *) managedValueWithValue:(JSValue *) value andOwner:(id) owner;
+```
+
 #### Return Value
 
 A new managed value.
 
 #### Discussion
 
-Calling this method is equivalent to creating a managed value and then reporting it to the JavaScriptCore virtual machine using the [`addManagedReference(_:withOwner:)`](jsvirtualmachine/addmanagedreference(_:withowner:).md) method.
+Calling this method is equivalent to creating a managed value and then reporting it to the JavaScriptCore virtual machine using the [`addManagedReference(_:withOwner:)`](../jsvirtualmachine/addmanagedreference%28_,withowner%29.md) method.
 
 ## Parameters
 
@@ -34,7 +39,8 @@ Calling this method is equivalent to creating a managed value and then reporting
 
 ## See Also
 
-- [init!(value: JSValue!)](jsmanagedvalue/init(value:).md)
+### Creating a Managed Value
+- [init!(value: JSValue!)](./init%28value%29.md)
   Initializes a managed value with the specified JavaScript value.
 
 

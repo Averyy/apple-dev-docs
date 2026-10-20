@@ -1,7 +1,8 @@
 # init(subsystem:category:)
 
 **Framework**: os  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a logger using the specified subsystem and category.
 
@@ -11,7 +12,7 @@ Creates a logger using the specified subsystem and category.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -22,16 +23,17 @@ init(subsystem: String, category: String)
 
 ## Parameters
 
-- `subsystem`: The string that identifies the subsystem that emits signposts. Typically, you use the same value as your app’s *bundle ID*. For more information, see [`CFBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier).
+- `subsystem`: The string that identifies the subsystem that emits signposts. Typically, you use the same value as your app’s *bundle ID*. For more information, see [`CFBundleIdentifier`](../../BundleResources/information-property-list/cfbundleidentifier.md).
 - `category`: The string that the system uses to categorize emitted signposts.
 
 ## See Also
 
-- [init()](logger/init.md)
+### Creating a Logger
+- [init()](./init%28%29.md)
   Creates a logger that writes to the default subsystem.
-- [init(OSLog)](logger/init(_:).md)
+- [init(OSLog)](./init%28_%29.md)
   Creates a logger that writes to the specified log.
-- [class OSLog](oslog.md)
+- [class OSLog](../oslog.md)
   A container of related log messages.
 
 

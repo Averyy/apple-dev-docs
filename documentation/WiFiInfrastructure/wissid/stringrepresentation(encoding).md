@@ -1,7 +1,8 @@
 # stringRepresentation(encoding:)
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts the SSID’s raw data to a string representation using the specified encoding.
 
@@ -32,7 +33,8 @@ Use this method to obtain a human-readable version of the network name. Because 
 
 ## See Also
 
-- [init?(String, encoding: String.Encoding)](wissid/init(_:encoding:).md)
+### Working with SSIDs as a string
+- [init?(String, encoding: String.Encoding)](./init%28_,encoding%29.md)
   Creates an SSID from a text string using the specified encoding.
 
 

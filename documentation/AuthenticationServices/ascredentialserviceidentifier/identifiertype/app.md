@@ -1,7 +1,8 @@
 # ASCredentialServiceIdentifier.IdentifierType.app
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The service identifier represents an App ID. When a service identifier of this type is provided to your extension for saving a password, the ASCredentialServiceIdentifier object will have a non-nil `displayName` property that contains a user friendly name for the app.
 
@@ -16,6 +17,10 @@ The service identifier represents an App ID. When a service identifier of this t
 
 ```swift
 case app
+```
+
+```c
+ASCredentialServiceIdentifierTypeApp
 ```
 
 

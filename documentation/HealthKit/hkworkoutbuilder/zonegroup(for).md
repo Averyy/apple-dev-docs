@@ -1,7 +1,8 @@
 # zoneGroup(for:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the current zone group for the specified quantity type.
 
@@ -33,9 +34,10 @@ This method provides real-time zone duration calculations during an active worko
 
 ## See Also
 
-- [func setCustomZoneConfiguration(HKWorkoutZoneConfiguration?, for: HKQuantityType) async throws](hkworkoutbuilder/setcustomzoneconfiguration(_:for:).md)
+### Configuring zone data
+- [func setCustomZoneConfiguration(HKWorkoutZoneConfiguration?, for: HKQuantityType) async throws](./setcustomzoneconfiguration%28_,for%29.md)
   Overrides the preferred zone configuration with a custom zone for the current workout.
-- [func zoneConfiguration(for: HKQuantityType) async throws -> HKWorkoutZoneConfiguration?](hkworkoutbuilder/zoneconfiguration(for:).md)
+- [func zoneConfiguration(for: HKQuantityType) async throws -> HKWorkoutZoneConfiguration?](./zoneconfiguration%28for%29.md)
   Returns the zone configuration for the specified quantity type.
 
 

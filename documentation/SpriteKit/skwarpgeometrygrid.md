@@ -1,9 +1,10 @@
 # SKWarpGeometryGrid
 
 **Framework**: SpriteKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
-A definition for a grid-based deformation of nodes that conform to [`SKWarpable`](skwarpable.md).
+A definition for a grid-based deformation of nodes that conform to [`SKWarpable`](./skwarpable.md).
 
 **Availability**:
 - iOS 10.0+
@@ -20,10 +21,14 @@ A definition for a grid-based deformation of nodes that conform to [`SKWarpable`
 class SKWarpGeometryGrid
 ```
 
+```objc
+@interface SKWarpGeometryGrid : SKWarpGeometry
+```
+
 ## Mentions
 
-- [Animate the Warping of a Sprite](animate-the-warping-of-a-sprite.md)
-- [Warping SpriteKit Content By Using an Effect Node](warping-spritekit-content-by-using-an-effect-node.md)
+- [Animate the Warping of a Sprite](./animate-the-warping-of-a-sprite.md)
+- [Warping SpriteKit Content By Using an Effect Node](./warping-spritekit-content-by-using-an-effect-node.md)
 
 #### Overview
 
@@ -32,53 +37,54 @@ An `SKWarpGeometryGrid` exposes a 2D array of source positions, and set of desti
 ## Topics
 
 ### Creating a Warp Geometry Grid
-- [convenience init(columns: Int, rows: Int)](skwarpgeometrygrid/init(columns:rows:).md)
+- [convenience init(columns: Int, rows: Int)](./skwarpgeometrygrid/init%28columns,rows%29.md)
   Creates a warp geometry grid of a specified size.
-- [convenience init(columns: Int, rows: Int, sourcePositions: [SIMD2<Float>], destinationPositions: [SIMD2<Float>])](skwarpgeometrygrid/init(columns:rows:sourcepositions:destinationpositions:).md)
+- [convenience init(columns: Int, rows: Int, sourcePositions: [SIMD2<Float>], destinationPositions: [SIMD2<Float>])](./skwarpgeometrygrid/init%28columns,rows,sourcepositions,destinationpositions%29.md)
   Creates a warp geometry grid of a specific size and warp translation, in point arrays.
-- [init?(coder: NSCoder)](skwarpgeometrygrid/init(coder:).md)
+- [init?(coder: NSCoder)](./skwarpgeometrygrid/init%28coder%29.md)
   Tells you when to intialize a grid that was loaded from an archive.
 ### Animating Warping
-- [Animate the Warping of a Sprite](animate-the-warping-of-a-sprite.md)
+- [Animate the Warping of a Sprite](./animate-the-warping-of-a-sprite.md)
   Interpolate warping from source to destination warp geometry grids.
 ### Accessing or Setting Warp Geometry Grid Size
-- [var numberOfColumns: Int](skwarpgeometrygrid/numberofcolumns.md)
+- [var numberOfColumns: Int](./skwarpgeometrygrid/numberofcolumns.md)
   The object’s number of columns.
-- [var numberOfRows: Int](skwarpgeometrygrid/numberofrows.md)
+- [var numberOfRows: Int](./skwarpgeometrygrid/numberofrows.md)
   The object’s number of rows.
-- [var vertexCount: Int](skwarpgeometrygrid/vertexcount.md)
+- [var vertexCount: Int](./skwarpgeometrygrid/vertexcount.md)
   The object’s total number of vertices.
 ### Accessing or Setting Grid Vertices
-- [func destPosition(at: Int) -> vector_float2](skwarpgeometrygrid/destposition(at:).md)
+- [func destPosition(at: Int) -> vector_float2](./skwarpgeometrygrid/destposition%28at%29.md)
   Returns the destination position of a vertex.
-- [func replacingByDestinationPositions(positions: [SIMD2<Float>]) -> SKWarpGeometryGrid](skwarpgeometrygrid/replacingbydestinationpositions(positions:).md)
+- [func replacingByDestinationPositions(positions: [SIMD2<Float>]) -> SKWarpGeometryGrid](./skwarpgeometrygrid/replacingbydestinationpositions%28positions%29.md)
   Returns a copy of this grid, updated with the argument destination positions.
-- [func replacingBySourcePositions(positions: [SIMD2<Float>]) -> SKWarpGeometryGrid](skwarpgeometrygrid/replacingbysourcepositions(positions:).md)
+- [func replacingBySourcePositions(positions: [SIMD2<Float>]) -> SKWarpGeometryGrid](./skwarpgeometrygrid/replacingbysourcepositions%28positions%29.md)
   Returns a copy of this grid, updated with the argument source positions.
-- [func sourcePosition(at: Int) -> vector_float2](skwarpgeometrygrid/sourceposition(at:).md)
+- [func sourcePosition(at: Int) -> vector_float2](./skwarpgeometrygrid/sourceposition%28at%29.md)
   Returns the source position of a vertex.
 
 ## Relationships
 
 ### Inherits From
-- [SKWarpGeometry](skwarpgeometry.md)
+- [SKWarpGeometry](./skwarpgeometry.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class SKWarpGeometry](skwarpgeometry.md)
-  A definition for a deformation of nodes that conform to [`SKWarpable`](skwarpable.md).
-- [protocol SKWarpable](skwarpable.md)
-  A protocol for objects that can be warped and animated by an [`SKWarpGeometry`](skwarpgeometry.md).
+### Warping
+- [class SKWarpGeometry](./skwarpgeometry.md)
+  A definition for a deformation of nodes that conform to [`SKWarpable`](./skwarpable.md).
+- [protocol SKWarpable](./skwarpable.md)
+  A protocol for objects that can be warped and animated by an [`SKWarpGeometry`](./skwarpgeometry.md).
 
 
 ---

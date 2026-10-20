@@ -1,7 +1,8 @@
 # controller(_:commissioningSessionEstablishmentDone:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -18,9 +19,13 @@
 optional func controller(_ controller: MTRDeviceController, commissioningSessionEstablishmentDone error: (any Error)?)
 ```
 
+```objc
+- (void) controller:(MTRDeviceController *) controller commissioningSessionEstablishmentDone:(NSError *) error;
+```
+
 ## Mentions
 
-- [Onboarding a Matter device](onboarding-a-matter-device.md)
+- [Onboarding a Matter device](../onboarding-a-matter-device.md)
 
 
 ---

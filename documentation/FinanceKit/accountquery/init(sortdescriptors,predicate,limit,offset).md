@@ -1,7 +1,8 @@
 # init(sortDescriptors:predicate:limit:offset:)
 
 **Framework**: FinanceKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new account query structure with the provided sort descriptors and, optionally, a predicate and limit on the number of records the query should return.
 
@@ -17,8 +18,8 @@ init(sortDescriptors: [SortDescriptor<Account>] = [], predicate: Predicate<Accou
 
 ## Parameters
 
-- `sortDescriptors`: An array of [`Account`](account.md) sort descriptors.
-- `predicate`: A [`Predicate`](https://developer.apple.com/documentation/foundation/predicate) to filter the `Account` records with.
+- `sortDescriptors`: An array of [`Account`](../account.md) sort descriptors.
+- `predicate`: A [`Predicate`](../../Foundation/predicate.md) to filter the `Account` records with.
 - `limit`: An integer that indicates the maximum number of `Account` records to return.
 - `offset`: An integer that indicates the number of records to offset the result by.
 

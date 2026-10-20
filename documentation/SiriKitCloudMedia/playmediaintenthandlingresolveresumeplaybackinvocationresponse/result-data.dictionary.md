@@ -1,7 +1,8 @@
 # PlayMediaIntentHandlingResolveResumePlaybackInvocationResponse.Result
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The result of resolving whether a play media intent resumes the current playback queue.
 
@@ -10,13 +11,13 @@ The result of resolving whether a play media intent resumes the current playback
 
 ## Declaration
 
-```swift
+```
 object PlayMediaIntentHandlingResolveResumePlaybackInvocationResponse.Result
 ```
 
 ## Properties
 
-- `resolutionResult` (BooleanResolutionResult) *(required)*: [`true`](https://developer.apple.com/documentation/swift/true) to resume the current playback queue, or [`false`](https://developer.apple.com/documentation/swift/false) to start a new playback queue.
+- `resolutionResult` (BooleanResolutionResult) *(required)*: [`true`](../../Swift/true.md) to resume the current playback queue, or [`false`](../../Swift/false.md) to start a new playback queue.
 
 
 ---

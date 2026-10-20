@@ -1,7 +1,8 @@
 # errSecInvalidName
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid name was detected.
 
@@ -18,6 +19,10 @@ An invalid name was detected.
 
 ```swift
 var errSecInvalidName: OSStatus { get }
+```
+
+```c
+errSecInvalidName
 ```
 
 

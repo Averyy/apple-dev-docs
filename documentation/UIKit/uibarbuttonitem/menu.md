@@ -1,7 +1,8 @@
 # menu
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The context menu for this button.
 
@@ -19,13 +20,18 @@ The context menu for this button.
 var menu: UIMenu? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) UIMenu * menu;
+```
+
 #### Discussion
 
 The context menu displays in response to a person tapping the item.
 
 ## See Also
 
-- [var preferredMenuElementOrder: UIContextMenuConfiguration.ElementOrder](uibarbuttonitem/preferredmenuelementorder.md)
+### Managing the context menu
+- [var preferredMenuElementOrder: UIContextMenuConfiguration.ElementOrder](./preferredmenuelementorder.md)
   The preferred menu-element ordering strategy for the menu.
 
 

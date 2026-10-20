@@ -1,7 +1,8 @@
 # waitUntilFinished()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Blocks execution of the current thread until the operation object finishes its task.
 
@@ -18,6 +19,10 @@ Blocks execution of the current thread until the operation object finishes its t
 
 ```swift
 func waitUntilFinished()
+```
+
+```objc
+- (void) waitUntilFinished;
 ```
 
 #### Discussion

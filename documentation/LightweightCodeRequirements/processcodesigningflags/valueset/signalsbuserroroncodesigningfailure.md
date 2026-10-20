@@ -1,7 +1,8 @@
 # signalsBusErrorOnCodeSigningFailure
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Code signing failures on page-in should be rejected as SIGBUS errors.
 

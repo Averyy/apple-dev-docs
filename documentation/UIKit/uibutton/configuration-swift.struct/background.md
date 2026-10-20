@@ -1,7 +1,8 @@
 # background
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration to customize the button background.
 
@@ -10,7 +11,7 @@ The configuration to customize the button background.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,9 +25,10 @@ The button lays out foreground configuration elements such as title, subtitle, a
 
 ## See Also
 
-- [var cornerStyle: UIButton.Configuration.CornerStyle](uibutton/configuration-swift.struct/cornerstyle-swift.property.md)
+### Configuring the button background
+- [var cornerStyle: UIButton.Configuration.CornerStyle](./cornerstyle-swift.property.md)
   The button style that controls the display behavior of the background corner radius.
-- [UIButton.Configuration.CornerStyle](uibutton/configuration-swift.struct/cornerstyle-swift.enum.md)
+- [UIButton.Configuration.CornerStyle](./cornerstyle-swift.enum.md)
   Settings that determine the appearance of the background corner radius.
 
 

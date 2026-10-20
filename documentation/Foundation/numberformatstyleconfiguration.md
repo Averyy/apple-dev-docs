@@ -1,7 +1,8 @@
 # NumberFormatStyleConfiguration
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Configuration settings for formatting numbers of different types.
 
@@ -27,38 +28,39 @@ This type is effectively a namespace to collect types that configure parts of a 
 ## Topics
 
 ### Specifying Configuration
-- [NumberFormatStyleConfiguration.DecimalSeparatorDisplayStrategy](numberformatstyleconfiguration/decimalseparatordisplaystrategy.md)
+- [NumberFormatStyleConfiguration.DecimalSeparatorDisplayStrategy](./numberformatstyleconfiguration/decimalseparatordisplaystrategy.md)
   A structure that an integer format style uses to configure a decimal separator display strategy.
-- [NumberFormatStyleConfiguration.Grouping](numberformatstyleconfiguration/grouping.md)
+- [NumberFormatStyleConfiguration.Grouping](./numberformatstyleconfiguration/grouping.md)
   A structure that an integer format style uses to configure grouping.
-- [NumberFormatStyleConfiguration.Precision](numberformatstyleconfiguration/precision.md)
+- [NumberFormatStyleConfiguration.Precision](./numberformatstyleconfiguration/precision.md)
   A structure that an integer format style uses to configure precision.
-- [NumberFormatStyleConfiguration.RoundingRule](numberformatstyleconfiguration/roundingrule.md)
+- [NumberFormatStyleConfiguration.RoundingRule](./numberformatstyleconfiguration/roundingrule.md)
   The type used for rounding rule values.
-- [NumberFormatStyleConfiguration.SignDisplayStrategy](numberformatstyleconfiguration/signdisplaystrategy.md)
+- [NumberFormatStyleConfiguration.SignDisplayStrategy](./numberformatstyleconfiguration/signdisplaystrategy.md)
   A structure that an integer format style uses to configure a sign display strategy.
-- [NumberFormatStyleConfiguration.Notation](numberformatstyleconfiguration/notation.md)
+- [NumberFormatStyleConfiguration.Notation](./numberformatstyleconfiguration/notation.md)
   A structure that an integer format style uses to configure notation.
 
 ## See Also
 
-- [func decimalSeparator(strategy: Decimal.FormatStyle.Configuration.DecimalSeparatorDisplayStrategy) -> Decimal.FormatStyle](decimal/formatstyle/decimalseparator(strategy:).md)
+### Customizing style behavior
+- [func decimalSeparator(strategy: Decimal.FormatStyle.Configuration.DecimalSeparatorDisplayStrategy) -> Decimal.FormatStyle](./decimal/formatstyle/decimalseparator%28strategy%29.md)
   Modifies the format style to use the specified decimal separator display strategy.
-- [func grouping(Decimal.FormatStyle.Configuration.Grouping) -> Decimal.FormatStyle](decimal/formatstyle/grouping(_:).md)
+- [func grouping(Decimal.FormatStyle.Configuration.Grouping) -> Decimal.FormatStyle](./decimal/formatstyle/grouping%28_%29.md)
   Modifies the format style to use the specified grouping.
-- [func locale(Locale) -> Decimal.FormatStyle](decimal/formatstyle/locale(_:).md)
+- [func locale(Locale) -> Decimal.FormatStyle](./decimal/formatstyle/locale%28_%29.md)
   Modifies the format style to use the specified locale.
-- [func notation(Decimal.FormatStyle.Configuration.Notation) -> Decimal.FormatStyle](decimal/formatstyle/notation(_:).md)
+- [func notation(Decimal.FormatStyle.Configuration.Notation) -> Decimal.FormatStyle](./decimal/formatstyle/notation%28_%29.md)
   Modifies the format style to use the specified notation.
-- [func precision(Decimal.FormatStyle.Configuration.Precision) -> Decimal.FormatStyle](decimal/formatstyle/precision(_:).md)
+- [func precision(Decimal.FormatStyle.Configuration.Precision) -> Decimal.FormatStyle](./decimal/formatstyle/precision%28_%29.md)
   Modifies the format style to use the specified precision.
-- [func rounded(rule: Decimal.FormatStyle.Configuration.RoundingRule, increment: Int?) -> Decimal.FormatStyle](decimal/formatstyle/rounded(rule:increment:).md)
+- [func rounded(rule: Decimal.FormatStyle.Configuration.RoundingRule, increment: Int?) -> Decimal.FormatStyle](./decimal/formatstyle/rounded%28rule,increment%29.md)
   Modifies the format style to use the specified rounding rule and increment.
-- [func scale(Double) -> Decimal.FormatStyle](decimal/formatstyle/scale(_:).md)
+- [func scale(Double) -> Decimal.FormatStyle](./decimal/formatstyle/scale%28_%29.md)
   Modifies the format style to use the specified scale.
-- [func sign(strategy: Decimal.FormatStyle.Configuration.SignDisplayStrategy) -> Decimal.FormatStyle](decimal/formatstyle/sign(strategy:).md)
+- [func sign(strategy: Decimal.FormatStyle.Configuration.SignDisplayStrategy) -> Decimal.FormatStyle](./decimal/formatstyle/sign%28strategy%29.md)
   Modifies the format style to use the specified sign display strategy for displaying or omitting sign symbols.
-- [Decimal.FormatStyle.Configuration](decimal/formatstyle/configuration.md)
+- [Decimal.FormatStyle.Configuration](./decimal/formatstyle/configuration.md)
   The type the format style uses for configuration settings.
 
 

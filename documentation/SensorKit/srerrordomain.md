@@ -1,7 +1,8 @@
 # SRErrorDomain
 
 **Framework**: SensorKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An error domain that’s unique to the framework.
 
@@ -16,15 +17,20 @@ An error domain that’s unique to the framework.
 let SRErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain SRErrorDomain;
+```
+
 #### Discussion
 
-For more information about error domains, see [`Error domains`](https://developer.apple.com/documentation/corefoundation/error-domains).
+For more information about error domains, see [Error domains](../CoreFoundation/error-domains.md).
 
 ## See Also
 
-- [struct SRError](srerror.md)
+### Interpreting Errors
+- [struct SRError](./srerror.md)
   An error that SensorKit reports.
-- [SRError.Code](srerror/code.md)
+- [SRError.Code](./srerror/code.md)
   The kinds of problems that stop a recording or a fetch.
 
 

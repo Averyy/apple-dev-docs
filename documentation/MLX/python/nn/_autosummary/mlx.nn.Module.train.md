@@ -6,37 +6,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.M
 
 # mlx.nn.Module.train
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.Module.train.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.Module.train
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.Module.train
-
-**Module.train(*mode: bool = True*) → [Module](../module.html#mlx.nn.Module)**
+**Module.train(*mode: bool = True*) → [Module](../module.md#mlx.nn.Module)**
 : Set the model in or out of training mode.
 Training mode only applies to certain layers. For example
-[Dropout](mlx.nn.Dropout.html#mlx.nn.Dropout) applies a random mask in training mode, but is the
+[Dropout](mlx.nn.Dropout.md#mlx.nn.Dropout) applies a random mask in training mode, but is the
 identity in evaluation mode.
 
 Parameters:
@@ -45,5 +18,3 @@ evaluation mode. Default: `True`.
 
 Returns:
 The module instance after updating the training mode.
-
-** Contents

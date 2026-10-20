@@ -1,7 +1,8 @@
 # init(viewElement:)
 
 **Framework**: TVMLKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a full-screen browser from a specified view element.
 
@@ -12,6 +13,10 @@ Create a full-screen browser from a specified view element.
 
 ```swift
 convenience init?(viewElement: TVViewElement)
+```
+
+```objc
++ (instancetype) viewControllerForElement:(TVViewElement *) viewElement;
 ```
 
 

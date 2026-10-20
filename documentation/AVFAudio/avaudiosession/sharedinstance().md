@@ -1,7 +1,8 @@
 # sharedInstance()
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the shared audio session instance.
 
@@ -17,6 +18,10 @@ Returns the shared audio session instance.
 
 ```swift
 class func sharedInstance() -> AVAudioSession
+```
+
+```objc
++ (AVAudioSession *) sharedInstance;
 ```
 
 #### Return Value

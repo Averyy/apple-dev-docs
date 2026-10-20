@@ -1,7 +1,8 @@
 # userDidTakeScreenshotNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that posts when a person takes a screenshot on the device.
 
@@ -9,7 +10,7 @@ A notification that posts when a person takes a screenshot on the device.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -17,6 +18,10 @@ A notification that posts when a person takes a screenshot on the device.
 ```swift
 nonisolated
 class let userDidTakeScreenshotNotification: NSNotification.Name
+```
+
+```c
+extern NSNotificationName const UIApplicationUserDidTakeScreenshotNotification;
 ```
 
 #### Discussion

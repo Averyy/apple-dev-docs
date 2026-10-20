@@ -1,7 +1,8 @@
 # changeToMode(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func changeToMode(with params: MTRRVCRunModeClusterChangeToModeParams, completion: @escaping @Sendable (MTRRVCRunModeClusterChangeToModeResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func changeToMode(with params: MTRRVCRunModeClusterChangeToModeParams) async throws -> MTRRVCRunModeClusterChangeToModeResponseParams
+```
+
+```objc
+- (void) changeToModeWithParams:(MTRRVCRunModeClusterChangeToModeParams *) params completion:(void (^)(MTRRVCRunModeClusterChangeToModeResponseParams *data, NSError *error)) completion;
 ```
 
 

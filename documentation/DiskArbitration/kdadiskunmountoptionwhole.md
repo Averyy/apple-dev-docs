@@ -1,7 +1,8 @@
 # kDADiskUnmountOptionWhole
 
 **Framework**: Disk Arbitration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Unmount the volumes tied to the whole disk object.
 
@@ -15,9 +16,14 @@ Unmount the volumes tied to the whole disk object.
 var kDADiskUnmountOptionWhole: Int { get }
 ```
 
+```c
+kDADiskUnmountOptionWhole
+```
+
 ## See Also
 
-- [var kDADiskUnmountOptionForce: Int](kdadiskunmountoptionforce.md)
+### Constants
+- [var kDADiskUnmountOptionForce: Int](./kdadiskunmountoptionforce.md)
   Unmount the volume even if files are still active.
 
 

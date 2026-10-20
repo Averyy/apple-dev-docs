@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation, suitable for debugging, of the most recent error returned by a system call.
 
@@ -26,7 +27,8 @@ The corresponding C function is `strerror(3)`.
 
 ## See Also
 
-- [var description: String](errno/description.md)
+### Debugging
+- [var description: String](./description.md)
   A textual representation of the most recent error returned by a system call.
 
 

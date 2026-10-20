@@ -1,7 +1,8 @@
 # DynamicTypeSize.large
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A large size.
 
@@ -22,17 +23,18 @@ case large
 
 ## See Also
 
-- [DynamicTypeSize.xSmall](dynamictypesize/xsmall.md)
+### Getting type sizes
+- [DynamicTypeSize.xSmall](./xsmall.md)
   An extra small size.
-- [DynamicTypeSize.small](dynamictypesize/small.md)
+- [DynamicTypeSize.small](./small.md)
   A small size.
-- [DynamicTypeSize.medium](dynamictypesize/medium.md)
+- [DynamicTypeSize.medium](./medium.md)
   A medium size.
-- [DynamicTypeSize.xLarge](dynamictypesize/xlarge.md)
+- [DynamicTypeSize.xLarge](./xlarge.md)
   An extra large size.
-- [DynamicTypeSize.xxLarge](dynamictypesize/xxlarge.md)
+- [DynamicTypeSize.xxLarge](./xxlarge.md)
   An extra extra large size.
-- [DynamicTypeSize.xxxLarge](dynamictypesize/xxxlarge.md)
+- [DynamicTypeSize.xxxLarge](./xxxlarge.md)
   An extra extra extra large size.
 
 

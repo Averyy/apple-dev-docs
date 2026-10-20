@@ -1,7 +1,8 @@
 # WAAccessCategory
 
 **Framework**: Wi-Fi Aware  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The underling quality-of-service (QoS) the Wi-Fi layer uses to transmit data packets from a connection over the air.
 
@@ -22,42 +23,43 @@ A given `NetworkConnection` is bound to a single access category at the Wi-Fi la
 
 Wi-Fi is a shared medium, so all Wi-Fi devices, networks, apps, and  `NetworkConnection`s share the overall Wi-Fi capacity between them. An app can improve the performance of its data flows, and that of all other nearby devices and Wi-Fi networks, by choosing the lowest QoS category that meets the requirements of each of its flows. When in doubt, use the default `.bestEffort` category.
 
-For more information, refer to [`NWParameters.ServiceClass`](https://developer.apple.comhttps://developer.apple.com/documentation/network/nwparameters/serviceclass-swift.enum) and [`NWParameters`](https://developer.apple.comhttps://developer.apple.com/documentation/network/nwparameters).
+For more information, refer to [NWParameters.ServiceClass](../Network/nwparameters/serviceclass-swift.enum.md) and [NWParameters](../Network/nwparameters.md).
 
 Access categories are typically created by the system on behalf of the client, so they usually don’t need to be instantiated directly.
 
 ## Topics
 
 ### Providing throughput
-- [WAAccessCategory.bestEffort](waaccesscategory/besteffort.md)
+- [WAAccessCategory.bestEffort](./waaccesscategory/besteffort.md)
   A default quality-of-service (QoS) type that provides high throughput for data transfers of any size.
-- [WAAccessCategory.background](waaccesscategory/background.md)
+- [WAAccessCategory.background](./waaccesscategory/background.md)
   A quality-of-service (QoS) type that provides high throughput for delay-tolerant, noninteractive data transfers of any size.
-- [WAAccessCategory.interactiveVideo](waaccesscategory/interactivevideo.md)
+- [WAAccessCategory.interactiveVideo](./waaccesscategory/interactivevideo.md)
   A quality-of-service (QoS) type that provides low-latency for moderate throughput flows.
-- [WAAccessCategory.interactiveVoice](waaccesscategory/interactivevoice.md)
+- [WAAccessCategory.interactiveVoice](./waaccesscategory/interactivevoice.md)
   A quality-of-service (QoS) type that provides very low-latency for low-throughput flows.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct NWPath](../network/nwpath.md)
+### Connection performance
+- [struct NWPath](../Network/nwpath.md)
   An object that contains information about the properties of the network that a connection uses, or that are available to your app.
-- [struct WAPath](wapath.md)
+- [struct WAPath](./wapath.md)
   A representation of the current Wi-Fi Aware path.
-- [enum WAPerformanceMode](waperformancemode.md)
+- [enum WAPerformanceMode](./waperformancemode.md)
   The performance mode that indicates what performance criterion to prioritize.
-- [struct WAPerformanceReport](waperformancereport.md)
+- [struct WAPerformanceReport](./waperformancereport.md)
   The current performance state of the data path.
 
 

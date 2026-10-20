@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a command to compute the size an acceleration structure can compact into, writing the result into a buffer.
@@ -20,9 +21,13 @@ Encodes a command to compute the size an acceleration structure can compact into
 func writeCompactedSize(sourceAccelerationStructure accelerationStructure: any MTLAccelerationStructure, destinationBuffer buffer: MTL4BufferRange)
 ```
 
+```objc
+- (void) writeCompactedAccelerationStructureSize:(id<MTLAccelerationStructure>) accelerationStructure toBuffer:(MTL4BufferRange) buffer;
+```
+
 #### Discussion
 
-This size is potentially smaller than the acceleration structure. To perform compaction, you typically read this size from the buffer once the command buffer completes. You then use it to allocate a new, potentially smaller acceleration structure. Finally, you call the [`copyAndCompact(sourceAccelerationStructure:destinationAccelerationStructure:)`](mtl4computecommandencoder/copyandcompact(sourceaccelerationstructure:destinationaccelerationstructure:).md) method to perform the copy.
+This size is potentially smaller than the acceleration structure. To perform compaction, you typically read this size from the buffer once the command buffer completes. You then use it to allocate a new, potentially smaller acceleration structure. Finally, you call the [`copyAndCompact(sourceAccelerationStructure:destinationAccelerationStructure:)`](./copyandcompact%28sourceaccelerationstructure,destinationaccelerationstructure%29.md) method to perform the copy.
 
 ## Parameters
 
@@ -31,9 +36,10 @@ This size is potentially smaller than the acceleration structure. To perform com
 
 ## See Also
 
-- [func copy(sourceAccelerationStructure: any MTLAccelerationStructure, destinationAccelerationStructure: any MTLAccelerationStructure)](mtl4computecommandencoder/copy(sourceaccelerationstructure:destinationaccelerationstructure:).md)
+### Encoding acceleration structure copy commands
+- [func copy(sourceAccelerationStructure: any MTLAccelerationStructure, destinationAccelerationStructure: any MTLAccelerationStructure)](./copy%28sourceaccelerationstructure,destinationaccelerationstructure%29.md)
   Encodes an acceleration structure copy operation into the command buffer.
-- [func copyAndCompact(sourceAccelerationStructure: any MTLAccelerationStructure, destinationAccelerationStructure: any MTLAccelerationStructure)](mtl4computecommandencoder/copyandcompact(sourceaccelerationstructure:destinationaccelerationstructure:).md)
+- [func copyAndCompact(sourceAccelerationStructure: any MTLAccelerationStructure, destinationAccelerationStructure: any MTLAccelerationStructure)](./copyandcompact%28sourceaccelerationstructure,destinationaccelerationstructure%29.md)
   Encodes a command to copy and compact an acceleration structure.
 
 

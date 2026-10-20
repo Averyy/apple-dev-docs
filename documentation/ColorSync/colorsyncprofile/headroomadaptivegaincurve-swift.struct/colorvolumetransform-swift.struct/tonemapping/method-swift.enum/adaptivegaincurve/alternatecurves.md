@@ -1,7 +1,8 @@
 # alternateCurves
 
 **Framework**: ColorSync  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The alternate curves, each targeting a different display headroom. Limited to four entries.
 

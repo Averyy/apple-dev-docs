@@ -1,7 +1,8 @@
 # locales
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The languages to use in text items that the image analyzer recognizes.
 
@@ -20,7 +21,7 @@ var locales: [String]
 
 ## Mentions
 
-- [Enabling Live Text interactions with images](enabling-live-text-interactions-with-images.md)
+- [Enabling Live Text interactions with images](../../enabling-live-text-interactions-with-images.md)
 
 
 ---

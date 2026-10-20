@@ -1,7 +1,8 @@
 # init(startButtonTitle:additionalRoutesButtonTitle:overviewButtonTitle:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a trip preview text configuration object.
 
@@ -14,6 +15,10 @@ Creates a trip preview text configuration object.
 
 ```swift
 init(startButtonTitle: String?, additionalRoutesButtonTitle: String?, overviewButtonTitle: String?)
+```
+
+```objc
+- (instancetype) initWithStartButtonTitle:(NSString *) startButtonTitle additionalRoutesButtonTitle:(NSString *) additionalRoutesButtonTitle overviewButtonTitle:(NSString *) overviewButtonTitle;
 ```
 
 #### Return Value

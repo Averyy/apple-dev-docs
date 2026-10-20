@@ -1,7 +1,8 @@
 # contents
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Array of menu contents.
 
@@ -16,9 +17,10 @@ let contents: [RCSService.Business.Menu.Content]
 
 ## See Also
 
-- [let title: String?](rcsservice/business/menu/title.md)
+### Accessing menu properties
+- [let title: String?](./title.md)
   Title for menu.
-- [RCSService.Business.Menu.Content](rcsservice/business/menu/content.md)
+- [RCSService.Business.Menu.Content](./content.md)
   Enumeration defining the contents of menu.
 
 

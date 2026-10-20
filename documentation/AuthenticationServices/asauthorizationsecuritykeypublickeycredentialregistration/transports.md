@@ -1,7 +1,8 @@
 # transports
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of transport types.
 
@@ -15,6 +16,10 @@ An array of transport types.
 
 ```swift
 var transports: [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport] { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSArray<NSString *> * transports;
 ```
 
 

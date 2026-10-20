@@ -1,7 +1,8 @@
 # loadAsArray
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.0+
@@ -15,6 +16,10 @@
 
 ```swift
 static let loadAsArray: MTKTextureLoader.Option
+```
+
+```c
+extern MTKTextureLoaderOption const MTKTextureLoaderOptionLoadAsArray;
 ```
 
 

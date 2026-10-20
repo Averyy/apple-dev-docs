@@ -1,7 +1,8 @@
 # executeFunction(_:arguments:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes the specified function using an array of input and output tensors.
 
@@ -11,7 +12,7 @@ Executes the specified function using an array of input and output tensors.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -23,13 +24,14 @@ func executeFunction(_ function: String? = nil, arguments: inout [BNNSTensor]) a
 ## Parameters
 
 - `function`: The function. Specify as `nil` if the graph only contains one function.
-- `arguments`: The output and input arguments. Note that the arguments may not be in the same order as the original `mlpackage` or `mlmodelc` file. Use the [`argumentPosition(forFunction:argument:)`](bnnsgraph/context/argumentposition(forfunction:argument:).md) function to get the correct position in the `arguments` array for a given argument.
+- `arguments`: The output and input arguments. Note that the arguments may not be in the same order as the original `mlpackage` or `mlmodelc` file. Use the [`argumentPosition(forFunction:argument:)`](./argumentposition%28forfunction,argument%29.md) function to get the correct position in the `arguments` array for a given argument.
 
 ## See Also
 
-- [func executeFunction<T>(String?, arguments: [T]) throws](bnnsgraph/context/executefunction(_:arguments:)-95snr.md)
+### Executing a graph
+- [func executeFunction<T>(String?, arguments: [T]) throws](./executefunction%28_,arguments%29-95snr.md)
   Executes the specified function using an array of input and output pointers.
-- [BNNSGraph.PointerArgument](bnnsgraph/pointerargument.md)
+- [BNNSGraph.PointerArgument](../pointerargument.md)
   A type that BNNS Graph accepts as an input-output argument.
 
 

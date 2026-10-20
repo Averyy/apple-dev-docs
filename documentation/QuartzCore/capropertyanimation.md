@@ -1,7 +1,8 @@
 # CAPropertyAnimation
 
 **Framework**: Core Animation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract subclass for creating animations that manipulate the value of layer properties.
 
@@ -19,65 +20,70 @@ An abstract subclass for creating animations that manipulate the value of layer 
 class CAPropertyAnimation
 ```
 
+```objc
+@interface CAPropertyAnimation : CAAnimation
+```
+
 #### Overview
 
 The property to animate is specified using a key path that is relative to the layer using the animation.
 
-You do not create instances of [`CAPropertyAnimation`](capropertyanimation.md): to animate the properties of a Core Animation layer, create instance of the concrete subclasses [`CABasicAnimation`](cabasicanimation.md) or [`CAKeyframeAnimation`](cakeyframeanimation.md).
+You do not create instances of [`CAPropertyAnimation`](./capropertyanimation.md): to animate the properties of a Core Animation layer, create instance of the concrete subclasses [`CABasicAnimation`](./cabasicanimation.md) or [`CAKeyframeAnimation`](./cakeyframeanimation.md).
 
 ## Topics
 
 ### Animated Key Path
-- [var keyPath: String?](capropertyanimation/keypath.md)
+- [var keyPath: String?](./capropertyanimation/keypath.md)
   Specifies the key path the receiver animates.
 ### Property Value Calculation Behavior
-- [var isCumulative: Bool](capropertyanimation/iscumulative.md)
+- [var isCumulative: Bool](./capropertyanimation/iscumulative.md)
   Determines if the value of the property is the value at the end of the previous repeat cycle, plus the value of the current repeat cycle.
-- [var isAdditive: Bool](capropertyanimation/isadditive.md)
+- [var isAdditive: Bool](./capropertyanimation/isadditive.md)
   Determines if the value specified by the animation is added to the current render tree value to produce the new render tree value.
-- [var valueFunction: CAValueFunction?](capropertyanimation/valuefunction.md)
+- [var valueFunction: CAValueFunction?](./capropertyanimation/valuefunction.md)
   An optional value function that is applied to interpolated values.
 ### Creating an Animation
-- [convenience init(keyPath: String?)](capropertyanimation/init(keypath:).md)
+- [convenience init(keyPath: String?)](./capropertyanimation/init%28keypath%29.md)
   Creates and returns an `CAPropertyAnimation` instance for the specified key path.
 
 ## Relationships
 
 ### Inherits From
-- [CAAnimation](caanimation.md)
+- [CAAnimation](./caanimation.md)
 ### Inherited By
-- [CABasicAnimation](cabasicanimation.md)
-- [CAKeyframeAnimation](cakeyframeanimation.md)
+- [CABasicAnimation](./cabasicanimation.md)
+- [CAKeyframeAnimation](./cakeyframeanimation.md)
 ### Conforms To
-- [CAAction](caaction.md)
-- [CAMediaTiming](camediatiming.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CAAction](./caaction.md)
+- [CAMediaTiming](./camediatiming.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CAAnimation](caanimation.md)
+### Animation
+- [class CAAnimation](./caanimation.md)
   The abstract superclass for animations in Core Animation.
-- [protocol CAAnimationDelegate](caanimationdelegate.md)
+- [protocol CAAnimationDelegate](./caanimationdelegate.md)
   Methods your app can implement to respond when animations start and stop.
-- [class CABasicAnimation](cabasicanimation.md)
+- [class CABasicAnimation](./cabasicanimation.md)
   An object that provides basic, single-keyframe animation capabilities for a layer property.
-- [class CAKeyframeAnimation](cakeyframeanimation.md)
+- [class CAKeyframeAnimation](./cakeyframeanimation.md)
   An object that provides keyframe animation capabilities for a layer object.
-- [class CASpringAnimation](caspringanimation.md)
+- [class CASpringAnimation](./caspringanimation.md)
   An animation that applies a spring-like force to a layer’s properties.
-- [class CATransition](catransition.md)
+- [class CATransition](./catransition.md)
   An object that provides an animated transition between a layer’s states.
-- [class CAValueFunction](cavaluefunction.md)
+- [class CAValueFunction](./cavaluefunction.md)
   An object that provides a flexible method of defining animated transformations.
 
 

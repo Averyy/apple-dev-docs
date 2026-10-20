@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The display name of the item.
 
@@ -22,13 +23,14 @@ let displayName: String
 
 ## See Also
 
-- [let description: String](transaction/advancedcommerceinfo-swift.struct/item/details-swift.struct/description.md)
+### Instance Properties
+- [let description: String](./description.md)
   The description of the item.
-- [let offer: Transaction.AdvancedCommerceInfo.Offer?](transaction/advancedcommerceinfo-swift.struct/item/details-swift.struct/offer.md)
+- [let offer: Transaction.AdvancedCommerceInfo.Offer?](./offer.md)
   The offer applied to the purchase of this item, if any.
-- [let price: Decimal](transaction/advancedcommerceinfo-swift.struct/item/details-swift.struct/price.md)
+- [let price: Decimal](./price.md)
   The price of the item.
-- [let sku: String](transaction/advancedcommerceinfo-swift.struct/item/details-swift.struct/sku.md)
+- [let sku: String](./sku.md)
   Unique identifier for the item.
 
 

@@ -1,7 +1,8 @@
 # MTRDoorLockOperationError
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.4+
@@ -18,26 +19,30 @@
 enum MTRDoorLockOperationError
 ```
 
+```c
+enum MTRDoorLockOperationError : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRDoorLockOperationError.disabledUserDenied](mtrdoorlockoperationerror/disableduserdenied.md)
-- [MTRDoorLockOperationError.insufficientBattery](mtrdoorlockoperationerror/insufficientbattery.md)
-- [MTRDoorLockOperationError.invalidCredential](mtrdoorlockoperationerror/invalidcredential.md)
-- [MTRDoorLockOperationError.restricted](mtrdoorlockoperationerror/restricted.md)
-- [MTRDoorLockOperationError.unspecified](mtrdoorlockoperationerror/unspecified.md)
+- [MTRDoorLockOperationError.disabledUserDenied](./mtrdoorlockoperationerror/disableduserdenied.md)
+- [MTRDoorLockOperationError.insufficientBattery](./mtrdoorlockoperationerror/insufficientbattery.md)
+- [MTRDoorLockOperationError.invalidCredential](./mtrdoorlockoperationerror/invalidcredential.md)
+- [MTRDoorLockOperationError.restricted](./mtrdoorlockoperationerror/restricted.md)
+- [MTRDoorLockOperationError.unspecified](./mtrdoorlockoperationerror/unspecified.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrdoorlockoperationerror/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrdoorlockoperationerror/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

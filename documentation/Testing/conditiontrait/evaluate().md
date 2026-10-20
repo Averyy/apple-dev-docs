@@ -1,7 +1,8 @@
 # evaluate()
 
 **Framework**: Swift Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Evaluate this instance’s underlying condition.
 

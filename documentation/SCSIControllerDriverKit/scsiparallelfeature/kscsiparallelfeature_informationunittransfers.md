@@ -1,30 +1,32 @@
 # kSCSIParallelFeature_InformationUnitTransfers
 
 **Framework**: SCSIControllerDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The selector for SPI information unit (IU) transfers.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 kSCSIParallelFeature_InformationUnitTransfers
 ```
 
 ## See Also
 
-- [kSCSIParallelFeature_WideDataTransfer](scsiparallelfeature/kscsiparallelfeature_widedatatransfer.md)
+### Feature selectors
+- [kSCSIParallelFeature_WideDataTransfer](./kscsiparallelfeature_widedatatransfer.md)
   The selector for support of wide data transfers.
-- [kSCSIParallelFeature_SynchronousDataTransfer](scsiparallelfeature/kscsiparallelfeature_synchronousdatatransfer.md)
+- [kSCSIParallelFeature_SynchronousDataTransfer](./kscsiparallelfeature_synchronousdatatransfer.md)
   The selector for support of synchronous data transfers.
-- [kSCSIParallelFeature_QuickArbitrationAndSelection](scsiparallelfeature/kscsiparallelfeature_quickarbitrationandselection.md)
+- [kSCSIParallelFeature_QuickArbitrationAndSelection](./kscsiparallelfeature_quickarbitrationandselection.md)
   The selector for support of quick arbitration and selection (QAS).
-- [kSCSIParallelFeature_DoubleTransitionDataTransfers](scsiparallelfeature/kscsiparallelfeature_doubletransitiondatatransfers.md)
+- [kSCSIParallelFeature_DoubleTransitionDataTransfers](./kscsiparallelfeature_doubletransitiondatatransfers.md)
   The selector for support of double transition (DT) data transfers.
-- [kSCSIParallelFeature_TotalFeatureCount](scsiparallelfeature/kscsiparallelfeature_totalfeaturecount.md)
+- [kSCSIParallelFeature_TotalFeatureCount](./kscsiparallelfeature_totalfeaturecount.md)
   The total number of supported features.
 
 

@@ -1,7 +1,8 @@
 # init(range:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a single selection with a given range.
 

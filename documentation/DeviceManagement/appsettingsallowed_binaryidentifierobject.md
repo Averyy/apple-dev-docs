@@ -1,7 +1,8 @@
 # AppSettingsAllowed_BinaryIdentifierObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Dictionary containing one or more identifier fields to match a binary.
 
@@ -10,7 +11,7 @@ Dictionary containing one or more identifier fields to match a binary.
 
 ## Declaration
 
-```swift
+```
 object AppSettingsAllowed_BinaryIdentifierObject
 ```
 
@@ -20,6 +21,8 @@ object AppSettingsAllowed_BinaryIdentifierObject
 - `PathPrefix` (string): The file system path prefix to match binaries.
 - `SigningID` (string): The code signature signing identifier of the binary.
 - `SigningState` (string): The code signing state to match binaries.
+
+  **Default**: `All`; **Allowed Values**: `All`, `TestFlight`, `DeveloperID`, `Enterprise`, `AppStore`, `Apple`
 - `TeamID` (string): The code signature team identifier of the binary. Use the value “*APPLE*” instead of an empty string for Apple binaries with an empty team identifier.
 
 

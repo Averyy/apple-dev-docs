@@ -1,12 +1,13 @@
 # visionOS 27 Release Notes
 
-**Framework**: visionOS Release Notes
+**Framework**: visionOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The visionOS 27 SDK provides support to develop apps for Apple Vision Pro devices running visionOS 27. The SDK comes bundled with Xcode 27. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+The visionOS 27 SDK provides support to develop apps for Apple Vision Pro devices running visionOS 27. The SDK comes bundled with Xcode 27. For information on the compatibility requirements for Xcode 27, see [Xcode 27 Release Notes](../Xcode-Release-Notes/xcode-27-release-notes.md).
 
 ##### App Intents
 
@@ -22,7 +23,9 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 ###### Known Issues
 
-- Existing entities that conformed to @AppEntity(schema: .photos.asset) in prior releases might no longer compile in the 27 SDKs because new properties were added to the schema in this release. (181800016) (FB23652582) **Workaround:** To continue conforming to the schema, adopt the additional properties and move the code behind an availability check.
+- Existing entities that conformed to @AppEntity(schema: .photos.asset) in prior releases might no longer compile in the 27 SDKs because new properties were added to the schema in this release. (181800016) (FB23652582)
+
+  **Workaround:** To continue conforming to the schema, adopt the additional properties and move the code behind an availability check.
 
 ###### Deprecations
 
@@ -34,7 +37,7 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 - Fixed: When you view Apple Intelligence Report entries for Home Intelligence, some data that was sent to Private Cloud Compute won’t appear in the report. (176056930)
 
-##### Arkit
+##### ARKit
 
 ###### Resolved Issues
 
@@ -51,7 +54,9 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 ###### Known Issues
 
-- Spatial accessory tracking might not initialize when first paired via Bluetooth. (181827411) **Workaround:** Turn the accessory off and then on, or turn Bluetooth off and on.
+- Spatial accessory tracking might not initialize when first paired via Bluetooth. (181827411)
+
+  **Workaround:** Turn the accessory off and then on, or turn Bluetooth off and on.
 
 ##### Communication Safety
 
@@ -69,9 +74,11 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 ###### Known Issues
 
-- You might experience a degradation in eye tracking quality after performing Eye Setup in visionOS 27.0 Beta 1 through Beta 4. (175305506) **Workaround:** After updating to visionOS 27.0 Beta 5 or later, [`redo eye and hand setup on your Apple Vision Pro`](https://developer.apple.comhttps://support.apple.com/guide/apple-vision-pro/redo-eye-and-hand-setup-tanf67b02683/visionos).
+- You might experience a degradation in eye tracking quality after performing Eye Setup in visionOS 27.0 Beta 1 through Beta 4. (175305506)
 
-##### Eyesight
+  **Workaround:** After updating to visionOS 27.0 Beta 5 or later, [redo eye and hand setup on your Apple Vision Pro](https://support.apple.com/guide/apple-vision-pro/redo-eye-and-hand-setup-tanf67b02683/visionos).
+
+##### EyeSight
 
 ###### Resolved Issues
 
@@ -118,13 +125,13 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 - Fixed: The Genmoji or Image Playground panel might appear blank when invoked from Safari or Freeform. (175025165)
 
-##### Hand Ui
+##### Hand UI
 
 ###### Resolved Issues
 
 - Fixed: The battery percentage that appears in the status bar when you raise your hand and flip it over might be inconsistent with the percentage displayed in Control Center. (175742923)
 
-##### Healthkit
+##### HealthKit
 
 ###### Resolved Issues
 
@@ -159,7 +166,9 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 ###### New Features
 
-- Starting in 27.0 operating systems, select system processes now enforce stricter network security (TLS) requirements. These new requirements might cause connections to fail if the server does not meet them. The affected processes are those involved in MDM, DDM, Automated Device Enrollment, configuration profile installation, app installation, and software updates. Servers must support TLS 1.2 at minimum, using cipher suites and certificates that meet App Transport Security (ATS) requirements. For additional details on affected processes, requirements, and how to audit and diagnose failures in managed environments, please reference [`Prepare your network environment for stricter security requirements`](https://developer.apple.comhttps://support.apple.com/en-us/126655). For additional details on ATS and the new requirements, please reference [`Preventing Insecure Network Connections`](https://developer.apple.comhttps://developer.apple.com/documentation/Security/preventing-insecure-network-connections) and [`NSRequiresNIAPTLSPackageVersion`](https://developer.apple.comhttps://developer.apple.com/documentation/BundleResources/Information-Property-List/NSRequiresNIAPTLSPackageVersion). (176055825)
+- Starting in 27.0 operating systems, select system processes now enforce stricter network security (TLS) requirements. These new requirements might cause connections to fail if the server does not meet them. The affected processes are those involved in MDM, DDM, Automated Device Enrollment, configuration profile installation, app installation, and software updates. Servers must support TLS 1.2 at minimum, using cipher suites and certificates that meet App Transport Security (ATS) requirements.
+
+  For additional details on affected processes, requirements, and how to audit and diagnose failures in managed environments, please reference [Prepare your network environment for stricter security requirements](https://support.apple.com/en-us/126655). For additional details on ATS and the new requirements, please reference [Preventing Insecure Network Connections](../Security/preventing-insecure-network-connections.md) and [NSRequiresNIAPTLSPackageVersion](../BundleResources/information-property-list/nsrequiresniaptlspackageversion.md). (176055825)
 
 ##### On Demand Resources
 
@@ -173,7 +182,7 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 - Fixed: Spatial Personas might appear laggy during High Quality Recording. (178441141)
 
-##### Photokit
+##### PhotoKit
 
 ###### Resolved Issues
 
@@ -187,7 +196,9 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 ###### Known Issues
 
-- Toggling between 2D and Spatial views of a large panorama image (>300Mb) might cause the Photos application to unexpectedly quit. (183442382) **Workaround:** Convert the asset to JPEG or HEIC before importing it into the photos library.
+- Toggling between 2D and Spatial views of a large panorama image (>300Mb) might cause the Photos application to unexpectedly quit. (183442382)
+
+  **Workaround:** Convert the asset to JPEG or HEIC before importing it into the photos library.
 
 ##### Quick Look
 
@@ -201,15 +212,19 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 ###### Known Issues
 
-- When at an interior Viewpoint in a USD preview, using drag gestures to move the scene can cause a severe jump of the asset position. (180152079) **Workaround:** Apply the gesture slowly, avoiding a quick hand motion. Reset the positioning by choosing the desired Viewpoint again.
+- When at an interior Viewpoint in a USD preview, using drag gestures to move the scene can cause a severe jump of the asset position. (180152079)
 
-##### Reality Composer Pro Preview on Visionos
+  **Workaround:** Apply the gesture slowly, avoiding a quick hand motion. Reset the positioning by choosing the desired Viewpoint again.
+
+##### Reality Composer Pro Preview on visionOS
 
 ###### Resolved Issues
 
-- Reality Composer Pro Preview, which lets you preview your content on visionOS in real time directly from your Mac, is now available. For more information on the Reality Composer Pro macOS app, see [`Reality Composer Pro Release Notes`](https://developer.apple.comhttps://developer.apple.com/documentation/realitycomposerpro/reality-composer-pro-release-notes). (179045352)
+- Reality Composer Pro Preview, which lets you preview your content on visionOS in real time directly from your Mac, is now available.
 
-##### Realitykit
+  For more information on the Reality Composer Pro macOS app, see [Reality Composer Pro Release Notes](../RealityComposerPro/reality-composer-pro-release-notes.md). (179045352)
+
+##### RealityKit
 
 ###### Resolved Issues
 
@@ -242,7 +257,7 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 - Fixed: Obtaining new certificates via ACME fails. New MDM enrollments using Managed Device Attestation fail. (183456836)
 
-##### Shadergraph
+##### ShaderGraph
 
 ###### Resolved Issues
 
@@ -256,8 +271,12 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 ###### Known Issues
 
-- If an app intent uses Duration or `LPLinkMetadata`, creating a shortcut with that intent and then attempting to edit it with “Describe a change” might fail. (166068090) **Workaround:** If the model discards the action, press “Undo” to recover the unsupported intent.
-- When an app intent defines a `UnionValue` parameter with two number-related types (for example, both Int and Double), the number option appears twice in the parameter picker menu and shows as double-selected. (168315587) **Workaround:** Define only one number-related type in the `UnionValue` parameter (for example, use only Int or only Double, not both).
+- If an app intent uses Duration or `LPLinkMetadata`, creating a shortcut with that intent and then attempting to edit it with “Describe a change” might fail. (166068090)
+
+  **Workaround:** If the model discards the action, press “Undo” to recover the unsupported intent.
+- When an app intent defines a `UnionValue` parameter with two number-related types (for example, both Int and Double), the number option appears twice in the parameter picker menu and shows as double-selected. (168315587)
+
+  **Workaround:** Define only one number-related type in the `UnionValue` parameter (for example, use only Int or only Double, not both).
 
 ##### Siri
 
@@ -289,8 +308,12 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 ###### Known Issues
 
-- When you ask Siri for Maps information, the response snippets might appear incomplete or display formatting issues. (177116121) **Workaround:** Ask Siri to repeat the information, or open Maps directly for complete details.
-- Siri commands for Environments aren’t working. (178082773) **Workaround:** Use gaze and pinch to open environments from the Home View.
+- When you ask Siri for Maps information, the response snippets might appear incomplete or display formatting issues. (177116121)
+
+  **Workaround:** Ask Siri to repeat the information, or open Maps directly for complete details.
+- Siri commands for Environments aren’t working. (178082773)
+
+  **Workaround:** Use gaze and pinch to open environments from the Home View.
 
 ##### Siri Setup
 
@@ -326,16 +349,18 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 ###### Known Issues
 
-- Battery percentage might not be up-to-date in the status bar. (174929463) **Workaround:** Open Control Center to update the battery percentage.
+- Battery percentage might not be up-to-date in the status bar. (174929463)
 
-##### Storekit
+  **Workaround:** Open Control Center to update the battery percentage.
+
+##### StoreKit
 
 ###### New Features
 
 - Offer code redemption APIs now return a `VerificationResult` when redemption completes. If a redemption succeeds, your app receives a `VerificationResult` that contains a `Transaction` object. If a redemption fails, your app receives an error that describes what caused the redemption to fail. (141012819)
 - StoreKit now includes the `Transaction.OwnershipType.assigned` and `Transaction.RevocationType.assignmentRevoked` enum values to support volume purchases. `Transaction` query methods now additionally return transactions assigned to the Managed Apple Account. (156749517)
 - New `Product.ProductType` APIs represent subscription Bundles and subscription Suites. New APIs in `Product.SubscriptionInfo.BundledSubscription` let you fetch merchandising data about subscriptions contained in a Bundle. Transaction and RenewalInfo contain new fields that provide information about purchases and customer status regarding Bundles and Suites. (160501742)
-- `partnerName` and `partnerId` properties for Advanced Commerce API are available in [`Transaction.AdvancedCommerceInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction/advancedcommerceinfo-swift.struct) and [`RenewalInfo.AdvancedCommerceInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct). (167808780)
+- `partnerName` and `partnerId` properties for Advanced Commerce API are available in [Transaction.AdvancedCommerceInfo](../StoreKit/transaction/advancedcommerceinfo-swift.struct.md) and [RenewalInfo.AdvancedCommerceInfo](../StoreKit/product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct.md). (167808780)
 
 ###### Resolved Issues
 
@@ -345,7 +370,7 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 - Fixed: Purchases of non-subscription In-App Purchases made using the SKTestSession.buyProduct() method might fail with an invalid product error. The billingPlanType(_:) PurchaseOption isn’t respected for subscription purchases. (181842500)
 - Fixed: Transactions fail to finish. (183165269)
 
-##### Storekit Testing in Xcode
+##### StoreKit Testing in Xcode
 
 ###### Resolved Issues
 
@@ -371,59 +396,79 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 - Fixed: When your project has a minimum deployment target lower than 27.0, using conditionals inside a `Chart` closure produces the warning “Conformance of `_ConditionalContent<TrueContent, FalseContent>` to `ChartContent` is only available in ‘’ 27.0 or newer,” and the app might crash at runtime when that content is loaded. (174168981)
 
-##### Swiftdata
+##### SwiftData
 
 ###### Resolved Issues
 
 - Fixed: You might experience a deadlock for @Query when saving a ModelContext on a background actor while scheduling new async tasks for a ModelActor. (178113288)
 
-##### Swiftui
+##### SwiftUI
 
 ###### New Features
 
 - `AsyncImage` now automatically caches downloaded images using HTTP caching protocols, allowing servers to control caching behavior via standard headers. You can customize caching for specific images using the new `AsyncImage` initializers that accept `URLRequest` with custom `cachePolicy` settings. Additionally, you can set a custom `URLSession` using the new `View.asyncImageURLSession(_:)` API to control how all child `AsyncImage` views perform data tasks. (78212597)
-- A `@State` declared with an expression as its initial value used to evaluate the expression each time the view struct re-instantiates. In the case of `@State private var model = Model()`, this means `Model.init()` gets called many times throughout the view’s lifetime. Xcode 27 introduces a new `@State` implementation that avoids this repeated evaluation. This new behavior back-deploys to iOS 17 aligned OSes. The new `@State` is implemented with a Swift macro. It is largely source compatible with the property wrapper version, with a few exceptions. If you provide an initial value at `@State` declaration, and also try to assign a value to it in an initializer, the initializer value is discarded. This behavior has not changed because of the macro, but some such cases no longer compile: ```None
- struct StickerPageView: View {
-     @State private var page = StickerPage()
-     let title: String
- 
-     init(title: String) {
-         // `title` won't have any effect
-         // this also won't compile with @State macro
-         self.page = StickerPage(title: title)
-         self.title = title
-     }
- }
-``` When assigning initial value via an initializer, do not provide an initial value at the @State declaration. ```None
- struct StickerPageView: View {
-     @State private var page: StickerPage // no initial value expression
-     let title: String
- 
-     init(title: String) {
-         self.page = StickerPage(title: title) // works!
-         self.title = title
-     }
- }
-``` When all stored members of a struct are private, the compiler synthesizes a private init that can be used in an extension of the same type: ```None
- struct StickerPageView: View {
-     @State private var page: StickerPage
-     private let title: String
-     ...
- }
- 
- extension StickerPageView {
-     init(title: String, _ page: StickerPage) {
-         self.init(page: page, title: title) // using the synthesized init
-     }
- }
-``` The state macro disables this synthesized initializer. So the code above no longer compiles. To mitigate, assign value to members explicitly: ```None
- extension StickerPageView {
-     init(title: String, _ page: StickerPage) {
-         self.title = title
-         self.page = page
-     }
- }
-``` In rare situations, the automatic inference of generic arguments of `@State` is less flexible with the macro implementation. Write the type with more specificity. Composing `@State` with other property wrappers or macros is not supported. (105893279)
+- A `@State` declared with an expression as its initial value used to evaluate the expression each time the view struct re-instantiates. In the case of `@State private var model = Model()`, this means `Model.init()` gets called many times throughout the view’s lifetime. Xcode 27 introduces a new `@State` implementation that avoids this repeated evaluation. This new behavior back-deploys to iOS 17 aligned OSes. The new `@State` is implemented with a Swift macro. It is largely source compatible with the property wrapper version, with a few exceptions.
+
+  If you provide an initial value at `@State` declaration, and also try to assign a value to it in an initializer, the initializer value is discarded. This behavior has not changed because of the macro, but some such cases no longer compile:
+
+  ```
+   struct StickerPageView: View {
+       @State private var page = StickerPage()
+       let title: String
+   
+       init(title: String) {
+           // `title` won't have any effect
+           // this also won't compile with @State macro
+           self.page = StickerPage(title: title)
+           self.title = title
+       }
+   }
+  ```
+
+  When assigning initial value via an initializer, do not provide an initial value at the @State declaration.
+
+  ```
+   struct StickerPageView: View {
+       @State private var page: StickerPage // no initial value expression
+       let title: String
+   
+       init(title: String) {
+           self.page = StickerPage(title: title) // works!
+           self.title = title
+       }
+   }
+  ```
+
+  When all stored members of a struct are private, the compiler synthesizes a private init that can be used in an extension of the same type:
+
+  ```
+   struct StickerPageView: View {
+       @State private var page: StickerPage
+       private let title: String
+       ...
+   }
+   
+   extension StickerPageView {
+       init(title: String, _ page: StickerPage) {
+           self.init(page: page, title: title) // using the synthesized init
+       }
+   }
+  ```
+
+  The state macro disables this synthesized initializer. So the code above no longer compiles. To mitigate, assign value to members explicitly:
+
+  ```
+   extension StickerPageView {
+       init(title: String, _ page: StickerPage) {
+           self.title = title
+           self.page = page
+       }
+   }
+  ```
+
+  In rare situations, the automatic inference of generic arguments of `@State` is less flexible with the macro implementation. Write the type with more specificity.
+
+  Composing `@State` with other property wrappers or macros is not supported. (105893279)
 - In apps built with the 27.0 SDKs, the new `ReadableDocument` and `WritableDocument` protocols support asynchronous reading and writing, progress reporting, and direct access to document URLs. New `DocumentGroup` initializers that adopt these protocols let you disable document creation for editing-only apps and present custom UI before any document is opened. The initializers expose an `Observable` `URLDocumentConfiguration` and integrate with Swift concurrency and the `Observation` framework. New applications should prefer `ReadableDocument` and `WritableDocument` over `ReferenceFileDocument`, which remains available. (158441552)
 - The `TabsPickerStyle` style is now available for pickers that represent tab-based navigation and content selection. This style is similar to the `.segmented` style, but VoiceOver reads it as “tabs,” and on macOS it has a distinct visual appearance that distinguishes it from pickers that represent value selection — for example, a text alignment picker in an inspector. (173211711)
 - You can now use the `TextInputBorderShape` type to customize the border shape of text input controls like `TextField` with the `textInputBorderShape(_:)` view modifier. The `.squareBorder` and `.roundedBorder` text field styles are soft deprecated — use the new `.bordered` text field style instead. (173362083)
@@ -457,25 +502,27 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 ###### New Features
 
-- System now provides Swift APIs for the C `stat`, `lstat`, `fstat`, and `fstatat` system calls. This includes a new `Stat` type with initializers from `FilePath`, `FileDescriptor`, or a C string; `FilePath.stat()` and `FileDescriptor.stat()` instance methods; and supporting types (`FileType`, `FileMode`, `FileFlags`, `UserID`, `GroupID`, `DeviceID`, and `Inode`). See [`SYS-0006`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md) for more details. (160612181)
+- System now provides Swift APIs for the C `stat`, `lstat`, `fstat`, and `fstatat` system calls. This includes a new `Stat` type with initializers from `FilePath`, `FileDescriptor`, or a C string; `FilePath.stat()` and `FileDescriptor.stat()` instance methods; and supporting types (`FileType`, `FileMode`, `FileFlags`, `UserID`, `GroupID`, `DeviceID`, and `Inode`). See [SYS-0006](https://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md) for more details. (160612181)
 
 ###### Resolved Issues
 
-- Fixed: Custom `FilePath` or `FileDescriptor` extensions that make unqualified calls to `stat()` or `stat(_)` (without the `Darwin.` qualification) might conflict with the new Swift `stat()` instance methods introduced in [`SYS-0006`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md), causing build errors. See [`SYS-0008`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0008-backdeploy-cinterop-stat.md) for more details. (177911316)
+- Fixed: Custom `FilePath` or `FileDescriptor` extensions that make unqualified calls to `stat()` or `stat(_)` (without the `Darwin.` qualification) might conflict with the new Swift `stat()` instance methods introduced in [SYS-0006](https://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md), causing build errors. See [SYS-0008](https://github.com/apple/swift-system/blob/main/Proposals/0008-backdeploy-cinterop-stat.md) for more details. (177911316)
 
-##### Testflight
+##### TestFlight
 
 ###### Known Issues
 
-- Apps installed via TestFlight may launch into a blank window with no content. The TestFlight “What to Test” introductory screen may not appear before the app, or the app’s window may render empty. (179387790) **Workaround:** Close the blank window and relaunch the app from the Home View. The launch typically succeeds within 1–3 attempts. If an app remains stuck, force-quit it (long-press the Digital Crown) and launch again from the Home View.
+- Apps installed via TestFlight may launch into a blank window with no content. The TestFlight “What to Test” introductory screen may not appear before the app, or the app’s window may render empty. (179387790)
 
-##### Textkit
+  **Workaround:** Close the blank window and relaunch the app from the Home View. The launch typically succeeds within 1–3 attempts. If an app remains stuck, force-quit it (long-press the Digital Crown) and launch again from the Home View.
+
+##### TextKit
 
 ###### New Features
 
 - `NSTextTable` and its related objects and types are available to UIKit clients starting with OS 27 releases. (159870239)
 
-##### Uikit
+##### UIKit
 
 ###### New Features
 
@@ -488,9 +535,9 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 ###### Deprecations
 
-- Apps built with the latest SDK must adopt the scene-based life cycle or they fail to launch. For migration guidance, see [`Transitioning to the UIKit scene-based life cycle`](https://developer.apple.comhttps://developer.apple.com/documentation/uikit/transitioning-to-the-uikit-scene-based-life-cycle). (141837548)
+- Apps built with the latest SDK must adopt the scene-based life cycle or they fail to launch. For migration guidance, see [Transitioning to the UIKit scene-based life cycle](../UIKit/transitioning-to-the-uikit-scene-based-life-cycle.md). (141837548)
 
-##### Usdkit
+##### USDKit
 
 ###### Resolved Issues
 
@@ -501,14 +548,14 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 - Meshes compressed using the USDKit export API or `usdcrush tool` in Beta 1 cannot be decoded by Beta 2, and  meshes from Beta 2 cannot be decoded by Beta 1. (177417812)
 
-##### Videotoolbox
+##### VideoToolbox
 
 ###### New Features
 
 - `VTLowLatencySuperResolutionScalerConfiguration` now supports a 1.5x scale factor. Call `+supportedScaleFactorsForFrameWidth:frameHeight:` to discover the scale factors available for your source dimensions. (177635243)
 - `VTLowLatencyFrameInterpolationConfiguration` now supports arbitrary source dimensions up to 1080p. (179040806)
 
-##### Webkit
+##### WebKit
 
 ###### Resolved Issues
 
@@ -524,7 +571,8 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 ## See Also
 
-- [visionOS 27.2 RC Release Notes](visionos-27_2-release-notes.md)
+### visionOS 27
+- [visionOS 27.2 RC Release Notes](./visionos-27_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

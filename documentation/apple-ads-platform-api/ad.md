@@ -1,7 +1,8 @@
 # Ad
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Ad entity that links an ad creative to an ad group for serving.
 
@@ -10,7 +11,7 @@ Ad entity that links an ad creative to an ad group for serving.
 
 ## Declaration
 
-```swift
+```
 object Ad
 ```
 
@@ -22,7 +23,7 @@ The `status` field is the advertiser-controlled on/off switch. The `ENABLED` val
 
 When `systemStatus` is `NOT_RUNNING`, inspect `systemStatusReasons` for the cause. Common causes include ad creative review pending (`AD_APPROVAL_PENDING`), a rejected ad creative (`AD_APPROVAL_CREATIVE_DOC_REJECTED`), or an incompatible product page (`PRODUCT_PAGE_INCOMPATIBLE`).
 
-Fields you can filter and sort on when querying ads are listed in [`Query Ads`](post-ads-query.md).
+Fields you can filter and sort on when querying ads are listed in [`Query Ads`](./post-ads-query.md).
 
 ##### Example
 
@@ -48,27 +49,27 @@ Fields you can filter and sort on when querying ads are listed in [`Query Ads`](
 ## Topics
 
 ### Type Aliases
-- [type Ad.DisplayStatus](ad/displaystatus-data.typealias.md)
+- [type Ad.DisplayStatus](./ad/displaystatus-data.typealias.md)
   Rolled-up delivery state for an ad, combining advertiser settings and system conditions into a single user-facing label.
-- [type Ad.Status](ad/status-data.typealias.md)
+- [type Ad.Status](./ad/status-data.typealias.md)
   Advertiser-configurable serving status for an ad.
-- [type Ad.SystemStatus](ad/systemstatus-data.typealias.md)
+- [type Ad.SystemStatus](./ad/systemstatus-data.typealias.md)
   System-computed delivery status of an ad.
-- [type Ad.SystemStatusLimitingReasons](ad/systemstatuslimitingreasons-data.typealias.md)
+- [type Ad.SystemStatusLimitingReasons](./ad/systemstatuslimitingreasons-data.typealias.md)
   Reasons that limit an ad’s delivery capacity without fully stopping it.
-- [type Ad.SystemStatusReasons](ad/systemstatusreasons-data.typealias.md)
+- [type Ad.SystemStatusReasons](./ad/systemstatusreasons-data.typealias.md)
   Reasons that can cause an ad’s system status to be `NOT_RUNNING`.
 
 ## Properties
 
 - `id` (int64): The unique identifier of the ad. Read-only.
 - `name` (string): Advertiser-given name of the ad. Mutable.
-- `status` (Ad.Status): Advertiser-configurable status. Use to pause or enable the ad. See [`AdStatus`](adstatus.md). Mutable.
+- `status` (Ad.Status): Advertiser-configurable status. Use to pause or enable the ad. See [`AdStatus`](./adstatus.md). Mutable.
 - `adAccountId` (int64): The identifier of the ad account this ad belongs to. Immutable after creation.
 - `campaignId` (int64): The identifier of the campaign this ad belongs to. Immutable after creation.
 - `adGroupId` (int64): The identifier of the ad group this ad belongs to. Immutable after creation.
 - `creativeId` (int64): The unique identifier of the ad creative this ad was created from. Immutable after creation.
-- `systemStatus` (Ad.SystemStatus): System-computed serving status of the ad. See [`AdSystemStatus`](adsystemstatus.md). Read-only.
+- `systemStatus` (Ad.SystemStatus): System-computed serving status of the ad. See [`AdSystemStatus`](./adsystemstatus.md). Read-only.
 - `systemStatusReasons` ([Ad.SystemStatusReasons]): Reasons for the current system status. Populated when the ad is not serving. Possible values: `AD_APPROVAL_CREATIVE_DOC_EXPIRED`, `AD_APPROVAL_CREATIVE_DOC_NOT_SUBMITTED`, `AD_APPROVAL_CREATIVE_DOC_PENDING`, `AD_APPROVAL_CREATIVE_DOC_REJECTED`, `AD_APPROVAL_PENDING`, `AD_APPROVAL_REJECTED`, `CREATIVE_INVALID`, `CREATIVE_LOCALE_INCOMPATIBLE`, `CREATIVE_PENDING`, `CREATIVE_SET_INVALID`, `CREATIVE_SET_UNSUPPORTED`, `DELETED_BY_USER`, `PAUSED_BY_SYSTEM`, `PAUSED_BY_USER`, `PROCESSING`, `PRODUCT_PAGE_DELETED`, `PRODUCT_PAGE_HIDDEN`, `PRODUCT_PAGE_INCOMPATIBLE`, `PRODUCT_PAGE_INSUFFICIENT_ASSETS`, `PRODUCT_PAGE_UNAVAILABLE`. Read-only.
 - `systemStatusLimitingReasons` ([Ad.SystemStatusLimitingReasons]): System status limited reasons for the ad. Possible values: `CREATIVE_POLICY_ISSUES`. Read-only.
 - `creationTime` (date-time): Timestamp when the ad was created. Read-only.
@@ -78,13 +79,13 @@ Fields you can filter and sort on when querying ads are listed in [`Query Ads`](
 
 ## See Also
 
-- [object AdCreate](adcreate.md)
+- [object AdCreate](./adcreate.md)
   The request body for creating a new Ad object.
-- [object AdUpdate](adupdate.md)
+- [object AdUpdate](./adupdate.md)
   The request body for updating an existing Ad object.
-- [object AdResponse](adresponse.md)
+- [object AdResponse](./adresponse.md)
   The response object for an Ad operation.
-- [object AdQueryResponse](adqueryresponse.md)
+- [object AdQueryResponse](./adqueryresponse.md)
   The response object for an Ad query, containing matched results and pagination metadata.
 
 

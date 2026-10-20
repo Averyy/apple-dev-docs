@@ -1,7 +1,8 @@
 # HMError.Code.accessoryDiscoveryFailed
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating accessory discovery failed.
 
@@ -19,9 +20,14 @@ An error indicating accessory discovery failed.
 case accessoryDiscoveryFailed
 ```
 
+```c
+HMErrorCodeAccessoryDiscoveryFailed
+```
+
 ## See Also
 
-- [HMError.Code.deviceLocked](hmerror/code/devicelocked.md)
+### Device and discovery errors
+- [HMError.Code.deviceLocked](./devicelocked.md)
   An error indicating the device is locked.
 
 

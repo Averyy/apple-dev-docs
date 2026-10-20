@@ -1,7 +1,8 @@
 # MarkerAnnotationConstructorOptions
 
 **Framework**: MapKit JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Interface
 
 An object containing the options that create a marker annotation.
 
@@ -10,7 +11,7 @@ An object containing the options that create a marker annotation.
 
 ## Declaration
 
-```swift
+```
 interface MarkerAnnotationConstructorOptions
     extends AnnotationConstructorOptions
 ```
@@ -18,29 +19,30 @@ interface MarkerAnnotationConstructorOptions
 ## Topics
 
 ### Setting marker annotation properties
-- [color](markerannotationconstructoroptions/color.md)
+- [color](./markerannotationconstructoroptions/color.md)
   The background color of the balloon.
-- [glyphColor](markerannotationconstructoroptions/glyphcolor.md)
+- [glyphColor](./markerannotationconstructoroptions/glyphcolor.md)
   The fill color of the glyph.
-- [glyphText](markerannotationconstructoroptions/glyphtext.md)
+- [glyphText](./markerannotationconstructoroptions/glyphtext.md)
   The text to display in the marker balloon.
-- [glyphImage](markerannotationconstructoroptions/glyphimage.md)
+- [glyphImage](./markerannotationconstructoroptions/glyphimage.md)
   The image to display in the marker balloon.
-- [selectedGlyphImage](markerannotationconstructoroptions/selectedglyphimage.md)
+- [selectedGlyphImage](./markerannotationconstructoroptions/selectedglyphimage.md)
   The image to display in the balloon when the user selects the marker.
-- [subtitleVisibility](markerannotationconstructoroptions/subtitlevisibility.md)
+- [subtitleVisibility](./markerannotationconstructoroptions/subtitlevisibility.md)
   A value that determines the behavior of the subtitle’s visibility.
-- [titleVisibility](markerannotationconstructoroptions/titlevisibility.md)
+- [titleVisibility](./markerannotationconstructoroptions/titlevisibility.md)
   A value that determines the behavior of the title’s visibility.
 
 ## Relationships
 
 ### Inherits From
-- [AnnotationConstructorOptions](annotationconstructoroptions.md)
+- [AnnotationConstructorOptions](./annotationconstructoroptions.md)
 
 ## See Also
 
-- [new MarkerAnnotation(location, options)](markerannotation/markerannotationconstructor.md)
+### Creating a marker annotation
+- [new MarkerAnnotation(location, options)](./markerannotation/markerannotationconstructor.md)
   Creates a marker annotation at the coordinate location with provided options.
 
 

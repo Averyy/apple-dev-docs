@@ -1,16 +1,17 @@
 # UICollectionViewDelegateFlowLayout
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The methods that let you coordinate with a flow layout object to implement a grid-based layout.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,36 +20,40 @@ The methods that let you coordinate with a flow layout object to implement a gri
 protocol UICollectionViewDelegateFlowLayout : UICollectionViewDelegate
 ```
 
+```objc
+@protocol UICollectionViewDelegateFlowLayout <UICollectionViewDelegate>
+```
+
 #### Overview
 
 The methods of this protocol define the size of items and the spacing between items in the grid. All of the methods in this protocol are optional. If you don’t implement a particular method, the flow layout delegate uses values in its own properties for the appropriate spacing information.
 
-The [`UICollectionViewFlowLayout`](uicollectionviewflowlayout.md) object expects the collection view’s delegate object to adopt this protocol. Therefore, implement this protocol on the object assigned to your collection view’s [`delegate`](uicollectionview/delegate.md) property.
+The [`UICollectionViewFlowLayout`](./uicollectionviewflowlayout.md) object expects the collection view’s delegate object to adopt this protocol. Therefore, implement this protocol on the object assigned to your collection view’s [`delegate`](./uicollectionview/delegate.md) property.
 
 ## Topics
 
 ### Getting the size of items
-- [func collectionView(UICollectionView, layout: UICollectionViewLayout, sizeForItemAt: IndexPath) -> CGSize](uicollectionviewdelegateflowlayout/collectionview(_:layout:sizeforitemat:).md)
+- [func collectionView(UICollectionView, layout: UICollectionViewLayout, sizeForItemAt: IndexPath) -> CGSize](./uicollectionviewdelegateflowlayout/collectionview%28_,layout,sizeforitemat%29.md)
   Asks the delegate for the size of the specified item’s cell.
 ### Getting the section spacing
-- [func collectionView(UICollectionView, layout: UICollectionViewLayout, insetForSectionAt: Int) -> UIEdgeInsets](uicollectionviewdelegateflowlayout/collectionview(_:layout:insetforsectionat:).md)
+- [func collectionView(UICollectionView, layout: UICollectionViewLayout, insetForSectionAt: Int) -> UIEdgeInsets](./uicollectionviewdelegateflowlayout/collectionview%28_,layout,insetforsectionat%29.md)
   Asks the delegate for the margins to apply to content in the specified section.
-- [func collectionView(UICollectionView, layout: UICollectionViewLayout, minimumLineSpacingForSectionAt: Int) -> CGFloat](uicollectionviewdelegateflowlayout/collectionview(_:layout:minimumlinespacingforsectionat:).md)
+- [func collectionView(UICollectionView, layout: UICollectionViewLayout, minimumLineSpacingForSectionAt: Int) -> CGFloat](./uicollectionviewdelegateflowlayout/collectionview%28_,layout,minimumlinespacingforsectionat%29.md)
   Asks the delegate for the spacing between successive rows or columns of a section.
-- [func collectionView(UICollectionView, layout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt: Int) -> CGFloat](uicollectionviewdelegateflowlayout/collectionview(_:layout:minimuminteritemspacingforsectionat:).md)
+- [func collectionView(UICollectionView, layout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt: Int) -> CGFloat](./uicollectionviewdelegateflowlayout/collectionview%28_,layout,minimuminteritemspacingforsectionat%29.md)
   Asks the delegate for the spacing between successive items in the rows or columns of a section.
 ### Getting the header and footer sizes
-- [func collectionView(UICollectionView, layout: UICollectionViewLayout, referenceSizeForHeaderInSection: Int) -> CGSize](uicollectionviewdelegateflowlayout/collectionview(_:layout:referencesizeforheaderinsection:).md)
+- [func collectionView(UICollectionView, layout: UICollectionViewLayout, referenceSizeForHeaderInSection: Int) -> CGSize](./uicollectionviewdelegateflowlayout/collectionview%28_,layout,referencesizeforheaderinsection%29.md)
   Asks the delegate for the size of the header view in the specified section.
-- [func collectionView(UICollectionView, layout: UICollectionViewLayout, referenceSizeForFooterInSection: Int) -> CGSize](uicollectionviewdelegateflowlayout/collectionview(_:layout:referencesizeforfooterinsection:).md)
+- [func collectionView(UICollectionView, layout: UICollectionViewLayout, referenceSizeForFooterInSection: Int) -> CGSize](./uicollectionviewdelegateflowlayout/collectionview%28_,layout,referencesizeforfooterinsection%29.md)
   Asks the delegate for the size of the footer view in the specified section.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [UICollectionViewDelegate](uicollectionviewdelegate.md)
-- [UIScrollViewDelegate](uiscrollviewdelegate.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [UICollectionViewDelegate](./uicollectionviewdelegate.md)
+- [UIScrollViewDelegate](./uiscrollviewdelegate.md)
 
 
 ---

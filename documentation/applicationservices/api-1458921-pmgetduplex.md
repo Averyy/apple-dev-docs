@@ -1,7 +1,8 @@
 # PMGetDuplex(_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Obtains the selected duplex mode.
 
@@ -14,9 +15,13 @@ Obtains the selected duplex mode.
 func PMGetDuplex(_ printSettings: PMPrintSettings, _ duplexSetting: UnsafeMutablePointer<PMDuplexMode>) -> OSStatus
 ```
 
-#### Return_value
+```c
+OSStatus PMGetDuplex(PMPrintSettings printSettings, PMDuplexMode *duplexSetting);
+```
 
-A result code. See [`Result Codes`](core_printing#1670007.md). 
+#### Return Value
+
+A result code. See [Result Codes](./core_printing.md#1670007). 
 
 #### Discussion
 
@@ -25,45 +30,50 @@ Duplex printing is a print job that prints on both sides of the paper. The Two-S
 ## Parameters
 
 - `printSettings`: The print settings object whose duplex mode you want to obtain.
-- `duplexSetting`: A pointer to your `PMDuplexMode` variable. On return, the variable contains the duplex mode setting in the current print job. Possible values include: - `kPMDuplexNone` (one-sided printing)
-- `kPMDuplexNoTumble` (two-sided printing)
-- `kPMDuplexTumble` (two-sided printing with tumbling) See [`PMDuplexMode`](pmduplexmode.md) for a full description of the duplex mode constants.
+- `duplexSetting`: A pointer to your `PMDuplexMode` variable. On return, the variable contains the duplex mode setting in the current print job. Possible values include:
+
+  - `kPMDuplexNone` (one-sided printing)
+  - `kPMDuplexNoTumble` (two-sided printing)
+  - `kPMDuplexTumble` (two-sided printing with tumbling)
+
+  See [`PMDuplexMode`](./pmduplexmode.md) for a full description of the duplex mode constants.
 
 ## See Also
 
-- [func PMGetFirstPage(PMPrintSettings, UnsafeMutablePointer<UInt32>) -> OSStatus](1460271-pmgetfirstpage.md)
+### Accessing Data in Print Settings Objects
+- [func PMGetFirstPage(PMPrintSettings, UnsafeMutablePointer<UInt32>) -> OSStatus](./api-1460271-pmgetfirstpage.md)
   Obtains the number of the first page to be printed.
-- [func PMSetFirstPage(PMPrintSettings, UInt32, Bool) -> OSStatus](1461519-pmsetfirstpage.md)
+- [func PMSetFirstPage(PMPrintSettings, UInt32, Bool) -> OSStatus](./api-1461519-pmsetfirstpage.md)
   Sets the default page number of the first page to be printed.
-- [func PMGetLastPage(PMPrintSettings, UnsafeMutablePointer<UInt32>) -> OSStatus](1462747-pmgetlastpage.md)
+- [func PMGetLastPage(PMPrintSettings, UnsafeMutablePointer<UInt32>) -> OSStatus](./api-1462747-pmgetlastpage.md)
   Obtains the number of the last page to be printed.
-- [func PMSetLastPage(PMPrintSettings, UInt32, Bool) -> OSStatus](1463595-pmsetlastpage.md)
+- [func PMSetLastPage(PMPrintSettings, UInt32, Bool) -> OSStatus](./api-1463595-pmsetlastpage.md)
   Sets the page number of the last page to be printed.
-- [func PMGetPageRange(PMPrintSettings, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<UInt32>) -> OSStatus](1459324-pmgetpagerange.md)
+- [func PMGetPageRange(PMPrintSettings, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<UInt32>) -> OSStatus](./api-1459324-pmgetpagerange.md)
   Obtains the valid range of pages that can be printed.
-- [func PMSetPageRange(PMPrintSettings, UInt32, UInt32) -> OSStatus](1462294-pmsetpagerange.md)
+- [func PMSetPageRange(PMPrintSettings, UInt32, UInt32) -> OSStatus](./api-1462294-pmsetpagerange.md)
   Sets the valid range of pages that can be printed.
-- [func PMPrintSettingsGetJobName(PMPrintSettings, UnsafeMutablePointer<Unmanaged<CFString>?>) -> OSStatus](1459233-pmprintsettingsgetjobname.md)
+- [func PMPrintSettingsGetJobName(PMPrintSettings, UnsafeMutablePointer<Unmanaged<CFString>?>) -> OSStatus](./api-1459233-pmprintsettingsgetjobname.md)
   Obtains the name of a print job.
-- [func PMPrintSettingsSetJobName(PMPrintSettings, CFString) -> OSStatus](1460149-pmprintsettingssetjobname.md)
+- [func PMPrintSettingsSetJobName(PMPrintSettings, CFString) -> OSStatus](./api-1460149-pmprintsettingssetjobname.md)
   Specifies the name of a print job.
-- [func PMGetCopies(PMPrintSettings, UnsafeMutablePointer<UInt32>) -> OSStatus](1464480-pmgetcopies.md)
+- [func PMGetCopies(PMPrintSettings, UnsafeMutablePointer<UInt32>) -> OSStatus](./api-1464480-pmgetcopies.md)
   Obtains the number of copies that the user requests to be printed.
-- [func PMSetCopies(PMPrintSettings, UInt32, Bool) -> OSStatus](1463804-pmsetcopies.md)
+- [func PMSetCopies(PMPrintSettings, UInt32, Bool) -> OSStatus](./api-1463804-pmsetcopies.md)
   Sets the initial value for the number of copies to be printed.
-- [func PMGetCollate(PMPrintSettings, UnsafeMutablePointer<DarwinBoolean>) -> OSStatus](1464492-pmgetcollate.md)
+- [func PMGetCollate(PMPrintSettings, UnsafeMutablePointer<DarwinBoolean>) -> OSStatus](./api-1464492-pmgetcollate.md)
   Obtains a Boolean value that indicates whether the job collate option is selected.
-- [func PMSetCollate(PMPrintSettings, Bool) -> OSStatus](1463223-pmsetcollate.md)
+- [func PMSetCollate(PMPrintSettings, Bool) -> OSStatus](./api-1463223-pmsetcollate.md)
   Specifies whether the job collate option is selected.
-- [func PMSetDuplex(PMPrintSettings, PMDuplexMode) -> OSStatus](1462000-pmsetduplex.md)
+- [func PMSetDuplex(PMPrintSettings, PMDuplexMode) -> OSStatus](./api-1462000-pmsetduplex.md)
   Sets the duplex mode.
-- [func PMPrintSettingsGetValue(PMPrintSettings, CFString, UnsafeMutablePointer<Unmanaged<CFTypeRef>?>) -> OSStatus](1460602-pmprintsettingsgetvalue.md)
+- [func PMPrintSettingsGetValue(PMPrintSettings, CFString, UnsafeMutablePointer<Unmanaged<CFTypeRef>?>) -> OSStatus](./api-1460602-pmprintsettingsgetvalue.md)
   Obtains the value of a setting in a print settings object.
-- [func PMPrintSettingsSetValue(PMPrintSettings, CFString, CFTypeRef?, Bool) -> OSStatus](1461697-pmprintsettingssetvalue.md)
+- [func PMPrintSettingsSetValue(PMPrintSettings, CFString, CFTypeRef?, Bool) -> OSStatus](./api-1461697-pmprintsettingssetvalue.md)
   Stores the value of a setting in a print settings object.
-- [func PMPrintSettingsCopyAsDictionary(PMPrintSettings, UnsafeMutablePointer<Unmanaged<CFDictionary>?>) -> OSStatus](1459088-pmprintsettingscopyasdictionary.md)
+- [func PMPrintSettingsCopyAsDictionary(PMPrintSettings, UnsafeMutablePointer<Unmanaged<CFDictionary>?>) -> OSStatus](./api-1459088-pmprintsettingscopyasdictionary.md)
   Creates a dictionary that contains the settings in a print settings object.
-- [func PMPrintSettingsCopyKeys(PMPrintSettings, UnsafeMutablePointer<Unmanaged<CFArray>?>) -> OSStatus](1462730-pmprintsettingscopykeys.md)
+- [func PMPrintSettingsCopyKeys(PMPrintSettings, UnsafeMutablePointer<Unmanaged<CFArray>?>) -> OSStatus](./api-1462730-pmprintsettingscopykeys.md)
   Obtains the keys for items in a print settings object.
 
 

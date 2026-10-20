@@ -1,7 +1,8 @@
 # removeClipBufferingOutput(_:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func removeClipBufferingOutput(_ clipBufferingOutput: SCClipBufferingOutput) throws
+```
+
+```objc
+- (BOOL) removeClipBufferingOutput:(SCClipBufferingOutput *) clipBufferingOutput error:(NSError **) error;
 ```
 
 #### Discussion

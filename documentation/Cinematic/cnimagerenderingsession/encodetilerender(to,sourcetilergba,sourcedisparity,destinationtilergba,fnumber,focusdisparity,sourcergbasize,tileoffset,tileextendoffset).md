@@ -1,7 +1,8 @@
 # encodeTileRender(to:sourceTileRGBA:sourceDisparity:destinationTileRGBA:fNumber:focusDisparity:sourceRGBASize:tileOffset:tileExtendOffset:)
 
 **Framework**: Cinematic  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encode a command to render a shallow depth of field (SDoF) image to a metal texture
 
@@ -16,6 +17,10 @@ Encode a command to render a shallow depth of field (SDoF) image to a metal text
 
 ```swift
 func encodeTileRender(to commandBuffer: any MTLCommandBuffer, sourceTileRGBA: any MTLTexture, sourceDisparity: any MTLTexture, destinationTileRGBA: any MTLTexture, fNumber: Float, focusDisparity: Float, sourceRGBASize: CGSize, tileOffset: CGPoint, tileExtendOffset: CGPoint) -> Bool
+```
+
+```objc
+- (BOOL) encodeTileRenderToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer sourceTileRGBA:(id<MTLTexture>) sourceTileRGBA sourceDisparity:(id<MTLTexture>) sourceDisparity destinationTileRGBA:(id<MTLTexture>) destinationTileRGBA fNumber:(float) fNumber focusDisparity:(float) focusDisparity sourceRGBASize:(CGSize) sourceRGBASize tileOffset:(CGPoint) tileOffset tileExtendOffset:(CGPoint) tileExtendOffset;
 ```
 
 #### Return Value

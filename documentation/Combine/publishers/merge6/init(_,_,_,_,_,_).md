@@ -1,7 +1,8 @@
 # init(_:_:_:_:_:_:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 publisher created by applying the merge function to six upstream publishers.
 

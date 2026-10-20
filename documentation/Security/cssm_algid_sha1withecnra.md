@@ -1,7 +1,8 @@
 # CSSM_ALGID_SHA1WithECNRA
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_ALGID_SHA1WithECNRA: UInt32 { get }
+```
+
+```c
+CSSM_ALGID_SHA1WithECNRA
 ```
 
 

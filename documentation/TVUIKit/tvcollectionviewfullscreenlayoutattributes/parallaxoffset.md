@@ -1,7 +1,8 @@
 # parallaxOffset
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of points by which to shift the background from the center when moving focus.
 
@@ -12,6 +13,10 @@ The number of points by which to shift the background from the center when movin
 
 ```swift
 var parallaxOffset: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic, assign) CGFloat parallaxOffset;
 ```
 
 #### Discussion

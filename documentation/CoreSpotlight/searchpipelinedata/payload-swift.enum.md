@@ -1,7 +1,8 @@
 # SearchPipelineData.Payload
 
 **Framework**: Core Spotlight  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The typed variants of data a pipeline stage can produce.
 
@@ -20,35 +21,36 @@ enum Payload
 
 #### Overview
 
-The [`SearchPipelineData`](searchpipelinedata.md) type uses this type to wrap the data you provide and store it for handoff to the next stage. The type is `@unchecked Sendable` because [`CSSearchableItem`](cssearchableitem.md) does not support the [`Sendable`](https://developer.apple.com/documentation/swift/sendable) protocol. Treat the data you store in this type as immutable.
+The [`SearchPipelineData`](../searchpipelinedata.md) type uses this type to wrap the data you provide and store it for handoff to the next stage. The type is `@unchecked Sendable` because [`CSSearchableItem`](../cssearchableitem.md) does not support the [`Sendable`](../../Swift/sendable.md) protocol. Treat the data you store in this type as immutable.
 
 ## Topics
 
 ### Getting the payload data
-- [SearchPipelineData.Payload.items(_:)](searchpipelinedata/payload-swift.enum/items(_:).md)
+- [SearchPipelineData.Payload.items(_:)](./payload-swift.enum/items%28_%29.md)
   The array of searchable items your stage produced.
-- [SearchPipelineData.Payload.scoredItems(_:)](searchpipelinedata/payload-swift.enum/scoreditems(_:).md)
+- [SearchPipelineData.Payload.scoredItems(_:)](./payload-swift.enum/scoreditems%28_%29.md)
   The scored searchable items your stage produced.
-- [case groupedItems([SearchableItemAttribute : [SearchableItem]])](searchpipelinedata/payload-swift.enum/groupeditems(_:).md)
+- [case groupedItems([SearchableItemAttribute : [SearchableItem]])](./payload-swift.enum/groupeditems%28_%29.md)
   A dictionary that maps searchable attributes to the items that contain them.
-- [SearchPipelineData.Payload.text(_:)](searchpipelinedata/payload-swift.enum/text(_:).md)
+- [SearchPipelineData.Payload.text(_:)](./payload-swift.enum/text%28_%29.md)
   An text summary or analysis your stage produced.
-- [SearchPipelineData.Payload.count(_:)](searchpipelinedata/payload-swift.enum/count(_:).md)
+- [SearchPipelineData.Payload.count(_:)](./payload-swift.enum/count%28_%29.md)
   A scalar count of items your stage produced.
-- [SearchPipelineData.Payload.statistic(name:value:)](searchpipelinedata/payload-swift.enum/statistic(name:value:).md)
+- [SearchPipelineData.Payload.statistic(name:value:)](./payload-swift.enum/statistic%28name,value%29.md)
   A scalar value with a stastical calculation your stage produced.
-- [SearchPipelineData.Payload.table(_:)](searchpipelinedata/payload-swift.enum/table(_:).md)
+- [SearchPipelineData.Payload.table(_:)](./payload-swift.enum/table%28_%29.md)
   Tabulated data your stage produced.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let payload: SearchPipelineData.Payload](searchpipelinedata/payload-swift.property.md)
+### Getting the pipeline data
+- [let payload: SearchPipelineData.Payload](./payload-swift.property.md)
   The output data your custom stage produced.
 
 

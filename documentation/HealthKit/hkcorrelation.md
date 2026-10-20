@@ -1,7 +1,8 @@
 # HKCorrelation
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A sample that groups multiple related samples into a single entry.
 
@@ -19,10 +20,14 @@ A sample that groups multiple related samples into a single entry.
 class HKCorrelation
 ```
 
+```objc
+@interface HKCorrelation : HKSample
+```
+
 ## Mentions
 
-- [About the HealthKit framework](about-the-healthkit-framework.md)
-- [Saving data to HealthKit](saving-data-to-healthkit.md)
+- [About the HealthKit framework](./about-the-healthkit-framework.md)
+- [Saving data to HealthKit](./saving-data-to-healthkit.md)
 
 #### Overview
 
@@ -31,69 +36,70 @@ HealthKit uses correlations to represent both blood pressure and food.
 - Blood pressure correlations always include two quantity samples, representing the systolic and diastolic values.
 - Food correlations can contain a wide range of dietary information about the food, including information about the fat, protein, carbohydrates, energy, and vitamins consumed.
 
-In general, a food correlation should include at least a [`dietaryEnergyConsumed`](hkquantitytypeidentifier/dietaryenergyconsumed.md) sample. You can also add nutritional quantity samples for any other items you want to track. Use the [`HKMetadataKeyFoodType`](hkmetadatakeyfoodtype.md) key to indicate the food’s name.
+In general, a food correlation should include at least a [`dietaryEnergyConsumed`](./hkquantitytypeidentifier/dietaryenergyconsumed.md) sample. You can also add nutritional quantity samples for any other items you want to track. Use the [`HKMetadataKeyFoodType`](./hkmetadatakeyfoodtype.md) key to indicate the food’s name.
 
-The [`HKCorrelation`](hkcorrelation.md) class is a concrete subclass of the [`HKSample`](hksample.md) class. Correlations are immutable: You set the correlation’s properties when the object is first created, and they cannot change.
+The [`HKCorrelation`](./hkcorrelation.md) class is a concrete subclass of the [`HKSample`](./hksample.md) class. Correlations are immutable: You set the correlation’s properties when the object is first created, and they cannot change.
 
 ##### Extend Correlation Samples
 
-As with many HealthKit classes, don’t subclass the [`HKCorrelation`](hkcorrelation.md) class. You can extend the correlation class by adding metadata with custom keys as appropriate for your app.
+As with many HealthKit classes, don’t subclass the [`HKCorrelation`](./hkcorrelation.md) class. You can extend the correlation class by adding metadata with custom keys as appropriate for your app.
 
-For more information, see the [`init(type:start:end:objects:metadata:)`](hkcorrelation/init(type:start:end:objects:metadata:).md) method.
+For more information, see the [`init(type:start:end:objects:metadata:)`](./hkcorrelation/init%28type,start,end,objects,metadata%29.md) method.
 
 ## Topics
 
 ### Creating Correlations
-- [convenience init(type: HKCorrelationType, start: Date, end: Date, objects: Set<HKSample>)](hkcorrelation/init(type:start:end:objects:).md)
+- [convenience init(type: HKCorrelationType, start: Date, end: Date, objects: Set<HKSample>)](./hkcorrelation/init%28type,start,end,objects%29.md)
   Instantiates and returns a new correlation instance.
-- [convenience init(type: HKCorrelationType, start: Date, end: Date, objects: Set<HKSample>, metadata: [String : Any]?)](hkcorrelation/init(type:start:end:objects:metadata:).md)
+- [convenience init(type: HKCorrelationType, start: Date, end: Date, objects: Set<HKSample>, metadata: [String : Any]?)](./hkcorrelation/init%28type,start,end,objects,metadata%29.md)
   Instantiates and returns a new correlation instance with the provided metadata.
-- [convenience init(type: HKCorrelationType, start: Date, end: Date, objects: Set<HKSample>, device: HKDevice?, metadata: [String : Any]?)](hkcorrelation/init(type:start:end:objects:device:metadata:).md)
+- [convenience init(type: HKCorrelationType, start: Date, end: Date, objects: Set<HKSample>, device: HKDevice?, metadata: [String : Any]?)](./hkcorrelation/init%28type,start,end,objects,device,metadata%29.md)
   Instantiates and returns a new correlation instance with the provided device and metadata.
 ### Getting Correlation Data
-- [var correlationType: HKCorrelationType](hkcorrelation/correlationtype.md)
+- [var correlationType: HKCorrelationType](./hkcorrelation/correlationtype.md)
   The type for this correlation.
-- [var objects: Set<HKSample>](hkcorrelation/objects.md)
+- [var objects: Set<HKSample>](./hkcorrelation/objects.md)
   The set of sample objects that make up the correlation.
-- [func objects(for: HKObjectType) -> Set<HKSample>](hkcorrelation/objects(for:).md)
+- [func objects(for: HKObjectType) -> Set<HKSample>](./hkcorrelation/objects%28for%29.md)
   Returns a set containing all the objects of the specified type in the correlation.
 ### Specifying Predicate Key Paths
-- [let HKPredicateKeyPathCorrelation: String](hkpredicatekeypathcorrelation.md)
+- [let HKPredicateKeyPathCorrelation: String](./hkpredicatekeypathcorrelation.md)
   The key path for accessing the object’s correlation inside a predicate format string.
 ### Initializers
-- [convenience init(type: HKCorrelationType, startDate: Date, endDate: Date, objects: Set<HKSample>)](hkcorrelation/init(type:startdate:enddate:objects:).md)
-- [convenience init(type: HKCorrelationType, startDate: Date, endDate: Date, objects: Set<HKSample>, device: HKDevice?, metadata: [String : Any]?)](hkcorrelation/init(type:startdate:enddate:objects:device:metadata:).md)
-- [convenience init(type: HKCorrelationType, startDate: Date, endDate: Date, objects: Set<HKSample>, metadata: [String : Any]?)](hkcorrelation/init(type:startdate:enddate:objects:metadata:).md)
+- [convenience init(type: HKCorrelationType, startDate: Date, endDate: Date, objects: Set<HKSample>)](./hkcorrelation/init%28type,startdate,enddate,objects%29.md)
+- [convenience init(type: HKCorrelationType, startDate: Date, endDate: Date, objects: Set<HKSample>, device: HKDevice?, metadata: [String : Any]?)](./hkcorrelation/init%28type,startdate,enddate,objects,device,metadata%29.md)
+- [convenience init(type: HKCorrelationType, startDate: Date, endDate: Date, objects: Set<HKSample>, metadata: [String : Any]?)](./hkcorrelation/init%28type,startdate,enddate,objects,metadata%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [HKSample](hksample.md)
+- [HKSample](./hksample.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HKCumulativeQuantitySample](hkcumulativequantitysample.md)
+### Basic samples
+- [class HKCumulativeQuantitySample](./hkcumulativequantitysample.md)
   A sample that represents a cumulative quantity.
-- [class HKDiscreteQuantitySample](hkdiscretequantitysample.md)
+- [class HKDiscreteQuantitySample](./hkdiscretequantitysample.md)
   A sample that represents a discrete quantity.
-- [class HKQuantitySample](hkquantitysample.md)
+- [class HKQuantitySample](./hkquantitysample.md)
   A sample that represents a quantity, including the value and the units.
-- [class HKCategorySample](hkcategorysample.md)
+- [class HKCategorySample](./hkcategorysample.md)
   A sample with values from a short list of possible values.
-- [Units and quantities](units-and-quantities.md)
+- [Units and quantities](./units-and-quantities.md)
   Objects used to specify a quantity for a given unit, and to convert between units.
-- [Metadata Keys](metadata-keys.md)
+- [Metadata Keys](./metadata-keys.md)
   Constants used to add metadata to objects stored in HealthKit.
 
 

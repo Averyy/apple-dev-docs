@@ -1,14 +1,15 @@
 # capabilities
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 vol_capabilities_set_t capabilities;
 ```
 

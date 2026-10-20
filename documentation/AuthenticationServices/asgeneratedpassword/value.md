@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of the password.
 
@@ -15,6 +16,10 @@ The value of the password.
 
 ```swift
 var value: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * value;
 ```
 
 

@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 ExpansionData * fIOFWAddressSpaceExpansion;
 ```
 
@@ -15,6 +15,7 @@ Reserved for future use. (Internal use only)
 
 ## See Also
 
+### Related Documentation
 - [collectionGroup-1660783](collectionGroup-1660783)
 
 

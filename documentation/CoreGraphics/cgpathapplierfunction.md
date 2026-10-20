@@ -1,18 +1,19 @@
 # CGPathApplierFunction
 
 **Framework**: Core Graphics  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Defines a callback function that can view an element in a graphics path.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,17 +21,22 @@ Defines a callback function that can view an element in a graphics path.
 typealias CGPathApplierFunction = (UnsafeMutableRawPointer?, UnsafePointer<CGPathElement>) -> Void
 ```
 
+```c
+typedef void (*)(void *, const struct CGPathElement *) CGPathApplierFunction;
+```
+
 #### Discussion
 
-See also [`apply(info:function:)`](cgpath/apply(info:function:).md).
+See also [`apply(info:function:)`](./cgpath/apply%28info,function%29.md).
 
 ## See Also
 
-- [func apply(info: UnsafeMutableRawPointer?, function: CGPathApplierFunction)](cgpath/apply(info:function:).md)
+### Applying a Function to the Elements of a Path
+- [func apply(info: UnsafeMutableRawPointer?, function: CGPathApplierFunction)](./cgpath/apply%28info,function%29.md)
   For each element in a graphics path, calls a custom applier function.
-- [struct CGPathElement](cgpathelement.md)
+- [struct CGPathElement](./cgpathelement.md)
   A data structure that provides information about a path element.
-- [enum CGPathElementType](cgpathelementtype.md)
+- [enum CGPathElementType](./cgpathelementtype.md)
   The type of element found in a path.
 
 

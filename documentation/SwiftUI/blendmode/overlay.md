@@ -1,7 +1,8 @@
 # BlendMode.overlay
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.0+
@@ -20,8 +21,9 @@ case overlay
 
 ## See Also
 
-- [BlendMode.softLight](blendmode/softlight.md)
-- [BlendMode.hardLight](blendmode/hardlight.md)
+### Adding contrast
+- [BlendMode.softLight](./softlight.md)
+- [BlendMode.hardLight](./hardlight.md)
 
 
 ---

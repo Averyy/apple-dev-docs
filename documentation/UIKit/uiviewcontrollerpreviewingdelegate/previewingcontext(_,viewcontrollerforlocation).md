@@ -2,20 +2,27 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Called when the user has pressed a source view in a previewing view controller, thereby obtaining a surrounding blur to indicate that a preview (peek) is available.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
-- tvOS 9.0+
+- iOS 9.0+ - Deprecated in 13.0
+- iPadOS 9.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- tvOS 9.0+ - Deprecated in 13.0
+
+> **Deprecated**: For more information, see [`UIViewControllerPreviewingDelegate`](../uiviewcontrollerpreviewingdelegate.md).
 
 ## Declaration
 
 ```swift
 func previewingContext(_ previewingContext: any UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController?
+```
+
+```objc
+- (UIViewController *) previewingContext:(id<UIViewControllerPreviewing>) previewingContext viewControllerForLocation:(CGPoint) location;
 ```
 
 #### Return Value
@@ -26,7 +33,7 @@ The view controller whose view you want to provide as the preview (peek), or `ni
 
 Implement this method to return the preview view controller.
 
-To indicate that a particular portion of the source view is responding to the user’s force touch, set the context object’s [`sourceRect`](uiviewcontrollerpreviewing/sourcerect.md) property to the desired rectangle. For example, if the context object’s [`sourceView`](uiviewcontrollerpreviewing/sourceview.md) property is a table view, you can set the [`sourceRect`](uiviewcontrollerpreviewing/sourcerect.md) property to the frame of the row indicated by the `location` parameter’s value. When the system presents the preview (peek), it appears to originate from the selected row.
+To indicate that a particular portion of the source view is responding to the user’s force touch, set the context object’s [`sourceRect`](../uiviewcontrollerpreviewing/sourcerect.md) property to the desired rectangle. For example, if the context object’s [`sourceView`](../uiviewcontrollerpreviewing/sourceview.md) property is a table view, you can set the [`sourceRect`](../uiviewcontrollerpreviewing/sourcerect.md) property to the frame of the row indicated by the `location` parameter’s value. When the system presents the preview (peek), it appears to originate from the selected row.
 
 You can disable preview by returning `nil` from this method.
 
@@ -37,7 +44,8 @@ You can disable preview by returning `nil` from this method.
 
 ## See Also
 
-- [func previewingContext(any UIViewControllerPreviewing, commit: UIViewController)](uiviewcontrollerpreviewingdelegate/previewingcontext(_:commit:).md)
+### Providing preview and commit views for 3D Touch
+- [func previewingContext(any UIViewControllerPreviewing, commit: UIViewController)](./previewingcontext%28_,commit%29.md)
   Called to let you prepare the presentation of a commit (pop) view from your commit view controller.
 
 

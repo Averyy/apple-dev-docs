@@ -1,7 +1,8 @@
 # uniform(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the stored uniform value for the given type, or `nil` if none has been set.
 

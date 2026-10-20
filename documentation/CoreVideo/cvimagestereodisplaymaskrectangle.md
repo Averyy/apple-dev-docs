@@ -1,7 +1,8 @@
 # CVImageStereoDisplayMaskRectangle
 
 **Framework**: Core Video  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Specifies the rectangular display area within a view of stereo image.
 
@@ -27,41 +28,42 @@ To address window violations in stereo video, points insetting the left and righ
 ## Topics
 
 ### Structures
-- [CVImageStereoDisplayMaskRectangle.EdgePoint](cvimagestereodisplaymaskrectangle/edgepoint.md)
+- [CVImageStereoDisplayMaskRectangle.EdgePoint](./cvimagestereodisplaymaskrectangle/edgepoint.md)
   Specifies inset point on a vertical edge of the rectangle.
 ### Initializers
-- [init(maskRectangle: CVImageDisplayMaskRectangle, leftEdgePoints: [CVImageStereoDisplayMaskRectangle.EdgePoint], rightEdgePoints: [CVImageStereoDisplayMaskRectangle.EdgePoint])](cvimagestereodisplaymaskrectangle/init(maskrectangle:leftedgepoints:rightedgepoints:).md)
+- [init(maskRectangle: CVImageDisplayMaskRectangle, leftEdgePoints: [CVImageStereoDisplayMaskRectangle.EdgePoint], rightEdgePoints: [CVImageStereoDisplayMaskRectangle.EdgePoint])](./cvimagestereodisplaymaskrectangle/init%28maskrectangle,leftedgepoints,rightedgepoints%29.md)
 ### Instance Properties
-- [var leftEdgePoints: [CVImageStereoDisplayMaskRectangle.EdgePoint]](cvimagestereodisplaymaskrectangle/leftedgepoints.md)
+- [var leftEdgePoints: [CVImageStereoDisplayMaskRectangle.EdgePoint]](./cvimagestereodisplaymaskrectangle/leftedgepoints.md)
   Inset points on the left edge of the rectangle.
-- [var maskRectangle: CVImageDisplayMaskRectangle](cvimagestereodisplaymaskrectangle/maskrectangle.md)
+- [var maskRectangle: CVImageDisplayMaskRectangle](./cvimagestereodisplaymaskrectangle/maskrectangle.md)
   Rectangular display area within the image.
-- [var rightEdgePoints: [CVImageStereoDisplayMaskRectangle.EdgePoint]](cvimagestereodisplaymaskrectangle/rightedgepoints.md)
+- [var rightEdgePoints: [CVImageStereoDisplayMaskRectangle.EdgePoint]](./cvimagestereodisplaymaskrectangle/rightedgepoints.md)
   Inset points on the right edge of the rectangle.
 
 ## Relationships
 
 ### Conforms To
-- [CVAttachmentValueRepresentable](cvattachmentvaluerepresentable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVAttachmentValueRepresentable](./cvattachmentvaluerepresentable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [typealias CVImageBuffer](cvimagebuffer.md)
+### Data types
+- [typealias CVImageBuffer](./cvimagebuffer.md)
   A reference to a Core Video image buffer.
-- [struct CVImageSize](cvimagesize.md)
+- [struct CVImageSize](./cvimagesize.md)
   Size of image buffer expressed as pixel count.
-- [enum CVImageBufferOriginPosition](cvimagebufferoriginposition.md)
-- [struct CVImageCleanAperture](cvimagecleanaperture.md)
+- [enum CVImageBufferOriginPosition](./cvimagebufferoriginposition.md)
+- [struct CVImageCleanAperture](./cvimagecleanaperture.md)
   An image’s clean aperture is a region of video to display.
-- [struct CVImagePixelAspectRatio](cvimagepixelaspectratio.md)
+- [struct CVImagePixelAspectRatio](./cvimagepixelaspectratio.md)
   Aspect ratio of each pixel in the image buffer.
-- [struct CVImageDisplayMaskRectangle](cvimagedisplaymaskrectangle.md)
+- [struct CVImageDisplayMaskRectangle](./cvimagedisplaymaskrectangle.md)
   Specifies the rectangular display area within the image.
-- [struct CVImageChromaField](cvimagechromafield.md)
+- [struct CVImageChromaField](./cvimagechromafield.md)
   Information about chroma field in the 2VUY format image data.
 
 

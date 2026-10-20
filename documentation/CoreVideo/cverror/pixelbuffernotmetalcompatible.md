@@ -1,7 +1,8 @@
 # pixelBufferNotMetalCompatible
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Buffer cannot be used with Metal as either its size, pixel format or attributes are not supported by Metal.
 

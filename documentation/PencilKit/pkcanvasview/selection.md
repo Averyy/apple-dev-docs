@@ -1,7 +1,8 @@
 # selection
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifiers of the strokes selected on the canvas.
 
@@ -17,9 +18,13 @@ The identifiers of the strokes selected on the canvas.
 var selection: Set<UUID> { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSSet<NSUUID *> * selectedStrokeIDs;
+```
+
 ## Mentions
 
-- [Recognizing handwriting and converting it to text](recognizing-handwriting-and-converting-to-text.md)
+- [Recognizing handwriting and converting it to text](../recognizing-handwriting-and-converting-to-text.md)
 
 
 ---

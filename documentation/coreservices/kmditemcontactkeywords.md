@@ -1,7 +1,8 @@
 # kMDItemContactKeywords
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A list of contacts that are associated with this document, not including the authors. A CFArray of CFStrings.
 
@@ -12,6 +13,10 @@ A list of contacts that are associated with this document, not including the aut
 
 ```swift
 let kMDItemContactKeywords: CFString!
+```
+
+```c
+const CFStringRef kMDItemContactKeywords;
 ```
 
 

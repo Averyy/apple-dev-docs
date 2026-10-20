@@ -1,7 +1,8 @@
 # init(localizedName:deviceID:source:)
 
 **Framework**: Core Media I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an extension device.
 
@@ -15,15 +16,20 @@ Creates an extension device.
 convenience init(localizedName: String, deviceID: UUID, source: any CMIOExtensionDeviceSource)
 ```
 
+```objc
+- (instancetype) initWithLocalizedName:(NSString *) localizedName deviceID:(NSUUID *) deviceID source:(id<CMIOExtensionDeviceSource>) source;
+```
+
 ## Parameters
 
 - `localizedName`: A localized name for the device.
 - `deviceID`: A universally unique device identifier value.
-- `source`: An extension-specific object that conforms to the [`CMIOExtensionDeviceSource`](cmioextensiondevicesource.md) protocol.
+- `source`: An extension-specific object that conforms to the [`CMIOExtensionDeviceSource`](../cmioextensiondevicesource.md) protocol.
 
 ## See Also
 
-- [init(localizedName: String, deviceID: UUID, legacyDeviceID: String?, source: any CMIOExtensionDeviceSource)](cmioextensiondevice/init(localizedname:deviceid:legacydeviceid:source:).md)
+### Creating a Device
+- [init(localizedName: String, deviceID: UUID, legacyDeviceID: String?, source: any CMIOExtensionDeviceSource)](./init%28localizedname,deviceid,legacydeviceid,source%29.md)
   Creates an extension device with an optional legacy device identifier.
 
 

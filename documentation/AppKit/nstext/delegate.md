@@ -1,17 +1,22 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s delegate.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 unowned(unsafe) var delegate: (any NSTextDelegate)? { get set }
+```
+
+```objc
+@property (assign, nullable) id<NSTextDelegate> delegate;
 ```
 
 

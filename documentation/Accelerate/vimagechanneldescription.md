@@ -1,18 +1,19 @@
 # vImageChannelDescription
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A description of the range and clamp limits for a pixel format.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,42 +21,47 @@ A description of the range and clamp limits for a pixel format.
 struct vImageChannelDescription
 ```
 
+```c
+typedef struct vImageChannelDescription { ... } vImageChannelDescription;
+```
+
 #### Overview
 
-A [`vImageChannelDescription`](vimagechanneldescription.md) structure describes the range and clamp limits for each channel in a Core Video image format. The [`min`](vimagechanneldescription/min.md) and [`max`](vimagechanneldescription/max.md) properties define the clamping limits, and functions clamp values to [`min`](vimagechanneldescription/min.md)…[`max`](vimagechanneldescription/max.md). The [`zero`](vimagechanneldescription/zero.md) and [`full`](vimagechanneldescription/full.md) values specify the normal range and bias for a format, and encode `0.0` and `1.0`, respectively (`0.0` and `0.5` for chrominance).
+A [`vImageChannelDescription`](./vimagechanneldescription.md) structure describes the range and clamp limits for each channel in a Core Video image format. The [`min`](./vimagechanneldescription/min.md) and [`max`](./vimagechanneldescription/max.md) properties define the clamping limits, and functions clamp values to [`min`](./vimagechanneldescription/min.md)…[`max`](./vimagechanneldescription/max.md). The [`zero`](./vimagechanneldescription/zero.md) and [`full`](./vimagechanneldescription/full.md) values specify the normal range and bias for a format, and encode `0.0` and `1.0`, respectively (`0.0` and `0.5` for chrominance).
 
 ## Topics
 
 ### Creating a channel description
-- [init(min: CGFloat, zero: CGFloat, full: CGFloat, max: CGFloat)](vimagechanneldescription/init(min:zero:full:max:).md)
+- [init(min: CGFloat, zero: CGFloat, full: CGFloat, max: CGFloat)](./vimagechanneldescription/init%28min,zero,full,max%29.md)
   Returns a structure that describes the range and clamp limits for a pixel format.
-- [init()](vimagechanneldescription/init.md)
+- [init()](./vimagechanneldescription/init%28%29.md)
   Returns an empty structure that describes the range and clamp limits for a pixel format.
 ### Instance properties
-- [var min: CGFloat](vimagechanneldescription/min.md)
+- [var min: CGFloat](./vimagechanneldescription/min.md)
   The minimum encoded value.
-- [var zero: CGFloat](vimagechanneldescription/zero.md)
+- [var zero: CGFloat](./vimagechanneldescription/zero.md)
   The encoding for the value zero.
-- [var full: CGFloat](vimagechanneldescription/full.md)
+- [var full: CGFloat](./vimagechanneldescription/full.md)
   The encoding for the value one.
-- [var max: CGFloat](vimagechanneldescription/max.md)
+- [var max: CGFloat](./vimagechanneldescription/max.md)
   The maximum encoded value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [func vImageCVImageFormat_GetChannelCount(vImageConstCVImageFormat) -> UInt32](vimagecvimageformat_getchannelcount(_:).md)
+### Querying and setting channel information
+- [func vImageCVImageFormat_GetChannelCount(vImageConstCVImageFormat) -> UInt32](./vimagecvimageformat_getchannelcount%28_%29.md)
   Returns the number of channels, including alpha, for the Core Video image format.
-- [func vImageCVImageFormat_GetChannelDescription(vImageConstCVImageFormat, vImageBufferTypeCode) -> UnsafePointer<vImageChannelDescription>!](vimagecvimageformat_getchanneldescription(_:_:).md)
+- [func vImageCVImageFormat_GetChannelDescription(vImageConstCVImageFormat, vImageBufferTypeCode) -> UnsafePointer<vImageChannelDescription>!](./vimagecvimageformat_getchanneldescription%28_,_%29.md)
   Returns the channel description for a particular channel type.
-- [func vImageCVImageFormat_CopyChannelDescription(vImageCVImageFormat, UnsafePointer<vImageChannelDescription>, vImageBufferTypeCode) -> vImage_Error](vimagecvimageformat_copychanneldescription(_:_:_:).md)
+- [func vImageCVImageFormat_CopyChannelDescription(vImageCVImageFormat, UnsafePointer<vImageChannelDescription>, vImageBufferTypeCode) -> vImage_Error](./vimagecvimageformat_copychanneldescription%28_,_,_%29.md)
   Copies the channel description for a particular channel type to an image format.
-- [func vImageCVImageFormat_GetChannelNames(vImageConstCVImageFormat) -> UnsafePointer<vImageBufferTypeCode>!](vimagecvimageformat_getchannelnames(_:).md)
+- [func vImageCVImageFormat_GetChannelNames(vImageConstCVImageFormat) -> UnsafePointer<vImageBufferTypeCode>!](./vimagecvimageformat_getchannelnames%28_%29.md)
   Returns the names of the channels of a Core Video image format.
 
 

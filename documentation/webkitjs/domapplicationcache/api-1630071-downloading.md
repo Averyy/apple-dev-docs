@@ -11,7 +11,7 @@ The resources are being downloaded into the cache.
 
 ## Declaration
 
-```swift
+```
 const unsigned short DOWNLOADING;
 ```
 

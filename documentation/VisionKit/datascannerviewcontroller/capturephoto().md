@@ -1,7 +1,8 @@
 # capturePhoto()
 
 **Framework**: VisionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Captures a high-resolution photo of the camera’s live video.
 

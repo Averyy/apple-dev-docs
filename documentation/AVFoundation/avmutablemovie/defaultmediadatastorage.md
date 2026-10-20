@@ -1,7 +1,8 @@
 # defaultMediaDataStorage
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default storage container for media data that you add to a movie.
 
@@ -20,17 +21,22 @@ The default storage container for media data that you add to a movie.
 var defaultMediaDataStorage: AVMediaDataStorage? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) AVMediaDataStorage * defaultMediaDataStorage;
+```
+
 #### Discussion
 
-This value specifies a location to write sample data that you add to a movie, for any track for whose [`mediaDataStorage`](avmutablemovietrack/mediadatastorage.md) property is `nil`.
+This value specifies a location to write sample data that you add to a movie, for any track for whose [`mediaDataStorage`](../avmutablemovietrack/mediadatastorage.md) property is `nil`.
 
 ## See Also
 
-- [var isModified: Bool](avmutablemovie/ismodified.md)
+### Configuring a movie
+- [var isModified: Bool](./ismodified.md)
   A Boolean value that indicates whether the movie is in a modified state.
-- [var timescale: CMTimeScale](avmutablemovie/timescale.md)
+- [var timescale: CMTimeScale](./timescale.md)
   The time scale of the movie.
-- [var interleavingPeriod: CMTime](avmutablemovie/interleavingperiod.md)
+- [var interleavingPeriod: CMTime](./interleavingperiod.md)
   A time period indicating the duration for interleaving runs of samples for each track.
 
 

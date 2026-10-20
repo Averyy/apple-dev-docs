@@ -1,7 +1,8 @@
 # listenerVectorOrientation
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The listener’s vector orientation in the environment.
 
@@ -19,21 +20,26 @@ The listener’s vector orientation in the environment.
 var listenerVectorOrientation: AVAudio3DVectorOrientation { get set }
 ```
 
+```objc
+@property (nonatomic) AVAudio3DVectorOrientation listenerVectorOrientation;
+```
+
 #### Discussion
 
 The default orientation is with the listener looking directly along the negative z-axis (forward).
 
 The node expresses a forward vector orientation as `(0, 0, -1)`, and an up vector as `(0, 1, 0)`.
 
-Changing this property results in a corresponding change in the [`listenerAngularOrientation`](avaudioenvironmentnode/listenerangularorientation.md) property.
+Changing this property results in a corresponding change in the [`listenerAngularOrientation`](./listenerangularorientation.md) property.
 
 ## See Also
 
-- [var listenerPosition: AVAudio3DPoint](avaudioenvironmentnode/listenerposition.md)
+### Positioning the listener
+- [var listenerPosition: AVAudio3DPoint](./listenerposition.md)
   The listener’s position in the 3D environment.
-- [var listenerAngularOrientation: AVAudio3DAngularOrientation](avaudioenvironmentnode/listenerangularorientation.md)
+- [var listenerAngularOrientation: AVAudio3DAngularOrientation](./listenerangularorientation.md)
   The listener’s angular orientation in the environment.
-- [var isListenerHeadTrackingEnabled: Bool](avaudioenvironmentnode/islistenerheadtrackingenabled.md)
+- [var isListenerHeadTrackingEnabled: Bool](./islistenerheadtrackingenabled.md)
   A Boolean value that indicates whether the listener orientation is automatically rotated based on head orientation.
 
 

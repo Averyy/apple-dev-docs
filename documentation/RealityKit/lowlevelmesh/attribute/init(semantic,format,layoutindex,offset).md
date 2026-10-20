@@ -1,7 +1,8 @@
 # init(semantic:format:layoutIndex:offset:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attribute for a low-level mesh.
 

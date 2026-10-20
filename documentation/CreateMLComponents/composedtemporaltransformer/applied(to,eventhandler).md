@@ -1,7 +1,8 @@
 # applied(to:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs the composed transformation on an input sequence.
 
@@ -31,13 +32,14 @@ An async sequence produced by applying the transformation to the input.
 
 ## See Also
 
-- [ComposedTemporalTransformer.Intermediate](composedtemporaltransformer/intermediate.md)
+### Applying a transformer
+- [ComposedTemporalTransformer.Intermediate](./intermediate.md)
   The intermediate type.
-- [ComposedTemporalTransformer.Input](composedtemporaltransformer/input.md)
+- [ComposedTemporalTransformer.Input](./input.md)
   The input type.
-- [ComposedTemporalTransformer.Output](composedtemporaltransformer/output.md)
+- [ComposedTemporalTransformer.Output](./output.md)
   The output type.
-- [ComposedTemporalTransformer.OutputSequence](composedtemporaltransformer/outputsequence.md)
+- [ComposedTemporalTransformer.OutputSequence](./outputsequence.md)
   The output sequence type.
 
 

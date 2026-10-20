@@ -1,14 +1,15 @@
 # IdentityDocumentProviderRegistrationStore.RegistrationError.unknown
 
 **Framework**: IdentityDocumentServices  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the framework encountered a problem which the system can’t interpret.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 

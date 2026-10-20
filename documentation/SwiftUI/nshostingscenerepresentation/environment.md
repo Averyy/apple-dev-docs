@@ -1,7 +1,8 @@
 # environment
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The environment for any scene(s) being represented by `self`.
 

@@ -1,7 +1,8 @@
 # allowsTightening
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether inter-character spacing should tighten to fit the text into the available space.
 
@@ -26,25 +27,26 @@ The default value is `false`.
 
 ## See Also
 
-- [func truncationMode(Text.TruncationMode) -> some View](view/truncationmode(_:).md)
+### Managing text layout
+- [func truncationMode(Text.TruncationMode) -> some View](../view/truncationmode%28_%29.md)
   Sets the truncation mode for lines of text that are too long to fit in the available space.
-- [var truncationMode: Text.TruncationMode](environmentvalues/truncationmode.md)
+- [var truncationMode: Text.TruncationMode](./truncationmode.md)
   A value that indicates how the layout truncates the last line of text to fit into the available space.
-- [func allowsTightening(Bool) -> some View](view/allowstightening(_:).md)
+- [func allowsTightening(Bool) -> some View](../view/allowstightening%28_%29.md)
   Sets whether text in this view can compress the space between characters when necessary to fit text in a line.
-- [func minimumScaleFactor(CGFloat) -> some View](view/minimumscalefactor(_:).md)
+- [func minimumScaleFactor(CGFloat) -> some View](../view/minimumscalefactor%28_%29.md)
   Sets the minimum amount that text in this view scales down to fit in the available space.
-- [var minimumScaleFactor: CGFloat](environmentvalues/minimumscalefactor.md)
+- [var minimumScaleFactor: CGFloat](./minimumscalefactor.md)
   The minimum permissible proportion to shrink the font size to fit the text into the available space.
-- [func baselineOffset(CGFloat) -> some View](view/baselineoffset(_:).md)
+- [func baselineOffset(CGFloat) -> some View](../view/baselineoffset%28_%29.md)
   Sets the vertical offset for the text relative to its baseline in this view.
-- [func kerning(CGFloat) -> some View](view/kerning(_:).md)
+- [func kerning(CGFloat) -> some View](../view/kerning%28_%29.md)
   Sets the spacing, or kerning, between characters for the text in this view.
-- [func tracking(CGFloat) -> some View](view/tracking(_:).md)
+- [func tracking(CGFloat) -> some View](../view/tracking%28_%29.md)
   Sets the tracking for the text in this view.
-- [func flipsForRightToLeftLayoutDirection(Bool) -> some View](view/flipsforrighttoleftlayoutdirection(_:).md)
+- [func flipsForRightToLeftLayoutDirection(Bool) -> some View](../view/flipsforrighttoleftlayoutdirection%28_%29.md)
   Sets whether this view mirrors its contents horizontally when the layout direction is right-to-left.
-- [enum TextAlignment](textalignment.md)
+- [enum TextAlignment](../textalignment.md)
   An alignment position for text along the horizontal axis.
 
 

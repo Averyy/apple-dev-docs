@@ -1,7 +1,8 @@
 # customPlaygroundQuickLook
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A custom playground Quick Look for this object.
 
@@ -14,6 +15,8 @@ A custom playground Quick Look for this object.
 - visionOS 1.0+
 - watchOS 2.0+
 
+> **Deprecated**: NSDate.customPlaygroundQuickLook will be removed in a future Swift version
+
 ## Declaration
 
 ```swift
@@ -22,9 +25,10 @@ var customPlaygroundQuickLook: PlaygroundQuickLook { get }
 
 ## See Also
 
-- [var description: String](nsdate/description.md)
+### Describing Dates
+- [var description: String](./description.md)
   A string representation of the date object.
-- [func description(with: Any?) -> String](nsdate/description(with:).md)
+- [func description(with: Any?) -> String](./description%28with%29.md)
   Returns a string representation of the date using the given locale.
 
 

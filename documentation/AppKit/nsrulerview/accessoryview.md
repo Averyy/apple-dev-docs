@@ -1,17 +1,22 @@
 # accessoryView
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s accessory view to `aView`.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var accessoryView: NSView? { get set }
+```
+
+```objc
+@property (strong, nullable) NSView * accessoryView;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ Raises an `NSInternalInconsistencyException` if `aView` is not `nil` and the rec
 
 ## See Also
 
-- [var reservedThicknessForAccessoryView: CGFloat](nsrulerview/reservedthicknessforaccessoryview.md)
+### Related Documentation
+- [var reservedThicknessForAccessoryView: CGFloat](./reservedthicknessforaccessoryview.md)
   The room available for the receiver’s accessory view to `thickness`.
 
 

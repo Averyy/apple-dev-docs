@@ -1,16 +1,18 @@
 # IOUserServerName
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The name that the system uses to facilitate communication between your driver and other clients.
 
 **Availability**:
 - macOS 10.14+
 
+## Details
 
-
-**Type**: string
+- **Name**: `IOUserServerName`
+- **Type**: string
 
 #### Discussion
 
@@ -18,13 +20,14 @@ Typically, you set the value of this key to your kext or DriverKit extension’s
 
 ## See Also
 
-- [IOUserClass](information-property-list/iouserclass.md)
+### Driver Classes
+- [IOUserClass](./iouserclass.md)
   The name of your driver’s main class, which is the entry point for interacting with your driver’s code.
-- [IOProviderClass](information-property-list/ioproviderclass.md)
+- [IOProviderClass](./ioproviderclass.md)
   The name of the class that your driver expects to provide the implementation for its provider object.
-- [IOClass](information-property-list/ioclass.md)
+- [IOClass](./ioclass.md)
   The name of the class to instantiate from your driver.
-- [IOUserClientClass](information-property-list/iouserclientclass.md)
+- [IOUserClientClass](./iouserclientclass.md)
   The name of the class to instantiate when the system requires a client connection to the driver.
 
 

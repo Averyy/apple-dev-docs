@@ -1,7 +1,8 @@
 # speechRecognitionTask(_:didProcessAudioDuration:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate how much audio has been processed by the task.
 
@@ -18,18 +19,23 @@ Tells the delegate how much audio has been processed by the task.
 optional func speechRecognitionTask(_ task: SFSpeechRecognitionTask, didProcessAudioDuration duration: TimeInterval)
 ```
 
+```objc
+- (void) speechRecognitionTask:(SFSpeechRecognitionTask *) task didProcessAudioDuration:(NSTimeInterval) duration;
+```
+
 ## Parameters
 
-- `task`: The speech recognition task (an [`SFSpeechRecognitionTask`](sfspeechrecognitiontask.md) object) that represents the request.
+- `task`: The speech recognition task (an [`SFSpeechRecognitionTask`](../sfspeechrecognitiontask.md) object) that represents the request.
 - `duration`: The seconds of audio input that the recognizer has processed.
 
 ## See Also
 
-- [func speechRecognitionTask(SFSpeechRecognitionTask, didFinishRecognition: SFSpeechRecognitionResult)](sfspeechrecognitiontaskdelegate/speechrecognitiontask(_:didfinishrecognition:).md)
+### Finishing a speech recognition task
+- [func speechRecognitionTask(SFSpeechRecognitionTask, didFinishRecognition: SFSpeechRecognitionResult)](./speechrecognitiontask%28_,didfinishrecognition%29.md)
   Tells the delegate when the final utterance is recognized.
-- [func speechRecognitionTask(SFSpeechRecognitionTask, didFinishSuccessfully: Bool)](sfspeechrecognitiontaskdelegate/speechrecognitiontask(_:didfinishsuccessfully:).md)
+- [func speechRecognitionTask(SFSpeechRecognitionTask, didFinishSuccessfully: Bool)](./speechrecognitiontask%28_,didfinishsuccessfully%29.md)
   Tells the delegate when the recognition of all requested utterances is finished.
-- [func speechRecognitionTaskWasCancelled(SFSpeechRecognitionTask)](sfspeechrecognitiontaskdelegate/speechrecognitiontaskwascancelled(_:).md)
+- [func speechRecognitionTaskWasCancelled(SFSpeechRecognitionTask)](./speechrecognitiontaskwascancelled%28_%29.md)
   Tells the delegate that the task has been canceled.
 
 

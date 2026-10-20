@@ -1,7 +1,8 @@
 # scheduleType
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scheduling context for this logged dose event.
 
@@ -19,9 +20,13 @@ The scheduling context for this logged dose event.
 var scheduleType: HKMedicationDoseEvent.ScheduleType { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) HKMedicationDoseEventScheduleType scheduleType;
+```
+
 #### Discussion
 
-The system sets this to [`HKMedicationDoseEvent.ScheduleType.asNeeded`](hkmedicationdoseevent/scheduletype-swift.enum/asneeded.md) when the person logs a dose without a schedule and [`HKMedicationDoseEvent.ScheduleType.schedule`](hkmedicationdoseevent/scheduletype-swift.enum/schedule.md) when a person logs a dose from a scheduled medication reminder.
+The system sets this to [`HKMedicationDoseEvent.ScheduleType.asNeeded`](./scheduletype-swift.enum/asneeded.md) when the person logs a dose without a schedule and [`HKMedicationDoseEvent.ScheduleType.schedule`](./scheduletype-swift.enum/schedule.md) when a person logs a dose from a scheduled medication reminder.
 
 
 ---

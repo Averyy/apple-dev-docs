@@ -1,7 +1,8 @@
 # compactMap(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array containing the non-`nil` results of calling the given transformation with each element of this sequence.
 
@@ -40,7 +41,7 @@ let compactMapped: [Int] = possibleNumbers.compactMap { str in Int(str) }
 // [1, 2, 5]
 ```
 
-> **Note**: O(*n*), where *n* is the length of this sequence.
+> **Complexity**: O(*n*), where *n* is the length of this sequence.
 
 ## Parameters
 
@@ -48,17 +49,18 @@ let compactMapped: [Int] = possibleNumbers.compactMap { str in Int(str) }
 
 ## See Also
 
-- [func map<T, E>((Self.Element) throws(E) -> T) throws(E) -> [T]](sequence/map(_:).md)
+### Transforming a Sequence
+- [func map<T, E>((Self.Element) throws(E) -> T) throws(E) -> [T]](./map%28_%29.md)
   Returns an array containing the results of mapping the given closure over the sequence’s elements.
-- [func flatMap<SegmentOfResult>((Self.Element) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Element]](sequence/flatmap(_:)-jo2y.md)
+- [func flatMap<SegmentOfResult>((Self.Element) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Element]](./flatmap%28_%29-jo2y.md)
   Returns an array containing the concatenated results of calling the given transformation with each element of this sequence.
-- [func reduce<Result>(Result, (Result, Self.Element) throws -> Result) rethrows -> Result](sequence/reduce(_:_:).md)
+- [func reduce<Result>(Result, (Result, Self.Element) throws -> Result) rethrows -> Result](./reduce%28_,_%29.md)
   Returns the result of combining the elements of the sequence using the given closure.
-- [func reduce<Result>(into: Result, (inout Result, Self.Element) throws -> ()) rethrows -> Result](sequence/reduce(into:_:).md)
+- [func reduce<Result>(into: Result, (inout Result, Self.Element) throws -> ()) rethrows -> Result](./reduce%28into,_%29.md)
   Returns the result of combining the elements of the sequence using the given closure.
-- [var lazy: LazySequence<Self>](sequence/lazy.md)
+- [var lazy: LazySequence<Self>](./lazy.md)
   A sequence containing the same elements as this sequence, but on which some operations, such as `map` and `filter`, are implemented lazily.
-- [func flatMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]](sequence/flatmap(_:)-383uq.md)
+- [func flatMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]](./flatmap%28_%29-383uq.md)
 
 
 ---

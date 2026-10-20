@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The developer-provided name of the context.
 
@@ -10,7 +11,7 @@ The developer-provided name of the context.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,17 +21,22 @@ The developer-provided name of the context.
 var name: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * name;
+```
+
 ## Mentions
 
-- [Consuming relevant store changes](consuming-relevant-store-changes.md)
+- [Consuming relevant store changes](../consuming-relevant-store-changes.md)
 
 ## See Also
 
-- [var persistentStoreCoordinator: NSPersistentStoreCoordinator?](nsmanagedobjectcontext/persistentstorecoordinator.md)
+### Configuring a context
+- [var persistentStoreCoordinator: NSPersistentStoreCoordinator?](./persistentstorecoordinator.md)
   The persistent store coordinator of the context.
-- [var parent: NSManagedObjectContext?](nsmanagedobjectcontext/parent.md)
+- [var parent: NSManagedObjectContext?](./parent.md)
   The parent of the context.
-- [var userInfo: NSMutableDictionary](nsmanagedobjectcontext/userinfo.md)
+- [var userInfo: NSMutableDictionary](./userinfo.md)
   The user information for the context.
 
 

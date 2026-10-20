@@ -1,6 +1,7 @@
 # Overflow of C++ containers
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Detects when you access a C++ container outside its bounds.
 
@@ -8,7 +9,7 @@ Detects when you access a C++ container outside its bounds.
 
 Use this check to detect when you access a libc++ container beyond the region `[container.begin(), container.end()]`, even when the accessed memory is in a heap-allocated buffer the container uses internally. Available in Xcode 7 and later.
 
-##### Vector Overflow in C++
+##### Vector overflow in C++
 
 In the following example, the `vector` variable has valid indexes in the range `[0,2]`, but the accessed index is `3`, which causes an overflow:
 
@@ -29,9 +30,9 @@ Add a bounds check before attempting to access a container at a specific index.
 
 You may encounter a false-positive ‘Container overflow’ error when code that isn’t compiled with Address Sanitizer modifies a container. For container overflow checks to work correctly, you need to compile all code with Address Sanitizer. If you can’t do this, turn off container overflow checks using one of the following methods:
 
-Set the [`Enable C++ Container Overflow Checks`](build-settings-reference#Enable-C++-Container-Overflow-Checks.md) build setting to ‘NO’.
+Set the [Enable C++ Container Overflow Checks](./build-settings-reference.md#Enable-C++-Container-Overflow-Checks) build setting to ‘NO’.
 
-- **Set the ASAN_OPTIONS Environment Variable**: Set the `ASAN_OPTIONS` environment variable to `detect_container_overflow=0`, or append `:detect_container_overflow=0` to this environment variable if it has already been set. You should do this under the Scheme for Run targets, or Configurations for Test Plans. Note that for UI tests you may need to set this in the XCUIApplication [`launchEnvironment`](https://developer.apple.com/documentation/xcuiautomation/xcuiapplication/launchenvironment).
+- **Set the ASAN_OPTIONS Environment Variable**: Set the `ASAN_OPTIONS` environment variable to `detect_container_overflow=0`, or append `:detect_container_overflow=0` to this environment variable if it has already been set. You should do this under the Scheme for Run targets, or Configurations for Test Plans. Note that for UI tests you may need to set this in the XCUIApplication [`launchEnvironment`](../XCUIAutomation/xcuiapplication/launchenvironment.md).
 - **Define the __asan_default_options function in your executable**: Use this method when you can’t control your program’s environment variables. Disable container overflow checks by defining the following function in your executable:
 
 ```occ
@@ -48,23 +49,24 @@ __attribute__((used, visibility("default"))) const char *__asan_default_options(
 #endif
 ```
 
-If you set the [`Exported Symbols File`](build-settings-reference#Exported-Symbols-File.md) build setting, then also add `___asan_default_options` to the file to ensure that the system exports the symbol.
+If you set the [Exported Symbols File](./build-settings-reference.md#Exported-Symbols-File) build setting, then also add `___asan_default_options` to the file to ensure that the system exports the symbol.
 
 If you set the `detect_container_overflow` option in both the `__asan_default_options` function, and the `ASAN_OPTIONS` environment variable, the system uses the value in the environment variable.
 
 ## See Also
 
-- [Use of deallocated memory](use-of-deallocated-memory.md)
+### Address Sanitizer
+- [Use of deallocated memory](./use-of-deallocated-memory.md)
   Detects the use of deallocated memory.
-- [Deallocation of deallocated memory](deallocation-of-deallocated-memory.md)
+- [Deallocation of deallocated memory](./deallocation-of-deallocated-memory.md)
   Detects attempts to free deallocated memory.
-- [Deallocation of nonallocated memory](deallocation-of-nonallocated-memory.md)
+- [Deallocation of nonallocated memory](./deallocation-of-nonallocated-memory.md)
   Detects attempts to free nonallocated memory.
-- [Use of stack memory after function return](use-of-stack-memory-after-function-return.md)
+- [Use of stack memory after function return](./use-of-stack-memory-after-function-return.md)
   Detects when you access stack variable memory after its declaring function returns.
-- [Use of out-of-scope stack memory](use-of-out-of-scope-stack-memory.md)
+- [Use of out-of-scope stack memory](./use-of-out-of-scope-stack-memory.md)
   Detects access to variables outside of their declared scope.
-- [Overflow and underflow of buffers](overflow-and-underflow-of-buffers.md)
+- [Overflow and underflow of buffers](./overflow-and-underflow-of-buffers.md)
   Detects when you access memory outside of a buffer’s boundaries.
 
 

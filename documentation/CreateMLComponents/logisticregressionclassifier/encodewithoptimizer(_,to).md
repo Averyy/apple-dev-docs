@@ -1,7 +1,8 @@
 # encodeWithOptimizer(_:to:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the transformer and optimizer to an encoder.
 
@@ -20,6 +21,8 @@ Encodes the transformer and optimizer to an encoder.
 func encodeWithOptimizer(_ transformer: LogisticRegressionClassifier<Scalar, Label>.Transformer, to encoder: inout any EstimatorEncoder) throws
 ```
 
+Available when `Scalar` conforms to `MLShapedArrayScalar`, `Scalar` conforms to `BinaryFloatingPoint`, `Label` conforms to `Comparable`, `Label` conforms to `Decodable`, `Label` conforms to `Encodable`, and `Label` conforms to `Hashable`.
+
 ## Parameters
 
 - `transformer`: A transformer this estimator creates.
@@ -27,7 +30,8 @@ func encodeWithOptimizer(_ transformer: LogisticRegressionClassifier<Scalar, Lab
 
 ## See Also
 
-- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> LogisticRegressionClassifier<Scalar, Label>.Transformer](logisticregressionclassifier/decodewithoptimizer(from:).md)
+### Encoding and decoding
+- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> LogisticRegressionClassifier<Scalar, Label>.Transformer](./decodewithoptimizer%28from%29.md)
   Reads the encoded transformer and optimizer with a decoder.
 
 

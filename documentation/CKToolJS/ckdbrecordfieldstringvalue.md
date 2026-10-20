@@ -1,7 +1,8 @@
 # CKDBRecordFieldStringValue
 
 **Framework**: CKTool JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The value of the field of type string.
 
@@ -10,7 +11,7 @@ The value of the field of type string.
 
 ## Declaration
 
-```swift
+```
 dictionary CKDBRecordFieldStringValue {
 	string type;
 	string? value;
@@ -30,18 +31,19 @@ import type { CKDBRecordFieldStringValue } from "@apple/cktool.database";
 ## Topics
 
 ### Instance Properties
-- [type](ckdbrecordfieldstringvalue/type.md)
+- [type](./ckdbrecordfieldstringvalue/type.md)
   A string used to identify the field type.
-- [value](ckdbrecordfieldstringvalue/value.md)
+- [value](./ckdbrecordfieldstringvalue/value.md)
   A string value.
 
 ## See Also
 
-- [CKDBRecordFieldStringListValue](ckdbrecordfieldstringlistvalue.md)
+### Strings
+- [CKDBRecordFieldStringListValue](./ckdbrecordfieldstringlistvalue.md)
   The value of the field of type string list.
-- [CKDBRecordFieldEncryptedStringValue](ckdbrecordfieldencryptedstringvalue.md)
+- [CKDBRecordFieldEncryptedStringValue](./ckdbrecordfieldencryptedstringvalue.md)
   The value of the encrypted field of type string.
-- [CKDBRecordFieldEncryptedStringListValue](ckdbrecordfieldencryptedstringlistvalue.md)
+- [CKDBRecordFieldEncryptedStringListValue](./ckdbrecordfieldencryptedstringlistvalue.md)
   The value of the encrypted field of type string list.
 
 

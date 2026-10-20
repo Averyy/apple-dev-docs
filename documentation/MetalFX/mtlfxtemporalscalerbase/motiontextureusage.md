@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The minimal texture usage options that your app’s motion texture needs in order to support this scaler.
@@ -18,6 +19,10 @@ The minimal texture usage options that your app’s motion texture needs in orde
 
 ```swift
 var motionTextureUsage: MTLTextureUsage { get }
+```
+
+```objc
+@property (nonatomic, readonly) MTLTextureUsage motionTextureUsage;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a stride using the specified time interval.
 
@@ -22,11 +23,12 @@ init(_ timeInterval: TimeInterval)
 
 ## See Also
 
-- [init?<T>(exactly: T)](operationqueue/schedulertimetype/stride/init(exactly:).md)
+### Creating Scheduler Time Strides
+- [init?<T>(exactly: T)](./init%28exactly%29.md)
   Creates a stride using the specified integer, if it can be represented exactly.
-- [init(floatLiteral: TimeInterval)](operationqueue/schedulertimetype/stride/init(floatliteral:).md)
+- [init(floatLiteral: TimeInterval)](./init%28floatliteral%29.md)
   Creates a stride using the specified floating-point value.
-- [init(integerLiteral: TimeInterval)](operationqueue/schedulertimetype/stride/init(integerliteral:).md)
+- [init(integerLiteral: TimeInterval)](./init%28integerliteral%29.md)
   Creates a stride using the specified integer value.
 
 

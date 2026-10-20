@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text description of the dock accessory state.
 
@@ -19,7 +20,8 @@ final var debugDescription: String { get }
 
 ## See Also
 
-- [func hash(into: inout Hasher)](dockaccessory/hash(into:).md)
+### Inspecting the object
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Creates a unique identifier representing the object.
 
 

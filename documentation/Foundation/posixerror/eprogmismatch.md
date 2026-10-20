@@ -1,7 +1,8 @@
 # EPROGMISMATCH
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Program version wrong.
 

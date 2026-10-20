@@ -1,7 +1,8 @@
 # GL_DOT3_RGBA
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_DOT3_RGBA: Int32 { get }
+```
+
+```c
+#define GL_DOT3_RGBA
 ```
 
 

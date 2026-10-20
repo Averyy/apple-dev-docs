@@ -1,7 +1,8 @@
 # GetSampleRate
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets sample rate of the clock device.
 
@@ -10,7 +11,7 @@ Gets sample rate of the clock device.
 
 ## Declaration
 
-```swift
+```c
 double GetSampleRate();
 ```
 
@@ -20,13 +21,14 @@ The object’s work queue synchronizes access to the value.
 
 ## See Also
 
-- [SetSampleRate](iouservideoclockdevice/setsamplerate.md)
+### Working with sample rates
+- [SetSampleRate](./setsamplerate.md)
   Sets the current sample rate for the clock device.
-- [SetAvailableSampleRates](iouservideoclockdevice/setavailablesamplerates.md)
+- [SetAvailableSampleRates](./setavailablesamplerates.md)
   Sets the available sample rates for the clock device.
-- [GetAvailableSampleRates](iouservideoclockdevice/getavailablesamplerates.md)
+- [GetAvailableSampleRates](./getavailablesamplerates.md)
   Gets available sample rates of the clock device.
-- [GetNumberAvailableSampleRates](iouservideoclockdevice/getnumberavailablesamplerates.md)
+- [GetNumberAvailableSampleRates](./getnumberavailablesamplerates.md)
   Gets number of available sample rates of the clock device.
 
 

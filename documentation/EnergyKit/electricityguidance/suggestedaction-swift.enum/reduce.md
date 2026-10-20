@@ -1,14 +1,15 @@
 # ElectricityGuidance.SuggestedAction.reduce
 
 **Framework**: EnergyKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An indication of when to reduce electricity usage for devices that can reduce electricity consumption.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -22,7 +23,8 @@ For example, an HVAC system can reduce electricity consumption by adjusting setp
 
 ## See Also
 
-- [ElectricityGuidance.SuggestedAction.shift](electricityguidance/suggestedaction-swift.enum/shift.md)
+### Suggesting electrical load usage
+- [ElectricityGuidance.SuggestedAction.shift](./shift.md)
   An indication of when to shift energy usage for devices that can’t reduce electricity consumption.
 
 

@@ -1,14 +1,15 @@
 # InstantProtocol Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func advanced(by: Duration) -> SuspendingClock.Instant](suspendingclock/instant/advanced(by:).md)
-- [func duration(to: SuspendingClock.Instant) -> Duration](suspendingclock/instant/duration(to:).md)
+- [func advanced(by: Duration) -> SuspendingClock.Instant](./advanced%28by%29.md)
+- [func duration(to: SuspendingClock.Instant) -> Duration](./duration%28to%29.md)
 ### Type Aliases
-- [SuspendingClock.Instant.Duration](suspendingclock/instant/duration.md)
+- [SuspendingClock.Instant.Duration](./duration.md)
 
 
 ---

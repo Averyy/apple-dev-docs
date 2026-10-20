@@ -1,7 +1,8 @@
 # USDPlayer.MaterialData
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Material data from a USD material prim.
 
@@ -22,23 +23,23 @@ struct MaterialData
 ## Topics
 
 ### Structures
-- [USDPlayer.MaterialData.Update](usdplayer/materialdata/update.md)
+- [USDPlayer.MaterialData.Update](./materialdata/update.md)
   Delta update carrying only the material fields that changed since the last frame.
 ### Instance Properties
-- [let assignedTextures: [String : USDPlayer.TextureID]](usdplayer/materialdata/assignedtextures.md)
-  Map from shader parameter name to the bound [`USDPlayer.TextureID`](usdplayer/textureid.md).
-- [let id: USDPlayer.MaterialID](usdplayer/materialdata/id.md)
+- [let assignedTextures: [String : USDPlayer.TextureID]](./materialdata/assignedtextures.md)
+  Map from shader parameter name to the bound [`USDPlayer.TextureID`](./textureid.md).
+- [let id: USDPlayer.MaterialID](./materialdata/id.md)
   Unique identifier for this material resource.
-- [let primPath: String](usdplayer/materialdata/primpath.md)
+- [let primPath: String](./materialdata/primpath.md)
   USD prim path this material corresponds to.
-- [var shaderGraph: ShaderGraph](usdplayer/materialdata/shadergraph.md)
+- [var shaderGraph: ShaderGraph](./materialdata/shadergraph.md)
   Shader graph constructed from the material prim.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

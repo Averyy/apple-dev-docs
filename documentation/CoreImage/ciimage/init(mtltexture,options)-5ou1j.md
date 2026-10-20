@@ -1,7 +1,8 @@
 # init(MTLTexture:options:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 9.0+

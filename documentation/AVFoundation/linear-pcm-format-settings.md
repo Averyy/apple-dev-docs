@@ -7,19 +7,20 @@ The audio settings that apply to linear PCM audio formats.
 ## Topics
 
 ### Settings
-- [let AVLinearPCMBitDepthKey: String](../avfaudio/avlinearpcmbitdepthkey.md)
-- [let AVLinearPCMIsBigEndianKey: String](../avfaudio/avlinearpcmisbigendiankey.md)
-- [let AVLinearPCMIsFloatKey: String](../avfaudio/avlinearpcmisfloatkey.md)
-- [let AVLinearPCMIsNonInterleaved: String](../avfaudio/avlinearpcmisnoninterleaved.md)
+- [let AVLinearPCMBitDepthKey: String](../AVFAudio/avlinearpcmbitdepthkey.md)
+- [let AVLinearPCMIsBigEndianKey: String](../AVFAudio/avlinearpcmisbigendiankey.md)
+- [let AVLinearPCMIsFloatKey: String](../AVFAudio/avlinearpcmisfloatkey.md)
+- [let AVLinearPCMIsNonInterleaved: String](../AVFAudio/avlinearpcmisnoninterleaved.md)
 
 ## See Also
 
-- [class AVAudioFormat](../avfaudio/avaudioformat.md)
+### Formats
+- [class AVAudioFormat](../AVFAudio/avaudioformat.md)
   An object that describes the representation of an audio format.
-- [class AVAudioChannelLayout](../avfaudio/avaudiochannellayout.md)
+- [class AVAudioChannelLayout](../AVFAudio/avaudiochannellayout.md)
   An object that describes the roles of a set of audio channels.
-- [let AVChannelLayoutKey: String](../avfaudio/avchannellayoutkey.md)
-- [Format settings](format-settings.md)
+- [let AVChannelLayoutKey: String](../AVFAudio/avchannellayoutkey.md)
+- [Format settings](./format-settings.md)
   The audio settings that apply to all audio formats that the audio player and recorder classes support.
 
 

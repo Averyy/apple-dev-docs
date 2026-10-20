@@ -1,7 +1,8 @@
 # CNLabelContactRelationManager
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The label for the contact’s manager.
 
@@ -19,35 +20,40 @@ The label for the contact’s manager.
 let CNLabelContactRelationManager: String
 ```
 
+```c
+extern NSString * const CNLabelContactRelationManager;
+```
+
 #### Discussion
 
 This label takes a string value.
 
 ## See Also
 
-- [let CNLabelContactRelationSpouse: String](cnlabelcontactrelationspouse.md)
+### Getting the Common Relationship Labels
+- [let CNLabelContactRelationSpouse: String](./cnlabelcontactrelationspouse.md)
   The label for the contact’s spouse.
-- [let CNLabelContactRelationPartner: String](cnlabelcontactrelationpartner.md)
+- [let CNLabelContactRelationPartner: String](./cnlabelcontactrelationpartner.md)
   The label for the contact’s partner.
-- [let CNLabelContactRelationDaughter: String](cnlabelcontactrelationdaughter.md)
+- [let CNLabelContactRelationDaughter: String](./cnlabelcontactrelationdaughter.md)
   The label for the contact’s daughter.
-- [let CNLabelContactRelationSon: String](cnlabelcontactrelationson.md)
+- [let CNLabelContactRelationSon: String](./cnlabelcontactrelationson.md)
   The label for the contact’s son.
-- [let CNLabelContactRelationChild: String](cnlabelcontactrelationchild.md)
+- [let CNLabelContactRelationChild: String](./cnlabelcontactrelationchild.md)
   The label for the contact’s child.
-- [let CNLabelContactRelationFather: String](cnlabelcontactrelationfather.md)
+- [let CNLabelContactRelationFather: String](./cnlabelcontactrelationfather.md)
   The label for the contact’s father.
-- [let CNLabelContactRelationMother: String](cnlabelcontactrelationmother.md)
+- [let CNLabelContactRelationMother: String](./cnlabelcontactrelationmother.md)
   The label for the contact’s mother.
-- [let CNLabelContactRelationParent: String](cnlabelcontactrelationparent.md)
+- [let CNLabelContactRelationParent: String](./cnlabelcontactrelationparent.md)
   The label for the contact’s parent.
-- [let CNLabelContactRelationBrother: String](cnlabelcontactrelationbrother.md)
+- [let CNLabelContactRelationBrother: String](./cnlabelcontactrelationbrother.md)
   The label for the contact’s brother.
-- [let CNLabelContactRelationSister: String](cnlabelcontactrelationsister.md)
+- [let CNLabelContactRelationSister: String](./cnlabelcontactrelationsister.md)
   The label for the contact’s sister.
-- [let CNLabelContactRelationFriend: String](cnlabelcontactrelationfriend.md)
+- [let CNLabelContactRelationFriend: String](./cnlabelcontactrelationfriend.md)
   The label for the contact’s friend.
-- [let CNLabelContactRelationAssistant: String](cnlabelcontactrelationassistant.md)
+- [let CNLabelContactRelationAssistant: String](./cnlabelcontactrelationassistant.md)
   The label for the contact’s assistant.
 
 

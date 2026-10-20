@@ -1,14 +1,15 @@
 # UIDocumentMenuOrder
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The insertion point for custom menu items.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
+- iOS 8.0+ - Deprecated in 11.0
+- iPadOS 8.0+ - Deprecated in 11.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
 
 ## Declaration
 
@@ -16,29 +17,34 @@ The insertion point for custom menu items.
 enum UIDocumentMenuOrder
 ```
 
+```c
+enum UIDocumentMenuOrder : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIDocumentMenuOrder.first](uidocumentmenuorder/first.md)
+- [UIDocumentMenuOrder.first](./uidocumentmenuorder/first.md)
   The top item in the document menu.
-- [UIDocumentMenuOrder.last](uidocumentmenuorder/last.md)
+- [UIDocumentMenuOrder.last](./uidocumentmenuorder/last.md)
   The bottom item in the document menu.
 ### Initializers
-- [init?(rawValue: UInt)](uidocumentmenuorder/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./uidocumentmenuorder/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func addOption(withTitle: String, image: UIImage?, order: UIDocumentMenuOrder, handler: () -> Void)](uidocumentmenuviewcontroller/addoption(withtitle:image:order:handler:).md)
+### Configuring a document menu
+- [func addOption(withTitle: String, image: UIImage?, order: UIDocumentMenuOrder, handler: () -> Void)](./uidocumentmenuviewcontroller/addoption%28withtitle,image,order,handler%29.md)
   Adds a custom menu item to the list of document pickers.
 
 

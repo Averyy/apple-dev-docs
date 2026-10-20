@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 Decodes a value from the provided decoder.
@@ -32,6 +33,14 @@ This method throws an error if reading from the decoder fails, or if the data re
 ## Parameters
 
 - `decoder`: The decoder to read data from.
+
+## Default Implementations
+
+### DecodableAttributedStringKey Implementations
+- [static func decode(from: any Decoder) throws -> Self.Value](./decode%28from%29-1n7im.md)
+  Decodes a Swift value from the provided decoder, using a default implementation.
+- [static func decode(from: any Decoder) throws -> Self.Value](./decode%28from%29-3yywq.md)
+  Decodes an Objective-C value from the provided decoder, using a default implementation.
 
 
 ---

@@ -1,14 +1,15 @@
 # powerButtonNMI
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 11.0+ - Deprecated in 11.0
 
 ## Declaration
 
-```swift
+```c
 static void powerButtonNMI(IOHIDEventService *self, void *parameter);
 ```
 

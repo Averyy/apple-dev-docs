@@ -1,7 +1,8 @@
 # AVNumberOfChannelsKey
 
 **Framework**: AVFAudio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An integer value that represents the number of channels.
 
@@ -20,11 +21,16 @@ An integer value that represents the number of channels.
 let AVNumberOfChannelsKey: String
 ```
 
+```c
+extern NSString * const AVNumberOfChannelsKey;
+```
+
 ## See Also
 
-- [let AVFormatIDKey: String](avformatidkey.md)
+### General format keys
+- [let AVFormatIDKey: String](./avformatidkey.md)
   An integer value that represents the format of the audio data.
-- [let AVSampleRateKey: String](avsampleratekey.md)
+- [let AVSampleRateKey: String](./avsampleratekey.md)
   A floating point value that represents the sample rate, in hertz.
 
 

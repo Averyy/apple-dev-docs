@@ -1,7 +1,8 @@
 # dbSignatures
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Allowed signature database (db) entries.
 
@@ -12,6 +13,10 @@ Allowed signature database (db) entries.
 
 ```swift
 var dbSignatures: [VZEFISignatureList] { get }
+```
+
+```objc
+@property (copy, readonly) NSArray<VZEFISignatureList *> * dbSignatures;
 ```
 
 

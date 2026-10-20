@@ -1,7 +1,8 @@
 # cellularServiceID
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cellular service identifier associated with the notification.
 
@@ -16,11 +17,12 @@ let cellularServiceID: CellularServiceID
 
 ## See Also
 
-- [let messageID: SMSMessageID](smsservice/criticalmessagestatenotification/messageid.md)
+### Accessing message properties
+- [let messageID: SMSMessageID](./messageid.md)
   The identifier of the critical message.
-- [let state: SMSService.CriticalMessageStateNotification.State](smsservice/criticalmessagestatenotification/state-swift.property.md)
+- [let state: SMSService.CriticalMessageStateNotification.State](./state-swift.property.md)
   The state of the critical message.
-- [SMSService.CriticalMessageStateNotification.State](smsservice/criticalmessagestatenotification/state-swift.enum.md)
+- [SMSService.CriticalMessageStateNotification.State](./state-swift.enum.md)
   An enumeration of possible states of a critical message.
 
 

@@ -1,7 +1,8 @@
 # WKBackgroundFetchResult
 
 **Framework**: WatchKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The result of an attempt to download the content associated with a remote notification.
 
@@ -14,35 +15,40 @@ The result of an attempt to download the content associated with a remote notifi
 enum WKBackgroundFetchResult
 ```
 
+```c
+enum WKBackgroundFetchResult : NSUInteger;
+```
+
 ## Topics
 
 ### Fetch Results
-- [WKBackgroundFetchResult.failed](wkbackgroundfetchresult/failed.md)
+- [WKBackgroundFetchResult.failed](./wkbackgroundfetchresult/failed.md)
   The download attempt failed.
-- [WKBackgroundFetchResult.newData](wkbackgroundfetchresult/newdata.md)
+- [WKBackgroundFetchResult.newData](./wkbackgroundfetchresult/newdata.md)
   The download attempt succeeded.
-- [WKBackgroundFetchResult.noData](wkbackgroundfetchresult/nodata.md)
+- [WKBackgroundFetchResult.noData](./wkbackgroundfetchresult/nodata.md)
   The notification has no associated content.
 ### Initializers
-- [init?(rawValue: UInt)](wkbackgroundfetchresult/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./wkbackgroundfetchresult/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func didRegisterForRemoteNotifications(withDeviceToken: Data)](wkapplicationdelegate/didregisterforremotenotifications(withdevicetoken:).md)
+### Managing remote notifications
+- [func didRegisterForRemoteNotifications(withDeviceToken: Data)](./wkapplicationdelegate/didregisterforremotenotifications%28withdevicetoken%29.md)
   Tells the delegate that the app successfully registered with Apple Push Notification service (APNs).
-- [func didFailToRegisterForRemoteNotificationsWithError(any Error)](wkapplicationdelegate/didfailtoregisterforremotenotificationswitherror(_:).md)
+- [func didFailToRegisterForRemoteNotificationsWithError(any Error)](./wkapplicationdelegate/didfailtoregisterforremotenotificationswitherror%28_%29.md)
   Tells the delegate that Apple Push Notification service (APNs) can’t successfully complete the registration process.
-- [func didReceiveRemoteNotification([AnyHashable : Any], fetchCompletionHandler: (WKBackgroundFetchResult) -> Void)](wkapplicationdelegate/didreceiveremotenotification(_:fetchcompletionhandler:).md)
+- [func didReceiveRemoteNotification([AnyHashable : Any], fetchCompletionHandler: (WKBackgroundFetchResult) -> Void)](./wkapplicationdelegate/didreceiveremotenotification%28_,fetchcompletionhandler%29.md)
   Tells the delegate that a background notification has arrived.
 
 

@@ -1,12 +1,15 @@
 # delegate
 
 **Framework**: Notification Center  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The search view controller’s delegate or `nil` if the receiver doesn’t have a delegate.
 
 **Availability**:
-- macOS 10.10+
+- macOS 10.10+ - Deprecated in 11.0
+
+> **Deprecated**: Use [WidgetKit](../../WidgetKit/WidgetKit.md) instead.
 
 ## Declaration
 
@@ -15,13 +18,18 @@ The search view controller’s delegate or `nil` if the receiver doesn’t have 
 weak var delegate: (any NCWidgetSearchViewDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NCWidgetSearchViewDelegate> delegate;
+```
+
 #### Discussion
 
-A search view controller’s delegate performs a search on the input term and updates the controller’s [`searchResults`](ncwidgetsearchviewcontroller/searchresults.md) property with the results.
+A search view controller’s delegate performs a search on the input term and updates the controller’s [`searchResults`](./searchresults.md) property with the results.
 
 ## See Also
 
-- [protocol NCWidgetSearchViewDelegate](ncwidgetsearchviewdelegate.md)
+### Enabling Search
+- [protocol NCWidgetSearchViewDelegate](../ncwidgetsearchviewdelegate.md)
   The interface for enabling user searches in the search view controller of a macOS Today widget.
 
 

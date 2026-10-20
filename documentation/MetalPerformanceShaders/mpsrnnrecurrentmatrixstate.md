@@ -1,7 +1,8 @@
 # MPSRNNRecurrentMatrixState
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class holds all the data that’s passed from one sequence iteration of the matrix-based recurrent neural network layer to the next.
 
@@ -19,30 +20,35 @@ A class holds all the data that’s passed from one sequence iteration of the ma
 class MPSRNNRecurrentMatrixState
 ```
 
+```objc
+@interface MPSRNNRecurrentMatrixState : MPSState
+```
+
 ## Topics
 
 ### Instance Methods
-- [func getMemoryCellMatrix(forLayerIndex: Int) -> MPSMatrix?](mpsrnnrecurrentmatrixstate/getmemorycellmatrix(forlayerindex:).md)
-- [func getRecurrentOutputMatrix(forLayerIndex: Int) -> MPSMatrix?](mpsrnnrecurrentmatrixstate/getrecurrentoutputmatrix(forlayerindex:).md)
+- [func getMemoryCellMatrix(forLayerIndex: Int) -> MPSMatrix?](./mpsrnnrecurrentmatrixstate/getmemorycellmatrix%28forlayerindex%29.md)
+- [func getRecurrentOutputMatrix(forLayerIndex: Int) -> MPSMatrix?](./mpsrnnrecurrentmatrixstate/getrecurrentoutputmatrix%28forlayerindex%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSState](mpsstate.md)
+- [MPSState](./mpsstate.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpsrnnmatrixinferencelayer/copy(with:device:).md)
-- [func encodeBidirectionalSequence(commandBuffer: any MTLCommandBuffer, sourceSequence: [MPSMatrix], destinationForwardMatrices: [MPSMatrix], destinationBackwardMatrices: [MPSMatrix]?)](mpsrnnmatrixinferencelayer/encodebidirectionalsequence(commandbuffer:sourcesequence:destinationforwardmatrices:destinationbackwardmatrices:).md)
-- [func encodeSequence(commandBuffer: any MTLCommandBuffer, sourceMatrices: [MPSMatrix], destinationMatrices: [MPSMatrix], recurrentInputState: MPSRNNRecurrentMatrixState?, recurrentOutputStates: NSMutableArray?)](mpsrnnmatrixinferencelayer/encodesequence(commandbuffer:sourcematrices:destinationmatrices:recurrentinputstate:recurrentoutputstates:).md)
-- [func encodeSequence(commandBuffer: any MTLCommandBuffer, sourceMatrices: [MPSMatrix], sourceOffsets: UnsafeMutablePointer<Int>?, destinationMatrices: [MPSMatrix], destinationOffsets: UnsafeMutablePointer<Int>?, recurrentInputState: MPSRNNRecurrentMatrixState?, recurrentOutputStates: NSMutableArray?)](mpsrnnmatrixinferencelayer/encodesequence(commandbuffer:sourcematrices:sourceoffsets:destinationmatrices:destinationoffsets:recurrentinputstate:recurrentoutputstates:).md)
+### Instance Methods
+- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](./mpsrnnmatrixinferencelayer/copy%28with,device%29.md)
+- [func encodeBidirectionalSequence(commandBuffer: any MTLCommandBuffer, sourceSequence: [MPSMatrix], destinationForwardMatrices: [MPSMatrix], destinationBackwardMatrices: [MPSMatrix]?)](./mpsrnnmatrixinferencelayer/encodebidirectionalsequence%28commandbuffer,sourcesequence,destinationforwardmatrices,destinationbackwardmatrices%29.md)
+- [func encodeSequence(commandBuffer: any MTLCommandBuffer, sourceMatrices: [MPSMatrix], destinationMatrices: [MPSMatrix], recurrentInputState: MPSRNNRecurrentMatrixState?, recurrentOutputStates: NSMutableArray?)](./mpsrnnmatrixinferencelayer/encodesequence%28commandbuffer,sourcematrices,destinationmatrices,recurrentinputstate,recurrentoutputstates%29.md)
+- [func encodeSequence(commandBuffer: any MTLCommandBuffer, sourceMatrices: [MPSMatrix], sourceOffsets: UnsafeMutablePointer<Int>?, destinationMatrices: [MPSMatrix], destinationOffsets: UnsafeMutablePointer<Int>?, recurrentInputState: MPSRNNRecurrentMatrixState?, recurrentOutputStates: NSMutableArray?)](./mpsrnnmatrixinferencelayer/encodesequence%28commandbuffer,sourcematrices,sourceoffsets,destinationmatrices,destinationoffsets,recurrentinputstate,recurrentoutputstates%29.md)
 
 
 ---

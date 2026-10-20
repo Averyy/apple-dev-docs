@@ -1,7 +1,8 @@
 # primaryLanguage
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The primary language, if any, of the input mode.
 
@@ -9,13 +10,17 @@ The primary language, if any, of the input mode.
 - iOS 4.2+
 - iPadOS 4.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var primaryLanguage: String? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) NSString * primaryLanguage;
 ```
 
 #### Discussion

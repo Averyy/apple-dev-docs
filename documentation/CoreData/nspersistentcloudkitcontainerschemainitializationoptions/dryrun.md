@@ -1,23 +1,28 @@
 # dryRun
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag that indicates the container validates the model and generates the records, but doesn’t upload them to CloudKit.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 static var dryRun: NSPersistentCloudKitContainerSchemaInitializationOptions { get }
+```
+
+```c
+NSPersistentCloudKitContainerSchemaInitializationOptionsDryRun
 ```
 
 #### Discussion
@@ -26,7 +31,8 @@ This option is useful for unit testing to ensure your managed object model is va
 
 ## See Also
 
-- [static var printSchema: NSPersistentCloudKitContainerSchemaInitializationOptions](nspersistentcloudkitcontainerschemainitializationoptions/printschema.md)
+### Constants
+- [static var printSchema: NSPersistentCloudKitContainerSchemaInitializationOptions](./printschema.md)
   Prints the generated records to the console.
 
 

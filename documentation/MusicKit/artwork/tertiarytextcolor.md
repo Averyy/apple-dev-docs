@@ -1,7 +1,8 @@
 # tertiaryTextColor
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tertiary text color to use when displaying the background color.
 

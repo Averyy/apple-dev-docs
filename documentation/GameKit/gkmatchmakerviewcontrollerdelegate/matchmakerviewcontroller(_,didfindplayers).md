@@ -1,16 +1,17 @@
 # matchmakerViewController(_:didFindPlayers:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when a hosted match is found.
 
 **Availability**:
-- iOS 4.1+
-- iPadOS 4.1+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- visionOS 1.0+
+- iOS 4.1+ - Deprecated in 8.0
+- iPadOS 4.1+ - Deprecated in 8.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.8+ - Deprecated in 10.10
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
 
@@ -18,9 +19,13 @@ Called when a hosted match is found.
 optional func matchmakerViewController(_ viewController: GKMatchmakerViewController, didFindPlayers playerIDs: [String])
 ```
 
+```objc
+- (void) matchmakerViewController:(GKMatchmakerViewController *) viewController didFindPlayers:(NSArray<NSString *> *) playerIDs;
+```
+
 #### Discussion
 
-This method is called when the view controller’s `hosted` property is [`true`](https://developer.apple.com/documentation/swift/true). Although optional in the protocol, if your game attaches a delegate to the view controller for a hosted match, the view controller expects your game to provide an implementation of this method.
+This method is called when the view controller’s `hosted` property is [`true`](../../Swift/true.md). Although optional in the protocol, if your game attaches a delegate to the view controller for a hosted match, the view controller expects your game to provide an implementation of this method.
 
 The view controller returns the list of players to your game by calling this method. Your game is responsible for connecting these players to your own server and then using that server to relay messages between the players.
 
@@ -31,9 +36,11 @@ The view controller returns the list of players to your game by calling this met
 
 ## See Also
 
-- [func matchmakerViewController(GKMatchmakerViewController, didFind: GKMatch)](gkmatchmakerviewcontrollerdelegate/matchmakerviewcontroller(_:didfind:).md)
+### Related Documentation
+- [func matchmakerViewController(GKMatchmakerViewController, didFind: GKMatch)](./matchmakerviewcontroller%28_,didfind%29.md)
   Handles when the view controller finds players for a peer-to-peer match.
-- [func matchmakerViewController(GKMatchmakerViewController, didReceiveAcceptFromHostedPlayer: String)](gkmatchmakerviewcontrollerdelegate/matchmakerviewcontroller(_:didreceiveacceptfromhostedplayer:).md)
+### Deprecated Methods
+- [func matchmakerViewController(GKMatchmakerViewController, didReceiveAcceptFromHostedPlayer: String)](./matchmakerviewcontroller%28_,didreceiveacceptfromhostedplayer%29.md)
   Called when a player in a hosted match accepts the invitation.
 
 

@@ -1,7 +1,8 @@
 # makeAsyncIterator()
 
 **Framework**: ActivityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates the asynchronous iterator that produces results from this asynchronous sequence.
 
@@ -17,9 +18,10 @@ func makeAsyncIterator() -> Activity<Attributes>.ActivityUpdates.Iterator
 
 ## See Also
 
-- [Activity.ActivityUpdates.Iterator](activity/activityupdates-swift.struct/iterator.md)
+### Creating an iterator
+- [Activity.ActivityUpdates.Iterator](./iterator.md)
   An iterator for accessing individual data entries from the series.
-- [Activity.ActivityUpdates.Element](activity/activityupdates-swift.struct/element.md)
+- [Activity.ActivityUpdates.Element](./element.md)
   The type of element this asynchronous sequence produces.
 
 

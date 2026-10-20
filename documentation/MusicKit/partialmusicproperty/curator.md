@@ -1,7 +1,8 @@
 # curator
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the extended attribute property that returns the playlist’s associated curator.
 
@@ -19,6 +20,8 @@ An identifier for the extended attribute property that returns the playlist’s 
 ```swift
 static let curator: MusicRelationshipProperty<Playlist, Curator>
 ```
+
+Available when `Root` is `Playlist`.
 
 
 ---

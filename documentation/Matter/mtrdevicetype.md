@@ -1,7 +1,8 @@
 # MTRDeviceType
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Meta-data about a device type defined in the Matter specification.
 
@@ -20,33 +21,37 @@ Meta-data about a device type defined in the Matter specification.
 class MTRDeviceType
 ```
 
+```objc
+@interface MTRDeviceType : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init?(forID: NSNumber)](mtrdevicetype/init(forid:).md)
+- [init?(forID: NSNumber)](./mtrdevicetype/init%28forid%29.md)
   Returns an MTRDeviceType for the given ID, if the ID is known.  Returns nil for unknown IDs.
 ### Instance Properties
-- [var id: NSNumber](mtrdevicetype/id.md)
+- [var id: NSNumber](./mtrdevicetype/id.md)
   The identifier of the device type (32-bit unsigned integer).
-- [var isUtility: Bool](mtrdevicetype/isutility.md)
+- [var isUtility: Bool](./mtrdevicetype/isutility.md)
   Returns whether this is a utility device type.
-- [var name: String](mtrdevicetype/name.md)
+- [var name: String](./mtrdevicetype/name.md)
   Returns the name of the device type.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

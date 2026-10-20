@@ -1,7 +1,8 @@
 # timeSamples
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All time samples authored for this operation.
 

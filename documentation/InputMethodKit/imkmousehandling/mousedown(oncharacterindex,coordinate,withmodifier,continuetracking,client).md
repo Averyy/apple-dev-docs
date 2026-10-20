@@ -2,6 +2,7 @@
 
 **Framework**: InputMethodKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Handles mouse-down event send to an input method.
@@ -15,9 +16,13 @@ Handles mouse-down event send to an input method.
 func mouseDown(onCharacterIndex index: Int, coordinate point: NSPoint, withModifier flags: Int, continueTracking keepTracking: UnsafeMutablePointer<ObjCBool>!, client sender: Any!) -> Bool
 ```
 
+```objc
+- (BOOL) mouseDownOnCharacterIndex:(NSUInteger) index coordinate:(NSPoint) point withModifier:(NSUInteger) flags continueTracking:(BOOL *) keepTracking client:(id) sender;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if handled; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if handled; otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -28,14 +33,15 @@ Implement this method if your input method handles mouse-down events.
 - `index`: The index within the sender’s text storage where the mouse-down event occurred.
 - `point`: The point at which the mouse-down event occurred.
 - `flags`: The modifier keys.
-- `keepTracking`: Set this parameter to [`true`](https://developer.apple.com/documentation/swift/true) if you want to receive subsequent mouse-moved and mouse -up events.
+- `keepTracking`: Set this parameter to [`true`](../../Swift/true.md) if you want to receive subsequent mouse-moved and mouse -up events.
 - `sender`: The client object.
 
 ## See Also
 
-- [func mouseUp(onCharacterIndex: Int, coordinate: NSPoint, withModifier: Int, client: Any!) -> Bool](imkmousehandling/mouseup(oncharacterindex:coordinate:withmodifier:client:).md)
+### Handling Mouse Events
+- [func mouseUp(onCharacterIndex: Int, coordinate: NSPoint, withModifier: Int, client: Any!) -> Bool](./mouseup%28oncharacterindex,coordinate,withmodifier,client%29.md)
   Handles a mouse-up event sent to an input method.
-- [func mouseMoved(onCharacterIndex: Int, coordinate: NSPoint, withModifier: Int, client: Any!) -> Bool](imkmousehandling/mousemoved(oncharacterindex:coordinate:withmodifier:client:).md)
+- [func mouseMoved(onCharacterIndex: Int, coordinate: NSPoint, withModifier: Int, client: Any!) -> Bool](./mousemoved%28oncharacterindex,coordinate,withmodifier,client%29.md)
   Handles a mouse-moved event sent to an input method.
 
 

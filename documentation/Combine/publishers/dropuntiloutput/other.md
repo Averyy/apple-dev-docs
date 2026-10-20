@@ -1,7 +1,8 @@
 # other
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A publisher to monitor for its first emitted element.
 
@@ -22,7 +23,8 @@ let other: Other
 
 ## See Also
 
-- [let upstream: Upstream](publishers/dropuntiloutput/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives its elements.
 
 

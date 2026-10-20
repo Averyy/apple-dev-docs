@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 The function used to respond to action resumed events.
@@ -23,6 +24,13 @@ mutating func actionResumed(event: Self.EventType)
 #### Discussion
 
 Action resumed is raised when animation playback is resumed after being paused.
+
+## Default Implementations
+
+### ActionHandlerProtocol Implementations
+- [func actionResumed(event: Self.EventType)](./actionresumed%28event%29-79dv0.md)
+  The function used to respond to action resumed events. Action resumed is raised when animation playback is resumed after being paused.
+- [func actionResumed(event: Self.EventType)](./actionresumed%28event%29-w4ch.md)
 
 
 ---

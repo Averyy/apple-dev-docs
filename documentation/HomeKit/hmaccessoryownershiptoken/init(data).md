@@ -1,7 +1,8 @@
 # init(data:)
 
 **Framework**: HomeKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an ownership token from data.
 
@@ -15,6 +16,10 @@ Creates an ownership token from data.
 
 ```swift
 init?(data: Data)
+```
+
+```objc
+- (instancetype) initWithData:(NSData *) data;
 ```
 
 #### Discussion

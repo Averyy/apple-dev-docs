@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the transform flipped along the specified axis.

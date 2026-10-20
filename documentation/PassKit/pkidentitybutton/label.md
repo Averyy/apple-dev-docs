@@ -1,7 +1,8 @@
 # PKIdentityButton.Label
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that indicates the available labels for an identity button.
 
@@ -17,35 +18,40 @@ A type that indicates the available labels for an identity button.
 enum Label
 ```
 
+```c
+enum PKIdentityButtonLabel : NSInteger;
+```
+
 ## Topics
 
 ### Labels
-- [PKIdentityButton.Label.verifyIdentity](pkidentitybutton/label/verifyidentity.md)
+- [PKIdentityButton.Label.verifyIdentity](./label/verifyidentity.md)
   A label with the text verify identity with Apple Wallet.
-- [PKIdentityButton.Label.verify](pkidentitybutton/label/verify.md)
+- [PKIdentityButton.Label.verify](./label/verify.md)
   A label with the text verify with Apple Wallet.
-- [PKIdentityButton.Label.verifyAge](pkidentitybutton/label/verifyage.md)
+- [PKIdentityButton.Label.verifyAge](./label/verifyage.md)
   A label with the text verify age with Apple Wallet.
-- [PKIdentityButton.Label.continue](pkidentitybutton/label/continue.md)
+- [PKIdentityButton.Label.continue](./label/continue.md)
   A label with the text continue with Apple Wallet.
 ### Initializers
-- [init?(rawValue: Int)](pkidentitybutton/label/init(rawvalue:).md)
+- [init?(rawValue: Int)](./label/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [PKIdentityButton.Style](pkidentitybutton/style.md)
+### Configuring the appearance
+- [PKIdentityButton.Style](./style.md)
   A type that indicates the available appearances for an identity button.
-- [var cornerRadius: CGFloat](pkidentitybutton/cornerradius.md)
+- [var cornerRadius: CGFloat](./cornerradius.md)
   The radius for the rounded corners on the button, in points.
 
 

@@ -1,7 +1,8 @@
 # newVersion
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var newVersion: NSNumber { get set }
+```
+
+```objc
+@property (nonatomic, copy, getter=getNewVersion) NSNumber * newVersion;
 ```
 
 

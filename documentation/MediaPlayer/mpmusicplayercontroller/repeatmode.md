@@ -1,7 +1,8 @@
 # repeatMode
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current repeat mode of the music player.
 
@@ -18,27 +19,32 @@ The current repeat mode of the music player.
 var repeatMode: MPMusicRepeatMode { get set }
 ```
 
+```objc
+@property (nonatomic) MPMusicRepeatMode repeatMode;
+```
+
 #### Discussion
 
-For the available repeat modes, see [`MPMusicRepeatMode`](mpmusicrepeatmode.md). If not explicitly set, `repeatMode` defaults to [`MPMusicRepeatMode.default`](mpmusicrepeatmode/default.md).
+For the available repeat modes, see [`MPMusicRepeatMode`](../mpmusicrepeatmode.md). If not explicitly set, `repeatMode` defaults to [`MPMusicRepeatMode.default`](../mpmusicrepeatmode/default.md).
 
 ## See Also
 
-- [var nowPlayingItem: MPMediaItem?](mpmusicplayercontroller/nowplayingitem.md)
+### Managing playback mode and state
+- [var nowPlayingItem: MPMediaItem?](./nowplayingitem.md)
   The currently-playing media item, or the media item in a queue that you designated to begin playback with.
-- [var indexOfNowPlayingItem: Int](mpmusicplayercontroller/indexofnowplayingitem.md)
+- [var indexOfNowPlayingItem: Int](./indexofnowplayingitem.md)
   The index of the now playing item in the current playback queue.
-- [var playbackState: MPMusicPlaybackState](mpmusicplayercontroller/playbackstate.md)
+- [var playbackState: MPMusicPlaybackState](./playbackstate.md)
   The current playback state of the music player.
-- [var shuffleMode: MPMusicShuffleMode](mpmusicplayercontroller/shufflemode.md)
+- [var shuffleMode: MPMusicShuffleMode](./shufflemode.md)
   The current shuffle mode of the music player.
-- [enum MPMusicPlaybackState](mpmusicplaybackstate.md)
+- [enum MPMusicPlaybackState](../mpmusicplaybackstate.md)
   The music player playback state modes.
-- [enum MPMusicRepeatMode](mpmusicrepeatmode.md)
+- [enum MPMusicRepeatMode](../mpmusicrepeatmode.md)
   The repeat modes for the media player.
-- [enum MPMusicShuffleMode](mpmusicshufflemode.md)
+- [enum MPMusicShuffleMode](../mpmusicshufflemode.md)
   The shuffle modes for the media player.
-- [var volume: Float](mpmusicplayercontroller/volume.md)
+- [var volume: Float](./volume.md)
   The audio playback volume for the music player, in the range from `0.0` (silent) through `1.0` (maximum volume).
 
 

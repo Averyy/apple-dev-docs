@@ -1,17 +1,22 @@
 # appendArc(withCenter:radius:startAngle:endAngle:clockwise:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends an arc of a circle to the path.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func appendArc(withCenter center: NSPoint, radius: CGFloat, startAngle: CGFloat, endAngle: CGFloat, clockwise: Bool)
+```
+
+```objc
+- (void) appendBezierPathWithArcWithCenter:(NSPoint) center radius:(CGFloat) radius startAngle:(CGFloat) startAngle endAngle:(CGFloat) endAngle clockwise:(BOOL) clockwise;
 ```
 
 #### Discussion
@@ -26,27 +31,28 @@ Depending on the length of the arc, this method may add multiple connected curve
 - `radius`: Specifies the radius of the circle used to define the arc.
 - `startAngle`: Specifies the starting angle of the arc, measured in degrees counterclockwise from the x-axis.
 - `endAngle`: Specifies the end angle of the arc, measured in degrees counterclockwise from the x-axis.
-- `clockwise`: [`true`](https://developer.apple.com/documentation/swift/true) if you want the arc to be drawn in a clockwise direction; otherwise [`false`](https://developer.apple.com/documentation/swift/false) to draw the arc in a counterclockwise direction.
+- `clockwise`: [`true`](../../Swift/true.md) if you want the arc to be drawn in a clockwise direction; otherwise [`false`](../../Swift/false.md) to draw the arc in a counterclockwise direction.
 
 ## See Also
 
-- [func append(NSBezierPath)](nsbezierpath/append(_:).md)
+### Appending Common Shapes to a Path
+- [func append(NSBezierPath)](./append%28_%29.md)
   Appends the contents of the specified path object to the path.
-- [func appendPoints(NSPointArray, count: Int)](nsbezierpath/appendpoints(_:count:).md)
+- [func appendPoints(NSPointArray, count: Int)](./appendpoints%28_,count%29.md)
   Appends a series of line segments to the path.
-- [func appendOval(in: NSRect)](nsbezierpath/appendoval(in:).md)
+- [func appendOval(in: NSRect)](./appendoval%28in%29.md)
   Appends an oval path to the path, inscribing the oval in the specified rectangle.
-- [func appendArc(from: NSPoint, to: NSPoint, radius: CGFloat)](nsbezierpath/appendarc(from:to:radius:).md)
+- [func appendArc(from: NSPoint, to: NSPoint, radius: CGFloat)](./appendarc%28from,to,radius%29.md)
   Appends an arc to the path.
-- [func appendArc(withCenter: NSPoint, radius: CGFloat, startAngle: CGFloat, endAngle: CGFloat)](nsbezierpath/appendarc(withcenter:radius:startangle:endangle:).md)
+- [func appendArc(withCenter: NSPoint, radius: CGFloat, startAngle: CGFloat, endAngle: CGFloat)](./appendarc%28withcenter,radius,startangle,endangle%29.md)
   Appends an arc of a circle to the path.
-- [func appendRect(NSRect)](nsbezierpath/appendrect(_:).md)
+- [func appendRect(NSRect)](./appendrect%28_%29.md)
   Appends a rectangular path to the path.
-- [func appendRoundedRect(NSRect, xRadius: CGFloat, yRadius: CGFloat)](nsbezierpath/appendroundedrect(_:xradius:yradius:).md)
+- [func appendRoundedRect(NSRect, xRadius: CGFloat, yRadius: CGFloat)](./appendroundedrect%28_,xradius,yradius%29.md)
   Appends a rounded rectangular path to the path.
-- [func append(withCGGlyph: CGGlyph, in: NSFont)](nsbezierpath/append(withcgglyph:in:).md)
+- [func append(withCGGlyph: CGGlyph, in: NSFont)](./append%28withcgglyph,in%29.md)
   Appends an outline of the specified glyph to the path.
-- [func append(withCGGlyphs: UnsafePointer<CGGlyph>, count: Int, in: NSFont)](nsbezierpath/append(withcgglyphs:count:in:).md)
+- [func append(withCGGlyphs: UnsafePointer<CGGlyph>, count: Int, in: NSFont)](./append%28withcgglyphs,count,in%29.md)
   Appends the outlines of the specified glyphs to the path.
 
 

@@ -1,7 +1,8 @@
 # javaScriptCanOpenWindowsAutomatically
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether JavaScript can open windows without user interaction.
 
@@ -18,13 +19,18 @@ A Boolean value that indicates whether JavaScript can open windows without user 
 var javaScriptCanOpenWindowsAutomatically: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL javaScriptCanOpenWindowsAutomatically;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false) in iOS and [`true`](https://developer.apple.com/documentation/swift/true) in macOS.
+The default value is [`false`](../../Swift/false.md) in iOS and [`true`](../../Swift/true.md) in macOS.
 
 ## See Also
 
-- [var isSiteSpecificQuirksModeEnabled: Bool](wkpreferences/issitespecificquirksmodeenabled.md)
+### Setting Java and JavaScript Preferences
+- [var isSiteSpecificQuirksModeEnabled: Bool](./issitespecificquirksmodeenabled.md)
   A Boolean that indicates whether to apply site-specific compatibility workarounds.
 
 

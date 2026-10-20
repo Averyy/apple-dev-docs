@@ -1,19 +1,20 @@
 # finalizeBuffer
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Obtain the result of the serialization performed by createFromObject().
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 const void * finalizeBuffer(size_t *length);
 ```
 
@@ -31,10 +32,11 @@ Obtain the result of the serialization performed by createFromObject().
 
 ## See Also
 
-- [copyObject](osserialization/copyobject.md)
+### Getting the Serialized Content
+- [copyObject](./copyobject.md)
   Obtain the result of the deserialization performed by createFromBytes().
-- [OSCreateObjectFromSerialization](oscreateobjectfromserialization.md)
-- [OSSerializationGetBytes](osserializationgetbytes.md)
+- [OSCreateObjectFromSerialization](../oscreateobjectfromserialization.md)
+- [OSSerializationGetBytes](../osserializationgetbytes.md)
 
 
 ---

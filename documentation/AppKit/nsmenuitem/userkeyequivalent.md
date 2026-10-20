@@ -1,12 +1,13 @@
 # userKeyEquivalent
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user-assigned key equivalent for the menu item.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,23 @@ The user-assigned key equivalent for the menu item.
 var userKeyEquivalent: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * userKeyEquivalent;
+```
+
 ## See Also
 
-- [var keyEquivalent: String](nsmenuitem/keyequivalent.md)
+### Related Documentation
+- [var keyEquivalent: String](./keyequivalent.md)
   The menu item’s unmodified key equivalent.
-- [class var usesUserKeyEquivalents: Bool](nsmenuitem/usesuserkeyequivalents.md)
+### Managing user key equivalents
+- [class var usesUserKeyEquivalents: Bool](./usesuserkeyequivalents.md)
   Returns a Boolean value that indicates whether menu items conform to user preferences for key equivalents.
-- [var allowsAutomaticKeyEquivalentLocalization: Bool](nsmenuitem/allowsautomatickeyequivalentlocalization.md)
+- [var allowsAutomaticKeyEquivalentLocalization: Bool](./allowsautomatickeyequivalentlocalization.md)
   A Boolean value that determines whether the system automatically remaps the keyboard shortcut to support localized keyboards.
-- [var allowsAutomaticKeyEquivalentMirroring: Bool](nsmenuitem/allowsautomatickeyequivalentmirroring.md)
+- [var allowsAutomaticKeyEquivalentMirroring: Bool](./allowsautomatickeyequivalentmirroring.md)
   A Boolean value that determines whether the system automatically swaps input strings for some keyboard shortcuts when the interface direction changes.
-- [var allowsKeyEquivalentWhenHidden: Bool](nsmenuitem/allowskeyequivalentwhenhidden.md)
+- [var allowsKeyEquivalentWhenHidden: Bool](./allowskeyequivalentwhenhidden.md)
 
 
 ---

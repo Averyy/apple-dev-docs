@@ -1,7 +1,8 @@
 # init(identifier:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Retrieves a voice for the identifier you specify.
 
@@ -20,6 +21,10 @@ Retrieves a voice for the identifier you specify.
 init?(identifier: String)
 ```
 
+```objc
++ (AVSpeechSynthesisVoice *) voiceWithIdentifier:(NSString *) identifier;
+```
+
 #### Return Value
 
 A voice for the specified identifier if the identifier is valid and the voice is available on the device; otherwise, `nil`.
@@ -30,11 +35,12 @@ A voice for the specified identifier if the identifier is valid and the voice is
 
 ## See Also
 
-- [init?(language: String?)](avspeechsynthesisvoice/init(language:).md)
+### Creating a voice
+- [init?(language: String?)](./init%28language%29.md)
   Retrieves a voice for the BCP 47 code language code you specify.
-- [class func speechVoices() -> [AVSpeechSynthesisVoice]](avspeechsynthesisvoice/speechvoices.md)
+- [class func speechVoices() -> [AVSpeechSynthesisVoice]](./speechvoices%28%29.md)
   Retrieves all available voices on the device.
-- [let AVSpeechSynthesisVoiceIdentifierAlex: String](avspeechsynthesisvoiceidentifieralex.md)
+- [let AVSpeechSynthesisVoiceIdentifierAlex: String](../avspeechsynthesisvoiceidentifieralex.md)
   The voice that the system identifies as Alex.
 
 

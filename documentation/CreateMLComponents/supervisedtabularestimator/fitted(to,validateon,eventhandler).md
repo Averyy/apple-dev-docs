@@ -2,6 +2,7 @@
 
 **Framework**: Create ML Components  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Fits a transformer to a data frame
@@ -33,7 +34,8 @@ The fitted transformer.
 
 ## See Also
 
-- [func fitted(to: DataFrame, validateOn: DataFrame?) async throws -> Self.Transformer](supervisedtabularestimator/fitted(to:validateon:).md)
+### Fitting
+- [func fitted(to: DataFrame, validateOn: DataFrame?) async throws -> Self.Transformer](./fitted%28to,validateon%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # error
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The error that occurred when attempting to load an image, if any.
 

@@ -1,7 +1,8 @@
 # init(center:size:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a rectangle from single-precision vectors that describe the center and size.
 

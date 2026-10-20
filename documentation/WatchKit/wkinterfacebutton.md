@@ -1,7 +1,8 @@
 # WKInterfaceButton
 
 **Framework**: WatchKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A button in the user interface of your watchOS app.
 
@@ -12,6 +13,10 @@ A button in the user interface of your watchOS app.
 
 ```swift
 class WKInterfaceButton
+```
+
+```objc
+@interface WKInterfaceButton : WKInterfaceObject
 ```
 
 #### Overview
@@ -57,66 +62,67 @@ Xcode lets you configure information about your button interface object in your 
 | Attribute | Description |
 | --- | --- |
 | Content | The type of content contained in the button. A button can contain a single text label or a group. For buttons containing a group, you can add text, images, and other objects to the group. |
-| Title | The title string assigned to the interface controller. You can also set this value programmatically using the [`setTitle(_:)`](wkinterfacebutton/settitle(_:).md) or [`setAttributedTitle(_:)`](wkinterfacebutton/setattributedtitle(_:).md) method. |
+| Title | The title string assigned to the interface controller. You can also set this value programmatically using the [`setTitle(_:)`](./wkinterfacebutton/settitle%28_%29.md) or [`setAttributedTitle(_:)`](./wkinterfacebutton/setattributedtitle%28_%29.md) method. |
 | Color (Button) | The color to apply to the button’s title. |
-| Font | The font to apply to the button’s title. You can set font information programmatically using the [`setAttributedTitle(_:)`](wkinterfacebutton/setattributedtitle(_:).md) method. |
-| Enabled | A checkbox indicating whether the button is enabled and sends events when tapped. You can also configure this value programmatically using the [`setEnabled(_:)`](wkinterfacebutton/setenabled(_:).md) method. |
-| Background | The background image to display in the button. You can also set this value programmatically using the [`setBackgroundImage(_:)`](wkinterfacebutton/setbackgroundimage(_:).md), [`setBackgroundImageData(_:)`](wkinterfacebutton/setbackgroundimagedata(_:).md), or [`setBackgroundImageNamed(_:)`](wkinterfacebutton/setbackgroundimagenamed(_:).md) method. |
+| Font | The font to apply to the button’s title. You can set font information programmatically using the [`setAttributedTitle(_:)`](./wkinterfacebutton/setattributedtitle%28_%29.md) method. |
+| Enabled | A checkbox indicating whether the button is enabled and sends events when tapped. You can also configure this value programmatically using the [`setEnabled(_:)`](./wkinterfacebutton/setenabled%28_%29.md) method. |
+| Background | The background image to display in the button. You can also set this value programmatically using the [`setBackgroundImage(_:)`](./wkinterfacebutton/setbackgroundimage%28_%29.md), [`setBackgroundImageData(_:)`](./wkinterfacebutton/setbackgroundimagedata%28_%29.md), or [`setBackgroundImageNamed(_:)`](./wkinterfacebutton/setbackgroundimagenamed%28_%29.md) method. |
 | Color (Background) | The background color for the button. |
 
 ## Topics
 
 ### Setting the Button Title
-- [func setTitle(String?)](wkinterfacebutton/settitle(_:).md)
+- [func setTitle(String?)](./wkinterfacebutton/settitle%28_%29.md)
   Sets the button title to the specified string.
-- [func setAttributedTitle(NSAttributedString?)](wkinterfacebutton/setattributedtitle(_:).md)
+- [func setAttributedTitle(NSAttributedString?)](./wkinterfacebutton/setattributedtitle%28_%29.md)
   Sets the button title to the specified attributed string.
 ### Setting the Button Background
-- [func setBackgroundColor(UIColor?)](wkinterfacebutton/setbackgroundcolor(_:).md)
+- [func setBackgroundColor(UIColor?)](./wkinterfacebutton/setbackgroundcolor%28_%29.md)
   Sets the background color of the button.
-- [func setBackgroundImage(UIImage?)](wkinterfacebutton/setbackgroundimage(_:).md)
+- [func setBackgroundImage(UIImage?)](./wkinterfacebutton/setbackgroundimage%28_%29.md)
   Sets the button’s background image to the specified image.
-- [func setBackgroundImageData(Data?)](wkinterfacebutton/setbackgroundimagedata(_:).md)
+- [func setBackgroundImageData(Data?)](./wkinterfacebutton/setbackgroundimagedata%28_%29.md)
   Sets the button’s background image to the image in the specified data object.
-- [func setBackgroundImageNamed(String?)](wkinterfacebutton/setbackgroundimagenamed(_:).md)
+- [func setBackgroundImageNamed(String?)](./wkinterfacebutton/setbackgroundimagenamed%28_%29.md)
   Sets the button’s background image to the image in the named resource file.
 ### Enabling and Disabling the Button
-- [func setEnabled(Bool)](wkinterfacebutton/setenabled(_:).md)
+- [func setEnabled(Bool)](./wkinterfacebutton/setenabled%28_%29.md)
   Enables or disables the button.
 
 ## Relationships
 
 ### Inherits From
-- [WKInterfaceObject](wkinterfaceobject.md)
+- [WKInterfaceObject](./wkinterfaceobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class WKInterfaceLabel](wkinterfacelabel.md)
+### Controls
+- [class WKInterfaceLabel](./wkinterfacelabel.md)
   An interface element that displays static text.
-- [class WKInterfaceDate](wkinterfacedate.md)
+- [class WKInterfaceDate](./wkinterfacedate.md)
   A label that displays the current date or time.
-- [class WKInterfaceTimer](wkinterfacetimer.md)
+- [class WKInterfaceTimer](./wkinterfacetimer.md)
   A label that displays a countdown or count-up timer.
-- [class WKInterfaceAuthorizationAppleIDButton](wkinterfaceauthorizationappleidbutton.md)
+- [class WKInterfaceAuthorizationAppleIDButton](./wkinterfaceauthorizationappleidbutton.md)
   A button that you can use to trigger a Sign in with Apple request.
-- [class WKInterfacePaymentButton](wkinterfacepaymentbutton.md)
+- [class WKInterfacePaymentButton](./wkinterfacepaymentbutton.md)
   A button that you can use to trigger payments through Apple Pay.
-- [class WKInterfaceTextField](wkinterfacetextfield.md)
+- [class WKInterfaceTextField](./wkinterfacetextfield.md)
   An interface element that displays an editable text area.
-- [class WKInterfaceSwitch](wkinterfaceswitch.md)
+- [class WKInterfaceSwitch](./wkinterfaceswitch.md)
   An interface element that toggles between an On and Off state.
-- [class WKInterfaceSlider](wkinterfaceslider.md)
+- [class WKInterfaceSlider](./wkinterfaceslider.md)
   An interface element that lets users select a single floating-point value from a range of values.
-- [class WKInterfaceActivityRing](wkinterfaceactivityring.md)
+- [class WKInterfaceActivityRing](./wkinterfaceactivityring.md)
   A view that displays data from a HealthKit activity summary object.
-- [class WKInterfaceMap](wkinterfacemap.md)
+- [class WKInterfaceMap](./wkinterfacemap.md)
   An interface element that displays a noninteractive map for the location you specify.
 
 

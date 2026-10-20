@@ -1,6 +1,7 @@
 # Content filter providers
 
-**Framework**: Network Extension
+**Framework**: Network Extension  
+**Role**: API Collection
 
 Create an on-device network content filter.
 
@@ -17,52 +18,53 @@ This separation exists to guarantee user privacy. The filter data provider runs 
 
 For example, your filter control provider might download a set of filtering rules and save them to a shared app group. Your filter data provider has *read-only* access to that app group, allowing it use those rules to filter content but still preventing it from exporting user network content.
 
-For detailed information about content filter provider deployment options, see [`TN3134: Network Extension provider deployment`](https://developer.apple.com/documentation/technotes/tn3134-network-extension-provider-deployment).
+For detailed information about content filter provider deployment options, see [TN3134: Network Extension provider deployment](../Technotes/tn3134-network-extension-provider-deployment.md).
 
 > **Note**:  When a VPN configuration is active, connections use the VPN instead of iCloud Private Relay. Network Extension providers also don’t use iCloud Private Relay.
 
 ## Topics
 
 ### Essentials
-- [Network Extensions Entitlement](../bundleresources/entitlements/com.apple.developer.networking.networkextension.md)
+- [Network Extensions Entitlement](../BundleResources/entitlements/com.apple.developer.networking.networkextension.md)
   The APIs an app can use to customize networking features.
 ### Data and control providers
-- [class NEFilterDataProvider](nefilterdataprovider.md)
+- [class NEFilterDataProvider](./nefilterdataprovider.md)
   The principal class for a filter data provider extension.
-- [class NEFilterControlProvider](nefiltercontrolprovider.md)
+- [class NEFilterControlProvider](./nefiltercontrolprovider.md)
   The principal class for a filter control provider extension.
-- [class NEFilterPacketProvider](nefilterpacketprovider.md)
+- [class NEFilterPacketProvider](./nefilterpacketprovider.md)
   A filter provider that evaluates network packets and decides whether to block, allow, or delay the packets.
-- [class NEFilterProvider](nefilterprovider.md)
+- [class NEFilterProvider](./nefilterprovider.md)
   An abstract base class shared by content filters.
 ### Flow handling
-- [class NEFilterFlow](nefilterflow.md)
+- [class NEFilterFlow](./nefilterflow.md)
   The abstract base class for types that represent flows of network data.
-- [class NEFilterBrowserFlow](nefilterbrowserflow.md)
+- [class NEFilterBrowserFlow](./nefilterbrowserflow.md)
   A flow of network data, originating from a WebKit-based browser, that the filter examines.
-- [class NEFilterSocketFlow](nefiltersocketflow.md)
+- [class NEFilterSocketFlow](./nefiltersocketflow.md)
   A flow of network data that the filter examines.
-- [class NEFilterNewFlowVerdict](nefilternewflowverdict.md)
+- [class NEFilterNewFlowVerdict](./nefilternewflowverdict.md)
   The result from a filter data provder after the initial examination of a flow.
-- [class NEFilterDataVerdict](nefilterdataverdict.md)
+- [class NEFilterDataVerdict](./nefilterdataverdict.md)
   The result from a filter data provder for subsequent chunks of data on a flow.
-- [class NEFilterControlVerdict](nefiltercontrolverdict.md)
+- [class NEFilterControlVerdict](./nefiltercontrolverdict.md)
   The result from a filter control provider.
-- [class NEFilterRemediationVerdict](nefilterremediationverdict.md)
+- [class NEFilterRemediationVerdict](./nefilterremediationverdict.md)
   The result from a filter data provider after the user requests remediation for a blocked flow.
-- [class NEFilterVerdict](nefilterverdict.md)
+- [class NEFilterVerdict](./nefilterverdict.md)
   The abstract base class for filter verdict classes.
-- [class NEFilterReport](nefilterreport.md)
+- [class NEFilterReport](./nefilterreport.md)
   The report of the data provider’s action on a flow.
 ### Filter configuration
-- [class NEFilterManager](nefiltermanager.md)
+- [class NEFilterManager](./nefiltermanager.md)
   An object to create and manage a content filter’s configuration.
-- [class NEFilterProviderConfiguration](nefilterproviderconfiguration.md)
+- [class NEFilterProviderConfiguration](./nefilterproviderconfiguration.md)
   Configuration parameters for a content filter.
 
 ## See Also
 
-- [Filtering Network Traffic](filtering-network-traffic.md)
+### Content filters
+- [Filtering Network Traffic](./filtering-network-traffic.md)
   Use the Network Extension framework to allow or deny network connections.
 
 

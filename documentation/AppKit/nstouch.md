@@ -1,7 +1,8 @@
 # NSTouch
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A snapshot of a particular touch at an instant in time.
 
@@ -14,6 +15,10 @@ A snapshot of a particular touch at an instant in time.
 class NSTouch
 ```
 
+```objc
+@interface NSTouch : NSObject
+```
+
 #### Overview
 
 A touch event is not persistent throughout the touch. A touch creates new instances as it progresses. Use the identity property to follow a specific touch across its lifetime.
@@ -23,52 +28,53 @@ Touches do not have a corresponding screen location. The first touch of a touch 
 ## Topics
 
 ### Getting the Touch Type
-- [var type: NSTouch.TouchType](nstouch/type.md)
+- [var type: NSTouch.TouchType](./nstouch/type.md)
   A type of touch from a Touch Bar interaction.
-- [NSTouch.TouchType](nstouch/touchtype.md)
+- [NSTouch.TouchType](./nstouch/touchtype.md)
   A bit mask identifying a direct or indirect touch type.
-- [NSTouch.TouchTypeMask](nstouch/touchtypemask.md)
+- [NSTouch.TouchTypeMask](./nstouch/touchtypemask.md)
   A bit mask identifying a direct or indirect touch type.
 ### Using Touch Properties
-- [var identity: any NSCopying & NSObjectProtocol](nstouch/identity.md)
+- [var identity: any NSCopying & NSObjectProtocol](./nstouch/identity.md)
   The changes to a particular touch during its lifetime.
-- [var phase: NSTouch.Phase](nstouch/phase-swift.property.md)
+- [var phase: NSTouch.Phase](./nstouch/phase-swift.property.md)
   The current phase of the touch.
-- [NSTouch.Phase](nstouch/phase-swift.struct.md)
+- [NSTouch.Phase](./nstouch/phase-swift.struct.md)
   The possible phases of a touch.
-- [var normalizedPosition: NSPoint](nstouch/normalizedposition.md)
+- [var normalizedPosition: NSPoint](./nstouch/normalizedposition.md)
   The normalized position of the touch.
-- [var isResting: Bool](nstouch/isresting.md)
+- [var isResting: Bool](./nstouch/isresting.md)
   The indicator for a resting touch.
 ### Using Touch Device Properties
-- [var device: Any?](nstouch/device.md)
+- [var device: Any?](./nstouch/device.md)
   The digitizer that generates the touch. Useful to distinguish touches emanating from multiple-device scenarios.
-- [var deviceSize: NSSize](nstouch/devicesize.md)
+- [var deviceSize: NSSize](./nstouch/devicesize.md)
   The range of the touch device in points, such as 72 ppi.
 ### Getting the Touch Location
-- [func location(in: NSView?) -> NSPoint](nstouch/location(in:).md)
+- [func location(in: NSView?) -> NSPoint](./nstouch/location%28in%29.md)
   Indicates the location of the touch in the view’s coordinates.
-- [func previousLocation(in: NSView?) -> NSPoint](nstouch/previouslocation(in:).md)
+- [func previousLocation(in: NSView?) -> NSPoint](./nstouch/previouslocation%28in%29.md)
   Indicates the previous location of the touch in the view’s coordinates.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSEvent](nsevent.md)
+### Mouse, Keyboard, and Touch Events
+- [class NSEvent](./nsevent.md)
   An object that contains information about an input action, such as a mouse click or a key press.
 
 

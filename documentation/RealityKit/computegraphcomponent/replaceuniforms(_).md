@@ -1,7 +1,8 @@
 # replaceUniforms(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the entire uniform buffer with the given data.
 

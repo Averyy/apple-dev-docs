@@ -1,7 +1,8 @@
 # HKBodyTemperatureSensorLocation.gastroIntestinal
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The temperature was taken inside the gastrointestinal tract.
 
@@ -19,29 +20,34 @@ The temperature was taken inside the gastrointestinal tract.
 case gastroIntestinal
 ```
 
+```c
+HKBodyTemperatureSensorLocationGastroIntestinal
+```
+
 ## See Also
 
-- [HKBodyTemperatureSensorLocation.other](hkbodytemperaturesensorlocation/other.md)
+### Locations
+- [HKBodyTemperatureSensorLocation.other](./other.md)
   The temperature was taken at a location that is not otherwise in this list.
-- [HKBodyTemperatureSensorLocation.armpit](hkbodytemperaturesensorlocation/armpit.md)
+- [HKBodyTemperatureSensorLocation.armpit](./armpit.md)
   The temperature was taken in the armpit.
-- [HKBodyTemperatureSensorLocation.body](hkbodytemperaturesensorlocation/body.md)
+- [HKBodyTemperatureSensorLocation.body](./body.md)
   The temperature was taken on the body.
-- [HKBodyTemperatureSensorLocation.ear](hkbodytemperaturesensorlocation/ear.md)
+- [HKBodyTemperatureSensorLocation.ear](./ear.md)
   The temperature was taken in the ear.
-- [HKBodyTemperatureSensorLocation.finger](hkbodytemperaturesensorlocation/finger.md)
+- [HKBodyTemperatureSensorLocation.finger](./finger.md)
   The temperature was taken at the finger.
-- [HKBodyTemperatureSensorLocation.mouth](hkbodytemperaturesensorlocation/mouth.md)
+- [HKBodyTemperatureSensorLocation.mouth](./mouth.md)
   The temperature was taken in the mouth.
-- [HKBodyTemperatureSensorLocation.rectum](hkbodytemperaturesensorlocation/rectum.md)
+- [HKBodyTemperatureSensorLocation.rectum](./rectum.md)
   The temperature was taken in the rectum.
-- [HKBodyTemperatureSensorLocation.toe](hkbodytemperaturesensorlocation/toe.md)
+- [HKBodyTemperatureSensorLocation.toe](./toe.md)
   The temperature was taken at the toe.
-- [HKBodyTemperatureSensorLocation.earDrum](hkbodytemperaturesensorlocation/eardrum.md)
+- [HKBodyTemperatureSensorLocation.earDrum](./eardrum.md)
   The temperature was taken on the eardrum.
-- [HKBodyTemperatureSensorLocation.temporalArtery](hkbodytemperaturesensorlocation/temporalartery.md)
+- [HKBodyTemperatureSensorLocation.temporalArtery](./temporalartery.md)
   The temperature was taken at the temporal artery.
-- [HKBodyTemperatureSensorLocation.forehead](hkbodytemperaturesensorlocation/forehead.md)
+- [HKBodyTemperatureSensorLocation.forehead](./forehead.md)
   The temperature was taken on the forehead.
 
 

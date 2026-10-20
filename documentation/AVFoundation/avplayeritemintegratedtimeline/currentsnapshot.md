@@ -1,7 +1,8 @@
 # currentSnapshot
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An immutable representation of the timeline state at time of request.
 
@@ -20,15 +21,20 @@ An immutable representation of the timeline state at time of request.
 var currentSnapshot: AVPlayerItemIntegratedTimelineSnapshot { get }
 ```
 
+```objc
+@property (readonly) AVPlayerItemIntegratedTimelineSnapshot * currentSnapshot;
+```
+
 #### Discussion
 
 A timeline snapshot provides a read-only view of the details of the timeline. Because a snapshot provides a fixed view of the timeline at the time of the request, its state doesn’t update as playback continues.
 
 ## See Also
 
-- [class AVPlayerItemIntegratedTimelineSnapshot](avplayeritemintegratedtimelinesnapshot.md)
+### Inspecting snapshots
+- [class AVPlayerItemIntegratedTimelineSnapshot](../avplayeritemintegratedtimelinesnapshot.md)
   An immutable representation of inspectable details of an integrated timeline object.
-- [class let snapshotsOutOfSyncNotification: NSNotification.Name](avplayeritemintegratedtimeline/snapshotsoutofsyncnotification.md)
+- [class let snapshotsOutOfSyncNotification: NSNotification.Name](./snapshotsoutofsyncnotification.md)
   A notification the system posts when the snapshot objects provided by this timeline become out of sync with the current timeline state.
 
 

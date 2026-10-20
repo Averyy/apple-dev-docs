@@ -1,17 +1,22 @@
 # init(pasteboard:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns an image object with data from the specified pasteboard.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 convenience init?(pasteboard: NSPasteboard)
+```
+
+```objc
+- (instancetype) initWithPasteboard:(NSPasteboard *) pasteboard;
 ```
 
 #### Return Value
@@ -29,7 +34,7 @@ The specified pasteboard should contain a type supported by one of the registere
 | `NSEPSImageRep` | `NSPostscriptPboardType` | `eps` |
 | `NSPICTImageRep` | `NSPICTPboardType` | `pict` |
 
-If the specified pasteboard contains the value `NSFilenamesPboardType`, each filename on the pasteboard should have an extension supported by one of the registered `NSImageRep` subclasses. You can use the [`imageUnfilteredFileTypes()`](nsimagerep/imageunfilteredfiletypes().md) method of a given subclass to obtain the list of supported types for that class.
+If the specified pasteboard contains the value `NSFilenamesPboardType`, each filename on the pasteboard should have an extension supported by one of the registered `NSImageRep` subclasses. You can use the [`imageUnfilteredFileTypes()`](../nsimagerep/imageunfilteredfiletypes%28%29.md) method of a given subclass to obtain the list of supported types for that class.
 
 ## Parameters
 
@@ -37,13 +42,14 @@ If the specified pasteboard contains the value `NSFilenamesPboardType`, each fil
 
 ## See Also
 
-- [convenience init?(data: Data)](nsimage/init(data:).md)
+### Creating Images from Existing Data
+- [convenience init?(data: Data)](./init%28data%29.md)
   Initializes and returns an image object using the provided image data.
-- [convenience init?(dataIgnoringOrientation: Data)](nsimage/init(dataignoringorientation:).md)
+- [convenience init?(dataIgnoringOrientation: Data)](./init%28dataignoringorientation%29.md)
   Initializes and returns an image object using the provided image data and ignoring the EXIF orientation tags.
-- [convenience init(cgImage: CGImage, size: NSSize)](nsimage/init(cgimage:size:)-8oznv.md)
+- [convenience init(cgImage: CGImage, size: NSSize)](./init%28cgimage,size%29-8oznv.md)
   Creates a new image using the contents of the provided image.
-- [init(coder: NSCoder)](nsimage/init(coder:).md)
+- [init(coder: NSCoder)](./init%28coder%29.md)
   Initializes and returns an image object from data in an unarchiver.
 
 

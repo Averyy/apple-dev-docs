@@ -1,7 +1,8 @@
 # MLTextClassifier.FeatureExtractorType.customEmbedding(_:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A feature extractor that uses a custom embedding contained in a CoreML model file.
 
@@ -24,13 +25,14 @@ case customEmbedding(URL)
 
 ## See Also
 
-- [MLTextClassifier.FeatureExtractorType.staticEmbedding](mltextclassifier/featureextractortype/staticembedding.md)
+### Selecting a feature extractor type
+- [MLTextClassifier.FeatureExtractorType.staticEmbedding](./staticembedding.md)
   A feature extractor that uses the standard, built-in word embeddings.
-- [MLTextClassifier.FeatureExtractorType.bertEmbedding](mltextclassifier/featureextractortype/bertembedding.md)
+- [MLTextClassifier.FeatureExtractorType.bertEmbedding](./bertembedding.md)
   A feature extractor that provides BERT contextual word embeddings.
-- [MLTextClassifier.FeatureExtractorType.elmoEmbedding](mltextclassifier/featureextractortype/elmoembedding.md)
+- [MLTextClassifier.FeatureExtractorType.elmoEmbedding](./elmoembedding.md)
   A feature extractor that provides ELMo contextual word embeddings.
-- [MLTextClassifier.FeatureExtractorType.dynamicEmbedding](mltextclassifier/featureextractortype/dynamicembedding.md)
+- [MLTextClassifier.FeatureExtractorType.dynamicEmbedding](./dynamicembedding.md)
   A feature extractor that provides embeddings for words, based on their in-context use.
 
 

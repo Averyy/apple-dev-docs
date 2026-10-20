@@ -1,7 +1,8 @@
 # MTLTextureViewPool
 
 **Framework**: Metal  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A pool of lightweight texture views.
 
@@ -19,37 +20,42 @@ A pool of lightweight texture views.
 protocol MTLTextureViewPool : MTLResourceViewPool
 ```
 
+```objc
+@protocol MTLTextureViewPool <MTLResourceViewPool>
+```
+
 ## Mentions
 
-- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
+- [Understanding the Metal 4 core API](./understanding-the-metal-4-core-api.md)
 
 #### Overview
 
-Use texture view pools to create lightweight texture view objects of [`MTLTexture`](mtltexture.md) and [`MTLBuffer`](mtlbuffer.md) instances.
+Use texture view pools to create lightweight texture view objects of [`MTLTexture`](./mtltexture.md) and [`MTLBuffer`](./mtlbuffer.md) instances.
 
 ## Topics
 
 ### Instance Methods
-- [func setTextureView(buffer: any MTLBuffer, descriptor: MTLTextureDescriptor, offset: Int, bytesPerRow: Int, index: Int) -> MTLResourceID](mtltextureviewpool/settextureview(buffer:descriptor:offset:bytesperrow:index:).md)
+- [func setTextureView(buffer: any MTLBuffer, descriptor: MTLTextureDescriptor, offset: Int, bytesPerRow: Int, index: Int) -> MTLResourceID](./mtltextureviewpool/settextureview%28buffer,descriptor,offset,bytesperrow,index%29.md)
   Creates a new lightweight texture view of a buffer.
-- [func setTextureView(texture: any MTLTexture, descriptor: MTLTextureViewDescriptor, index: Int) -> MTLResourceID](mtltextureviewpool/settextureview(texture:descriptor:index:).md)
+- [func setTextureView(texture: any MTLTexture, descriptor: MTLTextureViewDescriptor, index: Int) -> MTLResourceID](./mtltextureviewpool/settextureview%28texture,descriptor,index%29.md)
   Creates a new lightweight texture view.
-- [func setTextureView(texture: any MTLTexture, index: Int) -> MTLResourceID](mtltextureviewpool/settextureview(texture:index:).md)
+- [func setTextureView(texture: any MTLTexture, index: Int) -> MTLResourceID](./mtltextureviewpool/settextureview%28texture,index%29.md)
   Copies a default texture view to a slot in this texture view pool at an index provided.
 
 ## Relationships
 
 ### Inherits From
-- [MTLResourceViewPool](mtlresourceviewpool.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [MTLResourceViewPool](./mtlresourceviewpool.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol MTLResourceViewPool](mtlresourceviewpool.md)
+### View pools
+- [protocol MTLResourceViewPool](./mtlresourceviewpool.md)
   Contains views over resources of a specific type, and allows you to manage those views.
-- [class MTLResourceViewPoolDescriptor](mtlresourceviewpooldescriptor.md)
+- [class MTLResourceViewPoolDescriptor](./mtlresourceviewpooldescriptor.md)
   Provides parameters for creating a resource view pool.
-- [class MTLTextureViewDescriptor](mtltextureviewdescriptor.md)
+- [class MTLTextureViewDescriptor](./mtltextureviewdescriptor.md)
 
 
 ---

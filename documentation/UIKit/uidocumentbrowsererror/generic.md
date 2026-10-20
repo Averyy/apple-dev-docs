@@ -1,7 +1,8 @@
 # generic
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An unspecified error.
 
@@ -19,9 +20,10 @@ static var generic: UIDocumentBrowserError.Code { get }
 
 ## See Also
 
-- [static var noLocationAvailable: UIDocumentBrowserError.Code](uidocumentbrowsererror/nolocationavailable.md)
+### Error codes
+- [static var noLocationAvailable: UIDocumentBrowserError.Code](./nolocationavailable.md)
   An error indicating that no location exists.
-- [UIDocumentBrowserError.Code](uidocumentbrowsererror/code.md)
+- [UIDocumentBrowserError.Code](./code.md)
   The error codes for document browser errors.
 
 

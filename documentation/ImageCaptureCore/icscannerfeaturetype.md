@@ -1,7 +1,8 @@
 # ICScannerFeatureType
 
 **Framework**: ImageCaptureCore  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The types of scanner features.
 
@@ -14,41 +15,46 @@ The types of scanner features.
 enum ICScannerFeatureType
 ```
 
+```c
+enum ICScannerFeatureType : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [ICScannerFeatureType.boolean](icscannerfeaturetype/boolean.md)
+- [ICScannerFeatureType.boolean](./icscannerfeaturetype/boolean.md)
   A feature with a value of YES or NO.
-- [ICScannerFeatureType.enumeration](icscannerfeaturetype/enumeration.md)
+- [ICScannerFeatureType.enumeration](./icscannerfeaturetype/enumeration.md)
   A feature that can have one of several discrete values, strings, or numbers.
-- [ICScannerFeatureType.range](icscannerfeaturetype/range.md)
+- [ICScannerFeatureType.range](./icscannerfeaturetype/range.md)
   A feature with a value that lies within a range.
-- [ICScannerFeatureType.template](icscannerfeaturetype/template.md)
+- [ICScannerFeatureType.template](./icscannerfeaturetype/template.md)
   A group of one or more rectangular scan areas that can be used with a scanner functional unit.
 ### Initializers
-- [init?(rawValue: UInt)](icscannerfeaturetype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./icscannerfeaturetype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class ICScannerFeature](icscannerfeature.md)
+### Features
+- [class ICScannerFeature](./icscannerfeature.md)
   An abstract class that describes a scanner feature.
-- [class ICScannerFeatureBoolean](icscannerfeatureboolean.md)
+- [class ICScannerFeatureBoolean](./icscannerfeatureboolean.md)
   A feature with a value of `YES` or `NO`.
-- [class ICScannerFeatureEnumeration](icscannerfeatureenumeration.md)
+- [class ICScannerFeatureEnumeration](./icscannerfeatureenumeration.md)
   A feature that can have one of several discrete values, strings or numbers.
-- [class ICScannerFeatureRange](icscannerfeaturerange.md)
+- [class ICScannerFeatureRange](./icscannerfeaturerange.md)
   A feature with a value that lies within a range.
-- [class ICScannerFeatureTemplate](icscannerfeaturetemplate.md)
+- [class ICScannerFeatureTemplate](./icscannerfeaturetemplate.md)
   A group of one or more rectangular scan areas that can be used with a scanner functional unit.
 
 

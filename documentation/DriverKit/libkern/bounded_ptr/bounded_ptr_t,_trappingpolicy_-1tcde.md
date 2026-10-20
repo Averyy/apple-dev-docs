@@ -1,17 +1,18 @@
 # bounded_ptr<T, TrappingPolicy>
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Constructor
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 bounded_ptr<T, TrappingPolicy>(const bounded_ptr<U, Policy> & other);
 ```
 

@@ -1,7 +1,8 @@
 # strokePathID
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identity of the stroke path.
 
@@ -16,6 +17,10 @@ The unique identity of the stroke path.
 
 ```swift
 var strokePathID: UUID { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSUUID * strokePathID;
 ```
 
 #### Discussion

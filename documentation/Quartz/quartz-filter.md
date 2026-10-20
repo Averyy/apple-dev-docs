@@ -1,15 +1,16 @@
 # Quartz Filter
 
-**Framework**: Quartz
+**Framework**: Quartz  
+**Role**: API Collection
 
 ## Topics
 
 ### Classes
-- [class QuartzFilter](quartzfilter.md)
-- [class QuartzFilterManager](quartzfiltermanager.md)
-- [class QuartzFilterView](quartzfilterview.md)
+- [class QuartzFilter](./quartzfilter.md)
+- [class QuartzFilterManager](./quartzfiltermanager.md)
+- [class QuartzFilterView](./quartzfilterview.md)
 ### Reference
-- [Quartz Filter Constants](quartz-filter-constants.md)
+- [Quartz Filter Constants](./quartz-filter-constants.md)
 
 
 ---

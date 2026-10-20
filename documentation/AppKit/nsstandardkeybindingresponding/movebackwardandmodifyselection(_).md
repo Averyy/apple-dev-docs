@@ -1,12 +1,13 @@
 # moveBackwardAndModifySelection(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Extends the selection to include the content before the current selection.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,22 @@ Extends the selection to include the content before the current selection.
 optional func moveBackwardAndModifySelection(_ sender: Any?)
 ```
 
+```objc
+- (void) moveBackwardAndModifySelection:(id) sender;
+```
+
 ## See Also
 
-- [func moveDownAndModifySelection(Any?)](nsstandardkeybindingresponding/movedownandmodifyselection(_:).md)
+### Modifying the Selection
+- [func moveDownAndModifySelection(Any?)](./movedownandmodifyselection%28_%29.md)
   Extends the selection to include the content below the current selection.
-- [func moveForwardAndModifySelection(Any?)](nsstandardkeybindingresponding/moveforwardandmodifyselection(_:).md)
+- [func moveForwardAndModifySelection(Any?)](./moveforwardandmodifyselection%28_%29.md)
   Extends the selection to include the content after the current selection.
-- [func moveLeftAndModifySelection(Any?)](nsstandardkeybindingresponding/moveleftandmodifyselection(_:).md)
+- [func moveLeftAndModifySelection(Any?)](./moveleftandmodifyselection%28_%29.md)
   Extends the selection to include the content to the left of the current selection.
-- [func moveRightAndModifySelection(Any?)](nsstandardkeybindingresponding/moverightandmodifyselection(_:).md)
+- [func moveRightAndModifySelection(Any?)](./moverightandmodifyselection%28_%29.md)
   Extends the selection to include the content to the right of the current selection.
-- [func moveUpAndModifySelection(Any?)](nsstandardkeybindingresponding/moveupandmodifyselection(_:).md)
+- [func moveUpAndModifySelection(Any?)](./moveupandmodifyselection%28_%29.md)
   Extends the selection to include the content above the current selection.
 
 

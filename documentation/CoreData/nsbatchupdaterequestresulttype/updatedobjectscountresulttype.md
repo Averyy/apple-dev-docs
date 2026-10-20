@@ -1,7 +1,8 @@
 # NSBatchUpdateRequestResultType.updatedObjectsCountResultType
 
 **Framework**: Core Data  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates the return type is the number of updated rows.
 
@@ -10,7 +11,7 @@ A value that indicates the return type is the number of updated rows.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,11 +21,16 @@ A value that indicates the return type is the number of updated rows.
 case updatedObjectsCountResultType
 ```
 
+```c
+NSUpdatedObjectsCountResultType
+```
+
 ## See Also
 
-- [NSBatchUpdateRequestResultType.statusOnlyResultType](nsbatchupdaterequestresulttype/statusonlyresulttype.md)
+### Request Types
+- [NSBatchUpdateRequestResultType.statusOnlyResultType](./statusonlyresulttype.md)
   A value that indicates the return type is a Boolean value representing whether the batch-update request succeeds.
-- [NSBatchUpdateRequestResultType.updatedObjectIDsResultType](nsbatchupdaterequestresulttype/updatedobjectidsresulttype.md)
+- [NSBatchUpdateRequestResultType.updatedObjectIDsResultType](./updatedobjectidsresulttype.md)
   A value that indicates the return type is an array of object IDs that corresponds to the updated rows.
 
 

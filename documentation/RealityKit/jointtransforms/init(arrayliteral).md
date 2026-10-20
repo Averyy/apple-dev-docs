@@ -1,7 +1,8 @@
 # init(arrayLiteral:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a collection of animatable transforms using the argument elements for a single skeletal pose.
 
@@ -11,7 +12,7 @@ Initializes a collection of animatable transforms using the argument elements fo
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,9 +26,10 @@ init(arrayLiteral elements: Transform...)
 
 ## See Also
 
-- [init()](jointtransforms/init.md)
+### Creating joint transforms
+- [init()](./init%28%29.md)
   Initializes a collection of animatable transforms for a single skeletal pose.
-- [init<S>(S)](jointtransforms/init(_:).md)
+- [init<S>(S)](./init%28_%29.md)
   Initializes a collection of transforms of a specific type for a single skeletal pose.
 
 

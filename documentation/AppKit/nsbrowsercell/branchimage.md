@@ -1,17 +1,22 @@
 # branchImage
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the default image for branch cells in a browser.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class var branchImage: NSImage? { get }
+```
+
+```objc
+@property (class, strong, readonly, nullable) NSImage * branchImage;
 ```
 
 #### Return Value
@@ -24,9 +29,11 @@ Override this method if you want a different image. To have a branch `NSBrowserC
 
 ## See Also
 
-- [var alternateImage: NSImage?](nsbrowsercell/alternateimage.md)
+### Related Documentation
+- [var alternateImage: NSImage?](./alternateimage.md)
   The browser cell’s image for the highlighted state.
-- [class var highlightedBranchImage: NSImage?](nsbrowsercell/highlightedbranchimage.md)
+### Getting Browser Cell Information
+- [class var highlightedBranchImage: NSImage?](./highlightedbranchimage.md)
   Returns the default image for branch browser cells that are highlighted.
 
 

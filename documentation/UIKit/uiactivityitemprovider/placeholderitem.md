@@ -1,7 +1,8 @@
 # placeholderItem
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The placeholder object you specified at initialization time.
 
@@ -17,11 +18,16 @@ The placeholder object you specified at initialization time.
 var placeholderItem: Any? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) id placeholderItem;
+```
+
 ## See Also
 
-- [var item: Any](uiactivityitemprovider/item.md)
+### Accessing the provider attributes
+- [var item: Any](./item.md)
   Generates and returns the actual data-bearing object.
-- [var activityType: UIActivity.ActivityType?](uiactivityitemprovider/activitytype.md)
+- [var activityType: UIActivity.ActivityType?](./activitytype.md)
   The type of the activity object that is expecting the data.
 
 

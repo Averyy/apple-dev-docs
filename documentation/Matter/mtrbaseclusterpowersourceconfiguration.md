@@ -1,7 +1,8 @@
 # MTRBaseClusterPowerSourceConfiguration
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,61 +19,65 @@
 class MTRBaseClusterPowerSourceConfiguration
 ```
 
+```objc
+@interface MTRBaseClusterPowerSourceConfiguration : MTRGenericBaseCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRBaseDevice, endpoint: UInt16, queue: dispatch_queue_t)](mtrbaseclusterpowersourceconfiguration/init(device:endpoint:queue:).md)
-- [init?(device: MTRBaseDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrbaseclusterpowersourceconfiguration/init(device:endpointid:queue:).md)
+- [init?(device: MTRBaseDevice, endpoint: UInt16, queue: dispatch_queue_t)](./mtrbaseclusterpowersourceconfiguration/init%28device,endpoint,queue%29.md)
+- [init?(device: MTRBaseDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrbaseclusterpowersourceconfiguration/init%28device,endpointid,queue%29.md)
 ### Instance Methods
-- [func readAttributeAcceptedCommandList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/readattributeacceptedcommandlist(completion:).md)
-- [func readAttributeAcceptedCommandList(completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/readattributeacceptedcommandlist(completionhandler:).md)
-- [func readAttributeAttributeList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/readattributeattributelist(completion:).md)
-- [func readAttributeAttributeList(completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/readattributeattributelist(completionhandler:).md)
-- [func readAttributeClusterRevision(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/readattributeclusterrevision(completion:).md)
-- [func readAttributeClusterRevision(completionHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/readattributeclusterrevision(completionhandler:).md)
-- [func readAttributeFeatureMap(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/readattributefeaturemap(completion:).md)
-- [func readAttributeFeatureMap(completionHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/readattributefeaturemap(completionhandler:).md)
-- [func readAttributeGeneratedCommandList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/readattributegeneratedcommandlist(completion:).md)
-- [func readAttributeGeneratedCommandList(completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/readattributegeneratedcommandlist(completionhandler:).md)
-- [func readAttributeSources(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/readattributesources(completion:).md)
-- [func readAttributeSources(completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/readattributesources(completionhandler:).md)
-- [func subscribeAttributeAcceptedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/subscribeattributeacceptedcommandlist(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeAcceptedCommandList(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/subscribeattributeacceptedcommandlist(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeAttributeList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/subscribeattributeattributelist(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeAttributeList(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/subscribeattributeattributelist(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeClusterRevision(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/subscribeattributeclusterrevision(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeClusterRevision(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/subscribeattributeclusterrevision(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeFeatureMap(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/subscribeattributefeaturemap(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeFeatureMap(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/subscribeattributefeaturemap(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeGeneratedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/subscribeattributegeneratedcommandlist(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeGeneratedCommandList(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/subscribeattributegeneratedcommandlist(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeSources(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/subscribeattributesources(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeSources(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/subscribeattributesources(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
+- [func readAttributeAcceptedCommandList(completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/readattributeacceptedcommandlist%28completion%29.md)
+- [func readAttributeAcceptedCommandList(completionHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/readattributeacceptedcommandlist%28completionhandler%29.md)
+- [func readAttributeAttributeList(completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/readattributeattributelist%28completion%29.md)
+- [func readAttributeAttributeList(completionHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/readattributeattributelist%28completionhandler%29.md)
+- [func readAttributeClusterRevision(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/readattributeclusterrevision%28completion%29.md)
+- [func readAttributeClusterRevision(completionHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/readattributeclusterrevision%28completionhandler%29.md)
+- [func readAttributeFeatureMap(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/readattributefeaturemap%28completion%29.md)
+- [func readAttributeFeatureMap(completionHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/readattributefeaturemap%28completionhandler%29.md)
+- [func readAttributeGeneratedCommandList(completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/readattributegeneratedcommandlist%28completion%29.md)
+- [func readAttributeGeneratedCommandList(completionHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/readattributegeneratedcommandlist%28completionhandler%29.md)
+- [func readAttributeSources(completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/readattributesources%28completion%29.md)
+- [func readAttributeSources(completionHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/readattributesources%28completionhandler%29.md)
+- [func subscribeAttributeAcceptedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/subscribeattributeacceptedcommandlist%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeAcceptedCommandList(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/subscribeattributeacceptedcommandlist%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeAttributeList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/subscribeattributeattributelist%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeAttributeList(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/subscribeattributeattributelist%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeClusterRevision(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/subscribeattributeclusterrevision%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeClusterRevision(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/subscribeattributeclusterrevision%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeFeatureMap(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/subscribeattributefeaturemap%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeFeatureMap(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/subscribeattributefeaturemap%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeGeneratedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/subscribeattributegeneratedcommandlist%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeGeneratedCommandList(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/subscribeattributegeneratedcommandlist%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeSources(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/subscribeattributesources%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeSources(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/subscribeattributesources%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
 ### Type Methods
-- [class func readAttributeAcceptedCommandList(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/readattributeacceptedcommandlist(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeAcceptedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/readattributeacceptedcommandlist(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeAttributeList(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/readattributeattributelist(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeAttributeList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/readattributeattributelist(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeClusterRevision(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/readattributeclusterrevision(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeClusterRevision(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/readattributeclusterrevision(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeFeatureMap(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/readattributefeaturemap(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeFeatureMap(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/readattributefeaturemap(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeGeneratedCommandList(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/readattributegeneratedcommandlist(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeGeneratedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/readattributegeneratedcommandlist(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeSources(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/readattributesources(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeSources(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterpowersourceconfiguration/readattributesources(withclusterstatecache:endpoint:queue:completion:).md)
+- [class func readAttributeAcceptedCommandList(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/readattributeacceptedcommandlist%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeAcceptedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/readattributeacceptedcommandlist%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeAttributeList(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/readattributeattributelist%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeAttributeList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/readattributeattributelist%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeClusterRevision(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/readattributeclusterrevision%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeClusterRevision(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/readattributeclusterrevision%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeFeatureMap(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/readattributefeaturemap%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeFeatureMap(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/readattributefeaturemap%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeGeneratedCommandList(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/readattributegeneratedcommandlist%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeGeneratedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/readattributegeneratedcommandlist%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeSources(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/readattributesources%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeSources(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterpowersourceconfiguration/readattributesources%28withclusterstatecache,endpoint,queue,completion%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericBaseCluster](mtrgenericbasecluster.md)
+- [MTRGenericBaseCluster](./mtrgenericbasecluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

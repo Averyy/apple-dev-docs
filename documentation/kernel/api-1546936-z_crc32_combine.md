@@ -1,14 +1,15 @@
 # z_crc32_combine
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 uLong z_crc32_combine(uLong crc1, uLong crc2, long len2);
 ```
 

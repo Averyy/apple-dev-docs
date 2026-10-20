@@ -1,7 +1,8 @@
 # stateHash
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var stateHash: Data { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSData * stateHash;
 ```
 
 #### Discussion

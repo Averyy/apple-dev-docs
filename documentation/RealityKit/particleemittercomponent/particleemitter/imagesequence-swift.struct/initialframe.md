@@ -1,7 +1,8 @@
 # initialFrame
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 First frame of the sprite sheet animation.
 

@@ -1,7 +1,8 @@
 # occlusionState
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The occlusion state of the window.
 
@@ -14,13 +15,18 @@ The occlusion state of the window.
 var occlusionState: NSWindow.OcclusionState { get }
 ```
 
+```objc
+@property (readonly) NSWindowOcclusionState occlusionState;
+```
+
 #### Discussion
 
-When the value of this property is [`visible`](nswindow/occlusionstate-swift.struct/visible.md), at least part of the window is visible; otherwise, the window is fully occluded.
+When the value of this property is [`visible`](./occlusionstate-swift.struct/visible.md), at least part of the window is visible; otherwise, the window is fully occluded.
 
 ## See Also
 
-- [var isVisible: Bool](nswindow/isvisible.md)
+### Managing Window Visibility and Occlusion State
+- [var isVisible: Bool](./isvisible.md)
   A Boolean value that indicates whether the window is visible onscreen (even when it’s obscured by other windows).
 
 

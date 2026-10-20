@@ -1,7 +1,8 @@
 # tensorShape()
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a shape operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a shape operation to the current graph.
 ```swift
 func tensorShape() -> BNNSGraph.Builder.Tensor<Int32>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 #### Discussion
 

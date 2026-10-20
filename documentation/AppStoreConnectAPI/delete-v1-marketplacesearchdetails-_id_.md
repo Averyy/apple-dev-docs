@@ -1,7 +1,8 @@
 # Delete a marketplace search detail url
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Delete search detail URL for the alternative marketplace.
 
@@ -14,7 +15,7 @@ Delete search detail URL for the alternative marketplace.
 
 **Request**:
 
-```None
+```
 DELETE https://api.appstoreconnect.apple.com/v1/marketplaceSearchDetails/{id}
 ```
 
@@ -30,18 +31,30 @@ DELETE https://api.appstoreconnect.apple.com/v1/marketplaceSearchDetails/{id}
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `marketplace search details` resource ID from the [`Read the marketplace search detail url`](get-v1-apps-_id_-marketplacesearchdetail.md) response.
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `marketplace search details` resource ID from the [`Read the marketplace search detail url`](./get-v1-apps-_id_-marketplacesearchdetail.md) response.
+
+## Responses
+
+- `204` No Content
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Building a searchable catalog for your marketplace app for inclusion in Spotlight](building-a-searchable-catalog-for-your-marketplace-app-for-inclusion-in-spotlight.md)
+### Managing search URLs
+- [Building a searchable catalog for your marketplace app for inclusion in Spotlight](./building-a-searchable-catalog-for-your-marketplace-app-for-inclusion-in-spotlight.md)
   Set up and build your alternative marketplace’s searchable index.
-- [Add a marketplace search detail url](post-v1-marketplacesearchdetails.md)
+- [Add a marketplace search detail url](./post-v1-marketplacesearchdetails.md)
   Add a search detail URL for the alternative marketplace.
-- [Read the marketplace search detail url](get-v1-apps-_id_-marketplacesearchdetail.md)
+- [Read the marketplace search detail url](./get-v1-apps-_id_-marketplacesearchdetail.md)
   Get search detail URL for the alternative marketplace.
-- [Get the marketplace search detail ID for an app](get-v1-apps-_id_-relationships-marketplacesearchdetail.md)
-- [Modify a marketplace search detail url](patch-v1-marketplacesearchdetails-_id_.md)
+- [Get the marketplace search detail ID for an app](./get-v1-apps-_id_-relationships-marketplacesearchdetail.md)
+- [Modify a marketplace search detail url](./patch-v1-marketplacesearchdetails-_id_.md)
   Update the search detail URL for the alternative marketplace.
 
 

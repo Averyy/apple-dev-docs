@@ -1,7 +1,8 @@
 # rowAlignment
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12+
@@ -12,13 +13,18 @@
 var rowAlignment: NSGridRow.Alignment { get set }
 ```
 
+```objc
+@property NSGridRowAlignment rowAlignment;
+```
+
 ## See Also
 
-- [var topPadding: CGFloat](nsgridrow/toppadding.md)
-- [var bottomPadding: CGFloat](nsgridrow/bottompadding.md)
-- [var height: CGFloat](nsgridrow/height.md)
-- [var yPlacement: NSGridCell.Placement](nsgridrow/yplacement.md)
-- [NSGridRow.Alignment](nsgridrow/alignment.md)
+### Formatting the Row
+- [var topPadding: CGFloat](./toppadding.md)
+- [var bottomPadding: CGFloat](./bottompadding.md)
+- [var height: CGFloat](./height.md)
+- [var yPlacement: NSGridCell.Placement](./yplacement.md)
+- [NSGridRow.Alignment](./alignment.md)
 
 
 ---

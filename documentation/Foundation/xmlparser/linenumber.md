@@ -1,7 +1,8 @@
 # lineNumber
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The line number of the XML document being processed by the parser.
 
@@ -20,17 +21,22 @@ The line number of the XML document being processed by the parser.
 var lineNumber: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger lineNumber;
+```
+
 #### Discussion
 
 You may access this property once a parsing operation has begun or after an error occurs.
 
 ## See Also
 
-- [var columnNumber: Int](xmlparser/columnnumber.md)
+### Obtaining Parser State
+- [var columnNumber: Int](./columnnumber.md)
   The column number of the XML document being processed by the parser.
-- [var publicID: String?](xmlparser/publicid.md)
+- [var publicID: String?](./publicid.md)
   The public identifier of the external entity referenced in the XML document.
-- [var systemID: String?](xmlparser/systemid.md)
+- [var systemID: String?](./systemid.md)
   The system identifier of the external entity referenced in the XML document.
 
 

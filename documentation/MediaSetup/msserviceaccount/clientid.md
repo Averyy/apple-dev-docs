@@ -1,7 +1,8 @@
 # clientID
 
 **Framework**: Media Setup  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A user identifier for the token request.
 
@@ -17,19 +18,24 @@ A user identifier for the token request.
 var clientID: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSString * clientID;
+```
+
 #### Discussion
 
 The Media Setup framework uses the `clientID` to create a token request. You can choose the identifier format, but the identifier must be unique to the current account. You can provide a new identifier each time the user begins HomePod setup.
 
 ## See Also
 
-- [var authorizationTokenURL: URL?](msserviceaccount/authorizationtokenurl.md)
+### Providing Parameters for an OAuth Request
+- [var authorizationTokenURL: URL?](./authorizationtokenurl.md)
   A URL the system can access to request an OAuth token for the user’s HomePod speakers.
-- [var authorizationScope: String?](msserviceaccount/authorizationscope.md)
+- [var authorizationScope: String?](./authorizationscope.md)
   A list of permissions for the token request.
-- [var clientSecret: String?](msserviceaccount/clientsecret.md)
+- [var clientSecret: String?](./clientsecret.md)
   A string that authenticates the user’s setup request.
-- [var configurationURL: URL?](msserviceaccount/configurationurl.md)
+- [var configurationURL: URL?](./configurationurl.md)
   The path to access the configuration endpoint of your streaming media service for HomePod.
 
 

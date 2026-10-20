@@ -1,7 +1,8 @@
 # uuid
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The UUID that the observed beacon transmitted.
 
@@ -17,9 +18,13 @@ The UUID that the observed beacon transmitted.
 var uuid: UUID { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSUUID * UUID;
+```
+
 ## Mentions
 
-- [Determining the proximity to an iBeacon device](determining-the-proximity-to-an-ibeacon-device.md)
+- [Determining the proximity to an iBeacon device](../determining-the-proximity-to-an-ibeacon-device.md)
 
 #### Discussion
 
@@ -27,11 +32,12 @@ The UUID is the most significant beacon identity characteristic.  Multiple beaco
 
 ## See Also
 
-- [var major: NSNumber](clbeacon/major.md)
+### Getting the beacon identity
+- [var major: NSNumber](./major.md)
   The major value that the observed beacon transmitted.
-- [var minor: NSNumber](clbeacon/minor.md)
+- [var minor: NSNumber](./minor.md)
   The minor value that the observed beacon transmitted.
-- [var proximityUUID: UUID](clbeacon/proximityuuid.md)
+- [var proximityUUID: UUID](./proximityuuid.md)
   The proximity ID of the beacon.
 
 

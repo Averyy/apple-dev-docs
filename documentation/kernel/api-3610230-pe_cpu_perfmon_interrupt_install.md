@@ -1,14 +1,15 @@
 # PE_cpu_perfmon_interrupt_install_handler
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t PE_cpu_perfmon_interrupt_install_handler(perfmon_interrupt_handler_func handler);
 ```
 

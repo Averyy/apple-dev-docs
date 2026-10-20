@@ -1,7 +1,8 @@
 # SubAdministrativeArea
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The secondary administrative divisions of countries or regions.
 
@@ -10,21 +11,22 @@ The secondary administrative divisions of countries or regions.
 
 ## Declaration
 
-```swift
+```
 readonly SubAdministrativeArea: "SubAdministrativeArea";
 ```
 
 ## See Also
 
-- [AdministrativeArea](addresscategory/administrativearea.md)
+### Category values
+- [AdministrativeArea](./administrativearea.md)
   The primary administrative divisions of countries or regions.
-- [Country](addresscategory/country.md)
+- [Country](./country.md)
   Countries and regions.
-- [Locality](addresscategory/locality.md)
+- [Locality](./locality.md)
   Local administrative divisions, postal cities, and populated places.
-- [PostalCode](addresscategory/postalcode.md)
+- [PostalCode](./postalcode.md)
   An address code for mail sorting and delivery.
-- [SubLocality](addresscategory/sublocality.md)
+- [SubLocality](./sublocality.md)
   Local administrative subdivisions, postal city subdistricts, and neighborhoods.
 
 

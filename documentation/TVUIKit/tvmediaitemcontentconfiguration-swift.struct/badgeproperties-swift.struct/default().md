@@ -1,7 +1,8 @@
 # default()
 
 **Framework**: TVUIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates the default configuration for a badge.
 
@@ -16,11 +17,12 @@ static func `default`() -> TVMediaItemContentConfiguration.BadgeProperties
 
 #### Return Value
 
-A new [`TVMediaItemContentConfiguration.BadgeProperties`](tvmediaitemcontentconfiguration-swift.struct/badgeproperties-swift.struct.md) instance.
+A new [`TVMediaItemContentConfiguration.BadgeProperties`](../badgeproperties-swift.struct.md) instance.
 
 ## See Also
 
-- [static func liveContent() -> TVMediaItemContentConfiguration.BadgeProperties](tvmediaitemcontentconfiguration-swift.struct/badgeproperties-swift.struct/livecontent.md)
+### Creating a Default Configuration
+- [static func liveContent() -> TVMediaItemContentConfiguration.BadgeProperties](./livecontent%28%29.md)
   Creates the default configuration for a badge representing live content.
 
 

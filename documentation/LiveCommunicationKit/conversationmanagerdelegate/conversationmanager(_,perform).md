@@ -2,6 +2,7 @@
 
 **Framework**: LiveCommunicationKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that the system requires a conversation action.
@@ -26,7 +27,8 @@ func conversationManager(_ manager: ConversationManager, perform action: Convers
 
 ## See Also
 
-- [func conversationManager(ConversationManager, timedOutPerforming: ConversationAction)](conversationmanagerdelegate/conversationmanager(_:timedoutperforming:).md)
+### Performing actions
+- [func conversationManager(ConversationManager, timedOutPerforming: ConversationAction)](./conversationmanager%28_,timedoutperforming%29.md)
   Tells the delegate that a conversation action wasn’t completed and timed out.
 
 

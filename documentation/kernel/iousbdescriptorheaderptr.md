@@ -1,7 +1,8 @@
 # IOUSBDescriptorHeaderPtr
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 A pointer to a USB descriptor header.
 
@@ -10,19 +11,20 @@ A pointer to a USB descriptor header.
 
 ## Declaration
 
-```swift
+```c
 typedef IOUSBDescriptorHeader *IOUSBDescriptorHeaderPtr;
 ```
 
 ## See Also
 
-- [IOUSBDescriptorHeader](iousbdescriptorheader.md)
+### Descriptor Fundamentals
+- [IOUSBDescriptorHeader](./iousbdescriptorheader.md)
   The base descriptor header.
-- [IOUSBDescriptor](iousbdescriptor.md)
+- [IOUSBDescriptor](./iousbdescriptor.md)
   The base descriptor type.
-- [tIOUSBDescriptorType](tiousbdescriptortype.md)
+- [tIOUSBDescriptorType](./tiousbdescriptortype.md)
   Constants describing the types of descriptors available for a USB device.
-- [tIOUSBDescriptorSize](tiousbdescriptorsize.md)
+- [tIOUSBDescriptorSize](./tiousbdescriptorsize.md)
   Constants for the number of bytes in descriptor structures.
 
 

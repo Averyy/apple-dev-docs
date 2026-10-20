@@ -1,7 +1,8 @@
 # maximumPanelItemsCount
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The maximum number of items the panel is able to display.
 
@@ -14,6 +15,10 @@ The maximum number of items the panel is able to display.
 
 ```swift
 class var maximumPanelItemsCount: Int { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) NSInteger maximumPanelItemsCount;
 ```
 
 #### Discussion

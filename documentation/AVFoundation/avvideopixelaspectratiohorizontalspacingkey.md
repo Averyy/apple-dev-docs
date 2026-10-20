@@ -1,7 +1,8 @@
 # AVVideoPixelAspectRatioHorizontalSpacingKey
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key to access the pixel aspect ratio horizontal spacing.
 
@@ -19,19 +20,24 @@ A key to access the pixel aspect ratio horizontal spacing.
 let AVVideoPixelAspectRatioHorizontalSpacingKey: String
 ```
 
+```c
+extern NSString * const AVVideoPixelAspectRatioHorizontalSpacingKey;
+```
+
 #### Discussion
 
 The value for this key is an instance of `NSNumber`.
 
 ## See Also
 
-- [let AVVideoWidthKey: String](avvideowidthkey.md)
+### Geometry
+- [let AVVideoWidthKey: String](./avvideowidthkey.md)
   A key to access the width of the video in pixels.
-- [let AVVideoHeightKey: String](avvideoheightkey.md)
+- [let AVVideoHeightKey: String](./avvideoheightkey.md)
   A key to access the height of the video in pixels.
-- [let AVVideoPixelAspectRatioKey: String](avvideopixelaspectratiokey.md)
+- [let AVVideoPixelAspectRatioKey: String](./avvideopixelaspectratiokey.md)
   A key to access the video’s pixel aspect ratio.
-- [let AVVideoPixelAspectRatioVerticalSpacingKey: String](avvideopixelaspectratioverticalspacingkey.md)
+- [let AVVideoPixelAspectRatioVerticalSpacingKey: String](./avvideopixelaspectratioverticalspacingkey.md)
   A key to access the pixel aspect ratio vertical spacing.
 
 

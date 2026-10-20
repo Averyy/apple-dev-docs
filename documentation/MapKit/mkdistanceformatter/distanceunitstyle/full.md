@@ -1,7 +1,8 @@
 # MKDistanceFormatter.DistanceUnitStyle.full
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Spells out units in full.
 
@@ -20,19 +21,24 @@ Spells out units in full.
 case full
 ```
 
+```c
+MKDistanceFormatterUnitStyleFull
+```
+
 #### Discussion
 
 For example, your map displays “kilometer” instead of the abbreviation “km.”
 
 ## See Also
 
-- [MKDistanceFormatter.DistanceUnitStyle.default](mkdistanceformatter/distanceunitstyle/default.md)
+### Constants
+- [MKDistanceFormatter.DistanceUnitStyle.default](./default.md)
   Bases the determination to abbreviate on the current locale and user language settings.
-- [MKDistanceFormatter.DistanceUnitStyle.abbreviated](mkdistanceformatter/distanceunitstyle/abbreviated.md)
+- [MKDistanceFormatter.DistanceUnitStyle.abbreviated](./abbreviated.md)
   Abbreviates units.
-- [MKDistanceFormatter.DistanceUnitStyle.default](mkdistanceformatter/distanceunitstyle/default.md)
+- [MKDistanceFormatter.DistanceUnitStyle.default](./default.md)
   Bases the determination to abbreviate on the current locale and user language settings.
-- [MKDistanceFormatter.DistanceUnitStyle.abbreviated](mkdistanceformatter/distanceunitstyle/abbreviated.md)
+- [MKDistanceFormatter.DistanceUnitStyle.abbreviated](./abbreviated.md)
   Abbreviates units.
 
 

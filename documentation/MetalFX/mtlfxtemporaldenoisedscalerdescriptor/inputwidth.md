@@ -1,7 +1,8 @@
 # inputWidth
 
 **Framework**: MetalFX  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width, in pixels, of the input color texture for the denoiser scaler.
 
@@ -16,6 +17,10 @@ The width, in pixels, of the input color texture for the denoiser scaler.
 
 ```swift
 var inputWidth: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger inputWidth;
 ```
 
 

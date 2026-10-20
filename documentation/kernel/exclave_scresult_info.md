@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct exclave_scresult_info {
     ...
 };
@@ -17,8 +17,8 @@ struct exclave_scresult_info {
 ## Topics
 
 ### Instance Properties
-- [esc_flags](exclave_scresult_info/4316357-esc_flags.md)
-- [esc_id](exclave_scresult_info/4316358-esc_id.md)
+- [esc_flags](./exclave_scresult_info/api-4316357-esc_flags.md)
+- [esc_id](./exclave_scresult_info/api-4316358-esc_id.md)
 
 
 ---

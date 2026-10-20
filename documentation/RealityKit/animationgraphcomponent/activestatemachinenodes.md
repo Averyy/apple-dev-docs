@@ -1,7 +1,8 @@
 # activeStateMachineNodes
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The state machine nodes that were active during the most recent graph evaluation tick.
 
@@ -21,19 +22,20 @@ var activeStateMachineNodes: [AnimationGraphComponent.ActiveStateMachineNode] { 
 
 #### Discussion
 
-This is the typed view of [`activeNodes`](animationgraphcomponent/activenodes.md) filtered to [`AnimationGraphComponent.ActiveStateMachineNode`](animationgraphcomponent/activestatemachinenode.md).
+This is the typed view of [`activeNodes`](./activenodes.md) filtered to [`AnimationGraphComponent.ActiveStateMachineNode`](./activestatemachinenode.md).
 
 ## See Also
 
-- [var activeNodes: [any AnimationGraphComponent.ActiveNode]](animationgraphcomponent/activenodes.md)
+### Accessing active nodes
+- [var activeNodes: [any AnimationGraphComponent.ActiveNode]](./activenodes.md)
   Every node that contributed to the most recent graph evaluation tick.
-- [AnimationGraphComponent.ActiveNode](animationgraphcomponent/activenode.md)
+- [AnimationGraphComponent.ActiveNode](./activenode.md)
   Common debug information for any node that was active during the most recent graph evaluation tick.
-- [var activeClipNodes: [AnimationGraphComponent.ActiveClipNode]](animationgraphcomponent/activeclipnodes.md)
+- [var activeClipNodes: [AnimationGraphComponent.ActiveClipNode]](./activeclipnodes.md)
   The animation clip nodes that were active during the most recent graph evaluation tick.
-- [AnimationGraphComponent.ActiveClipNode](animationgraphcomponent/activeclipnode.md)
+- [AnimationGraphComponent.ActiveClipNode](./activeclipnode.md)
   Debug information for an active animation clip node within the graph.
-- [AnimationGraphComponent.ActiveStateMachineNode](animationgraphcomponent/activestatemachinenode.md)
+- [AnimationGraphComponent.ActiveStateMachineNode](./activestatemachinenode.md)
   Debug information for an active state machine node within the graph.
 
 

@@ -1,7 +1,8 @@
 # *(_:_:)
 
 **Framework**: Spatial  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns the rotatable entity that results from applying the rotatable entity.
 
@@ -11,7 +12,7 @@ Returns the rotatable entity that results from applying the rotatable entity.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -27,13 +28,14 @@ func * <T>(lhs: Rotation3D, rhs: T) -> T where T : Rotatable3D
 
 ## See Also
 
-- [static func * (Rotation3D, Rotation3D) -> Rotation3D](rotation3d/*(_:_:)-1tc8f.md)
+### Applying arithmetic operations
+- [static func * (Rotation3D, Rotation3D) -> Rotation3D](./rotation3d/star%28_,_%29-1tc8f.md)
   Returns the product of two rotations.
-- [static func * (Rotation3D, Double) -> Rotation3D](rotation3d/*(_:_:)-5dxqv.md)
+- [static func * (Rotation3D, Double) -> Rotation3D](./rotation3d/star%28_,_%29-5dxqv.md)
   Returns the spherical linear interpolation between the identity rotation and the left-hand-side rotation at the right-hand-side interpolation parameter.
-- [static func * (Double, Rotation3D) -> Rotation3D](rotation3d/*(_:_:)-9t389.md)
+- [static func * (Double, Rotation3D) -> Rotation3D](./rotation3d/star%28_,_%29-9t389.md)
   Returns the spherical linear interpolation between the identity rotation and the right-hand-side rotation at the left-hand-side interpolation parameter.
-- [static func *= (inout Rotation3D, Rotation3D)](rotation3d/*=(_:_:).md)
+- [static func *= (inout Rotation3D, Rotation3D)](./rotation3d/stareq%28_,_%29.md)
   Computes the product of two rotations and stores the result in the left-hand-side variable.
 
 

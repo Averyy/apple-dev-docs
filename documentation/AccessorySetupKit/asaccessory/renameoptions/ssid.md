@@ -1,7 +1,8 @@
 # ssid
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to change an accessory’s SSID along with its display name.
 
@@ -13,6 +14,10 @@ An option to change an accessory’s SSID along with its display name.
 
 ```swift
 static var ssid: ASAccessory.RenameOptions { get }
+```
+
+```c
+ASAccessoryRenameSSID
 ```
 
 

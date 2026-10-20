@@ -1,7 +1,8 @@
 # HMCharacteristicValueClosedCaptions
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The state for closed captions.
 
@@ -19,25 +20,29 @@ The state for closed captions.
 enum HMCharacteristicValueClosedCaptions
 ```
 
+```c
+enum HMCharacteristicValueClosedCaptions : NSInteger;
+```
+
 ## Topics
 
 ### Closed caption states
-- [HMCharacteristicValueClosedCaptions.disabled](hmcharacteristicvalueclosedcaptions/disabled.md)
+- [HMCharacteristicValueClosedCaptions.disabled](./hmcharacteristicvalueclosedcaptions/disabled.md)
   Closed captions is disabled.
-- [HMCharacteristicValueClosedCaptions.enabled](hmcharacteristicvalueclosedcaptions/enabled.md)
+- [HMCharacteristicValueClosedCaptions.enabled](./hmcharacteristicvalueclosedcaptions/enabled.md)
   Closed captions is enabled.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvalueclosedcaptions/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvalueclosedcaptions/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(accessoryData:bluetoothPeerIdentifier:)
 
 **Framework**: Nearby Interaction  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration for an accessory with the given Bluetooth peer identifier.
 
@@ -16,9 +17,13 @@ Creates a configuration for an accessory with the given Bluetooth peer identifie
 init(accessoryData: Data, bluetoothPeerIdentifier identifier: UUID) throws
 ```
 
+```objc
+- (instancetype) initWithAccessoryData:(NSData *) accessoryData bluetoothPeerIdentifier:(NSUUID *) identifier error:(NSError **) error;
+```
+
 ## Mentions
 
-- [Initiating and maintaining a session](initiating-and-maintaining-a-session.md)
+- [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md)
 
 #### Discussion
 
@@ -26,12 +31,13 @@ Use this initializer when your app interacts with a Bluetooth accessory that’s
 
 ## Parameters
 
-- `accessoryData`: The accessory’s configuration data formatted to the [`Ultra Wideband (UWB) third-party device specification`](https://developer.apple.comhttps://developer.apple.com/nearby-interaction).
-- `identifier`: The accessory’s Bluetooth peer identifier. For more information, see [`CBPeer`](https://developer.apple.com/documentation/corebluetooth/cbpeer) [`identifier`](https://developer.apple.com/documentation/corebluetooth/cbpeer/identifier).
+- `accessoryData`: The accessory’s configuration data formatted to the [Ultra Wideband (UWB) third-party device specification](https://developer.apple.com/nearby-interaction).
+- `identifier`: The accessory’s Bluetooth peer identifier. For more information, see [`CBPeer`](../../CoreBluetooth/cbpeer.md) [`identifier`](../../CoreBluetooth/cbpeer/identifier.md).
 
 ## See Also
 
-- [init(data: Data) throws](ninearbyaccessoryconfiguration/init(data:).md)
+### Creating a configuration for UWB accessories
+- [init(data: Data) throws](./init%28data%29.md)
   Creates a configuration for interaction between iPhone and third-party accessories.
 
 

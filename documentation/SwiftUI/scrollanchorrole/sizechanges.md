@@ -1,7 +1,8 @@
 # sizeChanges
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The role that influences how a scroll view should adjust its content offset when the scroll view’s content or container size changes.
 

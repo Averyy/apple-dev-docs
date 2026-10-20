@@ -1,7 +1,8 @@
 # Just
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher that emits an output to each subscriber just once, and then finishes.
 
@@ -22,44 +23,45 @@ struct Just<Output>
 
 #### Overview
 
-You can use a [`Just`](just.md) publisher to start a chain of publishers. A [`Just`](just.md) publisher is also useful when replacing a value with [`Publishers.Catch`](publishers/catch.md).
+You can use a [`Just`](./just.md) publisher to start a chain of publishers. A [`Just`](./just.md) publisher is also useful when replacing a value with [`Publishers.Catch`](./publishers/catch.md).
 
-In contrast with [`Result.Publisher`](https://developer.apple.com/documentation/swift/result/publisher-swift.struct), a [`Just`](just.md) publisher can’t fail with an error. And unlike [`Optional.Publisher`](https://developer.apple.com/documentation/swift/optional/publisher-swift.struct), a [`Just`](just.md) publisher always produces a value.
+In contrast with [`Result.Publisher`](../Swift/result/publisher-swift.struct.md), a [`Just`](./just.md) publisher can’t fail with an error. And unlike [`Optional.Publisher`](../Swift/optional/publisher-swift.struct.md), a [`Just`](./just.md) publisher always produces a value.
 
 ## Topics
 
 ### Creating a just ublisher
-- [init(Output)](just/init(_:).md)
+- [init(Output)](./just/init%28_%29.md)
   Initializes a publisher that emits the specified output just once.
 ### Inspecting publisher properties
-- [let output: Output](just/output.md)
+- [let output: Output](./just/output.md)
   The one element that the publisher emits.
 ### Comparing publishers
-- [static func == (Just<Output>, Just<Output>) -> Bool](just/==(_:_:).md)
+- [static func == (Just<Output>, Just<Output>) -> Bool](./just/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
 ### Applying operators
-- [Publisher Operators](just-publisher-operators.md)
+- [Publisher Operators](./just-publisher-operators.md)
   Methods that create downstream publishers or subscribers to act on the elements they receive.
 ### Default Implementations
-- [Equatable Implementations](just/equatable-implementations.md)
+- [Equatable Implementations](./just/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Publisher](publisher.md)
+- [Equatable](../Swift/equatable.md)
+- [Publisher](./publisher.md)
 
 ## See Also
 
-- [class Future](future.md)
+### Convenience Publishers
+- [class Future](./future.md)
   A publisher that eventually produces a single value and then finishes or fails.
-- [struct Deferred](deferred.md)
+- [struct Deferred](./deferred.md)
   A publisher that awaits subscription before running the supplied closure to create a publisher for the new subscriber.
-- [struct Empty](empty.md)
+- [struct Empty](./empty.md)
   A publisher that never publishes any values, and optionally finishes immediately.
-- [struct Fail](fail.md)
+- [struct Fail](./fail.md)
   A publisher that immediately terminates with the specified error.
-- [struct Record](record.md)
+- [struct Record](./record.md)
   A publisher that allows for recording a series of inputs and a completion, for later playback to each subscriber.
 
 

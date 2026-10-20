@@ -1,7 +1,8 @@
 # acquiring
 
 **Framework**: Synchronization  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An acquiring load synchronizes with a releasing operation whose value its reads. It ensures that the releasing and acquiring threads agree that all subsequent variable accesses on the acquiring thread happen after the atomic operation itself.
 

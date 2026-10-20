@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the current runtime environment supports plane detection providers.
 
@@ -16,13 +17,14 @@ static var isSupported: Bool { get }
 
 ## See Also
 
-- [init(alignments: [PlaneAnchor.Alignment])](planedetectionprovider/init(alignments:).md)
+### Detecting planes
+- [init(alignments: [PlaneAnchor.Alignment])](./init%28alignments%29.md)
   Creates a plane detection provider for the types of planes you want to detect.
-- [var allAnchors: [PlaneAnchor]](planedetectionprovider/allanchors.md)
+- [var allAnchors: [PlaneAnchor]](./allanchors.md)
   An array that contains all the plane provider’s anchors.
-- [var anchorUpdates: AnchorUpdateSequence<PlaneAnchor>](planedetectionprovider/anchorupdates.md)
+- [var anchorUpdates: AnchorUpdateSequence<PlaneAnchor>](./anchorupdates.md)
   A sequence of updates to planes a provider detects.
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](planedetectionprovider/requiredauthorizations.md)
+- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./requiredauthorizations.md)
   The types of authorizations necessary for detecting planes.
 
 

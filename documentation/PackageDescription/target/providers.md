@@ -1,7 +1,8 @@
 # providers
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The providers array for a system library target.
 
@@ -13,9 +14,10 @@ final let providers: [SystemPackageProvider]?
 
 ## See Also
 
-- [static func systemLibrary(name: String, path: String?, pkgConfig: String?, providers: [SystemPackageProvider]?) -> Target](target/systemlibrary(name:path:pkgconfig:providers:).md)
+### Creating a System Library Target
+- [static func systemLibrary(name: String, path: String?, pkgConfig: String?, providers: [SystemPackageProvider]?) -> Target](./systemlibrary%28name,path,pkgconfig,providers%29.md)
   Creates a system library target.
-- [let pkgConfig: String?](target/pkgconfig.md)
+- [let pkgConfig: String?](./pkgconfig.md)
   The name of the package configuration file, without extension, for the system library target.
 
 

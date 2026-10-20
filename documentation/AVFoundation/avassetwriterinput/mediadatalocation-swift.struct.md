@@ -1,7 +1,8 @@
 # AVAssetWriterInput.MediaDataLocation
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that indicates how to lay out and interleave media data.
 
@@ -19,37 +20,42 @@ A structure that indicates how to lay out and interleave media data.
 struct MediaDataLocation
 ```
 
+```c
+typedef NSString * AVAssetWriterInputMediaDataLocation;
+```
+
 ## Topics
 
 ### Media data locations
-- [static let interleavedWithMainMediaData: AVAssetWriterInput.MediaDataLocation](avassetwriterinput/mediadatalocation-swift.struct/interleavedwithmainmediadata.md)
+- [static let interleavedWithMainMediaData: AVAssetWriterInput.MediaDataLocation](./mediadatalocation-swift.struct/interleavedwithmainmediadata.md)
   A value that indicates to interleave the input’s media data with other media data.
-- [static let beforeMainMediaDataNotInterleaved: AVAssetWriterInput.MediaDataLocation](avassetwriterinput/mediadatalocation-swift.struct/beforemainmediadatanotinterleaved.md)
+- [static let beforeMainMediaDataNotInterleaved: AVAssetWriterInput.MediaDataLocation](./mediadatalocation-swift.struct/beforemainmediadatanotinterleaved.md)
   A value that indicates to use noninterleaved data, and write it before interleaved data.
-- [static let sparselyInterleavedWithMainMediaData: AVAssetWriterInput.MediaDataLocation](avassetwriterinput/mediadatalocation-swift.struct/sparselyinterleavedwithmainmediadata.md)
+- [static let sparselyInterleavedWithMainMediaData: AVAssetWriterInput.MediaDataLocation](./mediadatalocation-swift.struct/sparselyinterleavedwithmainmediadata.md)
   Indicates that there may be large segments of time without any media data from this track. When mediaDataLocation is set to this value, AVAssetWriter will interleave the media data, but will not wait for media data from this track to achieve tight interleaving with other tracks.
 ### Initializers
-- [init(rawValue: String)](avassetwriterinput/mediadatalocation-swift.struct/init(rawvalue:).md)
+- [init(rawValue: String)](./mediadatalocation-swift.struct/init%28rawvalue%29.md)
   Creates a location with a string value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var preferredMediaChunkAlignment: Int](avassetwriterinput/preferredmediachunkalignment.md)
+### Configuring media data layout
+- [var preferredMediaChunkAlignment: Int](./preferredmediachunkalignment.md)
   The boundary, in bytes, for aligning media chunks.
-- [var preferredMediaChunkDuration: CMTime](avassetwriterinput/preferredmediachunkduration.md)
+- [var preferredMediaChunkDuration: CMTime](./preferredmediachunkduration.md)
   The duration to use for each chunk of sample data in the output file.
-- [var sampleReferenceBaseURL: URL?](avassetwriterinput/samplereferencebaseurl.md)
+- [var sampleReferenceBaseURL: URL?](./samplereferencebaseurl.md)
   The base URL sample references are relative to.
-- [var mediaDataLocation: AVAssetWriterInput.MediaDataLocation](avassetwriterinput/mediadatalocation-swift.property.md)
+- [var mediaDataLocation: AVAssetWriterInput.MediaDataLocation](./mediadatalocation-swift.property.md)
   Specifies how the input lays out and interleaves media data.
 
 

@@ -1,7 +1,8 @@
 # imageAllocator
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,15 +18,20 @@
 var imageAllocator: any MPSImageAllocator { get set }
 ```
 
+```objc
+@property (nonatomic, retain, readwrite, nonnull) id<MPSImageAllocator> imageAllocator;
+```
+
 ## See Also
 
-- [var exportFromGraph: Bool](mpsnnimagenode/exportfromgraph.md)
-- [var format: MPSImageFeatureChannelFormat](mpsnnimagenode/format.md)
-- [enum MPSImageFeatureChannelFormat](mpsimagefeaturechannelformat.md)
+### Instance Properties
+- [var exportFromGraph: Bool](./exportfromgraph.md)
+- [var format: MPSImageFeatureChannelFormat](./format.md)
+- [enum MPSImageFeatureChannelFormat](../mpsimagefeaturechannelformat.md)
   Encodes the representation of a single channel within an image.
-- [var handle: (any MPSHandle)?](mpsnnimagenode/handle.md)
-- [var stopGradient: Bool](mpsnnimagenode/stopgradient.md)
-- [var synchronizeResource: Bool](mpsnnimagenode/synchronizeresource.md)
+- [var handle: (any MPSHandle)?](./handle.md)
+- [var stopGradient: Bool](./stopgradient.md)
+- [var synchronizeResource: Bool](./synchronizeresource.md)
 
 
 ---

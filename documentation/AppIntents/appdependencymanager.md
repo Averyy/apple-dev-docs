@@ -1,7 +1,8 @@
 # AppDependencyManager
 
 **Framework**: App Intents  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that manages the registration and initialization of an app intent’s dependencies.
 
@@ -11,7 +12,7 @@ An object that manages the registration and initialization of an app intent’s 
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,26 +23,27 @@ final class AppDependencyManager
 
 ## Mentions
 
-- [Creating your first app intent](creating-your-first-app-intent.md)
-- [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
+- [Creating your first app intent](./creating-your-first-app-intent.md)
+- [Responding to the Action button on Apple Watch Ultra](./actionbuttonarticle.md)
 
 ## Topics
 
 ### Initializers
-- [init()](appdependencymanager/init.md)
+- [init()](./appdependencymanager/init%28%29.md)
   Can be used to initialize a standalone `AppDependencyManager` for dependency injection during testing.
 ### Instance Methods
-- [func add<Dependency>(key: AnyHashable?, dependency: @autoclosure () -> () throws -> Dependency)](appdependencymanager/add(key:dependency:)-1hqkg.md)
-- [func add<Dependency>(key: AnyHashable?, dependency: @autoclosure () -> Dependency)](appdependencymanager/add(key:dependency:)-2le3x.md)
-- [func add<Dependency>(key: AnyHashable?, dependency: () async throws -> Dependency)](appdependencymanager/add(key:dependency:)-gth5.md)
+- [func add<Dependency>(key: AnyHashable?, dependency: @autoclosure () -> () throws -> Dependency)](./appdependencymanager/add%28key,dependency%29-1hqkg.md)
+- [func add<Dependency>(key: AnyHashable?, dependency: @autoclosure () -> Dependency)](./appdependencymanager/add%28key,dependency%29-2le3x.md)
+- [func add<Dependency>(key: AnyHashable?, dependency: () async throws -> Dependency)](./appdependencymanager/add%28key,dependency%29-gth5.md)
 ### Type Properties
-- [static let shared: AppDependencyManager](appdependencymanager/shared.md)
+- [static let shared: AppDependencyManager](./appdependencymanager/shared.md)
 ### Enumerations
-- [AppDependencyManager.Error](appdependencymanager/error.md)
+- [AppDependencyManager.Error](./appdependencymanager/error.md)
 
 ## See Also
 
-- [class AppDependency](appdependency.md)
+### Dependency management
+- [class AppDependency](./appdependency.md)
   A property wrapper that resolves a registered dependency at runtime.
 
 

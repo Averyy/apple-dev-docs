@@ -1,7 +1,8 @@
 # FinancialConnectionExtensionAuthorizationResult
 
 **Framework**: FinanceKitUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -17,17 +18,17 @@ struct FinancialConnectionExtensionAuthorizationResult
 ## Topics
 
 ### Initializers
-- [init(params: FinancialConnectionExtensionAuthorizationParams)](financialconnectionextensionauthorizationresult/init(params:).md)
+- [init(params: FinancialConnectionExtensionAuthorizationParams)](./financialconnectionextensionauthorizationresult/init%28params%29.md)
 ### Instance Properties
-- [let params: FinancialConnectionExtensionAuthorizationParams](financialconnectionextensionauthorizationresult/params.md)
+- [let params: FinancialConnectionExtensionAuthorizationParams](./financialconnectionextensionauthorizationresult/params.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

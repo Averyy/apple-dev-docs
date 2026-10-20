@@ -1,7 +1,8 @@
 # canvasViewDidFinishRendering(_:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the previously drawn content is ready to display.
 
@@ -17,9 +18,13 @@ Tells the delegate that the previously drawn content is ready to display.
 optional func canvasViewDidFinishRendering(_ canvasView: PKCanvasView)
 ```
 
+```objc
+- (void) canvasViewDidFinishRendering:(PKCanvasView *) canvasView;
+```
+
 #### Discussion
 
-The [`PKCanvasView`](pkcanvasview.md) object calls this method when you assign a new drawing to its [`drawing`](pkcanvasview/drawing.md) property, when the user zooms in on the canvas, or when the canvas scrolls.
+The [`PKCanvasView`](../pkcanvasview.md) object calls this method when you assign a new drawing to its [`drawing`](../pkcanvasview/drawing.md) property, when the user zooms in on the canvas, or when the canvas scrolls.
 
 ## Parameters
 
@@ -27,7 +32,8 @@ The [`PKCanvasView`](pkcanvasview.md) object calls this method when you assign a
 
 ## See Also
 
-- [func canvasViewDrawingDidChange(PKCanvasView)](pkcanvasviewdelegate/canvasviewdrawingdidchange(_:).md)
+### Responding to drawing-related changes
+- [func canvasViewDrawingDidChange(PKCanvasView)](./canvasviewdrawingdidchange%28_%29.md)
   Tells the delegate that the contents of the current drawing changed.
 
 

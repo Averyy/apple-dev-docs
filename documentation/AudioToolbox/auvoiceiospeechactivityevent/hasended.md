@@ -1,17 +1,18 @@
 # AUVoiceIOSpeechActivityEvent.hasEnded
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state that indicates speech ended.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,14 @@ A state that indicates speech ended.
 case hasEnded
 ```
 
+```c
+kAUVoiceIOSpeechActivityHasEnded
+```
+
 ## See Also
 
-- [AUVoiceIOSpeechActivityEvent.hasStarted](auvoiceiospeechactivityevent/hasstarted.md)
+### Determining when muted speech starts and stops
+- [AUVoiceIOSpeechActivityEvent.hasStarted](./hasstarted.md)
   A state that indicates speech started.
 
 

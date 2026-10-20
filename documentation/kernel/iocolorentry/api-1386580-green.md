@@ -1,7 +1,8 @@
 # green
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Value of green component 0-65535.
 
@@ -10,7 +11,7 @@ Value of green component 0-65535.
 
 ## Declaration
 
-```swift
+```c
 IOColorComponent green;
 ```
 

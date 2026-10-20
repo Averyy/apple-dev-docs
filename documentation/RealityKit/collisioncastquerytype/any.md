@@ -1,7 +1,8 @@
 # CollisionCastQueryType.any
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Report one hit.
 
@@ -11,7 +12,7 @@ Report one hit.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,13 +22,14 @@ case any
 
 #### Discussion
 
-This query type typically executes fastest, but doesn’t guarantee anything about which hit it returns. If you need the hit closest to the origin of the cast, use [`CollisionCastQueryType.nearest`](collisioncastquerytype/nearest.md) instead.
+This query type typically executes fastest, but doesn’t guarantee anything about which hit it returns. If you need the hit closest to the origin of the cast, use [`CollisionCastQueryType.nearest`](./nearest.md) instead.
 
 ## See Also
 
-- [CollisionCastQueryType.nearest](collisioncastquerytype/nearest.md)
+### Collision cast queries
+- [CollisionCastQueryType.nearest](./nearest.md)
   Report the closest hit.
-- [CollisionCastQueryType.all](collisioncastquerytype/all.md)
+- [CollisionCastQueryType.all](./all.md)
   Report all hits sorted in ascending order by distance from the cast origin.
 
 

@@ -1,15 +1,20 @@
 # imageIPTCData
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 static let imageIPTCData: NSBitmapImageRep.PropertyKey
+```
+
+```c
+extern NSBitmapImageRepPropertyKey NSImageIPTCData;
 ```
 
 

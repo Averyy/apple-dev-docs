@@ -1,7 +1,8 @@
 # AnyAxisContent
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased element of a chart’s axis.
 
@@ -24,25 +25,26 @@ struct AnyAxisContent
 ## Topics
 
 ### Initializers
-- [init(any AxisContent)](anyaxiscontent/init(_:).md)
-- [init(erasing: some AxisContent)](anyaxiscontent/init(erasing:).md)
+- [init(any AxisContent)](./anyaxiscontent/init%28_%29.md)
+- [init(erasing: some AxisContent)](./anyaxiscontent/init%28erasing%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [AxisContent](axiscontent.md)
+- [AxisContent](./axiscontent.md)
 
 ## See Also
 
-- [Customizing axes in Swift Charts](customizing-axes-in-swift-charts.md)
+### Axes
+- [Customizing axes in Swift Charts](./customizing-axes-in-swift-charts.md)
   Improve the clarity of your chart by configuring the appearance of its axes.
-- [struct ChartAxisContent](chartaxiscontent.md)
+- [struct ChartAxisContent](./chartaxiscontent.md)
   A view that represents a chart’s axis.
-- [protocol AxisContent](axiscontent.md)
+- [protocol AxisContent](./axiscontent.md)
   A type that represents the elements you use to build a chart’s axes.
-- [struct AxisMarks](axismarks.md)
+- [struct AxisMarks](./axismarks.md)
   A group of visual marks that a chart draws to indicate the composition of a chart’s axes.
-- [struct AxisContentBuilder](axiscontentbuilder.md)
+- [struct AxisContentBuilder](./axiscontentbuilder.md)
   A result builder that constructs axis content.
 
 

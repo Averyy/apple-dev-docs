@@ -1,7 +1,8 @@
 # DataScannerViewController.TextContentType
 
 **Framework**: VisionKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Types of text that a data scanner recognizes.
 
@@ -18,11 +19,11 @@ enum TextContentType
 
 ## Mentions
 
-- [Scanning data with the camera](scanning-data-with-the-camera.md)
+- [Scanning data with the camera](../scanning-data-with-the-camera.md)
 
 #### Overview
 
-To configure a [`DataScannerViewController`](datascannerviewcontroller.md), pass one or more options into its initializer. For example, the following code creates a data scanner that detects textual references to money.
+To configure a [`DataScannerViewController`](../datascannerviewcontroller.md), pass one or more options into its initializer. For example, the following code creates a data scanner that detects textual references to money.
 
 ```swift
 let recognizedDataTypes:Set<DataScannerViewController.RecognizedDataType> = [
@@ -36,34 +37,35 @@ let dataScanner = DataScannerViewController(recognizedDataTypes: recognizedDataT
 ## Topics
 
 ### Identifying content types
-- [DataScannerViewController.TextContentType.URL](datascannerviewcontroller/textcontenttype/url.md)
+- [DataScannerViewController.TextContentType.URL](./textcontenttype/url.md)
   The content type for a URL that appears in text.
-- [DataScannerViewController.TextContentType.dateTimeDuration](datascannerviewcontroller/textcontenttype/datetimeduration.md)
+- [DataScannerViewController.TextContentType.dateTimeDuration](./textcontenttype/datetimeduration.md)
   The content type for dates, times, and durations that appear in text.
-- [DataScannerViewController.TextContentType.emailAddress](datascannerviewcontroller/textcontenttype/emailaddress.md)
+- [DataScannerViewController.TextContentType.emailAddress](./textcontenttype/emailaddress.md)
   The content type for an email address that appears in text.
-- [DataScannerViewController.TextContentType.flightNumber](datascannerviewcontroller/textcontenttype/flightnumber.md)
+- [DataScannerViewController.TextContentType.flightNumber](./textcontenttype/flightnumber.md)
   The content type for a vendor-specific flight number that appears in text.
-- [DataScannerViewController.TextContentType.fullStreetAddress](datascannerviewcontroller/textcontenttype/fullstreetaddress.md)
+- [DataScannerViewController.TextContentType.fullStreetAddress](./textcontenttype/fullstreetaddress.md)
   The content type for a mailing address that appears in text.
-- [DataScannerViewController.TextContentType.shipmentTrackingNumber](datascannerviewcontroller/textcontenttype/shipmenttrackingnumber.md)
+- [DataScannerViewController.TextContentType.shipmentTrackingNumber](./textcontenttype/shipmenttrackingnumber.md)
   The content type for a vendor-specific parcel tracking number that appears in text.
-- [DataScannerViewController.TextContentType.telephoneNumber](datascannerviewcontroller/textcontenttype/telephonenumber.md)
+- [DataScannerViewController.TextContentType.telephoneNumber](./textcontenttype/telephonenumber.md)
   The content type for a phone number that appears in text.
-- [DataScannerViewController.TextContentType.currency](datascannerviewcontroller/textcontenttype/currency.md)
+- [DataScannerViewController.TextContentType.currency](./textcontenttype/currency.md)
   The content type for currency.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static func text(languages: [String], textContentType: DataScannerViewController.TextContentType?) -> DataScannerViewController.RecognizedDataType](datascannerviewcontroller/recognizeddatatype/text(languages:textcontenttype:).md)
+### Recognizing text
+- [static func text(languages: [String], textContentType: DataScannerViewController.TextContentType?) -> DataScannerViewController.RecognizedDataType](./recognizeddatatype/text%28languages,textcontenttype%29.md)
   Creates a data type for text and information the scanner finds in text.
 
 

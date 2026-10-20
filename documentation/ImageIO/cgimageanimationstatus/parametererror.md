@@ -1,7 +1,8 @@
 # CGImageAnimationStatus.parameterError
 
 **Framework**: Image I/O  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 4.0+
@@ -18,12 +19,17 @@
 case parameterError
 ```
 
+```c
+kCGImageAnimationStatus_ParameterError
+```
+
 ## See Also
 
-- [CGImageAnimationStatus.allocationFailure](cgimageanimationstatus/allocationfailure.md)
-- [CGImageAnimationStatus.corruptInputImage](cgimageanimationstatus/corruptinputimage.md)
-- [CGImageAnimationStatus.incompleteInputImage](cgimageanimationstatus/incompleteinputimage.md)
-- [CGImageAnimationStatus.unsupportedFormat](cgimageanimationstatus/unsupportedformat.md)
+### Animation Status
+- [CGImageAnimationStatus.allocationFailure](./allocationfailure.md)
+- [CGImageAnimationStatus.corruptInputImage](./corruptinputimage.md)
+- [CGImageAnimationStatus.incompleteInputImage](./incompleteinputimage.md)
+- [CGImageAnimationStatus.unsupportedFormat](./unsupportedformat.md)
 
 
 ---

@@ -1,157 +1,158 @@
 # Error codes
 
-**Framework**: App Store Server API
+**Framework**: App Store Server API  
+**Role**: API Collection
 
 Understand the error codes that App Store Server API responses return.
 
 ## Topics
 
 ### Errors
-- [object AccountNotFoundError](accountnotfounderror.md)
+- [object AccountNotFoundError](./accountnotfounderror.md)
   An error that indicates the App Store account wasn’t found.
-- [object AdvancedCommerceTransactionNotSupportedError](advancedcommercetransactionnotsupportederror.md)
+- [object AdvancedCommerceTransactionNotSupportedError](./advancedcommercetransactionnotsupportederror.md)
   An error that indicates Advanced Commerce API transactions are not supported by the endpoint.
-- [object AppNotFoundError](appnotfounderror.md)
+- [object AppNotFoundError](./appnotfounderror.md)
   An error that indicates the app wasn’t found.
-- [object AppTransactionDoesNotExistError](apptransactiondoesnotexisterror.md)
+- [object AppTransactionDoesNotExistError](./apptransactiondoesnotexisterror.md)
   An error response that indicates an app transaction doesn’t exist for the specified customer.
-- [object AppTransactionIdNotSupportedError](apptransactionidnotsupportederror.md)
+- [object AppTransactionIdNotSupportedError](./apptransactionidnotsupportederror.md)
   An error that indicates the endpoint doesn’t support an app transaction ID.
-- [object AssignedSubscriptionExtensionIneligibleError](assignedsubscriptionextensionineligibleerror.md)
+- [object AssignedSubscriptionExtensionIneligibleError](./assignedsubscriptionextensionineligibleerror.md)
   An error that indicates a subscription isn’t eligible for a renewal date extension because the customer has access through an organization or group.
-- [object FamilySharedSubscriptionExtensionIneligibleError](familysharedsubscriptionextensionineligibleerror.md)
+- [object FamilySharedSubscriptionExtensionIneligibleError](./familysharedsubscriptionextensionineligibleerror.md)
   An error that indicates a subscription isn’t directly eligible for a renewal date extension because the customer obtained it through Family Sharing.
-- [object FamilyTransactionNotSupportedError](familytransactionnotsupportederror.md)
+- [object FamilyTransactionNotSupportedError](./familytransactionnotsupportederror.md)
   An error that indicates the transaction is for a product the customer obtains through Family Sharing, which the endpoint doesn’t support.
-- [object GeneralInternalError](generalinternalerror.md)
+- [object GeneralInternalError](./generalinternalerror.md)
   An error that indicates a general internal error.
-- [object GeneralBadRequestError](generalbadrequesterror.md)
+- [object GeneralBadRequestError](./generalbadrequesterror.md)
   An error that indicates an invalid request.
-- [object InvalidAppAccountTokenUUIDError](invalidappaccounttokenuuiderror.md)
+- [object InvalidAppAccountTokenUUIDError](./invalidappaccounttokenuuiderror.md)
   An error that indicates the app account token value is not a valid UUID.
-- [object InvalidAppIdentifierError](invalidappidentifiererror.md)
+- [object InvalidAppIdentifierError](./invalidappidentifiererror.md)
   An error that indicates an invalid app identifier.
-- [object InvalidAssignedTransactionNotSupportedError](invalidassignedtransactionnotsupportederror.md)
+- [object InvalidAssignedTransactionNotSupportedError](./invalidassignedtransactionnotsupportederror.md)
   An error that indicates the transaction is one that an organization or group assigns to the customer, which the endpoint doesn’t support.
-- [object InvalidEmptyStorefrontCountryCodeListError](invalidemptystorefrontcountrycodelisterror.md)
+- [object InvalidEmptyStorefrontCountryCodeListError](./invalidemptystorefrontcountrycodelisterror.md)
   An error that indicates a required storefront country code is empty.
-- [object InvalidExtendByDaysError](invalidextendbydayserror.md)
+- [object InvalidExtendByDaysError](./invalidextendbydayserror.md)
   An error that indicates an invalid extend-by-days value.
-- [object InvalidExtendReasonCodeError](invalidextendreasoncodeerror.md)
+- [object InvalidExtendReasonCodeError](./invalidextendreasoncodeerror.md)
   An error that indicates an invalid reason code.
-- [object InvalidOriginalTransactionIdError](invalidoriginaltransactioniderror.md)
+- [object InvalidOriginalTransactionIdError](./invalidoriginaltransactioniderror.md)
   An error that indicates an invalid original transaction identifier.
-- [object InvalidRefundPreferenceError](invalidrefundpreferenceerror.md)
+- [object InvalidRefundPreferenceError](./invalidrefundpreferenceerror.md)
   An error that indicates an invalid refund preference value.
-- [object InvalidRequestIdentifierError](invalidrequestidentifiererror.md)
+- [object InvalidRequestIdentifierError](./invalidrequestidentifiererror.md)
   An error that indicates an invalid request identifier.
-- [object InvalidRequestRevisionError](invalidrequestrevisionerror.md)
+- [object InvalidRequestRevisionError](./invalidrequestrevisionerror.md)
   An error that indicates an invalid request revision.
-- [object InvalidRevokedError](invalidrevokederror.md)
+- [object InvalidRevokedError](./invalidrevokederror.md)
   An error that indicates the revoked parameter contains an invalid value.
-- [object InvalidStatusError](invalidstatuserror.md)
+- [object InvalidStatusError](./invalidstatuserror.md)
   An error that indicates the status parameter is invalid.
-- [object InvalidStorefrontCountryCodeError](invalidstorefrontcountrycodeerror.md)
+- [object InvalidStorefrontCountryCodeError](./invalidstorefrontcountrycodeerror.md)
   An error that indicates a storefront code is invalid.
-- [object InvalidTransactionIdError](invalidtransactioniderror.md)
+- [object InvalidTransactionIdError](./invalidtransactioniderror.md)
   An error that indicates an invalid transaction identifier.
-- [object OriginalTransactionIdNotFoundError](originaltransactionidnotfounderror.md)
+- [object OriginalTransactionIdNotFoundError](./originaltransactionidnotfounderror.md)
   An error that indicates an original transaction identifier wasn’t found.
-- [object RateLimitExceededError](ratelimitexceedederror.md)
+- [object RateLimitExceededError](./ratelimitexceedederror.md)
   An error that indicates the request exceeded the rate limit.
-- [object StatusRequestNotFoundError](statusrequestnotfounderror.md)
+- [object StatusRequestNotFoundError](./statusrequestnotfounderror.md)
   An error that indicates the server didn’t find a subscription-renewal-date extension request for the request identifier and product identifier you provided.
-- [object SubscriptionExtensionIneligibleError](subscriptionextensionineligibleerror.md)
+- [object SubscriptionExtensionIneligibleError](./subscriptionextensionineligibleerror.md)
   An error that indicates the subscription doesn’t qualify for a renewal-date extension due to its subscription state.
-- [object SubscriptionMaxExtensionError](subscriptionmaxextensionerror.md)
+- [object SubscriptionMaxExtensionError](./subscriptionmaxextensionerror.md)
   An error that indicates the subscription doesn’t qualify for a renewal-date extension because it has already received the maximum extensions.
-- [object TransactionIdIsNotOriginalTransactionIdError](transactionidisnotoriginaltransactioniderror.md)
+- [object TransactionIdIsNotOriginalTransactionIdError](./transactionidisnotoriginaltransactioniderror.md)
   An error that indicates the endpoint expects an original transaction identifier.
-- [object TransactionIdNotFoundError](transactionidnotfounderror.md)
+- [object TransactionIdNotFoundError](./transactionidnotfounderror.md)
   An error that indicates a transaction identifier wasn’t found.
 ### Errors to retry
-- [object AccountNotFoundRetryableError](accountnotfoundretryableerror.md)
+- [object AccountNotFoundRetryableError](./accountnotfoundretryableerror.md)
   An error response that indicates the App Store account wasn’t found, but you can try again.
-- [object AppNotFoundRetryableError](appnotfoundretryableerror.md)
+- [object AppNotFoundRetryableError](./appnotfoundretryableerror.md)
   An error response that indicates the app wasn’t found, but you can try again.
-- [object GeneralInternalRetryableError](generalinternalretryableerror.md)
+- [object GeneralInternalRetryableError](./generalinternalretryableerror.md)
   An error response that indicates an unknown error occurred, but you can try again.
-- [object OriginalTransactionIdNotFoundRetryableError](originaltransactionidnotfoundretryableerror.md)
+- [object OriginalTransactionIdNotFoundRetryableError](./originaltransactionidnotfoundretryableerror.md)
   An error response that indicates the original transaction identifier wasn’t found, but you can try again.
 ### Consumption request errors
-- [object ConsumptionPercentageAutoRenewableSubscriptionError](consumptionpercentageautorenewablesubscriptionerror.md)
+- [object ConsumptionPercentageAutoRenewableSubscriptionError](./consumptionpercentageautorenewablesubscriptionerror.md)
   An error that indicates the consumption percentage field is unsupported for auto-renewable subscription transactions.
-- [object ConsumptionPercentageOutOfRangeError](consumptionpercentageoutofrangeerror.md)
+- [object ConsumptionPercentageOutOfRangeError](./consumptionpercentageoutofrangeerror.md)
   An error that indicates the consumption percentage is outside the valid range.
-- [object InvalidAccountTenureError](invalidaccounttenureerror.md)
+- [object InvalidAccountTenureError](./invalidaccounttenureerror.md)
   An error that indicates the value of the account tenure field is invalid.
-- [object InvalidAppAccountTokenError](invalidappaccounttokenerror.md)
+- [object InvalidAppAccountTokenError](./invalidappaccounttokenerror.md)
   An error that indicates the value of the app account token field is invalid.
-- [object InvalidConsumptionStatusError](invalidconsumptionstatuserror.md)
+- [object InvalidConsumptionStatusError](./invalidconsumptionstatuserror.md)
   An error that indicates the value of the consumption status field is invalid.
-- [object InvalidCustomerConsentedError](invalidcustomerconsentederror.md)
+- [object InvalidCustomerConsentedError](./invalidcustomerconsentederror.md)
   An error that indicates the customer consented field is invalid or doesn’t indicate that the customer consented.
-- [object InvalidDeliveryStatusError](invaliddeliverystatuserror.md)
+- [object InvalidDeliveryStatusError](./invaliddeliverystatuserror.md)
   An error that indicates the value in the delivery status field is invalid.
-- [object InvalidLifetimeDollarsPurchasedError](invalidlifetimedollarspurchasederror.md)
+- [object InvalidLifetimeDollarsPurchasedError](./invalidlifetimedollarspurchasederror.md)
   An error that indicates the value in the lifetime dollars purchased field is invalid.
-- [object InvalidLifetimeDollarsRefundedError](invalidlifetimedollarsrefundederror.md)
+- [object InvalidLifetimeDollarsRefundedError](./invalidlifetimedollarsrefundederror.md)
   An error that indicates the value in the lifetime dollars refunded field is invalid.
-- [object InvalidPlatformError](invalidplatformerror.md)
+- [object InvalidPlatformError](./invalidplatformerror.md)
   An error that indicates the value in the platform field is invalid.
-- [object InvalidPlayTimeError](invalidplaytimeerror.md)
+- [object InvalidPlayTimeError](./invalidplaytimeerror.md)
   An error that indicates the value in the playtime field is invalid.
-- [object InvalidSampleContentProvidedError](invalidsamplecontentprovidederror.md)
+- [object InvalidSampleContentProvidedError](./invalidsamplecontentprovidederror.md)
   An error that indicates the value in the sample content provided field is invalid.
-- [object InvalidTransactionTypeNotSupportedError](invalidtransactiontypenotsupportederror.md)
+- [object InvalidTransactionTypeNotSupportedError](./invalidtransactiontypenotsupportederror.md)
   An error that indicates the transaction identifier represents an unsupported In-App Purchase type.
-- [object InvalidUserStatusError](invaliduserstatuserror.md)
+- [object InvalidUserStatusError](./invaliduserstatuserror.md)
   An error that indicates the value in the user status field is invalid.
-- [object InvalidTransactionNotConsumableError](invalidtransactionnotconsumableerror.md)
+- [object InvalidTransactionNotConsumableError](./invalidtransactionnotconsumableerror.md)
   An error that indicates the transaction identifier doesn’t represent a consumable In-App Purchase.
-- [object UndeliveredConsumptionPercentageNonZeroError](undeliveredconsumptionpercentagenonzeroerror.md)
+- [object UndeliveredConsumptionPercentageNonZeroError](./undeliveredconsumptionpercentagenonzeroerror.md)
   An error that indicates the consumption percentage must be zero for the provided delivery status.
 ### Group membership errors
-- [object GroupNotFoundError](groupnotfounderror.md)
+- [object GroupNotFoundError](./groupnotfounderror.md)
   An error that indicates the group wasn’t found.
-- [object InvalidGroupIdError](invalidgroupiderror.md)
+- [object InvalidGroupIdError](./invalidgroupiderror.md)
   An error that indicates the group identifier is invalid.
-- [object InvalidLimitError](invalidlimiterror.md)
+- [object InvalidLimitError](./invalidlimiterror.md)
   An error that indicates the request limit is invalid.
 ### Notification test and history errors
-- [object InvalidEndDateError](invalidenddateerror.md)
+- [object InvalidEndDateError](./invalidenddateerror.md)
   An error that indicates the end date is invalid.
-- [object InvalidNotificationTypeError](invalidnotificationtypeerror.md)
+- [object InvalidNotificationTypeError](./invalidnotificationtypeerror.md)
   An error that indicates the notification type or subtype is invalid.
-- [object InvalidPaginationTokenError](invalidpaginationtokenerror.md)
+- [object InvalidPaginationTokenError](./invalidpaginationtokenerror.md)
   An error that indicates the pagination token is invalid.
-- [object InvalidStartDateError](invalidstartdateerror.md)
+- [object InvalidStartDateError](./invalidstartdateerror.md)
   An error that indicates the start date is invalid.
-- [object InvalidTestNotificationTokenError](invalidtestnotificationtokenerror.md)
+- [object InvalidTestNotificationTokenError](./invalidtestnotificationtokenerror.md)
   An error that indicates the test notification token is invalid.
-- [object InvalidInAppOwnershipTypeError](invalidinappownershiptypeerror.md)
+- [object InvalidInAppOwnershipTypeError](./invalidinappownershiptypeerror.md)
   An error that indicates an invalid in-app ownership type parameter.
-- [object InvalidProductIdError](invalidproductiderror.md)
+- [object InvalidProductIdError](./invalidproductiderror.md)
   An error that indicates the product ID parameter is invalid.
-- [object InvalidProductTypeError](invalidproducttypeerror.md)
+- [object InvalidProductTypeError](./invalidproducttypeerror.md)
   An error that indicates the product type parameter is invalid.
-- [object InvalidSortError](invalidsorterror.md)
+- [object InvalidSortError](./invalidsorterror.md)
   An error that indicates the sort parameter is invalid.
-- [object InvalidSubscriptionGroupIdentifierError](invalidsubscriptiongroupidentifiererror.md)
+- [object InvalidSubscriptionGroupIdentifierError](./invalidsubscriptiongroupidentifiererror.md)
   An error that indicates the subscription group identifier is invalid.
-- [object MultipleFiltersSuppliedError](multiplefilterssuppliederror.md)
+- [object MultipleFiltersSuppliedError](./multiplefilterssuppliederror.md)
   An error that indicates the request is invalid because it has too many applied constraints.
-- [object PaginationTokenExpiredError](paginationtokenexpirederror.md)
+- [object PaginationTokenExpiredError](./paginationtokenexpirederror.md)
   An error that indicates the pagination token expired.
-- [object ServerNotificationURLNotFoundError](servernotificationurlnotfounderror.md)
+- [object ServerNotificationURLNotFoundError](./servernotificationurlnotfounderror.md)
   An error that indicates the App Store server couldn’t find a notifications URL for your app in the environment.
-- [object StartDateAfterEndDateError](startdateafterenddateerror.md)
+- [object StartDateAfterEndDateError](./startdateafterenddateerror.md)
   An error that indicates the end date precedes the start date, or the two dates are equal.
-- [object StartDateTooFarInPastError](startdatetoofarinpasterror.md)
+- [object StartDateTooFarInPastError](./startdatetoofarinpasterror.md)
   An error that indicates the start date is earlier than the earliest allowed date.
-- [object TestNotificationNotFoundError](testnotificationnotfounderror.md)
+- [object TestNotificationNotFoundError](./testnotificationnotfounderror.md)
   An error that indicates the test notification token is expired or the test notification status isn’t available.
-- [object InvalidExcludeRevokedError](invalidexcluderevokederror.md)
+- [object InvalidExcludeRevokedError](./invalidexcluderevokederror.md)
   An error that indicates the query parameter exclude-revoked is invalid.
 
 

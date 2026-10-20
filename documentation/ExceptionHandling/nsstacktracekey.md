@@ -1,9 +1,10 @@
 # NSStackTraceKey
 
 **Framework**: Exception Handling  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-The key for fetching the stack trace (an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object) in the [`userInfo`](https://developer.apple.com/documentation/foundation/nsexception/userinfo-swift.property) dictionary of the [`NSException`](https://developer.apple.com/documentation/foundation/nsexception) object passed into one of the delegate methods described in [`NSExceptionHandlerDelegate`](nsexceptionhandlerdelegate.md).
+The key for fetching the stack trace (an [`NSString`](../Foundation/nsstring.md) object) in the [`userInfo`](../Foundation/nsexception/userinfo-swift.property.md) dictionary of the [`NSException`](../Foundation/nsexception.md) object passed into one of the delegate methods described in [NSExceptionHandlerDelegate](./nsexceptionhandlerdelegate.md).
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -15,11 +16,16 @@ The key for fetching the stack trace (an [`NSString`](https://developer.apple.co
 let NSStackTraceKey: String
 ```
 
+```c
+extern NSString * NSStackTraceKey;
+```
+
 ## See Also
 
-- [let NSUncaughtRuntimeErrorException: String](nsuncaughtruntimeerrorexception.md)
+### Constants
+- [let NSUncaughtRuntimeErrorException: String](./nsuncaughtruntimeerrorexception.md)
   Identifies an Objective-C runtime error.
-- [let NSUncaughtSystemExceptionException: String](nsuncaughtsystemexceptionexception.md)
+- [let NSUncaughtSystemExceptionException: String](./nsuncaughtsystemexceptionexception.md)
   Identifies an uncaught system exception.
 
 

@@ -1,7 +1,8 @@
 # init(relyingParty:clientDataHash:credentialID:attestationObject:extensionOutput:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a passkey registration credential object.
 
@@ -28,7 +29,8 @@ convenience init(relyingParty: String, clientDataHash: Data, credentialID: Data,
 
 ## See Also
 
-- [init(relyingParty: String, clientDataHash: Data, credentialID: Data, attestationObject: Data)](aspasskeyregistrationcredential/init(relyingparty:clientdatahash:credentialid:attestationobject:).md)
+### Creating a passkey registration credential
+- [init(relyingParty: String, clientDataHash: Data, credentialID: Data, attestationObject: Data)](./init%28relyingparty,clientdatahash,credentialid,attestationobject%29.md)
   Initializes a passkey registration credential object.
 
 

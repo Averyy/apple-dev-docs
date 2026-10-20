@@ -1,7 +1,8 @@
 # isEqual(to:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares the receiving ordered set to another ordered set.
 
@@ -20,9 +21,13 @@ Compares the receiving ordered set to another ordered set.
 func isEqual(to other: NSOrderedSet) -> Bool
 ```
 
+```objc
+- (BOOL) isEqualToOrderedSet:(NSOrderedSet<id> *) other;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the contents of `other` are equal to the contents of the receiving ordered set, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the contents of `other` are equal to the contents of the receiving ordered set, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -34,15 +39,17 @@ Two ordered sets have equal contents if they each have the same number of member
 
 ## See Also
 
-- [func isEqual(Any?) -> Bool](../objectivec/nsobjectprotocol/isequal(_:).md)
+### Related Documentation
+- [func isEqual(Any?) -> Bool](../../ObjectiveC/nsobjectprotocol/isequal%28_%29.md)
   Returns a Boolean value that indicates whether the receiver and a given object are equal.
-- [func intersects(NSOrderedSet) -> Bool](nsorderedset/intersects(_:).md)
+### Comparing Sets
+- [func intersects(NSOrderedSet) -> Bool](./intersects%28_%29.md)
   Returns a Boolean value that indicates whether at least one object in the receiving ordered set is also present in another given ordered set.
-- [func intersectsSet(Set<AnyHashable>) -> Bool](nsorderedset/intersectsset(_:).md)
+- [func intersectsSet(Set<AnyHashable>) -> Bool](./intersectsset%28_%29.md)
   Returns a Boolean value that indicates whether at least one object in the receiving ordered set is also present in another given set.
-- [func isSubset(of: NSOrderedSet) -> Bool](nsorderedset/issubset(of:)-7brc.md)
+- [func isSubset(of: NSOrderedSet) -> Bool](./issubset%28of%29-7brc.md)
   Returns a Boolean value that indicates whether every object in the receiving ordered set is also present in another given ordered set.
-- [func isSubset(of: Set<AnyHashable>) -> Bool](nsorderedset/issubset(of:)-8zx9x.md)
+- [func isSubset(of: Set<AnyHashable>) -> Bool](./issubset%28of%29-8zx9x.md)
   Returns a Boolean value that indicates whether every object in the receiving ordered set is also present in another given set.
 
 

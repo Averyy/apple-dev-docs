@@ -1,7 +1,8 @@
 # MTROvenModeModeTag
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.4+
@@ -18,41 +19,45 @@
 enum MTROvenModeModeTag
 ```
 
+```c
+enum MTROvenModeModeTag : uint16_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTROvenModeModeTag.auto](mtrovenmodemodetag/auto.md)
-- [MTROvenModeModeTag.bake](mtrovenmodemodetag/bake.md)
-- [MTROvenModeModeTag.clean](mtrovenmodemodetag/clean.md)
-- [MTROvenModeModeTag.convection](mtrovenmodemodetag/convection.md)
-- [MTROvenModeModeTag.convectionBake](mtrovenmodemodetag/convectionbake.md)
-- [MTROvenModeModeTag.convectionRoast](mtrovenmodemodetag/convectionroast.md)
-- [MTROvenModeModeTag.day](mtrovenmodemodetag/day.md)
-- [MTROvenModeModeTag.grill](mtrovenmodemodetag/grill.md)
-- [MTROvenModeModeTag.lowEnergy](mtrovenmodemodetag/lowenergy.md)
-- [MTROvenModeModeTag.lowNoise](mtrovenmodemodetag/lownoise.md)
-- [MTROvenModeModeTag.max](mtrovenmodemodetag/max.md)
-- [MTROvenModeModeTag.min](mtrovenmodemodetag/min.md)
-- [MTROvenModeModeTag.night](mtrovenmodemodetag/night.md)
-- [MTROvenModeModeTag.proofing](mtrovenmodemodetag/proofing.md)
-- [MTROvenModeModeTag.quick](mtrovenmodemodetag/quick.md)
-- [MTROvenModeModeTag.quiet](mtrovenmodemodetag/quiet.md)
-- [MTROvenModeModeTag.roast](mtrovenmodemodetag/roast.md)
-- [MTROvenModeModeTag.steam](mtrovenmodemodetag/steam.md)
-- [MTROvenModeModeTag.vacation](mtrovenmodemodetag/vacation.md)
-- [MTROvenModeModeTag.warming](mtrovenmodemodetag/warming.md)
+- [MTROvenModeModeTag.auto](./mtrovenmodemodetag/auto.md)
+- [MTROvenModeModeTag.bake](./mtrovenmodemodetag/bake.md)
+- [MTROvenModeModeTag.clean](./mtrovenmodemodetag/clean.md)
+- [MTROvenModeModeTag.convection](./mtrovenmodemodetag/convection.md)
+- [MTROvenModeModeTag.convectionBake](./mtrovenmodemodetag/convectionbake.md)
+- [MTROvenModeModeTag.convectionRoast](./mtrovenmodemodetag/convectionroast.md)
+- [MTROvenModeModeTag.day](./mtrovenmodemodetag/day.md)
+- [MTROvenModeModeTag.grill](./mtrovenmodemodetag/grill.md)
+- [MTROvenModeModeTag.lowEnergy](./mtrovenmodemodetag/lowenergy.md)
+- [MTROvenModeModeTag.lowNoise](./mtrovenmodemodetag/lownoise.md)
+- [MTROvenModeModeTag.max](./mtrovenmodemodetag/max.md)
+- [MTROvenModeModeTag.min](./mtrovenmodemodetag/min.md)
+- [MTROvenModeModeTag.night](./mtrovenmodemodetag/night.md)
+- [MTROvenModeModeTag.proofing](./mtrovenmodemodetag/proofing.md)
+- [MTROvenModeModeTag.quick](./mtrovenmodemodetag/quick.md)
+- [MTROvenModeModeTag.quiet](./mtrovenmodemodetag/quiet.md)
+- [MTROvenModeModeTag.roast](./mtrovenmodemodetag/roast.md)
+- [MTROvenModeModeTag.steam](./mtrovenmodemodetag/steam.md)
+- [MTROvenModeModeTag.vacation](./mtrovenmodemodetag/vacation.md)
+- [MTROvenModeModeTag.warming](./mtrovenmodemodetag/warming.md)
 ### Initializers
-- [init?(rawValue: UInt16)](mtrovenmodemodetag/init(rawvalue:).md)
+- [init?(rawValue: UInt16)](./mtrovenmodemodetag/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

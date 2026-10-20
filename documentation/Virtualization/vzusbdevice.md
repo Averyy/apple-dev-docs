@@ -1,7 +1,8 @@
 # VZUSBDevice
 
 **Framework**: Virtualization  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that represents a USB device in a VM.
 
@@ -14,6 +15,10 @@ A protocol that represents a USB device in a VM.
 protocol VZUSBDevice : NSObjectProtocol
 ```
 
+```objc
+@protocol VZUSBDevice <NSObject>
+```
+
 #### Overview
 
 Classes that conform to this protocol represent hot-pluggable USB devices.
@@ -23,24 +28,26 @@ Classes that conform to this protocol represent hot-pluggable USB devices.
 ## Topics
 
 ### Properties
-- [var usbController: VZUSBController?](vzusbdevice/usbcontroller.md)
+- [var usbController: VZUSBController?](./vzusbdevice/usbcontroller.md)
   The USB controller that has an attachment to the device.
-- [var uuid: UUID](vzusbdevice/uuid.md)
+- [var uuid: UUID](./vzusbdevice/uuid.md)
   The device’s unique identifier.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [VZUSBMassStorageDevice](vzusbmassstoragedevice.md)
-- [VZUSBPassthroughDevice](vzusbpassthroughdevice.md)
+- [VZUSBMassStorageDevice](./vzusbmassstoragedevice.md)
+- [VZUSBPassthroughDevice](./vzusbpassthroughdevice.md)
 
 ## See Also
 
-- [class VZUSBMassStorageDevice](vzusbmassstoragedevice.md)
+### Related Documentation
+- [class VZUSBMassStorageDevice](./vzusbmassstoragedevice.md)
   A class that represents a hot-pluggable USB mass storage device.
-- [protocol VZUSBDeviceConfiguration](vzusbdeviceconfiguration.md)
+### Protocols
+- [protocol VZUSBDeviceConfiguration](./vzusbdeviceconfiguration.md)
   The protocol for configuring USB devices.
 
 

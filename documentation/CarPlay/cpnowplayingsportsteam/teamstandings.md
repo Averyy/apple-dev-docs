@@ -1,7 +1,8 @@
 # teamStandings
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional additional label displayed near the team name. This could be a win-loss ratio string, team standings, or other statistics relevant to this team. Depending on the size of the car screen, a maximum of 15-20 characters may be displayed.
 
@@ -14,6 +15,10 @@ An optional additional label displayed near the team name. This could be a win-l
 
 ```swift
 var teamStandings: String? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * teamStandings;
 ```
 
 

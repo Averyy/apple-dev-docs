@@ -1,7 +1,8 @@
 # UIModalPresentationStyle.popover
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A presentation style where the content is displayed in a popover view.
 
@@ -17,40 +18,45 @@ A presentation style where the content is displayed in a popover view.
 case popover
 ```
 
+```c
+UIModalPresentationPopover
+```
+
 #### Discussion
 
-In a horizontally regular environment, this style displays the view controller in a popover view. The background content is dimmed and taps outside the popover cause the popover to be dismissed. If you do not want taps to dismiss the popover, you can assign one or more views to the [`passthroughViews`](uipopoverpresentationcontroller/passthroughviews.md) property of the associated [`UIPopoverPresentationController`](uipopoverpresentationcontroller.md) object, which you can get from the [`popoverPresentationController`](uiviewcontroller/popoverpresentationcontroller.md) property.
+In a horizontally regular environment, this style displays the view controller in a popover view. The background content is dimmed and taps outside the popover cause the popover to be dismissed. If you do not want taps to dismiss the popover, you can assign one or more views to the [`passthroughViews`](../uipopoverpresentationcontroller/passthroughviews.md) property of the associated [`UIPopoverPresentationController`](../uipopoverpresentationcontroller.md) object, which you can get from the [`popoverPresentationController`](../uiviewcontroller/popoverpresentationcontroller.md) property.
 
-In iOS 13 and later, for horizontally or vertically compact environments, this option behaves the same as [`UIModalPresentationStyle.formSheet`](uimodalpresentationstyle/formsheet.md).
+In iOS 13 and later, for horizontally or vertically compact environments, this option behaves the same as [`UIModalPresentationStyle.formSheet`](./formsheet.md).
 
 In iOS 12 and earlier:
 
-- For horizontally compact environments, this option behaves the same as [`UIModalPresentationStyle.fullScreen`](uimodalpresentationstyle/fullscreen.md).
-- For horizontally regular and vertically compact environments, this option behaves the same as [`UIModalPresentationStyle.formSheet`](uimodalpresentationstyle/formsheet.md).
+- For horizontally compact environments, this option behaves the same as [`UIModalPresentationStyle.fullScreen`](./fullscreen.md).
+- For horizontally regular and vertically compact environments, this option behaves the same as [`UIModalPresentationStyle.formSheet`](./formsheet.md).
 
-For more information about horizontal and vertical size classes, see [`UIUserInterfaceSizeClass`](uiuserinterfacesizeclass.md).
+For more information about horizontal and vertical size classes, see [`UIUserInterfaceSizeClass`](../uiuserinterfacesizeclass.md).
 
 ## See Also
 
-- [UIModalPresentationStyle.automatic](uimodalpresentationstyle/automatic.md)
+### Presentations
+- [UIModalPresentationStyle.automatic](./automatic.md)
   The default presentation style chosen by the system.
-- [UIModalPresentationStyle.none](uimodalpresentationstyle/none.md)
+- [UIModalPresentationStyle.none](./none.md)
   A presentation style that indicates no adaptations should be made.
-- [UIModalPresentationStyle.fullScreen](uimodalpresentationstyle/fullscreen.md)
+- [UIModalPresentationStyle.fullScreen](./fullscreen.md)
   A presentation style in which the presented view covers the screen.
-- [UIModalPresentationStyle.pageSheet](uimodalpresentationstyle/pagesheet.md)
+- [UIModalPresentationStyle.pageSheet](./pagesheet.md)
   A presentation style that partially covers the underlying content.
-- [UIModalPresentationStyle.formSheet](uimodalpresentationstyle/formsheet.md)
+- [UIModalPresentationStyle.formSheet](./formsheet.md)
   A presentation style that displays the content centered in the screen.
-- [UIModalPresentationStyle.currentContext](uimodalpresentationstyle/currentcontext.md)
+- [UIModalPresentationStyle.currentContext](./currentcontext.md)
   A presentation style where the content is displayed over another view controller’s content.
-- [UIModalPresentationStyle.custom](uimodalpresentationstyle/custom.md)
+- [UIModalPresentationStyle.custom](./custom.md)
   A custom view presentation style that is managed by a custom presentation controller and one or more custom animator objects.
-- [UIModalPresentationStyle.overFullScreen](uimodalpresentationstyle/overfullscreen.md)
+- [UIModalPresentationStyle.overFullScreen](./overfullscreen.md)
   A view presentation style in which the presented view covers the screen.
-- [UIModalPresentationStyle.overCurrentContext](uimodalpresentationstyle/overcurrentcontext.md)
+- [UIModalPresentationStyle.overCurrentContext](./overcurrentcontext.md)
   A presentation style where the content is displayed over another view controller’s content.
-- [UIModalPresentationStyle.blurOverFullScreen](uimodalpresentationstyle/bluroverfullscreen.md)
+- [UIModalPresentationStyle.blurOverFullScreen](./bluroverfullscreen.md)
   A presentation style that blurs the underlying content before displaying new content in a full-screen presentation.
 
 

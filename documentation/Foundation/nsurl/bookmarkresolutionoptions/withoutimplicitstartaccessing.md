@@ -1,7 +1,8 @@
 # withoutImplicitStartAccessing
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A property that specifies that resolution doesn’t implicitly start accessing the ephemeral security-scoped resource.
 
@@ -20,19 +21,24 @@ A property that specifies that resolution doesn’t implicitly start accessing t
 static var withoutImplicitStartAccessing: NSURL.BookmarkResolutionOptions { get }
 ```
 
+```c
+NSURLBookmarkResolutionWithoutImplicitStartAccessing
+```
+
 #### Discussion
 
-This option causes an implicit call to [`startAccessingSecurityScopedResource()`](nsurl/startaccessingsecurityscopedresource().md) on the returned URL when it’s ready to use the resource.
+This option causes an implicit call to [`startAccessingSecurityScopedResource()`](../startaccessingsecurityscopedresource%28%29.md) on the returned URL when it’s ready to use the resource.
 
 This option isn’t applicable to security-scoped bookmarks.
 
 ## See Also
 
-- [static var withoutUI: NSURL.BookmarkResolutionOptions](nsurl/bookmarkresolutionoptions/withoutui.md)
+### Constants
+- [static var withoutUI: NSURL.BookmarkResolutionOptions](./withoutui.md)
   Specifies that no UI feedback should accompany resolution of the bookmark data.
-- [static var withoutMounting: NSURL.BookmarkResolutionOptions](nsurl/bookmarkresolutionoptions/withoutmounting.md)
+- [static var withoutMounting: NSURL.BookmarkResolutionOptions](./withoutmounting.md)
   Specifies that no volume should be mounted during resolution of the bookmark data.
-- [static var withSecurityScope: NSURL.BookmarkResolutionOptions](nsurl/bookmarkresolutionoptions/withsecurityscope.md)
+- [static var withSecurityScope: NSURL.BookmarkResolutionOptions](./withsecurityscope.md)
   Specifies that the security scope, applied to the bookmark when it was created, should be used during resolution of the bookmark data.
 
 

@@ -1,7 +1,8 @@
 # authenticationMode
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 var authenticationMode: MTRAccessControlEntryAuthMode { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) MTRAccessControlEntryAuthMode authenticationMode;
 ```
 
 

@@ -1,7 +1,8 @@
 # isUploading
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the item is currently uploading to your remote server.
 
@@ -18,17 +19,22 @@ A Boolean value that indicates whether the item is currently uploading to your r
 optional var isUploading: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isUploading) BOOL uploading;
+```
+
 ## See Also
 
-- [var isUploaded: Bool](nsfileprovideritemprotocol/isuploaded.md)
+### Monitoring File Transfers
+- [var isUploaded: Bool](./isuploaded.md)
   A Boolean value that indicates whether the item has been uploaded to your remote server.
-- [var uploadingError: (any Error)?](nsfileprovideritemprotocol/uploadingerror.md)
+- [var uploadingError: (any Error)?](./uploadingerror.md)
   An object describing an error that occurred while uploading the item.
-- [var isDownloading: Bool](nsfileprovideritemprotocol/isdownloading.md)
+- [var isDownloading: Bool](./isdownloading.md)
   A Boolean value that indicates whether the item is currently downloading from your remote server.
-- [var isDownloaded: Bool](nsfileprovideritemprotocol/isdownloaded.md)
+- [var isDownloaded: Bool](./isdownloaded.md)
   A Boolean value that indicates whether the item has been downloaded from your remote server.
-- [var downloadingError: (any Error)?](nsfileprovideritemprotocol/downloadingerror.md)
+- [var downloadingError: (any Error)?](./downloadingerror.md)
   An object describing an error that occurred while downloading the item.
 
 

@@ -1,7 +1,8 @@
 # kAXVerticalScrollBarAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 var kAXVerticalScrollBarAttribute: String { get }
+```
+
+```c
+#define kAXVerticalScrollBarAttribute
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # HIDUsage.KeyboardOrKeypadUsage.keypad6AndRightArrow
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 15.0+

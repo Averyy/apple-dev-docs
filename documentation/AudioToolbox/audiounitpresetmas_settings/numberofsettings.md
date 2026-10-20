@@ -1,15 +1,20 @@
 # numberOfSettings
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var numberOfSettings: UInt32
+```
+
+```c
+UInt32 numberOfSettings;
 ```
 
 

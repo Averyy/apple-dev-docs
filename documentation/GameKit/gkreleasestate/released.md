@@ -1,7 +1,8 @@
 # released
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The resource is associated with a release in App Store Connect. This has no relationship with the “archived” state of a resource (i.e., A resource can be release *and* archived).
 
@@ -18,6 +19,10 @@ The resource is associated with a release in App Store Connect. This has no rela
 
 ```swift
 static var released: GKReleaseState { get }
+```
+
+```c
+GKReleaseStateReleased
 ```
 
 

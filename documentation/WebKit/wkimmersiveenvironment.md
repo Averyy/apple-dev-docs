@@ -1,7 +1,8 @@
 # WKImmersiveEnvironment
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - visionOS 27.0+
@@ -13,6 +14,10 @@
 class WKImmersiveEnvironment
 ```
 
+```objc
+@interface WKImmersiveEnvironment : NSObject
+```
+
 #### Overview
 
 An object representing a website-provided immersive environment that is ready for presentation.
@@ -20,28 +25,29 @@ An object representing a website-provided immersive environment that is ready fo
 ## Topics
 
 ### Instance Properties
-- [var sourceFrame: WKFrameInfo](wkimmersiveenvironment/sourceframe.md)
+- [var sourceFrame: WKFrameInfo](./wkimmersiveenvironment/sourceframe.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol WKImmersiveEnvironmentDelegate](wkimmersiveenvironmentdelegate.md)
-- [var allowsImmersiveEnvironments: Bool](wkwebviewconfiguration/allowsimmersiveenvironments.md)
-- [var immersiveEnvironmentDelegate: (any WKImmersiveEnvironmentDelegate)?](wkwebview/immersiveenvironmentdelegate.md)
-- [func dismissImmersiveEnvironment(completionHandler: () -> Void)](wkwebview/dismissimmersiveenvironment(completionhandler:).md)
+### Immersive environments
+- [protocol WKImmersiveEnvironmentDelegate](./wkimmersiveenvironmentdelegate.md)
+- [var allowsImmersiveEnvironments: Bool](./wkwebviewconfiguration/allowsimmersiveenvironments.md)
+- [var immersiveEnvironmentDelegate: (any WKImmersiveEnvironmentDelegate)?](./wkwebview/immersiveenvironmentdelegate.md)
+- [func dismissImmersiveEnvironment(completionHandler: () -> Void)](./wkwebview/dismissimmersiveenvironment%28completionhandler%29.md)
 
 
 ---

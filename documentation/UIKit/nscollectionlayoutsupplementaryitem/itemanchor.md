@@ -1,7 +1,8 @@
 # itemAnchor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The anchor between the supplementary item and the item it’s attached to.
 
@@ -18,9 +19,14 @@ The anchor between the supplementary item and the item it’s attached to.
 var itemAnchor: NSCollectionLayoutAnchor? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSCollectionLayoutAnchor * itemAnchor;
+```
+
 ## See Also
 
-- [var containerAnchor: NSCollectionLayoutAnchor](nscollectionlayoutsupplementaryitem/containeranchor.md)
+### Getting the anchors
+- [var containerAnchor: NSCollectionLayoutAnchor](./containeranchor.md)
   The anchor between the supplementary item and the container it’s attached to.
 
 

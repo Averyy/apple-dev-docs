@@ -1,11 +1,12 @@
 # kAudioClockDevicePropertyNominalSampleRate
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,16 +14,21 @@
 var kAudioClockDevicePropertyNominalSampleRate: AudioObjectPropertySelector { get }
 ```
 
+```c
+kAudioClockDevicePropertyNominalSampleRate
+```
+
 ## See Also
 
-- [var kAudioClockDevicePropertyAvailableNominalSampleRates: AudioObjectPropertySelector](kaudioclockdevicepropertyavailablenominalsamplerates.md)
-- [var kAudioClockDevicePropertyClockDomain: AudioObjectPropertySelector](kaudioclockdevicepropertyclockdomain.md)
-- [var kAudioClockDevicePropertyControlList: AudioObjectPropertySelector](kaudioclockdevicepropertycontrollist.md)
-- [var kAudioClockDevicePropertyDeviceIsAlive: AudioObjectPropertySelector](kaudioclockdevicepropertydeviceisalive.md)
-- [var kAudioClockDevicePropertyDeviceIsRunning: AudioObjectPropertySelector](kaudioclockdevicepropertydeviceisrunning.md)
-- [var kAudioClockDevicePropertyDeviceUID: AudioObjectPropertySelector](kaudioclockdevicepropertydeviceuid.md)
-- [var kAudioClockDevicePropertyLatency: AudioObjectPropertySelector](kaudioclockdevicepropertylatency.md)
-- [var kAudioClockDevicePropertyTransportType: AudioObjectPropertySelector](kaudioclockdevicepropertytransporttype.md)
+### Constants
+- [var kAudioClockDevicePropertyAvailableNominalSampleRates: AudioObjectPropertySelector](./kaudioclockdevicepropertyavailablenominalsamplerates.md)
+- [var kAudioClockDevicePropertyClockDomain: AudioObjectPropertySelector](./kaudioclockdevicepropertyclockdomain.md)
+- [var kAudioClockDevicePropertyControlList: AudioObjectPropertySelector](./kaudioclockdevicepropertycontrollist.md)
+- [var kAudioClockDevicePropertyDeviceIsAlive: AudioObjectPropertySelector](./kaudioclockdevicepropertydeviceisalive.md)
+- [var kAudioClockDevicePropertyDeviceIsRunning: AudioObjectPropertySelector](./kaudioclockdevicepropertydeviceisrunning.md)
+- [var kAudioClockDevicePropertyDeviceUID: AudioObjectPropertySelector](./kaudioclockdevicepropertydeviceuid.md)
+- [var kAudioClockDevicePropertyLatency: AudioObjectPropertySelector](./kaudioclockdevicepropertylatency.md)
+- [var kAudioClockDevicePropertyTransportType: AudioObjectPropertySelector](./kaudioclockdevicepropertytransporttype.md)
 
 
 ---

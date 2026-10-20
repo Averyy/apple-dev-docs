@@ -1,22 +1,27 @@
 # bufferPointerType
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the pointer to a buffer argument.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.1+
-- macOS 10.13+
-- tvOS 11.0+
-- visionOS 1.0+
+- iOS 11.0+ - Deprecated in 16.0
+- iPadOS 11.0+ - Deprecated in 16.0
+- Mac Catalyst 13.1+ - Deprecated in 16.0
+- macOS 10.13+ - Deprecated in 13.0
+- tvOS 11.0+ - Deprecated in 16.0
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
 
 ```swift
 var bufferPointerType: MTLPointerType? { get }
+```
+
+```objc
+@property (readonly, nullable) MTLPointerType * bufferPointerType;
 ```
 
 #### Discussion
@@ -25,13 +30,14 @@ This property describes the type of the pointer to the buffer.
 
 ## See Also
 
-- [var bufferAlignment: Int](mtlargument/bufferalignment.md)
+### Describing a buffer argument
+- [var bufferAlignment: Int](./bufferalignment.md)
   The required byte alignment in memory for the buffer data.
-- [var bufferDataSize: Int](mtlargument/bufferdatasize.md)
+- [var bufferDataSize: Int](./bufferdatasize.md)
   The size, in bytes, of the buffer data.
-- [var bufferDataType: MTLDataType](mtlargument/bufferdatatype.md)
+- [var bufferDataType: MTLDataType](./bufferdatatype.md)
   The data type of the buffer data.
-- [var bufferStructType: MTLStructType?](mtlargument/bufferstructtype.md)
+- [var bufferStructType: MTLStructType?](./bufferstructtype.md)
   A description of the structure data of a buffer argument.
 
 

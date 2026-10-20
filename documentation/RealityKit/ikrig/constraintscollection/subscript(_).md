@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: RealityKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the element with the specified identifier.
 
@@ -17,6 +18,12 @@ Accesses the element with the specified identifier.
 
 ```swift
 subscript(id: IKRig.ConstraintsCollection.Element.ID) -> IKRig.ConstraintsCollection.Element? { get set }
+```
+
+**Other overloads**:
+
+```swift
+subscript(name: String) -> IKRig.ConstraintsCollection.Element? { get set }
 ```
 
 #### Overview

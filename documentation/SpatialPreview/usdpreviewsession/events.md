@@ -1,13 +1,14 @@
 # events
 
 **Framework**: Spatial Preview  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Async sequence of session events
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

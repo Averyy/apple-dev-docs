@@ -1,7 +1,8 @@
 # allPresses
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The state of all physical buttons in the event.
 
@@ -18,13 +19,18 @@ The state of all physical buttons in the event.
 var allPresses: Set<UIPress> { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSSet<UIPress *> * allPresses;
+```
+
 #### Return Value
 
-The set of [`UIPress`](uipress.md) instances that participated in this event.
+The set of [`UIPress`](../uipress.md) instances that participated in this event.
 
 ## See Also
 
-- [func presses(for: UIGestureRecognizer) -> Set<UIPress>](uipressesevent/presses(for:).md)
+### Reading the event button presses
+- [func presses(for: UIGestureRecognizer) -> Set<UIPress>](./presses%28for%29.md)
   Returns the state of all physical buttons in the event that are associated with a particular gesture recognizer.
 
 

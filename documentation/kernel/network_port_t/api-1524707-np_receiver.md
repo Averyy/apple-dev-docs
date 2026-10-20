@@ -1,14 +1,15 @@
 # np_receiver
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 netaddr_t np_receiver;
 ```
 

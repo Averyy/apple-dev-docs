@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ch
 
 # mlx.core.checkpoint
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.checkpoint.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.checkpoint
-
- Table of contents 
-
-## Contents
-
-# mlx.core.checkpoint
-
 **checkpoint(*fun: Callable[P, R]*) → Callable[P, R]**
 : Transform the passed callable to one that performs gradient
 checkpointing with respect to the inputs of the callable.
@@ -45,5 +18,3 @@ Parameters:
 Returns:
 A callable that recomputes intermediate states during gradient
 computation.
-
-** Contents

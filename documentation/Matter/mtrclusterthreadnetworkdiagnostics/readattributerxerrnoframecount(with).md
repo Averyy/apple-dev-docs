@@ -1,7 +1,8 @@
 # readAttributeRxErrNoFrameCount(with:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 func readAttributeRxErrNoFrameCount(with params: MTRReadParams?) -> [String : Any]?
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) readAttributeRxErrNoFrameCountWithParams:(MTRReadParams *) params;
 ```
 
 

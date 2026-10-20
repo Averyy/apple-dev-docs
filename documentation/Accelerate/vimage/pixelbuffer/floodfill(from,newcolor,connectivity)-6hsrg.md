@@ -1,7 +1,8 @@
 # floodFill(from:newColor:connectivity:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies an in-place flood-fill operation to the interleaved 4-channel, unsigned16-bit-per-pixel image.
 
@@ -11,7 +12,7 @@ Applies an in-place flood-fill operation to the interleaved 4-channel, unsigned1
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Applies an in-place flood-fill operation to the interleaved 4-channel, unsigned1
 ```swift
 func floodFill(from seed: CGPoint, newColor: Pixel_ARGB_16U, connectivity: vImage.FloodFillConnectivity)
 ```
+
+Available when `Format` is `vImage.Interleaved16Ux4`.
 
 #### Discussion
 
@@ -37,23 +40,25 @@ pixelBuffer.floodFill(from: CGPoint(x: pixelBuffer.width / 2,
 
 The image below shows the original line-art image on the left, and the flood-filled image on the right:
 
-![Two versions of a line drawing of a star. On the left is the original outline drawing of a star, and on the right is the same star but flood-filled with a solid color.](/images/com.apple.accelerate/media-4165181@2x.png)
+![Two versions of a line drawing of a star. On the left is the original outline drawing of a star, and on the right is the same star but flood-filled with a solid color.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-4165181@2x.png)
 
 ## Parameters
 
 - `seed`: The coordinates that define the position of the seed pixel inside the connected component.
 - `newColor`: The new pixel value that overwrites the pixels in the connected component.
-- `connectivity`: An enumeration that specifies which pixels the operation includes as neighbors. Pass [`vImage.FloodFillConnectivity.edges`](vimage/floodfillconnectivity/edges.md) to specify a four-connected neighborhood of a pixel that includes the pixels to the left and right, and those above and below. Pass [`vImage.FloodFillConnectivity.edgesAndCorners`](vimage/floodfillconnectivity/edgesandcorners.md) to specify an eight-connected neighborhood that includes the four-connected neighborhood and the pixels on the four diagonals.
+- `connectivity`: An enumeration that specifies which pixels the operation includes as neighbors. Pass [`vImage.FloodFillConnectivity.edges`](../floodfillconnectivity/edges.md) to specify a four-connected neighborhood of a pixel that includes the pixels to the left and right, and those above and below. Pass [`vImage.FloodFillConnectivity.edgesAndCorners`](../floodfillconnectivity/edgesandcorners.md) to specify an eight-connected neighborhood that includes the four-connected neighborhood and the pixels on the four diagonals.
 
 ## See Also
 
-- [Applying flood fills to an image](applying-flood-fills-to-an-image.md)
+### Related Documentation
+- [Applying flood fills to an image](../../applying-flood-fills-to-an-image.md)
   Fill consistently colored connected parts of an image with a new color.
-- [func floodFill(from: CGPoint, newColor: Pixel_8, connectivity: vImage.FloodFillConnectivity)](vimage/pixelbuffer/floodfill(from:newcolor:connectivity:)-44z7t.md)
+### Applying a flood fill to an image
+- [func floodFill(from: CGPoint, newColor: Pixel_8, connectivity: vImage.FloodFillConnectivity)](./floodfill%28from,newcolor,connectivity%29-44z7t.md)
   Applies an in-place flood-fill operation to the 8-bit planar image.
-- [func floodFill(from: CGPoint, newColor: Pixel_8888, connectivity: vImage.FloodFillConnectivity)](vimage/pixelbuffer/floodfill(from:newcolor:connectivity:)-56w4b.md)
+- [func floodFill(from: CGPoint, newColor: Pixel_8888, connectivity: vImage.FloodFillConnectivity)](./floodfill%28from,newcolor,connectivity%29-56w4b.md)
   Applies an in-place flood-fill operation to the interleaved 4-channel, 8-bit-per-pixel image.
-- [func floodFill(from: CGPoint, newColor: Pixel_16U, connectivity: vImage.FloodFillConnectivity)](vimage/pixelbuffer/floodfill(from:newcolor:connectivity:)-219lg.md)
+- [func floodFill(from: CGPoint, newColor: Pixel_16U, connectivity: vImage.FloodFillConnectivity)](./floodfill%28from,newcolor,connectivity%29-219lg.md)
   Applies an in-place flood-fill operation to the unsigned 16-bit planar image.
 
 

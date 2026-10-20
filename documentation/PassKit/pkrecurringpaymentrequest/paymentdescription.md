@@ -1,7 +1,8 @@
 # paymentDescription
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description that you provide of the recurring payment and that Apple Pay displays to the user in the payment sheet.
 
@@ -18,13 +19,18 @@ A description that you provide of the recurring payment and that Apple Pay displ
 var paymentDescription: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * paymentDescription;
+```
+
 #### Discussion
 
 Provide a display name for the recurring payment, for example, “Apple News+”.
 
 ## See Also
 
-- [var billingAgreement: String?](pkrecurringpaymentrequest/billingagreement.md)
+### Describing a recurring payment
+- [var billingAgreement: String?](./billingagreement.md)
   A localized billing agreement that the payment sheet displays to the user before the user authorizes the payment.
 
 

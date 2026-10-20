@@ -1,7 +1,8 @@
 # kIOUSB30DeviceNotificationTypeFunctionWake
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The function wake flag.
 
@@ -10,7 +11,7 @@ The function wake flag.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30DeviceNotificationTypeFunctionWake = 1
 ```
 

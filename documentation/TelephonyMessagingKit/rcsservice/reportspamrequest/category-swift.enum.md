@@ -1,7 +1,8 @@
 # RCSService.ReportSpamRequest.Category
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of spam types, for use while reporting an RCS message as spam.
 
@@ -17,36 +18,37 @@ enum Category
 ## Topics
 
 ### Identifying spam categories
-- [RCSService.ReportSpamRequest.Category.invalid](rcsservice/reportspamrequest/category-swift.enum/invalid.md)
+- [RCSService.ReportSpamRequest.Category.invalid](./category-swift.enum/invalid.md)
   RCS message considered as invalid.
-- [RCSService.ReportSpamRequest.Category.spam](rcsservice/reportspamrequest/category-swift.enum/spam.md)
+- [RCSService.ReportSpamRequest.Category.spam](./category-swift.enum/spam.md)
   RCS message considered as spam.
-- [RCSService.ReportSpamRequest.Category.fraud](rcsservice/reportspamrequest/category-swift.enum/fraud.md)
+- [RCSService.ReportSpamRequest.Category.fraud](./category-swift.enum/fraud.md)
   RCS message considered as fraud.
-- [RCSService.ReportSpamRequest.Category.inappropriateContent](rcsservice/reportspamrequest/category-swift.enum/inappropriatecontent.md)
+- [RCSService.ReportSpamRequest.Category.inappropriateContent](./category-swift.enum/inappropriatecontent.md)
   RCS message considered as inappropriate content.
-- [RCSService.ReportSpamRequest.Category.other](rcsservice/reportspamrequest/category-swift.enum/other.md)
+- [RCSService.ReportSpamRequest.Category.other](./category-swift.enum/other.md)
   RCS message considered as other spam category.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var message: RCSMessage](rcsservice/reportspamrequest/message.md)
+### Accessing request properties
+- [var message: RCSMessage](./message.md)
   The message to report as spam.
-- [var fileContent: Data?](rcsservice/reportspamrequest/filecontent.md)
+- [var fileContent: Data?](./filecontent.md)
   The content of the file attachment message.
-- [var category: RCSService.ReportSpamRequest.Category?](rcsservice/reportspamrequest/category-swift.property.md)
+- [var category: RCSService.ReportSpamRequest.Category?](./category-swift.property.md)
   An optional category to classify the spam type of the message.
-- [var reason: String?](rcsservice/reportspamrequest/reason.md)
+- [var reason: String?](./reason.md)
   An optional reason to report the message as spam.
 
 

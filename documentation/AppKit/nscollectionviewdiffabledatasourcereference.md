@@ -1,7 +1,8 @@
 # NSCollectionViewDiffableDataSourceReference
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The object you use to manage data and provide items for a collection view.
 
@@ -14,11 +15,15 @@ The object you use to manage data and provide items for a collection view.
 class NSCollectionViewDiffableDataSourceReference
 ```
 
+```objc
+@interface NSCollectionViewDiffableDataSource : NSObject
+```
+
 #### Overview
 
-> ❗ **Important**:  If you’re working in a Swift codebase, always use [`NSCollectionViewDiffableDataSource`](nscollectionviewdiffabledatasource-axww.md) instead of `NSCollectionViewDiffableDataSourceReference`.
+> ❗ **Important**:  If you’re working in a Swift codebase, always use [`NSCollectionViewDiffableDataSource`](./nscollectionviewdiffabledatasource-axww.md) instead of `NSCollectionViewDiffableDataSourceReference`.
 
-A *diffable data source* object is a specialized type of data source that works together with your collection view object. It provides the behavior you need to manage updates to your collection view’s data and UI in a simple, efficient way. It also conforms to the [`NSCollectionViewDataSource`](nscollectionviewdatasource.md) protocol and provides implementations for all of the protocol’s methods.
+A *diffable data source* object is a specialized type of data source that works together with your collection view object. It provides the behavior you need to manage updates to your collection view’s data and UI in a simple, efficient way. It also conforms to the [`NSCollectionViewDataSource`](./nscollectionviewdatasource.md) protocol and provides implementations for all of the protocol’s methods.
 
 To fill a collection view with data:
 
@@ -27,7 +32,7 @@ To fill a collection view with data:
 3. Generate the current state of the data.
 4. Display the data in the UI.
 
-To connect a diffable data source to a collection view, you create the diffable data source using its [`init(collectionView:itemProvider:)`](nscollectionviewdiffabledatasourcereference/init(collectionview:itemprovider:).md) initializer, passing in the collection view you want to associate with that data source. You also pass in an item provider, where you configure each of your items to determine how to display your data in the UI.
+To connect a diffable data source to a collection view, you create the diffable data source using its [`init(collectionView:itemProvider:)`](./nscollectionviewdiffabledatasourcereference/init%28collectionview,itemprovider%29.md) initializer, passing in the collection view you want to associate with that data source. You also pass in an item provider, where you configure each of your items to determine how to display your data in the UI.
 
 ```swift
 dataSource = NSCollectionViewDiffableDataSource<Int, UUID>(collectionView: collectionView) {
@@ -36,49 +41,49 @@ dataSource = NSCollectionViewDiffableDataSource<Int, UUID>(collectionView: colle
 }
 ```
 
-Then, you generate the current state of the data and display the data in the UI by constructing and applying a snapshot. For more information, see [`NSDiffableDataSourceSnapshotReference`](nsdiffabledatasourcesnapshotreference.md).
+Then, you generate the current state of the data and display the data in the UI by constructing and applying a snapshot. For more information, see [`NSDiffableDataSourceSnapshotReference`](./nsdiffabledatasourcesnapshotreference.md).
 
 ## Topics
 
 ### Creating a Diffable Data Source
-- [init(collectionView: NSCollectionView, itemProvider: NSCollectionViewDiffableDataSourceReferenceItemProvider)](nscollectionviewdiffabledatasourcereference/init(collectionview:itemprovider:).md)
+- [init(collectionView: NSCollectionView, itemProvider: NSCollectionViewDiffableDataSourceReferenceItemProvider)](./nscollectionviewdiffabledatasourcereference/init%28collectionview,itemprovider%29.md)
   Creates a diffable data source with the specified item provider, and connects it to the specified collection view.
-- [typealias NSCollectionViewDiffableDataSourceReferenceItemProvider](nscollectionviewdiffabledatasourcereferenceitemprovider.md)
+- [typealias NSCollectionViewDiffableDataSourceReferenceItemProvider](./nscollectionviewdiffabledatasourcereferenceitemprovider.md)
   A closure that configures and returns an item for a collection view from its diffable data source.
 ### Creating Supplementary Views
-- [var supplementaryViewProvider: NSCollectionViewDiffableDataSourceReferenceSupplementaryViewProvider?](nscollectionviewdiffabledatasourcereference/supplementaryviewprovider.md)
+- [var supplementaryViewProvider: NSCollectionViewDiffableDataSourceReferenceSupplementaryViewProvider?](./nscollectionviewdiffabledatasourcereference/supplementaryviewprovider.md)
   The closure that configures and returns the collection view’s supplementary views, such as headers and footers, from the diffable data source.
-- [typealias NSCollectionViewDiffableDataSourceReferenceSupplementaryViewProvider](nscollectionviewdiffabledatasourcereferencesupplementaryviewprovider.md)
+- [typealias NSCollectionViewDiffableDataSourceReferenceSupplementaryViewProvider](./nscollectionviewdiffabledatasourcereferencesupplementaryviewprovider.md)
   A closure that configures and returns a collection view’s supplementary view, such as a header or footer, from a diffable data source.
 ### Identifying Items
-- [func itemIdentifier(for: IndexPath) -> Any?](nscollectionviewdiffabledatasourcereference/itemidentifier(for:).md)
+- [func itemIdentifier(for: IndexPath) -> Any?](./nscollectionviewdiffabledatasourcereference/itemidentifier%28for%29.md)
   Returns an identifier for the item at the specified index path in the collection view.
-- [func indexPath(forItemIdentifier: Any) -> IndexPath?](nscollectionviewdiffabledatasourcereference/indexpath(foritemidentifier:).md)
+- [func indexPath(forItemIdentifier: Any) -> IndexPath?](./nscollectionviewdiffabledatasourcereference/indexpath%28foritemidentifier%29.md)
   Returns an index path for the item with the specified identifier in the collection view.
 ### Updating Data
-- [func snapshot() -> NSDiffableDataSourceSnapshotReference](nscollectionviewdiffabledatasourcereference/snapshot.md)
+- [func snapshot() -> NSDiffableDataSourceSnapshotReference](./nscollectionviewdiffabledatasourcereference/snapshot%28%29.md)
   Returns a representation of the current state of the data in the collection view.
-- [func applySnapshot(NSDiffableDataSourceSnapshotReference, animatingDifferences: Bool)](nscollectionviewdiffabledatasourcereference/applysnapshot(_:animatingdifferences:).md)
+- [func applySnapshot(NSDiffableDataSourceSnapshotReference, animatingDifferences: Bool)](./nscollectionviewdiffabledatasourcereference/applysnapshot%28_,animatingdifferences%29.md)
   Updates the UI to reflect the state of the data in the specified snapshot, optionally animating the UI changes.
 ### Supporting Protocol Requirements
-- [Protocol Implementations](protocol-implementations.md)
+- [Protocol Implementations](./protocol-implementations.md)
   Access the diffable data source’s implementations of protocol methods.
 ### Supporting Bridging
-- [class NSCollectionViewDiffableDataSource](nscollectionviewdiffabledatasource-axww.md)
+- [class NSCollectionViewDiffableDataSource](./nscollectionviewdiffabledatasource-axww.md)
   The object you use to manage data and provide items for a collection view.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCollectionViewDataSource](nscollectionviewdatasource.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCollectionViewDataSource](./nscollectionviewdatasource.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

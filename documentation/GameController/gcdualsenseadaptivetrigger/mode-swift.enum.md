@@ -1,7 +1,8 @@
 # GCDualSenseAdaptiveTrigger.Mode
 
 **Framework**: Game Controller  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The possible modes of an adaptive trigger.
 
@@ -19,37 +20,42 @@ The possible modes of an adaptive trigger.
 enum Mode
 ```
 
+```c
+enum GCDualSenseAdaptiveTriggerMode : NSInteger;
+```
+
 ## Topics
 
 ### Modes
-- [GCDualSenseAdaptiveTrigger.Mode.off](gcdualsenseadaptivetrigger/mode-swift.enum/off.md)
+- [GCDualSenseAdaptiveTrigger.Mode.off](./mode-swift.enum/off.md)
   Provides no adaptive trigger effects.
-- [GCDualSenseAdaptiveTrigger.Mode.feedback](gcdualsenseadaptivetrigger/mode-swift.enum/feedback.md)
+- [GCDualSenseAdaptiveTrigger.Mode.feedback](./mode-swift.enum/feedback.md)
   Provides feedback when the user depresses the trigger equal to, or greater than, the start position.
-- [GCDualSenseAdaptiveTrigger.Mode.weapon](gcdualsenseadaptivetrigger/mode-swift.enum/weapon.md)
+- [GCDualSenseAdaptiveTrigger.Mode.weapon](./mode-swift.enum/weapon.md)
   Provides feedback when the user depresses the trigger between the start and the end positions.
-- [GCDualSenseAdaptiveTrigger.Mode.vibration](gcdualsenseadaptivetrigger/mode-swift.enum/vibration.md)
+- [GCDualSenseAdaptiveTrigger.Mode.vibration](./mode-swift.enum/vibration.md)
   Vibrates when the user depresses the trigger equal to, or greater than, the start position.
-- [GCDualSenseAdaptiveTrigger.Mode.slopeFeedback](gcdualsenseadaptivetrigger/mode-swift.enum/slopefeedback.md)
+- [GCDualSenseAdaptiveTrigger.Mode.slopeFeedback](./mode-swift.enum/slopefeedback.md)
   Provides feedback when the user tilts the trigger between the start and the end positions.
 ### Initializers
-- [init?(rawValue: Int)](gcdualsenseadaptivetrigger/mode-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mode-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var mode: GCDualSenseAdaptiveTrigger.Mode](gcdualsenseadaptivetrigger/mode-swift.property.md)
+### Getting the mode
+- [var mode: GCDualSenseAdaptiveTrigger.Mode](./mode-swift.property.md)
   The current configuration of the adaptive trigger.
-- [func setModeOff()](gcdualsenseadaptivetrigger/setmodeoff.md)
+- [func setModeOff()](./setmodeoff%28%29.md)
   Sets the mode to off and stops any trigger effect.
 
 

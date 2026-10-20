@@ -1,7 +1,8 @@
 # disabled
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The appearance data to apply to the tab bar item when it’s disabled.
 
@@ -18,17 +19,22 @@ The appearance data to apply to the tab bar item when it’s disabled.
 var disabled: UITabBarItemStateAppearance { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) UITabBarItemStateAppearance * disabled;
+```
+
 #### Discussion
 
 To set the attributes for this state, get the object in this property and modify it.
 
 ## See Also
 
-- [var normal: UITabBarItemStateAppearance](uitabbaritemappearance/normal.md)
+### Configuring attributes for different item states
+- [var normal: UITabBarItemStateAppearance](./normal.md)
   The appearance data to apply to the tab bar item when it’s enabled, unselected, and not the focused item.
-- [var selected: UITabBarItemStateAppearance](uitabbaritemappearance/selected.md)
+- [var selected: UITabBarItemStateAppearance](./selected.md)
   The appearance data to apply to the tab bar item when it’s selected.
-- [var focused: UITabBarItemStateAppearance](uitabbaritemappearance/focused.md)
+- [var focused: UITabBarItemStateAppearance](./focused.md)
   The appearance data to apply to the tab bar item when it’s focused.
 
 

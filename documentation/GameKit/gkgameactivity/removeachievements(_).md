@@ -1,7 +1,8 @@
 # removeAchievements(_:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all achievements if they exist.
 
@@ -19,15 +20,20 @@ Removes all achievements if they exist.
 func removeAchievements(_ achievements: [GKAchievement])
 ```
 
+```objc
+- (void) removeAchievements:(NSArray<GKAchievement *> *) achievements;
+```
+
 ## See Also
 
-- [var achievements: Set<GKAchievement>](gkgameactivity/achievements.md)
+### Getting and removing achievements
+- [var achievements: Set<GKAchievement>](./achievements.md)
   All achievements that have been associated with this activity.
-- [func progress(on: GKAchievement) -> Double](gkgameactivity/progress(on:).md)
+- [func progress(on: GKAchievement) -> Double](./progress%28on%29.md)
   Get the achievement progress from a specific achievement of the local player if previously set.
-- [func setProgress(on: GKAchievement, to: Double)](gkgameactivity/setprogress(on:to:).md)
+- [func setProgress(on: GKAchievement, to: Double)](./setprogress%28on,to%29.md)
   Set a progress for an achievement for a player.
-- [func setAchievementCompleted(GKAchievement)](gkgameactivity/setachievementcompleted(_:).md)
+- [func setAchievementCompleted(GKAchievement)](./setachievementcompleted%28_%29.md)
   Set progress to 100% for an achievement for a player.
 
 

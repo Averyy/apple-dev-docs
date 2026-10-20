@@ -1,6 +1,7 @@
 # Defining a custom URL scheme for your app
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Use specially formatted URLs to link to content within your app.
 
@@ -8,7 +9,7 @@ Use specially formatted URLs to link to content within your app.
 
 Custom URL schemes provide a way to reference resources inside your app. Users tapping a custom URL in an email, for example, launch your app in a specified context. Other apps can also trigger your app to launch with specific context data; for example, a photo library app might display a specified image.
 
-While custom URL schemes are an acceptable form of deep linking, universal links are strongly recommended. For more information on universal links, see [`Allowing apps and websites to link to your content`](allowing-apps-and-websites-to-link-to-your-content.md).
+While custom URL schemes are an acceptable form of deep linking, universal links are strongly recommended. For more information on universal links, see [Allowing apps and websites to link to your content](./allowing-apps-and-websites-to-link-to-your-content.md).
 
 Apple supports common schemes associated with system apps, such as `mailto`, `tel`, `sms`, and `facetime`. You can define your own custom scheme and register your app to support it.
 
@@ -27,7 +28,7 @@ myphotoapp:albumname?name="albumname"
 myphotoapp:albumname?index=1
 ```
 
-Clients craft URLs based on your scheme and ask your app to open them by calling the [`open(_:options:completionHandler:)`](https://developer.apple.com/documentation/uikit/uiapplication/open(_:options:completionhandler:)) method of [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication). Clients can ask the system to inform them when your app opens the URL.
+Clients craft URLs based on your scheme and ask your app to open them by calling the [`open(_:options:completionHandler:)`](../UIKit/uiapplication/open%28_,options,completionhandler%29.md) method of [`UIApplication`](../UIKit/uiapplication.md). Clients can ask the system to inform them when your app opens the URL.
 
 ```swift
 let url = URL(string: "myphotoapp:Vacation?index=1")
@@ -39,7 +40,7 @@ UIApplication.shared.open(url!) { (result) in
 }
 ```
 
-##### Register Your Url Scheme
+##### Register your URL scheme
 
 URL scheme registration specifies which URLs to redirect to your app. Register your scheme in Xcode from the Info tab of your project settings. Update the URL Types section to declare all of the URL schemes your app supports, as shown in the following illustration.
 
@@ -47,17 +48,17 @@ URL scheme registration specifies which URLs to redirect to your app. Register y
 - Choose a role for your app: either an editor role for URL schemes you define, or a viewer role for schemes your app adopts but doesn’t define.
 - Specify an identifier for your app.
 
-![Screenshot of Xcode showing the URL Types section with a URL that reads “com.example.myphotoapp.”](/images/com.apple.Xcode/defining-a-custom-url-scheme-for-your-app-1@2x.png)
+![Screenshot of Xcode showing the URL Types section with a URL that reads “com.example.myphotoapp.”](https://developer.apple.com/tutorials/images/com.apple.Xcode/defining-a-custom-url-scheme-for-your-app-1@2x.png)
 
 The identifier you supply with your scheme distinguishes your app from others that declare support for the same scheme. To ensure uniqueness, specify a reverse DNS string that incorporates your company’s domain and app name. Although using a reverse DNS string is a best practice, it doesn’t prevent other apps from registering the same scheme and handling the associated links. Use universal links instead of custom URL schemes to define links that are uniquely associated with your website.
 
 > **Note**: If multiple apps register the same scheme, the app the system targets is undefined. There’s no mechanism to change the app or to change the order apps appear in a Share sheet.
 
-Some URL schemes are reserved for system use. The system directs well-known types of URLs to the corresponding system apps, and well-known `http–`based URLs to specific apps such as Maps, YouTube, and Music. For information about the schemes supported by Apple, see [`Apple URL Scheme Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/featuredarticles/iPhoneURLScheme_Reference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007899).
+Some URL schemes are reserved for system use. The system directs well-known types of URLs to the corresponding system apps, and well-known `http–`based URLs to specific apps such as Maps, YouTube, and Music. For information about the schemes supported by Apple, see [Apple URL Scheme Reference](https://developer.apple.com/library/archive/featuredarticles/iPhoneURLScheme_Reference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007899).
 
-##### Handle Incoming Urls
+##### Handle incoming URLs
 
-When another app opens a URL containing your custom scheme, the system launches your app, if necessary, and brings it to the foreground. The system delivers the URL to your app by calling your app delegate’s [`application(_:open:options:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:open:options:)) method. Add code to the method to parse the contents of the URL and take appropriate actions. To ensure the URL is parsed correctly, use [`NSURLComponents`](https://developer.apple.com/documentation/foundation/nsurlcomponents) APIs to extract the components. Obtain additional information about the URL, such as which app opened it, from the system-provided options dictionary.
+When another app opens a URL containing your custom scheme, the system launches your app, if necessary, and brings it to the foreground. The system delivers the URL to your app by calling your app delegate’s [`application(_:open:options:)`](../UIKit/uiapplicationdelegate/application%28_,open,options%29.md) method. Add code to the method to parse the contents of the URL and take appropriate actions. To ensure the URL is parsed correctly, use [`NSURLComponents`](../Foundation/nsurlcomponents.md) APIs to extract the components. Obtain additional information about the URL, such as which app opened it, from the system-provided options dictionary.
 
 ```swift
 func application(_ application: UIApplication,
@@ -87,9 +88,9 @@ func application(_ application: UIApplication,
 }
 ```
 
-The system also uses your app delegate’s [`application(_:open:options:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:open:options:)) method to open custom file types that your app supports.
+The system also uses your app delegate’s [`application(_:open:options:)`](../UIKit/uiapplicationdelegate/application%28_,open,options%29.md) method to open custom file types that your app supports.
 
-If your app has opted into [`Scenes`](https://developer.apple.com/documentation/uikit/scenes), and your app isn’t running, the system delivers the URL to the [`scene(_:willConnectTo:options:)`](https://developer.apple.com/documentation/uikit/uiscenedelegate/scene(_:willconnectto:options:)) delegate method after launch, and to [`scene(_:openURLContexts:)`](https://developer.apple.com/documentation/uikit/uiscenedelegate/scene(_:openurlcontexts:)) when your app opens a URL while running or suspended in memory.
+If your app has opted into [Scenes](../UIKit/scenes.md), and your app isn’t running, the system delivers the URL to the [`scene(_:willConnectTo:options:)`](../UIKit/uiscenedelegate/scene%28_,willconnectto,options%29.md) delegate method after launch, and to [`scene(_:openURLContexts:)`](../UIKit/uiscenedelegate/scene%28_,openurlcontexts%29.md) when your app opens a URL while running or suspended in memory.
 
 ```swift
 func scene(_ scene: UIScene, 

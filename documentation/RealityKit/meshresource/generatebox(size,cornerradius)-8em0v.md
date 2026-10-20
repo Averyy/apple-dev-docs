@@ -1,7 +1,8 @@
 # generateBox(size:cornerRadius:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a box mesh from a length for the box’s width, height, and depth, and a radius for the corners.
 
@@ -11,13 +12,20 @@ Creates a box mesh from a length for the box’s width, height, and depth, and a
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
 ```swift
 @MainActor
 @preconcurrency static func generateBox(size: Float, cornerRadius: Float = 0) -> MeshResource
+```
+
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency static func generateBox(size: SIMD3<Float>, cornerRadius: Float = 0) -> MeshResource
 ```
 
 #### Discussion
@@ -33,11 +41,12 @@ The method centers the box at the entity’s origin and aligns the box’s faces
 
 ## See Also
 
-- [static func generateBox(size: SIMD3<Float>, cornerRadius: Float) -> MeshResource](meshresource/generatebox(size:cornerradius:)-2ovma.md)
+### Creating a box
+- [static func generateBox(size: SIMD3<Float>, cornerRadius: Float) -> MeshResource](./generatebox%28size,cornerradius%29-2ovma.md)
   Creates a box mesh from a vector of three scalar values that represent width, height, and depth, respectively, and a radius for the corners.
-- [static func generateBox(width: Float, height: Float, depth: Float, cornerRadius: Float, splitFaces: Bool) -> MeshResource](meshresource/generatebox(width:height:depth:cornerradius:splitfaces:).md)
+- [static func generateBox(width: Float, height: Float, depth: Float, cornerRadius: Float, splitFaces: Bool) -> MeshResource](./generatebox%28width,height,depth,cornerradius,splitfaces%29.md)
   Creates a box mesh from a width, height, depth and a corner radius, with the ability to assign different materials to each face.
-- [static func generateBox(size: SIMD3<Float>, majorCornerRadius: Float, minorCornerRadius: Float) -> MeshResource](meshresource/generatebox(size:majorcornerradius:minorcornerradius:).md)
+- [static func generateBox(size: SIMD3<Float>, majorCornerRadius: Float, minorCornerRadius: Float) -> MeshResource](./generatebox%28size,majorcornerradius,minorcornerradius%29.md)
   Creates a box mesh from a vector of three scalar values that represent width, height, and depth, respectively, and radii for the corners.
 
 

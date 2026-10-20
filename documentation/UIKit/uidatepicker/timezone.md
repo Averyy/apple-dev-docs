@@ -1,7 +1,8 @@
 # timeZone
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time zone reflected in the date displayed by the date picker.
 
@@ -17,19 +18,24 @@ The time zone reflected in the date displayed by the date picker.
 var timeZone: TimeZone? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSTimeZone * timeZone;
+```
+
 #### Discussion
 
-The default value is `nil`, which tells the date picker to use the current time zone as returned by [`local`](https://developer.apple.com/documentation/foundation/nstimezone/local) ([`NSTimeZone`](https://developer.apple.com/documentation/foundation/nstimezone)) or the time zone used by the date picker’s calendar.
+The default value is `nil`, which tells the date picker to use the current time zone as returned by [`local`](../../Foundation/nstimezone/local.md) ([`NSTimeZone`](../../Foundation/nstimezone.md)) or the time zone used by the date picker’s calendar.
 
 ## See Also
 
-- [var calendar: Calendar!](uidatepicker/calendar.md)
+### Managing the date and calendar
+- [var calendar: Calendar!](./calendar.md)
   The calendar to use for the date picker.
-- [var date: Date](uidatepicker/date.md)
+- [var date: Date](./date.md)
   The date displayed by the date picker.
-- [var locale: Locale?](uidatepicker/locale.md)
+- [var locale: Locale?](./locale.md)
   The locale used by the date picker.
-- [func setDate(Date, animated: Bool)](uidatepicker/setdate(_:animated:).md)
+- [func setDate(Date, animated: Bool)](./setdate%28_,animated%29.md)
   Sets the date to display in the date picker, with an option to animate the setting.
 
 

@@ -1,7 +1,8 @@
 # resultStateBatch(sourceImage:sourceStates:destinationImage:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 func resultStateBatch(sourceImage: [MPSImage], sourceStates: [[MPSCNNConvolutionGradientState]]?, destinationImage: [MPSImage]) -> [MPSCNNConvolutionTransposeGradientState]?
+```
+
+```objc
+- (MPSCNNConvolutionTransposeGradientStateBatch *) resultStateBatchForSourceImage:(MPSImageBatch *) sourceImage sourceStates:(NSArray<NSArray<MPSCNNConvolutionGradientState *> *> *) sourceStates destinationImage:(MPSImageBatch *) destinationImage;
 ```
 
 

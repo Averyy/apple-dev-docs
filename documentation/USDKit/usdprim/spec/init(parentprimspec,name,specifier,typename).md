@@ -1,7 +1,8 @@
 # init(parentPrimSpec:name:specifier:typeName:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new child prim spec under the given parent prim spec.
 

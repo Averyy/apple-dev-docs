@@ -1,7 +1,8 @@
 # AppInfoLocalizationCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request body.
 
@@ -10,23 +11,23 @@ The data element of the request body.
 
 ## Declaration
 
-```swift
+```
 object AppInfoLocalizationCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object AppInfoLocalizationCreateRequest.Data.Attributes](appinfolocalizationcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object AppInfoLocalizationCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that you set that describe the new resource.
-- [object AppInfoLocalizationCreateRequest.Data.Relationships](appinfolocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object AppInfoLocalizationCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 ## Properties
 
 - `attributes` (AppInfoLocalizationCreateRequest.Data.Attributes) *(required)*
 - `relationships` (AppInfoLocalizationCreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appInfoLocalizations`
 
 
 ---

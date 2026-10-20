@@ -1,7 +1,8 @@
 # device
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The device used to create Metal objects.
 
@@ -17,6 +18,10 @@ The device used to create Metal objects.
 
 ```swift
 var device: any MTLDevice { get }
+```
+
+```objc
+@property (nonatomic, readonly, nonnull) id<MTLDevice> device;
 ```
 
 #### Discussion

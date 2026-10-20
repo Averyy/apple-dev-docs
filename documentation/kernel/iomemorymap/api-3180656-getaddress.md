@@ -1,7 +1,8 @@
 # GetAddress
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Returns the address of the memory block.
 
@@ -11,19 +12,20 @@ Returns the address of the memory block.
 
 ## Declaration
 
-```swift
+```c
 uint64_t GetAddress(void);
 ```
 
-#### Return_value
+#### Return Value
 
 The address of the first byte of the memory block in the current process.
 
 ## See Also
 
-- [- GetLength](iomemorymap/3180657-getlength.md)
+### Getting the Map Attributes
+- [- GetLength](./api-3180657-getlength.md)
   Returns the length of the memory block in bytes.
-- [- GetOffset](iomemorymap/3438204-getoffset.md)
+- [- GetOffset](./api-3438204-getoffset.md)
   Returns the offset from the original start of the memory block.
 
 

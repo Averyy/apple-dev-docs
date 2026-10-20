@@ -1,7 +1,8 @@
 # UIVerticalBarCompressionBehavior.prefersTabBar
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A compression behavior that prefers keeping the tab bar visible.
 
@@ -16,15 +17,20 @@ A compression behavior that prefers keeping the tab bar visible.
 case prefersTabBar
 ```
 
+```c
+UIVerticalBarCompressionBehaviorPrefersTabBar
+```
+
 #### Discussion
 
 Bar items will compress before the tab bar when space is constrained.
 
 ## See Also
 
-- [UIVerticalBarCompressionBehavior.automatic](uiverticalbarcompressionbehavior/automatic.md)
+### Specifying a compression behavior
+- [UIVerticalBarCompressionBehavior.automatic](./automatic.md)
   The automatic compression behavior.
-- [UIVerticalBarCompressionBehavior.prefersBarItems](uiverticalbarcompressionbehavior/prefersbaritems.md)
+- [UIVerticalBarCompressionBehavior.prefersBarItems](./prefersbaritems.md)
   A compression behavior that prefers keeping bar items visible.
 
 

@@ -1,7 +1,8 @@
 # mediaDataStorage
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A storage container for the media data to be added to a track.
 
@@ -20,13 +21,18 @@ A storage container for the media data to be added to a track.
 var mediaDataStorage: AVMediaDataStorage? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) AVMediaDataStorage * mediaDataStorage;
+```
+
 ## See Also
 
-- [var isModified: Bool](avmutablemovietrack/ismodified.md)
+### Configuring track information
+- [var isModified: Bool](./ismodified.md)
   A Boolean value that indicates whether a track is in a modified state.
-- [var alternateGroupID: Int](avmutablemovietrack/alternategroupid.md)
+- [var alternateGroupID: Int](./alternategroupid.md)
   A number that identifies the track as a member of a particular alternate group.
-- [var sampleReferenceBaseURL: URL?](avmutablemovietrack/samplereferencebaseurl.md)
+- [var sampleReferenceBaseURL: URL?](./samplereferencebaseurl.md)
   The base URL for sample references.
 
 

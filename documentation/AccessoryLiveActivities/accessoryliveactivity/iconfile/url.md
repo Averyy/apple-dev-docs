@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Accessory Live Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL that locates the icon file’s data.
 
@@ -17,7 +18,7 @@ var url: URL { get async throws }
 
 ## Mentions
 
-- [Receiving Live Activity updates and alerts on an accessory](receiving-live-activities-on-an-accessory.md)
+- [Receiving Live Activity updates and alerts on an accessory](../../receiving-live-activities-on-an-accessory.md)
 
 #### Overview
 

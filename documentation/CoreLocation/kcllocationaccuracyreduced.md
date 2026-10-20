@@ -1,7 +1,8 @@
 # kCLLocationAccuracyReduced
 
 **Framework**: Core Location  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The level of accuracy used when an app isn’t authorized for full accuracy location data.
 
@@ -20,6 +21,10 @@ The level of accuracy used when an app isn’t authorized for full accuracy loca
 let kCLLocationAccuracyReduced: CLLocationAccuracy
 ```
 
+```c
+extern const CLLocationAccuracy kCLLocationAccuracyReduced;
+```
+
 #### Discussion
 
 The accuracy of location data is reduced in both space and time using approaches like selecting a nearby point of interest and updating the location at most a few times per hour. The approximate location preserves the user’s country or region, typically preserves the city, and is usually within 1–20 kilometers of the actual location.
@@ -28,17 +33,18 @@ If your app is authorized to access location information with full accuracy, you
 
 ## See Also
 
-- [let kCLLocationAccuracyBestForNavigation: CLLocationAccuracy](kcllocationaccuracybestfornavigation.md)
+### Desired Accuracy Constants
+- [let kCLLocationAccuracyBestForNavigation: CLLocationAccuracy](./kcllocationaccuracybestfornavigation.md)
   The highest possible accuracy that uses additional sensor data to facilitate navigation apps.
-- [let kCLLocationAccuracyBest: CLLocationAccuracy](kcllocationaccuracybest.md)
+- [let kCLLocationAccuracyBest: CLLocationAccuracy](./kcllocationaccuracybest.md)
   The best level of accuracy available.
-- [let kCLLocationAccuracyNearestTenMeters: CLLocationAccuracy](kcllocationaccuracynearesttenmeters.md)
+- [let kCLLocationAccuracyNearestTenMeters: CLLocationAccuracy](./kcllocationaccuracynearesttenmeters.md)
   Accurate to within ten meters of the desired target.
-- [let kCLLocationAccuracyHundredMeters: CLLocationAccuracy](kcllocationaccuracyhundredmeters.md)
+- [let kCLLocationAccuracyHundredMeters: CLLocationAccuracy](./kcllocationaccuracyhundredmeters.md)
   Accurate to within one hundred meters.
-- [let kCLLocationAccuracyKilometer: CLLocationAccuracy](kcllocationaccuracykilometer.md)
+- [let kCLLocationAccuracyKilometer: CLLocationAccuracy](./kcllocationaccuracykilometer.md)
   Accurate to the nearest kilometer.
-- [let kCLLocationAccuracyThreeKilometers: CLLocationAccuracy](kcllocationaccuracythreekilometers.md)
+- [let kCLLocationAccuracyThreeKilometers: CLLocationAccuracy](./kcllocationaccuracythreekilometers.md)
   Accurate to the nearest three kilometers.
 
 

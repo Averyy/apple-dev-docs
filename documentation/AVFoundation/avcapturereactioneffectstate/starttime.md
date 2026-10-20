@@ -1,7 +1,8 @@
 # startTime
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The presentation time of the first frame where the system renders the effect.
 
@@ -18,13 +19,18 @@ The presentation time of the first frame where the system renders the effect.
 var startTime: CMTime { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMTime startTime;
+```
+
 ## See Also
 
-- [var reactionType: AVCaptureReactionType](avcapturereactioneffectstate/reactiontype.md)
+### Configuring the effect state
+- [var reactionType: AVCaptureReactionType](./reactiontype.md)
   The type of reaction.
-- [struct AVCaptureReactionType](avcapturereactiontype.md)
+- [struct AVCaptureReactionType](../avcapturereactiontype.md)
   Constants that indicate the type of reaction that an effect can perform.
-- [var endTime: CMTime](avcapturereactioneffectstate/endtime.md)
+- [var endTime: CMTime](./endtime.md)
   The presentation time of the first frame following the end of a reaction effect.
 
 

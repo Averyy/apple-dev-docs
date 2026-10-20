@@ -1,7 +1,8 @@
 # blendLayer
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The order in which the framework composites the animation.
 
@@ -11,7 +12,7 @@ The order in which the framework composites the animation.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,15 +26,16 @@ The framework applies multiple animations on the same target in ascending order 
 
 ## See Also
 
-- [var group: [any AnimationDefinition]](animationgroup/group.md)
+### Configuring the group
+- [var group: [any AnimationDefinition]](./group.md)
   A collection of animations to run.
-- [var name: String](animationgroup/name.md)
+- [var name: String](./name.md)
   A textual name for the group.
-- [var bindTarget: BindTarget](animationgroup/bindtarget.md)
+- [var bindTarget: BindTarget](./bindtarget.md)
   A textual name that refers to a property on which to run the grouped animations.
-- [var additive: Bool](animationgroup/additive.md)
+- [var additive: Bool](./additive.md)
   A Boolean value that indicates whether the animation builds on the current state of the target entity or resets the state before running.
-- [var group: [any AnimationDefinition]](animationgroup/group.md)
+- [var group: [any AnimationDefinition]](./group.md)
   A collection of animations to run.
 
 

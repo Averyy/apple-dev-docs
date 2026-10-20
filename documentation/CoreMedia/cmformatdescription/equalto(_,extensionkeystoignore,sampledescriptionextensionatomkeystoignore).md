@@ -1,7 +1,8 @@
 # equalTo(_:extensionKeysToIgnore:sampleDescriptionExtensionAtomKeysToIgnore:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Evaluates equality for the parts of two audio format descriptions, ignoring the extensions you specify.
 
@@ -28,9 +29,10 @@ func equalTo(_ otherFormatDescription: CMFormatDescription, extensionKeysToIgnor
 
 ## See Also
 
-- [static func == (CMFormatDescription, CMFormatDescription) -> Bool](cmformatdescription/==(_:_:).md)
+### Comparing Format Descriptions
+- [static func == (CMFormatDescription, CMFormatDescription) -> Bool](./eqeq%28_,_%29.md)
   Equality is derived from
-- [func equalTo(CMAudioFormatDescription, equalityMask: CMFormatDescription.EqualityMask) -> (Bool, equalityMask: CMFormatDescription.EqualityMask)](cmformatdescription/equalto(_:equalitymask:).md)
+- [func equalTo(CMAudioFormatDescription, equalityMask: CMFormatDescription.EqualityMask) -> (Bool, equalityMask: CMFormatDescription.EqualityMask)](./equalto%28_,equalitymask%29.md)
   Evaluates equality for the parts of two audio format descriptions.
 
 

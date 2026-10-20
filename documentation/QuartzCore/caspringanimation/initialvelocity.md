@@ -1,7 +1,8 @@
 # initialVelocity
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The initial velocity of the object attached to the spring.
 
@@ -19,19 +20,24 @@ The initial velocity of the object attached to the spring.
 var initialVelocity: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat initialVelocity;
+```
+
 #### Discussion
 
 Defaults to `0`, which represents an unmoving object. Negative values represent the object moving away from the spring attachment point, positive values represent the object moving towards the spring attachment point.
 
 ## See Also
 
-- [var damping: CGFloat](caspringanimation/damping.md)
+### Configuring Physical Attributes
+- [var damping: CGFloat](./damping.md)
   Defines how the spring’s motion should be damped due to the forces of friction.
-- [var mass: CGFloat](caspringanimation/mass.md)
+- [var mass: CGFloat](./mass.md)
   The mass of the object attached to the end of the spring.
-- [var settlingDuration: CFTimeInterval](caspringanimation/settlingduration.md)
+- [var settlingDuration: CFTimeInterval](./settlingduration.md)
   The estimated duration required for the spring system to be considered at rest.
-- [var stiffness: CGFloat](caspringanimation/stiffness.md)
+- [var stiffness: CGFloat](./stiffness.md)
   The spring stiffness coefficient.
 
 

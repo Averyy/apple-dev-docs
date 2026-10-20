@@ -1,7 +1,8 @@
 # OSLogStore.Scope.system
 
 **Framework**: OSLog  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 12.0+
@@ -12,9 +13,14 @@
 case system
 ```
 
+```c
+OSLogStoreSystem
+```
+
 ## See Also
 
-- [OSLogStore.Scope.currentProcessIdentifier](oslogstore/scope/currentprocessidentifier.md)
+### Enumeration Cases
+- [OSLogStore.Scope.currentProcessIdentifier](./currentprocessidentifier.md)
 
 
 ---

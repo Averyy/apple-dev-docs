@@ -1,7 +1,8 @@
 # CTFrameGetPath(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the path used to create the frame.
 
@@ -20,17 +21,22 @@ Returns the path used to create the frame.
 func CTFrameGetPath(_ frame: CTFrame) -> CGPath
 ```
 
+```c
+extern CGPathRefCTFrameGetPath(CTFrameRef frame);
+```
+
 ## Parameters
 
 - `frame`: The frame whose path is returned.
 
 ## See Also
 
-- [func CTFrameGetStringRange(CTFrame) -> CFRange](ctframegetstringrange(_:).md)
+### Getting Frame Data
+- [func CTFrameGetStringRange(CTFrame) -> CFRange](./ctframegetstringrange%28_%29.md)
   Returns the range of characters originally requested to fill the frame.
-- [func CTFrameGetVisibleStringRange(CTFrame) -> CFRange](ctframegetvisiblestringrange(_:).md)
+- [func CTFrameGetVisibleStringRange(CTFrame) -> CFRange](./ctframegetvisiblestringrange%28_%29.md)
   Returns the range of characters that actually fit in the frame.
-- [func CTFrameGetFrameAttributes(CTFrame) -> CFDictionary?](ctframegetframeattributes(_:).md)
+- [func CTFrameGetFrameAttributes(CTFrame) -> CFDictionary?](./ctframegetframeattributes%28_%29.md)
   Returns the frame attributes used to create the frame.
 
 

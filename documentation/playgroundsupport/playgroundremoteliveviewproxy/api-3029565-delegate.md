@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Playground Support  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 A delegate you use to handle messages from the live view.
 
@@ -17,7 +18,8 @@ weak var delegate: PlaygroundRemoteLiveViewProxyDelegate?
 
 ## See Also
 
-- [func receive(PlaygroundValue)](playgroundremoteliveviewproxy/3029569-receive.md)
+### Receiving Messages
+- [func receive(PlaygroundValue)](./api-3029569-receive.md)
   Allows the proxy to receive a live view message from a remote object.
 
 

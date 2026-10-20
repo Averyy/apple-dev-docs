@@ -1,14 +1,15 @@
 # configWrite8
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.2+ - Deprecated in 11.0
 
 ## Declaration
 
-```swift
+```c
 void configWrite8(IOByteCount offset, UInt8 data);
 ```
 

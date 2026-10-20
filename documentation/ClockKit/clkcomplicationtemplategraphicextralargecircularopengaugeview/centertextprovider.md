@@ -1,12 +1,15 @@
 # centerTextProvider
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text provider for the center text.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -21,9 +24,10 @@ The template supports multicolored text from this text provider.
 
 ## See Also
 
-- [var gaugeProvider: CLKGaugeProvider](clkcomplicationtemplategraphicextralargecircularopengaugeview/gaugeprovider.md)
+### Accessing the Content
+- [var gaugeProvider: CLKGaugeProvider](./gaugeprovider.md)
   The gauge provider for the template.
-- [var bottomLabel: Label](clkcomplicationtemplategraphicextralargecircularopengaugeview/bottomlabel.md)
+- [var bottomLabel: Label](./bottomlabel.md)
   The SwiftUI view displayed by the template.
 
 

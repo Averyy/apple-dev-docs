@@ -1,7 +1,8 @@
 # tabViewStyle(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the style for the tab view within the current environment.
 
@@ -27,17 +28,18 @@ func tabViewStyle<S>(_ style: S) -> some View where S : TabViewStyle
 
 ## See Also
 
-- [Enhancing your app’s content with tab navigation](enhancing-your-app-content-with-tab-navigation.md)
+### Presenting views in tabs
+- [Enhancing your app’s content with tab navigation](../enhancing-your-app-content-with-tab-navigation.md)
   Keep your app content front and center while providing quick access to navigation using the tab bar.
-- [struct TabView](tabview.md)
+- [struct TabView](../tabview.md)
   A view that switches between multiple child views using interactive user interface elements.
-- [struct Tab](tab.md)
+- [struct Tab](../tab.md)
   The content for a tab and the tab’s associated tab item in a tab view.
-- [struct TabRole](tabrole.md)
+- [struct TabRole](../tabrole.md)
   A value that defines the purpose of the tab.
-- [struct TabSection](tabsection.md)
+- [struct TabSection](../tabsection.md)
   A container that you can use to add hierarchy within a tab view.
-- [func tabItem<V>(() -> V) -> some View](view/tabitem(_:).md)
+- [func tabItem<V>(() -> V) -> some View](./tabitem%28_%29.md)
   Sets the tab bar item associated with this view.
 
 

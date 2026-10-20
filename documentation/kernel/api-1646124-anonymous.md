@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kHFSBinaryCompare](1646124-anonymous/khfsbinarycompare.md)
-- [kHFSCaseFolding](1646124-anonymous/khfscasefolding.md)
+- [kHFSBinaryCompare](./api-1646124-anonymous/khfsbinarycompare.md)
+- [kHFSCaseFolding](./api-1646124-anonymous/khfscasefolding.md)
 
 
 ---

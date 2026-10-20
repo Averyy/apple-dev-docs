@@ -1,7 +1,8 @@
 # OpticalFlowObservation
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represents an optical flow that an image-analysis request produces.
 
@@ -27,32 +28,32 @@ The optical flow is a 2D image, with each pixel representing the directional cha
 ## Topics
 
 ### Creating an observation
-- [init?(VNPixelBufferObservation)](opticalflowobservation/init(_:).md)
+- [init?(VNPixelBufferObservation)](./opticalflowobservation/init%28_%29.md)
   Creates an optical flow observation.
 ### Inspecting an observation
-- [var pixelFormat: OSType](opticalflowobservation/pixelformat.md)
+- [var pixelFormat: OSType](./opticalflowobservation/pixelformat.md)
   The four-character code that identifies the pixel format.
-- [var pixelBuffer: CVReadOnlyPixelBuffer](opticalflowobservation/pixelbuffer.md)
-- [var size: CGSize](opticalflowobservation/size.md)
+- [var pixelBuffer: CVReadOnlyPixelBuffer](./opticalflowobservation/pixelbuffer.md)
+- [var size: CGSize](./opticalflowobservation/size.md)
   The size of the observation image.
 ### Getting the optical flow
-- [func flow(at: NormalizedPoint) -> (Float, Float)](opticalflowobservation/flow(at:).md)
+- [func flow(at: NormalizedPoint) -> (Float, Float)](./opticalflowobservation/flow%28at%29.md)
   Returns the optical flow for the specified location in the observation image.
 ### Accessing the memory
-- [func withUnsafePointer<R>((UnsafeRawPointer) -> R) -> R](opticalflowobservation/withunsafepointer(_:).md)
+- [func withUnsafePointer<R>((UnsafeRawPointer) -> R) -> R](./opticalflowobservation/withunsafepointer%28_%29.md)
   Invokes the given closure with a pointer to the given argument.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisionObservation](visionobservation.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisionObservation](./visionobservation.md)
 
 
 ---

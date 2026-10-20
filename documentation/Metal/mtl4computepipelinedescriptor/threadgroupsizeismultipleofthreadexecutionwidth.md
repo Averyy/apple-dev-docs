@@ -1,7 +1,8 @@
 # threadGroupSizeIsMultipleOfThreadExecutionWidth
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A boolean value indicating whether each dimension of the threadgroup size is a multiple of its corresponding thread execution width.
 
@@ -17,6 +18,10 @@ A boolean value indicating whether each dimension of the threadgroup size is a m
 
 ```swift
 var threadGroupSizeIsMultipleOfThreadExecutionWidth: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL threadGroupSizeIsMultipleOfThreadExecutionWidth;
 ```
 
 

@@ -1,7 +1,8 @@
 # textDroppableView(_:previewForDroppingAllItemsWithDefault:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for the preview to show during the drop animation.
 
@@ -15,6 +16,10 @@ Asks the delegate for the preview to show during the drop animation.
 
 ```swift
 optional func textDroppableView(_ textDroppableView: any UIView & UITextDroppable, previewForDroppingAllItemsWithDefault defaultPreview: UITargetedDragPreview) -> UITargetedDragPreview?
+```
+
+```objc
+- (UITargetedDragPreview *) textDroppableView:(UIView<UITextDroppable> *) textDroppableView previewForDroppingAllItemsWithDefault:(UITargetedDragPreview *) defaultPreview;
 ```
 
 #### Return Value

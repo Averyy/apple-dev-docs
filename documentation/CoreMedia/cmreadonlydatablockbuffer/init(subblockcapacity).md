@@ -1,7 +1,8 @@
 # init(subBlockCapacity:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create empty block buffer.
 

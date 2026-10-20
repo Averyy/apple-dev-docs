@@ -1,7 +1,8 @@
 # SetControlMemoryDescriptor
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a new IOMemoryDescriptor to use for video IO on the IOUserVideoStream.
 
@@ -10,7 +11,7 @@ Sets a new IOMemoryDescriptor to use for video IO on the IOUserVideoStream.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetControlMemoryDescriptor(IOMemoryDescriptor *in_control_memory_descriptor);
 ```
 
@@ -24,11 +25,12 @@ Setting this value should only be done during the PerformDeviceConfigurationChan
 
 ## See Also
 
-- [SetDataMemoryDescriptor](iouservideobuffer/setdatamemorydescriptor.md)
+### Working with memory descriptors
+- [SetDataMemoryDescriptor](./setdatamemorydescriptor.md)
   Sets a new IOMemoryDescriptor to use for video IO on the IOUserVideoStream.
-- [GetDataMemoryDescriptor](iouservideobuffer/getdatamemorydescriptor.md)
+- [GetDataMemoryDescriptor](./getdatamemorydescriptor.md)
   Gets the memory descriptor used for video IO that was initialized with or set on the video stream.
-- [GetControlMemoryDescriptor](iouservideobuffer/getcontrolmemorydescriptor.md)
+- [GetControlMemoryDescriptor](./getcontrolmemorydescriptor.md)
   Gets the memory descriptior used for video IO that was initialized with or set on the video stream.
 
 

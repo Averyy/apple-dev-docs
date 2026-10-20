@@ -1,7 +1,8 @@
 # box(size:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a box mesh with vertices positioned such that the origin is at the center, with faces oriented outward.
 
@@ -29,9 +30,10 @@ Use this factory method for objects that are *in* the scene rather than defining
 
 ## See Also
 
-- [static func shoebox(size: SIMD3<Float>) -> Self](reverbmeshresource/shoebox(size:).md)
+### Creating standard room shapes
+- [static func shoebox(size: SIMD3<Float>) -> Self](./shoebox%28size%29.md)
   Creates a box mesh with the vertices positioned such that the bottom surface is at y=0, with faces oriented inward.
-- [static func plane(width: Float, depth: Float) -> Self](reverbmeshresource/plane(width:depth:).md)
+- [static func plane(width: Float, depth: Float) -> Self](./plane%28width,depth%29.md)
   Creates a new rectangle reverb mesh with the specified dimensions in the entity’s xz-plane.
 
 

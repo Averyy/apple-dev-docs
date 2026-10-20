@@ -1,7 +1,8 @@
 # encode(with:)
 
 **Framework**: RoomPlan  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Serializes the view to the specified coder.
 
@@ -18,7 +19,7 @@ Serializes the view to the specified coder.
 
 #### Overview
 
-This property inherits from [`UIView`](https://developer.apple.com/documentation/uikit/uiview).
+This property inherits from [`UIView`](../../UIKit/uiview.md).
 
 ## Parameters
 
@@ -26,11 +27,12 @@ This property inherits from [`UIView`](https://developer.apple.com/documentation
 
 ## See Also
 
-- [var subviews: [UIView]](roomcaptureview/subviews.md)
+### Accessing view features
+- [var subviews: [UIView]](./subviews.md)
   An array that contains the view’s subviews.
-- [func layoutSubviews()](roomcaptureview/layoutsubviews.md)
+- [func layoutSubviews()](./layoutsubviews%28%29.md)
   Instructs the view’s subviews to position within the view.
-- [func traitCollectionDidChange(UITraitCollection?)](roomcaptureview/traitcollectiondidchange(_:).md)
+- [func traitCollectionDidChange(UITraitCollection?)](./traitcollectiondidchange%28_%29.md)
   Notifies the view when the device orientation changes.
 
 

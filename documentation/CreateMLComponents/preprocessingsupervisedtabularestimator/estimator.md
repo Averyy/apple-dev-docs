@@ -1,7 +1,8 @@
 # estimator
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The estimator.
 
@@ -22,9 +23,10 @@ var estimator: Estimator
 
 ## See Also
 
-- [var annotationColumnID: ColumnID<Estimator.Annotation>](preprocessingsupervisedtabularestimator/annotationcolumnid.md)
+### Getting the properties
+- [var annotationColumnID: ColumnID<Estimator.Annotation>](./annotationcolumnid.md)
   The annotation column identifier.
-- [var preprocessor: Preprocessor](preprocessingsupervisedtabularestimator/preprocessor.md)
+- [var preprocessor: Preprocessor](./preprocessor.md)
   The preprocessing transformer.
 
 

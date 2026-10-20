@@ -1,7 +1,8 @@
 # verificationKey
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.4+
@@ -16,6 +17,10 @@
 
 ```swift
 var verificationKey: Data { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSData * verificationKey;
 ```
 
 

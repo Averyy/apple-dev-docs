@@ -9,17 +9,18 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short RENDERING_INTENT_ABSOLUTE_COLORIMETRIC;
 ```
 
 ## See Also
 
-- [RENDERING_INTENT_AUTO](svgrenderingintent/1629939-rendering_intent_auto.md)
-- [RENDERING_INTENT_PERCEPTUAL](svgrenderingintent/1633205-rendering_intent_perceptual.md)
-- [RENDERING_INTENT_RELATIVE_COLORIMETRIC](svgrenderingintent/1633875-rendering_intent_relative_colori.md)
-- [RENDERING_INTENT_SATURATION](svgrenderingintent/1631700-rendering_intent_saturation.md)
-- [RENDERING_INTENT_UNKNOWN](svgrenderingintent/1633764-rendering_intent_unknown.md)
+### Miscellaneous
+- [RENDERING_INTENT_AUTO](./api-1629939-rendering_intent_auto.md)
+- [RENDERING_INTENT_PERCEPTUAL](./api-1633205-rendering_intent_perceptual.md)
+- [RENDERING_INTENT_RELATIVE_COLORIMETRIC](./api-1633875-rendering_intent_relative_colori.md)
+- [RENDERING_INTENT_SATURATION](./api-1631700-rendering_intent_saturation.md)
+- [RENDERING_INTENT_UNKNOWN](./api-1633764-rendering_intent_unknown.md)
 
 
 ---

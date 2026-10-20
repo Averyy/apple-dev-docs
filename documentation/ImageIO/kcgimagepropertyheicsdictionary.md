@@ -1,7 +1,8 @@
 # kCGImagePropertyHEICSDictionary
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A dictionary of properties related to an HEIC container.
 
@@ -18,6 +19,10 @@ A dictionary of properties related to an HEIC container.
 
 ```swift
 let kCGImagePropertyHEICSDictionary: CFString
+```
+
+```c
+extern CFStringRef const kCGImagePropertyHEICSDictionary;
 ```
 
 

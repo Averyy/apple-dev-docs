@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Transposes the characters on either side of the caret.
@@ -18,13 +19,18 @@ Transposes the characters on either side of the caret.
 func transposeCharactersAroundSelection()
 ```
 
+```objc
+- (void) transposeCharactersAroundSelection;
+```
+
 #### Discussion
 
 The system invokes this method in response to a person pressing Control + T.
 
 ## See Also
 
-- [func selectWordForReplacement()](betextinput/selectwordforreplacement.md)
+### Adjusting text
+- [func selectWordForReplacement()](./selectwordforreplacement%28%29.md)
   Selects a tapped word with autocorrect suggestions.
 
 

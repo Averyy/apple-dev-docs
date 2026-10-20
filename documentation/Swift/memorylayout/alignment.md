@@ -1,7 +1,8 @@
 # alignment
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default memory alignment of `T`, in bytes.
 
@@ -26,9 +27,10 @@ Use the `alignment` property for a type when allocating memory using an unsafe p
 
 ## See Also
 
-- [static var size: Int](memorylayout/size.md)
+### Accessing the Layout of a Type
+- [static var size: Int](./size.md)
   The contiguous memory footprint of `T`, in bytes.
-- [static var stride: Int](memorylayout/stride.md)
+- [static var stride: Int](./stride.md)
   The number of bytes from the start of one instance of `T` to the start of the next when stored in contiguous memory or in an `Array<T>`.
 
 

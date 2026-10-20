@@ -1,7 +1,8 @@
 # stopBrowsingVersions(completionHandler:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dismiss the Versions browser for the current document.
 
@@ -11,7 +12,15 @@ Dismiss the Versions browser for the current document.
 ## Declaration
 
 ```swift
+func stopBrowsingVersions(completionHandler: (() -> Void)? = nil)
+```
+
+```swift
 func stopBrowsingVersions() async
+```
+
+```objc
+- (void) stopBrowsingVersionsWithCompletionHandler:(void (^)()) completionHandler;
 ```
 
 #### Discussion
@@ -22,9 +31,10 @@ func stopBrowsingVersions() async
 
 ## See Also
 
-- [func browseVersions(Any?)](nsdocument/browseversions(_:).md)
+### Browsing Document Versions
+- [func browseVersions(Any?)](./browseversions%28_%29.md)
   Opens the Versions browser in the document’s main window.
-- [var isBrowsingVersions: Bool](nsdocument/isbrowsingversions.md)
+- [var isBrowsingVersions: Bool](./isbrowsingversions.md)
   A Boolean value that indicates whether the document is currently displaying the Versions browser.
 
 

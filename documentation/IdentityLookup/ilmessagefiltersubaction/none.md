@@ -1,7 +1,8 @@
 # ILMessageFilterSubAction.none
 
 **Framework**: SMS and Call Reporting  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Allows the system to show the message unfiltered due to insufficient information to determine an action.
 
@@ -17,29 +18,34 @@ Allows the system to show the message unfiltered due to insufficient information
 case none
 ```
 
+```c
+ILMessageFilterSubActionNone
+```
+
 #### Discussion
 
 In a query response, setting this value allows the system to show the message unfiltered.
 
 ## See Also
 
-- [ILMessageFilterSubAction.transactionalOthers](ilmessagefiltersubaction/transactionalothers.md)
+### Transactional Subactions
+- [ILMessageFilterSubAction.transactionalOthers](./transactionalothers.md)
   Prevents the system from showing the message normally, filtered as an Others message.
-- [ILMessageFilterSubAction.transactionalFinance](ilmessagefiltersubaction/transactionalfinance.md)
+- [ILMessageFilterSubAction.transactionalFinance](./transactionalfinance.md)
   Prevents the system from showing the message normally, filtered as a Finance message.
-- [ILMessageFilterSubAction.transactionalOrders](ilmessagefiltersubaction/transactionalorders.md)
+- [ILMessageFilterSubAction.transactionalOrders](./transactionalorders.md)
   Prevents the system from showing the message normally, filtered as an Orders (eCommerce) message.
-- [ILMessageFilterSubAction.transactionalReminders](ilmessagefiltersubaction/transactionalreminders.md)
+- [ILMessageFilterSubAction.transactionalReminders](./transactionalreminders.md)
   Prevents the system from showing the message normally, filtered as a Reminder message.
-- [ILMessageFilterSubAction.transactionalHealth](ilmessagefiltersubaction/transactionalhealth.md)
+- [ILMessageFilterSubAction.transactionalHealth](./transactionalhealth.md)
   Prevents the system from showing the message normally, filtered as a Health message.
-- [ILMessageFilterSubAction.transactionalWeather](ilmessagefiltersubaction/transactionalweather.md)
+- [ILMessageFilterSubAction.transactionalWeather](./transactionalweather.md)
   Prevents the system from showing the message normally, filtered as a Weather message.
-- [ILMessageFilterSubAction.transactionalCarrier](ilmessagefiltersubaction/transactionalcarrier.md)
+- [ILMessageFilterSubAction.transactionalCarrier](./transactionalcarrier.md)
   Prevents the system from showing the message normally, filtered as a Carrier message.
-- [ILMessageFilterSubAction.transactionalRewards](ilmessagefiltersubaction/transactionalrewards.md)
+- [ILMessageFilterSubAction.transactionalRewards](./transactionalrewards.md)
   Prevents the system from showing the message normally, filtered as a Rewards message.
-- [ILMessageFilterSubAction.transactionalPublicServices](ilmessagefiltersubaction/transactionalpublicservices.md)
+- [ILMessageFilterSubAction.transactionalPublicServices](./transactionalpublicservices.md)
   Prevents the system from showing the message normally, filtered as a Government message.
 
 

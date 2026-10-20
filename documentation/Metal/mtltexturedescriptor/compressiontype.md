@@ -1,7 +1,8 @@
 # compressionType
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var compressionType: MTLTextureCompressionType { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MTLTextureCompressionType compressionType;
 ```
 
 

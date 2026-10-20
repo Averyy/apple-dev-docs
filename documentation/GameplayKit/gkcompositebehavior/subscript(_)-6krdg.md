@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: GameplayKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns the individual behavior at the specified index in the composite behavior’s list of behaviors.
 
@@ -19,6 +20,10 @@ Returns the individual behavior at the specified index in the composite behavior
 subscript(idx: Int) -> GKBehavior { get }
 ```
 
+```objc
+- (GKBehavior *) objectAtIndexedSubscript:(NSUInteger) idx;
+```
+
 #### Return Value
 
 The behavior at the specified index.
@@ -29,11 +34,12 @@ The order of individual behaviors in a composite behavior is undefined. However,
 
 ## Parameters
 
-- `idx`: An index in the composite behavior’s list of individual behaviors; it must be less than the value of the [`behaviorCount`](gkcompositebehavior/behaviorcount.md) property.
+- `idx`: An index in the composite behavior’s list of individual behaviors; it must be less than the value of the [`behaviorCount`](./behaviorcount.md) property.
 
 ## See Also
 
-- [subscript(GKBehavior) -> NSNumber](gkcompositebehavior/subscript(_:)-6jng9.md)
+### Working with Behaviors Using Subscript Syntax
+- [subscript(GKBehavior) -> NSNumber](./subscript%28_%29-6jng9.md)
   Returns the weight associated with the behavior specified by subscript syntax.
 
 

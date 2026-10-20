@@ -1,7 +1,8 @@
 # skipBack()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Move `currentCodeUnitOffset` to the start of the previous scalar, without decoding it.
 
@@ -24,7 +25,7 @@ mutating func skipBack() -> Int
 
 Returns the number of `Unicode.Scalar`s skipped over, which can be 0 if at the start of the UTF8Span.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

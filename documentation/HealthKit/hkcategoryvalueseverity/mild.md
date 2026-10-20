@@ -1,7 +1,8 @@
 # HKCategoryValueSeverity.mild
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The symptom is mild.
 
@@ -19,15 +20,20 @@ The symptom is mild.
 case mild
 ```
 
+```c
+HKCategoryValueSeverityMild
+```
+
 ## See Also
 
-- [HKCategoryValueSeverity.notPresent](hkcategoryvalueseverity/notpresent.md)
+### Severity Categories
+- [HKCategoryValueSeverity.notPresent](./notpresent.md)
   The symptom is not present.
-- [HKCategoryValueSeverity.moderate](hkcategoryvalueseverity/moderate.md)
+- [HKCategoryValueSeverity.moderate](./moderate.md)
   The symptom is moderate.
-- [HKCategoryValueSeverity.severe](hkcategoryvalueseverity/severe.md)
+- [HKCategoryValueSeverity.severe](./severe.md)
   The symptom is severe.
-- [HKCategoryValueSeverity.unspecified](hkcategoryvalueseverity/unspecified.md)
+- [HKCategoryValueSeverity.unspecified](./unspecified.md)
   The symptom’s severity is not specified.
 
 

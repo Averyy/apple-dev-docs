@@ -1,7 +1,8 @@
 # init(viewing:migrationPlan:viewer:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Instantiates a document group for viewing documents described by the last `Schema` in the migration plan.
 
@@ -18,6 +19,8 @@ nonisolated
 init(viewing contentType: UTType, migrationPlan: any SchemaMigrationPlan.Type, viewer: @escaping () -> Content)
 ```
 
+Available when `Document` is `ModelDocument` and `Content` conforms to `View`.
+
 ## Parameters
 
 - `viewing`: The content type of the document. It should conform to `UTType.package`.
@@ -26,7 +29,8 @@ init(viewing contentType: UTType, migrationPlan: any SchemaMigrationPlan.Type, v
 
 ## See Also
 
-- [init(viewing:contentType:viewer:)](documentgroup/init(viewing:contenttype:viewer:).md)
+### Viewing a document backed by a persistent store
+- [init(viewing:contentType:viewer:)](./init%28viewing,contenttype,viewer%29.md)
   Instantiates a document group for viewing documents that store a specific model type.
 
 

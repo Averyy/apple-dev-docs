@@ -1,7 +1,8 @@
 # AVContentKeyRequest.RetryReason
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The reason for asking the client to retry a content key request.
 
@@ -20,35 +21,40 @@ The reason for asking the client to retry a content key request.
 struct RetryReason
 ```
 
+```c
+typedef NSString * AVContentKeyRequestRetryReason;
+```
+
 ## Topics
 
 ### Reasons for content key request retry
-- [static let receivedObsoleteContentKey: AVContentKeyRequest.RetryReason](avcontentkeyrequest/retryreason/receivedobsoletecontentkey.md)
+- [static let receivedObsoleteContentKey: AVContentKeyRequest.RetryReason](./retryreason/receivedobsoletecontentkey.md)
   An obsolete key response that was set on the previous content key request.
-- [static let receivedResponseWithExpiredLease: AVContentKeyRequest.RetryReason](avcontentkeyrequest/retryreason/receivedresponsewithexpiredlease.md)
+- [static let receivedResponseWithExpiredLease: AVContentKeyRequest.RetryReason](./retryreason/receivedresponsewithexpiredlease.md)
   A key response with an expired lease that was set on the previous content key request.
-- [static let timedOut: AVContentKeyRequest.RetryReason](avcontentkeyrequest/retryreason/timedout.md)
+- [static let timedOut: AVContentKeyRequest.RetryReason](./retryreason/timedout.md)
   A key response that wasn’t set soon enough.
 ### Initializers
-- [init(rawValue: String)](avcontentkeyrequest/retryreason/init(rawvalue:).md)
+- [init(rawValue: String)](./retryreason/init%28rawvalue%29.md)
   Creates a retry reason with a string.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var contentKey: AVContentKey?](avcontentkeyrequest/contentkey.md)
+### Inspecting a request
+- [var contentKey: AVContentKey?](./contentkey.md)
   The generated content key.
-- [var contentKeySpecifier: AVContentKeySpecifier](avcontentkeyrequest/contentkeyspecifier.md)
+- [var contentKeySpecifier: AVContentKeySpecifier](./contentkeyspecifier.md)
   The requested content key specifier.
-- [var options: [String : any Sendable]](avcontentkeyrequest/options.md)
+- [var options: [String : any Sendable]](./options.md)
   A dictionary of options used to initialize key loading.
 
 

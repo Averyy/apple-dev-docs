@@ -1,7 +1,8 @@
 # style
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The basic appearance of the activity indicator.
 
@@ -9,7 +10,7 @@ The basic appearance of the activity indicator.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ The basic appearance of the activity indicator.
 var style: UIActivityIndicatorView.Style { get set }
 ```
 
+```objc
+@property (nonatomic) UIActivityIndicatorViewStyle activityIndicatorViewStyle;
+```
+
 #### Discussion
 
-See [`UIActivityIndicatorView.Style`](uiactivityindicatorview/style-swift.enum.md) for the available styles. The default value is [`UIActivityIndicatorView.Style.medium`](uiactivityindicatorview/style-swift.enum/medium.md).
+See [`UIActivityIndicatorView.Style`](./style-swift.enum.md) for the available styles. The default value is [`UIActivityIndicatorView.Style.medium`](./style-swift.enum/medium.md).
 
 ## See Also
 
-- [var color: UIColor!](uiactivityindicatorview/color.md)
+### Configuring the activity indicator appearance
+- [var color: UIColor!](./color.md)
   The color of the activity indicator.
 
 

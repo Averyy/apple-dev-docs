@@ -1,12 +1,13 @@
 # HV_SIMD_FP_REG_Q0
 
 **Framework**: Hypervisor  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The value representing SIMD register Q0.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,37 +15,42 @@ The value representing SIMD register Q0.
 var HV_SIMD_FP_REG_Q0: hv_simd_fp_reg_t { get }
 ```
 
+```c
+HV_SIMD_FP_REG_Q0
+```
+
 ## See Also
 
-- [var HV_SIMD_FP_REG_Q1: hv_simd_fp_reg_t](hv_simd_fp_reg_q1.md)
+### SIMD and Floating-point registers
+- [var HV_SIMD_FP_REG_Q1: hv_simd_fp_reg_t](./hv_simd_fp_reg_q1.md)
   The value representing SIMD register Q1.
-- [var HV_SIMD_FP_REG_Q2: hv_simd_fp_reg_t](hv_simd_fp_reg_q2.md)
+- [var HV_SIMD_FP_REG_Q2: hv_simd_fp_reg_t](./hv_simd_fp_reg_q2.md)
   The value representing SIMD register Q2.
-- [var HV_SIMD_FP_REG_Q3: hv_simd_fp_reg_t](hv_simd_fp_reg_q3.md)
+- [var HV_SIMD_FP_REG_Q3: hv_simd_fp_reg_t](./hv_simd_fp_reg_q3.md)
   The value representing SIMD register Q3.
-- [var HV_SIMD_FP_REG_Q4: hv_simd_fp_reg_t](hv_simd_fp_reg_q4.md)
+- [var HV_SIMD_FP_REG_Q4: hv_simd_fp_reg_t](./hv_simd_fp_reg_q4.md)
   The value representing SIMD register Q4.
-- [var HV_SIMD_FP_REG_Q5: hv_simd_fp_reg_t](hv_simd_fp_reg_q5.md)
+- [var HV_SIMD_FP_REG_Q5: hv_simd_fp_reg_t](./hv_simd_fp_reg_q5.md)
   The value representing SIMD register Q5.
-- [var HV_SIMD_FP_REG_Q6: hv_simd_fp_reg_t](hv_simd_fp_reg_q6.md)
+- [var HV_SIMD_FP_REG_Q6: hv_simd_fp_reg_t](./hv_simd_fp_reg_q6.md)
   The value representing SIMD register Q6.
-- [var HV_SIMD_FP_REG_Q7: hv_simd_fp_reg_t](hv_simd_fp_reg_q7.md)
+- [var HV_SIMD_FP_REG_Q7: hv_simd_fp_reg_t](./hv_simd_fp_reg_q7.md)
   The value representing SIMD register Q7.
-- [var HV_SIMD_FP_REG_Q8: hv_simd_fp_reg_t](hv_simd_fp_reg_q8.md)
+- [var HV_SIMD_FP_REG_Q8: hv_simd_fp_reg_t](./hv_simd_fp_reg_q8.md)
   The value representing SIMD register Q8.
-- [var HV_SIMD_FP_REG_Q9: hv_simd_fp_reg_t](hv_simd_fp_reg_q9.md)
+- [var HV_SIMD_FP_REG_Q9: hv_simd_fp_reg_t](./hv_simd_fp_reg_q9.md)
   The value representing SIMD register Q9.
-- [var HV_SIMD_FP_REG_Q10: hv_simd_fp_reg_t](hv_simd_fp_reg_q10.md)
+- [var HV_SIMD_FP_REG_Q10: hv_simd_fp_reg_t](./hv_simd_fp_reg_q10.md)
   The value representing SIMD register Q10.
-- [var HV_SIMD_FP_REG_Q11: hv_simd_fp_reg_t](hv_simd_fp_reg_q11.md)
+- [var HV_SIMD_FP_REG_Q11: hv_simd_fp_reg_t](./hv_simd_fp_reg_q11.md)
   The value representing SIMD register Q11.
-- [var HV_SIMD_FP_REG_Q12: hv_simd_fp_reg_t](hv_simd_fp_reg_q12.md)
+- [var HV_SIMD_FP_REG_Q12: hv_simd_fp_reg_t](./hv_simd_fp_reg_q12.md)
   The value representing SIMD register Q12.
-- [var HV_SIMD_FP_REG_Q13: hv_simd_fp_reg_t](hv_simd_fp_reg_q13.md)
+- [var HV_SIMD_FP_REG_Q13: hv_simd_fp_reg_t](./hv_simd_fp_reg_q13.md)
   The value representing SIMD register Q13.
-- [var HV_SIMD_FP_REG_Q14: hv_simd_fp_reg_t](hv_simd_fp_reg_q14.md)
+- [var HV_SIMD_FP_REG_Q14: hv_simd_fp_reg_t](./hv_simd_fp_reg_q14.md)
   The value representing SIMD register Q14.
-- [var HV_SIMD_FP_REG_Q15: hv_simd_fp_reg_t](hv_simd_fp_reg_q15.md)
+- [var HV_SIMD_FP_REG_Q15: hv_simd_fp_reg_t](./hv_simd_fp_reg_q15.md)
   The value representing SIMD register Q15.
 
 

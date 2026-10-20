@@ -1,14 +1,15 @@
 # IdentityDocumentPresentmentError.Code
 
 **Framework**: IdentityDocumentServices  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Specific error codes for identity document web presentment errors.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 26.0+
 
 ## Declaration
@@ -20,30 +21,30 @@ enum Code
 ## Topics
 
 ### Operators
-- [static func ~= (IdentityDocumentPresentmentError.Code, any Error) -> Bool](identitydocumentpresentmenterror/code-swift.enum/~=(_:_:).md)
+- [static func ~= (IdentityDocumentPresentmentError.Code, any Error) -> Bool](./code-swift.enum/tildeeq%28_,_%29.md)
   Pattern matching operator for matching error codes directly. This enables traditional switch/case pattern matching on error codes.
 ### Enumeration Cases
-- [IdentityDocumentPresentmentError.Code.cancelled](identitydocumentpresentmenterror/code-swift.enum/cancelled.md)
+- [IdentityDocumentPresentmentError.Code.cancelled](./code-swift.enum/cancelled.md)
   An error that indicates that the current request has been cancelled.
-- [IdentityDocumentPresentmentError.Code.invalidRequest](identitydocumentpresentmenterror/code-swift.enum/invalidrequest.md)
+- [IdentityDocumentPresentmentError.Code.invalidRequest](./code-swift.enum/invalidrequest.md)
   An error that is thrown when an invalid request is provided.
-- [IdentityDocumentPresentmentError.Code.notEntitled](identitydocumentpresentmenterror/code-swift.enum/notentitled.md)
+- [IdentityDocumentPresentmentError.Code.notEntitled](./code-swift.enum/notentitled.md)
   An error that indicates the caller is not entitled.
-- [IdentityDocumentPresentmentError.Code.requestInProgress](identitydocumentpresentmenterror/code-swift.enum/requestinprogress.md)
+- [IdentityDocumentPresentmentError.Code.requestInProgress](./code-swift.enum/requestinprogress.md)
   An error that indicates that there is currently a request in progress.
-- [IdentityDocumentPresentmentError.Code.unknown](identitydocumentpresentmenterror/code-swift.enum/unknown.md)
+- [IdentityDocumentPresentmentError.Code.unknown](./code-swift.enum/unknown.md)
   An error that indicates that the framework encountered an unknown problem.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

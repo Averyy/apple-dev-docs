@@ -1,7 +1,8 @@
 # SVGPathSegLinetoAbs
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGPathSegLinetoAbs
 ```
 
 ## Topics
 
 ### Instance Properties
-- [x](svgpathseglinetoabs/1630220-x.md)
-- [y](svgpathseglinetoabs/1630008-y.md)
+- [x](./svgpathseglinetoabs/api-1630220-x.md)
+- [y](./svgpathseglinetoabs/api-1630008-y.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGPathSeg](svgpathseg.md)
+- [SVGPathSeg](./svgpathseg.md)
 
 
 ---

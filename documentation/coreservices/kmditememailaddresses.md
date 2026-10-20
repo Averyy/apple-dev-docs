@@ -1,7 +1,8 @@
 # kMDItemEmailAddresses
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Email addresses related to this item. A CFArray of CFStrings.
 
@@ -12,6 +13,10 @@ Email addresses related to this item. A CFArray of CFStrings.
 
 ```swift
 let kMDItemEmailAddresses: CFString!
+```
+
+```c
+const CFStringRef kMDItemEmailAddresses;
 ```
 
 

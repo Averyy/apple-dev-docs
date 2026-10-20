@@ -1,7 +1,8 @@
 # colorList
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of colors displayed in the color picker.
 
@@ -14,6 +15,10 @@ The list of colors displayed in the color picker.
 var colorList: NSColorList! { get set }
 ```
 
+```objc
+@property (strong, null_resettable) NSColorList * colorList;
+```
+
 #### Discussion
 
 Defaults to the standard system color list.
@@ -22,11 +27,12 @@ Note that setting a custom color list disables the additional tints and shades t
 
 ## See Also
 
-- [var allowedColorSpaces: [NSColorSpace]?](nscolorpickertouchbaritem/allowedcolorspaces.md)
+### Configuring the color picker
+- [var allowedColorSpaces: [NSColorSpace]?](./allowedcolorspaces.md)
   Controls the color spaces that the color picker can produce.
-- [var showsAlpha: Bool](nscolorpickertouchbaritem/showsalpha.md)
+- [var showsAlpha: Bool](./showsalpha.md)
   A Boolean value that controls whether the color picker allows picking of colors with alpha values other than `1.0`.
-- [var isEnabled: Bool](nscolorpickertouchbaritem/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that determines whether the color picker is enabled.
 
 

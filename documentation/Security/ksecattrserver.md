@@ -1,7 +1,8 @@
 # kSecAttrServer
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a string indicating the item’s server.
 
@@ -20,13 +21,17 @@ A key whose value is a string indicating the item’s server.
 let kSecAttrServer: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrServer;
+```
+
 ## Mentions
 
-- [Adding a password to the keychain](adding-a-password-to-the-keychain.md)
+- [Adding a password to the keychain](./adding-a-password-to-the-keychain.md)
 
 #### Discussion
 
-The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) and contains the server’s domain name or IP address. Items of class [`kSecClassInternetPassword`](ksecclassinternetpassword.md) have this attribute.
+The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md) and contains the server’s domain name or IP address. Items of class [`kSecClassInternetPassword`](./ksecclassinternetpassword.md) have this attribute.
 
 
 ---

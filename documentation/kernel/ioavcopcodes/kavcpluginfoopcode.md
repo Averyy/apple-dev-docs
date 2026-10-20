@@ -1,14 +1,15 @@
 # kAVCPlugInfoOpcode
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 kAVCPlugInfoOpcode = 0x02
 ```
 

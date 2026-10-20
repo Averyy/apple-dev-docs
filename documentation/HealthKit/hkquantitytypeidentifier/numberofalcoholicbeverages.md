@@ -1,7 +1,8 @@
 # numberOfAlcoholicBeverages
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A quantity sample type that measures the number of standard alcoholic drinks that the user has consumed.
 
@@ -19,9 +20,13 @@ A quantity sample type that measures the number of standard alcoholic drinks tha
 static let numberOfAlcoholicBeverages: HKQuantityTypeIdentifier
 ```
 
+```c
+extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierNumberOfAlcoholicBeverages;
+```
+
 #### Discussion
 
-Samples matching the [`numberOfAlcoholicBeverages`](hkquantitytypeidentifier/numberofalcoholicbeverages.md) identifier measure the number of standard alcoholic drinks consumed by the user. A standard drink is one beer, glass of wine, or mixed drink made with spirits. The samples use count units (described in [`HKUnit`](hkunit.md)) to measure cumulative values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)).
+Samples matching the [`numberOfAlcoholicBeverages`](./numberofalcoholicbeverages.md) identifier measure the number of standard alcoholic drinks consumed by the user. A standard drink is one beer, glass of wine, or mixed drink made with spirits. The samples use count units (described in [`HKUnit`](../hkunit.md)) to measure cumulative values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 
 The following code listing saves a single standard drink to the HealthKit store.
 
@@ -57,7 +62,8 @@ store.save(beverageSample) { (success, error) in
 
 ## See Also
 
-- [static let bloodAlcoholContent: HKQuantityTypeIdentifier](hkquantitytypeidentifier/bloodalcoholcontent.md)
+### Alcohol consumption
+- [static let bloodAlcoholContent: HKQuantityTypeIdentifier](./bloodalcoholcontent.md)
   A quantity sample type that measures the user’s blood alcohol content.
 
 

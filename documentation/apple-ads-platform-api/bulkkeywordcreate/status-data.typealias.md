@@ -1,7 +1,8 @@
 # BulkKeywordCreate.Status
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The keyword’s status for a bulk keyword create item.
 
@@ -10,9 +11,14 @@ The keyword’s status for a bulk keyword create item.
 
 ## Declaration
 
-```swift
+```
 string BulkKeywordCreate.Status
 ```
+
+## Possible Values
+
+- `ENABLED`: Keyword is active and eligible to serve.
+- `PAUSED`: Keyword is paused and will not serve.
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # acceptsFirstResponder
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.15+
@@ -15,7 +16,8 @@
 
 ## See Also
 
-- [var needsPanelToBecomeKey: Bool](nshostingview/needspaneltobecomekey.md)
+### Configuring the responder behavior
+- [var needsPanelToBecomeKey: Bool](./needspaneltobecomekey.md)
 
 
 ---

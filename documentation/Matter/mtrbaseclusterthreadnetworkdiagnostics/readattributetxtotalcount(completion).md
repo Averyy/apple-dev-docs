@@ -1,7 +1,8 @@
 # readAttributeTxTotalCount(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeTxTotalCount(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeTxTotalCount() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeTxTotalCountWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

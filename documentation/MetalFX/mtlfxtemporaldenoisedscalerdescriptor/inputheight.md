@@ -1,7 +1,8 @@
 # inputHeight
 
 **Framework**: MetalFX  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height, in pixels, of the input color texture for the denoiser scaler.
 
@@ -16,6 +17,10 @@ The height, in pixels, of the input color texture for the denoiser scaler.
 
 ```swift
 var inputHeight: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger inputHeight;
 ```
 
 

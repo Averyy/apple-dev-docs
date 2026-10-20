@@ -1,7 +1,8 @@
 # uint8
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Each channel value per texel is an 8-bit unsigned integer.
 
@@ -17,6 +18,10 @@ Each channel value per texel is an 8-bit unsigned integer.
 
 ```swift
 static var uint8: MDLTextureChannelEncoding { get }
+```
+
+```c
+MDLTextureChannelEncodingUint8
 ```
 
 

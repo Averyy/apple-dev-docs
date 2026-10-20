@@ -1,7 +1,8 @@
 # motion(of:comparedTo:flags:)
 
 **Framework**: Video Toolbox  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -19,7 +20,8 @@ final func motion(of currentImage: CVReadOnlyPixelBuffer, comparedTo referenceIm
 
 ## See Also
 
-- [VTMotionEstimationSession.FrameFlags](vtmotionestimationsession/frameflags.md)
+### Estimating motion
+- [VTMotionEstimationSession.FrameFlags](./frameflags.md)
 
 
 ---

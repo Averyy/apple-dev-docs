@@ -1,7 +1,8 @@
 # SRWristDetection.WristLocation.left
 
 **Framework**: SensorKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the user wears a watch on the left wrist.
 
@@ -16,9 +17,14 @@ Indicates that the user wears a watch on the left wrist.
 case left
 ```
 
+```c
+SRWristLocationLeft
+```
+
 ## See Also
 
-- [SRWristDetection.WristLocation.right](srwristdetection/wristlocation-swift.enum/right.md)
+### Wrist Preferences
+- [SRWristDetection.WristLocation.right](./right.md)
   Indicates that the user wears a watch on the right wrist.
 
 

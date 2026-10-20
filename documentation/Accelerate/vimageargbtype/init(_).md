@@ -1,18 +1,19 @@
 # init(_:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new ARGB type.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -26,15 +27,16 @@ init(_ rawValue: UInt32)
 
 ## See Also
 
-- [init(rawValue: UInt32)](vimageargbtype/init(rawvalue:).md)
+### Constants
+- [init(rawValue: UInt32)](./init%28rawvalue%29.md)
   Creates a new ARGB type with an unsigned integer value.
-- [var rawValue: UInt32](vimageargbtype/rawvalue.md)
+- [var rawValue: UInt32](./rawvalue.md)
   The unsigned integer raw value.
-- [var kvImageARGB16Q12: vImageARGBType](kvimageargb16q12.md)
+- [var kvImageARGB16Q12: vImageARGBType](../kvimageargb16q12.md)
   Any 8-bit four-channel interleaved buffer.
-- [var kvImageARGB16U: vImageARGBType](kvimageargb16u.md)
+- [var kvImageARGB16U: vImageARGBType](../kvimageargb16u.md)
   Any 16-bit unsigned, four-channel interleaved buffer.
-- [var kvImageARGB8888: vImageARGBType](kvimageargb8888.md)
+- [var kvImageARGB8888: vImageARGBType](../kvimageargb8888.md)
   Any 16-bit signed fixed-point, four-channel interleaved buffer.
 
 

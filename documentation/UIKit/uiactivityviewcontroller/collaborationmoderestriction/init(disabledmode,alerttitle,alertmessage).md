@@ -1,7 +1,8 @@
 # init(disabledMode:alertTitle:alertMessage:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a disabled mode that displays an alert when someone tries to select that mode.
 
@@ -17,13 +18,18 @@ Creates a disabled mode that displays an alert when someone tries to select that
 init(disabledMode: UIActivityCollaborationMode, alertTitle: String, alertMessage: String)
 ```
 
+```objc
+- (instancetype) initWithDisabledMode:(UIActivityCollaborationMode) disabledMode alertTitle:(NSString *) alertTitle alertMessage:(NSString *) alertMessage;
+```
+
 ## See Also
 
-- [init(disabledMode: UIActivityCollaborationMode)](uiactivityviewcontroller/collaborationmoderestriction/init(disabledmode:).md)
+### Creating a disabled mode
+- [init(disabledMode: UIActivityCollaborationMode)](./init%28disabledmode%29.md)
   Copies the provided disabled mode.
-- [init(disabledMode: UIActivityCollaborationMode, alertTitle: String, alertMessage: String, alertDismissButtonTitle: String)](uiactivityviewcontroller/collaborationmoderestriction/init(disabledmode:alerttitle:alertmessage:alertdismissbuttontitle:).md)
+- [init(disabledMode: UIActivityCollaborationMode, alertTitle: String, alertMessage: String, alertDismissButtonTitle: String)](./init%28disabledmode,alerttitle,alertmessage,alertdismissbuttontitle%29.md)
   Creates a disabled mode that displays an alert with a customized dismiss button.
-- [init(disabledMode: UIActivityCollaborationMode, alertTitle: String, alertMessage: String, alertDismissButtonTitle: String, alertRecoverySuggestionButtonTitle: String, alertRecoverySuggestionButtonLaunch: URL)](uiactivityviewcontroller/collaborationmoderestriction/init(disabledmode:alerttitle:alertmessage:alertdismissbuttontitle:alertrecoverysuggestionbuttontitle:alertrecoverysuggestionbuttonlaunch:).md)
+- [init(disabledMode: UIActivityCollaborationMode, alertTitle: String, alertMessage: String, alertDismissButtonTitle: String, alertRecoverySuggestionButtonTitle: String, alertRecoverySuggestionButtonLaunch: URL)](./init%28disabledmode,alerttitle,alertmessage,alertdismissbuttontitle,alertrecoverysuggestionbuttontitle,alertrecoverysuggestionbuttonlaunch%29.md)
   Creates a disabled mode that displays an alert with a recovery suggestion.
 
 

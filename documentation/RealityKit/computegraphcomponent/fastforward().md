@@ -1,7 +1,8 @@
 # fastForward()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fast-forwards the simulation using the default prewarm behavior.
 

@@ -1,7 +1,8 @@
 # HMCharacteristicTypeStatusLowBattery
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A low battery indicator.
 
@@ -19,33 +20,38 @@ A low battery indicator.
 let HMCharacteristicTypeStatusLowBattery: String
 ```
 
+```c
+extern NSString * const HMCharacteristicTypeStatusLowBattery;
+```
+
 #### Discussion
 
-The corresponding value is one of the constants in the [`HMCharacteristicValueBatteryStatus`](hmcharacteristicvaluebatterystatus.md) enumeration.
+The corresponding value is one of the constants in the [`HMCharacteristicValueBatteryStatus`](./hmcharacteristicvaluebatterystatus.md) enumeration.
 
 ## Topics
 
 ### Values
-- [enum HMCharacteristicValueBatteryStatus](hmcharacteristicvaluebatterystatus.md)
+- [enum HMCharacteristicValueBatteryStatus](./hmcharacteristicvaluebatterystatus.md)
   Possible values for battery status.
 
 ## See Also
 
-- [let HMCharacteristicTypeBatteryLevel: String](hmcharacteristictypebatterylevel.md)
+### Power and switches
+- [let HMCharacteristicTypeBatteryLevel: String](./hmcharacteristictypebatterylevel.md)
   The battery level of the accessory.
-- [let HMCharacteristicTypeChargingState: String](hmcharacteristictypechargingstate.md)
+- [let HMCharacteristicTypeChargingState: String](./hmcharacteristictypechargingstate.md)
   The charging state of a battery.
-- [let HMCharacteristicTypeContactState: String](hmcharacteristictypecontactstate.md)
+- [let HMCharacteristicTypeContactState: String](./hmcharacteristictypecontactstate.md)
   The state of a contact sensor.
-- [let HMCharacteristicTypeOutletInUse: String](hmcharacteristictypeoutletinuse.md)
+- [let HMCharacteristicTypeOutletInUse: String](./hmcharacteristictypeoutletinuse.md)
   The state of an outlet.
-- [let HMCharacteristicTypePowerState: String](hmcharacteristictypepowerstate.md)
+- [let HMCharacteristicTypePowerState: String](./hmcharacteristictypepowerstate.md)
   The power state of the accessory.
-- [let HMCharacteristicTypeOutputState: String](hmcharacteristictypeoutputstate.md)
+- [let HMCharacteristicTypeOutputState: String](./hmcharacteristictypeoutputstate.md)
   The output state of a programmable switch.
-- [let HMCharacteristicTypeInputEvent: String](hmcharacteristictypeinputevent.md)
+- [let HMCharacteristicTypeInputEvent: String](./hmcharacteristictypeinputevent.md)
   The input event of a programmable switch.
-- [let HMCharacteristicTypePowerModeSelection: String](hmcharacteristictypepowermodeselection.md)
+- [let HMCharacteristicTypePowerModeSelection: String](./hmcharacteristictypepowermodeselection.md)
   The selected power mode.
 
 

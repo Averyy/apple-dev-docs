@@ -1,7 +1,8 @@
 # cone
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Cone symbol.
 
@@ -17,6 +18,8 @@ Cone symbol.
 ```swift
 static var cone: BasicChart3DSymbolShape { get }
 ```
+
+Available when `Self` is `BasicChart3DSymbolShape`.
 
 
 ---

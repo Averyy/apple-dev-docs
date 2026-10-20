@@ -1,32 +1,34 @@
 # Read/Write Status Constants
 
-**Framework**: Video Toolbox
+**Framework**: Video Toolbox  
+**Role**: API Collection
 
 Supported constant values for `kVTPropertyReadWriteStatusKey`.
 
 ## Topics
 
 ### Status Constants
-- [let kVTPropertyReadWriteStatus_ReadOnly: CFString](kvtpropertyreadwritestatus_readonly.md)
-- [let kVTPropertyReadWriteStatus_ReadWrite: CFString](kvtpropertyreadwritestatus_readwrite.md)
+- [let kVTPropertyReadWriteStatus_ReadOnly: CFString](./kvtpropertyreadwritestatus_readonly.md)
+- [let kVTPropertyReadWriteStatus_ReadWrite: CFString](./kvtpropertyreadwritestatus_readwrite.md)
 
 ## See Also
 
-- [let kVTPropertyTypeKey: CFString](kvtpropertytypekey.md)
+### Properties
+- [let kVTPropertyTypeKey: CFString](./kvtpropertytypekey.md)
   Dictionary key used to access the property type.
-- [Property Type Constants](property-type-constants.md)
+- [Property Type Constants](./property-type-constants.md)
   Supported constant values for `kVTPropertyTypeKey`.
-- [let kVTPropertyReadWriteStatusKey: CFString](kvtpropertyreadwritestatuskey.md)
+- [let kVTPropertyReadWriteStatusKey: CFString](./kvtpropertyreadwritestatuskey.md)
   Dictionary key to access the read/write status of a property.
-- [let kVTPropertyShouldBeSerializedKey: CFString](kvtpropertyshouldbeserializedkey.md)
+- [let kVTPropertyShouldBeSerializedKey: CFString](./kvtpropertyshouldbeserializedkey.md)
   Dictionary key to access the serializable status of a property.
-- [let kVTPropertySupportedValueListKey: CFString](kvtpropertysupportedvaluelistkey.md)
+- [let kVTPropertySupportedValueListKey: CFString](./kvtpropertysupportedvaluelistkey.md)
   Dictionary key to access the array of of supported values.
-- [let kVTPropertySupportedValueMaximumKey: CFString](kvtpropertysupportedvaluemaximumkey.md)
+- [let kVTPropertySupportedValueMaximumKey: CFString](./kvtpropertysupportedvaluemaximumkey.md)
   Dictionary key to access the maximum value of a property.
-- [let kVTPropertySupportedValueMinimumKey: CFString](kvtpropertysupportedvalueminimumkey.md)
+- [let kVTPropertySupportedValueMinimumKey: CFString](./kvtpropertysupportedvalueminimumkey.md)
   Dictionary key to access the minimum value of a property.
-- [let kVTPropertyDocumentationKey: CFString](kvtpropertydocumentationkey.md)
+- [let kVTPropertyDocumentationKey: CFString](./kvtpropertydocumentationkey.md)
   Dictionary key to access any documentation intended for developers only.
 
 

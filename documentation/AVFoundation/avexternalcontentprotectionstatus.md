@@ -1,7 +1,8 @@
 # AVExternalContentProtectionStatus
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify whether sufficient protection exists to display the content.
 
@@ -19,45 +20,50 @@ Constants that specify whether sufficient protection exists to display the conte
 enum AVExternalContentProtectionStatus
 ```
 
+```c
+enum AVExternalContentProtectionStatus : NSInteger;
+```
+
 ## Topics
 
 ### Status values
-- [AVExternalContentProtectionStatus.pending](avexternalcontentprotectionstatus/pending.md)
+- [AVExternalContentProtectionStatus.pending](./avexternalcontentprotectionstatus/pending.md)
   A status that indicates content protections are pending.
-- [AVExternalContentProtectionStatus.sufficient](avexternalcontentprotectionstatus/sufficient.md)
+- [AVExternalContentProtectionStatus.sufficient](./avexternalcontentprotectionstatus/sufficient.md)
   A status that indicates sufficient protections exists for display.
-- [AVExternalContentProtectionStatus.insufficient](avexternalcontentprotectionstatus/insufficient.md)
+- [AVExternalContentProtectionStatus.insufficient](./avexternalcontentprotectionstatus/insufficient.md)
   A status that indicates insufficient protections exists for display.
 ### Initializers
-- [init?(rawValue: Int)](avexternalcontentprotectionstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avexternalcontentprotectionstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVContentKeySession](avcontentkeysession.md)
+### FairPlay streaming
+- [class AVContentKeySession](./avcontentkeysession.md)
   An object that creates and tracks decryption keys for media data.
-- [protocol AVContentKeySessionDelegate](avcontentkeysessiondelegate.md)
+- [protocol AVContentKeySessionDelegate](./avcontentkeysessiondelegate.md)
   A protocol that handles content key requests.
-- [class AVContentKey](avcontentkey.md)
+- [class AVContentKey](./avcontentkey.md)
   An object that represents the content key decryptor.
-- [class AVContentKeySpecifier](avcontentkeyspecifier.md)
+- [class AVContentKeySpecifier](./avcontentkeyspecifier.md)
   An object that uniquely identifies a content key.
-- [class AVContentKeyRequest](avcontentkeyrequest.md)
+- [class AVContentKeyRequest](./avcontentkeyrequest.md)
   An object that encapsulates information about a content decryption key request issued from a content key session object.
-- [class AVPersistableContentKeyRequest](avpersistablecontentkeyrequest.md)
+- [class AVPersistableContentKeyRequest](./avpersistablecontentkeyrequest.md)
   An object that encapsulates information about a persistable content decryption key request issued from a content key session.
-- [class AVContentKeyResponse](avcontentkeyresponse.md)
+- [class AVContentKeyResponse](./avcontentkeyresponse.md)
   An object that encapsulates information about a response to a content decryption key request.
-- [func AVSampleBufferAttachContentKey(CMSampleBuffer, AVContentKey, NSErrorPointer) -> Bool](avsamplebufferattachcontentkey(_:_:_:).md)
+- [func AVSampleBufferAttachContentKey(CMSampleBuffer, AVContentKey, NSErrorPointer) -> Bool](./avsamplebufferattachcontentkey%28_,_,_%29.md)
   Attaches a content key to a sample buffer for the purpose of content decryption.
 
 

@@ -20,41 +20,42 @@ The `segmentBarItem` element is used to create groups inside of a `segmentBarHea
 </segmentBarHeader>
 ```
 
-##### Subelements of Segmentbaritem
+##### Subelements of segmentBarItem
 
-- [`title`](title.md)
+- [title](./title.md)
 
-##### Elements That Use Segmentbaritem
+##### Elements that Use segmentBarItem
 
-- [`segmentBarHeader`](segmentbarheader.md)
+- [segmentBarHeader](./segmentbarheader.md)
 
 ## Topics
 
 ### Valid TVML Attributes
-- [autoHighlight](autohighlight.md)
+- [autoHighlight](./autohighlight.md)
   Specifies that the element should initially be in focus.
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [menuBar](menubar.md)
+### Bar Elements
+- [menuBar](./menubar.md)
   Displays menu items along the top of the screen.
-- [menuItem](menuitem.md)
+- [menuItem](./menuitem.md)
   Displays a label for an item.
-- [nowPlayingMenuItem](nowplayingmenuitem.md)
+- [nowPlayingMenuItem](./nowplayingmenuitem.md)
   Displays information about currently playing audio.
-- [segmentBar](segmentbar.md)
+- [segmentBar](./segmentbar.md)
   Displays a list of segment bar items.
-- [segmentBarHeader](segmentbarheader.md)
+- [segmentBarHeader](./segmentbarheader.md)
   Displays information above a segment bar.
-- [tumblerBar](tumblerbar.md)
+- [tumblerBar](./tumblerbar.md)
   Displays a list of `tumblerItem` elements.
-- [tumblerItem](tumbleritem.md)
+- [tumblerItem](./tumbleritem.md)
   Contains title information for a tumbler header.
 
 

@@ -1,7 +1,8 @@
 # NSAttributedString.TextEffectStyle
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants for the type of effect to apply to the text.
 
@@ -22,38 +23,39 @@ struct TextEffectStyle
 
 #### Overview
 
-Use this constant as the value for the [`textEffect`](nsattributedstring/key/texteffect.md) key.
+Use this constant as the value for the [`textEffect`](./key/texteffect.md) key.
 
 ## Topics
 
 ### Getting the style
-- [static let letterpressStyle: NSAttributedString.TextEffectStyle](nsattributedstring/texteffectstyle/letterpressstyle.md)
+- [static let letterpressStyle: NSAttributedString.TextEffectStyle](./texteffectstyle/letterpressstyle.md)
   A graphical text effect that gives glyphs the appearance of letterpress printing, which involves pressing the type into the paper.
 ### Initializers
-- [init(rawValue: String)](nsattributedstring/texteffectstyle/init(rawvalue:).md)
+- [init(rawValue: String)](./texteffectstyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSAttributedString.Key](nsattributedstring/key.md)
+### Getting text content attributes
+- [NSAttributedString.Key](./key.md)
   The attributes you apply to ranges of characters in an attributed string.
-- [NSAttributedString.TextHighlightStyle](nsattributedstring/texthighlightstyle.md)
+- [NSAttributedString.TextHighlightStyle](./texthighlightstyle.md)
   Constants that specify the type of highlight to apply to text.
-- [NSAttributedString.TextHighlightColorScheme](nsattributedstring/texthighlightcolorscheme.md)
+- [NSAttributedString.TextHighlightColorScheme](./texthighlightcolorscheme.md)
   Constants that specify the highlight color to use with the text.
-- [NSAttributedString.SpellingState](nsattributedstring/spellingstate.md)
+- [NSAttributedString.SpellingState](./spellingstate.md)
   Constants for the spelling state attribute key.
-- [struct NSUnderlineStyle](../uikit/nsunderlinestyle.md)
+- [struct NSUnderlineStyle](../../UIKit/nsunderlinestyle.md)
   Constants for the underline style and strikethrough style attribute keys.
-- [enum NSWritingDirectionFormatType](../uikit/nswritingdirectionformattype.md)
+- [enum NSWritingDirectionFormatType](../../UIKit/nswritingdirectionformattype.md)
   Constants for the writing direction attribute key.
 
 

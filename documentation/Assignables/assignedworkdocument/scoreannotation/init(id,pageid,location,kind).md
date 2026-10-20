@@ -1,7 +1,8 @@
 # init(id:pageID:location:kind:)
 
 **Framework**: Assignables  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an instance of this object with the given values.
 
@@ -9,7 +10,7 @@ Initializes an instance of this object with the given values.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

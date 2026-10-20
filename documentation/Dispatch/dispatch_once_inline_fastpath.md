@@ -1,16 +1,17 @@
 # DISPATCH_ONCE_INLINE_FASTPATH
 
 **Framework**: Dispatch  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,12 +19,17 @@
 var DISPATCH_ONCE_INLINE_FASTPATH: Int32 { get }
 ```
 
+```c
+#define DISPATCH_ONCE_INLINE_FASTPATH
+```
+
 ## See Also
 
-- [var DISPATCH_API_VERSION: Int32](dispatch_api_version.md)
-- [var DISPATCH_APPLY_AUTO_AVAILABLE: Int32](dispatch_apply_auto_available.md)
-- [var DISPATCH_SWIFT3_OVERLAY: Int32](dispatch_swift3_overlay.md)
-- [var MSEC_PER_SEC: UInt64](msec_per_sec.md)
+### Constants
+- [var DISPATCH_API_VERSION: Int32](./dispatch_api_version.md)
+- [var DISPATCH_APPLY_AUTO_AVAILABLE: Int32](./dispatch_apply_auto_available.md)
+- [var DISPATCH_SWIFT3_OVERLAY: Int32](./dispatch_swift3_overlay.md)
+- [var MSEC_PER_SEC: UInt64](./msec_per_sec.md)
 
 
 ---

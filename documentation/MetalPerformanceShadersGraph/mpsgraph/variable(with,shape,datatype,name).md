@@ -1,7 +1,8 @@
 # variable(with:shape:dataType:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a variable operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a variable operation and returns the result tensor.
 
 ```swift
 func variable(with data: Data, shape: [NSNumber], dataType: MPSDataType, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) variableWithData:(NSData *) data shape:(MPSShape *) shape dataType:(MPSDataType) dataType name:(NSString *) name;
 ```
 
 #### Return Value

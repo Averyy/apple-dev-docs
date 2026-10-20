@@ -1,7 +1,8 @@
 # prefersTabBar
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A compression behavior that prefers keeping the tab bar visible.
 
@@ -22,9 +23,10 @@ Toolbar items will compress before tab bar items when space is constrained.
 
 ## See Also
 
-- [static let automatic: ToolbarVerticalCompressionBehavior](toolbarverticalcompressionbehavior/automatic.md)
+### Getting compression behavior options
+- [static let automatic: ToolbarVerticalCompressionBehavior](./automatic.md)
   The automatic compression behavior.
-- [static let prefersToolbarItems: ToolbarVerticalCompressionBehavior](toolbarverticalcompressionbehavior/preferstoolbaritems.md)
+- [static let prefersToolbarItems: ToolbarVerticalCompressionBehavior](./preferstoolbaritems.md)
   A compression behavior that prefers keeping toolbar items visible.
 
 

@@ -1,7 +1,8 @@
 # XCTIssueReference.IssueType.thrownError
 
 **Framework**: XCTest  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A test failure when the test throws an error in Swift.
 
@@ -11,21 +12,26 @@ A test failure when the test throws an error in Swift.
 case thrownError
 ```
 
+```c
+XCTIssueTypeThrownError
+```
+
 #### Discussion
 
 This could also occur if an Objective-C test uses the form `-(BOOL)testExample:(NSError **)outError` and returns `NO` with a non-`nil` out error.
 
 ## See Also
 
-- [XCTIssueReference.IssueType.assertionFailure](xctissuereference/issuetype/assertionfailure.md)
+### Issue Types
+- [XCTIssueReference.IssueType.assertionFailure](./assertionfailure.md)
   A test failure due to a failed test assertion or related API.
-- [XCTIssueReference.IssueType.performanceRegression](xctissuereference/issuetype/performanceregression.md)
+- [XCTIssueReference.IssueType.performanceRegression](./performanceregression.md)
   A test failure due to a performance regression.
-- [XCTIssueReference.IssueType.system](xctissuereference/issuetype/system.md)
+- [XCTIssueReference.IssueType.system](./system.md)
   A test failure due to an internal failure in the testing framework.
-- [XCTIssueReference.IssueType.uncaughtException](xctissuereference/issuetype/uncaughtexception.md)
+- [XCTIssueReference.IssueType.uncaughtException](./uncaughtexception.md)
   A test failure when code throws an exception and doesn’t catch it.
-- [XCTIssueReference.IssueType.unmatchedExpectedFailure](xctissuereference/issuetype/unmatchedexpectedfailure.md)
+- [XCTIssueReference.IssueType.unmatchedExpectedFailure](./unmatchedexpectedfailure.md)
   A test failure due to an expected test failure that doesn’t occur.
 
 

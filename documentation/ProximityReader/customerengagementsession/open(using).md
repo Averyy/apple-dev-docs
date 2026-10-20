@@ -1,7 +1,8 @@
 # open(using:)
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Opens the engagement session.
 
@@ -18,25 +19,26 @@ final func open(using token: CustomerEngagement.Token? = nil) async throws
 
 ## Mentions
 
-- [Adding support for Tap to Share to your app](adding-support-for-tap-to-share-to-your-app.md)
+- [Adding support for Tap to Share to your app](../adding-support-for-tap-to-share-to-your-app.md)
 
 #### Discussion
 
-> **Note**: [`CustomerEngagementSession.Error`](customerengagementsession/error.md) if the open request fails. This method can also throw `Foundation/URLError`.
+> **Throws**: [`CustomerEngagementSession.Error`](./error.md) if the open request fails. This method can also throw `Foundation/URLError`.
 
 ## Parameters
 
-- `token`: `The Customer Engagement token used to authenticate your credentials. If you omit the token, you must have already created a valid [`PaymentCardReaderSession`](paymentcardreadersession.md) before calling this method.
+- `token`: `The Customer Engagement token used to authenticate your credentials. If you omit the token, you must have already created a valid [`PaymentCardReaderSession`](../paymentcardreadersession.md) before calling this method.
 
 ## See Also
 
-- [CustomerEngagementSession.Configuration](customerengagementsession/configuration-swift.struct.md)
+### Configuring a session
+- [CustomerEngagementSession.Configuration](./configuration-swift.struct.md)
   A set of configuration options for a customer engagement session.
-- [let configuration: CustomerEngagementSession.Configuration](customerengagementsession/configuration-swift.property.md)
+- [let configuration: CustomerEngagementSession.Configuration](./configuration-swift.property.md)
   Configuration for this session.
-- [func close() async throws](customerengagementsession/close.md)
+- [func close() async throws](./close%28%29.md)
   Closes the engagement session.
-- [CustomerEngagementSession.Token](customerengagementsession/token-swift.struct.md)
+- [CustomerEngagementSession.Token](./token-swift.struct.md)
   A session token.
 
 

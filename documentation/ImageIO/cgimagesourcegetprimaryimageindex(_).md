@@ -1,7 +1,8 @@
 # CGImageSourceGetPrimaryImageIndex(_:)
 
 **Framework**: Image I/O  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the index of the primary image for an High Efficiency Image File Format (HEIF) image.
 
@@ -20,6 +21,10 @@ Returns the index of the primary image for an High Efficiency Image File Format 
 func CGImageSourceGetPrimaryImageIndex(_ isrc: CGImageSource) -> Int
 ```
 
+```c
+extern size_t CGImageSourceGetPrimaryImageIndex(CGImageSourceRef isrc);
+```
+
 #### Return Value
 
 The index of the primary image, or `0` for image formats other than the HEIF format.
@@ -30,9 +35,10 @@ The index of the primary image, or `0` for image formats other than the HEIF for
 
 ## See Also
 
-- [func CGImageSourceCreateImageAtIndex(CGImageSource, Int, CFDictionary?) -> CGImage?](cgimagesourcecreateimageatindex(_:_:_:).md)
+### Extracting Images From an Image Source
+- [func CGImageSourceCreateImageAtIndex(CGImageSource, Int, CFDictionary?) -> CGImage?](./cgimagesourcecreateimageatindex%28_,_,_%29.md)
   Creates an image object from the data at the specified index in an image source.
-- [func CGImageSourceCreateThumbnailAtIndex(CGImageSource, Int, CFDictionary?) -> CGImage?](cgimagesourcecreatethumbnailatindex(_:_:_:).md)
+- [func CGImageSourceCreateThumbnailAtIndex(CGImageSource, Int, CFDictionary?) -> CGImage?](./cgimagesourcecreatethumbnailatindex%28_,_,_%29.md)
   Creates a thumbnail version of the image at the specified index in an image source.
 
 

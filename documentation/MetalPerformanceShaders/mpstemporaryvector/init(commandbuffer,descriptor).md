@@ -1,7 +1,8 @@
 # init(commandBuffer:descriptor:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 convenience init(commandBuffer: any MTLCommandBuffer, descriptor: MPSVectorDescriptor)
+```
+
+```objc
++ (instancetype) temporaryVectorWithCommandBuffer:(id<MTLCommandBuffer>) commandBuffer descriptor:(MPSVectorDescriptor *) descriptor;
 ```
 
 

@@ -1,7 +1,8 @@
 # ObjectIdentifier
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A unique identifier for a class instance, actor instance, or metatype.
 
@@ -30,40 +31,41 @@ In Swift, only instances of classes, instances of actors, and metatypes have uni
 ## Topics
 
 ### Initializers
-- [init(AnyObject)](objectidentifier/init(_:)-223xw.md)
+- [init(AnyObject)](./objectidentifier/init%28_%29-223xw.md)
   Creates an instance that uniquely identifies the given class instance.
-- [init(any (~Copyable & ~Escapable).Type)](objectidentifier/init(_:)-52bz1.md)
+- [init(any (~Copyable & ~Escapable).Type)](./objectidentifier/init%28_%29-52bz1.md)
   Creates an instance that uniquely identifies the given metatype.
-- [init(any Any.Type)](objectidentifier/init(_:)-86u7l.md)
+- [init(any Any.Type)](./objectidentifier/init%28_%29-86u7l.md)
 ### Default Implementations
-- [AtomicOptionalRepresentable Implementations](objectidentifier/atomicoptionalrepresentable-implementations.md)
-- [AtomicRepresentable Implementations](objectidentifier/atomicrepresentable-implementations.md)
-- [Comparable Implementations](objectidentifier/comparable-implementations.md)
-- [CustomDebugStringConvertible Implementations](objectidentifier/customdebugstringconvertible-implementations.md)
-- [Equatable Implementations](objectidentifier/equatable-implementations.md)
-- [Hashable Implementations](objectidentifier/hashable-implementations.md)
+- [AtomicOptionalRepresentable Implementations](./objectidentifier/atomicoptionalrepresentable-implementations.md)
+- [AtomicRepresentable Implementations](./objectidentifier/atomicrepresentable-implementations.md)
+- [Comparable Implementations](./objectidentifier/comparable-implementations.md)
+- [CustomDebugStringConvertible Implementations](./objectidentifier/customdebugstringconvertible-implementations.md)
+- [Equatable Implementations](./objectidentifier/equatable-implementations.md)
+- [Hashable Implementations](./objectidentifier/hashable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AtomicOptionalRepresentable](../synchronization/atomicoptionalrepresentable.md)
-- [AtomicRepresentable](../synchronization/atomicrepresentable.md)
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Comparable](comparable.md)
-- [ConvertibleToBytes](convertibletobytes.md)
-- [Copyable](copyable.md)
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [Equatable](equatable.md)
-- [Escapable](escapable.md)
-- [Hashable](hashable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [AtomicOptionalRepresentable](../Synchronization/atomicoptionalrepresentable.md)
+- [AtomicRepresentable](../Synchronization/atomicrepresentable.md)
+- [BitwiseCopyable](./bitwisecopyable.md)
+- [Comparable](./comparable.md)
+- [ConvertibleToBytes](./convertibletobytes.md)
+- [Copyable](./copyable.md)
+- [CustomDebugStringConvertible](./customdebugstringconvertible.md)
+- [Equatable](./equatable.md)
+- [Escapable](./escapable.md)
+- [Hashable](./hashable.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [struct Mirror](mirror.md)
+### Querying Runtime Values
+- [struct Mirror](./mirror.md)
   A representation of the substructure and display style of an instance of any type.
-- [func type<T, Metatype>(of: borrowing T) -> Metatype](type(of:).md)
+- [func type<T, Metatype>(of: borrowing T) -> Metatype](./type%28of%29.md)
   Returns the dynamic type of a value.
 
 

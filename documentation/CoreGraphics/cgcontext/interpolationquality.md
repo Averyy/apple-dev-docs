@@ -1,7 +1,8 @@
 # interpolationQuality
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the current level of interpolation quality for a graphics context.
 
@@ -10,7 +11,7 @@ Returns the current level of interpolation quality for a graphics context.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,17 +21,22 @@ Returns the current level of interpolation quality for a graphics context.
 var interpolationQuality: CGInterpolationQuality { get set }
 ```
 
+```c
+extern CGInterpolationQuality CGContextGetInterpolationQuality(CGContextRef c);
+```
+
 #### Discussion
 
 Interpolation quality is a graphics state parameter that provides a hint for the level of quality to use for image interpolation (for example, when scaling the image). Not all contexts support all interpolation quality levels.
 
 ## See Also
 
-- [func draw(CGImage, in: CGRect, byTiling: Bool)](cgcontext/draw(_:in:bytiling:).md)
+### Drawing Images and PDF Content
+- [func draw(CGImage, in: CGRect, byTiling: Bool)](./draw%28_,in,bytiling%29.md)
   Draws an image in the specified area.
-- [func drawPDFPage(CGPDFPage)](cgcontext/drawpdfpage(_:).md)
+- [func drawPDFPage(CGPDFPage)](./drawpdfpage%28_%29.md)
   Draws the content of a PDF page into the current graphics context.
-- [enum CGInterpolationQuality](cginterpolationquality.md)
+- [enum CGInterpolationQuality](../cginterpolationquality.md)
   Levels of interpolation quality for rendering an image.
 
 

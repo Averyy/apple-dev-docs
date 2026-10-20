@@ -1,7 +1,8 @@
 # SLRequestHandler
 
 **Framework**: Social  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The callback handler for a request.
 
@@ -17,6 +18,10 @@ The callback handler for a request.
 typealias SLRequestHandler = (Data?, HTTPURLResponse?, (any Error)?) -> Void
 ```
 
+```c
+typedef void (^)(NSData *, NSHTTPURLResponse *, NSError *) SLRequestHandler;
+```
+
 #### Discussion
 
 The parameters for this handler are:
@@ -25,11 +30,12 @@ The parameters for this handler are:
 - **`urlResponse`**: The URL response returned by the request that includes the HTTP response codes.
 - **`error`**: An error identifier.
 
-Possible values are dependent on the target service and are documented by the service provider. For links to documentation for the supported services, see Table 1 in [`SLRequest`](slrequest.md).
+Possible values are dependent on the target service and are documented by the service provider. For links to documentation for the supported services, see Table 1 in [`SLRequest`](./slrequest.md).
 
 ## See Also
 
-- [func perform(handler: SLRequestHandler!)](slrequest/perform(handler:).md)
+### Sending a Request
+- [func perform(handler: SLRequestHandler!)](./slrequest/perform%28handler%29.md)
   Performs an asynchronous request and calls the specified handler when done.
 
 

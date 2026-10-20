@@ -1,7 +1,8 @@
 # LookAroundReadyState
 
 **Framework**: MapKit JS  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that indicate the state of the Look Around object in the browser.
 
@@ -10,7 +11,7 @@ Values that indicate the state of the Look Around object in the browser.
 
 ## Declaration
 
-```swift
+```
 const LookAroundReadyState: Readonly<{
     readonly Loading: "loading";
     readonly Complete: "complete";
@@ -24,24 +25,25 @@ type LookAroundReadyState =
 ## Topics
 
 ### Look Around object states
-- [Complete](lookaroundreadystate/complete.md)
+- [Complete](./lookaroundreadystate/complete.md)
   A value that indicates the Look Around view has completed loading.
-- [Destroyed](lookaroundreadystate/destroyed.md)
+- [Destroyed](./lookaroundreadystate/destroyed.md)
   A value that indicates the Look Around object is destroyed.
-- [Error](lookaroundreadystate/error.md)
+- [Error](./lookaroundreadystate/error.md)
   A value that indicates the Look Around view encountered an error while loading.
-- [Loading](lookaroundreadystate/loading.md)
+- [Loading](./lookaroundreadystate/loading.md)
   A value that indicates the Look Around view is loading.
 
 ## See Also
 
-- [element](abstractlookaround/element.md)
+### Getting information about the Look Around object and its state
+- [element](./abstractlookaround/element.md)
   A property that represents the Look Around view’s containing Document Object Model (DOM) element.
-- [scene](abstractlookaround/scene.md)
+- [scene](./abstractlookaround/scene.md)
   The Look Around scene the framework is displaying.
-- [padding](abstractlookaround/padding.md)
+- [padding](./abstractlookaround/padding.md)
   The padding options for the Look Around view.
-- [readyState](abstractlookaround/readystate.md)
+- [readyState](./abstractlookaround/readystate.md)
   A value that represents the loading state of the Look Around object.
 
 

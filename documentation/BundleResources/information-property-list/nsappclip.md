@@ -1,7 +1,8 @@
 # NSAppClip
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 A collection of keys that an App Clip uses to get additional capabilities.
 
@@ -9,17 +10,18 @@ A collection of keys that an App Clip uses to get additional capabilities.
 - iOS 14.0+
 - iPadOS 14.0+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `NSAppClip` (App Clip)
+- **Type**: dictionary
 
 ## Topics
 
 ### Scheduling and Receiving Temporary Notifications
-- [NSAppClipRequestEphemeralUserNotification](information-property-list/nsappclip/nsappcliprequestephemeralusernotification.md)
+- [NSAppClipRequestEphemeralUserNotification](./nsappclip/nsappcliprequestephemeralusernotification.md)
   A Boolean value that indicates whether an App Clip can schedule or receive notifications for a limited amount of time.
 ### Verifying Location
-- [NSAppClipRequestLocationConfirmation](information-property-list/nsappclip/nsappcliprequestlocationconfirmation.md)
+- [NSAppClipRequestLocationConfirmation](./nsappclip/nsappcliprequestlocationconfirmation.md)
   A Boolean value that indicates whether an App Clip can confirm the user’s location.
 
 

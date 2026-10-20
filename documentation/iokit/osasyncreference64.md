@@ -1,7 +1,8 @@
 # OSAsyncReference64
 
 **Framework**: IOKit  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.4+
@@ -14,6 +15,10 @@
 
 ```swift
 typealias OSAsyncReference64 = (io_user_reference_t, io_user_reference_t, io_user_reference_t, io_user_reference_t, io_user_reference_t, io_user_reference_t, io_user_reference_t, io_user_reference_t)
+```
+
+```c
+typedef io_user_reference_t OSAsyncReference64[8];
 ```
 
 

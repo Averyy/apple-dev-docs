@@ -1,7 +1,8 @@
 # showSearchResults(forQueryString:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays a Spotlight search results window in Finder for the specified query string.
 
@@ -14,9 +15,13 @@ Displays a Spotlight search results window in Finder for the specified query str
 func showSearchResults(forQueryString queryString: String) -> Bool
 ```
 
+```objc
+- (BOOL) showSearchResultsForQueryString:(NSString *) queryString;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the method communicated successfully with Finder; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the method communicated successfully with Finder; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 

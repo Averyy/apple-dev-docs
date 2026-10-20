@@ -1,7 +1,8 @@
 # IntentWidgetFamily.systemExtraLargePortrait
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An extra large portrait widget.
 

@@ -1,7 +1,8 @@
 # height
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The requested height of the containing window.
 
@@ -18,19 +19,24 @@ The requested height of the containing window.
 var height: NSNumber? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSNumber * height;
+```
+
 #### Discussion
 
-The object in this property contains a [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) value. If the webpage didn’t request a specific window height, this property is `nil`.
+The object in this property contains a [`CGFloat`](../../CoreFoundation/cgfloat-swift.struct.md) value. If the webpage didn’t request a specific window height, this property is `nil`.
 
 ## See Also
 
-- [var allowsResizing: NSNumber?](wkwindowfeatures/allowsresizing.md)
+### Inspecting Window Position and Dimensions
+- [var allowsResizing: NSNumber?](./allowsresizing.md)
   A Boolean value that indicates whether to make the containing window window resizable.
-- [var width: NSNumber?](wkwindowfeatures/width.md)
+- [var width: NSNumber?](./width.md)
   The requested width of the containing window.
-- [var x: NSNumber?](wkwindowfeatures/x.md)
+- [var x: NSNumber?](./x.md)
   The requested x-coordinate of the containing window.
-- [var y: NSNumber?](wkwindowfeatures/y.md)
+- [var y: NSNumber?](./y.md)
   The requested y-coordinate of the containing window.
 
 

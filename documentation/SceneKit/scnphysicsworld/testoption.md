@@ -1,18 +1,19 @@
 # SCNPhysicsWorld.TestOption
 
 **Framework**: SceneKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Keys in options dictionaries that affect how SceneKit searches for bodies in a collision, ray, or sweep test.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,37 +21,41 @@ Keys in options dictionaries that affect how SceneKit searches for bodies in a c
 struct TestOption
 ```
 
+```c
+typedef NSString * SCNPhysicsTestOption;
+```
+
 #### Discussion
 
 Pass a dictionary containing one or more of these keys (with values as described above) for the `options` parameter when calling one of these methods:
 
-- [`contactTestBetween(_:_:options:)`](scnphysicsworld/contacttestbetween(_:_:options:).md)
-- [`contactTest(with:options:)`](scnphysicsworld/contacttest(with:options:).md)
-- [`rayTestWithSegment(from:to:options:)`](scnphysicsworld/raytestwithsegment(from:to:options:).md)
-- [`convexSweepTest(with:from:to:options:)`](scnphysicsworld/convexsweeptest(with:from:to:options:).md)
+- [`contactTestBetween(_:_:options:)`](./contacttestbetween%28_,_,options%29.md)
+- [`contactTest(with:options:)`](./contacttest%28with,options%29.md)
+- [`rayTestWithSegment(from:to:options:)`](./raytestwithsegment%28from,to,options%29.md)
+- [`convexSweepTest(with:from:to:options:)`](./convexsweeptest%28with,from,to,options%29.md)
 
 ## Topics
 
 ### Type Properties
-- [static let backfaceCulling: SCNPhysicsWorld.TestOption](scnphysicsworld/testoption/backfaceculling.md)
+- [static let backfaceCulling: SCNPhysicsWorld.TestOption](./testoption/backfaceculling.md)
   The key for choosing whether to ignore back-facing polygons in physics shapes when searching for contacts.
-- [static let collisionBitMask: SCNPhysicsWorld.TestOption](scnphysicsworld/testoption/collisionbitmask.md)
+- [static let collisionBitMask: SCNPhysicsWorld.TestOption](./testoption/collisionbitmask.md)
   The key for selecting which categories of physics bodies that SceneKit should test for contacts.
-- [static let searchMode: SCNPhysicsWorld.TestOption](scnphysicsworld/testoption/searchmode.md)
+- [static let searchMode: SCNPhysicsWorld.TestOption](./testoption/searchmode.md)
   The key for selecting the number and order of contacts to be tested.
-- [SCNPhysicsWorld.TestSearchMode](scnphysicsworld/testsearchmode.md)
-  Options affecting how SceneKit searches for bodies in a collision, ray, or sweep test, used with the [`searchMode`](scnphysicsworld/testoption/searchmode.md) key.
+- [SCNPhysicsWorld.TestSearchMode](./testsearchmode.md)
+  Options affecting how SceneKit searches for bodies in a collision, ray, or sweep test, used with the [`searchMode`](./testoption/searchmode.md) key.
 ### Initializers
-- [init(rawValue: String)](scnphysicsworld/testoption/init(rawvalue:).md)
+- [init(rawValue: String)](./testoption/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

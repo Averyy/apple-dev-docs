@@ -1,7 +1,8 @@
 # fileProviderErrorForNonExistentItem(withIdentifier:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 11.0+
@@ -14,6 +15,10 @@
 
 ```swift
 class func fileProviderErrorForNonExistentItem(withIdentifier itemIdentifier: NSFileProviderItemIdentifier) -> Self
+```
+
+```objc
++ (instancetype) fileProviderErrorForNonExistentItemWithIdentifier:(NSFileProviderItemIdentifier) itemIdentifier;
 ```
 
 

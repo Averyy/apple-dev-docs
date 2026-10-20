@@ -1,29 +1,31 @@
 # DispatchConcurrent
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 void DispatchConcurrent(IODispatchBlock block);
 ```
 
 ## See Also
 
-- [DispatchConcurrent_f](iodispatchqueue/dispatchconcurrent_f.md)
-- [RunAction](iodispatchqueue/runaction.md)
-- [Sleep](iodispatchqueue/sleep.md)
-- [SleepWithDeadline](iodispatchqueue/sleepwithdeadline.md)
-- [SleepWithTimeout](iodispatchqueue/sleepwithtimeout.md)
-- [Wakeup](iodispatchqueue/wakeup.md)
-- [WakeupWithOptions](iodispatchqueue/wakeupwithoptions.md)
+### Instance Methods
+- [DispatchConcurrent_f](./dispatchconcurrent_f.md)
+- [RunAction](./runaction.md)
+- [Sleep](./sleep.md)
+- [SleepWithDeadline](./sleepwithdeadline.md)
+- [SleepWithTimeout](./sleepwithtimeout.md)
+- [Wakeup](./wakeup.md)
+- [WakeupWithOptions](./wakeupwithoptions.md)
 
 
 ---

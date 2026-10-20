@@ -1,7 +1,8 @@
 # isScanning
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the data scanner is actively looking for items.
 
@@ -19,11 +20,12 @@ var isScanning: Bool { get }
 
 ## See Also
 
-- [func startScanning() throws](datascannerviewcontroller/startscanning.md)
+### Scanning and recognizing items
+- [func startScanning() throws](./startscanning%28%29.md)
   Starts scanning the camera’s live video for data.
-- [func stopScanning()](datascannerviewcontroller/stopscanning.md)
+- [func stopScanning()](./stopscanning%28%29.md)
   Stops scanning the camera’s live video for data.
-- [var recognizedItems: AsyncStream<[RecognizedItem]>](datascannerviewcontroller/recognizeditems.md)
+- [var recognizedItems: AsyncStream<[RecognizedItem]>](./recognizeditems.md)
   An asynchronous array of items that the data scanner currently recognizes in the camera’s live video.
 
 

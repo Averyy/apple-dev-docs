@@ -8,7 +8,7 @@ Communicate securely with the web service using a server token.
 
 Automated Device Enrollment uses a server token to allow a device management service to securely communicate with the program’s service.
 
-#### Get an Automated Device Enrollment Server Token
+#### Get an Automated Device Enrollment server token
 
 To get a server token, the user must complete the following steps. You can help by automating some of the steps.
 
@@ -20,20 +20,20 @@ To get a server token, the user must complete the following steps. You can help 
 6. Decrypt the S/MIME token.
 7. Upload the token file to the device management service.
 
-The token consists of these 4 items: the consumer key, the consumer secret, the access token, and the access secret. See [`Examining server tokens`](examining-server-tokens.md) for more details.
+The token consists of these 4 items: the consumer key, the consumer secret, the access token, and the access secret. See [Examining server tokens](./examining-server-tokens.md) for more details.
 
-#### Deploy the Server Token
+#### Deploy the server token
 
 The server tokens can be deployed automatically or manually.
 
 - **Automatically**: The device management service must automatically decrypt this file when it’s uploaded, using the private key for the Automated Device Enrollment web services.
 - **Manually**: Use the private key and an S/MIME encryption utility to manually decrypt the encrypted token file before it’s uploaded to the device management service. You then use the plain-text token file for authentication with the Automated Device Enrollment services.
 
-#### Use the Oauth Credentials
+#### Use the OAuth credentials
 
 Each service request to the enrollment service must include an `X-ADM-Auth-Session` header. If the request doesn’t have a valid `X-ADM-Auth-Session` header, or the auth token has expired, the server returns an `HTTP 401 Unauthorized` error. A new `X-ADM-Auth-Session` can be requested by using the `https://mdmenrollment.apple.com/session` endpoint. This endpoint supports the OAuth 1.0a protocol for accessing protected resources.
 
-OAuth requests must provide the server-token fields along with a timestamp (in seconds since January 1, 1970 00:00:00 GMT) and a cryptographically random anti-replay value that must be unique for all requests made with a given timestamp. Sign the request using HMAC-SHA1, as described in [`http://oauth.net/core/1.0a/#signing_process`](https://developer.apple.comhttp://oauth.net/core/1.0a/#signing_process).  A request might look like:
+OAuth requests must provide the server-token fields along with a timestamp (in seconds since January 1, 1970 00:00:00 GMT) and a cryptographically random anti-replay value that must be unique for all requests made with a given timestamp. Sign the request using HMAC-SHA1, as described in [http://oauth.net/core/1.0a/#signing_process](http://oauth.net/core/1.0a/#signing_process).  A request might look like:
 
 ```javascript
 GET /session HTTP/1.1    
@@ -72,14 +72,15 @@ After a period of time, the token expires and the service returns a `401` error 
 ## Topics
 
 ### Examples and error codes
-- [Examining server tokens](examining-server-tokens.md)
+- [Examining server tokens](./examining-server-tokens.md)
   View sample encrypted and unencrypted tokens to verify your server tokens are in the right format.
-- [Interpreting Automated Device Enrollment error codes](interpreting-automated-device-enrollment-error-codes.md)
+- [Interpreting Automated Device Enrollment error codes](./interpreting-automated-device-enrollment-error-codes.md)
   Interpret the error codes you might encounter or that can happen during authentication.
 
 ## See Also
 
-- [Authenticating through web views](authenticating-through-web-views.md)
+### Authentication
+- [Authenticating through web views](./authenticating-through-web-views.md)
   Use your own custom web interfaces to authenticate users.
 
 

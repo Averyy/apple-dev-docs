@@ -1,7 +1,8 @@
 # jumpToBookmark(_:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Restores game to the given bookmark
 
@@ -16,9 +17,10 @@ func jumpToBookmark(_ bookmark: StateBookmark)
 
 ## See Also
 
-- [func jumpToBookmark(matching: StateBookmarkIdentifier)](tabletopgame/jumptobookmark(matching:).md)
+### Jumping to bookmarks
+- [func jumpToBookmark(matching: StateBookmarkIdentifier)](./jumptobookmark%28matching%29.md)
   Restores game to the given bookmark
-- [var bookmarks: [StateBookmarkIdentifier]](tabletopgame/bookmarks.md)
+- [var bookmarks: [StateBookmarkIdentifier]](./bookmarks.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(parameters:setupPayload:delegate:queue:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Prepare to commission a device with the given parameters and the given setup payload (QR code, manual pairing code, etc).  Returns nil if the payload is not valid.
 
@@ -18,6 +19,10 @@ Prepare to commission a device with the given parameters and the given setup pay
 
 ```swift
 init?(parameters: MTRCommissioningParameters, setupPayload payload: String, delegate: any MTRCommissioningDelegate, queue: dispatch_queue_t)
+```
+
+```objc
+- (instancetype) initWithParameters:(MTRCommissioningParameters *) parameters setupPayload:(NSString *) payload delegate:(id<MTRCommissioningDelegate>) delegate queue:(dispatch_queue_t) queue;
 ```
 
 #### Discussion

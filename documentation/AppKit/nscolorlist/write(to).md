@@ -1,7 +1,8 @@
 # write(to:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Saves the color list to the file at the specified URL.
 
@@ -14,9 +15,13 @@ Saves the color list to the file at the specified URL.
 func write(to url: URL?) throws
 ```
 
+```objc
+- (BOOL) writeToURL:(NSURL *) url error:(NSError **) errPtr;
+```
+
 #### Discussion
 
-If `url` represents a directory, this method saves the color list in that directory in a file with the name **`.clr`, where ** is the value of the [`name`](nscolorlist/name-swift.property.md) property. If `url` represents a file, this method saves the color list using the name you provided.
+If `url` represents a directory, this method saves the color list in that directory in a file with the name **`.clr`, where ** is the value of the [`name`](./name-swift.property.md) property. If `url` represents a file, this method saves the color list using the name you provided.
 
 ## Parameters
 
@@ -24,9 +29,10 @@ If `url` represents a directory, this method saves the color list in that direct
 
 ## See Also
 
-- [func removeFile()](nscolorlist/removefile.md)
+### Writing and Removing Color List Files
+- [func removeFile()](./removefile%28%29.md)
   Removes the file from which the list was created, if the file is in a standard search path and owned by the user.
-- [func write(toFile: String?) -> Bool](nscolorlist/write(tofile:).md)
+- [func write(toFile: String?) -> Bool](./write%28tofile%29.md)
   Saves the color list to the file at the specified path.
 
 

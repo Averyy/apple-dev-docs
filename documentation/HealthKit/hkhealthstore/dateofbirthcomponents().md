@@ -1,7 +1,8 @@
 # dateOfBirthComponents()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reads the user’s date of birth from the HealthKit store as date components.
 
@@ -19,9 +20,13 @@ Reads the user’s date of birth from the HealthKit store as date components.
 func dateOfBirthComponents() throws -> DateComponents
 ```
 
+```objc
+- (NSDateComponents *) dateOfBirthComponentsWithError:(NSError **) error;
+```
+
 #### Return Value
 
-An [`NSDateComponents`](https://developer.apple.com/documentation/foundation/nsdatecomponents) object representing the user’s birthdate in the Gregorian calendar, or `nil`.
+An [`NSDateComponents`](../../Foundation/nsdatecomponents.md) object representing the user’s birthdate in the Gregorian calendar, or `nil`.
 
 #### Discussion
 
@@ -29,15 +34,16 @@ If the user has not yet specified a birth date, or if the user has denied your a
 
 ## See Also
 
-- [func biologicalSex() throws -> HKBiologicalSexObject](hkhealthstore/biologicalsex.md)
+### Reading characteristic data
+- [func biologicalSex() throws -> HKBiologicalSexObject](./biologicalsex%28%29.md)
   Reads someone’s biological sex from the HealthKit store.
-- [func bloodType() throws -> HKBloodTypeObject](hkhealthstore/bloodtype.md)
+- [func bloodType() throws -> HKBloodTypeObject](./bloodtype%28%29.md)
   Reads the user’s blood type from the HealthKit store.
-- [func dateOfBirth() throws -> Date](hkhealthstore/dateofbirth.md)
+- [func dateOfBirth() throws -> Date](./dateofbirth%28%29.md)
   Reads the user’s date of birth from the HealthKit store as a date value.
-- [func fitzpatrickSkinType() throws -> HKFitzpatrickSkinTypeObject](hkhealthstore/fitzpatrickskintype.md)
+- [func fitzpatrickSkinType() throws -> HKFitzpatrickSkinTypeObject](./fitzpatrickskintype%28%29.md)
   Reads the user’s Fitzpatrick Skin Type from the HealthKit store.
-- [func wheelchairUse() throws -> HKWheelchairUseObject](hkhealthstore/wheelchairuse.md)
+- [func wheelchairUse() throws -> HKWheelchairUseObject](./wheelchairuse%28%29.md)
   Reads the user’s wheelchair use from the HealthKit store.
 
 

@@ -1,7 +1,8 @@
 # date
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date on which the pedometer event was recorded.
 
@@ -19,11 +20,16 @@ The date on which the pedometer event was recorded.
 var date: Date { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDate * date;
+```
+
 ## See Also
 
-- [var type: CMPedometerEventType](cmpedometerevent/type.md)
+### Pedometer Data
+- [var type: CMPedometerEventType](./type.md)
   The type of change that occurred.
-- [enum CMPedometerEventType](cmpedometereventtype.md)
+- [enum CMPedometerEventType](../cmpedometereventtype.md)
   Constants indicating the change that occurred to the user’s pedestrian activity.
 
 

@@ -1,7 +1,8 @@
 # coordinate
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The lattitude and longitude of the anchor’s geographic location.
 
@@ -13,6 +14,10 @@ The lattitude and longitude of the anchor’s geographic location.
 
 ```swift
 var coordinate: CLLocationCoordinate2D { get }
+```
+
+```objc
+@property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
 ```
 
 #### Discussion

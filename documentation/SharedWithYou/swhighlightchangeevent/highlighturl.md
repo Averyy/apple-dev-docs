@@ -1,7 +1,8 @@
 # highlightURL
 
 **Framework**: Shared with You  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the hightlight.
 
@@ -18,11 +19,16 @@ The URL of the hightlight.
 var highlightURL: URL { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSURL * highlightURL;
+```
+
 ## See Also
 
-- [var changeEventTrigger: SWHighlightChangeEventTrigger](swhighlightchangeevent/changeeventtrigger.md)
+### Accessing event attributes
+- [var changeEventTrigger: SWHighlightChangeEventTrigger](./changeeventtrigger.md)
   The type of change event for the highlight.
-- [enum SWHighlightChangeEventTrigger](swhighlightchangeeventtrigger.md)
+- [enum SWHighlightChangeEventTrigger](../swhighlightchangeeventtrigger.md)
   The type of change event for the highlight
 
 

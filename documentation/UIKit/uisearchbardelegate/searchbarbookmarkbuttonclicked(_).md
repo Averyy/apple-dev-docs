@@ -1,7 +1,8 @@
 # searchBarBookmarkButtonClicked(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the bookmark button was tapped.
 
@@ -17,6 +18,10 @@ Tells the delegate that the bookmark button was tapped.
 optional func searchBarBookmarkButtonClicked(_ searchBar: UISearchBar)
 ```
 
+```objc
+- (void) searchBarBookmarkButtonClicked:(UISearchBar *) searchBar;
+```
+
 #### Discussion
 
 There is no automatic bookmark support provided by the search bar. It’s the application’s responsibility to implement this method to perform some action if the bookmark button is tapped by the user.
@@ -27,13 +32,15 @@ There is no automatic bookmark support provided by the search bar. It’s the ap
 
 ## See Also
 
-- [var showsBookmarkButton: Bool](uisearchbar/showsbookmarkbutton.md)
+### Related Documentation
+- [var showsBookmarkButton: Bool](../uisearchbar/showsbookmarkbutton.md)
   A Boolean value indicating whether the bookmark button is displayed.
-- [func searchBarCancelButtonClicked(UISearchBar)](uisearchbardelegate/searchbarcancelbuttonclicked(_:).md)
+### Responding to clicks in search controls
+- [func searchBarCancelButtonClicked(UISearchBar)](./searchbarcancelbuttonclicked%28_%29.md)
   Tells the delegate that the cancel button was tapped.
-- [func searchBarSearchButtonClicked(UISearchBar)](uisearchbardelegate/searchbarsearchbuttonclicked(_:).md)
+- [func searchBarSearchButtonClicked(UISearchBar)](./searchbarsearchbuttonclicked%28_%29.md)
   Tells the delegate that the search button was tapped.
-- [func searchBarResultsListButtonClicked(UISearchBar)](uisearchbardelegate/searchbarresultslistbuttonclicked(_:).md)
+- [func searchBarResultsListButtonClicked(UISearchBar)](./searchbarresultslistbuttonclicked%28_%29.md)
   Tells the delegate that the search results list button was tapped.
 
 

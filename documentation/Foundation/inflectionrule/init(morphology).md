@@ -1,7 +1,8 @@
 # init(morphology:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an inflection rule with the given morphology.
 
@@ -26,7 +27,8 @@ init(morphology: Morphology)
 
 ## See Also
 
-- [struct Morphology](morphology.md)
+### Creating an Inflection Rule from a Morphology
+- [struct Morphology](../morphology.md)
   A description of the grammatical properties of a string.
 
 

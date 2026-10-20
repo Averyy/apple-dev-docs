@@ -1,7 +1,8 @@
 # refreshPreviewItem()
 
 **Framework**: Quick Look UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the preview to display the currently previewed item.
 
@@ -14,17 +15,22 @@ Updates the preview to display the currently previewed item.
 func refreshPreviewItem()
 ```
 
+```objc
+- (void) refreshPreviewItem;
+```
+
 #### Discussion
 
-When you modify the object that the [`previewItem`](qlpreviewview/previewitem.md) property points to, call this method to generate and display the new preview.
+When you modify the object that the [`previewItem`](./previewitem.md) property points to, call this method to generate and display the new preview.
 
 ## See Also
 
-- [var previewItem: (any QLPreviewItem)!](qlpreviewview/previewitem.md)
+### Displaying a Preview
+- [var previewItem: (any QLPreviewItem)!](./previewitem.md)
   The item to preview.
-- [var displayState: Any!](qlpreviewview/displaystate.md)
-  The current display state of the [`previewItem`](qlpreviewview/previewitem.md).
-- [var autostarts: Bool](qlpreviewview/autostarts.md)
+- [var displayState: Any!](./displaystate.md)
+  The current display state of the [`previewItem`](./previewitem.md).
+- [var autostarts: Bool](./autostarts.md)
   A Boolean value that determines whether the preview starts automatically.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The options for the text drag operation.
@@ -16,6 +17,10 @@ The options for the text drag operation.
 
 ```swift
 var textDragOptions: UITextDragOptions { get set }
+```
+
+```objc
+@property (nonatomic) UITextDragOptions textDragOptions;
 ```
 
 

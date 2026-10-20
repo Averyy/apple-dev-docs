@@ -1,7 +1,8 @@
 # AlertingContext
 
 **Framework**: Accessory Notifications  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that provides guidance for how to alert for a notification.
 
@@ -21,38 +22,39 @@ To alert for a notification, present it on screen, play a sound, or trigger a ha
 ## Topics
 
 ### Creating an alerting context
-- [init(notificationCanAlert: Bool, suppressedByFocus: Bool, kind: AlertingContext.Kind, sound: AlertingContext.Sound?)](alertingcontext/init(notificationcanalert:suppressedbyfocus:kind:sound:).md)
+- [init(notificationCanAlert: Bool, suppressedByFocus: Bool, kind: AlertingContext.Kind, sound: AlertingContext.Sound?)](./alertingcontext/init%28notificationcanalert,suppressedbyfocus,kind,sound%29.md)
   Initializes an alerting context with notification alert conditions.
 ### Determining alerting behavior
-- [var shouldAlert: Bool](alertingcontext/shouldalert.md)
+- [var shouldAlert: Bool](./alertingcontext/shouldalert.md)
   A Boolean value that indicates the recommended alerting behavior.
-- [var notificationCanAlert: Bool](alertingcontext/notificationcanalert.md)
+- [var notificationCanAlert: Bool](./alertingcontext/notificationcanalert.md)
   A Boolean value that indicates whether the accessory can alert the person for the notification.
-- [var isSuppressedByFocus: Bool](alertingcontext/issuppressedbyfocus.md)
+- [var isSuppressedByFocus: Bool](./alertingcontext/issuppressedbyfocus.md)
   A Boolean value that indicates whether the device’s Focus state suppresses notification alerts.
 ### Classifying the notification type
-- [var kind: AlertingContext.Kind](alertingcontext/kind-swift.property.md)
+- [var kind: AlertingContext.Kind](./alertingcontext/kind-swift.property.md)
   A classification for the notification type.
-- [AlertingContext.Kind](alertingcontext/kind-swift.enum.md)
+- [AlertingContext.Kind](./alertingcontext/kind-swift.enum.md)
   Notification types for specialized handling.
 ### Configuring notification sound
-- [var sound: AlertingContext.Sound?](alertingcontext/sound-swift.property.md)
+- [var sound: AlertingContext.Sound?](./alertingcontext/sound-swift.property.md)
   An optional sound configuration for the notification.
-- [AlertingContext.Sound](alertingcontext/sound-swift.struct.md)
+- [AlertingContext.Sound](./alertingcontext/sound-swift.struct.md)
   A structure that describes sound characteristics for a notification.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
 
 ## See Also
 
-- [struct AccessoryNotification](accessorynotification.md)
+### Data curation and alerting
+- [struct AccessoryNotification](./accessorynotification.md)
   A structure that contains the details of a notification that iOS provides to your accessory.
 
 

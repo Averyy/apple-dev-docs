@@ -1,7 +1,8 @@
 # showBluetoothAccessoryPicker(withNameFilter:completion:)
 
 **Framework**: External Accessory  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays an alert that allows the user to pair the device with a Bluetooth accessory.
 
@@ -15,14 +16,26 @@ Displays an alert that allows the user to pair the device with a Bluetooth acces
 ## Declaration
 
 ```swift
+func showBluetoothAccessoryPicker(withNameFilter predicate: NSPredicate?, completion: (@Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 func showBluetoothAccessoryPicker(withNameFilter predicate: NSPredicate?) async throws
+```
+
+```objc
+- (void) showBluetoothAccessoryPickerWithNameFilter:(NSPredicate *) predicate completion:(EABluetoothAccessoryPickerCompletion) completion;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func showBluetoothAccessoryPicker(withNameFilter predicate: NSPredicate?) async throws
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func showBluetoothAccessoryPicker(withNameFilter predicate: NSPredicate?) async throws
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 On iOS devices, this method synchronously displays an alert containing the list of Bluetooth accessories that have been discovered by the current device and that match the specified filter (if any). The user can select an accessory from this list and pair the device to it. Pairing an accessory updates the accessory manager’s list of connected accessories and generates a corresponding connection notification. On Apple silicon, this method displays an alert to let the user know that the Bluetooth accessory picker is unavailable.
 
@@ -35,13 +48,14 @@ On iOS devices, this method synchronously displays an alert containing the list 
 
 ## See Also
 
-- [typealias EABluetoothAccessoryPickerCompletion](eabluetoothaccessorypickercompletion.md)
+### Presenting the Bluetooth Picker
+- [typealias EABluetoothAccessoryPickerCompletion](../eabluetoothaccessorypickercompletion.md)
   The completion block for the Bluetooth picker.
-- [struct EABluetoothAccessoryPickerError](eabluetoothaccessorypickererror.md)
+- [struct EABluetoothAccessoryPickerError](../eabluetoothaccessorypickererror.md)
   Error codes returned by the Bluetooth accessory picker.
-- [EABluetoothAccessoryPickerError.Code](eabluetoothaccessorypickererror/code.md)
+- [EABluetoothAccessoryPickerError.Code](../eabluetoothaccessorypickererror/code.md)
   The error codes that may be passed in an error object for the Bluetooth picker completion block.
-- [let EABluetoothAccessoryPickerErrorDomain: String](eabluetoothaccessorypickererrordomain.md)
+- [let EABluetoothAccessoryPickerErrorDomain: String](../eabluetoothaccessorypickererrordomain.md)
   The domain for errors passed to a Bluetooth picker completion block.
 
 

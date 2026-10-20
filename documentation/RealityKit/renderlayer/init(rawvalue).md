@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a custom render layer with the specified runtime name.
 
@@ -25,7 +26,7 @@ A new render layer, or `nil` if `rawValue` is empty.
 
 #### Discussion
 
-Use this failable initializer when the layer name comes from a runtime string, such as user input or data loaded from a file. To define a layer constant from a string literal, use [`init(_:)`](renderlayer/init(_:).md) instead.
+Use this failable initializer when the layer name comes from a runtime string, such as user input or data loaded from a file. To define a layer constant from a string literal, use [`init(_:)`](./init%28_%29.md) instead.
 
 Use descriptive names with namespace prefixes such as `"com.myapp.hero"` or `"com.myapp.background"` to avoid conflicts with other layers.
 

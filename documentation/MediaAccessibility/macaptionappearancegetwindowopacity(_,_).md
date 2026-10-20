@@ -1,7 +1,8 @@
 # MACaptionAppearanceGetWindowOpacity(_:_:)
 
 **Framework**: Media Accessibility  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the preference for the overlay’s opacity.
 
@@ -19,20 +20,25 @@ Returns the preference for the overlay’s opacity.
 func MACaptionAppearanceGetWindowOpacity(_ domain: MACaptionAppearanceDomain, _ behavior: UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> CGFloat
 ```
 
+```c
+extern CGFloat MACaptionAppearanceGetWindowOpacity(MACaptionAppearanceDomain domain, MACaptionAppearanceBehavior *behavior);
+```
+
 #### Return Value
 
 The float value, ranging from `0.0` to `1.0`, representing the opacity of the color behind all other caption elements.
 
 ## Parameters
 
-- `domain`: The domain to retrieve the preference value from. See [`MACaptionAppearanceDomain`](macaptionappearancedomain.md). Pass [`MACaptionAppearanceDomain.user`](macaptionappearancedomain/user.md) unless the system defaults are needed for comparison.
-- `behavior`: A pointer to memory. On return, this memory holds the caption appearance behavior for this preference setting. For possible values see [`MACaptionAppearanceBehavior`](macaptionappearancebehavior.md). Pass `NULL` when you do not need the behavior setting.
+- `domain`: The domain to retrieve the preference value from. See [`MACaptionAppearanceDomain`](./macaptionappearancedomain.md). Pass [`MACaptionAppearanceDomain.user`](./macaptionappearancedomain/user.md) unless the system defaults are needed for comparison.
+- `behavior`: A pointer to memory. On return, this memory holds the caption appearance behavior for this preference setting. For possible values see [`MACaptionAppearanceBehavior`](./macaptionappearancebehavior.md). Pass `NULL` when you do not need the behavior setting.
 
 ## See Also
 
-- [func MACaptionAppearanceCopyWindowColor(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> Unmanaged<CGColor>](macaptionappearancecopywindowcolor(_:_:).md)
+### Caption window settings
+- [func MACaptionAppearanceCopyWindowColor(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> Unmanaged<CGColor>](./macaptionappearancecopywindowcolor%28_,_%29.md)
   Returns the preference for the caption window’s color.
-- [func MACaptionAppearanceGetWindowRoundedCornerRadius(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> CGFloat](macaptionappearancegetwindowroundedcornerradius(_:_:).md)
+- [func MACaptionAppearanceGetWindowRoundedCornerRadius(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> CGFloat](./macaptionappearancegetwindowroundedcornerradius%28_,_%29.md)
   Returns the radius of the caption window’s corners.
 
 

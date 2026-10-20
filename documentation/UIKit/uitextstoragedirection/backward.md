@@ -1,16 +1,17 @@
 # UITextStorageDirection.backward
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Storage of the text in a backward direction.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,9 +19,14 @@ Storage of the text in a backward direction.
 case backward
 ```
 
+```c
+UITextStorageDirectionBackward
+```
+
 ## See Also
 
-- [UITextStorageDirection.forward](uitextstoragedirection/forward.md)
+### Constants
+- [UITextStorageDirection.forward](./forward.md)
   Storage of the text in a forward direction.
 
 

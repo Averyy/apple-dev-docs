@@ -1,6 +1,7 @@
 # Organizing a Scene with Nodes
 
-**Framework**: SceneKit
+**Framework**: SceneKit  
+**Role**: Article
 
 Use nodes to define the structure of a scene.
 
@@ -10,13 +11,14 @@ SceneKit implements content as a hierarchical tree structure of nodes, also know
 
 Before working with SceneKit, you should be familiar with basic graphics concepts such as coordinate systems and the mathematics of three-dimensional geometry. SceneKit uses a right-handed coordinate system where (by default) the direction of view is along the negative z-axis, as illustrated below.
 
-![Diagram of the SceneKit coordinate system: the positive x-axis points to the camera’s right, the positive y-axis points up, and the positive z-axis points toward and behind the camera.](/images/com.apple.scenekit/media-2929768@2x.png)
+![Diagram of the SceneKit coordinate system: the positive x-axis points to the camera’s right, the positive y-axis points up, and the positive z-axis points toward and behind the camera.](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-2929768@2x.png)
 
 ## See Also
 
-- [class SCNNode](scnnode.md)
+### Scene Structure
+- [class SCNNode](./scnnode.md)
   A structural element of a scene graph, representing a position and transform in a 3D coordinate space, to which you can attach geometry, lights, cameras, or other displayable content.
-- [class SCNReferenceNode](scnreferencenode.md)
+- [class SCNReferenceNode](./scnreferencenode.md)
   A scene graph node that serves as a placeholder for content to be loaded from a separate scene file.
 
 

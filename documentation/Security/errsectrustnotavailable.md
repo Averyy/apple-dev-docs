@@ -1,7 +1,8 @@
 # errSecTrustNotAvailable
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 No trust results are available.
 
@@ -18,6 +19,10 @@ No trust results are available.
 
 ```swift
 var errSecTrustNotAvailable: OSStatus { get }
+```
+
+```c
+errSecTrustNotAvailable
 ```
 
 

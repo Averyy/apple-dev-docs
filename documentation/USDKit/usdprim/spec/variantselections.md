@@ -1,7 +1,8 @@
 # variantSelections
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All authored variant selections, keyed by variant set name.
 

@@ -1,7 +1,8 @@
 # init(scheme:host:path:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a pattern object for the specified scheme, host, and path strings.
 
@@ -16,6 +17,10 @@ Returns a pattern object for the specified scheme, host, and path strings.
 
 ```swift
 init(scheme: String, host: String, path: String) throws
+```
+
+```objc
+- (instancetype) initWithScheme:(NSString *) scheme host:(NSString *) host path:(NSString *) path error:(NSError **) error;
 ```
 
 #### Return Value

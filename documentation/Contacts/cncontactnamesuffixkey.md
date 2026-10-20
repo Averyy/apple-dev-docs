@@ -1,7 +1,8 @@
 # CNContactNameSuffixKey
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The contact’s name suffix.
 
@@ -19,29 +20,34 @@ The contact’s name suffix.
 let CNContactNameSuffixKey: String
 ```
 
+```c
+extern NSString * const CNContactNameSuffixKey;
+```
+
 #### Discussion
 
 This key takes a string value.
 
 ## See Also
 
-- [let CNContactNamePrefixKey: String](cncontactnameprefixkey.md)
+### Name
+- [let CNContactNamePrefixKey: String](./cncontactnameprefixkey.md)
   The prefix for the contact’s name.
-- [let CNContactGivenNameKey: String](cncontactgivennamekey.md)
+- [let CNContactGivenNameKey: String](./cncontactgivennamekey.md)
   The contact’s given name.
-- [let CNContactMiddleNameKey: String](cncontactmiddlenamekey.md)
+- [let CNContactMiddleNameKey: String](./cncontactmiddlenamekey.md)
   The contact’s middle name.
-- [let CNContactFamilyNameKey: String](cncontactfamilynamekey.md)
+- [let CNContactFamilyNameKey: String](./cncontactfamilynamekey.md)
   The contact’s family name.
-- [let CNContactPreviousFamilyNameKey: String](cncontactpreviousfamilynamekey.md)
+- [let CNContactPreviousFamilyNameKey: String](./cncontactpreviousfamilynamekey.md)
   The contact’s previous family name.
-- [let CNContactNicknameKey: String](cncontactnicknamekey.md)
+- [let CNContactNicknameKey: String](./cncontactnicknamekey.md)
   The contact’s nickname.
-- [let CNContactPhoneticGivenNameKey: String](cncontactphoneticgivennamekey.md)
+- [let CNContactPhoneticGivenNameKey: String](./cncontactphoneticgivennamekey.md)
   The phonetic spelling of the contact’s  given name.
-- [let CNContactPhoneticMiddleNameKey: String](cncontactphoneticmiddlenamekey.md)
+- [let CNContactPhoneticMiddleNameKey: String](./cncontactphoneticmiddlenamekey.md)
   The phonetic spelling of the contact’s middle name.
-- [let CNContactPhoneticFamilyNameKey: String](cncontactphoneticfamilynamekey.md)
+- [let CNContactPhoneticFamilyNameKey: String](./cncontactphoneticfamilynamekey.md)
   The phonetic spelling of the contact’s family name.
 
 

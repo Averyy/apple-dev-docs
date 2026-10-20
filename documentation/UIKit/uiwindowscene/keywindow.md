@@ -1,7 +1,8 @@
 # keyWindow
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key window associated with the scene.
 
@@ -18,15 +19,20 @@ The key window associated with the scene.
 var keyWindow: UIWindow? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) UIWindow * keyWindow;
+```
+
 #### Discussion
 
-The key window receives keyboard and other non-touch-related events. Of a scene’s associated [`windows`](uiwindowscene/windows.md), only one window at a time may be the key window.
+The key window receives keyboard and other non-touch-related events. Of a scene’s associated [`windows`](./windows.md), only one window at a time may be the key window.
 
 ## See Also
 
-- [var windows: [UIWindow]](uiwindowscene/windows.md)
+### Getting the active windows
+- [var windows: [UIWindow]](./windows.md)
   The windows associated with the scene.
-- [var screen: UIScreen](uiwindowscene/screen.md)
+- [var screen: UIScreen](./screen.md)
   The screen that displays the contents of the scene.
 
 

@@ -1,7 +1,8 @@
 # ScoreCounter
 
 **Framework**: TabletopKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that keeps a score in a tabletop game.
 
@@ -17,27 +18,28 @@ struct ScoreCounter
 ## Topics
 
 ### Creating score counters
-- [init(id: ScoreCounter.ID, value: Int64)](scorecounter/init(id:value:).md)
+- [init(id: ScoreCounter.ID, value: Int64)](./scorecounter/init%28id,value%29.md)
   Creates a score counter with a unique identifier and initial value.
 ### Getting score counter identifiers
-- [var id: ScoreCounter.ID](scorecounter/id.md)
+- [var id: ScoreCounter.ID](./scorecounter/id.md)
   A unique identifier for the score counter.
-- [ScoreCounter.Identifier](scorecounter/identifier.md)
+- [ScoreCounter.Identifier](./scorecounter/identifier.md)
   A unique identifier for score counters.
 ### Getting score counter values
-- [var value: Int64](scorecounter/value.md)
+- [var value: Int64](./scorecounter/value.md)
   The current value of the score counter.
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CounterCollection](countercollection.md)
+### Score counters
+- [struct CounterCollection](./countercollection.md)
   A collection of score counters that can be inspected and modified.
 
 

@@ -1,7 +1,8 @@
 # spatialStereoImmersive
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Displays the image’s spatial stereo representation (if available) with an immersive presentation style.
 
@@ -16,7 +17,8 @@ static let spatialStereoImmersive: ImagePresentationComponent.ViewingMode
 
 ## See Also
 
-- [static let spatialStereo: ImagePresentationComponent.ViewingMode](imagepresentationcomponent/viewingmode-swift.struct/spatialstereo.md)
+### Stereoscopic presentation of spatial photos
+- [static let spatialStereo: ImagePresentationComponent.ViewingMode](./spatialstereo.md)
   Displays the image’s spatial stereo representation (if available) with a windowed presentation style.
 
 

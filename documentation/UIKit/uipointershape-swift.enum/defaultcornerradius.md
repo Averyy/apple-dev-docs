@@ -1,7 +1,8 @@
 # defaultCornerRadius
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default corner radius for a pointer using a rounded rectangle.
 
@@ -9,7 +10,7 @@ The default corner radius for a pointer using a rounded rectangle.
 - iOS 13.4+
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

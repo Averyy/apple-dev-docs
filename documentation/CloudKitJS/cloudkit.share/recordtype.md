@@ -1,7 +1,8 @@
 # recordType
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of record.
 
@@ -10,7 +11,7 @@ The type of record.
 
 ## Declaration
 
-```swift
+```
 attribute String recordType;
 ```
 

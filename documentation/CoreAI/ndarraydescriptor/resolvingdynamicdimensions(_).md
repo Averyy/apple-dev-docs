@@ -1,7 +1,8 @@
 # resolvingDynamicDimensions(_:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new descriptor with all dynamic dimensions replaced by concrete values.
 

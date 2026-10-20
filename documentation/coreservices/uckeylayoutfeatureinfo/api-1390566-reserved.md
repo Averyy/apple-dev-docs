@@ -1,7 +1,8 @@
 # reserved
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Reserved. Set to 0.
 
@@ -13,6 +14,10 @@ Reserved. Set to 0.
 
 ```swift
 var reserved: UInt16
+```
+
+```c
+UInt16 reserved;
 ```
 
 

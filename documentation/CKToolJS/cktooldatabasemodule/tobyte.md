@@ -1,7 +1,8 @@
 # toByte
 
 **Framework**: CKTool JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts a numeric value to a `Byte`.
 
@@ -10,7 +11,7 @@ Converts a numeric value to a `Byte`.
 
 ## Declaration
 
-```swift
+```
 static Byte toByte();
 ```
 

@@ -1,7 +1,8 @@
 # workout
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A workout session of any type.
 

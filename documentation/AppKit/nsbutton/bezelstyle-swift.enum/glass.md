@@ -1,7 +1,8 @@
 # NSButton.BezelStyle.glass
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A bezel style with a glass effect
 
@@ -12,6 +13,10 @@ A bezel style with a glass effect
 
 ```swift
 case glass
+```
+
+```c
+NSBezelStyleGlass
 ```
 
 

@@ -1,7 +1,8 @@
 # title
 
 **Framework**: Accessory Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A primary text for the notification.
 
@@ -16,15 +17,16 @@ let title: String?
 
 #### Discussion
 
-This property contains the notification’s main display text. For supplementary text, see [`subtitle`](accessorynotification/subtitle.md).
+This property contains the notification’s main display text. For supplementary text, see [`subtitle`](./subtitle.md).
 
 ## See Also
 
-- [let subtitle: String?](accessorynotification/subtitle.md)
+### Displaying notification content
+- [let subtitle: String?](./subtitle.md)
   Secondary text for the notification.
-- [let body: NSAttributedString?](accessorynotification/body.md)
+- [let body: NSAttributedString?](./body.md)
   A string that contains the notification’s main content.
-- [let summary: NSAttributedString?](accessorynotification/summary.md)
+- [let summary: NSAttributedString?](./summary.md)
   An Apple Intelligence summary for the notification.
 
 

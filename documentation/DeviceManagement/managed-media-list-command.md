@@ -1,7 +1,8 @@
 # Managed Media List
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get a list of the managed books on a device.
 
@@ -14,7 +15,7 @@ Get a list of the managed books on a device.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -24,7 +25,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | iOS |
 | Required access right | AllowAppInstallation |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -81,9 +82,9 @@ Refer to the following sections to determine supported channels and requirements
 ## Topics
 
 ### Commands and responses
-- [object ManagedMediaListCommand](managedmedialistcommand.md)
+- [object ManagedMediaListCommand](./managedmedialistcommand.md)
   The command to get a list of the managed books on a device.
-- [object ManagedMediaListResponse](managedmedialistresponse.md)
+- [object ManagedMediaListResponse](./managedmedialistresponse.md)
   A response from the device after it processes the command to get a list of the managed books on a device.
 
 ## Endpoint
@@ -92,13 +93,21 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `ManagedMediaListCommand`
+
 The request object the server returns for the Managed Media List Command.
+
+## Responses
+
+- `200` OK (`ManagedMediaListResponse`, `application/xml`): The response object the system returns for the Managed Media List Command.
 
 ## See Also
 
-- [Install Media](install-media-command.md)
+### Managed media
+- [Install Media](./install-media-command.md)
   Install a book on a device.
-- [Remove Media](remove-media-command.md)
+- [Remove Media](./remove-media-command.md)
   Remove a previously installed book from a device.
 
 

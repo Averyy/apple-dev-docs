@@ -1,14 +1,15 @@
 # wasFollowingGuidance
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the device was applying the electricity guidance at the time of the event.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,9 +19,10 @@ let wasFollowingGuidance: Bool
 
 ## See Also
 
-- [init(wasFollowingGuidance: Bool, guidanceToken: UUID)](electrichvacloadevent/session-swift.struct/guidancestate-swift.struct/init(wasfollowingguidance:guidancetoken:).md)
-  Initialize the GuidanceState for the [`ElectricHVACLoadEvent`](electrichvacloadevent.md)
-- [var guidanceToken: UUID](electrichvacloadevent/session-swift.struct/guidancestate-swift.struct/guidancetoken.md)
+### Checking the guidance state
+- [init(wasFollowingGuidance: Bool, guidanceToken: UUID)](./init%28wasfollowingguidance,guidancetoken%29.md)
+  Initialize the GuidanceState for the [`ElectricHVACLoadEvent`](../../../electrichvacloadevent.md)
+- [var guidanceToken: UUID](./guidancetoken.md)
   The guidance token for the guidance that you requested.
 
 

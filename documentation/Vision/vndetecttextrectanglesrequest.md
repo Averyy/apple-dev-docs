@@ -1,7 +1,8 @@
 # VNDetectTextRectanglesRequest
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An image-analysis request that finds regions of visible text in an image.
 
@@ -19,6 +20,10 @@ An image-analysis request that finds regions of visible text in an image.
 class VNDetectTextRectanglesRequest
 ```
 
+```objc
+@interface VNDetectTextRectanglesRequest : VNImageBasedRequest
+```
+
 #### Overview
 
 This request returns detected text characters as rectangular bounding boxes with origin and size.
@@ -26,31 +31,32 @@ This request returns detected text characters as rectangular bounding boxes with
 ## Topics
 
 ### Configuring a Request
-- [var reportCharacterBoxes: Bool](vndetecttextrectanglesrequest/reportcharacterboxes.md)
+- [var reportCharacterBoxes: Bool](./vndetecttextrectanglesrequest/reportcharacterboxes.md)
   A Boolean value that indicates whether the request detects character bounding boxes.
 ### Accessing the Results
-- [var results: [VNTextObservation]?](vndetecttextrectanglesrequest/results.md)
+- [var results: [VNTextObservation]?](./vndetecttextrectanglesrequest/results.md)
   The results of the request to detect text rectangles.
 ### Identifying Request Revisions
-- [var VNDetectTextRectanglesRequestRevision1: Int](vndetecttextrectanglesrequestrevision1.md)
+- [var VNDetectTextRectanglesRequestRevision1: Int](./vndetecttextrectanglesrequestrevision1.md)
   A constant for specifying revision 1 of the text rectangles detection request.
 
 ## Relationships
 
 ### Inherits From
-- [VNImageBasedRequest](vnimagebasedrequest.md)
+- [VNImageBasedRequest](./vnimagebasedrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VNTextObservation](vntextobservation.md)
+### Text detection
+- [class VNTextObservation](./vntextobservation.md)
   Information about regions of text that an image-analysis request detects.
 
 

@@ -13,18 +13,19 @@ There are support functions you can call to assist you in this process. `QTCreat
 ## Topics
 
 ### Effect descriptions
-- [Structure of an effect description](structure_of_an_effect_description.md)
+- [Structure of an effect description](./structure_of_an_effect_description.md)
   An effect description is the sole media sample for an effect track.
-- [Required atoms of an effects description](required_atoms_of_an_effects_description.md)
+- [Required atoms of an effects description](./required_atoms_of_an_effects_description.md)
   Specify the required atoms for your effects description.
-- [Parameter atoms of an effects description](parameter_atoms_of_an_effects_description.md)
+- [Parameter atoms of an effects description](./parameter_atoms_of_an_effects_description.md)
   Customize your effect with parameter atoms.
-- [Creating an input map](creating_an_input_map.md)
+- [Creating an input map](./creating_an_input_map.md)
   Describe and name sources with an input map.
 
 ## See Also
 
-- [Preparing sound and subtitle alternate groups for use with Apple devices](preparing_sound_and_subtitle_alternate_groups_for_use_with_apple_devices.md)
+### Movie features
+- [Preparing sound and subtitle alternate groups for use with Apple devices](./preparing_sound_and_subtitle_alternate_groups_for_use_with_apple_devices.md)
   Create collections of tracks that all serve the same purpose, where any track in the group can be substituted for another in a movie.
 
 

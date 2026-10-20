@@ -1,23 +1,25 @@
 # IOHIDElementCookie
 
 **Framework**: HIDDriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that an element uses to distinguish itself from other elements.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef uint32_t IOHIDElementCookie;
 ```
 
 ## See Also
 
-- [getCookie](iohidelement/getcookie.md)
+### Identifying the Element
+- [getCookie](./iohidelement/getcookie.md)
 
 
 ---

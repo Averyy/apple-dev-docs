@@ -1,7 +1,8 @@
 # CSSM_REALLOC
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias CSSM_REALLOC = (UnsafeMutableRawPointer?, CSSM_SIZE, UnsafeMutableRawPointer?) -> UnsafeMutableRawPointer?
+```
+
+```c
+typedef void *(*)(void *, unsigned long, void *) CSSM_REALLOC;
 ```
 
 

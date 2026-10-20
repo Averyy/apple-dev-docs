@@ -1,7 +1,8 @@
 # fixed(steps:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A fixed maximum number of steps per update is manually configured.
 

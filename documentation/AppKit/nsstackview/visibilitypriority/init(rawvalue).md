@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 10.9+
@@ -14,7 +15,8 @@ init(rawValue: Float)
 
 ## See Also
 
-- [init(Float)](nsstackview/visibilitypriority/init(_:).md)
+### Initializers
+- [init(Float)](./init%28_%29.md)
 
 
 ---

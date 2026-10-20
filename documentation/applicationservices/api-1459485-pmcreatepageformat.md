@@ -1,7 +1,8 @@
 # PMCreatePageFormat(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a new page format object.
 
@@ -14,33 +15,38 @@ Creates a new page format object.
 func PMCreatePageFormat(_ pageFormat: UnsafeMutablePointer<PMPageFormat?>) -> OSStatus
 ```
 
-#### Return_value
+```c
+OSStatus PMCreatePageFormat(PMPageFormat  _Nullable *pageFormat);
+```
 
-A result code. See [`Result Codes`](core_printing#1670007.md).
+#### Return Value
+
+A result code. See [Result Codes](./core_printing.md#1670007).
 
 #### Discussion
 
-This function allocates memory for a new page format object in your application’s memory space and sets its reference count to 1. The new page format object is empty and unusable until you call [`PMSessionDefaultPageFormat(_:_:)`](1462217-pmsessiondefaultpageformat.md) or [`PMCopyPageFormat(_:_:)`](1464669-pmcopypageformat.md).
+This function allocates memory for a new page format object in your application’s memory space and sets its reference count to 1. The new page format object is empty and unusable until you call [`PMSessionDefaultPageFormat(_:_:)`](./api-1462217-pmsessiondefaultpageformat.md) or [`PMCopyPageFormat(_:_:)`](./api-1464669-pmcopypageformat.md).
 
 ## Parameters
 
-- `pageFormat`: A pointer to your [`PMPageFormat`](pmpageformat.md) variable. On return, the variable refers to a new page format object. You are responsible for releasing the page format object with the function [`PMRelease(_:)`](1461402-pmrelease.md).
+- `pageFormat`: A pointer to your [`PMPageFormat`](./pmpageformat.md) variable. On return, the variable refers to a new page format object. You are responsible for releasing the page format object with the function [`PMRelease(_:)`](./api-1461402-pmrelease.md).
 
 ## See Also
 
-- [func PMCreatePageFormatWithPMPaper(UnsafeMutablePointer<PMPageFormat?>, PMPaper) -> OSStatus](1459274-pmcreatepageformatwithpmpaper.md)
+### Creating and Using Page Format Objects
+- [func PMCreatePageFormatWithPMPaper(UnsafeMutablePointer<PMPageFormat?>, PMPaper) -> OSStatus](./api-1459274-pmcreatepageformatwithpmpaper.md)
   Creates a page format object with a specified paper.
-- [func PMCopyPageFormat(PMPageFormat, PMPageFormat) -> OSStatus](1464669-pmcopypageformat.md)
+- [func PMCopyPageFormat(PMPageFormat, PMPageFormat) -> OSStatus](./api-1464669-pmcopypageformat.md)
   Copies the settings from one page format object into another.
-- [func PMSessionDefaultPageFormat(PMPrintSession, PMPageFormat) -> OSStatus](1462217-pmsessiondefaultpageformat.md)
+- [func PMSessionDefaultPageFormat(PMPrintSession, PMPageFormat) -> OSStatus](./api-1462217-pmsessiondefaultpageformat.md)
   Assigns default parameter values to a page format object used in the specified printing session.
-- [func PMSessionValidatePageFormat(PMPrintSession, PMPageFormat, UnsafeMutablePointer<DarwinBoolean>?) -> OSStatus](1459090-pmsessionvalidatepageformat.md)
+- [func PMSessionValidatePageFormat(PMPrintSession, PMPageFormat, UnsafeMutablePointer<DarwinBoolean>?) -> OSStatus](./api-1459090-pmsessionvalidatepageformat.md)
   Updates the values in a page format object and validates them against the current formatting printer.
-- [func PMSessionCreatePageFormatList(PMPrintSession, PMPrinter?, UnsafeMutablePointer<Unmanaged<CFArray>?>) -> OSStatus](1463985-pmsessioncreatepageformatlist.md)
+- [func PMSessionCreatePageFormatList(PMPrintSession, PMPrinter?, UnsafeMutablePointer<Unmanaged<CFArray>?>) -> OSStatus](./api-1463985-pmsessioncreatepageformatlist.md)
   Obtains a list of page format objects, each of which describes a paper size available on the specified printer.
-- [func PMPageFormatCreateDataRepresentation(PMPageFormat, UnsafeMutablePointer<Unmanaged<CFData>?>, PMDataFormat) -> OSStatus](1464227-pmpageformatcreatedatarepresenta.md)
+- [func PMPageFormatCreateDataRepresentation(PMPageFormat, UnsafeMutablePointer<Unmanaged<CFData>?>, PMDataFormat) -> OSStatus](./api-1464227-pmpageformatcreatedatarepresenta.md)
   Creates a data representation of a page format object.
-- [func PMPageFormatCreateWithDataRepresentation(CFData, UnsafeMutablePointer<PMPageFormat?>) -> OSStatus](1462876-pmpageformatcreatewithdatarepres.md)
+- [func PMPageFormatCreateWithDataRepresentation(CFData, UnsafeMutablePointer<PMPageFormat?>) -> OSStatus](./api-1462876-pmpageformatcreatewithdatarepres.md)
   Creates a page format object from a data representation.
 
 

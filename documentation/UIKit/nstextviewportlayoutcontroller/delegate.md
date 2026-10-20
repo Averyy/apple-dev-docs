@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate for the text layout manager object.
 
@@ -18,9 +19,14 @@ The delegate for the text layout manager object.
 weak var delegate: (any NSTextViewportLayoutControllerDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSTextViewportLayoutControllerDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol NSTextViewportLayoutControllerDelegate](nstextviewportlayoutcontrollerdelegate.md)
+### Responding to changes in viewport layout
+- [protocol NSTextViewportLayoutControllerDelegate](../nstextviewportlayoutcontrollerdelegate.md)
   Optional methods that delegates implement to respond to viewport layout changes.
 
 

@@ -1,12 +1,13 @@
 # NSPrintPanel.AccessorySummaryKey
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that specify the accessory panel keys.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,35 +15,40 @@ Constants that specify the accessory panel keys.
 struct AccessorySummaryKey
 ```
 
+```c
+typedef NSString * NSPrintPanelAccessorySummaryKey;
+```
+
 #### Discussion
 
-These keys must be included in the dictionaries returned by the [`localizedSummaryItems()`](nsprintpanelaccessorizing/localizedsummaryitems().md) method.
+These keys must be included in the dictionaries returned by the [`localizedSummaryItems()`](../nsprintpanelaccessorizing/localizedsummaryitems%28%29.md) method.
 
 ## Topics
 
 ### Summary Keys
-- [static let itemName: NSPrintPanel.AccessorySummaryKey](nsprintpanel/accessorysummarykey/itemname.md)
+- [static let itemName: NSPrintPanel.AccessorySummaryKey](./accessorysummarykey/itemname.md)
   A key that specifies the name of the accessory panel setting.
-- [static let itemDescription: NSPrintPanel.AccessorySummaryKey](nsprintpanel/accessorysummarykey/itemdescription.md)
+- [static let itemDescription: NSPrintPanel.AccessorySummaryKey](./accessorysummarykey/itemdescription.md)
   A key that identfies the current value of the accessory panel setting.
 ### Initializers
-- [init(rawValue: String)](nsprintpanel/accessorysummarykey/init(rawvalue:).md)
+- [init(rawValue: String)](./accessorysummarykey/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func localizedSummaryItems() -> [[NSPrintPanel.AccessorySummaryKey : String]]](nsprintpanelaccessorizing/localizedsummaryitems.md)
+### Responding to Being Loaded from a Nib File
+- [func localizedSummaryItems() -> [[NSPrintPanel.AccessorySummaryKey : String]]](../nsprintpanelaccessorizing/localizedsummaryitems%28%29.md)
   Returns an array of dictionaries containing the localized user setting summary strings.
-- [func keyPathsForValuesAffectingPreview() -> Set<String>](nsprintpanelaccessorizing/keypathsforvaluesaffectingpreview.md)
+- [func keyPathsForValuesAffectingPreview() -> Set<String>](../nsprintpanelaccessorizing/keypathsforvaluesaffectingpreview%28%29.md)
   Returns a set of strings identifying the key paths for any properties that might affect the built-in print preview.
 
 

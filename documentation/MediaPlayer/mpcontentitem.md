@@ -1,7 +1,8 @@
 # MPContentItem
 
 **Framework**: Media Player  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains the information for a displayed media item.
 
@@ -19,50 +20,54 @@ An object that contains the information for a displayed media item.
 class MPContentItem
 ```
 
+```objc
+@interface MPContentItem : NSObject
+```
+
 #### Overview
 
 This object represents a media item such as a song, movie, radio station, or podcast episode. The media player displays the information stored in it.
 
-Update this object by changing its properties during runtime or by creating a new `MPContentItem` object with new property values, but with the same identifier as the object to change. Use the [`beginUpdates()`](mpplayablecontentmanager/beginupdates().md) and [`endUpdates()`](mpplayablecontentmanager/endupdates().md) methods found in [`MPPlayableContentManager`](mpplayablecontentmanager.md) to update several `MPContentItem` objects at once.
+Update this object by changing its properties during runtime or by creating a new `MPContentItem` object with new property values, but with the same identifier as the object to change. Use the [`beginUpdates()`](./mpplayablecontentmanager/beginupdates%28%29.md) and [`endUpdates()`](./mpplayablecontentmanager/endupdates%28%29.md) methods found in [`MPPlayableContentManager`](./mpplayablecontentmanager.md) to update several `MPContentItem` objects at once.
 
-> ❗ **Important**:  This class is only used for CarPlay. Using it requires a special entitlement issued by Apple. Apps without the correct entitlement won’t appear on the CarPlay home screen. See [`http://www.apple.com/ios/carplay/`](https://developer.apple.comhttp://www.apple.com/ios/carplay/) for more information.
+> ❗ **Important**:  This class is only used for CarPlay. Using it requires a special entitlement issued by Apple. Apps without the correct entitlement won’t appear on the CarPlay home screen. See [http://www.apple.com/ios/carplay/](http://www.apple.com/ios/carplay/) for more information.
 
 ## Topics
 
 ### Setting a unique identifier
-- [init(identifier: String)](mpcontentitem/init(identifier:).md)
+- [init(identifier: String)](./mpcontentitem/init%28identifier%29.md)
   Sets the identifier for a media item.
 ### Retrieving information about a media item
-- [var artwork: MPMediaItemArtwork?](mpcontentitem/artwork.md)
+- [var artwork: MPMediaItemArtwork?](./mpcontentitem/artwork.md)
   A single image that’s associated with the media item.
-- [var isContainer: Bool](mpcontentitem/iscontainer.md)
+- [var isContainer: Bool](./mpcontentitem/iscontainer.md)
   A Boolean value that indicates whether a media item is container of other items.
-- [var isExplicitContent: Bool](mpcontentitem/isexplicitcontent.md)
+- [var isExplicitContent: Bool](./mpcontentitem/isexplicitcontent.md)
   A Boolean value that indicates whether the media item contains explicit content.
-- [var identifier: String](mpcontentitem/identifier.md)
+- [var identifier: String](./mpcontentitem/identifier.md)
   The unique identifier for the media item.
-- [var isPlayable: Bool](mpcontentitem/isplayable.md)
+- [var isPlayable: Bool](./mpcontentitem/isplayable.md)
   A Boolean value that indicates whether a media item is able to be played.
-- [var isStreamingContent: Bool](mpcontentitem/isstreamingcontent.md)
+- [var isStreamingContent: Bool](./mpcontentitem/isstreamingcontent.md)
   A Boolean value that indicates whether the content item is streaming content.
-- [var playbackProgress: Float](mpcontentitem/playbackprogress.md)
+- [var playbackProgress: Float](./mpcontentitem/playbackprogress.md)
   The amount of content played for the media item.
-- [var subtitle: String?](mpcontentitem/subtitle.md)
+- [var subtitle: String?](./mpcontentitem/subtitle.md)
   A secondary designator for the media item.
-- [var title: String?](mpcontentitem/title.md)
+- [var title: String?](./mpcontentitem/title.md)
   The public name of the media item.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # PortalComponent.BoundaryStyle
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The shape of a portal’s clipping and crossing boundary.
 
@@ -23,26 +24,26 @@ struct BoundaryStyle
 
 A portal has two related but separate concepts:
 
-- The *surface*, a flat plane mesh that RealityKit renders with [`PortalMaterial`](portalmaterial.md) and sizes from [`PortalComponent.SurfaceStyle`](portalcomponent/surfacestyle.md).
-- The *boundary*, the volume in space that clips portal world content and that crossing entities pass through. [`PortalComponent.BoundaryStyle`](portalcomponent/boundarystyle.md) describes the shape of that volume.
+- The *surface*, a flat plane mesh that RealityKit renders with [`PortalMaterial`](../portalmaterial.md) and sizes from [`PortalComponent.SurfaceStyle`](./surfacestyle.md).
+- The *boundary*, the volume in space that clips portal world content and that crossing entities pass through. [`PortalComponent.BoundaryStyle`](./boundarystyle.md) describes the shape of that volume.
 
-Pair a boundary style with a [`PortalComponent.BoundaryMode`](portalcomponent/boundarymode.md) to control whether the boundary clips content, allows entities to cross, both, or neither.
+Pair a boundary style with a [`PortalComponent.BoundaryMode`](./boundarymode.md) to control whether the boundary clips content, allows entities to cross, both, or neither.
 
 ## Topics
 
 ### Type Methods
-- [static func enclosingBox(depth: Float) -> PortalComponent.BoundaryStyle](portalcomponent/boundarystyle/enclosingbox(depth:).md)
+- [static func enclosingBox(depth: Float) -> PortalComponent.BoundaryStyle](./boundarystyle/enclosingbox%28depth%29.md)
   Returns a boundary style that uses a box enclosing the portal surface.
-- [static func infinitePlane() -> PortalComponent.BoundaryStyle](portalcomponent/boundarystyle/infiniteplane.md)
+- [static func infinitePlane() -> PortalComponent.BoundaryStyle](./boundarystyle/infiniteplane%28%29.md)
   Returns a boundary style that uses an infinite plane.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

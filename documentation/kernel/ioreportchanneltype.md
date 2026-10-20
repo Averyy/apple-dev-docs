@@ -1,7 +1,8 @@
 # IOReportChannelType
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - DriverKit 24.4+
@@ -9,35 +10,46 @@
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```c
+typedef struct IOReportChannelType {
+    ...
+} IOReportChannelType;
+```
+
+*macOS*
+
+```c
 typedef struct IOReportChannelType IOReportChannelType;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [categories](ioreportchanneltype/1402782-categories.md)
-- [element_idx](ioreportchanneltype/1402820-element_idx.md)
-- [nelements](ioreportchanneltype/1402836-nelements.md)
-- [report_format](ioreportchanneltype/1402760-report_format.md)
-- [reserved](ioreportchanneltype/1402780-reserved.md)
+- [categories](./ioreportchanneltype/api-1402782-categories.md)
+- [element_idx](./ioreportchanneltype/api-1402820-element_idx.md)
+- [nelements](./ioreportchanneltype/api-1402836-nelements.md)
+- [report_format](./ioreportchanneltype/api-1402760-report_format.md)
+- [reserved](./ioreportchanneltype/api-1402780-reserved.md)
 
 ## See Also
 
-- [IOReportChannel](ioreportchannel.md)
-- [IOReportChannelList](ioreportchannellist.md)
-- [IOReportElement](ioreportelement.md)
-- [IOReportElementValues](ioreportelementvalues.md)
-- [IOReportInterest](ioreportinterest.md)
-- [IOReportInterestList](ioreportinterestlist.md)
-- [IOHistReportInfo](iohistreportinfo.md)
-- [IOHistogramReportValues](iohistogramreportvalues.md)
-- [IOHistogramSegmentConfig](iohistogramsegmentconfig.md)
-- [IONormDistReportValues](ionormdistreportvalues.md)
-- [IOSimpleArrayReportValues](iosimplearrayreportvalues.md)
-- [IOSimpleReportValues](iosimplereportvalues.md)
-- [IOStateReportInfo](iostatereportinfo.md)
-- [IOStateReportValues](iostatereportvalues.md)
+### Reports
+- [IOReportChannel](./ioreportchannel.md)
+- [IOReportChannelList](./ioreportchannellist.md)
+- [IOReportElement](./ioreportelement.md)
+- [IOReportElementValues](./ioreportelementvalues.md)
+- [IOReportInterest](./ioreportinterest.md)
+- [IOReportInterestList](./ioreportinterestlist.md)
+- [IOHistReportInfo](./iohistreportinfo.md)
+- [IOHistogramReportValues](./iohistogramreportvalues.md)
+- [IOHistogramSegmentConfig](./iohistogramsegmentconfig.md)
+- [IONormDistReportValues](./ionormdistreportvalues.md)
+- [IOSimpleArrayReportValues](./iosimplearrayreportvalues.md)
+- [IOSimpleReportValues](./iosimplereportvalues.md)
+- [IOStateReportInfo](./iostatereportinfo.md)
+- [IOStateReportValues](./iostatereportvalues.md)
 
 
 ---

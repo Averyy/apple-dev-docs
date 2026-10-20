@@ -1,7 +1,8 @@
 # MarkupInteractions
 
 **Framework**: PaperKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Interactions that people can perform on markup elements.
 
@@ -36,46 +37,47 @@ markup.allowedInteractions = .readOnly
 ## Topics
 
 ### Configuring interactions
-- [static let rotate: MarkupInteractions](markupinteractions/rotate.md)
+- [static let rotate: MarkupInteractions](./markupinteractions/rotate.md)
   Allows rotation.
-- [static let resize: MarkupInteractions](markupinteractions/resize.md)
+- [static let resize: MarkupInteractions](./markupinteractions/resize.md)
   Allows resizing.
-- [static let move: MarkupInteractions](markupinteractions/move.md)
+- [static let move: MarkupInteractions](./markupinteractions/move.md)
   Allows moving.
-- [static let delete: MarkupInteractions](markupinteractions/delete.md)
+- [static let delete: MarkupInteractions](./markupinteractions/delete.md)
   Allows deletion.
-- [static let style: MarkupInteractions](markupinteractions/style.md)
+- [static let style: MarkupInteractions](./markupinteractions/style.md)
   Allows style changes.
-- [static let select: MarkupInteractions](markupinteractions/select.md)
+- [static let select: MarkupInteractions](./markupinteractions/select.md)
   Allows selection.
 ### Using presets
-- [static let all: MarkupInteractions](markupinteractions/all.md)
+- [static let all: MarkupInteractions](./markupinteractions/all.md)
   All interactions enabled (default).
-- [static let readOnly: MarkupInteractions](markupinteractions/readonly.md)
+- [static let readOnly: MarkupInteractions](./markupinteractions/readonly.md)
   Read-only: no interactions enabled.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [protocol Markup](markup.md)
+### Markup elements
+- [protocol Markup](./markup.md)
   A markup component.
-- [struct ImageMarkup](imagemarkup.md)
+- [struct ImageMarkup](./imagemarkup.md)
   A markup element that represents an image.
-- [struct ShapeMarkup](shapemarkup.md)
+- [struct ShapeMarkup](./shapemarkup.md)
   A markup element that represents a shape or text box with customizable appearance and behavior.
-- [struct LinkMarkup](linkmarkup.md)
+- [struct LinkMarkup](./linkmarkup.md)
   A URL link that a person can tap on in the canvas.
-- [struct LoupeMarkup](loupemarkup.md)
+- [struct LoupeMarkup](./loupemarkup.md)
   A loupe magnifier that magnifies the content below the loupe.
 
 

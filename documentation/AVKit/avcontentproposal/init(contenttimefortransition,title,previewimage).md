@@ -1,7 +1,8 @@
 # init(contentTimeForTransition:title:previewImage:)
 
 **Framework**: AVKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new content proposal with the specified transition time, title, and preview image.
 
@@ -14,9 +15,13 @@ Creates a new content proposal with the specified transition time, title, and pr
 init(contentTimeForTransition: CMTime, title: String, previewImage: UIImage?)
 ```
 
+```objc
+- (instancetype) initWithContentTimeForTransition:(CMTime) contentTimeForTransition title:(NSString *) title previewImage:(UIImage *) previewImage;
+```
+
 #### Return Value
 
-A new instance of [`AVContentProposal`](avcontentproposal.md).
+A new instance of [`AVContentProposal`](../avcontentproposal.md).
 
 #### Discussion
 
@@ -37,7 +42,7 @@ currentPlayerItem.nextContentProposal = proposal
 
 ## Parameters
 
-- `contentTimeForTransition`: A [`CMTime`](https://developer.apple.com/documentation/coremedia/cmtime) value at which to present the content propsal within the media’s timeline.
+- `contentTimeForTransition`: A [`CMTime`](../../CoreMedia/cmtime.md) value at which to present the content propsal within the media’s timeline.
 - `title`: The title of the proposed content.
 - `previewImage`: The preview image for the proposed item.
 

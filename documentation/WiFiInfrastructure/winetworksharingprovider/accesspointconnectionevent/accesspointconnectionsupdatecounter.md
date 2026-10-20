@@ -1,7 +1,8 @@
 # accessPointConnectionsUpdateCounter
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A counter that increments whenever the access point data changes.
 

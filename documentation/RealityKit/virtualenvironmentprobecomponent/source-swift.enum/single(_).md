@@ -1,7 +1,8 @@
 # VirtualEnvironmentProbeComponent.Source.single(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A source representing a single pregenerated probe.
 

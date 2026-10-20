@@ -1,7 +1,8 @@
 # subAdministrativeArea
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The secondary administrative divisions of countries or regions.
 
@@ -20,27 +21,32 @@ The secondary administrative divisions of countries or regions.
 static var subAdministrativeArea: MKAddressFilter.Options { get }
 ```
 
+```c
+MKAddressFilterOptionSubAdministrativeArea
+```
+
 ## See Also
 
-- [static var administrativeArea: MKAddressFilter.Options](mkaddressfilter/options/administrativearea.md)
+### Getting search filter options
+- [static var administrativeArea: MKAddressFilter.Options](./administrativearea.md)
   The primary administrative divisions of countries or regions.
-- [static var country: MKAddressFilter.Options](mkaddressfilter/options/country.md)
+- [static var country: MKAddressFilter.Options](./country.md)
   Countries and regions.
-- [static var locality: MKAddressFilter.Options](mkaddressfilter/options/locality.md)
+- [static var locality: MKAddressFilter.Options](./locality.md)
   Local administrative divisions, postal cities, and populated places.
-- [static var postalCode: MKAddressFilter.Options](mkaddressfilter/options/postalcode.md)
+- [static var postalCode: MKAddressFilter.Options](./postalcode.md)
   An address code for mail sorting and delivery.
-- [static var subLocality: MKAddressFilter.Options](mkaddressfilter/options/sublocality.md)
+- [static var subLocality: MKAddressFilter.Options](./sublocality.md)
   Local administrative subdivisions, postal city subdistricts, and neighborhoods.
-- [static var administrativeArea: MKAddressFilter.Options](mkaddressfilter/options/administrativearea.md)
+- [static var administrativeArea: MKAddressFilter.Options](./administrativearea.md)
   The primary administrative divisions of countries or regions.
-- [static var country: MKAddressFilter.Options](mkaddressfilter/options/country.md)
+- [static var country: MKAddressFilter.Options](./country.md)
   Countries and regions.
-- [static var locality: MKAddressFilter.Options](mkaddressfilter/options/locality.md)
+- [static var locality: MKAddressFilter.Options](./locality.md)
   Local administrative divisions, postal cities, and populated places.
-- [static var postalCode: MKAddressFilter.Options](mkaddressfilter/options/postalcode.md)
+- [static var postalCode: MKAddressFilter.Options](./postalcode.md)
   An address code for mail sorting and delivery.
-- [static var subLocality: MKAddressFilter.Options](mkaddressfilter/options/sublocality.md)
+- [static var subLocality: MKAddressFilter.Options](./sublocality.md)
   Local administrative subdivisions, postal city subdistricts, and neighborhoods.
 
 

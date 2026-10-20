@@ -1,7 +1,8 @@
 # dragDelegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate object that manages the dragging of items from the table view.
 
@@ -17,17 +18,22 @@ The delegate object that manages the dragging of items from the table view.
 weak var dragDelegate: (any UITableViewDragDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UITableViewDragDelegate> dragDelegate;
+```
+
 ## Mentions
 
-- [Supporting drag and drop in table views](supporting-drag-and-drop-in-table-views.md)
+- [Supporting drag and drop in table views](../supporting-drag-and-drop-in-table-views.md)
 
 ## See Also
 
-- [protocol UITableViewDragDelegate](uitableviewdragdelegate.md)
+### Managing drag interactions
+- [protocol UITableViewDragDelegate](../uitableviewdragdelegate.md)
   The interface for initiating drags from a table view.
-- [var hasActiveDrag: Bool](uitableview/hasactivedrag.md)
+- [var hasActiveDrag: Bool](./hasactivedrag.md)
   A Boolean value that indicates whether the table view is currently tracking a drag session.
-- [var dragInteractionEnabled: Bool](uitableview/draginteractionenabled.md)
+- [var dragInteractionEnabled: Bool](./draginteractionenabled.md)
   A Boolean value that indicates whether the table view supports dragging content.
 
 

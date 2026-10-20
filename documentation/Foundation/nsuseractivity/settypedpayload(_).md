@@ -1,7 +1,8 @@
 # setTypedPayload(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the specified payload into the user activity’s user info dictionary.
 
@@ -24,19 +25,20 @@ func setTypedPayload<T>(_ payload: T) throws where T : Decodable, T : Encodable
 
 > ❗ **Important**:  This method applies only to SwiftUI apps.
 
-Use this method to set the user activity’s [`userInfo`](nsuseractivity/userinfo.md) dictionary in a type-safe manner. After you set the [`userInfo`](nsuseractivity/userinfo.md) dictionary using this approach, the keys in the [`userInfo`](nsuseractivity/userinfo.md) dictionary match the coding keys from the [`Codable`](https://developer.apple.com/documentation/swift/codable) type you provide as the `payload`.
+Use this method to set the user activity’s [`userInfo`](./userinfo.md) dictionary in a type-safe manner. After you set the [`userInfo`](./userinfo.md) dictionary using this approach, the keys in the [`userInfo`](./userinfo.md) dictionary match the coding keys from the [`Codable`](../../Swift/codable.md) type you provide as the `payload`.
 
-If the type can’t be encoded into the [`userInfo`](nsuseractivity/userinfo.md) dictionary, this method throws [`NSUserActivity.TypedPayloadError.encodingError`](nsuseractivity/typedpayloaderror/encodingerror.md).
+If the type can’t be encoded into the [`userInfo`](./userinfo.md) dictionary, this method throws [`NSUserActivity.TypedPayloadError.encodingError`](./typedpayloaderror/encodingerror.md).
 
 ## Parameters
 
-- `payload`: The instance to convert to [`userInfo`](nsuseractivity/userinfo.md). The type of the `payload` instance must conform to [`Codable`](https://developer.apple.com/documentation/swift/codable).
+- `payload`: The instance to convert to [`userInfo`](./userinfo.md). The type of the `payload` instance must conform to [`Codable`](../../Swift/codable.md).
 
 ## See Also
 
-- [func typedPayload<T>(T.Type) throws -> T](nsuseractivity/typedpayload(_:).md)
+### Managing type-safe access to user info
+- [func typedPayload<T>(T.Type) throws -> T](./typedpayload%28_%29.md)
   Decodes the user activity’s user info dictionary as an instance of the specified type.
-- [NSUserActivity.TypedPayloadError](nsuseractivity/typedpayloaderror.md)
+- [NSUserActivity.TypedPayloadError](./typedpayloaderror.md)
   An enumeration that describes the error types for getting and setting a typed payload.
 
 

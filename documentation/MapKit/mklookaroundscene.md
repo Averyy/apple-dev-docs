@@ -1,7 +1,8 @@
 # MKLookAroundScene
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A utility class that encapsulates information the framework requires to retrieve and display a specific Look Around location’s imagery.
 
@@ -18,26 +19,31 @@ A utility class that encapsulates information the framework requires to retrieve
 class MKLookAroundScene
 ```
 
+```objc
+@interface MKLookAroundScene : NSObject
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MKLookAroundSceneRequest](mklookaroundscenerequest.md)
+### Exploring at street level
+- [class MKLookAroundSceneRequest](./mklookaroundscenerequest.md)
   A class you use to request a LookAround scene at the location you specify.
-- [class MKLookAroundViewController](mklookaroundviewcontroller.md)
+- [class MKLookAroundViewController](./mklookaroundviewcontroller.md)
   A class that manages the presentation and display of a LookAround view.
-- [class MKLookAroundSnapshotter](mklookaroundsnapshotter.md)
+- [class MKLookAroundSnapshotter](./mklookaroundsnapshotter.md)
   A utility class that you use to create a static image from a LookAround scene.
 
 

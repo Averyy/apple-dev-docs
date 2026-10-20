@@ -1,7 +1,8 @@
 # begin(at:fromSelectionWidgetView:in:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new loupe session and displays the loupe at the specified location in your view.
 
@@ -17,9 +18,13 @@ Creates a new loupe session and displays the loupe at the specified location in 
 class func begin(at point: CGPoint, fromSelectionWidgetView selectionWidget: UIView?, in interactionView: UIView) -> Self?
 ```
 
+```objc
++ (instancetype) beginLoupeSessionAtPoint:(CGPoint) point fromSelectionWidgetView:(UIView *) selectionWidget inView:(UIView *) interactionView;
+```
+
 ## Mentions
 
-- [Adopting system selection UI in custom text views](adopting-system-selection-ui-in-custom-text-views.md)
+- [Adopting system selection UI in custom text views](../adopting-system-selection-ui-in-custom-text-views.md)
 
 #### Return Value
 
@@ -27,12 +32,12 @@ A new loupe session for the specified view. The method returns `nil` if showing 
 
 #### Discussion
 
-Call this method to animate the appearance of the loupe at the specified `point` in `interactionView`.  Store a strong reference to this returned session and use it to update the position of the loupe. To hide the loupe again, call [`invalidate()`](uitextloupesession/invalidate().md) and then remove your reference to the session.
+Call this method to animate the appearance of the loupe at the specified `point` in `interactionView`.  Store a strong reference to this returned session and use it to update the position of the loupe. To hide the loupe again, call [`invalidate()`](./invalidate%28%29.md) and then remove your reference to the session.
 
 ## Parameters
 
 - `point`: The point in your view’s coordinate system that you want to magnify using the loupe. When creating the loupe with a gesture recognizer, specify the location of the gesture.
-- `selectionWidget`: The view associated with the insertion point. When using a [`UITextSelectionDisplayInteraction`](uitextselectiondisplayinteraction.md) object to display selections in your view, specify the view in the interaction object’s [`cursorView`](uitextselectiondisplayinteraction/cursorview.md) property for this parameter.
+- `selectionWidget`: The view associated with the insertion point. When using a [`UITextSelectionDisplayInteraction`](../uitextselectiondisplayinteraction.md) object to display selections in your view, specify the view in the interaction object’s [`cursorView`](../uitextselectiondisplayinteraction/cursorview.md) property for this parameter.
 - `interactionView`: The view in which to display the loupe. Specify all coordinate values relative to this view.
 
 

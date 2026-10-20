@@ -1,7 +1,8 @@
 # itemSearchBlock
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The block for retrieving the next or previous rotor.
 
@@ -18,15 +19,20 @@ The block for retrieving the next or previous rotor.
 var itemSearchBlock: UIAccessibilityCustomRotor.Search { get set }
 ```
 
+```objc
+@property (nonatomic, copy) UIAccessibilityCustomRotorSearch itemSearchBlock;
+```
+
 #### Discussion
 
 Your implementation of the block facilitates navigation from the current rotor to the next or previous rotor.
 
 ## See Also
 
-- [UIAccessibilityCustomRotor.Search](uiaccessibilitycustomrotor/search.md)
+### Navigating to the next item
+- [UIAccessibilityCustomRotor.Search](./search.md)
   The block type for retrieving the next or previous rotor.
-- [UIAccessibilityCustomRotor.Direction](uiaccessibilitycustomrotor/direction.md)
+- [UIAccessibilityCustomRotor.Direction](./direction.md)
   Constants that indicate the search direction.
 
 

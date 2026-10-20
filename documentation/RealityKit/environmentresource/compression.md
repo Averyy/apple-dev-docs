@@ -1,7 +1,8 @@
 # EnvironmentResource.Compression
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The compression to apply when creating an environment resource.
 
@@ -21,7 +22,8 @@ typealias Compression = TextureResource.Compression
 
 ## See Also
 
-- [EnvironmentResource.CreateOptions](environmentresource/createoptions.md)
+### Configuring the resource creation
+- [EnvironmentResource.CreateOptions](./createoptions.md)
   A type that controls compression, sampling quality, and cubemap dimensions when creating an environment resource.
 
 

@@ -1,7 +1,8 @@
 # OutlineSubgroupChildren
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased view representing the children in an outline subgroup.
 
@@ -21,12 +22,12 @@ struct OutlineSubgroupChildren
 
 #### Overview
 
-[`OutlineGroup`](outlinegroup.md) uses this type as a generic constraint for the `Content` of the [`DisclosureGroup`](disclosuregroup.md) instances it creates.
+[`OutlineGroup`](./outlinegroup.md) uses this type as a generic constraint for the `Content` of the [`DisclosureGroup`](./disclosuregroup.md) instances it creates.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 
 ---

@@ -1,21 +1,22 @@
 # ServiceConfigResponse.Limits
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The set of current request limits.
 
 ## Declaration
 
-```swift
+```
 object ServiceConfigResponse.Limits
 ```
 
 ## Mentions
 
-- [Managing assets](managing-assets.md)
-- [Managing subscriptions](managing-subscriptions.md)
-- [Managing users](managing-users.md)
+- [Managing assets](../managing-assets.md)
+- [Managing subscriptions](../managing-subscriptions.md)
+- [Managing users](../managing-users.md)
 
 #### Overview
 
@@ -27,9 +28,10 @@ Each key names a limit and each value is the current limit. The set of keys vari
 
 ## See Also
 
-- [object ServiceConfigResponse.Urls](serviceconfigresponse/urls-data.dictionary.md)
+### Objects and Data Types
+- [object ServiceConfigResponse.Urls](./urls-data.dictionary.md)
   The set of current service URLs.
-- [object ResponseErrorCode](responseerrorcode.md)
+- [object ResponseErrorCode](../responseerrorcode.md)
   An error code.
 
 

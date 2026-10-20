@@ -1,7 +1,8 @@
 # Subview.ContainerSizingOptions.variable
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Subviews will be sized individually.
 

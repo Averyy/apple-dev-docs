@@ -1,7 +1,8 @@
 # isSwipeTrackingFromScrollEventsEnabled
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether to track fluid swipe gestures using scroll events.
 
@@ -14,17 +15,22 @@ A Boolean value that indicates whether to track fluid swipe gestures using scrol
 class var isSwipeTrackingFromScrollEventsEnabled: Bool { get }
 ```
 
+```objc
+@property (class, readonly, getter=isSwipeTrackingFromScrollEventsEnabled) BOOL swipeTrackingFromScrollEventsEnabled;
+```
+
 #### Discussion
 
-If your app implements its own scrolling, or one of your responder objects tracks scroll wheel messages before they reach a scroll view, make sure the value of this property is [`true`](https://developer.apple.com/documentation/swift/true) before you call [`trackSwipeEvent(options:dampenAmountThresholdMin:max:usingHandler:)`](nsevent/trackswipeevent(options:dampenamountthresholdmin:max:usinghandler:).md) to handle the event. The system defines the value of this property based on user-level preferences.
+If your app implements its own scrolling, or one of your responder objects tracks scroll wheel messages before they reach a scroll view, make sure the value of this property is [`true`](../../Swift/true.md) before you call [`trackSwipeEvent(options:dampenAmountThresholdMin:max:usingHandler:)`](./trackswipeevent%28options,dampenamountthresholdmin,max,usinghandler%29.md) to handle the event. The system defines the value of this property based on user-level preferences.
 
-If you use [`NSScrollView`](nsscrollview.md) for your app’s scrolling behavior, you don’t need to check this property. Scroll views automatically account for this behavior.
+If you use [`NSScrollView`](../nsscrollview.md) for your app’s scrolling behavior, you don’t need to check this property. Scroll views automatically account for this behavior.
 
 ## See Also
 
-- [func trackSwipeEvent(options: NSEvent.SwipeTrackingOptions, dampenAmountThresholdMin: CGFloat, max: CGFloat, usingHandler: (CGFloat, NSEvent.Phase, Bool, UnsafeMutablePointer<ObjCBool>) -> Void)](nsevent/trackswipeevent(options:dampenamountthresholdmin:max:usinghandler:).md)
+### Configuring swipe event behaviors
+- [func trackSwipeEvent(options: NSEvent.SwipeTrackingOptions, dampenAmountThresholdMin: CGFloat, max: CGFloat, usingHandler: (CGFloat, NSEvent.Phase, Bool, UnsafeMutablePointer<ObjCBool>) -> Void)](./trackswipeevent%28options,dampenamountthresholdmin,max,usinghandler%29.md)
   Allows tracking and user interface feedback of scroll wheel events.
-- [NSEvent.SwipeTrackingOptions](nsevent/swipetrackingoptions.md)
+- [NSEvent.SwipeTrackingOptions](./swipetrackingoptions.md)
   Constants that specify swipe-tracking options.
 
 

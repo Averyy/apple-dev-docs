@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ifnet_traffic_descriptor_common {
     ...
 };
@@ -17,9 +17,9 @@ struct ifnet_traffic_descriptor_common {
 ## Topics
 
 ### Instance Properties
-- [itd_flags](ifnet_traffic_descriptor_common/3944283-itd_flags.md)
-- [itd_len](ifnet_traffic_descriptor_common/3944284-itd_len.md)
-- [itd_type](ifnet_traffic_descriptor_common/3944285-itd_type.md)
+- [itd_flags](./ifnet_traffic_descriptor_common/api-3944283-itd_flags.md)
+- [itd_len](./ifnet_traffic_descriptor_common/api-3944284-itd_len.md)
+- [itd_type](./ifnet_traffic_descriptor_common/api-3944285-itd_type.md)
 
 
 ---

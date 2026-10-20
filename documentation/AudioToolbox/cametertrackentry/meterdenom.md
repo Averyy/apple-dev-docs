@@ -1,15 +1,20 @@
 # meterDenom
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var meterDenom: UInt16
+```
+
+```c
+UInt16 meterDenom;
 ```
 
 

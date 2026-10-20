@@ -1,7 +1,8 @@
 # notificationType
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of notification.
 
@@ -10,18 +11,19 @@ The type of notification.
 
 ## Declaration
 
-```swift
+```
 readonly attribute String notificationType;
 ```
 
 #### Discussion
 
-Possible values are described in [`CloudKit.Notification`](cloudkit.notification.md).
+Possible values are described in [`CloudKit.Notification`](../cloudkit.notification.md).
 
 ## See Also
 
-- [isQueryNotification](cloudkit.querynotification/isquerynotification.md)
-  Boolean value indicating whether this notification is a [`CloudKit.QueryNotification`](cloudkit.querynotification.md) object.
+### Getting the Notification Type
+- [isQueryNotification](./isquerynotification.md)
+  Boolean value indicating whether this notification is a [`CloudKit.QueryNotification`](../cloudkit.querynotification.md) object.
 
 
 ---

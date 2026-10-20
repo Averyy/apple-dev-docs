@@ -1,7 +1,8 @@
 # retryAvailableDateErrorKey
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A dictionary key, with a value that’s a date when a result is next available.
 
@@ -18,9 +19,10 @@ static let retryAvailableDateErrorKey: String
 
 ## See Also
 
-- [UIApplication.CategoryDefaultError.Code](uiapplication/categorydefaulterror/code.md)
+### Getting information about the error
+- [UIApplication.CategoryDefaultError.Code](./code.md)
   An enumeration of reasons an error happens when the system discovers whether your app is the default in a category.
-- [static let statusLastProvidedDateErrorKey: String](uiapplication/categorydefaulterror/statuslastprovideddateerrorkey.md)
+- [static let statusLastProvidedDateErrorKey: String](./statuslastprovideddateerrorkey.md)
   A dictionary key, with a value that’s the date your app last received a successful result.
 
 

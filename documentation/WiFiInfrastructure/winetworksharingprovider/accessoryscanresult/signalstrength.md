@@ -1,7 +1,8 @@
 # signalStrength
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The signal strength the accessory measured for the access point.
 

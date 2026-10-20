@@ -1,7 +1,8 @@
 # firstAttribute
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attribute of the first object participating in the constraint.
 
@@ -18,23 +19,28 @@ The attribute of the first object participating in the constraint.
 var firstAttribute: NSLayoutConstraint.Attribute { get }
 ```
 
+```objc
+@property (readonly) NSLayoutAttribute firstAttribute;
+```
+
 ## See Also
 
-- [var firstItem: AnyObject?](nslayoutconstraint/firstitem.md)
+### Accessing constraint data
+- [var firstItem: AnyObject?](./firstitem.md)
   The first object participating in the constraint.
-- [var relation: NSLayoutConstraint.Relation](nslayoutconstraint/relation-swift.property.md)
+- [var relation: NSLayoutConstraint.Relation](./relation-swift.property.md)
   The relation between the two attributes in the constraint.
-- [var secondItem: AnyObject?](nslayoutconstraint/seconditem.md)
+- [var secondItem: AnyObject?](./seconditem.md)
   The second object participating in the constraint.
-- [var secondAttribute: NSLayoutConstraint.Attribute](nslayoutconstraint/secondattribute.md)
+- [var secondAttribute: NSLayoutConstraint.Attribute](./secondattribute.md)
   The attribute of the second object participating in the constraint.
-- [var multiplier: CGFloat](nslayoutconstraint/multiplier.md)
+- [var multiplier: CGFloat](./multiplier.md)
   The multiplier applied to the second attribute participating in the constraint.
-- [var constant: CGFloat](nslayoutconstraint/constant.md)
+- [var constant: CGFloat](./constant.md)
   The constant added to the multiplied second attribute participating in the constraint.
-- [var firstAnchor: NSLayoutAnchor<AnyObject>](nslayoutconstraint/firstanchor.md)
+- [var firstAnchor: NSLayoutAnchor<AnyObject>](./firstanchor.md)
   The first anchor that defines the constraint.
-- [var secondAnchor: NSLayoutAnchor<AnyObject>?](nslayoutconstraint/secondanchor.md)
+- [var secondAnchor: NSLayoutAnchor<AnyObject>?](./secondanchor.md)
   The second anchor that defines the constraint.
 
 

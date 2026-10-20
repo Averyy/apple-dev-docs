@@ -1,7 +1,8 @@
 # objectID
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the object ID used for keychain item identification.
 
@@ -20,12 +21,17 @@ Returns the object ID used for keychain item identification.
 var objectID: TKToken.ObjectID { get }
 ```
 
+```objc
+@property (copy, readonly) TKTokenObjectID objectID;
+```
+
 ## See Also
 
-- [var label: String?](tktokenkeychainitem/label.md)
+### Accessing Keychain Item Attributes
+- [var label: String?](./label.md)
   The user-visible label for the keychain item.
-- [var constraints: [NSNumber : Any]?](tktokenkeychainitem/constraints.md)
-  Access constraints for the keychain item, keyed by [`TKTokenOperation`](tktokenoperation.md) values wrapped in [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects.
+- [var constraints: [NSNumber : Any]?](./constraints.md)
+  Access constraints for the keychain item, keyed by [`TKTokenOperation`](../tktokenoperation.md) values wrapped in [`NSNumber`](../../Foundation/nsnumber.md) objects.
 
 
 ---

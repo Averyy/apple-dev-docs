@@ -1,18 +1,21 @@
 # alert(item:content:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents an alert to the user.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.0+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.2
+- tvOS 13.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 6.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`alert(_:isPresented:presenting:actions:message:)`](./alert%28_,ispresented,presenting,actions,message%29-29bp4.md) instead.
 
 ## Declaration
 
@@ -51,7 +54,7 @@ struct ConfirmImportAlert: View {
 }
 ```
 
-![An alert showing information from a data source that describes the result of a file import process. The alert displays the name of the file imported, MyImageFile.png and its file type, the PNG image file format along with a default OK button for dismissing the alert.](/images/com.apple.SwiftUI/SwiftUI-View-AlertItemContent@2x.png)
+![An alert showing information from a data source that describes the result of a file import process. The alert displays the name of the file imported, MyImageFile.png and its file type, the PNG image file format along with a default OK button for dismissing the alert.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-AlertItemContent@2x.png)
 
 ## Parameters
 
@@ -60,11 +63,12 @@ struct ConfirmImportAlert: View {
 
 ## See Also
 
-- [func actionSheet(isPresented: Binding<Bool>, content: () -> ActionSheet) -> some View](view/actionsheet(ispresented:content:).md)
+### View presentation modifiers
+- [func actionSheet(isPresented: Binding<Bool>, content: () -> ActionSheet) -> some View](./actionsheet%28ispresented,content%29.md)
   Presents an action sheet when a given condition is true.
-- [func actionSheet<T>(item: Binding<T?>, content: (T) -> ActionSheet) -> some View](view/actionsheet(item:content:).md)
+- [func actionSheet<T>(item: Binding<T?>, content: (T) -> ActionSheet) -> some View](./actionsheet%28item,content%29.md)
   Presents an action sheet using the given item as a data source for the sheet’s content.
-- [func alert(isPresented: Binding<Bool>, content: () -> Alert) -> some View](view/alert(ispresented:content:).md)
+- [func alert(isPresented: Binding<Bool>, content: () -> Alert) -> some View](./alert%28ispresented,content%29.md)
   Presents an alert to the user.
 
 

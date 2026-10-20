@@ -1,7 +1,8 @@
 # AXNumericDataAxisDescriptor.ScaleType
 
 **Framework**: Accessibility  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the scale of a numeric axis.
 
@@ -20,31 +21,36 @@ Constants that describe the scale of a numeric axis.
 enum ScaleType
 ```
 
+```c
+enum AXNumericDataAxisDescriptorScale : NSInteger;
+```
+
 ## Topics
 
 ### Scales
-- [AXNumericDataAxisDescriptor.ScaleType.linear](axnumericdataaxisdescriptor/scaletype-swift.enum/linear.md)
+- [AXNumericDataAxisDescriptor.ScaleType.linear](./scaletype-swift.enum/linear.md)
   A linear scale.
-- [AXNumericDataAxisDescriptor.ScaleType.ln](axnumericdataaxisdescriptor/scaletype-swift.enum/ln.md)
+- [AXNumericDataAxisDescriptor.ScaleType.ln](./scaletype-swift.enum/ln.md)
   A natural log scale.
-- [AXNumericDataAxisDescriptor.ScaleType.log10](axnumericdataaxisdescriptor/scaletype-swift.enum/log10.md)
+- [AXNumericDataAxisDescriptor.ScaleType.log10](./scaletype-swift.enum/log10.md)
   A log scale.
 ### Initializers
-- [init?(rawValue: Int)](axnumericdataaxisdescriptor/scaletype-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./scaletype-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var scaleType: AXNumericDataAxisDescriptor.ScaleType](axnumericdataaxisdescriptor/scaletype-swift.property.md)
+### Configuring the axis scale
+- [var scaleType: AXNumericDataAxisDescriptor.ScaleType](./scaletype-swift.property.md)
   The scale for the axis.
 
 

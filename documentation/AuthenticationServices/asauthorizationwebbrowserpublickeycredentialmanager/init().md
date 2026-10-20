@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a credential manager.
 
@@ -15,6 +16,10 @@ Initializes a credential manager.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

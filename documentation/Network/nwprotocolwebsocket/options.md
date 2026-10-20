@@ -1,7 +1,8 @@
 # NWProtocolWebSocket.Options
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container of options for configuring how WebSocket is used on a connection.
 
@@ -23,38 +24,39 @@ class Options
 ## Topics
 
 ### Configuring WebSocket Options
-- [init(NWProtocolWebSocket.Version)](nwprotocolwebsocket/options/init(_:).md)
+- [init(NWProtocolWebSocket.Version)](./options/init%28_%29.md)
   Initializes a default set of WebSocket connection options.
-- [NWProtocolWebSocket.Version](nwprotocolwebsocket/version.md)
+- [NWProtocolWebSocket.Version](./version.md)
   Supported versions of the WebSocket protocol.
-- [var autoReplyPing: Bool](nwprotocolwebsocket/options/autoreplyping.md)
+- [var autoReplyPing: Bool](./options/autoreplyping.md)
   A Boolean indicating whether the connection automatically replies to Ping messages instead of delivering them to you.
-- [var maximumMessageSize: Int](nwprotocolwebsocket/options/maximummessagesize.md)
+- [var maximumMessageSize: Int](./options/maximummessagesize.md)
   The maximum allowed message size, in bytes, to be received by the WebSocket connection.
 ### Configuring Client Handshakes
-- [func setAdditionalHeaders([(name: String, value: String)])](nwprotocolwebsocket/options/setadditionalheaders(_:).md)
+- [func setAdditionalHeaders([(name: String, value: String)])](./options/setadditionalheaders%28_%29.md)
   Sets additional HTTP header fields to be sent by the client during the WebSocket handshake.
-- [func setSubprotocols([String])](nwprotocolwebsocket/options/setsubprotocols(_:).md)
+- [func setSubprotocols([String])](./options/setsubprotocols%28_%29.md)
   Adds to the list of supported application protocols that will be presented to a WebSocket server during connection establishment.
-- [var skipHandshake: Bool](nwprotocolwebsocket/options/skiphandshake.md)
+- [var skipHandshake: Bool](./options/skiphandshake.md)
   A Boolean indicating whether the WebSocket protocol skips its handshake and begins framing data once the underlying connection is established.
 ### Handling Server Handshakes
-- [func setClientRequestHandler(DispatchQueue, handler: ([String], [(name: String, value: String)]) -> NWProtocolWebSocket.Response)](nwprotocolwebsocket/options/setclientrequesthandler(_:handler:).md)
+- [func setClientRequestHandler(DispatchQueue, handler: ([String], [(name: String, value: String)]) -> NWProtocolWebSocket.Response)](./options/setclientrequesthandler%28_,handler%29.md)
   Sets a handler to react to as a server to inbound WebSocket client handshakes.
-- [NWProtocolWebSocket.Response](nwprotocolwebsocket/response.md)
+- [NWProtocolWebSocket.Response](./response.md)
   A WebSocket handshake reponse sent from a server to a client.
 
 ## Relationships
 
 ### Inherits From
-- [NWProtocolOptions](nwprotocoloptions.md)
+- [NWProtocolOptions](../nwprotocoloptions.md)
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static let definition: NWProtocolDefinition](nwprotocolwebsocket/definition.md)
+### Creating WebSocket Connections
+- [static let definition: NWProtocolDefinition](./definition.md)
   The system definition of the WebSocket protocol.
 
 

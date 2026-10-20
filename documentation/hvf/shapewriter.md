@@ -1,7 +1,8 @@
 # ShapeWriter
 
 **Framework**: hvf  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for creating a Shape part for rendering or to build an HVGL table
 
@@ -23,24 +24,24 @@ protocol ShapeWriter
 ## Topics
 
 ### Instance Properties
-- [var axisCount: Int](shapewriter/axiscount.md)
+- [var axisCount: Int](./shapewriter/axiscount.md)
   The number of axes
-- [var blendTypes: [SegmentBlendType]](shapewriter/blendtypes.md)
+- [var blendTypes: [SegmentBlendType]](./shapewriter/blendtypes.md)
   The blend type of each segment, in path order
-- [var denseDeltaMatrix: [Double]](shapewriter/densedeltamatrix.md)
+- [var denseDeltaMatrix: [Double]](./shapewriter/densedeltamatrix.md)
   A dense matrix of segment delta values for extrema, in column order. The columns correspond to the axis extrema, with minimum first, then maximum
-- [var masterVector: [Double]](shapewriter/mastervector.md)
+- [var masterVector: [Double]](./shapewriter/mastervector.md)
   The master point segments, in path order. Each segment is in the order: Curve: parallel factor, zero, off X, off Y Not curve: on X, on Y, off X, off Y
-- [var pathSizes: [UInt16]](shapewriter/pathsizes.md)
+- [var pathSizes: [UInt16]](./shapewriter/pathsizes.md)
   The number of segments in each path; must sum to totalSegmentCount
-- [var totalSegmentCount: Int](shapewriter/totalsegmentcount.md)
+- [var totalSegmentCount: Int](./shapewriter/totalsegmentcount.md)
   The total number of segments (on/off pairs) in all paths
 ### Instance Methods
-- [func denseDeltaOffset(axis: Int, extremum: AxisExtremum, segment: Int, point: SegmentPoint, coordinate: PointCoordinate) -> Int](shapewriter/densedeltaoffset(axis:extremum:segment:point:coordinate:).md)
+- [func denseDeltaOffset(axis: Int, extremum: AxisExtremum, segment: Int, point: SegmentPoint, coordinate: PointCoordinate) -> Int](./shapewriter/densedeltaoffset%28axis,extremum,segment,point,coordinate%29.md)
   The offset of a coordinate in the denseDeltaMatrix This function uses totalSegmentCount, which must be set correctly before calling
-- [func finalize() -> Bool](shapewriter/finalize.md)
+- [func finalize() -> Bool](./shapewriter/finalize%28%29.md)
   Call when done writing the Shape
-- [func masterOffset(segment: Int, point: SegmentPoint, coordinate: PointCoordinate) -> Int](shapewriter/masteroffset(segment:point:coordinate:).md)
+- [func masterOffset(segment: Int, point: SegmentPoint, coordinate: PointCoordinate) -> Int](./shapewriter/masteroffset%28segment,point,coordinate%29.md)
   The offset of a coordinate in the masterVector
 
 

@@ -1,7 +1,8 @@
 # WKWebExtension.WindowConfiguration
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that encapsulates configuration options for a window in an extension.
 
@@ -19,6 +20,10 @@ An object that encapsulates configuration options for a window in an extension.
 class WindowConfiguration
 ```
 
+```objc
+@interface WKWebExtensionWindowConfiguration : NSObject
+```
+
 #### Overview
 
 This class holds various options that influence the behavior and initial state of a window.
@@ -28,62 +33,63 @@ The app retains the discretion to disregard any or all of these options, or even
 ## Topics
 
 ### Instance Properties
-- [var frame: CGRect](wkwebextension/windowconfiguration/frame.md)
+- [var frame: CGRect](./windowconfiguration/frame.md)
   Indicates the frame where the window should be positioned on the main screen.
-- [var shouldBeFocused: Bool](wkwebextension/windowconfiguration/shouldbefocused.md)
+- [var shouldBeFocused: Bool](./windowconfiguration/shouldbefocused.md)
   Indicates whether the window should be focused.
-- [var shouldBePrivate: Bool](wkwebextension/windowconfiguration/shouldbeprivate.md)
+- [var shouldBePrivate: Bool](./windowconfiguration/shouldbeprivate.md)
   Indicates whether the window should be private.
-- [var tabURLs: [URL]](wkwebextension/windowconfiguration/taburls.md)
+- [var tabURLs: [URL]](./windowconfiguration/taburls.md)
   Indicates the URLs that the window should initially load as tabs.
-- [var tabs: [any WKWebExtensionTab]](wkwebextension/windowconfiguration/tabs.md)
+- [var tabs: [any WKWebExtensionTab]](./windowconfiguration/tabs.md)
   Indicates the existing tabs that should be moved to the window.
-- [var windowState: WKWebExtension.WindowState](wkwebextension/windowconfiguration/windowstate.md)
+- [var windowState: WKWebExtension.WindowState](./windowconfiguration/windowstate.md)
   Indicates the window state for the window.
-- [var windowType: WKWebExtension.WindowType](wkwebextension/windowconfiguration/windowtype.md)
+- [var windowType: WKWebExtension.WindowType](./windowconfiguration/windowtype.md)
   Indicates the window type for the window.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
 
 ## See Also
 
-- [class WKWebExtension](wkwebextension.md)
+### Web extensions
+- [class WKWebExtension](../wkwebextension.md)
   An object that encapsulates a web extension’s resources that the manifest file defines.
-- [protocol WKWebExtensionTab](wkwebextensiontab.md)
+- [protocol WKWebExtensionTab](../wkwebextensiontab.md)
   A protocol with methods that represent a tab to web extensions.
-- [protocol WKWebExtensionWindow](wkwebextensionwindow.md)
+- [protocol WKWebExtensionWindow](../wkwebextensionwindow.md)
   A protocol with methods that represent a window to web extensions.
-- [class WKWebExtensionContext](wkwebextensioncontext.md)
+- [class WKWebExtensionContext](../wkwebextensioncontext.md)
   An object that represents the runtime environment for a web extension.
-- [class WKWebExtensionController](wkwebextensioncontroller.md)
+- [class WKWebExtensionController](../wkwebextensioncontroller.md)
   An object that manages a set of loaded extension contexts.
-- [protocol WKWebExtensionControllerDelegate](wkwebextensioncontrollerdelegate.md)
+- [protocol WKWebExtensionControllerDelegate](../wkwebextensioncontrollerdelegate.md)
   A group of methods you use to customize web extension interactions.
-- [WKWebExtension.Action](wkwebextension/action.md)
+- [WKWebExtension.Action](./action.md)
   An object that encapsulates the properties for an individual web extension action.
-- [WKWebExtension.Command](wkwebextension/command.md)
+- [WKWebExtension.Command](./command.md)
   An object that encapsulates the properties for an individual web extension command.
-- [WKWebExtension.MatchPattern](wkwebextension/matchpattern.md)
+- [WKWebExtension.MatchPattern](./matchpattern.md)
   An object that represents a way to specify groups of URLs.
-- [WKWebExtension.MessagePort](wkwebextension/messageport.md)
+- [WKWebExtension.MessagePort](./messageport.md)
   An object that manages message-based communication with a web extension.
-- [WKWebExtension.DataRecord](wkwebextension/datarecord.md)
+- [WKWebExtension.DataRecord](./datarecord.md)
   An object that represents a record of stored data for a specific web extension context.
-- [WKWebExtension.TabConfiguration](wkwebextension/tabconfiguration.md)
+- [WKWebExtension.TabConfiguration](./tabconfiguration.md)
   An object that encapsulates configuration options for a tab in an extension.
-- [WKWebExtensionController.Configuration](wkwebextensioncontroller/configuration-swift.class.md)
-  A [`WKWebExtensionController.Configuration`](wkwebextensioncontroller/configuration-swift.class.md) object with which to initialize a web extension controller.
+- [WKWebExtensionController.Configuration](../wkwebextensioncontroller/configuration-swift.class.md)
+  A [`WKWebExtensionController.Configuration`](../wkwebextensioncontroller/configuration-swift.class.md) object with which to initialize a web extension controller.
 
 
 ---

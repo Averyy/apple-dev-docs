@@ -1,7 +1,8 @@
 # style
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The visual appearance of the place selection accessory.
 
@@ -10,14 +11,15 @@ The visual appearance of the place selection accessory.
 
 ## Declaration
 
-```swift
+```
 get style(): PlaceSelectionAccessoryStyle;
 set style(value: PlaceSelectionAccessoryStyle);
 ```
 
 ## See Also
 
-- [const PlaceSelectionAccessoryStyle](placeselectionaccessorystyle.md)
+### Working with styles
+- [const PlaceSelectionAccessoryStyle](../placeselectionaccessorystyle.md)
   The set of styles for configuring how a place selection accessory appears.
 
 

@@ -1,7 +1,8 @@
 # object(atPath:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func object(atPath path: String) -> MDLObject
+```
+
+```objc
+- (MDLObject *) objectAtPath:(NSString *) path;
 ```
 
 

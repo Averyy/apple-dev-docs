@@ -1,7 +1,8 @@
 # coordinates
 
 **Framework**: Nearby Interaction  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A triplet that represents the location in 3D space of the anchor that provides the measurement.
 
@@ -16,19 +17,24 @@ A triplet that represents the location in 3D space of the anchor that provides t
 var coordinates: simd_double3 { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) simd_double3 coordinates;
+```
+
 #### Discussion
 
-The measurement’s [`coordinatesType`](nidltdoameasurement/coordinatestype.md) determines the manner in which you interpret this property’s value.
+The measurement’s [`coordinatesType`](./coordinatestype.md) determines the manner in which you interpret this property’s value.
 
 ## See Also
 
-- [var coordinatesType: NIDLTDOACoordinatesType](nidltdoameasurement/coordinatestype.md)
+### Locating the anchor
+- [var coordinatesType: NIDLTDOACoordinatesType](./coordinatestype.md)
   The type of coordinate system that the measurement conforms to.
-- [var signalStrength: Double](nidltdoameasurement/signalstrength.md)
+- [var signalStrength: Double](./signalstrength.md)
   A value that represents the received signal strength, in dBm, from the anchor that provides the measurement.
-- [var floorElevation: NIDLTDOAMeasurement.FloorElevation?](nidltdoameasurement/floorelevation-swift.property.md)
+- [var floorElevation: NIDLTDOAMeasurement.FloorElevation?](./floorelevation-swift.property.md)
   The floor elevation information for the anchor, if available.
-- [NIDLTDOAMeasurement.FloorElevation](nidltdoameasurement/floorelevation-swift.class.md)
+- [NIDLTDOAMeasurement.FloorElevation](./floorelevation-swift.class.md)
   An object that describes how high off the ground DL-TDOA anchors reside in the environment.
 
 

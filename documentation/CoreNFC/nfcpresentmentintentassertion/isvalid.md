@@ -1,7 +1,8 @@
 # isValid
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean property that indicates whether the presentment intent assertion instance is still valid.
 
@@ -25,7 +26,8 @@ This value is `true` when you first acquire a presentment intent assertion. It b
 
 ## See Also
 
-- [NFCPresentmentIntentAssertion.Error](nfcpresentmentintentassertion/error.md)
+### Testing presentment intention validity
+- [NFCPresentmentIntentAssertion.Error](./error.md)
   An error type that indicates problems with the presentment intent assertion.
 
 

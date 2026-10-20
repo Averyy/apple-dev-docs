@@ -1,7 +1,8 @@
 # allowsFocus
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the collection view allows its cells to become focused.
 
@@ -18,23 +19,28 @@ A Boolean value that determines whether the collection view allows its cells to 
 var allowsFocus: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL allowsFocus;
+```
+
 ## Mentions
 
-- [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
+- [Building a desktop-class iPad app](../building-a-desktop-class-ipad-app.md)
 
 #### Discussion
 
-If you implement [`collectionView(_:canFocusItemAt:)`](uicollectionviewdelegate/collectionview(_:canfocusitemat:).md), its return value takes precedence over the value of this property.
+If you implement [`collectionView(_:canFocusItemAt:)`](../uicollectionviewdelegate/collectionview%28_,canfocusitemat%29.md), its return value takes precedence over the value of this property.
 
 The system determines the default value of this property according to the platform and other properties of the collection view.
 
 ## See Also
 
-- [var allowsFocusDuringEditing: Bool](uicollectionview/allowsfocusduringediting.md)
+### Working with focus
+- [var allowsFocusDuringEditing: Bool](./allowsfocusduringediting.md)
   A Boolean value that determines whether the collection view allows its cells to become focused in edit mode.
-- [var selectionFollowsFocus: Bool](uicollectionview/selectionfollowsfocus.md)
+- [var selectionFollowsFocus: Bool](./selectionfollowsfocus.md)
   A Boolean value that triggers an automatic selection when focus moves to a cell.
-- [var remembersLastFocusedIndexPath: Bool](uicollectionview/rememberslastfocusedindexpath.md)
+- [var remembersLastFocusedIndexPath: Bool](./rememberslastfocusedindexpath.md)
   A Boolean value that indicates whether the collection view automatically assigns the focus to the item at the last focused index path.
 
 

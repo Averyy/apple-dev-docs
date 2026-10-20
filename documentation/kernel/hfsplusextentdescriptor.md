@@ -1,14 +1,15 @@
 # HFSPlusExtentDescriptor
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 typedef struct HFSPlusExtentDescriptor {
     ...
 } HFSPlusExtentDescriptor;
@@ -17,32 +18,33 @@ typedef struct HFSPlusExtentDescriptor {
 ## Topics
 
 ### Instance Properties
-- [blockCount](hfsplusextentdescriptor/1578010-blockcount.md)
-- [startBlock](hfsplusextentdescriptor/1577953-startblock.md)
+- [blockCount](./hfsplusextentdescriptor/api-1578010-blockcount.md)
+- [startBlock](./hfsplusextentdescriptor/api-1577953-startblock.md)
 
 ## See Also
 
-- [HFSCatalogFile](hfscatalogfile.md)
-- [HFSCatalogFolder](hfscatalogfolder.md)
-- [HFSCatalogKey](hfscatalogkey.md)
-- [HFSCatalogThread](hfscatalogthread.md)
-- [HFSExtentDescriptor](hfsextentdescriptor.md)
-- [HFSExtentKey](hfsextentkey.md)
-- [HFSMasterDirectoryBlock](hfsmasterdirectoryblock.md)
-- [HFSPlusAttrData](hfsplusattrdata.md)
-- [HFSPlusAttrExtents](hfsplusattrextents.md)
-- [HFSPlusAttrForkData](hfsplusattrforkdata.md)
-- [HFSPlusAttrInlineData](hfsplusattrinlinedata.md)
-- [HFSPlusAttrKey](hfsplusattrkey.md)
-- [HFSPlusBSDInfo](hfsplusbsdinfo.md)
-- [HFSPlusCatalogFile](hfspluscatalogfile.md)
-- [HFSPlusCatalogFolder](hfspluscatalogfolder.md)
-- [HFSPlusCatalogKey](hfspluscatalogkey.md)
-- [HFSPlusCatalogThread](hfspluscatalogthread.md)
-- [HFSPlusExtentKey](hfsplusextentkey.md)
-- [HFSPlusForkData](hfsplusforkdata.md)
-- [HFSPlusVolumeHeader](hfsplusvolumeheader.md)
-- [HFSUniStr255](hfsunistr255.md)
+### Format
+- [HFSCatalogFile](./hfscatalogfile.md)
+- [HFSCatalogFolder](./hfscatalogfolder.md)
+- [HFSCatalogKey](./hfscatalogkey.md)
+- [HFSCatalogThread](./hfscatalogthread.md)
+- [HFSExtentDescriptor](./hfsextentdescriptor.md)
+- [HFSExtentKey](./hfsextentkey.md)
+- [HFSMasterDirectoryBlock](./hfsmasterdirectoryblock.md)
+- [HFSPlusAttrData](./hfsplusattrdata.md)
+- [HFSPlusAttrExtents](./hfsplusattrextents.md)
+- [HFSPlusAttrForkData](./hfsplusattrforkdata.md)
+- [HFSPlusAttrInlineData](./hfsplusattrinlinedata.md)
+- [HFSPlusAttrKey](./hfsplusattrkey.md)
+- [HFSPlusBSDInfo](./hfsplusbsdinfo.md)
+- [HFSPlusCatalogFile](./hfspluscatalogfile.md)
+- [HFSPlusCatalogFolder](./hfspluscatalogfolder.md)
+- [HFSPlusCatalogKey](./hfspluscatalogkey.md)
+- [HFSPlusCatalogThread](./hfspluscatalogthread.md)
+- [HFSPlusExtentKey](./hfsplusextentkey.md)
+- [HFSPlusForkData](./hfsplusforkdata.md)
+- [HFSPlusVolumeHeader](./hfsplusvolumeheader.md)
+- [HFSUniStr255](./hfsunistr255.md)
 
 
 ---

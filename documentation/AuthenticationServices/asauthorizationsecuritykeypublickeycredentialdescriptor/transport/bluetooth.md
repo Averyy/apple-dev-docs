@@ -1,7 +1,8 @@
 # bluetooth
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Bluetooth transport type.
 
@@ -17,13 +18,18 @@ The Bluetooth transport type.
 static let bluetooth: ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport
 ```
 
+```c
+extern ASAuthorizationSecurityKeyPublicKeyCredentialDescriptorTransport const ASAuthorizationSecurityKeyPublicKeyCredentialDescriptorTransportBluetooth;
+```
+
 ## See Also
 
-- [static var allSupported: [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport]](asauthorizationsecuritykeypublickeycredentialdescriptor/transport/allsupported.md)
+### Getting the properties
+- [static var allSupported: [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport]](./allsupported.md)
   An array of currently supported transport types.
-- [static let nfc: ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport](asauthorizationsecuritykeypublickeycredentialdescriptor/transport/nfc.md)
+- [static let nfc: ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport](./nfc.md)
   The Near Field Communication transport type.
-- [static let usb: ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport](asauthorizationsecuritykeypublickeycredentialdescriptor/transport/usb.md)
+- [static let usb: ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport](./usb.md)
   The USB transport type.
 
 

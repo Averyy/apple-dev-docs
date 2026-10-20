@@ -1,7 +1,8 @@
 # DISPATCH_WALLTIME_NOW
 
 **Framework**: Dispatch  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The current time.
 
@@ -20,19 +21,24 @@ The current time.
 var DISPATCH_WALLTIME_NOW: UInt { get }
 ```
 
+```c
+DISPATCH_WALLTIME_NOW
+```
+
 ## See Also
 
-- [struct DispatchTime](dispatchtime.md)
+### Time Constructs
+- [struct DispatchTime](./dispatchtime.md)
   A point in time relative to the default clock, with nanosecond precision.
-- [struct DispatchWallTime](dispatchwalltime.md)
+- [struct DispatchWallTime](./dispatchwalltime.md)
   An absolute point in time according to the wall clock, with microsecond precision.
-- [enum DispatchTimeInterval](dispatchtimeinterval.md)
+- [enum DispatchTimeInterval](./dispatchtimeinterval.md)
   A number of seconds, millisconds, microseconds, or nanoseconds.
-- [enum DispatchTimeoutResult](dispatchtimeoutresult.md)
+- [enum DispatchTimeoutResult](./dispatchtimeoutresult.md)
   A result value indicating whether a dispatch operation finished before a specified time.
-- [typealias dispatch_time_t](dispatch_time_t.md)
+- [typealias dispatch_time_t](./dispatch_time_t.md)
   An abstract representation of time.
-- [Wall Time Constants](2963138-wall-time-constants.md)
+- [Wall Time Constants](./api-2963138-wall-time-constants.md)
   Constants for wall time values.
 
 

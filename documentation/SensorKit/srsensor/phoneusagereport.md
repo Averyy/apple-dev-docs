@@ -1,7 +1,8 @@
 # phoneUsageReport
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A sensor that reports the amount of time that the user is on phone calls.
 
@@ -16,15 +17,20 @@ A sensor that reports the amount of time that the user is on phone calls.
 static let phoneUsageReport: SRSensor
 ```
 
+```c
+extern SRSensor const SRSensorPhoneUsageReport;
+```
+
 #### Discussion
 
-The [`sample`](srfetchresult/sample.md) type for this sensor is [`SRPhoneUsageReport`](srphoneusagereport.md).
+The [`sample`](../srfetchresult/sample.md) type for this sensor is [`SRPhoneUsageReport`](../srphoneusagereport.md).
 
-You need to provide a reason to record phone usage by adding the [`SRSensorUsagePhoneUsage`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail/srsensorusagephoneusage) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail) key in the information property list.
+You need to provide a reason to record phone usage by adding the [`SRSensorUsagePhoneUsage`](../../BundleResources/information-property-list/nssensorkitusagedetail/srsensorusagephoneusage.md) dictionary to the [`NSSensorKitUsageDetail`](../../BundleResources/information-property-list/nssensorkitusagedetail.md) key in the information property list.
 
 ## See Also
 
-- [static let messagesUsageReport: SRSensor](srsensor/messagesusagereport.md)
+### Reading app activity sensors
+- [static let messagesUsageReport: SRSensor](./messagesusagereport.md)
   A sensor that provides information about use of the Messages app.
 
 

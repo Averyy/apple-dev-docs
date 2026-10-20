@@ -1,7 +1,8 @@
 # registerUserInterfaceItemSearchHandler(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Register an object that provides help data to your app.
 
@@ -14,6 +15,10 @@ Register an object that provides help data to your app.
 func registerUserInterfaceItemSearchHandler(_ handler: any NSUserInterfaceItemSearching)
 ```
 
+```objc
+- (void) registerUserInterfaceItemSearchHandler:(id<NSUserInterfaceItemSearching>) handler;
+```
+
 #### Discussion
 
 You can register as many search handlers as you like. If you register the same instance more than once the subsequent registrations are ignored.
@@ -24,15 +29,16 @@ You can register as many search handlers as you like. If you register the same i
 
 ## See Also
 
-- [func searchString(String, inUserInterfaceItemString: String, range: NSRange, found: UnsafeMutablePointer<NSRange>?) -> Bool](nsapplication/searchstring(_:inuserinterfaceitemstring:range:found:).md)
+### Providing help information
+- [func searchString(String, inUserInterfaceItemString: String, range: NSRange, found: UnsafeMutablePointer<NSRange>?) -> Bool](./searchstring%28_,inuserinterfaceitemstring,range,found%29.md)
   Searches for the string in the user interface.
-- [func unregisterUserInterfaceItemSearchHandler(any NSUserInterfaceItemSearching)](nsapplication/unregisteruserinterfaceitemsearchhandler(_:).md)
+- [func unregisterUserInterfaceItemSearchHandler(any NSUserInterfaceItemSearching)](./unregisteruserinterfaceitemsearchhandler%28_%29.md)
   Unregister an object that provides help data to your app.
-- [func showHelp(Any?)](nsapplication/showhelp(_:).md)
+- [func showHelp(Any?)](./showhelp%28_%29.md)
   If your project is properly registered, and the necessary keys have been set in the property list, this method launches Help Viewer and displays the first page of your app’s help book.
-- [func activateContextHelpMode(Any?)](nsapplication/activatecontexthelpmode(_:).md)
+- [func activateContextHelpMode(Any?)](./activatecontexthelpmode%28_%29.md)
   Places the receiver in context-sensitive help mode.
-- [var helpMenu: NSMenu?](nsapplication/helpmenu.md)
+- [var helpMenu: NSMenu?](./helpmenu.md)
   The help menu used by the app.
 
 

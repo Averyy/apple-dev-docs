@@ -1,7 +1,8 @@
 # AVAudioEnvironmentDistanceAttenuationModel
 
 **Framework**: AVFAudio  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Types of distance attenuation models.
 
@@ -10,7 +11,7 @@ Types of distance attenuation models.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,6 +21,10 @@ Types of distance attenuation models.
 enum AVAudioEnvironmentDistanceAttenuationModel
 ```
 
+```c
+enum AVAudioEnvironmentDistanceAttenuationModel : NSInteger;
+```
+
 #### Overview
 
 Distance attenuation is the natural attenuation of sound when traveling from the source to the listener. The different attenuation models describe the drop-off in gain as the source moves away from the listener.
@@ -27,28 +32,29 @@ Distance attenuation is the natural attenuation of sound when traveling from the
 ## Topics
 
 ### Creating an attenuation model
-- [init?(rawValue: Int)](avaudioenvironmentdistanceattenuationmodel/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avaudioenvironmentdistanceattenuationmodel/init%28rawvalue%29.md)
 ### Choosing an attenuation model
-- [AVAudioEnvironmentDistanceAttenuationModel.exponential](avaudioenvironmentdistanceattenuationmodel/exponential.md)
+- [AVAudioEnvironmentDistanceAttenuationModel.exponential](./avaudioenvironmentdistanceattenuationmodel/exponential.md)
   An exponential model that describes the drop-off in gain as the source moves away from the listener.
-- [AVAudioEnvironmentDistanceAttenuationModel.inverse](avaudioenvironmentdistanceattenuationmodel/inverse.md)
+- [AVAudioEnvironmentDistanceAttenuationModel.inverse](./avaudioenvironmentdistanceattenuationmodel/inverse.md)
   An inverse model that describes the drop-off in gain as the source moves away from the listener.
-- [AVAudioEnvironmentDistanceAttenuationModel.linear](avaudioenvironmentdistanceattenuationmodel/linear.md)
+- [AVAudioEnvironmentDistanceAttenuationModel.linear](./avaudioenvironmentdistanceattenuationmodel/linear.md)
   A linear model that describes the drop-off in gain as the source moves away from the listener.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var distanceAttenuationModel: AVAudioEnvironmentDistanceAttenuationModel](avaudioenvironmentdistanceattenuationparameters/distanceattenuationmodel.md)
+### Choosing an attenuation model
+- [var distanceAttenuationModel: AVAudioEnvironmentDistanceAttenuationModel](./avaudioenvironmentdistanceattenuationparameters/distanceattenuationmodel.md)
   The distance attenuation model that describes the drop-off in gain as the source moves away from the listener.
 
 

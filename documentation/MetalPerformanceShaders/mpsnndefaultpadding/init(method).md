@@ -1,7 +1,8 @@
 # init(method:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -17,9 +18,14 @@
 convenience init(method: MPSNNPaddingMethod)
 ```
 
+```objc
++ (instancetype) paddingWithMethod:(MPSNNPaddingMethod) method;
+```
+
 ## See Also
 
-- [struct MPSNNPaddingMethod](mpsnnpaddingmethod.md)
+### Initializers
+- [struct MPSNNPaddingMethod](../mpsnnpaddingmethod.md)
   Options that define a graph’s padding.
 
 

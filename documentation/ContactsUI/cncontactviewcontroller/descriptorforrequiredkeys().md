@@ -1,7 +1,8 @@
 # descriptorForRequiredKeys()
 
 **Framework**: Contacts UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the descriptor for all the keys that must be fetched on the contact before setting it on the view controller.
 
@@ -14,9 +15,21 @@ Returns the descriptor for all the keys that must be fetched on the contact befo
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+class func descriptorForRequiredKeys() -> any CNKeyDescriptor
+```
+
+*macOS*
+
 ```swift
 nonisolated
 class func descriptorForRequiredKeys() -> any CNKeyDescriptor
+```
+
+```objc
++ (id<CNKeyDescriptor>) descriptorForRequiredKeys;
 ```
 
 #### Return Value
@@ -25,7 +38,7 @@ Descriptor for all the keys that must be fetched.
 
 #### Discussion
 
-Pass this descriptor to the `keysToFetch` of the [`CNContactFetchRequest`](https://developer.apple.com/documentation/contacts/cncontactfetchrequest) if you want to display the contact in a [`CNContactViewController`](cncontactviewcontroller.md).
+Pass this descriptor to the `keysToFetch` of the [`CNContactFetchRequest`](../../Contacts/cncontactfetchrequest.md) if you want to display the contact in a [`CNContactViewController`](../cncontactviewcontroller.md).
 
 
 ---

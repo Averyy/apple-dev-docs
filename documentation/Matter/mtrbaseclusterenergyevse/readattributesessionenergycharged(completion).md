@@ -1,7 +1,8 @@
 # readAttributeSessionEnergyCharged(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeSessionEnergyCharged(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeSessionEnergyCharged() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeSessionEnergyChargedWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

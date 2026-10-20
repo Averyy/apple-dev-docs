@@ -1,7 +1,8 @@
 # RelevanceEntriesProvider.Context
 
 **Framework**: WidgetKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An object that contains details about how a widget is rendered.
 
@@ -16,7 +17,7 @@ typealias Context = RelevanceEntriesProviderContext
 
 #### Discussion
 
-For more information, see [`RelevanceEntriesProviderContext`](relevanceentriesprovidercontext.md).
+For more information, see [`RelevanceEntriesProviderContext`](../relevanceentriesprovidercontext.md).
 
 
 ---

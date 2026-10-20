@@ -1,7 +1,8 @@
 # InAppPurchaseType
 
 **Framework**: App Store Connect API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A string that represents the type of an In-App Purchase.
 
@@ -10,17 +11,24 @@ A string that represents the type of an In-App Purchase.
 
 ## Declaration
 
-```swift
+```
 string InAppPurchaseType
 ```
 
+## Possible Values
+
+- `CONSUMABLE`
+- `NON_CONSUMABLE`
+- `NON_RENEWING_SUBSCRIPTION`
+
 ## See Also
 
-- [object InAppPurchaseV2.Attributes](inapppurchasev2/attributes-data.dictionary.md)
+### Objects and types
+- [object InAppPurchaseV2.Attributes](./inapppurchasev2/attributes-data.dictionary.md)
   Attributes that describe an In-App Purchase v2 resource.
-- [type InAppPurchaseState](inapppurchasestate.md)
+- [type InAppPurchaseState](./inapppurchasestate.md)
   A string that represents the review state of an In-App Purchase.
-- [object InAppPurchaseV2.Relationships](inapppurchasev2/relationships-data.dictionary.md)
+- [object InAppPurchaseV2.Relationships](./inapppurchasev2/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

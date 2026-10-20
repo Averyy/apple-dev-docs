@@ -1,7 +1,8 @@
 # sizeRangeForDimension
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The allowable range for a dimention of the multiarray.
 
@@ -20,13 +21,18 @@ The allowable range for a dimention of the multiarray.
 var sizeRangeForDimension: [NSValue] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSValue *> * sizeRangeForDimension;
+```
+
 ## See Also
 
-- [var enumeratedShapes: [[NSNumber]]](mlmultiarrayshapeconstraint/enumeratedshapes.md)
+### Accessing the Constraints
+- [var enumeratedShapes: [[NSNumber]]](./enumeratedshapes.md)
   Array of allowed shapes for a multiarray feature.
-- [var type: MLMultiArrayShapeConstraintType](mlmultiarrayshapeconstraint/type.md)
+- [var type: MLMultiArrayShapeConstraintType](./type.md)
   The type of the shape constraint.
-- [enum MLMultiArrayShapeConstraintType](mlmultiarrayshapeconstrainttype.md)
+- [enum MLMultiArrayShapeConstraintType](../mlmultiarrayshapeconstrainttype.md)
   The possible types of shape constraints.
 
 

@@ -1,7 +1,8 @@
 # AudioSearch.Criteria.unspecified
 
 **Framework**: Media Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The request includes a vague search query or no specific search criteria.
 
@@ -22,7 +23,7 @@ case unspecified
 
 ## Mentions
 
-- [Responding to audio search and playback requests](responding-to-audio-search-and-playback-requests.md)
+- [Responding to audio search and playback requests](../../responding-to-audio-search-and-playback-requests.md)
 
 #### Discussion
 
@@ -30,9 +31,10 @@ The person says something like “Play something” without specifying particula
 
 ## See Also
 
-- [AudioSearch.Criteria.searchQuery(_:)](audiosearch/criteria-swift.enum/searchquery(_:).md)
+### Audio search types
+- [AudioSearch.Criteria.searchQuery(_:)](./searchquery%28_%29.md)
   The person’s natural-language search query.
-- [AudioSearch.Criteria.url(_:)](audiosearch/criteria-swift.enum/url(_:).md)
+- [AudioSearch.Criteria.url(_:)](./url%28_%29.md)
   URLs that the system provides for matching audio content.
 
 

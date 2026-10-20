@@ -1,7 +1,8 @@
 # BodyTrackingComponent.Target
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Body-tracking settings for selecting a person to track.
 
@@ -19,26 +20,27 @@ enum Target
 ## Topics
 
 ### Body tracking target types
-- [BodyTrackingComponent.Target.any](bodytrackingcomponent/target-swift.enum/any.md)
+- [BodyTrackingComponent.Target.any](./target-swift.enum/any.md)
   Any person that is detected in front of the camera.
-- [BodyTrackingComponent.Target.body(identifier:)](bodytrackingcomponent/target-swift.enum/body(identifier:).md)
+- [BodyTrackingComponent.Target.body(identifier:)](./target-swift.enum/body%28identifier%29.md)
   A person detected by ARKit.
 ### Operators
-- [static func == (BodyTrackingComponent.Target, BodyTrackingComponent.Target) -> Bool](bodytrackingcomponent/target-swift.enum/==(_:_:).md)
+- [static func == (BodyTrackingComponent.Target, BodyTrackingComponent.Target) -> Bool](./target-swift.enum/eqeq%28_,_%29.md)
   Indicates whether two targets are equal.
 ### Instance Methods
-- [func hash(into: inout Hasher)](bodytrackingcomponent/target-swift.enum/hash(into:).md)
+- [func hash(into: inout Hasher)](./target-swift.enum/hash%28into%29.md)
   Hashes the essential components of the target by feeding them into the given hash function.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [var target: BodyTrackingComponent.Target](bodytrackingcomponent/target-swift.property.md)
+### Selecting a body to track
+- [var target: BodyTrackingComponent.Target](./target-swift.property.md)
   The body-tracking setting.
 
 

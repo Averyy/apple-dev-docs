@@ -1,7 +1,8 @@
 # messageBody
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The message body as a string.
 
@@ -14,11 +15,16 @@ The message body as a string.
 var messageBody: String? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSString * messageBody;
+```
+
 ## See Also
 
-- [var attachmentFileURLs: [URL]?](nssharingservice/attachmentfileurls.md)
+### Getting the Shared Items
+- [var attachmentFileURLs: [URL]?](./attachmentfileurls.md)
   An array of NSURL objects representing the files that were shared.
-- [var permanentLink: URL?](nssharingservice/permanentlink.md)
+- [var permanentLink: URL?](./permanentlink.md)
   A permanent URL (permalink) that your app can use to access the post.
 
 

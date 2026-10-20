@@ -1,7 +1,8 @@
 # ClickTrack
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The click track channel.
 
@@ -10,21 +11,22 @@ The click track channel.
 
 ## Declaration
 
-```swift
+```c
 ClickTrack
 ```
 
 ## See Also
 
-- [DialogCentricMix](audiodriverkit/iouseraudiochannellabel/dialogcentricmix.md)
+### Alternate Content Channels
+- [DialogCentricMix](./dialogcentricmix.md)
   The dialog-centric mix channel.
-- [ForeignLanguage](audiodriverkit/iouseraudiochannellabel/foreignlanguage.md)
+- [ForeignLanguage](./foreignlanguage.md)
   The foreign language channel.
-- [HearingImpaired](audiodriverkit/iouseraudiochannellabel/hearingimpaired.md)
+- [HearingImpaired](./hearingimpaired.md)
   The audio for the hearing-impaired channel.
-- [Haptic](audiodriverkit/iouseraudiochannellabel/haptic.md)
+- [Haptic](./haptic.md)
   The haptic effects channel.
-- [Narration](audiodriverkit/iouseraudiochannellabel/narration.md)
+- [Narration](./narration.md)
   The narration channel.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A view representing the body of a gauge.
@@ -22,9 +23,10 @@ associatedtype Body : View
 
 ## See Also
 
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](gaugestyle/makebody(configuration:).md)
+### Creating custom gauge styles
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./makebody%28configuration%29.md)
   Creates a view representing the body of a gauge.
-- [GaugeStyle.Configuration](gaugestyle/configuration.md)
+- [GaugeStyle.Configuration](./configuration.md)
   The properties of a gauge instance.
 
 

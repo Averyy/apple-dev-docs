@@ -1,7 +1,8 @@
 # defaultValue(forKey:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the default value of the property with the specified key.
 
@@ -17,6 +18,10 @@ Returns the default value of the property with the specified key.
 
 ```swift
 class func defaultValue(forKey key: String) -> Any?
+```
+
+```objc
++ (id) defaultValueForKey:(NSString *) key;
 ```
 
 #### Return Value
@@ -37,7 +42,8 @@ If `key` is not a known for property of the class, the result of the method is u
 
 ## See Also
 
-- [func shouldArchiveValue(forKey: String) -> Bool](caemittercell/shouldarchivevalue(forkey:).md)
+### Using Key-Value Coding Extensions
+- [func shouldArchiveValue(forKey: String) -> Bool](./shouldarchivevalue%28forkey%29.md)
   Returns a Boolean value indicating whether the value for a given key should be archived.
 
 

@@ -1,7 +1,8 @@
 # setValue(_:forHTTPHeaderField:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a value for the header field.
 
@@ -22,11 +23,11 @@ mutating func setValue(_ value: String?, forHTTPHeaderField field: String)
 
 ## Mentions
 
-- [Uploading data to a website](uploading-data-to-a-website.md)
+- [Uploading data to a website](../uploading-data-to-a-website.md)
 
 #### Discussion
 
-Certain header fields are reserved. Do not use this method to set such headers. Specifically, there is no need for you to set the `Content-Length` header. See [`Reserved HTTP headers`](nsurlrequest#Reserved-HTTP-headers.md).
+Certain header fields are reserved. Do not use this method to set such headers. Specifically, there is no need for you to set the `Content-Length` header. See [Reserved HTTP headers](../nsurlrequest.md#Reserved-HTTP-headers).
 
 ## Parameters
 
@@ -35,11 +36,12 @@ Certain header fields are reserved. Do not use this method to set such headers. 
 
 ## See Also
 
-- [var allHTTPHeaderFields: [String : String]?](urlrequest/allhttpheaderfields.md)
+### Accessing header fields
+- [var allHTTPHeaderFields: [String : String]?](./allhttpheaderfields.md)
   A dictionary containing all of the HTTP header fields for a request.
-- [func addValue(String, forHTTPHeaderField: String)](urlrequest/addvalue(_:forhttpheaderfield:).md)
+- [func addValue(String, forHTTPHeaderField: String)](./addvalue%28_,forhttpheaderfield%29.md)
   Adds a value to the header field.
-- [func value(forHTTPHeaderField: String) -> String?](urlrequest/value(forhttpheaderfield:).md)
+- [func value(forHTTPHeaderField: String) -> String?](./value%28forhttpheaderfield%29.md)
   Retrieves a header value.
 
 

@@ -1,14 +1,15 @@
 # fpu_dp
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 __uint32_t fpu_dp;
 ```
 

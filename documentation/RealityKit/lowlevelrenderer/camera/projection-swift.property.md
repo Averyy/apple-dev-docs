@@ -1,7 +1,8 @@
 # projection
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The projection transform for this camera.
 
@@ -19,7 +20,8 @@ var projection: LowLevelRenderer.Camera.Projection { get set }
 
 ## See Also
 
-- [LowLevelRenderer.Camera.Projection](lowlevelrenderer/camera/projection-swift.struct.md)
+### Configuring the projection
+- [LowLevelRenderer.Camera.Projection](./projection-swift.struct.md)
   A projection transform that maps from view space to clip space.
 
 

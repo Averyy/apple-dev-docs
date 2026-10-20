@@ -7,7 +7,7 @@ Initializes a newly allocated IOAudioPort instance with the given attributes
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool initWithAttributes(
  UInt32 portType,
  const char *portName = 0,
@@ -15,7 +15,7 @@ virtual bool initWithAttributes(
  OSDictionary *properties = 0);
 ```
 
-#### Return_value
+#### Return Value
 
 Returns true on success.
 
@@ -32,17 +32,18 @@ The properties parameter is passed on the superclass' init(). The portType, subT
 
 ## See Also
 
-- [addAudioControl](ioaudioport/1811855-addaudiocontrol.md)
+### Miscellaneous
+- [addAudioControl](./api-1811855-addaudiocontrol.md)
   Adds a newly created IOAudioControl instance to the port.
-- [deactivateAudioControls](ioaudioport/1811875-deactivateaudiocontrols.md)
+- [deactivateAudioControls](./api-1811875-deactivateaudiocontrols.md)
   Called to shut down all of the audio controls for this port.
-- [free](ioaudioport/1811888-free.md)
+- [free](./api-1811888-free.md)
   Frees all of the resources allocated by the IOAudioPort.
-- [start](ioaudioport/1811924-start.md)
+- [start](./api-1811924-start.md)
   Called to start a newly created IOAudioPort.
-- [stop](ioaudioport/1811938-stop.md)
+- [stop](./api-1811938-stop.md)
   Called when the IOAudioDevice is stopping when it is no longer available.
-- [withAttributes](ioaudioport/1811950-withattributes.md)
+- [withAttributes](./api-1811950-withattributes.md)
   Allocates a new IOAudioPort instance with the given attributes
 
 

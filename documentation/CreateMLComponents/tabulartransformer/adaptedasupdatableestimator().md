@@ -1,7 +1,8 @@
 # adaptedAsUpdatableEstimator()
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exposes this tabular transformer as an updatable tabular estimator.
 
@@ -22,7 +23,8 @@ func adaptedAsUpdatableEstimator() -> TabularTransformerToUpdatableEstimatorAdap
 
 ## See Also
 
-- [func adaptedAsEstimator() -> TabularTransformerToEstimatorAdaptor<Self>](tabulartransformer/adaptedasestimator.md)
+### Adapting
+- [func adaptedAsEstimator() -> TabularTransformerToEstimatorAdaptor<Self>](./adaptedasestimator%28%29.md)
   Exposes this tabular transformer as a trivial tabular estimator.
 
 

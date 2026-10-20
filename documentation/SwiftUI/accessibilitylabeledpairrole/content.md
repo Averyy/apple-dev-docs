@@ -1,7 +1,8 @@
 # AccessibilityLabeledPairRole.content
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This element represents the content part of the label / content pair.
 
@@ -26,7 +27,8 @@ For example, it might be the custom control itself.
 
 ## See Also
 
-- [AccessibilityLabeledPairRole.label](accessibilitylabeledpairrole/label.md)
+### Getting roles
+- [AccessibilityLabeledPairRole.label](./label.md)
   This element represents the label part of the label / content pair.
 
 

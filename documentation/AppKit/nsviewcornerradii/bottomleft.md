@@ -1,7 +1,8 @@
 # bottomLeft
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Radius of the bottom left corner of the view.
 
@@ -12,6 +13,10 @@ Radius of the bottom left corner of the view.
 
 ```swift
 var bottomLeft: CGFloat { get }
+```
+
+```objc
+@property (readonly) CGFloat bottomLeft;
 ```
 
 

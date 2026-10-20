@@ -1,7 +1,8 @@
 # appleEventCodeForReturnType
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the Apple event code that identifies the command’s return type.
 
@@ -15,15 +16,21 @@ Returns the Apple event code that identifies the command’s return type.
 var appleEventCodeForReturnType: FourCharCode { get }
 ```
 
+```objc
+@property (readonly) FourCharCode appleEventCodeForReturnType;
+```
+
 #### Return Value
 
 The event code for the command’s return type.
 
 ## See Also
 
-- [func appleEventCodeForArgument(withName: String) -> FourCharCode](nsscriptcommanddescription/appleeventcodeforargument(withname:).md)
+### Related Documentation
+- [func appleEventCodeForArgument(withName: String) -> FourCharCode](./appleeventcodeforargument%28withname%29.md)
   Returns the Apple event code for the specified command argument of the receiver.
-- [var returnType: String?](nsscriptcommanddescription/returntype.md)
+### Getting Command Return-Type Information
+- [var returnType: String?](./returntype.md)
   Returns the return type of the command.
 
 

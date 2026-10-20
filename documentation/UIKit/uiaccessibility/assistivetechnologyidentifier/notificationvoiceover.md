@@ -1,7 +1,8 @@
 # notificationVoiceOver
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The VoiceOver assistive app.
 
@@ -20,9 +21,14 @@ nonisolated
 static let notificationVoiceOver: UIAccessibility.AssistiveTechnologyIdentifier
 ```
 
+```c
+extern UIAccessibilityAssistiveTechnologyIdentifier const UIAccessibilityNotificationVoiceOverIdentifier;
+```
+
 ## See Also
 
-- [static let notificationSwitchControl: UIAccessibility.AssistiveTechnologyIdentifier](uiaccessibility/assistivetechnologyidentifier/notificationswitchcontrol.md)
+### Identifiers
+- [static let notificationSwitchControl: UIAccessibility.AssistiveTechnologyIdentifier](./notificationswitchcontrol.md)
   The Switch Control accessibility feature.
 
 

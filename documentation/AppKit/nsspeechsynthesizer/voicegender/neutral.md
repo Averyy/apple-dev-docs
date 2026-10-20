@@ -1,7 +1,8 @@
 # neutral
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 12.3+
@@ -10,6 +11,10 @@
 
 ```swift
 static let neutral: NSSpeechSynthesizer.VoiceGender
+```
+
+```c
+extern NSVoiceGenderName const NSVoiceGenderNeutral;
 ```
 
 

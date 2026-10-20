@@ -1,7 +1,8 @@
 # words
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An instance property that returns individual words in a text container.
 
@@ -25,11 +26,12 @@ Chinese, Japanese, Korean, and Thai don’t recognize individual words.
 
 ## See Also
 
-- [var detectedData: [DocumentObservation.Container.DataDetectorMatch]](documentobservation/container/text-swift.struct/detecteddata.md)
+### Accessing the text
+- [var detectedData: [DocumentObservation.Container.DataDetectorMatch]](./detecteddata.md)
   Detected content in the document matched to a specific type of data, such as emails, phone numbers, addresses, and so on.
-- [var lines: [RecognizedTextObservation]](documentobservation/container/text-swift.struct/lines.md)
+- [var lines: [RecognizedTextObservation]](./lines.md)
   The text grouped by line.
-- [var transcript: String](documentobservation/container/text-swift.struct/transcript.md)
+- [var transcript: String](./transcript.md)
   The complete text as a string.
 
 

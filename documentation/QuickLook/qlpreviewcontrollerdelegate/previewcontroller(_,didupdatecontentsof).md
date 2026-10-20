@@ -1,7 +1,8 @@
 # previewController(_:didUpdateContentsOf:)
 
 **Framework**: Quick Look  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the content of a preview was updated successfully.
 
@@ -17,9 +18,13 @@ Tells the delegate that the content of a preview was updated successfully.
 optional func previewController(_ controller: QLPreviewController, didUpdateContentsOf previewItem: any QLPreviewItem)
 ```
 
+```objc
+- (void) previewController:(QLPreviewController *) controller didUpdateContentsOfPreviewItem:(id<QLPreviewItem>) previewItem;
+```
+
 #### Discussion
 
-The platform invokes this callback after the preview controller successfully overwrites the file at the `previewItem’`s [`previewItemURL`](qlpreviewitem/previewitemurl.md) with an updated file.
+The platform invokes this callback after the preview controller successfully overwrites the file at the `previewItem’`s [`previewItemURL`](../qlpreviewitem/previewitemurl.md) with an updated file.
 
 The platform may invoke the callback multiple times consecutively with the successive edited versions of the preview item. It typically invokes the callback once for each time the user saves their edits.
 
@@ -30,10 +35,11 @@ The platform may invoke the callback multiple times consecutively with the succe
 
 ## See Also
 
-- [func previewController(QLPreviewController, editingModeFor: any QLPreviewItem) -> QLPreviewItemEditingMode](qlpreviewcontrollerdelegate/previewcontroller(_:editingmodefor:).md)
+### Editing the content of a preview
+- [func previewController(QLPreviewController, editingModeFor: any QLPreviewItem) -> QLPreviewItemEditingMode](./previewcontroller%28_,editingmodefor%29.md)
   Returns a value that indicates how the preview controller handles edits to the content of the previewed file.
-- [enum QLPreviewItemEditingMode](qlpreviewitemeditingmode.md)
-- [func previewController(QLPreviewController, didSaveEditedCopyOf: any QLPreviewItem, at: URL)](qlpreviewcontrollerdelegate/previewcontroller(_:didsaveeditedcopyof:at:).md)
+- [enum QLPreviewItemEditingMode](../qlpreviewitemeditingmode.md)
+- [func previewController(QLPreviewController, didSaveEditedCopyOf: any QLPreviewItem, at: URL)](./previewcontroller%28_,didsaveeditedcopyof,at%29.md)
   Tells the delegate that the preview item’s edited content was successfully saved to a copy at the given URL.
 
 

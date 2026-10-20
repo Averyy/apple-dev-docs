@@ -1,7 +1,8 @@
 # AssetInputSequenceProvider
 
 **Framework**: Speech  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Reads from an audio file or asset, providing its audio in a format suitable for analysis by a speech analyzer.
 
@@ -22,21 +23,22 @@ final class AssetInputSequenceProvider
 ## Topics
 
 ### Creating a provider
-- [static func provider(from: AVAsset, compatibleWith: [any SpeechModule], priority: TaskPriority?) async throws -> AssetInputSequenceProvider](assetinputsequenceprovider/provider(from:compatiblewith:priority:).md)
+- [static func provider(from: AVAsset, compatibleWith: [any SpeechModule], priority: TaskPriority?) async throws -> AssetInputSequenceProvider](./assetinputsequenceprovider/provider%28from,compatiblewith,priority%29.md)
   Returns an input sequence provider that reads from the first track of an asset or file.
-- [static func provider(from: AVAsset, track: AVAssetTrack, compatibleWith: [any SpeechModule], priority: TaskPriority?) async throws -> AssetInputSequenceProvider](assetinputsequenceprovider/provider(from:track:compatiblewith:priority:).md)
+- [static func provider(from: AVAsset, track: AVAssetTrack, compatibleWith: [any SpeechModule], priority: TaskPriority?) async throws -> AssetInputSequenceProvider](./assetinputsequenceprovider/provider%28from,track,compatiblewith,priority%29.md)
   Returns an input sequence provider that reads from a track of an asset.
-- [init(asset: AVAsset, track: AVAssetTrack, analyzerFormat: AVAudioFormat, priority: TaskPriority?)](assetinputsequenceprovider/init(asset:track:analyzerformat:priority:).md)
+- [init(asset: AVAsset, track: AVAssetTrack, analyzerFormat: AVAudioFormat, priority: TaskPriority?)](./assetinputsequenceprovider/init%28asset,track,analyzerformat,priority%29.md)
   Creates an input sequence provider.
 ### Obtaining an input sequence
-- [var analyzerInputs: some Sendable & AsyncSequence<AnalyzerInput, any Error>](assetinputsequenceprovider/analyzerinputs.md)
+- [var analyzerInputs: some Sendable & AsyncSequence<AnalyzerInput, any Error>](./assetinputsequenceprovider/analyzerinputs.md)
   A new sequence of speech analyzer input objects containing audio from the asset or file.
 
 ## See Also
 
-- [class CaptureInputSequenceProvider](captureinputsequenceprovider.md)
+### Audio sources
+- [class CaptureInputSequenceProvider](./captureinputsequenceprovider.md)
   Reads from an AV capture device such as a microphone, providing the captured audio in a format suitable for analysis by a speech analyzer.
-- [class AnalyzerInputConverter](analyzerinputconverter.md)
+- [class AnalyzerInputConverter](./analyzerinputconverter.md)
   Converts audio buffers to a format suitable for analysis by a speech analyzer.
 
 

@@ -1,7 +1,8 @@
 # textureCoordinateTransform
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A two-dimensional transformation to apply to the entity’s primary texture coordinates.
 
@@ -11,7 +12,7 @@ A two-dimensional transformation to apply to the entity’s primary texture coor
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -32,11 +33,12 @@ material.textureCoordinateTransform = .init(offset: SIMD2<Float>(x:0.5, y: 0.5),
                                             rotation: rotationRadians)
 ```
 
-Some entities imported from USDZ files have more than one set of UV coordinates. This property affects the primary UV set (sometimes called “UV1”). To transform the secondary UV coordinates (”UV2”), use [`secondaryTextureCoordinateTransform`](physicallybasedmaterial/secondarytexturecoordinatetransform.md).
+Some entities imported from USDZ files have more than one set of UV coordinates. This property affects the primary UV set (sometimes called “UV1”). To transform the secondary UV coordinates (”UV2”), use [`secondaryTextureCoordinateTransform`](./secondarytexturecoordinatetransform.md).
 
 ## See Also
 
-- [var secondaryTextureCoordinateTransform: PhysicallyBasedMaterial.TextureCoordinateTransform](physicallybasedmaterial/secondarytexturecoordinatetransform.md)
+### Modifying texture coordinates
+- [var secondaryTextureCoordinateTransform: PhysicallyBasedMaterial.TextureCoordinateTransform](./secondarytexturecoordinatetransform.md)
   A two-dimensional transformation to apply to the entity’s secondary texture coordinates.
 
 

@@ -1,7 +1,8 @@
 # encode(commandBuffer:primaryImage:secondaryImage:destinationState:destinationImage:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 func encode(commandBuffer: any MTLCommandBuffer, primaryImage: MPSImage, secondaryImage: MPSImage, destinationState: MPSCNNArithmeticGradientState, destinationImage: MPSImage)
+```
+
+```objc
+- (void) encodeToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer primaryImage:(MPSImage *) primaryImage secondaryImage:(MPSImage *) secondaryImage destinationState:(MPSCNNArithmeticGradientState *) destinationState destinationImage:(MPSImage *) destinationImage;
 ```
 
 

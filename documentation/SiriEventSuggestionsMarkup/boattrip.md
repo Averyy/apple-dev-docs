@@ -1,7 +1,8 @@
 # BoatTrip
 
 **Framework**: Siri Event Suggestions Markup  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Location and scheduling information for a boat trip.
 
@@ -10,13 +11,13 @@ Location and scheduling information for a boat trip.
 
 ## Declaration
 
-```swift
+```
 object BoatTrip
 ```
 
 ## Properties
 
-- `@type` (string) *(required)*
+- `@type` (string) *(required)*: **Allowed Values**: `BoatTrip`
 - `arrivalBoatTerminal` (BoatTerminal) *(required)*: The terminal where the boat reservation ends.
 - `arrivalTime` (dateTimeISO8601) *(required)*: The scheduled time the boat arrives.
 - `departureBoatTerminal` (BoatTerminal) *(required)*: The terminal where the boat reservation begins.
@@ -27,7 +28,8 @@ object BoatTrip
 
 ## See Also
 
-- [object BoatTerminal](boatterminal.md)
+### Defining a Boat Reservation
+- [object BoatTerminal](./boatterminal.md)
   The name and location of a boat terminal.
 
 

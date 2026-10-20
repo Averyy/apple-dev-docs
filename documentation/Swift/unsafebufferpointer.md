@@ -1,7 +1,8 @@
 # UnsafeBufferPointer
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A nonowning collection interface to a buffer of elements stored contiguously in memory.
 
@@ -25,80 +26,81 @@ struct UnsafeBufferPointer<Element> where Element : ~Copyable
 
 You can use an `UnsafeBufferPointer` instance in low level operations to eliminate uniqueness checks and, in release mode, bounds checks. Bounds checks are always performed in debug mode.
 
-### Unsafebufferpointer Semantics
+### UnsafeBufferPointer Semantics
 
 An `UnsafeBufferPointer` instance is a view into memory and does not own the memory that it references. Copying a value of type `UnsafeBufferPointer` does not copy the instances stored in the underlying memory. However, initializing another collection with an `UnsafeBufferPointer` instance copies the instances out of the referenced memory and into the new collection.
 
 ## Topics
 
 ### Initializers
-- [init(MLMultiArray) throws](unsafebufferpointer/init(_:)-2fjdq.md)
-- [init(UnsafeMutableBufferPointer<Element>)](unsafebufferpointer/init(_:)-36fvm.md)
+- [init(MLMultiArray) throws](./unsafebufferpointer/init%28_%29-2fjdq.md)
+- [init(UnsafeMutableBufferPointer<Element>)](./unsafebufferpointer/init%28_%29-36fvm.md)
   Creates an immutable typed buffer pointer referencing the same memory as the given mutable buffer pointer.
-- [init(AudioBuffer)](unsafebufferpointer/init(_:)-5ei4s.md)
+- [init(AudioBuffer)](./unsafebufferpointer/init%28_%29-5ei4s.md)
   Initialize an `UnsafeBufferPointer<Element>` from an `AudioBuffer`. Binds the buffer’s memory type to `Element`.
-- [init(rebasing: Slice<UnsafeMutableBufferPointer<Element>>)](unsafebufferpointer/init(rebasing:)-53eec.md)
+- [init(rebasing: Slice<UnsafeMutableBufferPointer<Element>>)](./unsafebufferpointer/init%28rebasing%29-53eec.md)
   Creates a buffer over the same memory as the given buffer slice.
-- [init(rebasing: Slice<UnsafeBufferPointer<Element>>)](unsafebufferpointer/init(rebasing:)-56rdb.md)
+- [init(rebasing: Slice<UnsafeBufferPointer<Element>>)](./unsafebufferpointer/init%28rebasing%29-56rdb.md)
   Creates a buffer over the same memory as the given buffer slice.
-- [init(start: UnsafePointer<Element>?, count: Int)](unsafebufferpointer/init(start:count:).md)
+- [init(start: UnsafePointer<Element>?, count: Int)](./unsafebufferpointer/init%28start,count%29.md)
   Creates a new buffer pointer over the specified number of contiguous instances beginning at the given pointer.
 ### Instance Properties
-- [var baseAddress: UnsafePointer<Element>?](unsafebufferpointer/baseaddress.md)
+- [var baseAddress: UnsafePointer<Element>?](./unsafebufferpointer/baseaddress.md)
   A pointer to the first element of the buffer.
-- [let count: Int](unsafebufferpointer/count.md)
+- [let count: Int](./unsafebufferpointer/count.md)
   The number of elements in the buffer.
-- [var span: Span<Element>](unsafebufferpointer/span.md)
+- [var span: Span<Element>](./unsafebufferpointer/span.md)
   A span over the elements of this buffer.
 ### Instance Methods
-- [func deallocate()](unsafebufferpointer/deallocate.md)
+- [func deallocate()](./unsafebufferpointer/deallocate%28%29.md)
   Deallocates the memory block previously allocated at this buffer pointer’s base address.
-- [func extracting(some RangeExpression<Int>) -> UnsafeBufferPointer<Element>](unsafebufferpointer/extracting(_:)-47z4z.md)
+- [func extracting(some RangeExpression<Int>) -> UnsafeBufferPointer<Element>](./unsafebufferpointer/extracting%28_%29-47z4z.md)
   Constructs a standalone buffer pointer over the items within the supplied range of positions in the memory region addressed by this buffer pointer.
-- [func extracting(UnboundedRange) -> UnsafeBufferPointer<Element>](unsafebufferpointer/extracting(_:)-4bn8q.md)
+- [func extracting(UnboundedRange) -> UnsafeBufferPointer<Element>](./unsafebufferpointer/extracting%28_%29-4bn8q.md)
   Extracts and returns a copy of the entire buffer.
-- [func extracting(Range<Int>) -> UnsafeBufferPointer<Element>](unsafebufferpointer/extracting(_:)-nivx.md)
+- [func extracting(Range<Int>) -> UnsafeBufferPointer<Element>](./unsafebufferpointer/extracting%28_%29-nivx.md)
   Constructs a standalone buffer pointer over the items within the supplied range of positions in the memory region addressed by this buffer pointer.
-- [func isTriviallyIdentical(to: UnsafeBufferPointer<Element>) -> Bool](unsafebufferpointer/istriviallyidentical(to:).md)
+- [func isTriviallyIdentical(to: UnsafeBufferPointer<Element>) -> Bool](./unsafebufferpointer/istriviallyidentical%28to%29.md)
   Returns a Boolean value indicating whether two instances refer to the same memory region.
-- [func withMemoryRebound<T, E, Result>(to: T.Type, (UnsafeBufferPointer<T>) throws(E) -> Result) throws(E) -> Result](unsafebufferpointer/withmemoryrebound(to:_:).md)
+- [func withMemoryRebound<T, E, Result>(to: T.Type, (UnsafeBufferPointer<T>) throws(E) -> Result) throws(E) -> Result](./unsafebufferpointer/withmemoryrebound%28to,_%29.md)
   Executes the given closure while temporarily binding the memory referenced by this buffer to the given type.
 ### Subscripts
-- [subscript(Int) -> Element](unsafebufferpointer/subscript(_:)-3sy16.md)
+- [subscript(Int) -> Element](./unsafebufferpointer/subscript%28_%29-3sy16.md)
   Accesses the element at the specified position.
 ### Default Implementations
-- [AtomicRepresentable Implementations](unsafebufferpointer/atomicrepresentable-implementations.md)
-- [BidirectionalCollection Implementations](unsafebufferpointer/bidirectionalcollection-implementations.md)
-- [Collection Implementations](unsafebufferpointer/collection-implementations.md)
-- [CustomDebugStringConvertible Implementations](unsafebufferpointer/customdebugstringconvertible-implementations.md)
-- [OperationParameter Implementations](unsafebufferpointer/operationparameter-implementations.md)
-- [Sequence Implementations](unsafebufferpointer/sequence-implementations.md)
+- [AtomicRepresentable Implementations](./unsafebufferpointer/atomicrepresentable-implementations.md)
+- [BidirectionalCollection Implementations](./unsafebufferpointer/bidirectionalcollection-implementations.md)
+- [Collection Implementations](./unsafebufferpointer/collection-implementations.md)
+- [CustomDebugStringConvertible Implementations](./unsafebufferpointer/customdebugstringconvertible-implementations.md)
+- [OperationParameter Implementations](./unsafebufferpointer/operationparameter-implementations.md)
+- [Sequence Implementations](./unsafebufferpointer/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AccelerateBuffer](../accelerate/acceleratebuffer.md)
-- [AtomicRepresentable](../synchronization/atomicrepresentable.md)
-- [BNNSGraph.Builder.OperationParameter](../accelerate/bnnsgraph/builder/operationparameter.md)
-- [BidirectionalCollection](bidirectionalcollection.md)
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Collection](collection.md)
-- [ContiguousBytes](../foundation/contiguousbytes.md)
-- [ConvertibleToBytes](convertibletobytes.md)
-- [Copyable](copyable.md)
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [DataProtocol](../foundation/dataprotocol.md)
-- [Escapable](escapable.md)
-- [RandomAccessCollection](randomaccesscollection.md)
-- [Sequence](sequence.md)
+- [AccelerateBuffer](../Accelerate/acceleratebuffer.md)
+- [AtomicRepresentable](../Synchronization/atomicrepresentable.md)
+- [BNNSGraph.Builder.OperationParameter](../Accelerate/bnnsgraph/builder/operationparameter.md)
+- [BidirectionalCollection](./bidirectionalcollection.md)
+- [BitwiseCopyable](./bitwisecopyable.md)
+- [Collection](./collection.md)
+- [ContiguousBytes](../Foundation/contiguousbytes.md)
+- [ConvertibleToBytes](./convertibletobytes.md)
+- [Copyable](./copyable.md)
+- [CustomDebugStringConvertible](./customdebugstringconvertible.md)
+- [DataProtocol](../Foundation/dataprotocol.md)
+- [Escapable](./escapable.md)
+- [RandomAccessCollection](./randomaccesscollection.md)
+- [Sequence](./sequence.md)
 
 ## See Also
 
-- [struct UnsafePointer](unsafepointer.md)
+### Typed Pointers
+- [struct UnsafePointer](./unsafepointer.md)
   A pointer for accessing data of a specific type.
-- [struct UnsafeMutablePointer](unsafemutablepointer.md)
+- [struct UnsafeMutablePointer](./unsafemutablepointer.md)
   A pointer for accessing and manipulating data of a specific type.
-- [struct UnsafeMutableBufferPointer](unsafemutablebufferpointer.md)
+- [struct UnsafeMutableBufferPointer](./unsafemutablebufferpointer.md)
   A nonowning collection interface to a buffer of mutable elements stored contiguously in memory.
 
 

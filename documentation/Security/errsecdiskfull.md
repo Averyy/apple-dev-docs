@@ -1,7 +1,8 @@
 # errSecDiskFull
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The disk is full.
 
@@ -18,6 +19,10 @@ The disk is full.
 
 ```swift
 var errSecDiskFull: OSStatus { get }
+```
+
+```c
+errSecDiskFull
 ```
 
 

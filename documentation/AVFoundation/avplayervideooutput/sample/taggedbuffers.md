@@ -1,7 +1,8 @@
 # taggedBuffers
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of CMTaggedBuffers containing the frame for the specified time.
 
@@ -22,9 +23,10 @@ let taggedBuffers: [CMTaggedDynamicBuffer]
 
 ## See Also
 
-- [let activeConfiguration: AVPlayerVideoOutput.Configuration](avplayervideooutput/sample/activeconfiguration.md)
+### Inspecting a sample
+- [let activeConfiguration: AVPlayerVideoOutput.Configuration](./activeconfiguration.md)
   The active configuration that this sample was derived from.
-- [let presentationTime: CMTime](avplayervideooutput/sample/presentationtime.md)
+- [let presentationTime: CMTime](./presentationtime.md)
   A CMTime representing the true display deadline for this sample in terms of the corresponding AVPlayerItem’s timebase.
 
 

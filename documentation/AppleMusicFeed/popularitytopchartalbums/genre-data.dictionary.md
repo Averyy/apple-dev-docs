@@ -1,7 +1,8 @@
 # PopularityTopChartAlbums.Genre
 
 **Framework**: Apple Music Feed  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A genre name and its structure.
 
@@ -10,7 +11,7 @@ A genre name and its structure.
 
 ## Declaration
 
-```swift
+```
 object PopularityTopChartAlbums.Genre
 ```
 
@@ -18,11 +19,11 @@ object PopularityTopChartAlbums.Genre
 
 Genres are hierarchical beginning with the genre `Music`.
 
-#### Data Example
+#### Data example
 
 The feed export is in Parquet format. This data example is in JSON format for illustrative purposes.
 
-```None
+```
 {
     "genres": {
         "name": "Rock",
@@ -42,7 +43,8 @@ The feed export is in Parquet format. This data example is in JSON format for il
 
 ## See Also
 
-- [object PopularityTopChartAlbums.Rankings](popularitytopchartalbums/rankings-data.dictionary.md)
+### Related objects
+- [object PopularityTopChartAlbums.Rankings](./rankings-data.dictionary.md)
   An album’s ranking in a popularity chart.
 
 

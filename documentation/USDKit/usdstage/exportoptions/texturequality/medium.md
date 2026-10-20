@@ -1,7 +1,8 @@
 # medium
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Further reduces the texture file size. Fine details may not be preserved to reach a small file size.
 

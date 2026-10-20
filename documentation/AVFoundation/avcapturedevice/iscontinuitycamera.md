@@ -1,7 +1,8 @@
 # isContinuityCamera
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the device is a Continuity Camera.
 
@@ -18,17 +19,22 @@ A Boolean value that indicates whether the device is a Continuity Camera.
 var isContinuityCamera: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isContinuityCamera) BOOL continuityCamera;
+```
+
 #### Discussion
 
 Continuity Camera enables you to use the rear camera system of iPhone as an external webcam in macOS.
 
 ## See Also
 
-- [class var systemPreferredCamera: AVCaptureDevice?](avcapturedevice/systempreferredcamera.md)
+### Supporting Continuity Camera
+- [class var systemPreferredCamera: AVCaptureDevice?](./systempreferredcamera.md)
   A camera the system prefers to use for video and photo capture.
-- [class var userPreferredCamera: AVCaptureDevice?](avcapturedevice/userpreferredcamera.md)
+- [class var userPreferredCamera: AVCaptureDevice?](./userpreferredcamera.md)
   A camera the user prefers to use for video and photo capture.
-- [var companionDeskViewCamera: AVCaptureDevice?](avcapturedevice/companiondeskviewcamera.md)
+- [var companionDeskViewCamera: AVCaptureDevice?](./companiondeskviewcamera.md)
   A Desk View camera associated with a device.
 
 

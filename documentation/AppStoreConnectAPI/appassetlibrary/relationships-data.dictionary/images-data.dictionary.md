@@ -1,7 +1,8 @@
 # AppAssetLibrary.Relationships.Images
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The image assets in the asset library.
 
@@ -10,7 +11,7 @@ The image assets in the asset library.
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibrary.Relationships.Images
 ```
 
@@ -20,7 +21,8 @@ object AppAssetLibrary.Relationships.Images
 
 ## See Also
 
-- [object AppAssetLibrary.Relationships.Videos](appassetlibrary/relationships-data.dictionary/videos-data.dictionary.md)
+### Objects
+- [object AppAssetLibrary.Relationships.Videos](./videos-data.dictionary.md)
   The video assets in the asset library.
 
 

@@ -1,7 +1,8 @@
 # SFAuthorizationStartupState
 
 **Framework**: Security Interface  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates that the state is starting up
 
@@ -14,13 +15,18 @@ Indicates that the state is starting up
 var SFAuthorizationStartupState: SFAuthorizationViewState { get }
 ```
 
+```c
+SFAuthorizationStartupState
+```
+
 ## See Also
 
-- [var SFAuthorizationViewInProgressState: SFAuthorizationViewState](sfauthorizationviewinprogressstate.md)
+### Constants
+- [var SFAuthorizationViewInProgressState: SFAuthorizationViewState](./sfauthorizationviewinprogressstate.md)
   Indicates that the state is in progress
-- [var SFAuthorizationViewLockedState: SFAuthorizationViewState](sfauthorizationviewlockedstate.md)
+- [var SFAuthorizationViewLockedState: SFAuthorizationViewState](./sfauthorizationviewlockedstate.md)
   Indicates that the state is locked
-- [var SFAuthorizationViewUnlockedState: SFAuthorizationViewState](sfauthorizationviewunlockedstate.md)
+- [var SFAuthorizationViewUnlockedState: SFAuthorizationViewState](./sfauthorizationviewunlockedstate.md)
   Indicates that the state is unlocked
 
 

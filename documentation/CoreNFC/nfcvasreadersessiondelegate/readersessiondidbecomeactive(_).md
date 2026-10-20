@@ -1,7 +1,8 @@
 # readerSessionDidBecomeActive(_:)
 
 **Framework**: Core NFC  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the reader session is active.
 
@@ -14,6 +15,10 @@ Tells the delegate that the reader session is active.
 
 ```swift
 optional func readerSessionDidBecomeActive(_ session: NFCVASReaderSession)
+```
+
+```objc
+- (void) readerSessionDidBecomeActive:(NFCVASReaderSession *) session;
 ```
 
 #### Discussion

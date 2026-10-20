@@ -1,7 +1,8 @@
 # NSComparisonPredicate.Options
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that describe the possible types of string comparison for comparison predicates.
 
@@ -20,6 +21,10 @@ Constants that describe the possible types of string comparison for comparison p
 struct Options
 ```
 
+```c
+enum NSComparisonPredicateOptions : NSUInteger;
+```
+
 #### Overview
 
 The system supports these options for `LIKE`, as well as all of the equality/comparison operators.
@@ -27,44 +32,45 @@ The system supports these options for `LIKE`, as well as all of the equality/com
 ## Topics
 
 ### Constants
-- [static var caseInsensitive: NSComparisonPredicate.Options](nscomparisonpredicate/options-swift.struct/caseinsensitive.md)
+- [static var caseInsensitive: NSComparisonPredicate.Options](./options-swift.struct/caseinsensitive.md)
   A case-insensitive predicate.
-- [static var diacriticInsensitive: NSComparisonPredicate.Options](nscomparisonpredicate/options-swift.struct/diacriticinsensitive.md)
+- [static var diacriticInsensitive: NSComparisonPredicate.Options](./options-swift.struct/diacriticinsensitive.md)
   A diacritic-insensitive predicate.
-- [static var normalized: NSComparisonPredicate.Options](nscomparisonpredicate/options-swift.struct/normalized.md)
+- [static var normalized: NSComparisonPredicate.Options](./options-swift.struct/normalized.md)
   A predicate that indicates you’ve preprocessed the strings to compare.
 ### Initializers
-- [init(rawValue: UInt)](nscomparisonpredicate/options-swift.struct/init(rawvalue:).md)
+- [init(rawValue: UInt)](./options-swift.struct/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var comparisonPredicateModifier: NSComparisonPredicate.Modifier](nscomparisonpredicate/comparisonpredicatemodifier.md)
+### Getting Information About a Comparison Predicate
+- [var comparisonPredicateModifier: NSComparisonPredicate.Modifier](./comparisonpredicatemodifier.md)
   The comparison predicate modifier for the receiver.
-- [NSComparisonPredicate.Modifier](nscomparisonpredicate/modifier.md)
+- [NSComparisonPredicate.Modifier](./modifier.md)
   Constants that describe the possible types of modifier for a comparison predicate.
-- [var customSelector: Selector?](nscomparisonpredicate/customselector.md)
+- [var customSelector: Selector?](./customselector.md)
   The selector for the receiver.
-- [var rightExpression: NSExpression](nscomparisonpredicate/rightexpression.md)
+- [var rightExpression: NSExpression](./rightexpression.md)
   The right expression for the receiver.
-- [var leftExpression: NSExpression](nscomparisonpredicate/leftexpression.md)
+- [var leftExpression: NSExpression](./leftexpression.md)
   The left expression for the receiver.
-- [var options: NSComparisonPredicate.Options](nscomparisonpredicate/options-swift.property.md)
+- [var options: NSComparisonPredicate.Options](./options-swift.property.md)
   The options to use for the receiver.
-- [var predicateOperatorType: NSComparisonPredicate.Operator](nscomparisonpredicate/predicateoperatortype.md)
+- [var predicateOperatorType: NSComparisonPredicate.Operator](./predicateoperatortype.md)
   The predicate type for the receiver.
-- [NSComparisonPredicate.Operator](nscomparisonpredicate/operator.md)
+- [NSComparisonPredicate.Operator](./operator.md)
   Defines the type of comparison for a comparison predicate.
 
 

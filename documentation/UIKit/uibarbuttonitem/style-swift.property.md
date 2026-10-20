@@ -1,7 +1,8 @@
 # style
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style of the item.
 
@@ -9,7 +10,7 @@ The style of the item.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,23 +19,28 @@ The style of the item.
 var style: UIBarButtonItem.Style { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) UIBarButtonItemStyle style;
+```
+
 #### Discussion
 
-One of the constants defined in [`UIBarButtonItem.Style`](uibarbuttonitem/style-swift.enum.md). The default value is [`UIBarButtonItem.Style.plain`](uibarbuttonitem/style-swift.enum/plain.md).
+One of the constants defined in [`UIBarButtonItem.Style`](./style-swift.enum.md). The default value is [`UIBarButtonItem.Style.plain`](./style-swift.enum/plain.md).
 
 ## See Also
 
-- [UIBarButtonItem.Style](uibarbuttonitem/style-swift.enum.md)
+### Customizing item appearance
+- [UIBarButtonItem.Style](./style-swift.enum.md)
   Constants that specify the style of an item.
-- [var tintColor: UIColor?](uibarbuttonitem/tintcolor.md)
+- [var tintColor: UIColor?](./tintcolor.md)
   The tint color to apply to the button item.
-- [var isHidden: Bool](uibarbuttonitem/ishidden.md)
+- [var isHidden: Bool](./ishidden.md)
   A Boolean that determines the visibility of the item.
-- [var isSelected: Bool](uibarbuttonitem/isselected.md)
+- [var isSelected: Bool](./isselected.md)
   A Boolean value that indicates whether the button is in a selected state.
-- [var width: CGFloat](uibarbuttonitem/width.md)
+- [var width: CGFloat](./width.md)
   The width of the item.
-- [var possibleTitles: Set<String>?](uibarbuttonitem/possibletitles.md)
+- [var possibleTitles: Set<String>?](./possibletitles.md)
   The set of possible titles to display on the bar button.
 
 

@@ -1,7 +1,8 @@
 # segments
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of path levels to preserve when parsing.
 
@@ -25,9 +26,10 @@ Use a value of `0` to keep all path segments.
 
 ## See Also
 
-- [var excluded: Bool](neurlfiltermanager/parsingconfiguration/pathoptions/excluded.md)
+### Working with path options
+- [var excluded: Bool](./excluded.md)
   A Boolean value that indicates whether to exlude the path component from URL parsing.
-- [var enumerateHierarchy: Bool](neurlfiltermanager/parsingconfiguration/pathoptions/enumeratehierarchy.md)
+- [var enumerateHierarchy: Bool](./enumeratehierarchy.md)
   A Boolean value that indicates whether the parser walks the path hierarchy for matching.
 
 

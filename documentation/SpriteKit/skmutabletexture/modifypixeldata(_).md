@@ -1,7 +1,8 @@
 # modifyPixelData(_:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the contents of a mutable texture.
 
@@ -17,14 +18,26 @@ Modifies the contents of a mutable texture.
 ## Declaration
 
 ```swift
+func modifyPixelData(_ block: @escaping @Sendable (UnsafeMutableRawPointer?, Int) -> Void)
+```
+
+```swift
 func modifyPixelData() async -> (UnsafeMutableRawPointer?, Int)
+```
+
+```objc
+- (void) modifyPixelDataWithBlock:(void (^)(void *pixelData, size_t lengthInBytes)) block;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func modifyPixelData() async -> (UnsafeMutableRawPointer?, Int)
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func modifyPixelData() async -> (UnsafeMutableRawPointer?, Int)
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 The contents of the texture can be modified only at specific times when the graphics hardware permits it. When this method is called, it schedules a new background task to update the texture and then returns. Your block is called when the texture can be modified. Your block is called on an arbitrary queue. Your block should modify the texture’s contents and then return.
 
@@ -32,8 +45,10 @@ The texture bytes are assumed to be stored as tightly packed 32 bpp, 8bpc (unsig
 
 ## Parameters
 
-- `block`: A block to be called when the texture can be safely modified. The block takes the following parameters: - **pixelData**: A pointer to the start of the current texture data.
-- **lengthInBytes**: The length of the texture data in bytes.
+- `block`: A block to be called when the texture can be safely modified. The block takes the following parameters:
+
+  - **pixelData**: A pointer to the start of the current texture data.
+  - **lengthInBytes**: The length of the texture data in bytes.
 
 
 ---

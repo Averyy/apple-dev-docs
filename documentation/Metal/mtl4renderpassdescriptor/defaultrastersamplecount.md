@@ -1,7 +1,8 @@
 # defaultRasterSampleCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the default raster sample count for the render pass when it references no attachments.
 
@@ -17,6 +18,10 @@ Sets the default raster sample count for the render pass when it references no a
 
 ```swift
 var defaultRasterSampleCount: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger defaultRasterSampleCount;
 ```
 
 

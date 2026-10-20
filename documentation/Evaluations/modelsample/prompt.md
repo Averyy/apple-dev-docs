@@ -1,7 +1,8 @@
 # prompt
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user’s prompt for this sample.
 
@@ -20,19 +21,22 @@ The user’s prompt for this sample.
 var prompt: Prompt { get }
 ```
 
+Available when `ExpectedValue` conforms to `Decodable`, `Encodable`, and `Sendable`.
+
 ## Mentions
 
-- [Evaluating language model responses](evaluating-language-model-responses.md)
+- [Evaluating language model responses](../evaluating-language-model-responses.md)
 
 ## See Also
 
-- [var promptDescription: String](modelsample/promptdescription.md)
+### Specifying the query
+- [var promptDescription: String](./promptdescription.md)
   A text representation of the prompt, synthesized from its segments.
-- [var instructions: Instructions?](modelsample/instructions.md)
+- [var instructions: Instructions?](./instructions.md)
   Optional instructions providing context to the model for this sample.
-- [var instructionsDescription: String?](modelsample/instructionsdescription.md)
+- [var instructionsDescription: String?](./instructionsdescription.md)
   A text representation of the instructions, synthesized from their segments.
-- [var input: ModelSampleInput](modelsample/input.md)
+- [var input: ModelSampleInput](./input.md)
   The bundled language model input (prompt, instructions, schema).
 
 

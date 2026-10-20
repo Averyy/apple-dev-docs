@@ -1,7 +1,8 @@
 # NSSpringLoadingOptions
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 These constants denote the type of spring-loading behavior configured for the destination object.
 
@@ -14,31 +15,35 @@ These constants denote the type of spring-loading behavior configured for the de
 struct NSSpringLoadingOptions
 ```
 
+```c
+enum NSSpringLoadingOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [static var disabled: NSSpringLoadingOptions](nsspringloadingoptions/disabled.md)
+- [static var disabled: NSSpringLoadingOptions](./nsspringloadingoptions/disabled.md)
   Spring-loading on the destination object is disabled. No spring-loading operations can occur.
-- [static var enabled: NSSpringLoadingOptions](nsspringloadingoptions/enabled.md)
+- [static var enabled: NSSpringLoadingOptions](./nsspringloadingoptions/enabled.md)
   Spring-loading on the destination object is enabled. The user can drag an object over a destination object and hover or force click to initiate spring-loading and activate the destination object. When initiated by a force click, spring-loading is invoked once the force click is released.
-- [static var continuousActivation: NSSpringLoadingOptions](nsspringloadingoptions/continuousactivation.md)
+- [static var continuousActivation: NSSpringLoadingOptions](./nsspringloadingoptions/continuousactivation.md)
   Spring-loading on the destination object is enabled. The user can drag an object over a destination object and hover or force click to initiate spring-loading and activate the destination object. When initiated by a force click, spring-loading is invoked once the force click begins and deactivated when the force click is released. When initiated by hovering, spring-loading is invoked at the hover timeout and deactivated when the drag exits the destination object. Use this constant sparingly.
-- [static var noHover: NSSpringLoadingOptions](nsspringloadingoptions/nohover.md)
+- [static var noHover: NSSpringLoadingOptions](./nsspringloadingoptions/nohover.md)
   Spring-loading on the destination object is enabled, but cannot be invoked by hovering. The user can drag an object over a destination object and force click to initiate spring-loading and activate the destination object. This option may be useful in situations where a long hover, such as dragging across a large destination object, initiates undesired spring-loading. Use this constant sparingly.
 ### Initializers
-- [init(rawValue: UInt)](nsspringloadingoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./nsspringloadingoptions/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

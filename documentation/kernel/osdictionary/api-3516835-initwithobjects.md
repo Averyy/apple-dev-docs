@@ -1,14 +1,15 @@
 # initWithObjects
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.2+
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool initWithObjects(const OSObject *objects[], const OSString *keys[], unsigned int count, unsigned int capacity);
 ```
 

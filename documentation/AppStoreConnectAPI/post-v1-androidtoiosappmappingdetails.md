@@ -1,7 +1,8 @@
 # Create an Android to iOS App Mapping Detail
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Create a detail that maps an Android app to an iOS app.
 
@@ -10,19 +11,35 @@ Create a detail that maps an Android app to an iOS app.
 
 ## Mentions
 
-- [App Store Connect API 4.2 release notes](app-store-connect-api-4-2-release-notes.md)
+- [App Store Connect API 4.2 release notes](./app-store-connect-api-4-2-release-notes.md)
 
 ## Endpoint
 
 `POST https://api.appstoreconnect.apple.com/v1/androidToIosAppMappingDetails`
 
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `AndroidToIosAppMappingDetailCreateRequest`
+
+## Responses
+
+- `201` Created (`AndroidToIosAppMappingDetailResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `409` Conflict (`ErrorResponse`, `application/json`)
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
+
 ## See Also
 
-- [Read Android to iOS App Mapping Details](get-v1-androidtoiosappmappingdetails-_id_.md)
+### Managing Mapping Details
+- [Read Android to iOS App Mapping Details](./get-v1-androidtoiosappmappingdetails-_id_.md)
   Get information about a specific android to iOS app mapping detail.
-- [Modify an Android to iOS App Mapping Detail](patch-v1-androidtoiosappmappingdetails-_id_.md)
+- [Modify an Android to iOS App Mapping Detail](./patch-v1-androidtoiosappmappingdetails-_id_.md)
   Update an Android to iOS app mapping detail.
-- [Delete an Android to iOS Mapping Detail](delete-v1-androidtoiosappmappingdetails-_id_.md)
+- [Delete an Android to iOS Mapping Detail](./delete-v1-androidtoiosappmappingdetails-_id_.md)
   Remove a specific Android to iOS mapping detail.
 
 

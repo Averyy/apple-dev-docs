@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a custom horizontal alignment of the specified type.
 
@@ -22,7 +23,7 @@ init(_ id: any AlignmentID.Type)
 
 #### Discussion
 
-Use this initializer to create a custom horizontal alignment. Define an [`AlignmentID`](alignmentid.md) type, and then use that type to create a new static property on [`HorizontalAlignment`](horizontalalignment.md):
+Use this initializer to create a custom horizontal alignment. Define an [`AlignmentID`](../alignmentid.md) type, and then use that type to create a new static property on [`HorizontalAlignment`](../horizontalalignment.md):
 
 ```swift
 private struct OneQuarterAlignment: AlignmentID {
@@ -36,7 +37,7 @@ extension HorizontalAlignment {
 }
 ```
 
-Every horizontal alignment instance that you create needs a unique identifier. For more information, see [`AlignmentID`](alignmentid.md).
+Every horizontal alignment instance that you create needs a unique identifier. For more information, see [`AlignmentID`](../alignmentid.md).
 
 ## Parameters
 
@@ -44,7 +45,8 @@ Every horizontal alignment instance that you create needs a unique identifier. F
 
 ## See Also
 
-- [func combineExplicit<S>(S) -> CGFloat?](horizontalalignment/combineexplicit(_:).md)
+### Creating a custom alignment
+- [func combineExplicit<S>(S) -> CGFloat?](./combineexplicit%28_%29.md)
   Merges a sequence of explicit alignment values produced by this instance.
 
 

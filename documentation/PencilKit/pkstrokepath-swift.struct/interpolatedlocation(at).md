@@ -1,7 +1,8 @@
 # interpolatedLocation(at:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the on-curve point for the floating point parametric value.
 
@@ -20,7 +21,7 @@ func interpolatedLocation(at parametricValue: CGFloat) -> CGPoint
 
 #### Return Value
 
-A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) interpolated from the supplied `parametricValue`.
+A [`CGPoint`](../../CoreFoundation/cgpoint.md) interpolated from the supplied `parametricValue`.
 
 ## Parameters
 
@@ -28,11 +29,12 @@ A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) 
 
 ## See Also
 
-- [func interpolatedPoints(in: ClosedRange<CGFloat>?, by: PKStrokePath.InterpolatedSlice.Stride) -> PKStrokePath.InterpolatedSlice](pkstrokepath-swift.struct/interpolatedpoints(in:by:).md)
+### Accessing and interpolating points
+- [func interpolatedPoints(in: ClosedRange<CGFloat>?, by: PKStrokePath.InterpolatedSlice.Stride) -> PKStrokePath.InterpolatedSlice](./interpolatedpoints%28in,by%29.md)
   Returns the slice on-curve points using the floating point range and stride that you specify.
-- [func interpolatedPoint(at: CGFloat) -> PKStrokePoint](pkstrokepath-swift.struct/interpolatedpoint(at:).md)
+- [func interpolatedPoint(at: CGFloat) -> PKStrokePoint](./interpolatedpoint%28at%29.md)
   Returns the on-curve point for the provided floating point parameter.
-- [func parametricValue(CGFloat, offsetBy: PKStrokePath.InterpolatedSlice.Stride) -> CGFloat](pkstrokepath-swift.struct/parametricvalue(_:offsetby:).md)
+- [func parametricValue(CGFloat, offsetBy: PKStrokePath.InterpolatedSlice.Stride) -> CGFloat](./parametricvalue%28_,offsetby%29.md)
 
 
 ---

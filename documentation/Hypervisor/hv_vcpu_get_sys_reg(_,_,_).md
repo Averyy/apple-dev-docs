@@ -1,7 +1,8 @@
 # hv_vcpu_get_sys_reg(_:_:_:)
 
 **Framework**: Hypervisor  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets the current value of a vCPU system register.
 
@@ -14,9 +15,13 @@ Gets the current value of a vCPU system register.
 func hv_vcpu_get_sys_reg(_ vcpu: hv_vcpu_t, _ reg: hv_sys_reg_t, _ value: UnsafeMutablePointer<UInt64>) -> hv_return_t
 ```
 
+```c
+extern hv_return_t hv_vcpu_get_sys_reg(hv_vcpu_t vcpu, hv_sys_reg_t reg, uint64_t *value);
+```
+
 #### Return Value
 
-[`HV_SUCCESS`](hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](hv_return_t.md).
+[`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 
 #### Discussion
 
@@ -30,9 +35,10 @@ func hv_vcpu_get_sys_reg(_ vcpu: hv_vcpu_t, _ reg: hv_sys_reg_t, _ value: Unsafe
 
 ## See Also
 
-- [func hv_vcpu_set_sys_reg(hv_vcpu_t, hv_sys_reg_t, UInt64) -> hv_return_t](hv_vcpu_set_sys_reg(_:_:_:).md)
+### System registers
+- [func hv_vcpu_set_sys_reg(hv_vcpu_t, hv_sys_reg_t, UInt64) -> hv_return_t](./hv_vcpu_set_sys_reg%28_,_,_%29.md)
   Sets the value of a vCPU system register.
-- [struct hv_sys_reg_t](hv_sys_reg_t.md)
+- [struct hv_sys_reg_t](./hv_sys_reg_t.md)
   The type of system registers.
 
 

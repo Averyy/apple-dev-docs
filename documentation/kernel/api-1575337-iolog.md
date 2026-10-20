@@ -1,7 +1,8 @@
 # IOLog
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Log a message to console in text mode, and /var/log/system.log.
 
@@ -11,7 +12,15 @@ Log a message to console in text mode, and /var/log/system.log.
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```c
+int IOLog(const char *format, ...);
+```
+
+*macOS*
+
+```c
 void IOLog(const char *format, ...);
 ```
 
@@ -26,14 +35,15 @@ This function allows a driver to log diagnostic information to the screen during
 
 ## See Also
 
-- [OS_os_log](os_os_log.md)
-- [IOLogv](1575323-iologv.md)
+### Logging
+- [OS_os_log](./os_os_log.md)
+- [IOLogv](./api-1575323-iologv.md)
   Log a message to console in text mode, and /var/log/system.log.
-- [os_log_create](1643798-os_log_create.md)
+- [os_log_create](./api-1643798-os_log_create.md)
   Creates a custom log object, to be passed to logging functions for sending messages to the logging system.
-- [os_log_debug_enabled](1643808-os_log_debug_enabled.md)
+- [os_log_debug_enabled](./api-1643808-os_log_debug_enabled.md)
   Returns a Boolean value indicating whether debug-level logging is enabled for a specified log object.
-- [os_log_info_enabled](1643817-os_log_info_enabled.md)
+- [os_log_info_enabled](./api-1643817-os_log_info_enabled.md)
   Returns a Boolean value indicating whether info-level logging is enabled for a specified log object.
 
 

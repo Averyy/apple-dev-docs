@@ -1,7 +1,8 @@
 # searchDirection
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The direction to search for an item result.
 
@@ -14,9 +15,14 @@ The direction to search for an item result.
 var searchDirection: NSAccessibilityCustomRotor.SearchDirection { get set }
 ```
 
+```objc
+@property NSAccessibilityCustomRotorSearchDirection searchDirection;
+```
+
 ## See Also
 
-- [NSAccessibilityCustomRotor.SearchDirection](nsaccessibilitycustomrotor/searchdirection.md)
+### Specifying Search Direction
+- [NSAccessibilityCustomRotor.SearchDirection](../searchdirection.md)
   Constants that describe the direction to search for an item result.
 
 

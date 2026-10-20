@@ -1,7 +1,8 @@
 # zoneGroup(for:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the current zone group for the specified quantity type.
 
@@ -33,7 +34,8 @@ This method provides real-time zone duration calculations during an active worko
 
 ## See Also
 
-- [var zoneGroupsByType: [HKQuantityType : HKWorkoutZoneGroup]?](hkworkout/zonegroupsbytype.md)
+### Accessing zone data
+- [var zoneGroupsByType: [HKQuantityType : HKWorkoutZoneGroup]?](./zonegroupsbytype.md)
   A property that contains a dictionary that maps quantity types to their zone groups for this workout.
 
 

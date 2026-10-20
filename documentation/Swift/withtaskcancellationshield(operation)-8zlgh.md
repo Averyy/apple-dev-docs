@@ -1,7 +1,8 @@
 # withTaskCancellationShield(operation:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Enters a scope in which a task cancellation shield is active.
 
@@ -86,9 +87,10 @@ await withTaskGroup(of: Void.self) { group in
 
 ## See Also
 
-- [static var hasActiveCancellationShield: Bool](task/hasactivecancellationshield.md)
+### Shielding Tasks from Cancellation
+- [static var hasActiveCancellationShield: Bool](./task/hasactivecancellationshield.md)
   Checks if the current task is executing in a scope with a task cancellation shield activated by the `withTaskCancellationShield(operation:)-(()->Value)` function.
-- [func withTaskCancellationShield<Value, Failure>(operation: () throws(Failure) -> Value) throws(Failure) -> Value](withtaskcancellationshield(operation:)-2lzl8.md)
+- [func withTaskCancellationShield<Value, Failure>(operation: () throws(Failure) -> Value) throws(Failure) -> Value](./withtaskcancellationshield%28operation%29-2lzl8.md)
   Enters a scope in which a task cancellation shield is active.
 
 

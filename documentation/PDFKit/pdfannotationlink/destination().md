@@ -1,12 +1,13 @@
 # destination()
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the destination for the link when the destination was specified as a PDFDestination object.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
@@ -14,13 +15,18 @@ Gets the destination for the link when the destination was specified as a PDFDes
 func destination() -> PDFDestination!
 ```
 
+```objc
+- (PDFDestination *) destination;
+```
+
 ## See Also
 
-- [func setDestination(PDFDestination!)](pdfannotationlink/setdestination(_:).md)
+### Working with link destinations
+- [func setDestination(PDFDestination!)](./setdestination%28_%29.md)
   Sets the destination for the link as a PDFDestination object.
-- [func url() -> URL!](pdfannotationlink/url.md)
+- [func url() -> URL!](./url%28%29.md)
   Gets the destination for the link when the destination was specified as a URL.
-- [func setURL(URL!)](pdfannotationlink/seturl(_:).md)
+- [func setURL(URL!)](./seturl%28_%29.md)
   Sets the destination for the link as a URL.
 
 

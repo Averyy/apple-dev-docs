@@ -1,7 +1,8 @@
 # videoGravity
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that specifies how the video displays within the bounds of the view controller’s view.
 
@@ -18,23 +19,28 @@ A string that specifies how the video displays within the bounds of the view con
 var videoGravity: AVLayerVideoGravity { get set }
 ```
 
+```objc
+@property (nonatomic, copy) AVLayerVideoGravity videoGravity;
+```
+
 #### Discussion
 
-The player view controller supports the following video gravity values: [`resizeAspect`](https://developer.apple.com/documentation/avfoundation/avlayervideogravity/resizeaspect), [`resizeAspectFill`](https://developer.apple.com/documentation/avfoundation/avlayervideogravity/resizeaspectfill), and [`resize`](https://developer.apple.com/documentation/avfoundation/avlayervideogravity/resize).
+The player view controller supports the following video gravity values: [`resizeAspect`](../../AVFoundation/avlayervideogravity/resizeaspect.md), [`resizeAspectFill`](../../AVFoundation/avlayervideogravity/resizeaspectfill.md), and [`resize`](../../AVFoundation/avlayervideogravity/resize.md).
 
-The default value is [`resizeAspect`](https://developer.apple.com/documentation/avfoundation/avlayervideogravity/resizeaspect).
+The default value is [`resizeAspect`](../../AVFoundation/avlayervideogravity/resizeaspect.md).
 
 ## See Also
 
-- [var showsPlaybackControls: Bool](avplayerviewcontroller/showsplaybackcontrols.md)
+### Configuring presentation
+- [var showsPlaybackControls: Bool](./showsplaybackcontrols.md)
   A Boolean value that indicates whether the player view controller shows playback controls.
-- [var contentOverlayView: UIView?](avplayerviewcontroller/contentoverlayview.md)
+- [var contentOverlayView: UIView?](./contentoverlayview.md)
   A view that displays between the video content and the playback controls.
-- [var videoBounds: CGRect](avplayerviewcontroller/videobounds.md)
+- [var videoBounds: CGRect](./videobounds.md)
   The size and position of the video image within the bounds of the view controller’s view.
-- [var showsTimecodes: Bool](avplayerviewcontroller/showstimecodes.md)
+- [var showsTimecodes: Bool](./showstimecodes.md)
   A Boolean value that determines whether the player view displays timecodes, if available.
-- [var appliesPreferredDisplayCriteriaAutomatically: Bool](avplayerviewcontroller/appliespreferreddisplaycriteriaautomatically.md)
+- [var appliesPreferredDisplayCriteriaAutomatically: Bool](./appliespreferreddisplaycriteriaautomatically.md)
   A Boolean value that indicates whether the view controller automatically sets the screen’s display criteria to match that of the currently playing asset.
 
 

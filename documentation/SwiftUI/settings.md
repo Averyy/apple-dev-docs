@@ -1,7 +1,8 @@
 # Settings
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A scene that presents an interface for viewing and modifying an app’s settings.
 
@@ -17,12 +18,12 @@ struct Settings<Content> where Content : View
 
 ## Mentions
 
-- [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
-- [Declaring a custom view](declaring-a-custom-view.md)
+- [Building and customizing the menu bar with SwiftUI](./building-and-customizing-the-menu-bar-with-swiftui.md)
+- [Declaring a custom view](./declaring-a-custom-view.md)
 
 #### Overview
 
-Use a settings scene to have SwiftUI manage views with controls for your app’s settings when you declare your app using the [`App`](app.md) protocol. When you use an [`App`](app.md) declaration for multiple platforms, compile the settings scene only in macOS:
+Use a settings scene to have SwiftUI manage views with controls for your app’s settings when you declare your app using the [`App`](./app.md) protocol. When you use an [`App`](./app.md) declaration for multiple platforms, compile the settings scene only in macOS:
 
 ```swift
 @main
@@ -40,11 +41,11 @@ struct MyApp: App {
 }
 ```
 
-Passing a view as the argument to a settings scene in the [`App`](app.md) declaration causes SwiftUI to enable the app’s Settings menu item. SwiftUI manages displaying and removing the settings view when the user selects the Settings item from the application menu or the equivalent keyboard shortcut:
+Passing a view as the argument to a settings scene in the [`App`](./app.md) declaration causes SwiftUI to enable the app’s Settings menu item. SwiftUI manages displaying and removing the settings view when the user selects the Settings item from the application menu or the equivalent keyboard shortcut:
 
-![A screenshot of the MyApp application menu, showing the active](/images/com.apple.SwiftUI/SwiftUI-AppBehavior-Settings-AppMenu@2x.png)
+![A screenshot of the MyApp application menu, showing the active](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-AppBehavior-Settings-AppMenu@2x.png)
 
-The contents of your settings view are controls that modify bindings to [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults) values that SwiftUI manages using the [`AppStorage`](appstorage.md) property wrapper:
+The contents of your settings view are controls that modify bindings to [`UserDefaults`](../Foundation/userdefaults.md) values that SwiftUI manages using the [`AppStorage`](./appstorage.md) property wrapper:
 
 ```swift
 struct GeneralSettingsView: View {
@@ -62,7 +63,7 @@ struct GeneralSettingsView: View {
 }
 ```
 
-You can define your settings in a single view, or you can use a [`TabView`](tabview.md) to group settings into different collections:
+You can define your settings in a single view, or you can use a [`TabView`](./tabview.md) to group settings into different collections:
 
 ```swift
 struct SettingsView: View {
@@ -81,26 +82,27 @@ struct SettingsView: View {
 }
 ```
 
-![A screenshot showing a tabbed application settings view containing a](/images/com.apple.SwiftUI/SwiftUI-AppBehavior-Settings@2x.png)
+![A screenshot showing a tabbed application settings view containing a](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-AppBehavior-Settings@2x.png)
 
 ## Topics
 
 ### Creating a settings scene
-- [init(content: () -> Content)](settings/init(content:).md)
+- [init(content: () -> Content)](./settings/init%28content%29.md)
   Creates a scene that presents an interface for viewing and modifying an app’s preferences.
 
 ## Relationships
 
 ### Conforms To
-- [Scene](scene.md)
+- [Scene](./scene.md)
 
 ## See Also
 
-- [struct SettingsLink](settingslink.md)
+### Managing a settings window
+- [struct SettingsLink](./settingslink.md)
   A view that opens the Settings scene defined by an app.
-- [struct OpenSettingsAction](opensettingsaction.md)
+- [struct OpenSettingsAction](./opensettingsaction.md)
   An action that presents the settings scene for an app.
-- [var openSettings: OpenSettingsAction](environmentvalues/opensettings.md)
+- [var openSettings: OpenSettingsAction](./environmentvalues/opensettings.md)
   A Settings presentation action stored in a view’s environment.
 
 

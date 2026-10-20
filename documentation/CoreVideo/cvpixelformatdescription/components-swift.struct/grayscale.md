@@ -1,7 +1,8 @@
 # grayscale
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Format contains grayscale color data.
 

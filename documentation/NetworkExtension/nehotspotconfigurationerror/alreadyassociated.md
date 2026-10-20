@@ -1,7 +1,8 @@
 # NEHotspotConfigurationError.alreadyAssociated
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The configuration is already associated with the hotspot.
 
@@ -18,37 +19,42 @@ The configuration is already associated with the hotspot.
 case alreadyAssociated
 ```
 
+```c
+NEHotspotConfigurationErrorAlreadyAssociated
+```
+
 ## See Also
 
-- [NEHotspotConfigurationError.invalid](nehotspotconfigurationerror/invalid.md)
+### Errors
+- [NEHotspotConfigurationError.invalid](./invalid.md)
   The configuration is not valid.
-- [NEHotspotConfigurationError.invalidSSID](nehotspotconfigurationerror/invalidssid.md)
+- [NEHotspotConfigurationError.invalidSSID](./invalidssid.md)
   The SSID value is not valid.
-- [NEHotspotConfigurationError.invalidWPAPassphrase](nehotspotconfigurationerror/invalidwpapassphrase.md)
+- [NEHotspotConfigurationError.invalidWPAPassphrase](./invalidwpapassphrase.md)
   The WPA passphrase is not valid.
-- [NEHotspotConfigurationError.invalidWEPPassphrase](nehotspotconfigurationerror/invalidweppassphrase.md)
+- [NEHotspotConfigurationError.invalidWEPPassphrase](./invalidweppassphrase.md)
   The WEP passphrase is not valid.
-- [NEHotspotConfigurationError.invalidEAPSettings](nehotspotconfigurationerror/invalideapsettings.md)
+- [NEHotspotConfigurationError.invalidEAPSettings](./invalideapsettings.md)
   EAP settings are not valid.
-- [NEHotspotConfigurationError.invalidHS20Settings](nehotspotconfigurationerror/invalidhs20settings.md)
+- [NEHotspotConfigurationError.invalidHS20Settings](./invalidhs20settings.md)
   The HS 2.0 settings are not valid.
-- [NEHotspotConfigurationError.invalidHS20DomainName](nehotspotconfigurationerror/invalidhs20domainname.md)
+- [NEHotspotConfigurationError.invalidHS20DomainName](./invalidhs20domainname.md)
   The HS 2.0 domain name is not valid.
-- [NEHotspotConfigurationError.invalidSSIDPrefix](nehotspotconfigurationerror/invalidssidprefix.md)
+- [NEHotspotConfigurationError.invalidSSIDPrefix](./invalidssidprefix.md)
   The SSID prefix used to create the hotspot configuration is invalid.
-- [NEHotspotConfigurationError.userDenied](nehotspotconfigurationerror/userdenied.md)
+- [NEHotspotConfigurationError.userDenied](./userdenied.md)
   The user has refused the network configuration.
-- [NEHotspotConfigurationError.internal](nehotspotconfigurationerror/internal.md)
+- [NEHotspotConfigurationError.internal](./internal.md)
   Internal error, otherwise undefined.
-- [NEHotspotConfigurationError.pending](nehotspotconfigurationerror/pending.md)
+- [NEHotspotConfigurationError.pending](./pending.md)
   The network configuration action has not completed.
-- [NEHotspotConfigurationError.systemConfiguration](nehotspotconfigurationerror/systemconfiguration.md)
+- [NEHotspotConfigurationError.systemConfiguration](./systemconfiguration.md)
   The system configuration is not valid.
-- [NEHotspotConfigurationError.unknown](nehotspotconfigurationerror/unknown.md)
+- [NEHotspotConfigurationError.unknown](./unknown.md)
   An unknown error has occurred.
-- [NEHotspotConfigurationError.joinOnceNotSupported](nehotspotconfigurationerror/joinoncenotsupported.md)
+- [NEHotspotConfigurationError.joinOnceNotSupported](./joinoncenotsupported.md)
   The join-once option isn’t support for EAP configuration.
-- [NEHotspotConfigurationError.applicationIsNotInForeground](nehotspotconfigurationerror/applicationisnotinforeground.md)
+- [NEHotspotConfigurationError.applicationIsNotInForeground](./applicationisnotinforeground.md)
   The application is not running in the foreground.
 
 

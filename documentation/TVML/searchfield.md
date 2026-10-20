@@ -33,34 +33,35 @@ The `searchField` element creates a text field for user input. Different keyboar
 </searchTemplate>
 ```
 
-##### Contained in
+##### Contained In
 
-- [`searchTemplate`](searchtemplate.md)
-- [`stackTemplate`](stacktemplate.md)
+- [searchTemplate](./searchtemplate.md)
+- [stackTemplate](./stacktemplate.md)
 
 ## Topics
 
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [keyboardType](keyboardtype.md)
+- [keyboardType](./keyboardtype.md)
   Specifies the keyboard to display.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [showSpinner](showspinner.md)
+- [showSpinner](./showspinner.md)
   Displays a rotating spinner icon inside of a search field.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [asset](asset.md)
+### Multimedia Elements
+- [asset](./asset.md)
   Contains information about where a media item is stored.
-- [relatedContentURL](relatedcontenturl.md)
+- [relatedContentURL](./relatedcontenturl.md)
   Contains the URL for the displayed content.
-- [textField](textfield.md)
+- [textField](./textfield.md)
   Displays a text field the user can interact with.
-- [mediaContent](mediacontent.md)
+- [mediaContent](./mediacontent.md)
   Contains information used to play inline audio or video.
 
 

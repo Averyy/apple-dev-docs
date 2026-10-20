@@ -1,7 +1,8 @@
 # GroupElementsOfContent
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Transforms the subviews of a given view into a resulting content view.
 
@@ -28,15 +29,16 @@ You don’t use this type directly. Instead SwiftUI creates this type on your be
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [Creating custom container views](creating-custom-container-views.md)
+### Grouping views into a container
+- [Creating custom container views](./creating-custom-container-views.md)
   Access individual subviews to compose flexible container views.
-- [struct Group](group.md)
+- [struct Group](./group.md)
   A type that collects multiple instances of a content type — like views, scenes, or commands — into a single unit.
-- [struct GroupSectionsOfContent](groupsectionsofcontent.md)
+- [struct GroupSectionsOfContent](./groupsectionsofcontent.md)
   Transforms the sections of a given view into a resulting content view.
 
 

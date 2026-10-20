@@ -1,7 +1,8 @@
 # ssidData
 
 **Framework**: Core WLAN  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The service set identifier (SSID).
 
@@ -14,9 +15,14 @@ The service set identifier (SSID).
 var ssidData: Data? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSData * ssidData;
+```
+
 ## See Also
 
-- [var security: CWSecurity](cwmutablenetworkprofile/security.md)
+### Configuring Network Profiles
+- [var security: CWSecurity](./security.md)
   The security type.
 
 

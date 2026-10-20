@@ -1,7 +1,8 @@
 # CMTimeRangeMake(start:duration:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a valid time range with a start time and duration.
 
@@ -20,6 +21,10 @@ Creates a valid time range with a start time and duration.
 func CMTimeRangeMake(start: CMTime, duration: CMTime) -> CMTimeRange
 ```
 
+```c
+extern CMTimeRange CMTimeRangeMake(CMTime start, CMTime duration);
+```
+
 #### Return Value
 
 A valid time range structure, or an invalid time range if the duration’s epoch isn’t `0`.
@@ -31,9 +36,10 @@ A valid time range structure, or an invalid time range if the duration’s epoch
 
 ## See Also
 
-- [func CMTimeRangeMakeFromDictionary(CFDictionary) -> CMTimeRange](cmtimerangemakefromdictionary(_:).md)
+### Creating Time Ranges
+- [func CMTimeRangeMakeFromDictionary(CFDictionary) -> CMTimeRange](./cmtimerangemakefromdictionary%28_%29.md)
   Creates a time range from a dictionary representation of its fields.
-- [func CMTimeRangeFromTimeToTime(start: CMTime, end: CMTime) -> CMTimeRange](cmtimerangefromtimetotime(start:end:).md)
+- [func CMTimeRangeFromTimeToTime(start: CMTime, end: CMTime) -> CMTimeRange](./cmtimerangefromtimetotime%28start,end%29.md)
   Creates a valid time range from a start and end time.
 
 

@@ -1,7 +1,8 @@
 # MLShapedArrayRangeExpression
 
 **Framework**: Core ML  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface for a range expression, which you typically use with subscripts of shaped array types.
 
@@ -23,16 +24,17 @@ protocol MLShapedArrayRangeExpression
 ## Topics
 
 ### Generating relative ranges
-- [func relative(toShapedArrayAxis: Range<Int>) -> Range<Int>](mlshapedarrayrangeexpression/relative(toshapedarrayaxis:).md)
+- [func relative(toShapedArrayAxis: Range<Int>) -> Range<Int>](./mlshapedarrayrangeexpression/relative%28toshapedarrayaxis%29.md)
   Returns the range of indices the range expression describes within a collection.
 
 ## See Also
 
-- [associatedtype Scalar : MLShapedArrayScalar](mlshapedarrayprotocol/scalar-swift.associatedtype.md)
+### Supporting types
+- [associatedtype Scalar : MLShapedArrayScalar](./mlshapedarrayprotocol/scalar-swift.associatedtype.md)
   Represents the underlying scalar type of the shaped array type.
-- [struct MLShapedArraySlice](mlshapedarrayslice.md)
+- [struct MLShapedArraySlice](./mlshapedarrayslice.md)
   A multidimensional subset of elements from a shaped array type.
-- [protocol MLShapedArrayScalar](mlshapedarrayscalar.md)
+- [protocol MLShapedArrayScalar](./mlshapedarrayscalar.md)
   A type that associates a scalar with a shaped array.
 
 

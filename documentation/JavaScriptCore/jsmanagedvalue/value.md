@@ -1,7 +1,8 @@
 # value
 
 **Framework**: JavaScriptCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The managed value’s underlying JavaScript value.
 
@@ -17,6 +18,10 @@ The managed value’s underlying JavaScript value.
 
 ```swift
 var value: JSValue! { get }
+```
+
+```objc
+@property (strong, readonly) JSValue * value;
 ```
 
 #### Discussion

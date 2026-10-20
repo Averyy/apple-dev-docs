@@ -1,7 +1,8 @@
 # errSecMobileMeRequestAlreadyPending
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A MobileMe request is already pending.
 
@@ -18,6 +19,10 @@ A MobileMe request is already pending.
 
 ```swift
 var errSecMobileMeRequestAlreadyPending: OSStatus { get }
+```
+
+```c
+errSecMobileMeRequestAlreadyPending
 ```
 
 

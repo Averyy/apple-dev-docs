@@ -1,7 +1,8 @@
 # referenceNode
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The node whose coordinate system should be used to apply the constraint.
 
@@ -10,7 +11,7 @@ The node whose coordinate system should be used to apply the constraint.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ The node whose coordinate system should be used to apply the constraint.
 
 ```swift
 var referenceNode: SKNode? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) SKNode * referenceNode;
 ```
 
 #### Discussion

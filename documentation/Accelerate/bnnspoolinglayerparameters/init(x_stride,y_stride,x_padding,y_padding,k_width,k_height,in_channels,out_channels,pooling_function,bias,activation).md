@@ -1,18 +1,19 @@
 # init(x_stride:y_stride:x_padding:y_padding:k_width:k_height:in_channels:out_channels:pooling_function:bias:activation:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new pooling layer parameters structure
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 13.1+
-- macOS 10.12+
-- tvOS 10.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 10.0+ - Deprecated in 14.0 (renamed: BNNSLayerParametersPooling)
+- iPadOS 10.0+ - Deprecated in 14.0 (renamed: BNNSLayerParametersPooling)
+- Mac Catalyst 13.1+ - Deprecated in 14.0 (renamed: BNNSLayerParametersPooling)
+- macOS 10.12+ - Deprecated in 11.0 (renamed: BNNSLayerParametersPooling)
+- tvOS 10.0+ - Deprecated in 14.0 (renamed: BNNSLayerParametersPooling)
+- visionOS 1.0+ - Deprecated in 1.0 (renamed: BNNSLayerParametersPooling)
+- watchOS 3.0+ - Deprecated in 7.0 (renamed: BNNSLayerParametersPooling)
 
 ## Declaration
 
@@ -36,8 +37,9 @@ init(x_stride: Int, y_stride: Int, x_padding: Int, y_padding: Int, k_width: Int,
 
 ## See Also
 
-- [init()](bnnspoolinglayerparameters/init.md)
-- [init(x_stride: Int, y_stride: Int, x_padding: Int, y_padding: Int, k_width: Int, k_height: Int, in_channels: Int, out_channels: Int, pooling_function: BNNSPoolingFunction)](bnnspoolinglayerparameters/init(x_stride:y_stride:x_padding:y_padding:k_width:k_height:in_channels:out_channels:pooling_function:).md)
+### Initializers
+- [init()](./init%28%29.md)
+- [init(x_stride: Int, y_stride: Int, x_padding: Int, y_padding: Int, k_width: Int, k_height: Int, in_channels: Int, out_channels: Int, pooling_function: BNNSPoolingFunction)](./init%28x_stride,y_stride,x_padding,y_padding,k_width,k_height,in_channels,out_channels,pooling_function%29.md)
 
 
 ---

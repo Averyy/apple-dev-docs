@@ -1,7 +1,8 @@
 # CFNetServiceMonitorClientCallBack
 
 **Framework**: CFNetwork  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Defines a pointer to the callback function that is to be called when a monitored record type changes.
 
@@ -19,33 +20,38 @@ Defines a pointer to the callback function that is to be called when a monitored
 typealias CFNetServiceMonitorClientCallBack = (CFNetServiceMonitor, CFNetService?, CFNetServiceMonitorType, CFData?, UnsafeMutablePointer<CFStreamError>?, UnsafeMutableRawPointer?) -> Void
 ```
 
+```c
+typedef void (*)(struct __CFNetServiceMonitor *, struct __CFNetService *, enum CFNetServiceMonitorType, const struct __CFData *, CFStreamError *, void *) CFNetServiceMonitorClientCallBack;
+```
+
 #### Discussion
 
 If you name your callback `MyNetServiceMonitorClientCallBack`, you would declare it like this:
 
 ##### Discussion
 
-The callback function will be called when the monitored record type changes or when the monitor is stopped by calling [`CFNetServiceMonitorStop(_:_:)`](cfnetservicemonitorstop(_:_:).md).
+The callback function will be called when the monitored record type changes or when the monitor is stopped by calling [`CFNetServiceMonitorStop(_:_:)`](./cfnetservicemonitorstop%28_,_%29.md).
 
 ## Parameters
 
 - `theMonitor`: CFNetServiceMonitor for which the callback is being called.
 - `theService`: CFNetService for which the callback is being called.
-- `typeInfo`: Type of record that changed. For possible values, see [`CFNetServiceMonitorType`](cfnetservicemonitortype.md).
+- `typeInfo`: Type of record that changed. For possible values, see [`CFNetServiceMonitorType`](./cfnetservicemonitortype.md).
 - `rdata`: Contents of the record that changed.
-- `error`: Pointer to [`CFStreamError`](https://developer.apple.com/documentation/corefoundation/cfstreamerror) structure whose `error` field contains an error code if an error occurred.
-- `info`: Arbitrary pointer to the user-defined data that was specified in the `info` field of the `CFNetServiceClientContext` structure when the monitor was created by [`CFNetServiceMonitorCreate(_:_:_:_:)`](cfnetservicemonitorcreate(_:_:_:_:).md).
+- `error`: Pointer to [`CFStreamError`](../CoreFoundation/cfstreamerror.md) structure whose `error` field contains an error code if an error occurred.
+- `info`: Arbitrary pointer to the user-defined data that was specified in the `info` field of the `CFNetServiceClientContext` structure when the monitor was created by [`CFNetServiceMonitorCreate(_:_:_:_:)`](./cfnetservicemonitorcreate%28_,_,_,_%29.md).
 
 ## See Also
 
-- [typealias CFHostClientCallBack](cfhostclientcallback.md)
+### Data Types
+- [typealias CFHostClientCallBack](./cfhostclientcallback.md)
   Defines a pointer to the callback function that is called when an asynchronous resolution of a CFHost completes or an error occurs for an asynchronous CFHost resolution.
-- [typealias CFNetServiceBrowserClientCallBack](cfnetservicebrowserclientcallback.md)
+- [typealias CFNetServiceBrowserClientCallBack](./cfnetservicebrowserclientcallback.md)
   Defines a pointer to the callback function for a CFNetServiceBrowser.
-- [typealias CFNetServiceClientCallBack](cfnetserviceclientcallback.md)
+- [typealias CFNetServiceClientCallBack](./cfnetserviceclientcallback.md)
   Defines a pointer to the callback function for a CFNetService.
-- [typealias CFNetDiagnosticStatus](cfnetdiagnosticstatus.md)
-  A CFIndex type that is used to return status values from `CFNetDiagnostic` status and diagnostic functions. For a list of possible values, see [`CFNetDiagnosticStatusValues`](cfnetdiagnosticstatusvalues.md).
+- [typealias CFNetDiagnosticStatus](./cfnetdiagnosticstatus.md)
+  A CFIndex type that is used to return status values from `CFNetDiagnostic` status and diagnostic functions. For a list of possible values, see [`CFNetDiagnosticStatusValues`](./cfnetdiagnosticstatusvalues.md).
 
 
 ---

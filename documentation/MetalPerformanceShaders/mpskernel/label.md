@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string that identifies the kernel.
 
@@ -19,13 +20,18 @@ The string that identifies the kernel.
 var label: String? { get set }
 ```
 
+```objc
+@property (atomic, copy, nullable) NSString * label;
+```
+
 ## See Also
 
-- [var options: MPSKernelOptions](mpskernel/options.md)
+### Properties
+- [var options: MPSKernelOptions](./options.md)
   The set of options used to run the kernel.
-- [struct MPSKernelOptions](mpskerneloptions.md)
+- [struct MPSKernelOptions](../mpskerneloptions.md)
   The options used when creating a kernel.
-- [var device: any MTLDevice](mpskernel/device.md)
+- [var device: any MTLDevice](./device.md)
   The device on which the kernel will be used.
 
 

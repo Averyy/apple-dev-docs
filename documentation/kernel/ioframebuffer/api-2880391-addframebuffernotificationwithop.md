@@ -1,14 +1,15 @@
 # addFramebufferNotificationWithOptions
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 IONotifier * addFramebufferNotificationWithOptions(IOFramebufferNotificationHandler handler, OSObject *target, void *ref, IOSelect groupID, IOIndex groupPriority, IOSelect events);
 ```
 

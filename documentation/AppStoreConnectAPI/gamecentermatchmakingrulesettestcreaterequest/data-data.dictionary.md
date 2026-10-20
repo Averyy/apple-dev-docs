@@ -1,7 +1,8 @@
 # GameCenterMatchmakingRuleSetTestCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure of the request body for testing a rule set.
 
@@ -10,20 +11,20 @@ The data structure of the request body for testing a rule set.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingRuleSetTestCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterMatchmakingRuleSetTestCreateRequest.Data.Relationships](gamecentermatchmakingrulesettestcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object GameCenterMatchmakingRuleSetTestCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships of the rule set to other objects.
 
 ## Properties
 
 - `relationships` (GameCenterMatchmakingRuleSetTestCreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterMatchmakingRuleSetTests`
 
 
 ---

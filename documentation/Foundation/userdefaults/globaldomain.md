@@ -1,7 +1,8 @@
 # globalDomain
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identifier for the domain that contains system-specified settings for all apps.
 
@@ -20,17 +21,22 @@ The identifier for the domain that contains system-specified settings for all ap
 class let globalDomain: String
 ```
 
+```c
+extern NSString * const NSGlobalDomain;
+```
+
 #### Discussion
 
 The system populates this domain with information that’s relevant to all apps. For example, this domain contains the current language settings for the device. You can read values from this domain, but don’t write your own settings to it.
 
 ## See Also
 
-- [class let argumentDomain: String](userdefaults/argumentdomain.md)
+### Getting the domain names
+- [class let argumentDomain: String](./argumentdomain.md)
   The identifier for the domain that contains command-line settings.
-- [class let registrationDomain: String](userdefaults/registrationdomain.md)
+- [class let registrationDomain: String](./registrationdomain.md)
   The identifier for the domain that contains your app’s registered default values.
-- [var volatileDomainNames: [String]](userdefaults/volatiledomainnames.md)
+- [var volatileDomainNames: [String]](./volatiledomainnames.md)
   An array of identifiers for the volatile domains associated with the current object.
 
 

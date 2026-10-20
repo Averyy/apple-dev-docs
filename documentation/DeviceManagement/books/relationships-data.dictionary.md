@@ -1,21 +1,22 @@
 # Books.Relationships
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - VPP License Management 2.1+
 
 ## Declaration
 
-```swift
+```
 object Books.Relationships
 ```
 
 ## Topics
 
 ### Related Objects
-- [object Books.Relationships.BooksGenresRelationship](books/relationships-data.dictionary/booksgenresrelationship.md)
+- [object Books.Relationships.BooksGenresRelationship](./relationships-data.dictionary/booksgenresrelationship.md)
 
 ## Properties
 
@@ -23,7 +24,8 @@ object Books.Relationships
 
 ## See Also
 
-- [object Books.Attributes](books/attributes-data.dictionary.md)
+### Related Objects
+- [object Books.Attributes](./attributes-data.dictionary.md)
   The attributes for a books resource.
 
 

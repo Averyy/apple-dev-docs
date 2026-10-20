@@ -1,7 +1,8 @@
 # options
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Activation request options to further customize the request.
 
@@ -10,7 +11,7 @@ Activation request options to further customize the request.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,15 @@ var options: UIScene.ActivationRequestOptions? { get set }
 
 ## See Also
 
-- [UIWindowScene.ActivationRequestOptions](uiwindowscene/activationrequestoptions.md)
+### Related Documentation
+- [UIWindowScene.ActivationRequestOptions](../uiwindowscene/activationrequestoptions.md)
   An object that contains information you want the system to use when activating a new window scene.
-- [var role: UISceneSession.Role](uiscenesessionactivationrequest-swift.struct/role.md)
+### Managing request details
+- [var role: UISceneSession.Role](./role.md)
   The role to request.
-- [var session: UISceneSession?](uiscenesessionactivationrequest-swift.struct/session.md)
+- [var session: UISceneSession?](./session.md)
   The specific scene session to activate.
-- [var userActivity: NSUserActivity?](uiscenesessionactivationrequest-swift.struct/useractivity.md)
+- [var userActivity: NSUserActivity?](./useractivity.md)
   A user activity to send to the newly activated scene.
 
 

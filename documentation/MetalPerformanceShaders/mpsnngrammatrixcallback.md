@@ -1,15 +1,16 @@
 # MPSNNGramMatrixCallback
 
 **Framework**: Metal Performance Shaders  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,18 +18,22 @@
 protocol MPSNNGramMatrixCallback : NSCopying, NSSecureCoding, NSObjectProtocol
 ```
 
+```objc
+@protocol MPSNNGramMatrixCallback <NSObject, NSSecureCoding, NSCopying>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func alpha(forSourceImage: MPSImage, destinationImage: MPSImage) -> Float](mpsnngrammatrixcallback/alpha(forsourceimage:destinationimage:).md)
+- [func alpha(forSourceImage: MPSImage, destinationImage: MPSImage) -> Float](./mpsnngrammatrixcallback/alpha%28forsourceimage,destinationimage%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

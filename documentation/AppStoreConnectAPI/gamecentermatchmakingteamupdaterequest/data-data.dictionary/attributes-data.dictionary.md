@@ -1,7 +1,8 @@
 # GameCenterMatchmakingTeamUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes of a team that you modify.
 
@@ -10,7 +11,7 @@ The attributes of a team that you modify.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingTeamUpdateRequest.Data.Attributes
 ```
 

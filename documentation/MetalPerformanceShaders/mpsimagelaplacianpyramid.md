@@ -1,7 +1,8 @@
 # MPSImageLaplacianPyramid
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A filter that convolves an image with a Laplacian filter.
 
@@ -19,53 +20,58 @@ A filter that convolves an image with a Laplacian filter.
 class MPSImageLaplacianPyramid
 ```
 
+```objc
+@interface MPSImageLaplacianPyramid : MPSImagePyramid
+```
+
 ## Topics
 
 ### Instance Properties
-- [var laplacianBias: Float](mpsimagelaplacianpyramid/laplacianbias.md)
-- [var laplacianScale: Float](mpsimagelaplacianpyramid/laplacianscale.md)
+- [var laplacianBias: Float](./mpsimagelaplacianpyramid/laplacianbias.md)
+- [var laplacianScale: Float](./mpsimagelaplacianpyramid/laplacianscale.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSImagePyramid](mpsimagepyramid.md)
+- [MPSImagePyramid](./mpsimagepyramid.md)
 ### Inherited By
-- [MPSImageLaplacianPyramidAdd](mpsimagelaplacianpyramidadd.md)
-- [MPSImageLaplacianPyramidSubtract](mpsimagelaplacianpyramidsubtract.md)
+- [MPSImageLaplacianPyramidAdd](./mpsimagelaplacianpyramidadd.md)
+- [MPSImageLaplacianPyramidSubtract](./mpsimagelaplacianpyramidsubtract.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSImageConvolution](mpsimageconvolution.md)
+### Convolution Image Filters
+- [class MPSImageConvolution](./mpsimageconvolution.md)
   A filter that convolves an image with a given kernel of odd width and height.
-- [class MPSImageMedian](mpsimagemedian.md)
+- [class MPSImageMedian](./mpsimagemedian.md)
   A filter that applies a median filter in a square region centered around each pixel in the source image.
-- [class MPSImageBox](mpsimagebox.md)
+- [class MPSImageBox](./mpsimagebox.md)
   A filter that convolves an image with a given kernel of odd width and height.
-- [class MPSImageTent](mpsimagetent.md)
+- [class MPSImageTent](./mpsimagetent.md)
   A filter that convolves an image with a tent filter.
-- [class MPSImageGaussianBlur](mpsimagegaussianblur.md)
+- [class MPSImageGaussianBlur](./mpsimagegaussianblur.md)
   A filter that convolves an image with a Gaussian blur of a given sigma in both the x and y directions.
-- [class MPSImageGaussianPyramid](mpsimagegaussianpyramid.md)
+- [class MPSImageGaussianPyramid](./mpsimagegaussianpyramid.md)
   A filter that convolves an image with a Gaussian pyramid.
-- [class MPSImageSobel](mpsimagesobel.md)
+- [class MPSImageSobel](./mpsimagesobel.md)
   A filter that convolves an image with the Sobel operator.
-- [class MPSImageLaplacian](mpsimagelaplacian.md)
+- [class MPSImageLaplacian](./mpsimagelaplacian.md)
   An optimized Laplacian filter, provided for ease of use.
-- [class MPSImageLaplacianPyramidAdd](mpsimagelaplacianpyramidadd.md)
+- [class MPSImageLaplacianPyramidAdd](./mpsimagelaplacianpyramidadd.md)
   A filter that convolves an image with an additive Laplacian pyramid.
-- [class MPSImageLaplacianPyramidSubtract](mpsimagelaplacianpyramidsubtract.md)
+- [class MPSImageLaplacianPyramidSubtract](./mpsimagelaplacianpyramidsubtract.md)
   A filter that convolves an image with a subtractive Laplacian pyramid.
-- [class MPSImagePyramid](mpsimagepyramid.md)
+- [class MPSImagePyramid](./mpsimagepyramid.md)
   A base class for creating different kinds of pyramid images.
 
 

@@ -1,7 +1,8 @@
 # nestedUnkeyedContainer(forKey:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stores an unkeyed encoding container for the given key and returns it.
 

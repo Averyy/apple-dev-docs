@@ -1,7 +1,8 @@
 # open(_:using:authenticating:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Decrypts the message and verifies the authenticity of both the encrypted message and additional data.
 
@@ -32,7 +33,8 @@ The original plaintext message that was sealed in the box, as long as the correc
 
 ## See Also
 
-- [static func open(ChaChaPoly.SealedBox, using: SymmetricKey) throws -> Data](chachapoly/open(_:using:).md)
+### Decrypting and verifying the message
+- [static func open(ChaChaPoly.SealedBox, using: SymmetricKey) throws -> Data](./open%28_,using%29.md)
   Decrypts the message and verifies its authenticity.
 
 

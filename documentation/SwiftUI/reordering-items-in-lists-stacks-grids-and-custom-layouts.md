@@ -1,6 +1,7 @@
 # Reordering items in lists, stacks, grids, and custom layouts
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: Article
 
 Add drag-to-reorder interactions to SwiftUI layouts using reordering modifiers.
 
@@ -12,11 +13,11 @@ When the person drops the view on the placeholder, the system provides the ident
 
 If you organize your views into sections that you represent in multiple data collections, such as a photography app that lets people organize photos into albums, you can configure reordering to work both when someone moves a photo inside an album and when someone moves a photo from one album to another.
 
-##### Reorder Items in a Single Collection
+##### Reorder items in a single collection
 
-When you have views that you build from a single ordered collection of data items, such as an array of photos in a photography app, first configure your data item with an identifier that conforms to [`Hashable`](https://developer.apple.com/documentation/swift/hashable) and [`Sendable`](https://developer.apple.com/documentation/swift/sendable). For example, update your data item to conform to  [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) using an identifier data type that conforms to [`Sendable`](https://developer.apple.com/documentation/swift/sendable).
+When you have views that you build from a single ordered collection of data items, such as an array of photos in a photography app, first configure your data item with an identifier that conforms to [`Hashable`](../Swift/hashable.md) and [`Sendable`](../Swift/sendable.md). For example, update your data item to conform to  [`Identifiable`](../Swift/identifiable.md) using an identifier data type that conforms to [`Sendable`](../Swift/sendable.md).
 
-Next, indicate which views you want people to reorder by adding the [`reorderable()`](dynamicviewcontent/reorderable().md) modifier to the [`ForEach`](foreach.md) declaration that generates those views, as the following code shows:
+Next, indicate which views you want people to reorder by adding the [`reorderable()`](./dynamicviewcontent/reorderable%28%29.md) modifier to the [`ForEach`](./foreach.md) declaration that generates those views, as the following code shows:
 
 ```swift
 @State private var photos: [Photo] = loadPhotos()
@@ -31,7 +32,7 @@ var body: some View {
 }
 ```
 
-Finally, define the area in your interface where people can reorder views by adding the [`reorderContainer(for:isEnabled:move:)`](view/reordercontainer(for:isenabled:move:).md) modifier to the enclosing list, stack, grid, or custom layout container to specify the scope of views to include in reordering. In the `move` closure, specify how to apply the [`ReorderDifference`](reorderdifference.md) that the system provides to describe the change to your collection of items, as this code example shows:
+Finally, define the area in your interface where people can reorder views by adding the [`reorderContainer(for:isEnabled:move:)`](./view/reordercontainer%28for,isenabled,move%29.md) modifier to the enclosing list, stack, grid, or custom layout container to specify the scope of views to include in reordering. In the `move` closure, specify how to apply the [`ReorderDifference`](./reorderdifference.md) that the system provides to describe the change to your collection of items, as this code example shows:
 
 ```swift
 @State private var photos: [Photo] = loadPhotos()
@@ -46,9 +47,9 @@ var body: some View {
 }
 ```
 
-##### Reorder Items Across Multiple Collections
+##### Reorder items across multiple collections
 
-When you organize your views into sections that you build from multiple data collections, such as albums in a photography app that each contain photos, add [`reorderable(collectionID:)`](dynamicviewcontent/reorderable(collectionid:).md) to the [`ForEach`](foreach.md) that generates the views you want to reorder. Then, provide an identifier for each collection that contains the data items for those views, as this example shows:
+When you organize your views into sections that you build from multiple data collections, such as albums in a photography app that each contain photos, add [`reorderable(collectionID:)`](./dynamicviewcontent/reorderable%28collectionid%29.md) to the [`ForEach`](./foreach.md) that generates the views you want to reorder. Then, provide an identifier for each collection that contains the data items for those views, as this example shows:
 
 ```swift
 ScrollView {
@@ -65,7 +66,7 @@ ScrollView {
 }
 ```
 
-Next, define the scope of the reordering area by adding [`reorderContainer(for:in:isEnabled:move:)`](view/reordercontainer(for:in:isenabled:move:).md) to the list, stack, grid, or custom layout that contains all of the sections and views you want to reorder:
+Next, define the scope of the reordering area by adding [`reorderContainer(for:in:isEnabled:move:)`](./view/reordercontainer%28for,in,isenabled,move%29.md) to the list, stack, grid, or custom layout that contains all of the sections and views you want to reorder:
 
 ```swift
 ScrollView {
@@ -81,13 +82,13 @@ ScrollView {
 }
 ```
 
-When someone moves a view inside an album, or from one album to another, the system provides a [`ReorderDifference`](reorderdifference.md) instance that contains a collection identifier and position you can use to move the view’s corresponding data item.
+When someone moves a view inside an album, or from one album to another, the system provides a [`ReorderDifference`](./reorderdifference.md) instance that contains a collection identifier and position you can use to move the view’s corresponding data item.
 
-##### Support Drag and Drop Outside Your Container
+##### Support drag and drop outside your container
 
 Adding reordering modifiers to your container only supports moving views inside the container. Support drag and drop between your container and other parts of your app or other apps with drag-and-drop modifiers.
 
-Add the [`dragContainer(for:in:_:)`](view/dragcontainer(for:in:_:).md) modifier to provide transfer representations for views when someone drags them outside of your container. For example, the following code shows how to select a `Photo` instance the system can use to get a transfer representation when someone drags a photo to another window or app:
+Add the [`dragContainer(for:in:_:)`](./view/dragcontainer%28for,in,_%29.md) modifier to provide transfer representations for views when someone drags them outside of your container. For example, the following code shows how to select a `Photo` instance the system can use to get a transfer representation when someone drags a photo to another window or app:
 
 ```swift
 @State private var photos: [Photo] = loadPhotos()
@@ -108,9 +109,9 @@ var body: some View {
 }
 ```
 
-Add the [`dropDestination(for:isEnabled:action:)`](view/dropdestination(for:isenabled:action:).md) modifier after the [`reorderContainer(for:isEnabled:move:)`](view/reordercontainer(for:isenabled:move:).md) modifier to handle drop actions from other parts of your app or other apps. When the drop destination modifier encloses the reorder container modifier, the container handles drag-and-drop reordering operations inside the container, and the drop destination handles drag-and-drop operations that someone initiates outside the container.
+Add the [`dropDestination(for:isEnabled:action:)`](./view/dropdestination%28for,isenabled,action%29.md) modifier after the [`reorderContainer(for:isEnabled:move:)`](./view/reordercontainer%28for,isenabled,move%29.md) modifier to handle drop actions from other parts of your app or other apps. When the drop destination modifier encloses the reorder container modifier, the container handles drag-and-drop reordering operations inside the container, and the drop destination handles drag-and-drop operations that someone initiates outside the container.
 
-Inside the drop action closure, call [`reorderDestination(for:in:)`](dropsession/reorderdestination(for:in:).md) to find where the person dropped the views relative to existing views. In the following example, when the method returns [`ReorderDifference.Destination.Position.before(_:)`](reorderdifference/destination-swift.struct/position-swift.enum/before(_:).md), that indicates someone dropped one or more `Photo` representations before the view represented by the `Photo` instance at `index`. In that case, you insert the dropped items before the item at `index`. When the method returns [`ReorderDifference.Destination.Position.end`](reorderdifference/destination-swift.struct/position-swift.enum/end.md), someone dropped one or more `Photo` representations after the last view, so you append the dropped items to the end of the collection. The following code demonstrates both of these examples:
+Inside the drop action closure, call [`reorderDestination(for:in:)`](./dropsession/reorderdestination%28for,in%29.md) to find where the person dropped the views relative to existing views. In the following example, when the method returns [`ReorderDifference.Destination.Position.before(_:)`](./reorderdifference/destination-swift.struct/position-swift.enum/before%28_%29.md), that indicates someone dropped one or more `Photo` representations before the view represented by the `Photo` instance at `index`. In that case, you insert the dropped items before the item at `index`. When the method returns [`ReorderDifference.Destination.Position.end`](./reorderdifference/destination-swift.struct/position-swift.enum/end.md), someone dropped one or more `Photo` representations after the last view, so you append the dropped items to the end of the collection. The following code demonstrates both of these examples:
 
 ```swift
 @State private var photos: [Photo] = loadPhotos()
@@ -140,9 +141,9 @@ var body: some View {
 }
 ```
 
-##### Support Drag and Drop Onto Individual Items in a Reorderable Container
+##### Support drag and drop onto individual items in a reorderable container
 
-Add the [`dropDestination(for:isEnabled:action:)`](view/dropdestination(for:isenabled:action:).md) modifier to an item’s view to let people drop items from other apps directly onto a specific item in your container. The following code shows how to add the drop destination to an `ItemView` inside a `ForEach` that’s also configured for reordering:
+Add the [`dropDestination(for:isEnabled:action:)`](./view/dropdestination%28for,isenabled,action%29.md) modifier to an item’s view to let people drop items from other apps directly onto a specific item in your container. The following code shows how to add the drop destination to an `ItemView` inside a `ForEach` that’s also configured for reordering:
 
 ```swift
 HStack {
@@ -155,11 +156,11 @@ HStack {
 .reorderContainer(for: Item.self) { difference in ... }
 ```
 
-Use the `isEnabled` parameter of the [`dropDestination(for:isEnabled:action:)`](view/dropdestination(for:isenabled:action:).md) modifier to limit what items the drop destination takes. The previous code example shows how to accept drops only when the `isFolder` property for an item is `true`.
+Use the `isEnabled` parameter of the [`dropDestination(for:isEnabled:action:)`](./view/dropdestination%28for,isenabled,action%29.md) modifier to limit what items the drop destination takes. The previous code example shows how to accept drops only when the `isFolder` property for an item is `true`.
 
-Add code in the `action` closure of the [`dropDestination(for:isEnabled:action:)`](view/dropdestination(for:isenabled:action:).md) modifier to update your model with the dropped items, because it may be different than how you handle updating your model for reordering in the closure for [`reorderContainer(for:isEnabled:move:)`](view/reordercontainer(for:isenabled:move:).md). When your drop destination accepts items from the reorder container, be sure to remove the items from the source data collection when you move them to the item’s data collection.
+Add code in the `action` closure of the [`dropDestination(for:isEnabled:action:)`](./view/dropdestination%28for,isenabled,action%29.md) modifier to update your model with the dropped items, because it may be different than how you handle updating your model for reordering in the closure for [`reorderContainer(for:isEnabled:move:)`](./view/reordercontainer%28for,isenabled,move%29.md). When your drop destination accepts items from the reorder container, be sure to remove the items from the source data collection when you move them to the item’s data collection.
 
-##### Dynamically Enable and Disable Reordering
+##### Dynamically enable and disable reordering
 
 You may want to disable reordering while you sync updates over the network, or when you make other updates to your views that complicate reordering. To do this, use a variant of the reorder container modifier that has the `isEnabled` parameter, and pass a Boolean property to that parameter to track whether reordering is enabled, as the following example shows:
 
@@ -181,9 +182,10 @@ In that example, reordering is disabled when `isSaving` is `true`. When the mode
 
 ## See Also
 
-- [Adopting drag and drop using SwiftUI](adopting-drag-and-drop-using-swiftui.md)
+### Essentials
+- [Adopting drag and drop using SwiftUI](./adopting-drag-and-drop-using-swiftui.md)
   Enable drag-and-drop interactions in lists, tables and custom views.
-- [Making a view into a drag source](making-a-view-into-a-drag-source.md)
+- [Making a view into a drag source](./making-a-view-into-a-drag-source.md)
   Adopt draggable API to provide items for drag-and-drop operations.
 
 

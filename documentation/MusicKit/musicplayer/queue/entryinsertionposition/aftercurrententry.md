@@ -1,7 +1,8 @@
 # MusicPlayer.Queue.EntryInsertionPosition.afterCurrentEntry
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A position that allows prepending entries in the playback queue, similar to the Play Next feature in the Music app.
 
@@ -23,7 +24,7 @@ case afterCurrentEntry
 
 Inserting entries after the current one merely enqueues them to play next, and lets the current entry finish playing to the end.
 
-Alternatively, you may change the current entry programmatically by setting the `currentEntry` property of the [`queue`](applicationmusicplayer/queue-swift.property.md) or [`queue`](systemmusicplayer/queue.md).
+Alternatively, you may change the current entry programmatically by setting the `currentEntry` property of the [`queue`](../../../applicationmusicplayer/queue-swift.property.md) or [`queue`](../../../systemmusicplayer/queue.md).
 
 
 ---

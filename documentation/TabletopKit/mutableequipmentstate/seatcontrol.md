@@ -2,6 +2,7 @@
 
 **Framework**: TabletopKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The seats that can manipulate or interact with this equipment.
@@ -14,6 +15,11 @@ The seats that can manipulate or interact with this equipment.
 ```swift
 override var seatControl: ControllingSeats { get set }
 ```
+
+## Default Implementations
+
+### EquipmentState Implementations
+- [var seatControl: ControllingSeats](../equipmentstate/seatcontrol-pb0s.md)
 
 
 ---

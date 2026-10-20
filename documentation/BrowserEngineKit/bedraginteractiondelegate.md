@@ -1,7 +1,8 @@
 # BEDragInteractionDelegate
 
 **Framework**: BrowserEngineKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for a drag interaction delegate.
 
@@ -16,27 +17,32 @@ A protocol for a drag interaction delegate.
 protocol BEDragInteractionDelegate : UIDragInteractionDelegate
 ```
 
+```objc
+@protocol BEDragInteractionDelegate <UIDragInteractionDelegate>
+```
+
 #### Overview
 
-The [`BEDragInteraction`](bedraginteraction.md) class’s [`delegate`](bedraginteraction/delegate.md) implements this protocol. Use [`BEDragInteraction`](bedraginteraction.md) to prepare drag interactions asynchronously and add items to drag sessions, for example, when drag support requires JavaScript.
+The [`BEDragInteraction`](./bedraginteraction.md) class’s [`delegate`](./bedraginteraction/delegate.md) implements this protocol. Use [`BEDragInteraction`](./bedraginteraction.md) to prepare drag interactions asynchronously and add items to drag sessions, for example, when drag support requires JavaScript.
 
 ## Topics
 
 ### Participating in drag gestures
-- [func dragInteraction(BEDragInteraction, prepare: any UIDragSession, completion: () -> Bool)](bedraginteractiondelegate/draginteraction(_:prepare:completion:).md)
+- [func dragInteraction(BEDragInteraction, prepare: any UIDragSession, completion: () -> Bool)](./bedraginteractiondelegate/draginteraction%28_,prepare,completion%29.md)
   Prepares the delegate for a drag session.
-- [func dragInteraction(BEDragInteraction, itemsForAddingTo: any UIDragSession, forTouchAt: CGPoint, completion: ([UIDragItem]) -> Bool)](bedraginteractiondelegate/draginteraction(_:itemsforaddingto:fortouchat:completion:).md)
+- [func dragInteraction(BEDragInteraction, itemsForAddingTo: any UIDragSession, forTouchAt: CGPoint, completion: ([UIDragItem]) -> Bool)](./bedraginteractiondelegate/draginteraction%28_,itemsforaddingto,fortouchat,completion%29.md)
   Requests items to add to a drag session.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [UIDragInteractionDelegate](../uikit/uidraginteractiondelegate.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [UIDragInteractionDelegate](../UIKit/uidraginteractiondelegate.md)
 
 ## See Also
 
-- [class BEDragInteraction](bedraginteraction.md)
+### Drag interaction
+- [class BEDragInteraction](./bedraginteraction.md)
   An interaction that enables your app to asynchronously provide drag items.
 
 

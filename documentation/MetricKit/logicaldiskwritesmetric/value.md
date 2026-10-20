@@ -1,7 +1,8 @@
 # value
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total amount of data written to disk or other long term storage.
 

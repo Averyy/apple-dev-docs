@@ -1,7 +1,8 @@
 # set(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds multiple components to the set, overriding any existing components of the same type.
 
@@ -11,13 +12,25 @@ Adds multiple components to the set, overriding any existing components of the s
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
 ```swift
 @MainActor
 @preconcurrency func set(_ components: [any Component])
+```
+
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency func set<T>(_ component: T) where T : Component
+```
+
+```swift
+@MainActor
+@preconcurrency func set<T>(_ component: T) where T : _ImplicitlyAnimatableBuiltinComponent
 ```
 
 #### Discussion
@@ -30,11 +43,12 @@ If the input array includes multiple components of the same type, the set adds t
 
 ## See Also
 
-- [func set<T>(T)](entity/componentset/set(_:)-8sii2.md)
+### Updating the set
+- [func set<T>(T)](./set%28_%29-8sii2.md)
   Adds a new component to the set, or overrides an existing one.
-- [func remove(any Component.Type)](entity/componentset/remove(_:).md)
+- [func remove(any Component.Type)](./remove%28_%29.md)
   Removes the component of the specified type from the collection.
-- [func removeAll()](entity/componentset/removeall.md)
+- [func removeAll()](./removeall%28%29.md)
   Removes all components from the collection.
 
 

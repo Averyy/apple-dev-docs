@@ -1,7 +1,8 @@
 # MirrorPath
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for legitimate arguments to `Mirror`’s `descendant` method.
 
@@ -27,12 +28,13 @@ Do not declare new conformances to this protocol; they will not work as expected
 ## Relationships
 
 ### Conforming Types
-- [Int](int.md)
-- [String](string.md)
+- [Int](./int.md)
+- [String](./string.md)
 
 ## See Also
 
-- [func descendant(any MirrorPath, any MirrorPath...) -> Any?](mirror/descendant(_:_:).md)
+### Querying Descendants
+- [func descendant(any MirrorPath, any MirrorPath...) -> Any?](./mirror/descendant%28_,_%29.md)
   Returns a specific descendant of the reflected subject, or `nil` if no such descendant exists.
 
 

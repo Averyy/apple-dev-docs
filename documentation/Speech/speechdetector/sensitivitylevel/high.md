@@ -1,7 +1,8 @@
 # SpeechDetector.SensitivityLevel.high
 
 **Framework**: Speech  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+
@@ -19,8 +20,9 @@ case high
 
 ## See Also
 
-- [SpeechDetector.SensitivityLevel.low](speechdetector/sensitivitylevel/low.md)
-- [SpeechDetector.SensitivityLevel.medium](speechdetector/sensitivitylevel/medium.md)
+### Sensitivity levels
+- [SpeechDetector.SensitivityLevel.low](./low.md)
+- [SpeechDetector.SensitivityLevel.medium](./medium.md)
 
 
 ---

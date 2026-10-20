@@ -1,7 +1,8 @@
 # batchSize
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of examples to use per mini-batch.
 
@@ -28,19 +29,20 @@ A larger batch size will speed up computation when training, as long as the batc
 
 ## See Also
 
-- [var dropoutProbability: Float](fullyconnectednetworkconfiguration/dropoutprobability.md)
+### Getting the properties
+- [var dropoutProbability: Float](./dropoutprobability.md)
   The dropout probability.
-- [var earlyStopIterationCount: Int](fullyconnectednetworkconfiguration/earlystopiterationcount.md)
+- [var earlyStopIterationCount: Int](./earlystopiterationcount.md)
   The number of iterations to use when evaluating whether to stop early.
-- [var earlyStoppingTolerance: Double](fullyconnectednetworkconfiguration/earlystoppingtolerance.md)
+- [var earlyStoppingTolerance: Double](./earlystoppingtolerance.md)
   The early-stopping tolerance.
-- [var hiddenUnitCounts: [Int]](fullyconnectednetworkconfiguration/hiddenunitcounts.md)
+- [var hiddenUnitCounts: [Int]](./hiddenunitcounts.md)
   The number of neurons in each hidden layer.
-- [var learningRate: Float](fullyconnectednetworkconfiguration/learningrate.md)
+- [var learningRate: Float](./learningrate.md)
   The learning rate.
-- [var maximumIterations: Int](fullyconnectednetworkconfiguration/maximumiterations.md)
+- [var maximumIterations: Int](./maximumiterations.md)
   The maximum number of iterations.
-- [var randomSeed: Int](fullyconnectednetworkconfiguration/randomseed.md)
+- [var randomSeed: Int](./randomseed.md)
   A seed to generate reproducible results from random operations such as column and row subsampling.
 
 

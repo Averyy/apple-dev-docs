@@ -1,7 +1,8 @@
 # addAccessoryController(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a custom controller to the Print panel to manage an accessory view.
 
@@ -12,6 +13,10 @@ Adds a custom controller to the Print panel to manage an accessory view.
 
 ```swift
 func addAccessoryController(_ accessoryController: any NSViewController & NSPrintPanelAccessorizing)
+```
+
+```objc
+- (void) addAccessoryController:(NSViewController<NSPrintPanelAccessorizing> *) accessoryController;
 ```
 
 #### Discussion
@@ -26,11 +31,12 @@ The title for the accessory view is obtained from the `title` method of the view
 
 ## See Also
 
-- [func removeAccessoryController(any NSViewController & NSPrintPanelAccessorizing)](nsprintpanel/removeaccessorycontroller(_:).md)
+### Managing Accessory Views
+- [func removeAccessoryController(any NSViewController & NSPrintPanelAccessorizing)](./removeaccessorycontroller%28_%29.md)
   Removes the specified controller and accessory view from the Print panel.
-- [protocol NSPrintPanelAccessorizing](nsprintpanelaccessorizing.md)
+- [protocol NSPrintPanelAccessorizing](../nsprintpanelaccessorizing.md)
   A set of methods that a Print panel object can use to get information from a printing accessory controller.
-- [var accessoryControllers: [NSViewController]](nsprintpanel/accessorycontrollers.md)
+- [var accessoryControllers: [NSViewController]](./accessorycontrollers.md)
   The array of controller objects that manage the Print panel’s accessory views.
 
 

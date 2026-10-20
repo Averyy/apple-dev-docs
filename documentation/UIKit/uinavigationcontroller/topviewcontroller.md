@@ -1,7 +1,8 @@
 # topViewController
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view controller at the top of the navigation stack.
 
@@ -9,7 +10,7 @@ The view controller at the top of the navigation stack.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ The view controller at the top of the navigation stack.
 var topViewController: UIViewController? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) UIViewController * topViewController;
+```
+
 ## See Also
 
-- [var visibleViewController: UIViewController?](uinavigationcontroller/visibleviewcontroller.md)
+### Accessing items on the navigation stack
+- [var visibleViewController: UIViewController?](./visibleviewcontroller.md)
   The view controller associated with the currently visible view in the navigation interface.
-- [var viewControllers: [UIViewController]](uinavigationcontroller/viewcontrollers.md)
+- [var viewControllers: [UIViewController]](./viewcontrollers.md)
   The view controllers currently on the navigation stack.
-- [func setViewControllers([UIViewController], animated: Bool)](uinavigationcontroller/setviewcontrollers(_:animated:).md)
+- [func setViewControllers([UIViewController], animated: Bool)](./setviewcontrollers%28_,animated%29.md)
   Replaces the view controllers currently managed by the navigation controller with the specified items.
 
 

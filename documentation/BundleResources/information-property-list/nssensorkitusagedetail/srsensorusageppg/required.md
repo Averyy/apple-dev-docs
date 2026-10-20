@@ -1,7 +1,8 @@
 # Required
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether your app’s study relies on this sensor.
 
@@ -9,9 +10,12 @@ A Boolean value that indicates whether your app’s study relies on this sensor.
 - iOS 17.4+
 - iPadOS 17.4+
 
+## Details
+
+- **Name**: `Required`
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `NO`
 
@@ -21,7 +25,8 @@ The system checks the value for this property when the person declines the acces
 
 ## See Also
 
-- [Description](information-property-list/nssensorkitusagedetail/srsensorusageppg/description.md)
+### Sensor usage keys
+- [Description](./description.md)
   An explanatory string that details the manner in which your study uses the ECG sensor’s data.
 
 

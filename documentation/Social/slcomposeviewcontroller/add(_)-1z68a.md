@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: Social  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an image to the post.
 
@@ -16,13 +17,17 @@ Adds an image to the post.
 func add(_ image: UIImage!) -> Bool
 ```
 
+```objc
+- (BOOL) addImage:(UIImage *) image;
+```
+
 #### Return Value
 
 Returns a Boolean value that indicates whether the image was successfully added.
 
 #### Discussion
 
-This method returns [`false`](https://developer.apple.com/documentation/swift/false) if `image` does not fit in the currently available space, or if the view controller has already been presented to the user (and therefore cannot be changed). For the accepted `UIImage` formats, see [`Figure 2`](https://developer.apple.com/documentation/uikit/uiimage#1965930). Image size limits are dependent on the target service and are documented by the service provider. For links to documentation for the supported services, see Table 1 in [`SLRequest`](slrequest.md).
+This method returns [`false`](../../Swift/false.md) if `image` does not fit in the currently available space, or if the view controller has already been presented to the user (and therefore cannot be changed). For the accepted `UIImage` formats, see [Figure 2](../../UIKit/uiimage.md#1965930). Image size limits are dependent on the target service and are documented by the service provider. For links to documentation for the supported services, see Table 1 in [`SLRequest`](../slrequest.md).
 
 ## Parameters
 
@@ -30,13 +35,14 @@ This method returns [`false`](https://developer.apple.com/documentation/swift/fa
 
 ## See Also
 
-- [func setInitialText(String!) -> Bool](slcomposeviewcontroller/setinitialtext(_:).md)
+### Specifying the Contents of the Post
+- [func setInitialText(String!) -> Bool](./setinitialtext%28_%29.md)
   Sets the initial text to be posted.
-- [func add(URL!) -> Bool](slcomposeviewcontroller/add(_:)-3mn1w.md)
+- [func add(URL!) -> Bool](./add%28_%29-3mn1w.md)
   Adds a URL to the post.
-- [func removeAllImages() -> Bool](slcomposeviewcontroller/removeallimages.md)
+- [func removeAllImages() -> Bool](./removeallimages%28%29.md)
   Removes all images from the post.
-- [func removeAllURLs() -> Bool](slcomposeviewcontroller/removeallurls.md)
+- [func removeAllURLs() -> Bool](./removeallurls%28%29.md)
   Removes all URLs from the post.
 
 

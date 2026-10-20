@@ -1,7 +1,8 @@
 # displaySize
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size, in points, of the widget.
 

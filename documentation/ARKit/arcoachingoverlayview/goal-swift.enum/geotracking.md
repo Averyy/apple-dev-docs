@@ -1,7 +1,8 @@
 # ARCoachingOverlayView.Goal.geoTracking
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A goal that specifies your app requires a precise geographic location.
 
@@ -15,19 +16,24 @@ A goal that specifies your app requires a precise geographic location.
 case geoTracking
 ```
 
+```c
+ARCoachingGoalGeoTracking
+```
+
 #### Discussion
 
 When you set this goal, the coaching overlay provides the user instructions when they start a geotracking session, or when they go off course during a session.
 
 ## See Also
 
-- [ARCoachingOverlayView.Goal.anyPlane](arcoachingoverlayview/goal-swift.enum/anyplane.md)
+### Defining a Goal
+- [ARCoachingOverlayView.Goal.anyPlane](./anyplane.md)
   A goal that specifies your app requires a plane of any type.
-- [ARCoachingOverlayView.Goal.horizontalPlane](arcoachingoverlayview/goal-swift.enum/horizontalplane.md)
+- [ARCoachingOverlayView.Goal.horizontalPlane](./horizontalplane.md)
   A goal that specifies your app requires a horizontal plane.
-- [ARCoachingOverlayView.Goal.tracking](arcoachingoverlayview/goal-swift.enum/tracking.md)
+- [ARCoachingOverlayView.Goal.tracking](./tracking.md)
   A goal that specifies your app requires basic world tracking.
-- [ARCoachingOverlayView.Goal.verticalPlane](arcoachingoverlayview/goal-swift.enum/verticalplane.md)
+- [ARCoachingOverlayView.Goal.verticalPlane](./verticalplane.md)
   A goal that specifies your app requires a vertical plane.
 
 

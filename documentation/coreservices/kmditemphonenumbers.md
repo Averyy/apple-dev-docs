@@ -1,7 +1,8 @@
 # kMDItemPhoneNumbers
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Phone numbers related to this item. A CFArray of CFStrings.
 
@@ -12,6 +13,10 @@ Phone numbers related to this item. A CFArray of CFStrings.
 
 ```swift
 let kMDItemPhoneNumbers: CFString!
+```
+
+```c
+const CFStringRef kMDItemPhoneNumbers;
 ```
 
 

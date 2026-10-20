@@ -1,7 +1,8 @@
 # name
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the battery that is sending this state from accessory
 

@@ -1,7 +1,8 @@
 # kVTPropertyType_Enumeration
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 8.0+
@@ -17,10 +18,15 @@
 let kVTPropertyType_Enumeration: CFString
 ```
 
+```c
+extern CFStringRef const kVTPropertyType_Enumeration;
+```
+
 ## See Also
 
-- [let kVTPropertyType_Boolean: CFString](kvtpropertytype_boolean.md)
-- [let kVTPropertyType_Number: CFString](kvtpropertytype_number.md)
+### Property Types
+- [let kVTPropertyType_Boolean: CFString](./kvtpropertytype_boolean.md)
+- [let kVTPropertyType_Number: CFString](./kvtpropertytype_number.md)
 
 
 ---

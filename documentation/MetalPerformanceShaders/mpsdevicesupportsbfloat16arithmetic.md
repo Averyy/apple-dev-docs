@@ -1,20 +1,25 @@
 # MPSDeviceSupportsBFloat16Arithmetic
 
 **Framework**: Metal Performance Shaders  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var MPSDeviceSupportsBFloat16Arithmetic: MPSDeviceCapsValues { get }
+```
+
+```c
+MPSDeviceSupportsBFloat16Arithmetic
 ```
 
 

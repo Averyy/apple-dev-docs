@@ -1,7 +1,8 @@
 # errSecCSUnsignedNestedCode
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Nested code is unsigned.
 
@@ -13,6 +14,10 @@ Nested code is unsigned.
 
 ```swift
 var errSecCSUnsignedNestedCode: OSStatus { get }
+```
+
+```c
+errSecCSUnsignedNestedCode
 ```
 
 

@@ -1,7 +1,8 @@
 # absolute(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the absolute values of the input tensor elements.
 
@@ -17,6 +18,10 @@ Returns the absolute values of the input tensor elements.
 
 ```swift
 func absolute(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) absoluteWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

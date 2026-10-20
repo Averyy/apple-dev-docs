@@ -1,7 +1,8 @@
 # init(type:value:)
 
 **Framework**: Core Bluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a mutable descriptor with a specified value.
 
@@ -17,6 +18,10 @@ Creates a mutable descriptor with a specified value.
 init(type UUID: CBUUID, value: Any?)
 ```
 
+```objc
+- (instancetype) initWithType:(CBUUID *) UUID value:(id) value;
+```
+
 #### Return Value
 
 A newly initialized mutable descriptor.
@@ -25,16 +30,16 @@ A newly initialized mutable descriptor.
 
 The value type of `value` depends on the type of descriptor:
 
-- The value type of [`CBUUIDCharacteristicUserDescriptionString`](cbuuidcharacteristicuserdescriptionstring.md) is a string you use to provide a human-readable description of the characteristic’s value.
-- The value type of a [`CBUUIDCharacteristicFormatString`](cbuuidcharacteristicformatstring.md) is an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object that you use to specify how to format the characteristic’s value for presentation purposes.
+- The value type of [`CBUUIDCharacteristicUserDescriptionString`](../cbuuidcharacteristicuserdescriptionstring.md) is a string you use to provide a human-readable description of the characteristic’s value.
+- The value type of a [`CBUUIDCharacteristicFormatString`](../cbuuidcharacteristicformatstring.md) is an [`NSData`](../../Foundation/nsdata.md) object that you use to specify how to format the characteristic’s value for presentation purposes.
 
 If you want to create a local characteristic format descriptor, the descriptor’s value must conform to the attribute value of the characteristic format descriptor as defined in the Bluetooth 4.0 specification, Volume 3, Part G, Section 3.3.3.5.
 
-For more information, see [`Core Bluetooth Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/AboutCoreBluetooth/Introduction.html#//apple_ref/doc/uid/TP40013257).
+For more information, see [Core Bluetooth Programming Guide](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/AboutCoreBluetooth/Introduction.html#//apple_ref/doc/uid/TP40013257).
 
 ## Parameters
 
-- `UUID`: A 128-bit UUID that identifies the characteristic. You must use only one of the two currently supported descriptor types: [`CBUUIDCharacteristicUserDescriptionString`](cbuuidcharacteristicuserdescriptionstring.md) or [`CBUUIDCharacteristicFormatString`](cbuuidcharacteristicformatstring.md). For more details about these descriptor types, see [`CBUUID`](cbuuid.md).
+- `UUID`: A 128-bit UUID that identifies the characteristic. You must use only one of the two currently supported descriptor types: [`CBUUIDCharacteristicUserDescriptionString`](../cbuuidcharacteristicuserdescriptionstring.md) or [`CBUUIDCharacteristicFormatString`](../cbuuidcharacteristicformatstring.md). For more details about these descriptor types, see [`CBUUID`](../cbuuid.md).
 - `value`: The descriptor value to cache. You must provide a non-`nil` value. Once published, you can’t update the value dynamically.
 
 

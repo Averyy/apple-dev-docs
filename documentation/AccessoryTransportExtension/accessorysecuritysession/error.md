@@ -1,7 +1,8 @@
 # AccessorySecuritySession.Error
 
 **Framework**: Accessory Transport Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An error that occurs during accessory security-session operations.
 
@@ -21,29 +22,30 @@ The framework throws errors of this type when security-session operations fail. 
 ## Topics
 
 ### Interpreting the error cause
-- [AccessorySecuritySession.Error.invalidated](accessorysecuritysession/error/invalidated.md)
+- [AccessorySecuritySession.Error.invalidated](./error/invalidated.md)
   Session was invalidated.
-- [AccessorySecuritySession.Error.unknown](accessorysecuritysession/error/unknown.md)
+- [AccessorySecuritySession.Error.unknown](./error/unknown.md)
   Underlying failure with an unknown cause.
-- [AccessorySecuritySession.Error.unsupported](accessorysecuritysession/error/unsupported.md)
+- [AccessorySecuritySession.Error.unsupported](./error/unsupported.md)
   Unsupported value, operation, etc.
 ### Accessing error details
-- [var description: String](accessorysecuritysession/error/description.md)
+- [var description: String](./error/description.md)
   A string that describes the error.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [AccessorySecuritySession.EventHandler](accessorysecuritysession/eventhandler.md)
+### Handling session events
+- [AccessorySecuritySession.EventHandler](./eventhandler.md)
   A protocol that defines methods for handling security session events.
 
 

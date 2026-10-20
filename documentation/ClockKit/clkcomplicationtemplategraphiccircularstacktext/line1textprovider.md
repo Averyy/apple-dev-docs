@@ -1,12 +1,15 @@
 # line1TextProvider
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text to display on the top row.
 
 **Availability**:
-- watchOS 6.0+
+- watchOS 6.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -15,13 +18,18 @@ The text to display on the top row.
 var line1TextProvider: CLKTextProvider { get set }
 ```
 
+```objc
+@property (nonatomic, copy) CLKTextProvider * line1TextProvider;
+```
+
 #### Discussion
 
 This property supports multicolor text.
 
 ## See Also
 
-- [var line2TextProvider: CLKTextProvider](clkcomplicationtemplategraphiccircularstacktext/line2textprovider.md)
+### Setting the Complication Data
+- [var line2TextProvider: CLKTextProvider](./line2textprovider.md)
   The text to display on the bottom row.
 
 

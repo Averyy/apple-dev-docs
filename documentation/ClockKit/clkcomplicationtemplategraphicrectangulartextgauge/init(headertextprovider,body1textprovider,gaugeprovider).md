@@ -1,17 +1,22 @@
 # init(headerTextProvider:body1TextProvider:gaugeProvider:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new template that has header text, body text, and a gauge.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
 
 ## Declaration
 
 ```swift
 init(headerTextProvider: CLKTextProvider, body1TextProvider: CLKTextProvider, gaugeProvider: CLKGaugeProvider)
+```
+
+```objc
+- (instancetype) initWithHeaderTextProvider:(CLKTextProvider *) headerTextProvider body1TextProvider:(CLKTextProvider *) body1TextProvider gaugeProvider:(CLKGaugeProvider *) gaugeProvider;
 ```
 
 ## Parameters
@@ -22,7 +27,8 @@ init(headerTextProvider: CLKTextProvider, body1TextProvider: CLKTextProvider, ga
 
 ## See Also
 
-- [init(headerImageProvider: CLKFullColorImageProvider?, headerTextProvider: CLKTextProvider, body1TextProvider: CLKTextProvider, gaugeProvider: CLKGaugeProvider)](clkcomplicationtemplategraphicrectangulartextgauge/init(headerimageprovider:headertextprovider:body1textprovider:gaugeprovider:).md)
+### Creating the Template
+- [init(headerImageProvider: CLKFullColorImageProvider?, headerTextProvider: CLKTextProvider, body1TextProvider: CLKTextProvider, gaugeProvider: CLKGaugeProvider)](./init%28headerimageprovider,headertextprovider,body1textprovider,gaugeprovider%29.md)
   Creates a new template that has a header row with an image and text, body text, and a gauge.
 
 

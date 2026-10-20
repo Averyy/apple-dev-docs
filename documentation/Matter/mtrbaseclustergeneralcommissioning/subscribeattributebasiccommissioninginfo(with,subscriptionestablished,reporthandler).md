@@ -1,7 +1,8 @@
 # subscribeAttributeBasicCommissioningInfo(with:subscriptionEstablished:reportHandler:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 func subscribeAttributeBasicCommissioningInfo(with params: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: @escaping (MTRGeneralCommissioningClusterBasicCommissioningInfo?, (any Error)?) -> Void)
+```
+
+```objc
+- (void) subscribeAttributeBasicCommissioningInfoWithParams:(MTRSubscribeParams *) params subscriptionEstablished:(MTRSubscriptionEstablishedHandler) subscriptionEstablished reportHandler:(void (^)(MTRGeneralCommissioningClusterBasicCommissioningInfo *value, NSError *error)) reportHandler;
 ```
 
 

@@ -1,7 +1,8 @@
 # defaultLayer
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default layer.
 
@@ -21,7 +22,7 @@ static var defaultLayer: RenderLayer { get }
 
 #### Discussion
 
-Entities without a [`RenderLayerComponent`](renderlayercomponent.md) belong to this layer. Lights illuminate only this layer unless their `layers` set is changed.
+Entities without a [`RenderLayerComponent`](../renderlayercomponent.md) belong to this layer. Lights illuminate only this layer unless their `layers` set is changed.
 
 
 ---

@@ -1,14 +1,15 @@
 # BIDIRECTIONAL_SPEAKERPHONE_NO_ECHO_REDX
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 BIDIRECTIONAL_SPEAKERPHONE_NO_ECHO_REDX = 0x0403
 ```
 

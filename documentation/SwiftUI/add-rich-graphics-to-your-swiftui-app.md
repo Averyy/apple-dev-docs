@@ -1,6 +1,8 @@
 # Add rich graphics to your SwiftUI app
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: Sample Code  
+**Download**: [AddRichGraphicsToYourSwiftUIApp.zip](https://docs-assets.developer.apple.com/published/70a8e16443bb/AddRichGraphicsToYourSwiftUIApp.zip)
 
 Make your apps stand out by adding background materials, vibrancy, custom graphics, and animations.
 
@@ -13,13 +15,14 @@ Make your apps stand out by adding background materials, vibrancy, custom graphi
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC21 session 10021: [`Add Rich Graphics to Your SwiftUI App`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10021/).
+> **Note**: This sample code project is associated with WWDC21 session 10021: [Add Rich Graphics to Your SwiftUI App](https://developer.apple.com/wwdc21/10021/).
 
 ## See Also
 
-- [struct Canvas](canvas.md)
+### Immediate mode drawing
+- [struct Canvas](./canvas.md)
   A view type that supports immediate mode drawing.
-- [struct GraphicsContext](graphicscontext.md)
+- [struct GraphicsContext](./graphicscontext.md)
   An immediate mode drawing destination, and its current state.
 
 

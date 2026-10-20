@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOTrackingLeakScanEnd](3943376-anonymous/kiotrackingleakscanend.md)
-- [kIOTrackingLeakScanStart](3943376-anonymous/kiotrackingleakscanstart.md)
+- [kIOTrackingLeakScanEnd](./api-3943376-anonymous/kiotrackingleakscanend.md)
+- [kIOTrackingLeakScanStart](./api-3943376-anonymous/kiotrackingleakscanstart.md)
 
 
 ---

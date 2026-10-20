@@ -1,7 +1,8 @@
 # opacityThreshold
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A threshold below which RealityKit ignores opacity.
 
@@ -11,7 +12,7 @@ A threshold below which RealityKit ignores opacity.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,21 +22,22 @@ var opacityThreshold: Float? { get set }
 
 ## Mentions
 
-- [Applying realistic material and lighting effects to entities](applying-realistic-material-and-lighting-effects-to-entities.md)
+- [Applying realistic material and lighting effects to entities](../applying-realistic-material-and-lighting-effects-to-entities.md)
 
 #### Discussion
 
 When `opacityThreshold` is set, RealityKit discards pixels with opacity values less than the `opacityThreshold`, and renders opacity values greater than or equal to `opacityThreshold` fully opaque.
 
-> **Note**: When the `opacityThreshold` property is set, the blend mode of the [`blending`](physicallybasedmaterial/blending-swift.property.md) property is ignored and the renderer applies the masking behavior.
+> **Note**: When the `opacityThreshold` property is set, the blend mode of the [`blending`](./blending-swift.property.md) property is ignored and the renderer applies the masking behavior.
 
 ## See Also
 
-- [PhysicallyBasedMaterial.Blending.opaque](physicallybasedmaterial/blending-swift.enum/opaque.md)
+### Specifying opacity
+- [PhysicallyBasedMaterial.Blending.opaque](./blending-swift.enum/opaque.md)
   An opaque surface.
-- [case transparent(opacity: PhysicallyBasedMaterial.Opacity)](physicallybasedmaterial/blending-swift.enum/transparent(opacity:).md)
+- [case transparent(opacity: PhysicallyBasedMaterial.Opacity)](./blending-swift.enum/transparent%28opacity%29.md)
   A surface that’s transparent.
-- [PhysicallyBasedMaterial.Opacity](physicallybasedmaterial/opacity.md)
+- [PhysicallyBasedMaterial.Opacity](./opacity.md)
   An object that defines the opacity of an entity.
 
 

@@ -1,7 +1,8 @@
 # ITLibMediaItemMediaKind.kindMusicVideo
 
 **Framework**: iTunes Library  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The media item is a music video.
 
@@ -15,37 +16,42 @@ The media item is a music video.
 case kindMusicVideo
 ```
 
+```c
+ITLibMediaItemMediaKindMusicVideo
+```
+
 ## See Also
 
-- [ITLibMediaItemMediaKind.kindUnknown](itlibmediaitemmediakind/kindunknown.md)
+### Media Kinds
+- [ITLibMediaItemMediaKind.kindUnknown](./kindunknown.md)
   The media item kind is unknown.
-- [ITLibMediaItemMediaKind.kindSong](itlibmediaitemmediakind/kindsong.md)
+- [ITLibMediaItemMediaKind.kindSong](./kindsong.md)
   The media item is a song.
-- [ITLibMediaItemMediaKind.kindMovie](itlibmediaitemmediakind/kindmovie.md)
+- [ITLibMediaItemMediaKind.kindMovie](./kindmovie.md)
   The media item is a movie.
-- [ITLibMediaItemMediaKind.kindPodcast](itlibmediaitemmediakind/kindpodcast.md)
+- [ITLibMediaItemMediaKind.kindPodcast](./kindpodcast.md)
   The media item is an audio or a video podcast.
-- [ITLibMediaItemMediaKind.kindAudiobook](itlibmediaitemmediakind/kindaudiobook.md)
+- [ITLibMediaItemMediaKind.kindAudiobook](./kindaudiobook.md)
   The media item is an audiobook.
-- [ITLibMediaItemMediaKind.kindPDFBooklet](itlibmediaitemmediakind/kindpdfbooklet.md)
+- [ITLibMediaItemMediaKind.kindPDFBooklet](./kindpdfbooklet.md)
   The media item is an unwrapped PDF file that’s part of a music album.
-- [ITLibMediaItemMediaKind.kindTVShow](itlibmediaitemmediakind/kindtvshow.md)
+- [ITLibMediaItemMediaKind.kindTVShow](./kindtvshow.md)
   The media item is a TV show.
-- [ITLibMediaItemMediaKind.kindInteractiveBooklet](itlibmediaitemmediakind/kindinteractivebooklet.md)
+- [ITLibMediaItemMediaKind.kindInteractiveBooklet](./kindinteractivebooklet.md)
   The media item is a QuickTime movie with embedded Flash.
-- [ITLibMediaItemMediaKind.kindHomeVideo](itlibmediaitemmediakind/kindhomevideo.md)
+- [ITLibMediaItemMediaKind.kindHomeVideo](./kindhomevideo.md)
   The media item is a non-iTunes Store movie.
-- [ITLibMediaItemMediaKind.kindRingtone](itlibmediaitemmediakind/kindringtone.md)
+- [ITLibMediaItemMediaKind.kindRingtone](./kindringtone.md)
   The media item is an iOS ringtone.
-- [ITLibMediaItemMediaKind.kindDigitalBooklet](itlibmediaitemmediakind/kinddigitalbooklet.md)
+- [ITLibMediaItemMediaKind.kindDigitalBooklet](./kinddigitalbooklet.md)
   The media item is an iTunes Extra or an iTunes LP item.
-- [ITLibMediaItemMediaKind.kindIOSApplication](itlibmediaitemmediakind/kindiosapplication.md)
+- [ITLibMediaItemMediaKind.kindIOSApplication](./kindiosapplication.md)
   The media item is an iOS app.
-- [ITLibMediaItemMediaKind.kindVoiceMemo](itlibmediaitemmediakind/kindvoicememo.md)
+- [ITLibMediaItemMediaKind.kindVoiceMemo](./kindvoicememo.md)
   The media item is a recorded voice memo.
-- [ITLibMediaItemMediaKind.kindiTunesU](itlibmediaitemmediakind/kinditunesu.md)
+- [ITLibMediaItemMediaKind.kindiTunesU](./kinditunesu.md)
   The media item is an iTunes U audio or video file.
-- [ITLibMediaItemMediaKind.kindBook](itlibmediaitemmediakind/kindbook.md)
+- [ITLibMediaItemMediaKind.kindBook](./kindbook.md)
   The media item is an EPUB file or an iBooks Author book.
 
 

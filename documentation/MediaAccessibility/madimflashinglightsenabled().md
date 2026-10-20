@@ -1,7 +1,8 @@
 # MADimFlashingLightsEnabled()
 
 **Framework**: Media Accessibility  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value that indicates whether the flashing lights setting is enabled on the device.
 
@@ -19,13 +20,18 @@ Returns a Boolean value that indicates whether the flashing lights setting is en
 func MADimFlashingLightsEnabled() -> Bool
 ```
 
+```c
+extern bool MADimFlashingLightsEnabled();
+```
+
 ## See Also
 
-- [Responding to changes in the flashing lights setting](responding-to-changes-in-the-flashing-lights-setting.md)
+### Dim flashing lights
+- [Responding to changes in the flashing lights setting](./responding-to-changes-in-the-flashing-lights-setting.md)
   Adjust your UI when a person chooses to dim flashing lights on their Apple device.
-- [let kMADimFlashingLightsChangedNotification: CFString](kmadimflashinglightschangednotification.md)
+- [let kMADimFlashingLightsChangedNotification: CFString](./kmadimflashinglightschangednotification.md)
   A notification that posts when a person changes the flashing lights setting on the device.
-- [class MAFlashingLightsProcessor](maflashinglightsprocessor.md)
+- [class MAFlashingLightsProcessor](./maflashinglightsprocessor.md)
   A class that processes a framebuffer object to detect and dim sequences of flashing lights.
 
 

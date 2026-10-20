@@ -1,7 +1,8 @@
 # GCControllerDidDisconnect
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that posts after a controller disconnects from the device.
 
@@ -21,35 +22,36 @@ static let GCControllerDidDisconnect: NSNotification.Name
 
 #### Discussion
 
-The notification object is the [`GCController`](https://developer.apple.com/documentation/gamecontroller/gccontroller) object that disconnects from the device.
+The notification object is the [`GCController`](../../../GameController/gccontroller.md) object that disconnects from the device.
 
 The system posts this notification on the main actor.
 
 ## See Also
 
-- [static let GCControllerDidConnect: NSNotification.Name](nsnotification/name-swift.struct/gccontrollerdidconnect.md)
+### Game Controller
+- [static let GCControllerDidConnect: NSNotification.Name](./gccontrollerdidconnect.md)
   A notification that posts after a controller connects to the device.
-- [static let GCControllerDidBecomeCurrent: NSNotification.Name](nsnotification/name-swift.struct/gccontrollerdidbecomecurrent.md)
+- [static let GCControllerDidBecomeCurrent: NSNotification.Name](./gccontrollerdidbecomecurrent.md)
   A notification that posts when a controller becomes the current controller.
-- [static let GCControllerDidStopBeingCurrent: NSNotification.Name](nsnotification/name-swift.struct/gccontrollerdidstopbeingcurrent.md)
+- [static let GCControllerDidStopBeingCurrent: NSNotification.Name](./gccontrollerdidstopbeingcurrent.md)
   A notification that posts when a controller stops being the current controller.
-- [static let GCControllerUserCustomizationsDidChange: NSNotification.Name](nsnotification/name-swift.struct/gccontrollerusercustomizationsdidchange.md)
+- [static let GCControllerUserCustomizationsDidChange: NSNotification.Name](./gccontrollerusercustomizationsdidchange.md)
   A notification that posts when the user customizes the button mappings or other settings of a controller.
-- [static let GCKeyboardDidConnect: NSNotification.Name](nsnotification/name-swift.struct/gckeyboarddidconnect.md)
+- [static let GCKeyboardDidConnect: NSNotification.Name](./gckeyboarddidconnect.md)
   A notification that posts after a keyboard connects to the device.
-- [static let GCKeyboardDidDisconnect: NSNotification.Name](nsnotification/name-swift.struct/gckeyboarddiddisconnect.md)
+- [static let GCKeyboardDidDisconnect: NSNotification.Name](./gckeyboarddiddisconnect.md)
   A notification that posts after a single keyboard, or the last of multiple keyboards, disconnects from the device.
-- [static let GCMouseDidBecomeCurrent: NSNotification.Name](nsnotification/name-swift.struct/gcmousedidbecomecurrent.md)
+- [static let GCMouseDidBecomeCurrent: NSNotification.Name](./gcmousedidbecomecurrent.md)
   A notification that posts when a mouse becomes the most recent mouse that the user connects.
-- [static let GCMouseDidConnect: NSNotification.Name](nsnotification/name-swift.struct/gcmousedidconnect.md)
+- [static let GCMouseDidConnect: NSNotification.Name](./gcmousedidconnect.md)
   A notification that posts after a mouse connects to the device.
-- [static let GCMouseDidDisconnect: NSNotification.Name](nsnotification/name-swift.struct/gcmousediddisconnect.md)
+- [static let GCMouseDidDisconnect: NSNotification.Name](./gcmousediddisconnect.md)
   A notification that posts after a mouse disconnects from the device.
-- [static let GCMouseDidStopBeingCurrent: NSNotification.Name](nsnotification/name-swift.struct/gcmousedidstopbeingcurrent.md)
+- [static let GCMouseDidStopBeingCurrent: NSNotification.Name](./gcmousedidstopbeingcurrent.md)
   A notification that posts when a mouse stops being the most recent mouse that the user connects.
-- [static let GCRacingWheelDidConnect: NSNotification.Name](nsnotification/name-swift.struct/gcracingwheeldidconnect.md)
+- [static let GCRacingWheelDidConnect: NSNotification.Name](./gcracingwheeldidconnect.md)
   A notification that posts after a racing wheel controller connects to the device.
-- [static let GCRacingWheelDidDisconnect: NSNotification.Name](nsnotification/name-swift.struct/gcracingwheeldiddisconnect.md)
+- [static let GCRacingWheelDidDisconnect: NSNotification.Name](./gcracingwheeldiddisconnect.md)
   A notification that posts after a racing wheel controller disconnects from the device.
 
 

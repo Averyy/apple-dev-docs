@@ -1,7 +1,8 @@
 # startRecording()
 
 **Framework**: SensorKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts recording sensor data.
 
@@ -20,7 +21,7 @@ final func startRecording() async throws
 
 The reader must be authorized for the sensor for this to succeed. This starts recording on this device and any paired devices. If other readers have already started the sensor recording this reader’s interest in recording will be maintained. Other readers in other apps for the same sensor will not affect the recording status of this reader.
 
-> **Note**: An error if recording cannot be started due to permissions, hardware limitations, or other system restrictions
+> **Throws**: An error if recording cannot be started due to permissions, hardware limitations, or other system restrictions
 
 #### Example
 

@@ -1,7 +1,8 @@
 # updateInteractiveMovementTargetPosition(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the position of the item within the collection view’s bounds.
 
@@ -18,11 +19,15 @@ Updates the position of the item within the collection view’s bounds.
 func updateInteractiveMovementTargetPosition(_ targetPosition: CGPoint)
 ```
 
+```objc
+- (void) updateInteractiveMovementTargetPosition:(CGPoint) targetPosition;
+```
+
 #### Discussion
 
 When moving an item interactively, use this method to provide the collection view with the item’s new position. When using a gesture recognizer to track user interactions with the item, call this method each time the gesture recognizer reports a location change. The collection view uses the new point to determine if the item needs to be repositioned and if the current layout needs to be updated.
 
-For each position change, the collection view reports the change to the [`collectionView(_:targetIndexPathForMoveFromItemAt:toProposedIndexPath:)`](uicollectionviewdelegate/collectionview(_:targetindexpathformovefromitemat:toproposedindexpath:).md) method of its delegate
+For each position change, the collection view reports the change to the [`collectionView(_:targetIndexPathForMoveFromItemAt:toProposedIndexPath:)`](../uicollectionviewdelegate/collectionview%28_,targetindexpathformovefromitemat,toproposedindexpath%29.md) method of its delegate
 
 ## Parameters
 
@@ -30,11 +35,12 @@ For each position change, the collection view reports the change to the [`collec
 
 ## See Also
 
-- [func beginInteractiveMovementForItem(at: IndexPath) -> Bool](uicollectionview/begininteractivemovementforitem(at:).md)
+### Reordering items interactively
+- [func beginInteractiveMovementForItem(at: IndexPath) -> Bool](./begininteractivemovementforitem%28at%29.md)
   Initiates the interactive movement of the item at the specified index path.
-- [func endInteractiveMovement()](uicollectionview/endinteractivemovement.md)
+- [func endInteractiveMovement()](./endinteractivemovement%28%29.md)
   Ends interactive movement tracking and moves the target item to its new location.
-- [func cancelInteractiveMovement()](uicollectionview/cancelinteractivemovement.md)
+- [func cancelInteractiveMovement()](./cancelinteractivemovement%28%29.md)
   Ends interactive movement tracking and returns the target item to its original location.
 
 

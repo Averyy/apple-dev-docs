@@ -1,7 +1,8 @@
 # priority
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The eviction priority for a downloaded asset.
 
@@ -18,11 +19,16 @@ The eviction priority for a downloaded asset.
 var priority: AVAssetDownloadedAssetEvictionPriority { get set }
 ```
 
+```objc
+@property (nonatomic, copy) AVAssetDownloadedAssetEvictionPriority priority;
+```
+
 ## See Also
 
-- [var expirationDate: Date](avmutableassetdownloadstoragemanagementpolicy/expirationdate.md)
+### Managing storage
+- [var expirationDate: Date](./expirationdate.md)
   The expiration date for an asset.
-- [struct AVAssetDownloadedAssetEvictionPriority](avassetdownloadedassetevictionpriority.md)
+- [struct AVAssetDownloadedAssetEvictionPriority](../avassetdownloadedassetevictionpriority.md)
   Constants that define eviction priorities for a storage management policy.
 
 

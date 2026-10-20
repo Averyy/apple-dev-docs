@@ -1,7 +1,8 @@
 # byMoving
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to perform replacing by moving a file.
 
@@ -18,6 +19,10 @@ An option to perform replacing by moving a file.
 
 ```swift
 static var byMoving: NSFileVersion.ReplacingOptions { get }
+```
+
+```c
+NSFileVersionReplacingByMoving
 ```
 
 #### Discussion

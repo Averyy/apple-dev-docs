@@ -1,7 +1,8 @@
 # makeMaterialResource(descriptor:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously compiles a material resource from a geometry modifier, surface shader, and lighting function.
 
@@ -18,13 +19,19 @@ nonisolated
 (nonsending) final func makeMaterialResource(descriptor: LowLevelMaterialResource.Descriptor) async throws -> sending LowLevelMaterialResource
 ```
 
+**Other overloads**:
+
+```swift
+final func makeMaterialResource(descriptor: LowLevelMaterialResource.Descriptor) throws -> sending LowLevelMaterialResource
+```
+
 #### Return Value
 
-A newly compiled [`LowLevelMaterialResource`](lowlevelmaterialresource.md).
+A newly compiled [`LowLevelMaterialResource`](../lowlevelmaterialresource.md).
 
 #### Discussion
 
-> **Note**: An error if shader compilation fails.
+> **Throws**: An error if shader compilation fails.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # templateImage
 
 **Framework**: Safari Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -13,6 +14,10 @@
 ```swift
 @NSCopying
 var templateImage: UIImage? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) UIImage * templateImage;
 ```
 
 

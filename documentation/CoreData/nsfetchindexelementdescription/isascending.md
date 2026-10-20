@@ -1,7 +1,8 @@
 # isAscending
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that controls whether an index that supports direction is an ascending or descending index.
 
@@ -20,14 +21,19 @@ A Boolean value that controls whether an index that supports direction is an asc
 var isAscending: Bool { get set }
 ```
 
+```objc
+@property (getter=isAscending) BOOL ascending;
+```
+
 ## See Also
 
-- [var collationType: NSFetchIndexElementType](nsfetchindexelementdescription/collationtype.md)
+### Inspecting an Index Element Description
+- [var collationType: NSFetchIndexElementType](./collationtype.md)
   The type of collation that the index element uses, either binary or R-tree.
-- [var indexDescription: NSFetchIndexDescription?](nsfetchindexelementdescription/indexdescription.md)
-- [var property: NSPropertyDescription?](nsfetchindexelementdescription/property.md)
+- [var indexDescription: NSFetchIndexDescription?](./indexdescription.md)
+- [var property: NSPropertyDescription?](./property.md)
   A property description.
-- [var propertyName: String?](nsfetchindexelementdescription/propertyname.md)
+- [var propertyName: String?](./propertyname.md)
   The specified name in the property description.
 
 

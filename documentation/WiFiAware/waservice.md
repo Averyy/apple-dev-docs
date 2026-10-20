@@ -1,7 +1,8 @@
 # WAService
 
 **Framework**: Wi-Fi Aware  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines a service that a device can publish or subscribe to.
 
@@ -20,41 +21,42 @@ protocol WAService : CustomStringConvertible, Decodable, Encodable, Hashable, Id
 
 A service represents a specific function or use case that’s performed over Wi-Fi Aware. Services are specific functionality and protocols that your app can publish or subscribe to on other devices.
 
-Services are identified by a service name string that follows the rules in [`RFC 6763`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc6763#section-4.1.2) and [`RFC 6335`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc6335#section-5.1). For a service name of `example-service`, the full service name encoded in the `Info.plist` and sent over the air is either `_example-service._tcp` if using the TCP protocol or `_example-service._udp` if using any other protocol.
+Services are identified by a service name string that follows the rules in [RFC 6763](https://datatracker.ietf.org/doc/html/rfc6763#section-4.1.2) and [RFC 6335](https://datatracker.ietf.org/doc/html/rfc6335#section-5.1). For a service name of `example-service`, the full service name encoded in the `Info.plist` and sent over the air is either `_example-service._tcp` if using the TCP protocol or `_example-service._udp` if using any other protocol.
 
-You must register your app with a unique name in the [`IANA service name registry`](https://developer.apple.comhttps://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xml) to avoid conflicts with other apps and devices.
+You must register your app with a unique name in the [IANA service name registry](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xml) to avoid conflicts with other apps and devices.
 
 If you have an invalid service name in the `Info.plist`, your app crashes.
 
 ## Topics
 
 ### Selecting from your app’s services
-- [static var allServices: [String : Self]](waservice/allservices.md)
+- [static var allServices: [String : Self]](./waservice/allservices.md)
   A dictionary of all services declared by your app, indexed by service name.
 ### Checking a service name
-- [var name: String](waservice/name.md)
+- [var name: String](./waservice/name.md)
   The full name of the service, as sent over the air.
 
 ## Relationships
 
 ### Inherits From
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [WAPublishableService](wapublishableservice.md)
-- [WASubscribableService](wasubscribableservice.md)
+- [WAPublishableService](./wapublishableservice.md)
+- [WASubscribableService](./wasubscribableservice.md)
 
 ## See Also
 
-- [struct WASubscribableService](wasubscribableservice.md)
+### Services to discover
+- [struct WASubscribableService](./wasubscribableservice.md)
   A service your app discovers on remote devices and can connect to.
-- [struct WAPublishableService](wapublishableservice.md)
+- [struct WAPublishableService](./wapublishableservice.md)
   A service, hosted by your app, that remote devices can connect to.
 
 

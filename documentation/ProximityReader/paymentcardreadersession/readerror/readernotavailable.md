@@ -1,7 +1,8 @@
 # PaymentCardReaderSession.ReadError.readerNotAvailable
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The reader is temporarily unavailable, try again in a few seconds.
 

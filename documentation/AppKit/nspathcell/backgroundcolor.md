@@ -1,7 +1,8 @@
 # backgroundColor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the current background color of the receiver.
 
@@ -15,15 +16,20 @@ Returns the current background color of the receiver.
 var backgroundColor: NSColor? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSColor * backgroundColor;
+```
+
 #### Return Value
 
 The background color.
 
 ## See Also
 
-- [var placeholderAttributedString: NSAttributedString?](nspathcell/placeholderattributedstring.md)
+### Setting Cell Appearance
+- [var placeholderAttributedString: NSAttributedString?](./placeholderattributedstring.md)
   Sets the value of the placeholder attributed string.
-- [var placeholderString: String?](nspathcell/placeholderstring.md)
+- [var placeholderString: String?](./placeholderstring.md)
   Returns the placeholder string.
 
 

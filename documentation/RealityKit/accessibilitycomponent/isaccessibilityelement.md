@@ -1,7 +1,8 @@
 # isAccessibilityElement
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the receiver is an accessibility entity that an assistive application can access.
 
@@ -11,7 +12,7 @@ A Boolean value indicating whether the receiver is an accessibility entity that 
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ var isAccessibilityElement: Bool
 
 ## See Also
 
-- [var label: LocalizedStringResource?](accessibilitycomponent/label.md)
+### Providing accessibility information
+- [var label: LocalizedStringResource?](./label.md)
   A succinct label that identifies the entity, in a localized string key.
-- [var value: LocalizedStringResource?](accessibilitycomponent/value.md)
+- [var value: LocalizedStringResource?](./value.md)
   A localized string key that represents the current value of the entity.
 
 

@@ -1,7 +1,8 @@
 # RemoveProvisioningProfileCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to remove a previously installed provisioning profile from a device.
 
@@ -16,14 +17,14 @@ The command to remove a previously installed provisioning profile from a device.
 
 ## Declaration
 
-```swift
+```
 object RemoveProvisioningProfileCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object RemoveProvisioningProfileCommand.Command](removeprovisioningprofilecommand/command-data.dictionary.md)
+- [object RemoveProvisioningProfileCommand.Command](./removeprovisioningprofilecommand/command-data.dictionary.md)
   The command to remove a previously installed provisioning profile from a device.
 
 ## Properties
@@ -33,7 +34,8 @@ object RemoveProvisioningProfileCommand
 
 ## See Also
 
-- [object RemoveProvisioningProfileResponse](removeprovisioningprofileresponse.md)
+### Commands and responses
+- [object RemoveProvisioningProfileResponse](./removeprovisioningprofileresponse.md)
   A response from the device after it processes the command to remove a previously installed provisioning profile from a device.
 
 

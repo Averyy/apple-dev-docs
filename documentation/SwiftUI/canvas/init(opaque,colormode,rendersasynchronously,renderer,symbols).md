@@ -1,7 +1,8 @@
 # init(opaque:colorMode:rendersAsynchronously:renderer:symbols:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and configures a canvas that you supply with renderable child views.
 
@@ -23,9 +24,9 @@ init(opaque: Bool = false, colorMode: ColorRenderingMode = .nonLinear, rendersAs
 
 #### Discussion
 
-This initializer behaves like the [`init(opaque:colorMode:rendersAsynchronously:renderer:)`](canvas/init(opaque:colormode:rendersasynchronously:renderer:).md) initializer, except that you also provide a collection of SwiftUI views for the renderer to use as drawing elements.
+This initializer behaves like the [`init(opaque:colorMode:rendersAsynchronously:renderer:)`](./init%28opaque,colormode,rendersasynchronously,renderer%29.md) initializer, except that you also provide a collection of SwiftUI views for the renderer to use as drawing elements.
 
-SwiftUI stores a rendered version of each child view that you specify in the `symbols` content builder and makes these available to the canvas. Tag each child view so that you can retrieve it from within the renderer using the [`resolveSymbol(id:)`](graphicscontext/resolvesymbol(id:).md) method. For example, you can create a scatter plot using a passed-in child view as the mark for each data point:
+SwiftUI stores a rendered version of each child view that you specify in the `symbols` content builder and makes these available to the canvas. Tag each child view so that you can retrieve it from within the renderer using the [`resolveSymbol(id:)`](../graphicscontext/resolvesymbol%28id%29.md) method. For example, you can create a scatter plot using a passed-in child view as the mark for each data point:
 
 ```swift
 struct ScatterPlotView<Mark: View>: View {
@@ -58,23 +59,24 @@ You can use any SwiftUI view for the `mark` input:
 ScatterPlotView(rects: rects, mark: Image(systemName: "circle"))
 ```
 
-If the `rects` input contains 50 randomly arranged [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) instances, SwiftUI draws a plot like this:
+If the `rects` input contains 50 randomly arranged [`CGRect`](../../CoreFoundation/cgrect.md) instances, SwiftUI draws a plot like this:
 
-![A screenshot of a scatter plot inside a blue rectangle, containing](/images/com.apple.SwiftUI/Canvas-init-1@2x.png)
+![A screenshot of a scatter plot inside a blue rectangle, containing](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Canvas-init-1@2x.png)
 
 The symbol inputs, like all other elements that you draw to the canvas, lack individual accessibility and interactivity, even if the original SwiftUI view has these attributes. However, you can add accessibility and interactivity modifers to the canvas as a whole.
 
 ## Parameters
 
 - `opaque`: A Boolean that indicates whether the canvas is fully opaque. You might be able to improve performance by setting this value to `true`, but then drawing a non-opaque image into the context produces undefined results. The default is `false`.
-- `colorMode`: A working color space and storage format of the canvas. The default is [`ColorRenderingMode.nonLinear`](colorrenderingmode/nonlinear.md).
+- `colorMode`: A working color space and storage format of the canvas. The default is [`ColorRenderingMode.nonLinear`](../colorrenderingmode/nonlinear.md).
 - `rendersAsynchronously`: A Boolean that indicates whether the canvas can present its contents to its parent view asynchronously. The default is `false`.
 - `renderer`: A closure in which you conduct immediate mode drawing. The closure takes two inputs: a context that you use to issue drawing commands and a size — representing the current size of the canvas — that you can use to customize the content. The canvas calls the renderer any time it needs to redraw the content.
-- `symbols`: A [`ContentBuilder`](contentbuilder.md) that you use to supply SwiftUI views to the canvas for use during drawing. Uniquely tag each view using the `View/tag(_:)` modifier, so that you can find them from within your renderer using the [`resolveSymbol(id:)`](graphicscontext/resolvesymbol(id:).md) method.
+- `symbols`: A [`ContentBuilder`](../contentbuilder.md) that you use to supply SwiftUI views to the canvas for use during drawing. Uniquely tag each view using the `View/tag(_:)` modifier, so that you can find them from within your renderer using the [`resolveSymbol(id:)`](../graphicscontext/resolvesymbol%28id%29.md) method.
 
 ## See Also
 
-- [init(opaque: Bool, colorMode: ColorRenderingMode, rendersAsynchronously: Bool, renderer: (inout GraphicsContext, CGSize) -> Void)](canvas/init(opaque:colormode:rendersasynchronously:renderer:).md)
+### Creating a canvas
+- [init(opaque: Bool, colorMode: ColorRenderingMode, rendersAsynchronously: Bool, renderer: (inout GraphicsContext, CGSize) -> Void)](./init%28opaque,colormode,rendersasynchronously,renderer%29.md)
   Creates and configures a canvas.
 
 

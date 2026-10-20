@@ -1,7 +1,8 @@
 # preferredLocale
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates the preferred locale for the addresses the request returns, or `nil` if the framework should use the device locale.
 
@@ -20,9 +21,14 @@ A value that indicates the preferred locale for the addresses the request return
 var preferredLocale: Locale? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSLocale * preferredLocale;
+```
+
 ## See Also
 
-- [func getMapItems(completionHandler: ([MKMapItem]?, (any Error)?) -> Void)](mkreversegeocodingrequest/getmapitems(completionhandler:).md)
+### Getting information about map items and the reverse geocoder’s locale’
+- [func getMapItems(completionHandler: ([MKMapItem]?, (any Error)?) -> Void)](./getmapitems%28completionhandler%29.md)
   Returns the map items relevant to the reverse geocoded location.
 
 

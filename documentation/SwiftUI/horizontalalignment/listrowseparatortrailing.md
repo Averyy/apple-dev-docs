@@ -1,7 +1,8 @@
 # listRowSeparatorTrailing
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A guide marking the trailing edge of a `List` row separator.
 
@@ -22,17 +23,18 @@ static let listRowSeparatorTrailing: HorizontalAlignment
 
 Use this guide to align the trailing end of the bottom `List` row separator with any other horizontal guide of a view that is part of the cell content.
 
-To change the visibility or tint of the row separator use respectively [`listRowSeparator(_:edges:)`](view/listrowseparator(_:edges:).md) and [`listRowSeparatorTint(_:edges:)`](view/listrowseparatortint(_:edges:).md).
+To change the visibility or tint of the row separator use respectively [`listRowSeparator(_:edges:)`](../view/listrowseparator%28_,edges%29.md) and [`listRowSeparatorTint(_:edges:)`](../view/listrowseparatortint%28_,edges%29.md).
 
 ## See Also
 
-- [static let leading: HorizontalAlignment](horizontalalignment/leading.md)
+### Getting guides
+- [static let leading: HorizontalAlignment](./leading.md)
   A guide that marks the leading edge of the view.
-- [static let center: HorizontalAlignment](horizontalalignment/center.md)
+- [static let center: HorizontalAlignment](./center.md)
   A guide that marks the horizontal center of the view.
-- [static let trailing: HorizontalAlignment](horizontalalignment/trailing.md)
+- [static let trailing: HorizontalAlignment](./trailing.md)
   A guide that marks the trailing edge of the view.
-- [static let listRowSeparatorLeading: HorizontalAlignment](horizontalalignment/listrowseparatorleading.md)
+- [static let listRowSeparatorLeading: HorizontalAlignment](./listrowseparatorleading.md)
   A guide marking the leading edge of a `List` row separator.
 
 

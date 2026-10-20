@@ -1,7 +1,8 @@
 # Metric.Value.failing
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A failing result.
 

@@ -1,7 +1,8 @@
 # start()
 
 **Framework**: Immersive Media Support  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts the sender.
 

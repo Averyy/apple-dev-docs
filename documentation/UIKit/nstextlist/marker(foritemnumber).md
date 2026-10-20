@@ -1,7 +1,8 @@
 # marker(forItemNumber:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the computed value for a specific ordinal position in the list.
 
@@ -19,6 +20,10 @@ Returns the computed value for a specific ordinal position in the list.
 func marker(forItemNumber itemNumber: Int) -> String
 ```
 
+```objc
+- (NSString *) markerForItemNumber:(NSInteger) itemNumber;
+```
+
 #### Return Value
 
 The computed maker value for `itemNumber`.
@@ -29,11 +34,12 @@ The computed maker value for `itemNumber`.
 
 ## See Also
 
-- [var markerFormat: NSTextList.MarkerFormat](nstextlist/markerformat-swift.property.md)
+### Working with markers
+- [var markerFormat: NSTextList.MarkerFormat](./markerformat-swift.property.md)
   Returns the marker format string used by the receiver.
-- [NSTextList.MarkerFormat](nstextlist/markerformat-swift.struct.md)
+- [NSTextList.MarkerFormat](./markerformat-swift.struct.md)
   Constants that describe marker symbols you can apply to list elements in text lists.
-- [class var includesTextListMarkers: Bool](nstextlist/includestextlistmarkers.md)
+- [class var includesTextListMarkers: Bool](./includestextlistmarkers.md)
   A Boolean value that indicates whether TextKit includes text list markers in the text content.
 
 

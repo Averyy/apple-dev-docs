@@ -1,7 +1,8 @@
 # BusReservation
 
 **Framework**: Siri Event Suggestions Markup  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A reservation for bus travel.
 
@@ -10,22 +11,22 @@ A reservation for bus travel.
 
 ## Declaration
 
-```swift
+```
 object BusReservation
 ```
 
 ## Topics
 
 ### Defining a Bus Reservation
-- [object BusTrip](bustrip.md)
+- [object BusTrip](./bustrip.md)
   Location and scheduling information for a bus trip.
-- [object BusStation](busstation.md)
+- [object BusStation](./busstation.md)
   The name and location of a bus station.
 
 ## Properties
 
 - `@context` (@context) *(required)*
-- `@type` (string) *(required)*
+- `@type` (string) *(required)*: **Allowed Values**: `BusReservation`
 - `reservationFor` (BusTrip) *(required)*: Details about the bus trip.
 - `reservationId` (reservationId) *(required)*: A unique identifier for the reservation, consistent in all markup.
 - `reservationStatus` (reservationStatus) *(required)*: The reservation’s current status.
@@ -36,13 +37,14 @@ object BusReservation
 
 ## See Also
 
-- [object FlightReservation](flightreservation.md)
+### Transportation
+- [object FlightReservation](./flightreservation.md)
   An airplane flight reservation.
-- [object TrainReservation](trainreservation.md)
+- [object TrainReservation](./trainreservation.md)
   A reservation for train travel.
-- [object BoatReservation](boatreservation.md)
+- [object BoatReservation](./boatreservation.md)
   A reservation for boat travel.
-- [object RentalCarReservation](rentalcarreservation.md)
+- [object RentalCarReservation](./rentalcarreservation.md)
   A reservation to rent a car.
 
 

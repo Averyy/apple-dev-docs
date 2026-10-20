@@ -1,7 +1,8 @@
 # init(_:configuration:)
 
 **Framework**: ExtensionKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a scene configuration object from a closure and extension configuration.
 
@@ -23,7 +24,7 @@ Creates a scene configuration object from a closure and extension configuration.
 
 #### Discussion
 
-To provide a user interface, the extension’s `configuration` must be an [`AppExtensionSceneConfiguration`](appextensionsceneconfiguration.md), which combines an [`AppExtensionScene`](appextensionscene.md) with an optional non-UI [`AppExtensionConfiguration`](https://developer.apple.com/documentation/extensionfoundation/appextensionconfiguration). The `configuration` value you pass manages global interprocess communications with the host process, while the `content` value defines the extension’s user interface.
+To provide a user interface, the extension’s `configuration` must be an [`AppExtensionSceneConfiguration`](../appextensionsceneconfiguration.md), which combines an [`AppExtensionScene`](../appextensionscene.md) with an optional non-UI [`AppExtensionConfiguration`](../../ExtensionFoundation/appextensionconfiguration.md). The `configuration` value you pass manages global interprocess communications with the host process, while the `content` value defines the extension’s user interface.
 
 ## Parameters
 
@@ -32,7 +33,8 @@ To provide a user interface, the extension’s `configuration` must be an [`AppE
 
 ## See Also
 
-- [init<Content>(@autoclosure () -> Content)](appextensionsceneconfiguration/init(_:).md)
+### Creating the configuration
+- [init<Content>(@autoclosure () -> Content)](./init%28_%29.md)
   Creates a scene configuration from a closure.
 
 

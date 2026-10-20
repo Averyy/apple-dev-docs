@@ -1,7 +1,8 @@
 # valid
 
 **Framework**: Core Audio Types  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 2.0+
@@ -18,13 +19,18 @@
 static var valid: SMPTETimeFlags { get }
 ```
 
+```c
+kSMPTETimeValid
+```
+
 #### Discussion
 
 The full time is valid.
 
 ## See Also
 
-- [static var running: SMPTETimeFlags](smptetimeflags/running.md)
+### Type Properties
+- [static var running: SMPTETimeFlags](./running.md)
 
 
 ---

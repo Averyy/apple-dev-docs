@@ -1,7 +1,8 @@
 # pmSymbol
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The symbol used to represent “PM” for this calendar.
 
@@ -20,9 +21,14 @@ The symbol used to represent “PM” for this calendar.
 var pmSymbol: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * PMSymbol;
+```
+
 ## See Also
 
-- [var amSymbol: String](nscalendar/amsymbol.md)
+### Getting AM and PM Symbols
+- [var amSymbol: String](./amsymbol.md)
   The symbol used to represent “AM” for this calendar.
 
 

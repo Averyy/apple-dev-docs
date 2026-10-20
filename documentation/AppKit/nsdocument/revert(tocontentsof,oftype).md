@@ -1,12 +1,13 @@
 # revert(toContentsOf:ofType:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Discards all unsaved document modifications and replaces the document’s contents by reading a file or file package located by a URL of a specified type.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,15 @@ Discards all unsaved document modifications and replaces the document’s conten
 func revert(toContentsOf url: URL, ofType typeName: String) throws
 ```
 
+```objc
+- (BOOL) revertToContentsOfURL:(NSURL *) url ofType:(NSString *) typeName error:(NSError **) outError;
+```
+
 #### Discussion
 
-> **Note**:  In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure. When overriding this method, use the `throw` statement to throw an `NSError`, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> When overriding this method, use the `throw` statement to throw an `NSError`, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 

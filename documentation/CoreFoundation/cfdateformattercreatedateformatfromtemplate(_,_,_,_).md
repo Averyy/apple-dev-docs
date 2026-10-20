@@ -1,7 +1,8 @@
 # CFDateFormatterCreateDateFormatFromTemplate(_:_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a localized date format string representing the given date format components arranged appropriately for the specified locale.
 
@@ -20,9 +21,13 @@ Returns a localized date format string representing the given date format compon
 func CFDateFormatterCreateDateFormatFromTemplate(_ allocator: CFAllocator!, _ tmplate: CFString!, _ options: CFOptionFlags, _ locale: CFLocale!) -> CFString!
 ```
 
+```c
+extern CFStringRefCFDateFormatterCreateDateFormatFromTemplate(CFAllocatorRef allocator, CFStringRef tmplate, CFOptionFlags options, CFLocaleRef locale);
+```
+
 #### Return Value
 
-A localized date format string representing the date format components given in `template`, arranged appropriately for the locale specified by `locale`. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A localized date format string representing the date format components given in `template`, arranged appropriately for the locale specified by `locale`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 #### Discussion
 
@@ -30,7 +35,7 @@ The returned string may not contain exactly those components given in `template`
 
 #### Discussion
 
-Different locales have different conventions for the ordering of date components. You use this method to get an appropriate format string for a given set of components for a specified locale (typically you use the current locale—see [`CFLocaleCopyCurrent()`](cflocalecopycurrent().md)).
+Different locales have different conventions for the ordering of date components. You use this method to get an appropriate format string for a given set of components for a specified locale (typically you use the current locale—see [`CFLocaleCopyCurrent()`](./cflocalecopycurrent%28%29.md)).
 
 The following example shows the difference between the date formats for British and American English:
 
@@ -51,15 +56,16 @@ CFStringRef gbDateFormatString =
 ## Parameters
 
 - `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
-- `tmplate`: A string containing date format patterns (such as “MM” or “h”). For full details, see [`Unicode Technical Standard #35`](https://developer.apple.comhttp://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html#Date_Format_Patterns).
+- `tmplate`: A string containing date format patterns (such as “MM” or “h”). For full details, see [Unicode Technical Standard #35](http://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html#Date_Format_Patterns).
 - `options`: No options are currently defined—pass `0`.
 - `locale`: The locale for which the template is required.
 
 ## See Also
 
-- [func CFDateFormatterCreateStringWithAbsoluteTime(CFAllocator!, CFDateFormatter!, CFAbsoluteTime) -> CFString!](cfdateformattercreatestringwithabsolutetime(_:_:_:).md)
+### Creating Strings From Data
+- [func CFDateFormatterCreateStringWithAbsoluteTime(CFAllocator!, CFDateFormatter!, CFAbsoluteTime) -> CFString!](./cfdateformattercreatestringwithabsolutetime%28_,_,_%29.md)
   Returns a string representation of the given absolute time using the specified date formatter.
-- [func CFDateFormatterCreateStringWithDate(CFAllocator!, CFDateFormatter!, CFDate!) -> CFString!](cfdateformattercreatestringwithdate(_:_:_:).md)
+- [func CFDateFormatterCreateStringWithDate(CFAllocator!, CFDateFormatter!, CFDate!) -> CFString!](./cfdateformattercreatestringwithdate%28_,_,_%29.md)
   Returns a string representation of the given date using the specified date formatter.
 
 

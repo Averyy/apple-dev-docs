@@ -1,7 +1,8 @@
 # makeTransformer()
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a default-initialized fully connected network classifier model suitable for incremental fitting.
 
@@ -19,6 +20,8 @@ Creates a default-initialized fully connected network classifier model suitable 
 ```swift
 func makeTransformer() -> FullyConnectedNetworkClassifierModel<Scalar, Label>
 ```
+
+Available when `Scalar` conforms to `MLShapedArrayScalar`, `Scalar` conforms to `BinaryFloatingPoint`, `Label` conforms to `Comparable`, `Label` conforms to `Decodable`, `Label` conforms to `Encodable`, and `Label` conforms to `Hashable`.
 
 
 ---

@@ -1,7 +1,8 @@
 # GameCenterMatchmakingQueueCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes for a queue that you create.
 
@@ -10,7 +11,7 @@ The attributes for a queue that you create.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingQueueCreateRequest.Data.Attributes
 ```
 
@@ -21,7 +22,8 @@ object GameCenterMatchmakingQueueCreateRequest.Data.Attributes
 
 ## See Also
 
-- [object GameCenterMatchmakingQueueCreateRequest.Data.Relationships](gamecentermatchmakingqueuecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object GameCenterMatchmakingQueueCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The rule sets that you include when creating a queue.
 
 

@@ -1,18 +1,19 @@
 # iff_ioctl_func
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef errno_t (*iff_ioctl_func)(void *cookie, ifnet_t interface, protocol_family_t protocol, unsigned long ioctl_cmd, void *ioctl_arg);
 ```
 
-#### Return_value
+#### Return Value
 
 Return: 0 - This filter function handled the ioctl. EOPNOTSUPP - This filter function does not understand/did not handle this ioctl. EJUSTRETURN - This filter function handled the ioctl, processing should stop. Anything Else - Processing will stop, the error will be returned.
 

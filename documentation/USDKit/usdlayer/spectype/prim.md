@@ -1,7 +1,8 @@
 # USDLayer.SpecType.prim
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A prim spec.
 

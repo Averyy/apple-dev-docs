@@ -1,7 +1,8 @@
 # authorizationStatus
 
 **Framework**: SafetyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates if the person authorized the app to receive Crash Detection events.
 
@@ -18,9 +19,14 @@ A value that indicates if the person authorized the app to receive Crash Detecti
 var authorizationStatus: SAAuthorizationStatus { get }
 ```
 
+```objc
+@property (nonatomic, readonly) SAAuthorizationStatus authorizationStatus;
+```
+
 ## See Also
 
-- [class var isAvailable: Bool](sacrashdetectionmanager/isavailable.md)
+### Determining availability
+- [class var isAvailable: Bool](./isavailable.md)
   A Boolean value that indicates if Crash Detection is available.
 
 

@@ -1,7 +1,8 @@
 # init(entityName:managedObjectHandler:)
 
 **Framework**: Core Data  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 14.0+
@@ -15,6 +16,10 @@
 
 ```swift
 convenience init(entityName: String, managedObjectHandler handler: @escaping (NSManagedObject) -> Bool)
+```
+
+```objc
+- (instancetype) initWithEntityName:(NSString *) entityName managedObjectHandler:(BOOL (^)(NSManagedObject *obj)) handler;
 ```
 
 

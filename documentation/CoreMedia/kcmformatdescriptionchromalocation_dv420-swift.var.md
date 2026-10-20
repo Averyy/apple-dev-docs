@@ -1,7 +1,8 @@
 # kCMFormatDescriptionChromaLocation_DV420
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The Cr and Cb samples are alternately co-sited with the left luma samples of the same field.
 
@@ -20,19 +21,24 @@ The Cr and Cb samples are alternately co-sited with the left luma samples of the
 let kCMFormatDescriptionChromaLocation_DV420: CFString
 ```
 
+```c
+extern CFStringRef const kCMFormatDescriptionChromaLocation_DV420;
+```
+
 ## See Also
 
-- [let kCMFormatDescriptionChromaLocation_Bottom: CFString](kcmformatdescriptionchromalocation_bottom-swift.var.md)
+### Constants
+- [let kCMFormatDescriptionChromaLocation_Bottom: CFString](./kcmformatdescriptionchromalocation_bottom-swift.var.md)
   The chroma sample is horizontally centered, but co-sited with the bottom row of the luma samples.
-- [let kCMFormatDescriptionChromaLocation_BottomLeft: CFString](kcmformatdescriptionchromalocation_bottomleft-swift.var.md)
+- [let kCMFormatDescriptionChromaLocation_BottomLeft: CFString](./kcmformatdescriptionchromalocation_bottomleft-swift.var.md)
   The chroma sample is co-sited with the bottom-left luma sample.
-- [let kCMFormatDescriptionChromaLocation_Center: CFString](kcmformatdescriptionchromalocation_center-swift.var.md)
+- [let kCMFormatDescriptionChromaLocation_Center: CFString](./kcmformatdescriptionchromalocation_center-swift.var.md)
   The chroma sample is fully centered.
-- [let kCMFormatDescriptionChromaLocation_Left: CFString](kcmformatdescriptionchromalocation_left-swift.var.md)
+- [let kCMFormatDescriptionChromaLocation_Left: CFString](./kcmformatdescriptionchromalocation_left-swift.var.md)
   The chroma sample is horizontally co-sited with the left column of the luma samples, but centered vertically.
-- [let kCMFormatDescriptionChromaLocation_Top: CFString](kcmformatdescriptionchromalocation_top-swift.var.md)
+- [let kCMFormatDescriptionChromaLocation_Top: CFString](./kcmformatdescriptionchromalocation_top-swift.var.md)
   The chroma sample is horizontally centered, but co-sited with the top row of the luma samples.
-- [let kCMFormatDescriptionChromaLocation_TopLeft: CFString](kcmformatdescriptionchromalocation_topleft-swift.var.md)
+- [let kCMFormatDescriptionChromaLocation_TopLeft: CFString](./kcmformatdescriptionchromalocation_topleft-swift.var.md)
   The chroma sample is co-sited with the top-left luma sample.
 
 

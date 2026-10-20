@@ -1,7 +1,8 @@
 # init(decision:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 A convenience initializer to create a DeviceSensorAuthorization that always uses the same permission decision.
 

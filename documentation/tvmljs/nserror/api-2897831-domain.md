@@ -1,7 +1,8 @@
 # domain
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 A string containing the error domain.
 
@@ -10,17 +11,18 @@ A string containing the error domain.
 
 ## Declaration
 
-```swift
+```
 readonly attribute String domain;
 ```
 
 ## See Also
 
-- [code](nserror/2897820-code.md)
+### Getting Error Properties
+- [code](./api-2897820-code.md)
   The error code.
-- [userInfo](nserror/2897822-userinfo.md)
+- [userInfo](./api-2897822-userinfo.md)
   The user info dictionary.
-- [underlyingError](nserror/2897821-underlyingerror.md)
+- [underlyingError](./api-2897821-underlyingerror.md)
   The error that was encountered in an underlying implementation and caused the error that the receiver represents to occur.
 
 

@@ -1,7 +1,8 @@
 # kAXMenuItemCmdCharAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The primary key in the keyboard shortcut for the command represented by this accessibility object. For example, “O” is the primary key in the keyboard shortcut for the Open command.
 
@@ -12,6 +13,10 @@ The primary key in the keyboard shortcut for the command represented by this acc
 
 ```swift
 var kAXMenuItemCmdCharAttribute: String { get }
+```
+
+```c
+#define kAXMenuItemCmdCharAttribute
 ```
 
 

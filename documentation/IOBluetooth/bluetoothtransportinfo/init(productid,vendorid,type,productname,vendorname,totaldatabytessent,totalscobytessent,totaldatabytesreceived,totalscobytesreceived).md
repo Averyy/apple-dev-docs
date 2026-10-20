@@ -1,10 +1,11 @@
 # init(productID:vendorID:type:productName:vendorName:totalDataBytesSent:totalSCOBytesSent:totalDataBytesReceived:totalSCOBytesReceived:)
 
 **Framework**: IOBluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

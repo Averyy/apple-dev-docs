@@ -1,7 +1,8 @@
 # PKPaymentOrderDetails
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Optional metadata with payment order details for the placed order.
 
@@ -18,6 +19,10 @@ Optional metadata with payment order details for the placed order.
 class PKPaymentOrderDetails
 ```
 
+```objc
+@interface PKPaymentOrderDetails : NSObject
+```
+
 #### Overview
 
 The device only retreives metadata if the status is `PKPaymentAuthorizationStatusSuccess`.
@@ -25,39 +30,40 @@ The device only retreives metadata if the status is `PKPaymentAuthorizationStatu
 ## Topics
 
 ### Creating payment order details
-- [init(orderTypeIdentifier: String, orderIdentifier: String, webServiceURL: URL, authenticationToken: String)](pkpaymentorderdetails/init(ordertypeidentifier:orderidentifier:webserviceurl:authenticationtoken:).md)
+- [init(orderTypeIdentifier: String, orderIdentifier: String, webServiceURL: URL, authenticationToken: String)](./pkpaymentorderdetails/init%28ordertypeidentifier,orderidentifier,webserviceurl,authenticationtoken%29.md)
   Initializes a payment order details object with the identifier, web service URL, and authentication token you provide.
 ### Identifying and authenticating the order
-- [var authenticationToken: String](pkpaymentorderdetails/authenticationtoken.md)
+- [var authenticationToken: String](./pkpaymentorderdetails/authenticationtoken.md)
   The authentification token supplied to your web service.
-- [var orderIdentifier: String](pkpaymentorderdetails/orderidentifier.md)
+- [var orderIdentifier: String](./pkpaymentorderdetails/orderidentifier.md)
   A unique order identifier scoped to your order type identifier.
-- [var orderTypeIdentifier: String](pkpaymentorderdetails/ordertypeidentifier.md)
+- [var orderTypeIdentifier: String](./pkpaymentorderdetails/ordertypeidentifier.md)
   An identifier for the order type associated with the order.
-- [var webServiceURL: URL](pkpaymentorderdetails/webserviceurl.md)
+- [var webServiceURL: URL](./pkpaymentorderdetails/webserviceurl.md)
   The URL for your web service.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PKPaymentAuthorizationResult](pkpaymentauthorizationresult.md)
+### Payment sheet interactions and authorization
+- [class PKPaymentAuthorizationResult](./pkpaymentauthorizationresult.md)
   An object that reports the status code and errors for a payment authorization request.
-- [class PKPaymentAuthorizationController](pkpaymentauthorizationcontroller.md)
+- [class PKPaymentAuthorizationController](./pkpaymentauthorizationcontroller.md)
   An object that presents a sheet that prompts the user to authorize a payment request.
-- [class PKPaymentAuthorizationViewController](pkpaymentauthorizationviewcontroller.md)
+- [class PKPaymentAuthorizationViewController](./pkpaymentauthorizationviewcontroller.md)
   An object that presents a sheet that prompts the user to authorize a payment request.
-- [class PKPayment](pkpayment.md)
+- [class PKPayment](./pkpayment.md)
   Represents the result of authorizing a payment request and contains payment information, encrypted in the payment token.
 
 

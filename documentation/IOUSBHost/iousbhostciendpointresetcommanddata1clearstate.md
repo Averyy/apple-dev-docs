@@ -1,7 +1,8 @@
 # IOUSBHostCIEndpointResetCommandData1ClearState
 
 **Framework**: IOUSBHost  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var IOUSBHostCIEndpointResetCommandData1ClearState: Int { get }
+```
+
+```c
+IOUSBHostCIEndpointResetCommandData1ClearState
 ```
 
 

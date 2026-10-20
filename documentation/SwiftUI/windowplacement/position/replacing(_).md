@@ -1,12 +1,15 @@
 # replacing(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Positions the window in the same spot as an existing window, hiding the old window in the process.
 
 **Availability**:
-- visionOS 2.0+
+- visionOS 2.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use PushWindowAction instead.
 
 ## Declaration
 

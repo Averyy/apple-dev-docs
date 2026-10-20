@@ -1,7 +1,8 @@
 # init(imageTrailingEdgePadding:imageWidth:imageColor:)
 
 **Framework**: Contacts UI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a contact access button with the provided styling values.
 
@@ -20,7 +21,7 @@ init(imageTrailingEdgePadding: CGFloat? = nil, imageWidth: CGFloat? = nil, image
 
 - `imageTrailingEdgePadding`: The trailing spacing between contact image and text fields. If `nil`, the style uses a default value.
 - `imageWidth`: The contact image width, in points. If `nil`, the style uses a default value.
-- `imageColor`: The color of the avatar badge to use, when a person in the contacts list doesn’t have a photo assigned. For design guidance, see Human Interface Guidelines > Color > [`Specifications`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/color#Specifications). Defaults to [`gray`](https://developer.apple.com/documentation/swiftui/color/gray).
+- `imageColor`: The color of the avatar badge to use, when a person in the contacts list doesn’t have a photo assigned. For design guidance, see Human Interface Guidelines > Color > [Specifications](https://developer.apple.com/design/human-interface-guidelines/color#Specifications). Defaults to [`gray`](../../../SwiftUI/color/gray.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # kCGImagePropertyTGADictionary
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 14.0+
@@ -16,6 +17,10 @@
 
 ```swift
 let kCGImagePropertyTGADictionary: CFString
+```
+
+```c
+extern CFStringRef const kCGImagePropertyTGADictionary;
 ```
 
 

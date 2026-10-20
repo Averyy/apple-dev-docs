@@ -1,7 +1,8 @@
 # mediaCharacteristics
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The media characteristics describing accessibility features and content properties of this option. Common values include `AVMediaCharacteristicContainsOnlyForcedSubtitles`, `AVMediaCharacteristicTranscribesSpokenDialogForAccessibility`, and `AVMediaCharacteristicDescribesMusicAndSoundForAccessibility`. May be empty if no characteristics apply.
 
@@ -14,6 +15,10 @@ The media characteristics describing accessibility features and content properti
 
 ```swift
 var mediaCharacteristics: [AVMediaCharacteristic] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<NSString *> * mediaCharacteristics;
 ```
 
 

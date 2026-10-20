@@ -1,7 +1,8 @@
 # allowsTransparency
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 14.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,8 +20,9 @@ static let allowsTransparency: SpriteView.Options
 
 ## See Also
 
-- [static let ignoresSiblingOrder: SpriteView.Options](spriteview/options/ignoressiblingorder.md)
-- [static let shouldCullNonVisibleNodes: SpriteView.Options](spriteview/options/shouldcullnonvisiblenodes.md)
+### Type Properties
+- [static let ignoresSiblingOrder: SpriteView.Options](./ignoressiblingorder.md)
+- [static let shouldCullNonVisibleNodes: SpriteView.Options](./shouldcullnonvisiblenodes.md)
 
 
 ---

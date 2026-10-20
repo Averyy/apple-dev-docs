@@ -1,7 +1,8 @@
 # CAShowFile(_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Prints the internal state of an object to a file.
 
@@ -19,6 +20,10 @@ Prints the internal state of an object to a file.
 func CAShowFile(_ inObject: UnsafeMutableRawPointer, _ inFile: UnsafeMutablePointer<FILE>)
 ```
 
+```c
+extern void CAShowFile(void *inObject, FILE *inFile);
+```
+
 #### Discussion
 
 ## Parameters
@@ -28,7 +33,8 @@ func CAShowFile(_ inObject: UnsafeMutableRawPointer, _ inFile: UnsafeMutablePoin
 
 ## See Also
 
-- [func CAShow(UnsafeMutableRawPointer)](cashow(_:).md)
+### Audio Toolbox Debugging Functions
+- [func CAShow(UnsafeMutableRawPointer)](./cashow%28_%29.md)
   Prints the internal state of an object to `stdio`.
 
 

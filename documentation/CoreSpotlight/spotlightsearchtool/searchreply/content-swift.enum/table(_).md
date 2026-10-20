@@ -1,7 +1,8 @@
 # SpotlightSearchTool.SearchReply.Content.table(_:)
 
 **Framework**: Core Spotlight  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Tabulated data — rows of labeled values, suitable for a table or chart.
 

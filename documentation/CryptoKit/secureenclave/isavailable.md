@@ -1,7 +1,8 @@
 # isAvailable
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates if the device supports Secure Enclave access.
 

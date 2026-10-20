@@ -1,18 +1,19 @@
 # symbolicFactorization
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A semi-opaque type representing symbolic matrix factorization.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,15 @@ A semi-opaque type representing symbolic matrix factorization.
 var symbolicFactorization: SparseOpaqueSymbolicFactorization
 ```
 
+```c
+SparseOpaqueSymbolicFactorization symbolicFactorization;
+```
+
 #### Discussion
 
 Represents a symbolic matrix factorization (i.e. the pattern of the factors without the values). A single symbolic factorization may be the basis for multiple numerical factorizations of matrices with the same pattern but different values non-zero values.
 
-```None
+```
         Use the `SparseCleanup` function to free resources held by these
         objects. The internal factorization pointer is refence counted,
         so it is safe to destroy this object even if numeric

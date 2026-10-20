@@ -1,7 +1,8 @@
 # runSynchronously(on:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Run this job on the passed in task executor.
 
@@ -28,9 +29,9 @@ The passed in executor reference is used to establish the executor context for t
 
 This operation consumes the job, preventing it accidental use after it has been run.
 
-Converting a `ExecutorJob` to an [`UnownedJob`](unownedjob.md) and invoking ``UnownedJob/runSynchronously(_:)` on it multiple times is undefined behavior, as a job can only ever be run once, and must not be accessed after it has been run.
+Converting a `ExecutorJob` to an [`UnownedJob`](../unownedjob.md) and invoking ``UnownedJob/runSynchronously(_:)` on it multiple times is undefined behavior, as a job can only ever be run once, and must not be accessed after it has been run.
 
-> **Note**: [`runSynchronously(isolatedTo:taskExecutor:)`](executorjob/runsynchronously(isolatedto:taskexecutor:).md)
+> **See Also**: [`runSynchronously(isolatedTo:taskExecutor:)`](./runsynchronously%28isolatedto,taskexecutor%29.md)
 
 ## Parameters
 

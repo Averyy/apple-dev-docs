@@ -1,7 +1,8 @@
 # HKPrismBase.in
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The prism base is on the inside edge of the lens.
 
@@ -19,19 +20,24 @@ The prism base is on the inside edge of the lens.
 case `in`
 ```
 
+```c
+HKPrismBaseIn
+```
+
 #### Discussion
 
-You can only use this value for the prism’s [`horizontalBase`](hkvisionprism/horizontalbase.md).
+You can only use this value for the prism’s [`horizontalBase`](../hkvisionprism/horizontalbase.md).
 
 ## See Also
 
-- [HKPrismBase.none](hkprismbase/none.md)
+### Prism Base
+- [HKPrismBase.none](./none.md)
   No prism correction.
-- [HKPrismBase.up](hkprismbase/up.md)
+- [HKPrismBase.up](./up.md)
   The prism’s base is at the top of the lens.
-- [HKPrismBase.down](hkprismbase/down.md)
+- [HKPrismBase.down](./down.md)
   The prism’s base is at the bottom of the lens.
-- [HKPrismBase.out](hkprismbase/out.md)
+- [HKPrismBase.out](./out.md)
   The prism base is on the outside edge of the lens.
 
 

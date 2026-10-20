@@ -2,6 +2,7 @@
 
 **Framework**: VisionKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Provides the view that contains the image.
@@ -31,11 +32,18 @@ Implement this delegate method only when the view that contains the image isn’
 
 - `interaction`: The associated interaction object for the content view.
 
+## Default Implementations
+
+### ImageAnalysisInteractionDelegate Implementations
+- [func contentView(for: ImageAnalysisInteraction) -> UIView?](./contentview%28for%29-28l6r.md)
+  A default implementation that provides the interaction’s view.
+
 ## See Also
 
-- [func contentsRect(for: ImageAnalysisInteraction) -> CGRect](imageanalysisinteractiondelegate/contentsrect(for:).md)
+### Providing interface details
+- [func contentsRect(for: ImageAnalysisInteraction) -> CGRect](./contentsrect%28for%29.md)
   Returns the rectangle, in unit coordinates, that contains the image within the view.
-- [func presentingViewController(for: ImageAnalysisInteraction) -> UIViewController?](imageanalysisinteractiondelegate/presentingviewcontroller(for:).md)
+- [func presentingViewController(for: ImageAnalysisInteraction) -> UIViewController?](./presentingviewcontroller%28for%29.md)
   Provides the view controller that presents the interface objects.
 
 

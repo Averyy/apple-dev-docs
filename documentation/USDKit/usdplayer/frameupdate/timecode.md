@@ -1,7 +1,8 @@
 # timeCode
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The USD time code this update corresponds to.
 

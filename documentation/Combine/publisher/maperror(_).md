@@ -1,7 +1,8 @@
 # mapError(_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts any failure from the upstream publisher into a new error.
 
@@ -26,9 +27,9 @@ A publisher that replaces any upstream failure with a new error produced by the 
 
 #### Discussion
 
-Use the [`mapError(_:)`](publisher/maperror(_:).md) operator when you need to replace one error type with another, or where a downstream operator needs the error types of its inputs to match.
+Use the [`mapError(_:)`](./maperror%28_%29.md) operator when you need to replace one error type with another, or where a downstream operator needs the error types of its inputs to match.
 
-The following example uses a [`tryMap(_:)`](publisher/trymap(_:).md) operator to divide `1` by each element produced by a sequence publisher. When the publisher produces a `0`, the [`tryMap(_:)`](publisher/trymap(_:).md) fails with a `DivisionByZeroError`. The [`mapError(_:)`](publisher/maperror(_:).md) operator converts this into a `MyGenericError`.
+The following example uses a [`tryMap(_:)`](./trymap%28_%29.md) operator to divide `1` by each element produced by a sequence publisher. When the publisher produces a `0`, the [`tryMap(_:)`](./trymap%28_%29.md) fails with a `DivisionByZeroError`. The [`mapError(_:)`](./maperror%28_%29.md) operator converts this into a `MyGenericError`.
 
 ```swift
 struct DivisionByZeroError: Error {}
@@ -57,17 +58,18 @@ divisors.publisher
 
 ## See Also
 
-- [func map<T>((Self.Output) -> T) -> Publishers.Map<Self, T>](publisher/map(_:)-99evh.md)
+### Mapping elements
+- [func map<T>((Self.Output) -> T) -> Publishers.Map<Self, T>](./map%28_%29-99evh.md)
   Transforms all elements from the upstream publisher with a provided closure.
-- [func tryMap<T>((Self.Output) throws -> T) -> Publishers.TryMap<Self, T>](publisher/trymap(_:).md)
+- [func tryMap<T>((Self.Output) throws -> T) -> Publishers.TryMap<Self, T>](./trymap%28_%29.md)
   Transforms all elements from the upstream publisher with a provided error-throwing closure.
-- [func replaceNil<T>(with: T) -> Publishers.Map<Self, T>](publisher/replacenil(with:).md)
+- [func replaceNil<T>(with: T) -> Publishers.Map<Self, T>](./replacenil%28with%29.md)
   Replaces nil elements in the stream with the provided element.
-- [func scan<T>(T, (T, Self.Output) -> T) -> Publishers.Scan<Self, T>](publisher/scan(_:_:).md)
+- [func scan<T>(T, (T, Self.Output) -> T) -> Publishers.Scan<Self, T>](./scan%28_,_%29.md)
   Transforms elements from the upstream publisher by providing the current element to a closure along with the last value returned by the closure.
-- [func tryScan<T>(T, (T, Self.Output) throws -> T) -> Publishers.TryScan<Self, T>](publisher/tryscan(_:_:).md)
+- [func tryScan<T>(T, (T, Self.Output) throws -> T) -> Publishers.TryScan<Self, T>](./tryscan%28_,_%29.md)
   Transforms elements from the upstream publisher by providing the current element to an error-throwing closure along with the last value returned by the closure.
-- [func setFailureType<E>(to: E.Type) -> Publishers.SetFailureType<Self, E>](publisher/setfailuretype(to:).md)
+- [func setFailureType<E>(to: E.Type) -> Publishers.SetFailureType<Self, E>](./setfailuretype%28to%29.md)
   Changes the failure type declared by the upstream publisher.
 
 

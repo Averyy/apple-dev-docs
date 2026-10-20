@@ -1,7 +1,8 @@
 # kind
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The way the response format constrains the model’s output.
 
@@ -21,7 +22,8 @@ let kind: Transcript.ResponseFormat.Kind
 
 ## See Also
 
-- [Transcript.ResponseFormat.Kind](transcript/responseformat/kind-swift.enum.md)
+### Accessing the kind of format
+- [Transcript.ResponseFormat.Kind](./kind-swift.enum.md)
   A representation of the different ways a response format can constrain model output.
 
 

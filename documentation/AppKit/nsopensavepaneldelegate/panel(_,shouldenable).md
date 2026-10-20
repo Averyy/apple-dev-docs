@@ -1,7 +1,8 @@
 # panel(_:shouldEnable:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate whether the specified URL should be enabled in the Open panel.
 
@@ -15,13 +16,17 @@ Asks the delegate whether the specified URL should be enabled in the Open panel.
 optional func panel(_ sender: Any, shouldEnable url: URL) -> Bool
 ```
 
+```objc
+- (BOOL) panel:(id) sender shouldEnableURL:(NSURL *) url;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if you want the panel to display the item at the specifed URL as enabled, or [`false`](https://developer.apple.com/documentation/swift/false) to display it as disabled.
+[`true`](../../Swift/true.md) if you want the panel to display the item at the specifed URL as enabled, or [`false`](../../Swift/false.md) to display it as disabled.
 
 #### Discussion
 
-Save panels do not call this method; they always disable URLs. Implementations of this method should be fast to avoid stalling the user interface. Use [`panel(_:validate:)`](nsopensavepaneldelegate/panel(_:validate:).md) instead if processing will take a long time.
+Save panels do not call this method; they always disable URLs. Implementations of this method should be fast to avoid stalling the user interface. Use [`panel(_:validate:)`](./panel%28_,validate%29.md) instead if processing will take a long time.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ Save panels do not call this method; they always disable URLs. Implementations o
 
 ## See Also
 
-- [func panel(Any, validate: URL) throws](nsopensavepaneldelegate/panel(_:validate:).md)
+### Validating the Panel Content
+- [func panel(Any, validate: URL) throws](./panel%28_,validate%29.md)
   Asks the delegate to validate the URL for a file that the user selected.
 
 

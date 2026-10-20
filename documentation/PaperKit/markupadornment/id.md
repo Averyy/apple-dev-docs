@@ -1,7 +1,8 @@
 # id
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for this adornment.
 

@@ -1,7 +1,8 @@
 # SKShader
 
 **Framework**: SpriteKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that allows you to apply a custom fragment shader.
 
@@ -10,7 +11,7 @@ An object that allows you to apply a custom fragment shader.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,21 +21,25 @@ An object that allows you to apply a custom fragment shader.
 class SKShader
 ```
 
+```objc
+@interface SKShader : NSObject
+```
+
 ## Mentions
 
-- [Controlling Shape Drawing with Shaders](controlling-shape-drawing-with-shaders.md)
-- [Applying Shaders to a Sprite](applying-shaders-to-a-sprite.md)
-- [Creating a Custom Fragment Shader](creating-a-custom-fragment-shader.md)
-- [Creating a New Node By Rendering To a Texture](creating-a-new-node-by-rendering-to-a-texture.md)
-- [Customizing the Behavior of a Node](customizing-the-behavior-of-a-node.md)
-- [Executing Shaders in Metal and OpenGL](executing-shaders-in-metal-and-opengl.md)
-- [Getting Started with Particle Shaders](getting-started-with-particle-shaders.md)
+- [Controlling Shape Drawing with Shaders](./controlling-shape-drawing-with-shaders.md)
+- [Applying Shaders to a Sprite](./applying-shaders-to-a-sprite.md)
+- [Creating a Custom Fragment Shader](./creating-a-custom-fragment-shader.md)
+- [Creating a New Node By Rendering To a Texture](./creating-a-new-node-by-rendering-to-a-texture.md)
+- [Customizing the Behavior of a Node](./customizing-the-behavior-of-a-node.md)
+- [Executing Shaders in Metal and OpenGL](./executing-shaders-in-metal-and-opengl.md)
+- [Getting Started with Particle Shaders](./getting-started-with-particle-shaders.md)
 
 #### Overview
 
-An [`SKShader`](skshader.md) object holds a custom OpenGL ES fragment shader. Shader objects are used to customize the drawing behavior of many different kinds of nodes in SpriteKit.
+An [`SKShader`](./skshader.md) object holds a custom OpenGL ES fragment shader. Shader objects are used to customize the drawing behavior of many different kinds of nodes in SpriteKit.
 
-To use a custom shader, create an [`SKShader`](skshader.md) object and provide the source for the custom fragment shader. If your shader needs to provide uniform data to the shader, create one or more [`SKUniform`](skuniform.md) objects and associate them with the shader object. If your shader needs to provide per-node data to the shader, create one or more [`SKAttribute`](skattribute.md) objects and associate them with the relevant nodes. Then, assign the shader object to the [`shader`](skspritenode/shader.md) property of any sprites that need the custom behavior.
+To use a custom shader, create an [`SKShader`](./skshader.md) object and provide the source for the custom fragment shader. If your shader needs to provide uniform data to the shader, create one or more [`SKUniform`](./skuniform.md) objects and associate them with the shader object. If your shader needs to provide per-node data to the shader, create one or more [`SKAttribute`](./skattribute.md) objects and associate them with the relevant nodes. Then, assign the shader object to the [`shader`](./skspritenode/shader.md) property of any sprites that need the custom behavior.
 
 Compiling a shader and the uniform data associated with it can be expensive. Because of this, you should:
 
@@ -42,62 +47,63 @@ Compiling a shader and the uniform data associated with it can be expensive. Bec
 - Avoid changing the shader’s source or changing the list of uniforms or attributes while your game is running. Either of these things recompiles the shader.
 - Share shader objects whenever possible. If multiple sprites need the same behavior, create one shader object and associate it with every sprite that needs that behavior. Do not create a separate shader for each sprite.
 
-> ❗ **Important**:  [`SKShader`](skshader.md) does not support OpenGL Extensions. SpriteKit will return an error if you compile a project containing a fragment shader using extensions.
+> ❗ **Important**:  [`SKShader`](./skshader.md) does not support OpenGL Extensions. SpriteKit will return an error if you compile a project containing a fragment shader using extensions.
 
 ## Topics
 
 ### Creating a Shader
-- [Creating a Custom Fragment Shader](creating-a-custom-fragment-shader.md)
+- [Creating a Custom Fragment Shader](./creating-a-custom-fragment-shader.md)
   Write a fragment shader using the set of SpriteKit-exposed symbols, and supply it with custom data.
-- [convenience init(fileNamed: String)](skshader/init(filenamed:).md)
+- [convenience init(fileNamed: String)](./skshader/init%28filenamed%29.md)
   Creates a new shader object by loading the source for a fragment shader from a file stored in the app’s bundle.
-- [init(source: String, uniforms: [SKUniform])](skshader/init(source:uniforms:).md)
+- [init(source: String, uniforms: [SKUniform])](./skshader/init%28source,uniforms%29.md)
   Initializes a new shader object using the specified source and uniform data.
-- [init(source: String)](skshader/init(source:).md)
+- [init(source: String)](./skshader/init%28source%29.md)
   Initializes a new shader object using the specified source code.
 ### Providing Uniform Data to a Shader
-- [func addUniform(SKUniform)](skshader/adduniform(_:).md)
+- [func addUniform(SKUniform)](./skshader/adduniform%28_%29.md)
   Adds a uniform to the shader.
-- [func removeUniformNamed(String)](skshader/removeuniformnamed(_:).md)
+- [func removeUniformNamed(String)](./skshader/removeuniformnamed%28_%29.md)
   Removes a uniform from the shader.
-- [var uniforms: [SKUniform]](skshader/uniforms.md)
+- [var uniforms: [SKUniform]](./skshader/uniforms.md)
   The list of uniforms associated with the shader.
-- [func uniformNamed(String) -> SKUniform?](skshader/uniformnamed(_:).md)
+- [func uniformNamed(String) -> SKUniform?](./skshader/uniformnamed%28_%29.md)
   Returns the uniform object corresponding to a particular uniform variable.
 ### Providing Attribute Data to a Shader
-- [var attributes: [SKAttribute]](skshader/attributes.md)
+- [var attributes: [SKAttribute]](./skshader/attributes.md)
   The list of attributes associated with the shader.
 ### Accessing or Setting a Shader’s Source Code
-- [var source: String?](skshader/source.md)
+- [var source: String?](./skshader/source.md)
   The source code for the shader.
 ### Executing Shaders in Metal and OpenGL
-- [Executing Shaders in Metal and OpenGL](executing-shaders-in-metal-and-opengl.md)
+- [Executing Shaders in Metal and OpenGL](./executing-shaders-in-metal-and-opengl.md)
   Toggle between renderers to make sure your shader code compiles in both the Metal and OpenGL environments.
 ### Initializers
-- [init?(coder: NSCoder)](skshader/init(coder:).md)
+- [init?(coder: NSCoder)](./skshader/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class SKAttribute](skattribute.md)
+### Shaders
+- [class SKAttribute](./skattribute.md)
   A specification for dynamic per-node data used with a custom shader.
-- [class SKAttributeValue](skattributevalue.md)
+- [class SKAttributeValue](./skattributevalue.md)
   A container for dynamic shader data associated with a node.
-- [class SKUniform](skuniform.md)
+- [class SKUniform](./skuniform.md)
   A container for uniform shader data.
 
 

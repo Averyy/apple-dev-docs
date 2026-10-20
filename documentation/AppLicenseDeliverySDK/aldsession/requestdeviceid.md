@@ -1,7 +1,8 @@
 # requestDeviceID
 
 **Framework**: App License Delivery SDK  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 the device ID of the requested device
 
@@ -13,7 +14,7 @@ var requestDeviceID: [UInt8] { get }
 
 ## Mentions
 
-- [Licensing alternative distribution apps](licensing-alternative-distribution-apps.md)
+- [Licensing alternative distribution apps](../licensing-alternative-distribution-apps.md)
 
 
 ---

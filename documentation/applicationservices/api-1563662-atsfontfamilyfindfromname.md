@@ -1,7 +1,8 @@
 # ATSFontFamilyFindFromName(_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.1+ - Deprecated in 13.1
@@ -10,6 +11,10 @@
 
 ```swift
 func ATSFontFamilyFindFromName(_ iName: CFString!, _ iOptions: ATSOptionFlags) -> ATSFontFamilyRef
+```
+
+```c
+ATSFontFamilyRef ATSFontFamilyFindFromName(CFStringRef iName, ATSOptionFlags iOptions);
 ```
 
 

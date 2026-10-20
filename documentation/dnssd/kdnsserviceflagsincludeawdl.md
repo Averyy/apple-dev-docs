@@ -1,7 +1,8 @@
 # kDNSServiceFlagsIncludeAWDL
 
 **Framework**: dnssd  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 10.0+
@@ -18,9 +19,13 @@
 var kDNSServiceFlagsIncludeAWDL: UInt32 { get }
 ```
 
+```c
+kDNSServiceFlagsIncludeAWDL
+```
+
 #### Discussion
 
-Include AWDL interface when [`kDNSServiceInterfaceIndexAny`](kdnsserviceinterfaceindexany.md) is specified.
+Include AWDL interface when [`kDNSServiceInterfaceIndexAny`](./kdnsserviceinterfaceindexany.md) is specified.
 
 
 ---

@@ -1,7 +1,8 @@
 # title
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text displayed for the scrubber item.
 
@@ -14,9 +15,14 @@ The text displayed for the scrubber item.
 var title: String { get set }
 ```
 
+```objc
+@property (copy) NSString * title;
+```
+
 ## See Also
 
-- [var textField: NSTextField](nsscrubbertextitemview/textfield.md)
+### Providing text content
+- [var textField: NSTextField](./textfield.md)
   The text field that the scrubber item uses to display its text.
 
 

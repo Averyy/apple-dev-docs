@@ -1,7 +1,8 @@
 # OSSignpostID
 
 **Framework**: os  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An identifier that disambiguates signposted intervals.
 
@@ -11,7 +12,7 @@ An identifier that disambiguates signposted intervals.
 - Mac Catalyst 12.0+
 - macOS 10.14+
 - tvOS 12.0+
-- visionOS ?+
+- visionOS
 - watchOS 5.0+
 
 ## Declaration
@@ -22,50 +23,51 @@ struct OSSignpostID
 
 ## Mentions
 
-- [Recording Performance Data](recording-performance-data.md)
+- [Recording Performance Data](./recording-performance-data.md)
 
 #### Overview
 
 Multiple intervals that have matching names, subsystems, and categories, and that exist in the same scope can be in-flight simultaneously. To match a pair of interval calls, you need to identify each interval with a unique signpost identifier. Use the first strategy in the list below that matches your use case:
 
-- If identical intervals can never overlap, use the [`exclusive`](ossignpostid/exclusive.md) signpost ID.
-- If you have data that uniquely identifies each instance of the measured task, create a signpost ID using the [`init(_:)`](ossignpostid/init(_:).md) method. The value you provide must not match that of any of the system-defined signpost IDs.
-- If you have an object that uniquely identifies a pair of interval calls, such as the object you’re measuring, create a signpost ID using the [`makeSignpostID(from:)`](ossignposter/makesignpostid(from:).md) method. Don’t use this method for signposts that cross process boundaries.
-- Otherwise, create a signpost ID using the [`makeSignpostID()`](ossignposter/makesignpostid().md) method.
+- If identical intervals can never overlap, use the [`exclusive`](./ossignpostid/exclusive.md) signpost ID.
+- If you have data that uniquely identifies each instance of the measured task, create a signpost ID using the [`init(_:)`](./ossignpostid/init%28_%29.md) method. The value you provide must not match that of any of the system-defined signpost IDs.
+- If you have an object that uniquely identifies a pair of interval calls, such as the object you’re measuring, create a signpost ID using the [`makeSignpostID(from:)`](./ossignposter/makesignpostid%28from%29.md) method. Don’t use this method for signposts that cross process boundaries.
+- Otherwise, create a signpost ID using the [`makeSignpostID()`](./ossignposter/makesignpostid%28%29.md) method.
 
 ## Topics
 
 ### Getting Signpost Identifiers
-- [static let exclusive: OSSignpostID](ossignpostid/exclusive.md)
+- [static let exclusive: OSSignpostID](./ossignpostid/exclusive.md)
   A signpost identifier that indicates no overlap among different signpost time intervals.
-- [static let invalid: OSSignpostID](ossignpostid/invalid.md)
+- [static let invalid: OSSignpostID](./ossignpostid/invalid.md)
   A signpost identifier that indicates an error.
-- [static let null: OSSignpostID](ossignpostid/null.md)
+- [static let null: OSSignpostID](./ossignpostid/null.md)
   A signpost identifier that indicates a disabled signpost.
 ### Creating a Signpost Identifier
-- [init(UInt64)](ossignpostid/init(_:).md)
+- [init(UInt64)](./ossignpostid/init%28_%29.md)
   Creates a signpost ID from an arbitrary 64-bit integer value.
-- [init(log: OSLog)](ossignpostid/init(log:).md)
+- [init(log: OSLog)](./ossignpostid/init%28log%29.md)
   Creates a signpost ID for the specified log.
-- [init(log: OSLog, object: AnyObject)](ossignpostid/init(log:object:).md)
+- [init(log: OSLog, object: AnyObject)](./ossignpostid/init%28log,object%29.md)
   Creates a signpost ID and associates it with the specified object.
 ### Getting an Identifier’s Raw Value
-- [let rawValue: os_signpost_id_t](ossignpostid/rawvalue.md)
+- [let rawValue: os_signpost_id_t](./ossignpostid/rawvalue.md)
   The signpost ID’s raw value.
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](../swift/comparable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Comparable](../Swift/comparable.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func makeSignpostID() -> OSSignpostID](ossignposter/makesignpostid.md)
+### Generating Signpost IDs
+- [func makeSignpostID() -> OSSignpostID](./ossignposter/makesignpostid%28%29.md)
   Returns an identifier that’s unique within the scope of the signposter.
-- [func makeSignpostID(from: AnyObject) -> OSSignpostID](ossignposter/makesignpostid(from:).md)
+- [func makeSignpostID(from: AnyObject) -> OSSignpostID](./ossignposter/makesignpostid%28from%29.md)
   Returns an identifier that the signposter derives from the specified object.
 
 

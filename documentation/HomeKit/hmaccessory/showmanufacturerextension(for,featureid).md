@@ -1,7 +1,8 @@
 # showManufacturerExtension(for:featureID:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents the system-rendered UI for one manufacturer feature.
 
@@ -22,7 +23,7 @@ Returns once the request has been handed off to the system; throws on any error 
 ## Parameters
 
 - `kind`: Selects the kind of feature to present.
-- `featureID`: The catalog identifier returned in the matching [`HMAccessory.ManufacturerFeature`](hmaccessory/manufacturerfeature.md) (and `nil` for `.troubleshooting` and `.productManual`).
+- `featureID`: The catalog identifier returned in the matching [`HMAccessory.ManufacturerFeature`](./manufacturerfeature.md) (and `nil` for `.troubleshooting` and `.productManual`).
 
 
 ---

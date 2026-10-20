@@ -1,7 +1,8 @@
 # intrinsics
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 If available, the estimated pinhole camera intrinsics matrix associated with the input image.  If not available, `nil`.
 

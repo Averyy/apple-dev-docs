@@ -1,7 +1,8 @@
 # customMirror
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a mirror that reflects the UTF-16 view of a string.
 

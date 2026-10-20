@@ -1,7 +1,8 @@
 # readAttributePartNumber(with:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 func readAttributePartNumber(with params: MTRReadParams?) -> [String : Any]?
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) readAttributePartNumberWithParams:(MTRReadParams *) params;
 ```
 
 

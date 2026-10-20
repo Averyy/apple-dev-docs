@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [MBUF_CSUM_DID_DATA](1644526-anonymous/mbuf_csum_did_data.md)
-- [MBUF_CSUM_DID_IP](1644526-anonymous/mbuf_csum_did_ip.md)
-- [MBUF_CSUM_IP_GOOD](1644526-anonymous/mbuf_csum_ip_good.md)
-- [MBUF_CSUM_PSEUDO_HDR](1644526-anonymous/mbuf_csum_pseudo_hdr.md)
+- [MBUF_CSUM_DID_DATA](./api-1644526-anonymous/mbuf_csum_did_data.md)
+- [MBUF_CSUM_DID_IP](./api-1644526-anonymous/mbuf_csum_did_ip.md)
+- [MBUF_CSUM_IP_GOOD](./api-1644526-anonymous/mbuf_csum_ip_good.md)
+- [MBUF_CSUM_PSEUDO_HDR](./api-1644526-anonymous/mbuf_csum_pseudo_hdr.md)
 
 
 ---

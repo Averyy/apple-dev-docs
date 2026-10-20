@@ -1,7 +1,8 @@
 # isLoadedInProcess
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.15+
@@ -12,13 +13,26 @@
 var isLoadedInProcess: Bool { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, readonly) BOOL isLoadedInProcess;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) BOOL isLoadedInProcess;
+```
+
 ## Mentions
 
-- [Migrating Your Audio Unit Host to the AUv3 API](migrating-your-audio-unit-host-to-the-auv3-api.md)
+- [Migrating Your Audio Unit Host to the AUv3 API](../migrating-your-audio-unit-host-to-the-auv3-api.md)
 
 ## See Also
 
-- [var isRunning: Bool](auaudiounit/isrunning.md)
+### Getting the Runtime Behavior
+- [var isRunning: Bool](./isrunning.md)
 
 
 ---

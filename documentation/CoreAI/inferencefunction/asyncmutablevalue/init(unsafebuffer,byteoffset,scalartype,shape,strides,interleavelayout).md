@@ -1,7 +1,8 @@
 # init(unsafeBuffer:byteOffset:scalarType:shape:strides:interleaveLayout:)
 
 **Framework**: Core AI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an async ndArray value that directly references the provided metal buffer, interpreted as the specified scalar type and shape.
 
@@ -28,15 +29,16 @@ Initializing an async value this way requires that you manually ensure the provi
 - scalarType: The type of scalars in the provided buffer.
 - shape: The shape of the resulting value.
 - strides: The strides of the resulting value. If left empty, they will be computed as contiguous row-major.
-- interleaveLayout: Which dimension is interleaved and by what factor. See [`NDArray.InterleaveLayout`](ndarray/interleavelayout-swift.struct.md).
+- interleaveLayout: Which dimension is interleaved and by what factor. See [`NDArray.InterleaveLayout`](../../ndarray/interleavelayout-swift.struct.md).
 
 ## See Also
 
-- [init(consuming CVMutablePixelBuffer)](inferencefunction/asyncmutablevalue/init(_:)-4aqgq.md)
+### Creating an async mutable value
+- [init(consuming CVMutablePixelBuffer)](./init%28_%29-4aqgq.md)
   Initialize the state from an existing pixel buffer.
-- [init(consuming NDArray)](inferencefunction/asyncmutablevalue/init(_:)-x6se.md)
+- [init(consuming NDArray)](./init%28_%29-x6se.md)
   Initialize the state from an existing ndArray.
-- [init(descriptor: consuming InferenceValue.Descriptor)](inferencefunction/asyncmutablevalue/init(descriptor:).md)
+- [init(descriptor: consuming InferenceValue.Descriptor)](./init%28descriptor%29.md)
   Initialize a new state by creating a value matching the provided descriptor.
 
 

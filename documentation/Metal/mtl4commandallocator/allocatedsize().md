@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Queries the size of the internal memory heaps of this command allocator that support encoding commands into command buffers.
@@ -18,6 +19,10 @@ Queries the size of the internal memory heaps of this command allocator that sup
 
 ```swift
 func allocatedSize() -> UInt64
+```
+
+```objc
+- (uint64_t) allocatedSize;
 ```
 
 #### Return Value

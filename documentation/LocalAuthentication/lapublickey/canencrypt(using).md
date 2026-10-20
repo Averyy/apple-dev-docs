@@ -1,7 +1,8 @@
 # canEncrypt(using:)
 
 **Framework**: Local Authentication  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks whether the algorithm you supply is valid for encrypting data with the key.
 
@@ -18,6 +19,10 @@ Checks whether the algorithm you supply is valid for encrypting data with the ke
 func canEncrypt(using algorithm: SecKeyAlgorithm) -> Bool
 ```
 
+```objc
+- (BOOL) canEncryptUsingSecKeyAlgorithm:(SecKeyAlgorithm) algorithm;
+```
+
 #### Return Value
 
 A Boolean value that indicates whether the algorithm you supply is valid for encrypting data with the key.
@@ -28,7 +33,8 @@ A Boolean value that indicates whether the algorithm you supply is valid for enc
 
 ## See Also
 
-- [func canVerify(using: SecKeyAlgorithm) -> Bool](lapublickey/canverify(using:).md)
+### Checking algorithm support
+- [func canVerify(using: SecKeyAlgorithm) -> Bool](./canverify%28using%29.md)
   Checks whether the algorithm you supply is valid for verifying signatures with the key.
 
 

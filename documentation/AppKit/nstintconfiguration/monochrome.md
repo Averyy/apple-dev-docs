@@ -1,7 +1,8 @@
 # monochrome
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The content always displays in monochrome.
 
@@ -14,17 +15,22 @@ The content always displays in monochrome.
 class var monochrome: NSTintConfiguration { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSTintConfiguration * monochromeTintConfiguration;
+```
+
 #### Discussion
 
 Content marked as monochrome remains monochrome regardless of the system accent color.
 
 ## See Also
 
-- [class var `default`: NSTintConfiguration](nstintconfiguration/default.md)
+### Setting the Tint Color
+- [class var `default`: NSTintConfiguration](./default.md)
   The system tints the content using the system default value for its context.
-- [var baseTintColor: NSColor?](nstintconfiguration/basetintcolor.md)
+- [var baseTintColor: NSColor?](./basetintcolor.md)
   The color the system supplies when you create a tint configuration.
-- [var equivalentContentTintColor: NSColor?](nstintconfiguration/equivalentcontenttintcolor.md)
+- [var equivalentContentTintColor: NSColor?](./equivalentcontenttintcolor.md)
   A color object that matches the effective content tint.
 
 

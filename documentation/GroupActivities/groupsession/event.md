@@ -1,7 +1,8 @@
 # GroupSession.Event
 
 **Framework**: Group Activities  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A session-related event to display in the system UI.
 
@@ -19,21 +20,23 @@ A session-related event to display in the system UI.
 struct Event
 ```
 
+Available when `ActivityType` conforms to `GroupActivity`.
+
 #### Overview
 
 Use this structure to specify the contents of custom activity-related events. The AV Foundation framework posts media-related events to the system on your app’s behalf; create an instance of this structure if your app posts additional events that don’t route through AV Foundation.
 
-After creating an instance of this structure, post it to the system using the [`showNotice(_:)`](groupsession/shownotice(_:).md) method of [`GroupSession`](groupsession.md).
+After creating an instance of this structure, post it to the system using the [`showNotice(_:)`](./shownotice%28_%29.md) method of [`GroupSession`](../groupsession.md).
 
 ## Topics
 
 ### Getting the event details
-- [let originator: Participant](groupsession/event/originator.md)
+- [let originator: Participant](./event/originator.md)
   The participant that initiated the event.
 ### Initializers
-- [init(originator: Participant, localizedDescription: String)](groupsession/event/init(originator:localizeddescription:).md)
+- [init(originator: Participant, localizedDescription: String)](./event/init%28originator,localizeddescription%29.md)
 ### Instance Properties
-- [var localizedDescription: String](groupsession/event/localizeddescription.md)
+- [var localizedDescription: String](./event/localizeddescription.md)
   A localized description of the event
 
 

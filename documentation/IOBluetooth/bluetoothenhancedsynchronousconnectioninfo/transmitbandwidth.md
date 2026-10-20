@@ -1,15 +1,20 @@
 # transmitBandWidth
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var transmitBandWidth: BluetoothHCITransmitBandwidth
+```
+
+```c
+BluetoothHCITransmitBandwidth transmitBandWidth;
 ```
 
 

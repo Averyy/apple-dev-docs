@@ -1,7 +1,8 @@
 # MarkStackingMethod
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The ways in which you can stack marks in a chart.
 
@@ -24,37 +25,38 @@ struct MarkStackingMethod
 ## Topics
 
 ### Type Properties
-- [static var center: MarkStackingMethod](markstackingmethod/center.md)
+- [static var center: MarkStackingMethod](./markstackingmethod/center.md)
   Stack marks using a center offset.
-- [static var normalized: MarkStackingMethod](markstackingmethod/normalized.md)
+- [static var normalized: MarkStackingMethod](./markstackingmethod/normalized.md)
   Create normalized stacked bar and area charts.
-- [static var standard: MarkStackingMethod](markstackingmethod/standard.md)
+- [static var standard: MarkStackingMethod](./markstackingmethod/standard.md)
   Stack marks starting at zero.
-- [static var unstacked: MarkStackingMethod](markstackingmethod/unstacked.md)
+- [static var unstacked: MarkStackingMethod](./markstackingmethod/unstacked.md)
   Don’t stack marks.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct MarkDimension](markdimension.md)
+### Mark configuration
+- [struct MarkDimension](./markdimension.md)
   An individual dimension representing a mark’s width or height.
-- [struct InterpolationMethod](interpolationmethod.md)
+- [struct InterpolationMethod](./interpolationmethod.md)
   The ways in which line or area marks interpolate their data.
-- [struct BasicChartSymbolShape](basicchartsymbolshape.md)
+- [struct BasicChartSymbolShape](./basicchartsymbolshape.md)
   A basic chart symbol shape.
-- [protocol ChartSymbolShape](chartsymbolshape.md)
+- [protocol ChartSymbolShape](./chartsymbolshape.md)
   A type that can act as a shape for the marks that you add to a chart.
-- [struct AnyChartSymbolShape](anychartsymbolshape.md)
+- [struct AnyChartSymbolShape](./anychartsymbolshape.md)
   A type-erased plotting shape.
 
 

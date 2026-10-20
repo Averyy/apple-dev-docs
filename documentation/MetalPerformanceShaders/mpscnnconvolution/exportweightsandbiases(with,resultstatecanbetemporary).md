@@ -1,7 +1,8 @@
 # exportWeightsAndBiases(with:resultStateCanBeTemporary:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 func exportWeightsAndBiases(with commandBuffer: any MTLCommandBuffer, resultStateCanBeTemporary: Bool) -> MPSCNNConvolutionWeightsAndBiasesState
+```
+
+```objc
+- (MPSCNNConvolutionWeightsAndBiasesState *) exportWeightsAndBiasesWithCommandBuffer:(id<MTLCommandBuffer>) commandBuffer resultStateCanBeTemporary:(BOOL) resultStateCanBeTemporary;
 ```
 
 

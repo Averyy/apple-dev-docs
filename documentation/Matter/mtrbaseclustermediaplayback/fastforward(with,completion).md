@@ -1,7 +1,8 @@
 # fastForward(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func fastForward(with params: MTRMediaPlaybackClusterFastForwardParams?, completion: @escaping @Sendable (MTRMediaPlaybackClusterPlaybackResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func fastForward(with params: MTRMediaPlaybackClusterFastForwardParams?) async throws -> MTRMediaPlaybackClusterPlaybackResponseParams
+```
+
+```objc
+- (void) fastForwardWithParams:(MTRMediaPlaybackClusterFastForwardParams *) params completion:(void (^)(MTRMediaPlaybackClusterPlaybackResponseParams *data, NSError *error)) completion;
 ```
 
 

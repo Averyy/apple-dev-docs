@@ -1,19 +1,26 @@
 # ENErrorDomain
 
 **Framework**: Exposure Notification  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for an error.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
 ```swift
 let ENErrorDomain: String
+```
+
+```c
+extern NSErrorDomain const ENErrorDomain;
 ```
 
 #### Discussion
@@ -22,11 +29,12 @@ let ENErrorDomain: String
 
 ## See Also
 
-- [struct ENError](enerror.md)
+### Errors
+- [struct ENError](./enerror.md)
   Errors that the exposure notification framework issues.
-- [ENError.Code](enerror/code.md)
+- [ENError.Code](./enerror/code.md)
   Error codes that the exposure notification framework issues.
-- [typealias ENErrorHandler](enerrorhandler.md)
+- [typealias ENErrorHandler](./enerrorhandler.md)
   The handler for error conditions.
 
 

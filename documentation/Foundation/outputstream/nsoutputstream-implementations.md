@@ -1,11 +1,12 @@
 # NSOutputStream Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [convenience init?(URL: URL, append: Bool)](outputstream/init(url:append:)-39b27.md)
+- [convenience init?(URL: URL, append: Bool)](./init%28url,append%29-39b27.md)
 
 
 ---

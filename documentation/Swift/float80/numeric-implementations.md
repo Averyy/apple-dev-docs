@@ -1,14 +1,15 @@
 # Numeric Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var magnitude: Float80](float80/magnitude-swift.property.md)
+- [var magnitude: Float80](./magnitude-swift.property.md)
   The magnitude of this value.
 ### Type Aliases
-- [typealias Magnitude](float80/magnitude-swift.typealias.md)
+- [typealias Magnitude](./magnitude-swift.typealias.md)
   A type that can represent the absolute value of any possible value of the conforming type.
 
 

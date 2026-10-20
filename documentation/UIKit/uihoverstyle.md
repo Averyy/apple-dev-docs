@@ -1,7 +1,8 @@
 # UIHoverStyle
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The hover style to apply to a view, including an effect and a shape to use for displaying that effect.
 
@@ -18,53 +19,58 @@ The hover style to apply to a view, including an effect and a shape to use for d
 class UIHoverStyle
 ```
 
+```objc
+@interface UIHoverStyle : NSObject
+```
+
 ## Topics
 
 ### Creating a hover style
-- [convenience init(effect: some UIHoverEffect, shape: UIShape?)](uihoverstyle/init(effect:shape:).md)
+- [convenience init(effect: some UIHoverEffect, shape: UIShape?)](./uihoverstyle/init%28effect,shape%29.md)
   Creates a hover style with the provided effect and shape.
-- [convenience init(shape: UIShape?)](uihoverstyle/init(shape:).md)
+- [convenience init(shape: UIShape?)](./uihoverstyle/init%28shape%29.md)
   Creates a hover style with the provided shape and an automatic hover effect.
 ### Specifying a hover shape
-- [var shape: UIShape?](uihoverstyle/shape-21npk.md)
+- [var shape: UIShape?](./uihoverstyle/shape-21npk.md)
   The shape to use for the hover effect.
-- [struct UIShape](uishape-swift.struct.md)
+- [struct UIShape](./uishape-swift.struct.md)
   An abstract representation of a shape.
 ### Specifying a hover effect
-- [var effect: any UIHoverEffect](uihoverstyle/effect-4vdoj.md)
+- [var effect: any UIHoverEffect](./uihoverstyle/effect-4vdoj.md)
   The effect to apply to the view with this style.
-- [struct UIHoverAutomaticEffect](uihoverautomaticeffect-swift.struct.md)
+- [struct UIHoverAutomaticEffect](./uihoverautomaticeffect-swift.struct.md)
   A system-default hover effect that automatically selects the appropriate effect based on the view to which it applies.
-- [struct UIHoverHighlightEffect](uihoverhighlighteffect-swift.struct.md)
+- [struct UIHoverHighlightEffect](./uihoverhighlighteffect-swift.struct.md)
   An effect that applies a highlight to the view on hover.
-- [struct UIHoverLiftEffect](uihoverlifteffect-swift.struct.md)
+- [struct UIHoverLiftEffect](./uihoverlifteffect-swift.struct.md)
   An effect that can visually lift the view on hover where appropriate.
-- [protocol UIHoverEffect](uihovereffect-40091.md)
+- [protocol UIHoverEffect](./uihovereffect-40091.md)
   A hover effect that can apply to a view through a hover style.
 ### Managing the state of the hover effect
-- [var isEnabled: Bool](uihoverstyle/isenabled.md)
+- [var isEnabled: Bool](./uihoverstyle/isenabled.md)
   A Boolean value that determines whether the hover effect is active.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [UIPointerStyle](uipointerstyle.md)
+- [UIPointerStyle](./uipointerstyle.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var hoverStyle: UIHoverStyle?](uiview/hoverstyle.md)
+### Managing the hover appearance
+- [var hoverStyle: UIHoverStyle?](./uiview/hoverstyle.md)
   The hover style for the view.
-- [class UIHoverEffectLayer](uihovereffectlayer.md)
+- [class UIHoverEffectLayer](./uihovereffectlayer.md)
   A layer type that can be used to apply a hover effect to its sublayers.
 
 

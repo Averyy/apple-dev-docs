@@ -1,12 +1,15 @@
 # unloadComposition()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Unloads the composition from the view.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -14,17 +17,22 @@ Unloads the composition from the view.
 func unloadComposition()
 ```
 
+```objc
+- (void) unloadComposition;
+```
+
 #### Discussion
 
-If necessary, this method calls [`stopRendering()`](qcview/stoprendering().md)  prior to unloading the composition.
+If necessary, this method calls [`stopRendering()`](./stoprendering%28%29.md)  prior to unloading the composition.
 
 ## See Also
 
-- [func loadComposition(fromFile: String!) -> Bool](qcview/loadcomposition(fromfile:).md)
+### Loading a Composition
+- [func loadComposition(fromFile: String!) -> Bool](./loadcomposition%28fromfile%29.md)
   Loads the composition file located at the specified path.
-- [func load(QCComposition!) -> Bool](qcview/load(_:).md)
-  Loads a [`QCComposition`](qccomposition.md) object into the view.
-- [func loadedComposition() -> QCComposition!](qcview/loadedcomposition.md)
+- [func load(QCComposition!) -> Bool](./load%28_%29.md)
+  Loads a [`QCComposition`](../qccomposition.md) object into the view.
+- [func loadedComposition() -> QCComposition!](./loadedcomposition%28%29.md)
   Returns the composition loaded in the view.
 
 

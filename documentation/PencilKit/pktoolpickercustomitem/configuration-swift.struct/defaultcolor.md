@@ -1,7 +1,8 @@
 # defaultColor
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default color for the tool.
 
@@ -23,7 +24,8 @@ The default color is black.
 
 ## See Also
 
-- [var allowsColorSelection: Bool](pktoolpickercustomitem/configuration-swift.struct/allowscolorselection.md)
+### Customizing color
+- [var allowsColorSelection: Bool](./allowscolorselection.md)
   A Boolean value that determines whether to show the color selection UI for the tool.
 
 

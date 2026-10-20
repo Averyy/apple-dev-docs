@@ -1,7 +1,8 @@
 # kernelHeight
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,12 +18,17 @@
 var kernelHeight: Int { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSUInteger kernelHeight;
+```
+
 ## See Also
 
-- [var kernelWidth: Int](mpscnnlocalcontrastnormalizationnode/kernelwidth.md)
-- [var p0: Float](mpscnnlocalcontrastnormalizationnode/p0.md)
-- [var pm: Float](mpscnnlocalcontrastnormalizationnode/pm.md)
-- [var ps: Float](mpscnnlocalcontrastnormalizationnode/ps.md)
+### Instance Properties
+- [var kernelWidth: Int](./kernelwidth.md)
+- [var p0: Float](./p0.md)
+- [var pm: Float](./pm.md)
+- [var ps: Float](./ps.md)
 
 
 ---

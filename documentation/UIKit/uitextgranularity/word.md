@@ -1,19 +1,24 @@
 # UITextGranularity.word
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case word
+```
+
+```c
+UITextGranularityWord
 ```
 
 #### Discussion
@@ -22,11 +27,12 @@ The unit of text is a word.
 
 ## See Also
 
-- [UITextGranularity.character](uitextgranularity/character.md)
-- [UITextGranularity.sentence](uitextgranularity/sentence.md)
-- [UITextGranularity.paragraph](uitextgranularity/paragraph.md)
-- [UITextGranularity.line](uitextgranularity/line.md)
-- [UITextGranularity.document](uitextgranularity/document.md)
+### Constants
+- [UITextGranularity.character](./character.md)
+- [UITextGranularity.sentence](./sentence.md)
+- [UITextGranularity.paragraph](./paragraph.md)
+- [UITextGranularity.line](./line.md)
+- [UITextGranularity.document](./document.md)
 
 
 ---

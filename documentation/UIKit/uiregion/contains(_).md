@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean indicating whether the specified point is inside of the current region.
 
@@ -18,9 +19,13 @@ Returns a Boolean indicating whether the specified point is inside of the curren
 func contains(_ point: CGPoint) -> Bool
 ```
 
+```objc
+- (BOOL) containsPoint:(CGPoint) point;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the point is in the current region or [`false`](https://developer.apple.com/documentation/swift/false) if it is not.
+[`true`](../../Swift/true.md) if the point is in the current region or [`false`](../../Swift/false.md) if it is not.
 
 #### Discussion
 

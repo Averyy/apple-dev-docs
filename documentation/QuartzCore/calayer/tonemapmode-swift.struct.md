@@ -1,7 +1,8 @@
 # CALayer.ToneMapMode
 
 **Framework**: Core Animation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -17,19 +18,23 @@
 struct ToneMapMode
 ```
 
+```c
+typedef NSString * CAToneMapMode;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: String)](calayer/tonemapmode-swift.struct/init(rawvalue:).md)
+- [init(rawValue: String)](./tonemapmode-swift.struct/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

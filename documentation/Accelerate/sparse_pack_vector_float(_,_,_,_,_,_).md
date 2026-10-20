@@ -1,7 +1,8 @@
 # sparse_pack_vector_float(_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Packs nonzero values from a single-precision dense vector to a destination array.
 
@@ -18,6 +19,10 @@ Packs nonzero values from a single-precision dense vector to a destination array
 
 ```swift
 func sparse_pack_vector_float(_ N: sparse_dimension, _ nz: sparse_dimension, _ x: UnsafePointer<Float>!, _ incx: sparse_stride, _ y: UnsafeMutablePointer<Float>!, _ indy: UnsafeMutablePointer<sparse_index>!) -> Int
+```
+
+```c
+long sparse_pack_vector_float(sparse_dimension N, sparse_dimension nz, const float * restrictx, sparse_stride incx, float * restricty, sparse_index * restrictindy);
 ```
 
 #### Return Value
@@ -41,15 +46,16 @@ Pack the first `nz` nonzero values and indices from the dense vector *x* and pla
 
 ## See Also
 
-- [func sparse_get_vector_nonzero_count_double(sparse_dimension, UnsafePointer<Double>!, sparse_stride) -> Int](sparse_get_vector_nonzero_count_double(_:_:_:).md)
+### Sparse Utility Operations
+- [func sparse_get_vector_nonzero_count_double(sparse_dimension, UnsafePointer<Double>!, sparse_stride) -> Int](./sparse_get_vector_nonzero_count_double%28_,_,_%29.md)
   Returns the number of nonzero values in the double-precision dense vector *x*.
-- [func sparse_get_vector_nonzero_count_float(sparse_dimension, UnsafePointer<Float>!, sparse_stride) -> Int](sparse_get_vector_nonzero_count_float(_:_:_:).md)
+- [func sparse_get_vector_nonzero_count_float(sparse_dimension, UnsafePointer<Float>!, sparse_stride) -> Int](./sparse_get_vector_nonzero_count_float%28_,_,_%29.md)
   Returns the number of nonzero values in the single-precision dense vector *x*.
-- [func sparse_pack_vector_double(sparse_dimension, sparse_dimension, UnsafePointer<Double>!, sparse_stride, UnsafeMutablePointer<Double>!, UnsafeMutablePointer<sparse_index>!) -> Int](sparse_pack_vector_double(_:_:_:_:_:_:).md)
+- [func sparse_pack_vector_double(sparse_dimension, sparse_dimension, UnsafePointer<Double>!, sparse_stride, UnsafeMutablePointer<Double>!, UnsafeMutablePointer<sparse_index>!) -> Int](./sparse_pack_vector_double%28_,_,_,_,_,_%29.md)
   Packs nonzero values from a double-precision dense vector to a destination array.
-- [func sparse_unpack_vector_double(sparse_dimension, sparse_dimension, Bool, UnsafePointer<Double>!, UnsafePointer<sparse_index>!, UnsafeMutablePointer<Double>!, sparse_stride)](sparse_unpack_vector_double(_:_:_:_:_:_:_:).md)
+- [func sparse_unpack_vector_double(sparse_dimension, sparse_dimension, Bool, UnsafePointer<Double>!, UnsafePointer<sparse_index>!, UnsafeMutablePointer<Double>!, sparse_stride)](./sparse_unpack_vector_double%28_,_,_,_,_,_,_%29.md)
   Extracts elements from the sparse vector *x* into the corresponding location in the dense vector *y*, with both vectors containing double-precision values.
-- [func sparse_unpack_vector_float(sparse_dimension, sparse_dimension, Bool, UnsafePointer<Float>!, UnsafePointer<sparse_index>!, UnsafeMutablePointer<Float>!, sparse_stride)](sparse_unpack_vector_float(_:_:_:_:_:_:_:).md)
+- [func sparse_unpack_vector_float(sparse_dimension, sparse_dimension, Bool, UnsafePointer<Float>!, UnsafePointer<sparse_index>!, UnsafeMutablePointer<Float>!, sparse_stride)](./sparse_unpack_vector_float%28_,_,_,_,_,_,_%29.md)
   Extracts elements from the sparse vector *x* into the corresponding location in the dense vector *y*, with both vectors containing single-precision values.
 
 

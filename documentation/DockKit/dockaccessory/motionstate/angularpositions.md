@@ -1,7 +1,8 @@
 # angularPositions
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The angles of the axes, in radians.
 
@@ -19,11 +20,12 @@ let angularPositions: Vector3D
 
 ## See Also
 
-- [let angularVelocities: Vector3D](dockaccessory/motionstate/angularvelocities.md)
+### Getting properties
+- [let angularVelocities: Vector3D](./angularvelocities.md)
   The angular velocity of each axis of rotation in radians.
-- [let timestamp: TimeInterval](dockaccessory/motionstate/timestamp.md)
+- [let timestamp: TimeInterval](./timestamp.md)
   The current time, in UNIX epoch.
-- [let error: (any Error)?](dockaccessory/motionstate/error.md)
+- [let error: (any Error)?](./error.md)
   The error, if any.
 
 

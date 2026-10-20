@@ -1,12 +1,13 @@
 # sharedSpellCheckerExists
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns whether the application’s NSSpellChecker has already been created.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ Returns whether the application’s NSSpellChecker has already been created.
 class var sharedSpellCheckerExists: Bool { get }
 ```
 
+```objc
+@property (class, readonly) BOOL sharedSpellCheckerExists;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the shared spell checker already exists, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the shared spell checker already exists, otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [class var shared: NSSpellChecker](nsspellchecker/shared.md)
+### Getting the Spell Checker
+- [class var shared: NSSpellChecker](./shared.md)
   Returns the NSSpellChecker (one per application).
 
 

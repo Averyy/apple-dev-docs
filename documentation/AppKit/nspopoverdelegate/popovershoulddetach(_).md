@@ -1,7 +1,8 @@
 # popoverShouldDetach(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether a popover should detach from its positioning view and become a separate window.
 
@@ -15,11 +16,15 @@ Returns a Boolean value that indicates whether a popover should detach from its 
 optional func popoverShouldDetach(_ popover: NSPopover) -> Bool
 ```
 
+```objc
+- (BOOL) popoverShouldDetach:(NSPopover *) popover;
+```
+
 #### Discussion
 
-If you don’t implement this method, it returns [`false`](https://developer.apple.com/documentation/swift/false) by default. If you return [`true`](https://developer.apple.com/documentation/swift/true) from this method, but you don’t implement [`detachableWindow(for:)`](nspopoverdelegate/detachablewindow(for:).md) or you implement it to return `nil`, a detachable window is created with the popover’s [`contentViewController`](nspopover/contentviewcontroller.md).
+If you don’t implement this method, it returns [`false`](../../Swift/false.md) by default. If you return [`true`](../../Swift/true.md) from this method, but you don’t implement [`detachableWindow(for:)`](./detachablewindow%28for%29.md) or you implement it to return `nil`, a detachable window is created with the popover’s [`contentViewController`](../nspopover/contentviewcontroller.md).
 
-An automatically created window has the same appearance as the detached popover. For example, if the popover’s [`contentViewController`](nspopover/contentviewcontroller.md) has a title, it will be bound to and displayed as the title of the detached window. When a popover is released in a detached state, it calls [`popoverDidDetach(_:)`](nspopoverdelegate/popoverdiddetach(_:).md) on the delegate. When a detached popover is closed, calls to [`popoverShouldClose(_:)`](nspopoverdelegate/popovershouldclose(_:).md), [`popoverWillClose(_:)`](nspopoverdelegate/popoverwillclose(_:).md), and [`popoverDidClose(_:)`](nspopoverdelegate/popoverdidclose(_:).md), in addition to the related notifications, specify the reason [`standard`](nspopover/closereason/standard.md).
+An automatically created window has the same appearance as the detached popover. For example, if the popover’s [`contentViewController`](../nspopover/contentviewcontroller.md) has a title, it will be bound to and displayed as the title of the detached window. When a popover is released in a detached state, it calls [`popoverDidDetach(_:)`](./popoverdiddetach%28_%29.md) on the delegate. When a detached popover is closed, calls to [`popoverShouldClose(_:)`](./popovershouldclose%28_%29.md), [`popoverWillClose(_:)`](./popoverwillclose%28_%29.md), and [`popoverDidClose(_:)`](./popoverdidclose%28_%29.md), in addition to the related notifications, specify the reason [`standard`](../nspopover/closereason/standard.md).
 
 ## Parameters
 
@@ -27,17 +32,18 @@ An automatically created window has the same appearance as the detached popover.
 
 ## See Also
 
-- [func popoverShouldClose(NSPopover) -> Bool](nspopoverdelegate/popovershouldclose(_:).md)
+### Popover Visibility
+- [func popoverShouldClose(NSPopover) -> Bool](./popovershouldclose%28_%29.md)
   Allows a delegate to override a close request.
-- [func popoverWillShow(Notification)](nspopoverdelegate/popoverwillshow(_:).md)
+- [func popoverWillShow(Notification)](./popoverwillshow%28_%29.md)
   Invoked when the popover will show.
-- [func popoverDidShow(Notification)](nspopoverdelegate/popoverdidshow(_:).md)
+- [func popoverDidShow(Notification)](./popoverdidshow%28_%29.md)
   Invoked when the popover has been shown.
-- [func popoverWillClose(Notification)](nspopoverdelegate/popoverwillclose(_:).md)
+- [func popoverWillClose(Notification)](./popoverwillclose%28_%29.md)
   Invoked when the popover is about to close.
-- [func popoverDidClose(Notification)](nspopoverdelegate/popoverdidclose(_:).md)
+- [func popoverDidClose(Notification)](./popoverdidclose%28_%29.md)
   Invoked when the popover did close.
-- [func popoverDidDetach(NSPopover)](nspopoverdelegate/popoverdiddetach(_:).md)
+- [func popoverDidDetach(NSPopover)](./popoverdiddetach%28_%29.md)
   Indicates that a popover has been released while it’s in an implicitly detached state.
 
 

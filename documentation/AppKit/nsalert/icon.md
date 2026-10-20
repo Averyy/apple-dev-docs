@@ -1,17 +1,22 @@
 # icon
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The custom icon displayed in the alert.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var icon: NSImage! { get set }
+```
+
+```objc
+@property (strong, null_resettable) NSImage * icon;
 ```
 
 #### Discussion

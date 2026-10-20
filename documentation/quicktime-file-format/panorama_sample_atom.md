@@ -1,9 +1,12 @@
 # Panorama sample atom ('pdat')
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An atom that describes a single panorama.
+
+> **Deprecated**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
 
 #### Overview
 
@@ -57,60 +60,61 @@ typedef struct QTVRAngleRangeAtom {
 ## Topics
 
 ### Data fields
-- [majorVersion](panorama_sample_atom/majorversion.md)
+- [majorVersion](./panorama_sample_atom/majorversion.md)
   The major version number of the file format.
-- [minorVersion](panorama_sample_atom/minorversion.md)
+- [minorVersion](./panorama_sample_atom/minorversion.md)
   The minor version number of the file format.
-- [imageRefTrackIndex](panorama_sample_atom/imagereftrackindex.md)
+- [imageRefTrackIndex](./panorama_sample_atom/imagereftrackindex.md)
   The index of the image track reference.
-- [hotSpotRefTrackIndex](panorama_sample_atom/hotspotreftrackindex.md)
+- [hotSpotRefTrackIndex](./panorama_sample_atom/hotspotreftrackindex.md)
   The index of the hot spot track reference.
-- [minPan](panorama_sample_atom/minpan.md)
+- [minPan](./panorama_sample_atom/minpan.md)
   The minimum pan angle, in degrees.
-- [maxPan](panorama_sample_atom/maxpan.md)
+- [maxPan](./panorama_sample_atom/maxpan.md)
   The maximum pan angle, in degrees.
-- [minTilt](panorama_sample_atom/mintilt.md)
+- [minTilt](./panorama_sample_atom/mintilt.md)
   The minimum tilt angle, in degrees.
-- [maxTilt](panorama_sample_atom/maxtilt.md)
+- [maxTilt](./panorama_sample_atom/maxtilt.md)
   The maximum tilt angle, in degrees.
-- [minFieldOfView](panorama_sample_atom/minfieldofview.md)
+- [minFieldOfView](./panorama_sample_atom/minfieldofview.md)
   The minimum vertical field of view, in degrees.
-- [maxFieldOfView](panorama_sample_atom/maxfieldofview.md)
+- [maxFieldOfView](./panorama_sample_atom/maxfieldofview.md)
   The maximum vertical field of view, in degrees.
-- [defaultPan](panorama_sample_atom/defaultpan.md)
+- [defaultPan](./panorama_sample_atom/defaultpan.md)
   The default pan angle, in degrees.
-- [defaultTilt](panorama_sample_atom/defaulttilt.md)
+- [defaultTilt](./panorama_sample_atom/defaulttilt.md)
   The default tilt angle, in degrees.
-- [defaultFieldOfView](panorama_sample_atom/defaultfieldofview.md)
+- [defaultFieldOfView](./panorama_sample_atom/defaultfieldofview.md)
   The default vertical field of view, in degrees.
-- [imageSizeX](panorama_sample_atom/imagesizex.md)
+- [imageSizeX](./panorama_sample_atom/imagesizex.md)
   The width, in pixels, of the panorama stored in the highest resolution image track.
-- [imageSizeY](panorama_sample_atom/imagesizey.md)
+- [imageSizeY](./panorama_sample_atom/imagesizey.md)
   The height, in pixels, of the panorama stored in the highest resolution image track.
-- [imageNumFramesX](panorama_sample_atom/imagenumframesx.md)
+- [imageNumFramesX](./panorama_sample_atom/imagenumframesx.md)
   The number of frames into which the panoramic image is diced horizontally.
-- [imageNumFramesY](panorama_sample_atom/imagenumframesy.md)
+- [imageNumFramesY](./panorama_sample_atom/imagenumframesy.md)
   The number of frames into which the panoramic image is diced vertically.
-- [hotSpotSizeX](panorama_sample_atom/hotspotsizex.md)
+- [hotSpotSizeX](./panorama_sample_atom/hotspotsizex.md)
   The width, in pixels, of the panorama stored in the highest resolution hot spot image track.
-- [hotSpotSizeY](panorama_sample_atom/hotspotsizey.md)
+- [hotSpotSizeY](./panorama_sample_atom/hotspotsizey.md)
   The height, in pixels, of the panorama stored in the highest resolution hot spot image track.
-- [hotSpotNumFramesX](panorama_sample_atom/hotspotnumframesx.md)
+- [hotSpotNumFramesX](./panorama_sample_atom/hotspotnumframesx.md)
   The number of frames into which the panoramic image is diced horizontally for the hot spot image track.
-- [hotSpotNumFramesY](panorama_sample_atom/hotspotnumframesy.md)
+- [hotSpotNumFramesY](./panorama_sample_atom/hotspotnumframesy.md)
   The number of frames into which the panoramic image is diced vertically for the hot spot image track.
-- [flags](panorama_sample_atom/flags.md)
+- [flags](./panorama_sample_atom/flags.md)
   A set of panorama flags.
-- [panoType](panorama_sample_atom/panotype.md)
+- [panoType](./panorama_sample_atom/panotype.md)
   An OSType describing the type of panorama.
-- [reserved2](panorama_sample_atom/reserved2.md)
+- [reserved2](./panorama_sample_atom/reserved2.md)
   Reserved.
 
 ## See Also
 
-- [Panorama image track](panorama_image_track.md)
+### Storing panorama tracks
+- [Panorama image track](./panorama_image_track.md)
   Store the panoramic image for a panoramic node.
-- [Cylindrical panoramas](cylindrical_panoramas.md)
+- [Cylindrical panoramas](./cylindrical_panoramas.md)
   Store cylindrical panoramas with horizontal orientation.
 
 

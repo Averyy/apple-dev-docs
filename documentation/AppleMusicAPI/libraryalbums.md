@@ -1,7 +1,8 @@
 # LibraryAlbums
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A resource object that represents a library album.
 
@@ -10,33 +11,36 @@ A resource object that represents a library album.
 
 ## Declaration
 
-```swift
+```
 object LibraryAlbums
 ```
 
 ## Topics
 
 ### Related Objects
-- [object LibraryAlbums.Attributes](libraryalbums/attributes-data.dictionary.md)
+- [object LibraryAlbums.Attributes](./libraryalbums/attributes-data.dictionary.md)
   The attributes for a library album resource.
-- [object LibraryAlbums.Relationships](libraryalbums/relationships-data.dictionary.md)
+- [object LibraryAlbums.Relationships](./libraryalbums/relationships-data.dictionary.md)
   The relationships for a library album object.
 
 ## Properties
 
 - `id` (string) *(required)*: The identifier for the library album.
 - `type` (string) *(required)*: This value is always `library-albums`.
+
+  **Allowed Values**: `library-albums`
 - `href` (string) *(required)*: The relative location for the library album resource.
 - `attributes` (LibraryAlbums.Attributes): The attributes for the library album.
 - `relationships` (LibraryAlbums.Relationships): The relationships for the library album.
 
 ## See Also
 
-- [object Albums](albums.md)
+### Handling the Response
+- [object Albums](./albums.md)
   A resource object that represents an album.
-- [object AlbumsResponse](albumsresponse.md)
+- [object AlbumsResponse](./albumsresponse.md)
   The response to an albums request.
-- [object LibraryAlbumsResponse](libraryalbumsresponse.md)
+- [object LibraryAlbumsResponse](./libraryalbumsresponse.md)
   The response to a library albums request.
 
 

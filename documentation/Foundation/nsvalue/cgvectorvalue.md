@@ -1,7 +1,8 @@
 # cgVectorValue
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the CoreGraphics vector structure representation of the value.
 
@@ -19,31 +20,37 @@ Returns the CoreGraphics vector structure representation of the value.
 var cgVectorValue: CGVector { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGVector CGVectorValue;
+```
+
 #### Return Value
 
 The CoreGraphics vector structure representation of the value.
 
 ## See Also
 
-- [struct CGVector](../corefoundation/cgvector.md)
+### Related Documentation
+- [struct CGVector](../../CoreFoundation/cgvector.md)
   A structure that contains a two-dimensional vector.
-- [init(CGPoint: CGPoint)](nsvalue/init(cgpoint:).md)
+### Working with CoreGraphics Geometry Values
+- [init(CGPoint: CGPoint)](./init%28cgpoint%29.md)
   Creates a new value object containing the specified CoreGraphics point structure.
-- [init(CGVector: CGVector)](nsvalue/init(cgvector:).md)
+- [init(CGVector: CGVector)](./init%28cgvector%29.md)
   Creates a new value object containing the specified CoreGraphics vector structure.
-- [init(CGSize: CGSize)](nsvalue/init(cgsize:).md)
+- [init(CGSize: CGSize)](./init%28cgsize%29.md)
   Creates a new value object containing the specified CoreGraphics size structure.
-- [init(CGRect: CGRect)](nsvalue/init(cgrect:).md)
+- [init(CGRect: CGRect)](./init%28cgrect%29.md)
   Creates a new value object containing the specified CoreGraphics rectangle structure.
-- [init(CGAffineTransform: CGAffineTransform)](nsvalue/init(cgaffinetransform:).md)
+- [init(CGAffineTransform: CGAffineTransform)](./init%28cgaffinetransform%29.md)
   Creates a new value object containing the specified CoreGraphics affine transform structure.
-- [var cgPointValue: CGPoint](nsvalue/cgpointvalue.md)
+- [var cgPointValue: CGPoint](./cgpointvalue.md)
   Returns the CoreGraphics point structure representation of the value.
-- [var cgSizeValue: CGSize](nsvalue/cgsizevalue.md)
+- [var cgSizeValue: CGSize](./cgsizevalue.md)
   Returns the CoreGraphics size structure representation of the value.
-- [var cgRectValue: CGRect](nsvalue/cgrectvalue.md)
+- [var cgRectValue: CGRect](./cgrectvalue.md)
   Returns the CoreGraphics rectangle structure representation of the value.
-- [var cgAffineTransformValue: CGAffineTransform](nsvalue/cgaffinetransformvalue.md)
+- [var cgAffineTransformValue: CGAffineTransform](./cgaffinetransformvalue.md)
   Returns the CoreGraphics affine transform representation of the value.
 
 

@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Accessory Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A type for the action.
 
@@ -16,7 +17,8 @@ let type: AccessoryNotification.Action.ActionType
 
 ## See Also
 
-- [AccessoryNotification.Action.ActionType](accessorynotification/action/actiontype.md)
+### Determining the action type
+- [AccessoryNotification.Action.ActionType](./actiontype.md)
   The types of actions available for a notification.
 
 

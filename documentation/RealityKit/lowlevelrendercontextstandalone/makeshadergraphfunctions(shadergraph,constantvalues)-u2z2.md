@@ -1,9 +1,10 @@
 # makeShaderGraphFunctions(shaderGraph:constantValues:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-A synchronous variant of [`makeShaderGraphFunctions(shaderGraph:constantValues:)`](lowlevelrendercontextstandalone/makeshadergraphfunctions(shadergraph:constantvalues:)-u2z2.md) for non-async callers.
+A synchronous variant of [`makeShaderGraphFunctions(shaderGraph:constantValues:)`](./makeshadergraphfunctions%28shadergraph,constantvalues%29-u2z2.md) for non-async callers.
 
 **Availability**:
 - iOS 27.0+
@@ -17,9 +18,16 @@ A synchronous variant of [`makeShaderGraphFunctions(shaderGraph:constantValues:)
 final func makeShaderGraphFunctions(shaderGraph: ShaderGraph, constantValues: MTLFunctionConstantValues) throws -> sending LowLevelMaterialResource.ShaderGraphOutput
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+(nonsending) final func makeShaderGraphFunctions(shaderGraph: ShaderGraph, constantValues: MTLFunctionConstantValues) async throws -> sending LowLevelMaterialResource.ShaderGraphOutput
+```
+
 #### Return Value
 
-The compiled functions for use in a [`LowLevelMaterialResource`](lowlevelmaterialresource.md).
+The compiled functions for use in a [`LowLevelMaterialResource`](../lowlevelmaterialresource.md).
 
 ## Parameters
 

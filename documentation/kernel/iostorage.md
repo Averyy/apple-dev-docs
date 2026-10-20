@@ -1,7 +1,8 @@
 # IOStorage
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 The common base class for mass storage objects.
 
@@ -10,7 +11,7 @@ The common base class for mass storage objects.
 
 ## Declaration
 
-```swift
+```cpp
 class IOStorage : IOService
 ```
 
@@ -21,54 +22,55 @@ The IOStorage class is the common base class for mass storage objects. It is an 
 ## Topics
 
 ### Miscellaneous
-- [complete](iostorage/1810767-complete.md)
-- [copyPhysicalExtent](iostorage/1810820-copyphysicalextent.md)
-- [handleClose](iostorage/1810866-handleclose.md)
-- [handleIsOpen](iostorage/1810905-handleisopen.md)
-- [handleOpen](iostorage/1810948-handleopen.md)
-- [lockPhysicalExtents](iostorage/1810985-lockphysicalextents.md)
-- [open](iostorage/1811013-open.md)
-- [read()](iostorage/1811038-read.md)
-- [read()](iostorage/1811068-read.md)
-- [synchronizeCache](iostorage/1811091-synchronizecache.md)
-- [unlockPhysicalExtents](iostorage/1811117-unlockphysicalextents.md)
-- [unmap](iostorage/1811145-unmap.md)
-- [write()](iostorage/1811168-write.md)
-- [write()](iostorage/1811185-write.md)
+- [complete](./iostorage/api-1810767-complete.md)
+- [copyPhysicalExtent](./iostorage/api-1810820-copyphysicalextent.md)
+- [handleClose](./iostorage/api-1810866-handleclose.md)
+- [handleIsOpen](./iostorage/api-1810905-handleisopen.md)
+- [handleOpen](./iostorage/api-1810948-handleopen.md)
+- [lockPhysicalExtents](./iostorage/api-1810985-lockphysicalextents.md)
+- [open](./iostorage/api-1811013-open.md)
+- [read()](./iostorage/api-1811038-read.md)
+- [read()](./iostorage/api-1811068-read.md)
+- [synchronizeCache](./iostorage/api-1811091-synchronizecache.md)
+- [unlockPhysicalExtents](./iostorage/api-1811117-unlockphysicalextents.md)
+- [unmap](./iostorage/api-1811145-unmap.md)
+- [write()](./iostorage/api-1811168-write.md)
+- [write()](./iostorage/api-1811185-write.md)
 ### Instance Methods
-- [- attach](iostorage/1574956-attach.md)
-- [- copyPhysicalExtent](iostorage/1574993-copyphysicalextent.md)
-- [- discard](iostorage/1574961-discard.md)
-- [- getMetaClass](iostorage/1574982-getmetaclass.md)
-- [- getProvisionStatus](iostorage/1644751-getprovisionstatus.md)
-- [- handleClose](iostorage/1574998-handleclose.md)
-- [- handleIsOpen](iostorage/1574986-handleisopen.md)
-- [- handleOpen](iostorage/1574957-handleopen.md)
-- [- lockPhysicalExtents](iostorage/1575002-lockphysicalextents.md)
-- [- open](iostorage/1574976-open.md)
-- [- read](iostorage/1574962-read.md)
-- [- read](iostorage/3516780-read.md)
-- [- setPriority](iostorage/1574967-setpriority.md)
-- [- synchronize](iostorage/1574954-synchronize.md)
-- [- synchronizeCache](iostorage/1574981-synchronizecache.md)
-- [- unlockPhysicalExtents](iostorage/1574979-unlockphysicalextents.md)
-- [- unmap](iostorage/1575001-unmap.md)
-- [- write](iostorage/1574965-write.md)
-- [- write](iostorage/3516781-write.md)
+- [- attach](./iostorage/api-1574956-attach.md)
+- [- copyPhysicalExtent](./iostorage/api-1574993-copyphysicalextent.md)
+- [- discard](./iostorage/api-1574961-discard.md)
+- [- getMetaClass](./iostorage/api-1574982-getmetaclass.md)
+- [- getProvisionStatus](./iostorage/api-1644751-getprovisionstatus.md)
+- [- handleClose](./iostorage/api-1574998-handleclose.md)
+- [- handleIsOpen](./iostorage/api-1574986-handleisopen.md)
+- [- handleOpen](./iostorage/api-1574957-handleopen.md)
+- [- lockPhysicalExtents](./iostorage/api-1575002-lockphysicalextents.md)
+- [- open](./iostorage/api-1574976-open.md)
+- [- read](./iostorage/api-1574962-read.md)
+- [- read](./iostorage/api-3516780-read.md)
+- [- setPriority](./iostorage/api-1574967-setpriority.md)
+- [- synchronize](./iostorage/api-1574954-synchronize.md)
+- [- synchronizeCache](./iostorage/api-1574981-synchronizecache.md)
+- [- unlockPhysicalExtents](./iostorage/api-1574979-unlockphysicalextents.md)
+- [- unmap](./iostorage/api-1575001-unmap.md)
+- [- write](./iostorage/api-1574965-write.md)
+- [- write](./iostorage/api-3516781-write.md)
 ### Type Methods
-- [+ complete](iostorage/1575005-complete.md)
+- [+ complete](./iostorage/api-1575005-complete.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOService](ioservice.md)
+- [IOService](./ioservice.md)
 
 ## See Also
 
-- [IOBDBlockStorageDriver](iobdblockstoragedriver.md)
-- [IODVDBlockStorageDriver](iodvdblockstoragedriver.md)
-- [IOCDBlockStorageDriver](iocdblockstoragedriver.md)
-- [IOBlockStorageDriver](ioblockstoragedriver.md)
+### Drivers
+- [IOBDBlockStorageDriver](./iobdblockstoragedriver.md)
+- [IODVDBlockStorageDriver](./iodvdblockstoragedriver.md)
+- [IOCDBlockStorageDriver](./iocdblockstoragedriver.md)
+- [IOBlockStorageDriver](./ioblockstoragedriver.md)
   The common base class for generic block storage drivers.
 
 

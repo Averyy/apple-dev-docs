@@ -1,16 +1,17 @@
 # CFLocaleKey
 
 **Framework**: Core Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,73 +19,78 @@
 struct CFLocaleKey
 ```
 
+```c
+typedef CFStringRef CFLocaleKey;
+```
+
 ## Topics
 
 ### Type Properties
-- [static let alternateQuotationBeginDelimiterKey: CFLocaleKey!](cflocalekey/alternatequotationbegindelimiterkey.md)
+- [static let alternateQuotationBeginDelimiterKey: CFLocaleKey!](./cflocalekey/alternatequotationbegindelimiterkey.md)
   Specifies the alternating begin quotation symbol associated with the locale. In some locales, when quotations are nested, the quotation characters alternate. Thus, `NSLocaleQuotationBeginDelimiterKey`, then `NSLocaleAlternateQuotationBeginDelimiterKey`, and so on.
-- [static let alternateQuotationEndDelimiterKey: CFLocaleKey!](cflocalekey/alternatequotationenddelimiterkey.md)
+- [static let alternateQuotationEndDelimiterKey: CFLocaleKey!](./cflocalekey/alternatequotationenddelimiterkey.md)
   Specifies the alternating end quotation symbol associated with the locale. In some locales, when quotations are nested, the quotation characters alternate. Thus, `NSLocaleQuotationEndDelimiterKey`, then `NSLocaleAlternateQuotationEndDelimiterKey`, and so on.
-- [static let calendar: CFLocaleKey!](cflocalekey/calendar.md)
+- [static let calendar: CFLocaleKey!](./cflocalekey/calendar.md)
   Specifies the locale calendar.
-- [static let calendarIdentifier: CFLocaleKey!](cflocalekey/calendaridentifier.md)
+- [static let calendarIdentifier: CFLocaleKey!](./cflocalekey/calendaridentifier.md)
   Specifies the locale calendar identifier.
-- [static let collationIdentifier: CFLocaleKey!](cflocalekey/collationidentifier.md)
+- [static let collationIdentifier: CFLocaleKey!](./cflocalekey/collationidentifier.md)
   Specifies the locale collation identifier.
-- [static let collatorIdentifier: CFLocaleKey!](cflocalekey/collatoridentifier.md)
+- [static let collatorIdentifier: CFLocaleKey!](./cflocalekey/collatoridentifier.md)
   Specifies the collation identifier for the locale.
-- [static let countryCode: CFLocaleKey!](cflocalekey/countrycode.md)
+- [static let countryCode: CFLocaleKey!](./cflocalekey/countrycode.md)
   Specifies the locale country code.
-- [static let currencyCode: CFLocaleKey!](cflocalekey/currencycode.md)
+- [static let currencyCode: CFLocaleKey!](./cflocalekey/currencycode.md)
   Specifies the locale currency code.
-- [static let currencySymbol: CFLocaleKey!](cflocalekey/currencysymbol.md)
+- [static let currencySymbol: CFLocaleKey!](./cflocalekey/currencysymbol.md)
   Specifies the currency symbol.
-- [static let decimalSeparator: CFLocaleKey!](cflocalekey/decimalseparator.md)
+- [static let decimalSeparator: CFLocaleKey!](./cflocalekey/decimalseparator.md)
   Specifies the decimal point string.
-- [static let exemplarCharacterSet: CFLocaleKey!](cflocalekey/exemplarcharacterset.md)
+- [static let exemplarCharacterSet: CFLocaleKey!](./cflocalekey/exemplarcharacterset.md)
   Specifies the locale character set.
-- [static let groupingSeparator: CFLocaleKey!](cflocalekey/groupingseparator.md)
+- [static let groupingSeparator: CFLocaleKey!](./cflocalekey/groupingseparator.md)
   Specifies the separator string between groups of digits.
-- [static let identifier: CFLocaleKey!](cflocalekey/identifier.md)
+- [static let identifier: CFLocaleKey!](./cflocalekey/identifier.md)
   Specifies locale identifier.
-- [static let languageCode: CFLocaleKey!](cflocalekey/languagecode.md)
+- [static let languageCode: CFLocaleKey!](./cflocalekey/languagecode.md)
   Specifies the locale language code.
-- [static let measurementSystem: CFLocaleKey!](cflocalekey/measurementsystem.md)
+- [static let measurementSystem: CFLocaleKey!](./cflocalekey/measurementsystem.md)
   Specifies the measurement system used.
-- [static let quotationBeginDelimiterKey: CFLocaleKey!](cflocalekey/quotationbegindelimiterkey.md)
+- [static let quotationBeginDelimiterKey: CFLocaleKey!](./cflocalekey/quotationbegindelimiterkey.md)
   Specifies the begin quotation symbol associated with the locale.
-- [static let quotationEndDelimiterKey: CFLocaleKey!](cflocalekey/quotationenddelimiterkey.md)
+- [static let quotationEndDelimiterKey: CFLocaleKey!](./cflocalekey/quotationenddelimiterkey.md)
   Specifies the end quotation symbol associated with the locale.
-- [static let scriptCode: CFLocaleKey!](cflocalekey/scriptcode.md)
+- [static let scriptCode: CFLocaleKey!](./cflocalekey/scriptcode.md)
   Specifies the locale script code.
-- [static let usesMetricSystem: CFLocaleKey!](cflocalekey/usesmetricsystem.md)
+- [static let usesMetricSystem: CFLocaleKey!](./cflocalekey/usesmetricsystem.md)
   Specifies the whether the locale uses the metric system.
-- [static let variantCode: CFLocaleKey!](cflocalekey/variantcode.md)
+- [static let variantCode: CFLocaleKey!](./cflocalekey/variantcode.md)
   Specifies the locale variant code.
 ### Initializers
-- [init(rawValue: CFString)](cflocalekey/init(rawvalue:).md)
+- [init(rawValue: CFString)](./cflocalekey/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [typealias CFAllocatorTypeID](cfallocatortypeid.md)
-- [struct CFCalendarIdentifier](cfcalendaridentifier.md)
-- [struct CFDateFormatterKey](cfdateformatterkey.md)
-- [typealias CFErrorDomain](cferrordomain.md)
-- [struct CFLocaleIdentifier](cflocaleidentifier.md)
-- [struct CFNotificationName](cfnotificationname.md)
-- [struct CFNumberFormatterKey](cfnumberformatterkey.md)
-- [struct CFRunLoopMode](cfrunloopmode.md)
-- [struct CFStreamPropertyKey](cfstreampropertykey.md)
-- [typealias CFTypeRef](cftyperef.md)
+### Data Types
+- [typealias CFAllocatorTypeID](./cfallocatortypeid.md)
+- [struct CFCalendarIdentifier](./cfcalendaridentifier.md)
+- [struct CFDateFormatterKey](./cfdateformatterkey.md)
+- [typealias CFErrorDomain](./cferrordomain.md)
+- [struct CFLocaleIdentifier](./cflocaleidentifier.md)
+- [struct CFNotificationName](./cfnotificationname.md)
+- [struct CFNumberFormatterKey](./cfnumberformatterkey.md)
+- [struct CFRunLoopMode](./cfrunloopmode.md)
+- [struct CFStreamPropertyKey](./cfstreampropertykey.md)
+- [typealias CFTypeRef](./cftyperef.md)
   An untyped “generic” reference to any Core Foundation object.
 
 

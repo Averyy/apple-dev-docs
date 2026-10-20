@@ -1,7 +1,8 @@
 # kSecTransformInvalidOverride
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An illegal override was given to a custom transform.
 
@@ -9,7 +10,7 @@ An illegal override was given to a custom transform.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.0+
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 13.0
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
@@ -18,6 +19,10 @@ An illegal override was given to a custom transform.
 
 ```swift
 var kSecTransformInvalidOverride: CFIndex { get }
+```
+
+```c
+kSecTransformInvalidOverride
 ```
 
 

@@ -1,7 +1,8 @@
 # months
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An ordered collection of month weather statistics data of type `T`, for each requested month.
 

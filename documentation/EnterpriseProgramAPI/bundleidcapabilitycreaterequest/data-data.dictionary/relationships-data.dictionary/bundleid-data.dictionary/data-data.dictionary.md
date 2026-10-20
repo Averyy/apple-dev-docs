@@ -1,20 +1,21 @@
 # BundleIdCapabilityCreateRequest.Data.Relationships.BundleId.Data
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of the resource that you’re relating with the resource you’re creating.
 
 ## Declaration
 
-```swift
+```
 object BundleIdCapabilityCreateRequest.Data.Relationships.BundleId.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `bundleIds`
 
 
 ---

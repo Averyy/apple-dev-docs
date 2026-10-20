@@ -1,7 +1,8 @@
 # encode(commandBuffer:primaryImage:secondaryImage:destinationImage:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 9.0+
@@ -17,17 +18,22 @@
 func encode(commandBuffer: any MTLCommandBuffer, primaryImage: MPSImage, secondaryImage: MPSImage, destinationImage: MPSImage)
 ```
 
+```objc
+- (void) encodeToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer primaryImage:(MPSImage *) primaryImage secondaryImage:(MPSImage *) secondaryImage destinationImage:(MPSImage *) destinationImage;
+```
+
 ## See Also
 
-- [func encode(commandBuffer: any MTLCommandBuffer, primaryTexture: any MTLTexture, inPlaceSecondaryTexture: UnsafeMutablePointer<any MTLTexture>, fallbackCopyAllocator: MPSCopyAllocator?) -> Bool](mpsbinaryimagekernel/encode(commandbuffer:primarytexture:inplacesecondarytexture:fallbackcopyallocator:).md)
+### Methods
+- [func encode(commandBuffer: any MTLCommandBuffer, primaryTexture: any MTLTexture, inPlaceSecondaryTexture: UnsafeMutablePointer<any MTLTexture>, fallbackCopyAllocator: MPSCopyAllocator?) -> Bool](./encode%28commandbuffer,primarytexture,inplacesecondarytexture,fallbackcopyallocator%29.md)
   This method attempts to apply a kernel in place on a texture.
-- [func encode(commandBuffer: any MTLCommandBuffer, inPlacePrimaryTexture: UnsafeMutablePointer<any MTLTexture>, secondaryTexture: any MTLTexture, fallbackCopyAllocator: MPSCopyAllocator?) -> Bool](mpsbinaryimagekernel/encode(commandbuffer:inplaceprimarytexture:secondarytexture:fallbackcopyallocator:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, inPlacePrimaryTexture: UnsafeMutablePointer<any MTLTexture>, secondaryTexture: any MTLTexture, fallbackCopyAllocator: MPSCopyAllocator?) -> Bool](./encode%28commandbuffer,inplaceprimarytexture,secondarytexture,fallbackcopyallocator%29.md)
   This method attempts to apply a kernel in place on a texture.
-- [func encode(commandBuffer: any MTLCommandBuffer, primaryTexture: any MTLTexture, secondaryTexture: any MTLTexture, destinationTexture: any MTLTexture)](mpsbinaryimagekernel/encode(commandbuffer:primarytexture:secondarytexture:destinationtexture:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, primaryTexture: any MTLTexture, secondaryTexture: any MTLTexture, destinationTexture: any MTLTexture)](./encode%28commandbuffer,primarytexture,secondarytexture,destinationtexture%29.md)
   Encodes a kernel into a command buffer, out-of-place.
-- [func primarySourceRegion(forDestinationSize: MTLSize) -> MPSRegion](mpsbinaryimagekernel/primarysourceregion(fordestinationsize:).md)
+- [func primarySourceRegion(forDestinationSize: MTLSize) -> MPSRegion](./primarysourceregion%28fordestinationsize%29.md)
   Determines the region of the primary source texture that will be read for an encode operation.
-- [func secondarySourceRegion(forDestinationSize: MTLSize) -> MPSRegion](mpsbinaryimagekernel/secondarysourceregion(fordestinationsize:).md)
+- [func secondarySourceRegion(forDestinationSize: MTLSize) -> MPSRegion](./secondarysourceregion%28fordestinationsize%29.md)
   Determines the region of the secondary source texture that will be read for an encode operation.
 
 

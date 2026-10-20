@@ -1,7 +1,8 @@
 # ControlInfo
 
 **Framework**: WidgetKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains information about user-configured controls.
 
@@ -21,40 +22,41 @@ struct ControlInfo
 ## Topics
 
 ### Instance Properties
-- [let kind: String](controlinfo/kind.md)
+- [let kind: String](./controlinfo/kind.md)
   The string specified during creation of the control’s configuration.
-- [var pushInfo: ControlPushInfo?](controlinfo/pushinfo.md)
+- [var pushInfo: ControlPushInfo?](./controlinfo/pushinfo.md)
   Push information about a control, if present.
 ### Instance Methods
-- [func configurationIntent<Intent>(of: Intent.Type) -> Intent?](controlinfo/configurationintent(of:).md)
+- [func configurationIntent<Intent>(of: Intent.Type) -> Intent?](./controlinfo/configurationintent%28of%29.md)
   Gets the associated App Intent.
 ### Default Implementations
-- [Identifiable Implementations](controlinfo/identifiable-implementations.md)
+- [Identifiable Implementations](./controlinfo/identifiable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
 
 ## See Also
 
-- [Creating controls to perform actions across the system](creating-controls-to-perform-actions-across-the-system.md)
+### Setup and configuration
+- [Creating controls to perform actions across the system](./creating-controls-to-perform-actions-across-the-system.md)
   Perform your app’s actions from Control Center, the Lock Screen, and the Action button.
-- [Adding refinements and configuration to controls](adding-refinements-and-configuration-to-controls.md)
+- [Adding refinements and configuration to controls](./adding-refinements-and-configuration-to-controls.md)
   Customize the way controls display across the system and offer people the ability to configure them.
-- [struct StaticControlConfiguration](staticcontrolconfiguration.md)
+- [struct StaticControlConfiguration](./staticcontrolconfiguration.md)
   The description of a control that has no user-configurable options.
-- [struct AppIntentControlConfiguration](appintentcontrolconfiguration.md)
+- [struct AppIntentControlConfiguration](./appintentcontrolconfiguration.md)
   The description of a control that uses a custom app intent to provide user-configurable options.
-- [class ControlCenter](controlcenter.md)
+- [class ControlCenter](./controlcenter.md)
   An object you use to access configuration information for controls and reload them.
-- [struct ControlWidgetButton](controlwidgetbutton.md)
+- [struct ControlWidgetButton](./controlwidgetbutton.md)
   A control template representing a button.
-- [struct ControlWidgetToggle](controlwidgettoggle.md)
+- [struct ControlWidgetToggle](./controlwidgettoggle.md)
   A control template representing a toggle.
 
 

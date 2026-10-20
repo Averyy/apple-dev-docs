@@ -1,7 +1,8 @@
 # init(locale:)
 
 **Framework**: Speech  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a speech recognizer associated with the specified locale.
 
@@ -18,6 +19,10 @@ Creates a speech recognizer associated with the specified locale.
 init?(locale: Locale)
 ```
 
+```objc
+- (instancetype) initWithLocale:(NSLocale *) locale;
+```
+
 #### Return Value
 
 An initialized speech recognizer object, or `nil` if the specified language was not supported.
@@ -26,15 +31,16 @@ An initialized speech recognizer object, or `nil` if the specified language was 
 
 If you specify a language that is not supported by the speech recognizer, this method attempts to fall back to the language used by the keyboard for dictation. If that fails, this method returns `nil`.
 
-Even if this method returns a valid speech recognizer object, the speech recognition services may be temporarily unavailable. To determine whether speech recognition services are available, check the [`isAvailable`](sfspeechrecognizer/isavailable.md) property.
+Even if this method returns a valid speech recognizer object, the speech recognition services may be temporarily unavailable. To determine whether speech recognition services are available, check the [`isAvailable`](./isavailable.md) property.
 
 ## Parameters
 
-- `locale`: The locale object representing the language you want to use for speech recognition. For a list of languages supported by the speech recognizer, see [`supportedLocales()`](sfspeechrecognizer/supportedlocales().md).
+- `locale`: The locale object representing the language you want to use for speech recognition. For a list of languages supported by the speech recognizer, see [`supportedLocales()`](./supportedlocales%28%29.md).
 
 ## See Also
 
-- [convenience init?()](sfspeechrecognizer/init.md)
+### Creating a speech recognizer
+- [convenience init?()](./init%28%29.md)
   Creates a speech recognizer associated with the user’s default language settings.
 
 

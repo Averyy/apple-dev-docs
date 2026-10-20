@@ -1,7 +1,8 @@
 # updateAttachments(fromPath:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates all attachments based on files contained in the RTFD file package at the specified file path.
 
@@ -14,13 +15,18 @@ Updates all attachments based on files contained in the RTFD file package at the
 func updateAttachments(fromPath path: String)
 ```
 
+```objc
+- (void) updateAttachmentsFromPath:(NSString *) path;
+```
+
 ## Parameters
 
 - `path`: The path to the file package.
 
 ## See Also
 
-- [func update(fromPath: String) -> Bool](filewrapper/update(frompath:).md)
+### Related Documentation
+- [func update(fromPath: String) -> Bool](../filewrapper/update%28frompath%29.md)
   Updates the file wrapper to match a given file-system node.
 
 

@@ -1,7 +1,8 @@
 # requestForwarding(for:)
 
 **Framework**: Accessory Notifications  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests permission to forward notifications and Live Activities to the specified accessory.
 
@@ -16,11 +17,11 @@ func requestForwarding(for accessory: ASAccessory) async throws -> ForwardingDec
 
 #### Discussion
 
-This method prompts the person to select which apps on their device can forward notifications and Live Activities to your accessory. The person can choose all apps, some apps, no apps, or dismiss the prompt. This method throws [`AccessoryError.unsupportedPlatform`](accessoryerror/unsupportedplatform.md) if called on an unsupported device; call this method on iPhone only.
+This method prompts the person to select which apps on their device can forward notifications and Live Activities to your accessory. The person can choose all apps, some apps, no apps, or dismiss the prompt. This method throws [`AccessoryError.unsupportedPlatform`](../accessoryerror/unsupportedplatform.md) if called on an unsupported device; call this method on iPhone only.
 
 ## Parameters
 
-- `accessory`: An accessory object that [`AccessorySetupKit`](https://developer.apple.comhttps://developer.apple.com/documentation/accessorysetupkit) provides when your companion app registers the accessory.
+- `accessory`: An accessory object that [AccessorySetupKit](../../AccessorySetupKit/AccessorySetupKit.md) provides when your companion app registers the accessory.
 
 
 ---

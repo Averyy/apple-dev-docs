@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default gauge view style in the current context of the view being styled.
 
@@ -19,6 +20,8 @@ The default gauge view style in the current context of the view being styled.
 @MainActor
 @export(implementation) @preconcurrency static var automatic: DefaultGaugeStyle { get }
 ```
+
+Available when `Self` is `DefaultGaugeStyle`.
 
 
 ---

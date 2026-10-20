@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A copy of the configuration object for this session.
 
@@ -21,23 +22,28 @@ A copy of the configuration object for this session.
 var configuration: URLSessionConfiguration { get }
 ```
 
+```objc
+@property (copy, readonly) NSURLSessionConfiguration * configuration;
+```
+
 ## Mentions
 
-- [Accessing cached data](accessing-cached-data.md)
+- [Accessing cached data](../accessing-cached-data.md)
 
 #### Discussion
 
-Beginning in iOS 9 and OS X 10.11, [`URLSession`](urlsession.md) objects store a copy of the [`URLSessionConfiguration`](urlsessionconfiguration.md) object passed to their initializers, such that a session’s configuration is immutable after initialization. Any further changes to mutable properties on the configuration object passed to a session’s initializer or the value returned from a session’s configuration property do not affect the behavior of that session. However, you can create a new session with the modified configuration object.
+Beginning in iOS 9 and OS X 10.11, [`URLSession`](../urlsession.md) objects store a copy of the [`URLSessionConfiguration`](../urlsessionconfiguration.md) object passed to their initializers, such that a session’s configuration is immutable after initialization. Any further changes to mutable properties on the configuration object passed to a session’s initializer or the value returned from a session’s configuration property do not affect the behavior of that session. However, you can create a new session with the modified configuration object.
 
-> **Note**:  On previous versions of iOS and macOS, a bug in the implementation causes [`URLSession`](urlsession.md) objects to store a *reference* to configuration objects passed to their initializers rather than a copy. This allows the behavior of a session to be further configured after initialization by modifying the configuration object passed to a session’s initializer or the value returned from a session’s [`configuration`](urlsession/configuration.md) property. You can ensure consistent behavior across different platform versions by explicitly calling [`copy()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/copy()) on configuration objects passed to a [`URLSession`](urlsession.md) initializer or returned from the [`configuration`](urlsession/configuration.md) property.
+> **Note**:  On previous versions of iOS and macOS, a bug in the implementation causes [`URLSession`](../urlsession.md) objects to store a *reference* to configuration objects passed to their initializers rather than a copy. This allows the behavior of a session to be further configured after initialization by modifying the configuration object passed to a session’s initializer or the value returned from a session’s [`configuration`](./configuration.md) property. You can ensure consistent behavior across different platform versions by explicitly calling [`copy()`](../../ObjectiveC/nsobject-swift.class/copy%28%29.md) on configuration objects passed to a [`URLSession`](../urlsession.md) initializer or returned from the [`configuration`](./configuration.md) property.
 
 ## See Also
 
-- [init(configuration: URLSessionConfiguration)](urlsession/init(configuration:).md)
+### Creating a session
+- [init(configuration: URLSessionConfiguration)](./init%28configuration%29.md)
   Creates a session with the specified session configuration.
-- [init(configuration: URLSessionConfiguration, delegate: (any URLSessionDelegate)?, delegateQueue: OperationQueue?)](urlsession/init(configuration:delegate:delegatequeue:).md)
+- [init(configuration: URLSessionConfiguration, delegate: (any URLSessionDelegate)?, delegateQueue: OperationQueue?)](./init%28configuration,delegate,delegatequeue%29.md)
   Creates a session with the specified session configuration, delegate, and operation queue.
-- [class URLSessionConfiguration](urlsessionconfiguration.md)
+- [class URLSessionConfiguration](../urlsessionconfiguration.md)
   A configuration object that defines behavior and policies for a URL session.
 
 

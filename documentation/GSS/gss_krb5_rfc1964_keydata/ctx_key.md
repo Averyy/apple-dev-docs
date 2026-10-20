@@ -1,7 +1,8 @@
 # ctx_key
 
 **Framework**: GSS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The context key (Kerberos session key or subkey).
 
@@ -18,11 +19,16 @@ The context key (Kerberos session key or subkey).
 var ctx_key: gss_krb5_lucid_key_t
 ```
 
+```c
+gss_krb5_lucid_key_t ctx_key;
+```
+
 ## See Also
 
-- [var seal_alg: OM_uint32](gss_krb5_rfc1964_keydata/seal_alg.md)
+### Key Data Members
+- [var seal_alg: OM_uint32](./seal_alg.md)
   The seal/encrypt algorithm.
-- [var sign_alg: OM_uint32](gss_krb5_rfc1964_keydata/sign_alg.md)
+- [var sign_alg: OM_uint32](./sign_alg.md)
   The signing algorithm.
 
 

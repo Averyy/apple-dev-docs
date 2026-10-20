@@ -1,7 +1,8 @@
 # init(stringLiteral:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a URI instance from the given string.
 

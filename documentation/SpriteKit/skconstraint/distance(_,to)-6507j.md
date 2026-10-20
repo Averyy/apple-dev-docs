@@ -1,7 +1,8 @@
 # distance(_:to:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a constraint that keeps a node within a certain distance of another node.
 
@@ -10,7 +11,7 @@ Creates a constraint that keeps a node within a certain distance of another node
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Creates a constraint that keeps a node within a certain distance of another node
 
 ```swift
 class func distance(_ range: SKRange, to node: SKNode) -> Self
+```
+
+```objc
++ (instancetype) distance:(SKRange *) range toNode:(SKNode *) node;
 ```
 
 #### Return Value
@@ -43,9 +48,10 @@ Each time when constraints are applied, a line is projected between the node’s
 
 ## See Also
 
-- [class func distance(SKRange, to: CGPoint) -> Self](skconstraint/distance(_:to:)-7yk7n.md)
+### Creating Distance Constraints
+- [class func distance(SKRange, to: CGPoint) -> Self](./distance%28_,to%29-7yk7n.md)
   Creates a constraint that keeps a node within a certain distance of a point.
-- [class func distance(SKRange, to: CGPoint, in: SKNode) -> Self](skconstraint/distance(_:to:in:).md)
+- [class func distance(SKRange, to: CGPoint, in: SKNode) -> Self](./distance%28_,to,in%29.md)
   Creates a constraint that keeps a node within a certain distance of a point in another node’s coordinate system.
 
 

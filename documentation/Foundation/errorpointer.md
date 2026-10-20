@@ -1,7 +1,8 @@
 # ErrorPointer
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 2.0+
@@ -20,8 +21,9 @@ typealias ErrorPointer = NSErrorPointer
 
 ## See Also
 
-- [typealias NSErrorPointer](nserrorpointer.md)
-- [typealias NSErrorDomain](nserrordomain.md)
+### Supporting Types
+- [typealias NSErrorPointer](./nserrorpointer.md)
+- [typealias NSErrorDomain](./nserrordomain.md)
 
 
 ---

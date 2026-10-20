@@ -1,14 +1,15 @@
 # IFNET_SCHED_MODEL_NORMAL
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 IFNET_SCHED_MODEL_NORMAL = 0
 ```
 

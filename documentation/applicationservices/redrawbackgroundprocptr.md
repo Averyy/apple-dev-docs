@@ -1,7 +1,8 @@
 # RedrawBackgroundProcPtr
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias RedrawBackgroundProcPtr = (ATSUTextLayout?, UniCharArrayOffset, Int, UnsafeMutablePointer<ATSTrapezoid>?, Int) -> DarwinBoolean
+```
+
+```c
+typedef Boolean (*RedrawBackgroundProcPtr)(ATSUTextLayout iLayout, UniCharArrayOffset iTextOffset, UniCharCount iTextLength, ATSTrapezoid iUnhighlightArea[], ItemCount iTrapezoidCount);
 ```
 
 

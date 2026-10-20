@@ -1,7 +1,8 @@
 # init(attributedString:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new paragraph with the attributed string you provide.
 
@@ -18,9 +19,13 @@ Creates a new paragraph with the attributed string you provide.
 init(attributedString: NSAttributedString?)
 ```
 
+```objc
+- (instancetype) initWithAttributedString:(NSAttributedString *) attributedString;
+```
+
 ## Parameters
 
-- `attributedString`: An [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring).
+- `attributedString`: An [`NSAttributedString`](../../Foundation/nsattributedstring.md).
 
 
 ---

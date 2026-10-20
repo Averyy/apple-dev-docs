@@ -1,7 +1,8 @@
 # errorType
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An error type that describes this error.
 
@@ -20,7 +21,8 @@ let errorType: ParametricImmersiveAssetInfo.Error.ErrorType
 
 ## See Also
 
-- [var errorDescription: String?](parametricimmersiveassetinfo/error/errordescription.md)
+### Instance Properties
+- [var errorDescription: String?](./errordescription.md)
   A description of what went wrong, for debugging purposes.
 
 

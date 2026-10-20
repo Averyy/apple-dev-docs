@@ -1,7 +1,8 @@
 # MTRContextTagKey
 
 **Framework**: Matter  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 let MTRContextTagKey: String
+```
+
+```c
+extern NSString * const MTRContextTagKey;
 ```
 
 

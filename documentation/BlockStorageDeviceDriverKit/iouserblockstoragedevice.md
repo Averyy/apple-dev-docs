@@ -1,7 +1,8 @@
 # IOUserBlockStorageDevice
 
 **Framework**: BlockStorageDeviceDriverKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A DriverKit provider object that manages communications with a block storage device.
 
@@ -10,7 +11,7 @@ A DriverKit provider object that manages communications with a block storage dev
 
 ## Declaration
 
-```swift
+```cpp
 class IOUserBlockStorageDevice;
 ```
 
@@ -18,9 +19,9 @@ class IOUserBlockStorageDevice;
 
 Implement your driver by subclassing this class and overriding all C++ pure virtual methods.
 
-##### Specifying the Drivers Personality Information
+##### Specifying the Driver’s Personality Information
 
-When you subclass `IOUserBlockStorageDevice`, update the [`IOKitPersonalities`](https://developer.apple.com/documentation/bundleresources/information-property-list/iokitpersonalities) key of your driver extension’s `Info.plist` file with information to match your driver to the correct hardware. For this class, always include the keys and values in the following table:
+When you subclass `IOUserBlockStorageDevice`, update the [`IOKitPersonalities`](../BundleResources/information-property-list/iokitpersonalities.md) key of your driver extension’s `Info.plist` file with information to match your driver to the correct hardware. For this class, always include the keys and values in the following table:
 
 | Key | Value |
 | --- | --- |
@@ -31,61 +32,61 @@ When you subclass `IOUserBlockStorageDevice`, update the [`IOKitPersonalities`](
 ## Topics
 
 ### Running the Service
-- [init](iouserblockstoragedevice/init.md)
+- [init](./iouserblockstoragedevice/init.md)
   Handles the basic initialization of the service.
-- [Start](iouserblockstoragedevice/start.md)
+- [Start](./iouserblockstoragedevice/start.md)
   Starts the current service and associates it with the specified provider.
-- [Stop](iouserblockstoragedevice/stop.md)
+- [Stop](./iouserblockstoragedevice/stop.md)
   Stops the service associated with the specified provider.
-- [free](iouserblockstoragedevice/free.md)
+- [free](./iouserblockstoragedevice/free.md)
   Performs any final cleanup for the service.
 ### Reporting Device Metadata
-- [GetVendorString](iouserblockstoragedevice/getvendorstring.md)
+- [GetVendorString](./iouserblockstoragedevice/getvendorstring.md)
   Gets a string that identifies the vendor in response to a call from the framework.
-- [GetProductString](iouserblockstoragedevice/getproductstring.md)
+- [GetProductString](./iouserblockstoragedevice/getproductstring.md)
   Gets a string that identifies the product in response to a call from the framework.
-- [GetRevisionString](iouserblockstoragedevice/getrevisionstring.md)
+- [GetRevisionString](./iouserblockstoragedevice/getrevisionstring.md)
   Gets a string that identifies the current revision in response to a call from the framework.
-- [GetAdditionalInfoString](iouserblockstoragedevice/getadditionalinfostring.md)
+- [GetAdditionalInfoString](./iouserblockstoragedevice/getadditionalinfostring.md)
   Gets a string that provides additional information in response to a call from the framework.
-- [DeviceString](devicestring.md)
+- [DeviceString](./devicestring.md)
   A type that represents a string of character data from the device.
-- [GetDeviceParams](iouserblockstoragedevice/getdeviceparams.md)
+- [GetDeviceParams](./iouserblockstoragedevice/getdeviceparams.md)
   Gets device parameters in response to a call from the framework.
-- [DeviceParams](deviceparams.md)
+- [DeviceParams](./deviceparams.md)
   A structure that represents hardware-specific properties of the block storage device.
 ### Reporting Device Capabilities
-- [ReportEjectability](iouserblockstoragedevice/reportejectability.md)
+- [ReportEjectability](./iouserblockstoragedevice/reportejectability.md)
   Returns a Boolean value that indicates whether the media is ejectable, in response to a call from the framework.
-- [ReportRemovability](iouserblockstoragedevice/reportremovability.md)
+- [ReportRemovability](./iouserblockstoragedevice/reportremovability.md)
   Returns a Boolean value that indicates whether the media is removable, in response to a call from the framework.
-- [ReportWriteProtection](iouserblockstoragedevice/reportwriteprotection.md)
+- [ReportWriteProtection](./iouserblockstoragedevice/reportwriteprotection.md)
   Returns a Boolean value that indicates whether the media is write protected, in response to a call from the framework.
 ### Accessing the Device
-- [DoAsyncUnmap](iouserblockstoragedevice/doasyncunmap.md)
+- [DoAsyncUnmap](./iouserblockstoragedevice/doasyncunmap.md)
   Sends an asynchronous request to the dext to reclaim storage by unmapping.
-- [BlockRange](blockrange.md)
+- [BlockRange](./blockrange.md)
   A structure that represents a range of blocks.
-- [DoAsyncSynchronize](iouserblockstoragedevice/doasyncsynchronize.md)
+- [DoAsyncSynchronize](./iouserblockstoragedevice/doasyncsynchronize.md)
   Forces the hardware buffer to flush data blocks to the media.
-- [DoAsyncEjectMedia](iouserblockstoragedevice/doasyncejectmedia.md)
+- [DoAsyncEjectMedia](./iouserblockstoragedevice/doasyncejectmedia.md)
   Ejects the media.
-- [Complete](iouserblockstoragedevice/complete.md)
+- [Complete](./iouserblockstoragedevice/complete.md)
   Indicates that the dext completed an asynchronous call.
-- [DoAsyncReadWrite](iouserblockstoragedevice/doasyncreadwrite.md)
+- [DoAsyncReadWrite](./iouserblockstoragedevice/doasyncreadwrite.md)
   Starts an asynchronous read or write operation.
-- [IOUserStorageOptions](iouserstorageoptions.md)
+- [IOUserStorageOptions](./iouserstorageoptions.md)
   Options that affect the performance of read-write operations.
-- [CompleteIO](iouserblockstoragedevice/completeio.md)
+- [CompleteIO](./iouserblockstoragedevice/completeio.md)
   Indicates that the dext completed an asynchronous read-write call.
 ### Instance Methods
-- [DoAsyncUnmapPriv](iouserblockstoragedevice/doasyncunmappriv.md)
-- [RegisterDext](iouserblockstoragedevice/registerdext.md)
+- [DoAsyncUnmapPriv](./iouserblockstoragedevice/doasyncunmappriv.md)
+- [RegisterDext](./iouserblockstoragedevice/registerdext.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOService](../driverkit/ioservice.md)
+- [IOService](../DriverKit/ioservice.md)
 
 
 ---

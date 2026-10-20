@@ -1,7 +1,8 @@
 # AxisDirectionConvention.rightUpBack
 
 **Framework**: Compositor Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The convention that uses a counterclockwise winding order and positions the leading pixel at the top-left corner of the view.
 
@@ -15,17 +16,22 @@ The convention that uses a counterclockwise winding order and positions the lead
 case rightUpBack
 ```
 
+```c
+cp_axis_direction_convention_right_up_back
+```
+
 #### Discussion
 
 This convention positions the left-most pixel at the left edge of the view and the top-most pixel at the top edge of the view, and the system renders with a counterclockwise winding order.
 
 ## See Also
 
-- [AxisDirectionConvention.rightUpForward](axisdirectionconvention/rightupforward.md)
+### Getting the axis directions
+- [AxisDirectionConvention.rightUpForward](./rightupforward.md)
   The convention that uses a clockwise winding order and positions the leading pixel at the top-left corner of the view.
-- [AxisDirectionConvention.rightDownBack](axisdirectionconvention/rightdownback.md)
+- [AxisDirectionConvention.rightDownBack](./rightdownback.md)
   The convention that uses a counterclockwise winding order and positions the leading pixel at the bottom-left corner of the view.
-- [AxisDirectionConvention.rightDownForward](axisdirectionconvention/rightdownforward.md)
+- [AxisDirectionConvention.rightDownForward](./rightdownforward.md)
   The convention that uses a clockwise winding order and positions the leading pixel at the bottom-left corner of the view.
 
 

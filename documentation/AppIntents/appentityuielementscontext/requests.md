@@ -1,7 +1,8 @@
 # requests
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of requests for elements from the system.
 

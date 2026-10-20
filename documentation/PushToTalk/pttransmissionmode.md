@@ -1,7 +1,8 @@
 # PTTransmissionMode
 
 **Framework**: Push to Talk  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Identifies the type of audio transmission modes.
 
@@ -16,39 +17,44 @@ Identifies the type of audio transmission modes.
 enum PTTransmissionMode
 ```
 
+```c
+enum PTTransmissionMode : NSInteger;
+```
+
 ## Topics
 
 ### Modes
-- [PTTransmissionMode.fullDuplex](pttransmissionmode/fullduplex.md)
+- [PTTransmissionMode.fullDuplex](./pttransmissionmode/fullduplex.md)
   A type that indicates a participant can simultaneously receive and transmit audio.
-- [PTTransmissionMode.halfDuplex](pttransmissionmode/halfduplex.md)
+- [PTTransmissionMode.halfDuplex](./pttransmissionmode/halfduplex.md)
   A type that indicates a participant can’t simultaneously receive and transmit audio.
-- [PTTransmissionMode.listenOnly](pttransmissionmode/listenonly.md)
+- [PTTransmissionMode.listenOnly](./pttransmissionmode/listenonly.md)
   A type that indicates a participant can only receive audio.
 ### Initializers
-- [init?(rawValue: Int)](pttransmissionmode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./pttransmissionmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol PTChannelManagerDelegate](ptchannelmanagerdelegate.md)
+### Channel management
+- [protocol PTChannelManagerDelegate](./ptchannelmanagerdelegate.md)
   A type that represents your life cycle of a channel manager.
-- [enum PTServiceStatus](ptservicestatus.md)
+- [enum PTServiceStatus](./ptservicestatus.md)
   Identifies the type that indicates the status of the service.
-- [enum PTChannelJoinReason](ptchanneljoinreason.md)
+- [enum PTChannelJoinReason](./ptchanneljoinreason.md)
   Identifies the type that indicates the join reason.
-- [enum PTChannelLeaveReason](ptchannelleavereason.md)
+- [enum PTChannelLeaveReason](./ptchannelleavereason.md)
   Identifies the type that indicates the leave reason.
-- [enum PTChannelTransmitRequestSource](ptchanneltransmitrequestsource.md)
+- [enum PTChannelTransmitRequestSource](./ptchanneltransmitrequestsource.md)
   Identifies the type that indicates the transmission request source.
 
 

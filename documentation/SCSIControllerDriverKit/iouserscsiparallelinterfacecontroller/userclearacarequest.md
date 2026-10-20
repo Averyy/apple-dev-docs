@@ -1,16 +1,17 @@
 # UserClearACARequest
 
 **Framework**: SCSIControllerDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes an autocontingent allegiance (ACA) attribute from a logical unit’s task set.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t UserClearACARequest(uint64_t theT, uint64_t theL, uint32_t *response);
 ```
 
@@ -22,15 +23,16 @@ virtual kern_return_t UserClearACARequest(uint64_t theT, uint64_t theL, uint32_t
 
 ## See Also
 
-- [UserAbortTaskRequest](iouserscsiparallelinterfacecontroller/useraborttaskrequest.md)
+### Performing SCSI standard task management
+- [UserAbortTaskRequest](./useraborttaskrequest.md)
   Aborts a single task.
-- [UserAbortTaskSetRequest](iouserscsiparallelinterfacecontroller/useraborttasksetrequest.md)
+- [UserAbortTaskSetRequest](./useraborttasksetrequest.md)
   Aborts all tasks in a logical unit.
-- [UserClearTaskSetRequest](iouserscsiparallelinterfacecontroller/usercleartasksetrequest.md)
+- [UserClearTaskSetRequest](./usercleartasksetrequest.md)
   Aborts all tasks in a logical unit and clears their data.
-- [UserLogicalUnitResetRequest](iouserscsiparallelinterfacecontroller/userlogicalunitresetrequest.md)
+- [UserLogicalUnitResetRequest](./userlogicalunitresetrequest.md)
   Resets a logical unit.
-- [UserTargetResetRequest](iouserscsiparallelinterfacecontroller/usertargetresetrequest.md)
+- [UserTargetResetRequest](./usertargetresetrequest.md)
   Resets a target.
 
 

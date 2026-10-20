@@ -1,7 +1,8 @@
 # index(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an index for the section with the identifier you specify in the table view.
 
@@ -10,7 +11,7 @@ Returns an index for the section with the identifier you specify in the table vi
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ Returns an index for the section with the identifier you specify in the table vi
 
 ## See Also
 
-- [func sectionIdentifier(for: Int) -> SectionIdentifierType?](uitableviewdiffabledatasource-2euir/sectionidentifier(for:).md)
+### Identifying sections
+- [func sectionIdentifier(for: Int) -> SectionIdentifierType?](./sectionidentifier%28for%29.md)
   Returns an identifier for the section at the index you specify in the table view.
 
 

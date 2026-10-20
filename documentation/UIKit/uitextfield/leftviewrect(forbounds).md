@@ -1,7 +1,8 @@
 # leftViewRect(forBounds:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the drawing rectangle of the text field’s left overlay view.
 
@@ -9,13 +10,17 @@ Returns the drawing rectangle of the text field’s left overlay view.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func leftViewRect(forBounds bounds: CGRect) -> CGRect
+```
+
+```objc
+- (CGRect) leftViewRectForBounds:(CGRect) bounds;
 ```
 
 #### Return Value
@@ -32,21 +37,22 @@ You should not call this method directly. If you want to place the left overlay 
 
 ## See Also
 
-- [func textRect(forBounds: CGRect) -> CGRect](uitextfield/textrect(forbounds:).md)
+### Drawing and positioning overrides
+- [func textRect(forBounds: CGRect) -> CGRect](./textrect%28forbounds%29.md)
   Returns the drawing rectangle for the text field’s text.
-- [func placeholderRect(forBounds: CGRect) -> CGRect](uitextfield/placeholderrect(forbounds:).md)
+- [func placeholderRect(forBounds: CGRect) -> CGRect](./placeholderrect%28forbounds%29.md)
   Returns the drawing rectangle for the text field’s placeholder text.
-- [func drawPlaceholder(in: CGRect)](uitextfield/drawplaceholder(in:).md)
+- [func drawPlaceholder(in: CGRect)](./drawplaceholder%28in%29.md)
   Draws the text field’s placeholder text in the specified rectangle.
-- [func borderRect(forBounds: CGRect) -> CGRect](uitextfield/borderrect(forbounds:).md)
+- [func borderRect(forBounds: CGRect) -> CGRect](./borderrect%28forbounds%29.md)
   Returns the text field’s border rectangle.
-- [func editingRect(forBounds: CGRect) -> CGRect](uitextfield/editingrect(forbounds:).md)
+- [func editingRect(forBounds: CGRect) -> CGRect](./editingrect%28forbounds%29.md)
   Returns the rectangle for displaying editable text.
-- [func clearButtonRect(forBounds: CGRect) -> CGRect](uitextfield/clearbuttonrect(forbounds:).md)
+- [func clearButtonRect(forBounds: CGRect) -> CGRect](./clearbuttonrect%28forbounds%29.md)
   Returns the drawing rectangle for the built-in Clear button.
-- [func rightViewRect(forBounds: CGRect) -> CGRect](uitextfield/rightviewrect(forbounds:).md)
+- [func rightViewRect(forBounds: CGRect) -> CGRect](./rightviewrect%28forbounds%29.md)
   Returns the drawing location of the text field’s right overlay view.
-- [func drawText(in: CGRect)](uitextfield/drawtext(in:).md)
+- [func drawText(in: CGRect)](./drawtext%28in%29.md)
   Draws the text field’s text in the specified rectangle.
 
 

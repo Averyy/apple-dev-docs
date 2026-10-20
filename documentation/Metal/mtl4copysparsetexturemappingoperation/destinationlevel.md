@@ -1,7 +1,8 @@
 # destinationLevel
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the mipmap level in the destination texture.
 
@@ -19,11 +20,15 @@ The index of the mipmap level in the destination texture.
 var destinationLevel: Int
 ```
 
+```c
+NSUInteger destinationLevel;
+```
+
 #### Discussion
 
-Provide a value between `0` and the destination texture’s [`firstMipmapInTail`](mtltexture/firstmipmapintail.md).
+Provide a value between `0` and the destination texture’s [`firstMipmapInTail`](../mtltexture/firstmipmapintail.md).
 
-When [`sourceLevel`](mtl4copysparsetexturemappingoperation/sourcelevel.md) is equal to the source texture’s [`firstMipmapInTail`](mtltexture/firstmipmapintail.md), set [`destinationLevel`](mtl4copysparsetexturemappingoperation/destinationlevel.md) to the destination texture’s [`firstMipmapInTail`](mtltexture/firstmipmapintail.md).
+When [`sourceLevel`](./sourcelevel.md) is equal to the source texture’s [`firstMipmapInTail`](../mtltexture/firstmipmapintail.md), set [`destinationLevel`](./destinationlevel.md) to the destination texture’s [`firstMipmapInTail`](../mtltexture/firstmipmapintail.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a double-precision scaled pose from a single-precision scaled pose.
 

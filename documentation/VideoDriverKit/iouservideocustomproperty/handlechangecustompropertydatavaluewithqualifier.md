@@ -1,7 +1,8 @@
 # HandleChangeCustomPropertyDataValueWithQualifier
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The system calls this virtual method when the custom property’s data value changes.
 
@@ -10,7 +11,7 @@ The system calls this virtual method when the custom property’s data value cha
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t HandleChangeCustomPropertyDataValueWithQualifier(OSObject *in_qualifier_data, OSObject *in_data);
 ```
 

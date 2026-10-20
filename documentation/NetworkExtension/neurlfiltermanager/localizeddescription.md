@@ -1,7 +1,8 @@
 # localizedDescription
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string containing a description of the URL filter.
 

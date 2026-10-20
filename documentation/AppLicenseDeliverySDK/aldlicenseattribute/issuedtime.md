@@ -1,7 +1,8 @@
 # issuedTime
 
 **Framework**: App License Delivery SDK  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 ## Declaration
 
@@ -11,8 +12,8 @@ var issuedTime: UInt64
 
 ## Mentions
 
-- [Licensing alternative distribution apps](licensing-alternative-distribution-apps.md)
-- [Renewing and revoking app licenses](renewing-and-revoking-app-licenses.md)
+- [Licensing alternative distribution apps](../licensing-alternative-distribution-apps.md)
+- [Renewing and revoking app licenses](../renewing-and-revoking-app-licenses.md)
 
 
 ---

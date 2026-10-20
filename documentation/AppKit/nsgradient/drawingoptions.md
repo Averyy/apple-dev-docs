@@ -1,17 +1,22 @@
 # NSGradient.DrawingOptions
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that specify gradient drawing options.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 struct DrawingOptions
+```
+
+```c
+enum NSGradientDrawingOptions : NSUInteger;
 ```
 
 #### Overview
@@ -21,25 +26,25 @@ These constants are used by the primitive drawing methods to determine if drawin
 ## Topics
 
 ### Constants
-- [static var drawsBeforeStartingLocation: NSGradient.DrawingOptions](nsgradient/drawingoptions/drawsbeforestartinglocation.md)
+- [static var drawsBeforeStartingLocation: NSGradient.DrawingOptions](./drawingoptions/drawsbeforestartinglocation.md)
   Drawing extends before the gradient starting point.
-- [static var drawsAfterEndingLocation: NSGradient.DrawingOptions](nsgradient/drawingoptions/drawsafterendinglocation.md)
+- [static var drawsAfterEndingLocation: NSGradient.DrawingOptions](./drawingoptions/drawsafterendinglocation.md)
   Drawing extends beyond the gradient end point.
 ### Initializers
-- [init(rawValue: UInt)](nsgradient/drawingoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./drawingoptions/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 
 ---

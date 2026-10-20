@@ -1,7 +1,8 @@
 # streamError
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns an `NSError` object representing the stream error.
 
@@ -20,13 +21,18 @@ Returns an `NSError` object representing the stream error.
 var streamError: (any Error)? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSError * streamError;
+```
+
 #### Return Value
 
 An `NSError` object representing the stream error, or `nil` if no error has been encountered.
 
 ## See Also
 
-- [var streamStatus: Stream.Status](stream/streamstatus.md)
+### Getting Stream Information
+- [var streamStatus: Stream.Status](./streamstatus.md)
   Returns the receiver’s status.
 
 

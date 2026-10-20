@@ -1,7 +1,8 @@
 # PGResumeErrorCode.invalidDisplayPortCount
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -11,6 +12,10 @@
 
 ```swift
 case invalidDisplayPortCount
+```
+
+```c
+PGResumeErrorCodeInvalidDisplayPortCount
 ```
 
 

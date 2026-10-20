@@ -1,7 +1,8 @@
 # validateAction(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows validation of the find action before performing.
 
@@ -14,15 +15,19 @@ Allows validation of the find action before performing.
 func validateAction(_ op: NSTextFinder.Action) -> Bool
 ```
 
+```objc
+- (BOOL) validateAction:(NSTextFinderAction) op;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the operation is valid; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the operation is valid; otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-Responders the `NSResponder` method  [`performTextFinderAction(_:)`](nsresponder/performtextfinderaction(_:).md) should call this method.
+Responders the `NSResponder` method  [`performTextFinderAction(_:)`](../nsresponder/performtextfinderaction%28_%29.md) should call this method.
 
-This method should be called by an implementation of [`validateUserInterfaceItem(_:)`](nsuserinterfacevalidations/validateuserinterfaceitem(_:).md) to properly validate items with an action of [`performTextFinderAction(_:)`](nsresponder/performtextfinderaction(_:).md). The responder’s [`validateUserInterfaceItem(_:)`](nsuserinterfacevalidations/validateuserinterfaceitem(_:).md) or [`validateMenuItem:`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/validatemenuitem:) implementation should pass the tag as the action for this method..
+This method should be called by an implementation of [`validateUserInterfaceItem(_:)`](../nsuserinterfacevalidations/validateuserinterfaceitem%28_%29.md) to properly validate items with an action of [`performTextFinderAction(_:)`](../nsresponder/performtextfinderaction%28_%29.md). The responder’s [`validateUserInterfaceItem(_:)`](../nsuserinterfacevalidations/validateuserinterfaceitem%28_%29.md) or [`validateMenuItem:`](../../ObjectiveC/nsobject-swift.class/validatemenuitem_.md) implementation should pass the tag as the action for this method..
 
 ## Parameters
 
@@ -30,9 +35,10 @@ This method should be called by an implementation of [`validateUserInterfaceItem
 
 ## See Also
 
-- [func performAction(NSTextFinder.Action)](nstextfinder/performaction(_:).md)
+### Validating and Performing Text Finding
+- [func performAction(NSTextFinder.Action)](./performaction%28_%29.md)
   Performs the specified text finding action.
-- [func cancelFindIndicator()](nstextfinder/cancelfindindicator.md)
+- [func cancelFindIndicator()](./cancelfindindicator%28%29.md)
   Cancels the find indicator immediately.
 
 

@@ -1,23 +1,30 @@
 # kSecAttrAccessibleAlwaysThisDeviceOnly
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The data in the keychain item can always be accessed regardless of whether the device is locked.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 13.1+
-- macOS 10.9+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 4.0+ - Deprecated in 12.0
+- iPadOS 4.0+ - Deprecated in 12.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.9+ - Deprecated in 10.14
+- tvOS 9.0+ - Deprecated in 12.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 5.0
+
+> **Deprecated**: Use an accessibility level that provides some user protection, such as kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly
 
 ## Declaration
 
 ```swift
 let kSecAttrAccessibleAlwaysThisDeviceOnly: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrAccessibleAlwaysThisDeviceOnly;
 ```
 
 #### Discussion

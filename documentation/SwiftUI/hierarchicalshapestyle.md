@@ -1,7 +1,8 @@
 # HierarchicalShapeStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A shape style that maps to one of the numbered content styles.
 
@@ -24,58 +25,59 @@ struct HierarchicalShapeStyle
 ## Topics
 
 ### Getting hierarchical shape styles
-- [static let primary: HierarchicalShapeStyle](hierarchicalshapestyle/primary.md)
+- [static let primary: HierarchicalShapeStyle](./hierarchicalshapestyle/primary.md)
   A shape style that maps to the first level of the current content style.
-- [static let secondary: HierarchicalShapeStyle](hierarchicalshapestyle/secondary.md)
+- [static let secondary: HierarchicalShapeStyle](./hierarchicalshapestyle/secondary.md)
   A shape style that maps to the second level of the current content style.
-- [static let tertiary: HierarchicalShapeStyle](hierarchicalshapestyle/tertiary.md)
+- [static let tertiary: HierarchicalShapeStyle](./hierarchicalshapestyle/tertiary.md)
   A shape style that maps to the third level of the current content style.
-- [static let quaternary: HierarchicalShapeStyle](hierarchicalshapestyle/quaternary.md)
+- [static let quaternary: HierarchicalShapeStyle](./hierarchicalshapestyle/quaternary.md)
   A shape style that maps to the fourth level of the current content style.
 ### Type Properties
-- [static let quinary: HierarchicalShapeStyle](hierarchicalshapestyle/quinary.md)
+- [static let quinary: HierarchicalShapeStyle](./hierarchicalshapestyle/quinary.md)
   A shape style that maps to the fifth level of the current content style.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [ShapeStyle](shapestyle.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [ShapeStyle](./shapestyle.md)
 
 ## See Also
 
-- [struct AngularGradient](angulargradient.md)
+### Supporting types
+- [struct AngularGradient](./angulargradient.md)
   An angular gradient.
-- [struct EllipticalGradient](ellipticalgradient.md)
+- [struct EllipticalGradient](./ellipticalgradient.md)
   A radial gradient that draws an ellipse.
-- [struct LinearGradient](lineargradient.md)
+- [struct LinearGradient](./lineargradient.md)
   A linear gradient.
-- [struct RadialGradient](radialgradient.md)
+- [struct RadialGradient](./radialgradient.md)
   A radial gradient.
-- [struct Material](material.md)
+- [struct Material](./material.md)
   A background material type.
-- [struct ImagePaint](imagepaint.md)
+- [struct ImagePaint](./imagepaint.md)
   A shape style that fills a shape by repeating a region of an image.
-- [struct HierarchicalShapeStyleModifier](hierarchicalshapestylemodifier.md)
+- [struct HierarchicalShapeStyleModifier](./hierarchicalshapestylemodifier.md)
   Styles that you can apply to hierarchical shapes.
-- [struct ForegroundStyle](foregroundstyle.md)
+- [struct ForegroundStyle](./foregroundstyle.md)
   The foreground style in the current context.
-- [struct BackgroundStyle](backgroundstyle.md)
+- [struct BackgroundStyle](./backgroundstyle.md)
   The background style in the current context.
-- [struct SelectionShapeStyle](selectionshapestyle.md)
+- [struct SelectionShapeStyle](./selectionshapestyle.md)
   A style used to visually indicate selection following platform conventional colors and behaviors.
-- [struct SeparatorShapeStyle](separatorshapestyle.md)
+- [struct SeparatorShapeStyle](./separatorshapestyle.md)
   A style appropriate for foreground separator or border lines.
-- [struct TintShapeStyle](tintshapestyle.md)
+- [struct TintShapeStyle](./tintshapestyle.md)
   A style that reflects the current tint color.
-- [struct FillShapeStyle](fillshapestyle.md)
+- [struct FillShapeStyle](./fillshapestyle.md)
   A shape style that displays one of the overlay fills.
-- [struct LinkShapeStyle](linkshapestyle.md)
+- [struct LinkShapeStyle](./linkshapestyle.md)
   A style appropriate for links.
-- [struct PlaceholderTextShapeStyle](placeholdertextshapestyle.md)
+- [struct PlaceholderTextShapeStyle](./placeholdertextshapestyle.md)
   A style appropriate for placeholder text.
 
 

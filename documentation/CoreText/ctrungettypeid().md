@@ -1,7 +1,8 @@
 # CTRunGetTypeID()
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the Core Foundation type identifier of the run object.
 
@@ -18,6 +19,10 @@ Returns the Core Foundation type identifier of the run object.
 
 ```swift
 func CTRunGetTypeID() -> CFTypeID
+```
+
+```c
+extern CFTypeID CTRunGetTypeID();
 ```
 
 

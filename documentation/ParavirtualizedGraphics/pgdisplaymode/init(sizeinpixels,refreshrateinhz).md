@@ -1,7 +1,8 @@
 # init(sizeInPixels:refreshRateInHz:)
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new display mode.
 
@@ -13,6 +14,10 @@ Creates a new display mode.
 
 ```swift
 init?(sizeInPixels: PGDisplayCoord_t, refreshRateInHz: Double)
+```
+
+```objc
+- (PGDisplayMode *) initWithSizeInPixels:(PGDisplayCoord_t) sizeInPixels refreshRateInHz:(double) refreshRateInHz;
 ```
 
 ## Parameters

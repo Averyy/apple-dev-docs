@@ -1,7 +1,8 @@
 # init(session:connectionOptions:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a scene object using the specified session and connection information.
 
@@ -16,6 +17,10 @@ Creates a scene object using the specified session and connection information.
 
 ```swift
 init(session: UISceneSession, connectionOptions: UIScene.ConnectionOptions)
+```
+
+```objc
+- (instancetype) initWithSession:(UISceneSession *) session connectionOptions:(UISceneConnectionOptions *) connectionOptions;
 ```
 
 #### Return Value

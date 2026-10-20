@@ -1,7 +1,8 @@
 # init(content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a remote immersive space.
 

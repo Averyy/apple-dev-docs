@@ -1,7 +1,8 @@
 # CBCentralManagerRestoredStateScanOptionsKey
 
 **Framework**: Core Bluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A dictionary of peripheral scan options for use when restoring state.
 
@@ -20,15 +21,20 @@ A dictionary of peripheral scan options for use when restoring state.
 let CBCentralManagerRestoredStateScanOptionsKey: String
 ```
 
+```c
+extern NSString * const CBCentralManagerRestoredStateScanOptionsKey;
+```
+
 #### Discussion
 
-The value associated with this key is an [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary). The dictionary contains all of the peripheral scan options in use by the central manager when the system stopped the app.
+The value associated with this key is an [`NSDictionary`](../Foundation/nsdictionary.md). The dictionary contains all of the peripheral scan options in use by the central manager when the system stopped the app.
 
 ## See Also
 
-- [let CBCentralManagerRestoredStatePeripheralsKey: String](cbcentralmanagerrestoredstateperipheralskey.md)
+### State Restoration Options
+- [let CBCentralManagerRestoredStatePeripheralsKey: String](./cbcentralmanagerrestoredstateperipheralskey.md)
   An array of peripherals for use when restoring the state of a central manager.
-- [let CBCentralManagerRestoredStateScanServicesKey: String](cbcentralmanagerrestoredstatescanserviceskey.md)
+- [let CBCentralManagerRestoredStateScanServicesKey: String](./cbcentralmanagerrestoredstatescanserviceskey.md)
   An array of service IDs for use when restoring state.
 
 

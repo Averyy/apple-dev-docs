@@ -1,7 +1,8 @@
 # OSLogPrivacy.Mask.none
 
 **Framework**: os  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to replace a redacted value with a generic string.
 
@@ -11,7 +12,7 @@ An option to replace a redacted value with a generic string.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -26,7 +27,8 @@ Use this option when you don’t want to correlate log messages with identical r
 
 ## See Also
 
-- [OSLogPrivacy.Mask.hash](oslogprivacy/mask/hash.md)
+### Privacy Mask Options
+- [OSLogPrivacy.Mask.hash](./hash.md)
   An option to replace a redacted value with a string that contains a hashed version of the original value.
 
 

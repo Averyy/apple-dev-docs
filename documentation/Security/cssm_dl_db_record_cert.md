@@ -1,7 +1,8 @@
 # CSSM_DL_DB_RECORD_CERT
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_DL_DB_RECORD_CERT: UInt32 { get }
+```
+
+```c
+CSSM_DL_DB_RECORD_CERT
 ```
 
 

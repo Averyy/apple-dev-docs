@@ -1,7 +1,8 @@
 # nodeDown
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Remote node down or inaccessible.
 

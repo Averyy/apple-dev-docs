@@ -1,7 +1,8 @@
 # networkFailure
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The person needs to be connected to the internet.
 

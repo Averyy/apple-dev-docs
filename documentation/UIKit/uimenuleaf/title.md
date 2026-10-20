@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A short display title for the menu element.
@@ -19,15 +20,20 @@ A short display title for the menu element.
 var title: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * title;
+```
+
 ## See Also
 
-- [var discoverabilityTitle: String?](uimenuleaf/discoverabilitytitle.md)
+### Managing the appearance
+- [var discoverabilityTitle: String?](./discoverabilitytitle.md)
   A long, informative title to use in the keyboard shortcut overlay.
-- [var image: UIImage?](uimenuleaf/image.md)
+- [var image: UIImage?](./image.md)
   An image that appears next to the menu element.
-- [var attributes: UIMenuElement.Attributes](uimenuleaf/attributes.md)
+- [var attributes: UIMenuElement.Attributes](./attributes.md)
   The attributes that determine the style of the menu element.
-- [var presentationSourceItem: (any UIPopoverPresentationControllerSourceItem)?](uimenuleaf/presentationsourceitem.md)
+- [var presentationSourceItem: (any UIPopoverPresentationControllerSourceItem)?](./presentationsourceitem.md)
   The item you can use as an anchor for subsequent presentations.
 
 

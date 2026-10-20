@@ -1,7 +1,8 @@
 # accessibilityDescription
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The accessibility description of the image for assistive technologies.
 
@@ -20,7 +21,8 @@ var accessibilityDescription: String? { get set }
 
 ## See Also
 
-- [var opacity: CGFloat](imagemarkup/opacity.md)
+### Configuring appearance
+- [var opacity: CGFloat](./opacity.md)
   The opacity of the image.
 
 

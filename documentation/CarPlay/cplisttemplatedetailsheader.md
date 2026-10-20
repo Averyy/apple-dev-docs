@@ -1,7 +1,8 @@
 # CPListTemplateDetailsHeader
 
 **Framework**: CarPlay  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A header for list templates that displays rich media content with action buttons.
 
@@ -15,6 +16,10 @@ A header for list templates that displays rich media content with action buttons
 ```swift
 @MainActor
 class CPListTemplateDetailsHeader
+```
+
+```objc
+@interface CPListTemplateDetailsHeader : NSObject
 ```
 
 #### Overview
@@ -33,44 +38,44 @@ This class is designed specifically for CarPlay templates and follows CarPlay de
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](cplisttemplatedetailsheader/init(coder:).md)
-- [init(thumbnail: CPThumbnailImage, title: String?, subtitle: String?, actionButtons: [CPButton])](cplisttemplatedetailsheader/init(thumbnail:title:subtitle:actionbuttons:).md)
+- [init?(coder: NSCoder)](./cplisttemplatedetailsheader/init%28coder%29.md)
+- [init(thumbnail: CPThumbnailImage, title: String?, subtitle: String?, actionButtons: [CPButton])](./cplisttemplatedetailsheader/init%28thumbnail,title,subtitle,actionbuttons%29.md)
   Creates a new details header with the specified content and action buttons.
-- [init(thumbnail: CPThumbnailImage, title: String?, subtitle: String?, bodyVariants: [NSAttributedString], actionButtons: [CPButton])](cplisttemplatedetailsheader/init(thumbnail:title:subtitle:bodyvariants:actionbuttons:).md)
+- [init(thumbnail: CPThumbnailImage, title: String?, subtitle: String?, bodyVariants: [NSAttributedString], actionButtons: [CPButton])](./cplisttemplatedetailsheader/init%28thumbnail,title,subtitle,bodyvariants,actionbuttons%29.md)
   Creates a new details header with the specified content and action buttons.
 ### Instance Properties
-- [var actionButtons: [CPButton]](cplisttemplatedetailsheader/actionbuttons.md)
+- [var actionButtons: [CPButton]](./cplisttemplatedetailsheader/actionbuttons.md)
   An array of action buttons displayed in the header.
-- [var bodyVariants: [NSAttributedString]](cplisttemplatedetailsheader/bodyvariants.md)
+- [var bodyVariants: [NSAttributedString]](./cplisttemplatedetailsheader/bodyvariants.md)
   An optional array of strings, ordered from most to least preferred.
-- [var subtitle: String?](cplisttemplatedetailsheader/subtitle.md)
+- [var subtitle: String?](./cplisttemplatedetailsheader/subtitle.md)
   The secondary subtitle text displayed below the title.
-- [var thumbnail: CPThumbnailImage](cplisttemplatedetailsheader/thumbnail.md)
+- [var thumbnail: CPThumbnailImage](./cplisttemplatedetailsheader/thumbnail.md)
   The thumbnail image displayed in the header.
-- [var title: String?](cplisttemplatedetailsheader/title.md)
+- [var title: String?](./cplisttemplatedetailsheader/title.md)
   The primary title text displayed in the header.
-- [var wantsAdaptiveBackgroundStyle: Bool](cplisttemplatedetailsheader/wantsadaptivebackgroundstyle.md)
+- [var wantsAdaptiveBackgroundStyle: Bool](./cplisttemplatedetailsheader/wantsadaptivebackgroundstyle.md)
   A Boolean value that determines whether to use a custom background style.
 ### Type Properties
-- [class var maximumActionButtonCount: Int](cplisttemplatedetailsheader/maximumactionbuttoncount.md)
+- [class var maximumActionButtonCount: Int](./cplisttemplatedetailsheader/maximumactionbuttoncount.md)
   The maximum number of action buttons that can be displayed in the header.
-- [class var maximumActionButtonSize: CGSize](cplisttemplatedetailsheader/maximumactionbuttonsize.md)
+- [class var maximumActionButtonSize: CGSize](./cplisttemplatedetailsheader/maximumactionbuttonsize.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CPPlayableItem](cpplayableitem.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
+- [CPPlayableItem](./cpplayableitem.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

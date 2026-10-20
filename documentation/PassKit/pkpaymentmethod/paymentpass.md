@@ -1,23 +1,30 @@
 # paymentPass
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The accompanying payment pass.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 11.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 27.2
+- iPadOS 8.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.2
+- macOS 11.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 3.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`secureElementPass`](./secureelementpass.md) instead.
 
 ## Declaration
 
 ```swift
 @NSCopying
 var paymentPass: PKPaymentPass? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) PKPaymentPass * paymentPass;
 ```
 
 #### Discussion
@@ -30,7 +37,8 @@ Use this property to detect your brand of credit and debit cards. For example, y
 
 ## See Also
 
-- [var secureElementPass: PKSecureElementPass?](pkpaymentmethod/secureelementpass.md)
+### Getting the pass
+- [var secureElementPass: PKSecureElementPass?](./secureelementpass.md)
   The accompanying Secure Element pass.
 
 

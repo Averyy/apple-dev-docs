@@ -1,7 +1,8 @@
 # restDistance
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A distance at which the rigid bodies receive zero radial force.
 

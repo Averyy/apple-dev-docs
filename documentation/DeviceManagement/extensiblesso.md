@@ -1,7 +1,8 @@
 # ExtensibleSSO
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The declaration to configure Extensible Single Sign-On.
 
@@ -14,20 +15,20 @@ The declaration to configure Extensible Single Sign-On.
 
 ## Declaration
 
-```swift
+```
 object ExtensibleSSO
 ```
 
 ## Mentions
 
-- [Configuring Platform Single Sign-on](configuring-platform-single-sign-on.md)
-- [Implementing Platform SSO for unattended device enrollment](implementing-platform-sso-for-unattended-device-enrollment.md)
+- [Configuring Platform Single Sign-on](./configuring-platform-single-sign-on.md)
+- [Implementing Platform SSO for unattended device enrollment](./implementing-platform-sso-for-unattended-device-enrollment.md)
 
 #### Discussion
 
 Specify `com.apple.configuration.extensible-sso` as the declaration type.
 
-##### Configuration Availability
+##### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -39,7 +40,7 @@ Specify `com.apple.configuration.extensible-sso` as the declaration type.
 | Allowed in user scope | macOS, Shared iPad |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration Examples
+##### Configuration examples
 
 **Credential**:
 
@@ -88,57 +89,84 @@ This configuration sets up a Redirect-type SSO extension that intercepts authent
 ## Topics
 
 ### Objects
-- [object ExtensibleSSOExtensionDataObject](extensiblessoextensiondataobject.md)
+- [object ExtensibleSSOExtensionDataObject](./extensiblessoextensiondataobject.md)
   A dictionary of arbitrary data passed through to the app extension.
-- [object ExtensibleSSOPlatformSSOObject](extensiblessoplatformssoobject.md)
+- [object ExtensibleSSOPlatformSSOObject](./extensiblessoplatformssoobject.md)
   The dictionary to configure Platform SSO.
 
 ## Properties
 
 - `DeniedBundleIdentifiers` ([string]): An array of bundle identifiers of apps that don’t use SSO provided by this extension.
-- `ExtensionComposedIdentifier` (string) *(required)*: The identifier of the provider to use for this configuration. Useful for apps that contain more than one DNS proxy extension. In iOS and visionOS, the identifier is a bundle ID, for example, “com.example.app.sso-extension”. In macOS, the identifier is a composed identifier. The format of the composed identifier is “Bundle-ID (Team-ID)”. “Bundle-ID” is the bundle identifier string of the app extension. “Team-ID” is the team identifier from the app extension’s code signature. For example, “com.example.app.sso-extension (ABCD1234)”.
+- `ExtensionComposedIdentifier` (string) *(required)*: The identifier of the provider to use for this configuration. Useful for apps that contain more than one DNS proxy extension.
+
+  In iOS and visionOS, the identifier is a bundle ID, for example, “com.example.app.sso-extension”.
+
+  In macOS, the identifier is a composed identifier. The format of the composed identifier is “Bundle-ID (Team-ID)”. “Bundle-ID” is the bundle identifier string of the app extension. “Team-ID” is the team identifier from the app extension’s code signature. For example, “com.example.app.sso-extension (ABCD1234)”.
 - `ExtensionData` (ExtensibleSSOExtensionDataObject): A dictionary of arbitrary data passed through to the app extension.
-- `Hosts` ([string]): An array of host or domain names that apps can authenticate through the app extension. Required for `Credential` payloads. Ignored for `Redirect` payloads. The system: - Matches host or domain names case-insensitively
-- Requires that all the host and domain names of all installed Extensible SSO payloads are unique > **Note**:  Host names that begin with a “.” are wildcard suffixes that match all subdomains; otherwise the host name needs be an exact match.
-- `PlatformSSO` (ExtensibleSSOPlatformSSOObject): The dictionary to configure Platform SSO. Available: macOS 27+
+- `Hosts` ([string]): An array of host or domain names that apps can authenticate through the app extension.
+
+  Required for `Credential` payloads. Ignored for `Redirect` payloads.
+
+  The system:
+
+  - Matches host or domain names case-insensitively
+  - Requires that all the host and domain names of all installed Extensible SSO payloads are unique
+
+  > **Note**:  Host names that begin with a “.” are wildcard suffixes that match all subdomains; otherwise the host name needs be an exact match.
+- `PlatformSSO` (ExtensibleSSOPlatformSSOObject): The dictionary to configure Platform SSO.
+
+  Available: macOS 27+
 - `Realm` (string): The realm name for `Credential` payloads. Use proper capitalization for this value. Ignored for `Redirect` payloads.
-- `ScreenLockedBehavior` (string): If set to `Cancel`, the system cancels authentication requests when the screen is locked. If set to `DoNotHandle`, the request continues without SSO instead. This doesn’t apply to requests where `userInterfaceEnabled` is `false`, or for background [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) requests.
+- `ScreenLockedBehavior` (string): If set to `Cancel`, the system cancels authentication requests when the screen is locked. If set to `DoNotHandle`, the request continues without SSO instead. This doesn’t apply to requests where `userInterfaceEnabled` is `false`, or for background [`URLSession`](../Foundation/urlsession.md) requests.
+
+  **Default**: `Cancel`; **Allowed Values**: `Cancel`, `DoNotHandle`
 - `Type` (string) *(required)*: The type of SSO.
-- `URLs` ([string]): An array of URL prefixes of identity providers where the app extension performs SSO. Required for `Redirect` payloads. Ignored for `Credential` payloads. The URLs need to begin with `http://` or `https://`. The system: - Matches scheme and host name case-insensitively
-- Doesn’t allow query parameters and URL fragments
-- Requires that the URLs of all installed Extensible SSO payloads are unique
+
+  **Allowed Values**: `Credential`, `Redirect`
+- `URLs` ([string]): An array of URL prefixes of identity providers where the app extension performs SSO.
+
+  Required for `Redirect` payloads. Ignored for `Credential` payloads.
+
+  The URLs need to begin with `http://` or `https://`.
+
+  The system:
+
+  - Matches scheme and host name case-insensitively
+  - Doesn’t allow query parameters and URL fragments
+  - Requires that the URLs of all installed Extensible SSO payloads are unique
 
 ## See Also
 
-- [object AccessibilitySettings](accessibilitysettings.md)
+### Configurations
+- [object AccessibilitySettings](./accessibilitysettings.md)
   The declaration to configure accessibility settings.
-- [object AccountCalDAV](accountcaldav.md)
+- [object AccountCalDAV](./accountcaldav.md)
   The declaration to configure a Calendar account.
-- [object AccountCardDAV](accountcarddav.md)
+- [object AccountCardDAV](./accountcarddav.md)
   The declaration to configure a Contacts account.
-- [object AccountExchange](accountexchange.md)
+- [object AccountExchange](./accountexchange.md)
   The declaration to configure an Exchange account.
-- [object AccountGoogle](accountgoogle.md)
+- [object AccountGoogle](./accountgoogle.md)
   The declaration to configure a Google account.
-- [object AccountLDAP](accountldap.md)
+- [object AccountLDAP](./accountldap.md)
   The declaration to configure a Lightweight Directory Access Protocol (LDAP) account.
-- [object AccountMail](accountmail.md)
+- [object AccountMail](./accountmail.md)
   The declaration to configure a Mail account.
-- [object AccountSettings](accountsettings.md)
+- [object AccountSettings](./accountsettings.md)
   The declaration to configure account settings.
-- [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
+- [object AccountSubscribedCalendar](./accountsubscribedcalendar.md)
   The declaration to configure a subscribed calendar.
-- [object AppManaged](appmanaged.md)
+- [object AppManaged](./appmanaged.md)
   The declaration to configure a managed app.
-- [object AppSettings](appsettings.md)
+- [object AppSettings](./appsettings.md)
   The declaration to configure app settings.
-- [object AudioAccessorySettings](audioaccessorysettings.md)
+- [object AudioAccessorySettings](./audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCaching](./contentcaching.md)
   The declaration to configure the Content Caching service.
-- [object DiskManagementSettings](diskmanagementsettings.md)
+- [object DiskManagementSettings](./diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
-- [object ExternalIntelligenceSettings](externalintelligencesettings.md)
+- [object ExternalIntelligenceSettings](./externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
 
 

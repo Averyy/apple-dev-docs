@@ -1,7 +1,8 @@
 # AVAudio3DMixingRenderingAlgorithm.auto
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Automatically selects the highest-quality rendering algorithm available for the current playback hardware.
 
@@ -19,27 +20,32 @@ Automatically selects the highest-quality rendering algorithm available for the 
 case auto
 ```
 
+```c
+AVAudio3DMixingRenderingAlgorithmAuto
+```
+
 #### Discussion
 
 This selects the highest-quality rendering algorithm available for the current playback hardware.
 
 The algorithm may not be identical to other existing algorithms. It may change in the future as new algorithms emerge.
 
-When in manual rendering mode or wired output, you may need to set the [`outputType`](avaudioenvironmentnode/outputtype.md) on [`AVAudioEnvironmentNode`](avaudioenvironmentnode.md). Multichannel rendering requires setting a channel layout on an [`AVAudioEnvironmentNode`](avaudioenvironmentnode.md) output.
+When in manual rendering mode or wired output, you may need to set the [`outputType`](../avaudioenvironmentnode/outputtype.md) on [`AVAudioEnvironmentNode`](../avaudioenvironmentnode.md). Multichannel rendering requires setting a channel layout on an [`AVAudioEnvironmentNode`](../avaudioenvironmentnode.md) output.
 
 ## See Also
 
-- [AVAudio3DMixingRenderingAlgorithm.equalPowerPanning](avaudio3dmixingrenderingalgorithm/equalpowerpanning.md)
+### Choosing a rendering algorithm
+- [AVAudio3DMixingRenderingAlgorithm.equalPowerPanning](./equalpowerpanning.md)
   An algorithm that pans the data of the mixer bus into a stereo field.
-- [AVAudio3DMixingRenderingAlgorithm.HRTF](avaudio3dmixingrenderingalgorithm/hrtf.md)
+- [AVAudio3DMixingRenderingAlgorithm.HRTF](./hrtf.md)
   A high-quality algorithm that uses filtering to emulate 3D space in headphones.
-- [AVAudio3DMixingRenderingAlgorithm.HRTFHQ](avaudio3dmixingrenderingalgorithm/hrtfhq.md)
+- [AVAudio3DMixingRenderingAlgorithm.HRTFHQ](./hrtfhq.md)
   A higher-quality head-related transfer function rendering algorithm.
-- [AVAudio3DMixingRenderingAlgorithm.soundField](avaudio3dmixingrenderingalgorithm/soundfield.md)
+- [AVAudio3DMixingRenderingAlgorithm.soundField](./soundfield.md)
   An algorithm that renders to multichannel hardware.
-- [AVAudio3DMixingRenderingAlgorithm.sphericalHead](avaudio3dmixingrenderingalgorithm/sphericalhead.md)
+- [AVAudio3DMixingRenderingAlgorithm.sphericalHead](./sphericalhead.md)
   An algorithm that emulates 3D space in headphones by simulating interaural time delays and other spatial cues.
-- [AVAudio3DMixingRenderingAlgorithm.stereoPassThrough](avaudio3dmixingrenderingalgorithm/stereopassthrough.md)
+- [AVAudio3DMixingRenderingAlgorithm.stereoPassThrough](./stereopassthrough.md)
   An algorithm to use when the source data doesn’t need localization.
 
 

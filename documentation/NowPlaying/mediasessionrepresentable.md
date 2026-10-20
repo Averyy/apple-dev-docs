@@ -1,7 +1,8 @@
 # MediaSessionRepresentable
 
 **Framework**: Now Playing  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that provides content metadata, playback state, and commands for a Now Playing session.
 
@@ -23,15 +24,15 @@ protocol MediaSessionRepresentable : Identifiable
 
 ## Mentions
 
-- [Publishing media sessions](publishing-media-sessions.md)
+- [Publishing media sessions](./publishing-media-sessions.md)
 
 #### Overview
 
-Conform to this protocol to provide the media content description, playback state, and commands like [`play(_:)`](mediacommand/play(_:).md), [`pause(_:)`](mediacommand/pause(_:).md), [`next(_:)`](mediacommand/next(_:).md), [`previous(_:)`](mediacommand/previous(_:).md), and more.
+Conform to this protocol to provide the media content description, playback state, and commands like [`play(_:)`](./mediacommand/play%28_%29.md), [`pause(_:)`](./mediacommand/pause%28_%29.md), [`next(_:)`](./mediacommand/next%28_%29.md), [`previous(_:)`](./mediacommand/previous%28_%29.md), and more.
 
 The framework observes your `@Observable` model and automatically updates the system’s Now Playing interface when your properties change.
 
-For more information, see [`Publishing media sessions`](publishing-media-sessions.md)
+For more information, see [Publishing media sessions](./publishing-media-sessions.md)
 
 The following example shows a basic session representable:
 
@@ -80,27 +81,28 @@ class PlayerModel: MediaSessionRepresentable {
 ## Topics
 
 ### Instance Properties
-- [var commands: [MediaCommand]](mediasessionrepresentable/commands.md)
+- [var commands: [MediaCommand]](./mediasessionrepresentable/commands.md)
   The commands supported by this session.
-- [var content: (any MediaContentRepresentable)?](mediasessionrepresentable/content.md)
+- [var content: (any MediaContentRepresentable)?](./mediasessionrepresentable/content.md)
   The content being played in this session.
-- [var id: String](mediasessionrepresentable/id.md)
+- [var id: String](./mediasessionrepresentable/id.md)
   The unique identifier for this session.
-- [var playbackSnapshot: MediaPlaybackSnapshot?](mediasessionrepresentable/playbacksnapshot.md)
+- [var playbackSnapshot: MediaPlaybackSnapshot?](./mediasessionrepresentable/playbacksnapshot.md)
   The current playback state of this session.
 
 ## Relationships
 
 ### Inherits From
-- [Identifiable](../swift/identifiable.md)
+- [Identifiable](../Swift/identifiable.md)
 
 ## See Also
 
-- [Publishing media sessions](publishing-media-sessions.md)
+### Local sessions
+- [Publishing media sessions](./publishing-media-sessions.md)
   Show your app’s media on the Lock Screen and Control Center.
-- [class MediaSession](mediasession.md)
+- [class MediaSession](./mediasession.md)
   A local Now Playing session that publishes metadata and commands to the system.
-- [enum MediaSessionError](mediasessionerror.md)
+- [enum MediaSessionError](./mediasessionerror.md)
   Errors that can occur during local session operations.
 
 

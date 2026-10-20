@@ -1,7 +1,8 @@
 # USDPrim.PseudoRootSpec
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A handle to a layer’s pseudo-root — the implicit parent of all top-level prims in a layer.
 
@@ -26,23 +27,24 @@ The pseudo-root is a special spec that’s automatically created by every layer.
 ## Topics
 
 ### Initializers
-- [init()](usdprim/pseudorootspec/init.md)
+- [init()](./pseudorootspec/init%28%29.md)
   Creates an empty (invalid) pseudo-root spec handle.
-- [init?(USDLayer.Spec)](usdprim/pseudorootspec/init(_:).md)
-  Narrows an untyped [`USDLayer.Spec`](usdlayer/spec.md) to a pseudo-root spec.
+- [init?(USDLayer.Spec)](./pseudorootspec/init%28_%29.md)
+  Narrows an untyped [`USDLayer.Spec`](../usdlayer/spec.md) to a pseudo-root spec.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [USDLayer.Spec.FieldCollection](usdlayer/spec/fieldcollection.md)
-- [USDLayer.Spec.MetadataCollection](usdlayer/spec/metadatacollection.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [USDLayer.Spec.FieldCollection](../usdlayer/spec/fieldcollection.md)
+- [USDLayer.Spec.MetadataCollection](../usdlayer/spec/metadatacollection.md)
 
 ## See Also
 
-- [USDPrim.Spec](usdprim/spec.md)
+### Working with scene-description specs
+- [USDPrim.Spec](./spec.md)
   A handle to a prim definition stored in a layer.
 
 

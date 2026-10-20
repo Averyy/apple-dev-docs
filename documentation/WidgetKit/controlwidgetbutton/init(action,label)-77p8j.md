@@ -1,7 +1,8 @@
 # init(action:label:)
 
 **Framework**: WidgetKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a button template for a control.
 
@@ -19,6 +20,8 @@ Creates a button template for a control.
 @preconcurrency init(action: Action, @ViewBuilder label: @escaping () -> Label) where ActionLabel == ControlWidgetButtonDefaultActionLabel, Action : AppIntent
 ```
 
+Available when `Label` conforms to `View` and `ActionLabel` conforms to `View`.
+
 ## Parameters
 
 - `action`: The action your button performs when pressed.
@@ -26,15 +29,16 @@ Creates a button template for a control.
 
 ## See Also
 
-- [init(action: Action, label: () -> Label)](controlwidgetbutton/init(action:label:)-8oxxp.md)
+### Initializers
+- [init(action: Action, label: () -> Label)](./init%28action,label%29-8oxxp.md)
   Creates a button template for a control that launches an app.
-- [init(action: Action, label: () -> Label, actionLabel: (Bool) -> ActionLabel)](controlwidgetbutton/init(action:label:actionlabel:).md)
+- [init(action: Action, label: () -> Label, actionLabel: (Bool) -> ActionLabel)](./init%28action,label,actionlabel%29.md)
   Creates a button template for a control.
-- [init(action: Action, label: () -> Label, actionLabel: (Bool) -> ActionLabel)](controlwidgetbutton/init(action:label:actionlabel:).md)
+- [init(action: Action, label: () -> Label, actionLabel: (Bool) -> ActionLabel)](./init%28action,label,actionlabel%29.md)
   Creates a button template for a control.
-- [init(some StringProtocol, action: Action, actionLabel: (Bool) -> ActionLabel)](controlwidgetbutton/init(_:action:actionlabel:)-4sgji.md)
+- [init(some StringProtocol, action: Action, actionLabel: (Bool) -> ActionLabel)](./init%28_,action,actionlabel%29-4sgji.md)
   Creates a button template for a control.
-- [init(LocalizedStringKey, action: Action, actionLabel: (Bool) -> ActionLabel)](controlwidgetbutton/init(_:action:actionlabel:)-67uvw.md)
+- [init(LocalizedStringKey, action: Action, actionLabel: (Bool) -> ActionLabel)](./init%28_,action,actionlabel%29-67uvw.md)
   Creates a button template for a control.
 
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Animation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 3.2+

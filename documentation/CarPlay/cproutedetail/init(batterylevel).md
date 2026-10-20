@@ -1,7 +1,8 @@
 # init(batteryLevel:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates additional route information for battery percentage.
 
@@ -14,6 +15,10 @@ Creates additional route information for battery percentage.
 
 ```swift
 convenience init(batteryLevel: Double)
+```
+
+```objc
++ (instancetype) routeDetailWithBatteryLevel:(double) batteryLevel;
 ```
 
 #### Return Value

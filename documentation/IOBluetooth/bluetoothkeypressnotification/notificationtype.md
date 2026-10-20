@@ -1,15 +1,20 @@
 # notificationType
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var notificationType: BluetoothKeypressNotificationType
+```
+
+```c
+BluetoothKeypressNotificationType notificationType;
 ```
 
 

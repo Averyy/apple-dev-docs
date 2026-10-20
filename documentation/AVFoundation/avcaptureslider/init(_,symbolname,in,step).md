@@ -1,7 +1,8 @@
 # init(_:symbolName:in:step:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a discrete slider control that selects a stepped value from a bounded range.
 
@@ -28,13 +29,14 @@ Use discrete sliders when your use case supports selecting stepped values within
 - `localizedTitle`: A localized title that describes the slider’s action.
 - `symbolName`: A symbol name from the SF Symbols library.
 - `range`: A bounded range of floating point values.
-- `step`: The distance between each valid value. This specified value must be greater than `0` or the system throws an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception).
+- `step`: The distance between each valid value. This specified value must be greater than `0` or the system throws an [`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md).
 
 ## See Also
 
-- [convenience init(String, symbolName: String, in: ClosedRange<Float>)](avcaptureslider/init(_:symbolname:in:).md)
+### Creating a slider
+- [convenience init(String, symbolName: String, in: ClosedRange<Float>)](./init%28_,symbolname,in%29.md)
   Creates a continuous slider control that selects a value from a bounded range.
-- [convenience init(String, symbolName: String, values: [Float])](avcaptureslider/init(_:symbolname:values:).md)
+- [convenience init(String, symbolName: String, values: [Float])](./init%28_,symbolname,values%29.md)
   Creates a discrete slider control that selects a value from a list.
 
 

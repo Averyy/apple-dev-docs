@@ -1,7 +1,8 @@
 # parts
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mutable collection of parts.
 
@@ -22,15 +23,16 @@ var parts: LowLevelMesh.PartsCollection { get set }
 
 #### Discussion
 
-The parts of a [`LowLevelMesh`](lowlevelmesh.md) object specify how to interpret the index buffer. You can also use `parts` to customize the material index and primitive type.
+The parts of a [`LowLevelMesh`](../lowlevelmesh.md) object specify how to interpret the index buffer. You can also use `parts` to customize the material index and primitive type.
 
 ## See Also
 
-- [let descriptor: LowLevelMesh.Descriptor](lowlevelmesh/descriptor-swift.property.md)
+### Describing a low-level mesh
+- [let descriptor: LowLevelMesh.Descriptor](./descriptor-swift.property.md)
   The definition of the structure of this low-level mesh.
-- [var indexCapacity: Int](lowlevelmesh/indexcapacity.md)
+- [var indexCapacity: Int](./indexcapacity.md)
   The capacity of the index buffer, measured in indices.
-- [var vertexCapacity: Int](lowlevelmesh/vertexcapacity.md)
+- [var vertexCapacity: Int](./vertexcapacity.md)
   The capacity of the vertex buffer, measured in vertices.
 
 

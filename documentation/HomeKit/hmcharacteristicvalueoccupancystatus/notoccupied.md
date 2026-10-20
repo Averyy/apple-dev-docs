@@ -1,7 +1,8 @@
 # HMCharacteristicValueOccupancyStatus.notOccupied
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The home is not occupied.
 
@@ -19,9 +20,14 @@ The home is not occupied.
 case notOccupied
 ```
 
+```c
+HMCharacteristicValueOccupancyStatusNotOccupied
+```
+
 ## See Also
 
-- [HMCharacteristicValueOccupancyStatus.occupied](hmcharacteristicvalueoccupancystatus/occupied.md)
+### Occupancy Status
+- [HMCharacteristicValueOccupancyStatus.occupied](./occupied.md)
   The home is occupied.
 
 

@@ -1,7 +1,8 @@
 # PHASEObject
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object in the scene.
 
@@ -19,9 +20,13 @@ An object in the scene.
 class PHASEObject
 ```
 
+```objc
+@interface PHASEObject : NSObject
+```
+
 ## Mentions
 
-- [Playing sound from a location in a 3D scene](playing-sound-from-a-location-in-a-3d-scene.md)
+- [Playing sound from a location in a 3D scene](./playing-sound-from-a-location-in-a-3d-scene.md)
 
 #### Overview
 
@@ -29,75 +34,76 @@ This class models a member of your app’s scene by defining a 3D position and o
 
 The following subclasses derive from this class:
 
-- **[`PHASESource`](phasesource.md)**: An object that plays audio from a 3D location and orientation in a scene.
-- **[`PHASEListener`](phaselistener.md)**: A central point of reference that defines the area within the scene that’s most audible to the user.
-- **[`PHASEOccluder`](phaseoccluder.md)**: An object with a shape and position that blocks audio from reaching the listener.
+- **[`PHASESource`](./phasesource.md)**: An object that plays audio from a 3D location and orientation in a scene.
+- **[`PHASEListener`](./phaselistener.md)**: A central point of reference that defines the area within the scene that’s most audible to the user.
+- **[`PHASEOccluder`](./phaseoccluder.md)**: An object with a shape and position that blocks audio from reaching the listener.
 
-The [`children`](phaseobject/children.md) array holds instances of this class to position and orient them relatively.
+The [`children`](./phaseobject/children.md) array holds instances of this class to position and orient them relatively.
 
 ## Topics
 
 ### Creating an Object
-- [init(engine: PHASEEngine)](phaseobject/init(engine:).md)
+- [init(engine: PHASEEngine)](./phaseobject/init%28engine%29.md)
   Creates an object in the scene.
 ### Managing the Hierarchy
-- [var children: [PHASEObject]](phaseobject/children.md)
+- [var children: [PHASEObject]](./phaseobject/children.md)
   Objects that position and orient in the scene relative to the given object.
-- [var parent: PHASEObject?](phaseobject/parent.md)
+- [var parent: PHASEObject?](./phaseobject/parent.md)
   The object that this instance positions and orients relative to in the scene.
-- [func addChild(PHASEObject) throws](phaseobject/addchild(_:).md)
+- [func addChild(PHASEObject) throws](./phaseobject/addchild%28_%29.md)
   Adds the given object as a child.
-- [func removeChild(PHASEObject)](phaseobject/removechild(_:).md)
+- [func removeChild(PHASEObject)](./phaseobject/removechild%28_%29.md)
   Removes the given object as a child.
-- [func removeChildren()](phaseobject/removechildren.md)
+- [func removeChildren()](./phaseobject/removechildren%28%29.md)
   Removes all child objects from the given object.
 ### Defining a Pose
-- [var transform: simd_float4x4](phaseobject/transform.md)
+- [var transform: simd_float4x4](./phaseobject/transform.md)
   A matrix, in local coordinates, that determines the object’s pose in the scene.
-- [var worldTransform: simd_float4x4](phaseobject/worldtransform.md)
+- [var worldTransform: simd_float4x4](./phaseobject/worldtransform.md)
   A matrix, in scene coordinates, that determines the object’s pose in the scene.
 ### Inspecting the Orientation
-- [class var forward: simd_float3](phaseobject/forward.md)
+- [class var forward: simd_float3](./phaseobject/forward.md)
   A vector that points forward in the local coordinate space.
-- [class var right: simd_float3](phaseobject/right.md)
+- [class var right: simd_float3](./phaseobject/right.md)
   A vector that points right in the local coordinate space.
-- [class var up: simd_float3](phaseobject/up.md)
+- [class var up: simd_float3](./phaseobject/up.md)
   A vector that points up in the local coordinate space.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [PHASEListener](phaselistener.md)
-- [PHASEOccluder](phaseoccluder.md)
-- [PHASESource](phasesource.md)
+- [PHASEListener](./phaselistener.md)
+- [PHASEOccluder](./phaseoccluder.md)
+- [PHASESource](./phasesource.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASESource](phasesource.md)
+### Soundscape Creation
+- [class PHASESource](./phasesource.md)
   An object that plays audio from a 3D location and orientation in a scene.
-- [class PHASEListener](phaselistener.md)
+- [class PHASEListener](./phaselistener.md)
   A central point of reference that defines the location within the scene that’s most audible to the user.
-- [class PHASEOccluder](phaseoccluder.md)
+- [class PHASEOccluder](./phaseoccluder.md)
   An object with a shape and position that blocks audio from reaching the listener.
-- [class PHASEShape](phaseshape.md)
+- [class PHASEShape](./phaseshape.md)
   A collection of points that connect to form a 3D volume.
-- [PHASEShape.Element](phaseshape/element.md)
+- [PHASEShape.Element](./phaseshape/element.md)
   An object that describes the characteristics of a physical surface.
-- [class PHASEMaterial](phasematerial.md)
+- [class PHASEMaterial](./phasematerial.md)
   Surface characteristics that determine the acoustic properties of an object.
-- [enum PHASEMaterialPreset](phasematerialpreset.md)
+- [enum PHASEMaterialPreset](./phasematerialpreset.md)
   A collection of physical surfaces that each add a unique acoustic quality to your app’s audio.
-- [class PHASEMixerParameters](phasemixerparameters.md)
+- [class PHASEMixerParameters](./phasemixerparameters.md)
   An object that specifies a mixer for sound events and orients them in 3D space.
 
 

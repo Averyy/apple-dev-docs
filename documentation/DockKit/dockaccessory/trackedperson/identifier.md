@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier representing the tracked person. This identifier persists as long as the dock tracks the person. The value is random and doesn’t persist across sessions.
 

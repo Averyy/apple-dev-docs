@@ -1,7 +1,8 @@
 # LabelStyle.Configuration
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The properties of a label.
 
@@ -22,9 +23,10 @@ typealias Configuration = LabelStyleConfiguration
 
 ## See Also
 
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](labelstyle/makebody(configuration:).md)
+### Creating custom label styles
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./makebody%28configuration%29.md)
   Creates a view that represents the body of a label.
-- [associatedtype Body : View](labelstyle/body.md)
+- [associatedtype Body : View](./body.md)
   A view that represents the body of a label.
 
 

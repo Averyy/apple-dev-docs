@@ -1,14 +1,17 @@
 # UITableViewRowAction.Style.default
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Apply the default style to the button.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
+- iOS 8.0+ - Deprecated in 13.0
+- iPadOS 8.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: For more information, see [`UITableViewRowAction`](../../uitableviewrowaction.md).
 
 ## Declaration
 
@@ -16,11 +19,16 @@ Apply the default style to the button.
 case `default`
 ```
 
+```c
+UITableViewRowActionStyleDefault
+```
+
 ## See Also
 
-- [static var destructive: UITableViewRowAction.Style](uitableviewrowaction/style-swift.enum/destructive.md)
+### Styles
+- [static var destructive: UITableViewRowAction.Style](./destructive.md)
   Equal to the default style.
-- [UITableViewRowAction.Style.normal](uitableviewrowaction/style-swift.enum/normal.md)
+- [UITableViewRowAction.Style.normal](./normal.md)
   Apply a style that reflects standard non-destructive actions.
 
 

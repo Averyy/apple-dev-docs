@@ -1,12 +1,15 @@
 # SecKeychainRemoveCallback(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Unregisters your keychain event callback function.
 
 **Availability**:
-- macOS 10.2+
+- macOS 10.2+ - Deprecated in 10.10
+
+> **Deprecated**: SecKeychain is deprecated
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Unregisters your keychain event callback function.
 func SecKeychainRemoveCallback(_ callbackFunction: SecKeychainCallback) -> OSStatus
 ```
 
+```c
+OSStatus SecKeychainRemoveCallback(SecKeychainCallback callbackFunction);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 

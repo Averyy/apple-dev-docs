@@ -1,15 +1,17 @@
 # Text size
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 16-bit word that specifies the length (number of bytes) of the subtitle text.
 
 ## See Also
 
-- [Text](subtitle_sample_data/text.md)
+### Data fields
+- [Text](./text.md)
   The subtitle text.
-- [Sample extensions](subtitle_sample_data/sample_extensions.md)
+- [Sample extensions](./sample_extensions.md)
   One or more atoms containing additional information for selecting and drawing the subtitle.
 
 

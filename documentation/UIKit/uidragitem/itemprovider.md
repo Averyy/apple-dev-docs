@@ -1,7 +1,8 @@
 # itemProvider
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The item provider associated with the drag item.
 
@@ -17,18 +18,23 @@ The item provider associated with the drag item.
 var itemProvider: NSItemProvider { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSItemProvider * itemProvider;
+```
+
 ## Mentions
 
-- [Supporting Drag and Drop in Collection Views](supporting-drag-and-drop-in-collection-views.md)
-- [Supporting drag and drop in table views](supporting-drag-and-drop-in-table-views.md)
+- [Supporting Drag and Drop in Collection Views](../supporting-drag-and-drop-in-collection-views.md)
+- [Supporting drag and drop in table views](../supporting-drag-and-drop-in-table-views.md)
 
 #### Discussion
 
-The item provider conveys the data, or file, that the drag-and-drop activity shares between processes. The property is set when the [`UIDragItem`](uidragitem.md) instance is created. For more information, see [`init(itemProvider:)`](uidragitem/init(itemprovider:).md).
+The item provider conveys the data, or file, that the drag-and-drop activity shares between processes. The property is set when the [`UIDragItem`](../uidragitem.md) instance is created. For more information, see [`init(itemProvider:)`](./init%28itemprovider%29.md).
 
 ## See Also
 
-- [var localObject: Any?](uidragitem/localobject.md)
+### Accessing the drag item’s data
+- [var localObject: Any?](./localobject.md)
   A custom object associated with the drag item.
 
 

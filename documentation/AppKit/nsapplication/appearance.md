@@ -1,7 +1,8 @@
 # appearance
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The appearance associated with the app’s windows.
 
@@ -14,27 +15,32 @@ The appearance associated with the app’s windows.
 var appearance: NSAppearance? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSAppearance * appearance;
+```
+
 ## Mentions
 
-- [Choosing a Specific Appearance for Your macOS App](choosing-a-specific-appearance-for-your-macos-app.md)
+- [Choosing a Specific Appearance for Your macOS App](../choosing-a-specific-appearance-for-your-macos-app.md)
 
 #### Discussion
 
-When the value of this property is `nil` (the default), AppKit applies the current system appearance to the app’s user interface elements, including its windows, views, panels, and popovers. Assigning an [`NSAppearance`](nsappearance.md) object to this property causes the app’s interface elements to adopt the specified appearance instead.
+When the value of this property is `nil` (the default), AppKit applies the current system appearance to the app’s user interface elements, including its windows, views, panels, and popovers. Assigning an [`NSAppearance`](../nsappearance.md) object to this property causes the app’s interface elements to adopt the specified appearance instead.
 
 Individual windows and views may still override the app’s appearance to customize their own appearance.
 
 ## See Also
 
-- [var effectiveAppearance: NSAppearance](nsapplication/effectiveappearance.md)
+### Managing the app’s appearance
+- [var effectiveAppearance: NSAppearance](./effectiveappearance.md)
   The appearance that AppKit uses to draw the app’s interface.
-- [var currentSystemPresentationOptions: NSApplication.PresentationOptions](nsapplication/currentsystempresentationoptions.md)
+- [var currentSystemPresentationOptions: NSApplication.PresentationOptions](./currentsystempresentationoptions.md)
   The set of app presentation options that are currently in effect for the system.
-- [var presentationOptions: NSApplication.PresentationOptions](nsapplication/presentationoptions-swift.property.md)
+- [var presentationOptions: NSApplication.PresentationOptions](./presentationoptions-swift.property.md)
   The presentation options that should be in effect for the system when this app is active.
-- [NSApplication.PresentationOptions](nsapplication/presentationoptions-swift.struct.md)
+- [NSApplication.PresentationOptions](./presentationoptions-swift.struct.md)
   Constants that control the presentation of the app, typically for fullscreen apps such as games or kiosks.
-- [var applicationShouldSuppressHighDynamicRangeContent: Bool](nsapplication/applicationshouldsuppresshighdynamicrangecontent.md)
+- [var applicationShouldSuppressHighDynamicRangeContent: Bool](./applicationshouldsuppresshighdynamicrangecontent.md)
   A boolean value indicating whether your application should suppress HDR content based on established policy. Built-in AppKit components such as NSImageView will automatically behave correctly with HDR content. You should use this value in conjunction with notifications (`NSApplicationShouldBeginSuppressingHighDynamicRangeContentNotification` and `NSApplicationShouldEndSuppressingHighDynamicRangeContentNotification`) to suppress HDR content in your application when signaled to do so.
 
 

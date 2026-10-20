@@ -1,7 +1,8 @@
 # referenceImages(inGroupNamed:bundle:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Loads all reference images in the specified AR Resource Group in your Xcode project’s asset catalog.
 
@@ -15,13 +16,17 @@ Loads all reference images in the specified AR Resource Group in your Xcode proj
 class func referenceImages(inGroupNamed name: String, bundle: Bundle?) -> Set<ARReferenceImage>?
 ```
 
+```objc
++ (NSSet<ARReferenceImage *> *) referenceImagesInGroupNamed:(NSString *) name bundle:(NSBundle *) bundle;
+```
+
 #### Return Value
 
 A set of all unique reference images in the specified group.
 
 #### Discussion
 
-To use the images for image detection in a world-tracking AR session, provide this set for your session configuration’s [`detectionImages`](arworldtrackingconfiguration/detectionimages.md) property.
+To use the images for image detection in a world-tracking AR session, provide this set for your session configuration’s [`detectionImages`](../arworldtrackingconfiguration/detectionimages.md) property.
 
 ## Parameters
 

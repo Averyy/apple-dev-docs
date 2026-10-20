@@ -1,16 +1,17 @@
 # UIFocusGroupPriority
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The importance of an item within a focus group, used by the focus system to determine the group’s primary item.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,54 +19,59 @@ The importance of an item within a focus group, used by the focus system to dete
 struct UIFocusGroupPriority
 ```
 
+```c
+typedef NSInteger UIFocusGroupPriority;
+```
+
 ## Topics
 
 ### Constants
-- [static var ignored: UIFocusGroupPriority](uifocusgrouppriority/ignored.md)
+- [static var ignored: UIFocusGroupPriority](./uifocusgrouppriority/ignored.md)
   The lowest focus group priority, assigned by default.
-- [static var previouslyFocused: UIFocusGroupPriority](uifocusgrouppriority/previouslyfocused.md)
+- [static var previouslyFocused: UIFocusGroupPriority](./uifocusgrouppriority/previouslyfocused.md)
   The focus group priority of a previously focused item.
-- [static var prioritized: UIFocusGroupPriority](uifocusgrouppriority/prioritized.md)
+- [static var prioritized: UIFocusGroupPriority](./uifocusgrouppriority/prioritized.md)
   The focus group priority that indicates an item is more important than others.
-- [static var currentlyFocused: UIFocusGroupPriority](uifocusgrouppriority/currentlyfocused.md)
+- [static var currentlyFocused: UIFocusGroupPriority](./uifocusgrouppriority/currentlyfocused.md)
   The focus group priority of the currently focused item, the highest possible priority.
 ### Initializing a focus group priority
-- [init(Int)](uifocusgrouppriority/init(_:).md)
+- [init(Int)](./uifocusgrouppriority/init%28_%29.md)
   Creates a focus group priority with the specified value.
-- [init(rawValue: Int)](uifocusgrouppriority/init(rawvalue:).md)
+- [init(rawValue: Int)](./uifocusgrouppriority/init%28rawvalue%29.md)
   Creates a focus group priority with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Navigating an app’s user interface using a keyboard](navigating-an-app-s-user-interface-using-a-keyboard.md)
+### Focus interactions
+- [Navigating an app’s user interface using a keyboard](./navigating-an-app-s-user-interface-using-a-keyboard.md)
   Navigate between user interface elements using a keyboard and focusable UI elements in iPad apps and apps built with Mac Catalyst.
-- [About focus interactions for Apple TV](about-focus-interactions-for-apple-tv.md)
+- [About focus interactions for Apple TV](./about-focus-interactions-for-apple-tv.md)
   Design and implement intuitive control schemes for menus and interactive user interface layouts.
-- [Adding user-focusable elements to a tvOS app](adding-user-focusable-elements-to-a-tvos-app.md)
+- [Adding user-focusable elements to a tvOS app](./adding-user-focusable-elements-to-a-tvos-app.md)
   Create intuitive and easily manipulated user-interactive controls for your tvOS app.
-- [protocol UIFocusEnvironment](uifocusenvironment.md)
+- [protocol UIFocusEnvironment](./uifocusenvironment.md)
   A set of methods that define the focus behavior for a branch of the view hierarchy.
-- [class UIFocusSystem](uifocussystem.md)
+- [class UIFocusSystem](./uifocussystem.md)
   Queries and reevaluates the currently focused item.
-- [class UIFocusUpdateContext](uifocusupdatecontext.md)
+- [class UIFocusUpdateContext](./uifocusupdatecontext.md)
   An object that provides information relevant to a specific focus update from one view to another.
-- [protocol UIFocusItem](uifocusitem.md)
+- [protocol UIFocusItem](./uifocusitem.md)
   An object that can become focused.
-- [class UIFocusMovementHint](uifocusmovementhint.md)
+- [class UIFocusMovementHint](./uifocusmovementhint.md)
   Provides movement hint information for the focused item.
-- [protocol UIFocusItemContainer](uifocusitemcontainer.md)
+- [protocol UIFocusItemContainer](./uifocusitemcontainer.md)
   The container responsible for providing geometric context to focus items within a given focus environment.
-- [protocol UIFocusItemScrollableContainer](uifocusitemscrollablecontainer.md)
+- [protocol UIFocusItemScrollableContainer](./uifocusitemscrollablecontainer.md)
   A type of focus item container that supports automatic scrolling of focusable content.
 
 

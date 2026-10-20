@@ -1,7 +1,8 @@
 # GameCenterMatchmakingQueueCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure of the request body you use to create a queue.
 
@@ -10,23 +11,23 @@ The data structure of the request body you use to create a queue.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingQueueCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterMatchmakingQueueCreateRequest.Data.Attributes](gamecentermatchmakingqueuecreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object GameCenterMatchmakingQueueCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   The attributes for a queue that you create.
-- [object GameCenterMatchmakingQueueCreateRequest.Data.Relationships](gamecentermatchmakingqueuecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object GameCenterMatchmakingQueueCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The rule sets that you include when creating a queue.
 
 ## Properties
 
 - `attributes` (GameCenterMatchmakingQueueCreateRequest.Data.Attributes) *(required)*
 - `relationships` (GameCenterMatchmakingQueueCreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterMatchmakingQueues`
 
 
 ---

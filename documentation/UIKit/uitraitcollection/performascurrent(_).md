@@ -1,7 +1,8 @@
 # performAsCurrent(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes custom code using the traits of the receiving trait collection.
 
@@ -18,13 +19,17 @@ Executes custom code using the traits of the receiving trait collection.
 func performAsCurrent(_ actions: () -> Void)
 ```
 
+```objc
+- (void) performAsCurrentTraitCollection:(void (^)()) actions;
+```
+
 #### Discussion
 
-The [`current`](uitraitcollection/current.md) property is undefined outside the documented methods where UIKit sets it. Use this method when you want to execute code that relies on the [`current`](uitraitcollection/current.md) property from outside these methods. You can also use this method if you want to execute some code using the traits of a different trait environment. Prefer this method over manually setting the [`current`](uitraitcollection/current.md) property yourself.
+The [`current`](./current.md) property is undefined outside the documented methods where UIKit sets it. Use this method when you want to execute code that relies on the [`current`](./current.md) property from outside these methods. You can also use this method if you want to execute some code using the traits of a different trait environment. Prefer this method over manually setting the [`current`](./current.md) property yourself.
 
-This method temporarily replaces the traits of the current environment with the ones in the targeted [`UITraitCollection`](uitraitcollection.md). After the `actions` block finishes, the method restores the original traits to the environment. You can call this method from any thread of your app.
+This method temporarily replaces the traits of the current environment with the ones in the targeted [`UITraitCollection`](../uitraitcollection.md). After the `actions` block finishes, the method restores the original traits to the environment. You can call this method from any thread of your app.
 
-The example below shows how you can safely resolve dynamic [`UIColor`](uicolor.md) that relies on [`current`](uitraitcollection/current.md):
+The example below shows how you can safely resolve dynamic [`UIColor`](../uicolor.md) that relies on [`current`](./current.md):
 
 ```swift
 func updateBorderColor(layer: CALayer) {

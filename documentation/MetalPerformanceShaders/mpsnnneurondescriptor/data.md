@@ -1,7 +1,8 @@
 # data
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 var data: Data? { get set }
+```
+
+```objc
+@property (nonatomic, retain, readwrite, nullable) NSData * data;
 ```
 
 

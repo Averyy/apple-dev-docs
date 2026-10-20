@@ -1,7 +1,8 @@
 # init(stringLiteral:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a text content instance from the given string literal.
 
@@ -16,7 +17,8 @@ init(stringLiteral value: String)
 
 ## See Also
 
-- [init(body: String)](rcsmessage/text/init(body:).md)
+### Creating a text instance
+- [init(body: String)](./init%28body%29.md)
   Creates a text content instance from the given string.
 
 

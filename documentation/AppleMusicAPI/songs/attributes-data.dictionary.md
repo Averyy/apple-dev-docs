@@ -1,7 +1,8 @@
 # Songs.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes for a song resource.
 
@@ -10,7 +11,7 @@ The attributes for a song resource.
 
 ## Declaration
 
-```swift
+```
 object Songs.Attributes
 ```
 
@@ -21,16 +22,22 @@ object Songs.Attributes
 - `artistUrl` (string): **(Extended)** The URL of the artist for the content.
 - `artwork` (Artwork) *(required)*: The album artwork.
 - `attribution` (string): (Classical music only) The name of the artist or composer to attribute the song with.
-- `audioVariants` ([string]): **(Extended)** Indicates the specific audio variant for a song. > ❗ **Important**:  Use badges to indicate the audio variant in Apple Music. For more information, see [`Dolby Asset Center (DAC)`](https://developer.apple.comhttps://assetcenter.dolby.com/) for identifying tracks with the Dolby Atmos logo and [`Apple Lossless glyphs`](https://developer.apple.comhttps://developer.apple.com/go/?id=lossless-badges) for identifying tracks with the specific Apple Lossless glyph.
+- `audioVariants` ([string]): **(Extended)** Indicates the specific audio variant for a song.
+
+  > ❗ **Important**:  Use badges to indicate the audio variant in Apple Music. For more information, see [Dolby Asset Center (DAC)](https://assetcenter.dolby.com/) for identifying tracks with the Dolby Atmos logo and [Apple Lossless glyphs](https://developer.apple.com/go/?id=lossless-badges) for identifying tracks with the specific Apple Lossless glyph.
+
+  **Allowed Values**: `dolby-atmos`, `dolby-audio`, `hi-res-lossless`, `lossless`, `lossy-stereo`
 - `composerName` (string): The song’s composer.
 - `contentRating` (string): The Recording Industry Association of America (RIAA) rating of the content. No value means no rating.
+
+  **Allowed Values**: `clean`, `explicit`
 - `discNumber` (integer): The disc number of the album the song appears on.
 - `durationInMillis` (integer) *(required)*: The duration of the song in milliseconds.
 - `editorialNotes` (EditorialNotes): The notes about the song that appear in the Apple Music catalog.
 - `genreNames` ([string]) *(required)*: The genre names the song is associated with.
 - `hasLyrics` (boolean) *(required)*: Indicates whether the song has lyrics available in the Apple Music catalog. If `true`, the song has lyrics available; otherwise, it doesn’t.
 - `inFavorites` (boolean): Whether the catalog resource ID is in the person’s favorites.
-- `isAppleDigitalMaster` (boolean) *(required)*: Indicates whether the response delivered the song as an [`Apple Digital Master`](https://developer.apple.comhttps://www.apple.com/apple-music/apple-digital-masters/).
+- `isAppleDigitalMaster` (boolean) *(required)*: Indicates whether the response delivered the song as an [Apple Digital Master](https://www.apple.com/apple-music/apple-digital-masters/).
 - `isrc` (string): The International Standard Recording Code (ISRC) for the song.
 - `movementCount` (integer): (Classical music only) The movement count of the song.
 - `movementName` (string): (Classical music only) The movement name of the song.
@@ -45,7 +52,8 @@ object Songs.Attributes
 
 ## See Also
 
-- [object Songs.Relationships](songs/relationships-data.dictionary.md)
+### Related Objects
+- [object Songs.Relationships](./relationships-data.dictionary.md)
   The relationships for a song resource.
 
 

@@ -1,12 +1,15 @@
 # ControlActiveState
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The active appearance expected of controls in a window.
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 27.2
+
+> **Deprecated**: Use `EnvironmentValues.appearsActive` instead.
 
 ## Declaration
 
@@ -21,18 +24,18 @@ enum ControlActiveState
 ## Topics
 
 ### Getting control active states
-- [ControlActiveState.key](controlactivestate/key.md)
-- [ControlActiveState.active](controlactivestate/active.md)
-- [ControlActiveState.inactive](controlactivestate/inactive.md)
+- [ControlActiveState.key](./controlactivestate/key.md)
+- [ControlActiveState.active](./controlactivestate/active.md)
+- [ControlActiveState.inactive](./controlactivestate/inactive.md)
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

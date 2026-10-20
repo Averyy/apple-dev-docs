@@ -1,7 +1,8 @@
 # HoverPhase.active(_:)
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The pointer’s location moved to the specified point within the view.
 
@@ -21,7 +22,8 @@ case active(CGPoint)
 
 ## See Also
 
-- [HoverPhase.ended](hoverphase/ended.md)
+### Getting hover phases
+- [HoverPhase.ended](./ended.md)
   The pointer exited the view.
 
 

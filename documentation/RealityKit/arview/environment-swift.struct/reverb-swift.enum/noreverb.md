@@ -1,7 +1,8 @@
 # ARView.Environment.Reverb.noReverb
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Omit reverb from the scene.
 
@@ -20,7 +21,8 @@ case noReverb
 
 ## See Also
 
-- [case preset(ARView.Environment.Reverb.Preset)](arview/environment-swift.struct/reverb-swift.enum/preset(_:).md)
+### Available reverb settings
+- [case preset(ARView.Environment.Reverb.Preset)](./preset%28_%29.md)
   Generate reverb from a preset.
 
 

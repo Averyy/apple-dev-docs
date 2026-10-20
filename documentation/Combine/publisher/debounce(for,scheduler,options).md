@@ -1,7 +1,8 @@
 # debounce(for:scheduler:options:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Publishes elements only after a specified time interval elapses between events.
 
@@ -22,8 +23,8 @@ func debounce<S>(for dueTime: S.SchedulerTimeType.Stride, scheduler: S, options:
 
 ## Mentions
 
-- [Processing Published Elements with Subscribers](processing-published-elements-with-subscribers.md)
-- [Receiving and Handling Events with Combine](receiving-and-handling-events-with-combine.md)
+- [Processing Published Elements with Subscribers](../processing-published-elements-with-subscribers.md)
+- [Receiving and Handling Events with Combine](../receiving-and-handling-events-with-combine.md)
 
 #### Return Value
 
@@ -31,9 +32,9 @@ A publisher that publishes events only after a specified time elapses.
 
 #### Discussion
 
-Use the [`debounce(for:scheduler:options:)`](publisher/debounce(for:scheduler:options:).md) operator to control the number of values and time between delivery of values from the upstream publisher. This operator is useful to process bursty or high-volume event streams where you need to reduce the number of values delivered to the downstream to a rate you specify.
+Use the [`debounce(for:scheduler:options:)`](./debounce%28for,scheduler,options%29.md) operator to control the number of values and time between delivery of values from the upstream publisher. This operator is useful to process bursty or high-volume event streams where you need to reduce the number of values delivered to the downstream to a rate you specify.
 
-In this example, a [`PassthroughSubject`](passthroughsubject.md) publishes elements on a schedule defined by the `bounces` array. The array is composed of tuples representing a value sent by the [`PassthroughSubject`](passthroughsubject.md), and a [`TimeInterval`](https://developer.apple.com/documentation/foundation/timeinterval) ranging from one-quarter second up to 2 seconds that drives a delivery timer. As the queue builds, elements arriving faster than one-half second `debounceInterval` are discarded, while elements arriving at a rate slower than `debounceInterval` are passed through to the [`sink(receiveValue:)`](publisher/sink(receivevalue:).md) operator.
+In this example, a [`PassthroughSubject`](../passthroughsubject.md) publishes elements on a schedule defined by the `bounces` array. The array is composed of tuples representing a value sent by the [`PassthroughSubject`](../passthroughsubject.md), and a [`TimeInterval`](../../Foundation/timeinterval.md) ranging from one-quarter second up to 2 seconds that drives a delivery timer. As the queue builds, elements arriving faster than one-half second `debounceInterval` are discarded, while elements arriving at a rate slower than `debounceInterval` are passed through to the [`sink(receiveValue:)`](./sink%28receivevalue%29.md) operator.
 
 ```swift
 let bounces:[(Int,TimeInterval)] = [
@@ -83,13 +84,14 @@ for bounce in bounces {
 
 ## See Also
 
-- [func measureInterval<S>(using: S, options: S.SchedulerOptions?) -> Publishers.MeasureInterval<Self, S>](publisher/measureinterval(using:options:).md)
+### Controlling timing
+- [func measureInterval<S>(using: S, options: S.SchedulerOptions?) -> Publishers.MeasureInterval<Self, S>](./measureinterval%28using,options%29.md)
   Measures and emits the time interval between events received from an upstream publisher.
-- [func delay<S>(for: S.SchedulerTimeType.Stride, tolerance: S.SchedulerTimeType.Stride?, scheduler: S, options: S.SchedulerOptions?) -> Publishers.Delay<Self, S>](publisher/delay(for:tolerance:scheduler:options:).md)
+- [func delay<S>(for: S.SchedulerTimeType.Stride, tolerance: S.SchedulerTimeType.Stride?, scheduler: S, options: S.SchedulerOptions?) -> Publishers.Delay<Self, S>](./delay%28for,tolerance,scheduler,options%29.md)
   Delays delivery of all output to the downstream receiver by a specified amount of time on a particular scheduler.
-- [func throttle<S>(for: S.SchedulerTimeType.Stride, scheduler: S, latest: Bool) -> Publishers.Throttle<Self, S>](publisher/throttle(for:scheduler:latest:).md)
+- [func throttle<S>(for: S.SchedulerTimeType.Stride, scheduler: S, latest: Bool) -> Publishers.Throttle<Self, S>](./throttle%28for,scheduler,latest%29.md)
   Publishes either the most-recent or first element published by the upstream publisher in the specified time interval.
-- [func timeout<S>(S.SchedulerTimeType.Stride, scheduler: S, options: S.SchedulerOptions?, customError: (() -> Self.Failure)?) -> Publishers.Timeout<Self, S>](publisher/timeout(_:scheduler:options:customerror:).md)
+- [func timeout<S>(S.SchedulerTimeType.Stride, scheduler: S, options: S.SchedulerOptions?, customError: (() -> Self.Failure)?) -> Publishers.Timeout<Self, S>](./timeout%28_,scheduler,options,customerror%29.md)
   Terminates publishing if the upstream publisher exceeds the specified time interval without producing an element.
 
 

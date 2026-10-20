@@ -1,7 +1,8 @@
 # upgradeKnownHostsToHTTPS
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the web view should automatically upgrade supported HTTP requests to HTTPS.
 

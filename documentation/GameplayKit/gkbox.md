@@ -1,7 +1,8 @@
 # GKBox
 
 **Framework**: GameplayKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The definition of an axis-aligned rectangular bounding volume addressed by the tree.
 
@@ -19,22 +20,26 @@ The definition of an axis-aligned rectangular bounding volume addressed by the t
 struct GKBox
 ```
 
+```c
+struct GKBox;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](gkbox/init.md)
-- [init(boxMin: vector_float3, boxMax: vector_float3)](gkbox/init(boxmin:boxmax:).md)
+- [init()](./gkbox/init%28%29.md)
+- [init(boxMin: vector_float3, boxMax: vector_float3)](./gkbox/init%28boxmin,boxmax%29.md)
 ### Instance Properties
-- [var boxMax: vector_float3](gkbox/boxmax.md)
+- [var boxMax: vector_float3](./gkbox/boxmax.md)
   The corner of the box with the highest coordinate values (in most coordinate systems, the near-upper-right corner).
-- [var boxMin: vector_float3](gkbox/boxmin.md)
+- [var boxMin: vector_float3](./gkbox/boxmin.md)
   The corner of the box with the lowest coordinate values (in most coordinate systems, the far-lower-left corner).
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

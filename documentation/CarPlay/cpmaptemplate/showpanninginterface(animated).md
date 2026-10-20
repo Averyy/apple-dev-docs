@@ -1,7 +1,8 @@
 # showPanningInterface(animated:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Shows the panning interface on the map.
 
@@ -16,6 +17,10 @@ Shows the panning interface on the map.
 func showPanningInterface(animated: Bool)
 ```
 
+```objc
+- (void) showPanningInterfaceAnimated:(BOOL) animated;
+```
+
 #### Discussion
 
 Calling this method while displaying the panning interface has no effect.
@@ -28,9 +33,10 @@ While showing the panning interface, the system hides all map buttons. The syste
 
 ## See Also
 
-- [func dismissPanningInterface(animated: Bool)](cpmaptemplate/dismisspanninginterface(animated:).md)
+### Panning the Map
+- [func dismissPanningInterface(animated: Bool)](./dismisspanninginterface%28animated%29.md)
   Dismisses the panning interface.
-- [var isPanningInterfaceVisible: Bool](cpmaptemplate/ispanninginterfacevisible.md)
+- [var isPanningInterfaceVisible: Bool](./ispanninginterfacevisible.md)
   A Boolean value that indicates whether the map template is displaying the panning interface.
 
 

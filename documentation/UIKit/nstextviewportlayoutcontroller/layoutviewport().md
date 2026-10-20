@@ -1,7 +1,8 @@
 # layoutViewport()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs layout in the viewport.
 
@@ -18,19 +19,24 @@ Performs layout in the viewport.
 func layoutViewport()
 ```
 
+```objc
+- (void) layoutViewport;
+```
+
 ## Mentions
 
-- [Managing viewport layout and attachment reuse in text views](managing-viewport-layout-and-attachment-reuse-in-a-text-view-subclass.md)
+- [Managing viewport layout and attachment reuse in text views](../managing-viewport-layout-and-attachment-reuse-in-a-text-view-subclass.md)
 
 ## See Also
 
-- [var viewportBounds: CGRect](nstextviewportlayoutcontroller/viewportbounds.md)
+### Accessing the viewport characteristics
+- [var viewportBounds: CGRect](./viewportbounds.md)
   Returns the visible bounds of the view, plus the overdraw area.
-- [var viewportRange: NSTextRange?](nstextviewportlayoutcontroller/viewportrange.md)
+- [var viewportRange: NSTextRange?](./viewportrange.md)
   Returns the text range of the current viewport layout.
-- [func adjustViewport(byVerticalOffset: CGFloat)](nstextviewportlayoutcontroller/adjustviewport(byverticaloffset:).md)
+- [func adjustViewport(byVerticalOffset: CGFloat)](./adjustviewport%28byverticaloffset%29.md)
   Adjusts the viewport rect by the specified offset if needed.
-- [func relocateViewport(to: any NSTextLocation) -> CGFloat](nstextviewportlayoutcontroller/relocateviewport(to:).md)
+- [func relocateViewport(to: any NSTextLocation) -> CGFloat](./relocateviewport%28to%29.md)
   Relocates the viewport to the location you specify.
 
 

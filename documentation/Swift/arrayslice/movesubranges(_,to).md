@@ -1,7 +1,8 @@
 # moveSubranges(_:to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves the elements in the given subranges to just before the element at the specified index.
 
@@ -37,7 +38,7 @@ let rangeOfUppercase = letters.moveSubranges(uppercaseRanges, to: 10)
 // rangeOfUppercase == 5..<14
 ```
 
-> **Note**: O(*n* log *n*) where *n* is the length of the collection.
+> **Complexity**: O(*n* log *n*) where *n* is the length of the collection.
 
 ## Parameters
 

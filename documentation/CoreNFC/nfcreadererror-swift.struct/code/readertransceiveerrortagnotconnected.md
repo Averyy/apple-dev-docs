@@ -1,7 +1,8 @@
 # NFCReaderError.Code.readerTransceiveErrorTagNotConnected
 
 **Framework**: Core NFC  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The tag isn’t in the connected state.
 
@@ -16,27 +17,32 @@ The tag isn’t in the connected state.
 case readerTransceiveErrorTagNotConnected
 ```
 
+```c
+NFCReaderTransceiveErrorTagNotConnected
+```
+
 ## See Also
 
-- [NFCReaderError.Code.readerTransceiveErrorRetryExceeded](nfcreadererror-swift.struct/code/readertransceiveerrorretryexceeded.md)
+### Transceive Errors
+- [NFCReaderError.Code.readerTransceiveErrorRetryExceeded](./readertransceiveerrorretryexceeded.md)
   Too many retries have occurred.
-- [NFCReaderError.Code.readerTransceiveErrorTagConnectionLost](nfcreadererror-swift.struct/code/readertransceiveerrortagconnectionlost.md)
+- [NFCReaderError.Code.readerTransceiveErrorTagConnectionLost](./readertransceiveerrortagconnectionlost.md)
   The reader lost the connection to the tag.
-- [NFCReaderError.Code.readerTransceiveErrorTagResponseError](nfcreadererror-swift.struct/code/readertransceiveerrortagresponseerror.md)
+- [NFCReaderError.Code.readerTransceiveErrorTagResponseError](./readertransceiveerrortagresponseerror.md)
   The tag has responded with an error.
-- [NFCReaderError.Code.readerTransceiveErrorSessionInvalidated](nfcreadererror-swift.struct/code/readertransceiveerrorsessioninvalidated.md)
+- [NFCReaderError.Code.readerTransceiveErrorSessionInvalidated](./readertransceiveerrorsessioninvalidated.md)
   The reader session is invalid.
-- [NFCReaderError.Code.readerTransceiveErrorPacketTooLong](nfcreadererror-swift.struct/code/readertransceiveerrorpackettoolong.md)
+- [NFCReaderError.Code.readerTransceiveErrorPacketTooLong](./readertransceiveerrorpackettoolong.md)
   The packet length exceeds the limit supported by the tag.
-- [NFCReaderError.Code.readerTransceiveErrorRetryExceeded](nfcreadererror-swift.struct/code/readertransceiveerrorretryexceeded.md)
+- [NFCReaderError.Code.readerTransceiveErrorRetryExceeded](./readertransceiveerrorretryexceeded.md)
   Too many retries have occurred.
-- [NFCReaderError.Code.readerTransceiveErrorTagConnectionLost](nfcreadererror-swift.struct/code/readertransceiveerrortagconnectionlost.md)
+- [NFCReaderError.Code.readerTransceiveErrorTagConnectionLost](./readertransceiveerrortagconnectionlost.md)
   The reader lost the connection to the tag.
-- [NFCReaderError.Code.readerTransceiveErrorTagResponseError](nfcreadererror-swift.struct/code/readertransceiveerrortagresponseerror.md)
+- [NFCReaderError.Code.readerTransceiveErrorTagResponseError](./readertransceiveerrortagresponseerror.md)
   The tag has responded with an error.
-- [NFCReaderError.Code.readerTransceiveErrorSessionInvalidated](nfcreadererror-swift.struct/code/readertransceiveerrorsessioninvalidated.md)
+- [NFCReaderError.Code.readerTransceiveErrorSessionInvalidated](./readertransceiveerrorsessioninvalidated.md)
   The reader session is invalid.
-- [NFCReaderError.Code.readerTransceiveErrorPacketTooLong](nfcreadererror-swift.struct/code/readertransceiveerrorpackettoolong.md)
+- [NFCReaderError.Code.readerTransceiveErrorPacketTooLong](./readertransceiveerrorpackettoolong.md)
   The packet length exceeds the limit supported by the tag.
 
 

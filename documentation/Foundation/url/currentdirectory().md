@@ -1,7 +1,8 @@
 # currentDirectory()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the working directory of the current process.
 
@@ -26,9 +27,10 @@ Calling this method issues a `getcwd` system call. This method’s return value 
 
 ## See Also
 
-- [static var homeDirectory: URL](url/homedirectory.md)
+### Accessing home and user directories
+- [static var homeDirectory: URL](./homedirectory.md)
   The home directory for the current user.
-- [static func homeDirectory(forUser: String) -> URL?](url/homedirectory(foruser:).md)
+- [static func homeDirectory(forUser: String) -> URL?](./homedirectory%28foruser%29.md)
   Returns the home directory for the specified user.
 
 

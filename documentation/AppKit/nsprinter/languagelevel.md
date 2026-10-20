@@ -1,17 +1,22 @@
 # languageLevel
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The PostScript language level recognized by the printer.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var languageLevel: Int { get }
+```
+
+```objc
+@property (readonly) NSInteger languageLevel;
 ```
 
 #### Return Value
@@ -20,9 +25,10 @@ The PostScript language level. The value is 0 if the receiver is not a PostScrip
 
 ## See Also
 
-- [func pageSize(forPaper: NSPrinter.PaperName) -> NSSize](nsprinter/pagesize(forpaper:).md)
+### Getting Page and Printer Information
+- [func pageSize(forPaper: NSPrinter.PaperName) -> NSSize](./pagesize%28forpaper%29.md)
   Returns the size of the page for the specified paper type.
-- [NSPrinter.PaperName](nsprinter/papername.md)
+- [NSPrinter.PaperName](./papername.md)
   The type you use to specify the name of a type of paper.
 
 

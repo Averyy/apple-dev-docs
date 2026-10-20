@@ -1,7 +1,8 @@
 # TKSmartCardSlot.State.empty
 
 **Framework**: CryptoTokenKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 9.0+
@@ -18,16 +19,21 @@
 case empty
 ```
 
+```c
+TKSmartCardSlotStateEmpty
+```
+
 #### Discussion
 
 The Smart Card reader slot is empty; no card is inserted.
 
 ## See Also
 
-- [TKSmartCardSlot.State.missing](tksmartcardslot/state-swift.enum/missing.md)
-- [TKSmartCardSlot.State.probing](tksmartcardslot/state-swift.enum/probing.md)
-- [TKSmartCardSlot.State.muteCard](tksmartcardslot/state-swift.enum/mutecard.md)
-- [TKSmartCardSlot.State.validCard](tksmartcardslot/state-swift.enum/validcard.md)
+### Constants
+- [TKSmartCardSlot.State.missing](./missing.md)
+- [TKSmartCardSlot.State.probing](./probing.md)
+- [TKSmartCardSlot.State.muteCard](./mutecard.md)
+- [TKSmartCardSlot.State.validCard](./validcard.md)
 
 
 ---

@@ -1,18 +1,19 @@
 # reportError
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional error-reporting routine.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ An optional error-reporting routine.
 var reportError: ((UnsafePointer<CChar>) -> Void)?
 ```
 
+```c
+void (*)(const char *) reportError;
+```
+
 ## See Also
 
-- [var atol: Double](sparsecgoptions/atol.md)
+### Inspecting CG Options
+- [var atol: Double](./atol.md)
   The absolute convergence tolerance.
-- [var maxIterations: Int32](sparsecgoptions/maxiterations.md)
+- [var maxIterations: Int32](./maxiterations.md)
   The maximum number of iterations to perform.
-- [var reportStatus: ((UnsafePointer<CChar>) -> Void)?](sparsecgoptions/reportstatus.md)
+- [var reportStatus: ((UnsafePointer<CChar>) -> Void)?](./reportstatus.md)
   The function to report status.
-- [var rtol: Double](sparsecgoptions/rtol.md)
+- [var rtol: Double](./rtol.md)
   The relative convergence tolerance.
 
 

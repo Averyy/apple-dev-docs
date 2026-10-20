@@ -1,23 +1,28 @@
 # CFStringGetTypeID()
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the type identifier for the CFString opaque type.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFStringGetTypeID() -> CFTypeID
+```
+
+```c
+extern CFTypeID CFStringGetTypeID();
 ```
 
 #### Return Value
@@ -30,7 +35,8 @@ CFMutableString objects have the same type identifier as CFString objects.
 
 ## See Also
 
-- [func CFShowStr(CFString!)](cfshowstr(_:).md)
+### Getting String Properties
+- [func CFShowStr(CFString!)](./cfshowstr%28_%29.md)
   Prints the attributes of a string during debugging.
 
 

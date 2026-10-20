@@ -1,7 +1,8 @@
 # pickerView(_:titleForRow:forComponent:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called by the picker view when it needs the title to use for a given row in a given component.
 
@@ -17,13 +18,17 @@ Called by the picker view when it needs the title to use for a given row in a gi
 optional func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?
 ```
 
+```objc
+- (NSString *) pickerView:(UIPickerView *) pickerView titleForRow:(NSInteger) row forComponent:(NSInteger) component;
+```
+
 #### Return Value
 
 The string to use as the title of the indicated component row.
 
 #### Discussion
 
-If you implement both this method and the [`pickerView(_:attributedTitleForRow:forComponent:)`](uipickerviewdelegate/pickerview(_:attributedtitleforrow:forcomponent:).md) method, the picker view prefers the [`pickerView(_:attributedTitleForRow:forComponent:)`](uipickerviewdelegate/pickerview(_:attributedtitleforrow:forcomponent:).md) method. However, if that method returns `nil`, the picker view falls back to using the string returned by this method.
+If you implement both this method and the [`pickerView(_:attributedTitleForRow:forComponent:)`](./pickerview%28_,attributedtitleforrow,forcomponent%29.md) method, the picker view prefers the [`pickerView(_:attributedTitleForRow:forComponent:)`](./pickerview%28_,attributedtitleforrow,forcomponent%29.md) method. However, if that method returns `nil`, the picker view falls back to using the string returned by this method.
 
 ## Parameters
 
@@ -33,9 +38,10 @@ If you implement both this method and the [`pickerView(_:attributedTitleForRow:f
 
 ## See Also
 
-- [func pickerView(UIPickerView, attributedTitleForRow: Int, forComponent: Int) -> NSAttributedString?](uipickerviewdelegate/pickerview(_:attributedtitleforrow:forcomponent:).md)
+### Setting the content of component rows
+- [func pickerView(UIPickerView, attributedTitleForRow: Int, forComponent: Int) -> NSAttributedString?](./pickerview%28_,attributedtitleforrow,forcomponent%29.md)
   Called by the picker view when it needs the styled title to use for a given row in a given component.
-- [func pickerView(UIPickerView, viewForRow: Int, forComponent: Int, reusing: UIView?) -> UIView](uipickerviewdelegate/pickerview(_:viewforrow:forcomponent:reusing:).md)
+- [func pickerView(UIPickerView, viewForRow: Int, forComponent: Int, reusing: UIView?) -> UIView](./pickerview%28_,viewforrow,forcomponent,reusing%29.md)
   Called by the picker view when it needs the view to use for a given row in a given component.
 
 

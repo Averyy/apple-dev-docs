@@ -1,14 +1,15 @@
 # stopTimer
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual void stopTimer(void);
 ```
 

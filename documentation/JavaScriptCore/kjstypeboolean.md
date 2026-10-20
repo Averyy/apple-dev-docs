@@ -1,7 +1,8 @@
 # kJSTypeBoolean
 
 **Framework**: JavaScriptCore  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A primitive Boolean value.
 
@@ -19,23 +20,28 @@ A primitive Boolean value.
 var kJSTypeBoolean: JSType { get }
 ```
 
+```c
+kJSTypeBoolean
+```
+
 #### Discussion
 
-This value can be [`true`](https://developer.apple.com/documentation/swift/true) or [`false`](https://developer.apple.com/documentation/swift/false).
+This value can be [`true`](../Swift/true.md) or [`false`](../Swift/false.md).
 
 ## See Also
 
-- [var kJSTypeUndefined: JSType](kjstypeundefined.md)
+### Constants
+- [var kJSTypeUndefined: JSType](./kjstypeundefined.md)
   The unique undefined value.
-- [var kJSTypeNull: JSType](kjstypenull.md)
+- [var kJSTypeNull: JSType](./kjstypenull.md)
   The unique null value.
-- [var kJSTypeNumber: JSType](kjstypenumber.md)
+- [var kJSTypeNumber: JSType](./kjstypenumber.md)
   A primitive number value.
-- [var kJSTypeString: JSType](kjstypestring.md)
+- [var kJSTypeString: JSType](./kjstypestring.md)
   A primitive string value.
-- [var kJSTypeObject: JSType](kjstypeobject.md)
+- [var kJSTypeObject: JSType](./kjstypeobject.md)
   An object value.
-- [var kJSTypeSymbol: JSType](kjstypesymbol.md)
+- [var kJSTypeSymbol: JSType](./kjstypesymbol.md)
   A primitive symbol value.
 
 

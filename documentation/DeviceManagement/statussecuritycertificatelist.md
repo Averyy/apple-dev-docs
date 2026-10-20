@@ -1,7 +1,8 @@
 # StatusSecurityCertificateList
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The status item that lists the device’s managed certificates.
 
@@ -16,13 +17,13 @@ The status item that lists the device’s managed certificates.
 
 ## Declaration
 
-```swift
+```
 object StatusSecurityCertificateList
 ```
 
 #### Discussion
 
-##### Status Item Availability
+##### Status item availability
 
 |  |  |
 | --- | --- |
@@ -33,7 +34,7 @@ object StatusSecurityCertificateList
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
 
-##### Status Item Example
+##### Status item example
 
 **New or updated certificate**:
 
@@ -79,7 +80,7 @@ Reports a removed certificate.
 ## Topics
 
 ### Objects
-- [object StatusSecurityCertificateListCertificateObject](statussecuritycertificatelistcertificateobject.md)
+- [object StatusSecurityCertificateListCertificateObject](./statussecuritycertificatelistcertificateobject.md)
   A security certificate.
 
 ## Properties
@@ -88,13 +89,14 @@ Reports a removed certificate.
 
 ## See Also
 
-- [object StatusPasscodeCompliance](statuspasscodecompliance.md)
+### Passcode and security items
+- [object StatusPasscodeCompliance](./statuspasscodecompliance.md)
   The status item that reports the device’s passcode compliance.
-- [object StatusPasscodeIsPresent](statuspasscodeispresent.md)
+- [object StatusPasscodeIsPresent](./statuspasscodeispresent.md)
   The status item that reports whether the device has a passcode.
-- [object StatusDiskManagementFileVaultEnabled](statusdiskmanagementfilevaultenabled.md)
+- [object StatusDiskManagementFileVaultEnabled](./statusdiskmanagementfilevaultenabled.md)
   The status item that reports whether FileVault is enabled.
-- [object StatusSecurityLockdownMode](statussecuritylockdownmode.md)
+- [object StatusSecurityLockdownMode](./statussecuritylockdownmode.md)
   The status item that reports the device’s Lockdown Mode state.
 
 

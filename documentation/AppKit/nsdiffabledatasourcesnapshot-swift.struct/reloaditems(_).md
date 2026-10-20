@@ -1,7 +1,8 @@
 # reloadItems(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reloads the data within the specified items in the snapshot.
 
@@ -20,7 +21,8 @@ mutating func reloadItems(_ identifiers: [ItemIdentifierType])
 
 ## See Also
 
-- [func reloadSections([SectionIdentifierType])](nsdiffabledatasourcesnapshot-swift.struct/reloadsections(_:).md)
+### Reloading Data
+- [func reloadSections([SectionIdentifierType])](./reloadsections%28_%29.md)
   Reloads the data within the specified sections of the snapshot.
 
 

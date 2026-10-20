@@ -1,7 +1,8 @@
 # countdownDuration
 
 **Framework**: AlarmKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time left before an alert, in seconds.
 
@@ -22,13 +23,14 @@ When set to a non-nil value, the system shows the countdown in the Lock Screen f
 
 ## See Also
 
-- [struct CountdownDuration](alarm/countdownduration-swift.struct.md)
+### Defining a countdown duration
+- [struct CountdownDuration](./countdownduration-swift.struct.md)
   An object that defines the durations used in an alarm that has a countdown.
-- [var id: UUID](alarm/id.md)
+- [var id: UUID](./id.md)
   The unique identifier of the alarm.
-- [Alarm.State](alarm/state-swift.enum.md)
+- [Alarm.State](./state-swift.enum.md)
   An enum that lists all possible states of an alarm.
-- [var state: Alarm.State](alarm/state-swift.property.md)
+- [var state: Alarm.State](./state-swift.property.md)
   The current state of the alarm.
 
 

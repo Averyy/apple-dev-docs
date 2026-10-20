@@ -1,17 +1,22 @@
 # columnConfigurationDidChangeNotification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Notifies the delegate when the width of a browser column has changed.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class let columnConfigurationDidChangeNotification: NSNotification.Name
+```
+
+```c
+extern NSNotificationName NSBrowserColumnConfigurationDidChangeNotification;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ The notification object is the browser whose column sizes need to be made persis
 
 ## See Also
 
-- [func browserColumnConfigurationDidChange(Notification)](nsbrowserdelegate/browsercolumnconfigurationdidchange(_:).md)
+### Related Documentation
+- [func browserColumnConfigurationDidChange(Notification)](../nsbrowserdelegate/browsercolumnconfigurationdidchange%28_%29.md)
   Used by clients to implement their own column width persistence.
 
 

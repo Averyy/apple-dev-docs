@@ -1,7 +1,8 @@
 # HPKE.AEAD.chaChaPoly
 
 **Framework**: Apple CryptoKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A ChaCha20 stream cipher with the Poly1305 message authentication code.
 

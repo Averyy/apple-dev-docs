@@ -1,7 +1,8 @@
 # characterBoxes
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of detected individual character bounding boxes.
 
@@ -19,9 +20,13 @@ An array of detected individual character bounding boxes.
 var characterBoxes: [VNRectangleObservation]? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSArray<VNRectangleObservation *> * characterBoxes;
+```
+
 #### Discussion
 
-If the associated [`VNDetectTextRectanglesRequest`](vndetecttextrectanglesrequest.md) request indicates interest in character boxes by setting the option `reportCharacterBoxes` to [`true`](https://developer.apple.com/documentation/swift/true), this property is non-`nil`. If no characters are found, it remains empty.
+If the associated [`VNDetectTextRectanglesRequest`](../vndetecttextrectanglesrequest.md) request indicates interest in character boxes by setting the option `reportCharacterBoxes` to [`true`](../../Swift/true.md), this property is non-`nil`. If no characters are found, it remains empty.
 
 
 ---

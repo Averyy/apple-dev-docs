@@ -1,9 +1,10 @@
 # kMDItemPixelCount
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-The total number of pixels in the contents. Same as [`kMDItemPixelWidth`](kmditempixelwidth.md) x [`kMDItemPixelHeight`](kmditempixelheight.md). A CFNumber.
+The total number of pixels in the contents. Same as [`kMDItemPixelWidth`](./kmditempixelwidth.md) x [`kMDItemPixelHeight`](./kmditempixelheight.md). A CFNumber.
 
 **Availability**:
 - macOS 10.6+
@@ -12,6 +13,10 @@ The total number of pixels in the contents. Same as [`kMDItemPixelWidth`](kmdite
 
 ```swift
 let kMDItemPixelCount: CFString!
+```
+
+```c
+const CFStringRef kMDItemPixelCount;
 ```
 
 

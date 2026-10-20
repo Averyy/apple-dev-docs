@@ -1,7 +1,8 @@
 # trimmingPrefix(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a subsequence of this collection by removing the elements matching the regex from the start, where the regex is created by the given closure.
 
@@ -19,6 +20,8 @@ Returns a subsequence of this collection by removing the elements matching the r
 ```swift
 func trimmingPrefix(@RegexComponentBuilder _ content: () -> some RegexComponent) -> Self.SubSequence
 ```
+
+Available when `SubSequence` is `Substring`.
 
 #### Return Value
 

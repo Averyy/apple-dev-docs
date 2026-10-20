@@ -1,7 +1,8 @@
 # IntentConfiguration
 
 **Framework**: WidgetKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object describing the content of a widget that uses a custom intent definition to provide user-configurable options.
 
@@ -41,85 +42,86 @@ struct CharacterDetailWidget: Widget {
 }
 ```
 
-Every widget has a unique `kind`, a string that you choose. You use this string to identify your widget when reloading its timeline with [`WidgetCenter`](widgetcenter.md).
+Every widget has a unique `kind`, a string that you choose. You use this string to identify your widget when reloading its timeline with [`WidgetCenter`](./widgetcenter.md).
 
 The `intent` is a custom SiriKit intent definition containing user-editable parameters.
 
 The timeline provider is an object that determines the timeline for refreshing your widget. Providing future dates for updating your widget allows the system to optimize the refresh process.
 
-The content closure contains the SwiftUI views that WidgetKit needs to render the widget. When WidgetKit invokes the content closure, it passes a timeline entry created by the widget provider’s [`getSnapshot(for:in:completion:)`](intenttimelineprovider/getsnapshot(for:in:completion:).md) or [`getTimeline(for:in:completion:)`](intenttimelineprovider/gettimeline(for:in:completion:).md) method.
+The content closure contains the SwiftUI views that WidgetKit needs to render the widget. When WidgetKit invokes the content closure, it passes a timeline entry created by the widget provider’s [`getSnapshot(for:in:completion:)`](./intenttimelineprovider/getsnapshot%28for,in,completion%29.md) or [`getTimeline(for:in:completion:)`](./intenttimelineprovider/gettimeline%28for,in,completion%29.md) method.
 
 Modifiers let you specify the families your widget supports, and the details shown when users add or edit their widgets.
 
 ## Topics
 
 ### Creating a widget configuration
-- [init<Provider>(kind: String, intent: Intent.Type, provider: Provider, content: (Provider.Entry) -> Content)](intentconfiguration/init(kind:intent:provider:content:).md)
+- [init<Provider>(kind: String, intent: Intent.Type, provider: Provider, content: (Provider.Entry) -> Content)](./intentconfiguration/init%28kind,intent,provider,content%29.md)
   Creates a configuration for a widget by using a custom intent definition to provide user-configurable options.
-- [var body: Self.Body](../swiftui/widgetconfiguration/body-swift.property.md)
+- [var body: Self.Body](../SwiftUI/widgetconfiguration/body-swift.property.md)
   The content and behavior of this widget.
 ### Setting the display name
 - [func configurationDisplayName<S>(S) -> some WidgetConfiguration
-](../swiftui/widgetconfiguration/configurationdisplayname(_:)-2c3zv.md)
+](../SwiftUI/widgetconfiguration/configurationdisplayname%28_%29-2c3zv.md)
   Sets the name shown for a widget when a user adds or edits it using the specified string.
 - [func configurationDisplayName(Text) -> some WidgetConfiguration
-](../swiftui/widgetconfiguration/configurationdisplayname(_:)-3sbn4.md)
+](../SwiftUI/widgetconfiguration/configurationdisplayname%28_%29-3sbn4.md)
   Sets the name shown for a widget when a user adds or edits it using the contents of a text view.
-- [func configurationDisplayName(LocalizedStringKey) -> some WidgetConfiguration\n](../swiftui/widgetconfiguration/configurationdisplayname(_:)-4v9q.md)
+- [func configurationDisplayName(LocalizedStringKey) -> some WidgetConfiguration\n](../SwiftUI/widgetconfiguration/configurationdisplayname%28_%29-4v9q.md)
   Sets the localized name shown for a widget when a user adds or edits the widget.
 ### Setting the description
 - [func description(Text) -> some WidgetConfiguration
-](../swiftui/widgetconfiguration/description(_:)-1bvuj.md)
+](../SwiftUI/widgetconfiguration/description%28_%29-1bvuj.md)
   Sets the description shown for a widget when a user adds or edits it using the contents of a text view.
 - [func description<S>(S) -> some WidgetConfiguration
-](../swiftui/widgetconfiguration/description(_:)-2bfr.md)
+](../SwiftUI/widgetconfiguration/description%28_%29-2bfr.md)
   Sets the description shown for a widget when a user adds or edits it using the specified string.
 - [func description(LocalizedStringKey) -> some WidgetConfiguration
-](../swiftui/widgetconfiguration/description(_:)-4q9pa.md)
+](../SwiftUI/widgetconfiguration/description%28_%29-4q9pa.md)
   Sets the localized description shown for a widget when a user adds or edits the widget.
 ### Setting the supported families
 - [func supportedFamilies([WidgetFamily]) -> some WidgetConfiguration
-](../swiftui/widgetconfiguration/supportedfamilies(_:).md)
+](../SwiftUI/widgetconfiguration/supportedfamilies%28_%29.md)
   Sets the sizes that a widget supports.
 ### Handling background network requests
 - [func backgroundTask<D, R>(BackgroundTask<D, R>, action: (D) async -> R) -> some WidgetConfiguration
-](../swiftui/widgetconfiguration/backgroundtask(_:action:).md)
+](../SwiftUI/widgetconfiguration/backgroundtask%28_,action%29.md)
   Runs the given action when the system provides a background task.
 - [func onBackgroundURLSessionEvents(matching: ((String) -> Bool)?, (String, () -> Void) -> Void) -> some WidgetConfiguration
-](../swiftui/widgetconfiguration/onbackgroundurlsessionevents(matching:_:)-2e152.md)
+](../SwiftUI/widgetconfiguration/onbackgroundurlsessionevents%28matching,_%29-2e152.md)
   Adds an action to perform when events related to a URL session identified by a closure are waiting to be processed.
 - [func onBackgroundURLSessionEvents(matching: String, (String, () -> Void) -> Void) -> some WidgetConfiguration
-](../swiftui/widgetconfiguration/onbackgroundurlsessionevents(matching:_:)-fw6x.md)
+](../SwiftUI/widgetconfiguration/onbackgroundurlsessionevents%28matching,_%29-fw6x.md)
   Adds an action to perform when events related to a URL session with a matching identifier are waiting to be processed.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [WidgetConfiguration](../swiftui/widgetconfiguration.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [WidgetConfiguration](../SwiftUI/widgetconfiguration.md)
 
 ## See Also
 
-- [Increasing the visibility of widgets in Smart Stacks](widget-suggestions-in-smart-stacks.md)
+### Smart Stacks
+- [Increasing the visibility of widgets in Smart Stacks](./widget-suggestions-in-smart-stacks.md)
   Provide contextual information and donate intents to the system to make sure your widget appears prominently in Smart Stacks.
-- [struct TimelineEntryRelevance](timelineentryrelevance.md)
+- [struct TimelineEntryRelevance](./timelineentryrelevance.md)
   An object that describes the relative importance of a timeline entry compared to other entries in the current and past timelines.
-- [struct RelevanceConfiguration](relevanceconfiguration.md)
+- [struct RelevanceConfiguration](./relevanceconfiguration.md)
   A type that describes the content of a widget that uses relevance clues.
-- [protocol RelevanceEntriesProvider](relevanceentriesprovider.md)
+- [protocol RelevanceEntriesProvider](./relevanceentriesprovider.md)
   A type that provides the content for a widget that uses relevance clues to display information in the Smart Stack.
-- [protocol RelevanceEntry](relevanceentry.md)
+- [protocol RelevanceEntry](./relevanceentry.md)
   A type that specifies the information to render a widget at a specific relevance configuration.
-- [struct WidgetRelevance](widgetrelevance.md)
+- [struct WidgetRelevance](./widgetrelevance.md)
   A type collecting the relevances for a widget kind.
-- [struct WidgetRelevanceAttribute](widgetrelevanceattribute.md)
+- [struct WidgetRelevanceAttribute](./widgetrelevanceattribute.md)
   A type that describes when a specific widget could be relevant.
-- [struct WidgetRelevanceGroup](widgetrelevancegroup.md)
+- [struct WidgetRelevanceGroup](./widgetrelevancegroup.md)
   A type for configuring widget behavior in the watchOS Smart Stack.
-- [struct AppIntentRecommendation](appintentrecommendation.md)
+- [struct AppIntentRecommendation](./appintentrecommendation.md)
   An object that describes a recommended intent configuration for a user-customizable widget.
-- [struct IntentRecommendation](intentrecommendation.md)
+- [struct IntentRecommendation](./intentrecommendation.md)
   An object that describes a recommended intent configuration for a user-customizable widget.
 
 

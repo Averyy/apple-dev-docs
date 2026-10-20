@@ -1,7 +1,8 @@
 # HMCharacteristicValueAirParticulateSize.size2_5
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The air particulate size of 2.5 micrometers.
 
@@ -19,9 +20,14 @@ The air particulate size of 2.5 micrometers.
 case size2_5
 ```
 
+```c
+HMCharacteristicValueAirParticulateSize2_5
+```
+
 ## See Also
 
-- [HMCharacteristicValueAirParticulateSize.size10](hmcharacteristicvalueairparticulatesize/size10.md)
+### Air Particulate Sizes
+- [HMCharacteristicValueAirParticulateSize.size10](./size10.md)
   The air particulate size of 10 micrometers.
 
 

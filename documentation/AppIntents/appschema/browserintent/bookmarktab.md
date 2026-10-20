@@ -1,7 +1,8 @@
 # bookmarkTab
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An intent schema that creates a new bookmark for this tab.
 
@@ -20,7 +21,7 @@ var bookmarkTab: some AppSchemaIntent { get }
 
 #### Discussion
 
-To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `browser` domain and one of your app’s actions matches the `bookmarkTab` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent( .browser.bookmarkTab)` Swift macro. To make your app work with Siri, see [`Apple Intelligence and Siri AI`](apple-intelligence-and-siri-ai.md).
+To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `browser` domain and one of your app’s actions matches the `bookmarkTab` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent( .browser.bookmarkTab)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 
 The following example shows an intent that conforms to the `bookmarkTab` schema:
 
@@ -40,33 +41,34 @@ The schema supports the following system experiences:
 
 - Shortcuts
 
-For more information about the App Intents framework and the experiences it supports, see [`Getting started with the App Intents framework`](getting-started-with-the-app-intents-framework.md).
+For more information about the App Intents framework and the experiences it supports, see [Getting started with the App Intents framework](../../getting-started-with-the-app-intents-framework.md).
 
 ## See Also
 
-- [var bookmarkURL: some AppSchemaIntent](appschema/browserintent/bookmarkurl.md)
+### Actions
+- [var bookmarkURL: some AppSchemaIntent](./bookmarkurl.md)
   An intent schema that creates a new bookmark for a given URL.
-- [var clearHistory: some AppSchemaIntent](appschema/browserintent/clearhistory.md)
+- [var clearHistory: some AppSchemaIntent](./clearhistory.md)
   An intent schema that clears history, and related cookies and other website data.
-- [var closeTabs: some AppSchemaIntent](appschema/browserintent/closetabs.md)
+- [var closeTabs: some AppSchemaIntent](./closetabs.md)
   An intent schema that closes the selected tabs.
-- [var closeWindows: some AppSchemaIntent](appschema/browserintent/closewindows.md)
+- [var closeWindows: some AppSchemaIntent](./closewindows.md)
   An intent schema that closes the selected windows.
-- [var createTab: some AppSchemaIntent](appschema/browserintent/createtab.md)
+- [var createTab: some AppSchemaIntent](./createtab.md)
   An intent schema that creates a new tab with a URL loaded, or blank if omitted.
-- [var createWindow: some AppSchemaIntent](appschema/browserintent/createwindow.md)
+- [var createWindow: some AppSchemaIntent](./createwindow.md)
   An intent schema that creates a new browser window.
-- [var deleteBookmarks: some AppSchemaIntent](appschema/browserintent/deletebookmarks.md)
+- [var deleteBookmarks: some AppSchemaIntent](./deletebookmarks.md)
   An intent schema that deletes the selected bookmarks.
-- [var findOnPage: some AppSchemaIntent](appschema/browserintent/findonpage.md)
+- [var findOnPage: some AppSchemaIntent](./findonpage.md)
   An intent schema that finds the given text on the selected tab.
-- [var openBookmark: some AppSchemaIntent](appschema/browserintent/openbookmark.md)
+- [var openBookmark: some AppSchemaIntent](./openbookmark.md)
   An intent schema that opens the specified bookmark.
-- [var openURLInTab: some AppSchemaIntent](appschema/browserintent/openurlintab.md)
+- [var openURLInTab: some AppSchemaIntent](./openurlintab.md)
   An intent schema that navigates a tab to the given URL.
-- [var switchTab: some AppSchemaIntent](appschema/browserintent/switchtab.md)
+- [var switchTab: some AppSchemaIntent](./switchtab.md)
   An intent schema that switches to an existing tab.
-- [AppSchema.BrowserIntent](appschema/browserintent.md)
+- [AppSchema.BrowserIntent](../browserintent.md)
   Identifies intent schemas in the browser domain.
 
 

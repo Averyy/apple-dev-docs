@@ -1,14 +1,15 @@
 # kernel_resource_sizes_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct kernel_resource_sizes *kernel_resource_sizes_t;
 ```
 

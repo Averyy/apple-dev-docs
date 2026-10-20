@@ -1,14 +1,15 @@
 # tEndpointUsageType
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum tEndpointUsageType : unsigned int {
     ...
 } tEndpointUsageType;
@@ -17,14 +18,14 @@ typedef enum tEndpointUsageType : unsigned int {
 ## Topics
 
 ### Constants
-- [kEndpointUsageTypeInterruptNotification](tendpointusagetype/kendpointusagetypeinterruptnotification.md)
-- [kEndpointUsageTypeInterruptPeriodic](tendpointusagetype/kendpointusagetypeinterruptperiodic.md)
-- [kEndpointUsageTypeInterruptReserved1](tendpointusagetype/kendpointusagetypeinterruptreserved1.md)
-- [kEndpointUsageTypeInterruptReserved2](tendpointusagetype/kendpointusagetypeinterruptreserved2.md)
-- [kEndpointUsageTypeIsocData](tendpointusagetype/kendpointusagetypeisocdata.md)
-- [kEndpointUsageTypeIsocFeedback](tendpointusagetype/kendpointusagetypeisocfeedback.md)
-- [kEndpointUsageTypeIsocImplicit](tendpointusagetype/kendpointusagetypeisocimplicit.md)
-- [kEndpointUsageTypeIsocReserved](tendpointusagetype/kendpointusagetypeisocreserved.md)
+- [kEndpointUsageTypeInterruptNotification](./tendpointusagetype/kendpointusagetypeinterruptnotification.md)
+- [kEndpointUsageTypeInterruptPeriodic](./tendpointusagetype/kendpointusagetypeinterruptperiodic.md)
+- [kEndpointUsageTypeInterruptReserved1](./tendpointusagetype/kendpointusagetypeinterruptreserved1.md)
+- [kEndpointUsageTypeInterruptReserved2](./tendpointusagetype/kendpointusagetypeinterruptreserved2.md)
+- [kEndpointUsageTypeIsocData](./tendpointusagetype/kendpointusagetypeisocdata.md)
+- [kEndpointUsageTypeIsocFeedback](./tendpointusagetype/kendpointusagetypeisocfeedback.md)
+- [kEndpointUsageTypeIsocImplicit](./tendpointusagetype/kendpointusagetypeisocimplicit.md)
+- [kEndpointUsageTypeIsocReserved](./tendpointusagetype/kendpointusagetypeisocreserved.md)
 
 
 ---

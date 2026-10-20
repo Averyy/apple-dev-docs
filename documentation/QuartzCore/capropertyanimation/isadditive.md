@@ -1,7 +1,8 @@
 # isAdditive
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines if the value specified by the animation is added to the current render tree value to produce the new render tree value.
 
@@ -19,15 +20,20 @@ Determines if the value specified by the animation is added to the current rende
 var isAdditive: Bool { get set }
 ```
 
+```objc
+@property (getter=isAdditive) BOOL additive;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the value specified by the animation will be added to the current render tree value of the property to produce the new render tree value. The addition function is type-dependent, e.g. for affine transforms the two matrices are concatenated. The default is [`false`](https://developer.apple.com/documentation/swift/false).
+If [`true`](../../Swift/true.md), the value specified by the animation will be added to the current render tree value of the property to produce the new render tree value. The addition function is type-dependent, e.g. for affine transforms the two matrices are concatenated. The default is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var isCumulative: Bool](capropertyanimation/iscumulative.md)
+### Property Value Calculation Behavior
+- [var isCumulative: Bool](./iscumulative.md)
   Determines if the value of the property is the value at the end of the previous repeat cycle, plus the value of the current repeat cycle.
-- [var valueFunction: CAValueFunction?](capropertyanimation/valuefunction.md)
+- [var valueFunction: CAValueFunction?](./valuefunction.md)
   An optional value function that is applied to interpolated values.
 
 

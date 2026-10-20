@@ -1,7 +1,8 @@
 # GameCenterChallengeLocalization.Relationships.Image.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a challenge.
 
@@ -10,14 +11,14 @@ The request body you use to update a challenge.
 
 ## Declaration
 
-```swift
+```
 object GameCenterChallengeLocalization.Relationships.Image.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterChallengeImages`
 
 
 ---

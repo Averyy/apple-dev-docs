@@ -1,12 +1,13 @@
 # headerTextColor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The color to use for text in header cells in table views and outline views.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The color to use for text in header cells in table views and outline views.
 class var headerTextColor: NSColor { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSColor * headerTextColor;
+```
+
 #### Return Value
 
-The system color used for text in header cells in table and outline views. For more information, see [`NSColor`](nscolor.md).
+The system color used for text in header cells in table and outline views. For more information, see [`NSColor`](../nscolor.md).
 
 ## See Also
 
-- [class var gridColor: NSColor](nscolor/gridcolor.md)
+### Table colors
+- [class var gridColor: NSColor](./gridcolor.md)
   The color to use for the optional gridlines, such as those in a table view.
-- [class var alternatingContentBackgroundColors: [NSColor]](nscolor/alternatingcontentbackgroundcolors.md)
+- [class var alternatingContentBackgroundColors: [NSColor]](./alternatingcontentbackgroundcolors.md)
   The colors to use for alternating content, typically found in table views and collection views.
 
 

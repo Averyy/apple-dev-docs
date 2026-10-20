@@ -1,14 +1,15 @@
 # uiomove64
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 int uiomove64(const __uint64_t cp, int n, struct uio *uio);
 ```
 

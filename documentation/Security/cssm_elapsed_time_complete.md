@@ -1,7 +1,8 @@
 # CSSM_ELAPSED_TIME_COMPLETE
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_ELAPSED_TIME_COMPLETE: Int { get }
+```
+
+```c
+CSSM_ELAPSED_TIME_COMPLETE
 ```
 
 

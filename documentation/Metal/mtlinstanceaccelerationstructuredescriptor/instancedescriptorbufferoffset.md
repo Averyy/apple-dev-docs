@@ -1,7 +1,8 @@
 # instanceDescriptorBufferOffset
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The offset, in bytes, to the descripton of the first instance.
 
@@ -19,17 +20,22 @@ The offset, in bytes, to the descripton of the first instance.
 var instanceDescriptorBufferOffset: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger instanceDescriptorBufferOffset;
+```
+
 #### Discussion
 
-The offset needs to be a multiple of 64 bytes. Check the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for potential alignment restrictions.
+The offset needs to be a multiple of 64 bytes. Check the [Metal feature set tables (PDF)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for potential alignment restrictions.
 
 ## See Also
 
-- [var instanceCount: Int](mtlinstanceaccelerationstructuredescriptor/instancecount.md)
+### Specifying the list of instances
+- [var instanceCount: Int](./instancecount.md)
   The number of instances in the instance descriptor buffer.
-- [var instanceDescriptorBuffer: (any MTLBuffer)?](mtlinstanceaccelerationstructuredescriptor/instancedescriptorbuffer.md)
+- [var instanceDescriptorBuffer: (any MTLBuffer)?](./instancedescriptorbuffer.md)
   A buffer that contains descriptions of each instance in the acceleration structure.
-- [var instanceDescriptorStride: Int](mtlinstanceaccelerationstructuredescriptor/instancedescriptorstride.md)
+- [var instanceDescriptorStride: Int](./instancedescriptorstride.md)
   The stride, in bytes, between instance descriptions.
 
 

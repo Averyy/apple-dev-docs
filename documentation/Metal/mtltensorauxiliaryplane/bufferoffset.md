@@ -2,9 +2,10 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
-The byte offset into [`buffer`](mtltensorauxiliaryplane/buffer.md) where this plane’s data begins, or `0` if no buffer was provided at initialization.
+The byte offset into [`buffer`](./buffer.md) where this plane’s data begins, or `0` if no buffer was provided at initialization.
 
 **Availability**:
 - iOS 27.0+
@@ -18,6 +19,10 @@ The byte offset into [`buffer`](mtltensorauxiliaryplane/buffer.md) where this pl
 
 ```swift
 var bufferOffset: Int { get }
+```
+
+```objc
+@property (readonly) NSUInteger bufferOffset;
 ```
 
 

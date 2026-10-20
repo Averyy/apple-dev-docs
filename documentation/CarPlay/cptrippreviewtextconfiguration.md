@@ -1,7 +1,8 @@
 # CPTripPreviewTextConfiguration
 
 **Framework**: CarPlay  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A configuration object for changing the button titles on a trip preview.
 
@@ -16,44 +17,49 @@ A configuration object for changing the button titles on a trip preview.
 class CPTripPreviewTextConfiguration
 ```
 
+```objc
+@interface CPTripPreviewTextConfiguration : NSObject
+```
+
 ## Topics
 
 ### Creating a Text Configuration Object
-- [init(startButtonTitle: String?, additionalRoutesButtonTitle: String?, overviewButtonTitle: String?)](cptrippreviewtextconfiguration/init(startbuttontitle:additionalroutesbuttontitle:overviewbuttontitle:).md)
+- [init(startButtonTitle: String?, additionalRoutesButtonTitle: String?, overviewButtonTitle: String?)](./cptrippreviewtextconfiguration/init%28startbuttontitle,additionalroutesbuttontitle,overviewbuttontitle%29.md)
   Creates a trip preview text configuration object.
 ### Setting Button Titles
-- [var startButtonTitle: String?](cptrippreviewtextconfiguration/startbuttontitle.md)
+- [var startButtonTitle: String?](./cptrippreviewtextconfiguration/startbuttontitle.md)
   The title displayed on the start button.
-- [var additionalRoutesButtonTitle: String?](cptrippreviewtextconfiguration/additionalroutesbuttontitle.md)
+- [var additionalRoutesButtonTitle: String?](./cptrippreviewtextconfiguration/additionalroutesbuttontitle.md)
   The title displayed on the routes button.
-- [var overviewButtonTitle: String?](cptrippreviewtextconfiguration/overviewbuttontitle.md)
+- [var overviewButtonTitle: String?](./cptrippreviewtextconfiguration/overviewbuttontitle.md)
   The title displayed on the overview button.
 ### Initializers
-- [init?(coder: NSCoder)](cptrippreviewtextconfiguration/init(coder:).md)
+- [init?(coder: NSCoder)](./cptrippreviewtextconfiguration/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [func showTripPreviews([CPTrip], textConfiguration: CPTripPreviewTextConfiguration?)](cpmaptemplate/showtrippreviews(_:textconfiguration:).md)
+### Displaying Trip Previews
+- [func showTripPreviews([CPTrip], textConfiguration: CPTripPreviewTextConfiguration?)](./cpmaptemplate/showtrippreviews%28_,textconfiguration%29.md)
   Displays the preview for one or more trips, and allows route selection.
-- [func showTripPreviews([CPTrip], selectedTrip: CPTrip?, textConfiguration: CPTripPreviewTextConfiguration?)](cpmaptemplate/showtrippreviews(_:selectedtrip:textconfiguration:).md)
+- [func showTripPreviews([CPTrip], selectedTrip: CPTrip?, textConfiguration: CPTripPreviewTextConfiguration?)](./cpmaptemplate/showtrippreviews%28_,selectedtrip,textconfiguration%29.md)
   Displays the previews for a collection of trips, with a single selected trip.
-- [func hideTripPreviews()](cpmaptemplate/hidetrippreviews.md)
+- [func hideTripPreviews()](./cpmaptemplate/hidetrippreviews%28%29.md)
   Hides the display of trip previews.
-- [func showRouteChoicesPreview(for: CPTrip, textConfiguration: CPTripPreviewTextConfiguration?)](cpmaptemplate/showroutechoicespreview(for:textconfiguration:).md)
+- [func showRouteChoicesPreview(for: CPTrip, textConfiguration: CPTripPreviewTextConfiguration?)](./cpmaptemplate/showroutechoicespreview%28for,textconfiguration%29.md)
   Displays the route choices for a single trip.
 
 

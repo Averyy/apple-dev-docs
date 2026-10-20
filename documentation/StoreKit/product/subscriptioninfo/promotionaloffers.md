@@ -1,7 +1,8 @@
 # promotionalOffers
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of promotional offers available for the auto-renewable subscription.
 
@@ -24,7 +25,7 @@ let promotionalOffers: [Product.SubscriptionOffer]
 
 This array is empty if you haven’t set up promotional offers in App Store Connect.
 
-For more information about promotional offers, see [`Set up promotional offers for auto-renewable subscriptions`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev16dfca448).
+For more information about promotional offers, see [Set up promotional offers for auto-renewable subscriptions](https://help.apple.com/app-store-connect/#/dev16dfca448).
 
 
 ---

@@ -1,7 +1,8 @@
 # perFrameHDRDisplayMetadataPolicy
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The policy for display of HDR display metadata on the rendered frame.
 
@@ -18,15 +19,20 @@ The policy for display of HDR display metadata on the rendered frame.
 var perFrameHDRDisplayMetadataPolicy: AVVideoComposition.PerFrameHDRDisplayMetadataPolicy { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVVideoCompositionPerFrameHDRDisplayMetadataPolicy perFrameHDRDisplayMetadataPolicy;
+```
+
 #### Discussion
 
 Allows the system to identify situations where it can generate HDR metadata and attach it to the rendered video frame.
 
-The default value is [`propagate`](avvideocomposition/perframehdrdisplaymetadatapolicy-swift.struct/propagate.md), which indicates the system propagates any HDR metadata attached to the composed frame to the rendered video frames.
+The default value is [`propagate`](./perframehdrdisplaymetadatapolicy-swift.struct/propagate.md), which indicates the system propagates any HDR metadata attached to the composed frame to the rendered video frames.
 
 ## See Also
 
-- [AVVideoComposition.PerFrameHDRDisplayMetadataPolicy](avvideocomposition/perframehdrdisplaymetadatapolicy-swift.struct.md)
+### Configuring HDR metadata
+- [AVVideoComposition.PerFrameHDRDisplayMetadataPolicy](./perframehdrdisplaymetadatapolicy-swift.struct.md)
   A type that defines the policy for handling of per frame HDR metadata.
 
 

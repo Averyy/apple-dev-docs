@@ -1,7 +1,8 @@
 # testNestedStructListArgumentRequest(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func testNestedStructListArgumentRequest(with params: MTRUnitTestingClusterTestNestedStructListArgumentRequestParams, completion: @escaping @Sendable (MTRUnitTestingClusterBooleanResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func testNestedStructListArgumentRequest(with params: MTRUnitTestingClusterTestNestedStructListArgumentRequestParams) async throws -> MTRUnitTestingClusterBooleanResponseParams
+```
+
+```objc
+- (void) testNestedStructListArgumentRequestWithParams:(MTRUnitTestingClusterTestNestedStructListArgumentRequestParams *) params completion:(void (^)(MTRUnitTestingClusterBooleanResponseParams *data, NSError *error)) completion;
 ```
 
 

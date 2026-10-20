@@ -1,7 +1,8 @@
 # kVTCameraCalibrationLensRole_Right
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 26.0+
@@ -17,10 +18,15 @@
 let kVTCameraCalibrationLensRole_Right: CFString
 ```
 
+```c
+extern CFStringRef const kVTCameraCalibrationLensRole_Right;
+```
+
 ## See Also
 
-- [let kVTCameraCalibrationLensRole_Left: CFString](kvtcameracalibrationlensrole_left.md)
-- [let kVTCameraCalibrationLensRole_Mono: CFString](kvtcameracalibrationlensrole_mono.md)
+### Lens Roles
+- [let kVTCameraCalibrationLensRole_Left: CFString](./kvtcameracalibrationlensrole_left.md)
+- [let kVTCameraCalibrationLensRole_Mono: CFString](./kvtcameracalibrationlensrole_mono.md)
 
 
 ---

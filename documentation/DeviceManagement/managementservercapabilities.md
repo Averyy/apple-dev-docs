@@ -1,7 +1,8 @@
 # ManagementServerCapabilities
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The declaration to configure the server’s feature set.
 
@@ -16,19 +17,19 @@ The declaration to configure the server’s feature set.
 
 ## Declaration
 
-```swift
+```
 object ManagementServerCapabilities
 ```
 
 ## Mentions
 
-- [Leveraging the declarative management data model to scale devices](leveraging-the-declarative-management-data-model-to-scale-devices.md)
+- [Leveraging the declarative management data model to scale devices](./leveraging-the-declarative-management-data-model-to-scale-devices.md)
 
 #### Discussion
 
 Specify `com.apple.management.server-capabilities` as the declaration type.
 
-##### Management Declaration Example
+##### Management declaration example
 
 ```json
 {
@@ -49,19 +50,22 @@ Specify `com.apple.management.server-capabilities` as the declaration type.
 ## Topics
 
 ### Objects
-- [object ManagementServerCapabilitiesSupportedFeaturesObject](managementservercapabilitiessupportedfeaturesobject.md)
+- [object ManagementServerCapabilitiesSupportedFeaturesObject](./managementservercapabilitiessupportedfeaturesobject.md)
   A dictionary that contains the server’s optional protocol features.
 
 ## Properties
 
-- `SupportedFeatures` (ManagementServerCapabilitiesSupportedFeaturesObject) *(required)*: A dictionary that contains the server’s optional protocol features. Each dictionary item uses the key name to represent a feature, and the value to hold the feature’s associated parameters. This protocol reserves keys with a prefix of `com.apple.`, which appear as subkeys in this dictionary.
+- `SupportedFeatures` (ManagementServerCapabilitiesSupportedFeaturesObject) *(required)*: A dictionary that contains the server’s optional protocol features.
+
+  Each dictionary item uses the key name to represent a feature, and the value to hold the feature’s associated parameters. This protocol reserves keys with a prefix of `com.apple.`, which appear as subkeys in this dictionary.
 - `Version` (string) *(required)*: The server’s protocol version.
 
 ## See Also
 
-- [object ManagementOrganizationInformation](managementorganizationinformation.md)
+### Management
+- [object ManagementOrganizationInformation](./managementorganizationinformation.md)
   The declaration to configure the managing organization’s contact information.
-- [object ManagementProperties](managementproperties.md)
+- [object ManagementProperties](./managementproperties.md)
   The declaration to configure the properties on the device.
 
 

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: SecureElementCredential  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty credential session.
 
@@ -17,7 +18,7 @@ init()
 
 #### Discussion
 
-Don’t use this initializer to create a session. Use [`startSession()`](credentialsession/startsession().md) to request and start a session.
+Don’t use this initializer to create a session. Use [`startSession()`](./startsession%28%29.md) to request and start a session.
 
 
 ---

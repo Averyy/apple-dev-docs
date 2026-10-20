@@ -1,7 +1,8 @@
 # LocationGroupQueryResponse
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response object returned by the Query Location Groups endpoint.
 
@@ -10,13 +11,13 @@ The response object returned by the Query Location Groups endpoint.
 
 ## Declaration
 
-```swift
+```
 object LocationGroupQueryResponse
 ```
 
 #### Discussion
 
-The `LocationGroupQueryResponse` object is the top-level envelope returned by [`Query Location Groups`](query-location-groups.md). The `result` array contains all [`LocationGroup`](locationgroup.md) objects that match the supplied filters, subject to pagination. Use `pagination.totalCount` and `pagination.offset` to page through large result sets.
+The `LocationGroupQueryResponse` object is the top-level envelope returned by [`Query Location Groups`](./query-location-groups.md). The `result` array contains all [`LocationGroup`](./locationgroup.md) objects that match the supplied filters, subject to pagination. Use `pagination.totalCount` and `pagination.offset` to page through large result sets.
 
 ##### Example
 
@@ -48,41 +49,41 @@ The `LocationGroupQueryResponse` object is the top-level envelope returned by [`
 
 ## Properties
 
-- `result` ([LocationGroup]): Array of [`LocationGroup`](locationgroup.md) objects matching the query. Empty array if none match. Read-only.
-- `pagination` (QueryPaginationResult): Pagination metadata for the result set. See [`QueryPaginationResult`](querypaginationresult.md). Read-only.
-- `error` (Error): Error details if the request failed. Absent on success. See [`Error`](error.md). Read-only.
+- `result` ([LocationGroup]): Array of [`LocationGroup`](./locationgroup.md) objects matching the query. Empty array if none match. Read-only.
+- `pagination` (QueryPaginationResult): Pagination metadata for the result set. See [`QueryPaginationResult`](./querypaginationresult.md). Read-only.
+- `error` (Error): Error details if the request failed. Absent on success. See [`Error`](./error.md). Read-only.
 
 ## See Also
 
-- [object Brand](brand.md)
+- [object Brand](./brand.md)
   A brand eligible for promotion through Apple Maps ads.
-- [object BrandResponse](brandresponse.md)
+- [object BrandResponse](./brandresponse.md)
   The Get Brand by ID endpoint returns this response object.
-- [object BrandQueryResponse](brandqueryresponse.md)
+- [object BrandQueryResponse](./brandqueryresponse.md)
   The Query Brands endpoint returns this response object.
-- [object BrandRejectionReasonResponse](brandrejectionreasonresponse.md)
+- [object BrandRejectionReasonResponse](./brandrejectionreasonresponse.md)
   A single policy assignment with rejection reason details for a brand entity.
-- [object BusinessCategory](businesscategory.md)
+- [object BusinessCategory](./businesscategory.md)
   A category in the Apple Maps business taxonomy used to classify brands and locations.
-- [object BusinessCategoryResponse](businesscategoryresponse.md)
+- [object BusinessCategoryResponse](./businesscategoryresponse.md)
   The Get Business Category endpoint returns this response object.
-- [object BusinessCategoryQueryResponse](businesscategoryqueryresponse.md)
+- [object BusinessCategoryQueryResponse](./businesscategoryqueryresponse.md)
   The Query Business Categories endpoint returns this response object.
-- [object Location](location.md)
+- [object Location](./location.md)
   The brand location object.
-- [object LocationResponse](locationresponse.md)
+- [object LocationResponse](./locationresponse.md)
   The response object returned by the Get a Location endpoint.
-- [object LocationGroup](locationgroup.md)
+- [object LocationGroup](./locationgroup.md)
   A collection of business locations associated with a brand, used to target geos in Apple Maps campaigns.
-- [object LocationGroupCreate](locationgroupcreate.md)
+- [object LocationGroupCreate](./locationgroupcreate.md)
   The request body object for creating a new location group.
-- [object LocationGroupUpdate](locationgroupupdate.md)
+- [object LocationGroupUpdate](./locationgroupupdate.md)
   The request body object for updating an existing location group.
-- [object LocationGroupResponse](locationgroupresponse.md)
+- [object LocationGroupResponse](./locationgroupresponse.md)
   The response object returned by the Get Location Group endpoint.
-- [object LocationQueryResponse](locationqueryresponse.md)
+- [object LocationQueryResponse](./locationqueryresponse.md)
   The paginated response envelope returned by the Query Locations endpoint.
-- [object Eligibility](eligibility.md)
+- [object Eligibility](./eligibility.md)
   Eligibility status and constraint details for a Business domain entity.
 
 

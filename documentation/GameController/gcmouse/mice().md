@@ -1,7 +1,8 @@
 # mice()
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns any mice that the user connects to the device.
 
@@ -19,15 +20,20 @@ Returns any mice that the user connects to the device.
 class func mice() -> [GCMouse]
 ```
 
+```objc
++ (NSArray<GCMouse *> *) mice;
+```
+
 #### Return Value
 
 The currently connected mouse devices.
 
 ## See Also
 
-- [static let GCMouseDidConnect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gcmousedidconnect.md)
+### Discovering mouse devices
+- [static let GCMouseDidConnect: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/gcmousedidconnect.md)
   A notification that posts after a mouse connects to the device.
-- [static let GCMouseDidDisconnect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gcmousediddisconnect.md)
+- [static let GCMouseDidDisconnect: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/gcmousediddisconnect.md)
   A notification that posts after a mouse disconnects from the device.
 
 

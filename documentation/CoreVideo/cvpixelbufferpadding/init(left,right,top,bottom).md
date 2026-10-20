@@ -1,7 +1,8 @@
 # init(left:right:top:bottom:)
 
 **Framework**: Core Video  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+

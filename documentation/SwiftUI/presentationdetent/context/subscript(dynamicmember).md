@@ -1,7 +1,8 @@
 # subscript(dynamicMember:)
 
 **Framework**: SwiftUI  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns the value specified by the keyPath from the environment.
 

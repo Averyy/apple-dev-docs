@@ -1,7 +1,8 @@
 # Stat.Flags
 
 **Framework**: System  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Flags representing those passed to `fstatat()`.
 
@@ -24,34 +25,34 @@ struct Flags
 ## Topics
 
 ### Initializers
-- [init(rawValue: CInt)](stat/flags-swift.struct/init(rawvalue:).md)
+- [init(rawValue: CInt)](./flags-swift.struct/init%28rawvalue%29.md)
   Creates a strongly-typed `Stat.Flags` from raw C flags.
 ### Instance Properties
-- [let rawValue: CInt](stat/flags-swift.struct/rawvalue.md)
+- [let rawValue: CInt](./flags-swift.struct/rawvalue.md)
   The raw C flags.
 ### Type Properties
-- [static var resolveBeneath: Stat.Flags](stat/flags-swift.struct/resolvebeneath.md)
+- [static var resolveBeneath: Stat.Flags](./flags-swift.struct/resolvebeneath.md)
   If the path does not reside in the hierarchy beneath the starting directory, return an error.
-- [static var symlinkNoFollow: Stat.Flags](stat/flags-swift.struct/symlinknofollow.md)
+- [static var symlinkNoFollow: Stat.Flags](./flags-swift.struct/symlinknofollow.md)
   If the path ends with a symbolic link, return information about the link itself.
-- [static var symlinkNoFollowAny: Stat.Flags](stat/flags-swift.struct/symlinknofollowany.md)
+- [static var symlinkNoFollowAny: Stat.Flags](./flags-swift.struct/symlinknofollowany.md)
   If the path ends with a symbolic link, return information about the link itself. If *any* symbolic link is encountered during path resolution, return an error.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../../Swift/hashable.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 
 ---

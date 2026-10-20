@@ -1,6 +1,7 @@
 # Adding an Apple Pay Button or a Custom Action in AR Quick Look
 
-**Framework**: ARKit
+**Framework**: ARKit  
+**Role**: Article
 
 Provide a banner that users can tap to make a purchase or perform a custom action in an AR experience.
 
@@ -8,15 +9,15 @@ Provide a banner that users can tap to make a purchase or perform a custom actio
 
 For AR experiences initiated through the web in iOS 13.3 or later, you can display an Apple Pay button so users can make purchases from your website.
 
-![Screenshot of an AR experience featuring a banner that contains an Apple Pay button.](/images/com.apple.arkit/media-3432381@2x.png)
+![Screenshot of an AR experience featuring a banner that contains an Apple Pay button.](https://developer.apple.com/tutorials/images/com.apple.arkit/media-3432381@2x.png)
 
 Alternatively, you can provide text in the banner that users can tap to invoke a custom action in your website, like adding a previewed item to a shopping cart.
 
-![Screenshot of a banner featuring a custom hyperlink that reads “Add to cart”.](/images/com.apple.arkit/media-3425396@2x.png)
+![Screenshot of a banner featuring a custom hyperlink that reads “Add to cart”.](https://developer.apple.com/tutorials/images/com.apple.arkit/media-3425396@2x.png)
 
 In addition, you can supply AR Quick Look with custom HTML that completely customizes the banner’s graphics.
 
-![Screenshot of a banner in which a custom HTML file rendered the contents.](/images/com.apple.arkit/media-3425393@2x.png)
+![Screenshot of a banner in which a custom HTML file rendered the contents.](https://developer.apple.com/tutorials/images/com.apple.arkit/media-3425393@2x.png)
 
 To add an Apple Pay button or custom text or graphics in a banner, choose URL parameters to configure AR Quick Look for your website. Finally, detect and react to customer taps to the banner.
 
@@ -30,13 +31,13 @@ https://example.com/biplane.usdz#applePayButtonType=plain
 
 You can choose from the button options using the button type values shown here.
 
-![Figure showing each of the seven Apple Pay button options, annotated by the button type value parameter associated with the button style.](/images/com.apple.arkit/media-3421819@2x.png)
+![Figure showing each of the seven Apple Pay button options, annotated by the button type value parameter associated with the button style.](https://developer.apple.com/tutorials/images/com.apple.arkit/media-3421819@2x.png)
 
 ##### Provide Custom Text
 
 Instead of an Apple Pay button, you can supply text that AR Quick Look displays as a custom action button, as in the following image.
 
-![Screenshot of a banner that features a custom action button using text that you supply.](/images/com.apple.arkit/media-3425397@2x.png)
+![Screenshot of a banner that features a custom action button using text that you supply.](https://developer.apple.com/tutorials/images/com.apple.arkit/media-3425397@2x.png)
 
 Append the `callToAction` URL parameter with the custom text as the value. The following example URL renders a banner with the text “Add to cart”:
 
@@ -50,7 +51,7 @@ Because URLs can’t contain spaces, be sure to URL-encode the custom text befor
 
 When you add an Apple Pay button or a custom action button to AR Quick Look, set the description of the previewed items using the `checkoutTitle`, `checkoutSubtitle`, and `price` URL parameters. AR Quick Look displays the subtitle and price separated by a comma below the title.
 
-![Screenshot of a banner with the item’s title, subtitle, and price highlighted.](/images/com.apple.arkit/media-3425394@2x.png)
+![Screenshot of a banner with the item’s title, subtitle, and price highlighted.](https://developer.apple.com/tutorials/images/com.apple.arkit/media-3425394@2x.png)
 
 If AR Quick Look can’t fit the subtitle and price on one line, it truncates the subtitle with an ellipsis. The following example URL renders the banner.
 
@@ -71,13 +72,13 @@ https://example.com/biplane.usdz#custom=https://example.com/customBanners/coming
 
 This example URL creates the AR experience illustrated below.
 
-![Screenshot of an AR experience that features a banner that AR Quick Look renders with your custom HTML file.](/images/com.apple.arkit/media-3425395@2x.png)
+![Screenshot of an AR experience that features a banner that AR Quick Look renders with your custom HTML file.](https://developer.apple.com/tutorials/images/com.apple.arkit/media-3425395@2x.png)
 
 If you use the `custom` URL parameter, the value must be an absolute URL. To comply with AR Quick Look’s security standards, ensure the server sends the HTML resource over HTTPS.
 
 > ❗ **Important**:  AR Quick Look displays the contents of the HTML only. If you embed actions such as links or events, AR Quick Look ignores them.
 
-##### Define the Custom Banners Height
+##### Define the Custom Banner’s Height
 
 When you display a custom banner, you can set the banner height using the `customHeight` URL parameter.
 
@@ -121,20 +122,21 @@ The `message` event follows normal DOM processing rules. Rather than adding a li
 
 Define the actions your website takes in response to a user tap in your event listener. When the user taps the custom action button, you might add the previewed item to a shopping cart or take the user to a checkout page, depending on the banner’s text and custom action.
 
-If your banner displays an Apple Pay button, bring up the Apple Pay prompt using [`Apple Pay JS API`](https://developer.apple.com/documentation/applepayontheweb/apple-pay-js-api).
+If your banner displays an Apple Pay button, bring up the Apple Pay prompt using [Apple Pay JS API](../ApplePayontheWeb/apple-pay-js-api.md).
 
-If your banner displays an Apple Messages for Business button, send the user to Messages using your company’s custom Apple Messages for Business URL. For more infomation, see [`Starting a Chat from a URL`](https://developer.apple.comhttps://register.apple.com/resources/messages/messaging-documentation/chat-with-customers#starting-a-chat-from-a-url).
+If your banner displays an Apple Messages for Business button, send the user to Messages using your company’s custom Apple Messages for Business URL. For more infomation, see [Starting a Chat from a URL](https://register.apple.com/resources/messages/messaging-documentation/chat-with-customers#starting-a-chat-from-a-url).
 
 ## See Also
 
-- [Previewing a Model with AR Quick Look](previewing-a-model-with-ar-quick-look.md)
+### AR Quick Look
+- [Previewing a Model with AR Quick Look](./previewing-a-model-with-ar-quick-look.md)
   Display a model or scene that the user can move, scale, and share with others.
-- [Adding Visual Effects in AR Quick Look and RealityKit](adding-visual-effects-in-ar-quick-look-and-realitykit.md)
+- [Adding Visual Effects in AR Quick Look and RealityKit](./adding-visual-effects-in-ar-quick-look-and-realitykit.md)
   Balance the appearance and performance of your AR experiences with modeling strategies.
-- [class ARQuickLookPreviewItem](../quicklook/arquicklookpreviewitem.md)
-- [OpenUSD schemas for AR](../usd/usd-schemas-for-ar.md)
+- [class ARQuickLookPreviewItem](../QuickLook/arquicklookpreviewitem.md)
+- [OpenUSD schemas for AR](../USD/usd-schemas-for-ar.md)
   Add augmented reality functionality to your 3D content using USD schemas.
-- [Specifying a lighting environment in AR Quick Look](specifying-a-lighting-environment-in-ar-quick-look.md)
+- [Specifying a lighting environment in AR Quick Look](./specifying-a-lighting-environment-in-ar-quick-look.md)
   Add metadata to your USDZ file to specify its lighting characteristics.
 
 

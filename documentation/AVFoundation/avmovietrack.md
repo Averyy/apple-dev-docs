@@ -1,7 +1,8 @@
 # AVMovieTrack
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A track in a movie that conforms to the QuickTime or ISO base media file format.
 
@@ -19,38 +20,43 @@ A track in a movie that conforms to the QuickTime or ISO base media file format.
 class AVMovieTrack
 ```
 
+```objc
+@interface AVMovieTrack : AVAssetTrack
+```
+
 ## Topics
 
 ### Retrieving track information
-- [var alternateGroupID: Int](avmovietrack/alternategroupid.md)
+- [var alternateGroupID: Int](./avmovietrack/alternategroupid.md)
   A value that identifies the track as a member of a particular alternate group.
-- [var mediaDataStorage: AVMediaDataStorage?](avmovietrack/mediadatastorage.md)
+- [var mediaDataStorage: AVMediaDataStorage?](./avmovietrack/mediadatastorage.md)
   The storage container for media data added to a track.
-- [var mediaDecodeTimeRange: CMTimeRange](avmovietrack/mediadecodetimerange.md)
+- [var mediaDecodeTimeRange: CMTimeRange](./avmovietrack/mediadecodetimerange.md)
   A range of decode times for the track’s media.
-- [var mediaPresentationTimeRange: CMTimeRange](avmovietrack/mediapresentationtimerange.md)
+- [var mediaPresentationTimeRange: CMTimeRange](./avmovietrack/mediapresentationtimerange.md)
   A range of presentation times for the track’s media.
 
 ## Relationships
 
 ### Inherits From
-- [AVAssetTrack](avassettrack.md)
+- [AVAssetTrack](./avassettrack.md)
 ### Inherited By
-- [AVFragmentedMovieTrack](avfragmentedmovietrack.md)
-- [AVMutableMovieTrack](avmutablemovietrack.md)
+- [AVFragmentedMovieTrack](./avfragmentedmovietrack.md)
+- [AVMutableMovieTrack](./avmutablemovietrack.md)
 ### Conforms To
-- [AVAsynchronousKeyValueLoading](avasynchronouskeyvalueloading.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [AVAsynchronousKeyValueLoading](./avasynchronouskeyvalueloading.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVMovie](avmovie.md)
+### Movies
+- [class AVMovie](./avmovie.md)
   An object that represents an audiovisual container that conforms to the QuickTime movie file format or a related format like MPEG-4.
 
 

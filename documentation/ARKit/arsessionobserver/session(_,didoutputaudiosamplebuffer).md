@@ -1,7 +1,8 @@
 # session(_:didOutputAudioSampleBuffer:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a new sample buffer of recorded audio is available.
 
@@ -15,9 +16,13 @@ Tells the delegate that a new sample buffer of recorded audio is available.
 optional func session(_ session: ARSession, didOutputAudioSampleBuffer audioSampleBuffer: CMSampleBuffer)
 ```
 
+```objc
+- (void) session:(ARSession *) session didOutputAudioSampleBuffer:(CMSampleBufferRef) audioSampleBuffer;
+```
+
 #### Discussion
 
-ARKit calls this method on your delegate object only if you’re running an AR session with a configuration whose  [`providesAudioData`](arconfiguration/providesaudiodata.md) setting is [`true`](https://developer.apple.com/documentation/swift/true).
+ARKit calls this method on your delegate object only if you’re running an AR session with a configuration whose  [`providesAudioData`](../arconfiguration/providesaudiodata.md) setting is [`true`](../../Swift/true.md).
 
 ## Parameters
 

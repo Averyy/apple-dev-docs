@@ -1,7 +1,8 @@
 # Optional.Specification
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 16.0+
@@ -17,6 +18,8 @@
 ```swift
 typealias Specification = Wrapped.UnwrappedType.Specification
 ```
+
+Available when `Wrapped` conforms to `_IntentValue`.
 
 
 ---

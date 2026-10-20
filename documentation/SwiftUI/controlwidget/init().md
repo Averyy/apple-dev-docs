@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates a control using `body` as its content.

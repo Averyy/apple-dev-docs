@@ -6,23 +6,6 @@ url: https://ml-explore.github.io/mlx-data/build/html/python/_autosummary/mlx.da
 
 # mlx.data.Buffer.load_audio
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.data.Buffer.load_audio.rst)
-- **
-
-.pdf
-
-**
-
-# mlx.data.Buffer.load_audio
-
- Table of contents 
-
-## Contents
-
-# mlx.data.Buffer.load_audio
-
 **Buffer.load_audio(*self: mlx.data._c.Buffer*, *key: str*, *prefix: str = ''*, *info: bool = False*, *from_memory: bool = False*, *info_type: mlx.data._c.LoadAudioInfo = <LoadAudioInfo.All: 0>*, *sample_rate: int = 0*, *resampling_quality: str = 'sinc-fastest'*, *info_key: str = ''*, *output_key: str = ''*) → mlx.data._c.Buffer**
 : Load an audio file.
 Decodes audio from an audio file on disk or in memory. It can also load
@@ -36,11 +19,14 @@ It can also be set to `LoadAudioInfo.NumFrames`,
 `LoadAudioInfo.NumSeconds` to load the corresponding information.
 The following example filters from the `Stream` all audio files that
 are less than 10 seconds long.
-dset = (
-  dset
-  .load_audio("audio_file", info=True, info_type=LoadAudioInfo.NumSeconds, output_key="audio_info")
-  .sample_transform(lambda s: s if s["audio_info"] >= 10 else dict())
-)
+
+  ```
+  dset = (
+    dset
+    .load_audio("audio_file", info=True, info_type=LoadAudioInfo.NumSeconds, output_key="audio_info")
+    .sample_transform(lambda s: s if s["audio_info"] >= 10 else dict())
+  )
+  ```
 
 Parameters:
 
@@ -60,5 +46,3 @@ sinc-fastest)
 **info_key** ([str](https://docs.python.org/3/library/stdtypes.html#str)) – The key to store the audio metadata in, if desired. (default: ‘’)
 **output_key** ([str](https://docs.python.org/3/library/stdtypes.html#str)) – The key to store the result in. If it is an empty
 string then overwrite the input. (default: ‘’)
-
-** Contents

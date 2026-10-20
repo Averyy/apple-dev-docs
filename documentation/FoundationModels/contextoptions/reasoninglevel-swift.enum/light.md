@@ -1,7 +1,8 @@
 # ContextOptions.ReasoningLevel.light
 
 **Framework**: Foundation Models  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A level that indicates light reasoning that’s good for quick responses.
 
@@ -21,15 +22,16 @@ case light
 
 ## Mentions
 
-- [Adding server-side intelligence with Private Cloud Compute](adding-server-side-intelligence-with-private-cloud-compute.md)
+- [Adding server-side intelligence with Private Cloud Compute](../../adding-server-side-intelligence-with-private-cloud-compute.md)
 
 ## See Also
 
-- [ContextOptions.ReasoningLevel.deep](contextoptions/reasoninglevel-swift.enum/deep.md)
+### Reasoning level cases
+- [ContextOptions.ReasoningLevel.deep](./deep.md)
   A level that indicates deep reasoning that’s good for more analysis over a request.
-- [ContextOptions.ReasoningLevel.moderate](contextoptions/reasoninglevel-swift.enum/moderate.md)
+- [ContextOptions.ReasoningLevel.moderate](./moderate.md)
   A level that indicates a moderate amount of reasoning.
-- [ContextOptions.ReasoningLevel.custom(_:)](contextoptions/reasoninglevel-swift.enum/custom(_:).md)
+- [ContextOptions.ReasoningLevel.custom(_:)](./custom%28_%29.md)
   A custom level not represented by the other cases.
 
 

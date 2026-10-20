@@ -1,17 +1,18 @@
 # kIOHIDPointerEventOptionsNoAcceleration
 
 **Framework**: HIDDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 An option for disabling the acceleration logic for this event.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIOHIDPointerEventOptionsNoAcceleration
 ```
 

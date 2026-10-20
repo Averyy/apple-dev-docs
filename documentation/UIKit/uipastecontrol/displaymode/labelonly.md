@@ -1,7 +1,8 @@
 # UIPasteControl.DisplayMode.labelOnly
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A display mode for a textual label.
 
@@ -17,15 +18,20 @@ A display mode for a textual label.
 case labelOnly
 ```
 
+```c
+UIPasteControlDisplayModeLabelOnly
+```
+
 #### Discussion
 
-The label’s text reads “Paste”. The value you set for [`baseForegroundColor`](uipastecontrol/configuration-swift.class/baseforegroundcolor.md) colors the text.
+The label’s text reads “Paste”. The value you set for [`baseForegroundColor`](../configuration-swift.class/baseforegroundcolor.md) colors the text.
 
 ## See Also
 
-- [UIPasteControl.DisplayMode.iconAndLabel](uipastecontrol/displaymode/iconandlabel.md)
+### Choosing a display mode
+- [UIPasteControl.DisplayMode.iconAndLabel](./iconandlabel.md)
   A display mode for a button that composes an icon and a textual label.
-- [UIPasteControl.DisplayMode.iconOnly](uipastecontrol/displaymode/icononly.md)
+- [UIPasteControl.DisplayMode.iconOnly](./icononly.md)
   A display mode for an icon button.
 
 

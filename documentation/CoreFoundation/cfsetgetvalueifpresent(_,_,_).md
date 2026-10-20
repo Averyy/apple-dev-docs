@@ -1,23 +1,28 @@
 # CFSetGetValueIfPresent(_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Reports whether or not a value is in a set, and if it exists returns the value indirectly.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFSetGetValueIfPresent(_ theSet: CFSet!, _ candidate: UnsafeRawPointer!, _ value: UnsafeMutablePointer<UnsafeRawPointer?>!) -> Bool
+```
+
+```c
+extern Boolean CFSetGetValueIfPresent(CFSetRef theSet, const void *candidate, const void **value);
 ```
 
 #### Return Value
@@ -32,19 +37,20 @@ This function uses the equal callback. `candidate` and all elements in the set m
 
 - `theSet`: The set to examine.
 - `candidate`: The value for which to search in `theSet`. Comparisons are made using the equal callback provided when `theSet` was created. If the equal callback was `NULL`, pointer equality (in C, ==) is used.
-- `value`: Upon return contains the matching value if it exists in `theSet`, otherwise `NULL`. If the value is a Core Foundation object, ownership follows the [`The Get Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
+- `value`: Upon return contains the matching value if it exists in `theSet`, otherwise `NULL`. If the value is a Core Foundation object, ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 
 ## See Also
 
-- [func CFSetContainsValue(CFSet!, UnsafeRawPointer!) -> Bool](cfsetcontainsvalue(_:_:).md)
+### Examining a Set
+- [func CFSetContainsValue(CFSet!, UnsafeRawPointer!) -> Bool](./cfsetcontainsvalue%28_,_%29.md)
   Returns a Boolean that indicates whether a set contains a given value.
-- [func CFSetGetCount(CFSet!) -> CFIndex](cfsetgetcount(_:).md)
+- [func CFSetGetCount(CFSet!) -> CFIndex](./cfsetgetcount%28_%29.md)
   Returns the number of values currently in a set.
-- [func CFSetGetCountOfValue(CFSet!, UnsafeRawPointer!) -> CFIndex](cfsetgetcountofvalue(_:_:).md)
+- [func CFSetGetCountOfValue(CFSet!, UnsafeRawPointer!) -> CFIndex](./cfsetgetcountofvalue%28_,_%29.md)
   Returns the number of values in a set that match a given value.
-- [func CFSetGetValue(CFSet!, UnsafeRawPointer!) -> UnsafeRawPointer!](cfsetgetvalue(_:_:).md)
+- [func CFSetGetValue(CFSet!, UnsafeRawPointer!) -> UnsafeRawPointer!](./cfsetgetvalue%28_,_%29.md)
   Obtains a specified value from a set.
-- [func CFSetGetValues(CFSet!, UnsafeMutablePointer<UnsafeRawPointer?>!)](cfsetgetvalues(_:_:).md)
+- [func CFSetGetValues(CFSet!, UnsafeMutablePointer<UnsafeRawPointer?>!)](./cfsetgetvalues%28_,_%29.md)
   Obtains all values in a set.
 
 

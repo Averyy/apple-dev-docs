@@ -1,7 +1,8 @@
 # takeSnapshot()
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Takes an image snapshot.
 
@@ -19,11 +20,16 @@ Takes an image snapshot.
 func takeSnapshot()
 ```
 
+```objc
+- (void) takeSnapshot;
+```
+
 ## See Also
 
-- [var mostRecentSnapshot: HMCameraSnapshot?](hmcamerasnapshotcontrol/mostrecentsnapshot.md)
+### Taking snapshots
+- [var mostRecentSnapshot: HMCameraSnapshot?](./mostrecentsnapshot.md)
   The camera’s most recent snapshot.
-- [class HMCameraSnapshot](hmcamerasnapshot.md)
+- [class HMCameraSnapshot](../hmcamerasnapshot.md)
   An object that represents a snapshot taken from a camera.
 
 

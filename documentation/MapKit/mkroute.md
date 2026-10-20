@@ -1,7 +1,8 @@
 # MKRoute
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A single route between a requested start and end point.
 
@@ -20,60 +21,65 @@ A single route between a requested start and end point.
 class MKRoute
 ```
 
+```objc
+@interface MKRoute : NSObject
+```
+
 #### Overview
 
 An `MKRoute` object defines the geometry for the route — that is, it contains line segments associated with specific map coordinates. A route object may also include other information, such as the name of the route, its distance, and the expected travel time.
 
-You don’t create instances of this class directly. When you use an [`MKDirections`](mkdirections.md) object to request directions from Apple, the returned [`MKDirections.Response`](mkdirections/response.md) object contains the possible routes.
+You don’t create instances of this class directly. When you use an [`MKDirections`](./mkdirections.md) object to request directions from Apple, the returned [`MKDirections.Response`](./mkdirections/response.md) object contains the possible routes.
 
 ## Topics
 
 ### Getting the route geometry
-- [var polyline: MKPolyline](mkroute/polyline.md)
+- [var polyline: MKPolyline](./mkroute/polyline.md)
   The detailed route geometry.
-- [var steps: [MKRoute.Step]](mkroute/steps.md)
+- [var steps: [MKRoute.Step]](./mkroute/steps.md)
   The array of steps that create the overall route.
-- [MKRoute.Step](mkroute/step.md)
+- [MKRoute.Step](./mkroute/step.md)
   One portion of an overall route.
 ### Getting additional route details
-- [var name: String](mkroute/name.md)
+- [var name: String](./mkroute/name.md)
   The assigned name for the route.
-- [var hasHighways: Bool](mkroute/hashighways.md)
+- [var hasHighways: Bool](./mkroute/hashighways.md)
   A Boolean value that indicates whether the route contains highways.
-- [var hasTolls: Bool](mkroute/hastolls.md)
+- [var hasTolls: Bool](./mkroute/hastolls.md)
   A Boolean value that indicates whether the route has tolls.
-- [var advisoryNotices: [String]](mkroute/advisorynotices.md)
+- [var advisoryNotices: [String]](./mkroute/advisorynotices.md)
   An array of advisory notice strings for the route.
-- [var distance: CLLocationDistance](mkroute/distance.md)
+- [var distance: CLLocationDistance](./mkroute/distance.md)
   The route distance, in meters.
-- [var expectedTravelTime: TimeInterval](mkroute/expectedtraveltime.md)
+- [var expectedTravelTime: TimeInterval](./mkroute/expectedtraveltime.md)
   The expected travel time, in seconds.
-- [var transportType: MKDirectionsTransportType](mkroute/transporttype.md)
+- [var transportType: MKDirectionsTransportType](./mkroute/transporttype.md)
   The overall route transport type.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MKDirections](mkdirections.md)
+### Directions
+- [class MKDirections](./mkdirections.md)
   A utility object that computes directions and travel-time information based on the route information you provide.
-- [MKDirections.Request](mkdirections/request.md)
+- [MKDirections.Request](./mkdirections/request.md)
   The start and end points of a route, along with the planned mode of transportation.
-- [MKDirections.Response](mkdirections/response.md)
+- [MKDirections.Response](./mkdirections/response.md)
   The route information that Apple servers return in response to your request for directions.
-- [MKDirections.ETAResponse](mkdirections/etaresponse.md)
+- [MKDirections.ETAResponse](./mkdirections/etaresponse.md)
   The travel-time information that Apple servers return.
-- [MKRoute.Step](mkroute/step.md)
+- [MKRoute.Step](./mkroute/step.md)
   One portion of an overall route.
 
 

@@ -1,7 +1,8 @@
 # chartXAxisLabel(position:alignment:spacing:content:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds x axis label for charts in the view.
 
@@ -30,13 +31,14 @@ func chartXAxisLabel<C>(position: AnnotationPosition = .automatic, alignment: Al
 
 ## See Also
 
-- [func chartXAxisLabel(_:position:alignment:spacing:)](view/chartxaxislabel(_:position:alignment:spacing:).md)
+### Axis Labels
+- [func chartXAxisLabel(_:position:alignment:spacing:)](./chartxaxislabel%28_,position,alignment,spacing%29.md)
   Adds x axis label for charts in the view.
-- [func chartYAxisLabel(_:position:alignment:spacing:)](view/chartyaxislabel(_:position:alignment:spacing:).md)
+- [func chartYAxisLabel(_:position:alignment:spacing:)](./chartyaxislabel%28_,position,alignment,spacing%29.md)
   Adds y axis label for charts in the view.
-- [func chartYAxisLabel<C>(position: AnnotationPosition, alignment: Alignment?, spacing: CGFloat?, content: () -> C) -> some View](view/chartyaxislabel(position:alignment:spacing:content:).md)
+- [func chartYAxisLabel<C>(position: AnnotationPosition, alignment: Alignment?, spacing: CGFloat?, content: () -> C) -> some View](./chartyaxislabel%28position,alignment,spacing,content%29.md)
   Adds y axis label for charts in the view.
-- [func chartZAxisLabel(_:position:alignment:spacing:)](view/chartzaxislabel(_:position:alignment:spacing:).md)
+- [func chartZAxisLabel(_:position:alignment:spacing:)](./chartzaxislabel%28_,position,alignment,spacing%29.md)
   Adds z axis label for charts in the view. It effects 3D charts only.
 
 

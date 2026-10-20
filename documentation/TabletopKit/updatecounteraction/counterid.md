@@ -1,7 +1,8 @@
 # counterID
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ID of the counter to update.
 
@@ -16,7 +17,8 @@ var counterID: ScoreCounter.Identifier { get }
 
 ## See Also
 
-- [var newValue: Int64](updatecounteraction/newvalue.md)
+### Getting counter information
+- [var newValue: Int64](./newvalue.md)
   The new value to set for the counter.
 
 

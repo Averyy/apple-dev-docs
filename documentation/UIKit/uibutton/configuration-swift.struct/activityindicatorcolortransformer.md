@@ -1,7 +1,8 @@
 # activityIndicatorColorTransformer
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color transformer for resolving the color of the activity indicator.
 
@@ -10,7 +11,7 @@ The color transformer for resolving the color of the activity indicator.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ var activityIndicatorColorTransformer: UIConfigurationColorTransformer? { get se
 
 ## See Also
 
-- [var showsActivityIndicator: Bool](uibutton/configuration-swift.struct/showsactivityindicator.md)
+### Configuring the activity indicator
+- [var showsActivityIndicator: Bool](./showsactivityindicator.md)
   A Boolean value that determines whether the button displays an activity indicator instead of an image.
 
 

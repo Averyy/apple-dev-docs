@@ -1,7 +1,8 @@
 # CSIndexError.Code.invalidClientStateError
 
 **Framework**: Core Spotlight  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The provided client state data is invalid.
 
@@ -18,21 +19,26 @@ The provided client state data is invalid.
 case invalidClientStateError
 ```
 
+```c
+CSIndexErrorCodeInvalidClientStateError
+```
+
 ## See Also
 
-- [CSIndexError.Code.indexUnavailableError](csindexerror/code/indexunavailableerror.md)
+### Getting the indexing error codes
+- [CSIndexError.Code.indexUnavailableError](./indexunavailableerror.md)
   The indexer is unavailable.
-- [CSIndexError.Code.indexingUnsupported](csindexerror/code/indexingunsupported.md)
+- [CSIndexError.Code.indexingUnsupported](./indexingunsupported.md)
   Indexing isn’t supported on the device.
-- [CSIndexError.Code.invalidItemError](csindexerror/code/invaliditemerror.md)
+- [CSIndexError.Code.invalidItemError](./invaliditemerror.md)
   The searchable item object is invalid.
-- [CSIndexError.Code.mismatchedClientState](csindexerror/code/mismatchedclientstate.md)
+- [CSIndexError.Code.mismatchedClientState](./mismatchedclientstate.md)
   The provided client state did not match the information in the index.
-- [CSIndexError.Code.quotaExceeded](csindexerror/code/quotaexceeded.md)
+- [CSIndexError.Code.quotaExceeded](./quotaexceeded.md)
   The quota for the bundle has been exceeded.
-- [CSIndexError.Code.remoteConnectionError](csindexerror/code/remoteconnectionerror.md)
+- [CSIndexError.Code.remoteConnectionError](./remoteconnectionerror.md)
   An error occurred while communicating with the remote process.
-- [CSIndexError.Code.unknownError](csindexerror/code/unknownerror.md)
+- [CSIndexError.Code.unknownError](./unknownerror.md)
   An unknown error occurred.
 
 

@@ -1,7 +1,8 @@
 # init(log2n:radix:ofType:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new fast Fourier transform instance.
 
@@ -11,7 +12,7 @@ Initializes a new fast Fourier transform instance.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

@@ -1,7 +1,8 @@
 # currentSelection
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current selection.
 
@@ -19,6 +20,10 @@ The current selection.
 var currentSelection: PDFSelection? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) PDFSelection * currentSelection;
+```
+
 #### Discussion
 
 Returns `NULL` if no selection exists.
@@ -27,17 +32,18 @@ Note that this method returns the actual instance of the current `PDFSelection` 
 
 ## See Also
 
-- [func setCurrentSelection(PDFSelection?, animate: Bool)](pdfview/setcurrentselection(_:animate:).md)
+### Handling Selections
+- [func setCurrentSelection(PDFSelection?, animate: Bool)](./setcurrentselection%28_,animate%29.md)
   Sets the current selection, in an animated way, if desired.
-- [func selectAll(Any?)](pdfview/selectall(_:).md)
+- [func selectAll(Any?)](./selectall%28_%29.md)
   Selects all text in the document.
-- [func clearSelection()](pdfview/clearselection.md)
+- [func clearSelection()](./clearselection%28%29.md)
   Clears the selection.
-- [func copy(Any?)](pdfview/copy(_:).md)
+- [func copy(Any?)](./copy%28_%29.md)
   Copies the text in the selection, if any, to the Pasteboard.
-- [func scrollSelectionToVisible(Any?)](pdfview/scrollselectiontovisible(_:).md)
+- [func scrollSelectionToVisible(Any?)](./scrollselectiontovisible%28_%29.md)
   Scrolls the view until the selection is visible.
-- [var highlightedSelections: [PDFSelection]?](pdfview/highlightedselections.md)
+- [var highlightedSelections: [PDFSelection]?](./highlightedselections.md)
   Returns the array of selections that are highlighted using `setHighlightedSelections`.
 
 

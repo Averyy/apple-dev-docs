@@ -2,6 +2,7 @@
 
 **Framework**: FSKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Fetches attributes for the given item.
@@ -12,33 +13,42 @@ Fetches attributes for the given item.
 ## Declaration
 
 ```swift
+func getAttributes(_ desiredAttributes: FSItem.GetAttributesRequest, of item: FSItem, context: FSContext, replyHandler reply: @escaping @Sendable (FSGetAttributesResult?, (any Error)?) -> Void)
+```
+
+```swift
 func attributes(_ desiredAttributes: FSItem.GetAttributesRequest, of item: FSItem, context: FSContext) async throws -> FSGetAttributesResult
+```
+
+```objc
+- (void) getAttributes:(FSItemGetAttributesRequest *) desiredAttributes ofItem:(FSItem *) item context:(FSContext *) context replyHandler:(void (^)(FSGetAttributesResult *result, NSError *error)) reply;
 ```
 
 #### Discussion
 
-For file systems that don’t support hard links, set [`linkCount`](fsitem/attributes/linkcount.md) to `1` for regular files and symbolic links.
+For file systems that don’t support hard links, set [`linkCount`](../../fsitem/attributes/linkcount.md) to `1` for regular files and symbolic links.
 
 If the item’s `bsdFlags` contain the `UF_COMPRESSED` flag, your file system returns the uncompressed size of the file.
 
 ## Parameters
 
-- `desiredAttributes`: A requested set of attributes to get. The implementation inspects the request’s [`wantedAttributes`](fsitem/getattributesrequest/wantedattributes.md) to determine which attributes to populate.
+- `desiredAttributes`: A requested set of attributes to get. The implementation inspects the request’s [`wantedAttributes`](../../fsitem/getattributesrequest/wantedattributes.md) to determine which attributes to populate.
 - `item`: The item to get attributes for.
 - `context`: An object that enables context-aware file system decisions throughout the operation.
-- `reply`: A block or closure to indicate success or failure. If getting attributes succeeds, pass an instance of [`FSGetAttributesResult`](fsgetattributesresult.md) containing the requested attributes, along with a `nil` error. If getting attributes fails, pass the relevant error as the second parameter; FSKit ignores the [`FSGetAttributesResult`](fsgetattributesresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
+- `reply`: A block or closure to indicate success or failure. If getting attributes succeeds, pass an instance of [`FSGetAttributesResult`](../../fsgetattributesresult.md) containing the requested attributes, along with a `nil` error. If getting attributes fails, pass the relevant error as the second parameter; FSKit ignores the [`FSGetAttributesResult`](../../fsgetattributesresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
 
 ## See Also
 
-- [FSItem.GetAttributesRequest](fsitem/getattributesrequest.md)
+### Working with attributes
+- [FSItem.GetAttributesRequest](../../fsitem/getattributesrequest.md)
   A request to get attributes from an item.
-- [class FSGetAttributesResult](fsgetattributesresult.md)
+- [class FSGetAttributesResult](../../fsgetattributesresult.md)
   The result of a get-attributes call.
-- [func setAttributes(FSItem.SetAttributesRequest, on: FSItem, context: FSContext, replyHandler: (FSSetAttributesResult?, (any Error)?) -> Void)](fsvolume/handler/setattributes(_:on:context:replyhandler:).md)
+- [func setAttributes(FSItem.SetAttributesRequest, on: FSItem, context: FSContext, replyHandler: (FSSetAttributesResult?, (any Error)?) -> Void)](./setattributes%28_,on,context,replyhandler%29.md)
   Sets the given attributes on an item.
-- [FSItem.SetAttributesRequest](fsitem/setattributesrequest.md)
+- [FSItem.SetAttributesRequest](../../fsitem/setattributesrequest.md)
   A request to set attributes on an item.
-- [class FSSetAttributesResult](fssetattributesresult.md)
+- [class FSSetAttributesResult](../../fssetattributesresult.md)
   The restlt of a set-attributes call.
 
 

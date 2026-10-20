@@ -1,7 +1,8 @@
 # MarketplaceWebhookCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a marketplace webhook.
 
@@ -10,20 +11,20 @@ The request body you use to create a marketplace webhook.
 
 ## Declaration
 
-```swift
+```
 object MarketplaceWebhookCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object MarketplaceWebhookCreateRequest.Data.Attributes](marketplacewebhookcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object MarketplaceWebhookCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   The attributes you set that describe the marketplace webhook used to create a new resource.
 
 ## Properties
 
 - `attributes` (MarketplaceWebhookCreateRequest.Data.Attributes) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `marketplaceWebhooks`
 
 
 ---

@@ -1,7 +1,8 @@
 # batchStart
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var batchStart: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger batchStart;
 ```
 
 

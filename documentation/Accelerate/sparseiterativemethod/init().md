@@ -1,18 +1,19 @@
 # init()
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new iterative method structure.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,7 +23,8 @@ init()
 
 ## See Also
 
-- [init(method: Int32, options: SparseIterativeMethod.__Unnamed_union_options)](sparseiterativemethod/init(method:options:).md)
+### Initializers
+- [init(method: Int32, options: SparseIterativeMethod.__Unnamed_union_options)](./init%28method,options%29.md)
   Returns a new iterative method structure with the specified method and options.
 
 

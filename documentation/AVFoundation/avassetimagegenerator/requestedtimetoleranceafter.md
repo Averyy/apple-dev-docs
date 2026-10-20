@@ -1,7 +1,8 @@
 # requestedTimeToleranceAfter
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A maximum length of time after the requested time to allow image generation to occur.
 
@@ -19,29 +20,34 @@ A maximum length of time after the requested time to allow image generation to o
 var requestedTimeToleranceAfter: CMTime { get set }
 ```
 
+```objc
+@property (nonatomic) CMTime requestedTimeToleranceAfter;
+```
+
 ## Mentions
 
-- [Creating images from a video asset](creating-images-from-a-video-asset.md)
+- [Creating images from a video asset](../creating-images-from-a-video-asset.md)
 
 #### Discussion
 
-The default value is [`positiveInfinity`](https://developer.apple.com/documentation/coremedia/cmtime/positiveinfinity). Set the values of [`requestedTimeToleranceBefore`](avassetimagegenerator/requestedtimetolerancebefore.md) and [`requestedTimeToleranceAfter`](avassetimagegenerator/requestedtimetoleranceafter.md) to [`zero`](https://developer.apple.com/documentation/coremedia/cmtime/zero) to request frame-accurate image generation; this may incur additional decoding delay.
+The default value is [`positiveInfinity`](../../CoreMedia/cmtime/positiveinfinity.md). Set the values of [`requestedTimeToleranceBefore`](./requestedtimetolerancebefore.md) and [`requestedTimeToleranceAfter`](./requestedtimetoleranceafter.md) to [`zero`](../../CoreMedia/cmtime/zero.md) to request frame-accurate image generation; this may incur additional decoding delay.
 
 ## See Also
 
-- [var maximumSize: CGSize](avassetimagegenerator/maximumsize.md)
+### Configuring image generation
+- [var maximumSize: CGSize](./maximumsize.md)
   The maximum size of images to generate.
-- [var requestedTimeToleranceBefore: CMTime](avassetimagegenerator/requestedtimetolerancebefore.md)
+- [var requestedTimeToleranceBefore: CMTime](./requestedtimetolerancebefore.md)
   A maximum length of time before the requested time to allow image generation to occur.
-- [var dynamicRangePolicy: AVAssetImageGenerator.DynamicRangePolicy](avassetimagegenerator/dynamicrangepolicy-swift.property.md)
+- [var dynamicRangePolicy: AVAssetImageGenerator.DynamicRangePolicy](./dynamicrangepolicy-swift.property.md)
   The dynamic range policy to use when generating images.
-- [AVAssetImageGenerator.DynamicRangePolicy](avassetimagegenerator/dynamicrangepolicy-swift.struct.md)
+- [AVAssetImageGenerator.DynamicRangePolicy](./dynamicrangepolicy-swift.struct.md)
   A type that specifies the dynamic range policy to apply when generating images.
-- [var appliesPreferredTrackTransform: Bool](avassetimagegenerator/appliespreferredtracktransform.md)
+- [var appliesPreferredTrackTransform: Bool](./appliespreferredtracktransform.md)
   A Boolean value that specifies whether to apply the track matrix or matrices when generating an image from the asset.
-- [var apertureMode: AVAssetImageGenerator.ApertureMode?](avassetimagegenerator/aperturemode-swift.property.md)
+- [var apertureMode: AVAssetImageGenerator.ApertureMode?](./aperturemode-swift.property.md)
   Specifies the aperture mode for the generated image.
-- [AVAssetImageGenerator.ApertureMode](avassetimagegenerator/aperturemode-swift.struct.md)
+- [AVAssetImageGenerator.ApertureMode](./aperturemode-swift.struct.md)
   Constants that define aperture modes to use when generating images.
 
 

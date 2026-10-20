@@ -1,7 +1,8 @@
 # errorDescription
 
 **Framework**: RoomPlan  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A human-readable explanation for the particular model-provider error.
 

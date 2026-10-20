@@ -1,7 +1,8 @@
 # allowsContentScaling
 
 **Framework**: Quick Look  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether or not AR Quick Look allows content scaling in AR mode. Defaults to `YES` which allows scaling content in AR mode.
 
@@ -15,6 +16,10 @@ Whether or not AR Quick Look allows content scaling in AR mode. Defaults to `YES
 
 ```swift
 var allowsContentScaling: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL allowsContentScaling;
 ```
 
 

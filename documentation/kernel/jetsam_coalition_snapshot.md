@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct jetsam_coalition_snapshot {
     ...
 };
@@ -17,10 +17,10 @@ struct jetsam_coalition_snapshot {
 ## Topics
 
 ### Instance Properties
-- [jcs_flags](jetsam_coalition_snapshot/2881976-jcs_flags.md)
-- [jcs_id](jetsam_coalition_snapshot/2881990-jcs_id.md)
-- [jcs_leader_task_uniqueid](jetsam_coalition_snapshot/2881982-jcs_leader_task_uniqueid.md)
-- [jcs_thread_group](jetsam_coalition_snapshot/2881977-jcs_thread_group.md)
+- [jcs_flags](./jetsam_coalition_snapshot/api-2881976-jcs_flags.md)
+- [jcs_id](./jetsam_coalition_snapshot/api-2881990-jcs_id.md)
+- [jcs_leader_task_uniqueid](./jetsam_coalition_snapshot/api-2881982-jcs_leader_task_uniqueid.md)
+- [jcs_thread_group](./jetsam_coalition_snapshot/api-2881977-jcs_thread_group.md)
 
 
 ---

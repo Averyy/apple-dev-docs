@@ -1,14 +1,15 @@
 # hasL1Errata
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 15.1+ - Deprecated in 15.1
 
 ## Declaration
 
-```swift
+```c
 static bool hasL1Errata(IOPCIDevice *nub);
 ```
 

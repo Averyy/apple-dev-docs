@@ -1,7 +1,8 @@
 # downloadedFontDescriptors
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.13+
@@ -12,9 +13,14 @@
 var downloadedFontDescriptors: [NSFontDescriptor] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSFontDescriptor *> * downloadedFontDescriptors;
+```
+
 ## See Also
 
-- [func download(withCompletionHandler: ((any Error)?) -> Bool)](nsfontassetrequest/download(withcompletionhandler:).md)
+### Downloading a Font Asset
+- [func download(withCompletionHandler: ((any Error)?) -> Bool)](./download%28withcompletionhandler%29.md)
 
 
 ---

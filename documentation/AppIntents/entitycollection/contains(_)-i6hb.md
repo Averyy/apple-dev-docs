@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the collection contains the specified entity identifier.
 
@@ -20,13 +21,17 @@ Returns a Boolean value that indicates whether the collection contains the speci
 func contains(_ identifier: Entity.ID) -> Bool
 ```
 
+Available when `Entity` conforms to `AppEntity`.
+
 #### Return Value
 
 `true` if the identifier is in the collection, or `false` if it isn’t.
 
 #### Discussion
 
-- Parameter: - identifier: The identifier to look for in the collection.
+- Parameter:
+
+  - identifier: The identifier to look for in the collection.
 
 
 ---

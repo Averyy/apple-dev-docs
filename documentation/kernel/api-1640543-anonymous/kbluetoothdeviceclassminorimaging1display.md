@@ -1,14 +1,15 @@
 # kBluetoothDeviceClassMinorImaging1Display
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothDeviceClassMinorImaging1Display = 0x04
 ```
 

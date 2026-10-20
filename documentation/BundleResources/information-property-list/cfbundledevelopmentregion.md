@@ -1,7 +1,8 @@
 # CFBundleDevelopmentRegion
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The default language and region for the bundle, as a language ID.
 
@@ -13,9 +14,12 @@ The default language and region for the bundle, as a language ID.
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
+
+- **Name**: `CFBundleDevelopmentRegion` (Default localization)
+- **Type**: string
 
 
-**Type**: string
 
 **Default**: `en-US`
 
@@ -35,11 +39,12 @@ To specify a script, combine a language designator with a script designator sepa
 
 ## See Also
 
-- [CFBundleLocalizations](information-property-list/cfbundlelocalizations.md)
+### Localization
+- [CFBundleLocalizations](./cfbundlelocalizations.md)
   The localizations handled manually by your app.
-- [CFBundleAllowMixedLocalizations](information-property-list/cfbundleallowmixedlocalizations.md)
+- [CFBundleAllowMixedLocalizations](./cfbundleallowmixedlocalizations.md)
   A Boolean value that indicates whether the bundle supports the retrieval of localized strings from frameworks.
-- [TICapsLockLanguageSwitchCapable](information-property-list/ticapslocklanguageswitchcapable.md)
+- [TICapsLockLanguageSwitchCapable](./ticapslocklanguageswitchcapable.md)
   A Boolean value that enables the Caps Lock key to switch between Latin and non-Latin input sources.
 
 

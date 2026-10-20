@@ -1,7 +1,8 @@
 # MediaPlaybackSnapshot.PlaybackState.playing(rate:)
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Content is currently playing.
 

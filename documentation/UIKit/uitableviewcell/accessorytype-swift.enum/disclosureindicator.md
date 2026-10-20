@@ -1,16 +1,17 @@
 # UITableViewCell.AccessoryType.disclosureIndicator
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A chevron-shaped control for presenting new content.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,21 +19,26 @@ A chevron-shaped control for presenting new content.
 case disclosureIndicator
 ```
 
+```c
+UITableViewCellAccessoryDisclosureIndicator
+```
+
 #### Discussion
 
 Choose this type when you want taps in the accessory view to display new content. Connect the accessory view itself to a push segue to display that content.
 
-The table view doesn’t call the delegate’s [`tableView(_:accessoryButtonTappedForRowWith:)`](uitableviewdelegate/tableview(_:accessorybuttontappedforrowwith:).md) method in response to touch events in this accessory view.
+The table view doesn’t call the delegate’s [`tableView(_:accessoryButtonTappedForRowWith:)`](../../uitableviewdelegate/tableview%28_,accessorybuttontappedforrowwith%29.md) method in response to touch events in this accessory view.
 
 ## See Also
 
-- [UITableViewCell.AccessoryType.none](uitableviewcell/accessorytype-swift.enum/none.md)
+### Accessory views
+- [UITableViewCell.AccessoryType.none](./none.md)
   No accessory view.
-- [UITableViewCell.AccessoryType.detailDisclosureButton](uitableviewcell/accessorytype-swift.enum/detaildisclosurebutton.md)
+- [UITableViewCell.AccessoryType.detailDisclosureButton](./detaildisclosurebutton.md)
   An information button and a disclosure (chevron) control.
-- [UITableViewCell.AccessoryType.checkmark](uitableviewcell/accessorytype-swift.enum/checkmark.md)
+- [UITableViewCell.AccessoryType.checkmark](./checkmark.md)
   A checkmark image.
-- [UITableViewCell.AccessoryType.detailButton](uitableviewcell/accessorytype-swift.enum/detailbutton.md)
+- [UITableViewCell.AccessoryType.detailButton](./detailbutton.md)
   An information button.
 
 

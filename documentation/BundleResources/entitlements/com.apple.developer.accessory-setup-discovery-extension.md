@@ -1,7 +1,8 @@
 # com.apple.developer.accessory-setup-discovery-extension
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 An entitlement that lets an app extension discover and set up accessories.
 
@@ -9,17 +10,20 @@ An entitlement that lets an app extension discover and set up accessories.
 - iOS 18.0+
 - iPadOS 18.0+
 
+## Details
+
+- **Name**: `com.apple.developer.accessory-setup-discovery-extension`
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `true`
 
 #### Discussion
 
-To use [`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit) in your app, your accessory setup extension needs this entitlement. Don’t add the entitlement to your app.
+To use [AccessorySetupKit](../../AccessorySetupKit/AccessorySetupKit.md) in your app, your accessory setup extension needs this entitlement. Don’t add the entitlement to your app.
 
-For more information, see [`Discovering and configuring accessories`](https://developer.apple.com/documentation/accessorysetupkit/discovering-and-configuring-accessories).
+For more information, see [Discovering and configuring accessories](../../AccessorySetupKit/discovering-and-configuring-accessories.md).
 
 
 ---

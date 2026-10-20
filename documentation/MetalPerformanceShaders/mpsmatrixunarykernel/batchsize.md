@@ -1,7 +1,8 @@
 # batchSize
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,11 +18,16 @@
 var batchSize: Int { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSUInteger batchSize;
+```
+
 ## See Also
 
-- [var batchStart: Int](mpsmatrixunarykernel/batchstart.md)
-- [var resultMatrixOrigin: MTLOrigin](mpsmatrixunarykernel/resultmatrixorigin.md)
-- [var sourceMatrixOrigin: MTLOrigin](mpsmatrixunarykernel/sourcematrixorigin.md)
+### Instance Properties
+- [var batchStart: Int](./batchstart.md)
+- [var resultMatrixOrigin: MTLOrigin](./resultmatrixorigin.md)
+- [var sourceMatrixOrigin: MTLOrigin](./sourcematrixorigin.md)
 
 
 ---

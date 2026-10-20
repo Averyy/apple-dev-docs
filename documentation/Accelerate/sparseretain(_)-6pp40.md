@@ -1,7 +1,8 @@
 # SparseRetain(_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Increase reference count on a numeric factorization object, returning a copy.
 
@@ -20,27 +21,32 @@ Increase reference count on a numeric factorization object, returning a copy.
 func SparseRetain(_ Subfactor: SparseOpaqueSubfactor_Complex_Float) -> SparseOpaqueSubfactor_Complex_Float
 ```
 
+```c
+static SparseOpaqueSubfactor_Complex_Float SparseRetain(SparseOpaqueSubfactor_Complex_Float NumericFactor);
+```
+
 #### Return Value
 
 A copy of NumericFactor.
 
 ## See Also
 
-- [func SparseRetain(SparseOpaqueSymbolicFactorization) -> SparseOpaqueSymbolicFactorization](sparseretain(_:)-8r2dm.md)
+### Resource Retention
+- [func SparseRetain(SparseOpaqueSymbolicFactorization) -> SparseOpaqueSymbolicFactorization](./sparseretain%28_%29-8r2dm.md)
   Increases the reference count on a symbolic factorization object.
-- [func SparseRetain(SparseOpaqueFactorization_Double) -> SparseOpaqueFactorization_Double](sparseretain(_:)-8943y.md)
+- [func SparseRetain(SparseOpaqueFactorization_Double) -> SparseOpaqueFactorization_Double](./sparseretain%28_%29-8943y.md)
   Increases the reference count on a double-precision numeric factorization object.
-- [func SparseRetain(SparseOpaqueFactorization_Float) -> SparseOpaqueFactorization_Float](sparseretain(_:)-7onhr.md)
+- [func SparseRetain(SparseOpaqueFactorization_Float) -> SparseOpaqueFactorization_Float](./sparseretain%28_%29-7onhr.md)
   Increases the reference count on a single-precision numeric factorization object.
-- [func SparseRetain(SparseOpaqueSubfactor_Double) -> SparseOpaqueSubfactor_Double](sparseretain(_:)-2pmdl.md)
+- [func SparseRetain(SparseOpaqueSubfactor_Double) -> SparseOpaqueSubfactor_Double](./sparseretain%28_%29-2pmdl.md)
   Increases the reference count on a double-precision subfactor object.
-- [func SparseRetain(SparseOpaqueSubfactor_Float) -> SparseOpaqueSubfactor_Float](sparseretain(_:)-6mr6d.md)
+- [func SparseRetain(SparseOpaqueSubfactor_Float) -> SparseOpaqueSubfactor_Float](./sparseretain%28_%29-6mr6d.md)
   Increases the reference count on a single-precision subfactor object.
-- [func SparseRetain(SparseOpaqueFactorization_Complex_Double) -> SparseOpaqueFactorization_Complex_Double](sparseretain(_:)-5sahb.md)
+- [func SparseRetain(SparseOpaqueFactorization_Complex_Double) -> SparseOpaqueFactorization_Complex_Double](./sparseretain%28_%29-5sahb.md)
   Increase reference count on a numeric factorization object, returning a copy.
-- [func SparseRetain(SparseOpaqueSubfactor_Complex_Double) -> SparseOpaqueSubfactor_Complex_Double](sparseretain(_:)-92857.md)
+- [func SparseRetain(SparseOpaqueSubfactor_Complex_Double) -> SparseOpaqueSubfactor_Complex_Double](./sparseretain%28_%29-92857.md)
   Increase reference count on a numeric factorization object, returning a copy.
-- [func SparseRetain(SparseOpaqueFactorization_Complex_Float) -> SparseOpaqueFactorization_Complex_Float](sparseretain(_:)-92v4w.md)
+- [func SparseRetain(SparseOpaqueFactorization_Complex_Float) -> SparseOpaqueFactorization_Complex_Float](./sparseretain%28_%29-92v4w.md)
   Increase reference count on a numeric factorization object, returning a copy.
 
 

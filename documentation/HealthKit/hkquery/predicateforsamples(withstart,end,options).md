@@ -1,22 +1,27 @@
 # predicateForSamples(withStart:end:options:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a predicate for samples whose start and end dates fall within the specified time interval.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 class func predicateForSamples(withStart startDate: Date?, end endDate: Date?, options: HKQueryOptions = []) -> NSPredicate
+```
+
+```objc
++ (NSPredicate *) predicateForSamplesWithStartDate:(NSDate *) startDate endDate:(NSDate *) endDate options:(HKQueryOptions) options;
 ```
 
 #### Return Value
@@ -57,19 +62,21 @@ NSPredicate *explicitTimeInterval =
 
 - `startDate`: The start date for the target time interval.
 - `endDate`: The end date for the target time interval.
-- `options`: A constant that specifies how the sample’s start and end date are compared with the target time interval. For a list of possible values, see [`HKQueryOptions`](hkqueryoptions.md).
+- `options`: A constant that specifies how the sample’s start and end date are compared with the target time interval. For a list of possible values, see [`HKQueryOptions`](../hkqueryoptions.md).
 
 ## See Also
 
-- [let HKPredicateKeyPathEndDate: String](hkpredicatekeypathenddate.md)
+### Related Documentation
+- [let HKPredicateKeyPathEndDate: String](../hkpredicatekeypathenddate.md)
   The key path for accessing the sample’s end date.
-- [let HKPredicateKeyPathStartDate: String](hkpredicatekeypathstartdate.md)
+- [let HKPredicateKeyPathStartDate: String](../hkpredicatekeypathstartdate.md)
   The key path for accessing the sample’s start date.
-- [var endDate: Date](hksample/enddate.md)
+- [var endDate: Date](../hksample/enddate.md)
   The sample’s end date.
-- [var startDate: Date](hksample/startdate.md)
+- [var startDate: Date](../hksample/startdate.md)
   The sample’s start date.
-- [struct HKQueryOptions](hkqueryoptions.md)
+### Creating sample predicates
+- [struct HKQueryOptions](../hkqueryoptions.md)
   Constants that describe how a sample’s time period overlaps with the target time period.
 
 

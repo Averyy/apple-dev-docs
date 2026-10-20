@@ -1,7 +1,8 @@
 # textField
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Text displayed by the cell.
 
@@ -15,13 +16,18 @@ Text displayed by the cell.
 unowned(unsafe) var textField: NSTextField? { get set }
 ```
 
+```objc
+@property (assign, nullable) NSTextField * textField;
+```
+
 #### Discussion
 
-This property is typically configured when the row is created in the [`NSTableViewDelegate`](nstableviewdelegate.md) protocol method [`tableView(_:viewFor:row:)`](nstableviewdelegate/tableview(_:viewfor:row:).md).
+This property is typically configured when the row is created in the [`NSTableViewDelegate`](../nstableviewdelegate.md) protocol method [`tableView(_:viewFor:row:)`](../nstableviewdelegate/tableview%28_,viewfor,row%29.md).
 
 ## See Also
 
-- [var imageView: NSImageView?](nstablecellview/imageview.md)
+### Displayed Items
+- [var imageView: NSImageView?](./imageview.md)
   Image displayed by the cell.
 
 

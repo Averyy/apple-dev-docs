@@ -1,7 +1,8 @@
 # init(width:height:points:resolvedColors:background:smoothsColors:colorSpace:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new gradient mesh specified as a 2D grid of colored points, with already-resolved sRGB colors.
 

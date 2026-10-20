@@ -1,7 +1,8 @@
 # moreComing
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Boolean value that indicates whether there are more changes to request. If `moreComing` is `true`, request more changes using the value of the included `syncToken` key. If `moreComing` is `false`, there are no more changes.
 
@@ -10,7 +11,7 @@ Boolean value that indicates whether there are more changes to request. If `more
 
 ## Declaration
 
-```swift
+```
 attribute Boolean moreComing;
 ```
 

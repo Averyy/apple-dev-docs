@@ -1,14 +1,15 @@
 # vfs_context_get_special_port
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 int vfs_context_get_special_port(vfs_context_t, int, ipc_port_t *);
 ```
 

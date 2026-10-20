@@ -1,7 +1,8 @@
 # anchor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 represents the backing anchor on visionOS.
 

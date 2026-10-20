@@ -1,7 +1,8 @@
 # AVAudioSession.RouteSelection
 
 **Framework**: AVFAudio  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants used to define the active route selection.
 
@@ -20,28 +21,29 @@ enum RouteSelection
 ## Topics
 
 ### Creating a route selection
-- [init?(rawValue: Int)](avaudiosession/routeselection/init(rawvalue:).md)
+- [init?(rawValue: Int)](./routeselection/init%28rawvalue%29.md)
 ### Identifying the selected route
-- [AVAudioSession.RouteSelection.none](avaudiosession/routeselection/none.md)
+- [AVAudioSession.RouteSelection.none](./routeselection/none.md)
   No route is selected.
-- [AVAudioSession.RouteSelection.local](avaudiosession/routeselection/local.md)
+- [AVAudioSession.RouteSelection.local](./routeselection/local.md)
   The local device is selected.
-- [AVAudioSession.RouteSelection.external](avaudiosession/routeselection/external.md)
+- [AVAudioSession.RouteSelection.external](./routeselection/external.md)
   An external device is selected.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func prepareRouteSelectionForPlayback(completionHandler: (Bool, AVAudioSession.RouteSelection) -> Void)](avaudiosession/preparerouteselectionforplayback(completionhandler:).md)
+### Preparing for long-form video playback
+- [func prepareRouteSelectionForPlayback(completionHandler: (Bool, AVAudioSession.RouteSelection) -> Void)](./preparerouteselectionforplayback%28completionhandler%29.md)
   Prepares the route selection for long-form video playback.
 
 

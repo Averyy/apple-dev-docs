@@ -1,7 +1,8 @@
 # TextureResource.Format
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The pixel format and encoding of a texture.
 
@@ -26,31 +27,32 @@ The texture’s format controls the sampling and conversions (if any) to use whe
 ## Topics
 
 ### Creating the format
-- [static func color(TextureResource.Format.ColorSpace, pixelFormat: MTLPixelFormat) -> TextureResource.Format](textureresource/format/color(_:pixelformat:).md)
+- [static func color(TextureResource.Format.ColorSpace, pixelFormat: MTLPixelFormat) -> TextureResource.Format](./format/color%28_,pixelformat%29.md)
   Indicates that a texture contains color data to interpret in a specific color space.
-- [static func normal(TextureResource.Format.NormalEncoding, pixelFormat: MTLPixelFormat) -> TextureResource.Format](textureresource/format/normal(_:pixelformat:).md)
+- [static func normal(TextureResource.Format.NormalEncoding, pixelFormat: MTLPixelFormat) -> TextureResource.Format](./format/normal%28_,pixelformat%29.md)
   Indicates that a texture is a normal map.
-- [static func raw(pixelFormat: MTLPixelFormat) -> TextureResource.Format](textureresource/format/raw(pixelformat:).md)
+- [static func raw(pixelFormat: MTLPixelFormat) -> TextureResource.Format](./format/raw%28pixelformat%29.md)
   Indicates a texture for unmodified use by a shader.
 ### Defining the format profile
-- [TextureResource.Format.ColorSpace](textureresource/format/colorspace.md)
+- [TextureResource.Format.ColorSpace](./format/colorspace.md)
   A profile that specifies the interpretation of pixel values as a color.
-- [TextureResource.Format.NormalEncoding](textureresource/format/normalencoding.md)
+- [TextureResource.Format.NormalEncoding](./format/normalencoding.md)
   A profile that specifies the interpretation of pixel values as a normal.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [TextureResource.Contents](textureresource/contents.md)
+### Creating a texture resource
+- [TextureResource.Contents](./contents.md)
   An object that references the pixel data for each mipmap level of a texture.
-- [TextureResource.Compression](textureresource/compression.md)
+- [TextureResource.Compression](./compression.md)
   The compression to apply when importing an image as a texture.
 
 

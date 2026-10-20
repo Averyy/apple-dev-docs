@@ -1,7 +1,8 @@
 # filters
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of filters to apply when querying records for deletion.
 
@@ -10,7 +11,7 @@ The array of filters to apply when querying records for deletion.
 
 ## Declaration
 
-```swift
+```
 attribute CKDBQueryFilter[]? filters;
 ```
 

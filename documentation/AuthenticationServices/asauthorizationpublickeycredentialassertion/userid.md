@@ -2,6 +2,7 @@
 
 **Framework**: Authentication Services  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A user identifier for the assertion.
@@ -20,11 +21,16 @@ A user identifier for the assertion.
 var userID: Data! { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSData * userID;
+```
+
 ## See Also
 
-- [var signature: Data!](asauthorizationpublickeycredentialassertion/signature.md)
+### Getting the properties
+- [var signature: Data!](./signature.md)
   The signature for the assertion.
-- [var rawAuthenticatorData: Data!](asauthorizationpublickeycredentialassertion/rawauthenticatordata.md)
+- [var rawAuthenticatorData: Data!](./rawauthenticatordata.md)
   A byte sequence that contains additional information about the credential.
 
 

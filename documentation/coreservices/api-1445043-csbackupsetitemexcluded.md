@@ -1,7 +1,8 @@
 # CSBackupSetItemExcluded(_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Includes or excludes an item from the backup.
 
@@ -14,7 +15,11 @@ Includes or excludes an item from the backup.
 func CSBackupSetItemExcluded(_ item: CFURL!, _ exclude: Bool, _ excludeByPath: Bool) -> OSStatus
 ```
 
-#### Return_value
+```c
+OSStatus CSBackupSetItemExcluded(CFURLRef item, Boolean exclude, Boolean excludeByPath);
+```
+
+#### Return Value
 
 A result code. Returns `noErr` if the item was successfully included or excluded from the backup.
 
@@ -32,7 +37,8 @@ Your application can allow users to change the backup exclusion status of any fi
 
 ## See Also
 
-- [func CSBackupIsItemExcluded(CFURL!, UnsafeMutablePointer<DarwinBoolean>!) -> Bool](1443602-csbackupisitemexcluded.md)
+### Managing an Item’s Backup Exclusion Status
+- [func CSBackupIsItemExcluded(CFURL!, UnsafeMutablePointer<DarwinBoolean>!) -> Bool](./api-1443602-csbackupisitemexcluded.md)
   Returns a Boolean value indicating whether an item is currently excluded from the backup.
 
 

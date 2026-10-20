@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes this value into the given encoder.
 
@@ -19,6 +20,8 @@ Encodes this value into the given encoder.
 ```swift
 func encode(to encoder: any Encoder) throws
 ```
+
+Available when `ChangeElement` conforms to `Decodable` and `Encodable`.
 
 #### Discussion
 

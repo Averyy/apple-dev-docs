@@ -1,7 +1,8 @@
 # secondaryAttributedText
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An attributed variant of the secondary text.
 
@@ -10,7 +11,7 @@ An attributed variant of the secondary text.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,17 +21,18 @@ var secondaryAttributedText: NSAttributedString? { get set }
 
 #### Discussion
 
-This value supersedes the [`secondaryText`](uilistcontentconfiguration-c.class/secondarytext.md) property.
+This value supersedes the [`secondaryText`](../uilistcontentconfiguration-c.class/secondarytext.md) property.
 
 ## See Also
 
-- [var image: UIImage?](uilistcontentconfiguration-swift.struct/image.md)
+### Customizing content
+- [var image: UIImage?](./image.md)
   The image to display.
-- [var text: String?](uilistcontentconfiguration-swift.struct/text.md)
+- [var text: String?](./text.md)
   The primary text.
-- [var attributedText: NSAttributedString?](uilistcontentconfiguration-swift.struct/attributedtext.md)
+- [var attributedText: NSAttributedString?](./attributedtext.md)
   An attributed variant of the primary text.
-- [var secondaryText: String?](uilistcontentconfiguration-swift.struct/secondarytext.md)
+- [var secondaryText: String?](./secondarytext.md)
   The secondary text.
 
 

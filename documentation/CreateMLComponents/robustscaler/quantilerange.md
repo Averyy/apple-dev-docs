@@ -1,7 +1,8 @@
 # quantileRange
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The quantile range used to compute the scale.
 

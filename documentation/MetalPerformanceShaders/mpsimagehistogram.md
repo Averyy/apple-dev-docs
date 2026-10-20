@@ -1,7 +1,8 @@
 # MPSImageHistogram
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A filter that computes the histogram of an image.
 
@@ -19,11 +20,15 @@ A filter that computes the histogram of an image.
 class MPSImageHistogram
 ```
 
+```objc
+@interface MPSImageHistogram : MPSKernel
+```
+
 #### Overview
 
-Typically, you use an [`MPSImageHistogram`](mpsimagehistogram.md) filter to calculate an image’s histogram that is passed to a subsequent filter such as [`MPSImageHistogramEqualization`](mpsimagehistogramequalization.md) or [`MPSImageHistogramSpecification`](mpsimagehistogramspecification.md).
+Typically, you use an [`MPSImageHistogram`](./mpsimagehistogram.md) filter to calculate an image’s histogram that is passed to a subsequent filter such as [`MPSImageHistogramEqualization`](./mpsimagehistogramequalization.md) or [`MPSImageHistogramSpecification`](./mpsimagehistogramspecification.md).
 
-The following listing shows how you can create a histogram filter to calculate the histogram of the [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture), `sourceTexture`. The filter is passed an instance of [`MPSImageHistogramInfo`](mpsimagehistograminfo.md) that specifies information to compute the histogram for the channels of an image. After encoding, `histogramInfoBuffer` contains the histogram information and can be used for further operations such as equalization or specification.
+The following listing shows how you can create a histogram filter to calculate the histogram of the [`MTLTexture`](../Metal/mtltexture.md), `sourceTexture`. The filter is passed an instance of [`MPSImageHistogramInfo`](./mpsimagehistograminfo.md) that specifies information to compute the histogram for the channels of an image. After encoding, `histogramInfoBuffer` contains the histogram information and can be used for further operations such as equalization or specification.
 
 Listing 1. Creating a histogram filter
 
@@ -49,45 +54,46 @@ calculation.encode(to: commandBuffer,
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagehistogram/init(coder:device:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpsimagehistogram/init%28coder,device%29.md)
 ### Methods
-- [init(device: any MTLDevice, histogramInfo: UnsafePointer<MPSImageHistogramInfo>)](mpsimagehistogram/init(device:histograminfo:).md)
+- [init(device: any MTLDevice, histogramInfo: UnsafePointer<MPSImageHistogramInfo>)](./mpsimagehistogram/init%28device,histograminfo%29.md)
   Initializes a histogram with specific information.
-- [struct MPSImageHistogramInfo](mpsimagehistograminfo.md)
+- [struct MPSImageHistogramInfo](./mpsimagehistograminfo.md)
   The information used to compute the histogram channels of an image.
-- [func encode(to: any MTLCommandBuffer, sourceTexture: any MTLTexture, histogram: any MTLBuffer, histogramOffset: Int)](mpsimagehistogram/encode(to:sourcetexture:histogram:histogramoffset:).md)
+- [func encode(to: any MTLCommandBuffer, sourceTexture: any MTLTexture, histogram: any MTLBuffer, histogramOffset: Int)](./mpsimagehistogram/encode%28to,sourcetexture,histogram,histogramoffset%29.md)
   Encodes the filter to a command buffer using a compute command encoder.
-- [func histogramSize(forSourceFormat: MTLPixelFormat) -> Int](mpsimagehistogram/histogramsize(forsourceformat:).md)
+- [func histogramSize(forSourceFormat: MTLPixelFormat) -> Int](./mpsimagehistogram/histogramsize%28forsourceformat%29.md)
   The amount of space the histogram will take up in the output buffer.
 ### Properties
-- [var clipRectSource: MTLRegion](mpsimagehistogram/cliprectsource.md)
+- [var clipRectSource: MTLRegion](./mpsimagehistogram/cliprectsource.md)
   The source rectangle to use when reading data.
-- [var zeroHistogram: Bool](mpsimagehistogram/zerohistogram.md)
+- [var zeroHistogram: Bool](./mpsimagehistogram/zerohistogram.md)
   Determines whether to zero-initialize the histogram results.
-- [var histogramInfo: MPSImageHistogramInfo](mpsimagehistogram/histograminfo.md)
+- [var histogramInfo: MPSImageHistogramInfo](./mpsimagehistogram/histograminfo.md)
   A structure describing the histogram content.
-- [var minPixelThresholdValue: vector_float4](mpsimagehistogram/minpixelthresholdvalue.md)
+- [var minPixelThresholdValue: vector_float4](./mpsimagehistogram/minpixelthresholdvalue.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSKernel](mpskernel.md)
+- [MPSKernel](./mpskernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSImageHistogramEqualization](mpsimagehistogramequalization.md)
+### Histogram Image Filters
+- [class MPSImageHistogramEqualization](./mpsimagehistogramequalization.md)
   A filter that equalizes the histogram of an image.
-- [class MPSImageHistogramSpecification](mpsimagehistogramspecification.md)
+- [class MPSImageHistogramSpecification](./mpsimagehistogramspecification.md)
   A filter that performs a histogram specification operation on an image.
 
 

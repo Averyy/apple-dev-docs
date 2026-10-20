@@ -1,7 +1,8 @@
 # supportsUserPresets
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -17,20 +18,33 @@
 var supportsUserPresets: Bool { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, readonly) BOOL supportsUserPresets;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) BOOL supportsUserPresets;
+```
+
 ## See Also
 
-- [var fullState: [String : Any]?](auaudiounit/fullstate.md)
+### Managing Presets
+- [var fullState: [String : Any]?](./fullstate.md)
   A persistable snapshot of the audio unit’s properties and parameters, suitable for saving as a user preset.
-- [var fullStateForDocument: [String : Any]?](auaudiounit/fullstatefordocument.md)
+- [var fullStateForDocument: [String : Any]?](./fullstatefordocument.md)
   A persistable snapshot of the audio unit’s properties and parameters, suitable for saving in a user’s document.
-- [var factoryPresets: [AUAudioUnitPreset]?](auaudiounit/factorypresets.md)
+- [var factoryPresets: [AUAudioUnitPreset]?](./factorypresets.md)
   A collection of presets provided by the audio unit’s developer.
-- [var currentPreset: AUAudioUnitPreset?](auaudiounit/currentpreset.md)
+- [var currentPreset: AUAudioUnitPreset?](./currentpreset.md)
   The audio unit’s last-selected preset.
-- [var userPresets: [AUAudioUnitPreset]](auaudiounit/userpresets.md)
-- [func saveUserPreset(AUAudioUnitPreset) throws](auaudiounit/saveuserpreset(_:).md)
-- [func deleteUserPreset(AUAudioUnitPreset) throws](auaudiounit/deleteuserpreset(_:).md)
-- [func presetState(for: AUAudioUnitPreset) throws -> [String : Any]](auaudiounit/presetstate(for:).md)
+- [var userPresets: [AUAudioUnitPreset]](./userpresets.md)
+- [func saveUserPreset(AUAudioUnitPreset) throws](./saveuserpreset%28_%29.md)
+- [func deleteUserPreset(AUAudioUnitPreset) throws](./deleteuserpreset%28_%29.md)
+- [func presetState(for: AUAudioUnitPreset) throws -> [String : Any]](./presetstate%28for%29.md)
 
 
 ---

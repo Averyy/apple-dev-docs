@@ -2,6 +2,7 @@
 
 **Framework**: CrashReportExtension  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 A method the system calls when a crash report is ready to be processed.
@@ -10,7 +11,7 @@ A method the system calls when a crash report is ready to be processed.
 - iOS 27.0+
 - iPadOS 27.0+
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,7 @@ func processCrashReport(process: CrashedProcess)
 
 #### Discussion
 
-Implement this method by inspecting the [`CrashedProcess`](crashedprocess.md) object to prepare a crash report. You can then persist this report or send it back to your own server.
+Implement this method by inspecting the [`CrashedProcess`](../crashedprocess.md) object to prepare a crash report. You can then persist this report or send it back to your own server.
 
 ## Parameters
 
@@ -28,7 +29,8 @@ Implement this method by inspecting the [`CrashedProcess`](crashedprocess.md) ob
 
 ## See Also
 
-- [class CrashedProcess](crashedprocess.md)
+### Processing a crash report
+- [class CrashedProcess](../crashedprocess.md)
   A synchronous client for accessing crash data from the host process.
 
 

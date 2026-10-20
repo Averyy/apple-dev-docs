@@ -1,7 +1,8 @@
 # MLDataValue.ValueType
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration describing the supported underlying types that an `MLDataValue wraps`.
 
@@ -22,42 +23,43 @@ enum ValueType
 ## Topics
 
 ### Supported values
-- [MLDataValue.ValueType.int](mldatavalue/valuetype/int.md)
+- [MLDataValue.ValueType.int](./valuetype/int.md)
   An integer type.
-- [MLDataValue.ValueType.double](mldatavalue/valuetype/double.md)
+- [MLDataValue.ValueType.double](./valuetype/double.md)
   A double type.
-- [MLDataValue.ValueType.string](mldatavalue/valuetype/string.md)
+- [MLDataValue.ValueType.string](./valuetype/string.md)
   A string type.
-- [MLDataValue.ValueType.dictionary](mldatavalue/valuetype/dictionary.md)
+- [MLDataValue.ValueType.dictionary](./valuetype/dictionary.md)
   A dictionary type.
-- [MLDataValue.ValueType.sequence](mldatavalue/valuetype/sequence.md)
+- [MLDataValue.ValueType.sequence](./valuetype/sequence.md)
   A sequence type.
-- [MLDataValue.ValueType.multiArray](mldatavalue/valuetype/multiarray.md)
+- [MLDataValue.ValueType.multiArray](./valuetype/multiarray.md)
   A multidimensional type.
-- [MLDataValue.ValueType.invalid](mldatavalue/valuetype/invalid.md)
+- [MLDataValue.ValueType.invalid](./valuetype/invalid.md)
   An invalid type.
 ### Describing a data value type
-- [var description: String](mldatavalue/valuetype/description.md)
+- [var description: String](./valuetype/description.md)
   A text representation of the data value type.
-- [var debugDescription: String](mldatavalue/valuetype/debugdescription.md)
+- [var debugDescription: String](./valuetype/debugdescription.md)
   A text representation of the data value type that’s suitable for output during debugging.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mldatavalue/valuetype/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mldatavalue/valuetype/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./valuetype/customdebugstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./valuetype/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [var type: MLDataValue.ValueType](mldatavalue/type.md)
+### Inspecting the type
+- [var type: MLDataValue.ValueType](./type.md)
   The kind of the underlying value that the data value wraps.
 
 

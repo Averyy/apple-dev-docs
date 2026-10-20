@@ -1,21 +1,23 @@
 # Base media info atom
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 An atom that defines the media’s control information, including graphics mode and balance information.
 
 #### Overview
 
-See [`Base media info atom`](base_media_info_atom.md).
+See [`Base media info atom`](../base_media_info_atom.md).
 
 ## See Also
 
-- [Size](base_media_information_header_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this base media information header atom.
-- [Type](base_media_information_header_atom/type.md)
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
-- [Text media information atom](base_media_information_header_atom/text_media_information_atom.md)
+- [Text media information atom](./text_media_information_atom.md)
   An atom that contains information about text media.
 
 

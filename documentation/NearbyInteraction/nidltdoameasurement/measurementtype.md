@@ -1,7 +1,8 @@
 # measurementType
 
 **Framework**: Nearby Interaction  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of anchor message that the measurement derives from.
 
@@ -16,11 +17,16 @@ The type of anchor message that the measurement derives from.
 var measurementType: NIDLTDOAMeasurementType { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) NIDLTDOAMeasurementType measurementType;
+```
+
 ## See Also
 
-- [var carrierFrequencyOffset: Double](nidltdoameasurement/carrierfrequencyoffset.md)
+### Evaluating the message
+- [var carrierFrequencyOffset: Double](./carrierfrequencyoffset.md)
   The drift, as a ratio, across the frequencies of the receiver and the anchor.
-- [var responderClockFrequencyOffset: Double?](nidltdoameasurement/responderclockfrequencyoffset-8wu5r.md)
+- [var responderClockFrequencyOffset: Double?](./responderclockfrequencyoffset-8wu5r.md)
   The clock frequency offset of the responder anchor relative to the initiator anchor.
 
 

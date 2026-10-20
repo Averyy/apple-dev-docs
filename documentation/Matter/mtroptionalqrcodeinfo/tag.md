@@ -1,7 +1,8 @@
 # tag
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.1+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var tag: NSNumber { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSNumber * tag;
 ```
 
 

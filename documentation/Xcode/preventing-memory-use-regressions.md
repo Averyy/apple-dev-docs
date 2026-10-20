@@ -1,12 +1,13 @@
 # Preventing memory-use regressions
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Measure the memory that your app’s features use, and detect increases by using XCTest performance tests.
 
 #### Overview
 
-[`XCTest`](https://developer.apple.com/documentation/xctest) can measure the amount of memory allocated by your app while it executes a test case. To measure memory use, create a performance test in your app’s unit test target, and pass an instance of [`XCTMemoryMetric`](https://developer.apple.com/documentation/xctest/xctmemorymetric) to `measure(metrics:)`. Inside the block, call the code from your app that demonstrates the problematic memory use.
+[XCTest](../XCTest/XCTest.md) can measure the amount of memory allocated by your app while it executes a test case. To measure memory use, create a performance test in your app’s unit test target, and pass an instance of [`XCTMemoryMetric`](../XCTest/xctmemorymetric.md) to `measure(metrics:)`. Inside the block, call the code from your app that demonstrates the problematic memory use.
 
 ```swift
 class MemoryTests: XCTestCase {
@@ -22,11 +23,12 @@ When you run this test, Xcode measures the peak memory use observed while the bl
 
 ## See Also
 
-- [Gathering information about memory use](gathering-information-about-memory-use.md)
+### Tasks
+- [Gathering information about memory use](./gathering-information-about-memory-use.md)
   Identify memory-use inefficiencies by measuring and profiling your app.
-- [Making changes to reduce memory use](making-changes-to-reduce-memory-use.md)
+- [Making changes to reduce memory use](./making-changes-to-reduce-memory-use.md)
   Decrease your app’s use of memory by addressing common causes of excessive use.
-- [Responding to low-memory warnings](responding-to-low-memory-warnings.md)
+- [Responding to low-memory warnings](./responding-to-low-memory-warnings.md)
   Detect when your app is using excessive memory, and bring memory use under control.
 
 

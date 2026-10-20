@@ -1,7 +1,8 @@
 # CNContactImageDataKey
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Image data for a contact.
 
@@ -19,15 +20,20 @@ Image data for a contact.
 let CNContactImageDataKey: String
 ```
 
+```c
+extern NSString * const CNContactImageDataKey;
+```
+
 #### Discussion
 
 This key takes a string value.
 
 ## See Also
 
-- [let CNContactThumbnailImageDataKey: String](cncontactthumbnailimagedatakey.md)
+### Images
+- [let CNContactThumbnailImageDataKey: String](./cncontactthumbnailimagedatakey.md)
   Thumbnail data for a contact.
-- [let CNContactImageDataAvailableKey: String](cncontactimagedataavailablekey.md)
+- [let CNContactImageDataAvailableKey: String](./cncontactimagedataavailablekey.md)
   Image data availability for a contact.
 
 

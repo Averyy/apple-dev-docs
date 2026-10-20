@@ -1,7 +1,8 @@
 # changeByNumber(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func changeByNumber(with params: MTRChannelClusterChangeChannelByNumberParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func changeByNumber(with params: MTRChannelClusterChangeChannelByNumberParams) async throws
+```
+
+```objc
+- (void) changeChannelByNumberWithParams:(MTRChannelClusterChangeChannelByNumberParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

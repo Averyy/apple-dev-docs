@@ -1,24 +1,33 @@
 # preallocateSpace(for:at:length:flags:packer:replyHandler:)
 
 **Framework**: FSKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Preallocates and maps disk space for the given file.
 
 **Availability**:
-- macOS 15.4+
+- macOS 15.4+ - Deprecated in 27.0
 
 ## Declaration
 
 ```swift
+optional func preallocateSpace(for file: FSItem, at offset: off_t, length: Int, flags: FSVolume.PreallocateFlags, packer: FSExtentPacker, replyHandler reply: @escaping @Sendable (Int, (any Error)?) -> Void)
+```
+
+```swift
 optional func preallocateSpace(for file: FSItem, at offset: off_t, length: Int, flags: FSVolume.PreallocateFlags, packer: FSExtentPacker) async throws -> Int
+```
+
+```objc
+- (void) preallocateSpaceForFile:(FSItem *) file atOffset:(off_t) offset length:(size_t) length flags:(FSPreallocateFlags) flags packer:(FSExtentPacker *) packer replyHandler:(void (^)(size_t bytesAllocated, NSError *error)) reply;
 ```
 
 #### Discussion
 
 This method allows the module to opportunistically supply extents, avoiding future calls to `blockmapFile(_:offset:length:flags:operationID:packer:)`.
 
-> ❗ **Important**: Only implement this method if your file system conforms to [`FSVolume.PreallocateOperations`](fsvolume/preallocateoperations.md).
+> ❗ **Important**: Only implement this method if your file system conforms to [`FSVolume.PreallocateOperations`](../fsvolume/preallocateoperations.md).
 
 ## Parameters
 
@@ -31,13 +40,14 @@ This method allows the module to opportunistically supply extents, avoiding futu
 
 ## See Also
 
-- [func createFile(name: FSFileName, in: FSItem, attributes: FSItem.SetAttributesRequest, packer: FSExtentPacker, replyHandler: (FSItem?, FSFileName?, (any Error)?) -> Void)](fsvolumekerneloffloadediooperations/createfile(name:in:attributes:packer:replyhandler:).md)
+### Working with items
+- [func createFile(name: FSFileName, in: FSItem, attributes: FSItem.SetAttributesRequest, packer: FSExtentPacker, replyHandler: (FSItem?, FSFileName?, (any Error)?) -> Void)](./createfile%28name,in,attributes,packer,replyhandler%29.md)
   Creates a new file item and map its disk space.
-- [FSItem.SetAttributesRequest](fsitem/setattributesrequest.md)
+- [FSItem.SetAttributesRequest](../fsitem/setattributesrequest.md)
   A request to set attributes on an item.
-- [func lookupItem(name: FSFileName, in: FSItem, packer: FSExtentPacker, replyHandler: (FSItem?, FSFileName?, (any Error)?) -> Void)](fsvolumekerneloffloadediooperations/lookupitem(name:in:packer:replyhandler:).md)
+- [func lookupItem(name: FSFileName, in: FSItem, packer: FSExtentPacker, replyHandler: (FSItem?, FSFileName?, (any Error)?) -> Void)](./lookupitem%28name,in,packer,replyhandler%29.md)
   Looks up an item within a directory and maps its disk space.
-- [FSVolume.PreallocateFlags](fsvolume/preallocateflags.md)
+- [FSVolume.PreallocateFlags](../fsvolume/preallocateflags.md)
   Behavior flags for preallocation operations.
 
 

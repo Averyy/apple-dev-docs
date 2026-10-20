@@ -1,17 +1,22 @@
 # findNamed(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a web frame that matches the given name.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 func findNamed(_ name: String!) -> WebFrame!
+```
+
+```objc
+- (WebFrame *) findFrameNamed:(NSString *) name;
 ```
 
 #### Return Value
@@ -28,7 +33,8 @@ This method searches the receiver and its descendants first, then the receiverâ€
 
 ## See Also
 
-- [var name: String!](webframe/name.md)
+### Finding Frames
+- [var name: String!](./name.md)
   The web frameâ€™s name.
 
 

@@ -1,7 +1,8 @@
 # MeshBuffers.Rate.faceVarying
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Buffer maps at the index rate.
 
@@ -11,7 +12,7 @@ Buffer maps at the index rate.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

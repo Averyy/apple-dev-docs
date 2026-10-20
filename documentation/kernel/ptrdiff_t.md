@@ -1,14 +1,15 @@
 # ptrdiff_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 typedef typeof (((int *)nullptr) - ((int *)nullptr)) ptrdiff_t;
 ```
 

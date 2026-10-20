@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Called if the discardable contents are no longer being accessed.
@@ -21,13 +22,18 @@ Called if the discardable contents are no longer being accessed.
 func endContentAccess()
 ```
 
+```objc
+- (void) endContentAccess;
+```
+
 #### Discussion
 
 This method decrements the counter variable of the object, which will usually bring the value of the counter variable back down to 0, which allows the discardable contents of the object to be thrown away if necessary.
 
 ## See Also
 
-- [func beginContentAccess() -> Bool](nsdiscardablecontent/begincontentaccess.md)
+### Accessing Content
+- [func beginContentAccess() -> Bool](./begincontentaccess%28%29.md)
   Returns a Boolean value indicating whether the discardable contents are still available and have been successfully accessed.
 
 

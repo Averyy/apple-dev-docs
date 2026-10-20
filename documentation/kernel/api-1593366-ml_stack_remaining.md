@@ -1,14 +1,15 @@
 # ml_stack_remaining
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 vm_offset_t ml_stack_remaining(void);
 ```
 

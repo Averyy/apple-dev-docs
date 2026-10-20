@@ -1,7 +1,8 @@
 # MPSGraphControlFlowDependencyBlock
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The scope where all the operations defined in this block get control-dependency operations.
 
@@ -17,6 +18,10 @@ The scope where all the operations defined in this block get control-dependency 
 
 ```swift
 typealias MPSGraphControlFlowDependencyBlock = () -> [MPSGraphTensor]
+```
+
+```c
+typedef NSArray<MPSGraphTensor *> *(^)() MPSGraphControlFlowDependencyBlock;
 ```
 
 #### Return Value

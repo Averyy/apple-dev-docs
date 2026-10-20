@@ -1,21 +1,26 @@
 # UITableViewCell.AccessoryType.none
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No accessory view.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case none
+```
+
+```c
+UITableViewCellAccessoryNone
 ```
 
 #### Discussion
@@ -24,13 +29,14 @@ This is the default value.
 
 ## See Also
 
-- [UITableViewCell.AccessoryType.disclosureIndicator](uitableviewcell/accessorytype-swift.enum/disclosureindicator.md)
+### Accessory views
+- [UITableViewCell.AccessoryType.disclosureIndicator](./disclosureindicator.md)
   A chevron-shaped control for presenting new content.
-- [UITableViewCell.AccessoryType.detailDisclosureButton](uitableviewcell/accessorytype-swift.enum/detaildisclosurebutton.md)
+- [UITableViewCell.AccessoryType.detailDisclosureButton](./detaildisclosurebutton.md)
   An information button and a disclosure (chevron) control.
-- [UITableViewCell.AccessoryType.checkmark](uitableviewcell/accessorytype-swift.enum/checkmark.md)
+- [UITableViewCell.AccessoryType.checkmark](./checkmark.md)
   A checkmark image.
-- [UITableViewCell.AccessoryType.detailButton](uitableviewcell/accessorytype-swift.enum/detailbutton.md)
+- [UITableViewCell.AccessoryType.detailButton](./detailbutton.md)
   An information button.
 
 

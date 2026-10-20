@@ -1,7 +1,8 @@
 # init(darkUserInterfaceStyle:layoutRightToLeft:)
 
 **Framework**: PaperKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new rendering options value.
 
@@ -25,7 +26,8 @@ init(darkUserInterfaceStyle: Bool = false, layoutRightToLeft: Bool = false)
 
 ## See Also
 
-- [init(traitCollection: UITraitCollection)](renderingoptions/init(traitcollection:).md)
+### Creating rendering options
+- [init(traitCollection: UITraitCollection)](./init%28traitcollection%29.md)
   Creates the most suitable options for rendering on a device with the specified traits.
 
 

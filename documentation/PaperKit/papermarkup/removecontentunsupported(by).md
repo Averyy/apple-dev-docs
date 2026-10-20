@@ -1,7 +1,8 @@
 # removeContentUnsupported(by:)
 
 **Framework**: PaperKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Remove all contents that is not supported by the provided feature set.
 

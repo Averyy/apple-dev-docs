@@ -1,7 +1,8 @@
 # setPosterImage(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the poster image to display for the movie.
 
@@ -14,6 +15,10 @@ Sets the poster image to display for the movie.
 func setPosterImage(_ posterImage: WKImage?)
 ```
 
+```objc
+- (void) setPosterImage:(WKImage *) posterImage;
+```
+
 #### Discussion
 
 This method changes the poster image that is displayed for the movie.
@@ -24,11 +29,12 @@ This method changes the poster image that is displayed for the movie.
 
 ## See Also
 
-- [func setMovieURL(URL)](wkinterfacemovie/setmovieurl(_:).md)
+### Setting the Movie Attributes
+- [func setMovieURL(URL)](./setmovieurl%28_%29.md)
   Sets the URL of the movie to play.
-- [func setVideoGravity(WKVideoGravity)](wkinterfacemovie/setvideogravity(_:).md)
+- [func setVideoGravity(WKVideoGravity)](./setvideogravity%28_%29.md)
   Sets the resizing behavior for the movie content.
-- [func setLoops(Bool)](wkinterfacemovie/setloops(_:).md)
+- [func setLoops(Bool)](./setloops%28_%29.md)
   Sets a Boolean value indicating whether the movie plays in a continuous loop.
 
 

@@ -1,7 +1,8 @@
 # Notification.Name
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An alias for a type used to represent the name of a notification.
 
@@ -22,9 +23,10 @@ typealias Name = NSNotification.Name
 
 ## See Also
 
-- [init(name: Notification.Name, object: Any?, userInfo: [AnyHashable : Any]?)](notification/init(name:object:userinfo:).md)
+### Creating a Notification
+- [init(name: Notification.Name, object: Any?, userInfo: [AnyHashable : Any]?)](./init%28name,object,userinfo%29.md)
   Initializes a new notification.
-- [NSNotification.Name](nsnotification/name-swift.struct.md)
+- [NSNotification.Name](../nsnotification/name-swift.struct.md)
   A structure that defines the name of a notification.
 
 

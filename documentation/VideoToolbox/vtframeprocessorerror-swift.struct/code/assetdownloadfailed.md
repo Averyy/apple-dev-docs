@@ -1,7 +1,8 @@
 # VTFrameProcessorError.Code.assetDownloadFailed
 
 **Framework**: Video Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Returned if download of a required model asset for the processor failed
 
@@ -17,6 +18,10 @@ Returned if download of a required model asset for the processor failed
 
 ```swift
 case assetDownloadFailed
+```
+
+```c
+VTFrameProcessorAssetDownloadFailed
 ```
 
 

@@ -1,7 +1,8 @@
 # header
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stored `Header` instance.
 

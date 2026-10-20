@@ -1,14 +1,15 @@
 # kHIDUsage_Dig_GestureCharacterEncoding
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Dig_GestureCharacterEncoding = 0x64
 ```
 

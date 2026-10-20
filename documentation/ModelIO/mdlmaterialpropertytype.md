@@ -1,9 +1,10 @@
 # MDLMaterialPropertyType
 
 **Framework**: Model I/O  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Options for the data type of a material property, used by the [`type`](mdlmaterialproperty/type.md) property.
+Options for the data type of a material property, used by the [`type`](./mdlmaterialproperty/type.md) property.
 
 **Availability**:
 - iOS 9.0+
@@ -19,52 +20,57 @@ Options for the data type of a material property, used by the [`type`](mdlmateri
 enum MDLMaterialPropertyType
 ```
 
+```c
+enum MDLMaterialPropertyType : NSUInteger;
+```
+
 #### Overview
 
-Reading a material property’s value using an accessor for a type other than that corresponding to the [`type`](mdlmaterialproperty/type.md) property produces undefined results.
+Reading a material property’s value using an accessor for a type other than that corresponding to the [`type`](./mdlmaterialproperty/type.md) property produces undefined results.
 
 ## Topics
 
 ### Constants
-- [MDLMaterialPropertyType.none](mdlmaterialpropertytype/none.md)
+- [MDLMaterialPropertyType.none](./mdlmaterialpropertytype/none.md)
   The material property’s value has not been initialized.
-- [MDLMaterialPropertyType.string](mdlmaterialpropertytype/string.md)
+- [MDLMaterialPropertyType.string](./mdlmaterialpropertytype/string.md)
   The material’s value is a string.
-- [MDLMaterialPropertyType.URL](mdlmaterialpropertytype/url.md)
+- [MDLMaterialPropertyType.URL](./mdlmaterialpropertytype/url.md)
   The material property’s value is a URL—typically, a URL referencing a texture image.
-- [MDLMaterialPropertyType.texture](mdlmaterialpropertytype/texture.md)
-  The material property’s value is a [`MDLTextureSampler`](mdltexturesampler.md) object that provides both a texture image and texture rendering parameters.
-- [MDLMaterialPropertyType.color](mdlmaterialpropertytype/color.md)
+- [MDLMaterialPropertyType.texture](./mdlmaterialpropertytype/texture.md)
+  The material property’s value is a [`MDLTextureSampler`](./mdltexturesampler.md) object that provides both a texture image and texture rendering parameters.
+- [MDLMaterialPropertyType.color](./mdlmaterialpropertytype/color.md)
   The material property’s value is a uniform color.
-- [MDLMaterialPropertyType.float](mdlmaterialpropertytype/float.md)
+- [MDLMaterialPropertyType.float](./mdlmaterialpropertytype/float.md)
   The material property’s value is a floating-point scalar.
-- [MDLMaterialPropertyType.float2](mdlmaterialpropertytype/float2.md)
+- [MDLMaterialPropertyType.float2](./mdlmaterialpropertytype/float2.md)
   The material property’s value is a 2-component floating-point vector.
-- [MDLMaterialPropertyType.float3](mdlmaterialpropertytype/float3.md)
+- [MDLMaterialPropertyType.float3](./mdlmaterialpropertytype/float3.md)
   The material property’s value is a 3-component floating-point vector.
-- [MDLMaterialPropertyType.float4](mdlmaterialpropertytype/float4.md)
+- [MDLMaterialPropertyType.float4](./mdlmaterialpropertytype/float4.md)
   The material property’s value is a 4-component floating-point vector.
-- [MDLMaterialPropertyType.matrix44](mdlmaterialpropertytype/matrix44.md)
+- [MDLMaterialPropertyType.matrix44](./mdlmaterialpropertytype/matrix44.md)
   The material property’s value is a 4 x 4 floating-point matrix.
 ### Enumeration Cases
-- [MDLMaterialPropertyType.buffer](mdlmaterialpropertytype/buffer.md)
+- [MDLMaterialPropertyType.buffer](./mdlmaterialpropertytype/buffer.md)
 ### Initializers
-- [init?(rawValue: UInt)](mdlmaterialpropertytype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mdlmaterialpropertytype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum MDLMaterialSemantic](mdlmaterialsemantic.md)
-  Options for the semantic use of a material property’s value in rendering a particular surface appearance; used by the [`semantic`](mdlmaterialproperty/semantic.md) property.
+### Constants
+- [enum MDLMaterialSemantic](./mdlmaterialsemantic.md)
+  Options for the semantic use of a material property’s value in rendering a particular surface appearance; used by the [`semantic`](./mdlmaterialproperty/semantic.md) property.
 
 
 ---

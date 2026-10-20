@@ -1,7 +1,8 @@
 # update(from:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the buffer’s initialized memory with the given elements.
 

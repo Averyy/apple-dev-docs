@@ -1,7 +1,8 @@
 # init(toolbar:item:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 27.0+

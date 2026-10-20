@@ -1,7 +1,8 @@
 # cameraID
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The camera identifier string of the Immersive camera associated with this view model.
 
@@ -20,13 +21,14 @@ var cameraID: String { get }
 
 ## See Also
 
-- [var environmentBackdrop: MDLAsset?](immersivecameraviewmodel/environmentbackdrop.md)
+### Instance Properties
+- [var environmentBackdrop: MDLAsset?](./environmentbackdrop.md)
   The environment backdrop associated with the immersive camera view
-- [var leftEye: MDLMesh](immersivecameraviewmodel/lefteye.md)
+- [var leftEye: MDLMesh](./lefteye.md)
   Left eye mesh associated with the immersive camera view.
-- [var mask: ImmersiveVideoMask?](immersivecameraviewmodel/mask.md)
+- [var mask: ImmersiveVideoMask?](./mask.md)
   Generated immersive video mask associated with the immersive camera view
-- [var rightEye: MDLMesh](immersivecameraviewmodel/righteye.md)
+- [var rightEye: MDLMesh](./righteye.md)
   Right eye mesh associated with the immersive camera view.
 
 

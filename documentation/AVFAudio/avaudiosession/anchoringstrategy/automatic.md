@@ -1,7 +1,8 @@
 # AVAudioSession.AnchoringStrategy.automatic
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system determines the anchoring strategy.
 
@@ -16,9 +17,10 @@ case automatic
 
 ## See Also
 
-- [AVAudioSession.AnchoringStrategy.front](avaudiosession/anchoringstrategy/front.md)
+### Anchoring strategies
+- [AVAudioSession.AnchoringStrategy.front](./front.md)
   The audio session anchors to a person’s concept of front.
-- [AVAudioSession.AnchoringStrategy.scene(identifier:)](avaudiosession/anchoringstrategy/scene(identifier:).md)
+- [AVAudioSession.AnchoringStrategy.scene(identifier:)](./scene%28identifier%29.md)
   The audio session anchors to a scene.
 
 

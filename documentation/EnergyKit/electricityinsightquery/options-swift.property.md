@@ -1,14 +1,15 @@
 # options
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The optional information to include in returned electricity insight records.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,7 +19,8 @@ let options: ElectricityInsightQuery.Options
 
 ## See Also
 
-- [ElectricityInsightQuery.Options](electricityinsightquery/options-swift.struct.md)
+### Adding optional insight records
+- [ElectricityInsightQuery.Options](./options-swift.struct.md)
   A set of options that specify optional information to include in electricity insight records returned from the insight service.
 
 

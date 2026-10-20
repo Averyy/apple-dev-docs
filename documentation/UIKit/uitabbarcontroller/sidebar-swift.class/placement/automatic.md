@@ -1,7 +1,8 @@
 # UITabBarController.Sidebar.Placement.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system determines the appropriate placement.
 
@@ -15,6 +16,10 @@ The system determines the appropriate placement.
 
 ```swift
 case automatic
+```
+
+```c
+UITabBarControllerSidebarPlacementAutomatic
 ```
 
 

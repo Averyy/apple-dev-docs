@@ -1,16 +1,17 @@
 # DDDeviceState
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A state that represents the level of user interaction with the device.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -18,53 +19,58 @@ A state that represents the level of user interaction with the device.
 enum DDDeviceState
 ```
 
+```c
+enum DDDeviceState : NSInteger;
+```
+
 #### Overview
 
-The device ([`DDDevice`](dddevice.md)) [`state`](dddevice/state.md) property is of this type.
+The device ([`DDDevice`](./dddevice.md)) [`state`](./dddevice/state.md) property is of this type.
 
 ## Topics
 
 ### Communicating a device’s status
-- [DDDeviceState.invalid](dddevicestate/invalid.md)
+- [DDDeviceState.invalid](./dddevicestate/invalid.md)
   A state that indicates the device is invalid or that the user disapproves of the device.
-- [DDDeviceState.activating](dddevicestate/activating.md)
+- [DDDeviceState.activating](./dddevicestate/activating.md)
   A state that indicates when the user selects the device in the picker UI.
-- [DDDeviceState.activated](dddevicestate/activated.md)
+- [DDDeviceState.activated](./dddevicestate/activated.md)
   A state that indicates when the user authorizes the device and the app connects to the device.
-- [DDDeviceState.authorized](dddevicestate/authorized.md)
+- [DDDeviceState.authorized](./dddevicestate/authorized.md)
   A state that indicates when the user authorizes the device.
-- [DDDeviceState.invalidating](dddevicestate/invalidating.md)
+- [DDDeviceState.invalidating](./dddevicestate/invalidating.md)
   A state that indicates that the device is soon to be invalid.
 ### Initializers
-- [init?(rawValue: Int)](dddevicestate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./dddevicestate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class DDDevice](dddevice.md)
+### Device information
+- [class DDDevice](./dddevice.md)
   An object that describes a discovered device of interest.
-- [DDDevice.Category](dddevice/category-swift.enum.md)
+- [DDDevice.Category](./dddevice/category-swift.enum.md)
   An option that determines the icon for the device in the picker UI.
-- [func DDDeviceCategoryToString(DDDevice.Category) -> String](dddevicecategorytostring(_:).md)
+- [func DDDeviceCategoryToString(DDDevice.Category) -> String](./dddevicecategorytostring%28_%29.md)
   Returns human-readable text for the specified identifier that describes a device’s category.
-- [func DDDeviceStateToString(DDDeviceState) -> String](dddevicestatetostring(_:).md)
+- [func DDDeviceStateToString(DDDeviceState) -> String](./dddevicestatetostring%28_%29.md)
   Returns human-readable text for the specified identifier that describes a device’s status.
-- [DDDevice.Protocol](dddevice/protocol-swift.enum.md)
+- [DDDevice.Protocol](./dddevice/protocol-swift.enum.md)
   An identifier for the manner in which an app interacts with a device.
-- [func DDDeviceProtocolToString(DDDevice.Protocol) -> String](dddeviceprotocoltostring(_:).md)
+- [func DDDeviceProtocolToString(DDDevice.Protocol) -> String](./dddeviceprotocoltostring%28_%29.md)
   Returns human-readable text for the specified protocol identifier.
-- [struct DDDeviceProtocolString](dddeviceprotocolstring.md)
+- [struct DDDeviceProtocolString](./dddeviceprotocolstring.md)
   String values for the manner in which an app interacts with a device.
-- [func DDDeviceMediaPlaybackStateToString(DDDevice.MediaPlaybackState) -> String](dddevicemediaplaybackstatetostring(_:).md)
+- [func DDDeviceMediaPlaybackStateToString(DDDevice.MediaPlaybackState) -> String](./dddevicemediaplaybackstatetostring%28_%29.md)
   Returns human-readable text for the specified media playback state.
 
 

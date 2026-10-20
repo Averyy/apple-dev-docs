@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of metadata items to write to the output file.
 
@@ -19,15 +20,20 @@ An array of metadata items to write to the output file.
 var metadata: [AVMetadataItem] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<AVMetadataItem *> * metadata;
+```
+
 #### Discussion
 
 You can’t modify this property value after writing starts.
 
 ## See Also
 
-- [var shouldOptimizeForNetworkUse: Bool](avassetwriter/shouldoptimizefornetworkuse.md)
+### Configuring output
+- [var shouldOptimizeForNetworkUse: Bool](./shouldoptimizefornetworkuse.md)
   A Boolean value that indicates whether to write the output file to make it more suitable for playback over a network.
-- [var directoryForTemporaryFiles: URL?](avassetwriter/directoryfortemporaryfiles.md)
+- [var directoryForTemporaryFiles: URL?](./directoryfortemporaryfiles.md)
   A directory to contain temporary files that the export process generates.
 
 

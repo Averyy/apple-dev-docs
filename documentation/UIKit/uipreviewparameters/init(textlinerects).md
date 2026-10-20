@@ -1,7 +1,8 @@
 # init(textLineRects:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a preview parameters object with information about the text you want to preview.
 
@@ -18,17 +19,22 @@ Creates a preview parameters object with information about the text you want to 
 convenience init(textLineRects: [NSValue])
 ```
 
+```objc
+- (instancetype) initWithTextLineRects:(NSArray<NSValue *> *) textLineRects;
+```
+
 #### Return Value
 
 A new preview parameters object for a view containing text.
 
 ## Parameters
 
-- `textLineRects`: An array of text line rectangles in the coordinate system of the view being animated. UIKit clips the previewed content using the specified rectangles. Wrap each [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) in an [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) object. If you specify an empty array, UIKit shows the entire view.
+- `textLineRects`: An array of text line rectangles in the coordinate system of the view being animated. UIKit clips the previewed content using the specified rectangles. Wrap each [`CGRect`](../../CoreFoundation/cgrect.md) in an [`NSValue`](../../Foundation/nsvalue.md) object. If you specify an empty array, UIKit shows the entire view.
 
 ## See Also
 
-- [init()](uipreviewparameters/init.md)
+### Creating preview parameters
+- [init()](./init%28%29.md)
   Creates a default set of preview parameters.
 
 

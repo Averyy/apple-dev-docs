@@ -1,7 +1,8 @@
 # WebPage.NavigationEvent.receivedServerRedirect
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This event occurs when the page received a server redirect for a request.
 

@@ -1,6 +1,8 @@
 # Using SwiftUI with UIKit
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Sample Code  
+**Download**: [UsingSwiftUIWithUIKit.zip](https://docs-assets.developer.apple.com/published/1e6b5495c43b/UsingSwiftUIWithUIKit.zip)
 
 Learn how to incorporate SwiftUI views into a UIKit app.
 
@@ -12,7 +14,7 @@ Learn how to incorporate SwiftUI views into a UIKit app.
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC22 session [`10072: Use SwiftUI with UIKit`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10072/).
+> **Note**: This sample code project is associated with WWDC22 session [10072: Use SwiftUI with UIKit](https://developer.apple.com/wwdc22/10072/).
 
 
 ---

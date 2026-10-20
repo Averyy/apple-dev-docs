@@ -1,7 +1,8 @@
 # MKUserTrackingBarButtonItem
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A specialized bar button item that allows the user to toggle whether the map tracks to the heading the user is facing.
 
@@ -17,6 +18,10 @@ A specialized bar button item that allows the user to toggle whether the map tra
 class MKUserTrackingBarButtonItem
 ```
 
+```objc
+@interface MKUserTrackingBarButtonItem : UIBarButtonItem
+```
+
 #### Overview
 
 Tapping the button lets the user toggles between modes for displaying the map with and without the current heading applied. The button also reflects the current user tracking mode if set elsewhere. This bar button item is associated to a single map view.
@@ -24,42 +29,43 @@ Tapping the button lets the user toggles between modes for displaying the map wi
 ## Topics
 
 ### Creating a user tracking bar button item
-- [init(mapView: MKMapView?)](mkusertrackingbarbuttonitem/init(mapview:).md)
+- [init(mapView: MKMapView?)](./mkusertrackingbarbuttonitem/init%28mapview%29.md)
   Initializes a newly created bar button item with the specified map view.
 ### Accessing the owning map
-- [var mapView: MKMapView?](mkusertrackingbarbuttonitem/mapview.md)
+- [var mapView: MKMapView?](./mkusertrackingbarbuttonitem/mapview.md)
   The map view associated with this bar button item.
 
 ## Relationships
 
 ### Inherits From
-- [UIBarButtonItem](../uikit/uibarbuttonitem.md)
+- [UIBarButtonItem](../UIKit/uibarbuttonitem.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [UIAccessibilityIdentification](../uikit/uiaccessibilityidentification.md)
-- [UIAppearance](../uikit/uiappearance.md)
-- [UIPopoverPresentationControllerSourceItem](../uikit/uipopoverpresentationcontrollersourceitem.md)
-- [UISpringLoadedInteractionSupporting](../uikit/uispringloadedinteractionsupporting.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [UIAccessibilityIdentification](../UIKit/uiaccessibilityidentification.md)
+- [UIAppearance](../UIKit/uiappearance.md)
+- [UIPopoverPresentationControllerSourceItem](../UIKit/uipopoverpresentationcontrollersourceitem.md)
+- [UISpringLoadedInteractionSupporting](../UIKit/uispringloadedinteractionsupporting.md)
 
 ## See Also
 
-- [class MKMapCamera](mkmapcamera.md)
+### Map customization
+- [class MKMapCamera](./mkmapcamera.md)
   A virtual camera for defining the appearance of the map.
-- [class MKCompassButton](mkcompassbutton.md)
+- [class MKCompassButton](./mkcompassbutton.md)
   A specialized view that displays the compass heading for its associated map.
-- [class MKScaleView](mkscaleview.md)
+- [class MKScaleView](./mkscaleview.md)
   A specialized view that displays the scale information for its associated map.
-- [class MKZoomControl](mkzoomcontrol.md)
+- [class MKZoomControl](./mkzoomcontrol.md)
   A specialized view that displays and controls the zoom level of the map view.
-- [class MKPitchControl](mkpitchcontrol.md)
+- [class MKPitchControl](./mkpitchcontrol.md)
   A specialized view that displays and controls the pitch angle of the map view.
-- [class MKUserTrackingButton](mkusertrackingbutton.md)
+- [class MKUserTrackingButton](./mkusertrackingbutton.md)
   A specialized button that allows the user to toggle whether the map tracks to the heading the user is facing.
 
 

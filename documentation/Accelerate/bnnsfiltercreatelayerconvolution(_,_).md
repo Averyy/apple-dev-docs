@@ -1,23 +1,30 @@
 # BNNSFilterCreateLayerConvolution(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a new convolution layer.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
 ```swift
 func BNNSFilterCreateLayerConvolution(_ layer_params: UnsafePointer<BNNSLayerParametersConvolution>, _ filter_params: UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?
+```
+
+```c
+BNNSFilterBNNSFilterCreateLayerConvolution(const BNNSLayerParametersConvolution *layer_params, const BNNSFilterParameters *filter_params);
 ```
 
 #### Discussion
@@ -140,15 +147,16 @@ On return, the output contains `[21.5]`, calculated using the following arithmet
 
 ## See Also
 
-- [struct BNNSConvolutionLayerParameters](bnnsconvolutionlayerparameters.md)
+### Convolution layers
+- [struct BNNSConvolutionLayerParameters](./bnnsconvolutionlayerparameters.md)
   A structure containing convolution parameters.
-- [func BNNSFilterCreateConvolutionLayer(UnsafePointer<BNNSImageStackDescriptor>, UnsafePointer<BNNSImageStackDescriptor>, UnsafePointer<BNNSConvolutionLayerParameters>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](bnnsfiltercreateconvolutionlayer(_:_:_:_:).md)
+- [func BNNSFilterCreateConvolutionLayer(UnsafePointer<BNNSImageStackDescriptor>, UnsafePointer<BNNSImageStackDescriptor>, UnsafePointer<BNNSConvolutionLayerParameters>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](./bnnsfiltercreateconvolutionlayer%28_,_,_,_%29.md)
   Returns a convolution filter, initialized with input, output, layer, and filter parameters.
-- [class ConvolutionLayer](bnns/convolutionlayer.md)
+- [class ConvolutionLayer](./bnns/convolutionlayer.md)
   A layer object that wraps a convolution filter and manages its deinitialization.
-- [struct BNNSLayerParametersConvolution](bnnslayerparametersconvolution.md)
+- [struct BNNSLayerParametersConvolution](./bnnslayerparametersconvolution.md)
   A structure that contains the parameters of a convolution layer.
-- [func BNNSFilterCreateLayerTransposedConvolution(UnsafePointer<BNNSLayerParametersConvolution>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](bnnsfiltercreatelayertransposedconvolution(_:_:).md)
+- [func BNNSFilterCreateLayerTransposedConvolution(UnsafePointer<BNNSLayerParametersConvolution>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](./bnnsfiltercreatelayertransposedconvolution%28_,_%29.md)
   Returns a new transposed convolution layer.
 
 

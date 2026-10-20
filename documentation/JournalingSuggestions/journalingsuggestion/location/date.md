@@ -1,7 +1,8 @@
 # date
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date that a person visits the place.
 

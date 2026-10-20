@@ -1,7 +1,8 @@
 # TableRow
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A row that represents a data value in a table.
 
@@ -21,34 +22,35 @@ struct TableRow<Value> where Value : Identifiable
 
 #### Overview
 
-Create instances of [`TableRow`](tablerow.md) in the closure you provide to the `rows` parameter in [`Table`](table.md) initializers that take columns and rows. The table provides the value of a row to each column of a table, which produces the cells for each row in the column.
+Create instances of [`TableRow`](./tablerow.md) in the closure you provide to the `rows` parameter in [`Table`](./table.md) initializers that take columns and rows. The table provides the value of a row to each column of a table, which produces the cells for each row in the column.
 
 ## Topics
 
 ### Creating a row
-- [init(Value)](tablerow/init(_:).md)
+- [init(Value)](./tablerow/init%28_%29.md)
   Creates a table row for the given value.
 
 ## Relationships
 
 ### Conforms To
-- [TableRowContent](tablerowcontent.md)
+- [TableRowContent](./tablerowcontent.md)
 
 ## See Also
 
-- [protocol TableRowContent](tablerowcontent.md)
+### Creating rows
+- [protocol TableRowContent](./tablerowcontent.md)
   A type used to represent table rows.
-- [struct TableHeaderRowContent](tableheaderrowcontent.md)
+- [struct TableHeaderRowContent](./tableheaderrowcontent.md)
   A table row that displays a single view instead of columned content.
-- [struct TupleTableRowContent](tupletablerowcontent.md)
+- [struct TupleTableRowContent](./tupletablerowcontent.md)
   A type of table column content that creates table rows created from a Swift tuple of table rows.
-- [struct TableForEachContent](tableforeachcontent.md)
+- [struct TableForEachContent](./tableforeachcontent.md)
   A type of table row content that creates table rows created by iterating over a collection.
-- [struct EmptyTableRowContent](emptytablerowcontent.md)
+- [struct EmptyTableRowContent](./emptytablerowcontent.md)
   A table row content that doesn’t produce any rows.
-- [protocol DynamicTableRowContent](dynamictablerowcontent.md)
+- [protocol DynamicTableRowContent](./dynamictablerowcontent.md)
   A type of table row content that generates table rows from an underlying collection of data.
-- [struct TableRowBuilder](tablerowbuilder.md)
+- [struct TableRowBuilder](./tablerowbuilder.md)
   A result builder that creates table row content from closures.
 
 

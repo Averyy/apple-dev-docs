@@ -1,7 +1,8 @@
 # ShaderGraph.Node.NodeData.constant(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A node with a fixed, inline value.
 

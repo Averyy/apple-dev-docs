@@ -1,7 +1,8 @@
 # onCameraCaptureEvent(isEnabled:primaryAction:secondaryAction:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Used to register actions triggered by system capture events.
 
@@ -31,7 +32,8 @@ This API is for media capture use cases only.
 
 ## See Also
 
-- [func onCameraCaptureEvent(isEnabled: Bool, action: (AVCaptureEvent) -> Void) -> some View](view/oncameracaptureevent(isenabled:action:).md)
+### Responding to capture events
+- [func onCameraCaptureEvent(isEnabled: Bool, action: (AVCaptureEvent) -> Void) -> some View](./oncameracaptureevent%28isenabled,action%29.md)
   Used to register an action triggered by system capture events.
 
 

@@ -1,7 +1,8 @@
 # preferredMode
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred display mode for the screen.
 
@@ -16,11 +17,16 @@ The preferred display mode for the screen.
 var preferredMode: UIScreenMode? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) UIScreenMode * preferredMode;
+```
+
 ## See Also
 
-- [var currentMode: UIScreenMode?](uiscreen/currentmode.md)
+### Managing screen modes
+- [var currentMode: UIScreenMode?](./currentmode.md)
   The current screen mode associated with the screen.
-- [var availableModes: [UIScreenMode]](uiscreen/availablemodes.md)
+- [var availableModes: [UIScreenMode]](./availablemodes.md)
   The display modes that can be associated with the screen.
 
 

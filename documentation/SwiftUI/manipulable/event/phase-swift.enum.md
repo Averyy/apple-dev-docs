@@ -1,7 +1,8 @@
 # Manipulable.Event.Phase
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Describes the phase of a manipulation gesture.
 
@@ -17,20 +18,20 @@ enum Phase
 ## Topics
 
 ### Enumeration Cases
-- [case active(Manipulable.Event.Value)](manipulable/event/phase-swift.enum/active(_:).md)
+- [case active(Manipulable.Event.Value)](./phase-swift.enum/active%28_%29.md)
   A person is manipulating the view.
-- [case ended(Manipulable.Event.Value)](manipulable/event/phase-swift.enum/ended(_:).md)
+- [case ended(Manipulable.Event.Value)](./phase-swift.enum/ended%28_%29.md)
   A person successfully ended manipulating the view.
-- [Manipulable.Event.Phase.failed](manipulable/event/phase-swift.enum/failed.md)
+- [Manipulable.Event.Phase.failed](./phase-swift.enum/failed.md)
   A person started manipulating the view but failed to successfully end the manipulation gesture.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

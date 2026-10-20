@@ -1,12 +1,13 @@
 # isSubviewCollapsed(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the specified view is in a collapsed state.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Returns whether the specified view is in a collapsed state.
 func isSubviewCollapsed(_ subview: NSView) -> Bool
 ```
 
+```objc
+- (BOOL) isSubviewCollapsed:(NSView *) subview;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `subview` is in a collapsed state; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if `subview` is in a collapsed state; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -24,11 +29,12 @@ func isSubviewCollapsed(_ subview: NSView) -> Bool
 
 ## See Also
 
-- [func adjustSubviews()](nssplitview/adjustsubviews.md)
+### Managing Subviews
+- [func adjustSubviews()](./adjustsubviews%28%29.md)
   Adjusts the sizes of the split view’s subviews so they (plus the dividers) fill the split view.
-- [func holdingPriorityForSubview(at: Int) -> NSLayoutConstraint.Priority](nssplitview/holdingpriorityforsubview(at:).md)
+- [func holdingPriorityForSubview(at: Int) -> NSLayoutConstraint.Priority](./holdingpriorityforsubview%28at%29.md)
   Returns the priority of the subview’s width or height when resizing.
-- [func setHoldingPriority(NSLayoutConstraint.Priority, forSubviewAt: Int)](nssplitview/setholdingpriority(_:forsubviewat:).md)
+- [func setHoldingPriority(NSLayoutConstraint.Priority, forSubviewAt: Int)](./setholdingpriority%28_,forsubviewat%29.md)
   Sets the priority for split view subviews to maintain their width or height.
 
 

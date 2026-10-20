@@ -1,18 +1,19 @@
 # SingleSignOn
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures single sign-on (SSO).
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 7.0+
+- iOS 7.0+ - Deprecated in 26.0
+- iPadOS 7.0+ - Deprecated in 26.0
+- Mac Catalyst 7.0+ - Deprecated in 26.0
 
 ## Declaration
 
-```swift
+```
 object SingleSignOn
 ```
 
@@ -20,9 +21,9 @@ object SingleSignOn
 
 Specify `com.apple.sso` as the payload type.
 
-Deprecated in iOS 26. Use the [`ExtensibleSingleSignOn`](extensiblesinglesignon.md) payload instead.
+Deprecated in iOS 26. Use the [`ExtensibleSingleSignOn`](./extensiblesinglesignon.md) payload instead.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +35,7 @@ Deprecated in iOS 26. Use the [`ExtensibleSingleSignOn`](extensiblesinglesignon.
 | Allowed in user enrollment | iOS |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -88,25 +89,30 @@ Deprecated in iOS 26. Use the [`ExtensibleSingleSignOn`](extensiblesinglesignon.
 ## Topics
 
 ### Objects
-- [object SingleSignOn.Kerberos](singlesignon/kerberos-data.dictionary.md)
+- [object SingleSignOn.Kerberos](./singlesignon/kerberos-data.dictionary.md)
   The Kerberos dictionary.
 
 ## Properties
 
-- `Kerberos` (SingleSignOn.Kerberos): The Kerberos dictionary. Deprecated: iOS 26+ | iPadOS 26+
-- `Name` (string) *(required)*: The human-readable name for the account. Deprecated: iOS 26+ | iPadOS 26+
+- `Kerberos` (SingleSignOn.Kerberos) *(deprecated)*: The Kerberos dictionary.
+
+  Deprecated: iOS 26+ | iPadOS 26+
+- `Name` (string) *(required)* *(deprecated)*: The human-readable name for the account.
+
+  Deprecated: iOS 26+ | iPadOS 26+
 
 ## See Also
 
-- [object DirectoryService](directoryservice.md)
+### Authentication
+- [object DirectoryService](./directoryservice.md)
   The payload that configures an Active Directory (AD) domain.
-- [object ExtensibleSingleSignOn](extensiblesinglesignon.md)
+- [object ExtensibleSingleSignOn](./extensiblesinglesignon.md)
   The payload that configures an app extension that performs single sign-on (SSO).
-- [object ExtensibleSingleSignOnKerberos](extensiblesinglesignonkerberos.md)
+- [object ExtensibleSingleSignOnKerberos](./extensiblesinglesignonkerberos.md)
   The payload that configures an app extension that performs single sign-on with the Kerberos extension.
-- [object Identification](identification.md)
+- [object Identification](./identification.md)
   The payload that configures the names of the account user.
-- [object IdentityPreference](identitypreference.md)
+- [object IdentityPreference](./identitypreference.md)
   The payload that configures the user’s identity on the device.
 
 

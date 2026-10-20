@@ -1,7 +1,8 @@
 # shouldBePinned
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the tab should be pinned.
 
@@ -16,6 +17,10 @@ Indicates whether the tab should be pinned.
 
 ```swift
 var shouldBePinned: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL shouldBePinned;
 ```
 
 

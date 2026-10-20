@@ -1,7 +1,8 @@
 # SharedBudget.InvoiceDetail
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Invoice billing details for accounts on the Line of Credit (LOC) payment model.
 
@@ -10,7 +11,7 @@ Invoice billing details for accounts on the Line of Credit (LOC) payment model.
 
 ## Declaration
 
-```swift
+```
 object SharedBudget.InvoiceDetail
 ```
 
@@ -18,7 +19,7 @@ object SharedBudget.InvoiceDetail
 
 Captures the billing contact information required for a Line of Credit (`LOC`) payment model budget order, including buyer name, buyer email, and billing email. This field is nullable, and the system only populates it for accounts on the `LOC` payment model. The `primaryBuyerEmail` and `billingEmail` fields must be valid email addresses.
 
-See [`InvoiceDetailCreate`](invoicedetailcreate.md) for which fields are required when creating a new record, and [`InvoiceDetailUpdate`](invoicedetailupdate.md) for update behavior.
+See [`InvoiceDetailCreate`](../invoicedetailcreate.md) for which fields are required when creating a new record, and [`InvoiceDetailUpdate`](../invoicedetailupdate.md) for update behavior.
 
 ## Properties
 

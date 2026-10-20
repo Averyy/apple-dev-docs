@@ -1,10 +1,11 @@
 # init(connectionHandle:deviceAddress:linkType:transmissionInterval:retransmissionWindow:receivePacketLength:transmitPacketLength:airMode:)
 
 **Framework**: IOBluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

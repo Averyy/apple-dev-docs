@@ -1,7 +1,8 @@
 # ResellerAccount
 
 **Framework**: ServicesAccountLinking  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Reseller account type for linking with Apple Media & Purchases accounts.
 
@@ -16,20 +17,24 @@ Reseller account type for linking with Apple Media & Purchases accounts.
 struct ResellerAccount
 ```
 
+```c
+typedef struct { ... } SALResellerAccount;
+```
+
 ## Topics
 
 ### Registration methods
-- [static func registerToken(String) async throws](reselleraccount/registertoken(_:).md)
+- [static func registerToken(String) async throws](./reselleraccount/registertoken%28_%29.md)
   Registers a signed token with the user’s Media & Purchases account.
-- [static func registerIdentifier(String) async throws](reselleraccount/registeridentifier(_:).md)
+- [static func registerIdentifier(String) async throws](./reselleraccount/registeridentifier%28_%29.md)
   Registers an account identifier with the user’s Media & Purchases account.
 ### Initializers
-- [init()](reselleraccount/init.md)
+- [init()](./reselleraccount/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 
 ---

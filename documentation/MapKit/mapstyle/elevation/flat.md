@@ -1,7 +1,8 @@
 # flat
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value that renders a flat, 2D map.
 
@@ -11,7 +12,7 @@ A value that renders a flat, 2D map.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ static var flat: MapStyle.Elevation { get }
 
 ## See Also
 
-- [static var automatic: MapStyle.Elevation](mapstyle/elevation/automatic.md)
+### Elevation styles
+- [static var automatic: MapStyle.Elevation](./automatic.md)
   The default elevation style, that renders a flat, 2D map.
-- [static var realistic: MapStyle.Elevation](mapstyle/elevation/realistic.md)
+- [static var realistic: MapStyle.Elevation](./realistic.md)
   A value that renders a realistic, 3D map.
 
 

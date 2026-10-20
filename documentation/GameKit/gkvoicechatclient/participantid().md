@@ -2,21 +2,26 @@
 
 **Framework**: GameKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a string that uniquely identifies the local user.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 3.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 3.0+ - Deprecated in 7.0
+- iPadOS 3.0+ - Deprecated in 7.0
+- Mac Catalyst 3.0+ - Deprecated in 7.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 3.0+ - Deprecated in 3.0
 
 ## Declaration
 
 ```swift
 func participantID() -> String
+```
+
+```objc
+- (NSString *) participantID;
 ```
 
 #### Return Value

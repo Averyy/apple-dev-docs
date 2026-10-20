@@ -1,7 +1,8 @@
 # Device Management
 
 **Framework**: Device Management  
-**Kind**: module
+**Kind**: module  
+**Role**: Web Service
 
 Manage your organization’s devices remotely.
 
@@ -22,53 +23,53 @@ Deploying a device management service allows administrators to securely and remo
 
 A device management service uses the Mobile Device Management (MDM) protocol to establish a communication channel with devices and declarative configurations, as well as configuration profiles to deploy settings.
 
-Device management works with Managed App Distribution and Managed App Configuration to provide a seamless app download and launch experience. For more information, see [`ManagedAppDistribution`](https://developer.apple.com/documentation/managedappdistribution) and [`ManagedApp`](https://developer.apple.com/documentation/managedapp).
+Device management works with Managed App Distribution and Managed App Configuration to provide a seamless app download and launch experience. For more information, see [ManagedAppDistribution](../ManagedAppDistribution/ManagedAppDistribution.md) and [ManagedApp](../ManagedApp/ManagedApp.md).
 
 ## Topics
 
 ### Implementing device management
-- [Device management essentials](device-management-essentials.md)
+- [Device management essentials](./device-management-essentials.md)
   Set up and maintain connectivity with devices and leverage declarative device management.
-- [Device enrollment](device-enrollment.md)
+- [Device enrollment](./device-enrollment.md)
   Implement Automated Device Enrollment and account-driven enrollments.
-- [Identity management](identity-management.md)
+- [Identity management](./identity-management.md)
   Use Platform Single Sign-on and Managed Device Attestation on managed devices.
-- [Content management](content-management.md)
+- [Content management](./content-management.md)
   Deploy apps and books to managed devices.
-- [Device life cycle](device-life-cycle.md)
+- [Device life cycle](./device-life-cycle.md)
   Manage software updates, migrate managed devices, and return them into service.
 ### MDM protocol
-- [Commands and queries](commands-and-queries.md)
+- [Commands and queries](./commands-and-queries.md)
   Remotely execute management commands and queries on managed devices.
-- [Check-in](check-in.md)
+- [Check-in](./check-in.md)
   Authenticate devices and maintain push tokens.
 ### Declarative management
-- [Declarations](devicemanagement-declarations.md)
+- [Declarations](./devicemanagement-declarations.md)
   Configure devices using declarative device management.
-- [Status items](status-items.md)
+- [Status items](./status-items.md)
   Monitor device state using status reports.
 ### Configuration profiles
-- [Profile-specific payload keys](profile-specific-payload-keys.md)
+- [Profile-specific payload keys](./profile-specific-payload-keys.md)
   Apply settings to devices using configuration profiles.
 ### Miscellaneous data formats
-- [object ManifestURL](manifesturl.md)
+- [object ManifestURL](./manifesturl.md)
   The URL to the app manifest.
-- [object PasswordHash](passwordhash.md)
+- [object PasswordHash](./passwordhash.md)
   A dictionary that contains the password hash for the account.
 ### Deployment services
-- [Device assignment](device-assignment.md)
+- [Device assignment](./device-assignment.md)
   Manage devices for your students and employees.
-- [Roster management](roster-management.md)
+- [Roster management](./roster-management.md)
   Manage classes for your students and teachers.
-- [App, Book, and Subscription Management](app-book-and-subscription-management.md)
+- [App, Book, and Subscription Management](./app-book-and-subscription-management.md)
   Manage apps, books, and subscriptions for your students and employees.
 - [Apple School Manager and Apple Business APIs](../apple-school-and-business-manager-api/apple-school-and-business-manager-api.md)
   Automate device management actions and access data about devices that enroll using Automated Device Enrollment with the Apple School Manager and Apple Business APIs.
 ### Removed items
-- [Removed commands and profiles](removed-commands-and-profiles.md)
+- [Removed commands and profiles](./removed-commands-and-profiles.md)
   Commands and configuration profiles that have been removed and are no longer supported.
 ### Dictionaries
-- [object InApps](inapps.md)
+- [object InApps](./inapps.md)
 
 
 ---

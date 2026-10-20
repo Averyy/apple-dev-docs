@@ -1,16 +1,17 @@
 # isQueryResponse
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-A Boolean value indicating whether this object is an instance of the [`CloudKit.QueryResponse`](cloudkit.queryresponse.md) class.
+A Boolean value indicating whether this object is an instance of the [`CloudKit.QueryResponse`](../cloudkit.queryresponse.md) class.
 
 **Availability**:
 - CloudKit JS 1.0+
 
 ## Declaration
 
-```swift
+```
 readonly attribute Boolean isQueryResponse;
 ```
 

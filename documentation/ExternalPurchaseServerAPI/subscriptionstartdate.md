@@ -1,7 +1,8 @@
 # subscriptionStartDate
 
 **Framework**: External Purchase Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The UNIX date, in milli-seconds, of the start of the subscription renewal period.
 
@@ -10,19 +11,20 @@ The UNIX date, in milli-seconds, of the start of the subscription renewal period
 
 ## Declaration
 
-```swift
+```
 int64 subscriptionStartDate
 ```
 
 ## See Also
 
-- [type subscriptionDaysOfPaidService](subscriptiondaysofpaidservice.md)
+### Supplying subscription info
+- [type subscriptionDaysOfPaidService](./subscriptiondaysofpaidservice.md)
   The total number of days of paid service for the subscription.
-- [type subscriptionEndDate](subscriptionenddate.md)
+- [type subscriptionEndDate](./subscriptionenddate.md)
   The UNIX date, in milli-seconds, the subscription renewal cycle ends.
-- [type subscriptionEvent](subscriptionevent.md)
+- [type subscriptionEvent](./subscriptionevent.md)
   The event in the subscription’s life cycle that the transaction represents.
-- [type referenceLineItemId](referencelineitemid.md)
+- [type referenceLineItemId](./referencelineitemid.md)
   The line item identifier of another transaction, that the report  references.
 
 

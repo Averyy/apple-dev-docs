@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```cpp
 enum StandardUSB::tBusVoltage : unsigned int {
     ...
 };
@@ -17,7 +17,7 @@ enum StandardUSB::tBusVoltage : unsigned int {
 ## Topics
 
 ### Constants
-- [StandardUSB::kBusVoltageDefault](standardusb_tbusvoltage/standardusb_kbusvoltagedefault.md)
+- [StandardUSB::kBusVoltageDefault](./standardusb_tbusvoltage/standardusb_kbusvoltagedefault.md)
 
 
 ---

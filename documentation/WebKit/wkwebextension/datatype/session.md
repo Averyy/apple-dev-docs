@@ -1,7 +1,8 @@
 # session
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies session storage, including `browser.storage.session`.
 
@@ -19,11 +20,16 @@ nonisolated
 static let session: WKWebExtension.DataType
 ```
 
+```c
+extern WKWebExtensionDataType const WKWebExtensionDataTypeSession;
+```
+
 ## See Also
 
-- [static let local: WKWebExtension.DataType](wkwebextension/datatype/local.md)
+### Constants
+- [static let local: WKWebExtension.DataType](./local.md)
   Specifies local storage, including `browser.storage.local`.
-- [static let synchronized: WKWebExtension.DataType](wkwebextension/datatype/synchronized.md)
+- [static let synchronized: WKWebExtension.DataType](./synchronized.md)
   Specifies synchronized storage, including `browser.storage.sync`.
 
 

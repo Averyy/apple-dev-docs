@@ -1,7 +1,8 @@
 # SubscriptionPricePoint.Relationships.Equalizations
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The links to the subscription price point’s territory equalizations relationship.
 
@@ -10,7 +11,7 @@ The links to the subscription price point’s territory equalizations relationsh
 
 ## Declaration
 
-```swift
+```
 object SubscriptionPricePoint.Relationships.Equalizations
 ```
 
@@ -20,8 +21,9 @@ object SubscriptionPricePoint.Relationships.Equalizations
 
 ## See Also
 
-- [object SubscriptionPricePoint.Relationships.Territory](subscriptionpricepoint/relationships-data.dictionary/territory-data.dictionary.md)
-- [object SubscriptionPricePoint.Relationships.AdjustedEqualizations](subscriptionpricepoint/relationships-data.dictionary/adjustedequalizations-data.dictionary.md)
+### Objects
+- [object SubscriptionPricePoint.Relationships.Territory](./territory-data.dictionary.md)
+- [object SubscriptionPricePoint.Relationships.AdjustedEqualizations](./adjustedequalizations-data.dictionary.md)
   The links to the subscription price point’s adjusted territory equalizations relationship.
 
 

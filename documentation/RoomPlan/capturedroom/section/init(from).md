@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: RoomPlan  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a section by deserializing the given decoder.
 

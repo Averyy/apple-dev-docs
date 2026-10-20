@@ -1,7 +1,8 @@
 # makeDataReady()
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Makes the sample buffer’s data ready for use by calling its handler closure.
 
@@ -22,13 +23,14 @@ func makeDataReady() throws
 
 ## See Also
 
-- [var dataReadiness: CMSampleBuffer.DataReadiness](cmsamplebuffer/datareadiness-swift.property.md)
+### Determining Readiness
+- [var dataReadiness: CMSampleBuffer.DataReadiness](./datareadiness-swift.property.md)
   A value that indicates the status of the data the sample buffer contains.
-- [func setDataReadiness(CMSampleBuffer.DataReadiness) throws](cmsamplebuffer/setdatareadiness(_:).md)
+- [func setDataReadiness(CMSampleBuffer.DataReadiness) throws](./setdatareadiness%28_%29.md)
   Sets the status of the sample buffer’s data.
-- [CMSampleBuffer.DataReadiness](cmsamplebuffer/datareadiness-swift.enum.md)
+- [CMSampleBuffer.DataReadiness](./datareadiness-swift.enum.md)
   Constants that indicate the readiness of a sample buffer’s data.
-- [func trackDataReadiness(CMSampleBuffer) throws](cmsamplebuffer/trackdatareadiness(_:).md)
+- [func trackDataReadiness(CMSampleBuffer) throws](./trackdatareadiness%28_%29.md)
   Associates a sample buffer’s data readiness with that of another sample buffer.
 
 

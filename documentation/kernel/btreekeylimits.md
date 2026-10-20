@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum BTreeKeyLimits : unsigned int {
     ...
 };
@@ -17,7 +17,7 @@ enum BTreeKeyLimits : unsigned int {
 ## Topics
 
 ### Constants
-- [kMaxKeyLength](btreekeylimits/kmaxkeylength.md)
+- [kMaxKeyLength](./btreekeylimits/kmaxkeylength.md)
 
 
 ---

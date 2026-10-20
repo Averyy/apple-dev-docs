@@ -1,7 +1,8 @@
 # insert(_:replacementRange:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts an adaptive image into the text at the specifed location.
 
@@ -14,6 +15,10 @@ Inserts an adaptive image into the text at the specifed location.
 optional func insert(_ adaptiveImageGlyph: NSAdaptiveImageGlyph, replacementRange: NSRange)
 ```
 
+```objc
+- (void) insertAdaptiveImageGlyph:(NSAdaptiveImageGlyph *) adaptiveImageGlyph replacementRange:(NSRange) replacementRange;
+```
+
 ## Parameters
 
 - `adaptiveImageGlyph`: The adaptive image to add to the text.
@@ -21,7 +26,8 @@ optional func insert(_ adaptiveImageGlyph: NSAdaptiveImageGlyph, replacementRang
 
 ## See Also
 
-- [var supportsAdaptiveImageGlyph: Bool](nstextinputclient/supportsadaptiveimageglyph.md)
+### Supporting adaptive images
+- [var supportsAdaptiveImageGlyph: Bool](./supportsadaptiveimageglyph.md)
   A Boolean value that indicates whether the document supports adaptive images in the input.
 
 

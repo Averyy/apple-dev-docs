@@ -1,7 +1,8 @@
 # init(_:image:selection:content:currentValueLabel:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a picker that accepts a custom current value label and generates its label from a localized string key and image resource.
 
@@ -21,9 +22,23 @@ Creates a picker that accepts a custom current value label and generates its lab
 nonisolated init(_ titleResource: LocalizedStringResource, image: ImageResource, selection: Binding<SelectionValue>, @ContentBuilder content: () -> Content, @ContentBuilder currentValueLabel: () -> some View)
 ```
 
+Available when `Label` is `Label<Text, Image>`, `SelectionValue` conforms to `Hashable`, and `Content` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, image: ImageResource, selection: Binding<SelectionValue>, @ContentBuilder content: () -> Content, @ContentBuilder currentValueLabel: () -> some View)
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, image: ImageResource, selection: Binding<SelectionValue>, @ContentBuilder content: () -> Content, @ContentBuilder currentValueLabel: () -> some View) where S : StringProtocol
+```
+
 #### Discussion
 
-This initializer creates a [`Text`](text.md) view on your behalf. See [`Text`](text.md) for more information about localizing strings.
+This initializer creates a [`Text`](../text.md) view on your behalf. See [`Text`](../text.md) for more information about localizing strings.
 
 ## Parameters
 

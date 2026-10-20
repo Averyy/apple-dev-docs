@@ -1,7 +1,8 @@
 # MTRActionsClusterStartActionWithDurationParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,27 +19,31 @@
 class MTRActionsClusterStartActionWithDurationParams
 ```
 
+```objc
+@interface MTRActionsClusterStartActionWithDurationParams : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var actionID: NSNumber](mtractionsclusterstartactionwithdurationparams/actionid.md)
-- [var duration: NSNumber](mtractionsclusterstartactionwithdurationparams/duration.md)
-- [var invokeID: NSNumber?](mtractionsclusterstartactionwithdurationparams/invokeid.md)
-- [var serverSideProcessingTimeout: NSNumber?](mtractionsclusterstartactionwithdurationparams/serversideprocessingtimeout.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtractionsclusterstartactionwithdurationparams/timedinvoketimeoutms.md)
+- [var actionID: NSNumber](./mtractionsclusterstartactionwithdurationparams/actionid.md)
+- [var duration: NSNumber](./mtractionsclusterstartactionwithdurationparams/duration.md)
+- [var invokeID: NSNumber?](./mtractionsclusterstartactionwithdurationparams/invokeid.md)
+- [var serverSideProcessingTimeout: NSNumber?](./mtractionsclusterstartactionwithdurationparams/serversideprocessingtimeout.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtractionsclusterstartactionwithdurationparams/timedinvoketimeoutms.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

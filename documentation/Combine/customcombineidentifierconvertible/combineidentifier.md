@@ -2,6 +2,7 @@
 
 **Framework**: Combine  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A unique identifier for identifying publisher streams.
@@ -20,6 +21,12 @@ A unique identifier for identifying publisher streams.
 ```swift
 var combineIdentifier: CombineIdentifier { get }
 ```
+
+## Default Implementations
+
+### CustomCombineIdentifierConvertible Implementations
+- [var combineIdentifier: CombineIdentifier](./combineidentifier-v253.md)
+  A unique identifier for identifying publisher streams.
 
 
 ---

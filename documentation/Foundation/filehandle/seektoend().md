@@ -1,7 +1,8 @@
 # seekToEnd()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Places the file pointer at the end of the file referenced by the file handle and returns the new file offset.
 
@@ -31,9 +32,10 @@ Throws an error if called a file handle representing a pipe or socket, or if the
 
 ## See Also
 
-- [func offset() throws -> UInt64](filehandle/offset.md)
+### Seeking within a file
+- [func offset() throws -> UInt64](./offset%28%29.md)
   Gets the position of the file pointer within the file.
-- [func seek(toOffset: UInt64) throws](filehandle/seek(tooffset:).md)
+- [func seek(toOffset: UInt64) throws](./seek%28tooffset%29.md)
   Moves the file pointer to the specified offset within the file.
 
 

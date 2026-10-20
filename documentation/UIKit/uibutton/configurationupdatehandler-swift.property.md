@@ -1,7 +1,8 @@
 # configurationUpdateHandler
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A closure that executes when the button state changes.
 
@@ -18,17 +19,22 @@ A closure that executes when the button state changes.
 var configurationUpdateHandler: UIButton.ConfigurationUpdateHandler? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) UIButtonConfigurationUpdateHandler configurationUpdateHandler;
+```
+
 #### Discussion
 
-Use this property as an alternative to overriding [`updateConfiguration()`](uibutton/updateconfiguration().md). Set a closure to respond to button state changes by updating the button configuration.
+Use this property as an alternative to overriding [`updateConfiguration()`](./updateconfiguration%28%29.md). Set a closure to respond to button state changes by updating the button configuration.
 
-In iOS 18 and later, UIKit supports automatic trait tracking inside this closure for traits from this button’s `traitCollection`. For more information, see [`Automatic trait tracking`](automatic-trait-tracking.md).
+In iOS 18 and later, UIKit supports automatic trait tracking inside this closure for traits from this button’s `traitCollection`. For more information, see [Automatic trait tracking](../automatic-trait-tracking.md).
 
-This closure supports automatic observation tracking. For more information, see [`Updating views automatically with observation tracking in UIKit`](updating-views-automatically-with-observation-tracking-in-uikit.md).
+This closure supports automatic observation tracking. For more information, see [Updating views automatically with observation tracking in UIKit](../updating-views-automatically-with-observation-tracking-in-uikit.md).
 
 ## See Also
 
-- [func updateConfiguration()](uibutton/updateconfiguration.md)
+### Observing data in buttons
+- [func updateConfiguration()](./updateconfiguration%28%29.md)
   Updates the button configuration in response to a button state change.
 
 

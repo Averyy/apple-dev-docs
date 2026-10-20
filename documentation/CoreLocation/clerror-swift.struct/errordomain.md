@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 2.0+
@@ -20,7 +21,8 @@ static var errorDomain: String { get }
 
 ## See Also
 
-- [var alternateRegion: CLRegion?](clerror-swift.struct/alternateregion.md)
+### Getting the error details
+- [var alternateRegion: CLRegion?](./alternateregion.md)
   A region that location services can monitor more effectively.
 
 

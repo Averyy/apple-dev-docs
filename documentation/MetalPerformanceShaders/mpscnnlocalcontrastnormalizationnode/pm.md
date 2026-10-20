@@ -1,7 +1,8 @@
 # pm
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,12 +18,17 @@
 var pm: Float { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) float pm;
+```
+
 ## See Also
 
-- [var kernelHeight: Int](mpscnnlocalcontrastnormalizationnode/kernelheight.md)
-- [var kernelWidth: Int](mpscnnlocalcontrastnormalizationnode/kernelwidth.md)
-- [var p0: Float](mpscnnlocalcontrastnormalizationnode/p0.md)
-- [var ps: Float](mpscnnlocalcontrastnormalizationnode/ps.md)
+### Instance Properties
+- [var kernelHeight: Int](./kernelheight.md)
+- [var kernelWidth: Int](./kernelwidth.md)
+- [var p0: Float](./p0.md)
+- [var ps: Float](./ps.md)
 
 
 ---

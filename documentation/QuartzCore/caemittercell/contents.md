@@ -1,7 +1,8 @@
 # contents
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that provides the contents of the layer. Animatable.
 
@@ -19,17 +20,22 @@ An object that provides the contents of the layer. Animatable.
 var contents: Any? { get set }
 ```
 
+```objc
+@property (strong, nullable) id contents;
+```
+
 #### Discussion
 
-A layer can set this property to a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) to display the image as its contents.
+A layer can set this property to a [`CGImage`](../../CoreGraphics/cgimage.md) to display the image as its contents.
 
 The default value of this property is `nil`.
 
 ## See Also
 
-- [var contentsRect: CGRect](caemittercell/contentsrect.md)
-  A rectangle (in the unit coordinate space) that specifies the portion of [`contents`](caemittercell/contents.md) that the receiver should draw. Animatable.
-- [var emitterCells: [CAEmitterCell]?](caemittercell/emittercells.md)
+### Providing Emitter Cell Content
+- [var contentsRect: CGRect](./contentsrect.md)
+  A rectangle (in the unit coordinate space) that specifies the portion of [`contents`](./contents.md) that the receiver should draw. Animatable.
+- [var emitterCells: [CAEmitterCell]?](./emittercells.md)
   An optional array containing the sub-cells of this cell.
 
 

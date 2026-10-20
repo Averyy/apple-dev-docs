@@ -1,7 +1,8 @@
 # sort(_:sortOrder:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Sorts a vector of single-precision values in-place.
 
@@ -11,7 +12,7 @@ Sorts a vector of single-precision values in-place.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ static func sort<V>(_ vector: inout V, sortOrder: vDSP.SortOrder) where V : Acce
 
 #### Discussion
 
-The single- and double-precision [`sort(_:sortOrder:)`](vdsp/sort(_:sortorder:)-wx0w.md) functions sort an array in place.
+The single- and double-precision [`sort(_:sortOrder:)`](./sort%28_,sortorder%29-wx0w.md) functions sort an array in place.
 
 The following code sorts an array in ascending order, followed by decending order:
 
@@ -49,9 +50,10 @@ print(values)
 
 ## See Also
 
-- [static func sort<V>(inout V, sortOrder: vDSP.SortOrder)](vdsp/sort(_:sortorder:)-418g0.md)
+### Vector sorting functions
+- [static func sort<V>(inout V, sortOrder: vDSP.SortOrder)](./sort%28_,sortorder%29-418g0.md)
   Sorts a vector of double-precision values in-place.
-- [vDSP.SortOrder](vdsp/sortorder.md)
+- [vDSP.SortOrder](./sortorder.md)
   Constants that specify the sorting order.
 
 

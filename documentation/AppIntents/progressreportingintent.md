@@ -1,7 +1,8 @@
 # ProgressReportingIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An intent that reports progress to the system during its execution
 
@@ -11,7 +12,7 @@ An intent that reports progress to the system during its execution
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,24 +24,25 @@ protocol ProgressReportingIntent : AppIntent
 ## Topics
 
 ### Instance Properties
-- [var progress: Progress](progressreportingintent/progress.md)
+- [var progress: Progress](./progressreportingintent/progress.md)
   An object representing the progress of the intent’s action.
 
 ## Relationships
 
 ### Inherits From
-- [AppIntent](appintent.md)
-- [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppIntent](./appintent.md)
+- [PersistentlyIdentifiable](./persistentlyidentifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Inherited By
-- [LongRunningIntent](longrunningintent.md)
+- [LongRunningIntent](./longrunningintent.md)
 
 ## See Also
 
-- [protocol PushToTalkTransmissionIntent](pushtotalktransmissionintent.md)
+### Communication actions
+- [protocol PushToTalkTransmissionIntent](./pushtotalktransmissionintent.md)
   An intent that begins or ends an audio transmission with the Push to Talk framework.
-- [protocol ShowInAppSearchResultsIntent](showinappsearchresultsintent.md)
+- [protocol ShowInAppSearchResultsIntent](./showinappsearchresultsintent.md)
   An app intent that displays a set of search results in the app’s interface.
 
 

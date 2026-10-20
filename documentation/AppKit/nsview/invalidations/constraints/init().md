@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the invalidation type.
 
@@ -17,7 +18,8 @@ init()
 
 ## See Also
 
-- [var constraints: [NSLayoutConstraint]](nsview/constraints.md)
+### Creating the invalidation type
+- [var constraints: [NSLayoutConstraint]](../../constraints.md)
   Returns the constraints held by the view.
 
 

@@ -1,7 +1,8 @@
 # surfaceArguments
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The optional argument table for the surface shader stage.
 
@@ -19,9 +20,10 @@ final var surfaceArguments: LowLevelArgumentTable? { get }
 
 ## See Also
 
-- [var geometryArguments: LowLevelArgumentTable?](lowlevelmeshinstance/geometryarguments.md)
+### Providing shader arguments
+- [var geometryArguments: LowLevelArgumentTable?](./geometryarguments.md)
   The optional argument table for the geometry modifier stage.
-- [var lightingArguments: LowLevelArgumentTable?](lowlevelmeshinstance/lightingarguments.md)
+- [var lightingArguments: LowLevelArgumentTable?](./lightingarguments.md)
   The optional argument table for the lighting function stage.
 
 

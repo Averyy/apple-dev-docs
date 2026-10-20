@@ -1,7 +1,8 @@
 # CKModifyRecordZonesOperation
 
 **Framework**: CloudKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An operation that modifies one or more record zones.
 
@@ -10,7 +11,7 @@ An operation that modifies one or more record zones.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,57 +21,62 @@ An operation that modifies one or more record zones.
 class CKModifyRecordZonesOperation
 ```
 
+```objc
+@interface CKModifyRecordZonesOperation : CKDatabaseOperation
+```
+
 ## Mentions
 
-- [Encrypting User Data](encrypting-user-data.md)
-- [Responding to Requests to Delete Data](responding-to-requests-to-delete-data.md)
+- [Encrypting User Data](./encrypting-user-data.md)
+- [Responding to Requests to Delete Data](./responding-to-requests-to-delete-data.md)
 
 #### Overview
 
 After you create one or more record zones, use this operation to save those zones to the database. You can also use the operation to delete record zones and their records.
 
-If you assign a handler to the [`completionBlock`](https://developer.apple.com/documentation/foundation/operation/completionblock) property of the operation, CloudKit calls the handler after the operation executes and returns its results. Use the handler to perform housekeeping tasks for the operation, but don’t use it to process the results of the operation. The handler you provide should manage any failures of the operation, whether due to an error or an explicit cancellation.
+If you assign a handler to the [`completionBlock`](../Foundation/operation/completionblock.md) property of the operation, CloudKit calls the handler after the operation executes and returns its results. Use the handler to perform housekeeping tasks for the operation, but don’t use it to process the results of the operation. The handler you provide should manage any failures of the operation, whether due to an error or an explicit cancellation.
 
 ## Topics
 
 ### Creating a Modify Zones Operation
-- [convenience init(recordZonesToSave: [CKRecordZone]?, recordZoneIDsToDelete: [CKRecordZone.ID]?)](ckmodifyrecordzonesoperation/init(recordzonestosave:recordzoneidstodelete:).md)
+- [convenience init(recordZonesToSave: [CKRecordZone]?, recordZoneIDsToDelete: [CKRecordZone.ID]?)](./ckmodifyrecordzonesoperation/init%28recordzonestosave,recordzoneidstodelete%29.md)
   Creates an operation for modifying the specified record zones.
-- [init()](ckmodifyrecordzonesoperation/init.md)
+- [init()](./ckmodifyrecordzonesoperation/init%28%29.md)
   Creates an empty modify record zones operation.
 ### Configuring the Modify Zones Operation
-- [var recordZonesToSave: [CKRecordZone]?](ckmodifyrecordzonesoperation/recordzonestosave.md)
+- [var recordZonesToSave: [CKRecordZone]?](./ckmodifyrecordzonesoperation/recordzonestosave.md)
   The record zones to save to the database.
-- [var recordZoneIDsToDelete: [CKRecordZone.ID]?](ckmodifyrecordzonesoperation/recordzoneidstodelete.md)
+- [var recordZoneIDsToDelete: [CKRecordZone.ID]?](./ckmodifyrecordzonesoperation/recordzoneidstodelete.md)
   The IDs of the record zones to delete permanently from the database.
 ### Processing the Modify Zones Results
-- [var modifyRecordZonesCompletionBlock: (([CKRecordZone]?, [CKRecordZone.ID]?, (any Error)?) -> Void)?](ckmodifyrecordzonesoperation/modifyrecordzonescompletionblock.md)
+- [var modifyRecordZonesCompletionBlock: (([CKRecordZone]?, [CKRecordZone.ID]?, (any Error)?) -> Void)?](./ckmodifyrecordzonesoperation/modifyrecordzonescompletionblock.md)
   The closure to execute after CloudKit modifies all of the record zones.
 ### Instance Properties
-- [var modifyRecordZonesResultBlock: ((Result<Void, any Error>) -> Void)?](ckmodifyrecordzonesoperation/modifyrecordzonesresultblock.md)
+- [var modifyRecordZonesResultBlock: ((Result<Void, any Error>) -> Void)?](./ckmodifyrecordzonesoperation/modifyrecordzonesresultblock.md)
   The closure to execute after CloudKit modifies all of the record zones.
-- [var perRecordZoneDeleteBlock: ((CKRecordZone.ID, Result<Void, any Error>) -> Void)?](ckmodifyrecordzonesoperation/perrecordzonedeleteblock-6c82y.md)
+- [var perRecordZoneDeleteBlock: ((CKRecordZone.ID, Result<Void, any Error>) -> Void)?](./ckmodifyrecordzonesoperation/perrecordzonedeleteblock-6c82y.md)
   The closure to execute when CloudKit deletes a record zone.
-- [var perRecordZoneSaveBlock: ((CKRecordZone.ID, Result<CKRecordZone, any Error>) -> Void)?](ckmodifyrecordzonesoperation/perrecordzonesaveblock-1m45y.md)
+- [var perRecordZoneSaveBlock: ((CKRecordZone.ID, Result<CKRecordZone, any Error>) -> Void)?](./ckmodifyrecordzonesoperation/perrecordzonesaveblock-1m45y.md)
   The closure to execute when CloudKit saves a record zone.
 
 ## Relationships
 
 ### Inherits From
-- [CKDatabaseOperation](ckdatabaseoperation.md)
+- [CKDatabaseOperation](./ckdatabaseoperation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CKModifyRecordsOperation](ckmodifyrecordsoperation.md)
+### Transactions
+- [class CKModifyRecordsOperation](./ckmodifyrecordsoperation.md)
   An operation that modifies one or more records.
 
 

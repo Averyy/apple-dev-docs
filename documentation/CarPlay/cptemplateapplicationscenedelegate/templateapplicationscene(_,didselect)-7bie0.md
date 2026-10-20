@@ -1,7 +1,8 @@
 # templateApplicationScene(_:didSelect:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the user selects a navigation alert while the app is in the background.
 
@@ -16,6 +17,10 @@ Tells the delegate when the user selects a navigation alert while the app is in 
 optional func templateApplicationScene(_ templateApplicationScene: CPTemplateApplicationScene, didSelect navigationAlert: CPNavigationAlert)
 ```
 
+```objc
+- (void) templateApplicationScene:(CPTemplateApplicationScene *) templateApplicationScene didSelectNavigationAlert:(CPNavigationAlert *) navigationAlert;
+```
+
 #### Discussion
 
 If your navigation app posts a navigation alert while in the background, CarPlay displays a notification banner to the user. If the user taps the banner, CarPlay brings your navigation app to the foreground and calls this method.
@@ -27,7 +32,8 @@ If your navigation app posts a navigation alert while in the background, CarPlay
 
 ## See Also
 
-- [func templateApplicationScene(CPTemplateApplicationScene, didSelect: CPManeuver)](cptemplateapplicationscenedelegate/templateapplicationscene(_:didselect:)-5rf2h.md)
+### Responding to User Actions
+- [func templateApplicationScene(CPTemplateApplicationScene, didSelect: CPManeuver)](./templateapplicationscene%28_,didselect%29-5rf2h.md)
   Tells the delegate when the user selects a maneuver while the app is in the background.
 
 

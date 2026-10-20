@@ -1,7 +1,8 @@
 # exclusively(before:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Combines two gestures exclusively to create a new gesture where only one gesture succeeds, giving precedence to the first gesture.
 
@@ -31,9 +32,10 @@ A gesture that’s the result of combining two gestures where only one of them c
 
 ## See Also
 
-- [func simultaneously<Other>(with: Other) -> SimultaneousGesture<Self, Other>](gesture/simultaneously(with:).md)
+### Composing gestures
+- [func simultaneously<Other>(with: Other) -> SimultaneousGesture<Self, Other>](./simultaneously%28with%29.md)
   Combines a gesture with another gesture to create a new gesture that recognizes both gestures at the same time.
-- [func sequenced<Other>(before: Other) -> SequenceGesture<Self, Other>](gesture/sequenced(before:).md)
+- [func sequenced<Other>(before: Other) -> SequenceGesture<Self, Other>](./sequenced%28before%29.md)
   Sequences a gesture with another one to create a new gesture, which results in the second gesture only receiving events after the first gesture succeeds.
 
 

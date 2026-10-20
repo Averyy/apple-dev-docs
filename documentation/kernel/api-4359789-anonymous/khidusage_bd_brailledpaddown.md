@@ -1,14 +1,15 @@
 # kHIDUsage_BD_BrailleDPadDown
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_BD_BrailleDPadDown = 0x217
 ```
 

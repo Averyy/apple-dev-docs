@@ -1,7 +1,8 @@
 # needsIndefiniteExecution
 
 **Framework**: Playground Support  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 A Boolean value that indicates whether indefinite execution is enabled.
 
@@ -11,6 +12,14 @@ A Boolean value that indicates whether indefinite execution is enabled.
 - Swift Playgrounds 2.0+
 
 ## Declaration
+
+*macOS*
+
+```swift
+final var needsIndefiniteExecution: Bool { get set }
+```
+
+*Swift Playgrounds*
 
 ```swift
 var needsIndefiniteExecution: Bool { get set }
@@ -22,17 +31,18 @@ By default, all top-level code is executed, and then execution is terminated. Wh
 
 With a traditional live view, editing the playground automatically stops execution, even when indefinite execution is enabled. When using the always-on live view, execution continues whether or not indefinite execution is enabled.
 
-Set [`needsIndefiniteExecution`](playgroundpage/1964501-needsindefiniteexecution.md) to `true` to continue execution after the end of top-level code. Set it to `false` to stop execution at that point.
+Set [`needsIndefiniteExecution`](./api-1964501-needsindefiniteexecution.md) to `true` to continue execution after the end of top-level code. Set it to `false` to stop execution at that point.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). It's set to true when [`liveView`](playgroundpage/1964506-liveview.md) is set to a non-`nil` value.
+The default value is [`false`](../../Swift/false.md). It's set to true when [`liveView`](./api-1964506-liveview.md) is set to a non-`nil` value.
 
 ## See Also
 
-- [var executionMode: PlaygroundPage.ExecutionMode](playgroundpage/3029561-executionmode.md)
+### Configuring Execution
+- [var executionMode: PlaygroundPage.ExecutionMode](./api-3029561-executionmode.md)
   The currently selected speed for executing the code on this playground page.
-- [enum PlaygroundPage.ExecutionMode](playgroundpage/executionmode.md)
+- [enum PlaygroundPage.ExecutionMode](./executionmode.md)
   The available speeds for executing the code on a playground page.
-- [func finishExecution() -> Never](playgroundpage/1964505-finishexecution.md)
+- [func finishExecution() -> Never](./api-1964505-finishexecution.md)
   Terminates execution of the current playground page.
 
 

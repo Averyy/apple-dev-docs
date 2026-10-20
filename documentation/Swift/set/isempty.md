@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the set is empty.
 
@@ -20,11 +21,14 @@ A Boolean value that indicates whether the set is empty.
 var isEmpty: Bool { get }
 ```
 
+Available when `Element` conforms to `Hashable`.
+
 ## See Also
 
-- [var count: Int](set/count.md)
+### Inspecting a Set
+- [var count: Int](./count.md)
   The number of elements in the set.
-- [var capacity: Int](set/capacity.md)
+- [var capacity: Int](./capacity.md)
   The total number of elements that the set can contain without allocating new storage.
 
 

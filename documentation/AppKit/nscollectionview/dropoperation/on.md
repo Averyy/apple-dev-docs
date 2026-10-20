@@ -1,7 +1,8 @@
 # NSCollectionView.DropOperation.on
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The drop occurs at the collection view item to which the item was dragged.
 
@@ -14,9 +15,14 @@ The drop occurs at the collection view item to which the item was dragged.
 case on
 ```
 
+```c
+NSCollectionViewDropOn
+```
+
 ## See Also
 
-- [NSCollectionView.DropOperation.before](nscollectionview/dropoperation/before.md)
+### Constants
+- [NSCollectionView.DropOperation.before](./before.md)
   The drop occurs before the collection view item to which the item was dragged.
 
 

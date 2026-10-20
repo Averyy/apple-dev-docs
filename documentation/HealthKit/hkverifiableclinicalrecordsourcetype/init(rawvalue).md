@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a source type based on the provided string.
 

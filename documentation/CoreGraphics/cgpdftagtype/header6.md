@@ -1,7 +1,8 @@
 # CGPDFTagType.header6
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.0+
@@ -18,23 +19,28 @@
 case header6
 ```
 
+```c
+CGPDFTagTypeHeader6
+```
+
 ## See Also
 
-- [CGPDFTagType.TOC](cgpdftagtype/toc.md)
-- [CGPDFTagType.TOCI](cgpdftagtype/toci.md)
-- [CGPDFTagType.annotation](cgpdftagtype/annotation.md)
-- [CGPDFTagType.art](cgpdftagtype/art.md)
-- [CGPDFTagType.bibliography](cgpdftagtype/bibliography.md)
-- [CGPDFTagType.blockQuote](cgpdftagtype/blockquote.md)
-- [CGPDFTagType.caption](cgpdftagtype/caption.md)
-- [CGPDFTagType.code](cgpdftagtype/code.md)
-- [CGPDFTagType.div](cgpdftagtype/div.md)
-- [CGPDFTagType.document](cgpdftagtype/document.md)
-- [CGPDFTagType.figure](cgpdftagtype/figure.md)
-- [CGPDFTagType.form](cgpdftagtype/form.md)
-- [CGPDFTagType.formula](cgpdftagtype/formula.md)
-- [CGPDFTagType.header](cgpdftagtype/header.md)
-- [CGPDFTagType.header1](cgpdftagtype/header1.md)
+### Enumeration Cases
+- [CGPDFTagType.TOC](./toc.md)
+- [CGPDFTagType.TOCI](./toci.md)
+- [CGPDFTagType.annotation](./annotation.md)
+- [CGPDFTagType.art](./art.md)
+- [CGPDFTagType.bibliography](./bibliography.md)
+- [CGPDFTagType.blockQuote](./blockquote.md)
+- [CGPDFTagType.caption](./caption.md)
+- [CGPDFTagType.code](./code.md)
+- [CGPDFTagType.div](./div.md)
+- [CGPDFTagType.document](./document.md)
+- [CGPDFTagType.figure](./figure.md)
+- [CGPDFTagType.form](./form.md)
+- [CGPDFTagType.formula](./formula.md)
+- [CGPDFTagType.header](./header.md)
+- [CGPDFTagType.header1](./header1.md)
 
 
 ---

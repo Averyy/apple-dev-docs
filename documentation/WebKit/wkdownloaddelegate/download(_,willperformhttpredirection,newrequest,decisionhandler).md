@@ -1,7 +1,8 @@
 # download(_:willPerformHTTPRedirection:newRequest:decisionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate to respond to the download’s redirect response.
 
@@ -15,7 +16,15 @@ Asks the delegate to respond to the download’s redirect response.
 ## Declaration
 
 ```swift
+optional func download(_ download: WKDownload, willPerformHTTPRedirection response: HTTPURLResponse, newRequest request: URLRequest, decisionHandler: @escaping @MainActor @Sendable (WKDownload.RedirectPolicy) -> Void)
+```
+
+```swift
 optional func download(_ download: WKDownload, decidedPolicyForHTTPRedirection response: HTTPURLResponse, newRequest request: URLRequest) async -> WKDownload.RedirectPolicy
+```
+
+```objc
+- (void) download:(WKDownload *) download willPerformHTTPRedirection:(NSHTTPURLResponse *) response newRequest:(NSURLRequest *) request decisionHandler:(void (^)(enum WKDownloadRedirectPolicy)) decisionHandler;
 ```
 
 #### Discussion
@@ -33,7 +42,8 @@ If you don’t implement this method, the web view proceeds with all redirects.
 
 ## See Also
 
-- [WKDownload.RedirectPolicy](wkdownload/redirectpolicy.md)
+### Responding to Redirects
+- [WKDownload.RedirectPolicy](../wkdownload/redirectpolicy.md)
   An enumeration with cases that indicate whether to proceed with a redirect.
 
 

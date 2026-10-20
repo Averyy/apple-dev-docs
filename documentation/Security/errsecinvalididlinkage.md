@@ -1,7 +1,8 @@
 # errSecInvalidIDLinkage
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The ID linkage is not valid.
 
@@ -18,6 +19,10 @@ The ID linkage is not valid.
 
 ```swift
 var errSecInvalidIDLinkage: OSStatus { get }
+```
+
+```c
+errSecInvalidIDLinkage
 ```
 
 

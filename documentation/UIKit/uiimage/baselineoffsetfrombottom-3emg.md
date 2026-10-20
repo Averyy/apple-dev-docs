@@ -1,7 +1,8 @@
 # baselineOffsetFromBottom
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the baseline relative to the bottom of the image.
 
@@ -10,7 +11,7 @@ The position of the baseline relative to the bottom of the image.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

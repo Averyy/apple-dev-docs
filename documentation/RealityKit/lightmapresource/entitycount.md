@@ -1,7 +1,8 @@
 # entityCount
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Total number of entities in this lightmap.
 

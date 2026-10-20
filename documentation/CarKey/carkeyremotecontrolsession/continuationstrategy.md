@@ -1,7 +1,8 @@
 # CarKeyRemoteControlSession.ContinuationStrategy
 
 **Framework**: CarKey  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Strategy to use on reception of a continuation request.
 
@@ -21,16 +22,16 @@ enum ContinuationStrategy
 ## Topics
 
 ### Enumeration Cases
-- [CarKeyRemoteControlSession.ContinuationStrategy.automatic](carkeyremotecontrolsession/continuationstrategy/automatic.md)
+- [CarKeyRemoteControlSession.ContinuationStrategy.automatic](./continuationstrategy/automatic.md)
   Auto-confirm any incoming continuation requests until the requested action is stopped or completed with no intervention from the client.
-- [CarKeyRemoteControlSession.ContinuationStrategy.manual](carkeyremotecontrolsession/continuationstrategy/manual.md)
+- [CarKeyRemoteControlSession.ContinuationStrategy.manual](./continuationstrategy/manual.md)
   Give your app control over the incoming continuation requests and allow to exchange data with the vehicle.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

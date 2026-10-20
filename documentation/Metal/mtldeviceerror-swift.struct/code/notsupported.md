@@ -1,7 +1,8 @@
 # MTLDeviceError.Code.notSupported
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the requested feature is not supported by the current device.
 
@@ -17,6 +18,10 @@ Indicates the requested feature is not supported by the current device.
 
 ```swift
 case notSupported
+```
+
+```c
+MTLDeviceErrorNotSupported
 ```
 
 

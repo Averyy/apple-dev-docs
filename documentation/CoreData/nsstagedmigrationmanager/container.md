@@ -1,7 +1,8 @@
 # container
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The container that provides access to the migrating persistent store.
 
@@ -18,6 +19,10 @@ The container that provides access to the migrating persistent store.
 
 ```swift
 var container: NSPersistentContainer? { get }
+```
+
+```objc
+@property (strong, readonly, nullable) NSPersistentContainer * container;
 ```
 
 

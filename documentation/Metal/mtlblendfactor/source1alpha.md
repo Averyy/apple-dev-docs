@@ -1,7 +1,8 @@
 # MTLBlendFactor.source1Alpha
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Blend factor of source alpha. This option supports dual-source blending and reads from the second color output of the fragment function.
 
@@ -19,41 +20,46 @@ Blend factor of source alpha. This option supports dual-source blending and read
 case source1Alpha
 ```
 
+```c
+MTLBlendFactorSource1Alpha
+```
+
 #### Discussion
 
 `F = Source.a`
 
 ## See Also
 
-- [MTLBlendFactor.zero](mtlblendfactor/zero.md)
+### Blend factors
+- [MTLBlendFactor.zero](./zero.md)
   Blend factor of zero.
-- [MTLBlendFactor.one](mtlblendfactor/one.md)
+- [MTLBlendFactor.one](./one.md)
   Blend factor of one.
-- [MTLBlendFactor.sourceColor](mtlblendfactor/sourcecolor.md)
+- [MTLBlendFactor.sourceColor](./sourcecolor.md)
   Blend factor of source values.
-- [MTLBlendFactor.oneMinusSourceColor](mtlblendfactor/oneminussourcecolor.md)
+- [MTLBlendFactor.oneMinusSourceColor](./oneminussourcecolor.md)
   Blend factor of one minus source values.
-- [MTLBlendFactor.sourceAlpha](mtlblendfactor/sourcealpha.md)
+- [MTLBlendFactor.sourceAlpha](./sourcealpha.md)
   Blend factor of source alpha.
-- [MTLBlendFactor.oneMinusSourceAlpha](mtlblendfactor/oneminussourcealpha.md)
+- [MTLBlendFactor.oneMinusSourceAlpha](./oneminussourcealpha.md)
   Blend factor of one minus source alpha.
-- [MTLBlendFactor.destinationColor](mtlblendfactor/destinationcolor.md)
+- [MTLBlendFactor.destinationColor](./destinationcolor.md)
   Blend factor of destination values.
-- [MTLBlendFactor.oneMinusDestinationColor](mtlblendfactor/oneminusdestinationcolor.md)
+- [MTLBlendFactor.oneMinusDestinationColor](./oneminusdestinationcolor.md)
   Blend factor of one minus destination values.
-- [MTLBlendFactor.destinationAlpha](mtlblendfactor/destinationalpha.md)
+- [MTLBlendFactor.destinationAlpha](./destinationalpha.md)
   Blend factor of destination alpha.
-- [MTLBlendFactor.oneMinusDestinationAlpha](mtlblendfactor/oneminusdestinationalpha.md)
+- [MTLBlendFactor.oneMinusDestinationAlpha](./oneminusdestinationalpha.md)
   Blend factor of one minus destination alpha.
-- [MTLBlendFactor.sourceAlphaSaturated](mtlblendfactor/sourcealphasaturated.md)
+- [MTLBlendFactor.sourceAlphaSaturated](./sourcealphasaturated.md)
   Blend factor of the minimum of either source alpha or one minus destination alpha.
-- [MTLBlendFactor.blendColor](mtlblendfactor/blendcolor.md)
+- [MTLBlendFactor.blendColor](./blendcolor.md)
   A blend factor that applies the blend color’s red, green, and blue components.
-- [MTLBlendFactor.oneMinusBlendColor](mtlblendfactor/oneminusblendcolor.md)
+- [MTLBlendFactor.oneMinusBlendColor](./oneminusblendcolor.md)
   A blend factor that applies one minus the blend color’s red, green, and blue components.
-- [MTLBlendFactor.blendAlpha](mtlblendfactor/blendalpha.md)
+- [MTLBlendFactor.blendAlpha](./blendalpha.md)
   Blend factor of alpha value.
-- [MTLBlendFactor.oneMinusBlendAlpha](mtlblendfactor/oneminusblendalpha.md)
+- [MTLBlendFactor.oneMinusBlendAlpha](./oneminusblendalpha.md)
   Blend factor of one minus alpha value.
 
 

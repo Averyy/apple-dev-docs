@@ -1,7 +1,8 @@
 # DockAccessory.BatteryState
 
 **Framework**: DockKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A struct that represents an accessory battery state.
 
@@ -24,22 +25,22 @@ This state is emitted when the battery level changes on accessory.
 ## Topics
 
 ### Instance Properties
-- [let batteryLevel: Double](dockaccessory/batterystate/batterylevel.md)
+- [let batteryLevel: Double](./batterystate/batterylevel.md)
   Current charge percentage (0..1) of the battery
-- [let chargeState: DockAccessory.BatteryChargeState](dockaccessory/batterystate/chargestate.md)
+- [let chargeState: DockAccessory.BatteryChargeState](./batterystate/chargestate.md)
   An enumeration representing the charge state of the battery
-- [let lowBattery: Bool](dockaccessory/batterystate/lowbattery.md)
+- [let lowBattery: Bool](./batterystate/lowbattery.md)
   True when accessory deems its charge to be too low to function properly
-- [let name: String](dockaccessory/batterystate/name.md)
+- [let name: String](./batterystate/name.md)
   The name of the battery that is sending this state from accessory
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

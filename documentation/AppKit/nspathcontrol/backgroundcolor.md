@@ -1,7 +1,8 @@
 # backgroundColor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s background color.
 
@@ -13,6 +14,10 @@ The receiver’s background color.
 ```swift
 @NSCopying
 var backgroundColor: NSColor? { get set }
+```
+
+```objc
+@property (copy, nullable) NSColor * backgroundColor;
 ```
 
 #### Discussion

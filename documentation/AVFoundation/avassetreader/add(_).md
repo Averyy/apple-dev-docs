@@ -1,22 +1,29 @@
 # add(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an output to the reader.
 
 **Availability**:
-- iOS 4.1+
-- iPadOS 4.1+
-- Mac Catalyst 13.1+
-- macOS 10.7+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 4.1+ - Deprecated in 27.0
+- iPadOS 4.1+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.7+ - Deprecated in 27.0
+- tvOS 9.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use the appropriate AVAssetReader.outputProvider(for:...) overload for your output and optional adaptor instead
 
 ## Declaration
 
 ```swift
 func add(_ output: AVAssetReaderOutput)
+```
+
+```objc
+- (void) addOutput:(AVAssetReaderOutput *) output;
 ```
 
 #### Discussion
@@ -31,9 +38,10 @@ You can’t add an output after you start reading.
 
 ## See Also
 
-- [func canAdd(AVAssetReaderOutput) -> Bool](avassetreader/canadd(_:).md)
+### Managing outputs
+- [func canAdd(AVAssetReaderOutput) -> Bool](./canadd%28_%29.md)
   Determines whether you can add the output to the asset reader.
-- [var outputs: [AVAssetReaderOutput]](avassetreader/outputs.md)
+- [var outputs: [AVAssetReaderOutput]](./outputs.md)
   The outputs from which you read media data.
 
 

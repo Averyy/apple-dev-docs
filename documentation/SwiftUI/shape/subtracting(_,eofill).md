@@ -1,7 +1,8 @@
 # subtracting(_:eoFill:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new shape with filled regions from this shape that are not in the given shape.
 
@@ -38,15 +39,16 @@ Any unclosed subpaths in either shape are assumed to be closed. The result of fi
 
 ## See Also
 
-- [func intersection<T>(T, eoFill: Bool) -> some Shape](shape/intersection(_:eofill:).md)
+### Performing operations on a shape
+- [func intersection<T>(T, eoFill: Bool) -> some Shape](./intersection%28_,eofill%29.md)
   Returns a new shape with filled regions common to both shapes.
-- [func lineIntersection<T>(T, eoFill: Bool) -> some Shape](shape/lineintersection(_:eofill:).md)
+- [func lineIntersection<T>(T, eoFill: Bool) -> some Shape](./lineintersection%28_,eofill%29.md)
   Returns a new shape with a line from this shape that overlaps the filled regions of the given shape.
-- [func lineSubtraction<T>(T, eoFill: Bool) -> some Shape](shape/linesubtraction(_:eofill:).md)
+- [func lineSubtraction<T>(T, eoFill: Bool) -> some Shape](./linesubtraction%28_,eofill%29.md)
   Returns a new shape with a line from this shape that does not overlap the filled region of the given shape.
-- [func symmetricDifference<T>(T, eoFill: Bool) -> some Shape](shape/symmetricdifference(_:eofill:).md)
+- [func symmetricDifference<T>(T, eoFill: Bool) -> some Shape](./symmetricdifference%28_,eofill%29.md)
   Returns a new shape with filled regions either from this shape or the given shape, but not in both.
-- [func union<T>(T, eoFill: Bool) -> some Shape](shape/union(_:eofill:).md)
+- [func union<T>(T, eoFill: Bool) -> some Shape](./union%28_,eofill%29.md)
   Returns a new shape with filled regions in either this shape or the given shape.
 
 

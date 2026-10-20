@@ -1,7 +1,8 @@
 # dailyForecast
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The daily forecast.
 
@@ -22,13 +23,14 @@ var dailyForecast: Forecast<DayWeather>
 
 ## See Also
 
-- [var availability: WeatherAvailability](weather/availability.md)
+### Getting the forecast
+- [var availability: WeatherAvailability](./availability.md)
   Flags containing information about data availability and attribution.
-- [var currentWeather: CurrentWeather](weather/currentweather.md)
+- [var currentWeather: CurrentWeather](./currentweather.md)
   The current weather forecast.
-- [var hourlyForecast: Forecast<HourWeather>](weather/hourlyforecast.md)
+- [var hourlyForecast: Forecast<HourWeather>](./hourlyforecast.md)
   The hourly forecast.
-- [var minuteForecast: Forecast<MinuteWeather>?](weather/minuteforecast.md)
+- [var minuteForecast: Forecast<MinuteWeather>?](./minuteforecast.md)
   The minute-by-minute forecast.
 
 

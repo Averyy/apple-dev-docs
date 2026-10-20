@@ -1,17 +1,22 @@
 # NSButton.BezelStyle.flexiblePush
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A push button with a flexible height to accommodate longer text labels or an image.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case flexiblePush
+```
+
+```c
+NSBezelStyleFlexiblePush
 ```
 
 #### Discussion
@@ -36,11 +41,12 @@ button.title = @"Flexible\n push";
 button.bezelStyle = NSBezelStyleFlexiblePush;
 ```
 
-For design guidance, see [`Human Interface Guidelines > Buttons`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/buttons).
+For design guidance, see [Human Interface Guidelines > Buttons](https://developer.apple.com/design/human-interface-guidelines/buttons).
 
 ## See Also
 
-- [NSButton.BezelStyle.push](nsbutton/bezelstyle-swift.enum/push.md)
+### Push
+- [NSButton.BezelStyle.push](./push.md)
   A standard push style button.
 
 

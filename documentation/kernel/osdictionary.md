@@ -1,7 +1,8 @@
 # OSDictionary
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 OSDictionary provides an associative store using strings for keys.
 
@@ -10,15 +11,15 @@ OSDictionary provides an associative store using strings for keys.
 
 ## Declaration
 
-```swift
+```cpp
 class OSDictionary : OSCollection
 ```
 
 #### Overview
 
-OSDictionary is a container for Libkern C++ objects (those derived from OSMetaClassBase, in particular OSObject). Storage and access are associative, based on string-valued keys (C string, `OSString`, or [`OSSymbol`](ossymbol.md)). When adding an object to an OSDictionary, you provide a string identifier, which can then used to retrieve that object or remove it from the dictionary. Setting an object with a key that already has an associated object replaces the original object.
+OSDictionary is a container for Libkern C++ objects (those derived from OSMetaClassBase, in particular OSObject). Storage and access are associative, based on string-valued keys (C string, `OSString`, or [`OSSymbol`](./ossymbol.md)). When adding an object to an OSDictionary, you provide a string identifier, which can then used to retrieve that object or remove it from the dictionary. Setting an object with a key that already has an associated object replaces the original object.
 
-You must generally cast retrieved objects from [`OSObject`](osobject.md) to the desired class using OSDynamicCast. This macro returns the object cast to the desired class, or `NULL` if the object isn't derived from that class.
+You must generally cast retrieved objects from [`OSObject`](./osobject.md) to the desired class using OSDynamicCast. This macro returns the object cast to the desired class, or `NULL` if the object isn't derived from that class.
 
 When iterating an OSDictionary using OSCollectionIterator, the objects returned from getNextObject are dictionary keys (not the object values for those keys). You can use the keys to retrieve their associated object values.
 
@@ -35,144 +36,145 @@ OSDictionary provides no concurrency protection; it's up to the usage context to
 ## Topics
 
 ### Miscellaneous
-- [copyCollection](osdictionary/1808081-copycollection.md)
+- [copyCollection](./osdictionary/api-1808081-copycollection.md)
   Creates a deep copy of the dictionary and its child collections.
-- [ensureCapacity](osdictionary/1808087-ensurecapacity.md)
+- [ensureCapacity](./osdictionary/api-1808087-ensurecapacity.md)
   Ensures the dictionary has enough space to store the requested number of key/object pairs.
-- [flushCollection](osdictionary/1808092-flushcollection.md)
+- [flushCollection](./osdictionary/api-1808092-flushcollection.md)
   Removes and releases all keys and objects within the dictionary.
-- [free](osdictionary/1808101-free.md)
+- [free](./osdictionary/api-1808101-free.md)
   Deallocates or releases any resources used by the OSDictionary instance.
-- [getCapacity](osdictionary/1808107-getcapacity.md)
+- [getCapacity](./osdictionary/api-1808107-getcapacity.md)
   Returns the number of objects the dictionary can store without reallocating.
-- [getCapacityIncrement](osdictionary/1808116-getcapacityincrement.md)
+- [getCapacityIncrement](./osdictionary/api-1808116-getcapacityincrement.md)
   Returns the storage increment of the dictionary.
-- [getCount](osdictionary/1808124-getcount.md)
+- [getCount](./osdictionary/api-1808124-getcount.md)
   Returns the current number of key/object pairs contained within the dictionary.
-- [getObject](osdictionary/1808133-getobject.md)
+- [getObject](./osdictionary/api-1808133-getobject.md)
   Returns the object stored under a given key.
-- [getObject(const OSString *)](osdictionary/1808139-getobject.md)
+- [getObject(const OSString *)](./osdictionary/api-1808139-getobject.md)
   Returns the object stored under a given key.
-- [getObject(const OSSymbol *)](osdictionary/1808148-getobject.md)
+- [getObject(const OSSymbol *)](./osdictionary/api-1808148-getobject.md)
   Returns the object stored under a given key.
-- [initWithCapacity](osdictionary/1808159-initwithcapacity.md)
+- [initWithCapacity](./osdictionary/api-1808159-initwithcapacity.md)
   Initializes a new instance of OSDictionary.
-- [initWithDictionary](osdictionary/1808166-initwithdictionary.md)
+- [initWithDictionary](./osdictionary/api-1808166-initwithdictionary.md)
   Initializes a new OSDictionary with the contents of another dictionary.
-- [initWithObjects(const OSObject *, const OSString *, unsigned int, unsigned int)](osdictionary/1808177-initwithobjects.md)
+- [initWithObjects(const OSObject *, const OSString *, unsigned int, unsigned int)](./osdictionary/api-1808177-initwithobjects.md)
   Initializes a new OSDictionary with keys and objects provided.
-- [initWithObjects(const OSObject *, const OSSymbol *, unsigned int, unsigned int)](osdictionary/1808181-initwithobjects.md)
+- [initWithObjects(const OSObject *, const OSSymbol *, unsigned int, unsigned int)](./osdictionary/api-1808181-initwithobjects.md)
   Initializes a new OSDictionary with keys and objects provided.
-- [isEqualTo](osdictionary/1808187-isequalto.md)
+- [isEqualTo](./osdictionary/api-1808187-isequalto.md)
   Tests the equality of an OSDictionary to an arbitrary object.
-- [isEqualTo(const OSDictionary *)](osdictionary/1808191-isequalto.md)
+- [isEqualTo(const OSDictionary *)](./osdictionary/api-1808191-isequalto.md)
   Tests the equality of two OSDictionary objects.
-- [isEqualTo(const OSDictionary *, const OSCollection *)](osdictionary/1808194-isequalto.md)
+- [isEqualTo(const OSDictionary *, const OSCollection *)](./osdictionary/api-1808194-isequalto.md)
   Tests the equality of two OSDictionary objects over a subset of keys.
-- [merge](osdictionary/1808198-merge.md)
+- [merge](./osdictionary/api-1808198-merge.md)
   Merges the contents of a dictionary into the receiver.
-- [removeObject](osdictionary/1808205-removeobject.md)
+- [removeObject](./osdictionary/api-1808205-removeobject.md)
   Removes a key/object pair from the dictionary.
-- [removeObject(const OSString *)](osdictionary/1808207-removeobject.md)
+- [removeObject(const OSString *)](./osdictionary/api-1808207-removeobject.md)
   Removes a key/object pair from the dictionary.
-- [removeObject(const OSSymbol *)](osdictionary/1808209-removeobject.md)
+- [removeObject(const OSSymbol *)](./osdictionary/api-1808209-removeobject.md)
   Removes a key/object pair from the dictionary.
-- [serialize](osdictionary/1808214-serialize.md)
+- [serialize](./osdictionary/api-1808214-serialize.md)
   Archives the receiver into the provided OSSerialize object.
-- [setCapacityIncrement](osdictionary/1808218-setcapacityincrement.md)
+- [setCapacityIncrement](./osdictionary/api-1808218-setcapacityincrement.md)
   Sets the storage increment of the dictionary.
-- [setObject](osdictionary/1808220-setobject.md)
+- [setObject](./osdictionary/api-1808220-setobject.md)
   Stores an object in the dictionary under a key.
-- [setObject(const OSString *, const OSMetaClassBase *)](osdictionary/1808224-setobject.md)
+- [setObject(const OSString *, const OSMetaClassBase *)](./osdictionary/api-1808224-setobject.md)
   Stores an object in the dictionary under a key.
-- [setObject(const OSSymbol *, const OSMetaClassBase *)](osdictionary/1808227-setobject.md)
+- [setObject(const OSSymbol *, const OSMetaClassBase *)](./osdictionary/api-1808227-setobject.md)
   Stores an object in the dictionary under a key.
-- [withCapacity](osdictionary/1808230-withcapacity.md)
+- [withCapacity](./osdictionary/api-1808230-withcapacity.md)
   Creates and initializes an empty OSDictionary.
-- [withDictionary](osdictionary/1808234-withdictionary.md)
+- [withDictionary](./osdictionary/api-1808234-withdictionary.md)
   Creates and initializes an OSDictionary populated with the contents of another dictionary.
-- [withObjects(const OSObject *, const OSString *, unsigned int, unsigned int)](osdictionary/1808237-withobjects.md)
+- [withObjects(const OSObject *, const OSString *, unsigned int, unsigned int)](./osdictionary/api-1808237-withobjects.md)
   Creates and initializes an OSDictionary populated with keys and objects provided.
-- [withObjects(const OSObject *, const OSSymbol *, unsigned int, unsigned int)](osdictionary/1808240-withobjects.md)
+- [withObjects(const OSObject *, const OSSymbol *, unsigned int, unsigned int)](./osdictionary/api-1808240-withobjects.md)
   Creates and initializes an OSDictionary populated with keys and objects provided.
 ### Instance Methods
-- [- copyCollection](osdictionary/1412868-copycollection.md)
-- [- ensureCapacity](osdictionary/3180896-ensurecapacity.md)
+- [- copyCollection](./osdictionary/api-1412868-copycollection.md)
+- [- ensureCapacity](./osdictionary/api-3180896-ensurecapacity.md)
   Allocates capacity for members in dictionary.
-- [- flushCollection](osdictionary/3180897-flushcollection.md)
+- [- flushCollection](./osdictionary/api-3180897-flushcollection.md)
   Removes and drops references to all members of dictionary.
-- [- free](osdictionary/3180898-free.md)
-- [- getCapacity](osdictionary/3180899-getcapacity.md)
+- [- free](./osdictionary/api-3180898-free.md)
+- [- getCapacity](./osdictionary/api-3180899-getcapacity.md)
   Returns count of currently allocated capacity for members in dictionary.
-- [- getCapacityIncrement](osdictionary/1412877-getcapacityincrement.md)
-- [- getCount](osdictionary/3180900-getcount.md)
+- [- getCapacityIncrement](./osdictionary/api-1412877-getcapacityincrement.md)
+- [- getCount](./osdictionary/api-3180900-getcount.md)
   Returns count of members in dictionary.
-- [- getMetaClass](osdictionary/1412876-getmetaclass.md)
-- [- getNextObjectForIterator](osdictionary/1412886-getnextobjectforiterator.md)
-- [- getObject](osdictionary/1412897-getobject.md)
-- [- getObject](osdictionary/3180901-getobject.md)
+- [- getMetaClass](./osdictionary/api-1412876-getmetaclass.md)
+- [- getNextObjectForIterator](./osdictionary/api-1412886-getnextobjectforiterator.md)
+- [- getObject](./osdictionary/api-1412897-getobject.md)
+- [- getObject](./osdictionary/api-3180901-getobject.md)
   Returns a member of the dictionary.
-- [- getObject](osdictionary/3433846-getobject.md)
+- [- getObject](./osdictionary/api-3433846-getobject.md)
   Returns a member of the dictionary.
-- [- initIterator](osdictionary/1412888-inititerator.md)
-- [- initWithCapacity](osdictionary/1412883-initwithcapacity.md)
-- [- initWithDictionary](osdictionary/1412866-initwithdictionary.md)
-- [- initWithObjects](osdictionary/1412860-initwithobjects.md)
-- [- initWithObjects](osdictionary/3516835-initwithobjects.md)
-- [- isEqualTo](osdictionary/3180902-isequalto.md)
+- [- initIterator](./osdictionary/api-1412888-inititerator.md)
+- [- initWithCapacity](./osdictionary/api-1412883-initwithcapacity.md)
+- [- initWithDictionary](./osdictionary/api-1412866-initwithdictionary.md)
+- [- initWithObjects](./osdictionary/api-1412860-initwithobjects.md)
+- [- initWithObjects](./osdictionary/api-3516835-initwithobjects.md)
+- [- isEqualTo](./osdictionary/api-3180902-isequalto.md)
   Compares certain members of two dictionaries with isEqualTo().
-- [- isEqualTo](osdictionary/3433847-isequalto.md)
+- [- isEqualTo](./osdictionary/api-3433847-isequalto.md)
   Compares all members of two dictionaries with isEqualTo().
-- [- isEqualTo](osdictionary/3433848-isequalto.md)
+- [- isEqualTo](./osdictionary/api-3433848-isequalto.md)
   Compares the dictionary with an OSObject
-- [- iterateObjects](osdictionary/2967352-iterateobjects.md)
-- [- iterateObjects](osdictionary/3516836-iterateobjects.md)
-- [- iteratorSize](osdictionary/1412862-iteratorsize.md)
-- [- merge](osdictionary/3180904-merge.md)
+- [- iterateObjects](./osdictionary/api-2967352-iterateobjects.md)
+- [- iterateObjects](./osdictionary/api-3516836-iterateobjects.md)
+- [- iteratorSize](./osdictionary/api-1412862-iteratorsize.md)
+- [- merge](./osdictionary/api-3180904-merge.md)
   Adds all members of a dictionary to this dictionary.
-- [- removeObject](osdictionary/1412855-removeobject.md)
-- [- removeObject](osdictionary/3180905-removeobject.md)
+- [- removeObject](./osdictionary/api-1412855-removeobject.md)
+- [- removeObject](./osdictionary/api-3180905-removeobject.md)
   Remove an object by key from the dictionary.
-- [- removeObject](osdictionary/3433849-removeobject.md)
+- [- removeObject](./osdictionary/api-3433849-removeobject.md)
   Remove an object by key from the dictionary.
-- [- serialize](osdictionary/1412870-serialize.md)
-- [- setCapacityIncrement](osdictionary/1412885-setcapacityincrement.md)
-- [- setObject](osdictionary/1412895-setobject.md)
-- [- setObject](osdictionary/3180906-setobject.md)
+- [- serialize](./osdictionary/api-1412870-serialize.md)
+- [- setCapacityIncrement](./osdictionary/api-1412885-setcapacityincrement.md)
+- [- setObject](./osdictionary/api-1412895-setobject.md)
+- [- setObject](./osdictionary/api-3180906-setobject.md)
   Add or replace an object in the dictionary.
-- [- setObject](osdictionary/3433850-setobject.md)
+- [- setObject](./osdictionary/api-3433850-setobject.md)
   Add or replace an object in the dictionary.
-- [- setObject](osdictionary/3567168-setobject.md)
-- [- setObject](osdictionary/3567169-setobject.md)
-- [- setObject](osdictionary/3567170-setobject.md)
-- [- setOptions](osdictionary/1412891-setoptions.md)
+- [- setObject](./osdictionary/api-3567168-setobject.md)
+- [- setObject](./osdictionary/api-3567169-setobject.md)
+- [- setObject](./osdictionary/api-3567170-setobject.md)
+- [- setOptions](./osdictionary/api-1412891-setoptions.md)
   Recursively sets option bits in the dictionary and all child collections.
 ### Type Methods
-- [+ withCapacity](osdictionary/3180907-withcapacity.md)
+- [+ withCapacity](./osdictionary/api-3180907-withcapacity.md)
   Allocates an OSDictionary object with preallocated capacity.
-- [+ withDictionary](osdictionary/3180908-withdictionary.md)
+- [+ withDictionary](./osdictionary/api-3180908-withdictionary.md)
   Allocates an OSDictionary object with given members and preallocated capacity.
-- [+ withObjects](osdictionary/1412890-withobjects.md)
-- [+ withObjects](osdictionary/3180909-withobjects.md)
+- [+ withObjects](./osdictionary/api-1412890-withobjects.md)
+- [+ withObjects](./osdictionary/api-3180909-withobjects.md)
   Allocates an OSDictionary object with given members and preallocated capacity.
 
 ## Relationships
 
 ### Inherits From
-- [OSCollection](oscollection.md)
+- [OSCollection](./oscollection.md)
 
 ## See Also
 
-- [OSArray](osarray.md)
+### Collections
+- [OSArray](./osarray.md)
   OSArray provides an indexed store of objects.
-- [OSSet](osset.md)
+- [OSSet](./osset.md)
   OSSet provides an unordered set store of objects.
-- [OSOrderedSet](osorderedset.md)
+- [OSOrderedSet](./osorderedset.md)
   OSOrderedSet provides an ordered set store of objects.
-- [OSCollection](oscollection.md)
+- [OSCollection](./oscollection.md)
   The abstract superclass for Libkern collections.
-- [OSCollectionIterator](oscollectioniterator.md)
-- [OSIterator](ositerator.md)
+- [OSCollectionIterator](./oscollectioniterator.md)
+- [OSIterator](./ositerator.md)
   The abstract superclass for Libkern iterators.
 
 

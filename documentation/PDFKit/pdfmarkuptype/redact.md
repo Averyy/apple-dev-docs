@@ -1,7 +1,8 @@
 # PDFMarkupType.redact
 
 **Framework**: PDFKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The redaction style for markup.
 
@@ -10,7 +11,7 @@ The redaction style for markup.
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,13 +20,18 @@ The redaction style for markup.
 case redact
 ```
 
+```c
+kPDFMarkupTypeRedact
+```
+
 ## See Also
 
-- [PDFMarkupType.highlight](pdfmarkuptype/highlight.md)
+### Constants
+- [PDFMarkupType.highlight](./highlight.md)
   Highlight style for the markup.
-- [PDFMarkupType.strikeOut](pdfmarkuptype/strikeout.md)
+- [PDFMarkupType.strikeOut](./strikeout.md)
   Strikethrough style for the markup.
-- [PDFMarkupType.underline](pdfmarkuptype/underline.md)
+- [PDFMarkupType.underline](./underline.md)
   Underline style for the markup.
 
 

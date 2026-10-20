@@ -1,7 +1,8 @@
 # subtitle
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized string that provides additional information about the activity.
 
@@ -25,11 +26,12 @@ Use this string to provide additional descriptive information about the activity
 
 ## See Also
 
-- [var title: String?](groupactivitymetadata/title.md)
+### Presenting the activity
+- [var title: String?](./title.md)
   The localized string to display as the title of your activity.
-- [var previewImage: CGImage?](groupactivitymetadata/previewimage.md)
+- [var previewImage: CGImage?](./previewimage.md)
   The image to display for the current activity.
-- [var fallbackURL: URL?](groupactivitymetadata/fallbackurl.md)
+- [var fallbackURL: URL?](./fallbackurl.md)
   A URL that offers participants a way to identify or join the activity from a web browser.
 
 

@@ -1,7 +1,8 @@
 # remove(at:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes and returns the element at the specified position.
 
@@ -36,7 +37,7 @@ print(measurements)
 // Prints "[1.1, 1.5, 1.2, 1.5, 1.3, 1.2]"
 ```
 
-> **Note**: O(*n*), where *n* is the length of the array.
+> **Complexity**: O(*n*), where *n* is the length of the array.
 
 ## Parameters
 

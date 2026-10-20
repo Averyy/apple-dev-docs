@@ -1,14 +1,15 @@
 # exchangeDrivers
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 bool exchangeDrivers(OSDictionary *matchingForRemove, OSArray *personalitiesToAdd, bool doNubMatching);
 ```
 

@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Declared Age Range  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of active parental controls, for debugging purposes.
 
@@ -23,7 +24,8 @@ Returns a comma separated list of the parental control options currently enabled
 
 ## See Also
 
-- [let rawValue: Int](agerangeservice/parentalcontrols/rawvalue.md)
+### Accessing the raw value
+- [let rawValue: Int](./rawvalue.md)
   The raw value of the option set.
 
 

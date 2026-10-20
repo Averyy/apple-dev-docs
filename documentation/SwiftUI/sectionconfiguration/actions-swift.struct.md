@@ -1,7 +1,8 @@
 # SectionConfiguration.Actions
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The type-erased actions of a section.
 
@@ -24,9 +25,9 @@ The type-erased actions of a section.
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](view.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [View](../view.md)
 
 
 ---

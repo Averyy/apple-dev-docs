@@ -1,7 +1,8 @@
 # ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest.RequestStyle.conditional
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Perform a conditional request. This style of request is meant to opportunistically add passkeys to existing password-based accounts, at the discretion of the user’s credential manager. It should be performed shortly after a user has signed in with a password. If the user is using a password and passkey manager, and certain internal conditions of that credential manager are met (e.g. the user signed in recently with a matching password-based account and does not yet have a passkey for this account), then this request may proceed automatically, without further user interaction. If any of the internal conditions are not met, this request will return an error without showing any UI to the user, and may be retried the next time they sign in.
 
@@ -16,6 +17,10 @@ Perform a conditional request. This style of request is meant to opportunistical
 
 ```swift
 case conditional
+```
+
+```c
+ASAuthorizationPlatformPublicKeyCredentialRegistrationRequestStyleConditional
 ```
 
 

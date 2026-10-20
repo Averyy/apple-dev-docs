@@ -1,7 +1,8 @@
 # ASPasswordCredential
 
 **Framework**: Authentication Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A password credential.
 
@@ -20,44 +21,49 @@ A password credential.
 class ASPasswordCredential
 ```
 
+```objc
+@interface ASPasswordCredential : NSObject
+```
+
 ## Topics
 
 ### Creating a credential
-- [init(user: String, password: String)](aspasswordcredential/init(user:password:).md)
+- [init(user: String, password: String)](./aspasswordcredential/init%28user,password%29.md)
   Initializes a password credential.
 ### Accessing the username and password
-- [var user: String](aspasswordcredential/user.md)
+- [var user: String](./aspasswordcredential/user.md)
   The user for a password credential object.
-- [var password: String](aspasswordcredential/password.md)
+- [var password: String](./aspasswordcredential/password.md)
   The password for a password credential object.
 ### Initializers
-- [init?(coder: NSCoder)](aspasswordcredential/init(coder:).md)
+- [init?(coder: NSCoder)](./aspasswordcredential/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [ASAuthorizationCredential](asauthorizationcredential.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ASAuthorizationCredential](./asauthorizationcredential.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Password AutoFill](../security/password-autofill.md)
+### Passwords
+- [Password AutoFill](../Security/password-autofill.md)
   Streamline your app’s login and onboarding procedures.
-- [class ASAuthorizationPasswordProvider](asauthorizationpasswordprovider.md)
+- [class ASAuthorizationPasswordProvider](./asauthorizationpasswordprovider.md)
   A mechanism for generating requests to perform keychain credential sharing.
-- [Password use in web browsers](password-use-in-web-browsers.md)
+- [Password use in web browsers](./password-use-in-web-browsers.md)
   Register and authenticate website users by using passwords.
 
 

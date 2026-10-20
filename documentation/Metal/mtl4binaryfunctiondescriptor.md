@@ -1,7 +1,8 @@
 # MTL4BinaryFunctionDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Base interface for other function-derived interfaces.
 
@@ -19,52 +20,57 @@ Base interface for other function-derived interfaces.
 class MTL4BinaryFunctionDescriptor
 ```
 
+```objc
+@interface MTL4BinaryFunctionDescriptor : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var functionDescriptor: MTL4FunctionDescriptor](mtl4binaryfunctiondescriptor/functiondescriptor.md)
+- [var functionDescriptor: MTL4FunctionDescriptor](./mtl4binaryfunctiondescriptor/functiondescriptor.md)
   Provides the function descriptor corresponding to the function to compile into a binary function.
-- [var name: String](mtl4binaryfunctiondescriptor/name.md)
+- [var name: String](./mtl4binaryfunctiondescriptor/name.md)
   Associates a string that uniquely identifies a binary function.
-- [var options: MTL4BinaryFunctionOptions](mtl4binaryfunctiondescriptor/options.md)
+- [var options: MTL4BinaryFunctionOptions](./mtl4binaryfunctiondescriptor/options.md)
   Configure the options to use at binary function creation time.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Metal libraries](metal-libraries.md)
+### Shader compilation
+- [Metal libraries](./metal-libraries.md)
   Compile and manage Metal libraries from the command line.
-- [Metal dynamic libraries](metal-dynamic-libraries.md)
+- [Metal dynamic libraries](./metal-dynamic-libraries.md)
   Create a single Metal library containing reusable code to reduce library size and avoid repeated shader compilation at runtime.
-- [Metal binary archives](metal-binary-archives.md)
+- [Metal binary archives](./metal-binary-archives.md)
   Distribute precompiled GPU-specific binaries as part of your app to avoid runtime compilation of Metal shaders.
-- [protocol MTL4Compiler](mtl4compiler.md)
+- [protocol MTL4Compiler](./mtl4compiler.md)
   A abstraction for a pipeline state and shader function compiler.
-- [class MTL4CompilerDescriptor](mtl4compilerdescriptor.md)
+- [class MTL4CompilerDescriptor](./mtl4compilerdescriptor.md)
   Groups together properties for creating a compiler context.
-- [class MTL4CompilerTaskOptions](mtl4compilertaskoptions.md)
+- [class MTL4CompilerTaskOptions](./mtl4compilertaskoptions.md)
   The configuration options that control the behavior of a compilation task for a Metal 4 compiler instance.
-- [enum MTL4CompilerTaskStatus](mtl4compilertaskstatus.md)
+- [enum MTL4CompilerTaskStatus](./mtl4compilertaskstatus.md)
   Represents the status of a compiler task.
-- [protocol MTL4Archive](mtl4archive.md)
+- [protocol MTL4Archive](./mtl4archive.md)
   A read-only container that stores pipeline states from a shader compiler.
-- [protocol MTL4BinaryFunction](mtl4binaryfunction.md)
+- [protocol MTL4BinaryFunction](./mtl4binaryfunction.md)
   Represents a binary function.
-- [struct MTL4BinaryFunctionOptions](mtl4binaryfunctionoptions.md)
+- [struct MTL4BinaryFunctionOptions](./mtl4binaryfunctionoptions.md)
   Options for configuring the creation of binary functions.
-- [class MTL4PipelineStageDynamicLinkingDescriptor](mtl4pipelinestagedynamiclinkingdescriptor.md)
+- [class MTL4PipelineStageDynamicLinkingDescriptor](./mtl4pipelinestagedynamiclinkingdescriptor.md)
   Groups together properties to drive the dynamic linking process of a pipeline stage.
 
 

@@ -1,12 +1,13 @@
 # indentationMarkerFollowsCell
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the indentation marker symbol displayed in the outline column should be indented along with the cell contents.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,22 @@ A Boolean value indicating whether the indentation marker symbol displayed in th
 var indentationMarkerFollowsCell: Bool { get set }
 ```
 
+```objc
+@property BOOL indentationMarkerFollowsCell;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the indentation marker is indented along with the cell contents. When the value is [`false`](https://developer.apple.com/documentation/swift/false), the marker is always displayed left-justified in the column. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+When the value of this property is [`true`](../../Swift/true.md), the indentation marker is indented along with the cell contents. When the value is [`false`](../../Swift/false.md), the marker is always displayed left-justified in the column. The default value of this property is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [func level(forItem: Any?) -> Int](nsoutlineview/level(foritem:).md)
+### Working with Indentation
+- [func level(forItem: Any?) -> Int](./level%28foritem%29.md)
   Returns the indentation level for a given item.
-- [func level(forRow: Int) -> Int](nsoutlineview/level(forrow:).md)
+- [func level(forRow: Int) -> Int](./level%28forrow%29.md)
   Returns the indentation level for a given row.
-- [var indentationPerLevel: CGFloat](nsoutlineview/indentationperlevel.md)
+- [var indentationPerLevel: CGFloat](./indentationperlevel.md)
   The per-level indentation, measured in points.
 
 

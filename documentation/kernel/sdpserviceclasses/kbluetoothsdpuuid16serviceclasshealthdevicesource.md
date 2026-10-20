@@ -1,14 +1,15 @@
 # kBluetoothSDPUUID16ServiceClassHealthDeviceSource
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPUUID16ServiceClassHealthDeviceSource = 0x1401
 ```
 

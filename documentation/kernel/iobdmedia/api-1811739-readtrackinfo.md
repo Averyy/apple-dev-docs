@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn readTrackInfo(
  IOMemoryDescriptor *buffer, 
  UInt32address, 
@@ -14,7 +14,7 @@ virtual IOReturn readTrackInfo(
  UInt16 *actualByteCount );
 ```
 
-#### Return_value
+#### Return Value
 
 Returns the status of the data transfer.
 
@@ -32,13 +32,14 @@ Issue an MMC READ TRACK INFORMATION command.
 
 ## See Also
 
-- [getSpeed](iobdmedia/1811688-getspeed.md)
-- [readDiscInfo](iobdmedia/1811707-readdiscinfo.md)
-- [readStructure](iobdmedia/1811722-readstructure.md)
-- [reportKey](iobdmedia/1811756-reportkey.md)
-- [sendKey](iobdmedia/1811776-sendkey.md)
-- [setSpeed](iobdmedia/1811802-setspeed.md)
-- [splitTrack](iobdmedia/1811824-splittrack.md)
+### Miscellaneous
+- [getSpeed](./api-1811688-getspeed.md)
+- [readDiscInfo](./api-1811707-readdiscinfo.md)
+- [readStructure](./api-1811722-readstructure.md)
+- [reportKey](./api-1811756-reportkey.md)
+- [sendKey](./api-1811776-sendkey.md)
+- [setSpeed](./api-1811802-setspeed.md)
+- [splitTrack](./api-1811824-splittrack.md)
 
 
 ---

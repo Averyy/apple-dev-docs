@@ -1,7 +1,8 @@
 # CSSM_ATTRIBUTE_RSA_BLINDING
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_ATTRIBUTE_RSA_BLINDING: Int { get }
+```
+
+```c
+CSSM_ATTRIBUTE_RSA_BLINDING
 ```
 
 

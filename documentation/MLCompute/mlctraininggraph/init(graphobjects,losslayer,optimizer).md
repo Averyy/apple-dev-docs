@@ -1,16 +1,17 @@
 # init(graphObjects:lossLayer:optimizer:)
 
 **Framework**: ML Compute  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a training graph with the layers from the graph objects, loss layer, and optimizer you specify.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,9 +19,13 @@ Creates a training graph with the layers from the graph objects, loss layer, and
 convenience init(graphObjects: [MLCGraph], lossLayer: MLCLayer?, optimizer: MLCOptimizer?)
 ```
 
+```objc
++ (instancetype) graphWithGraphObjects:(NSArray<MLCGraph *> *) graphObjects lossLayer:(MLCLayer *) lossLayer optimizer:(MLCOptimizer *) optimizer;
+```
+
 #### Discussion
 
-You can also add a loss layer to a training graph using the [`node(with:sources:lossLabels:)`](mlcgraph/node(with:sources:losslabels:).md) method.
+You can also add a loss layer to a training graph using the [`node(with:sources:lossLabels:)`](../mlcgraph/node%28with,sources,losslabels%29.md) method.
 
 ## Parameters
 
@@ -30,9 +35,10 @@ You can also add a loss layer to a training graph using the [`node(with:sources:
 
 ## See Also
 
-- [Optimizers](optimizers.md)
+### Creating Training Graphs
+- [Optimizers](../optimizers.md)
   Create an optimizer to use with the training graph.
-- [class MLCTensorParameter](mlctensorparameter.md)
+- [class MLCTensorParameter](../mlctensorparameter.md)
   A tensor parameter object.
 
 

@@ -1,7 +1,8 @@
 # sharedController(withID:xpcConnect:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 class func sharedController(withID controllerID: (any NSCopying)?, xpcConnect xpcConnectBlock: @escaping MTRXPCConnectBlock) -> MTRDeviceController
+```
+
+```objc
++ (MTRDeviceController *) sharedControllerWithID:(id<NSCopying>) controllerID xpcConnectBlock:(MTRXPCConnectBlock) xpcConnectBlock;
 ```
 
 

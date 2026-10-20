@@ -1,18 +1,19 @@
 # init(status:rowCount:columnCount:attributes:blockSize:type:factorization:workspaceSize_Float:workspaceSize_Double:factorSize_Float:factorSize_Double:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an opaque symbolic factorization.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -33,14 +34,15 @@ A new opaque symbolic factorization.
 - `blockSize`: The block size.
 - `type`: The factorization type.
 - `factorization`: A pointer to a private internal representation of the symbolic factor.
-- `workspaceSize_Float`: The size in bytes of workspace necessary to perform numerical factorization in [`Float`](https://developer.apple.com/documentation/swift/float).
-- `workspaceSize_Double`: The size in bytes of workspace necessary to perform numerical factorization in [`Double`](https://developer.apple.com/documentation/swift/double).
-- `factorSize_Float`: The minimum size in bytes necessary to store numerical factors in [`Float`](https://developer.apple.com/documentation/swift/float).
-- `factorSize_Double`: The minimum size in bytes necessary to store numerical factors in [`Double`](https://developer.apple.com/documentation/swift/double).
+- `workspaceSize_Float`: The size in bytes of workspace necessary to perform numerical factorization in [`Float`](../../Swift/float.md).
+- `workspaceSize_Double`: The size in bytes of workspace necessary to perform numerical factorization in [`Double`](../../Swift/double.md).
+- `factorSize_Float`: The minimum size in bytes necessary to store numerical factors in [`Float`](../../Swift/float.md).
+- `factorSize_Double`: The minimum size in bytes necessary to store numerical factors in [`Double`](../../Swift/double.md).
 
 ## See Also
 
-- [init()](sparseopaquesymbolicfactorization/init.md)
+### Creating an Opaque Symbolic Factorization
+- [init()](./init%28%29.md)
 
 
 ---

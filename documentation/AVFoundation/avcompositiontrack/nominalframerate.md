@@ -1,18 +1,19 @@
 # nominalFrameRate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame rate of the track, in frames per second.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -26,9 +27,10 @@ The nominal frame rate indicates the number of frames per second for tracks that
 
 ## See Also
 
-- [var minFrameDuration: CMTime](avcompositiontrack/minframeduration.md)
+### Accessing frame-based characteristics
+- [var minFrameDuration: CMTime](./minframeduration.md)
   The minimum duration of the track’s frames.
-- [var requiresFrameReordering: Bool](avcompositiontrack/requiresframereordering.md)
+- [var requiresFrameReordering: Bool](./requiresframereordering.md)
   A Boolean value that indicates whether samples in the track may have different presentation and decode timestamps.
 
 

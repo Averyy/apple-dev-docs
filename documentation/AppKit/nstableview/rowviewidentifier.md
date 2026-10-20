@@ -1,7 +1,8 @@
 # rowViewIdentifier
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key associated with the identifier in the nib file containing the template row view.
 
@@ -12,6 +13,10 @@ The key associated with the identifier in the nib file containing the template r
 
 ```swift
 class let rowViewIdentifier: NSUserInterfaceItemIdentifier
+```
+
+```c
+extern NSUserInterfaceItemIdentifier const NSTableViewRowViewKey;
 ```
 
 

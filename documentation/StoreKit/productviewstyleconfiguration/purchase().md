@@ -1,7 +1,8 @@
 # purchase()
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initiates a purchase action for the product.
 
@@ -22,7 +23,7 @@ func purchase()
 
 #### Discussion
 
-Use this method instead of calling [`purchase(options:)`](product/purchase(options:).md)directly on the product.
+Use this method instead of calling [`purchase(options:)`](../product/purchase%28options%29.md)directly on the product.
 
 
 ---

@@ -1,7 +1,8 @@
 # moonrise
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time of moonrise.
 
@@ -26,9 +27,10 @@ Moonrise occurs when the moon first appears above Earth’s horizon.
 
 ## See Also
 
-- [var moonset: Date?](moonevents/moonset.md)
+### Getting the moon events
+- [var moonset: Date?](./moonset.md)
   The time of moonset.
-- [var phase: MoonPhase](moonevents/phase.md)
+- [var phase: MoonPhase](./phase.md)
   The moon phase.
 
 

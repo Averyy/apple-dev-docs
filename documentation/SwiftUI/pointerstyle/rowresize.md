@@ -1,7 +1,8 @@
 # rowResize
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The pointer style for resizing a row, or horizontal division, in either direction.
 
@@ -16,7 +17,7 @@ static let rowResize: PointerStyle
 
 #### Discussion
 
-You may apply this pointer style to a single view or a view hierarchy using the [`pointerStyle(_:)`](view/pointerstyle(_:).md) modifier.
+You may apply this pointer style to a single view or a view hierarchy using the [`pointerStyle(_:)`](../view/pointerstyle%28_%29.md) modifier.
 
 
 ---

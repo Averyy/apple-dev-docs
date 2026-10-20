@@ -2,6 +2,7 @@
 
 **Framework**: InputMethodKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Set the value for the provided key.
@@ -15,6 +16,10 @@ Set the value for the provided key.
 func setValue(_ value: Any!, forTag tag: Int, client sender: Any!)
 ```
 
+```objc
+- (void) setValue:(id) value forTag:(long) tag client:(id) sender;
+```
+
 ## Parameters
 
 - `value`: The value, specified as the appropriate object (such as `NSNumber`), to set.
@@ -23,7 +28,8 @@ func setValue(_ value: Any!, forTag tag: Int, client sender: Any!)
 
 ## See Also
 
-- [func value(forTag: Int, client: Any!) -> Any!](imkstatesetting/value(fortag:client:).md)
+### Getting and Setting Values
+- [func value(forTag: Int, client: Any!) -> Any!](./value%28fortag,client%29.md)
   Returns a value object whose key is the provided tag.
 
 

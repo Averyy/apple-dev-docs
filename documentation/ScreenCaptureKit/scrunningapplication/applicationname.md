@@ -1,7 +1,8 @@
 # applicationName
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The display name of the app.
 
@@ -15,11 +16,16 @@ The display name of the app.
 var applicationName: String { get }
 ```
 
+```objc
+@property (readonly) NSString * applicationName;
+```
+
 ## See Also
 
-- [var processID: pid_t](scrunningapplication/processid.md)
+### Inspecting an app
+- [var processID: pid_t](./processid.md)
   The system process identifier of the app.
-- [var bundleIdentifier: String](scrunningapplication/bundleidentifier.md)
+- [var bundleIdentifier: String](./bundleidentifier.md)
   The unique bundle identifier of the app.
 
 

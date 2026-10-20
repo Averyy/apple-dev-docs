@@ -1,7 +1,8 @@
 # scaleY
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value function scales by the input value along the y-axis. Animations referencing this value function must provide a single animation value.
 
@@ -19,13 +20,18 @@ A value function scales by the input value along the y-axis. Animations referenc
 static let scaleY: CAValueFunctionName
 ```
 
+```c
+extern CAValueFunctionName const kCAValueFunctionScaleY;
+```
+
 ## See Also
 
-- [static let scale: CAValueFunctionName](cavaluefunctionname/scale.md)
+### Constants
+- [static let scale: CAValueFunctionName](./scale.md)
   A value function scales by the input value along all three axis. Animations using this value transform function must provide animation values in an `NSArray` of three `NSNumber` instances that specify the (x, y, z) scale values.
-- [static let scaleX: CAValueFunctionName](cavaluefunctionname/scalex.md)
+- [static let scaleX: CAValueFunctionName](./scalex.md)
   A value function scales by the input value along the x-axis. Animations referencing this value transform function must provide a single animation value.
-- [static let scaleZ: CAValueFunctionName](cavaluefunctionname/scalez.md)
+- [static let scaleZ: CAValueFunctionName](./scalez.md)
   A value function that scales by the input value along the z-axis. Animations referencing this value function must provide a single animation value.
 
 

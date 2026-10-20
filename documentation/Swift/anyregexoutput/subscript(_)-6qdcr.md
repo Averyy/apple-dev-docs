@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Swift  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the capture with the specified name, if a capture with that name exists.
 

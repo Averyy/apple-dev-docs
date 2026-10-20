@@ -11,7 +11,7 @@ The element is not initialized.
 
 ## Declaration
 
-```swift
+```
 const unsigned short NETWORK_EMPTY;
 ```
 

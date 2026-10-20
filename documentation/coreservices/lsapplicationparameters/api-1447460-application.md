@@ -1,7 +1,8 @@
 # application
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The `FSRef` ofthe application to open.
 
@@ -12,6 +13,10 @@ The `FSRef` ofthe application to open.
 
 ```swift
 var application: UnsafePointer<FSRef>!
+```
+
+```c
+const FSRef *application;
 ```
 
 

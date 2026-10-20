@@ -1,7 +1,8 @@
 # init(renderBlock:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an audio source node with a block that supplies audio data.
 
@@ -20,6 +21,10 @@ Creates an audio source node with a block that supplies audio data.
 init(renderBlock block: @escaping AVAudioSourceNodeRenderBlock)
 ```
 
+```objc
+- (instancetype) initWithRenderBlock:(AVAudioSourceNodeRenderBlock) block;
+```
+
 #### Discussion
 
 When connecting the audio source node to another node, the system uses the connection format to set the audio format for the output bus.
@@ -34,9 +39,10 @@ The system sets the node’s output format using the audio format for the render
 
 ## See Also
 
-- [typealias AVAudioSourceNodeRenderBlock](avaudiosourcenoderenderblock.md)
+### Creating an audio source node
+- [typealias AVAudioSourceNodeRenderBlock](../avaudiosourcenoderenderblock.md)
   A block that supplies audio data to an audio source node.
-- [init(format: AVAudioFormat, renderBlock: AVAudioSourceNodeRenderBlock)](avaudiosourcenode/init(format:renderblock:).md)
+- [init(format: AVAudioFormat, renderBlock: AVAudioSourceNodeRenderBlock)](./init%28format,renderblock%29.md)
   Creates an audio source node with the audio format and a block that supplies audio data.
 
 

@@ -1,7 +1,8 @@
 # SCNetworkConnectionStop(_:_:)
 
 **Framework**: System Configuration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Stops the connection process for the specified network connection.
 
@@ -14,9 +15,13 @@ Stops the connection process for the specified network connection.
 func SCNetworkConnectionStop(_ connection: SCNetworkConnection, _ forceDisconnect: Bool) -> Bool
 ```
 
+```c
+Boolean SCNetworkConnectionStop(SCNetworkConnectionRef connection, Boolean forceDisconnect);
+```
+
 #### Return Value
 
-`TRUE` if the disconnection request succeeded; `FALSE` (use the [`SCError()`](scerror().md) function to retrieve the specific error).
+`TRUE` if the disconnection request succeeded; `FALSE` (use the [`SCError()`](./scerror%28%29.md) function to retrieve the specific error).
 
 ## Parameters
 
@@ -25,7 +30,8 @@ func SCNetworkConnectionStop(_ connection: SCNetworkConnection, _ forceDisconnec
 
 ## See Also
 
-- [func SCNetworkConnectionStart(SCNetworkConnection, CFDictionary?, Bool) -> Bool](scnetworkconnectionstart(_:_:_:).md)
+### Starting and Stopping a Connection
+- [func SCNetworkConnectionStart(SCNetworkConnection, CFDictionary?, Bool) -> Bool](./scnetworkconnectionstart%28_,_,_%29.md)
   Starts the connection process for the specified network connection.
 
 

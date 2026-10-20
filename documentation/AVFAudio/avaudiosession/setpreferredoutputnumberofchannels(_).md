@@ -1,7 +1,8 @@
 # setPreferredOutputNumberOfChannels(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the preferred number of output channels for the current route.
 
@@ -18,9 +19,13 @@ Sets the preferred number of output channels for the current route.
 func setPreferredOutputNumberOfChannels(_ count: Int) throws
 ```
 
+```objc
+- (BOOL) setPreferredOutputNumberOfChannels:(NSInteger) count error:(NSError **) outError;
+```
+
 #### Discussion
 
-This method requests a change to the number of output channels. To determine whether the change has taken effect, use the [`outputNumberOfChannels`](avaudiosession/outputnumberofchannels.md) property. For details, see Configuring standard audio behaviors. Requesting output channels less than one or greater than that returned by the [`maximumOutputNumberOfChannels`](avaudiosession/maximumoutputnumberofchannels.md) results in an error. Only certain devices and peripherals support this feature.
+This method requests a change to the number of output channels. To determine whether the change has taken effect, use the [`outputNumberOfChannels`](./outputnumberofchannels.md) property. For details, see Configuring standard audio behaviors. Requesting output channels less than one or greater than that returned by the [`maximumOutputNumberOfChannels`](./maximumoutputnumberofchannels.md) results in an error. Only certain devices and peripherals support this feature.
 
 Set the preferred number of output channels only after setting the audio session’s category and mode, and activating the session.
 
@@ -30,11 +35,12 @@ Set the preferred number of output channels only after setting the audio session
 
 ## See Also
 
-- [var preferredOutputNumberOfChannels: Int](avaudiosession/preferredoutputnumberofchannels.md)
+### Setting the number of output channels
+- [var preferredOutputNumberOfChannels: Int](./preferredoutputnumberofchannels.md)
   The preferred number of output channels for the current route.
-- [var outputNumberOfChannels: Int](avaudiosession/outputnumberofchannels.md)
+- [var outputNumberOfChannels: Int](./outputnumberofchannels.md)
   The number of audio output channels.
-- [var maximumOutputNumberOfChannels: Int](avaudiosession/maximumoutputnumberofchannels.md)
+- [var maximumOutputNumberOfChannels: Int](./maximumoutputnumberofchannels.md)
   The maximum number of output channels available for the current audio route.
 
 

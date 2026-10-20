@@ -1,7 +1,8 @@
 # AECoercionHandlerUPP
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Defines a data type for the universal procedure pointer for the `AECoercionHandlerUPP` callback function pointer.
 
@@ -15,9 +16,13 @@ Defines a data type for the universal procedure pointer for the `AECoercionHandl
 typealias AECoercionHandlerUPP = AECoerceDescUPP
 ```
 
+```c
+typedef AECoerceDescUPP AECoercionHandlerUPP;
+```
+
 #### Discussion
 
-For a description of a coercion handler callback function, see [`AECoercePtrProcPtr`](aecoerceptrprocptr.md). 
+For a description of a coercion handler callback function, see [`AECoercePtrProcPtr`](./aecoerceptrprocptr.md). 
 
 
 ---

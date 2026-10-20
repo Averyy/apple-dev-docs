@@ -1,7 +1,8 @@
 # SupportedPlatform.CustomPlatformVersion
 
 **Framework**: PackageDescription  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A supported custom platform version.
 
@@ -14,8 +15,8 @@ struct CustomPlatformVersion
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

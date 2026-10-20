@@ -1,7 +1,8 @@
 # url
 
 **Framework**: DiskImageKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the disk image to open.
 

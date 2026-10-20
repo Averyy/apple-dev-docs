@@ -1,7 +1,8 @@
 # backgroundContentFailedToLoad
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that an error occurred loading the background content.
 

@@ -1,17 +1,22 @@
 # init(title:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a menu having the specified title and with autoenabling of menu items turned on.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init(title: String)
+```
+
+```objc
+- (instancetype) initWithTitle:(NSString *) title;
 ```
 
 #### Return Value
@@ -28,9 +33,11 @@ This method is the designated initializer for the class.
 
 ## See Also
 
-- [var autoenablesItems: Bool](nsmenu/autoenablesitems.md)
+### Related Documentation
+- [var autoenablesItems: Bool](./autoenablesitems.md)
   Indicates whether the menu automatically enables and disables its menu items.
-- [init(coder: NSCoder)](nsmenu/init(coder:).md)
+### Creating an NSMenu Object
+- [init(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

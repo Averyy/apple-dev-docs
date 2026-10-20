@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct in_addr {
     ...
 };
@@ -17,7 +17,7 @@ struct in_addr {
 ## Topics
 
 ### Instance Properties
-- [s_addr](in_addr/1475519-s_addr.md)
+- [s_addr](./in_addr/api-1475519-s_addr.md)
 
 
 ---

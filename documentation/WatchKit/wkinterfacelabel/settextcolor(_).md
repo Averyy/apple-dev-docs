@@ -1,7 +1,8 @@
 # setTextColor(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the color to apply to plain text strings.
 
@@ -14,13 +15,17 @@ Sets the color to apply to plain text strings.
 func setTextColor(_ color: UIColor?)
 ```
 
+```objc
+- (void) setTextColor:(UIColor *) color;
+```
+
 ## Mentions
 
-- [Connecting Your User Interface to Your Code](connecting-your-user-interface-to-your-code.md)
+- [Connecting Your User Interface to Your Code](../connecting-your-user-interface-to-your-code.md)
 
 #### Discussion
 
-The value set by this method represents the default color applied to text. This color is used unless you explicitly override it in an attributed string using the [`NSForegroundColorAttributeName`](https://developer.apple.com/documentation/uikit/nsforegroundcolorattributename) attribute.
+The value set by this method represents the default color applied to text. This color is used unless you explicitly override it in an attributed string using the [`NSForegroundColorAttributeName`](../../UIKit/nsforegroundcolorattributename.md) attribute.
 
 ## Parameters
 
@@ -28,9 +33,10 @@ The value set by this method represents the default color applied to text. This 
 
 ## See Also
 
-- [func setText(String?)](wkinterfacelabel/settext(_:).md)
+### Setting the Label Text
+- [func setText(String?)](./settext%28_%29.md)
   Sets the label text to the specified string.
-- [func setAttributedText(NSAttributedString?)](wkinterfacelabel/setattributedtext(_:).md)
+- [func setAttributedText(NSAttributedString?)](./setattributedtext%28_%29.md)
   Sets the label text to the specified attributed string.
 
 

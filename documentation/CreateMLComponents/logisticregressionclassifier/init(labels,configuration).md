@@ -1,7 +1,8 @@
 # init(labels:configuration:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a logistic regression classifier.
 
@@ -27,7 +28,8 @@ init(labels: Set<Label>, configuration: LogisticRegressionClassifier<Scalar, Lab
 
 ## See Also
 
-- [LogisticRegressionClassifier.Configuration](logisticregressionclassifier/configuration-swift.struct.md)
+### Creating a classifier
+- [LogisticRegressionClassifier.Configuration](./configuration-swift.struct.md)
   A logistic regression classifier configuration.
 
 

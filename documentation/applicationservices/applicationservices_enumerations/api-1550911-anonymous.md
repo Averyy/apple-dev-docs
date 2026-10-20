@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kFMPostScriptFontTechnology: Int](kfmpostscriptfonttechnology.md)
-- [var kFMTrueTypeFontTechnology: Int](kfmtruetypefonttechnology.md)
+- [var kFMPostScriptFontTechnology: Int](../kfmpostscriptfonttechnology.md)
+- [var kFMTrueTypeFontTechnology: Int](../kfmtruetypefonttechnology.md)
 
 
 ---

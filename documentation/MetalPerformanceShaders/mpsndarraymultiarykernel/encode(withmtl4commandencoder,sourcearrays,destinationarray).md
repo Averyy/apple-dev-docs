@@ -1,7 +1,8 @@
 # encode(withMTL4CommandEncoder:sourceArrays:destinationArray:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func encode(withMTL4CommandEncoder encoder: any MTL4ComputeCommandEncoder, sourceArrays: [MPSNDArray], destinationArray destination: MPSNDArray)
+```
+
+```objc
+- (void) encodeWithMTL4CommandEncoder:(id<MTL4ComputeCommandEncoder>) encoder sourceArrays:(NSArray<MPSNDArray *> *) sourceArrays destinationArray:(MPSNDArray *) destination;
 ```
 
 #### Discussion

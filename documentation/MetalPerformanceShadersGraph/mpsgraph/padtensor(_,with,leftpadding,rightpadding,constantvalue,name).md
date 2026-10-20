@@ -1,7 +1,8 @@
 # padTensor(_:with:leftPadding:rightPadding:constantValue:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a padding operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a padding operation and returns the result tensor.
 
 ```swift
 func padTensor(_ tensor: MPSGraphTensor, with paddingMode: MPSGraphPaddingMode, leftPadding: [NSNumber], rightPadding: [NSNumber], constantValue: Double, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) padTensor:(MPSGraphTensor *) tensor withPaddingMode:(MPSGraphPaddingMode) paddingMode leftPadding:(MPSShape *) leftPadding rightPadding:(MPSShape *) rightPadding constantValue:(double) constantValue name:(NSString *) name;
 ```
 
 #### Return Value

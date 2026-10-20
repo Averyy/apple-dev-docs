@@ -1,7 +1,8 @@
 # maximumViewportInset
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.5+
@@ -12,15 +13,36 @@
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+var maximumViewportInset: UIEdgeInsets { get }
+```
+
+*macOS*
+
 ```swift
 var maximumViewportInset: NSEdgeInsets { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```objc
+@property (nonatomic, readonly) UIEdgeInsets maximumViewportInset;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic, readonly) NSEdgeInsets maximumViewportInset;
+```
+
 ## See Also
 
-- [func setMinimumViewportInset(UIEdgeInsets, maximumViewportInset: UIEdgeInsets)](wkwebview/setminimumviewportinset(_:maximumviewportinset:).md)
-- [var minimumViewportInset: UIEdgeInsets](wkwebview/minimumviewportinset.md)
-- [var obscuredContentInsets: UIEdgeInsets](wkwebview/obscuredcontentinsets.md)
+### Configuring viewport insets
+- [func setMinimumViewportInset(UIEdgeInsets, maximumViewportInset: UIEdgeInsets)](./setminimumviewportinset%28_,maximumviewportinset%29.md)
+- [var minimumViewportInset: UIEdgeInsets](./minimumviewportinset.md)
+- [var obscuredContentInsets: UIEdgeInsets](./obscuredcontentinsets.md)
 
 
 ---

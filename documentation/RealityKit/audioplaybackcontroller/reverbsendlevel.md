@@ -1,15 +1,18 @@
 # reverbSendLevel
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The send level from this playback controller to the reverb system.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
+- iOS 13.0+ - Deprecated in 18.0
+- iPadOS 13.0+ - Deprecated in 18.0
+- Mac Catalyst 13.0+ - Deprecated in 18.0
+- macOS 10.15+ - Deprecated in 15.0
+
+> **Deprecated**: Use SpatialAudioComponent.reverbLevel instead.
 
 ## Declaration
 

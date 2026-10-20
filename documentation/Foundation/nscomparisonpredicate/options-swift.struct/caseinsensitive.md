@@ -1,7 +1,8 @@
 # caseInsensitive
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A case-insensitive predicate.
 
@@ -20,15 +21,20 @@ A case-insensitive predicate.
 static var caseInsensitive: NSComparisonPredicate.Options { get }
 ```
 
+```c
+NSCaseInsensitivePredicateOption
+```
+
 #### Discussion
 
 You represent this option in a predicate format string using a `[c]` following a string operation (for example, `"NeXT" like[c] "next"`).
 
 ## See Also
 
-- [static var diacriticInsensitive: NSComparisonPredicate.Options](nscomparisonpredicate/options-swift.struct/diacriticinsensitive.md)
+### Constants
+- [static var diacriticInsensitive: NSComparisonPredicate.Options](./diacriticinsensitive.md)
   A diacritic-insensitive predicate.
-- [static var normalized: NSComparisonPredicate.Options](nscomparisonpredicate/options-swift.struct/normalized.md)
+- [static var normalized: NSComparisonPredicate.Options](./normalized.md)
   A predicate that indicates you’ve preprocessed the strings to compare.
 
 

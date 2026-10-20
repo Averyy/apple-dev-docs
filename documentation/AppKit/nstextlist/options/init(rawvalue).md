@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new set of text list options using the raw value you specify.
 

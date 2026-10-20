@@ -1,14 +1,15 @@
 # IF_INTERFACE_ADVISORY_INTERFACE_TYPE_CELL
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 IF_INTERFACE_ADVISORY_INTERFACE_TYPE_CELL = 2
 ```
 

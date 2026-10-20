@@ -1,12 +1,13 @@
 # trailing
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant indicating that tick marks are displayed on the trailing side of the slider.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ A constant indicating that tick marks are displayed on the trailing side of the 
 static var trailing: NSSlider.TickMarkPosition { get }
 ```
 
+```c
+NSTickMarkPositionTrailing
+```
+
 ## See Also
 
-- [static var leading: NSSlider.TickMarkPosition](nsslider/tickmarkposition-swift.enum/leading.md)
+### Configuring Vertical Sliders
+- [static var leading: NSSlider.TickMarkPosition](./leading.md)
   A constant indicating that tick marks are displayed on the leading side of the slider.
 
 

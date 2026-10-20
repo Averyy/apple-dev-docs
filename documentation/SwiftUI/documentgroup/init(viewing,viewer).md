@@ -1,22 +1,34 @@
 # init(viewing:viewer:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a document group capable of viewing file documents.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- visionOS 1.0+
+- iOS 14.0+ - Deprecated in 27.2
+- iPadOS 14.0+ - Deprecated in 27.2
+- Mac Catalyst 14.0+ - Deprecated in 27.2
+- macOS 11.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Conform your type to ReadableDocument instead.
 
 ## Declaration
 
 ```swift
 nonisolated
 init(viewing documentType: Document.Type, @ContentBuilder viewer: @escaping (FileDocumentConfiguration<Document>) -> Content)
+```
+
+Available when `Document` conforms to `FileDocument` and `Content` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(viewing documentType: Document.Type, @ContentBuilder viewer: @escaping (ReferenceFileDocumentConfiguration<Document>) -> Content)
 ```
 
 #### Discussion
@@ -34,9 +46,9 @@ struct MyApp: App {
 }
 ```
 
-With the `viewing:` initializer, SwiftUI considers your app as a viewer for given content types (readable content types declared on the document type). No File > New menu item is added on macOS, no New Document button appears in the iOS document browser, and the [`isEditable`](filedocumentconfiguration/iseditable.md) property is `false`, preventing accidental writes. Use the [`init(newDocument:editor:)`](documentgroup/init(newdocument:editor:).md) initializer instead if your app needs to create or edit documents.
+With the `viewing:` initializer, SwiftUI considers your app as a viewer for given content types (readable content types declared on the document type). No File > New menu item is added on macOS, no New Document button appears in the iOS document browser, and the [`isEditable`](../filedocumentconfiguration/iseditable.md) property is `false`, preventing accidental writes. Use the [`init(newDocument:editor:)`](./init%28newdocument,editor%29.md) initializer instead if your app needs to create or edit documents.
 
-You tell the system about the app’s role with respect to the document type by setting the [`CFBundleTypeRole`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundledocumenttypes/cfbundletyperole) `Info.plist` key with a value of `Viewer`.
+You tell the system about the app’s role with respect to the document type by setting the [`CFBundleTypeRole`](../../BundleResources/information-property-list/cfbundledocumenttypes/cfbundletyperole.md) `Info.plist` key with a value of `Viewer`.
 
 ## Parameters
 
@@ -45,11 +57,12 @@ You tell the system about the app’s role with respect to the document type by 
 
 ## See Also
 
-- [init(allowCreating: Bool, editor: (Document) -> Content, makeDocument: (URLDocumentConfiguration, DocumentCreationContext) async throws -> Document)](documentgroup/init(allowcreating:editor:makedocument:).md)
+### Creating a document group
+- [init(allowCreating: Bool, editor: (Document) -> Content, makeDocument: (URLDocumentConfiguration, DocumentCreationContext) async throws -> Document)](./init%28allowcreating,editor,makedocument%29.md)
   Creates a document group capable of creating, viewing, and editing documents.
-- [init(viewer: (Document) -> Content, makeReadableDocument: (URLDocumentConfiguration, DocumentCreationContext) async throws -> Document)](documentgroup/init(viewer:makereadabledocument:).md)
+- [init(viewer: (Document) -> Content, makeReadableDocument: (URLDocumentConfiguration, DocumentCreationContext) async throws -> Document)](./init%28viewer,makereadabledocument%29.md)
   Creates a document group capable of opening and viewing read-only documents.
-- [init(newDocument:editor:)](documentgroup/init(newdocument:editor:).md)
+- [init(newDocument:editor:)](./init%28newdocument,editor%29.md)
   Creates a document group for creating and editing file documents.
 
 

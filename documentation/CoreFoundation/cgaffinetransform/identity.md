@@ -1,7 +1,8 @@
 # identity
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 7.0+

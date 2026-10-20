@@ -1,7 +1,8 @@
 # kAudioChannelLayoutTag_Ambisonic_B_Format
 
 **Framework**: Core Audio Types  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An ambisonic B-format audio layout.
 
@@ -20,6 +21,10 @@ An ambisonic B-format audio layout.
 var kAudioChannelLayoutTag_Ambisonic_B_Format: AudioChannelLayoutTag { get }
 ```
 
+```c
+kAudioChannelLayoutTag_Ambisonic_B_Format
+```
+
 #### Discussion
 
 Your channels must be laid out in the following order:
@@ -31,33 +36,34 @@ Your channels must be laid out in the following order:
 
 ## See Also
 
-- [var kAudioChannelLayoutTag_UseChannelDescriptions: AudioChannelLayoutTag](kaudiochannellayouttag_usechanneldescriptions.md)
+### General Layouts
+- [var kAudioChannelLayoutTag_UseChannelDescriptions: AudioChannelLayoutTag](./kaudiochannellayouttag_usechanneldescriptions.md)
   An array of audio channel description structures that defines the layout mapping.
-- [var kAudioChannelLayoutTag_UseChannelBitmap: AudioChannelLayoutTag](kaudiochannellayouttag_usechannelbitmap.md)
+- [var kAudioChannelLayoutTag_UseChannelBitmap: AudioChannelLayoutTag](./kaudiochannellayouttag_usechannelbitmap.md)
   A bitmap that defines the layout mapping.
-- [var kAudioChannelLayoutTag_Mono: AudioChannelLayoutTag](kaudiochannellayouttag_mono.md)
+- [var kAudioChannelLayoutTag_Mono: AudioChannelLayoutTag](./kaudiochannellayouttag_mono.md)
   A standard monophonic stream.
-- [var kAudioChannelLayoutTag_Stereo: AudioChannelLayoutTag](kaudiochannellayouttag_stereo.md)
+- [var kAudioChannelLayoutTag_Stereo: AudioChannelLayoutTag](./kaudiochannellayouttag_stereo.md)
   A standard stereophonic stream.
-- [var kAudioChannelLayoutTag_StereoHeadphones: AudioChannelLayoutTag](kaudiochannellayouttag_stereoheadphones.md)
+- [var kAudioChannelLayoutTag_StereoHeadphones: AudioChannelLayoutTag](./kaudiochannellayouttag_stereoheadphones.md)
   A standard stereo stream; headphone playback implied.
-- [var kAudioChannelLayoutTag_MatrixStereo: AudioChannelLayoutTag](kaudiochannellayouttag_matrixstereo.md)
+- [var kAudioChannelLayoutTag_MatrixStereo: AudioChannelLayoutTag](./kaudiochannellayouttag_matrixstereo.md)
   A matrix-encoded stereo stream.
-- [var kAudioChannelLayoutTag_MidSide: AudioChannelLayoutTag](kaudiochannellayouttag_midside.md)
+- [var kAudioChannelLayoutTag_MidSide: AudioChannelLayoutTag](./kaudiochannellayouttag_midside.md)
   A middle and side channel audio layout.
-- [var kAudioChannelLayoutTag_XY: AudioChannelLayoutTag](kaudiochannellayouttag_xy.md)
+- [var kAudioChannelLayoutTag_XY: AudioChannelLayoutTag](./kaudiochannellayouttag_xy.md)
   A coincident, angled microphone pair.
-- [var kAudioChannelLayoutTag_Binaural: AudioChannelLayoutTag](kaudiochannellayouttag_binaural.md)
+- [var kAudioChannelLayoutTag_Binaural: AudioChannelLayoutTag](./kaudiochannellayouttag_binaural.md)
   A binaural stereo audio layout.
-- [var kAudioChannelLayoutTag_Quadraphonic: AudioChannelLayoutTag](kaudiochannellayouttag_quadraphonic.md)
+- [var kAudioChannelLayoutTag_Quadraphonic: AudioChannelLayoutTag](./kaudiochannellayouttag_quadraphonic.md)
   A quadraphonic audio layout.
-- [var kAudioChannelLayoutTag_Pentagonal: AudioChannelLayoutTag](kaudiochannellayouttag_pentagonal.md)
+- [var kAudioChannelLayoutTag_Pentagonal: AudioChannelLayoutTag](./kaudiochannellayouttag_pentagonal.md)
   A pentalgonal audio layout.
-- [var kAudioChannelLayoutTag_Hexagonal: AudioChannelLayoutTag](kaudiochannellayouttag_hexagonal.md)
+- [var kAudioChannelLayoutTag_Hexagonal: AudioChannelLayoutTag](./kaudiochannellayouttag_hexagonal.md)
   A hexagonal audio layout.
-- [var kAudioChannelLayoutTag_Octagonal: AudioChannelLayoutTag](kaudiochannellayouttag_octagonal.md)
+- [var kAudioChannelLayoutTag_Octagonal: AudioChannelLayoutTag](./kaudiochannellayouttag_octagonal.md)
   An octagonal audio layout.
-- [var kAudioChannelLayoutTag_Cube: AudioChannelLayoutTag](kaudiochannellayouttag_cube.md)
+- [var kAudioChannelLayoutTag_Cube: AudioChannelLayoutTag](./kaudiochannellayouttag_cube.md)
   A cubic audio layout.
 
 

@@ -1,7 +1,8 @@
 # SparseOrderMTMetis
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies type of fill-reducing ordering.
 
@@ -18,6 +19,10 @@ Specifies type of fill-reducing ordering.
 
 ```swift
 var SparseOrderMTMetis: SparseOrder_t { get }
+```
+
+```c
+SparseOrderMTMetis
 ```
 
 #### Discussion
@@ -37,15 +42,16 @@ The AMD and MeTiS orderings provide good orderings for symmetric (Hermitian) mat
 
 ## See Also
 
-- [var SparseOrderDefault: SparseOrder_t](sparseorderdefault.md)
+### Constants
+- [var SparseOrderDefault: SparseOrder_t](./sparseorderdefault.md)
   The default ordering.
-- [var SparseOrderUser: SparseOrder_t](sparseorderuser.md)
+- [var SparseOrderUser: SparseOrder_t](./sparseorderuser.md)
   The user-supplied ordering, or identity if the order parameter is null.
-- [var SparseOrderAMD: SparseOrder_t](sparseorderamd.md)
+- [var SparseOrderAMD: SparseOrder_t](./sparseorderamd.md)
   Approximate minimum degree (AMD) ordering.
-- [var SparseOrderMetis: SparseOrder_t](sparseordermetis.md)
+- [var SparseOrderMetis: SparseOrder_t](./sparseordermetis.md)
   METIS nested dissection ordering.
-- [var SparseOrderCOLAMD: SparseOrder_t](sparseordercolamd.md)
+- [var SparseOrderCOLAMD: SparseOrder_t](./sparseordercolamd.md)
   The column AMD ordering for *AᵀA*.
 
 

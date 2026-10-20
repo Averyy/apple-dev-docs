@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a copy of the provided section snapshot.
 
@@ -10,7 +11,7 @@ Creates a copy of the provided section snapshot.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,12 @@ init(_ snapshot: NSDiffableDataSourceSectionSnapshot<ItemIdentifierType>)
 
 ## See Also
 
-- [init()](nsdiffabledatasourcesectionsnapshot-swift.struct/init.md)
+### Creating a section snapshot
+- [init()](./init%28%29.md)
   Creates an empty section snapshot.
-- [func snapshot(of: ItemIdentifierType, includingParent: Bool) -> NSDiffableDataSourceSectionSnapshot<ItemIdentifierType>](nsdiffabledatasourcesectionsnapshot-swift.struct/snapshot(of:includingparent:).md)
+- [func snapshot(of: ItemIdentifierType, includingParent: Bool) -> NSDiffableDataSourceSectionSnapshot<ItemIdentifierType>](./snapshot%28of,includingparent%29.md)
   Creates a section snapshot that contains the child items of the specified parent item, optionally including the parent item.
-- [func append([ItemIdentifierType], to: ItemIdentifierType?)](nsdiffabledatasourcesectionsnapshot-swift.struct/append(_:to:).md)
+- [func append([ItemIdentifierType], to: ItemIdentifierType?)](./append%28_,to%29.md)
   Adds the specified items as child items of the specified parent item in the section snapshot.
 
 

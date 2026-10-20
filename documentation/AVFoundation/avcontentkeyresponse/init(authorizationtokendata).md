@@ -1,7 +1,8 @@
 # init(authorizationTokenData:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a content key response with an authorization token.
 
@@ -20,15 +21,20 @@ Creates a content key response with an authorization token.
 convenience init(authorizationTokenData: Data)
 ```
 
+```objc
++ (instancetype) contentKeyResponseWithAuthorizationTokenData:(NSData *) authorizationTokenData;
+```
+
 ## Parameters
 
 - `authorizationTokenData`: A data value that contains the authorization token.
 
 ## See Also
 
-- [convenience init(clearKeyData: Data, initializationVector: Data?)](avcontentkeyresponse/init(clearkeydata:initializationvector:).md)
+### Creating new content key responses
+- [convenience init(clearKeyData: Data, initializationVector: Data?)](./init%28clearkeydata,initializationvector%29.md)
   Creates a new key response object for key data and initialization vector sent in the clear.
-- [convenience init(fairPlayStreamingKeyResponseData: Data)](avcontentkeyresponse/init(fairplaystreamingkeyresponsedata:).md)
+- [convenience init(fairPlayStreamingKeyResponseData: Data)](./init%28fairplaystreamingkeyresponsedata%29.md)
   Creates a content key response with an encrypted key response data blob when FairPlay Streaming is the key delivery method.
 
 

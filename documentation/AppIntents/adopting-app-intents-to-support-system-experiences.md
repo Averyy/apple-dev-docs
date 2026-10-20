@@ -1,6 +1,8 @@
 # Adopting App Intents to support system experiences
 
-**Framework**: App Intents
+**Framework**: App Intents  
+**Role**: Sample Code  
+**Download**: [AdoptingAppIntentsToSupportSystemExperiences.zip](https://docs-assets.developer.apple.com/published/753755240cbc/AdoptingAppIntentsToSupportSystemExperiences.zip)
 
 Create app intents and entities so people can use your app’s content and actions across system experiences.
 
@@ -29,7 +31,7 @@ By adopting the App Intents framework, you let people:
 - Browse landmark collections or photo albums as a slideshow, favorite items, or upload a photo from the app’s widget.
 - Pin, favorite, share, tag, or add items to collections and albums from context menus.
 
-#### Describe Actions As App Intents and Entities
+#### Describe actions as app intents and entities
 
 The app contains many actions and makes them available to the system as app intents, so people can create custom shortcuts and invoke them across system experiences. For example, the app offers key actions such as finding the closest landmark or opening a landmark in the app. This app intent opens a landmark in the app:
 
@@ -98,9 +100,9 @@ public struct LandmarkEntity: IndexedEntity {
 }
 ```
 
-For more information about describing actions as app intents and app entities, refer to [`Getting started with the App Intents framework`](getting-started-with-the-app-intents-framework.md) and [`Creating your first app intent`](creating-your-first-app-intent.md).
+For more information about describing actions as app intents and app entities, refer to [Getting started with the App Intents framework](./getting-started-with-the-app-intents-framework.md) and [Creating your first app intent](./creating-your-first-app-intent.md).
 
-#### Organize Intents Using a Shared Swift Package
+#### Organize intents using a shared Swift package
 
 The app organizes its App Intents code in a shared Swift package called `TravelTrackingShared`, with three layered libraries:
 
@@ -110,9 +112,9 @@ The app organizes its App Intents code in a shared Swift package called `TravelT
 
 Both the main app and the widget extension import the shared `TravelTrackingShared` package, so the package defines intents and entities once and makes them available everywhere.
 
-#### Make Your App Entities Transferable
+#### Make your app entities transferable
 
-To enable Apple Intelligence to provide the app’s content to other intents, `LandmarkEntity` implements the [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) protocol and provides plain-text, image, PDF, and `ValueRepresentation` representations that Siri understands. While the [`FileRepresentation`](https://developer.apple.com/documentation/coretransferable/filerepresentation) and [`DataRepresentation`](https://developer.apple.com/documentation/coretransferable/datarepresentation) types work great for known formats like PDFs or images, [`IntentValueRepresentation`](intentvaluerepresentation.md) handles structured types, such as `PlaceDescriptor` for locations, that don’t have an associated file format:
+To enable Apple Intelligence to provide the app’s content to other intents, `LandmarkEntity` implements the [`Transferable`](../CoreTransferable/transferable.md) protocol and provides plain-text, image, PDF, and `ValueRepresentation` representations that Siri understands. While the [`FileRepresentation`](../CoreTransferable/filerepresentation.md) and [`DataRepresentation`](../CoreTransferable/datarepresentation.md) types work great for known formats like PDFs or images, [`IntentValueRepresentation`](./intentvaluerepresentation.md) handles structured types, such as `PlaceDescriptor` for locations, that don’t have an associated file format:
 
 ```swift
 extension LandmarkEntity: Transferable {
@@ -174,7 +176,7 @@ public var placeDescriptor: PlaceDescriptor {
 
 When a shortcut passes this entity to Maps, Maps receives a `PlaceDescriptor` it can navigate to, not just an image or PDF.
 
-#### Provide Onscreen Context
+#### Provide onscreen context
 
 When the landmark becomes visible onscreen, the app uses the `.appEntityIdentifier` view modifier to make the entity discoverable by Apple Intelligence and Siri:
 
@@ -194,13 +196,13 @@ GalleryHorizontalListView(
 )
 ```
 
-For more information about making onscreen content available to Siri and Apple Intelligence, refer to [`Apple Intelligence and Siri AI`](apple-intelligence-and-siri-ai.md).
+For more information about making onscreen content available to Siri and Apple Intelligence, refer to [Apple Intelligence and Siri AI](./apple-intelligence-and-siri-ai.md).
 
-#### Process Entities Efficiently Using an Entity Collection
+#### Process entities efficiently using an entity collection
 
 When an intent receives entities as parameters, the system resolves each one by calling the entity query and populating all properties. For intents that only need entity identifiers, for example, tagging or deleting, this resolution is unnecessary overhead.
 
-[`EntityCollection`](entitycollection.md) stores an array of entity identifiers instead of fully resolved entities. The system passes the identifiers directly to the intent’s `perform()` method without loading the full entity contents:
+[`EntityCollection`](./entitycollection.md) stores an array of entity identifiers instead of fully resolved entities. The system passes the identifiers directly to the intent’s `perform()` method without loading the full entity contents:
 
 ```swift
 public struct TagPhotosIntent: AppIntent {
@@ -235,11 +237,11 @@ public struct TagPhotosIntent: AppIntent {
 }
 ```
 
-#### Use Entities Across Devices
+#### Use entities across devices
 
 When Siri continues a conversation across devices, the system carries entity references alongside the conversation. If an entity uses locally generated IDs, the same entity can have a different ID on each device, and Siri can’t find it.
 
-[`SyncableEntity`](syncableentity.md) declares to the system that an entity’s ID is stable across devices, so Siri can find it. The sample app’s `PhotoEntity` conforms to the `SyncableEntity` protocol:
+[`SyncableEntity`](./syncableentity.md) declares to the system that an entity’s ID is stable across devices, so Siri can find it. The sample app’s `PhotoEntity` conforms to the `SyncableEntity` protocol:
 
 ```swift
 @AppEntity(schema: .photos.asset)
@@ -264,7 +266,7 @@ struct PhotoEntity: AppEntity, SyncableEntity {
 
 If a request stays on a device, the system uses the local ID. Across devices, the system uses the stable ID.
 
-#### Adopt App Schemas
+#### Adopt app schemas
 
 The app’s `PhotoEntity` adopts the `photos.asset` app schema, giving the system an understanding of what the photos represent. Siri, Shortcuts, and Spotlight can then work with the app’s photos:
 
@@ -275,9 +277,9 @@ public struct PhotoEntity: IndexedEntity, SyncableEntity {
 }
 ```
 
-For additional information about adopting app schemas, see [`Making actions and content discoverable by Apple Intelligence`](making-actions-and-content-discoverable-by-apple-intelligence.md).
+For additional information about adopting app schemas, see [Making actions and content discoverable by Apple Intelligence](./making-actions-and-content-discoverable-by-apple-intelligence.md).
 
-#### Configure Widgets with Union Value Parameters
+#### Configure widgets with union value parameters
 
 The app includes a widget that displays a slideshow from either a landmark collection or a photo album. The `@UnionValue` macro lets a single parameter accept one of several types:
 
@@ -332,9 +334,9 @@ struct TravelGalleryWidgetIntent: WidgetConfigurationIntent {
 
 `@UnionValue` parameters work in every system experience your intent supports, including the Shortcuts app.
 
-#### Run Long Running Intents
+#### Run long-running intents
 
-By default, intents have only a short time to finish their work. For tasks that take longer, for example, uploading a large photo in chunks, [`LongRunningIntent`](longrunningintent.md) extends execution well beyond the usual limit. The framework manages the background task lifecycle, and the system shows progress updates automatically as a Live Activity:
+By default, intents have only a short time to finish their work. For tasks that take longer, for example, uploading a large photo in chunks, [`LongRunningIntent`](./longrunningintent.md) extends execution well beyond the usual limit. The framework manages the background task lifecycle, and the system shows progress updates automatically as a Live Activity:
 
 ```swift
 public struct UploadPhotoIntent: LongRunningIntent, CancellableIntent {
@@ -375,11 +377,11 @@ public struct UploadPhotoIntent: LongRunningIntent, CancellableIntent {
 }
 ```
 
-[`CancellableIntent`](cancellableintent.md) gives the intent a chance to clean up any data when it is canceled, whether the person taps cancel, the system needs to reclaim resources, or the intent times out. The intent’s `onCancel` handler receives the cancellation reason.
+[`CancellableIntent`](./cancellableintent.md) gives the intent a chance to clean up any data when it is canceled, whether the person taps cancel, the system needs to reclaim resources, or the intent times out. The intent’s `onCancel` handler receives the cancellation reason.
 
-#### Support Undo
+#### Support undo
 
-The app’s `UpdateFavoriteIntent` conforms to [`UndoableIntent`](undoableintent.md), which lets the system offer an undo option after the intent runs. The `undo()` method reverses the intent’s action using the same parameters:
+The app’s `UpdateFavoriteIntent` conforms to [`UndoableIntent`](./undoableintent.md), which lets the system offer an undo option after the intent runs. The `undo()` method reverses the intent’s action using the same parameters:
 
 ```swift
 public struct UpdateFavoriteIntent: AppIntent, UndoableIntent {
@@ -410,9 +412,9 @@ public struct UpdateFavoriteIntent: AppIntent, UndoableIntent {
 }
 ```
 
-#### Control Where Intents Run
+#### Control where intents run
 
-When intents live in a shared package that both the app and its extensions link to, the system decides which process runs each intent. [`IntentExecutionTargets`](intentexecutiontargets.md) lets you control this explicitly.
+When intents live in a shared package that both the app and its extensions link to, the system decides which process runs each intent. [`IntentExecutionTargets`](./intentexecutiontargets.md) lets you control this explicitly.
 
 For example, the app’s widget has read-only access to the data model. When someone taps the favorite button on the widget, the write operation needs to run in the main app:
 
@@ -426,11 +428,11 @@ struct UpdateFavoriteIntent: AppIntent {
 }
 ```
 
-`ExecutionTargets` is available on both [`AppIntent`](appintent.md) and [`EntityQuery`](entityquery.md), so you can target the main app (`.main`), an App Intents extension (`.appIntentsExtension`), a widget extension (`.widgetKitExtension`), or any combination.
+`ExecutionTargets` is available on both [`AppIntent`](./appintent.md) and [`EntityQuery`](./entityquery.md), so you can target the main app (`.main`), an App Intents extension (`.appIntentsExtension`), a widget extension (`.widgetKitExtension`), or any combination.
 
-#### Offer Interactive Snippets
+#### Offer interactive snippets
 
-The app’s “Find Closest” App Shortcut runs an app intent that finds the nearest landmark without opening the app and lets people find tickets to visit it. Instead of taking them to the app, the intent presents an interactive snippet that appears as an overlay at the top of the screen. To display the interactive snippet, the app’s `ClosestLandmarkIntent` returns a [`SnippetIntent`](snippetintent.md) that presents the interactive snippet in its `perform()` method:
+The app’s “Find Closest” App Shortcut runs an app intent that finds the nearest landmark without opening the app and lets people find tickets to visit it. Instead of taking them to the app, the intent presents an interactive snippet that appears as an overlay at the top of the screen. To display the interactive snippet, the app’s `ClosestLandmarkIntent` returns a [`SnippetIntent`](./snippetintent.md) that presents the interactive snippet in its `perform()` method:
 
 ```swift
 public struct ClosestLandmarkIntent: AppIntent {
@@ -454,11 +456,11 @@ public struct ClosestLandmarkIntent: AppIntent {
 }
 ```
 
-For more information about displaying interactive snippets, refer to [`Displaying static and interactive snippets`](displaying-static-and-interactive-snippets.md).
+For more information about displaying interactive snippets, refer to [Displaying static and interactive snippets](./displaying-static-and-interactive-snippets.md).
 
-#### Add Entities to the Spotlight Index
+#### Add entities to the Spotlight index
 
-The app describes its data as app entities so the system can use that data when running app intents. The app also donates the entities to the semantic search index so people can find them in Spotlight. The following example shows how the app’s `LandmarkEntity` conforms to [`IndexedEntity`](indexedentity.md) and uses Swift macros to add the indexing keys that Spotlight needs.
+The app describes its data as app entities so the system can use that data when running app intents. The app also donates the entities to the semantic search index so people can find them in Spotlight. The following example shows how the app’s `LandmarkEntity` conforms to [`IndexedEntity`](./indexedentity.md) and uses Swift macros to add the indexing keys that Spotlight needs.
 
 ```swift
 struct LandmarkEntity: IndexedEntity {
@@ -496,11 +498,11 @@ public static func donateLandmarks(modelData: ModelData) async throws {
 }
 ```
 
-For more information, refer to [`Making app entities available in Spotlight`](making-app-entities-available-in-spotlight.md).
+For more information, refer to [Making app entities available in Spotlight](./making-app-entities-available-in-spotlight.md).
 
-#### Integrate Search Results with Visual Intelligence
+#### Integrate search results with visual intelligence
 
-With visual intelligence, people circle items onscreen or in the visual intelligence camera to search for matching results across apps that support visual intelligence. To support visual intelligence search, the sample app implements an [`IntentValueQuery`](intentvaluequery.md) to find matching landmarks:
+With visual intelligence, people circle items onscreen or in the visual intelligence camera to search for matching results across apps that support visual intelligence. To support visual intelligence search, the sample app implements an [`IntentValueQuery`](./intentvaluequery.md) to find matching landmarks:
 
 ```swift
 @UnionValue
@@ -527,23 +529,24 @@ struct LandmarkIntentValueQuery: IntentValueQuery {
 }
 ```
 
-For more information about integrating your app with visual intelligence, refer to [`Visual Intelligence`](https://developer.apple.com/documentation/visualintelligence).
+For more information about integrating your app with visual intelligence, refer to [Visual Intelligence](../VisualIntelligence/VisualIntelligence.md).
 
 ## See Also
 
-- [Apple Intelligence and Siri AI](apple-intelligence-and-siri-ai.md)
+### Feature integration
+- [Apple Intelligence and Siri AI](./apple-intelligence-and-siri-ai.md)
   Integrate your app with Apple Intelligence and bring it to Siri AI.
-- [Spotlight integration](spotlight.md)
+- [Spotlight integration](./spotlight.md)
   Add your entities to your app’s Spotlight index, and automate the indexing of your content.
-- [App Shortcuts](app-shortcuts.md)
+- [App Shortcuts](./app-shortcuts.md)
   Improve the experience of using your app intents and entities in system experiences like Siri, Spotlight, and the Shortcuts app.
-- [Widgets, Live Activities, and Controls](widgets-live-activities-and-controls.md)
+- [Widgets, Live Activities, and Controls](./widgets-live-activities-and-controls.md)
   Implement interactive widgets, controls, watch complications, and Live Activities using app intents.
-- [Hardware interactions](hardware-interactions.md)
+- [Hardware interactions](./hardware-interactions.md)
   Run your App Shortcuts from the Action button on iPhone or Apple Watch, or launch your own conversational app from the side button on iPhone.
-- [Focus](focus.md)
+- [Focus](./focus.md)
   Adjust your app’s behavior and filter incoming notifications when the current Focus changes.
-- [Visual intelligence](visual-intelligence.md)
+- [Visual intelligence](./visual-intelligence.md)
   Match images to your app’s content and report the results to the Visual Intelligence framework using an app intent.
 
 

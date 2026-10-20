@@ -1,7 +1,8 @@
 # prefersPencilOnlyDrawing
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A person’s preference for drawing with Apple Pencil only, as specified in the Settings app or the system tool picker.
 
@@ -15,6 +16,10 @@ A person’s preference for drawing with Apple Pencil only, as specified in the 
 
 ```swift
 class var prefersPencilOnlyDrawing: Bool { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) BOOL prefersPencilOnlyDrawing;
 ```
 
 

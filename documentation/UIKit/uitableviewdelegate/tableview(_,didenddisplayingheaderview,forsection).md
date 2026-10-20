@@ -1,7 +1,8 @@
 # tableView(_:didEndDisplayingHeaderView:forSection:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the specified header view was removed from the table.
 
@@ -9,13 +10,17 @@ Tells the delegate that the specified header view was removed from the table.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 optional func tableView(_ tableView: UITableView, didEndDisplayingHeaderView view: UIView, forSection section: Int)
+```
+
+```objc
+- (void) tableView:(UITableView *) tableView didEndDisplayingHeaderView:(UIView *) view forSection:(NSInteger) section;
 ```
 
 #### Discussion
@@ -30,9 +35,10 @@ Use this method to detect when a header view is removed from a table view, as op
 
 ## See Also
 
-- [func tableView(UITableView, didEndDisplaying: UITableViewCell, forRowAt: IndexPath)](uitableviewdelegate/tableview(_:didenddisplaying:forrowat:).md)
+### Tracking the removal of views
+- [func tableView(UITableView, didEndDisplaying: UITableViewCell, forRowAt: IndexPath)](./tableview%28_,didenddisplaying,forrowat%29.md)
   Tells the delegate that the specified cell was removed from the table.
-- [func tableView(UITableView, didEndDisplayingFooterView: UIView, forSection: Int)](uitableviewdelegate/tableview(_:didenddisplayingfooterview:forsection:).md)
+- [func tableView(UITableView, didEndDisplayingFooterView: UIView, forSection: Int)](./tableview%28_,didenddisplayingfooterview,forsection%29.md)
   Tells the delegate that the specified footer view was removed from the table.
 
 

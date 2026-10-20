@@ -1,14 +1,15 @@
 # kINQUIRY_PageB0_PageCode
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kINQUIRY_PageB0_PageCode = 0xB0
 ```
 

@@ -1,7 +1,8 @@
 # Resource.Meta
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Information about the request or response.
 
@@ -10,7 +11,7 @@ Information about the request or response.
 
 ## Declaration
 
-```swift
+```
 object Resource.Meta
 ```
 

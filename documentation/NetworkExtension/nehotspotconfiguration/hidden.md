@@ -1,7 +1,8 @@
 # hidden
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates the visibility of the SSID.
 
@@ -18,21 +19,26 @@ A Boolean value that indicates the visibility of the SSID.
 var hidden: Bool { get set }
 ```
 
+```objc
+@property BOOL hidden;
+```
+
 #### Discussion
 
-Set this value to [`true`](https://developer.apple.com/documentation/swift/true) to make the system perform an active scan for the Service Set Identifier (SSID). If the access point is already broadcasting the SSID, set this value to [`false`](https://developer.apple.com/documentation/swift/false).
+Set this value to [`true`](../../Swift/true.md) to make the system perform an active scan for the Service Set Identifier (SSID). If the access point is already broadcasting the SSID, set this value to [`false`](../../Swift/false.md).
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var ssid: String](nehotspotconfiguration/ssid.md)
+### Accessing configuration properties
+- [var ssid: String](./ssid.md)
   The SSID of an open, WEP, WPA/WPA2 personal, or WPA/WPA2 enterprise Wi-Fi network.
-- [var ssidPrefix: String](nehotspotconfiguration/ssidprefix.md)
+- [var ssidPrefix: String](./ssidprefix.md)
   The string used to match networks against a known SSID prefix.
-- [var lifeTimeInDays: NSNumber](nehotspotconfiguration/lifetimeindays.md)
+- [var lifeTimeInDays: NSNumber](./lifetimeindays.md)
   The number of days the network retains the associated configuration.
-- [var joinOnce: Bool](nehotspotconfiguration/joinonce.md)
+- [var joinOnce: Bool](./joinonce.md)
   Restricts the lifetime of a configuration to the operating status of the app that created it.
 
 

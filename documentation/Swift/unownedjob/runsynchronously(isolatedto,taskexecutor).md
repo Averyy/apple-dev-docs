@@ -1,7 +1,8 @@
 # runSynchronously(isolatedTo:taskExecutor:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Run this job isolated to the passed in serial executor, while executing it on the specified task executor.
 
@@ -28,11 +29,11 @@ The passed in executor reference is used to establish the executor context for t
 
 This operation consumes the job, preventing it accidental use after it has been run.
 
-Converting a `ExecutorJob` to an [`UnownedJob`](unownedjob.md) and invoking ``UnownedJob/runSynchronously(isolatedTo:taskExecutor:)` on it multiple times is undefined behavior, as a job can only ever be run once, and must not be accessed after it has been run.
+Converting a `ExecutorJob` to an [`UnownedJob`](../unownedjob.md) and invoking ``UnownedJob/runSynchronously(isolatedTo:taskExecutor:)` on it multiple times is undefined behavior, as a job can only ever be run once, and must not be accessed after it has been run.
 
-> **Note**: [`runSynchronously(on:)`](unownedjob/runsynchronously(on:)-o1nb.md)
+> **See Also**: [`runSynchronously(on:)`](./runsynchronously%28on%29-o1nb.md)
 
-> **Note**: [`runSynchronously(on:)`](unownedjob/runsynchronously(on:)-4eaxu.md)
+> **See Also**: [`runSynchronously(on:)`](./runsynchronously%28on%29-4eaxu.md)
 
 ## Parameters
 

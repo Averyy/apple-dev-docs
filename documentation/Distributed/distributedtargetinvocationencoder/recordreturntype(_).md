@@ -2,6 +2,7 @@
 
 **Framework**: Distributed  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Record the return type of the distributed method. This method will not be invoked if the target is returning `Void`.

@@ -1,7 +1,8 @@
 # MPSCNNConvolutionGradientState
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that exposes a gradient convolution kernel’s gradient with respect to weights and biases.
 
@@ -19,46 +20,51 @@ An object that exposes a gradient convolution kernel’s gradient with respect t
 class MPSCNNConvolutionGradientState
 ```
 
+```objc
+@interface MPSCNNConvolutionGradientState : MPSNNGradientState
+```
+
 ## Topics
 
 ### Instance Properties
-- [var convolution: MPSCNNConvolution](mpscnnconvolutiongradientstate/convolution.md)
-- [var gradientForBiases: any MTLBuffer](mpscnnconvolutiongradientstate/gradientforbiases.md)
-- [var gradientForWeights: any MTLBuffer](mpscnnconvolutiongradientstate/gradientforweights.md)
-- [var gradientForWeightsLayout: MPSCNNConvolutionWeightsLayout](mpscnnconvolutiongradientstate/gradientforweightslayout.md)
+- [var convolution: MPSCNNConvolution](./mpscnnconvolutiongradientstate/convolution.md)
+- [var gradientForBiases: any MTLBuffer](./mpscnnconvolutiongradientstate/gradientforbiases.md)
+- [var gradientForWeights: any MTLBuffer](./mpscnnconvolutiongradientstate/gradientforweights.md)
+- [var gradientForWeightsLayout: MPSCNNConvolutionWeightsLayout](./mpscnnconvolutiongradientstate/gradientforweightslayout.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNNGradientState](mpsnngradientstate.md)
+- [MPSNNGradientState](./mpsnngradientstate.md)
 ### Inherited By
-- [MPSCNNConvolutionTransposeGradientState](mpscnnconvolutiontransposegradientstate.md)
+- [MPSCNNConvolutionTransposeGradientState](./mpscnnconvolutiontransposegradientstate.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MPSImageSizeEncodingState](mpsimagesizeencodingstate.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MPSImageSizeEncodingState](./mpsimagesizeencodingstate.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSCNNBinaryConvolution](mpscnnbinaryconvolution.md)
+### Convolution Layers
+- [class MPSCNNBinaryConvolution](./mpscnnbinaryconvolution.md)
   A convolution kernel with binary weights and an input image using binary approximations.
-- [class MPSCNNConvolution](mpscnnconvolution.md)
+- [class MPSCNNConvolution](./mpscnnconvolution.md)
   A convolution kernel that convolves the input image with a set of filters, with each producing one feature map in the output image.
-- [class MPSCNNDepthWiseConvolutionDescriptor](mpscnndepthwiseconvolutiondescriptor.md)
+- [class MPSCNNDepthWiseConvolutionDescriptor](./mpscnndepthwiseconvolutiondescriptor.md)
   A description of a convolution object that does depthwise convolution.
-- [class MPSCNNSubPixelConvolutionDescriptor](mpscnnsubpixelconvolutiondescriptor.md)
+- [class MPSCNNSubPixelConvolutionDescriptor](./mpscnnsubpixelconvolutiondescriptor.md)
   A description of a convolution object that does subpixel upsampling and reshaping.
-- [class MPSCNNConvolutionTranspose](mpscnnconvolutiontranspose.md)
+- [class MPSCNNConvolutionTranspose](./mpscnnconvolutiontranspose.md)
   A transposed convolution kernel.
-- [class MPSCNNConvolutionGradient](mpscnnconvolutiongradient.md)
+- [class MPSCNNConvolutionGradient](./mpscnnconvolutiongradient.md)
   A gradient convolution kernel.
-- [protocol MPSImageSizeEncodingState](mpsimagesizeencodingstate.md)
+- [protocol MPSImageSizeEncodingState](./mpsimagesizeencodingstate.md)
   A protocol for objects that contain information about an image size elsewhere in the graph.
-- [class MPSCNNConvolutionWeightsAndBiasesState](mpscnnconvolutionweightsandbiasesstate.md)
+- [class MPSCNNConvolutionWeightsAndBiasesState](./mpscnnconvolutionweightsandbiasesstate.md)
   A class that stores weights and biases.
 
 

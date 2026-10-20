@@ -1,17 +1,22 @@
 # drawSwatch(in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the current color in the specified rectangle.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func drawSwatch(in rect: NSRect)
+```
+
+```objc
+- (void) drawSwatchInRect:(NSRect) rect;
 ```
 
 #### Discussion
@@ -24,11 +29,12 @@ Subclasses adorn the rectangle in some manner to indicate the type of color. Thi
 
 ## See Also
 
-- [func set()](nscolor/set.md)
+### Drawing with colors
+- [func set()](./set%28%29.md)
   Sets the color of subsequent drawing to the color that the color object represents.
-- [func setFill()](nscolor/setfill.md)
+- [func setFill()](./setfill%28%29.md)
   Sets the fill color of subsequent drawing to the color object’s color.
-- [func setStroke()](nscolor/setstroke.md)
+- [func setStroke()](./setstroke%28%29.md)
   Sets the stroke color of subsequent drawing to the color object’s color.
 
 

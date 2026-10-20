@@ -1,7 +1,8 @@
 # GLKMatrix4InvertAndTranspose(_:_:)
 
 **Framework**: GLKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the inverse transpose of a matrix.
 
@@ -17,46 +18,51 @@ Returns the inverse transpose of a matrix.
 func GLKMatrix4InvertAndTranspose(_ matrix: GLKMatrix4, _ isInvertible: UnsafeMutablePointer<Bool>?) -> GLKMatrix4
 ```
 
+```c
+GLKMatrix4 GLKMatrix4InvertAndTranspose(GLKMatrix4 matrix, bool *isInvertible);
+```
+
 #### Return Value
 
-If `isInvertible` was set to [`true`](https://developer.apple.com/documentation/swift/true), this holds an inverted and transposed matrix. Otherwise, the identity matrix is returned.
+If `isInvertible` was set to [`true`](../Swift/true.md), this holds an inverted and transposed matrix. Otherwise, the identity matrix is returned.
 
 ## Parameters
 
 - `matrix`: A `4x4` matrix.
-- `isInvertible`: On return, this holds [`true`](https://developer.apple.com/documentation/swift/true) if the matrix was inverted or [`false`](https://developer.apple.com/documentation/swift/false) if the matrix is not invertible.
+- `isInvertible`: On return, this holds [`true`](../Swift/true.md) if the matrix was inverted or [`false`](../Swift/false.md) if the matrix is not invertible.
 
 ## See Also
 
-- [func GLKMatrix4Invert(GLKMatrix4, UnsafeMutablePointer<Bool>?) -> GLKMatrix4](glkmatrix4invert(_:_:).md)
+### Performing Mathematical Operations on Matrices
+- [func GLKMatrix4Invert(GLKMatrix4, UnsafeMutablePointer<Bool>?) -> GLKMatrix4](./glkmatrix4invert%28_,_%29.md)
   Returns the inverse of a matrix.
-- [func GLKMatrix4Transpose(GLKMatrix4) -> GLKMatrix4](glkmatrix4transpose(_:).md)
+- [func GLKMatrix4Transpose(GLKMatrix4) -> GLKMatrix4](./glkmatrix4transpose%28_%29.md)
   Returns the transpose of a matrix.
-- [func GLKMatrix4Multiply(GLKMatrix4, GLKMatrix4) -> GLKMatrix4](glkmatrix4multiply(_:_:).md)
+- [func GLKMatrix4Multiply(GLKMatrix4, GLKMatrix4) -> GLKMatrix4](./glkmatrix4multiply%28_,_%29.md)
   Returns the product of two matrices.
-- [func GLKMatrix4Rotate(GLKMatrix4, Float, Float, Float, Float) -> GLKMatrix4](glkmatrix4rotate(_:_:_:_:_:).md)
+- [func GLKMatrix4Rotate(GLKMatrix4, Float, Float, Float, Float) -> GLKMatrix4](./glkmatrix4rotate%28_,_,_,_,_%29.md)
   Returns a new `4x4` matrix created by concatenating a matrix with a rotation around a vector.
-- [func GLKMatrix4RotateWithVector3(GLKMatrix4, Float, GLKVector3) -> GLKMatrix4](glkmatrix4rotatewithvector3(_:_:_:).md)
+- [func GLKMatrix4RotateWithVector3(GLKMatrix4, Float, GLKVector3) -> GLKMatrix4](./glkmatrix4rotatewithvector3%28_,_,_%29.md)
   Returns a new `4x4` matrix created by concatenating a matrix with a rotation around a vector.
-- [func GLKMatrix4RotateWithVector4(GLKMatrix4, Float, GLKVector4) -> GLKMatrix4](glkmatrix4rotatewithvector4(_:_:_:).md)
+- [func GLKMatrix4RotateWithVector4(GLKMatrix4, Float, GLKVector4) -> GLKMatrix4](./glkmatrix4rotatewithvector4%28_,_,_%29.md)
   Returns a new `4x4` matrix created by concatenating a matrix with a rotation around a vector.
-- [func GLKMatrix4RotateX(GLKMatrix4, Float) -> GLKMatrix4](glkmatrix4rotatex(_:_:).md)
+- [func GLKMatrix4RotateX(GLKMatrix4, Float) -> GLKMatrix4](./glkmatrix4rotatex%28_,_%29.md)
   Returns a new `4x4` matrix created by concatenating a matrix with a rotation around the x-axis.
-- [func GLKMatrix4RotateY(GLKMatrix4, Float) -> GLKMatrix4](glkmatrix4rotatey(_:_:).md)
+- [func GLKMatrix4RotateY(GLKMatrix4, Float) -> GLKMatrix4](./glkmatrix4rotatey%28_,_%29.md)
   Returns a new `4x4` matrix created by concatenating a matrix with a rotation around the y-axis.
-- [func GLKMatrix4RotateZ(GLKMatrix4, Float) -> GLKMatrix4](glkmatrix4rotatez(_:_:).md)
+- [func GLKMatrix4RotateZ(GLKMatrix4, Float) -> GLKMatrix4](./glkmatrix4rotatez%28_,_%29.md)
   Returns a new `4x4` matrix created by concatenating a matrix with a rotation around the z-axis.
-- [func GLKMatrix4Scale(GLKMatrix4, Float, Float, Float) -> GLKMatrix4](glkmatrix4scale(_:_:_:_:).md)
+- [func GLKMatrix4Scale(GLKMatrix4, Float, Float, Float) -> GLKMatrix4](./glkmatrix4scale%28_,_,_,_%29.md)
   Returns a new `4x4` matrix created by concatenating a matrix with a scaling transform.
-- [func GLKMatrix4ScaleWithVector3(GLKMatrix4, GLKVector3) -> GLKMatrix4](glkmatrix4scalewithvector3(_:_:).md)
+- [func GLKMatrix4ScaleWithVector3(GLKMatrix4, GLKVector3) -> GLKMatrix4](./glkmatrix4scalewithvector3%28_,_%29.md)
   Returns a new `4x4` matrix created by concatenating a matrix with a scaling transform defined by a vector.
-- [func GLKMatrix4ScaleWithVector4(GLKMatrix4, GLKVector4) -> GLKMatrix4](glkmatrix4scalewithvector4(_:_:).md)
+- [func GLKMatrix4ScaleWithVector4(GLKMatrix4, GLKVector4) -> GLKMatrix4](./glkmatrix4scalewithvector4%28_,_%29.md)
   Returns a new `4x4` matrix created by concatenating a matrix with a scaling transform defined by a vector.
-- [func GLKMatrix4Translate(GLKMatrix4, Float, Float, Float) -> GLKMatrix4](glkmatrix4translate(_:_:_:_:).md)
+- [func GLKMatrix4Translate(GLKMatrix4, Float, Float, Float) -> GLKMatrix4](./glkmatrix4translate%28_,_,_,_%29.md)
   Returns a new `4x4` matrix created by concatenating a matrix with a translation transform.
-- [func GLKMatrix4TranslateWithVector3(GLKMatrix4, GLKVector3) -> GLKMatrix4](glkmatrix4translatewithvector3(_:_:).md)
+- [func GLKMatrix4TranslateWithVector3(GLKMatrix4, GLKVector3) -> GLKMatrix4](./glkmatrix4translatewithvector3%28_,_%29.md)
   Returns a new `4x4` matrix created by concatenating a matrix with a translation transform defined by a vector.
-- [func GLKMatrix4TranslateWithVector4(GLKMatrix4, GLKVector4) -> GLKMatrix4](glkmatrix4translatewithvector4(_:_:).md)
+- [func GLKMatrix4TranslateWithVector4(GLKMatrix4, GLKVector4) -> GLKMatrix4](./glkmatrix4translatewithvector4%28_,_%29.md)
   Returns a new `4x4` matrix created by concatenating a matrix with a translation transform defined by a vector.
 
 

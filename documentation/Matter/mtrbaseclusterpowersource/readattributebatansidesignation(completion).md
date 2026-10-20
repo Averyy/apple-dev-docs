@@ -1,7 +1,8 @@
 # readAttributeBatANSIDesignation(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeBatANSIDesignation(completion: @escaping @Sendable (String?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeBatANSIDesignation() async throws -> String
+```
+
+```objc
+- (void) readAttributeBatANSIDesignationWithCompletion:(void (^)(NSString *value, NSError *error)) completion;
 ```
 
 

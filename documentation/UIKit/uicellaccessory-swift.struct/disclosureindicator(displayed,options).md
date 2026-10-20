@@ -1,7 +1,8 @@
 # disclosureIndicator(displayed:options:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a disclosure indicator system accessory with the specified display state and configuration options.
 
@@ -10,7 +11,7 @@ Creates a disclosure indicator system accessory with the specified display state
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -28,12 +29,13 @@ Use this cell accessory to indicate that users can tap on the cell to disclose a
 
 ## Parameters
 
-- `displayed`: The cell-editing states that the disclosure indicator appears in. This parameter has a default value of [`UICellAccessory.DisplayedState.always`](uicellaccessory-swift.struct/displayedstate/always.md).
-- `options`: Configuration options for the disclosure indicator. See [`UICellAccessory.DisclosureIndicatorOptions`](uicellaccessory-swift.struct/disclosureindicatoroptions.md) for possible configuration options.
+- `displayed`: The cell-editing states that the disclosure indicator appears in. This parameter has a default value of [`UICellAccessory.DisplayedState.always`](./displayedstate/always.md).
+- `options`: Configuration options for the disclosure indicator. See [`UICellAccessory.DisclosureIndicatorOptions`](./disclosureindicatoroptions.md) for possible configuration options.
 
 ## See Also
 
-- [UICellAccessory.DisclosureIndicatorOptions](uicellaccessory-swift.struct/disclosureindicatoroptions.md)
+### Creating a disclosure indicator
+- [UICellAccessory.DisclosureIndicatorOptions](./disclosureindicatoroptions.md)
   Configuration options for a disclosure indicator.
 
 

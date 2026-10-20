@@ -1,7 +1,8 @@
 # isSchema(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns `true` if this prim has the given type or a more derived type.
 

@@ -1,7 +1,8 @@
 # isAvailable
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.0+
@@ -14,6 +15,10 @@
 
 ```swift
 class var isAvailable: Bool { get }
+```
+
+```objc
+@property (class, readonly, getter=isAvailable) BOOL available;
 ```
 
 

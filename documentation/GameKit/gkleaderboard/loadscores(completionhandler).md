@@ -1,18 +1,21 @@
 # loadScores(completionHandler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves a set of scores from Game Center.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 4.0+ - Deprecated in 14.0
+- iPadOS 4.0+ - Deprecated in 14.0
+- Mac Catalyst 13.1+ - Deprecated in 14.0
+- macOS 10.8+ - Deprecated in 11.0
+- tvOS 9.0+ - Deprecated in 14.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 3.0+ - Deprecated in 7.0
+
+> **Deprecated**: Use the [`loadEntries(for:timeScope:range:completionHandler:)`](./loadentries%28for,timescope,range,completionhandler%29.md) method instead.
 
 ## Declaration
 
@@ -20,11 +23,15 @@ Retrieves a set of scores from Game Center.
 func loadScores(completionHandler: (([GKScore]?, (any Error)?) -> Void)? = nil)
 ```
 
+```objc
+- (void) loadScoresWithCompletionHandler:(void (^)(NSArray<GKScore *> *scores, NSError *error)) completionHandler;
+```
+
 #### Discussion
 
 When you call this method, it creates a new background task to handle the request. The method then returns control to your game. When the task completes, GameKit calls your completion handler on the main thread.
 
-The code below shows an example leaderboard data query. The method for this query initializes a new leaderboard object and configures the [`playerScope`](gkleaderboard/playerscope-swift.property.md), [`timeScope`](gkleaderboard/timescope-swift.property.md), and [`range`](gkleaderboard/range.md) properties to retrieve the top ten scores for today.
+The code below shows an example leaderboard data query. The method for this query initializes a new leaderboard object and configures the [`playerScope`](./playerscope-swift.property.md), [`timeScope`](./timescope-swift.property.md), and [`range`](./range.md) properties to retrieve the top ten scores for today.
 
 ```objc
 - (void) retrieveTopTenScores
@@ -79,16 +86,21 @@ You can call this method multiple times. Each call represents a different query 
 
 ## Parameters
 
-- `completionHandler`: A block to call after retrieving the scores from the server. The block receives the following parameters: - ***scores***: An array of `GKScore` objects that holds the requested scores. If an error occurs, this value may be non-`nil`. In this case, the array holds whatever score data GameKit retrieves from Game Center before the error occurs.
-- ***error***: If an error occurs, this error object describes the error. If the operation completes successfully, the value is `nil`.
+- `completionHandler`: A block to call after retrieving the scores from the server.
+
+  The block receives the following parameters:
+
+  - ***scores***: An array of `GKScore` objects that holds the requested scores. If an error occurs, this value may be non-`nil`. In this case, the array holds whatever score data GameKit retrieves from Game Center before the error occurs.
+  - ***error***: If an error occurs, this error object describes the error. If the operation completes successfully, the value is `nil`.
 
 ## See Also
 
-- [class func setDefault(String?, withCompletionHandler: (((any Error)?) -> Void)?)](gkleaderboard/setdefault(_:withcompletionhandler:).md)
+### Deprecated methods
+- [class func setDefault(String?, withCompletionHandler: (((any Error)?) -> Void)?)](./setdefault%28_,withcompletionhandler%29.md)
   Sets the default leaderboard for the local player.
-- [class func loadCategories(completionHandler: (([String]?, [String]?, (any Error)?) -> Void)?)](gkleaderboard/loadcategories(completionhandler:).md)
+- [class func loadCategories(completionHandler: (([String]?, [String]?, (any Error)?) -> Void)?)](./loadcategories%28completionhandler%29.md)
   Loads the list of leaderboard categories along with their corresponding localized titles.
-- [class func loadLeaderboards(completionHandler: (([GKLeaderboard]?, (any Error)?) -> Void)?)](gkleaderboard/loadleaderboards(completionhandler:).md)
+- [class func loadLeaderboards(completionHandler: (([GKLeaderboard]?, (any Error)?) -> Void)?)](./loadleaderboards%28completionhandler%29.md)
   Loads a list of leaderboards from Game Center.
 
 

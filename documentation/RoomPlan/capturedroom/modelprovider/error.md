@@ -1,7 +1,8 @@
 # CapturedRoom.ModelProvider.Error
 
 **Framework**: RoomPlan  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Errors that can occur when managing 3D model association with categories and attributes.
 
@@ -23,21 +24,21 @@ The `modelFileURL` functions can throw an error of this type, such as `CapturedR
 ## Topics
 
 ### Interpreting the error
-- [CapturedRoom.ModelProvider.Error.attributeCombinationNotSupported](capturedroom/modelprovider/error/attributecombinationnotsupported.md)
+- [CapturedRoom.ModelProvider.Error.attributeCombinationNotSupported](./error/attributecombinationnotsupported.md)
   An error that indicates the framework doesn’t support the attributes set in a model-URL query.
-- [CapturedRoom.ModelProvider.Error.nonExistingFile(url:)](capturedroom/modelprovider/error/nonexistingfile(url:).md)
+- [CapturedRoom.ModelProvider.Error.nonExistingFile(url:)](./error/nonexistingfile%28url%29.md)
   An error that indicates a model-URL query failed to return a result.
 ### Inspecting error information
-- [var errorDescription: String?](capturedroom/modelprovider/error/errordescription.md)
+- [var errorDescription: String?](./error/errordescription.md)
   A human-readable explanation for the particular model-provider error.
 
 ## Relationships
 
 ### Conforms To
-- [Error](../swift/error.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Error](../../../Swift/error.md)
+- [LocalizedError](../../../Foundation/localizederror.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

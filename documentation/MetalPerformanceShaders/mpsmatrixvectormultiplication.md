@@ -1,7 +1,8 @@
 # MPSMatrixVectorMultiplication
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A matrix-vector multiplication kernel
 
@@ -19,36 +20,41 @@ A matrix-vector multiplication kernel
 class MPSMatrixVectorMultiplication
 ```
 
+```objc
+@interface MPSMatrixVectorMultiplication : MPSMatrixBinaryKernel
+```
+
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, transpose: Bool, rows: Int, columns: Int, alpha: Double, beta: Double)](mpsmatrixvectormultiplication/init(device:transpose:rows:columns:alpha:beta:).md)
-- [init(device: any MTLDevice, rows: Int, columns: Int)](mpsmatrixvectormultiplication/init(device:rows:columns:).md)
+- [init(device: any MTLDevice, transpose: Bool, rows: Int, columns: Int, alpha: Double, beta: Double)](./mpsmatrixvectormultiplication/init%28device,transpose,rows,columns,alpha,beta%29.md)
+- [init(device: any MTLDevice, rows: Int, columns: Int)](./mpsmatrixvectormultiplication/init%28device,rows,columns%29.md)
 ### Instance Methods
-- [func encode(commandBuffer: any MTLCommandBuffer, inputMatrix: MPSMatrix, inputVector: MPSVector, resultVector: MPSVector)](mpsmatrixvectormultiplication/encode(commandbuffer:inputmatrix:inputvector:resultvector:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, inputMatrix: MPSMatrix, inputVector: MPSVector, resultVector: MPSVector)](./mpsmatrixvectormultiplication/encode%28commandbuffer,inputmatrix,inputvector,resultvector%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSMatrixBinaryKernel](mpsmatrixbinarykernel.md)
+- [MPSMatrixBinaryKernel](./mpsmatrixbinarykernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSMatrixSum](mpsmatrixsum.md)
+### Matrix Arithmetic Operations
+- [class MPSMatrixSum](./mpsmatrixsum.md)
   A kernel for performing a pointwise summation of a matrix.
-- [class MPSMatrixMultiplication](mpsmatrixmultiplication.md)
+- [class MPSMatrixMultiplication](./mpsmatrixmultiplication.md)
   A matrix multiplication kernel.
-- [class MPSMatrixFindTopK](mpsmatrixfindtopk.md)
+- [class MPSMatrixFindTopK](./mpsmatrixfindtopk.md)
   A kernel for computing the top-K values and their corresponding indices in a matrix.
 
 

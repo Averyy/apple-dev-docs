@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of seek command event.
 
@@ -18,6 +19,10 @@ The type of seek command event.
 
 ```swift
 var type: MPSeekCommandEventType { get }
+```
+
+```objc
+@property (nonatomic, readonly) MPSeekCommandEventType type;
 ```
 
 #### Discussion

@@ -1,18 +1,19 @@
 # sample(atTime:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calculates the sample at a particular time.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,17 @@ Calculates the sample at a particular time.
 func sample(atTime time: CGFloat) -> Any?
 ```
 
+```objc
+- (id) sampleAtTime:(CGFloat) time;
+```
+
 ## Mentions
 
-- [Using Keyframe Sequence to effect Custom Interpolation](using-keyframe-sequence-to-effect-custom-interpolation.md)
+- [Using Keyframe Sequence to effect Custom Interpolation](../using-keyframe-sequence-to-effect-custom-interpolation.md)
 
 #### Return Value
 
-An object that contains the interpolated sample. The class of this object matches the class of the values stored in the keyframe sequence — either an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) or an `SKColor`.
+An object that contains the interpolated sample. The class of this object matches the class of the values stored in the keyframe sequence — either an [`NSNumber`](../../Foundation/nsnumber.md) or an `SKColor`.
 
 ## Parameters
 

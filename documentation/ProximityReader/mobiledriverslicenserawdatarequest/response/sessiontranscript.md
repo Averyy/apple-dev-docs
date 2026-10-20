@@ -1,7 +1,8 @@
 # sessionTranscript
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The session transcript of the document request.
 

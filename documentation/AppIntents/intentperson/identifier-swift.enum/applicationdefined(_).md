@@ -1,7 +1,8 @@
 # IntentPerson.Identifier.applicationDefined(_:)
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An identifier specific to your app
 
@@ -11,7 +12,7 @@ An identifier specific to your app
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ case applicationDefined(String)
 
 ## See Also
 
-- [IntentPerson.Identifier.contact(_:)](intentperson/identifier-swift.enum/contact(_:).md)
+### Getting the identifier types
+- [IntentPerson.Identifier.contact(_:)](./contact%28_%29.md)
   An identifier from the Contacts framework (see `CNContact.identifier`)
 
 

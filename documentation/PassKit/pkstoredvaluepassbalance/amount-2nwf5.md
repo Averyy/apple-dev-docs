@@ -1,7 +1,8 @@
 # amount
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current balance of a stored-value pass in money or points.
 
@@ -10,7 +11,7 @@ The current balance of a stored-value pass in money or points.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -21,13 +22,14 @@ var amount: Decimal { get }
 
 ## See Also
 
-- [var expiryDate: Date?](pkstoredvaluepassbalance/expirydate.md)
+### Getting the pass status
+- [var expiryDate: Date?](./expirydate.md)
   The date that the balance expires.
-- [var balanceType: PKStoredValuePassBalance.BalanceType](pkstoredvaluepassbalance/balancetype-swift.property.md)
+- [var balanceType: PKStoredValuePassBalance.BalanceType](./balancetype-swift.property.md)
   The type of value that the balance represents, such as money or points.
-- [var currencyCode: String?](pkstoredvaluepassbalance/currencycode.md)
+- [var currencyCode: String?](./currencycode.md)
   The ISO 4217 currency code of the balance.
-- [PKStoredValuePassBalance.BalanceType](pkstoredvaluepassbalance/balancetype-swift.struct.md)
+- [PKStoredValuePassBalance.BalanceType](./balancetype-swift.struct.md)
   The type of value that the balance represents, such as money or points.
 
 

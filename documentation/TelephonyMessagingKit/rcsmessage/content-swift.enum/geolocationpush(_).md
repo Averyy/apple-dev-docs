@@ -1,7 +1,8 @@
 # RCSMessage.Content.geolocationPush(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A content type for geolocation push content.
 
@@ -16,7 +17,8 @@ case geolocationPush(RCSMessage.GeolocationPush)
 
 ## See Also
 
-- [RCSMessage.GeolocationPush](rcsmessage/geolocationpush.md)
+### Working with geolocation pushes
+- [RCSMessage.GeolocationPush](../geolocationpush.md)
   A structure that represents geolocation push content in an RCS message.
 
 

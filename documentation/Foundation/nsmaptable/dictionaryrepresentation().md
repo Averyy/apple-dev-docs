@@ -1,7 +1,8 @@
 # dictionaryRepresentation()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a dictionary representation of the map table.
 
@@ -20,13 +21,17 @@ Returns a dictionary representation of the map table.
 func dictionaryRepresentation() -> [AnyHashable : ObjectType]
 ```
 
+```objc
+- (NSDictionary<id,id> *) dictionaryRepresentation;
+```
+
 #### Return Value
 
 A dictionary representation of the map table.
 
 #### Discussion
 
-The map table’s values and keys must conform to all the requirements specified in [`setObject(_:forKey:)`](nsmutabledictionary/setobject(_:forkey:).md) in [`NSMutableDictionary`](nsmutabledictionary.md).
+The map table’s values and keys must conform to all the requirements specified in [`setObject(_:forKey:)`](../nsmutabledictionary/setobject%28_,forkey%29.md) in [`NSMutableDictionary`](../nsmutabledictionary.md).
 
 
 ---

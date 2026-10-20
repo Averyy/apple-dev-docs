@@ -1,7 +1,8 @@
 # addMultipartData(_:withName:type:)
 
 **Framework**: Social  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies a named multipart POST body for this request.
 
@@ -14,9 +15,13 @@ Specifies a named multipart POST body for this request.
 func addMultipartData(_ data: Data!, withName name: String!, type: String!)
 ```
 
+```objc
+- (void) addMultipartData:(NSData *) data withName:(NSString *) name type:(NSString *) type;
+```
+
 #### Discussion
 
-Possible parameter values are dependent on the target service. This information, as well as guidance on when to use a multipart POST body, is documented by the service provider. For links to documentation for the supported services, see Table 1 in [`SLRequest`](slrequest.md).
+Possible parameter values are dependent on the target service. This information, as well as guidance on when to use a multipart POST body, is documented by the service provider. For links to documentation for the supported services, see Table 1 in [`SLRequest`](../slrequest.md).
 
 ## Parameters
 
@@ -26,7 +31,8 @@ Possible parameter values are dependent on the target service. This information,
 
 ## See Also
 
-- [func addMultipartData(Data!, withName: String!, type: String!, filename: String!)](slrequest/addmultipartdata(_:withname:type:filename:).md)
+### Adding Data to the Request
+- [func addMultipartData(Data!, withName: String!, type: String!, filename: String!)](./addmultipartdata%28_,withname,type,filename%29.md)
   Specifies a named multipart POST body for this request.
 
 

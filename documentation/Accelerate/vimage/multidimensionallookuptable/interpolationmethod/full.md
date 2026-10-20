@@ -1,7 +1,8 @@
 # vImage.MultidimensionalLookupTable.InterpolationMethod.full
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Full linear interpolation.
 
@@ -11,7 +12,7 @@ Full linear interpolation.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ case full
 
 ## See Also
 
-- [vImage.MultidimensionalLookupTable.InterpolationMethod.half](vimage/multidimensionallookuptable/interpolationmethod/half.md)
+### Enumeration Cases
+- [vImage.MultidimensionalLookupTable.InterpolationMethod.half](./half.md)
   Partial linear interpolation between vertices on gray axis and `N-1` nearest vertices.
-- [vImage.MultidimensionalLookupTable.InterpolationMethod.none](vimage/multidimensionallookuptable/interpolationmethod/none.md)
+- [vImage.MultidimensionalLookupTable.InterpolationMethod.none](./none.md)
   Nearest neighbor.
 
 

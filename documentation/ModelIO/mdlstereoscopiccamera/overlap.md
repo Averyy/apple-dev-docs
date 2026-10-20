@@ -1,7 +1,8 @@
 # overlap
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount, as a fraction of image width, by which the images from the camera’s two viewpoints overlap.
 
@@ -19,17 +20,22 @@ The amount, as a fraction of image width, by which the images from the camera’
 var overlap: Float { get set }
 ```
 
+```objc
+@property (nonatomic, assign) float overlap;
+```
+
 #### Discussion
 
 Some stereoscopic rendering processes require shifting the location of each viewpoint’s rendered image in a framebuffer before display. Use this property to determine the distance to shift images by during rendering.
 
 ## See Also
 
-- [var interPupillaryDistance: Float](mdlstereoscopiccamera/interpupillarydistance.md)
+### Modeling Stereoscopic Imaging
+- [var interPupillaryDistance: Float](./interpupillarydistance.md)
   The distance, in millimeters, between the stereoscopic camera’s two viewpoints.
-- [var leftVergence: Float](mdlstereoscopiccamera/leftvergence.md)
+- [var leftVergence: Float](./leftvergence.md)
   The angle, in degrees, at which the camera’s left viewpoint faces toward a central focal point.
-- [var rightVergence: Float](mdlstereoscopiccamera/rightvergence.md)
+- [var rightVergence: Float](./rightvergence.md)
   The angle, in degrees, at which the camera’s right viewpoint faces toward a central focal point.
 
 

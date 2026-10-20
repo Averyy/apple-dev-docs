@@ -1,7 +1,8 @@
 # BNNSGraphCompileFromFile(_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Compiles a source mlmodelc file to a graph object.
 
@@ -20,13 +21,17 @@ Compiles a source mlmodelc file to a graph object.
 func BNNSGraphCompileFromFile(_ filename: UnsafePointer<CChar>, _ function: UnsafePointer<CChar>?, _ options: bnns_graph_compile_options_t) -> bnns_graph_t
 ```
 
+```c
+bnns_graph_t BNNSGraphCompileFromFile(const char *filename, const char *function, bnns_graph_compile_options_t options);
+```
+
 #### Return Value
 
-A compiled graph object. If the operation fails, the graph object’s [`data`](bnns_graph_t/data.md) property is `nil`.
+A compiled graph object. If the operation fails, the graph object’s [`data`](./bnns_graph_t/data.md) property is `nil`.
 
 #### Discussion
 
-Xcode automatically compiles a Core ML model package (files with an `.mlpackage` file extension) into an mlmodelc file. The following code compiles a [`bnns_graph_t`](bnns_graph_t.md) instance from a file named `myModel.mlpackage` that you copy into the project.
+Xcode automatically compiles a Core ML model package (files with an `.mlpackage` file extension) into an mlmodelc file. The following code compiles a [`bnns_graph_t`](./bnns_graph_t.md) instance from a file named `myModel.mlpackage` that you copy into the project.
 
 ```swift
 let options = BNNSGraphCompileOptionsMakeDefault()
@@ -57,9 +62,11 @@ if graph.size == 0 {
 
 ## See Also
 
-- [Updating a Model File to a Model Package](../coreml/updating-a-model-file-to-a-model-package.md)
+### Related Documentation
+- [Updating a Model File to a Model Package](../CoreML/updating-a-model-file-to-a-model-package.md)
   Convert a Core ML model file into a model package in Xcode.
-- [struct bnns_graph_t](bnns_graph_t.md)
+### Compiling a graph object
+- [struct bnns_graph_t](./bnns_graph_t.md)
   The compiled graph object.
 
 

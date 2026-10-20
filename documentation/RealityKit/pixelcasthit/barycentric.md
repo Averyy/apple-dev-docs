@@ -1,7 +1,8 @@
 # barycentric
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The barycentric coordinate of the primitive. See the discussion of [[barycentric_coord]] in Section “5.2.3.4 Fragment Function Input Attributes” of Metal Shading Language Specification
 

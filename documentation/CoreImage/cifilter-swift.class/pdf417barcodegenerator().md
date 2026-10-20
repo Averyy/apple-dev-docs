@@ -1,7 +1,8 @@
 # pdf417BarcodeGenerator()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Generates a high-density linear barcode.
 
@@ -19,6 +20,10 @@ Generates a high-density linear barcode.
 class func pdf417BarcodeGenerator() -> any CIFilter & CIPDF417BarcodeGenerator
 ```
 
+```objc
++ (CIFilter<CIPDF417BarcodeGenerator> *) PDF417BarcodeGenerator;
+```
+
 #### Return Value
 
 The generated image.
@@ -29,18 +34,18 @@ This method generates a PDF417 barcode as an image. PDF417 is a high-density sta
 
 The PDF417 barcode generator filter uses the following properties:
 
-- **`message`**: An [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object representing the data to be encoded as a barcode.
-- **`minWidth`**: A `float` representing the minimum width of the barcode’s data area, in pixels as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
-- **`maxWidth`**: A `float` representing the maximum width of the barcode’s data area, in pixels, as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
-- **`maxHeight`**: A `float` representing the maximum height of the barcode’s data area, in pixels, as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
-- **`minHeight`**: A `float` representing the minimum height of the barcode’s data area, in pixels, as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
-- **`dataColums`**: A `float` representing the number of columns in the data area as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
-- **`rows`**: A `float` representing the number of rows in the data area as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
-- **`preferredAspectRatio`**: A `float` representing the desired aspect ratio as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
-- **`compactionMode`**: An option that determines which method the generator uses to compress data as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber). See the note below for the possible values.
-- **`compactStyle`**: A `Boolean` value of `0` or `1` that determines the omission of redundant elements to make the generated barcode more compact as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`message`**: An [`NSData`](../../Foundation/nsdata.md) object representing the data to be encoded as a barcode.
+- **`minWidth`**: A `float` representing the minimum width of the barcode’s data area, in pixels as an [`NSNumber`](../../Foundation/nsnumber.md).
+- **`maxWidth`**: A `float` representing the maximum width of the barcode’s data area, in pixels, as an [`NSNumber`](../../Foundation/nsnumber.md).
+- **`maxHeight`**: A `float` representing the maximum height of the barcode’s data area, in pixels, as an [`NSNumber`](../../Foundation/nsnumber.md).
+- **`minHeight`**: A `float` representing the minimum height of the barcode’s data area, in pixels, as an [`NSNumber`](../../Foundation/nsnumber.md).
+- **`dataColums`**: A `float` representing the number of columns in the data area as an [`NSNumber`](../../Foundation/nsnumber.md).
+- **`rows`**: A `float` representing the number of rows in the data area as an [`NSNumber`](../../Foundation/nsnumber.md).
+- **`preferredAspectRatio`**: A `float` representing the desired aspect ratio as an [`NSNumber`](../../Foundation/nsnumber.md).
+- **`compactionMode`**: An option that determines which method the generator uses to compress data as an [`NSNumber`](../../Foundation/nsnumber.md). See the note below for the possible values.
+- **`compactStyle`**: A `Boolean` value of `0` or `1` that determines the omission of redundant elements to make the generated barcode more compact as an [`NSNumber`](../../Foundation/nsnumber.md).
 - **`correctionLevel`**: A `float` between 0 and 8 that determines the amount of redundancy to include in the barcode’s data to prevent errors when the barcode is read. If left unspecified, the generator chooses a correction level based on the size of the message data.
-- **`alwaysSpecifyCompaction`**: A `Boolean` value of `0` or `1` that determines the inclusion of information about the compaction mode in the barcode as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber). If a PDF417 barcode doesn’t contain compaction mode information, the reader assumes text-based compaction.
+- **`alwaysSpecifyCompaction`**: A `Boolean` value of `0` or `1` that determines the inclusion of information about the compaction mode in the barcode as an [`NSNumber`](../../Foundation/nsnumber.md). If a PDF417 barcode doesn’t contain compaction mode information, the reader assumes text-based compaction.
 
 The `compactionMode` property takes one of the following numeric values:
 
@@ -74,39 +79,40 @@ func pdf417Barcode(inputMessage: String) -> CIImage {
 }
 ```
 
-![An image of a black and white PDF417 barcode made of vertical lines of various widths and squares representing the encoded data of 47212826.](/images/com.apple.coreimage/media-3546316@2x.png)
+![An image of a black and white PDF417 barcode made of vertical lines of various widths and squares representing the encoded data of 47212826.](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-3546316@2x.png)
 
 ## See Also
 
-- [class func attributedTextImageGenerator() -> any CIFilter & CIAttributedTextImageGenerator](cifilter-swift.class/attributedtextimagegenerator.md)
+### Filters
+- [class func attributedTextImageGenerator() -> any CIFilter & CIAttributedTextImageGenerator](./attributedtextimagegenerator%28%29.md)
   Generates an attributed-text image.
-- [class func aztecCodeGenerator() -> any CIFilter & CIAztecCodeGenerator](cifilter-swift.class/azteccodegenerator.md)
+- [class func aztecCodeGenerator() -> any CIFilter & CIAztecCodeGenerator](./azteccodegenerator%28%29.md)
   Generates a low-density barcode.
-- [class func barcodeGenerator() -> any CIFilter & CIBarcodeGenerator](cifilter-swift.class/barcodegenerator.md)
+- [class func barcodeGenerator() -> any CIFilter & CIBarcodeGenerator](./barcodegenerator%28%29.md)
   Generates a barcode as an image from the descriptor.
-- [class func blurredRectangleGenerator() -> any CIFilter & CIBlurredRectangleGenerator](cifilter-swift.class/blurredrectanglegenerator.md)
+- [class func blurredRectangleGenerator() -> any CIFilter & CIBlurredRectangleGenerator](./blurredrectanglegenerator%28%29.md)
   Generates a blurred rectangle.
-- [class func checkerboardGenerator() -> any CIFilter & CICheckerboardGenerator](cifilter-swift.class/checkerboardgenerator.md)
+- [class func checkerboardGenerator() -> any CIFilter & CICheckerboardGenerator](./checkerboardgenerator%28%29.md)
   Generates a checkerboard image.
-- [class func code128BarcodeGenerator() -> any CIFilter & CICode128BarcodeGenerator](cifilter-swift.class/code128barcodegenerator.md)
+- [class func code128BarcodeGenerator() -> any CIFilter & CICode128BarcodeGenerator](./code128barcodegenerator%28%29.md)
   Generates a high-density, linear barcode.
-- [class func lenticularHaloGenerator() -> any CIFilter & CILenticularHaloGenerator](cifilter-swift.class/lenticularhalogenerator.md)
+- [class func lenticularHaloGenerator() -> any CIFilter & CILenticularHaloGenerator](./lenticularhalogenerator%28%29.md)
   Generates a lenticular halo image.
-- [class func meshGenerator() -> any CIFilter & CIMeshGenerator](cifilter-swift.class/meshgenerator.md)
+- [class func meshGenerator() -> any CIFilter & CIMeshGenerator](./meshgenerator%28%29.md)
   Generates a pattern made from an array of line segments.
-- [class func qrCodeGenerator() -> any CIFilter & CIQRCodeGenerator](cifilter-swift.class/qrcodegenerator.md)
+- [class func qrCodeGenerator() -> any CIFilter & CIQRCodeGenerator](./qrcodegenerator%28%29.md)
   Generates a quick response (QR) code image.
-- [class func randomGenerator() -> any CIFilter & CIRandomGenerator](cifilter-swift.class/randomgenerator.md)
+- [class func randomGenerator() -> any CIFilter & CIRandomGenerator](./randomgenerator%28%29.md)
   Generates a random filter image.
-- [class func roundedRectangleGenerator() -> any CIFilter & CIRoundedRectangleGenerator](cifilter-swift.class/roundedrectanglegenerator.md)
+- [class func roundedRectangleGenerator() -> any CIFilter & CIRoundedRectangleGenerator](./roundedrectanglegenerator%28%29.md)
   Generates a rounded rectangle image.
-- [class func roundedRectangleStrokeGenerator() -> any CIFilter & CIRoundedRectangleStrokeGenerator](cifilter-swift.class/roundedrectanglestrokegenerator.md)
+- [class func roundedRectangleStrokeGenerator() -> any CIFilter & CIRoundedRectangleStrokeGenerator](./roundedrectanglestrokegenerator%28%29.md)
   Creates an image containing the outline of a rounded rectangle.
-- [class func starShineGenerator() -> any CIFilter & CIStarShineGenerator](cifilter-swift.class/starshinegenerator.md)
+- [class func starShineGenerator() -> any CIFilter & CIStarShineGenerator](./starshinegenerator%28%29.md)
   Generates a star-shine image.
-- [class func stripesGenerator() -> any CIFilter & CIStripesGenerator](cifilter-swift.class/stripesgenerator.md)
+- [class func stripesGenerator() -> any CIFilter & CIStripesGenerator](./stripesgenerator%28%29.md)
   Generates a line of stripes as an image
-- [class func sunbeamsGenerator() -> any CIFilter & CISunbeamsGenerator](cifilter-swift.class/sunbeamsgenerator.md)
+- [class func sunbeamsGenerator() -> any CIFilter & CISunbeamsGenerator](./sunbeamsgenerator%28%29.md)
   Generates an image resembling the sun.
 
 

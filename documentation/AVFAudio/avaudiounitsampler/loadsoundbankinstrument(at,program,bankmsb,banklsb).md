@@ -1,7 +1,8 @@
 # loadSoundBankInstrument(at:program:bankMSB:bankLSB:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads a specific instrument from the specified soundbank.
 
@@ -19,6 +20,10 @@ Loads a specific instrument from the specified soundbank.
 func loadSoundBankInstrument(at bankURL: URL, program: UInt8, bankMSB: UInt8, bankLSB: UInt8) throws
 ```
 
+```objc
+- (BOOL) loadSoundBankInstrumentAtURL:(NSURL *) bankURL program:(uint8_t) program bankMSB:(uint8_t) bankMSB bankLSB:(uint8_t) bankLSB error:(NSError **) outError;
+```
+
 #### Discussion
 
 > ❗ **Important**:  This method reads from the file and allocates memory. Don’t call it on a real-time thread.
@@ -32,9 +37,10 @@ func loadSoundBankInstrument(at bankURL: URL, program: UInt8, bankMSB: UInt8, ba
 
 ## See Also
 
-- [func loadInstrument(at: URL) throws](avaudiounitsampler/loadinstrument(at:).md)
+### Configuring the sampler Audio Unit
+- [func loadInstrument(at: URL) throws](./loadinstrument%28at%29.md)
   Configures the sampler with the specified instrument file.
-- [func loadAudioFiles(at: [URL]) throws](avaudiounitsampler/loadaudiofiles(at:).md)
+- [func loadAudioFiles(at: [URL]) throws](./loadaudiofiles%28at%29.md)
   Configures the sampler by loading the specified audio files.
 
 

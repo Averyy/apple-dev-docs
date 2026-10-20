@@ -1,7 +1,8 @@
 # playbackController
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio playback controller that triggered the event.
 
@@ -11,7 +12,7 @@ The audio playback controller that triggered the event.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

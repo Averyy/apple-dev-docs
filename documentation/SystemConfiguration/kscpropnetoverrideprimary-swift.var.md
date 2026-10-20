@@ -1,7 +1,8 @@
 # kSCPropNetOverridePrimary
 
 **Framework**: System Configuration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The Network key `OverridePrimary`, whose value is of type `CFNumber` and is equal to `0` or `1`.
 
@@ -14,11 +15,16 @@ The Network key `OverridePrimary`, whose value is of type `CFNumber` and is equa
 let kSCPropNetOverridePrimary: CFString
 ```
 
+```c
+extern CFStringRef const kSCPropNetOverridePrimary;
+```
+
 ## See Also
 
-- [let kSCPropNetServiceOrder: CFString](kscpropnetserviceorder-swift.var.md)
+### Constants
+- [let kSCPropNetServiceOrder: CFString](./kscpropnetserviceorder-swift.var.md)
   The Network key `ServiceOrder`, whose value is of type `CFArray`, containing elements of type `CFString`.
-- [let kSCPropNetPPPOverridePrimary: CFString](kscpropnetpppoverrideprimary-swift.var.md)
+- [let kSCPropNetPPPOverridePrimary: CFString](./kscpropnetpppoverrideprimary-swift.var.md)
   The Network key `PPPOverridePrimary`, whose value is of type `CFNumber` and is equal to `0` or `1`.
 
 

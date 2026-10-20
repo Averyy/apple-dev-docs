@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Speech  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+

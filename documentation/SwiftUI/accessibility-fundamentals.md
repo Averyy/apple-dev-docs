@@ -1,6 +1,7 @@
 # Accessibility fundamentals
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: API Collection
 
 Make your SwiftUI apps accessible to everyone, including people with disabilities.
 
@@ -8,53 +9,54 @@ Make your SwiftUI apps accessible to everyone, including people with disabilitie
 
 Like all Apple UI frameworks, SwiftUI comes with built-in accessibility support. The framework introspects common elements like navigation views, lists, text fields, sliders, buttons, and so on, and provides basic accessibility labels and values by default. You don’t have to do any extra work to enable these standard accessibility features.
 
-![None](/images/com.apple.SwiftUI/accessibility-fundamentals-hero@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/accessibility-fundamentals-hero@2x.png)
 
-SwiftUI also provides tools to help you enhance the accessibility of your app. To find out what enhancements you need, try using your app with accessibility features like VoiceOver, Voice Control, and Switch Control, or get feedback from users of your app that regularly use these features. Then use the accessibility view modifiers that SwiftUI provides to improve the experience. For example, you can explicitly add accessibility labels to elements in your UI using the [`accessibilityLabel(_:)`](view/accessibilitylabel(_:).md) or the [`accessibilityValue(_:)`](view/accessibilityvalue(_:).md) view modifier.
+SwiftUI also provides tools to help you enhance the accessibility of your app. To find out what enhancements you need, try using your app with accessibility features like VoiceOver, Voice Control, and Switch Control, or get feedback from users of your app that regularly use these features. Then use the accessibility view modifiers that SwiftUI provides to improve the experience. For example, you can explicitly add accessibility labels to elements in your UI using the [`accessibilityLabel(_:)`](./view/accessibilitylabel%28_%29.md) or the [`accessibilityValue(_:)`](./view/accessibilityvalue%28_%29.md) view modifier.
 
-Customize your use of accessibility modifiers for all the platforms that your app runs on. For example, you may need to adjust the accessibility elements for a companion Apple Watch app that shares a common code base with an iOS app. If you integrate AppKit or UIKit controls in SwiftUI, expose any accessibility labels and make them accessible from your [`NSViewRepresentable`](nsviewrepresentable.md) or [`UIViewRepresentable`](uiviewrepresentable.md) views, or provide custom accessibility information if the underlying accessibility labels aren’t available.
+Customize your use of accessibility modifiers for all the platforms that your app runs on. For example, you may need to adjust the accessibility elements for a companion Apple Watch app that shares a common code base with an iOS app. If you integrate AppKit or UIKit controls in SwiftUI, expose any accessibility labels and make them accessible from your [`NSViewRepresentable`](./nsviewrepresentable.md) or [`UIViewRepresentable`](./uiviewrepresentable.md) views, or provide custom accessibility information if the underlying accessibility labels aren’t available.
 
-For design guidance, see [`Accessibility`](https://developer.apple.com/design/human-interface-guidelines/accessibility) in the Human Interface Guidelines.
+For design guidance, see [Accessibility](https://developer.apple.com/design/human-interface-guidelines/accessibility) in the Human Interface Guidelines.
 
 ## Topics
 
 ### Essentials
-- [Creating accessible views](creating-accessible-views.md)
+- [Creating accessible views](./creating-accessible-views.md)
   Make your app accessible to everyone by applying accessibility modifiers to your SwiftUI views.
 ### Creating accessible elements
-- [func accessibilityElement(children: AccessibilityChildBehavior) -> some View](view/accessibilityelement(children:).md)
-  Creates a new accessibility element, or modifies the [`AccessibilityChildBehavior`](accessibilitychildbehavior.md) of the existing accessibility element.
-- [func accessibilityChildren<V>(children: () -> V) -> some View](view/accessibilitychildren(children:).md)
+- [func accessibilityElement(children: AccessibilityChildBehavior) -> some View](./view/accessibilityelement%28children%29.md)
+  Creates a new accessibility element, or modifies the [`AccessibilityChildBehavior`](./accessibilitychildbehavior.md) of the existing accessibility element.
+- [func accessibilityChildren<V>(children: () -> V) -> some View](./view/accessibilitychildren%28children%29.md)
   Replaces the existing accessibility element’s children with one or more new synthetic accessibility elements.
-- [func accessibilityRepresentation<V>(representation: () -> V) -> some View](view/accessibilityrepresentation(representation:).md)
+- [func accessibilityRepresentation<V>(representation: () -> V) -> some View](./view/accessibilityrepresentation%28representation%29.md)
   Replaces one or more accessibility elements for this view with new accessibility elements.
-- [struct AccessibilityChildBehavior](accessibilitychildbehavior.md)
+- [struct AccessibilityChildBehavior](./accessibilitychildbehavior.md)
   Defines the behavior for the child elements of the new parent element.
 ### Identifying elements
-- [func accessibilityIdentifier(String) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityidentifier(_:).md)
+- [func accessibilityIdentifier(String) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./view/accessibilityidentifier%28_%29.md)
   Uses the string you specify to identify the view.
-- [func accessibilityIdentifier(String, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityidentifier(_:isenabled:).md)
+- [func accessibilityIdentifier(String, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./view/accessibilityidentifier%28_,isenabled%29.md)
   Uses the string you specify to identify the view.
 ### Hiding elements
-- [func accessibilityHidden(Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityhidden(_:).md)
+- [func accessibilityHidden(Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./view/accessibilityhidden%28_%29.md)
   Specifies whether to hide this view from system accessibility features.
-- [func accessibilityHidden(Bool, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityhidden(_:isenabled:).md)
+- [func accessibilityHidden(Bool, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./view/accessibilityhidden%28_,isenabled%29.md)
   Specifies whether to hide this view from system accessibility features.
 ### Supporting types
-- [struct AccessibilityTechnologies](accessibilitytechnologies.md)
+- [struct AccessibilityTechnologies](./accessibilitytechnologies.md)
   Accessibility technologies available to the system.
-- [struct AccessibilityAttachmentModifier](accessibilityattachmentmodifier.md)
+- [struct AccessibilityAttachmentModifier](./accessibilityattachmentmodifier.md)
   A view modifier that adds accessibility properties to the view
 
 ## See Also
 
-- [Accessible appearance](accessible-appearance.md)
+### Accessibility
+- [Accessible appearance](./accessible-appearance.md)
   Enhance the legibility of content in your app’s interface.
-- [Accessible controls](accessible-controls.md)
+- [Accessible controls](./accessible-controls.md)
   Improve access to actions that your app can undertake.
-- [Accessible descriptions](accessible-descriptions.md)
+- [Accessible descriptions](./accessible-descriptions.md)
   Describe interface elements to help people understand what they represent.
-- [Accessible navigation](accessible-navigation.md)
+- [Accessible navigation](./accessible-navigation.md)
   Enable users to navigate to specific user interface elements using rotors.
 
 

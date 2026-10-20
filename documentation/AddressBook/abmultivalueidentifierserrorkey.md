@@ -1,9 +1,10 @@
 # ABMultiValueIdentifiersErrorKey
 
 **Framework**: Address Book  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-Key used with [`ABPropertyValueValidationError`](abpropertyvaluevalidationerror.md).
+Key used with [`ABPropertyValueValidationError`](./abpropertyvaluevalidationerror.md).
 
 **Availability**:
 - macOS 10.7+
@@ -12,6 +13,10 @@ Key used with [`ABPropertyValueValidationError`](abpropertyvaluevalidationerror.
 
 ```swift
 let ABMultiValueIdentifiersErrorKey: String
+```
+
+```c
+extern NSString * ABMultiValueIdentifiersErrorKey;
 ```
 
 #### Discussion

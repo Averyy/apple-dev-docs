@@ -1,7 +1,8 @@
 # vDSP.DiscreteFourierTransform
 
 **Framework**: Accelerate  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides forward and inverse discrete Fourier transforms on single- or double-precision collections of interleaved or split-complex data.
 
@@ -11,7 +12,7 @@ An object that provides forward and inverse discrete Fourier transforms on singl
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -22,9 +23,9 @@ class DiscreteFourierTransform<T> where T : vDSP_DiscreteFourierTransformable
 
 #### Overview
 
-Use a [`vDSP.DiscreteFourierTransform`](vdsp/discretefouriertransform.md) to perform discrete Fourier transforms (DFTs) on split-complex or interleaved data. To learn more about working with split-complex and interleaved data, see [`Performing Fourier transforms on interleaved-complex data`](performing-fourier-transforms-on-interleaved-complex-data.md).
+Use a [`vDSP.DiscreteFourierTransform`](./discretefouriertransform.md) to perform discrete Fourier transforms (DFTs) on split-complex or interleaved data. To learn more about working with split-complex and interleaved data, see [Performing Fourier transforms on interleaved-complex data](../performing-fourier-transforms-on-interleaved-complex-data.md).
 
-To create a [`vDSP.DiscreteFourierTransform`](vdsp/discretefouriertransform.md) instance to work with interleaved data, pass either [`DSPComplex`](dspcomplex.md) or [`DSPDoubleComplex`](dspdoublecomplex.md) to [`init(previous:count:direction:transformType:ofType:)`](vdsp/discretefouriertransform/init(previous:count:direction:transformtype:oftype:).md). The following code shows how to perform a forward complex-to-complex DFT on the interleaved single-precision values in the `interleavedInput` array:
+To create a [`vDSP.DiscreteFourierTransform`](./discretefouriertransform.md) instance to work with interleaved data, pass either [`DSPComplex`](../dspcomplex.md) or [`DSPDoubleComplex`](../dspdoublecomplex.md) to [`init(previous:count:direction:transformType:ofType:)`](./discretefouriertransform/init%28previous,count,direction,transformtype,oftype%29.md). The following code shows how to perform a forward complex-to-complex DFT on the interleaved single-precision values in the `interleavedInput` array:
 
 ```swift
 // The `interleavedInput` array contains `complexValuesCount` `DSPComplex` elements.
@@ -41,7 +42,7 @@ let interleavedDFT = try? vDSP.DiscreteFourierTransform(previous: nil,
 let interleavedOutput = interleavedDFT?.transform(input: interleavedInput)
 ```
 
-To create a [`vDSP.DiscreteFourierTransform`](vdsp/discretefouriertransform.md) instance to work with split-complex data, pass either [`Float`](https://developer.apple.com/documentation/swift/float) or [`Double`](https://developer.apple.com/documentation/swift/double) to [`init(previous:count:direction:transformType:ofType:)`](vdsp/discretefouriertransform/init(previous:count:direction:transformtype:oftype:).md). Split-complex data stores the real and imaginary parts of each complex value in separate arrays. The following code shows how to perform forward complex-to-complex DFT on the split-complex single-precision values in the `splitComplexRealInput` and `splitComplexImaginaryInput` arrays:
+To create a [`vDSP.DiscreteFourierTransform`](./discretefouriertransform.md) instance to work with split-complex data, pass either [`Float`](../../Swift/float.md) or [`Double`](../../Swift/double.md) to [`init(previous:count:direction:transformType:ofType:)`](./discretefouriertransform/init%28previous,count,direction,transformtype,oftype%29.md). Split-complex data stores the real and imaginary parts of each complex value in separate arrays. The following code shows how to perform forward complex-to-complex DFT on the split-complex single-precision values in the `splitComplexRealInput` and `splitComplexImaginaryInput` arrays:
 
 ```swift
 var splitComplexRealInput: [Float] = [ ... ]
@@ -71,35 +72,36 @@ interleavedOutput[i].imag ≈ splitComplexOutput.imaginary[i]
 ## Topics
 
 ### Creating a Discrete Fourier Transform Instance
-- [init(previous: vDSP.DiscreteFourierTransform<Float>?, count: Int, direction: vDSP.FourierTransformDirection, transformType: vDSP.DFTTransformType, ofType: T.Type) throws](vdsp/discretefouriertransform/init(previous:count:direction:transformtype:oftype:).md)
+- [init(previous: vDSP.DiscreteFourierTransform<Float>?, count: Int, direction: vDSP.FourierTransformDirection, transformType: vDSP.DFTTransformType, ofType: T.Type) throws](./discretefouriertransform/init%28previous,count,direction,transformtype,oftype%29.md)
   Returns a new discrete Fourier transform instance.
 ### Performing Split-Complex Discrete Fourier Transforms
-- [func transform<U>(real: U, imaginary: U) -> (real: [Float], imaginary: [Float])](vdsp/discretefouriertransform/transform(real:imaginary:)-4nwy9.md)
+- [func transform<U>(real: U, imaginary: U) -> (real: [Float], imaginary: [Float])](./discretefouriertransform/transform%28real,imaginary%29-4nwy9.md)
   Returns the result of a single-precision discrete Fourier transform.
-- [func transform<U>(real: U, imaginary: U) -> (real: [Double], imaginary: [Double])](vdsp/discretefouriertransform/transform(real:imaginary:)-82jag.md)
+- [func transform<U>(real: U, imaginary: U) -> (real: [Double], imaginary: [Double])](./discretefouriertransform/transform%28real,imaginary%29-82jag.md)
   Returns the result of a double-precision discrete Fourier transform.
-- [func transform<U, V>(inputReal: U, inputImaginary: U, outputReal: inout V, outputImaginary: inout V)](vdsp/discretefouriertransform/transform(inputreal:inputimaginary:outputreal:outputimaginary:)-sihh.md)
+- [func transform<U, V>(inputReal: U, inputImaginary: U, outputReal: inout V, outputImaginary: inout V)](./discretefouriertransform/transform%28inputreal,inputimaginary,outputreal,outputimaginary%29-sihh.md)
   Computes a single-precision discrete Fourier transform.
-- [func transform<U, V>(inputReal: U, inputImaginary: U, outputReal: inout V, outputImaginary: inout V)](vdsp/discretefouriertransform/transform(inputreal:inputimaginary:outputreal:outputimaginary:)-7115x.md)
+- [func transform<U, V>(inputReal: U, inputImaginary: U, outputReal: inout V, outputImaginary: inout V)](./discretefouriertransform/transform%28inputreal,inputimaginary,outputreal,outputimaginary%29-7115x.md)
   Computes a double-precision discrete Fourier transform.
 ### Performing Interleaved Discrete Fourier Transforms
-- [func transform<U>(input: U) -> [DSPComplex]](vdsp/discretefouriertransform/transform(input:)-92b3l.md)
+- [func transform<U>(input: U) -> [DSPComplex]](./discretefouriertransform/transform%28input%29-92b3l.md)
   Returns the result of a single-precision discrete Fourier transform.
-- [func transform<U>(input: U) -> [DSPDoubleComplex]](vdsp/discretefouriertransform/transform(input:)-5si4h.md)
+- [func transform<U>(input: U) -> [DSPDoubleComplex]](./discretefouriertransform/transform%28input%29-5si4h.md)
   Returns the result of a double-precision discrete Fourier transform.
-- [func transform<U, V>(input: U, output: inout V)](vdsp/discretefouriertransform/transform(input:output:)-1k3hd.md)
+- [func transform<U, V>(input: U, output: inout V)](./discretefouriertransform/transform%28input,output%29-1k3hd.md)
   Computes a single-precision discrete Fourier transform.
-- [func transform<U, V>(input: U, output: inout V)](vdsp/discretefouriertransform/transform(input:output:)-1tsod.md)
+- [func transform<U, V>(input: U, output: inout V)](./discretefouriertransform/transform%28input,output%29-1tsod.md)
   Computes a double-precision discrete Fourier transform.
 ### Initializers
-- [init(previousDFT: vDSP.DiscreteFourierTransform<T>?, count: Int, direction: vDSP.FourierTransformDirection, transformType: vDSP.DFTTransformType, ofType: T.Type) throws](vdsp/discretefouriertransform/init(previousdft:count:direction:transformtype:oftype:).md)
+- [init(previousDFT: vDSP.DiscreteFourierTransform<T>?, count: Int, direction: vDSP.FourierTransformDirection, transformType: vDSP.DFTTransformType, ofType: T.Type) throws](./discretefouriertransform/init%28previousdft,count,direction,transformtype,oftype%29.md)
   Initializes a new discrete Fourier transform structure.
 
 ## See Also
 
-- [vDSP.DFTTransformType](vdsp/dfttransformtype.md)
+### Objects that simplify discrete Fourier transforms
+- [vDSP.DFTTransformType](./dfttransformtype.md)
   Discrete Fourier transform types.
-- [class DFT](vdsp/dft.md)
+- [class DFT](./dft.md)
   A single- and double-precision discrete Fourier transform.
 
 

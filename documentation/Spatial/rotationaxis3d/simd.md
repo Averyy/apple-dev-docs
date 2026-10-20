@@ -1,7 +1,8 @@
 # simd
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A simd three-element vector that contains the x-, y-, and z-coordinate values.
 
@@ -11,7 +12,7 @@ A simd three-element vector that contains the x-, y-, and z-coordinate values.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

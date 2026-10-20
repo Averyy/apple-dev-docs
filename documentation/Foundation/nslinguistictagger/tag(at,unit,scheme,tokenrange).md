@@ -1,23 +1,30 @@
 # tag(at:unit:scheme:tokenRange:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a tag for a single scheme, for a given linguistic unit, at the specified character position.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.1+
-- macOS 10.13+
-- tvOS 11.0+
-- visionOS 1.0+
-- watchOS 4.0+
+- iOS 11.0+ - Deprecated in 27.2
+- iPadOS 11.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.2
+- macOS 10.13+ - Deprecated in 27.2
+- tvOS 11.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 4.0+ - Deprecated in 27.2
+
+> **Deprecated**: All NSLinguisticTagger API should be replaced with NaturalLanguage.framework API
 
 ## Declaration
 
 ```swift
 func tag(at charIndex: Int, unit: NSLinguisticTaggerUnit, scheme: NSLinguisticTagScheme, tokenRange: NSRangePointer?) -> NSLinguisticTag?
+```
+
+```objc
+- (NSLinguisticTag) tagAtIndex:(NSUInteger) charIndex unit:(NSLinguisticTaggerUnit) unit scheme:(NSLinguisticTagScheme) scheme tokenRange:(NSRangePointer) tokenRange;
 ```
 
 #### Return Value
@@ -27,21 +34,22 @@ Returns the tag for the requested tag scheme and linguistic unit, or `nil`. If a
 ## Parameters
 
 - `charIndex`: The position of the initial character.
-- `unit`: The linguistic unit. See [`NSLinguisticTaggerUnit`](nslinguistictaggerunit.md) for possible values.
-- `scheme`: The tag scheme. See [`NSLinguisticTagScheme`](nslinguistictagscheme.md) for possible values.
+- `unit`: The linguistic unit. See [`NSLinguisticTaggerUnit`](../nslinguistictaggerunit.md) for possible values.
+- `scheme`: The tag scheme. See [`NSLinguisticTagScheme`](../nslinguistictagscheme.md) for possible values.
 - `tokenRange`: A pointer to the token range.
 
 ## See Also
 
-- [func tag(at: Int, scheme: NSLinguisticTagScheme, tokenRange: NSRangePointer?, sentenceRange: NSRangePointer?) -> NSLinguisticTag?](nslinguistictagger/tag(at:scheme:tokenrange:sentencerange:).md)
+### Getting Linguistic Tags
+- [func tag(at: Int, scheme: NSLinguisticTagScheme, tokenRange: NSRangePointer?, sentenceRange: NSRangePointer?) -> NSLinguisticTag?](./tag%28at,scheme,tokenrange,sentencerange%29.md)
   Returns a tag for a single scheme at the specified character position.
-- [class func tag(for: String, at: Int, unit: NSLinguisticTaggerUnit, scheme: NSLinguisticTagScheme, orthography: NSOrthography?, tokenRange: NSRangePointer?) -> NSLinguisticTag?](nslinguistictagger/tag(for:at:unit:scheme:orthography:tokenrange:).md)
+- [class func tag(for: String, at: Int, unit: NSLinguisticTaggerUnit, scheme: NSLinguisticTagScheme, orthography: NSOrthography?, tokenRange: NSRangePointer?) -> NSLinguisticTag?](./tag%28for,at,unit,scheme,orthography,tokenrange%29.md)
   Returns a tag for a single scheme, for a given linguistic unit, at the specified character position in a string.
-- [func tags(in: NSRange, unit: NSLinguisticTaggerUnit, scheme: NSLinguisticTagScheme, options: NSLinguisticTagger.Options, tokenRanges: AutoreleasingUnsafeMutablePointer<NSArray?>?) -> [NSLinguisticTag]](nslinguistictagger/tags(in:unit:scheme:options:tokenranges:).md)
+- [func tags(in: NSRange, unit: NSLinguisticTaggerUnit, scheme: NSLinguisticTagScheme, options: NSLinguisticTagger.Options, tokenRanges: AutoreleasingUnsafeMutablePointer<NSArray?>?) -> [NSLinguisticTag]](./tags%28in,unit,scheme,options,tokenranges%29.md)
   Returns an array of linguistic tags and token ranges for a given string range and linguistic unit.
-- [func tags(in: NSRange, scheme: String, options: NSLinguisticTagger.Options, tokenRanges: AutoreleasingUnsafeMutablePointer<NSArray?>?) -> [String]](nslinguistictagger/tags(in:scheme:options:tokenranges:).md)
+- [func tags(in: NSRange, scheme: String, options: NSLinguisticTagger.Options, tokenRanges: AutoreleasingUnsafeMutablePointer<NSArray?>?) -> [String]](./tags%28in,scheme,options,tokenranges%29.md)
   Returns an array of linguistic tags and token ranges for a given string range.
-- [class func tags(for: String, range: NSRange, unit: NSLinguisticTaggerUnit, scheme: NSLinguisticTagScheme, options: NSLinguisticTagger.Options, orthography: NSOrthography?, tokenRanges: AutoreleasingUnsafeMutablePointer<NSArray?>?) -> [NSLinguisticTag]](nslinguistictagger/tags(for:range:unit:scheme:options:orthography:tokenranges:).md)
+- [class func tags(for: String, range: NSRange, unit: NSLinguisticTaggerUnit, scheme: NSLinguisticTagScheme, options: NSLinguisticTagger.Options, orthography: NSOrthography?, tokenRanges: AutoreleasingUnsafeMutablePointer<NSArray?>?) -> [NSLinguisticTag]](./tags%28for,range,unit,scheme,options,orthography,tokenranges%29.md)
   Returns an array of linguistic tags and token ranges for a given string and linguistic unit.
 
 

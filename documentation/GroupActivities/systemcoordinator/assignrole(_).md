@@ -1,7 +1,8 @@
 # assignRole(_:)
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Assigns the given spatial template role to the local participant.
 
@@ -29,11 +30,14 @@ case .red:
 
 Note that assigning a given role does not guarantee that the participant will be placed in a *seat* with that role. If more participants are assigned a role than there are seats for that role, the participant may be placed in a non-roled seat instead. In most cases, your app should try to avoid allowing for that scenario.
 
-> ⚠️ **Warning**: You should only assign roles that exist in the current spatial template. This method will emit a runtime warning if the given role is not assigned to a seat in the current [`spatialTemplatePreference`](systemcoordinator/configuration-swift.struct/spatialtemplatepreference.md).
+> ⚠️ **Warning**: You should only assign roles that exist in the current spatial template.
+>
+> This method will emit a runtime warning if the given role is not assigned to a seat in the current [`spatialTemplatePreference`](./configuration-swift.struct/spatialtemplatepreference.md).
 
 ## See Also
 
-- [func resignRole()](systemcoordinator/resignrole.md)
+### Assigning the local participant role
+- [func resignRole()](./resignrole%28%29.md)
   Resigns the local participant from their current spatial template role.
 
 

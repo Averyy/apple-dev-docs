@@ -1,7 +1,8 @@
 # SubscriptionPriceInlineCreate.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a subscription price inline create resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a subscription price inline create resource.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionPriceInlineCreate.Attributes
 ```
 
@@ -22,7 +23,8 @@ object SubscriptionPriceInlineCreate.Attributes
 
 ## See Also
 
-- [object SubscriptionPriceInlineCreate.Relationships](subscriptionpriceinlinecreate/relationships-data.dictionary.md)
+### Objects
+- [object SubscriptionPriceInlineCreate.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

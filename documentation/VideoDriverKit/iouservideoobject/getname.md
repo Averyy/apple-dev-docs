@@ -1,7 +1,8 @@
 # GetName
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the name of the video object.
 
@@ -10,7 +11,7 @@ Gets the name of the video object.
 
 ## Declaration
 
-```swift
+```c
 OSSharedPtr<OSString> GetName();
 ```
 
@@ -24,7 +25,8 @@ The object’s work queue synchronizes access to the value.
 
 ## See Also
 
-- [SetName](iouservideoobject/setname.md)
+### Working with object names
+- [SetName](./setname.md)
   Sets the name of the video object.
 
 

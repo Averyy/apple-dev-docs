@@ -1,21 +1,22 @@
 # AppAssetLibraryRefDatum.Attributes.Features
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryRefDatum.Attributes.Features
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AppAssetLibraryRefDatum.Attributes.Features.PlacementPolicies](appassetlibraryrefdatum/attributes-data.dictionary/features-data.dictionary/placementpolicies-data.dictionary.md)
+- [object AppAssetLibraryRefDatum.Attributes.Features.PlacementPolicies](./features-data.dictionary/placementpolicies-data.dictionary.md)
 
 ## Properties
 

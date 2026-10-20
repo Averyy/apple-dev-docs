@@ -1,7 +1,8 @@
 # init(app:)
 
 **Framework**: ManagedAppDistribution  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a managed app view from a managed app.
 

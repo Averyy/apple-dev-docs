@@ -1,7 +1,8 @@
 # UnitElectricPotentialDifference
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A unit of measure for electric potential difference.
 
@@ -20,65 +21,70 @@ A unit of measure for electric potential difference.
 class UnitElectricPotentialDifference
 ```
 
+```objc
+@interface NSUnitElectricPotentialDifference : NSDimension
+```
+
 #### Overview
 
-You typically use instances of [`UnitElectricPotentialDifference`](unitelectricpotentialdifference.md) to represent specific quantities of electric potential difference using the [`NSMeasurement`](nsmeasurement.md) class.
+You typically use instances of [`UnitElectricPotentialDifference`](./unitelectricpotentialdifference.md) to represent specific quantities of electric potential difference using the [`NSMeasurement`](./nsmeasurement.md) class.
 
 ##### Electric Potential Difference
 
 Electric potential difference is the amount of electric potential energy of a point charge at a point in space. The SI unit for electric potential difference is the volt (V), which is derived as the difference in electric potential energy between two points of a linear conductor when an electric current of one ampere dissipates one watt of power between those points (1V = 1W/1A).
 
-The [`UnitElectricPotentialDifference`](unitelectricpotentialdifference.md) class defines its [`baseUnit()`](dimension/baseunit().md) as [`volts`](unitelectricpotentialdifference/volts.md), and provides the following units, which are initialized using [`UnitConverterLinear`](unitconverterlinear.md) converters with the specified coefficients:
+The [`UnitElectricPotentialDifference`](./unitelectricpotentialdifference.md) class defines its [`baseUnit()`](./dimension/baseunit%28%29.md) as [`volts`](./unitelectricpotentialdifference/volts.md), and provides the following units, which are initialized using [`UnitConverterLinear`](./unitconverterlinear.md) converters with the specified coefficients:
 
 | Name | Method | Symbol | Coefficient |
 | --- | --- | --- | --- |
-| Megavolts | [`megavolts`](unitelectricpotentialdifference/megavolts.md) | MV | `1000000.0` |
-| Kilovolts | [`kilovolts`](unitelectricpotentialdifference/kilovolts.md) | kV | `1000.0` |
-| Volts | [`volts`](unitelectricpotentialdifference/volts.md) | V | `1.0` |
-| Millivolts | [`millivolts`](unitelectricpotentialdifference/millivolts.md) | mV | `0.001` |
-| Microvolts | [`microvolts`](unitelectricpotentialdifference/microvolts.md) | µV | `0.000001` |
+| Megavolts | [`megavolts`](./unitelectricpotentialdifference/megavolts.md) | MV | `1000000.0` |
+| Kilovolts | [`kilovolts`](./unitelectricpotentialdifference/kilovolts.md) | kV | `1000.0` |
+| Volts | [`volts`](./unitelectricpotentialdifference/volts.md) | V | `1.0` |
+| Millivolts | [`millivolts`](./unitelectricpotentialdifference/millivolts.md) | mV | `0.001` |
+| Microvolts | [`microvolts`](./unitelectricpotentialdifference/microvolts.md) | µV | `0.000001` |
 
 ## Topics
 
 ### Accessing the Base Unit
-- [class func baseUnit() -> Self](dimension/baseunit.md)
+- [class func baseUnit() -> Self](./dimension/baseunit%28%29.md)
   Returns the base unit.
 ### Accessing Predefined Units
-- [class var megavolts: UnitElectricPotentialDifference](unitelectricpotentialdifference/megavolts.md)
+- [class var megavolts: UnitElectricPotentialDifference](./unitelectricpotentialdifference/megavolts.md)
   The megavolts unit of electric potential difference.
-- [class var kilovolts: UnitElectricPotentialDifference](unitelectricpotentialdifference/kilovolts.md)
+- [class var kilovolts: UnitElectricPotentialDifference](./unitelectricpotentialdifference/kilovolts.md)
   The kilovolts unit of electric potential difference.
-- [class var volts: UnitElectricPotentialDifference](unitelectricpotentialdifference/volts.md)
+- [class var volts: UnitElectricPotentialDifference](./unitelectricpotentialdifference/volts.md)
   The volts unit of electric potential difference.
-- [class var millivolts: UnitElectricPotentialDifference](unitelectricpotentialdifference/millivolts.md)
+- [class var millivolts: UnitElectricPotentialDifference](./unitelectricpotentialdifference/millivolts.md)
   The millivolts unit of electric potential difference.
-- [class var microvolts: UnitElectricPotentialDifference](unitelectricpotentialdifference/microvolts.md)
+- [class var microvolts: UnitElectricPotentialDifference](./unitelectricpotentialdifference/microvolts.md)
   The microvolts unit of electric potential difference.
 
 ## Relationships
 
 ### Inherits From
-- [Dimension](dimension.md)
+- [Dimension](./dimension.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UnitElectricCharge](unitelectriccharge.md)
+### Electricity
+- [class UnitElectricCharge](./unitelectriccharge.md)
   A unit of measure for electric charge.
-- [class UnitElectricCurrent](unitelectriccurrent.md)
+- [class UnitElectricCurrent](./unitelectriccurrent.md)
   A unit of measure for electric current.
-- [class UnitElectricResistance](unitelectricresistance.md)
+- [class UnitElectricResistance](./unitelectricresistance.md)
   A unit of measure for electric resistance.
 
 

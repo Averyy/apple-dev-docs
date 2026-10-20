@@ -1,7 +1,8 @@
 # init(addPassButtonStyle:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new Add Pass button.
 
@@ -17,13 +18,17 @@ Initializes a new Add Pass button.
 init(addPassButtonStyle style: PKAddPassButtonStyle)
 ```
 
+```objc
+- (instancetype) initWithAddPassButtonStyle:(PKAddPassButtonStyle) style;
+```
+
 #### Return Value
 
-Returns a [`PKAddPassButton`](pkaddpassbutton.md) instance with the specified style.
+Returns a [`PKAddPassButton`](../pkaddpassbutton.md) instance with the specified style.
 
 ## Parameters
 
-- `style`: The button’s style. For a complete list of styles, see [`PKAddPassButtonStyle`](pkaddpassbuttonstyle.md).
+- `style`: The button’s style. For a complete list of styles, see [`PKAddPassButtonStyle`](../pkaddpassbuttonstyle.md).
 
 
 ---

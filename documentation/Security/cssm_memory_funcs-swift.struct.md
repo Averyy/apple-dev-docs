@@ -1,7 +1,8 @@
 # cssm_memory_funcs
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,22 +14,26 @@
 struct cssm_memory_funcs
 ```
 
+```c
+struct cssm_memory_funcs;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cssm_memory_funcs-swift.struct/init.md)
-- [init(malloc_func: CSSM_MALLOC!, free_func: CSSM_FREE!, realloc_func: CSSM_REALLOC!, calloc_func: CSSM_CALLOC!, AllocRef: UnsafeMutableRawPointer!)](cssm_memory_funcs-swift.struct/init(malloc_func:free_func:realloc_func:calloc_func:allocref:).md)
+- [init()](./cssm_memory_funcs-swift.struct/init%28%29.md)
+- [init(malloc_func: CSSM_MALLOC!, free_func: CSSM_FREE!, realloc_func: CSSM_REALLOC!, calloc_func: CSSM_CALLOC!, AllocRef: UnsafeMutableRawPointer!)](./cssm_memory_funcs-swift.struct/init%28malloc_func,free_func,realloc_func,calloc_func,allocref%29.md)
 ### Instance Properties
-- [var AllocRef: UnsafeMutableRawPointer!](cssm_memory_funcs-swift.struct/allocref.md)
-- [var calloc_func: CSSM_CALLOC!](cssm_memory_funcs-swift.struct/calloc_func.md)
-- [var free_func: CSSM_FREE!](cssm_memory_funcs-swift.struct/free_func.md)
-- [var malloc_func: CSSM_MALLOC!](cssm_memory_funcs-swift.struct/malloc_func.md)
-- [var realloc_func: CSSM_REALLOC!](cssm_memory_funcs-swift.struct/realloc_func.md)
+- [var AllocRef: UnsafeMutableRawPointer!](./cssm_memory_funcs-swift.struct/allocref.md)
+- [var calloc_func: CSSM_CALLOC!](./cssm_memory_funcs-swift.struct/calloc_func.md)
+- [var free_func: CSSM_FREE!](./cssm_memory_funcs-swift.struct/free_func.md)
+- [var malloc_func: CSSM_MALLOC!](./cssm_memory_funcs-swift.struct/malloc_func.md)
+- [var realloc_func: CSSM_REALLOC!](./cssm_memory_funcs-swift.struct/realloc_func.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 
 ---

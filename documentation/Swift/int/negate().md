@@ -1,7 +1,8 @@
 # negate()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces this value with its additive inverse.
 
@@ -40,11 +41,12 @@ y.negate()
 
 ## See Also
 
-- [Integer Operators](integer-operators.md)
+### Performing Calculations
+- [Integer Operators](../integer-operators.md)
   Perform arithmetic and bitwise operations or compare values.
-- [func quotientAndRemainder(dividingBy: Self) -> (quotient: Self, remainder: Self)](int/quotientandremainder(dividingby:).md)
+- [func quotientAndRemainder(dividingBy: Self) -> (quotient: Self, remainder: Self)](./quotientandremainder%28dividingby%29.md)
   Returns the quotient and remainder of this value divided by the given value.
-- [func isMultiple(of: Self) -> Bool](int/ismultiple(of:).md)
+- [func isMultiple(of: Self) -> Bool](./ismultiple%28of%29.md)
   Returns `true` if this value is a multiple of the given value, and `false` otherwise.
 
 

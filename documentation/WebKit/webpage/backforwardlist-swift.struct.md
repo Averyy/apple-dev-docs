@@ -1,7 +1,8 @@
 # WebPage.BackForwardList
 
 **Framework**: WebKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An observable representation of a webpage’s previously loaded resources.
 
@@ -54,7 +55,7 @@ private struct BackForwardMenuView: View {
 }
 ```
 
-The view can then be used for both the back and forward list using a specific [`WebPage`](webpage.md):
+The view can then be used for both the back and forward list using a specific [`WebPage`](../webpage.md):
 
 ```swift
 struct ContentView: some View {
@@ -83,38 +84,39 @@ struct ContentView: some View {
 }
 ```
 
-Because [`backForwardList`](webpage/backforwardlist-swift.property.md) is an observable property, the states of these buttons are automatically updated.
+Because [`backForwardList`](./backforwardlist-swift.property.md) is an observable property, the states of these buttons are automatically updated.
 
 ## Topics
 
 ### Structures
-- [WebPage.BackForwardList.Item](webpage/backforwardlist-swift.struct/item.md)
+- [WebPage.BackForwardList.Item](./backforwardlist-swift.struct/item.md)
   A representation of a resource that a webpage previously visited.
 ### Instance Properties
-- [var backList: [WebPage.BackForwardList.Item]](webpage/backforwardlist-swift.struct/backlist.md)
+- [var backList: [WebPage.BackForwardList.Item]](./backforwardlist-swift.struct/backlist.md)
   The array of items that precede the current item.
-- [var currentItem: WebPage.BackForwardList.Item?](webpage/backforwardlist-swift.struct/currentitem.md)
+- [var currentItem: WebPage.BackForwardList.Item?](./backforwardlist-swift.struct/currentitem.md)
   The current item.
-- [var forwardList: [WebPage.BackForwardList.Item]](webpage/backforwardlist-swift.struct/forwardlist.md)
+- [var forwardList: [WebPage.BackForwardList.Item]](./backforwardlist-swift.struct/forwardlist.md)
   The array of items that follow the current item.
 ### Subscripts
-- [subscript(Int) -> WebPage.BackForwardList.Item?](webpage/backforwardlist-swift.struct/subscript(_:).md)
+- [subscript(Int) -> WebPage.BackForwardList.Item?](./backforwardlist-swift.struct/subscript%28_%29.md)
   Accesses the item at the relative offset from the current item.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [WebPage.NavigationEvent](webpage/navigationevent.md)
+### Observing navigation between webpages
+- [WebPage.NavigationEvent](./navigationevent.md)
   A particular state that occurs during the progression of a navigation.
-- [WebPage.BackForwardList.Item](webpage/backforwardlist-swift.struct/item.md)
+- [WebPage.BackForwardList.Item](./backforwardlist-swift.struct/item.md)
   A representation of a resource that a webpage previously visited.
-- [WebPage.BackForwardList.Item.ID](webpage/backforwardlist-swift.struct/item/id-swift.struct.md)
+- [WebPage.BackForwardList.Item.ID](./backforwardlist-swift.struct/item/id-swift.struct.md)
   An opaque type representing the identifier for an item.
 
 

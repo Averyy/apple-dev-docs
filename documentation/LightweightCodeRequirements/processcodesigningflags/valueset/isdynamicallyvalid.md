@@ -1,7 +1,8 @@
 # isDynamicallyValid
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Flag indicating that no code signing validation errors have been found for the process.
 

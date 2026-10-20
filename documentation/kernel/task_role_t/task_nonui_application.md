@@ -1,14 +1,15 @@
 # TASK_NONUI_APPLICATION
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 TASK_NONUI_APPLICATION = 6
 ```
 

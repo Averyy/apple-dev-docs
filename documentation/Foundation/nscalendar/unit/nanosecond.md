@@ -1,7 +1,8 @@
 # nanosecond
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Identifier for the nanosecond unit.
 
@@ -20,13 +21,18 @@ Identifier for the nanosecond unit.
 static var nanosecond: NSCalendar.Unit { get }
 ```
 
+```c
+NSCalendarUnitNanosecond
+```
+
 ## See Also
 
-- [static var hour: NSCalendar.Unit](nscalendar/unit/hour.md)
+### Specifying Hours, Minutes, and Seconds
+- [static var hour: NSCalendar.Unit](./hour.md)
   Identifier for the hour unit.
-- [static var minute: NSCalendar.Unit](nscalendar/unit/minute.md)
+- [static var minute: NSCalendar.Unit](./minute.md)
   Identifier for the minute unit.
-- [static var second: NSCalendar.Unit](nscalendar/unit/second.md)
+- [static var second: NSCalendar.Unit](./second.md)
   Identifier for the second unit.
 
 

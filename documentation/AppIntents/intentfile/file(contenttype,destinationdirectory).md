@@ -1,7 +1,8 @@
 # file(contentType:destinationDirectory:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests an `IntentFile` representation as a file url.
 

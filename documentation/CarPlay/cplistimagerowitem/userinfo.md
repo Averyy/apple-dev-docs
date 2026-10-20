@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An opaque value for the list item.
 
@@ -16,9 +17,13 @@ An opaque value for the list item.
 var userInfo: Any? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) id userInfo;
+```
+
 #### Discussion
 
-Use this property to attach a value that provides additional context to the list item. For example, you can attach a model object and reference it in the list item’s [`handler`](cplistimagerowitem/handler.md) or [`listImageRowHandler`](cplistimagerowitem/listimagerowhandler.md) when processing either selection.
+Use this property to attach a value that provides additional context to the list item. For example, you can attach a model object and reference it in the list item’s [`handler`](./handler.md) or [`listImageRowHandler`](./listimagerowhandler.md) when processing either selection.
 
 
 ---

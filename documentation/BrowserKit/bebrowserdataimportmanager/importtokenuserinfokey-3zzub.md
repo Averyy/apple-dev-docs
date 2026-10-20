@@ -1,7 +1,8 @@
 # importTokenUserInfoKey
 
 **Framework**: BrowserKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key for accessing the data transfer token in the import launch activity’s info dictionary.
 
@@ -17,15 +18,16 @@ static var importTokenUserInfoKey: String { get }
 
 #### Discussion
 
-Use this key to access the token that validates the transfer of browsing data when the system launches your app to import the data. For more information, see [`Transferring browsing data to another browser`](transferring-browsing-data-to-another-browser.md).
+Use this key to access the token that validates the transfer of browsing data when the system launches your app to import the data. For more information, see [Transferring browsing data to another browser](../transferring-browsing-data-to-another-browser.md).
 
 ## See Also
 
-- [class let importTokenUserInfoKey: String](bebrowserdataimportmanager/importtokenuserinfokey-3bqve.md)
+### Managing import tokens
+- [class let importTokenUserInfoKey: String](./importtokenuserinfokey-3bqve.md)
   A key for accessing the data transfer token in the import launch activity’s info dictionary.
-- [static var userActivityType: String](bebrowserdataimportmanager/useractivitytype-35jes.md)
+- [static var userActivityType: String](./useractivitytype-35jes.md)
   A constant that identifies the launch activity for data import requests.
-- [class let userActivityType: String](bebrowserdataimportmanager/useractivitytype-8xgjo.md)
+- [class let userActivityType: String](./useractivitytype-8xgjo.md)
   A constant that identifies the launch activity for data import requests.
 
 

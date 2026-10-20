@@ -1,14 +1,15 @@
 # init(rawValue:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS
+- iPadOS
+- Mac Catalyst
 - tvOS 10.2+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

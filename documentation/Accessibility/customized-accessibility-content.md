@@ -1,6 +1,7 @@
 # Customized accessibility content
 
-**Framework**: Accessibility
+**Framework**: Accessibility  
+**Role**: API Collection
 
 Customize your apps to deliver accessibility information to your users in measured portions as they need it.
 
@@ -13,19 +14,20 @@ For example, in a photography app, you may want the user to know the date, time,
 ## Topics
 
 ### Custom accessibility content
-- [class AXCustomContent](axcustomcontent.md)
+- [class AXCustomContent](./axcustomcontent.md)
   Objects that define custom content and the timing of its output.
-- [protocol AXCustomContentProvider](axcustomcontentprovider.md)
+- [protocol AXCustomContentProvider](./axcustomcontentprovider.md)
   The interface for customizing the accessibility content.
-- [typealias AXCustomContentReturnBlock](axcustomcontentreturnblock.md)
+- [typealias AXCustomContentReturnBlock](./axcustomcontentreturnblock.md)
 
 ## See Also
 
-- [Audio graphs](audio-graphs.md)
+### Features
+- [Audio graphs](./audio-graphs.md)
   Define an accessible representation of your chart for VoiceOver to generate an audio graph.
-- [Hearing device support](hearing-device-support.md)
+- [Hearing device support](./hearing-device-support.md)
   Access information about paired hearing aid devices and streaming status.
-- [func AXNameFromColor(CGColor) -> String](axnamefromcolor(_:).md)
+- [func AXNameFromColor(CGColor) -> String](./axnamefromcolor%28_%29.md)
   Returns a localized description of the color to use in accessibility attributes.
 
 

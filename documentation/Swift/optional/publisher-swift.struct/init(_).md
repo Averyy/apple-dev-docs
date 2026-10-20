@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher to emit the value of the optional, or to finish immediately if the optional doesn’t have a value.
 

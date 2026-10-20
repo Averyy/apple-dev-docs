@@ -1,25 +1,26 @@
 # Cancel
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancel all callbacks from the dispatch source.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t Cancel(IODispatchSourceCancelHandler handler);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](kioreturnsuccess.md) on success, or another value if an error occurs. See [`Error Codes`](error-codes.md).
+[`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../error-codes.md).
 
 #### Discussion
 
@@ -31,9 +32,10 @@ Subclasses must provide an implementation of this method. After cancellation, th
 
 ## See Also
 
-- [init](iodispatchsource/init.md)
+### Configuring the Dispatch Source
+- [init](./init.md)
   Handles the basic initialization of the dispatch source.
-- [free](iodispatchsource/free.md)
+- [free](./free.md)
   Performs any final cleanup for the dispatch source.
 
 

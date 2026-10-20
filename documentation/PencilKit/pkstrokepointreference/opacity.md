@@ -1,7 +1,8 @@
 # opacity
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Opacity of the point.
 
@@ -18,15 +19,20 @@ Opacity of the point.
 var opacity: CGFloat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGFloat opacity;
+```
+
 #### Discussion
 
-The opacity of a [`PKStrokePointReference`](pkstrokepointreference.md) has a range of 0-2, which is a multiplier of the ink opacity.
+The opacity of a [`PKStrokePointReference`](../pkstrokepointreference.md) has a range of 0-2, which is a multiplier of the ink opacity.
 
 ## See Also
 
-- [var size: CGSize](pkstrokepointreference/size.md)
+### Getting the point’s drawing data
+- [var size: CGSize](./size.md)
   The size of the point.
-- [var secondaryScale: CGFloat](pkstrokepointreference/secondaryscale.md)
+- [var secondaryScale: CGFloat](./secondaryscale.md)
 
 
 ---

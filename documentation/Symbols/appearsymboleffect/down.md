@@ -1,7 +1,8 @@
 # down
 
 **Framework**: Symbols  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An effect that makes the symbol scale down as it appears.
 
@@ -22,7 +23,8 @@ var down: AppearSymbolEffect { get }
 
 ## See Also
 
-- [var up: AppearSymbolEffect](appearsymboleffect/up.md)
+### Accessing symbol effects
+- [var up: AppearSymbolEffect](./up.md)
   An effect that makes the symbol scale up as it appears.
 
 

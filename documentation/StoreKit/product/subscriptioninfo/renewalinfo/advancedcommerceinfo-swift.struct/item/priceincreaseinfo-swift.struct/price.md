@@ -1,7 +1,8 @@
 # price
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cost of the price increase in the location-specific currency.
 
@@ -22,9 +23,10 @@ let price: Decimal
 
 ## See Also
 
-- [let dependentSKUs: [String]](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/item/priceincreaseinfo-swift.struct/dependentskus.md)
+### Information about a price increase
+- [let dependentSKUs: [String]](./dependentskus.md)
   An array of one or more SKUs on which the current subscription offer depends.
-- [let status: Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item.PriceIncreaseInfo.Status](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/item/priceincreaseinfo-swift.struct/status-swift.property.md)
+- [let status: Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item.PriceIncreaseInfo.Status](./status-swift.property.md)
   The status of the price increase.
 
 

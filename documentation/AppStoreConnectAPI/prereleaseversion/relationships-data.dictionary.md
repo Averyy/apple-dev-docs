@@ -1,7 +1,8 @@
 # PrereleaseVersion.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,16 +11,16 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object PrereleaseVersion.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object PrereleaseVersion.Relationships.App](prereleaseversion/relationships-data.dictionary/app-data.dictionary.md)
+- [object PrereleaseVersion.Relationships.App](./relationships-data.dictionary/app-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object PrereleaseVersion.Relationships.Builds](prereleaseversion/relationships-data.dictionary/builds-data.dictionary.md)
+- [object PrereleaseVersion.Relationships.Builds](./relationships-data.dictionary/builds-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 ## Properties
@@ -29,7 +30,8 @@ object PrereleaseVersion.Relationships
 
 ## See Also
 
-- [object PrereleaseVersion.Attributes](prereleaseversion/attributes-data.dictionary.md)
+### Objects
+- [object PrereleaseVersion.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a Prerelease Versions resource.
 
 

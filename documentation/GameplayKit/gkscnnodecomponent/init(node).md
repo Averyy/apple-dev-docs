@@ -1,7 +1,8 @@
 # init(node:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(node: SCNNode)
+```
+
+```objc
+- (instancetype) initWithNode:(SCNNode *) node;
 ```
 
 

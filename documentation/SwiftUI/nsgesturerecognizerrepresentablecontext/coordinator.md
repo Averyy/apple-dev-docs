@@ -1,7 +1,8 @@
 # coordinator
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The custom object that you use to communicate state changes from your gesture recognizer to other parts of your SwiftUI interface.
 

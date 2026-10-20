@@ -1,7 +1,8 @@
 # magnification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of magnification to apply.
 
@@ -12,6 +13,10 @@ The amount of magnification to apply.
 
 ```swift
 var magnification: CGFloat { get set }
+```
+
+```objc
+@property CGFloat magnification;
 ```
 
 #### Discussion

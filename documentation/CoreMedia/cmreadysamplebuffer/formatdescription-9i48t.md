@@ -1,7 +1,8 @@
 # formatDescription
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The format description of the samples in the sample buffer.
 

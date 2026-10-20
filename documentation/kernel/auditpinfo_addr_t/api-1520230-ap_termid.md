@@ -1,14 +1,15 @@
 # ap_termid
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 au_tid_addr_t ap_termid;
 ```
 

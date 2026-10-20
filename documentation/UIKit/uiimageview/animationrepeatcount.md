@@ -1,7 +1,8 @@
 # animationRepeatCount
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the number of times to repeat the animation.
 
@@ -9,7 +10,7 @@ Specifies the number of times to repeat the animation.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,23 +19,28 @@ Specifies the number of times to repeat the animation.
 var animationRepeatCount: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSInteger animationRepeatCount;
+```
+
 #### Discussion
 
 The default value is `0`, which specifies to repeat the animation indefinitely.
 
 ## See Also
 
-- [var animationImages: [UIImage]?](uiimageview/animationimages.md)
-  An array of [`UIImage`](uiimage.md) objects to use for an animation.
-- [var highlightedAnimationImages: [UIImage]?](uiimageview/highlightedanimationimages.md)
-  An array of [`UIImage`](uiimage.md) objects to use for an animation when the view is highlighted.
-- [var animationDuration: TimeInterval](uiimageview/animationduration.md)
+### Animating a sequence of images
+- [var animationImages: [UIImage]?](./animationimages.md)
+  An array of [`UIImage`](../uiimage.md) objects to use for an animation.
+- [var highlightedAnimationImages: [UIImage]?](./highlightedanimationimages.md)
+  An array of [`UIImage`](../uiimage.md) objects to use for an animation when the view is highlighted.
+- [var animationDuration: TimeInterval](./animationduration.md)
   The amount of time it takes to go through one cycle of the images.
-- [func startAnimating()](uiimageview/startanimating.md)
+- [func startAnimating()](./startanimating%28%29.md)
   Starts animating the images in the receiver.
-- [func stopAnimating()](uiimageview/stopanimating.md)
+- [func stopAnimating()](./stopanimating%28%29.md)
   Stops animating the images in the receiver.
-- [var isAnimating: Bool](uiimageview/isanimating.md)
+- [var isAnimating: Bool](./isanimating.md)
   Returns a Boolean value indicating whether the animation is running.
 
 

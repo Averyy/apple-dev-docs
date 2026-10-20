@@ -1,7 +1,8 @@
 # swiftUI
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for accessing the attribute scopes that SwiftUI defines.
 
@@ -22,7 +23,8 @@ var swiftUI: AttributeScopes.SwiftUIAttributes.Type { get }
 
 ## See Also
 
-- [AttributeScopes.SwiftUIAttributes](attributescopes/swiftuiattributes.md)
+### SwiftUI-Defined Attributes
+- [AttributeScopes.SwiftUIAttributes](./swiftuiattributes.md)
   Attribute scopes that SwiftUI defines.
 
 

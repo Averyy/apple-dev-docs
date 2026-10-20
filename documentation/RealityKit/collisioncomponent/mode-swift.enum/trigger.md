@@ -1,7 +1,8 @@
 # CollisionComponent.Mode.trigger
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A trigger collision object.
 
@@ -11,7 +12,7 @@ A trigger collision object.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,11 +24,12 @@ case trigger
 
 When a collision object of this type collides with any other object, RealityKit records that contact was made, but does not compute other details, like contact points, normal vectors, and so on. This makes a trigger object more performant when all you need is a Boolean indicator that contact occurred.
 
-Triggers are not simulated, so if the [`Entity`](entity.md) also contains [`PhysicsBodyComponent`](physicsbodycomponent.md), `trigger` is ignored.
+Triggers are not simulated, so if the [`Entity`](../../entity.md) also contains [`PhysicsBodyComponent`](../../physicsbodycomponent.md), `trigger` is ignored.
 
 ## See Also
 
-- [CollisionComponent.Mode.default](collisioncomponent/mode-swift.enum/default.md)
+### Collision modes
+- [CollisionComponent.Mode.default](./default.md)
   A default collision object.
 
 

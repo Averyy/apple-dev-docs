@@ -1,7 +1,8 @@
 # AVAudioUnitTimeEffect
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that processes audio in nonreal time.
 
@@ -19,41 +20,46 @@ An object that processes audio in nonreal time.
 class AVAudioUnitTimeEffect
 ```
 
+```objc
+@interface AVAudioUnitTimeEffect : AVAudioUnit
+```
+
 #### Overview
 
-A time effect audio unit represents an [`AVAudioUnit`](avaudiounit.md) with a type `kAudioUnitType_FormatConverter` (`aufc)`. These effects don’t process audio in real time. The [`AVAudioUnitVarispeed`](avaudiounitvarispeed.md) class is an example of a time effect unit.
+A time effect audio unit represents an [`AVAudioUnit`](./avaudiounit.md) with a type `kAudioUnitType_FormatConverter` (`aufc)`. These effects don’t process audio in real time. The [`AVAudioUnitVarispeed`](./avaudiounitvarispeed.md) class is an example of a time effect unit.
 
 ## Topics
 
 ### Creating a time effect
-- [init(audioComponentDescription: AudioComponentDescription)](avaudiounittimeeffect/init(audiocomponentdescription:).md)
+- [init(audioComponentDescription: AudioComponentDescription)](./avaudiounittimeeffect/init%28audiocomponentdescription%29.md)
   Creates a time effect audio unit with the specified description.
 ### Bypassing the time effect
-- [var bypass: Bool](avaudiounittimeeffect/bypass.md)
+- [var bypass: Bool](./avaudiounittimeeffect/bypass.md)
   The bypass state of the audio unit.
 
 ## Relationships
 
 ### Inherits From
-- [AVAudioUnit](avaudiounit.md)
+- [AVAudioUnit](./avaudiounit.md)
 ### Inherited By
-- [AVAudioUnitTimePitch](avaudiounittimepitch.md)
-- [AVAudioUnitVarispeed](avaudiounitvarispeed.md)
+- [AVAudioUnitTimePitch](./avaudiounittimepitch.md)
+- [AVAudioUnitVarispeed](./avaudiounitvarispeed.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVAudioUnitTimePitch](avaudiounittimepitch.md)
+### Time effects
+- [class AVAudioUnitTimePitch](./avaudiounittimepitch.md)
   An object that provides a good-quality playback rate and pitch shifting independently of each other.
-- [class AVAudioUnitVarispeed](avaudiounitvarispeed.md)
+- [class AVAudioUnitVarispeed](./avaudiounitvarispeed.md)
   An object that allows control of the playback rate.
 
 

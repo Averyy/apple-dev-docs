@@ -1,7 +1,8 @@
 # AlternativeDistributionKey
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A public key used to authorize an alternative marketplace or web distribution to offer your app outside the App Store.
 
@@ -10,18 +11,18 @@ A public key used to authorize an alternative marketplace or web distribution to
 
 ## Declaration
 
-```swift
+```
 object AlternativeDistributionKey
 ```
 
 #### Discussion
 
-For more information about the response that includes this alternative distribution key object, see [`AlternativeDistributionKeyResponse`](alternativedistributionkeyresponse.md).
+For more information about the response that includes this alternative distribution key object, see [`AlternativeDistributionKeyResponse`](./alternativedistributionkeyresponse.md).
 
 ## Topics
 
 ### Objects
-- [object AlternativeDistributionKey.Attributes](alternativedistributionkey/attributes-data.dictionary.md)
+- [object AlternativeDistributionKey.Attributes](./alternativedistributionkey/attributes-data.dictionary.md)
   Attributes that describe an alternative distribution key resource.
 
 ## Properties
@@ -29,17 +30,18 @@ For more information about the response that includes this alternative distribut
 - `attributes` (AlternativeDistributionKey.Attributes)
 - `id` (string) *(required)*: An opaque resource ID that uniquely identifies the alternative distribution key.
 - `links` (ResourceLinks)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `alternativeDistributionKeys`
 
 ## See Also
 
-- [object AlternativeDistributionKeyResponse](alternativedistributionkeyresponse.md)
+### Objects
+- [object AlternativeDistributionKeyResponse](./alternativedistributionkeyresponse.md)
   The response body for endpoints that create or read a single alternative distribution key.
-- [object AlternativeDistributionKeysResponse](alternativedistributionkeysresponse.md)
+- [object AlternativeDistributionKeysResponse](./alternativedistributionkeysresponse.md)
   The response body for endpoints that list alternative distribution keys.
-- [object AlternativeDistributionKeyCreateRequest](alternativedistributionkeycreaterequest.md)
+- [object AlternativeDistributionKeyCreateRequest](./alternativedistributionkeycreaterequest.md)
   The request body you use to create an alternative distribution key.
-- [object AppAlternativeDistributionKeyLinkageResponse](appalternativedistributionkeylinkageresponse.md)
+- [object AppAlternativeDistributionKeyLinkageResponse](./appalternativedistributionkeylinkageresponse.md)
 
 
 ---

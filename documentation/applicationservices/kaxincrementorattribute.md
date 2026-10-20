@@ -1,7 +1,8 @@
 # kAXIncrementorAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The incrementor of a time or date field represented by this accessibility object. This attribute is required for accessibility objects that represent time or date field elements that display an incrementor.
 
@@ -12,6 +13,10 @@ The incrementor of a time or date field represented by this accessibility object
 
 ```swift
 var kAXIncrementorAttribute: String { get }
+```
+
+```c
+#define kAXIncrementorAttribute
 ```
 
 

@@ -1,7 +1,8 @@
 # vImageConverter_CreateForCGToCVImageFormat(_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a vImage converter that converts a Core Graphics-formatted image to a Core Video-formatted image.
 
@@ -20,36 +21,43 @@ Creates a vImage converter that converts a Core Graphics-formatted image to a Co
 func vImageConverter_CreateForCGToCVImageFormat(_ srcFormat: UnsafePointer<vImage_CGImageFormat>, _ destFormat: vImageCVImageFormat, _ backgroundColor: UnsafePointer<CGFloat>!, _ flags: vImage_Flags, _ error: UnsafeMutablePointer<vImage_Error>!) -> Unmanaged<vImageConverter>!
 ```
 
+```c
+vImageConverterRefvImageConverter_CreateForCGToCVImageFormat(const vImage_CGImageFormat *srcFormat, vImageCVImageFormatRef destFormat, const CGFloat *backgroundColor, vImage_Flags flags, vImage_Error *error);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes that [`Data Types and Constants`](data-types-and-constants.md) describes.
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes.
 
 #### Discussion
 
-This function creates a [`vImageConverter`](vimageconverter.md) instance that’s used with [`vImageConvert_AnyToAny(_:_:_:_:_:)`](vimageconvert_anytoany(_:_:_:_:_:).md) to convert a Core Graphics formatted image, described by [`vImage_CGImageFormat`](vimage_cgimageformat.md), to Core Video image data, described by [`vImageCVImageFormat`](vimagecvimageformat.md).
+This function creates a [`vImageConverter`](./vimageconverter.md) instance that’s used with [`vImageConvert_AnyToAny(_:_:_:_:_:)`](./vimageconvert_anytoany%28_,_,_,_,_%29.md) to convert a Core Graphics formatted image, described by [`vImage_CGImageFormat`](./vimage_cgimageformat.md), to Core Video image data, described by [`vImageCVImageFormat`](./vimagecvimageformat.md).
 
 ## Parameters
 
-- `srcFormat`: The [`vImage_CGImageFormat`](vimage_cgimageformat.md) structure that describes the pixel format associated with the source buffers.
-- `destFormat`: The [`vImageCVImageFormat`](vimagecvimageformat.md) structure that describes the pixel format associated with the destination image buffers.
-- `backgroundColor`: In cases where the source format has an alpha channel and the destination doesn’t (or is [`CGImageAlphaInfo.noneSkipFirst`](https://developer.apple.com/documentation/coregraphics/cgimagealphainfo/noneskipfirst) or [`CGImageAlphaInfo.noneSkipLast`](https://developer.apple.com/documentation/coregraphics/cgimagealphainfo/noneskiplast)) the conversion removes the alpha channel by flattening it against an opaque background color. The background color is specified as three [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) values corresponding to red, green, and blue in sRGB.
-- `flags`: The options to use when performing this operation. The following flags are supported: | Name | Description |
-| --- | --- |
-| [`kvImagePrintDiagnosticsToConsole`](kvimageprintdiagnosticstoconsole.md) | Prints a debug message if the operation fails. |
-| [`kvImageHighQualityResampling`](kvimagehighqualityresampling.md) | Instructs the converter to spend extra time to achieve better image quality in cases where chroma is upsampled or downsampled as part of the conversion. |
-| [`kvImageDoNotTile`](kvimagedonottile.md) | Operates as if [`kvImageDoNotTile`](kvimagedonottile.md) was passed to [`vImageConvert_AnyToAny(_:_:_:_:_:)`](vimageconvert_anytoany(_:_:_:_:_:).md). |
+- `srcFormat`: The [`vImage_CGImageFormat`](./vimage_cgimageformat.md) structure that describes the pixel format associated with the source buffers.
+- `destFormat`: The [`vImageCVImageFormat`](./vimagecvimageformat.md) structure that describes the pixel format associated with the destination image buffers.
+- `backgroundColor`: In cases where the source format has an alpha channel and the destination doesn’t (or is [`CGImageAlphaInfo.noneSkipFirst`](../CoreGraphics/cgimagealphainfo/noneskipfirst.md) or [`CGImageAlphaInfo.noneSkipLast`](../CoreGraphics/cgimagealphainfo/noneskiplast.md)) the conversion removes the alpha channel by flattening it against an opaque background color. The background color is specified as three [`CGFloat`](../CoreFoundation/cgfloat-swift.struct.md) values corresponding to red, green, and blue in sRGB.
+- `flags`: The options to use when performing this operation. The following flags are supported:
+
+  | Name | Description |
+  | --- | --- |
+  | [`kvImagePrintDiagnosticsToConsole`](./kvimageprintdiagnosticstoconsole.md) | Prints a debug message if the operation fails. |
+  | [`kvImageHighQualityResampling`](./kvimagehighqualityresampling.md) | Instructs the converter to spend extra time to achieve better image quality in cases where chroma is upsampled or downsampled as part of the conversion. |
+  | [`kvImageDoNotTile`](./kvimagedonottile.md) | Operates as if [`kvImageDoNotTile`](./kvimagedonottile.md) was passed to [`vImageConvert_AnyToAny(_:_:_:_:_:)`](./vimageconvert_anytoany%28_,_,_,_,_%29.md). |
 
 ## See Also
 
-- [class vImageConverter](vimageconverter.md)
+### Creating a converter
+- [class vImageConverter](./vimageconverter.md)
   A description of a conversion from one image format to another.
-- [func vImageConverter_CreateWithCGImageFormat(UnsafePointer<vImage_CGImageFormat>, UnsafePointer<vImage_CGImageFormat>, UnsafePointer<CGFloat>!, vImage_Flags, UnsafeMutablePointer<vImage_Error>!) -> Unmanaged<vImageConverter>!](vimageconverter_createwithcgimageformat(_:_:_:_:_:).md)
+- [func vImageConverter_CreateWithCGImageFormat(UnsafePointer<vImage_CGImageFormat>, UnsafePointer<vImage_CGImageFormat>, UnsafePointer<CGFloat>!, vImage_Flags, UnsafeMutablePointer<vImage_Error>!) -> Unmanaged<vImageConverter>!](./vimageconverter_createwithcgimageformat%28_,_,_,_,_%29.md)
   Creates a vImage converter that converts from one vImage Core Graphics image format to another.
-- [func vImageConverter_CreateWithCGColorConversionInfo(CGColorConversionInfo, UnsafePointer<vImage_CGImageFormat>, UnsafePointer<vImage_CGImageFormat>, UnsafePointer<CGFloat>!, vImage_Flags, UnsafeMutablePointer<vImage_Error>!) -> Unmanaged<vImageConverter>!](vimageconverter_createwithcgcolorconversioninfo(_:_:_:_:_:_:).md)
+- [func vImageConverter_CreateWithCGColorConversionInfo(CGColorConversionInfo, UnsafePointer<vImage_CGImageFormat>, UnsafePointer<vImage_CGImageFormat>, UnsafePointer<CGFloat>!, vImage_Flags, UnsafeMutablePointer<vImage_Error>!) -> Unmanaged<vImageConverter>!](./vimageconverter_createwithcgcolorconversioninfo%28_,_,_,_,_,_%29.md)
   Creates an any-to-any converter that uses a color conversion information object to convert from one image format to another.
-- [func vImageConverter_CreateForCVToCGImageFormat(vImageCVImageFormat, UnsafePointer<vImage_CGImageFormat>, UnsafePointer<CGFloat>!, vImage_Flags, UnsafeMutablePointer<vImage_Error>!) -> Unmanaged<vImageConverter>!](vimageconverter_createforcvtocgimageformat(_:_:_:_:_:).md)
+- [func vImageConverter_CreateForCVToCGImageFormat(vImageCVImageFormat, UnsafePointer<vImage_CGImageFormat>, UnsafePointer<CGFloat>!, vImage_Flags, UnsafeMutablePointer<vImage_Error>!) -> Unmanaged<vImageConverter>!](./vimageconverter_createforcvtocgimageformat%28_,_,_,_,_%29.md)
   Creates a vImage converter that converts a Core Video-formatted image to a Core Graphics-formatted image.
-- [func vImageConverter_CreateWithColorSyncCodeFragment(CFTypeRef, UnsafePointer<vImage_CGImageFormat>, UnsafePointer<vImage_CGImageFormat>!, UnsafePointer<CGFloat>!, vImage_Flags, UnsafeMutablePointer<vImage_Error>!) -> Unmanaged<vImageConverter>!](vimageconverter_createwithcolorsynccodefragment(_:_:_:_:_:_:).md)
+- [func vImageConverter_CreateWithColorSyncCodeFragment(CFTypeRef, UnsafePointer<vImage_CGImageFormat>, UnsafePointer<vImage_CGImageFormat>!, UnsafePointer<CGFloat>!, vImage_Flags, UnsafeMutablePointer<vImage_Error>!) -> Unmanaged<vImageConverter>!](./vimageconverter_createwithcolorsynccodefragment%28_,_,_,_,_,_%29.md)
   Creates a vImage converter to convert from one vImage Core Graphics image format to another, using custom ColorSync transform.
 
 

@@ -1,7 +1,8 @@
 # Artists.Views.ArtistsLiveAlbumsView.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Albums associated with the artist and categorized as live performances.
 
@@ -10,7 +11,7 @@ Albums associated with the artist and categorized as live performances.
 
 ## Declaration
 
-```swift
+```
 object Artists.Views.ArtistsLiveAlbumsView.Attributes
 ```
 

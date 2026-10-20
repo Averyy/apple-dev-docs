@@ -1,7 +1,8 @@
 # UIDocumentBrowserViewController.BrowserUserInterfaceStyle.light
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A light background.
 
@@ -16,11 +17,16 @@ A light background.
 case light
 ```
 
+```c
+UIDocumentBrowserUserInterfaceStyleLight
+```
+
 ## See Also
 
-- [UIDocumentBrowserViewController.BrowserUserInterfaceStyle.dark](uidocumentbrowserviewcontroller/browseruserinterfacestyle-swift.enum/dark.md)
+### User interface styles
+- [UIDocumentBrowserViewController.BrowserUserInterfaceStyle.dark](./dark.md)
   A dark background.
-- [UIDocumentBrowserViewController.BrowserUserInterfaceStyle.white](uidocumentbrowserviewcontroller/browseruserinterfacestyle-swift.enum/white.md)
+- [UIDocumentBrowserViewController.BrowserUserInterfaceStyle.white](./white.md)
   A white background.
 
 

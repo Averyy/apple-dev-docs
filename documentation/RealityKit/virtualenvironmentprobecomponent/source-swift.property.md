@@ -1,7 +1,8 @@
 # source
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The source of diffuse and specular lighting for environment lighting calculations.
 

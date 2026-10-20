@@ -1,7 +1,8 @@
 # AnyNavigationTransition
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erasing navigation transition that allows for providing any navigation transition value dynamically.
 
@@ -22,7 +23,7 @@ struct AnyNavigationTransition
 
 #### Overview
 
-Use this navigation transition when you need to dynamically configure the transition of your content. For example, you could use this in a [`sheet(isPresented:onDismiss:content:)`](view/sheet(ispresented:ondismiss:content:).md) modifier to dynamically configure how the sheet transitions in and out.
+Use this navigation transition when you need to dynamically configure the transition of your content. For example, you could use this in a [`sheet(isPresented:onDismiss:content:)`](./view/sheet%28ispresented,ondismiss,content%29.md) modifier to dynamically configure how the sheet transitions in and out.
 
 This example shows a sheet that uses a different transition based on model state.
 
@@ -52,20 +53,21 @@ struct ContentView: View {
 ## Topics
 
 ### Initializers
-- [init(some NavigationTransition)](anynavigationtransition/init(_:).md)
+- [init(some NavigationTransition)](./anynavigationtransition/init%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [NavigationTransition](navigationtransition.md)
+- [NavigationTransition](./navigationtransition.md)
 
 ## See Also
 
-- [func navigationTransition(some NavigationTransition) -> some View](view/navigationtransition(_:).md)
+### Defining navigation transitions
+- [func navigationTransition(some NavigationTransition) -> some View](./view/navigationtransition%28_%29.md)
   Sets the navigation transition style for this view.
-- [protocol NavigationTransition](navigationtransition.md)
+- [protocol NavigationTransition](./navigationtransition.md)
   A type that defines the transition to use when navigating to a view.
-- [struct CrossFadeNavigationTransition](crossfadenavigationtransition.md)
+- [struct CrossFadeNavigationTransition](./crossfadenavigationtransition.md)
   A navigation transition that cross-fades between the appearing view and the disappearing view.
 
 

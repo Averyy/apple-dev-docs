@@ -1,7 +1,8 @@
 # vendorFeatures
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 var vendorFeatures: [ICScannerFeature]? { get }
+```
+
+```objc
+@property (readonly, nullable) NSArray<ICScannerFeature *> * vendorFeatures;
 ```
 
 

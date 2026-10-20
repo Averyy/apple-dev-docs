@@ -1,7 +1,8 @@
 # SceneReconstructionProvider.Mode.classification
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The reconstruction mode that classifies each face of a mesh anchor.
 
@@ -16,7 +17,7 @@ case classification
 
 #### Discussion
 
-For information about the classification types, see [`classifications`](meshanchor/geometry-swift.struct/classifications.md).
+For information about the classification types, see [`classifications`](../../meshanchor/geometry-swift.struct/classifications.md).
 
 
 ---

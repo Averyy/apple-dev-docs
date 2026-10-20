@@ -1,7 +1,8 @@
 # send(before:msgid:components:from:reserved:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 This method is provided for subclasses that have custom types of `NSPort`.
 
@@ -20,6 +21,10 @@ This method is provided for subclasses that have custom types of `NSPort`.
 func send(before limitDate: Date, msgid msgID: Int, components: NSMutableArray?, from receivePort: Port?, reserved headerSpaceReserved: Int) -> Bool
 ```
 
+```objc
+- (BOOL) sendBeforeDate:(NSDate *) limitDate msgid:(NSUInteger) msgID components:(NSMutableArray *) components from:(NSPort *) receivePort reserved:(NSUInteger) headerSpaceReserved;
+```
+
 #### Discussion
 
 `NSConnection` calls this method at the appropriate times. This method should not be called directly. This method could raise an `NSInvalidSendPortException`, `NSInvalidReceivePortException`, or an `NSPortSendException`, depending on the type of send port and the type of error.
@@ -34,9 +39,10 @@ func send(before limitDate: Date, msgid msgID: Int, components: NSMutableArray?,
 
 ## See Also
 
-- [func send(before: Date, components: NSMutableArray?, from: Port?, reserved: Int) -> Bool](port/send(before:components:from:reserved:).md)
+### Setting information
+- [func send(before: Date, components: NSMutableArray?, from: Port?, reserved: Int) -> Bool](./send%28before,components,from,reserved%29.md)
   This method is provided for subclasses that have custom types of `NSPort`.
-- [var reservedSpaceLength: Int](port/reservedspacelength.md)
+- [var reservedSpaceLength: Int](./reservedspacelength.md)
   The number of bytes of space reserved by the receiver for sending data.
 
 

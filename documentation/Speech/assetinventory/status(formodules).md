@@ -1,7 +1,8 @@
 # status(forModules:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the status for the list of modules.
 
@@ -25,7 +26,8 @@ If the status differs between modules, it returns an applicable status in order 
 
 ## See Also
 
-- [AssetInventory.Status](assetinventory/status.md)
+### Checking asset status
+- [AssetInventory.Status](./status.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # perCredentialInputValues(_:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The inputs for the PRF extension, when not specifying general input values.
 
@@ -28,7 +29,8 @@ A configured instance of `ASAuthorizationPublicKeyCredentialPRFAssertionInput`.
 
 ## See Also
 
-- [let perCredentialInputValues: [Data : ASAuthorizationPublicKeyCredentialPRFAssertionInput.InputValues]?](asauthorizationpublickeycredentialprfassertioninput-swift.struct/percredentialinputvalues.md)
+### Accessing per-credential input values
+- [let perCredentialInputValues: [Data : ASAuthorizationPublicKeyCredentialPRFAssertionInput.InputValues]?](./percredentialinputvalues.md)
   A map of credential identifiers to input values for the PRF extension.
 
 

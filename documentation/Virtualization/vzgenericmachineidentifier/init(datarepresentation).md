@@ -1,7 +1,8 @@
 # init(dataRepresentation:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new unique identifier for a VM with the provided data.
 
@@ -14,13 +15,18 @@ Creates a new unique identifier for a VM with the provided data.
 init?(dataRepresentation: Data)
 ```
 
+```objc
+- (instancetype) initWithDataRepresentation:(NSData *) dataRepresentation;
+```
+
 ## Parameters
 
 - `dataRepresentation`: A data object that describes the machine identifier.
 
 ## See Also
 
-- [init()](vzgenericmachineidentifier/init.md)
+### Creating a Machine Identifier
+- [init()](./init%28%29.md)
   Creates a new unique identifier for a VM.
 
 

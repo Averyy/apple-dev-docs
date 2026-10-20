@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 identifier is a NSUUID that uniquely identifies this route segment.
 
@@ -14,6 +15,10 @@ identifier is a NSUUID that uniquely identifies this route segment.
 
 ```swift
 var identifier: UUID { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) NSUUID * identifier;
 ```
 
 

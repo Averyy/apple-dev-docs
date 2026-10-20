@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Cancels a currently-running enumeration, in respone to a call from the framework.
@@ -13,6 +14,10 @@ Cancels a currently-running enumeration, in respone to a call from the framework
 
 ```swift
 func invalidate()
+```
+
+```objc
+- (void) invalidate;
 ```
 
 #### Discussion

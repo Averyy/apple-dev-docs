@@ -1,7 +1,8 @@
 # RoundedRectangle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A rectangular shape with rounded corners, aligned inside the frame of the view containing it.
 
@@ -24,49 +25,50 @@ struct RoundedRectangle
 ## Topics
 
 ### Creating a rounded rectangle
-- [init(cornerRadius: CGFloat, style: RoundedCornerStyle)](roundedrectangle/init(cornerradius:style:).md)
+- [init(cornerRadius: CGFloat, style: RoundedCornerStyle)](./roundedrectangle/init%28cornerradius,style%29.md)
   Creates a new rounded rectangle shape.
-- [init(cornerSize: CGSize, style: RoundedCornerStyle)](roundedrectangle/init(cornersize:style:).md)
+- [init(cornerSize: CGSize, style: RoundedCornerStyle)](./roundedrectangle/init%28cornersize,style%29.md)
   Creates a new rounded rectangle shape.
 ### Getting the shape’s characteristics
-- [var cornerSize: CGSize](roundedrectangle/cornersize.md)
+- [var cornerSize: CGSize](./roundedrectangle/cornersize.md)
   The width and height of the rounded rectangle’s corners.
-- [var style: RoundedCornerStyle](roundedrectangle/style.md)
+- [var style: RoundedCornerStyle](./roundedrectangle/style.md)
   The style of corners drawn by the rounded rectangle.
 ### Supporting types
-- [var animatableData: CGSize.AnimatableData](roundedrectangle/animatabledata.md)
+- [var animatableData: CGSize.AnimatableData](./roundedrectangle/animatabledata.md)
   The data to animate.
 
 ## Relationships
 
 ### Conforms To
-- [Animatable](animatable.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [InsettableShape](insettableshape.md)
-- [RoundedRectangularShape](roundedrectangularshape.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Shape](shape.md)
-- [View](view.md)
+- [Animatable](./animatable.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [InsettableShape](./insettableshape.md)
+- [RoundedRectangularShape](./roundedrectangularshape.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Shape](./shape.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct Rectangle](rectangle.md)
+### Creating rectangular shapes
+- [struct Rectangle](./rectangle.md)
   A rectangular shape aligned inside the frame of the view containing it.
-- [enum RoundedCornerStyle](roundedcornerstyle.md)
+- [enum RoundedCornerStyle](./roundedcornerstyle.md)
   Defines the shape of a rounded rectangle’s corners.
-- [protocol RoundedRectangularShape](roundedrectangularshape.md)
-  A protocol of [`InsettableShape`](insettableshape.md) that describes a rounded rectangular shape.
-- [struct RoundedRectangularShapeCorners](roundedrectangularshapecorners.md)
-  A type describing the corner styles of a [`RoundedRectangularShape`](roundedrectangularshape.md).
-- [struct UnevenRoundedRectangle](unevenroundedrectangle.md)
+- [protocol RoundedRectangularShape](./roundedrectangularshape.md)
+  A protocol of [`InsettableShape`](./insettableshape.md) that describes a rounded rectangular shape.
+- [struct RoundedRectangularShapeCorners](./roundedrectangularshapecorners.md)
+  A type describing the corner styles of a [`RoundedRectangularShape`](./roundedrectangularshape.md).
+- [struct UnevenRoundedRectangle](./unevenroundedrectangle.md)
   A rectangular shape with rounded corners with different values, aligned inside the frame of the view containing it.
-- [struct RectangleCornerRadii](rectanglecornerradii.md)
+- [struct RectangleCornerRadii](./rectanglecornerradii.md)
   Describes the corner radius values of a rounded rectangle with uneven corners.
-- [struct RectangleCornerInsets](rectanglecornerinsets.md)
+- [struct RectangleCornerInsets](./rectanglecornerinsets.md)
   The inset sizes for the corners of a rectangle.
-- [struct ConcentricRectangle](concentricrectangle.md)
+- [struct ConcentricRectangle](./concentricrectangle.md)
   A shape whose corners you configure, individually or uniformly, to be squared, rounded, or concentric relative to a container shape’s corners.
 
 

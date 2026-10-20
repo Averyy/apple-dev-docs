@@ -1,7 +1,8 @@
 # loadProduct(withParameters:completionBlock:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads a new product screen to display.
 
@@ -14,32 +15,43 @@ Loads a new product screen to display.
 ## Declaration
 
 ```swift
+func loadProduct(withParameters parameters: [String : Any], completionBlock block: ((Bool, (any Error)?) -> Void)? = nil)
+```
+
+```swift
 func loadProduct(withParameters parameters: [String : Any]) async throws -> Bool
+```
+
+```objc
+- (void) loadProductWithParameters:(NSDictionary<NSString *,id> *) parameters completionBlock:(void (^)(BOOL result, NSError *error)) block;
 ```
 
 ## Mentions
 
-- [Generating the signature to validate StoreKit-rendered ads](generating-the-signature-to-validate-storekit-rendered-ads.md)
-- [Signing and providing ads](signing-and-providing-ads.md)
+- [Generating the signature to validate StoreKit-rendered ads](../generating-the-signature-to-validate-storekit-rendered-ads.md)
+- [Signing and providing ads](../signing-and-providing-ads.md)
 
 #### Discussion
 
-For a seamless user experience, load the product information before presenting the [`SKStoreProductViewController`](skstoreproductviewcontroller.md) view controller. However, if you load the product information while presenting the view controller, once loaded, the product data replaces the contents of the view controller.
+For a seamless user experience, load the product information before presenting the [`SKStoreProductViewController`](../skstoreproductviewcontroller.md) view controller. However, if you load the product information while presenting the view controller, once loaded, the product data replaces the contents of the view controller.
 
 ## Parameters
 
-- `parameters`: A dictionary describing the content you want the view controller to display. See [`Product Dictionary Keys`](product-dictionary-keys.md) for keys that describe the product. See [`Ad network install-validation keys`](ad-network-install-validation-keys.md) for keys that describe an impression in an advertising campaign.
-- `block`: A block to be called when the product information has been loaded from the App Store. The completion block is called on the main thread and receives the following parameters: - **`result`**: [`true`](https://developer.apple.com/documentation/swift/true) if the product information was successfully loaded, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
-- **`error`**: If an error occurred, this object describes the error. If the product information was successfully loaded, this value is `nil`.
+- `parameters`: A dictionary describing the content you want the view controller to display. See [Product Dictionary Keys](../product-dictionary-keys.md) for keys that describe the product. See [Ad network install-validation keys](../ad-network-install-validation-keys.md) for keys that describe an impression in an advertising campaign.
+- `block`: A block to be called when the product information has been loaded from the App Store. The completion block is called on the main thread and receives the following parameters:
+
+  - **`result`**: [`true`](../../Swift/true.md) if the product information was successfully loaded, otherwise [`false`](../../Swift/false.md).
+  - **`error`**: If an error occurred, this object describes the error. If the product information was successfully loaded, this value is `nil`.
 
 ## See Also
 
-- [Offering media for sale in your app](offering-media-for-sale-in-your-app.md)
+### Loading a new product screen
+- [Offering media for sale in your app](../offering-media-for-sale-in-your-app.md)
   Allow users to purchase media in the App Store from within your app.
-- [func loadProduct(withParameters: [String : Any], impression: SKAdImpression, completionBlock: ((Bool, (any Error)?) -> Void)?)](skstoreproductviewcontroller/loadproduct(withparameters:impression:completionblock:).md)
-- [func loadProduct(parameters: [String : Any], impression: AppImpression) async throws](skstoreproductviewcontroller/loadproduct(parameters:impression:).md)
-- [func loadProduct(parameters: [String : Any], impression: AppImpression, reengagementURL: URL) async throws](skstoreproductviewcontroller/loadproduct(parameters:impression:reengagementurl:).md)
-- [Product Dictionary Keys](product-dictionary-keys.md)
+- [func loadProduct(withParameters: [String : Any], impression: SKAdImpression, completionBlock: ((Bool, (any Error)?) -> Void)?)](./loadproduct%28withparameters,impression,completionblock%29.md)
+- [func loadProduct(parameters: [String : Any], impression: AppImpression) async throws](./loadproduct%28parameters,impression%29.md)
+- [func loadProduct(parameters: [String : Any], impression: AppImpression, reengagementURL: URL) async throws](./loadproduct%28parameters,impression,reengagementurl%29.md)
+- [Product Dictionary Keys](../product-dictionary-keys.md)
   Keys for identifying products and the tokens for affiliates and campaigns.
 
 

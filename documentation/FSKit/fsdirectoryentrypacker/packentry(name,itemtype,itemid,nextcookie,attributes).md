@@ -1,7 +1,8 @@
 # packEntry(name:itemType:itemID:nextCookie:attributes:)
 
 **Framework**: FSKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides a directory entry during enumeration.
 
@@ -14,33 +15,38 @@ Provides a directory entry during enumeration.
 func packEntry(name: FSFileName, itemType: FSItem.ItemType, itemID: FSItem.Identifier, nextCookie: FSDirectoryCookie, attributes: FSItem.Attributes?) -> Bool
 ```
 
+```objc
+- (BOOL) packEntryWithName:(FSFileName *) name itemType:(FSItemType) itemType itemID:(FSItemID) itemID nextCookie:(FSDirectoryCookie) nextCookie attributes:(FSItemAttributes *) attributes;
+```
+
 #### Return Value
 
 `true` (Swift) or `YES` (Objective-C) if packing was successful and enumeration can continue with the next directory entry. If the value is `false` (Swift) or `NO` (Objective-C), stop enumerating. This result can happen when the entry is too big for the remaining space in the buffer.
 
 #### Discussion
 
-You call this method in your implementation of [`enumerateDirectory(_:startingAt:verifier:attributes:packer:context:replyHandler:)`](fsvolume/handler/enumeratedirectory(_:startingat:verifier:attributes:packer:context:replyhandler:).md), for each directory entry you want to provide to the enumeration.
+You call this method in your implementation of [`enumerateDirectory(_:startingAt:verifier:attributes:packer:context:replyHandler:)`](../fsvolume/handler/enumeratedirectory%28_,startingat,verifier,attributes,packer,context,replyhandler%29.md), for each directory entry you want to provide to the enumeration.
 
 ## Parameters
 
 - `name`: The item’s name.
 - `itemType`: The type of the item.
-- `itemID`: The item’s identifier. Typically this is an inode number, or one of the constants defined by [`FSItem.Identifier`](fsitem/identifier.md) like [`FSItem.Identifier.rootDirectory`](fsitem/identifier/rootdirectory.md).
-- `nextCookie`: A value to indicate the next entry in the directory to enumerate. FSKit passes this value as the `cookie` parameter on the next call to [`enumerateDirectory(_:startingAt:verifier:attributes:packer:context:replyHandler:)`](fsvolume/handler/enumeratedirectory(_:startingat:verifier:attributes:packer:context:replyhandler:).md). Use whatever value is appropriate for your implementation; the value is opaque to FSKit.
+- `itemID`: The item’s identifier. Typically this is an inode number, or one of the constants defined by [`FSItem.Identifier`](../fsitem/identifier.md) like [`FSItem.Identifier.rootDirectory`](../fsitem/identifier/rootdirectory.md).
+- `nextCookie`: A value to indicate the next entry in the directory to enumerate. FSKit passes this value as the `cookie` parameter on the next call to [`enumerateDirectory(_:startingAt:verifier:attributes:packer:context:replyHandler:)`](../fsvolume/handler/enumeratedirectory%28_,startingat,verifier,attributes,packer,context,replyhandler%29.md). Use whatever value is appropriate for your implementation; the value is opaque to FSKit.
 - `attributes`: The item’s attributes. Pass `nil` if the enumeration call didn’t request attributes.
 
 ## See Also
 
-- [FSItem.ItemType](fsitem/itemtype.md)
+### Packing entries
+- [FSItem.ItemType](../fsitem/itemtype.md)
   An enumeration of item types, such as file, directory, or symbolic link.
-- [FSItem.Identifier](fsitem/identifier.md)
+- [FSItem.Identifier](../fsitem/identifier.md)
   The unique identifier for an item.
-- [struct FSDirectoryCookie](fsdirectorycookie.md)
+- [struct FSDirectoryCookie](../fsdirectorycookie.md)
   A value that indicates a location in a directory from which to enumerate.
-- [struct FSDirectoryCookie](fsdirectorycookie.md)
+- [struct FSDirectoryCookie](../fsdirectorycookie.md)
   A value that indicates a location in a directory from which to enumerate.
-- [FSItem.Attributes](fsitem/attributes.md)
+- [FSItem.Attributes](../fsitem/attributes.md)
   Attributes of an item, such as size, creation and modification times, and user and group identifiers.
 
 

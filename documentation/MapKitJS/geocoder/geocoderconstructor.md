@@ -1,7 +1,8 @@
 # new Geocoder(options)
 
 **Framework**: MapKit JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Constructor
 
 Creates a geocoder object and sets optional language and user location properties.
 
@@ -10,13 +11,13 @@ Creates a geocoder object and sets optional language and user location propertie
 
 ## Declaration
 
-```swift
+```
 constructor(options?: ServiceConstructorOptions);
 ```
 
 #### Discussion
 
-To use geocoding, create an instance of [`Geocoder`](geocoder.md). Optionally, you can set the [`language`](serviceconstructoroptions/language.md) and [`getsUserLocation`](serviceconstructoroptions/getsuserlocation.md) properties of a [`Geocoder`](geocoder.md) object on initialization, as the following examples shows:
+To use geocoding, create an instance of [`Geocoder`](../geocoder.md). Optionally, you can set the [`language`](../serviceconstructoroptions/language.md) and [`getsUserLocation`](../serviceconstructoroptions/getsuserlocation.md) properties of a [`Geocoder`](../geocoder.md) object on initialization, as the following examples shows:
 
 ```javascript
 const geocoder = new mapkit.Geocoder({
@@ -27,11 +28,12 @@ const geocoder = new mapkit.Geocoder({
 
 ## See Also
 
-- [interface ServiceConstructorOptions](serviceconstructoroptions.md)
+### Creating a geocoder object
+- [interface ServiceConstructorOptions](../serviceconstructoroptions.md)
   Common options you provide when you create a service object.
-- [getsUserLocation](service/getsuserlocation.md)
+- [getsUserLocation](../service/getsuserlocation.md)
   A Boolean value that indicates whether the request returns results near a person’s location.
-- [language](service/language.md)
+- [language](../service/language.md)
   A language ID that determines the language to use for displaying addresses.
 
 

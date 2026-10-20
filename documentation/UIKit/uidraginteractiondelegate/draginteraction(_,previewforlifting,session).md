@@ -1,7 +1,8 @@
 # dragInteraction(_:previewForLifting:session:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for the targeted drag item preview that will appear during the lift animation.
 
@@ -15,6 +16,10 @@ Asks the delegate for the targeted drag item preview that will appear during the
 
 ```swift
 optional func dragInteraction(_ interaction: UIDragInteraction, previewForLifting item: UIDragItem, session: any UIDragSession) -> UITargetedDragPreview?
+```
+
+```objc
+- (UITargetedDragPreview *) dragInteraction:(UIDragInteraction *) interaction previewForLiftingItem:(UIDragItem *) item session:(id<UIDragSession>) session;
 ```
 
 #### Return Value
@@ -33,9 +38,10 @@ If you don’t provide this method, the system creates a preview based on the vi
 
 ## See Also
 
-- [func dragInteraction(UIDragInteraction, previewForCancelling: UIDragItem, withDefault: UITargetedDragPreview) -> UITargetedDragPreview?](uidraginteractiondelegate/draginteraction(_:previewforcancelling:withdefault:).md)
+### Providing drag previews
+- [func dragInteraction(UIDragInteraction, previewForCancelling: UIDragItem, withDefault: UITargetedDragPreview) -> UITargetedDragPreview?](./draginteraction%28_,previewforcancelling,withdefault%29.md)
   Asks the delegate for the targeted drag item preview to show during the cancellation animation.
-- [func dragInteraction(UIDragInteraction, prefersFullSizePreviewsFor: any UIDragSession) -> Bool](uidraginteractiondelegate/draginteraction(_:prefersfullsizepreviewsfor:).md)
+- [func dragInteraction(UIDragInteraction, prefersFullSizePreviewsFor: any UIDragSession) -> Bool](./draginteraction%28_,prefersfullsizepreviewsfor%29.md)
   Asks the delegate whether the preview should appear in its original size or a scaled size.
 
 

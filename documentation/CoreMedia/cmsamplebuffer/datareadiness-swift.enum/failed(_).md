@@ -1,7 +1,8 @@
 # CMSampleBuffer.DataReadiness.failed(_:)
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system failed to load the media data.
 
@@ -26,9 +27,10 @@ case failed(OSStatus)
 
 ## See Also
 
-- [CMSampleBuffer.DataReadiness.notReady](cmsamplebuffer/datareadiness-swift.enum/notready.md)
+### States
+- [CMSampleBuffer.DataReadiness.notReady](./notready.md)
   The media data isn’t ready to use.
-- [CMSampleBuffer.DataReadiness.ready](cmsamplebuffer/datareadiness-swift.enum/ready.md)
+- [CMSampleBuffer.DataReadiness.ready](./ready.md)
   The media data is ready to use.
 
 

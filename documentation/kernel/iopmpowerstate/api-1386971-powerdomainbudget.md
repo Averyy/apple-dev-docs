@@ -1,7 +1,8 @@
 # powerDomainBudget
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Describes power in milliWatts a domain in this state can deliver to its children. Unused; drivers may specify 0. }
 
@@ -10,7 +11,7 @@ Describes power in milliWatts a domain in this state can deliver to its children
 
 ## Declaration
 
-```swift
+```c
 unsigned long powerDomainBudget;
 ```
 

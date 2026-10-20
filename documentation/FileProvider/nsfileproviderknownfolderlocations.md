@@ -1,7 +1,8 @@
 # NSFileProviderKnownFolderLocations
 
 **Framework**: File Provider  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class for working with known-folder locations.
 
@@ -14,38 +15,43 @@ A class for working with known-folder locations.
 class NSFileProviderKnownFolderLocations
 ```
 
+```objc
+@interface NSFileProviderKnownFolderLocations : NSObject
+```
+
 ## Topics
 
 ### Identifying known-folder locations
-- [var desktopLocation: NSFileProviderKnownFolderLocations.Location?](nsfileproviderknownfolderlocations/desktoplocation.md)
-- [var documentsLocation: NSFileProviderKnownFolderLocations.Location?](nsfileproviderknownfolderlocations/documentslocation.md)
-- [NSFileProviderKnownFolderLocations.Location](nsfileproviderknownfolderlocations/location.md)
+- [var desktopLocation: NSFileProviderKnownFolderLocations.Location?](./nsfileproviderknownfolderlocations/desktoplocation.md)
+- [var documentsLocation: NSFileProviderKnownFolderLocations.Location?](./nsfileproviderknownfolderlocations/documentslocation.md)
+- [NSFileProviderKnownFolderLocations.Location](./nsfileproviderknownfolderlocations/location.md)
 ### Configuring folder options
-- [var shouldCreateBinaryCompatibilitySymlink: Bool](nsfileproviderknownfolderlocations/shouldcreatebinarycompatibilitysymlink.md)
+- [var shouldCreateBinaryCompatibilitySymlink: Bool](./nsfileproviderknownfolderlocations/shouldcreatebinarycompatibilitysymlink.md)
 ### Creating a known-folder locations object
-- [init()](nsfileproviderknownfolderlocations/init.md)
+- [init()](./nsfileproviderknownfolderlocations/init%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func claimKnownFolders(NSFileProviderKnownFolderLocations, localizedReason: String, completionHandler: ((any Error)?) -> Void)](nsfileprovidermanager/claimknownfolders(_:localizedreason:completionhandler:).md)
+### Syncing Desktop and Documents folders
+- [func claimKnownFolders(NSFileProviderKnownFolderLocations, localizedReason: String, completionHandler: ((any Error)?) -> Void)](./nsfileprovidermanager/claimknownfolders%28_,localizedreason,completionhandler%29.md)
   Asks the domain to sync the specified known folders.
-- [func releaseKnownFolders(NSFileProviderKnownFolders, localizedReason: String, completionHandler: ((any Error)?) -> Void)](nsfileprovidermanager/releaseknownfolders(_:localizedreason:completionhandler:).md)
+- [func releaseKnownFolders(NSFileProviderKnownFolders, localizedReason: String, completionHandler: ((any Error)?) -> Void)](./nsfileprovidermanager/releaseknownfolders%28_,localizedreason,completionhandler%29.md)
   Asks the system to stop replicating the specified known folders in the domain.
-- [struct NSFileProviderKnownFolders](nsfileproviderknownfolders.md)
+- [struct NSFileProviderKnownFolders](./nsfileproviderknownfolders.md)
   Constants that identify known folders.
-- [protocol NSFileProviderKnownFolderSupporting](nsfileproviderknownfoldersupporting.md)
+- [protocol NSFileProviderKnownFolderSupporting](./nsfileproviderknownfoldersupporting.md)
   A protocol that defines the interface for sharing known-folder locations with the system.
 
 

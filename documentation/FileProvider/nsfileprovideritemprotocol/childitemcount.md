@@ -1,7 +1,8 @@
 # childItemCount
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of items contained by this item.
 
@@ -19,12 +20,17 @@ The number of items contained by this item.
 optional var childItemCount: NSNumber? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSNumber * childItemCount;
+```
+
 ## See Also
 
-- [var documentSize: NSNumber?](nsfileprovideritemprotocol/documentsize.md)
+### Managing Content
+- [var documentSize: NSNumber?](./documentsize.md)
   The document’s size, in bytes.
-- [var contentPolicy: NSFileProviderContentPolicy](nsfileprovideritemprotocol/contentpolicy.md)
-- [enum NSFileProviderContentPolicy](nsfileprovidercontentpolicy.md)
+- [var contentPolicy: NSFileProviderContentPolicy](./contentpolicy.md)
+- [enum NSFileProviderContentPolicy](../nsfileprovidercontentpolicy.md)
 
 
 ---

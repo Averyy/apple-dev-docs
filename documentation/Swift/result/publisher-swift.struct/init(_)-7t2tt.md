@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that sends the specified output to all subscribers and finishes normally.
 
@@ -26,9 +27,10 @@ init(_ output: Result<Success, Failure>.Publisher.Output)
 
 ## See Also
 
-- [init(Result<Result<Success, Failure>.Publisher.Output, Failure>)](result/publisher-swift.struct/init(_:)-516t.md)
+### Creating a Result Publisher
+- [init(Result<Result<Success, Failure>.Publisher.Output, Failure>)](./init%28_%29-516t.md)
   Creates a publisher that delivers the specified result.
-- [init(Failure)](result/publisher-swift.struct/init(_:)-69fv4.md)
+- [init(Failure)](./init%28_%29-69fv4.md)
   Creates a publisher that immediately terminates upon subscription with the given failure.
 
 

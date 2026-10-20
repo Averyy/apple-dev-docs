@@ -1,7 +1,8 @@
 # startingEquipmentID
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The equipment the interaction was started with
 
@@ -16,9 +17,10 @@ var startingEquipmentID: EquipmentIdentifier { get }
 
 ## See Also
 
-- [var controlledEquipmentID: EquipmentIdentifier](tabletopinteraction/value-swift.struct/controlledequipmentid.md)
+### Getting information about the equipment and game
+- [var controlledEquipmentID: EquipmentIdentifier](./controlledequipmentid.md)
   The equipment the interaction is currently controlling
-- [var allowedDestinations: TabletopInteraction.AllowedDestinations](tabletopinteraction/value-swift.struct/alloweddestinations.md)
+- [var allowedDestinations: TabletopInteraction.AllowedDestinations](./alloweddestinations.md)
   The allowed destinations that this interaction can target
 
 

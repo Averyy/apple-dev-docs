@@ -1,7 +1,8 @@
 # upstream
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The publisher that this publisher receives elements from.
 
@@ -22,9 +23,10 @@ let upstream: Upstream
 
 ## See Also
 
-- [let initialResult: Output](publishers/scan/initialresult.md)
+### Inspecting publisher properties
+- [let initialResult: Output](./initialresult.md)
   The previous result returned by the `nextPartialResult` closure.
-- [let nextPartialResult: (Output, Upstream.Output) -> Output](publishers/scan/nextpartialresult.md)
+- [let nextPartialResult: (Output, Upstream.Output) -> Output](./nextpartialresult.md)
   An error-throwing closure that takes as its arguments the previous value returned by the closure and the next element emitted from the upstream publisher.
 
 

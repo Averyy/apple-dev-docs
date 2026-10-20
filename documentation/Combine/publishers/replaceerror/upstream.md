@@ -1,7 +1,8 @@
 # upstream
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The publisher from which this publisher receives elements.
 
@@ -22,9 +23,10 @@ let upstream: Upstream
 
 ## See Also
 
-- [let output: Publishers.ReplaceError<Upstream>.Output](publishers/replaceerror/output-swift.property.md)
+### Inspecting publisher properties
+- [let output: Publishers.ReplaceError<Upstream>.Output](./output-swift.property.md)
   The element with which to replace errors from the upstream publisher.
-- [let output: Publishers.ReplaceError<Upstream>.Output](publishers/replaceerror/output-swift.property.md)
+- [let output: Publishers.ReplaceError<Upstream>.Output](./output-swift.property.md)
   The element with which to replace errors from the upstream publisher.
 
 

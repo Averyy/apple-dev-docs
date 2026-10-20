@@ -1,7 +1,8 @@
 # pickerView(_:didSelectRow:inComponent:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called by the picker view when the user selects a row in a component.
 
@@ -15,6 +16,10 @@ Called by the picker view when the user selects a row in a component.
 
 ```swift
 optional func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
+```
+
+```objc
+- (void) pickerView:(UIPickerView *) pickerView didSelectRow:(NSInteger) row inComponent:(NSInteger) component;
 ```
 
 #### Discussion

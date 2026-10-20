@@ -1,7 +1,8 @@
 # extended(minimumLength:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a custom format style that portrays the year of the calendar system, encompassing all supra-year fields.
 
@@ -34,13 +35,14 @@ The default length is the minimum needed to show the full year.
 
 ## See Also
 
-- [static var defaultDigits: Date.FormatStyle.Symbol.Year](date/formatstyle/symbol/year/defaultdigits.md)
+### Modifying a Year
+- [static var defaultDigits: Date.FormatStyle.Symbol.Year](./defaultdigits.md)
   The custom year format style showing the minimum number of digits that represents the numeric year.
-- [static var twoDigits: Date.FormatStyle.Symbol.Year](date/formatstyle/symbol/year/twodigits.md)
+- [static var twoDigits: Date.FormatStyle.Symbol.Year](./twodigits.md)
   The custom format style portraying the two-digit numeric year, zero-padded if necessary.
-- [static func padded(Int) -> Date.FormatStyle.Symbol.Year](date/formatstyle/symbol/year/padded(_:).md)
+- [static func padded(Int) -> Date.FormatStyle.Symbol.Year](./padded%28_%29.md)
   Returns a custom format style that portrays the year of the calendar system of the provided length, zero-padded if necessary.
-- [static func relatedGregorian(minimumLength: Int) -> Date.FormatStyle.Symbol.Year](date/formatstyle/symbol/year/relatedgregorian(minimumlength:).md)
+- [static func relatedGregorian(minimumLength: Int) -> Date.FormatStyle.Symbol.Year](./relatedgregorian%28minimumlength%29.md)
   Returns a custom format style that portrays the year of a non-Gregorian calendar system in the corresponding Gregorian year.
 
 

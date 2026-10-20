@@ -1,7 +1,8 @@
 # credential
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The credential to save.
 
@@ -15,6 +16,10 @@ The credential to save.
 
 ```swift
 var credential: ASPasswordCredential { get }
+```
+
+```objc
+@property (nonatomic, readonly) ASPasswordCredential * credential;
 ```
 
 

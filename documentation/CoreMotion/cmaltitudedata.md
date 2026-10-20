@@ -1,7 +1,8 @@
 # CMAltitudeData
 
 **Framework**: Core Motion  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Data for a recorded change in altitude.
 
@@ -17,38 +18,43 @@ Data for a recorded change in altitude.
 class CMAltitudeData
 ```
 
+```objc
+@interface CMAltitudeData : CMLogItem
+```
+
 #### Overview
 
-You do not create instances of this class directly. When you want to receive altimeter changes, create an instance of the [`CMAltimeter`](cmaltimeter.md) class and use that object to query for events or to start the delivery of events. The altimeter object creates new instances of this class at appropriate times and delivers them to the handler you specify.
+You do not create instances of this class directly. When you want to receive altimeter changes, create an instance of the [`CMAltimeter`](./cmaltimeter.md) class and use that object to query for events or to start the delivery of events. The altimeter object creates new instances of this class at appropriate times and delivers them to the handler you specify.
 
 ## Topics
 
 ### Getting the Altitude Data
-- [var relativeAltitude: NSNumber](cmaltitudedata/relativealtitude.md)
+- [var relativeAltitude: NSNumber](./cmaltitudedata/relativealtitude.md)
   The change in altitude (in meters) since the first reported event.
-- [var pressure: NSNumber](cmaltitudedata/pressure.md)
+- [var pressure: NSNumber](./cmaltitudedata/pressure.md)
   The recorded pressure, in kilopascals.
 
 ## Relationships
 
 ### Inherits From
-- [CMLogItem](cmlogitem.md)
+- [CMLogItem](./cmlogitem.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class CMAltimeter](cmaltimeter.md)
+### Altitude data
+- [class CMAltimeter](./cmaltimeter.md)
   An object that initiates the delivery of altitude-related changes.
-- [class CMAbsoluteAltitudeData](cmabsolutealtitudedata.md)
+- [class CMAbsoluteAltitudeData](./cmabsolutealtitudedata.md)
   Data that records a change in absolute altitude.
 
 

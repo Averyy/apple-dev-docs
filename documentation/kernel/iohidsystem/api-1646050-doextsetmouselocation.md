@@ -1,14 +1,15 @@
 # doExtSetMouseLocation
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.15.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 static IOReturn doExtSetMouseLocation(IOHIDSystem *self, void *args);
 ```
 

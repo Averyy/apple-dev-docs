@@ -1,7 +1,8 @@
 # TVTopShelfItemCollection
 
 **Framework**: TV Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A group of items that you display together in a sectioned interface in the top shelf.
 
@@ -14,38 +15,43 @@ A group of items that you display together in a sectioned interface in the top s
 class TVTopShelfItemCollection<Item> where Item : TVTopShelfItem
 ```
 
+```objc
+@interface TVTopShelfItemCollection : TVTopShelfObject
+```
+
 #### Overview
 
-Use a [`TVTopShelfItemCollection`](tvtopshelfitemcollection.md) object to organize related groups of items in a sectioned interface. The system presents the items in your collection together, displaying the [`title`](tvtopshelfobject/title.md) of the collection above those items. For example, you might create different collections for new movies, the user’s favorites, and recently watched movies.
+Use a [`TVTopShelfItemCollection`](./tvtopshelfitemcollection.md) object to organize related groups of items in a sectioned interface. The system presents the items in your collection together, displaying the [`title`](./tvtopshelfobject/title.md) of the collection above those items. For example, you might create different collections for new movies, the user’s favorites, and recently watched movies.
 
 ## Topics
 
 ### Creating an Item Collection
-- [init(items: [Item])](tvtopshelfitemcollection/init(items:).md)
+- [init(items: [Item])](./tvtopshelfitemcollection/init%28items%29.md)
   Creates an item collection object from the specified set of top shelf items.
 ### Getting the Items
-- [var items: [Item]](tvtopshelfitemcollection/items.md)
+- [var items: [Item]](./tvtopshelfitemcollection/items.md)
   The items in the collection.
 
 ## Relationships
 
 ### Inherits From
-- [TVTopShelfObject](tvtopshelfobject.md)
+- [TVTopShelfObject](./tvtopshelfobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class TVTopShelfSectionedItem](tvtopshelfsectioneditem.md)
+### Sectioned and inset content
+- [class TVTopShelfSectionedItem](./tvtopshelfsectioneditem.md)
   An item to display in a section-based interface.
-- [class TVTopShelfSectionedContent](tvtopshelfsectionedcontent.md)
+- [class TVTopShelfSectionedContent](./tvtopshelfsectionedcontent.md)
   The set of items you want to present using a section-based interface in the top shelf.
-- [class TVTopShelfInsetContent](tvtopshelfinsetcontent.md)
+- [class TVTopShelfInsetContent](./tvtopshelfinsetcontent.md)
   A set of items to present using an inset-style interface in the top shelf.
 
 

@@ -1,7 +1,8 @@
 # errSecAttributeNotInContext
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An attribute was not in the context.
 
@@ -18,6 +19,10 @@ An attribute was not in the context.
 
 ```swift
 var errSecAttributeNotInContext: OSStatus { get }
+```
+
+```c
+errSecAttributeNotInContext
 ```
 
 

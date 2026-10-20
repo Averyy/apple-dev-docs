@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Quick Look UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate object that controls the preview panel’s behavior.
 
@@ -14,9 +15,13 @@ The delegate object that controls the preview panel’s behavior.
 unowned(unsafe) var delegate: AnyObject! { get set }
 ```
 
+```objc
+@property (assign) id delegate;
+```
+
 #### Discussion
 
-The class assigned as the delegate should conform to the [`QLPreviewPanelDelegate`](qlpreviewpaneldelegate.md) protocol.
+The class assigned as the delegate should conform to the [`QLPreviewPanelDelegate`](../qlpreviewpaneldelegate.md) protocol.
 
 
 ---

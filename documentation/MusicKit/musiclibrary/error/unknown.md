@@ -1,7 +1,8 @@
 # MusicLibrary.Error.unknown
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating the ocurrence of an unknown or unexpected error.
 
